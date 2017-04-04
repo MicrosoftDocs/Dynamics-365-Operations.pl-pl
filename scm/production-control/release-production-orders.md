@@ -1,0 +1,64 @@
+---
+title: "Zwolnić zlecenia produkcyjne"
+description: "Zwolnione zlecenie produkcyjne to zlecenie zatwierdzone do produkcji. Określenie „zwolnione” opisuje stan w cyklu życia zlecenia produkcyjnego, gdzie jest ono dostępne do wykonania na wydziale produkcji i dla procesów magazynowych."
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: ProdParmRelease
+audience: Application User
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 2414
+ms.assetid: 50c2257b-2924-44f5-b7c1-11f498092053
+ms.search.region: Global
+ms.search.industry: Manufacturing
+ms.author: johanho
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
+ms.openlocfilehash: c4ebedab6d7de62479d3bc80583afadbe780aac4
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="release-production-orders"></a>Zwolnić zlecenia produkcyjne
+
+Zwolnione zlecenie produkcyjne to zlecenie zatwierdzone do produkcji. Określenie „zwolnione” opisuje stan w cyklu życia zlecenia produkcyjnego, gdzie jest ono dostępne do wykonania na wydziale produkcji i dla procesów magazynowych. 
+
+<a name="characteristics-of-the-released-state"></a>Właściwości stanu Zwolnione
+-------------------------------------
+
+Stan **Zwolnione** jest stanem jednego cyklu życia zlecenia produkcyjnego. Zlecenia produkcyjne ze stanem **Zwolnione** są dostępne do wykonania w wydziale produkcji oraz dla procesów magazynowych. Stan **Zwolnione** posiada następujące właściwości:
+
+-   Stan zlecenia produkcyjnego może zostać zmieniony na **Zwolnione** ze zlecenia produkcyjnego lub za pomocą produkcji seryjnej. Zlecenie produkcyjne można także aktualizować automatycznie z planowanych zleceń produkcyjnych, które będą ustalane w polu **Horyzont czasowy akceptacji** na stronie **planu głównego**.
+-   Stan **Zwolnione** jest sygnałem dla operatorów do rozpoczęcia wykonywania zadań produkcyjnych w wydziale produkcyjnym.
+-   Dokumenty produkcji, takie jak karty marszruty i karty zadań zawierają informacje o zadaniach produkcji i mogą być wystawiane.
+-   W przypadku materiałów fizycznie zarezerwowanych generowana jest praca w magazynie w celu pobrania materiałów koniecznych do realizacji zlecenia produkcyjnego.
+
+## <a name="releasing-jobs-to-the-shop-floor"></a>Zwalnianie zadań do wydziału produkcyjnego
+Po zwolnieniu zlecenia produkcyjnego, zadania produkcji, które są związane z zamówieniem, są widoczne i gotowe do rejestracji. Podmioty gospodarcze można wprowadzać rejestracje zadań, takich jak rozpoczęcie, zatrzymania i zakończenia, na obu **terminalu kart pracy** stronę lub **pracy karty urządzenia** strony. Zarejestrowany czas i ilości są automatycznie przenoszone ze stron rejestracji do arkuszy produkcji do śledzenia zużyty czas i ilość.
+
+## <a name="route-cards"></a>Karty marszrut
+Karta marszrut zawiera przegląd informacji z konfiguracji marszruty i operacji oraz z metod planowania operacji i zadania.
+
+## <a name="route-jobs"></a>Zadania marszruty
+W zadaniu marszruty są wymienione wraz ze szczegółami wszystkie zadania w ramach operacji, a także jest podany czas konfiguracji, procesu, oczekiwania i czas transportu. Na przykład operacja malowania może się składać z kilku pojedynczych zadań – przygotowania, wykonywania pracy (czyli malowania) i czas oczekiwania (na wyschnięcie pomalowanej powierzchni).
+
+## <a name="job-cards"></a>Karty zadania
+W karcie zadania są wymienione numery poszczególnych zadań w ramach określonej operacji. Jedno zadanie pojawia się na każdej stronie. Zadania znajdujące się na karcie zadania, a także szacunkowe czasy tych zadań są podawane na podstawie informacji konfiguracyjnych marszruty i operacji. Za pomocą karty zadań można otworzyć stronę **Wiersze arkusza produkcji**, **karta zadań **. Osoby, które pracują w gniazdach produkcyjnych, mogą dostarczać informacji zwrotnych dotyczących procesu produkcji. W tych polach można wprowadzać dane statystyczne zużycia oraz informacje o niewłaściwych ilościach.
+
+## <a name="warehouse-work-for-raw-material-picking"></a>Praca magazynu dla pobrania surowca.
+Praca pobrania surowca jest generowana podczas zwalniania. Gniazda są generowane tylko dla materiałów, których ilość fizycznie zarezerwowana dla zlecenia produkcyjnego przed zlecenie zostało zwolnione. Wymagane do generowania pracy magazynu do pobrania surowiec jest następujące ustawienia:
+
+-   Dyrektywa lokalizacji dla pobrania surowca, która określa lokalizację pobrania surowca
+-   Szablon grupy czynności dla surowców, w którym skonfigurowano zasady wykonania pracy w magazynie
+-   Lokalizacja wejściowa produkcji, która określa umieszczenie materiałów
+
+
+

@@ -1,0 +1,57 @@
+---
+title: "Zarządzanie elementami wypożyczonymi pracownikom."
+description: "Przedmioty pożyczek są rekordami, które pomagają kierownikom śledzić fizyczne przedmioty, które firma pożycza pracownikom."
+author: rschloma
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: HcmLoanItem, HcmLoanType, HcmPersonLoan
+audience: Application User
+ms.reviewer: rschloma
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 3581
+ms.assetid: b14bdddb-f10e-4619-9f91-8c88439da862
+ms.search.region: Global
+ms.author: kherr
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 720a1f272948eb310dc3cd02588aeec40b556d20
+ms.openlocfilehash: 905d6656a2664d5a043680164f70b5f3d680b978
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="manage-items-lent-to-workers"></a>Zarządzanie elementami wypożyczonymi pracownikom.
+
+Przedmioty pożyczek są rekordami, które pomagają kierownikom śledzić fizyczne przedmioty, które firma pożycza pracownikom. 
+
+Poniżej przedstawiono listę przykładowych towarów, które firma może wypożyczyć pracownikom:
+-   telefony komórkowe;
+-   samochody;
+-   Sprzęt komputerowy
+
+Każdy przedmiot fizyczny musi mieć odpowiadający mu przedmiot pożyczki. Każdy rekord przedmiotu pożyczki powinien opisywać wypożyczany przedmiot, osobę odpowiedzialną za wypożyczenie oraz możliwą liczbę dni wypożyczenia przedmiotu. Można utworzyć wiele przedmiotów pożyczki, takich jak klucze, karty dostępu lub mundury, w tym samym czasie. 
+
+W przypadku pożyczania przedmiotu należy wprowadzić datę wypożyczenia przedmiotu oraz planowaną datę zwrócenia. W przypadku zwrócenia przedmiotu należy wprowadzić rzeczywistą datę zwrócenia.
+
+Pracowników można przeglądać rekordy zapasów, które zostały wypożyczony do nich przy użyciu obszaru roboczego samoobsługi pracownika. Mogą również edycję istniejących rekordów lub wprowadzić nowych przedmiotów pożyczki, jeśli one otrzymał dodatkowe elementy fizyczne.  Przepływ pracy można skonfigurować do zmiany trasy do nowej lub istniejącej pożyczki elementów przez proces zatwierdzania. 
+
+Menedżerowie mogą wyświetlać towar wypożyczony przez ich bezpośrednich podwładnych. Mogą także dostać uprawnienia dodawania nowych przedmiotów pożyczki w imieniu swoich pracowników.
+
+ <a name="account-for-lost-or-misplaced-loan-items"></a> Rozliczanie zgubionych lub przestawionych przedmiotów pożyczki
+-----------------------------------------
+
+Jeśli przedmiot został uszkodzony lub przestawiony, należy zarejestrować fikcyjny zwrot. Następnie należy usunąć przedmiot lub zachować go w zestawieniu i zmienić opis, aby wskazać, że przedmiot jest niedostępny.
+
+ 
+<a name="see-also"></a>Informacje dodatkowe
+--------
+
+[Human resources](index.md)
+
+

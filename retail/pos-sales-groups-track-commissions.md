@@ -1,0 +1,64 @@
+---
+title: "Śledzenie prowizji w POS za pomocą grupy sprzedaży"
+description: "To typowa praktyka detalicznych do śledzenia sprzedaży przez jednostki stowarzyszonej, który pracował z klientem — udzielanie pomocy, na sprzedaż, sprzedaży i przetwarzania transakcji."
+author: josaw1
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+audience: Application User
+ms.search.scope: Operations, Core
+ms.custom: 261234
+ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: jeffbl
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+translationtype: Human Translation
+ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
+ms.openlocfilehash: dfefdede8f3bc884b230109d6c915127a1361ecd
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="track-commissions-in-pos-using-sales-groups"></a>Śledzenie prowizji w POS za pomocą grupy sprzedaży
+
+To typowa praktyka detalicznych do śledzenia sprzedaży przez jednostki stowarzyszonej, który pracował z klientem — udzielanie pomocy, na sprzedaż, sprzedaży i przetwarzania transakcji.
+
+Śledzenie sprzedaży przez przedstawiciela handlowego jest miarą jednostek stowarzyszonych, możliwości sprzedaży, podczas gdy sprzedaż przez kasjera jest miarą szybkości i wydajności. Sprzedaż śledzone przez przedstawiciela handlowego są także często używane do obliczania prowizji lub inne zachęty.
+
+## <a name="configuring-a-worker-to-be-a-sales-representative-in-pos"></a>Konfigurowanie pracownika do przedstawiciela handlowego w punkcie sprzedaży
+Pracownik jest dodawany do grupy sprzedaży, kwalifikują się do Komisji i mogą być zidentyfikowane jako przedstawiciel handlowy w systemie. Pracownik, który nie znajduje się w grupy sprzedaży nie kwalifikuje się do Komisji i nie będzie wymieniony jako przedstawiciel handlowy w punkcie sprzedaży (POS) aplikacji. W punkcie sprzedaży lista przedstawicieli handlowych jest pochodną wszystkich grup sprzedaży, które zawierają co najmniej jednego pracownika, przypisane do sklepu. Listy jest wyświetlany w POS jako kombinacja sprzedaży grupy identyfikator i nazwę (identyfikator: nazwa). Domyślna grupa sprzedaży można przypisać pracowników do obsługi scenariuszy, gdzie punkt sprzedaży detalicznej wybierze automatycznie ustawić przedstawiciel handlowy w wierszach POS. Użytkownicy mogą wybrać z grupy sprzedaży, który pracownik jest członkiem.
+
+## <a name="functionality-profile-settings"></a>Ustawienia profilu funkcji
+Istnieje kilka ustawień profilu funkcji dla sklepu, który określi przepływu i proces w POS, który wiąże się z przedstawicieli handlowych.
+
+|                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Profile**                           | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Default to cashier when available** | Jeśli ta opcja jest włączona, POS będzie automatycznie wypełnić wiersze transakcji z bieżącego kasjer domyślna grupa sprzedaży. Jeśli kasjer nie ma domyślnej grupy sprzedaży określona, wartość nie będzie ustawiona. Użytkownik może nadal ręcznie ustawić grupy sprzedaży przy użyciu przycisku POS przycisk siatki.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Prompt for sales representative**   | Ta opcja ma trzy możliwe wartości: ** nr **-Jeśli ta opcja jest zaznaczona, użytkownik nie będzie monitowany o wybranie grupy sprzedaży. Wartość nadal może być ustawiona przy użyciu kasjer domyślna grupa sprzedaży lub ręcznie przy użyciu POS przycisk przycisk siatki. **Rozpoczęcie transakcji** - Jeśli ta opcja jest zaznaczona i albo **domyślnie kasjer** opcja nie jest włączona lub bieżący kasjer nie ma domyślnej grupy sprzedaży, użytkownik będzie monitowany o wybranie grupy sprzedaży na początku każdej transakcji. Zaznaczanie grupy sprzedaży z tego wiersza będzie domyślnie wszystkie kolejne wiersze do wybranej grupy sprzedaży. Użytkownik może nadal ręcznie ustawić grupy sprzedaży przy użyciu przycisku POS przycisk siatki. **Dla każdego wiersza** - Jeśli ta opcja jest zaznaczona, a każda **domyślnie kasjer** opcja nie jest włączona lub bieżący kasjer nie ma domyślnej grupy sprzedaży, użytkownik będzie monitowany o wybierz grupę sprzedaży po dodaniu każdego wiersza. Użytkownik może nadal ręcznie ustawić grupy sprzedaży przy użyciu przycisku POS przycisk siatki. |
+| **Wymagają**                           | Ta opcja dotyczy tylko gdy POS jest skonfigurowane monitowanie dla sprzedawcy. Jeśli opcja jest włączona, użytkownik będą musieli wybierz grupę sprzedaży przed kontynuowaniem. W przeciwnym wypadku użytkownik zostanie wyświetlony monit, ale można anulować i kontynuować bez dokonywania wyboru. Po dodaniu linii, użytkownik z uprawnieniami wystarczającymi nadal można usunąć grupy sprzedaży z wiersza. W tej sytuacji nie jest wymuszana "Wymagaj przedstawiciel handlowy".                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+
+## <a name="displaying-the-sales-representative-information-on-the-pos-transactions-screen"></a>Wyświetlanie informacji dotyczących reprezentatywnej sprzedaży na ekranie POS transakcji
+Układ ekranu programu Retail POS transakcji i zawartość są konfigurowane przy użyciu układów ekranu układu ekranu projektanta i przypisany do sklepów, rejestry lub pracowników. **Przedstawiciel handlowy** pola można dodać na karcie Wiersze w okienku pokwitowania.  Spowoduje to wyświetlenie Identyfikatora określonej grupy sprzedaży dla każdego wiersza na ekranie transakcji.
+
+## <a name="adding-sales-representative-operations-to-pos-button-grids"></a>Dodawanie sprzedaży reprezentatywnej operacji punktu sprzedaży przycisk siatki
+POS pozwala użytkownikom na konfigurowanie siatki przycisków, które są zawarte w układy ekranu, aby zapewnić dostęp do operacji punktu sprzedaży. Następujące operacje POS mogą być przypisane do siatki przycisków, które odnoszą się do przedstawicieli handlowych.
+
+|                                           |                                                                                                                                                                                                                                                                                              |
+|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Operacja**                             | **Description**                                                                                                                                                                                                                                                                              |
+| Ustaw przedstawiciela handlowego w wierszu          | Ta operacja POS wyświetla listę kwalifikujących się grup sprzedaży (ID: nazwa) dla sklepu. Zaznaczanie grupy sprzedaży z tej listy będzie ustaw wartość bieżącego wiersza transakcji.                                                                                                            |
+| Wyczyść przedstawiciela handlowego w wierszu        | Ta operacja POS usuwa bieżącą wartość Grupa sprzedaży z bieżącego wiersza transakcji.                                                                                                                                                                                                  |
+| Przedstawiciel handlowy zestaw transakcji   | Ta operacja POS wyświetla listę kwalifikujących się grup sprzedaży (ID: nazwa) dla sklepu. Zaznaczanie grupy sprzedaży z tej listy spowoduje ustawienie wartość domyślna w bieżącej transakcji. Wszelkie istniejące wiersze bez grupy sprzedaży przypisana będzie zestawu, jak również wszelkie później dodane linie. |
+| Przedstawiciel wyraźnie sprzedaży na transakcję | Ta operacja POS usuwa bieżącą wartość domyślna sprzedaży grupy z bieżącej transakcji. Nie wpływa na wszystkie wiersze już istniejących w transakcji.                                                                                                                             |
+
+## <a name="calculating-commissions"></a>Obliczanie prowizji
+Prowizja jest obliczana dla pracowników w określonych grupach sprzedaży w momencie księgowania zestawienia lub Księgowanie zamówienia sprzedaży. Kwota prowizji jest określana na podstawie udziału Komisji pracownika, zgodnie z definicją w grupach sprzedaży i Komisji skojarzone ustawienia obliczania dla klienta i/lub produktów, w odniesieniu do transakcji.
+
+

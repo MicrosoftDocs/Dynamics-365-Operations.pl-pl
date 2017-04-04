@@ -1,0 +1,121 @@
+---
+title: Funkcje konstruktora BOM
+description: "W tym artykule opisano, jak za pomocą strony projektanta BOM zaprojektować struktury drzewa dla list składowych (BOM) oraz ich używać. Można kliknąć przycisk Ustawienia i wybierać różne konfiguracje oraz określić rodzaj informacji wyświetlanych w wierszach drzewa."
+author: YuyuScheller
+manager: AnnBe
+ms.date: 2015-12-08 21 - 09 - 22
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: BOMDesigner
+audience: Application User
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 20981
+ms.assetid: 2b92eec1-d28c-4965-9086-939c77b3c62b
+ms.search.region: Global
+ms.search.industry: Manufacturing
+ms.author: conradv
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
+ms.openlocfilehash: 2c98039c9fa8179408394f9f66b9fca0f8cad3fe
+ms.lasthandoff: 03/29/2017
+
+
+---
+
+# <a name="bom-designer-functionality"></a>Funkcje konstruktora BOM
+
+W tym artykule opisano, jak za pomocą strony projektanta BOM zaprojektować struktury drzewa dla list składowych (BOM) oraz ich używać. Można kliknąć przycisk Ustawienia i wybierać różne konfiguracje oraz określić rodzaj informacji wyświetlanych w wierszach drzewa.
+
+Po otwarciu strony **Konstruktor BOM** ze strony **Zwolnione produkty** widać na niej hierarchię list składowych (BOM), które były aktywne i zatwierdzone dla wybranego towaru, domyślny oddział zamówienia towaru oraz rzeczywistą datę.  
+
+Kliknij **Filtr**, aby zmienić początkowy wybór w widoku. Ustawiając regułę wyświetlania na **Wybrane/aktywne lub Wybrane**, można wybrać poszczególne wersje BOM lub marszruty, które mają być używane w widoku. Można wybrać niezatwierdzone i nieaktywne wersje BOM, które mają być wyświetlane lub zachowane w konstruktorze BOM.  
+
+**Uwaga:** po otwarciu konstruktora BOM ze strony **Lista składowa (BOM)** informacje o marszrucie nie są wyświetlane. Obecnie wybór wersji BOM lub marszruty jest właściwością wersji BOM i marszruty i ma zastosowanie do wszystkich instancji konstruktora BOM.  
+
+W poniższych sekcjach opisano funkcje dostępne na poszczególnych kartach w konstruktorze BOM.
+
+## <a name="analyzing-a-bom-structure-by-using-the-bom-designer"></a>Analiza struktury BOM przy użyciu konstruktora BOM
+Konstruktor BOM ma dwie sekcje:
+
+-   Widok drzewa struktury BOM.
+-   Widok szczegółów dla wybranych danych. Po wybraniu węzła w widoku drzewa skrócone karty w sekcji szczegółów są aktualizowane według tego węzła:
+    -   **Szczegóły wiersza BOM** — pokazuje szczegóły wiersza BOM, który jest wybrany w widoku drzewa.
+    -   **Pozycja danych** — pokazuje szczegóły głównego towaru lub towaru, który jest używany w wybranym węźle. Opcja **Edytuj zwolniony produkt** umożliwia obsługę wybranego towaru.
+    -   **BOM** — pokazuje nagłówek BOM, który jest powiązany z wybranego węzła.
+    -   **Marszruta** — pokazuje nagłówek marszruty, który jest powiązany z wybranego węzła.
+    -   **Operacje marszruty** — pokazuje podgląd operacji dla marszruty. Po wybraniu wiersza BOM, który jest przypisany do konkretnej operacji, operacja ta jest oznaczana jako **Składnik wymagany w operacji**.
+
+## <a name="selecting-a-bom-and-route"></a>Wybranie BOM i marszruty
+Filtr stosowany dla BOM i marszruty jest wyświetlany w nagłówku konstruktora BOM. Można zmienić filtr za pomocą okna dialogowego **Filtr**. W poniższej tabeli opisano pola w tym oknie dialogowym.
+
+<table>
+<thead>
+<tr class="header">
+<th>Pole</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Wymiary produktu</td>
+<td>Jeśli wybrany gotowy produkt jest produktem głównym, można zdefiniować aktywne wymiary produktu dla zaznaczenia głównego. <strong>Uwaga:</strong> po otwarciu konstruktora BOM dla produktu, który nie jest produktem głównym, w oknie dialogowym <strong>Filtr</strong> nie można wybrać żadnych wymiarów.</td>
+</tr>
+<tr class="even">
+<td>Oddział</td>
+<td>Zmienianie oddziału, dla którego wyświetlane jest drzewo BOM. Domyślnie jest to oddział zapasów dla gotowego towaru.</td>
+</tr>
+<tr class="odd">
+<td>Reguła wyświetlania</td>
+<td>Wybierz zasadę wyświetlania wersji obowiązującą dla bieżącej struktury BOM i dla bieżącej marszruty.
+<ul>
+<li>Jeśli ustawiono zasadę <strong> Aktywne lub Wybrane/aktywne</strong>, to zostanie wyszukana wersja BOM i wersja marszruty ważna dla tej daty.</li>
+<li>Gdy zasada jest ustawiona na <strong>wybrane/aktywne lub wybrany</strong>, można wybrać wersję BOM lub Marszruta klikając <strong>BOM</strong>&gt;<strong>wersje BOM</strong> lub <strong>trasa</strong>&gt;<strong>wersji marszrut</strong>.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Data wersji</td>
+<td>Służy do wprowadzania daty wersji dla BOM i marszruty. Wersja umożliwia wskazanie wersji BOM używanej dla określonego okresu, co wynika z dat wersji w konfiguracji wersji BOM.</td>
+</tr>
+<tr class="odd">
+<td>Ilość od</td>
+<td>Filtrowanie wersji przez wybranie określonej ilości „od”. Jeśli zostanie ustawiona wartość, będzie można wybrać różne wersje BOM i marszruty.</td>
+</tr>
+<tr class="even">
+<td>Pokaż tylko ważne</td>
+<td>Po zaznaczeniu pola wyboru w strukturze drzewa widać tylko wiersze BOM z prawidłowymi datami. Kliknij prawym przyciskiem myszy wiersz BOM, aby otworzyć stronę <strong>Edytuj wiersz BOM</strong>, gdzie można sprawdzić daty ważności tego wiersza BOM.</td>
+</tr>
+</tbody>
+</table>
+
+Jeśli używasz konstruktora BOM do sprawdzania i edycji list BOM , które składają się z jednego lub więcej poziomów fantomów, marszruta skojarzona z pozycją u góry zwykle obejmuje całą hierarchię BOM. Aby uprościć przeglądzie, można zablokować najwyższego poziomu marszruty na wyświetlaczu, klikając **widoku**&gt;**Zablokuj marszrutę**. Aby odblokować trasy, kliknij przycisk **widoku**&gt;**trasy Unlock**.
+
+## <a name="adding-and-editing-boms-and-bom-lines"></a>Dodawanie i edytowanie BOM i wierzy BOM
+Użyj ** wiersze BOM ** lub **BOM** funkcje do modyfikowania wierszy BOM lub BOM. Po wybraniu węzła na drzewie, typ węzła określa funkcje, które są dostępne.
+
+| Funkcja                            | opis                                                                                               | Typ węzła i warunki                                                                                                                                                                                                                                                                       |
+|-------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wiersze BOM-u &gt;Edycja                 | Otwórz okno dialogowe, w którym można edytować atrybuty wiersza BOM.                                             | Funkcja ta jest dostępna po wybraniu węzła wiersza BOM.                                                                                                                                                                                                                                   |
+| Wiersze BOM-u &gt;usunąć               | Usuń wiersz BOM z wybranej listy BOM.                                                                  | Ta funkcja jest dostępna, gdy jest wybrany jest węzeł wiersza BOM i lista BOM nie jest zablokowana do edycji.                                                                                                                                                                                             |
+| Wiersze BOM-u &gt;Dodaj przed wierszem      | Otwórz okno dialogowe, w którym można wybrać wariant produktu do uwzględnienia przed wybranym wierszem BOM.         | Funkcja ta jest dostępna po wybraniu węzła wiersza BOM.                                                                                                                                                                                                                                   |
+| Wiersze BOM-u &gt;należy dodać do składnika BOM | Otwórz okno dialogowe, w którym można wybrać wariant produktu do uwzględnienia na końcu wybranego wiersza BOM.       | Funkcja ta jest dostępna, gdy wybrany węzeł ma wybraną listę BOM. Jeśli ta funkcja nie jest dostępna, w wersji BOM może brakować wariantu wybranego towaru. W takim przypadku można kliknąć **BOM**&gt;**Tworzenie wersji** utworzyć Brak wersji dla wybranego węzła. |
+| Wiersze BOM-u &gt;Dodaj po wierszu       | Otwórz okno dialogowe, w którym można wybrać wariant produktu do uwzględnienia za wybranym wierszem BOM.          | Funkcja ta jest dostępna po wybraniu węzła wiersza BOM.                                                                                                                                                                                                                                   |
+| BOM-u &gt;Tworzenie wersji             | Utwórz nową wersję BOM lub BOM dla wybranego węzła wariantu produktu.                             | Ta funkcja jest dostępna, gdy wybrany węzeł wiersza BOM jest połączony z towarem, który ma typ produkcji **BOM** lub **Formuła**.                                                                                                                                                  |
+| BOM-u &gt;obliczeń                | Otwórz okno dialogowe, w którym można uruchomić koszty lub obliczanie ceny sprzedaży dla wariantu produktu. | Funkcja ta jest dostępna, gdy wybrany węzeł jest powiązany z wersją BOM.                                                                                                                                                                                                         |
+| BOM-u &gt;Sprawdź                      | Sprawdź poprawność i sprawdź wybrany BOM.                                                                      | Funkcja ta jest dostępna, gdy wybrany węzeł jest powiązany z wersją BOM.                                                                                                                                                                                                         |
+
+## <a name="configuring-the-tree-view"></a>Konfigurowanie widoku drzewa
+Kliknij **Ustawienia**, aby dostosować dane wyświetlane w widoku drzewa w Konstruktorze BOM.
+
+| Grupa pola | Opis                                                                                                                                                  |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| lista BOM         | Użyj pól wyboru, aby wybrać kryteria pokazane w strukturze drzewa. W Konstruktorze BOM wybrane kryteria są wyświetlane u dołu obydwu kart. |
+| Trasa       | Użyj pól wyboru, aby wybrać kryteria pokazane dla marszrut.                                                                                    |
+
+
+
+

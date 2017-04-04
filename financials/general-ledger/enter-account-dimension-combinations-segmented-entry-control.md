@@ -1,0 +1,112 @@
+---
+title: "Wpisywanie kombinacji wymiarów i kont (formant Wpis podzielony na segmenty)"
+description: "Ten artykuł zawiera opis sposobów wprowadzania kombinacji kont i wymiarów albo kont księgowych. Narzędzie wprowadzania często jest nazywane formantem wpisów podzielonych na segmenty."
+author: RobinARH
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+audience: Application User
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 14071
+ms.assetid: e6fce826-c403-4d91-a78b-e9a58c44ac03
+ms.search.region: Global
+ms.author: aolson
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: db4b05bc55d735513d7580ca5908a1e84eb760c6
+ms.openlocfilehash: 96e3e774437592580a88dfbdf270d4bc7cdfc4e4
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Wpisywanie kombinacji wymiarów i kont (formant Wpis podzielony na segmenty)
+
+Ten artykuł zawiera opis sposobów wprowadzania kombinacji kont i wymiarów albo kont księgowych. Narzędzie wprowadzania często jest nazywane formantem wpisów podzielonych na segmenty.
+
+Użytkownikom wprowadzania kombinacji kont i wymiarów na różnych stronach, takich jak strony dla arkuszy finansowych budżetowania i definicje księgowania. Prawidłowa kombinacja wymiarów i kont zależy od struktury konta przypisanego do księgi oraz zaawansowanych reguł przypisanych do struktury konta. Gdy użytkownicy wprowadzają połączenie, mogą albo ręcznie wpisz wartości lub wykorzystać bogate, możliwości wyszukiwania. Po wprowadzeniu pole po rozpoczęciu wpisywania i będzie szukał, wartość i opis. Na przykład jeśli wpiszesz 180 będzie szukał każdą wartość, która rozpoczyna się od tej kombinacji numerów. Lub możesz wpisać środków pieniężnych i będzie przeszukiwać każdą wartość, która ma opis, który zaczyna się od środków pieniężnych. Można również użyć symbolu wieloznacznego, takich jak \*środków pieniężnych lub \*180 wyszukiwania, jeśli wartości lub opisu zawierają kryteria wyszukiwania. 
+
+W poniższej tabeli opisano skróty klawiaturowe, które mogą być używane po zamknięciu wyszukiwania.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Skrót klawiatury</th>
+<th>Akcja</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Alt+strzałka w dół</td>
+<td>Otwórz wyszukiwanie. Ponowne naciśnięcie kombinacji klawiszy Alt + strzałka w dół powoduje przeniesienie wyróżnienia do segmentów w menu wysuwanym.</td>
+</tr>
+<tr class="even">
+<td><ul>
+<li>Enter i Shift+Enter</li>
+<li>Separator planu kont</li>
+<li>Strzałka w prawo i strzałka w lewo</li>
+</ul></td>
+<td>Przejdź do następnego lub poprzedniego segmentu.</td>
+</tr>
+<tr class="odd">
+<td>Tabulator</td>
+<td>Przejdź do następnego pola na siatce.</td>
+</tr>
+</tbody>
+</table>
+
+W poniższej tabeli opisano skróty klawiaturowe, które mogą być używane po otwarciu wyszukiwania.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Skrót klawiatury</th>
+<th>Akcja</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Esc</td>
+<td>Zamknij wyszukiwanie.</td>
+</tr>
+<tr class="even">
+<td><ul>
+<li>Strzałka w górę i strzałka w dół</li>
+<li>Page Up i Page Down</li>
+<li>Home i End</li>
+</ul></td>
+<td>Przejdź do poprzedniej lub następnej wartości na listach, poprzedniej lub następnej grupy wartości lub pierwszego albo ostatniego elementu w wyszukiwaniu.</td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li>Separator planu kont</li>
+<li>Strzałka w prawo i strzałka w lewo</li>
+</ul></td>
+<td>Przejdź do następnego lub poprzedniego segmentu.</td>
+</tr>
+<tr class="even">
+<td>Karta</td>
+<td>Przejdź do następnego pola na siatce.</td>
+</tr>
+<tr class="odd">
+<td>Alt+W</td>
+<td>Przełączanie między trybami <strong>Pokaż wszystkie</strong> i <strong>Pokaż prawidłowe</strong>.</td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+
