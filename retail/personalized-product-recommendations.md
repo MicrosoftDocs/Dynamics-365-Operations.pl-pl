@@ -41,14 +41,14 @@ Rekomendacje produktów są włączone w następujących scenariuszach POS. Są 
 
 [![proddetails](./media/proddetails.png)](./media/proddetails.png)
 
-1.  Na **transakcji** stronę:
+2.  Na **transakcji** stronę:
 
 -   Aparat zalecenie proponuje elementów opartych na całą listę towarów w koszyku.
 -   Jeśli pracownik sklepu doda odbiorcy do transakcji, aparat zalecenie zapewnia spersonalizowane rekomendacje przy użyciu historii transakcji odbiorcy i na liście elementów w koszyku.
 
 **Uwaga** do wyświetlania zalecenia na **transakcji** strony, sprzedawca detaliczny musi zaktualizować układ ekranu w usłudze Dynamics 365 dla operacji. **Zalecenia** kontroli musi być odrzucone, do **transakcji** strony. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-1.  Na **szczegóły klienta** stronę:
+3.  Na **szczegóły klienta** stronę:
     -   Aparat zalecenie proponuje elementów na podstawie Identyfikatora użytkownika i elementy listy życzeń klienta.
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
