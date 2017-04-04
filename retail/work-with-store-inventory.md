@@ -33,9 +33,8 @@ Następujące typy dokumentów służą do zarządzania zapasami w organizacji.
 
 ## <a name="purchase-orders"></a>Zamówienia zakupu
 Zamówienia zakupu są tworzone w centrali. Jeśli magazyn sprzedaży detalicznej jest zawarty w nagłówku zamówienia zakupu, zamówienia mogą być odbierane w sklepie przy użyciu nowoczesnych POS (MPOS) lub POS chmury Microsoft Dynamics 365 dla operacji - sieci sprzedaży. Po wprowadzeniu ilości, które są odbierane w sklepie one mogą być zapisywane lokalnie dla żadnych dodatkowych modyfikacji. Można też zatwierdzić ilości i wysłać do centrali. W centrali, ilości, które zostały odebrane w sklepie są wyświetlane w usłudze Dynamics 365 dla operacji, w **odebrać** pola na zamówieniu zakupu.
-Zamówienia przeniesienia
----------------
 
+## <a name="transfer-orders"></a>Zamówienia przeniesienia
 W zleceniu przesunięcia można określić, że dany sklep jest lokalizacją, z której można wysyłać towary. W takim przypadku zamówienie przeniesienia pojawia się w sklepie jako żądanie pobrania w MPOS lub POS chmury. Po są zbierane ilości, które są wymagane, są zatwierdzone i wysyłane do centrali. W centrali, ilości, które zostały pobrane w sklepie są wyświetlane w usłudze Dynamics 365 dla operacji, w **Wyślij teraz** pola w zleceniu przesunięcia. W zleceniu przesunięcia można określić, że dany sklep jest lokalizacją, do której można wysyłać towary. W takim przypadku zamówienie przeniesienia pojawia się w sklepie jako wezwanie na przyjęcia w MPOS lub POS chmury. Po wprowadzeniu ilości, które są odbierane w sklepie one mogą być zapisywane lokalnie dla żadnych dodatkowych modyfikacji. Można też zatwierdzić ilości i wysłać do centrali. W centrali, ilości, które zostały odebrane w sklepie są wyświetlane w usłudze Dynamics 365 dla operacji, w **odebrać** pola w zleceniu przesunięcia.
 
 ## <a name="stock-counts"></a>Stany zapasów z inwentaryzacji
