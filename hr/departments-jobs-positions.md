@@ -56,10 +56,6 @@ Stanowisko to zbiór zadań i odpowiedzialności, które są wymagane od osoby, 
 Można tworzyć zadania opisujące podstawowe zadania, które pracownik zajmujący stanowisko obejmujące to zadanie musi wykonać. To samo zadanie można dodać do wielu stanowisk, i pozycje dla tego zadania będą je dziedziczyć. Niektóre przykłady znajdują się w poniższej tabeli.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Zadanie</th>

@@ -48,10 +48,10 @@ Typy zadań służy do grupowania podobnych zadań w kategorii. Typy zadań nie 
 ## <a name="job-functions"></a>Funkcje stanowisk
 Skrzyżowania zadania opisują wysokiego poziomu kategorie funkcjonalne i odnoszą się wysokiego poziomu ceł. Stanowisk pracy nie są wymagane. Do filtrowania świadczeń pracowniczych do określonych stanowisk, można używać funkcji zadania, wraz z typów zadań. Typy zadań i stanowisk pracy można skojarzyć z pracowniczych poprzez ustawienie zasady kwalifikowania wydatków na **zasady kwalifikowania wydatków** strony. Zestaw poziomów można następnie dołączyć do wynagrodzeń, którego dotyczą określona kombinacja typu zadania i stanowiskiem, zdefiniowanego za pomocą reguły uprawnienia. (Funkcje te dotyczą zarówno systemów stałych wynagrodzeń i systemów wynagrodzeń o zmiennej wysokości.) Jednakże jeśli zamierzasz używać funkcji zadań podczas konfigurowania reguł dotyczących uprawnień do zarządzania rekompensaty, należy skonfigurować stanowisk pracy przed zdefiniowaniem zadań. W poniższej tabeli przedstawiono kilka przykładów funkcji zadań.
 
-| Zadanie           | Funkcja stanowiska      |
-|---------------|-------------------|
-| Menedżer ds. sprzedaży | Menedżer średniego szczebla |
-| Księgowy    | Specjalistów     |
+| Zadanie           | Funkcja stanowiska         |
+|---------------|----------------------|
+| Menedżer ds. sprzedaży | Menedżer średniego szczebla    |
+| Księgowy    | Specjalistów        |
 
 Obsługa funkcji stanowiska za pomocą **funkcji zadań** strony. Na **funkcji zadań** strony, wprowadź kod identyfikacyjny i krótki opis funkcji zadania.
 
