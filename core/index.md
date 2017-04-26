@@ -88,3 +88,5 @@ W tym podręczniku użytkownika ułatwia tworzenie usługi Dynamics 365 dla oper
 </tbody>
 </table>
 
+
+

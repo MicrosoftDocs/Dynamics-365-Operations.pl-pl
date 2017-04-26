@@ -98,3 +98,5 @@ Istnieje możliwość projektowania kwestionariuszy i zarządzania nimi, aby zeb
 -   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
 
 
+
+

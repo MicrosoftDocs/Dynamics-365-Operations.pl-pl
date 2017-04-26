@@ -27,6 +27,9 @@ ms.lasthandoff: 04/12/2017
 
 # <a name="cash-and-bank-management-home-page"></a>Strona główna modułu Zarządzanie gotówką i bankami
 
+[!include[banner](../includes/banner.md)]
+
+
 Moduł Zarządzanie gotówką i bankami służy do obsługi kont bankowych firmy i instrumentów finansowych skojarzonych z tym kontami. 
 
 Instrumenty te obejmują dokumenty wpłaty, czeki, weksle oraz skrypty dłużne. Można także uzgadniać wyciągi bankowe i drukować dane bankowe w raportach standardowych.
@@ -69,4 +72,6 @@ Instrumenty te obejmują dokumenty wpłaty, czeki, weksle oraz skrypty dłużne.
 -   [Scenario: Settle a partial customer payment that has discounts on credit notes](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
 -   [Scenario: Settle a partial customer payment that has multiple discount periods](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
 -   [Scenariusz: Użycie jednej płatności odbiorcy do rozliczenia wiele faktur, obejmujących wiele okresów rabatu](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+
+
 
