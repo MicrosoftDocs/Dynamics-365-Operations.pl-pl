@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-posting-profiles"></a>Profile księgowania dostawców
 
+[!include[banner](../includes/banner.md)]
+
+
 Profile księgowania dostawców umożliwiają nadzór nad księgowaniem transakcji z dostawcami w księdze głównej.
 
 <a name="vendor-posting-profiles"></a>Profile księgowania dostawców
@@ -146,6 +149,8 @@ Określ następujące wartości do konfigurowania profilu księgowania:
 | **Rozliczenie** | Wybierz tę opcję, aby włączyć automatyczne rozliczanie transakcji, które mają ten profil księgowania. Jeśli ta opcja jest wyczyszczona, należy ręcznie rozliczyć transakcje na stronie Rozliczanie otwartych transakcji. |
 | **Anuluj **     | Wybierz tę opcję, aby umożliwić anulowanie transakcji, które mają ten profil księgowania.                                                                                                               |
 | **Zamknij**      | Umożliwia wybranie docelowego profilu księgowania, który ma zostać włączony po zamknięciu transakcji bieżącego profilu księgowania. Transakcja jest traktowana jako zamknięta, jeśli jest w pełni rozliczona.                                       |
+
+
 
 
 

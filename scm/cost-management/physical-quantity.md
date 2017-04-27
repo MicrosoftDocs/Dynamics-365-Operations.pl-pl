@@ -1,5 +1,5 @@
 ---
-title: "Wartości obiektów magazynowych"
+title: "Wartości obiektu zapasów"
 description: "Ten artykuł zawiera informacje o sposobie obliczania wartości obiektu zapasów."
 author: YuyuScheller
 manager: AnnBe
@@ -27,14 +27,14 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="inventory-object-values"></a>Wartości obiektów magazynowych
+# <a name="inventory-object-values"></a>Wartości obiektu zapasów
 
 Ten artykuł zawiera informacje o sposobie obliczania wartości obiektu zapasów. 
 
-Nowa funkcja o nazwie ** ilość fizyczna ** pozwala zobaczyć wartości obiektu określonego stanu zapasów. Obiekt kosztów reprezentuje poziom podmiotu, w którym są wykonywane operacje księgowania zapasów. Aby uzyskać więcej informacji o obiektach kosztów, zobacz temat [Obiekty kosztów](cost-object.md). Aby wyświetlić wartości obiektu określonego stanu zapasów, kliknij przycisk **fizyczna ilość** na **obiektu koszt** strony. Oto sposób obliczania wartości zapasów obiektu: obiekt Inventory. Wartość = Koszt obiektu. Średni koszt jednostkowy × zapasów obiektu. Ilość w poniższym przykładzie przedstawiono sposób obliczania wartości zapasów obiektu i obiektu koszt. Zarejestrowane są dwa zdarzenia dokumentu przyjęcia produktów dla pozycji A:
+Nowa funkcja o nazwie **Ilość fizyczna** pozwala zobaczyć wartości określonego obiektu zapasów. Obiekt kosztów reprezentuje poziom podmiotu, w którym są wykonywane operacje księgowania zapasów. Aby uzyskać więcej informacji o obiektach kosztów, zobacz temat [Obiekty kosztów](cost-object.md). Aby wyświetlić wartości określonego obiektu zapasów, kliknij opcję **Ilość fizyczna** na stronie **Obiekt kosztów**. Obliczanie wartości obiektu zapasów: Obiekt zapasów.Wartość = Obiekt kosztów.Średni koszt jednostkowy × Obiekt zapasów.Ilość. Poniższy przykład pokazuje sposób obliczania wartości obiektu zapasów i obiektu kosztów. Zarejestrowane są dwa zdarzenia dokumentu przyjęcia produktów dla pozycji A:
 
--   Dokument przyjęcia produktów 1: ilość = 100 Szt., kwota = $1,000.00, witryny = 1, Magazyn = 11, nr partii. = B1
--   Dokument przyjęcia produktów 2: ilość = 50 Szt., kwota = $800.00, witryny = 1, Magazyn = 11, nr partii. = B2
+-   Dokument przyjęcia produktów 1: ilość = 100 sztuk., Kwota = 1000,00 USD, Oddział = 1, Magazyn = 11, Nr partii = B1
+-   Dokument przyjęcia produktów 2: ilość = 50 sztuk., Kwota = 800,00 USD, Oddział = 1, Magazyn = 11, Nr partii = B2
 
 Poniższa tabela przedstawia wynik obliczeń dla obiektu kosztów. Wyniki można wyświetlać na stronie **Obiekt kosztów**.
 
@@ -130,10 +130,10 @@ Poniższa tabela przedstawia wynik obliczeń dla obiektu magazynu. Wyniki można
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Cost objects](cost-object.md)
+[Obiekty kosztów](cost-object.md)
 
-[Cost entries](cost-entries.md)
+[Wpisy kosztów](cost-entries.md)
 
-[Co to jest nowe i zmienione w systemie Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Nowości i zmiany w programie Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
 

@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-department-and-associate-it-with-the-department-hierarchy"></a>Tworzenie działu i przypisywanie go do hierarchii działów
 
+[!include[banner](includes/banner.md)]
+
+
 Dział to jednostka operacyjna należąca do kategorii lub obszaru funkcjonalnego organizacji. Dział jest odpowiedzialny za określony obszar organizacji, np. sprzedaż, księgowość lub zasoby ludzkie. Działy pozwalają tworzyć raporty dotyczące obszarów funkcyjnych. Działy mogą mieć odpowiedzialność zysków i strat.
 
-Dział może zawierać grupę centrów kosztów. Stanowiska mogą być przypisywane do działów. Aby utworzyć dział, kliknij **zasoby ludzkie**&gt;**departamenty**&gt;**działu**. Poniższa tabela zawiera opis pola, które są dostępne.
+Dział może zawierać grupę centrów kosztów. Stanowiska mogą być przypisywane do działów. Aby utworzyć dział, kliknij kolejno opcje **Zasoby ludzkie** &gt; **Działy** &gt; **Dział**. W poniższej tabeli przedstawiono dostępne pola.
 
 | Pole               | Opis                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -46,12 +49,14 @@ Dział może zawierać grupę centrów kosztów. Stanowiska mogą być przypisyw
 
 Aby dodać dział do hierarchii działu, wykonaj następujące kroki:
 
-1.  Kliknij **zasoby ludzkie**&gt;**departamenty**&gt;**Hierarchia działów**.
+1.  Kliknij kolejno opcje **Zasoby ludzkie** &gt; **Działy** &gt; **Hierarchia działów**.
 2.  Kliknij **Edycja**, a następnie wybierz organizację, której powinien podlegać dział.
 3.  Kliknij **Wstaw** i wybierz **Dział** na liście.
 4.  Z listy działów wybierz dział do dodania do hierarchii.
-5.  Zapisz zmiany. Pojawi się komunikat, że została utworzona wersja robocza hierarchii.
-6.  Gdy będziesz gotowy, kliknij przycisk **Opublikuj** w projektancie hierarchii. Można wprowadzić datę wejścia, która wskazuje, kiedy należy opublikować hierarchii. Na przykład aby dodać nowy dział na początku następnego roku kalendarzowego, ustaw datę wejścia w życie na 1 stycznia w nowym roku kalendarzowym. Zmiany hierarchii zostaną wprowadzone w tym dniu.
+5.  Zapisz zmiany. Pojawi się komunikat, że utworzono wersję roboczą hierarchii.
+6.  Po zakończeniu kliknij przycisk **Opublikuj** w projektancie hierarchii. Można wprowadzić datę wejścia w życie, która wskazuje, kiedy hierarchia powinna zostać opublikowana. Na przykład aby dodać nowy dział na początku następnego roku kalendarzowego, ustaw datę wejścia w życie na 1 stycznia w nowym roku kalendarzowym. Zmiany hierarchii zostaną wprowadzone w tym dniu.
+
+
 
 
 

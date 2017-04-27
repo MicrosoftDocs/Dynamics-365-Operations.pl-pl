@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Domyślne konta przeciwstawne dla arkuszy faktur od dostawcy i arkuszy zatwierdzania faktur
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Domyślne konta przeciwstawne są używane w następujących formularzach arkusza stron od dostawcy:
@@ -92,6 +95,8 @@ Skorzystaj z poniższej tabeli, aby określić miejsce przypisania domyślnych k
 </tr>
 </tbody>
 </table>
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Salda głównego konta księgowego"
-description: "Ten artykuł wyjaśnia dwa sposoby wyświetlania sald kont księgi głównej - strony listy bilansów próbnych i sprawozdań finansowych. Omówiono także sposoby aktualizacji sald zestawów wymiarów."
+description: "W tym artykule opisano dwa sposoby wyświetlania sald kont księgi głównej — ze strony listy Bilans próbny i za pomocą raportów finansowych. Omówiono także sposoby aktualizacji sald zestawów wymiarów."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="general-ledger-account-balances"></a>Salda głównego konta księgowego
 
-Ten artykuł wyjaśnia dwa sposoby wyświetlania sald kont księgi głównej - strony listy bilansów próbnych i sprawozdań finansowych. Omówiono także sposoby aktualizacji sald zestawów wymiarów.
+[!include[banner](../includes/banner.md)]
+
+
+W tym artykule opisano dwa sposoby wyświetlania sald kont księgi głównej — ze strony listy Bilans próbny i za pomocą raportów finansowych. Omówiono także sposoby aktualizacji sald zestawów wymiarów.
 
 Użytkownik może wyświetlić salda w księdze głównej na wiele różnych sposobów. To najchętniej używanych należą:
 
@@ -46,6 +49,8 @@ Gdy użytkownik zmienia parametry, salda są odświeżane. Użytkownik może ró
 
 Użytkownicy mogą wyświetlać bardziej szczegółowe dane transakcji składowych salda.    
 
-Aby uzyskać więcej informacji, zobacz [wyświetlania raportów finansowych,](view-financial-reports.md).
+Aby uzyskać więcej informacji, zobacz [Wyświetlanie raportów finansowych](view-financial-reports.md).
+
+
 
 

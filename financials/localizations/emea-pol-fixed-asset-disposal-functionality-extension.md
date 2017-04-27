@@ -1,6 +1,6 @@
 ---
-title: "Sprzedaży/likwidacji środków trwałych dla Polski"
-description: "Ten temat zawiera informacje o funkcjach sprzedaży/likwidacji środka trwałego dla użytkowników w firmach w Polsce."
+title: "Likwidacja środków trwałych dla Polski"
+description: "Ten temat zawiera informacje o funkcjonalności likwidacji środków trwałych dla użytkowników w firmach w Polsce."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,36 +25,39 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="fixed-assets-disposal-for-poland"></a>Sprzedaży/likwidacji środków trwałych dla Polski
+# <a name="fixed-assets-disposal-for-poland"></a>Likwidacja środków trwałych dla Polski
 
-Ten temat zawiera informacje o funkcjach sprzedaży/likwidacji środka trwałego dla użytkowników w firmach w Polsce. 
+[!include[banner](../includes/banner.md)]
 
-Środki trwałe mogą być sprzedawane za pomocą funkcji usuwania poprzez faktury niezależnej, dziennik środka trwałego lub dziennik główny w księdze głównej. Aby uzyskać więcej informacji dotyczących likwidacji środków trwałych, zobacz [likwidacji środków trwałych konta księgowe](../fixed-assets/fixed-asset-disposal-posting-accounts.md). Dla użytkowników w firmach w Polsce rozszerzenie funkcjonalności sprzedaży/likwidacji środków trwałych obejmuje:
 
--   Szablon dla likwidacji środka trwałego na **profile księgowania środków trwałych** strony.
--   Dwa dodatkowe parametry na **zezwolenia na sprzedaż środka trwałego** strony. A **Sprawdź, czy środków trwałych mogą być sprzedawane** pole wyboru i **zezwolenia na sprzedaż środka trwałego** pole wyboru na **odwołanie i notatki** skróconej środka trwałego. Jeśli **Sprawdź, czy środków trwałych mogą być sprzedawane** pole wyboru jest zaznaczone, tylko zasoby oznaczone jako **zezwolenia na sprzedaż środka trwałego** mogą być sprzedawane.
--   Konto sprzedaży dla likwidacji środków trwałych, która zawiera dodatkowy parametr na **sprzedaży** skróconej na **ustalone parametry aktywa** strony. Za pomocą tego parametru można zdefiniować domyślne konto księgowe do księgowania sprzedaży środka trwałego.
--   Dodatkowe pola na wytwarzanie częściowej sprzedaży/likwidacji ** strony dla użytkowników, aby wprowadzić wartość procentową. Procent ten będzie służyć do obliczenia kwoty wiersza jako wartość księgową netto środków trwałych pomnożona o wartość procentową.
+Ten temat zawiera informacje o funkcjonalności likwidacji środków trwałych dla użytkowników w firmach w Polsce. 
 
-## <a name="templates-for-fixed-asset-disposal"></a>Szablony dla sprzedaży/likwidacji środka trwałego
-Dla sprzedaży/likwidacji środka trwałego można użyć szablonu jako opcja, aby uprościć ustawianie kont dla likwidacji środków trwałych dla profilów księgowania. Aby utworzyć lub edytować szablony dla sprzedaży/likwidacji środka trwałego, wykonaj następujące kroki.
+Środki trwałe mogą być sprzedawane za pomocą funkcji likwidacji przy użyciu faktury niezależnej, arkusza środków trwałych lub arkusza finansowego w księdze głównej. Aby uzyskać więcej informacji dotyczących likwidacji środków trwałych, zobacz [Konta księgowania likwidacji środków trwałych](../fixed-assets/fixed-asset-disposal-posting-accounts.md). Dla użytkowników w firmach w Polsce rozszerzenie dodające funkcjonalność likwidacji środków trwałych zawiera następujące elementy:
 
-1.  Kliknij **aktywa trwałe**&gt;**instalacji**&gt;**profile księgowania środków trwałych**.
-2.  W **usuwania** sekcji, kliknij **Utwórz szablon** i wybierz profil księgowania środków trwałych.
-3.  Wypełnij następujące pola
+-   Szablon do likwidowania środków trwałych na stronie **Profile księgowania środków trwałych**.
+-   Dwa dodatkowe parametry na stronie **Uprawnienie do sprzedaży środka trwałego**. Pola wyboru **Sprawdź dopuszczenie środka do sprzedaży** i **Uprawnienie do sprzedaży środka trwałego** na skróconej karcie **Odwołanie i notatki** dla środka trwałego. Jeśli jest zaznaczone pole wyboru **Sprawdź dopuszczenie środka do sprzedaży**, można sprzedawać tylko składniki aktywów oznaczone jako **Uprawnienie do sprzedaży środka trwałego**.
+-   Konto sprzedaży do likwidacji środków trwałych, które zawiera dodatkowy parametr na skróconej karcie **Sprzedaż** na stronie **Parametry środków trwałych**. Za pomocą tego parametru można zdefiniować domyślne konto księgowe do księgowania sprzedaży środków trwałych.
+-   Dodatkowe pole na stronie **Częściowa likwidacja**, gdzie użytkownicy mogą wprowadzić wartość procentową. Ta wartość procentowa będzie służyć do obliczania kwoty wiersza jako wartości księgowej netto wybranego środka trwałego pomnożonej o wartość procentową.
+
+## <a name="templates-for-fixed-asset-disposal"></a>Szablony likwidacji środków trwałych
+Szablonu likwidacji środków trwałych można używać jako opcji upraszczającej konfigurowanie kont likwidacji środków trwałych dla profili księgowania. Aby utworzyć lub edytować szablon likwidacji środków trwałych, wykonaj następujące kroki:
+
+1.  Wybierz kolejno opcje **Środki trwałe** &gt; **Ustawienia** &gt; **Profile księgowania środków trwałych**.
+2.  W sekcji **Likwidacja** kliknij opcję **Utwórz szablon** i wybierz profil księgowania środków trwałych.
+3.  Wypełnij następujące pola:
     |                    |                                                                                                                                |
     |--------------------|--------------------------------------------------------------------------------------------------------------------------------|
-    | **Field**          | **Description**                                                                                                                |
-    | **Book**           | Wybierz księgę, którą chcesz skonfigurować lub zaktualizować konta księgowania dla likwidacji środka trwałego.                                         |
-    | **Main account**   | Wybrane konto zostanie automatycznie użyta jako **konta głównego** w instalacji lub aktualizacji kont na potrzeby księgowania sprzedaży/likwidacji.       |
-    | **Offset account** | Wybrane konto zostanie automatycznie użyta jako **konto przeciwstawne** w instalacji lub aktualizacji kont na potrzeby księgowania sprzedaży/likwidacji. |
-    | **Overwrite**      | Jeśli zaznaczone, system zastąpi istniejące konta likwidacji dla wybranego **książki**.                                     |
+    | **Pole**          | **Opis**                                                                                                                |
+    | **Księga**           | Wybierz księgę, w której chcesz skonfigurować lub aktualizować konta księgowania likwidacji składników aktywów.                                         |
+    | **Konto główne**   | Wybrane konto będzie automatycznie używane jako **Konto główne** podczas tworzenia lub aktualizowania kont na potrzeby księgowania likwidacji.       |
+    | **Konto przeciwstawne** | Wybrane konto będzie automatycznie używane jako **Konto przeciwstawne** podczas tworzenia lub aktualizowania kont na potrzeby księgowania likwidacji. |
+    | **Zastępowanie**      | Jeśli zaznaczysz tę opcję, system zastąpi istniejące konta likwidacji dla wybranej wartości **Księga**.                                     |
 
-4.  Click **OK**. System automatycznie tworzy lub aktualizuje reguł księgowania dla wybranej księgi dla następujących stałe składniki sprzedaży/likwidacji środków trwałych (typy transakcji):
+4.  Kliknij przycisk **OK**. System automatycznie będzie tworzył lub aktualizował reguły księgowania w wybranej księdze dla następujących składników (typów transakcji) likwidacji środków trwałych:
     -   Amortyzacja (lata ubiegłe)
     -   Amortyzacja (ten rok)
-    -   Korekty amortyzacji (lata wcześniejsze)
-    -   Korekty amortyzacji (ten rok)
+    -   Korekta amortyzacji (lata wcześniejsze)
+    -   Korekta amortyzacji (ten rok)
     -   Amortyzacja dodatkowa (poprzednie lata)
     -   Amortyzacja dodatkowa (bieżący rok)
     -   Umorzenie BO (lata ubiegłe)
@@ -62,22 +65,24 @@ Dla sprzedaży/likwidacji środka trwałego można użyć szablonu jako opcja, a
     -   Zmiana wartości umorzenia (lata ubiegłe)
     -   Zmiana wartości umorzenia (ten rok)
 
-## <a name="permission-to-sell"></a>Zezwolenia na sprzedaż
-Zezwolenia na sprzedaż funkcjonalność rozszerza podstawowe likwidacji przez sprzedaż funkcjonalności dla użytkowników w firmach w Polsce z dwóch dodatkowych parametrów:
+## <a name="permission-to-sell"></a>Zezwolenie na sprzedaż
+Funkcja zezwolenia na sprzedaż rozszerza podstawową funkcjonalność likwidacji poprzez sprzedaż dla użytkowników w firmach w Polsce o dwa dodatkowe parametry:
 
--   **Sprawdź, czy środków trwałych mogą być sprzedawane** — to pole wyboru umożliwia aktywować dodatkowy filtr w polu wyszukiwania, wybierając środek trwały ma być sprzedawane w wierszu dziennika lub faktury niezależnej. Dodatkowy filtr ma wpływ transakcji o typie **Likwidacja — sprzedaż** tylko. Aby edytować **Sprawdź, czy środków trwałych mogą być sprzedawane** pola, otwórz **sprzedaż** skróconej na **środków trwałych**&gt;**instalacji**&gt;**stałej parametrów trwałych** strony.
--   **Zezwolenia na sprzedaż środka trwałego** — Użyj tego pola wyboru umożliwia określenie, czy mogą być sprzedawane poszczególnych parametrów dla każdego środka trwałego. Aby edytować to pole, otwórz **odwołanie i notatki** skróconej dla wybranego środka trwałego.
+-   **Sprawdź dopuszczenie środka do sprzedaży** — To pole wyboru umożliwia aktywację dodatkowego filtra w polu wyszukiwania podczas wybierania środka trwałego do sprzedaży w wierszu faktury niezależnej lub arkusza. Dodatkowy filtr ma wpływ tylko na transakcje o typie **Likwidacja — sprzedaż**. Aby edytować pole **Sprawdź dopuszczenie środka do sprzedaży**, otwórz skróconą kartę **Sprzedaż** na stronie **Środki trwałe** &gt; **Ustawienia** &gt; **Parametry środków trwałych**.
+-   **Uprawnienie do sprzedaży środka trwałego** — Użyj tego pola wyboru, aby określić, czy jest dozwolona sprzedaż poszczególnych parametrów każdego środka trwałego. Aby edytować to pole, otwórz skróconą kartę **Odwołanie i notatki** dla wybranego środka trwałego.
 
-## <a name="sales-account-for-fixed-assets-disposal"></a>Konto sprzedaży dla sprzedaży/likwidacji środków trwałych
-Po transakcji sprzedaży sprzedaży/likwidacji w księdze głównej przy użyciu dziennika środka trwałego lub dziennik główny, konto sprzedaży jest równa wiersza dziennika na podstawie ustawień na **profile księgowania środków trwałych** strony. Podczas tworzenia transakcji likwidacji sprzedaży za pomocą faktury niezależnej, użytkownik powinien wypełnić **konta głównego** pole za pomocą konta sprzedaży. Konto sprzedaży dla środków trwałych, że funkcja usuwania umożliwia użytkownikom w firmach w Polsce skonfigurowanie konta księgowego, który będzie traktowana jako konto sprzedaży dla transakcji sprzedaży likwidacji tworzony domyślnie przy użyciu faktury niezależnej. Aby skonfigurować konto sprzedaży dla sprzedaży/likwidacji środków trwałych, otwórz **sprzedaż** skróconej na **środków trwałych**&gt;**instalacji**&gt;**ustalone parametry aktywa** strony.
+## <a name="sales-account-for-fixed-assets-disposal"></a>Konto sprzedaży do likwidacji środków trwałych
+Gdy utworzysz transakcję likwidacji przez sprzedaż za pomocą arkusza środków trwałych lub arkusza finansowego w księdze głównej, konto sprzedaży domyślnie jest łączone z wierszem arkusza podanym w konfiguracji na stronie **Profile księgowania środków trwałych**. W przypadku tworzenia transakcji likwidacji przez sprzedaż za pomocą faktury niezależnej użytkownik powinien w polu **Konto główne** wpisać konto sprzedaży. Funkcjonalność konta sprzedaży do likwidacji środków trwałych umożliwia użytkownikom w firmach w Polsce skonfigurowanie konta księgowego, które domyślnie będzie traktowane jako konto sprzedaży dla transakcji likwidacji przez sprzedaż tworzonych przy użyciu faktury niezależnej. Aby skonfigurować konto sprzedaży do likwidacji środków trwałych, otwórz skróconą kartę **Sprzedaż** na stronie **Środki trwałe** &gt; **Ustawienia** &gt; **Parametry środków trwałych**.
 
 ## <a name="partial-sales-of-fixed-assets"></a>Sprzedaż częściowa środków trwałych
-Sprzedaż lub złomowanie likwidacji środka trwałego umożliwia usuwanie całego środka trwałego, który tylko. Częściowa sprzedaż funkcje modułu środków trwałych pozwala użytkownikom w firmach w Polsce do dysponowania częściowo środka trwałego za pośrednictwem zarówno sprzedaż lub złomowanie typy transakcji. Częściowa sprzedaż środków trwałych jest dostępna za pośrednictwem faktury niezależnej, stałych dziennik ŚT lub dziennika głównego w księdze głównej. Aby częściowo likwidacja środka trwałego, wprowadź wartość procentową (liczba całkowita od 0 do 100) w **Sprzedaż częściowa** w jednej z następujących lokalizacji:
+Likwidacja środka trwałego przez sprzedaż lub złomowanie umożliwia zlikwidowanie tylko całego środka trwałego. Funkcjonalność sprzedaży częściowej środków trwałych pozwala użytkownikom w firmach w Polsce pozbywać się środków trwałych częściowo za pomocą transakcji sprzedaży lub złomowania. Funkcja częściowej sprzedaży środków trwałych może być realizowana przy użyciu faktury niezależnej, arkusza środków trwałych lub arkusza finansowego w księdze głównej. Aby częściowo zlikwidować środek trwały, wprowadź wartość procentową (liczbę całkowitą od 0 do 100) w polu **Sprzedaż częściowa** w jednym z następujących miejsc:
 
--   **Ogólne** tab na **dziennika środka trwałego** linii.
--   **Środki trwałe** tab na **dziennika głównego** linii.
--   **Ogólne** tab na **faktury niezależnej** linii.
+-   Karta **Ogólne** w wierszu **Arkusz środków trwałych**.
+-   Karta **Środki trwałe** w wierszu **Arkusze finansowe**.
+-   Karta **Ogólne** w wierszu **Faktura niezależna**.
 
-Domyślnie **Sprzedaż częściowa** jest wartość pola **100**. Gdy użytkownik wybierze **usuwania odpadków** lub **sprzedaż usuwania** i typ transakcji środka trwałego w arkuszu, wartość księgowa netto będzie domyślnie w wierszu dziennika. Jeśli użytkownik zmieni wartość procentową, wartość księgowa netto w wierszu dziennika zostanie zmniejszona. Użytkownik może również ręcznie zmienić wartość księgowa netto, po którym procent w **Sprzedaż częściowa** pola zostaną obliczone ponownie. **Przykład** środek trwały został nabyty w USD 10.000, USD 1.000 amortyzacji, wartości księgowej netto USD 9.000. Pierwszy częściowa sprzedaż 50% - wartość księgowa netto obliczane dla wiersza arkusza jest 50 %USD 9.000 = USD 4.500. Drugi częściowa sprzedaż 50% - obliczona wartość księgową netto dla wiersza arkusza jest 50% pozostałą wartość księgową netto USD 4.500 = USD 2.250. Jeśli użytkownik chce, aby koszt netto pozostałą wartość księgową USD 2.250, on na arkuszu lub wiersza faktury niezależnej należy wprowadzić procent 100.
+Domyślnie pole **Sprzedaż częściowa** zawiera wartość **100**. Gdy użytkownik wybierze typ transakcji **Likwidacja — odpadki** lub **Likwidacja — sprzedaż** oraz składnik aktywów w arkuszu, w wierszu arkusza domyślnie zostanie umieszczona wartość księgowa netto. Jeśli użytkownik zmieni wartość procentową, wartość księgowa netto w wierszu arkusza zostanie zmniejszona. Użytkownik może również ręcznie zmienić wartość księgową netto, co spowoduje przeliczenie wartości procentowej w polu **Sprzedaż częściowa**. **Przykład** Środek trwały został nabyty za 10 000 USD, amortyzacja wynosi 1000 USD, czyli wartość księgowa netto to 9000 USD. Pierwszy sprzedaż częściowa opiewa na 50% — wartość księgowa netto obliczona dla wiersza arkusza wynosi 50% z 9000 USD = 4500 USD. Sprzedaż częściowa drugich 50% — obliczona wartość księgowa netto dla wiersza arkusza wynosi 50% pozostałej wartość księgowej netto 4500 USD = 2250 USD. Jeśli użytkownik chce zaliczyć w koszty pozostałą wartość księgową netto 2250 USD, musi wprowadzić wartość procentową 100 w wierszu arkusza lub faktury niezależnej.
+
+
 
 

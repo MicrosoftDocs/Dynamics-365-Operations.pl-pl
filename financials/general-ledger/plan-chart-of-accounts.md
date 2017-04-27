@@ -1,5 +1,5 @@
 ---
-title: Plan planu kont
+title: Planowanie planu kont
 description: "Ten artykuł zawiera informacje, które pomogą zaprojektować plan kont w organizacji."
 author: RobinARH
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-your-chart-of-accounts"></a>Plan planu kont
+# <a name="plan-your-chart-of-accounts"></a>Planowanie planu kont
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł zawiera informacje, które pomogą zaprojektować plan kont w organizacji.
 
@@ -34,7 +37,7 @@ Do śledzenia i obsługi informacji finansowych w organizacji można skonfigurow
 
 Plan kont jest to ustrukturalizowana lista kont księgi głównej firmy. Lista służy do przygotowywania raportów finansowych dla urzędów i właścicieli. Konta są pogrupowane w typy i połączone w większe kategorie. Na poziomie najbardziej ogólnym, konta są pogrupowane jako przychody i koszty (konta operacyjne) oraz jako aktywa i pasywa (konta bilansowe). 
 
-Plan kont może być udostępniany i używany przez dowolną firmę w organizacji. Plan kont, który jest używany przez osobę prawną jest zdefiniowany na **księgi** strony. 
+Plan kont może być udostępniany i używany przez dowolną firmę w organizacji. Plan kont używany przez firmę definiuje się na stronie **Księga**. 
 
 Oto kilka czynników, które należy uwzględnić podczas planowania struktury planu kont w organizacji:
 
@@ -48,10 +51,12 @@ Dobrze jest połączyć konta główne z kategoriami konta głównego, by móc k
 
 Strona **Skonfiguruj strukturę konta** służy do tworzenia struktur kont. Struktury kont definiują prawidłowe kombinacje. Kombinacje, łącznie z kontami głównymi, tworzą plan kont. 
 
-**Legal entity overrides** 
+**Firma zastępuje** 
 
-Nie wszystkie konta główne są prawidłowe dla wszystkich podmiotów prawnych, a niektóre mogą jedynie być istotne dla określonego okresu. W tym scenariuszu sekcja Firma zastępuje może służyć do identyfikowania firm, dla których konto główne powinno być zawieszone, właściciela oraz okresu aktywności wymiaru. Zastąpienia na poziomie wspólnym nie mogą być bardziej restrykcyjne niż zastąpienia na poziomie firmy.
+Nie wszystkie konta są prawidłowe dla wszystkich firm, a niektóre mogą być dostępne tylko w określonym przedziale czasu. W tym scenariuszu sekcja Firma zastępuje może służyć do identyfikowania firm, dla których konto główne powinno być zawieszone, właściciela oraz okresu aktywności wymiaru. Zastąpienia na poziomie wspólnym nie mogą być bardziej restrykcyjne niż zastąpienia na poziomie firmy.
 
-Aby uzyskać więcej informacji, zobacz [wymiarów finansowych](financial-dimensions.md).
+Aby uzyskać więcej informacji, zobacz [Wymiary finansowe](financial-dimensions.md).
+
+
 
 

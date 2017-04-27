@@ -40,7 +40,7 @@ Ograniczenia tabeli to listy kombinacji wartości, które są dozwolone dla atry
 
 ### <a name="example-of-a-table-constraint"></a>Przykład ograniczenia tabeli
 
-Ten przykład pokazuje, jak można ograniczyć konfigurację głośnika do określonych wykończeń i maskownic. Pierwsza tabela pokazuje wykończenia i maskownice powszechnie dostępnych dla konfiguracji. Wartości są zdefiniowane dla ** Zakończ szafka ** i **kratkę przednią** atrybut typów.
+Ten przykład pokazuje, jak można ograniczyć konfigurację głośnika do określonych wykończeń i maskownic. Pierwsza tabela pokazuje wykończenia i maskownice powszechnie dostępnych dla konfiguracji. Wartości są zdefiniowane dla atrybutów typu **Wykończenie** i **Maskownica**.
 
 | Typ atrybutu | Wartości                      |
 |----------------|-----------------------------|
@@ -60,8 +60,8 @@ Następna tabela przedstawia kombinacje, które są definiowane przez ograniczen
 
 Można tworzyć ograniczenia tabeli zdefiniowane przez użytkownika lub przez system. Aby uzyskać więcej informacji, zobacz [Ograniczenia tabeli zdefiniowane przez użytkownika lub przez system](system-defined-user-defined-table-constraints.md).
 
-## <a name="what-syntax-should-be-used-to-write-constraints"></a>Jakie składni, należy napisać ograniczenia?
-Trzeba zapisać ograniczenia za pomocą składni Optimization Modeling Language (OML). System używa Microsoft Solver Foundation ograniczenia w dodatku solver, aby rozwiązać ograniczenia.
+## <a name="what-syntax-should-be-used-to-write-constraints"></a>Jakiej składni należy używać w celu zapisywania ograniczeń?
+Trzeba zapisać ograniczenia za pomocą składni Optimization Modeling Language (OML). System używa narzędzia Microsoft Solver Foundation do rozwiązywania ograniczeń.
 
 ## <a name="should-i-use-table-constraints-or-expression-constraints"></a>Z których ograniczeń należy korzystać: ograniczeń wyrażenia czy ograniczeń tabeli?
 Można użyć albo ograniczeń wyrażenia, albo ograniczeń tabeli, w zależności od preferencji dotyczących ograniczeń. Ograniczenie tabeli jest tworzone jako macierz, podczas gdy ograniczenie wyrażenia to indywidualna instrukcja. Podczas konfigurowania produktu, nie ma znaczenia, jaki rodzaj ograniczenia jest używany. W poniższym przykładzie pokazano, jak te dwie metody się od siebie różnią.  
@@ -110,32 +110,32 @@ W poniższych tabelach znajdują się listy operatorów i notacji infix, któryc
 <td>Jest to wartość true, jeśli pierwszy warunek nie jest spełniony, drugi warunek jest prawdziwy, lub oba są.</td>
 <td>Implies[a, b], infix: a -: b</td>
 <td><ul>
-<li><strong>Operator:</strong> oznacza [x! = 0, y &gt;= 0]</li>
-<li><strong>Infix notacji:</strong> x! = 0-: y &gt;= 0</li>
+<li><strong>Operator:</strong> Implies[x != 0, y &gt;= 0]</li>
+<li><strong>Notacja Infix:</strong> x != 0 -: y &gt;= 0</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>i</td>
 <td>Jest to możliwe tylko wtedy, gdy są spełnione wszystkie warunki. Jeśli liczba warunków wynosi 0 (zero), wówczas wartość to <strong>True</strong>.</td>
-<td>I infix [argumenty]: &amp;b &amp; ... &amp;z</td>
+<td>And[args], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
-<li><strong>Operator:</strong> i [x == 2, y &lt;= 2]</li>
-<li><strong>Infix notacji:</strong> x == 2 &amp;y &lt;= 2</li>
+<li><strong>Operator:</strong> And[x == 2, y &lt;= 2]</li>
+<li><strong>Notacja Infix:</strong> x == 2 &amp; y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>lub</td>
 <td>Wartość jest True, jeśli jest spełniony dowolny z warunków. Jeśli liczba warunków wynosi 0 (zero), wówczas wartość to <strong>False</strong>.</td>
-<td>Lub infix [argumenty]: | b | ... | z</td>
+<td>Or[args], infix: a | b | ... | z</td>
 <td><ul>
-<li><strong>Operator:</strong> lub [x == 2, y &lt;= 2]</li>
-<li><strong>Infix notacji:</strong> x == 2 | y &lt;= 2</li>
+<li><strong>Operator:</strong> Or[x == 2, y &lt;= 2]</li>
+<li><strong>Notacja Infix:</strong> x == 2 | y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Plus</td>
 <td>Sumuje warunki. Jeśli liczba warunków wynosi 0 (zero), wówczas wartość to <strong>0</strong>.</td>
-<td>Plus [argumenty] infix: + b +... + z</td>
+<td>Plus[args], infix: a + b + ... + z</td>
 <td><ul>
 <li><strong>Operator:</strong> Plus[x, y, 2] == z</li>
 <li><strong>Notacja infix:</strong> x + y + 2 == z</li>
@@ -159,7 +159,7 @@ W poniższych tabelach znajdują się listy operatorów i notacji infix, któryc
 <tr class="odd">
 <td>Czasy</td>
 <td>Produkt jego warunków. Jeśli liczba warunków wynosi 0 (zero), wówczas wartość to <strong>1</strong>.</td>
-<td>Czasy [argumenty] infix: * b *... * z</td>
+<td>Times[args], infix: a * b * ... * z</td>
 <td><ul>
 <li><strong>Operator:</strong> Times[x, y, 2] == z</li>
 <li><strong>Notacja infix:</strong> x * y * 2 == z</li>
@@ -167,8 +167,8 @@ W poniższych tabelach znajdują się listy operatorów i notacji infix, któryc
 </tr>
 <tr class="even">
 <td>Potęga</td>
-<td>Wartość wykładnicza. Potęgowanie od prawej do lewej. (Innymi słowy, to prawostronne.) W związku z tym <strong>zasilania [, b, c]</strong> jest równoważne z <strong>zasilania [, [b, c]]</strong>. Operatora <strong>Power</strong> można użyć tylko pod warunkiem, że wykładnik jest dodatnią wartością stałą.</td>
-<td>Pobór mocy [argumenty], infix: ^ b ^... ^ z</td>
+<td>Wartość wykładnicza. Potęgowanie od prawej do lewej. (Innymi słowy jest łączna z prawej). Dlatego <strong>Power[a, b, c]</strong> jest równoznaczne z <strong>Power[a, Power[b, c]]</strong>. Operatora <strong>Power</strong> można użyć tylko pod warunkiem, że wykładnik jest dodatnią wartością stałą.</td>
+<td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operator:</strong> Power[x, 2] == y</li>
 <li><strong>Notacja infix:</strong> x ^ 2 == y</li>
@@ -191,7 +191,7 @@ W poniższych tabelach znajdują się listy operatorów i notacji infix, któryc
 <td>Daje logiczną odwrotność danego warunku. To musi mieć dokładnie jeden warunek.</td>
 <td>Not[expr], infix: !expr</td>
 <td><ul>
-<li><strong>Operator:</strong> nie [x] &amp;nie [y == 3]</li>
+<li><strong>Operator:</strong> Not[x] &amp; Not[y == 3]</li>
 <li><strong>Notacja infix:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>
@@ -203,7 +203,7 @@ W następnej tabeli przedstawiono przykłady jak zapisać notację infix.
 | Notacja infix:    | opis                                                                                   |
 |-------------------|-----------------------------------------------------------------------------------------------|
 | x + y + z         | Dodanie                                                                                      |
-| X \*y \*z       | Mnożenie                                                                                |
+| x \* y \* z       | Mnożenie                                                                                |
 | x - y             | Odejmowanie binarne jest tłumaczona tak samo, jak binarnego dodawanie z zanegowaniem drugiego. |
 | x ^ y ^ z         | Potęgowanie z łącznością do prawej                                                   |
 | !x                | Wartość logiczna not                                                                                   |
@@ -212,14 +212,14 @@ W następnej tabeli przedstawiono przykłady jak zapisać notację infix.
 | x & y & z         | Wartość logiczna and                                                                                   |
 | x == y == z       | Równość                                                                                      |
 | x != y != z       | Określone                                                                                      |
-| X &lt;y &lt;z   | Mniejsze niż                                                                                     |
-| X &gt;y &gt;z   | Większe niż                                                                                  |
-| X &lt;= y &lt;= z | Mniejsze lub równe                                                                         |
-| X &gt;= y &gt;= z | Większe lub równe                                                                      |
+| x &lt; y &lt; z   | Mniejsze niż                                                                                     |
+| x &gt; y &gt; z   | Większe niż                                                                                  |
+| x &lt;= y &lt;= z | Mniejsze lub równe                                                                         |
+| x &gt;= y &gt;= z | Większe lub równe                                                                      |
 | (x)               | Nawiasy zastępują domyślny priorytet.                                                      |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Dlaczego moje ograniczenia wyrażeń nie przechodzą pomyślnie sprawdzania poprawności?
-Nie można używać zarezerwowanych słów kluczowych jako nazwy zamiennej dla atrybutów, komponentów czy podskładniki w modelu konfiguracji produktu. Oto lista zastrzeżonych słów kluczowych, które nie mogą używać:
+Nie można używać zarezerwowanych słów kluczowych jako nazwy zamiennej dla atrybutów, komponentów czy podskładniki w modelu konfiguracji produktu. Oto lista zarezerwowanych słów kluczowych, których nie można używać:
 
 -   Pułap
 -   Element
@@ -245,8 +245,8 @@ Nie można używać zarezerwowanych słów kluczowych jako nazwy zamiennej dla a
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Tworzenie ograniczenia wyrażenia (Przewodnik zadania)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
+[Tworzenie ograniczenia wyrażenia (przewodnik po zadaniu)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
-[Dodawanie obliczeń do modelu konfiguracji produktu (Przewodnik zadania)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+[Dodawanie obliczenia do modelu konfiguracji produktu (przewodnik po zadaniu)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
 
 

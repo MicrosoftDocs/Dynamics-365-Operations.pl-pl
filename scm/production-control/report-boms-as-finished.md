@@ -1,6 +1,6 @@
 ---
-title: Raport BOM jako gotowych
-description: "Ten artykuł zawiera informacje o raportowaniu BOM jako gotowych."
+title: "Zgłaszania specyfikacji BOM jako gotowych"
+description: "Ten artykuł zawiera informacje o zgłaszaniu list składowych (BOM) jako gotowych."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="report-boms-as-finished"></a>Raport BOM jako gotowych
+# <a name="report-boms-as-finished"></a>Zgłaszania specyfikacji BOM jako gotowych
 
-Ten artykuł zawiera informacje o raportowaniu BOM jako gotowych.
+[!include[banner](../includes/banner.md)]
 
-Strony **Zgłoszenie wyrobów gotowych** i **Maksymalna ilość zgłoszonych jako gotowe** służą do zgłaszania list składowych (BOM) jako gotowe. Co do koncepcji proces zgłaszania BOM jako gotowych jest taki sam, jak proces zgłaszania zlecenia produkcyjnego jako gotowego. Ten proces może być stosowany m.in. w przypadku procesów prostego montażu i składania, gdzie nie są wymagane bardziej zaawansowane funkcje zlecenia produkcyjnego. Strona **Zgłoszenie wyrobów gotowych** umożliwia zgłoszenie wielu BOM jako gotowych w partii. **Max. raport jako zakończone** strona umożliwia Kompletacja jednocześnie tylko jeden BOM. **Zgłoszone jako gotowe** strona jest dostępne z elementu menu w module Zarządzanie zapasami, a obie strony są dostępne jako elementy menu na **zwolnionych produktów** strony.
+
+Ten artykuł zawiera informacje o zgłaszaniu list składowych (BOM) jako gotowych.
+
+Strony **Zgłoszenie wyrobów gotowych** i **Maksymalna ilość zgłoszonych jako gotowe** służą do zgłaszania list składowych (BOM) jako gotowe. Co do koncepcji proces zgłaszania BOM jako gotowych jest taki sam, jak proces zgłaszania zlecenia produkcyjnego jako gotowego. Ten proces może być stosowany m.in. w przypadku procesów prostego montażu i składania, gdzie nie są wymagane bardziej zaawansowane funkcje zlecenia produkcyjnego. Strona **Zgłoszenie wyrobów gotowych** umożliwia zgłoszenie wielu BOM jako gotowych w partii. Strona **Maksymalna ilość zgłoszonych jako gotowe** umożliwia zgłoszenie tylko jednego BOM jako gotowego w danym momencie. Strona **Zgłoszenie wyrobów gotowych** jest dostępna z menu w module Zarządzanie zapasami. Obie strony są dostępne jako elementy menu na stronie **Zwolnione produkty**.
 
 ## <a name="report-as-finished-page"></a>Strona Zgłoszenie wyrobów gotowych
 Po wyświetleniu strony **Zgłoszenie wyrobów gotowych ** z menu zwolniony produkt, strona proponuje zgłoszenie domyślnej ilości standardowych zapasów jako gotowych. Domyślnie wyświetlana jest aktywna wersja BOM, ale możesz ją zmienić, jeśli są inne zatwierdzone wersje. Strona daje również możliwość usuwania rekordów i tworzenia nowych rekordów dla zwolnionych produktów, które powinny być zgłoszone jako gotowe. Aby użyć kwerendy do wybrania produktów, kliknij przycisk **Zaznacz**. Można ręcznie potwierdzić zgłoszenie wybranych produktów jako gotowych, klikając przycisk **OK**. Istnieje również możliwość konfiguracja uruchamiania procesu w partii. Po potwierdzeniu zgłoszenia towaru jako gotowego, system generuje arkusz BOM przetwarzania księgowania w zapasach. Ten arkusz składa się z jednego wiersza dla gotowego produktu i wierszy dla każdego wiersza BOM. Można kontrolować, czy arkusz jest księgowany automatycznie czy pozostanie otwarty w celu wprowadzenia dodatkowych korekt.
 
-## <a name="max-report-as-finished-page"></a>Maks. Raport jako gotowej strony
+## <a name="max-report-as-finished-page"></a>Maks. wyrobów gotowych
 Na stronie **Maksymalna ilość zgłoszonych jako gotowe** każdy wiersz BOM zawiera liczbę sztuk produktu, którą można zgłosić jako gotowe. Ta wartość jest obliczana na podstawie fizycznej dostępności zapasów z każdego wiersza materiału. W poniższym przykładzie jedna sztuka towaru FG korzysta z dwóch rodzajów surowca RM10 i jednej sztuki surowca RM20. Ponieważ istnieje tylko 10 sztuk RM10 na stanie, można zgłosić jako gotowe maksymalnie 5 sztuk FG. Ta wartość jest wyświetlana w polu **Maksymalna ilość zgłoszonych jako gotowe**.
 
 | Poziom | Numer pozycji | Ilość | Zapasy | Maks. Zgłoszenie wyrobów gotowych |
@@ -68,7 +71,7 @@ Następujące tabele pokazują, jak ustawienie pola **Rozłożenie** wpływa na 
 | 0     | FG          | 3        |
 | 1 przypada na wpłatę z zysku na rzecz budżetu państwa     | COMP        | -3       |
 
-Jak pokazano na poprzedniej tabeli, tylko kod towaru komp jest uważany za odjęte w dzienniku. RM, który jest częścią KOMPOZYCJI, kod towaru nie jest rozkładane do wiersza dziennika, a nie są uważane za dwa kawałki dostępnych KOMPOZYCJI. **Rozłożenie: zawsze**
+Jak pokazano w tabeli powyżej, tylko towar o numerze COMP jest uznawany za odjęty w arkuszu. Towar o numerze RM, który jest częścią towaru COMP, nie został rozłożony w wierszu arkusza, a dwie dostępne sztuki towaru COMP nie zostały uwzględnione. **Rozłożenie: zawsze**
 
 | Poziom | Numer pozycji | Ilość |
 |-------|-------------|----------|
@@ -84,5 +87,7 @@ W tym przypadku ilość towaru COMP jest rozkładana na surowiec (RM). Dwie dost
 | 1 przypada na wpłatę z zysku na rzecz budżetu państwa     | RM          | -1       |
 
 W tym przypadku dwie dostępne sztuki towaru COMP zostały uwzględnione. Ale, ze względu na to, że potrzeba 3 sztuk towaru FG, konieczna jest także 1 sztuka RM do wyprodukowania dodatkowej sztuki COMP.
+
+
 
 

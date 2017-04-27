@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie weksli
-description: "W tym temacie opisano kroki dotyczące konfigurowania weksli."
+description: W tym temacie opisano kroki konfigurowania weksli.
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,55 +26,60 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-bills-of-exchange"></a>Konfigurowanie weksli
 
-W tym temacie opisano kroki dotyczące konfigurowania weksli.
+[!include[banner](../includes/banner.md)]
 
-Weksel to pisemne lub elektroniczne oświadczenie odbiorcy określająca innej strony, zwykle bank, powinni zapłacić określoną kwotę do firmy. Gdy używasz weksla jako płatności za fakturę zamówienia sprzedaży lub fakturę niezależną, uznajesz konto klienta. Taki kredyt jest zabezpieczony wekslem do czasu, gdy klient zapłaci za weksel bankowi. Zazwyczaj będzie rozlicz fakturę za pomocą weksla w terminie płatności. Gdy otrzymasz powiadomienie z banku, że weksel został uznany, można zamknąć weksel. Weksel można narysować za pośrednictwem banku w jednej z następujących terminów:
 
--   W dniu, gdy przypada termin płatności. Takie podejście jest znany jako zakres kompetencji dla kolekcji.
--   Przed wyznaczonym terminem zazwyczaj dla daty rabatu określona w warunków płatności, które są ustawione dla odbiorcy. Podczas księgowania transakcji kwota rabatu jest księgowana na koncie wydatków. Pozostała kwota pozostaje zobowiązaniem dopóki bank nie otrzyma płatności od odbiorcy. Takie podejście jest znany jako zakres kompetencji dla rabatu.
+W tym temacie opisano kroki konfigurowania weksli.
+
+Weksel jest pisemnym lub elektronicznym oświadczeniem odbiorcy, które określa, że inna strona, zwykle bank, powinna zapłacić firmie określoną kwotę. Gdy używasz weksla jako płatności za fakturę zamówienia sprzedaży lub fakturę niezależną, uznajesz konto klienta. Taki kredyt jest zabezpieczony wekslem do czasu, gdy klient zapłaci za weksel bankowi. Z reguły faktura jest rozliczana wekslem w terminie płatności. Gdy otrzymasz powiadomienie z banku, że weksel został uznany, można zamknąć weksel. Weksel można wystawiać przez swój bank w dowolnym z następujących momentów:
+
+-   W dniu, gdy przypada termin płatności. Taka metoda jest znana jako przekazanie do zapłaty.
+-   Przed terminem płatności, zazwyczaj w terminie rabatu określonym przez warunki płatności ustalone dla odbiorcy. Podczas księgowania transakcji kwota rabatu jest księgowana na koncie wydatków. Pozostała kwota pozostaje zobowiązaniem dopóki bank nie otrzyma płatności od odbiorcy. Taka metoda jest znana jako przekazanie do dyskonta.
 
 ## <a name="set-up-posting-profiles-for-bills-of-exchange"></a>Konfigurowanie profili księgowania dla weksla
-Użyj **profilów księgowania odbiorców** stronę do księgowych profile korzystające z weksli, oprotestowania weksli, przekazy pieniężne dla kolekcji i przekazów dla rabatu. W **konto rozrachunkowe** wybierz Podsumowanie konta do księgowania kwot weksla. To konto jest przyznawane lub pobierane, w zależności od typu transakcji weksla:
--   Dla weksli to konto jest obciążane podczas księgowania weksli i po stronie kredytowej podczas księgowania przelewu dla rabatu lub przelewu dla kolekcji.
+Na stronie **Profile księgowania odbiorców** można skonfigurować profile księgowania, których można używać do obsługi weksli, oprotestowania weksli, przekazywania do zapłaty i przekazywania do dyskonta. W polu **Konto rozrachunkowe** wybierz konto rozrachunkowe, na którym będą księgowane kwoty weksli. Księgowanie na tym koncie odbywa się po stronie debetowej lub kredytowej, w zależności od typu transakcji wekslowej:
+-   W przypadku weksli to konto jest obciążane, gdy weksel jest księgowany, a uznawane, gdy jest księgowane przekazanie do dyskonta lub przekazanie do zapłaty.
 -   W przypadku oprotestowanych weksli, to konto jest obciążane, gdy zaksięgowany jest oprotestowany weksel.
 -   W przypadku przekazów do odbioru, to konto jest obciążane, gdy zaksięgowany jest przekaz do odbioru.
 -   W przypadku przekazów do dyskonta, to konto jest obciążane, gdy zaksięgowany jest przekaz do dyskonta.
 
-W **konto rozliczeniowe** wybierz konto gotówkowe są księgowane kwoty weksla do. To konto jest obciążane w momencie rozliczenia weksla. W **przedpłaty podatku** wybierz konto rozrachunkowe do księgowania kwot podatku do kiedy weksle są używane dla przedpłat. W **konto pasywów dla rabatów** wybierz konto do księgowania kwoty rabatu dla przekazów dla rabatu. To konto jest tworzone, gdy zostaje zaksięgowany przekaz do dyskonta.
+W polu **Konto rozliczeniowe** wybierz konto kasowe, na którym mają być księgowane kwoty weksli. To konto jest obciążane w momencie rozliczenia weksla. W polu **Przedpłaty podatku** wybierz konto rozrachunkowe, na którym mają być księgowane kwoty podatku, gdy weksle są używane dla przedpłat. W przypadku przekazywania do dyskonta w polu **Konto zobowiązań związanych z rabatami** wybierz konto, na którym mają być księgowane kwoty rabatów. To konto jest tworzone, gdy zostaje zaksięgowany przekaz do dyskonta.
 
-## <a name="set-up-accounts-receivable-parameters-for-bills-of-exchange"></a>Konfigurowanie kont z odbiorcami Parametry dla weksli
-Na **rozrachunków z odbiorcami Parametry** strona domyślna profilów księgowania dla weksli są wprowadzane w **Księga i podatek** kartę. Sekwencje numerów są definiowane na **Number sequences** kartę.
+## <a name="set-up-accounts-receivable-parameters-for-bills-of-exchange"></a>Konfiguracja parametrów rozrachunków z odbiorcami dla weksli
+Na stronie **Parametry modułu rozrachunków z odbiorcami** domyślne profile księgowania weksli wprowadza się na karcie **Księga i podatek**. Do ustawiania numeracji służy karta **Sekwencje identyfikatorów**.
 Konfigurowanie nazw arkuszy dla weksla
 ------------------------------------------
 
-Na **nazwy arkuszy** stronie, Utwórz co najmniej pięć nazw arkuszy służących do weksli. Oto typy arkuszy:
--   **Weksel odbiorcy** — umożliwia utworzenie nazwy arkusza dla arkusza wystawiania weksli.
--   **Oprotestowany weksel odbiorcy** — umożliwia utworzenie nazwy arkusza dla arkusza oprotestowania weksli.
--   **Ponownego wystawiania weksli odbiorców** — umożliwia utworzenie nazwy arkusza dla arkusza ponownego wystawiania weksli.
--   **Przelew bankowy odbiorcy** — umożliwia utworzenie nazwy arkusza dla arkusza spłaty.
--   **Rozlicz weksel odbiorcy** — umożliwia utworzenie nazwy arkusza dla arkusza rozliczania weksli.
+Na stronie **Nazwy arkuszy** utwórz przynajmniej pięć nazw arkuszy do obsługi weksli. Oto dostępne typu arkuszy:
+-   **Weksel wystawiony odbiorcy** — umożliwia utworzenie nazwy arkusza wystawiania weksli.
+-   **Oprotestowany weksel odbiorcy** — umożliwia utworzenie nazwy arkusza oprotestowywania weksli.
+-   **Ponownie wystawiony weksel odbiorcy** — umożliwia utworzenie nazwy arkusza ponownego wystawiania weksli.
+-   **Przelew bankowy odbiorcy** — umożliwia utworzenie nazwy arkusza zapłaty weksli.
+-   **Rozliczony weksel odbiorcy** — umożliwia utworzenie nazwy arkusza rozliczania weksli.
 
-Na stronie Załącznik arkusza dla każdego arkusza weksli, wprowadź informacje o wekslu **weksli** kartę. Po zaksięgowaniu wierszy arkusza weksli, można je przeglądać na **zapytania dotyczącego arkusza weksli** stronę i **statystyk weksli** strony.
+Na stronie załącznika arkusza dla każdego arkusza weksli wprowadź informacje o wekslu na karcie **Weksel**. Po zaksięgowaniu wierszy arkusza weksla można je wyświetlać na stronach **Zapytania o arkusz weksli** i **Statystyki weksli**.
 Konfiguracja metod płatności dla weksli
 -----------------------------------------------
 
-Na **metody płatności** strony, skonfigurować co najmniej jedną metodę płatności dla weksli. Jeśli firma prowadzi wymianę handlową z więcej niż jednego banku, skonfigurować metodę płatności, który odpowiada format przekazu, który każdy bank wymaga weksli.
+Na stronie **Metody płatności** skonfiguruj co najmniej jedną metodę płatności weksli. Jeśli współpracujesz z więcej niż jednym bankiem, skonfiguruj metodę płatności, która odpowiada formatowi zapłaty weksla wymaganemu przez każdy bank.
 Konfigurowanie opłat od płatności dla weksla
 -----------------------------------------
 
-Opłata od płatności to opłata, która jest skojarzona z procesem zbierania płatności od odbiorców. Wiele ustawienia opłat płatności, które linie mogą być skojarzone każda opłata od płatności. Wiersze ustawień służy do określania sposobu obliczania kwoty domyślnej dla opłat. Można na przykład utworzyć wiersze ustawień dla metod płatności, specyfikacji płatności, walut i okresów. Można również utworzyć wiersze ustawień dla procent lub kwota, który jest oparty na sześćdziesięciu dni. Na przykład można skonfigurować wartości procentowej odsetek, który jest oparty na czas, który jest zaległe płatności. Jeśli bank pobiera różne opłaty za różne typy przekazów takich jak **kolekcji** lub **rabatu**, zdefiniować wiersz osobną płatność opłaty dla każdego typu przekazu.
+Opłata od płatności to opłata, która jest skojarzona z procesem zbierania płatności od odbiorców. Z każdą opłatą od płatności można skojarzyć wiele wierszy ustawień opłat od płatności. Wiersze ustawień mogą służyć do kontrolowania sposobu obliczania kwot domyślnych opłat od płatności. Można na przykład utworzyć wiersze ustawień dla metod płatności, specyfikacji płatności, walut i okresów. Ponadto można utworzyć wiersze ustawień dla wartości procentowej lub kwoty na podstawie interwałów w dniach, na przykład wartości procentowej odsetek na podstawie okresu zaległych płatności. Jeśli bank nalicza różne opłaty dla różnych typów wypłaty, na przykład **Inkaso** lub **Rabat**, należy skonfigurować osobny wiersz opłaty od płatności dla każdego typu wypłaty.
 Konfiguracja opłaty za przekaz dla plików przekazu bankowego
 ------------------------------------------------
 
-Na **kont bankowych** stronę, można skonfigurować opłat za przekazy, które bank opłat dla każdego pliku przekazu, który jest generowany. Opłaty za przekaz są księgowane, gdy przekaz zostanie potwierdzony i gdy znana jest kwota zrealizowanej opłaty. Opłat za przekazy różnią się od opłat, które są zbierane od klientów i dołączone do wierszy arkusza.
+Na stronie **Konta bankowe** można skonfigurować opłaty za przekazy, które są pobierane przez bank za każdy wygenerowany plik przekazu. Opłaty za przekaz są księgowane, gdy przekaz zostanie potwierdzony i gdy znana jest kwota zrealizowanej opłaty. Opłaty za przekazy różnią się od opłat za płatności, które są pobierane od odbiorców i dołączone do wierszy arkusza.
 Konfigurowanie układów dokumentu dla weksla
 ---------------------------------------------
 
-Na **kont bankowych** kliknij przycisk **skonfigurować**i określić układ dokumentu, która jest wymagana dla każdego konta bankowego wygeneruje drukowanych weksli dokumentów dla.
+Na stronie **Konta bankowe** kliknij opcję **Konfiguracja** i określ układ dokumentu wymagany dla każdego konta bankowego, dla którego będą generowane drukowane dokumenty weksli.
 Konfigurowanie klientów dla weksli
 --------------------------------------
 
-Na **klienci** strona, dla każdego klienta, który zgodził się zapłacić za pomocą weksli, można skonfigurować domyślną metodę płatności dla weksli na **ustawienia domyślne płatności** kartę.
+Na stronie **Odbiorcy** dla każdego odbiorcy, który zgodził się płacić za pomocą weksli, można skonfigurować domyślną metodę płatności weksli na karcie **Ustawienia domyślne płatności**.
+
+
 
 
 

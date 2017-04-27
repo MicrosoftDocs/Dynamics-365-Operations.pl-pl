@@ -1,6 +1,6 @@
 ---
-title: Nowe prowadnice zadania (luty 2016)
-description: "Tego typu wiki Wyświetla listę wydane przewodniki zadania do bibliotek Microsoft BPM sezon 2016.  (Luty 2016) obejmują bibliotek, które zostały opublikowane APQC Unified biblioteki Microsoft Dynamics 365 dla operacji i (luty 2016) rozpoczęcie pracy."
+title: Nowe przewodniki po zadaniach (luty 2016 r.)
+description: "Ta strona typu wiki wyświetla listę przewodników po zadaniach, które znajdują się bibliotekach narzędzia Microsoft BPM według stanu na koniec lutego 2016 r.  Są tu ujednolicone biblioteki APQC (z lutego 2016 r.) dla programu Microsoft Dynamics 365 for Operations oraz biblioteki ułatwiające rozpoczęcie pracy (z lutego 2016 r.)."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-task-guides-february-2016"></a>Nowe prowadnice zadania (luty 2016)
+# <a name="new-task-guides-february-2016"></a>Nowe przewodniki po zadaniach (luty 2016 r.)
 
-Tego typu wiki Wyświetla listę wydane przewodniki zadania do bibliotek Microsoft BPM sezon 2016.  (Luty 2016) obejmują bibliotek, które zostały opublikowane APQC Unified biblioteki Microsoft Dynamics 365 dla operacji i (luty 2016) rozpoczęcie pracy.
+Ta strona typu wiki wyświetla listę przewodników po zadaniach, które znajdują się bibliotekach narzędzia Microsoft BPM według stanu na koniec lutego 2016 r.  Są tu ujednolicone biblioteki APQC (z lutego 2016 r.) dla programu Microsoft Dynamics 365 for Operations oraz biblioteki ułatwiające rozpoczęcie pracy (z lutego 2016 r.).
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Zadanie linie pomocnicze w (luty 2016) APQC Unified biblioteki Microsoft Dynamics 365 dla operacji
+<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z lutego 2016 r.) dla programu Microsoft Dynamics 365 for Operations
 ---------------------------------------------------------------------------------
 
-(Luty 2016) APQC Unified biblioteka zawiera przewodniki zadania, które są przeznaczone do stosowania Aby uzyskać pomoc dotyczącą Dynamics 365 dla operacji 7.0.0 Zwolnij. Jeśli potrzebujesz zlokalizowane wersje przewodniki te zadania, które są dostępne w (2016 maja) APQC Unified biblioteki Microsoft Dynamics 365 dla operacji. Aby uzyskać więcej informacji na temat sposobu łączenia się biblioteka przewodnik zadań z systemu pomocy, zobacz [wprowadzenie do pomocy](help-overview.md).
+Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach, które przewidziano jako pomoc dla programu Dynamics 365 for Operations w wersji 7.0.0. Jeśli potrzebujesz zlokalizowanych wersji tych przewodników po zadaniach, są one dostępne w ujednoliconej bibliotece APQC (z maja 2016 r.) dla programu Microsoft Dynamics 365 for Operations. Aby uzyskać więcej informacji na temat sposobu łączenia systemu pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md).
 
 ### <a name="accounts-payable"></a>Rozrachunki z dostawcami
 
@@ -531,7 +531,7 @@ Tego typu wiki Wyświetla listę wydane przewodniki zadania do bibliotek Microso
 | Dodawanie obliczenia do modelu konfiguracji produktu    | Globalna             |
 | Zatwierdzanie modelu konfiguracji produktu                 | Globalna             |
 | Konfigurowanie podstawowych ustawień zwolnionego produktu głównego | Globalna             |
-| Tworzenie... \financial-dimensions\dimension-based produktu głównego               | Globalna             |
+| Tworzenie produktu głównego opartego na wymiarach               | Globalna             |
 | Tworzenie hierarchii klasyfikacji produktów          | Globalna             |
 | Tworzenie modelu konfiguracji produktu                  | Globalna             |
 | Tworzenie produktu głównego                               | Globalna             |
@@ -544,7 +544,7 @@ Tego typu wiki Wyświetla listę wydane przewodniki zadania do bibliotek Microso
 | Obsługa BOM dla modelu konfiguracji produktu        | Globalna             |
 | Obsługa marszruty modelu produktu                    | Globalna             |
 | Zarządzanie zwolnionymi produktami                              | Globalna             |
-| Wydania... \financial-dimensions\dimension-based produktu głównego              | Globalna             |
+| Zwalnianie produktu głównego opartego na wymiarach              | Globalna             |
 | Przesyłanie danych dla modeli produktu                      | Globalna             |
 
  
@@ -718,10 +718,10 @@ Tego typu wiki Wyświetla listę wydane przewodniki zadania do bibliotek Microso
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Nowe lub zaktualizowane zadania prowadzi (maja 2016)](new-updated-task-guides-available-may-2016.md)
+[Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)](new-updated-task-guides-available-may-2016.md)
 
-[Nowe lub zaktualizowane zadania prowadzi (sierpnia 2016)](new-updated-task-guides-available-august-2016.md)
+[Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)](new-updated-task-guides-available-august-2016.md)
 
-[Nowe lub zaktualizowane zadania prowadzi (listopad 2016)](new-task-guides-november-2016.md)
+[Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)](new-task-guides-november-2016.md)
 
 

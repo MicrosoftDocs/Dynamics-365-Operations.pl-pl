@@ -1,6 +1,6 @@
 ---
-title: "Sprawdź wersję BOM"
-description: "Podczas wybuchu popytu Jeśli element ma domyślny typ zamówienia produkcji, aparat planowania znajduje prawidłowej wersji BOM-u, opartej na witrynie."
+title: Ustalanie wersji BOM
+description: "Jeśli jako domyślny typ zamówienia towar ma ustawioną wartość Produkcja, podczas rozłożenia popytu aparat planowania znajduje prawidłową wersję BOM na podstawie oddziału."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="determine-the-bom-version"></a>Sprawdź wersję BOM
+# <a name="determine-the-bom-version"></a>Ustalanie wersji BOM
 
-Podczas wybuchu popytu Jeśli element ma domyślny typ zamówienia produkcji, aparat planowania znajduje prawidłowej wersji BOM-u, opartej na witrynie. 
+[!include[banner](../includes/banner.md)]
+
+
+Jeśli jako domyślny typ zamówienia towar ma ustawioną wartość Produkcja, podczas rozłożenia popytu aparat planowania znajduje prawidłową wersję BOM na podstawie oddziału. 
 
 Wymiar lokalizacji jest zawsze znany i znajduje się w transakcji popytu. Proces określania właściwej wersji BOM przebiega następująco:
 
@@ -38,6 +41,8 @@ Wymiar lokalizacji jest zawsze znany i znajduje się w transakcji popytu. Proces
 -   Jeśli nie istnieje ogólna wersja BOM, której można użyć, rozłożenie popytu jest zatrzymywane w tym momencie.
 
 Prawidłowa wersja BOM, czy to oddziałowa, czy ogólna, musi spełnić wymagane kryteria daty i ilości.
+
+
 
 
 

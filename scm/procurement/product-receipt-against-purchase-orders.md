@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="product-receipt-against-purchase-orders"></a>Przyjęcie produktów względem zamówień zakupu
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano różne opcje rejestrowania produktów jako przyjętych.
 
 Przyjęcie produktów to proces rejestrowania, że zamówione produkty zostały odebrane, wskutek czego wiersze zamówienia zakupu mogą być przetwarzane na potrzeby fakturowania. W niektórych przypadkach produkty są poddawane wstępnej rejestracji, w której przed przyjęciem produktów są odnotowywane dodatkowe informacje od dostawcy. Po przybyciu produktów są one najpierw oznaczane jako **Zarejestrowane**. Produkty mogą następnie przejść przez dodatkowe procesy, takie jak zarządzanie jakością, zanim ostatecznie są oznaczone jako **Otrzymane**.
@@ -52,19 +55,21 @@ Można wybrać wiele zamówień i przetwarzać przyjęcia dla nich wszystkich ra
 
 Zamówienia zakupu mogą być tworzone na podstawie zamówienia sprzedaży, jeśli zaznaczono opcję **Dostawa bezpośrednia**. W przypadku używania dostawy bezpośredniej produkty nigdy nie przybywają do magazynu, ale są wysyłane bezpośrednio od dostawcy do odbiorcy. W takim przypadku przyjęcie jest zazwyczaj rejestrowane bezpośrednio w zamówieniu zakupu. Przyjęcie może się odbywać automatycznie, np. poprzez integrację z dostawcą za pośrednictwem systemu elektronicznej wymiany danych (EDI). Alternatywnie jeśli zamówienie zakupu jest międzyfirmowe, w momencie dostawy program Microsoft Dynamics 365 for Operations automatyzuje przyjęcie względem międzyfirmowego zamówienia sprzedaży. Gdy jest używana dostawa bezpośrednia, produkty są nadal ujmowane jako zapasy, mimo iż fizycznie nie przybywają do magazynu. W związku z tym po zarejestrowaniu przyjęcia produktów w zamówieniu zakupu zamówienie sprzedaży jest automatycznie aktualizowane o dokument dostawy, dzięki czemu łączna zmiana zapasów wynosi 0 (zero). W scenariuszach dostaw bezpośrednich nie powinno się wymagać wstępnej rejestracji. Jeśli używasz magazynów, w których włączono funkcjonalność zarządzania magazynem, można obejść wymóg rejestracji numerów identyfikacyjnych poprzez określenie wirtualnego magazynu. Taki magazyn określa się w polu **Magazyn dostawy bezpośredniej** w danych produktu. 
 
-Po przetworzeniu dokument przyjęcia produktów w zamówieniu zakupu, stan zamówienia zakupu jest ustawiony na **odebrane** do wskazania, że mogą być przetwarzane fakturę dla zamówienia. Można przejrzeć szczegółowe informacje o produktach, które już otrzymano, używając do tego strony **Arkusze dokumentów przyjęcia produktów**.  
+Po przetworzeniu przyjęcia produktów w zamówieniu zakupu stan zamówienia zakupu jest ustawiany na **Otrzymane**, aby wskazać, że można przetwarzać fakturę dla zamówienia. Można przejrzeć szczegółowe informacje o produktach, które już otrzymano, używając do tego strony **Arkusze dokumentów przyjęcia produktów**.  
 
 Do tej strony można przejść z grupy akcji **Przyjęcie** na stronie **Zamówienie zakupu**. Informacje zawarte w arkuszach obejmują szczegóły dotyczące ilości, dat i wymiarów.
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Omówienie zamówień zakupu](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Tworzenie zamówienia zakupu](purchase-order-creation.md)
 
 [Zatwierdzanie i potwierdzanie zamówienia zakupu](purchase-order-approval-confirmation.md)
 
 [Przegląd faktur od dostawcy](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

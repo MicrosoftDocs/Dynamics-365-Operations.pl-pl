@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-guarantee"></a>Poręczenia
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o poręczeniach. W poręczeniu bank zgadza się zapłacić określoną kwotę pieniędzy osobie, jeśli jeden z klientów banku nie ureguluje wobec tej osoby zobowiązania pieniężnego lub innego. 
 
 Poręczenie to zobowiązanie się banku (gwaranta) do zapłaty określonej kwoty pieniędzy określonej osobie (beneficjentowi), jeśli bank odbiorca (podmiot zabezpieczeń) nie wywiąże się z realizacji płatności lub zobowiązania względem beneficjenta. Poręczenia są niezbywalne. Dotyczą one tylko beneficjenta wskazanego w umowie. Podmiot zabezpieczeń może wnioskować o zwiększenie lub zmniejszenie wartości poręczenia, zgodnie z warunkami umowy. 
@@ -55,6 +58,8 @@ W poniższej tabeli opisano akcje, które można wykonywać w związku z poręcz
 | Rozszerz              | Po przedstawieniu beneficjentowi poręczenia można wydłużyć okres ważności, jeśli jego wydłużenie jest konieczne. |
 | Anuluj              | Jeśli cel poręczenia nie ma już zastosowania, można anulować umowę.                  |
 | Zlikwiduj           | Kiedy beneficjent okaże w banku poręczenie, można je spłacić.                      |
+
+
 
 
 

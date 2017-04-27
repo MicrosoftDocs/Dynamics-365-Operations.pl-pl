@@ -28,18 +28,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-fixed-compensation-plans"></a>Tworzenie planów stałych wynagrodzeń
 
-Pojęcie „stałe wynagrodzenie” odnosi się do standardowego wynagrodzenia brutto lub pensji pracownika. W tym temacie opisano elementy, które musi zostać skonfigurowane, aby można było utworzyć stałych wynagrodzeń i zarejestrować pracowników.
+[!include[banner](includes/banner.md)]
 
-Można obliczyć kwoty stałych wynagrodzeń dla pracowników na podstawie czynników, takich jak wydajność, region i zwiększenia budżetu. Microsoft Dynamics 365 dla operacji obsługuje krok, klasy i typy rekompensaty zespołu.
+
+Pojęcie „stałe wynagrodzenie” odnosi się do standardowego wynagrodzenia brutto lub pensji pracownika. Ten temat zawiera opis składników, które muszą zostać skonfigurowane, zanim będzie można utworzyć system stałych wynagrodzeń i zarejestrować pracowników.
+
+Można obliczyć kwoty stałych wynagrodzeń dla pracowników na podstawie czynników, takich jak wydajność, region i zwiększenia budżetu. Program Microsoft Dynamics 365 for Operations obsługuje wynagrodzenia etapowe, stopniowe i pasmowe.
 
 ## <a name="fixed-compensation-components"></a>Składniki wynagrodzenia o stałej wysokości
 ### <a name="compensation-levels"></a>Poziomy wynagrodzeń
 
-Można użyć **poziomów wynagrodzeń** odszkodowań dla różnych miejsc pracy, w celu zagwarantowania, że pracownicy, którzy posiadają te zadania są wypłacane stosunkowo. Na **poziomów wynagrodzeń** stronę, można zdefiniować poziomy wynagrodzenia, które są wymagane dla każdego kroku, klasy i plan zespołu. Za pomocą przycisków **W górę** i **W dół** można ustawić poziomy we właściwej kolejności według ich typu. Poziomy wynagrodzeń dla zadania pozwalają zapewnić, że wszyscy pracownicy zatrudnieni na stanowiskach obsługujących dane zadanie są wynagradzani na tym samym poziomie.
+Można użyć **poziomów wynagrodzeń** do ustawiania wynagrodzenia dla różnych zadań w celu zagwarantowania, że pracownicy, którzy posiadają te zadania, są uczciwie opłacani. Na stronie **Poziomy wynagrodzeń** można skonfigurować poziomy wynagrodzeń, które są wymagane w przypadku każdego systemu etapowego, stopniowego i pasmowego. Za pomocą przycisków **W górę** i **W dół** można ustawić poziomy we właściwej kolejności według ich typu. Poziomy wynagrodzeń dla zadania pozwalają zapewnić, że wszyscy pracownicy zatrudnieni na stanowiskach obsługujących dane zadanie są wynagradzani na tym samym poziomie.
 
 ### <a name="reference-points"></a>Punkty odniesienia
 
-**Punkty odniesienia** to kolumny w siatce, określające zakresy wynagrodzeń dla poszczególnych poziomów. Poziom wynagrodzenia jest wierszem w siatce. Punkty odniesienia typowe dla planu typu klasy są minimum, punkt środkowy i maksimum. Tworzenie punktów odniesienia na **konfiguracje punktów odniesienia** strony.
+**Punkty odniesienia** to kolumny w siatce, określające zakresy wynagrodzeń dla poszczególnych poziomów. Poziom wynagrodzenia jest wierszem w siatce. Typowymi punktami odniesienia dla systemu stopniowego są minimum, środek i maksimum. Punkty odniesienia tworzy się na stronie **Konfiguracje punktów odniesienia**.
 
 ### <a name="compensation-grids"></a>Siatki wynagrodzeń
 
@@ -56,11 +59,11 @@ Można zaprojektować plan stałych wynagrodzeń, aby łączył wszystkie skonfi
 
 Ustawienie **Tolerancja wyjścia poza zakres** pozwala określić, jak ściśle ma być przestrzegany zakres minimalnego i maksymalnego poziomu wynagrodzeń. **Twarda** tolerancja wymaga, aby wynagrodzenie mieściło się w określonym zakresie dla danego poziomu. **Miękka** tolerancja powoduje wyświetlenie ostrzeżenia, gdy kwota wynagrodzenia wykracza poza zakres, ale zezwala na kontynuowanie. Ustawienie **Brak** dla tolerancji umożliwia wpisanie dowolnej kwoty wynagrodzenia dla pracownika bez wyświetlania ostrzeżenia ani komunikatu o błędach. 
 
-**Reguły zatrudnienia** ustawienie pozwala określić, czy wszystkich pracowników powinny otrzymywać samego wzrostu, bez względu na datę ich zatrudnienia (**reguły zatrudnienia** = **Brak**), lub czy pracowników powinien otrzymać procent nagrody, oparte na jak długo byli zatrudnieni w cyklu (**reguły zatrudnienia** = **%**). 
+Ustawienie **Reguła zatrudnienia** pozwala określić, czy wszyscy pracownicy powinni otrzymać taką samą podwyżkę, niezależnie od daty ich zatrudnienia (**Reguła zatrudnienia** = **Brak**), czy też pracownicy powinni otrzymywać procent nagrody w oparciu o to, przez jaki czas byli zatrudnieni w cyklu (**Reguła zatrudnienia** = **Procent**). 
 
 **Macierz zakresu wykorzystania** jest przydatna, jeśli chcesz zmniejszyć czas zatrudnienia pracowników, aby uzyskać środek ich zakresu, lub zwiększyć czas wymagany dla pracowników do osiągnięcia maksymalnego punktu odniesienia w zakresie. Na przykład, chcesz przyznać pracownikom, którzy są w dolnych 25 procentach ich zakresu, 110 procent nagrody docelowej, a pracownikom, którzy są w górnych 25 procentach zakresu — tylko 80 procent nagrody docelowej, aby za szybko nie przekroczyli punktu maksymalnego. 
 
-Po zdefiniowaniu podstawy planu stałych wynagrodzeń, można skonfigurować strukturę wynagrodzeń dla planu. Kliknij **Konfiguruj wynagrodzenie**. Suwak okno zostanie otwarty, który oferuje trzy opcje:
+Po zdefiniowaniu podstawy planu stałych wynagrodzeń, można skonfigurować strukturę wynagrodzeń dla planu. Kliknij przycisk **Konfiguruj wynagrodzenie**. Wyświetli się okno dialogowe z suwakiem, w którym są dostępne następujące trzy opcje:
 
 -   Utwórz nową siatkę wynagrodzeń, zaznaczając konfigurację punktów odniesienia i nadając siatce nazwę.
 -   Utwórz nową siatkę wynagrodzeń, wykonując kopię istniejącej siatki, którą można użyć jako punktu wyjścia.
@@ -71,7 +74,7 @@ Po wybraniu opcji otwiera się strona **Struktura wynagrodzeń** i można wprowa
 ## <a name="fixed-compensation-enrollment"></a>Rejestracja stałego wynagrodzenia
 ### <a name="determine-who-is-eligible-for-the-plan"></a>Określanie, kto może skorzystać z planu
 
-Pierwszym krokiem podczas rejestrowania pracowników w planie stałego wynagrodzenia jest określenie, kto jest uprawniony do wynagrodzenia zdefiniowanego w planie. Do czasu określenia uprawnień nie będzie można przypisać planu do żadnego pracownika. Aby skonfigurować uprawnienia, otwórz **zasady kwalifikowania wydatków** strony. Można w nim tworzyć nowych uprawnień do reguły dla Twojego systemu wynagrodzeń i zdefiniować kryteria, które pracownik musi spełniać, aby kwalifikować się do planu. Można ograniczyć uprawnienia na podstawie działu, związku zawodowego, regionu wynagrodzenia (lokalizacja), zadania, funkcji zadania, typu zadania lub poziomu wynagrodzenia. Pracowników można rejestrować w planie wynagrodzeń, tylko jeśli spełniają wszystkie warunki ustawione w regule uprawnienia. 
+Pierwszym krokiem podczas rejestrowania pracowników w planie stałego wynagrodzenia jest określenie, kto jest uprawniony do wynagrodzenia zdefiniowanego w planie. Do czasu określenia uprawnień nie będzie można przypisać planu do żadnego pracownika. Aby skonfigurować uprawnienia, otwórz stronę **Reguły uprawnienia**. W tym miejscu można utworzyć nową regułę uprawnień dla systemu wynagrodzeń i zdefiniować kryteria, które pracownik musi spełnić, aby kwalifikować się do systemu. Można ograniczyć uprawnienia na podstawie działu, związku zawodowego, regionu wynagrodzenia (lokalizacja), zadania, funkcji zadania, typu zadania lub poziomu wynagrodzenia. Pracowników można rejestrować w planie wynagrodzeń, tylko jeśli spełniają wszystkie warunki ustawione w regule uprawnienia. 
 
 **Uwaga:** Reguły uprawnienia są używane do określania uprawnień zarówno dla planów stałych jak i zmiennych wynagrodzeń. 
 
@@ -83,7 +86,7 @@ Reguła uprawnienia uwzględnia wartość określonych pól w rekordach Zadanie,
     -   Na karcie **Wynagrodzenie** pole **Poziom**
 -   Na stronie **Stanowiska** reguła uprawnienia bierze pod uwagę wartości pól **Dział** i **Region wynagrodzenia**.
 
-Reguły uprawnienia uważa również, związków zawodowych, które są skojarzone z pracownikiem (na **pracowników** strona na **pracownika** kliknij przycisk **informacji osobistych**&gt;**związków zawodowych**).
+Reguły uprawnienia biorą również pod uwagę związki zawodowe skojarzone z pracownikiem (na stronie **Pracownicy** na karcie **Pracownik** kliknij kolejno opcje **Informacje osobiste** &gt; **Związki zawodowe**).
 
 ### <a name="define-fixed-compensation-actions"></a>Definiowanie akcji związanych ze stałym wynagrodzeniem
 
@@ -93,7 +96,7 @@ Na przykład podczas ustawiania stałego wynagrodzenia dla pracownika mogą być
 
 ### <a name="enroll-the-employee"></a>Rejestracja pracownika
 
-Teraz można przypisać pracownika do planu stałych wynagrodzeń. Otwórz stronę **Pracownicy** i wybierz pracownika, których chcesz zarejestrować w planie wynagrodzeń. W okienku akcji kliknij polecenie **wynagrodzenie**&gt;**stałych wynagrodzeń**. Można teraz utworzyć nowej akcji związanych ze stałym wynagrodzeniem dla określonego pracownika. 
+Teraz można przypisać pracownika do planu stałych wynagrodzeń. Otwórz stronę **Pracownicy** i wybierz pracownika, których chcesz zarejestrować w planie wynagrodzeń. W okienku akcji kliknij kolejno opcje **Wynagrodzenie** &gt; **Plan stałych wynagrodzeń**. Teraz możesz utworzyć nową akcję stałego wynagrodzenia dla tego pracownika. 
 
 **Uwaga:** pole planu wynagrodzeń zawiera tylko plany dla pracownika, który może skorzystać z planu zgodnie z regułami uprawnień określonymi dla każdego planu. Jeśli nie skonfigurowano żadnej reguły uprawnienia w planie, żaden pracownik nie będzie uprawniony do tego planu. 
 
@@ -103,5 +106,7 @@ System sprawdza, czy kwota wynagrodzenia określona dla planu wynagrodzeń typu 
 --------
 
 [Plany wynagrodzeń](compensation-plans.md)
+
+
 
 

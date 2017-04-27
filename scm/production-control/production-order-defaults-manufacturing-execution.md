@@ -1,5 +1,5 @@
 ---
-title: "Ustawienia domyślne zamówienia produkcji w module Uruchomienie produkcji"
+title: "Domyślne ustawienia zlecenia produkcyjnego w uruchomieniu produkcji"
 description: 
 author: YuyuScheller
 manager: AnnBe
@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="production-order-defaults-in-manufacturing-execution"></a>Ustawienia domyślne zamówienia produkcji w module Uruchomienie produkcji
+# <a name="production-order-defaults-in-manufacturing-execution"></a>Domyślne ustawienia zlecenia produkcyjnego w uruchomieniu produkcji
+
+[!include[banner](../includes/banner.md)]
 
 
 
-Należy rozważyć wszystkie ustawienia na **ustawienia domyślne zamówienia produkcji** strona przed rozpoczęciem pracowników do rejestracji na zadaniach produkcji. Jeśli firma korzysta z funkcji wielooddziałowości, można skonfigurować różne ustawienia domyślne dla zleceń produkcyjnych dla każdej witryny. Ustawienia domyślne zamówienia do integracji z Kontrolą produkcji ustawia się na następujących kartach na stronie **Ustawienia domyślne zlecenia produkcyjnego**:
+
+Zanim pracownicy przystąpią do rejestrowania produktów w zadaniach produkcyjnych, musisz dokładnie przeanalizować wszystkie ustawienia na stronie **Ustawienia domyślne zlecenia produkcyjnego**. Jeśli firma używa funkcji wielooddziałowości, można skonfigurować różne ustawienia domyślne dla zleceń produkcyjnych dla każdego oddziału. Ustawienia domyślne zamówienia do integracji z Kontrolą produkcji ustawia się na następujących kartach na stronie **Ustawienia domyślne zlecenia produkcyjnego**:
 
 -   **Ogólne** — ogólne wartości domyślne zlecenia dla zadań produkcji w module Uruchomienie produkcji.
 -   **Uruchamianie** — domyślne ustawienia zlecenia, które mają być używane przy uruchamianiu zadań lub operacji produkcyjnych.
@@ -68,6 +71,8 @@ Zużycie materiału w trakcie procesu zgłaszania jako gotowych dla zlecenia pro
 -   **Reguła usuwania** — po zgłoszeniu zlecenia produkcyjnego jako gotowego ilości materiałów zużywanych będzie zgodna z regułą usuwania ustawioną w wierszach BOM. Zużyte zostaną tylko te wiersze materiałów, które mają regułę usuwania **Koniec**.
 -   **Zawsze** — ilość zużywanego materiału będzie zawsze proporcjonalna do ilości zgłaszanej jako gotowej.
 -   **Nigdy** — ilości materiałów, które nigdy nie będą zużywane.
+
+
 
 
 

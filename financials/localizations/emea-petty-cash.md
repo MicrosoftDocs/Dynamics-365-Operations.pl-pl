@@ -1,6 +1,6 @@
 ---
-title: Kasa dla Europy Wschodniej
-description: "Ten temat zawiera informacje dotyczące funkcji kasy, która pozwala użytkownikom w Estonii, Litwy, Republika Czeska, Węgry, Łotwa, Polska i Rosja uwzględnienia operacji gotówkowych w systemie."
+title: "Gotówka podręczna dla krajów Europy Wschodniej"
+description: "Ten temat zawiera informacje o funkcji gotówki podręcznej, która pozwala użytkownikom w Estonii, na Litwie, w Czechach, na Węgrzech, na Łotwie, w Polsce i w Rosji uwzględniać operacje gotówkowe w systemie."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,42 +25,45 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="petty-cash-for-eastern-europe"></a>Kasa dla Europy Wschodniej
+# <a name="petty-cash-for-eastern-europe"></a>Gotówka podręczna dla krajów Europy Wschodniej
 
-Ten temat zawiera informacje dotyczące funkcji kasy, która pozwala użytkownikom w Estonii, Litwy, Republika Czeska, Węgry, Łotwa, Polska i Rosja uwzględnienia operacji gotówkowych w systemie.
+[!include[banner](../includes/banner.md)]
 
-Funkcja kasy automatyzacji operacji dla przychodów i rozchodów gotówkowych, utworzenie podstawowego dokumentów i drukowanie raportów związanych z. Funkcjonalność kasy umożliwia wykonywanie następujących operacji:
 
--   Konto przychodu i wydatków aktywów dostępnej gotówki.
--   Generowanie formularzy typowych środków pieniężnych: gotówka KP, dokumenty kW i arkusza rejestracji dokumentów.
--   Kontrolować kwota maksymalna środków pieniężnych, który jest dozwolony dla operacji z nabywcami, dostawcami i tak dalej.
--   Uwzględnienia operacji gotówkowych w różnych walut w systemie.
--   Konwertuj kwoty operacji gotówkowych w walucie obcej na walutę standardową, aby zapewnić zgłoszenie rachunkowości.
--   Generowanie **Księga kasowa** sprawozdanie oraz Raport kasjera.
+Ten temat zawiera informacje o funkcji gotówki podręcznej, która pozwala użytkownikom w Estonii, na Litwie, w Czechach, na Węgrzech, na Łotwie, w Polsce i w Rosji uwzględniać operacje gotówkowe w systemie.
+
+Funkcja gotówki podręcznej umożliwia automatyzację operacji przychodów i rozchodów gotówkowych, tworzenie dokumentów podstawowych i drukowanie powiązanych raportów. Funkcjonalność gotówki podręcznej umożliwia wykonywanie następujących operacji:
+
+-   Rozliczanie przychodów i rozchodów dostępnych aktywów gotówkowych.
+-   Generowanie typowych formularzy obrotu gotówkowego: dokumentów KP, dokumentów KW oraz arkusza rejestracji dokumentów kasowych.
+-   Kontrolowanie maksymalnej kwoty środków pieniężnych dozwolonej w operacjach z odbiorcami, dostawcami itd.
+-   Uwzględnianie operacji gotówkowych w różnych walutach w systemie.
+-   Konwertowanie kwot operacji gotówkowych w walutach obcych na walutę domyślną na potrzeby sprawozdawczości księgowej.
+-   Generowanie raportu **Księga kasowa** i raportu kasjera.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
-Przed użyciem funkcji kasy, należy wykonać następujące wymagania wstępne:
+Aby można było używać funkcji gotówki podręcznej, należy wykonać następujące czynności wstępne:
 
--   Ustawianie kont kasowych.
--   Konfigurowanie profili księgowania kasowego.
--   Ustawienie sekwencji numerów dla numerowania środków pieniężnych dokumentu.
--   Ustawianie wartości domyślnych dla środków pieniężnych i bankowych parametry zarządzania.
--   Ustawianie nazw arkuszy środków pieniężnych w ogóle księgi.
+-   Skonfigurowanie kont kasowych.
+-   Skonfigurowanie profili księgowania kasy.
+-   Skonfigurowanie numeracji dokumentów kasowych.
+-   Skonfigurowanie domyślnych wartości modułu Zarządzanie gotówką i bankami.
+-   Skonfigurowanie nazw arkuszy kasowych w księdze głównej.
 
-### <a name="set-up-cash-accounts"></a>Ustawianie kont kasowych
+### <a name="set-up-cash-accounts"></a>Konfigurowanie kont kasowych
 
-Aby skonfigurować gotówki, otwórz **Zarządzanie gotówką i bankami**&gt;**kont bankowych**&gt;**środków pieniężnych konta**i wprowadź następujące informacje.
+Aby skonfigurować konto kasowe, wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Konta bankowe** &gt; **Konta kasowe** i wprowadź następujące informacje:
 
 | Pole                 | opis                                                                                                          |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------|
-| Kasa                  | Wprowadź kod identyfikujący konto kasowe (Gotówka).                                                                    |
+| Kasa                  | Wprowadź kod identyfikujący konto kasowe (obrót gotówką).                                                                    |
 | Nazwisko                  | Wprowadź opis konta kasowego.                                                                             |
 | Waluta              | Wybierz domyślny kod waluty dla transakcji kasowych.                                                              |
-| Grupa sekwencji numerów | Jeśli numeracja dokumentów kasowych musi się różnić od numeracji, który jest określony w parametrach, należy wprowadzić kod. |
-| Wiele walut       | Zaznacz to pole wyboru, aby umożliwić walut, które różnią się od walutą rozliczeniową do zaksięgowania.                     |
-| Ujemne saldo kasowe         | Zaznacz to pole wyboru, aby umożliwić salda ujemne saldo kasowe w dowolnej walucie.                                               |
+| Grupa sekwencji numerów | Jeśli numeracja dokumentów kasowych musi się różnić od numeracji określonej w parametrach, wprowadź odpowiedni kod. |
+| Wiele walut       | Zaznacz to pole wyboru, aby umożliwić księgowanie walut różniących się od waluty rozliczeniowej.                     |
+| Ujemne saldo kasowe         | Zaznacz to pole wyboru, aby zezwolić na ujemne salda kasowe w dowolnej walucie.                                               |
 
-Aby skonfigurować saldo gotówkowe kontroli zasady dla konta kasowego, wybierz konto kasowe, a następnie w okienku akcji na **konto kasowe** kartę w **limitu salda** grupy, kliknij przycisk **limitu salda**. Wpisz następujące informacje.
+Aby skonfigurować reguły kontroli salda kasowego dla konta kasowego, wybierz konto kasowe, a następnie w okienku akcji na karcie **Konto kasowe** w grupie **Limit salda** kliknij opcję **Limit salda**. Wpisz następujące informacje.
 
 <table>
 <colgroup>
@@ -76,44 +79,44 @@ Aby skonfigurować saldo gotówkowe kontroli zasady dla konta kasowego, wybierz 
 <tbody>
 <tr class="odd">
 <td>Typ waluty</td>
-<td>Wybierz żądany rodzaj waluty:
+<td>Wybierz typ waluty:
 <ul>
-<li><strong>Waluta księgowania</strong> — Użyj kodu waluty firmy podstawowe.</li>
-<li><strong>Wskazano waluty</strong> — Użyj kod waluty, która różni się od kodu waluty podstawowej firmy.</li>
+<li><strong>Waluta rozliczeniowa</strong> — użyj kodu waluty podstawowej firmy.</li>
+<li><strong>Wskazana waluta</strong> — użyj kod waluty różniącego się od kodu waluty podstawowej firmy.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Waluta</td>
-<td>W przypadku wybrania <strong>wskazano waluty</strong> w <strong>typu Waluta</strong> wybierz kod waluty. To pole nie jest dostępne, jeśli wybrano <strong>waluty rozliczeniowej</strong> w <strong>typu Waluta</strong> pole.</td>
+<td>Jeśli w polu <strong>Typ waluty</strong> zaznaczysz opcję <strong>Wskazana waluta</strong>, wybierz kod waluty. To pole nie jest dostępne, jeśli w polu <strong>Typ waluty</strong> wybrano opcję <strong>Waluta rozliczeniowa</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Typ ograniczenia salda</td>
 <td>Wybierz jedną z dostępnych wartości:
 <ul>
-<li><strong>Maksymalne</strong> — saldo gotówkowe nie powinien przekraczać <strong>limitu salda</strong> kwoty dla konta kasowego (górna granica).</li>
-<li><strong>Minimalna</strong> — saldo gotówkowe powinno być zabronione zejść poniżej <strong>limitu salda</strong> kwoty dla konta kasowego (na dole powiązane).</li>
+<li><strong>Maksimum</strong> — saldo kasowe nie powinno być wyższe, niż kwota w polu <strong>Limit salda</strong> dla konta kasowego (górna granica).</li>
+<li><strong>Minimum</strong> — saldo kasowe nie powinno być niższe, niż kwota w polu <strong>Limit salda</strong> dla konta kasowego (dolna granica).</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Sprawdź limit salda</td>
-<td>Wybierz zdarzenia występujące w procesie zatwierdzania dla dokumentów kasowych Jeśli <strong>limitu salda</strong> kwoty dla konta kasowego zostanie przekroczony:
+<td>Wybierz, co ma się dziać w procesie zatwierdzania dokumentów kasowych, jeśli kwota <strong>Limit salda</strong> dla konta kasowego zostanie przekroczona:
 <ul>
-<li><strong>Zaakceptuj</strong> — może zostać przekroczony limit.</li>
-<li><strong>Ostrzeżenie</strong> -limit może zostać przekroczony, ale użytkownik otrzyma komunikat ostrzegawczy. Dokument kasowy jest potwierdzone lub zatwierdzone.</li>
-<li><strong>Błąd</strong> — nie można przekroczyć limitu. Użytkownik odbiera komunikat o błędzie, a dokument kasowy nie jest potwierdzona lub zatwierdzone.</li>
+<li><strong>Akceptuj</strong> — limit może zostać przekroczony.</li>
+<li><strong>Ostrzeżenie</strong> — limit może zostać przekroczony, ale użytkownik otrzyma komunikat ostrzegawczy. Dokument kasowy jest potwierdzany lub zatwierdzany.</li>
+<li><strong>Błąd</strong> — limit nie może zostać przekroczony. Użytkownik otrzymuje komunikat o błędzie, a dokument kasowy nie jest potwierdzany ani zatwierdzany.</li>
 </ul>
-Aby uzyskać więcej informacji na temat procesu zatwierdzania dla dokumentów kasowych, zobacz &quot;pieniężnych zatwierdzenia transakcji i księgowania&quot; sekcji w dalszej części tego tematu.</td>
+Aby uzyskać więcej informacji na temat procesu zatwierdzania dokumentów kasowych, zobacz sekcję &quot;Zatwierdzanie i księgowanie transakcji kasowych&quot; w dalszej części tego tematu.</td>
 </tr>
 <tr class="odd">
 <td>Limit salda</td>
-<td>Wprowadzenie limitu salda konta kasowego. Kwota powinna być w określonej walucie.</td>
+<td>Wprowadź dopuszczalny limit salda konta kasowego. Kwota powinna być w ustawionej przez Ciebie walucie.</td>
 </tr>
 </tbody>
 </table>
 
-### <a name="set-up-cash-posting-profiles"></a>Konfigurowanie profili księgowania kasowego
+### <a name="set-up-cash-posting-profiles"></a>Konfigurowanie profili księgowania kasy
 
-Profili księgowania kasowego zdefiniować księgowań w księdze głównej. Aby skonfigurować profil księgowania środków pieniężnych, przejdź do **środków pieniężnych****i zarządzanie bankowym**&gt;**instalacji**&gt;**środki pieniężne profile księgowania**i wybierz lub Utwórz profil księgowania. Wpisz następujące informacje.
+Profile księgowania kasy definiują sposób księgowania w księdze głównej. Aby skonfigurować profil księgowania kasy, wybierz kolejno opcje **Zarządzanie** **gotówką i bankami** &gt; **Ustawienia** &gt; **Profile księgowania kasy** i wybierz lub utwórz profil księgowania. Wpisz następujące informacje.
 
 <table>
 <colgroup>
@@ -129,30 +132,30 @@ Profili księgowania kasowego zdefiniować księgowań w księdze głównej. Aby
 <tbody>
 <tr class="odd">
 <td>Ważny dla</td>
-<td>Określ, czy profil księgowania dotyczy konta kasowego określonych lub wszystkich kont gotówkowych:
+<td>Określ, czy profil księgowania dotyczy określonego konta kasowego czy wszystkich kont kasowych:
 <ul>
-<li><strong>Tabela</strong> — w przypadku linii profilu księgowania dla konta kasowego tego wiersza jest używany do księgowania transakcji środków pieniężnych.</li>
-<li><strong>Wszystkie</strong> — istnieje żaden wiersz profilu księgowania dla konta kasowego.</li>
+<li><strong>Tabela</strong> — jeśli dla konta kasowego istnieje wiersz profilu księgowania, ten wiersz jest używany do księgowania transakcji kasowych.</li>
+<li><strong>Wszystko</strong> — nie istnieje żaden wiersz profilu księgowania dla konta kasowego.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Kasa</td>
-<td>W przypadku wybrania <strong>tabeli</strong> w <strong>ważny dla</strong> Określ konta kasowego. Pole to pozostanie puste, jeśli wybrano <strong>wszystkie</strong> w <strong>ważny dla</strong> pole.</td>
+<td>Jeśli w polu <strong>Ważny dla</strong> wybrano opcję <strong>Tabela</strong>, określ konto kasowe. To pole pozostaje puste, jeśli w polu <strong>Ważne dla</strong> wybrano opcję <strong>Wszystko</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Konto księgowe</td>
-<td>Wprowadź numer konta księgowego do użycia jako konto rozrachunkowe dla konta kasowego.</td>
+<td>Wprowadź numer konta księgowego, które ma być używane jako konto rozrachunkowe dla konta kasowego.</td>
 </tr>
 </tbody>
 </table>
 
-### <a name="set-up-number-sequences-for-cash-documents"></a>Ustawienie sekwencji numerów dla dokumentów kasowych
+### <a name="set-up-number-sequences-for-cash-documents"></a>Konfigurowanie numeracji dla dokumentów kasowych
 
-Do ustawiania sekwencji numerów dla dokumentów kasowych, przejdź do **Zarządzanie gotówką i bankami**&gt;**instalacji**&gt;**parametry zarządzania gotówką i bankami**. Na **sekwencja numerów** tab, określ kodów sekwencji numerów dla **środki pieniężne KP**, **gotówka dokumentów KW**, **załącznik korekty kasowej**, i **różnica kursowa** dokumentów i dla **numer raport kasowy**.
+Aby skonfigurować numerację dokumentów kasowych, wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Ustawienia** &gt; **Parametry modułu Zarządzanie gotówką i bankami**. Na karcie **Sekwencja numerów** określ kody numeracji dla dokumentów **Dokumenty KP**, **Dokumenty KW**, **Załącznik korekty kasowej** i **Różnica kursowa** oraz dla parametru **Numer raportu kasowego**.
 
-### <a name="set-up-default-values-for-cash-and-bank-management-parameters"></a>Ustawianie wartości domyślnych dla środków pieniężnych i bankowych parametry zarządzania
+### <a name="set-up-default-values-for-cash-and-bank-management-parameters"></a>Konfigurowanie domyślnych wartości modułu Zarządzanie gotówką i bankami
 
-Ustawianie wartości domyślnych dla środków pieniężnych i bankowych parametry zarządzania dla funkcji kasy, przejdź do **Zarządzanie gotówką i bankami**&gt;**instalacji**&gt;**parametry zarządzania gotówką i bankami**. Na **środków pieniężnych** wprowadź następujące informacje.
+Aby skonfigurować domyślne wartości modułu Zarządzanie gotówką i bankami dla funkcji gotówki podręcznej, wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Ustawienia** &gt; **Parametry modułu Zarządzanie gotówką i bankami**. Na karcie **Kasa** wprowadź następujące informacje:
 
 <table>
 <colgroup>
@@ -168,64 +171,64 @@ Ustawianie wartości domyślnych dla środków pieniężnych i bankowych paramet
 <tbody>
 <tr class="odd">
 <td>Kasa</td>
-<td>Wybierz domyślne konto kasowe w arkuszach.</td>
+<td>Wybierz domyślne konto kasowe, które będzie używane w arkuszach.</td>
 </tr>
 <tr class="even">
 <td>Księgowanie kasy</td>
-<td>Wprowadź Domyślna gotówka, który jest używany, jeśli nie profil księgowania jest określony profil księgowania.</td>
+<td>Wprowadź domyślny profil księgowania kasy, który będzie używany, jeśli nie został określony profil księgowania.</td>
 </tr>
 <tr class="odd">
 <td>Sprawdzanie użytego numeru załącznika</td>
-<td>Wybierz, jakie występuje, jeśli zduplikowane numery zostaną znalezione podczas sprawdzania numer dokumentu kasowego:
+<td>Wybierz, co się dzieje w razie znalezienia zduplikowanych numerów podczas sprawdzania numer dokumentu kasowego:
 <ul>
 <li>Odrzuć duplikaty</li>
-<li>Odrzuć duplikaty w ciągu roku obrachunkowego</li>
+<li>Odrzuć kopie w roku obrachunkowym</li>
 <li>Dozwolone duplikaty</li>
 <li>Ostrzegaj w przypadku duplikatów</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Sprawdź limit operacji</td>
-<td>Określ, jaki występuje po przekroczeniu limitu dla operacji z kontrahentów:
+<td>Określ, co się dzieje po przekroczeniu limitu operacji z kontrahentami:
 <ul>
-<li><strong>Zaakceptuj</strong> — może zostać przekroczony limit.</li>
-<li><strong>Ostrzeżenie</strong> -limit może zostać przekroczony, ale użytkownik otrzyma komunikat ostrzegawczy. Operacja jest księgowana.</li>
-<li><strong>Błąd</strong> — nie można przekroczyć limitu. Użytkownik odbiera komunikat o błędzie, a operacja nie jest zaksięgowany.</li>
+<li><strong>Akceptuj</strong> — limit może zostać przekroczony.</li>
+<li><strong>Ostrzeżenie</strong> — limit może zostać przekroczony, ale użytkownik otrzyma komunikat ostrzegawczy. Operacja jest księgowana.</li>
+<li><strong>Błąd</strong> — limit nie może zostać przekroczony. Użytkownik otrzymuje komunikat o błędzie, a operacja nie jest księgowana.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Metoda weryfikacji</td>
-<td>Wybierz metodę sprawdzania poprawności, który jest używany do sterowania Przekroczono limit kwoty dla operacji:
+<td>Wybierz metodę sprawdzania poprawności służącą do kontrolowania przekroczenia kwot limitów dla operacji:
 <ul>
-<li><strong>Operacja</strong> — jest sprawdzana na transakcję</li>
-<li><strong>Porozumienie</strong> — sprawdzanie poprawności jest wykonywane według transakcji, która ma określonej umowy dotyczących kontrahenta.</li>
+<li><strong>Operacja</strong> — sprawdzanie poprawności jest wykonywane dla każdej transakcji.</li>
+<li><strong>Umowa</strong> — sprawdzanie poprawności jest wykonywane dla każdej transakcji mającej przypisaną umowę z kontrahentem.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Limit operacji</td>
-<td>Wprowadź maksymalną kwotę, jaką jest dozwolone dla operacji z kontrahentów w gotówce.</td>
+<td>Wprowadź maksymalną dozwoloną kwotę transakcji kasowych z kontrahentami.</td>
 </tr>
 <tr class="odd">
 <td>Księgowanie z wcześniejszą datą</td>
-<td>Zaznacz to pole wyboru, aby włączyć transakcje gotówkowe mają być księgowane przed datą ostatniej transakcji pieniężnych.</td>
+<td>Zaznacz to pole wyboru, aby umożliwić księgowanie transakcji kasowych z datą wcześniejszą niż data ostatniej transakcji kasowej.</td>
 </tr>
 <tr class="even">
 <td>Wymiary</td>
-<td>Wprowadzanie wymiarów w <strong>kod wydziału</strong>, <strong>analityczne kod</strong>, i <strong>cel kod</strong> pól. Drukowanie formularza dla dokumentów kasowych będzie odzwierciedlał te informacje.</td>
+<td>Wprowadź wymiary w polach <strong>Kod działu</strong>, <strong>Kod analityczny</strong> i <strong>Kod celu</strong>. Drukowana postać dokumentów kasowych będzie odzwierciedlała te informacje.</td>
 </tr>
 <tr class="odd">
 <td>Użyj stanu potwierdzenia</td>
-<td>Zaznacz to pole wyboru, aby użyć dodatkowy stan, <strong>potwierdzone</strong>, podczas procesu zatwierdzania dla dokumentów kasowych. (Aby uzyskać więcej informacji, zobacz &quot;pieniężnych zatwierdzenia transakcji i księgowania&quot; sekcji.)</td>
+<td>Zaznacz to pole wyboru , aby korzystać z dodatkowego stanu <strong>Potwierdzone</strong> w procesie zatwierdzania dokumentów kasowych. (Aby uzyskać więcej informacji, zobacz sekcję &quot;Zatwierdzanie i księgowanie transakcji kasowych&quot;).</td>
 </tr>
 </tbody>
 </table>
 
-### <a name="set-up-cash-journal-names-in-general-ledger"></a>Ustawianie nazw arkuszy środków pieniężnych w ogóle księgi
+### <a name="set-up-cash-journal-names-in-general-ledger"></a>Konfigurowanie nazw arkuszy kasowych w księdze głównej
 
-Aby utworzyć arkusz do księgowania transakcji pieniężnych, przejdź do **księgi głównej**&gt;**ustawienia dziennika**&gt;**nazwy arkuszy**i utworzyć nowy rekord. W **typu arkusza** określ **środków pieniężnych**. Inne domyślne parametry należy zdefiniować, ile jest potrzebnych.
+Aby utworzyć arkusz do księgowania transakcji kasowych, **Księga główna** &gt; **Konfiguracja arkusza** &gt; **Nazwy arkuszy** i utwórz nowy rekord. W polu **Typ arkusza** wybierz opcję **Kasa**. Zdefiniuj inne potrzebne domyślne parametry.
 
-## <a name="daily-cash-operations-via-a-slip-journal"></a>Codzienne operacje pieniężne za pośrednictwem arkusza dokumentu dostawy
-Aby utworzyć dokument kasowy za pośrednictwem arkusza dokumentu dostawy, przejdź do **Zarządzanie gotówką i bankami**&gt;**środków pieniężnych transakcji**&gt;**arkusz kasowy**i utworzyć nowy arkusz. W okienku akcji kliknij polecenie **linii**. Dodać nowy wiersz i wprowadź następujące informacje.
+## <a name="daily-cash-operations-via-a-slip-journal"></a>Dokumentowanie codziennych operacje gotówkowych przy użyciu arkusza kasowego
+Aby utworzyć dokument kasowy za pośrednictwem arkusza kasowego, wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Transakcje kasowe** &gt; **Arkusz kasowy** i utwórz nowy arkusz. W okienku akcji kliknij pozycję **Wiersze**. Dodaj nowy wiersz i wprowadź następujące informacje:
 
 <table>
 <colgroup>
@@ -245,23 +248,23 @@ Aby utworzyć dokument kasowy za pośrednictwem arkusza dokumentu dostawy, przej
 </tr>
 <tr class="even">
 <td>Konto</td>
-<td>Wybierz konto kasowe. Domyślnie konto środków pieniężnych jest określony w parametrach Zarządzanie gotówką i bankami.</td>
+<td>Wybierz konto kasowe. Domyślnie konto kasowe jest określone w oknie Parametry modułu Zarządzanie gotówką i bankami.</td>
 </tr>
 <tr class="odd">
 <td>opis</td>
-<td>Wprowadź tekst objaśnienia dla transakcji.</td>
+<td>Wprowadź tekst wyjaśniający o transakcji.</td>
 </tr>
 <tr class="even">
 <td>Debet Kredyt</td>
-<td>Wprowadź kwotę środków pieniężnych z dokumentu w jednym z tych pól:
+<td>Wprowadź kwotę z dokumentu kasowego w jednym z następujących pól:
 <ul>
-<li><strong>Debet</strong> — to pole służy do rejestracji blankietów kasowych i KP.</li>
-<li><strong>Kredytu</strong> — to pole służy do rejestracji wydatków pieniężnych i dokumentu KW.</li>
+<li><strong>Debet</strong> — to pole służy do rejestracji przychodów gotówkowych i dokumentu KP.</li>
+<li><strong>Kredyt</strong> — to pole służy do rejestracji rozchodów gotówkowych i dokumentu KW.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Typ konta przeciwstawnego konta przeciwstawne</td>
-<td>Należy wybrać numer konta typu i przesunięcie konta przeciwstawnego.</td>
+<td>Typ konta przeciwstawnego Konto przeciwstawne</td>
+<td>Wybierz typ i numer konta przeciwstawnego.</td>
 </tr>
 <tr class="even">
 <td>Waluta</td>
@@ -269,98 +272,98 @@ Aby utworzyć dokument kasowy za pośrednictwem arkusza dokumentu dostawy, przej
 </tr>
 <tr class="odd">
 <td>Załącznik</td>
-<td>To pole jest wypełniane automatycznie, na podstawie ustawień dziennika.</td>
+<td>To pole jest wypełniane automatycznie na podstawie ustawień arkusza.</td>
 </tr>
 <tr class="even">
 <td>Numer zamówienia</td>
-<td>Jeśli inne sekwencja numerów jest ustawione dla konta kasowego, to pole jest wypełniane automatycznie, na podstawie sekwencji numerów, która jest określona w parametrach. Można ręcznie wprowadzić numer zamówienia w tej dziedzinie, ile jest potrzebnych. Aby zapobiec niespójność w numeracji dokumentów środków pieniężnych, stosuje się następujący formant: numer dokumentu środków pieniężnych, który ma datę wcześniejszą operacji nie może być wyższa niż numer dokumentu kasowego, który ma później operacji. Jeśli nie wymagają tego formantu, zaznacz <strong>Księgowanie z wcześniejszą datą</strong> pole wyboru w parametrach Zarządzanie gotówką i bankami.</td>
+<td>Jeśli dla konta kasowego nie skonfigurowano innej numeracji, to pole jest wypełniane automatycznie na podstawie numeracji określonej w parametrach. W razie potrzeby można ręcznie wprowadzić numer zamówienia w tym polu. Aby zapobiec niespójnościom w numeracji dokumentów kasowych, stosuje się następującą kontrolę: numer dokumentu kasowego z wcześniejszą datą operacji nie może być wyższy niż numer dokumentu kasowego z późniejszą datą operacji. Jeśli nie potrzebujesz tej kontroli, zaznacz pole wyboru <strong>Księgowanie z wcześniejszą datą</strong> w oknie Parametry modułu Zarządzanie gotówką i bankami.</td>
 </tr>
 <tr class="odd">
 <td>Stan zatwierdzenia</td>
-<td>Pierwszy stan transakcji jest <strong>Brak</strong>. Szczegółowe informacje o tym, jak ustawić stan transakcji &quot;pieniężnych zatwierdzenia transakcji i księgowania&quot; sekcji.</td>
+<td>Pierwszym stanem transakcji jest <strong>Brak</strong>. Szczegółowe informacje o tym, jak ustawić stan transakcji, zawiera sekcja &quot;Zatwierdzanie i księgowanie transakcji kasowych&quot;.</td>
 </tr>
 <tr class="even">
 <td>Typ dokumentu </td>
-<td>To pole na <strong>gotówkowa</strong> karta jest wypełniane automatycznie, na podstawie ilości wprowadzonej dla dokument kasowy:
+<td>To pole na karcie <strong>Zamówienie gotówkowe</strong> jest wypełniane automatycznie na podstawie kwoty wprowadzonej w dokumencie kasowym:
 <ul>
-<li><strong>Gotówka KP</strong> -ta wartość jest używana, jeśli wprowadzono wartość w <strong>Debet</strong> pola dla konta kasowego.</li>
-<li><strong>Gotówka dokumentu KW</strong> -ta wartość jest używana, jeśli wprowadzono wartość w <strong>kredytu</strong> dla konta kasowego pole</li>
-<li><strong>Korekta</strong> — wprowadzona kwota ujemna w <strong>Debet</strong> pole lub <strong>kredytu</strong> pola dla konta kasowego.</li>
+<li><strong>Dokument KP</strong> — ta wartość jest używana, jeśli wprowadzono wartość w polu <strong>Debet</strong> dla konta kasowego.</li>
+<li><strong>Dokument KW</strong> — ta wartość jest używana, jeśli wprowadzono wartość w polu <strong>Kredyt</strong> dla konta kasowego.</li>
+<li><strong>Korekta</strong> — wprowadzono kwotę ujemną w polu <strong>Debet</strong> lub <strong>Kredyt</strong> dla konta kasowego.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Grupa podatków</td>
-<td>Określ grupę podatku przy obliczaniu podatków na operację.</td>
+<td>Określ grupę podatków, która ma być używana do obliczania podatków od operacji.</td>
 </tr>
 <tr class="even">
 <td>Grupa podatków dla pozycji</td>
-<td>Określ grupę podatków towaru do obliczania podatków od operacji.</td>
+<td>Określ grupę podatków od towarów, która ma być używana do obliczania podatków od operacji.</td>
 </tr>
 <tr class="odd">
 <td>Przyczyna</td>
-<td>Na <strong>gotówkowa</strong> wprowadź tekst opisujący przedmiot transakcji. Ten tekst będzie drukowany na formularz sprawozdawczy dokumentu kasowego.</td>
+<td>Na karcie <strong>Zamówienie gotówkowe</strong> wprowadź tekst opisujący przedmiot transakcji. Ten tekst będzie drukowany w formularzu sprawozdawczym dokumentu kasowego.</td>
 </tr>
 <tr class="even">
 <td>Data dokumentu</td>
-<td>Wprowadź opis, numer i Data dokumentu głównego, to jest powód, dla transakcji (na przykład raporty zaliczek, faktury lub zamówienia).</td>
+<td>Wprowadź opis, numer i datę dokumentu podstawowego będącego powodem transakcji (na przykład raport o zaliczkach, faktura lub zamówienie).</td>
 </tr>
 <tr class="odd">
 <td>Typ przedstawiciela</td>
-<td>To pole może mieć następujące wartości:
+<td>To pole może przyjmować następujące wartości:
 <ul>
-<li><strong>Pracownik</strong> — <strong>reprezentatywnych</strong> odnośnika zawiera listę pracowników, jeśli <strong>konto przeciwstawne</strong> pole jest ustawione na <strong>księgi</strong> lub <strong>Bank</strong>, lub na liście kontrahenta, osób kontaktowych, jeśli <strong>konto przeciwstawne</strong> pole jest ustawione na <strong>klienta</strong> lub <strong>dostawcy</strong>. Aby skonfigurować przedstawicieli, przejdź do <strong>podstawowych</strong>&gt;<strong>instalacji</strong>&gt;<strong>kontakty</strong>&gt;<strong>osoba kontaktowa</strong>.</li>
-<li><strong>Inne</strong> — <strong>przedstawiciel</strong> odnośnika zawiera listę innych klientów. Aby skonfigurować odbiorcy, którzy nie pojawiają się w <strong>klienci</strong> lub <strong>dostawców</strong> tabeli, przejdź do <strong>księgi głównej</strong>&gt;<strong>odbiorników</strong>. Ten typ jest dostępny tylko dla Łotwy. ( <strong>CSELatvia</strong> powinien być włączony klucz konfiguracji.)</li>
-<li><strong>Dostawca</strong> — <strong>przedstawiciel</strong> odnośnika zawiera listę dostawców. Aby zdefiniować dostawców, przejdź do <strong>rozrachunków z dostawcami</strong>&gt;<strong>dostawców</strong>.</li>
-<li><strong>Odbiorcy</strong> — <strong>przedstawiciel</strong> odnośnika zawiera listę klientów. Aby zdefiniować nabywców, przejdź do <strong>rozrachunków z odbiorcami</strong>&gt;<strong>klienci</strong>.</li>
+<li><strong>Pracownik</strong> — Wyszukiwanie <strong>Przedstawiciel</strong> zawiera listę pracowników, jeśli pole <strong>Konto przeciwstawne</strong> zawiera wartość <strong>Księga</strong> lub <strong>Bank</strong>, albo listę osób kontaktowych u kontrahenta, jeśli pole <strong>Konto przeciwstawne</strong> zawiera wartość <strong>Odbiorca</strong> lub <strong>Dostawca</strong>. Aby skonfigurować przedstawicieli, wybierz kolejno opcje <strong>Podstawowe</strong> &gt; <strong>Ustawienia</strong> &gt; <strong>Kontakty</strong> &gt; <strong>Osoba kontaktowa</strong>.</li>
+<li><strong>Inne</strong> — Wyszukiwanie <strong>Przedstawiciel</strong> zawiera listę innych klientów. Aby skonfigurować odbiorców, którzy nie figurują w tabeli <strong>Odbiorcy</strong> ani <strong>Dostawcy</strong>, wybierz kolejno opcje <strong>Księga główna</strong> &gt; <strong>Odbiorcy</strong>. Ten typ jest dostępny tylko w Hiszpanii. (Musi być włączony klucz konfiguracji <strong>CSELatvia</strong>).</li>
+<li><strong>Dostawca</strong> — Wyszukiwanie <strong>Przedstawiciel</strong> zawiera listę dostawców. Aby skonfigurować dostawców, wybierz kolejno opcje <strong>Rozrachunki z dostawcami</strong> &gt; <strong>Dostawcy</strong>.</li>
+<li><strong>Odbiorca</strong> — Wyszukiwanie <strong>Przedstawiciel</strong> zawiera listę odbiorców. Aby skonfigurować odbiorców, wybierz kolejno opcje <strong>Rozrachunki z odbiorcami</strong> &gt; <strong>Odbiorcy</strong>.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Przedstawiciel</td>
-<td>Wybrać przedstawiciela typu określonego w <strong>typ przedstawiciela</strong> pole.</td>
+<td>Wybierz przedstawiciela o typie określonym w polu <strong>Typ przedstawiciela</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Nazwisko pracownika</td>
-<td>To pole jest wypełniane automatycznie, na podstawie <strong>konto przeciwstawne</strong> i <strong>przedstawiciel</strong> pól. Do drukowania formularza dokumenty kasowe będzie odzwierciedlał te informacje.</td>
+<td>To pole jest wypełniane automatycznie na podstawie zawartości pól <strong>Konto przeciwstawne</strong> i <strong>Przedstawiciel</strong>. Drukowana postać dokumentów kasowych będzie odzwierciedlała te informacje.</td>
 </tr>
 <tr class="even">
 <td>Dowód tożsamości</td>
-<td>To pole jest wypełniane automatycznie, na podstawie dowodu tożsamości danych osoby kontaktowej (przedstawiciel). Jeśli <strong>typ konta przeciwstawnego</strong> pole jest ustawione na <strong>posiadacza zaliczki</strong>i <strong>konto przeciwstawne</strong> pole jest ustawione na numer pracownika, wpłat gotówkowych lub wydatków może odbywać się z lub do pracownika. W takim przypadku <strong>dowodu tożsamości</strong> pole jest wypełniane automatycznie przy użyciu danych dowodu tożsamości z <strong>pracownika</strong> tabeli (<strong>Księgowanie personelu</strong>&gt;<strong>tabeli pracowników</strong>).</td>
+<td>To pole jest wypełniane automatycznie na podstawie danych dowodu tożsamości osoby kontaktowej (przedstawiciela). Jeśli pole <strong>Typ konta przeciwstawnego</strong> jest ustawione na <strong>Posiadacz zaliczki</strong>, a pole <strong>Konto przeciwstawne</strong> na numer pracownika, można dokonywać przychodów i rozchodów gotówkowych do i od tego pracownika. W takim przypadku pole <strong>Dowód tożsamości</strong> jest wypełniane automatycznie przy użyciu danych dowodu tożsamości z tabeli <strong>Pracownik</strong> (<strong>Księgowanie personelu</strong> &gt; <strong>Tabela pracowników</strong>).</td>
 </tr>
 <tr class="odd">
 <td>Cel</td>
-<td>W <strong>celu</strong> table, zdefiniować jeden lub więcej kodów przeznaczenia kwoty transakcji. Należy wybrać kod przeznaczenia w <strong>celu</strong> i wpisz wyjaśnienie w <strong>tekst transakcji</strong> pole. W <strong>kwoty</strong> wprowadź kwotę w walucie transakcji. <strong>%</strong> Pól pokazuje, w procentach, stosunek wielkości docelowej do łącznej kwoty transakcji.</td>
+<td>W tabeli <strong>Cel</strong> zdefiniuj jeden lub więcej kodów przeznaczenia kwoty transakcji. Wybierz kod przeznaczenia w polu <strong>Cel</strong> i wpisz wyjaśnienie w polu <strong>Tekst transakcji</strong>. W polu <strong>Kwota</strong> wpisz kwotę w walucie transakcji. Pole <strong>Procent</strong> pokazuje (w procentach) stosunek kwoty docelowej do łącznej kwoty transakcji.</td>
 </tr>
 <tr class="even">
 <td>Upomnienie</td>
-<td>Kwota pozostała jest obliczana. Należy zauważyć, że kwota cała transakcja musi być przypisany do kody miejsca przeznaczenia.</td>
+<td>Obliczana pozostała kwota. Należy zauważyć, że cała kwota transakcja musi być przypisana do kodów przeznaczenia.</td>
 </tr>
 <tr class="odd">
 <td>Dane urzędowe</td>
-<td>Na <strong>urzędników</strong> tab, określanie nazw i tytułów dla osób odpowiedzialnych: dyrektora, głównego księgowego i kasjera. <strong>Pozycji</strong> wartości są określane przez ustawienia urzędników na <strong>ogólne</strong> i <strong>księgi</strong> karty <strong>urzędników</strong> stronę (<strong>podstawowych</strong>&gt;<strong>instalacji</strong>&gt;<strong>kontakty</strong>&gt;<strong>urzędników</strong>).</td>
+<td>Na karcie <strong>Dane urzędowe</strong> podaj imiona, nazwiska i tytuły osób odpowiedzialnych: dyrektora, głównego księgowego i kasjera. Wartości pola <strong>Pozycja</strong> są określane przez konfigurację danych urzędowych na kartach <strong>Ogólne</strong> i <strong>Księga</strong> na stronie <strong>Dane urzędowe</strong> (<strong>Podstawowe</strong> &gt; <strong>Ustawienia</strong> &gt; <strong>Kontakty</strong> &gt; <strong>Dane urzędowe</strong>).</td>
 </tr>
 <tr class="even">
 <td>Zaliczka</td>
-<td>Zaznacz to pole wyboru, jeśli transakcja jest przedpłatą.</td>
+<td>Należy zaznaczyć to pole wyboru, jeśli transakcja jest przedpłatą.</td>
 </tr>
 <tr class="odd">
 <td>Profil księgowania</td>
-<td>Wprowadź profil księgowania dla konta kasowego. Domyślnie używany jest profil księgowania, który jest określony w parametrach Zarządzanie gotówką i bankami.</td>
+<td>Wprowadź profil księgowania konta kasowego. Domyślnie jest używany profil księgowania określony w oknie Parametry modułu Zarządzanie gotówką i bankami.</td>
 </tr>
 <tr class="even">
 <td>Profil księgowania przeciwstawnego</td>
-<td>Wprowadź profil księgowania dla wybranego konta przeciwstawnego.</td>
+<td>Wprowadź profil księgowania wybranego konta przeciwstawnego.</td>
 </tr>
 <tr class="odd">
 <td>Suma</td>
-<td>W <strong>suma</strong> grupy pól u dołu strony, <strong>Reimb</strong> pole zawiera sumę, która jest obliczana dla wszystkich środków pieniężnych, zwrot dokumentów, które są wprowadzane w bieżącym arkuszu i <strong>Disb</strong> pole zawiera sumę wszystkich dokumentów KW.</td>
+<td>W grupie pól <strong>Suma</strong> u dołu strony pole <strong>Zwroty</strong> zawiera sumę obliczaną dla wszystkich dokumentów KP wprowadzonych w bieżącym arkuszu, a pole <strong>Rozch</strong> zawiera sumę ze wszystkich dokumentów KW.</td>
 </tr>
 </tbody>
 </table>
 
-Aby sprawdzić zapisy księgowe, w okienku akcji kliknij przycisk **sprawdzania poprawności**.
+Aby sprawdzić zapisy w arkuszu, w okienku akcji kliknij przycisk **Weryfikuj**.
 
-## <a name="daily-cash-operations-via-a-general-journal"></a>Codzienne operacje pieniężne za pomocą dziennika głównego
-Aby utworzyć transakcji kasowej za pomocą dziennika głównego, przejdź do **księgi głównej**&gt;**pozycji dziennika**&gt;**arkusze finansowe**i utworzyć nowy arkusz. W okienku akcji kliknij polecenie **linii**. Dodać nowy wiersz i wprowadź następujące informacje.
+## <a name="daily-cash-operations-via-a-general-journal"></a>Dokumentowanie codziennych operacje gotówkowych przy użyciu arkusza finansowego
+Aby utworzyć transakcję kasową za pomocą arkusza finansowego, wybierz kolejno opcje **Księga główna** &gt; **Wpisy w arkuszu** &gt; **Arkusze finansowe** i utwórz nowy arkusz. W okienku akcji kliknij pozycję **Wiersze**. Dodaj nowy wiersz i wprowadź następujące informacje:
 
 <table>
 <colgroup>
@@ -380,7 +383,7 @@ Aby utworzyć transakcji kasowej za pomocą dziennika głównego, przejdź do **
 </tr>
 <tr class="even">
 <td>Typ konta</td>
-<td>Wybierz <strong>kasy</strong>.</td>
+<td>Wybierz opcję <strong>Gotówka podręczna</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Konto</td>
@@ -388,19 +391,19 @@ Aby utworzyć transakcji kasowej za pomocą dziennika głównego, przejdź do **
 </tr>
 <tr class="even">
 <td>Tekst transakcji</td>
-<td>Wprowadź tekst objaśnienia dla transakcji.</td>
+<td>Wprowadź tekst wyjaśniający o transakcji.</td>
 </tr>
 <tr class="odd">
 <td>Debet Kredyt</td>
-<td>Wprowadź kwotę środków pieniężnych z dokumentu w jednym z tych pól:
+<td>Wprowadź kwotę z dokumentu kasowego w jednym z następujących pól:
 <ul>
-<li><strong>Debet</strong> — to pole służy do rejestracji blankietów kasowych i KP.</li>
-<li><strong>Kredytu</strong> — to pole służy do rejestracji wydatków pieniężnych i dokumentu KW.</li>
+<li><strong>Debet</strong> — to pole służy do rejestracji przychodów gotówkowych i dokumentu KP.</li>
+<li><strong>Kredyt</strong> — to pole służy do rejestracji rozchodów gotówkowych i dokumentu KW.</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Typ konta przeciwstawnego konta przeciwstawne</td>
-<td>Należy wybrać numer konta typu i przesunięcie konta przeciwstawnego.</td>
+<td>Typ konta przeciwstawnego Konto przeciwstawne</td>
+<td>Wybierz typ i numer konta przeciwstawnego.</td>
 </tr>
 <tr class="odd">
 <td>Waluta</td>
@@ -409,21 +412,21 @@ Aby utworzyć transakcji kasowej za pomocą dziennika głównego, przejdź do **
 </tbody>
 </table>
 
-Na **faktury** kartę, można określić profilów księgowania dla wybranego konta oraz konto przeciwstawne. W przypadku zarejestrowanych transakcji przedpłaty zaznacz **przedpłaty** pole wyboru na **płatności** kartę. W **przedstawiciel** grupie pól, wypełnij pola, tak jak dla wierszy arkusza dokumentu dostawy do wydrukowania na **środków pieniężnych** raportu. Aby sprawdzić zapisy księgowe, w okienku akcji kliknij przycisk **sprawdzania poprawności**.
+Na karcie **Faktura** można określić profile księgowania dla wybranego konta i konta przeciwstawnego. Jeśli zarejestrowana transakcja jest przedpłatą, zaznacz pole wyboru **Przedpłata** na karcie **Płatność**. W grupie pól **Przedstawiciel** wypełnij pola tak jak dla wierszy arkusza kasowego w celu wydrukowania raportu **Kasa**. Aby sprawdzić zapisy w arkuszu, w okienku akcji kliknij przycisk **Weryfikuj**.
 
-## <a name="cash-transaction-approval-and-posting"></a>Zatwierdzenia transakcji pieniężnych i księgowania
-Dla transakcji pieniężnych, mogą być stosowane następujące stany: **Brak**, **potwierdzone**, **zatwierdzone**, i **odrzucone**. A **Użyj stanu potwierdzenia** parametru na **zatwierdzenia** skróconej **środków pieniężnych** tab na **Zarządzanie gotówką i bankami**&gt;**instalacji**&gt;**parametry zarządzania gotówką i bankami** umożliwia aktywację dwa dodatkowe stany: **potwierdzone** i **odrzucone**. Właściwe jest potwierdzenie, gdy są wydawane dokumentów kasowych i wpłat gotówkowych lub wydatków, które są wspólne dla dwóch pracowników: księgowego i kasjera. **Resetowanie stanu** funkcja zmienia bieżący stan transakcji. **Zatwierdzone** staje się **potwierdzone**, i **potwierdzone** staje się **Brak**. Zapisy księgowe środków pieniężnych można edytować tylko wtedy, gdy stan jest **Brak**. Transakcje kasowe, mogą zostać odrzucone tylko wtedy, gdy dla transakcji wskazywany jest **potwierdzone**. Odrzucone pieniężnych dokumenty znajdują się na **arkusza rejestracji dokumentów kasowych** raportu, ale nie są odzwierciedlane **Księga kasowa** raportu. Aby zatwierdzić transakcję, wybierz odpowiedni wiersz arkusza dokumentu dostawy, a następnie kliknij przycisk **dokumenty zatwierdzenia**&gt;**Potwierdź**. Numer zamówienia jest generowany na podstawie określonej sekwencji numerów. Stan transakcji jest zmieniany na **potwierdzone**, i nie będzie można edytować wiersz dziennika. Salda konta kasowego pozostaje bez zmian. Aby odrzucić dokument kasowy, kliknij przycisk **dokumenty zatwierdzenia**&gt;**Odrzuć**. Ta opcja jest dostępna tylko dla dokumentów, które mają **potwierdzone** stanu. Do zatwierdzania transakcji, wybierz odpowiedni wiersz arkusza dokumentu dostawy, a następnie kliknij przycisk **dokumenty zatwierdzenia**&gt;**Zatwierdź**. **Zatwierdzone** stan wskazuje, że środki pieniężne otrzymane lub wydatkowane. Saldo gotówkowe zostanie zmieniona. Transakcja kasowa mogą być księgowane. Aby anulować **zatwierdzone** stanu i zresetować do stanu **Brak**, kliknij przycisk **dokumenty zatwierdzenia**&gt;**Resetowanie stanu**. Tylko zatwierdzonych środków pieniężnych, które mogą być księgowane transakcje. Aby zaksięgować dziennik, kliknij przycisk **Post**&gt;**Post**.
+## <a name="cash-transaction-approval-and-posting"></a>Zatwierdzanie i księgowanie transakcji kasowych
+Do transakcji kasowych mogą być stosowane następujące stany: **Brak**, **Potwierdzone**, **Zatwierdzone** i **Odrzucone**. Parametr **Użyj stanu potwierdzenia** na skróconej karcie **Zatwierdzenie** dostępnej na karcie **Kasa** w oknie **Zarządzanie gotówką i bankami** &gt; **Ustawienia** &gt; **Parametry modułu Zarządzanie gotówką i bankami** pozwala włączyć dwa dodatkowe stany: **Potwierdzone** i **Odrzucone**. Potwierdzenie należy zastosować, gdy są wydawane dokumenty kasowe, a przychody i rozchody gotówkowe są realizowanie wspólne przez dwóch pracowników: księgowego i kasjera. Funkcja **Resetuj stan** zmienia bieżący stan transakcji. Stan **Zatwierdzone** staje się stanem **Potwierdzone**, a stan **Potwierdzone** zmienia się na **Brak**. Zapisy w arkuszu kasowym można edytować tylko wtedy, gdy stanem jest **Brak**. Transakcje kasowe można odrzucać tylko wtedy, gdy stanem transakcji jest **Potwierdzone**. Odrzucone dokumenty kasowe znajdują się w raporcie **Arkusz rejestracji dokumentów kasowych**, ale nie są uwzględniane w raporcie **Księga kasowa**. Aby potwierdzić transakcję, wybierz odpowiedni wiersz arkusza kasowego, a następnie kliknij kolejno opcje **Zatwierdzenie dokumentów** &gt; **Potwierdź**. Zostanie wygenerowany numer zamówienia na podstawie ustawionej numeracji. Stan transakcji zmieni się na **Potwierdzone** i nie będzie można już edytować wiersza arkusza. Salda konta kasowego pozostaje bez zmian. Aby odrzucić dokument kasowy, kliknij kolejno opcje **Zatwierdzenie dokumentów** &gt; **Odrzuć**. Ta opcja jest dostępna tylko dla dokumentów o stanie **Potwierdzone**. Aby zatwierdzić transakcję, wybierz odpowiedni wiersz arkusza kasowego, a następnie kliknij kolejno opcje **Zatwierdzenie dokumentów** &gt; **Zatwierdź**. Stan **Zatwierdzone** wskazuje, że środki pieniężne zostały otrzymane lub wydatkowane. Saldo kasowe się zmienia. Transakcję kasową można zaksięgować. Aby anulować stan **Zatwierdzone** i zresetować stan do wartości **Brak**, kliknij kolejno opcje **Zatwierdzenie dokumentów** &gt; **Resetuj stan**. Można zaksięgować tylko zatwierdzone transakcje kasowe. Aby zaksięgować arkusz, kliknij kolejno opcje **Księguj** &gt; **Księguj**.
 
-## <a name="print-a-cash-order"></a>Drukuj zamówienie gotówkowe
-Aby wydrukować zamówienie gotówkowe, zaznacz wiersz arkusza dokumentu dostawy, a następnie w okienku akcji kliknij **drukować**&gt;**raportu zamówienia gotówkowego**. System generuje drukowania formularza dla KP lub kW, w zależności od tego, czy wprowadzona zostanie kwota w **Debet** pole lub **kredytu** dla wybranego wiersza pole:
+## <a name="print-a-cash-order"></a>Drukowanie zamówienia gotówkowego
+Aby wydrukować zamówienie gotówkowe, zaznacz wiersz arkusza kasowego, a następnie w okienku akcji kliknij kolejno opcje **Drukuj** &gt; **Raport zamówień gotówkowych**. System wygeneruje drukowalną postać dokumentu KP lub KW, w zależności od tego, czy dla wybranego wiersza wprowadzono kwotę w polu **Debet**, czy **Kredyt**:
 
--   Jeśli istnieje kwota w **Debet** pola: gotówka KP
--   Jeśli istnieje kwota w **kredytu** pola: gotówka dokumentu KW
+-   Jeśli istnieje kwota w pola **Debet**: dokument KP
+-   Jeśli istnieje kwota w pola **Kredyt**: dokument KW
 
-Zdjąć wierszy dziennika, które mają **potwierdzone**, **zatwierdzone**, lub **odrzucone** stanu mogą być drukowane. Można również wydrukować dokumenty zamówienia gotówkowego o **Zarządzanie gotówką i bankami**&gt;**otrzymywać i raporty**&gt;**gotówkowa**.
+Wiersze arkusza kasowego, które mają stan **Potwierdzone**, **Zatwierdzone** lub **Odrzucone**, mogą być drukowane. Dokumenty zamówień gotówkowych można również drukować z okna **Zarządzanie gotówką i bankami** &gt; **Zapytania i raporty** &gt; **Zamówienie gotówkowe**.
 
 ## <a name="periodic-tasks"></a>Zadania okresowe
-Następujące zadania mogą być wykonywane w **Zarządzanie gotówką i bankami**&gt;**zadania okresowe**.
+W oknie **Zarządzanie gotówką i bankami** &gt; **Zadania okresowe** można wykonywać następujące zadania:
 
 <table>
 <colgroup>
@@ -439,39 +442,41 @@ Następujące zadania mogą być wykonywane w **Zarządzanie gotówką i bankami
 <tbody>
 <tr class="odd">
 <td>Sprawdź limit salda</td>
-<td>Sprawdź saldo konta kasowego wybranego na określony dzień i pokazać wynik w komunikat informacyjny. Tylko zatwierdzone transakcje mogą być liczone obliczanie salda. Transakcje, które są oznaczone jako <strong>dla listy płac</strong> nie są uznawane za.</td>
+<td>Sprawdzanie salda wybranego konta kasowego na określony dzień oraz pokazywanie wyniku w komunikacie informacyjnym. W obliczaniu salda mogą być uwzględniane tylko zatwierdzone transakcje. Transakcje oznaczone jako <strong>Dla listy płac</strong> nie są brane pod uwagę.</td>
 </tr>
 <tr class="even">
 <td>Ponowne obliczanie salda kasowego</td>
-<td>To zadanie służy do upewnij się, że mieszczą się saldo gotówkowe sald finansowych dotyczących kont kasowych.</td>
+<td>To zadanie pozwala upewnić się, że salda księgi dla kont kasowych pasują do salda kasowego.</td>
 </tr>
 <tr class="odd">
-<td>Utwórz raport kasowy (tylko w Polsce)</td>
-<td>Tworzenie <strong>środków pieniężnych</strong> raportu. <strong>Środków pieniężnych</strong> numer raport jest generowany na podstawie sekwencji numerów, która jest ustawiona dla <strong>numer sprawozdania z</strong>. W oknie dialogowym pole zadania, w <strong>do tej pory</strong>, wybranie ostatniej daty, dla których kasy transakcje powinny być liczone dla <strong>środków pieniężnych</strong> raportu. Użyj <strong>filtr</strong> działać na <strong>rekordy dołączane</strong> kartę, aby określić dodatkowe kryteria, aby ograniczyć wybór transakcji kasowych. Kryteria te mogą obejmować numery kont gotówkowych i kodów walut. W <strong>przez tworzenie</strong> wybierz użytkownika, który jest odpowiedzialny za tworzenie raportów. Aby wyświetlić <strong>środków pieniężnych</strong> raport, który został utworzony, użyj <strong>gotówka raporty</strong> znajdującego się na <strong>środków pieniężnych konta</strong> strony.</td>
+<td>Tworzenie raportu kasowego (tylko Polska)</td>
+<td>Tworzenie raportu <strong>Kasa</strong>. Numer raportu <strong>Kasa</strong> jest generowany na podstawie numeracji ustawionej w obszarze <strong>Numer raportu</strong>. W oknie dialogowym zadania w polu <strong>Do dnia</strong> określ ostatni dzień, z którego transakcje kasowe powinny być uwzględniane w raporcie <strong>Kasa</strong>. Za pomocą funkcji <strong>Filtr</strong> dostępnej na karcie <strong>Rekordy do uwzględnienia</strong> określ dodatkowe kryteria ograniczające wybór transakcji kasowych. Kryteria te mogą obejmować numery kont kasowych i kody walut. W polu <strong>Autor</strong> wybierz użytkownika odpowiedzialnego za tworzenie raportów. Aby wyświetlić utworzony raport <strong>Kasa</strong>, użyj przycisku <strong>Raporty kasowe</strong> znajdującego się na stronie <strong>Konta kasowe</strong>.</td>
 </tr>
 <tr class="even">
-<td>Kasa — wymiany korekty FIFO i LIFO (tylko w Polsce)</td>
-<td>Obliczyć różnice kursowe według norm polskich. Użyj <strong>filtr</strong> działać na <strong>rekordy dołączane</strong> kartę, aby określić do uruchomienia zadania dla konta kasowego. Wybierz <strong>ponownego obliczania</strong> pole wyboru, aby wykonać pełne ponowne obliczanie różnice korekty kursowe dla wszystkich otwartych okresów. Oto sposób obliczania różnice kursowe po pierwszym, najpierw FIFO i ostatnio w pierwszym LIFO metody są używane:
+<td>Kasa — korekta kursu wymiany (FIFO i LIFO) (tylko Polska)</td>
+<td>Obliczanie różnic kursowych według polskich norm. Za pomocą funkcji <strong>Filtr</strong> dostępnej na karcie <strong>Rekordy do uwzględnienia</strong> określ konto kasowe, dla którego ma zostać wykonane zadanie. Zaznacz pole wyboru <strong>Ponowne obliczanie</strong>, aby wykonać pełne ponowne obliczanie różnic kursowych dla wszystkich otwartych okresów. Oto sposób obliczania różnic kursowych w przypadku używania metody FIFO (pierwsze na wejściu, pierwsze na wyjściu) i LIFO (ostatnie na wejściu, pierwsze na wyjściu):
 <ul>
-<li><strong>Metoda FIFO</strong> – system wyszuka transakcję wydatków, który ma wcześniejszą datę transakcji (mniejszy numer zamówienia) i załatwiona transakcja przychodu, która ma wcześniejszą datę transakcji (mniejszy numer zamówienia).</li>
-<li><strong>Metoda LIFO</strong> – system wyszuka transakcję wydatków, który ma nowszej daty transakcji (większy numer zamówienia) i załatwiona transakcja przychodu, która ma nowszej daty transakcji (większy numer zamówienia).</li>
+<li><strong>Metoda FIFO</strong> — System szuka transakcji wydatków mającej wcześniejszą datę transakcji (niższy numer zamówienia) i rozlicza ją względem transakcja przychodu mającej wcześniejszą datę transakcji (niższy numer zamówienia).</li>
+<li><strong>Metoda LIFO</strong> — System szuka transakcji wydatków mającej późniejszą datę transakcji (wyższy numer zamówienia) i rozlicza ją względem transakcja przychodu mającej późniejszą datę transakcji (wyższy numer zamówienia).</li>
 </ul>
-Rozliczona kwota znajduje odzwierciedlenie w <strong>rozliczona Waluta</strong> w <strong>środków pieniężnych transakcji</strong> strony. W przypadku korekty różnice kursowe, kwota jest odzwierciedlona w <strong>kwotę różnic kursowych</strong> pola i transakcji z <strong>różnicy kursowej</strong> typu dokumentu jest generowany w <strong>środków pieniężnych transakcji</strong> tabeli. Konta księgowe dla transakcji zysków/strat mieszczą się w <strong>waluty</strong> tabeli (<strong>Zysk finansowy kurs wymiany</strong> i <strong>Strata finansowa spowodowana kursami wymiany</strong>).</td>
+Rozliczona kwota znajduje odzwierciedlenie w polu <strong>Rozliczona waluta</strong> na stronie <strong>Transakcja kasowa</strong>. W przypadku istnienia różnicy kursowej kwota jest odzwierciedlana w polu <strong>Kwota korekty kursu wymiany</strong>, a transakcja o typie dokumentu <strong>Różnice kursowe</strong> jest generowana w tabeli <strong>Transakcja kasowa</strong>. Konta księgowe transakcji wynikowych ustawia się w tabeli <strong>Waluta</strong> (w polach <strong>Zysk finansowy z tytułu dodatnich różnic kursowych</strong> i <strong>Strata finansowa z tytułu ujemnych różnic kursowych</strong>).</td>
 </tr>
 <tr class="odd">
 <td>Przeszacowanie w walucie obcej — kasa</td>
-<td>Za pomocą tego zadania odpowiedniej równowagi w walucie domyślnej na dzień bilansowy, kiedy działania są wprowadzane w walutach obcych. Użyj <strong>filtr</strong> działać na <strong>rekordy dołączane</strong> kartę, aby określić do uruchomienia zadania dla konta kasowego. W oknie dialogowym zadania, użyj <strong>z waluty</strong> i <strong>do waluty</strong> pola, aby określić waluty transakcji. System porównuje kwota w walucie, które było konwertowane przy użyciu kursu wymiany dla wybranej daty z kwotą w walucie domyślnej. Różnica między tymi dwiema kwotami (z wyjątkiem poprzedniego różnice kursowe) jest obliczoną różnice kursowe. To zadanie powoduje utworzenie transakcji zatwierdzonych środków pieniężnych, z <strong>różnica kursowa</strong> typu. Transakcja księgi powstaje przy użyciu konta księgowego dla środków pieniężnych i konta księgowego, które określono w <strong>niezrealizowany zysk</strong> lub <strong>Niezrealizowana ujemna różnica kursowa</strong> w <strong>waluty</strong> tabeli.</td>
+<td>Za pomocą tego zadania można uzyskać odpowiednie saldo w walucie domyślnej na dzień sprawozdawczy, jeśli operacje są wprowadzane w walutach obcych. Za pomocą funkcji <strong>Filtr</strong> dostępnej na karcie <strong>Rekordy do uwzględnienia</strong> określ konto kasowe, dla którego ma zostać wykonane zadanie. W oknie dialogowym zadania użyj pól <strong>Z waluty</strong> i <strong>Na walutę</strong>, aby określić waluty transakcji. System porównuje kwotę w walucie, która została przeliczona przy użyciu kursu wymiany na określony dzień, z kwotą w walucie domyślnej. Różnica między tymi dwoma kwotami (z wyłączeniem poprzedniej różnicy kursowej) jest obliczoną różnicą kursową. To zadanie powoduje utworzenie zatwierdzonej transakcji kasowej o typie <strong>Różnica kursowa</strong>. Transakcja finansowa powstaje poprzez użycie konta księgowego dla gotówki oraz konta księgowego określonego w polu <strong>Niezrealizowana dodatnia różnica kursowa</strong> lub <strong>Niezrealizowana ujemna różnica kursowa</strong> w tabeli <strong>Waluta</strong>.</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="inquiries-and-reports"></a>Zapytania i raporty
-| Badanie lub raportu                             | opis                                                                                                                                                                                                                     |
+| Zapytanie lub raport                             | opis                                                                                                                                                                                                                     |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wyświetlanie transakcji kasowych                        | Dla wiersza arkusza dokumentu dostawy, użyj **zapytania** przycisku w okienku akcji do wyświetlania transakcji księgi, salda środków pieniężnych i inne informacje.                                                                                  |
-| Transakcja kasowa                              | Przejdź do **Zarządzanie gotówką i bankami**&gt;**informacji i raportów**&gt;**środków pieniężnych transakcji** do wyświetlania transakcji kasowych. Użyj **filtr** funkcji, aby określić dodatkowe kryteria, aby ograniczyć wybór transakcji kasowych. |
-| Arkusz rejestracji (dla Estonii, Rosja) | Raport o **Zarządzanie gotówką i bankami**&gt;**informacji i raportów**&gt;**Arkusz rejestracji** odzwierciedla wszystkie KP i dokumenty kW, które zostały wydane.                                   |
-| Księga kasowa (dla Łotwy, Litwy, Rosji)     | Raport o **Zarządzanie gotówką i bankami**&gt;**informacji i raportów**&gt;**raport Księga** odzwierciedla rzeczywistą gotówkę Funduszu ruchy (wpływy gotówkowe i wydatki).                                                            |
+| Widok transakcji kasowych                        | Dla wiersza arkusza kasowego przycisk **Zapytania** w okienku akcji pozwala wyświetlić transakcje kasowe, saldo kasowe i inne informacje.                                                                                  |
+| Transakcja kasowa                              | Aby wyświetlić transakcje kasowe, wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Zapytania i raporty** &gt; **Transakcje kasowe**. Za pomocą funkcji **Filtr** określ dodatkowe kryteria ograniczające wybór transakcji kasowych. |
+| Arkusz rejestracji (Estonia, Rosja) | Raport w oknie **Zarządzanie gotówką i bankami** &gt; **Zapytania i raporty** &gt; **Arkusz rejestracji** pokazuje wszystkie wystawione dokumenty KP i KW.                                   |
+| Księga kasowa (Łotwa, Litwa, Rosja)     | Raport w oknie **Zarządzanie gotówką i bankami** &gt; **Zapytania i raporty** &gt; **Raport księgi kasowej** pokazuje rzeczywiste przesunięcia środków pieniężnych (wpływy i wydatki).                                                            |
+
+
 
 
 

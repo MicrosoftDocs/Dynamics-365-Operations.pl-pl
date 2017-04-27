@@ -1,6 +1,6 @@
 ---
-title: "Analiza zawartości Power BI wydatków zakupu"
-description: "W tym temacie opisano, co jest zawarte w nabyciu spędzić pakiet analizy dla Microsoft Power BI. Wyjaśnia, jak uzyskać dostęp do raportów, które są zawarte w pakiecie zawartości i zawiera informacje o modelu danych i podmiotów, które są używane do tworzenia zawartości pack."
+title: "Pakiet zawartości usługi Power BI Analiza wydatków zakupowych"
+description: "W tym temacie opisano, co się znajduje w pakiecie zawartości Analiza wydatków zakupowych dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach używanych do zbudowania pakietu."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-12-30 09 - 40 - 51
@@ -24,23 +24,23 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="purchase-spend-analysis-power-bi-content"></a>Analiza zawartości Power BI wydatków zakupu
+# <a name="purchase-spend-analysis-power-bi-content"></a>Pakiet zawartości usługi Power BI Analiza wydatków zakupowych
 
-W tym temacie opisano, co jest zawarte w nabyciu spędzić pakiet analizy dla Microsoft Power BI. Wyjaśnia, jak uzyskać dostęp do raportów, które są zawarte w pakiecie zawartości i zawiera informacje o modelu danych i podmiotów, które są używane do tworzenia zawartości pack.
+W tym temacie opisano, co się znajduje w pakiecie zawartości Analiza wydatków zakupowych dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach używanych do zbudowania pakietu.
 
 <a name="overview"></a>Przegląd
 --------
 
-Analiza zawartości, że pack dla Microsoft Power BI został utworzony za zakup menedżerów i menedżerowie, którzy są odpowiedzialni za budżety wydatków zakupu. Został zaprojektowany tak, aby pomóc im Zwracaj uwagę na wydatki zakupu. Używa danych transakcyjnych zakupu z Microsoft Dynamics 365 dla operacji i zapewnia zarówno zagregowany widok danych liczbowych zakupu całej firmy i podział wydatków według dostawców i produktów zakupu. Raporty Wyróżniaj zmiany w zakupach wydatków w czasie. W związku z tym ich może służyć do ostrzegania menedżerów o pozytywnych i negatywnych tendencji wydatków dla poszczególnych dostawców i produktów. Wykresy pokazują wydatków dla grup dostawców i kategorie różnych zamówień zakupu. Kategoria i regionalni kierownicy sprzedaży może być przydatna do identyfikowania zmian w wydatkach na zachowanie za pomocą tych wykresów. Content pack menedżerów zakupów i menedżerów, którzy są odpowiedzialni za budżetów Przeanalizujmy zakupu wydatków w następujący sposób:
+Pakiet zawartości Analiza wydatków zakupowych dla usługi Microsoft Power BI został utworzony dla menedżerów ds. zakupów i menedżerów odpowiedzialnych za budżety. Ma im pomóc na bieżąco pilnować wydatków zakupowych. Wykorzystuje dane transakcyjne zakupów z programu Microsoft Dynamics 365 for Operations i przedstawia zarówno zagregowany widok danych zakupowych w całej firmie, jak i podział wydatków zakupowych na dostawców i produkty. Raporty eksponują zmiany wydatków zakupowych w horyzoncie czasowym. W związku z tym mogą służyć do ostrzegania menedżerów o pozytywnych i negatywnych trendach wydatków dla poszczególnych dostawców i produktów. Wykresy pokazują wydatki zakupowe dla różnych kategorii zaopatrzenia i grup dostawców. Menedżerowie kategorii i kierownicy regionalni docenią przydatność tych wykresów w identyfikowaniu zmian w zachowaniach wydatkowych. Pakiet zawartości umożliwia menedżerom ds. zakupów i menedżerom odpowiedzialnym za budżety analizowanie wydatków zakupowych na szereg sposobów:
 
--   Zakupów od początku roku (przez grupy dostawców poszczególnych dostawców, kategorii zaopatrzenia i poszczególne produkty i lokalizacja dostawcy)
--   Zmiany zakupu z roku na rok (według kategorii grupy i zamówień dostawcy)
+-   Zakupy od początku roku (według grupy dostawców i indywidualnych dostawców, kategorii zaopatrzenia, poszczególnych produktów i lokalizacji dostawców)
+-   Zmiany wydatków zakupowych rok do roku (według grup dostawców i kategorii zaopatrzenia)
 
-## <a name="accessing-the-content-pack"></a>Uzyskiwanie dostępu do zawartości pack
-Analiza zawartości pack jest publikowany jako składnik aktywów implementacji w Microsoft Dynamics cyklu życia usługi (LCS) i są dostępne z usługi Microsoft Dynamics 365 dla operacji wydatków zakupu. Aby uzyskać więcej informacji dotyczących sposobu dostępu i otwartych raportów BI zasilania, zobacz [Power BI zawartości w LCS firmy Microsoft i jej partnerzy](power-bi-content-microsoft-partners.md).
+## <a name="accessing-the-content-pack"></a>Przechodzenie do pakietu zawartości
+Pakiet zawartości Analiza wydatków zakupowych jest publikowany jako składnik implementacyjny w usłudze Microsoft Dynamics Lifecycle Services (LCS) i można go uruchomić z programu Microsoft Dynamics 365 for Operations. Aby uzyskać więcej informacji dotyczących sposobu uzyskiwania dostępu i otwierania raportów usługi Power BI, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md).
 
-## <a name="metrics-that-are-included-in-the-content-pack"></a>Wskaźniki, które są zawarte w pakiecie zawartości
-Analiza, że content pack zawiera raport, który zawiera zestaw wskaźników wydatków zakupu. Te wskaźniki są przedstawiane jako wykresy, tabliczki i tabelami. Poniższa tabela zawiera omówienie wizualizacji w pakiecie zawartości.
+## <a name="metrics-that-are-included-in-the-content-pack"></a>Wskaźniki dostępne w pakiecie zawartości
+Pakiet zawartości Analiza wydatków zakupowych obejmuje raport zawierający zestaw wskaźników. Te wskaźniki są wizualizowane jako wykresy, kafelki i tabele. Następująca tabela zawiera przegląd wizualizacji dostępnych w pakiecie zawartości.
 
 <table>
 <colgroup>
@@ -50,110 +50,110 @@ Analiza, że content pack zawiera raport, który zawiera zestaw wskaźników wyd
 </colgroup>
 <thead>
 <tr class="header">
-<th>Strony raportu</th>
+<th>Strona raportu</th>
 <th>Wykresy</th>
-<th>Płytki</th>
+<th>Kafelki</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Zakupu według dostawcy</td>
+<td>Zakupy wg dostawców</td>
 <td><ul>
-<li>10 najlepszych dostawców według zakupów (skumulowany wykres słupkowy)</li>
-<li>Całkowite zakupy według dostawców grupy / kraj / nazwa (wykres kołowy)</li>
-<li>Zakupy według dostawców grupy / kraj / nazwa (wykres słupkowy)</li>
-<li>Średnia zakupu według dostawcy grupy / kraj / nazwa (wykres słupkowy)</li>
+<li>10 najważniejszych dostawców wg wartości zakupów (wykres skumulowany słupkowy)</li>
+<li>Łączne zakupy wg grupy dostawców/kraju/nazwy (wykres kołowy)</li>
+<li>Zakupy wg grupy dostawców/kraju/nazwy (wykres kolumnowy)</li>
+<li>Średnie zakupy wg grupy dostawców/kraju/nazwy (wykres kolumnowy)</li>
 </ul></td>
 <td><ul>
 <li>Suma zakupów</li>
-<li>Wzrost zakupu r/r</li>
+<li>Wzrost zakupów r/r</li>
 <li>Łączna liczba dostawców</li>
-<li>Całkowita liczba aktywnych dostawców</li>
+<li>Łączna liczba aktywnych dostawców</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Zakup według produktu</td>
+<td>Zakupy wg produktów</td>
 <td><ul>
-<li>Zakupy według kategorii zaopatrzenia / nazwa produktu (wykres słupkowy)</li>
-<li>Całkowity zakup według kategorii zaopatrzenia / nazwa produktu (wykres kołowy)</li>
-<li>10 najlepszych produktów według zakupów (skumulowany wykres słupkowy)</li>
+<li>Zakupy wg kategorii zaopatrzenia/nazwy produktu (wykres kolumnowy)</li>
+<li>Łączne zakupy wg kategorii zaopatrzenia/nazwy produktu (wykres kołowy)</li>
+<li>10 najważniejszych produktów wg wartości zakupów (wykres skumulowany słupkowy)</li>
 </ul></td>
 <td><ul>
 <li>Łączna liczba produktów</li>
-<li>Łączna liczba produktów active procent całkowita liczba produktów</li>
-<li>Liczba produktów rachunkowości w 80% sprzedaży</li>
+<li>Procent aktywnych produktów w łącznej liczbie produktów</li>
+<li>Liczba produktów odpowiedzialnych za 80% zakupów</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Zakupu przez okres *</td>
+<td>Zakupy wg okresu*</td>
 <td><ul>
-<li>Zakupu przez miesiąc / dzień (wykres słupkowy)</li>
-<li>Rozbieżność r/r zbiorczej zakupu (wykres wodospadu)</li>
-<li>Łączny zakup wzrost r/r (wykres słupkowy)</li>
-<li>Instrukcja zaopatrzenia (macierz)</li>
+<li>Zakupy wg miesiąca/dnia (wykres kolumnowy)</li>
+<li>Odchylenie łącznych zakupów r/r (wykres kaskadowy)</li>
+<li>Wzrost łącznych zakupów r/r (wykres kolumnowy)</li>
+<li>Zestawienie zaopatrzenia (macierz)</li>
 </ul></td>
 <td><ul>
-<li>Wzrost zakupu r/r</li>
-<li>% Wzrostu zakupu r/r</li>
+<li>Wzrost zakupów r/r</li>
+<li>% wzrostu zakupów r/r</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Zakupu według dostawcy lokalizacji</td>
+<td>Zakupy wg lokalizacji dostawców</td>
 <td><ul>
-<li>Zakup według miast</li>
-<li>% Wzrostu r/r zakupu</li>
-<li>Zakupu przez kraj</li>
+<li>Zakupy wg miejscowości</li>
+<li>% wzrostu zakupów r/r</li>
+<li>Zakupy wg krajów</li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>Analiza wydatków zakupu według czasu</td>
+<td>Analiza wydatków zakupowych wg okresów</td>
 <td><ul>
-<li>Zakup bieżącego roku przez miesiąc / dzień (wykres liniowy)</li>
-<li>Zakup z bieżącego i poprzedniego roku (wykres wierszy i kolumn)</li>
+<li>Zakupy w bieżącym roku wg miesiąca/dnia (wykres liniowy)</li>
+<li>Zakupy w bieżącym i ubiegłym roku (wykres liniowy i kolumnowy)</li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Analiza przez dostawcę wydatków zakupu</td>
+<td>Analiza wydatków zakupowych wg dostawców</td>
 <td><ul>
-<li>Pierwsze 10% zakupu dostawcy zakupu (ścieżki)</li>
-<li>10 najlepszych dostawców z zwiększenia wydatków r/r</li>
-<li>10 najlepszych dostawców z zmniejszenie wydatków r/r</li>
+<li>% udziału 10 najważniejszych dostawców w zakupach (wykres lejkowy)</li>
+<li>10 dostawców z największym wzrostem wydatków r/r</li>
+<li>10 dostawców z największym spadkiem wydatków r/r</li>
 </ul></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
-\*Zakup tego roku i ubiegłego roku i wzrostu według kategorii zaopatrzenia
+\* Zakupy w tym i ubiegłym roku oraz wzrost według kategorii zaopatrzenia.
 
-## <a name="data-model-and-entities"></a>Model danych i podmiotów
-Dynamics 365 dla operacji danych jest używany w raporcie zamówienia zakupu spędzić zawartości pakiet do analiz. Te dane jest reprezentowany jako zagregowanych wskaźników, które są umieszczane w magazynie podmiot, który jest bazy danych Microsoft SQL, który jest zoptymalizowany pod kątem analytics. Aby uzyskać więcej informacji o magazynie encji, zobacz [Power BI integracji z magazynem encji w systemie Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) wpis w blogu. Wartość zagregowana pomiary w tym pakiecie zawartości są podzbiór agregacji miar, które były dostępne w module zakupu w systemie Microsoft Dynamics AX 2012 i Microsoft Dynamics 365 dla operacji 2012 R3. Aby przemieścić modułu zagregowanych wskaźników w magazynie encji, należy to zrobić rozmieszczenia. Aby uzyskać więcej informacji, zobacz procedurę dla agregacji miar w magazynie encji w tymczasowej [Power BI integracji z magazynem encji w systemie Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) wpis w blogu. Następujące kluczowe pomiary agregacji są dostępne bezpośrednio z jednostką wierszy faktury i są wykorzystywane jako podstawa content Pack.
+## <a name="data-model-and-entities"></a>Model i jednostki danych
+W raportach w pakiecie zawartości Analiza wydatków zakupowych są wykorzystywane dane programu Dynamics 365 for Operations. Te dane są przedstawiane jako zagregowane miary umieszczane w magazynie jednostek, który jest bazą danych programu Microsoft SQL zoptymalizowaną pod kątem analiz. Aby uzyskać więcej informacji o magazynie jednostek, zobacz wpis na blogu [Integracja usługi Power BI z magazynem jednostek w systemie Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Zagregowane miary w tym pakiecie zawartości są podzbiorem zagregowanych miar, które były dostępne w module Zakupy w systemach Microsoft Dynamics AX 2012 i Microsoft Dynamics 365 for Operations 2012 R3. Aby zagregowane miary modułu można było umieścić w magazynie jednostek, trzeba ustawić te miary jako wdrażalne. Aby uzyskać więcej informacji, zobacz procedurę umieszczania zagregowanych miar w magazynie jednostek we wpisie na blogu [Integracja usługi Power BI z magazynem jednostek w systemie Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Następujące najważniejsze zagregowane miary są dostępne bezpośrednio w jednostce Wiersze faktury i używane jako podstawa w pakiecie zawartości:
 
-| Jednostka        | Klucz zagregowanych wskaźników | Źródło danych dla usługi Dynamics 365 dla operacji | Pole              | opis                           |
+| Jednostka        | Najważniejsze zagregowane miary | Źródło danych programu Dynamics 365 for Operations | Pole              | opis                           |
 |---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
 | Wiersze faktury | Zakup                   | VendInvoiceTrans                            | SUM(LineAmountMST) | Kwota w walucie rozliczeniowej |
 
-W poniższej tabeli przedstawiono pomiary kluczy, które są obliczane w pakiecie zawartości z tej jednostki wierszy faktury.
+W poniższej tabeli przedstawiono najważniejsze miary, które są obliczane w pakiecie zawartości na podstawie jednostki Wiersze faktury.
 
 | Pomiar               | Obliczenie                                                                                         |
 |-----------------------|-----------------------------------------------------------------------------------------------------|
-| Bieżący rok zakupu | Zakup bieżącego roku = Suma ('Wierszy faktur'\[zakupu\])                                            |
-| Ostatni rok zakupu    | Zakupu ostatniego roku = OBLICZ (Suma ('Wierszy faktur'\[zakupu\]), SAMEPERIODLASTYEAR (dat\[data\])) |
-| Wzrost zakupu r/r   | Wzrost zakupu r/r = \[zakupu bieżącego roku\] — \[zakupu ostatniego roku\]                            |
+| Zakupy w bieżącym roku | Zakupy w bieżącym roku = SUM('Wiersze faktury'\[Zakupy\])                                            |
+| Zakupy w ubiegłym roku    | Zakupy w ubiegłym roku = CALCULATE(SUM('Wiersze faktury'\[Zakupy\]), SAMEPERIODLASTYEAR(Daty\[Data\])) |
+| Wzrost zakupów r/r   | Wzrost zakupów r/r = \[Zakupy w bieżącym roku\] – \[Zakupy w ubiegłym roku\]                            |
 
-Następujące wymiary klucza w pakiecie zawartości są używane jako filtry na fragmenty zagregowanych wskaźników, tak, że można osiągnąć większą szczegółowość i lepszy wgląd analitycznych.
+Następujące najważniejsze wymiary w pakiecie zawartości są używane jako filtry do dzielenia zagregowanych miar w celu uzyskania większej szczegółowości i lepszego wglądu analitycznego.
 
 | Jednostka                 | Przykłady atrybutów                                |
 |------------------------|-------------------------------------------------------|
-| Dostawcy                | Grup dostawców, kraju dostawcy lub regionów, nazwy dostawcy |
-| Produkty               | Numer produktu, nazwa produktu, nazwa grupy towaru        |
-| Kategorie zaopatrzenia | Kategoria zaopatrzenia, nazwy kategorii zaopatrzenia      |
+| Dostawcy                | Grupa dostawców, Kraj/region dostawcy, Nazwa dostawcy |
+| Produkty               | Numer produktu, Nazwa produktu, Nazwa grupy pozycji        |
+| Kategorie zaopatrzenia | Kategoria zaopatrzenia, Nazwa kategorii zaopatrzenia      |
 | Firmy         | Nazwa firmy                                     |
-| Daty                  | Dat, przesunięcie roku                                    |
+| Daty                  | Daty, Przesunięcie roku                                    |
 
-Domyślnie content pack zawiera dane dla bieżącego roku kalendarzowego. Można jednak zmienić filtr daty w sekcji filtry raportu. Można również zmienić filtr firmy.
+Domyślnie pakiet zawartości przestawia dane bieżącego roku kalendarzowego. Można jednak zmienić wartość filtra dat w sekcji filtrów raportu. Można również zmienić wartość filtra firm.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworzenia zawartości w narzędziu Power BI:

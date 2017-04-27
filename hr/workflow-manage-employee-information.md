@@ -1,6 +1,6 @@
 ---
-title: "Zarządzanie informacjami o pracownika za pomocą przepływów pracy"
-description: "W tym temacie wyjaśniono, jak możliwości przepływu pracy dla zasobów ludzkich można użyć do zarządzania informacji o pracownikach. Można na przykład skojarzyć przepływu pracy z pozycji i konfigurować procedurę zatwierdzania, który jest uruchamiany, gdy pracownicy zmienić ich rekord."
+title: "Zarządzanie informacjami o pracownikach za pomocą przepływów pracy"
+description: "W tym temacie wyjaśniono, jak za pomocą funkcji przepływów pracy dostępnych w module Zasoby ludzkie zarządzać informacjami o pracownikach. Można na przykład skojarzyć przepływ pracy ze stanowiskiem oraz skonfigurować przepływ pracy zatwierdzania, który jest uruchamiany, gdy pracownicy zmodyfikuje swój rekord."
 author: rschloma
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,11 +24,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-workflows-to-manage-employee-information"></a>Zarządzanie informacjami o pracownika za pomocą przepływów pracy
+# <a name="use-workflows-to-manage-employee-information"></a>Zarządzanie informacjami o pracownikach za pomocą przepływów pracy
 
-W tym temacie wyjaśniono, jak możliwości przepływu pracy dla zasobów ludzkich można użyć do zarządzania informacji o pracownikach. Można na przykład skojarzyć przepływu pracy z pozycji i konfigurować procedurę zatwierdzania, który jest uruchamiany, gdy pracownicy zmienić ich rekord.
+[!include[banner](includes/banner.md)]
 
-Możliwości przepływu pracy dla zasobów ludzkich zawiera wiele przepływów pracy zarządzania działania dotyczące zasobów ludzkich. Ponadto liczne opcje są dostępne, tak, że można modyfikować konkretnych przepływów pracy i skojarz je z hierarchii raportowania. Przepływy pracy są dostępne w celu zarządzania zmianami do kilku standardowych typów informacji o pracownikach. Przepływ pracy można skojarzyć ze stanowiskiem. Następnie jeśli pracownicy zmienić ich rekord pracownika, uruchomieniu przepływu pracy wymagającej zatwierdzenia przed zapisaniem nowych informacji. Przepływy pracy są wstępnie zdefiniowane dla następujących typów informacji, aby ułatwić efektywne zarządzanie zmiany i zachować dokładne dane pracowników:
+
+W tym temacie wyjaśniono, jak za pomocą funkcji przepływów pracy dostępnych w module Zasoby ludzkie zarządzać informacjami o pracownikach. Można na przykład skojarzyć przepływ pracy ze stanowiskiem oraz skonfigurować przepływ pracy zatwierdzania, który jest uruchamiany, gdy pracownicy zmodyfikuje swój rekord.
+
+Funkcjonalność przepływów pracy zawarta w module Zasoby ludzkie oferuje wiele przepływów pracy do zarządzania działaniami dotyczącymi zasobów ludzkich. Ponadto są dostępne liczne opcje umożliwiające modyfikowanie konkretnych przepływów pracy i ich kojarzenie z hierarchią raportowania. Dostępne są przepływy pracy pomagające zarządzać zmianami w kilku standardowych typach informacji o pracownikach. Przepływ pracy można skojarzyć ze stanowiskiem. Następnie jeśli pracownicy zmodyfikują swoje rekordy pracowników, będzie uruchamiany przepływ pracy, który wymaga zatwierdzenia, zanim nowe informacje zostaną zapisane. Przepływy pracy są wstępnie zdefiniowane dla następujących typów informacji, aby ułatwić efektywne zarządzanie zmianami i zachować rzetelność danych pracowników:
 
 -   Numery identyfikacyjne
 -   Kursy
@@ -39,33 +42,35 @@ Możliwości przepływu pracy dla zasobów ludzkich zawiera wiele przepływów p
 -   Doświadczenie w projekcie
 -   Umiejętności
 -   Stanowiska zaufania
--   Akcje zasobów ludzkich
--   Rejestracja kursu
+-   Akcje w module Zasoby ludzkie
+-   Rejestracja na kurs
 
-Kiedy pracownicy są zatrudniony, przeniesiony lub zakończone, przepływ pracy może zawierać proces recenzji. W ten sposób można poddać przeglądowi dokumentu lub warunki działania można zdefiniować w ramach przepływu pracy. Po zakończeniu procesu przeglądu dokumentu lub akcja jest zakończona, a przepływ pracy przenosi do ostatniego etapu zatwierdzania.
+Kiedy pracownicy są zatrudniani, przenoszeni lub zwalniani, przepływ pracy może zawierać proces weryfikacji. W ten sposób w ramach przepływu pracy można sprawdzić dokument lub zdefiniować warunki czynności. Po zakończeniu procesu weryfikacji następuje finalizacja dokumentu lub czynność, a przepływ pracy przechodzi do ostatniego etapu zatwierdzania.
 
-## <a name="associate-a-workflow-with-a-position-hierarchy"></a>Skojarzenie przepływu pracy z Hierarchia stanowisk
-Przepływ pracy można skojarzyć z dowolną hierarchię, którą należy skonfigurować. Na przykład jeśli pozycja jest skojarzony z macierzy hierarchii raportowania, może skonfigurować przepływu pracy, który wydatków dla danego projektu do realizacji projektu zamiast Menedżer pracownika, który jest skojarzony z tym stanowiskiem. Aby utworzyć nowy przepływ pracy lub zmodyfikować istniejący przepływ pracy, na **przepływu pracy zasobów ludzkich** kliknij przycisk **nowy**. Wybierz przepływ pracy na liście, aby uruchomić projektanta przepływów pracy. Projektant służy do tworzenia nowego przepływu pracy lub zmieniać kolejności kroków w istniejącego przepływu pracy. Po zmianie istniejącego przepływu pracy, zmiany zostaną zapisane jako nowa wersja. W związku z tym możesz zawsze wrócić do poprzedniej wersji Jeśli trzeba.
+## <a name="associate-a-workflow-with-a-position-hierarchy"></a>Kojarzenie przepływu pracy z hierarchią stanowisk
+Przepływ pracy można skojarzyć z dowolną skonfigurowaną hierarchią. Na przykład jeśli stanowisko jest skojarzone z macierzową hierarchią raportowania, można skonfigurować przepływ pracy, który kieruje wydatki danego projektu do kierownika projektu zamiast do menedżera pracownika skojarzonego z tym stanowiskiem. Aby utworzyć nowy przepływ pracy lub zmodyfikować istniejący przepływ pracy, na stronie **Przepływy pracy modułu Zasoby ludzkie** kliknij przycisk **Nowy**. Zaznacz przepływ pracy na liście, a zostanie uruchomiony projektant przepływów pracy. Za pomocą projektanta można utworzyć nowy przepływ pracy lub zmienić kroki w istniejącym przepływie pracy. Po modyfikacji istniejącego przepływu pracy zmiany zostaną zapisane jako nowa wersja. W związku z tym zawsze można wrócić do poprzedniej wersji, jeśli trzeba.
 
-## <a name="configure-a-human-resources-workflow"></a>Konfigurowanie przepływu pracy zasobów ludzkich
-Aby skonfigurować podstawowy przepływ pracy, który jest uruchamiany, gdy pracownicy żądać wprowadzenia zmian do ich osobistej identyfikacji, wykonaj następujące kroki.
+## <a name="configure-a-human-resources-workflow"></a>Konfigurowanie przepływu pracy dla modułu Zasoby ludzkie
+Aby skonfigurować podstawowy przepływ pracy uruchamiany w momencie, gdy pracownicy proszą o zmiany ich osobistych numerów identyfikacyjnych, wykonaj następujące czynności:
 
-1.  Na **przepływów pracy modułu zasobów ludzkich** kliknij przycisk **nowy**.
-2.  Na liście dostępnych przepływów pracy wybierz **numery identyfikacyjne**.
-3.  Kliknij **uruchomić** Aby uruchomić projektanta przepływów pracy, a następnie wprowadź swoją nazwę użytkownika i hasło, gdy zostanie wyświetlony monit.
-4.  Przeciągnij **zatwierdzić numer identyfikacyjny** element z listy elementów pracy do obszaru roboczego projektanta.
-5.  Połączyć element zatwierdzania do **Start** i **Zakończ**.
-6.  Kliknij dwukrotnie **Zatwierdź element**, a następnie kliknij prawym przyciskiem myszy, a następnie wybierz **właściwości**.
+1.  Na stronie **Przepływy pracy modułu Zasoby ludzkie** kliknij przycisk **Nowy**.
+2.  Na liście dostępnych przepływów pracy wybierz opcję **Numery identyfikacyjne**.
+3.  Kliknij przycisk **Uruchom**, aby uruchomić projektanta przepływów pracy, a następnie w odpowiedzi na monit wprowadź swoją nazwę użytkownika i hasło.
+4.  Przeciągnij element **Zatwierdź numer identyfikacyjny** z listy elementów przepływu pracy na kanwę projektanta.
+5.  Połącz element zatwierdzania z czynnościami **Rozpocznij** i **Zakończ**.
+6.  Kliknij dwukrotnie pozycję **Element zatwierdzania**, a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
 7.  Wykonaj następujące kroki, aby dodać instrukcje elementu pracy:
-    1.  Wybierz **przydziału**, a następnie wybierz **hierarchii** w obszarze Typ przydziału.
-    2.  Pod **hierarchii** zaznaczenie, wybierz **hierarchii można konfigurować**.
+    1.  Wybierz opcję **Przypisanie**, a następnie w polu typu przypisania wybierz opcję **Hierarchia**.
+    2.  W obszarze **Hierarchia** zaznacz opcję **Konfigurowalna hierarchia**.
     3.  Dodaj warunek zatrzymania i zamknij stronę.
 
-8.  Ukończ dodatkowymi instrukcjami (nie dodatkowych ostrzeżeń powinien istnieć).
-9.  Kliknij przycisk **Zapisz i zamknij**. Uaktywnij nowy przepływ pracy, gdy okno dialogowe zostanie wyświetlone, a następnie wybierz **uaktywnić**.
-10. Przejdź do **zasoby ludzkie**&gt;**pozycji**&gt;**pozycja typów hierarchii**.
-11. Wybierz **macierzy**.
-12. Dodaj **numer identyfikacyjny pracownika** przepływu pracy do listy.
+8.  Wykonaj wszelkie dodatkowe instrukcje (nie powinny być generowane żadne dodatkowe ostrzeżenia).
+9.  Kliknij przycisk **Zapisz i zamknij**. Gdy zostanie otwarte okno dialogowe, wybierz opcję **Uaktywnij**.
+10. Wybierz kolejno opcje **Zasoby ludzkie** &gt; **Stanowiska** &gt; **Typy hierarchii stanowisk**.
+11. Wybierz opcję **Macierz**.
+12. Dodaj przepływ pracy **Numer identyfikacyjny pracownika** do listy.
+
+
 
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-transaction-options"></a>Opcje transakcji środków trwałych
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano różne dostępne metody tworzenia transakcji na środkach trwałych.
 
 Istnieje możliwość skonfigurowania modułu Środki trwałe w celu integracji z modułami Księga główna, Rozrachunki z dostawcami, Rozrachunki z odbiorcami i Zaopatrzenie i sourcing. Ponadto towary w module Zarządzanie zapasami można przenieść do modułu Środki trwałeh, aby można było używać tych towarów wewnętrznie.
@@ -36,7 +39,7 @@ Istnieje możliwość skonfigurowania modułu Środki trwałe w celu integracji 
 Istnieje możliwość wprowadzania transakcji środków trwałych na stronie Załącznik arkusza. Ta strona może być otwierana ze strony Arkusz faktur. Stronę załącznika arkusza można też otworzyć ze strony arkusza zatwierdzania faktur. W polu Typ konta przeciwstawnego wybierz Środki trwałe. Następnie w polu Konto przeciwstawne wybierz numer środka trwałego. Na karcie Środki trwałe wprowadź wartości w polach Typ transakcji i Księga.
 
 ## <a name="accounts-receivable"></a>Rozrachunki z odbiorcami
-Transakcje środków trwałych można wprowadzić na stronie faktury niezależnej.  Na stronie faktury niezależnej w siatce wiersze faktury zaznacz wiersz towaru. Kliknij skróconą kartę Szczegóły wiersza. Wprowadź numer środka trwałego i księgę dla transakcji likwidacji. W przypadku faktur niezależnych, transakcja środków trwałych jest zawsze typu Likwidacja — sprzedaż.
+Istnieje możliwość wprowadzania transakcji środków trwałych na stronie Faktura niezależna.  Na stronie Faktura niezależna w siatce Wiersze faktury wybierz pozycję w wierszu. Kliknij skróconą kartę Szczegóły wiersza. Wprowadź numer środka trwałego i księgę dla transakcji likwidacji. W przypadku faktur niezależnych, transakcja środków trwałych jest zawsze typu Likwidacja — sprzedaż.
 
 ## <a name="procurement-and-sourcing"></a>Zaopatrzenie i sourcing
 Istnieje możliwość wprowadzania transakcji środków trwałych na stronie Zamówienie zakupu. Wprowadź wymagane informacje, aby utworzyć zamówienie zakupu, a następnie kliknij OK. Na stronie zamówienia zakupu kliknij skróconą kartę Szczegóły wiersza. Następnie, na karcie Środki trwałe wprowadź informacje o środku trwałym. 
@@ -65,6 +68,8 @@ Transakcje środków trwałych dowolnego typu można księgować na stronie Arku
 
 
 
-Aby uzyskać więcej informacji, zobacz [stałej integracji trwałych](fixed-asset-integration.md).
+Aby uzyskać więcej informacji, zobacz [Integracja środków trwałych](fixed-asset-integration.md).
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consumption-depreciation"></a>Amortyzacja według zużycia
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie metody amortyzacji Amortyzacja według zużycia.
 
 Jeśli podczas ustawiania profilu amortyzacji środków trwałych zaznaczono opcję **Zużycie** w polu **Metoda** na stronie **Profile amortyzacji**, środki trwałe będą przypisane do profilu amortyzacji na podstawie ich zużycia. Nie trzeba ustawiać wartość procentowych i interwałów na stronie **Profile amortyzacji**. Po utworzeniu profilu amortyzacji używającego metody Zużycie można ustawić metodę na różne sposoby.
@@ -64,5 +67,7 @@ Dla 31 stycznia ustawiono następujący współczynnik amortyzacji według zuży
 -   Szacowana ilość środka trwałego wynosi 2000.
 
 Propozycja amortyzacji na 31 stycznia jest w następująca: szacowana ilość x procent x Jednostka amortyzacji 2000 x 0,10 x 1,5 = 300
+
+
 
 

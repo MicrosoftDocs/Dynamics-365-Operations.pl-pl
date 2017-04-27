@@ -1,6 +1,6 @@
 ---
 title: "Omówienie systemu przepływu pracy"
-description: W tym artykule opisano system obiegu pracy w programie Microsoft Dynamics 365 dla operacji.
+description: "W tym artykule opisano system przepływu pracy dostępny w rozwiązaniu Microsoft Dynamics 365 for Operations."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-system-overview"></a>Omówienie systemu przepływu pracy
 
-W tym artykule opisano system obiegu pracy w programie Microsoft Dynamics 365 dla operacji.
+[!include[banner](../includes/banner.md)]
+
+
+W tym artykule opisano system przepływu pracy dostępny w rozwiązaniu Microsoft Dynamics 365 for Operations.
 
 <a name="what-is-workflow"></a>Co to jest przepływ pracy?
 -----------------
@@ -34,7 +37,7 @@ W tym artykule opisano system obiegu pracy w programie Microsoft Dynamics 365 dl
 Termin *przepływ pracy* można definiować na dwa sposoby: jako system i jako proces biznesowy.
 ### <a name="workflow-is-a-system"></a>Przepływ pracy jest systemem
 
-Przepływ pracy jest system, który jest instalowany z systemu Dynamics 365 dla operacji i uruchamiany na serwerze obiektów aplikacji (AOS). System przepływu pracy zawiera funkcjonalność, której można używać do tworzenia pojedynczych przepływów pracy, czyli procesów biznesowych.
+Przepływ pracy to system instalowany razem z programem Dynamics 365 for Operations i uruchamiany na serwerze obiektów aplikacji (AOS). System przepływu pracy zawiera funkcjonalność, której można używać do tworzenia pojedynczych przepływów pracy, czyli procesów biznesowych.
 
 ### <a name="workflow-is-a-business-process"></a>Przepływ pracy jest procesem biznesowym
 
@@ -46,6 +49,7 @@ Używanie systemu przepływu pracy w organizacji ma kilka zalet:
 -   **Spójność procesów** — Możesz zdefiniować sposób przetwarzania określonych dokumentów, takich jak zapotrzebowania zakupu i raporty z wydatków. System przepływu pracy zapewnia, że dokumenty będą przetwarzane i zatwierdzane w spójny i wydajny sposób.
 -   **Widoczność procesu** — Możesz śledzić stan, historię i miary wydajności określonego wystąpienia przepływu pracy. Pozwala to na określanie, czy zmiany powinny zostać wprowadzone do przepływu pracy w celu poprawienia wydajności.
 -   **Scentralizowana lista prac** — użytkownicy mogą wyświetlić scentralizowaną listę prac, aby przeglądać przypisane do nich zadania i zatwierdzenia przepływu pracy.
+
 
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="replenishment"></a>Uzupełnianie zapasów
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano strategie uzupełniania zapasów, które są dostępne dla magazynów używających funkcji dostępnych w module Zarządzanie magazynem.
 
 W tym artykule opisano strategie uzupełniania zapasów, które są dostępne dla magazynów używających funkcji dostępnych w module Zarządzanie magazynem. Informacje te nie mają zastosowania do aplikacji magazynowej dostępnej w module Zarządzanie zapasami. Dostępne są trzy strategie uzupełniania zapasów:
@@ -67,6 +70,8 @@ Strategia uzupełniania zapasów popytu ładunku sumuje popyt kilku ładunków i
 | Profile lokalizacji       | Profile lokalizacji są wymagane w celu utworzenia lokalizacji.                                                                                                                                                                                       |
 | Dyrektywy lokalizacji     | Dyrektywy lokalizacji są wymagane w celu skierowania pracy do lokalizacji, w których jest wymagane uzupełnianie zapasów i z których będą pobierane zapasy.                                                                                     |
 | Szablony pracy          | Szablony pracy typu **Uzupełnianie zapasów** są wymagane w celu utworzenia pracy uzupełniania zapasów, która spowoduje przeniesienie zapasów do żądanych lokalizacji.                                                                                           |
+
+
 
 
 

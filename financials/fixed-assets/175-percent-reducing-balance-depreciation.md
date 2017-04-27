@@ -54,9 +54,9 @@ W przypadku wybrania opcji **Kalendarzowy** jako rok amortyzacji, dostępne są 
 
 ### <a name="fiscal"></a>Fiskalny
 
-W przypadku wybrania opcji **Obrachunkowy** w polu **Rok amortyzacji** amortyzacja degresywna 175% jest obliczana na podstawie roku obrachunkowego z kalendarza obrachunkowego określonego dla księgi lub wybranego na stronie **Księga**. Kalendarze obrachunkowe ustawia się na stronie **Kalendarze obrachunkowe**. Aby uzyskać więcej informacji, zobacz [kalendarze obrachunkowe, lata finansowe i okresy.](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md).
+W przypadku wybrania opcji **Obrachunkowy** w polu **Rok amortyzacji** amortyzacja degresywna 175% jest obliczana na podstawie roku obrachunkowego z kalendarza obrachunkowego określonego dla księgi lub wybranego na stronie **Księga**. Kalendarze obrachunkowe ustawia się na stronie **Kalendarze obrachunkowe**. Aby uzyskać więcej informacji, zobacz [Kalendarze, lata i okresy obrachunkowe](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md).
 
-Na przykład dla roku obrachunkowego 1 lipca do 30 czerwca, obliczanie amortyzacji rozpoczyna się 1 lipca. Rok obrachunkowy może być dłuższy lub krótszy niż 12 miesięcy. Amortyzacja jest automatycznie korygowana dla każdego okresu obrachunkowego, a długość kolejnego roku obrachunkowego jest określona przez okresy obrachunkowe zdefiniowane na stronie **Kalendarze obrachunkowe**. 
+Na przykład dla roku obrachunkowego od 1 lipca do 30 czerwca włącznie obliczanie amortyzacji rozpocznie się 1 lipca. Rok obrachunkowy może być dłuższy lub krótszy niż 12 miesięcy. Amortyzacja jest automatycznie korygowana dla każdego okresu obrachunkowego, a długość kolejnego roku obrachunkowego jest określona przez okresy obrachunkowe zdefiniowane na stronie **Kalendarze obrachunkowe**. 
 
 W przypadku wybrania opcji **Fiskalny** jako rok amortyzacji, w polu **Częstotliwość okresu** dostępne są następujące opcje:
 
@@ -81,6 +81,6 @@ Metoda amortyzacji degresywnej 175% dzieli wartość 175% między lata okresu u�
 | Rok 3 | 4,225 × 35% = 1,478.75                        | 5,225 – 1,478.75 = 3,746.25 | 4,225 – 1,478.75 = 2,746.25           |
 
 > [!NOTE] 
-> Zazwyczaj, kiedy kwotę, która jest obliczana przy użyciu zmniejszenie metody amortyzacji degresywnej 175% stanie się niższa od kwoty, która może być obliczona za pomocą metody liniowej jest konwersja do metody liniowej za pozostały okres użytkowania.
+> Zwykle kiedy kwota, która jest obliczana przy użyciu metody amortyzacji degresywnej 175%, stanie się niższa od kwoty, która może zostać obliczona za pomocą metody liniowej, następuje przejście do metody liniowej dla pozostałego okresu użytkowania.
 
 

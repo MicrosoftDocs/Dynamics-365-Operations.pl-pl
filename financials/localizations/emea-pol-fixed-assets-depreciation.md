@@ -1,6 +1,6 @@
 ---
-title: "Amortyzację środków trwałych dla Polski"
-description: "Ten temat zawiera informacje o amortyzacji środków trwałych dla osób prawnych w Polsce."
+title: "Amortyzacja środków trwałych dla Polski"
+description: "Ten temat zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,50 +25,53 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="fixed-assets-depreciation-for-poland"></a>Amortyzację środków trwałych dla Polski
+# <a name="fixed-assets-depreciation-for-poland"></a>Amortyzacja środków trwałych dla Polski
 
-Ten temat zawiera informacje o amortyzacji środków trwałych dla osób prawnych w Polsce.
+[!include[banner](../includes/banner.md)]
 
-Funkcje amortyzacji środków trwałych, które są oparte na wymagania prawne w Polsce:
+
+Ten temat zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce.
+
+Funkcje amortyzacji środków trwałych oparte na wymaganiach prawnych w Polsce obejmują następujące elementy:
 
 -   Metody amortyzacji
 -   Poziom procentu amortyzacji
 -   Grupy amortyzacji
--   Tego samego dnia, co jest opcją w propozycji amortyzacji, aby wypełnić **daty** w polu wartości we wszystkich wierszach dziennika z **do tej pory** wartość, która jest zdefiniowana w propozycji amortyzacji.
+-   Ta sama data, co jest opcją w propozycji amortyzacji. Powoduje ona wypełnianie pola **Data** we wszystkich wierszach arkusza wartością z pola **Do dnia** zdefiniowanego w propozycji amortyzacji.
 
-## <a name="polandspecific-depreciation-methods"></a>Polandspecific metody amortyzacji
-Osoby prawne w Polsce w przypadku metod amortyzacji dodatkowe, reguł i ustawień, które są używane do spełnienia wymogów rachunkowości danego środka trwałego. Zgodnie z przepisami Polski amortyzacja jest obliczana przy użyciu stawkę amortyzacji rocznej. Aby uzyskać więcej informacji na temat metod amortyzacji, zobacz [amortyzacja środka trwałego](../fixed-assets/fixed-asset-depreciation.md). Dostępne dla osób prawnych w Polsce są następujących metod amortyzacji:
+## <a name="polandspecific-depreciation-methods"></a>Metody amortyzacji specyficzne dla Polski
+Dla firm w Polsce istnieją dodatkowe metody, reguły i ustawienia amortyzacji, które są używane do spełnienia określonych wymogów rachunkowości środków trwałych. Zgodnie z polskimi przepisami amortyzacja jest obliczana przy użyciu rocznej stawki amortyzacji. Aby uzyskać więcej informacji na temat metod amortyzacji, zobacz [Amortyzacja środka trwałego](../fixed-assets/fixed-asset-depreciation.md). Dla firm w Polsce są dostępne następujące metody amortyzacji:
 
--   **Degresywna (Polska)** – ta metoda amortyzacji uważa specjalne lokalnych przepisów prawnych o wartości środków trwałych, zmienia podczas rozpoznawania część roku obrachunkowego i kosztów. Podstawa dla tej metody amortyzacji obejmuje następujące typy transakcji:
+-   **Degresywna (Polska)** — Ta metoda amortyzacji uwzględnia lokalne specjalne wymogi prawne dotyczące zmiany wartości środków trwałych w trakcie roku obrachunkowego i rozpoznawania części kosztowej. Podstawa dla tej metody amortyzacji uwzględnia następujące typy transakcji:
     -   Nabycie
     -   Korekta wartości początkowej
-    -   Zapisz do końca
-    -   Zapisz
+    -   Zwiększenie
+    -   Zmniejszenie
     -   Przeszacowanie
     -   Poprzednia amortyzacja
--   **Liniowa (Polska)** — amortyzacja jest obliczana dla pierwszego okresu na podstawie liczby dni, w których użyto składnika aktywów. Na przykład jeśli środek trwały został zakupiony 15 stycznia i okres amortyzacji rozpoczyna się w dniu 1 stycznia, amortyzacja będzie obliczana dla połowie okresu. Podstawa dla tej metody amortyzacji obejmuje następujące typy transakcji:
+-   **Liniowa (Polska)** — Amortyzacja jest obliczana dla pierwszego okresu na podstawie liczby dni używania środka trwałego. Na przykład jeśli środek trwały zakupiono 15 stycznia, a okres amortyzacji rozpoczyna się 1 stycznia, amortyzacja jest obliczana dla połowy okresu. Podstawa dla tej metody amortyzacji uwzględnia następujące typy transakcji:
     -   Nabycie
     -   Korekta wartości początkowej
-    -   Zapisz do końca
-    -   Zapisz
+    -   Zwiększenie
+    -   Zmniejszenie
     -   Przeszacowanie
--   **Liniowa procentowa (Polska)** -okres użytkowania jest obliczany, wprowadzając wartość procentową i podzielenie 100 procent przez wartość procentową wprowadzona. Na przykład jeśli wprowadzono 20 procent, 100 procent podzielona przez 20 procent jest 5 lat serwisu. Podstawa dla tej metody amortyzacji obejmuje następujące typy transakcji:
+-   **Liniowa procentowa (Polska)** — Okres użytkowania jest obliczany przez wprowadzenie wartości procentowej i podzielenie 100% przez wprowadzony procent. Na przykład jeśli wprowadzono 20%, 100% podzielone przez 20% to 5 lat użytkowania. Podstawa dla tej metody amortyzacji uwzględnia następujące typy transakcji:
     -   Nabycie
     -   Korekta wartości początkowej
-    -   Zapisz do końca
-    -   Zapisz
+    -   Zwiększenie
+    -   Zmniejszenie
     -   Przeszacowanie
 
-Aby uzyskać więcej informacji na temat metod amortyzacji, zobacz [amortyzacja środka trwałego](../fixed-assets/fixed-asset-depreciation.md).
+Aby uzyskać więcej informacji na temat metod amortyzacji, zobacz [Amortyzacja środka trwałego](../fixed-assets/fixed-asset-depreciation.md).
 
-## <a name="depreciation-percent-level-parameter"></a>Parametr poziom procentu amortyzacji
-Zmniejszenie salda (Polska) i prostych linii użycia metody amortyzacji wartość procentowa (Polska) **poziom procentu amortyzacji** w **ustalone parametry aktywów** strony. To pole można wybrać, jeśli poziom procentu amortyzacji powinien on z metodą amortyzacji lub pojedynczego środka trwałego do obliczania amortyzacji:
+## <a name="depreciation-percent-level-parameter"></a>Parametr Poziom procentu amortyzacji
+Metody amortyzacji Degresywna (Polska) i Liniowa procentowa (Polska) używają pola **Poziom procentu amortyzacji** znajdującego się na stronie **Parametry środków trwałych**. To pole pozwala wybrać, czy na potrzeby obliczenia amortyzacji poziom procentu amortyzacji ma być pobierany z metody amortyzacji czy z konkretnego środka trwałego:
 
--   **Profil (standardowy)** — wybierz tę opcję, aby użyć procent z ** ** profilu amortyzacji.
--   **Księga środków trwałych** — wybierz tę opcję, aby używać tej samej metody amortyzacji. Amortyzacja będzie obliczana przy użyciu wartości procentowej w księdze środków trwałych.
+-   **Profil (standardowy)** — Wybierz tę opcję, aby używać wartości procentowej z** **profilu amortyzacji.
+-   **Księga środków trwałych** — Wybierz tę opcję, aby używać tej samej metody amortyzacji. Amortyzacja będzie obliczana przy użyciu wartości procentowej z księgi środków trwałych.
 
 ## <a name="depreciation-groups"></a>Grupy amortyzacji
-Osoby prawne w Polsce można połączyć grupy amortyzacji środków trwałych. Grupy amortyzacji są definiowane dla księgi środka trwałego określić szczegóły dotyczące środków trwałych, takich jak rosnący współczynnik Współczynnik alternatywny i limit kosztu. Jeśli grupa amortyzacji jest przypisany do środka trwałego, grupy amortyzacji kontroluje kwoty amortyzacji za pomocą rosnący współczynnik, przez którą mnożone jest kwota amortyzacji. Tworzenie lub edytowanie następujących grup amortyzacji na **grupy amortyzacji** strony.
+Firmy w Polsce mogą łączyć środki trwałe z grupami amortyzacji. Grupy amortyzacji są definiowane dla księgi środków trwałych w celu określenia szczegółów środków trwałych, takich jak współczynnik podwyższający, współczynnik alternatywny i limit kosztu. Jeśli grupa amortyzacji jest przypisana do środka trwałego, kontroluje kwotę amortyzacji za pomocą współczynnika podwyższającego, przez który jest mnożona kwota amortyzacji. Na stronie **Grupy amortyzacji** można tworzyć i edytować następujące grupy amortyzacji:
 
 <table>
 <colgroup>
@@ -77,32 +80,34 @@ Osoby prawne w Polsce można połączyć grupy amortyzacji środków trwałych. 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Field name</strong></td>
-<td><strong>Description</strong></td>
+<td><strong>Nazwa pola</strong></td>
+<td><strong>Opis</strong></td>
 </tr>
 <tr class="even">
-<td><strong>Start date</strong></td>
-<td>Data, że wartość dopuszczalna Współczynnik podwyższający i koszt będzie używany.</td>
+<td><strong>Data początkowa</strong></td>
+<td>Dzień, w którym zostaną użyte wartości współczynnika podwyższającego i limitu kosztu.</td>
 </tr>
 <tr class="odd">
-<td><strong>Increasing factor</strong></td>
-<td>Czynnikiem, który mnoży kwotę amortyzacji. Rosnący współczynnik można skonfigurować, gdy alternatywnego profilu amortyzacji (Współczynnik alternatywny) lub profil amortyzacji dodatkowej (współczynnik dodatkowy) są używane.</td>
+<td><strong>Współczynnik podwyższający</strong></td>
+<td>Wskaźnik, przez który jest mnożona kwota amortyzacji. Współczynnik podwyższający można skonfigurować, gdy jest używany profil amortyzacji alternatywnej (współczynnik alternatywny) lub profil amortyzacji dodatkowej (współczynnik dodatkowy).</td>
 </tr>
 <tr class="even">
-<td><strong>Alternative factor</strong></td>
+<td><strong>Współczynnik alternatywny</strong></td>
 <td>Alternatywny współczynnik wartości amortyzacji.</td>
 </tr>
 <tr class="odd">
-<td><strong>Cost limit</strong></td>
-<td>Kwota ceny nabycia, która zostanie zaksięgowana na konto odrębne — koszt amortyzacji. Kwoty do zaksięgowania na koncie — koszt amortyzacji obliczany jest w trakcie Propozycja amortyzacji, która dzieli obliczeń Pełna amortyzacja na dwa wiersze:
+<td><strong>Limit kosztu</strong></td>
+<td>Kwota ceny nabycia, która zostanie zaksięgowana na osobnym koncie amortyzacji niekosztowej. Kwoty do zaksięgowania na koncie amortyzacji niekosztowej są obliczane w trakcie formułowania propozycji amortyzacji, która dzieli pełne obliczenie amortyzacji na dwa wiersze:
 <ul>
-<li><strong>(Dostosowane) Amortyzacja</strong> -kwota Pełna amortyzacja obliczona na podstawie konfiguracji księgi środków trwałych minus części związanych z amortyzacji (część = limitu kosztów podzielona przez podstawa amortyzacji). Amortyzacja ta jest księgowana na kontach dla amortyzacji.</li>
-<li><strong>Część niekosztowa amortyzacji</strong> - część amortyzacji związane z limitu kosztów. Amortyzacja ta jest księgowana na kontach — koszt amortyzacji. Aby skonfigurować konta — koszt amortyzacji, otwórz <strong>aktywa trwałe</strong>&gt;<strong>instalacji</strong>&gt;<strong>stałej księgowania środków trwałych</strong> profile, a następnie wybierz <strong>Amortyzacja niekosztowa</strong> w <strong>konto księgowe</strong> skróconej.</li>
+<li><strong>(Skorygowana) Amortyzacja</strong> — Pełna kwota amortyzacji obliczona na podstawie konfiguracji w księdze środków trwałych minus część związana z amortyzacją niekosztową (część = limit kosztu podzielony przez podstawę amortyzacji). Ta amortyzacja jest księgowana na kontach amortyzacji.</li>
+<li><strong>Część niekosztowa amortyzacji</strong> - Część amortyzacji związana z limitem kosztu. Ta amortyzacja jest księgowana na kontach amortyzacji niekosztowej. Aby skonfigurować konta amortyzacji niekosztowej, wybierz kolejno opcje <strong>Środki trwałe</strong> &gt; <strong>Ustawienia</strong> &gt; <strong>Profile księgowania środków trwałych</strong>, a następnie na skróconej karcie <strong>Konto księgowe</strong> wybierz opcję <strong>Amortyzacja niekosztowa</strong>.</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
  
+
+
 
 

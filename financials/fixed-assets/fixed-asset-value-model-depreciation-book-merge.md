@@ -1,6 +1,6 @@
 ---
 title: "Scalenie funkcjonalności modeli ewidencji i księgi amortyzacji środków trwałych"
-description: "W poprzednich wersjach wystąpiły dwie koncepcje wyceny dla środków trwałych — modeli ewidencji oraz ksiąg amortyzacji. W programie Microsoft Dynamics 365 dopuszczenia 1611 operacji wartość modelu funkcjonalności i księgi amortyzacji zostały scalone w pojedynczej koncepcja, która jest znany jako książkę."
+description: "W poprzednich wersjach istniały dwie koncepcje wyceny środków trwałych: modele ewidencji i księgi amortyzacji. W programie Microsoft Dynamics 365 for Operations w wydaniu 1611 funkcje modeli ewidencji i ksiąg amortyzacji zostały scalone w pojedynczy obiekt zwany księgą."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Scalenie funkcjonalności modeli ewidencji i księgi amortyzacji środków trwałych
 
-W poprzednich wersjach wystąpiły dwie koncepcje wyceny dla środków trwałych — modeli ewidencji oraz ksiąg amortyzacji. W programie Microsoft Dynamics 365 dopuszczenia 1611 operacji wartość modelu funkcjonalności i księgi amortyzacji zostały scalone w pojedynczej koncepcja, która jest znany jako książkę.
+[!include[banner](../includes/banner.md)]
 
-Nowa funkcjonalność księgi opiera się na wcześniejszej funkcjonalności modelu ewidencji, ale także zawiera wszystkie funkcje dostępne wcześniej tylko w księgach amortyzacji. [![Księgę jako scalanie funkcję księgi amortyzacji i model wartość](./media/fixed-assets.png)](./media/fixed-assets.png) z powodu tej korespondencji seryjnej, można teraz użyć pojedynczy zestaw stron, zapytania i raporty dla wszystkich procesów środka trwałego. Tabele w tym temacie opisują wcześniejsze funkcje ksiąg amortyzacji i modeli ewidencji oraz nową funkcjonalność ksiąg.
+
+W poprzednich wersjach istniały dwie koncepcje wyceny środków trwałych: modele ewidencji i księgi amortyzacji. W programie Microsoft Dynamics 365 for Operations w wydaniu 1611 funkcje modeli ewidencji i ksiąg amortyzacji zostały scalone w pojedynczy obiekt zwany księgą.
+
+Nowa funkcjonalność księgi opiera się na wcześniejszej funkcjonalności modelu ewidencji, ale także zawiera wszystkie funkcje dostępne wcześniej tylko w księgach amortyzacji. [![Księga jako narzędzie powstałe ze scalenia modeli ewidencji i ksiąg amortyzacji](./media/fixed-assets.png)](./media/fixed-assets.png) Ze względu na to scalenie można teraz używać jednego zbioru stron, zapytań i raportów dla wszystkich procesów związanych ze środkami trwałymi. Tabele w tym temacie opisują wcześniejsze funkcje ksiąg amortyzacji i modeli ewidencji oraz nową funkcjonalność ksiąg.
 
 ## <a name="setup"></a>Konfiguracja
 Domyślnie zapisy ksiąg są księgowane do księgi głównej (KG) i księgi podrzędnej środków trwałych. Księgi mają nową funkcję **Księguj w księdze głównej**, która pozwala wyłączyć księgowanie w księdze głównej i księgować tylko w księdze podrzędnej środków trwałych. Ta funkcja jest podobna do wcześniejszego zachowania funkcji księgowania stosowanego w księgach amortyzacji. Konfiguracja arkuszy ma nową warstwę księgowania o nazwie Brak. Tę warstwę księgowania dodano specjalnie dla transakcji na środkach trwałych. Aby zaksięgować transakcje dla ksiąg, które nie księgują w KG, należy użyć arkusza, w którym została ustawiona warstwa księgowania **Brak**.
@@ -66,5 +69,7 @@ Zapytania i raporty obsługują wszystkie księgi. Raporty, które nie są uwzgl
 
 ## <a name="upgrade"></a>Uaktualnienie
 Proces uaktualniania spowoduje przeniesienie istniejących ustawień i wszystkich istniejących transakcji do nowej struktury księgi. Modele ewidencji pozostaną w swoim obecnym kształcie, jako księgi powodujące księgowanie w księdze głównej. Natomiast księgi amortyzacji zostaną przeniesione do księgi, która w opcji **Księguj w księdze głównej** ma wartość **Nie**. Arkusze ksiąg amortyzacji zostaną przeniesiona do arkusza księgi głównej, w której ustawiono warstwę księgowania **Brak**.
+
+
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-element-dimensions"></a>Wymiary składników kosztów
 
+[!include[banner](../includes/banner.md)]
+
+
 Wymiary składników kosztów są jednym z filarów rachunku kosztów. Służą do kategoryzowania i śledzenia, dokąd płyną koszty. 
 
 Składnik kosztu odnosi się do elementu istotnego dla kosztów w planie kont. Zasadniczo może to być element dowolnego typu na najniższym poziomie w przedsiębiorstwie, dokąd mogą płynąć koszty. Pod względem koncepcyjnym składnikami kosztów mogą być tak różne elementy, jak konta księgowe i wszystkie zasoby związane z kosztami. Obecnie moduł Rachunek kosztów obsługuje konta księgowe.
@@ -64,12 +67,14 @@ Istnieją dwa typy składników kosztów: podstawowe i podrzędne. W poniższej 
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Wymiary składników kosztów i elementy członkowskie wymiarów składników kosztów
 Składniki kosztów są określane jako *wymiary składników kosztów* . Wartości poszczególnych wymiarów są nazywane *elementami członkowskimi wymiarów składników kosztów*. Na przykład masz strukturę amerykańskiego planu kont (COA), która jest podstawą do sprawozdawczości ustawowej. Ten plan kont służy jako wymiar składników kosztów. Konta, czyli podstawowe składniki kosztów, są przedstawiane jako elementy członkowskie wymiaru składników kosztów w rachunku kosztów. Poniższy zrzut ekranu przedstawia przykład kont głównych jako wymiaru składników kosztów, gdzie faktyczne konta główne są elementami członkowskimi wymiaru składników kosztów. 
 
-[![wymiary elementu koszt](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![cost-element-dimensions](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Importowanie elementów członkowskich wymiarów składników kosztów za pośrednictwem łączników danych
 Aby ułatwić sobie konfigurowanie elementów członkowskich wymiarów składników kosztów w module Rachunek kosztów, można używać łączników danych wbudowanych w systemie lub utworzonych samodzielnie do podstawowych składników kosztów z jednego lub więcej systemów źródłowych.
 
 ## <a name="implementation-considerations"></a>Uwagi dotyczące implementacji
 Składniki kosztów reprezentują najniższy poziom szczegółów kosztów, dlatego podczas implementowania struktury składników kosztów należy się upewnić, że są uwzględnione wszystkie składniki kosztów wymagane w sprawozdawczości dla kierownictwa. Może być trudne znalezienie odpowiedniej liczby składników kosztów na potrzeby kontroli kosztów. Posiadanie tysięcy składników kosztów może utrudnić kontrolowanie ich wszystkich. Dlatego alternatywnie można grupować składniki kosztów i zarządzać kontrolą kosztów na poziomie zbiorczym.
+
+
 
 

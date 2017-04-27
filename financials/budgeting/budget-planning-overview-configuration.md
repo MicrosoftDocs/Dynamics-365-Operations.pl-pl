@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-overview"></a>Przegląd planowania budżetu
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera wprowadzenie do koncepcji planowania budżetu oraz informacje pomocne w konfigurowaniu planowania budżetu i odnośnych procesów.
 
 <a name="overview-of-budget-planning"></a>Przegląd planowania budżetu
@@ -34,7 +37,7 @@ Ten artykuł zawiera wprowadzenie do koncepcji planowania budżetu oraz informac
 
 Planowanie budżetu to proces przygotowywania budżetów, które zostaną zaimplementowane przez organizację. Organizacja może konfigurować planowanie budżetu, a następnie konfigurować procesy planowania budżetu, zgodnie z zasadami, procedurami i wymaganiami organizacji dotyczącymi przygotowania budżetu. 
 
-Gdy zrozumieć pojęcia i terminologię, które są używane w programie Microsoft Dynamics 365 dla operacji będzie łatwiejsze do wdrożenia w organizacji planowania budżetu.
+Gdy znasz pojęcia i terminologię używaną w programie Microsoft Dynamics 365 for Operations, implementacja planowania budżetu w organizacji jest łatwiejsza.
 
 ### <a name="key-terms"></a>Kluczowe terminy
 
@@ -44,7 +47,7 @@ Gdy zrozumieć pojęcia i terminologię, które są używane w programie Microso
 -   **Etapy planowania budżetu** — etapy planowania budżetu definiują kroki planu budżetu od pomysłu do ostatecznego zatwierdzenia. Etapy planowania budżetu są organizowane w przepływy pracy dla planowania budżetu.
 -   **Przepływy pracy planowania budżetu** — przepływy pracy planowania budżetu obejmują i definiują etapy planowania budżetu. Przepływy pracy planowania budżetu są skojarzone z przepływami pracy Budżetowanie. Przepływy pracy Budżetowanie są zautomatyzowanymi i ręcznymi procesami, które przenoszą plany budżetu przez etapy planowania budżetu.
 
-[![Terminologia planowania budżetu](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
+[![Terminologia związana z planowaniem budżetu](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### <a name="common-tasks"></a>Zadania wspólne
 
@@ -55,7 +58,7 @@ Planowania budżetu można używać do wykonywania następujących zadań:
 -   Automatyczne wysyłanie planów budżetu, wraz z arkuszami, uzasadnieniami i innymi załącznikami, do przejrzenia i zatwierdzenia.
 -   Konsolidowanie wielu planów budżetu z niższego poziomu organizacji do jednego nadrzędnego planu budżetu na wyższym poziomie w organizacji. Można również opracować pojedynczy plan budżetu na wyższym poziomie organizacji i zaalokować budżet do niższych poziomów organizacji.
 
-Planowanie budżetu jest zintegrowane z innych Microsoft Dynamics 365 dla modułów operacji. Pozwala to przenieść informacje z poprzednich budżetów, rzeczywistych wydatków, środków trwałych i zasobów ludzkich. Planowanie budżetu jest także zintegrowane z programami Microsoft Excel i Microsoft Word, dzięki czemu można użyć tych narzędzi do pracy z danymi planowania budżetu. Na przykład, menedżer budżetu może wyeksportować wniosek budżetowy działu ze scenariusza planu budżetu do arkusza programu Excel. Dane można analizować, aktualizować i obrazować na wykresie w arkuszu, a następnie publikować z powrotem do wierszy planu budżetu.
+Planowanie budżetu jest zintegrowane z innymi modułami programu Microsoft Dynamics 365 for Operations. Pozwala to przenieść informacje z poprzednich budżetów, rzeczywistych wydatków, środków trwałych i zasobów ludzkich. Planowanie budżetu jest także zintegrowane z programami Microsoft Excel i Microsoft Word, dzięki czemu można użyć tych narzędzi do pracy z danymi planowania budżetu. Na przykład, menedżer budżetu może wyeksportować wniosek budżetowy działu ze scenariusza planu budżetu do arkusza programu Excel. Dane można analizować, aktualizować i obrazować na wykresie w arkuszu, a następnie publikować z powrotem do wierszy planu budżetu.
 
 ## <a name="configuring-budget-planning"></a>Konfigurowanie planowania budżetu
 Strona **Konfiguracja planowania budżetu** zawiera większość ustawień, które są wymagane do tworzenia planowania budżetu. W poniższych sekcjach opisano niektóre kluczowe czynniki, o których trzeba pamiętać podczas konfigurowania planowania budżetu. Po zakończeniu konfiguracji można ustawić procesy planowania budżetu.
@@ -64,9 +67,9 @@ Strona **Konfiguracja planowania budżetu** zawiera większość ustawień, któ
 
 Opcjonalnym, ale zalecanym pierwszym krokiem jest utworzenie schematu zawierającego procedury opracowywania budżetu organizacji. Metoda tworzenia takiego schematu jest dowolna. Na poniższej ilustracji pokazano ogólny przykład, w którym dla różnych poziomów organizacji tworzone są oddzielne przepływy pracy. Dla każdego przepływu pracy definiowane są etapy, a do każdego etapu przypisywane są określone scenariusze z danymi budżetowymi. Wykonywane są zadania przenoszenia danych z jednego etapu do następnego Na przykład kwoty mogą być przydzielane lub agregowane na różnych kontach, zatwierdzeniach lub innych dokumentach kontrolnych. W tym przykładzie kursywa oznacza scenariusz niedostępny do edycji na danym etapie lub dane archiwalne albo zatwierdzone na wcześniejszym etapie, które z tego powodu nie powinny być zmieniane. 
 
-[![Schemat ogólny planowania budżetu](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
+[![Ogólny schemat planowania budżetu](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
-W poniższym przykładzie siedziby głównej oszacowania początkowych linii bazowej kwot budżetu i rozprowadza je do działu sprzedaży. Następnie działy sprzedaży prognozują i przesyłają prognozy z powrotem do centrali, gdzie menedżer budżetu agreguje je i dostosowuje. Na koniec menedżer budżetu wysyła skorygowane kwoty budżetu do CFO w celu sprawdzenia, wprowadzenia ostatnich korekt i ostatecznego zatwierdzenia. 
+W poniższym przykładzie centrala firmy prognozuje wstępne kwoty podstawowe budżetu i rozsyła je do działów sprzedaży. Następnie działy sprzedaży prognozują i przesyłają prognozy z powrotem do centrali, gdzie menedżer budżetu agreguje je i dostosowuje. Na koniec menedżer budżetu wysyła skorygowane kwoty budżetu do CFO w celu sprawdzenia, wprowadzenia ostatnich korekt i ostatecznego zatwierdzenia. 
 
 [![Przykład schematu planowania budżetu](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
@@ -84,17 +87,17 @@ Planowanie budżetu być realizowane według jednego z modeli zabezpieczeń defi
 
 Przepływy pracy planowania budżetu są używane razem z przepływami pracy Budżetowanie do zarządzania, tworzenia i oceny planów budżetu.
 
-Przepływ pracy planowania budżetu składa się z uporządkowanego zestawu etapów, przez które przechodzi planu budżetu. Każdy przepływ pracy planowania budżetu jest skojarzony z przepływem pracy Budżetowanie. Przepływy pracy budżetowania są jednym z typów przepływu pracy, które są używane w całym programie Microsoft Dynamics 365 dla operacji. Przepływ pracy Budżetowanie kieruje plany budżetu, wraz z arkuszami, uzasadnieniami i załącznikami do odpowiednich komórek w organizacji w celu przejrzenia i zatwierdzenia. 
+Przepływ pracy planowania budżetu składa się z uporządkowanego zestawu etapów, przez które przechodzi planu budżetu. Każdy przepływ pracy planowania budżetu jest skojarzony z przepływem pracy Budżetowanie. Przepływy pracy budżetowania to jeden z typów przepływów pracy, które są używane w całym programie Microsoft Dynamics 365 for Operations. Przepływ pracy Budżetowanie kieruje plany budżetu, wraz z arkuszami, uzasadnieniami i załącznikami do odpowiednich komórek w organizacji w celu przejrzenia i zatwierdzenia. 
 
 Tworzenie przepływu pracy planowania budżetu odbywa się w sekcji **Etapy przepływu pracy** na stronie **Konfiguracja planowania budżetu**. Na tej stronie można wybrać etapy i przepływ pracy Budżetowanie, które będą używane, a także skonfigurować dodatkowe ustawienia. 
 
 Dobrym rozwiązaniem jest utworzenie przepływu pracy planowania budżetu dla każdego poziomu hierarchii budżetowania. Następnie przypisuje się przepływ pracy Budżetowanie, który zawiera elementy odpowiadające poszczególnym etapom w przepływie pracy planowania budżetu. W przykładowym schemacie pokazanym wcześniej w tym artykule jeden przepływ pracy planowania budżetu jest tworzony dla działów sprzedaży, a inny dla centrali. Przepływ pracy Budżetowanie przesuwa plany budżetu przez kolejne etapy. 
 
-Przepływ pracy Budżetowanie dla planowania budżetu tworzy się na stronie **Przepływy pracy Budżetowanie**. Proces jest podobny do procesu tworzenia innych przepływów pracy w programie Microsoft Dynamics 365 dla operacji. Na poniższe ilustracji pokazano przykład przepływu pracy Centrala. 
+Przepływ pracy Budżetowanie dla planowania budżetu tworzy się na stronie **Przepływy pracy Budżetowanie**. Ten proces przypomina proce tworzenia innych przepływów pracy w programie Microsoft Dynamics 365 for Operations. Na poniższe ilustracji pokazano przykład przepływu pracy Centrala. 
 
-[![Budżetowanie przepływu pracy planowania budżetu](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
+[![Przepływ pracy Budżetowanie dla planowania budżetu](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
-Przepływ pracy zawiera elementy dla alokacji do działów sprzedaży i agregacji ich zgłoszenia, przegląd przez menedżera budżetu, zatwierdzenia przez dyrektora finansowego i etap przejścia między poszczególnymi etapami. 
+Przepływ pracy zawiera elementy dla alokacji do działów sprzedaży i agregowania ich przesłań, sprawdzania przez menedżera budżetu, zatwierdzania przez dyrektora finansowego oraz przechodzenia między poszczególnymi etapami. 
 
 Przypisywanie przepływu pracy do poszczególnych przepływów pracy planowania budżetu odbywa się w sekcji **Etapy przepływu pracy** na stronie **Konfiguracja planowania budżetu**.
 
@@ -112,8 +115,8 @@ Podczas planowania budżetu można alokować kwoty lub ilości w wierszach planu
 
 Harmonogramy alokacji automatycznie alokują wiersze planu budżetu podczas przetwarzania przepływu pracy. Alokacje można wykonywać za pomocą dowolnej z metod dostępnych na liście **Metody alokacji**:
 
--   **Alokuj między okresami** — klucz alokacji okresu jest używany do alokacji wierszy planu budżetu ze źródłowego scenariusza planu budżetu między okresami w scenariuszu docelowym. **Uwaga:** można było przydzielić przedziałów, należy skonfigurować okresowe klucze alokacji na *** alokacji okresu kategorii *** strony.
--   **Alokuj do wymiarów** — przydzielanie wierszy planu budżetu następuje ze źródłowego scenariusza planu budżetu do wymiarów finansowych w scenariuszu docelowym. **Uwaga:** można było przydzielić do wymiarów, należy skonfigurować warunków alokacji budżetu na *** strona warunki *** alokacji budżetu.
+-   **Alokuj między okresami** — klucz alokacji okresu jest używany do alokacji wierszy planu budżetu ze źródłowego scenariusza planu budżetu między okresami w scenariuszu docelowym. **Uwaga:** Aby możliwa była alokacja między okresami, trzeba ustawić klucze alokacji okresów na stronie ****Kategorie alokacji okresu****.
+-   **Alokuj do wymiarów** — przydzielanie wierszy planu budżetu następuje ze źródłowego scenariusza planu budżetu do wymiarów finansowych w scenariuszu docelowym. **Uwaga:** Aby alokacja do wymiarów była możliwa, trzeba ustawić warunki alokacji budżetu na stronie ****Warunki alokacji budżetu****.
 -   **Agreguj** — agregowanie wierszy planu budżetu następuje ze źródłowego scenariusza planu budżetu w powiązanych planach budżetu do docelowego scenariusza w nadrzędnym planie budżetu.
 -   **Dystrybuuj** — rozdzielanie wierszy planu budżetu następuje ze źródłowego scenariusza planu budżetu w nadrzędnym planie budżetu do docelowego scenariusza w skojarzonych planach budżetu.
 -   **Użyj reguł alokacji księgi** — rozdzielanie wierszy planu budżetu następuje ze źródłowego scenariusza planu budżetu do docelowego scenariusza planu budżetu na podstawie wybranej reguły alokacji księgi.
@@ -123,15 +126,15 @@ Harmonogramy alokacji automatycznie alokują wiersze planu budżetu podczas prze
 
 Alokacje etapu umożliwiają automatyczną alokację wierszy planu budżetu podczas przetwarzania przepływu pracy. Gdy używane są alokacje etapów, wiersze planu budżetu w scenariuszu docelowym można tworzyć i modyfikować bez interwencji osoby odpowiedzialnej za przygotowanie planu budżetu lub osoby sprawdzającej.
 
-Podczas konfigurowania alokacji etapu należy skojarzyć przepływ pracy planowania budżetu i etap z harmonogramem alokacji. Przepływ pracy planowania budżetu muszą być skojarzone z przepływu pracy budżetowania, który używa *** planowania alokacji etapu *** budżetu automatycznego zadania przepływu pracy. Gdy przepływ pracy osiągnie określony etap, alokacja jest wykonywana automatycznie. To wykonywane automatycznie zadanie może służyć do tworzenia wierszy planu budżetu w nowym scenariuszu. 
+Podczas konfigurowania alokacji etapu należy skojarzyć przepływ pracy planowania budżetu i etap z harmonogramem alokacji. Przepływ pracy planowania budżetu należy skojarzyć z przepływem pracy budżetowania korzystającym z zadania automatycznie wykonywanego przepływu pracy ****Alokacja etapu planowania budżetu****. Gdy przepływ pracy osiągnie określony etap, alokacja jest wykonywana automatycznie. To wykonywane automatycznie zadanie może służyć do tworzenia wierszy planu budżetu w nowym scenariuszu. 
 
 W przykładowym schemacie, pokazanym wcześniej w tym artykule, alokacja służy do przenoszenia kwot z planu i scenariuszy budżetu na etapie Podstawowy w Centrali do innego planu i scenariuszy budżetu na etapie Szacowanie w Dziale sprzedaży. Poniższa ilustracja pokazuje odpowiednią sekcję przykładowego schematu.
 
-[![Alokacji etapu](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
+[![Alokacja etapu](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
-Ponadto w schemacie przykład agregacji odbywa się z planów budżetu i scenariuszy w dziale sprzedaży, etap przesłane do nadrzędnego planu w fazie pakiet zbiorczy kwatery głównej. Poniższa ilustracja pokazuje odpowiednią sekcję przykładowego schematu.
+Ponadto w przykładowym schemacie agregacja jest wykonywana z planów i scenariuszy budżetu na etapie Przesłano w dziale sprzedaży do nadrzędnego planu na etapie Akumulacja w centrali. Poniższa ilustracja pokazuje odpowiednią sekcję przykładowego schematu.
 
-[![Aggregation](./media/aggregation-109x300.png)](./media/aggregation.png)
+[![Agregacja](./media/aggregation-109x300.png)](./media/aggregation.png)
 
 ### <a name="priorities"></a>Priorytety
 
@@ -149,9 +152,9 @@ Oprócz kolumn dla kwot budżetu można zdefiniować kolumny dla pól projektu, 
 
 W przykładowym schemacie można utworzyć kolumny dla scenariuszy Sprzedaż w poprzednim roku, Umowy i Prognozy (na poniższej ilustracji pokazano odpowiednią sekcję schematu). Można następnie podzielić jeden lub wszystkie z tych scenariuszy na osobne kolumny dla każdego kwartału roku obrachunkowego, tak aby menedżer ds. sprzedaży w dziale mógł dokładnie wprowadzać kwoty prognozy dla każdego okresu.
 
-[![Columns](./media/columns.png)](./media/columns.png) 
+[![Kolumny](./media/columns.png)](./media/columns.png) 
 
-Można również określić, czy każdy element układu (kolumna) jest edytowalny, i czy jest dostępny w każdym szablonie arkusza, który jest tworzony dla tego układu. W przykładowym schemacie w układzie używanym dla etapu Szacowanie kolumny Prognoza są dostępne do edycji, a kolumny Sprzedaż w poprzednim roku i Umowy są tylko do odczytu.
+Można również określić, czy poszczególne elementy układu (kolumna) są dostępne do edycji i czy są one dostępne w jakimkolwiek szablonie arkusza utworzonego w tym układzie. W przykładowym schemacie w układzie używanym dla etapu Szacowanie kolumny Prognoza są dostępne do edycji, a kolumny Sprzedaż w poprzednim roku i Umowy są tylko do odczytu.
 
 ### <a name="templates"></a>Szablony
 
@@ -160,7 +163,7 @@ W sekcji **Układy** strony **Konfiguracja planowania budżetu** można też gen
 Można wygenerować, wyświetlić i przesłać szablon dla każdego układu. Podczas generowania szablonu układ jest zablokowany i nie można go edytować. Ta blokada pomaga zapewnić, że format szablonu będzie zgodny z układem planu budżetu i zawierał te same dane. Po wygenerowaniu szablonu można go wyświetlić i edytować. Można na przykład dodać do szablonu wykresy lub dostosować jego wygląd.
 
 > [!NOTE] 
-> Powinien być zapisany szablon do lokalizacji, że użytkownik ma dostęp, tak, aby można je było przekazać do układu po zakończeniu edycji. W ten sposób szablon będzie używany z planami budżetu, które używają układu.
+> Szablon należy zapisać w miejscu, do którego użytkownik ma dostęp, aby dało się go przesłać do układu po zakończeniu edycji. W ten sposób szablon będzie używany z planami budżetu, które używają układu.
 
 ### <a name="descriptions"></a>Opisy
 
@@ -184,6 +187,8 @@ W menu **Akcje** można też utworzyć nowy proces przez skopiowanie istniejące
 
 Innym przydatnym poleceniem w menu **Akcje** jest **Wyświetlenie stanu procesu budżetu**. To polecenie graficznie przedstawia plany budżetu w procesie wraz z odpowiednimi danymi, takimi jak stan przepływu pracy planów, podsumowania według kwot i jednostki oraz przechodzenie jednym kliknięciem do samych planów budżetu.
 
-[![Budget planning process status](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+[![Stan procesu planowania budżetu](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Zrównoważony arkuszy do międzyjednostkowe"
+title: "Zbilansowane arkusze dla księgowania międzyjednostkowego"
 description: "W tym artykule przedstawiono sposób automatycznego bilansowania arkusza po wybraniu wymiaru finansowego na stronie Księga."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="balanced-journals-for-interunit-accounting"></a>Zrównoważony arkuszy do międzyjednostkowe
+# <a name="balanced-journals-for-interunit-accounting"></a>Zbilansowane arkusze dla księgowania międzyjednostkowego
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule przedstawiono sposób automatycznego bilansowania arkusza po wybraniu wymiaru finansowego na stronie Księga. 
 
@@ -35,7 +38,7 @@ Jeśli zapisy na koncie nie bilansują się na poziomie wartości wymiaru finans
 |                      |           |
 |----------------------|-----------|
 | 6100 – MSP – OU\_256 | 100,00 DR |
-| 6100 — NY-OU\_249  | 100,00 DR |
+| 6100 – NY – OU\_249  | 100,00 DR |
 | 2100 – MSP – OU\_256 | 200,00 CR |
 
 W tym przypadku określane są następujące salda:
@@ -47,8 +50,10 @@ Dlatego następujące wpisy księgowe są tworzone automatycznie w celu zbilanso
 
 |                                   |           |
 |-----------------------------------|-----------|
-| (Debet wielojednostkowym) – MSP – OU\_256 | 100,00 DR |
-| (Kredyt wielojednostkowym) OU-NY-\_249 | 100,00 CR |
+| (Międzyjednostkowe — debet) – MSP – OU\_256 | 100,00 DR |
+| (Międzyjednostkowe — kredyt) – NY – OU\_249 | 100,00 CR |
+
+
 
 
 

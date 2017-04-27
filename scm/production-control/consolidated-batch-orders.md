@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consolidated-batch-orders"></a>Skonsolidowane szarże produkcyjne
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano koncepcję skonsolidowanych szarż produkcyjnych.
 
 Wytwarzany produkt masowy jest uznawany za element nadrzędny, natomiast produkt zapakowany jest uznawany za element podrzędny. Relacja między produktem masowym a produktem zapakowanym jest wyrażona jako konwersja produktu masowego. Konwersja produktu masowego jest definiowana względem produktu masowego.  
@@ -41,6 +44,8 @@ Skonsolidowana szarża produkcyjna może zawierać dowolną kombinację następu
 -   Wiele zamówień produktu zbiorczego i wiele zamówień produktu zapakowanego
 -   Wiele zamówień produktu zbiorczego i jedno zamówienie produktu zapakowanego
 -   Tylko zamówienia produktów zapakowanych
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Finansowe zawartości BI zasilania wydajność"
-description: "W tym temacie opisano usługi Microsoft Dynamics 365 zawartości pakietu operacje finansowe wyniki dla Microsoft Power BI. Opis pulpitu nawigacyjnego i raportów, które są zawarte w pakiecie zawartości i zawiera informacje o modelu danych i podmiotów, które były użyte do utworzenia pakietu zawartości."
+title: "Pakiet zawartości usługi Power BI Wyniki finansowe"
+description: "W tym temacie opisano pakiet zawartości Wyniki finansowe dla narzędzia usługi Microsoft Power BI należący do programu Microsoft Dynamics 365 for Operations. Omówiono pulpit nawigacyjny i raporty znajdujące się w pakiecie zawartości oraz zamieszczono informacje o modelu i jednostkach danych, które zostały użyte do zbudowania pakietu zawartości."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,23 +24,26 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="financial-performance-power-bi-content"></a>Finansowe zawartości BI zasilania wydajność
+# <a name="financial-performance-power-bi-content"></a>Pakiet zawartości usługi Power BI Wyniki finansowe
 
-W tym temacie opisano usługi Microsoft Dynamics 365 zawartości pakietu operacje finansowe wyniki dla Microsoft Power BI. Opis pulpitu nawigacyjnego i raportów, które są zawarte w pakiecie zawartości i zawiera informacje o modelu danych i podmiotów, które były użyte do utworzenia pakietu zawartości.
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>Uzyskiwanie dostępu do zawartości pack
+
+W tym temacie opisano pakiet zawartości Wyniki finansowe dla narzędzia usługi Microsoft Power BI należący do programu Microsoft Dynamics 365 for Operations. Omówiono pulpit nawigacyjny i raporty znajdujące się w pakiecie zawartości oraz zamieszczono informacje o modelu i jednostkach danych, które zostały użyte do zbudowania pakietu zawartości.
+
+<a name="accessing-the-content-pack"></a>Przechodzenie do pakietu zawartości
 --------------------------
 
-Dostępne są dwie wersje content Pack wyników finansowych. Jedna wersja jest dostępna z Microsoft Dynamics cyklu życia usługi (LCS), a druga jest dostępna z PowerBI.com.
+Dostępne są dwie wersje pakietu zawartości Wyniki finansowe. Jedną wersję można pobrać z usługi Microsoft Dynamics Lifecycle Services (LCS), a drugą z witryny PowerBI.com.
 
--   **Wersja, która jest dostępna z LCS:** wyników finansowych content pack, który jest dostępny z LCS obsługuje Microsoft Dynamics 365 dla wersji operacji 1611. Content pack można znaleźć w biblioteki zasobów współużytkowanych w LCS. Aby uzyskać więcej informacji o tym, jak pobrać pakiet zawartości i podłącz go do sieci Microsoft Dynamics 365 dla danych operacji, zobacz [Power BI zawartości w LCS firmy Microsoft i jej partnerzy](power-bi-content-microsoft-partners.md).
--   **Wersja, która jest dostępna z PowerBI.com:** wyników finansowych content pack, który jest dostępny z PowerBI.com obsługuje system Microsoft Dynamics AX w wersji 7.0 i 7.0.1. Aby uzyskać więcej informacji na temat sposobu połączenia i załadować Twojego 365 Dynamics dla danych operacji, zobacz [BI zasilania dostęp do zawartości z PowerBI.com](power-bi-home-page.md).
+-   **Wersja dostępna w usłudze LCS:** Pakiet zawartości Wyniki finansowe dostępny w usłudze LCS współpracuje z oprogramowaniem Microsoft Dynamics 365 for Operations w wersji 1611. Pakiet znajduje się w bibliotece zasobów wspólnych w usłudze LCS. Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i łączeniu go z danymi usługi Microsoft Dynamics 365 for Operations, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md).
+-   **Wersja dostępna w witrynie PowerBI.com:** Pakiet zawartości Wyniki finansowe dostępny w witrynie PowerBI.com współpracuje z oprogramowaniem Microsoft Dynamics AX w wersjach 7.0 i 7.0.1. Aby uzyskać więcej informacji o tworzeniu połączenia z danymi programu Dynamics 365 for Operations i ich ładowaniu, zobacz [Dostęp do pakietu zawartości usługi Power BI z witryny Microsoft Dynamics 365 for Operations](power-bi-home-page.md).
 
 ## <a name="main-account-setup"></a>Konfiguracja konta głównego
-Ponieważ organizacje chcą zobowiązań oraz kwoty przychodów są wyświetlane jako kwoty dodatnie w raportach, ważne jest ustawienia kont głównych w usłudze Dynamics 365 dla operacji. Dla tych kont głównych są wyświetlane jako kwoty dodatnie, typ konta głównego musi być równa **odpowiedzialność** lub **dochodów**. Gdy używane są następujące typy kont, zgłoszenie za pośrednictwem programu Microsoft Power BI będzie odwrócić oznaki i wyświetlić wartości jako pozytywne.
+Ponieważ organizacje chcą, aby kwoty zobowiązań i przychodów były wyświetlane jako kwoty dodatnie w raportach, ważne jest odpowiednie skonfigurowanie kont głównych w programie Dynamics 365 for Operations. Aby kwoty na tych kontach głównych były wyświetlane jako dodatnie, typ konta głównego musi być ustawiony jako **Pasywa** lub **Przychód**. Gdy są używane te typy kont, sprawozdawczość za pośrednictwem usługi Microsoft Power BI będzie powodowała odwracanie znaków i wyświetlanie kwot jako dodatnich.
 
-## <a name="dashboard-and-reports-that-are-included-in-the-content-pack"></a>Pulpit nawigacyjny i raporty, które są zawarte w pakiecie zawartości
-Gdy utworzysz połączenie między pakietem zawartości a danymi programu Dynamics 365 for Operations, w pulpicie nawigacyjnym i raportach są wyświetlone dane finansowe. Jeśli nigdy nie używane Power BI przed, można znaleźć informacje na jego temat na [stronę z przewodnikiem nauki BI zasilania](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Pulpit nawigacyjny zawiera kafelki podsumowań danych oparte na źródłowych raportach. Każdy kafelek zawiera podsumowanie informacji o bieżącym roku dla wszystkich firm w organizacji. Oto kilka fragmentów:
+## <a name="dashboard-and-reports-that-are-included-in-the-content-pack"></a>Pulpity nawigacyjne i raporty dostępne w pakiecie zawartości
+Gdy utworzysz połączenie między pakietem zawartości a danymi programu Dynamics 365 for Operations, w pulpicie nawigacyjnym i raportach są wyświetlone dane finansowe. Jeśli to Twoja pierwsza styczność z usługą Power BI, możesz się o niej dowiedzieć więcej na [stronie Przewodnika z instruktażem po narzędziu Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Pulpit nawigacyjny zawiera kafelki podsumowań danych oparte na źródłowych raportach. Każdy kafelek zawiera podsumowanie informacji o bieżącym roku dla wszystkich firm w organizacji. Oto kilka dostępnych kafelków:
 
 -   Kasa
 -   Łączne przychody w roku
@@ -56,13 +59,13 @@ Gdy utworzysz połączenie między pakietem zawartości a danymi programu Dynami
 -   Marża zysku w roku
 -   Wydatki rzeczywiste a zabudżetowane — wszystkie firmy
 
-Każda tabliczka jest wspierany przez towarzyszące raportu. Raporty zawierają wykresy i tabele dostarczające więcej informacji. W poniższej tabeli opisano dostępne raporty.
+Każdy kafelek wykorzystuje pomocniczy raport. Raporty zawierają wykresy i tabele dostarczające więcej informacji. W poniższej tabeli opisano dostępne raporty.
 
 | Raport                      | Informacje zawarte w raporcie                                                                                                                                                                                                                                                                                                          |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Analiza środków pieniężnych               | Środków pieniężnych przez osobę prawną, środków pieniężnych według kwartałów, środków pieniężnych i środków pieniężnych przez konto **Uwaga:****środków pieniężnych według kwartałów** raport nie zawiera sald początkowych w sumie za pierwszy kwartał. Pokazuje sumę nowych transakcji, które są księgowane w każdym kwartale.                                                                                |
+| Analiza środków pieniężnych               | Gotówka z podziałem na firmy, gotówka według kwartałów, łączna gotówka oraz gotówka z podziałem na konta **Uwaga:** Raport **Gotówka według kwartałów** nie zawiera sald początkowych w sumie dla pierwszego kwartału. Suma jest pokazywana dla nowych transakcji księgowanych w każdym kwartale.                                                                                |
 | Analiza wskaźnika bieżącej płynności      | Wskaźnik bieżącej płynności z podziałem na firmy, wskaźnik bieżącej płynności według kwartałów oraz salda bieżących aktywów i pasywów                                                                                                                                                                                                                              |
-| Analiza wskaźnika szybkiej płynności        | Szybkie stosunek przez podmiot prawny, szybkie stosunek według kwartałów i sald dla środków pieniężnych, rozrachunków z odbiorcami i bieżące zobowiązania                                                                                                                                                                                                                      |
+| Analiza wskaźnika szybkiej płynności        | Wskaźnik szybkiej płynności z podziałem na firmy, wskaźnik szybkiej płynności według kwartałów oraz bieżące salda gotówki, należności i zobowiązań                                                                                                                                                                                                                      |
 | Analiza kosztów własnych sprzedaży | Koszt własny sprzedaży (KWS) z podziałem na firmy, KWS w tym i poprzednim roku według kwartałów, KWS według firm, łączny KWS oraz stosunek procentowy KWS do sprzedaży                                                                                                                                                                                   |
 | Analiza kapitału obrotowego    | Kapitał obrotowy z podziałem na firmy, kapitał obrotowy według kwartałów, bieżące aktywa, bieżące pasywa i całkowity kapitał obrotowy                                                                                                                                                                                                                   |
 | Analiza aktywów i zadłużenia     | Zwrot z całkowitych aktywów i zadłużenie do sumy aktywów z podziałem na firmy, zadłużenie do sumy aktywów i zwrot z całkowitych aktywów od początku kwartału, aktywa i pasywa                                                                                                                                                                                     |
@@ -71,17 +74,17 @@ Każda tabliczka jest wspierany przez towarzyszące raportu. Raporty zawierają 
 | Analiza dochodów           | Dochody rzeczywiste i zabudżetowane przed potrąceniem odsetek i podatków (EBIT) z podziałem na firmy, EBIT z tym i poprzednim roku, stosunek procentowy wydatków do przychodów oraz stosunek wydatków rzeczywistych i zabudżetowanych do przychodów                                                                                                                                                          |
 | Analiza przychodów            | Suma przychodów, suma przychodów rzeczywistych a zabudżetowanych z podziałem na firmy, suma przychodów w tym i poprzednim roku, różnica zabudżetowanych przychodów z podziałem na firmy oraz i suma przychodów w tym i poprzednim okresie                                                                                                                                                 |
 | Analiza wydatków            | Suma wydatków, suma wydatków rzeczywistych a zabudżetowanych z podziałem na firmy, suma wydatków rzeczywistych a zabudżetowanych według kwartałów, suma wydatków według kategorii kont oraz wskaźnik wydatków operacyjnych                                                                                                                                                                 |
-| Analiza zafakturowanych przychodów     | Suma rozrachunków z odbiorcami, Suma rozrachunków z odbiorcami przez podmiot prawny, Suma rozrachunków z odbiorcami według kwartałów i salda kont z odbiorcami konta **Uwaga:** raporty nie zawierają sald początkowych dla kont księgowych z odbiorcami kont. Pokazują one sumę nowych transakcji, które są księgowane na kontach należności. |
+| Analiza zafakturowanych przychodów     | Suma rozrachunków z odbiorcami, suma rozrachunków z odbiorcami z podziałem na firmy, suma rozrachunków z odbiorcami według kwartałów oraz salda kont rozrachunków z odbiorcami **Uwaga:** Raporty nie zawierają sald początkowych kont księgowych rozrachunków z odbiorcami. Sumy są wyświetlane dla nowych transakcji księgowanych w module Rozrachunki z odbiorcami. |
 
 Wykresy i kafelki we wszystkich tych raportach można filtrować i przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
-Dane, które wypełnia pulpitu nawigacyjnego i raporty w pakiecie zawartości wyników finansowych jest Dynamics 365 dla danych operacji. Następujące podmioty były używane jako podstawa content Pack: **agregowanie danych podmiotów**
+Dane, które wypełniają pulpit nawigacyjny i raporty w pakiecie zawartości Wyniki finansowe, są danymi programu Dynamics 365 for Operations. Następujące jednostki zostały użyte jako podstawa w pakiecie zawartości: **Jednostki zagregowanych danych**
 
--   **GeneralLedgerActivities** -tej encji agregatów salda księgi według kategorii konta.
--   **BudgetActivities** -tej encji agregatów salda budżetu według kategorii konta.
+-   **GeneralLedgerActivities** — ta jednostka agreguje salda księgi głównej według kategorii kont.
+-   **BudgetActivities** — ta jednostka agreguje salda budżetu według kategorii kont.
 
-**Data entities**
+**Jednostki danych**
 
 -   FiscalCalendars
 -   MainAccounts
@@ -89,7 +92,7 @@ Dane, które wypełnia pulpitu nawigacyjnego i raporty w pakiecie zawartości wy
 -   Księgi
 -   ChartofAccounts
 
-Podmioty te były używane do tworzenia miar obliczeniowych w modelu danych. Miary obliczeniowe są używane do obliczania kluczowych wskaźników wydajności (KPI) i raportów, które są używane w pakiecie zawartości. Domyślnie pakiet zawartości grupuje dane z trzech ostatnich lat i jednego roku przyszłego. Aby uwzględnić dodatkowe obliczenia w raportach i pulpicie nawigacyjnym, można zmodyfikować [skoroszyt programu Microsoft Excel](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Ten skoroszyt jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości. Po wprowadzeniu wszystkich modyfikacji można utworzyć organizacyjny pakiet zawartości i pulpit nawigacyjny, który zawiera dodane informacje.
+Te jednostki zostały użyte do utworzenia obliczanych miar w modelu danych. Obliczane miary są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości. Domyślnie pakiet zawartości grupuje dane z trzech ostatnich lat i jednego roku przyszłego. Aby uwzględnić dodatkowe obliczenia w raportach i pulpicie nawigacyjnym, można zmodyfikować [skoroszyt programu Microsoft Excel](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Ten skoroszyt jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości. Po wprowadzeniu wszystkich modyfikacji można utworzyć organizacyjny pakiet zawartości i pulpit nawigacyjny, który zawiera dodane informacje.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworzenia zawartości w narzędziu Power BI:
@@ -98,6 +101,8 @@ Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworze
 -   [Tworzenie organizacyjnych pakietów zawartości](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Modelowanie danych przy użyciu narzędzia Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Dodawanie kafelków narzędzia Power BI do obszarów roboczych](configure-power-bi-integration.md)
+
+
 
 
 

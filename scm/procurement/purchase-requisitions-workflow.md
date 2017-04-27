@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-workflow"></a>przepływ pracy zapotrzebowań zakupu
 
+[!include[banner](../includes/banner.md)]
+
+
 Przepływ pracy prowadzi zapotrzebowanie na zakup przez proces weryfikacji — od początkowego stanu Wersja robocza do końcowego Zatwierdzone. Gdy zapotrzebowanie na zakup zostanie przesłane do przeglądu, rozpoczyna się proces przepływu pracy. Po zatwierdzeniu zapotrzebowania na zakup można wygenerować zamówienie zakupu dla wierszy zapotrzebowania na zakup i przesłać do dostawcy w celu realizacji zamówienia.
 
 Przed przesłaniem zapotrzebowania zakupu do przeglądu należy skonfigurować przepływ pracy. Proces przepływu pracy może zawierać jeden lub więcej kroków przeglądu o dowolnej kolejności. Proces przepływu pracy można również konfigurować tak, aby pominąć zadania przeglądu i automatyczne zatwierdzać zapotrzebowania na zakup. Można skonfigurować przepływ pracy, tak aby przekazywać zapotrzebowanie na zakup jako pojedynczy dokument lub przekazywać pojedyncze wiersze zapotrzebowania na zakup do odpowiednich osób sprawdzających. Oprócz tego można utworzyć scenariusz, w którym zapotrzebowanie na zakup jest kierowane jako pojedynczy dokument do niektórych osób sprawdzających, a do innych są kierowane wybrane wiersze zapotrzebowania na zakup.  
@@ -106,12 +109,14 @@ Aby skorzystać z jednej z osób sprawdzających wydatki, które zostały skonfi
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Tworzenie zapotrzebowania do spożycia (Przewodnik zadania)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Tworzenie zapotrzebowania na zużycie (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
 [Definiowanie przepływów pracy procesów biznesowych dla zapotrzebowań na zakup](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Procurement and sourcing workflows](procurement-sourcing-workflows.md)
+[Przepływy pracy dla zaopatrzenia i sourcingu](procurement-sourcing-workflows.md)
 
-[Purchase requisition overview](purchase-requisitions-overview.md)
+[Omówienie zapotrzebowania na zakup](purchase-requisitions-overview.md)
+
+
 
 

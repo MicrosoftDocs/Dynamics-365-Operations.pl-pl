@@ -1,6 +1,6 @@
 ---
 title: Wymiary produktu
-description: "Istnieją cztery wymiary produktu — kolor, konfiguracja, rozmiar i styl. Wymiary produktu łączy się w grupy wymiarów, a następnie przypisuje grupy wymiarów do produktów głównych. Kombinacje wymiarów produktu decydują o definicjach wariantów produktu."
+description: "Istnieją cztery wymiary produktu — Kolor, Konfiguracja, Rozmiar i Styl. Wymiary produktu łączy się w grupy wymiarów, a następnie przypisuje grupy wymiarów do produktów głównych. Kombinacje wymiarów produktu decydują o definicjach wariantów produktu."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,21 +29,24 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="product-dimensions"></a>Wymiary produktu
 
-Istnieją cztery wymiary produktu — kolor, konfiguracja, rozmiar i styl. Wymiary produktu łączy się w grupy wymiarów, a następnie przypisuje grupy wymiarów do produktów głównych. Kombinacje wymiarów produktu decydują o definicjach wariantów produktu.
+[!include[banner](../includes/banner.md)]
+
+
+Istnieją cztery wymiary produktu — Kolor, Konfiguracja, Rozmiar i Styl. Wymiary produktu łączy się w grupy wymiarów, a następnie przypisuje grupy wymiarów do produktów głównych. Kombinacje wymiarów produktu decydują o definicjach wariantów produktu.
 
 Wymiary produktu to cechy, które służą do określenia wariantu produktu. Kombinacje wymiarów produktu służą do definiowania wariantów produktu. Należy zdefiniować co najmniej jeden wymiar produktu dla produktu głównego w celu utworzenia wariantu produktu.
 Warianty produktu
 ----------------
 
-Warianty produktu są również określane jako elementy. Towar to produkt materialny, który nie jest usługą. Jest również możliwe określenie produktu głównego z typem usługi. Za pomocą typu Usługa można określić warianty produktu, które zawierają usługi. Na przykład można określić produkt główny dla pracy w zakresie doradztwa i warianty produktu dla pracy wykonywanej przez starszych konsultantów i młodszych konsultantów.
+Warianty produktu są również określane jako elementy. Towar to produkt materialny, który nie jest usługą. Istnieje również możliwość zdefiniowania produktu głównego typu Usługa. Za pomocą typu Usługa można określić warianty produktu, które zawierają usługi. Na przykład można określić produkt główny dla pracy w zakresie doradztwa i warianty produktu dla pracy wykonywanej przez starszych konsultantów i młodszych konsultantów.
 
 ## <a name="product-dimensions"></a>Wymiary produktu
-Dostępne są następujące wymiary produktu: Konfiguracja, kolor, rozmiar i styl. Wariant produktu mogą być generowane na podstawie wartości wymiaru produktu.
+Dostępne są następujące wymiary produktu: Konfiguracja, Kolor, Rozmiar i Styl. Wariant produktu może być generowany na podstawie wartości w wymiarach produktu.
 
-Wymiary produktu wartości, takie jak rozmiar, kolor i styl mogą być tworzone na **rozmiar**, **kolor** i **styl** stron, które mogą być dostępne w następujących lokalizacjach: **zarządzanie informacjami o produktach**&gt;**instalacji**&gt;**wymiaru i wariantu grup**&gt;**rozmiary/kolory/style**. Wartości wymiaru produktu dla wymiaru konfiguracji są zwykle tworzone za pomocą konfiguratora produktów lub konfiguratora opartego na wymiarach. Wymiary produktu mogą być również tworzone i obsługiwane na stronie **Wymiary produktu**, która jest dostępna z następujących miejsc:
--   Kliknij **zarządzanie informacjami o produktach**&gt;**produkty**&gt;**produktów głównych**. Na **w okienku akcji**, kliknij przycisk **wymiary produktu**.
--   Kliknij **zarządzanie informacjami o produktach**&gt;**produkty**&gt;**wszystkie produkty i produkty główne**. Wybierz produkt główny. Na **w okienku akcji**, kliknij przycisk **wymiary produktu**.
--   Kliknij **zarządzanie informacjami o produktach**&gt;**zwolnionych produktów**. Wybierz produkt główny. Na **w okienku akcji**, kliknij przycisk **produktu**. W grupie **Produkt główny** kliknij **Wymiary produktu**.
+Wartości wymiarów produktu, takie jak Rozmiar, Kolor i Styl, można tworzyć na stronach **Rozmiar**, **Kolor** i **Styl**, które można otworzyć z następujących lokalizacji: **Zarządzanie informacjami o produktach** &gt; **Ustawienia** &gt; **Grupy wymiarów i wariantów** &gt; **Rozmiary/Kolory/Style**. Wartości wymiaru produktu dla wymiaru konfiguracji są zwykle tworzone za pomocą konfiguratora produktów lub konfiguratora opartego na wymiarach. Wymiary produktu mogą być również tworzone i obsługiwane na stronie **Wymiary produktu**, która jest dostępna z następujących miejsc:
+-   Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Produkty** &gt; **Produkty główne**. W **okienku akcji** kliknij pozycję **Wymiary produktu**.
+-   Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Produkty** &gt; **Wszystkie produkty i produkty główne**. Wybierz produkt główny. W **okienku akcji** kliknij pozycję **Wymiary produktu**.
+-   Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Zwolnione produkty**. Wybierz produkt główny. W **okienku akcji** kliknij pozycję **Produkt**. W grupie **Produkt główny** kliknij **Wymiary produktu**.
 
 Liczba wariantów, które można utworzyć dla towaru jest ograniczona przez liczbę kombinacji wymiarów produktu.
 | **Wskazówka**                                                                                                                                              |
@@ -64,6 +67,8 @@ Firma sprzedaje jeansy. Dla towaru — jeansów — istnieją wymiary Kolor i Ro
 | Brązowy | W    |
 | Brązowy | XL   |
 | Brązowy | XXL  |
+
+
 
 
 

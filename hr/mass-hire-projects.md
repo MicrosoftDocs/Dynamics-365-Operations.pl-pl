@@ -46,7 +46,7 @@ Na stronie **Projekty zatrudnienia grupowego** wybierz projekt „Letnistaż” 
 
 Po wybraniu studentów, których chcesz przyjąć na staż wpisz dane każdego z nich na stronie **Szczegóły dotyczące stanowiska** dla stanowisk, na których mają zostać zatrudnieni. Po wprowadzeniu wszystkich szczegółów dotyczących stanowiska wybierz stanowisko na stronie Projekty zatrudnienia grupowego, a następnie kliknij **Zatrudnij**. Zostaną utworzone rekordy dla każdego stanowiska i pracownika, a każdy pracownik zostanie przypisany do odpowiedniego stanowiska.
 
-## <a name="masshire-project-statuses"></a>Masshire stanów projektu
+## <a name="masshire-project-statuses"></a>Stany projektu zatrudnienia grupowego
 Projekt zatrudnienia grupowego może mieć następujące stany:
 -   Utworzony
 -   Otwarto

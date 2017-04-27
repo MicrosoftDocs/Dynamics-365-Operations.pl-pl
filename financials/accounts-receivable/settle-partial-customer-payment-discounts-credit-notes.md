@@ -1,5 +1,5 @@
 ---
-title: "Rozlicz płatności klienta częściowe, który ma rabaty na fakturach korygujących"
+title: "Rozliczenie płatności częściowej odbiorcy, do której zastosowano rabaty na fakturach korygujących dostawcy"
 description: "Ten artykuł prowadzi przez scenariusz, w którym rabat gotówkowy jest stosowany do faktury korygującej w sytuacji, gdy również oryginalna faktura miała rabat gotówkowy."
 author: twheeloc
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Rozlicz płatności klienta częściowe, który ma rabaty na fakturach korygujących
+# <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Rozliczenie płatności częściowej odbiorcy, do której zastosowano rabaty na fakturach korygujących dostawcy
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł prowadzi przez scenariusz, w którym rabat gotówkowy jest stosowany do faktury korygującej w sytuacji, gdy również oryginalna faktura miała rabat gotówkowy. 
 
-Firma Fabrikam oferuje odbiorcom rabaty gotówkowe za częściowe zapłaty, a także za faktury korygujące. Rabat gotówkowy może zostać podjęty po wystawieniu faktury korygującej dla faktury, dla której odbiorca podjął już rabat gotówkowy. Zamiast oferowania kredytu na pełną kwotę można obciążyć saldo odbiorcy na kwotę, która nie obejmuje procenta rabatu gotówkowego podjętego przez odbiorcę. Parametry rozliczenia znajdują się na **rozrachunków z odbiorcami Parametry** strony.
+Firma Fabrikam oferuje odbiorcom rabaty gotówkowe za częściowe zapłaty, a także za faktury korygujące. Rabat gotówkowy może zostać podjęty po wystawieniu faktury korygującej dla faktury, dla której odbiorca podjął już rabat gotówkowy. Zamiast oferowania kredytu na pełną kwotę można obciążyć saldo odbiorcy na kwotę, która nie obejmuje procenta rabatu gotówkowego podjętego przez odbiorcę. Parametry rozliczenia znajdują się na stronie **Parametry modułu rozrachunków z odbiorcami**.
 
 ## <a name="invoice-and-credit-note"></a>Faktura zwykła i faktura korygująca
 Odbiorca 4035 ma fakturę na 1000,00 i fakturę korygującą na 100,00. Obie oferują 1 procent rabatu w przypadku zapłaty w ciągu 14 dni. Arnie może wyświetlić tę informację na stronie **Transakcje dostawcy**.
@@ -59,5 +62,7 @@ Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie tran
 | Kwota rabatu gotówkowego do pobrania | -1,00     |
 
 Rozliczenie będzie miało wartość 100,00 i będzie obejmowało płatność 99,00 i rabat w wysokości 1,00.
+
+
 
 

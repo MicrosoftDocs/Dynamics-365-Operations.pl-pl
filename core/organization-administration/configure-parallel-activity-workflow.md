@@ -1,5 +1,5 @@
 ---
-title: "Konfigurowanie równoległego działania przepływu pracy"
+title: "Konfigurowanie działania równoległego w przepływie pracy"
 description: "Aby skonfigurować działanie równoległe, należy wykonać następujące procedury w edytorze przepływu pracy."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-parallel-activity-in-a-workflow"></a>Konfigurowanie równoległego działania przepływu pracy
+# <a name="configure-a-parallel-activity-in-a-workflow"></a>Konfigurowanie działania równoległego w przepływie pracy
 
 Aby skonfigurować działanie równoległe, należy wykonać następujące procedury w edytorze przepływu pracy.
 
@@ -32,7 +32,7 @@ Działanie równoległe składa się z odgałęzień przepływu pracy, które s�
 
 ## <a name="name-a-parallel-activity"></a>Nazywanie działania równoległego
 Wykonaj następujące kroki, aby nazwać działanie równoległe.
-1.  Działanie równoległe kliknij prawym przyciskiem myszy, a następnie kliknij **właściwości** otworzyć **właściwości** formularza.
+1.  Kliknij działanie równoległe prawym przyciskiem myszy i wybierz polecenie **Właściwości**, aby otworzyć formularz **Właściwości**.
 2.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
 3.  W polu **Nazwa** wprowadź unikatową nazwę działania równoległego.
 4.  Kliknij przycisk **Zamknij**.

@@ -1,5 +1,5 @@
 ---
-title: "Organizowanie swoich pracowników przy użyciu departamentów, zadania i pozycje"
+title: "Organizowanie pracowników za pomocą zadań, działów i stanowisk"
 description: "Działy, zadania i stanowiska to elementy organizacyjne zarządzane w module Zasoby ludzkie. W tym temacie opisano koncepcję tych elementów."
 author: rschloma
 manager: AnnBe
@@ -26,22 +26,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organizowanie swoich pracowników przy użyciu departamentów, zadania i pozycje
+# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organizowanie pracowników za pomocą zadań, działów i stanowisk
+
+[!include[banner](includes/banner.md)]
+
 
 Działy, zadania i stanowiska to elementy organizacyjne zarządzane w module Zasoby ludzkie. W tym temacie opisano koncepcję tych elementów. 
 
 Poniższy przykład ilustruje koncepcje opisane w tym temacie.
 
-|**Dział**|**Position**|**Job**|
+|**Dział**|**Stanowisko**|**Zadanie**|
 |---|---|---|
 |**Sprzedaż**|Menedżer ds. sprzedaży (Wschód)|Menedżer ds. sprzedaży|
 |**Sprzedaż**|Menedżer ds. sprzedaży (Zachód)|Menedżer ds. sprzedaży|
 |**Sprzedaż**|Menedżer ds. sprzedaży (Centrala)|Menedżer ds. sprzedaży|
-|**Accounting**|Kierownik ds. księgowania|Menedżer ds. księgowania|
-|**Accounting**|Księgowanie-A|Księgowy|
-|**Human resources**|Menedżer ds. HR (Wschód)|Menedżer ds. HR|
-|**Human resources**|Menedżer ds. HR (Zachód)|Menedżer ds. HR|
-|**Human resources**|Menedżer ds. HR (Centrala)|Menedżer ds. HR|
+|**Księgowość**|Kierownik ds. księgowania|Menedżer ds. księgowania|
+|**Księgowość**|Księgowanie-A|Księgowy|
+|**Kadry**|Menedżer ds. HR (Wschód)|Menedżer ds. HR|
+|**Kadry**|Menedżer ds. HR (Zachód)|Menedżer ds. HR|
+|**Kadry**|Menedżer ds. HR (Centrala)|Menedżer ds. HR|
 
  
  <a name="departments"></a>Działy
@@ -79,7 +82,7 @@ Można tworzyć zadania opisujące podstawowe zadania, które pracownik zajmują
 
 ### <a name="job-functions"></a>Funkcje stanowisk
 
-Funkcje stanowisk są podobne do zadań. Zadanie opisuj jedno lub więcej zadań, obowiązków i zakresów odpowiedzialności które są przypisane do stanowiska. Zadania można przypisana do zleceń i umożliwia konfigurowanie i wdrażanie reguł dotyczących uprawnień do świadczeń pracowniczych. Przykłady funkcji zadań są wymienione w poniższej tabeli.
+Funkcje stanowisk są podobne do zadań. Zadanie opisuj jedno lub więcej zadań, obowiązków i zakresów odpowiedzialności które są przypisane do stanowiska. Funkcje stanowisk mogą być przypisywane do zadań i mogą służyć do ustawiania i wdrażania reguł uprawnień w systemach wynagrodzeń. W poniższej tabeli przedstawiono przykłady funkcji stanowisk.
 
 | Zadanie           | Funkcja stanowiska                                                |
 |---------------|-------------------------------------------------------------|
@@ -101,7 +104,7 @@ Zakresy odpowiedzialności pozwalają wskazać role pracy, procesy i produkty, z
 <a name="positions"></a>Pozycje
 ----------
 
-Pozycje są ważnym elementem dla niższego poziomu hierarchii organizacji. Pozycja jest pojedynczym wystąpieniem zadania. Na przykład pozycja "(Wschód), Menedżer sprzedaży" jest tylko jednym z pozycji, które jest skojarzone z tym zadaniem "Menedżer sprzedaży". Pozycje istnieje w dziale i są przypisane do pracowników.
+Pozycje są ważnym elementem dla niższego poziomu hierarchii organizacji. Pozycja jest pojedynczym wystąpieniem zadania. Na przykład stanowisko „Menedżer ds. sprzedaży (Wschód)” jest tylko jednym ze stanowisk skojarzonych z zadaniem „Menedżer ds. sprzedaży”. Stanowiska istnieją w działach i są przypisane do pracowników.
 ### <a name="position-creation-and-maintenance"></a>Tworzenie i obsługa pozycji
 
 -   Można wyświetlić historię zmian związanych z systemem na łatwo dostępnej stronie listy.
@@ -161,6 +164,8 @@ Dla niektórych rekordów można określić przyszłe zmiany w rekordzie. Nastę
 </table>
 
 Można modyfikować informacje wymienione w poprzedniej tabeli dla pozycji lub zadania i określić datę, kiedy modyfikacja pozycji lub zadania ma zacząć obowiązywać. Na przykład pozycja może być przypisana tylko do jednego pracownika, ale Sanjay Patel, który jest przypisany do stanowiska Księgowy-A, odchodzi za dwa tygodnie. Zastąpi go Joe Healy. Mimo że Sanjay jest nadal przypisany do pozycji, Joe Healy może zostać przypisany do tej samej pozycji w taki sposób, by przypisanie zaczęło obowiązywać dopiero po odejściu Sanjaya z firmy.
+
+
 
 
 

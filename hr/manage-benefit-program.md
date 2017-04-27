@@ -1,5 +1,5 @@
 ---
-title: "Definiowanie i zarządzanie programu świadczeń"
+title: "Definiowanie programu świadczeń i zarządzanie nim"
 description: "W module Zasoby ludzkie dostępny jest pakiet narzędzi służących do konfigurowania i obsługi świadczeń, potrąceń i planów wynagrodzeń pracowników, które organizacja oferuje swoim pracownikom lub przetwarza w ich imieniu. Ten artykuł zawiera informacje o sposobie konfigurowania zarządzania świadczeniami."
 author: rschloma
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="define-and-manage-a-benefits-program"></a>Definiowanie i zarządzanie programu świadczeń
+# <a name="define-and-manage-a-benefits-program"></a>Definiowanie programu świadczeń i zarządzanie nim
 
-W module Zasoby ludzkie dostępny jest pakiet narzędzi służących do konfigurowania i obsługi świadczeń, potrąceń i planów wynagrodzeń pracowników, które organizacja oferuje swoim pracownikom lub przetwarza w ich imieniu. Ten temat dostarcza informacji na temat sposobu konfigurowania korzyści Zarządzaj.
+[!include[banner](includes/banner.md)]
 
-<a name="benefit-setup"></a>Konfigurację świadczeń
+
+W module Zasoby ludzkie dostępny jest pakiet narzędzi służących do konfigurowania i obsługi świadczeń, potrąceń i planów wynagrodzeń pracowników, które organizacja oferuje swoim pracownikom lub przetwarza w ich imieniu. Ten temat zawiera informacje o sposobie konfigurowania zarządzania świadczeniami.
+
+<a name="benefit-setup"></a>Konfiguracja świadczeń
 -------------
 
 Aby przypisać pracownika do świadczenia, trzeba najpierw utworzyć elementy poszczególnych świadczeń. Te elementy łączą podobne plany świadczeń i określają domyślne ustawienia, takie jak stawki potrąceń i szczegóły księgowania. Wiele z tych ustawień można dostosować później, bo przypisywaniu pracowników do świadczeń. Dla każdego planu świadczenia organizacja może oferować kilka opcji rejestrowania lub pracownik może zrezygnować z rejestracji w planie. 
@@ -46,27 +49,29 @@ Przed przystąpieniem do tworzenia świadczeń i przypisywania do nich pracownik
 
 Dla każdego typu świadczenia, np. badania okulistyczne lub opieka stomatologiczna, organizacja może oferować pracownikom jeden lub kilka planów. Dla każdego planu organizacja może oferować różne opcje. Na przykład pracownicy mogą wykupić dodatkowy zakres ubezpieczenia o wartości swojego rocznego wynagrodzenia, albo dwu- lub trzykrotnie przewyższającej tę wartość. Każda kombinacja planu i opcji staje się świadczeniem, na jakie pracownicy mogą się zarejestrować. 
 
-[![korzyści pic](./media/benefit-pic.png)](./media/benefit-pic.png)
+[![ilustracja świadczenia](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>Uprawnienie
-Dostępność świadczeń oferowanych przez pracodawcę zależy od różnych czynników. Podczas tworzenia świadczenie usługi Microsoft Dynamics 365 dla operacji, można ustawić typ kwalifikacji, które stosuje się do tego świadczenia. 
+Dostępność świadczeń oferowanych przez pracodawcę zależy od różnych czynników. Podczas tworzenia świadczenia w programie Microsoft Dynamics 365 for Operations można ustawić dla niego typ dostępności. 
 
-Korzyści można udostępnić wszystkim pracownikom. Na przykład niektóre firmy oferują przebiegów postojowe wszystkim pracownikom jako progów zysku. Podczas tworzenia tego świadczenia, należy ustawić dostępność na **Dostępne dla wszystkich pracowników**. 
+Można udostępnić świadczenie wszystkim pracownikom. Na przykład niektóre firmy oferują przepustki parkingowe wszystkim pracowniom jako świadczenia nieodpłatne. Podczas tworzenia tego świadczenia, należy ustawić dostępność na **Dostępne dla wszystkich pracowników**. 
 
-Dla innych korzyści, takich jak garnishments i opłaty podatku nie dotyczy kwalifikowalności. Serwatka tworzyć te typy świadczeń, Kwalifikowalność jest ustawiona na **ominięcie przetwarzania uprawnień do**. 
+W przypadku innych świadczeń, takich jak zajęcia wierzytelności lub opłaty podatkowe, opcje uprawnień nie mają zastosowania. Podczas tworzenia świadczeń tego typu ustawia się uprawnienia na **Pomiń przetwarzanie uprawnień**. 
 
-Wreszcie uprawnienia do świadczenia mogą być oparte na regułach. Na przykład firma oferuje dwa rodzaje świadczenie ubezpieczeń na życie do pracowników. Wykonawczy pracowników kwalifikują się do jednego planu ubezpieczeń na życie, natomiast innych pracowników pełnoetatowych kwalifikują się do innego programu ubezpieczeń na życie. W usłudze Dynamics 365 dla operacji można utworzyć regułę uprawnień do świadczeń, aby znaleźć wszystkich pracowników wykonawczy i innej reguły, aby znaleźć wszystkich pracowników pełnoetatowych i następnie stosują te zasady do odpowiednich świadczeń.
+Uprawnienia do świadczeń mogą również opierać się na regułach. Na przykład firma oferuje pracownikom dwa rodzaje ubezpieczeń na życie. Członkowie kadry kierowniczej są uprawnieni do jednego planu ubezpieczenia na życie, a dla pozostałych pracowników pełnoetatowych dostępny jest inny plan ubezpieczenia na życie. W programie Dynamics 365 for Operations można utworzyć regułę wyszukującą wszystkich członków kadry kierowniczej oraz regułę wyszukującą wszystkich pozostałych pracowników pełnoetatowych, a następnie zastosować te reguły do odpowiedniego świadczenia.
 
 ## <a name="enrollment"></a>Rejestracja
 Po utworzeniu świadczenia oferowanego w Twojej organizacji i określeniu dostępności, można zarejestrować w nich pracowników. W jednym procesie można zarejestrować jednego pracownika w świadczeniu lub wielu pracowników w jednym lub kilku świadczeniach. 
 
-Czasami organizacja wstrzymuje realizację jakiegoś świadczenia. W takim przypadku należy zaktualizować korzyści i pracowników, którzy są włączeni. Wygaśnięcia świadczeń masy pozwala zmienić datę wygaśnięcia tego świadczenia w tym samym czasie zarówno świadczeń i rejestracje pracownika. Można również wybrać wielu pracowników, którzy są zarejestrowani do świadczenia i zmienić datę końcową ich polisy. 
+Czasami organizacja wstrzymuje realizację jakiegoś świadczenia. W takim przypadku trzeba zaktualizować świadczenie i zarejestrowanych w nim pracowników. Grupowe wygaszanie świadczenia pozwala za jednym razem zmienić datę ważności zarówno dla świadczenia, jak i dla rejestracji pracowników w tym świadczeniu. Można również wybrać wielu pracowników, którzy są zarejestrowani do świadczenia i zmienić datę końcową ich polisy. 
 
 To samo dotyczy grupowego przedłużania świadczeń, za pomocą którego można wydłużyć datę ważności zarówno dla świadczenia, jak i dla rejestracji pracowników w danym świadczeniu, jeśli świadczenie ma być oferowane dłużej, niż pierwotnie zaplanowano.
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Benefit eligibility policies](benefit-eligibility-policies.md)
+[Zasady uprawnienia do świadczenia](benefit-eligibility-policies.md)
+
+
 
 

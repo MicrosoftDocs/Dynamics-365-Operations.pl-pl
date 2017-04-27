@@ -1,5 +1,5 @@
 ---
-title: "Rozlicz płatności częściowe dostawcy przed datą rabatu z ostatecznej wypłaty po daty rabatu"
+title: "Rozliczanie płatności częściowej dostawcy przed datą rabatu z ostateczną datą płatności po dacie rabatu"
 description: "Ten artykuł prowadzi przez scenariusz, w którym jest dokonywanych wiele płatności częściowych — niektóre w okresie rabatu gotówkowego, a inne poza okresem rabatu gotówkowego."
 author: twheeloc
 manager: AnnBe
@@ -26,21 +26,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Rozlicz płatności częściowe dostawcy przed datą rabatu z ostatecznej wypłaty po daty rabatu
+# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Rozliczanie płatności częściowej dostawcy przed datą rabatu z ostateczną datą płatności po dacie rabatu
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł prowadzi przez scenariusz, w którym jest dokonywanych wiele płatności częściowych — niektóre w okresie rabatu gotówkowego, a inne poza okresem rabatu gotówkowego.
 
-Firma Fabrikam nabywają towary od dostawcy 3057. Firma Fabrikam otrzymuje rabat gotówkowy, 1 procent, jeśli faktura jest zapłacona w ciągu 14 dni. Faktury muszą zostać zapłacone w ciągu 30 dni. Dostawca oferuje też firmie Fabrikam rabaty gotówkowe za uregulowanie płatności. Parametry rozliczenia znajdują się na **Rozrachunki z dostawcami Parametry** strony.
+Firma Fabrikam nabywa towary od dostawcy 3057. Fabrikam otrzymuje rabat gotówkowy w wysokości 1%, jeśli faktura jest zapłacona w ciągu 14 dni. Faktury muszą zostać zapłacone w ciągu 30 dni. Dostawca oferuje też firmie Fabrikam rabaty gotówkowe za uregulowanie płatności. Parametry rozliczenia znajdują się na stronie **Parametry modułu rozrachunków z dostawcami**.
 
 ## <a name="invoice-on-june-25"></a>Faktura z 25 czerwca
-25 czerwca kwietnia wchodzi i księguje fakturę za 1 000,00 dla dostawcy 3057. April może wyświetlić tę transakcję na stronie **Transakcje dostawcy**.
+25 czerwca April wprowadza i księguje fakturę na kwotę 1000,00 dla dostawcy 3057. April może wyświetlić tę transakcję na stronie **Transakcje dostawcy**.
 
 | Załącznik   | Typ transakcji | Data      | Faktura | Kwota debetu w walucie transakcji | Kwota kredytu w walucie transakcji | Saldo   | Waluta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
 | Inv-10020 | Faktura          | 6/25/2015 | 10020   |                                      | 1000,00                              | -1000,00 | USD      |
 
 ## <a name="partial-payment-on-july-2"></a>Częściowa płatność 2 lipca
-2 lipca April chce zapłacić kwotę 300.00 z tej faktury. Taka płatność upoważnia do rabatu, ponieważ firma Fabrikam oferuje rabaty w przypadku częściowych płatności. Dlatego April płaci 297,00 i otrzymuje rabat w wysokości 3,00. Ona tworzy arkusz płatności i wprowadzi wiersz dla dostawcy 3057. Następnie otwiera **rozliczenia transakcji** strony, tak aby ona można oznaczyć do rozliczenia faktury.
+2 lipca April chce zapłacić kwotę 300.00 z tej faktury. Taka płatność upoważnia do rabatu, ponieważ firma Fabrikam oferuje rabaty w przypadku częściowych płatności. Dlatego April płaci 297,00 i otrzymuje rabat w wysokości 3,00. Tworzy arkusz płatności i wprowadza wiersz dla dostawcy 3057. Następnie otwiera stronę **Rozliczenia transakcji**, aby oznaczyć fakturę do rozliczenia.
 
 | Zaznacz     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -91,7 +94,7 @@ Następnie April księguje płatność. Gdy otwiera stronę **Transakcje dostawc
 | APP-10021  | Płatność          | 7/15/2015 |         | 700.00                               |                                       | 0,00    | USD      |
 
 ## <a name="remaining-payment-on-july-15-use-cash-discount--always"></a>Pozostała płatność 15 lipca, użyj rabatu gotówkowego = zawsze
-Jeśli dostawcy umożliwia kwietnia podjąć rabat, nawet jeśli jest ona płacenia po dacie rabatu, ona zmienić wartość w **Użyj rabatu gotówkowego** na **zawsze**. **Oblicz rabaty gotówkowe dla częściowych zapłat** ustawienie zostanie zastąpione i rabat jest pobierana. Kwota płatności wynosi 693,00, a pozostałe 7,00 to rabat.
+Jeśli dostawca oferuje April rabat mimo zapłacenia po dacie rabatu, może ona zmienić wartość w polu **Użyj rabatu gotówkowego** na **Zawsze**. Ustawienie **Oblicz rabaty gotówkowe dla częściowych zapłat** jest zastępowane i przyznawany jest rabat. Kwota płatności wynosi 693,00, a pozostałe 7,00 to rabat.
 
 | Zaznacz     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota debetu w walucie transakcji | Kwota kredytu w walucie transakcji | Waluta | Kwota do rozliczenia |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
@@ -116,6 +119,8 @@ Następnie April księguje płatność. Gdy otwiera stronę **Transakcje dostawc
 | DISC-10020 | Rabat gotówkowy    | 7/1/2015  |         | 3,00                                 |                                       | 0,00    | USD      |
 | APP-10021  | Płatność          | 7/15/2015 |         | 693.00                               |                                       | 0,00    | USD      |
 | DISC-10021 | Rabat gotówkowy    | 7/15/2015 |         | 7,00                                 |                                       | 0,00    | USD      |
+
+
 
 
 

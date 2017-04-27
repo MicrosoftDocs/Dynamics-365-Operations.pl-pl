@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Wpisywanie kombinacji wymiarów i kont (formant Wpis podzielony na segmenty)
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera opis sposobów wprowadzania kombinacji kont i wymiarów albo kont księgowych. Narzędzie wprowadzania często jest nazywane formantem wpisów podzielonych na segmenty.
 
-Użytkownikom wprowadzania kombinacji kont i wymiarów na różnych stronach, takich jak strony dla arkuszy finansowych budżetowania i definicje księgowania. Prawidłowa kombinacja wymiarów i kont zależy od struktury konta przypisanego do księgi oraz zaawansowanych reguł przypisanych do struktury konta. Gdy użytkownicy wprowadzają połączenie, mogą albo ręcznie wpisz wartości lub wykorzystać bogate, możliwości wyszukiwania. Po wprowadzeniu pole po rozpoczęciu wpisywania i będzie szukał, wartość i opis. Na przykład jeśli wpiszesz 180 będzie szukał każdą wartość, która rozpoczyna się od tej kombinacji numerów. Lub możesz wpisać środków pieniężnych i będzie przeszukiwać każdą wartość, która ma opis, który zaczyna się od środków pieniężnych. Można również użyć symbolu wieloznacznego, takich jak \*środków pieniężnych lub \*180 wyszukiwania, jeśli wartości lub opisu zawierają kryteria wyszukiwania. 
+Użytkownicy wpisują kombinacje wymiarów i kont na różnych stronach, np. na stronach arkuszy głównych, budżetowania i definicji księgowania. Prawidłowa kombinacja wymiarów i kont zależy od struktury konta przypisanego do księgi oraz zaawansowanych reguł przypisanych do struktury konta. Gdy użytkownicy wpisują kombinację, mogą ręcznie wprowadzać wartości lub skorzystać z zaawansowanej funkcji wyszukiwania. Podczas wypełniania pola można zacząć pisanie, a system poszuka wartości i opisu. Na przykład jeśli wpiszesz 180, system poszuka każdej wartość rozpoczynającej się od tej kombinacji cyfr. Lub możesz wpisać Gotówka, a system poszuka każdej wartości, w której opis zaczyna się słowem Gotówka. Można również użyć symbolu wieloznacznego, takiego jak \*Gotówka lub \*180 , aby szukać wartości lub opisu zawierającego kryterium wyszukiwania. 
 
 W poniższej tabeli opisano skróty klawiaturowe, które mogą być używane po zamknięciu wyszukiwania.
 
@@ -108,5 +111,7 @@ W poniższej tabeli opisano skróty klawiaturowe, które mogą być używane po 
 </table>
 
  
+
+
 
 

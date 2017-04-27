@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Wyszukiwanie produktów i wariantów produktów podczas wprowadzania zamówień
 
+[!include[banner](../includes/banner.md)]
+
+
 Za pomocą pola <strong>Numer pozycji</strong> można szukać produktów i wariantów produktów podczas ręcznego tworzenia wiersza zamówienia sprzedaży lub zakupu.  Dzięki temu można szybko znaleźć warianty produktu, gdy znasz tylko fragment konfiguracji lub jeden wymiar produktu.
 
-Czasami, posiadające zbyt wiele coś nie jest najlepsza sytuacja, a jest to szczególnie ważne, jeśli sprzedajesz wiele produktów, które są podobne i próbuje do zapamiętania kody towarów lub nazw wyszukiwania produktów w celu znalezienia właściwego produktu, aby umieścić na zamówienie sprzedaży. Można użyć **numer** pola w wierszu zamówienia sprzedaży lub wiersza zamówienia zakupu jako pola wyszukiwania. Można wprowadzić dowolną część nazwy, numeru lub wymiaru produktu i uzyskać odnośnik pokazujący listę wszystkich towarów pasujących do szukanego słowa.
+Czasami posiadanie zbyt dużo czegoś jest utrudnieniem zamiast ułatwieniem. Szczególnie dotyczy to sytuacji, gdy sprzedajesz wiele produktów podobnych do siebie, i próbujesz zapamiętać numery towarów lub aliasy produktów w celu odnalezienia właściwych produktów do umieszczenia w zamówieniu sprzedaży. Jako pola wyszukiwania można użyć pola **Numer pozycji** w wierszu zamówienia sprzedaży lub wierszu zamówienia zakupu. Można wprowadzić dowolną część nazwy, numeru lub wymiaru produktu i uzyskać odnośnik pokazujący listę wszystkich towarów pasujących do szukanego słowa.
 
 ## <a name="how-search-works"></a>Jak działa wyszukiwanie
 Podczas wyszukiwania produktów lub wariantów produktów trzeba wiedzieć, jak funkcja wyszukiwania znajduje produkty pasujące do wprowadzonego tekstu. Przy zwracaniu wyników wyszukiwania obowiązują następujące kluczowe zasady wyszukiwania:
@@ -42,7 +45,7 @@ Podczas wyszukiwania produktów lub wariantów produktów trzeba wiedzieć, jak 
 
 ### <a name="examples"></a>Przykłady
 
-W poniższych przykładach użyto produktów i wariantów produktów w celu zilustrowania działania funkcji wyszukiwania w różnych scenariuszach. **Wymagania wstępne:** pod **sprzedaży i marketingu &gt;instalacji &gt;wyszukiwania &gt;parametry wyszukiwania**&gt;**wyszukiwania typu**, wybierz opcję **pełne dopasowanie** opcji.
+W poniższych przykładach użyto produktów i wariantów produktów w celu zilustrowania działania funkcji wyszukiwania w różnych scenariuszach. **Warunki wstępne:** W ustawieniu **Sprzedaż i marketing &gt; Ustawienia &gt; Wyszukiwanie &gt; Parametry wyszukiwania** &gt; **Typ wyszukiwania** zaznacz wartość **Pełne dopasowanie**.
 
 | Typ produktu     | Nazwa produktu    | Wyświetlany numeru produktu | Numer towaru | Konfiguracja |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -56,22 +59,22 @@ Jeśli wpiszesz „05”, w wynikach uzyskasz tylko drugi wariant produktu, poni
 
 Jeśli wpiszesz „głośn 05”, nie otrzymasz żadnych wyników. Jest to spowodowane tym, że funkcja wyszukiwania szuka pełnego wprowadzonego tekstu. Wyszukiwanie nie będzie próbowało znaleźć pozycji ze słowem „głośn”, a następnie zawęzić wyniki tylko do tych, które zawierają element „05”.  
 
-Można ograniczyć liczbę wyników wyszukiwania za pomocą **liczba wyników** w **sprzedaży i marketingu &gt;instalacji &gt;wyszukiwania &gt;parametry wyszukiwania** strony. Jeśli w tym polu zostanie ustawiona wartość 0, będą zwracane wszystkie wyniki wyszukiwania. Jeśli zostanie ustawiona wartość 10, będzie zwracanych maksymalnie 10 wyników wyszukiwania.
+Liczbę wyników wyszukiwania można ograniczyć. Służy do tego pole **Liczba wyników** na stronie **Sprzedaż i marketing &gt; Ustawienia &gt; Wyszukiwanie &gt; Parametry wyszukiwania**. Jeśli w tym polu zostanie ustawiona wartość 0, będą zwracane wszystkie wyniki wyszukiwania. Jeśli zostanie ustawiona wartość 10, będzie zwracanych maksymalnie 10 wyników wyszukiwania.
 
 ## <a name="configure-the-product-search"></a>Konfigurowanie wyszukiwania produktów
-Zanim będzie można używać funkcji wyszukiwania produktów i wariantów produktów, wykonaj następujące kroki w celu skonfigurowania funkcji wyszukiwania produktów. [![3 kroki, aby skonfigurować wyszukiwanie produktu\_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
+Zanim będzie można używać funkcji wyszukiwania produktów i wariantów produktów, wykonaj następujące kroki w celu skonfigurowania funkcji wyszukiwania produktów. [![3 kroki konfigurowania wyszukiwania produktów\_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
 
 ### <a name="step-1-include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Krok 1: Umieszczenie wszystkich odpowiednich identyfikatorów i wymiarów produktów i wariantów produktów w kryteriach wyszukiwania
 
 Przykładami identyfikatorów i wymiarów produktów i wariantów produktów, które można wyszukiwać, są **Nazwa produktu, Numer pozycji**, **Wyświetlany numeru produktu, Konfiguracja, Kolor, Rozmiar, Styl, Alias** itp.  
 
-Przejdź do **sprzedaży i marketingu &gt;instalacji &gt;wyszukiwania &gt;kryteria wyszukiwania** strony. Na stronie **Kryteria wyszukiwania** można określić kryteria dotyczące odbiorcy, prospekta i wyszukiwania produktów. Upewnij się, że strona jest filtrowana przy użyciu kryteriów wyszukiwania produktów. Można to zrobić, przełączając na widok **Produkt** w menu strony.  
+Przejdź do strony **Sprzedaż i marketing &gt; Ustawienia &gt; Wyszukiwanie &gt; Kryteria wyszukiwania**. Na stronie **Kryteria wyszukiwania** można określić kryteria dotyczące odbiorcy, prospekta i wyszukiwania produktów. Upewnij się, że strona jest filtrowana przy użyciu kryteriów wyszukiwania produktów. Można to zrobić, przełączając na widok **Produkt** w menu strony.  
 
-Aby dodać numer produktu wyświetlania kryteria wyszukiwania, kliknij przycisk **nowy** w menu na stronie. Spowoduje to dodanie nowego rekordu w **kryteria wyszukiwania** siatki. Otwórz odnośnik kolumny **Nazwa pola** i wybierz opcję **DisplayProductNumber**. Aby dodać kryteria wyszukiwania konfiguracji produktu, należy utworzyć nowy rekord w ** kryteria wyszukiwania ** siatki i została wybrana opcja **configId** w **Nazwa pola** kolumny. W ten sam sposób utwórz rekord z **Nazwa pola** > **InventColorId** dla wymiaru koloru, **InventSizeId** dla wymiaru rozmiaru i **InventStyleId** dla wymiaru stylu.
+Aby do kryteriów wyszukiwania dodać wyświetlany numer produktu, w menu strony kliknij przycisk **Nowy**. Spowoduje to dodanie nowego rekordu w siatce **Kryteria wyszukiwania**. Otwórz odnośnik kolumny **Nazwa pola** i wybierz opcję **DisplayProductNumber**. Aby do kryteriów wyszukiwania dodać konfigurację produktu, utwórz nowy rekord w siatce **Kryteria wyszukiwania** i wybierz opcję **configId** w kolumnie **Nazwa pola**. W ten sam sposób utwórz rekord z **Nazwa pola** > **InventColorId** dla wymiaru koloru, **InventSizeId** dla wymiaru rozmiaru i **InventStyleId** dla wymiaru stylu.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Krok 2: Wypełnienie tabeli bazy danych używanej do wyszukiwania produktów
 
-Na stronie **Kryteria wyszukiwania** kliknij przycisk **Aktualizuj dane wyszukiwania**. W oknie dialogowym **Aktualizuj dane wyszukiwania** upewnij się, że ustawienie **Źródło** ma wartość **Produkt**, a następnie kliknij przycisk **OK**. System będzie agregacja w jednej tabeli wszystkie kryteria wyszukiwania określonego w kroku 1. Jeśli masz wiele produktów i wariantów produktu tej operacji mogą być bardzo długie i może pojawić się ostrzeżenie. Zalecamy, aby zaplanować wypełnianie tabeli wyszukiwania na serwerze przetwarzania wsadowego w czasie, gdy serwer nie jest zbyt zajęty.  
+Na stronie **Kryteria wyszukiwania** kliknij przycisk **Aktualizuj dane wyszukiwania**. W oknie dialogowym **Aktualizuj dane wyszukiwania** upewnij się, że ustawienie **Źródło** ma wartość **Produkt**, a następnie kliknij przycisk **OK**. System zbierze w jednej tabeli wszystkie wybrane kryteria wyszukiwania określone w kroku 1. Jeśli masz wiele produktów i wariantów produktów, ta operacja może być czasochłonna i może się pojawić ostrzeżenie. Zalecamy, aby zaplanować wypełnianie tabeli wyszukiwania na serwerze przetwarzania wsadowego w czasie, gdy serwer nie jest zbyt zajęty.  
 
 Do czasu wypełnienia tabeli wyszukiwanie produktów nie będzie zwracać poprawnych wyników. Jeśli nie otrzymujesz żadnych wyników wyszukiwania, sprawdź, czy ta tabela jest wypełniona.  
 
@@ -79,8 +82,10 @@ Tabelę należy wypełniać tylko po zmodyfikowaniu kryteriów wyszukiwania. Now
 
 ### <a name="step-3-enable-the-lookup-for-product-search-on-sales-and-purchase-order-lines"></a>Krok 3: Włączenie odnośnika dla wyszukiwania produktów w wierszach zamówień sprzedaży i zakupu
 
-Funkcję tę można włączyć, przechodząc do **sprzedaży i marketingu &gt;instalacji &gt;wyszukiwania &gt;parametry wyszukiwania** i ustawienie **Włączanie wyszukiwania dla wyszukiwania** do **tak** na **ogólne** kartę.  
+Można włączyć tę funkcję, przechodząc strony **Sprzedaż i marketing &gt; Ustawienia &gt; Wyszukiwanie &gt; Parametry wyszukiwania** i na karcie **Ogólne** w opcji **Włącz odnośnik dla wyszukiwania** zaznaczyć wartość **Tak**.  
 
 Zachowaniem domyślnym przy wprowadzaniu wiersza zamówienia sprzedaży jest otwarcie strony **Wyszukiwanie produktu**, gdy zaczniesz pisać w polu **Numer pozycji**, a następnie naciśniesz klawisz **Tab**. Strona **Wyszukiwanie produktu** zmienia kontekst podczas tworzenia wiersza zamówienia, dlatego może być uznawana za niepotrzebnie natarczywą. Jeśli wolisz otrzymać wyniki wyszukiwania w odnośniku i nie tracić kontekstu podczas wprowadzania wiersza zamówienia, możesz użyć odnośnika wyszukiwania. Jeśli wyszukiwano produktu lub wariantu produktu, ale nie zaznaczysz nic w odnośniku i naciśniesz klawisz **Tab**, zostanie wyświetlona strona **Wyszukiwanie produktu**.
+
+
 
 

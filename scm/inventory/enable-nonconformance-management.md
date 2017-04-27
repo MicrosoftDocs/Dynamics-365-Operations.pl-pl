@@ -1,5 +1,5 @@
 ---
-title: "Zarządzanie braku zgodności"
+title: "Zarządzanie niezgodnościami"
 description: "W tym artykule opisano podstawową konfigurację niezbędną do korzystania z funkcji niezgodności. Dodatkowe ustawienia są potrzebne do używania zleceń kontroli jakości."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="nonconformance-management"></a>Zarządzanie braku zgodności
+# <a name="nonconformance-management"></a>Zarządzanie niezgodnościami
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule opisano podstawową konfigurację niezbędną do korzystania z funkcji niezgodności. Dodatkowe ustawienia są potrzebne do używania zleceń kontroli jakości. 
 
@@ -34,7 +37,7 @@ Aby włączyć zarządzanie niezgodnościami, wykonaj następujące kroki:
 1.  Zdefiniuj parametry Zarządzanie zapasami i magazynem związane z niezgodnościami.
     -   W opcji **Korzystaj z funkcji zarządzania jakością** wybierz wartość **Tak**.
     -   W polu **Stawka godzinowa** wpisz stawkę godzinową pracy w walucie lokalnej. Stawka godzinowa używana jest do obliczania kosztów operacji związanych z niezgodnością. Stawka godzinowa i obliczone koszty dostarczają informacji pomocniczych o niezgodności. Nie mają one styczności z innymi funkcjami.
-    -   Użyj **zarządzania jakością** tab na **Konfiguracja raportu o** stronę, aby zdefiniować typ dokumentu do druku. Drukowanie raportu braku zgodności, znacznik niezgodności lub raport dotyczący korekt. Możesz zdefiniować więcej niż jeden rekord w celu drukowania różnych typów dokumentów w raporcie lub drukowania notatek wewnętrznych i zewnętrznych. Strona **Typ dokumentu** może być pomocna przy definiowaniu unikatowego typu dokumentu dla niezgodności i unikatowego typu dokumentu dla korekty. Załóżmy, że chcesz wpisywać notatki dotyczące niezgodności za pomocą unikatowego typu dokumentu dla niezgodności. W takim przypadku zidentyfikuj unikatowy typ dokumentu w opcjach raportu.
+    -   Użyj karty **Zarządzanie jakością** na stronie **Konfiguracja raportu**, aby zdefiniować typ dokumentu do wydrukowania. Można wydrukować raport o niezgodności, znacznik niezgodności lub raport korekty. Możesz zdefiniować więcej niż jeden rekord w celu drukowania różnych typów dokumentów w raporcie lub drukowania notatek wewnętrznych i zewnętrznych. Strona **Typ dokumentu** może być pomocna przy definiowaniu unikatowego typu dokumentu dla niezgodności i unikatowego typu dokumentu dla korekty. Załóżmy, że chcesz wpisywać notatki dotyczące niezgodności za pomocą unikatowego typu dokumentu dla niezgodności. W takim przypadku zidentyfikuj unikatowy typ dokumentu w opcjach raportu.
     -   Włącz sekwencji numerów dla odwołania do niezgodności i korekty.
 
 2.  Włączanie zatwierdzania niezgodności przez użytkownika. W polu **Nazwa** na stronie **Użytkownicy** przypisz pracownika do każdego użytkownika, który musi zatwierdzić niezgodność. System śledzi historię niezgodności, obserwując pracowników, którzy zmienili stan niezgodności. Użytkownik nie może zatwierdzić niezgodności, jeśli nie ma przypisanego identyfikatora pracownika.
@@ -47,10 +50,12 @@ Aby włączyć zarządzanie niezgodnościami, wykonaj następujące kroki:
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Tworzenie i przetwarzanie niezgodności (Przewodnik zadania)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
+[Tworzenie i przetwarzanie rekordu niezgodności (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
 
-[Quality management processes](quality-management-processes.md)
+[Procesy zarządzania jakością](quality-management-processes.md)
 
-[Konfigurowanie wymagań wstępnych dla zarządzania niezgodności (Przewodnik zadania)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+[Konfigurowanie warunków wstępnych zarządzania brakiem zgodności (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Organizowanie zasobów projektu"
-description: "Ten temat zawiera informacje o finansowanie projektów."
+description: "Ten temat zawiera informacje o organizowaniu zasobów projektu."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,59 +27,62 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-resourcing"></a>Organizowanie zasobów projektu
 
-Ten temat zawiera informacje o finansowanie projektów.
+[!include[banner](../includes/banner.md)]
 
-Jednym z wyzwań dla menedżerowie projektów i menedżerowie zasobów podczas etapu planowania projektu jest alokacja zasobów, gdzie należy ustalić i zarezerwować prawidłowego zasobu do pracy nad projektem. W programie Microsoft Dynamics 365 dla operacji zwiększenia możliwości dla projektów umożliwiają definiowanie ról, które są traktowane jako tymczasowe zasoby, które mogą być zarezerwowane dla konkretnego zaangażowania lub część o naszych zaręczynach. Ten rodzaj organizowania zasobów pozwala kierownikom projektów i menedżerom zasobów wykonywać następujące zadania:
+
+Ten temat zawiera informacje o organizowaniu zasobów projektu.
+
+Jednym z problemów kierowników projektów i menedżerów zasobów podczas etapu planowania projektu jest alokacja zasobów, gdzie muszą ustalić i zarezerwować właściwe zasoby do pracy nad projektem. W programie Microsoft Dynamics 365 for Operations funkcje organizowania zasobów projektów umożliwiają zdefiniowanie ról traktowanych jako zasoby tymczasowe, które można zarezerwować dla określonego projektu lub części projektu. Ten rodzaj organizowania zasobów pozwala kierownikom projektów i menedżerom zasobów wykonywać następujące zadania:
 
 -   Definiowanie roli posiadającej wymagane kompetencje, aby ułatwić dopasowywanie zasobów.
--   Role służy do definiowania początkowego zaangażowania harmonogram, który jest oparty na zarezerwowanych zasobów.
+-   Używanie ról do definiowania początkowego harmonogramu projektu opartego na zarezerwowanych zasobach.
 -   Szacowanie kosztów i określanie początkowego budżetu na podstawie ról i zasobów przypisanych do projektu.
--   Ról należy używać, aby oszacować liczbę rezerwacji zasobów, które są wymagane dla każdego zaangażowania.
+-   Używanie ról do szacowania liczby rezerwacji zasobów, które są wymagane dla każdego projektu.
 -   Szacowanie liczby zasobów, które są wymagane dla całego cyklu życia projektu.
 -   Projektowanie struktury podziału pracy (SPP) przy użyciu początkowych przypisań zasobów.
 
-[![Cyklu życia projektu](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg) 
+[![Cykl życia projektu](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg) 
 
-Jako przychody planowania projektu planowanych zasobów może być zastąpiony przez zasoby. Menedżer projektu można wrócić i służy do aktualizowania rezerwacji odpowiednich zasobów podczas żadnego z etapów projektu.
+Wraz z postępami planowania projektu zaplanowane zasoby można zastępować zasobami pracowników. Kierownik projektu może również wrócić i zaktualizować rezerwacje zasobów podczas dowolnego etapu projektu.
 
 ## <a name="set-up-project-resources"></a>Konfigurowanie zasobów projektu
-Należy utworzyć kalendarz i skojarzyć go z pracownikiem. Kalendarz jest używany do planowania projektu i czasu pracy zasobów, które obecnie są zarezerwowane dla projektu. Podczas konfigurowania kalendarza kierownicy projektu mogą wykonywać bilansowanie zasobów jako część procesu optymalizacji zasobów. Na podstawie harmonogramu w kalendarzu można nakładać ograniczenia na zasoby. Można zdefiniować kalendarz na **kalendarze** strony. 
+Należy utworzyć kalendarz i skojarzyć go z pracownikiem. Kalendarz jest używany do planowania projektu i czasu pracy zasobów, które są zarezerwowane dla projektu. Podczas konfigurowania kalendarza kierownicy projektu mogą wykonywać bilansowanie zasobów jako część procesu optymalizacji zasobów. Na podstawie harmonogramu w kalendarzu można nakładać ograniczenia na zasoby. Kalendarz można zdefiniować na stronie **Kalendarze**. 
 
-Po skonfigurowaniu pracownika jako zasób projektu można wybrać z pracowników, które pracuje w firmie, dla którego konfigurujesz zasobów lub wybrać pracowników z innych firm w obrębie organizacji. Są to zasoby międzyfirmowego. W poniższych procedurach opisano, jak skonfigurować pracownika jako zasób projektu w firmie i jak skonfigurować zasób projektu międzyfirmowego.
+Podczas konfigurowania pracownika jako zasobu projektu można wybierać spośród pracowników pracujących w firmie, dla której konfigurujesz zasoby, lub spośród pracowników w innych firmach w organizacji. Są to zasoby międzyfirmowe. W poniższych procedurach opisano, jak skonfigurować pracownika jako zasób projektu w swojej firmie i jak skonfigurować międzyfirmowy zasób projektu.
 
 ### <a name="set-up-a-worker-as-a-project-resource"></a>Konfigurowanie pracownika jako zasobu projektu
 
-1.  Na **pracowników** strona w **pracowników** listy, wybierz pracownika, który dodajesz jako zasób projektu i otwórz rekord pracownika.
-2.  W okienku akcji kliknij polecenie **projekt**&gt;**instalacji**&gt;**ustawienia projektu**.
+1.  Na stronie **Pracownicy** na liście **Pracownicy** wybierz pracownika, którego chcesz dodać jako zasób projektu, i otwórz rekord tego pracownika.
+2.  W okienku akcji kliknij kolejno opcje **Projekt** &gt; **Ustawienia** &gt; **Ustawienia projektu**.
 3.  Wybierz kalendarz, a następnie zamknij stronę.
 
 Można również określić domyślne projekty dla zasobu jako rodzaj wstępnego przypisania. Wstępnych przypisań można używać, gdy menedżer zasobów lub kierownik projektu wie z wyprzedzeniem, w których projektach zasób będzie pracował. Wstępne przypisania mogą być również oparte na wniosku inwestora projektu lub klienta. Aby wstępnie przypisać projekt, na stronie **Przypisz projekty** na karcie **Projekty** na liście **Pozostałe projekty** wybierz odpowiedni projekt.
 
-### <a name="set-up-an-intercompany-resource"></a>Konfigurowanie zasobów międzyfirmowych
+### <a name="set-up-an-intercompany-resource"></a>Konfigurowanie zasobu międzyfirmowego
 
-Po skonfigurowaniu pracownika jako zasobów międzyfirmowych, należy wypełnić pola konfiguracji w pożyczek firma i firma finansowania zewnętrznego. 
+Podczas konfigurowania pracownika jako zasobu międzyfirmowego należy wypełnić pola konfiguracji w firmach wypożyczającej i pożyczającej. 
 
-**W firmie pożyczek:**
+**W firmie wypożyczającej:**
 
-1.  W usłudze Dynamics 365 dla operacji Sprawdź, czy firma pożyczek jest zaznaczone i następnie wykonaj procedurę powyżej, "Ustaw pracownika jako zasób projektu".
-2.  Przejdź do ** księgi głównej **&gt; ** ustawienia księgowania **&gt;**księgowania międzyfirmowego**. Click **New**.
-3.  W ** identyfikator podmiotu prawnego ** wybierz firma pożyczek. Wypełnij pozostałe pola, a następnie kliknij przycisk **zapisać**.
-4.  Przejdź ** zarządzania projektami i księgowości **&gt; ** Instalator **&gt;**ceny ** &gt;**cenę transferową**.** **
-5.  Na wytwarzanie cenę transferową ** formularza, kliknij przycisk **nowy**i w ** pożyczającego podmiotu prawnego ** wybierz odpowiednią firmę.
-6.  Jeśli chcesz tylko pożyczki firmy finansowania zewnętrznego zasobu, który został utworzony na początku niniejszej sekcji w **zasobów** wybierz nazwę zasobu, który został utworzony. Jeśli chcesz udostępnić wszystkie zasoby w firmie do zaciągania firmy, zostawić ** zasobu ** pole puste.
-7.  Przejdź do ** zarządzania projektami i księgowości **&gt; ** Instalator **&gt;**Zarządzanie projektami i ich księgowanie parametry**i na wytwarzanie międzyfirmowe ** Ustaw ** Włącz międzyfirmowe planowanie zasobów i kart czasu pracy ** pola do **tak**.
+1.  W usłudze Dynamics 365 for Operations upewnij się, że firma wypożyczająca jest wybrana, a następnie wykonaj opisaną wyżej procedurę „Konfigurowanie pracownika jako zasobu projektu”.
+2.  Wybierz kolejno opcje **Księga główna** &gt; **Ustawienia księgowania** &gt; **Księgowanie międzyfirmowe**. Kliknij przycisk **Nowy**.
+3.  W polu **Identyfikator firmy** wybierz firmę wypożyczającą. Wypełnij pozostałe pola, a następnie kliknij przycisk **Zapisz**.
+4.  Wybierz kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Ceny** &gt; **Cena transferowa**.** **
+5.  W formularzu **Cena transferowa** kliknij przycisk **Nowy**, a następnie w polu **Firma pożyczająca** wybierz odpowiednią firmę.
+6.  Jeśli chcesz firmie pożyczającej wypożyczyć tylko zasób utworzony na początku niniejszej sekcji, w polu **Zasób** zaznacz nazwę utworzonego zasobu. Jeśli chcesz udostępnić firmie pożyczającej wszystkie zasoby istniejące w firmie, zostaw pole **Zasób** puste.
+7.  Wybierz kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Parametry modułu Zarządzanie projektami i ich księgowanie** i na karcie **Międzyfirmowe** ustaw w polu **Włącz międzyfirmowe planowanie zasobów i kart czasu pracy** wartość **Tak**.
 
-**W firmie finansowania zewnętrznego:**
+**W firmie pożyczającej:**
 
-1.  Przejdź do **zarządzania projektami i księgowości**&gt;**zasoby projektu**&gt;**Lista zasobów**.
-2.  W filtrze wyszukiwania wprowadź nazwę zasobu, który został utworzony w poprzedniej procedurze dla pożyczek firmy zweryfikować, że nazwa znajduje się na liście zasobów firmy finansowania zewnętrznego.
+1.  Wybierz kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Zasoby projektu** &gt; **Lista zasobów**.
+2.  W filtrze wyszukiwania wprowadź nazwę zasobu, który został utworzony w poprzedniej procedurze dla firmy wypożyczającej, aby sprawdzić, czy nazwa znajduje się na liście zasobów dla firmy pożyczającej.
 
 ## <a name="manage-resource-competencies"></a>Zarządzanie kompetencjami zasobów
-Kompetencje zasobu są istotnym elementem zarządzania zasobami. Kompetencje mogą służyć jako podstawa do identyfikowania zasobów, które mają odpowiednią kombinację umiejętności, wykształcenia, certyfikacji i doświadczenia w projektach. Należy skonfigurować te informacje dla każdego zasobu i aktualizować je na bieżąco. W ten sposób można zmaksymalizować możliwości działania, gdy konkretne kompetencje zasobów są dopasowywane podczas przypisywania zasobów projektu. [![Przykładem umiejętności, certyfikatów, edukacji oraz doświadczenie w projekcie](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) 
+Kompetencje zasobów są podstawowym elementem procesu zarządzania zasobami. Kompetencje mogą służyć jako podstawa do identyfikowania zasobów, które mają odpowiednią kombinację umiejętności, wykształcenia, certyfikacji i doświadczenia w projektach. Należy skonfigurować te informacje dla każdego zasobu i aktualizować je na bieżąco. W ten sposób można zmaksymalizować możliwości działania, gdy konkretne kompetencje zasobów są dopasowywane podczas przypisywania zasobów projektu. [![Przykłady umiejętności, certyfikacji, wykształcenia i doświadczenia w projektach](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) 
 
 W poniższych procedurach opisano sposób konfigurowania niektórych kompetencji zasobu. 
 
-Aby skonfigurować kompetencje pracownika, można użyć strony listy **Pracownicy** w module Zasoby ludzkie lub strony listy **Zasoby** w module Zarządzanie projektami i ich księgowanie. Dla poniższych procedur **pracowników** używane strony listy w zasobach ludzkich.
+Aby skonfigurować kompetencje pracownika, można użyć strony listy **Pracownicy** w module Zasoby ludzkie lub strony listy **Zasoby** w module Zarządzanie projektami i ich księgowanie. W poniższych procedurach jest używana strona listy **Pracownicy** w module Zasoby ludzkie.
 
 ### <a name="set-up-competencies-certificates"></a>Konfigurowanie kompetencji: Certyfikaty
 
@@ -101,40 +104,40 @@ Aby skonfigurować kompetencje pracownika, można użyć strony listy **Pracowni
 7.  Kliknij przycisk **Zapisz** i zamknij stronę.
 
 ## <a name="create-a-new-project"></a>Utwórz nowy projekt
-1.  Kliknij **zarządzania projektami i księgowości**&gt;**obszary robocze**&gt;**zarządzania projektami**.
+1.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Obszary robocze** &gt; **Zarządzanie projektami**.
 2.  Kliknij przycisk **Nowy projekt** i wprowadź następujące wartości:
-    -   **Typ projektu** - typu czas i materiały
-    -   **Nazwa projektu** -XYZ uaktualnić Phase 2
-    -   **Grupa projektów** -TM\_PWT
-    -   **Identyfikator kontraktu projektu** -00000002
+    -   **Typ projektu** — Czas i materiały
+    -   **Nazwa projektu** — Uaktualnianie XYZ faza 2
+    -   **Grupa projektów** — CM\_PWT
+    -   **Identyfikator umowy dotyczącej projektu** — 00000002
 3.  Kliknij opcję **Utwórz projekt**.
 
 ### <a name="assign-a-resource-to-a-project"></a>Przypisywanie zasobu do projektu
 
-1.  Kliknij **zasoby ludzkie**&gt;**pracowników**&gt;**pracowników**.
+1.  Kliknij kolejno opcje **Zasoby ludzkie** &gt; **Pracownicy** &gt; **Pracownicy**.
 2.  Na liście **Pracownicy** wybierz rekord pracownika, dla którego skonfigurowano wcześniej kompetencje, i otwórz ten rekord.
 3.  W okienku akcji na karcie **Projekt** w grupie **Ustawienia** kliknij opcję **Przypisz projekty**.
 4.  Na stronie **Przypisania projektu weryfikacji zasobów** kliknij kartę **Projekty**.
-5.  W **dodać projekt do wybranych projektów**, filtr w projekcie XYZ uaktualnić Phase 2
+5.  W oknie **Dodaj projekt do wybranych projektów** wyfiltruj według projektu Uaktualnianie XYZ faza 2.
 6.  W okienku **Pozostałe projekty** wybierz projekt, a następnie kliknij strzałkę, aby dodać go do okienka **Wybrane projekty**.
 7.  Zamknij stronę.
 
-W razie potrzeby można również przypisać kategorie do zasobu. Typem kategorii jest Koszt lub Przychód. To jest określane przez organizację. Jeśli nie ma przypisane kategorie dla zasobu, Dynamics 365 dla operacji będzie wyszukiwać domyślnej kategorii godzinowych cen kosztów i przychodów.
+W razie potrzeby można również przypisać kategorie do zasobu. Typem kategorii jest Koszt lub Przychód. To jest określane przez organizację. Jeśli zasób nie ma przypisanych żadnych kategorii, program Dynamics 365 for Operations będzie szukał domyślnej kategorii cen godzinowych dla kosztów i przychodów.
 
 ### <a name="set-up-project-resource-and-role-characteristics"></a>Konfigurowanie cech zasobów i ról w projekcie
 
-Kierownik projektu może za pomocą funkcji organizowania zasobów projektu utworzyć role wymagane w projekcie. Role mogą być używane, gdy potwierdzone zasoby nie są jeszcze znane, podczas rezerwowania zasobów. Role mogą być tymczasowo zarezerwowane jako planowane zasoby, tak, aby można było kontynuować etapy planowania projektu. 
+Kierownik projektu może za pomocą funkcji organizowania zasobów projektu utworzyć role wymagane w projekcie. Ról można używać, gdy potwierdzone zasoby są nadal nieznane podczas rezerwowania zasobów. Role mogą służyć do tymczasowego rezerwowania planowanych zasobów, tak aby można było kontynuować etapy planowania projektu. 
 
 [![Przykład roli](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg) 
 
-**Scenariusz:** Firma Contoso została wynajęta do wykonania projektu rozliczanego według czasu i materiałów mającego zatwierdzony statut projektu. Młodszy kierownik projektu nadal opracowuje zakres projektu. Menedżer zasobów jest obecnie identyfikacji określonych zasobów, które będą przeznaczone do pracy nad nowym projektem. Jedną z ról, które wniosek sponsora projektu, z powodu charakteru projektu, jest menedżerem wyższego szczebla projektu. Menedżer zasobów musi nabyć nowy zasób i definiują rolę w systemie, w przypadku gdy Menedżer projektu młodszych wymaga informacji o zasobie podczas planowania projektu. 
+**Scenariusz:** Firma Contoso została wynajęta do wykonania projektu rozliczanego według czasu i materiałów mającego zatwierdzony statut projektu. Młodszy kierownik projektu nadal opracowuje zakres projektu. Menedżer zasobów obecnie identyfikuje konkretne zasoby, które zostaną zarezerwowane do pracy nad nowym projektem. Jedną z ról wnioskowanych przez inwestora projektu ze względu na krytyczny charakter projektu jest starszy kierownik projektu. Menedżer zasobów musi pozyskać nowy zasób oraz zdefiniować rolę w systemie na wypadek, gdyby młodszy kierownik projektu potrzebował informacji o zasobie podczas planowania projektu. 
 
-Poniższe kroki pokazują jak Menedżer zasobów można skonfigurować roli menedżera projektu wyższego szczebla i skojarzyć z nią właściwości zasobu. Później rola może służyć do wyszukiwania dostępnych zasobów posiadających wymagane kompetencje.
+Poniższe kroki pokazują, jak menedżer zasobów może skonfigurować rolę starszego kierownika projektu i skojarzyć z nią cechy zasobu. Później rola może służyć do wyszukiwania dostępnych zasobów posiadających wymagane kompetencje.
 
-1.  Kliknij **zarządzania projektami i księgowości**&gt;**instalacji**&gt;**zasobów**&gt;**ustawienia ról**.
+1.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Zasoby** &gt; **Konfiguruj role**.
 2.  Kliknij przycisk **Nowy** i wprowadź następujące wartości:
-    -   **Identyfikator roli** -starszy Kierownik projektu
-    -   **Opis** -starszy Kierownik projektu
+    -   **Identyfikator roli** — Starszy kierownik projektu
+    -   **Opis** — Starszy kierownik projektu
 3.  Kliknij **Utwórz**.
 4.  Wybierz rolę **Starszy kierownik projektu** i kliknij przycisk **Konfiguruj charakterystyki**.
 5.  W polu **Typ charakterystyki** zaznacz opcję **Umiejętności**.
@@ -145,67 +148,67 @@ Poniższe kroki pokazują jak Menedżer zasobów można skonfigurować roli mene
 
 ### <a name="assign-a-project-resource-to-a-project"></a>Przypisywanie zasobu projektu do projektu
 
-1.  Kliknij **zarządzania projektami i księgowości**&gt;**wspólne**&gt;**projekty**&gt;**wszystkie projekty**i otworzyć **XYZ uaktualnić Phase 2** projektu.
+1.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Wspólne** &gt; **Projekty** &gt; **Wszystkie projekty** i otwórz projekt **Uaktualnianie XYZ faza 2**.
 2.  Na karcie **Zespół projektu i planowanie** kliknij przycisk **Dodaj**.
 3.  W polu **Rola** zaznacz opcję **Członek zespołu**.
 4.  Kliknij opcję **Rezerwuj z kalendarza**.
 5.  Na stronie **Dostępność zasobów** kliknij opcję **Ustawienia widoku**.
 6.  Na stronie **Dostosuj ustawienia widoku** wprowadź następujące wartości:
-    -   **Format dla zakresu dat, widok** - dzienny
-    -   **Wyświetlić opisy dostępności** - tak
-    -   **Wyświetl pozostałą pojemność** - tak
+    -   **Format widoku zakresu dat** — Dzień
+    -   **Wyświetl opisy dostępności** — Tak
+    -   **Wyświetlanie pozostałych zdolności produkcyjnych** — Tak
 7.  Na liście zasobów zaznacz zasób.
-8.  Kliknij **twardy książki**&gt;**pełna pojemność**.
+8.  Kliknij kolejno opcje **Rezerwacje ostateczne** &gt; **Pełne zdolności produkcyjne**.
 9.  Zamknij stronę.
 
 ### <a name="assign-a-resource-to-a-default-role"></a>Przypisywanie zasobu do roli domyślnej
 
-Aby pomóc menedżerom projektu lub zasobów, można drążyć dalej na zasoby, które mogą być zarezerwowane dla projektu. Można skojarzyć domyślną rolę z istniejącym zasobem lub nowo pozyskanym zasobem. Na przykład gdy Daniel został zatrudniony, miał doświadczenia i umiejętności, aby pełnił rolę analityków biznesowych. Menedżer zasobów przypisani do tej roli jako rola domyślna Daniel. W związku z tym Menedżer zasobów dodane Daniel do puli analityków biznesowych, którzy są dostępne do pracy nad projektami. 
+Aby ułatwić pracę kierownikom projektów lub menedżerom zasobów, można przejść do dokładniejszych ustawień zasobów rezerwowanych dla projektu. Można skojarzyć domyślną rolę z istniejącym zasobem lub nowo pozyskanym zasobem. Na przykład kiedy Daniel był zatrudniany, miał doświadczenie i umiejętności niezbędne do roli analityka biznesowego. Menedżer zasobów przypisał tę rolę jako domyślną rolę Daniela. W związku z tym menedżer zasobów dodał Daniela do puli analityków biznesowych, którzy są dostępni do pracy w projektach. 
 
-Podczas rezerwacji zasobów menedżerowie projektów można filtrować zasoby roli, które są dostępne do pracy nad projektami. Mogą wykorzystywać te informacje jako jedno z kryteriów wielowątkowej analizy decyzyjnej podczas rozdzielania zasobów. Mogą również dodać inne cechy zasobów do filtra w celu wyszukiwania zasobów, które mają określone umiejętności, wykształcenie i doświadczenie dla danego projektu. 
+Podczas rezerwowania zasobów kierownicy projektów mogą filtrować zasoby z rolami dostępne do pracy w projektach. Mogą wykorzystywać te informacje jako jedno z kryteriów wielowątkowej analizy decyzyjnej podczas rozdzielania zasobów. Mogą również dodać inne cechy zasobów do filtra w celu wyszukiwania zasobów, które mają określone umiejętności, wykształcenie i doświadczenie dla danego projektu. 
 
-**Scenariusz:** zatwierdzonego projektu została uruchomiona i roli menedżera projektu starszy został zarezerwowany jako zasób planowanych podczas etapu planowania projektu. Menedżer zasobów pozyskał zasób mogący wypełniać rolę starszego kierownika projektu.
+**Scenariusz:** Rozpoczął się zatwierdzony projekt, a na etapie planowania projektu rola starszego kierownika projektu została zarezerwowana jako planowany zasób. Menedżer zasobów pozyskał zasób mogący wypełniać rolę starszego kierownika projektu.
 
-1.  Kliknij **zarządzania projektami i księgowości**&gt;**zasoby projektu**&gt;**Lista zasobów**.
+1.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Zasoby projektu** &gt; **Lista zasobów**.
 2.  Na liście **Zasób** zaznacz pozycję **Daniel Goldschmidt**.
-3.  Kliknij **zasobów serwera Project**&gt;**Zachowaj**&gt;**rolę zasobu**.
+3.  Kliknij kolejno opcje **Zasób projektu** &gt; **Obsługa** &gt; **Rola zasobu**.
 4.  Kliknij przycisk **Nowy** i wprowadź następujące wartości:
-    -   **Skuteczne** - (data bieżąca)
-    -   **Wygaśnięcia** - nigdy nie
-    -   **Rolę** -starszy Kierownik projektu
+    -   **Data wprowadzenia** — (bieżąca data)
+    -   **Data wygaśnięcia** — Nigdy
+    -   **Rola** — Starszy kierownik projektu
 5.  Kliknij przycisk **Zapisz** i zamknij stronę.
 6.  Na karcie **Kompetencje** dodaj umiejętność **ProjectMgmt** i certyfikat **PMP**.
 
 ## <a name="set-up-role-based-pricing"></a>Konfigurowanie cen opartych na rolach
 Wszystkie koszty, ceny sprzedaży i ceny transferowe można skonfigurować dla ról.
 
-1.  Kliknij **zarządzania projektami i księgowości**&gt;**instalacji**&gt;**ceny**&gt;**cena sprzedaży (godzina)**.
-2.  Click **New**.
+1.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Ceny** &gt; **Cena sprzedaży (godzina)**.
+2.  Kliknij przycisk **Nowy**.
 3.  Wprowadź datę wejścia w życie.
 4.  W kolumnie **Rola** zaznacz rolę.
 5.  W kolumnie **Ceny** wprowadź cenę dla wybranej roli zasobu.
 
-## <a name="form-a-project-team"></a>Formularz zespołu projektu
-Aby użyć ról, które zostały wcześniej utworzone w projekcie, Menedżer projektu należy skojarzyć ról z projektem. Wiele ról mogą być przypisane do projektu, a 365 Dynamics dla operacji automatycznie etykiety skojarzone z tymi rolami podczas rezerwacji, aby uniknąć zamieszania. Na przykład jeśli Menedżer projektu wymaga trzech inżynierów oprogramowania, trzech ról inżynier oprogramowania, które programista 1, inżynier oprogramowania 2 i 3 jako ich etykiety inżynier oprogramowania są generowane automatycznie. Jeśli wcześniej skonfigurowano cechy roli, są one stosowane jako filtr podczas wyszukiwania zasobu. W razie potrzeby mogą być dodawane dodatkowe charakterystyki, aby bardziej zawęzić wyszukiwanie. 
+## <a name="form-a-project-team"></a>Tworzenie zespołu projektu
+Aby korzystać z ról, które zostały wcześniej skonfigurowane w projekcie, kierownik projektu musi skojarzyć role z projektem. Można przypisać wiele ról w projekcie, a program Dynamics 365 for Operations automatycznie znakuje te role podczas rezerwowania w celu uniknięcia nieporozumień. Na przykład jeśli kierownik projektu potrzebuje trzech inżynierów oprogramowania, następuje automatyczne wygenerowanie trzech ról inżyniera oprogramowania z etykietami Inżynier oprogramowania 1, Inżynier oprogramowania 2 i Inżynier oprogramowania 3. Jeśli wcześniej skonfigurowano cechy roli, są one stosowane jako filtr podczas wyszukiwania zasobu. W razie potrzeby mogą być dodawane dodatkowe charakterystyki, aby bardziej zawęzić wyszukiwanie. 
 
 Można również dostosować ustawienia widoku, aby lepiej widzieć dostępność zasobów. Istnieją opcje pokazywania dostępności w ujęciu godzinowym, dziennym, tygodniowym, miesięcznym, kwartalnym i rocznym. Dostępna jest także opcja pokazywania dostępnych i pozostałych zdolności produkcyjnych zasobów. Ta opcja jest przydatna dla zarządzania czasem podczas szacowania czasu dostępnego na działania lub czasu dostępności zasobów. 
 
-Menedżer projektu można wybrać rolę na stronie i następnie wybierz jeśli ma dostępnych zasobów, który pasuje do wymogu, aby zarezerwować jakieś zasoby, aby pełnił rolę. Należy zwrócić uwagę, że zasoby nie muszą być zarezerwowane w tym momencie w fazie planowania. Po utworzeniu WBS ról można zastąpić obsługą zasobów dla projektu. Role są zastąpione przez zasoby w SPP, ustawienia zasobów automatycznie aktualizuje zespołu projektu aukcji i planowania. 
+Kierownik projektu może wybrać rolę na stronie, a następnie — jeśli jest dostępny zasób spełniający zapotrzebowanie — zarezerwować zasób w celu wypełnienia roli. Należy zwrócić uwagę, że zasoby nie muszą być rezerwowane w tym momencie na etapie planowania. Podczas tworzenia SPP można zastąpić role zasobami pracowników dla projektu. Jeśli role zostaną zastąpione zasobami pracowników w SPP, konfiguracja zasobów automatycznie aktualizuje schemat i harmonogram zespołu projektu. 
 
-[![Liście zespołu projektu, zawierającym zarówno role i rzeczywistych zasobów](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg) 
+[![Schemat zespołu projektu zawierający role i rzeczywiste zasoby](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg) 
 
 Kierownik projektu ma różne opcje rezerwowania zasobu dla projektu, takie jak **Pozostałe zdolności produkcyjne**, **Pełne zdolności produkcyjne**, **Procent zdolności produkcyjnych** i **Określ godziny**. Te opcje rezerwacji można anulować w dowolnym momencie w razie zmiany przydziałów zasobów. Obsługiwane są dwa rodzaje rezerwacji:
 
--   **Ostatecznie zarezerwować** – rezerwacji zasobów została zatwierdzona i potwierdzone do pracy na zatrudnienie na czas określony.
--   **Miękkie książki** – rezerwacji zasobów został wstępnie ustawić do pracy na zatrudnienie na czas określony.
+-   **Rezerwacje ostateczne** — rezerwacja zasobu została zatwierdzona i potwierdzona do pracy nad projektem przez określony czas.
+-   **Rezerwacje wstępne** — rezerwacja zasobu została wstępnie ustawiona do pracy nad projektem przez określony czas.
 
 Poniżej znajduje się procedura wyjaśniająca tworzenie zespołu projektu.
 
 ### <a name="create-a-project-team"></a>Tworzenie zespołu projektu
 
 1.  Na stronie listy **Wszystkie projekty** zaznacz projekt, a następnie kliknij przycisk **Edytuj**.
-2.  Na **zespołu i planowania projektu** kartę w **Data zakończenia harmonogramu** wprowadź datę rozpoczęcia harmonogramu plus jeden miesiąc. Na przykład, jeśli data rozpoczęcia harmonogramu jest 24 czerwca 2017 (24-06-2017), wprowadź **24-07-2017**.
-3.  Click **Add**.
+2.  Na karcie **Zespół projektu i planowanie** w polu **Zaplanuj datę rozpoczęcia** wprowadź datę rozpoczęcia harmonogramu plus jeden miesiąc. Na przykład jeśli datą początkową harmonogramu jest 24 czerwca 2017 r. (24.06.2017), wprowadź **24.07.2017**.
+3.  Kliknij przycisk **Dodaj**.
 4.  W okienku **Dodaj role do projektu** w polu **Role** wybierz opcję **Starszy kierownik projektu**.
 5.  Kliknij opcję **Wymagane kompetencje**.
 6.  Na stronie **Wybierz charakterystyki** są domyślnie zaznaczone cechy, które zostały wcześniej ustawione dla roli Starszy kierownik projektu. Kliknij przycisk **OK**
@@ -221,13 +224,13 @@ Procesy synchronizacji zasobów pomagają zagwarantować, że informacje kalenda
 
 ### <a name="calendar-synchronizationmediaprojectresourcing04-1024x471jpg"></a>![Synchronizacja kalendarza](./media/projectresourcing04-1024x471.jpg)
 
-**Synchronize resource capacity roll-ups**
+**Synchronizuj zestawienia zdolności produkcyjnych zasobów**
 
-Proces synchronizacji jest zaprojektowany do synchronizowania wszystkich informacji w kalendarzu zasobów. Informacje te obejmują dane kalendarza podstawowego o wszelkich zmianach w tabeli zdolności produkcyjnych kalendarza zasobów projektu. Jeśli w projekcie są dodawane nowe zasoby, synchronizacji pomaga zapewnić, że dostępne są informacje kalendarza zaktualizowane. Tę synchronizację można wykonać w dowolnym czasie. 
+Proces synchronizacji jest zaprojektowany do synchronizowania wszystkich informacji w kalendarzu zasobów. Informacje te obejmują dane kalendarza podstawowego o wszelkich zmianach w tabeli zdolności produkcyjnych kalendarza zasobów projektu. Jeśli w projekcie są dodawane nowe zasoby, synchronizacja pomaga zapewnić dostępność zaktualizowanych informacji kalendarza. Tę synchronizację można wykonać w dowolnym czasie. 
 
 Zaleca się używanie procesu wsadowego. Odpowiednie opcje są dostępne podczas synchronizowania rezerwacji zdolności produkcyjnych.
 
--   Kliknij **zarządzania projektami i księgowości**&gt;**okresowo**&gt;**synchronizacji zdolności**&gt;**synchronizowanie rzutowania pojemności zasobów**.
+-   Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Okresowe** &gt; **Synchronizacja zdolności produkcyjnych** &gt; **Synchronizuj zestawienia zdolności produkcyjnych zasobów**.
 
 | Opcja | opis                                                                                                                                                                                          |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -237,9 +240,9 @@ Zaleca się używanie procesu wsadowego. Odpowiednie opcje są dostępne podczas
 [![Proces synchronizacji](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)
 
 ## <a name="set-up-roles-on-wbs-templates"></a>Konfigurowanie ról w szablonach SPP
-Kierownicy projektów mogą skonfigurować szablony SPP, które będą stosować podczas tworzenia SPP dla nowych projektów. Menedżerowie projektów mogą dodawać role, podczas tworzenia szablonu. Poniższa procedura umożliwia przypisywanie roli do template.* spp * **
+Kierownicy projektów mogą skonfigurować szablony SPP, które będą stosować podczas tworzenia SPP dla nowych projektów. Kierownicy projektów mogą dodawać role podczas tworzenia szablonów. Poniższa procedura umożliwia przypisanie roli do szablonu struktury podziału pracy.** **
 
-1.  Kliknij **zarządzania projektami i księgowości**&gt;**instalacji**&gt;**projekty**&gt;**Szablony struktury podziału pracy**.
+1.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Projekty** &gt; **Szablony struktury podziału pracy**.
 2.  Kliknij przycisk **Szczegóły** obok wybranego szablonu struktury podziału pracy.
 3.  Wybierz zadanie na liście, a następnie w polu **Rola** wybierz rolę, którą chcesz przypisać do zadania.
 
@@ -273,7 +276,7 @@ W SPP zostały dodane nowe opcje pomagające lepiej wykorzystywać funkcje organ
 </tr>
 <tr class="even">
 <td>Automatycznie generuj zespół</td>
-<td>Automatyczne dodawanie zaplanowanych zasobów przy użyciu ról skojarzonych z zadaniem. Dynamics 365 dla operacji automatycznie sugeruje planowanych zasobów za pomocą analizy decyzji wiele kryteriów, który jest oparty na rolach. Po skonfigurowaniu ról i nakładu pracy (w godzinach) dla zadań w SPP i zwolnieniu struktury kliknij przycisk <strong>Automatycznie generuj zespół</strong>. Wymagana liczba zaplanowanych zasobów zostanie dodana do SPP i karty <strong>Zespół projektu i planowanie</strong>.</td>
+<td>Automatyczne dodawanie zaplanowanych zasobów przy użyciu ról skojarzonych z zadaniem. Program Dynamics 365 for Operations automatycznie sugeruje zaplanowane zasoby na podstawie wyników wielowątkowej analizy decyzyjnej opartej na rolach. Po skonfigurowaniu ról i nakładu pracy (w godzinach) dla zadań w SPP i zwolnieniu struktury kliknij przycisk <strong>Automatycznie generuj zespół</strong>. Wymagana liczba zaplanowanych zasobów zostanie dodana do SPP i karty <strong>Zespół projektu i planowanie</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Zasób (lista rozwijana)</td>
@@ -281,15 +284,15 @@ W SPP zostały dodane nowe opcje pomagające lepiej wykorzystywać funkcje organ
 <ul>
 <li><strong>Akceptuj</strong> — potwierdzenie modyfikacji zasobu przypisanego do zadania.</li>
 <li><strong>Anuluj</strong> — anulowanie modyfikacji zasobu przypisanego do zadania.</li>
-<li><strong>Przypisz automatycznie</strong> – w tej opcji wybiera dostępnych zasobów obsadzone z pasującą rolę do zaznaczonego zadania.</li>
+<li><strong>Przypisz automatycznie</strong> — ta opcji powoduje wybranie dostępnego zasobu pracownika z rolą pasującą do zaznaczonego zadania.</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-1.  Kliknij **zarządzania projektami i księgowości**&gt;**projekty**&gt;**wszystkie projekty**.
+1.  Kliknij kolejno **Zarządzanie projektami i ich księgowanie** &gt; **Projekty** &gt; **Wszystkie projekty**.
 2.  Z listy wybierz projekt **Uaktualnianie XYZ faza 2**.
-3.  Kliknij **Plan**&gt;**działalność**&gt;**struktury podziału pracy**.
+3.  Kliknij kolejno opcje **Plan** &gt; **Działania** &gt; **Struktura podziału pracy**.
 4.  Kliknij przycisk **Nowy**, aby dodać następujące działania pierwszego poziomu do struktury podziału pracy:
     -   Inicjowanie
     -   Planowanie
@@ -297,7 +300,7 @@ W SPP zostały dodane nowe opcje pomagające lepiej wykorzystywać funkcje organ
     -   Monitorowanie i kontrola
     -   Zamknij
 
-5.  Ustawianie daty i wysiłku zrzut ekranu (godzin), jak pokazano poniżej. [![Ustawienie daty i nakładu](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)
+5.  Ustaw daty i nakład pracy (w godzinach), jak to przedstawiono w poniższym zrzucie ekranu.[![Ustawienie dat i nakładu pracy](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)
 6.  Wybierz wiersz zadania **Inicjowanie**, a następnie w polu **Rola** wybierz opcję **Starszy kierownik projektu**.
 7.  Kliknij przycisk **Publikuj**.
 8.  W tym samym wierszu w polu **Zasoby** zaznacz element **Danielowi Goldschmidt**.
@@ -308,49 +311,51 @@ W SPP zostały dodane nowe opcje pomagające lepiej wykorzystywać funkcje organ
 13. W polu **Zasoby** sprawdź, czy wartość to **Analityk biznesowy 1**.
 14. Dla zasobu **Analityk biznesowy 1** otwórz wyszukiwanie i kliknij przycisk **Uruchom formularz przypisania zasobów**.
 15. Wybierz pracownika dla zadania.
-16. Kliknij **Przypisz miękkie**&gt;**pełna pojemność**.
+16. Kliknij kolejno opcje **Przypisz wstępnie** &gt; **Pełne zdolności produkcyjne**.
 17. Kliknij przycisk **Zapisz** i zamknij stronę. 
 
 > [!NOTE] 
-> Nie otrzymasz ostrzeżenie, że określony zasób jest teraz 2, ponieważ liczba zasobów pozostaje na 1.
+> Nie pojawi się ostrzeżenie, że określonym zasobem jest teraz 2, ponieważ liczba zasobów nadal wynosi 1.
 18. Na stronie **Struktury podziału pracy** sprawdź poprawność przypisania zasobów w SPP, a następnie kliknij przycisk **Zapisz**.
 
 ## <a name="resource-fulfillment-for-planned-resources"></a>Wykorzystanie planowanych zasobów
 Kierownik projektu może zaplanować role wymaganych zasobów w projekcie. Menedżer zasobów będzie widział te zaplanowane zasoby jako żądania na stronie **Wykorzystanie zasobu** i może wtedy przypisywać faktyczne zasoby.
 
-1.  Kliknij **zarządzania projektami i księgowości**&gt;**projekty**&gt;**wszystkie projekty**.
+1.  Kliknij kolejno **Zarządzanie projektami i ich księgowanie** &gt; **Projekty** &gt; **Wszystkie projekty**.
 2.  Z listy wybierz projekt **Uaktualnianie XYZ faza 2**.
 3.  Kliknij opcję **Projekt**.
 4.  Kliknij przycisk **Edytuj**.
-5.  Na **zespołu i planowania projektu** kartę, ** ** kliknij **Dodaj**.
+5.  Na karcie **Zespół projektu i planowanie** kliknij** **przycisk **Dodaj**.
 6.  W oknie dialogowym **Dodaj role** wybierz rolę **Programista**.
 7.  Kliknij **Utwórz**.
 8.  Zamknij stronę projektu.
-9.  Kliknij **zarządzania projektami i księgowości**&gt;**zasoby projektu**&gt;**realizacji zasobów**.
+9.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Zasoby projektu** &gt; **Wykorzystanie zasobu**.
 10. Dla projektu **Uaktualnianie XYZ faza 2** wybierz zasób **Programista 1**.
 11. Wybierz pracownika, a następnie kliknij przycisk **Przypisz**.
 12. Upewnij się, że wiersz **Programista 1** został usunięte dla projektu **Uaktualnianie XYZ faza 2**.
 13. Na karcie **Zespół projektu i planowanie** w projekcie **Uaktualnianie XYZ faza 2** upewnij się, że pracownik wybrany w kroku 11 został dodany jako **Programista**.
 
-## <a name="requests-for-project-resources"></a>Żądania dotyczące zasobów projektu
-Z funkcji planowania zasobów projektu obsługuje tylko menedżerowie zasobów do dystrybucji zasobów obsadzone na zobowiązania lub projektów. Aby włączyć tę funkcję, należy wykonać następujące zadania lub upewnij się, że zostały one zakończone.
+## <a name="requests-for-project-resources"></a>Wnioski o zasoby projektu
+Funkcja planowania zasobów projektu tylko pomaga menedżerom zasobów rozdzielać zasoby pracowników w projektach. Aby włączyć tę funkcję, należy wykonać następujące zadania lub upewnić się, że zostały one wykonane.
 
 -   Ustaw sekwencje numerów.
--   Ustawianie zarządzania projektami i przepływów pracy rozliczania.
--   Włączanie zasobów przepływ pracy dla wniosku.
+-   Ustawianie przepływów pracy dla zarządzania projektami i ich księgowania.
+-   Włączanie przepływu pracy żądań zasobów.
 
-Po zostały zweryfikowane lub wykonane zadania powyżej, można wykonać następujące zadania, stosownie do potrzeb.
+Po zweryfikowaniu wykonania lub wykonaniu powyższych zadań można stosownie do potrzeb wykonać następujące zadania.
 
--   Utwórz żądanie zasobu z obsługą zasobu rezerwacji wstępnej.
--   Monitor zasobów żądania.
--   Spełnić żądania zasobów.
--   Żądania zasobu obsadzone od spp.
--   Rezerwowanie zasobów do projektu bez żądania obsadzone zasobów.
+-   Tworzenie wniosku o zasób w odniesieniu do zasobu pracownika z rezerwacją wstępną.
+-   Monitorowanie wniosków o zasoby.
+-   Realizacja wniosków o zasoby.
+-   Wnioskowanie o zasób pracownika z SPP.
+-   Rezerwowanie zasobów do projektu bez wnioskowania o zasób pracownika.
 
-## <a name="monitor-project-teams"></a>Zespoły projektów monitora
-1.  Kliknij **zarządzania projektami i księgowości**&gt;**projekty**&gt;**wszystkie projekty**.
+## <a name="monitor-project-teams"></a>Monitorowanie zespołów projektu
+1.  Kliknij kolejno **Zarządzanie projektami i ich księgowanie** &gt; **Projekty** &gt; **Wszystkie projekty**.
 2.  Kliknij na liście projektów kliknij łącze **Identyfikator projektu** dla projektu **Uaktualnianie XYZ faza 2**.
 3.  Na skróconej karcie **Zespół projektu i planowanie** sprawdź poprawność wyświetlanych zasobów projektu.
+
+
 
 
 

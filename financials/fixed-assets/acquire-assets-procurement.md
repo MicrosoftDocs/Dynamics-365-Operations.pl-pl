@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="acquire-assets-through-procurement"></a>Nabywania środków trwałych za pomocą zaopatrzenia
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano, jak skonfigurować integrację między modułami Środki trwałe i Rozrachunki z dostawcami, aby automatycznie były tworzone środki trwałe na podstawie zamówień zakupu lub faktur od dostawców albo automatycznie były księgowane transakcje nabycia i korekty wartości początkowej dla środków trwałych.
 
  Poniżej przedstawiono metody do integracji Środków trwałych i Rozrachunków z dostawcami. W odniesieniu do wszystkich środków trwałych trzeba użyć tej samej metody:
@@ -103,6 +106,8 @@ Oto różne odmiany tego scenariusza:
 -   W przypadku odebrania tylko częściowej ilości nie jest tworzone nabycie środka trwałego dla pierwszej faktury od dostawcy z powodu ograniczeń dotyczących grup użytkowników. Zaksięgowanie nabycia dla drugiej faktury od dostawcy, dotyczącej pozostałej zamówionej ilości, jest możliwe tylko wtedy, gdy transakcja nabycia została już wprowadzona dla pierwszej faktury od dostawcy i użytkownik jest członkiem grupy użytkowników mającej prawo księgować nabycia.
 
 
-Aby uzyskać więcej informacji, zobacz [stałej integracji trwałych](fixed-asset-integration.md).
+Aby uzyskać więcej informacji, zobacz [Integracja środków trwałych](fixed-asset-integration.md).
+
+
 
 

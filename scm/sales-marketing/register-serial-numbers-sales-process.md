@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>Rejestrowanie numerów seryjnych w procesie sprzedaży
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł wyjaśnia sposób rejestrowania numerów seryjnych na dokumentach dostawy i fakturach w procesie sprzedaży. Ta funkcja jest przydatna, gdy firma chce zapisywać numery seryjne na potrzeby serwisu i gwarancji, ale nie chce nimi zarządzać w zapasach na etapach od przyjęcia do wydania.
 
 Wiele firm po prostu chce gromadzić numery seryjne na potrzeby serwisu i gwarancji, i nie musi przechowywać numerów seryjnych w magazynie od przyjęcia do wydania. W tych scenariuszach program Microsoft Dynamics 365 for Operations umożliwia rejestrowanie numerów seryjnych na dokumentach dostawy i fakturach, gdy produkty są sprzedawane. Jeśli produkty są potem zwracane, można śledzić każdy produkt do faktury w celu ustalenia, czy produkt został sprzedany przez organizację oraz określenia, czy zobowiązania wynikające z usługi lub gwarancji są prawidłowe.
@@ -65,7 +68,7 @@ Tak, można uruchomić zapytanie na wierszu arkusza dokumentu dostawy lub wiersz
 ## <a name="can-i-view-the-serialized-items-that-i-have-on-hand"></a>Czy mogę wyświetlić dostępne towary seryjne?
 Nie, nie można wyświetlić towarów seryjnych, które użytkownik ma na stanie, ponieważ numery seryjne nie są rejestrowane dla towarów przed momentem ich sprzedaży.
 
-## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Czy można zarejestrować numery seryjne dla elementów catchweight?
+## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Czy mogę rejestrować numery seryjnych dla towarów w ilości efektywnej?
 Nie, w procesie sprzedaży nie można zarejestrować numerów seryjnych dla towarów w ilości efektywnej. Oprócz tego, jeśli produkt jest skonfigurowany jako towar w ilości efektywnej, nie można przypisać produktu do śledzenia grupy wymiarów, która jest konfigurowana do używania numerów seryjnych tylko podczas procesu sprzedaży.
 Czy mogę zarejestrować numer seryjny w punkcie sprzedaży sieci sprzedaży?
 ------------------------------------------------
@@ -76,6 +79,8 @@ Tak, w punkcie sprzedaży sieci sprzedaży będzie wyświetlany monit o wprowadz
 Ta funkcjonalność jest dostępna dla wszystkich ról, które mogą obsługiwać dokumenty dostawy sprzedaży i faktury sprzedaży. Poniższe obowiązki umożliwiają pracownikom korygowanie numerów seryjnych i rejestrowanie pustych wpisów dla numerów seryjnych, których nie można odczytać lub zeskanować:
 -   Obsługa korekt numerów seryjnych
 -   Obsługa rejestracji nieczytelnych numerów seryjnych
+
+
 
 
 

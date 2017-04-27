@@ -1,6 +1,6 @@
 ---
-title: "Wyświetlanie transakcji dla rozliczenia dla Europy Wschodniej"
-description: "Ten temat zawiera informacje o transakcjach na stronie rozliczenia dla odbiorców i dostawców."
+title: "Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej"
+description: "Ten temat zawiera informacje o stronie Transakcje w rozliczeniu dla odbiorców i dostawców."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,24 +25,29 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="view-transactions-on-settlement-for-eastern-europe"></a>Wyświetlanie transakcji dla rozliczenia dla Europy Wschodniej
+# <a name="view-transactions-on-settlement-for-eastern-europe"></a>Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej
 
-Ten temat zawiera informacje o transakcjach na stronie rozliczenia dla odbiorców i dostawców.
+[!include[banner](../includes/banner.md)]
 
-Użyj **transakcje w rozliczeniu** strona, aby wyświetlić informacje o transakcjach złożonych rozliczenia dla odbiorcy lub dostawcy. Ta funkcja jest dostępna tylko dla osób prawnych, które mają ich adresu głównego Litwy, Łotwy, Estonii, Republiki Czeskiej, Węgier i Polski. Można znaleźć **transakcje w rozliczeniu** strony w następujących lokalizacjach:
 
--   **Rozrachunki z dostawcami**&gt;**dostawców**&gt;**wszystkich dostawców**. W okienku akcji na **dostawcy** kliknij przycisk **transakcji**&gt;**transakcji**. Na **transakcji dostawcy** strony, wybierz transakcję, a następnie kliknij **transakcje w rozliczeniu**.
--   **Rozrachunki z odbiorcami**&gt;**klienci**&gt;**wszystkich klientów**. W okienku akcji na **klienta** kliknij przycisk **transakcji**. Na **transakcji odbiorcy** strony, wybierz transakcję, a następnie kliknij **transakcje w rozliczeniu**.
+Ten temat zawiera informacje o stronie Transakcje w rozliczeniu dla odbiorców i dostawców.
 
-Informacje dotyczące rozliczenia są przechwytywane i mogą być wyświetlane na **transakcje w rozliczeniu** stronę dla transakcji, które zostały utworzone w następujących scenariuszach:
+Na stronie **Transakcje w rozliczeniu** można obejrzeć informacje o złożonych transakcjach rozliczenia dla odbiorcy lub dostawcy. Ta funkcja jest dostępna tylko dla firm, których adres podstawowy znajduje się na Litwie, na Łotwie, w Estonii, w Czechach, na Węgrzech lub w Polsce. Do strony **Transakcje w rozliczeniu** można przejść z następujących lokalizacji:
 
--   **Różnica kursowa** — rozliczanie faktury i płatności generuje różnic kursowych zrealizowanych i niezrealizowanych.
--   **Zmiana profilu księgowania** – rozliczane są dwa wpisy, takich jak faktury i faktury korygującej, które mają różne profile księgowania.
--   Przedpłata jest konwertowana na płatność lub płatności jest konwertowany na przedpłatę.
--   **Rabat gotówkowy** — faktura zostanie rozliczona z płatności, do której należało odliczyć kwotę rabatu.
--   **Różnice groszowe** — faktura zostanie rozliczona z płatności, który ma nieco inną kwotę niż faktury.
--   **Księgowanie podatków warunkowych** — faktura zostanie rozliczona z płatności, do której został rozliczony podatku warunkowego.
--   **Rozliczenie międzyfirmowe** — funkcji transakcji międzyfirmowych jest używany do rozliczenia faktury z płatnością z organizacji.
+-   **Rozrachunki z dostawcami** &gt; **Dostawcy** &gt; **Wszyscy dostawcy**. W okienku akcji na karcie **Dostawca** kliknij kolejno opcje **Transakcje** &gt; **Transakcje**. Na stronie **Transakcje dostawcy** wybierz transakcję, a następnie kliknij opcję **Transakcje w rozliczeniu**.
+-   **Rozrachunki z odbiorcami** &gt; **Odbiorcy** &gt; **Wszyscy odbiorcy**. W okienku akcji na karcie **Odbiorca** kliknij opcję **Transakcje**. Na stronie **Transakcje odbiorcy** wybierz transakcję, a następnie kliknij opcję **Transakcje w rozliczeniu**.
+
+Informacje dotyczące rozliczenia są rejestrowane i mogą być wyświetlane na stronie **Transakcje w rozliczeniu** dla transakcji, które zostały utworzone w następujących scenariuszach:
+
+-   **Różnica kursowa** — Rozliczenie faktury i płatności generuje zrealizowaną lub niezrealizowaną różnicę kursową.
+-   **Zmiana profilu księgowania** — Rozliczane są dwa wpisy, takie jak faktura i nota kredytowa, które mają różne profile księgowania.
+-   Przedpłata jest konwertowana na płatność lub płatność jest konwertowana na przedpłatę.
+-   **Rabat gotówkowy** — Faktura jest rozliczana płatnością, od której potrącono kwotę rabatu.
+-   **Różnice groszowe** — Faktura jest rozliczana płatnością, która ma nieco inną kwotę niż faktura.
+-   **Warunkowe księgowanie podatku** — Faktura jest rozliczana płatnością, do której zastosowano podatek warunkowy.
+-   **Rozliczenie międzyfirmowe** — Funkcjonalność transakcji międzyfirmowych jest używana do rozliczenia faktury płatnością z wewnątrz organizacji.
+
+
 
 
 

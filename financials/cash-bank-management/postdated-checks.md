@@ -1,6 +1,6 @@
 ---
 title: Czeki postdatowane
-description: "Ten artykuł zawiera informacje na temat pomocy technicznej dla czeków postdatowanych w usłudze Microsoft Dynamics 365 dla operacji. Czeki postdatowane są wystawiane do celów wykonywania i odbierania płatności w przyszłości. W związku z tym czeki można zrealizować dopiero od określonego dnia."
+description: "Ten artykuł zawiera informacje o obsłudze czeków postdatowanych w programie Microsoft Dynamics 365 for Operations. Czeki postdatowane są wystawiane do celów wykonywania i odbierania płatności w przyszłości. W związku z tym czeki można zrealizować dopiero od określonego dnia."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="postdated-checks"></a>Czeki postdatowane
 
-Ten artykuł zawiera informacje na temat pomocy technicznej dla czeków postdatowanych w usłudze Microsoft Dynamics 365 dla operacji. Czeki postdatowane są wystawiane do celów wykonywania i odbierania płatności w przyszłości. W związku z tym czeki można zrealizować dopiero od określonego dnia.
+[!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 dla operacji obsługuje cyklu pełnego zarządzania dla czeków postdatowanych w rozrachunkach z odbiorcami i rozrachunkach z dostawcami, jak pokazano w poniższej tabeli.
+
+Ten artykuł zawiera informacje o obsłudze czeków postdatowanych w programie Microsoft Dynamics 365 for Operations. Czeki postdatowane są wystawiane do celów wykonywania i odbierania płatności w przyszłości. W związku z tym czeki można zrealizować dopiero od określonego dnia.
+
+Program Microsoft Dynamics 365 for Operations obsługuje pełny cykl zarządzania dla czeków postdatowanych w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami, jak pokazano w poniższej tabeli.
 <table>
 <colgroup>
 <col width="50%" />
@@ -48,14 +51,14 @@ Microsoft Dynamics 365 dla operacji obsługuje cyklu pełnego zarządzania dla c
 </tr>
 <tr class="even">
 <td>Rejestruje czek postdatowany dla dostawcy i księgowanie</td>
-<td>Zapisujesz szczegóły czeku postdatowanego wystawionego dostawcy. Po zaksięgowaniu płatności zobowiązań dostawcy został rozpoznany, ale nie jest jeszcze kredytowe konta bankowego. Zamiast tego jest używane konto rozliczeniowe.</td>
+<td>Zapisujesz szczegóły czeku postdatowanego wystawionego dostawcy. Po zaksięgowaniu płatności zobowiązanie wobec dostawcy jest rozpoznawane, ale konto bankowe nie jest jeszcze uznawane. Zamiast tego jest używane konto rozliczeniowe.</td>
 </tr>
 <tr class="odd">
 <td>Rejestrowanie i księgowanie czeku postdatowanego dla odbiorcy</td>
-<td>Zapisujesz szczegóły czeku postdatowanego otrzymanego od odbiorcy. Po zaksięgowaniu płatności odbiorcy z odbiorcami jest kredytu, ale nie jest jeszcze po stronie debetowej konta bankowego. Zamiast tego jest używane konto rozliczeniowe.</td>
+<td>Zapisujesz szczegóły czeku postdatowanego otrzymanego od odbiorcy. Po zaksięgowaniu płatności należność od odbiorcy jest księgowana po stronie kredytowej, ale konto bankowe nie jest jeszcze obciążane. Zamiast tego jest używane konto rozliczeniowe.</td>
 </tr>
 <tr class="even">
-<td>Rejestrowanie i księgowanie wyboru zastępczy czek postdatowany dla odbiorcy lub dostawcy</td>
+<td>Rejestrowanie i księgowanie zastępczego czeku postdatowanego dla dostawcy lub odbiorcy</td>
 <td>
 Jeśli oryginalny czek dla dostawcy lub odbiorcy został zniszczony lub utracony, można wystawić zastępczy czek postdatowany. Podczas rejestrowania szczegółów czeku podaj odwołanie do oryginalnego czeku oraz wskaż, że nowy czek zastępuje oryginał. Można również zaksięgować czek zastępczy.</td>
 </tr>
@@ -69,17 +72,19 @@ Jeśli oryginalny czek dla dostawcy lub odbiorcy został zniszczony lub utracony
 </tr>
 <tr class="odd">
 <td>Anulowanie postdatowanego czeku dla dostawcy</td>
-<td>Można anulować zaksięgowanych czeków postdatowanych w następujących sytuacjach:-kontrola jest zwracany przez bank.
--Sprawdzanie jest rozliczana z fakturą niepoprawne.
--Środków pieniężnych płatności przed czeku.
+<td>Zaksięgowany czek postdatowany można anulować w następujących sytuacjach: - Czek jest zwracany przez bank.
+- Czeku dotyczy błędna faktura.
+- Dokonywana jest płatność gotówką względem czeku.
 </td>
 </tr>
 <tr class="even">
-<td>Zatrzymanie płatności dla czeków postdatowanych</td>
-<td>Można zatrzymać zapłatę czeku postdatowanego wystawionego dostawcy, np. z powodu niewystarczających funduszy, zmiany warunków umowy z dostawcą, dostawy wadliwych towarów przez dostawcę lub zwrotu towarów do dostawcy. Możesz zatrzymać wypłatę tylko na kontrole, które nie zostały jeszcze rozliczone.</td>
+<td>Zatrzymywanie płatności czeku postdatowanego</td>
+<td>Można zatrzymać zapłatę czeku postdatowanego wystawionego dostawcy, np. z powodu niewystarczających funduszy, zmiany warunków umowy z dostawcą, dostawy wadliwych towarów przez dostawcę lub zwrotu towarów do dostawcy. Zatrzymać można zapłatę tylko czeków nierozliczonych.</td>
 </tr>
 </tbody>
 </table>
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Konfigurowanie programu lojalnościowego odbiorcy"
-description: "W tym artykule opisano sposób konfigurowania programu lojalnościowego. Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za zakup produktów w sklepach sieci sprzedaży. W programie Microsoft Dynamics 365 dla operacji można skonfigurować programy lojalnościowe proste lub złożone, które mają zastosowanie w Twoim firmach w dowolnego kanału sprzedaży detalicznej."
+title: "Konfigurowanie programu lojalnościowego"
+description: "W tym artykule opisano sposób konfigurowania programu lojalnościowego. Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za zakup produktów w sklepach sieci sprzedaży. W programie Microsoft Dynamics 365 for Operations można skonfigurować proste lub złożone programy lojalnościowe, które mają zastosowanie w firmach w dowolnym kanale sprzedaży detalicznej."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
@@ -25,9 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-a-customer-loyalty-program"></a>Konfigurowanie programu lojalnościowego odbiorcy
+# <a name="set-up-a-customer-loyalty-program"></a>Konfigurowanie programu lojalnościowego
 
-W tym artykule opisano sposób konfigurowania programu lojalnościowego. Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za zakup produktów w sklepach sieci sprzedaży. W programie Microsoft Dynamics 365 dla operacji można skonfigurować programy lojalnościowe proste lub złożone, które mają zastosowanie w Twoim firmach w dowolnego kanału sprzedaży detalicznej.
+[!include[banner](includes/banner.md)]
+
+
+W tym artykule opisano sposób konfigurowania programu lojalnościowego. Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za zakup produktów w sklepach sieci sprzedaży. W programie Microsoft Dynamics 365 for Operations można skonfigurować proste lub złożone programy lojalnościowe, które mają zastosowanie w firmach w dowolnym kanale sprzedaży detalicznej.
 
 <a name="loyalty-features"></a>Funkcje lojalnościowe
 ----------------
@@ -37,11 +40,11 @@ Program lojalnościowy można skonfigurować w taki sposób, żeby zawierał nas
 -   Konfigurowanie wielu typów nagród ofertowanych w programach lojalnościowych, a następnie śledzenie uczestnictwa w programach lojalnościowych.
 -   Konfigurowanie programów lojalnościowych reprezentujących różne oferowane premie nagród. Można dołączyć warstwy programu lojalnościowego, aby oferować większe premie i nagrody dla klientów, którzy często kupują zakupów lub wydają więcej pieniędzy w sklepach.
 -   Określanienie reguł dochodów w celu identyfikacji działań, jakie odbiorca musi wykonać, aby zdobyć nagrody. Można także zdefiniować reguły realizacji, określające, kiedy i jak odbiorca może odebrać nagrody.
--   Wystawiać karty lojalnościowe z dowolnego kanału sprzedaży detalicznej, która uczestniczy w programów lojalnościowych i połącz karty lojalnościowe programy lojalnościowe, które odbiorcy mogą uczestniczyć w. Można także powiązać rekord klienta karty lojalnościowej, aby odbiorcy mogli puli punktów lojalnościowych z wieloma kartami i wymienić je.
+-   Wystawianie kart lojalnościowych z dowolnego kanału sprzedaży detalicznej, który bierze udział w programach lojalnościowych, i łączenie kart lojalnościowych z jednym lub kilkoma programami lojalnościowymi, w których odbiorcy mogą brać udział. Można też połączyć rekord odbiorcy z kartą lojalnościową, aby umożliwić odbiorcy gromadzenie puli punktów lojalnościowych z wielu kart oraz ich wykorzystywanie.
 -   Ręczne dopasowanie kart lojalnościowych lub przeniesienie salda nagród w programie lojalnościowym z jednej karty do drugiej w celu dostosowania lub nagrodzenia odbiorcy.
 
 ## <a name="setting-up-loyalty-programs"></a>Konfigurowanie programów lojalnościowych
-Należy ustawić kilka składników włączyć funkcję lojalności w 365 Dynamics dla operacji - sieci sprzedaży. Na poniższym diagramie przedstawiono składniki lojalnościowe i ich relacje względem siebie. ![Przebieg procesu konfigurowania systemu lojalności](./media/loyaltyprocess.gif)
+Należy skonfigurować kilka składników, aby włączyć funkcję lojalnościową w module Dynamics 365 for Operations — Handel detaliczny. Na poniższym diagramie przedstawiono składniki lojalnościowe i ich relacje względem siebie. ![Przebieg procesu konfigurowania systemu lojalności](./media/loyaltyprocess.gif)
 
 ## <a name="loyalty-components"></a>Składniki lojalnościowe
 W poniższej tabeli opisano każdy składnik i miejsce, w którym jest on używany w konfiguracji lojalnościowej.
@@ -64,10 +67,12 @@ W poniższej tabeli opisano procesy, które należy wykonać, aby wysłać konfi
 
 | Nazwa procesu                         | Opis                                                                                                                                                                                                                                                                                                                                                                                                    | Nazwa strony                            |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| 1050 (informacje o lojalności)           | Uruchomienie tego procesu do wysyłania danych lojalności z 365 Dynamics dla operacji do sklepów detalicznych. Dobrze jest zaplanować częste wykonywanie tego procesu, tak aby dane lojalnościowe były przesyłane do wszystkich sklepów.                                                                                                                                                                                               | Harmonogram dystrybucji                |
+| 1050 (informacje o lojalności)           | Uruchom ten proces w celu wysyłania danych lojalnościowych z programu Dynamics 365 for Operations do sklepów sieci sprzedaży. Dobrze jest zaplanować częste wykonywanie tego procesu, tak aby dane lojalnościowe były przesyłane do wszystkich sklepów.                                                                                                                                                                                               | Harmonogram dystrybucji                |
 | Przetwarzanie programów lojalnościowych              | Uruchom ten proces, aby skojarzyć schematy lojalnościowe z kanałami sprzedaży detalicznej, do których jest przypisany schemat lojalnościowy. Ten proces może zostać zaplanowany do uruchamiania jako zadanie wsadowe. Należy uruchamiać ten proces przy każdej zmianie danych konfiguracji lojalności, takich jak harmonogramy, programy lojalnościowe lub punkty lojalnościowe.                                                                                               | Przetwarzanie programów lojalnościowych              |
-| Przetwarzaj transakcje programu lojalnościowego w trybie offline | Uruchom ten proces, aby zaktualizować karty lojalnościowe tak, aby uwzględniały transakcje przetworzone w trybie offline. Ten proces obejmuje tylko wtedy, gdy **zarobić w trybie offline** zaznaczone jest pole wyboru ** parametry udostępnione sieci sprzedaży Wytwarzanie strony, tak aby nagrody są przyznawane w trybie offline.                                                                                                                                               | Przetwarzaj transakcje programu lojalnościowego w trybie offline |
+| Przetwarzaj transakcje programu lojalnościowego w trybie offline | Uruchom ten proces, aby zaktualizować karty lojalnościowe tak, aby uwzględniały transakcje przetworzone w trybie offline. Ten proces ma zastosowanie tylko wtedy, gdy jest zaznaczone pole wyboru **Uzyskaj w trybie offline** na stronie **Wspólne parametry sieci sprzedaży**, dzięki czemu możliwie jest odbieranie nagród w trybie offline.                                                                                                                                               | Przetwarzaj transakcje programu lojalnościowego w trybie offline |
 | Aktualizuj warstwy kart lojalnościowych            | Uruchom ten proces, aby ocenić aktywność zdobywania punktów odbiorcy pod kątem reguł warstwy dla programu lojalnościowego oraz zaktualizować stan warstwy odbiorcy. Ten proces jest wymagany tylko, gdy zmienisz reguły warstwy w programach lojalnościowych i chcesz wstecznie zastosować zaktualizowane reguły do kart lojalnościowych, które zostały już wystawione. Ten proces może być uruchamiany jako zadanie wsadowe lub dla poszczególnych kart. | Aktualizuj warstwy kart lojalnościowych            |
+
+
 
 
 

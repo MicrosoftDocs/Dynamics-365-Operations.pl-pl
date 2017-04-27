@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="resolve-discrepancies-during-invoice-totals-matching"></a>Usuwanie rozbieżności wykrytych podczas uzgadniania faktur
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Jednym z typów weryfikację uzgadniania faktur jest uzgadnianie sum faktur. Aby określić, czy system powinien wykonywać uzgadnianie sum faktur, na stronie **Parametry rozrachunków z dostawcami** na karcie **Sprawdzanie poprawności faktur** ustaw dla opcji **Dopasuj sumy faktur** wartość **Tak**. 
@@ -39,6 +42,8 @@ Po znalezieniu rozbieżności konieczne może być skontaktowanie się z dostawc
 -   Zaakceptowanie różnicy cen i zaksięgowanie faktury z rozbieżnościami. Konfiguracja systemu może wymagać zatwierdzenia przed zaksięgowaniem faktury z rozbieżnościami w uzgadnianiu. W takim przypadku trzeba zatwierdzić rozbieżności uzgadniania i opcjonalnie można wprowadzić komentarz do zatwierdzenia. Następnie można zaksięgować fakturę.
 -   Odpowiednie poprawienie kwoty faktury i zaksięgowanie faktury.
 -   Zażądanie od dostawcy pełnej zapłaty i nowej, poprawionej faktury.
+
+
 
 
 

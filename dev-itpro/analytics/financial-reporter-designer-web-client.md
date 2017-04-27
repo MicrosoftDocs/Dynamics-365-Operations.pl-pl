@@ -1,5 +1,5 @@
 ---
-title: Program Management Reporter - projektanta i klient sieci web
+title: "Management Reporter — projektanta i klient sieci web"
 description: 
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="management-reporter----the-designer-and-web-client"></a>Program Management Reporter - projektanta i klient sieci web
+# <a name="management-reporter----the-designer-and-web-client"></a>Management Reporter — projektanta i klient sieci web
+
+[!include[banner](../includes/banner.md)]
+
+
+
 
 
 

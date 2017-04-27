@@ -1,6 +1,6 @@
 ---
-title: "Omówienie zamówień klienta"
-description: "Ten temat zawiera informacje o zamówieniach klienta w sprzedaży detalicznej nowoczesnych POS (MPOS). Zamówienia klientów są również nazywane zamówień specjalnych. Temat zawiera omówienie powiązane parametry i transakcji przepływów."
+title: "Omówienie zamówień odbiorców"
+description: "Ten temat zawiera informacje o funkcjonalności zamówień odbiorców w programie Retail Modern POS (MPOS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Temat przedstawia powiązane parametry i przepływy transakcji."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
@@ -25,75 +25,80 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="customer-orders-overview"></a>Omówienie zamówień klienta
+# <a name="customer-orders-overview"></a>Omówienie zamówień odbiorców
 
-Ten temat zawiera informacje o zamówieniach klienta w sprzedaży detalicznej nowoczesnych POS (MPOS). Zamówienia klientów są również nazywane zamówień specjalnych. Temat zawiera omówienie powiązane parametry i transakcji przepływów.
+[!include[banner](includes/banner.md)]
 
-W świecie handlu wielokanałowego wielu sprzedawców uwzględnienie możliwości klienta zamówienia lub zamówień specjalnych, aby spełnić wymagania różnych produktu i spełnienia. Poniżej przedstawiono niektóre typowe scenariusze:
 
--   Klient chce, aby produkty, które mają być dostarczane na określony adres w określonym dniu.
--   Klient chce odebrać produkty w sklepie lub lokalizację, która różni się od magazynu lub lokalizacji, gdzie klient zakupił tych produktów.
--   Klient chce się odebrać produkty, które klient zakupił innemu użytkownikowi.
+Ten temat zawiera informacje o funkcjonalności zamówień odbiorców w programie Retail Modern POS (MPOS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Temat przedstawia powiązane parametry i przepływy transakcji.
 
-Detaliści również użyć zamówień klienta, aby zminimalizować utraconej sprzedaży, powodującymi przestojów w zapasach; w przeciwnym razie, ponieważ towar może być dostarczane lub odebrać w innym czasie lub miejsce.
+W świecie wielokanałowego handlu detalicznego wielu sprzedawców udostępnia opcję składania zamówień przez odbiorców, inaczej zamówień specjalnych, które pomagają spełnić różne wymagania dotyczące produktów i realizacji dostaw. Poniżej przedstawiono niektóre typowe scenariusze:
 
-## <a name="set-up-customer-orders"></a>Ustawianie zamówień klienta
-Oto kilka parametrów, które mogą być ustawione na **handlu detalicznego parametry** stronę do definiowania sposobu realizacji zleceń klienta:
+-   Klient chce, aby produkty zostały dostarczane pod określony adres w określonym dniu.
+-   Klient chce odebrać produkty ze sklepu lub lokalizacji innej niż ta, w której kupił produkty.
+-   Klient chce, aby ktoś inny odebrał kupione przez niego produkty.
 
--   **Domyślne oprocentowanie lokaty** — określić kwotę, jaką klient musi zapłacić jako depozyt, zamówienie może zostać potwierdzona. Kwota depozytu domyślna jest obliczana jako procent wartości zamówienia. W zależności od uprawnień, Pracownik sklepu może być w stanie zastąpić kwoty za pomocą **zastąpienie wpłaty**.
--   **Procent opłaty za anulowanie** -Jeśli opłaty zostaną zastosowane po anulowaniu zamówienia danego klienta, należy określić kwotę takich opłat.
--   **Kod opłaty za anulowanie** -Jeśli opłatę zostaną zastosowane po anulowaniu zamówienia danego klienta, że opłaty zostaną odzwierciedlone pod kodu opłaty dodatkowej w zamówieniu sprzedaży w systemie Microsoft Dynamics AX. Za pomocą tego parametru można zdefiniować kod opłaty za anulowanie.
--   **Kodzie opłaty transportowej** – Detaliści mogą być obciążani dodatkową opłatą za wysyłkę towarów do odbiorcy. Kwota tej opłaty transportowej zostaną odzwierciedlone w obszarze kod opłaty z zamówienia sprzedaży w systemie Dynamics AX. Ten parametr służy do mapowania wysyłki kodu opłaty dodatkowej opłaty za wysyłkę na zamówienie klienta.
--   **Zwrot opłaty za wysyłkę** — Określ, czy podlegają zwrotowi koszty wysyłki, które są skojarzone z zamówieniem klienta.
--   **Maksymalna kwota bez zgody** -Jeśli koszty wysyłki są zwracane, określić maksymalną ilość wysyłki zwrotów opłat dla zamówień zwrotu. Jeśli kwota ta zostanie przekroczona, override menedżera jest wymagane w celu kontynuowania refundacji. Aby uwzględnić następujące scenariusze, zwrot opłaty za wysyłkę można przekraczać kwoty, którą pierwotnie została wypłacona:
-    -   Opłaty są stosowane na poziomie nagłówka zamówienia sprzedaży, a po pewną ilość linii produktu jest zwracany, maksymalny zwrot opłaty za wysyłkę dozwolony dla produktów i ilości, nie można określić w sposób, który działa dla wszystkich klientów detalicznych.
-    -   Dla każdego wystąpienia wysyłki zostały poniesione koszty wysyłki. Jeśli klient zwraca produkty wiele razy, a punkt sprzedaży detalicznej zasady określają, że punkt sprzedaży detalicznej ponosi koszty wysyłki zwrotnej opłat, opłaty za wysyłkę zwrotu będzie więcej niż opłaty rzeczywisty koszt wysyłki.
+Sprzedawcy detaliczni wykorzystują również zamówienia odbiorców, aby minimalizować utraconą sprzedaż, jaką mogą powodować przestoje w zaopatrzeniu, ponieważ towar może być dostarczany lub odbierany w różnych miejscach i czasie.
 
-## <a name="transaction-flow-for-customer-orders"></a>Przepływ transakcji zamówień odbiorców
-### <a name="create-a-customer-order-in-retail-modern-pos"></a>Utwórz zamówienie odbiorcy w programie Retail POS nowoczesny
+## <a name="set-up-customer-orders"></a>Konfigurowanie zamówień odbiorców
+Oto kilka parametrów, które można skonfigurować na stronie **Parametry sieci sprzedaży** w celu zdefiniowania sposobu realizacji zamówień odbiorców:
+
+-   **Domyślne oprocentowanie lokaty** — Określ kwotę, jaką odbiorca musi wpłacić jako depozyt, zanim zamówienie zostanie potwierdzone. Domyślna kwota kaucji jest obliczana jako procent wartości zamówienia. W zależności od posiadanych uprawnień pracownik sklepu może być w stanie ręcznie zmienić tę kwotę za pomocą opcji **Zastąpienie wpłaty**.
+-   **Procent opłaty za anulowanie** — Jeśli z tytułu anulowania zamówienia odbiorcy będzie naliczana opłata, należy podać kwotę tej opłaty.
+-   **Kod opłaty za anulowanie** — Jeśli z tytułu anulowania zamówienia odbiorcy będzie naliczana opłata, ta opłata będzie wykazywana pod odpowiednim kodem opłaty w zamówieniu sprzedaży w systemie Microsoft Dynamics AX. Za pomocą tego parametru można zdefiniować kod opłaty za anulowanie.
+-   **Kod opłaty transportowej** — Sprzedawcy detaliczni mogą naliczać dodatkową opłatę za wysyłkę towarów do odbiorców. Kwota tej opłaty transportowej zostanie wykazana pod odpowiednim kodem opłaty w zamówieniu sprzedaży w systemie Dynamics AX. Ten parametr służy do mapowania kodu opłaty transportowej na opłaty transportowe w zamówieniu odbiorcy.
+-   **Zwróć opłaty transportowe** — Określ, czy opłaty transportowe skojarzone z zamówieniem odbiorcy podlegają zwrotowi.
+-   **Maksymalna kwota bez zatwierdzenia** — Jeśli opłaty transportowe podlegają zwrotowi, określ maksymalną kwotę takiego zwrotu dla wszystkich zamówień zwrotu. Jeśli ta kwota zostanie przekroczona, w celu kontynuowania zwrotu jest konieczne ręczne zastąpienie przez menedżera. Aby umożliwić realizację scenariuszy opisanych poniżej, zwrot opłaty transportowej może przekraczać pierwotnie zapłaconą kwotę:
+    -   Opłaty są stosowane na poziomie nagłówka zamówienia sprzedaży, a gdy pewna ilość z wiersza produktu jest zwracana, maksymalny zwrot opłat transportowych dozwolony dla produktów i ilości nie może zostać określony w sposób pasujący dla wszystkich odbiorców detalicznych.
+    -   Opłaty transportowe są ponoszone dla każdego zdarzenia wysyłki. Jeśli odbiorca zwraca produkty wiele razy, a polityka sprzedawcy detalicznego określa, że ponosi on koszty zwrotu opłat transportowych, zwracane opłaty transportowe będą wyższe, niż faktyczne opłaty transportowe.
+
+## <a name="transaction-flow-for-customer-orders"></a>Przepływ transakcji w zamówieniach odbiorców
+### <a name="create-a-customer-order-in-retail-modern-pos"></a>Tworzenie zamówienia odbiorcy w aplikacji Retail Modern POS
 
 1.  Dodaj odbiorcę do transakcji.
 2.  Dodaj produkty do koszyka.
-3.  Kliknij **Utwórz zamówienie odbiorcy**, a następnie wybierz typ zamówienia. Typ zamówienia można albo **zamówienia klienta** lub **oferta**.
-4.  Kliknij **statek zaznaczone** lub **Wyślij wszystko** do wysyłki produktów do adresu na koncie odbiorcy, określić Żądana data wysyłki i określić koszty wysyłki.
-5.  Kliknij **zaznaczone podnieść** lub **odbioru wszystkich** na wybieranie produktów, które odbierze od bieżącego magazynu lub innego magazynu w określonym dniu.
-6.  Zebrać kwotę depozytu, jeśli wymagany jest depozyt.
+3.  Kliknij opcję **Utwórz zamówienie odbiorcy**, a następnie wybierz typ zamówienia. Typem zamówienia może być **Zamówienie odbiorcy** lub **Oferta**.
+4.  Kliknij opcję **Wyślij wybrane** lub **Wyślij wszystko**, aby wysłać produkty pod adres na koncie odbiorcy, określić żądaną datę wysyłki i określić opłaty transportowe.
+5.  Kliknij opcję **Odbierz wybrane** lub **Pobierz wszystko**, aby zaznaczyć produkty, które mają zostać pobrane z bieżącego sklepu lub innego sklepu w określonym dniu.
+6.  Jeśli jest wymagana kaucja, pobierz ją.
 
 ### <a name="edit-an-existing-customer-order"></a>Edytowanie istniejącego zamówienia odbiorcy
 
-1.  Na stronie głównej kliknij **znajdowanie zamówienia**.
-2.  Znajdź i zaznacz zamówienie do edycji. U dołu strony, kliknij przycisk **edytować**.
+1.  Na stronie głównej kliknij opcję **Znajdź zamówienie**.
+2.  Znajdź i zaznacz zamówienie, które chcesz zmodyfikować. U dołu strony kliknij przycisk **Edytuj**.
 
-### <a name="pick-up-an-order"></a>Pobierz zamówienie
+### <a name="pick-up-an-order"></a>Pobieranie zamówienia
 
-1.  Na stronie głównej kliknij **znajdowanie zamówienia**.
-2.  Wybierz kolejność, aby odebrać. U dołu strony, kliknij przycisk **pobrania i pakowania**.
-3.  Kliknij **odebrać**.
+1.  Na stronie głównej kliknij opcję **Znajdź zamówienie**.
+2.  Zaznacz zamówienie, dla którego chcesz pobrać produkty. U dołu strony kliknij opcję **Pobieranie i pakowanie**.
+3.  Kliknij przycisk **Pobierz**.
 
 ### <a name="cancel-an-order"></a>Anulowanie zamówienia
 
-1.  Na stronie głównej kliknij **znajdowanie zamówienia**.
-2.  Wybierz zamówienie, aby anulować. U dołu strony, kliknij przycisk **anulowanie**.
+1.  Na stronie głównej kliknij opcję **Znajdź zamówienie**.
+2.  Zaznacz zamówienie, które chcesz anulować. U dołu strony kliknij przycisk **Anuluj**.
 
 #### <a name="create-a-return-order"></a>Tworzenie zamówienia zwrotu
 
-1.  Na stronie głównej kliknij **znajdowanie zamówienia**.
-2.  Wybierz zamówienie, aby powrócić, zaznacz fakturę dla zamówienia, a następnie wybierz linię produktów dla towarów powrócić.
-3.  U dołu strony, kliknij przycisk **zamówienia zwrotu**.
+1.  Na stronie głównej kliknij opcję **Znajdź zamówienie**.
+2.  Zaznacz zamówienie, którego produkty chcesz zwrócić, zaznacz fakturę do zamówienia, a następnie zaznacz wiersz produktu, który chcesz zwrócić.
+3.  U dołu strony kliknij przycisk **Zwróć zamówienie**.
 
-## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Przepływ asynchroniczny transakcji zamówień odbiorców
-Zamówienia mogą być tworzone z punktu sprzedaży (POS) klienta w tryb synchroniczny lub asynchroniczny tryb.
+## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Asynchroniczny przepływ transakcji w zamówieniach odbiorców
+Zamówienia odbiorców mogą być tworzone w aplikacji klienckiej punktu sprzedaży (POS) w trybie synchronicznym lub asynchronicznym.
 
-### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>Włącz zamówień klienta ma być utworzony w trybie asynchronicznym
+### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>Włączanie funkcji tworzenia zamówień odbiorców w trybie asynchronicznym
 
-1.  W systemie Dynamics AX, kliknij przycisk **sieci sprzedaży i handlu**&gt;**konfigurację kanału**&gt;**Instalator POS**&gt;**profilu POS**&gt;**profile funkcji**.
-2.  Na **ogólne** ustawić skróconej **Tworzenie zamówienia klienta w trybie asynchroniczne** opcji w celu **tak**.
+1.  W systemie Dynamics AX wybierz kolejno opcje **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profil punktu sprzedaży** &gt; **Profile funkcji**.
+2.  Na skróconej karcie **Ogólne** w opcji **Utwórz zamówienie odbiorcy w trybie asynchronicznym** ustaw wartość **Tak**.
 
-Po **Tworzenie zamówienia klienta w trybie asynchroniczne** opcja jest ustawiona na **tak**, zamówienia klientów są zawsze tworzone w trybie asynchronicznym, nawet jeśli Retail Transaction Service (RTS) jest dostępna. Jeśli ustawisz tę opcję do **nr**, zamówienia klientów są zawsze tworzone w trybie synchronicznym przy użyciu RTS. Po utworzeniu zamówienia klienta w trybie asynchronicznym, są pobierane i wstawiane do systemu Dynamics AX przez zadania ściągania (P). Odpowiedniego zamówienia sprzedaży są tworzone w systemie Dynamics AX po **Synchronizuj zamówienia** jest uruchamiana ręcznie lub za pomocą procesu wsadowego.
+Gdy opcja **Utwórz zamówienie odbiorcy w trybie asynchronicznym** jest ustawiona na **Tak**, zamówienia odbiorców są zawsze tworzone w trybie asynchronicznym, nawet jeśli jest dostępna usługa Retail Transaction Service (RTS). Jeśli ustawisz tę opcję na **Nie**, zamówienia odbiorców są zawsze tworzone w trybie synchronicznym przy użyciu usługi RTS. Po utworzeniu zamówień odbiorców w trybie asynchronicznym są one pobierane i wstawiane do systemu Dynamics AX przez zadania ściągania (P). Odnośne zamówienia sprzedaży są tworzone w systemie Dynamics AX podczas wykonywania operacji **Synchronizuj zamówienia** ręcznie lub w procesie wsadowym.
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Hybrydowe zamówienia klienta](hybrid-customer-orders.md)
+[Hybrydowe zamówienia odbiorców](hybrid-customer-orders.md)
+
+
 
 

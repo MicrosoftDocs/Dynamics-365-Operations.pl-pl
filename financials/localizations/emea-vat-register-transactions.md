@@ -1,6 +1,6 @@
 ---
-title: Transakcje dla Europy Wschodniej rejestru VAT.
-description: "Ten temat zawiera informacje o transakcji rejestru VAT dla Estonii, Litwy, Republiki Czeskiej, Węgier, Łotwy i Polski."
+title: Transakcje rejestru VAT dla Europy Wschodniej
+description: "Ten temat zawiera informacje o transakcjach rejestru VAT dla Estonii, Litwy, Czech, Węgier, Łotwy i Polski."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,10 +25,15 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="vat-register-transactions-for-eastern-europe"></a>Transakcje dla Europy Wschodniej rejestru VAT.
+# <a name="vat-register-transactions-for-eastern-europe"></a>Transakcje rejestru VAT dla Europy Wschodniej
 
-Ten temat zawiera informacje o transakcji rejestru VAT dla Estonii, Litwy, Republiki Czeskiej, Węgier, Łotwy i Polski. 
+[!include[banner](../includes/banner.md)]
 
-Dla osób prawnych z podstawowego adresu w Estonii, Litwy, Republiki Czeskiej, Węgier, Łotwy i Polski, możesz przeglądać transakcje podatkowe i aktualizować **Data rejestru VAT** dla nich. Aby wyświetlić transakcje rejestru VAT, otwórz **podatku**&gt;**zadania okresowe**&gt;**transakcje rejestru VAT**. Ta strona zawiera transakcje podatkowe, które zostały utworzone przez kody podatków typu **Standardowy VAT** dla którego **Data rejestru VAT** jest pusty. Można wypełnić **Data rejestru VAT** dla transakcji podatku za pomocą pole **Data rejestru VAT** znajdującego się na **menu główne**. Dla osób prawnych z podstawowego adresu w Republice Czeskiej, jest dodatkowa kolumna, **przełożony VAT**. Jeśli zaznaczono to pole wskazuje tego podatku od wartości dodanej nie został zgłoszony dla transakcji. Zwykle dotyczy to faktur korygujących sprzedaży, oczekujących na potwierdzenie od klienta. To pole można zaznaczyć w trakcie procesu księgowania faktury sprzedaży. Na **kody podatków** stronę (**podatku**&gt;**podatku**&gt;**kody podatków**), można przejrzeć lub zaktualizować typ kodu podatku. <!---For more information about sales tax codes, refer to [Set up sales tax codes](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-codes/).-->
+
+Ten temat zawiera informacje o transakcjach rejestru VAT dla Estonii, Litwy, Czech, Węgier, Łotwy i Polski. 
+
+Firmy mające adres podstawowy w Estonii, na Litwie, w Czechach, na Węgrzech, Łotwie i w Polsce mogą przeglądać transakcje podatkowe i aktualizować dla nich parametr **Data rejestru VAT**. Aby wyświetlić transakcje rejestru VAT, wybierz kolejno opcje **Podatek** &gt; **Zadania okresowe** &gt; **Transakcje rejestru VAT.**. Ta strona zawiera transakcje podatkowe, które zostały utworzone dla kodów podatków o typie **Standardowy VAT** z pustym polem **Data rejestru VAT**. Można wypełniać pole **Data rejestru VAT** dla transakcji podatkowych za pomocą przycisku **Data rejestru VAT** znajdującego się w **menu głównym**. Dla firm mających adres podstawowy w Czechach istnieje dodatkowa kolumna **Odroczony podatek VAT**. Zaznaczenie tego pola wskazuje, że podatek od wartości dodanej nie został zgłoszony dla transakcji. Zwykle dotyczy to faktur korygujących sprzedaży, które oczekują na potwierdzenie przez odbiorcę. To pole wyboru można zaznaczyć w trakcie procesu księgowania faktury sprzedaży. Na stronie **Kody podatków** (**Podatek** &gt; **Podatek** &gt; **Kody podatków**) można przejrzeć lub zaktualizować typ kodu podatku. <!---For more information about sales tax codes, refer to [Set up sales tax codes](http://ax.help.dynamics.com/en/wiki/set-up-sales-tax-codes/).-->
+
+
 
 

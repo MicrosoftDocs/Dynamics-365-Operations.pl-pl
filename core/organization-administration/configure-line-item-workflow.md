@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-line-item-workflow"></a>Konfigurowanie przepływu pracy dla pozycji w wierszu
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym temacie wyjaśniono sposób konfigurowania elementu przepływu pracy dla pozycji w wierszu.
 
 Aby skonfigurować element przepływu pracy dla pozycji w wierszu, w edytorze przepływu pracy kliknij element prawym przyciskiem myszy i wybierz polecenie **Właściwości**, a zostanie otwarta strona **Właściwości**. Następnie użyj poniższych procedur, aby skonfigurować właściwości elementu przepływu pracy dla pozycji w wierszu.
 
-## <a name="name-the-lineitem-workflow-element"></a>Nazwa elementu przepływu pracy lineitem
+## <a name="name-the-lineitem-workflow-element"></a>Nazywanie elementu przepływu pracy dla pozycji w wierszu
 Należy wykonać następujące kroki, aby nadać nazwę elementowi przepływu pracy dla pozycji w wierszu.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
@@ -50,6 +53,8 @@ Wykonaj następujące kroki, aby określić, czy ten sam przepływ pracy będzie
     6.  Aby sprawdzić, czy wprowadzony zbiór warunków jest poprawnie skonfigurowany, kliknij przycisk **Testuj**. Na stronie **Warunek testowy przepływu pracy** w obszarze **Sprawdź poprawność warunku** wybierz rekord i kliknij przycisk **Testuj**. System oszacuje rekord i określi, czy rekord spełnia określone warunki. Kliknij przycisk **OK** lub **Anuluj**, aby powrócić do strony **Właściwości**.
 
     Na karcie **Przepływy pracy** wybierz przepływ pracy, który ma być używany do przetwarzania pozycji w wierszach spełniających utworzony zbiór warunków.
+
+
 
 
 

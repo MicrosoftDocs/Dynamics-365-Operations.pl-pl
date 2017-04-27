@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-expense-management"></a>Konfigurowanie zarządzania wydatkami
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano zagadnienia i decyzje, które należy uwzględnić w procesie planowania przed skonfigurowaniem modułu Zarządzanie wydatkami w systemie Microsoft Dynamics AX. W obszarze Zarządzanie wydatkami można przechowywać m.in. informacje o metodach płatności, wnioski wyjazdowe, raporty z wydatków oraz zasady. 
 
 Ponieważ wiele decyzji podjętych podczas planowania konfiguracji zarządzania wydatkami jest opartych na hierarchii i strukturze finansowej organizacji, musisz konsultować się z dokumentami planowania dla tych dokumentów.
@@ -133,6 +136,8 @@ Można utworzyć zasady raportu wydatków tak, aby organizacja mogła oszczędzi
 -   Kiedy zasad wygasa?
 -   Jaka jest reguła?
 -   Jaki jest wynik reguły?
+
+
 
 
 

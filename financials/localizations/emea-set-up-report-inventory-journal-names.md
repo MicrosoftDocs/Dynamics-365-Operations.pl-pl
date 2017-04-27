@@ -1,6 +1,6 @@
 ---
 title: Raporty arkuszy magazynowych
-description: "Użycie magazynu można konfigurować raportów opartych na raportowanie elektroniczne, należy zdefiniować relacje między określonego raportu i typu arkusza."
+description: "Jeśli używasz konfigurowalnych raportów o zapasach opartych na raportowaniu elektronicznym, należy zdefiniować relacje między określonymi raportami a typami arkuszy."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,21 +27,26 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-journal-reports"></a>Raporty arkuszy magazynowych
 
-Użycie magazynu można konfigurować raportów opartych na raportowanie elektroniczne, należy zdefiniować relacje między określonego raportu i typu arkusza.
+[!include[banner](../includes/banner.md)]
 
-Aby zdefiniować relacje między określonego raportu i typu arkusza na **nazw arkuszy magazynowych** stronę (**Zarządzanie zapasami**&gt;**instalacji**&gt;**nazwy arkuszy**&gt;**zapasów**), wprowadź nazwę dla raportu. **Uwaga:** do ustawiania konfiguracji obsługiwanych, Pobierz konfiguracji wymagane raportowania elektronicznego. Aby uzyskać więcej informacji, zobacz [pobrać elektroniczne raportowanie konfiguracje z cyklem życia usług](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). Przykłady raportów zapasów z obsługiwanych konfiguracji w Europie są wymienione w poniższej tabeli.
+
+Jeśli używasz konfigurowalnych raportów o zapasach opartych na raportowaniu elektronicznym, należy zdefiniować relacje między określonymi raportami a typami arkuszy.
+
+Aby skonfigurować relację między określonym raportem a typem arkusza, na stronie **Nazwy arkuszy magazynowych** (**Zarządzanie zapasami** &gt; **Ustawienia** &gt; **Nazwy arkuszy** &gt; **Zapasy**) nadaj raportowi nazwę. **Uwaga:** Aby utworzyć obsługiwane konfiguracje, pobierz wymagane konfiguracje raportowania elektronicznego. Aby uzyskać więcej informacji, zobacz [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). Przykłady raportów o zapasów z obsługiwanymi konfiguracjami w Europie są wymienione w tabeli poniżej.
 |                    |                                     |                  |                                         |
 |--------------------|-------------------------------------|------------------|-----------------------------------------|
-| **Country**        | **Opis raportu**              | **Journal type** | **Nazwa mapowania format**                 |
-| Litwa, Węgry | Raport zestawienie zapasów          | Zliczanie         | Zestawienie magazynowe (HU, LT)            |
+| **Kraj**        | **Opis raportu**              | **Typ arkusza** | **Nazwa mapowania formatu**                 |
+| Litwa, Węgry | Raport zestawienia zapasów          | Zliczanie         | Zestawienie zapasów (Węgry, Litwa)            |
 | Łotwa, Polska     | Dokument przeklasyfikowania zapasów | Przenoszenie         | InventoryReclassificationDocument\_PLLV |
 | Estonia            | Dokument przeklasyfikowania zapasów | Przenoszenie         | InventoryReclassificationDocument\_EE   |
 | Polska             | Wewnętrzne PW/RW                      | Transakcje         | InventJournalLinesDocPL                 |
-| Łotwa             |  Dokument przesunięcia magazynowego         | Transakcje         | Ruch\_LV                            |
+| Łotwa             |  Dokument przesunięcia magazynowego         | Transakcje         | Movement\_LV                            |
 | Łotwa             | Dokument zmniejszenia wartości zapasów       | Korekta       | InventJournalLines\_LV                  |
 | Łotwa             | Przenieś dokument dostawy              | Przenoszenie         | InternalTransferDeliveryNote\_LV        |
-| Łotwa             | Raport dokument inwentaryzacji            | Zliczanie         | CountedDocument\_LV                     |
+| Łotwa             | Raport dokumentu inwentaryzacji            | Zliczanie         | CountedDocument\_LV                     |
 | Łotwa             | Raport arkusza inwentaryzacyjnego                | Zliczanie         | Arkusz inwentaryzacyjny                           |
+
+
 
 
 

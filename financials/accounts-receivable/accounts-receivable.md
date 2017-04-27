@@ -27,9 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-receivable-home-page"></a>Rozrachunki z odbiorcami — strona główna
 
-Moduł Rozrachunki z odbiorcami umożliwia śledzenie faktur dla odbiorcy i wszystkich płatności przychodzących od odbiorców.
+[!include[banner](../includes/banner.md)]
+
+
+Moduł Rozrachunki z odbiorcami umożliwia śledzenie faktur dla odbiorcy i wszystkich płatności przychodzących od odbiorców. 
 
 Można tworzyć faktury dla odbiorców, które są oparte na zamówieniach sprzedaży lub dokumentach dostawy. Można także wprowadzić faktury niezależne, które nie są powiązane z zamówieniami sprzedaży. Można otrzymywać płatności przy użyciu różnych typów płatności. Obejmują one weksle, gotówkę, czeki, karty kredytowe i płatności elektroniczne. Jeśli organizacja zawiera wiele firm, można użyć opcji płatności scentralizowanych w celu rejestracji płatności w jednej firmie w imieniu innych firm.
+
+
 
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accruals-overview"></a>Przegląd naliczeń
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano koncepcję naliczeń oraz sposób ich konfigurowania i tworzenia transakcji.
 
 Naliczenia są używane w księgowości memoriałowej do śledzenia przychodu rozpoznawanego w okresie, w którym został zarobiony, a nie w momencie otrzymania płatności, oraz do śledzenia wydatków (kosztów), które są rozpoznawane, gdy się pojawiają, a nie kiedy zostanie zrealizowana płatność.
@@ -41,6 +44,8 @@ Schematy naliczania są używane do ustawiania odroczonych przychodów i kosztó
 Po ustaleniu, które konta należy zastosować, można określić sposób tworzenia numeru załącznika podczas tworzenia transakcji naliczania. Można również określić, jak często występują transakcje, ile razy transakcje są tworzone i kiedy są księgowane. Po utworzeniu schematu naliczania, można go używać w niektórych arkuszach, stosując funkcję Naliczenia finansowe.
 
 ## <a name="ledger-accruals"></a>Naliczenia finansowe
-Po wprowadzeniu arkusza można kliknąć opcję **Naliczenia finansowe** w menu **Funkcje**. Następnie, po wybraniu schematu naliczania, zostanie wyświetlona kwota podstawy z arkusza, która zostanie rozłożona w okresie zgodnie ze schematem naliczania. Na przykład jeśli płacisz ubezpieczenia pracownika przez cały rok w styczniu, a kwota jest 12 000, użytkownik musi rozpoznawać związanymi z tym wydatkami każdego miesiąca. Można wybrać datę rozpoczęcia. Można również określić, czy naliczana kwota, jest oparta na koncie lub koncie przeciwstawnym. Po dokonaniu wyboru kliknij przycisk **transakcji** do wyświetlania wszystkich transakcji, które zostały utworzone na podstawie schematu naliczania. Na przykład jeśli 12 000 w koszty ubezpieczenia jest rozłożone w ciągu roku, zobaczysz 1000 dla każdego miesiąca. Po zaksięgowaniu dziennika transakcji można wyświetlić przy użyciu **transakcje na załączniku** strony dochodzenia. Jeśli nie można zastosować schematu naliczania, (na przykład, gdy chodzi o faktury zamówienia sprzedaży lub faktury dla zamówienia zakupu), należy kwotę przedpłaty i po stronie debetowej kwota wydatków. Następnie można wybrać **przeciwstawne**, jeśli stosujesz schemat naliczania.
+Po wprowadzeniu arkusza można kliknąć opcję **Naliczenia finansowe** w menu **Funkcje**. Następnie, po wybraniu schematu naliczania, zostanie wyświetlona kwota podstawy z arkusza, która zostanie rozłożona w okresie zgodnie ze schematem naliczania. Na przykład jeśli płacisz ubezpieczenie pracownika za cały rok w styczniu, a kwota ubezpieczenia wynosi 12 000, trzeba wykazać ten wydatek w każdym miesiącu. Można wybrać datę początkową. Można również określić, czy naliczana kwota, jest oparta na koncie lub koncie przeciwstawnym. Po dokonaniu wyboru kliknij przycisk **Transakcje**, aby wyświetlić wszystkie transakcje utworzone na podstawie schematu naliczania. Na przykład jeśli podzielisz kwotę ubezpieczenia 12 000 na rok, zobaczysz 1000 w każdym miesiącu. Po zaksięgowaniu arkusza można przeglądać transakcje za pomocą strony zapytań **Transakcje na załączniku**. Jeśli nie można zastosować schematu naliczania (na przykład gdy transakcja dotyczy faktury do zamówienia sprzedaży lub faktury do zamówienia zakupu), można zwrócić przedpłaconą kwotę i potrącić kwotę wydatku. Następnie można wybrać **przeciwstawne**, jeśli stosujesz schemat naliczania.
+
+
 
 

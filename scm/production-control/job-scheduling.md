@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="job-scheduling"></a>Planowanie zadań
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o planowaniu zadań, co jest bardziej szczegółową formą planowania niż planowanie operacji. Można używać planowania zadań do tworzenia harmonogramu pojedynczych zadań lub zamówień w sklepie i kontrolowania środowiska produkcyjnego.
 
 Można używać planowania zadań do tworzenia harmonogramu pojedynczych zadań lub zamówień w sklepie i kontrolowania środowiska produkcyjnego. Planowanie zadań umożliwia rozbicie każdej operacji na pojedyncze zadania. Zadania te są następnie przypisywane do zasobów operacyjnych, które będą je wykonywać. Planowanie zadań umożliwia również harmonizowanie wszystkich zadań, które odwołują się wybranego zadania. Można określić datę i godzinę rozpoczęcia lub zakończenia zadania, a następnie uruchomić planowanie. Określony czas może być godziną rozpoczęcia lub zakończenia, zależnie od wyboru kierunku planowania. Ta funkcja jest przydatna, jeśli na przykład zadanie może działać tylko na jednym komputerze jednocześnie lub gdy chcesz zoptymalizować zadanie uruchamiane dla każdego zasobu.
@@ -39,7 +42,7 @@ Proces planowania zadań obejmuje następujące zadania:
 -   Dzielenie operacji na zadania.
 -   Planowanie zadań na podstawie dat i godzin dla zasobów określonych dla operacji pokrewnej.
 -   Obliczanie czasów rozpoczęcia i zakończenia dla każdego zadania. Aby upewnić się, że nie istnieją żadne nakładające się czasy, możesz użyć skończonej pojemności.
--   Określenia, które zasoby w grupie zasobów, aby uruchomić to zadanie. To zadanie wymaga podania grupy zasobów do wykonania operacji. Proces planowania zadań wybiera zasoby lub grupy zasobów według najkrótszego realizacji i bierze pod uwagę wszystkie wcześniejsze rezerwacje zasobów.
+-   Określanie, które zasoby w grupie zasobów mają być używane do realizacji zadania. To zadanie wymaga wybrania dla operacji grupy zasobów. Proces planowania zadań wybiera zasoby lub grupy zasobów według najkrótszego realizacji i bierze pod uwagę wszystkie wcześniejsze rezerwacje zasobów.
 -   Rozkładanie operacji na zadania w trakcie planowania zadań. Zadania są planowane według daty i godziny, w kolejności określanej przez marszrutę produkcji. Konfiguracja operacji określa zadania, które są rozkładane w procesie planowania. Grupa marszruty przypisana do operacji określa, czy zadania są generowane. Zadanie jest generowane tylko wtedy, gdy określono dla niego czas trwania. Na przykład zadanie czasu transportu jest generowane wtedy, gdy dla wybranej operacji określono czas transportu.
 
 ## <a name="scheduling-direction"></a>Kierunek planowania
@@ -73,5 +76,7 @@ Zasoby są przydzielane do zadań w wyniku planowania zadań. Istnieje możliwo�
 
 ## <a name="resource-efficiency"></a>Wydajność zasobów
 Planowanie zadań bierze pod uwagę procenty wydajności określone dla zasobów. Procenty wydajności skracają lub wydłużają czas rezerwowany dla zasobu. W konsekwencji czas realizacji jest również skracany lub wydłużany. Do obliczania używana jest następująca formuła: czas planowania = czas × 100 ÷ procent wydajności. W tej formule *czas* obejmuje zarówno czas procesu, jak czasu konfigurowania.
+
+
 
 

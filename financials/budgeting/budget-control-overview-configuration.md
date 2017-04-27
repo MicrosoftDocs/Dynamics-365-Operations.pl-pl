@@ -1,6 +1,6 @@
 ---
-title: "Omówienie kontroli budżetu"
-description: "W tym artykule wprowadza kontroli budżetu i podano informacje ułatwiające konfigurowanie kontroli budżetu w usłudze Microsoft Dynamics 365 dla operacji, tak, że można zarządzanie środkami finansowymi."
+title: "Przegląd kontroli budżetu"
+description: "Ten artykuł zawiera wprowadzenie do mechanizmu kontroli budżetu oraz informacje pomagające konfigurować kontrolę budżetu w programie Microsoft Dynamics 365 for Operations na potrzeby zarządzania środkami finansowymi."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,16 +24,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="budget-control-overview"></a>Omówienie kontroli budżetu
+# <a name="budget-control-overview"></a>Przegląd kontroli budżetu
 
-W tym artykule wprowadza kontroli budżetu i podano informacje ułatwiające konfigurowanie kontroli budżetu w usłudze Microsoft Dynamics 365 dla operacji, tak, że można zarządzanie środkami finansowymi.
+[!include[banner](../includes/banner.md)]
+
+
+Ten artykuł zawiera wprowadzenie do mechanizmu kontroli budżetu oraz informacje pomagające konfigurować kontrolę budżetu w programie Microsoft Dynamics 365 for Operations na potrzeby zarządzania środkami finansowymi.
 
 <a name="overview"></a>Przegląd
 --------
 
-Kontrola budżetu w usłudze Microsoft Dynamics 365 dla operacji obsługuje zarządzanie środkami finansowymi organizacji za pomocą planu kont, przepływy pracy, grup użytkowników, dokumentów źródłowych i arkuszy, można konfigurować obliczanie dostępnych funduszy, cykle budżetu i progi. Dzięki kontroli organizacja może planować, zmierzyć, zarządzać i prognozować swoje zasoby finansowe w całym roku obrachunkowym. 
+Kontrola budżetu w programie Microsoft Dynamics 365 for Operations obsługuje zarządzanie środkami finansowymi organizacji za pomocą planów kont, przepływów pracy, grup użytkowników, dokumentów źródłowych i arkuszy, konfigurowalnego obliczania dostępnych środków, cykli budżetu i progów. Dzięki kontroli organizacja może planować, zmierzyć, zarządzać i prognozować swoje zasoby finansowe w całym roku obrachunkowym. 
 
-Po zatwierdzeniu budżetów w usłudze Dynamics 365 dla operacji, plany budżetu można użyć do wygenerowania wpisów do rejestru budżetu do rejestrowania budżetu wydatków dla organizacji. Alternatywnie można utworzyć lub zaimportować wpisy do rejestru budżetu z programu innej firmy, zamiast korzystać z funkcji planowania budżetu. 
+Po zatwierdzeniu budżetów w programie Dynamics 365 for Operations można używać planów budżetów do generowania wpisów do rejestru budżetu w celu rejestrowania budżetu wydatków dla organizacji. Ewentualnie można utworzyć lub zaimportować wpisy do rejestru budżetu z poziomu zewnętrznego programu, zamiast korzystać z funkcji planowania budżetu. 
 
 Wydatki mogą być rejestrowane przy użyciu kont głównych i wymiarów finansowych. Można skonfigurować kontrolę nad całością wydatków, aby spełniać wymogi i zasady obowiązujące w organizacji, poprzez grupowanie kombinacji wymiarów finansowych i kont głównych. 
 
@@ -41,22 +44,22 @@ Poniższy wykres przedstawia miejsce kontroli budżetu w etapach typowego cyklu 
 
 [![BudgetingCycle](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) 
 
-Można skonfigurować kontrolę budżetu, zależnie od kilku czynników:
+Można skonfigurować kontrolę budżetu według kilku czynników:
 
 -   **Wymiary finansowe** — Które wymiary finansowe są potrzebne do raportowania budżetu i wartości rzeczywistych oraz które wymiary finansowe są niezbędne do kontroli budżetu? Czy istnieją określone kombinacje wymiarów lub konta główne wymagające szczególnej uwagi? Na przykład, czy trzeba śledzić budżet do wartości rzeczywistych przez program i Centrum kosztów? Czy wydatki na podróże wymagają szczególnej uwagi?
 -   **Czas** — Jaki przedział czasu (okres obrachunkowy, okres obrachunkowy od początku roku itd.) będzie używany do obliczania dostępnych środków budżetowych?
--   **Dokumenty źródłowe** jakie muszą zostać ocenione dokumentów źródłowych do kontroli budżetu? Dokumenty powinny być oceniane na linii lub na dokumencie?
+-   **Dokumenty źródłowe** — Które dokumenty źródłowe muszą być uwzględniane w kontroli budżetu? Czy obliczenia dla dokumentów mają być dokonywane według wierszy czy według dokumentów?
 -   **Obliczanie dostępnych środków** — Czy przy obliczaniu dostępnych środków budżetowych mają zostać uwzględnione dokumenty takie jak zapotrzebowania na zakup (przyszłe zobowiązanie niewiążące) i zamówienia zakupu (przyszłe zobowiązania wiążące)? Czy w obliczaniu dostępnych środków mają być uwzględniane dokumenty będące wersjami roboczymi?
 -   **Uprawnienia zastępowania** — Kto ma uprawnienie do przekroczenia dostępnego budżetu?
 
-Kontrola budżetu jest w pełni zintegrowany z usługą Dynamics 365 dla operacji. Z tego względu można oceniać dostępny budżet zarówno dla zakupów planowanych, jak i rzeczywistych. Dostępne są zapytania dotyczące budżetu i raporty. Dzięki temu użytkownicy mogą dokonywać oceny budżetu w całym cyklu budżetu oraz wprowadzać niezbędne zmiany w formie korekt budżetu lub przeniesień. Menedżer budżetu może również w razie potrzeby wyeksportować budżet i wartości rzeczywiste do programu Microsoft Excel, aby lepiej analizować i prognozować.
+Kontrola budżetu jest w pełni zintegrowana z programem Dynamics 365 for Operations. Z tego względu można oceniać dostępny budżet zarówno dla zakupów planowanych, jak i rzeczywistych. Dostępne są zapytania dotyczące budżetu i raporty. Dzięki temu użytkownicy mogą dokonywać oceny budżetu w całym cyklu budżetu oraz wprowadzać niezbędne zmiany w formie korekt budżetu lub przeniesień. Menedżer budżetu może również w razie potrzeby wyeksportować budżet i wartości rzeczywiste do programu Microsoft Excel, aby lepiej analizować i prognozować.
 
 ## <a name="configuring-budget-control"></a>Konfigurowanie kontroli budżetu
 ### <a name="budget-cycle-time-span"></a>Okres cyklu budżetu
 
 Po skonfigurowaniu podstawowego budżetowania można zdefiniować czas lub okresy początkowy i końcowy dla budżetowania i kontroli budżetu na stronie **Okres cyklu budżetu**. Cykle budżetu często odpowiadają kalendarzom obrachunkowym, ale mogą obejmować lata obrachunkowe.
 
-Następne kroki w konfiguracji są wykonywane na różnych zakładkach na **konfiguracji kontroli budżetu** strony.
+Następne kroki w konfiguracji są wykonywane na różnych kartach na stronie **Konfiguracja kontroli budżetu**.
 
 ### <a name="define-parameters"></a>Definiuj parametry
 
@@ -77,7 +80,7 @@ Następnie na karcie **Uprawnienia ponadbudżetowe** można określić grupy uż
 Następnie na karcie **Dostępne środki budżetowe** można zdefiniować formułę, która będzie służyła do obliczania dostępnych środków budżetowych. Zależnie od tego, na ile konserwatywnie organizacja zarządza swoimi zasobami finansowymi albo jakie istnieją przepisy lub wymagania branży, w obliczeniach mogą być uwzględniane wersje robocze i niezaksięgowane dokumenty. 
 
 > [!NOTE] 
-> Jeśli obliczenie jest modyfikowany podczas cyklu budżetu, zmiany nie mają wpływu na wszelkich dokumentów, które wcześniej przeszły sprawdzania kontroli budżetu i zaksięgowanych lub zakończone.
+> Jeśli obliczenie zostanie zmodyfikowane podczas cyklu budżetu, zmiany nie wpłyną na dokumenty, które wcześniej pomyślne przeszły kontrolę budżetu i zostały zaksięgowane lub sfinalizowane.
 
 ### <a name="documents-and-journals"></a>Dokumenty i arkusze
 
@@ -96,7 +99,7 @@ Następnie na karcie **Przypisz modele budżetu** można przypisać modele budż
 Następnie na karcie **Definiowanie reguł kontroli budżetu** należy utworzyć konkretne reguły na podstawie wymiarów finansowych włączonych do kontroli budżetu. Na przykład aby skoncentrować się na wydatku lub zakresie wydatków działu, można za pomocą ustawień na tej karcie zdefiniować i obliczyć te wydatki. Dla każdej reguły kontroli budżetu można zdefiniować różne progi. 
 
 > [!Important]
-> Kontrola budżetu zostaną włączone dla dowolnego konta głównego z **zysków i strat**, **wydatków**, **przychody, bilansu, zobowiązań, kapitału własnego** lub **aktywów** typu. Jeśli ta karta zawiera regułę z pustymi kryteriami, kontrola budżetu zostanie włączona dla **wszystkich** kombinacje wymiarów finansowych, które zawierają konta główne o tych typach. Dlatego należy się upewnić, że tworzone reguły kontroli budżetu określają tylko zakresy kombinacji wymiarów finansowych, w których ważne jest włączenie kontroli budżetu.  
+> Kontrola budżetu będzie włączona dla wszelkich kont głównych typu **Wynikowe**, **Wydatek**, **Przychód, Bilans, Pasywa, Kapitał własny** lub **Składnik aktywów**. Jeśli ta karta zawiera regułę z pustymi kryteriami, kontrola budżetu zostanie włączona dla **wszystkich** kombinacje wymiarów finansowych, które zawierają konta główne o tych typach. Dlatego należy się upewnić, że tworzone reguły kontroli budżetu określają tylko zakresy kombinacji wymiarów finansowych, w których ważne jest włączenie kontroli budżetu.  
 
 ### <a name="select-main-accounts"></a>Wybór konta głównego
 
@@ -114,15 +117,17 @@ Jeśli komunikaty ostrzegawcze kontroli budżetu mają być pomijane dla dowolne
 
 Po skonfigurowaniu kontroli budżetu można włączyć tę funkcję i ją uaktywnić na karcie **Uruchamianie kontroli budżetu**. Zacznie wtedy obowiązywać wersja robocza.
 > [!Important]
-> Po kontroli budżetu jest włączony i aktywny, a po zaksięgowaniu transakcji, nie powinny być zostało wyłączone w połowie roku. Jeśli kontrola budżetu jest wyłączona, działania nie są rejestrowane na potrzeby kontroli budżetu i operacje sprawdzania budżetu nie są już wykonywane. W związku z tym dokumenty, które już zostały zaksięgowane, mogą błędnie odzwierciedlać wszelkie zwalniające kwoty lub salda w zapytaniach i raportach powiązanych z kontrolą budżetu. Dotyczy to m.in. statystyk kontroli budżetu dla wszelkich dokumentów i arkuszy transakcji z jednostkami podrzędnymi i korygujących. 
+> Kiedy kontrola budżetu jest włączona i aktywna, a zaksięgowano transakcje, nie należy wyłączać funkcji w trakcie roku. Jeśli kontrola budżetu jest wyłączona, działania nie są rejestrowane na potrzeby kontroli budżetu i operacje sprawdzania budżetu nie są już wykonywane. W związku z tym dokumenty, które już zostały zaksięgowane, mogą błędnie odzwierciedlać wszelkie zwalniające kwoty lub salda w zapytaniach i raportach powiązanych z kontrolą budżetu. Dotyczy to m.in. statystyk kontroli budżetu dla wszelkich dokumentów i arkuszy transakcji z jednostkami podrzędnymi i korygujących. 
 
 Ponadto transakcje, w tym wpisy do rejestru budżetu, które zaksięgowano przed włączeniem kontroli budżetu, nie są uwzględniane w kontroli budżetu. Dlatego warto włączyć kontrolę budżetu tylko na początku nowego cyklu budżetu. Upewnij się, że wpisy do rejestru budżetu zawierające początkowe salda budżetu dla kontroli budżetu mają aktualizowane salda budżetu dopiero po włączeniu kontroli budżetu. Każdy otwarty dokument (np. zamówienie zakupu) będzie sprawdzany pod kątem dostępnych środków budżetowych i uzyska rezerwację budżetu dla kontroli budżetu, gdy użytkownik ręcznie uruchomi kontrolę budżetu w dokumencie.
 
 ## <a name="using-budget-control"></a>Korzystanie z kontroli budżetu
 Po włączeniu kontroli budżetu użytkownicy otrzymają komunikaty ostrzeżeń i błędów kontroli budżetu w dokumentach i dziennikach skonfigurowanych dla kontroli budżetu. Należy pamiętać, że kontrolę budżetu można skonfigurować tak, aby użytkownicy byli ostrzegani, gdy przekroczą środki budżetowe, ale nadal mogli potwierdzić lub zaksięgować transakcję. Użytkownicy mogą wyświetlać szczegóły nieudanych operacji kontroli budżetu na stronie **Błędy i ostrzeżenia kontroli budżetu**.   
 
-Z tej strony, użytkowników można wejść do **statystyki kontroli budżetu wg okresu** stronę do widoku Szczegóły dotyczące dostępności budżetu i rezerwacje dla kombinacji wymiarów budżetu wybranego formantu. Użytkownicy mogą również przejść do strony **Statystyka kontroli budżetu** w celu wyświetlenia dostępności budżetu dla wszystkich kombinacji wymiarów finansowych, które są używane w kontroli budżetu. 
+Z tej strony użytkownicy mogą przechodzić do strony **Statystyk kontroli budżetu według okresu**, aby obejrzeć szczegóły dotyczące dostępności i rezerwacji budżetu dla wybranej kombinacji wymiarów kontroli budżetu. Użytkownicy mogą również przejść do strony **Statystyka kontroli budżetu** w celu wyświetlenia dostępności budżetu dla wszystkich kombinacji wymiarów finansowych, które są używane w kontroli budżetu. 
 
 Po włączeniu kontroli budżetu dla zamówień zakupu menedżer budżetu może w obszarze roboczym **Budżety i prognozy księgi** sprawdzić kolejkę wszystkich niepotwierdzonych zamówień zakupu, które mają ostrzeżenia i błędy kontroli budżetu. Jeśli menedżer budżetu ma skonfigurowane uprawnienia ponadbudżetowe, może potwierdzać zamówienia zakupu bezpośrednio w obszarze roboczym.    
+
+
 
 

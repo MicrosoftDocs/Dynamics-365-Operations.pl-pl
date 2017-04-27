@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Konfigurowanie stopy procentowej dla kodu odsetek
 
+[!include[banner](../includes/banner.md)]
+
+
 Kody odsetek zawierają ustawienia określające, kiedy i jak i odsetki obciążają i jak są obliczane na kontach zaległych.
 
 Można utworzyć jeden kod odsetek i zastosować do wielu profili księgowania odbiorców lub w określonych w wierszach faktury. Gdy szczegóły kodu odsetek zmieniają się, wszystkie funkcje używane do kodu powodują automatyczne wprowadzenie zmian w nowych transakcjach. Dla każdego kodu odsetek należy zdefiniować dwa rodzaje stawek:
@@ -44,17 +47,17 @@ Istnieje możliwość konfigurowania stóp odsetek, które są obliczane według
 
 -   Kwota odsetek ma zastosowanie do wszystkich walut.
 -   Można wprowadzić opcjonalne limity kwot odsetek.
--   **Procent** zaznaczono ** ** w **Obliczanie odsetek na podstawie** w **Konfigurowanie kodów odsetek** strony.
+-   Opcja **Procent** jest wybrana** **w polu **Podstawa naliczania odsetek** na stronie **Skonfiguruj kody odsetek**.
 
-Na przykład, aby zdefiniować kod odsetek, który ocenia 5 procent odsetek dla co dwa miesiące, że płatności za fakturę przekracza transakcji wymagalności, należy wpisać 2 w **obliczyć odsetki co** i wybierz pozycję **miesiąca**.
+Na przykład aby ustawić kod odsetek, który ma stosować oprocentowanie 5 co dwa miesiące, gdy transakcja płatności faktury przekroczy termin płatności, wprowadź 2 w polu **Obliczaj odsetki co** i wybierz opcję **Miesiąc**.
 
 ## <a name="interest-rates-based-on-amounts"></a>Stopy odsetek oparte na kwotach
 Można skonfigurować stopy procentowe, które obliczają określoną kwotę w walucie.
 -   Kwotę odsetek określa się dla każdej waluty w kodzie odsetek.
 -   Można wprowadzić opcjonalne limity kwot odsetek.
--   ** Kwota ** wybrano w **Obliczanie odsetek na podstawie** w **Konfigurowanie kodów odsetek** strony.
+-   Opcja **Kwota** jest wybrana w polu **Podstawa naliczania odsetek** na stronie **Skonfiguruj kody odsetek**.
 
-Na przykład, aby zdefiniować kod odsetek, który ocenia co 20 dni, że płatności za fakturę przekracza transakcji odsetek od 25,00 wymagalności, należy wpisać 20 w **obliczyć odsetki co** i wybierz pozycję **dzień**.
+Na przykład aby ustawić kod odsetek, który ma stosować oprocentowanie 25,00 co 20 dni, gdy transakcja płatności faktury przekroczy termin płatności, wprowadź 20 w polu **Obliczaj odsetki co** oraz wybierz opcję **Dzień**.
 
 ## <a name="interest-rates-based-on-ranges"></a>Stopy odsetek oparte na zakresach
 Istnieje możliwość konfigurowania stóp odsetek w zależności od kwoty zaległości, od liczby dni, o ile płatność jest opóźniona lub liczby miesięcy, o które płatność jest spóźniona.
@@ -73,7 +76,7 @@ Konfigurowanie odpowiedniego kodu odsetek, który ocenia jeden raz co trzy miesi
 
 Utworzono zakres informacji w następujący sposób.
 
-| **From value** | **Interest value** |
+| **Od wartości** | **Wartości odsetek** |
 |----------------|--------------------|
 | 0              | 1                  |
 | 1,001          | 2                  |
@@ -94,7 +97,7 @@ Konfigurowanie odpowiedniego kodu odsetek, który ocenia jeden raz co 15 dni, ż
 
 Utworzono zakres informacji w następujący sposób.
 
-| **From value** | **Interest value** |
+| **Od wartości** | **Wartości odsetek** |
 |----------------|--------------------|
 | 0              | 10                 |
 | 61             | 15                 |
@@ -115,7 +118,7 @@ Konfigurowanie odpowiedniego kodu odsetek, który ocenia jeden raz co miesiąc, 
 
 Utworzono zakres informacji w następujący sposób.
 
-| **From value** | **Interest value** |
+| **Od wartości** | **Wartości odsetek** |
 |----------------|--------------------|
 | 0              | 1.5                |
 | 4              | 2                  |
@@ -125,5 +128,7 @@ Utworzono zakres informacji w następujący sposób.
 Kody odsetek są datą obowiązywania. Jeśli chcesz zmodyfikować stopę procentową, możesz utworzyć **nową wersję** obowiązującą od daty w przyszłości.
 
 Aby wyświetlić różne wersje, można wybrać datę graniczną w menu **Na dzień**. Można też wybrać opcję **Wyświetlaj wszystkie rekordy**, aby wyświetlać wszystkie kody zainteresowania na stronie.
+
+
 
 

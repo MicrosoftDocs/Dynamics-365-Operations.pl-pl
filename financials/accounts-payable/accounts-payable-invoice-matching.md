@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-payable-invoice-matching"></a>Uzgadnianie faktur rozrachunków z dostawcami
 
+[!include[banner](../includes/banner.md)]
+
+
 Uzgadnianie faktur rozrachunków z dostawcami jest procesem uzgadniania obejmującym informacje z faktury dostawcy, zamówienia zakupu i przyjęć produktów.
 
 Podczas uzgadniania dokumentów różnice między tymi dokumentami są nazywane rozbieżnościami (w uzgadnianiu/wykrytymi podczas uzgadniania). Rozbieżności w uzgadnianiu są porównywane z ustawionymi wartościami tolerancji. Jeśli rozbieżność przekracza wartość procentową lub kwotową, są wyświetlane ikony uzgadniania odchyleń na stronach Faktura od dostawcy i Historia faktur i szczegóły ich uzgadniania. 
@@ -48,9 +51,9 @@ Można użyć następujących typów uzgadniania faktur w rozliczeniach z dostaw
 
 Uzgadnianie dwuelementowe i trzyelementowe zawsze uzgadnia informacje o cenie na podstawie ceny jednostki. Za pomocą tych zasad można też uzgadniać informacje o cenach według ceny całkowitej.
 -   Uzgadnianie ceny jednostkowej netto — dopasowywanie informacji dla uzgadniania dwu- i trzyelementowego przez porównywanie ceny jednostkowej netto dla każdego wiersza z odpowiednia ceną jednostkową netto na zamówieniu zakupu. Cena jednostkowa netto jest określana według następującego wzoru: kwota netto wiersza / ilość w wierszu
--   Uzgodnienie cen całkowitych — dopasowywanie informacji dla uzgadniania dwu- i trzyelementowego przez porównywanie ceny jednostkowej netto dla każdego wiersza z odpowiednia kwotą netto na zamówieniu zakupu. Kwota netto jest ustalona według następującego wzoru: (cena jednostkowa \*linii ilość) + opłaty dodatkowe wiersza - rabaty wiersza
+-   Uzgodnienie cen całkowitych — dopasowywanie informacji dla uzgadniania dwu- i trzyelementowego przez porównywanie ceny jednostkowej netto dla każdego wiersza z odpowiednia kwotą netto na zamówieniu zakupu. Kwota netto jest określana według następującego wzoru: (cena jednostkowa \* ilość w wierszu) + opłaty za wiersze - rabaty wiersza
 
-Na ogół obliczenia związane z uzgadnianiem faktur są wykonywane automatycznie podczas edytowania faktur od dostawcy na stronie Faktura od dostawcy. Ewentualnie uzgadnianie faktur może być wykonywane na żądanie, jeśli jest taka potrzeba. Na żądanie uzgadniania faktur jest kontrolowana przez podmiot prawny automatycznie aktualizować stan nagłówka faktury do na kontach strona parametrów z dostawcami na karcie Sprawdzanie poprawności faktury. Uzgadnianie faktur można również przeprowadzić w ramach procesu przeglądu faktury. Można wyświetlić wyniki uzgadniania faktury na stronie Faktura od dostawcy i na pokrewnych stronach uzgadniania faktur.
+Na ogół obliczenia związane z uzgadnianiem faktur są wykonywane automatycznie podczas edytowania faktur od dostawcy na stronie Faktura od dostawcy. Ewentualnie uzgadnianie faktur może być wykonywane na żądanie, jeśli jest taka potrzeba. Uzgadnianie faktur na żądanie jest kontrolowane dla firmy za pomocą opcji Automatycznie aktualizuj stan nagłówka faktury na na stronie Parametry modułu rozrachunków z dostawcami na karcie Weryfikacja faktury. Uzgadnianie faktury może być również wykonane w ramach procesu przeglądania faktury. Można wyświetlić wyniki uzgadniania faktury na stronie Faktura od dostawcy i na pokrewnych stronach uzgadniania faktur.
 
 ## <a name="invoice-totals-matching"></a> Uzgadnianie sum faktur
 Uzgadnianie sum faktury może pomóc zagwarantować, że rozbieżność sum faktury i kwot oczekiwanych nie wykracza poza dopuszczalne limity tolerancji. Na stronie Szczegóły uzgadniania faktur porównywanych jest sześć sum (patrz tabela). Jeśli dopuszczalna tolerancja dla uzgadniania sum faktury wynosi 20%, wartość procentowa odchylenia 100% dla łącznej kwoty rabatu jest uznawana za rozbieżność.
@@ -165,7 +168,7 @@ Porównywane są te same kwoty wiersza na stronie Szczegóły uzgadniania faktur
 Uzgadnianie trzyelementowe jest kontrolowane dla firmy za pomocą pola Zasady uzgadniania wierszy na stronie Parametry modułu rozrachunków z dostawcami. W zależności od wyboru dokonanego w polu Zezwalaj na zastępowanie zasad uzgadniania można wybrać uzgadnianie trzyelementowe dla określonego dostawcy, towaru lub kombinacji dostawcy i towaru na stronie Zasady uzgadniania i dla konkretnego zamówienia zakupu na stronie Zamówieni zakupu.
 
 ## <a name="charges-matching"></a> Uzgadnianie opłat
-Uzgadnianie opłat może pomóc zagwarantować, że rozbieżność opłat i kwot oczekiwanych nie wykracza poza dopuszczalne procentowe limity tolerancji. Łączne kwoty dla każdego kodu opłaty, która odnosi się do zamówienia zakupu i faktury są porównywane w Porównaj wartości opłat dodatkowych - faktura: strona, jak pokazano w poniższej tabeli. Jeśli dopuszczalna tolerancja dla kodu opłat wynosi 25%, wartość procentowa odchylenia 99 999 999 999,99% dla kodu opłat za Licencję jest uznawana za rozbieżność.
+Uzgadnianie opłat może pomóc zagwarantować, że rozbieżność opłat i kwot oczekiwanych nie wykracza poza dopuszczalne procentowe limity tolerancji. Sumy dla każdego kodu opłat mającego zastosowanie do faktury i zamówienia zakupu są porównywane na stronie Porównaj wartości dotyczące opłat — faktura:, jak pokazano w poniższej tabeli. Jeśli dopuszczalna tolerancja dla kodu opłat wynosi 25%, wartość procentowa odchylenia 99 999 999 999,99% dla kodu opłat za Licencję jest uznawana za rozbieżność.
 
 > [!NOTE] 
 > Procent odchylenia 99 999 999 999,99% oznacza, że oczekiwana kwota na podstawie zamówienia zakupu wynosi zero, a rzeczywista kwota na fakturze jest wartością dodatnią. 
@@ -188,7 +191,9 @@ Faktury dostawców często są oparte na dokumentach przyjęcia produktów odpow
 -   Wprowadzanie kwot faktur nieuwzględnionych w oryginalnym zamówieniu zakupu, tak aby dane z faktury były zgodne z fakturą otrzymaną od dostawcy. Można porównywać opłaty w zamówieniach zakupu z opłatami w fakturach. W razie potrzeby można dodać opłaty do faktur i przydzielić je do wierszy faktur.
 -   Przeglądanie i zatwierdzanie rozbieżności przy uzgadnianiu rozbieżności cen występujących między ceną jednostkową netto z faktury a ceną jednostkową netto z zamówienia zakupu. Można skonfigurować dozwolone wartości procentowe dla firm, dostawców i towarów. Jeśli cena wiersza faktury dostawcy nie mieści się w dopuszczonym zakresie cen, można zapisać fakturę i czekać na jej zatwierdzenie przed zaksięgowaniem lub na dostarczenie korekty przez dostawcę.
 
-Aby uzyskać więcej informacji, zobacz [trzyelementowe zasady uzgadniania](three-way-matching-policies.md).
+Aby uzyskać więcej informacji, zobacz [Trzyelementowe zasady uzgadniania](three-way-matching-policies.md).
+
+
 
 
 

@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-actions"></a>Akcje przepływu pracy
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł wyjaśnia czynności, jakie może wykonywać każdy uczestnik procesu zatwierdzania w ramach przepływu pracy.
 
-Przepływ pracy może obejmować kilka grup osób: inicjatora, osoby przydzielone do zadań, osoby podejmujące decyzje i osoby zatwierdzające. Na przykład w następującym przepływie pracy raportów z wydatków Sam jest inicjatorem, osoby w kolejce są przypisane do zadania, John podejmuje decyzje, a Frank, Sue i Ann są osobami zatwierdzającymi.   [![Przepływ pracy\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) w poniższych sekcjach opisano akcje przepływu pracy, które mogą wykonywać każdej grupy.
+Przepływ pracy może obejmować kilka grup osób: inicjatora, osoby przydzielone do zadań, osoby podejmujące decyzje i osoby zatwierdzające. Na przykład w następującym przepływie pracy raportów z wydatków Sam jest inicjatorem, osoby w kolejce są przypisane do zadania, John podejmuje decyzje, a Frank, Sue i Ann są osobami zatwierdzającymi.   [![Workflow\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) W następującej części wyjaśniono działania w ramach przepływu pracy, które może wykonać każda grupa.
 
 ## <a name="actions-that-an-originator-can-perform"></a>Działania podejmowane przez inicjatora
 Inicjator uruchamia wystąpienie przepływu pracy, przesyłając dokument do przetworzenia. Na przykład, Sam musi kliknąć przycisk **Prześlij** na stronie **Raport z wydatków**, aby przesłać jego raport z wydatków.
@@ -63,7 +66,7 @@ Może się tak zdarzyć, że jakaś osoba z kolejki elementów roboczych może z
 ## <a name="actions-that-a-decision-maker-can-perform"></a>Działania podejmowane przez osobę podejmującą decyzje
 Zazwyczaj dokument jest przypisany do osoby podejmującej decyzje, ponieważ jest pytanie, na które musi odpowiedzieć osoba podejmująca decyzję. Odpowiedź na pytanie brzmi zazwyczaj **Tak** lub **NIE**, albo **Prawda** lub **Fałsz**. Jeśli osoba podejmująca decyzję nie wybierze jednej z tych opcji, może delegować decyzję.
 
-### <a name="choice-1-or-choice-2"></a>\[Wybór 1\] lub \[wybór 2\]
+### <a name="choice-1-or-choice-2"></a>\[Wybór 1\] lub \[Wybór 2\]
 
 Osoba podejmująca decyzję musi odpowiedzieć na pytanie związane z dokumentem. Odpowiedź na pytanie brzmi zazwyczaj **Tak** lub **NIE**, albo **Prawda** lub **Fałsz**. Odpowiedź wybrana przez osobę podejmującą decyzję wskazuje gałąź przepływu pracy, która zostanie użyta do przetworzenia dokumentu. Na przykład raport z wydatków Sama jest przypisany do Johna. John musi zdecydować, czy informacje zawarte w dokumencie wymagają skontaktowania się z przełożonym Sama. Jeśli John stwierdzi, że konieczne jest skontaktowanie się z przełożonym Sama, raport z wydatków zostaje przypisany do Arethy, która następnie musi skontaktować się z przełożonym Sama. Jeśli John stwierdzi, że nie ma potrzeby kontaktu z przełożonym Sama, raport z wydatków zostaje przypisany do Franka celem zatwierdzenia.
 
@@ -89,5 +92,7 @@ Oddelegowanie dokumentu przez osobę zatwierdzającą powoduje, że zostaje on p
 ### <a name="request-change"></a>Żądaj zmiany
 
 Zażądanie przez osobę zatwierdzającą wprowadzenia zmian w dokumencie powoduje, że dokument zostaje odesłany do inicjatora. Na przykład Sam przesłał raport z wydatków na kwotę 12 000 USD, a ten dokument jest przypisany do Sue. Jeśli Sue poprosi o wprowadzenie zmian, raport z wydatków jest wysyłany z powrotem do Sama. Sam może ponownie przesłać raport z wydatków. Może on najpierw wprowadzić żądane zmiany lub ponownie przesłać oryginalną wersję raportu z wydatków. Jeśli Sam ponownie prześle raport, zostanie on wysłany do zatwierdzenia do Franka, ponieważ Frank jest pierwszą osobą zatwierdzającą w procesie zatwierdzania.
+
+
 
 

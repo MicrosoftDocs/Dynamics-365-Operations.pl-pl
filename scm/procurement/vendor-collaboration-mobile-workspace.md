@@ -1,6 +1,6 @@
 ---
-title: "Dostawca przenośnych obszar współpracy dla Microsoft Dynamics 365 dla operacji aplikacji"
-description: "Z przenośnego obszar współpracy dostawcy dostawców można na bieżąco z zamówień zakupu, które zostały wysłane do zatwierdzenia i wyświetlanie informacji o zamówieniach zakupu nowych i zaktualizowanych i kontakty do nich."
+title: "Mobilny obszar roboczy Współpraca z dostawcami dla aplikacji Microsoft Dynamics 365 for Operations"
+description: "Dzięki mobilnemu obszarowi współpracy z dostawcami dostawcy mogą być na bieżąco z zamówieniami zakupu, które im wysłano do zatwierdzenia, oraz wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2017-01-12 16 - 36 - 37
@@ -24,9 +24,9 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="vendor-collaboration-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Dostawca przenośnych obszar współpracy dla Microsoft Dynamics 365 dla operacji aplikacji
+# <a name="vendor-collaboration-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Mobilny obszar roboczy Współpraca z dostawcami dla aplikacji Microsoft Dynamics 365 for Operations
 
-Z przenośnego obszar współpracy dostawcy dostawców można na bieżąco z zamówień zakupu, które zostały wysłane do zatwierdzenia i wyświetlanie informacji o zamówieniach zakupu nowych i zaktualizowanych i kontakty do nich.
+Dzięki mobilnemu obszarowi współpracy z dostawcami dostawcy mogą być na bieżąco z zamówieniami zakupu, które im wysłano do zatwierdzenia, oraz wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych.
 
 <a name="prerequisites"></a>Wymagania wstępne
 -------------
@@ -44,115 +44,115 @@ Z przenośnego obszar współpracy dostawcy dostawców można na bieżąco z zam
 </thead>
 <tbody>
 <tr class="odd">
-<td>Przeczytaj na temat usługi Microsoft Dynamics 365 dla operacji platformy mobilnej</td>
-<td><a href="/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform">Dynamics 365 dla operacji platformy mobilnej</a></td>
+<td>Przeczytaj na temat platformy mobilnej Microsoft Dynamics 365 for Operations</td>
+<td><a href="/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform">Platforma komórkowa Dynamics 365 for Operations</a></td>
 </tr>
 <tr class="even">
-<td>Dynamics 365 dla operacji</td>
-<td>Upewnij się, że używasz środowisku Microsoft Dynamics 365 dla wersji operacji 1611 i Microsoft Dynamics dla platform operacji aktualizacji 3 (listopad 2016).</td>
+<td>Dynamics 365 for Operations</td>
+<td>Upewnij się, że używasz środowiska, w którym zainstalowano program Microsoft Dynamics 365 for Operations w wersji 1611 oraz aktualizację nr 3 platformy Microsoft Dynamics 365 for Operations (z listopada 2016 r.).</td>
 </tr>
 <tr class="odd">
-<td><span style="color: #000000;">Przenośne urządzenie, które ma 365 Dynamics dla operacji zainstalowaną aplikację</span></td>
-<td><span style="color: #000000;">Pobierz 365 Dynamics dla operacji aplikacji ze sklepu internetowego.</span></td>
+<td><span style="color: #000000;">Urządzenie przenośne, które ma zainstalowaną aplikację Dynamics 365 for Operations</span></td>
+<td><span style="color: #000000;">Pobierz aplikację Dynamics 365 for Operations ze sklepu z aplikacjami dla urządzeń komórkowych.</span></td>
 </tr>
 <tr class="even">
 <td>Poprawka KB 3215650</td>
-<td>Zainstaluj poprawkę, aby włączyć obszary robocze, które znajdują się w usłudze Dynamics 365 dla operacji.</td>
+<td>Zainstaluj poprawkę, która włączy obsługę obszarów roboczych zawartych w usłudze Dynamics 365 for Operations.</td>
 </tr>
 <tr class="odd">
 <td><span style="color: #ff0000;"><span style="color: #000000;">Poprawka KB 3216943</span> </span></td>
-<td>Należy zainstalować poprawkę, aby włączyć mobilnych obszaru współpracy dostawcy.</td>
+<td>Zainstaluj poprawkę, aby włączyć obsługę mobilnego obszaru roboczego współpracy z dostawcami.</td>
 </tr>
 <tr class="even">
-<td>Użytkownik dostawcy musi mieć dostęp do interfejsu sieci web dostawcy współpracy w usłudze Dynamics 365 dla operacji i Konfigurowanie dostawcy współpracy użytkownika.</td>
-<td>Wykonaj kroki opisane w następujących tematach do ustawiania i pracować z interfejsu sieci web dostawcy współpracy.
+<td>Użytkownik u dostawcy musi mieć dostęp do internetowego interfejsu współpracy z dostawcami w usłudze Dynamics 365 for Operations i skonfigurować użytkownika zarządzającego współpracą z dostawcą.</td>
+<td>Wykonaj kroki opisane w poniższych tematach, aby skonfigurować internetowy interfejs współpracy dostawcy i w nim pracować.
 <ul>
-<li><a href="vendor-collaboration-work-external-vendors.md">Pracować z dostawców zewnętrznych za pomocą współpracy dostawcy</a></li>
+<li><a href="vendor-collaboration-work-external-vendors.md">Używanie obszaru roboczego współpracy z dostawcami do pracy z zewnętrznymi dostawcami</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Zarządzanie użytkownikami portalu współpracy z dostawcami</a></li>
 <li><a href="set-up-maintain-vendor-collaboration.md">Konfigurowanie i obsługa współpracy z dostawcami</a></li>
-<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Pracować z klientów w usłudze Dynamics 365 dla operacji za pomocą współpracy dostawcy</a></li>
+<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Używanie obszaru roboczego współpracy z dostawcami do pracy z odbiorcami w programie Dynamics 365 for Operations</a></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="overview"></a>Przegląd
-Mobilne obszaru współpracy Dostawca zachowuje dostawców informowany o nowych zamówień zakupu, tak, że można zobaczyć i odpowiadanie na zamówień zakupu w usłudze Dynamics 365 dla operacji klienta sieci web.  
+Mobilny obszar roboczy Współpraca z dostawcami przekazuje dostawcom na bieżąco informacje o nowych zamówieniach zakupu, dzięki czemu widzą oni zamówienia zakupu i mogą na nie reagować w kliencie internetowym usługi Dynamics 365 for Operations.  
 
-**Uwaga:** obszaru roboczego przenośne powinny być używane jako dodatek do interfejsu sieci web współpracy dostawcy, ale nie zamiennik.  
+**Uwaga:** Mobilny obszar roboczy powinien być używany jako dodatek do internetowego interfejsu współpracy z dostawcami, a nie zamiast niego.  
 
-Mobilne obszar współpracy dostawcy dostawców umożliwia wyświetlanie nowych zamówień zakupu, które są wysyłane do zatwierdzenia. Wyświetla informacje o zamówieniach zakupu, takich jak produkty, ilości i żądane daty dostawy. Informacje na temat cen jest dostępny, w zależności od konfiguracji dla każdego dostawcy.  
+W mobilnym obszarze roboczym współpracy z dostawcami dostawcy widzą nowe zamówienia zakupu wysyłane do zatwierdzenia. Obszar pokazuje różne informacje z zamówień zakupu, takie jak produkty, ilości i żądane daty dostawy. W zależności od konfiguracji konkretnego dostawcy są dostępne wybrane informacje o cenach.  
 
-Gdy użytkownik loguje się jako dostawca, będą widzieć zamówień zakupu, które zostały odpowiedziały lub zamówień zakupu, które są nadal oczekujące na działania klienta. Dostawca może mieć zaproponował inny termin dostawy, która nie jest jeszcze uzgodnione z klientem tak zamówienia zakupu jest oczekiwanie na działanie klienta. Dostawca będzie także wyświetlić listę zamówień zakupu, które są potwierdzone, ale nie zostały jeszcze dostarczone.  
+Gdy użytkownik zaloguje się jako dostawca, będzie widział, na które zamówienia zakupu odpowiedziano, a które zamówienia zakupu wciąż oczekują na działania odbiorcy. Być może dostawca zaproponował inną datę dostawy, która nie jest jeszcze uzgodniona z klientem, w związku z czym zamówienie zakupu oczekuje na działanie klienta. Dostawca będzie także widział listę zamówień zakupu, które są potwierdzone, ale nie zostały jeszcze dostarczone.  
 
-Aby odpowiedzieć na zamówienie zakupu, dostawca ma używać interfejsu sieci web współpracy dostawcy, która jest dostępna w usłudze Dynamics 365 dla operacji klienta sieci web. Jest to również, gdzie dostawca będzie uzyskać więcej informacji na temat kolejności, takich jak załączniki dokumentów, adres dostawy na wiersz i opłat, które są skojarzone z dostawcy.  
+Aby odpowiedzieć na zamówienie zakupu, dostawca musi użyć internetowego interfejsu współpracy z dostawcami, który jest dostępny w kliencie internetowym usługi Dynamics 365 for Operations. Również w tym miejscu dostawca uzyska więcej informacji o zamówieniu, takich jak załączone dokumenty, adresy dostawy dla poszczególnych wierszy oraz opłaty, które musi ponieść.  
 
-Rola zabezpieczeń specjalnych dostawcy umożliwia wyświetlanie kontaktu, które osoby są zarejestrowane dla konta dostawcy. Z samego rola zabezpieczeń dostawcy można wyświetlić stan każdego wniosku użytkownika, który został przesłany.  
+Posiadając specjalną rolę zabezpieczeń, dostawca może zobaczyć osoby kontaktowe zarejestrowane na jego koncie dostawcy. Ta sama rola zabezpieczeń pozwala wyświetlić stan każdego przesłanego wniosku użytkownika.  
 
-Tworzenie nowych kontaktów i przesyłanie nowych żądań użytkownika musi odbywać się w interfejsie współpracy dostawcy, która jest dostępna w usłudze Dynamics 365 dla operacji klienta sieci web.  
+Tworzenie nowych osób kontaktowych i przesyłanie nowych wniosków użytkowników musi się odbywać się w interfejsie współpracy z dostawcami dostępnym w kliencie internetowym usługi Dynamics 365 for Operations.  
 
-Z obszaru roboczego mobilnych z dostawcą można:
+W mobilnym obszarze roboczym dostawca może wykonywać następujące czynności:
 
--   Wyświetlanie nowych zamówień zakupu wysyłane do dostawcy.
--   Wyświetlanie zamówień zakupu czy dostawca odpowiedział na i oczekują na działania klienta.
--   Wyświetlanie zamówień zakupu, które są w stanie potwierdzone i nie zostały w pełni odebrane.
--   Wyświetl informacje o osobie kontaktowej, który jest zarejestrowany dla konta dostawcy (wymaga dodatkowych rola zabezpieczeń).
--   Wyświetl informacje i śledzić stan na żądanie użytkownika przesłanej przez dostawcę (wymaga dodatkowych rola zabezpieczeń).
+-   Wyświetlanie nowych zamówień zakupu wysłanych dostawcy.
+-   Wyświetlanie zamówień zakupu, na które dostawca odpowiedział i które oczekują działania ze strony odbiorcy.
+-   Wyświetlanie zamówień zakupu, które są w stanie potwierdzenia, ale nie zostały jeszcze w pełni przyjęte.
+-   Wyświetlanie informacji o osobach kontaktowych zarejestrowanych na koncie dostawcy (wymaga dodatkowej roli zabezpieczeń).
+-   Wyświetlanie informacji o stanie realizacji wniosku użytkownika wysłanego przez dostawcę (wymaga dodatkowej roli zabezpieczeń).
 
 ## <a name="get-started"></a>Rozpocznij
 Aby rozpocząć pracę na urządzeniu przenośnym:
 
-1.  Na sklepu internetowego Pobierz i zainstaluj usługi Microsoft Dynamics 365 dla operacji aplikacji.
+1.  W sklepie z aplikacjami dla urządzeń komórkowych pobierz i zainstaluj aplikację Microsoft Dynamics 365 for Operations.
 2.  Uruchom aplikację na urządzeniu.
-3.  Podaj adres URL Dynamics 365.
-4.  Wprowadzić firmę do logowania się. Na przykład wpisz **USMF**.
-5.  Podczas pierwszego logowania, zostanie wyświetlony monit o nazwę użytkownika i hasło dla sieci Microsoft Dynamics 365 dla konta operacji. 
+3.  Wprowadź adres URL usługi Dynamics 365.
+4.  Wpisz firmę, do której chcesz się zalogować. Na przykład wpisz **USMF**.
+5.  Podczas pierwszego logowania zostanie wyświetlony monit o podanie nazwy użytkownika i hasła dostępu do konta programu Microsoft Dynamics 365 for Operations. 
 
-Po zalogowaniu się użytkownika w aplikacji, nie obszary robocze są widoczne. Aby wyświetlić obszary robocze w aplikacji mobilnej, należy najpierw opublikować żądane obszary robocze do 365 Dynamics dla operacji aplikacji. Potrzebujesz uprawnień administracyjnych systemu do publikowania obszaru roboczego.
+Po zalogowaniu do aplikacji nie zobaczysz żadnego obszaru roboczego. Aby widzieć obszary robocze w aplikacji mobilnej, należy najpierw opublikować żądane obszary w aplikacji Dynamics 365 for Operations. Aby opublikować obszar roboczy, potrzebujesz uprawnienia administracyjnych systemu.
 
-1.  Uruchom system Dynamics 365 dla operacji.
-2.  Przejdź do **Administracja systemu**&gt;**instalacji**&gt;**parametrów systemu**.
-3.  Wybierz **Opcje aplikacji mobilnych**.
-4.  Wybierz obszar roboczy **współpracy Dostawca** do publikowania na mobilnej platformie.
-5.  Wybierz **obszaru roboczego opublikować**.
-6.  Odśwież swoje urządzenie, aby sprawdzić opublikowanych obszarów roboczych.
-7.  Wybierz **współpracy Dostawca** obszaru roboczego. Będzie następującą stronę.
+1.  Uruchom program Dynamics 365 for Operations.
+2.  Wybierz kolejno opcje **Administrowanie systemem** &gt; **Ustawienia** &gt; **Parametry systemu**.
+3.  Wybierz opcję **Zarządzaj aplikacją mobilną**.
+4.  Wybierz obszar roboczy **Współpraca z dostawcami**, aby go opublikować na platformie mobilnej.
+5.  Wybierz opcję **Opublikuj obszar roboczy**.
+6.  Odśwież swoje urządzenie, a zobaczysz opublikowane obszary robocze.
+7.  Zaznacz obszar roboczy **Współpraca z dostawcami**. Zobaczysz następującą stronę.
 
-[![Dostawca współpracy aplikacji mobilnych](./media/vendor-collaboration-mobile-app.png)](./media/vendor-collaboration-mobile-app.png)
+[![vendor-collaboration-mobile-app](./media/vendor-collaboration-mobile-app.png)](./media/vendor-collaboration-mobile-app.png)
 
 ## <a name="contacts"></a>Kontakty
-**Kontakty** stronę pozwala zobaczyć wszystkie kontakty, które zostały zdefiniowane dla konta dostawcy. Pokazuje osoby kontaktowej nazwę, podstawowy adres e-mail i alias użytkowników, jeśli są dostępne. Pokazuje również, czy osoby kontaktowej konto jest aktywne. Po wybraniu kontaktu, zobacz szczegóły kontaktu, takie jak podmioty prawne, które osoba jest kontaktem i informacje, takie jak numer telefonu lub adres e-mail kontaktu.
+Na stronie **Kontakty** widać wszystkie osoby kontaktowe, które zostały skonfigurowane na koncie dostawcy. Pokazuje ona imię i nazwisko osoby kontaktowej, jej podstawowy adres e-mail oraz alias (jeśli istnieje). Wskazuje również, czy konto użytkownika osoby kontaktowej jest aktywne. Po zaznaczeniu osoby kontaktowej zobaczysz jej szczegóły, takie jak firmy, dla których ta osoba jest osobą kontaktową, oraz dane kontaktowe, takie jak numer telefonu lub różne adresy e-mail.
 
 ## <a name="user-requests"></a>Wnioski użytkownika
-**Żądań użytkowników** strona umożliwia sprawdzenie wszystkich użytkownik zażąda zostały przesłane za pośrednictwem interfejsu internetowego współpracy dostawcy, a następnie śledzić stan. Po wybraniu żądanie użytkownika, użytkownik może zobacz żądano, dodać lub dezaktywację użytkownika, zmiany zabezpieczeń i Zobacz role zabezpieczeń, które były wymagane dla użytkownika.
+Na stronie **Wnioski użytkowników** są wyświetlane wszystkie wnioski użytkowników przesłane przez Ciebie za pośrednictwem internetowego interfejsu współpracy z dostawcami i możesz śledzić stan ich rozpatrywania. Po wybraniu wniosku użytkownika możesz zobaczyć, o co wnioskowano, dodać lub zdezaktywować użytkownika, zmienić zabezpieczenia oraz zobaczyć, o które role zabezpieczeń poproszono dla użytkownika.
 
-## <a name="purchase-orders-ready-for-review"></a>Gotowe do przeglądu zamówień zakupu
-**Zamówień zakupu gotowe do recenzji** strony pozwala zobaczyć wszystkie zakupu zamówień, że zostały wysłane przez klienta i nie udzielono odpowiedzi. Można wyświetlić wybrane informacje dotyczące zamówienia, na przykład produktów, które zostały zażądane i kiedy należy dostarczyć. Informacje na temat cen jest dostępna tylko jeśli to jest skonfigurowany dla dostawcy.  
+## <a name="purchase-orders-ready-for-review"></a>Zamówienia zakupu gotowe do przejrzenia
+Strona **Zamówienia zakupu gotowe do przejrzenia** pozwala zobaczyć wszystkie zamówienia zakupu wysłane przez odbiorcę, na które jeszcze nie udzielono odpowiedzi. Można wyświetlić wybrane informacje dotyczące zamówienia, na przykład o które produkty wnioskowano i kiedy należy je dostarczyć. Informacje o cenach są dostępne tylko wtedy, gdy dostawca skonfigurował tę opcję.  
 
-Można zobaczyć, czy zamówienie zakupu ma notatki i załączniki. Otworzyć załączników, należy użyć dostawcy współpracy w kliencie sieci web. Wybierz **wiersz zamówienia zakupu** Aby wyświetlić wszystkie wiersze prezentujące informacje szczegółowe. Należy zauważyć, że dla każdego wiersza, wskaźnik pokaże, czy istnieją notatki lub załączniki lub jeśli jest adresem dostawy, który jest inny niż to, co jest wyświetlane w nagłówku.  
+Można zobaczyć, czy zamówienie zakupu ma notatki i załączniki. Aby otworzyć załączniki, należy użyć obszaru roboczego współpracy z dostawcami w kliencie internetowym. Wybierz opcję **Wiersz zamówienia zakupu**, aby wyświetlić wszystkie wiersze ze szczegółami. Należy zauważyć, że dla każdego wiersza wskaźnik pokaże, czy istnieją notatki lub załączniki albo czy adres dostawy jest inny od wyświetlanego w nagłówku.  
 
-Odpowiadanie na zamówieniu zakupu, należy użyć klienta sieci web współpracy dostawcy.
+Aby odpowiedzieć na zamówienie zakupu, należy użyć klienta internetowego współpracy z dostawcami.
 
 ## <a name="awaiting-customer-action"></a>Oczekiwanie na akcję odbiorcy
-**Oczekujące na działania klienta** stronę pozwala znaleźć zamówień zakupu, które użytkownik lub inna w Twojej firmie, która ma również dostęp do współpracy dostawców zareagowali. Zamówienia zakupu są widoczne na tej liście tylko, jeśli nabywca musi wykonać jedną z następujących czynności na zamówieniu zakupu.
+Strona **Oczekiwanie na akcję odbiorcy** pozwala znaleźć zamówienia zakupu, na które Ty lub inna w Twojej firmie z dostępem do obszaru roboczego współpracy z dostawcami udzieliliście odpowiedzi. Zamówienia zakupu są widoczne na tej liście tylko wtedy, gdy odbiorca musi wykonać jedną z następujących czynności w zamówieniu zakupu:
 
--   Jeśli zamówienie zakupu zostało odrzucone, klient będzie albo trzeba zaktualizować wysłanego zamówienia i Wyślij ponownie, lub anulowania zamówienia i Wyślij ponownie. Jeśli zamówienie zakupu jest wysyłana ponownie, spowoduje usunięcie jej z **oczekujące na działania klienta** strony.
--   Jeśli zamówienie zakupu zostało zaakceptowane ze zmianami, klient musi zaktualizować oryginalne zamówienie i ponownie Wyślij do przeglądu, lub zaktualizować go zgodnie ze zmianami i potwierdź je natychmiast. W obu przypadkach zamówienia zakupu zniknie z **oczekujące na działania klienta** strony.
--   Jeśli zamówienie zakupu zostało zaakceptowane i pojawia się w **oczekujące na działania klienta** stronie, to, że zamówienie zakupu nie zostało automatycznie potwierdzone po przyjęciu zostało wykonane. Oczekuje ono agent zakupów zmienić kolejność na potwierdzone. Zazwyczaj zamówienie zakupu byłby uważany Porozumienie między klientem a dostawcą tak szybko, jak dostawcy przyjmuje zamówienie. Przenoszenie zamówienia zakupu do stanu potwierdzone byłoby formalność.
+-   Jeśli zamówienie zakupu zostało odrzucone, odbiorca musi zaktualizować wysłane zamówienie i wysłać je ponownie lub anulować zamówienie i wysłać nowe. Jeśli zamówienie zakupu zostanie wysłane ponownie, zniknie ze strony **Oczekiwanie na akcję odbiorcy**.
+-   Jeśli zamówienie zakupu zostało zaakceptowane ze zmianami, odbiorca musi zaktualizować oryginalne zamówienie i wysłać je ponownie do przejrzenia albo zaktualizować zgodnie ze zmianami i natychmiast potwierdzić. W obu przypadkach zamówienie zakupu zniknie ze strony **Oczekiwanie na akcję odbiorcy**.
+-   Jeśli zamówienie zakupu zostało zaakceptowane i jest widoczne na stronie **Oczekiwanie na akcję odbiorcy**, wynika to z faktu, że nie zostało automatycznie potwierdzone w trakcie akceptacji. Czeka, aż pracownik działu zakupów zmieni mu status na Potwierdzone. Zazwyczaj zamówienie zakupu uważa się za porozumienie między odbiorcą a dostawcą z chwilą zaakceptowania zamówienia przez dostawcę. Przeniesienie zamówienia zakupu do stanu Potwierdzone jest wtedy formalnością.
 
-Po wybraniu zamówienia zakupu, dodatkowe szczegóły pojawiają się o odpowiedź. Można zobaczyć szczegóły wiersza i odpowiedzi dla każdego wiersza. Pokazuje stan linii, które otrzymał z podanych odpowiedzi.
+Po wybraniu zamówienia zakupu pojawiają się dodatkowe informacje o odpowiedzi. Widać szczegóły wierszy i odpowiedzi do każdego wiersza. Stan wiersza pokazuje, której z poniższych odpowiedzi udzielono.
 
 -   Zaakceptowano
 -   Odrzucona
 -   Zaakceptowano ze zmianami
--   Zastąpić zamiennik
--   Podziel na linii harmonogram i harmonogram
+-   Zastąpiono/Substytut
+-   Podziel do harmonogramu/Wiersz harmonogramu
 
-Należy zauważyć, że wskaźnik pokazuje **dostarczanie**= tak/nie, który jest używany do wskazania, że wiersze nie zostanie dostarczona. Może to być, ponieważ wiersz został odrzucony lub zastąpione, gdzie nie oczekuje oryginalnych wierszy mają być dostarczane lub wiersza, który został podzielony na wiele wierszy harmonogramu i nie oczekuje oryginalnego wiersza mają być dostarczone stosownie do realizacji zamówienia.  
+Należy zauważyć, że wskaźnik pokazuje **Dostarczanie**=tak/nie, co informuje, że towary z wierszy nie zostaną dostarczone. Może to wynikać z faktu, że wiersz został odrzucony, lub zastąpiony w sytuacji, gdy towary z oryginalnych wierszy nie miały być dostarczane, albo że towary z wiersza podzielonego na wiele wierszy harmonogramu i towary z oryginalnego wiersza nie miały być dostarczane zgodnie z otrzymanym zamówieniem.  
 
-Wszelkie zmiany wprowadzone do odpowiedzi wiersza zamówienia są wyświetlane z wyjątkiem przesłane notatek i załączników, które można zobaczyć przy użyciu interfejsu sieci web dostawcy współpracy.
+Wyświetlane są wszystkie zmiany wprowadzone do odpowiedzi na wiersz zamówienia, z wyjątkiem przekazanych notatek i załączników, które można zobaczyć przy użyciu internetowego interfejsu współpracy z dostawcami.
 
-## <a name="open-confirmed-orders"></a>Otwórz potwierdzonego zamówienia
-Po potwierdzeniu zamówienia zakupu przez klienta, co oznacza zamówienie zakupu jest zmieniany na stan potwierdzone, pojawi się w otwartych potwierdzonego zamówienia. To będzie pozostawał na liście jest zarejestrowany jako otrzymanej przez odbiorcę.
+## <a name="open-confirmed-orders"></a>Otwarte potwierdzone zamówienia
+Gdy zamówienie zakupu zostanie potwierdzone przez odbiorcę, tzn. jego stan zostanie zmieniony na Potwierdzone, pojawi się jako otwarte potwierdzone zamówienie. Pozostanie na tej liście do momentu, aż zostanie zarejestrowane jako przyjęte przez odbiorcę.
 
 

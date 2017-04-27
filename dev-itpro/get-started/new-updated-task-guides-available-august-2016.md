@@ -1,6 +1,6 @@
 ---
-title: Nowe lub zaktualizowane zadanie linie pomocnicze (sierpnia 2016)
-description: "W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firmę Microsoft (sierpień 2016 - wszystkie języki) APQC Unified biblioteki dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy."
+title: "Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)"
+description: "Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z sierpnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-august-2016"></a>Nowe lub zaktualizowane zadanie linie pomocnicze (sierpnia 2016)
+# <a name="new-or-updated-task-guides-august-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)
 
-W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firmę Microsoft (sierpień 2016 - wszystkie języki) APQC Unified biblioteki dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
+[!include[banner](../includes/banner.md)]
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Zadania prowadzi w (2016 sierpnia - wszystkich języków) APQC Unified biblioteki dla systemu Microsoft Dynamics AX
+
+Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z sierpnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
+
+<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z sierpnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX
 ---------------------------------------------------------------------------------------------------
 
-(2016 sierpnia - wszystkich języków) APQC Unified biblioteka zawiera przewodniki zadania, które mają być wykorzystywane do pomocy z aktualizacji platformy Microsoft Dynamics AX 2 (sierpień 2016), Dynamics AX może zaktualizować aplikacji 2016 i zwolnij lutego 2016 Microsoft Dynamics AX. Aby uzyskać więcej informacji na temat tych wersji, zobacz [co to jest nowe lub zmienione](whats-new-changed.md). W tej bibliotece są dostępne zlokalizowane wersje prowadnice zadania. Aby uzyskać więcej informacji na temat sposobu łączenia się biblioteka przewodnik zadań z systemu pomocy, zobacz [wprowadzenie do pomocy](help-overview.md).
+Ujednolicona biblioteka APQC (z sierpnia 2016 r. — wszystkie języki) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji 2 platformy Microsoft Dynamics AX (z sierpnia 2016 r.), aktualizacji aplikacji Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. Aby uzyskać więcej informacji o tych wersjach, zobacz [Co nowego, jakie zmiany](whats-new-changed.md). W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md).
 
 ### <a name="data-access"></a>Dostęp do danych
 
@@ -97,10 +100,12 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Nowe zadanie prowadzi (luty 2016)](new-task-guides-available-february-2016.md)
+[Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)
 
-[Nowe lub zaktualizowane zadania prowadzi (maja 2016)](new-updated-task-guides-available-may-2016.md)
+[Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)](new-updated-task-guides-available-may-2016.md)
 
-[Nowe lub zaktualizowane zadania prowadzi (listopad 2016)](new-task-guides-november-2016.md)
+[Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)](new-task-guides-november-2016.md)
+
+
 
 

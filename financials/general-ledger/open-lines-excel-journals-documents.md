@@ -1,6 +1,6 @@
 ---
-title: "Publikowanie dokumentów z programu Excel i wierszy arkusza"
-description: "W tym temacie wyjaśniono, jak należy wprowadzić i publikować linią dla arkuszy finansowych z programu Microsoft Excel. Zawiera informacje dotyczące różnych szablonów, których można użyć, w zależności od typu transakcji, które wprowadzasz."
+title: "Publikowanie wierszy arkuszy i dokumentów z programu Excel"
+description: "W tym temacie wyjaśniono, jak wprowadzać i publikować wiersze arkuszy finansowych z programu Microsoft Excel. Znajdują się tu informacje dotyczące różnych szablonów, których można używać w zależności od typu wprowadzanych transakcji."
 author: twheeloc
 manager: AnnBe
 ms.date: 2017-04-04
@@ -25,28 +25,28 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="publish-journal-lines-and-documents-from-excel"></a>Publikowanie dokumentów z programu Excel i wierszy arkusza
+# <a name="publish-journal-lines-and-documents-from-excel"></a>Publikowanie wierszy arkuszy i dokumentów z programu Excel
 
-W tym temacie wyjaśniono, jak należy wprowadzić i publikować linią dla arkuszy finansowych z programu Microsoft Excel. Zawiera informacje dotyczące różnych szablonów, których można użyć, w zależności od typu transakcji, które wprowadzasz.
+W tym temacie wyjaśniono, jak wprowadzać i publikować wiersze arkuszy finansowych z programu Microsoft Excel. Znajdują się tu informacje dotyczące różnych szablonów, których można używać w zależności od typu wprowadzanych transakcji.
 
-Użytkownicy mogą wprowadzać i publikować linią dla arkuszy finansowych z programu Microsoft Excel. Gdy użytkownik utworzy dziennika, **otwarte wiersze w programie Excel** przycisk Wyświetla szablony, które są dostępne. Szablony są przeznaczone do obsługi określonych scenariuszy, jednak nie każda kombinacja typu konta jest obsługiwana w dzienniku. W poniższej tabeli przedstawiono typy kont, które wspierają i szablony, które są dostępne.
+Użytkownicy mogą wprowadzać i publikować wiersze arkuszy finansowych z programu Microsoft Excel. Gdy użytkownik utworzy arkusz, przycisk **Otwórz wiersze w programie Excel** powoduje wyświetlanie dostępnych szablonów. Szablony są przeznaczone do obsługi określonych scenariuszy, jednak nie każda kombinacja typu konta jest obsługiwana w arkuszu. W poniższej tabeli przedstawiono dostępne szablony i obsługiwane przez nie typy kont.
 |                          |                                                                                                                         |                                                                                         |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| **Template**             | **Typy kont obsługiwanych**                                                                                             | **Jak uzyskać dostęp do szablonu**                                                          |
-| Wiersze arkusza księgi     | Konto: Księgi, odbiorcy, dostawcy, konta bankowego przesunięcie: księgi, odbiorcy, dostawcy, Bank międzyfirmowe jest obsługiwany.       | Arkusze finansowe                                                                         |
-| Rejestr faktur         | Konto: Konto przeciwstawne dostawcy: międzyfirmowe księgi nie jest obsługiwany.                                                    | Rejestr faktur AP                                                                     |
-| Arkusz faktur          | Konta: Konto dostawcy przesunięcie: księgi międzyfirmowe jest obsługiwany.                                                      | Arkusz faktur rozrachunków z dostawcami                                                                      |
+| **Szablon**             | **Obsługiwane typy kont**                                                                                             | **Jak uzyskać dostęp do szablonu**                                                          |
+| Wiersze arkusza księgi     | Konto: Konto przeciwstawne Księga, Odbiorca, Dostawca, Bank: Międzyfirmowe Księga, Odbiorca, Dostawca, Bank jest obsługiwane.       | Arkusze finansowe                                                                         |
+| Rejestr faktur         | Konto: Konto przeciwstawne Dostawca: Międzyfirmowe Księga nie jest obsługiwane.                                                    | Rejestr faktur rozrachunków z dostawcami                                                                     |
+| Arkusz faktur          | Konta: Konto przeciwstawne Dostawca: Międzyfirmowe Księga jest obsługiwane.                                                      | Arkusz faktur rozrachunków z dostawcami                                                                      |
 | Faktura dostawcy           |                                                                                                                         | Faktura dostawcy                                                                          |
-| Arkusz faktur dla odbiorcy | Konto: Konto odbiorcy przesunięcie: księgi międzyfirmowe jest obsługiwany.                                                     | Arkusze finansowe                                                                         |
-| Faktura niezależna        |                                                                                                                         | Na **faktury niezależnej** kliknij przycisk **otwarty w programie Excel** (ikona Microsoft Office). |
-| Arkusz środków trwałych     | Trwały do księgi, bank, odbiorca lub Dostawca. Międzyfirmowe nie jest obsługiwany.                                               | Arkusz środków trwałych                                                                     |
-| Arkusz płatności dostawców   | Konto: Konto przeciwstawne dostawcy: księgi, Bank międzyfirmowe jest obsługiwany.                                                 | Arkusz płatności dostawców                                                                  |
-| Arkusz płatności odbiorcy | Konto: Konto odbiorcy przesunięcie: księgi, Bank międzyfirmowe jest obsługiwany.                                               | Arkusz płatności odbiorcy                                                                |
-| Arkusz wydatków w ramach projektu  | Konta: Projekt, księgi, odbiorcy, konto przeciwstawne dostawcy: projekt, księgi, odbiorcy, dostawcy międzyfirmowego jest obsługiwany. | Arkusz finansowy wydatków (w obszarze Zarządzanie projektami i ich księgowanie)                       |
+| Arkusz faktur dla odbiorcy | Konto: Konto przeciwstawne Odbiorca: Międzyfirmowe Księga jest obsługiwane.                                                     | Arkusze finansowe                                                                         |
+| Faktura niezależna        |                                                                                                                         | Na stronie **Faktura niezależna** kliknij przycisk **Otwórz w programie Excel** (ikona pakietu Microsoft Office). |
+| Arkusz środków trwałych     | Składnik aktywów do księgi, bank, odbiorca lub dostawca. Międzyfirmowe nie jest obsługiwane.                                               | Arkusz środków trwałych                                                                     |
+| Arkusz płatności dostawców   | Konto: Konto przeciwstawne Dostawca: Międzyfirmowe Księga, Bank jest obsługiwane.                                                 | Arkusz płatności dostawców                                                                  |
+| Arkusz płatności odbiorcy | Konto: Konto przeciwstawne Odbiorca: Międzyfirmowe Księga, Bank jest obsługiwane.                                               | Arkusz płatności odbiorcy                                                                |
+| Arkusz wydatków w ramach projektu  | Konto: Konto przeciwstawne Projekt, Księga, Odbiorca, Dostawca: Międzyfirmowe Projekt, Księga, Odbiorca, Dostawca jest obsługiwane. | Arkusz finansowy wydatków (w obszarze Zarządzanie projektami i ich księgowanie)                       |
 
-Jeśli wiersze są opublikowane, mają oni prawo upewnij się, że są one zgodne z regułami, które są ustawione w arkuszach finansowych. Po opublikowaniu wiersze użytkowników można edytować i zaksięgować załączniki z Microsoft Dynamics 365 dla operacji. 
+Podczas publikowania wierszy są one weryfikowane w celu uzyskania pewności, że są zgodne z regułami skonfigurowanymi w arkuszach finansowych. Po opublikowaniu wierszy użytkownicy mogą edytować i księgować załączniki z poziomu programu Microsoft Dynamics 365 for Operations. 
 
-Aby dodać wymiarów finansowych do szablonu, są wymagane dodatkowe zmiany. Aby uzyskać dodatkowe informacje, zobacz [dodać wymiary do szablonu programu Microsoft Excel](\dev-itpro\financial-dimensions\add-dimensions-excel-templates). Po wymiary są dodawane do podmiotu, są dostępne w projektancie programu Excel i mogą być dodawane do szablonu.
+Aby dodać wymiary finansowe do szablonu, trzeba wprowadzić dodatkowe zmiany. Aby uzyskać więcej informacji, zobacz [Dodawanie wymiarów do szablonu programu Microsoft Excel](\dev-itpro\financial-dimensions\add-dimensions-excel-templates). Po dodaniu wymiarów do jednostki są one dostępne w projektancie programu Excel i mogą być dodawane do szablonu.
 
 
 

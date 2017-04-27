@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="audit-policy-violations-and-cases"></a>Naruszenia zasad inspekcji i sprawy
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule wyjaśniono, jak są generowane sprawy inspekcji na podstawie naruszeń reguł inspekcji. Znajdują się tu także informacje o różnych sposobach, w jakie zasady inspekcji wykorzystują funkcje zakresu dat wyboru dokumentów.
 
 <a name="how-audit-cases-are-generated"></a>Jak są generowane sprawy inspekcji
@@ -39,10 +42,10 @@ Zasady inspekcji są uruchamiane w trybie wsadowym. Po uruchomieniu zasad inspek
 
 Każda reguła ocenia zestaw dokumentów. Reguła wybiera dokumenty z wybranego zakresu dat spełniające określone kryteria. Na przykład jedna reguła może wybrać raporty z wydatków, w których uwzględniono posiłki o wartości przekraczającej 50.00. Inna reguła może wybrać faktury od dostawcy, które są płatne na rzecz określonego dostawcy. Dla każdego dokumentu wskazanego w zestawie jest generowane naruszenie. Naruszenie to jest zapisem, że określony dokument, np. faktura nr 12345, jest niezgodny z regułą. 
 
-System grupuje razem wiele rekordów naruszenia zasad inspekcji i kojarzy ze sprawami inspekcji. Domyślnie sprawy dla każdej zasady inspekcji są pogrupowane według reguły inspekcji. Można jednak wybrać inne kryteria grupowania na stronie **Kryteria grupowania przypadków**. Na przykład można pogrupować nagłówków wydatków według faktur dostawcy i identyfikator projektu przez konto dostawcy. W takim przypadku wszystkie naruszenia nagłówka wydatków, które mają ten sam identyfikator projektu zostaną pogrupowane w tej samej sprawie i wszystkich faktur dostawcy, które mają tego samego konta dostawcy zostaną umieszczone w tej samej sprawie. 
+System grupuje razem wiele rekordów naruszenia zasad inspekcji i kojarzy ze sprawami inspekcji. Domyślnie sprawy dla każdej zasady inspekcji są pogrupowane według reguły inspekcji. Można jednak wybrać inne kryteria grupowania na stronie **Kryteria grupowania przypadków**. Na przykład można pogrupować nagłówki wydatków według identyfikatora projektu i faktury od dostawcy według konta dostawcy. W takim przypadku wszystkie naruszenia nagłówka wydatków, które mają ten sam identyfikator projektu, zostaną pogrupowane w tej samej sprawie, oraz wszystkie faktury od dostawcy, które mają to samo konto dostawcy, zostaną pogrupowane w tej samej sprawie. 
 
 > [!NOTE]
-> Dla reguł inspekcji, które są oparte na **zduplikowane** typ, kwerendy naruszenia nie są zgrupowane według reguły zasad lub kryteriów, które są określone w **w sprawie kryteriów grupowania** strony. Zamiast tego są one pogrupowane według kryteriów, które są wbudowane w regułę inspekcji. Na przykład, jeśli reguła ocenia raporty z wydatków pod kątem zduplikowanych wydatków z tą samą kwotą, numerem handlowca i datą, wszystkie wydatki posiadające te same wartości w tych polach zostaną umieszczone w jednej sprawie. Wszelkie wydatki, które mają różne wartości będą osobnymi sprawami.
+> W przypadku reguł inspekcji opartych na typie zapytania **Duplikat** naruszenia nie są pogrupowane według reguły ani według kryteriów określonych na stronie **Kryteria grupowania przypadków**. Zamiast tego są one pogrupowane według kryteriów, które są wbudowane w regułę inspekcji. Na przykład, jeśli reguła ocenia raporty z wydatków pod kątem zduplikowanych wydatków z tą samą kwotą, numerem handlowca i datą, wszystkie wydatki posiadające te same wartości w tych polach zostaną umieszczone w jednej sprawie. Wszelkie wydatki, które mają różne wartości będą osobnymi sprawami.
 
 Po wygenerowaniu sprawy inspekcji są obsługiwane przy użyciu typowych procesów zarządzania sprawami.
 
@@ -56,6 +59,8 @@ Oto inne sposoby wykorzystania wyboru zakresu dat dokumentu przez regułę inspe
 -   W przypadku reguł opartych na typie zapytania **Wyszukiwanie wg listy** zasada ocenia dokumenty pod kątem monitorowanych jednostek, które są aktywne w ostatnim dniu wyboru zakresu dat dokumentu.
 
 
-Aby uzyskać więcej informacji, zobacz [zasady zasad inspekcji](audit-policy-rules.md)
+Aby uzyskać więcej informacji, zobacz [Reguły inspekcji](audit-policy-rules.md).
+
+
 
 

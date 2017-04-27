@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reimburse-customers"></a>Zwroty do odbiorców
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule wyjaśniono, jak tworzyć transakcje zwrotu nadpłaty dla grupy odbiorców. Jeśli odbiorca ma saldo dodatnie, można zwrócić mu wartość salda. 
 
 W poniższej tabeli przedstawiono wymagania wstępne, które muszą istnieć przed rozpoczęciem.
@@ -47,6 +50,8 @@ Podczas tworzenia transakcji zwrotu, tworzona jest faktura od dostawcy na kwotę
     Wartości kredytów są transferowane na konta dostawców odpowiedających odbiorcom i są przetwarzane jak zwykłe płatności. Jeśli odbiorca nie posiada konta dostawcy, zostanie automatycznie utworzone dla tego odbiorcy tymczasowe konto dostawcy.
 3.  Aby wyświetlić utworzone transakcje zwrotu nadpłaty, użyj strony **Zwrot nadpłaty**.
 4.  W module Rozrachunki z dostawcami należy utworzyć płatność dla faktur od dostawcy utworzonych w wyniku procesu zwrotu nadpłaty.
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Obsługa rabatów gotówkowych dla nadpłat"
+title: "Obsługa rabatów gotówkowych w przypadku nadpłat"
 description: "Ten artykuł zawiera scenariusze pokazujące sposób obsługi płatności, gdy odbiorca ma rabat gotówkowy, a mimo to nawet nadpłaca."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="handling-cash-discounts-for-overpayments"></a>Obsługa rabatów gotówkowych dla nadpłat
+# <a name="handling-cash-discounts-for-overpayments"></a>Obsługa rabatów gotówkowych w przypadku nadpłat
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł zawiera scenariusze pokazujące sposób obsługi płatności, gdy odbiorca ma rabat gotówkowy, a mimo to nawet nadpłaca. 
 
@@ -133,6 +136,8 @@ Kwota rabatu gotówkowego zostanie zmniejszona z 10,50 do 10,00. Płatność i f
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
 | Rabat gotówkowy (pole **Konto główne rabatów odbiorcy** na stronie **Rabat gotówkowy**) | 10,50 zł        |               |
 | Rozrachunki z odbiorcami                                                                              |              | 10,50 zł         |
+
+
 
 
 

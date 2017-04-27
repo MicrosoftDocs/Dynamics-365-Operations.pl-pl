@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manual-depreciation"></a>Amortyzacja ręczna
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie metody amortyzacji Amortyzacja ręczna.
 
 Po skonfigurowaniu profilu amortyzacji środków trwałych i wybraniu opcji **Ręczna** w polu **Metoda** na stronie **Profile amortyzacji**, amortyzacja środków trwałych przypisanych do tego profilu amortyzacji jest określana przez wartości procentowe wprowadzone dla poszczególnych interwałów w roku kalendarzowym. Interwały, dla których zostały ustawione wartości procentowe, są księgowane na podstawie wartości wybranej w polu **Częstotliwość okresu** na skróconej karcie **Ogólne** na stronie **Profile amortyzacji**. Można wybrać następujące wartości:
@@ -63,13 +66,15 @@ Jeśli w polu **Częstotliwość okresu** wybierzesz opcję **Miesięcznie**, us
 | Styczeń  | (11,000 – 1,000) × 10% = 1,000 |
 | Luty | (11,000 – 1,000) × 50% = 5,000 |
 
-Jeśli wybierzesz **raz na pół roku** w *** okresu częstotliwości pola **, można ustawić dwa interwały harmonogramu ręcznego. W poniższej tabeli przedstawiono kwoty amortyzacji dla tych dwóch interwałów.
+Jeśli w polu ****Częstotliwość okresu** wybierzesz** opcję **Półrocznie**, ustawisz 2 interwały harmonogramu ręcznego. W poniższej tabeli przedstawiono kwoty amortyzacji dla tych dwóch interwałów.
 
 | Interwał    | Kwota amortyzacji            |
 |-------------|--------------------------------|
 | 30 czerwca     | (11,000 – 1,000) × 10% = 1,000 |
 | 31 grudnia | (11,000 – 1,000) × 50% = 5,000 |
 
-Suma wartości procentowych dla wszystkich interwałów nie musi wynosić 100. Jednak komunikat o błędzie Jeśli wartość w **skumulowany procent** w **amortyzacja środka trwałego profilu harmonogramy** strona nie jest **100**.
+Suma wartości procentowych dla wszystkich interwałów nie musi być równa 100. Jednakże wyświetlany jest komunikat, jeśli wartość w polu **Suma wartości procentowych** na stronie **Plany amortyzacji środków trwałych dla profilów** nie jest równa **100**.
+
+
 
 

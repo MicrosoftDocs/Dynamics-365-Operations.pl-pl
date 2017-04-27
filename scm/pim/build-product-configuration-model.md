@@ -28,13 +28,16 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="build-a-product-configuration-model"></a>Budowanie modelu konfiguracji produktu
 
+[!include[banner](../includes/banner.md)]
+
+
 Konieczność konfigurowania produktów spełniających specjalne oczekiwania coraz częściej jest normą, a nie wyjątkiem, zarówno w relacjach między firmami, jak i między firmą a konsumentem.
 
 Producent, który konfiguruje na zamówienie, może lepiej spełnić potrzeby klientów. Ponadto, składując półprodukty w formie ogólnych składników zamiast produktów gotowych, może ograniczyć koszty utrzymania zapasów.  
 
 Pomyślne przejście z konfiguracji produkcji na magazyn do konfiguracji produkcji na zamówienie wymaga dokładnej analizy struktur produktów, identyfikacji rodzin produktów i modułowości. Aby zmniejszyć liczbę części i zminimalizować liczbę towarów wymaganych w procesie, bardzo ważne jest zapoznanie się z interfejsami produktu i projektowanie do ponownego użycia.  
 
-Istnieje kilka zasad modelowania konfiguracji produktu: oparte na regułach, oparte na wymiarach i oparte na ograniczeniach. Badania pokazują, że metodologia oparta na ograniczeniu pozwala zmniejszyć liczbę wierszy kodu w modelach o około 50 procent w porównaniu z innymi zasadami modelowania. Z tego względu metoda ta pozwala zmniejszyć łączny koszt posiadania (TCO). Przenosząc z modelu na podstawie reguł, który opiera się na kod X ++ do modelu opartej na ograniczeniu, nie jest już wymagany w celu utrzymania modeli produktu licencji deweloperskiej.
+Istnieje kilka zasad modelowania konfiguracji produktu: oparte na regułach, oparte na wymiarach i oparte na ograniczeniach. Badania pokazują, że metodologia oparta na ograniczeniu pozwala zmniejszyć liczbę wierszy kodu w modelach o około 50 procent w porównaniu z innymi zasadami modelowania. Z tego względu metoda ta pozwala zmniejszyć łączny koszt posiadania (TCO). Przechodząc z modelu opartego na regułach, którego podstawą jest kod języka X++, do modelu opartego na ograniczeniu, nie potrzebujesz już licencji programisty w celu utrzymania modeli produktu.
 
 ## <a name="product-configuration"></a>Konfiguracja produktu
 Okres industrializacji doprowadził do wielkich osiągnięć w produkcji towarów o wysokiej jakości i bogatej funkcjonalności w przystępnych cenach. Ekonomia skali sprawiła, że większość ludzi w krajach rozwiniętych może kupować samochody, telewizory, sprzęt gospodarstwa domowego i inne dobra, które większość z nas uznaje za niezbędne w codziennym życiu.  
@@ -64,11 +67,11 @@ Korzystanie z modelu konfiguracji produktu opartej na ograniczeniu zakłada, że
 
 ### <a name="table-constraints"></a>Powiązane tabele
 
-Ograniczenia tabeli mogą być definiowane przez użytkownika lub systemu.  
+Ograniczenia tabel mogą być definiowane przez użytkownika lub przez system.  
 
 Ograniczenie definiowane przez użytkownika tworzy użytkownik. Użytkownik wybiera kombinację typów atrybutów reprezentujących kolumn tabeli, a następnie wprowadza wartości z domen typu wybranego atrybutu w celu utworzenia wierszy ograniczenia tabeli.  
 
-Zaznaczając które Microsoft Dynamics 365 dla operacji tabeli używać jako punkt odniesienia, a następnie wybierając pola z tej tabeli do z kolumn w ograniczeniu zdefiniowano powiązanych tabel zdefiniowanych przez system. Wiersze powiązane tabele są wiersze 365 Dynamics dla tabeli operacji, które są obecne w czasie konfigurowania.  
+Ograniczenia tabeli definiowane przez system definiuje się, wybierając tabelę programu Microsoft Dynamics 365 for Operations, która będzie używana jako odwołanie, a następnie wybierając pola z tej tabeli w celu utworzenia kolumn ograniczenia. Wiersze ograniczenia tabeli to wiersze tabeli programu Dynamics 365 for Operations, która jest obecna w czasie konfigurowania.  
 
 Ograniczenie tabeli jest uwzględnione w modelu konfiguracji produktu poprzez odwołanie do definicji ograniczenia tabeli i mapowanie odpowiednich atrybutów w modelu do kolumn ograniczenia tabeli.
 
@@ -103,7 +106,7 @@ Na koniec można wykonać sprawdzanie poprawności dla kompletnego modelu konfig
 
 ### <a name="testing"></a>Testowanie
 
-Testowanie modelu jest podobny do uruchamiania sesji rzeczywista konfiguracja. Użytkownik może przejść przez strony konfiguracji i sprawdź, czy struktury modelu obsługuje proces konfiguracji. Można sprawdzić, czy wartości atrybutów są poprawne, a opisy atrybutów prowadzą użytkownika do wybrania poprawnych wartości. Na koniec po zakończeniu sesji testowej, system próbuje utworzyć BOM i marszrutę odpowiadającą wartościom wybranego atrybutu, a jeśli cokolwiek się nie uda, wyświetli komunikat o błędzie.
+Testowanie modelu jest podobne do uruchamiania sesji rzeczywistej konfiguracji. Użytkownik może przejrzeć strony konfiguracji i sprawdzić, czy struktura modelu obsługuje proces konfiguracji. Można sprawdzić, czy wartości atrybutów są poprawne, a opisy atrybutów prowadzą użytkownika do wybrania poprawnych wartości. Na koniec po zakończeniu sesji testowej, system próbuje utworzyć BOM i marszrutę odpowiadającą wartościom wybranego atrybutu, a jeśli cokolwiek się nie uda, wyświetli komunikat o błędzie.
 
 ### <a name="the-configuration-page"></a>Strona konfiguracji
 
@@ -129,17 +132,17 @@ Jeśli produkt będzie sprzedawany w różnych krajach/regionach, można utworzy
 Ostatnim i najważniejszym etapem procesu finalizowania jest utworzenie wersji dla modelu konfiguracji produktu. Wersja reprezentuje relację między produktem głównym, który można wybrać dla konfiguracji zamówienia lub wiersza zapytania, a modelem konfiguracji produktu. Przed uruchomieniem i użyciem wersji w sesji konfiguracji należy zatwierdzić wersję.
 
 ## <a name="extending-a-product-configuration-model-through-the-api"></a>Rozszerzanie modelu konfiguracji produktu za pomocą interfejsu API
-Został zaimplementowany dedykowany interfejs programowania aplikacji, więc partnerzy i inne osoby posiadające licencję programisty, mogą rozszerzać możliwości modelu konfiguracji produktu. Głównym celem było ustanowienie mechanizmu, niech partnerów i klientów, którzy korzystają z istniejących Konstruktor produktów do migracji kodu, który jest osadzony w modelach Konstruktor produktów do interfejsu API. W ten sposób można przenosić modele z Konstruktora produktów do konfiguracji produktu. Ale nowi partnerzy i klienci mogą także używać interfejsu API do rozszerzania nowych modeli konfiguracji produktu.
+Został zaimplementowany dedykowany interfejs programowania aplikacji, więc partnerzy i inne osoby posiadające licencję programisty, mogą rozszerzać możliwości modelu konfiguracji produktu. Głównym celem było stworzenie mechanizmu umożliwiającego partnerom i klientom korzystającym z obecnego modułu Konstruktor produktów migrację kodu, który jest osadzony w modelach Konstruktora produktów, do interfejsu API. W ten sposób można przenosić modele z Konstruktora produktów do konfiguracji produktu. Ale nowi partnerzy i klienci mogą także używać interfejsu API do rozszerzania nowych modeli konfiguracji produktu.
 
 ### <a name="pcadaptor-class"></a>Klasa PCAdaptor
 
-Interfejs API jest implementowany przy użyciu zestawu klas **PCAdaptor** udostępniających strukturę danych modeli konfiguracji produktu. Wystąpienie **PCAdaptor** klasy musi być utworzony dla każdego modelu, który zostanie rozszerzony. Po zakończeniu sesji konfiguracji system sprawdza, czy wystąpienie tej klasy i uruchamia go, jeśli okaże się.  
+Interfejs API jest implementowany przy użyciu zestawu klas **PCAdaptor** udostępniających strukturę danych modeli konfiguracji produktu. Wystąpienia klasy **PCAdaptor** należy utworzyć dla każdego modelu, który zostanie rozszerzony. Po zakończeniu sesji konfiguracji, system sprawdza, czy jest wystąpienie tej klasy, i uruchamia je, jeśli je znajdzie.  
 
 Na poniższym diagramie opisano ten proces.  
 
 [![Diagram przepływu](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
 
-Diagram przepływu konfiguracji interfejsu API produktu
+Diagram przepływu interfejsu API konfiguracji produktu
 
 ## <a name="product-configuration"></a>Konfiguracja produktu
 Konfigurację produktu można wykonać z następujących miejsc:
@@ -155,5 +158,7 @@ Celem konfiguracji jest utworzenie różnych wariantów produktu, które spełni
 ### <a name="multiple-sites-and-intercompany"></a>Wiele witryn i międzyfirmowe
 
 Jeśli konfiguracja zostanie wykonana w oddziale lub nawet w firmie, która różni się od oddziału lub firmy, w których będzie wykonywana produkcja, zostaną utworzone BOM i marszruta i umieszczone w zakładzie dostawcy w firmie zaopatrzeniowej. Wariant produktu zostanie zwolniony we wszystkich firmach, które uczestniczą w łańcuchu dostaw.
+
+
 
 

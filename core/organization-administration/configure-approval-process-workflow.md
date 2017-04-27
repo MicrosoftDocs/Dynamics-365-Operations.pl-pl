@@ -1,5 +1,5 @@
 ---
-title: "Skonfigurować proces zatwierdzania w przepływie pracy"
+title: "Konfigurowanie procesu zatwierdzania w przepływie pracy"
 description: "Procedura zamieszczona poniżej umożliwia skonfigurowanie właściwości procesu zatwierdzania."
 author: sericks007
 manager: AnnBe
@@ -24,11 +24,11 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-approval-process-in-a-workflow"></a>Skonfigurować proces zatwierdzania w przepływie pracy
+# <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurowanie procesu zatwierdzania w przepływie pracy
 
 Procedura zamieszczona poniżej umożliwia skonfigurowanie właściwości procesu zatwierdzania.
 
-Aby skonfigurować proces zatwierdzania w edytorze przepływu pracy, kliknij prawym przyciskiem myszy element zatwierdzania, a następnie kliknij przycisk **właściwości** otworzyć **właściwości** formularza.
+Aby skonfigurować proces zatwierdzania, w edytorze przepływu pracy kliknij element zatwierdzania prawym przyciskiem myszy i wybierz polecenie **Właściwości**, a zostanie otwarty formularz **Właściwości**.
 Nadawanie nazwy procesowi zatwierdzania
 -------------------------
 
@@ -40,14 +40,14 @@ Aby wprowadzić nazwę procesu zatwierdzania, należy wykonać poniższe kroki.
 System można skonfigurować do automatycznego wykonywania operacji na dokumencie, gdy są spełnione określone warunki. Na przykład system może zatwierdzać raporty o wydatkach, których suma kwot jest mniejsza niż 100 USD. Wykonaj następujące kroki, aby określić, kiedy system podejmuje akcję wobec dokumentu.
 1.  W lewym okienku kliknij opcję **Akcje automatyczne**.
 2.  Zaznacz pole wyboru **Włącz akcje automatyczne**.
-3.  Click **Add condition**.
+3.  Kliknij opcję **Dodaj warunek**.
 4.  Służy do wprowadzania warunku.
 5.  W razie potrzeby wprowadź dodatkowe warunki.
 6.  Aby sprawdzić, czy wprowadzone warunki są poprawnie skonfigurowane, wykonaj następujące czynności:
     1.  Kliknij opcję **Testuj**, a zostanie otwarty formularz **Warunek testowy przepływu pracy**.
     2.  Wybierz rekord w obszarze **Sprawdź poprawność warunku** formularza.
     3.  Kliknij przycisk **Test**. System oszacuje rekord i określi, czy rekord spełnia określone warunki.
-    4.  Kliknij **OK** lub **anulowanie** aby powrócić do **właściwości** formularza.
+    4.  Kliknij przycisk **OK** lub **Anuluj**, aby powrócić do formularza **Właściwości**.
 
 7.  Z listy **Akcja automatycznego ukończenia** wybierz akcję, jaką ma podjąć system wobec dokumentu.
 
@@ -55,11 +55,11 @@ System można skonfigurować do automatycznego wykonywania operacji na dokumenci
 Możliwe jest wysyłanie do odpowiednich osób powiadomień w przypadku zatwierdzenia, odrzucenia, delegowania lub eskalowania dokumentu albo żądania jego modyfikacji. Wykonaj następujące kroki, aby określić, kiedy i do kogo są wysyłane powiadomienia.
 1.  W lewym okienku kliknij opcję **Powiadomienia**.
 2.  Zaznacz pola wyboru obok zdarzeń, o których mają być wysyłane powiadomienia:
-    -   **Pełnomocnik** -gdy dokument przypisany do innego użytkownika do zatwierdzenia.
-    -   **Eskaluj** -gdy przypisany użytkownik nie podjęła się na dokumencie w wyznaczonym czasie.
-    -   **Zatwierdzanie** -gdy dokument został zatwierdzony.
-    -   **Odrzuć** -gdy dokument został odrzucony.
-    -   **Żądaj zmiany** -gdy przypisany użytkownik zażądał zmiany do dokumentu, który został przesłany.
+    -   **Delegowanie** — gdy dokument został przypisany innemu użytkownikowi do zatwierdzenia.
+    -   **Eskalowanie** — kiedy przypisany użytkownik nie podjął działań wobec dokumentu w wyznaczonym czasie.
+    -   **Zatwierdzanie** — po zatwierdzeniu dokumentu.
+    -   **Odrzucanie** — po odrzuceniu dokumentu.
+    -   **Żądanie zmiany** — gdy przypisany użytkownik zażądał wprowadzenia zmiany w przesłanym mu dokumencie.
 
 3.  Zaznacz wiersz zdarzenia wybranego w kroku 2.
 4.  Kliknij kartę **Tekst powiadomienia**.
@@ -70,8 +70,8 @@ Możliwe jest wysyłanie do odpowiednich osób powiadomień w przypadku zatwierd
     3.  Na wyświetlonej liście wybierz symbol zastępczy, który chcesz wstawić.
     4.  Kliknij przycisk **Wstaw**.
 
-7.  Aby dodać tłumaczenie powiadomienia, kliknij przycisk **tłumaczenia**. W wyświetlonym formularzu wykonaj następujące czynności:
-    1.  Click **Add**.
+7.  Aby dodać tłumaczenia powiadomienia, kliknij opcję **Tłumaczenia**. W wyświetlonym formularzu wykonaj następujące czynności:
+    1.  Kliknij przycisk **Dodaj**.
     2.  Z wyświetlonej listy wybierz język, w którym będziesz wprowadzać tekst.
     3.  W polu tekstowym **Przetłumaczony tekst** wprowadź tekst.
     4.  Aby spersonalizować tekst, wstaw symbole zastępcze.
@@ -112,11 +112,11 @@ Możliwe jest wysyłanie do odpowiednich osób powiadomień w przypadku zatwierd
     </ol></td>
     </tr>
     <tr class="odd">
-    <td><strong>User</strong></td>
-    <td>Szczególne usługi Microsoft Dynamics 365 dla użytkowników operacji</td>
+    <td><strong>Użytkownik</strong></td>
+    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li><strong>Dostępni użytkownicy</strong>: lista obejmuje wszystkie Microsoft Dynamics 365 dla działań użytkowników. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy:</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Microsoft Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy:</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -150,10 +150,10 @@ Jeśli proces zatwierdzania musi zostać ukończony w określonym czasie, wykona
 ## <a name="specify-which-actions-are-available-to-the-user"></a>Określanie akcji dostępnych użytkownikowi
 Gdy dokument zostanie przypisany do użytkownika, aby go zatwierdził, użytkownik musi zareagować na dokument. Wykonaj następujące kroki, aby określić, które akcje użytkownik może wykonywać na przesłanym dokumencie.
 1.  W lewym okienku kliknij przycisk **Ustawienia zaawansowane**.
-2.  Wybierz **Zatwierdź** pole wyboru, jeśli użytkownik może zatwierdzić dokument.
-3.  Wybierz **Odrzuć** pole wyboru użytkownik może odrzucić dokument.
-4.  Wybierz **Żądaj zmiany** pole wyboru użytkownik może żądać wprowadzenia zmian w dokumencie.
-5.  Wybierz **delegata** pole wyboru, jeśli użytkownik może przypisać dokumentu do innego użytkownika do zatwierdzenia.
+2.  Zaznacz pole wyboru **Zatwierdzanie**, jeśli użytkownik może zatwierdzić dokument.
+3.  Zaznacz pole wyboru **Odrzucanie**, jeśli użytkownik może odrzucić dokument.
+4.  Zaznacz pole wyboru **Żądanie zmiany**, jeśli użytkownik może wnioskować o zmiany w dokumencie.
+5.  Zaznacz pole wyboru **Delegowanie**, jeśli użytkownik może przypisać dokument innemu użytkownikowi do zatwierdzenia.
 
 **Uwaga**: Pole wyboru **Włącz wykonywanie akcji z listy zadań w module Enterprise Portal** zostało wycofane.
 

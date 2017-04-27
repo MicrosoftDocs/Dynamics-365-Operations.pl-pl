@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-scheduling"></a>Planowanie operacji
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten temat zawiera informacje o planowaniu operacji. Funkcji planowania operacji można używać, aby przedstawić ogólne oszacowanie procesu produkcji w wybranym okresie.
 
 Produkcję można planować na poziomie operacji i zadań. W przeciwieństwie do planowania zadań planowanie operacji nie powoduje rozłożenia operacji marszruty produkcji w zadania. Jeśli chcesz uwzględnić więcej szczegółów w planowaniu, takich jak informacje o aktualnych zdolnościach produkcyjnych, można uruchomić planowanie zadań po wykonaniu planowania operacji. Można również wykonać samo planowanie zadań. Planowanie zadań zazwyczaj służy do planowania poszczególnych zadań na produkcji w perspektywie czasowej bieżącej lub krótkoterminowej.
@@ -76,5 +79,7 @@ Jeśli pracujesz z ograniczonymi materiałami, planowanie zależy również od d
 --------
 
 [Opcje planowania operacji](operation-scheduling-options.md)
+
+
 
 

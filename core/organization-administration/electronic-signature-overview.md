@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="electronic-signature-overview"></a>Omówienie podpisów elektronicznych
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie podpisów elektronicznych, a także opis sposobu ich używania w programie Microsoft Dynamics 365 for Operations.
 
 <a name="what-is-an-electronic-signature"></a>Co to jest podpis elektroniczny?
@@ -35,7 +38,7 @@ Ten artykuł zawiera omówienie podpisów elektronicznych, a także opis sposobu
 Podpis elektroniczny potwierdza tożsamość osoby, która ma rozpocząć lub zatwierdzić jakiś proces obliczeniowy. W przypadku niektórych branż podpis elektroniczny jest tak samo prawnie wiążący jak podpis odręczny. Podpisy elektroniczne są wymagane przepisami w przypadku kilku branż regulowanych, takich jak przemysł farmaceutyczny, spożywczy oraz lotniczy i obronny. Wymagają ich również przepisy 21 CFR część 11 wydane przez amerykańską Agencję ds. Żywności i Leków (FDA). **Uwaga:** Sam podpis elektroniczny nie jest tym samym, co podpis cyfrowy. Podpis elektroniczny jest po prostu substytutem podpisu odręcznego, podczas gdy podpis cyfrowy stanowi dodatkowy środek zabezpieczeń. Podpis cyfrowy pomaga w ustaleniu, czy inny użytkownik lub proces nie naruszył danych. Podpis cyfrowy może być również weryfikowany i ta weryfikacja nie może zostać zakwestionowana przez właściciela certyfikatu użytego do podpisania danych. Jak opisano poniżej, podpisy elektroniczne w programie Microsoft Dynamics 365 for Operations mają wbudowaną funkcjonalność podpisu cyfrowego.
 
 ## <a name="electronic-signatures-in-dynamics-365-for-operations"></a>Podpisy elektroniczne w programie Dynamics 365 for Operations
-W programie Dynamics 365 for Operations można używać podpisów elektronicznych w przypadku procesów biznesowych o podstawowym znaczeniu. Niektóre procesy mają wbudowane możliwości podpisu elektronicznego. Można również tworzyć niestandardowe wymagania dotyczące podpisu cyfrowego dla dowolnej tabeli lub pola bazy danych. Podpisy elektroniczne mają wbudowaną funkcjonalność podpisu cyfrowego. Każdy użytkownik, który podpisuje dokumenty, musi uzyskać prawidłowy certyfikat kryptograficzny. Podczas podpisywania dokumentu sprawdzana jest poprawność klucza prywatnego skojarzonego z tym certyfikatem. Program Dynamics 365 for Operations rejestruje informacje dotyczące podpisów elektronicznych w dzienniku inspekcji. Aby skonfigurować podpisów elektronicznych, zobacz [Konfigurowanie podpisów elektronicznych (zadanie guide)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
+W programie Dynamics 365 for Operations można używać podpisów elektronicznych w przypadku procesów biznesowych o podstawowym znaczeniu. Niektóre procesy mają wbudowane możliwości podpisu elektronicznego. Można również tworzyć niestandardowe wymagania dotyczące podpisu cyfrowego dla dowolnej tabeli lub pola bazy danych. Podpisy elektroniczne mają wbudowaną funkcjonalność podpisu cyfrowego. Każdy użytkownik, który podpisuje dokumenty, musi uzyskać prawidłowy certyfikat kryptograficzny. Podczas podpisywania dokumentu sprawdzana jest poprawność klucza prywatnego skojarzonego z tym certyfikatem. Program Dynamics 365 for Operations rejestruje informacje dotyczące podpisów elektronicznych w dzienniku inspekcji. Aby skonfigurować podpisy elektroniczne, zobacz [Konfigurowanie podpisów elektronicznych (przewodnik po zadaniach)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Użytkownicy, którzy potrzebują dostępu do podpisów elektronicznych
 Trzy rodzaje użytkowników zwykle wymagają dostępu zabezpieczeń do podpisów elektronicznych: administratorzy podpisów elektronicznych, osoby podpisujące i audytorzy podpisów elektronicznych.
@@ -78,6 +81,8 @@ Czasami możesz chcieć podpisać zmiany dokonane przez innego użytkownika. Na 
 1.  Na stronie **Opcje** na karcie **Konta** kliknij opcję **Wyznacz osobę zatwierdzającą**.
 2.  W polu **Identyfikator użytkownika osoby zatwierdzającej** wybierz identyfikator użytkownika, który ma podpisywać zmiany dokonane przez innego użytkownika.
 3.  W polu **Identyfikator użytkownika osoby potrzebującej podpisu** wybierz identyfikator użytkownika, którego zmiany mają być podpisywane.
+
+
 
 
 

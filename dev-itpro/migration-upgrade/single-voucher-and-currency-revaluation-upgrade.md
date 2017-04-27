@@ -1,6 +1,6 @@
 ---
-title: "Pojedynczego załącznika i przeszacowanie w walucie uaktualnienia Microsoft Dynamics 365 dla wersji operacji 1611"
-description: "W niektórych organizacjach wprowadź arkuszy, które zawierają jeden załącznik, który ma więcej niż jednego odbiorcy lub dostawcy, a oni również uruchomić rozrachunków z odbiorcami lub procesowi aktualizacji wyceny waluty obcej płatne konta. W tym temacie opisano kroki, które organizacje te należy wykonać podczas uaktualniania do usługi Microsoft Dynamics 365 dla wersji operacji 1611."
+title: "Uaktualnianie pojedynczych załączników i przeszacowań w walucie w programie Microsoft Dynamics 365 for Operations w wersji 1611"
+description: "W niektórych organizacjach są wprowadzane arkusze zawierające jeden załącznik z więcej niż jednym odbiorcą lub dostawcą, a także wykonują proces przeszacowania w walucie obcej dla rozrachunków z dostawcami i odbiorcami. W tym temacie opisano kroki, które powinny wykonać takie organizacje podczas uaktualniania do programu Microsoft Dynamics 365 for Operations w wersji 1611."
 author: twheeloc
 manager: AnnBe
 ms.date: 2016-12-28 16 - 04 - 17
@@ -24,15 +24,15 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="single-voucher-and-currency-revaluation-upgrade-for-microsoft-dynamics-365-for-operations-version-1611"></a>Pojedynczego załącznika i przeszacowanie w walucie uaktualnienia Microsoft Dynamics 365 dla wersji operacji 1611
+# <a name="single-voucher-and-currency-revaluation-upgrade-for-microsoft-dynamics-365-for-operations-version-1611"></a>Uaktualnianie pojedynczych załączników i przeszacowań w walucie w programie Microsoft Dynamics 365 for Operations w wersji 1611
 
-W niektórych organizacjach wprowadź arkuszy, które zawierają jeden załącznik, który ma więcej niż jednego odbiorcy lub dostawcy, a oni również uruchomić rozrachunków z odbiorcami lub procesowi aktualizacji wyceny waluty obcej płatne konta. W tym temacie opisano kroki, które organizacje te należy wykonać podczas uaktualniania do usługi Microsoft Dynamics 365 dla wersji operacji 1611.
+W niektórych organizacjach są wprowadzane arkusze zawierające jeden załącznik z więcej niż jednym odbiorcą lub dostawcą, a także wykonują proces przeszacowania w walucie obcej dla rozrachunków z dostawcami i odbiorcami. W tym temacie opisano kroki, które powinny wykonać takie organizacje podczas uaktualniania do programu Microsoft Dynamics 365 for Operations w wersji 1611.
 
-Po uaktualnieniu do systemu Microsoft Dynamics 365 dla wersji operacji 1611, wykonaj następujące kroki.
+W przypadku uaktualnienia do programu Microsoft Dynamics 365 for Operations w wersji 1611 należy wykonać poniższe kroki.
 
-1.  Przed uaktualnieniem do systemu Dynamics 365 dla operacji, uruchomić procesy przeszacowania waluty obcej dla rozrachunków z odbiorcami i Rozrachunki z dostawcami. Ustaw **metody** na **Data faktury**. Tworzona jest transakcja przeszacowania, która Odwraca działanie ostatniego przeszacowania w walucie obcej. W związku z tym otwarte transakcje są wyceniane w ich oryginalnej walucie rozliczeniowej.
-2.  Uaktualnienie do systemu Dynamics 365 dla wersji operacji 1611.
-3.  Ponownie uruchom rozrachunków z odbiorcami i procesów przeszacowania waluty obcej płatne konta. Ten czas ustawiony **metody** na **Standard**. Tworzona jest nowa transakcja przeszacowania, która opiera się na bieżących kursów wymiany. Ta transakcja rejestruje niezrealizowany zysk/strata i odpowiednie podsumowującego konta księgowego.
+1.  Przed rozpoczęciem uaktualniania do programu Dynamics 365 for Operations wykonaj procesy przeszacowania w walucie obcej dla modułów Rozrachunki z odbiorcami i Rozrachunki z dostawcami. W polu **Metoda** ustaw wartość **Data faktury**. Zostanie utworzona transakcja przeszacowania, która odwraca ostatnie przeszacowanie w walucie obcej. W efekcie otwarte transakcje są wyceniane w ich oryginalnej walucie rozliczeniowej.
+2.  Uaktualnij do programu Dynamics 365 for Operations w wersji 1611.
+3.  Ponownie uruchom procesy przeszacowania w walucie obcej dla rozrachunków z odbiorcami i dostawcami. Tym razem w polu **Metoda** ustaw wartość **Standardowo**. Zostanie utworzona nowa transakcja przeszacowania oparta na bieżących kursach wymiany. Ta transakcja zarejestruje niezrealizowane dodatnie/ujemne różnice kursowe i poprawne podsumowujące konto księgowe.
 
 
 

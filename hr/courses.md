@@ -1,5 +1,5 @@
 ---
-title: "Ustawianie kursów szkoleniowych"
+title: "Konfigurowanie kursów szkoleniowych"
 description: "Administratorzy zasobów ludzkich i menedżerowie mogą korzystać z funkcji kursów do obsługi informacji o szkoleniu oferowanym pracownikom."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-training-courses"></a>Ustawianie kursów szkoleniowych
+# <a name="set-up-training-courses"></a>Konfigurowanie kursów szkoleniowych
+
+[!include[banner](includes/banner.md)]
+
 
 Administratorzy zasobów ludzkich i menedżerowie mogą korzystać z funkcji kursów do obsługi informacji o szkoleniu oferowanym pracownikom.
 
@@ -85,7 +88,7 @@ Dla każdego kursu można wykonać następujące zadania.
 -   Hotele rekomendowane uczestnikom kursu
 -   Utworzenie opisu kursu, który później może zostać zareklamowany w Samoobsłudze pracownika
 
-  >**Uwaga** kursu można usunąć tylko wtedy, gdy nikt nie został zarejestrowany dla niego. 
+  >**Uwaga** Kurs można usunąć tylko wtedy, gdy nikt się na niego nie zarejestrował. 
     
 ## <a name="course-statuses"></a>Stany kursu
 W poniższej tabeli wymieniono możliwe stany i akcje kursu, które można wykonać, gdy kurs ma określony stan.
@@ -132,7 +135,9 @@ Uczestnicy kursu to pracownicy, kandydaci lub osoby kontaktowe biorące udział 
 <a name="workflow"></a>System Workflow
 --------
 
-Pracownicy, którzy zarejestrować na kurs przez **pracownika samoobsługi** strona może mieć ich rejestracji, kierowane przez przepływ pracy do zatwierdzenia.  Przepływ pracy można przypisać do kursu na **ogólne** skróconej na **kursy** strony.
+Rejestracje pracowników, którzy zapisali się na kurs poprzez stronę **Samoobsługa pracownika etatowego**, mogą zostać przekierowane przez przepływ pracy celem zatwierdzenia.  Przepływ pracy dla kursu można ustawić na skróconej karcie **Ogólne** na stronie **Kursy**.
+
+
 
 
 

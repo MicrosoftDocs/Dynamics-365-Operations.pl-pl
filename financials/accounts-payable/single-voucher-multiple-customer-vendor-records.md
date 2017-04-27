@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Jeden załącznik z wieloma rekordami odbiorców lub dostawców
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten temat zawiera omówienie tego, co się dzieje podczas księgowania jednego załącznika z wieloma rekordami odbiorców lub dostawców. Ta funkcja nie będzie już dostępna w kolejnych wersjach programu Microsoft Dynamics 365 for Operations, w związku z tym nie zalecamy używania tej metody księgowania ze względu na jej wpływ księgowy na przetwarzanie rozliczeń. 
 
 Do typowych przykładów używania jednego załącznika do wielu odbiorców lub dostawców należą m.in. przeniesienia sald między odbiorcami oraz kompensowanie sald między odbiorcami i dostawcami w tej samej organizacji. 
@@ -91,10 +94,10 @@ Jeśli użytkownik jest niezadowolony z rabatu gotówkowego przydzielanego do ws
 
 |             |                  |              |                 |           |            |                 |                    |
 |-------------|------------------|--------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Załącznik** | **Typ konta** | **Konto**  | **Opis** | **Strona debetowa** | **Strona kredytowa** | **Offset type** | **Offset account** |
-| GNJL001     | Dostawca           | 1001         | INV1            |           | 100,00     | Księga          | &lt;puste&gt;      |
-| GNJL001     | Księga           | 606300-001-- | INV1            |   50,00   |            | Księga          | &lt;puste&gt;      |
-| GNJL001     | Księga           | 606300-002-- | INV1            |   50,00   |            | Księga          | &lt;puste&gt;      |
+| **Załącznik** | **Typ konta** | **Konto**  | **Opis** | **Strona debetowa** | **Strona kredytowa** | **Typ przeciwstawny** | **Konto przeciwstawne** |
+| GNJL001     | Dostawca           | 1001         | INV1            |           | 100,00     | Księga          | &lt;pusty&gt;      |
+| GNJL001     | Księga           | 606300-001-- | INV1            |   50,00   |            | Księga          | &lt;pusty&gt;      |
+| GNJL001     | Księga           | 606300-002-- | INV1            |   50,00   |            | Księga          | &lt;pusty&gt;      |
 | GNJL002     | Dostawca           | 1001         | INV2            |           | 200,00     | Księga          | 606300-003--       |
 | GNJL003     | Dostawca           | 1001         | INV3            |           | 300,00     | Księga          | 606300-004--       |
 
@@ -248,5 +251,7 @@ Aby uniknąć problemów z przyszłymi rozliczeniami tej transakcji, zamiast uż
 | 002         | Dostawca           | 1001        |                 |  75,00    |            | Księga          | 999999---          |
 
  
+
+
 
 

@@ -43,11 +43,11 @@ Kafelki **Podsumowanie** prezentują przegląd faktur od wybranego dostawcy. Ist
 Kliknięcie kafelka otwiera przefiltrowany widok strony **Lista faktur**.
 ### <a name="tabular-lists"></a>Listy tabelaryczne
 
-W sekcji **Listy tabelaryczne** stan fakturowania dzieli się w podobny sposób, jak w kafelkach podsumowania: listy wersji roboczych i przesłanych niezatwierdzonych. W stanie Wersja robocza fakturę można przesłać do przepływu pracy lub usunąć. Ostatnia lista tabelaryczna jest możliwość znajdowania faktur. Można ustawić filtr wyszukiwania, umożliwiające szybsze wyszukiwanie.
+W sekcji **Listy tabelaryczne** stan fakturowania dzieli się w podobny sposób, jak w kafelkach podsumowania: listy wersji roboczych i przesłanych niezatwierdzonych. W stanie Wersja robocza fakturę można przesłać do przepływu pracy lub usunąć. Ostatnia lista tabelaryczna to opcja pozwalająca odnaleźć faktury. Można filtrować podczas wyszukiwania, aby przyspieszyć wyszukiwanie.
 Strona listy Wszystkie faktury od dostawcy
 -----------------------------
 
-Można wyświetlać wszystkie faktury dostawcy zaksięgowanych i niezaksięgowanych na **faktur od dostawcy współpracy** strony listy. Można użyć tej strony listy, aby zobaczyć status płatności faktur. Istnieją następujące stany płatności: niezaksięgowane, niezapłacone, częściowo zapłacone i w pełni zapłacone.
+Na stronie listy **Faktury w portalu współpracy z dostawcami** można wyświetlić wszystkie zaksięgowane i niezaksięgowane faktury od dostawcy. Ta strona listy służy do wyświetlania stanu płatności faktur. Istnieją następujące stany płatności: niezaksięgowane, niezapłacone, częściowo zapłacone i w pełni zapłacone.
 Tworzenie nowej faktury na podstawie zamówienia zakupu
 --------------------------------------------
 
@@ -55,6 +55,6 @@ Nową fakturę od dostawcy można utworzyć, wybierając akcję **Nowy** w obsza
 
 
 
-Aby uzyskać więcej informacji, zobacz [współpracę z dostawcami za pomocą portalu dostawców](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
+Aby uzyskać więcej informacji, zobacz [Współpraca z dostawcami za pomocą portalu dostawców](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
 
 

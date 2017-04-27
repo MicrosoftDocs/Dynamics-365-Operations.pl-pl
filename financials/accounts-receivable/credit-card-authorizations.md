@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="credit-card-setup-authorization-and-capture"></a>Konfiguracja i autoryzacja karty kredytowej
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie funkcji autoryzacji kart kredytowych w systemie Microsoft Dynamics AX. Znajdują się tu informacje o konfigurowaniu usługi płatności, dodawaniu karty kredytowej do zamówienia sprzedaży oraz o unieważnianiu autoryzacji.
 
 <a name="setting-up-the-credit-card-payment-service"></a>Konfigurowanie usługi płatności kartą kredytową
@@ -55,7 +58,7 @@ Można wymagać wartości weryfikacji karty, która jest czasem określana jako 
 
 ### <a name="address-verification"></a>Weryfikacja adresu
 
-Informacje weryfikacji adresu są zawsze wysyłane do dostawcy płatności. Można zdecydować, ile informacji jest wymagana dla transakcji mają być akceptowane. Należy skontaktować się z dostawcą, aby ustalić, czy akceptuje ona te informacje. Oto opcje weryfikacji adresu:
+Informacje weryfikacji adresu są zawsze wysyłane do dostawcy płatności. Można określić, ile informacji jest wymaganych do zaakceptowania transakcji. Należy skontaktować się z dostawcą, aby określić, czy może on akceptować te informacje. Oto opcje weryfikacji adresu:
 -   **Zawsze akceptuj transakcję** — akceptuj transakcję, niezależnie od wyników weryfikacji adresu.
 -   **Posiadacz konta** — porównanie imienia i nazwiska z transakcji z informacjami od wystawcy karty kredytowej.
 -   **Adres na fakturze** — porównanie imienia i nazwiska i adresu rozliczeniowego z transakcji z informacjami od wystawcy karty kredytowej.
@@ -68,10 +71,12 @@ Dla każdego typu karty kredytowej, który jest obsługiwany, można określić 
 -   **Poziom 3** — przesłanie informacji poziomu 2 plus informacji w wierszu zamówienia.
 
 ## <a name="partial-payments"></a>Płatności częściowe
-Jeśli wysyłasz część zamówienia, kwota zamówienia częściowe są przechwytywane i autoryzacji, który był dla ilości całe zamówienie, jest zamknięta. Pozostała kwota zamówienia, które nie zostały wysłane przesyłany jest z nowego pozwolenia.
+Jeśli wysyłasz części zamówienia, kwota częściowego zamówienia jest rejestrowana, a autoryzacja będącą kwotą całego zamówienia jest zamykana. Nowa autoryzacja jest następnie przesyłana na pozostałą kwotę zamówienia, która nie została jeszcze wysłana.
 
 ## <a name="voiding-an-authorization"></a>Unieważnianie autoryzacji 
 Abu unieważnić autoryzację karty kredytowej, można zmienić metodę płatności na inną, która nie ma typu karty kredytowej.
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Użyj wyszukiwania, aby znaleźć informacje"
-description: "W programie Microsoft Dynamics 365 dla operacji wiele pól mają wyszukiwania, które mogą pomóc szybko znaleźć zainstalowanego lub żądaną wartość. Kilka ulepszeń zostały dodane do odnośników, które czynią te formanty bardziej użyteczny i użytkownik był bardziej wydajne. W tym temacie będzie więcej informacji na temat tych nowych funkcji wyszukiwania i otrzyma kilka pomocnych wskazówek, aby uzyskać optymalne wykorzystanie spośród wyszukiwań w systemie."
+title: "Używanie odnośników do znajdowania informacji"
+description: "W programie Microsoft Dynamics 365 for Operations wiele pól ma odnośniki (służące do wyszukiwania), które bardzo ułatwiają znajdowanie poprawnych lub żądanych wartości. W funkcjonalności odnośników wprowadzono szereg ulepszeń, które zwiększają użyteczność tych formantów i w efekcie wydajność pracy użytkowników. W tym temacie dowiesz się więcej o tych nowych funkcjach odnośników i otrzymasz pomocne wskazówki dotyczące ich optymalnego wykorzystywania w systemie."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,59 +24,64 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-lookups-to-find-information"></a>Użyj wyszukiwania, aby znaleźć informacje
+# <a name="use-lookups-to-find-information"></a>Używanie odnośników do znajdowania informacji
 
-W programie Microsoft Dynamics 365 dla operacji wiele pól mają wyszukiwania, które mogą pomóc szybko znaleźć zainstalowanego lub żądaną wartość. Kilka ulepszeń zostały dodane do odnośników, które czynią te formanty bardziej użyteczny i użytkownik był bardziej wydajne. W tym temacie będzie więcej informacji na temat tych nowych funkcji wyszukiwania i otrzyma kilka pomocnych wskazówek, aby uzyskać optymalne wykorzystanie spośród wyszukiwań w systemie.  
+[!include[banner](../includes/banner.md)]
 
-<a name="responsive-lookups"></a>Elastyczne wyszukiwań
+
+W programie Microsoft Dynamics 365 for Operations wiele pól ma odnośniki (służące do wyszukiwania), które bardzo ułatwiają znajdowanie poprawnych lub żądanych wartości. W funkcjonalności odnośników wprowadzono szereg ulepszeń, które zwiększają użyteczność tych formantów i w efekcie wydajność pracy użytkowników. W tym temacie dowiesz się więcej o tych nowych funkcjach odnośników i otrzymasz pomocne wskazówki dotyczące ich optymalnego wykorzystywania w systemie.  
+
+<a name="responsive-lookups"></a>Odnośniki elastyczne
 ------------------
 
-W poprzednich wersjach programu Dynamics 365 dla operacji, podczas interakcji z formant wyszukiwania użytkownik musiałby jednoznacznym otworzyć menu rozwijane. Może być to po wpisaniu gwiazdki (\*) w kontroli filtrować odnośnika opartego na bieżącą wartość formantu, klikając przycisk listy rozwijanej, lub za pomocą **Alt**+**Strzałka w dół** skrót klawiaturowy. Formanty wyszukiwania zostały zmienione w następujący sposób, aby lepiej wyrównać z aktualną praktyką w sieci web:
+W poprzednich wersjach programu Dynamics 365 for Operations podczas interakcji z formantem odnośnika użytkownik musiał jednoznacznie otworzyć menu rozwijane. Mogło się do odbywać poprzez wpisanie gwiazdki (\*) w formancie, aby wyfiltrować wyszukiwanie na podstawie bieżącej wartość formantu, kliknięcie przycisku rozwijanego lub użycie skrótu klawiaturowego **Alt**+**strzałka w dół**. Formanty wyszukiwania zostały zmodyfikowane w następujący sposób, aby lepiej pasowały do obecnych praktyk używania Internetu:
 
--   Menu rozwijane Wyszukaj teraz zostanie automatycznie otwarty po wstrzymaniu nieznaczne pisania, z listy rozwijanej zawartość menu filtrowane w oparciu o wartość formant wyszukiwania odnośników.
-    -   Należy zauważyć, że stare zachowanie automatycznego otwierania listy rozwijanej po wpisaniu gwiazdki (\*) jest przestarzała.
--   Po otwarciu menu rozwijanego odnośników, mają miejsce następujące czynności:
-    -   Kursor pozostanie w formant wyszukiwania odnośników (zamiast fokus do menu rozwijanego), nadal można wprowadzać modyfikacje do wartości formantu. Jednak użytkownik może nadal używać **Strzałka w górę** i **Strzałka w dół** Aby zmienić wiersze w menu rozwijane i enter, aby wybrać bieżący wiersz w menu rozwijanego.
-    -   Wszelkich modyfikacji wartości formantu wyszukiwania będzie dopasować zawartość menu rozwijanego.
+-   Menu rozwijane wyszukiwania teraz otwierają się automatycznie po krótkim wstrzymaniu pisania, z zawartością listy rozwijanej wyfiltrowaną w oparciu o wartość formantu wyszukiwania.
+    -   Należy zauważyć, że stare zachowanie automatycznego otwierania listy rozwijanej po wpisaniu gwiazdki (\*) zostało wycofane.
+-   Po otwarciu menu rozwijanego wyszukiwania mają miejsce następujące zdarzenia:
+    -   Kursor pozostaje w formancie wyszukiwania (fokus już nie jest przenoszony do menu rozwijanego), co pozwoli dalej wprowadzać modyfikacje w wartości formantu. Jednak użytkownik może nadal używać **strzałki w górę** i **strzałki w dół**, aby zmieniać wiersze w menu rozwijanym, oraz nacisnąć klawisz Enter, aby wybrać bieżący wiersz w menu rozwijanym.
+    -   Zawartość menu rozwijanego będzie się odpowiednio dopasowywać po wszelkich modyfikacjach wartości formantu wyszukiwania.
 
-Rozważmy na przykład pole wyszukiwania o nazwie **miasta**. 
+Rozważmy na przykład pole wyszukiwania o nazwie **Miejscowość**. 
 
-Gdy fokus znajduje się w **miasta** pole, można rozpocząć wyszukiwanie miejscowość, w której chcesz wpisać kilka liter, takie jak "kol."  Po zakończeniu wpisywania, wyszukiwania zostanie automatycznie otwarty, filtrowane, aby tych miast, które zaczyna się od "col". 
+Gdy fokus znajduje się w polu **Miejscowość**, można rozpocząć wyszukiwanie żądanej miejscowość, wpisując kilka liter, takich jak „kaz”.  Gdy skończysz wpisywanie, odnośnik otworzy się automatycznie z wyfiltrowanymi miejscowościami o nazwach zaczynających się od „kaz”. 
 
 [![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png) 
 
-W tym momencie kursor jest nadal w polu wyszukiwania. Jeśli będziesz kontynuować wpisywanie więc wartość jest "colum", zawartość odnośników automatycznie dostosowuje się do odzwierciedlenia najnowszych wartości w formancie. 
+W tym momencie kursor jest nadal w polu wyszukiwania. Jeśli będziesz kontynuować wpisywanie, tak że wartość zmieni się na „kazim”, zawartość odnośnika automatycznie się dostosuje i będzie odzwierciedlała najnowszą wartość w formancie. 
 
 ![updateFilterLookupExample](./media/updatefilterlookupexample.png) 
 
-Nawet jeśli fokus jest nadal w formant wyszukiwania odnośników, można również użyć **Strzałka w górę** lub **Strzałka w dół** klawiszy, aby zaznaczyć wiersz, który chcesz zaznaczyć. Jeśli naciśniesz **Enter** zaznaczony wiersz zostanie zaznaczony w polu wyszukiwania, a wartość formantu zostanie zaktualizowana. 
+Mimo iż fokus jest nadal w formancie wyszukiwania, można również użyć klawiszy **strzałki w górę** lub **strzałki w dół**, aby zaznaczyć wiersz, który chcesz wybrać. Jeśli naciśniesz klawisz **Enter**, zaznaczony wiersz zostanie wybrany w odnośniku, a wartość formantu zostanie zaktualizowana. 
 
 ![changingSelectionLookup](./media/changingselectionlookup.png)
 
-## <a name="typing-in-more-than-ids"></a>Pisanie w więcej niż identyfikatory
-Podczas wprowadzania danych, to naturalne użytkownikom zmierzające do zidentyfikowania jednostki, takie jak nabywca lub Dostawca, pod względem nazwy, a nie identyfikator reprezentujący jednostkę. W obecnej wersji systemu Dynamics 365 dla operacji wyszukiwania wiele (ale nie wszystkie) teraz można wprowadzać dane kontekstowe. Tej zaawansowanej funkcji umożliwia użytkownikowi w formant wyszukiwania odnośników wpisz identyfikator lub odpowiadającej mu nazwy. 
+## <a name="typing-in-more-than-ids"></a>Wpisywanie nie tylko identyfikatorów
+Podczas wprowadzania danych jest naturalne dla użytkowników, że próbują identyfikować jednostkę, taką jak odbiorca lub dostawca, za pomocą nazwy, a nie oficjalnego identyfikatora. W obecnej wersji programu Dynamics 365 for Operations wiele (choć nie wszystkie) odnośniki pozwalają teraz na kontekstowe wprowadzanie danych. Ta zaawansowana funkcja umożliwia użytkownikowi wpisanie identyfikatora lub odnośnej nazwy w formancie wyszukiwania. 
 
-Na przykład, rozważmy **konto odbiorcy** pól podczas tworzenia zamówienia sprzedaży. To pole zawiera **identyfikator konta** dla odbiorcy, ale użytkownik zazwyczaj wolą wprowadź **nazwa konta** zamiast **identyfikator konta** dla tego pola podczas tworzenia zamówienia sprzedaży, takie jak "Las hurtowni" zamiast "US-003."
+Na przykład rozważmy pole **Konto odbiorcy** podczas tworzenia zamówienia sprzedaży. To pole zawiera **identyfikator konta** odbiorcy, ale podczas tworzenia zamówienia sprzedaży użytkownik zazwyczaj wolałby wpisać **nazwę konta** zamiast **identyfikatora konta**, np. „Hurtownia leśna” zamiast „PL-003”.
 
-Jeśli użytkownik rozpoczął do wprowadzania **identyfikator konta** w formancie wyszukiwania menu rozwijanego automatycznie otworzy zgodnie z opisem w poprzedniej sekcji i użytkownik zobaczy odnośnika, tak jak pokazano poniżej.
+Jeśli użytkownik zacznie wpisywać **identyfikator konta** w formancie wyszukiwania, menu rozwijane otworzy się automatycznie zgodnie z opisem w poprzedniej sekcji i użytkownik zobaczy odnośnik, jak pokazano niżej.
 
-[![Wyszukiwanie kontekstowe po wprowadzeniu Identyfikatora konto klienta](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
+[![Wyszukiwanie kontekstowe po wprowadzeniu identyfikatora konta odbiorcy](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
 
-Jednak użytkownik może teraz również wprowadzić na początku **nazwa konta** również. Jeśli to jest wykrywane, użytkownik zobaczy następujące wyszukiwania. Zawiadomienie jak **nazwa** kolumna jest przesuwana za pierwszej kolumny odnośnika i jak odnośnika jest sortowane i filtrowane w oparciu **nazwa** kolumny.
+Jednak użytkownik może teraz również wprowadzić początek **nazwy konta**. Jeśli system to wykryje, użytkownik zobaczy poniższy odnośnik. Zwróć uwagę, jak kolumna **Nazwa** przesunęła się i jest teraz pierwszą kolumną w odnośniku, a odnośnik został posortowany i wyfiltrowany w oparciu o zawartość kolumny **Nazwa**.
 
-[![Wyszukiwanie kontekstowe po wprowadzeniu imienia i nazwiska odbiorcy](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
+[![Wyszukiwanie kontekstowe po wprowadzeniu nazwy odbiorcy](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
-## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Za pomocą nagłówków kolumn siatki dla bardziej zaawansowane filtrowanie i sortowanie
-Rozszerzenia wyszukiwania omówionych w poprzednich rozdziałach znacznie poprawić zdolność użytkownika do przejść wierszy w oparciu o wyszukiwaniu "zaczyna się od" do wyszukiwania **ID** lub **nazwa** pól odnośnika. Jednak istnieją sytuacje, w których bardziej zaawansowane filtrowanie (lub sortowania) jest potrzebna do znalezienia prawidłowego wiersza. W takich sytuacjach użytkownik musi użyć opcji filtrowania i sortowania w nagłówkach kolumn siatki wewnątrz odnośnika. Rozważmy na przykład jeden pracownik wprowadzania wiersza zamówienia sprzedaży musi zlokalizować prawo "kabla" jako produkt. Wpisując "kabla" w **numer** formant nie jest przydatne, ponieważ istnieją żadne nazwy produktu, rozpoczynające się od "kabla". 
+## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Używanie nagłówków kolumn siatki do bardziej zaawansowanego filtrowania i sortowania
+Ulepszenia odnośników omówione w poprzednich dwóch rozdziałach znacznie poprawiają zdolność użytkownika do nawigowania po wierszach odnośnika w oparciu o wyszukiwanie „zaczyna się od” zastosowanego do pola **Identyfikator** lub **Nazwa** w odnośniku. Jednak istnieją sytuacje, w których do znalezienia prawidłowego wiersza jest potrzebne bardziej zaawansowane filtrowanie (lub sortowanie). W takich sytuacjach użytkownik musi użyć opcji filtrowania i sortowania nagłówków kolumn siatki wewnątrz odnośnika. Rozważmy na przykład pracownika wprowadzającego wiersz zamówienia sprzedaży, który musi odnaleźć prawidłowy „kabel” jako produkt. Wpisanie słowa „kabel” w formancie **Numer pozycji** nie wystarczy, ponieważ nie istnieją żadne nazwy produktów rozpoczynające się od „kabel”. 
 
 ![emptyitemlookup](./media/emptyitemlookup.png) 
 
-Zamiast tego użytkownik musi Wyczyść wartości formantu wyszukiwania, otwórz menu rozwijane wyszukiwania i filtrowania listy rozwijanej przy użyciu nagłówka kolumny siatki, tak jak pokazano poniżej. Myszy (lub dotykowego) użytkownik może po prostu (i kliknij) dowolny nagłówek kolumny, aby uzyskać dostęp do opcji filtrowania i sortowania dla tej kolumny. Dla użytkownika klawiatury, po prostu należy nacisnąć **Alt**+**w dół****strzałka** drugi raz, aby przenieść fokus do menu rozwijanego, po czym użytkownik może zakładkę, aby odpowiednie kolumny, a następnie naciśnij **Ctrl**+**G** otworzyć menu rozwijane nagłówka kolumny siatki. 
+Zamiast tego użytkownik musi wyczyścić wartości formantu wyszukiwania, otworzyć menu rozwijane wyszukiwania i wyfiltrować to menu przy użyciu nagłówka kolumny siatki, jak pokazano niżej. Użytkownik posługujący się myszą (lub ekranem dotykowym) może po prostu kliknąć (lub dotknąć) dowolny nagłówek kolumny, aby uzyskać dostęp do opcji filtrowania i sortowania tej kolumny. Użytkownik posługujący się klawiaturą musi po prostu nacisnąć kombinację klawiszy **Alt**+**strzałka** **w dół** drugi raz, aby przenieść fokus do menu rozwijanego, po czym klawiszem tabulacji przejść do odpowiedniej kolumny i nacisnąć kombinację klawiszy **Ctrl**+**G**, a zostanie otwarte menu rozwijane nagłówka kolumny siatki. 
 
 [![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png) 
 
-Po zastosowano filtr (zobacz obraz poniżej), użytkownik może znaleźć i zaznacz wiersz w zwykły sposób. 
+Po zastosowaniu filtra (zobacz obraz poniżej) użytkownik może odnaleźć i zaznaczyć wiersz w zwykły sposób. 
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
+
+
 
 

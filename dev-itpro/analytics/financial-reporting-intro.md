@@ -85,6 +85,6 @@ Aby uzyskać więcej informacji, zobacz sekcję „Interaktywne składniki i fun
 
 #<a name="see-also"></a>Informacje dodatkowe
 
-[Generowanie raportu finansowego] ((dynamics365\operations\financials\general-ledger\generate--sprawozdanie finansowe)
+[Generowanie raportu finansowego]((dynamics365\operations\financials\general-ledger\generate-financial-report)
 
 

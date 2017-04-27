@@ -1,6 +1,6 @@
 ---
-title: "Raport gotowych zleceń produkcyjnych"
-description: "Zgłoszenie wyrobów gotowych jest na etapie produkcji. Na tym etapie produkt gotowy jest zgłaszane i przeniesione ze zlecenia produkcyjnego do zapasów."
+title: "Zgłaszanie zleceń produkcyjnych jako gotowych"
+description: "Zgłoszenie wyrobów gotowych to etap produkcji. Na tym etapie produkt gotowy jest zgłaszany i przenoszony ze zlecenia produkcyjnego do zapasów."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="report-production-orders-as-finished"></a>Raport gotowych zleceń produkcyjnych
+# <a name="report-production-orders-as-finished"></a>Zgłaszanie zleceń produkcyjnych jako gotowych
 
-Zgłoszenie wyrobów gotowych jest na etapie produkcji. Na tym etapie produkt gotowy jest zgłaszane i przeniesione ze zlecenia produkcyjnego do zapasów.
+[!include[banner](../includes/banner.md)]
+
+
+Zgłoszenie wyrobów gotowych to etap produkcji. Na tym etapie produkt gotowy jest zgłaszany i przenoszony ze zlecenia produkcyjnego do zapasów.
 
 Kiedy ilości wyprodukowanych towarów zostanie zgłoszona jako ukończona w zleceniu produkcyjnym, jest ona aktualizowana w magazynie. Ilości częściowe pierwotnie zaplanowanego zamówienia mogą być zgłaszane jako gotowe. Można też zgłaszać błędne ilości razem ze skojarzonym powodem błędu podczas raportowania ilości jako gotowych. Gdy zlecenie produkcyjne osiągnie etap „Zgłoszone jako gotowe”, wskazuje ono, że dalsze ilości nie będą zgłaszane w zleceniu produkcyjnym.
 Z procesem **zgłaszania gotowych wyrobów** wiążą się następujące właściwości:
@@ -44,5 +47,7 @@ Ilość jest zgłaszana do lokalizacji wyjściowej. Następnie generowana jest p
 
 ## <a name="set-a-production-order-to-reporting-as-finished"></a>Ustawianie stanu zlecenia produkcyjnego na Zgłoszenie wyrobów gotowych
 Można ustawić stan zlecenia produkcyjnego na **Zgłoszenie wyrobów gotowych** a pomocą standardowej funkcji aktualizacji zlecenia produkcyjnego lub za pomocą arkusza marszruty i karty karta zadań albo za pomocą arkusza **Zgłoszenie wyrobów gotowych**. Można także zaktualizować etap na **Zgłoszenie wyrobów gotowych** za pomocą stron terminalu karty zadań i urządzenia karty zadań podczas zgłaszania ostatniego zadania zlecenia produkcyjnego. Wreszcie można włączyć opcję **Zgłoszenie wyrobów gotowych** jako proces dla rozwiązania urządzenia podręcznego magazynu.  
+
+
 
 

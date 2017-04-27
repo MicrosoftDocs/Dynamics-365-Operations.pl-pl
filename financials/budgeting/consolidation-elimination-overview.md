@@ -86,5 +86,5 @@ Rozwiązaniem jest opcja **Raport finansowy**. Hierarchie organizacji zawierają
 Za pomocą opcji **Eksportuj salda firmy** można wyeksportować dane z jednej instancji, a następnie przy użyciu opcji **Konsoliduj z importu** w drugiej instancji można skonsolidować dane.
 
 
-Aby uzyskać więcej informacji, zobacz [revalution waluty w konsolidowanej firmy](\finanicials\general-ledger\currency-revaluation-consolidation-company).
+Aby uzyskać więcej informacji, zobacz [Przeszacowanie waluty w konsolidowanej firmie](\finanicials\general-ledger\currency-revaluation-consolidation-company).
 

@@ -1,6 +1,6 @@
 ---
-title: "Obliczenia dla modeli konfiguracji produktu — często zadawane pytania"
-description: "W tym artykule opisano obliczeń dla modeli konfiguracji produktu i wyjaśniono, jak używać obliczeń wraz z ograniczeń."
+title: "Obliczenia dla modeli produktu w konfiguracji — często zadawane pytania"
+description: "W tym artykule opisano obliczenia dla modeli konfiguracji produktu i wyjaśniono sposób korzystania z obliczeń wraz z ograniczeniami."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="calculations-for-product-configuration-models-faq"></a>Obliczenia dla modeli konfiguracji produktu — często zadawane pytania
+# <a name="calculations-for-product-configuration-models-faq"></a>Obliczenia dla modeli produktu w konfiguracji — często zadawane pytania
 
-W tym artykule opisano obliczeń dla modeli konfiguracji produktu i wyjaśniono, jak używać obliczeń wraz z ograniczeń.
+[!include[banner](../includes/banner.md)]
+
+
+W tym artykule opisano obliczenia dla modeli konfiguracji produktu i wyjaśniono sposób korzystania z obliczeń wraz z ograniczeniami.
 
 Obliczenia mogą służyć do operacji arytmetycznych lub logicznych. Uzupełniają one ograniczenia wyrażenia w modelach konfiguracji produktu. Można zdefiniować obliczenia na stronie **Szczegóły modelu konfiguracji produktu**, a następnie utworzyć wyrażenia w obliczeniach w edytorze wyrażenia. Aby uzyskać więcej informacji, zobacz Utwórz obliczenia.
 
@@ -45,9 +48,9 @@ Atrybut docelowy jest atrybutem, który odbiera wynik obliczeń w wyrażeniu.
 
 W poniższym wyrażeniu, atrybut docelowy to miara obrusu:  
 
-**Wyrażenie:** Jeśli\[decimalAttribute1 &lt;= decimalAttribute2, PRAWDA, FAŁSZ\]  
+**Wyrażenie:** If\[decimalAttribute1 &lt;= decimalAttribute2, Prawa, Fałsz\]  
 
-**DecimalAttribute1** jest długość stołu i **decimalAttribute2** jest długością obrusie. To wyrażenie zwróci wartość **Prawda** (True) do atrybutu docelowego, jeśli **dziesiętny atrybut 2** (decimalAttribute2) jest większy niż lub równy **dziesiętnemu atrybutowi 1** (decimalAttribute1). W przeciwnym wypadku wyrażenie zwróci wartość **Fałsz** (False). Sposób pomiaru obrusu jest dopuszczalny, jeśli długość obrusu jest równa lub przekracza długość stołu.
+**DecimalAttribute1** to długość stołu, a **decimalAttribute2** to długości obrusu. To wyrażenie zwróci wartość **Prawda** (True) do atrybutu docelowego, jeśli **dziesiętny atrybut 2** (decimalAttribute2) jest większy niż lub równy **dziesiętnemu atrybutowi 1** (decimalAttribute1). W przeciwnym wypadku wyrażenie zwróci wartość **Fałsz** (False). Sposób pomiaru obrusu jest dopuszczalny, jeśli długość obrusu jest równa lub przekracza długość stołu.
 
 ## <a name="what-attribute-types-can-be-set-to-target-attributes"></a>Jakie typy atrybutów można ustawić jako atrybuty docelowe?
 Wszystkie typy atrybutów, które są obsługiwane w przypadku konfiguratora produktów, można ustawić jako atrybuty docelowe, z wyjątkiem tekstu bez stałej listy.
@@ -57,11 +60,11 @@ Nie, wartość dla atrybutu docelowego nie może ograniczyć wartości wejściow
 
 ### <a name="example"></a>Przykład
 
-W poniższym wyrażeniu cel dla obliczenia jest długość kabla zasilającego, a wartość wejściowa jest kolor:  
+W poniższym wyrażeniu celem obliczenia jest długość kabla zasilającego, a wartością wejściową jest kolor.  
 
-**Wyrażenie:**\[Jeśli kolor == "Zielone", 1.5, 1.0\]  
+**Wyrażenie:** \[If Kolor == "Zielony", 1,5, 1,0\]  
 
-Podczas konfigurowania towaru, długość przewodu zasilania jest ustawiona na **1.5** Jeśli określisz **zielony** jako wartość atrybutu koloru. Jeśli określisz jakikolwiek inny kolor, długość będzie ustawiona jako **1.0**. Jednak ponieważ obliczenia są jednokierunkowe, obliczenie nie ustawia wartości atrybutu koloru na **zielony** w przypadku określenia długości na **1,5**.
+Podczas konfigurowania towaru obliczenie generuje **1,5** jako długość kabla zasilającego, jeśli **Zielony** zostanie określony jako wartość atrybutu koloru. Jeśli określisz jakikolwiek inny kolor, długość będzie ustawiona jako **1.0**. Jednak ponieważ obliczenia są jednokierunkowe, obliczenie nie ustawia wartości atrybutu koloru na **zielony** w przypadku określenia długości na **1,5**.
 
 ## <a name="what-happens-if-a-calculation-has-a-target-attribute-of-the-integer-type-but-a-calculation-generates-a-decimal-number"></a>Co się stanie, jeśli obliczenie ma atrybut docelowy typu liczby całkowitej, ale wynik obliczenia to liczba dziesiętna?
 Jeśli atrybut docelowy jest typu liczba całkowita, ale obliczenie wygeneruje liczbę dziesiętną, zostanie zwrócona tylko część całkowita obliczonego wyniku. Części dziesiętne są usuwane, a wynik nie jest zaokrąglany. Na przykład wynik równy 12.70 jest wyświetlany jako 12.
@@ -72,16 +75,16 @@ Obliczenia są wykonywane po dostarczeniu wartości dla wszystkich atrybutów we
 ## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a>Czy można zastąpić wartość, która jest obliczana dla atrybutu docelowego?
 Można zastąpić wartość, która jest obliczana dla atrybutu docelowego, o ile dla atrybutu docelowego nie wybrano ustawienia ukryty lub tylko do odczytu.
 
-## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Jak ustawić atrybut docelowy jako ukryte lub tylko do odczytu?
+## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Jak ustawić atrybut docelowy jako ukryty lub tylko do odczytu?
 Aby ustawić atrybut jako ukryty lub tylko do odczytu, należy wykonać następujące czynności:
 
-1.  Kliknij **zarządzanie informacjami o produktach**&gt;**wspólne**&gt;**modele konfiguracji produktu**.
+1.  Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Wspólne** &gt; **Modele konfiguracji produktu**.
 2.  Wybierz model konfiguracji produktu, a następnie w okienku akcji, kliknij przycisk **Edytuj**.
 3.  Na stronie **Szczegóły modelu konfiguracji produktu opartej na ograniczeniu** wybierz atrybut, który będzie używany jako docelowy.
 4.  Na skróconej karcie **Atrybuty** wybierz **Ukryty** lub **Tylko do odczytu**.
 
 ## <a name="can-a-calculation-overwrite-the-values-that-i-set"></a>Czy obliczenie może zastąpić ustawione wartości?
-Nr Wartości, które można ustawić podczas konfigurowania produktu są wartości, które są używane. Obliczenia, który występują, gdy są zmieniane wartości wejściowe w obliczeniach, nie mogą zastąpić wartości ustawionych dla konkretnego atrybutu.
+Nr Wartości, które można ustawić podczas konfigurowania produktu, to wartości, które są używane. Obliczenia, który występują, gdy są zmieniane wartości wejściowe w obliczeniach, nie mogą zastąpić wartości ustawionych dla konkretnego atrybutu.
 
 ## <a name="what-happens-if-i-remove-an-input-value-in-a-calculation"></a>Co się dzieje w przypadku usunięcia wartości wejściowej przy obliczaniu?
 Jeśli usuniesz przy obliczaniu wartość wejściową, wartość atrybutu docelowego również zostanie usunięta.
@@ -93,13 +96,15 @@ Ten komunikat jest wyświetlany, gdy obliczenie zawiera błąd lub istnieje sprz
 -   Istnieje konflikt między tymi dwoma elementami:
     -   Wartości, które są dostępne dla atrybutu i które są ograniczane przez ograniczenie.
     -   Wartość, która jest generowana za pomocą obliczeń.
--   Wartości, które są zwracane przez obliczenia są poza domeną atrybutu. Przykładem jest całkowitą od \[1..10\] jest obliczana na 0.
+-   Wartości, które są zwracane przez obliczenia są poza domeną atrybutu. Przykładem jest liczba całkowita z przedziału \[1..10\], która jest obliczana na 0.
 
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>Dlaczego pojawia się błąd, nawet jeśli pomyślnie zweryfikowano dany model produktu?
 Sprawdzanie poprawności nie zawiera obliczeń. Należy przetestować model konfiguracji produktu w celu znalezienia błędów w obliczeniach. Poniższe kroki zawierają informacje dotyczące sposobu testowania modelu konfiguracji produktu:
 
-1.  Kliknij **zarządzanie informacjami o produktach**&gt;**wspólne**&gt;**modele konfiguracji produktu**.
+1.  Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Wspólne** &gt; **Modele konfiguracji produktu**.
 2.  Wybierz model konfiguracji produktu, a następnie w okienku akcji, w grupie **Uruchom** kliknij **Test**.
+
+
 
 
 

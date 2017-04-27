@@ -35,7 +35,7 @@ W tym artykule opisano sposób konfigurowania elementów menu, których pracowni
 -   Tworzenie pracy, która zostanie wykonana za pomocą innego procesu. Na przykład przyjęcie towaru dla zamówienia zakupu może tworzyć pracę odkładania dla innego pracownika.
 -   Wykonywanie pracy, która została utworzona przez inny proces (istniejącej pracy), np. pracy odłożenia, która została utworzona podczas odbierania towarów dla zamówienia zakupu.
 
-Aby utworzyć element menu dla zapytania ani działania, ustaw **tryb** na **pośrednich**. Lista **kod działalności** opcje, a następnie staje się dostępne, można wybrać typ zapytania lub działania, które służy element menu. Aby utworzyć element menu do generowania pracy magazynu, należy ustawić **tryb** na **pracy**. Lista **działa proces tworzenia** opcje, a następnie staje się dostępne. Aby utworzyć element menu do przetwarzania istniejącej pracy magazynu, należy ustawić pole **Tryb** na **Praca**, a następnie ustawić opcję **Użyj istniejącej pracy** na **Tak**. **Uwaga:** dodatkowe pola mogą być dostępne dla elementów menu, w zależności od wybranej dla menu elementu oraz tego, czy element menu jest używana do wykonywania istniejącej pracy. Aby uzyskać informacje na temat wyborów dodatkowego pola zobacz sekcję "Opcje menu dodatkowych elementów" w dalszej części tego artykułu.
+Aby utworzyć element menu dla działania lub zapytania, należy wybrać w polu **Tryb** wartość **Pośredni**. Zostanie wtedy udostępniona lista opcji **Kod działania**, umożliwiając wybranie typu zapytania lub działania, którego dotyczy element menu. Aby utworzyć element menu do generowania pracy magazynu, należy ustawić w polu **Tryb** wartość **Praca**. Zostanie wyświetlona lista opcji **Proces tworzenia pracy**. Aby utworzyć element menu do przetwarzania istniejącej pracy magazynu, należy ustawić pole **Tryb** na **Praca**, a następnie ustawić opcję **Użyj istniejącej pracy** na **Tak**. **Uwaga:** W zależności od trybu wybranego dla elementu menu i jeśli służy on do wykonywania istniejącej pracy, dodatkowe pola są dostępne dla tego elementu menu. Informacje o dodatkowych polach wyboru można znaleźć w sekcji „Dodatkowe opcje elementów menu” w tym artykule.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurowanie elementów menu pod kątem działań i zapytań
 Jeśli pole **Tryb** dla elementu menu jest ustawione na **Pośredni**, można utworzyć element menu do wykonywania działań lub zapytań, które nie tworzą pracy. Może to być np. ponowne drukowanie etykiet numerów identyfikacyjnych czy zapytanie o towary w lokalizacji. W poniższej tabeli przedstawiono dostępne opcje.
@@ -190,7 +190,7 @@ Możesz skonfigurować element menu, który tworzy pracę dla innego pracownika 
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurowanie elementów menu do przetwarzania istniejącej pracy
-Oprócz zdefiniowania elementów to utworzenia pracy magazynu, można ustawić pozycje menu do przetwarzania pracy, która została już utworzona. Ustaw pole **Tryb** na wartość **Praca** i wybierz opcję **Użyj istniejącej pracy**. Kilka dodatkowych opcji stanie się dostępna na **ogólne** kartę. Można kontrolować dostęp do elementu menu przez przypisanie jednej lub kilku klas pracy na **pracy klasy** skróconej. Klasy pracy definiują pracę, którą element menu może przetworzyć. Klasa pracy może również być używana do udzielania dostępu rolom właściwym dla użytkownika lub oddzielnego przetwarzania różnych typów operacji. W poniższej tabeli przedstawiono dostępne opcje.
+Oprócz zdefiniowania elementów to utworzenia pracy magazynu, można ustawić pozycje menu do przetwarzania pracy, która została już utworzona. Ustaw pole **Tryb** na wartość **Praca** i wybierz opcję **Użyj istniejącej pracy**. Na karcie **Ogólne** pojawi się kilka dodatkowych opcji. Można kontrolować dostęp do elementu menu poprzez przypisanie do niego jednej lub kilku klas roboczych na skróconej karcie **Klasa robocza**. Klasy pracy definiują pracę, którą element menu może przetworzyć. Klasa pracy może również być używana do udzielania dostępu rolom właściwym dla użytkownika lub oddzielnego przetwarzania różnych typów operacji. W poniższej tabeli przedstawiono dostępne opcje.
 
 <table>
 
@@ -210,7 +210,7 @@ Oprócz zdefiniowania elementów to utworzenia pracy magazynu, można ustawić p
 </tr>
 <tr class="even">
 <td>Sterowane przez system</td>
-<td>Microsoft Dynamics 365 dla operacji określa rodzaj pracy, który jest przypisany do pracownika i kolejności, w jakiej pracownik wykonuje pracę w. Po wybraniu tej opcji, można kliknąć <strong>pracy sterowanej przez System</strong> w okienku akcji, aby otworzyć <strong>System sterowanej kolejność sortowania</strong> strony, gdzie użytkownik może definiować kryteria sortowania dla prac. Kryteria sortowania kontrolować kolejność, który pracownik wykonuje pracę w. Można dodać dowolną liczbę kryteriów, ile jest potrzebnych.</td>
+<td>Program Microsoft Dynamics 365 for Operations określa rodzaj pracy, która jest przypisana do pracownika, i kolejność, w jakiej pracownik wykonuje pracę. Po wybraniu tej opcji można kliknąć opcję <strong>Praca sterowana przez system</strong> w okienku akcji, aby otworzyć stronę <strong>Kolejność sortowania określona przez system</strong>, na której można ustawić kryteria sortowania dla pracy. Kryteria sortowania określają porządek wykonywania pracy przez pracownika. Można dodać dowolną liczbę kryteriów zależnie od potrzeb.</td>
 </tr>
 <tr class="odd">
 <td>Sterowane przez użytkownika</td>
@@ -230,7 +230,7 @@ Oprócz zdefiniowania elementów to utworzenia pracy magazynu, można ustawić p
 </tr>
 <tr class="even">
 <td>Zweryfikowany użytkownik skierowany</td>
-<td>Pracownik wybiera pracę do wykonania, gdy praca jest skojarzona z większą jednostką, np. ładunkiem lub wysyłką. Pracownik określa kolejności, w jakiej elementy są pobierane w. Jeśli wybierzesz tę opcję, wymagane są następujące pola:
+<td>Pracownik wybiera pracę do wykonania, gdy praca jest skojarzona z większą jednostką, np. ładunkiem lub wysyłką. Pracownik określa kolejność, w jakiej towary są pobierane. Jeśli wybierzesz tę opcję, wymagane są następujące pola:
 <ul>
 <li><strong>Pole zweryfikowanego użytkownika skierowanego</strong> — wybierz pole, które pracownik musi przeskanować w celu pogrupowania pracy.</li>
 <li><strong>Etykieta zweryfikowanego użytkownika skierowanego</strong> — tekst informujący pracownika o tym, co należy zeskanować, gdy praca odbierania jest pogrupowana przez system.</li>
@@ -271,7 +271,7 @@ W poniższej tabeli opisano te opcje.
 </tr>
 <tr class="even">
 <td>Kotwiczenie</td>
-<td>Zaznaczenie tej opcji pozwala pracownikom określić lokalizację, która zastąpi sugerowaną lokalizację pośrednią lub załadunku. Cała pozostała praca odkładania jest kierowana do nowej lokalizacji. Na przykład to jest przydatne, gdy pracownik ma odłożyć towary dla zamówienia 1 w lokalizacji pośredniej przy Doku 1, ale nie może, bo poprzedni ładunek nie wyszedł jeszcze z lokalizacji. Zamiast czekać na 1 stacji dokującej tymczasowej lokalizacji stają się dostępne, pracownik może zdecyduje się użyć tymczasowej lokalizacji dla doku 2. W takim przypadku pracownik zastępuje sugerowanej lokalizacji tymczasowej. Lokalizacja odłożenia dla wszystkich pozostałych towarów w zleceniu jest aktualizowana na lokalizację pośrednią przy Doku 2. W przypadku wybrania tej opcji należy ustawić pole <strong>Kotwicz wg</strong>.</td>
+<td>Zaznaczenie tej opcji pozwala pracownikom określić lokalizację, która zastąpi sugerowaną lokalizację pośrednią lub załadunku. Cała pozostała praca odkładania jest kierowana do nowej lokalizacji. Na przykład to jest przydatne, gdy pracownik ma odłożyć towary dla zamówienia 1 w lokalizacji pośredniej przy Doku 1, ale nie może, bo poprzedni ładunek nie wyszedł jeszcze z lokalizacji. Zamiast czekać na to, aż lokalizacja pośrednia przy Doku 1 będzie dostępna, pracownik decyduje się użyć lokalizacji pośredniej przy Doku 2. W tym przypadku pracownik zastępuje sugerowaną lokalizację pośrednią. Lokalizacja odłożenia dla wszystkich pozostałych towarów w zleceniu jest aktualizowana na lokalizację pośrednią przy Doku 2. W przypadku wybrania tej opcji należy ustawić pole <strong>Kotwicz wg</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Kotwicz wg</td>
@@ -380,7 +380,7 @@ W poniższej tabeli opisano te opcje.
 </tr>
 <tr class="odd">
 <td>Kod szablonu pracy</td>
-<td>Wybierz szablon pracy, który utworzy pracę dla procesu. Na przykład jeśli otrzymasz towaru dla zamówienia zakupu, Odłożenie pracy zostanie wygenerowany na podstawie szablonu pracy. Jeśli nie zaznaczysz szablon pracy, Microsoft Dynamics 365 dla operacji przypisuje szablon, na podstawie kryteriów kwerendy. Aby uzyskać więcej informacji dotyczących szablonów pracy, zobacz <a href="control-warehouse-location-directives.md">Kontrolowanie pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji</a>.</td>
+<td>Wybierz szablon pracy, który utworzy pracę dla procesu. Na przykład jeśli otrzymujesz towar dla zamówienia zakupu, praca odłożenia zostanie wygenerowana na podstawie szablonu pracy. Jeśli w tym polu nie wybierzesz szablonu pracy, program Microsoft Dynamics 365 for Operations przypisze szablon na podstawie kryteriów zapytania. Aby uzyskać więcej informacji dotyczących szablonów pracy, zobacz <a href="control-warehouse-location-directives.md">Kontrolowanie pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -409,8 +409,8 @@ W poniższej tabeli przedstawiono różne typy pracy, z którymi można używać
 
 [Ustawienia wyświetlania urządzenia przenośnego używanego w magazynie](change-warehouse-mobile-device-displays.md)
 
-[Konfigurowanie elementu menu urządzenia przenośnego do zakończenia pracy tego typu zamówienia zakupu (Przewodnik zadania)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
+[Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy typu Zamówienie zakupu (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
-[Konfigurowanie elementu menu urządzenia przenośnego do rejestrować przyjętych towarów (Przewodnik zadania)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Konfigurowanie elementu menu urządzenia przenośnego do rejestrowania towarów przyjętych (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
 
 

@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-orders-for-a-project"></a>Zamówienia zakupu dla projektu
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano różne metody, których można używać do tworzenia zamówień zakupu dla projektu. Wybrana metoda zależy od przeznaczenia zamówienia zakupu oraz od czasu zużywania kupionych towarów i zapisywania ich w ciężar projektu.
 
-W usłudze Microsoft Dynamics 365 dla operacji wiele metod można użyć do tworzenia zamówienia zakupu dla projektu. Wybrana metoda zależy od przeznaczenia zamówienia zakupu, czasu zużywania kupionych towarów i oraz momentu zapisania kupionych towarów w ciężar projektu.
+W programie Microsoft Dynamics 365 for Operations można używać wielu metod tworzenia zamówień zakupu dla projektu. Wybrana metoda zależy od przeznaczenia zamówienia zakupu, czasu zużywania kupionych towarów i oraz momentu zapisania kupionych towarów w ciężar projektu.
 
 ### <a name="methods-for-creating-a-purchase-order"></a>Metody tworzenia zamówienia zakupu
 
@@ -71,6 +74,8 @@ Można użyć jednej z następujących metod w celu utworzenia zamówienia zakup
 </table>
 
 > [!NOTE] 
-> Podczas aktualizacji faktury dostawcy lub dokumentu dostawy, zostaniesz poproszony o aktualizacji dokumentu dostawy na zapotrzebowania na towar.
+> W przypadku aktualizacji faktury od dostawcy lub dokumentu dostawy wyświetlany jest monit o aktualizację dokumentu dostawy w zapotrzebowaniu na towar.
+
+
 
 

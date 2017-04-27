@@ -27,14 +27,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-collaboration-with-customers"></a>Współpraca dostawców z odbiorcami
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym temacie opisano używanie portalu współpracy z dostawcami w programie Dynamics 365 for Operations do pracy z zamówieniami zakupu i monitorowania zapasów konsygnacyjnych.
 
-W tym temacie opisano używanie portalu współpracy z dostawcami do zarządzania współpracą z odbiorcami w programie Microsoft Dynamics 365 for Operations. Zawiera ona informacje dotyczące jak monitorować oraz reagować na zamówienia zakupu i jak monitorowanie partii zapasów. Użytkownik może również używać dostawcy współpracy do pracy z faktur. Aby uzyskać więcej informacji, zobacz [fakturowania obszar roboczy współpracy dostawcy](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
+W tym temacie opisano używanie portalu współpracy z dostawcami do zarządzania współpracą z odbiorcami w programie Microsoft Dynamics 365 for Operations. Są tu informacje dotyczące sposobów monitorowania i odpowiadania na zamówienia zakupu oraz monitorowanie zapasów konsygnacyjnych. Można również używać portalu współpracy z dostawcami do pracy z fakturami. Aby uzyskać więcej informacji, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
 
 ## <a name="working-with-purchase-orders"></a>Praca z zamówieniami zakupu
 Obszar roboczy **Potwierdzenie zamówienia zakupu** pozwala odpowiadać na zamówienia zakupu wysłane Ci do przeglądu. Umożliwia także wyświetlanie informacji o zamówieniach oczekujących na interwencję odbiorcy oraz zamówień zakupu, które zostały potwierdzone, ale są nadal otwarte. W obszarze roboczym **Potwierdzenie zamówienia zakupu** istnieją trzy listy:
 
--   **Zamówień zakupu dla przeglądu** -na tej liście pokazano organizacji producentów, które zostały wysłane do Ciebie i oczekują na odpowiedź od użytkownika. Po udzieleniu odpowiedzi PO zniknie z listy. Jeśli odbiorca wyśle Ci nową wersję zamówienia zakupu, zanim udzielisz odpowiedzi na poprzednią, zobaczysz tylko najnowszą wersję.
+-   **Zamówienia zakupu do przeglądu** — Na tej liście znajdują się zamówienia sprzedaży, które zostały Ci wysłane i oczekują na Twoją odpowiedź. Po udzieleniu odpowiedzi zamówienia są usuwane z listy. Jeśli odbiorca wyśle Ci nową wersję zamówienia zakupu, zanim udzielisz odpowiedzi na poprzednią, zobaczysz tylko najnowszą wersję.
 -   **Oczekiwanie na akcję odbiorcy** — Ta lista zawiera zamówienia sprzedaży, na które jest już Twoja odpowiedź, ale nie zostały one jeszcze potwierdzone przez odbiorcę. Jeśli zaakceptujesz zamówienie zakupu, możesz je monitorować na tej liście, dopóki jego stan nie zmieni się na **Potwierdzone**. Jeśli zamówienie zakupu zostało przez Ciebie odrzucone lub zaakceptowane ze zmianami, możesz je monitorować w tym miejscu, dopóki klient nie wyśle nowej wersji.
 -   **Otwarte potwierdzone zamówienia zakupu** — Ta lista zawiera wszystkie zamówienia zakupu dla swojego klienta, które znajdują się w stanie **Potwierdzone**. Kiedy produkty lub usługi zostaną całkowicie przyjęte względem zamówienia zakupu, zamówienia jest usuwane z listy.
 
@@ -47,7 +50,7 @@ Poniższa lista zawiera cztery strony, których można używać do pracy z zamó
 
 ### <a name="responding-to-purchase-orders"></a>Odpowiadanie na zamówienia zakupu
 
-Zamówień zakupu, które odbiorca wysłał do przeglądania są widoczne w **potwierdzenia zamówienia zakupu** obszaru roboczego, a **zamówień zakupu dla przeglądu** strony. Po otwarciu zamówienia zakupu, można go zaakceptować, odrzucić lub Zatwierdź zmiany. Mogą istnieć załączniki w nagłówku zamówienia zakupu lub w poszczególnych wierszach. Możesz również dołączyć informacje do swojej odpowiedzi w nagłówku zamówienia zakupu lub w poszczególnych wierszach. Na przykład możesz zasugerować użycie towaru zastępczego w jednym z wierszy. Możesz wyświetlić podgląd zamówienia zakupu i wydrukować je jako plik PDF za pomocą opcji **Podgląd/drukuj**. Za pomocą akcji **Wyświetl wymiary** akcji możesz ukryć lub pokazać następujące kolumny wymiarów: Oddział, Magazyn, Kolor, Rozmiar, Styl i Konfiguracja. Jeśli używasz **Zaakceptuj zmiany** opcji, można zaakceptować lub odrzucić pojedynczych wierszy. Do wierszy można również wprowadzić następujące zmiany:
+Zamówienia zakupu wysłane Ci przez odbiorcę do przeglądu są widoczne w obszarze roboczym **Potwierdzenie zamówienia zakupu** i na stronie **Zamówienia zakupu do przeglądu**. Po otwarciu zamówienia zakupu można je zaakceptować, odrzucić lub zaakceptować ze zmianami. Mogą istnieć załączniki w nagłówku zamówienia zakupu lub w poszczególnych wierszach. Możesz również dołączyć informacje do swojej odpowiedzi w nagłówku zamówienia zakupu lub w poszczególnych wierszach. Na przykład możesz zasugerować użycie towaru zastępczego w jednym z wierszy. Możesz wyświetlić podgląd zamówienia zakupu i wydrukować je jako plik PDF za pomocą opcji **Podgląd/drukuj**. Za pomocą akcji **Wyświetl wymiary** akcji możesz ukryć lub pokazać następujące kolumny wymiarów: Oddział, Magazyn, Kolor, Rozmiar, Styl i Konfiguracja. Jeśli użyjesz opcji **Zaakceptuj ze zmianami**, możesz zaakceptować lub odrzucić poszczególne wiersze. W wierszach można także wprowadzać następujące zmiany:
 
 -   Zmiana dat lub ilości. Jeśli chcesz zaktualizować potwierdzoną datę dostawy we wszystkich wierszach, użyj opcji **Aktualizuj datę dostawy** w nagłówku zamówienia zakupu.
 -   Podział wierszy dla różnych dat dostawy lub ilości.
@@ -58,7 +61,7 @@ Nie można zmienić informacji o cenach ani opłat, ale za pomocą notatek możn
 ## <a name="monitoring-consignment-inventory"></a>Monitorowanie zapasów konsygnacyjnych
 Jeśli używasz zapasów konsygnacyjnych, możesz w interfejsie współpracy z dostawcami wyświetlać informacje na następujących stronach:
 
--   **Zużywa partii zapasów zamówień zakupu** -zamówień zakupu dla partii zapasów są generowane, gdy klient przejmuje na własność zapasów. Te zamówienia zakupu konsygnacyjnego są wyświetlane tylko na stronie **Zamówienia zakupu zużywające zapasy konsygnacyjne**. Nie są one umieszczane na stronie **Wszystkie potwierdzone zamówienia zakupu**.
+-   **Zamówienia zakupu zużywające zapasy konsygnacyjne** — Zamówienia zakupu dla zapasów konsygnacyjnych są generowane, gdy odbiorca przejmuje własność zapasów. Te zamówienia zakupu konsygnacyjnego są wyświetlane tylko na stronie **Zamówienia zakupu zużywające zapasy konsygnacyjne**. Nie są one umieszczane na stronie **Wszystkie potwierdzone zamówienia zakupu**.
 -   **Produkty odebrane z zapasów konsygnacyjnych** — Na tej stronie znajduje się lista wszystkich transakcji, w których własność produktów została przeniesiona na firmę zużywającą zapasy. Możesz używać tych informacji do fakturowania odbiorcy.
 -   **Dostępne zapasy konsygnacyjne** — Na tej stronie są pokazane dostępne zapasy konsygnacyjne będące własnością Twojej firmy, które znajdują się na stanie w magazynie odbiorcy.
 
@@ -67,5 +70,7 @@ Jeśli używasz zapasów konsygnacyjnych, możesz w interfejsie współpracy z d
 --------
 
 [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md)
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Opcje Cała kwota i Obliczanie interwału dla kodów podatku
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano opcje dostępne w polu Metoda obliczania w ustawieniach kodów podatków oraz wyjaśniono sposób obliczania podatku dla interwałów kwot i całych kwot.
 
 można skonfigurować kod podatku, który ma być obliczany na podstawie jednej całej kwoty lub kwoty interwału. Na stronie Kody podatków użyj pola Metoda obliczania na karcie skróconej Obliczanie, aby wybrać, jak ma być obliczany kod podatku.
@@ -56,10 +59,10 @@ Podatek jest obliczany według pełnej stawki opodatkowania.
 
 | Kwota opodatkowana (cena) | Obliczenie    | Podatek |
 |------------------------|----------------|-----------|
-| 35,00                  | 35.00 \* 0.30  | 10,50 zł     |
-| 50,00                  | 50.00 \* 0.30  | 15,00     |
-| 85,00                  | 85.00 \* 0.20  | 17,00     |
-| 305,00                 | 305.00 \* 0.10 | 30,50     |
+| 35,00                  | 35,00 \* 0,30  | 10,50 zł     |
+| 50,00                  | 50,00 \* 0,30  | 15,00     |
+| 85,00                  | 85,00 \* 0,20  | 17,00     |
+| 305,00                 | 305,00 \* 0,10 | 30,50     |
 
 ## <a name="example-interval-method-of-calculation"></a> Przykład: Metoda obliczania wg interwału
 Na stronie Wartości stawki podatku są skonfigurowane przy użyciu następujących interwałów:
@@ -75,14 +78,16 @@ Podatek jest sumą kwot podatku obliczonych dla poszczególnych interwałów kwo
 
 | Kwota opodatkowana (cena) | Obliczenie                                                               | Podatek |
 |------------------------|---------------------------------------------------------------------------|-----------|
-| 35,00                  | 35.00 \* 0.30                                                             | 10,50 zł     |
-| 50,00                  | 50.00 \* 0.30                                                             | 15,00     |
-| 85,00                  | (50.00 \* 0.30 = 15.00) + (35.00 \* 0.20 = 7.00)                          | 22,00     |
-| 305,00                 | (50.00 \* 0.30 = 15.00) + (50.00 \* 0.20 = 10.00) + (205 \* 0.10 = 20.50) | 45,50     |
+| 35,00                  | 35,00 \* 0,30                                                             | 10,50 zł     |
+| 50,00                  | 50,00 \* 0,30                                                             | 15,00     |
+| 85,00                  | (50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)                          | 22,00     |
+| 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45,50     |
 
  
 
-Aby uzyskać więcej informacji, zobacz [określania stawek podatku na podstawie Podstawa i pola Metoda obliczania](marginal-base-field.md).
+Aby uzyskać więcej informacji, zobacz [Ustalanie stawki podatku na podstawie pól Podstawa limitu i Metoda obliczania](marginal-base-field.md).
+
+
 
 
 

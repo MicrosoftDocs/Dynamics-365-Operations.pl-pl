@@ -1,6 +1,6 @@
 ---
 title: "Zwroty sprzedaży"
-description: "Ten temat zawiera informacje na temat procesu dla zamówienia zwrotu. Zawiera ona informacje o zwroty i ich wpływ na wyceny i dostępnych ilości zapasów."
+description: "Ten temat zawiera informacje o procesie zamówień zwrotu. Opisuje koncepcję zwrotów od odbiorców oraz ich wpływ na wycenę i ilości dostępnych zapasów."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,286 +26,291 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-returns"></a>Zwroty sprzedaży
 
-Ten temat zawiera informacje na temat procesu dla zamówienia zwrotu. Zawiera ona informacje o zwroty i ich wpływ na wyceny i dostępnych ilości zapasów.
+[!include[banner](../includes/banner.md)]
 
-Klienci może zwracać elementy z różnych powodów. Na przykład element może być uszkodzony lub nie może spełniać oczekiwania klientów. Gdy klient wysyła żądanie zwrotu, rozpoczyna się proces zwrotu. Po odebraniu żądania klienta zamówienie zwrotu jest tworzony w programie Microsoft Dynamics 365 dla operacji.
+
+Ten temat zawiera informacje o procesie zamówień zwrotu. Opisuje koncepcję zwrotów od odbiorców oraz ich wpływ na wycenę i ilości dostępnych zapasów.
+
+Odbiorcy mogą zwracać towary z różnych powodów. Na przykład towar może być uszkodzony lub może nie spełniać oczekiwań odbiorcy. Proces zwrotu rozpoczyna się, gdy odbiorca wystawia wniosek o zwrot towaru. Po odebraniu wniosku od odbiorcy w programie Microsoft Dynamics 365 for Operations jest tworzone zamówienie zwrotu.
 
 ## <a name="return-order-process"></a>Proces zamówienia zwrotu
-Poniższa ilustracja przedstawia procesu zamówienia zwrotu.  
+Na poniższej ilustracji przedstawiono przegląd procesu zamówienia zwrotu.  
 
 [![salesreturns01](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
 
-Istnieją dwa typy procesu zamówienia zwrotu: fizyczne wróć i tylko kredytowe.
+Istnieją dwa rodzaje procesu zamówienia zwrotu: zwrot fizyczny i tylko uznanie (kredyt).
 
--   **Fizyczny zwrot** – zamówienie zwrotu autoryzuje fizyczny zwrot produktów.
--   **Tylko kredytowe** – zamówienie zwrotu autoryzuje kredyt klienta, ale nie wymaga, aby klient fizycznie zwrotu produktów.
+-   **Fizyczny zwrot** — Zamówienie zwrotu autoryzuje fizyczny zwrot produktów.
+-   **Tylko kredyt** — Zamówienie zwrotu autoryzuje uznanie konta odbiorcy (kredyt dla odbiorcy), ale nie wymaga, aby odbiorcy fizycznie zwrócić produkt.
 
-### <a name="physical-return-order-process"></a>Procesu fizycznego zamówienia zwrotu
+### <a name="physical-return-order-process"></a>Proces zamówienia zwrotu fizycznego
 
-1.  **Utwórz zamówienie zwrotu.** Formalnie dokumentu autoryzacji dla klienta, aby zwrócić wszelkie produkty wadliwe lub niechciane. Zamówienie zwrotu nie wymaga, że firma zaakceptować zwróconych produktów lub udzielenia kredytu dla nabywcy. W przypadku przyjęcia zwrotu, można autoryzować wymienianego zapasu do wysłania, zanim wadliwych przesyłka została zwrócona.
-2.  **Przybycie w magazynie dla kontroli.** Ukończ wstępnej kontroli i sprawdzania poprawności dokumentu zamówienia zwrotu. Zamówienie zwrotu obsługuje również kwarantanny zwróconych towarów dodatkowych inspekcji i kontroli jakości.
-3.  **Określić dyspozycji.** Zakończyć proces kontroli i określić, co należy zrobić z zwróconych produktów. W ramach tego etapu zdecydować, czy użytkownik będzie Kredyt nabywcy, odrzucić zwrotu produktu lub przyjęcia zwrotu produktu, złom produktu i następnie wyśle produkt do klienta.
-4.  **Generowanie dokumentu dostawy.** Generowanie dokumentu dostawy i zatwierdź decyzji dyspozycji, które wprowadzono w kroku 3. Można zakończyć procesów logistycznych.
-5.  **Generowanie faktury.** Zamknij zamówienie zwrotu.
+1.  **Tworzenie zamówienia zwrotu.** Formalnie udokumentowanie pozwolenia dla odbiorcy, aby zwrócił wszelkie wadliwe lub niechciane produkty. Zamówienie zwrotu nie wymaga, aby firma zaakceptowała zwrócony produkt lub uznała konto odbiorcy określoną kwotą. W przypadku przyjęcia zwrotu można autoryzować wysłanie towaru zastępczego jeszcze przed otrzymaniem zwróconego wadliwego towaru.
+2.  **Przybycie do magazynu w celu kontroli.** Przeprowadzenie wstępnej kontroli i sprawdzenie poprawności względem dokumentu zamówienia zwrotu. Zamówienie zwrotu obsługuje również funkcję kwarantanny zwróconych towarów w celu wykonania dodatkowych inspekcji i kontroli jakości.
+3.  **Ustalenie dyspozycji.** Finalizacja procesu kontroli i zdecydowanie, co należy zrobić ze zwróconymi produktami. W ramach tego etapu zdecyduj, czy uznasz konto odbiorcy określoną kwotą, odrzucisz zwrot produktu czy też przyjmiesz zwrot produktu, zezłomujesz produkt, a odbiorcy wyślesz produkt zastępczy.
+4.  **Generowanie dokumentu dostawy.** Wygenerowanie dokumentu dostawy i zatwierdzenie decyzji o dyspozycji podjętej w kroku 3. Finalizacja procesów logistycznych.
+5.  **Generowanie faktury.** Zamykanie zamówienia zwrotu.
 
-### <a name="credit-only-process"></a>Przetwarzaj, tylko kredytowe
+### <a name="credit-only-process"></a>Proces Tylko kredyt
 
-1.  **Utwórz zamówienie zwrotu.** Formalnie dokumentu autoryzacji dla klienta, aby otrzymać kredyt bez powrotu produkty wadliwe lub niechciane. **Kredytu tylko** kod dyspozycji autoryzuje decyzji do odbiorcy bez fizycznego powrotu po stronie kredytowej.
-2.  **Generowanie faktury.** Generowanie faktury korygującej, a następnie Zamknij zamówienie zwrotu.
+1.  **Tworzenie zamówienia zwrotu.** Formalnie udokumentowanie pozwolenia, aby odbiorca otrzymał kredyt (jego konto zostało uznane określoną kwotą) bez zwracania wadliwych lub niechcianych produktów. Kod dyspozycji **Tylko kredyt** autoryzuje decyzję uznania konta odbiorcy bez fizycznego zwracania produktów.
+2.  **Generowanie faktury.** Generowanie faktury korygującej, a następnie zamknięcie zamówienia zwrotu.
 
-## <a name="return-material-authorization"></a>Autoryzacja
-Przetwarzanie zwrotu produkt (RMA) opiera się na funkcjonalność zamówienia sprzedaży. RMA jest zarejestrowany jako zamówienie zwrotu, która jest tworzona jako zamówienie sprzedaży i może mieć innego zamówienia sprzedaży skojarzone z nim o nazwie zamówienia wymiany. Zarówno zamówień sprzedaży powiązać pochodzących z numeru autoryzacji zwrotu.
+## <a name="return-material-authorization"></a>Autoryzacja zwrotu
+Przetwarzanie autoryzacji zwrotu (RMA) opiera się na funkcjonalności zamówienia sprzedaży. RMA jest rejestrowana jako zamówienie zwrotu, które zostało utworzona jako zamówienie sprzedaży, i może mieć powiązane inne zamówienie sprzedaży nazywane zamówieniem wymiany. Oba zamówienia sprzedaży są powiązane z numerem źródłowego RMA.
 
--   **Zamówienie zwrotu** — Aby zarejestrować RMA, Utwórz zamówienie zwrotu jest zamówienie sprzedaży, która ma przypisany typ, **zwrócił zamówienia.** Wszelkie zmiany, które wprowadzasz do informacji autoryzacji zwrotu jest automatycznie aktualizowana w zamówieniu sprzedaży. Do czasu zamówienia zwrotu **Otwórz**, nie pojawią się na liście zamówień sprzedaży. Użyj RMA do obsługi przybycia i przyjęcia zwróconych towarów, jak również do autoryzowania kredytu tylko akcja dyspozycji (zobacz sekcja **kodów dyspozycji i akcje dyspozycji**). Wszystkie procesy uzupełniającego muszą być obsługiwane w zamówieniu sprzedaży.
--   **Zamówienie wymiany** — Kiedy zamówienie zastępcze muszą być wysłane do klienta, RMA może zawierać drugiego skojarzonego zamówienia sprzedaży. Można ręcznie utworzyć zamówienia wymiany dla RMA umożliwia natychmiastową wysyłkę. Alternatywnie zamówienie zastępcze mogą być tworzone automatycznie, po ukończeniu przyjazdu, inspekcji i przyjęcia dla pozycji RMA zawierający kod dyspozycji, który wskazuje wymiany. Zamówienie wymiany ma taką samą funkcjonalność, który jest skojarzony z zamówieniem sprzedaży. Na przykład służy on do konfigurowania niestandardowych produktu jako element zastępczy, utworzyć zlecenie produkcyjne do naprawy zwróconego towaru, tworzenie zamówienia zakupu dostawy bezpośredniej do wysyłania zastąpienia od dostawcy lub obsługi innych celów.
+-   **Zamówienie zwrotu** — Aby zarejestrować RMA, tworzysz zamówienie zwrotu, które jest zamówieniem sprzedaży z przypisanym typem **Zwrot towaru**. Wszelkie zmiany wprowadzane w informacjach RMA są automatycznie odzwierciedlane w zamówieniu sprzedaży. Dopóki zamówienie zwrotu nie uzyska stanu **Otwarte**, nie pojawi się na liście zamówień sprzedaży. RMA jest używane do obsługi przybycia i przyjęcia zwróconych towarów, jak również do autoryzowania czynności dyspozycji Tylko kredyt (zobacz sekcja **Kody dyspozycji i akcje dyspozycji**). Wszystkie pozostałe kolejne procesy muszą być obsługiwane w zamówieniu sprzedaży.
+-   **Zamówienie wymiany** — Kiedy do odbiorcy trzeba wysłać zamówienie wymiany, RMA może zawierać drugie skojarzone zamówienie sprzedaży. Można ręcznie utworzyć zamówienie wymiany dla RMA, aby umożliwia natychmiastową wysyłkę. Alternatywnie zamówienie wymiany może być tworzone automatycznie po sfinalizowaniu przybycia, inspekcji i przyjęcia dla pozycji RMA zawierającej kod dyspozycji wskazujący wymianę. Zamówienie wymiany ma taką samą funkcjonalność, jak skojarzona z zamówieniem sprzedaży. Na przykład można go użyć do skonfigurowania niestandardowego produktu jako towaru zastępczego, utworzenia zlecenia produkcyjnego służącego naprawie zwróconego towaru, utworzenia zamówienia zakupu dostawy bezpośredniej w celu wysyłania produktu zastępczego od dostawcy itd.
 
 ## <a name="create-a-return-order"></a>Tworzenie zamówienia zwrotu
-Kiedy klient skontaktuje się danej organizacji, aby zwrócić produkt wadliwy lub niechciane i/lub ma być zapisana, rozpoczyna się proces zamówienia zwrotu. Po organizacji akceptuje zwrot, zwrot jest udokumentowane przez zamówienie zwrotu. To zamówienie zwrotu staje się centralnym punktem wewnętrzne przetwarzanie zwróconego produktu. Poniżej przedstawiono procedurę tworzenia zamówienia zwrotu.  
+Proces zamówienia zwrotu rozpoczyna się, kiedy odbiorca kontaktuje się z organizacją, aby zwrócić wadliwy lub niechciany produkt i/lub otrzymać kredyt (uznanie). Gdy organizacja zaakceptuje zwrot, jest on dokumentowany za pomocą zamówienia zwrotu. To zamówienie zwrotu staje się centralnym punktem wewnętrznego przetwarzania dotyczącego zwróconego produktu. Na ilustracji poniżej przedstawiono procedurę tworzenia zamówienia zwrotu.  
 
 [![Procedura tworzenia zamówienia zwrotu](./media/salesreturn02.png)](./media/salesreturn02.png)
 
 ### <a name="create-a-return-order-header"></a>Tworzenie nagłówka zamówienia zwrotu
 
-Po utworzeniu zamówienia zwrotu musi zostać dołączone informacje w poniższej tabeli.
+Podczas tworzenia zamówienia zwrotu należy podać informacje z poniższej tabeli.
 
 | Pole              | opis                                              | Komentarze                                                                                                                                                                                                                                                                                                                                        |
 |--------------------|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Konto odbiorcy   | Odwołanie do tabeli Klienci                       | Należy podać istniejące konto odbiorcy.                                                                                                                                                                                                                                                                                                  |
-| Adres dostawy   | Adres, który element jest zwracany do                 | Domyślnie jest używana w adresie organizacji. Po zaznaczeniu określonego magazynu w nagłówku adresu dostawy jest zmieniany na adres dostawy z magazynu. Adres ten można zmienić na **szczegóły zamówienia zwrotu** strony.                                                                                                  |
-| Oddział/magazyn     | Witryny lub magazyn, który odbiera zwracany produkt | Adres dostawy dla zamówienia zwrotu jest określana na podstawie adresu dostawy z witryny lub z magazynu.                                                                                                                                                                                                                                 |
-| Numer autoryzacji zwrotu         | Identyfikator przypisany do zamówienia zwrotu              | Numer autoryzacji zwrotu jest używany jako klucza alternatywnego w całym procesie zamówienia zwrotu. Numer autoryzacji zwrotu, który jest przypisywany opiera się na sekwencji numerów RMA jest ustawiony na **rozrachunków z odbiorcami Parametry** strony.                                                                                                                              |
-| Termin realizacji           | Ostatnia data może być zwrócony element               | Wartość domyślna jest obliczana jako data bieżąca plus okres ważności. Na przykład, jeśli znak powrotu jest prawidłowy tylko 90 dni od daty, gdy tworzone jest zamówienie zwrotu i zamówienie zwrotu zostało utworzone w dniu 1 maja, wartość w polu jest **30 lipca**. Okres ważności jest ustawiona na **rozrachunków z odbiorcami Parametry** strony. |
-| Kod przyczyny zwrotu | Przyczyna zwrotu produktu przez klienta          | Kod przyczyny jest zaznaczone na liście kodów przyczyny zdefiniowane przez użytkownika. Pole to można aktualizować w dowolnym momencie.                                                                                                                                                                                                                                    |
+| Konto odbiorcy   | Odwołanie tabeli odbiorców                       | Należy podać istniejące konto odbiorcy.                                                                                                                                                                                                                                                                                                  |
+| Adres dostawy   | Adres, na który jest zwracany towar                 | Domyślnie jest używany adres organizacji. Jeśli w nagłówku zostanie zaznaczony określony magazyn, adres dostawy zmienia się na adres dostawy magazynu. Adres ten można zmienić na stronie **Szczegóły zamówienia zwrotu**.                                                                                                  |
+| Oddział/magazyn     | Oddział lub magazyn, który przyjmuje zwracany produkt | Adres dostawy dla zamówienia zwrotu jest określany na podstawie adresu dostawy oddziału lub magazynu.                                                                                                                                                                                                                                 |
+| Numer autoryzacji zwrotu         | Identyfikator przypisany do zamówienia zwrotu              | Numer autoryzacji zwrotu jest używany jako klucz alternatywny w całym procesie zamówienia zwrotu. Przypisywany numer RMA bazuje na numeracji RMA skonfigurowanej na stronie **Parametry modułu rozrachunków z odbiorcami**.                                                                                                                              |
+| Termin realizacji           | Ostatni dzień, do kiedy można zwrócić towar               | Wartość domyślna jest obliczana jako bieżąca data plus okres ważności. Na przykład jeśli zwrot jest ważny (dopuszczalny) tylko przed 90 dni od daty utworzenia zamówienia zwrotu, a zamówienie zwrotu utworzono w dniu 1 maja, wartością w tym polu jest **30 lipca**. Okres ważności jest ustawiany na stronie **Parametry modułu rozrachunków z odbiorcami**. |
+| Kod przyczyny zwrotu | Przyczyna zwrotu produktu podawana przez odbiorcę          | Kod przyczyny jest wybierany z listy kodów przyczyny zdefiniowanych przez użytkownika. Pole to można zaktualizować w dowolnym momencie.                                                                                                                                                                                                                                    |
 
-### <a name="create-return-order-lines"></a>Utwórz wiersze zamówienia zwrotu
+### <a name="create-return-order-lines"></a>Tworzenie wierszy zamówienia zwrotu
 
-Po zakończeniu nagłówku zwrotu można utworzyć wiersze zwrotu przy użyciu jednej z następujących metod:
+Po wypełnieniu nagłówka zwrotu można utworzyć wiersze zwrotu przy użyciu jednej z następujących metod:
 
--   Ręcznie wprowadź szczegóły elementu, ilość i innych informacji dla każdego wiersza zwrotu.
--   Utwórz wiersz zwrotu za pomocą **znajdowanie zamówienia sprzedaży** funkcji. Firma Microsoft zaleca, aby użyć tej funkcji podczas tworzenia zamówienia zwrotu. **Znajdowanie zamówienia sprzedaży** funkcja ustanawia odwołanie z wiersza zwrotu do wiersza zafakturowanego zamówienia sprzedaży i pobiera wiersza szczegółów, takich jak kod towaru, ilości, ceny, rabatu i wartości kosztów z wiersza sprzedaży. Odwołanie pomaga zagwarantować, że gdy produkt jest zwracany do firmy, to jest o wartości sam koszt jednostkowy to, że została sprzedana. Odwołanie sprawdza też, że zwrotu zamówienia nie są tworzone dla ilości, która przekracza ilość, która została sprzedana na fakturze.
+-   Ręczne wprowadzenie szczegółów towaru, ilości i innych informacji dla każdego wiersza zwrotu.
+-   Utworzenie wiersza zwrotu za pomocą funkcji **Znajdź zamówienie sprzedaży**. Zalecamy używanie tej funkcji podczas tworzenia zamówienia zwrotu. Funkcja **Znajdź zamówienie sprzedaży** ustanawia odwołanie od wiersza zwrotu do wiersza zafakturowanego zamówienia sprzedaży, a następnie pobiera szczegóły wiersza, takie jak numer towaru, ilość, cena, rabat i wartości kosztów, z wiersza sprzedaży. Odwołanie pomaga zagwarantować, że podczas zwracania produktu do firmy jest on wyceniany według tego samego kosztu jednostkowego, jak przy sprzedaży. Odwołanie sprawdza też, czy zamówienia zwrotu nie są tworzone dla ilości przekraczającej ilość sprzedaną na fakturze.
 
-**Uwaga:** wiersze zwrotu, które mają odniesienie do zamówienia sprzedaży są obsługiwane jako korekty lub zwiększenia sprzedaży. Aby uzyskać więcej informacji zobacz sekcję "Księgowanie w księdze", w dalszej części tego tematu.
+**Uwaga:** Wiersze zwrotu zawierające odwołania do zamówienia sprzedaży są obsługiwane jako korekty (cofnięcia) sprzedaży. Aby uzyskać więcej informacji, zobacz sekcję „Księgowanie w księdze" w dalszej części tego tematu.
 
 ### <a name="charges"></a>Opłaty
 
-Prowizje i opłaty mogą być dodawane do zamówienia zwrotu za pośrednictwem jednego lub kilku z następujących metod:
+Prowizje i opłaty można dodawać do zamówienia zwrotu za pomocą jednej lub kilku z następujących metod:
 
--   Opłaty dodatkowe można ręcznie dodać do nagłówka zamówienia zwrotu i/lub wiersza zamówienia zwrotu.
--   Opłaty mogą być automatycznie dodawane do nagłówka zamówienia zwrotu jako funkcja kodu przyczyny zwrotu.
--   Opłaty mogą być automatycznie dodawane do wiersza zamówienia zwrotu, na podstawie kodu dyspozycji linii.
+-   Opłaty można dodać ręcznie do nagłówka zamówienia zwrotu i/lub wiersza zamówienia zwrotu.
+-   Opłaty mogą być dodawane automatycznie do nagłówka zamówienia zwrotu jako funkcja kodu przyczyny zwrotu.
+-   Opłaty mogą być dodawane automatycznie do wiersza zamówienia zwrotu na podstawie kodu dyspozycji ustawionego dla wiersza.
 
-Opłaty dodatkowe są automatycznie dodawane po kodu przyczyny zwrotu lub kod dyspozycji jest przypisany do wiersza. Jeśli kod przyczyny zostanie później zmieniona, nie będzie można usunąć istniejący wpis bezpłatnie, ale nowy wpis opłat mogą zostać dodane, oparte na nowy kod przyczyny. Po dodaniu opłaty do wierszy zamówienia zwrotu opłat, które są obliczane jako procent wartości wiersza lub zlecenia ujemnych kiedy wiersza lub wiersza zlecenia jest ujemna, o ile procent również jest liczbą ujemną. Opłaty, która ma wartość ujemną reprezentuje zwrot do odbiorcy.
+Opłaty dodatkowe są dodawane automatycznie po przypisaniu kodu przyczyny zwrotu lub kodu dyspozycji do wiersza. Jeśli kod przyczyny zostanie później zmieniony, istniejący wpis opłaty nie zostanie usunięty, ale może zostać dodany nowy wpis opłaty oparty na nowym kodzie przyczyny. Podczas dodawania opłat do wierszy zamówienia zwrotu opłaty, które są obliczane jako procent wartości wiersza lub zamówienia, stają się ujemne, gdy wiersz lub zamówienie są ujemne, chyba że procent również jest liczbą ujemną. Opłata mająca wartość ujemną reprezentuje kredyt (uznanie) dla odbiorcy.
 
 ### <a name="return-reason-codes"></a>Kody przyczyn zwrotu
 
-Zastosowanie kodów przyczyny do zwrotów, może pomóc ułatwiają analizowanie wzorców zwrotu. Kody przyczyn informują o Dlaczego klient chce przywrócić elementów. Niektóre organizacje mają wiele kodów przyczyn. Tych organizacji zgrupować kody przyczyny do grupy kod przyczyny, aby uzyskać lepszy przegląd i raportowaniu narastająco.
+Stosując kody przyczyn do zwrotów, można ułatwić analizowanie wzorców zwrotów. Kody przyczyn informują o tym, dlaczego odbiorca chce zwrócić towary. Niektóre organizacje mają zdefiniowanych wiele kodów przyczyn. Takie organizacje mogą łączyć kody przyczyn w grupy kodów przyczyn, aby uzyskać lepszy obraz i kumulować sprawozdawczość.
 
 ### <a name="disposition-codes-and-disposition-actions"></a>Kody dyspozycji i akcje dyspozycji
 
-Ważny krok w procesie zamówienia zwrotu jest przypisanie kod dyspozycji do wiersza zamówienia zwrotu jako część rejestracji przyjęcia. Kod dyspozycji określa następujące informacje:
+Ważnym krokiem w procesie zamówienia zwrotu jest przypisanie kodu dyspozycji do wiersza zamówienia zwrotu w ramach rejestracji przybycia. Kod dyspozycji określa następujące informacje:
 
--   **Następstwa finansowe** – powinny zwiększać nabywcy za zwrócone towary i należy dodać wszelkie opłaty dodatkowe do wiersza zamówienia zwrotu?
--   **Dyspozycja zwróconego towaru** – należy element może być dodany do magazynu, powinien on zostać uznane za odpadki lub powinny to być zwrócone do klienta?
--   **Logistyka zwróconego towaru** – przedmiot zastępczy zaległego do odbiorcy?
+-   **Następstwa finansowe** — Czy należy przyznać odbiorcy kredyt (uznać jego konto) za zwrócone towary i czy należy dodać jakiekolwiek opłaty do wiersza zamówienia zwrotu?
+-   **Dysponowanie zwróconym towarem** — Czy towar należy dodać z powrotem do zapasów, zezłomować, czy zwrócić do odbiorcy?
+-   **Logistyka zwróconego towaru** — Czy odbiorcy należy wysłać towar zastępczy?
 
-Oprócz ustalenia, jak towary są unieszkodliwiane, kodów dyspozycji może powodować opłat, które mają być stosowane do wiersza zwrotu. Ich pomocą można również grupować zwraca do analizy statystycznej. Kody dyspozycji są definiowane jako część instalacji zamówień zwrotu. Jednak każdy kod dyspozycji musi odwoływać się jedną z czynności dyspozycji wbudowane. Poniższa tabela zawiera listę kodów dyspozycji wbudowane i ich działania. **Ważne:**, jeśli element nie powinny być zwrócone, ale klient wciąż powinna zostać zaksięgowana, przypisać **kredytu tylko** kod dyspozycji do wiersza zwrotu.
+Oprócz określenia sposobu postępowania ze zwróconym towarem kody dyspozycji mogą powodować dodawanie opłat do wiersza zwrotu. Mogą również służyć do grupowania zwrotów na potrzeby analizy statystycznej. Kody dyspozycji są definiowane w ramach konfigurowania zamówień zwrotu. Jednak każdy kod dyspozycji musi się odwoływać do jednej wbudowanej akcji dyspozycji. Poniższa tabela zawiera wbudowane kody dyspozycji i powiązane z nimi czynności. **Ważne:** Jeśli towar nie powinien być zwracany, ale i tak należy uznać konto odbiorcy określoną kwotą, przypisz do wiersza zwrotu kod dyspozycji **Tylko kredyt**.
 
 <table>
 <thead>
 <tr class="header">
 <th>Kod dyspozycji</th>
 <th>Następstwa finansowe</th>
-<th>Wpływ na logistykę</th>
+<th>Następstwa logistyczne</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Tylko kredytowe</td>
 <td><ul>
-<li>Klient jest po stronie kredytowej cena sprzedaży minus koszty lub opłaty.</li>
-<li>Strata z likwidacji towaru jest księgowany w księdze.</li>
+<li>Konto odbiorcy jest uznawane ceną sprzedaży pomniejszoną o opłaty.</li>
+<li>Strata z tytułu złomowania towaru jest księgowana w księdze.</li>
 </ul></td>
-<td>Element nie powinny być zwrócone. Ta akcja dyspozycji jest używany w następujących przypadkach:
+<td>Towar nie powinien być zwracany. Ta akcja dyspozycji jest używana w następujących przypadkach:
 <ul>
-<li>Istnieje wystarczający zaufanie między stronami.</li>
-<li>Koszty zwrotu towarów wadliwych są wygórowane.</li>
-<li>Elementy nie można zezwolić na powrót do magazynu. Ze względu na inne warunki fizyczny zwrot nie jest wymagany.</li>
+<li>Istnieje wystarczające zaufanie między stronami.</li>
+<li>Koszt zwrotu wadliwych towarów jest bardzo wysoki.</li>
+<li>Towarów nie można ze względów formalnych wprowadzić z powrotem do magazynu. Ze względu na inne okoliczności nie trzeba dokonywać fizycznego zwrotu.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Strona kredytowa</td>
 <td><ul>
-<li>Klient jest po stronie kredytowej cena sprzedaży minus koszty lub opłaty.</li>
-<li>Wartość zapasów jest zwiększany o koszt zwróconego towaru.</li>
+<li>Konto odbiorcy jest uznawane ceną sprzedaży pomniejszoną o opłaty.</li>
+<li>Wartość zapasów jest powiększana o koszt zwróconego towaru.</li>
 </ul></td>
-<td>Element jest zwracany i dodany do magazynu.</td>
+<td>Towar jest zwracany i dodawany z powrotem do zapasów.</td>
 </tr>
 <tr class="odd">
 <td>Zastąp i zaksięguj po stronie kredytowej</td>
 <td><ul>
-<li>Klient jest po stronie kredytowej cena sprzedaży minus koszty lub opłaty.</li>
-<li>Wartość zapasów jest zwiększany o koszt zwróconego towaru.</li>
-<li>Oddzielne zamówienia sprzedaży dla wymiany jest tworzony i jest obsługiwane osobno.</li>
+<li>Konto odbiorcy jest uznawane ceną sprzedaży pomniejszoną o opłaty.</li>
+<li>Wartość zapasów jest powiększana o koszt zwróconego towaru.</li>
+<li>Oddzielne zamówienie sprzedaży na wymianę jest tworzone i obsługiwane osobno.</li>
 </ul></td>
-<td>Element jest zwracany i dodany do magazynu.</td>
+<td>Towar jest zwracany i dodawany z powrotem do zapasów.</td>
 </tr>
 <tr class="even">
 <td>Zastąp i zlikwiduj</td>
 <td><ul>
-<li>Klient jest po stronie kredytowej cena sprzedaży minus koszty lub opłaty.</li>
-<li>Strata z likwidacji towaru jest księgowany w księdze.</li>
-<li>Oddzielne zamówienia sprzedaży dla wymiany jest tworzony i jest obsługiwane osobno.</li>
+<li>Konto odbiorcy jest uznawane ceną sprzedaży pomniejszoną o opłaty.</li>
+<li>Strata z tytułu złomowania towaru jest księgowana w księdze.</li>
+<li>Oddzielne zamówienie sprzedaży na wymianę jest tworzone i obsługiwane osobno.</li>
 </ul></td>
-<td>Element jest zwracany i uznane za odpadki.</td>
+<td>Towar jest zwracany i złomowany.</td>
 </tr>
 <tr class="odd">
 <td>Zwrot do odbiorcy</td>
-<td>Brak, z wyjątkiem jakichkolwiek kosztów i opłat.</td>
-<td>Element jest zwracany, ale jest wysyłany do klienta po kontroli. Ta akcja dyspozycji może być używany, jeśli element został umyślnie uszkodzony lub gwarancji został unieważniony.</td>
+<td>Brak, z wyjątkiem ewentualnych opłat.</td>
+<td>Towar jest zwracany, ale po kontroli wysyłany z powrotem do odbiorcy. Ta akcja dyspozycji może być używana, jeśli towar został umyślnie uszkodzony lub unieważniono gwarancję.</td>
 </tr>
 <tr class="even">
 <td>Odpadki</td>
 <td><ul>
-<li>Klient jest po stronie kredytowej cena sprzedaży minus koszty lub opłaty.</li>
-<li>Strata z likwidacji towaru jest księgowany w księdze.</li>
+<li>Konto odbiorcy jest uznawane ceną sprzedaży pomniejszoną o opłaty.</li>
+<li>Strata z tytułu złomowania towaru jest księgowana w księdze.</li>
 </ul></td>
-<td>Element jest zwracany lub uznane za odpadki.</td>
+<td>Towar jest zwracany lub złomowany.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="arrival-at-the-warehouse-for-inspection"></a>Przybycia do magazynu dla inspekcji
-Aby fizycznie otrzymywać zwróconych towarów do ewidencji magazynowej przez księgowanie dokumentu dostawy, elementy musi przejść przez rejestracji przyjęcia i opcjonalne inspekcji. Poniższa ilustracja przedstawia procesu przyjazdu. Następnych sekcjach opisano każdy krok, który jest wyświetlany na rysunku.  
+## <a name="arrival-at-the-warehouse-for-inspection"></a>Przybycie do magazynu w celu kontroli
+Zanim będzie można fizycznie przyjąć zwrócone towary do zapasów poprzez zaksięgowanie dokumentu dostawy, towary muszą przejść przez rejestrację przybycia i opcjonalną inspekcję. Na poniższej ilustracji przedstawiono przegląd procesu przybycia. W następnych sekcjach opisano każdy krok pokazany na ilustracji.  
 
-[![Proces przyjazdu](./media/salesreturn03.png)](./media/salesreturn03.png)  
+[![Proces przybycia](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
-Proces składa się z kilku innych zmian, które nie są omówione w tym temacie. Oto niektóre z tych zmian:
+Proces ma kilka innych wariantów, które nie są omówione w tym temacie. Oto wybrane możliwe warianty:
 
--   Nie należy używać **przeglądu przyjęć** liście, aby utworzyć arkusz przyjęcia. Zamiast ręcznie utworzyć arkusza przyjęcia. Zwrotu zamówienia będą miały **zamówienie sprzedaży** jako punkt odniesienia.
--   Jeśli używasz zarządzania magazynem, generowanie transportów palet. Wiersz zwrotu będzie mieć stan **dostarczone** podczas transportu palet.
--   Zarejestrować przybycia zwróconego towaru bezpośrednio z wiersza zamówienia zwrotu za pomocą **rejestracji** funkcji.
+-   Nie używaj listy **Przegląd przyjęć**, aby utworzyć arkusz przybycia. Zamiast tego ręcznie utwórz arkusz przybycia. Zamówienia zwrotu będą miały odwołanie **Zamówienie sprzedaży**.
+-   Jeśli używasz modułu Zarządzanie magazynem, wygeneruj transporty palet. Podczas transportu palet wiersz zwrotu będzie miał stan **Dostarczone**.
+-   Zarejestruj przybycie zwróconego towaru bezpośrednio z wiersza zamówienia zwrotu za pomocą funkcji **Rejestracja**.
 
-Podczas procesu przyjęcia zwrotów są zintegrowane z ogólnego procesu do przyjęcia magazynowego. Proces przyjazdu umożliwia także tworzenie zleceń kwarantanny zwróconych towarów, które muszą zostać poddane kontroli oddzielne.
+W trakcie procesu przybycia zwroty są integrowane z ogólnym procesem przybycia do magazynu. Proces przybycia umożliwia także tworzenie zleceń kwarantanny zwróconych towarów, które muszą zostać poddane oddzielnej kontroli.
 
-### <a name="identify-products-in-the-arrival-overview-list"></a>Identyfikacji produktów na liście Przegląd przyjazdu
+### <a name="identify-products-in-the-arrival-overview-list"></a>Identyfikacji produktów na liście Przegląd przyjęć
 
-**Przeglądu przyjęć** stronie znajduje się lista wszystkich planowanych przyjazdów przychodzących. **Uwaga:** przywozów z zamówień zwrotu muszą być przetwarzane oddzielnie od innych typów transakcji przyjazdu. Po zidentyfikowaniu przychodzących pakietów na **przeglądu przyjęć** strona (na przykład za pomocą dokumentu towarzyszącego RMA), w okienku akcji, kliknij przycisk **Rozpocznij przyjęcie** do tworzenia i zainicjuj arkusz przyjęcia pasujący przybycia.
+Na stronie **Przegląd przyjęć** znajduje się lista wszystkich planowanych przychodzących przybyć. **Uwaga:** Przybycia z zamówień zwrotu muszą być przetwarzane oddzielnie od innych typów transakcji przybycia. Po zidentyfikowaniu przychodzącej paczki na stronie **Przegląd przyjęć** (na przykład za pomocą towarzyszącego dokumentu RMA) w okienku akcji kliknij przycisk **Rozpocznij przyjęcie**, aby utworzyć i zainicjować arkusz przybycia pasujący do przybycia.
 
-### <a name="edit-the-arrival-journal"></a>Edytowanie arkusza przyjęcia
+### <a name="edit-the-arrival-journal"></a>Edycja arkusza przybycia
 
-Przez ustawienie **kwarantanny zarządzania** opcji w celu **tak**, można utworzyć zlecenie kwarantanny dla wiersza zwrotu. Jeśli wiersz został wysłany do kwarantanny do inspekcji, nie można określić kod dyspozycji. **Uwaga:** po ustawieniu **kwarantanny zarządzania** opcji w celu **tak** w grupy modeli magazynu towaru, **kwarantanny zarządzania** opcji na **wierszy dziennika** strony zostaną oznaczone do wiersza arkusza przyjęcia towaru i nie można zmienić. Jeśli wiersz jest przesyłany do kwarantanny, należy określić magazynu kwarantanny właściwe. Jeśli wiersz przyjęcia nie są wysyłane do kontroli, przyjazdu Magazynier musi określić kod dyspozycji bezpośrednio w wierszu arkusza przyjęcia, a następnie zaksięguj arkusza przyjęcia. Jeśli ten sam kod dyspozycji nie powinny być przypisane do całej ilości wiersza zwrotu lub pełną ilość w wierszu nie został otrzymany, możesz podzielić wiersz. Gdy podział wiersza arkusza przyjęcia towaru, również podzielić wiersz zwrotu (**SalesLine**) i utworzyć nowy identyfikator partii. Można podzielić wiersz, poprzez zmniejszenie ilości wiersza arkusza przyjęcia towaru. Po zaksięgowaniu arkusza utworzono nowy wiersz zwrotu, która ma stan **oczekiwana** na pozostałą ilość. Można także podzielić wiersz, klikając **funkcje**&gt;**podziału**.
+Ustawiając w opcji **Zarządzanie kwarantanną** wartość **Tak**, można utworzyć zlecenie kwarantanny dla wiersza zwrotu. Jeśli wiersz został wysłany do kwarantanny w celu inspekcji, nie można określić kodu dyspozycji. **Uwaga:** Jeśli ustawisz w opcji **Zarządzanie kwarantanną** wartość **Tak** w grupie modeli zapasów towaru, opcja **Zarządzanie kwarantanną** na stronie **Wiersze arkusza** zostanie oznaczona dla wiersza arkusza przybycia i nie będzie można jej zmienić. Jeśli wiersz jest wysyłany do kwarantanny, należy określić właściwy magazyn kwarantanny. Jeśli wiersz przybycia nie jest wysyłany do inspekcji, magazynier zajmujący się przybyciami musi określić kod dyspozycji bezpośrednio w wierszu arkusza przybycia, a następnie zaksięgować arkusz przybycia. Jeśli ten sam kod dyspozycji nie ma być przypisywany do całej ilości wiersza zwrotu albo jeśli nie przyjęto całej ilości wiersza, należy podzielić wiersz. Podział wiersza arkusza przybycia powoduje również podział wiersza zwrotu (**SalesLine**) i utworzenie nowego identyfikatora partii. W celu podziału wiersza można zmniejszyć ilość w wierszu arkusza przybycia. Po zaksięgowaniu arkusza jest tworzony nowy wiersz zwrotu o stanie **Oczekiwane** na pozostałą ilość. Wierz można również podzielić, klikając kolejno opcje **Funkcje** &gt; **Podziel**.
 
 ### <a name="process-the-quarantine-order"></a>Przetwarzanie zlecenia kwarantanny
 
-Jeśli zwróconych produktów są wysyłane do inspekcji w magazynie kwarantanny, zlecenie kwarantanny jest wykonywane żadnych dodatkowych czynności. Dla każdego wiersza przyjęcia, który jest przesyłany do kwarantanny jest tworzone jedno zamówienie kwarantanny. Kod dyspozycji wskazuje, w wyniku procesu kontroli. Można podzielić zlecenie kwarantanny, tak jak można podzielić arkusza przyjęcia. Dzielenie zlecenia kwarantanny, spowodować odpowiedniego podziału wiersza zwrotu. Po wprowadzeniu kodu dyspozycji zakończyć zlecenia kwarantanny przy użyciu formatu **koniec** funkcji lub **zgłoszone jako gotowe** funkcji. Jeśli wybierzesz **zgłoszone jako gotowe**, Nowy Nabytek jest tworzony w wyznaczonych magazynu. Ten przyjazdu może następnie przetwarzać przy użyciu **przeglądu przyjęć** strony. Jeżeli przybyciu pochodzi ze zlecenia kwarantanny, nie można zmienić kodu dyspozycji, które są przypisywane podczas inspekcji. Jeśli zlecenia kwarantanny, które możesz wykonać za pomocą **koniec** funkcji, partia jest automatycznie rejestrowany. Czasami element może być wysłana z kwarantanny do wysyłki i przyjęcia działu. Na przykład Inspektor kwarantanny może nie wiedzieć, gdzie do przechowywania towaru w magazynie. W takim przypadku odpowiednie dostawy należy zaktualizować poprawnie zarejestrować i działają na kod dyspozycji, która jest określona z powodu kwarantanny. Potwierdzenie odbioru mogą być wysyłane do klienta po zarejestrowaniu wiersza zwrotu. **Potwierdzenie zwrotu** raport podobny dokument zamówienia zwrotu. **Potwierdzenie zwrotu** raportu nie jest zapisany w arkuszu lub w przeciwnym razie zarejestrowanej w systemie i nie jest to wymaganym krokiem w procesie zamówienia zwrotu.
+Jeśli zwrócone produkty są wysyłane do inspekcji w magazynie kwarantanny, wszelkie dodatkowe przetwarzanie odbywa się na podstawie zlecenia kwarantanny. Dla każdego wiersza przybycia wysyłanego do kwarantanny jest tworzone jedno zlecenie kwarantanny. Kod dyspozycji wskazuje wynik procesu inspekcji. Zlecenie kwarantanny można podzielić tak samo, jak się dzieli arkusz przybycia. Podział zlecenia kwarantanny powoduje odnośny podział wiersza zwrotu. Po wprowadzeniu kodu dyspozycji sfinalizuj zlecenie kwarantanny, używając funkcji **Koniec** lub **Zgłoś jako gotowe**. Jeśli wybierzesz funkcję **Zgłoś jako gotowe**, w wyznaczonych magazynie zostanie utworzone nowe przybycie. Następnie można przetwarzać to przybycie za pomocą opcji na stronie **Przegląd przyjęć**. Jeżeli przybycie ma swoje źródło w zleceniu kwarantanny, nie można zmienić kodu dyspozycji przypisanego podczas inspekcji. Jeśli sfinalizujesz zlecenie kwarantanny za pomocą funkcji **Koniec**, partia jest automatycznie rejestrowana. Czasami towar może być odsyłany z kwarantanny z powrotem do działu wysyłania i przyjmowania. Na przykład inspektor kwarantanny może nie wiedzieć, gdzie umieścić towar w zapasach. W takim przypadku należy zaktualizować odnośny dokument dostawy, aby poprawnie zarejestrować i przetwarzać kod dyspozycji ustawiony z powodu kwarantanny. Potwierdzenie przyjęcia można wysyłać odbiorcy podczas rejestrowania wiersza zwrotu. Raport **Potwierdzenie zwrotu** przypomina dokument zamówienia zwrotu. Raport **Potwierdzenie zwrotu** nie jest zapisywany w arkuszu ani w inny sposób rejestrowany w systemie i nie jest wymaganym krokiem w procesie zamówienia zwrotu.
 
 ## <a name="replace-a-product"></a>Wymiana produktu
-Istnieją dwie metody zarządzania wymiany produktów:
+Istnieją dwie metody zarządzania wymianą produktów:
 
--   **Zamiennik zawczasu** – wymiany produktu przed zwracany produkt jest otrzymane od klienta.
--   **Zastąpienie przez kod dyspozycji** – automatycznie utworzyć nowy wiersz zamówienia wymiany.
+-   **Wymiana zawczasu** — Wymiana produktu, zanim zwrócony produkt zostanie otrzymany od odbiorcy.
+-   **Wymiana na podstawie kodu dyspozycji** — Automatyczne tworzenie nowego wiersza zamówienia wymiany.
 
 ### <a name="up-front-replacement"></a>Zamiennik zawczasu
 
-W Zamiennik zawczasu element zastępczy mogą być dostarczane do nabywcy, zanim element zostanie zwrócony. Ta metoda jest przydatna, jeśli na przykład element jest część maszyny, których nie można usunąć, chyba że część zamienna jest dostępny na jej miejsce lub jeśli chcesz tylko klienta o produkt zastępczy możliwie jak najszybciej. Zamiennik zawczasu kolejność jest niezależne zamówienia sprzedaży. Informacje nagłówka jest od klienta, a informacje o wierszu jest inicjowany z zamówienia zwrotu. Można edytować, przetworzyć i usunąć zamówienie wymiany niezależnie od zamówienia zwrotu. Po usunięciu zamówienie zastępcze, pojawi się komunikat, że zamówienie zostało utworzone jako zamówienie zastępcze. Następująca ilustracja przedstawia proces dla Zamiennik zawczasu.  
+W wymianie zawczasu towar zastępczy może być dostarczany odbiorcy przed otrzymaniem od niego zwróconego produktu. Ta metoda jest przydatna, gdy na przykład towar jest częścią maszyny, której nie można wymontować, jeśli na jej miejsce nie zostanie wstawiona część zamienna, albo gdy po prostu chcesz, aby odbiorca otrzymał produkt zastępczy jak najszybciej. Zamówienie wymiany zawczasu jest niezależnym zamówieniem sprzedaży. Informacje nagłówka są inicjowane przez odbiorcę, a informacje wiersza są inicjowane przez zamówienie zwrotu. Zamówienie wymiany można edytować, przetwarzać i usuwać niezależnie od zamówienia zwrotu. Podczas usuwania zamówienia wymiany pojawia się komunikat z informacją, że zamówienie zostało utworzone jako zamówienie wymiany. Poniższa ilustracja przedstawia proces wymiany zawczasu.  
 
-[![Zamiennik zawczasu procesu](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)  
+[![Proces wymiany zawczasu](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)  
 
-Zamówienie zwrotu zawiera odwołanie do zamówienia wymiany. Jeśli dla zamówienia zwrotu zamówienia Zamiennik zawczasu utworzono przed zwróceniem wadliwego elementu, nie można wybrać kodów dyspozycji do wymiany po wadliwych przesyłka została zwrócona.
+Zamówienie zwrotu zawiera odwołanie do zamówienia wymiany. Jeśli zamówienie wymiany zawczasu zostanie utworzone dla zamówienia zwrotu przed zwróceniem wadliwego towaru, nie można wybrać kodów dyspozycji dla wymiany po zwrocie wadliwego towaru.
 
-### <a name="replacement-by-disposition-code"></a>Zastąpienie przez kod dyspozycji
+### <a name="replacement-by-disposition-code"></a>Wymiana na podstawie kodu dyspozycji
 
-Jeśli dostawy przedmiotu zastępczego do klienta i użyć **Zastąp i zlikwiduj** lub **zamienić i kredytu** akcja dyspozycji na zamówienie zwrotu, należy użyć procesu, który przedstawiono na poniższej ilustracji.  
+Jeśli wysyłasz towar zastępczy do odbiorcy i w zamówieniu zwrotu używasz akcji dyspozycji **Zastąp i zlikwiduj** lub **Zastąp i zaksięguj po stronie kredytowej**, użyj procesu przedstawionego na poniższej ilustracji.  
 
-[![Procedura wymiany, gdy używany jest kod dyspozycji](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)  
+[![Proces wymiany w przypadku używania kodu dyspozycji](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)  
 
-Element zastępczy będą dostarczane za pomocą niezależnych zamówienia sprzedaży, zamówienia sprzedaży wymiany. To zamówienie sprzedaży jest tworzony podczas generowania dokumentu dostawy dla zamówienia zwrotu. Nagłówek zamówienia używa informacji od nabywcy, do którego odwołuje się w nagłówku zamówienia zwrotu. Informacje o wierszu są zbierane od informacji wprowadzonej w **element zastępczy** strony. **Element zastępczy** strona musi być wypełniona dla wierszy, które mają działania dyspozycji, rozpoczynających się od słowa "Zamień". Jednakże ilość ani tożsamości element zastępczy nie jest zatwierdzone lub ograniczone. Takie zachowanie umożliwia dla przypadków, w których odbiorca chce otrzymywać tego samego towaru, ale w innej konfiguracji lub rozmiaru, a także przypadki gdzie klientów chce całkowicie inny element. Domyślnie wprowadzana jest identyczny towar **element zastępczy** strony. Można jednak wybrać inny element, pod warunkiem, że funkcja została prawidłowo skonfigurowana. **Uwaga:** można edytować i usuwać zamówienia sprzedaży wymiany po jego utworzeniu.
+Towar zastępczy zostanie dostarczony przy użyciu niezależnego zamówienia sprzedaży — zamówienia sprzedaży wymiany. To zamówienie sprzedaży jest tworzone podczas generowania dokumentu dostawy dla zamówienia zwrotu. Nagłówek zamówienia używa informacji od odbiorcy, do którego odwołuje się nagłówek zamówienia zwrotu. Informacje wiersza są pobierane z informacji wprowadzonych na stronie **Pozycja zastępcza**. Strona **Pozycja zastępcza** musi być wypełniona dla wierszy, które mają akcje dyspozycji rozpoczynające się słowem „zamień”. Jednak ani ilość, ani dane identyfikacyjne towaru zastępczego nie są weryfikowane ani w żaden sposób ograniczane. Takie zachowanie pozwala na przypadki, gdy odbiorca chce otrzymać ten sam towar, ale w innej konfiguracji lub rozmiarze, a także na przypadki, gdy odbiorca chce otrzymać całkowicie inny towar. Domyślnie na stronie **Pozycja zastępcza** jest wprowadzany identyczny towar. Można jednak wybrać inny towar, pod warunkiem, że funkcja została skonfigurowana. **Uwaga:** Po utworzeniu zamówienia sprzedaży wymiany można je edytować i usuwać.
 
 ## <a name="generate-a-packing-slip"></a>Generowanie dokumentu dostawy
-Zanim zwróconych towarów może być przyjęta do magazynu, należy zaktualizować dokument dostawy dla zamówienia, które elementy należą do. Podobnie, jak proces aktualizacji faktury jest aktualizacja transakcji finansowej, dokumentu dostawy aktualizacji proces jest fizycznej aktualizacji rekordu magazynowego. Innymi słowy proces ten zatwierdza zmiany do zapasów. W przypadku zwrotów, kroki, które są przypisane do dyspozycji działania są wykonywane podczas pakowania aktualizacji dokumentu dostawy. Podczas generowania dokumentu dostawy, zachodzą następujące zdarzenia:
+Aby zwrócone towary mogły zostać przyjęte do zapasów, należy zaktualizować dokument dostawy dla zamówienia, do którego należą towary. Podobnie jak proces aktualizacji faktury jest aktualizacją transakcji finansowej, tak proces aktualizacji dokumentu dostawy jest fizyczną aktualizacją rekordu zapasów. Innymi słowy proces ten zatwierdza zmiany zapasów. W przypadku zwrotów kroki przypisane do akcji dyspozycji są implementowane podczas aktualizacji dokumentu dostawy. Podczas generowania dokumentu dostawy zachodzą następujące zdarzenia:
 
--   W przypadku magazynu standardowego procesu służy do wykonywania fizycznego przychodu. Księgowań w księdze są generowane, gdy grupa modelu zapasów (**Księguj magazyn fizyczny**) i parametrów rozrachunków z odbiorcami (**Księgowanie dokumentów dostawy w księdze**) są prawidłowo ustawione.
--   Elementy, które zostały oznaczone akcja dyspozycji, które zawiera słowo "złom" zostały uznane za braki, a strata zapasów jest księgowany w księdze.
--   Elementy, które zostały oznaczone **zwrot do odbiorcy** akcja dyspozycji są odbierane i dostarczane do odbiorcy. Te elementy nie netto wpływają na zapasy.
--   Zamówienia sprzedaży dla wymiany jest tworzony. To zamówienie sprzedaży na podstawie informacji o **element zastępczy** strony.
+-   W magazynie standardowy proces jest używany wykonania fizycznego przyjęcia. Księgowania w księdze są generowane, jeśli grupa modeli zapasów (**Księguj magazyn fizyczny**) i parametry modułu rozrachunków z odbiorcami (**Księgowanie dokumentów dostawy w księdze**) są prawidłowo skonfigurowane.
+-   Towary oznaczone akcją dyspozycji zawierającą słowo „złom” są brakowane, a strata na zapasach jest księgowana w księdze.
+-   Towary oznaczone akcją dyspozycji **Zwrot do odbiorcy** są przyjmowane i dostarczane do odbiorcy. Towary te nie wpływają netto na zapasy.
+-   Jest tworzone zamówienie sprzedaży wymiany. To zamówienie sprzedaży bazuje na informacjach ze strony **Pozycja zastępcza**.
 
-Można wygenerować dostawy tylko dla wierszy, które mają stan zwrotu **zarejestrowane**i tylko w odniesieniu do całej ilości na wiersza zwrotu. Jeśli masz kilka wierszy w zamówieniu zwrotu **zarejestrowane** stanu, można wygenerować dokumentu dostawy dla podzbioru wierszy usuwając wiersze z **Księgowanie dokumentów dostawy** strony. Częściowe zwroty są definiowane zgodnie z wierszy zamówienia zwrotu, nie chodzi o dostawach zamówień zwrotu. W związku z tym jeśli otrzymujesz pełną ilość, która jest wskazany w jednym wierszu zamówienia zwrotu, ale nic nie otrzymują od innych wierszy w zamówieniu zwrotu, dostawa nie jest dostawa częściowa. Jednakże jeśli wiersza zamówienia zwrotu wymaga, by były zwracane 10 sztuk towaru, ale zostanie wyświetlony tylko cztery jednostki, dostawa jest dostawa częściowa. W przeciwnym razie przybyły oczekiwanego zwrotu towarów, można odłogowanych wysyłki i czekać na resztę zwracanej ilości. Alternatywnie można zarejestrować i zaksięgować częściowe ilości. Jako część procesu księgowania dokumentów dostawy numer dokumentu dostawy odniesienia z dokumentów dostawy odbiorcy można skojarzyć z wierszy zamówienia. To skojarzenie jest opcjonalny i jest tylko w celach informacyjnych. To nie tworzy żadnych aktualizacji transakcyjnej. Ogólnie, można pominąć pakowania dokumentu dostawy procesu i przejść bezpośrednio do fakturowania. W takim przypadku podczas fakturowania wykonywane są czynności, które będzie mieć wykonać podczas pakowania generowania dokumentu dostawy.
+Dokument dostawy można wygenerować tylko dla wierszy, które mają stan zwrotu **Zarejestrowane**, i tylko w odniesieniu do pełnej ilości w wierszu zwrotu. Jeśli kilka wierszy w zamówieniu zwrotu ma stan **Zarejestrowane**, można wygenerować dokument dostawy dla podzbioru wierszy, usuwając pozostałe wiersze ze strony **Księguj dokument dostawy**. Zwroty częściowe są definiowane w kategoriach wierszy zamówienia zwrotu, a nie wysyłek zamówienia zwrotu. Oznacza to, że jeśli otrzymasz pełną ilość wskazaną w jednym wierszu zamówienia zwrotu, ale nie otrzymasz nic z pozostałych wierszy tego zamówienia zwrotu, dostawa nie jest dostawą częściową. Jeśli jednak wiersz zamówienia zwrotu wymaga zwrotu na przykład dziesięciu jednostek określonego towaru, a otrzymasz tylko cztery jednostki, dostawa jest dostawą częściową. Jeśli nie przybędą wszystkie oczekiwane zwracane towary, można odstawić przesyłkę na bok i poczekać na przybycie reszty zwracanej ilości. Alternatywnie można zarejestrować i zaksięgować ilość częściową. W ramach procesu księgowania dokumentów dostawy można powiązać numer odwołania dokumentu dostawcy określony w dokumentach wysyłkowych odbiorcy z wierszami zamówienia. To skojarzenie jest opcjonalne i ma charakter wyłącznie informacyjny. Nie tworzy żadnych aktualizacji transakcji. Ogólnie rzecz biorąc można pominąć proces dokumentu dostawy i przejść bezpośrednio do fakturowania. W takim przypadku czynności, które byłyby wykonywane podczas generowania dokumentu dostawy, są wykonywane podczas fakturowania.
 
 ## <a name="generate-an-invoice"></a>Generuj fakturę
-Chociaż **zamówienia zwrotu** strona zawiera informacje i akcje, które są wymagane w celu obsługi szczególne aspekty logistyczne zamówienia zwrotu, należy użyć **zamówienie sprzedaży** stronę, aby ukończyć proces fakturowania. Organizacji mogą następnie faktury zamówień sprzedaży i zamówień zwrotu, w tym samym czasie i tej samej osoby można ukończyć procesu fakturowania, zgodnie z wymaganiami. Aby wyświetlić zamówienia zwrotu z **zamówienie sprzedaży** strony, kliknij łącze odpowiednie dla numeru zamówienia sprzedaży otworzyć skojarzonego zamówienia sprzedaży. Zamówienie zwrotu można także znaleźć w **zamówienia sprzedaży wszystkich** strony. Zwrotu zamówienia są zamówień sprzedaży, które mają typ zamówienia z **zwrócone zamówienie**.
+Chociaż strona **Zamówienie zwrotu** zawiera informacje i czynności, które są wymagane w celu obsługi szczególnych aspektów logistycznych zamówienia zwrotu, do finalizacji procesu fakturowania należy użyć strony **Zamówienie sprzedaży**. Organizacja może wtedy fakturować zamówienia zwrotu i zamówienia sprzedaży w tym samym czasie, a ta sama osoba może wykonać proces fakturowania zgodnie z wymaganiami. Aby wyświetlić zamówienie zwrotu ze strony **Zamówienie sprzedaży**, kliknij łącze numeru zamówienia sprzedaży, co spowoduje otwarcie skojarzonego zamówienia sprzedaży. Zamówienie zwrotu można także znaleźć na stronie **Wszystkie zamówienia sprzedaży**. Zamówienia zwrotu są zamówieniami sprzedaży o typie zamówienia **Zwrot towaru**.
 
 ### <a name="credit-correction"></a>Korekta z czerwonym stornem
 
-Jako część procesu fakturowania Sprawdź poprawność wszystkich opłat dodatkowych. Aby spowodować księgowań w księdze stać się korekt (Storno), należy rozważyć użycie **kredytu korekty** opcji na **innych** na karcie **Księgowanie faktury** strony podczas księgowania faktury/faktury korygującej. **Uwaga:** domyślnie **kredytu korekty** opcja jest aktywna, jeśli **faktury korygującej jako korekta** opcji na **rozrachunków z odbiorcami Parametry** strony zostało włączone. Firma Microsoft zaleca jednak nie Księguj zwraca wartość z Storno.
+W ramach procesu fakturowania sprawdź poprawność wszystkich opłat dodatkowych. Aby spowodować, że księgowania w księdze staną się korektami (stornem), rozważ użycie opcji **Korekta z czerwonym stornem** na karcie **Inne** na stronie **Księgowanie faktury** podczas księgowania faktury/faktury korygującej. **Uwaga:** Domyślnie opcja **Korekta z czerwonym stornem** jest aktywna, jeśli włączono opcję **Faktura korygująca z czerwonym stornem** na stronie **Parametry modułu rozrachunków z odbiorcami**. Jednak zalecamy, aby nie księgować zwrotów za pomocą funkcji storna.
 
 ## <a name="create-intercompany-return-orders"></a>Tworzenie międzyfirmowych zamówień zwrotu
-Zamówienia zwrotu mogą być wykonywane w przypadku dwóch przedsiębiorstw w obrębie organizacji. Obsługiwane są następujące scenariusze:
+Zamówienia zwrotu mogą być wykonywane między dwoma firmami wewnątrz organizacji. Obsługiwane są następujące scenariusze:
 
--   Proste zwraca międzyfirmowych między firmami, które uczestniczą w relacji międzyfirmowych
--   Łańcuch międzyfirmowy jest ustanawiane, gdy zamówienie zwrotu klienta jest tworzony w firmie sprzedającej
--   Łańcuch międzyfirmowy jest ustanawiane, gdy zamówienie zwrotu dostawcy jest tworzony w firmy kupującej
--   Zwraca dostawy bezpośredniej dostawy od odbiorcy zewnętrznego do dwóch przedsiębiorstw, które uczestniczą w relacji międzyfirmowych
+-   Proste zwroty międzyfirmowe między dwoma firmami uczestniczącymi w relacji międzyfirmowej
+-   Łańcuch międzyfirmowy ustanawiany w momencie, gdy zamówienie zwrotu od odbiorcy jest tworzony w firmie sprzedającej
+-   Łańcuch międzyfirmowy ustanawiany w momencie, gdy zamówienie zwrotu do dostawcy jest tworzony w firmie kupującej
+-   Zwroty za pomocą wysyłki z dostawą bezpośrednią między zewnętrznym odbiorcą a dwoma firmami uczestniczącymi w relacji międzyfirmowej
 
 ### <a name="setup"></a>Konfiguracja
 
-Poniższa ilustracja minimalnej konfiguracji, co jest wymagane dla dwóch przedsiębiorstw do udziału w relacji międzyfirmowych i skorzystać z handlu międzyfirmowego.  
+Poniższa ilustracja przedstawia minimalną konfigurację wymaganą, aby dwie firmy mogły uczestniczyć w relacji międzyfirmowej i korzystać z funkcji handlu międzyfirmowego.  
 
-[![Minimum setup](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)  
+[![Konfiguracja minimalna](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)  
 
-W następującym scenariuszu CompBuy jest firmy kupującej i CompSell jest firma sprzedająca. Na ogół firma sprzedająca statki towarów do firmy kupującej albo, w scenariuszach dostawy Dostawa bezpośrednia, bezpośrednio do odbiorcy końcowego. W CompBuy, dostawca Międzyfirmowy\_CompSell jest zdefiniowany jako międzyfirmowego punktu końcowego, który jest skojarzony z firmy CompSell. W tym samym czasie, CompSell klienta IC\_CompBuy jest zdefiniowany jako międzyfirmowego punktu końcowego, który jest skojarzony z firmy CompBuy. Szczegóły zasad odpowiednich działań i mapowania wartości musi być zdefiniowana w obu firmach. W przypadku dostawy bezpośredniej dostawy międzyfirmowego zamówienia zwrotu, który jest również międzyfirmowego zamówienia sprzedaży, jest tworzony w firmie sprzedającej. Numer autoryzacji zwrotu z międzyfirmowego zamówienia zwrotu mogą być pobierane z sekwencji numerów RMA w CompSell, lub może zostać skopiowany z numeru autoryzacji zwrotu, który jest przypisany do oryginalnego zamówienia zwrotu w CompBuy. Ustawienia numeru autoryzacji zwrotu na **zapotrzebowanie zakupu** zasady dotyczące akcji w CompBuy określenia tych działań. Jeśli numer RMA jest synchronizowane, należy zaplanować załagodzić ryzyko kolizji numerów użycie dwóch przedsiębiorstw, ta sama sekwencja numerów.
+W poniższym scenariuszu CompBuy jest firmą kupującą, a CompSell jest firmą sprzedającą. Na ogół firma sprzedająca sprzedaje towary do firmy kupującej albo, w scenariuszach wysyłki z dostawą bezpośrednią, prosto do odbiorcy końcowego. W firmie CompBuy dostawca IC\_CompSell jest zdefiniowany jako międzyfirmowego punkt końcowy skojarzony z firmą CompSell. Równocześnie w firmie CompSell odbiorca IC\_CompBuy jest zdefiniowany jako międzyfirmowego punkt końcowy skojarzony z firmą CompBuy. W obu firmach muszą być zdefiniowane odpowiednie szczegóły zasad działań i mapowania wartości. W scenariuszu wysyłki z dostawą bezpośrednią w firmie sprzedającej jest tworzone międzyfirmowe zamówienie zwrotu, które jest również międzyfirmowym zamówieniem sprzedaży. Numer autoryzacji zwrotu do międzyfirmowego zamówienia zwrotu może zostać pobrany z numeracji RMA w firmie CompSell lub skopiowany z numeru RMA przypisanego do oryginalnego zamówienia zwrotu w firmie CompBuy. O tych działaniach decydują ustawienia numeru autoryzacji zwrotu w zasadach działań **PurchaseRequisition** w firmie CompBuy. Jeśli numer RMA jest synchronizowany, należy zaplanować łagodzenie skutków konfliktu powstającego w przypadku, gdy obie firmy używają tej samej numeracji.
 
-### <a name="simple-intercompany-returns"></a>Proste zwraca międzyfirmowego
+### <a name="simple-intercompany-returns"></a>Proste zwroty międzyfirmowe
 
-Ten scenariusz obejmuje dwa przedsiębiorstwa w tej samej organizacji, jak pokazano na poniższej ilustracji.  
+Ten scenariusz obejmuje dwie firmy w tej samej organizacji, jak pokazano na poniższej ilustracji.  
 
-[![Prostego powrotu międzyfirmowego](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
+[![Prosty zwrot międzyfirmowy](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
 
-Łańcuch zamówienia może być ustalona, zamówienie zwrotu dostawcy jest tworzony w firmy kupującej lub zamówienie zwrotu klienta jest tworzony w firmie sprzedającej. Dynamics 365 dla operacji tworzy odpowiadające mu zamówienie w innej firmie i daje pewność, że nagłówek i informacje o wierszu na dostawcę zwrotu zamówienia odzwierciedla ustawienia na klienta zamówienia zwrotu. Zamówienie zwrotu, które zostało nawiązane można uwzględnić lub wykluczyć odwołania (**znajdowanie zamówienia sprzedaży**) do istniejącej faktury odbiorcy. Dostawy i fakturach zamówień dwóch mogą być przetwarzane pojedynczo. Na przykład nie musisz wygenerować dokumentu dostawy dla zamówienia zwrotu dostawcy przed wygenerowaniem dokument dostawy dla zamówienia zwrotu klienta.
+Łańcuch zamówień można utworzyć w momencie, gdy zamówienie zwrotu do dostawcy jest tworzone w firmie kupującej lub zamówienie zwrotu od odbiorcy jest tworzone w firmie sprzedającej. Program Dynamics 365 for Operations tworzy odnośne zamówienie w drugiej firmie i sprawdza, czy informacje nagłówka i wierszy w zamówieniu zwrotu do dostawcy odzwierciedlają ustawienia w zamówieniu zwrotu od odbiorcy. Tworzone zamówienie zwrotu może uwzględniać lub pomijać odwołanie (**Znajdź zamówienie sprzedaży**) do istniejącej faktury dla odbiorcy. Dokumenty dostawy i faktury powiązane z oboma zamówieniami mogą być przetwarzane indywidualnie. Na przykład nie trzeba generować dokumentu dostawy dla zamówienia zwrotu do dostawcy przed wygenerowaniem dokument dostawy dla zamówienia zwrotu od odbiorcy.
 
-### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Zwraca dostawy bezpośredniej przesyłki między trzema stronami
+### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Zwroty za pomocą wysyłki z dostawą bezpośrednią między trzema stronami
 
-W tym scenariuszu można ustanowić, jeśli poprzedniego zbycie **dostawy bezpośrednie** typu zostało wypełnione oraz czy fakturę przed klienta znajduje się w firmie, która współdziała z klientem. Na poniższej ilustracji firmy CompBuy uprzednio sprzedanych i zafakturowanych produktów do odbiorcy zewnętrznego. Produkty zostały wysłane bezpośrednio z firmy CompSell do klienta za pośrednictwem łańcucha zamówień międzyfirmowych.  
+Ten scenariusz można utworzyć, jeśli poprzednia sprzedaż typu **Dostawa bezpośrednia** została zakończona, a w firmie współpracującej z odbiorcą istnieje faktura wystawiona odbiorcy. Na poniższej ilustracji firma CompBuy uprzednio sprzedała produkty do odbiorcy Extern i wystawiła mu za to fakturę. Produkty zostały wysłane bezpośrednio z firmy CompSell do odbiorcy za pośrednictwem łańcucha zamówień międzyfirmowych.  
 
-[![Zwraca dostawy bezpośredniej przesyłki między trzema stronami](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)  
+[![Zwroty za pomocą wysyłki z dostawą bezpośrednią między trzema stronami](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)  
 
-Jeśli klient Extern chce wrócić do produktów, zamówienia zwrotu (RMA02) jest tworzony dla odbiorcy w firmie CompBuy. Ustanowienie łańcucha międzyfirmowego zamówienia zwrotu musi być zaznaczona dla dostawy bezpośredniej. Użycie **znajdowanie zamówienia sprzedaży** funkcji, aby wybrać faktury odbiorcy, aby powrócić, ustanawia się łańcuch zamówienia międzyfirmowego, który składa się z następujących dokumentów:
+Jeśli odbiorca Extern chce zwrócić produkty, w firmie CompBuy jest dla niego tworzone zamówienie zwrotu (RMA02). Aby można było utworzyć łańcuch międzyfirmowy, zamówienie zwrotu musi być oznaczone dla dostawy bezpośredniej. Gdy użyjesz funkcji **Znajdź zamówienie sprzedaży**, aby wybrać fakturę odbiorcy do zwrotu, zostanie utworzony łańcucha zamówień międzyfirmowych składający się z następujących dokumentów:
 
 -   **Oryginalne zamówienie zwrotu:** RMA02 (firmy CompBuy)
 -   **Zamówienie zakupu:** PO02 (firmy CompBuy)
--   **Międzyfirmowe zamówienie zwrotu:** RMA\_00032 (spółka CompSell)
+-   **Międzyfirmowe zamówienie zwrotu:** RMA\_00032 (firmy CompSell)
 
-Po utworzeniu łańcucha międzyfirmowego dostawa bezpośrednia, wszystkie czynności magazynowych i przetwarzania danych musi wystąpić w kontekście międzyfirmowe zamówienie zwrotu RMA\_00032 w firmie CompSell. Nie można odebrać produkty w firmie CompBuy. Kod dyspozycji jest przypisany do międzyfirmowego zamówienia zwrotu, jest synchronizowana z oryginalnego zamówienia zwrotu do umożliwienia właściwego Fakturowanie oryginalnego zamówienia.
+Po utworzeniu międzyfirmowego łańcucha dostawy bezpośredniej cała fizyczna obsługa i elektroniczne przetwarzanie zwrotów musi następować w kontekście międzyfirmowe zamówienie zwrotu RMA\_00032 w firmie CompSell. Produkty nie mogą być przyjmowane w firmie CompBuy. Po przypisaniu kodu dyspozycji do międzyfirmowego zamówienia zwrotu jest on synchronizowany z oryginalnym zamówieniem zwrotu, aby umożliwić właściwe fakturowanie oryginalnego zamówienia.
 
 ## <a name="post-to-the-ledger"></a>Księgowanie w księdze
-Księgowania w finansach, które są generowane po zafakturowaniu zamówienia zwrotu są pod wpływem kilka ważnych ustawień i parametrów:
+Księgowania w księdze, które są generowane podczas fakturowania zamówienia zwrotu, zależą od kilku ważnych ustawień i parametrów:
 
--   **Koszt własny dla zwrotu** -magazynu modeli innych niż **koszt standardowy**, **koszt własny dla zwrotu** parametr określa koszt towaru, gdy przyjęte do magazynu lub uznane za odpadki. Aby obliczyć poprawne wyceny zapasów, jest ważne, aby ustawić **koszt własny dla zwrotu** parametr poprawnie. Jeśli używasz **znajdowanie zamówienia sprzedaży** funkcja służąca do tworzenia wiersza zamówienia zwrotu, który odwołuje się do faktury dla odbiorcy **koszt własny dla zwrotu** wartość jest równa kosztowi własnemu towaru, który jest sprzedawany. W przeciwnym wypadku wartość kosztu własnego pochodzi z ustawień towaru lub można wprowadzić ręcznie.
--   **Kredyt korekcji/Storno** — **kredytu korekty** parametru na **Księgowanie faktury** strona określa, czy komentarze powinny być zarejestrowane jako zapisy dodatnie (Dt/Ct) lub poprawiania, negatywnych wpisów.
+-   **Koszt własny dla zwrotu** — W modelach zapasów innych niż **Koszt standardowy** parametr **Koszt własny dla zwrotu** określa koszt towaru, gdy jest on przyjmowany z powrotem do magazynu lub złomowany. Aby obliczyć poprawną wycenę zapasów, należy prawidłowo ustawić wartość parametru **Koszt własny dla zwrotu**. Jeśli używasz funkcji **Znajdź zamówienie sprzedaży** do tworzenia wiersza zamówienia zwrotu, który się odwołuje do faktury dla odbiorcy, wartość parametru **Koszt własny dla zwrotu** jest równa kosztowi własnemu sprzedawanego towaru. W przeciwnym wypadku wartość kosztu własnego pochodzi z konfiguracji towaru lub można ją wprowadzić ręcznie.
+-   **Korekta z czerwonym stornem/Storno** — Parametr **Korekta z czerwonym stornem** na stronie **Księgowanie faktury** określa, czy księgowania powinny być rejestrowane jako zapisy dodatnie (po stronie winien/ma), czy jako zapisy korygujące (ujemne).
 
-W przykładach, które należy wykonać, koszt własny zwrotu jest reprezentowany jako **kalkulacji kosztu własnego**.
+W przykładach poniżej koszt własny zwrotu jest reprezentowany jako **Inv. Cost price** (Koszt własny pozycji faktury).
 
-### <a name="example-1-the-return-order-doesnt-reference-a-customer-invoice"></a>Przykład 1: Zamówienie zwrotu nie odwoływać się fakturę dla odbiorcy
+### <a name="example-1-the-return-order-doesnt-reference-a-customer-invoice"></a>Przykład 1: Zamówienie zwrotu nie odwołuje się do faktury dla odbiorcy
 
-Zamówienie zwrotu nie odwoływać się do faktury dla odbiorcy. Zwrot towaru jest po stronie kredytowej. **Kredytu korekty** parametr nie jest zaznaczona, podczas generowania zamówienia zwrotu, faktury lub faktury korygującej.  
+Zamówienie zwrotu nie odwołuje się do faktury dla odbiorcy. Z tytułu zwrotu towaru jest uznawane konto odbiorcy. Parametr **Korekta z czerwonym stornem** nie jest zaznaczony podczas generowania faktury (lub faktury korygującej) do zamówienia zwrotu.  
 
-[![Zamówienie zwrotu nie odwoływać zaliczkową klienta](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)  
+[![Zamówienie zwrotu nie odwołuje się do faktury dla odbiorcy](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)  
 
-**Uwaga:** cenę wzorca jest używana jako wartość domyślna dla **koszt własny dla zwrotu** parametru. Domyślna cena różni się od kosztu własnego w momencie wydania zapasów. W związku z tym implikacją jest, że zostały poniesione straty 3. Ponadto zamówienia zwrotu nie zawiera rabat, który zostało udzielone klientowi w zamówieniu sprzedaży. W związku z tym występuje nadmierne kredytu.
+**Uwaga:** Domyślną wartością parametru **Koszt własny dla zwrotu** jest cena z rekordu głównego towaru. Cena domyślna różni się od kosztu własnego w momencie wydawania zapasów. Ma to taką konsekwencję, że jest ponoszona strata wynosząca 3 jednostki pieniężne. Ponadto zamówienie zwrotu nie zawiera rabatu udzielonego odbiorcy w zamówieniu sprzedaży. W związku z tym następuje nadmierne uznanie konta odbiorcy.
 
-### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Przykład 2: Korekta strony kredytowej jest zaznaczone dla zamówienia zwrotu
+### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Przykład 2: Dla zamówienia zwrotu wybrano korektę z czerwonym stornem
 
-Przykład 2 jest taki sam, jak w przykładzie 1, ale **kredytu korekty** parametr jest wybrany, gdy generowane faktury zamówienia zwrotu.  
+Przykład 2 jest taki sam, jak przykład 1, ale podczas generowania faktury do zamówienia zwrotu wybrano parametr **Korekta z czerwonym stornem**.  
 
-[![Zamówienie zwrotu z wybranym z czerwonym stornem](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)  
+[![Zamówienie zwrotu z wybraną korektą z czerwonym stornem ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)  
 
-**Uwaga:** księgowań w księdze są wprowadzane jako korekty.
+**Uwaga:** Księgowania w księdze są wprowadzane jako ujemne korekty.
 
-### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Przykład 3: Wiersza zamówienia zwrotu jest tworzony przy użyciu funkcji Znajdź zamówienie sprzedaży
+### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Przykład 3: Jest tworzony wiersz zamówienia zwrotu przy użyciu funkcji Znajdź zamówienie sprzedaży
 
-W tym przykładzie wiersza zamówienia zwrotu jest tworzony przy użyciu **znajdowanie zamówienia sprzedaży** funkcji. **Kredytu korekty** parametr nie jest zaznaczona, podczas tworzenia faktury.  
+W tym przykładzie jest tworzony wiersz zamówienia zwrotu przy użyciu funkcji **Znajdź zamówienie sprzedaży**. Podczas tworzenia faktury parametr **Korekta z czerwonym stornem** nie jest zaznaczony.  
 
-[![Zwraca wiersza zamówienia, który jest tworzony przy użyciu Znajdź zamówienie sprzedaży](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)  
+[![Wiersz zamówienia zwrotu tworzony przy użyciu funkcji Znajdź zamówienie sprzedaży ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)  
 
-**Uwaga:****rabatu** i **koszt własny dla zwrotu** są poprawnie ustawione. W związku z tym występuje dokładne odwrócenie faktury odbiorcy.
+**Uwaga:** Opcje **Rabat** i **Koszt własny dla zwrotu** są poprawnie ustawione. W związku z tym następuje dokładne wycofanie faktury dla odbiorcy.
+
+
 
 

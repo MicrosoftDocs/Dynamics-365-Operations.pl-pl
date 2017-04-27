@@ -41,9 +41,9 @@ Aby uaktualnić do najnowszej wersji, zobacz [Proces uaktualniania do najnowszej
 <thead>
 <tr class="header">
 <th><strong>Zwolnienie</strong></th>
-<th><strong><strong>Version</strong></strong></th>
-<th><strong><strong>Build number</strong></strong></th>
-<th><strong><strong>Availability</strong></strong></th>
+<th><strong><strong>Wersja</strong></strong></th>
+<th><strong><strong>Numer kompilacji</strong></strong></th>
+<th><strong><strong>Dostępność</strong></strong></th>
 <th><strong><strong>Aby dowiedzieć się więcej</strong></strong></th>
 </tr>
 </thead>
@@ -52,12 +52,12 @@ Aby uaktualnić do najnowszej wersji, zobacz [Proces uaktualniania do najnowszej
 <td>Platforma Microsoft Dynamics 365 for Operations</td>
 <td>Aktualizacja platformy 4</td>
 <td>7.0.4425.16160</td>
-<td>Luty 2017</td>
+<td>2017 lutego</td>
 <td><ol>
-<li>Przejdź do <a href="https://roadmap.dynamics.com/">mapy drogowej Dynamics 365</a>.</li>
-<li>Wybierz <strong>What's New</strong> kartę.</li>
-<li>W <strong>aplikacje</strong> sekcji, wybierz <strong>Dynamics 365 dla operacji</strong>.</li>
-<li>W <strong>obszarów</strong> sekcji, wybierz <strong>chmurze platforma</strong>.</li>
+<li>Przejdź do witryny <a href="https://roadmap.dynamics.com/">planów rozwoju programu Dynamics 365</a>.</li>
+<li>Wybierz kartę <strong>Co nowego</strong>.</li>
+<li>W sekcji <strong>Aplikacje</strong> zaznacz pozycję <strong>Dynamics 365 for Operations</strong>.</li>
+<li>W sekcji <strong>Obszary</strong> zaznacz pozycję <strong>Platforma chmurowa</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">

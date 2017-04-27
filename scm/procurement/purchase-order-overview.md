@@ -27,15 +27,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-order-overview"></a>Omówienie zamówień zakupu
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule podano ogólne informacje dotyczące zamówień zakupu oraz łącza do dodatkowych artykułów, które odnoszą się do różnych etapów pokonywanych przez zamówienie zakupu.
 
 Zamówienie zakupu jest dokumentem, który reprezentuje umowę z dostawcą na zakup towarów lub usług. Dokument ten pomaga również monitorować przyjęcia produktów dokonywane względem zamówienia, a później księgować faktury od dostawcy wystawiane przez niego za zamówienie.  
 
-Strona **Zamówienia zakupu** zawiera przegląd dostępnych zamówień i umożliwia ich modyfikowanie. Po otwarciu zamówienia zakupu można wybrać widok **Nagłówek**, który zawiera informacje określane tylko jeden raz dla każdego zamówienia, takie jak szczegóły dostawcy. Alternatywnie można wybrać widok **Wiersze**, w którym można modyfikować wiersze zamówienia. Zazwyczaj użytkownik przełączy się między tymi dwoma widokami tak jak można zmodyfikować POs. Opłaty nie są wyświetlane bezpośrednio na **zamówienia zakupu** stronie, ale są dostępne za pośrednictwem menu w wierszach i nagłówku zamówienia.  
+Strona **Zamówienia zakupu** zawiera przegląd dostępnych zamówień i umożliwia ich modyfikowanie. Po otwarciu zamówienia zakupu można wybrać widok **Nagłówek**, który zawiera informacje określane tylko jeden raz dla każdego zamówienia, takie jak szczegóły dostawcy. Alternatywnie można wybrać widok **Wiersze**, w którym można modyfikować wiersze zamówienia. Zazwyczaj będziesz przełączać się między tymi dwoma widokami podczas modyfikowania zamówień zakupu. Opłaty nie są wyświetlane bezpośrednio na stronie **Zamówienia zakupu**, ale można do nich przejść za pośrednictwem menu w wierszach i nagłówku zamówienia.  
 
 Istnieje wiele raportów, gdzie można przeglądać informacje o zamówieniach zakupu, przyjęciach produktów i fakturach od dostawców. Raporty te znajdują się w modułach **Zaopatrzenie i sourcing** i **Rozrachunki z dostawcami**.  
 
-Obszary robocze **Przygotowanie zamówienia zakupu** i **Przyjęcie i obsługa zamówienia zakupu** umożliwiają wyświetlanie list zamówień zakupu w różnych stanach zaawansowania. Zawierają one również podsumowanie czynności, które należy podjąć. Obszar roboczy **Przygotowanie zamówienia zakupu** koncentruje się na tworzeniu i weryfikowaniu zamówienia zakupu, prowadzeniu zamówienia przez proces zatwierdzenia oraz potwierdzaniu z dostawcą. **Zakupu, przyjęcie zamówienia i kontynuacji** obszaru roboczego koncentruje się na przetwarzanie przyjęcia towarów lub usług z punktu sprzedaży. Obejmuje on listy, które dają wgląd w przyjęć zaległe lub że wkrótce będą do oddania przez dostawcę. Te obszary robocze nie są wykorzystywane do wykonywania pokrewnych operacji przyjęć do magazynu. Te czynności są wykonywane za pomocą stron w modułach **Zarządzanie zapasami** i **Zarządzanie magazynem**. Przetwarzanie faktur od dostawców powinno się odbywać za pomocą obszaru roboczego **Wprowadzanie faktur od dostawcy**, a płatności obsługiwać za pomocą obszaru roboczego **Płatności dostawcy**.  
+Obszary robocze **Przygotowanie zamówienia zakupu** i **Przyjęcie i obsługa zamówienia zakupu** umożliwiają wyświetlanie list zamówień zakupu w różnych stanach zaawansowania. Zawierają one również podsumowanie czynności, które należy podjąć. Obszar roboczy **Przygotowanie zamówienia zakupu** koncentruje się na tworzeniu i weryfikowaniu zamówienia zakupu, prowadzeniu zamówienia przez proces zatwierdzenia oraz potwierdzaniu z dostawcą. Obszar roboczy **Przyjęcie i obsługa zamówienia zakupu** koncentruje się na przetwarzaniu przyjęcia towarów lub usług względem zamówień zakupu. Zawiera listy dające wgląd w przyjęcia, które są zaległe lub wkrótce będą miały termin dostarczenia od dostawcy. Te obszary robocze nie są wykorzystywane do wykonywania pokrewnych operacji przyjęć do magazynu. Te czynności są wykonywane za pomocą stron w modułach **Zarządzanie zapasami** i **Zarządzanie magazynem**. Przetwarzanie faktur od dostawców powinno się odbywać za pomocą obszaru roboczego **Wprowadzanie faktur od dostawcy**, a płatności obsługiwać za pomocą obszaru roboczego **Płatności dostawcy**.  
 
 Poniższe artykuły zawierają omówienie różnych etapów, przez które przechodzi zamówienia zakupu:
 
@@ -45,7 +48,7 @@ Poniższe artykuły zawierają omówienie różnych etapów, przez które przech
 -   [Przegląd faktur od dostawcy](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
 
 ## <a name="types-of-purchase-orders"></a>Typy zamówień zakupu
-Istnieją trzy typy organizacji producentów. Podczas tworzenia zamówienia zakupu, należy określić typ. Na stronie **Parametry modułu Zaopatrzenie i sourcing** można skonfigurować domyślny typ nowych zamówień.
+Istnieją trzy typy zamówień zakupu. Podczas tworzenia zamówienia zakupu należy określić jego typ. Na stronie **Parametry modułu Zaopatrzenie i sourcing** można skonfigurować domyślny typ nowych zamówień.
 
 | Typ zamówienia zakupu        | Opis                                                                                                                                                                                                                                                                           |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -80,12 +83,14 @@ Pole **Stan zatwierdzenia** jest używane, gdy zamówienie zakupu przechodzi prz
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Purchase order creation](purchase-order-creation.md)
+[Tworzenie zamówienia zakupu](purchase-order-creation.md)
 
 [Zatwierdzanie i potwierdzanie zamówienia zakupu](purchase-order-approval-confirmation.md)
 
 [Przyjęcie produktów względem zamówień zakupu](product-receipt-against-purchase-orders.md)
 
 [Przegląd faktur od dostawcy](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

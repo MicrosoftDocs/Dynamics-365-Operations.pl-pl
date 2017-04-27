@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="straight-line-life-remaining-depreciation"></a>Amortyzacja za pozostały liniowy okres użytkowania
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie metody amortyzacji Liniowy pozostały okres użytkowania.
 
 Po skonfigurowaniu profilu amortyzacji środków trwałych i wybraniu opcji **Liniowy pozostały okresu użytkowania** w polu **Metoda** na stronie **Profile amortyzacji amortyzacja środków trwałych**, które są przypisane do tego profilu amortyzacji, będzie obliczana na podstawie pozostałego okresu użytkowania środków. Kwota amortyzacji jest generalnie taka sama w każdym okresie amortyzacji. Aby skonfigurować pozostały liniowy okres użytkowania, trzeba również wybrać opcje w polach **Rok amortyzacji** i **Częstotliwość okresu** na stronie **Profile amortyzacji**. Opcje dostępne w polu **Częstotliwość okresu** różnią się w zależności od wartości wybranej w polu **Rok amortyzacji**.
@@ -36,7 +39,7 @@ Można wybrać **Kalendarzowy** lub **Obrachunkowy** w polu **Rok amortyzacji** 
 
 ### <a name="calendar"></a>Kalendarz
 
-Jeśli wybierzesz **kalendarz** w ***rok amortyzacji*** pole, rok od 1 stycznia do dnia 31 grudnia zakłada się, nawet jeśli masz inaczej zdefiniowane kalendarza obrachunkowego. Opcja **Kalendarzowy** aktualizuje podstawę amortyzacji w dniu 1 stycznia każdego roku. Podstawą amortyzacji jest zazwyczaj wartość księgową netto minus wartość odzyskana. W poniższym przykładzie podstawa amortyzacji stanowi kolejny numer w pierwszym wyrażeniu w obliczeniach w kolumnie Obliczenia. W przypadku wybrania opcji **Kalendarzowy** jako rok amortyzacji, dostępne są następujące opcje są dostępne w polu **Częstotliwość okresu**:
+Jeśli wybrano opcję **Kalendarz** w polu ***Rok amortyzacji***, za rok przyjmuje się okres między 1 stycznia a 31 grudnia, nawet jeśli rok obrachunkowy jest zdefiniowany inaczej. Opcja **Kalendarzowy** aktualizuje podstawę amortyzacji w dniu 1 stycznia każdego roku. Podstawą amortyzacji jest zazwyczaj wartość księgową netto minus wartość odzyskana. W poniższym przykładzie podstawa amortyzacji stanowi kolejny numer w pierwszym wyrażeniu w obliczeniach w kolumnie Obliczenia. W przypadku wybrania opcji **Kalendarzowy** jako rok amortyzacji, dostępne są następujące opcje są dostępne w polu **Częstotliwość okresu**:
 
 -   **Roczne** — księgowanie kwoty 31 grudnia.
 -   **Miesięczne** — służy do księgowania miesięcznej kwoty pod koniec każdego miesiąca kalendarzowego.
@@ -48,7 +51,7 @@ Na przykład jeśli wybierzesz opcję **Roczne**, roczna amortyzacja jest księg
 
 ### <a name="fiscal"></a>Fiskalny
 
-Jeśli zostanie wybrana opcja **Obrachunkowy** w polu **Rok amortyzacji**, będzie używana amortyzacja za pozostały liniowy okres użytkowania. Amortyzacja jest obliczana na podstawie pozostałych lat obrachunkowych. Na przykład dla roku obrachunkowego 1 lipca 2015 r. do 30 czerwca 2016, obliczanie amortyzacji rozpoczyna się 1 lipca. Rok obrachunkowy może być dłuższy lub krótszy niż 12 miesięcy. Amortyzacja jest korygowana dla każdego okresu obrachunkowego. Długość kolejnego roku obrachunkowego jest określana na podstawie okresów obrachunkowych skonfigurowanych na stronie **Kalendarze obrachunkowe**. W przypadku wybrania opcji **Fiskalny** jako rok amortyzacji, w polu **Częstotliwość okresu** dostępne są następujące opcje:
+Jeśli zostanie wybrana opcja **Obrachunkowy** w polu **Rok amortyzacji**, będzie używana amortyzacja za pozostały liniowy okres użytkowania. Amortyzacja jest obliczana na podstawie pozostałych lat obrachunkowych. Na przykład dla roku obrachunkowego od 1 lipca 2015 r. do 30 czerwca 2016 r. obliczanie amortyzacji rozpoczyna się w dniu 1 lipca 2016 r. Rok obrachunkowy może być dłuższy lub krótszy niż 12 miesięcy. Amortyzacja jest korygowana dla każdego okresu obrachunkowego. Długość kolejnego roku obrachunkowego jest określana na podstawie okresów obrachunkowych skonfigurowanych na stronie **Kalendarze obrachunkowe**. W przypadku wybrania opcji **Fiskalny** jako rok amortyzacji, w polu **Częstotliwość okresu** dostępne są następujące opcje:
 
 -   **Roczne** — służy do księgowania sumy amortyzacji obliczonej dla roku obrachunkowego jako jednej kwoty ostatniego dnia roku obrachunkowego.
 -   **Okres obrachunkowy** oblicza łączną kwotę amortyzacji w roku obrachunkowym. Ta kwota jest następnie naliczana w okresach obrachunkowych określonych na stronie **Kalendarze obrachunkowe** dla kalendarza obrachunkowego, który został określony dla księgi.
@@ -73,6 +76,8 @@ Kwota amortyzacji jest taka sama co roku: (koszt nabycia - wartość odzyskana) 
 | Rok 3 | (7000 – 1000) ÷ 3 = 2000                   | 5000                                 |
 | Rok 4 | (5000 – 1000) ÷ 2 = 2000                   | 3000                                 |
 | Rok 5 | (3000 – 1000) ÷ 1 = 2000                   | 1 000                                 |
+
+
 
 
 

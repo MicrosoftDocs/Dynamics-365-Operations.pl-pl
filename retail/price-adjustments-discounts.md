@@ -1,6 +1,6 @@
 ---
 title: Korekty ceny i rabaty
-description: "Ten artykuł zawiera informacje dotyczące korekt ceny i rabaty w sprzedaży detalicznej i handlu w usłudze Microsoft Dynamics 365 dla operacji."
+description: "Ten artykuł zawiera informacje o korektach ceny i rabatach w module sprzedaży Handel detaliczny i inny w programie Microsoft Dynamics 365 for Operations."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 15891
 ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
 ms.search.region: global
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="price-adjustments-and-discounts"></a>Korekty ceny i rabaty
 
-Ten artykuł zawiera informacje dotyczące korekt ceny i rabaty w sprzedaży detalicznej i handlu w usłudze Microsoft Dynamics 365 dla operacji.
+[!include[banner](includes/banner.md)]
 
-W usłudze Dynamics 365 dla operacji - handel detaliczny, można wprowadzać korekty cen produktów, a może również skonfigurować rabaty, które są stosowane do wiersza towaru lub transakcję w punkcie sprzedaży (POS) w wywołanie Centrum zamówienia sprzedaży lub zamówienia online. Do grup cen mogą być podłączone zarówno korekty ceny i rabaty. Zarówno w przypadku korekty ceny, jak i rabatów, można określić pojedynczy datę rozpoczęcia i datę zakończenia lub okres cykliczny, kod rabatu i kilka dodatkowych atrybutów. Korekty ceny i rabaty mogą dotyczyć produktów, wariantów lub kategorii. W przypadku zastosowania więcej niż jednego rabatu do produktu odbiorca może otrzymać jeden rabat lub rabat połączony. Dynamics 365 dla operacji automatycznie zastosuje rabat lub kombinacji rabatów, który daje najlepszą cenę do odbiorcy. Podczas ustawiania korekty ceny lub rabatu należy sprawdzić, czy grupy cen są przypisane do właściwych kanałów, katalogów, przynależności lub programów lojalnościowych, do których ma mieć zastosowanie rabat. Ponadto jeśli chcesz automatycznie wygenerować identyfikator rabatu, możesz ustawić sekwencje numerów na stronie **Parametry handlu detalicznego** zanim zdefiniujesz nowy rabat lub korektę ceny lub rabat. **Uwaga:** Korekty ceny lub rabaty można usunąć. Jednak informacje statystyczne zostaną utracone.
+
+Ten artykuł zawiera informacje o korektach ceny i rabatach w module sprzedaży Handel detaliczny i inny w programie Microsoft Dynamics 365 for Operations.
+
+W module Dynamics 365 for Operations — Handel detaliczny użytkownik może dokonywać korygowania cen na produkty, a także konfigurowania rabatów, które są stosowane do wiersza towaru lub transakcji w punkcie sprzedaży, w zamówieniu sprzedaży biura obsługi lub w zamówieniu online. Do grup cen mogą być podłączone zarówno korekty ceny i rabaty. Zarówno w przypadku korekty ceny, jak i rabatów, można określić pojedynczy datę rozpoczęcia i datę zakończenia lub okres cykliczny, kod rabatu i kilka dodatkowych atrybutów. Korekty ceny i rabaty mogą dotyczyć produktów, wariantów lub kategorii. W przypadku zastosowania więcej niż jednego rabatu do produktu odbiorca może otrzymać jeden rabat lub rabat połączony. Program Dynamics 365 for Operations automatycznie zastosuje rabat lub kombinację rabatów oferującą odbiorcy najlepszą cenę. Podczas ustawiania korekty ceny lub rabatu należy sprawdzić, czy grupy cen są przypisane do właściwych kanałów, katalogów, przynależności lub programów lojalnościowych, do których ma mieć zastosowanie rabat. Ponadto jeśli chcesz automatycznie wygenerować identyfikator rabatu, możesz ustawić sekwencje numerów na stronie **Parametry handlu detalicznego** zanim zdefiniujesz nowy rabat lub korektę ceny lub rabat. **Uwaga:** Korekty ceny lub rabaty można usunąć. Jednak informacje statystyczne zostaną utracone.
 
 ### <a name="types-of-discounts"></a>Typy rabatów
 
@@ -42,5 +45,7 @@ Istnieją cztery typy rabatów sieci sprzedaży:
 -   **Rabat progowy** — stosowany przy sumie transakcji powyżej określonej kwoty.
 
 Z grupami cen mogą być skojarzone zarówno korekty ceny i rabaty. Grupy cen mogą być następnie skojarzone z kanałami, katalogami, przynależnościami i programami lojalnościowymi.
+
+
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Uchylanie, przywracanie lub wycofywanie odsetek lub opłat
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule wyjaśniono, jak uchylać, przywracać i wycofywać opłaty w postaci odsetek i opłat.
 
 Za pomocą przycisków na karcie **Windykacja** na stronie listy **Wszyscy odbiorcy** można uchylać, wycofywać lub przywracać opłaty:
@@ -43,7 +46,7 @@ Wszystkie te działania powodują modyfikację noty odsetkowej. Nota odsetkowa t
 | Wycofaj całe noty odsetkowe. –lub– Wycofaj wybrane transakcje odsetek będące częścią not odsetkowych. **Uwaga:** Nie ma możliwości wycofywania opłaty. Można jednak wycofać całą notę odsetkową, zawierającą opłatę. | Opłaty nie są już należnością od odbiorcy. Jednak opłaty staną się ponownie należne po ponownym obliczeniu odsetek. | Proces jest taki sam, jak uchylenie not odsetkowych lub wybranych transakcji odsetek. Zostanie utworzona faktura korygująca lub korekta faktury dla odbiorcy. Ta faktura korygująca umożliwia automatyczne rozliczenie noty odsetkowej. Za pomocą oddzielnego procesu można ponownie obliczyć odsetki i utworzyć nową notę odsetkową.                                                                                                                                                                                                                                                                                                                                                                                              |
 
 > [!NOTE] 
-> Umożliwia także oddzielny proces do odpisania nieściągalnych długów. W procesie tym wszystkie transakcje odbiorcy są oznaczane do rozliczenia, tzn. nie następuje jedynie uchylenie opłat będących częścią not odsetkowych.
+> Można również używać oddzielnego procesu do odpisania nieściągalnych długów. W procesie tym wszystkie transakcje odbiorcy są oznaczane do rozliczenia, tzn. nie następuje jedynie uchylenie opłat będących częścią not odsetkowych.
 
 ## <a name="adjust-interest-for-invoices"></a>Korygowanie odsetek dla faktur
 Oprócz korygowania not odsetkowych można również usuwać odsetki na fakturach za pomocą jednego z następujących procesów. Oba te procesy także korygują powiązane noty odsetkowe.
@@ -89,5 +92,7 @@ Można wycofać odsetki transakcji za pomocą przycisku **Odsetki transakcji** n
 Możesz przejrzeć szczegółową historię korekt not odsetkowych, na przykład informacje o użytkowniku, który wprowadził korektę, typie korekty, kwocie oraz czasie wprowadzenia korekty. Na przykład można wyświetlić poprzednie korekty, które zostały wprowadzone dla noty odsetkowej przed utworzeniem nowej noty odsetkowej. 
 
 Można wycofać odsetki transakcji za pomocą przycisku **Historia** na karcie **Windykacja** na stronie **Odbiorca**.
+
+
 
 

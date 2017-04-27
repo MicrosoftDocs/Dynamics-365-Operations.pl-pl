@@ -1,6 +1,6 @@
 ---
-title: "Edytuj fakturę identyfikatorów na zamówienia sprzedaży dla Europy Wschodniej"
-description: "Ten temat zawiera informacje o wpływające na numery faktur na dokumentach dostawy i fakturach dla Republiki Czeskiej, Estonii, Węgier, Litwy, Łotwy i Polski parametrów rozrachunków z odbiorcami."
+title: "Edytowanie identyfikator faktur w zamówieniach sprzedaży dla Europy Wschodniej"
+description: "Ten temat zawiera informacje o parametrach rozrachunków z odbiorcami, które wpływają na numery faktur w dokumentach dostawy i fakturach dla Czech, Estonii, Węgier, Litwy, Łotwy i Polski."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,11 +24,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Edytuj fakturę identyfikatorów na zamówienia sprzedaży dla Europy Wschodniej
+# <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Edytowanie identyfikator faktur w zamówieniach sprzedaży dla Europy Wschodniej
 
-Ten temat zawiera informacje o wpływające na numery faktur na dokumentach dostawy i fakturach dla Republiki Czeskiej, Estonii, Węgier, Litwy, Łotwy i Polski parametrów rozrachunków z odbiorcami.
+[!include[banner](../includes/banner.md)]
 
-Dla osób prawnych w Republice Czeskiej, Estonii, Węgier, Litwy, Łotwy i Polski **Edytuj identyfikator faktury w zamówieniach sprzedaży** opcja umożliwia ręczne wprowadzenie dostawy i numery faktur dla odbiorcy w dokumencie dostawy i faktur. Następujące opcje są dostępne na **rozrachunków z odbiorcami Parametry** strona na **faktury** skróconej w **aktualizacje** kartę.
+
+Ten temat zawiera informacje o parametrach rozrachunków z odbiorcami, które wpływają na numery faktur w dokumentach dostawy i fakturach dla Czech, Estonii, Węgier, Litwy, Łotwy i Polski.
+
+Firmom w Czechach, Estonii, na Węgrzech, Litwie, Łotwie i w Polsce opcja **Edytuj identyfikator faktury w zamówieniach sprzedaży** umożliwia ręczne wprowadzenie numerów dokumentów dostawy i faktur na tych dokumentach odbiorców. Następujące opcje są dostępne na stronie **Parametry modułu rozrachunków z odbiorcami**, na skróconej karcie **Faktura** dostępnej na karcie **Aktualizacje**.
 <table>
 <colgroup>
 <col width="50%" />
@@ -36,25 +39,27 @@ Dla osób prawnych w Republice Czeskiej, Estonii, Węgier, Litwy, Łotwy i Polsk
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Parametr</strong></td>
-<td> <strong>Description</strong></td>
+<td><strong> Parametr</strong></td>
+<td> <strong>Opis</strong></td>
 </tr>
 <tr class="even">
 <td>Edytuj identyfikator faktury w zamówieniu sprzedaży</td>
-<td>Jeśli ta opcja jest zaznaczona, można wykonać następujące czynności:
+<td>Jeśli ta opcja zostanie wybrana, można wykonywać następujące czynności:
 <ul>
-<li>Edytowanie <strong>dostawy</strong> w <strong>pakowania Księgowanie dokumentu dostawy</strong> strony.</li>
-<li>Edytowanie <strong>faktury</strong> w <strong>Księgowanie faktury</strong> strony.</li>
-<li>Wybierz <strong>wyboru użyty numer faktury</strong> parametru.</li>
+<li>Edytowanie pola <strong>Dokument dostawy</strong> na stronie <strong>Księgowanie dokumentu dostawy</strong>.</li>
+<li>Edytowanie pola <strong>Faktura</strong> na stronie <strong>Księgowanie faktury</strong>.</li>
+<li>Wybór parametru <strong>Sprawdź użyty numer faktury</strong>.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Sprawdź użyty numer faktury</td>
-<td>Jeśli ta opcja jest zaznaczona, podczas procesu, księgowania faktury system sprawdzi, że numer faktury już nie istnieje dla zaksięgowanych faktur. Jeśli numer istnieje, wyświetlany jest komunikat o błędzie.</td>
+<td>Jeśli ta opcja jest zaznaczona, w trakcie procesu księgowania faktury system sprawdzi, czy numer faktury już nie istnieje dla zaksięgowanych faktur. Jeśli numer istnieje, wyświetlany jest komunikat o błędzie.</td>
 </tr>
 </tbody>
 </table>
 
  
+
+
 
 

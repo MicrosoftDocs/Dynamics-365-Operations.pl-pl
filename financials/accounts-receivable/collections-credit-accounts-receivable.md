@@ -1,6 +1,6 @@
 ---
 title: Kredyty i windykacja w rozrachunkach z odbiorcami
-description: "Informacje z odbiorcami kolekcje kont jest zarządzany w jednym widoku Centrum za pomocą usługi Microsoft Dynamics 365 dla strony kolekcje operacji. Kierownicy ds. kredytów i windykacji mogą używać tego centralnego widoku do zarządzania windykacją. Agenci ds. windykacji mogą rozpocząć proces windykacji na podstawie list odbiorców, które są generowane przy użyciu wstępnie zdefiniowanych kryteriów windykacji, lub ze strony Windykacja."
+description: "Zarządzanie informacjami dotyczącymi windykacji w module Rozrachunki z odbiorcami odbywa się w jednym centralnym widoku przy użyciu strony Windykacja dostępnej w programie Microsoft Dynamics 365 for Operations. Kierownicy ds. kredytów i windykacji mogą używać tego centralnego widoku do zarządzania windykacją. Agenci ds. windykacji mogą rozpocząć proces windykacji na podstawie list odbiorców, które są generowane przy użyciu wstępnie zdefiniowanych kryteriów windykacji, lub ze strony Windykacja."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Kredyty i windykacja w rozrachunkach z odbiorcami
 
-Informacje z odbiorcami kolekcje kont jest zarządzany w jednym widoku Centrum za pomocą usługi Microsoft Dynamics 365 dla strony kolekcje operacji. Kierownicy ds. kredytów i windykacji mogą używać tego centralnego widoku do zarządzania windykacją. Agenci ds. windykacji mogą rozpocząć proces windykacji na podstawie list odbiorców, które są generowane przy użyciu wstępnie zdefiniowanych kryteriów windykacji, lub ze strony Windykacja.
+[!include[banner](../includes/banner.md)]
+
+
+Zarządzanie informacjami dotyczącymi windykacji w module Rozrachunki z odbiorcami odbywa się w jednym centralnym widoku przy użyciu strony Windykacja dostępnej w programie Microsoft Dynamics 365 for Operations. Kierownicy ds. kredytów i windykacji mogą używać tego centralnego widoku do zarządzania windykacją. Agenci ds. windykacji mogą rozpocząć proces windykacji na podstawie list odbiorców, które są generowane przy użyciu wstępnie zdefiniowanych kryteriów windykacji, lub ze strony Windykacja.
 
 Przed rozpoczęciem konfigurowania lub pracy z windykacjami należy zapoznać się z następującymi pojęciami:
 -   Migawka wiekowania odbiorcy zawiera informacje o wiekowanym saldzie w określonym momencie
@@ -55,9 +58,9 @@ Dla każdego okresu wiekowania w definicji okresów wiekowania jest tworzony szc
 Pule odbiorców są kwerendami definiującymi grupę rekordów odbiorców, które mogą być wyświetlane i zarządzane dla windykacji lub procesów wiekowania. Używaj pul klientów, aby filtrować informacje na stronach listy Wiekowane salda, Działania związane z windykacją i sprawy związane z windykacją. Pule klientów mogą również służyć do filtrowania kont odbiorców, które są uwzględniane podczas tworzenia migawki wiekowania.
 
 ## <a name="collections-agents"></a>Agenci ds. windykacji
-Domyślnie Microsoft Dynamics 365 dla użytkowników operacji można wyświetlić informacje o wszystkich klientach na stronach listy kolekcji. Rekordy agenta ds. windykacji służą do określania pul klientów, dostępnych do filtrowania informacji na stronach listy windykacji i na stronie windykacji. 
+Domyślnie użytkownicy programu Microsoft Dynamics 365 for Operations mogą wyświetlać wszystkie informacje o odbiorcy na stronach listy windykacji. Rekordy agenta ds. windykacji służą do określania pul klientów, dostępnych do filtrowania informacji na stronach listy windykacji i na stronie windykacji. 
 
-Agent ds. windykacji jest osobą, która współpracuje z odbiorcami w celu upewnienia się, że płatności są inkasowane w terminie. W usłudze Microsoft Dynamics 365 dla operacji agentów ds są pracownicy, którzy są przypisane do użytkowników na stronie Ustawienia użytkownika.
+Agent ds. windykacji jest osobą, która współpracuje z odbiorcami w celu upewnienia się, że płatności są inkasowane w terminie. W programie Microsoft Dynamics 365 for Operations agentami ds. windykacji są pracownicy przypisani do użytkowników na stronie Ustawienia użytkownika.
 
 ## <a name="collections-list-pages"></a> Strony list windykacji 
 Następujące strony listy pomagają organizować informacje o windykacji.
@@ -67,7 +70,7 @@ Następujące strony listy pomagają organizować informacje o windykacji.
 
 > [!NOTE]
 > Aby wyświetlić informacje na stronach listy windykacji, należy utworzyć migawkę wiekowania. Informacje są wyświetlane tylko dla tych klientów, dla których została utworzona migawka wiekowania. Rekordy, które zostaną wyświetlone na stronie listy można dodatkowo filtrować, w następujący sposób:
-<li>Domyślnie, usługi Microsoft Dynamics 365 dla operacji użytkownik ma dostęp do wszystkich klientów, którzy mają aging migawki.</li>
+<li>Domyślnie użytkownik programu Microsoft Dynamics 365 for Operations ma dostęp do wszystkich odbiorców, którzy mają migawki wiekowania.</li>
 <li>Jeśli istnieje pula klientów, użytkownik musi być ustawiony jako agent ds. windykacji, aby korzystać z pul do filtrowania informacji na stronach listy windykacji. Informacje są ograniczone do klientów, którzy znajdują się w wybranej puli klientów.</li>
 <li>Jeśli użytkownik jest skonfigurowany jako agent ds., tylko pule, które są wybrane dla tego agenta, są dostępne na stronie listy. W przypadku włączenia dla danego agenta opcji Zezwalaj agentowi na przeglądanie wszystkich pul klientów na stronie Agent ds. windykacji, będzie miał dostęp do wszystkich pul.</li>
 
@@ -75,7 +78,7 @@ Następujące strony listy pomagają organizować informacje o windykacji.
 ## <a name="collections-page"></a> strona Windykacja
 Strona Windykacja służy do wyświetlania, zarządzania i podejmowania działań względem informacji dotyczących windykacji oraz spraw danego odbiorcy. 
 
-Górne okienko wyświetla przypadków dla wybranego odbiorcy. W środkowym okienku są wyświetlane transakcje odbiorcy. Dolne okienko służy do wyświetlania działań dla odbiorcy. Można utworzyć sprawy dotyczące windykacji, aby śledzić informacje o windykacjach dla jednej lub większej liczby transakcji lub działań. Informacje w okienkach górnym i dolnym można filtrować według sprawy. 
+Górne okienko wyświetla sprawy wybranego odbiorcy. Środkowe okienko pokazuje transakcje odbiorcy. Dolne okienko służy do wyświetlania działań dla odbiorcy. Można utworzyć sprawy dotyczące windykacji, aby śledzić informacje o windykacjach dla jednej lub większej liczby transakcji lub działań. Informacje w okienkach górnym i dolnym można filtrować według sprawy. 
 
 Pola informacji wyświetlają wiekowane salda i limit kredytu dla wybranego odbiorcy. Te informacje są przechowywane w migawce wiekowania. W razie potrzeby można aktualizować migawki wiekowania przy użyciu bieżących informacji. 
 
@@ -86,7 +89,7 @@ Można uchylić, przywróć lub wycofać pełne noty odsetkowe, opłaty i odsetk
 
 Te zmiany wpływają tylko na noty odsetkowe oraz odsetki i opłaty, których dotyczą. Należy wykonać kroki w sekcji „Tworzenie transakcji odpisu w jednym kroku”, aby odpisać łączną kwotę zobowiązań odbiorcy.
 
-## <a name="create-writeoff-transactions"></a>Tworzenie transakcji writeoff
+## <a name="create-writeoff-transactions"></a>Tworzenie transakcji odpisu
 Można odpisać nieściągalne długi, klikając Odpisz w formularzu Windykacja i na stronach listy Wiekowane salda, Odbiorcy i Otwarte faktury dla odbiorców. 
 
 Gdy odpisujesz transakcje dla odbiorcy, wszystkie transakcje dla tego odbiorcy są automatycznie oznaczane do rozliczenia. Odpisywana kwota zależy od kwoty netto oznaczonych transakcji. Transakcja odpisu jest tworzona w arkuszu finansowym i może zawierać maksymalnie trzy typy wierszy arkusza.
@@ -100,6 +103,8 @@ Przetwarzanie płatności przy niewystarczających funduszach
 --------------------------------------------
 
 Klikając płatności przy niewystarczających funduszach na stronie kolekcje można przetwarzać płatności przy niewystarczających funduszach. Po kliknięciu tego przycisku nastąpi anulowanie płatności. Jeśli do odbiorcy ma być stosowana opłata za niewystarczające fundusze, w arkuszu płatności jest tworzona transakcja opłat. Kwota opłaty jest oparta na ustawieniach dla automatycznych opłat. Automatyczne opłaty, które są stosowane do płatności przy niewystarczających funduszach, są określone przez grupę opłat wybraną na stronie Konta bankowe dla danego konta bankowego.
+
+
 
 
 

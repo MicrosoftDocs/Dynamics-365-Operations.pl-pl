@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-agreements"></a>Umowy zakupu
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o umowach zakupu. Umowa zakupu jest to kontraktem, który zobowiązuje organizację do zakupu określonej ilości lub za określoną kwotę przy użyciu wielu zamówień zakupu na przestrzeni czasu. W zamian za to zobowiązanie kupujący otrzymuje specjalne ceny i rabaty. 
 
 Umowa zakupu może dotyczyć określonej ilości produktu, określonej kwoty produktów w walucie lub określonej kwoty produktów w walucie w kategorii zaopatrzenia. Ceny i rabaty dla umowy zakupu zastępują ceny i rabaty, które są określone w jakichkolwiek istniejących umowach handlowych.  
@@ -70,7 +73,7 @@ Obszar **Umowa** pokazuje ilość całkowitą lub łączną kwotę, na jaką zos
 Dostępne są wiersze zamówienia zakupu i wiersze faktury wpływające na obliczenia realizacji; aby je wyświetlić, trzeba zaznaczyć działanie **Informacje pokrewne** w wierszach lub w nagłówku umowy zakupu.
 
 ## <a name="confirmations-and-version-history-for-purchase-agreements"></a>Potwierdenia i historia wersji umów zakupu
-Gdy potwierdzono umowę zakupu, bieżąca wersja umowy zakupu jest przechowywana w tabeli historii. Jeśli zmieni się umowę zakupu, można potwierdzić ją ponownie, aby zachować inną wersję umowy zakupu w historii. Nie potwierdzenie umowy zakupu, można go użyć do utworzenia punktu sprzedaży. Jednakże nie są przechowywane informacje o historii dla umowy zakupu. Można wyświetlić podgląd lub wydrukować wersje umowy. Następnie można udostępnić zmiany dostawcy w celu uzyskania zatwierdzenia.
+Gdy potwierdzono umowę zakupu, bieżąca wersja umowy zakupu jest przechowywana w tabeli historii. Jeśli zmieni się umowę zakupu, można potwierdzić ją ponownie, aby zachować inną wersję umowy zakupu w historii. Jeśli nie można potwierdzisz umowy zakupu, nadal możesz jej używać do tworzenia zamówień zakupu, ale informacje o historii dla tej umowy nie są zapisywane. Można wyświetlić podgląd lub wydrukować wersje umowy. Następnie można udostępnić zmiany dostawcy w celu uzyskania zatwierdzenia.
 
 ## <a name="applying-purchase-agreements-in-the-ordering-process"></a>Stosowanie umów zakupu w procesie zamawiania
 Podczas tworzenia zamówienia zakupu można zastosować do niego umowę zakupu. Informacje z postanowień umowy, takie jak warunki płatności, warunki dostawy i adres dostawy, są następnie kopiowane do nagłówka zamówienia zakupu. Jeśli zamówienie zakupu zawiera jeden lub więcej wierszy dla produktów lub kategorii, które są objęte umową, dla tych wierszy są używane ceny i rabaty z umowy zakupu. Kwota lub ilość w wierszu zamówienia przyczynia się do realizacji zobowiązania wynikającego z umowy zakupu. To samo zamówienie zakupu może zawierać zarówno wiersze, które nie są powiązane z umową zakupu, jak i wiersze, które mają zobowiązania dla umowy zakupu.  
@@ -91,8 +94,10 @@ Wymiary finansowe można skopiować do nagłówków dokumentu lub pojedynczych w
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Tworzenie umowy zakupu (Przewodnik zadania)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
+[Tworzenie umowy zakupu (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
 
-[Tworzenie zlecenia wydania zakupu z umowy zakupu (Przewodnik zadania)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+[Tworzenie zlecenia wydania zakupu na podstawie umowy zakupu (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+
+
 
 

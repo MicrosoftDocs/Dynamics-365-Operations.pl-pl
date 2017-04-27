@@ -28,18 +28,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="connect-the-help-system"></a>Łączenie z systemem Pomocy
 
-W tym temacie opisano składniki systemu pomocy Microsoft Dynamics 365 dla operacji. Omówiono w nim sposoby łączenia tych składników i krótki opis sposobu tworzenia niestandardowych pomocy. 
+W tym temacie opisano składniki systemu Pomocy w programie Microsoft Dynamics 365 for Operations. Omówiono sposoby podłączania tych składników oraz podstawowe zasady tworzenia pomocy niestandardowej. 
 
 <a name="help-architecture"></a>Architektura modułu Pomoc
 -----------------
 
-Następująca ilustracja pokazuje części 365 Dynamics dla operacji pomocy systemu. System pomocy w produkcie ściąga artykuły z 365 Dynamics witryna operacji na https://docs.microsoft.com, a także linie pomocnicze zadania przechowywane w procesu biznesowego w cyklu życia usługi (LCS). 
-**Uwaga:** funkcje wymienione na diagramie gwiazdką (\*) są planowane, ale nie są jeszcze dostępne. [![Help architecture](./media/help-architecture.png)](./media/help-architecture.png)
+Poniższa ilustracja pokazuje części systemu Pomocy w programie Dynamics 365 for Operations. Wewnętrzny system Pomocy ściąga artykuły z witryny programu Dynamics 365 for Operations pod adresem https://docs.microsoft.com oraz przewodniki po zadaniach przechowywane w narzędziu do modelowania procesów biznesowych w usłudze Lifecycle Services (LCS). 
+**Uwaga:** funkcje oznaczone w diagramie gwiazdką (\*) są planowane, ale jeszcze niedostępne. [![Architektura modułu Pomoc](./media/help-architecture.png)](./media/help-architecture.png)
 
-## <a name="connecting-the-help-system"></a>Łączenie systemu pomocy
-Za pomocą **parametrów systemu** stronę, Administratorzy systemu połączyć kawałki dla realizacji systemu pomocy. [![Formularz Parametry systemu z ustawieniami pomocy](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) na **parametrów systemu** strony, wykonaj następujące kroki:
+## <a name="connecting-the-help-system"></a>Łączenie z systemem Pomocy
+Za pomocą strony **Parametry systemowe** administratorzy łączą elementy systemu Pomocy i je implementują. [![Formularz Parametry systemowe z ustawieniami Pomocy](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) Na stronie **Parametry systemowe** wykonaj następujące czynności:
 
-1.  **Ważne:** przy pierwszym otwarciu **Pomoc** kartę, należy nawiązać połączenie usług cyklu eksploatacji. Pamiętaj kliknąć łącze w środku formularza, czekać na połączenie, zamknij okno dialogowe, a następnie kliknij **OK** aby dostać się do **parametrów systemu** strony. [![Nawiązać LCS](./media/connect-to-lcs-crop-1024x365.png "nawiązać LCS")](./media/connect-to-lcs-crop.png)
+1.  **Ważne:** Podczas pierwszego otwierania karty **Pomoc** należy utworzyć połączenie z usługą Lifecycle Services. Kliknij łącze na środku formularza, poczekaj na nawiązanie połączenia, zamknij okno dialogowe i kliknij przycisk **OK**, co spowoduje przejście do strony **Parametry systemu**.[![Łączenie z usługą LCS](./media/connect-to-lcs-crop-1024x365.png "Łączenie z usługą LCS")](./media/connect-to-lcs-crop.png)
 2.  Wybierz projekt Lifecycle Services, z którym chcesz się połączyć.
 3.  Wybierz biblioteki BPM (w ramach wybranego projektu), z których będą pobierane nagrania zadań.
 4.  Ustaw kolejność wyświetlania bibliotek BPM. Określa kolejność wyświetlania nagrań z bibliotek w okienku **pomocy**.
@@ -48,23 +48,23 @@ Po wykonaniu tych kroków można otworzyć okienko **pomocy** i kliknąć kartę
 
 ### <a name="showing-translated-task-guides"></a>Wyświetlanie przetłumaczonych przewodników po zadaniach
 
-Przewodniki przetłumaczony zadania były po raz pierwszy wysłane w 2016 maja Unified biblioteki APQC i biblioteki wprowadzenie. Aby wyświetlić przetłumaczone przewodniki po zadaniach w pomocy w programie Dynamics 365 for Operations, upewnij się, że masz połączenie z biblioteką z maja. Język, w którym przewodnik zadanie zostanie wyświetlone w steruje dla każdego użytkownika, ustawienia języka w obszarze **opcje**&gt;**preferencje**. **Uwaga:** Mimo że przetłumaczono wiele przewodników po zadaniach, obecnie klient programu Dynamics 365 for Operations nie pokazuje nazw przetłumaczonych przewodników. Ponadto prowadnice zadań, które zostały wydane w lutym 2016 są dostępne w tłumaczeniu w bibliotece maja. Opublikujemy zaktualizowaną bibliotekę z dodatkowymi tłumaczeniami.
+Przetłumaczone przewodniki po zadaniach po raz pierwszy umieszczono w ujednoliconej bibliotece APQC w wydaniu z maja 2016 r. oraz w bibliotece ułatwiającej rozpoczęcie pracy. Aby wyświetlić przetłumaczone przewodniki po zadaniach w pomocy w programie Dynamics 365 for Operations, upewnij się, że masz połączenie z biblioteką z maja. Język wyświetlania przetłumaczonego przewodnika po zadaniu jest kontrolowany przez każdego użytkownika w ustawieniach języka w oknie **Opcje** &gt; **Preferencje**. **Uwaga:** Mimo że przetłumaczono wiele przewodników po zadaniach, obecnie klient programu Dynamics 365 for Operations nie pokazuje nazw przetłumaczonych przewodników. Ponadto w majowej bibliotece są dostępne tłumaczenia tylko przewodników po zadaniach opublikowanych w lutym 2016 r. Opublikujemy zaktualizowaną bibliotekę z dodatkowymi tłumaczeniami.
 
 -   Jeśli przewodnik po zadaniu został przetłumaczony, po otwarciu przewodnika jego cały tekst będzie wyświetlany w wybranym języku.
 -   Jeśli przewodnik po zadaniu nie został jeszcze przetłumaczony, po otwarciu przewodnika tylko część tekstu (formanty) będzie wyświetlana w wybranym języku.
 
 ## <a name="creating-custom-help"></a>Tworzenie pomocy niestandardowej
-We wdrożeniu programu Dynamics 365 for Operations można utworzyć pomoc niestandardową poprzez utworzenie nagrań zadań odpowiadających konkretnemu wdrożeniu i zapisanie ich w bibliotece procesów biznesowych LCS. W przypadku partnerów: jeśli zostanie podniesiony poziom biblioteki do firmowej i zostanie ona uwzględniona w rozwiązaniu, będzie dostępna dla klientów. Można również utworzyć kopię ujednoliconej globalnej biblioteki APQC, a następnie otworzyć tę kopię, otwierać z niej nagrania zadań, modyfikować je i zapisywać nagrania z wprowadzonymi zmianami. Aby uzyskać więcej informacji, zobacz [jak utworzyć zadanie nagrania, aby użyć jako dokumentacji lub szkolenia](../user-interface/task-recorder.md).
+We wdrożeniu programu Dynamics 365 for Operations można utworzyć pomoc niestandardową poprzez utworzenie nagrań zadań odpowiadających konkretnemu wdrożeniu i zapisanie ich w bibliotece procesów biznesowych LCS. W przypadku partnerów: jeśli zostanie podniesiony poziom biblioteki do firmowej i zostanie ona uwzględniona w rozwiązaniu, będzie dostępna dla klientów. Można również utworzyć kopię ujednoliconej globalnej biblioteki APQC, a następnie otworzyć tę kopię, otwierać z niej nagrania zadań, modyfikować je i zapisywać nagrania z wprowadzonymi zmianami. Aby uzyskać więcej informacji, zobacz [Jak utworzyć nagrania zadań do użycia w dokumentacji lub na szkoleniach](../user-interface/task-recorder.md).
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Help overview](help-overview.md)
+[Omówienie Pomocy](help-overview.md)
 
-[Omówienie Rejestratora zadań](../user-interface/task-recorder.md)
+[Omówienie rejestratora zadań](../user-interface/task-recorder.md)
 
 [Jak utworzyć nagrania zadań do użycia w dokumentacji lub na szkoleniach](../user-interface/task-recorder-training-docs.md)
 
-[Tworzenie nowej biblioteki szkolenia dla usługi Dynamics 365 dla operacji w ramach cyklu życia usługi za pomocą programu Task Recorder (łącze zewnętrzne)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
+[Tworzenie nowych bibliotek szkoleń dla programu Dynamics 365 for Operations w portalu Lifecycle Services za pomocą Rejestratora zdań (łącze zewnętrzne)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
 

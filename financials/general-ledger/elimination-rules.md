@@ -1,6 +1,6 @@
 ---
 title: "Reguły eliminacji"
-description: "Ten temat zawiera informacje o reguł eliminacji i różnych opcji w zakresie sprawozdawczości o eliminacji."
+description: "Ten temat zawiera informacje o różnych regułach eliminacji i opcjach raportowania eliminacji."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="elimination-rules"></a>Reguły eliminacji
 
-Ten temat zawiera informacje o reguł eliminacji i różnych opcji w zakresie sprawozdawczości o eliminacji.
+[!include[banner](../includes/banner.md)]
 
-Transakcje eliminacji są wymagane, gdy firma macierzysta współpracuje z przynajmniej jednym oddziałem firmy oraz korzysta ze skonsolidowanych raportów finansowych. Skonsolidowane sprawozdania finansowe muszą zawierać tylko transakcje między skonsolidowaną organizacją a innymi podmiotami spoza tej organizacji. W związku z tym transakcje między podmiotami prawnymi, które są częścią tej samej organizacji musi być usunięty lub wyeliminowane z księgi głównej, są wyświetlane w raportach finansowych. Istnieje wiele sposobów przygotowania raportu na temat eliminacji:
+
+Ten temat zawiera informacje o różnych regułach eliminacji i opcjach raportowania eliminacji.
+
+Transakcje eliminacji są wymagane, gdy firma macierzysta współpracuje z przynajmniej jednym oddziałem firmy oraz korzysta ze skonsolidowanych raportów finansowych. Skonsolidowane sprawozdania finansowe muszą zawierać tylko transakcje między skonsolidowaną organizacją a innymi podmiotami spoza tej organizacji. Z tego względu transakcje między firmami, które znajdują się w tej samej organizacji, należy usunąć lub wyeliminować z księgi głównej, aby nie były wyświetlane w raportach finansowych. Istnieje wiele sposobów przygotowania raportu na temat eliminacji:
 
 -   Reguły eliminacji mogą być tworzone i przetwarzane w firmie konsolidacji lub eliminacji.
 -   Raporty finansowe mogą pokazywać konta i wymiary eliminacji w określonym wierszu lub kolumnie.
@@ -129,27 +132,29 @@ Twoja firma, czyli firma A, sprzedaje gadżety innej firmie w twojej organizacji
 Wszystkie te transakcje tworzą transakcje międzyfirmowe, księgowane na kontach zobowiązań i należności. Ponadto w tych transakcjach mogą być uwzględniane kwoty podwyżek i obniżek, gdy kwota sprzedaży międzyfirmowej nie jest równa kosztowi sprzedanych towarów.
 
 ## <a name="set-up-elimination-rules"></a>Konfigurowanie reguł eliminacji
-Podczas konfigurowania reguł eliminacji w usłudze Dynamics 365 dla operacji, zaleca się utworzenie wymiaru finansowego, w szczególności do celów likwidacji. Większość klientów Nazwa partnera handlowego lub podobnego elementu. Jeśli nie chcesz użyć wymiaru finansowego, następnie należy mieć konta główne, które są specyficzne dla tylko transakcji międzyfirmowych. 
+Podczas konfigurowania reguł eliminacji w programie Dynamics 365 for Operations zalecamy utworzenie wymiaru finansowego specjalnie do celów eliminacji. Większość klientów nazywa ten wymiar Partner handlowy lub podobnie. Jeśli postanowisz nie używać wymiaru finansowego, to upewnij się, że masz konta główne przeznaczone tylko do transakcji międzyfirmowych. 
 
-Ustawienia dla eliminacji znajduje się w obszarze Ustawienia modułu konsolidacji. Po wprowadzeniu opisu reguły, musisz wybrać firmę, która przeprowadza księgowanie arkusza eliminacji. Powinno to firma, która ma **Użyj na potrzeby procesu eliminacji finansowej** wybrany w ustawieniach podmiotu prawnego. 
+Ta konfiguracja eliminacji znajduje się w obszarze Ustawienia w module Konsolidacje. Po wprowadzeniu opisu reguły trzeba wybrać firmę, w której arkusza eliminacji będzie księgowany. Powinna to być firma, która ma wybraną opcję **Użyj na potrzeby procesu eliminacji finansowej** w ustawieniach firmy. 
 
-Datę można ustawić reguły eliminacji staje się skuteczne i kiedy wygasł, w razie potrzeby. Należy ustawić **Active** do **tak** jeśli ma ona być dostępny w procesie eliminacji propozycji. Wybierz nazwę arkusza, który ma typ **eliminacji**.
+W razie potrzeby można ustawić daty początku i końca obowiązywania reguły eliminacji. Należy ustawić opcję **Aktywne** na **Tak**, jeśli reguła ma być dostępna w procesie propozycji eliminacji. Wybierz arkusz, który ma typ **Eliminacja**.
 
-Po zdefiniowaniu podstawy można zdefiniować reguły aktualnie przetwarzanego przez kliknięcie przycisku **linii**. Możliwe są dwie opcje dla eliminacji, eliminując kwota obroty netto lub definiowaniu stałej kwoty. 
+Po określeniu podstawowych ustawień można zdefiniować faktyczne reguły przetwarzanego przez kliknięcie przycisku **Wiersze**. Możliwe są dwie opcje dla eliminacji: eliminowanie kwoty zmiany netto lub definiowanie stałej kwoty. 
 
-Wybierz konta źródłowego. Można użyć gwiazdki (\*) jako symbolu wieloznacznego. Na przykład, 1\* należałoby zaznaczyć wszystkich kont, które zaczynają się od 1 jako źródło danych dla alokacji. 
+Wybierz konto źródłowe. Można użyć gwiazdki (\*) jako symbolu wieloznacznego. Na przykład wartość 1\* spowodowałaby używanie jako źródła danych alokacji wszystkich kont rozpoczynających się od 1. 
 
-Po wybraniu konta źródłowego, **konto specyfikacji** Określa konto od firmy docelowej, która jest używana. Wybierz **źródło** Jeśli chcesz używać tego samego konta głównego zdefiniowane w **źródło** konta. Jeśli wybierzesz **zdefiniowane przez użytkownika**, a następnie należy określić konta docelowego. 
+Po wybraniu kont źródłowych ustawienie **Specyfikacja konta** określa konto z używanej firmy docelowej. Wybierz opcję **Źródło**, jeśli chcesz używać tego samego konta głównego zdefiniowanego w ustawieniu **Źródło**. Jeśli wybierzesz opcję **Zdefiniowany przez użytkownika**, należy określić konto docelowe. 
 
-Specyfikacja wymiaru działa w ten sam sposób. Jeśli wybierzesz **źródło**, użyje tych samych wymiarów w firmie docelowej jako firmy źródłowej. Jeśli wybierzesz **zdefiniowane przez użytkownika**, będziesz musiał określić wymiary w firmie docelowej klikając **Wymiary docelowe** elementu menu. 
+Specyfikacja wymiaru działa w ten sam sposób. Jeśli wybierzesz opcję **Źródło**, w firmie docelowej będą używane te same wymiary, jak w firmie źródłowej. Jeśli wybierzesz opcję **Zdefiniowany przez użytkownika**, będzie trzeba określić wymiary w firmie docelowej, klikając elementu menu **Docelowe wymiary**. 
 
-Wybierz wymiary źródłowe i wymiary finansowe i wartości, które są używane jako źródło eliminacji.
+Wybierz wymiary źródłowe i wymiary finansowe oraz wartości, które będą używane jako źródło eliminacji.
 
 ## <a name="process-elimination-transactions"></a>Przetwarzanie transakcje eliminacji
-Istnieją dwa sposoby do przetwarzania eliminacji transakcji, podczas procesu online Konsoliduj lub Tworzenie arkusza eliminacji i uruchomiony proces eliminacji propozycji. W tej sekcji skupia się na tworzenie arkusza i uruchamiania procesu eliminacji. 
+Istnieją dwa sposoby przetwarzania transakcji eliminacji: w procesie konsolidacji online lub poprzez utworzenie arkusza eliminacji i uruchomienie procesu propozycji eliminacji. W tej sekcji skupiono się na tworzeniu arkusza i wykonywaniu procesu eliminacji. 
 
-W firmie zdefiniowane jako firma z wpisami eliminacji, zaznacz **arkusza eliminacji** w module konsolidacji. Po wybraniu nazwy arkusza, kliknij przycisk **linii**. Wniosek można uruchomić wybierając **wniosków** menu, a następnie wybierając **Propozycja eliminacji**.
+W firmie zdefiniowanej jako firma eliminacji wybierz opcję **Arkusz eliminacji** w module Konsolidacje. Po wybraniu arkusza kliknij przycisk **Wiersze**. Propozycję można wygenerować, wybierając menu **Propozycje**, a następnie wybierając opcję **Propozycja eliminacji**.
 
-Wybierz firmy, która jest źródłem skonsolidowane dane, a następnie wybierz regułę, którą chcesz przetworzyć. Wprowadź datę początkową, aby rozpocząć wyszukiwanie dla eliminacji kwot i datę końcową, aby końcowa data wyszukiwanie dla eliminacji kwot. **Data księgowania k/g** pole jest data, używany do księgowania w księdze głównej. Po kliknięciu przycisku **OK**, można przejrzeć kwoty i księgowanie arkusza.
+Wybierz firmę będącą źródłem skonsolidowanych danych, a następnie wybierz regułę, którą chcesz przetwarzać. Wprowadź daty początkową i końcową określające, kiedy ma się zaczynać i kończyć wyszukiwanie kwot eliminacji. Pole **Data księgowania w księdze głównej** zawiera datę zaksięgowania arkusza w księdze głównej. Po kliknięciu przycisku **OK** można przejrzeć kwoty i zaksięgować arkusz.
+
+
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-financial-reports"></a>Wyświetlanie raportów finansowych
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano sposób wyświetlania i eksplorowania sprawozdań finansowych w systemie Microsoft Dynamics AX. Artykuł zawiera informacje dotyczące różnych opcji, które można zastosować do sprawozdań finansowych, aby zmienić ich wygląd i zawarte dane.
 
 <a name="financial-reporting-overview"></a>Omówienie raportowania finansowego
@@ -48,7 +51,7 @@ Możesz zmienić dane raportu, dodać atrybuty i filtry wymiarów lub zmienić s
 
 -   Aby zmienić podstawowe okres i rok bazowy raportu, wybierz okres bazowy i rok bazowy, a następnie kliknij **OK**.
 -   Aby zastosować filtry atrybutu do raportu, zaznacz **Dodaj filtr atrybutu**. Wybierz atrybut, wpisz wartość atrybutu, a następnie kliknij **OK**. Na przykład, jeśli wybierzesz atrybut **kategoria konta**, wprowadź **sprzedaż** jako wartość atrybutu. Aby usunąć filtr atrybutów, kliknij **wyczyść**.
--   Aby zastosować filtry wymiarów do raportu, zaznacz **Dodaj filtr wymiaru**. Wybierz wymiar, a następnie wpisz identyfikator wymiaru lub wybierz wymiar z listy. Aby usunąć filtr atrybutów, kliknij **wyczyść**.
+-   Aby zastosować filtry wymiarów do raportu, zaznacz opcję **Dodaj filtr wymiarów**. Wybierz wymiar, a następnie wpisz identyfikator wymiaru lub wybierz wymiar z listy. Aby usunąć filtr atrybutów, kliknij **wyczyść**.
 -   Aby zmienić scenariusz w raporcie **Wartości rzeczywiste i budżet**, wybierz nowy scenariusz, a następnie kliknij **OK**. Jeśli wybrano scenariusz inny rok, należy zaktualizować rok bazowy. Na przykład, jeśli bieżący scenariusz dotyczy roku obrachunkowego 2015, i wybierzesz nowy scenariusz na 2016 r., zmień rok bazowy na **2016**.
 
 Po kliknięciu przycisku **OK**, wybrane opcje są stosowane do raportu. Jeśli nie chcesz zastosować wybranych opcji, kliknij przycisk **Anuluj**.
@@ -66,7 +69,7 @@ Raport finansowy może być wyświetlany w dowolnej walucie w dowolnym momencie.
 Raport finansowy może zawierać wiersze szczegółów i wiersze zestawień. Wiersze szczegółów to wiersze, które zawierają konta głównego i wymiary. Wiersze zestawień to wiersze opisu, sumy i obliczeń. Aby wyświetlić tylko wiersze podsumowania raportu, kliknij przycisk **Pokaż**, a następnie kliknij przycisk **Tylko wiersze podsumowania**. Raport jest zwinięty i wyświetla tylko wiersze podsumowania. Aby wyświetlić wiersze szczegółów wraz z wierszami zestawień, kliknij **Pokaż**, a następnie kliknij ponownie przycisk **Tylko wiersze podsumowania**.
 
 ## <a name="open-a-financial-report-from-a-previous-month"></a>Otwieranie raport finansowego z poprzedniego miesiąca
-Raporty można wyświetlać dla bieżącego miesiąca lub poprzednich miesięcy bez ponownego generowania raportu. Aby otworzyć raport dla poprzedniego miesiąca, kliknij przycisk **Pokaż**, a następnie kliknij przycisk **poprzednie raporty**. Zostanie wyświetlona lista poprzednich miesięcy, że raport został wygenerowany dla. Rozwiń miesiąc, dla którego chcesz wyświetlić raport, wybierz datę, a następnie kliknij **OK**. Wyświetlany jest raport za poprzedni miesiąc. Aby powrócić do raportu bieżącego miesiąca, kliknij **Anuluj**.
+Raporty można wyświetlać dla bieżącego miesiąca lub poprzednich miesięcy bez ponownego generowania raportu. Aby otworzyć raport dla poprzedniego miesiąca, kliknij przycisk **Pokaż**, a następnie kliknij przycisk **Poprzednie raporty**. Zostanie wyświetlona lista wcześniejszych miesięcy, dla których wygenerowano raport. Rozwiń miesiąc, dla którego chcesz wyświetlić raport, wybierz datę, a następnie kliknij **OK**. Wyświetlany jest raport za poprzedni miesiąc. Aby powrócić do raportu bieżącego miesiąca, kliknij **Anuluj**.
 
 ## <a name="print-a-financial-report"></a>Drukowanie raportu finansowego
 Aby wydrukować raport finansowy w okienku akcji kliknij **Drukuj**, a następnie wykonaj jeden lub więcej z tych kroków, aby ustawić opcje drukowania:
@@ -85,5 +88,7 @@ Aby wyeksportować raport finansowy, w okienku akcji kliknij **Eksportuj**. Rapo
 --------
 
 [Raportowanie finansowe w systemie Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+
+
 
 

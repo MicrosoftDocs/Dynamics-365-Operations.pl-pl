@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="invoice-issue-deadline"></a>Termin wystawienia faktury
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule omówiono konfigurowanie parametrów obliczania terminów wystawiania faktur dla odbiorcy i faktur od dostawcy w Unii Europejskiej (UE).
 
 Dyrektywa Unii Europejskiej (UE) 45/2010 i inne dyrektywy wymagają, aby wysyłki w obrębie UE (wysyłki wewnątrzunijne) były fakturowane do piętnastego dnia miesiąca włącznie od daty zrealizowania dostawy. Jednocześnie w poszczególnych państwach członkowskich UE mogą obowiązywać różne terminy fakturowania dla dostaw krajowych. Funkcja terminu wystawienia faktury pozwala przypisać zakres dat do typu kraju/regionu. Następnie, dla wszystkich wysyłek do i z kraju/regionu określonego typu termin wystawienia faktury jest obliczany za pomocą reguł ustawionych w określonym zakresie dat. Ponadto można uzyskać wszystkie dokumenty dostawy z określonym terminem wystawienia faktury, filtrować termin wystawienia faktury podczas okresowego fakturowania sprzedaży i kontrolować datę wystawienia faktury sprzedaży podczas księgowania faktury. Możesz ustawić kod zakresu dat, a następnie skonfigurować regułę obliczania terminu wystawienia faktury poprzez przypisanie kodu zakresu dat do typu kraju/regionu. Reguła obliczania jest używana do obliczania terminu wystawiania faktur w przypadku następujących transakcji:
@@ -42,7 +45,7 @@ W poniższej tabeli przedstawiono wymagania wstępne, które muszą zostać spe�
 | Kategoria            | Wymaganie wstępne                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kraj/region      | Podstawowy adres firmy musi być w Unii Europejskiej.                                                                                                                                                                                                                                                                                                                    |
-| Pokrewne zadania konfiguracji | Na stronie **Zakresy dat** ustaw zakres dat, który jest używany do obliczania terminu wystawienia faktury. (Kliknij **General Ledger**&gt;**Ustawienia księgi**&gt;**odstępy między datami**.) Na **Parametry handlu zagranicznego** stronę, należy zdefiniować właściwości handlu zagranicznego dla różnych krajów/regionów. (Kliknij **podatku**&gt;**instalacji**&gt;**handlu zagranicznego**&gt;**Parametry handlu zagranicznego**.) |
+| Pokrewne zadania konfiguracji | Na stronie **Zakresy dat** ustaw zakres dat, który jest używany do obliczania terminu wystawienia faktury. (Kliknij kolejno opcje **Księga główna** &gt; **Ustawienia księgi** &gt; **Zakresy dat**). Na stronie **Parametry handlu zagranicznego** ustaw właściwości handlu zagranicznego dla różnych krajów/regionów. (Kliknij kolejno opcje **Podatek** &gt; **Ustawienia** &gt; **Handel zagraniczny** &gt; **Parametry handlu zagranicznego**). |
 
 ## <a name="invoice-issue-due-date-calculation-rule"></a>Reguła obliczania terminów wystawiania faktur
 Za pomocą strony **Ustaw obliczanie dla terminu wystawienia faktury** ustaw regułę obliczania terminu wystawienia faktury poprzez przypisanie kodu zakresu dat do typu kraju/regionu.
@@ -51,7 +54,7 @@ Za pomocą strony **Ustaw obliczanie dla terminu wystawienia faktury** ustaw reg
 Można także skonfigurować parametry kontroli daty, aby zapewnić, że faktury dla odbiorców i faktury korygujące za transakcje klientów są generowane w ciągu określonego okresu po dokonaniu dostawy. Można znaleźć te parametry w obszarze **Kontrola daty faktury** na stronie **Parametry rozrachunków z odbiorcami**.
 
 ## <a name="example"></a>Przykład
-Do skonfigurowania usługi Microsoft Dynamics 365 dla operacji do obliczania wystawienia faktury daty ukończenia dla przesyłek wewnątrz UE piętnastego dnia miesiąca po dostarczeniu dostaw, tworzą data interwału kod i obliczanie regułę, która ma następujące ustawienia.
+Aby skonfigurować program Microsoft Dynamics 365 for Operations do obliczania terminów wystawiania faktur na wysyłki wewnątrz UE na 15. dzień miesiąca po miesiącu, w którym dostawa została zrealizowana, utwórz kod interwału dat i regułę obliczania za pomocą następujących ustawień:
 
 ### <a name="date-interval-code"></a>Kod zakresu dat
 
@@ -75,8 +78,8 @@ Do skonfigurowania usługi Microsoft Dynamics 365 dla operacji do obliczania wys
 ## <a name="next-steps"></a>Następne kroki
 Po zakończeniu konfigurowania parametrów obliczania terminu wystawienia faktury można tworzyć i księgować transakcje wymienione poniżej w celu automatycznego obliczania i aktualizowania terminów wystawiania faktur:
 
--   **Zamówienia sprzedaży** — podczas tworzenia zamówienia sprzedaży i księgowania dokumentu dostawy termin wystawienia faktury jest obliczany i aktualizowany na dokumencie dostawy. Data należności jest obliczana na podstawie interwału dat, który jest skojarzony z kraju/regionu, który jest określony w adresie dostawy zamówienia sprzedaży. Po zaksięgowaniu dokumentu dostawy, można sprawdzić wystawienia faktury termin w **faktury problem termin** w **arkusz kasowy dostawy** strony. (Kliknij **sprzedaży i marketingu**&gt;**zamówienie sprzedaży**&gt;**zamówić transport**&gt;**dostawy**.) Można wyświetlić wszystkie dokumentów dostawy, które nie są zafakturowane i ich wydania faktury daty ukończenia, w **dostawy nie zafakturowane** strony. (Kliknij **sprzedaży i marketingu**&gt;**zamówienie sprzedaży**&gt;**zamówić transport**&gt;**dostawy nie zafakturowane**.)
--   **Zamówienia zakupu** — podczas tworzenia zamówienia zakupu i księgowania dokumentu przyjęcia produktów termin wystawienia faktury jest obliczany i aktualizowany na dokumencie przyjęcia produktów. Termin jest obliczany na podstawie interwału dat przypisanego do kraju/regionu określonego w podstawowym adresie dostawcy. Po zaksięgowaniu dokumentu przyjęcia produktów, można sprawdzić datę wystawienia faktury w polu **Data wystawienia faktury** na stronie **Arkusz dokumentu przyjęcia produktów**. (Kliknij **zaopatrzenie i sourcing**&gt;**zamówienia zakupu**&gt;**otrzymujący produkty**&gt;**dokument przyjęcia produktów**.) Można wyświetlić wszystkie dokumenty przyjęcia produktów, które nie są zafakturowane i ich wydania faktury daty ukończenia, w **dokumentów przyjęcia produktów nie zafakturowane** strony. (Kliknij **zaopatrzenie i sourcing**&gt;**zamówienia zakupu**&gt;**otrzymujący produkty**&gt;**dokumentów przyjęcia produktów nie zafakturowane**.)
+-   **Zamówienia sprzedaży** — podczas tworzenia zamówienia sprzedaży i księgowania dokumentu dostawy termin wystawienia faktury jest obliczany i aktualizowany na dokumencie dostawy. Termin jest obliczany na podstawie zakresu dat przypisanego do kraju/regionu określonego w adresie dostawy zamówienia sprzedaży. Po zaksięgowaniu dokumentu dostawy można sprawdzić termin wystawienia faktury w polu **Termin wystawienia faktury** na stronie **Arkusz dokumentu dostawy**. (Kliknij kolejno opcje **Sprzedaż i marketing** &gt; **Zamówienie sprzedaży** &gt; **Wysyłka zamówienia** &gt; **Dokument dostawy**). Na stronie **Niezafakturowane dokumenty dostawy** możesz wyświetlić wszystkie niezafakturowane dokumenty dostawy oraz ich terminy wystawienia faktury. (Kliknij kolejno opcje **Sprzedaż i marketing** &gt; **Zamówienie sprzedaży** &gt; **Wysyłka zamówienia** &gt; **Niezafakturowane dokumenty dostawy**.)
+-   **Zamówienia zakupu** — podczas tworzenia zamówienia zakupu i księgowania dokumentu przyjęcia produktów termin wystawienia faktury jest obliczany i aktualizowany na dokumencie przyjęcia produktów. Termin jest obliczany na podstawie interwału dat przypisanego do kraju/regionu określonego w podstawowym adresie dostawcy. Po zaksięgowaniu dokumentu przyjęcia produktów, można sprawdzić datę wystawienia faktury w polu **Data wystawienia faktury** na stronie **Arkusz dokumentu przyjęcia produktów**. (Kliknij kolejno opcje **Zaopatrzenie i sourcing** &gt; **Zamówienia zakupu** &gt; **Przyjęcia produktów** &gt; **Dokument przyjęcia produktów**). Na stronie **Niezafakturowane dokumenty przyjęcia produktów** możesz wyświetlić wszystkie niezafakturowane dokumenty przyjęcia produktów oraz ich terminy wystawienia faktury. (Kliknij kolejno opcje **Zaopatrzenie i sourcing** &gt; **Zamówienia zakupu** &gt; **Przyjęcia produktów** &gt; **Niezafakturowane dokumenty przyjęcia produktów**).
 
 ## <a name="technical-information-for-system-administrators"></a>Informacje techniczne dla administratorów systemu
 Jeśli nie masz dostępu do stron, które są używane do ukończenia zadań opisanych w tym artykule, skontaktuj się z administratorem systemu i podaj informacje, które przedstawiono w poniższej tabeli.
@@ -95,7 +98,7 @@ Jeśli nie masz dostępu do stron, które są używane do ukończenia zadań opi
 <tbody>
 <tr class="odd">
 <td>Configuration Keys</td>
-<td>Kliknij <strong>Administracja systemu</strong>&gt;<strong>instalacji</strong>&gt;<strong>licencjonowania</strong>&gt;<strong>Konfiguracja licencji</strong>. Kliknij klucz konfiguracji <strong>Księga główna</strong>.</td>
+<td>Kliknij kolejno opcje <strong>Administrowanie systemem</strong> &gt; <strong>Ustawienia</strong> &gt; <strong>Licencjonowanie</strong> &gt; <strong>Konfiguracja licencji</strong>. Kliknij klucz konfiguracji <strong>Księga główna</strong>.</td>
 </tr>
 <tr class="even">
 <td>Role zabezpieczeń i obowiązki</td>
@@ -116,6 +119,8 @@ Jeśli nie masz dostępu do stron, które są używane do ukończenia zadań opi
 </tr>
 </tbody>
 </table>
+
+
 
 
 

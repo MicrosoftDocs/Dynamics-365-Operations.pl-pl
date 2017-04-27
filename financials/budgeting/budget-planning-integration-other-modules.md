@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-integration-with-other-modules"></a>Integracja modułu Planowanie budżetu z innymi modułami
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 <a name="periodic-processes-for-generating-budget-plans"></a>Przetwarzanie okresowe w celu generowania planów budżetu
@@ -49,13 +52,13 @@ Podstawowe elementy przetwarzania okresowego są takie same dla wszystkich proce
 
 Dla każdego procesu generowania dostępne są trzy operacje:
 
--   **Tworzenie nowego planu budżetu** tworzy nowy plan, który posiada odpowiednie atrybuty, które są zaznaczone w ** docelowej ** sekcji. Te atrybuty nie muszą być niepowtarzalne. W związku z tym dwa plany mogą mieć taką samą nazwę i inne wartości.
+-   **Tworzenie nowego planu budżetu** tworzy nowy plan z atrybutami wybieranymi w sekcji **Cel**. Te atrybuty nie muszą być niepowtarzalne. W związku z tym dwa plany mogą mieć taką samą nazwę i inne wartości.
 -   **Zamiana istniejącego scenariusza planu budżetu** powoduje usunięcie wszystkich danych w docelowym planie budżetu w wybranym scenariuszu planu budżetu i utworzenie nowych wierszy z wybranego źródła danych.
 -   **Aktualizowanie istniejącego scenariusza planu budżetu i dołączanie nowych danych** aktualizacje istniejące wiersze w planie docelowym, które pasują do wierszy źródła, i dodaje nowe wiersze dla nowych danych. Dopasowanie opiera się na koncie księgowym, danych, klasie budżetu i różnych innych polach. Na przykład podczas generowania planów budżetu z pozycji prognozy, numer pozycji jest ważnym polem. Wszystkie wiersze zawierające numer pozycji odpowiadający źródłowemu numerowi pozycji są zastępowane nowymi wierszami z tekstu źródłowego.
 
 ### <a name="source"></a>Źródło
 
-Dla wszystkich procesów **źródło** karta pozwala na filtrowanie danych za pomocą **filtr** przycisk. Domyślnie określonych pól są dodawane do filtru dla każdego procesu. Na przykład dla procesu **Generowanie planu budżetu na podstawie księgi głównej** dostępne są kategorie **Konto księgowe** i **Konto główne** i są widoczne na stronie generowania. Wszelkie pola dodane do filtra są również dodawane do strony razem z wszelkimi dodanymi kryteriami.
+Dla wszystkich procesów karta **Źródło** umożliwia filtrowanie danych za pomocą przycisku **Filtr**. Domyślnie konkretne pola są dodawane do filtra dla każdego procesu. Na przykład dla procesu **Generowanie planu budżetu na podstawie księgi głównej** dostępne są kategorie **Konto księgowe** i **Konto główne** i są widoczne na stronie generowania. Wszelkie pola dodane do filtra są również dodawane do strony razem z wszelkimi dodanymi kryteriami.
 
 ### <a name="target"></a>Grupa docelowa
 
@@ -63,7 +66,7 @@ Opcja **Historyczny** na karcie **Cel** umożliwia używanie dat z danych źród
 
 Pole **Agreguj sumę według** u góry strony określa również używaną datę. To pole sumuje kwoty i opcjonalnie ustawia datę obowiązywania na pierwszy dzień roku lub okresu obrachunkowego. 
 
-Wiele pól na karcie **Celu** staje się dostępne do edycji lub tylko do odczytu, w zależności od wybranej akcji. W przypadku zmiany z tworzenia nowego planu budżetu na aktualizację istniejącego planu pole **Nazwa planu budżetu** staje się niedostępne, a dostępne stają się pola związane z wybieraniem istniejącego planu. Na obu **docelowej** kartę i ** źródła ** kartę, **księgi** pole zawsze nie jest dostępne, ponieważ wartość jest określana przez wybranego procesu planowania budżetu. 
+Wiele pól na karcie **Celu** staje się dostępne do edycji lub tylko do odczytu, w zależności od wybranej akcji. W przypadku zmiany z tworzenia nowego planu budżetu na aktualizację istniejącego planu pole **Nazwa planu budżetu** staje się niedostępne, a dostępne stają się pola związane z wybieraniem istniejącego planu. Zarówno na karcie **Cel**, jak i karcie **Źródło**, pole **Księga** jest zawsze niedostępne, ponieważ wartość zależy od wybranego procesu planowania budżetu. 
 
 Pole **Klasa budżetu** pozwala wybrać wiersze planu budżetu jako transakcje wydatkowe lub transakcje przychodu. Zazwyczaj transakcje przychodu stanowią kredyt na koncie księgowym i dlatego są zapisywane jako liczby ujemne. Te transakcje pojawiają się również zwykle jako kwoty ujemne w planie budżetu. Jednak po dodaniu klasy budżetu jako pola w układzie planu można włączyć wyświetlanie przychodu jako wartości dodatnich.
 
@@ -73,7 +76,7 @@ Trzy pola oferują dodatkowe funkcje : **Współczynnik**, **Minimum** i **Regu�
 
 Wartość w polu **Współczynnik** jest mnożona przez wartość źródłową, by ustalić kwotę w planie budżetu. Następnie można wprowadzać poprawki podczas tworzenia wierszy planu budżetu. Można na przykład wpisać **1,03** dla wzrostu o 3%. Współczynnik musi być liczbą dodatnią. 
 
-Pole **Minimum** pozwala określić kwotę progową dla tworzenia wiersza planu budżetu. Jeśli kwota źródłowa jest mniejsza od tej liczby, wiersz planu budżetu nie jest tworzony. Wartość **0.00** umożliwia wszystkich kwot, ale nie ogranicza wiersze do kwoty dodatnie. (Wartość nie ogranicza wiersze do kwoty dodatnie. Kwoty ujemne są zawsze włączone i zazwyczaj reprezentują zapisów kredytowych.)
+Pole **Minimum** pozwala określić kwotę progową dla tworzenia wiersza planu budżetu. Jeśli kwota źródłowa jest mniejsza od tej liczby, wiersz planu budżetu nie jest tworzony. Wartość **0,00** dopuszcza wszystkie kwoty, ale nie ogranicza wierszy do kwot dodatnich. (Żadna wartość nie ogranicza wierszy do kwot dodatnich. Kwoty ujemne są zawsze uwzględniane i zazwyczaj odpowiadają zapisom kredytowym).
 
 Pole **Reguła zaokrąglania** pozwala ustawić dokładność tworzonych wierszy planu budżetu. Użytkownik może zaokrąglać kwoty do najbliższej wartości 1,00, 10,00, 100,00 itd. w wybranej walucie.
 
@@ -86,13 +89,13 @@ W lokalizacji docelowej pole **Klasa budżetu** ma wartość **Wydatki** lub **P
 
 ### <a name="generate-budget-plan-from-fixed-assets"></a>Generowanie planu budżetu na podstawie środków trwałych
 
-Proces **Generowanie planu budżetu na podstawie środków trwałych** nie oferuje opcji agregowania według dnia lub okresu. Istnieje również opcja ustalania planu jako historycznych. Ten proces okresowego umożliwia uwzględnienie przewidywanych transakcji dla środków trwałych w procesie planowania budżetu.
+Proces **Generowanie planu budżetu na podstawie środków trwałych** nie oferuje opcji agregowania według dnia lub okresu. Nie można też ustawić planu jako historycznego. Ten proces okresowy służy do uwzględnienia przewidywanych transakcji na środkach trwałych w planowaniu budżetu.
 
 ### <a name="generate-budget-plan-from-forecast-positions"></a>Generowanie planu budżetu na podstawie pozycji prognozy
 
 Proces **Generowanie planu budżetu na podstawie pozycji prognozy** przypisuje pozycję z prognozy źródłowej do wiersza planu budżetu. Można wyświetlić pozycję, dodając pozycję prognozy jako wiersz w układzie planu budżetu lub za pomocą zapytania **Wiersze planu budżetu**. Jeśli nie chcesz, aby stanowisko podlegającego prognozie było przypisane do wierszy planu budżetu, ustaw opcję **Uwzględnienie pozycji w wierszu planu budżetu** na **Nie**.
 
-Wiersze planu budżetu są agregowane według konta księgowego i pozycji. Jednak można wykluczyć numerem pozycji tak, aby wiersze są agregowane przez tylko konta księgowego. Na karcie **Cel** trzeba ustawić opcję **Uwzględnienie pozycji w wierszu planu budżetu** na **Nie**.
+Wiersze w planie budżetu są agregowane według kont księgowych i pozycji. Można jednak wykluczyć numer pozycji, aby wiersze były agregowane tylko według konta księgowego. Na karcie **Cel** trzeba ustawić opcję **Uwzględnienie pozycji w wierszu planu budżetu** na **Nie**.
 
 W polu **Scenariusz planu budżetu w przeliczeniu na pełne etaty** można wybrać scenariusz uwzględniający liczbę równoważników pełnego etatu (FTE) w planie budżetu. To pole jest ograniczone do scenariuszy typu ilościowego, które są uwzględniane w układzie docelowego planu budżetu. Wybranie scenariusza równoważnika pełnego etatu (FTE) wymaga również wybrania konta głównego FTE. To konto jest używane do tworzenia wierszy planu budżetu typu ilościowego. 
 
@@ -140,5 +143,7 @@ Wybierz wiersz i kliknij przycisk **Wiersze planu budżetu**, aby uruchomić zap
 Te zapytania można wysyłać za pomocą przycisków **Prognoza podaży** i **Prognoza popytu**. W obu przypadkach zapytanie wyszukuje wierszy prognozy, które mogły utworzyć wiersze budżetu. 
 
 Wśród raportów dodatkowych, które są dostępne, jest raport **Pozycje prognozy według planów budżetu**. Ten raport jest szczególnie przydatny do ustalania, czy alokacja pozycji do planów budżetu jest prawidłowa.
+
+
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Ustaw zabezpieczenia zawartości Power BI analizy rachunku kosztów"
-description: "W tym temacie wyjaśniono, jak można propagować zabezpieczeń poziom dostępu w rachunku kosztów do zabezpieczenia na poziomie wiersza w Microsoft Power BI. Ta funkcja pomaga zagwarantować, że użytkownicy widzą tylko danych BI uzyska dostęp do."
+title: "Konfigurowanie zabezpieczeń pakietu zawartości usługi Power BI Analiza rachunku kosztów"
+description: "W tym temacie wyjaśniono, jak można rozpowszechnić zabezpieczenia na poziomie dostępu w module Rachunek kosztów do zabezpieczeń na poziomie wierszy w usłudze Microsoft Power BI. Ta funkcja pomaga zagwarantować, że użytkownicy widzą tylko dane usługi Power BI, do których mają dostęp."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,38 +24,43 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Ustaw zabezpieczenia zawartości Power BI analizy rachunku kosztów
+# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Konfigurowanie zabezpieczeń pakietu zawartości usługi Power BI Analiza rachunku kosztów
 
-W tym temacie wyjaśniono, jak można propagować zabezpieczeń poziom dostępu w rachunku kosztów do zabezpieczenia na poziomie wiersza w Microsoft Power BI. Ta funkcja pomaga zagwarantować, że użytkownicy widzą tylko danych BI uzyska dostęp do.
+[!include[banner](../includes/banner.md)]
+
+
+W tym temacie wyjaśniono, jak można rozpowszechnić zabezpieczenia na poziomie dostępu w module Rachunek kosztów do zabezpieczeń na poziomie wierszy w usłudze Microsoft Power BI. Ta funkcja pomaga zagwarantować, że użytkownicy widzą tylko dane usługi Power BI, do których mają dostęp.
 
 <a name="overview"></a>Przegląd
 --------
 
-**Analizy rachunku kosztów** zawartości Microsoft Power BI używa zabezpieczenia na poziomie wiersza Power BI ograniczyć dostęp użytkownika. Zabezpieczenia są oparte na hierarchii organizacyjnej poziom dostępu, ustawionej w parametrach modułu Rachunek kosztów. Aby uzyskać więcej informacji na temat **analizy rachunku kosztów** Power BI zawartości, zobacz [rachunku kosztów analizy zawartości Power BI](cost-accounting-analysis-content-pack.md).
+Pakiet zawartości **Analiza rachunku kosztów** dla usługi Microsoft Power BI używa zabezpieczeń na poziomie wierszy z usługi Power BI, aby ograniczyć dostęp użytkownikom. Zabezpieczenia są oparte na hierarchii organizacyjnej na poziomie dostępu skonfigurowanej w oknie Parametry rachunku kosztów. Aby uzyskać więcej informacji na temat pakietu zawartości **Analiza rachunku kosztów** dla usługi Power BI, zobacz [Pakiet zawartości usługi Power BI Analiza rachunku kosztów](cost-accounting-analysis-content-pack.md).
 
 ## <a name="setup"></a>Konfiguracja
-Propagowanie poziom dostępu zabezpieczeń do Power BI, właściciel zawartości BI zasilania należy wykonać następujące kroki. **Uwaga:** użytkownika, który publikuje **analizy rachunku kosztów** Power BI zawartości automatycznie staje się właścicielem. Tylko właściciel można ustawić zabezpieczenia w BI zasilania. Dodatkowo, aż do właściciela dodaje innych użytkowników na PowerBI.com, nikt oprócz właściciela zobaczyć wszystkie dane w **analizy rachunku kosztów** Power BI zawartości.
+Aby rozpowszechnić zabezpieczenia na poziomie dostępu do usługi Power BI, właściciel pakietu zawartości usługi Power BI musi wykonać czynności opisane poniżej. **Uwaga:** Użytkownik, który publikuje pakiet zawartości usługi Power BI **Analiza rachunku kosztów**, automatycznie staje się właścicielem. Tylko właściciel może konfigurować zabezpieczenia w usłudze Power BI. Dodatkowo dopóki właściciel nie doda innych użytkowników w witrynie PowerBI.com, nikt oprócz niego nie będzie widział żadnych danych w pakiecie zawartości **Analiza rachunku kosztów**.
 
-1.  Opublikować plik definicji Power BI.
-2.  Zaloguj się do PowerBI.com.
-3.  Znajdowanie zestawu danych dla **analizy rachunku kosztów** Power BI zawartości.
-4.  Otwórz stronę Zabezpieczenia. 
+1.  Opublikuj plik definicji do usługi Power BI.
+2.  Zaloguj się w witrynie PowerBI.com.
+3.  Znajdź zestaw danych pakietu zawartości usługi Power BI **Analiza rachunku kosztów**.
+4.  Otwórz stronę zabezpieczeń. 
 
-    [![Otwarcie strony zabezpieczeń](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)
+    [![Otwieranie strony zabezpieczeń](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-1.png)
 
-5.  **Kontrolera obiektu kosztów** roli jest już utworzony. Dodawanie innych członków, którzy są częścią hierarchii organizacyjnej poziomu dostępu do rachunku kosztów. 
+5.  Rola **Kontroler obiektów kosztów** jest już utworzona. Dodaj innych członków będących częścią hierarchii organizacyjnej na poziomie dostępu zatytułowanej Kontrola kosztów. 
 
     [![Dodawanie członków](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)](https://msdynamics.blob.core.windows.net/media/2017/02/CA-picture-2.png)
 
-Użytkownicy, którzy zostaną dodani do **kontrolera obiektu kosztów** rolę zobaczy tylko dane, które mogą zobaczyć, zgodnie z definicją w hierarchii organizacyjnej poziomu dostępu do rachunku kosztów. **Uwaga:** zabezpieczeń na poziomie wierszy dotyczy płytek i raporty w programie Microsoft Dynamics 365 dla operacji, które są osadzone z Power BI.
+Użytkownicy, którzy zostaną dodani do roli **Kontroler obiektów kosztów**, będą widzieć tylko dane, które mają prawo zobaczyć zgodnie z definicją w hierarchii organizacyjnej na poziomie dostępu zatytułowanej Rachunek kosztów. **Uwaga:** Zabezpieczenia na poziomie wierszy dotyczą kafelków i raportów w programie Microsoft Dynamics 365 for Operations, które zostały osadzone z usługi Power BI.
 
-## <a name="updating-security"></a>Aktualizacja zabezpieczeń
-Uaktualnienia odnoszą się do zabezpieczenia na poziomie dostępu w rachunku kosztów, a chcesz BI zasilania, aby odzwierciedlić te aktualizacje, musisz zaktualizować magazynu jednostki dla **analizy rachunku kosztów** Power BI zawartości. Po zakończeniu aktualizacji magazynu jednostki z 365 Dynamics dla operacji, należy zaktualizować artefaktów na PowerBI.com. Aby uzyskać więcej informacji na temat sposobu wykonania aktualizacji magazynu encji, zobacz [aktualizacji jednostki magazynu](power-bi-integration-entity-store.md#update-entity-store). Właściciel **analizy rachunku kosztów** Power BI zawartości musisz zrobić także aktualizacji magazynu jednostki, jeśli nowi użytkownicy uzyskają dostęp do hierarchii organizacyjnej. Ponadto właściciel należy dodać nowych użytkowników, aby **kontrolera obiektu kosztów** roli na PowerBI.com, tak że zabezpieczenia na poziomie wiersza jest stosowany dla nich.
+## <a name="updating-security"></a>Aktualizowanie zabezpieczeń
+Jeśli w module Rachunek kosztów dokonano aktualizacji zabezpieczeń na poziomie dostępu, a chcesz, aby usługa Power BI uwzględniała te aktualizacje, należy zaktualizować magazyn jednostek pakietu zawartości usługi Power BI **Analiza rachunku kosztów**. Po wykonaniu aktualizacji magazynu jednostek z poziomu programu Dynamics 365 for Operations należy zaktualizować artefakty w usłudze PowerBI.com. Aby uzyskać więcej informacji na temat sposobu aktualizowania magazynu jednostek, zobacz [Aktualizowanie magazynu jednostek](power-bi-integration-entity-store.md#update-entity-store). Właściciel pakietu zawartości **Analiz rachunku kosztów** dla usługi Power BI musi również zaktualizować magazyn jednostek, jeśli nowym użytkownikom zostanie przyznany dostęp do hierarchii organizacyjnej. Ponadto właściciel musi dodać nowych użytkowników do roli **Kontroler obiektów kosztów** w witrynie PowerBI.com, tak aby zabezpieczenia na poziomie wierszy były do nich stosowane.
 
 ## <a name="disabling-security"></a>Wyłączanie zabezpieczeń
-Zakładamy, że organizacja chce ograniczyć dostęp do danych. Jeśli z jakiegoś powodu parametrów zabezpieczeń są wyłączone po uruchomieniu rachunku kosztów, właściciel należy dodać użytkowników do **księgowy kosztów** rolę w BI zasilania w zamian. Jeśli zmienisz zabezpieczeń z stanie włączonym na wyłączony, to dobry pomysł, aby usunąć użytkowników z **kontrolera obiektu kosztów** roli. I odwrotnie, jeśli ponownie włączyć zabezpieczenia. Użytkownicy mogą należeć do obu ról. Wspólny dostęp jest Unia obu ról. W odniesieniu do **analizy rachunku kosztów** Power BI zawartości, użytkownicy, którzy mają dostęp do wspólnego mają nieograniczony dostęp do danych. Jeśli celem jest aby zastosować ograniczony dostęp, użytkownicy muszą być przypisani tylko do **kontrolera obiektu kosztów** roli. Te aktualizacje zabezpieczeń na poziomie wiersza zaczynają obowiązywać natychmiast. Użytkowników należy odświeżyć swoich przeglądarek.
+Zakładamy, że Twoja organizacja chce ograniczyć dostęp do danych. Jeśli z jakiegoś powodu parametry zabezpieczeń zostaną wyłączone podczas używania modułu Rachunek kosztów, właściciel musi dodać użytkowników do roli **Księgowy kosztów** w usłudze Power BI. Jeśli zmienisz zabezpieczenie ze stanu włączenia na stan wyłączenia, dobrym rozwiązaniem jest usunięcie użytkowników z roli **Kontroler obiektów kosztów**. I odwrotnie, jeśli ponownie włączyć zabezpieczenia. Użytkownicy mogą należeć do obu ról. Wspólny dostęp stanowi część wspólną uprawnień obu ról. W odniesieniu do pakietu zawartości **Analiza rachunku kosztów** dla usługi Power BI użytkownicy posiadający wspólny dostęp mają nieograniczony dostęp do danych. Jeśli Twoim celem jest stosowanie ograniczonego dostępu, użytkownicy muszą być przypisani tylko do roli **Kontroler obiektów kosztów**. Te aktualizacje zabezpieczeń na poziomie wierszy zaczynają obowiązywać natychmiast. Odnośni użytkownicy powinni odświeżyć swoje przeglądarki.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-Aby dowiedzieć się więcej na temat zabezpieczeń na poziomie wiersza BI zasilania, zobacz [Zarządzanie zabezpieczeniami na model w Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+Aby dowiedzieć się więcej na temat zabezpieczeń na poziomie wierszy w usłudze Power BI, zobacz [Zarządzanie zabezpieczeniami modelu w usłudze Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
 
 

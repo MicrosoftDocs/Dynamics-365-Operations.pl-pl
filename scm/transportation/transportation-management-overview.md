@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="transportation-management-overview"></a>Zarządzanie transportem — omówienie
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym temacie omówiono funkcjonalność zarządzania transportem dostępną w programie Microsoft Dynamics 365 for Operations.
 
 Moduł Zarządzanie transportem pozwala zarządzać transportem w firmie oraz identyfikować dostawców i rozwiązania wyboru trasy dla zamówień przychodzących i wychodzących. Można na przykład określić najszybszą trasę lub najtańszą stawkę za wysyłkę. W poniższej tabeli opisano główne scenariusze używania zarządzania transportem w programie Microsoft Dynamics 365 for Operations.
@@ -67,19 +70,21 @@ Moduł Zarządzanie transportem pozwala zarządzać transportem w firmie oraz id
 ## <a name="planning-transportation-in-dynamics-365-for-operations"></a>Planowanie transportu w programie Dynamics 365 for Operations
 W module Zarządzanie transportem planowania transportu może być oparte na zamówieniach lub na wysyłkach tworzonych w oparciu o te zamówienia. Wysyłki zawsze się pojawiają w pewnym momencie, ale nie są wymagane do planowania transportu. Zamówienia przeniesienia są częścią scenariusza transportu wychodzącego i mogą być planowane razem z zamówieniami sprzedaży. 
 
-![Załadować rysunku](./media/Load-drawing1-1024x477.jpg)
+![Rysunek ładunku](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Transport przychodzący
-Gdy zamówienie elementów od dostawcy, a towary powinny zostać dostarczone do magazynu, można zorganizować transport elementów samodzielnie. 365 Dynamics dla operacji służy do planowania transportu i przyjęcia ładunku przychodzącego. Poniższy rysunek przedstawia przepływ procesu biznesowego dla planowania transportu towarów przychodzących. 
+Gdy zamawiasz towary od dostawcy i muszą one zostać dostarczone do Twojego magazynu, można samodzielnie zorganizować transport. Program Dynamics 365 for Operations umożliwia zaplanowanie transportu i przyjęcia przychodzącego ładunku. Poniższy rysunek przedstawia przepływ procesu biznesowego dla planowania transportu towarów przychodzących. 
 
 ![Przebieg procesu biznesowego przychodzącego transportu ładunku](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Transport wychodzący
 Można planować i przetwarzać ładunki wychodzące w celu wysłania określonych towarów z magazynu firmy do odbiorcy. Program Dynamics 365 for Operations może służyć do planowania transportu i wysyłania ładunków wychodzących. Poniższy rysunek przedstawia przepływ procesu biznesowego planowania i przetwarzania obciążenia wychodzącego dla ładunku. 
 
-![Planowanie i przetwarzania wychodzącego obciążenia](./media/Planningandprocessingoutboundloads.jpg)
+![Planowanie i przetwarzania ładunków wychodzących](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Kompilowanie ładunku
 Program Dynamics 365 for Operations zawiera strategię kompilowania ładunku o nazwie Strategia kompilowania ładunku na podstawie objętości. Pozwala ona stosować maksymalne wartości wysokości i wagi określone w szablonie ładunku albo zastępować te ustawienia wprowadzaniem nowych wartości. Aby użyć tej strategii, zaznacz ją w polu **Strategia kompilowania ładunku** na skróconej karcie **Ustawienia** na karcie **Pulpit kompilowania ładunku**. Ponadto można dodawać własne strategie kompilowania ładunku przez utworzenie nowej klasy w drzewie obiektów aplikacji (AOT).
+
+
 
 

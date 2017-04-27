@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="ledger-allocation-rules"></a>Reguły alokacji księgi
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o regułach alokacji księgi. Opisano w nim różne składniki tych reguł alokacji oraz metody alokacji, których można do nich używać.
 
 Reguły alokacji księgi są używane do automatycznego obliczania i generowania arkuszy alokacji i zapisów na kontach dla alokacji sald księgi lub kwot stałych. Metody alokacji mogą być stałe lub zmienne. Dla reguł alokacji księgi można użyć następujących metod alokacji:
@@ -42,10 +45,12 @@ Jeśli dla reguły alokacji używana jest metoda Podstawa, to trzeba też zdefin
 W każdej regule alokacji występują cztery składniki — ogólny, źródłowy, celu oraz przeciwstawny. Dodatkowy składnik, zasady podstawy alokacji księgi, jest wymagany, jeśli metodą alokacji jest Podstawa. Każdy składnik zawiera istotne informacje niezbędne do przetwarzania alokacji.
 
 -   **Ogólne** — ten składnik określa opcje odnoszące do metody alokacji, ustawień reguł między firmami oraz aktywności reguł.
--   **Źródło** — ten składnik jest używany gdy użytkownik określa dane źródłowe dla alokacji. Alokacji mogą być oparte na salda księgi (**źródła danych** = **księgi**) lub stałej kwoty (**źródła danych** = **wartość stała**). Gdy **Źródło danych** ma wartość **Księga**, kryteria filtra źródła muszą być zdefiniowane dla reguły alokacji księgi (np. dla wydatków na reklamę).
+-   **Źródło** — ten składnik jest używany gdy użytkownik określa dane źródłowe dla alokacji. Alokacja może opierać się na saldach księgi (**Źródło danych** = **Księga**) lub stałych kwotach (**Źródło danych** = **Stała wartość**). Gdy **Źródło danych** ma wartość **Księga**, kryteria filtra źródła muszą być zdefiniowane dla reguły alokacji księgi (np. dla wydatków na reklamę).
 -   **Cel** — ten składnik określa sposób dystrybuowania i rozliczania wyniku obliczeń alokacji. Można na przykład określić po jednym wierszu celu dla każdego oddziału.
 -   **Konto przeciwstawne** — ten składnik określa sposób określania kont głównych i wymiarów dla zapisów przeciwstawnych bilansujących zapisy docelowe. Zazwyczaj używane są opcje zdefiniowane przez użytkownika zamiast kont i wymiarów opartych na źródle. Jeśli **Źródło danych** ma wartość **Stała wartość**, **Źródło** nie może być używane jako opcja.
 -   **Reguły podstawy alokacji księgi** — te reguły mają własne kryteria filtru źródła, które określają, które salda ksiąg powinny być używane do alokacji (np. przychód na oddział). Każda reguła podstawy alokacji może być stosowana z wieloma regułami alokacji.
+
+
 
 
 

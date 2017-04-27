@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-methods-and-conventions"></a>Metody amortyzacji i konwencje
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie konwencji amortyzacji i metod amortyzacji obsługiwanych w systemie Microsoft Dynamics AX.
 
 Można wybrać różne metody i konwencje amortyzacji. Celem metod jest alokowanie wartości amortyzacji środka trwałego w okresach obrachunkowych. Wartość środka trwałego podlegająca amortyzacji jest ceną nabycia pomniejszoną o ewentualną wartość likwidacji. 
@@ -66,26 +69,27 @@ Można wybrać jedną z następujących metod amortyzacji.
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Amortyzacja środka trwałego](fixed-asset-depreciation.md)
 
-[Straight line service life depreciation](Straight-line-service-life-depreciation.md)
+[Amortyzacja liniowa za okres użytkowania](Straight-line-service-life-depreciation.md)
 
-[Reducing balance depreciation](reduce-balance-depreciation.md)
+[Amortyzacja degresywna](reduce-balance-depreciation.md)
 
-[Manual depreciation](manual-depreciation.md)
+[Amortyzacja ręczna](manual-depreciation.md)
 
-[Factor depreciation](factor-depreciation.md)
+[Amortyzacja czynnikowa](factor-depreciation.md)
 
-[Consumption depreciation](consumption-depreciation.md)
+[Amortyzacja według zużycia](consumption-depreciation.md)
 
-[Straight line life remaining depreciation](straight-line-life-remaining-depreciation.md)
+[Amortyzacja liniowa za pozostały okres użytkowania](straight-line-life-remaining-depreciation.md)
 
-[Amortyzacja degresywna 125%](125-percent-reducing-balance-depreciation.md)
+[125% amortyzacja degresywna](125-percent-reducing-balance-depreciation.md)
 
-[Amortyzacja degresywna 150%](150-percent-reducing-balance-depreciation.md)
+[150% amortyzacja degresywna](150-percent-reducing-balance-depreciation.md)
 
-[amortyzacja Degresywna 175%](175-percent-reducing-balance-depreciation.md)
+[175% amortyzacja degresywna](175-percent-reducing-balance-depreciation.md)
 
-[Amortyzacja degresywna 200%](200-percent-reducing-balance-depreciation.md)
+[200% amortyzacja degresywna](200-percent-reducing-balance-depreciation.md)
+
 
 

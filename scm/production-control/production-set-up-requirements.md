@@ -29,9 +29,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="production-setup-requirements"></a>Wymagania konfiguracji produkcji
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o konfiguracji, jaką należy zapewnić przed rozpoczęciem używania modułu Kontrola produkcji. 
 
-Kontrola produkcji jest zintegrowany z funkcjami w innych modułach. Dzięki możliwości łączenia się z innymi aplikacjami można zmieniać zlecenia produkcyjne i mieć pewność, że są automatycznie aktualizowane w innych pokrewnych procesach i obliczeniach wykonywanych w systemie. Poniżej znajduje się wykaz procedur konfiguracji w kolejności, w jakiej należy je wykonać.
+Kontrola produkcji współpracuje z funkcjami w innych modułach. Dzięki możliwości łączenia się z innymi aplikacjami można zmieniać zlecenia produkcyjne i mieć pewność, że są automatycznie aktualizowane w innych pokrewnych procesach i obliczeniach wykonywanych w systemie. Poniżej znajduje się wykaz procedur konfiguracji w kolejności, w jakiej należy je wykonać.
 
 ## <a name="required-baseline-setup-in-other-modules"></a>Wymagana konfiguracja podstawowa w innych modułach
 Aby używać modułu Kontrola produkcji, trzeba skonfigurować informacje w innych modułach. Podzielono je na następujące zadania:
@@ -52,7 +55,7 @@ Aby używać modułu Kontrola produkcji, otwórz moduł Administrowanie organiza
 4.  **Zasoby** — skonfiguruj zasoby operacyjne w celu zdefiniowania zasobów stosowanych do ukończenia procesu produkcyjnego i planowania zdolności produkcyjnych.
 
 ## <a name="required-production-parameters-setup"></a>Konfiguracja wymaganych parametrów produkcyjnych
-**Parametry kontroli produkcji** — Ustawianie parametrów produkcji podstawowej, aby zdefiniować sposób obsługi przez system i przetwarza zleceń produkcyjnych. Zdefiniuj sposób tworzenia, szacowania, planowania i stosowania zleceń produkcyjnych. Można także wybrać rodzaj informacji zwrotnych i sposób rozliczania kosztów.
+**Parametry kontroli produkcji** — skonfiguruj podstawowe parametry produkcji w celu zdefiniowania sposobu, w jaki system obsługuje i przetwarza zlecenia produkcyjne. Zdefiniuj sposób tworzenia, szacowania, planowania i stosowania zleceń produkcyjnych. Można także wybrać rodzaj informacji zwrotnych i sposób rozliczania kosztów.
 
 ## <a name="required-journal-name-identification"></a>Określanie nazwy wymaganego arkusza
 **Nazwy arkuszy produkcji** — określ nazwy arkusza produkcji, które są używane do rejestrowania i księgowania transakcji.
@@ -76,6 +79,8 @@ W wypadku stosowania marszrut operacje muszą zostać zdefiniowane dla każdej s
 1.  **Grupy produkcji** — skonfiguruj grupy produkcji w celu utworzenia relacji między zleceniem produkcyjnym i kontami księgowymi. Konta księgowe są używane do księgowania lub grupowania zleceń do raportowania.
 2.  **Grupy produkcji** — utwórz pule produkcji w celu pogrupowania zleceń produkcyjnych do przetwarzania pilnych zleceń produkcyjnych lub usunięcia i księgowania grup zleceń.
 3.  **Właściwości** — zdefiniuj właściwości, aby utworzyć atrybuty specjalne, które można przypisać do zasobów w celu kontrolowania kolejnością produkcji. Te atrybuty są powiązane z szablonem czasu pracy.
+
+
 
 
 

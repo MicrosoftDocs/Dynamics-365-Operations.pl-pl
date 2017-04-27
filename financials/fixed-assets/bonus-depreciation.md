@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bonus-depreciation"></a>Podwyższenie amortyzacji
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie funkcji podwyższania amortyzacji.
 
 Podwyższenie amortyzacji umożliwia uzyskanie większych lub dodatkowych kwot amortyzacji w pierwszym roku użytkowania i amortyzacji środków. Podwyższenie amortyzacji należy wykonać przed wszelkimi innymi obliczeniami amortyzacji. Z tego względu najlepiej używać podwyższenia amortyzacji z księgami, w których wyłączono funkcję księgowania w księdze głównej. Można użyć opcji **Usuwanie transakcji, które nie zostały zaksięgowane w księdze głównej**, aby usunąć historyczne transakcje dla ksiąg, które nie powodują księgowania w księdze głównej. Następnie można uwzględnić podwyższenie amortyzacji na dalszych etapach cyklu życia środka trwałego poprzez usunięcie transakcji amortyzacji, które zostały wcześniej zaksięgowane. 
@@ -61,5 +64,7 @@ Jeżeli podwyższenie amortyzacji jest obliczane za pomocą propozycji, zostanie
 Można utworzyć nieograniczoną liczbę rekordów podwyższenia amortyzacji. Po przypisaniu tych rekordów do księgi grupy środków trwałych zostaną one zastosowane do księgi środków trwałych. 
 
 Podwyższenie amortyzacji jest wprowadzane jako wartość procentowa lub jako kwota stała. Po zaksięgowaniu propozycji amortyzacji transakcje podwyższenia amortyzacji są księgowane w księdze jako osobne transakcje obok transakcji amortyzacji.
+
+
 
 

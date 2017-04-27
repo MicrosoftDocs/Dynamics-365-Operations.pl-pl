@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-scheduling-options"></a>Opcje planowania operacji
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym temacie opisano opcje planowania operacji. Funkcji planowania operacji można używać, aby przedstawić ogólne oszacowanie procesu produkcji w wybranym okresie.
 
 Funkcja planowania operacji oblicza dla zlecenia produkcyjnego następujące informacje:
@@ -128,6 +131,8 @@ Bieżące wartości można zapisać jako domyślne. Dostępne są dwie opcje:
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Operations scheduling](operations-scheduling.md)
+[Planowanie operacji](operations-scheduling.md)
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Rozliczanie płatności częściowe dostawcy i ostatecznej płatności w całości przed datą rabatu"
+title: "Rozliczanie płatności częściowej i płatności ostatecznej dostawcy w całości przed datą rabatu"
 description: "Ten artykuł prowadzi przez scenariusz, w którym są dokonywane częściowe płatności za fakturę od dostawcy z zastosowaniem rabatu gotówkowego."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Rozliczanie płatności częściowe dostawcy i ostatecznej płatności w całości przed datą rabatu
+# <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Rozliczanie płatności częściowej i płatności ostatecznej dostawcy w całości przed datą rabatu
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł prowadzi przez scenariusz, w którym są dokonywane częściowe płatności za fakturę od dostawcy z zastosowaniem rabatu gotówkowego.
 
-Firma Fabrikam nabywa towary od dostawcy 3064. Dostawcy daje Fabrikam rabat gotówkowy 1 procent, jeśli faktura jest zapłacona w ciągu 14 dni. Faktury muszą zostać zapłacone w ciągu 30 dni. Dostawca oferuje też firmie Fabrikam rabaty gotówkowe za uregulowanie płatności. Parametry rozliczenia znajdują się na **Rozrachunki z dostawcami Parametry** strony. 25 czerwca April wprowadza fakturę na kwotę 1000,00 dla dostawcy 3064.
+Fabrikam kupuje towary od dostawcy 3064 Dostawca udziela firmie Fabrikam rabatu gotówkowego w wysokości 1%, jeśli faktura zostanie zapłacona w ciągu 14 dni. Faktury muszą zostać zapłacone w ciągu 30 dni. Dostawca oferuje też firmie Fabrikam rabaty gotówkowe za uregulowanie płatności. Parametry rozliczenia znajdują się na stronie **Parametry modułu rozrachunków z dostawcami**. 25 czerwca April wprowadza fakturę na kwotę 1000,00 dla dostawcy 3064.
 
 ## <a name="vendor-invoice-on-june-25"></a>Faktura od dostawcy z 25 czerwca
-25 czerwca kwietnia wchodzi i księguje fakturę za 1 000,00 dla dostawcy 3064. April może wyświetlić tę transakcję na stronie **Transakcje dostawcy**.
+25 czerwca April wprowadza i księguje fakturę na kwotę 1000,00 dla dostawcy 3064. April może wyświetlić tę transakcję na stronie **Transakcje dostawcy**.
 
 | Załącznik   | Data      | Faktura | Kwota debetu w walucie transakcji | Kwota kredytu w walucie transakcji | Saldo   | Waluta |
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
@@ -63,7 +66,7 @@ April klika kartę **Rabat gotówkowy**, aby wyświetlić kwotę rabatu.
 | 7/25/2015          | 0,00                 | 1000,00                       |
 
 ## <a name="partial-payment-on-july-1-by-using-the-settle-transactions-page"></a>Płatność częściowa 1 lipca za pomocą strony Rozliczanie transakcji
-April może utworzyć arkusz płatności dla tej płatności, otwierając stronę **Arkusz płatności** w module Rozrachunki z dostawcami. Ona utworzyć nowy arkusz i wprowadzi wiersz dla dostawcy 3064. Następnie otwiera **rozliczenia transakcji** strony, tak aby ona można oznaczyć do rozliczenia faktury. April oznacza fakturę i zmienia wartość w polu **Kwota do rozliczenia** na **-500,00**. Stwierdza, że wartość w polu **Kwota rabatu gotówkowego** wynosi **-10,00** dla pełnej faktury, a wartość w polu **Kwota rabatu gotówkowego do pobrania** wynosi **-5,05**. April rozlicza więc dla tej faktury kwotę -505,05.
+April może utworzyć arkusz płatności dla tej płatności, otwierając stronę **Arkusz płatności** w module Rozrachunki z dostawcami. Tworzy nowy arkusz płatności i wprowadza wiersz dla dostawcy 3064. Następnie otwiera stronę **Rozliczenia transakcji**, aby oznaczyć fakturę do rozliczenia. April oznacza fakturę i zmienia wartość w polu **Kwota do rozliczenia** na **-500,00**. Stwierdza, że wartość w polu **Kwota rabatu gotówkowego** wynosi **-10,00** dla pełnej faktury, a wartość w polu **Kwota rabatu gotówkowego do pobrania** wynosi **-5,05**. April rozlicza więc dla tej faktury kwotę -505,05.
 
 | Zaznacz     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -95,7 +98,7 @@ Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwa
 | Pobrany rabat gotówkowy          | 0,00      |
 | Kwota rabatu gotówkowego do pobrania | -5,00     |
 
-April zamyka stronę **Rozliczenie transakcji**. W arkuszu tworzony jest wiersz płatności na kwotę 495,00. Następnie April księguje ten arkusz. Kwietnia można przejrzeć transakcje dostawcy na **transakcji dostawcy** strony. Stwierdza się, że faktura ma saldo-500.00. Widzi również płatność w wysokości 495,00 i rabat gotówkowy na kwotę 5,00.
+April zamyka stronę **Rozliczenie transakcji**. W arkuszu tworzony jest wiersz płatności na kwotę 495,00. Następnie April księguje ten arkusz. April można sprawdzić transakcje z dostawcą na stronie **Transakcji dostawcy**. Widzi, że faktura ma saldo o wartości -500,00. Widzi również płatność w wysokości 495,00 i rabat gotówkowy na kwotę 5,00.
 
 | Załącznik    | Typ transakcji | Data      | Faktura | Kwota debetu w walucie transakcji | Kwota kredytu w walucie transakcji | Saldo | Waluta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -136,6 +139,8 @@ April księguje arkusz płatności i sprawdza transakcję dostawcy na stronie **
 | DISC-10010 | Rabat gotówkowy    | 7/1/2015  |         | 5,00                                 |                                       | 0,00    | USD      |
 | APP-10011  | Płatność          | 7/8/2015  |         | 495.00                               |                                       | 0,00    | USD      |
 | DISC-10011 | Rabat gotówkowy    | 7/8/2015  |         | 5,00                                 |                                       | 0,00    | USD      |
+
+
 
 
 

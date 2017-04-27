@@ -1,6 +1,6 @@
 ---
-title: "Konfigurowanie książki adresowej."
-description: "W tym artykule opisano zagadnienia i decyzje, które należy wykonać podczas procesu planowania, zanim instalacji i konfiguracji globalnej książce adresowej i wszelkie dodatkowe książki adresowe w usłudze Microsoft Dynamics 365 dla operacji. Niektóre z decyzji obejmują potwierdzenie decyzji dokonanych w innych obszarów produktu, na przykład w hierarchii organizacyjnej."
+title: "Konfigurowanie globalnej książki adresowej"
+description: "W tym artykule opisano zagadnienia i decyzje, które należy uwzględnić w procesie planowania przed utworzeniem i skonfigurowaniem globalnej książki adresowej i wszelkich dodatkowych książek adresowych w programie Microsoft Dynamics 365 for Operations. Niektóre z decyzji obejmują potwierdzenie decyzji dokonanych w innych obszarów produktu, na przykład w hierarchii organizacyjnej."
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-global-address-books"></a>Konfigurowanie książki adresowej.
+# <a name="configure-global-address-books"></a>Konfigurowanie globalnej książki adresowej
 
-W tym artykule opisano zagadnienia i decyzje, które należy wykonać podczas procesu planowania, zanim instalacji i konfiguracji globalnej książce adresowej i wszelkie dodatkowe książki adresowe w usłudze Microsoft Dynamics 365 dla operacji. Niektóre z decyzji obejmują potwierdzenie decyzji dokonanych w innych obszarów produktu, na przykład w hierarchii organizacyjnej.
+[!include[banner](../includes/banner.md)]
+
+
+W tym artykule opisano zagadnienia i decyzje, które należy uwzględnić w procesie planowania przed utworzeniem i skonfigurowaniem globalnej książki adresowej i wszelkich dodatkowych książek adresowych w programie Microsoft Dynamics 365 for Operations. Niektóre z decyzji obejmują potwierdzenie decyzji dokonanych w innych obszarów produktu, na przykład w hierarchii organizacyjnej.
 
 <a name="global-address-book"></a>Globalna książka adresowa
 -------------------
@@ -61,6 +64,8 @@ Po utworzeniu w globalnej książki adresowej można utworzyć dodatkowe książ
 W dowolnym momencie można utworzyć książki adresowe i w dowolnym momencie można również ustawić parametry zabezpieczeń książki adresowej. Ustawianie uprawnień zabezpieczeń dla książki adresowej nie jest konieczne, ale w przeciwnym wypadku wszyscy pracownicy w firmie mogą wyświetlić wszystkie rekordy jednostek w tej książce adresowej. Można ustawić uprawnienia zabezpieczeń do rekordów stron za pomocą książki adresowej. Uprawnienia zabezpieczeń są oparte na zespołach. Takie rozwiązanie gwarantuje, że tylko pracownicy, którzy są przypisani do zespołu, mają dostęp do książki adresowej i mogą wyświetlić rekordy stron w tej książce adresowej. Musisz wybrać zespoły, które mają dostęp do każdej z książek adresowych. Dla każdej książki adresowej można ustawić uprawnienia zabezpieczeń, które przyznają lub blokują dostęp do określonych zespołów. Po udostępnieniu zespołowi uprawnień dostępu do książki adresowej jego członkowie mogą wyświetlać jej rekordy. Jeśli nie przyznasz zespołowi dostępu do książki adresowej, członkowie zespołu nie mogą wyświetlać książki adresowej ani jej zawartości. **Decyzja:**
 
 -   Które zespoły mają dostęp do każdej nowej książki adresowej, którą chcesz utworzyć?
+
+
 
 
 

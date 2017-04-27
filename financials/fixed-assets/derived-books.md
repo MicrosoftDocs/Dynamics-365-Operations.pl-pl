@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="derived-books"></a>Księgi pochodne
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie funkcji ksiąg pochodnych.
 
-Celem pochodnych ksiąg jest upraszczają księgowanie transakcji księgi środków trwałych, które są planowane w regularnych interwałach.  Jako podstawowy książki wybrać jedną księgę. Jest to zazwyczaj księga używana do amortyzacji księgowej. Następnie dołączasz tę księgę do innych ksiąg, które służą do księgowania transakcji w takich samych interwałach, jak w księdze podstawowej. Księgi amortyzacji podatkowej są często konfigurowane jako księgi pochodne. 
+Księgi pochodne upraszczają księgowanie transakcji księgi środków trwałych, które są planowane w regularnych interwałach.  Jedną księgę wskazuje się jako podstawową. Jest to zazwyczaj księga używana do amortyzacji księgowej. Następnie dołączasz tę księgę do innych ksiąg, które służą do księgowania transakcji w takich samych interwałach, jak w księdze podstawowej. Księgi amortyzacji podatkowej są często konfigurowane jako księgi pochodne. 
 
 Najczęstszymi transakcjami księgowanymi w księgach pochodnych są transakcje nabycia, korekty wartości początkowej i likwidacje. 
 
@@ -42,6 +45,8 @@ Podczas księgowania transakcji jest generowana i księgowana transakcja nabycia
 > [!NOTE]                                                                                                                               
 > Księgi skonfigurowane tak, aby transakcje były księgowane w interwałach innych niż interwały księgi podstawowej, należy dołączyć do środka trwałego jako oddzielne księgi, a nie jako księgi pochodne.  
 
-Aby uzyskać więcej informacji, zobacz [Księgowanie za pomocą pochodnych ksiąg](post-derived-value-models.md).
+Aby uzyskać więcej informacji, zobacz [Księgowanie za pomocą ksiąg pochodnych](post-derived-value-models.md).
+
+
 
 

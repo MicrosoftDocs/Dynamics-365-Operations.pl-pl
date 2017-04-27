@@ -29,13 +29,16 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="coverage-settings"></a>Ustawienia zapotrzebowania
 
+[!include[banner](../includes/banner.md)]
+
+
 Ustawienia zapotrzebowania są używane przez planowanie główne do obliczania zapotrzebowań na towary. 
 
 Ustawienia zapotrzebowania można określić na kilka sposobów:
 
--   Określ ustawienia zapotrzebowania dla grupy zapotrzebowania. Można utworzyć grupę zapotrzebowania zawierająca ustawienia dotyczące wszystkich produktów połączonych z tą grupą zapotrzebowania. Kliknij **Master planning &gt;instalacji &gt;pokrycia &gt;grup zapotrzebowania** do tworzenia grup zapotrzebowania. Grupę zapotrzebowania można połączyć z produktem. Jeśli łącze jest właściwe dla oddziału, magazynu lub wymiaru produktu, użyj pola **grupa zapotrzebowania** na stronie **zapotrzebowanie na towar**. Jeśli łącze ma charakter ogólny, bez względu na wymiary produktu, należy użyć **grupy zapotrzebowania** na skróconej karcie **Plan** na stronie **Szczegóły produktu**. Jeśli grupa zapotrzebowania nie jest połączona z produktem, planowanie główne używa **ogólnej grupy zapotrzebowania** określonej na stronie **Parametry planowania głównego** jako domyślna.
+-   Określ ustawienia zapotrzebowania dla grupy zapotrzebowania. Można utworzyć grupę zapotrzebowania zawierająca ustawienia dotyczące wszystkich produktów połączonych z tą grupą zapotrzebowania. Aby utworzyć grupę zapotrzebowania, kliknij kolejno opcje **Planowanie główne &gt; Ustawienia &gt; Zapotrzebowanie &gt; Grupy zapotrzebowania**. Grupę zapotrzebowania można połączyć z produktem. Jeśli łącze jest właściwe dla oddziału, magazynu lub wymiaru produktu, użyj pola **grupa zapotrzebowania** na stronie **zapotrzebowanie na towar**. Jeśli łącze ma charakter ogólny, bez względu na wymiary produktu, należy użyć **grupy zapotrzebowania** na skróconej karcie **Plan** na stronie **Szczegóły produktu**. Jeśli grupa zapotrzebowania nie jest połączona z produktem, planowanie główne używa **ogólnej grupy zapotrzebowania** określonej na stronie **Parametry planowania głównego** jako domyślna.
 
--   Określ ustawienia zapotrzebowania dla produktu. Ustawienia zapotrzebowania można utworzyć dla określonego produktu. Kliknij **zarządzanie informacjami o produktach &gt;produktów &gt;zwolnionych produktów**. Zaznacz produkt, na **w okienku akcji**, na **Plan** kartę w **grupy zapotrzebowania**, kliknij przycisk **zapotrzebowanie na towar** otworzyć **zapotrzebowanie na towar** strony. Jeśli produkt jest połączony z grupą zapotrzebowania, ustawienia grupy zapotrzebowania można zastąpić, korzystając z pola **Zastąp**. Ustawienia zapotrzebowania na stronie** Zapotrzebowanie na towar** mają pierwszeństwo przed ustawieniami na stronie **Grupa zapotrzebowania**.
+-   Określ ustawienia zapotrzebowania dla produktu. Ustawienia zapotrzebowania można utworzyć dla określonego produktu. Kliknij kolejno opcje **Zarządzanie informacjami o produktach &gt; Produkty &gt; Zwolnione produkty**. Wybierz produkt, a następnie w **okienku akcji** na karcie **Plan** w obszarze **Grupa zapotrzebowania** kliknij przycisk **Zapotrzebowanie na towar**, aby otworzyć stronę **Zapotrzebowanie na towar**. Jeśli produkt jest połączony z grupą zapotrzebowania, ustawienia grupy zapotrzebowania można zastąpić, korzystając z pola **Zastąp**. Ustawienia zapotrzebowania na stronie** Zapotrzebowanie na towar** mają pierwszeństwo przed ustawieniami na stronie **Grupa zapotrzebowania**.
 
 <!-- -->
 
@@ -43,13 +46,15 @@ Ustawienia zapotrzebowania można określić na kilka sposobów:
 
 <!-- -->
 
--   Określ ustawienia zapotrzebowania dla grupy wymiarów. Kliknij **zarządzanie informacjami o produktach &gt;wspólne &gt;zwolnionych produktów**. Na wytwarzanie wydany szczegóły produktu ** strony na **ogólne** kartę w **administracji** grupy, kliknij przycisk **grupy wymiarów magazynowania** łącze. Na stronie **Grupa wymiarów magazynowania** wybierz pole **Plan zapotrzebowania wg wymiaru**, aby utworzyć ustawienia zapotrzebowania dla wymiaru w grupie wymiarów magazynowania. Wszystkie wymiary produktu, takie jak konfiguracja, kolor, rozmiar, styl, musi mieć **plan zapotrzebowania wg wymiaru** zaznaczone pole.
+-   Określ ustawienia zapotrzebowania dla grupy wymiarów. Kliknij kolejno opcje **Zarządzanie informacjami o produktach &gt; Wspólne &gt; Zwolnione produkty**. Na stronie **Szczegóły zwolnionego produktu** na karcie **Ogólne** w grupie **Administracja** kliknij łącze **Grupa wymiarów magazynowania**. Na stronie **Grupa wymiarów magazynowania** wybierz pole **Plan zapotrzebowania wg wymiaru**, aby utworzyć ustawienia zapotrzebowania dla wymiaru w grupie wymiarów magazynowania. Wszystkie wymiary produktów, takie jak konfiguracja, kolor, rozmiar, styl, muszą mieć zaznaczone pole **Plan zapotrzebowania wg wymiaru**.
 
 
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Master plans](master-plans.md)
+[Plany główne](master-plans.md)
+
+
 
 

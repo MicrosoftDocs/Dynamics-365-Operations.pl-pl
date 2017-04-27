@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="costing-sheets"></a>Arkusze wyceny
 
+[!include[banner](../includes/banner.md)]
+
+
 Konfiguracja arkusza wyceny obejmuje dwa cele. Pierwszym celem jest określenie formatu wyświetlania informacji o kosztach sprzedanych towarów, wyprodukowanych towarów oraz zlecenia produkcyjnego. Sformatowane wyświetlenie nosi nazwę arkusz wyceny. Drugim celem jest określenie podstawy obliczania kosztów pośrednich. Konfiguracja arkusza wyceny opiera się na funkcji grupy kosztów dla wyświetlania informacji oraz wzorów obliczania kosztów pośrednich. Oba cele konfigurowania arkusza wyceny są opisane w tym artykule. 
 
 Arkusz wyceny jest sformatowanym widokiem informacji dotyczących kosztu towarów, które są sprzedawane dla produkowanego elementu lub zlecenia produkcyjnego. Podczas konfigurowania arkusza wyceny trzeba zdefiniować format dla informacji, a także zdefiniować podstawę do obliczania kosztów bezpośrednich. Konfiguracja arkusza wyceny opiera się na funkcjach grupy kosztów do wyświetlania informacji oraz dla wzorów używanych do obliczania kosztu pośredniego. Poniżej przedstawiono więcej informacji o dwóch celach konfiguracji arkusza wyceny:
@@ -43,6 +46,8 @@ Dwie polityki blokowania dla wersji wyceny określają, czy koszty oczekujące m
 Po zdefiniowaniu formatu arkusza wyceny oraz obliczeniach dla kosztów pośrednich, należy przeprowadzić oddzielną procedurę zatwierdzania i zapisania informacji. Arkusz wyceny reprezentuje format ogólnofirmowy w celu spójnego przedstawiania informacji dotyczących kosztów sprzedanych towarów. 
 
 Arkusz wyceny jest wyświetlany jako część strony **Obliczanie kosztu pozycji**. Arkusz wyceny może być wyświetlany dla rekordu obliczonego kosztu wytwarzanego towaru na stronie **Cena towaru** lub dla rekordu obliczania właściwego dla zamówienia na stronie ** Wyniki obliczeń BOM**. Może być on również wyświetlony jako część strony **Obliczanie ceny** dla zlecenia produkcyjnego.
+
+
 
 
 

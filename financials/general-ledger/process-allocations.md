@@ -1,6 +1,6 @@
 ---
 title: Przetwarzanie alokacji
-description: "Ten artykuł zawiera informacje o alokacji, opcje przetwarzania ich w usłudze Microsoft Dynamics 365 dla operacji i jak mogą być używane w planowaniu budżetu. Alokacje służą do dystrybucji kwot między wiele kombinacji kont księgowych. Pomagają zagwarantować, że przychody lub wydatki obciążają odpowiednie obiekty podczas księgowania."
+description: "Ten artykuł zawiera informacje o alokacjach, opcjach ich przetwarzania w programie Microsoft Dynamics 365 for Operations oraz o sposobach ich wykorzystywania w planowaniu budżetu. Alokacje służą do dystrybucji kwot między wiele kombinacji kont księgowych. Pomagają zagwarantować, że przychody lub wydatki obciążają odpowiednie obiekty podczas księgowania."
 author: twheeloc
 manager: AnnBe
 ms.date: 2017-04-04
@@ -28,11 +28,11 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="process-allocations"></a>Przetwarzanie alokacji
 
-Ten artykuł zawiera informacje o alokacji, opcje przetwarzania ich w usłudze Microsoft Dynamics 365 dla operacji i jak mogą być używane w planowaniu budżetu. Alokacje służą do dystrybucji kwot między wiele kombinacji kont księgowych. Pomagają zagwarantować, że przychody lub wydatki obciążają odpowiednie obiekty podczas księgowania.
+Ten artykuł zawiera informacje o alokacjach, opcjach ich przetwarzania w programie Microsoft Dynamics 365 for Operations oraz o sposobach ich wykorzystywania w planowaniu budżetu. Alokacje służą do dystrybucji kwot między wiele kombinacji kont księgowych. Pomagają zagwarantować, że przychody lub wydatki obciążają odpowiednie obiekty podczas księgowania.
 
-Microsoft Dynamics 365 dla operacji zawiera następujące funkcje do obsługi tego procesu:
+Microsoft Dynamics 365 for Operations oferuje następujące funkcje do obsługi tego procesu:
 
--   Ręcznie przydzielić kwoty transakcji przy użyciu akcji Podziel w zasady podziału księgowań lub przy zastosowaniu domyślnych szablonów wymiaru finansowego do dokumentu. Aby uzyskać więcej informacji, zobacz [zasady podziału księgowań.](\accounts-payable\accounting-distributions.md)
+-   Ręczne przydzielanie kwot transakcji przy użyciu akcji Podział w zasadach podziału księgowań lub poprzez zastosowanie względem dokumentu domyślnych szablonów wymiaru finansowego. Aby uzyskać więcej informacji, zobacz [Zasady podziału księgowań](\accounts-payable\accounting-distributions.md).
 -   Automatyczne przydzielanie kwot transakcji na podstawie warunków alokacji zdefiniowanych na poszczególnych kontach głównych. Zapisy na koncie alokacji zostaną wygenerowane dla każdego arkusza według wartości procentowej i docelowego konta księgowego zawsze gdy zapis księgowy spełnia kryteria określone jako konto księgowe źródła.
 -   Automatyczne przydzielanie sald księgi lub stałych kwot na podstawie reguł alokacji księgi. Reguły alokacji księgi są przetwarzane w regularnych odstępach przy użyciu arkuszy alokacji. 
 

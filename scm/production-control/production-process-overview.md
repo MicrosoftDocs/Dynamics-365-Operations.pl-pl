@@ -1,6 +1,6 @@
 ---
-title: "Przegląd procesu produkcji"
-description: "Ten artykuł zawiera omówienie procesów produkcji. Opisuje różne etapy zleceń produkcyjnych, szarże produkcyjne i karty Kanban z tworzenia zamówienia do zamknięcia okresu finansowego."
+title: "Omówienie procesu produkcji"
+description: "Ten artykuł zawiera omówienie procesów produkcji. Opisuje różne etapy zleceń produkcyjnych, szarż produkcji i zadań Kanban — od utworzenia zamówienia aż do zamknięcia okresu finansowego."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,20 +27,23 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="production-process-overview"></a>Przegląd procesu produkcji
+# <a name="production-process-overview"></a>Omówienie procesu produkcji
 
-Ten artykuł zawiera omówienie procesów produkcji. Opisuje różne etapy zleceń produkcyjnych, szarże produkcyjne i karty Kanban z tworzenia zamówienia do zamknięcia okresu finansowego. 
+[!include[banner](../includes/banner.md)]
+
+
+Ten artykuł zawiera omówienie procesów produkcji. Opisuje różne etapy zleceń produkcyjnych, szarż produkcji i zadań Kanban — od utworzenia zamówienia aż do zamknięcia okresu finansowego. 
 
 Produkcja towarów, nazywana też cyklem produkcyjnym, następuje zgodnie z określonymi krokami potrzebnymi do ukończenia produkcji towaru. Cykl życia rozpoczyna się od utworzenia zlecenia produkcyjnego, zamówienia partii lub kanban. Kończy się, gdy wyprodukowany towar jest gotowy do dostarczenia odbiorcy lub przekazania do kolejnej fazy produkcji. Na każdym etapie cyklu produkcyjnego do jego ukończenia są potrzebne inne rodzaje informacji. Gdy etap zostaje ukończony, jest to odzwierciedlane w zleceniu produkcyjnym, zamówieniu partii lub kanban przez zmianę jego stanu produkcji. Różne rodzaje produktów wymagają różnych procesów produkcji.  
 
-**Kontroli produkcji** moduł jest połączona z innymi modułami, takich jak **zarządzanie informacjami o produktach**, **Zarządzanie zapasami**, **księgi głównej**, **Zarządzanie magazynem**, **rozliczanie projektu**, i **Administrowanie organizacją**. Taka integracja sprzyja przepływowi informacji, który jest wymagany do ukończenia produkcji towaru.  
+Moduł **Kontrola produkcji** jest połączony z innymi modułami, takimi jak **Zarządzanie informacjami o produktach**, **Zarządzanie zapasami**, **Księga główna**, **Zarządzanie magazynem**, **Księgowość projektu** i **Administrowanie organizacją**. Taka integracja sprzyja przepływowi informacji, który jest wymagany do ukończenia produkcji towaru.  
 
-Na proces produkcji mają z reguły wpływ metody rachunku kosztów i inwentaryzacji zapasów, wybrane dla określonego procesu produkcyjnego. Dynamics 365 dla operacji obsługuje zarówno koszt rzeczywisty (po raz pierwszy, najpierw się \[FIFO\]; ostatni do, pierwszy z \[LIFO\]; średnia ruchoma; i okresowe średniej ważonej) i kosztów standardowych metod. Lean manufacturing wdraża się na podstawie reguły wyceny wstecznej.  
+Na proces produkcji mają z reguły wpływ metody rachunku kosztów i inwentaryzacji zapasów, wybrane dla określonego procesu produkcyjnego. Program Dynamics 365 for Operations obsługuje zarówno metody kosztu rzeczywistego (\[FIFO\]; \[LIFO\]; średnia ruchoma i okresowa średnia ważona), jak i kosztu standardowego. Lean manufacturing wdraża się na podstawie reguły wyceny wstecznej.  
 
 Wybór metod pomiaru kosztów określa również wymagania dotyczące raportów na temat zużycia zasobów i materiałów w procesie produkcji. Zazwyczaj metody kosztu rzeczywistego wymagają dokładnej sprawozdawczości na poziomie zadania, a metody kosztów okresowych pozwalają na mniej szczegółowe raportowanie zużycia materiałów i zasobów.
 
 ## <a name="mixed-mode-manufacturing"></a>Tryb mieszany produkcji
-Różne produkty i topologie produkcji wymagają stosowania różnych typów zamówienia. Dynamics 365 dla operacji można stosować różne typy zleceń w trybie mieszanym. Innymi słowy wszystkich w całym cyklu produkcji gotowego towaru mogą wystąpić wszystkie typy zamówień.
+Różne produkty i topologie produkcji wymagają stosowania różnych typów zamówienia. W programie Dynamics 365 for Operations można połączyć różne typy zamówień w tryb mieszany. Innymi słowy wszystkich w całym cyklu produkcji gotowego towaru mogą wystąpić wszystkie typy zamówień.
 
 -   **Zlecenie produkcyjne** — jest to typ klasycznego zlecenia produkcji do wyprodukowania określonego produktu lub wariantu produktu w określonej ilości w danym dniu. Zlecenia produkcyjne są oparte na specyfikacji listy składowej BOM i marszruty.
 -   **Zamówienie partii** — ten typ zamówienia jest używany w produkcji procesowej i dyskretnej, gdzie konwersja produkcji opiera się na formule lub produkty towarzyszące i uboczne mogą być produktami końcowymi zamiast lub oprócz produktu głównego. Zamówienia partii wykorzystują BOM i marszruty typu **formuły**.
@@ -59,14 +62,14 @@ Aby wybrać zasady produkcji najlepiej dostosowane do określonego produktu i ry
 Dla wszystkich typów trybu mieszanego produkcji mogą wystąpić następujące kroki w cyklu produkcyjnym. Jednak nie wszystkie z nich są przedstawiane jako stan zlecenia jawny.
 
 1.  **Utworzone** — można tworzyć zlecenia produkcyjne, zamówienia partii lub kanban ręcznie, ale można też skonfigurować ich tworzenie przez system na podstawie różnych sygnałów popytu. Planowanie główne tworzy zlecenia produkcyjne, zamówienia partii, lub karty Kanban przy ustalaniu zamówień planowanych. Innymi sygnałami popytu są zamówienia sprzedaży lub sygnały ustalonej dostawy ze zleceń produkcyjnych lub kart kanban. W przypadku kart kanban o stałej ilości sygnały popytu są generowane, gdy kanban zostaną zarejestrowane jako puste.
-2.  **Szacowane**— Umożliwia obliczanie oszacowań zużycia materiałów i zasobów. Oszacowanie generuje transakcje magazynowe dla surowców, które znajdują się w stanie **Zamówione**. Przychodów dla głównych produktów, produktów podobnych i produktów ubocznych są generowania zleceń produkcyjnych lub szarże produkcyjne są szacowane. Jeśli BOM zawiera wiersze z **ustalana na podstawie dostaw** wpisz zamówień zakupu dla materiałów lub usług podwykonawczych operacji są generowane i ustalana w stosunku do zlecenia produkcyjnego lub zamówienia partii. Towary lub zamówienia są rezerwowane zgodnie ze strategią rezerwacji zlecenia produkcyjnego, a cena towarów gotowych jest obliczana na podstawie ustawień parametrów.
+2.  **Szacowane**— Umożliwia obliczanie oszacowań zużycia materiałów i zasobów. Oszacowanie generuje transakcje magazynowe dla surowców, które znajdują się w stanie **Zamówione**. Przyjęcia dla głównych produktów, produktów towarzyszących i ubocznych są generowane po oszacowaniu zleceń produkcyjnych lub szarż produkcyjnych. Jeśli lista składowa BOM zawiera wiersze typu **Ustalona dostawa**, zamówienia zakupu materiałów lub usług operacyjnych podwykonawcy są generowane i ustalane w zleceniu produkcyjnym lub szarży produkcyjnej. Towary lub zamówienia są rezerwowane zgodnie ze strategią rezerwacji zlecenia produkcyjnego, a cena towarów gotowych jest obliczana na podstawie ustawień parametrów.
 3.  **Zaplanowane** — można zaplanować produkcję na podstawie operacji, pojedynczych zadań lub jednych i drugich.
     -   **Planowanie operacji** — ta metoda planowania zapewnia ogólny, długoterminowy plan. Za pomocą tej metody można przypisywać do zleceń produkcyjnych daty początkowe i końcowe. Jeśli zlecenia produkcyjne są dołączone do operacji marszruty, można je przypisać do grup centrów kosztów.
     -   **Planowanie zadań** — ta metoda planowania zapewnia plan szczegółowy. Każda operacja jest rozbita na pojedyncze zadania z określonymi datami i godzinami oraz przypisanymi zasobami operacyjnymi. W przypadku uwzględniania ograniczonych zadania są przypisywane do zasobów operacyjnych według ich dostępności. Harmonogram można przeglądać i zmieniać na wykresie Gantta.
     -   **Harmonogram Kanban** — zadania Kanban są planowane na tablicy harmonogramu kanban lub automatycznie planowane na podstawie automatycznego planowania konfiguracji reguł kanban.
 
 4.  **Zwolnione** — można zwolnić zlecenie produkcyjne lub zamówienie partii, jeśli harmonogram został ukończony, a materiał jest dostępny do pobrania lub przygotowania. Sprawdzanie dostępności materiałów pomaga kierownikowi produkcji ocenić dostępność materiału dla zlecenia produkcyjnego lub zamówienia partii. Można również wydrukować dokumenty związane ze zleceniem produkcyjnym, takie jak listy pobrania, karta zadania, karta marszruty i zadanie marszruty. Wraz z wystawieniem zlecenia produkcyjnego stan zlecenia ulega zmianie, wskazując, że produkcja może się rozpocząć. W przypadku zarządzania magazynem, zwalnianie zlecenia produkcyjnego lub zamówienia partii powoduje zwolnienie wierszy BOM produkcji do zarządzania magazynem. Grupy czynności magazynowych i praca magazynowa są generowane na podstawie konfiguracji magazynu.
-5.  **Przygotować**/**pobrane** -gdy wszystkie materiały i zasoby zostały wystawione w miejscu produkcji, wiersze BOM-u produkcyjnego lub wiersze w systemie kanban są aktualizowane do stanu z **pobrane**. Zamówienia z ustaloną dostawą i związana z tym praca magazynu są zazwyczaj kończone na tym etapie. Karty kanban lub karty zadań wymagane do zgłaszania postępów produkcji powinny zostać przypisane i wydrukowane.
+5.  **Przygotowane**/**Pobrane** — Po przygotowaniu wszystkich materiałów i zasobów w miejscu produkcji następuje aktualizacja wierszy BOM produkcji lub wierszy Kanban do stanu **Pobrane**. Zamówienia z ustaloną dostawą i związana z tym praca magazynu są zazwyczaj kończone na tym etapie. Karty kanban lub karty zadań wymagane do zgłaszania postępów produkcji powinny zostać przypisane i wydrukowane.
 6.  **Rozpoczęte** — po uruchomieniu zlecenia produkcyjnego, zamówienia partii lub kanban można zgłosić wykorzystanie materiałów lub zasobów w związku z zamówieniem. System można skonfigurować tak, aby automatycznie księgował zużycie materiałów i zasobów, które są alokowane do zamówienia po uruchomieniu zlecenia. Przydział ten jest znany jako „wstępna kalkulacja zużycia”, „rozliczenie wstępne” lub „samozużycie”. Można ręcznie alokować materiały dla zleceń produkcyjnych lub zamówień partii, tworząc dodatkowe arkusze list pobrania. Do zamówienia można także ręcznie przydzielić robociznę oraz inne koszty marszruty. Jeśli używasz planowania operacji, możesz alokować te koszty przez utworzenie arkusza karty marszruty. Jeśli używasz planowania zadań, możesz alokować te koszty przez utworzenie arkusza karty zadania. Zlecenia produkcyjne lub zamówienia partii można uruchomić w partiach żądanej ilości końcowej. W ramach zlecenia produkcyjnego, zamówienia partii lub kanban tworzone są zadania, które można rozpoczynać i zgłaszać osobno przy użyciu arkuszy, terminalu MES lub tablic kanban.
 7.  Zgłaszanie postępu/**zakończenia** zadania — za pomocą terminalu MES, arkuszy produkcji, tablic kanban lub funkcji skanowania mobilnego można zgłaszać postęp produkcji według zadania lub zasobu. Zużycie materiałów i zasobów zostanie zaksięgowane, a stan powiązanych kanban, zleceń produkcyjnych i zamówień partii może zostać zaktualizowany do wartości **otrzymane** lub **zgłoszone jako gotowe**. W zależności od konfiguracji magazynu można utworzyć pracę odłożenia.
 8.  **Zgłoszone jako gotowe** (przyjęcie produktów) — Gdy zlecenie produkcyjne lub zamówienie partii zostanie zgłoszone jako zakończone, ilość wyprodukowanych towarów, które zostały zakończone, jest aktualizowana w module Zapasy. Ilość ta zawiera ilość odpowiednich produktów towarzyszących i ubocznych. Jeśli używasz księgowania pracy w toku (PWT), w arkuszu księgi następuje zmniejszenie kont PWT i zwiększenie zapasów produktów gotowych. Podczas obliczania kosztów zlecenia produkcyjnego księgowany jest rzeczywisty koszt produkcji. Jeśli koszty materiałów i robocizny, które są powiązane z produkcją nie są już przydzielone do arkusza lub przez wstępną kalkulację zużycia, mogą one być automatycznie przydzielane przez rozliczenie wsteczne. Alokacja poprzez opróżnianie zaległe uwzględnia rozliczenie wsteczne procesów transakcji magazynowych. Jeśli zlecenie produkcyjne zostało zakończone, należy wybrać pole wyboru **Zakończ zadanie**, aby zmienić pozostały stan na **Zakończone**. W przeciwnym razie to pole jest pozostawiane puste w celu informowania o dodatkowych ilościach, które są produkowane.
@@ -79,10 +82,12 @@ Dla wszystkich typów trybu mieszanego produkcji mogą wystąpić następujące 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Production feedback](production-feedback.md)
+[Informacja zwrotna o produkcji](production-feedback.md)
 
-[Product configuration models](../pim/product-configuration-models.md)
+[Modele konfiguracji produktu](../pim/product-configuration-models.md)
 
 [Lean manufacturing](lean-manufacturing-overview.md)
+
+
 
 

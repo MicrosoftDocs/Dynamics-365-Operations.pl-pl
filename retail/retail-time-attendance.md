@@ -1,6 +1,6 @@
 ---
 title: "Czas i frekwencja w sieci sprzedaży"
-description: "W tym temacie opisano scenariusze, które są obsługiwane w przypadku zarządzania modułu Czas i frekwencja w usłudze Microsoft Dynamics 365 dla operacji - sieci sprzedaży."
+description: "W tym temacie opisano scenariusze obsługiwane w zakresie zarządzania czasem i frekwencją w module Microsoft Dynamics 365 for Operations — Handel detaliczny."
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="retail-time-and-attendance"></a>Czas i frekwencja w sieci sprzedaży
 
-W tym temacie opisano scenariusze, które są obsługiwane w przypadku zarządzania modułu Czas i frekwencja w usłudze Microsoft Dynamics 365 dla operacji - sieci sprzedaży. 
+[!include[banner](includes/banner.md)]
 
-<a name="manage-worker-setup-and-scheduling"></a>Zarządzanie ustawień pracownika i planowania
+
+W tym temacie opisano scenariusze obsługiwane w zakresie zarządzania czasem i frekwencją w module Microsoft Dynamics 365 for Operations — Handel detaliczny. 
+
+<a name="manage-worker-setup-and-scheduling"></a>Zarządzanie ustawieniami i planowaniem pracowników
 ----------------------------------
 
 ### <a name="initial-configuration"></a>Pierwotna konfiguracja 
@@ -45,8 +48,8 @@ Aby uzyskać więcej informacji o etapach konfiguracji, zobacz <https://technet.
 
 ### <a name="retail-specific-configuration"></a>Konfiguracja właściwa dla sieci sprzedaży
 
--   Włącz profil funkcji dla Zegara, dla pracowników, którzy mają być odpowiedzialni za rejestrację czasu. Kliknij **profile funkcji POS**&gt;**funkcje**&gt;**rejestracje czasu POS**&gt;**Włącz rejestracje czasu**.
--   Skonfiguruj grupy uprawnień w punkcie sprzedaży, aby włączyć uprawnienie Wyświetlanie wpisów zegara. To uprawnienie pozwala wyświetlać rejestracje zegara innych pracowników w danym sklepie (i w każdym innym sklepie, z którym użytkownik jest skojarzony, za pomocą książki adresowej). Można włączyć uprawnienie dla roli Menedżer, ale nie dla roli Kasjer. Kliknij **grup uprawnień punktu sprzedaży**&gt;**wyświetlanie wpisów zegara**.
+-   Włącz profil funkcji dla Zegara, dla pracowników, którzy mają być odpowiedzialni za rejestrację czasu. Kliknij kolejno opcje **Profile funkcji punktu sprzedaży** &gt; **Funkcje** &gt; **Rejestracje czasu w punkcie sprzedaży** &gt; **Włącz rejestracje czasu**.
+-   Skonfiguruj grupy uprawnień w punkcie sprzedaży, aby włączyć uprawnienie Wyświetlanie wpisów zegara. To uprawnienie pozwala wyświetlać rejestracje zegara innych pracowników w danym sklepie (i w każdym innym sklepie, z którym użytkownik jest skojarzony, za pomocą książki adresowej). Można włączyć uprawnienie dla roli Menedżer, ale nie dla roli Kasjer. Kliknij kolejno opcje **Grupy uprawnień punktu sprzedaży** &gt; **Wyświetlanie wpisów zegara**.
 
 ## <a name="register-time"></a>Czas rejestracji
 ### <a name="cashier-and-non-cashier-time-registrations"></a>Rejestracje czasu dla roli Kasjer i ról innych niż Kasjer
@@ -106,9 +109,9 @@ Aby uzyskać więcej informacji o etapach konfiguracji, zobacz <https://technet.
 <!-- -->
 
 -   Różne strefy czasowe:
-    -   W przypadku wyświetlenia czasu z innej lokalizacji (dla dziennika kasjera lub za pomocą opcji **Wyświetlanie wpisów zegara** dla menedżera) i gdy ta lokalizacja jest w innej strefie czasowej, widoczne rejestracje czasu są konwertowane na czas lokalny. Na przykład jesteś menedżera dla dwóch magazynów, jeden w Arizona, a drugi w Nevadzie. Kasjer rejestruje wyrejestrowania o godzinie 9:00 W Arizona. W tym momencie w Nevadzie jest godzina 8:00. Jeśli więc jesteś w Nevadzie i przeglądasz dane rejestracji czasu, wskazywana jest godzina 8:00.
+    -   W przypadku wyświetlenia czasu z innej lokalizacji (dla dziennika kasjera lub za pomocą opcji **Wyświetlanie wpisów zegara** dla menedżera) i gdy ta lokalizacja jest w innej strefie czasowej, widoczne rejestracje czasu są konwertowane na czas lokalny. Załóżmy, że zarządzasz dwoma sklepami — w Arizonie i Nevadzie. Kasjer rejestruje przyjście do pracy o godzinie 9:00 w Arizonie. W tym momencie w Nevadzie jest godzina 8:00. Jeśli więc jesteś w Nevadzie i przeglądasz dane rejestracji czasu, wskazywana jest godzina 8:00.
 
-## <a name="view-worker-time-registrations"></a>Wyświetlanie pracowników rejestracji czasu
+## <a name="view-worker-time-registrations"></a>Wyświetlanie rejestracji czasu pracownika
 ### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a>Wyświetlanie rejestracji czasu pracownika i filtrowanie według sklepu lub typu aktywności
 
 W punkcie sprzedaży:
@@ -117,8 +120,8 @@ W punkcie sprzedaży:
 -   Widać działania rejestracji czasu dla wszystkich pracowników przypisanych do tych samych sklepów, do których jesteś przypisany Ty.
 -   Za pomocą filtrów typu działania i sklepu możesz filtrować rejestracje czasu.
 
-## <a name="process-and-manage-time-registrations"></a>Przetwarzanie i zarządzanie rejestracji czasu
-365 Dynamics dla operacji - detalicznych użytkownika następuje przepływ pracy, aby obliczać, zatwierdzać i przenosić rejestracje czasu do listy płac.
+## <a name="process-and-manage-time-registrations"></a>Przetwarzanie rejestracji czasu i zarządzanie nimi
+Użytkownik programu Dynamics 365 for Operations — Handel detaliczny wykonuje procedurę obliczania, zatwierdzania i przesłania rejestracji czasu do listy płac.
 
 ### <a name="primary-operations"></a>Podstawowe operacje
 
@@ -132,5 +135,7 @@ W punkcie sprzedaży:
 -   Rejestrowanie nieobecności
 
 Aby uzyskać więcej informacji na temat przetwarzania rejestracji czasu i nieobecności, zobacz <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
+
+
 
 

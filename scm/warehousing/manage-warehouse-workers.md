@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-warehouse-workers"></a>Zarządzanie pracownikami magazynu
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł opisuje sposób korzystania z systemu Microsoft Dynamics AX do zwiększania kontroli i monitorowania pracy, która jest wykonywana przez pracowników w magazynach.
 
 Jeśli używasz funkcji zarządzania magazynem, wszystkie operacje pracownika magazynu są określane jako *praca*. Praca, taka jak pobieranie, przenoszenie i zliczanie dostępnych zapasów, jest rejestrowana przy użyciu urządzeń przenośnych. Zanim pracownik magazynu będzie mógł wykonać pracę, musi być powiązany z pracownikiem w dziale Zasoby ludzkie. Każde konto **pracownika** może mieć wielu powiązanych użytkowników pracy w magazynie. Ci użytkownicy pracy mogą pracować w różnych magazynach i mieć różne poziomy dostępu do rozmaitych menu urządzeń przenośnych. Użytkowników pracy w magazynie można traktować jak logowanie wielokrotne dla wybranego pracownika. Każdy użytkownik pracy w magazynie ma domyślny magazyn i określone przepływy pracy są używane w pozycjach menu dostępnych dla danego użytkownika pracy. 
@@ -51,6 +54,8 @@ Analiza czasu potrzebnego na wykonanie poszczególnych procesów pracy może uł
 
 -   **Praca wg użytkownika** — pokazuje wydajność pracowników na podstawie rzeczywistych czasów względem oczekiwanych godzin.
 -   **Praca wg typu transakcji pracy** — analizuje nieefektywność w procesach określonego magazynu. Na przykład zauważasz, że w danym tygodniu pobrania zamówień przeniesienia zajmują dłużej niż w poprzednich tygodniach. Na podstawie tej informacji możesz dalej zbadać to zjawisko.
+
+
 
 
 

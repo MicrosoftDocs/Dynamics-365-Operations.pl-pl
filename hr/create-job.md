@@ -1,6 +1,6 @@
 ---
 title: "Konfigurowanie składników zadania"
-description: "W tym temacie opisano elementy koncepcyjne, że zadanie może zawierać oraz przykłady wykorzystania tych elementów w danej organizacji."
+description: "W tym temacie opisano elementy koncepcyjne, które może zawierać zadanie, oraz przykłady wykorzystania tych elementów w organizacji."
 author: rschloma
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,36 +27,39 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="setting-up-the-components-of-a-job"></a>Konfigurowanie składników zadania
 
-W tym temacie opisano elementy koncepcyjne, że zadanie może zawierać oraz przykłady wykorzystania tych elementów w danej organizacji. 
+[!include[banner](includes/banner.md)]
 
-Przed utworzeniem zadania, należy zdefiniować niektóre informacje. Można utworzyć zadanie, które ma tylko nazwę. Jednak przy tym dodatkowe informacje, takie jak stanowisko, należy podać wartości domyślne dla pozycji, które są przypisane do stanowiska. Dodatkowo niektóre z informacji wprowadzonych może służyć do filtrowania świadczeń pracowniczych do określonych stanowisk. Jeśli chcesz skonfigurować uprawnienia, które można użyć do filtrowania świadczeń pracowniczych do określonego zadania, należy ustawić typy zadań i stanowisk pracy przed skonfigurować zadania. Mając te dostępne wartości domyślne, można zaoszczędzić czas podczas dodawania pozycji do zadania. 
 
-Niektóre szczegóły zadania, takie jak stanowisko, typu i funkcji, są skuteczne daty. Tworzenie zadania na dziś, ale nie należy dodawać te informacje później, a następnie spójrz zadania do daty utworzenia, szczegóły te nie pojawi się. W związku z tym należy utworzyć niektóre informacje referencyjne przed jej wymaga. W ten sposób można dodać informacje do nowych miejsc pracy podczas ich tworzenia.
+W tym temacie opisano elementy koncepcyjne, które może zawierać zadanie, oraz przykłady wykorzystania tych elementów w organizacji. 
 
-## <a name="job-titles"></a>Zajmowane stanowiska
+Zanim będzie można tworzyć zadania, trzeba skonfigurować pewne informacje referencyjne. Można utworzyć zadanie mające tylko nazwę. Jednak umieszczając dodatkowe informacje, takie jak stanowisko (nazwa stanowiska), podajesz wartości domyślne dla stanowisk przypisanych do zadania. Dodatkowo niektóre wprowadzane informacje mogą służyć do filtrowania systemów wynagrodzeń względem określonych zadań. Jeśli chcesz skonfigurować uprawnienia, których można używać do filtrowania systemów wynagrodzeń względem określonego zadania, należy najpierw skonfigurować funkcje stanowisk i typy zadań, a następnie same zadania. Mając dostępne te wartości domyślne, oszczędzisz czas podczas dodawania stanowisk do zadania. 
+
+Niektóre szczegóły zadania, takie jak stanowisko, typ i funkcja, mają daty obowiązywania. Jeśli utworzysz zadanie dzisiaj, ale te szczegóły dodasz dopiero później, to gdy wyświetlisz zadanie według stanu na dzień utworzenia, nie będziesz widzieć tych informacji. W związku z tym niektóre informacje referencyjne należy utworzyć, jeszcze zanim będą potrzebne. W ten sposób będą one dodawane do nowych zadań podczas ich tworzenia.
+
+## <a name="job-titles"></a>Stanowiska
 Przed utworzeniem zadań, należy utworzyć nazwy dla tych stanowisk. Pozycje dziedziczą nazwy stanowisk od stanowisk, z którymi są skojarzone. 
 
-Obsługa stanowisk przy użyciu **tytuły** strony, które można otworzyć za pomocą funkcji wyszukiwania. Na wytwarzanie tytuły ** strony, wprowadź tytuły, które zamierzasz używać do zadań.
+Zarządzanie stanowiskami odbywa się na stronie **Stanowiska**, którą można otworzyć za pomocą funkcji wyszukiwania. Na stronie **Stanowiska** wprowadź stanowiska, których zamierzasz używać do zadań.
 
 ## <a name="job-types"></a>Typy stanowisk
-Typy zadań służy do grupowania podobnych zadań w kategorii. Typy zadań nie są wymagane. Jednak jeśli planuje się używanie typów zadań podczas tworzenia reguł uprawnienia do zarządzania wynagrodzeniami, przed utworzeniem zadań należy skonfigurować typy zadań. Niektóre przykłady typów zadań są pełnym i niepełnym wymiarze lub wynagrodzenia i co godzinę płacą. Obsługa typów zadań za pomocą **kategorie pracy** strony. Na **kategorie pracy** strony, wprowadź nazwę i krótki opis typu zadania. W **zwolnienia** wybierz jedną z następujących opcji, aby wskazać zwolnione stan zadania, których tego typu zadania uczciwej pracy Standards Act (FLSA):
+Typy zadań umożliwiają grupowanie podobnych zadań w kategorie. Typy zadań nie są wymagane. Jednak jeśli planuje się używanie typów zadań podczas tworzenia reguł uprawnienia do zarządzania wynagrodzeniami, przed utworzeniem zadań należy skonfigurować typy zadań. Przykłady typów zadań to zatrudnienie w pełnym i niepełnym wymiarze czasu albo wynagrodzenie za etat i za godziny. Zarządzanie typami zadań odbywa się na stronie **Typy stanowisk**. Na stronie **Typy stanowisk** wprowadź nazwę i krótki opis typu zadania. W polu **Stan zwolnienia** wybierz jedną z następujących opcji, aby wskazać stan zwolnienia zadania wynikający z Ustawy o standardach uczciwej pracy (FLSA):
 
--   **Zwolnione** — zadania są zwolnione z nadgodzin w obszarze FLSA.
--   **Niewyłączone** — zadania nie są zwolnione z nadgodzin w obszarze FLSA.
--   **Nie stosuje się** — FLSA zapotrzebowania nie jest stosowana.
+-   **Zwolnienie** — zadania są zwolnione z nadgodzin na mocy FLSA.
+-   **Niezwolniony** — zadania nie są zwolnione z nadgodzin na mocy FLSA.
+-   **Nie ma zastosowania** — ustawa FLSA nie jest stosowana.
 
 ## <a name="job-functions"></a>Funkcje stanowisk
-Skrzyżowania zadania opisują wysokiego poziomu kategorie funkcjonalne i odnoszą się wysokiego poziomu ceł. Stanowisk pracy nie są wymagane. Do filtrowania świadczeń pracowniczych do określonych stanowisk, można używać funkcji zadania, wraz z typów zadań. Typy zadań i stanowisk pracy można skojarzyć z pracowniczych poprzez ustawienie zasady kwalifikowania wydatków na **zasady kwalifikowania wydatków** strony. Zestaw poziomów można następnie dołączyć do wynagrodzeń, którego dotyczą określona kombinacja typu zadania i stanowiskiem, zdefiniowanego za pomocą reguły uprawnienia. (Funkcje te dotyczą zarówno systemów stałych wynagrodzeń i systemów wynagrodzeń o zmiennej wysokości.) Jednakże jeśli zamierzasz używać funkcji zadań podczas konfigurowania reguł dotyczących uprawnień do zarządzania rekompensaty, należy skonfigurować stanowisk pracy przed zdefiniowaniem zadań. W poniższej tabeli przedstawiono kilka przykładów funkcji zadań.
+Funkcje stanowisk opisują ogólne kategorie funkcjonalne i wiążą z nimi ogólne obowiązki. Funkcje stanowisk nie są wymagane. Funkcje stanowisk mogą być używane razem z typami zadań do filtrowania systemów wynagrodzeń według konkretnych zadań. Funkcje stanowisk i typy zadań można kojarzyć z systemami wynagrodzeń, ustawiając reguły uprawnień na stronie **Reguły uprawnienia**. Następnie do systemu wynagrodzeń można dołączyć zbiór poziomów obowiązujący dla określonej kombinacji typu zadania i funkcji stanowiska określonej w regule uprawnienia. (Te funkcje stosowane są do systemów stałych i zmiennych wynagrodzeń). Jednak jeśli planujesz używać funkcji stanowisk podczas tworzenia reguł uprawnień do zarządzania wynagrodzeniami, przed utworzeniem zadań należy utworzyć funkcje stanowisk. W poniższej tabeli przedstawiono kilka przykładów funkcji stanowisk.
 
 | Zadanie           | Funkcja stanowiska         |
 |---------------|----------------------|
 | Menedżer ds. sprzedaży | Menedżer średniego szczebla    |
-| Księgowy    | Specjalistów        |
+| Księgowy    | Specjaliści        |
 
-Obsługa funkcji stanowiska za pomocą **funkcji zadań** strony. Na **funkcji zadań** strony, wprowadź kod identyfikacyjny i krótki opis funkcji zadania.
+Zarządzanie funkcjami stanowisk odbywa się na stronie **Funkcje stanowisk**. Na stronie **Funkcje stanowisk** wprowadź kod identyfikacyjny i krótki opis funkcji stanowiska.
 
 ## <a name="job-tasks"></a>Zadania zlecenia
-Zadania zadanie opisano podstawowe zadania, które należy wykonać pracownik, który jest w stanie pracy. To samo zadanie zadania mogą być dodawane do wielu zadań i stanowisk dla zadania, używające tych zadań zlecenia. W poniższej tabeli przedstawiono kilka przykładów zadań zlecenia.
+Zadania zlecenia opisują podstawowe zadania, które musi wykonać pracownik zajmujący stanowisko obejmujące to zadanie. To samo zadanie zlecenia można dodać do wielu zadań oraz do stanowisk w zadaniu wykorzystujących to zadanie zlecenia. W poniższej tabeli przedstawiono kilka przykładów zadań zlecenia.
 
 <table>
 <thead>
@@ -69,20 +72,22 @@ Zadania zadanie opisano podstawowe zadania, które należy wykonać pracownik, k
 <tr class="odd">
 <td>Menedżer ds. sprzedaży</td>
 <td><ul>
-<li><strong>Przegląd Perf</strong> — Przegląd wydajności pracy każdego sprzedawcy.</li>
-<li><strong>ABS Weryfikacja</strong> — zatwierdzanie lub odrzucanie wniosków urlopowych lub rejestracji każdego sprzedawcy.</li>
+<li><strong>Perf-review</strong> — przeglądanie wydajności poszczególnych sprzedawców.</li>
+<li><strong>Abs-review</strong> — zatwierdzanie lub odrzucanie wniosków urlopowych lub rejestracji nieobecności.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Księgowy</td>
-<td><strong>FIN-Report</strong> – przedstawić tygodniowe raporty finansowe Dyrektor finansowy.</td>
+<td><strong>FIN-Report</strong> — przeglądanie tygodniowych raportów finansowych dla dyrektora finansowego.</td>
 </tr>
 </tbody>
 </table>
 
-Obsługa zadań pracy przy użyciu **zlecenia zadania** strony. Na **zlecenia zadania** strony, wprowadź nazwę i opis dla zadania zlecenia. W **Uwaga** pola, opcjonalnie można wprowadzić dodatkowe informacje. Notatki mogą być aktualizowane dla określonego zadania bez zmiany notatek, które zostały wprowadzone w tym miejscu.
+Zarządzanie zadaniami zlecenia odbywa się na stronie **Zadania zlecenia**. Na stronie **Zadania zlecenia** wprowadź nazwę i opis zadania zlecenia. W polu **Notatka** można opcjonalnie wprowadzić dodatkowe informacje. Notatki mogą być aktualizowane dla określonego zadania bez zmiany notatek wprowadzonych w tym miejscu.
 
 ## <a name="areas-of-responsibility"></a>Zakres odpowiedzialności
-Zakres odpowiedzialności umożliwia wskazanie ról pracy, procesów i produktów, które jest odpowiedzialne za pracownika, który jest w stanie pracy. Na przykład w przypadku zadania o nazwie "Księgowy" jednego obszaru odpowiedzialności może być "Finansowe zgłoszenie dotyczące produktu A." Obsługa zakresów odpowiedzialności za pomocą **zakres odpowiedzialności** strony, które można znaleźć za pomocą funkcji wyszukiwania. Na **zakres odpowiedzialności** strony, wprowadź nazwę i opis dla odpowiedzialności. W **Uwaga** pola, opcjonalnie można wprowadzić dodatkowe informacje. Notatki mogą być aktualizowane dla określonego zadania bez zmiany notatek, które zostały wprowadzone w tym miejscu.
+Zakresy odpowiedzialności pozwalają wskazać pełnione w ramach obowiązków służbowych, procesy i produkty, za które jest odpowiedzialny pracownik zajmujący stanowisko obejmujące to zadanie. Na przykład dla zadania o nazwie „Księgowy” jednym z zakresów odpowiedzialności może być „Raporty finansowe dla produktu A”. Zarządzanie zakresami odpowiedzialności odbywa się na stronie **Zakres odpowiedzialności**, do której można przejść za pomocą funkcji wyszukiwania. Na stronie **Zakres odpowiedzialności** wprowadź nazwę i opis zbioru obowiązków. W polu **Notatka** można opcjonalnie wprowadzić dodatkowe informacje. Notatki mogą być aktualizowane dla określonego zadania bez zmiany notatek wprowadzonych w tym miejscu.
+
+
 
 

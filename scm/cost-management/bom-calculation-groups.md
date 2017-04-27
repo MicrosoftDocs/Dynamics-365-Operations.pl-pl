@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bom-calculations-groups"></a>Grupy obliczeń BOM
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o grupach obliczania dla list składowych (BOM) oraz ich konfigurowaniu. Aby uruchomić obliczanie BOM, należy utworzyć grupy obliczania i przypisać je do poszczególnych towarów albo utworzyć domyślną grupę obliczania. Ustawienia obliczania z grupy obliczania są następnie używane jako wartości domyślne na stronie Obliczanie BOM podczas obliczania listy składowej. 
 
-Należy zdefiniować domyślną grupę obliczania na stronie **Parametry modułu Zarządzanie zapasami i magazynem** lub grupę obliczania specyficzną dla produktu na stronie **Szczegóły zwolnionego produktu**. System szuka najpierw ustawienia grupy obliczania **zwolnione szczegółów produktu** strony. Jeśli nie znajdzie z grupą obliczania, wygląda **parametrów zarządzania zapasami i magazynem** strony. Jeśli system nie może odnaleźć grupy obliczania, użytkownik otrzymuje komunikat o błędzie podczas obliczania. Grupa obliczania zawiera zasady dla modelu kosztu własnego, modelu ceny sprzedaży i listy kontrolnej ostrzeżeń. Ustawienia obliczania z grupy obliczania są używane jako wartości domyślne na stronie **Obliczanie BOM** podczas obliczania listy składowej.
+Należy zdefiniować domyślną grupę obliczania na stronie **Parametry modułu Zarządzanie zapasami i magazynem** lub grupę obliczania specyficzną dla produktu na stronie **Szczegóły zwolnionego produktu**. System w pierwszej kolejności wyszukuje konfigurację grupy obliczania na stronie **Szczegóły zwolnionego produktu**. Jeśli nie znajdzie tam grupy obliczania, szuka na stronie **Parametry modułu Zarządzanie zapasami i magazynem**. Jeśli system nie może znaleźć grupy obliczania, użytkownik otrzymuje komunikat o błędzie podczas obliczania. Grupa obliczania zawiera zasady dla modelu kosztu własnego, modelu ceny sprzedaży i listy kontrolnej ostrzeżeń. Ustawienia obliczania z grupy obliczania są używane jako wartości domyślne na stronie **Obliczanie BOM** podczas obliczania listy składowej.
 
 ## <a name="purposes-of-bom-calculation-groups"></a>Cele grup obliczania BOM
 Grupę obliczania BOM przypisuje się do pozycji z kilku powodów:
@@ -72,7 +75,7 @@ Na skróconej karcie **Ostrzeżenia** wybierasz opcje wszelkich komunikatów ost
 Domyślne ustawienia w oknie Parametry modułu Zarządzanie zapasami i magazynem
 --------------------------------------------------------------
 
-Ponieważ grupy obliczania są wymagane do wykonywania obliczeń, należy skonfigurować domyślną grupę obliczania w parametrach modułu Zarządzanie zapasami. Ta konfiguracja umożliwi firmom posiadanie standardowych ustawień grupy kosztów i zysków dla wszystkich towarów. Następnie jeśli określony towar ma specjalne wymagania dotyczące obliczania, użytkownik może przypisać inną grupę obliczania do tej pozycji. Zazwyczaj można ustawić grupy obliczania dla pozycji składowych BOM zamiast bezpośrednio dla pozycji BOM. Jednakże gdy pojawiają się komunikaty ostrzegawcze, można zastosować grupy obliczania. Grupa obliczania przypisana do towarów zastępuje domyślną wartość skonfigurowaną w parametrach modułu Zarządzanie zapasami. Można zdefiniować domyślny parametr o **Zarządzanie kosztami**&gt;**ustawienia zasady księgowania zapasów**&gt;**parametry**&gt;**księgowania zapasów**&gt;**grupy obliczania**. Konfigurując domyślną grupę konfiguracji, można również skonfigurować warunki ostrzegawcze powodujące wyświetlanie użytkownikom monitów w trakcie procesu obliczania BOM, jeśli wybrane składniki mogły powodować błędy w obliczeniach.
+Ponieważ grupy obliczania są wymagane do wykonywania obliczeń, należy skonfigurować domyślną grupę obliczania w parametrach modułu Zarządzanie zapasami. Ta konfiguracja umożliwi firmom posiadanie standardowych ustawień grupy kosztów i zysków dla wszystkich towarów. Następnie jeśli określony towar ma specjalne wymagania dotyczące obliczania, użytkownik może przypisać inną grupę obliczania do tej pozycji. Zazwyczaj można ustawić grupy obliczania dla pozycji składowych BOM zamiast bezpośrednio dla pozycji BOM. Jednakże gdy pojawiają się komunikaty ostrzegawcze, można zastosować grupy obliczania. Grupa obliczania przypisana do towarów zastępuje domyślną wartość skonfigurowaną w parametrach modułu Zarządzanie zapasami. Parametr domyślny można zdefiniować w oknie **Zarządzanie kosztami** &gt; **Ustawienia zasad księgowania zapasów** &gt; **Parametry** &gt; **Księgowanie zapasów** &gt; **Grupa obliczania**. Konfigurując domyślną grupę konfiguracji, można również skonfigurować warunki ostrzegawcze powodujące wyświetlanie użytkownikom monitów w trakcie procesu obliczania BOM, jeśli wybrane składniki mogły powodować błędy w obliczeniach.
 Wyświetlanie komunikatów ostrzegawczych na stronie Zakończono
 ------------------------------------------
 
@@ -85,5 +88,7 @@ Podczas obliczania BOM są generowane komunikaty ostrzegawcze. Można obejrzeć 
 -   Ostrzegaj, jeśli towar w wierszu BOM ma zbyt mały procent zyskowności.
 
 Można zdefiniować wiele grup obliczania BOM, w zależności od wymaganego zróżnicowania komunikatów ostrzegawczych. Na przykład może wystarczyć jedna grupa obliczania BOM, która ma warunki ostrzegawcze dotyczące aktywnego BOM, zerowej ilości składnika i zerowego kosztu składnika. Podczas rozpoczynania obliczania BOM można zastępować warunki ostrzegawcze skojarzone z grupą obliczania BOM. Można również dodawać i usuwać warunki ostrzegawcze. Na przykład jeśli obecna sytuacja nie obejmuje żadnych danych marszruty, można usunąć warunek ostrzegawczy dotyczący aktywnej marszruty. **Uwaga:** Moduł Czas i frekwencja zawiera stronę **Grupy obliczania**, ale ta strona nie ma żadnego powiązania z grupami obliczania BOM. W module Czas i frekwencja można przypisywać pracowników do grup obliczania, które odzwierciedlają grupy pracowników skojarzonych z tym samym przełożonym lub kierownikiem. Obliczanie rejestracji pracowników może być wykonywane automatycznie lub ręcznie przez przełożonego lub kierownika.
+
+
 
 

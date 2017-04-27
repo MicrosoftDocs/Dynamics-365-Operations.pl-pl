@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Symulacja zmian kosztów przy użyciu wersji wyceny kosztów planowanych
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule wyjaśniono, jak symulować wpływ zmian kosztów na obliczone koszty wytwarzanego towaru poprzez użycie osobnej wersji wyceny dla kosztów planowanych.
 
 Można symulować wpływ zmian obliczonych kosztów wytwarzanych towarów, używając osobnej wersji wyceny dla kosztów planowanych. Należy używać tej osobnej wersji wyceny do wprowadzania rekordów kosztów oczekujących odzwierciedlających przyrostowe zmiany kosztów oraz do obliczania wpływu kosztów na produkowane towary. Ponieważ zasada alternatywnych źródeł danych aktywnych kosztów będzie używana przy obliczaniu listy składowej (BOM), należy wprowadzić tylko przyrostowe zmiany kosztów.
@@ -54,5 +57,7 @@ W poniższych scenariuszach przedstawiono użycie wersji wyceny w symulacjach w 
 -   Przeprowadź symulację zmiany kosztu w formule obliczania kosztów pośrednich. Na przykład zmiana kosztu może odzwierciedlać oczekiwany wzrost lub spadek kosztów ogólnych produkcji. Aby zdefiniować zmianę w formule obliczania kosztów pośrednich, na stronie **Konfiguracja arkusza wyceny** wprowadź rekord kosztów oczekujących w wersji wyceny dla symulacji, sprawdź poprawność i zapisz zmianę.
 
 Po wprowadzeniu symulowanych zmian kosztów oblicz koszty wytwarzanych towarów, na które wpłynęły zmiany. Na stronie **Obliczanie** dla wersji wyceny w symulacji zidentyfikuj wybrane produkowane towary, na które wpłynie zmiana kosztu. Jeśli nie wybierzesz konkretnych towarów, obliczenia BOM będą dotyczyć wszystkich wytwarzanych towarów. Alternatywnie za pomocą opcji obliczania BOM można zaktualizować dane miejsc użycia. Wyświetl rekordy kosztów towaru w wersji wyceny w symulacji w celu przeanalizowania wpływu symulowanych zmian kosztów na koszty wybranych wytwarzanych towarów. Do wyświetlania i analizowania kosztów służą strony **Cena pozycji** i **Oblicz koszt pozycji**.
+
+
 
 

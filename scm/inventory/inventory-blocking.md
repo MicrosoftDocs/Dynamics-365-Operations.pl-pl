@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-blocking"></a>Blokowanie zapasów
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie mechanizmu blokowania zapasów, który jest częścią procesu kontroli jakości w systemie Microsoft Dynamics AX. Używając blokowania, można zapobiec przetwarzaniu i zużywaniu zapasów.
 
 Pozycje magazynowe można blokować w następujący sposób:
@@ -53,17 +56,19 @@ W poniższym przykładzie generowane jest zlecenie kontroli jakości podczas ksi
 | Skojarzenie jakości określa, że przy księgowaniu dokumentu dostawy zamówienia zakupu musi zostać wygenerowane zlecenie kontroli jakości. Ustawienia kontroli wyrywkowej towarów zlecenia kontroli jakości określa, że musi zostać skontrolowane 10% ilości w wierszu zamówienia zakupu. Co więcej, przy zaznaczonym polu wyboru **Pełne blokowanie** ustawienie pobierania próbek wskazuje, że podczas inspekcji, niezależnie od ilości, która zostanie wysłana do inspekcji, należy zablokować pełną ilość w wierszu zamówienia zakupu. | Dokumentu dostawy zostaje zaksięgowany. | Zlecenie kontroli jakości zostało wygenerowane. 10% ilości towaru w zamówieniu zakupu jest wysyłane do inspekcji. Całkowita ilość wiersza zamówienia zakupu jest zablokowana. |
 
 ## <a name="blocking-items-by-using-inventory-status-blocking"></a>przez blokowanie towarów za pomocą blokowania stanu magazynu
-Można określić, które stany zapasów blokuje stany za pomocą **blokowania zapasów** parametru na **stanów zapasów** strony. Stanów zapasów nie można używać jako stanów blokowania dla zleceń produkcyjnych, zamówień sprzedaży, zamówień przeniesienia, transakcji wychodzących i integracji projektu. W przypadku pracy wychodzącej należy użyć towarów z dostępnym stanem zapasów. Jeśli masz towary o stanie **uszkodzone** i zostało dla nich uruchomione planowanie główne, pozycje te zostaną uznane za brakujące, a zapasy są uzupełniane automatycznie.
+Można określić, które stany zapasów powodują blokowanie, za pomocą parametru **Blokowania zapasów** na stronie **Stany zapasów**. Stanów zapasów nie można używać jako stanów blokowania dla zleceń produkcyjnych, zamówień sprzedaży, zamówień przeniesienia, transakcji wychodzących i integracji projektu. W przypadku pracy wychodzącej należy użyć towarów z dostępnym stanem zapasów. Jeśli masz towary o stanie **uszkodzone** i zostało dla nich uruchomione planowanie główne, pozycje te zostaną uznane za brakujące, a zapasy są uzupełniane automatycznie.
 
 
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Tworzenie i Obsługa inwentaryzacji blokowania (Przewodnik zadania)](https://ax.help.dynamics.com/en/wiki/create-and-maintain-an-inventory-blocking/)
+[Tworzenie i obsługa blokowania zapasów (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/create-and-maintain-an-inventory-blocking/)
 
-[Quality management processes](quality-management-processes.md)
+[Procesy zarządzania jakością](quality-management-processes.md)
 
-[Sprawdź jakość towarów (Przewodnik zadania)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+[Sprawdzenie jakości towarów (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+
+
 
 

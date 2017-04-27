@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="cost-groups"></a>Grupy kosztów
 
+[!include[banner](../includes/banner.md)]
+
+
 Grupy kosztów są podstawą podczas segmentowania i analizowania udziałów kosztów w obliczonym koszcie wyprodukowanego towaru, takich jak koszt materiału bądź robocizny czy narzuty. Segmentacja grup kosztów jest nazywana w środowiskach produkcyjnych także podziałem kosztów, dekompozycją kosztów lub klasyfikacją kosztów. 
 
 Segmentacja grup kosztów jest nazywana w środowiskach produkcyjnych także podziałem kosztów, dekompozycją kosztów lub klasyfikacją kosztów. Segmentacja grup kosztów może służyć do następujących celów. Oto kilka przykładów:
@@ -48,6 +51,8 @@ Do grupy kosztów można przypisać typ grupy kosztów oraz działanie służąc
 
 -   **Typ grupy kosztów** — do każdej grupy kosztów należy przypisać typ grupy kosztów, który określa grupę kosztów jako odnoszącą się do materiałów bezpośrednich, produkcji bezpośredniej lub bezpośredniego outsourcingu albo w celu oznaczenia jej jako koszt pośredni lub niezdefiniowany. Grupę kosztów określona jako materiały bezpośrednie można przypisać do towarów. Grupę kosztów produkcji bezpośredniej można przypisać do kategorii kosztów. Grupa kosztów outsourcingu bezpośredniego może być przypisana do typu produktu usługi, która służy do klasyfikowania kosztów związanych z zakupem usługi do działań podwykonawstwa. Grupę kosztów pośrednich można przypisać do kosztów pośrednich dla dopłat i stawek. Grupę kosztów określoną jako niezdefiniowaną można przypisać do towarów, kategorii kosztów lub kosztów pośrednich. Przypisanie typu grupy kosztów służy kilku celom. Po pierwsze ogranicza możliwość przypisywania grupy kosztów i wyświetlania listy mających zastosowanie grup kosztów. Po drugie zapewnia uzupełniającą segmentację na potrzeby sprawozdawczości. Po trzecie może służyć do przypisywania kont księgowych dla zmian.
 -   **Działanie** — każdej grupie kosztów można opcjonalnie przypisać działanie, które określa grupę kosztów jako odnoszącą się do kosztów stałych lub zmiennych. Grupa kosztów, która ma wartość NULL dla działania, jest traktowana jako koszt zmienny. Przypisanie działania służy wyłącznie do tworzenia raportów. Na przykład koszty mogą być wyświetlane z podziałem na koszty stałe i zmienne w arkuszu wyceny oraz na stronie **Akumulacja kosztów według grupy kosztów**. Jeśli przypiszesz wartość procentową ustawień zysku do każdej grupy kosztów, obliczanie listy składowej (BOM) poda sugerowaną cenę sprzedaży na podstawie wzoru „koszt plus narzut”.
+
+
 
 
 

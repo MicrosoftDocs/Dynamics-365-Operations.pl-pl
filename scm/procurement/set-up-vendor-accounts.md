@@ -1,5 +1,5 @@
 ---
-title: "Konfigurowanie kont dostawców"
+title: "Konfigurowanie kont odbiorców"
 description: "W tym temacie opisano typy informacji, które należy wprowadzić podczas tworzenia nowego konta dostawcy."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-vendor-accounts"></a>Konfigurowanie kont dostawców
+# <a name="set-up-vendor-accounts"></a>Konfigurowanie kont odbiorców
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym temacie opisano typy informacji, które należy wprowadzić podczas tworzenia nowego konta dostawcy.
 
@@ -40,7 +43,7 @@ Podczas tworzenia konta dostawcy wprowadza się informacje o dostawcy. Te inform
 -   Skonfiguruj podatek, dostawę, fakturę i informacje o płatności dla dostawcy. Domyślnie te ustawienia są kopiowane do nowych dokumentów, które tworzysz dla dostawcy.
 -   Ustaw domyślne wymiary finansowe, które są używane do automatycznego księgowania transakcji z dostawcą na kontach finansowych.
 
-Aby przyspieszyć proces tworzenia kont dostawców, można utworzyć szablony. Aby utworzyć szablon, na **dostawcy** w okienku akcji kliknij opcję **opcje**&gt;**rejestrować informacje o**. Następnie kliknij opcję **Szablon firmy**. Szablony kont firmowych są udostępniane innym użytkownikom.  
+Aby przyspieszyć proces tworzenia kont dostawców, można utworzyć szablony. Aby utworzyć szablon, na stronie **Dostawca** w okienku akcji kliknij kolejno pozycje **Opcje** &gt; **Informacje o rekordzie**. Następnie kliknij opcję **Szablon firmy**. Szablony kont firmowych są udostępniane innym użytkownikom.  
 
 Można także utworzyć szablon użytkownika do własnego użytku. Nie można usunąć dostawcy, który jest skojarzony z innymi rekordami, np. kontaktów lub produktów.
 
@@ -56,7 +59,7 @@ Dla każdego dostawcy można określić wiele adresów, z których każdy będzi
 ## <a name="vendor-contacts"></a>Osoby kontaktowe dostawców
 Można przechowywać dane osób kontaktowych dostawców. Te kontakty mogą być następnie używane w dokumentach takich jak zamówienia zakupu lub zapytania ofertowe (ZO).  
 
-Dodać kontakty dla dostawcy, na **wszystkich dostawców** strona na **dostawcy** kartę w **skonfigurować** grupy, kliknij przycisk **kontakty**&gt;**Dodaj kontakty**.  
+Aby dodać osoby kontaktowe dla dostawcy, na stronie **Wszyscy dostawcy** na karcie **Dostawca** w grupie **Konfiguracja** kliknij kolejno opcje **Kontakty** &gt; **Dodaj kontakty**.  
 
 Kontakty dostawców można tworzyć od podstaw. Alternatywnie można skopiować szczegóły z innej osoby, która jest już zarejestrowana w programie Microsoft Dynamics 365 for Operations, i zmodyfikować informacje w żądany sposób.  
 
@@ -64,7 +67,7 @@ Kontakty dostawców można tworzyć od podstaw. Alternatywnie można skopiować 
 
 Nie można usunąć rekordu osoby kontaktowej, jeżeli istnieje odwołanie do niej w dokumencie. Zamiast tego można zdezaktywować kontakt.  
 
-Można dodawać kontakty dostawcy do kontaktów osobistych w programie Microsoft Office 365. Jednakże należy najpierw ustawić synchronizację między 365 Dynamics dla operacji i Office 365 zarówno Kreatora instalacji programu Microsoft Outlook, jak i synchronizacji programu Microsoft Exchange Server.
+Osoby kontaktowe dostawcy można dodać do kontaktów osobistych w usłudze Microsoft Office 365. Jednakże najpierw należy skonfigurować synchronizację między programem Dynamics 365 for Operations a usługą Office 365 w ustawieniach synchronizacji programu Microsoft Exchange Server oraz w kreatorze instalacji programu Microsoft Outlook.
 
 ## <a name="vendors-in-different-legal-entities"></a>Dostawcy w różnych firmach
 Jeśli dostawca jest zarejestrowany tylko dla jednej firmy w organizacji, a inne firmy muszą zarejestrować tego samego dostawcę, można użyć strony **Dodawanie dostawcy do innej firmy**, aby skonfigurować dostawcę do współpracy z inną firmą. Należy wybrać grupę dostawców, walutę i stan wstrzymania dla dostawcy w wybranej firmie.  
@@ -101,5 +104,7 @@ Jeśli trzeba dokonywać płatności na konto bankowe dostawcy, można wprowadzi
 Można określić konta domyślne, które będą automatycznie wyświetlane w arkuszach faktur od wybranego dostawcy. Ta funkcja może być przydatna, jeśli zwykle płacisz za te same typy towarów lub usług od tych samych dostawców przez dłuższy czas. Po określeniu domyślnego konta można szybko i sprawnie dokonywać wpisów w arkuszu faktur. Ustawione domyślne konta nie są używane do zamówień zakupu ani do faktur od dostawcy wprowadzonych na stronie **Faktura od dostawcy**.  
 
 Domyślne konta wybiera się na stronie **Ustawienia konta domyślnego**, którą można otworzyć za pomocą karty **Faktura** w rekordzie dostawcy. Konta wybrane w tym miejscu są wyświetlane na wyfiltrowanej liście kont dostawcy podczas wprowadzania wpisu w arkuszu. Można ustawić jedno z kont jako konto domyślne.
+
+
 
 

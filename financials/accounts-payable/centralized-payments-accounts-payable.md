@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-payable"></a>Scentralizowane płatności dla rozrachunków z dostawcami
 
+[!include[banner](../includes/banner.md)]
+
+
 Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą jednej firmy, która obsługuje wszystkie płatności. Dlatego tych samych płatności nie trzeba wpisywać w wielu firmach. Ten artykuł zawiera przykłady pokazujące sposób księgowania scentralizowanych płatności w różnych scenariuszach.
 
 Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą firmy, która obsługuje wszystkie płatności. Dlatego tych samych płatności nie trzeba wpisywać w wielu firmach. Ponadto organizacja oszczędza czas, ponieważ proces płatności przebiega sprawniej.
@@ -66,14 +69,14 @@ Firma Fabrikam East prowadzi fakturę otwartą dla dostawcy 100, Fourth Coffee. 
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Firma Fabrikam jest rozliczana za pomocą faktury firmy Fabrikam East
 
-**Fabrikam posting**
+**Księgowanie w firmie Fabrikam**
 
 | Konto                           | Kwota obciążenia | Kwota uznania |
 |-----------------------------------|--------------|---------------|
 | Należność firmy Fabrikam East (Fabrikam) | 600,00       |               |
 | Rozrachunki z dostawcami (Fabrikam)       |              | 600,00        |
 
-**Fabrikam East posting**
+**Księgowanie w firmie Fabrikam East**
 
 | Konto                          | Kwota obciążenia | Kwota uznania |
 |----------------------------------|--------------|---------------|
@@ -99,14 +102,14 @@ Firma Fabrikam East prowadzi fakturę otwartą dla dostawcy 100, Fourth Coffee. 
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Firma Fabrikam jest rozliczana za pomocą faktury firmy Fabrikam East
 
-**Fabrikam posting**
+**Księgowanie w firmie Fabrikam**
 
 | Konto                           | Kwota obciążenia | Kwota uznania |
 |-----------------------------------|--------------|---------------|
 | Należność firmy Fabrikam East (Fabrikam) | 580,00       |               |
 | Rozrachunki z dostawcami (Fabrikam)       |              | 580,00        |
 
-**Fabrikam East posting**
+**Księgowanie w firmie Fabrikam East**
 
 | Konto                          | Kwota obciążenia | Kwota uznania |
 |----------------------------------|--------------|---------------|
@@ -137,7 +140,7 @@ Firma Fabrikam East prowadzi fakturę otwartą dla dostawcy 100, Fourth Coffee. 
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Firma Fabrikam jest rozliczana za pomocą faktury firmy Fabrikam East
 
-**Fabrikam posting**
+**Księgowanie w firmie Fabrikam**
 
 | Konto                           | Kwota obciążenia            | Kwota uznania           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -146,7 +149,7 @@ Firma Fabrikam East prowadzi fakturę otwartą dla dostawcy 100, Fourth Coffee. 
 | Zrealizowana ujemna różnica kursowa (Fabrikam)          | 0,00 EUR / 12,90 USD    |                         |
 | Należność firmy Fabrikam East (Fabrikam) |                         | 0,00 EUR / 12,90 USD    |
 
-**Fabrikam East posting**
+**Księgowanie w firmie Fabrikam East**
 
 | Konto                          | Kwota obciążenia            | Kwota uznania           |
 |----------------------------------|-------------------------|-------------------------|
@@ -178,7 +181,7 @@ Firma Fabrikam East prowadzi fakturę otwartą dla dostawcy 100, Fourth Coffee. 
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Firma Fabrikam jest rozliczana za pomocą faktury firmy Fabrikam East
 
-**Fabrikam posting**
+**Księgowanie w firmie Fabrikam**
 
 | Konto                           | Kwota obciążenia            | Kwota uznania           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -187,7 +190,7 @@ Firma Fabrikam East prowadzi fakturę otwartą dla dostawcy 100, Fourth Coffee. 
 | Zrealizowana ujemna różnica kursowa (Fabrikam)          | 0,00 EUR / 12,66 USD    |                         |
 | Należność firmy Fabrikam East (Fabrikam) |                         | 0,00 EUR / 12,66 USD    |
 
-**Fabrikam East posting**
+**Księgowanie w firmie Fabrikam East**
 
 | Konto                          | Kwota obciążenia            | Kwota uznania           |
 |----------------------------------|-------------------------|-------------------------|
@@ -199,7 +202,7 @@ Firma Fabrikam East prowadzi fakturę otwartą dla dostawcy 100, Fourth Coffee. 
 | Rabat gotówkowy (Fabrikam East)    |                         | 11,28 EUR / 13,61 USD   |
 
 ## <a name="example-5-vendor-credit-note-with-primary-payment"></a>Przykład 5. Faktura korygująca dostawcy z płatnością główną
-Firma Fabrikam generuje płatność w kwocie 75,00 na koncie 3004 dostawcy, Fourth Coffee. Płatność jest rozliczana za pomocą faktury otwartej dla dostawcy 3004 firmy Fabrikam West i za pomocą otwartej faktury korygującej w firmie Fabrikam East dla dostawcy 100. Płatność jest zaznaczone jako płatność główna na **rozliczenia transakcji** strony.
+Firma Fabrikam generuje płatność w kwocie 75,00 na koncie 3004 dostawcy, Fourth Coffee. Płatność jest rozliczana za pomocą faktury otwartej dla dostawcy 3004 firmy Fabrikam West i za pomocą otwartej faktury korygującej w firmie Fabrikam East dla dostawcy 100. Płatność jest wybrana jako płatność główna na stronie **Rozlicz transakcje**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Faktura jest księgowana dla firmy Fabrikam West dla dostawcy 3004
 
@@ -224,7 +227,7 @@ Firma Fabrikam generuje płatność w kwocie 75,00 na koncie 3004 dostawcy, Four
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Płatność firmy Fabrikam jest rozliczana za pomocą faktury firmy Fabrikam West oraz faktury korygującej firmy Fabrikam East
 
-**Fabrikam posting**
+**Księgowanie w firmie Fabrikam**
 
 | Konto                           | Kwota obciążenia | Kwota uznania |
 |-----------------------------------|--------------|---------------|
@@ -233,14 +236,14 @@ Firma Fabrikam generuje płatność w kwocie 75,00 na koncie 3004 dostawcy, Four
 | Należność firmy Fabrikam West (Fabrikam) | 100,00       |               |
 | Rozrachunki z dostawcami (Fabrikam)       |              | 100,00        |
 
-**Fabrikam East posting**
+**Księgowanie w firmie Fabrikam East**
 
 | Konto                           | Kwota obciążenia | Kwota uznania |
 |-----------------------------------|--------------|---------------|
 | Należność firmy Fabrikam (Fabrikam East) | 25,00        |               |
 | Rozrachunki z dostawcami (Fabrikam East)  |              | 25,00         |
 
-**Fabrikam West posting**
+**Księgowanie w firmie Fabrikam West**
 
 | Konto                          | Kwota obciążenia | Kwota uznania |
 |----------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ Firma Fabrikam generuje płatność w kwocie 75,00 na koncie 3004 dostawcy, Four
 | Zobowiązanie firmy Fabrikam (Fabrikam West)  |              | 100,00        |
 
 ## <a name="example-6-vendor-credit-note-without-primary-payment"></a>Przykład 6. Faktura korygująca dostawcy bez płatności głównej
-Firma Fabrikam generuje płatność w kwocie 75,00 na koncie 3004 dostawcy, Fourth Coffee. Płatność jest rozliczana za pomocą faktury otwartej dla dostawcy 3004 firmy Fabrikam West i za pomocą otwartej faktury korygującej w firmie Fabrikam East dla dostawcy 100. Płatność nie jest zaznaczony jako płatność główna na **rozliczenia transakcji** strony.
+Firma Fabrikam generuje płatność w kwocie 75,00 na koncie 3004 dostawcy, Fourth Coffee. Płatność jest rozliczana za pomocą faktury otwartej dla dostawcy 3004 firmy Fabrikam West i za pomocą otwartej faktury korygującej w firmie Fabrikam East dla dostawcy 100. Płatność nie jest wybrana jako płatność główna na stronie **Rozlicz transakcje**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Faktura jest księgowana dla firmy Fabrikam West dla dostawcy 3004
 
@@ -273,21 +276,21 @@ Firma Fabrikam generuje płatność w kwocie 75,00 na koncie 3004 dostawcy, Four
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Płatność firmy Fabrikam jest rozliczana za pomocą faktury firmy Fabrikam West oraz faktury korygującej firmy Fabrikam East
 
-**Fabrikam posting**
+**Księgowanie w firmie Fabrikam**
 
 | Konto                           | Kwota obciążenia | Kwota uznania |
 |-----------------------------------|--------------|---------------|
 | Należność firmy Fabrikam West (Fabrikam) | 75,00        |               |
 | Rozrachunki z dostawcami (Fabrikam)       |              | 75,00         |
 
-**Fabrikam East posting**
+**Księgowanie w firmie Fabrikam East**
 
 | Konto                                | Kwota obciążenia | Kwota uznania |
 |----------------------------------------|--------------|---------------|
 | Należność firmy Fabrikam West (Fabrikam East) | 25,00        |               |
 | Rozrachunki z dostawcami (Fabrikam East)       |              | 25,00         |
 
-**Fabrikam West posting**
+**Księgowanie w firmie Fabrikam West**
 
 | Konto                              | Kwota obciążenia | Kwota uznania |
 |--------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ Firma Fabrikam generuje płatność w kwocie 75,00 na koncie 3004 dostawcy, Four
 | Zobowiązanie firmy Fabrikam (Fabrikam West)      |              | 75,00         |
 | Rozrachunki z dostawcami (Fabrikam West)     | 25,00        |               |
 | Zobowiązanie firmy Fabrikam East (Fabrikam West) |              | 25,00         |
+
+
 
 
 

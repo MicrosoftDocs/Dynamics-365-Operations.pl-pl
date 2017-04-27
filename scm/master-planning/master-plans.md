@@ -1,6 +1,6 @@
 ---
 title: "Plany główne"
-description: "Używać różnych planów głównych do obsługi codziennych operacji roboczych w firmie, symulowanie różnych strategii planowania, które mają być monitorowane i wykonywania zasad firmy, takie jak zasady dotyczące wewnętrznej satysfakcji wydajności lub klienta."
+description: "Istnieje możliwość korzystania z różnych planów głównych w celu obsługiwania codziennych operacji w firmie, symulowania różnych strategii planowania, które mają być monitorowane, oraz wdrażania polityki firmy, na przykład dotyczącej wydajności lub zadowolenia klientów."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="master-plans"></a>Plany główne
 
-Używać różnych planów głównych do obsługi codziennych operacji roboczych w firmie, symulowanie różnych strategii planowania, które mają być monitorowane i wykonywania zasad firmy, takie jak zasady dotyczące wewnętrznej satysfakcji wydajności lub klienta. 
+[!include[banner](../includes/banner.md)]
+
+
+Istnieje możliwość korzystania z różnych planów głównych w celu obsługiwania codziennych operacji w firmie, symulowania różnych strategii planowania, które mają być monitorowane, oraz wdrażania polityki firmy, na przykład dotyczącej wydajności lub zadowolenia klientów. 
 
 Można skonfigurować plany główne na stronie **Plany główne**.
 
@@ -50,8 +53,10 @@ Istnieje również możliwość uruchomienia planu dynamicznego, który będzie 
 
 [Ustawienia zapotrzebowania](coverage-settings.md)
 
-[Oddzielenie taktyczne i operacyjne planowania dla planowania głównego](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
+[Oddzielanie planowania taktycznego i operacyjnego w planowaniu głównym](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 
-[Planowanie instalacji wzorcowej: Użyć statycznego i dynamicznego planu głównego lub jeden plan?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+[Planowanie główne: Używać planów głównych statycznego i dynamicznego czy tylko jednego planu?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+
+
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Przeszacowanie waluty w konsolidowanej firmie
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Podczas konsolidowania danych z jednej waluty rozliczeniowej do innej należy wykonać przeszacowanie waluty, jeśli nastąpiła zmiana kursów wymiany, tak aby salda kont zostały poprawnie przeszacowane. Podczas pierwszej konsolidacji danych użyj karty **przeliczania waluty**, aby wybrać początkowe kursy wymiany do przeszacowania podczas procesu konsolidacji. Po wprowadzeniu nowego kursu wymiany (na przykład w kolejnym miesiącu) można przeszacować salda konta. Niezrealizowane dodatnie różnice kursowe zostaną odpowiednio zaktualizowane na podstawie nowego kursu wymiany i daty. Poniższy przykład ilustruje zapisy księgowe utworzone podczas tego procesu.
@@ -33,7 +36,7 @@ Podczas konsolidowania danych z jednej waluty rozliczeniowej do innej należy wy
 ## <a name="company-setup"></a>Konfiguracja firmy
 -   **Źródło/ firma (USMF)** — jako waluta raportowania i księgowania używane są dolary amerykańskie (USD).
 -   **Konsolidowana firma (CON)** — jako waluta raportowania i księgowania używane jest euro (EUR).
-    -   ** Zrealizowany zysk ** — konto księgowe 801500
+    -   **Zrealizowana dodatnia różnica kursowa** — konto księgowe 801500
     -   **Zrealizowana ujemna różnica kursowa **— konto księgowe 801600
     -   **Niezrealizowana dodatnia różnica kursowa **— konto księgowe 801600
     -   **Niezrealizowana ujemna różnica kursowa **— konto księgowe 801400
@@ -82,6 +85,8 @@ Zobaczysz dodatkowe transakcje dla kwot w walucie raportowania.
 | 130100         | EUR      | -500,00 | Pierwotna kwota -500 × 1%                          |
 | 801400         | EUR      | 250     | 500 – 333.33 = 166.67 166.67 + 83.33 = 250           |
 | 801600         | EUR      | -250    | -500 – (-333.33) = -166.67 -166.67 + (-83.33) = -250 |
+
+
 
 
 

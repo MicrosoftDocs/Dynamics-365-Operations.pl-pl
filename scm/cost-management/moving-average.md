@@ -68,14 +68,14 @@ Za pomocą średniej ruchomej koszt produktu jest określany przez odbiór zakup
 3.  Tworzenie zamówienia sprzedaży dla ilości równej 1 i ceny jednostkowej 10,00.
 4.  Tworzenie faktury zakupu dla ilości równej 2 i ceny jednostkowej 12,00.
 
-Różnica w cenie jednostkowej (2,00) jest księgowana jako Różnica cen dla konta średniej ruchomej, gdy faktura zakupu jest księgowana. Powodem jest to, że dwa produkty zostały kupione z kosztem 20,00. Jeden z produktów został sprzedany z ceną jednostkową 10,00. Faktura zakupu została zaksięgowana na ceny jednostkowej 12,00 z ilością 2. Cena jednostkowa produktu nie można zaksięgować na 14.00.
+Różnica w cenie jednostkowej (2,00) jest księgowana jako Różnica cen dla konta średniej ruchomej, gdy faktura zakupu jest księgowana. Powodem jest to, że dwa produkty zostały kupione z kosztem 20,00. Jeden z produktów został sprzedany z ceną jednostkową 10,00. Faktura zakupu została zaksięgowana z kosztem jednostkowym 12 i ilością 2. Cena jednostkowa produktu nie może być zaksięgowana na poziomie 14,00.
 
 ## <a name="moving-average-product-and-inventory-adjustment"></a>Korekta produktu i zapasów dla średniej ruchomej
 Jeśli musisz skorygować ruchomą średnią kosztu produktu, korekty magazynowe są dopuszczalne z dzisiejszą datą. Nie można postdatować korekty magazynowej w celu poprawienia ruchomej średniej kosztu produktu. Nie można mieć przepływu kosztu przez kolejne transakcje. W tym przykładzie ruchomy średni koszt jest korygowany dla produktu.
 1.  Wybierz produkt, dla którego chcesz skorygować ruchomą średnią.
-    | **Note**                                                                                    |
+    | **Uwaga**                                                                                    |
     |---------------------------------------------------------------------------------------------|
-    | ** Przeszacowania dla średniej ruchomej ** strony sprawdza, czy zasoby dostępne dla produktu. |
+    | Strona **Przeszacowanie średniej ruchomej** sprawdza zapasy dostępne dla produktu. |
 
     Zaznaczony produkt ma zaksięgowana ilość 1, zaksięgowaną wartość 12,00, zaksięgowany koszt jednostkowy 12,00 i koszt jednostkowy 12,00.
 2.  Zaktualizuj pole **Koszt jednostkowy** do wartości 16,00. System oblicza pozostałe pola.
@@ -88,7 +88,7 @@ Jeśli musisz skorygować ruchomą średnią kosztu produktu, korekty magazynowe
 Na stronie **Rozliczenia załącznika** widać korektę 4,00 zaksięgowaną dla konta Przeszacowanie kosztu dla średniej ruchomej.
 
 ## <a name="moving-average-with-production"></a>Średnia ruchoma z produkcją
-Ruchoma średnia obsługuje produkowane towary. Jeśli zamierzasz używać w środowisku produkcyjnym średniej ruchomej **Użyj szacowanego kosztu własnego** suwak w ** parametry kontroli produkcji ** strona powinna być zaznaczonych. To znaczy, że używana jest cena kosztu obliczona podczas oszacowania zamiast ceny kosztu z rzeczywistymi obliczeniami BOM.
+Ruchoma średnia obsługuje produkowane towary. Jeśli planujesz używać średniej ruchomej w środowisku produkcyjnym, suwak **Użyj szacowanego kosztu własnego** na stronie **Parametry kontroli produkcji** musi być zaznaczony. To znaczy, że używana jest cena kosztu obliczona podczas oszacowania zamiast ceny kosztu z rzeczywistymi obliczeniami BOM.
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>Średnia ruchoma z transakcją przesunięcia
 Do postdatowanych transakcji przypisywany jest bieżący ruchomy średni koszt, fizyczna ilość produktu jest aktualizowana, ale ruchomy średni koszt produktu nie zmienia się. W tym przykładzie ruchomej średniej księgowana jest postdatowana transakcja dla średniego ruchomego produktu.

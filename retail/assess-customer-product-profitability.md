@@ -1,6 +1,6 @@
 ---
 title: "Ocenianie rentowności odbiorców i produktów"
-description: "W tym artykule wyjaśniono, jak można używać analytics w pamięci i w czasie rzeczywistym na dostęp do zbadania i zdobyć informacje o klientach i rentowność produktu z sieci Microsoft Dynamics 365 dla danych operacji."
+description: "W tym artykule wyjaśniono, jak za pomocą funkcji analizy w pamięci i w czasie rzeczywistym uzyskać dostęp, eksplorować i wyciągać wnioski o rentowności odbiorców i produktów z danych programu Microsoft Dynamics 365 for Operations."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 52902
 ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
 ms.search.region: global
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="assess-customer-and-product-profitability"></a>Ocenianie rentowności odbiorców i produktów
 
-W tym artykule wyjaśniono, jak można używać analytics w pamięci i w czasie rzeczywistym na dostęp do zbadania i zdobyć informacje o klientach i rentowność produktu z sieci Microsoft Dynamics 365 dla danych operacji. 
+[!include[banner](includes/banner.md)]
 
-W ramach usługi Dynamics 365 dla operacji użytkownicy mogą badać rentowności dla najlepszych klientów (10-100) na różnych poziomach hierarchii organizacji, na podstawie jednego z następujących kryteriów:
+
+W tym artykule wyjaśniono, jak za pomocą funkcji analizy w pamięci i w czasie rzeczywistym uzyskać dostęp, eksplorować i wyciągać wnioski o rentowności odbiorców i produktów z danych programu Microsoft Dynamics 365 for Operations. 
+
+W programie Dynamics 365 for Operations użytkownicy mogą analizować rentowność dla najlepszych odbiorców (10-100) na różnych poziomach hierarchii organizacyjnej na podstawie następujących kryteriów:
 
 -   Kwota sprzedaży
 -   Ilość
@@ -38,8 +41,8 @@ W ramach usługi Dynamics 365 dla operacji użytkownicy mogą badać rentownośc
 
 Na potrzeby tej analizy można używać gotowych raportów **Najlepsi sprzedaży**, które można otworzyć z następujących lokalizacji:
 
--   **Zarządzanie sklepem sieci sprzedaży** obszaru roboczego Dynamics 365 dla operacji &gt;**sieci sprzedaży i handlu**&gt;**kanałów**&gt;**Zarządzanie sklepem sieci sprzedaży**&gt;**raporty**&gt;**klienci raport dotyczący pierwszych**
--   **Zapytania i raporty** sekcja 365 Dynamics dla operacji &gt;**sieci sprzedaży i handlu**&gt;**informacji i raportów**&gt;**raporty ze sprzedaży**&gt;**klienci raport dotyczący pierwszych**
+-   Obszar roboczy **Zarządzanie sklepem sieciowym** w programie Dynamics 365 for Operations &gt; **Handel detaliczny i inny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport najlepszych odbiorców**
+-   Sekcja **Zapytania i raporty** w programie Dynamics 365 for Operations &gt; **Handel detaliczny i inny** &gt; **Zapytania i raporty** &gt; **Raporty sprzedaży** &gt; **Raport najlepszych odbiorców**
 
 W ten sam sposób użytkownicy mogą analizować rentowność dla najlepszych produktów (10-100) na różnych poziomach hierarchii organizacji, na podstawie następujących kryteriów:
 
@@ -50,8 +53,10 @@ W ten sam sposób użytkownicy mogą analizować rentowność dla najlepszych pr
 
 Na potrzeby tej analizy można używać gotowych raportów **Najlepsze produkty**, które można otworzyć z następujących lokalizacji:
 
--   **Zarządzanie sklepem sieci sprzedaży** obszaru roboczego Dynamics 365 dla operacji &gt;**sieci sprzedaży i handlu**&gt;**kanałów**&gt;**Zarządzanie sklepem sieci sprzedaży**&gt;**raporty**&gt;**produkty raport dotyczący pierwszych**
--   **Kategorii i zarządzania produktem** obszaru roboczego Dynamics 365 dla operacji &gt;**sieci sprzedaży i handlu**&gt;**produktów i kategorii**&gt;**Zarządzanie sklepem sieci sprzedaży**&gt;**raporty**&gt;**produkty raport dotyczący pierwszych**
--   **Zapytania i raporty** sekcji 365 Dynamics dla operacji &gt;**sieci sprzedaży i handlu**&gt;**zapytania i raporty**&gt;**raporty ze sprzedaży**&gt;**produkty raport dotyczący pierwszych**
+-   Obszar roboczy **Zarządzanie sklepem sieciowym** w programie Dynamics 365 for Operations &gt; **Handel detaliczny i inny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport najlepszych produktów**
+-   Obszar roboczy **Zarządzanie kategoriami i produktami** w programie Dynamics 365 for Operations &gt; **Handel detaliczny i inny** &gt; **Produkty i kategorie** &gt; **Zarządzania sklepem sieciowym** &gt; **Raporty** &gt; **Raport najlepszych produktów**
+-   Sekcja **Zapytania i raporty** w programie Dynamics 365 for Operations &gt; **Handel detaliczny i inny** &gt; **Zapytania i raporty** &gt; **Raporty sprzedaży** &gt; **Raport najlepszych produktów**
+
+
 
 

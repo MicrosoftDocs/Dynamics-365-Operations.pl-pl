@@ -1,5 +1,5 @@
 ---
-title: "Podmiot danych kompozytowych zaawansowanego uzgadniania konta bankowego importu MT940 – uaktualnienia"
+title: "Zaawansowane uzgadnianie konta bankowego, import dla formatu MT940 — uaktualnianie złożonej jednostki danych"
 description: "Aby zapewnić obsługę formatu MT940, trzeba dodać numer kolejny do importowanej jednostki wyciągu bankowego."
 author: twheeloc
 manager: AnnBe
@@ -24,21 +24,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Podmiot danych kompozytowych zaawansowanego uzgadniania konta bankowego importu MT940 – uaktualnienia
+# <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Zaawansowane uzgadnianie konta bankowego, import dla formatu MT940 — uaktualnianie złożonej jednostki danych
+
+[!include[banner](../includes/banner.md)]
+
 
 Aby zapewnić obsługę formatu MT940, trzeba dodać numer kolejny do importowanej jednostki wyciągu bankowego. 
 
 Poniższa procedura umożliwia dodanie importowanej jednostki wyciągu bankowego w celu obsługi formatu MT940.
 
 1.  Skompiluj i zsynchronizuj następujące elementy:
-    -   Złożone jednostki\\BankStatementImportEntity
+    -   Jednostka złożona\\BankStatementImportEntity
     -   Jednostka\\BankStatementBalanceEntity
     -   Jednostka\\BankStatementDocumentEntity
     -   Jednostka\\BankStatementEntity
     -   Jednostka\\BankStatementLineEntity
     -   Tabele\\BankStatementStaging
 
-2.  Zarządzanie danymi\\danych projektów.
+2.  Zarządzanie danymi\\projekty danych.
     1.  Załaduj projekty importu dla formatu MT940
         1.  Zmodyfikuj arkusz stylów XSLT.
             -   Kliknij opcję **Wyświetl mapę**.
@@ -58,6 +61,8 @@ Poniższa procedura umożliwia dodanie importowanej jednostki wyciągu bankowego
                 -   Upewnij się, że element **SequenceNumber** jest mapowany z obszaru Źródło do obszaru Tymczasowy.
 
 3.  Zaimportuj nowy wyciąg.
+
+
 
 
 

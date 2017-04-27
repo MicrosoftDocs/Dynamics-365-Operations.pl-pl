@@ -87,12 +87,12 @@ Parametry kwestionariusza są opcjonalne. Nie trzeba ich używać, jeśli firma 
 
 Parametry kwestionariusza definiują anonimowość, kody sekwencji numerów i typy odwołań kwestionariusza. Jeśli organizacja umożliwia dystrybuowanie kwestionariusza, to opcja zachowania anonimowości przez pracowników może być ważna. 
 
-Kody sekwencji numerów służą do organizowania pytań i odpowiedzi. Oparty na te kody sekwencji numerów, wartości są automatycznie przypisywane do elementów. 
+Kody sekwencji numerów służą do organizowania pytań i odpowiedzi. W oparciu o te kody numeracji wartości są automatycznie przypisywane do elementów. 
 
 Wszystkie parametry należy zdefiniować przed rozpoczęciem tworzenia danych. Można zmodyfikować ustawienia parametrów kwestionariusza w dowolnym momencie.
 
 ## <a name="questionnaire-components"></a>Składniki kwestionariusza
-Kwestionariusze obejmuje trzy główne elementy: grup, które zawierają odpowiedzi na wybór wielu odpowiedzi na pytania, pytania i sam kwestionariusz. Opcjonalnie można grupować na pytania kwestionariusza do grup wyników. Grupy wyników umożliwiają podziału pytań na kategorie i dostarczania dalszych analiz w kwestionariuszu. 
+Kwestionariusze obejmują trzy główne elementy: grupy odpowiedzi zawierające odpowiedzi dla pytań wielokrotnego wyboru, pytania oraz sam kwestionariusz. Opcjonalnie można grupować pytania w kwestionariuszu w grupy wyników. Grupy wyników umożliwiają podziału pytań na kategorie i dostarczania dalszych analiz w kwestionariuszu. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -235,6 +235,6 @@ Alternatywnie można ustawić kwestionariusz tak, że jeśli respondent wybierz 
 
 [Dystrybucja i wypełnianie kwestionariuszy](distribute-questionnaires.md)
 
-[Przeglądanie i oceny wyników kwestionariuszy](evaluate-questionnaire-results.md)
+[Wyświetlanie i ocena wyników kwestionariuszy](evaluate-questionnaire-results.md)
 
 

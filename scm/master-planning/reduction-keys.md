@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reduction-keys"></a>Klucze redukcji
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera przykłady pokazujące konfigurowanie klucza redukcji. Zawiera informacje o różnych ustawieniach kluczy redukcji i wynikach ich zastosowania. Za pomocą klucza redukcji można określić sposób zmniejszania prognozowanych zapotrzebowań.
 
 <a name="example-1-percent---reduction-key-forecast-reduction-principle"></a>Przykład 1: Procent — zasada redukcji prognozy klucza redukcji
@@ -58,7 +61,7 @@ Uruchomienie planowania w dniu 1 stycznia spowoduje, że wymagania prognozy popy
 | kwiecień                | 750                       |
 | Od maja do grudnia | 1 000                     |
 
-## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Przykład 2: Klucz redukcji transakcji prognozy Reguła redukcji
+## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Przykład 2: Transakcja — zasada redukcji prognozy klucza redukcji
 W tym przykładzie pokazano, jak rzeczywiste zamówienia występujące w okresach zdefiniowanych przez klucz redukują wymagania prognozy popytu.
 
 -   Na stronie **Plany główne** w polu **Reguła redukcji** zaznacz **Transakcje — klucz redukcji**.
@@ -82,7 +85,7 @@ Przy tej samej prognozie popytu dla 1000 sztuk na miesiąc do planu głównego p
 | kwiecień                | 881                       |
 | Od maja do grudnia | 1 000                     |
 
-## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Przykład 3: Okres dynamiczny transakcji prognozy Reguła redukcji
+## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Przykład 3: Transakcja — zasada redukcji prognozy okresu dynamicznego
 W większości przypadków systemy są skonfigurowane tak, aby transakcje zmniejszały prognozy popytu w określonych okresach prognozy: tygodnie, miesiąca itd. Te okresy są definiowane w kluczu redukcji. Jednak czas między dwoma wierszami popytu mogą również *implikować* okresu.
 
 1.  Utwórz prognozę popytu dla następujących dat i ilości.
@@ -129,6 +132,8 @@ Poniżej przedstawiono podsumowanie redukcji **transakcji — okres dynamiczny**
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Master plans](master-plans.md)
+[Plany główne](master-plans.md)
+
+
 
 

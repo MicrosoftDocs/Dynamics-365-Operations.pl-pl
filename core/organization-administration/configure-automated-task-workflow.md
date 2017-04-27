@@ -1,5 +1,5 @@
 ---
-title: "Konfigurowanie zadania wykonywanego automatycznie przepływu pracy"
+title: "Konfigurowanie zadania wykonywanego automatycznie w przepływie pracy"
 description: "W tym temacie wyjaśniono sposób konfigurowania właściwości zadania wykonywanego automatycznie."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-automated-task-in-a-workflow"></a>Konfigurowanie zadania wykonywanego automatycznie przepływu pracy
+# <a name="configure-an-automated-task-in-a-workflow"></a>Konfigurowanie zadania wykonywanego automatycznie w przepływie pracy
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym temacie wyjaśniono sposób konfigurowania właściwości zadania wykonywanego automatycznie.
 
@@ -92,16 +95,18 @@ Można wysyłać powiadomienia do odpowiednich osób po ponownym uruchomieniu lu
     </tr>
     <tr class="odd">
     <td>Użytkownik</td>
-    <td>Szczególne usługi Microsoft Dynamics 365 dla użytkowników operacji</td>
+    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li><strong>Dostępni użytkownicy</strong> lista zawiera wszystkie 365 Dynamics dla użytkowników operacji. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
 8.  Powtórz kroki od 3 do 7 dla każdego zdarzenia wybranego w kroku 2.
+
+
 
 
 

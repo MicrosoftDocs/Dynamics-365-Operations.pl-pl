@@ -1,6 +1,6 @@
 ---
-title: Obliczanie rabatu od ceny jednostkowej dla Polski
-description: "Dla osób prawnych w Polsce rabat wiersza może być obliczona z cena jednostkowa wiersza faktury, a nie od kwoty wiersza. Ten temat zawiera informacje o obliczaniu rabatu wiersza z metody cena jednostki i wyjaśniono, jak ją skonfigurować."
+title: Obliczanie rabatu wiersza od ceny jednostkowej dla Polski
+description: "Dla firm w Polsce rabat wiersza może być obliczany na podstawie ceny jednostkowej z wiersza faktury, a nie z kwoty wiersza. Ten temat zawiera informacje o metodzie obliczania rabatu wiersza względem ceny jednostkowej i wyjaśnienia, jak skonfigurować tę funkcję."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,30 +24,35 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="line-discount-calculation-from-the-unit-price-for-poland"></a>Obliczanie rabatu od ceny jednostkowej dla Polski
+# <a name="line-discount-calculation-from-the-unit-price-for-poland"></a>Obliczanie rabatu wiersza od ceny jednostkowej dla Polski
 
-Dla osób prawnych w Polsce rabat wiersza może być obliczona z cena jednostkowa wiersza faktury, a nie od kwoty wiersza. Ten temat zawiera informacje o obliczaniu rabatu wiersza z metody cena jednostki i wyjaśniono, jak ją skonfigurować.
+[!include[banner](../includes/banner.md)]
 
-Dla osób prawnych w Polsce rabat wiersza nie ma być obliczany na podstawie kwoty wiersza. Zamiast tego można obliczyć z ceną jednostkową wiersza faktury. Przy obliczaniu rabatu wiersza z metody cena jednostki jest używany, cena jednostkowa z rabatem jest zaokrąglana zanim kwota wiersza jest obliczana. W poniższej tabeli przedstawiono, jak rabat wiersza jest obliczany przez standardową metodą i obliczaniu rabatu wiersza z metody cenę jednostki.
 
-|Ilość|Cena|Procent rabatu|Kwota netto (standardowa metoda)|Kwota netto (obliczenia rabatu wiersza z metody cena jednostki)|
+Dla firm w Polsce rabat wiersza może być obliczany na podstawie ceny jednostkowej z wiersza faktury, a nie z kwoty wiersza. Ten temat zawiera informacje o metodzie obliczania rabatu wiersza względem ceny jednostkowej i wyjaśnienia, jak skonfigurować tę funkcję.
+
+W firmach w Polsce rabat wiersza nie ma być obliczany na podstawie kwoty wiersza. Zamiast tego można go obliczać na podstawie ceny jednostkowej wiersza faktury. Gdy jest używana metoda obliczania rabatu wiersza na podstawie ceny jednostkowej, przed obliczeniem kwoty wiersza następuje zaokrąglenie ceny jednostkowej z rabatem. W poniższej tabeli przedstawiono, jak rabat wiersza jest obliczany metodą standardową i metodą od ceny jednostkowej.
+
+|Ilość|Cena|Procent rabatu|Kwota netto (metoda standardowa)|Kwota netto (metoda obliczania rabatu wiersza od ceny jednostkowej)|
 |--------|-----|-------------------|---------------|------------------------------------------------|
-|100     |6.75 |5                  |641.25 (6.75 × 100 = 675.00; 675 × 0.95 = 641.25)|641.00 (6.75 × 0.95 = 6.4125; 6.41 × 100 = 641.00)|
+|100     |6.75 |5                  |641,25 (6,75 × 100 = 675.00; 675 × 0,95 = 641,25)|641,00 (6,75 × 0,95 = 6,4125; 6,41 × 100 = 641,00)|
 
 > [!NOTE]
-> 0,95, używanym w equals obliczeń 1,00 – 0,05, gdzie 0,05 jest kwota rabatu, jeśli cena jednostkowa wynosi 1,00.
+> Wartość 0,95 użyta w obliczeniach to wynik działania 1,00 – 0,05, gdzie 0,05 jest kwotą rabatu, jeśli cena jednostkowa wynosi 1,00.
 
-## <a name="set-up-the-calculation-of-line-discount-parameter"></a>Ustawianie obliczania parametru Rabat wiersza
-Kalkulacja rabatu wiersza z metody cena jednostki dotyczy zarówno Rozrachunki z odbiorcami i Rozrachunki i jest ustawiony na **rozrachunków z odbiorcami Parametry** stronę i **zaopatrzenie i sourcing parametry** strony. **Obliczania rabatu wiersza** parametr ma następujące opcje:
+## <a name="set-up-the-calculation-of-line-discount-parameter"></a>Konfigurowanie parametru obliczania rabatu wiersza
+Metoda obliczania rabatu wiersza względem ceny jednostkowej może być stosowana do rozrachunków z odbiorcami i rozrachunków z dostawcami, a konfiguruje się ją na stronach **Parametry modułu rozrachunków z odbiorcami** i **Parametry modułu Zaopatrzenie i sourcing**. Parametr **Obliczanie rabatu liniowego** ma następujące opcje:
 
--   **Od wartości wiersza** — umożliwia standardową metodę obliczania rabatu wiersza.
--   **Od ceny jednostkowej** — umożliwia obliczanie rabatu wiersza obliczeń rabatu wiersza z metody cenę jednostki.
+-   **Od wartości wiersza** — rabat wiersza jest obliczany metodą standardową.
+-   **Od ceny jednostkowej** — rabat wiersza jest obliczany względem ceny jednostkowej.
 
-**Obliczania rabatu wiersza** parametr ma wpływ na następujące dokumenty:
+Parametr **Obliczanie rabatu liniowego** wpływa na następujące dokumenty:
 
 -   Zamówienia sprzedaży
 -   Zamówienia zakupu
 -   Faktury dostawcy
+
+
 
 
 

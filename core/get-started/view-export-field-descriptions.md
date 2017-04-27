@@ -36,9 +36,9 @@ Nie wszystkie strony mają opisy pól. Chcemy podać opisy jedynie dla bardziej 
 Jeśli masz dostęp do środowiska programistycznego programu Dynamics 365 for Operations, istnieje możliwość dodawania nowych opisów pól i modyfikowania istniejących opisów. Na przykład do opisu pola można dodać informacje specyficzne dla firmy. Aby uzyskać więcej informacji, zobacz [Dostosowywanie pomocy pól](/dynamics365/operations/dev-itpro/user-interface/customize-field-help).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Wyświetlanie opisów pól w interfejsie użytkownika
-Opisy pól można wyświetlić, umieszczając kursor myszy nad polem. Jeśli opis nie jest dostępny, po umieszczeniu wskaźnika myszy na polu zobaczysz nazwę pola. (Uwaga: W wersji 7.0.0, opisy pól mogą być przeglądane tylko na **opisy pól** strony.) Na poniższej ilustracji przedstawiono opis pola, które pojawia się po umieszczeniu wskaźnika myszy nad **skorzystaj z elementów podczas liczenia** pole. 
+Opisy pól można wyświetlić, umieszczając kursor myszy nad polem. Jeśli opis nie jest dostępny, po umieszczeniu wskaźnika myszy na polu zobaczysz nazwę pola. (Uwaga: w wersji 7.0.0 opisy pól można wyświetlać tylko na stronie **Opisy pól**). Na poniższej ilustracji przedstawiono opis pola, który pojawia się po umieszczeniu wskaźnika myszy nad polem **Zablokuj pozycje podczas inwentaryzacji**. 
 
-[![Przykładowy opis pola](./media/field-description.png)](./media/field-description.png)
+[![Przykład opisu pola](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Używanie strony Opisy pól do wyświetlania i eksportowania pomocy dla pól
 Strona **Opisy pól** umożliwia przeglądanie i eksportowanie opisów pól. Dostępne opisy można wyświetlić opisy dla jednej strony naraz.
@@ -73,7 +73,7 @@ Istnieje kilka sposobów, aby wyszukać stronę w polu **Wybór strony**. W wiel
     -   Jeśli istnieje więcej niż jedno dokładne dopasowanie, opisy nie są wyświetlane. Należy otworzyć listę rozwijaną i wybrać żądaną stronę.
     -   Jeśli wpisywana nazwa jest częścią nazwy innej strony, zobaczysz opisy dla swojej strony. Jednak po otwarciu listy rozwijanej zobaczysz dodatkowe strony, których tytuły zawierają w sobie tę nazwę.
 
-Na przykład, opisy nie są wyświetlane podczas wpisywania **zliczanie** w *** zaznacz pole strony ***. Otwierasz listę rozwijaną i widzisz, że istnieją dwie strony o nazwie **Inwentaryzacja**, a także kilka stron, w których wyraz „Inwentaryzacja” jest częścią nazwy. Jeśli wybierzesz stronę o nazwie **InventJournalCount** w drzewie obiektów aplikacji, opisy pól są wyświetlane dla tej strony. Jednakże jeśli lista rozwijana zostanie otwarta ponownie, będzie zawierać wszystkie strony, które w nazwie strony w drzewie obiektów aplikacji mają tekst „InventJournalCount”.
+Na przykład nie są wyświetlane żadne opisy po wpisaniu **Inwentaryzacja** w polu ****Wybór strony****. Otwierasz listę rozwijaną i widzisz, że istnieją dwie strony o nazwie **Inwentaryzacja**, a także kilka stron, w których wyraz „Inwentaryzacja” jest częścią nazwy. Jeśli wybierzesz stronę o nazwie **InventJournalCount** w drzewie obiektów aplikacji, opisy pól są wyświetlane dla tej strony. Jednakże jeśli lista rozwijana zostanie otwarta ponownie, będzie zawierać wszystkie strony, które w nazwie strony w drzewie obiektów aplikacji mają tekst „InventJournalCount”.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 Ta sekcja zawiera informacje pomocne w rozwiązywaniu problemów, które mogą wystąpić podczas używania opisów pól.

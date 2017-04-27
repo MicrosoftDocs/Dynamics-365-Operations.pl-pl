@@ -1,5 +1,5 @@
 ---
-title: "Śledzenie użycia dla rozłożenia"
+title: "Korzystanie z funkcji śledzenia rozłożenia"
 description: "W tym artykule wyjaśniono, jak za pomocą funkcji śledzenia można badać przyczyny stojące za wynikiem rozłożenia zamówienia."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-tracing-for-explosion"></a>Śledzenie użycia dla rozłożenia
+# <a name="use-tracing-for-explosion"></a>Korzystanie z funkcji śledzenia rozłożenia
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule wyjaśniono, jak za pomocą funkcji śledzenia można badać przyczyny stojące za wynikiem rozłożenia zamówienia.
 
@@ -43,6 +46,8 @@ Można wyświetlić szczegółowe informacje o prognozach i działaniach dla wyb
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Master plans](master-plans.md)
+[Plany główne](master-plans.md)
+
+
 
 

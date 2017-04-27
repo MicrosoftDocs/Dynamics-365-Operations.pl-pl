@@ -1,6 +1,6 @@
 ---
-title: "Bank, instrukcja pliku Rozwiązywanie problemów z importowaniem"
-description: "Jest to ważne, że plik wyciągu bankowego z banku zgodna z układem, który obsługuje Microsoft Dynamics 365 dla operacji. Ze względu na ścisłe normy dotyczące wyciągów bankowych większość integracji będzie działać poprawnie. Jednak czasami pliku wyciągu nie można zaimportować lub ma on nieprawidłowe wyniki. Zazwyczaj te problemy są powodowane przez małe różnice w pliku wyciągu bankowego. W tym artykule wyjaśniono, jak skorygować te różnice i rozwiązać problemy."
+title: "Rozwiązywanie problemów z importowaniem pliku wyciągu bankowego"
+description: "Ważne jest, aby plik wyciągu bankowego z banku pasował do układu obsługiwanego przez program Dynamics 365 for Operations. Ze względu na ścisłe normy dotyczące wyciągów bankowych większość integracji będzie działać poprawnie. Jednak czasami pliku wyciągu nie można zaimportować lub ma on nieprawidłowe wyniki. Zazwyczaj te problemy są powodowane przez małe różnice w pliku wyciągu bankowego. W tym artykule wyjaśniono, jak skorygować te różnice i rozwiązać problemy."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,9 +24,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bank-statement-file-import-troubleshooting"></a>Bank, instrukcja pliku Rozwiązywanie problemów z importowaniem
+# <a name="bank-statement-file-import-troubleshooting"></a>Rozwiązywanie problemów z importowaniem pliku wyciągu bankowego
 
-Jest to ważne, że plik wyciągu bankowego z banku zgodna z układem, który obsługuje Microsoft Dynamics 365 dla operacji. Ze względu na ścisłe normy dotyczące wyciągów bankowych większość integracji będzie działać poprawnie. Jednak czasami pliku wyciągu nie można zaimportować lub ma on nieprawidłowe wyniki. Zazwyczaj te problemy są powodowane przez małe różnice w pliku wyciągu bankowego. W tym artykule wyjaśniono, jak skorygować te różnice i rozwiązać problemy.
+[!include[banner](../includes/banner.md)]
+
+
+Ważne jest, aby plik wyciągu bankowego z banku pasował do układu obsługiwanego przez program Dynamics 365 for Operations. Ze względu na ścisłe normy dotyczące wyciągów bankowych większość integracji będzie działać poprawnie. Jednak czasami pliku wyciągu nie można zaimportować lub ma on nieprawidłowe wyniki. Zazwyczaj te problemy są powodowane przez małe różnice w pliku wyciągu bankowego. W tym artykule wyjaśniono, jak skorygować te różnice i rozwiązać problemy.
 
 <a name="what-is-the-error"></a>Na czym polega błąd?
 ------------------
@@ -34,16 +37,16 @@ Jest to ważne, że plik wyciągu bankowego z banku zgodna z układem, który ob
 Po próbie zaimportowania pliku wyciągu bankowego przejdź do historii zadania zarządzania danymi i szczegółów wykonania operacji, aby znaleźć błąd. Błąd może pomóc poprzez wskazane wyciągu, salda lub wiersza wyciągu. Jednak prawdopodobnie dostarczy za mało informacji, aby pomóc w zidentyfikowaniu pola lub elementu, który jest przyczyną problemu.
 
 ## <a name="what-are-the-differences"></a>Jakie są różnice?
-Porównaj do usługi Microsoft Dynamics 365 dla operacji importowania definicji w definicji układu plik bank i Zanotuj wszelkie różnice w pola i elementy. Porównać plik instrukcja bank do związanym z próbki Dynamics 365 dla pliku operacji. W plikach ISO20022 wszelkie różnice powinny być łatwo zobaczyć.
+Porównaj definicję układu pliku bankowego z definicją importu w programie Microsoft Dynamics 365 for Operations i zapisz wszelkie różnice w polach i elementach. Porównaj plik wyciągu bankowego z powiązanym przykładowym plikiem programu Dynamics 365 for Operations. W plikach ISO20022 wszelkie różnice powinny być dobrze widoczne.
 
 ## <a name="transformations"></a>Przekształcenia
 Zazwyczaj zmiany należy dokonać w jednym z trzech przekształceń. Każde przekształcenie jest zapisywane dla określonego standardu.
 
 | Nazwa zasobu                                         | Nazwa pliku                          |
 |-------------------------------------------------------|------------------------------------|
-| BankStmtImport\_BAI2CSV\_do\_BAI2XML\_xslt            | BAI2CSV-to-BAI2XML.xslt            |
-| BankStmtImport\_ISO20022XML\_do\_uzgodnienia\_xslt | ISO20022XML-to-Reconciliation.xslt |
-| BankStmtImport\_MT940TXT\_do\_MT940XML\_xslt          | MT940TXT-to-MT940XML.xslt          |
+| BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt            | BAI2CSV-to-BAI2XML.xslt            |
+| BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt | ISO20022XML-to-Reconciliation.xslt |
+| BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt          | MT940TXT-to-MT940XML.xslt          |
 
 ## <a name="debugging-transformations"></a>Debugowanie przekształceń
 ### <a name="adjust-the-bai2-and-mt940-files"></a>Korygowanie plików BAI2 i MT940
@@ -68,7 +71,7 @@ Aby uzyskać więcej informacji, zobacz <https://msdn.microsoft.com/en-us/librar
 5.  Jako źródło danych wejściowych ustaw lokalizację pliku wyciągu bankowego.
 6.  Określ lokalizację i nazwę dla danych wyjściowych.
 7.  Ustaw wymagane punkty przerwania.
-8.  W menu kliknij polecenie **XML**&gt;**rozpocząć debugowanie XSLT**.
+8.  W menu kliknij kolejno opcje **XML** &gt; **Rozpocznij debugowanie XSLT**.
 
 ### <a name="format-the-xslt-output"></a>Formatowanie danych wyjściowych XSLT
 
@@ -76,7 +79,7 @@ Podczas wykonywania przekształcenia jest tworzony plik wyjściowy, który możn
 
 ### <a name="adjust-the-transformation"></a>Korygowanie przekształcenia
 
-Skoryguj przekształcenie, aby uzyskać odpowiednie pole lub element w pliku wyciągu bankowego. Następnie zamapuj pola lub elementu do odpowiednich 365 Dynamics dla operacji elementu.
+Skoryguj przekształcenie, aby uzyskać odpowiednie pole lub element w pliku wyciągu bankowego. Następnie zamapuj to pole lub element do odpowiedniego elementu programu Dynamics 365 for Operations.
 
 ### <a name="debitcredit-indicator"></a>Wskaźnik debetu/kredytu
 
@@ -87,7 +90,7 @@ Czasami pozycje debetowe mogą być importowane jako kredytowe, i odwrotnie. Aby
 -   Szablon operacji GetCreditDebitIndicator MT940XML-to-Reconcilation.xslt
 
 ## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Przykłady formatów i układów technicznych i wyciągów bankowych
-W tabeli poniżej przedstawiono przykłady definicji układów technicznych plików importu zaawansowanego uzgadniania konta bankowego i trzy powiązane przykładowe pliki wyciągów bankowych. Możesz pobrać przykładowe pliki i techniczne układów tutaj: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+W tabeli poniżej przedstawiono przykłady definicji układów technicznych plików importu zaawansowanego uzgadniania konta bankowego i trzy powiązane przykładowe pliki wyciągów bankowych. Przykładowe pliki i układy techniczne można pobrać stąd: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 
 | Definicja układu technicznego                             | Przykładowy plik wyciągu bankowego          |
@@ -95,6 +98,8 @@ W tabeli poniżej przedstawiono przykłady definicji układów technicznych plik
 | DynamicsAXMT940Layout                                   | MT940StatementExample                |
 | DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
 | DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+
+
 
 
 

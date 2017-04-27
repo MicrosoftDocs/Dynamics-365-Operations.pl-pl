@@ -1,9 +1,9 @@
 ---
-title: "Środki trwałe"
+title: "Konfigurowanie środków trwałych"
 description: "W tym temacie omówiono konfigurację modułu Środki trwałe."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-fixed-assets"></a>Środki trwałe
+# <a name="set-up-fixed-assets"></a>Konfigurowanie środków trwałych
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym temacie omówiono konfigurację modułu Środki trwałe.
 
@@ -43,9 +46,9 @@ Grupy środków trwałych umożliwiają grupowanie składników aktywów oraz ok
 Najpierw należy skonfigurować profile amortyzacji. W profilu amortyzacji określasz sposób amortyzowania wartości składnika aktywów w czasie. Należy zdefiniować metodę amortyzacji, rok amortyzacji (kalendarzowy lub obrachunkowy) i częstotliwość amortyzacji.
 
 ## <a name="books"></a>Księgi
-Po skonfigurowaniu profili amortyzacji należy utworzyć księgi wymagane dla składników aktywów. Każda księga śledzi niezależny finansowy cykl życia składnika aktywów. Księgi można skonfigurować w taki sposób, aby powodowały księgowanie powiązanych transakcji w księdze głównej. Ta konfiguracja jest ustawieniem domyślnym, ponieważ jest ona zwykle używana do raportowania finansowego firmy. Książki, które nie księgowania w księdze głównej Księgowanie tylko do księgi podrzędnej środka trwałego i są zazwyczaj używane na potrzeby raportu podatku.
+Po skonfigurowaniu profili amortyzacji należy utworzyć księgi wymagane dla składników aktywów. Każda księga śledzi niezależny finansowy cykl życia składnika aktywów. Księgi można skonfigurować w taki sposób, aby powodowały księgowanie powiązanych transakcji w księdze głównej. Ta konfiguracja jest ustawieniem domyślnym, ponieważ zwykle stosuje się ją w sprawozdawczości finansowej w przedsiębiorstwach. Księgi, które nie powodują księgowania w księdze głównej, księgują tylko do podrzędnej księgi środków trwałych i zazwyczaj są używane na potrzeby sprawozdawczości podatkowej.
 
-Każda księga ma przypisany główny profil amortyzacji. Księgi mają również alternatywne (przełączane) profile amortyzacji, jeśli pozwala na to typ profilu. Aby automatycznie uwzględniać księgę środków trwałych w sesjach księgowania amortyzacji, należy włączyć opcję Oblicz amortyzację. Jeśli ta opcja nie jest zaznaczona dla środka trwałego, Propozycja amortyzacji pomija składnika aktywów.
+Każda księga ma przypisany główny profil amortyzacji. Księgi mają również alternatywne (przełączane) profile amortyzacji, jeśli pozwala na to typ profilu. Aby automatycznie uwzględniać księgę środków trwałych w sesjach księgowania amortyzacji, należy włączyć opcję Oblicz amortyzację. Jeśli ta opcja nie jest zaznaczona dla składnika aktywów, propozycja amortyzacji pomija ten składnik.
 
 Można również skonfigurować księgi pochodne. Wskazane transakcje pochodne są księgowane jako dokładne kopie transakcji podstawowych w księgach pochodnych. W związku z tym transakcje pochodne są zazwyczaj konfigurowane dla transakcji nabycia i likwidacji, a nie dla transakcji amortyzacji.
 
@@ -62,14 +65,16 @@ Można również zdefiniować specjalne odpisy amortyzacyjne lub podwyższenie a
 ## <a name="fixed-asset-parameters"></a>Parametry środków trwałych
 Ostatnim krokiem jest zaktualizowanie parametrów środków trwałych.
 
-Pole Próg kapitalizacji określa składniki aktywów, które są amortyzowane. Jeśli wiersz zakupu jest zaznaczone jako środek trwały, ale nie spełnia próg kapitalizacji określonego, środek trwały nadal jest tworzony lub aktualizowany, ale opcja Oblicz amortyzację jest ustawiona na wartooć nie. W związku z tym składnika aktywów nie będzie automatycznie amortyzowane jako część propozycji amortyzacji.
+Pole Próg kapitalizacji określa składniki aktywów, które są amortyzowane. Jeśli jako środek trwały zostanie wybrany wiersz zakupu, ale nie spełnia on określonego progu kapitalizacji, środek trwały nadal zostanie utworzony lub zaktualizowany, ale opcja Oblicz amortyzację otrzymuje wartość Nie. W związku z tym ten składnik aktywów nie będzie automatycznie amortyzowany w ramach propozycji amortyzacji.
 
 Inną ważną opcją jest Automatyczne tworzenie kwot korekty amortyzacji przy likwidacji. Jeśli zostanie wybrana dla niej wartość Tak, amortyzacja składnika aktywów jest automatycznie korygowana zgodnie z ustawieniami amortyzacji w momencie likwidacji składnika. Inna opcja umożliwia odjęcie rabatów gotówkowych od kwoty nabycia w przypadku nabywania środków trwałych za pomocą faktury od dostawcy.
 
-Na skróconej karcie Zamówienia zakupu można skonfigurować sposób tworzenia środków trwałych w ramach procesu zakupów. Pierwszą opcją jest Zezwalaj na nabywanie środków trwałych z zakupów. Jeśli zostanie w niej wybrana wartość Tak, nabycie środka trwałego następuje podczas księgowania faktury. Jeśli zostanie wybrana opcja No, nadal można umieścić środek trwały w zamówieniu zakupu (zamówienia zakupu) i faktury, ale przejęcia nie będzie księgowana. Księgowanie musi zostać przeprowadzone jako oddzielny krok z arkusza środków trwałych. Tworzenie składnika aktywów podczas dokumentu przyjęcia produktów lub faktury opcji księgowania umożliwia tworzenie nowego środka "w locie" podczas księgowania, tak, że nie musi być skonfigurowany jako środka trwałego przed transakcją. Ostatnia opcja, Sprawdź, czy podczas wprowadzania wiersza zostaną utworzone środki trwałe, ma zastosowanie tylko do zapotrzebowań na zakup.
+Na skróconej karcie Zamówienia zakupu można skonfigurować sposób tworzenia środków trwałych w ramach procesu zakupów. Pierwszą opcją jest Zezwalaj na nabywanie środków trwałych z zakupów. Jeśli zostanie w niej wybrana wartość Tak, nabycie środka trwałego następuje podczas księgowania faktury. Jeśli zostanie wybrana wartość Nie, nadal można umieścić środek trwały w zamówieniu zakupu i na fakturze, ale nabycie nie zostanie zaksięgowane. Księgowanie musi zostać przeprowadzone jako oddzielny krok z arkusza środków trwałych. Opcja Utwórz środek trwały podczas księgowania dokumentu przyjęcia produktów lub faktury pozwala utworzyć nowy składnik aktywów „na bieżąco” podczas księgowania, dzięki czemu nie musi on być skonfigurowany jako środek trwały przed transakcją. Ostatnia opcja, Sprawdź, czy podczas wprowadzania wiersza zostaną utworzone środki trwałe, ma zastosowanie tylko do zapotrzebowań na zakup.
 
 Można skonfigurować kody przyczyny, aby były wymagane przy modyfikacjach środków trwałych lub określonych transakcjach na środkach trwałych.
 
 Wreszcie na karcie Sekwencje numerów należy określić numerację środków trwałych. Numeracja środka trwałego może zostać zastąpiona przez numerację grupy środków trwałych, jeśli została ona określona.
+
+
 
 

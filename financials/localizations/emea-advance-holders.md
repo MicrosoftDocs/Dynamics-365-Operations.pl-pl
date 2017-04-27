@@ -1,6 +1,6 @@
 ---
 title: Posiadacze zaliczek
-description: "Więcej informacji na temat funkcji posiadacza zaliczki w Microsoft Dynamics 365 dla operacji."
+description: "Ten temat zawiera więcej informacji o funkcjonalności posiadacza zaliczki w programie Microsoft Dynamics 365 for Operations."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,84 +26,89 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="advance-holders"></a>Posiadacze zaliczek
 
-Więcej informacji na temat funkcji posiadacza zaliczki w Microsoft Dynamics 365 dla operacji.
+[!include[banner](../includes/banner.md)]
 
-*Posiadacza zaliczki* jest pracownikiem firmy, który jest odpowiedzialny za kwotę wydatków, dostarczonego przez organizację. Tylko pracownik firmy może być posiadaczem zaliczki. W przypadku zamówień posiadacz zaliczki raporty do firmy o wydatki, które zostały wprowadzone. Firma prowadzony pracownika dla kwoty wydatków. Spółka kontroluje równowagi dla każdego posiadacza zaliczki. Użytkownicy w firmach w Estonii, Łotwy, Litwy, Polski, Republiki Czeskiej, Węgier i Rosji może odzwierciedlać określonych transakcji towarzyszących operacji z pracowników firmy, którzy są odpowiedzialni za kwotę wydatków, dostarczonego przez organizację.
 
-## <a name="set-up-an-advance-holder"></a>Konfigurowanie posiadacz zaliczki
-Aby skonfigurować posiadacz zaliczki, następujące zadania powinny zostać dokonane w kolejności.
-1.  Utwórz grupy posiadaczy zaliczek.
+Ten temat zawiera więcej informacji o funkcjonalności posiadacza zaliczki w programie Microsoft Dynamics 365 for Operations.
+
+*Posiadacz zaliczki* to pracownik firmy, który odpowiada za kwotę wydatku pokrytą przez organizację. Posiadaczem zaliczki może być tylko pracownik firmy. Gdy następuje zaopatrzenie, posiadacz zaliczki informuje firmę o dokonanych wydatkach. Wtedy firma zwraca pracownikowi wydatkowaną kwotę. Firma kontroluje salda wszystkich posiadaczy zaliczek. Użytkownicy w firmach w Estonii, na Łotwie, Litwie, w Polsce, Czechach, na Węgrzech i w Rosji mogą wykazywać konkretne transakcje towarzyszące operacjom z udziałem pracowników firmy odpowiedzialnych za kwoty wydatków pokrywane przez organizację.
+
+## <a name="set-up-an-advance-holder"></a>Konfigurowanie posiadacza zaliczki
+Aby skonfigurować posiadacza zaliczki, należy kolejno wykonać następujące zadania:
+1.  Tworzenie grup posiadaczy zaliczek.
 2.  Konfigurowanie profilu księgowania pracownika.
-3.  Ustaw parametry płatne konta.
-4.  Utwórz szczególne warunki płatności dla posiadacza zaliczki.
-5.  Utwórz posiadacz zaliczki.
+3.  Konfigurowanie parametrów modułu Rozrachunki z dostawcami.
+4.  Tworzenie szczegółowych warunków płatności dla posiadacza zaliczki.
+5.  Tworzenie posiadacza zaliczki.
 
 ### <a name="advance-holder-groups"></a>Grupy posiadaczy zaliczek
 
-Użyj **grupy posiadaczy zaliczek** stronę, aby utworzyć grupę posiadacza zaliczki. Można określić nazwę, opis i konto przeciwstawne dla grupy posiadacza zaliczki.
+Użyj strony **Grupy posiadaczy zaliczek**, aby utworzyć grupę posiadaczy zaliczek. Można określić nazwę, opis i konto przeciwstawne dla grupy posiadaczy zaliczek.
 ### <a name="employee-posting-profile"></a>Profil księgowania pracownika
 
-Użyj **profilów księgowania pracownika** stronę, aby utworzyć profil dla transakcje posiadaczy zaliczek. Można określić następujące informacje dla profilu księgowania pracownika.
+Użyj strony **Profile księgowania pracowników**, aby utworzyć profil dla transakcji posiadaczy zaliczek. W profilu księgowania pracownika można podać następujące informacje:
 |Pole |opis|
 |------|-----------|
-|Profil księgowania|Wprowadź kod identyfikacyjny profilu księgowania dla posiadacza zaliczek.|
+|Profil księgowania|Wprowadź kod identyfikacyjny profilu księgowania dla posiadacza zaliczki.|
 |opis|Wprowadź krótki opis profilu księgowania.|
-|Ważny dla|Wybierz jedną z następujących opcji dla poziomu grupowania do definiowania profilu księgowania: 
-**Tabela** — ta opcja służy do konfigurowania profilu księgowania dla posiadacza jedną zaliczek. Należy podać kod posiadacza zaliczki w polu odwołanie.
-**Grupa** — ta opcja służy do konfigurowania profilu księgowania dla grupy posiadaczy zaliczek. Należy podać kod grupy w polu odwołanie.
-**Wszystkie** — ta opcja służy do konfigurowania profilu księgowania dla wszystkich posiadaczy zaliczek. | | Odwołanie | Wybierz kod posiadacza zaliczki, jeśli została wybrana opcja Tabela w polu Ważny dla pola lub wybierz grupę posiadacza zaliczki, jeśli grupa jest zaznaczona w polu Ważny dla pola. | | Konto rozrachunkowe | Wybierz konto rozrachunkowe dla księgowania transakcji. |
+|Ważny dla|Wybierz jedną z następujących opcji poziomu grupowania dla konfiguracji profilu księgowania: 
+**Tabela** — Ta opcja służy do konfigurowania profilu księgowania dla jednego posiadacza zaliczki. Należy podać kod posiadacza zaliczki w polu Odwołanie.
+**Grupa** — Ta opcja służy do konfigurowania profilu księgowania dla grupy posiadaczy zaliczek. Należy podać kod grupy w polu Odwołanie.
+**Wszystko** — Ta opcja służy do konfigurowania profilu księgowania dla wszystkich posiadaczy zaliczek. | |Odwołanie| Wybierz kod posiadacza zaliczki, jeśli w polu Ważny dla została wybrana opcja Tabela, lub grupę posiadaczy zaliczek, jeśli w polu Ważny dla zaznaczono opcję Grupa. | |Konto rozrachunkowe| Wybierz konto rozrachunkowe do księgowania transakcji.|
 
 
 
-### <a name="account-payable-parameters"></a>Parametry konta płatne
+### <a name="account-payable-parameters"></a>Parametry modułu rozrachunków z dostawcami
 
-Aby uwzględnić transakcje posiadacza zaliczki należy zdefiniować następujące czynności na **parametry płatne konta** strony **posiadacze zaliczek** sekcji.
+Aby wykazywać transakcje posiadaczy zaliczek, należy skonfigurować następujące informacje na stronie **Parametry modułu rozrachunków z dostawcami** w sekcji **Posiadacze zaliczek**.
 |                                                |                   |
 |------------------------------------------------|-------------------|
-|  **Field**                                     | **Description**                                                                                                                                                                  |
-| **Posting profile**                            | Wybierz domyślny profil, aby zrealizować transakcje posiadaczy zaliczek.                                                                                                         |
-| **Advance holder sorting**                     | Jeśli zaznaczone, posiadacze zaliczek pojawi się na początku listy w **posiadacze zaliczek** strony.                                                                     |
-| **Issue when balance is open**                 | Jeśli zaznaczone, będą mogły problem zaliczek na posiadacza zaliczki, który ma otwarte saldo dodatnie.                                                                      |
-| **Saldo zamknięcia za pomocą środków pieniężnych grupy pól: Nazwa** | Wybierz kod arkusza dokumentu dostawy środków pieniężnych. Ten kod arkusza jest używany do generowania dokumenty kW i KP podczas zamykania salda posiadacza zaliczki za pośrednictwem środków pieniężnych. |
-| **Cash**                                       | Wybierz konto kasowe, aby ustalić załączników, które są używane do zamykania sald dla posiadacza zaliczek.                                                                 |
-| **Saldo zamknięcia za pośrednictwem banku grupy pól: Nazwa** | Wybierz kod arkusza transakcji zamknąć salda za pośrednictwem banku.                                                                                                   |
-| **Account type**                               | Wybierz bank, aby zamknąć sald dla posiadacza zaliczek za pośrednictwem banku.                                                                                                        |
-| **Main account**                               | Wybierz kod konta bankowego, aby zamknąć sald dla posiadacza zaliczek za pośrednictwem banku.                                                                                           |
+|  **Pole**                                     | **Opis**                                                                                                                                                                  |
+| **Profil księgowania**                            | Wybierz domyślny profil do realizowania transakcji posiadaczy zaliczek.                                                                                                         |
+| **Sortowanie posiadaczy zaliczek**                     | Jeśli zaznaczysz tę opcję, posiadacze zaliczek będą wyświetlani na początku listy na stronie **Posiadacze zaliczek**.                                                                     |
+| **Rozchody przy otwartym saldzie**                 | Jeśli zaznaczysz tę opcję, będzie dozwolone wydanie zaliczki gotówkowej posiadaczowi zaliczki mającemu otwarte saldo dodatnie.                                                                      |
+| **Zamykanie salda za pośrednictwem kasy** | Wybierz kod arkusza dokumentu kasowego. Ten kod arkusza jest używany do generowania dokumentów KW i KP podczas zamykania sald posiadacza zaliczki za pośrednictwem kasy. |
+| **Kasa**                                       | Wybierz konto kasowe, które będzie decydowało o załącznikach używanych do zamykania sald posiadacza zaliczki.                                                                 |
+| **Zamykanie salda za pośrednictwem banku** | Wybierz kod arkusza transakcji, który będzie używany do zamykania sald za pośrednictwem banku.                                                                                                   |
+| **Typ konta**                               | Wybierz bank, który będzie używany do zamykania sald posiadacza zaliczki za pośrednictwem banku.                                                                                                        |
+| **Konto główne**                               | Wybierz kod konta bankowego, który będzie używany do zamykania sald posiadacza zaliczki za pośrednictwem banku.                                                                                           |
 
 ### <a name="terms-of-payment-for-advance-holder"></a>Warunki płatności dla posiadacza zaliczki
 
-Aby poprawnie zarejestrować i zaksięgować zamówienie zakupu za pośrednictwem posiadacz zaliczki, należy użyć warunki płatności, który został skonfigurowany z **od posiadacza zaliczki** ustawioną opcję **True**.
-### <a name="create-an-advance-holder-creation"></a>Utwórz tworzenie posiadacza zaliczki
+Aby poprawnie zarejestrować i zaksięgować zamówienie zakupu w kontekście posiadacza zaliczki, należy użyć warunków płatności skonfigurowanych z opcją **Od posiadacza zaliczki** ustawioną na wartość **Prawda**.
+### <a name="create-an-advance-holder-creation"></a>Tworzenie posiadacza zaliczki
 
-Przed utworzeniem posiadacz zaliczki musi już zdefiniowano pracowników. Aby uzyskać więcej informacji, zobacz [wprowadź informacje o pracowniku (Przewodnik zadania).](http://ax.help.dynamics.com/en/wiki/enter-worker-information/) Użyj **posiadacze zaliczek** stronę, aby zdefiniować pracownika jako posiadacz zaliczki. Wybierz pracownika, jako posiadacz zaliczki, kliknij **edytować**, a następnie ustaw **posiadacza zaliczki** opcji w celu **True**. Konieczne jest także wypełnienie pola.
+Przed utworzeniem posiadacza zaliczki muszą już istnieć skonfigurowani pracownicy. Aby uzyskać więcej informacji, zobacz [Wprowadzanie informacji o pracowniku (przewodnik po zadaniu).](http://ax.help.dynamics.com/en/wiki/enter-worker-information/) Użyj strony **Posiadacze zaliczek**, aby skonfigurować pracownika jako posiadacza zaliczki. Wybierz pracownika, który ma być posiadaczem zaliczki, kliknij przycisk **Edytuj**, a następnie ustaw w opcji **Posiadacz zaliczki** wartość **Prawda**. Trzeba również wypełnić następujące pola:
 |                |                                                                                             |
 |----------------|---------------------------------------------------------------------------------------------|
-| **Field**      | **Description**                                                                             |
-| **Group**      | Wybierz grupę posiadacza zaliczki.                                                             |
-| **Series**     | Umożliwia wprowadzenie serii dokumentu, który jest używany do weryfikacji tożsamości posiadacza zaliczki. |
-| **Number**     | Należy wprowadzić numer dokumentu, który jest używany do weryfikacji tożsamości posiadacza zaliczki. |
-| **Issue date** | Wybierz lub wprowadź daty wydania dokumentu.                                                    |
-| **Issued by**  | Wprowadź szczegóły organ lub osoba, która wydała dokument.                       |
+| **Pole**      | **Opis**                                                                             |
+| **Grupa**      | Wybierz grupę posiadaczy zaliczek.                                                             |
+| **Seria**     | Wprowadź serię dokumentu używanego do weryfikacji tożsamości posiadacza zaliczki. |
+| **Numer**     | Wprowadź numer dokumentu używanego do weryfikacji tożsamości posiadacza zaliczki. |
+| **Data wystawienia** | Wybierz lub wprowadź datę wydania dokumentu.                                                    |
+| **Wystawione przez**  | Wprowadź dane organu lub osoby, która wydała dokument.                       |
 
-## <a name="advance-holder-inquiries-and-reports"></a>Zaliczki posiadacz zapytania i raporty
-### <a name="advance-holder-transactions-inquiry"></a>Zapytanie transakcje posiadacza zaliczki
+## <a name="advance-holder-inquiries-and-reports"></a>Zapytania i raporty dotyczące posiadaczy zaliczek
+### <a name="advance-holder-transactions-inquiry"></a>Zapytania o transakcje posiadaczy zaliczek
 
-Aby uzyskać listę transakcji dla posiadacz zaliczki, kliknij przycisk **transakcji** znajdującego się na **posiadacze zaliczek** strony. Wyświetlanie transakcji dla wszystkich posiadacze zaliczek lub aby utworzyć określone na podstawie transakcji posiadaczy zaliczek zapytanie, kliknij przycisk **rozrachunków z dostawcami**&gt;**zapytania i raporty**&gt;**z góry posiadaczy zapytania i raporty**&gt; transakcji. Kliknij **załącznika** otworzyć **transakcje na załączniku** strony.
-### <a name="advance-holder-balance-inquiry"></a>Zapytanie Saldo posiadacza zaliczki
+Aby uzyskać listę transakcji posiadacza zaliczki, kliknij przycisk **Transakcje** znajdujący się na stronie **Posiadacze zaliczek**. Aby wyświetlić transakcje wszystkich posiadaczy zaliczek lub utworzyć szczegółowe zapytanie dotyczące transakcji posiadaczy zaliczek, wybierz kolejno opcje **Rozrachunki z dostawcami** &gt; **Zapytania i raporty** &gt; **Zapytania i raporty posiadaczy zaliczek** &gt; Transakcje. Kliknij opcję **Załącznik**, a zostanie otwarta strona **Transakcje na załączniku**.
+### <a name="advance-holder-balance-inquiry"></a>Zapytania o salda posiadaczy zaliczek
 
-Aby wyświetlić saldo dla posiadacz zaliczki, użyj **posiadacze zaliczek** strony. Aby wyświetlić salda wszystkich posiadacze zaliczek lub aby utworzyć określone na podstawie kont posiadaczy zaliczek zapytanie, kliknij przycisk **rozrachunków z dostawcami**&gt;**zapytań i raportów**&gt;**z góry posiadaczy zapytania i raporty**&gt;**saldo.**
+Aby zobaczyć saldo posiadacza zaliczki, użyj strony **Posiadacze zaliczek**. Aby wyświetlić salda wszystkich posiadaczy zaliczek lub utworzyć szczegółowe zapytanie dotyczące kont posiadaczy zaliczek, wybierz kolejno opcje **Rozrachunki z dostawcami** &gt; **Zapytania i raporty** &gt; **Zapytania i raporty posiadaczy zaliczek** &gt; **Saldo**.
 ### <a name="advance-holder-balance-report"></a>Raport salda posiadacza zaliczki
 
-Kliknij, aby wyświetlić podgląd i drukowanie raportu na podstawie informacji o saldo posiadaczy zaliczek **rozrachunków z dostawcami**&gt;**informacji i raportów**&gt;**z góry posiadaczy zapytania i raporty**&gt;**raportu salda posiadacza zaliczki**.
+Aby wyświetlić podgląd i wydrukować raport oparty na informacjach o saldach posiadaczy zaliczek, wybierz kolejno opcje **Rozrachunki z dostawcami** &gt; **Zapytania i raporty** &gt; **Zapytania i raporty posiadaczy zaliczek** &gt; **Raport salda posiadacza zaliczki**.
 ### <a name="advance-holder-transactions-report"></a>Raport transakcji posiadacza zaliczki
 
-Kliknij, aby wyświetlić podgląd i drukowanie raportu na podstawie transakcji posiadaczy zaliczek **rozrachunków z dostawcami**&gt;**informacji i raportów**&gt;**z góry posiadaczy zapytania i raporty**&gt;**raportu transakcji posiadacza zaliczki**.
+Aby wyświetlić podgląd i wydrukować raport oparty na transakcjach posiadaczy zaliczek, wybierz kolejno opcje **Rozrachunki z dostawcami** &gt; **Zapytania i raporty** &gt; **Zapytania i raporty posiadaczy zaliczek** &gt; **Raport transakcji posiadacza zaliczki**.
 
 
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Advance holder transactions](emea-advance-holders-transactions.md)
+[Transakcje posiadacza zaliczki](emea-advance-holders-transactions.md)
+
+
 
 

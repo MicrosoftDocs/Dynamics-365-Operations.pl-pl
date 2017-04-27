@@ -40,7 +40,7 @@ Rejestrowane jest zdarzenie arkusza przeniesienia. Zdarzenie przenosi jedną szt
 
 ### <a name="example-2-cost-entries-are-created"></a>Przykład 2: Wpisy kosztów są tworzone
 
-Rejestrowane jest zdarzenie arkusza przeniesienia. Zdarzenie przesyła jednej sztuki zapasu A z witryny 1 na stronie 2. Wymiar magazynowy witryny jest uważany za część obiektu generującego ten koszt. Z tego względu zdarzenie tworzy dwie transakcje magazynowe i dwa wpisy kosztów.
+Rejestrowane jest zdarzenie arkusza przeniesienia. Zdarzenie przenosi jedną sztukę towaru A z oddziału 1 do oddziału 2. Wymiar magazynowy Oddział jest traktowany jako część obiektu kosztu. Z tego względu zdarzenie tworzy dwie transakcje magazynowe i dwa wpisy kosztów.
 
 ### <a name="example-3-one-cost-entry-is-created"></a>Przykład 3: Tworzony jest jeden wpis kosztów
 
@@ -59,11 +59,11 @@ Nowa strona **Wpisy kosztów** umożliwia przeglądanie i kontrolowanie rejestra
 | 00002   | 20-01-2015 | Zamówienie zakupu | 100001 | 0000101 |               |               |          | 100,00  |
 | 00003   | 31-01-2015 | Korekta     | 100001 | 0000101 |               |               |          | 15,00   |
 
-Strona **Wpisy kosztu** umożliwia filtrowanie według identyfikatora dokumentu i daty dokumentu. **Uwaga:** koszt zapisy są dostępne tylko dla [koszt obiektów](cost-object.md) lub zwolnionych produktów.
+Strona **Wpisy kosztu** umożliwia filtrowanie według identyfikatora dokumentu i daty dokumentu. **Uwaga:** Wpisy kosztów są dostępne tylko dla [obiektów kosztów](cost-object.md) lub zwolnionych produktów.
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Cost objects](cost-object.md)
+[Obiekty kosztów](cost-object.md)
 
 

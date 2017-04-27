@@ -1,5 +1,5 @@
 ---
-title: "Rozlicz płatności częściowe dostawcy, który ma wiele okresów rabatu"
+title: "Rozliczenie płatności częściowej dostawcy, która ma wiele okresów rabatu"
 description: "Ten artykuł prowadzi przez scenariusz, w którym jest dokonywanych wiele częściowych płatności do dostawcy oferującego wiele różnych rabatów gotówkowych."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Rozlicz płatności częściowe dostawcy, który ma wiele okresów rabatu
+# <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Rozliczenie płatności częściowej dostawcy, która ma wiele okresów rabatu
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł prowadzi przez scenariusz, w którym jest dokonywanych wiele częściowych płatności do dostawcy oferującego wiele różnych rabatów gotówkowych. 
 
 Dostawca 3054 oferuje firmie Fabrikam 2-procentowy rabat gotówkowy w przypadku zapłacenia faktury w ciągu 5 dni, i 1-procentowy rabat gotówkowy w przypadku zapłacenia faktury w ciągu 14 dni.
 
 ## <a name="invoice"></a>Faktura
-W dniu 28 czerwca kwietnia tworzy fakturę za 1 000,00 dla dostawcy 3054. April może wyświetlić tę transakcję na stronie **Transakcje dostawcy**.
+28 czerwca April tworzy fakturę na kwotę 1000,00 dla dostawcy 3054. April może wyświetlić tę transakcję na stronie **Transakcje dostawcy**.
 
 | Załącznik   | Data      | Faktura | Kwota debetu w walucie transakcji | Kwota kredytu w walucie transakcji | Saldo   | Waluta |
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
@@ -48,7 +51,7 @@ Następujące daty rabatu gotówkowego i kwoty są dostępne dla tej faktury.
 | 7/25/2015          | 0,00                 | 1000,00                       |
 
 ## <a name="payment-on-july-2"></a>Płatność 2 lipca
-W dniu 2 lipca kwietnia chce zapłacić 300.00 przeciwko tej faktury. Tworzy jednorazowej płatności za pomocą **arkusza płatności** stronę w rozrachunkach z dostawcami. Dodaje wiersz dla dostawcy 3054 i wprowadza kwotę płatności **300.00**. April otwiera stronę **rozliczenia transakcji**, aby oznaczyć fakturę, która zostanie rozliczona. Zmienia wartość w polu **Kwota do rozliczenia** na **300,00** i zauważa, że wartość w polu **Kwota rabatu gotówkowego do pobrania** zmieniła się na **6,12**. Ponieważ ta płatność zostanie dokonana w pierwszym okresie rabatu, zostanie pobrany rabat w wysokości 2%.
+2 lipca April chce zapłacić 300,00 dla tej faktury. Tworzy jednorazową płatność na stronie **Arkusz płatności** w module Rozrachunki z dostawcami. Dodaje wiersz dla dostawcy 3054 i wprowadza kwotę płatności **300.00**. April otwiera stronę **rozliczenia transakcji**, aby oznaczyć fakturę, która zostanie rozliczona. Zmienia wartość w polu **Kwota do rozliczenia** na **300,00** i zauważa, że wartość w polu **Kwota rabatu gotówkowego do pobrania** zmieniła się na **6,12**. Ponieważ ta płatność zostanie dokonana w pierwszym okresie rabatu, zostanie pobrany rabat w wysokości 2%.
 
 | Zaznacz | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -134,6 +137,8 @@ W dniu 20 lipca April tworzy ostatnią płatność na kwotę 200,00. Rabat gotó
 | APP-10061  | 7/12/2015 |         | 495,00                               |                                       | 0,00    | USD      |
 | DISC-10061 | 7/12/2015 |         | 5,00                                 |                                       | 0,00    | USD      |
 | APP-10062  | 7/20/2015 |         | 200,00                               |                                       | 0,00    | USD      |
+
+
 
 
 

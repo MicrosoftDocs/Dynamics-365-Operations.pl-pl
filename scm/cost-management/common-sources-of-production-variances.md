@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="common-sources-of-production-variances"></a>Typowe przyczyny odchyleń produkcji
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł wyjaśnia różne typowe przyczyny poszczególnych typów odchyleń produkcji. 
 
 Poniżej przedstawiono niektóre typowe źródła odchyleń w **rozmiarze partii**:
@@ -57,6 +60,8 @@ Poniżej przedstawiono niektóre typowe źródła odchyleń w **podstawiania pro
 -   Ręczne dodanie operacji do marszruty produkcji i zgłoszenie tej operacji jako zużytej.
 -   Podczas tworzenia zlecenia produkcyjnego wybrano wersję BOM inną niż wersja BOM używana w obliczeniach kosztów standardowych.
 -   Podczas tworzenia zlecenia produkcyjnego wybrano wersję marszruty inną niż wersja marszruty używana w obliczeniach kosztów standardowych.
+
+
 
 
 

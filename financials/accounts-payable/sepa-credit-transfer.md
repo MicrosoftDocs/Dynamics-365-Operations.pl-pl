@@ -1,6 +1,6 @@
 ---
 title: "Przegląd przeniesienia kredytu SEPA"
-description: "Ten artykuł zawiera ogólne informacje o ISO 20022 przelewu, które obejmują przelewów bankowych jednolitego obszaru płatności Euro (SEPA) i innych elektronicznych płatności dla dostawców. Przelewy SEPA jest określonego typu płatności w euro z jednej firmy lub w indywidualnych do innej firmy lub indywidualnych. Opisano także sposób ustawiania i przekazuje kredytu transfer plików płatności."
+description: "Ten artykuł zawiera ogólne informacje o poleceniach przelewu ISO 20022, co obejmuje polecenia przelewu Jednolitego Obszaru Płatniczego w Euro (SEPA) oraz wszelkie inne elektroniczne płatności dla dostawców. Polecenie przelewu SEPA jest szczególną formą płatności (w euro) realizowanej przez jedną firmę lub osobę na rzecz innej firmy lub osoby. W temacie wyjaśniono również, jak ustawić i przesłać plik płatności poleceniem przelewu."
 author: twheeloc
 manager: AnnBe
 ms.date: 2017-04-04
@@ -27,14 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sepa-credit-transfer-overview"></a>Przegląd przeniesienia kredytu SEPA
 
-Ten artykuł zawiera ogólne informacje o ISO 20022 przelewu, które obejmują przelewów bankowych jednolitego obszaru płatności Euro (SEPA) i innych elektronicznych płatności dla dostawców. Przelewy SEPA jest określonego typu płatności w euro z jednej firmy lub w indywidualnych do innej firmy lub indywidualnych. Opisano także sposób ustawiania i przekazuje kredytu transfer plików płatności.
+Ten artykuł zawiera ogólne informacje o poleceniach przelewu ISO 20022, co obejmuje polecenia przelewu Jednolitego Obszaru Płatniczego w Euro (SEPA) oraz wszelkie inne elektroniczne płatności dla dostawców. Polecenie przelewu SEPA jest szczególną formą płatności (w euro) realizowanej przez jedną firmę lub osobę na rzecz innej firmy lub osoby. W temacie wyjaśniono również, jak ustawić i przesłać plik płatności poleceniem przelewu.
 
-## <a name="what-is-a-credit-transfer-message"></a>Co to jest wiadomość przeniesienia kredytu?
-Komunikat przeniesienia kredytu jest żądanie inicjująca Strona (firma) wysyła przenieść fundusze z jego własnego konta jest winny wierzycielowi. Istnieje wiele implementacji specyficznych dla kraju/regionu i specyficzne dla banku przelewu bankowego wiadomości. Niektóre z nich są używane w ramach jednego kraju/regionu, a niektóre stają się standardów. Jeden ugruntowanego globalny standard jest ISO 20022 i jego wszczęcie, takie jak wiadomości przelewu bankowego. Poniżej przedstawiono stosunków i zasięg dla wybranej faktury transferu wiadomości. 
-![Kredyt przesyłanie zawartości](./media/credit-transfer.jpg) kredytu transferu wiadomości\[/caption\] 
+## <a name="what-is-a-credit-transfer-message"></a>Co to jest komunikat polecenia przelewu?
+Komunikat polecenia przelewu to żądanie wysyłane przez stronę inicjującą (Twoją firmę) nakazujące przelania funduszy z jej własnego konta do wierzyciela. Istnieje wiele implementacji komunikatów polecenia przelewu specyficznych dla krajów/regionów i banków. Niektóre z nich są używane wewnątrz jednego kraju/regionu, a niektóre stają się standardami. Jednym z ugruntowanych globalnych standardów jest ISO 20022 i jego komunikaty inicjujące, takie jak polecenie przelewu. Poniższa ilustracja przedstawia powiązania i zasięg wybranych komunikatów poleceń przelewu. 
+![Polecenie przelewu](./media/credit-transfer.jpg) Komunikaty poleceń przelewu\[/caption\] 
 
-## <a name="what-are-iso-20022-and-sepa-payments"></a>Jakie są ISO 20022 i SEPA płatności?
-Jednolity Obszar Płatniczy w Euro (SEPA) został ustanowiony przez Komisję Europejską i decyduje o tym, że wszystkie płatności elektroniczne są uważane za krajowe, niezależnie od kraju/regionu, w którym znajdują się osoby, przedsiębiorstwa, organizacje oraz właściwy bank. Nie ma żadnej różnicy między płatności krajowych i transgranicznych. SEPA obejmuje 28 Państw Unii Europejskiej (UE) i również Islandia, Liechtenstein, Norwegia, Szwajcaria, Monako i San Marino. SEPA tworzy jeden rynek dla transakcji płatności w ramach europejskiego obszaru gospodarczego (EOG). Ostatecznie SEPA umożliwia zmniejszenie liczby formatów płatności, którymi operują banki, firmy i osoby prywatne. Komisja Europejska określiła podstawę prawną dla płatności SEPA w postaci dyrektywy w sprawie usług płatniczych (PSD). Europejska Rada ds. Płatności (EPC) wspiera SEPA za pomocą następujących działań:
+## <a name="what-are-iso-20022-and-sepa-payments"></a>Co to są płatności ISO 20022 i SEPA?
+Jednolity Obszar Płatniczy w Euro (SEPA) został ustanowiony przez Komisję Europejską i decyduje o tym, że wszystkie płatności elektroniczne są uważane za krajowe, niezależnie od kraju/regionu, w którym znajdują się osoby, przedsiębiorstwa, organizacje oraz właściwy bank. Nie istnieje różnica między płatnościami krajowymi i międzynarodowymi. SEPA obejmuje 28 państw członkowskich Unii Europejskiej (UE), plus Islandię, Liechtenstein, Norwegię, Szwajcarię, Monako i San Marino. SEPA tworzy jeden rynek dla transakcji płatności w ramach europejskiego obszaru gospodarczego (EOG). Ostatecznie SEPA umożliwia zmniejszenie liczby formatów płatności, którymi operują banki, firmy i osoby prywatne. Komisja Europejska określiła podstawę prawną dla płatności SEPA w postaci dyrektywy w sprawie usług płatniczych (PSD). Europejska Rada ds. Płatności (EPC) wspiera SEPA za pomocą następujących działań:
 
 -   Wyznacza normy dla płatności elektronicznych SEPA zgodnie z uniwersalnym formatem XML ISO 20022 dla schematów wiadomości w branży finansowej.
 -   Ustala zasady i wskazówki dotyczące obsługi płatności w euro.
@@ -46,24 +46,24 @@ EPC, w której skład wchodzą europejskie banki, opracowuje ramy handlowe i tec
 -   Karty
 
 ## <a name="what-is-a-sepa-credit-transfer"></a>Co to jest polecenie przelewu SEPA?
-Polecenie przelewu SEPA jest formą płatności realizowanej przez jedną firmę lub osobę na rzecz innej firmy lub osoby. Płatności muszą być w euro i muszą zawierać międzynarodowy numer konta bankowego (IBAN) oraz kod identyfikatora banku (BIC) dla obu stron. (BIC jest również znany jako Society for Worldwide Interbank Financial Telecommunication \[SWIFT\] kod.) Ponadto koszty transakcji muszą być udostępnione między obiema stronami. Polecenia przelewów realizowane między stronami powinny używać plików XML zgodnych z normami przetwarzania płatności ISO 20022 oraz formatem XML według wytycznych EPC.
+Polecenie przelewu SEPA jest formą płatności realizowanej przez jedną firmę lub osobę na rzecz innej firmy lub osoby. Płatności muszą być w euro i muszą zawierać międzynarodowy numer konta bankowego (IBAN) oraz kod identyfikatora banku (BIC) dla obu stron. (Kod BIC jest również znany pod nazwą Society for Worldwide Interbank Financial Telecommunications \[SWIFT\]). Ponadto koszty transakcji muszą być dzielone między stronami. Polecenia przelewów realizowane między stronami powinny używać plików XML zgodnych z normami przetwarzania płatności ISO 20022 oraz formatem XML według wytycznych EPC.
 
-## <a name="how-is-a-credit-transfer-implemented"></a>Sposób implementacji przelewu bankowego?
-Format płatności transferu kredytu dla krajów Europy jest implementowane za pomocą elektronicznego raportowania (ER) i metody funkcji płatności w usłudze Dynamics 365 dla operacji. Kilka formatów przeniesienia kredytu, które są używane w innych regionach nadal używać framework starszych płatności. Wiele innych formatów należą dwunastu ISO 20022 kredytu transfer formatów plików, które są dostępne. Te formaty eksportowania zgodne ze standardem SEPA ISO 20022 XML. Służą one do generowania przelewów spoza euro dla krajów/regionów, w których są one używane i płatności w euro jak określono w wersji 8.2 SEPA kredytu Transfer schemat zbioru przepisów wydawana EPC. Przed zaimplementowaniem przelewów bankowych, należy skontaktować się z Bankiem, aby uzyskać oprogramowanie, które jest wymagane w celu, aby przesłać bankowości elektronicznej. Używasz tego oprogramowania do przesyłania plików XML, które zawierają poleceń płatności do banku.
+## <a name="how-is-a-credit-transfer-implemented"></a>Jak jest implementowane polecenie przelewu?
+Format płatności polecenia przelewu dla krajów europejskich jest implementowany przy użyciu modułu Raportowanie elektroniczne (ER) i funkcji Metody płatności w programie Dynamics 365 for Operations. Kilka formatów polecenia przelewu stosowanych w innych regionach nadal wykorzystuje starszą architekturę przelewu płatności. Wśród wielu innych formatów jest dwanaście formatów plików polecenia przelewu ISO 20022, które nadal funkcjonują. Te formaty eksportu są zgodne z normą XML ISO 20022 dla płatności SEPA. Służą do generowania przelewów płatności w walutach innych niż euro w krajach/regionach, gdzie takie waluty są używane, oraz płatności w euro zgodnie z treścią wersji 8.2 Zestawu Zasad Systemu Polecenia Przelewu SEPA publikowanego przez EPC. Zanim będzie można zaimplementować polecenia przelewu, należy skontaktować się z bankiem, by uzyskać oprogramowanie, które jest wymagane do przekazywania plików bankowości elektronicznej. Oprogramowanie to służy to przesyłania plików XML zawierających polecenia zapłaty dla banku.
 
-## <a name="what-credit-transfer-formats-are-currently-supported-in-dynamics-365-for-operations"></a>Jakie formaty przeniesienia kredytu są aktualnie obsługiwane w usłudze Dynamics 365 dla operacji?
-Należy zawsze przejdź do biblioteki zasobów współużytkowanych w usług Microsoft Dynamics cyklu (LCS) i wyświetlić aktualną listę dostępne pliki, które mają typ składnika aktywów **konfiguracji GUŁ**. Następnej sekcji, "Co mam skonfigurować?", zawiera łącze do tematu, który wyjaśnia, jak utworzyć repozytorium LCS Przejrzyj dostępne konfiguracje i zaimportować wybranych konfiguracji.
+## <a name="what-credit-transfer-formats-are-currently-supported-in-dynamics-365-for-operations"></a>Które formaty polecenia przelewu są aktualnie obsługiwane w programie Dynamics 365 for Operations?
+Należy zawsze przejść do biblioteki zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) i wyświetlić najbardziej aktualną listę dostępnych plików, które mają typ składnika aktywów **Konfiguracja GER**. Następna sekcja — „Co trzeba skonfigurować?” — zawiera łącze do tematu, który wyjaśnia sposób tworzenia repozytorium usługi LCS na potrzeby przeglądania dostępnych konfiguracji i importowania wybranych konfiguracji.
 
 ## <a name="what-do-i-have-to-set-up"></a>Co trzeba skonfigurować?
--   Przed utworzeniem przelewu bankowego plików, co najmniej jedną konfigurację transferu kredytowych działających należy zaimportować do konfiguracji encja-Relacja. Aby uzyskać instrukcje, zobacz [pobrać elektroniczne raportowanie konfiguracje z cyklem życia usług](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
--   Po skonfigurowaniu konta płatne metod płatności, wybierz **ogólnego raportowania elektronicznego** pole wyboru i wybierz format transferu odpowiednich kredytu (na przykład **ISO 20022 przelewu (AT)**) jako Konfiguracja format eksportu.
--   Należy również skonfigurować informacje encji i konto bankowe prawne w usłudze Dynamics 365 dla operacji.
--   Numery kont bankowych, IBAN i czasami SWIFT kody (BIC) lub innych identyfikatorów są wymagane, aby utworzyć prawidłowe przelewu płatności. W związku z tym należy skonfigurować je dla konta bankowego dostawcy i dla konta bankowego dla organizacji, która żąda transferu.
--   Dodatkowe informacje mogą być wymagane, takie jak numery podatku od wartości dodanej (VAT) dla stron, które są określone w komunikacie przeniesienia kredytu. Informacje te przygotowana dla dostawców i dla podmiotu prawnego, kiedy jest wymagane.
--   Niektóre konta płatne metody płatności, metod płatności, głównie na podstawie ISO 20022 może wymagać dodatkowych ustawień dla **zestawów kodu formatu płatności**, takich jak **typ usługi** = **SLEV**. Te kody są używane jako dodatkowe etykietowanie dla transakcji płatności podczas przetwarzania płatności. Domyślne wartości kodów płatności, jak **celem kategorii**, **okaziciela opłaty**, **lokalnego instrument** i **poziom obsługi** można ustawić w dwóch miejscach. Pierwsze miejsce jest **nagłówek arkusza płatności rozrachunków z dostawcami konta**, a drugi jest **Rozrachunki z dostawcami metody płatności**. Po utworzeniu wierszy arkusza płatności płatności kod wartości ustawione w nagłówku arkusza płatności są przenoszone do wiersza dziennika, jeśli nie ustawiona, używane są wartości od metody płatności.
+-   Zanim będzie można tworzyć pliki poleceń przelewu, należy zaimportować co najmniej jedną aktywną konfigurację polecenia przelewu do konfiguracji raportowania elektronicznego. Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   W przypadku konfigurowania metod płatności do rozrachunków z dostawcami należy zaznaczyć pole wyboru **Ogólne raportowanie elektroniczne** i wybrać odpowiedni format polecenia przelewu ISO (np. **Polecenie przelewu ISO 20022 (AT)**) jako konfigurację formatu eksportu.
+-   Należy także skonfigurować informacje firmy i konta bankowego w programie Dynamics 365 for Operations.
+-   Do tworzenia prawidłowych płatności poleceniami przelewu są potrzebne numery kont bankowych, numery IBAN i czasami kody SWIFT (BIC) lub inne identyfikatory. W związku z tym należy je skonfigurować dla konta bankowego dostawcy i konta bankowego organizacji wnioskującej o przelew.
+-   Mogą być też wymagane dodatkowe informacje, takie jak numery płatnika podatku od wartości dodanej (VAT) dla stron wymienionych w komunikacie polecenia przelewu. Informacje te muszą zostać wprowadzone dla dostawców i firmy, kiedy jest to wymagane.
+-   Niektóre metody płatności w rozrachunkach z dostawcami, głównie oparte na standardzie ISO 20022, mogą wymagać dodatkowych ustawień w obszarze **Zestawy kodów formatów płatności**, np. **Typ usługi** = **SLEV**. Te kody są używane jako dodatkowe znakowanie transakcji płatniczych w trakcie przetwarzania płatności. Domyślne wartości kodów płatności, takie jak **Cel kategorii**, **Płatnik opłaty**, **Instrument lokalny** i **Poziom usług**, można konfigurować w dwóch miejscach. Pierwszym miejscem jest **nagłówek arkusza płatności w rozrachunkach z dostawcami**, a drugim **metody płatności w rozrachunkach z dostawcami**. Gdy utworzysz wiersze arkusza płatności, wartości kodów płatności ustawione w nagłówku arkusza płatności są przenoszone do wiersza arkusza, a jeśli nie zostały ustawione, system używa wartości z metod płatności.
 
-## <a name="what-parameters-are-available-for-generating-credit-transfer-payments"></a>Jakie parametry są dostępne dla generowania płatności przelewem kredytu?
-Lista określonych parametrów zależy od formatu transferu kredytu. W poniższej tabeli przedstawiono parametry, które są dostępne podczas generowania pliku ISO 20022 kredytu przeniesienia płatności dla Niemiec w arkuszach płatności dostawcy. Korzystając z opcji dostępnych na **w tle** kartę, generowanie płatności można uruchomić w trybie wsadowym.
+## <a name="what-parameters-are-available-for-generating-credit-transfer-payments"></a>Które parametry są dostępna do generowania płatności za pomocą polecenia przelewu?
+Lista konkretnych parametrów zależy od formatu polecenia przelewu. Poniższa tabela zawiera listę parametrów, które są dostępne podczas generowania pliku płatności poleceniem przelewu ISO 20022 dla Niemiec w arkuszu płatności dostawcy. Korzystając z opcji dostępnych na karcie **Uruchom w tle**, można generować płatności w trybie wsadowym.
 
 <table>
 <colgroup>
@@ -89,17 +89,17 @@ Lista określonych parametrów zależy od formatu transferu kredytu. W poniższe
 <td>Format</td>
 <td>Umożliwia wybranie formatu informacji o przekazie, w zależności od potrzeb banku lub kraju/regionu:
 <ul>
-<li><strong>Strd</strong> — wybierz tę opcję, aby użyć formatu strukturalnego podczas jeden wiersz płatności jest rozliczona dla jednej faktury. Ta opcja nie jest dostępna dla formatów eksportu specyficzne dla kraju/regionu dla Francji, Niemczech i Holandii.</li>
-<li><strong>Ustrd</strong> — wybierz tę opcję, aby użyć formatu niestrukturalnego, gdy płatność jest rozliczana dla wielu faktur. Numery faktur dla rozliczonych faktur są łączone i używane jako informacje o przekazie. Zgodnie z ISO 20022 wytycznych, informacje statystyczne o przekazach niestrukturalnych jest ograniczone do 140 znaków.</li>
+<li><strong>Strd</strong> — wybierz tę opcję, aby użyć formatu uporządkowanego, gdy jeden wiersz płatności jest rozliczany dla jednej faktury. Ta opcja jest niedostępna dla formatów eksportu właściwych dla Francji, Niemiec i Holandii.</li>
+<li><strong>Ustrd</strong> — wybierz tę opcję, aby użyć formatu niestrukturalnego, gdy płatność jest rozliczana dla wielu faktur. Numery faktur dla rozliczonych faktur są łączone i używane jako informacje o przekazie. Zgodnie z wytycznymi ISO 20022 nieuporządkowane informacje o przekazach są ograniczone do 140 znaków.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Liczba faktur</td>
-<td>Wprowadź numer faktury tego <strong>zawiadomienie o płatności</strong> z drukowany jest raport.</td>
+<td>Umożliwia wprowadzenie liczby faktur, z których jest drukowany raport <strong>Zawiadomienie o płatności</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Numer sekwencyjny</td>
-<td>Umożliwia wprowadzenie numeru sekwencji identyfikującej plik. Numer sekwencyjny pojawia się na <strong>Notatka towarzysząca</strong> raportu.</td>
+<td>Umożliwia wprowadzenie numeru sekwencji identyfikującej plik. Numer kolejny jest widoczny na raporcie <strong>Notatka towarzysząca</strong>.</td>
 </tr>
 <tr class="even">
 <td>Drukuj notatkę towarzyszącą</td>
@@ -117,9 +117,9 @@ Lista określonych parametrów zależy od formatu transferu kredytu. W poniższe
 </table>
 
 ## <a name="what-are-ibans-and-bics"></a>Co to są IBAN i BIC?
-Międzynarodowy numer konta bankowego (IBAN) i kod identyfikator banku (BIC) są używane do identyfikowania dowolnego konta w wielu krajach na całym świecie. Należą do nich 34 SEPA krajów/regionów. Wprowadź kod BIC w **kod SWIFT** pola i IBAN w **IBAN** pole. Dla konta bankowego wierzyciela i konto bankowe nabywcy, pola te znajdują się na **dodatkowa identyfikacja** skróconej na **konta bankowego** na karcie **kont bankowych** strony. Stosowania BIC SEPA płatności nie są wymuszane.
+Międzynarodowy numer konta bankowego (IBAN) i kod identyfikacyjny banku (SWIFT) są używane do identyfikowania każdego konta w wielu krajach/regionach na świecie. Obejmuje to również 34 kraje/regiony SEPA. Wprowadź kod identyfikacyjny banku (BIC) w polu **Kod SWIFT**, a numer IBAN w polu **IBAN**. Zarówno dla konta bankowego wierzyciela, jak i dla konta bankowego odbiorcy te pola znajdują się na skróconej karcie **Dodatkowa identyfikacja** na karcie **Konto bankowe** na stronie **Konta bankowe**. Stosowanie kodu BIC w płatnościach SEPA nie jest już wymuszane.
 
 ## <a name="how-do-i-transmit-a-payment-file-to-the-bank"></a>Jak przekazać plik płatności do banku?
-Podczas generowania płatności, generowany jest plik płatności, a użytkownik jest proszony o zapisać go w przeglądarce sieci web na każdej dostępnej lokalizacji. Następnym krokiem jest wysłać plik XML do swojego banku. Ten proces różni się w zależności od banku. Postępuj zgodnie z instrukcjami otrzymanymi z banku, aby przesłać pliki do banku do przetworzenia.
+Podczas generowania płatności zostanie wygenerowany plik płatności, a użytkownik jest proszony o zapisanie go w przeglądarce sieci web w dowolnej dostępnej lokalizacji. Następnym krokiem jest wysłanie pliku XML do banku. Ten proces różni się w zależności od banku. Postępuj zgodnie z instrukcjami otrzymanymi z banku, aby przesłać pliki do banku do przetworzenia.
 
 

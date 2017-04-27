@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Usuwanie wartości odstających z danych transakcji historycznych podczas obliczania prognozy popytu
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano sposób wykluczania wartości odstających z historycznych danych, które są używane do obliczania prognozy popytu. Poprzez wykluczenie wartości odstających, można zwiększyć dokładność prognozy.
 
-Można wykluczyć wartości odstających, aby zwiększyć dokładność prognozy. To zadanie jest opcjonalne. Poniżej znajduje się omówienie procesu:
+Można wykluczyć wartości odstające, aby zwiększyć dokładność prognozy. To zadanie jest opcjonalne. Poniżej znajduje się omówienie procesu:
 
-1.  Kliknij **Master planning**&gt;**instalacji**&gt;**Prognozowanie popytu**&gt;**usuwania poboczna** otworzyć **usuwania poboczna** strony, których można użyć kwerendy do wybierania transakcji, aby wykluczyć.
+1.  Kliknij kolejno opcje **Planowanie główne** &gt; **Ustawienia** &gt; **Prognozowanie popytu** &gt; **Usuwanie wartości odstających**, aby otworzyć stronę **Usuwanie wartości odstających**, na której przy użyciu zapytania można wybrać transakcje do wykluczenia.
 2.  Wybierz firmę, do której odnosi się kwerenda, a następnie wprowadź nazwę i opis. W polu **Data kwerendy** zostanie automatycznie ustawiona bieżąca data.
 3.  Wybierz pole wyboru **Aktywna**, aby wykluczyć transakcje znalezione w wyniku kwerendy z danych historycznych. To ustawienie zostanie wprowadzone dopiero po utworzeniu prognozy podstawowej.
 4.  Na stronie **Kwerenda usuwania wartości odstających** istnieje możliwość dodawania, usuwania i wybierania kryteriów określających, które transakcje zostaną wykluczone podczas obliczania bazowej prognozy. Na przykład wybierz dany towar lub transakcję zamówienia, które chcesz wykluczyć.
@@ -43,8 +46,10 @@ Można wykluczyć wartości odstających, aby zwiększyć dokładność prognozy
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Introduction to demand forecasting](introduction-demand-forecasting.md)
+[Wprowadzenie do prognozowania popytu](introduction-demand-forecasting.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Monitorowanie dokładności prognozy](monitor-forecast-accuracy.md)
+
+
 
 

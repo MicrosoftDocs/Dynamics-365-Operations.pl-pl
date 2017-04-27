@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="cost-categories-used-in-production-routing"></a>Kategorie kosztów używane w marszrutach produkcji
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o kategoriach kosztów mających zastosowanie do środowisk produkcyjnych, w których są używane marszruty.
 
 Kategorie kosztów mają zastosowanie do środowisk produkcyjnych, w których są używane marszruty. Są one przypisywane do zasobów operacyjnych i operacji marszruty w celu definiowania kosztów godzinowych oraz segmentowania udziałów kosztów w obliczonych kosztach wytwarzanych towarów. Grupy kosztów przypisywane do kategorii kosztów klasyfikują udziały w kosztach produkcji na podstawie zasobów operacyjnych i typów działań, takich jak czas przezbrajania i czas procesu. Specyficzność przypisań grup kosztów umożliwia obliczanie kosztów ogólnych produkcji na podstawie informacji o marszrutach. 
@@ -51,5 +54,7 @@ Rekord kosztu w kategorii kosztów może być specyficzny dla oddziału lub ogó
 Operacja marszruty zazwyczaj dziedziczy kategorie kosztów przypisane do zasobu operacyjnego lub operacji głównej. Po utworzeniu zlecenia produkcyjnego operacje marszruty produkcji odzwierciedlają wybraną wersję marszruty. Można ręcznie zastąpić kategorie kosztów przypisane do operacji w marszrucie produkcji. 
 
 Niektóre typy działań produkcyjnych mogą mieć zastosowanie do szacowania i raportowania czasu trwania projektu. W takim przypadku kategoria kosztów jest wymagana na potrzeby produkcji i projektu. Jeśli kategoria kosztów jest oznaczona do używania w projektach, należy zdefiniować dodatkowe informacje związane z projektami.
+
+
 
 

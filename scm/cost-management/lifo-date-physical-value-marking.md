@@ -55,16 +55,16 @@ Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z 
 -   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 -   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
 -   Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
--   Powyżej (lub poniżej) każdej pionowej strzałki, wartość transakcji magazynowej jest określona w formacieQuantity@Unitprice.
+-   Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
 -   Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
 -   Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
 -   Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+-   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
 -   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
 -   Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
 
 ## <a name="lifo-date-with-the-include-physical-value-option"></a>LIFO wg daty z opcją Włącz wartość fizyczną
-Można zaznaczyć pole wyboru **Włącz wartość fizyczną** dla towaru na stronie **Grupy modeli towaru**. W takim przypadku system używa zarówno transakcji fizycznych i finansowych przychodów do obliczania średniego kosztu. W razie potrzeby system dokona również korekt w fizycznie zaktualizowanej transakcji dotyczącej rozchodu. Po usunięciu zaznaczenia z pola wyboru **Włącz wartość fizyczną** przy zamknięciu magazynu z zastosowaniem metody LIFO wg daty rozliczone zostaną jedynie transakcje zaktualizowane finansowo. W tym przykładzie FIFO grupa modelu towaru jest oznaczona i zawiera wartość fizyczną. Na ilustracji przedstawiono następujące transakcje:
+Można zaznaczyć pole wyboru **Włącz wartość fizyczną** dla towaru na stronie **Grupy modeli towaru**. W tym przypadku system używa zarówno fizycznej, jak i finansowej transakcji przyjęcia do obliczenia średniej kroczącej kosztu własnego. W razie potrzeby system dokona również korekt w fizycznie zaktualizowanej transakcji dotyczącej rozchodu. Po usunięciu zaznaczenia z pola wyboru **Włącz wartość fizyczną** przy zamknięciu magazynu z zastosowaniem metody LIFO wg daty rozliczone zostaną jedynie transakcje zaktualizowane finansowo. W tym przykładzie FIFO grupa modelu towaru jest oznaczona i zawiera wartość fizyczną. Na ilustracji przedstawiono następujące transakcje:
 
 -   1a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 10,00 USD.
 -   1b. Finansowy przychód magazynowy w ilości 1 i po koszcie 10,00 USD.
@@ -82,16 +82,16 @@ Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z 
 -   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 -   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
 -   Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
--   Powyżej (lub poniżej) każdej pionowej strzałki, wartość transakcji magazynowej jest określona w formacieQuantity@Unitprice.
+-   Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
 -   Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
 -   Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
 -   Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+-   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
 -   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
 -   Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
 
 ## <a name="lifo-date-with-marking"></a>LIFO na dzień z przypisaniem
-Oznakowanie jest procesem, który umożliwia łączenie lub znak transakcję rozchodu do transakcji przychodu. Może to mieć miejsce zarówno przed, jak i po zaksięgowaniu transakcji. Procesu tego można użyć po to, aby sprawdzić dokładny koszt zapasów w momencie księgowania transakcji lub zamknięcia magazynu. Na przykład dział obsługi klienta zaakceptował pilne zamówienie od ważnego odbiorcy. Zlecenie jest pilne, trzeba będzie zatem zapłacić więcej za ten towar, aby spełnić wymagania odbiorcy. Trzeba się upewnić, że koszt tej pozycji magazynowej zostanie uwzględniony w marży (lub koszcie własnym sprzedaży, COGS) na tej fakturze za zamówienie sprzedaży. Po zaksięgowaniu zamówienia zakupu zapasy zostaną przyjęte do magazynu po koszcie 120 USD. Jeśli to zamówienie sprzedaży zostanie przypisane do takiego zamówienia zakupu przed zaksięgowaniem dokumentu dostawy lub faktury, koszt sprzedanych towarów wyniesie 120 USD (nie będzie bieżącą średnią ruchomą kosztów towaru). Jeśli dotyczące zamówienia sprzedaży dokument dostawy lub faktura zostaną zaksięgowane przed wspomnianym przypisaniem, wówczas kosztem sprzedanych towarów będzie średnia ruchoma kosztów własnych. Przed zamknięciem magazynu obie powyższe transakcje mogą nadal zostać przypisane do siebie. Na przykład transakcja przyjęcia jest oznaczona dla transakcji wydania. W takim przypadku metody wyceny, która jest zdefiniowana w polu Grupa modeli towaru jest ignorowana, a system rozlicza te transakcje ze sobą. Można zaznaczyć transakcję rozchodu do przyjęcia przed zaksięgowaniem transakcji. Można to zrobić z wiersza zamówienia sprzedaży na stronie **Szczegóły zamówienia sprzedaży**. Można wyświetlić otwarte transakcje przychodu na stronie **Zaznaczanie**. Można też zaznaczyć transakcję rozchodu do przyjęcia po zaksięgowaniu transakcji. Można dopasować lub oznaczyć transakcję rozchodu dla otwartej transakcji przychodu dla indywidualnej pozycji z zaksięgowanego arkusza korekt zapasów. Na ilustracji przedstawiono następujące transakcje:
+Oznaczanie to proces, który pozwala połączyć (oznaczyć) transakcję wydania z transakcją przyjęcia. Może to mieć miejsce zarówno przed, jak i po zaksięgowaniu transakcji. Procesu tego można użyć po to, aby sprawdzić dokładny koszt zapasów w momencie księgowania transakcji lub zamknięcia magazynu. Na przykład dział obsługi klienta zaakceptował pilne zamówienie od ważnego odbiorcy. Zlecenie jest pilne, trzeba będzie zatem zapłacić więcej za ten towar, aby spełnić wymagania odbiorcy. Trzeba się upewnić, że koszt tej pozycji magazynowej zostanie uwzględniony w marży (lub koszcie własnym sprzedaży, COGS) na tej fakturze za zamówienie sprzedaży. Po zaksięgowaniu zamówienia zakupu zapasy zostaną przyjęte do magazynu po koszcie 120 USD. Jeśli to zamówienie sprzedaży zostanie przypisane do takiego zamówienia zakupu przed zaksięgowaniem dokumentu dostawy lub faktury, koszt sprzedanych towarów wyniesie 120 USD (nie będzie bieżącą średnią ruchomą kosztów towaru). Jeśli dotyczące zamówienia sprzedaży dokument dostawy lub faktura zostaną zaksięgowane przed wspomnianym przypisaniem, wówczas kosztem sprzedanych towarów będzie średnia ruchoma kosztów własnych. Przed zamknięciem magazynu obie powyższe transakcje mogą nadal zostać przypisane do siebie. Na przykład transakcja przyjęcia jest oznaczona dla transakcji wydania. W takim przypadku metoda wyceny zdefiniowania w grupie modeli towaru dla danej pozycji jest pomijana, a transakcje są rozliczane względem siebie. Można zaznaczyć transakcję rozchodu do przyjęcia przed zaksięgowaniem transakcji. Można to zrobić z wiersza zamówienia sprzedaży na stronie **Szczegóły zamówienia sprzedaży**. Można wyświetlić otwarte transakcje przychodu na stronie **Zaznaczanie**. Można też zaznaczyć transakcję rozchodu do przyjęcia po zaksięgowaniu transakcji. Można dopasować lub oznaczyć transakcję rozchodu dla otwartej transakcji przychodu dla indywidualnej pozycji z zaksięgowanego arkusza korekt zapasów. Na ilustracji przedstawiono następujące transakcje:
 
 -   1a. Fizyczny przychód magazynowy w ilości 1 i po koszcie 10,00 USD.
 -   1b. Finansowy przychód magazynowy w ilości 1 i po koszcie 10,00 USD.
@@ -110,11 +110,11 @@ Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z 
 -   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 -   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
 -   Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
--   Powyżej (lub poniżej) każdej pionowej strzałki, wartość transakcji magazynowej jest określona w formacieQuantity@Unitprice.
+-   Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
 -   Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
 -   Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
 -   Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+-   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
 -   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
 -   Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
 

@@ -1,6 +1,6 @@
 ---
 title: "Zamknięcie księgi głównej na koniec okresu"
-description: "W tym temacie opisano zadania, które zazwyczaj są kończone podczas wykonywania przez okres zamknięcia w księdze głównej."
+description: "W tym temacie opisano zadania, które zazwyczaj są wykonywane podczas wykonywania operacji zamknięcia okresu w księdze głównej."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="close-the-general-ledger-at-period-end"></a>Zamknięcie księgi głównej na koniec okresu
 
-W tym temacie opisano zadania, które zazwyczaj są kończone podczas wykonywania przez okres zamknięcia w księdze głównej. 
+[!include[banner](../includes/banner.md)]
 
-W księdze głównej można wykonać procedury zamykania dla okresu lub roku. Procesy zamknięcia przygotowują system do nowego okresu. Przygotowanie systemu na nowy rok, należy uruchomić proces Zamknij koniec roku. Każda organizacja ma różne procesy i czynności, które wykonuje na koniec okresu. Oto kilka kroków opcjonalnych dla okresu:
+
+W tym temacie opisano zadania, które zazwyczaj są wykonywane podczas wykonywania operacji zamknięcia okresu w księdze głównej. 
+
+W księdze głównej można wykonać procedury zamykania dla okresu lub roku. Procesy zamknięcia przygotowują system do nowego okresu. Aby przygotować system do nowego roku, należy uruchomić proces zamknięcia roku. Każda organizacja ma różne procesy i czynności wykonywane na koniec okresu. Oto kilka kroków opcjonalnych na koniec okresu:
 
 -   Ukończenie wszystkie zadań dla wszystkich innych modułów, takich jak Rozrachunki z odbiorcami, Rozrachunki z dostawcami i Zapasy.
 -   Sprawdzenie, czy wszystkie arkusze są zaksięgowane.
@@ -39,9 +42,11 @@ W księdze głównej można wykonać procedury zamykania dla okresu lub roku. Pr
 -   Zapis transakcji do arkusza i sprawdzenie raportu **Arkusz księgi**.
 -   Wykonywanie konsolidacji przy użyciu konsolidowanej firmy lub raportów finansowych.
 -   Generowanie sprawozdań finansowych na koniec okresu przy użyciu raportów finansowych.
--   Ustawianie stanu **Zablokowany** dla okresów księgowych, by dalsze księgowania nie występowały. Można również ograniczyć okres do określonej grupy użytkowników, gdy występują czynności związane z końcem okresu. Pozwala to zachować większą kontrolę. To nie jest dobry pomysł, aby ustawić okresów, które mają **stale zamknięta**, ponieważ nie można ponownie otworzyć okresu, który został zamknięty.
+-   Ustawianie stanu **Zablokowany** dla okresów księgowych, by dalsze księgowania nie występowały. Można również ograniczyć okres do określonej grupy użytkowników, gdy występują czynności związane z końcem okresu. Pozwala to zachować większą kontrolę. Dobrze jest ustawić dla okresów stan **Trwale zamknięty**, ponieważ nie można ponownie otworzyć okresu, który został zamknięty.
 
-Finansowe okresu zamknięcia obszaru roboczego może służyć do organizowania i śledzenia zadań wymaganych do różnych procesów zakończenia okresu. Odnoszą się do [finansowych okresu zamknięcia obszaru roboczego](financial-period-close-workspace.md) i [zamknięcie na koniec roku](Year-end-close.md) tematów, aby uzyskać więcej informacji. 
+W obszarze roboczym Zamknięcie okresu obrachunkowego można porządkować i śledzić zadania wymagane do różnych procesów zamknięcia okresu. Aby uzyskać więcej informacji, patrz [Obszar roboczy zamknięcia okresu obrachunkowego](financial-period-close-workspace.md) i [Zamknięcie na koniec roku](Year-end-close.md). 
+
+
 
 
 

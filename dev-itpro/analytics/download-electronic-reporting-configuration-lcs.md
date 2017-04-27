@@ -1,6 +1,6 @@
 ---
 title: "Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services"
-description: "W tym temacie wyjaśniono, jak pobrać Electronic raportowania (ER) konfiguracje z Microsoft Dynamics cyklu życia usługi (LCS)."
+description: "Ten temat wyjaśnia sposób pobierania konfiguracji modułu Raportowanie elektroniczne (ER) z usługi Microsoft Dynamics Lifecycle Services (LCS)."
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services
 
-W tym temacie wyjaśniono, jak pobrać Electronic raportowania (ER) konfiguracje z Microsoft Dynamics cyklu życia usługi (LCS).
+Ten temat wyjaśnia sposób pobierania konfiguracji modułu Raportowanie elektroniczne (ER) z usługi Microsoft Dynamics Lifecycle Services (LCS).
 
 Ten samouczek prowadzi przez proces pobierania najnowszej wersji konfiguracji modułu Raportowanie elektroniczne (ER) z usługi Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -36,9 +36,9 @@ Ten samouczek prowadzi przez proces pobierania najnowszej wersji konfiguracji mo
     -   Konsultant funkcjonalny raportowania elektronicznego
     -   Administrator systemu
 
-2.  Przejdź do **Administrowanie organizacją**&gt;**elektroniczny w**.
+2.  Wybierz kolejno opcje **Administrowanie organizacją** &gt; **Raportowanie elektroniczne**.
 3.  W obszarze **Dostawcy konfiguracji** wybierz kafelek **Microsoft**.
-4.  Na kafelku **Microsoft** kliknij opcję **Repozytoria**. [![Update-er-from-LCS-for-MS-Open-MS-repositories-list](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
+4.  Na kafelku **Microsoft** kliknij opcję **Repozytoria**. [![update-er-from-lcs-for-ms-open-ms-repositories-list](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 5.  Na stronie **Repozytoria konfiguracji** w siatce zaznacz istniejące repozytorium typu **LCS**. Jeśli to repozytorium nie jest wyświetlane w siatce, wykonaj następujące kroki:
     1.  Kliknij przycisk **Dodaj**, aby dodać nowe repozytorium.
     2.  Jako typ repozytorium wybierz **LCS**.
@@ -47,12 +47,12 @@ Ten samouczek prowadzi przez proces pobierania najnowszej wersji konfiguracji mo
     5.  Kliknij przycisk **OK**, aby potwierdzić wprowadzenie nowego repozytorium.
     6.  W siatce wybierz nowe repozytorium typu **LCS**.
 
-6.  Kliknij opcję **Otwórz**, aby wyświetlić listę konfiguracji modułu ER dla wybranego repozytorium. [![Update-er-from-LCS-for-MS-Make-LCS-Repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+6.  Kliknij opcję **Otwórz**, aby wyświetlić listę konfiguracji modułu ER dla wybranego repozytorium. [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  W drzewie konfiguracji w lewym okienku zaznacz wymaganą konfigurację ER.
 8.  Na skróconej karcie **Wersje** wybierz wymaganą wersję wybranej konfiguracji ER.
-9.  Kliknij opcję **Importuj**, aby pobrać wybraną wersję z usługi LCS do bieżącego wystąpienia programu Dynamics 365 for Operations. **Uwaga:** Przycisk **Importuj** jest niedostępny dla wersji konfiguracji ER, które już się znajdują w bieżącym wystąpieniu programu Dynamics 365 for Operations. [![Update-er-from-LCS-for-MS-Download-Configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+9.  Kliknij opcję **Importuj**, aby pobrać wybraną wersję z usługi LCS do bieżącego wystąpienia programu Dynamics 365 for Operations. **Uwaga:** Przycisk **Importuj** jest niedostępny dla wersji konfiguracji ER, które już się znajdują w bieżącym wystąpieniu programu Dynamics 365 for Operations. [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
-**Uwaga:** W zależności od ustawień ER podczas importowania konfiguracji jest sprawdzana ich poprawność. Możesz otrzymywać powiadomienia o wszelkich wykrytych problemach z niespójnością. Przed rozpoczęciem używania zaimportowanej wersji konfiguracji należy rozwiązać te problemy. Aby uzyskać więcej informacji zobacz listę pokrewne artykuły dla tego tematu.
+**Uwaga:** W zależności od ustawień ER podczas importowania konfiguracji jest sprawdzana ich poprawność. Możesz otrzymywać powiadomienia o wszelkich wykrytych problemach z niespójnością. Przed rozpoczęciem używania zaimportowanej wersji konfiguracji należy rozwiązać te problemy. Aby uzyskać więcej informacji, zobacz listę pokrewnych artykułów do tego tematu.
 
 <a name="see-also"></a>Informacje dodatkowe
 --------

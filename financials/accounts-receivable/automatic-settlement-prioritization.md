@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="automatic-settlement-and-prioritization"></a>Automatyczne rozliczanie i priorytety
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano, jak transakcje są rozliczane po wybraniu opcji Automatyczne rozliczanie na stronie Parametry modułu rozrachunków z odbiorcami. Wyjaśniono również możliwości używania automatycznego rozliczania w połączeniu z priorytetem płatności.
 
-Dostępne są dwie opcje rozliczania płatności za pomocą faktur i innych transakcji. Użytkownik może ręcznie wybrać transakcje do rozliczenia, lub Microsoft Dynamics 365 dla operacji można automatycznie wybrać transakcje przy użyciu funkcji automatycznego rozliczenia. Można także dostosować sposób przetwarzania automatycznych rozliczeń przy użyciu opcji **Określanie priorytetów rozliczenia**. Wszystkie te opcje są częścią parametry rozliczenia, które są zdefiniowane w **rozrachunków z odbiorcami Parametry** strony. Sposób automatycznego rozliczania transakcji może się różnić w zależności od używanej metody automatycznego rozliczania. Dostępne są następujące metody:
+Dostępne są dwie opcje rozliczania płatności za pomocą faktur i innych transakcji. Można ręcznie wybrać transakcje do rozliczenia lub program Microsoft Dynamics 365 for Operations może wybrać transakcje automatycznie za pomocą funkcji automatycznego rozliczania. Można także dostosować sposób przetwarzania automatycznych rozliczeń przy użyciu opcji **Określanie priorytetów rozliczenia**. Wszystkie te opcje są częścią parametrów rozliczenia określanych na stronie **Parametry modułu rozrachunków z odbiorcami**. Sposób automatycznego rozliczania transakcji może się różnić w zależności od używanej metody automatycznego rozliczania. Dostępne są następujące metody:
 
 -   Priorytet rozliczania zdefiniowany przez użytkownika
 -   Domyślne automatyczne rozliczanie
@@ -45,9 +48,9 @@ Przykłady rozliczeń w dalszej części tego artykułu są oparte na następuj�
 | Faktura 1     | 15 sierpnia   | 100,00 | 2%14, netto 30        | 29 sierpnia          |                                                                                                                                                                                               |
 | Faktura 2     | 1 września | 250,00 | 2%14, netto 30        | 15 września       |                                                                                                                                                                                               |
 | Faktura 3     | 15 października  | 500,00 | 2%14/ netto 30        | 29 października         |                                                                                                                                                                                               |
-| Nota odsetkowa | 15 października  | 7,00   |                     |                    | Ta nota odsetkowa jest dla faktury 1 i 2 faktury. Kwota jest obliczana jako 2-procentowy odsetek od kwot, które są co najmniej 30 dni po dacie płatności. Na przykład: 0,02 × (100,00 + 250,00) = 7,00. |
+| Nota odsetkowa | 15 października  | 7,00   |                     |                    | Ta nota odsetkowa dotyczy faktur 1 i 2. Kwota wynosi 2% odsetek od kwot zaległych co najmniej 30 dni. Na przykład: 0,02 × (100,00 + 250,00) = 7,00. |
 
-## <a name="userdefined-settlement-priority"></a>Priorytet rozliczania UserDefined
+## <a name="userdefined-settlement-priority"></a>Priorytet rozliczania zdefiniowany przez użytkownika
 Po ustawieniu opcji **Użyj priorytetu dla rozliczeń automatycznych** jako **Tak** na stronie **Parametry modułu rozrachunków z odbiorcami**, będzie używany priorytet rozliczenia zdefiniowany na stronie **priorytetu rozliczenia**, jeśli transakcje zostaną zaznaczone do automatycznego rozliczenia. W tym przykładzie zdefiniowano następujący priorytet rozliczenia:
 
 1.  Typ transakcji
@@ -77,6 +80,8 @@ W przypadku braku priorytetu rozliczenia zdefiniowanego przez użytkownika trans
 | Faktura 2     | 9/1/2015   | 10002   | 250,00                         | 250,00           | 0,00    | USD      |
 | Faktura 3     | 10/15/2015 |         | 500,00                         | 350,00           | 150,00  | USD      |
 | Nota odsetkowa | 10/15/2015 |         | 7,00                           | 0,00             | 0,00    | USD      |
+
+
 
 
 

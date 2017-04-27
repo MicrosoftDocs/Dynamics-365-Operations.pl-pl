@@ -1,6 +1,6 @@
 ---
 title: "Środki trwałe — strona główna"
-description: "Środki trwałe to składniki wartości, takie jak budynki, pojazdy, gruntów i sprzęt, które są własnością osoby lub organizacji."
+description: "Środki trwałe to składniki majątku, takie jak budynki, środki transportu, grunty, maszyny i urządzenia, należące do danej osoby lub organizacji."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-assets-home-page"></a>Środki trwałe — strona główna
 
-Środki trwałe to składniki wartości, takie jak budynki, pojazdy, gruntów i sprzęt, które są własnością osoby lub organizacji.
+[!include[banner](../includes/banner.md)]
+
+
+Środki trwałe to składniki majątku, takie jak budynki, środki transportu, grunty, maszyny i urządzenia, należące do danej osoby lub organizacji. 
 
 Po wprowadzeniu informacji o nabyciu do rekordów środków trwałych można zarządzać środkami trwałymi za pomocą amortyzacji i ustalić próg kapitalizacji w celu określenia amortyzacji. Można obliczać korekty środków trwałych i likwidować środki trwałe. W przypadku korzystania z księgi głównej i środków trwałych można przeglądać bieżącą wartość wszystkich środków trwałych. Sposób zarządzania środkami trwałymi musi być zgodny zarówno z międzynarodowymi standardami księgowania, jak i z obowiązującym w danym kraju/regionie prawodawstwem dotyczącym księgowania. Wśród wymogów mogą być reguły dotyczące rejestrowania transakcji nabycia i likwidacji, amortyzacji, przewidywanego okresu eksploatacji, zwiększania i zmniejszania wartości środków trwałych. Funkcje modułu środków trwałych uwzględniają wiele z wymienionych standardów i reguł.
+
+
 
 
 

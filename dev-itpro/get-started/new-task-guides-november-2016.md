@@ -1,6 +1,6 @@
 ---
-title: Nowe lub zaktualizowane zadania prowadzi (listopad 2016)
-description: "W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firmę Microsoft (listopad 2016 - wszystkie języki) APQC Unified biblioteki Microsoft Dynamics 365 dla operacji. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy."
+title: Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)
+description: "Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z listopada 2016 r. — wszystkie języki) dla programu Microsoft Dynamics 365 for Operations. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,21 +24,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-november-2016"></a>Nowe lub zaktualizowane zadania prowadzi (listopad 2016)
+# <a name="new-or-updated-task-guides-november-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)
 
-W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firmę Microsoft (listopad 2016 - wszystkie języki) APQC Unified biblioteki Microsoft Dynamics 365 dla operacji. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
+[!include[banner](../includes/banner.md)]
 
-(2016 listopad--wszystkich języków) APQC Unified biblioteka zawiera przewodniki zadania, które mają być używane, aby uzyskać pomoc dotyczącą programu Microsoft Dynamics 365 dla operacji, Microsoft Dynamics 365 dla operacji aktualizacji platformy 3, aktualizacja systemu Microsoft Dynamics AX Platform 2, Dynamics AX maja 2016, aktualizacja i Microsoft Dynamics AX 2016 lutego publikacji. Aby uzyskać więcej informacji na temat tych wersji, zobacz [co to jest nowe lub zmienione](whats-new-changed.md). W tej bibliotece są dostępne zlokalizowane wersje prowadnice zadania. Aby uzyskać więcej informacji na temat sposobu łączenia się biblioteka przewodnik zadań z systemu pomocy, zobacz [wprowadzenie do pomocy](help-overview.md). **Uwaga:** znak gwiazdki (**\***) obok tytułu procesu biznesowego (BPM) linia wskazuje, że przewodnik zadania dla procesów biznesowych został utworzony dla Dynamics 365 dla operacji listopada 2016 aktualizacji, a nie jest obsługiwany we wcześniejszych wersjach programu Microsoft Dynamics AX.
+
+Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z listopada 2016 r. — wszystkie języki) dla programu Microsoft Dynamics 365 for Operations. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
+
+Ujednolicona biblioteka APQC (z listopada 2016 r. — wszystkie języki) zawiera przewodniki po zadaniach, które przewidziano jako pomoc dla programu Microsoft Dynamics 365 for Operations, aktualizacji nr 3 platformy Microsoft Dynamics 365 for Operations, aktualizacji nr 2 platformy Microsoft Dynamics AX, aktualizacji systemu Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. Aby uzyskać więcej informacji o tych wersjach, zobacz [Co nowego, jakie zmiany](whats-new-changed.md). W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md). **Uwaga:** Znak gwiazdki (**\***) obok tytułu wiersza narzędzia do modelowania procesów biznesowych (BPM) wskazuje, że przewodnik po zadaniach dla tego procesu biznesowego został utworzony dla aktualizacji programu Dynamics 365 for Operations z listopada 2016 r. i nie jest obsługiwany we wcześniejszych wersjach systemu Microsoft Dynamics AX.
 
 ### <a name="accounts-payable"></a>Rozrachunki z dostawcami
 
 | Wiersz BPM                                                                                           | Kraj/region |
 |----------------------------------------------------------------------------------------------------|----------------|
-| Dane faktury klucza w systemie AP za pomocą arkusza zatwierdzania                                               | Globalna         |
-| Dane faktury klucza w systemie AP za pomocą faktury od dostawcy (Enter i Księguj fakturę od dostawcy z pasującymi) | Globalna         |
+| Wpisywanie danych faktury w systemie AP za pomocą arkusza zatwierdzania                                               | Globalna         |
+| Wpisywanie danych faktury w systemie AP za pomocą faktury od dostawcy (wprowadzanie i księgowanie faktury od dostawcy z uzgadnianiem) | Globalna         |
 | Wpisywanie danych faktury w systemie AP za pomocą arkusza dostawcy                                              | Globalna         |
 | Wpisywanie danych faktury w systemie AP za pomocą puli faktur                                                 | Globalna         |
-| Rejestrowanie przyjęcia faktury od dostawcy i odpowiedniki przyjętej ilości                           | Globalna         |
+| Rejestrowanie przyjęcia faktury od dostawcy i porównywanie z przyjętą ilością                           | Globalna         |
 | Konfigurowanie walidacji uzgadniania faktur rozrachunków z dostawcami                                                | Globalna         |
 | Konfigurowanie zasad faktur od dostawców                                                                    | Globalna         |
 
@@ -49,7 +52,7 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | Wiersz BPM                                                                           | Kraj/region |
 |------------------------------------------------------------------------------------|----------------|
 | Przypisanie szablonu cyklicznej faktury niezależnej do odbiorcy                        | Globalna         |
-| Obliczanie odsetek i Utwórz i drukowanie i Księgowanie not odsetkowych (odsetki procesu) | Globalna         |
+| Obliczanie odsetek oraz tworzenie, drukowanie i księgowanie not odsetkowych (przetwarzanie odsetek) | Globalna         |
 | Tworzenie kolejności ponagleń                                                | Globalna         |
 | Tworzenie zgody na polecenie zapłaty dla odbiorcy                                       | Globalna         |
 | Tworzenie faktury niezależnej                                                         | Globalna         |
@@ -59,7 +62,7 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | Tworzenie faktur zamówień sprzedaży                                                        | Globalna         |
 | Generowanie i księgowanie cyklicznych faktur niezależnych                                     | Globalna         |
 | Przetwarzanie ponagleń                                                         | Globalna         |
-| Przejrzyj informacje kolekcji                                                      | Globalna         |
+| Przeglądanie informacji o windykacji                                                      | Globalna         |
 | Konfigurowanie i generowanie informacji o wiekowaniu rozrachunków z odbiorcami                          | Globalna         |
 
 ### 
@@ -77,7 +80,7 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 
 | Wiersz BPM                    | Kraj/region |
 |-----------------------------|----------------|
-| Modyfikuj układ planu budżetu | Globalna         |
+| Modyfikowanie układu planu budżetu | Globalna         |
 
 ### 
 
@@ -104,7 +107,7 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | Konfigurowanie czeków postdatowanych                                              | Globalna         |
 | Rozliczenie postdatowanego czeku dla dostawcy                                | Globalna         |
 | Rozlicz czek postdatowany od odbiorcy                             | Globalna         |
-| Omówienie płatności dostawcy                                             | Globalna         |
+| Przegląd płatności dla dostawcy                                             | Globalna         |
 
 ### 
 
@@ -137,45 +140,45 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 
 | Wiersz BPM                                                                                                                             | Kraj/region                    |
 |--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| Dodawanie pola raportu BAS i generowania instrukcji działalności biznesowej Australii (BAS)                                                    | Australia i Nowa Zelandia         |
+| Dodawanie pól deklaracji BAS i generowanie zestawienia działalności gospodarczej BAS (Australia)                                                    | Australia i Nowa Zelandia         |
 | Konfigurowanie kodów dla deklaracji BAS (Australia)                                                                                                | Australia i Nowa Zelandia         |
-| **\***Chinese voucher continuity check                                                                                               | Chiny                             |
-| **\***Chiny CN 00010 hierarchii planu kont                                                                                  | Chiny                             |
-| **\***Dziennik operacji CN 00016 użytkownika przez Chiny pracy regułę                                                                              | Chiny                             |
-| **\***Golden tax integration export setup                                                                                            | Chiny                             |
-| **\***Post vouchers from other modules, like sales invoices                                                                          | Chiny                             |
-| **\***Post vouchers from the general journal                                                                                         | Chiny                             |
-| **\***Set up basic tax integration profile for China                                                                                 | Chiny                             |
-| **\***Set up Chinese vouchers                                                                                                        | Chiny                             |
+| **\***Sprawdzanie ciągłości numeracji chińskich załączników                                                                                               | Chiny                             |
+| **\***CN-00010 Hierarchia planu kont (Chiny)                                                                                  | Chiny                             |
+| **\***CN-00016 Dziennik operacji użytkownika według reguły pracy (Chiny)                                                                              | Chiny                             |
+| **\***Konfiguracja eksportu w integracji z systemem Golden Tax                                                                                            | Chiny                             |
+| **\***Księgowanie załączników z innych modułów, takich jak faktury sprzedaży                                                                          | Chiny                             |
+| **\***Księgowanie załączników z arkusza finansowego                                                                                         | Chiny                             |
+| **\***Konfigurowanie podstawowego profilu integracji podatków dla Chin                                                                                 | Chiny                             |
+| **\***Konfigurowanie chińskich załączników                                                                                                        | Chiny                             |
 | Tworzenie i księgowanie faktury dla odbiorcy z sektora publicznego                                                                      | Dania                           |
 | Tworzenie i księgowanie faktury niezależnej odbiorcy z sektora publicznego                                                                     | Dania                           |
 | Tworzenie i księgowanie faktury projektu dla odbiorcy z sektora publicznego                                                                       | Dania                           |
-| DK-00007 przelewu giro FIK 752 dostawy/Księgowanie faktury niezależnej z dokument płatności                                               | Dania                           |
-| DK-00007 przelewu giro FIK 752 dostawy/Post z slip płatności faktury projektu                                                 | Dania                           |
+| DK-00007 Formularz przekazu GIRO FIK 752/Księgowanie faktury niezależnej z dokumentem płatności                                               | Dania                           |
+| DK-00007 Formularz przekazu GIRO FIK 752/Księgowanie faktury projektu z dokumentem płatności                                                 | Dania                           |
 | Importowanie elektronicznego fakturowania konfiguracji OIOUBL                                                                                    | Dania                           |
 | Konfigurowanie kont odbiorców na potrzeby fakturowania elektronicznego OIOUBL                                                                             | Dania                           |
 | Konfigurowanie fakturowania elektronicznego OIOXML                                                                                                   | Dania                           |
 | Konfigurowanie formatu dokumentu płatności                                                                                                           | Dania                           |
-| **\***EEU-00047 Advance payment to employee                                                                                          | Europa Wschodnia                    |
+| **\***EEU 00047 Zaliczka dla pracownika                                                                                          | Europa Wschodnia                    |
 | Tworzenie i eksport płatności dla dostawcy przy użyciu formatu płatności ISO20022                                                                      | Europa                            |
 | Tworzenie płatności dla odbiorcy, który ma zgodę na polecenie zapłaty                                                                          | Europa                            |
-| **\***Narzędzie do generowania odwołania płatności EE-00015                                                                                     | Europa                            |
+| **\***EE-00015 Narzędzie do generowania odwołania do płatności                                                                                     | Europa                            |
 | EUR-00002 Generowanie unijnej deklaracji Intrastat                                                                                       | Europa                            |
-| **\***00002 EUR, określ adres przewozowe dla transakcji wewnątrz Wspólnoty                                                          | Europa                            |
+| **\***EUR-00002 Określanie adresu załadunku dla transakcji wewnątrzwspólnotowej                                                          | Europa                            |
 | EUR-00002 Przesyłanie transakcji do systemu Intrastat                                                                                     | Europa                            |
 | EUR-00011 Generowanie raportu listy sprzedaży do UE                                                                                          | Europa                            |
 | EUR-00011 Konfigurowanie unijnego raportu listy sprzedaży                                                                                             | Europa                            |
 | EUR-00012 Wystawianie świadectwa wywozowego UE                                                                                              | Europa                            |
 | EUR-00012 Odbiór świadectwa wywozowego UE                                                                                            | Europa                            |
-| **\***EUR-00015 Party search using VAT ID                                                                                            | Europa                            |
-| **\***EUR-00015 Registration of vendor VAT ID                                                                                        | Europa                            |
-| **\***00015 EUR skonfigurować identyfikator VAT                                                                                                        | Europa                            |
-| **\***Obliczanie kursu wymiany HU 00001                                                                                             | Europa                            |
+| **\***EUR-00015 Szukanie strony za pomocą identyfikatora VAT                                                                                            | Europa                            |
+| **\***EUR-00015 Rejestrowanie identyfikatora VAT dostawcy                                                                                        | Europa                            |
+| **\***EUR-00015 Konfigurowanie identyfikatora VAT                                                                                                        | Europa                            |
+| **\***HU-00001 Obliczanie kursu wymiany                                                                                             | Europa                            |
 | Importowanie konfiguracji polecenia przelewu ISO20022                                                                                        | Europa                            |
 | Importowanie konfiguracji polecenia zapłaty ISO20022                                                                                           | Europa                            |
-| **\***Dokument LT-00003 przeniesienia dla przepływu towarów wewnątrz firmy/Generowanie dokumentu przesunięcia przelewu wewnętrznego zapasów   | Europa                            |
-| **\***Dokument LT-00003 przeniesienia dla przepływu towarów wewnątrz firmy/Ustaw przesyłanie dokumentów do przepływu towarów wewnątrz firmy | Europa                            |
-| **\***00002 nr odbiorcy płatności na podstawie Identyfikatora płatności                                                                                  | Europa                            |
+| **\***LT-00003 Dokument przeniesienia towarów wewnątrz firmy/Generowanie dokumentu wewnętrznego przesunięcia magazynowego   | Europa                            |
+| **\***LT-00003 Dokument przeniesienia towarów wewnątrz firmy/Konfigurowanie dokumentów przesunięcia towarów wewnątrz firmy | Europa                            |
+| **\***NO-00002 Płatność odbiorcy na podstawie identyfikatora płatności                                                                                  | Europa                            |
 | Konfigurowanie kont bankowych firmy dla poleceń przelewu ISO20022                                                                           | Europa                            |
 | Konfigurowanie kont bankowych firmy dla poleceń zapłaty ISO20022                                                                              | Europa                            |
 | Konfigurowanie odbiorców i kont bankowych odbiorców dla poleceń zapłaty ISO20022                                                               | Europa                            |
@@ -183,10 +186,10 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | Konfigurowanie metody płatności poleceniem zapłaty ISO20022                                                                                   | Europa                            |
 | Konfigurowanie dostawców i kont bankowych dostawców dla poleceń przelewu ISO20022                                                                | Europa                            |
 | Ustanawianie metod płatności odbiorcy                                                                                                | Francja                            |
-| FR-00002 konto odbiorcy i dostawcy                                                                                                 | Francja                            |
+| FR-00002 Konta odbiorców i dostawców                                                                                                 | Francja                            |
 | FR-00003 Kody NAF i numery Siret                                                                                                 | Francja                            |
 | FR-00004 Zatwierdzanie i księgowanie weksla                                                                                      | Francja                            |
-| Francuski FR-00004 weksli i skryptów dłużnych                                                                               | Francja                            |
+| FR-00004 Francuskie weksle i skrypty dłużne                                                                               | Francja                            |
 | FR-00004 Księgowanie oprotestowany arkusz wystawienia weksla                                                                                  | Francja                            |
 | FR-00004 Księgowanie arkusza ponownego wystawiania weksli                                                                                       | Francja                            |
 | FR-00004 Konfiguracja metody płatności                                                                                                     | Francja                            |
@@ -200,7 +203,7 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | ER Konfigurowanie formatu do inwentaryzacji i sumowania (Część 2: Konfigurowanie obliczeń)                                                      | Niemcy                           |
 | ER Konfigurowanie formatu do inwentaryzacji i sumowania (Część 3: Używanie obliczeń do wygenerowania danych wyjściowych)                                         | Niemcy                           |
 | ER Konfigurowanie formatu do inwentaryzacji i sumowania (Część 4: Inicjowanie formatu)                                                                  | Niemcy                           |
-| Tworzenie dostawcy konfiguracji ER i oznaczyć ją jako aktywną                                                                             | Niemcy                           |
+| ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego                                                                             | Niemcy                           |
 | ER Projektowanie konfiguracji do generowania raportów w formacie Microsoft WORD (listopad 2016)                                            | Niemcy                           |
 | ER Projektowanie modelu danych dla konkretnej domeny (listopad 2016)                                                                                 | Niemcy                           |
 | ER Importowanie konfiguracji z usługi Lifecycle Services                                                                                    | Niemcy                           |
@@ -218,21 +221,21 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | ER Używanie poziomo rozszerzalnych zakresów w celu dynamicznego dodawania kolumn w raportach programu Excel (Część 2: Inicjowanie formatu)                               | Niemcy                           |
 | Generowanie niemieckiego pliku inspekcji                                                                                                           | Niemcy                           |
 | Importowanie konfiguracji niemieckiego pliku audytu                                                                                               | Niemcy                           |
-| **\***Raport uzgadniania VAT 00018 EUR                                                                                            | Islandia                           |
-| IS-00006 dostawcy faktury deklaracji/Utwórz konto dostawcy i dołączyć deklarację na fakturze                                       | Islandia                           |
-| IS-00006 dostawcy faktury deklaracji/Set up deklarację na fakturze dla dostawców                                                        | Islandia                           |
-| IS-00006 dostawcy Fakturowanie deklaracji/aktualizacji deklaracji na fakturze od dostawcy i Generowanie raportu                                       | Islandia                           |
-| Obsługa planu kont/utworzenia odwołania do płatności obowiązkowe                                                                       | Islandia                           |
+| **\***EUR-00018 Raport uzgodnienia VAT                                                                                            | Islandia                           |
+| IS-00006 Deklaracja na fakturze od dostawcy/Tworzenie konta odbiorcy i dołączanie deklaracji na fakturze                                       | Islandia                           |
+| IS-00006 Deklaracja na fakturze od dostawcy/Konfigurowanie deklaracji faktury od dostawcy                                                        | Islandia                           |
+| IS-00006 Deklaracja na fakturze od dostawcy/Aktualizowanie deklaracji faktury od dostawcy i generowanie raportu                                       | Islandia                           |
+| Obsługa planu kont/Konfigurowanie obowiązkowych odwołań do płatności                                                                       | Islandia                           |
 | Nabycie środka trwałego ze zobowiązaniami do wycofania środków trwałych                                                                              | Japonia                             |
-| Nabycia środków trwałych, roszczenie o dotacje rządowe                                                                                 | Japonia                             |
+| Nabywanie środków trwałych i roszczenia do dotacji państwowej                                                                                 | Japonia                             |
 | Korekta oszacowania zobowiązania wycofania środków trwałych                                                                               | Japonia                             |
-| Wartości bilansowej współużytkowanych zasobów oraz wartości firmy do generowania jednostek pieniężnych                                                   | Japonia                             |
+| Alokowanie kwoty magazynowania aktywów wspólnych i wartości firmy w ośrodkach wypracowujących środki pieniężne                                                   | Japonia                             |
 | Zmienianie metody amortyzacji w trakcie użytkowania środka trwałego dla jednego składnika aktywów                                                                   | Japonia                             |
 | Zmienianie metody amortyzacji w księdze w trakcie użytkowania środka trwałego                                                                        | Japonia                             |
 | Konfigurowanie parametrów przyspieszonej amortyzacji i profilów księgowania                                                                   | Japonia                             |
 | CN-00004 Alokacja amortyzacji środka trwałego (Japonia)                                                                                   | Japonia                             |
-| Skonfiguruj profil amortyzacji i profil księgowania amortyzacji dodatkowe                                                   | Japonia                             |
-| Skonfiguruj profil amortyzacji i profil księgowania dla amortyzacji                                                      | Japonia                             |
+| Konfigurowanie profilu amortyzacji i profilu księgowania dla amortyzacji dodatkowej                                                   | Japonia                             |
+| Konfigurowanie profilu amortyzacji i profilu księgowania dla amortyzacji specjalnej                                                      | Japonia                             |
 | Konfigurowanie parametrów faktury skonsolidowanej i ustawień dla rozrachunków z dostawcami                                                             | Japonia                             |
 | Konfigurowanie kont głównych do księgowania zobowiązań do wycofania środków trwałych i obsługi stawek rabatu                                            | Japonia                             |
 | Tworzenie środka trwałego z dodatkową amortyzacją                                                                                    | Japonia                             |
@@ -259,14 +262,14 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | Informacje dotyczące transakcji zobowiązania do wycofania składników aktywów                                                                    | Japonia                             |
 | Informacje o ujemnych wydatkach                                                                                                       | Japonia                             |
 | JP-00005 Arkusz przyjęcia w formularzu konta T (Japonia)                                                                                     | Japonia                             |
-| JP-00011 skonsolidowane faktury - AR - Utwórz i Potwierdź odbiorcy faktury skonsolidowanej                                              | Japonia                             |
-| JP-00027 formularza 26 dla deklaracji podatkowej amortyzacji                                                                                     | Japonia                             |
+| JP-00011 Skonsolidowana faktura — AR — Tworzenie i potwierdzanie skonsolidowanej faktury odbiorcy                                              | Japonia                             |
+| JP-00027 Formularz 26 dla deklaracji podatku podlegającego amortyzacji                                                                                     | Japonia                             |
 | Obsługa plików danych głównych środków trwałych dla ujemnych wydatków                                                                       | Japonia                             |
 | Obsługa wskaźników utraty pojedynczych składników aktywów                                                                                  | Japonia                             |
 | Płacenie transakcji dla dostawcy przez potwierdzanie weksla odbiorcy                                                                    | Japonia                             |
 | Okresowe rozliczenia nadpłat i niedopłat amortyzacji                                                                                   | Japonia                             |
 | Proponowanie dodatkowej amortyzacji                                                                                                      | Japonia                             |
-| Proponuje i zaksięgować przyspieszonej amortyzacji                                                                                        | Japonia                             |
+| Proponowanie i księgowanie przyspieszonej amortyzacji                                                                                        | Japonia                             |
 | Proponowanie i księgowanie kwoty utraty według partii                                                                                      | Japonia                             |
 | Proponowani i księgowanie kwoty utraty za pomocą arkusza środków trwałych                                                                  | Japonia                             |
 | Proponowanie i księgowanie kwoty utraty w ośrodku wypracowującym środki pieniężne                                                                     | Japonia                             |
@@ -300,12 +303,12 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | MX-00010 Żądanie i drukowanie elektronicznej faktury                                                                                     | Meksyk                            |
 | MX-00010 Księgowanie faktury niezależnej                                                                                                    | Meksyk                            |
 | MX-00010 Ustawianie parametrów dla faktury elektronicznej                                                                                    | Meksyk                            |
-| MX-00020: Raport rachunku meksykański księgi elektronicznej produkt w wersji 1.1                                                            | Meksyk                            |
+| MX-00020 Generowanie raport rachunku księgi elektronicznej wersji 1.1 w Meksyku                                                            | Meksyk                            |
 | MX-00020 Konfigurowanie planu kont dla firmy w Meksyku                                                                   | Meksyk                            |
 | MX-00020 - Określanie identyfikatora rejestracyjnego RFC dla kont bankowych w Meksyku                                                                 | Meksyk                            |
 | NL-00003 Integracja Semansys XBRL                                                                                                   | Holandia                       |
 | NL-00010 Deklaracje podatku elektronicznego (EVAT)                                                                                          | Holandia                       |
-| MY-00003 Zarządzaj klienta noty uznaniowej i faktury korygującej dla podatku GST                                                                          | Singapur, Malezja i Tajlandia |
+| MY-00003 Zarządzanie notą debetową i notą kredytową odbiorcy na potrzeby podatku GST                                                                          | Singapur, Malezja i Tajlandia |
 | MY-00004 Zarządzanie notami obciążeniowymi i notami uznaniowymi dla dostawcy na potrzeby podatku GST                                                                            | Singapur, Malezja i Tajlandia |
 | MY-00005 Drukowanie faktur podatku PTU                                                                                                      | Singapur, Malezja i Tajlandia |
 | MY-00006 01 Konfigurowanie klauzul zwolnienia z podatku GST                                                                                                | Singapur, Malezja i Tajlandia |
@@ -340,7 +343,7 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | Zmień grupę składników aktywów                                        | Globalna         |
 | Zmiana konwencji amortyzacji dla wielu środków trwałych | Globalna         |
 | Tworzenie środka trwałego                                      | Globalna         |
-| Tworzenie i nabycia aktywów z rozrachunków z dostawcami           | Globalna         |
+| Tworzenie i nabywanie środków trwałych z modułu Rozrachunki z dostawcami           | Globalna         |
 | Utwórz propozycję amortyzacji                              | Globalna         |
 | Likwidacja środka trwałego z wykorzystaniem faktury niezależnej        | Globalna         |
 | Wprowadzanie środka komplementarnego dla środka trwałego                        | Globalna         |
@@ -362,7 +365,7 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | Wiersz BPM                                       | Kraj/region |
 |------------------------------------------------|----------------|
 | Zamykanie roku obrachunkowego                          | Globalna         |
-| Tworzenie pozycji dziennika przy użyciu szablonu        | Globalna         |
+| Tworzenie wpisu w arkuszu za pomocą szablonu        | Globalna         |
 | Tworzenie konta głównego                          | Globalna         |
 | Tworzenie struktur kont                      | Globalna         |
 | Tworzenie schematów naliczania                         | Globalna         |
@@ -387,9 +390,9 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 
 | Wiersz BPM                                                                       | Kraj/region |
 |--------------------------------------------------------------------------------|----------------|
-| **\***Change the ownership of consignment inventory based on production demand | Globalna         |
-| **\***Create a consignment replenishment order                                 | Globalna         |
-| **\***Monitor consignment inventory using vendor collaboration                 | Globalna         |
+| **\***Zmiana własności zapasów konsygnacyjnych w oparciu o zapotrzebowanie produkcyjne | Globalna         |
+| **\***Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych                                 | Globalna         |
+| **\***Monitorowanie zapasów konsygnacyjnych poprzez współpracę z dostawcami                 | Globalna         |
 
 ### 
 
@@ -416,9 +419,9 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 
 | Wiersz BPM                                                         | Kraj/region |
 |------------------------------------------------------------------|----------------|
-| **\***Add to your performance journal and send praise to someone | Globalna         |
-| **\***Create a goal                                              | Globalna         |
-| **\***Create a performance review                                | Globalna         |
+| **\***Dodawanie do swojego dziennika wydajności i wysyłanie pochwały innej osobie | Globalna         |
+| **\***Tworzenie celu                                              | Globalna         |
+| **\***Tworzenie przeglądu wydajności                                | Globalna         |
 
 ### 
 
@@ -442,9 +445,9 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | Dodawanie obrazu do produktu                                               | Globalna         |
 | Klasyfikowanie produktu przy użyciu hierarchii kategorii                           | Globalna         |
 | Tworzenie kodu kreskowego dla produktu                                         | Globalna         |
-| \*Tworzenie nomenklatury numer produktu dla wariantów produktu wstępnie zdefiniowanych | Globalna         |
-| \*Tworzenie nomenklatury numer produktu dla wariantów produktu skonfigurowanych | Globalna         |
-| \*Definiowanie ustawień domyślnych zamówienia dla towaru                            | Globalna         |
+| \* Tworzenie konwencji nazewnictwa numerów produktu dla wstępnie zdefiniowanych wariantów produktu | Globalna         |
+| \* Tworzenie konwencji nazewnictwa numerów produktu dla skonfigurowanych wariantów produktu | Globalna         |
+| \* Definiowanie domyślnych ustawień zamówień na towar                            | Globalna         |
 | Tworzenie zamówienia sprzedaży dla konfigurowalnego produktu                         | Globalna         |
 | Tworzenie kryteriów wyboru ceny sprzedaży                                   | Globalna         |
 | Wprowadzanie numeru GTIN dla produktu                                       | Globalna         |
@@ -468,11 +471,11 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | Wiersz BPM                                                                      | Kraj/region |
 |-------------------------------------------------------------------------------|----------------|
 | Dodawanie typu certyfikacji do dostawcy dla sektora publicznego                        | Globalna         |
-| Kontrola dostępu do umów zakupu z sektora publicznego                      | Globalna         |
+| Kontrola dostępu do umów zakupu od podmiotów z sektora publicznego                      | Globalna         |
 | Tworzenie klasyfikacji faktur                                               | Globalna         |
 | Tworzenie kodu fakturowania                                                         | Globalna         |
 | Tworzenie zobowiązania do rezerwacji środków budżetowych dla sektora publicznego                 | Globalna         |
-| Tworzenie niestandardowego pola Kod bilingowy                                      | Globalna         |
+| Tworzenie niestandardowego pola kodu fakturowania                                      | Globalna         |
 | Tworzenie typu funduszu                                                            | Globalna         |
 | Tworzenie jednorazowego dostawcy i faktury                                          | Globalna         |
 | Tworzenie wstępnego budżetu dla sektora publicznego                                 | Globalna         |
@@ -480,10 +483,10 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | Tworzenie wpisów księgowych dotyczących zaliczek w sektorze publicznym                          | Globalna         |
 | Tworzenie pierwotnego budżetu i odwracanie wpisów budżetu wstępnego         | Globalna         |
 | Tworzenie i przypisywanie kodu partnera handlowego w sektorze publicznym                 | Globalna         |
-| Tworzenie okładki i podpis strony dla raportów płatności dla sektora publicznego   | Globalna         |
+| Tworzenie okładki i stron podpisu dla raportów płatności dla sektora publicznego   | Globalna         |
 | Importowanie i tworzenie wielu jednorazowych dostawców i faktur w sektorze publicznym | Globalna         |
 | Konfigurowanie pochodnej hierarchii finansowej w sektorze publicznym                     | Globalna         |
-| Utworzenie Funduszu w sektorze publicznym                                            | Globalna         |
+| Konfigurowanie funduszu w podmiocie z sektora publicznego                                            | Globalna         |
 | Konfigurowanie klasyfikacji umów zakupu dla sektora publicznego                   | Globalna         |
 
 ### 
@@ -493,17 +496,17 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | Wiersz BPM                                                         | Kraj/region |
 |------------------------------------------------------------------|----------------|
 | Konfigurowanie pracownika                                               | Globalna         |
-| **\***Configure machine learning-powered product recommendations | Globalna         |
+| **\***Konfigurowanie rekomendacji produktów przy użyciu uczenia maszynowego | Globalna         |
 | Konfigurowanie profilu funkcji dla przedstawiciela handlowego   | Globalna         |
-| **\***Create a POS visual profile (November 2016)                | Globalna         |
+| **\***Tworzenie profilu graficznego punktu sprzedaży (listopad 2016)                | Globalna         |
 | Tworzenie i kojarzenie kas                                   | Globalna         |
 | Tworzenie zamówień biura obsługi                                        | Globalna         |
 | Tworzenie umów handlowych przy użyciu reguły cen dla kategorii            | Globalna         |
 | Tworzenie, obliczanie i księgowanie dla sklepu              | Globalna         |
 | Definiowanie przynależności i przypisywanie rabatu                      | Globalna         |
-| Definiowanie i zarządzanie grup uprawnień punktu sprzedaży                          | Globalna         |
-| Definiowanie harmonogramu ciągłości                                       | Globalna         |
-| **\***Definiowanie komunikację w kanale sieci sprzedaży (CDX)                 | Globalna         |
+| Definiowanie grup uprawnień punktu sprzedaży i zarządzanie nimi                          | Globalna         |
+| Definiowanie harmonogramu sprzedaży ciągłej                                       | Globalna         |
+| **\***Definiowanie komunikacji w kanale sieci sprzedaży (CDX)                 | Globalna         |
 | Korekty punktów lojalnościowych                                      | Globalna         |
 | Zarządzanie asortymentem                                               | Globalna         |
 | Przypisywanie i ręczna zmiana podatku                                | Globalna         |
@@ -526,7 +529,7 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | Realizacja umów sprzedaży                   | Globalna         |
 | Generowanie i przetwarzanie rabatów dla odbiorcy      | Globalna         |
 | Wyszukiwanie odpowiednich cen i rabatów    | Globalna         |
-| Zarządzaj blokadami zamówienia sprzedaży                   | Globalna         |
+| Zarządzanie wstrzymaniami zamówień sprzedaży                   | Globalna         |
 | Utwórz grupowo oferty sprzedaży               | Globalna         |
 | Przetwarzanie rabatów za płatność                | Globalna         |
 | Rejestrowanie prowizji od sprzedaży                 | Globalna         |
@@ -554,7 +557,7 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 
 ### 
 
-### <a name="supply-relationship-management"></a>Zarządzanie relacjami z dostaw
+### <a name="supply-relationship-management"></a>Zarządzanie relacjami z dostawcami
 
 | Wiersz BPM                                                           | Kraj/region |
 |--------------------------------------------------------------------|----------------|
@@ -575,14 +578,14 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 | Wiersz BPM                                                                    | Kraj/region |
 |-----------------------------------------------------------------------------|----------------|
 | Tworzenie profilu lokalizacji                                                   | Globalna         |
-| **\***Create a mobile device menu item for license plate consolidation      | Globalna         |
+| **\***Tworzenie elementu menu urządzenia mobilnego dla konsolidacji na podstawie numerów identyfikacyjnych      | Globalna         |
 | Ręczne uzgadnianie frachtu                                                  | Globalna         |
 | Rejestracja ewidencjonowania i wyewidencjonowania kierowcy dla danego terminu                   | Globalna         |
-| Konfigurowanie elementu menu urządzenia przenośnego za ukończenie pracy typu zamówienia zakupu | Globalna         |
+| Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy typu Zamówienie zakupu | Globalna         |
 | Konfigurowanie terminu dla ładunku                                            | Globalna         |
 | Skonfiguruj metodę płatności za transport                                              | Globalna         |
 | Konfigurowanie automatycznego uzgadniania frachtu                                     | Globalna         |
-| **\***Set up short picking item reallocation                                | Globalna         |
+| **\***Konfigurowanie zmiany alokacji pozycji na potrzeby pobierania w niedomiarze                                | Globalna         |
 
 
 
@@ -593,6 +596,8 @@ W tym temacie opisano nowe lub zaktualizowane zadania wytyczne wydane przez firm
 
 [Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)](new-updated-task-guides-available-may-2016.md)
 
-[New or updated task guides available (August 2016)](new-updated-task-guides-available-august-2016.md)
+[Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)](new-updated-task-guides-available-august-2016.md)
+
+
 
 

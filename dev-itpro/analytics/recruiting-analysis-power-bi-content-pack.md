@@ -1,6 +1,6 @@
 ---
-title: "Rekrutacja Power BI zawartości"
-description: "W tym temacie opisano 365 Dynamics dla operacji - Rekrutacja Power BI zawartości. Wyjaśnia, jak uzyskać dostęp do raportów, które są zawarte w pakiecie zawartości i zawiera informacje o modelu danych i podmiotów, które były użyte do utworzenia pakietu zawartości."
+title: "Pakiet zawartości usługi Power BI Rekrutacja"
+description: "W tym temacie opisano pakiet zawartości Dynamics 365 for Operations — Rekrutacja dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,49 +24,52 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recruiting-power-bi-content"></a>Rekrutacja Power BI zawartości
+# <a name="recruiting-power-bi-content"></a>Pakiet zawartości usługi Power BI Rekrutacja
 
-W tym temacie opisano 365 Dynamics dla operacji - Rekrutacja Power BI zawartości. Wyjaśnia, jak uzyskać dostęp do raportów, które są zawarte w pakiecie zawartości i zawiera informacje o modelu danych i podmiotów, które były użyte do utworzenia pakietu zawartości.
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>Uzyskiwanie dostępu do zawartości pack
+
+W tym temacie opisano pakiet zawartości Dynamics 365 for Operations — Rekrutacja dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+
+<a name="accessing-the-content-pack"></a>Przechodzenie do pakietu zawartości
 --------------------------
 
-Rekrutacja pack zawartości można znaleźć w bibliotece zasobów współużytkowanych w Microsoft Dynamics cyklu życia usługi (LCS). Aby uzyskać więcej informacji o tym, jak pobrać pakiet zawartości i podłącz go do sieci Microsoft Dynamics 365 dla danych operacji, zobacz [Power BI zawartości w LCS firmy Microsoft i jej partnerzy](power-bi-content-microsoft-partners.md).
+Pakiet zawartości Rekrutacja znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i łączeniu go z danymi usługi Microsoft Dynamics 365 for Operations, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Raporty, które są zawarte w pakiecie zawartości
-Po połączeniu content pack na swoim 365 Dynamics dla operacji danych, raporty wyświetlanie danych organizacji. Jeśli nigdy nie używane Microsoft Power BI przed, można znaleźć informacje na jego temat na [stronę z przewodnikiem nauki BI zasilania](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporty, które są zawarte w pakiecie zawartości mają zarówno wykresów i tabel, które zawierają dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
+## <a name="reports-that-are-included-in-the-content-pack"></a>Raporty dostępne w pakiecie zawartości
+Gdy utworzysz połączenie między pakietem zawartości a danymi programu Dynamics 365 for Operations, w raportach są wyświetlone dane organizacji. Jeśli to Twoja pierwsza styczność z narzędziem Microsoft Power BI, możesz się o nim dowiedzieć więcej na [stronie Przewodnika z instruktażem po narzędziu Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporty dostępne w pakiecie zawartości mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
 
 | Raport                       | Zawartość                                                                                               |
 |------------------------------|--------------------------------------------------------------------------------------------------------|
-| Wnioskodawca analizy           | Wnioskodawcy przez zadanie, wnioskodawca źródeł, wnioskodawcy według lokalizacji i łączna liczba kandydatów           |
-| Stan kandydata             | Wnioskodawców przez typ, stan i Stan kandydata                                                    |
-| Dane demograficzne kandydata       | Wnioskodawcy według płci i wieku i kandydatów według poziomu edukacji i stanu                             |
-| Analiza rekrutacji          | Współczynnik zatrudnienia netto, średnia liczba dni zatrudnić procent uszkodzonych wynajmuje i koszty rekrutacji                    |
-| Analiza projektu rekrutacji | Liczba projektów rekrutacji, otwory według projektów rekrutacji kandydatów i według projektów rekrutacji |
+| Analiza kandydatów           | Kandydaci według zadania, źródła kandydatów, kandydaci według lokalizacji i łączna liczba kandydatów           |
+| Stan kandydata             | Kandydaci według typu i stanu, stan kandydata                                                    |
+| Dane demograficzne kandydatów       | Kandydaci według wieku i płci, kandydaci według poziomu wykształcenia i stanu                             |
+| Analiza rekrutacji          | Współczynnik zatrudnienia netto, średnia liczba dni do zatrudnienia, procent nietrafionych zatrudnień i koszty rekrutacji                    |
+| Analiza projektu rekrutacji | Liczba projektów rekrutacji, wakaty według projektów rekrutacji i kandydaci według projektów rekrutacji |
 
-Można filtrować wykresy i płytki na te raporty i przypiąć wykresy i płytki do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtru i numer pin w BI zasilania, zobacz [tworzenie i konfigurowanie pulpitu nawigacyjnego A](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
-Dynamics 365 dla danych operacji jest używany do wypełniania raportów w pakiecie zawartości Rekrutacja. W poniższej tabeli przedstawiono podmiotów, że dodatek został oparty na.
+Dane programu Dynamics 365 for Operations są używane do wypełniania raportów w pakiecie zawartości Rekrutacja. W poniższej tabeli przedstawiono jednostki, na których bazuje pakiet.
 
-| Jednostka                          | Zawartość                                                         | Relacje z innymi encjami                                                                                                                                                                                                                 |
+| Jednostka                          | Zawartość                                                         | Powiązania z innymi jednostkami                                                                                                                                                                                                                 |
 |---------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rekrutacja\_wnioskodawcy           | Wnioskodawcy, zatrudniania kandydatów, stosunek zatrudnienia netto i kosztów          | Rekrutacja\_rekrutacji ApplicantName\_firmy rekrutacji\_CalendarOffset Recuriting\_Data rekrutacji\_rekrutacji Połgeogr\_dane demograficzne rekrutacji\_pracy Rekrutacja\_nośników rekrutacji\_RecruitmentProject                                |
-| Rekrutacja\_ApplicantName       | Wnioskodawca imię, nazwisko i imię i nazwisko                   | Rekrutacja\_wnioskodawcy rekrutacji\_rekrutacji EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrutacja\_CalendarOffset      | Kalendarz jest przeciwstawna do plasterka raportów                                | Rekrutacja\_wnioskodawcy rekrutacji\_rekrutacji EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrutacja\_firmy             | Firm do filtrowania raportów przez                                   | Rekrutacja\_wnioskodawcy rekrutacji\_rekrutacji EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrutacja\_Data                | Dni, tygodnie, miesiące i lata                                   | Rekrutacja\_wnioskodawcy rekrutacji\_rekrutacji EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrutacja\_dane demograficzne        | Data urodzenia, płeć, pochodzenie etniczne i stanu cywilnego         | Rekrutacja\_wnioskodawcy rekrutacji\_rekrutacji EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrutacja\_EmployedApplicant   | Wnioskodawca, wydajność, Data rozpoczęcia i typ kandydata           | Rekrutacja\_firmy rekrutacji\_rekrutacji CalendarOffset\_Data rekrutacji\_rekrutacji Połgeogr\_ApplicantName rekrutacji\_rekrutacji zatrudnienia\_rekrutacji wydajności\_zadanie rekrutacji\_nośników rekrutacji\_RecruitmentProject          |
-| Rekrutacja\_zatrudnienia          | Data rozpoczęcia, Data zakończenia i Data przejścia                        | Rekrutacja\_wnioskodawcy rekrutacji\_rekrutacji EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrutacja\_Połgeogr  | Miasto, kod pocztowy, Powiat i województwo                 | Rekrutacja\_wnioskodawcy rekrutacji\_rekrutacji EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrutacja\_pracy                 | Klawisze funkcyjne, typ i tytuł                                        | Rekrutacja\_wnioskodawcy rekrutacji\_rekrutacji EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrutacja\_Media               | Źródło wnioskodawców                                             | Rekrutacja\_wnioskodawcy rekrutacji\_rekrutacji EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrutacja\_wydajności         | Ocena, opis i model oceniania                            | Rekrutacja\_wnioskodawcy rekrutacji\_rekrutacji EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrutacja\_RecruitmentProject  | Opis projektu, stan projektu i otwory                | Rekrutacja\_wnioskodawcy rekrutacji\_rekrutacji EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrutacja\_TerminatedApplicant | Zakończone wnioskodawców, przyczyny, wydajności i daty zakończenia zatrudnienia | Rekrutacja\_firmy rekrutacji\_rekrutacji CalendarOffset\_Data rekrutacji\_rekrutacji Połgeogr\_wydajności rekrutacji\_demografii rekrutacji\_rekrutacji zatrudnienia\_nośników rekrutacji\_rekrutacji RecruitmentProject\_ApplicantName |
+| Recruiting\_Applicant           | Kandydaci, zatrudnieni kandydaci, współczynnik zatrudnienia netto i koszty          | Recruiting\_ApplicantName Recruiting\_Company Recruiting\_CalendarOffset Recuriting\_Date Recruiting\_GeographicLocation Recruiting\_Demographics Recruiting\_Job Recruiting\_Media Recruiting\_RecruitmentProject                                |
+| Recruiting\_ApplicantName       | Imię, drugie imię i nazwisko kandydata                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_CalendarOffset      | Przesunięcia kalendarzy dla raportów wycinkowych                                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Company             | Firmy, według których będą filtrowane raporty                                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Date                | Dni, tygodnie, miesiące i lata                                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Demographics        | Data urodzenia, płeć, pochodzenie etniczne i stan cywilny         | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_EmployedApplicant   | Kandydat, osiągane wyniki, data rozpoczęcia i typ kandydata           | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_ApplicantName Recruiting\_Employment Recruiting\_Performance Recruiting\_Job Recruiting\_Media Recruiting\_RecruitmentProject          |
+| Recruiting\_Employment          | Data rozpoczęcia, data zakończenia i data przejścia                        | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_GeographicLocation  | Miejscowość, kod pocztowy i województwo                 | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Job                 | Funkcja, typ i tytuł                                        | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Media               | Źródło kandydatów                                             | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Performance         | Ocena, opis i model oceniania                            | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_RecruitmentProject  | Opis projektu, stan projektu i wakaty                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_TerminatedApplicant | Odrzuceni kandydaci, przyczyna, osiągane wyniki i daty zakończenia zatrudnienia | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_Performance Recruiting\_Demographics Recruiting\_Employment Recruiting\_Media Recruiting\_RecruitmentProject Recruiting\_ApplicantName |
 
-Podmioty te były używane do tworzenia miar obliczeniowych. Obliczone te środki są następnie używane do obliczania kluczowych wskaźników wydajności (KPI) i raportów, które są używane w pakiecie zawartości. Jeśli chcesz dołączyć dodatkowe obliczenia w raportach i na pulpicie nawigacyjnym, można pobrać i zmodyfikować plik Recruiting.pbix z LCS. Ten plik jest domyślny model danych, który został użyty do utworzenia pakietu zawartości. Po dokonaniu modyfikacji, można utworzyć organizacyjnej content pack oraz pulpitu nawigacyjnego, które zawierają informacje, które zostały dodane.
+Te jednostki zostały użyte do utworzenia obliczanych miar. Następnie obliczane miary są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości. Jeśli chcesz umieścić dodatkowe obliczenia w raportach i na pulpicie nawigacyjnym, możesz z usługi LCS pobrać plik Recruiting.pbix i go zmodyfikować. Ten plik jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości. Po wprowadzeniu wszystkich modyfikacji można utworzyć organizacyjny pakiet zawartości i pulpit nawigacyjny, który zawiera dodane informacje.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworzenia zawartości w narzędziu Power BI:
@@ -75,6 +78,8 @@ Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworze
 -   [Tworzenie organizacyjnych pakietów zawartości](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Modelowanie danych przy użyciu narzędzia Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Dodawanie kafelków narzędzia Power BI do obszarów roboczych](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+
+
 
 
 

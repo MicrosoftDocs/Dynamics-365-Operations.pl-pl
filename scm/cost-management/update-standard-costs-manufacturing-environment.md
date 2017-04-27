@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-in-a-manufacturing-environment"></a>Aktualizacja kosztów standardowych w środowisku produkcyjnym
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera wskazówki dotyczące aktualizowania kosztów standardowych w środowisku produkcyjnym. 
 
 Aktualizacje mogą odzwierciedlać nowe towary, kategorie kosztów lub wzory obliczania kosztów pośrednich. Mogą także wynikać z korekt i zmian kosztów. Typ aktualizacji wpływa na czynności, jakie trzeba wykonać w celu aktualizacji kosztów standardowych, co przedstawiono w poniższych przypadkach:
@@ -43,5 +46,7 @@ Aktualizacje mogą odzwierciedlać nowe towary, kategorie kosztów lub wzory obl
 -   Obliczenie kosztów nowo produkowanego towaru na podstawie zdefiniowanej, zatwierdzonej i aktywnej listy BOM oraz informacji o marszrucie.
 
 Każdy przykład wymaga specyficznego sposobu aktualizacji kosztów standardowych.
+
+
 
 

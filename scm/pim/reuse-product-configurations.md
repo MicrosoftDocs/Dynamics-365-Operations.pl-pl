@@ -1,5 +1,5 @@
 ---
-title: "Użyj ponownie konfiguracji produktu"
+title: "Ponowne wykorzystywanie konfiguracji produktów"
 description: "Możesz określić, że chcesz automatycznie ponownie używać istniejącej konfiguracji produktu. Wtedy gdy użytkownik zakończy sesję konfiguracji, system sprawdzi, czy już istnieje konfiguracja odpowiadająca opcjom wybranym przez użytkownika. Jeśli znajdzie pasującą konfigurację, ponownie wykorzysta identyfikator konfiguracji, odnośną listę składową (BOM) i marszrutę."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reuse-product-configurations"></a>Użyj ponownie konfiguracji produktu
+# <a name="reuse-product-configurations"></a>Ponowne wykorzystywanie konfiguracji produktów
+
+[!include[banner](../includes/banner.md)]
+
 
 Możesz określić, że chcesz automatycznie ponownie używać istniejącej konfiguracji produktu. Wtedy gdy użytkownik zakończy sesję konfiguracji, system sprawdzi, czy już istnieje konfiguracja odpowiadająca opcjom wybranym przez użytkownika. Jeśli znajdzie pasującą konfigurację, ponownie wykorzysta identyfikator konfiguracji, odnośną listę składową (BOM) i marszrutę.
 
@@ -41,5 +44,7 @@ Aby umożliwić ponowne wykorzystywanie konfiguracji, należy określić następ
 
 ## <a name="resetting-configuration-reuse"></a>Resetowanie ponownego wykorzystywania konfiguracji
 Po zresetowaniu funkcji ponownego wykorzystywania konfiguracji wcześniej utworzone konfiguracje nie są już brane pod uwagę. Funkcję można resetować na przykład w sytuacji, gdy zmieniła się specyfikacja BOM lub marszruta, ale powiązane atrybuty nie uległy zmianie. Resetowanie ponownego używania konfiguracji odbywa się skróconej karcie **Ogólne** dla składnika.
+
+
 
 

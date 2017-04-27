@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-collaboration-with-external-vendors"></a>Współpraca z zewnętrznymi dostawcami
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym temacie opisano, jak pracownicy działu zakupów mogą współpracować z zewnętrznymi dostawcami w celu wymiany informacji o zamówieniach zakupu i zapasach konsygnacyjnych.
 
 Moduł **Portal współpracy z dostawcami** jest przeznaczony dla dostawców, którzy nie ma mają systemów elektronicznej wymiany danych (EDI) zintegrowanych z programem Microsoft Dynamics 365 for Operations. Umożliwia on dostawcom pracę z zamówieniami zakupu, fakturami i zapasami konsygnacyjnymi. W tym temacie opisano możliwości współpracy z zewnętrznymi dostawcami, którzy używają interfejsu współpracy z dostawcami do wykonywania operacji na zamówieniach zakupu i zapasach konsygnacyjnych. Omówiono także sposoby konfigurowania określonych dostawców do używania portalu współpracy z dostawcami oraz sposoby definiowania informacji wyświetlanych wszystkim dostawcom podczas odpowiadania na zamówienie zakupu. Aby uzyskać więcej informacji o tym, co zewnętrzni dostawcy mogą robić w interfejsie współpracy z dostawcami, zobacz [Współpraca dostawców z odbiorcami](vendor-collaboration-work-customers-dynamics-365-operations.md).  
@@ -64,11 +67,11 @@ Jeśli za pośrednictwem interfejsu współpracy chcesz udostępnić informacje 
 ## <a name="work-with-pos-when-using-vendor-collaboration"></a>Praca z zamówieniami zakupu podczas używania portalu współpracy z dostawcami
 ### <a name="sending-a-po-to-the-vendor"></a>Wysyłanie zamówienia zakupu do dostawcy
 
-Zamówienia zakupu są przygotowywane w programie Dynamics 365 for Operations. Gdy organizacja producentów ma stan **zatwierdzone**, wysłać go do dostawcy przy użyciu ** Wyślij potwierdzenie ** akcji na **zamówienie zakupu** strony. Stan zamówienia zakupu zmieni się na **W trakcie analizy zewnętrznej**. Po wysłaniu zamówienia zakupu dostawca widzi je na stronie **Zamówienia zakupu do przeglądu** w interfejsie współpracy z dostawcami, gdzie może je zaakceptować, odrzucić lub zasugerować jego modyfikację. Dostawca może również dodać komentarze w celu przekazania informacji, np. o zmianach w zamówieniu zakupu. Jeśli chcesz zwrócić uwagę dostawcy na nowe zamówienie zakupu, możesz je wysłać e-mailem z systemu zarządzania drukowaniem.
+Zamówienia zakupu są przygotowywane w programie Dynamics 365 for Operations. Gdy zamówienie zakupu ma stan **Zatwierdzone**, można je wysłać do dostawcy za pomocą akcji **Wyślij w celu potwierdzenia** dostępnej na stronie **Zamówienie zakupu**. Stan zamówienia zakupu zmieni się na **W trakcie analizy zewnętrznej**. Po wysłaniu zamówienia zakupu dostawca widzi je na stronie **Zamówienia zakupu do przeglądu** w interfejsie współpracy z dostawcami, gdzie może je zaakceptować, odrzucić lub zasugerować jego modyfikację. Dostawca może również dodać komentarze w celu przekazania informacji, np. o zmianach w zamówieniu zakupu. Jeśli chcesz zwrócić uwagę dostawcy na nowe zamówienie zakupu, możesz je wysłać e-mailem z systemu zarządzania drukowaniem.
 
 ### <a name="confirmation-and-acceptance-of-the-po-by-the-vendor"></a>Potwierdzanie i akceptacja zamówienia zakupu przez dostawcę
 
-Gdy dostawca zaakceptuje zamówienie zakupu, może ono zostać potwierdzone automatycznie lub wymagać ręcznego potwierdzenia. To zależy od tego, czy ** aktywacji dostawcy ** pole jest ustawione na **Active (zamówienia zakupu jest potwierdzone auto)** dla dostawcy lub na **Active (zamówienia zakupu nie jest potwierdzone auto)**.  
+Gdy dostawca zaakceptuje zamówienie zakupu, może ono zostać potwierdzone automatycznie lub wymagać ręcznego potwierdzenia. Zależy to od tego, czy dla dostawcy w polu **Aktywacja dostawcy** ustawiono opcję **Aktywna (zamówienie zakupu zostało automatycznie potwierdzone)**, czy **Aktywna (zamówienie zakupu nie zostało automatycznie potwierdzone)**.  
 
 W poniższej tabeli przedstawiono typową wymianę informacji, w zależności od odpowiedzi dostawcy na wysłanie mu zamówienia zakupu do potwierdzenia.
 
@@ -95,19 +98,19 @@ W poniższej tabeli przedstawiono typową wymianę informacji, w zależności od
 <td>Odpowiedź dostawcy zostanie zarejestrowana jako <strong>Odrzucone</strong>, a zamówienie zakupu będzie nadal miało stan <strong>W trakcie analizy zewnętrznej</strong>. Odrzucenie jest odbierane razem z notatkami dostawcy.</td>
 </tr>
 <tr class="odd">
-<td>Dostawca <strong>akceptuje zamówienia ze zmianami</strong>. Zmiany sugerowane są na poziomie wiersza. Istnieje możliwość zaakceptowania lub odrzucenia poszczególnych wierszy. Inne możliwe zmiany:
+<td>Dostawca <strong>akceptuje zamówienie ze zmianami</strong>. Zmiany są sugerowane na poziomie wierszy. Istnieje możliwość zaakceptowania lub odrzucenia poszczególnych wierszy. Inne możliwe zmiany:
 <ul>
 <li>Zmiana dat lub ilości.</li>
 <li>Podział wierszy dla różnych dat dostawy lub ilości.</li>
 <li>Zastąpienie towaru.</li>
 </ul>
 Informacje o cenach i opłatach nie mogą być zmieniane przez dostawcę. Sugestie dotyczące zmian mogą być dokonywane za pomocą notatek.</td>
-<td>Odpowiedź dostawcy jest rejestrowana jako <strong>zaakceptowane zmiany</strong>, <strong></strong>i pozostaje w stanie PO <strong>w zewnętrznych Przegląd</strong>.</td>
+<td>Odpowiedź dostawcy zostanie zarejestrowana jako <strong>Zaakceptowano ze zmianami</strong>, <strong></strong>a zamówienie zakupu będzie nadal miało stan <strong>W trakcie analizy zewnętrznej</strong>.</td>
 </tr>
 </tbody>
 </table>
 
-Można użyć **zamówienia zakupu****przygotowania** obszaru roboczego monitorowanie którym POs dostawca odpowiedział na. Ten obszar roboczy zawiera dwie listy, które zawierają zamówień zakupu ze stanem **w zewnętrznych Przegląd**:
+Można użyć obszaru roboczego **Przygotowanie** **zamówienia zakupu** do monitorowanie, na które zamówienia zakupu dostawca odpowiedział. Ten obszar roboczy zawiera dwie listy z zamówieniami zakupu o stanie **W trakcie analizy zewnętrznej**:
 
 -   W trakcie przeglądu zewnętrznego (wymaga wykonania akcji).
 -   W trakcie analizy zewnętrznej, oczekuje na odpowiedź dostawcy.
@@ -125,7 +128,7 @@ Po anulowaniu zamówienia zakupu jego stan zmienia się na **Zatwierdzone**. Zam
 Za pomocą systemu zarządzania dokumentami można do zamówienia zakupu dodawać załączniki, takie jak pliki, obrazy i notatki. Załączniki dodane z ograniczeniem typu **Zewnętrzne** będą widoczne dla dostawcy po wysłaniu mu zamówienia zakupu.
 
 ## <a name="purchase-order-statuses-and-versions"></a>Stan i wersje zamówienia zakupu
-W tej sekcji opisano różne stany, które może przyjmować zamówienie zakupu do momentu potwierdzenia, oraz wyjaśniono, w którym punkcie nowe wersje zamówienia zakupu są udostępniane dostawcy. Istnieją różnice w tym, w zależności od tego, czy używasz zarządzania zmianami dla zamówień zakupu. 
+W tej sekcji opisano różne stany, które może przyjmować zamówienie zakupu do momentu potwierdzenia, oraz wyjaśniono, w którym punkcie nowe wersje zamówienia zakupu są udostępniane dostawcy. Istnieją tutaj różnice w zależności od tego, czy do zamówień zakupu jest stosowany proces zarządzania zmianami. 
 
 ### <a name="versions-and-statuses-if-you-dont-use-change-management"></a>Wersji i stany, jeśli nie jest używane zarządzanie zmianami
 
@@ -168,6 +171,8 @@ Jeśli używasz zapasów konsygnacyjnych, dostawcy mogą w interfejsie współpr
 -   **Zamówienia zakupu zużywające zapasy konsygnacyjne** — Zamówienia zakupu dla zapasów konsygnacyjnych są generowane po zmianie właściciela zapasów z dostawcy na Twoją firmę. W tym samym momencie jest księgowany dokument przyjęcia produktów. Te zamówienia zakupu konsygnacyjnego są wyświetlane tylko na stronie **Zamówienia zakupu zużywające zapasy konsygnacyjne**. Nie są one umieszczane na stronie **Wszystkie potwierdzone zamówienia zakupu** w module **Portal współpracy z dostawcami**.
 -   **Produkty odebrane z zapasów konsygnacyjnych** — Na tej stronie znajduje się lista wszystkich transakcji, w których własność produktów została przeniesiona z dostawcy na Twoją firmę. Dostawcy mogą używać tych informacji do fakturowania odbiorcy.
 -   **Dostępne zapasy konsygnacyjne** — Na tej stronie są pokazane dostępne zapasy konsygnacyjne będące własnością dostawcy, które przyjęto do magazynu.
+
+
 
 
 

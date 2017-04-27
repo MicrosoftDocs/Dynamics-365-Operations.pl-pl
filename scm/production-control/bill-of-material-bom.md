@@ -1,6 +1,6 @@
 ---
 title: "Listy składowe (BOM) i formuły"
-description: "Ten artykuł zawiera informacje o rachunkach komponentów (BOM-ów) i formuł, które są środkowej części definicji produktów i wariantów produktu. BOM-ów i formuły określ wymagane materiały lub składniki do określonego produktu. Formuły określają również produktów towarzyszących i ubocznych, które są odbierane w kontekście określony proces produkcji."
+description: "Ten artykuł zawiera informacje o listach składowych (BOM) i formułach, które są najważniejszymi elementami definicji produktów i wariantów produktów. Listy BOM i formuły określają wymagane materiały lub składniki dla określonego produktu. Formuły określają również produkty towarzyszące i uboczne uzyskiwane w określonym kontekście produkcji."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bills-of-materials-and-formulas"></a>Listy składowe (BOM) i formuły
 
-Ten artykuł zawiera informacje o rachunkach komponentów (BOM-ów) i formuł, które są środkowej części definicji produktów i wariantów produktu. BOM-ów i formuły określ wymagane materiały lub składniki do określonego produktu. Formuły określają również produktów towarzyszących i ubocznych, które są odbierane w kontekście określony proces produkcji. 
+[!include[banner](../includes/banner.md)]
+
+
+Ten artykuł zawiera informacje o listach składowych (BOM) i formułach, które są najważniejszymi elementami definicji produktów i wariantów produktów. Listy BOM i formuły określają wymagane materiały lub składniki dla określonego produktu. Formuły określają również produkty towarzyszące i uboczne uzyskiwane w określonym kontekście produkcji. 
 
 <a name="bills-of-materials"></a>BOM
 ------------------
@@ -38,7 +41,7 @@ Lista składowa (BOM) określa składniki, które są wymagane do wytworzenia pr
 
 Jeśli lista składowa jest połączona z marszrutą lub przepływem produkcji, który określa operacje i zasoby potrzebne do wytworzenia produktu, wówczas BOM stanowi podstawę obliczania szacowanego kosztu produktu.  
 
-BOM-u jest pojedyncze jednostki, która jest opisana przez następujące informacje:
+BOM jest osobną jednostką opisaną przy użyciu następujących informacji:
 
 -   Identyfikator BOM
 -   Nazwa BOM
@@ -49,7 +52,7 @@ Pojedyncza lista składowa określa jeden poziom identyfikowany przez unikatowy 
 
 ### <a name="formulas-co-products-and-by-products"></a>Formuły, produkty towarzyszące i produkty uboczne
 
-Formuła jest podtypem BOM, który jest zwykle stosowany do procesu produkcji. Oprócz składników i substancji formuła opisuje produkty towarzyszące i produkty uboczne. W aktualnej wersji definicji produktów towarzyszących i ubocznych formuły wymaga wersji formuły. Formuła jest zazwyczaj zdefiniowany dla jednego konkretnego produktu gotowego (formuła lub element planowania) zdefiniowanego w wersji formuły.
+Formuła jest podtypem BOM, który jest zwykle stosowany do procesu produkcji. Oprócz składników i substancji formuła opisuje produkty towarzyszące i produkty uboczne. W bieżącej wersji definicja produktów towarzyszących i ubocznych dla formuły wymaga wersji formuły. Formuła jest zwykle definiowana dla jednego określonego wyrobu gotowego (formuły lub element planowania) zdefiniowanego w wersji formuły.
 
 ### <a name="boms-in-the-product-lifecycle"></a>BOM w cyklu życia produktu
 
@@ -61,7 +64,7 @@ W cyklu życia produktu mogą być tworzone różne BOM z różnych przyczyn:
 -   **BOM produkcji** — jest to rzeczywista lista składowa używana dla określonej produkcji. BOM produkcji musi brać pod uwagę rzeczywiste zasoby, które służą do wytworzenia produktu. Podczas tworzenia zlecenia produkcyjnego, zamówienia partii lub kanban, następuje połączenie wielu poziomów BOM reprezentowanych przez fantomy. Następnie są przekazywane do operacji w ramach zamówienia.
 -   **BOM wyceny** — ta lista składowa jest używana do obliczania szacowanego kosztu produktu. Na przykład, możesz użyć BOM wyceny, gdy używany jest koszt standardowy lub jest obliczany szacowany planowany koszt danego produktu. BOM wyceny może się odnosić do określonej kombinacji materiałów i zasobów, która ma zostać użyta. W związku z tym można użyć BOM wyceny do utworzenia reprezentatywnego szacowanego kosztu dla okresu i zapobiegania powstawaniu rozbieżności w czasie.
 
-Rodzaje BOM, które są faktycznie używane w celu wykonania zależy od wykonania oraz również scenariusze biznesowe i wymagania. W prostych implementacjach BOM odnoszące się do planowania, produkcji i wyceny można łączyć w jedną listę składową. W środowiskach, które wymagają częstych zmian inżynieryjnych i wielu alternatywnych marszrut, zazwyczaj konieczne jest używanie bardziej złożonego zestawu list składowych.
+Typy BOM, które są używane w implementacji, zależą od implementacji oraz scenariuszy i wymagań biznesowych. W prostych implementacjach BOM odnoszące się do planowania, produkcji i wyceny można łączyć w jedną listę składową. W środowiskach, które wymagają częstych zmian inżynieryjnych i wielu alternatywnych marszrut, zazwyczaj konieczne jest używanie bardziej złożonego zestawu list składowych.
 
 ### <a name="approval-of-boms-and-formulas"></a>Zatwierdzenie BOM i formuły
 
@@ -78,7 +81,7 @@ Wersja BOM musi zostać zatwierdzona, żeby można było jej użyć w procesie p
 
 ### <a name="activation-of-the-default-bom-or-formula-version"></a>Aktywacja domyślnej wersji BOM lub formuły
 
-Aby ustawić określoną BOM lub formułę jako wersję domyślną, która będzie używana w planowaniu głównym lub do tworzenia zleceń produkcyjnych, trzeba aktywować tę wersję. Uaktywnienie wersji jest weryfikowana unikatowości wersji dla danego ograniczenia (na przykład, okres, witryny lub ilości). Zostanie wyświetlony komunikat o błędzie, jeśli wersja, że próbujesz uaktywnić powoduje konflikt z wersją który jest już aktywny. Należy następnie zdezaktywować wersję powodującą konflikt lub zmodyfikować jej ograniczenia (zwykle okres), aby uniknąć niejednoznacznej aktywacji.
+Aby ustawić określoną BOM lub formułę jako wersję domyślną, która będzie używana w planowaniu głównym lub do tworzenia zleceń produkcyjnych, trzeba aktywować tę wersję. Po uaktywnieniu wersji jest weryfikowana unikatowości wersji dla danych ograniczeń (na przykład okresu, oddziału lub ilości). Jeśli wersja, którą próbujesz uaktywnić, powoduje konflikt z wersją już aktywną, zostanie wyświetlony komunikat o błędzie. Należy następnie zdezaktywować wersję powodującą konflikt lub zmodyfikować jej ograniczenia (zwykle okres), aby uniknąć niejednoznacznej aktywacji.
 
 ### <a name="product-change-with-case-management"></a>Zmiany w produkcie z zarządzaniem sprawą
 
@@ -114,5 +117,7 @@ Wybierz** ustalana dostaw** typ wiersza, aby utworzyć produkcję podrzędną, k
 Wybierz typ wiersza **Dostawca**, jeśli w procesie produkcji występuje podwykonawca i trzeba automatycznie utworzyć produkcję podrzędną lub zlecenie zakupu dla podwykonawcy.  
 
 **Uwaga na temat operacji produkcji podrzędnej w BOM:** usługi lub praca wykonywane przez podwykonawcę należy utworzyć jako usługę, która jest śledzona w magazynie. Usługę należy dołączyć do elementu nadrzędnego jako wiersz BOM. Marszruta musi zawierać operację przypisaną do zasobu operacyjnego podwykonawcy.
+
+
 
 

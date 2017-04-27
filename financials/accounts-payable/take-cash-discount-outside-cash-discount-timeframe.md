@@ -1,5 +1,5 @@
 ---
-title: "Wziąć rabatu gotówkowego poza okres rabatu gotówkowego"
+title: "Zastosowanie rabatu gotówkowego poza okresem rabatu gotówkowego"
 description: "Ten artykuł zawiera dwa scenariusze pokazujące stosowanie rabatu gotówkowego nawet w przypadku, gdy płatność jest dokonywana poza okresem rabatu gotówkowego."
 author: twheeloc
 manager: AnnBe
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Wziąć rabatu gotówkowego poza okres rabatu gotówkowego
+# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Zastosowanie rabatu gotówkowego poza okresem rabatu gotówkowego
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł zawiera dwa scenariusze pokazujące stosowanie rabatu gotówkowego nawet w przypadku, gdy płatność jest dokonywana poza okresem rabatu gotówkowego.
 
-W dniu 28 czerwca kwietnia tworzy fakturę dla 2,000.00 dla dostawcy 3052. Faktura ma rabat gotówkowy, % 1, jeśli faktura jest zapłacona w ciągu 14 dni.
+28 czerwca April tworzy fakturę na kwotę 2000,00 dla dostawcy 3052. Faktura ma rabat gotówkowy w wysokości 1%, jeśli faktura jest zapłacona w ciągu 14 dni.
 
 ## <a name="use-cash-discount-option--always"></a>Użyj opcji rabatu gotówkowego = Zawsze
 April tworzy płatność 1 lipca — po dacie rabatu. April otwiera stronę **Rozliczenia transakcji**, aby wyświetlić transakcje, które można rozliczyć. 
 
-Oznacza fakturę do płatności. Rabat gotówkowy nie jest pobierany, ponieważ płatność przypada po dacie rabatu. Jednak dostawca wyraził zatwierdzenia kwietnia do rabatu gotówkowego mimo to. W związku z tym kwietnia zostanie zmieniona wartość w **Użyj rabatu gotówkowego** na **zawsze**.
+Oznacza fakturę do płatności. Rabat gotówkowy nie jest pobierany, ponieważ płatność przypada po dacie rabatu. Jednak dostawca wyraził zgodę na zastosowanie przez April z rabatu gotówkowego mimo to. Zatem April zmienia wartość w polu **Użyj rabatu gotówkowego** na **Zawsze**.
 
 | Zaznacz     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data rabatu gotówkowego | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |----------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
@@ -85,6 +88,8 @@ Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwa
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | 0,00      |
 | Kwota rabatu gotówkowego do pobrania | -5,05     |
+
+
 
 
 

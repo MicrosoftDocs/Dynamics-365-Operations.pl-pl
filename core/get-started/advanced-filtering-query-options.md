@@ -1,5 +1,5 @@
 ---
-title: "Zaawansowane filtrowanie i składni zapytań"
+title: "Składnia zaawansowanego filtrowania i zapytań"
 description: "W tym artykule opisano opcje filtrowania i kwerend dostępne dla operatora „dopasowania” w oknie dialogowym Zaawansowany filtr/sortowanie."
 author: jasongre
 manager: AnnBe
@@ -25,11 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="advanced-filtering-and-query-syntax"></a>Zaawansowane filtrowanie i składni zapytań
+# <a name="advanced-filtering-and-query-syntax"></a>Składnia zaawansowanego filtrowania i zapytań
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule opisano opcje filtrowania i kwerend dostępne dla operatora „dopasowania” w oknie dialogowym Zaawansowany filtr/sortowanie.
 
-<a name="advanced-query-syntax"></a>Składnia kwerendy zaawansowane
+<a name="advanced-query-syntax"></a>Składnia zaawansowanych zapytań
 ---------------------
 
 <table>
@@ -52,79 +55,79 @@ W tym artykule opisano opcje filtrowania i kwerend dostępne dla operatora „do
 <td><em>wartość</em></td>
 <td>Równa wartości, która została wprowadzona.</td>
 <td>Wpisz wartość, którą chcesz znaleźć.</td>
-<td><strong>Smith</strong> znajdzie &quot;Smith&quot;.</td>
+<td>Wyrażenie <strong>Nowak</strong> pozwala wyszukać wartość &quot;Nowak&quot;.</td>
 </tr>
 <tr class="even">
-<td>! <em>wartość</em> (wykrzyknik)</td>
+<td>!<em>wartość</em> (wykrzyknik)</td>
 <td>Nie równa wartości, która została wprowadzona.</td>
 <td>Wpisz wykrzyknik i wartość którą chcesz wykluczyć.</td>
-<td><strong>! Smith</strong> pozwala wyszukać wszystkie wartości z wyjątkiem &quot;Smith&quot;.</td>
+<td>Wyrażenie <strong>!Nowak</strong> pozwala wyszukać wszystkie wartości z wyjątkiem &quot;Nowak&quot;.</td>
 </tr>
 <tr class="odd">
 <td><em>Od</em>..<em>Do</em> (dwie kropki)</td>
 <td>Między wartościami rozdzielonymi dwoma kropkami</td>
 <td>Wpisz wartość Od, a po niej dwie kropki i wartość Do.</td>
-<td><strong>1..10</strong> pozwala wyszukać wszystkie wartości od 1 do 10. Jednak w polu ciąg <strong>A.. C</strong> pozwala wyszukać wszystkie wartości zaczynające się &quot;A&quot; i &quot;B&quot;i wartości, które są dokładnie równe &quot;C&quot;. Na przykład, ta kwerenda nie znajdziesz &quot;Ca&quot;. Aby wyszukać wszystkie wartości od &quot;A*&quot; przez &quot;C*&quot;, typ <strong>A.. D</strong>.</td>
+<td>Wyrażenie <strong>1..10</strong> pozwala wyszukać wszystkie wartości od 1 do 10. Jednakże w polu tekstowym wyrażenie <strong>A..C</strong> pozwala wyszukać wszystkie wartości rozpoczynające się od &quot;A&quot; i &quot;B&quot; oraz dokładnie równe &quot;C&quot;. To zapytanie nie pozwala na przykład znaleźć wyrażenia &quot;Ca&quot;. Aby wyszukać wszystkie wartości od &quot;A*&quot; do &quot;C*&quot; włącznie, wpisz <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>wartość</em> (dwie kropki)</td>
 <td>Mniejsze lub równe wprowadzonej wartości</td>
 <td>Wpisz dwie kropki, a następnie wartość.</td>
-<td><strong>.. 1000</strong> pozwala wyszukać wszystkie liczby, która jest mniejsza lub równa 1000, takich jak &quot;100&quot;, &quot;999.95&quot;, i &quot;1000&quot;.</td>
+<td>Wyrażenie <strong>..1000</strong> pozwala wyszukać dowolną liczbę mniejszą lub równą 1000, na przykład &quot;100&quot;, &quot;999,95&quot; i &quot;1000&quot;.</td>
 </tr>
 <tr class="odd">
 <td><em>wartość</em>.. (dwie kropki)</td>
 <td>Większe lub równe wprowadzonej wartości</td>
 <td>Wpisz wartość, a po niej dwie kropki.</td>
-<td><strong>1000..</strong> Pozwala wyszukać wszystkie liczby, które jest większe niż lub równe 1000, takich jak &quot;1000&quot;, &quot;1 000,01&quot;, i &quot;1 000 000&quot;.</td>
+<td>Wyrażenie <strong>1000..</strong> pozwala wyszukać dowolną liczbę większą lub równą 1000, na przykład &quot;1000&quot;, &quot;1000,01&quot; i &quot;1 000 000&quot;.</td>
 </tr>
 <tr class="even">
-<td>&gt;<em>wartość</em> (znak większe niż)</td>
+<td>&gt;<em>wartość</em> (znak „większe niż”)</td>
 <td>Większe od wprowadzonej wartości</td>
-<td>Wpisz znak większości (<strong>&gt;</strong>) i wartość.</td>
-<td><strong>&gt;1000</strong> pozwala wyszukać wszystkie liczby, która jest większa niż 1000, takich jak &quot;1000,01&quot;, &quot;20 000&quot;, i &quot;1 000 000&quot;.</td>
+<td>Wpisz znak „większe niż” (<strong>&gt;</strong>), a następnie wartość.</td>
+<td>Wyrażenie <strong>&gt;1000</strong> pozwala wyszukać dowolną liczbę większą niż 1000, np. &quot;1000,01&quot;, &quot;20 000&quot; i &quot;1 000 000&quot;.</td>
 </tr>
 <tr class="odd">
-<td>&lt;<em>wartość</em> (znak mniejszości)</td>
+<td>&lt;<em>wartość</em> (znak „mniejsze niż”)</td>
 <td>Mniejsze od wprowadzonej wartości</td>
-<td>Wpisz mniej niż znak (<strong>&lt;</strong>) i wartość.</td>
-<td><strong>&lt;1000</strong> pozwala wyszukać wszystkie liczby, która jest mniejsza niż 1000, takich jak &quot;999.99&quot;, &quot;1&quot;, i &quot;-200&quot;.</td>
+<td>Wpisz znak „mniejsze niż” (<strong>&lt;</strong>), a następnie wartość.</td>
+<td>Wyrażenie <strong>&lt;1000</strong> pozwala wyszukać dowolną liczbę mniejszą niż 1000, np. &quot;999,99&quot;, &quot;1&quot; i &quot;-200&quot;.</td>
 </tr>
 <tr class="even">
 <td><em>wartość</em>* (gwiazdka)</td>
 <td>Począwszy od wprowadzonej wartości</td>
 <td>Wpisz wartość początkową, a następnie gwiazdkę (<strong>*</strong>).</td>
-<td><strong>S *</strong> wyszukuje dowolny ciąg znaków, który rozpoczyna się od &quot;S&quot;, takich jak &quot;Sztokholm&quot;, &quot;Sydney&quot;, i &quot;San Francisco&quot;.</td>
+<td>Wyrażenie <strong>S*</strong> pozwala wyszukać wszystkie ciągi znaków rozpoczynające się literą &quot;S&quot;, takie jak &quot;Sztokholm&quot;, &quot;Sydney&quot; i &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>value</em> (asterisk)</td>
+<td>*<em>wartość</em> (gwiazdka)</td>
 <td>Kończące się wprowadzoną wartością</td>
 <td>Wpisz gwiazdkę, a następnie wartość końcową.</td>
-<td><strong>* east</strong> wyszukuje dowolny ciąg, który kończy się na &quot;Wschodniej&quot;, takich jak &quot;północno-wschodniej&quot; i &quot;Południowo-Wschodniej&quot;.</td>
+<td>Wyrażenie <strong>*chód</strong> pozwala wyszukać wszystkie ciągi znaków kończące się literami &quot;chód&quot;, takie jak &quot;Wschód&quot; i &quot;Zachód&quot;.</td>
 </tr>
 <tr class="even">
 <td>*<em>wartość</em>* (gwiazdka)</td>
 <td>Zawiera wprowadzoną wartość</td>
 <td>Wpisz gwiazdkę, a po niej wartość i kolejną gwiazdkę.</td>
-<td><strong>*TH*</strong> wyszukuje dowolny ciąg, który zawiera &quot;th&quot;, takich jak &quot;północno-wschodniej&quot; i &quot;Południowo-Wschodniej&quot;.</td>
+<td>Wyrażenie <strong>*ch*</strong> pozwala wyszukać wszystkie ciągi znaków zawierające litery &quot;ch&quot;, takie jak &quot;Wschód&quot; i &quot;Zachód&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (pytajnik)</td>
 <td>Posiadające co najmniej jeden nieznany znak.</td>
 <td>Wpisz pytajnik w miejscu nieznanego znaku w wartości.</td>
-<td><strong>Sm? th</strong> znajdzie &quot;Smith&quot; i &quot;Smyth&quot;.</td>
+<td>Wyrażenie <strong>Now?k</strong> pozwala wyszukać &quot;Nowak&quot; i &quot;Nowik&quot;.</td>
 </tr>
 <tr class="even">
 <td><em>wartość</em>,<em>wartość</em> (przecinek)</td>
 <td>Zgodne z wprowadzonymi wartościami, rozdzielonymi przecinkami</td>
 <td>Wpisz wszystkie kryteria, rozdzielając je przecinkami.</td>
-<td><strong>A, D, F, G</strong> finds exactly &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, and &quot;G&quot;. <strong>10, 20, 30, 100</strong> pozwala wyszukać dokładnie &quot;10, 20, 30, 100&quot;.</td>
+<td>Wyrażenie <strong>A, D, F, G</strong> pozwala wyszukać dokładnie &quot;A&quot;, &quot;D&quot;, &quot;F&quot; i &quot;G&quot;. Wyrażenie <strong>10, 20, 30, 100</strong> pozwala wyszukać dokładnie &quot;10, 20, 30, 100&quot;.</td>
 </tr>
 <tr class="odd">
 <td>(<span class="code">Instrukcji SQL</span>) (Instrukcja SQL w nawiasach okrągłych)</td>
 <td>Zgodne ze wskazaną kwerendą.</td>
 <td>Wpisz kwerendę jako instrukcję SQL w nawiasach okrągłych.</td>
-<td><strong><span class="code">(źródło danych. Nazwa pola! = &quot;A&quot;)</span></strong></td>
+<td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
 </tr>
 <tr class="even">
 <td>W</td>
@@ -137,7 +140,7 @@ W tym artykule opisano opcje filtrowania i kwerend dostępne dla operatora „do
 <td>Dopasowanie wartości lub zakresu wartości określonych przez parametry metody <strong>SysQueryRangeUtil</strong></td>
 <td>Wpisz metodę <strong>SysQueryRangeUtil</strong> z parametrami, które określają wartość lub zakres wartości.</td>
 <td><ol>
-<li>Kliknij <strong>rozrachunków z odbiorcami</strong>&gt;<strong>faktury</strong>&gt;<strong>Otwórz faktury odbiorców</strong>.</li>
+<li>Kliknij kolejno opcje <strong>Rozrachunki z odbiorcami</strong> &gt; <strong>Faktury</strong> &gt; <strong>Otwarte faktury odbiorcy</strong>.</li>
 <li>Naciśnij kombinację klawiszy Ctrl + Shift + F3, aby otworzyć stronę <strong>Informacje</strong>.</li>
 <li>Na karcie <strong>Zakres</strong> kliknij przycisk <strong>Dodaj</strong>.</li>
 <li>W polu <strong>Tabela</strong> wybierz <strong>Otwarte transakcje odbiorcy</strong>.</li>
@@ -228,6 +231,8 @@ Zobacz tabelę w następnej sekcji, aby uzyskać szczegóły o metodzie wprowadz
 </tr>
 </tbody>
 </table>
+
+
 
 
 

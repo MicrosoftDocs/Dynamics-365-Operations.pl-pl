@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-and-sourcing-overview"></a>Omówienie zaopatrzenia i sourcingu
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie funkcji dostępnych w module Zaopatrzenie i sourcing.
 
 Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na produkty i usługi przez zakup produkty, odebranie, fakturowanie i przetwarzanie płatności z dostawcami. Procesy zaopatrzenia można skonfigurować według konkretnych potrzeb biznesowych, definiując zasady i przepływy pracy związane z zaopatrzeniem.
@@ -37,14 +40,14 @@ Popyt na produkty i usługi może wynika z *zapotrzebowania* — na przykład je
   
 Dział zaopatrzenia identyfikuje dostawców dla wymaganych produktów i usług, i może to być związane z wysłaniem *zapytania ofertowego* do wielu potencjalnych dostawców. Istnieje możliwość udostępniania specyfikacji żądanego produktu i potencjalni dostawcy można je wyświetlić, jeśli są w stanie dostarczyć produkt, który jest z nimi zgodny. Dostawcy odsyłają oferty, a dział zaopatrzenia przegląda je i dokonuje ostatecznego wyboru dostawcy.  
 
-Zamiast złożonego zapytania ofertowego w ramach zamówienia zakupu można wysłać do dostawcy *zapytanie dotyczące zakupu*. Pomaga ono w ustalaniu różnego rodzaju warunków, takich jak ceny, rabaty i data dostawcy dla zamówienia. Jeśli dostawców są ustawione aby użyć **dostawcy** portal, * * zakupu zapytanie funkcja jest wyłączona. Zamiast tego zamówienie jest udostępniane w portalu **Dostawca** i gdy *prośba o potwierdzenie* jest wysyłana, dostawca może bezpośrednio potwierdzić zamówienie.  
+Zamiast złożonego zapytania ofertowego w ramach zamówienia zakupu można wysłać do dostawcy *zapytanie dotyczące zakupu*. Pomaga ono w ustalaniu różnego rodzaju warunków, takich jak ceny, rabaty i data dostawcy dla zamówienia. Jeśli dostawcy mogą korzystać z portalu **Dostawca**,** funkcja zapytań dotyczących zakupu jest wyłączona. Zamiast tego zamówienie jest udostępniane w portalu **Dostawca** i gdy *prośba o potwierdzenie* jest wysyłana, dostawca może bezpośrednio potwierdzić zamówienie.  
 
 *Katalogi dostawcy *mogą być używane do zbierania informacji o asortymencie produktów, który dostawca może dostarczyć. Dostawcy mogą publikować własne katalogi, co ułatwia aktualizowanie oferty. Do produktu można dołączyć *listę zatwierdzonych dostawców* i może ona ułatwić w wyborze dostawcy podczas otwierania nowych zamówień zakupu i zapobiegać korzystaniu z usług niepożądanych dostawców.
 
 ## <a name="procurement"></a>Zaopatrzenie
 *Zamówienia zakupu *można tworzyć na wiele różnych sposobów, w tym:
 
--   W rezultacie planowania, które ma określone żądanie głównego, który wymaga zakupu. Ten proces generuje planowanych zamówień zakupu i gdy są one zwolnione, zamówienia zakupu są generowane.
+-   Jako wynik planowania głównego, które zostało zidentyfikowane jako popyt wymagający zakupu. Ten proces generuje planowane zamówienia zakupu, a kiedy te są zwalniane, generowane są zamówienia zakupu.
 -   Przez przetworzenie zapotrzebowania na zakup, którego efektem jest zakup.
 -   Przez przetwarzanie zamówienia zakupu, gdzie zamówienia zakupu są tworzone jako zamówienia zwolnienia z umów. Jest to powszechnie używane, gdy umowy zakupu służą za zamówienia zbiorcze.
 -   Ręcznie, podczas utworzone zamówienie zakupu nie opiera się na innym dokumencie.
@@ -53,7 +56,7 @@ Zamówienia zakupu, które są skonfigurowane przy użyciu *przepływów pracy z
 
 Zamówienia zakupu są *potwierdzane*, tak aby odzwierciedlały umowę zawartą z dostawcą. Zamówienia zakupu będą następnie stopniowo przetwarzane w różnych stanach, aż zostaną ostatecznie zafakturowane lub anulowane.  
 
-Podczas tworzenia zamówienia zakupu, wiele pól wstępnie o wartościach domyślnych przechowywanych uzyskać informacji o dostawcy w **dostawców** strony. Oznacza to, że trzeba wypełnić tylko niektóre pola konieczne w zamówieniu zakupu, ale można też zamienić wprowadzone automatycznie wartości domyślne.
+Podczas tworzenia zamówienia zakupu wiele pól jest wstępnie uzupełnianych wartościami z domyślnych informacji o dostawcy przechowywanych na stronie **Dostawcy**. Oznacza to, że trzeba wypełnić tylko niektóre pola konieczne w zamówieniu zakupu, ale można też zamienić wprowadzone automatycznie wartości domyślne.
 
 ### <a name="prices-and-discounts"></a>Ceny i rabaty
 
@@ -86,5 +89,7 @@ Zafakturowane zamówienia zakupu zarejestruje zobowiązanie na koncie dostawcy w
 
 ## <a name="vendor-performance"></a>Wydajność dostawcy
 Wydajność i przegląd zakupów obsługują *raporty zaopatrzenia i rozrachunków z dostawcami,* które obejmują analizy wydatków i analizy wydajności dostawcy.
+
+
 
 

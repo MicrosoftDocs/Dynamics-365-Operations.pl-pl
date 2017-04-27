@@ -1,5 +1,5 @@
 ---
-title: "Rozlicz płatności klienta częściowe, do której ma wiele okresów rabatu"
+title: "Rozliczenie płatności częściowej odbiorcy, która ma wiele okresów rabatu"
 description: "W tym artykule przedstawiono sposób rozliczania częściowych płatności od odbiorców w przypadku istnienia wielu okresów rabatu."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Rozlicz płatności klienta częściowe, do której ma wiele okresów rabatu
+# <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Rozliczenie płatności częściowej odbiorcy, która ma wiele okresów rabatu
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule przedstawiono sposób rozliczania częściowych płatności od odbiorców w przypadku istnienia wielu okresów rabatu.
 
-Fabrikam oferuje odbiorcy 4031 dwa okresy rabatu gotówkowego. Odbiorca otrzymuje 2-procentowy rabat gotówkowy w przypadku zapłacenia faktury w ciągu 5 dni, i 1-procentowy rabat gotówkowy w przypadku zapłacenia faktury w ciągu 14 dni. Fabrikam oferuje też rabaty gotówkowe za rozliczenia częściowe. Parametry rozliczenia znajdują się na **rozrachunków z odbiorcami Parametry** strony.
+Fabrikam oferuje odbiorcy 4031 dwa okresy rabatu gotówkowego. Odbiorca otrzymuje 2-procentowy rabat gotówkowy w przypadku zapłacenia faktury w ciągu 5 dni, i 1-procentowy rabat gotówkowy w przypadku zapłacenia faktury w ciągu 14 dni. Fabrikam oferuje też rabaty gotówkowe za rozliczenia częściowe. Parametry rozliczenia znajdują się na stronie **Parametry modułu rozrachunków z odbiorcami**.
 
 ## <a name="invoice"></a>Faktura
-25 czerwca Arnie wchodzi i księguje fakturę za 1 000,00 dla odbiorcy 4031. Gdy on opinii rabaty gotówkowe dla tej faktury, Arnie widzi tego klienta 4031 otrzymuje rabat 20.00, jeśli faktura jest zapłacona przez 30 czerwca. Jeśli faktura jest zapłacona przez 9 lipca, klient otrzymuje zniżkę w wysokości 10,00.
+25 czerwca Arnie wprowadza i księguje fakturę na kwotę 1.000,00 dla odbiorcy 4031. Gdy sprawdza rabaty gotówkowe dla tej faktury, widzi, że odbiorca 4031 może otrzymać rabat w wysokości 20,00, jeśli zapłaci fakturę do 30 czerwca. Jeśli faktura zostanie zapłacona do 9 lipca, odbiorca otrzyma rabat w wysokości 10,00.
 
 | Data rabatu gotówkowego | Kwota rabatu gotówkowego | Kwota w walucie transakcji |
 |--------------------|----------------------|--------------------------------|
@@ -92,6 +95,8 @@ Saldo faktury wynosi teraz 0,00. Arnie wyświetla informacje na stronie **Transa
 | DISC-10030 |  Rabat gotówkowy   | 6/28/2015 |         |                                      | 6,00                                  | 0,00    | USD      |
 | ARP-10031  |  Płatność         | 7/8/2015  |         |                                      | 693,00                                | 0,00    | USD      |
 | DISC-1031  |  Rabat gotówkowy   | 7/8/2015  |         |                                      | 7,00                                  | 0,00    | USD      |
+
+
 
 
 

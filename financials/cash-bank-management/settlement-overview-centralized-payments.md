@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>Omówienie rozliczeń w płatnościach scentralizowanych
 
+[!include[banner](../includes/banner.md)]
+
+
 Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą firmy, która obsługuje wszystkie płatności. Eliminuje to konieczność wprowadzania tej samej transakcji w wielu firmach i zapewnia oszczędność czasu dzięki usprawnieniu procesów propozycji płatności i rozrachunku oraz edycji otwartych i zamkniętych transakcji w przypadku płatności scentralizowanych. 
 
 Po wprowadzeniu płatności odbiorcy lub dostawcy w jednej firmie i po rozliczeniu jej na fakturze wprowadzonej w innej firmie dla każdej z tych firm są automatycznie generowane odpowiednie rozliczenie oraz transakcje „należne od” i „należne do”. Jest tworzony rekord rozliczenia dla każdej kombinacji faktury i płatności w transakcji. Każdemu rekordowi rozliczenia jest przypisywany nowy numer załącznika, który bazuje na numeracji załączników płatności określonej na stronie **Parametry modułu rozrachunków z odbiorcami** dla odbiorców i na stronie **Parametry modułu rozrachunków z dostawcami** dla dostawców. 
@@ -108,6 +111,8 @@ W wypadku płatności do dostawców w transakcjach „należne do” i „należ
 
 ## <a name="withholding-tax"></a>Potrącona zaliczka na podatek
 Konto dostawcy skojarzone z fakturą służy do określania, czy powinna być obliczana zaliczka na podatek. Jeśli zaliczka na podatek ma zastosowanie, jest obliczana w firmie skojarzonej z fakturą. Jeśli firmy używają różnych walut, zostanie użyty kurs wymiany firmy skojarzonej z fakturą.
+
+
 
 
 

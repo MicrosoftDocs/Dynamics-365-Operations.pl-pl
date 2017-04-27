@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="costing-versions"></a>Wersje wyceny
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o wersjach wyceny, zarządzaniu nimi oraz o typach danych, które można w nich uwzględnić. Głównym celem wersji wyceny jest objęcie rekordów kosztów dotyczących towarów, kategorii kosztów oraz wzorów obliczania kosztów pośrednich.
 
 Wersja wyceny może spełniać jeden lub kilka celów w oparciu o dane, które są zawarte w wersji wyceny. Głównym celem wersji wyceny jest objęcie rekordów kosztów dotyczących towarów, kategorii kosztów oraz wzorów obliczania kosztów pośrednich. Wersja wyceny może zawierać zestaw rekordów kosztów standardowych lub zestaw rekordów kosztów planowanych, które opierają się na typie wyceny, która jest przypisana do wersji wyceny.
@@ -63,5 +66,7 @@ Głównym powodem dopuszczenia występowania cen zakupu w tym miejscu jest możl
 Aby włączyć dane cen zakupu, należy najpierw zdefiniować grupę obliczania BOM zawierającą model kosztu własnego dla ceny zakupu towaru i przypisać grupę obliczeń BOM do zakupionych towarów. Następnie należy użyć modelu kosztu własnego dla grupy obliczeń BOM podczas obliczania BOM z użyciem kosztów planowanych do obliczenia ceny sprzedaży produkowanych towarów. 
 
 Rekordy ceny zakupu dla towarów są również używane w celach informacyjnych. Zmieniając stan rekordu ceny zakupu towaru z **Oczekujący** na **Aktywny**, można zaktualizować podstawową cenę zakupu towaru. Jednak podstawa cena zakupu nie jest właściwa dla oddziału i może zastąpić ją ręcznie. Podstawowa cena zakupu służy jako domyślna cena zakupu w zamówieniach zakupu.
+
+
 
 

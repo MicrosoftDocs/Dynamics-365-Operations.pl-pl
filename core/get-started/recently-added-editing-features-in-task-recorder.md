@@ -1,6 +1,6 @@
 ---
-title: "Ostatnio dodane funkcje edycji w programie Rejestrator zadań"
-description: "Jeśli program task recorder umożliwia tworzenie prowadnic zadań, można edytować pliki usprawniają funkcje opisane w tym wiki."
+title: "Ostatnio dodane funkcje edycji w rejestratorze zadań"
+description: "Jeśli używasz rejestratora zadań do tworzenia przewodników po zadaniach, można sprawniej edytować pliki za pomocą funkcje opisanych na tej stronie wiki."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,58 +25,58 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recently-added-editing-features-in-task-recorder"></a>Ostatnio dodane funkcje edycji w programie Rejestrator zadań
+# <a name="recently-added-editing-features-in-task-recorder"></a>Ostatnio dodane funkcje edycji w rejestratorze zadań
 
-Jeśli program task recorder umożliwia tworzenie prowadnic zadań, można edytować pliki usprawniają funkcje opisane w tym wiki.
+Jeśli używasz rejestratora zadań do tworzenia przewodników po zadaniach, można sprawniej edytować pliki za pomocą funkcje opisanych na tej stronie wiki.
 
-Te funkcje są dostępne na **ustawienia &gt;Rejestrator zadań &gt;zapisu Edit** menu.
+Te funkcje są dostępne w menu **Ustawienia &gt; Rejestrator zadań &gt; Edytuj nagranie**.
 
--   Wstaw czynności bez ponownego nagrywania całego pliku.
--   Przenieś kroki w ramach zadania podrzędne bez ponownego nagrywania całego pliku.
--   Zwijanie pola Nazwa i opis zapisu.
+-   Wstawianie kroków bez konieczności ponownego nagrywania całego pliku.
+-   Przenoszenie kroków w podzadaniu bez konieczności ponownego nagrywania całego pliku.
+-   Zwijanie pól nazwy i opisu nagrania.
 
-## <a name="insert-steps-without-rerecording-the-entire-file"></a>Wstaw czynności bez ponownego nagrywania całego pliku
-Krok można teraz dodać dowolne miejsce w podręczniku zadania, bez odtwarzania lub ponowne nagrywanie całego pliku.
+## <a name="insert-steps-without-rerecording-the-entire-file"></a>Wstawianie kroków bez ponownego nagrywania całego pliku
+Teraz można dodać krok w dowolnym miejscu przewodnika po zadaniu bez konieczności odtwarzania ani ponownego nagrywania całego pliku.
 
-1.  Wybierz etap, po którym ma nowy krok do wstawienia. Upewnij się, że ten krok jest wyróżniony.
+1.  Zaznacz krok, po którym ma zostać wstawiony nowy krok. Upewnij się, że ten krok jest wyróżniony.
 
-Aby Rejestrator zadań, aby wstawić etap musi mieć odpowiednie strony, Otwórz. Poprawnej strony jest strona, w których odbywa się nowy krok. Program Task recorder ma mechanizm, który określa co aktywna strona jest i spowoduje wyłączenie funkcji, jeśli odpowiednie strony nie jest otwarty. 
+Aby rejestrator zadań wstawił krok, musi być otwarta odpowiednia strona. Odpowiednią stroną jest strona, na której odbywa się nowy krok. Rejestrator zadań zawiera mechanizm, który rozpoznaje, która strona jest aktywna, i wyłącza funkcję, jeśli nie jest otwarta odpowiednia strona. 
 
 [![tg1](./media/tg1.png)](./media/tg1.png) 
 
 
-Gdy są na odpowiedniej stronie, **Wstaw etap** stają się dostępne.
+Gdy jesteś na poprawnej stronie, opcja **Wstaw krok** staje się dostępna.
 
 [![tg2](./media/tg2-231x300.png)](./media/tg2.png)
 
-2. Kliknij **Wstaw etap**.
+2. Kliknij przycisk **Wstaw krok**.
 
-Po kliknięciu przycisku **Wstaw etap**, Rejestrator zadań przełącza się w tryb rekordu. Wszelkie działania podjęte w interfejsie użytkownika będą teraz rejestrowane i dodać w miejscu jako kroki.
+Po kliknięciu przycisku **Wstaw krok** Rejestrator zadań przełącza się do trybu nagrywania. Wszystkie czynności wykonywane w interfejsie użytkownika będą teraz rejestrowane i dodawane jako kroki.
 
-3. Kliknij **Stop**.
+3. Kliknij przycisk **Zatrzymaj**.
 
-Proces można powtarzać, dodając dowolną liczbę kroków lub przenosząc tyle podzadań, stosownie do potrzeb (zobacz poniżej zadania podrzędne).
+Proces można powtarzać, dodając dowolną liczbę kroków lub przenosząc dowolną liczbę podzadań (zobacz poniżej punkt o podzadaniach).
 
-4. Po zakończeniu edycji przewodnika zadania, kliknij przycisk **Zakończ edytowanie**, a następnie wybierz jedną z opcji, aby zapisać lub opublikować przewodnik zadania.
+4. Po zakończeniu edycji przewodnika po zadaniu kliknij przycisk **Zakończono edycję**, a następnie wybierz jedną z opcji, aby zapisać lub opublikować przewodnik po zadaniu.
 
-## <a name="move-steps-under-a-subtask-without-rerecording-the-entire-file"></a>Przenieś kroki opisane w temacie staje się podzadaniem bez ponownego nagrywania całego pliku
-Działania w ramach zadań podrzędnych można przenosić bez odtwarzania lub ponowne nagrywanie całego pliku. Jeśli chcesz zgrupować istniejącego bloku kroków, można przenieść zadanie podrzędne krok lub end sub zadanie krok.
+## <a name="move-steps-under-a-subtask-without-rerecording-the-entire-file"></a>Przenoszenie kroków w podzadaniu bez konieczności ponownego nagrywania całego pliku
+Kroki podzadania można przenosić bez konieczności odtwarzania ani ponownego nagrywania całego pliku. Kroki podzadań i podzadań końcowych można również przenosić i kończyć, jeśli chcesz zgrupować istniejący blok kroków.
 
-1.  Zaznacz krok lub podzadania krok, który chcesz przenieść. Upewnij się, że ten krok jest wyróżniony.
-2.  Kliknij przycisk wielokropka, a następnie kliknij przycisk **ruch krok po**.
+1.  Zaznacz krok lub krok podzadania, który chcesz przenieść. Upewnij się, że ten krok jest wyróżniony.
+2.  Kliknij przycisk wielokropka, a następnie kliknij przycisk **Przenieś krok za**.
 
 [![tg3](./media/tg3.png)](./media/tg3.png)
 
-3. Zaznacz krok lub podzadania krok, który ma zostać przeniesiony krok lub podzadania krok po. Program Task recorder przeniesie ten krok.
+3. Zaznacz krok lub krok podzadania, za który chcesz przenieść wybrany krok lub krok podzadania. Rejestrator zadań przeniesie ten krok.
 
-4. Aby przenieść end sub zadanie krok, zaznacz go, kliknij przycisk wielokropka, kliknij przycisk **ruch krok po**, a następnie zaznacz krok, po którym ma krok podzadania zakończenia, aby być.
+4. Aby przenieść krok podzadania lub podzadania końcowego, zaznacz go, kliknij przycisk wielokropka, kliknij przycisk **Przenieś krok za**, a następnie zaznacz krok, po którym chcesz umieścić krok podzadania końcowego.
 
-Jeśli pierwszym krokiem jest przewodnik zadań w ramach zadania podrzędne, należy utworzyć krok podzadania jako drugi krok, a następnie przesuń pierwszy krok do niego. Można dodać lub przenieść dowolną liczbę kroków lub zadań podrzędnych w razie potrzeby.
+Jeśli chcesz, aby pierwszy krok przewodnika po zadaniu znalazł się w podzadaniu, utwórz krok podzadania jako drugi krok, a następnie przesuń do niego pierwszy krok. Można dodawać i przenosić dowolną liczbę kroków i podzadań.
 
-5. Po zakończeniu edycji przewodnika zadania, kliknij przycisk **Zakończ edytowanie**, a następnie wybierz jedną z opcji, aby zapisać lub opublikować przewodnik zadania.
+5. Po zakończeniu edycji przewodnika po zadaniu kliknij przycisk **Zakończono edycję**, a następnie wybierz jedną z opcji, aby zapisać lub opublikować przewodnik po zadaniu.
 
-## <a name="collapse-recording-name-and-description"></a>Zwiń rejestrującego nazwę i opis
-Można rozwijać i zwijać **rejestrującego nazwę** i **nagrywania opis** pól. Kiedy te pola są zwinięte, więcej czynności będą widoczne w Rejestrator zadań edycji okienka. 
+## <a name="collapse-recording-name-and-description"></a>Zwijanie pól nazwy i opisu nagrania
+Pola **Nazwa nagrania** i **Opis nagrania** można rozwijać i zwijać. Kiedy te pola są zwinięte, będzie widać więcej kroków w okienku edycji w Rejestratorze zadań. 
 
 [![tg4](./media/tg4-300x252.png)](./media/tg4.png)  
 
@@ -85,6 +85,6 @@ Można rozwijać i zwijać **rejestrującego nazwę** i **nagrywania opis** pól
 
 [Tworzenie dokumentacji lub szkolenia przy użyciu nagrań zadań](/dynamics365/operations/dev-itpro/user-interface/task-recorder)
 
-[Podręczny wykaz Rejestrator zadań](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
+[Skrócony wykaz funkcji Rejestratora zadań](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
 
 

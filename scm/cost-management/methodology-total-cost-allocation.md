@@ -32,7 +32,7 @@ Ten artykuł zawiera wskazówki dotyczące korzystania z metody całkowitej alok
 
 Całkowita alokacja kosztów (TCA) jest metodą obliczania kosztu między głównym towarem formuły szarży produkcyjnej a produktami towarzyszącymi zdefiniowanymi w formule. Ta metoda jest dynamiczna. Koszt jest obliczany jako średnia ważona między ilościami, które zostały zgłoszone jako gotowe dla produktu i produktów towarzyszących formuły. W przypadku używania metody TCA nie trzeba sprawdzać alokacji kosztów dla każdej szarży produkcyjnej. Jeśli metoda TCA nie jest używana, w obliczeniach formuły są używane istniejące funkcje.
 
-## <a name="using-tca-for-coproducts"></a>Za pomocą TCA dla coproducts
+## <a name="using-tca-for-coproducts"></a>Używanie metody TCA do produktów towarzyszących
 Poniżej przedstawiono wybrane wskazówki dotyczące używania metody TCA dla produktów towarzyszących:
 
 -   Jeśli w wersji formuły na suwaku **Całkowita alokacja kosztów** ustawisz wartość **Tak**, produkty towarzyszące muszą mieć koszt własny większy niż 0 (zero). Wartość może być pobierana z wersji aktywnego kosztu tego samego oddziału, a w przypadku formuły niepowiązanej z konkretnym oddziałem — z pierwszego dostępnego oddziału. Ten warunek jest weryfikowany podczas zatwierdzania formuły.

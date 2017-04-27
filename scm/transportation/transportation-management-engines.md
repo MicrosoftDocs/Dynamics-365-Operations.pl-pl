@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="transportation-management-engines"></a>Aparaty do zarządzania transportem
 
+[!include[banner](../includes/banner.md)]
+
+
 Aparaty zarządzania transportem definiują logikę, która służy do tworzenia i przetwarzania stawek transportowych w module Zarządzanie transportem. 
 
 Aparat zarządzania transportem oblicza zadania, takie jak stawki przewoźnika za transport. System umożliwia zmianę strategii obliczeń w czasie wykonywania na podstawie danych w programie Microsoft Dynamics 365 for Operations. Aparatu zarządzania transportem jest podobny do dodatku, który jest powiązany z umową przewoźnika.
@@ -58,7 +61,7 @@ Aparat zarządzania transportem wymaga ustawienia inicjowania danych do działan
 W większości przypadków można kliknąć przycisk **Parametry** w formularzach konfiguracji aparatu zarządzania transportem w celu skonfigurowania danych inicjujących. **Przykład konfiguracji z aparatem stawki, który odwołuje się do aparatu przebiegu** Poniższy przykład pokazuje ustawienia wymagane dla aparatu stawki, który jest oparty na typie aparatu .NET Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine i odwołuje się do aparatu przebiegu.
 | Parametr             | Opis                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *RateBaseAssigner*    | Typ .NET interpretowania danych przypisania podstawy stawki dla określonego schematu. Składnia wartości parametru składa się z dwóch segmenty rozdzielone pionowy pasek (|). Pierwszy segment zawiera nazwę zestawu, która określa typ użytkownika przypisującego. Drugi segment określa w pełni kwalifikowaną nazwę typu użytkownika przypisującego. Obejmuje to obszar nazw tego typu. |
+| *RateBaseAssigner*    | Typ .NET interpretowania danych przypisania podstawy stawki dla określonego schematu. Składnia wartości parametru składa się z dwóch segmentów oddzielonych pionową kreską (|). Pierwszy segment zawiera nazwę zestawu, która określa typ użytkownika przypisującego. Drugi segment określa w pełni kwalifikowaną nazwę typu użytkownika przypisującego. Obejmuje to obszar nazw tego typu. |
 | *MileageEngineCode*   | Kod aparat przebiegu identyfikujący rekord aparatu przebiegu w bazie danych programu Microsoft Dynamics 365 for Operations.                                                                                                                                                                                                                                                             |
 | *ApportionmentEngine* | Kod aparatu ogólnego identyfikujący rekord aparatu przydziału w bazie danych programu Microsoft Dynamics 365 for Operations.                                                                                                                                                                                                                                                              |
 
@@ -87,7 +90,7 @@ Metadane dla aparatów zarządzania transportem są skonfigurowane inaczej dla r
 | **Aparat czasu tranzytu** i **aparat przebiegu** | Pobiera metadane bezpośrednio z aparatu przebiegu konfiguracji ustawień formularza.                                                                                                                                                                                                                                                                                                                                                                                  |
 
   **Przykład metadanych dla aparatu stawki** Aparatu zarządzania transportem wymaga identyfikacji adresu pochodzenia, stanu docelowego i kraju/regionu, i rozpoczęcia i punktu końcowego wysyłki. Dzięki spełnieniu tych wymagań metadane będą wyglądać jak w tabeli poniżej. Tabela ta zawiera także informacje o tym, jaki typ danych wejściowych jest wymagany.
--   Zdefiniować te informacje w **Zarządzanie transportem**&gt;**instalacji** na **typ podstawowej stawki** strony.
+-   Określ te informacje w obszarze **Zarządzanie transportem** &gt; **Ustawienia** na stronie **Typ stawki bazowej**.
 
 | Kolejność | Nazwisko                          | Typ pola | Typ danych | Typ wyszukiwania    | Obowiązkowe |
 |----------|-------------------------------|------------|-----------|----------------|-----------|
@@ -96,6 +99,8 @@ Metadane dla aparatów zarządzania transportem są skonfigurowane inaczej dla r
 | 3        | Miejsce początkowe — kod pocztowy | Przypisanie | Ciąg    | Kod pocztowy    | Wybrano  |
 | 4        | Miejsce docelowe — kod pocztowy   | Przypisanie | Ciąg    | Kod pocztowy    | Wybrano  |
 | 5 przypada na składniki z tytułu ubezpieczeń majątkowych i osobowych        | Kraj przeznaczenia           | Przypisanie | Ciąg    | Kraj/region |           |
+
+
 
 
 

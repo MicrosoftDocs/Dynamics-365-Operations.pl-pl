@@ -101,7 +101,7 @@ Można zapisać istniejącą grupę bloków konstrukcyjnych pod nową nazwą. Na
 
 ### <a name="export-a-building-block-group"></a> Eksportowanie grupy bloków konstrukcyjnych
 
-Można wyeksportować grupy bloków konstrukcyjnych lub określonego raportu bloków konstrukcyjnych w grupie bloku konstrukcyjnego. Grupa eksportowanych blok konstrukcyjny służy jako kopii zapasowej. Można także skopiować eksportowanych danych między grupami blok konstrukcyjny lub Dynamics 365 dla operacji instalacji. Projektant raportów zawiera style czcionek odwołania i zestawy wymiarów wraz z grupy blok konstrukcyjny.
+Można wyeksportować grupę bloków konstrukcyjnych lub określone bloki konstrukcyjne raportu istniejące w grupie bloków konstrukcyjnych. Wyeksportowana grupa bloków konstrukcyjnych może służyć jako kopia zapasowa. Można także kopiować wyeksportowane dane między grupami bloków konstrukcyjnych lub instalacjami programu Dynamics 365 for Operations. Projektant raportów zawiera nie tylko grupę bloków konstrukcyjnych, ale również style czcionek i zestawy wymiarów, do których grupa się odwołuje.
 1.  W Projektancie raportów w menu **Firma** kliknij **Grupy bloków konstrukcyjnych**.
 2.  W oknie dialogowym **Grupy bloków konstrukcyjnych**, wybierz grupę bloków konstrukcyjnych do wyeksportowania, a następnie kliknij **Eksportuj**.
 3.  W oknie dialogowym **Eksportowanie** wybierz definicje raportów do wyeksportowania:

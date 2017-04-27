@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfiguracja modułów Rozrachunki z odbiorcami i Kredyty i windykacja
 
+[!include[banner](../includes/banner.md)]
+
+
 Odpowiednie skonfigurowanie modułów Rozrachunki z odbiorcami oraz Kredyty i windykacja umożliwi śledzenie faktur i płatności przychodzących od odbiorców.
 
 Możliwe jest tworzenie odbiorców, grup odbiorców, profilów księgowania, różnych opcji płatności, not odsetkowych, ponagleń, prowizji, parametrów dotyczących odbiorców, opłat, dostaw i miejsc docelowych, weksli oraz innych informacji dotyczących rozrachunków z odbiorcami oraz kredytów i windykacji.
 Poniższa tabela zawiera listę stron, które umożliwiają konfigurację i obsługę modułów Rozrachunki z odbiorcami oraz Kredyty i windykacja. Pozycje tabeli zostały uporządkowane według zadania, a następnie alfabetycznie według nazwy strony.
 
-| ![Uwaga:](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Uwaga")**Uwaga:**          |
+| ![Uwaga](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Uwaga")**Uwaga**          |
 |--------------------------------------------------------------------------------------------------|
 | Nawigacja do niektórych stron wymienionych w poniższej tabeli wymaga wprowadzenia informacji lub ustawienia parametrów. |
 
@@ -98,14 +101,16 @@ Poniższa tabela zawiera listę stron, które umożliwiają konfigurację i obs�
 |                                                      | Ustawienia kontaktów z odbiorami i parametrów poczty e-mail | Ustaw kontakty dla odbiorców z ich adresami e-mail. Te adresy będą widoczne na stronie Windykacje i będą używane do tworzenia wiadomości e-mail wysyłanych do odbiorców. Można też ustawić domyślny kontakt dla Windykacji dla każdego odbiorcy, który będzie widoczny jako pierwszy na stronie Windykacja. |
 |                                                      | Pule klientów                       | Ustaw pule odbiorców, które są kwerendami definiującymi grupę kont odbiorców, które mogą być wyświetlane i zarządzane dla windykacji lub procesów wiekowania.                                                                                                                           |
 |                                                      | Profile księgowania odbiorcy             | Umożliwia konfigurowanie profilów, które sterują księgowaniem transakcji odbiorców w księdze głównej.                                                                                                                                                                                      |
-|                                                      | Kody przyczyn odbiorcy                | Ustawianie kodów przyczyn odbiorcy.                                                                                                                                                                                                                                                    |
-|                                                      | Kody przyczyn klienta odpisu      | Ustawianie kodów przyczyn odpisu klienta, które będą używane dla transakcji odpisu.                                                                                                                                                                                             |
+|                                                      | Kody przyczyn odbiorcy                | Konfigurowanie kodów przyczyn odbiorców.                                                                                                                                                                                                                                                    |
+|                                                      | Kody przyczyn odpisów odbiorcy      | Ustawianie kodów przyczyn odpisów u odbiorców, które będą używane dla transakcji odpisu.                                                                                                                                                                                             |
 |                                                      | Ustawienia formularza                           | Umożliwia definiowanie parametrów notatek dotyczących ofert, potwierdzeń, list pobrania, dokumentów dostawy, faktur odbiorcy, faktur niezależnych i not odsetkowych.                                                                                                                               |
 |                                                      | Zainteresowania                             | Umożliwia konfigurowanie kodów odsetek i zarządzanie nimi.                                                                                                                                                                                                                                                 |
 |                                                      | Informacja NF.                     | Ustaw informacje dotyczące niewystarczających funduszy na koncie bankowym, które będą używane, gdy płatność jest oznaczona jako transakcja NF na stronie Windykacje.                                                                                                                                              |
 |                                                      | Informacje o sprzedawcy              | Ustaw adres e-mail dla sprzedawców. Te adresy będą widoczne na stronie Windykacje i można ich używać do wysyłania wiadomości e-mail do sprzedawcy z tej strony.                                                                                                                |
 
  
-Aby uzyskać więcej informacji, zobacz [kredyty i windykacja w rozrachunkach z odbiorcami](collections-credit-accounts-receivable.md).
+Aby uzyskać więcej informacji, zobacz temat [Kredyty i windykacja w rozrachunkach z odbiorcami](collections-credit-accounts-receivable.md).
+
+
 
 

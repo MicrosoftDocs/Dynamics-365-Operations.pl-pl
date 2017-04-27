@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-acquisition-posting-accounts"></a>Konta księgowania nabycia środków trwałych
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule wyjaśniono, jak w księdze głównej skonfigurować konta księgowania operacji nabycia środków trwałych.
 
 Konta używane do księgowani nabycia środków trwałych mogą się od siebie różnić w zależności od metody używanej do pozyskiwania składników aktywów. Na stronie Profile księgowania środków trwałych na karcie Konta księgowe należy wybrać opcje Nabycie i Korekta wartości początkowej, aby skonfigurować księgowanie kont środków trwałych do księgi. 
@@ -40,6 +43,8 @@ Jeśli opcje Arkusz faktur lub Zamówienia zakupu w formularzu Rozrachunki z dos
 
 Dla transakcji nabycia zaksięgowanych przy użyciu arkusza Zapasy do środków trwałych w Księdze głównej środki trwałe nie są kupowane z zewnętrznych źródeł, a przenoszone z własnych zapasów firmy. Dlatego też konto przeciwstawne jest kontem wydań z magazynu dla towarów magazynowych w opcji Zarządzanie zapasami.
 
-Aby uzyskać więcej informacji, zobacz [nabycia aktywów za pośrednictwem zamówień](acquire-assets-procurement.md).
+Aby uzyskać więcej informacji, zobacz [Nabywanie środków trwałych za pomocą zaopatrzenia](acquire-assets-procurement.md).
+
+
 
 

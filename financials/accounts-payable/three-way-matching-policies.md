@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="three-way-matching-policies"></a>Trzyelementowe zasady uzgadniania
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera przykłady uzgadniania trzyelementowego.
 
 <a name="example-three-way-matching-for-items"></a>Przykład: Trzyelementowe uzgadniania dla towarów
@@ -62,7 +65,7 @@ Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na nastę
 1.  Sammy, pracownik działu przyjęć w firmie Fabrikam, odbiera całkowitą liczbę maszyn, które zostały wysyłane z firmy Contoso. Wprowadza ilość 5 w dokumencie przyjęcia produktów. Ponieważ zamówienie zakupu zostało całkowicie otrzymane, stan zamówienia zakupu zmienia się na Otrzymane.
 2.  April, koordynatorka rozrachunków z dostawcami w firmie Fabrikam, wprowadza i sprawdza fakturę przesyłaną przez firmę Contoso. Sprawdza poprawność następujących informacji:
     -   Dla towarów, które wymagają uzgodnienia trzyelementowego, ilość w wierszu faktury odpowiada ilości, która została przyjęta. Przyjęta ilość jest wskazana w dokumencie przyjęcia produktów, który jest uzgodniony z fakturą.
-    -   Dla elementów, które wymagają dwukierunkowe 3 drogowy lub dopasowywania ceny w wierszu faktury są w granicach tolerancji, które są zdefiniowane w Microsoft Dynamics 365 dla Operations.This zawiera następujące typy dopasowania ceny:
+    -   W przypadku towarów wymagających dwuelementowego lub trzyelementowego uzgadniania ceny w wierszu faktury są w granicach tolerancji zdefiniowanych w programie Microsoft Dynamics 365 for Operations. Obejmuje to następujące typy uzgadniania cen:
         -   Uzgadnianie ceny jednostkowej netto — cena jednostkowa netto w wierszu faktury odpowiada cenie jednostkowej w wierszu zamówienia zakupu w ramach wartości procentowej rozbieżności. W tym przykładzie tolerancja ceny jednostkowej netto to +8%.
         -   Uzgodnienie cen całkowitych — kwota netto w wierszu faktury odpowiada kwocie netto w wierszu zamówienia zakupu w ramach wartości procentowej, kwoty lub procentu i kwoty rozbieżności. W tym przykładzie tolerancja uzgadniania cen całkowitych to +15%.
 
@@ -71,11 +74,11 @@ Faktura papierowa z firmy Contoso zawiera następujące informacje.
 | Pozycja                        | Ilość | Cena jednostkowa | Kwota netto |
 |-----------------------------|----------|------------|------------|
 | 1500 — Milicron Obrabiarka | 5 przypada na składniki z tytułu ubezpieczeń majątkowych i osobowych        | 8100,00   | 40 500,00  |
-| Wysyłka i obsługa       |          |            | 4000,00   |
+| Wysyłka i obsługa       |          |            | 4,000.00   |
 | Podatek                         |          |            | 0,00       |
-| Razem                       |          |            | 44 500,00  |
+| Razem                       |          |            | 44,500.00  |
 
-W programie Microsoft Dynamics 365 dla operacji wiersz faktury zawiera następujące informacje.
+W programie Microsoft Dynamics 365 for Operations wiersz faktury zawiera następujące informacje.
 
 | Numer towaru                 | Ilość | Cena jednostkowa | Kwota netto wiersza | Zasady uzgadniania    | Dopasowanie ilości dokumentów przyjęcia produktów | Zgodność cen | Uzgadnianie cen całkowitych |
 |-----------------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -111,7 +114,7 @@ Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na nastę
 1.  Towary są dostarczane. Sammy, pracownik działu przyjęć w malezyjskim oddziale firmy Fabrikam, nie księguje dokumentu przyjęcia produktów natychmiast, bo coś odrywa go od pracy.
 2.  April, koordynatorka rozrachunków z dostawcami w firmie Fabrikam, wprowadza i sprawdza fakturę przesyłaną przez firmę Contoso. Sprawdza poprawność następujących informacji:
     -   Dla towarów, które wymagają uzgodnienia trzyelementowego, ilość w wierszu faktury odpowiada ilości, która została przyjęta. Przyjęta ilość jest wskazana w dokumencie przyjęcia produktów, który jest uzgodniony z fakturą.
-    -   Dla elementów, które wymagają dwukierunkowe 3 drogowy lub dopasowywania ceny w wierszu faktury są w granicach tolerancji, które są zdefiniowane w usłudze Microsoft Dynamics 365 dla operacji. Dotyczy to następujących typów dopasowania ceny:
+    -   W przypadku towarów wymagających dwuelementowego lub trzyelementowego uzgadniania ceny w wierszu faktury są w granicach tolerancji zdefiniowanych w programie Microsoft Dynamics 365 for Operations. Obejmuje to następujące typy uzgadniania cen:
         -   Uzgadnianie ceny jednostkowej netto — cena jednostkowa netto w wierszu faktury odpowiada cenie jednostkowej w wierszu zamówienia zakupu w ramach wartości procentowej rozbieżności. W tym przykładzie tolerancja ceny jednostkowej netto to +2%.
         -   Uzgodnienie cen całkowitych — kwota netto w wierszu faktury odpowiada kwocie netto w wierszu zamówienia zakupu w ramach wartości procentowej, kwoty lub procentu i kwoty rozbieżności. W tym przykładzie tolerancja uzgadniania cen całkowitych to +10%.
 
@@ -124,7 +127,7 @@ Faktura papierowa z firmy Contoso zawiera następujące informacje.
 | Napęd USB             | 200      | 10.05      | 2,010.00   |
 | Suma faktury         |          |            | 7,092.00   |
 
-W programie Microsoft Dynamics 365 dla operacji wiersz faktury zawiera następujące informacje.
+W programie Microsoft Dynamics 365 for Operations wiersz faktury zawiera następujące informacje.
 
 | Numer towaru           | Ilość | Cena jednostkowa | Kwota netto wiersza | Zasady uzgadniania    | Dopasowanie ilości dokumentów przyjęcia produktów | Zgodność cen | Uzgadnianie cen całkowitych |
 |-----------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -140,6 +143,8 @@ Należy uwzględnić następujące elementy:
 Jeśli zatwierdzenie jest wymagane, aby można było zaksięgować faktury z rozbieżnościami uzgadniania, opcja Zatwierdzaj księgowanie w razie rozbieżności w uzgadnianiu na stronie Szczegóły uzgadniania faktur musi być wybrana, zanim faktura będzie mogła być zaksięgowana z błędami uzgadniania cen i błędami uzgadniania ilości. Jeśli zatwierdzanie nie jest wymagane, przetwarzanie faktury może być kontynuowane, jeśli nie ma żadnych innych błędów księgowania.
 
 
-Aby uzyskać więcej informacji, zobacz [konta płatne faktury dopasowania](accounts-payable-invoice-matching.md).
+Aby uzyskać więcej informacji, zobacz [Uzgadnianie faktur rozrachunków z dostawcami](accounts-payable-invoice-matching.md).
+
+
 
 

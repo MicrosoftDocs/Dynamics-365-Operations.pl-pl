@@ -1,6 +1,6 @@
 ---
-title: "Omówienie prognozowania popytu"
-description: "Prognozowanie popytu jest używane do przewidywania niezależnego popytu z zamówień sprzedaży i zależnego popytu w dowolnym punkcie oddzielenia dla zamówień od odbiorców. Żądanie rozszerzone prognozy redukcji zasady przewidują masowe Dostosowywanie idealne rozwiązanie."
+title: Podstawowe informacje o prognozowaniu popytu
+description: "Prognozowanie popytu jest używane do przewidywania niezależnego popytu z zamówień sprzedaży i zależnego popytu w dowolnym punkcie oddzielenia dla zamówień od odbiorców. Rozszerzone reguły redukcji prognozy popytu są doskonałym rozwiązaniem do masowego dostosowywania."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="demand-forecasting-overview"></a>Omówienie prognozowania popytu
+# <a name="demand-forecasting-overview"></a>Podstawowe informacje o prognozowaniu popytu
 
-Prognozowanie popytu jest używane do przewidywania niezależnego popytu z zamówień sprzedaży i zależnego popytu w dowolnym punkcie oddzielenia dla zamówień od odbiorców. Żądanie rozszerzone prognozy redukcji zasady przewidują masowe Dostosowywanie idealne rozwiązanie.
+[!include[banner](../includes/banner.md)]
 
-Aby wygenerować prognozę bazową, podsumowanie transakcji historycznych jest przekazywane do usługi uczenia maszynowego Microsoft Azure hostowanej w Azure. Ponieważ ta usługa nie jest współużytkowana przez użytkowników, można ją łatwo dostosować do wymagań danej branży. 365 Dynamics dla operacji służy do wizualizacji prognozy, Dopasuj prognozy i wyświetlanie kluczowych wskaźników wydajności (KPI) o dokładności prognozy.
+
+Prognozowanie popytu jest używane do przewidywania niezależnego popytu z zamówień sprzedaży i zależnego popytu w dowolnym punkcie oddzielenia dla zamówień od odbiorców. Rozszerzone reguły redukcji prognozy popytu są doskonałym rozwiązaniem do masowego dostosowywania.
+
+Aby wygenerować prognozę bazową, podsumowanie transakcji historycznych jest przekazywane do usługi uczenia maszynowego Microsoft Azure hostowanej w Azure. Ponieważ ta usługa nie jest współużytkowana przez użytkowników, można ją łatwo dostosować do wymagań danej branży. Program Dynamics 365 for Operations umożliwia wizualizację prognozy, korygowanie prognozy i wyświetlanie najważniejszych wskaźników trafności prognozy.
 
 ## <a name="key-features-of-demand-forecasting"></a>Najważniejsze funkcje prognozowania popytu
 Poniżej przedstawiono główne funkcje prognozowania popytu:
@@ -45,43 +48,45 @@ Poniżej przedstawiono główne funkcje prognozowania popytu:
 ## <a name="major-themes-in-demand-forecasting"></a>Najważniejsze motywy w prognozowaniu popytu
 Trzy najważniejsze motywy w prognozowaniu popytu:
 
--   **Modułowość** — prognozowania popytu jest modułowe i łatwe do skonfigurowania. Funkcjonalność i wyłączanie można włączyć, zmieniając klucz konfiguracji o **handlu**&gt;**Prognoza zapasów**&gt;**Prognozowanie popytu**.
--   **Ponowne wykorzystanie stosu programie Microsoft** — Microsoft uruchomił platformy edukacyjnej maszyny w lutym 2015. Uczenie maszynowe, która jest obecnie częścią pakietu Microsoft Cortana Analytics, umożliwia szybkie i łatwe tworzenie eksperymenty analizy predykcyjne, takie jak żądanie oceny doświadczeń, przy użyciu algorytmów R lub Python języków programowania i prosty interfejs przeciągania i upuszczania.
-    -   Można pobrać Dynamics 365 dla operacji żądanie prognozowania eksperymentów, zmień je odpowiednio do spełnienia wymagań biznesowych, publikować jako usługi sieci web Azure i użyte do generowania prognoz popytu. Eksperymenty są dostępne do pobrania po zakupie 365 Dynamics operacje subskrypcji dla Planista produkcji jako użytkownika na poziomie przedsiębiorstwa.
-    -   Można pobrać dowolne z obecnie dostępnych eksperymentów przewidywania popytu z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Natomiast 365 Dynamics dla operacji żądanie prognozowania eksperymentów automatycznie są zintegrowane z 365 Dynamics dla operacji, klienci i partnerzy muszą obsługiwać integracji doświadczeń, które są do pobrania z [Cortana Analytics galerii](https://gallery.cortanaanalytics.com/). W związku z tym, eksperymenty z [Cortana Analytics galerii](https://gallery.cortanaanalytics.com/) nie są tak samo proste, do użycia jako Dynamics 365 dla operacji żądanie prognozowania eksperymentów. Należy zmodyfikować kod doświadczeń, tak aby używały Dynamics 365 operacje interfejsu programowania aplikacji (API).
+-   **Modułowość** — prognozowania popytu jest modułowe i łatwe do skonfigurowania. Funkcję tę można włączać i wyłączać poprzez zmianę klucza konfiguracji w oknie **Handel** &gt; **Prognoza zapasów** &gt; **Prognozowanie popytu**.
+-   **Ponowne użycie stosu Microsoft** — Firma Microsoft uruchomiła platformę do uczenia maszynowego w lutym 2015 r. Uczenie maszynowe, obecnie część pakietu analitycznego Microsoft Cortana, umożliwia szybkie i łatwe tworzenie eksperymentów analiz predykcyjnych, takich jak eksperymenty szacowania popytu, przy użyciu języków programowania algorytmów R lub Python oraz prostego w obsłudze interfejsu typu przeciągnij i upuść.
+    -   Można pobrać eksperymenty prognozowania popytu programu Dynamics 365 for Operations, zmienić je odpowiednio do wymagań biznesowych, publikować jako usługi sieci web na Azure i używać ich do generowania prognoz popytu. Eksperymenty są dostępne do pobrania w ramach subskrypcji programu Dynamics 365 for Operations do planowania produkcji przez użytkowników na poziomie organizacji.
+    -   Można pobrać dowolne z obecnie dostępnych eksperymentów przewidywania popytu z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Eksperymenty prognozowania popytu programu Dynamics 365 for Operations są automatycznie integrowane z programem, natomiast klienci i partnerzy muszą ręcznie integrować eksperymenty pobierane z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/). Z tego względu eksperymenty z [Galerii narzędzi analitycznych Cortana](https://gallery.cortanaanalytics.com/) nie są tak samo proste w użytkowaniu, jak eksperymenty w programie Dynamics 365 for Operations. Konieczne jest zmodyfikowanie kodu eksperymentów, aby mogły korzystać z interfejsu API programu Dynamics 365 for Operations.
     -   Można utworzyć własne eksperymenty w programie Microsoft Azure Machine Learning Studio, opublikować je jako usługi na Azure i używać do generowania prognoz popytu.
     -   Jeśli nie jest wymagana wysoka wydajność lub nie potrzeba przetwarzać bardzo dużych ilości danych, można korzystać z bezpłatnej wersji oprogramowania do uczenia maszynowego. Zalecamy rozpoczęcie pracy od wersji bezpłatnej, zwłaszcza w fazie testowania i implementacji. Jeśli konieczna jest większa wydajność i dodatkowa pamięć, można korzystać z wersji standardowej oprogramowania do uczenia maszynowego. Ta wersja wymaga subskrypcji usługi Azure i wiąże się z dodatkowymi kosztami. Aby uzyskać szczegółowe informacje o cenach oprogramowania do uczenia maszynowego, zobacz <http://aka.ms/machine-learning-price-info>.
--   **Zmniejszenie w dowolnym punkcie odsprzęgania prognozy** -prognozowania w systemie Dynamics 365 dla operacji kompilacji na tę funkcjonalność, która umożliwia prognozowanie zapotrzebowania zarówno zależnych i niezależnych w dowolnym punkcie odsprzęgania popytu.
+-   **Zmniejszenie prognozy w dowolnym punkcie oddzielania** — Prognoza popytu w programie Dynamics 365 for Operations dla tej funkcji, która pozwala prognozować zarówno zależny, jak i niezależny popyt w dowolnym punkcie oddzielania.
 
 ## <a name="basic-flow-in-demand-forecasting"></a>Podstawowy przepływ w prognozowaniu popytu
 Poniższy wykres przedstawia podstawowy przepływ dla prognozowania popytu. 
 
-[![diagram wprowadzenie prognozowania popytu](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
+[![diagram wprowadzenia do prognozowania popytu](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
 
-Ma być uruchamiany w 365 Dynamics dla operacji generowania prognoz popytu. Historycznych danych transakcyjnych z 365 Dynamics dla operacji transakcyjnych baz danych są zbierane i wypełnia tabeli tymczasowej. W tej tabeli tymczasowej później jest podawany do usługi uczenie maszynowe. Wykonując minimalne dostosowania, można podłączyć różne źródła danych do tabeli tymczasowej. Źródła danych może zawierać pliki programu Microsoft Excel, pliki wartości rozdzielanych przecinkami (CSV) i danych z systemu Microsoft Dynamics AX 2009 i systemu Microsoft Dynamics AX 2012. W związku z tym istnieje możliwość wygenerowania prognoz popytu, które należy wziąć pod uwagę dane historyczne, który rozprzestrzenia się wśród wielu systemów. Jednak dane podstawowe, takie jak nazwy towarów oraz jednostki miary, muszą być takie same w różnych źródłach danych.
+Generowanie prognozy popytu zaczyna się w programie Dynamics 365 for Operations. Historyczne dane transakcji z bazy danych transakcji w programie Dynamics 365 for Operations są zbierane i wpisywane do tabeli przejściowej. Zawartość tej tabeli przejściowej jest później przekazywana do usługi uczenia maszynowego. Do tabeli można podłączać różne źródła danych po ich odpowiednim dostosowaniu. Źródłami danych mogą być pliki programu Microsoft Excel, pliki wartości rozdzielanych przecinkami (CSV) i dane z systemu Microsoft Dynamics AX 2009 oraz Microsoft Dynamics AX 2012. W związku z tym można generować prognozy popytu uwzględniające dane historyczne rozproszone w wielu systemach. Jednak dane podstawowe, takie jak nazwy towarów oraz jednostki miary, muszą być takie same w różnych źródłach danych.
 
-Jeśli używasz Dynamics 365 dla prognozowania eksperymentów uczących popytu operacji wyglądają na najlepsze dopasowanie spośród pięciu czas serii prognozowania metod do obliczania podstawowej prognozy. Parametry dla tych metod prognozowania są zarządzane w usłudze Dynamics 365 dla operacji. 
+W przypadku korzystania z eksperymentów uczenia maszynowego do prognozowania popytu w programie Dynamics 365 for Operations szukają one najlepszego dopasowania spośród pięciu metod prognozowania i obliczają prognozę bazową. Parametrami dla tych metod prognozowania zarządza się w programie Dynamics 365 for Operations. 
 
-Prognozy, dane historyczne i wszelkie zmiany, które zostały wprowadzone do prognoz popytu w poprzedniej iteracji następnie są dostępne w usłudze Dynamics 365 dla operacji. 
+Prognozy, dane historyczne i wszelkie zmiany, które zostały wprowadzone w prognozach popytu w poprzednich iteracjach, są następnie dostępne w programie Dynamics 365 for Operations. 
 
-365 Dynamics dla operacji umożliwia wizualizację i modyfikację prognozy według planu bazowego. Ręczne korekty wymagają autoryzacji przed zastosowaniem prognoz do planowania.
+Za pomocą programu Dynamics 365 for Operations można wizualizować i modyfikować prognozy bazowe. Ręczne korekty wymagają autoryzacji przed zastosowaniem prognoz do planowania.
 
 ## <a name="limitations"></a>Ograniczenia
-Prognozowanie popytu w usłudze Dynamics 365 dla operacji jest narzędziem, które pomaga klientom w przemyśle wytwórczym, tworzyć procesy prognozowania. To oferuje podstawowe funkcje prognozowania rozwiązanie popytu i został zaprojektowany tak, aby łatwo mogą zostać rozszerzone. Żądać prognozowania, może nie być najlepiej pasuje dla klientów w gałęziach przemysłu, takich jak handel detaliczny, hurtowych, magazynowania, transportu lub innych profesjonalnych usług.
+Prognozowanie popytu w programie Dynamics 365 for Operations to narzędzie, które pomaga odbiorcom w przemyśle wytwórczym tworzyć procesy prognozowania. Oferuje podstawowe funkcje rozwiązania do prognozowania i jest zaprojektowane w taki sposób, że może być łatwo rozszerzone. Prognozowanie popytu nie musi być najlepszym narzędziem dla odbiorców w takich branżach, jak handel detaliczny, handel hurtowy, magazynowanie, transport lub inne usługi profesjonalne.
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Demand forecasting setup](demand-forecasting-setup.md)
+[Ustawianie prognozowania popytu](demand-forecasting-setup.md)
 
-[Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+[Generowanie bazowej prognozy statystycznej](generate-statistical-baseline-forecast.md)
 
-[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+[Wprowadzanie ręcznych korekt prognozy bazowej](manual-adjustments-baseline-forecast.md)
 
-[Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+[Autoryzowanie skorygowanej prognozy](authorize-adjusted-forecast.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Monitorowanie dokładności prognozy](monitor-forecast-accuracy.md)
 
-[Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+[Usuwanie wartości odstających z danych transakcji historycznych podczas obliczania prognozy popytu](remove-historical-outliers-calculating-demand-forecast.md)
+
+
 
 

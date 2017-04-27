@@ -1,5 +1,5 @@
 ---
-title: "Przystosowań podstawowej prognozy"
+title: "Wprowadzanie ręcznych korekt prognozy bazowej"
 description: "W tym artykule wyjaśniono, jak wprowadzać ręczne korekty prognozy bazowej i jak wyświetlać szczegóły prognozy."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Przystosowań podstawowej prognozy
+# <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Wprowadzanie ręcznych korekt prognozy bazowej
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule wyjaśniono, jak wprowadzać ręczne korekty prognozy bazowej i jak wyświetlać szczegóły prognozy. 
 
@@ -35,11 +38,11 @@ Przed dokonaniem ręcznych korekt bardzo ważne jest, aby zapoznać się z kilko
 ## <a name="grid-on-the-adjusted-demand-forecast-page"></a>Siatka na stronie Skorygowana prognoza popytu
 Strona **Skorygowana prognoza popytu** zawiera siatkę, która oferuje następującą strukturę:
 
--   Pierwsza kolumna pokazuje towary, klucze alokacji produktów, firmy itd., dla których wygenerowano prognozę. Podtytuł strony zawiera opis bieżących wymiarów prognozy, które są widoczne na siatce. Na przykład, jeśli nazwa pomocnicza strony jest **firma / witryny / przedmiotu klucza alokacji**, a jednym z nagłówków wierszy w siatce jest **USMF / 1 / D\_Alloc**, zawiera ten wiersz prognozy dla firmy USMF, strona 1 i **D\_Alloc** klucz alokacji towaru.
+-   Pierwsza kolumna pokazuje towary, klucze alokacji produktów, firmy itd., dla których wygenerowano prognozę. Podtytuł strony zawiera opis bieżących wymiarów prognozy, które są widoczne na siatce. Jeśli na przykład strona ma podtytuł **Firma / Oddział / Klucz alokacji produktów**, a jeden z nagłówków wierszy w siatce to **USMF / 1 / D\_Alloc**, ten wiersz pokazuje prognozę dla oddziału 1 firmy USMF i klucza alokacji produktów **D\_Alloc**.
 -   Kolejne kolumny zawierają przedziały prognozy, dla których prognoza została wygenerowana. Każdy nagłówek kolumny jest pierwszą datą przedziału prognozy, jaka jest widoczna w kolumnie.
 -   Wartości w komórkach pokazują prognozę dla jednego towaru, klucza alokacji produktów itd, dla określonego przedziału prognozy.
 
-## <a name="forecast-aggregation-and-deaggregation"></a>Agregacja prognozy i deaggregation
+## <a name="forecast-aggregation-and-deaggregation"></a>Agregacja i deagregacja prognozy
 Podtytuł strony pokazuje poziom agregacji prognozy. 
 
 Na przykład, jeśli strona ma podtytuł **Firma / Oddział / Klucza alokacji / Kod towaru / Kolor / Rozmiar / Konfiguracja / Style**, nie ma żadnej agregacji prognozy i prognoza jest wyświetlana na poziomie towaru i jego wymiarów. Aby zmienić agregację, użyj strony **Zmień wymiary prognozy**, który można otworzyć z menu aplikacji. 
@@ -50,7 +53,7 @@ Jeśli zmienisz agregację w celu zwiększenia ilości danych wyświetlanych na 
 
 Na przykład została wygenerowana prognoza na poziomie towaru, ale wiadomo, że popyt na ten towar wzrośnie we wszystkich oddziałach ze względu na promocję lub innego rodzaju podobne zdarzenie. W takim przypadku można ustawić agregację na **Firma / Klucz alokacji produktów / Towar** na stronie **Zmień wymiary prognozy**. Globalne skorygować globalną prognozę dla towaru we wszystkich oddziałach na siatce **Skorygowana prognoza popytu**. Aby zobaczyć efekt zmian we wszystkich oddziałach, otwórz stronę **Wiersze prognozy popytu**. Na tej stronie będzie widoczny jeden wiersz dla towaru w każdym oddziale, skorygowaną prognozowaną ilość i pierwotną prognozowaną ilość. 
 
-Gdy prognozowana ilość jest korekta na poziomie zagregowanym, system używa alokacji ważonej do rozpowszechniania zmian między wiersze, które tworzą żądaną agregację. 
+Po skorygowaniu prognozowanej ilości na poziomie sumarycznym system używa alokacji ważonej do dystrybucji zmiany w wierszach tworzących agregację. 
 
 Można też wprowadzać ręczne korekty na stronie **Wiersze prognozy popytu**, zmieniając wartość **Ilość całkowita** lub komórki **Ilość** na siatce deagregacji.
 
@@ -69,15 +72,17 @@ Strona **Szczegóły prognozy popytu** pokazuje następujące informacje na graf
 **Uwagi:**
 
 -   Przedział wiarygodności widoczny w sekcji **Prognoza** na stronie przedstawia różnicę między górnym i dolnym limitem przedziału wiarygodności. Aby wyświetlić wartości limitów górnych i dolnych, umieść wskaźnik myszy na wykresie w sekcji **Graficzna prezentacja popytu historycznego i prognozy**.
--   Jeśli używasz Dynamics 365 dla operacji żądanie prognozowania usługą sieci Web usługi można określić stawkę procentową poziomu ufności, który powinien mieć prognozy, który jest generowany. Przedział wiarygodności zawiera zakres wartości będących dobrymi danymi szacunkowymi dla prognozy popytu. Wiarygodność na poziomie 95% oznacza, że występuje 5-procentowe ryzyko, że prognoza popytu wykroczy poza zakres wiarygodności.
+-   W przypadku korzystania z usługi uczenia maszynowego Microsoft Azure dla prognozowania popytu w programie Dynamics 365 for Operations można określić wymagany procent poziomu zaufania dla generowanej prognozy. Przedział wiarygodności zawiera zakres wartości będących dobrymi danymi szacunkowymi dla prognozy popytu. Wiarygodność na poziomie 95% oznacza, że występuje 5-procentowe ryzyko, że prognoza popytu wykroczy poza zakres wiarygodności.
 
 Istnieje również możliwość ręcznego korygowania prognozy na stronie **Szczegóły prognozy popytu** poprzez modyfikację wartości w wierszu **Prognoza** w sekcji **Prognoza**.
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Monitorowanie dokładności prognozy](monitor-forecast-accuracy.md)
 
-[Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+[Generowanie bazowej prognozy statystycznej](generate-statistical-baseline-forecast.md)
+
+
 
 

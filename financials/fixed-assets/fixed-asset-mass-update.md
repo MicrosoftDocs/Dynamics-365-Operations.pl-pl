@@ -1,6 +1,6 @@
 ---
 title: "Grupowa aktualizacja środków trwałych"
-description: "Jeśli używasz książek, można zmienić konwencji amortyzacji dla grup środków trwałych, które są częścią tej samej książki."
+description: "Jeśli są stosowane księgi, istnieje możliwość zmiany konwencji amortyzacji dla grup środków trwałych będących częścią tej samej księgi."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-mass-update"></a>Grupowa aktualizacja środków trwałych
 
-Jeśli używasz książek, można zmienić konwencji amortyzacji dla grup środków trwałych, które są częścią tej samej książki.
+[!include[banner](../includes/banner.md)]
+
+
+Jeśli są stosowane księgi, istnieje możliwość zmiany konwencji amortyzacji dla grup środków trwałych będących częścią tej samej księgi.
 
 Jeśli na przykład firma znajduje się w Stanach Zjednoczonych i w czwartym kwartale roku wyeksploatowała ponad 40 procent swoich środków trwałych, musi użyć konwencji amortyzacji „w trakcie kwartału”. W celu zmiany wszystkich środków trwałych wymagających zmiany konwencji amortyzacji można użyć procesu aktualizacji grupowej. 
 
@@ -36,6 +39,8 @@ Podczas aktualizowania konwencji amortyzacji dla środków trwałych należy usu
 Aby zaktualizować konwencję amortyzacji dla środków trwałych, które zostały już zlikwidowane, najpierw trzeba usunąć istniejące transakcje likwidacji. Należy również usunąć wszystkie transakcje, które zostały wygenerowane w wyniku procesu likwidacji. 
 
 Po zaktualizowaniu konwencji amortyzacji dla środków trwałych można przetworzyć amortyzację oraz amortyzację dodatkową dla poszczególnych środków trwałych. Istnieje również możliwość ręcznego tworzenia korekt amortyzacji, jeśli są wymagane zmiany.
+
+
 
 
 

@@ -27,15 +27,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="position-forecasting"></a>Prognozowanie stanowisk
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Wydatki, które dotyczą pracowników, często stanowią znaczną część kosztów organizacji. Prognozowanie stanowisk umożliwia planowanie tych wydatków i uwzględnianie ich w planowaniu budżetu.
 
 ## <a name="position-forecasting-in-budget-planning"></a>Prognozowanie stanowisk w planowaniu budżetu
 
-[![Top graficzny](./media/graphic-top.png)](./media/graphic-top.png) 
+[![Grafika](./media/graphic-top.png)](./media/graphic-top.png) 
 
-Prognozowanie pozycji używa trzech głównych składników do zapewnienia realistyczny budżet kwoty dla pozycji wydatków. Kwoty te mogą następnie zostać uwzględnione w planie budżetu na potrzeby obliczania budżetu. 
+Prognozowanie stanowisk wykorzystuje trzy główne elementy w celu podania dokładnych kwot wydatków na dane stanowisko. Kwoty te mogą następnie zostać uwzględnione w planie budżetu na potrzeby obliczania budżetu. 
 
 Głównym składnikiem jest **stanowisko podlegające prognozie**; reprezentuje wszystkie dane kosztów, związanych z jednym stanowiskiem. Można utworzyć wiele wersji stanowiska podlegającego prognozie poprzez przypisanie różnych scenariuszy planu budżetu do każdej z tych wersji. Wiele wersji umożliwia iteratywne podejście do budżetowania umożliwia porównywanie scenariuszy. Każde stanowisko podlegające prognozie ma odpowiednią pozycję w module Zasoby ludzkie.
 
@@ -47,7 +50,7 @@ Głównym składnikiem jest **stanowisko podlegające prognozie**; reprezentuje 
 
 [![graphic1b](./media/graphic1b.png)](./media/graphic1b.png) 
 
-W typowy proces do prognozowania pozycji należy najpierw utworzyć składników instalacji (elementy kosztów budżetu i grupy wynagrodzenia). Stanowiska podlegające prognozie będą generowane na podstawie istniejących stanowisk. Następnie można wprowadzić korekty. Na przykład można dodać lub zakończyć stanowisko, zmienić stawki płac i koszty świadczeń oraz dodawać podwyżki. Można utworzyć wiele wersji stanowiska podlegającego prognozie, aby porównywać różne scenariusze budżetowania. Następnie można uwzględnić stanowiska podlegające prognozie w planach budżetu i wprowadzać koszty z pozycji prognozy jako wiersze planu budżetu.
+W typowym procesie prognozowania stanowisk najpierw należy utworzyć zestaw elementów (składniki kosztu budżetowego i grupę wynagrodzeń). Stanowiska podlegające prognozie będą generowane na podstawie istniejących stanowisk. Następnie można wprowadzić korekty. Na przykład można dodać lub zakończyć stanowisko, zmienić stawki płac i koszty świadczeń oraz dodawać podwyżki. Można utworzyć wiele wersji stanowiska podlegającego prognozie, aby porównywać różne scenariusze budżetowania. Następnie można uwzględnić stanowiska podlegające prognozie w planach budżetu i wprowadzać koszty z pozycji prognozy jako wiersze planu budżetu.
 
 Można tworzyć dodatkowe wersje stanowiska podlegającego prognozie w miarę korygowania planów budżetowych. Wersje te stanowią podstawę dla zmian.
 
@@ -64,9 +67,9 @@ Obliczenie kwoty kosztów składnika kosztu budżetowego używa dat obowiązywan
 
 Jeśli składnik kosztu jest oparty na wartości procentowej, należy określić składniki kosztu budżetowego, które służą jako podstawa do obliczenia.
 
-**Example** 
+**Przykład** 
 
-Jodi's organizacji jest zapewnienie zasiłki związane z 5 procent pracownika podstawowego wynagrodzenia. Jodi chce utworzyć składnik kosztu budżetowego używany dla tego kosztu. Tworzy nowy składnik kosztu budżetowego i przypisuje typ kosztu budżetowego **Świadczenie**.
+Organizacja Jodi pozwala na odpis za szkolenie w wysokości 5% wynagrodzenia podstawowego pracownika. Jodi chce utworzyć składnik kosztu budżetowego używany dla tego kosztu. Tworzy nowy składnik kosztu budżetowego i przypisuje typ kosztu budżetowego **Świadczenie**.
 
 Jodi nie chce, żeby przełożeni zmienili kwotę świadczenia. Dlatego wybiera opcję **Nie zezwalaj na zmiany kosztów** w polu **Zastąpienie stanowiska podlegającego prognozie**. Organizacja chce, żeby ten koszt był równomiernie przypisany do każdego miesiąca. Dlatego Jodi wybiera opcję **Kwartalnie** w polu **Metoda alokacji**. 
 
@@ -82,7 +85,7 @@ Podstawową funkcją grup wynagrodzeń jest przypisanie zestawu składników kos
 
 Grupy wynagrodzeń mogą także określać stawki zarobków na stanowisku podlegającym prognozie. Grupę ustawia się pod kątem obliczania prognozowanych zarobków na danym stanowisku według stawki godzinowej lub corocznego wynagrodzenia. Na karcie **Tabele stawek wynagrodzenia** siatka wynagrodzeń dla stawek płatności określa zarobki, które są dodawane do pozycji prognozy na podstawie przypisanego poziomu i kroku. Te siatki mogą być oparte na istniejących siatkach wynagrodzeń w module Zasoby ludzkie. Można również tworzyć nowe siatki wynagrodzeń dla planowania budżetu. 
 
-Daty wprowadzenia i data ważności tabelami stawek wynagrodzenia pozwalają na zmianę stawek płac w dowolnym dniu. Ta funkcja jest przydatna, np. gdy jednostka wynegocjowała całościową podwyżkę płac w środku cyklu budżetowego. W tym przypadku zmienić datę wygaśnięcia istniejącej tabeli na dzień przed datą zmiany stawki i dodać nową tabelę stawka, która rozpoczyna się od nowa data. Podczas tworzenia nowej tabeli Kurs, jeśli wybierzesz **Utwórz nową siatkę wynagrodzeń z istniejącej siatki**, można wybrać istniejącej tabeli Kurs z działu kadr. W tworzonej tabeli stawek opcja **Zmiana grupowa** pozwala stosować wzrost lub obniżenie według wartości procentowej lub stałej kwoty do wszystkich stawek na siatce. 
+Daty wprowadzenia i data ważności tabelami stawek wynagrodzenia pozwalają na zmianę stawek płac w dowolnym dniu. Ta funkcja jest przydatna, np. gdy jednostka wynegocjowała całościową podwyżkę płac w środku cyklu budżetowego. W takim przypadku zmienia się datę ważności istniejącej tabeli na dzień przed datą zmiany stawki i dodaje nową tabelę stawek, która zaczyna się od nowej daty. Podczas tworzenia nowej tabeli w przypadku wybrania opcji **Utwórz nową siatkę wynagrodzeń na podstawie istniejącej siatki** można wybrać istniejącą tabelę stawek z modułu Zasoby ludzkie. W tworzonej tabeli stawek opcja **Zmiana grupowa** pozwala stosować wzrost lub obniżenie według wartości procentowej lub stałej kwoty do wszystkich stawek na siatce. 
 
 Pola **Harmonogram podwyżki** i **Data podwyższenia** w grupie wynagrodzeń są używane, gdy trzeba utworzyć wzrost wynagrodzeń, ponieważ stanowiska przechodzą z jednego etapu do następnego. Typowym scenariuszem jest wzrost płac. Harmonogram podwyżek określa, czy do podwyżek etapowych używana jest data rocznicy stanowiska czy po prostu jeden ze zwykłych dni. Harmonogram podwyżek stosuje się do wszystkich pozycji prognozy w grupie wynagrodzeń. 
 
@@ -93,7 +96,7 @@ Składnik kosztu typu dochodowego, który jest zaznaczony w grupie wynagrodzeń,
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Tworzenie stanowisk podlegających prognozie dla istniejących stanowisk
 
-Dla najbardziej dokładne planowania budżetu, można utworzyć stanowisk podlegających prognozie przy użyciu danych z istniejących stanowisk w usłudze Microsoft Dynamics 365 dla operacji, niezależnie od tego, czy stanowisko jest obecnie z wypełnieniem lub bez. 
+W celu uzyskania jak najdokładniejszego planu budżetu można utworzyć stanowiska prognozy za pomocą szczegółów z istniejących stanowisk w programie Microsoft Dynamics 365 for Operations, bez względu na to, czy stanowisko w danej chwili zajęte, czy wolne. 
 
 Funkcja **Dodaj istniejące stanowiska** pokazuje wszystkie pozycje dla organizacji. Wybierając datę **Na dzień**, można zmienić listę stanowisk w taki sposób, aby zawierała stanowiska, które istniały na dzień w przeszłości lub, co zdarza się częściej, w przyszłości (np. na początku następnego cyklu budżetowego). Wybierz proces planowania budżetu i scenariusz planu budżetu, wybierz stanowiska na liście, a następnie kliknij **OK**, aby utworzyć stanowisk podlegające prognozie dla wybranych stanowisk. Pamiętaj, że możesz utworzyć tylko jedno stanowiska podlegające prognozie dla każdego istniejącego stanowiska w procesie planowania budżetu i scenariuszu. Można jednak utworzyć dodatkowe wersje, przypisują różne scenariusze planu budżetu. 
 
@@ -103,11 +106,11 @@ Po wybraniu składnika kosztu budżetowego kwota rocznego stałego wynagrodzenia
 
 Jeśli opcja **Przypisz grupę wynagrodzeń** ma wartość **Tak** i jeśli pracownik, który jest przypisany do stanowiska na podstawie stałego planu wynagrodzenie z etapami połączonego z grupą wynagrodzeń (jak to opisano wcześniej), poziom i etap pracownika są przypisane do stanowiska podlegającego prognozie wraz z grupą wynagrodzeń. Składnik kosztu budżetowego dochodów z grupy wynagrodzeń jest dodawany do stanowiska podlegającego prognozie i stosowana jest stawka płacy na poziomie i etapie z grupy wynagrodzeń. 
 
-Ustawienie opcji **Przypisz grupę wynagrodzeń** jest ważniejsze niż ustawienie **Przypisz składnik kosztu budżetowego** . Dwa ustawienia można w tym samym czasie. 
+Ustawienie opcji **Przypisz grupę wynagrodzeń** jest ważniejsze niż ustawienie **Przypisz składnik kosztu budżetowego** . Oba te ustawienia mogą być używane jednocześnie. 
 
 [![graphic4](./media/graphic4.png)](./media/graphic4.png) 
 
-Innym rozwiązaniem jest przypisanie daty rocznicy. Wybrana data (skorygowana data początkowa, data rozpoczęcia dla pracownika data rozpoczęcia zatrudnienia lub data stażu pracy) dla przypisanego pracownika jest następnie ustawiana jako data rocznicy stanowiska podlegającego prognozie i jest używana w celach informacyjnych gdy generowana jest podwyżka płacy.
+Inną opcją jest przypisanie daty rocznicy. Wybrana data (skorygowana data początkowa, data rozpoczęcia dla pracownika data rozpoczęcia zatrudnienia lub data stażu pracy) dla przypisanego pracownika jest następnie ustawiana jako data rocznicy stanowiska podlegającego prognozie i jest używana w celach informacyjnych gdy generowana jest podwyżka płacy.
 
 ### <a name="creating-new-forecast-positions"></a>Tworzenie nowych stanowisk podlegających prognozie
 
@@ -138,9 +141,9 @@ Na przykład wiersz składnika kosztu budżetowego od 1 stycznia 2017 r. do 30 c
 
 W przypadku zmiany wartości FTE dla stanowiska podlegającego prognozie, wiersze składnika kosztów budżetowych muszą być obliczane ponownie. Podobnie wiesze te muszą być obliczane ponownie po zmianie dat aktywacji lub przejścia na emeryturę. Zmiany tych dat mogą powodować aktualizację dat początkowej i końcowej składnika kosztu budżetowego, które muszą mieścić się w przedziale czasowym dla stanowiska podlegającego prognozie. Jeśli wymagane jest ponowne obliczenie, przycisk **Oblicz ponownie** staje się dostępny i wyświetlany jest komunikat „Wymaga obliczenia”. Ponowne obliczenie jest również wymagane po dodaniu lub usunięciu składnika kosztu budżetowego.
 
-**Example** 
+**Przykład** 
 
-Organizacja rozważa dwie opcje redukcji kosztów pozycji księgowego. Jedna możliwość to likwidacja stanowiska przed końcem roku. Druga to zmiana stanowiska na pół etatu dla całego roku. Brad utworzył stanowisko podlegające prognozie dla istniejącego stanowiska księgowego w scenariuszu bazowym. Kopiuje to bazowe stanowisko podlegające prognozie do scenariusza A, ustawia datę przejścia na emeryturę na 31 maja oblicza ponownie. Następnie Brad kopiuje stanowisko podlegające prognozie do scenariusza B, zmienia wartość FTE na **0,50** i oblicza ponownie. Brad ma teraz trzy wersje, z których każda ma zawiera sumy kosztów dostosowane do jego opcji.
+Organizacja rozważa dwie możliwości redukcji kosztów na stanowisku księgowego. Jedna możliwość to likwidacja stanowiska przed końcem roku. Druga to zmiana stanowiska na pół etatu dla całego roku. Brad utworzył stanowisko podlegające prognozie dla istniejącego stanowiska księgowego w scenariuszu bazowym. Kopiuje to bazowe stanowisko podlegające prognozie do scenariusza A, ustawia datę przejścia na emeryturę na 31 maja oblicza ponownie. Następnie Brad kopiuje stanowisko podlegające prognozie do scenariusza B, zmienia wartość FTE na **0,50** i oblicza ponownie. Brad ma teraz trzy wersje, z których każda ma zawiera sumy kosztów dostosowane do jego opcji.
 
 #### <a name="assigning-a-compensation-group"></a>Przypisywanie grupy wynagrodzeń
 
@@ -160,9 +163,9 @@ Jeśli została kliknięta pozycja **Generuj podwyżki** proces jest uruchamiany
 
 Aktualizacje stanowisk podlegających prognozie mogą też pochodzić z innych obszarów, takich jak strony składnika kosztu budżetowego czy konfiguracji grupy wynagrodzeń. Można także modyfikować stanowiska podlegające prognozie przy użyciu procesu masowej aktualizacji. 
 
-Są dwie opcje dostępne na **budżetu kosztów element** strona konfiguracji: **dodać do pozycji** i **aktualizacja stanowisk**. Opcja **Dodaj do stanowisk** dodaje składniki kosztu budżetowego do zaznaczonych stanowisk podlegających prognozie. Jeśli element jest już przypisany do stanowiska podlegającego prognozie, to stanowisko jest pomijane. Opcja **Aktualizuj stanowisk** ma zastosowanie do bieżących wartości (konto główne, procent, kwota roczna itp.) do wybranych stanowisk podlegających prognozie. 
+Dostępne są dwie opcje na stronie konfiguracji **Składnik kosztu budżetowego**: **Dodaj do stanowisk** i **Aktualizuj stanowiska**. Opcja **Dodaj do stanowisk** dodaje składniki kosztu budżetowego do zaznaczonych stanowisk podlegających prognozie. Jeśli element jest już przypisany do stanowiska podlegającego prognozie, to stanowisko jest pomijane. Opcja **Aktualizuj stanowisk** ma zastosowanie do bieżących wartości (konto główne, procent, kwota roczna itp.) do wybranych stanowisk podlegających prognozie. 
 
-Każdy proces ma podobną stronę, na której można wybrać stanowiska podlegające prognozie. Na stronie **Dodaj do stanowisk** są pokazane wszystkie stanowiska podlegające prognozie, które są dostępne do wybrania, natomiast na stronie **Aktualizuj stanowiska** widać tylko te stanowiska podlegające prognozie, które mają już przypisany składnik kosztu budżetu. (W związku z tym **aktualizacja stanowisk** stronie znajdziesz sposób, aby dowiedzieć się, które prognozowane pozycje mają już element kosztów dołączone.) Umożliwia przenoszenie stanowisk podlegających prognozie od górnej siatce się niższe siatki, aby uwzględnić je w aktualizacji. 
+Każdy proces ma podobną stronę, na której można wybrać stanowiska podlegające prognozie. Na stronie **Dodaj do stanowisk** są pokazane wszystkie stanowiska podlegające prognozie, które są dostępne do wybrania, natomiast na stronie **Aktualizuj stanowiska** widać tylko te stanowiska podlegające prognozie, które mają już przypisany składnik kosztu budżetu. (Dzięki temu na stronie **Aktualizuj stanowiska** można wyszukiwać stanowiska podlegające prognozie, które mają już dołączony składnik kosztu). Przenosisz stanowiska podlegające prognozie z górnej siatki do dolnej siatki, by ująć je w aktualizacji. 
 
 Należy pamiętać, że funkcja **Zmień daty** na karcie **obliczania kosztów** natychmiastowo zmienia daty początkową i końcową składnika kosztu budżetowego dla stanowisk objętych prognozą. Żadne opcje nie są dostępne. 
 
@@ -176,7 +179,7 @@ Proces ponownego obliczania jest automatycznie używany dla dowolnego stanowiska
 
 [![graphic6](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
-Celem tworzenia i modyfikowania pozycji prognozy jest dodanie ich do planów budżetu tak, aby plany budżetu obejmują najbardziej dokładne kwoty budżetu. Istnieją dwie metody dodawania pozycji prognozy do planów budżetu. Można użyć procesu generowania lub procesu wybierania w planie budżetu.
+Celem tworzenia i modyfikowania pozycji prognozy jest dodawanie ich do planów budżetu, tak aby te plany budżetu obejmowały najdokładniejsze kwoty budżetu. Istnieją dwie metody dodawania pozycji prognozy do planów budżetu. Można użyć procesu generowania lub procesu wybierania w planie budżetu.
 
 ### <a name="generating-a-budget-plan-from-forecast-positions"></a>Generowanie planu budżetu na podstawie pozycji prognozy
 
@@ -215,5 +218,7 @@ Zarówno dla procesu generowania, jak i dla procesu wyboru, data początkowa wie
 Wiersze planu budżetu pokazują źródło kwot budżetu (liczba stanowiska podlegającego prognozie), ale nie są połączone. Dlatego zmiany stanowiska podlegającego prognozie nie są wyświetlane w wierszu planu budżetu, a zmiany wiersza planu budżetu są widoczne w stanowisku podlegającym prognozie. W przypadku zmiany stanowiska podlegającego prognozie i jeśli aktualizacje mają być ujęte w planie budżetu, trzeba ponownie umieścić stanowisko podlegające prognozie w planie. Należy jednak pamiętać, że ten proces usuwa wszystkie wiersze, którym przypisano to stanowiska podlegającego prognozie. Dlatego wszelkie zmiany wprowadzone w tych wierszach są usuwane. 
 
 Aby wyświetlić, do których planach budżetowych dodano stanowisko podlegające prognozie, można wygenerować raport **Pozycje prognozy według planów budżetu**. Ewentualnie na stanowisku podlegającym prognozie można otworzyć skróconą kartę **Skojarzone plany budżetu**, aby wyświetlić plany.
+
+
 
 

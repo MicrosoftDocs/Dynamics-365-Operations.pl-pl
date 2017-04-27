@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-contracts"></a>Umowy dotyczące projektu
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera opisy i przykłady umów dotyczących projektów, które można tworzyć dla różnych typów projektów i źródeł finansowania, oraz opis metod zarządzania umowami i fakturowania odbiorców projektów w programie Microsoft Dynamics 365 for Operations.
 
 Typ projektu tworzonego dla umowy dotyczącej projektu określa metodę wystawiania faktur dla klientów projektu. Umowę dotyczącą projektu i powiązany projekt można zmienić, ale nie można zmienić typu projektu. 
@@ -80,7 +83,7 @@ Poniższa tabela zawiera scenariusze zarządzania alokacją finansowania między
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Scenario</strong></td>
+<td><strong>Scenariusz</strong></td>
 <td><strong>Źródło finansowania </strong></td>
 <td><strong>Procent alokacji </strong></td>
 <td><strong>Priorytet alokacji </strong></td>
@@ -192,7 +195,7 @@ Poniższa tabela przedstawia ten scenariusz w bardziej szczegółowy sposób.
 <tbody>
 <tr class="odd">
 <td><strong>Zespół </strong></td>
-<td><strong>Details</strong></td>
+<td><strong>Szczegóły</strong></td>
 </tr>
 <tr class="even">
 <td>Reguły finansowania</td>
@@ -220,17 +223,17 @@ Poniższa tabela przedstawia ten scenariusz w bardziej szczegółowy sposób.
 </tr>
 <tr class="odd">
 <td>Transakcja 2</td>
-<td><strong>Kwota transakcji:</strong> 5,000.00<strong>finansowanie:</strong> transakcja opłacana jest według wszystkie trzy reguły. <strong>Reguła 1</strong><ph id="t1">
-</ph><ul>
+<td><strong>Kwota transakcji:</strong> 5000,00<strong>Finansowanie:</strong> Transakcja jest opłacana zgodnie ze wszystkimi trzema regułami.<strong>Reguła 1</strong>
+<ul>
 <li>Źródło finansowania 2: 450,00</li>
 <li>Źródło finansowania 3: 450,00</li>
-</ul><bpt id="t2">
-< silne ></bpt> Zasada nr 2</strong><ph id="t3">
-</ph><ul>
+</ul>
+<strong>Reguła 2</strong>
+<ul>
 <li>Źródło finansowania 3: 250,00 (= 750,00 – 50,00 – 450,00)</li>
-</ul><bpt id="t4">
-< silne ></bpt> Reguła 3</strong><ph id="t5">
-</ph><ul>
+</ul>
+<strong>Reguła 3</strong>
+<ul>
 <li>Źródło finansowania 1: 3850,00 (= 5000,00 – 450,00 – 450,00 – 250,00)</li>
 </ul></td>
 </tr>
@@ -339,5 +342,7 @@ Podczas konfigurowania umowy dotyczącej projektu, zgadzasz się wystawianie com
 -   Tworzysz fakturę dla odbiorcy na koniec każdego miesiąca kalendarzowego, w trakcie trwania projektu.
 
 Podczas pierwszego miesiąca, łącznie rejestrowanych jest 800 godzin pracy przez konsultantów pracujących nad projektem. Koszt materiałów biurowych do obciążenia projektu wynosi 2000. Dlatego na koniec miesiąca, można utworzyć fakturę na sumę 122,000, obliczoną jako 800 godzin przy 150 za godzinę plus 2000 więcej za materiały biurowe.
+
+
 
 

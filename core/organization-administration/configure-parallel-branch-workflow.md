@@ -1,5 +1,5 @@
 ---
-title: "Konfigurowanie przepływu pracy równoległej gałęzi"
+title: "Konfigurowanie odgałęzienia równoległego w przepływie pracy"
 description: "Aby skonfigurować gałąź równoległą, należy wykonać następujące procedury w edytorze przepływu pracy."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-parallel-branch-in-a-workflow"></a>Konfigurowanie przepływu pracy równoległej gałęzi
+# <a name="configure-a-parallel-branch-in-a-workflow"></a>Konfigurowanie odgałęzienia równoległego w przepływie pracy
+
+[!include[banner](../includes/banner.md)]
+
 
 Aby skonfigurować gałąź równoległą, należy wykonać następujące procedury w edytorze przepływu pracy.
 
@@ -32,7 +35,7 @@ Gałąź równoległa to zasadniczo przepływ pracy, który jest wykonywany w ko
 
 ## <a name="name-a-branch"></a>Nazywanie gałęzi
 Wykonaj następujące kroki, aby nazwać odgałęzienie równoległe.
-1.  Równoległa gałąź kliknij prawym przyciskiem myszy, a następnie kliknij **właściwości**. **Właściwości** formularza jest wyświetlany.
+1.  Kliknij prawym przyciskiem gałąź równoległą i wybierz polecenie **Właściwości**. Zostanie wyświetlony formularz **Właściwości**.
 2.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
 3.  W polu **Nazwa** wprowadź unikatową nazwę gałęzi równoległej.
 4.  Kliknij przycisk **Zamknij**.
@@ -40,7 +43,7 @@ Wykonaj następujące kroki, aby nazwać odgałęzienie równoległe.
 ## <a name="design-and-configure-the-elements-of-a-branch"></a>Projektowanie i konfigurowanie elementów gałęzi
 Wykonaj następujące kroki, aby zaprojektować i skonfigurować elementy odgałęzienia równoległego.
 1.  Kliknij dwukrotnie gałąź równoległą.
-2.  Przeciągnij elementy przepływu pracy na kanwę, a następnie je skonfiguruj, tak samo jak przy tworzeniu jakiegokolwiek innego przepływu pracy. Aby uzyskać więcej informacji zobacz Tworzenie przepływu pracy.
+2.  Przeciągnij elementy przepływu pracy na kanwę, a następnie je skonfiguruj, tak samo jak przy tworzeniu jakiegokolwiek innego przepływu pracy. Aby uzyskać więcej informacji, zobacz temat Tworzenie przepływu pracy.
 
 
 
@@ -48,5 +51,7 @@ Wykonaj następujące kroki, aby zaprojektować i skonfigurować elementy odgał
 --------
 
 [Utwórz przepływ pracy](create-workflow.md)
+
+
 
 

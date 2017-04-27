@@ -26,12 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="general-ledger"></a>Księga główna 
 
+[!include[banner](../includes/banner.md)]
+
+
 Moduł Księga główna służy do definiowania rekordów finansowych dla firmy i zarządzania nimi. Księga główna to rejestr zapisów debetowych i kredytowych. Te wpisy są sklasyfikowane przy użyciu kont wymienionych w planie kont. 
 
 Można przeprowadzić alokację lub dystrybucję kwot pieniężnych do jednego lub kilku kont albo do kombinacji kont i wymiarów opartych na regułach alokacji. Istnieją dwa typy alokacji: stałe i zmienne. Można również rozliczać transakcje między kontami księgowymi i przeszacować kwoty w walucie. Na koniec roku obrachunkowego należy wygenerować transakcje zamknięcia i przygotować konta do nowego roku obrachunkowego. Funkcja konsolidacji umożliwia połączenie wyników finansowych dla kilku oddziałów firmy w jedne wyniku dla skonsolidowanej organizacji. Oddziały mogą znajdować się w tej samej bazie danych programu Microsoft Dynamics 365 for Operations lub w oddzielnych bazach danych.
 
 # <a name="sales-tax"></a>Podatek
 Każda firma zbiera i płaci podatki w różnych urzędach. Przepisy i stawki różnią się w zależności od kraju/regionu, województwa, powiatu i miasta. Ponadto reguły muszą być aktualizowane okresowo, jeśli zmieniają się wymagania urzędów skarbowych. Kody podatków zawierają podstawowe informacje o wysokości podatków pobranych i odprowadzonych do urzędu skarbowego. Podczas konfigurowania kodów podatków można zdefiniować kwoty lub wartości procentowe, które muszą zostać pobrane. Można również zdefiniować różne metody, za pomocą których te kwoty lub wartości procentowe są stosowane do kwoty transakcji. Tematy w tej sekcji zawierają informacje o sposobie ustawiania kodów podatków dla metod i stawek wymaganych przez urzędy skarbowe.
+
+
 
 
 

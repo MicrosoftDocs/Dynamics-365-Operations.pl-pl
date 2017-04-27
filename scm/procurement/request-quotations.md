@@ -1,5 +1,5 @@
 ---
-title: Zapytanie ofertowe (ZO)
+title: Zapytania ofertowe (RFQ)
 description: "W tym artykule omówiono funkcjonalność zapytań ofertowych (ZO), które organizacje wystawiają, kiedy muszą kupić towary lub usługi, a chcą otrzymać konkurencyjne oferty od kilku dostawców. W ZO dostawcy są proszeni o podanie cen i terminów dostaw dla ilości towarów określonych przez użytkownika. Można również poprosić dostawców, aby określili, czy są jakieś dodatkowe opłaty, takie jak koszty wysyłki, albo zniżki za duże zamówienia lub szybką zapłatę faktury."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="request-for-quotations-rfqs"></a>Zapytanie ofertowe (ZO)
+# <a name="request-for-quotations-rfqs"></a>Zapytania ofertowe (RFQ)
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule omówiono funkcjonalność zapytań ofertowych (ZO), które organizacje wystawiają, kiedy muszą kupić towary lub usługi, a chcą otrzymać konkurencyjne oferty od kilku dostawców. W ZO dostawcy są proszeni o podanie cen i terminów dostaw dla ilości towarów określonych przez użytkownika. Można również poprosić dostawców, aby określili, czy są jakieś dodatkowe opłaty, takie jak koszty wysyłki, albo zniżki za duże zamówienia lub szybką zapłatę faktury.
 
@@ -37,9 +40,9 @@ Proces zapytania ofertowego obejmuje następujące zadania:
 
 Na poniższej ilustracji przedstawiono przegląd procesu ZO.  
 
-[![Wniosek o procesu oferty](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
+[![Proces zapytań ofertowych](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
 
-ZO można tworzyć z zamówień planowanych lub zapotrzebowań na zakup albo wprowadzać je ręcznie. Tworzone ZO jest nazywane sprawą ZO i jest to bazowy dokument używany do wystawiania ZO dla każdego dostawcy. Po przygotować sprawy ZO i dodawanie dostawców, kliknij przycisk **wysyłania** w przypadku ZO i ZO dziennika jest generowany dla każdego dostawcy, który wysłał ZO do. Można skonfigurować ustawienia zarządzania drukowaniem dla akcji wysyłania do drukowania raportu dla każdego dostawcy w archiwum lub wysłać raport na adres e-mail każdego dostawcy. Ponadto arkusz ZO dla każdego dostawcy może służyć do generowania raportu, który można wysłać lub później ponownie wysłać do dostawcy. Można również skonfigurować akcję wysłania, aby wygenerować arkusz odpowiedzi, który mogą wypełniać dostawcy.  
+ZO można tworzyć z zamówień planowanych lub zapotrzebowań na zakup albo wprowadzać je ręcznie. Tworzone ZO jest nazywane sprawą ZO i jest to bazowy dokument używany do wystawiania ZO dla każdego dostawcy. Po przygotowanie sprawy ZO i dodaniu dostawców kliknij przycisk **Wyślij** w sprawie ZO. Arkusz ZO jest tworzony dla każdego dostawcy, któremu wysłano ZO. Można skonfigurować ustawienia zarządzania drukowaniem dla akcji wysyłania, aby wydrukować raport dla każdego dostawcy w celu archiwizowania, lub wysłać raporty na adresy e-mail dostawców. Ponadto arkusz ZO dla każdego dostawcy może służyć do generowania raportu, który można wysłać lub później ponownie wysłać do dostawcy. Można również skonfigurować akcję wysłania, aby wygenerować arkusz odpowiedzi, który mogą wypełniać dostawcy.  
 
 Jeśli trzeba zmienić ZO po jego wysłaniu, można wysłać ponownie ZO do dostawców.  
 
@@ -49,18 +52,18 @@ Jeśli w przypadku określonego dostawcy wymagana jest druga iteracja odpowiedzi
 
 Po dodaniu do sprawy ZO kryteriów punktowania, odpowiedzi na ZO będą miały panel punktowania, w którym można wprowadzać oceny. Łączny wynik będzie wyświetlany podczas porównywania odpowiedzi na stronie **porównania odpowiedzi**, gdzie można porównać również inne dane dotyczące odpowiedzi, takie jak cena wiersza, data dostawy i łączna cena.  
 
-Po podjęciu decyzji dotyczących oferty lub częściowej oferty, można je przyjąć i odrzucić pozostałe. Generowane są arkusze przyjęcia, odrzucenia i odpowiednie raporty. Te będzie można wydrukować, archiwizowane i wysyłane zgodnie z ustawieniami zarządzania drukowaniem. Po zaakceptowaniu oferty lub określonych wierszy oferty, generowane jest zamówienie zakupu lub umowy zakupu lub zapotrzebowania na zakup jest aktualizowana w zależności od typu ZO zakupu. Można utworzyć umowę handlową, której można następnie użyć w odpowiedziach, bez względu na to, czy je odrzucasz czy akceptujesz.  
+Po podjęciu decyzji dotyczących oferty lub częściowej oferty, można je przyjąć i odrzucić pozostałe. Generowane są arkusze przyjęcia, odrzucenia i odpowiednie raporty. Zostaną one wydrukowane, zarchiwizowane i wysłane na podstawie ustawień zarządzania drukowaniem. Po zaakceptowaniu oferty lub określonych wierszy oferty aktualizowane są zamówienie zakupu, umowa zakupu lub zapotrzebowanie na zakup, w zależności od typu zakupu ZO. Można utworzyć umowę handlową, której można następnie użyć w odpowiedziach, bez względu na to, czy je odrzucasz czy akceptujesz.  
 
 Stan ZO pojawiają się w nagłówku ZO i zależy od stanu wierszy ZO. Ten stan wskazuje zakres, do którego zostało przetworzone ZO. Każde ZO ma dwie wartości stanu: najniższy i najwyższy. Najniższy stan jest najmniej zaawansowanym etapem wiersza ZO, a najwyższy stan jest najbardziej zaawansowanym etapem wiersza w ZO. Na przykład, jeśli najmniej zaawansowany stan w ZO jest dla wiersza, który został utworzony, najniższy stan dla ZO to **Utworzone**. Jeśli najbardziej zaawansowany stan w ZO jest dla wiersza, który został wysłany do dostawców, najwyższy stan dla ZO to **Wysłane**. Stany są automatycznie aktualizowane w trakcie przetwarzania ZO.  
 
 Można przeglądać najniższe i najwyższe stany nagłówka ZO na stronie **Wszystkie zapytania ofertowe**. Można przeglądać najniższe i najwyższe stany nagłówka ZO na stronie karcie **Wiersze** na stronie **Zapytania ofertowe**.  
 
-Oto sekwencji stanów do przetwarzania zapytań ofertowych:
+Sekwencja stanów dla przetwarzania ZO jest następująca:
 
-1.  **Created**
-2.  **Sent**
-3.  **Received**
-4.  **Zaakceptowane**/**anulowane**/**odrzucone**
+1.  **Utworzone**
+2.  **Wysłane**
+3.  **Odebrane**
+4.  **Zaakceptowane**/**Anulowane**/**Odrzucone**
 
 Stany zostaną opisane bardziej szczegółowo w kolejnych rozdziałach tego artykułu.
 
@@ -72,7 +75,7 @@ Aby można było tworzyć sprawy ZO, należy skonfigurować informacje ZO na str
 -   Informacje o dostawie i warunki płatności.
 -   Pola, które powinny znajdować się w odpowiedzi na ZO
 
-Można zastąpić te wartości dla określonej sprawy ZO. Należy także skonfigurować proces poprawki. W ramach tej konfiguracji można włączyć pole blokowania. Jeśli pole blokowania jest włączone, najpierw pracownik działu zaopatrzenia, który chce zmienić ZO, musi kliknąć **Utwórz** w sekcji **Poprawki** na karcie **Oferta**. Po zaktualizowaniu ZO z poprawką, działu zaopatrzenia należy wykonać proces klikając **Finalize**. ** ** Finalizuj Akcja generuje wiadomość e-mail powiadamiającą dostawców o zmienionym ZO. Szablon powiadomienia e-mail przesyłanego do dostawców można wybrać na stronie **Parametry modułu Zaopatrzenie i sourcing**. Po utworzeniu szablon może zawierać następujące tokeny wymiany:
+Można zastąpić te wartości dla określonej sprawy ZO. Należy także skonfigurować proces poprawki. W ramach tej konfiguracji można włączyć pole blokowania. Jeśli pole blokowania jest włączone, najpierw pracownik działu zaopatrzenia, który chce zmienić ZO, musi kliknąć **Utwórz** w sekcji **Poprawki** na karcie **Oferta**. Po aktualizacji ZO i wprowadzeniu poprawki pracownik działu zaopatrzenia musi ukończyć proces, klikając przycisk **Finalizuj**.** **Akcja Finalizuj generuje wiadomość e-mail powiadamiającą dostawcę o poprawionym ZO. Szablon powiadomienia e-mail przesyłanego do dostawców można wybrać na stronie **Parametry modułu Zaopatrzenie i sourcing**. Po utworzeniu szablon może zawierać następujące tokeny wymiany:
 
 -   %Przyczyna zwrotu oferty%
 -   %Przyczyna sporządzenia poprawki%
@@ -124,7 +127,7 @@ W poniższej tabeli przedstawiono, jak zmienia się stan ZO przy tworzeniu ZO i 
 
 |                                    |                              |                                                 |                            |                             |
 |------------------------------------|------------------------------|-------------------------------------------------|----------------------------|-----------------------------|
-| **Action**                         | **Lowest RFQ header status** | **Highest RFQ header status**                   | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Akcja**                         | **Najniższy stan nagłówka ZO** | **Najwyższy stan nagłówka ZO**                   | **Najniższy stan wiersza ZO** | **Najwyższy stan wiersza ZO** |
 | Utwórz nagłówek i wiersz ZO.    | Utworzone                      | Utworzone                                         | Utworzone                    | Utworzone                     |
 | Wysyłanie ZO do określonego dostawcy. | Wysłano                         | Wysłano                                            | Wysłano                       | Wysłano                        |
 | Dodwanie nowego dostawcy.                | Utworzone                      | Wysłane (ZO zostało wysłane do tylko jednego dostawcy.) | Utworzony                    | Wysłano                        |
@@ -146,7 +149,7 @@ Jeśli do sprawy ZO dołączony jest kwestionariusz, trzeba ręcznie wpisać odp
 
 Jeśli trzeba wprowadzić wiersze alternatywne, a sprawa ZO to umożliwia, na skróconej karcie **Wiersze oferty zakupu** kliknij **Dodaj wiersz**. Następnie wprowadź informacje o produkcie, takie jak ilość, cena i rabaty, kod towaru lub kategoria zaopatrzenia.  
 
-Jeśli została wprowadzona odpowiedź, ale wymaga nowej oferty od dostawcy, można ponownie wysłać ZO. Spowoduje to wygenerowanie nowego arkusza i raport, który można użyć, aby zażądać zmian od dostawcy.  
+Jeśli została wprowadzona odpowiedź, ale wymagana jest nowa oferty od dostawcy, można ponownie wysłać ZO. Spowoduje to wygenerowanie nowego arkusza i raportu, za pomocą którego można poprosić dostawcę o wprowadzenie zmian.  
 
 Podsumowanie wszystkich ZO i ich stanów odpowiedzi jest widoczne na stronie **Kolejne czynności dla zapytania ofertowego**.  
 
@@ -154,7 +157,7 @@ W poniższej tabeli przedstawiono, jak zmienia się stan ZO podczas odbierania o
 
 |                                                |                       |                        |                              |                               |                            |                             |
 |------------------------------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**                                     | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Akcja**                                     | **Najniższy stan oferty** | **Najwyższy stan oferty** | **Najniższy stan nagłówka ZO** | **Najwyższy stan nagłówka ZO** | **Najniższy stan wiersza ZO** | **Najwyższy stan wiersza ZO** |
 | Rejestrowanie oferty jednego dostawcy i zapisywanie jej.        | Wysłano                  | Otrzymane               | Wysłano                         | Otrzymane                      | Wysłano                       | Otrzymane                    |
 | Rejestrowanie oferty drugiego dostawcy i zapisywanie jej. | Odebrano              | Odebrano               | Odebrano                     | Odebrano                      | Odebrano                   | Odebrano                    |
 
@@ -183,9 +186,11 @@ W poniższej tabeli przedstawiono, jak zmienia się stan ZO w przypadku akceptow
 
 |                         |                       |                        |                              |                               |                            |                             |
 |-------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**              | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Akcja**              | **Najniższy stan oferty** | **Najwyższy stan oferty** | **Najniższy stan nagłówka ZO** | **Najwyższy stan nagłówka ZO** | **Najniższy stan wiersza ZO** | **Najwyższy stan wiersza ZO** |
 | Zaakceptowanie jednej z ofert. | Otrzymane              | Zaakceptowany               | Odebrano                     | Zaakceptowany                      | Odebrano                   | Zaakceptowany                    |
 | Odrzucenie innych ofert.  | Odrzucono              | Zaakceptowany               | Odrzucono                     | Zaakceptowany                      | Odrzucono                   | Zaakceptowany                    |
+
+
 
 
 

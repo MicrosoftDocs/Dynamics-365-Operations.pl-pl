@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-locations"></a>Magazyny
 
+[!include[banner](../includes/banner.md)]
+
+
 Lokalizacje w magazynach są używane w podstawowym module zarządzania magazynem (WMS I) do ustalania, gdzie towary będą przechowywane i skąd będą pobierane w magazynie zarządzanym w ramach WMS I.
 
 Ten temat dotyczy funkcji w module Zarządzanie zapasami. Nie ma zastosowania do funkcji w module Zarządzanie magazynem.
@@ -64,6 +67,8 @@ Można skopiować lokalizacje z jednego magazynu do innego i tworzyć lokalizacj
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Utwórz nowy układ magazynu (Przewodnik zadania)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+[Tworzenie nowego układu magazynu (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+
+
 
 

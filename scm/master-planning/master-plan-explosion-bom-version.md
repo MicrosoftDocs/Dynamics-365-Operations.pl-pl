@@ -1,6 +1,6 @@
 ---
-title: "Rozłożenie wersji BOM-u"
-description: "Ten artykuł wyjaśnia planowania scenariusz, który polega na rozłożenie zestawieniem komponentów (BOM) wersja głównego."
+title: "Rozłożenie wersji BOM"
+description: "Ten artykuł wyjaśnia scenariusz planowania głównego, który obejmuje rozłożenie wersji listy składowej (BOM)."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="explosion-of-a-bom-version"></a>Rozłożenie wersji BOM-u
+# <a name="explosion-of-a-bom-version"></a>Rozłożenie wersji BOM
 
-Ten artykuł wyjaśnia planowania scenariusz, który polega na rozłożenie zestawieniem komponentów (BOM) wersja głównego.
+[!include[banner](../includes/banner.md)]
+
+
+Ten artykuł wyjaśnia scenariusz planowania głównego, który obejmuje rozłożenie wersji listy składowej (BOM).
 
 Pomyślne rozłożenie popytu wersji listy składowej (BOM) tworzy popyt na każdy towar wiersza BOM w określonym dziale i prawdopodobnie w określonym magazynie. BOM właściwy dla oddziału może mieć określony magazyn dla każdego wiersza. Ponadto dla każdego wiersza BOM ustawienia wymiarów towaru określają, czy magazyn jest wymagany. Wynikowy popyt poszczególnych towarów wiersza BOM staje się z kolei punktem początkowym dodatkowego rozłożenia popytu. Niniejszy scenariusz planowania głównego wymaga spełnienia następujących warunków:
 
@@ -41,8 +44,10 @@ Poniższy rysunek przedstawia sposób przetwarzania rozłożenia popytu planu og
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Planowanie główne — jak ustalić wersję BOM](master-plan-bom-version-determined.md)
+[Planowanie główne — jak określa się wersję BOM](master-plan-bom-version-determined.md)
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Planowanie główne a funkcjonalność wielooddziałowości](master-plan-multisite-functionality.md)
+
+
 
 

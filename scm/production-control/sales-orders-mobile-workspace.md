@@ -1,6 +1,6 @@
 ---
-title: "Obszar mobilnych zamówień sprzedaży dla Microsoft Dynamics 365 dla operacji aplikacji"
-description: "Z obszaru roboczego mobilnych zamówień sprzedaży, możesz na bieżąco w zamówieniach sprzedaży w dowolnym miejscu i o dowolnej porze."
+title: "Mobilny obszar roboczy Zamówienia sprzedaży dla aplikacji Microsoft Dynamics 365 for Operations"
+description: "Mobilny obszar roboczy zamówień sprzedaży pozwala na bieżąco monitorować zamówienia sprzedaży w dowolnym miejscu i o dowolnej porze."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,93 +25,93 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="sales-orders-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Obszar mobilnych zamówień sprzedaży dla Microsoft Dynamics 365 dla operacji aplikacji
+# <a name="sales-orders-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Mobilny obszar roboczy Zamówienia sprzedaży dla aplikacji Microsoft Dynamics 365 for Operations
 
-Z obszaru roboczego mobilnych zamówień sprzedaży, możesz na bieżąco w zamówieniach sprzedaży w dowolnym miejscu i o dowolnej porze. 
+Mobilny obszar roboczy zamówień sprzedaży pozwala na bieżąco monitorować zamówienia sprzedaży w dowolnym miejscu i o dowolnej porze. 
 
 <a name="prerequisites"></a>Wymagania wstępne
 -------------
 
 | Wymaganie wstępne                                                         | opis                                                                                                                                                                   |
 |----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Przeczytaj na temat usługi Microsoft Dynamics 365 dla operacji platformy mobilnej | [Dynamics 365 dla operacji platformy mobilnej](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
-| Dynamics 365 dla operacji                                          | Upewnij się, że używasz środowisku Microsoft Dynamics 365 dla wersji operacji 1611 i Microsoft Dynamics dla platform operacji aktualizacji 3 (listopad 2016). |
-| Poprawka KB 3215650                                                    | Zainstaluj poprawkę, aby włączyć obszary robocze, które znajdują się w usłudze Microsoft Dynamics 365 dla operacji.                                                                       |
-| Przenośne urządzenie, które ma 365 Dynamics dla operacji zainstalowaną aplikację | Pobierz 365 Dynamics dla operacji aplikacji ze sklepu internetowego.                                                                                                      |
+| Przeczytaj na temat platformy mobilnej Microsoft Dynamics 365 for Operations | [Platforma komórkowa Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
+| Dynamics 365 for Operations                                          | Upewnij się, że używasz środowiska, w którym zainstalowano program Microsoft Dynamics 365 for Operations w wersji 1611 oraz aktualizację nr 3 platformy Microsoft Dynamics 365 for Operations (z listopada 2016 r.). |
+| Poprawka KB 3215650                                                    | Zainstaluj poprawkę, która włączy obsługę obszarów roboczych zawartych w usłudze Microsoft Dynamics 365 for Operations.                                                                       |
+| Urządzenie przenośne, które ma zainstalowaną aplikację Dynamics 365 for Operations | Pobierz aplikację Dynamics 365 for Operations ze sklepu z aplikacjami dla urządzeń komórkowych.                                                                                                      |
 
 ## <a name="overview"></a>Przegląd
-Ten obszar roboczy mobilnych uzyskuje dostęp do 365 Dynamics dla operacji aplikacji i pozwala wyświetlić szczegółowe informacje dotyczące każdego zamówienia sprzedaży, takie jak stan zlecenia, klienta, informacje kontaktowe i informacje kontaktowe przyjmujący zamówienia. Mobilne obszar roboczy zapewnia natychmiastowy przegląd zamówień sprzedaży. Można wyświetlić zamówienia sprzedaży przez nabywcę, lub przeglądanie wszystkich zamówień sprzedaży lub wyświetlanie informacji na temat określonego zamówienia sprzedaży. Mobilne obszar roboczy zawiera dwa widoki, aby pomóc w analizie zamówień sprzedaży w głębi.
+Ten mobilny obszar roboczy uzyskuje dostęp do aplikacji Dynamics 365 for Operations i pozwala wyświetlać szczegółowe informacje o każdym zamówieniu sprzedaży, takie jak stan zamówienia, informacje kontaktowe odbiorcy i informacje kontaktowe osoby przyjmującej zamówienie. Mobilny obszar roboczy zapewnia natychmiastowy podgląd zamówień sprzedaży. Można wyświetlić zamówienia sprzedaży z podziałem na odbiorców lub wszystkie zamówienia sprzedaży albo informacje o określonym zamówieniu sprzedaży. Mobilny obszar roboczy oferuje dwa widoki pomagające dogłębnie analizować zamówienia sprzedaży.
 
-### <a name="view-all-sales-orders"></a>Przeglądanie wszystkich zamówień sprzedaży
+### <a name="view-all-sales-orders"></a>Wyświetl wszystkie zamówienia sprzedaży
 
 Ten widok wyświetla listę wszystkich zamówień sprzedaży.
 
--   Użyj jednego z następujących filtrów, aby wybrać zamówień sprzedaży, które chcesz wyświetlić.
-    -   Wyszukaj według zamówienia sprzedaży
-    -   Szukaj według konta odbiorcy
-    -   Wyszukiwanie według nazwy odbiorcy
-    -   Wyszukaj według stanu
-    -   Wyszukaj według statusu wydania
-    -   Wyszukaj według Data i godzina utworzenia
+-   Użyj jednego z następujących filtrów, aby wybrać zamówienia sprzedaży, które chcesz obejrzeć.
+    -   Wyszukaj wg zamówień sprzedaży
+    -   Wyszukaj wg konta odbiorcy
+    -   Wyszukaj wg nazwy odbiorcy
+    -   Wyszukaj wg stanu
+    -   Wyszukaj wg stanu zwolnienia
+    -   Wyszukaj wg daty i godziny utworzenia
 
 <!-- -->
 
--   Po wybraniu zamówienia sprzedaży można wyświetlić szczegółowe informacje o określonych zamówień. W szczególności można wyświetlać:
-    -   Informacje o nazwę i adres odbiorcy
-    -   Daty inne zamówienie sprzedaży, takie jak żądana data wysyłki i potwierdzona data wysyłki
-    -   Informacje kontaktowe przyjmujący zamówienia
-    -   Informacje kontaktowe klienta
+-   Po wybraniu zamówień sprzedaży można wyświetlić ich szczegółowe informacje. W szczególności można wyświetlać następujące dane:
+    -   Nazwa i informacje adresowe odbiorcy
+    -   Różne daty zamówień sprzedaży, takie jak żądana data wysyłki i potwierdzona data wysyłki
+    -   Informacje kontaktowe osoby przyjmującej zamówienie
+    -   Informacje kontaktowe odbiorcy
     -   Wiersze zamówienia
-    -   Przesyłki, które pokazują, jak i kiedy zamówienie sprzedaży zostało wysłane
+    -   Wysyłki, które pokazują, jak i kiedy wysłano towary z zamówienia sprzedaży
 
-### <a name="view-orders-for-a-customer-"></a>Umożliwia wyświetlanie zamówień dla odbiorcy ** **
+### <a name="view-orders-for-a-customer-"></a>Wyświetl zamówienia odbiorcy** **
 
-Ten widok wyświetla listę zamówień sprzedaży dla nabywcy.
+Ten widok pokazuje zamówienia sprzedaży z podziałem na odbiorców.
 
--   Użyj jednej z następujących filtrów do wyświetlania zamówień dla odbiorcy.
-    -   Wyszukiwanie według nazwy
-    -   Szukaj według konta
+-   Użyj jednego z następujących filtrów, aby wyświetlić zamówienia wybranego odbiorcy.
+    -   Wyszukaj wg nazwy
+    -   Wyszukaj wg konta
 
 <!-- -->
 
--   Po wybraniu odbiorcy, można przeglądać:
-    -   Nazwa odbiorcy i grupy
-    -   Informacje kontaktowe klienta
-    -   Zamówienia sprzedaży i szczegółowe informacje dotyczące zamówień sprzedaży:
-        -   Informacje o nazwę i adres odbiorcy
-        -   Dat innego zamówienia sprzedaży
-        -   Informacje kontaktowe przyjmujący zamówienia
-        -   Informacje kontaktowe klienta
+-   Po wybraniu odbiorcy można wyświetlić następujące informacje:
+    -   Nazwa i grupa odbiorcy
+    -   Informacje kontaktowe odbiorcy
+    -   Zamówienia sprzedaży odbiorcy i szczegółowe informacje o tych zamówieniach:
+        -   Nazwa i informacje adresowe odbiorcy
+        -   Różne daty zamówień sprzedaży
+        -   Informacje kontaktowe osoby przyjmującej zamówienie
+        -   Informacje kontaktowe odbiorcy
         -   Wiersze zamówienia
-        -   Przesyłki, które pokazują, jak i kiedy zostały wydane zamówienia sprzedaży
+        -   Wysyłki, które pokazują, jak i kiedy wysłano towary z zamówień sprzedaży
 
 ## <a name="get-started"></a>Rozpocznij
-Wykonaj poniższe czynności, aby rozpocząć pracę z obszarem roboczym mobilnych zamówień sprzedaży na urządzeniu przenośnym.
+Wykonaj poniższe czynności, aby rozpocząć korzystanie z mobilnego obszaru roboczego zamówień sprzedaży na swoim urządzeniu przenośnym.
 
-1.  Na sklepu internetowego Pobierz i zainstaluj usługi Microsoft Dynamics 365 dla operacji aplikacji.
+1.  W sklepie z aplikacjami dla urządzeń komórkowych pobierz i zainstaluj aplikację Microsoft Dynamics 365 for Operations.
 2.  Uruchom aplikację na urządzeniu.
-3.  Podaj adres URL Dynamics 365.
-4.  Wprowadzić firmę do logowania się. Na przykład wpisz **USMF**.
-5.  Podczas pierwszego logowania, zostanie wyświetlony monit o nazwę użytkownika i hasło dla sieci Microsoft Dynamics 365 dla konta operacji. Wprowadź swoje poświadczenia. Po zalogowaniu się, można wyświetlić dostępne obszary robocze firmy.
+3.  Wprowadź adres URL usługi Dynamics 365.
+4.  Wpisz firmę, do której chcesz się zalogować. Na przykład wpisz **USMF**.
+5.  Podczas pierwszego logowania zostanie wyświetlony monit o podanie nazwy użytkownika i hasła dostępu do konta programu Microsoft Dynamics 365 for Operations. Wprowadź swoje poświadczenia. Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy.
 
-Aby wyświetlić obszary robocze w aplikacji mobilnej, należy najpierw opublikować żądane obszary robocze do 365 Dynamics dla operacji aplikacji.
+Aby widzieć obszary robocze w aplikacji mobilnej, należy najpierw opublikować żądane obszary w aplikacji Dynamics 365 for Operations.
 
-1.  Uruchom system Dynamics 365 dla operacji.
-2.  Przejdź do **Administracja systemu**&gt;**instalacji**&gt;**parametrów systemu**.
-3.  Wybierz **Opcje aplikacji mobilnych**.
-4.  Wybierz obszar roboczy, aby opublikować mobilnej platformie.
-5.  Wybierz **obszaru roboczego opublikować**.
-6.  Odśwież swoje urządzenie, aby sprawdzić opublikowanych obszarów roboczych.
+1.  Uruchom program Dynamics 365 for Operations.
+2.  Wybierz kolejno opcje **Administrowanie systemem** &gt; **Ustawienia** &gt; **Parametry systemu**.
+3.  Wybierz opcję **Zarządzaj aplikacją mobilną**.
+4.  Wybierz obszar roboczy, aby go opublikować na platformie mobilnej.
+5.  Wybierz opcję **Opublikuj obszar roboczy**.
+6.  Odśwież swoje urządzenie, a zobaczysz opublikowane obszary robocze.
 
-## <a name="view-information-about-sales-orders-for-a-customer"></a>Wyświetlanie informacji o zamówieniach sprzedaży dla nabywcy
-1.  Na urządzeniu przenośnym, wybierz **zamówienia sprzedaży** obszaru roboczego.
-2.  Wybierz **zamówienia dla klienta zobacz**.
-3.  Użyj ** konta ** lub ** nazwa odbiorcy ** informacje w celu znalezienia żądanego klienta.
-4.  Wybierz odbiorcę.
-5.  Wybierz **informacji o kontakcie** lub **zamówienia sprzedaży**.
-6.  Jeśli **zamówienia sprzedaży** jest zaznaczona, zamówień sprzedaży dla klienta zostanie wyświetlona lista.
-7.  Wybierz **zamówienie sprzedaży**.
-8.  W tym miejscu można wyświetlić informacje dotyczące wierszy zamówienia sprzedaży, przesyłek, informacji kontaktowych klientów i informacje kontaktowe przyjmujący zamówienia.
+## <a name="view-information-about-sales-orders-for-a-customer"></a>Wyświetlanie informacji o zamówieniach sprzedaży wybranego odbiorcy
+1.  Na urządzeniu przenośnym wybierz obszar roboczy **Zamówienia sprzedaży**.
+2.  Wybierz opcję **Wyświetl zamówienia odbiorcy**.
+3.  Użyj pól **Konto** i **Nazwa odbiorcy** w celu znalezienia żądanego odbiorcy.
+4.  Zaznacz odbiorcę.
+5.  Wybierz opcję **Informacje kontaktowe** lub **Zamówienia sprzedaży**.
+6.  Jeśli zaznaczono opcję **Zamówienia sprzedaży**, zostanie wyświetlona lista zamówień sprzedaży dla wybranego odbiorcy.
+7.  Wybierz opcję **Zamówienie sprzedaży**.
+8.  W tym miejscu można obejrzeć informacje o wierszach zamówienia sprzedaży, dane wysyłek, informacje kontaktowe odbiorcy i informacje kontaktowe osoby przyjmującej zamówienie.
 
 
 

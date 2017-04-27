@@ -1,6 +1,6 @@
 ---
 title: "Wyświetlanie i ocena wyników kwestionariusza"
-description: "W tym temacie wyjaśniono, jak można wyświetlać i ocena wyników kwestionariuszy, które ukończyć respondentów."
+description: "W tym temacie wyjaśniono, jak można wyświetlać i oceniać wyniki kwestionariuszy wypełnianych przez respondentów."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Wyświetlanie i ocena wyników kwestionariusza
 
-W tym temacie wyjaśniono, jak można wyświetlać i ocena wyników kwestionariuszy, które ukończyć respondentów. 
+W tym temacie wyjaśniono, jak można wyświetlać i oceniać wyniki kwestionariuszy wypełnianych przez respondentów. 
 
 Po wypełnieniu kwestionariusza przez respondentów można wyświetlić i ocenić wyniki na kilka sposobów:
 

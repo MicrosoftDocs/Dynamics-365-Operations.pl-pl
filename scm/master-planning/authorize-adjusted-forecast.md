@@ -1,5 +1,5 @@
 ---
-title: "Autoryzować skorygowana Prognoza"
+title: Autoryzowanie skorygowanej prognozy
 description: "Nie wszystkie prognozy muszą być autoryzowane natychmiast. W tym artykule wyjaśniono, jak można określić okres, dla którego prognoza jest autoryzowana. Opisano również, jak można autoryzować prognozę dla konkretnych firm i modeli prognozy."
 author: YuyuScheller
 manager: AnnBe
@@ -26,25 +26,30 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="authorize-an-adjusted-forecast"></a>Autoryzować skorygowana Prognoza
+# <a name="authorize-an-adjusted-forecast"></a>Autoryzowanie skorygowanej prognozy
+
+[!include[banner](../includes/banner.md)]
+
 
 Nie wszystkie prognozy muszą być autoryzowane natychmiast. W tym artykule wyjaśniono, jak można określić okres, dla którego prognoza jest autoryzowana. Opisano również, jak można autoryzować prognozę dla konkretnych firm i modeli prognozy.
 
 Nie wszystkie prognozy muszą być autoryzowane natychmiast. Można określić daty rozpoczęcia i zakończenia okresu, dla którego prognoza jest autoryzowana. Ta funkcja umożliwia zamrożenie określonych przedziałów. 
 
-Daty rozpoczęcia i zakończenia, które określisz musi odpowiadać daty rozpoczęcia i zakończenia łańcucha wygenerowanych w prognozie. System wymusza ograniczenie to i automatycznie dostosowuje daty, jeśli konieczne jest dostosowanie. 
+Określone daty rozpoczęcia i zakończenia muszą odpowiadać datom rozpoczęcia i zakończenia przedziału, w którym powstała prognoza. System wymusza to ograniczenie i w razie potrzeby automatycznie koryguje daty. 
 
 Na karcie **Szczegóły** na stronie **Autoryzacja** można wyświetlić szczegółowe informacje o ostatnio wygenerowanej prognozie. 
 
 Można wybrać firmy i modele prognozy do autoryzacji prognozy w celu jej użycia. Domyślnie siatka zawiera wszystkie firmy, dla których utworzono prognozę popytu. Dla każdej firmy model prognozy odpowiadający aktualnemu planowi prognozy skonfigurowanemu w parametrach planowania głównego jest wstępnie wypełniany. Można też zmienić ten model prognozy na dowolny inny model prognozy należący do danej firmy. Jeśli dla danej firmy nie ma wygenerowanych danych prognozy, podczas importowania wyświetli się ostrzeżenie. 
 
-Bardzo ważne jest, aby zrozumieć, jak działa pole wyboru **Zapisz korekty ręczne podstawowej prognozy popytu**. Jeżeli dokonano ręcznego dopasowania do linii bazowej statystycznej prognozy, skorygowane wartości są upoważnione do użytku, nawet jeśli to pole wyboru jest wyczyszczone. Zmiany zostaną jednak odrzucone po autoryzacji. Dlatego przy następnym wygenerowaniu prognozy jest ona jedynie danymi statycznymi i nie zawiera żadnych zmian wprowadzonych ręcznie, nawet jeśli opcja **Przenieś ręczne korekty prognozy popytu** jest zaznaczona. Dlatego pole wyboru **Zapisz korekty ręczne podstawowej prognozy popytu** należy traktować jako sposób odrzucania wszystkich zmian wprowadzonych ręcznie.
+Bardzo ważne jest, aby zrozumieć, jak działa pole wyboru **Zapisz korekty ręczne podstawowej prognozy popytu**. Wprowadzenie ręcznych zmian w bazowej prognozie popytu sprawia, że skorygowane wartości są autoryzowane do użycia, nawet wtedy, gdy to pole wyboru nie jest zaznaczone. Zmiany zostaną jednak odrzucone po autoryzacji. Dlatego przy następnym wygenerowaniu prognozy jest ona jedynie danymi statycznymi i nie zawiera żadnych zmian wprowadzonych ręcznie, nawet jeśli opcja **Przenieś ręczne korekty prognozy popytu** jest zaznaczona. Dlatego pole wyboru **Zapisz korekty ręczne podstawowej prognozy popytu** należy traktować jako sposób odrzucania wszystkich zmian wprowadzonych ręcznie.
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+[Wprowadzanie ręcznych korekt prognozy bazowej](manual-adjustments-baseline-forecast.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Monitorowanie dokładności prognozy](monitor-forecast-accuracy.md)
+
+
 
 

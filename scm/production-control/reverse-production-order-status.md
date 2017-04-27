@@ -1,5 +1,5 @@
 ---
-title: Wycofanie stanu zlecenia produkcyjnego
+title: Wycofywanie stanu zlecenia produkcyjnego
 description: "W tym temacie opisano sposób wycofania stanu zlecenia produkcyjnego."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reverse-the-production-order-status"></a>Wycofanie stanu zlecenia produkcyjnego
+# <a name="reverse-the-production-order-status"></a>Wycofywanie stanu zlecenia produkcyjnego
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym temacie opisano sposób wycofania stanu zlecenia produkcyjnego. 
 
@@ -49,5 +52,7 @@ Zmiana stanu zlecenia produkcyjnego ze **Zwolnione** na **Zaplanowane** powoduje
 
 ## <a name="from-started-to-released"></a>Zmiana stanu z Rozpoczęte na Zwolnione
 Zmiana stanu zlecenia produkcyjnego z **Rozpoczęte** na **Zwolnione** powoduje wycofanie wszystkich pozycji zgłoszonych jako gotowe. Cofane są także ustawienia dotyczące pobranych materiałów oraz dostaw przychodzących i wychodzących. Pole **Następny krok** w wierszach BOM zlecenia produkcyjnego zmieniło się z **Zakończone** na **Zużycie materiału**. Jeśli został zarejestrowany czas lub zgłoszono ilości jako gotowe dla operacji w marszrucie produkcji, ustawienia te zostaną wycofane. Pole **Następny krok** zmieniło się z **Zakończone** na **Zużycie marszruty** w marszrucie produkcji. Ustawienia dla wszystkich elementów, które są księgowane jako „w toku” lub „praca w toku”, zostaną wycofane. Na stronie **Szczegóły zlecenia produkcyjnego** pola wskazujące ilość rozpoczętą lub zgłoszoną jako gotową zostaną zresetowane. Resetowane są również daty dla tych transakcji.
+
+
 
 

@@ -29,9 +29,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="dimension-based-product-configuration"></a>Konfiguracja produktu oparta na wymiarach
 
+[!include[banner](../includes/banner.md)]
+
+
 Konfiguracja produktu oparta na wymiarach to prosty sposób tworzenia wielu wariantów produktu z jednego produktu głównego i jego BOM.
 
-Konfiguracja oparta na wymiarach produktu jest jednym z trzech technologie konfiguracji produktu wbudowanych. Dwie pozostałe konfiguracje to wstępnie zdefiniowane warianty i konfiguracja oparta na ograniczeniach. Wszystkie trzy technologie używają produktu głównego jako punktu wyjścia i umożliwiają użytkownikowi tworzenie wielu wariantów dla jednego produktu głównego.
+Konfiguracja produktów oparta na wymiarach jest jedną z trzech wbudowanych technologii konfiguracji produktów. Dwie pozostałe konfiguracje to wstępnie zdefiniowane warianty i konfiguracja oparta na ograniczeniach. Wszystkie trzy technologie używają produktu głównego jako punktu wyjścia i umożliwiają użytkownikowi tworzenie wielu wariantów dla jednego produktu głównego.
 
 ## <a name="key-concepts"></a>Podstawowe pojęcia
 Podstawą konfiguracji opartej na wymiarach są następujące pojęcia:
@@ -68,10 +71,12 @@ Marszruta konfiguracji określa kolejność grup konfiguracji, w jakiej będą o
 Reguły konfiguracji stanowią mechanizm zapewniający, że produkt wchodzący w skład jednej grupy konfiguracji w BOM wymusza włączenia lub wyłączenia produktu w innej grupie konfiguracji w tym samym BOM.
 
 ## <a name="product-modeling-process"></a>Proces modelowania produktu
-Naturalna sekwencja budowania modelu produktu dla produktu opartego na wymiarach rozpoczyna się od zdefiniowania konfiguracji odpowiednich grup. Należy upewnić się, że zostały zwolnione wszystkie produktów, które będą używane w BOM, do firmy, dla której tworzony jest model produktu. Z tych bloków konstrukcyjnych w miejscu użytkownika można tworzyć BOM i przypisywania grup konfiguracji do wszystkich odpowiednich wierszy BOM. Po zakończeniu BOM, marszruty konfiguracji można zdefiniować dla grup konfiguracji kolejności w odpowiedniej kolejności. \[Identyfikator etykiety = "załącznik\_282671" Wyrównaj = "alignnone" width = "1187"\][![produktów opartych na wymiarach modelowania procesów](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) produktów opartych na wymiarach modelowania procesów\[/caption\] w przypadku niektórych produktów z grupami konfiguracji, które musi albo nie muszą być używane razem, można utworzyć reguły konfiguracji, wymuszające relacji tych produktów. Po powiązaniu BOM z produktem głównym opartym na wymiarach za pomocą wersji BOM i po zatwierdzeniu oraz aktywowaniu jednego i drugiego, można utworzyć konfiguracje produktów i wprowadzić nazwę dla każdej konfiguracji. Konfiguracje mogą być definiowane zanim jakiekolwiek transakcje są generowane lub można to zrobić, gdy wystąpi potrzeba konkretnych konfiguracji.
+Naturalna sekwencja budowania modelu produktu dla produktu opartego na wymiarach rozpoczyna się od zdefiniowania konfiguracji odpowiednich grup. Należy upewnić się, że zostały zwolnione wszystkie produktów, które będą używane w BOM, do firmy, dla której tworzony jest model produktu. Gdy te blok konstrukcyjne są na swoich miejscach, użytkownik może utworzyć BOM i przypisać grupy konfiguracji do wszystkich odpowiednich wierszy BOM. Kiedy BOM jest gotowy, można zdefiniować marszrutę konfiguracji dla uporządkowania grup konfiguracji we właściwej kolejności. \[caption id="attachment\_282671" align="alignnone" width="1187"\][![Proces modelowania produktów opartych na wymiarach](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) Proces modelowania produktów opartych na wymiarach\[/caption\] Jeśli istnieją pewne produkty z różnych grup konfiguracji, które muszą lub nie mogą być używane razem, można utworzyć reguły konfiguracji, które będą wymuszać relacje tych produktów. Po powiązaniu BOM z produktem głównym opartym na wymiarach za pomocą wersji BOM i po zatwierdzeniu oraz aktywowaniu jednego i drugiego, można utworzyć konfiguracje produktów i wprowadzić nazwę dla każdej konfiguracji. Konfiguracje mogą być definiowane zanim jakiekolwiek transakcje są generowane lub można to zrobić, gdy wystąpi potrzeba konkretnych konfiguracji.
 
 ### <a name="suggested-use"></a>Sugerowane zastosowanie
 
 Technologia konfiguracji opartej na wymiarach najlepiej nadaje się do produktów ze ograniczoną zmiennością i kombinacją standardowych rozmiaru, koloru, stylu i konfiguracji wymiarów produktu, i jest ona nieodpowiednia do identyfikowania konkretnych wariantów produktów. Przykładem może być rower z konkretną wysokością ramy, średnicą koła i rytem hamulców oraz różnymi rodzajami przerzutek.
+
+
 
 

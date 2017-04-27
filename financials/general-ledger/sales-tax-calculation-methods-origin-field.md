@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Wybieranie metody obliczeń podatków w polu podstawy
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano opcje dostępne w polu Podstawy opodatkowania na stronie kodów podatków oraz sposób obliczania podatku na podstawie wybranej opcji kodu podatku.
 
 Dla każdego kodu podatku utworzonego na stronie Kody podatku należy wybrać metodę obliczeń, która będzie stosowana w odniesieniu do kwoty podstawy podatku w polu Podstawa.
@@ -124,5 +127,7 @@ Dokument/arkusz jest ustawiony na Kwoty zawierają podatek = Nie Kwota wiersza t
 [Ustalanie stawki podatku na podstawie pól Podstawa limitu i Metoda obliczania](marginal-base-field.md)
 
 [Opcje Cała kwota i Obliczanie interwału dla kodów podatku](whole-amount-interval-options-sales-tax-codes.md)
+
+
 
 

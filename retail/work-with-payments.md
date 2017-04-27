@@ -1,5 +1,5 @@
 ---
-title: "Metody płatności w Centrum obsługi telefonicznej"
+title: "Metody płatności w biurze obsługi"
 description: "W tym temacie omówiono różne metody płatności, których można używać w biurze obsługi module Handel detaliczny i inny."
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="payment-methods-in-a-call-center"></a>Metody płatności w Centrum obsługi telefonicznej
+# <a name="payment-methods-in-a-call-center"></a>Metody płatności w biurze obsługi
+
+[!include[banner](includes/banner.md)]
+
 
 W tym temacie omówiono różne metody płatności, których można używać w biurze obsługi module Handel detaliczny i inny.
 
@@ -43,6 +46,8 @@ Jeśli przesyłasz płatność kartą kredytową ze strony **Zamówienie sprzeda
 
 -   Funkcja Wstrzymania czeków umożliwia personelowi finansowemu przetwarzanie zamówień, które zostały wstrzymane, ponieważ jako metody płatności użyto czeku, a została przekroczona kwota progowa wstrzymania czeku. Wstrzymanie można zwolnić ręcznie lub wygasa ono automatycznie z końcem skonfigurowanego okresu.
 -   Można ustawić progi, powyżej których zwroty dokonywane za transakcje czekiem i kartami kredytowymi muszą być zatwierdzone ręcznie. Wszelkie zwroty przekraczające kwotę progową są dodawane do kolejki zatwierdzania. Po zaakceptowaniu zwrotu można zafakturować zamówienie zwrotne sprzedaży.
+
+
 
 
 

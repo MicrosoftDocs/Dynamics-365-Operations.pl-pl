@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="work-breakdown-structures"></a>Struktury podziału pracy
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Struktury podziału pracy (SPP) to opis pracy, która zostanie wykonana w ramach projektu. Jest to hierarchia zadań ustalona przez zespół na podstawie koniecznej pracy, zakresu, kosztu i czasu trwania każdego ze składników lub zadań. SPP pełni trzy główne funkcje:
@@ -39,17 +42,17 @@ Stopień szczegółowości w SPP zależy od poziomu dokładności, jaki jest wym
 
 Dla odmiany, projekty w branżach, takich jak media i reklama, IT są zazwyczaj jednego typu a wydajność zależy od doświadczenia i kompetencji osób wykonujących zadania. Z tego względu w takich branżach wykorzystuje się SPP do określenia przybliżonej wielkości projektu, a nie do szczegółowego monitorowania jego postępów. 
 
-Tworzenie SPP to intensywny proces, który zazwyczaj trwa długo i wymaga współpracy oraz przekazywania informacji między dużą grupą osób. W tym temacie opisano, jak można użyć SPP ulepszenia w usłudze Microsoft Dynamics 365 dla operacji do swoich wymagań dla oszacowania i śledzenia.
+Tworzenie SPP to intensywny proces, który zazwyczaj trwa długo i wymaga współpracy oraz przekazywania informacji między dużą grupą osób. W tym temacie opisujemy, jak można wykorzystać udoskonalenia wprowadzone do funkcji SPP w programie Microsoft Dynamics 365 for Operations, aby ułatwić sobie szacowanie i monitorowanie w projekcie.
 
 ## <a name="prerequisites-for-creating-a-wbs"></a>Wymagania wstępne dotyczące tworzenia SPP
 Aby utworzyć SPP, konieczne jest utworzenie harmonogramu pracy i oszacowanie jej kosztów.
 
 ### <a name="prerequisites-for-creating-a-work-schedule"></a>Wymagania wstępne dotyczące tworzenia harmonogramu pracy
 
-Aby korzystać ze wszystkich możliwości planowania funkcji SPP, należy wykonać następujące ustawienia:
+Aby korzystać w pełni możliwości planowania w funkcjach SPP, należy wprowadzić następujące ustawienia:
 
 1.  Ustaw domyślny kalendarz i kalendarz projektu:
-    1.  Kliknij **zarządzania projektami i księgowości**&gt;**instalacji**&gt;**Planowanie**. W polu **Domyślny kalendarz pracy** określ domyślny kalendarz. Będzie to domyślny kalendarz pracy dla każdego nowo tworzonego projektu.
+    1.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Planowanie**. W polu **Domyślny kalendarz pracy** określ domyślny kalendarz. Będzie to domyślny kalendarz pracy dla każdego nowo tworzonego projektu.
     2.  Można zmienić kalendarz domyślny dla określonego projektu. Kliknij stronę szczegółów projektu, a następnie na skróconej karcie **Zespół projektu i planowanie** zaktualizuj pole **Kalendarz planowania**, wybierając inny kalendarz.
 
 2.  Ustaw standardowe dni robocze i godziny pracy. Kalendarz, który zostanie ustawiony jako roboczy dla projektu, będzie używany w SPP do określenia następujących informacji:
@@ -57,13 +60,13 @@ Aby korzystać ze wszystkich możliwości planowania funkcji SPP, należy wykona
 -   Dni robocze i dni wolne od pracy
 -   Liczba godzin pracy w dniu
 
-Aby ustawić dni i godziny pracy dla kalendarza lub utworzyć nowy kalendarz, kliknij przycisk **Administrowanie organizacją**&gt;**wspólne**&gt;**kalendarze**.
+Aby ustawić dni i godziny pracy w kalendarzu lub utworzyć nowy kalendarz, kliknij kolejno opcje **Administrowanie organizacją** &gt; **Wspólne** &gt; **Kalendarze**.
 
 ### <a name="prerequisites-for-estimating-the-cost-of-work"></a>Wymagania wstępne dotyczące oszacowania kosztów pracy
 
 Aby korzystać z pełnej funkcjonalności szacowania kosztów SPP, należy ustawić koszty i płace pracowników, kategorie pracy, wydatki, opłaty i towary.
 
--   Aby skonfigurować kosztu i ceny sprzedaży pracy, wydatków i opłat kategorii, kliknij przycisk **zarządzania projektami i księgowości**&gt;**instalacji**&gt;**ceny**.
+-   Aby ustawić koszt i cenę robocizny, wydatki i kategorie opłat, kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Ceny**.
 -   Aby skonfigurować koszt i ceny sprzedaży towarów, przejdź na stronę **umów handlowych **stronę dla każdego elementu na stronie listy **zwolnionych produktów** w module Zarządzanie informacjami o produktach.
 
 ## <a name="creating-a-wbs"></a>Tworzenie SPP
@@ -73,11 +76,11 @@ Tworzenie SPP składa się z trzech czynności:
 2.  **Plan roboczy** — oszacuj czas potrzebny na wykonanie zadania, ustaw wzajemne relacje między zadaniami i wybierz daty rozpoczęcia i zakończenia zadań.
 3.  **Szacowanie kosztów** — oszacuj koszty dla każdego zadania.
 
-W następujących sekcjach omówiono, jak pomóc możliwości spp z każdego z tych działań.
+W następujących sekcjach omówiono, w jaki sposób możliwości SPP pomagają w każdym z tych działań.
 
 ### <a name="work-decomposition"></a>Dekompozycja pracy
 
-Tworzenie podziału lub dekompozycji pracy jest zwykle pierwszym krokiem w procesie tworzenia SPP. Funkcjonalność SPP obsługuje następujące konstrukcje podstawowe podziału pracy lub rozkładu. 
+Tworzenie podziału lub dekompozycji pracy jest zwykle pierwszym krokiem w procesie tworzenia SPP. Funkcja SPP obsługuje następujące podstawowe elementy podziału pracy: 
 
 **Główne zadanie projektu** — zadanie najwyższego poziomu podsumowania w projekcie. Wszystkie inne zadania projektu są tworzone na niższych poziomach. Nazwa zadania głównego jest zawsze nazwą projektu. Nakład pracy, daty i czas trwania węzła głównego to suma wartości zadań podrzędnych względem głównego zadania. Nie można zmodyfikować właściwości węzła głównego ani go usunąć.
 
@@ -94,7 +97,7 @@ Obecnie nie można dostosowywać numerowania SPP.
 **Wcinanie zadania** kiedy wcinasz zadanie, staje się ono zadaniem podrzędnym w stosunku do zadania, które je poprzedza. Numer nowego zadania podrzędnego SPP jest automatycznie ponownie wyliczany na podstawie numeru SPP jego nowego zadania nadrzędnego. Zadanie nadrzędne jest teraz zadaniem podsumowania lub kontenera i dlatego staje się zadaniem zbiorczym dla zadań wchodzących w jego skład. 
 
 > [!NOTE] 
-> Wcięte zadań w ramach zadania, który był węzłem liścia przed operacją tiret, nowo utworzonego zadania sumarycznego traci swój własny dat, wysiłek i liczby zasobów. Używa teraz podsumowania wartości nowych zadań składowych. 
+> Jeśli wcinasz zadanie pod zadaniem, które wcześniej było węzłem liścia, nowo utworzone zadanie podsumowania traci własne daty, nakład pracy i liczbę zasobów. Używa teraz podsumowania wartości nowych zadań składowych. 
 
 **Wycinanie zadania** po wycięciu zadania przestaje ono być częścią składową swojego zadania nadrzędnego. Numer SPP tego zadania jest automatycznie ponownie wyliczany, tak aby odzwierciedlał nowy poziom zadania w hierarchii. Nakład pracy, koszt i daty zadania nadrzędnego wobec wyciętego są ponownie przeliczane z wykluczeniem tego zadania. 
 
@@ -102,10 +105,10 @@ Obecnie nie można dostosowywać numerowania SPP.
 
 ### <a name="schedule-estimation"></a>Szacowanie harmonogramu
 
-Szacowanie harmonogramu zazwyczaj jest to drugi etap w tworzeniu SPP. Zaleca się wykonywanie tego kroku po utworzeniu zadań. **Struktury podziału pracy** strony w programie Microsoft Dynamics 365 dla operacji ma dwie sekcje. Górne okienko jest przeznaczone do szacowania harmonogramu, a dolne zawiera kartę **szacowane koszty i dochody**, której można użyć do szacowania kosztów. 
+Szacowanie harmonogramu zazwyczaj jest to drugi etap w tworzeniu SPP. Zaleca się wykonywanie tego kroku po utworzeniu zadań. Strona **Struktury podziału pracy** w programie Microsoft Dynamics 365 for Operations składa się z dwóch części. Górne okienko jest przeznaczone do szacowania harmonogramu, a dolne zawiera kartę **szacowane koszty i dochody**, której można użyć do szacowania kosztów. 
 **Zależności zadania** w SPP można utworzyć relację z zadaniem poprzedzającym. Po przypisaniu zadania poprzedzającego do zadania, zadanie to można uruchomić tylko po ukończeniu wszystkich zadań poprzedzających. Planowana data rozpoczęcia zadania jest ustawiana automatycznie jako najpóźniejsza data zakończenia wszystkich jego zadań poprzedzających. 
 
-**Zadania planowania usługi Microsoft Dynamics 365 dla operacji** następujące czynniki określają, planowanie zadań węzła typu liść:
+**Planowanie zadań w programie Microsoft Dynamics 365 for Operations** Następujące czynniki określają planowanie zadań węzła liścia:
 
 -   Poprzedniki
 -   Nakład pracy
@@ -114,27 +117,27 @@ Szacowanie harmonogramu zazwyczaj jest to drugi etap w tworzeniu SPP. Zaleca si�
 
 Data rozpoczęcia zadania węzła liścia, które nie zawiera zadań poprzedzających, jest automatycznie ustawiane jako data rozpoczęcia w harmonogramie projektu. Czas trwania zadania węzła liścia jest zawsze obliczany jako liczba dni roboczych pomiędzy jego datami rozpoczęcia i zakończenia. 
 
-Planowanie zasad *** po włączeniu automatycznego wspomagania planowania, następujące zasady dotyczą planowania zadań dla zadań węzła liścia:
+****Reguły planowania**** Po włączeniu asysty automatycznego planowania stosowane są następujące reguły planowania zadań dla zadań węzła liścia:
 
 -   Daty rozpoczęcia i zakończenia zadania muszą być dniami roboczymi, zgodnie z kalendarzem harmonogramu projektu.
 -   Planowana data rozpoczęcia zadania, które ma zadania poprzedzające, jest ustawiana automatycznie jako najpóźniejsza data zakończenia wszystkich jego zadań poprzedzających.
 -   Nakład pracy dla zadania jest automatycznie obliczana w następujący sposób:
 
-Liczba osób × × czas trwania Liczba godzin w standardowy dzień roboczy w kalendarzu projektu. 
+Liczba osób x czas trwania x liczba godzin w standardowym dniu roboczym w kalendarzu projektu 
 
-W niektórych przypadkach może zaistnieć potrzeba odchylenia od tych reguł. Można wyłączyć automatyczne planowanie, aby zapobiec Microsoft Dynamics 365 operacji z automatycznie ustawienie lub poprawiania wszelkie właściwości zadania węzła liścia. Po wprowadzeniu informacji dla zadania, która powoduje naruszenie reguły planowania, w zadaniu jest wyświetlana ikona błędu harmonogramu. Jeśli nie chcesz, żeby błędy harmonogramu były wyświetlane, kliknij przycisk **Błędy planowania są wyświetlane**, aby wyłączyć tę funkcję. 
+W niektórych przypadkach może zaistnieć potrzeba odchylenia od tych reguł. Można wyłączyć automatyczne planowanie, aby uniemożliwić programowi Microsoft Dynamics 365 for Operations automatyczne ustawianie lub poprawianie właściwości zadania węzła liścia. Po wprowadzeniu informacji dla zadania, która powoduje naruszenie reguły planowania, w zadaniu jest wyświetlana ikona błędu harmonogramu. Jeśli nie chcesz, żeby błędy harmonogramu były wyświetlane, kliknij przycisk **Błędy planowania są wyświetlane**, aby wyłączyć tę funkcję. 
 
 > [!NOTE] 
-> Wartości dla zadania Podsumowanie lub kontenera w dalszym ciągu być obliczana jako suma wartości składowych zadań, niezależnie od tego, czy automatycznego wspomagania planowania jest włączone, czy wyłączone. 
+> Wartości dla zadania podsumowania lub kontenera nadal będą liczone jako suma wartości zadań składowych, niezależnie od tego, czy asysta automatycznego planowania jest włączona, czy nie. 
 
 **Naprawianie błędów planowania** po włączeniu asysty automatycznego planowania błędy planowania nie będą wyświetlane. Jeśli wyłączysz asystę automatycznego planowania, a potem znowu ją włączysz, mogą znowu pojawiać się błędy planowania w SPP. 
 
 **Naprawianie błędów planowania według zadań** po dwukrotnym kliknięciu ikony błędu harmonogramu dla określonego zadania, zostanie wyświetlone okno dialogowe ze wszystkimi błędami planowania dla tego zadania. Można określić, które błędy planowania należy skorygować dla zadania. 
 
-**Naprawianie błędów planowania wszystkich** Microsoft Dynamics 365 dla operacje, aby naprawić wszystkie błędy planowania w SPP, w okienku akcji kliknij opcję **naprawić wszystkie nieścisłości planowania**. 
+**Naprawianie wszystkich błędów planowania** Jeśli chcesz, żeby program Microsoft Dynamics 365 for Operations naprawił wszystkie błędy w SPP, w okienku akcji kliknij opcję **Korygowanie wszystkich rozbieżności planowania**. 
 
 > [!NOTE] 
-> Ta funkcja może powodować istotnych zmian do spp. Błędy są naprawiane w następującej kolejności:
+> Ta funkcja może spowodować wprowadzenie istotnych zmian w SPP. Błędy są naprawiane w następującej kolejności:
 
 1.  Szacowany nakład pracy nad wszystkimi zadaniami jest zmieniany, tak aby był równy zdolnościom produkcyjnym zdefiniowanym w kalendarzu projektu.
 2.  Data rozpoczęcia każdego zadania jest modyfikowana tak, aby dane zadanie było rozpoczynane po zakończeniu wszystkich jego zadań poprzedzających.
@@ -145,7 +148,7 @@ W niektórych przypadkach może zaistnieć potrzeba odchylenia od tych reguł. M
 Jak wspomniano wcześniej w tym dokumencie, oszacowanie kosztów wprowadza się dla każdego zadania węzła liścia przy użyciu karty **szacowane koszty i dochody** w dolnym okienku strony **struktury podziału pracy**. 
 
 > [!NOTE] 
-> Szacowanie kosztów dla zadania Podsumowanie lub kontenera nie można modyfikować. Szacowanie kosztów dla zadania podsumowania jest równe sumie oszacowań kosztów jego zadań węzła liścia. Szacowany całkowity koszt dla każdego zadania jest obliczany jako suma kwot szacowanych kosztów dla następujących typów transakcji:
+> Nie można zmodyfikować oszacowania kosztów dla zadania podsumowania lub kontenera. Szacowanie kosztów dla zadania podsumowania jest równe sumie oszacowań kosztów jego zadań węzła liścia. Szacowany całkowity koszt dla każdego zadania jest obliczany jako suma kwot szacowanych kosztów dla następujących typów transakcji:
 
 -   Praca
 -   Towarów lub materiałów
@@ -161,12 +164,12 @@ Podczas szacowania kosztów pracy, materiałów i wydatków dla każdego zadania
 
 **Oszacowania wydatków i kosztów materiałów** Na karcie **Szacowane koszty i przychód** można także oszacować wydatki i koszty materiałów dla zadania. 
 
-Kosztu i ceny sprzedaży dla każdego robocizna lub koszt oszacować linii są na podstawie ustawień zdefiniowanego dla każdej kategorii w tabelach wyceny o **zarządzania projektami i księgowości**&gt;**instalacji**&gt;**ceny**. W przypadku towarów koszt i cena sprzedaży są dodawane domyślnie z umów dotyczących towarów lub handlowych na stronie listy **Zwolnione produkty **w module Zarządzanie informacjami o produktach.
+Koszt własny i cena sprzedaży dla każdego wiersza oszacowania robocizny lub wydatku opiera się na ustawieniach zdefiniowanych dla każdej kategorii w cennikach na stronie **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Ceny**. W przypadku towarów koszt i cena sprzedaży są dodawane domyślnie z umów dotyczących towarów lub handlowych na stronie listy **Zwolnione produkty **w module Zarządzanie informacjami o produktach.
 
 ## <a name="tracking-progress-on-the-wbs"></a>Monitorowanie postępu w SPP
 W niektórych branżach śledzi się postęp projektu względem SPP na bardzo szczegółowym poziomie, a w innych na wyższych poziomach SPP. W tej sekcji opisano sposób korzystania ze śledzenia SPP dla wymagań projektu. 
 
-Microsoft Dynamics 365 dla operacji dla SPP projektu są dostępne trzy widoki: widok planowanie, zobacz Śledzenie nakładu i zobacz Śledzenie kosztów.
+W programie Microsoft Dynamics 365 for Operations są dostępne trzy widoki dla SPP projektu: widok planowania, widok śledzenia nakładu pracy i widok śledzenia kosztów.
 
 ### <a name="planning-view"></a>Widok planowania
 
@@ -177,7 +180,7 @@ Widok planowania pokazuje planowane lub podstawowe oszacowanie harmonogramu i ko
 Śledzenie nakładu pracy pokazuje postęp zadań w SPP. Porównuje skumulowane rzeczywiste nakłady pracy w godzinach dla zadania z planowanym nakładem pracy. Poniższe formuły zawierają wartości w widoku śledzenia nakładu pracy:
 
 -   Procent postępu = Rzeczywisty nakład pracy do dnia ÷ planowany nakład pracy dla zadania.
--   Pozostały nakład (znany również jako szacowania do wykonania \[itp\]) = nakładów planowane — rzeczywista nakładów do daty
+-   Pozostały nakład pracy (określany także jako oszacowania do zakończenia \[ETC\]) = Planowany nakład pracy — Rzeczywisty nakład pracy do dnia
 -   Końcowy szacunek (EAC) = Rzeczywisty nakład pracy do dnia + Pozostały nakład pracy
 -   Prognozowane odchylenie nakładu pracy = planowany nakład pracy — EAC
 
@@ -188,7 +191,7 @@ Widok śledzenia nakładu pracy pokazuje prognozę odchylenia nakładu pracy dla
 
 **Ponowna projekcja menedżera projektu dotycząca nakładów pracy** od czasu do czasu menedżer projektu lub inna osoba śledząca postęp projektu, musi zmienić oryginalne oszacowania dla zadań. Wykonanie zadania może z różnych przyczyn przebiegać szybciej lub wolniej niż pierwotnie zakładano. Na przykład, gdy zakres zadania został ograniczony lub pracownicy mają mniej doświadczenia niż oryginalnie zaplanowano. Prognozy są punktem widzenia menedżera projektu na oszacowania na podstawie bieżącego stanu projektu. Ogólnie nie należy zmieniać podstawowych liczb, ponieważ podstawy projektu odzwierciedlają dane w opublikowanym dokumencie harmonogramu projektu i oszacowaniach kosztów, na które wyraziły zgodę wszystkie osoby zaangażowane w projekt. 
 
-Istnieją dwa sposoby, że menedżerowie projektów mogą zmieniać nakładu na zadania:
+Istnieją dwa sposoby modyfikacji przez menedżerów projektu nakładów pracy w zadaniach:
 
 -   Modyfikowanie pozostałego nakładu pracy, które jest ustawione pod kątem automatycznej aktualizacji pozostałej robocizny w zadaniu.
 -   Modyfikowanie pozostałego nakładu pracy, które jest ustawione pod kątem automatycznej aktualizacji pozostałej robocizny w zadaniu.
@@ -222,7 +225,7 @@ Widok śledzenia kosztu pokazuje prognozę odchylenia kosztu dla zadania na pods
 **Ponowna projekcja menedżera projektu dotycząca kosztów** menedżer projektu musi użyć CTC do przejrzenia oszacowania pierwotnego kosztu zadania. Menedżer projektu może zmodyfikować wartość CTC do kosztu wymaganego do zakończenia zadania. W przypadku zmodyfikowania wartości CTC, jego CTC, EAC, procent wykorzystania kosztu i prognozowane odchylenie kosztów dla zadania, zostaną ponownie obliczone. EAC, ETC i procent wykorzystania kosztu zadania podsumowania są także przeliczane, a ich prognozowane odchylenie kosztu zostanie zaktualizowane. 
 
 > [!NOTE] 
-> Kiedy użytkownik poprawi nakładu SPP zadania w widoku śledzenia nakładu, zadania CTC, SKK, procent kosztu zużytych, a odchylenie kosztowe przewidywane są przeliczane w polu Koszt śledzenia widoku. Jednak korekty kosztu nie wpływają na wartości w widoku śledzenia nakładu pracy, ponieważ nie jest skorygowany koszt według typu transakcji (robocizny, materiałów lub wydatków) lub kategorii projektu. 
+> Podczas korygowania nakładu pracy dla zadania SPP w widoku śledzenia nakładu pracy jego CTC, EAC, wartość procentowa kosztu, zużycie i prognozowane odchylenie kosztów są ponownie obliczane w widoku śledzenia kosztów. Jednak korekty kosztu nie wpływają na wartości w widoku śledzenia nakładu pracy, ponieważ nie jest skorygowany koszt według typu transakcji (robocizny, materiałów lub wydatków) lub kategorii projektu. 
 
 **Korekta prognozy kosztów zadania podsumowania** można skorygować koszty na zadań podsumowania. Obliczenia będą wykonywane automatycznie w następującej kolejności:
 
@@ -236,24 +239,24 @@ Kliknij **Rozwiń do poziomu** w widoku śledzenia kosztów, aby ustawić poziom
 
 ### <a name="earned-value-management"></a>Zarządzanie uzyskanymi wartościami
 
-Metoda obliczania wartości wypracowanej (EVM) można użyć do śledzenia postępu projektu. Mierniki uzyskanej wartości można zobaczyć w widoku głównym menedżera projektu. Wykres uzyskanej wartości przedstawia wartości okresowe wartości planowanych i rzeczywistych kosztów. Uzyskana wartość dla bieżącego dnia jest wskazana jako punkt. Uzyskana wartość danych okresowych nie jest obecnie dostępna. 
+Można używać metody wartości wypracowanej (EVM) do śledzenia postępu projektu. Mierniki uzyskanej wartości można zobaczyć w widoku głównym menedżera projektu. Wykres uzyskanej wartości przedstawia wartości okresowe wartości planowanych i rzeczywistych kosztów. Uzyskana wartość dla bieżącego dnia jest wskazana jako punkt. Uzyskana wartość danych okresowych nie jest obecnie dostępna. 
 
 Faza czasu na wykresie uzyskanej wartości jest wyświetlana według tygodnia lub miesiąca. W tej sekcji opisano trzy kolumny EVM: wartość uzyskana, planowana i rzeczywisty koszt. 
 
 **Wartość planowana** EVM teoretycznie wskazuje, że planowana wartość reprezentuje kurs, według którego zespół projektu planuje uzyskane wartości w projekcie. 
 
-Microsoft Dynamics 365 dla operacji używa zarabiać reguły, gdy względnej i planowana wartość roboczy 0: 100. Zgodnie z tą regułą wartość zadania jest księgowana w zadaniu w dniu zakończenia zadania. Wartości nie są księgowane przed całkowitym zakończeniem zadania. 
+Microsoft Dynamics 365 for Operations używa reguły zdobywania punktów 0:100 podczas szkicowania wartości planowanej. Zgodnie z tą regułą wartość zadania jest księgowana w zadaniu w dniu zakończenia zadania. Wartości nie są księgowane przed całkowitym zakończeniem zadania. 
 
 W module Zarządzanie projektami i ich księgowanie wprowadza się datę końcową węzłów liścia i planowany koszt dla tej daty. Po wyświetleniu wykres planowanej wartości wg tygodnia jest ona podsumowywana wg tygodnia dla wszystkich zadań węzłów liści w czasie trwania projektu. 
 
 **Wartość uzyskana** według teorii EVM planowana wartość uzyskana jest stawką, według której zespół projektu uzyskuje realną wartość w projekcie. 
 
-Microsoft Dynamics 365 dla operacji używa roboczy 0: 100 zarabiać reguły, gdy wartość wypracowana jego powierzchni. Zgodnie z tą regułą wartość zadania jest księgowana w zadaniu w dniu zakończenia zadania. Wartości nie są księgowane przed całkowitym zakończeniem zadania. 
+Microsoft Dynamics 365 for Operations używa reguły zdobywania punktów 0:100 podczas szkicowania wartości wypracowanej. Zgodnie z tą regułą wartość zadania jest księgowana w zadaniu w dniu zakończenia zadania. Wartości nie są księgowane przed całkowitym zakończeniem zadania. 
 
 W obliczaniu wartości uzyskanej jest uwzględniany procent postępu każdego zadania. Zgodnie z regułą zarabiania 0:100 tylko zadania ukończone w danym okresie są uwzględniane w obliczeniach wartości uzyskanej na koniec okresu. Wartość uzyskana w projekcie jest obliczana dla wszystkich zadań, które zostały wypełnione podczas tworzenia wykresu. 
 
 > [!NOTE] 
-> System śledzenia SPP nie ma obecnie struktur danych do przechowywania wartości procentowe historycznej postępu dla każdego zadania. W związku z tym uzyskana wartość może być zgłaszana tylko dla czasu przetwarzania modułu. Przetwarzaj moduł regularnie, aby zaktualizować dane uzyskanej wartości, która jest wyświetlana w widoku głównym użytkownika. 
+> Obecnie system śledzenia SPP nie ma struktur danych do przechowywania archiwalnych wartości procentowych postępu w każdym zadaniu. W związku z tym uzyskana wartość może być zgłaszana tylko dla czasu przetwarzania modułu. Przetwarzaj moduł regularnie, aby zaktualizować dane uzyskanej wartości, która jest wyświetlana w widoku głównym użytkownika. 
 
 **Koszt rzeczywisty** według teorii EVM planowanie kosztu rzeczywistego odzwierciedla stawkę, przy której wydawane są pieniądze w projekcie. 
 
@@ -273,8 +276,8 @@ Jeśli koszt rzeczywisty w okresie jest większy od wartości uzyskanej, wydatki
 
 Jeśli koszt rzeczywisty w okresie jest większy od wartości uzyskanej, wydatki są wyższe niż zarobki. W związku z tym projekt przekracza budżet.
 
-## <a name="wbs-templates"></a>Szablony SPP
-Funkcje szablonów SPP można użyć do tworzenia standardowych szablonów dla projektów. Jeśli projekt zakłada dużo powtarzającej się pracy, rozważ utworzenie szablonu SPP. 
+## <a name="wbs-templates"></a>Szablony WBS
+Funkcja szablonów SPP umożliwia tworzenie standardowych szablonów dla projektów. Jeśli projekt zakłada dużo powtarzającej się pracy, rozważ utworzenie szablonu SPP. 
 
 Szablon SPP można utworzyć z SPP istniejącego projektu, dzięki czemu wiedza i sprawdzone metody zgromadzone podczas planowania projektu mogą być wykorzystane w przyszłości do podobnych projektów. Ale czasem nie ma sensu zapisywanie całego SPP jako szablonu. Dlatego też można utworzyć szablony z części SPP dla projektu.
 
@@ -313,5 +316,7 @@ Nakład pracy = liczba zasobów x czas trwania x liczba godzin w standardowym dn
 Można poprawić wszystkie błędy planowania jednocześnie, klikając opcję **Popraw wszystkie błędy planowania**. 
 
 Można też poprawiać je pojedynczo, klikając ikonę ostrzeżenia dla każdego zadania.
+
+
 
 

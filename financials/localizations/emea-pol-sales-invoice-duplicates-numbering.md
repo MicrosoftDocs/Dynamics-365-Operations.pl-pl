@@ -1,6 +1,6 @@
 ---
-title: "Duplikowanie numeracji faktury sprzedaży dla Polski"
-description: "Dla osób prawnych w Polsce duplikat faktury sprzedaży numeracji funkcjonalność pozwala użytkownikom identyfikować i śledzić duplikatów faktur sprzedaży. Ten temat zawiera informacje o duplikat faktury sprzedaży numeracji funkcjonalność i wyjaśniono, jak zduplikować faktury, usuwanie duplikatu faktury i wydrukować kopię duplikatu faktury."
+title: "Numerowanie duplikatów faktur sprzedaży dla Polski"
+description: "Firmom w Polsce funkcja numerowania duplikatów faktur sprzedaży pozwala identyfikować i śledzić powtarzające się faktury sprzedaży. Ten temat zawiera informacje o funkcji numerowania duplikatów faktur sprzedaży oraz wyjaśnienia, jak utworzyć duplikat faktury, usunąć duplikat faktury i wydrukować kopię duplikatu faktury."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,17 +24,22 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="duplicate-sales-invoice-numbering-for-poland"></a>Duplikowanie numeracji faktury sprzedaży dla Polski
+# <a name="duplicate-sales-invoice-numbering-for-poland"></a>Numerowanie duplikatów faktur sprzedaży dla Polski
 
-Dla osób prawnych w Polsce duplikat faktury sprzedaży numeracji funkcjonalność pozwala użytkownikom identyfikować i śledzić duplikatów faktur sprzedaży. Ten temat zawiera informacje o duplikat faktury sprzedaży numeracji funkcjonalność i wyjaśniono, jak zduplikować faktury, usuwanie duplikatu faktury i wydrukować kopię duplikatu faktury.
+[!include[banner](../includes/banner.md)]
 
-Dla osób prawnych w Polsce duplikat faktury sprzedaży numeracji funkcjonalność pozwala użytkownikom zidentyfikować duplikatu faktury sprzedaży i śledzić numer duplikatu faktury oraz Data i użytkownika, który utworzył duplikatu faktury. Użytkownicy mogą również usunąć duplikat faktury lub wydrukować kopię. Ta kopia, który jest drukowany wskazuje, czy faktura jest duplikatem. Aby powielić faktury, na **arkusz faktur** strony, zaznacz fakturę, powielić, a następnie kliknij przycisk **zduplikowane**. Na **zduplikowane** kliknij przycisk **nowy** do duplikowania wybranej faktury. Po fakturze jest duplikowany, wypełnij poniższe pola.
+
+Firmom w Polsce funkcja numerowania duplikatów faktur sprzedaży pozwala identyfikować i śledzić powtarzające się faktury sprzedaży. Ten temat zawiera informacje o funkcji numerowania duplikatów faktur sprzedaży oraz wyjaśnienia, jak utworzyć duplikat faktury, usunąć duplikat faktury i wydrukować kopię duplikatu faktury.
+
+Firmom w Polsce funkcja numerowania duplikatów faktur sprzedaży pozwala identyfikować duplikaty faktur sprzedaży, a także śledzić numery i daty duplikatów faktur oraz użytkowników, którzy utworzyli duplikaty faktur. Użytkownicy mogą również usuwać duplikaty faktur lub drukować ich kopie. Wydrukowana kopia wskazuje, że faktura jest duplikatem. Aby utworzyć duplikat faktury, na stronie **Arkusz faktur** zaznacz żądaną fakturę, a następnie kliknij przycisk **Duplikuj**. Na stronie **Duplikat** kliknij przycisk **Nowy**, a zostanie utworzony duplikat wybranej faktury. Po utworzeniu duplikatu faktury wypełnij poniższe pola.
 | Pole                  | opis                                                                                                                   |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Numer duplikatu       | Numer duplikatu faktury. Zduplikowane numery faktur zaczynają się od 1 i zwiększa kolejno dodawane są nowe rekordy. |
+| Numer duplikatu       | Numer duplikatu faktury. Numery duplikatów faktur zaczynają się od 1 i rosną kolejno wraz z dodawaniem nowych rekordów. |
 | Data duplikatu faktury | Data duplikatu faktury.                                                                                            |
-| Utworzony przez             | Identyfikator użytkownika, który duplikowane faktury.                                                                        |
+| Utworzony przez             | Identyfikator użytkownika, który utworzył duplikat faktury.                                                                        |
 
-Aby usunąć duplikat faktury, kliknij przycisk **usunąć**. **Uwaga:** można usunąć tylko ostatnią duplikatu faktury. Aby wydrukować fakturę duplikatów, kliknij przycisk **drukować**&gt;**Podgląd oryginalny** lub **Podgląd kopii**.
+Aby usunąć duplikat faktury, kliknij przycisk **Usuń**. **Uwaga:** Można usunąć tylko ostatni duplikat faktury. Aby wydrukować duplikat faktury, kliknij kolejno opcje **Drukuj** &gt; **Podgląd oryginalny** lub **Podgląd kopii**.
+
+
 
 

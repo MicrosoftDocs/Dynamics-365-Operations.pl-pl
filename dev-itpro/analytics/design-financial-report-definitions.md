@@ -30,7 +30,7 @@ ms.lasthandoff: 03/29/2017
 
 Ten artykuł zawiera informacje o definicjach raportów. Definicja raportu to składnik (blok konstrukcyjny) raportu, który używa definicji wiersza, kolumny i opcjonalnej definicji drzewa raportowania do tworzenia raportu. Definicja raportu zawiera również opcje i ustawienia umożliwiające dostosowywanie raportu. 
 
-Definicja raportu to składnik (blok konstrukcyjny) raportu, który używa definicji wiersza, kolumny i opcjonalnej definicji drzewa raportowania do tworzenia raportu. Definicja raportu zawiera również opcje i ustawienia, które służą do dostosowywania raportu. Po zdefiniowaniu definicji wierszy i kolumn trzeba połączyć je w definicji raportu. Na tym etapie można też zdefiniować inne aspekty definicji, np. poziom szczegółowości i data raportu. Następnie można zapisać i wygenerować raport. Funkcja sprawozdawczości finansowej oferuje następujące poziomy szczegółowości:
+Definicja raportu to składnik (blok konstrukcyjny) raportu, który używa definicji wiersza, kolumny i opcjonalnej definicji drzewa raportowania do tworzenia raportu. Definicja raportu zawiera również opcje i ustawienia, które mogą służyć do dostosowywania raportu. Po zdefiniowaniu definicji wierszy i kolumn trzeba połączyć je w definicji raportu. Na tym etapie można też zdefiniować inne aspekty definicji, np. poziom szczegółowości i data raportu. Następnie można zapisać i wygenerować raport. Funkcja sprawozdawczości finansowej oferuje następujące poziomy szczegółowości:
 
 -   Finanse
 -   Finanse i Konto
@@ -89,6 +89,6 @@ W poniższej tabeli opisano karty w definicji raportu oraz sposób wykorzystania
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Microsoft Dynamics 365 dla operacji sprawozdawczość finansowa](financial-reporting-intro.md)
+[Sprawozdawczość finansowa w programie Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

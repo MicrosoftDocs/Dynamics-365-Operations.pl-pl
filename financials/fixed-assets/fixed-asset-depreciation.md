@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-depreciation"></a>Amortyzacja środka trwałego
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie mechanizmu amortyzacji środków trwałych.
 
 Amortyzacja jest okresową transakcją, która zwykle zmniejsza wartość środka trwałego w bilansie i jest naliczana jako wydatek na koncie wynikowym. Dlatego do uznawania okresowej amortyzacji w bilansie jest zazwyczaj używane konto główne. Konto przeciwstawne to konto w części wynikowej planu kont.
@@ -51,6 +54,8 @@ Każda księga ma kalendarz, który jest używany podczas amortyzowania środkó
 
 Można tworzyć udostępnione kalendarze przy użyciu strony **Kalendarze obrachunkowe** w księdze głównej.
 
-Aby uzyskać więcej informacji, zobacz [metody amortyzacji i konwencje](depreciation-methods-conventions.md).
+Aby uzyskać więcej informacji, zobacz [Metody i konwencje amortyzacji](depreciation-methods-conventions.md).
+
+
 
 

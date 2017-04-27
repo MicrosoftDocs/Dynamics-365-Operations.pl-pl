@@ -1,6 +1,6 @@
 ---
-title: Organizacji i hierarchii organizacyjnej (Commerce essentials)
-description: "Podstawowe informacje dotyczące handlu ma trzy rodzaje wewnętrznych organizacji, które można zdefiniować, aby pomóc organizacji, przeprowadzenia procesu biznesowego lub osiągnąć cel."
+title: Organizacje i hierarchie organizacyjne (Podstawowe funkcje handlowe)
+description: "Moduł Podstawowe funkcje handlowe zawiera trzy rodzaje wewnętrznych organizacji, które można zdefiniować, aby pomóc swojej organizacji realizować proces biznesowy lub osiągnąć cel."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 21251
 ms.assetid: 2bfc6bfe-784b-42e8-8bf0-116e9f0a558e
 ms.search.region: global
@@ -25,9 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organizations-and-organizational-hierarchies-commerce-essentials"></a>Organizacji i hierarchii organizacyjnej (Commerce essentials)
+# <a name="organizations-and-organizational-hierarchies-commerce-essentials"></a>Organizacje i hierarchie organizacyjne (Podstawowe funkcje handlowe)
 
-Podstawowe informacje dotyczące handlu ma trzy rodzaje wewnętrznych organizacji, które można zdefiniować, aby pomóc organizacji, przeprowadzenia procesu biznesowego lub osiągnąć cel. 
+[!include[banner](includes/banner.md)]
+
+
+Moduł Podstawowe funkcje handlowe zawiera trzy rodzaje wewnętrznych organizacji, które można zdefiniować, aby pomóc swojej organizacji realizować proces biznesowy lub osiągnąć cel. 
 
 Organizacja jest grupą osób, które działają razem dla przeprowadzenia procesu biznesowego lub osiągnięcia celu. Hierarchie organizacyjne reprezentują relacje między jednostkami biznesowymi, które tworzą organizację.
 
@@ -47,7 +50,7 @@ Jednostka operacyjna to organizacja używana do dzielenia formantu zasobów ekon
 | Kanał sprzedaży detalicznej          | Jednostka operacyjna, która reprezentuje sklep tradycyjny.                             | Służy do zarządzania i kontrolowania jednego lub więcej sklepów w ramach jednej lub wielu firm.                                                               |
 
 ## <a name="organizational-hierarchies"></a>Hierarchie organizacyjne
-W module Podstawowe funkcje handlowe każdej hierarchii jest przypisywany cel. Cel hierarchii określa typy organizacji, które mogą być uwzględniane w hierarchii. Cel decyduje również o tym, w których scenariuszach aplikacji można używać hierarchii. Na przykład hierarchia w module detalicznym można kupować i sprzedawać produkty w sklepie detalicznym. Organizacje w hierarchii mogą współużytkować parametry, zasady i transakcje. Organizacja może dziedziczyć lub zastępować parametry swojej organizacji nadrzędnej. Jednak współużytkowane dane główne, takie jak produkty i książki adresowe, dotyczą całej organizacji i nie można ich zastąpić dla poszczególnych organizacji.
+W module Podstawowe funkcje handlowe każdej hierarchii jest przypisywany cel. Cel hierarchii określa typy organizacji, które mogą być uwzględniane w hierarchii. Cel decyduje również o tym, w których scenariuszach aplikacji można używać hierarchii. Na przykład hierarchia w module detalicznym może służyć do zakupów i sprzedaży produktów w sklepie sieci sprzedaży. Organizacje w hierarchii mogą współużytkować parametry, zasady i transakcje. Organizacja może dziedziczyć lub zastępować parametry swojej organizacji nadrzędnej. Jednak współużytkowane dane główne, takie jak produkty i książki adresowe, dotyczą całej organizacji i nie można ich zastąpić dla poszczególnych organizacji.
 ### <a name="best-practices-for-setting-up-an-organization-in-a-hierarchy"></a>Najważniejsze wskazówki dotyczące konfigurowania organizacji w hierarchii
 
 Podczas implementowania hierarchii organizacyjnej należy wziąć pod uwagę następujące wskazówki:
@@ -68,6 +71,8 @@ W poniższej tabeli opisano scenariusze modułu Podstawowe funkcje handlowe, gdz
 | Zarządzanie uzupełnianiami sieci sprzedaży                                                    | Grupuj sklepy do uzupełnienia zapasów na podstawie reguł uzupełnienia.                                                                                                                                                                                                                                          | Uzupełnianie zapasów sieci sprzedaży |
 | Raportuj dane dla sklepów                                                         | Grupuj sklepy na potrzeby raportowania.                                                                                                                                                                                                                                                                                | Raportowanie sieci sprzedaży     |
 | Księgowanie zapasów, obliczanie zestawień lub księgowanie zestawień dla grupy sklepów | Utwórz grupę sklepów, które można przypisać do zadania wsadowego. Podczas definiowania zadania wsadowego w celu księgowania zapasów, obliczania zestawień lub księgowania zestawień, można określić hierarchię, której dotyczy to zadanie. Jeśli sklepy są dodane lub usunięte z hierarchii, nie trzeba modyfikować zadania wsadowego. | Księgowanie punktu sprzedaży sieci sprzedaży   |
+
+
 
 
 

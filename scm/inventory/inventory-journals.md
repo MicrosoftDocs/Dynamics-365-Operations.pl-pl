@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-journals"></a>Arkusze magazynowe
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych. 
 
 Arkusze magazynowe w programie Microsoft Dynamics 365 for Operations są używane do księgowania różnych typów transakcji na fizycznych zapasach, np. do księgowania wydań i przyjęć, przesunięć magazynowych, tworzenia list składowych BOM i uzgadniania zapasów fizycznych. Wszystkie arkusze magazynowe są używane w sposób podobny, ale są one podzielone na różne typy.
@@ -72,7 +75,7 @@ Arkusz przyjęcia z produkcji działa jak arkusz przyjęcia towaru, ale jest uż
 
 ### <a name="counting"></a>Inwentaryzacja
 
-Arkusze zliczania pozwalają poprawić bieżącą ilość dostępnych zapasów zarejestrowaną dla towarów lub grup towarów. Następnie można zaksięgować rzeczywistą fizyczna ilość, tak aby wprowadzić korekty wymagane do uzgadniania różnic. Zasady obliczania można skojarzyć z grupami inwentaryzacji, co ułatwia grupowanie towarów o różnych właściwościach, dzięki czemu pozycje można uwzględnić w arkuszu zliczania. Na przykład można ustawić grupy inwentaryzacji, tak aby zliczały pozycje o określonej częstotliwości lub obliczały towar, gdy zapasy spadną do określonego poziomu. Aby uzyskać informacje na temat sposobu definiowania liczenia grup, zobacz [Definiuj inwentaryzacji procesów (zadanie guide)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
+Arkusze zliczania pozwalają poprawić bieżącą ilość dostępnych zapasów zarejestrowaną dla towarów lub grup towarów. Następnie można zaksięgować rzeczywistą fizyczna ilość, tak aby wprowadzić korekty wymagane do uzgadniania różnic. Zasady obliczania można skojarzyć z grupami inwentaryzacji, co ułatwia grupowanie towarów o różnych właściwościach, dzięki czemu pozycje można uwzględnić w arkuszu zliczania. Na przykład można ustawić grupy inwentaryzacji, tak aby zliczały pozycje o określonej częstotliwości lub obliczały towar, gdy zapasy spadną do określonego poziomu. Aby uzyskać informacje o definiowaniu grup inwentaryzacji, zobacz [Definiowanie procesów inwentaryzacji zapasów (przewodnik po zadaniu)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
 
 ### <a name="tag-counting"></a>Zliczanie znaczników
 
@@ -89,5 +92,7 @@ Tylko jeden użytkownik może mieć w danej chwili dostęp do określonego arkus
 
 ## <a name="posting-journal-lines"></a>Wiersze arkusza księgowania
 Można księgować wiersze arkusza, które można utworzyć w dowolnym momencie, dopóki towar nie zostanie zablokowany z innych transakcji. Wpisane w arkuszu dane pozostają w arkuszu nawet po zamknięciu go bez księgowania wierszy arkusza.
+
+
 
 

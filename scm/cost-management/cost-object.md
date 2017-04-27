@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-objects"></a>Obiekty kosztów
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o obiektach kosztów. Wyjaśniono w nim też sposób kumulowania kosztów i ilości. Obiekt kosztów to jednostka, dla której są kumulowane koszty i ilości. Jednostką obiektu kosztów może być produkt lub wariant produktu, takich jak wariant pod względem koloru i stylu.  
 
 <a name="cost-objects"></a>Obiekty kosztów
@@ -65,19 +68,21 @@ W poniższej tabeli przedstawiono, co jest przedmiotem kosztu i co jest obiektem
     -   Zaksięgowana ilość
 -   Pole **Średni koszt jednostkowy** jest polem obliczanym. Wartość jest obliczana przez podzielenie wartości **Wartość** przez wartość **Ilość**.
 
-**Uwaga:** ** Włącz wartość fizyczną ** parametr nie ma wpływu na obliczenia w poprzednim.
+**Uwaga:** Parametr **Włącz wartość fizyczną** nie ma wpływu na wcześniejsze obliczenia.
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Product dimension group](https://technet.microsoft.com/en-us/library/aa499382.aspx)
+[Grupa wymiarów produktu](https://technet.microsoft.com/en-us/library/aa499382.aspx)
 
-[Storage dimension group](https://technet.microsoft.com/en-us/library/hh209317.aspx)
+[Grupa wymiarów magazynowania](https://technet.microsoft.com/en-us/library/hh209317.aspx)
 
-[Tracking dimension group](https://technet.microsoft.com/en-us/library/hh209465.aspx)
+[Grupa wymiarów śledzenia](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[Co to jest nowe lub zmienione w systemie Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Nowości i zmiany w systemie Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
-[Cost entries](cost-entries.md)
+[Wpisy kosztów](cost-entries.md)
+
+
 
 

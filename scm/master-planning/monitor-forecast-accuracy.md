@@ -1,6 +1,6 @@
 ---
-title: "Monitor dokładności prognozy"
-description: "W tym artykule opisano rodzaje dokładności prognozy Microsoft Dynamics 365 dla operacji oblicza i wyjaśnia, w jaki sposób wyświetlania wartości dokładności."
+title: "Monitorowanie dokładności prognozy"
+description: "W tym artykule opisano typy dokładności prognozy dostępne w programie Microsoft Dynamics 365 for Operations i wyjaśniono, jak można wyświetlać wartości dokładności."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,23 +25,28 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="monitor-forecast-accuracy"></a>Monitor dokładności prognozy
+# <a name="monitor-forecast-accuracy"></a>Monitorowanie dokładności prognozy
 
-W tym artykule opisano rodzaje dokładności prognozy Microsoft Dynamics 365 dla operacji oblicza i wyjaśnia, w jaki sposób wyświetlania wartości dokładności.
+[!include[banner](../includes/banner.md)]
 
-Dynamics 365 dla operacji oblicza następujące rodzaje dokładności prognozy:
+
+W tym artykule opisano typy dokładności prognozy dostępne w programie Microsoft Dynamics 365 for Operations i wyjaśniono, jak można wyświetlać wartości dokładności.
+
+Program Dynamics 365 for Operations oblicza następujące typy dokładności prognoz:
 
 -   Dokładność prognozy historycznej — przez porównanie prognozy historycznej używanej przez planowanie główne z historycznym popytem. Aby wyświetlić wartości (bezwzględne i procentowe) dla dokładności prognozy historycznej, kliknij **Pokaż dokładność** na stronie **Szczegóły prognozy popytu**.
 -   Szacowana dokładność modelu prognozowania używanego do generowania prognoz. Można wyświetlić dokładność procentową w **Szczegóły modelu — MAPE** na stronie **Szczegóły prognozy popytu**. 
 
-**Uwaga:** Jeśli używasz Dynamics 365 dla operacji żądanie prognozowania usługą sieci Web usługi obliczenie dokładności modelu wewnętrznego jest oparte na zestawie danych badań. Aby określić rozmiar zestawu danych test, należy ustawić **TEST\_zestaw\_rozmiar\_procent** parametru na **prognozowania parametrów popytu** strony. Na przykład w przypadku wartości **20** dokładność modelu wewnętrznego będzie obliczana na podstawie ostatnich 20 procent danych historycznych.
+**Uwaga:** W przypadku korzystania z usługi uczenia maszynowego Microsoft Azure dla prognozowania popytu w programie Dynamics 365 for Operations dokładność obliczeń modelu wewnętrznego opiera się na danych testowych. Aby określić rozmiar zestawu danych testowych, należy ustawić parametr **TEST\_SET\_SIZE\_PERCENT** na stronie **Parametry prognozowania popytu**. Na przykład w przypadku wartości **20** dokładność modelu wewnętrznego będzie obliczana na podstawie ostatnich 20 procent danych historycznych.
 
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+[Autoryzowanie skorygowanej prognozy](authorize-adjusted-forecast.md)
 
-[Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+[Usuwanie wartości odstających z danych transakcji historycznych podczas obliczania prognozy popytu](remove-historical-outliers-calculating-demand-forecast.md)
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="factor-depreciation"></a>Amortyzacja czynnikowa
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie metody amortyzacji współczynnikowej.
 
 Czynniki to wartości procentowe używane do amortyzacji środków. Po konfiguracji profilu amortyzacji środka trwałego i wybraniu wartości **Współczynnik** w polu **Metoda** na stronie **Profile amortyzacji** można skonfigurować amortyzację progresywną, degresywną lub liniową:
@@ -39,14 +42,14 @@ Czynniki to wartości procentowe używane do amortyzacji środków. Po konfigura
 Poniższe reguły i przykłady wskazują, jak można skonfigurować czynniki dla każdego typu amortyzacji. 
 
 > [!NOTE] 
-> Po wybraniu **współczynnik** w **metody** pole, **współczynnik** pola i **interwał** są wyświetlane pola.
+> Po wybraniu opcji **Współczynnik** w polu **Metoda** zostaną wyświetlone pola **Współczynnik** i **Interwał**.
 
 ## <a name="progressive-depreciation"></a>Amortyzacja progresywna
 Wartość w polu **Współczynnik** jest większa niż **50**.
 
 ### <a name="example"></a>Przykład
 
-Cena nabycia wynosi 100,000, współczynnik wynosi 70, okres użytkowania to 10 lat, a Amortyzacja rozpoczyna się w dniu 1 stycznia. Kwoty amortyzacji i kwoty wartości księgowej netto będą wyświetlane tylko przez pierwsze sześć lat okresu użytkowania.
+Cena nabycia wynosi 100,000, współczynnik wynosi 70, okres użytkowania to 10 lat, a data początkowa amortyzacji to 1 stycznia. Kwoty amortyzacji i kwoty wartości księgowej netto będą wyświetlane tylko przez pierwsze sześć lat okresu użytkowania.
 
 | Rok | Okres      | Kwota amortyzacji | Kwota wartości księgowej netto |
 |------|-------------|---------------------|-----------------------|
@@ -62,7 +65,7 @@ Wartość w polu **Współczynnik** jest mniejsza niż **50**.
 
 ### <a name="example"></a>Przykład
 
-Cena nabycia wynosi 100,000, współczynnik wynosi 20, okres użytkowania to 10 lat, a Amortyzacja rozpoczyna się w dniu 1 stycznia. Kwoty amortyzacji i kwoty wartości księgowej netto będą wyświetlane tylko przez pierwsze sześć lat okresu użytkowania.
+Cena nabycia wynosi 100,000, współczynnik wynosi 20, okres użytkowania to 10 lat, a data początkowa amortyzacji to 1 stycznia. Kwoty amortyzacji i kwoty wartości księgowej netto będą wyświetlane tylko przez pierwsze sześć lat okresu użytkowania.
 
 | Rok | Okres      | Kwota amortyzacji | Kwota wartości księgowej netto |
 |------|-------------|---------------------|-----------------------|
@@ -75,5 +78,7 @@ Cena nabycia wynosi 100,000, współczynnik wynosi 20, okres użytkowania to 10 
 
 ## <a name="straight-line-depreciation"></a>Amortyzacja liniowa
 Wartość w polu **Współczynnik** jest równa **50**. W tym przypadku amortyzacja jest taka sama w każdym okresie i powinno się uwzględnić w innych polach wybrane wartości, zgodnie z informacjami zawartymi w temacie [Amortyzację za liniowy okres użytkowania](straight-line-service-life-depreciation.md).
+
+
 
 

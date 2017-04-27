@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="eu-entry-certificates"></a>Świadectwa wywozowe UE
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje dotyczące świadectw wywozowych umożliwiających wprowadzanie towarów na teren Unii Europejskiej (UE).
 
 Można wykonać następujące zadania dla świadectwa wywozowego Unii Europejskiej (UE):
@@ -76,7 +79,7 @@ W poniższej tabeli przedstawiono wymagania wstępne, które muszą istnieć prz
 </table>
 
 ## <a name="creating-registering-and-uploading-an-eu-entry-certificate"></a>Tworzenie, rejestrowania i przekazywanie świadectwa wywozowego UE
-Świadectwo wywozowe UE można utworzyć automatycznie lub ręcznie. Certyfikat UE zapis jest tworzony i automatycznie drukowany podczas księgowania dokumentu dostawy lub faktury dla odbiorcy za pomocą **pakowania Księgowanie dokumentu dostawy** stronę lub **Księgowanie faktury** strony. Aby ręcznie utworzyć lub ponownie wydrukować świadectwo wpisu UE na fakturze dla odbiorcy, użyj **arkusz faktur** strony. Można też użyć strony **Arkusz świadectwa wywozowego**, aby podać szczegóły dotyczące świadectwa wywozowego UE wystawionego przez inną firmę.
+Świadectwo wywozowe UE można utworzyć automatycznie lub ręcznie. Świadectwo wywozowe UE jest tworzone i drukowane automatycznie podczas księgowania dokumentu dostawy lub faktury dla odbiorcy przy użyciu strony **Księgowanie dokumentu dostawy** lub **Księgowanie faktury**. Aby ręcznie utworzyć lub ponownie wydrukować świadectwo wywozowe UE dla faktury dla odbiorcy, należy użyć strony **Arkusz faktur**. Można też użyć strony **Arkusz świadectwa wywozowego**, aby podać szczegóły dotyczące świadectwa wywozowego UE wystawionego przez inną firmę.
 
 ### <a name="creating-an-eu-entry-certificate-automatically-or-manually"></a>Tworzenie świadectwa wywozowego UE automatycznie lub ręcznie
 
@@ -121,6 +124,8 @@ Jeśli nie masz dostępu do stron, które są używane do ukończenia tego zadan
 </tr>
 </tbody>
 </table>
+
+
 
 
 

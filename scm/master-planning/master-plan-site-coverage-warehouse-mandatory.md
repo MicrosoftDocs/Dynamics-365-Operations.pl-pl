@@ -1,5 +1,5 @@
 ---
-title: "Na pokrycie lokacji, Magazyn wymagany planowania głównego"
+title: "Planowanie główne dla zapotrzebowania oddziału, magazyn wymagany"
 description: "W tym temacie opisano sposób planowania towaru, który ma wymiar zapotrzebowania „oddział”. Magazyn jest wymiarem obowiązkowym."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>Na pokrycie lokacji, Magazyn wymagany planowania głównego
+# <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>Planowanie główne dla zapotrzebowania oddziału, magazyn wymagany
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym temacie opisano sposób planowania towaru, który ma wymiar zapotrzebowania „oddział”. Magazyn jest wymiarem obowiązkowym.
 
@@ -39,9 +42,9 @@ Niniejszy scenariusz planowania głównego wymaga spełnienia następujących wa
 -   Wymiar magazynu nie jest ustawiony dla planowania zapotrzebowania. Dlatego podaż i popyt są agregowane według oddziałów oraz ewentualnie według innych wymiarów z planowaniem zapotrzebowania.
 
 Na poniższej ilustracji przedstawiono przebieg planowania głównego. Parametry wymienione na ilustracji i ich lokalizacje są następujące:
--   Jest zdefiniowane zapotrzebowanie na dany towar. Kliknij **zarządzanie informacjami o produktach &gt;produktów&gt; zwolnionych produktów**. Zaznacz element, a następnie kliknij przycisk **Plan &gt;zapotrzebowanie na towar**.
--   Dla magazynu są zdefiniowane relacje uzupełniania. Kliknij **Zarządzanie zapasami &gt;instalacji &gt;Podział magazynu &gt;składów**. Na karcie **Planowanie główne** zobacz grupę pól **Magazyn główny**.
--   Domyślny typ zamówienia to Produkcja, Zamówienie zakupu lub Kanban. Kliknij **zarządzanie informacjami o produktach &gt;produktów&gt; zwolnionych produktów**. Zaznacz element, a następnie kliknij przycisk **Plan &gt;ustawienia domyślne zamówień**. W formularzu **Ustawienia domyślne zamówień** zobacz **Domyślny typ zamówienia**.
+-   Jest zdefiniowane zapotrzebowanie na dany towar. Kliknij kolejno opcje **Zarządzanie informacjami o produktach &gt; Produkty&gt; Zwolnione produkty**. Zaznacz towar i kliknij kolejno opcje **Plan &gt; Zapotrzebowanie na towary**.
+-   Dla magazynu są zdefiniowane relacje uzupełniania. Kliknij kolejno opcje **Zarządzanie zapasami &gt; Ustawienia &gt; Podział magazynu &gt; Magazyny**. Na karcie **Planowanie główne** zobacz grupę pól **Magazyn główny**.
+-   Domyślny typ zamówienia to Produkcja, Zamówienie zakupu lub Kanban. Kliknij kolejno opcje **Zarządzanie informacjami o produktach &gt; Produkty&gt; Zwolnione produkty**. Wybierz odpowiedni towar i kliknij kolejno opcje **Plan &gt; Ustawienia domyślne zamówień**. W formularzu **Ustawienia domyślne zamówień** zobacz **Domyślny typ zamówienia**.
 
 ![Popyt dla zapotrzebowania oddziału, magazyn wymagany](./media/multisitedemandexplosionscenarioforsitecoveragewarehousemandatory.jpg)
 
@@ -50,14 +53,16 @@ Na poniższej ilustracji przedstawiono przebieg planowania głównego. Parametry
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Planowanie główne a funkcjonalność wielooddziałowości](master-plan-multisite-functionality.md)
 
 [Planowanie główny — zapotrzebowania oddziału i magazynu, magazyn wymagany](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Główne, planowania — witryny zapotrzebowania. Magazyn jest obowiązkowe](master-plan-site-coverage-warehouse-mandatory.md)
+[Planowanie główne — zapotrzebowania oddziału, magazyn wymagany](master-plan-site-coverage-warehouse-mandatory.md)
 
 [Planowanie główny — zapotrzebowania oddziału i magazynu, magazyn niewymagany](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
 [Planowanie główne — jak określa się wersję BOM](master-plan-bom-version-determined.md)
+
+
 
 

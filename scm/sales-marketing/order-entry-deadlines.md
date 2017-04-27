@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="order-entry-deadlines"></a>Terminy realizacji zamówień
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o terminach wprowadzania zamówień. Termin wprowadzania zamówień to graniczny czas decydujący o tym, czy zamówienie klienta jest traktowane (i realizowane) tak jakby zostało odebrany w dniu bieżącym lub następnym.
 
 W wielu firmach tylko zamówienia sprzedaży odebrane przed konkretną godziną są traktowane jako odebrane danego dnia. Wszystkie zamówienia odebrane po tym czasie są traktowane jako odebrane w następnym dniu roboczym. Ten limit czasowy dla zamówień jest nazywany terminem wprowadzania zamówień.  
 
-Terminy realizacji zamówień są używane jako dane wejściowe dla zobowiązań zamówień. To ułatwia zarządzanie oczekiwaniami klientów odnośnie do dostaw zamówień. Odbiorca wie na przykład, że składając zamówienie przed daną godziną, towary zostaną wysłane w tym samym dniu. Jednakże jeśli pominięto tego terminu, mogą spodziewać wysyłki tylko w następnym dniu roboczym. Ustawianie terminów wprowadzania zamówień w oparciu o możliwości hurtowni i wysyłki harmonogramy przewoźnika.  
+Terminy realizacji zamówień są używane jako dane wejściowe dla zobowiązań zamówień. To ułatwia zarządzanie oczekiwaniami klientów odnośnie do dostaw zamówień. Odbiorca wie na przykład, że składając zamówienie przed daną godziną, towary zostaną wysłane w tym samym dniu. Jeśli nie zdążą złożyć zamówienia w odpowiednim czasie, towary zostaną wysłane w następnym dniu roboczym. Terminy realizacji zamówień ustawia się na podstawie zdolności magazynowych i harmonogramu przewoźnika.  
 
 Na stronie **Terminy wprowadzania zamówień** konfiguruje się czasy realizacji zamówień dla wszystkich dni tygodnia. Jeśli zamówienie zostanie złożone po określonej godzinie, jest traktowane jako odebrane w następnym dniu. Domyślnie terminy te są ustawione na godzinę 23:59, tj. minutę przed północą na końcu odpowiedniego dnia. Można zmienić terminy domyślne tak, aby pokrywały się z rzeczywistymi terminami wysyłki lub odbioru.  
 
@@ -43,7 +46,7 @@ Jeśli firma ma kilka oddziałów, można skonfigurować terminy wprowadzania za
 Na stronie **Uaktywnienie kombinacji terminów realizacji zamówień** definiuje się dozwolone kombinacje lokalizacji i grupy terminów wprowadzania zamówień.
 
 ## <a name="example-order-entry-deadline"></a>Przykład: Termin realizacji zamówień
-Termin realizacji zamówienia we wtorek na godzinę 16:00. W konkretny wtorek o godzinie 17:00 chcesz ustawić bieżącą datę jako datę wysyłki. (Należy zauważyć, że nie ma żadnych czasu potencjalnego klienta w tym przykładzie). Jeśli **Kontrola daty dostawy** pole wyboru jest zaznaczone, pojawi się ostrzeżenie z informacją, że data nie jest prawidłowa. To ostrzeżenie jest wyświetlane na stronie **Dostępne daty wysyłki i przyjęcia**, na której można wybrać alternatywne daty.
+Termin realizacji zamówienia we wtorek na godzinę 16:00. W konkretny wtorek o godzinie 17:00 chcesz ustawić bieżącą datę jako datę wysyłki. (Należy pamiętać, że w tym przykładzie nie ma czasu realizacji zamówienia). Jeśli pole wyboru **Kontrola daty dostawy** jest zaznaczone, pojawia się ostrzeżenie informujące o tym, że dane są nieprawidłowe. To ostrzeżenie jest wyświetlane na stronie **Dostępne daty wysyłki i przyjęcia**, na której można wybrać alternatywne daty.
 
 ## <a name="example-different-order-entry-deadlines-per-site"></a>Przykład: różne terminy wprowadzania zamówień dla poszczególnych oddziałów
 Firma ma dwa oddziału. Znajdują się one w dwóch różnych strefach czasowych, jak pokazano w poniższej tabeli.
@@ -55,7 +58,7 @@ Firma ma dwa oddziału. Znajdują się one w dwóch różnych strefach czasowych
 
 Oddziały A i B określiły następujące terminy wprowadzania zamówień:
 
-| Dzień tygodnia             | O: terminy wprowadzenia (PST) zamówień | B: terminy wprowadzenia (EST) zamówień |
+| Dzień tygodnia             | A: Terminy realizacji zamówień (PST) | B: Terminy wprowadzania zamówień (EST) |
 |-----------------------------|--------------------------------|--------------------------------|
 | Poniedziałek                      | 13:00                          | 14:00                          |
 | Wtorek                     | 13:00                          | 14:00                          |
@@ -67,7 +70,7 @@ Odpowiadasz za przetwarzanie zamówień w stanie Utah w strefie czasowej Górski
 
 W następującej tabeli pokazano terminy wprowadzania zamówień obu oddziałów, A i B, przekonwertowane na czas MST:
 
-| Witryna PST o:         | Witryna MST o:        | Witryna B: EST           | Witryna B: MST        |
+| Oddział A: PST         | Oddział A: MST        | Oddział B: EST           | Oddział B: MST        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00               | 14:00              | 14:00                 | 12:00              |
 
@@ -95,7 +98,7 @@ Odpowiadasz za przetwarzanie zamówień w stanie Utah w strefie czasowej MST. Oz
 
 W następującej tabeli pokazano terminy wprowadzania zamówień obu oddziałów, A i B, przekonwertowane na czas MST:
 
-| Witryna PST o:         | Witryna MST o:        | Witryna B: EST           | Witryna B: MST        |
+| Oddział A: PST         | Oddział A: MST        | Oddział B: EST           | Oddział B: MST        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00               | 14:00              | 13:00                 | 11:00              |
 
@@ -104,6 +107,8 @@ W następującej tabeli pokazano terminy wprowadzania zamówień obu oddziałów
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Delivery schedules](delivery-schedules.md)
+[Harmonogramy dostaw](delivery-schedules.md)
+
+
 
 

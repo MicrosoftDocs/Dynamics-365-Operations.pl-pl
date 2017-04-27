@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Uzgadnianie wyciągów bankowych przy użyciu funkcji Zaawansowane uzgadnianie konta bankowego
 
+[!include[banner](../includes/banner.md)]
+
+
 Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych, a następnie ich automatyczne uzgadnianie z transakcjami bankowymi w programie Microsoft Dynamics 365 for Operations. W tym temacie opisano proces uzgadniania.  
 
 <a name="import-an-electronic-bank-statement"></a>Importowanie elektronicznego wyciągu bankowego
@@ -74,7 +77,7 @@ Istnieją trzy sposoby uzgadniania transakcji figurujących na wyciągach bankow
 -   Uzgadnianie transakcji z transakcją stornującą na wyciągu bankowym.
 -   Oznaczanie transakcji jako **Nowa**, tak aby można je było zaksięgować później jako transakcje bankowe w programie Dynamics 365 for Operations.
 
-Aby ręcznie dopasować transakcji, wybierz transakcje w **transakcji wyciągu bankowego** siatki, zaznacz odpowiednich transakcji w **transakcje bankowe operacji** siatki, a następnie kliknij **odpowiada**. Zaznaczone transakcje zostaną przeniesione z górnych siatek nieuzgodnionych transakcji do dolnych siatek uzgodnionych transakcji. Ponadto łączne kwoty uzgodnionych i nieuzgodnionych transakcji zostaną zaktualizowane. Można mieć uzgodnienia transakcji jeden-do-jednego, wiele-do-jednego i wiele-do-wielu. Uzgodnienia muszą przestrzegać reguł dozwolonych różnic między datami i mapowania typów transakcji. Te reguły ustawia się stronie **Parametry modułu Zarządzanie gotówką i bankami**.
+Aby ręcznie uzgodnić transakcje, zaznacz transakcje w siatce **Transakcje z wyciągu bankowego**, zaznacz odpowiadające im transakcje w siatce **Transakcje bankowe w rozwiązaniu Operations**, a następnie kliknij przycisk **Uzgodnij**. Zaznaczone transakcje zostaną przeniesione z górnych siatek nieuzgodnionych transakcji do dolnych siatek uzgodnionych transakcji. Ponadto łączne kwoty uzgodnionych i nieuzgodnionych transakcji zostaną zaktualizowane. Można mieć uzgodnienia transakcji jeden-do-jednego, wiele-do-jednego i wiele-do-wielu. Uzgodnienia muszą przestrzegać reguł dozwolonych różnic między datami i mapowania typów transakcji. Te reguły ustawia się stronie **Parametry modułu Zarządzanie gotówką i bankami**.
 
 W uzgodnieniu mogą wystąpić różnice groszowe. Można uzgodnić jedną transakcję na wyciągu bankowym z jedną transakcją w programie Operations, gdy transakcje te mają różnice groszowe, ale różnice muszą się mieścić w granicach kwoty tolerancji zdefiniowanej w polu **Dopuszczalna różnica groszowa** na wyciągu bankowym. Kwota jest wyświetlana w polu **Kwota korekty** w uzgodnionej transakcji bankowej w programie Operations. Gdy konto bankowe jest oznaczone jako uzgodnione, korekty są księgowane automatycznie za pomocą konta głównego zdefiniowanego w powiązanym typie transakcji bankowej. Korekty nie są obsługiwane dla typów dokumentów **Czek** i **Wpłata**. 
 
@@ -90,5 +93,7 @@ Po przetworzeniu wszystkich wierszy wyciągu należy oznaczyć arkusz uzgadniani
 
 ## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Księgowanie nowych transakcji skojarzonych z uzgodnieniem
 Transakcje na wyciągu bankowym, które w arkuszu uzgadniania zostały oznaczone jako **Nowy**, są księgowane na stronie **Wyciąg bankowy**. Na stronie **Wyciąg bankowy** zaznacz identyfikator wyciągu, aby wyświetlić szczegóły wyciągu. W menu **Księgowanie** można użyć opcji **Wyświetl dystrybucje** i **Wyświetl księgowanie**, aby wyświetlić szczegóły stojące za nowymi transakcjami i powiązanymi zapisami księgi. Zaznacz opcję **Księguj**, aby w księdze głównej księgować wiersze wyciągu bankowego oznaczone jako **Nowy**. Należy pamiętać, że księgowanie można wykonać tylko raz dla każdego wyciągu bankowego.
+
+
 
 

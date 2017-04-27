@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="time-and-attendance-registration"></a>Rejestracja czasu i frekwencji
 
+[!include[banner](../includes/banner.md)]
+
+
 Pracownicy odpowiedzialni za rejestrację czasu mogą wprowadzać różne zdarzenia, na przykład wejścia, wyjścia, działania pośrednie i nieobecności. W tym artykule opisano rejestracje, ich obliczanie i zatwierdzanie, a także stosowanie przepływu pracy w celu dodania struktury i automatycznego zatwierdzania do procesu zatwierdzania kart czasu pracy. 
 
 <a name="registrations"></a>Rejestracje
@@ -62,7 +65,7 @@ Po zakończeniu instalacji pracownicy mogą wprowadzać różnego typu rejestrac
 -   Działania pośrednie, które są niepłatnymi działaniami podejmowanymi przez pracownika w ciągu dnia roboczego. Do takich działań należą spotkania lub sprzątanie stanowiska pracy.
 -   Nadgodziny, które mogą być rejestrowane jako dodatkowe godziny, elastyczny czas pracy lub praca w nadgodzinach.
 
-## <a name="adding-clockout-registrations"></a>Dodanie rejestracji clockout
+## <a name="adding-clockout-registrations"></a>Dodawanie rejestracji wyrejestrowania
 Jeśli pracownik zapomni się wyrejestrować po zakończeniu dnia pracy, brakująca rejestracja zostanie dodana przy uruchomieniu zadania wsadowego. System porówna godzinę zarejestrowania z godziną wyrejestrowania zgodnie z profilem przypisanym do pracownika, a następnie automatycznie wstawi brakujące wyrejestrowanie, tak aby pasowało do końca dnia roboczego profilu. Rejestracja zarejestrowania i wyrejestrowania są istotne dla kolejnych obliczeń i zatwierdzania rejestracji czasu, zanim mogą zostać przeniesione do listy płac.
 
 ## <a name="calculating-registrations"></a>Obliczanie rejestracji
@@ -113,6 +116,8 @@ Pracownicy z obowiązkami, które nie wymagają natychmiastowej reakcji, tak jak
 -   Zużycie czasu
 -   Opłaty w ramach projektu
 -   Towary w ramach projektu
+
+
 
 
 

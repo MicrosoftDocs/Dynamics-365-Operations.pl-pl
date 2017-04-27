@@ -1,6 +1,6 @@
 ---
 title: "Rozrachunki z dostawcami — strona główna"
-description: "Ten temat zawiera omówienie rozrachunków z dostawcami."
+description: "Ten temat zawiera omówienie modułu Rozrachunki z dostawcami."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,8 +27,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-payable-home-page"></a>Rozrachunki z dostawcami — strona główna
 
-Ten temat zawiera omówienie rozrachunków z dostawcami.
+[!include[banner](../includes/banner.md)]
 
-Można ręcznie wprowadzać faktury od dostawcy lub odbierać je elektronicznie za pośrednictwem jednostek danych. Po wprowadzeniu lub otrzymaniu faktury można przeglądać i zatwierdzać faktury za pomocą arkusza zatwierdzania faktur lub **faktury od dostawcy** strony. Aby zautomatyzować proces przeglądu w celu automatycznego zatwierdzania faktur spełniających określone kryteria i oznaczenia pozostałych faktur do przeglądu przez upoważnionego użytkownika, można używać uzgadniania faktur, zasad faktur od dostawców i przepływu pracy.
+
+Ten temat zawiera omówienie modułu Rozrachunki z dostawcami. 
+
+Można ręcznie wprowadzać faktury od dostawcy lub odbierać je elektronicznie za pośrednictwem jednostek danych. Gdy faktury są wprowadzane lub otrzymywane, można je przeglądać i zatwierdzać za pomocą arkusza zatwierdzania faktur lub strony **Faktura od dostawcy**. Aby zautomatyzować proces przeglądu w celu automatycznego zatwierdzania faktur spełniających określone kryteria i oznaczenia pozostałych faktur do przeglądu przez upoważnionego użytkownika, można używać uzgadniania faktur, zasad faktur od dostawców i przepływu pracy.
+
+
 
 

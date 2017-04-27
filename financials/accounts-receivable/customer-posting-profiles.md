@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="customer-posting-profiles"></a>Profile księgowania odbiorców
 
+[!include[banner](../includes/banner.md)]
+
+
 Profile księgowania odbiorców sterują księgowaniem transakcji z odbiorcami w księdze głównej.
 
 <a name="customer-posting-profiles"></a>Profile księgowania odbiorców
 -------------------------
 
-Profile księgowania odbiorców pozwalają na przypisywanie kont księgi głównej i ustawień dokumentów do wszystkich odbiorców, grupy odbiorców lub jednego odbiorcy. Te ustawienia będą używane podczas tworzenia zamówień sprzedaży, faktur niezależnych, płatności gotówkowych, ponagleń i not odsetkowych. W przypadku niektórych transakcji można wybrać profil księgowania, który różni się od profilów księgowania ustawionych dla transakcji na tej stronie i ma względem nich pierwszeństwo. 
+Profile księgowania odbiorców pozwalają na przypisywanie kont księgi głównej i ustawień dokumentów do wszystkich odbiorców, grupy odbiorców lub jednego odbiorcy. Te ustawienia będą obowiązywać podczas tworzenia zamówień sprzedaży, faktur niezależnych, płatności gotówką, ponagleń i not odsetkowych. W przypadku niektórych transakcji można wybrać profil księgowania, który różni się od profilów księgowania ustawionych dla transakcji na tej stronie i ma względem nich pierwszeństwo. 
 
 Domyślny profil księgowania jest zdefiniowany na skróconej karcie Księga i podatek na stronie parametrów rozrachunków z odbiorcami. Domyślny profil księgowania jest następnie automatycznie uwzględniany w nagłówku nowych dokumentów, gdzie można go zmienić na inny profil księgowania w razie potrzeby.
 
@@ -126,7 +129,7 @@ Jeśli wszystkie transakcje odbiorcy mają mieć ten sam profil księgowania, na
 
 ### 
 
-### <a name="table-restrictions"></a>**Table restrictions**
+### <a name="table-restrictions"></a>**Restrykcje tabeli**
 
 Dla transakcji z tym profilem księgowania określ, czy transakcje będą rozliczane automatycznie, czy będą obliczane odsetki i czy będą wysyłane ponaglenia. Można również wybrać konto, które będzie używane podczas zamykania transakcji z wybranym profilem księgowania.
 
@@ -138,6 +141,8 @@ Określ następujące wartości do konfigurowania profilu księgowania:
 | **Zainteresowania**          | Wybierz tę opcję, jeśli odsetki powinny być obliczane według niezapłaconych sald dla kont odbiorców z tym profilem. Jeśli ta opcja jest wyczyszczona, odsetki dla tych odbiorców nie będą obliczane.                                           |
 | **Ponaglenie** | Wybierz tę opcję, jeśli ponaglenia powinny być generowane dla kont odbiorców z tym profilem. Jeśli ta opcja jest wyczyszczona, ponaglenia dla tych odbiorców nie będą generowane.                                                 |
 | **Zamknij**             | Umożliwia wybranie docelowego profilu księgowania, który ma zostać włączony po zamknięciu transakcji bieżącego profilu księgowania. Transakcja jest traktowana jako zamknięta, jeśli jest w pełni rozliczona.                                                                           |
+
+
 
 
 

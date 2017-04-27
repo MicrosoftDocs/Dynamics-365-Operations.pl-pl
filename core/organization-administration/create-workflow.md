@@ -26,15 +26,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-workflow"></a>Utwórz przepływ pracy
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym temacie wyjaśniono, jak utworzyć przepływ pracy.
 
 <a name="open-the-workflow-editor"></a>Otwórz edytor przepływu pracy
 ------------------------
 
-Usługi Microsoft Dynamics 365 dla operacji modułu, który pracuje w Określa typy przepływu pracy, którą można utworzyć. Wykonaj następujące kroki, aby wybrać typ tworzonego przepływu pracy i otworzyć edytora przepływu pracy.
+Moduł programu Microsoft Dynamics 365 for Operations, w którym pracujesz, określa typy przepływów pracy, jakie można tworzyć. Wykonaj następujące kroki, aby wybrać typ tworzonego przepływu pracy i otworzyć edytora przepływu pracy.
 
 1.  Otwórz moduł, dla którego chcesz utworzyć nowy przepływ pracy. Aby na przykład utworzyć przepływ pracy dla zapotrzebowań na zakup, kliknij opcję **Zaopatrzenie i sourcing**.
-2.  Kliknij **instalacji**&gt;**\[Nazwa modułu\] przepływy pracy**.
+2.  Kliknij kolejno opcje **Ustawienia** &gt; **Przepływy pracy modułu \[nazwa modułu\]**.
 3.  Na wyświetlonej stronie listy w okienku akcji kliknij przycisk **Nowy**.
 4.  Na stronie **Utwórz przepływ pracy** wybierz typ przepływu pracy, który ma zostać utworzony, i kliknij przycisk **Utwórz przepływ pracy**. Zostanie wyświetlony edytor przepływu pracy. Teraz można użyć poniższych procedur w celu zaprojektowania przepływu pracy.
 
@@ -75,6 +78,8 @@ Gdy wszystko jest gotowe do zapisania i aktywacji przepływu pracy, wykonaj nast
 3.  Jeśli wszystkie błędy i ostrzeżenia zostały rozwiązane, zostanie wyświetlona strona **Aktywacja przepływu pracy**. Umożliwia wybranie jednej z następujących opcji:
     -   Aby uaktywnić tę wersję przepływu pracy, kliknij przycisk **Uruchom nową wersję**. Gdy przepływ pracy jest aktywny, użytkownicy mogą przesyłać do niego dokumenty w celu przetwarzania.
     -   Jeśli nie chcesz uaktywnić tej wersję, kliknij przycisk **Nie aktywuj nowej wersji**. Możesz aktywować przepływ pracy później.
+
+
 
 
 

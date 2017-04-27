@@ -1,6 +1,6 @@
 ---
-title: "Dodawanie formantu zalecenia ze stroną transakcji na urządzeniu POS"
-description: "W tym temacie opisano sposób dodawania formantu zalecenia do ekranu transakcji w punkcie sprzedaży (POS) urządzenia przy użyciu Projektant układu ekranu w systemie Microsoft Dynamics 365 dla operacji."
+title: "Dodawanie formantu rekomendacji do strony transakcji na urządzeniu punktu sprzedaży"
+description: "W tym temacie opisano sposób dodawania formantu rekomendacji do ekranu transakcji na urządzeniu w punkcie sprzedaży (POS) przy użyciu projektanta układu ekranu w programie Microsoft Dynamics 365 for Operations."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,55 +25,60 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a>Dodawanie formantu zalecenia ze stroną transakcji na urządzeniu POS
+# <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a>Dodawanie formantu rekomendacji do strony transakcji na urządzeniu punktu sprzedaży
 
-W tym temacie opisano sposób dodawania formantu zalecenia do ekranu transakcji w punkcie sprzedaży (POS) urządzenia przy użyciu Projektant układu ekranu w systemie Microsoft Dynamics 365 dla operacji.
+[!include[banner](includes/banner.md)]
 
-Rekomendacje produktów można wyświetlić na urządzeniu punktu sprzedaży przy użyciu usługi Microsoft Dynamics 365 dla operacji. *Zalecenia* są elementy, które klient może być zainteresowany opartych na ich historii zakupów, elementy w ich życzeń i elementy innych klientów kupić w trybie online i w sklepach z cegły i zaprawy. Aby wyświetlić rekomendacje produktów, należy dodać formant na ekranie transakcji za pomocą Projektant układu ekranu.
 
-## <a name="open-layout-designer"></a>Otwórz projektanta układu
-1.  Przejdź do **sieci sprzedaży i handlu**&gt;**konfigurację kanału**&gt;**Instalator POS**&gt;**POS**&gt;**ekranu układy**.
-2.  Umożliwia znajdowanie ekranu, który chcesz dodać formant do szybkiego filtrowania. Na przykład, filtrować według **identyfikator układu ekranu** pola, używając wartości 'F2CP16:9M'.
-3.  Na liście znajdź i zaznacz odpowiedni rekord. Na przykład, zaznacz ' Nazwa: Identyfikator układu ekranu F2CP16:9M: F2CP16:9M ".
-4.  Kliknij **Konstruktor układu**.
-5.  Postępuj zgodnie z instrukcjami, aby uruchomić konstruktora układu. Gdy zostanie wyświetlony monit o poświadczenia, wpisz te same poświadczenia, które były używane po uruchomieniu konstruktora układu z **ekranu układy** strony.
-6.  Po zalogowaniu, zostanie wyświetlona strona podobny do przedstawionego poniżej. Układ może się różnić w zależności od dostosowań, które zostały wprowadzone dla Twojego Sklepu.
+W tym temacie opisano sposób dodawania formantu rekomendacji do ekranu transakcji na urządzeniu w punkcie sprzedaży (POS) przy użyciu projektanta układu ekranu w programie Microsoft Dynamics 365 for Operations.
 
-[![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png) wybierz opcję wyświetlania
+Rekomendacje produktów mogą być wyświetlane na urządzeniu punktu sprzedaży podczas używania programu Microsoft Dynamics 365 for Operations. *Rekomendacje* to towary, którymi odbiorca może być zainteresowany w związku z wcześniej dokonywanymi zakupami, towary na liście życzeń odbiorcy oraz towary, które inni podobni odbiorcy kupowali w sklepach internetowych i tradycyjnych. Aby wyświetlać rekomendacje produktów, należy za pomocą projektanta układu ekranu dodać formant do ekranu transakcji.
+
+## <a name="open-layout-designer"></a>Otwieranie projektanta układu
+1.  Wybierz kolejno opcje **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Punkt sprzedaży** &gt; **Układy ekranu**.
+2.  Za pomocą szybkiego filtru znajdź ekran, do którego chcesz dodać formant. Na przykład wyfiltruj według pola **Identyfikator układu ekranu**, używając wartości „F2CP16:9M”.
+3.  Na liście znajdź i zaznacz odpowiedni rekord. Na przykład zaznacz pozycję „Nazwa: F2CP16:9M Identyfikator układu ekranu: F2CP16:9M”.
+4.  Kliknij opcję **Projektant układu**.
+5.  Postępuj zgodnie z instrukcjami, aby uruchomić projektanta układu. Gdy zostanie wyświetlony monit o poświadczenia, wpisz te same poświadczenia, które były używane przy uruchamianiu konstruktora układu ze strony **Układy ekranu**.
+6.  Po zalogowaniu się zobaczysz stronę podobną do przedstawionej poniżej. Układ może się różnić w zależności od dostosowań wprowadzonych dla sklepu.
+
+[![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png) Wybieranie opcji wyświetlania
 -----------------------
 
-Możliwe są dwie opcje konfiguracji. Wybierz opcję, która najlepiej swojego Sklepu, a następnie postępuj zgodnie z wyświetlanymi instrukcjami, aby zakończyć konfigurowanie formantu. Dostępne są następujące dwie opcje:
--   Zalecenia są zawsze widoczne.
--   A **zalecenia** tab zostanie wyświetlone w siatce po prawej stronie ekranu.
+Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najlepiej dla Twojego sklepu, a następnie postępuj zgodnie z pozostałymi instrukcjami, aby dokończyć konfigurowanie formantu. Oto te opcje:
+-   Rekomendacje są zawsze widoczne.
+-   W siatce po prawej stronie ekranu jest wyświetlana karta **Zalecenia**.
 
-#### <a name="to-make-recommendations-always-visible"></a>Wydaje zalecenia zawsze widoczne
+#### <a name="to-make-recommendations-always-visible"></a>Aby rekomendacje były zawsze widoczne
 
-1.  Zmniejsz wysokość obszaru szczegółów wierszy transakcji, tak, że jest tej samej wysokości co panel klienta po lewej stronie. [](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
-2.  Z menu po lewej stronie przeciągnij i upuść formant zalecenia pomiędzy obszarem szczegóły wiersza transakcji i siatki przycisków na środku dolnej części ekranu transakcji. Zmień rozmiar formantu, tak aby pasował w tym pomieszczeniu. [](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
-3.  Kliknij **X** Aby zapisać i zamknąć konstruktora układu.
-4.  W usłudze Dynamics 365 dla operacji, przejdź do **sieci sprzedaży i handlu**&gt;**Retail IT**&gt;**harmonogramy dystrybucji**.
-5.  Z listy wybierz **rejestruje 1090**.
-6.  Kliknij **Uruchom teraz**.
+1.  Zmniejsz wysokość obszaru szczegółów wierszy transakcji, tak aby była taka sama, jak wysokość panelu odbiorcy po lewej stronie.[](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+2.  Z menu po lewej stronie przeciągnij formant rekomendacji i upuść go między obszar szczegółów wierszy transakcji a siatkę przycisków na środku w dolnej części ekranu transakcji. Zmień rozmiar formantu, tak aby mieścił się w tej przestrzeni.[](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+3.  Kliknij przycisk **X**, aby zapisać zmiany i zamknąć projektanta układu.
+4.  W programie Dynamics 365 for Operations wybierz kolejno opcje **Handel detaliczny i inny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogramy dystrybucji**.
+5.  Na liście zaznacz pozycję **1090 Kasy**.
+6.  Kliknij przycisk **Uruchom teraz**.
 
-#### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Aby dodać kartę zalecenia do siatki przycisków po prawej stronie ekranu
+#### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Dodawanie karty Zalecenia do siatki przycisków po prawej stronie ekranu
 
-1.  Kliknij prawym przyciskiem myszy puste miejsce pod ostatnią kartę na siatkę przycisków znajdujących się po prawej stronie strony.
-2.  Kliknij **dostosować**. [![pic-5](./media/pic-5.png)](./media/pic-5.png)
-3.  Kliknij **Nowa karta**.
-4.  Znajdź nową kartę, który został właśnie dodany. Może być konieczne przewinięcie w dół.
-5.  W **treści** listę rozwijaną, wybierz opcję **zalecane produkty**. [![PIC-6](./media/pic-6.png)](./media/pic-6.png)
-6.  W **etykiety** wpisz nazwę zalecenia kartę. Na przykład wpisz "Produkty zalecane".
-7.  W **obrazu** pól, należy zaznaczyć obraz pojawi się na karcie.
-8.  Click **OK**. Nowa karta zostanie wyświetlone w siatce przycisku.
-9.  Kliknij **X** Aby zapisać i zamknąć konstruktora układu.
-10. W usłudze Dynamics 365 dla operacji, przejdź do **sieci sprzedaży i handlu**&gt;**Retail IT**&gt;**harmonogramy dystrybucji**.
-11. Z listy wybierz **rejestruje 1090**.
-12. Kliknij **Uruchom teraz**.
+1.  Kliknij prawym przyciskiem myszy puste miejsce pod ostatnią kartą w siatce przycisków umieszczoną z prawej strony ekranu.
+2.  Kliknij przycisk **Dostosuj**.[![pic-5](./media/pic-5.png)](./media/pic-5.png)
+3.  Kliknij opcję **Nowa karta**.
+4.  Znajdź nową kartę, który została właśnie dodana. Może być konieczne przewinięcie ekranu w dół.
+5.  Na liście rozwijanej **Zawartość** wybierz opcję **Rekomendowane produkty**. [![pic-6](./media/pic-6.png)](./media/pic-6.png)
+6.  W polu **Etykieta** nadaj nazwę karcie rekomendacji. Na przykład wpisz „Rekomendowane produkty”.
+7.  W polu **Obraz** zaznacz ilustrację, która ma być wyświetlana na karcie.
+8.  Kliknij przycisk **OK** Nowa karta zostanie wyświetlone w siatce przycisków.
+9.  Kliknij przycisk **X**, aby zapisać zmiany i zamknąć projektanta układu.
+10. W programie Dynamics 365 for Operations wybierz kolejno opcje **Handel detaliczny i inny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogramy dystrybucji**.
+11. Na liście zaznacz pozycję **1090 Kasy**.
+12. Kliknij przycisk **Uruchom teraz**.
 
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Przegląd zaleceń spersonalizowanych produktów](personalized-product-recommendations.md)
+[Podstawowe informacje o spersonalizowanych rekomendacjach produktów](personalized-product-recommendations.md)
+
+
 
 

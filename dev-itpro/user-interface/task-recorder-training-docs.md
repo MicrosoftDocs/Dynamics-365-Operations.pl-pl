@@ -1,6 +1,6 @@
 ---
 title: "Tworzenie dokumentacji lub szkolenia przy użyciu nagrań zadań"
-description: "W tym temacie wyjaśniono, co Rejestrator zadań i zadań prowadnice, jak utworzyć zadanie nagrań i jak dostosować zadanie w programie Microsoft prowadzi i uwzględnić je w Pomocy."
+description: "W tym temacie wyjaśniono, czym jest Rejestrator zadań i przewodniki po zadaniach, jak tworzyć nagrania zadań oraz jak dostosowywać przewodniki po zadaniach firmy Microsoft i umieszczać je w Pomocy."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,19 +27,22 @@ ms.lasthandoff: 03/31/2017
 ---
 
 # <a name="create-documentation-or-training-using-task-recordings"></a>Tworzenie dokumentacji lub szkolenia przy użyciu nagrań zadań
-W tym temacie wyjaśniono, co Rejestrator zadań i zadań prowadnice, jak utworzyć zadanie nagrań i jak dostosować zadanie w programie Microsoft prowadzi i uwzględnić je w Pomocy.
+
+[!include[banner](../includes/banner.md)]
+
+W tym temacie wyjaśniono, czym jest Rejestrator zadań i przewodniki po zadaniach, jak tworzyć nagrania zadań oraz jak dostosowywać przewodniki po zadaniach firmy Microsoft i umieszczać je w Pomocy.
 
 <a name="learn-about-task-recorder"></a>Więcej informacji o Rejestratorze zadań
 -------------------------
 
-Program Task recorder jest Microsoft Dynamics 365 dla operacji narzędzie, które służy do rejestrowania czynności wykonanych w interfejsie użytkownika (UI) produktu. Przy użyciu Rejestratora zadań wszystkie zdarzenia wykonywane w interfejsie użytkownika, które są wykonywane na serwerze — takie jak dodawanie wartości, zmiana ustawień i usuwanie danych — są przechwytywane. Zapisywane kroki są zbiorczo zwane *nagraniami zadań*. Nagrania zadań mogą być używane na wiele sposobów:
+Rejestrator zadań to narzędzie w programie Microsoft Dynamics 365 for Operations, które służy do rejestrowania akcji wykonywanych w interfejsie użytkownika produktu. Przy użyciu Rejestratora zadań wszystkie zdarzenia wykonywane w interfejsie użytkownika, które są wykonywane na serwerze — takie jak dodawanie wartości, zmiana ustawień i usuwanie danych — są przechwytywane. Zapisywane kroki są zbiorczo zwane *nagraniami zadań*. Nagrania zadań mogą być używane na wiele sposobów:
 
--   **Nagrania zadań mogą być odtwarzane jako przewodniki po zadaniach.** Zadanie prowadnice są integralną część 365 Dynamics dla obsługi operacji pomocy. Przewodnik zadania jest kontrolowane, z przewodnikiem, interaktywne doświadczenie przez kolejne kroki procesu biznesowego. Użytkownik otrzymuje polecenia wykonania kolejnych kroków w wyskakujących okienkach (lub „dymkach”), które są animowane w interfejsie użytkownika i wskazywać elementy, których użytkownik powinien użyć. "Bąbelkowy" dostarcza również informacji na temat sposobu interakcji z elementu, takie jak "Kliknij tutaj" lub "W tym polu należy wprowadzić wartość". Przewodnik zadań jest uruchamiana przez użytkownika bieżącego zestawu danych i wprowadzane dane są zapisywane w środowisku użytkownika.
--   **Nagrania zadań mogą być wyświetlane jako kroki proceduralne w okienku Pomoc.** Okienko Pomoc do wyszukiwania i wyświetlania zadań nagrań. Okienko Pomocy można uzyskać, klikając **?** Ikona w górnym pasku nawigacyjnym albo można użyć kombinacji klawiszy skrótów, **klawisze Ctrl + Shift +?**. Można odczytać kroki zadania nagrywania w okienku Pomoc, lub można zdecydować, aby odtworzyć nagranie jako przewodnik zadań, więc prowadzi użytkownika przez interfejs użytkownika.
--   **Nagrania zadań można zapisać w BPM.** Nagrania zadań można zapisać w wierszu hierarchii w bibliotece narzędzia do modelowania procesów biznesowych (BPM) w usługach cyklu życia (LCS). Listę czynności i schemat blokowy procesu biznesowego będą generowane z nagrania. Nagrania zadań, które zostały zapisane w bibliotece BPM może być pokazana w 365 Dynamics dla operacji, jak pomóc.
+-   **Nagrania zadań mogą być odtwarzane jako przewodniki po zadaniach.** Przewodniki po zadaniach są integralną częścią systemu Pomocy w programie Dynamics 365 for Operations. Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych kroków w procesach biznesowych. Użytkownik otrzymuje polecenia wykonania kolejnych kroków w wyskakujących okienkach (lub „dymkach”), które są animowane w interfejsie użytkownika i wskazywać elementy, których użytkownik powinien użyć. „Dymek” zawiera informacje o sposobach obsługi elementu, na przykład „Kliknij tutaj” lub „W tym polu należy wprowadzić wartość”. Przewodnik po zadaniu działa w odniesieniu do bieżącego zestawu danych użytkownika, które są wprowadzane i zapisywane w środowisku użytkownika.
+-   **Nagrania zadań mogą być wyświetlane jako kroki procedury w okienku Pomocy.** Okienko Pomocy może być używane do wyszukiwania i wyświetlania nagrań zadań. Okienko Pomocy można wyświetlić, klikając ikonę **?** na górnym pasku nawigacyjnym, albo można użyć skrótu **Ctrl+Shift+?**. Można czytać kroki nagrania zadania w okienku Pomocy lub można wybrać opcję odtwarzania nagrań jako przewodnika po zadaniu, który przeprowadzi Cię przez interfejs użytkownika.
+-   **Nagrania zadań można zapisać w BPM.** Nagrania zadań można zapisać w wierszu hierarchii w bibliotece narzędzia do modelowania procesów biznesowych (BPM) w usługach cyklu życia (LCS). Listę czynności i schemat blokowy procesu biznesowego będą generowane z nagrania. Nagrania zadań, które zostały zapisane w bibliotece BPM, mogą być wyświetlane w programie Dynamics 365 for Operations jako Pomoc.
 -   **Nagrania zadań mogą być zapisywane jako dokumenty programu Word.** To pozwala łatwo tworzyć przewodniki szkoleniowe nadające się drukowania.
 
-Można utworzyć własnych nagrań zadania, odtwarzanie nagrań zadań dostarczony przez firmę Microsoft lub zmodyfikować nagrania zadań udostępnionych przez firmę Microsoft, aby odzwierciedlać konfiguracji. Aby uzyskać więcej informacji na temat programu Task recorder, zobacz [Rejestrator zadań w usłudze Dynamics 365 dla operacji](task-recorder.md).
+Można tworzyć własne nagrania zadań, odtwarzać nagrania zadań udostępnione przez firmę Microsoft lub modyfikować te nagrania zgodnie z własną konfiguracją. Aby uzyskać więcej informacji na temat Rejestratora zadań, zobacz [Rejestrator zadań w programie Dynamics 365 for Operations](task-recorder.md).
 
 ## <a name="plan-your-task-recording"></a>Planowanie nagrań zadań
 Niezależnie od tego, czy tworzysz najnowsze nagranie, czy opierasz się na nagraniach od Microsoft, pamiętaj o następujących informacjach.
@@ -55,15 +58,15 @@ Niezależnie od tego, czy tworzysz najnowsze nagranie, czy opierasz się na nagr
 **Zapisz opis i adnotacje wcześniej**
 
 -   Na początku każdego nagrania zadania, jest pole opisu, które pozwala na umieszczenie wprowadzenia do nagrania. Dobrze jest zapisać opis wcześniej w oddzielnym dokumencie, by móc skopiować go i wkleić do nagrania podczas nagrywania. Dzięki temu można dobrze zredagować tekst, zanim rozpocznie się nagranie. Dzięki zastosowaniu metody wycinania i wklejania proces nagrywania przebiega szybko i bez przeszkód.
--   Do każdego kroku w nagraniu zadaniu można utworzyć adnotacje. Podczas odtwarzania przewodnika po zadaniu adnotacje wyświetlają się w „dymku” jako notatki nad lub pod tekstem dla kroku. Gdy wyświetlany jako tekst w okienku Pomoc, adnotacje są wyświetlane jako tekst wbudowany w kroku. Tak samo jak przy opisie dobrze jest zapisać adnotacje w oddzielnym dokumencie. Podczas nagrywania zadania wytnij i wklej adnotacje w z tego dokumentu.
+-   Do każdego kroku w nagraniu zadaniu można utworzyć adnotacje. Podczas odtwarzania przewodnika po zadaniu adnotacje wyświetlają się w „dymku” jako notatki nad lub pod tekstem dla kroku. Tekst adnotacji wyświetlany w okienku Pomocy jest wbudowany w dany krok. Tak samo jak przy opisie dobrze jest zapisać adnotacje w oddzielnym dokumencie. Podczas nagrywania zadania wytnij i wklej adnotacje w z tego dokumentu.
 
 **Różne typy adnotacji** Wszystkie adnotacje są opcjonalne. Należy je dodawać tylko wówczas, gdy zawierają informacje pomocne dla użytkownika.
 
--   **Tytuł**: adnotacja tytuł pojawi się przed generuje tekst krok, który automatycznie task recorder. W przewodniku zadania adnotacji tytuł pojawia się nad automatycznie wygenerowany tekst. Użyj tego typu adnotacji, aby wyjaśnić, dlaczego użytkownik wykonuje krok lub aby podać dodatkowy kontekst.
+-   **Tytuł:** Adnotacja tytułu pojawia się przed tekstem kroku generowanym automatycznie przez rejestrator zadań. W przewodniku po zadaniu adnotacja tytułu pojawia się nad automatycznie wygenerowanym tekstem. Użyj tego typu adnotacji, aby wyjaśnić, dlaczego użytkownik wykonuje krok lub aby podać dodatkowy kontekst.
 
 To jest okienko edycji, wyświetlane po dodaniu adnotacji podczas tworzenia nagrania. Wprowadź adnotację tytułu w polu **Tytuł**. 
 
-[![ekran1](./media/screen1.png)](./media/screen1.png) 
+[![screen1](./media/screen1.png)](./media/screen1.png) 
 
 Tak wygląda adnotacja tytułu w „dymku” w przewodniku po zadaniu. 
 
@@ -75,11 +78,11 @@ To jest okienko edycji, wyświetlane po dodaniu adnotacji podczas tworzenia nagr
 
 [![screen3](./media/screen3.png)](./media/screen3.png) 
 
-Jest to, jak wygląda adnotacji notatki w "Bąbelkowy" w podręczniku zadania.
+Tak wygląda adnotacja uwag w „dymku” w przewodniku po zadaniu.
 
 [![screen4](./media/screen4.png)](./media/screen4.png)
 
--   **Informacje o kroku**: adnotacje te są tworzone przez kliknięcie prawym przyciskiem myszy na formancie lub w dowolnym miejscu na formularzu &lt;**programu Task recorder**&lt; ** etap dodawania informacji. ** Informacje o kroki są wyświetlane jako numerowane krok w dowolnym miejscu Wstaw go, mimo że zarejestrowano żadnej akcji w interfejsie użytkownika. Można dodać krok informacji na poziomie formularza lub krok informacji skojarzony z formantem. Jeśli krok informacji jest skojarzony z formularzem, „dymek” przewodnika po zadaniu będzie wyświetlany gdzieś w formularzu, bez wskaźnika, podczas odtwarzania podręcznika po zadaniu. Kiedy to krok info jest skojarzona z żadnym formantem, przewodnik zadanie "Bąbelkowy" wskaż formantu podczas odtwarzania przewodnik zadania. W okienku pomocy adnotacji krok informacje pojawią się jako numerowanego kroku z dowolnie wybrany tekst wprowadzony. Informacje o czynności umożliwia przygotowanie użytkownikowi opisano kroki, które muszą być wykonane poza 365 Dynamics dla operacji lub odnoszą się do innych nagrań (choć nie można utworzyć hyperinks w adnotacjach.) dla następnych kroków.
+-   **Krok informacji**: Te adnotacje są tworzone za pomocą kliknięcia prawym przyciskiem myszy na formancie lub w dowolnym miejscu w formularzu &lt; **Rejestrator zadań** &lt; **Dodaj krok informacji. **Kroki informacji są wyświetlane jako ponumerowane kroki w punkcie, w którym zostały wstawione, nawet jeśli żadna akcja nie została zarejestrowana w interfejsie użytkownika. Można dodać krok informacji na poziomie formularza lub krok informacji skojarzony z formantem. Jeśli krok informacji jest skojarzony z formularzem, „dymek” przewodnika po zadaniu będzie wyświetlany gdzieś w formularzu, bez wskaźnika, podczas odtwarzania podręcznika po zadaniu. Kiedy krok informacji jest skojarzony z formantem, „dymek” podręcznika po zadaniu będzie wskazywał formant podczas podręcznika po zadaniu. W okienku Pomocy adnotacja informacji o kroku będzie wyświetlana jako ponumerowany krok z dowolnym wprowadzonym tekstem. Informacje o kroku pozwalają przygotować użytkownika do następnego kroku, opisywać kroki, które muszą być wykonane poza programem Dynamics 365 for Operations lub odwoływać się do innych nagrań (chociaż nie można utworzyć hiperłącza w adnotacji).
 
 **Określenia, jak długie ma być nagranie**
 
@@ -89,42 +92,44 @@ Jest to, jak wygląda adnotacji notatki w "Bąbelkowy" w podręczniku zadania.
 -   Jeśli proces obejmuje wiele zadań, które zwykle wykonuje się za jednym razem, można zostawić zadania w jednym nagraniu, np. „Konfigurowanie i przypisywanie profili funkcjonalności”.
 -   Jeśli jest to proces, który wykonuje się raz (np. konfiguracja), a zaraz po nim wykonuje się inne zadanie, które można wykonywać wielokrotnie i samodzielnie, należy podzielić je na dwa nagrania.
 
-**Określanie miejsca w interfejsie użytkownika, aby rozpocząć nagrywanie** strony, które znajdują się na po rozpoczęciu nagrywania nagrywania zadań wpływa na którą stronę przewodnika zadania jest wyświetlany dla. Na przykład chcąc nagrywania zadań do wymienionych w okienku pomocy, gdy użytkownik kliknie przycisk Pomoc na stronie Parametry księgi głównej, należy uruchomić nagrywanie na stronie Parametry księgi głównej. **Zapisz nagrania jako pliki .axtr** Po zakończeniu tworzenia lub edytowania nagrania zadania, masz kilka opcji pobrania lub zapisania nagrania. Możesz pobrać plik jako pakiet nagrania zadania (.axtr), nieprzetworzony plik nagrania (.xml), dokument programu Word lub zapisać plik w bibliotece LCS. Dobrze jest zapisać nagranie zadania jako plik pakietu nagrania zadania (.axtr). To ułatwia obsługę plików, jeśli później trzeba zmienić procedury lub adnotacje. Jeśli chcesz pobrać ten plik jako dokument programu Word, zapisz go również jako plik pakietu nagrania zadania.
+**Określ gdzie w interfejsie użytkownika zacząć nagrywanie** Strona, na której jesteś na początku nagrania, ma wpływ na to, dla której strony wyświetlany jest przewodnik po zadaniu. Na przykład jeśli nagranie zadania ma się znaleźć na liście w okienku Pomocy, gdy użytkownik kliknie przycisk Pomocy na stronie parametrów księgi głównej, musisz zacząć nagranie na stronie parametrów księgi głównej. **Zapisz nagrania jako pliki .axtr** Po zakończeniu tworzenia lub edytowania nagrania zadania, masz kilka opcji pobrania lub zapisania nagrania. Możesz pobrać plik jako pakiet nagrania zadania (.axtr), nieprzetworzony plik nagrania (.xml), dokument programu Word lub zapisać plik w bibliotece LCS. Dobrze jest zapisać nagranie zadania jako plik pakietu nagrania zadania (.axtr). To ułatwia obsługę plików, jeśli później trzeba zmienić procedury lub adnotacje. Jeśli chcesz pobrać ten plik jako dokument programu Word, zapisz go również jako plik pakietu nagrania zadania.
 
 ## <a name="create-your-task-recording"></a>Tworzenie nagrania zadania
-Aby uzyskać szczegółowe omówienie czynności, zobacz [jak utworzyć nagranie zadania](task-recorder.md).
+Szczegółowe omówienie znajduje się w temacie [Jak utworzyć nagrania zadań](task-recorder.md).
 
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopiowanie i dostosowywanie nagrań uzyskanych od firmy Microsoft
-Można pobrać i edytować nagrania zadania firmy Microsoft na ich użycie dla własnych dokumentacji pomocy lub materiały szkoleniowe. Aby pobrać nagranie zadania od Microsoft, wykonaj następujące czynności:
+Można pobrać i edytować nagrania firmy Microsoft i używać ich do tworzenia własnej dokumentacji Pomocy lub materiałów szkoleniowych. Aby pobrać nagranie zadania od Microsoft, wykonaj następujące czynności:
 
-1.  W usłudze Dynamics 365 dla operacji otwórz program Task recorder. Rejestrator zadań znajduje się w menu **Ustawienia**.
+1.  W programie Microsoft Dynamics 365 for Operations otwórz Rejestrator zadań. Rejestrator zadań znajduje się w menu **Ustawienia**.
 2.  W okienku Rejestratora zadań kliknij przycisk **Obsługa rejestracji.**
 3.  W obszarze **Gdzie znajduje się nagranie** kliknij przycisk **Jest w bibliotece LCS**.
 4.  Kliknij **Wybierz bibliotekę usługi LCS**.
-5.  Wybierz bibliotekę Microsoft global.
+5.  Wybierz globalną bibliotekę Microsoft.
 6.  W drzewie wybierz węzeł biblioteki procesów biznesowych, z którym jest skojarzone nagranie zadania.
 7.  Kliknij przycisk **OK**
 8.  Kliknij **Uruchom**.
-9.  W tym momencie krok przez rejestrację, zmieniających się wszelkie czynności jak go zarejestrować je ponownie. **Uwaga**: Jeśli trzeba zmienić tekst nagrania, możesz otworzyć nagrywania w **edytowanie adnotacji nagrania** tryb, a następnie zapisz go.
+9.  Obejrzyj nagranie, zmieniając poszczególne kroki, aby nagrać je ponownie. **Uwaga**: Jeśli wystarczy tylko zmienić tekst nagrania, można otworzyć je w trybie **edytowania adnotacji nagrania**, a następnie zapisać.
 10. Po odtworzeniu nagrania do końca, kliknij **Stop** na pasku rejestratora zadań w górnej części ekranu.
 11. Wybierz, jak chcesz zapisać nagranie zadania.
 
-## <a name="include-your-task-recordings-in-the-help-pane"></a>Zawierają nagrania swoje zadania w okienku Pomoc
-Aby wyświetlić nagrania niestandardowego zadania w okienku Pomoc, tak, że mogą być odtwarzane jako prowadnice zadań lub wyświetlić w postaci tekstowej, można zapisać nagrania zadania do biblioteki BPM, a następnie zaktualizuj parametry Twojego systemu pomocy do punktu do biblioteki BPM. Aby uzyskać więcej informacji, zobacz [podłączenia systemu pomocy.](../get-started/help-connect.md)
+## <a name="include-your-task-recordings-in-the-help-pane"></a>Umieszczanie nagrań zadań w okienku Pomocy
+Aby wyświetlić własne niestandardowe nagrania zadań w okienku Pomocy, by mogły być odtwarzane jako przewodniki po zadaniach lub wyświetlane jako tekst, należy zapisać nagrania zadań w bibliotece BPM, a następnie zaktualizować parametry systemu Pomocy, aby wskazywał bibliotekę BPM. Aby uzyskać więcej informacji, zobacz [Łączenie z systemem Pomocy](../get-started/help-connect.md).
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Pomoc Dynamics 365 dla operacji](..\get-started\help-overview.md)
+[Dynamics 365 for Operations — Pomoc](..\get-started\help-overview.md)
 
-[Podłącz pomocy](..\get-started\help-connect.md)
+[Łączenie z Pomocą](..\get-started\help-connect.md)
 
-[Program Task Recorder w systemie Dynamics 365 dla operacji](task-recorder.md)
+[Rejestrator zadań w programie Dynamics 365 for Operations](task-recorder.md)
 
-[Ostatnio dodane funkcje Rejestrator zadań](\core\get-started\recently-added-editing-features-in-task-recorder)
+[Ostatnio dodane funkcje rejestratora zadań](\core\get-started\recently-added-editing-features-in-task-recorder)
 
-[Tworzenie nowej biblioteki szkolenia dla systemu Dynamics AX w ramach cyklu życia usługi za pomocą programu Task recorder (łącze zewnętrzne)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
+[Tworzenie nowych bibliotek szkoleń dla systemu Dynamics AX w portalu Lifecycle Services za pomocą Rejestratora zdań (łącze zewnętrzne)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
-[Tworzenie bogatych tematy Pomocy z Rejestrator zadań (łącze zewnętrzne)](https://mbspartner.microsoft.com/AX/Videos/970)
+[Tworzenie multimedialnych tematów Pomocy z Rejestratorem zadań (łącze zewnętrzne)](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
 
 

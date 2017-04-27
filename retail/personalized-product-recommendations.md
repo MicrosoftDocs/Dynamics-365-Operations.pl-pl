@@ -1,6 +1,6 @@
 ---
-title: "Przegląd zaleceń spersonalizowanych produktów"
-description: "W usłudze Dynamics 365 dla operacji zalecenia produktów mogą być wyświetlane jest punkt sprzedaży (POS) urządzenia. Zalecenia są elementy, które klient może być zainteresowany opartych na ich historii zakupów, elementy w ich życzeń i elementy innych klientów kupić w trybie online i w sklepach z cegły i zaprawy. Dla sprzedawców o dużych katalogów zalecenia pomocy klientom z odnajdywaniem produktu. Publikując produkty ukierunkowane na klienta interesy i nawyki kupujących, zalecenia produktu może pomóc sprzedawców w sprzedaży i cross selling i może zwiększyć zatrzymania odbiorcy. W usłudze Dynamics 365 dla operacji zalecenia produktu są zasilane przez usługi poznawcze i uczenie maszynowe Microsoft Azure."
+title: "Podstawowe informacje o spersonalizowanych rekomendacjach produktów"
+description: "W programie Dynamics 365 for Operations rekomendacje produktów mogą być wyświetlane na urządzenia w punkcie sprzedaży (POS). Rekomendacje to towary, którymi odbiorca może być zainteresowany w związku z wcześniej dokonywanymi zakupami, towary na liście życzeń odbiorcy oraz towary, które inni podobni odbiorcy kupowali w sklepach internetowych i tradycyjnych. U sprzedawców detalicznych z dużymi katalogami rekomendacje pomagają odbiorcom znajdować ciekawe inne produkty. Eksponując produkty ukierunkowane na zainteresowania i nawyki zakupowe odbiorców, rekomendacje produktów mogą pomóc sprzedawać powiązane i dodatkowe produkty oraz wzmacniać lojalność odbiorców. W programie Dynamics 365 for Operations funkcjonalność rekomendacji produktów bazuje na usługach Cognitive Services i aparacie uczenia maszynowego Microsoft Azure."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,59 +25,64 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="personalized-product-recommendations-overview"></a>Przegląd zaleceń spersonalizowanych produktów
+# <a name="personalized-product-recommendations-overview"></a>Podstawowe informacje o spersonalizowanych rekomendacjach produktów
 
-W usłudze Dynamics 365 dla operacji zalecenia produktów mogą być wyświetlane jest punkt sprzedaży (POS) urządzenia. Zalecenia są elementy, które klient może być zainteresowany opartych na ich historii zakupów, elementy w ich życzeń i elementy innych klientów kupić w trybie online i w sklepach z cegły i zaprawy. Dla sprzedawców o dużych katalogów zalecenia pomocy klientom z odnajdywaniem produktu. Publikując produkty ukierunkowane na klienta interesy i nawyki kupujących, zalecenia produktu może pomóc sprzedawców w sprzedaży i cross selling i może zwiększyć zatrzymania odbiorcy. W usłudze Dynamics 365 dla operacji zalecenia produktu są zasilane przez usługi poznawcze i uczenie maszynowe Microsoft Azure.
+[!include[banner](includes/banner.md)]
+
+
+W programie Dynamics 365 for Operations rekomendacje produktów mogą być wyświetlane na urządzenia w punkcie sprzedaży (POS). Rekomendacje to towary, którymi odbiorca może być zainteresowany w związku z wcześniej dokonywanymi zakupami, towary na liście życzeń odbiorcy oraz towary, które inni podobni odbiorcy kupowali w sklepach internetowych i tradycyjnych. U sprzedawców detalicznych z dużymi katalogami rekomendacje pomagają odbiorcom znajdować ciekawe inne produkty. Eksponując produkty ukierunkowane na zainteresowania i nawyki zakupowe odbiorców, rekomendacje produktów mogą pomóc sprzedawać powiązane i dodatkowe produkty oraz wzmacniać lojalność odbiorców. W programie Dynamics 365 for Operations funkcjonalność rekomendacji produktów bazuje na usługach Cognitive Services i aparacie uczenia maszynowego Microsoft Azure.
 
 <a name="scenarios"></a>Scenariusze
 ---------
 
-Rekomendacje produktów są włączone w następujących scenariuszach POS. Są one dostępne w chmurze POS lub nowoczesnych POS (MPOS).
+Rekomendacje produktów działają w opisanych niżej scenariuszach w punkcie sprzedaż. Są dostępne dla aplikacji Cloud POS i Modern POS (MPOS).
 
-1.  Na **szczegóły produktu** stronę:
+1.  Na stronie **Szczegóły produktu**:
 
--   Jeśli Magazyn skojarzyć wizyty **szczegóły produktu** stronę przy spojrzenie na wcześniejsze transakcje różnych kanałów, aparat zalecenie proponuje dodatkowe elementy, które są mogą być zakupiona razem.
--   Jeśli pracownik sklepu doda odbiorcy do transakcji i następnie wizyty **szczegóły produktu** strona, zalecenie silnik zawiera spersonalizowane rekomendacje przy użyciu historii transakcji odbiorcy.
+-   Jeśli pracownik sklepu otworzy stronę **Szczegóły produktu** podczas oglądania wcześniejszych transakcji w różnych kanałach, aparat rekomendacji proponuje dodatkowe towary, które inni odbiorcy często kupowali razem z analizowanym produktem.
+-   Jeśli pracownik sklepu doda odbiorcę do transakcji, a następnie otworzy stronę **Szczegóły produktu**, aparat rekomendacji przedstawi spersonalizowane zalecenia na podstawie historii transakcji odbiorcy.
 
 [![proddetails](./media/proddetails.png)](./media/proddetails.png)
 
-2.  Na **transakcji** stronę:
+2.  Na stronie **Transakcja**:
 
--   Aparat zalecenie proponuje elementów opartych na całą listę towarów w koszyku.
--   Jeśli pracownik sklepu doda odbiorcy do transakcji, aparat zalecenie zapewnia spersonalizowane rekomendacje przy użyciu historii transakcji odbiorcy i na liście elementów w koszyku.
+-   Aparat rekomendacji proponuje towary na podstawie całej listy towarów w koszyku.
+-   Jeśli pracownik sklepu doda odbiorcę do transakcji, aparat rekomendacji przedstawi spersonalizowane zalecenia na podstawie historii transakcji odbiorcy oraz listy towarów w koszyku.
 
-**Uwaga** do wyświetlania zalecenia na **transakcji** strony, sprzedawca detaliczny musi zaktualizować układ ekranu w usłudze Dynamics 365 dla operacji. **Zalecenia** kontroli musi być odrzucone, do **transakcji** strony. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+**Uwaga**  Aby rekomendacje były wyświetlane na stronie **Transakcja**, sprzedawca detaliczny musi zaktualizować układ ekranu w programie Dynamics 365 for Operations. Formant **Zalecenia** należy upuścić na stronę **Transakcja**. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-3.  Na **szczegóły klienta** stronę:
-    -   Aparat zalecenie proponuje elementów na podstawie Identyfikatora użytkownika i elementy listy życzeń klienta.
+3.  Na stronie **Szczegóły odbiorcy**:
+    -   Aparat rekomendacji proponuje towary na podstawie identyfikatora użytkownika oraz towarów na liście życzeń odbiorcy.
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## <a name="configure-dynamics-365-for-operations-to-enable-pos-recommendations"></a>Konfigurowanie 365 Dynamics dla włączania zalecenia POS
-Aby skonfigurować zalecenia produktu, należy wykonać następujące czynności.
+## <a name="configure-dynamics-365-for-operations-to-enable-pos-recommendations"></a>Konfigurowanie programu Dynamics 365 for Operations do wyświetlania rekomendacji w punkcie sprzedaży
+Aby skonfigurować rekomendowanie produktów, należy wykonać poniższe czynności:
 
-1.  Upewnij się, że wybrano poprawne **firmy**.
-2.  Przejdź do **magazynu jednostki**, wybierz opcję **sprzedaż detaliczna**, a następnie kliknij przycisk **Odśwież**. ** ** to użycia danych demonstracyjnych (lub danych) z bazy danych operacyjnych i przenieść go do magazynu jednostki.
-3.  Opcjonalnie: Aby wyświetlić zalecenia na ekranie transakcji, przejdź do ** układ ekranu, **wybierz układ ekranu, uruchamianie **Projektant układu ekranu**,** **, a następnie upuść ** kontroli zalecenia ** w razie potrzeby.
-4.  Przejdź do **handlu detalicznego parametry**, wybierz opcję **uczenie maszynowe**, wybierz opcję ** tak ** pod **zalecenia POS po**.
-5.  Aby wyświetlić zalecenia w punkcie sprzedaży, należy uruchomić zadanie konfiguracji globalnej **1110**. Aby odzwierciedlić zmiany wprowadzone w POS Projektant układu ekranu, należy uruchomić zadanie konfiguracji kanału **1070**.
+1.  Upewnij się, że wybrano poprawną wartość **Firmy**.
+2.  Przejdź do okna **Magazyn jednostek**, wybierz opcję **Sprzedaż detaliczna**, a następnie kliknij przycisk **Odśwież**. ** **Spowoduje to użycie danych demonstracyjnych (lub faktycznych danych firmy) z operacyjnej bazy danych i przeniesienie ich do magazynu jednostek.
+3.  Opcjonalnie: Aby wyświetlać rekomendacje na ekranie transakcji, przejdź do okna **Układ ekranu, **wybierz układ ekranu, uruchom narzędzie **Projektant układu ekranu**,** **a następnie upuść **formant rekomendacji** w żądanym miejscu.
+4.  Przejdź do okna **Parametry sieci sprzedaży**, wybierz opcję **Uczenie maszynowe** i w ustawieniu **Włącz rekomendacje w punkcie sprzedaży** wybierz wartość **Tak**.
+5.  Aby rekomendacje były wyświetlane w punkcie sprzedaży, uruchom zadanie konfiguracji globalnej **1110**. Aby pokazywać zmiany wprowadzone w projektancie układu ekranu punktu sprzedaży, uruchom zadanie konfiguracji kanału **1070**.
 
 ## <a name="how-does-it-work"></a>[]()Jak to działa?
-Gdy odświeżasz **magazyn jednostki** encji, zostaną wykonane następujące czynności.
+Gdy odświeżasz jednostkę **Magazyn jednostek**, są wykonywane następujące czynności:
 
--   Dane w formacie wymagane przez służby poznawcze ekstrahuje się z 365 Dynamics dla operacji operacyjnej bazy danych i wysyłane do sklepu encji.
--   Dane jest używany przez fabryki danych Azure (ADF) do czyszczenia danych przy użyciu skryptów gałąź w ramach działalności automatycznego podajnika dokumentów. Oczyszczoną dane są przechowywane w magazynie obiektów blob.
--   Dane z magazynu obiektów blob jest używany przez interfejs API usług poznawcze szkolić modelu zalecenia.
+-   Dane w formacie wymaganym przez usługi Cognitive Services są wyodrębniane z operacyjnej bazy danych programu Dynamics 365 for Operations i wysyłane do magazynu jednostek.
+-   Dane są wykorzystywane przez Fabrykę danych Azure (ADF) do czyszczenia danych przy użyciu skryptów gałęzi w ramach działań usługi ADF. Oczyszczoną dane są umieszczane w magazynie obiektów blob.
+-   Dane z magazynu obiektów blob są używane przez interfejs API usług Cognitive Services do uczenia modelu rekomendacji.
 
-Po włączeniu **włączyć zalecenia** i uruchamiać zadania konfiguracji, zostaną wykonane następujące czynności.
+Po włączeniu opcji **Włącz rekomendacje** i uruchomieniu zadań konfiguracji zostaną wykonane następujące czynności:
 
--   Wzór poświadczenia i identyfikator są zabierani z interfejsu API i przechowywane w usłudze Dynamics 365 dla operacji operacyjnej bazy danych, w pliku web.config dla serwera AOS, a także w tym serwerze.
--   Wzór poświadczenia i identyfikator są udostępnione CRT tak, że wzywa do zaleceń produktu z chmury POS i MPOS w trybie online może być przestrzegana.
+-   Poświadczenia i identyfikator modelu są pobierane z interfejsu API i umieszczane w operacyjnej bazie danych programu Dynamics 365 for Operations, w pliku web.config serwera AOS, a także na serwerze sieci sprzedaży.
+-   Poświadczenia i identyfikator modelu są udostępniane środowisku CRT, co umożliwia obsługę wywołań o rekomendacje produktów z aplikacji Cloud POS i MPOS w trybie online.
 
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Dodawanie formantu zalecenia ze stroną transakcji na urządzeniu POS](add-recommendations-control-pos-screen.md)
+[Dodawanie formantu rekomendacji do strony transakcji na urządzeniu punktu sprzedaży](add-recommendations-control-pos-screen.md)
+
+
 
 

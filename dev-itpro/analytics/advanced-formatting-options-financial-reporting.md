@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Zaawansowane opcje formatowania w raportowaniu finansowym
 
+[!include[banner](../includes/banner.md)]
+
+
 Podczas tworzenia raportu w module raportowania finansowego są dostępne dodatkowe funkcje formatowania, włącznie z filtrami wymiarów, ograniczeniami kolumn i jednostek sprawozdawczych, wierszami niedrukowanymi i instrukcjami IF/THEN/ELSE w obliczeniach. 
 
 W poniższej tabeli opisano zaawansowane funkcje formatowania, które są dostępne podczas projektowania raportów.
@@ -54,7 +57,7 @@ Zaawansowane rozmieszczenie komórek (*wymuszenie*) polega na wstawianiu określ
 2.  Na karcie **Ustawienia** w obszarze **Priorytet obliczeń** wybierz opcję **Najpierw wykonaj obliczenia kolumny, a następnie wierszy**.
 
 ## <a name="designing-the-report"></a>Projektowanie raportu
-Podczas projektowania raportu należy najpierw utworzyć wszystkie wiersze szczegółów, aby mieć pewność, że wartości są pobierane zgodnie z oczekiwaniami. Następnie należy dodać zastąpienia formatu **NP** (niedrukowane), aby pomijać szczegół zawierający wartości końcowe. **Ważne:** gdy używasz kodu formatu **CAL** w definicji wiersza, możesz wyświetlić bardziej szczegółowe dane na poziomie transakcji. Do wymuszania, formuły, użyj następującego formatu: &lt;kolumny docelowej&gt;=&lt;pochodzący z kolumny&gt;. &lt;wierszy kodu&gt; oddzielić wszelkich dodatkowych miejsc docelowych dla wiersza przecinkiem i spacją. Oto przykład: D=C.190,E=C.100
+Podczas projektowania raportu należy najpierw utworzyć wszystkie wiersze szczegółów, aby mieć pewność, że wartości są pobierane zgodnie z oczekiwaniami. Następnie należy dodać zastąpienia formatu **NP** (niedrukowane), aby pomijać szczegół zawierający wartości końcowe. **Ważne:** gdy używasz kodu formatu **CAL** w definicji wiersza, możesz wyświetlić bardziej szczegółowe dane na poziomie transakcji. Przy wymuszaniu formuły używają następującego formatu: &lt;kolumna docelowa&gt;=&lt;kolumna źródłowa&gt;.&lt;kod wiersza&gt; Dodatkowe rozmieszczenia wiersza oddziela się przecinkami i spacjami. Oto przykład: D=C.190,E=C.100
 
 ## <a name="examples-of-advanced-formatting-options"></a>Przykłady zaawansowanych opcji formatowania
 Następujące przykłady przedstawiają sposób formatowania definicji wiersza i definicji kolumny w celu wymuszania podstawowego raportu przepływów pieniężnych (przykład 1) i raportu statystycznego (przykład 2).
@@ -65,8 +68,8 @@ Poniższa tabela przedstawia przykład definicji wiersza, która używa wymuszen
 
 | Kod wiersza | Opis                      | Kod formatu | Powiązane formuły/wiersze/jednostki | Zmiana formatu | Saldo zwykłe | Sterowanie wydrukiem | Ograniczenie kolumny | Modyfikator wiersza               | Łącze do wymiarów finansowych |
 |----------|----------------------------------|-------------|-----------------------------|-----------------|----------------|---------------|--------------------|----------------------------|------------------------------|
-| 100      | Gotówka na początku okresu (NP) |             |                             |                 |                |               |                    | Konto modyfikator = \[/BB\] | + Segment2 = \[1100\]         |
-| 130      | Gotówka na początku okresu      | CAL         | C=C.100,F=D.100             |                 |                |               |                    |                            |                              |
+| 100      | Gotówka na początku okresu (NP) |             |                             |                 |                |               |                    | Modyfikator konta = \[/BB\] | +Segment2 = \[1100\]         |
+| 1.3.0      | Gotówka na początku okresu      | CAL         | C=C.100,F=D.100             |                 |                |               |                    |                            |                              |
 | 160      |                                  |             |                             |                 |                |               |                    |                            |                              |
 | 190      |                                  |             |                             |                 |                |               |                    |                            |                              |
 
@@ -94,9 +97,9 @@ Poniższa tabela przedstawia przykład definicji wiersza, która używa wymuszen
 | 50       | Informacje statystyczne   | REM         |                                 |                      |                |               |                    |              |                                            |
 | 100      | Liczba pracowników — Stany Zjednoczone            | CAL         | 4                               | \#\#\#0.;($\#\#\#0.) |                |               |                    |              |                                            |
 | 115      | Liczba pracowników — międzynarodowa | CAL         | 11                              | \#\#\#0.;($\#\#\#0.) |                |               |                    |              |                                            |
-| 130      |                           |             |                                 |                      |                |               |                    |              |                                            |
-| 190      | Sprzedaż w Stanach Zjednoczonych                  |             |                                 |                      | C              |               |                    |              | + Segment2 = \[41\*\], Segment3 = \[00\]    |
-| 220      | Międzynarodowa sprzedaż       |             |                                 |                      | C              |               |                    |              | + Segment2 = \[41\*\], Segment3 = \[01:99\] |
+| 1.3.0      |                           |             |                                 |                      |                |               |                    |              |                                            |
+| 190      | Sprzedaż w Stanach Zjednoczonych                  |             |                                 |                      | C              |               |                    |              | +Segment2 = \[41\*\], Segment3 = \[00\]    |
+| 220      | Międzynarodowa sprzedaż       |             |                                 |                      | C              |               |                    |              | +Segment2 = \[41\*\], Segment3 = \[01:99\] |
 | 250      |                           |             |                                 |                      |                |               |                    |              |                                            |
 | 280      |                           |             |                                 |                      |                |               |                    |              |                                            |
 | 310      | Sprzedaż w Stanach Zjednoczonych                  | CAL         | D=C.190,E=C.100,F=(C.100/C.190) |                      |                |               |                    |              |                                            |
@@ -171,11 +174,11 @@ Komórka **Ograniczenie kolumny** w definicji wiersza ma wiele zastosowań. W za
 -   Komórka może określać kolumnę kwot do sortowania.
 
 ## <a name="using-a-calculation-formula-in-a-row-definition"></a>Używanie formuły obliczania w definicji wiersza
-Formuła kalkulacji w definicji wiersza może zawierać **+**, **-**, **\***, i **/**podmiotów gospodarczych, a także **ELSE-IF/THEN** instrukcji. Oprócz tego obliczenie może obejmować pojedyncze komórki oraz kwoty bezwzględne (wartości rzeczywiste zawarte w formule). Kod może zawierać maksymalnie 1024 znaki. Obliczenia nie mogą być stosowane do wierszy zawierających komórki typu **Łącze do wymiarów finansowych** (FD). Można jednak dołączać obliczenia w kolejnych wierszach, wyłączać drukowanie tych wierszy, a następnie sumować wiersze obliczeń.
+Formuła obliczania w definicji wiersza może zawierać operatory **+**, **-**, **\*** i **/** oraz instrukcje **IF/THEN/ELSE**. Oprócz tego obliczenie może obejmować pojedyncze komórki oraz kwoty bezwzględne (wartości rzeczywiste zawarte w formule). Kod może zawierać maksymalnie 1024 znaki. Obliczenia nie mogą być stosowane do wierszy zawierających komórki typu **Łącze do wymiarów finansowych** (FD). Można jednak dołączać obliczenia w kolejnych wierszach, wyłączać drukowanie tych wierszy, a następnie sumować wiersze obliczeń.
 
 ### <a name="operators-in-a-calculation-formula"></a>Operatory w formule obliczania
 
-Formuła obliczania używa bardziej złożonych operatorów niż formuła sumy wiersza. Jednak można użyć **\***i **/**operatorów wraz z innych operatorów, które należy pomnożyć (\*) i dzielenia (/) kwoty. Aby użyć zakresu lub sumy w formule obliczeń, trzeba umieścić znak @ przed kodem wiersza, chyba że używasz kolumny w definicji wiersza. Na przykład, aby dodać kwota rzędu 100 do kwoty w wierszu 330, można użyć formuły ogólnej wiersza **100 + 330** lub formuła kalkulacji **@100+@330**. **Uwaga:** należy użyć znaku @ przed każdym wierszem kodu, który jest używany w formule obliczania. W przeciwnym razie liczba jest odczytywana jako kwota bezwzględna. Na przykład formuła **@100330** dodaje USD 330 do kwoty 100 wierszy. W przypadku odwołania do kolumny w formule obliczania znak @ nie jest konieczny.
+Formuła obliczania używa bardziej złożonych operatorów niż formuła sumy wiersza. Może jednak używać operatorów **\*** i **/** wraz z dodatkowymi operatorami do mnożenia (\*) i dzielenia (/) kwot. Aby użyć zakresu lub sumy w formule obliczeń, trzeba umieścić znak @ przed kodem wiersza, chyba że używasz kolumny w definicji wiersza. Na przykład aby dodać kwotę w wierszu 100 do kwoty w wierszu 330, możesz użyć formuły sumy wiersza **100+330** lub formuły obliczeń **@100+@330**. **Uwaga:** należy użyć znaku @ przed każdym wierszem kodu, który jest używany w formule obliczania. W przeciwnym razie liczba jest odczytywana jako kwota bezwzględna. Na przykład formuła **@100+330** dodaje 330 USD do kwoty w wierszu 100. W przypadku odwołania do kolumny w formule obliczania znak @ nie jest konieczny.
 
 ### <a name="create-a-calculation-formula"></a>Tworzenie formuły obliczeń
 
@@ -185,15 +188,15 @@ Formuła obliczania używa bardziej złożonych operatorów niż formuła sumy w
 
 ### <a name="example-of-a-calculation-formula-for-specific-rows"></a>Przykład formuły obliczania dla wybranych wierszy
 
-W tym przykładzie formuła kalkulacji **@100+@330** oznacza, że kwota rzędu 100 zostanie dodana do kwoty w wierszu 330. Wiersz formuły ogólnej **340 + 370** dodanie ilości w wierszu 340 do kwoty w wierszu 370. (Ilość w wierszu 370 jest kwota formuły obliczania).
+W tym przykładzie formuła obliczania **@100+@330** oznacza, że kwota z wiersza 100 jest dodawana do kwoty w wierszu 330. Formuła sumy wiersza **340+370** dodaje kwotę z wiersza 340 do kwoty w wierszu 370. (Kwota w wierszu 370 jest kwotą z formuły obliczania).
 
 | Kod wiersza | Opis                 | Kod formatu | Powiązane formuły/wiersze/jednostka | Sterowanie wydrukiem | Modyfikator wiersza | Łącze do wymiarów finansowych |
 |----------|-----------------------------|-------------|----------------------------|---------------|--------------|------------------------------|
-| 340      | Gotówka na początku okresu |             |                            | NP            | BB           | + Konto =\[1100:1110\]       |
+| 340      | Gotówka na początku okresu |             |                            | NP            | BB           | +Konto=\[1100:1110\]       |
 | 370      | Gotówka na początku roku   | CAL         | @100+@330                  | NP            |              |                              |
 | 400      | Gotówka na początku okresu | TOT         | 340+370                    |               |              |                              |
 
-Jeśli wiersz w definicji wiersza ma format kodu **CAL**, i wprowadzisz matematyczne obliczenie w komórce **Powiązane formuły/wiersze/jednostki**, należy również wprowadzić literę skojarzonej kolumny i wiersza w raporcie. Na przykład wpisz **A.120** do reprezentowania A kolumna, wiersz 120. Alternatywnie, można użyć znaku (@), aby wskazać wszystkie kolumny. Na przykład wpisz **@120**do reprezentowania wszystkich kolumn w wierszu 120. Obliczeń matematycznych, która nie ma literę kolumny lub znak (@) zakłada się liczbą rzeczywistą. **Uwaga:** Jeśli używasz kodu wiersz etykiet Aby odwołać wiersz, należy użyć kropki (.) jako separatora między literę kolumny i etykiety (na przykład **A.GROSS\_MARGIN/A.SALES**). Jeśli używasz znaku (@), separatora nie jest wymagana (na przykład **@GROSS\_MARGIN/@SALES**).
+Jeśli wiersz w definicji wiersza ma format kodu **CAL**, i wprowadzisz matematyczne obliczenie w komórce **Powiązane formuły/wiersze/jednostki**, należy również wprowadzić literę skojarzonej kolumny i wiersza w raporcie. Na przykład wpisz **A.120**, aby wskazać wiersz 120 w kolumnie A. Można również użyć znaku @, aby wskazać wszystkie kolumny. Na przykład wpisz **@120**, aby wskazać wszystkie kolumny dla wiersza 120. Wyniki wszelkich matematycznych obliczeń, które nie zawierają litery kolumny lub znaku @, są uznawane za liczby rzeczywiste. **Uwaga:** Jeśli odwołanie do wiersza ma postać kodu wiersza etykiety, musisz użyć kropki (.) jako separatora między literą kolumny a etykietą (na przykład **A.MARŻA\_BRUTTO/A.SPRZEDAŻ**). Jeśli używasz znaku @, separator nie jest wymagany(na przykład **@GROSS\_MARGIN/@SALES**).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Przykład formuły obliczania dla wybranych kolumn
 
@@ -201,7 +204,7 @@ W tym przykładzie formuła obliczeń **E=C.340** oznacza, że obliczenia w kom�
 
 | Kod wiersza | Opis                 | Kod formatu | Powiązane formuły/wiersze/jednostka | Sterowanie wydrukiem | Modyfikator wiersza | Łącze do wymiarów finansowych |
 |----------|-----------------------------|-------------|----------------------------|---------------|--------------|------------------------------|
-| 340      | Gotówka na początku okresu |             |                            | NP            | BB           | + Konto =\[1100:1110\]       |
+| 340      | Gotówka na początku okresu |             |                            | NP            | BB           | +Konto=\[1100:1110\]       |
 | 370      | Gotówka na początku roku   | CAL         | E=C.340                    | NP            |              |                              |
 | 400      | Gotówka na początku okresu | TOT         | 340+370                    |               |              |                              |
 
@@ -210,7 +213,7 @@ W tym przykładzie formuła obliczeń **E=C.340** oznacza, że obliczenia w kom�
 Jeśli modyfikujesz liczbę lub obliczenie w jednej kolumnie określonego wiersza, ale nie chcesz zmieniać innych kolumn w raporcie, możesz określić opcję **CAL** (obliczenie) w kolumnie **Kod formatu** dla definicji wiersza.
 
 -   Aby wykonać obliczenie we wszystkich kolumnach raportu (**FD**), nie wpisuj przypisania kolumny.
--   Aby ograniczyć formuły do określonych kolumn, wpisz literę kolumny, znak równości (**=**), a następnie formułę.
+-   Aby ograniczyć formułę do określonych kolumn, wpisz literę kolumny i znak równości (**=**), a następnie formułę.
 -   Możesz określić wiele kolumn. Kiedy używasz znaku @ dla danego położenia kolumny, znak @ jest powiązany z wierszem.
 -   Możesz wprowadzić wiele formuł kolumn w jednym wierszu. Formuły należy oddzielić przecinkami.
 
@@ -220,46 +223,48 @@ Jeśli modyfikujesz liczbę lub obliczenie w jednej kolumnie określonego wiersz
 |------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | @130\*.75              | Dla każdej kolumny wartość w wierszu 130 jest mnożona przez 0,75. Wynik jest następnie umieszczany w bieżącym wierszu każdej kolumny. |
 | B=@130\*.75            | To samo obliczenie jest wykonywane tylko w kolumnie B.                                                                      |
-| A, B,C=(@100/@130)\*.75 | A=(A.100/A.130)\*.75 B=(B.100/B.130)\*.75 C=(C.100/C.130)\*.75                                                           |
+| A,B,C=(@100/@130)\*.75 | A=(A.100/A.130)\*.75 B=(B.100/B.130)\*.75 C=(C.100/C.130)\*.75                                                           |
 
 ### <a name="ifthenelse-statements-in-a-row-definition"></a>Instrukcje IF/THEN/ELSE w definicji wiersza
 
-Instrukcje **IF/THEN/ELSE** można dodawać do wszystkich prawidłowych obliczeń i używane z formatem **CAL**. Formuły obliczeń **IF/THEN/ELSE** wpisuje się w komórce w kolumnie **Powiązane formuły/wiersze/jednostki**. **ELSE-IF/THEN** obliczenia formuły, użyj następującego formatu: IF &lt;instrukcji PRAWDA/FAŁSZ&gt; następnie &lt;formuła&gt; ELSE &lt;formuła&gt;**ELSE &lt;formuła&gt;** część instrukcji jest opcjonalne.
+Instrukcje **IF/THEN/ELSE** można dodawać do wszystkich prawidłowych obliczeń i używane z formatem **CAL**. Formuły obliczeń **IF/THEN/ELSE** wpisuje się w komórce w kolumnie **Powiązane formuły/wiersze/jednostki**. Formuły obliczeń **IF/THEN/ELSE** wykorzystują następujący format: IF &lt;instrukcja true/fale&gt; THEN &lt;formuła&gt; ELSE &lt;formuła&gt; Część **ELSE &lt;formuła&gt;** instrukcji jest opcjonalna.
 
 #### <a name="if-statements"></a>Instrukcje IF
 
 Instrukcja, która występuje po instrukcji **IF**, może być dowolną instrukcją, która może zostać oceniona jako prawda (true) lub fałsz (false). Instrukcja, która występuje po instrukcji **IF**, może zawierać prostą ocenę lub może być złożoną instrukcją zawierającą wiele wyrażeń. Oto kilka przykładów:
 
--   **Jeśli A.200&gt;0** (ocena prosty)
--   **Jeśli A.200&gt;0 i A.200&lt;10 000** (oświadczenie złożone)
--   **Jeśli A.200&gt;10000 lub ((A.340/B.1200)\*2 &lt;1200)** (złożonych instrukcji, która zawiera wiele wyrażeń)
+-   **IF A.200&gt;0** (Ocena prosta)
+-   **IF A.200&gt;0 AND A.200&lt;10,000** (Instrukcja złożona)
+-   **IF A.200&gt;10000 OR ((A.340/B.1200)\*2 &lt;1200)** (Instrukcja złożona zawierająca wiele wyrażeń)
 
 Wyrażenie **Okresy** w instrukcji **IF** określa liczbę okresów dla raportu. Ten termin jest zwykle używany do obliczania średniej od początku roku. Na przykład po uruchomieniu raportu za okres 7 od początku roku instrukcja **B.150/Okresy** oznacza, że wartość w wierszu 150 kolumny B jest dzielona przez 7.
 
 #### <a name="then-and-else-formulas"></a>Formuły THEN i ELSE
 
-Formuły **THEN** i **ELSE** mogą być dowolnym prawidłowym obliczeniem od bardzo prostych przypisań wartości do złożonych formuł. Na przykład, instrukcja **IF A.200&gt;0, a następnie A=B.200** oznacza "Jeśli"wartość w komórce w kolumnie A 200 wierszy jest więcej niż 0 (zero), umieścić wartość z komórki w kolumnie B rzędu 200 komórek w kolumnie A bieżącego wiersza. Instrukcja **IF/THEN**, która występuje przed nią, wstawia wartość w jednej kolumnie bieżącego wiersza. Można jednak również użyć znaku @ w ocenie prawda/fałsz lub w formule, aby określić wszystkie kolumny. Oto kilka innych przykładów, które są opisane w następujących sekcjach:
+Formuły **THEN** i **ELSE** mogą być dowolnym prawidłowym obliczeniem od bardzo prostych przypisań wartości do złożonych formuł. Na przykład instrukcja **IF A.200&gt;0 THEN A=B.200** oznacza: „jeśli wartość w komórce w kolumnie A wiersza 200 jest większa niż 0 (zero), należy wprowadzić wartość z komórki w kolumnie B wiersza 200 do komórki w kolumnie A bieżącego wiersza”. Instrukcja **IF/THEN**, która występuje przed nią, wstawia wartość w jednej kolumnie bieżącego wiersza. Można jednak również użyć znaku @ w ocenie prawda/fałsz lub w formule, aby określić wszystkie kolumny. Oto kilka innych przykładów, które są opisane w następujących sekcjach:
 
--   **Jeśli A.200 &gt;0, a następnie B.200**: Jeżeli wartość w komórce A.200 jest dodatnia, wartość z komórki B.200 jest umieszczana w każdej kolumny bieżącego wiersza.
--   **Jeśli A.200 &gt;następnie 0 @200**: Jeżeli wartość w komórce A.200 jest dodatnia, wartość z każdej kolumny w wierszu 200 jest umieszczana w odpowiedniej kolumny w bieżącym wierszu.
--   **Jeśli @200&gt;następnie 0 @200**: Jeżeli wartość rzędu 200 bieżącej kolumny jest dodatnia, wartość rzędu 200 jest umieszczana w tej samej kolumnie w bieżącym wierszu.
+-   **IF A.200 &gt;0 THEN B.200**: Jeśli wartość w komórce A.200 jest dodatnia, wartość z komórki B.200 jest umieszczana w każdej kolumnie bieżącego wiersza.
+-   **IF A.200 &gt;0 THEN @200**: Jeśli wartość w komórce A.200 jest dodatnia, wartość z każdej kolumny w wierszu 200 jest umieszczana w odpowiedniej kolumnie bieżącego wiersza.
+-   **IF @200 &gt;0 THEN @200**: Jeśli wartość w wierszu 200 bieżącej kolumny jest dodatnia, wartość z wiersza 200 jest umieszczana w tej samej kolumnie bieżącego wiersza.
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Ograniczanie obliczenia do jednostki raportowania w definicji wiersza
 
-Aby ograniczyć obliczeń do pojedynczej jednostki raportowania w drzewie raportowania, tak, że wynikająca stąd kwota nie jest rzutowany jednostce wyższego poziomu, można użyć **@Unit**kod w **powiązane formuły/wiersze/jednostki** komórki w definicji wiersza. **@Unit**Kod znajduje się w kolumnie B raportowania drzewo **nazwa jednostki**. Użycie **@Unit**kod, wartości nie są rzutowane, ale obliczenia jest sprawdzane na każdym poziomie drzewa raportowania. **Uwaga:** do korzystania z tej funkcji raportowania drzewo muszą być skojarzone z definicją wiersza. Wiersz obliczania może odnosić się do wiersza obliczania lub wiersza danych finansowych. Obliczenie jest rejestrowane w komórce **Powiązane formuły/wiersze/jednostki** definicji wiersza i ograniczeniu typu danych finansowych. Obliczeń należy użyć warunkowych obliczeń, który zaczyna się od **IF @Unit**konstrukcji. Oto przykład: IF @Unit(sprzedaży) następnie @100ELSE 0 to obliczenie obejmuje kwoty z wiersza 100 w każdej kolumnie raportu, ale tylko dla jednostki sprzedaży. Jeśli wiele jednostek ma nazwę SPRZEDAŻ, kwota pojawia się w każdej z tych jednostek. Ponadto wiersz 100 może być wierszem danych finansowych i może być zdefiniowany jako niedrukowany. W takim przypadku kwota nie pojawia się we wszystkich jednostkach drzewa. Można też ograniczyć kwotę do jednej kolumny raportu, np. kolumny H, korzystając z ograniczenia kolumny, aby drukować tylko wartość widoczną w tej kolumnie raportu. Można uwzględnić kombinacje **OR** w instrukcji **IF**. Oto przykład: IF @Unit(sprzedaż) lub @Unit(SALESWEST), następnie 5 ELSE @100ograniczenie typu kalkulacji można określić jednostkę w jednym z następujących sposobów:
+Aby ograniczyć obliczenia do jednej jednostki raportowania w drzewie raportowania, tak aby kwota wyniku nie była akumulowana do jednostki wyższego poziomu, można użyć kodu **@Unit** w komórce **Powiązane formuły/wiersze/jednostki** w definicji wiersza. Kod **@Unit** znajduje się w kolumnie B drzewa raportowania **Nazwa jednostki**. Jeśli używany jest kod **@Unit**, wartości nie są akumulowane, ale obliczenia są oceniane na każdym poziomie drzewa raportowania. **Uwaga:** do korzystania z tej funkcji raportowania drzewo muszą być skojarzone z definicją wiersza. Wiersz obliczania może odnosić się do wiersza obliczania lub wiersza danych finansowych. Obliczenie jest rejestrowane w komórce **Powiązane formuły/wiersze/jednostki** definicji wiersza i ograniczeniu typu danych finansowych. Obliczenie musi używać obliczenia warunkowego, które zaczyna się od konstrukcji **IF @Unit**. Oto przykład: IF @Unit(SPRZEDAŻ) THEN @100 ELSE 0 To obliczenie obejmuje kwoty z wiersza 100 w każdej kolumnie raportu, ale tylko dla jednostki SPRZEDAŻ. Jeśli wiele jednostek ma nazwę SPRZEDAŻ, kwota pojawia się w każdej z tych jednostek. Ponadto wiersz 100 może być wierszem danych finansowych i może być zdefiniowany jako niedrukowany. W takim przypadku kwota nie pojawia się we wszystkich jednostkach drzewa. Można też ograniczyć kwotę do jednej kolumny raportu, np. kolumny H, korzystając z ograniczenia kolumny, aby drukować tylko wartość widoczną w tej kolumnie raportu. Można uwzględnić kombinacje **OR** w instrukcji **IF**. Oto przykład: IF @Unit(SPRZEDAŻ) OR @Unit(SPRZEDAŻZACHÓD) THEN 5 ELSE @100 Można ograniczyć jednostkę w ograniczeniu typu obliczenia w jeden z następujących sposobów:
 
--   Wprowadź nazwę jednostki, aby uwzględnić jednostki, które spełniają kryteria. Na przykład **IF @Unit(sprzedaż)** umożliwia obliczanie dla każdej jednostki o nazwie Sprzedaż, nawet jeśli istnieje kilka jednostek sprzedaży w drzewie raportowania.
--   Wpisz nazwę firmy i jednostki, aby ograniczyć obliczenia do określonych jednostek w wybranej firmie. Na przykład wpisz **IF @Unit(ACME: sprzedaż**) do ograniczenia obliczeń do jednostek sprzedaży w firmie xyz.
--   Wpisz pełny kod hierarchii z drzewa raportowania, aby ograniczyć obliczanie do określonej jednostki. Na przykład wpisz **IF @Unit(podsumowanie ^ ACME ^ zachodniego wybrzeża ^ sprzedaży)**. **Uwaga:** Aby znaleźć pełen kod hierarchii, kliknij prawym przyciskiem w definicji drzewa raportowania, a następnie wybierz **Kopiuj identyfikator jednostki raportowania (kod H)**.
+-   Wprowadź nazwę jednostki, aby uwzględnić jednostki, które spełniają kryteria. Na przykład **IF @Unit(SPRZEDAŻ)** pozwala przeprowadzić obliczenie dla każdej jednostki o nazwie SPRZEDAŻ, nawet jeśli w drzewie raportowania jest kilka jednostek SPRZEDAŻ.
+-   Wpisz nazwę firmy i jednostki, aby ograniczyć obliczenia do określonych jednostek w wybranej firmie. Na przykład wpisz **IF @Unit(ACME:SPRZEDAŻ)**, aby ograniczyć obliczenie do jednostek SPRZEDAŻ w firmie ACME.
+-   Wpisz pełny kod hierarchii z drzewa raportowania, aby ograniczyć obliczanie do określonej jednostki. Na przykład wpisz **IF @Unit(PODSUMOWANIE^ACME^ZACHODNIA WYBRZEŻE^SPRZEDAŻ)**. **Uwaga:** Aby znaleźć pełen kod hierarchii, kliknij prawym przyciskiem w definicji drzewa raportowania, a następnie wybierz **Kopiuj identyfikator jednostki raportowania (kod H)**.
 
 #### <a name="restrict-a-calculation-to-a-reporting-unit"></a>Ograniczanie obliczenia do jednostki raportowania
 
 1.  W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
 2.  Kliknij dwukrotnie komórkę **Kod formatu**, a następnie wybierz opcję **CAL**.
-3.  Kliknij **powiązane formuły/wiersze/jednostki** komórki, a następnie wprowadź warunkowych obliczeń, który zaczyna się od **IF @Unit**konstrukcji.
+3.  Kliknij komórkę **Powiązane formuły/wiersze/jednostki**, a następnie wprowadź warunkowe obliczanie, które rozpoczyna się od konstrukcji **IF @Unit**.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>Instrukcje IF/THEN/ELSE w definicji kolumny
 
-Instrukcja **IF/THEN/ELSE** pozwala uzależnić każde obliczenie od wyników z dowolnej innej kolumny. Można się odwoływać do innych kolumn, ale nie można odwołać się do komórki raportu w instrukcji **IF**. Każde obliczenie musi być stosowane do całej kolumny. Na przykład, instrukcja **IF B&gt;100, a następnie B C innego\*1,25** oznacza, "kwotę podaną w kolumnie B jest większa niż 100, umieścić wartość z kolumny B w **CALC** kolumny. Jeśli wartość w kolumnie B nie jest większa niż 100, pomnóż wartość w kolumnie C przez 1,25 i umieścić wynik w kolumnie **CALC**”. Po instrukcji **IF** musi zawsze występować instrukcja logiczna, która może być oceniona jako prawdziwa lub fałszywa. Formuły używane do instrukcji **THEN** i **ELSE** mogą zawierać odwołania do dowolnej liczby kolumn i te formuły mogą być dowolnie złożone. **Uwaga:** nie można umieszczać wyników obliczeń w dowolnej innej kolumnie. Wyniki muszą być w kolumnie zawierające formułę.
+Instrukcja **IF/THEN/ELSE** pozwala uzależnić każde obliczenie od wyników z dowolnej innej kolumny. Można się odwoływać do innych kolumn, ale nie można odwołać się do komórki raportu w instrukcji **IF**. Każde obliczenie musi być stosowane do całej kolumny. Na przykład instrukcja **IF B&gt;100 THEN B ELSE C\*1.25** oznacza: „jeśli kwota w kolumnie B jest większa niż 100, umieść wartość z kolumny B w kolumnie **CALC**. Jeśli wartość w kolumnie B nie jest większa niż 100, pomnóż wartość w kolumnie C przez 1,25 i umieścić wynik w kolumnie **CALC**”. Po instrukcji **IF** musi zawsze występować instrukcja logiczna, która może być oceniona jako prawdziwa lub fałszywa. Formuły używane do instrukcji **THEN** i **ELSE** mogą zawierać odwołania do dowolnej liczby kolumn i te formuły mogą być dowolnie złożone. **Uwaga:** nie można umieszczać wyników obliczeń w dowolnej innej kolumnie. Wyniki muszą być w kolumnie zawierające formułę.
+
+
 
 

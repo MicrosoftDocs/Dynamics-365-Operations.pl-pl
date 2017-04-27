@@ -1,6 +1,6 @@
 ---
-title: "Użyj dodatku programu Excel"
-description: "W tym temacie wyjaśniono, jak otworzyć dane jednostki w programie Microsoft Excel i następnie wyświetlać, aktualizacji i edytować dane przy użyciu dodatek Microsoft Dynamics Office dla programu Excel. Aby otworzyć dane jednostki, można uruchomić z programu Excel albo Microsoft Dynamics 365 dla operacji."
+title: "Używanie dodatku programu Excel"
+description: "W tym temacie wyjaśniono, jak otwierać dane jednostek w programie Microsoft Excel, a następnie wyświetlać, aktualizować i edytować te dane przy użyciu dodatku pakietu Office dla usługi Microsoft Dynamics dla programu Excel. Aby otworzyć dane jednostki, można zacząć z poziomu programu Excel lub Microsoft Dynamics 365 for Operations."
 author: ChrisGarty
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,69 +24,69 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-the-excel-add-in"></a>Użyj dodatku programu Excel
+# <a name="use-the-excel-add-in"></a>Używanie dodatku programu Excel
 
-W tym temacie wyjaśniono, jak otworzyć dane jednostki w programie Microsoft Excel i następnie wyświetlać, aktualizacji i edytować dane przy użyciu dodatek Microsoft Dynamics Office dla programu Excel. Aby otworzyć dane jednostki, można uruchomić z programu Excel albo Microsoft Dynamics 365 dla operacji.
+W tym temacie wyjaśniono, jak otwierać dane jednostek w programie Microsoft Excel, a następnie wyświetlać, aktualizować i edytować te dane przy użyciu dodatku pakietu Office dla usługi Microsoft Dynamics dla programu Excel. Aby otworzyć dane jednostki, można zacząć z poziomu programu Excel lub Microsoft Dynamics 365 for Operations.
 
-Otwierając dane jednostki w programie Microsoft Excel, można szybko i łatwo umożliwia wyświetlanie i edytowanie danych przy użyciu dodatek Microsoft Dynamics Office dla programu Excel. Ten dodatek wymaga programu Microsoft Excel 2016. **Uwaga:** Jeśli dzierżawcy Microsoft Azure usługi Active Directory (Azure AD) jest skonfigurowany do używania programu Active Directory Federation Services (AD FS), należy się upewnić, że maja 2016 aktualizacja została zainstalowana, tak, że dodatek programu Excel można poprawnie zalogowanie.
+Otwierając dane jednostek w programie Microsoft Excel, można łatwo i szybko wyświetlić i edytować te dane przy użyciu dodatku pakietu Office dla usługi Microsoft Dynamics dla programu Excel. Ten dodatek wymaga programu Microsoft Excel 2016. **Uwaga:** Jeśli dzierżawa usługi Microsoft Azure Active Directory (Azure AD) jest skonfigurowana do używania usług federacyjnych w usłudze Active Directory (AD FS), należy się upewnić, że zastosowano aktualizację z maja 2016 r., ponieważ tylko wtedy dodatek programu Excel będzie poprawnie logował użytkowników.
 
-## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-operations"></a>Otwórz w programie Excel dane jednostki, po ponownym uruchomieniu z 365 Dynamics dla operacji
-1.  Na stronie usługi Microsoft Dynamics 365 dla operacji, kliknij przycisk **Otwórz w programie Microsoft Office**. Jeśli główne źródło danych (tabeli) na stronie jest taka sama jak głównego źródła danych dla jakimikolwiek jednostkami, domyślnie **otwarty w programie Excel** opcje są generowane dla strony. **Otwórz w programie Excel** opcje można znaleźć na stronach często używanych, takich jak **wszystkich dostawców** i **wszystkich klientów**.
-2.  Kliknij **Otwórz w programie Excel** opcji, a następnie otwórz skoroszyt, który jest generowany. Ten skoroszyt zawiera informacje wiązania dla podmiotu, wskaźnik do środowiska i wskaźnik do dodatek programu Excel.
-3.  W programie Excel, kliknij przycisk **włączyć edycję** Aby włączyć dodatek programu Excel do uruchomienia. Dodatek programu Excel jest uruchamiany w okienku po prawej stronie okna programu Excel.
-4.  Jeśli korzystasz z dodatek programu Excel po raz pierwszy, kliknij przycisk **zaufanie to**.
-5.  Jeśli zostanie wyświetlony monit logowania, kliknij przycisk **logowania**, a następnie zaloguj się przy użyciu tych samych poświadczeń używanych do logowania do systemu Dynamics 365 dla operacji. Dodatek programu Excel będzie używać poprzedniego kontekstu logowanie w programie Internet Explorer i automatyczne logowanie, jeżeli jest to możliwe. W związku z tym Sprawdź nazwę użytkownika w prawym górnym rogu dodatek programu Excel.
+## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-operations"></a>Otwieranie danych jednostki w programie Excel przy rozpoczynaniu z programu Dynamics 365 for Operations
+1.  Na stronie w usłudze Microsoft Dynamics 365 for Operations kliknij przycisk **Otwórz w pakiecie Microsoft Office**. Jeśli główne źródło danych (tabela) na stronie jest takie same, jak główne źródło danych którychkolwiek jednostek, dla strony zostaną wygenerowane domyślnie opcje **Otwórz w programie Excel**. Opcje **Otwórz w programie Excel** można znaleźć na często używanych stronach, takich jak **Wszyscy dostawcy** i **Wszyscy odbiorcy**.
+2.  Kliknij opcję **Otwórz w programie Excel**, a następnie otwórz wygenerowany skoroszyt. Ten skoroszyt zawiera informacje o powiązaniu jednostki, wskaźnik do środowiska oraz wskaźnik do dodatku programu Excel.
+3.  W programie Excel kliknij przycisk **Włącz edytowanie**, co umożliwi uruchamianie dodatku programu Excel. Dodatek programu Excel jest uruchamiany w okienku z prawej strony okna programu Excel.
+4.  Jeśli uruchamiasz dodatek programu Excel po raz pierwszy, kliknij opcję **Ufaj temu dodatkowi**.
+5.  Jeśli zostanie wyświetlony monit o zalogowanie, kliknij przycisk **Zaloguj**, a następnie zaloguj się przy użyciu tych samych poświadczeń, jak używane do logowania w programie Dynamics 365 for Operations. Jeżeli jest to możliwe, dodatek programu Excel użyje poprzedniego kontekstu logowania z programu Internet Explorer i automatycznie Cię zaloguje. W związku z tym sprawdź nazwę użytkownika w prawym górnym rogu dodatku programu Excel.
 
-Dodatek programu Excel automatycznie odczytuje dane dla wybranego obiektu. Należy zauważyć, że nie będzie żadnych danych w skoroszycie do dodatek programu Excel odczytuje go.
+Dodatek programu Excel automatycznie odczytuje dane wybranej jednostki. Należy zauważyć, że nie będzie żadnych danych w skoroszycie, dopóki dodatek programu Excel ich nie wczyta.
 
-## <a name="open-entity-data-in-excel-when-you-start-from-excel"></a>Otwórz w programie Excel dane jednostki, podczas uruchamiania programu Excel
-1.  W programie Excel na **Wstaw** kartę w **dodatki** grupy, kliknij przycisk **sklep** otworzyć magazynu pakietu Office.
-2.  W sklepie Office, wyszukaj słowo kluczowe "Dynamics", a następnie kliknij przycisk **Dodaj** obok **dodatek Microsoft Dynamics Office** (dodatek programu Excel).
-3.  Jeśli korzystasz z dodatek programu Excel po raz pierwszy, kliknij przycisk **zaufanie to** Aby włączyć dodatek programu Excel do uruchomienia. Dodatek programu Excel jest uruchamiany w okienku po prawej stronie okna programu Excel.
-4.  Kliknij **dodać informacje o serwerze** otworzyć **opcje** okienka.
-5.  Kopiuj adres URL przeglądarki od celu Dynamics 365 dla wystąpienia operacji, wklej go do **adres URL serwera** w polu, a następnie Usuń wszystko po nazwie hosta (na przykład usunąć **/? cmp = usmf & mi = CustTableListPage**). Wynikowego adresu URL powinna mieć tylko nazwa hosta (na przykład **https://xxx.dynamics.com**).
-6.  Kliknij **OK**, a następnie kliknij przycisk **tak** o potwierdzenie zmiany. Program Excel dodać zostanie ponownie uruchomiony i ładuje metadane. **Projekt** przycisk jest teraz dostępny. Jeśli dodatek programu Excel ma **załadować apletów** przycisk, prawdopodobnie nie jesteś zalogowany jako poprawny użytkownik. Aby uzyskać więcej informacji zobacz "przycisk aplety obciążenia jest widoczny" w sekcji "Rozwiązywanie problemów" w tym temacie.
-7.  Kliknij **projekt**. Dodatek programu Excel pobiera metadanych jednostki.
-8.  Kliknij **Dodaj tabelę**. Zostanie wyświetlona lista elementów. Podmioty są wymienione w formacie "Nazwa – Label".
-9.  Umożliwia wybranie jednostki na liście, takie jak **odbiorca — klienci**, a następnie kliknij przycisk **dalej**.
-10. Aby dodać pole z **dostępne pola** na liście, aby **wybrane pola** listy, kliknij pole, a następnie kliknij **Dodaj**. Alternatywnie kliknij dwukrotnie pole.
-11. Po dodaniu żądanego pola, aby **wybrane pola** listy, upewnij się, że kursor znajduje się w odpowiednim miejscu w arkuszu (na przykład komórka A1), a następnie kliknij **Sporządzono**. Następnie kliknij przycisk **Sporządzono** aby zakończyć projektanta.
-12. Kliknij **Odśwież** do ciągnięcia w zestawie danych.
+## <a name="open-entity-data-in-excel-when-you-start-from-excel"></a>Otwieranie danych jednostki w programie Excel przy rozpoczynaniu z programu Excel
+1.  W programie Excel na karcie **Wstaw** w grupie **Dodatki** kliknij opcję **Sklep**, co spowoduje otwarcie Sklepu Office.
+2.  W Sklepie Office wyszukaj według słowa kluczowego „Dynamics”, a następnie kliknij przycisk **Dodaj** obok pozycji **Dodatek pakietu Office dla usługi Microsoft Dynamics** (lub Microsoft Dynamics Office Add-in). Jest to żądany dodatek programu Excel.
+3.  Jeśli uruchamiasz dodatek programu Excel po raz pierwszy, kliknij opcję **Ufaj temu dodatkowi**, co umożliwi uruchamianie dodatku. Dodatek programu Excel jest uruchamiany w okienku z prawej strony okna programu Excel.
+4.  Kliknij opcję **Dodaj informacje dotyczące serwera**, co spowoduje otwarcie okienka **Opcje**.
+5.  W przeglądarce skopiuj adres URL docelowego wystąpienia programu Dynamics 365 for Operations, wklej go w polu **Adres URL serwera**, a następnie usuń wszystko po nazwie hosta (na przykład usuń fragment **/?cmp=usmf&mi=CustTableListPage**). Powstały adres URL powinien zawierać tylko nazwę hosta (na przykład **https://xxx.dynamics.com**).
+6.  Kliknij przycisk **OK**, a następnie przycisk **Tak**, aby potwierdzić zmianę. Dodatek programu Excel zostanie ponownie uruchomiony i załaduje metadane. Będzie teraz dostępny przycisk **Projekt**. Jeśli dodatek programu Excel zawiera przycisk **Ładuj aplety**, prawdopodobnie nie jesteś zalogowany jako poprawny użytkownik. Aby uzyskać więcej informacji, zobacz „Jest wyświetlany przycisk Ładuj aplety” w sekcji „Rozwiązywanie problemów” w tym temacie.
+7.  Kliknij przycisk **Projekt**. Dodatek programu Excel pobierze metadane jednostki.
+8.  Kliknij opcję **Dodaj tabelę**. Zostanie wyświetlona lista jednostek. Jednostki są wyświetlane w formacie „Nazwa — Etykieta”.
+9.  Na liście zaznacz jednostkę, taką jak **Odbiorca — Odbiorcy**, a następnie kliknij przycisk **Dalej**.
+10. Aby dodać pole z listy **Dostępne pola** do listy **Wybrane pola**, kliknij pole, a następnie kliknij przycisk **Dodaj**. Alternatywnie kliknij dwukrotnie pole.
+11. Po dodaniu żądanych pól do listy **Wybrane pola** upewnij się, że kursor znajduje się w odpowiednim miejscu w arkuszu (na przykład w komórce A1), a następnie kliknij przycisk **Gotowe**. Następnie kliknij przycisk **Gotowe**, aby zamknąć projektanta.
+12. Kliknij przycisk **Odśwież**, aby pobrać zestaw danych.
 
-## <a name="view-and-update-entity-data-in-excel"></a>Przeglądanie i aktualizowanie jednostki danych w programie Excel
-Po dodatek Excel odczytuje dane jednostki do skoroszytu, można aktualizować dane w dowolnym momencie, klikając **Odśwież** w dodatek programu Excel.
+## <a name="view-and-update-entity-data-in-excel"></a>Wyświetlanie i aktualizowanie danych jednostki w programie Excel
+Gdy dodatek programu Excel wczyta dane jednostki do skoroszytu, można w dowolnym momencie aktualizować te dane, klikając przycisk **Odśwież** w dodatku programu Excel.
 
-## <a name="edit-entity-data-in-excel"></a>Edycja jednostki danych w programie Excel
-Można zmienić dane jednostki, jako wymagane, a następnie opublikować ją przywrócić, klikając **Opublikuj** w dodatek programu Excel. Aby edytować rejestr, zaznacz komórki w arkuszu, a następnie zmień wartość komórki. Aby dodać nowy rekord, wykonaj jedną z następujących czynności:
+## <a name="edit-entity-data-in-excel"></a>Edytowanie danych jednostki w programie Excel
+Można zmienić dane jednostki w żądany sposób, a następnie opublikować je ponownie, klikając przycisk **Opublikuj** w dodatku programu Excel. Aby zmodyfikować rekord, zaznacz komórkę w arkuszu, a następnie zmień wartość komórki. Aby dodać nowy rekord, wykonaj jedną z następujących czynności:
 
--   Kliknij w dowolnym miejscu arkusza, a następnie kliknij przycisk **nowy** w dodatek programu Excel.
--   Kliknij w ostatnim wierszu arkusza, a następnie naciśnij klawisz Tab, aż kursor znajdzie się poza ostatniej kolumnie tego wiersza i tworzony jest nowy wiersz.
--   Kliknij w wierszu bezpośrednio poniżej arkusza i zacząć wprowadzać dane w komórce. Po przeniesieniu fokusu poza tę komórkę arkusza rozszerza się nowy wiersz.
+-   Kliknij w dowolnym miejscu arkusza, a następnie kliknij przycisk **Nowy** w dodatku programu Excel.
+-   Kliknij w ostatnim wierszu arkusza, a następnie naciskaj klawisz Tab, aż kursor znajdzie się poza ostatnią kolumną tego wiersza i zostanie utworzony nowy wiersz.
+-   Kliknij w wierszu bezpośrednio poniżej arkusza i zacznij wprowadzać dane w komórce. Po przeniesieniu fokusu poza tę komórkę arkusz powiększy się o nowy wiersz.
 
-Aby usunąć rekord, należy wykonać jedną z następujących czynności:
+Aby usunąć rekord, wykonaj jedną z następujących czynności:
 
--   Kliknij prawym przyciskiem myszy numer wiersza obok wiersza arkusza do usunięcia, a następnie kliknij przycisk **usunąć**.
--   Kliknij prawym przyciskiem myszy w wierszu arkusza, aby usunąć, a następnie kliknij przycisk **usunąć**&gt;**wierszy tabeli**.
+-   Kliknij prawym przyciskiem myszy numer wiersza obok wiersza arkusza, który chcesz usunąć, i kliknij przycisk **Usuń**.
+-   Kliknij prawym przyciskiem myszy wiersz arkusza, który chcesz usunąć, i kliknij kolejno opcje **Usuń** &gt; **Wiersze tabeli**.
 
 ## <a name="add-or-remove-columns"></a>Dodaj lub usuń kolumny
-Aby dopasować kolumny, które są automatycznie dodawane do arkusza może używać projektanta.
+Można użyć projektanta, aby dostosować kolumny dodawane automatycznie do arkusza.
 
-1.  Uruchom danych źródłowych projektant dodatek programu Excel klikając **opcje** (symbol koła zębatego), a następnie wybierając **włączyć projekt** pole wyboru.
-2.  Kliknij **projekt** w dodatek programu Excel. Wymienione są wszystkie źródła danych.
-3.  Obok źródła danych, kliknij przycisk **edytować** przycisk (symbol ołówka).
-4.  Skorygować listę w **wybrane pola** jak potrzebujesz listy:
-    -   Aby dodać pole z **dostępne pola** na liście, aby **wybrane pola** listy, kliknij pole, a następnie kliknij **Dodaj**. Alternatywnie kliknij dwukrotnie pole.
-    -   Aby usunąć pole z **wybrane pola** listy, kliknij pole, a następnie kliknij **usunąć**. Alternatywnie kliknij dwukrotnie pole.
-    -   Aby zmienić kolejność pól, kliknij pole w **wybrane pola** listy, a następnie kliknij **się** lub **w dół**.
+1.  Uruchom projektanta danych źródłowych dodatku programu Excel, klikając przycisk **Opcje** (symbol koła zębatego), a następnie zaznaczając pole wyboru **Włącz projekt**.
+2.  W dodatku programu Excel kliknij opcję **Projekt**. Zostaną wyświetlone wszystkie źródła danych.
+3.  Obok źródła danych kliknij przycisk **Edytuj** (symbol ołówka).
+4.  Dostosuj pola na liście **Wybrane pola** w żądany sposób:
+    -   Aby dodać pole z listy **Dostępne pola** do listy **Wybrane pola**, kliknij pole, a następnie kliknij przycisk **Dodaj**. Alternatywnie kliknij dwukrotnie pole.
+    -   Aby usunąć pole z listy **Wybrane pola**, zaznacz pole i kliknij przycisk **Usuń**. Alternatywnie kliknij dwukrotnie pole.
+    -   Aby zmienić kolejność pól, kliknij pole na liście **Wybrane pola**, a następnie kliknij przycisk **W górę** lub **W dół**.
 
-5.  Zastosuj zmiany do źródła danych poprzez kliknięcie **aktualizacja**. Następnie kliknij przycisk **Sporządzono** aby zakończyć projektanta. Jeśli dodano pola (kolumny), kliknij przycisk **Odśwież** do ciągnięcia w zaktualizowany zbiór danych.
+5.  Zastosuj zmiany do źródła danych poprzez kliknięcie przycisku **Aktualizuj**. Następnie kliknij przycisk **Gotowe**, aby zamknąć projektanta. Jeśli dodano pole (kolumnę), kliknij przycisk **Odśwież**, aby pobrać zaktualizowany zbiór danych.
 
-## <a name="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting"></a>[](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Troubleshooting
-Istnieje kilka problemów, które mogą być rozwiązane przez kilka prostych kroków.
+## <a name="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting"></a>[](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Rozwiązywanie problemów
+Istnieje kilka problemów, które można rozwiązać poprzez wykonanie kilku prostych kroków.
 
--   **Przycisk aplety obciążenia jest widoczny.** Jeśli dodatek programu Excel ma **załadować apletów** przycisk po zalogowaniu, prawdopodobnie nie jesteś zalogowany jako poprawny użytkownik. Aby rozwiązać ten problem, sprawdź, czy poprawną nazwę użytkownika pojawia się w prawym górnym rogu dodatek programu Excel. Jeśli pojawi się niepoprawną nazwę użytkownika, kliknij go, wyloguj się, a następnie zaloguj się ponownie.
--   **Pojawi się komunikat "Dostęp zabroniony".** Jeśli zostanie wyświetlony komunikat "Dostęp zabroniony", podczas gdy dodatek programu Excel jest ładowanie metadanych, konto, na którym jest zalogowany do dodatek programu Excel nie ma uprawnień do używania usługi ukierunkowane, wystąpienie lub bazy danych. Aby rozwiązać ten problem, sprawdź, czy poprawną nazwę użytkownika pojawia się w prawym górnym rogu dodatek programu Excel. Jeśli pojawi się niepoprawną nazwę użytkownika, kliknij go, wyloguj się, a następnie zaloguj się ponownie.
--   **Pusta strona sieci Web jest wyświetlany w programie Excel.** Jeżeli pusta strona sieci Web otwiera się podczas procesu logowania, konto wymaga programu AD FS, ale używanej wersji programu Excel, który jest uruchomiony dodatek nie jest dokonana, aby załadować znak w oknie dialogowym. Aby rozwiązać ten problem, należy zaktualizować wersji programu Excel, którego używasz. Aby zaktualizować wersji programu Excel, gdy jesteś w przedsiębiorstwie na kanale odroczonego, użyj [narzędzia wdrażania pakietu Office](https://technet.microsoft.com/library/jj219422.aspx) do [przenieść z odroczonego kanału do bieżącego kanału](https://technet.microsoft.com/library/mt455210.aspx).
+-   **Jest wyświetlany przycisk Ładuj aplety.** Jeśli po zalogowaniu dodatek programu Excel zawiera przycisk **Ładuj aplety**, prawdopodobnie nie jesteś zalogowany jako poprawny użytkownik. Aby rozwiązać ten problem, sprawdź, czy w prawym górnym rogu dodatku programu Excel jest wyświetlana poprawna nazwa użytkownika. Jeśli widać niepoprawną nazwę użytkownika, kliknij ją, wyloguj się, a następnie zaloguj ponownie.
+-   **Pojawia się komunikat „Zabronione”.** Jeśli podczas ładowania metadanych przez dodatek programu Excel zostanie wyświetlony komunikat „Zabronione”, oznacza to, że konto zalogowane do dodatku programu Excel nie ma uprawnień do używania docelowej usługi, wystąpienia lub bazy danych. Aby rozwiązać ten problem, sprawdź, czy w prawym górnym rogu dodatku programu Excel jest wyświetlana poprawna nazwa użytkownika. Jeśli widać niepoprawną nazwę użytkownika, kliknij ją, wyloguj się, a następnie zaloguj ponownie.
+-   **W programie Excel jest wyświetlana pusta strona internetowa.** Jeśli w trakcie procesu logowania otwiera się pusta strona sieci Web, konto wymaga usług AD FS, ale wersja programu Excel, w której jest uruchomiony dodatek, jest zbyt stara, aby załadować okno dialogowe logowania. Aby rozwiązać ten problem, należy zaktualizować używaną wersję programu Excel. W celu zaktualizowania wersji programu Excel, gdy jesteś w przedsiębiorstwie znajdującym się w odroczonym kanale, użyj [narzędzia wdrażania pakietu Office](https://technet.microsoft.com/library/jj219422.aspx), aby [przełączyć z kanału odroczonego do bieżącego](https://technet.microsoft.com/library/mt455210.aspx).
 
 
 

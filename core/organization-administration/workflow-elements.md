@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-elements"></a>Elementy przepływu pracy
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera opis różnych elementów składających się na przepływ pracy.
 
 Przepływ pracy składa się z elementów. Sekcje poniżej opisują poszczególne typy elementów.
@@ -55,14 +58,14 @@ Przepływ pracy składa się z elementów. Sekcje poniżej opisują poszczególn
 -   zażądać wprowadzenia zmian w dokumencie;
 -   przypisać dokument innemu użytkownikowi w celu zatwierdzenia.
 
-## <a name="lineitem-workflow-elements"></a>Lineitem elementy przepływu pracy
-Przepływ pracy można tworzyć w celu przetwarzania dokumentów lub pozycji w dokumencie. Na przykład utworzono przepływ pracy zatwierdzania dla kart czasu pracy. (Odnoszą się do tego przepływu pracy jako *dokument przepływu pracy*.) Można dodać *przepływ pracy dla towaru w wierszu* element do dokumentu przepływu pracy. Po uruchomieniu tego element wszystkie pozycje wiersza w dokumencie są przesyłane do przetworzenia. Czasami wszystkie elementy wiersza muszą być przetworzone przez ten sam przepływ pracy lub każdy element musi być przetwarzany przez różne przepływy pracy dla wierszy. Załóżmy, że pracownik przesłał kartę czasu pracy podobną do tej na obrazku poniżej. ![Przepływ pracy z pozycjami wiersza](./media/workflow_lineitemworkflow.gif) W tym scenariuszu może być konieczne utworzenie następujących przepływów pracy dla wiersza:
+## <a name="lineitem-workflow-elements"></a>Elementy przepływu pracy dla wiersza
+Przepływ pracy można tworzyć w celu przetwarzania dokumentów lub pozycji w dokumencie. Na przykład utworzono przepływ pracy zatwierdzania dla kart czasu pracy. (Nazwiemy go *przepływem pracy dokumentu*). Do tego przepływu pracy dokumentu można dodać element *przepływu pracy dla wiersza*. Po uruchomieniu tego element wszystkie pozycje wiersza w dokumencie są przesyłane do przetworzenia. Czasami wszystkie elementy wiersza muszą być przetworzone przez ten sam przepływ pracy lub każdy element musi być przetwarzany przez różne przepływy pracy dla wierszy. Załóżmy, że pracownik przesłał kartę czasu pracy podobną do tej na obrazku poniżej. ![Przepływ pracy z pozycjami wiersza](./media/workflow_lineitemworkflow.gif) W tym scenariuszu może być konieczne utworzenie następujących przepływów pracy dla wiersza:
 
 -   **Przepływ pracy utworzony dla pozycji w wierszu 1** — ten przepływ pracy jest używany do przetwarzania pozycji w wierszu z identyfikatorem projektu 1111.
 -   **Przepływ pracy utworzony dla pozycji w wierszu 2** — ten przepływ pracy jest używany do przetwarzania pozycji w wierszu z identyfikatorem projektu 2222.
 -   **Przepływ pracy utworzony dla pozycji w wierszu 3** — ten przepływ pracy jest używany do przetwarzania pozycji w wierszu z identyfikatorem projektu 3333.
 
-## <a name="flowcontrol-elements"></a>Sterowanie przepływem — elementy
+## <a name="flowcontrol-elements"></a>Elementy kontroli przepływu
 Poniższe elementy pozwalają projektować przepływy pracy z alternatywnymi oddziałami lub oddziałami działającymi jednocześnie.
 
 ### <a name="manual-decision"></a>Decyzja ręczna
@@ -80,5 +83,7 @@ Poniższe elementy pozwalają projektować przepływy pracy z alternatywnymi odd
 ### <a name="subworkflow"></a>Podrzędny przepływ pracy
 
 *Podrzędny przepływ pracy* jest przepływem pracy, który działa w kontekście innego przepływu pracy.
+
+
 
 

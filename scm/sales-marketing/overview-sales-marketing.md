@@ -26,12 +26,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-and-marketing"></a>Sprzedaż i marketing
 
+[!include[banner](../includes/banner.md)]
+
+
 Moduł Sprzedaż i marketing umożliwia pozyskiwanie, przechowywanie i wykorzystywanie różnego rodzaju danych w procesie sprzedaży. Te dane obejmują pierwotną akcję handlową, przyszłe działanie uzupełniające oraz dodatkowe transakcje sprzedaży.
 
 <a name="marketing"></a>Marketing
 ---------
 
-Kampanie i działania marketingowe umożliwiają wyszukiwanie potencjalnych klientów i budowanie z nimi relacji, tak aby początkowe interakcje przekształciły się w relacje sprzedażowe. Poniższy schemat procesu ilustruje proces biznesowy marketingu. [![Proces biznesowy do wprowadzenia do obrotu](./media/marketing01.jpg)](./media/marketing01.jpg)
+Kampanie i działania marketingowe umożliwiają wyszukiwanie potencjalnych klientów i budowanie z nimi relacji, tak aby początkowe interakcje przekształciły się w relacje sprzedażowe. Poniższy schemat procesu ilustruje proces biznesowy marketingu. [![Proces biznesowy marketingu](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Relacje
 
@@ -39,10 +42,10 @@ W sprzedaży i marketingu początkowe interakcje z potencjalnymi klientami mogą
 
 ### <a name="campaigns"></a>Kampanie
 
-Celem kampanii są osoby kontaktowe u potencjalnych klientów, leadów sprzedażowych, szans sprzedaży i istniejących klientów, których wybrano do udziału w kampanii. W programie Microsoft Dynamics 365 dla operacji można utworzyć kilka typów kampanii, takich jak telemarketing, korespondencji i kampanii e-mail, aby zmaksymalizować potencjalnego klienta. Wraz z postępem kampanii i notowaniem pozytywnych reakcji można rozpocząć proces sprzedaży wobec najlepiej rokujących adresatów.
+Celem kampanii są osoby kontaktowe u potencjalnych klientów, leadów sprzedażowych, szans sprzedaży i istniejących klientów, których wybrano do udziału w kampanii. W programie Microsoft Dynamics 365 for Operations można utworzyć kilka typów kampanii, np. telemarketingowe, wykorzystujące korespondencję seryjną i wykorzystujące pocztę e-mail, aby zmaksymalizować spodziewane korzyści z klienta. Wraz z postępem kampanii i notowaniem pozytywnych reakcji można rozpocząć proces sprzedaży wobec najlepiej rokujących adresatów.
 
 ## <a name="sales"></a>Sprzedaż
-Funkcje sprzedaży umożliwiają tworzenie ofert, sprzedaż dodatkową i powiązaną nowym i istniejącym klientom, tworzenie zamówień sprzedaży oraz tworzenie faktur sprzedaży dla odbiorców. Poniższy schemat procesu ilustruje proces biznesowy sprzedaży. [![Proces biznesowy dla sprzedaży](./media/sales01.jpg)](./media/sales01.jpg)
+Funkcje sprzedaży umożliwiają tworzenie ofert, sprzedaż dodatkową i powiązaną nowym i istniejącym klientom, tworzenie zamówień sprzedaży oraz tworzenie faktur sprzedaży dla odbiorców. Poniższy schemat procesu ilustruje proces biznesowy sprzedaży. [![Proces biznesowy sprzedaży](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Oferty sprzedaży
 
@@ -50,7 +53,7 @@ Oferty sprzedaży tworzy się w celu przedstawienia odbiorcom oferty na towary l
 
 ### <a name="up-sellcross-sell"></a>Sprzedaż dodatkowa/powiązana
 
-Sprzedaż dodatkowa i powiązana to techniki sprzedaży produktów stosowane podczas wprowadzania zamówienia od klienta. W sprzedaży dodatkowej produkt jest proponowany zamiast bieżącego produktu. W sprzedaży powiązanej produkt jest proponowany w uzupełnieniu bieżącego produktu. Po skonfigurowaniu listy produktów można utworzyć szczególne zasady, aby wskazać, kiedy produktu powinny być sugerowane jako cross selling lub sprzedaży produktu.
+Sprzedaż dodatkowa i powiązana to techniki sprzedaży produktów stosowane podczas wprowadzania zamówienia od klienta. W sprzedaży dodatkowej produkt jest proponowany zamiast bieżącego produktu. W sprzedaży powiązanej produkt jest proponowany w uzupełnieniu bieżącego produktu. Po skonfigurowaniu list produktów można tworzyć konkretne reguły wskazujące, kiedy dany produkt powinien być sugerowany jako powiązany lub dodatkowy.
 
 ### <a name="sales-orders"></a>Zamówienia sprzedaży
 
@@ -117,5 +120,7 @@ Faktura niezależna to faktura, która nie ma powiązania z zamówieniem sprzeda
 #### <a name="pro-forma-invoice"></a>Faktura VAT pro-forma
 
 Faktura pro forma to faktura przygotowana jako oszacowanie rzeczywistej kwoty faktury przed zaksięgowaniem faktury. Fakturę pro forma można wydrukować zarówno dla faktury dla odbiorcy, jak i dla faktury niezależnej.
+
+
 
 

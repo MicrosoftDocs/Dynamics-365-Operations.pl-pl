@@ -1,6 +1,6 @@
 ---
 title: "Typy arkuszy księgi"
-description: "W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona nazwy arkusza umożliwia konfigurowanie dzienników, które można użyć w całej usługi Microsoft Dynamics 365 dla operacji."
+description: "W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona Nazwy arkuszy służy do konfigurowania arkuszy, których można używać w całym programie Microsoft Dynamics 365 for Operations."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="ledger-journal-types"></a>Typy arkuszy księgi
 
-W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona nazwy arkusza umożliwia konfigurowanie dzienników, które można użyć w całej usługi Microsoft Dynamics 365 dla operacji.
+[!include[banner](../includes/banner.md)]
+
+
+W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona Nazwy arkuszy służy do konfigurowania arkuszy, których można używać w całym programie Microsoft Dynamics 365 for Operations.
 
 | Typ arkusza                      | Cel                                                                                                                                                                                                                                                                                                                                                     | Ta strona służy do wprowadzania transakcji                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -55,11 +58,13 @@ W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze f
 | Przelew bankowy dostawcy            | Utwórz plik przekazu skryptu dłużnego, który może zostać przesłany do banku Twojej organizacji.                                                                                                                                                                                                                                                                      | Arkusz przekazów                                             |
 | Wypłaty dla dostawców               | Utwórz transakcje rozchodów dostawcy.                                                                                                                                                                                                                                                                                                                    | Arkusz płatności                                                |
 | Skrypt dłużny wystawiony dostawcy       | Pobieranie skryptów dłużnych dostawcy jako metoda płatności. Aby użyć tego typu arkusza, wyczyść opcję **Automatyczne tworzenie i księgowanie arkusza wystawiania podczas księgowania faktur** na stronie **Metody płatności — Dostawcy**.                                                                                                                                          | Arkusz wystawiania skryptów dłużnych                                   |
-| Pula faktur dostawcy bez księgowanie | Utwórz transakcje faktur dostawcy, które nie zostały jeszcze zaksięgowane na tymczasowym koncie przybycia.                                                                                                                                                                                                                                                             | Szczegóły puli faktur od dostawcy bez księgowania                  |
+| Pula faktur od dostawcy z wyłączeniem księgowanie | Utwórz transakcje faktur dostawcy, które nie zostały jeszcze zaksięgowane na tymczasowym koncie przybycia.                                                                                                                                                                                                                                                             | Szczegóły puli faktur od dostawcy bez księgowania                  |
 | Pula faktur dostawcy               | Utwórz transakcje puli faktur dostawcy.                                                                                                                                                                                                                                                                                                                    |                                                                |
 | Rejestracja faktury dostawcy          | Zaksięguj faktury od dostawcy znajdujące się w arkuszu.                                                                                                                                                                                                                                                                                                                 | Arkusz faktur                                                |
 | Skrypt dłużny ponownie wystawiony dostawcy     | Ponownie wystaw skrypt dłużny, który wcześniej został uznany przez bank Twojej organizacji.                                                                                                                                                                                                                                                                      | Arkusz ponownego wystawiania skryptów dłużnych                                 |
 | Rozliczenie skryptu dłużnego dostawcy     | Utwórz transakcje rozliczania skryptu dłużnego dostawcy.                                                                                                                                                                                                                                                                                                          | Arkusz rozliczania skryptów dłużnych                                 |
+
+
 
 
 

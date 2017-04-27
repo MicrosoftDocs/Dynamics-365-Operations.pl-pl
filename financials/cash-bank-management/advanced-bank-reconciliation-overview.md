@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="advanced-bank-reconciliation-overview"></a>Zaawansowanego uzgodnienia konta bankowego — omówienie
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano przebieg procesu zaawansowanego uzgadniania konta bankowego. Funkcja zaawansowanego uzgadniania konta bankowego umożliwia importowanie wyciągów bankowych, a następnie ich automatyczne uzgadnianie z poziomu transakcji bankowych.
 
 Funkcja zaawansowanego uzgodnienia konta bankowego pozwala importować wyciągi bankowe. Zaimportowany wyciąg z konta można następnie automatycznie uzgodnić z poziomu transakcji bankowych. Poniżej przedstawiono kroki w procesie zaawansowanego uzgadniania konta bankowego
@@ -38,13 +41,15 @@ Funkcja zaawansowanego uzgodnienia konta bankowego pozwala importować wyciągi 
     -   Funkcję można rozszerzyć na dowolny format.
 
 2.  Należy ustawić kolejność na potrzeby zaawansowanego uzgadniania konta bankowego i zdefiniować reguł uzgadniania wyciągów bankowych.
-    -   Reguły uzgadniania wyciągów jest zestawem kryteriów, które są używane do filtrowania wierszy wyciągu bankowego i Microsoft Dynamics 365 dla wierszy transakcji bankowych operacje podczas procesu uzgadniania. W zależności od Twojego praktyki prowadzenia działalności można skonfigurować więcej niż jedną regułę dopasowywania do automatyzacji i optymalizowaniu procesu pojednania.
+    -   Reguły uzgadniania wyciągów to zestaw kryteriów, które są używane do filtrowania podczas procesu uzgadniania wierszy wyciągu bankowego z wierszami transakcji bankowych w programie Microsoft Dynamics 365 for Operations. W zależności od praktyk biznesowych klienta można skonfigurować więcej niż jedną regułę uzgadniania i zautomatyzować oraz zoptymalizować proces uzgadniania.
 
-3.  Uzgadnianie wyciągów bankowych 365 Dynamics dla transakcji bankowych operacji.
+3.  Uzgadnianie wyciągów bankowych z transakcjami bankowymi w programie Dynamics 365 for Operations.
     -   Automatyczne dopasowywanie i tworzenie arkuszy uzgadniania konta.
-    -   Przejrzeć wyciągi bankowe i 365 Dynamics dla transakcji bankowych operacje obok siebie.
-    -   Automatyczne księgowanie Dynamics 365 dla transakcji bankowych operacji, jeśli są wyświetlane na wyciągu bankowym, ale nie są wyświetlane w usłudze Dynamics 365 dla operacji.
+    -   Bezpośrednie porównywanie wyciągów bankowych z transakcjami bankowymi w programie Dynamics 365 for Operations.
+    -   Automatyczne księgowanie transakcji bankowych w programie Dynamics 365 for Operations, jeśli pojawiają się na wyciągu bankowym, ale nie ma ich w programie Dynamics 365 for Operations.
     -   Generowanie wyciągu uzgodnienia.
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Przeszacowanie w walucie obcej dla księgi głównej"
-description: "Ten temat zawiera omówienie następujących dla procesu przeszacowania waluty obcej księgi głównej - programu instalacyjnego, proces obliczania dla procesu i informacje dotyczące wycofywania transakcji przeszacowania, jeśli to konieczne."
+description: "W tym temacie omówiono następujące aspekty procesu przeszacowania w walucie obcej dla księgi głównej: konfiguracja, uruchamianie procesu, wykonywanie obliczeń dla procesu oraz wycofywanie transakcji przeszacowania, jeśli okaże się to konieczne."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,14 +27,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Przeszacowanie w walucie obcej dla księgi głównej
 
-Ten temat zawiera omówienie następujących dla procesu przeszacowania waluty obcej księgi głównej - programu instalacyjnego, proces obliczania dla procesu i informacje dotyczące wycofywania transakcji przeszacowania, jeśli to konieczne. 
+[!include[banner](../includes/banner.md)]
+
+
+W tym temacie omówiono następujące aspekty procesu przeszacowania w walucie obcej dla księgi głównej: konfiguracja, uruchamianie procesu, wykonywanie obliczeń dla procesu oraz wycofywanie transakcji przeszacowania, jeśli okaże się to konieczne. 
 
 Konwencje księgowe wymagają, aby podczas zamknięcia okresu salda kont księgi głównej w walutach obcych zostały przeszacowane przy użyciu różnych typów kursów wymiany (bieżących, historycznych, średnich itp.). Na przykład jedna konwencja księgowa wymaga, aby aktywa i pasywa zostały przeszacowane według bieżącego kursu wymiany, środki trwałe według historycznego kursu wymiany, a konta wynikowe według średniej miesięcznej. Funkcja przeszacowania w walucie obcej dostępna w księdze głównej może służyć do przeszacowywania wartości bilansu i rachunku zysków i strat (kont wynikowych). 
 
 > [!NOTE]
-> Przeszacowanie w walucie obcej jest również dostępna w module Rozrachunki z odbiorcami (AR) i rozrachunków z dostawcami (AP). Jeśli używasz tych modułów zaległe transakcje powinna zostać przeszacowana przy użyciu przeszacowania w walucie obcej w tych modułach. Przeszacowanie w walucie obcej w modułach rozrachunków z dostawcami i odbiorcami spowoduje utworzenie zapisu księgowego w księdze głównej w celu odzwierciedlenia niezrealizowany dodatnich lub ujemnych różnic kursowych, gwarantując możliwość uzgodnienia ksiąg podrzędnych z księgą główną. Ponieważ funkcja przeszacowania w walucie obcej w modułach AR i AP tworzy zapisy księgowe w księdze głównej, konta główne w modułach rozrachunków z odbiorcami i dostawcami powinny być wykluczone z przeszacowania w walucie obcej w księdze głównej. 
+> Funkcja przeszacowania w walucie obcej jest również dostępna w modułach Rozrachunki z odbiorcami (AR) i Rozrachunki z dostawcami (AP). Jeśli używasz tych modułów, transakcje oczekujące powinny zostać przeszacowane za pomocą funkcji przeszacowania w walucie obcej zawartej w tych modułach. Przeszacowanie w walucie obcej w modułach rozrachunków z dostawcami i odbiorcami spowoduje utworzenie zapisu księgowego w księdze głównej w celu odzwierciedlenia niezrealizowany dodatnich lub ujemnych różnic kursowych, gwarantując możliwość uzgodnienia ksiąg podrzędnych z księgą główną. Ponieważ funkcja przeszacowania w walucie obcej w modułach AR i AP tworzy zapisy księgowe w księdze głównej, konta główne w modułach rozrachunków z odbiorcami i dostawcami powinny być wykluczone z przeszacowania w walucie obcej w księdze głównej. 
 
-Podczas wykonywania procesu przeszacowania następuje przeszacowanie salda każdego konta głównego zaksięgowane w walucie obcej. Transakcje niezrealizowanych dodatnich lub ujemnych różnic kursowych, które są tworzone podczas procesu przeszacowania, są generowane przez system. Dwie transakcje mogą być tworzone, jednej waluty rozliczeniowej i drugiej waluty raportowania, stosownych. Każdy wpis księgowania zostanie zaksięgowany niezrealizowany zysk lub strata i przeszacowywanych konta głównego.
+Podczas wykonywania procesu przeszacowania następuje przeszacowanie salda każdego konta głównego zaksięgowane w walucie obcej. Transakcje niezrealizowanych dodatnich lub ujemnych różnic kursowych, które są tworzone podczas procesu przeszacowania, są generowane przez system. W razie potrzeby mogą być tworzone dwie transakcje: jedna dla waluty rozliczeniowej i druga dla waluty raportowania. Każdy zapis księgowy zostanie zaksięgowany jako niezrealizowana dodatnia lub ujemna różnica kursowa i dodatkowo na przeszacowywanym koncie głównym.
 
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Przygotowanie do wykonania przeszacowania w walucie obcej
 Przed uruchomieniem procesu przeszacowania potrzebne jest wykonanie następującej konfiguracji.
@@ -57,29 +60,29 @@ Na stronie **Przeszacowanie w walucie obcej** jest wyświetlana historia każdeg
 
 Wartości **Od dnia** i **Do dnia** określają przedział dat do obliczania salda w walucie obcej, które zostanie przeszacowane. Podczas przeszacowywania konta wynikowego jest przeszacowywana suma wszystkich transakcji, jakie nastąpiły w przedziale dat. Podczas przeszacowywania kont bilansowych data w polu Od dnia jest ignorowana. Zamiast tego saldo do przeszacowania obejmuje okres od początku roku obrachunkowego do obecnego dnia. 
 
-**Data kursu** może służyć do definiowania daty, dla której należy domyślnie kursu wymiany. Na przykład można przeszacować równowagi między datą zakres od 1 stycznia do 31 stycznia, ale użyty kurs wymiany zdefiniowany dla 1 lutego. 
+Pole **Data kursu** może służyć do zdefiniowania daty, z której ma domyślnie pochodzić kurs wymiany. Na przykład można przeszacować salda w przedziale dat od 1 do 31 stycznia, ale użyć kursu wymiany zdefiniowanego na 1 lutego. 
 
-Wskaż, które konta główne mają zostać przeszacowane: Wszystkie, Bilans lub Wynikowe. Tylko konta główne oznaczone do przeszacowania (na stronie konta głównego) przeszacowane. Jeśli chcesz jeszcze bardziej ograniczyć zakres kont głównych, należy wykorzystać rekordy **aby uwzględnić** kartę, aby zdefiniować zakres kont głównych lub poszczególnych kont głównych. 
+Wskaż, które konta główne mają zostać przeszacowane: Wszystkie, Bilans lub Wynikowe. Przeszacowane zostaną tylko konta główne oznaczone do przeszacowania (na stronie Konto główne). Jeśli chcesz dodatkowo ograniczyć zakres kont głównych, na karcie **Rekordy do uwzględnienia** zdefiniuj zakres kont głównych lub poszczególne konta główne. 
 
-Proces aktualizacji wyceny mogą być uruchamiane dla jednego lub więcej podmiotów prawnych. Wyszukiwania zostaną wyświetlone tylko osoby prawne do których masz dostęp. Wybierz osoby prawne, dla których chcesz uruchomić proces aktualizacji wyceny. 
+Proces przeszacowania można uruchomić dla jednej lub wielu firm. Wyszukiwanie spowoduje wyświetlenie tylko tych firm, do których masz dostęp. . Następnie zaznacz firmy, dla których ma zostać uruchomiony proces przeszacowania. 
 
-Przeszacowanie może być uruchomione dla jednej lub kilku walut obcych. Wyszukiwanie obejmie wszystkie waluty, które zostały zaksięgowane w zakresie odpowiednich dla typu konta głównego (bilans lub zysków i strat), dla osób prawnych wybrane do przeszacowywania. Walutą rozliczeniową znajdują się na liście, ale nic nie przeszacowane, jeśli walutą rozliczeniową jest zaznaczone. 
+Przeszacowanie może być uruchomione dla jednej lub kilku walut obcych. Wyszukiwanie obejmie wszystkie waluty, w których księgowano transakcje w przedziale dat odpowiednim dla typu konta głównego (bilansowe lub wynikowe) firm wybranych do przeszacowania. Waluta rozliczeniowa znajdzie się na liście, ale jej zaznaczenie spowoduje, że nie nastąpi żadne przeszacowanie. 
 
-Ustaw **podgląd przed wysłaniem** do **tak** Jeśli chcesz przejrzeć wynikiem przeszacowania księgi głównej. Podgląd w ogóle księgi różni się od symulacji w AR i AP przeszacowania w walucie obcej. Symulacja w AR i AP jest raportem, ale księgi głównej wyposażona w klip podglądu, który można zaksięgować bez konieczności ponownie uruchomić proces aktualizacji wyceny. Wyniki w podglądzie mogą być eksportowane do programu Microsoft Excel, aby zachować historię obliczania kwot. Jeżeli chcesz wyświetlić podgląd wyników przeszacowania, nie można użyć przetwarzania wsadowego. Z poziomu okna podglądu użytkownik może zaksięgować wyniki wszystkich firm za pomocą przycisku **Księguj**. W przypadku problemów z wynikami pewnej firmy użytkownik ma także możliwość zaksięgowania przeszacowania tylko dla podzbioru firm, używając przycisku **Wybierz firmy do księgowania**. 
+Jeśli chcesz przejrzeć spodziewane wyniki przeszacowania księgi głównej, w opcji **Wyświetl podgląd przed zaksięgowaniem** zaznacz wartość **Tak**. Podgląd w księdze głównej różni się od symulacji przeszacowania w walucie obcej w modułach rozrachunków z dostawcami i odbiorcami. Symulacja w tych modułach jest raportem, podczas gdy księga główna oferuje funkcję podglądu umożliwiającą zaksięgowanie, bez konieczności ponownego uruchamiania procesu przeszacowania. Wyniki w podglądzie mogą być eksportowane do programu Microsoft Excel, aby zachować historię obliczania kwot. Jeżeli chcesz wyświetlić podgląd wyników przeszacowania, nie można użyć przetwarzania wsadowego. Z poziomu okna podglądu użytkownik może zaksięgować wyniki wszystkich firm za pomocą przycisku **Księguj**. W przypadku problemów z wynikami pewnej firmy użytkownik ma także możliwość zaksięgowania przeszacowania tylko dla podzbioru firm, używając przycisku **Wybierz firmy do księgowania**. 
 
-Po zakończeniu procesu przeszacowania w walucie obcej do śledzenia historii każdego uruchomienia zostanie utworzony rekord.  Oddzielny rekord zostanie utworzony dla każdej osoby prawnej i warstwy księgowania.
+Po zakończeniu procesu przeszacowania w walucie obcej zostanie utworzony rekord, co pozwala śledzić historię wszystkich sesji.  Oddzielne rekordy są tworzone dla każdej firmy i warstwy księgowania.
 
 ## <a name="calculate-unrealized-gainloss"></a>Obliczanie niezrealizowanych dodatnich/ujemnych różnic kursowych
-Transakcje niezrealizowanych dodatnich/ujemnych różnic kursowych są tworzone inaczej w procesach przeszacowania dla księgi głównej i dla modułów rozrachunków z dostawcami i odbiorcami. W modułach rozrachunków z dostawcami i odbiorcami poprzednie przeszacowanie jest całkowicie stornowane (przy założeniu, że transakcja nie jest jeszcze rozliczona), po czym jest tworzona nowa transakcja przeszacowania dla niezrealizowanych dodatnich/ujemnych różnic kursowych na podstawie nowego kursu wymiany. Jest to spowodowane tym, że w modułach rozrachunków z dostawcami i odbiorcami jest przeszacowywana każda indywidualna transakcja. Poprzednie przeszacowania nie jest wycofane w księdze głównej. Zamiast tego transakcja jest tworzony dla delta między saldo konta głównego, w tym wszelkich poprzednich kwot przeszacowania i nową wartość, według kursu wymiany dla daty kursu. 
+Transakcje niezrealizowanych dodatnich/ujemnych różnic kursowych są tworzone inaczej w procesach przeszacowania dla księgi głównej i dla modułów rozrachunków z dostawcami i odbiorcami. W modułach rozrachunków z dostawcami i odbiorcami poprzednie przeszacowanie jest całkowicie stornowane (przy założeniu, że transakcja nie jest jeszcze rozliczona), po czym jest tworzona nowa transakcja przeszacowania dla niezrealizowanych dodatnich/ujemnych różnic kursowych na podstawie nowego kursu wymiany. Jest to spowodowane tym, że w modułach rozrachunków z dostawcami i odbiorcami jest przeszacowywana każda indywidualna transakcja. W księdze głównej poprzednie przeszacowanie nie jest wycofywane. Zamiast tego jest tworzona transakcja na różnicę między saldem konta głównego, włącznie z wszelkimi poprzednimi kwotami przeszacowania, a nową wartością opartą na kursie wymiany z dnia Data kursu. 
 
-**Przykład** dla konta głównego 110110 istnieją następujące salda.
+**Przykład** Istnieją następujące salda dla konta głównego 110110.
 
 |            |                    |                        |                       |
 |------------|--------------------|------------------------|-----------------------|
 | **Data**   | **Konto finansowe** | **Kwota transakcji** | **Kwota księgowa** |
 | 20 stycznia | 110110 (gotówka)      | 500 EUR (strona debetowa)        | 1000 USD (strona debetowa)      |
 
-Konto główne jest rewaluowane z dniem 31 stycznia.  Niezrealizowany zysk/strata obliczana jest w następujący sposób.
+Konto główne zostało przeszacowane 31 stycznia.  Niezrealizowana dodatnia/ujemna różnica kursowa jest obliczana w następujący sposób.
 
 |                                             |                                            |                                  |                                    |                             |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
@@ -94,7 +97,7 @@ Zostanie utworzony następujący zapis księgowy.
 | 31 stycznia | 110110 (gotówka)            |           | 166.67     |
 | 31 stycznia | 801400 (niezrealizowana ujemna różnica kursowa) | 166.67    |            |
 
-Żadne nowe transakcje są księgowane w miesiącu lutym.  Konto główne jest rewaluowane z dniem 28 lutego.
+W lutym nie zaksięgowano żadnych nowych transakcji.  Konto główne zostało przeszacowane 28 lutego.
 
 |                                             |                                            |                                  |                                    |                             |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
@@ -112,6 +115,8 @@ Zostanie utworzony następujący zapis księgowy.
 ## <a name="reverse-foreign-currency-revaluation"></a>Cofanie przeszacowania w walucie obcej
 Jeśli musisz wycofać transakcję przeszacowania, kliknij przycisk **Wycofaj transakcję** znajdujący się na stronie **Przeszacowanie w walucie obcej**. Zostanie utworzony nowy rekord historyczny przeszacowania w walucie obcej na potrzeby prowadzenia dziennika historii pokazującego, kiedy przeszacowania nastąpiły lub zostały wycofane. 
 
-Wyniki przeszacowania spośród kolejność dat można cofnąć, ale konieczne może być również odwrócić bardziej aktualnej przeszacowania do zapewnienia właściwych sald dla każdego przeszacowanego konta głównego. Odwrócenie może występować zamówienia nieaktualne, ponieważ jest sposobem kontroli konta główne, które przeszacowuje się i częstotliwość kiedy one przeszacowane. Na przykład organizacja może zdecydować się na co miesiąc przeszacować ich kont głównych środków pieniężnych na bazie kwartalnej, ale wszystkie inne konta głównego.
+Można cofnąć wyniki przeszacowania bez zachowania chronologii, ale wtedy może być również konieczne wystornowanie nowszego przeszacowania, aby zapewnić poprawność sald wszystkich przeszacowywanych kont głównych. Cofnięcie może nastąpić bez zachowania chronologii, ponieważ nie ma możliwości kontrolowania, które konta główne są przeszacowywane i jaką częstotliwością. Na przykład organizacja może zdecydować się na przeszacowywanie kont głównych środków pieniężnych co kwartał, ale wszystkich pozostałych kont głównych co miesiąc.
+
+
 
 

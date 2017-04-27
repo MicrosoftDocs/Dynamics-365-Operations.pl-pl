@@ -1,6 +1,6 @@
 ---
 title: "Ograniczenia tabeli zdefiniowane przez użytkownika lub przez system"
-description: "Ten artykuł wyjaśnia dwa rodzaje ograniczeń tabeli dla składników w modelu konfiguracji produktu - zdefiniowane przez użytkownika i zdefiniowane przez system. Ograniczenia tabel reprezentują macierze dozwolonych kombinacji atrybutów, gdzie każdy wiersz definiuje jeden zestaw możliwych wartości atrybutów."
+description: "Ten artykuł wyjaśnia dwa rodzaje ograniczeń tabel dla składników w modelu konfiguracji produktu — zdefiniowane przez użytkownika i zdefiniowane przez system. Ograniczenia tabel reprezentują macierze dozwolonych kombinacji atrybutów, gdzie każdy wiersz definiuje jeden zestaw możliwych wartości atrybutów."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="system-defined-and-user-defined-table-constraints"></a>Ograniczenia tabeli zdefiniowane przez użytkownika lub przez system
 
-Ten artykuł wyjaśnia dwa rodzaje ograniczeń tabeli dla składników w modelu konfiguracji produktu - zdefiniowane przez użytkownika i zdefiniowane przez system. Ograniczenia tabel reprezentują macierze dozwolonych kombinacji atrybutów, gdzie każdy wiersz definiuje jeden zestaw możliwych wartości atrybutów.
+[!include[banner](../includes/banner.md)]
+
+
+Ten artykuł wyjaśnia dwa rodzaje ograniczeń tabel dla składników w modelu konfiguracji produktu — zdefiniowane przez użytkownika i zdefiniowane przez system. Ograniczenia tabel reprezentują macierze dozwolonych kombinacji atrybutów, gdzie każdy wiersz definiuje jeden zestaw możliwych wartości atrybutów.
 
 Powiązane tabele przedstawiają macierze kombinacji atrybutów, które są dozwolone dla składników w modelu konfiguracji produktu. Każdy wiersz w tabeli definiuje jeden zestaw atrybutów możliwych wartości. Można zadeklarować dwa typy ograniczeń w modelu konfiguracji produktu:
 
@@ -57,11 +60,13 @@ Powiązane tabele zdefiniowane przez system tworzą dynamiczne mapowanie między
 
 Podczas tworzenia powiązanych tabel zdefiniowanych przez system wybiera się tabelę, opcjonalnie definiuje się kwerendę do użycia, a następnie kojarzy się typy atrybutów z polami w wybranej tabeli. Typy pól muszą pasować do typów atrybutów.  
 
-Zanim powiązane tabele zostały wprowadzone w modelu konfiguracji produktu, powiązanych tabel muszą być uwzględnione w ograniczenie dla jednego ze składników modelu. Aby utworzyć nowe ograniczenie, wybierz typ ograniczenia tabeli, a następnie wybierz definicji powiązanych tabel, aby użyć jest procedurą. Ponadto wszystkie pola w powiązanych tabelach muszą być mapowane do atrybutów w modelu konfiguracji produktu.
+Zanim ograniczenie tabeli będzie mogło zacząć obowiązywać w modelu konfiguracji produktu, należy je dodać do ograniczenia jednego ze składników modelu. Procedura obejmuje utworzenie nowego ograniczenia, wybranie typu ograniczenia tabeli, a następnie wybranie definicji ograniczenia tabeli, która ma być używana. Ponadto wszystkie pola w powiązanych tabelach muszą być mapowane do atrybutów w modelu konfiguracji produktu.
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Podstawowe pojęcia dotyczące modeli konfiguracji produktów](product-configuration-models.md)
+
+
 
 

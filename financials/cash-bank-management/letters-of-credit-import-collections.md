@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-credit-and-import-collections"></a>Akredytywy i inkasa eksportowe
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera ogólne informacje o akredytywach i inkasie importowym. Oba rodzaje dokumentów bankowych są często używane do kupna i sprzedaży towarów między krajami.
 
 <a name="letters-of-credit"></a>Akredytywy
 -----------------
 
-Akredytywy są używane w transakcjach międzynarodowych i pomóc w zagwarantowaniu dokonywania płatności. Akredytywa jest to Umowa, wystawiony przez bank, w którym bank zgadza się zagwarantowanie płatności w imieniu nabywcy, pod warunkiem że spełnione są warunki Umowy między kupującym a sprzedającym. Akredytywa jest również zwany Akredytywa dokumentowa (DC).
+Akredytywy są służą do obsługi transakcji międzynarodowych i ułatwiają zagwarantowanie, że płatności będą dokonywane. Akredytywa to umowa sporządzana przez bank, w której bank zgadza się zagwarantować płatność w imieniu kupującego, pod warunkiem spełnienia warunków umowy między kupującym a sprzedającym. Akredytywy są również nazywane akredytywami dokumentowymi (documentary credit — DC).
 
 Dla akredytywy importowej firmą jest kupujący lub strona wnioskująca o akredytywę. Dla akredytywy eksportowej firmą jest sprzedający lub strona będąca beneficjentem akredytywy. Akredytywa obejmuje następujące strony:
 
@@ -50,5 +53,7 @@ Akredytywa może mieć typ **Odwołalne** lub **Nieodwołalne**. Akredytywa moż
 Inkaso importowe to umowa zawierana między bankiem a eksporterem (sprzedawcą), w której bank zobowiązuje się dostarczyć dokumentację wysyłkową o międzynarodowego importera (kupującego). Bank ma dostarczyć dokumentację wysyłki po otrzymaniu płatności za wysłane towary w gotówce lub po otrzymaniu pokwitowania odbioru podpisanego projektu płatności. 
 
 Inkaso importowe pomaga zagwarantować, że sprzedający otrzyma płatność, gdy kupujący odbierze dokumenty w celu podjęcia zaimportowanych towarów.
+
+
 
 

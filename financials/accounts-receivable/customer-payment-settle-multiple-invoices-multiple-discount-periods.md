@@ -1,5 +1,5 @@
 ---
-title: "Użyj płatności odbiorcy do rozliczenia wiele faktur, które obejmują wiele okresów rabatu"
+title: "Używanie jednej płatności odbiorcy do rozliczenia wielu faktur obejmujących wiele okresów rabatu"
 description: "W tym artykule przedstawiono sposób zapłaty wielu faktur, gdy każda faktura kwalifikuje się do rabatu gotówkowego. Scenariusze w tym artykule pokazują różnice w stosowanych rabatach gotówkowych zależnie od dnia uregulowania płatności."
 author: twheeloc
 manager: AnnBe
@@ -26,18 +26,21 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Użyj płatności odbiorcy do rozliczenia wiele faktur, które obejmują wiele okresów rabatu
+# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Używanie jednej płatności odbiorcy do rozliczenia wielu faktur obejmujących wiele okresów rabatu
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule przedstawiono sposób zapłaty wielu faktur, gdy każda faktura kwalifikuje się do rabatu gotówkowego. Scenariusze w tym artykule pokazują różnice w stosowanych rabatach gotówkowych zależnie od dnia uregulowania płatności.
 
-Firma Fabrikam sprzedaje towary klientowi 4032. Firma Fabrikam oferuje rabat gotówkowy, % 1, jeśli faktura jest zapłacona w ciągu 14 dni. Fabrikam oferuje też rabaty gotówkowe za rozliczenia częściowe. Parametry settement znajdują się na **rozrachunków z odbiorcami Parametry** strony.
+Firma Fabrikam sprzedaje towary odbiorcy 4032. Fabrikam oferuje rabat gotówkowy w wysokości 1%, jeśli faktura jest zapłacona w ciągu 14 dni. Fabrikam oferuje też rabaty gotówkowe za rozliczenia częściowe. Parametry rozliczenia znajdują się na stronie **Parametry modułu rozrachunków z odbiorcami**.
 
 ## <a name="invoices"></a>Faktury
 Odbiorca 4032 ma trzy faktury na łączną kwotę 3,000.00:
 
--   Faktura FTI-10040 dla 1 000,00, wprowadzono 15 maja. Tej faktury jest uprawniony do rabat gotówkowy, % 1, jeśli zostanie zapłacona w ciągu 14 dni.
--   Faktura FTI-10041 dla 1 000,00, wprowadzono 25 czerwca. Tej faktury jest uprawniony do rabat gotówkowy, % 1, jeśli zostanie zapłacona w ciągu 14 dni.
--   Faktura FTI-10042 dla 1 000,00, wprowadzono 25 czerwca. Ta faktura jest uprawniony do rabat gotówkowy w wysokości 2 procent zostaje dokonana w pięciu dni i rabat w wysokości 1 procent, jeśli zostanie zapłacona w ciągu 14 dni.
+-   Faktura FTI-10040 na 1000,00, została wprowadzona 15 maja. Do tej faktury przysługuje rabat gotówkowy w wysokości 1%,jeśli zostanie zapłacona w ciągu 14 dni.
+-   Faktura FTI-10041 na 1000,00, została wprowadzona 25 czerwca. Do tej faktury przysługuje rabat gotówkowy w wysokości 1%,jeśli zostanie zapłacona w ciągu 14 dni.
+-   Faktura FTI-10042 na 1000,00, została wprowadzona 25 czerwca. Do tej faktury przysługuje rabat gotówkowy w wysokości 2%,jeśli zostanie zapłacona w ciągu 5 dni, i 1%, jeśli zostanie zapłacona w ciągu 14 dni.
 
 ## <a name="settle-all-invoices-on-june-29"></a>Rozlicz wszystkie faktury 29 czerwca
 Jeśli Arnie tworzy arkusz płatności, aby w pełni rozliczyć te faktury 29 czerwca, płatność wynosi 2970,00. Suma wszystkich kwot wynosi 30,00. Arnie tworzy płatność dla odbiorcy 4032, a następnie otwiera stronę **rozliczenia transakcji**. Na stronie**rozliczenia transakcji** oznacza wszystkie wiersze trzech faktur do rozliczenia:
@@ -76,7 +79,7 @@ Odbiorca 4032 może zapłacić kwotę częściową, np. połowę każdej faktury
 | Wybrano                 | Normalna            | FTI-10041 | 4032    | 6/25/2015 | 7/25/2015 | 10041   | 1000,00                             |                                       | USD      | 495,00           |
 | Zaznaczone i wyróżnione | Normalna            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1000,00                             |                                       | USD      | 490,00           |
 
-Arnie można także ręcznie wprowadzić kwoty płatności 1,485.00, zanim zostanie on otwarty **rozliczenia transakcji** strony. Jeśli Arnie ręcznie wprowadza kwotę płatności, a następnie oznacza wszystkie trzy transakcje, ale on nie dopasowuje wartość w **kwota do rozliczenia** pole dla każdej transakcji, otrzymuje następujący komunikat o błędzie podczas Zamyka stronę:
+Arnie może także wprowadzić ręcznie kwotę płatności 1485,00, zanim otworzy stronę **Rozlicz transakcje**. Jeśli Arnie ręcznie wprowadzi kwotę płatności, a następnie oznaczy wszystkie trzy transakcje, ale nie zmieni wartości w polu **Kwota do rozliczenia** dla każdej transakcji, po zamknięciu strony zobaczy następujący komunikat:
 
 > Suma z zaznaczonych transakcji jest różna od kwoty arkusza. Czy zmienić kwotę arkusza?
 
@@ -95,6 +98,8 @@ Arnie wyświetla informacje na stronie **Transakcje dostawcy**.
 | FTI-10042  | Faktura          | 6/25/2015 | 10042   | 1000,00                             |                                       | 505,10   | USD      |
 | ARP-10040  | Płatność          | 6/29/2015 |         |                                      | 1485,00                              | 0,00     | USD      |
 | DISC-10040 | Rabat gotówkowy    | 6/29/2015 |         |                                      | 9,90                                  | 0,00     | USD      |
+
+
 
 
 

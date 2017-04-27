@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="close-accounts-receivable"></a>Zamykanie rozrachunków z odbiorcami
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Poniższa tabela zawiera listę stron obsługujących procesu biznesowy związany z zamykaniem rozrachunków z odbiorcami.
 
 > [!NOTE] 
-> Aby otworzyć niektórych stron w tabeli, możesz wprowadzić informacje lub określanie ustawień parametrów.
+> Aby otworzyć wybrane strony w tabeli, musisz wypisać informacje lub określić ustawienia parametru.
 
-**Zadania składnika procesu biznesowego**                   
+**Zadanie składnika procesu biznesowego**                   
 
 Zamkniętych okresów w księdze głównej
 
@@ -43,21 +46,23 @@ Zamkniętych okresów w księdze głównej
 |Potwierdź zamówienie sprzedaży                   | Umożliwia aktualizowanie zamówień sprzedaży.                                                                       |
 |Przeszacowanie w walucie obcej          | Umożliwia wygenerowanie transakcji, które aktualizują wartość otwartych transakcji odbiorców w walutach obcych.                                                                                                                         |
 | W arkuszu                              | Służy do księgowania faktur, płatności i skryptów dłużnych.                                             |
-| Załącznik arkusza                      | -   **Payment journal** – Generate, process, and post payments.
+| Załącznik arkusza                      | -   **Arkusz płatności** — umożliwia generowanie, przetwarzanie i księgowanie płatności.
                                          -   **Draw bill of exchange journal** – Post bills of exchange.
                                          -   **Protest bill of exchange journal** – Post protested bills of exchange.
                                          -   **Redraw bill of exchange journal** – Post redrawn bills of exchange.
                                          -   **Remittance journal** – Post remittances.
                                          -   **Settle bill of exchange journal** – Post settled bills of exchange                   |
-| Księgowanie dokumentu dostawy opakowań | Aktualizowanie dokumentów dostawy dla zamówień sprzedaży.                                                     | | Księguj fakturę niezależną | Księgowanie faktur niezależnych.                                                                   | | Księgowanie faktury | Księgowanie faktury dla zamówienia sprzedaży.                                                            | | Księgowanie listy pobrania | Aktualizacja listy pobrania dla zamówień sprzedaży.                                                      |
+| Księgowanie dokumentu dostawy                 | Umożliwia aktualizowanie dokumentów dostawy związanych z zamówieniami sprzedaży.                                                     | | Księgowanie faktury niezależnej               | Umożliwia księgowanie faktur niezależnych.                                                                   | | Księgowanie faktury                      | Umożliwia księgowanie faktur związanych z zamówieniami sprzedaży.                                                            | | Księgowanie listy pobrań                 |Umożliwia aktualizowanie list pobrania związanych z zamówieniami sprzedaży.                                                      |
 
-**Zadania składnika procesu biznesowego**   
+**Zadanie składnika procesu biznesowego**   
 
 Tworzenie i przesyłanie listy sprzedaży do Unii Europejskiej
 
 | Nazwa strony                            | Użycie                                                                                      |
 |--------------------------------------|--------------------------------------------------------------------------------------------|
 |Lista sprzedaży do UE                         | Raport dotyczący sprzedaży w Unii Europejskiej (UE) do urzędu skarbowego na potrzeby deklaracji podatku VAT.                                                                                                                           |
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Rozlicz płatności klienta częściowe przed datą rabatu z ostatecznej wypłaty po daty rabatu"
+title: "Rozliczanie płatności częściowej odbiorcy przed datą rabatu z ostateczną datą płatności po dacie rabatu"
 description: "W tym artykule omówiono wpływ rozliczania płatności za faktury dla odbiorców. Scenariusz koncentruje się na skutkach w księdze podrzędnej, a nie w księdze głównej."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Rozlicz płatności klienta częściowe przed datą rabatu z ostatecznej wypłaty po daty rabatu
+# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Rozliczanie płatności częściowej odbiorcy przed datą rabatu z ostateczną datą płatności po dacie rabatu
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule omówiono wpływ rozliczania płatności za faktury dla odbiorców. Scenariusz koncentruje się na skutkach w księdze podrzędnej, a nie w księdze głównej.
 
-Firma Fabrikam sprzedaje towary do klienta 4027. Firma Fabrikam oferuje rabat gotówkowy, % 1, jeśli faktura jest zapłacona w ciągu 14 dni. Faktury muszą zostać zapłacone w ciągu 30 dni. Fabrikam oferuje też rabaty gotówkowe za rozliczenia częściowe. Parametry rozliczenia znajdują się na **rozrachunków z odbiorcami Parametry** strony.
+Firma Fabrikam sprzedaje towary odbiorcy 4027. Fabrikam oferuje rabat gotówkowy w wysokości 1%, jeśli faktura jest zapłacona w ciągu 14 dni. Faktury muszą zostać zapłacone w ciągu 30 dni. Fabrikam oferuje też rabaty gotówkowe za rozliczenia częściowe. Parametry rozliczenia znajdują się na stronie **Parametry modułu rozrachunków z odbiorcami**.
 
 ## <a name="invoice"></a>Faktura
-25 czerwca Arnie wchodzi i księguje fakturę za 1 000,00 dla odbiorcy 4027. Arnie można wyświetlić tę fakturę za pomocą **transakcji** znajdującego się na **klienci** strony.
+25 czerwca Arnie wprowadza i księguje fakturę na kwotę 1000,00 dla odbiorcy 4027. Arnie może wyświetlić tę fakturę za pomocą przycisku **Transakcje** na stronie **Odbiorcy**.
 
 | Załącznik   | Typ transakcji | Data      | Faktura | Kwota debetu w walucie transakcji | Kwota kredytu w walucie transakcji | Saldo  | Waluta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -46,7 +49,7 @@ Firma Fabrikam sprzedaje towary do klienta 4027. Firma Fabrikam oferuje rabat go
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
 | Wybrano | Normalna            | FTI-10020 | 4027    | 6/25/2015 | 7/25/2015 | 10020   | 1000,00                             | USD      | 297.00           |
 
-Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**. Jeśli nie zmienisz wartości **Kwota do rozliczenia** na 297,00, wyświetlane wartości **Kwota rabatu gotówkowego** będą różne. Jednak 3,00 zostanie uznany za rabatu gotówkowego po zaksięgowaniu płatności, ponieważ rozliczenie automatycznie dostosowuje ** kwota do rozliczenia ** wartość dla Ciebie.
+Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**. Jeśli nie zmienisz wartości **Kwota do rozliczenia** na 297,00, wyświetlane wartości **Kwota rabatu gotówkowego** będą różne. Jednak wartość 3,00 będzie brana za wartość rabatu gotówkowego po zaksięgowaniu płatności, ponieważ rozliczenie automatycznie dostosowuje wartość **Kwota do rozliczenia**.
 
 |                              |           |
 |------------------------------|-----------|
@@ -105,6 +108,8 @@ Arnie zmienia wartość w polu **Użyj rabatu gotówkowego** z powrotem na **Nor
 | ARP-10020  |                  | 7/1/2015  |         |                                      | 297.00                                | 0,00    | USD      |
 | DISC-10020 |                  | 7/1/2015  |         |                                      | 3,00                                  | 0,00    | USD      |
 | ARP-10021  |                  | 7/11/2015 |         |                                      | 700,00                                | 0,00    | USD      |
+
+
 
 
 

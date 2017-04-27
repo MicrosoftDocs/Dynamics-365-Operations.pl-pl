@@ -26,8 +26,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="expense-management"></a>Zarządzanie wydatkami
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 [Planowanie zarządzania wydatkami](plan-expense-management.md) Więcej informacji zostanie dodane później; wróć tutaj za jakiś czas.
+
+
 
 

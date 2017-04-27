@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="price-simulation"></a>Symulacja ceny
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o symulacjach cen dla ofert. Symulacja ceny pomaga ocenić wpływ obniżek na przyszłą cenę sprzedaży w trakcie procesu sporządzania oferty, zanim określona cena zostanie potwierdzona.
 
 Symulacja ceny oferty zawiera nową łączną kwotą, opartą na proponowanej nowej cenie. Symulacja ceny można również wyświetlać nową wartość dla określonego wiersza utworzonego w istniejącej ofercie. Można wpisać symulację ceny i zastosować ją później. Ewentualnie można użyć oryginalnej oferty bez symulacji ceny i wprowadzać dodatkowe zmiany w trakcie pracy poprzez proces sprzedaży z klientem.  
@@ -50,7 +53,7 @@ Aby zagwarantować, że rabaty i ceny są obliczane prawidłowo, należy zachowa
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Typy rabatów w umowach handlowych
 
-Umowy handlowe w usłudze Microsoft Dynamics 365 dla operacji może mieć cztery rodzaje zniżek. Rabaty te można konfigurować dla różnych towarów, odbiorców lub grup cenowych i można je ograniczać terminem. Aby uniknąć błędów w obliczeniach, podczas wykonywania symulacji ceny należy wziąć pod uwagę umowy handlowe. Oto cztery typy rabatów w umowach handlowych:
+Umowy handlowe w programie Microsoft Dynamics 365 for Operations mogą zawierać cztery typy rabatów. Rabaty te można konfigurować dla różnych towarów, odbiorców lub grup cenowych i można je ograniczać terminem. Aby uniknąć błędów w obliczeniach, podczas wykonywania symulacji ceny należy wziąć pod uwagę umowy handlowe. Oto cztery typy rabatów w umowach handlowych:
 
 -   **Cena sprzedaży** – można określić osobne ceny sprzedaży towarów. Podczas tworzenia wierszy zapytania ofertowego, program wyszukuje poprawnych cen sprzedaży dla towaru i przenosi je do wierszy zamówienia sprzedaży. Z tego względu umowa handlowa zawierająca ten rodzaj rabatu nie wpływa na symulację ceny. Cena sprzedaży, która jest używana w wierszu oferty, odzwierciedla zapisy umowy handlowej.
 -   **Rabat wiersza** — specjalne rabaty określone dla towarów, w zależności od zamówionej ilości. Kwoty wierszy są zwykle pomniejszane o rabat wiersza przed uruchomieniem symulacji ceny. Z tego względu umowa handlowa zawierająca ten rodzaj rabatu wpływa na symulację ceny.
@@ -79,7 +82,7 @@ Poniższa tabela przedstawia wiersze oferty.
 | Wartość sprzedaży w USD         | (10 × 15,32) + (12 × 13,75)          | 318,20   |
 | Wartość kosztów w USD          | (10 × 9,52) + (12 × 7,48)            | 184,96   |
 | Marża pokrycia w USD | 318,20 – 184,96                      | 133,24   |
-| Współczynnik marży         | (\[318.20 – 184.96\] ÷ 318.20) × 100 | 41,87%   |
+| Współczynnik marży         | (\[318,20 – 184,96\] ÷ 318,20) × 100 | 41,87%   |
 
 Uruchomiono symulację ceny i zastosowano 15 procent rabatu końcowego dla całej oferty lub nagłówka oferty. Poniższa tabela przedstawia nowe sumy oferty po uruchomieniu symulacji cen.
 
@@ -89,11 +92,11 @@ Uruchomiono symulację ceny i zastosowano 15 procent rabatu końcowego dla całe
 | Stara wartość sprzedaży w USD                               | (10 × 15,32) + (12 × 13,75)               | 318,20   |
 | Stare wartość kosztów w USD                                | (10 × 9,52) + (12 × 7,48)                 | 184,96   |
 | Stara marża pokrycia w USD                       | 318,20 – 184,96                           | 133,24   |
-| Stary współczynnik marży                               | (\[318.20 – (10 × 9.52)\] ÷ 318.20) × 100 | 41,87%   |
+| Stary współczynnik marży                               | (\[318,20 – (10 × 9,52)\] ÷ 318,20) × 100 | 41,87%   |
 | Symulacja ceny, 15% rabatu końcowego w USD | (15 × 318,2) ÷ 100                        | 47,73    |
 | Nowa wartość sprzedaży w USD                               | 318,20 – 47,73                            | 270,47   |
 | Nowa marża pokrycia w USD                       | 270,47 – 184,96                           | 85,51    |
-| Nowy współczynnik udziału                               | \[(270.47 – 184.96) ÷ 270.47\] × 100      | 31,61%   |
+| Nowy współczynnik udziału                               | \[(270,47 – 184,96) ÷ 270,47\] × 100      | 31,61%   |
 
 ### <a name="price-simulation-for-single-line-items"></a>Symulacja ceny dla pojedynczych towarów
 
@@ -113,12 +116,12 @@ Poniższa tabela przedstawia wiersze oferty.
 | Wartość kosztów w USD dla BR-14          | 12 × 7,48                            | 89,76    |
 | Marża pokrycia w USD dla BR-12 | 153,20 – 95,20                       | 58,00    |
 | Marża pokrycia w USD dla BR-14 | 165,00 – 89,76                       | 75,24    |
-| Współczynnik marży w USD dla BR-12  | \[(153.20 – 95.20) ÷ 153.20\] × 100  | 37,86    |
-| Współczynnik marży w USD dla BR-14  | \[(165.00 – 89.76) ÷ 165.00\] × 100  | 45,60    |
+| Współczynnik marży w USD dla BR-12  | \[(153,20 – 95,20) ÷ 153,20\] × 100  | 37,86    |
+| Współczynnik marży w USD dla BR-14  | \[(165,00 – 89,76) ÷ 165,00\] × 100  | 45,60    |
 | Łączna wartość sprzedaży w USD             | (10 × 15,32) + (12 × 13,75)          | 318,20   |
 | Łączna wartość kosztów w USD              | (10 × 9,52) + (12 × 7,48)            | 184,96   |
 | Łączna marża pokrycia w USD     | 318,20 – 184,96                      | 133,24   |
-| Łączny współczynnik marży             | \[(318.20 – 184.96) ÷ 318.20\] × 100 | 41,87%   |
+| Łączny współczynnik marży             | \[(318,20 – 184,96) ÷ 318,20\] × 100 | 41,87%   |
 
 Uruchomiono symulację cen i zastosowano 10 procent rabatu końcowego dla jednostek BR-12. Poniższa tabela przedstawia nowe sumy oferty po uruchomieniu symulacji cen dla pojedynczego towaru.
 
@@ -133,13 +136,15 @@ Uruchomiono symulację cen i zastosowano 10 procent rabatu końcowego dla jednos
 | Wartość kosztów w USD dla BR-14                       | 12 × 7,48                               | 89,76    |
 | Nowa marża pokrycia w USD dla BR-12          | 137,88 – 95,20                          | 42,68    |
 | Marża pokrycia w USD dla BR-14              | 165,00 – 89,76                          | 75,24    |
-| Nowy współczynnik marży w USD dla BR-12           | \[(137.88 – 95.20) ÷ 137.88\] × 100     | 30,95    |
-| Współczynnik marży w USD dla BR-14               | \[(165.00 – 89.76) ÷ 165.00\] × 100     | 45,60    |
-| Nowa łączna wartość sprzedaży w USD                      | \[(10 × 15.32) – 15.32\] + (12 × 13.75) | 302,88   |
+| Nowy współczynnik marży w USD dla BR-12           | \[(137,88 – 95,20) ÷ 137,88\] × 100     | 30,95    |
+| Współczynnik marży w USD dla BR-14               | \[(165,00 – 89,76) ÷ 165,00\] × 100     | 45,60    |
+| Nowa łączna wartość sprzedaży w USD                      | \[(10 × 15,32) – 15,32\] + (12 × 13,75) | 302,88   |
 | Łączna wartość kosztów w USD                           | (10 × 9,52) + (12 × 7,48)               | 184,96   |
 | Nowa łączna marża pokrycia w USD              | 302,88 – 184,96                         | 117,92   |
-| Nowy sumaryczny poziom marży                      | \[(302.88 – 184.96) ÷ 302.88\] × 100    | 38,93%   |
+| Nowy sumaryczny poziom marży                      | \[(302,88 – 184,96) ÷ 302,88\] × 100    | 38,93%   |
 
 Symulacja ceny wpływa tylko na wiersz, do którego jest stosowana, powodując zmniejszenie sumy dla tego wiersza.
+
+
 
 

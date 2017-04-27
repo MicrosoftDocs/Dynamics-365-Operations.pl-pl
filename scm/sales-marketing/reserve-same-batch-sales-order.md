@@ -1,5 +1,5 @@
 ---
-title: "Rezerwy tej samej partii dla zamówienia sprzedaży"
+title: "Rezerwowanie takiej samej partii na potrzeby zamówienia sprzedaży"
 description: "Ten artykuł przedstawia sposób konfigurowania produktu w celu umożliwienia rezerwacji zapasów z jednej partii zapasów."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reserve-the-same-batch-for-a-sales-order"></a>Rezerwy tej samej partii dla zamówienia sprzedaży
+# <a name="reserve-the-same-batch-for-a-sales-order"></a>Rezerwowanie takiej samej partii na potrzeby zamówienia sprzedaży
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł przedstawia sposób konfigurowania produktu w celu umożliwienia rezerwacji zapasów z jednej partii zapasów.
 
@@ -42,6 +45,8 @@ Podczas rezerwowania zapasów produktu w wierszu zamówienia sprzedaży, dla kt�
 -   Dla kodu dyspozycji partii jest zaznaczona opcja **Blokuj rezerwację** dla sprzedaży oznaczonych jako **zablokowano**.
 -   Partia wygasła, na podstawie daty ważności oraz jakiekolwiek dni możliwej sprzedaży. Element nadal można uznać za do rezerwacji, jeśli grupa modeli pozycji dla towaru jest ewidencjonowana według zasady FEFO, a okres przydatności jest kryterium pobrania.
 -   Partia nie ma wystarczającej liczby pozostałych dni przydatności (według daty ważności, daty przydatności i liczby dni możliwej sprzedaży u odbiorcy).
+
+
 
 
 

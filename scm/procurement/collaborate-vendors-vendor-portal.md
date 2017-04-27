@@ -1,6 +1,6 @@
 ---
 title: "Współpraca z dostawcami za pomocą portalu dostawców"
-description: "W tym temacie wyjaśniono, jak pracownicy działu zakupów mogą używać portalu dostawców do współpracy z dostawcami zewnętrznymi w trakcie procesu potwierdzenia zamówień zakupu. Ta informacja ma zastosowanie tylko do lutego 2016 &amp;2016 maja wersji systemu Dynamics AX."
+description: "W tym temacie wyjaśniono, jak pracownicy działu zakupów mogą używać portalu dostawców do współpracy z dostawcami zewnętrznymi w trakcie procesu potwierdzenia zamówień zakupu. Informacje te dotyczą tylko wersji systemu Dynamics AX z lutego i maja 2016 roku."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Współpraca z dostawcami za pomocą portalu dostawców
 
-W tym temacie wyjaśniono, jak pracownicy działu zakupów mogą używać portalu dostawców do współpracy z dostawcami zewnętrznymi w trakcie procesu potwierdzenia zamówień zakupu. Ta informacja ma zastosowanie tylko do lutego 2016 &amp;2016 maja wersji systemu Dynamics AX.
+[!include[banner](../includes/banner.md)]
 
-Informacje zawarte w tym temacie dotyczą tylko wersji systemu Dynamics AX z lutego i maja 2016 roku. Funkcje portalu dostawców został zastąpiony przez dostawcę rozszerzonych funkcji współpracy w usłudze Dynamics 365 dla wersji operacji 1611. Aby uzyskać więcej informacji na temat nowych funkcji współpracy dostawcy, zobacz [za pomocą współpracy dostawcy do pracy z innymi firmami,](vendor-collaboration-work-external-vendors.md).  
+
+W tym temacie wyjaśniono, jak pracownicy działu zakupów mogą używać portalu dostawców do współpracy z dostawcami zewnętrznymi w trakcie procesu potwierdzenia zamówień zakupu. Informacje te dotyczą tylko wersji systemu Dynamics AX z lutego i maja 2016 roku.
+
+Informacje zawarte w tym temacie dotyczą tylko wersji systemu Dynamics AX z lutego i maja 2016 roku. Funkcjonalność portalu dostawców została zastąpiona rozszerzoną funkcjonalnością portalu współpracy z dostawcami w programie Dynamics 365 for Operations w wersji 1611. Aby uzyskać więcej informacji o funkcjonalności nowego portalu współpracy z dostawcami, zobacz [Używanie portalu współpracy z dostawcami do obsługi współpracy z dostawcami zewnętrznymi](vendor-collaboration-work-external-vendors.md).  
 
 Portal dostawców jest przeznaczony dla dostawców, którzy nie posiadają interfejsów elektronicznej wymiany danych (EDI) z systemem Microsoft Dynamics AX na potrzeby wymiany informacji o zamówieniach zakupu (PO). Portal umożliwia pracownikom działu zakupów wysyłanie zamówień zakupu do dostawcy, a następnie odbieranie odpowiedzi o potwierdzeniu lub odrzuceniu bezpośrednio w systemie Dynamics AX.  
 
@@ -66,9 +69,9 @@ W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może p
 | Wysyłasz nową wersję zamówienia zakupu do portalu dostawców. | Nowa wersja jest rejestrowana w portalu dostawców, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**. |
 | Dostawca zatwierdza nową wersję zamówienia zakupu.           | Stan zostaje zmieniony na **Potwierdzone**.                                                                |
 
-Aby wyświetlić wersje zamówienia zakupu, które zostały wysłane do dostawcy i dostawcy odpowiedzi, kliknij przycisk **arkuszach**&gt;**żądania potwierdzenia** z zamówienia zakupu.  
+Aby wyświetlić wersje zamówienia zakupu wysłane do dostawcy oraz odpowiedzi dostawcy, w oknie zamówienia zakupu wybierz kolejno polecenia **Arkusze** &gt; **Żądania potwierdzenia**.  
 
-Zamówienia, które zostały wysłane do dostawcy w celu udzielenia odpowiedzi i mają stan **W trakcie analizy zewnętrznej**, pojawią się na liście **Zamówienia zakupu zostały wysłane do portalu dostawców, oczekiwanie na odpowiedź** lub liście **Zamówienia zakupu zostały wysłane do portalu dostawców, odpowiedź wymaga akcji**. Jeśli wprowadzisz zmiany w zamówieniu, które zostało wysłane do dostawcy, co powoduje zmianę stanu zamówienia na **Zatwierdzone**, zamówienie nie będzie się już pojawiało na tych listach. Aby sprawdzić, czy był uprzednio odpowiedzi na powyższe zapytanie przez dostawcę, kliknij przycisk **arkuszach**&gt;**żądania potwierdzenia**.  
+Zamówienia, które zostały wysłane do dostawcy w celu udzielenia odpowiedzi i mają stan **W trakcie analizy zewnętrznej**, pojawią się na liście **Zamówienia zakupu zostały wysłane do portalu dostawców, oczekiwanie na odpowiedź** lub liście **Zamówienia zakupu zostały wysłane do portalu dostawców, odpowiedź wymaga akcji**. Jeśli wprowadzisz zmiany w zamówieniu, które zostało wysłane do dostawcy, co powoduje zmianę stanu zamówienia na **Zatwierdzone**, zamówienie nie będzie się już pojawiało na tych listach. Aby sprawdzić, czy była uprzednio odpowiedź od dostawcy na zamówienia, kliknij kolejno opcje **Arkusze** &gt; **Żądania potwierdzenia**.  
 
 Dostawcy nie muszą potwierdzać zamówień zakupu w portalu dostawców. Zamiast tego mogą również wysłać wiadomość e-mail lub zawiadomić o przyjęciu zamówienia zakupu przez inne kanały komunikacji. Wtedy można potwierdzić zamówienie ręcznie w systemie Dynamics AX. W takim przypadku zobaczysz ostrzeżenie informujące, że trwa potwierdzanie zamówienia, nawet jeśli nie ma odpowiedzi od dostawcy. Zamówienie zakupu pojawi się wtedy w historii potwierdzeń w portalu dostawców jako otwarte zamówienie potwierdzone, które nie ma żadnych odpowiedzi. Ponadto dostawca nie będzie już mógł potwierdzić ani odrzucić zamówienia zakupu.  
 
@@ -97,5 +100,7 @@ W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może p
 [Konfiguracja zabezpieczeń dla użytkowników portalu współpracy z dostawcami](configure-security-vendor-portal-users.md)
 
 [Obszar roboczy fakturowania w portalu współpracy z dostawcami](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
+
+
 
 

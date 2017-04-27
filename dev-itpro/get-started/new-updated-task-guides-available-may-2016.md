@@ -1,6 +1,6 @@
 ---
-title: Nowe lub zaktualizowane zadanie linie pomocnicze (maja 2016)
-description: "W tym artykule wymieniono nowe lub zaktualizowane zadanie wytycznych wydane przez firmę Microsoft 2016 - wszystkie języki mogą APQC Unified biblioteki dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy."
+title: Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)
+description: "Ten artykuł zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-may-2016"></a>Nowe lub zaktualizowane zadanie linie pomocnicze (maja 2016)
+# <a name="new-or-updated-task-guides-may-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)
 
-W tym artykule wymieniono nowe lub zaktualizowane zadanie wytycznych wydane przez firmę Microsoft 2016 - wszystkie języki mogą APQC Unified biblioteki dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy. 
+[!include[banner](../includes/banner.md)]
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Zadanie prowadzi w (2016 maja - wszystkich języków) APQC Unified biblioteki dla systemu Microsoft Dynamics AX
+
+Ten artykuł zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy. 
+
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX
 ------------------------------------------------------------------------------------------------
 
-(Maja 2016) APQC Unified biblioteka zawiera linie pomocnicze, które mają być używane, aby uzyskać pomoc dotyczącą systemu Microsoft Dynamics AX może 2016 Aktualizacja zadania i zwolnij lutego 2016 Microsoft Dynamics AX. Zlokalizowane wersje przewodników zadań, które zostały wydane w (luty 2016) APQC Unified biblioteki są dostępne w tej bibliotece. Aby uzyskać więcej informacji na temat sposobu łączenia się biblioteka przewodnik zadań z systemu pomocy, zobacz [wprowadzenie do pomocy](help-overview.md). **Uwaga:** znak gwiazdki (**\***) obok tytułu procesu biznesowego (BPM) linia wskazuje, że przewodnik zadania dla procesów biznesowych został utworzony dla systemu Dynamics AX może 2016 aktualizacji, a nie jest obsługiwany we wcześniejszych wersjach programu Microsoft Dynamics AX.
+Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji systemu Microsoft Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach zamieszczone w ujednoliconej bibliotece APQC z lutego 2016 r. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md). **Uwaga:** Znak gwiazdki (**\***) obok tytułu wiersza narzędzia do modelowania procesów biznesowych (BPM) wskazuje, że przewodnik po zadaniach dla tego procesu biznesowego został utworzony dla aktualizacji systemu Dynamics AX z maja 2016 r. i nie jest obsługiwany we wcześniejszych wersjach systemu Microsoft Dynamics AX.
 
 ### <a name="countryregion-functionality"></a>Funkcje specyficzne dla kraju/regionu
 
@@ -65,7 +68,7 @@ W tym artykule wymieniono nowe lub zaktualizowane zadanie wytycznych wydane prze
 | ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML         | Globalna         |
 | ER Generowanie dokumentów elektronicznych dla płatności przy użyciu konfiguracji formatu | Globalna         |
 | ER Importowanie konfiguracji z usługi Lifecycle Services                          | Globalna         |
-| **\***ER Select service provider                                           | Globalna         |
+| **\***ER Wybór dostawcy usług                                           | Globalna         |
 | ER Uaktualnianie formatu poprzez przyjęcie jego nowej wersji bazowej      | Globalna         |
 | ER Przekazywanie konfiguracji do usługi Lifecycle Services                          | Globalna         |
 
@@ -126,7 +129,7 @@ W tym artykule wymieniono nowe lub zaktualizowane zadanie wytycznych wydane prze
 | Wiersz BPM                                                 | Kraj/region |
 |----------------------------------------------------------|----------------|
 | Tworzenie nowego produktu                                     | Globalna         |
-| Tworzenie... \financial-dimensions\dimension-based konfiguracji                    | Globalna         |
+| Tworzenie konfiguracji opartych na wymiarach                    | Globalna         |
 | Tworzenie wstępnie zdefiniowanych wariantów produktu                       | Globalna         |
 | Tworzenie kryteriów wyboru ceny sprzedaży                    | Globalna         |
 | Wpisywanie zamówień dla produktów, które można konfigurować                   | Globalna         |
@@ -176,22 +179,24 @@ W tym artykule wymieniono nowe lub zaktualizowane zadanie wytycznych wydane prze
 | Wiersz BPM                                                            | Kraj/region |
 |---------------------------------------------------------------------|----------------|
 | Konfigurowanie przetwarzania grupy czynności                                           | Globalna         |
-| **\***Zgłoszenie wyrobów gotowych do kontrolowanej lokalizacji tablic rejestracyjnych | Globalna         |
+| **\***Zgłaszanie wyrobów gotowych do lokalizacji niekontrolowanej przez numer identyfikacyjny | Globalna         |
 | Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości                              | Globalna         |
 | Ustawianie konteneryzacji                                             | Globalna         |
 | Konfigurowanie pakowania ręcznego                                               | Globalna         |
 | Konfigurowanie ograniczeń transportu towaru                       | Globalna         |
-| **\***Set up warehouse work policies                                | Globalna         |
+| **\***Konfigurowanie zasad pracy magazynowej                                | Globalna         |
 
 
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Nowe zadanie prowadzi (luty 2016)](new-task-guides-available-february-2016.md)
+[Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)
 
-[Nowe lub zaktualizowane zadania prowadzi (sierpnia 2016)](new-updated-task-guides-available-august-2016.md)
+[Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)](new-updated-task-guides-available-august-2016.md)
 
-[Nowe lub zaktualizowane zadania prowadzi (listopad 2016)](new-task-guides-november-2016.md)
+[Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)](new-task-guides-november-2016.md)
+
+
 
 

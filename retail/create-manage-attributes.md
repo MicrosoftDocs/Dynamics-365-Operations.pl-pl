@@ -1,6 +1,6 @@
 ---
 title: "Tworzenie atrybutów i zarządzanie nimi"
-description: "W tym artykule opisano atrybuty usługi Microsoft Dynamics 365 dla operacji. Atrybuty pozwalają opisać produkt i jego charakterystykę w polach definiowanych przez użytkownika."
+description: "Ten artykuł opisuje atrybuty dostępne w programie Microsoft Dynamics 365 for Operations. Atrybuty pozwalają opisać produkt i jego charakterystykę w polach definiowanych przez użytkownika."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-and-manage-attributes"></a>Tworzenie atrybutów i zarządzanie nimi
 
-W tym artykule opisano atrybuty usługi Microsoft Dynamics 365 dla operacji. Atrybuty pozwalają opisać produkt i jego charakterystykę w polach definiowanych przez użytkownika.
+Ten artykuł opisuje atrybuty dostępne w programie Microsoft Dynamics 365 for Operations. Atrybuty pozwalają opisać produkt i jego charakterystykę w polach definiowanych przez użytkownika.
 
 Atrybuty pozwalają opisać produkt i jego charakterystykę w polach definiowanych przez użytkownika. Można na przykład określić rozmiar pamięci produktu i pojemność dysku twardego oraz wskazać, czy produkt jest zgodny z normą poboru mocy. Atrybuty można skojarzyć z różnymi jednostkami sprzedaży detalicznej, takimi jak kategorie produktu i kanały handlu detalicznego oraz ustawić ich wartości domyślne. Produkty dziedziczą atrybuty i wartości domyślne dla tych atrybutów, gdy zostaną powiązane z kategoriami produktów lub kanałami sprzedaży detalicznej. Wartości domyślne można zastąpić na poziomie poszczególnych produktów na poziomie kanału sprzedaży detalicznej lub w katalogu sieci sprzedaży.
 
@@ -130,49 +130,49 @@ Gwarancja na lampę kineskopową
 
 **12**
 
-\#Rzut rur
+\# lamp kineskopowych
 
 **1**–**5**
 
 **3**
 
 ## <a name="attribute-type"></a>Typ atrybutu
-  [![Atrybuty stałe copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) atrybuty są oparte na typy atrybutów. Typ atrybutu określa typ danych, które można wprowadzić dla określonego atrybutu. Obecnie Microsoft Dynamics 365 dla operacji obsługuje następujące typy atrybutów:
+  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) Atrybuty są oparte na typach atrybutów. Typ atrybutu określa typ danych, które można wprowadzić dla określonego atrybutu. Obecnie program Microsoft Dynamics 365 for Operations obsługuje następujące typy atrybutów:
 
 -   **Waluta** — ten typ atrybutu obsługuje wartości waluty. Może być ograniczona (czyli obsługuje zakres wartości), lub może pozostać otwarta.
 -   **Data i godzina** — ten typ atrybutu obsługuje wartości daty i godziny. Może być ograniczona (czyli obsługuje zakres wartości), lub może pozostać otwarta.
 -   **Dziesiętna** — ten typ atrybutu obsługuje wartości liczbowe, które zawierają miejsca dziesiętne. Obsługuje ona również jednostki miary. Może być ograniczona (czyli obsługuje zakres wartości), lub może pozostać otwarta.
 -   **Całkowita** — ten typ atrybutu obsługuje wartości numeryczne. Obsługuje ona również jednostki miary. Może być ograniczona (czyli obsługuje zakres wartości), lub może pozostać otwarta.
 -   **Tekst** — ten typ atrybutu obsługuje wartości tekstowe. Obsługuje ona również wstępnie zdefiniowany zestaw możliwych wartości (wyliczenia).
--   **Logiczna** – ten typ atrybutu obsługuje wartości binarnych (**true**/**false**).
+-   **Logiczna** — ten typ atrybutu obsługuje wartości binarne (**prawda**/**fałsz**).
 -   **Odwołanie**.
 
 ## <a name="attribute"></a>Atrybut
-  [![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) oprócz nazwy, przyjazną nazwę, opis i tekst pomocy, jeden lub więcej z następujących typów informacji mogą być przechwytywane atrybutu:
+  [![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) Oprócz nazwy, przyjaznej nazwy, opisu i tekstu Pomocy, w atrybucie można też umieścić jedną lub więcej z poniższych informacji:
 
 -   Wartość domyślna
 -   Metadane atrybutu, takie jak metadane wskazujące, czy atrybut można wyszukiwać, modyfikować lub sortować
 
 ## <a name="attribute-group"></a>Grupa atrybutów
-  [![createandmanageattribute-10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) po zdefiniowaniu atrybuty mogą być pogrupowane w grupy atrybutów. Grupy atrybutów zawierają grupy odnoszące się do poszczególnych atrybutów i można je przypisać do kategorii lub kanałów sieci sprzedaży.
+  [![createandmanageattribute-10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) Po zdefiniowaniu atrybutów można je podzielić na grupy atrybutów. Grupy atrybutów zawierają grupy odnoszące się do poszczególnych atrybutów i można je przypisać do kategorii lub kanałów sieci sprzedaży.
 
 ## <a name="assigning-attribute-groups-to-retail-categories"></a>Przypisywanie grup atrybutów do kategorii sieci sprzedaży
-  [![createandmanageattribute-12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) jednej lub kilku grup atrybut może być skojarzony z węzły kategorii w hierarchii kategorii produktów sieci sprzedaży. Gdy produkty zostały skategoryzowane, dziedziczą atrybuty, które są włączone do grup atrybutów.
+  [![createandmanageattribute-12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) Można skojarzyć jedną lub kilka grup atrybutów z węzłami hierarchii kategorii produktów sieci sprzedaży. Gdy produkty zostały skategoryzowane, dziedziczą atrybuty, które są włączone do grup atrybutów.
 
 ## <a name="assigning-attribute-groups-to-retail-stores"></a>Przypisywanie grup atrybutów do kategorii sklepów sieci sprzedaży
-  [![createandmanageattribute-13-1024 x 576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) jeden lub więcej grup atrybutów mogą być kojarzone z jednego lub więcej sklepów detalicznych w hierarchii sklepów detalicznych. Gdy produkty zostały uwzględnione w określonych sklepach sieci sprzedaży, dziedziczą atrybuty, które są włączone do grup atrybutów.
+  [![createandmanageattribute-13-1024x576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) Można skojarzyć jedną lub kilka grup atrybutów z co najmniej jednym sklepem sieci sprzedaży w hierarchii sklepów sieci sprzedaży. Gdy produkty zostały uwzględnione w określonych sklepach sieci sprzedaży, dziedziczą atrybuty, które są włączone do grup atrybutów.
 
 ## <a name="overriding-attribute-values"></a>Zastępowanie wartości atrybutów
 ### <a name="at-the-product-level"></a>Na poziomie produktu
 
-  [![createandmanageattribute-14-1024 x 576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) domyślne wartości atrybutów może być zastąpiona na poziomie produktu (to znaczy dla poszczególnych produktów).
+  [![createandmanageattribute-14-1024x576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) Wartości domyślne atrybutów można zastąpić na poziomie produktu (tzn. poszczególnych produktów).
 
 ### <a name="in-a-retail-catalog"></a>W katalogu sieci sprzedaży
 
-  [![createandmanageattribute 2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) wartości domyślne atrybutów można zastąpić dla poszczególnych produktów w określonych katalogów, które są kierowane do sprzedaży detalicznej szczególnych.
+  [![createandmanageattribute-2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) Dla poszczególnych produktów można zastąpić domyślne wartości atrybutów w określonych katalogach kierowanych do konkretnych kanałów sprzedaży detalicznej.
 
 ### <a name="at-the-retail-channel-level"></a>Na poziomie kanału sprzedaży detalicznej
 
-  [![createandmanageattribute 1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) wartości domyślne atrybutów można zastąpić dla poszczególnych produktów w określonych katalogów, które są kierowane do sprzedaży detalicznej szczególnych.
+  [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) Dla poszczególnych produktów można zastąpić domyślne wartości atrybutów w określonych katalogach kierowanych do konkretnych kanałów sprzedaży detalicznej.
 
 

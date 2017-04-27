@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configuration-rules"></a>Reguły konfiguracji
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera ogólne informacje o regułach konfiguracji. Reguły konfiguracji definiują relacje między towarami na liście składowej (BOM) dla produktów wykorzystujących technologię konfiguracji opartej na wymiarach.
 
 Reguły konfiguracji są dostępne podczas definiowania modeli konfiguracji opartych na wymiarach. Reguły konfiguracji są używane do wymuszania albo zakazywania kombinacji określonych towarów na liście składowej (BOM). Po utworzeniu BOM i przypisaniu odpowiednich towarów do odpowiednich grup konfiguracji, można zdefiniować jedną lub więcej reguł konfiguracji. Jeżeli dwa towary przynależą do siebie, można je ze sobą połączyć za pomocą operatora **Zaznacz**. Jeśli dwa towary wzajemnie się wykluczają, można je od siebie oddzielić za pomocą operatora **Odznacz**.  
@@ -42,5 +45,7 @@ Istniejące konfiguracje nie są objęte kolejnymi zmianami reguł konfiguracji.
 --------
 
 [Konfiguracja produktu oparta na wymiarach](dimension-based-product-configuration.md)
+
+
 
 

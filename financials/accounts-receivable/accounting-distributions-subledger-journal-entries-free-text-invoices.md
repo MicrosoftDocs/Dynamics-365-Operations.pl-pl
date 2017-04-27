@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Zasady podziału księgowań i zapisów w arkuszu księgi podrzędnej dla faktur niezależnych
 
+[!include[banner](../includes/banner.md)]
+
+
 Zasady podziału księgowań służą do określania sposobu księgowania kwot, takich jak przychody, podatki lub opłaty, na fakturze niezależnej. Każdy kwota, która musi zostać zaksięgowana w trakcie zapisu w arkuszu dla faktury niezależnej, będzie posiadać jedną lub więcej zasad podziału księgowań.
 
 <a name="accounting-distributions"></a>Zasady podziału księgowań
@@ -35,7 +38,7 @@ Zasady podziału księgowań służą do określania sposobu księgowania kwot, 
 
 Za pomocą następujących przycisków na stronie Faktura niezależna, możesz wyświetlać i ewentualnie zmienić zasady podziału księgowań dla faktury niezależnej.
 
--   **Rozdziel kwoty**— widok i zmień zasady podziału księgowań dla poszczególnych wierszy i wszystkie podrzędne wiersze takie jak podatków lub opłat. Można również wyświetlać i modyfikować zasady podziału księgowań dla wiersza podrzędnego bezpośrednio ze strony Transakcje podatkowe lub Transakcje opłat.
+-   **Rozdziel kwoty** — Wyświetlanie i modyfikowanie zasad podziału księgowań dla pojedynczego wiersza i wszystkich wierszy podrzędnych, takich jak podatki lub opłaty. Można również wyświetlać i modyfikować zasady podziału księgowań dla wiersza podrzędnego bezpośrednio ze strony Transakcje podatkowe lub Transakcje opłat.
     -   Zmienianie kwot nagłówka faktury niezależnej, takich jak opłaty lub kwoty zaokrąglenia.
     -   Zmienianie kwot wiersza faktury niezależnej.
 -   **Wyświetl dystrybucje** — Wyświetlanie zasad podziału księgowań dla wszystkich wierszy w dokumencie. Nie można zmienić zasad podziału księgowań w tym widoku.
@@ -132,5 +135,7 @@ Zasady podziału księgowań dla podatków można utworzyć dopiero po obliczeni
 
 ## <a name="subledger-journals-for-free-text-invoices"></a> Arkusze księgi podrzędnej dla faktur niezależnych
 Przed zaksięgowaniem faktury niezależnej, można wyświetlić pełny wpis księgowy faktury, który obejmuje obciążenia i uznania, aby zweryfikować, że faktura została zaksięgowana na właściwych kontach. Ten widok pełnego wpisu księgowania nazywa się arkuszem księgi podrzędnej. Jeżeli zapis w arkuszu księgi podrzędnej jest nieprawidłowy w podglądzie przed zapisaniem faktury niezależnej w arkuszu, nie można modyfikować zapisu w arkuszu księgi podrzędnej. Zamiast tego należy zmienić zasady podziału księgowań albo profil księgowania. Zasady podziału księgowań służą do definiowania jednej strony wpisu księgowania: debetu lub kredytu. Zapis księgowania transakcji przeciwstawnych w arkuszu księgi podrzędnej jest tworzony z profilów księgowania, takich jak konto odbiorca lub podatek.
+
+
 
 

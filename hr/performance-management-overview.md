@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="performance-management-overview"></a>Omówienie zarządzania wydajnością
 
+[!include[banner](includes/banner.md)]
+
+
 Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi. Z kolei menedżerowie mogą dostarczać informacje zwrotne i wskazówki pracownikom.  
 
 Jak pokazuje poniższy diagram, istnieją trzy strony, które pomagają zarządzać procesem:
@@ -34,7 +37,7 @@ Jak pokazuje poniższy diagram, istnieją trzy strony, które pomagają zarządz
 -   Cele
 -   Przegląd wydajności
 
-Na poniższym diagramie przedstawiono wzajemne powiązania podstawowych składników zarządzania wydajnością. [![Przegląd wydajności procesu](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+Na poniższym diagramie przedstawiono wzajemne powiązania podstawowych składników zarządzania wydajnością. [![Omówienie procesu zarządzania wydajnością](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Arkusz wydajności
 Przed rozpoczęciem swojej okresowej oceny pracowniczej często zbierasz informacje na temat działań lub zdarzeń, które przyczyniły się do Twojego sukcesu zawodowego w badanym okresie. Miejsce na dokumentowanie tych działań i zdarzeń jest arkusz wydajności. Ponadto możesz tworzyć przyszłe działania, które trzeba wykonać, aby zwiększyć szanse na osiągnięcie celu, spełnienie wymagań określonych w planu rozwoju lub dotrzymanie zobowiązania w kwestii wydajności. Arkusze wydajność nie są potrzebne do tworzenia celów ani przeglądów wydajności. 
@@ -132,7 +135,7 @@ Do kontroli zatwierdzania przeglądu można użyć przepływu pracy Przegląd pr
 Przepływ pracy Przegląd pracownika ma dwa elementy:
 
 1.  Zatwierdź przegląd. Dodaj ten element, aby kontrolować zmianę stanu z **W toku** na **Gotowe do przeglądu**. Zmień przypisanie, aby była używana hierarchia menedżerska, gdzie ustawienie Pracownik.poziom kierownika linii = 1.
-2.  Ostateczny przegląd. Dodaj ten element do sterowania zmiana statusu z **gotowe do recenzji** do **końcowej oceny**. Zmienić przypisanie, aby używać hierarchii menedżerskiej gdzie poziom manager Employee.line = 1, jeśli chcesz, aby Menedżer zatwierdzenie końcowej oceny. Jeżeli chcesz, aby zatwierdzenia dokonywał pracownik, zmień przypisanie na Użytkownik przepływu pracy. Jeżeli ostateczny przegląd mają zatwierdzać i menedżer, i pracownik, dodaj dwa kroki w przepływie pracy i dokonaj odpowiedniego przypisania w każdym kroku w kolejności, w jakiej ma się odbywać zatwierdzanie.
+2.  Ostateczny przegląd. Dodaj ten element, aby kontrolować zmianę stanu z **Gotowe do przeglądu** na **Ostateczny przegląd**. Jeżeli menedżer ma zatwierdzać ostateczny przegląd, zmień przypisanie, aby była używana hierarchia menedżerska, gdzie ustawienie Pracownik.poziom kierownika linii = 1. Jeżeli chcesz, aby zatwierdzenia dokonywał pracownik, zmień przypisanie na Użytkownik przepływu pracy. Jeżeli ostateczny przegląd mają zatwierdzać i menedżer, i pracownik, dodaj dwa kroki w przepływie pracy i dokonaj odpowiedniego przypisania w każdym kroku w kolejności, w jakiej ma się odbywać zatwierdzanie.
 
 ## <a name="setup"></a>Konfiguracja
 Istnieją trzy strony, które pomagają skonfigurować informacje wymagane w celu wykonania procesu oceny wydajności: **Miary**, **Typy źródeł arkusza wydajności** i **Typy przeglądów**.
@@ -148,5 +151,7 @@ Typy źródeł arkusza wydajności opisują, skąd pochodzą arkusze wydajności
 ### <a name="review-types"></a>Typy przeglądów
 
 Typy przeglądów wydajności pomagają sterować działaniem przeglądu. Można włączyć lub wyłączyć przepływ pracy dla przeglądu. Jeżeli przegląd nie używa przepływu pracy, można zdefiniować domyślny stan, który będzie używany podczas tworzenia przeglądu. Można także określić, czy przegląd musi zostać podpisany przez pracownika i/lub menedżera.
+
+
 
 

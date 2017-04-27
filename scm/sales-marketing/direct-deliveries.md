@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="direct-deliveries"></a>Dostawy bezpośrednie
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje dotyczące dostaw bezpośrednich. Dostawy bezpośrednie to dostawy wysyłane bezpośrednio od dostawcy do odbiorców końcowych.
 
 Bezpośrednie dostawy pozwalają zaoszczędzić czas i koszty magazynowania, ponieważ produktów nie przechowuje się we własnym magazynie przed wysłaniem do odbiorcy.  
@@ -49,5 +52,7 @@ W przypadku usuwania wiersza zamówienia sprzedaży o typie **Dostawa bezpośred
 
 ## <a name="warehouse"></a>Magazyn
 Podczas tworzenia dostawy bezpośredniej, sprzedawane towary nigdy faktycznie nie docierają do magazynu. Niemniej jednak nadal należy określić magazyn w wierszu zamówienia sprzedaży. Podobnie wymagane pobrania mogą być określone w grupie modeli towaru dla towaru. Jednakże ponieważ towary nigdy faktycznie nie docierają do magazynu, wymagania te są ignorowane, gdy zamówienie sprzedaży jest dostawą bezpośrednią.
+
+
 
 

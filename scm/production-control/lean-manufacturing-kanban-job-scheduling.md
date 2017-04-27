@@ -1,5 +1,5 @@
 ---
-title: Zadania w systemie Kanban planowania dla lean manufacturing
+title: "Planowanie zadań w systemie Kanban dla produkcji oszczędnej"
 description: "Ten artykuł zawiera informacje o kontroli wizualnej nad planowaniem zadań Kanban oraz o różnych sposobach planowania zadań w systemie Kanban."
 author: YuyuScheller
 manager: AnnBe
@@ -26,14 +26,14 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Zadania w systemie Kanban planowania dla lean manufacturing
+# <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Planowanie zadań w systemie Kanban dla produkcji oszczędnej
 
 Ten artykuł zawiera informacje o kontroli wizualnej nad planowaniem zadań Kanban oraz o różnych sposobach planowania zadań w systemie Kanban.  
 
 Strona **Planowanie zadań Kanban** daje wizualną kontrolę nad harmonogramami komórek produkcji oszczędnej. Umożliwia wyświetlenie wszystkich zadań w systemie Kanban i oferuje wiele możliwości filtrowania. Z tej strony można przejść do wszystkich innych stron, które odnoszą się do konfiguracji i wykonania karty Kanban.
 
 ## <a name="automatic-scheduling-of-kanban-jobs"></a>Automatyczne planowanie zadań w systemie Kanban
-Planowanie może być uruchomione automatycznie po ustawieniu **automatyczne planowanie ilość** parametr w regule kanban. Jeśli ustawisz **automatyczne planowanie ilość** do **1**, każde zadanie kanban jest planowane natychmiast po jej utworzeniu. Efektem jest seria operacji „first pull, first serve”. Jeśli wartość parametru **Ilość w automatycznym planowaniu** jest większa niż 1, zadania Kanban są grupowane, zanim zostaną zaplanowane. Takie podejście pozwala ograniczyć rozmiar zadań Kanban poniżej rzeczywistego rozmiaru partii ekonomicznej. Na przykład rozmiar wsadu ekonomicznych dla określonego elementu (lub rodzina towarów) wynosi 30. Zamiast tworzenia kart Kanban, które ilości produktu, 30, można skonfigurować reguły kanban, tak, że ilość produktu 10 i ** automatyczne planowanie ilość ** wartość **3**. Choć harmonogram automatycznego planowania planuje zadania w systemie Kanban dla komórki roboczej tylko wtedy, gdy istnieją trzy nieplanowanych zadania, dla osoby planującej i kierownika hali produkcyjnej jest całkowicie jasne, że dwa nieplanowane zadania mogą oczekiwać na wykonanie. Osoba planująca lub kierownik hali produkcyjnej mogą następnie przenieść te dwa zadania do produkcji, planując je ręczne lub tworząc dodatkowe karty Kanban.
+Planowanie może być uruchomione automatycznie, jeśli parametr **Ilość w automatycznym planowaniu** jest ustawiony w regule Kanban. Po ustawieniu parametru **Ilość w automatycznym planowaniu** na **1** zadania w systemie Kanban są planowane natychmiast po utworzeniu. Efektem jest seria operacji „first pull, first serve”. Jeśli wartość parametru **Ilość w automatycznym planowaniu** jest większa niż 1, zadania Kanban są grupowane, zanim zostaną zaplanowane. Takie podejście pozwala ograniczyć rozmiar zadań Kanban poniżej rzeczywistego rozmiaru partii ekonomicznej. Na przykład rozmiar partii ekonomicznej dla określonego towaru (lub rodziny towarów) wynosi 30. Zamiast tworzyć karty Kanban z ilością produktu 30, można skonfigurować regułę Kanban z ilością produktu 10 i wartością **3** dla parametru **Ilość w automatycznym planowaniu**. Choć harmonogram automatycznego planowania planuje zadania w systemie Kanban dla komórki roboczej tylko wtedy, gdy istnieją trzy nieplanowanych zadania, dla osoby planującej i kierownika hali produkcyjnej jest całkowicie jasne, że dwa nieplanowane zadania mogą oczekiwać na wykonanie. Osoba planująca lub kierownik hali produkcyjnej mogą następnie przenieść te dwa zadania do produkcji, planując je ręczne lub tworząc dodatkowe karty Kanban.
 
 ## <a name="manual-scheduling"></a>Planowanie ręczne
 Do obsługi ręcznego planowania system Microsoft Dynamics AX 2012 oferuje tablicę planowania kanban. Ręczne planowanie może być połączone z planowaniem automatycznym. Tablica planowania kanban pozwala planować zadania, usuwać je z harmonogramu, zmieniać ich kolejność lub przesuwać między okresami. Zadania oparte na regule kanban, w których wartość **Automatyczne planowanie** jest większa od **0** mogą być ręcznie usuwane z harmonogramu. Zadania te zostaną jednak ponownie zaplanowane w następnym zdarzeniu planowania automatycznego (tj. podczas tworzenia nowej karty kanban). Następujące opcje są dostępne do planowania ręcznego:
@@ -44,10 +44,10 @@ Do obsługi ręcznego planowania system Microsoft Dynamics AX 2012 oferuje tabli
 -   **Wstecz** przenosi wybrane zaplanowane zadania w przód w sekwencji w okresie.
 -   **Poprzedni okres** przenosi wybrane zaplanowane zadania na początek lub koniec poprzedniego okresu.
 -   **Następny okres** przenosi wybrane zaplanowane zadania na początek lub koniec następnego okresu.
--   **Plan**&gt;**Przywróć stan zadania** umożliwia usunięcia zaplanowanego uruchomienia zaplanowanego zadania.
+-   **Plan** &gt; **Przywróć stan zadania** umożliwia usunięcie zadania z harmonogramu.
 
 ## <a name="lean-scheduling-groups"></a>Grupy planowania produkcji oszczędnej
-Każdy kolor odpowiada grupie planowania produkcji oszczędnej. Grupy planowania produkcji oszczędnej mogą być swobodnie definiowana jako ogólne grupy lub grupy należące do jednej komórki roboczej. Towary i wymiary mogą być swobodnie przypisywane do grupy planowania. Na przykład w komórce Malowanie grupa planowania może odpowiadać kolorowi produktu. W pracy opartej na konkretnych wymaganiach narzędziowych, towary mogą być pogrupowane według wymaganego narzędzia, a komórka robocza pakowania może grupować towary według szablonu opakowań. Stosowanie kolorów w grupach planowania produkcji oszczędnej nie jest wymagane, ale zalecane. Poprawia wgląd w stan planu. Na przykład jest bardzo łatwo zobaczyć, które kolory są produkowane na dzień, a można powiedzieć na pierwszy rzut oka jak można zoptymalizować tej pracy.
+Każdy kolor odpowiada grupie planowania produkcji oszczędnej. Grupy planowania produkcji oszczędnej mogą być swobodnie definiowana jako ogólne grupy lub grupy należące do jednej komórki roboczej. Towary i wymiary mogą być swobodnie przypisywane do grupy planowania. Na przykład w komórce Malowanie grupa planowania może odpowiadać kolorowi produktu. W pracy opartej na konkretnych wymaganiach narzędziowych, towary mogą być pogrupowane według wymaganego narzędzia, a komórka robocza pakowania może grupować towary według szablonu opakowań. Stosowanie kolorów w grupach planowania produkcji oszczędnej nie jest wymagane, ale zalecane. Kolory poprawiają widoczność stanów planu. Można na przykład łatwo zobaczy, które kolory są produkowane którego dnia, i szybko ustalić sposób ewentualnej optymalizacji tej pracy.
 
 ## <a name="work-cell-capacity-and-period-capacity"></a>Zdolności produkcyjne dla komórki roboczej i okresu
 Zdolności produkcyjne komórki roboczej produkcji oszczędnej są zawsze współbieżne. Innymi słowy w komórce roboczej może być aktywnych wiele zadań w tym samym czasie. Zdolności produkcyjne mogą być śledzone w dwóch trybach: produktywność i godziny.

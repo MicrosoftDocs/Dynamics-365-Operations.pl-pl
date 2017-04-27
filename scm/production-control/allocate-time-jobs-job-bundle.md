@@ -1,5 +1,5 @@
 ---
-title: "Alokacja czasu do zadań w pakiecie zadań"
+title: "Alokowanie czasu do zadań w pakiecie zadań"
 description: "W module Uruchomienie produkcji można łączyć zadania w pakiety. Następnie można uruchomić wiele zadań jednocześnie na stronie Lista zadań."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Alokacja czasu do zadań w pakiecie zadań
+# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Alokowanie czasu do zadań w pakiecie zadań
+
+[!include[banner](../includes/banner.md)]
+
 
 W module Uruchomienie produkcji można łączyć zadania w pakiety. Następnie można uruchomić wiele zadań jednocześnie na stronie Lista zadań.
 
@@ -107,5 +110,7 @@ Załóżmy, że masz trzy zadania wykonywane przez pracownika, który ma stawkę
 | Zadanie 3 | (3,33 ÷ 5) × 12,00 USD                 | 8,00 USD                | 5 godzin        | 40,00 USD         |
 
 Skorygowany koszt na godzinę i czas zadania są księgowane w arkuszu produkcji. **Uwaga:** zaznaczenie opcji **Kategoria kosztu** na karcie **Ogólne** na stronie **Ustawienia domyślne zlecenia produkcyjnego** sprawia, że rzeczywisty czas dla każdego zadania jest przenoszony do arkusza produkcji, w którym koszt jest stosowany do kategorii kosztu danego zadania.
+
+
 
 

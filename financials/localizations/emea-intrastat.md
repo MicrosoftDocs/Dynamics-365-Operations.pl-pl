@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="intrastat"></a>Intrastat
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o sprawozdawczości Intrastat o handlu towarami i — w niektórych przypadkach — usługami między krajami/regionami Unii Europejskiej (UE). Omówiono proces sprawozdawczości oraz opisano wymagane ustawienia i warunki wstępne.
 
 Intrastat to system gromadzenia i generowania danych statystycznych na temat handlu towarami między krajami/regionami Unii Europejskiej (UE). Raport Intrastat jest wymagany w przypadku każdego produktu przekraczającego granicę innego kraju/regionu UE. W niektórych krajach/regionach obowiązek tworzenia raportów Intrastat dotyczy również usług. Na potrzeby raportów Intrastat mogą być gromadzone obowiązkowe i opcjonalne elementy. Wymagane są następujące elementy: identyfikator VAT podmiotu odpowiedzialnego za dostarczenie informacji, okres referencyjny, przepływ (przyjęcie lub wysyłka), ośmiocyfrowy kod towaru, kraj członkowski (kraj wysyłki i kraj docelowy), wartość towaru, ilość towaru (waga netto i jednostka dodatkowa) oraz charakter transakcji. Kraje/regiony mogą również gromadzić opcjonalne informacje w różnych warunkach. Do informacji opcjonalnych należą: kraj/region pochodzenia towaru, warunki dostawy, środek transportu, bardziej szczegółowy kod towaru niż 8-cyfrowy, kraj pochodzenia dla wysyłki i kraj pochodzenia dla odbioru, procedura statystyczna, wartość statystyczna, opis towaru oraz port/lotnisko załadunku/rozładunku.
@@ -34,24 +37,24 @@ Intrastat to system gromadzenia i generowania danych statystycznych na temat han
 ## <a name="overview-of-the-intrastat-reporting-process"></a>Omówienie procedury raportowania Intrastat
 W poniższych sekcjach opisano cały przebieg informacji używanych na potrzeby raportowania Intrastat.
 
-### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Wprowadź transakcji, która przekracza granicę innego kraju/regionu UE
+### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Podanie transakcji przekraczającej granicę innego kraju/regionu UE
 
-Faktura dla odbiorcy, faktura niezależna, faktura zakupu, faktura projektu, dokument dostawy dla odbiorcy, dokument przyjęcia produktów od dostawcy lub zamówienie przeniesienia są przenoszone do arkusza Intrastat tyko wtedy, gdy kraj/region wysyłki lub dostawy znajduje się w **UE**. Ta funkcja zostało rozszerzone usługi Microsoft Dynamics 365 dla wersji operacji 1611 i pozwala określić adresy przewozowe dla transakcji wewnątrz Wspólnoty. Jeżeli adres przewozowe różni się z dostawców firmy adres (lub adres firmy odbiorcy dla zamówienia zwrotu) raportowania Intrastat będzie współpracować z tych informacji. Podczas tworzenia zamówienia sprzedaży, faktury niezależnej, zamówienia zakupu, faktury od dostawcy, faktury projektu lub zamówienia przeniesienia, niektóre pola, które są powiązane z handlem zagranicznym, mają wartości domyślne w nagłówku dokumentu lub w wierszu. Domyślny kod transakcji jest pobierany z odpowiedniego pola na stronie **Parametry handlu zagranicznego**. Domyślny kod towaru, kraj/region pochodzenia i województwo pochodzenia są pobierane z pozycji. Można zmienić domyślne wartości i wprowadzić inne dane związane z handlem zagranicznym, takie jak procedura statystyczna, środek transportu i port.
+Faktura dla odbiorcy, faktura niezależna, faktura zakupu, faktura projektu, dokument dostawy dla odbiorcy, dokument przyjęcia produktów od dostawcy lub zamówienie przeniesienia są przenoszone do arkusza Intrastat tyko wtedy, gdy kraj/region wysyłki lub dostawy znajduje się w **UE**. Ta funkcja została rozszerzona w programie Microsoft Dynamics 365 for Operations w wersji 1611 i teraz pozwala określać adresy załadunku dla transakcji wewnątrzwspólnotowych. Jeżeli adres załadunku różni się od adresu służbowego dostawcy (lub adres służbowego odbiorcy w zamówieniu zwrotu), funkcja raportowania Intrastat użyje tych informacji. Podczas tworzenia zamówienia sprzedaży, faktury niezależnej, zamówienia zakupu, faktury od dostawcy, faktury projektu lub zamówienia przeniesienia, niektóre pola, które są powiązane z handlem zagranicznym, mają wartości domyślne w nagłówku dokumentu lub w wierszu. Domyślny kod transakcji jest pobierany z odpowiedniego pola na stronie **Parametry handlu zagranicznego**. Domyślny kod towaru, kraj/region pochodzenia i województwo pochodzenia są pobierane z pozycji. Można zmienić domyślne wartości i wprowadzić inne dane związane z handlem zagranicznym, takie jak procedura statystyczna, środek transportu i port.
 
-### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. Użyj dziennika Intrastat do generowania informacji dotyczących handlu między krajów/regionów UE
+### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. Używanie arkusza Intrastat do generowania i raportowania informacji dotyczących handlu między krajami/regionami Unii Europejskiej (UE)
 
 Na potrzeby statystyczne co miesiąc generuje się dane dotyczące handlu między krajami/regionami Unii Europejskiej. Można przenieść transakcje z faktury niezależnej, faktury dla odbiorcy, dokumentu dostawy, faktury od dostawcy, dokumentu dostawy dostawcy, faktury projektu lub zamówienia przeniesienia na podstawie kryteriów transferu ustawionych na stronie **Parametry handlu zagranicznego**. Można również ręcznie wprowadzić transakcje. W razie potrzeby można ręcznie zaktualizować przeniesione transakcje w arkuszu Intrastat. W określonych warunkach, które są ustawione na stronie **Kompresja Intrastat**, można kompresować transakcje w arkuszu Intrastat. W niektórych krajach/regionach można stosować niewielki próg wartości transakcji. Następnie transakcje poniżej tego progu można zgłaszać pod określonym kodem towaru. Kod towaru można zaktualizować w odpowiednich wierszach arkusza Intrastat, na podstawie ustawienia **dolnego limitu** na stronie **Parametry handlu zagranicznego**. Można także skompresować te transakcje na podstawie ustawienia **kompresji Intrastat**. Można sprawdzić poprawność transakcji w arkuszu Intrastat na podstawie ustawienia **Sprawdzenie ustawień** na stronie **Parametry handlu zagranicznego**. Można sprawdzić kompletność informacji w następujących polach: kraj/region, województwo, waga, kod towaru, kod transakcji, dodatkowe jednostki, port, pochodzenie, warunki dostawy, metody transportu i numer identyfikacji podatkowej. Transakcje niekompletne zostaną oznaczone jako nieprawidłowe.
 
-### <a name="3-use-the-intrastat-journal-to-report-information-about-trade-among-eu-countriesregions"></a>3. Użyj dziennika Intrastat na przekazywanie informacji dotyczących handlu między krajów/regionów UE
+### <a name="3-use-the-intrastat-journal-to-report-information-about-trade-among-eu-countriesregions"></a>3. Używanie arkusza Intrastat do zgłaszanie informacji dotyczących handlu między krajami/regionami Unii Europejskiej (UE)
 
-Na potrzeby statystyczne co miesiąc generuje się dane dotyczące handlu między krajami/regionami Unii Europejskiej. Na podstawie ustawienia **Mapowanie formatu raportów** na stronie **Parametry handlu zagranicznego** można wydrukować raport Intrastat. Można również wygenerować plik elektroniczny na podstawie ustawienia **Mapowanie formatu plików** na stronie **Parametry handlu zagranicznego**. Aby uzyskać więcej informacji o systemie Intrastat raportowania, w tym wymagania wstępne, zobacz nagrania zadania raportowania Intrastat:
+Na potrzeby statystyczne co miesiąc generuje się dane dotyczące handlu między krajami/regionami Unii Europejskiej. Na podstawie ustawienia **Mapowanie formatu raportów** na stronie **Parametry handlu zagranicznego** można wydrukować raport Intrastat. Można również wygenerować plik elektroniczny na podstawie ustawienia **Mapowanie formatu plików** na stronie **Parametry handlu zagranicznego**. Aby dowiedzieć się więcej o raportowaniu Intrastat, w tym o warunkach wstępnych, obejrzyj nagrania zadań dotyczące raportowania Intrastat:
 
--   Generowanie deklaracji Intrastat w Unii Europejskiej,
--   Przeniesienie transakcji Intrastat
--   Określanie adresu przewozowe dla transakcji wewnątrz Wspólnoty.
+-   Generowanie unijnej deklaracji Intrastat
+-   Przesyłanie transakcji do systemu Intrastat
+-   Określanie adresu załadunku dla transakcji wewnątrzwspólnotowej
 
 ## <a name="prerequisites"></a>Wymagania wstępne
-Poniższa lista zawiera wymagania wstępne dotyczące raportowania Intrastat.
+W następującej tabeli są podane wymagania wstępne dla raportowania Intrastat.
 
 <table>
 <colgroup>
@@ -235,5 +238,7 @@ Użyj strony **Parametry handlu zagranicznego**, aby skonfigurować parametry w 
 </table>
 
  
+
+
 
 

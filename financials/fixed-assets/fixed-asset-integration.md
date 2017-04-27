@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-assets-integration"></a>Integracja środków trwałych
 
+[!include[banner](../includes/banner.md)]
+
+
 Środki trwałe mogą być zintegrowane z modułami Księga główna, Zarządzanie zapasami, Rozrachunki z odbiorcami i Rozrachunki z dostawcami. Istnieje również możliwość takiego skonfigurowania modułu Środki trwałe, aby był on zintegrowany z zamówieniami zakupu.
 
 <a name="general-ledger"></a>Księga główna
@@ -82,7 +85,7 @@ Integracja dla każdego wiersza zamówienia jest uaktywniana na karcie **Środki
 ## <a name="project-management-and-accounting"></a>Zarządzanie projektami i ich księgowanie
 Projekt można skojarzyć ze środkiem trwałym, na który ten projekt ma wpływ. Ponadto poszczególne fazy, zadania lub podprojekty można skojarzyć z innymi środkami trwałymi. Jeden środek trwały można skojarzyć z każdym rekordem projektu. Skojarzenie można utworzyć w momencie wprowadzania numeru środka trwałego w polu **Numer środka trwałego** na stronie **Projekty**. Typem projektu musi być **Wewnętrzny** lub **Projekt kosztów**. 
 
-Można również użyć strony **Projekty** w celu wyświetlenia szczegółów dotyczących składników aktywów skojarzonych z projektami. Aby wyświetlić rekord środka trwałego, na skróconej karcie **Ustawienia** kliknij łącze tego składnika, co spowoduje otwarcie strony **Środki trwałe**. Następnie kliknij przycisk **projekty**&gt;**wszystkie projekty** do przeglądania projektów, które są skojarzone z środkiem trwałym. 
+Można również użyć strony **Projekty** w celu wyświetlenia szczegółów dotyczących składników aktywów skojarzonych z projektami. Aby wyświetlić rekord środka trwałego, na skróconej karcie **Ustawienia** kliknij łącze tego składnika, co spowoduje otwarcie strony **Środki trwałe**. Potem kliknij kolejno opcje **Projekty** &gt; **Wszystkie projekty**, aby wyświetlić projekty skojarzone ze środkiem trwałym. 
 
 Zazwyczaj środki trwałe kojarzy się z projektami, gdy projekty są związane z pracą, konserwacją lub udoskonalaniem środka trwałego. Po ukończeniu projektu nie jest tworzone automatycznie żadne zwiększenie wartości środka trwałego. W związku z tym jeśli jest wymagane zwiększenie wartości, należy je utworzyć ręcznie. 
 
@@ -90,6 +93,8 @@ Aby usunąć skojarzenie między projektem a środkiem trwałym, wyczyść pole 
 
 Istnieje również możliwość oznaczenia tworzonego lub produkowanego środka trwałego jako elementu projektu szacowania. Na zakończenie projektu szacowanego można automatycznie zaksięgować transakcję nabycia środka trwałego.
 
-Aby uzyskać więcej informacji, zobacz [nabycia aktywów za pośrednictwem zamówień](acquire-assets-procurement.md)
+Aby uzyskać więcej informacji, zobacz [Nabywanie środków trwałych za pomocą zaopatrzenia](acquire-assets-procurement.md)
+
+
 
 

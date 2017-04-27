@@ -1,6 +1,6 @@
 ---
-title: "Aktualizacja sposobu wyświetlania kwot w raportach i dokumenty"
-description: "Ten temat zawiera informacje dotyczące aktualizacji, sposobu wyświetlania kwot w raportach i innych dokumentach dla Estonii, Łotwy, Litwy, Polski, Republiki Czeskiej, Węgier i Rosji."
+title: "Aktualizowanie sposobu wyświetlania kwot w raportach i dokumentach"
+description: "Ten temat zawiera informacje dotyczące aktualizacji sposobu wyświetlania kwot w raportach i innych dokumentach dla Estonii, Łotwy, Litwy, Polski, Czech, Węgier i Rosji."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,32 +24,37 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="update-how-amounts-are-displayed-on-reports-and-documents"></a>Aktualizacja sposobu wyświetlania kwot w raportach i dokumenty
+# <a name="update-how-amounts-are-displayed-on-reports-and-documents"></a>Aktualizowanie sposobu wyświetlania kwot w raportach i dokumentach
 
-Ten temat zawiera informacje dotyczące aktualizacji, sposobu wyświetlania kwot w raportach i innych dokumentach dla Estonii, Łotwy, Litwy, Polski, Republiki Czeskiej, Węgier i Rosji.
+[!include[banner](../includes/banner.md)]
 
-Dla osób prawnych w Estonii, Łotwy, Litwy, Polski, Republiki Czeskiej, Węgier i Rosji można skonfigurować pełne nazwy i krótkie nazwy jednostek walutowych i podjednostek. Tych nazw może służyć do przekształcania, jak kwoty są reprezentowane na dokumenty i raporty. Na przykład: ilość **LTL 100.20** mogą być wyświetlane jako **100 centów 20 lit**.
 
-## <a name="set-up-full-and-short-names-for-currency-units-and-subunits"></a>Ustawianie długich i krótkich nazw jednostek walutowych i podjednostek
-Aby skonfigurować długich i krótkich nazw jednostek waluty i podjednostek dla języka, wykonaj następujące kroki:
+Ten temat zawiera informacje dotyczące aktualizacji sposobu wyświetlania kwot w raportach i innych dokumentach dla Estonii, Łotwy, Litwy, Polski, Czech, Węgier i Rosji.
 
-1.  Otwórz **walut** strony.
+Dla firm w Estonii, na Łotwie, Litwie, w Polsce, Czechach, na Węgrzech i w Rosji można skonfigurować pełne nazwy i krótkie nazwy jednostek i podjednostek waluty. Tych nazw można używać do zmiany sposobu reprezentowania kwot w dokumentach i raportach. Na przykład kwota **100,20 PLN** może być wyświetlana jako **100 złotych 20 groszy**.
+
+## <a name="set-up-full-and-short-names-for-currency-units-and-subunits"></a>Konfigurowanie długich i krótkich nazw jednostek i podjednostek walut
+Aby skonfigurować długie i krótkie nazwy jednostek i podjednostek walut dla języka, wykonaj następujące kroki:
+
+1.  Otwórz stronę **Waluty**.
 2.  Służy do wybrania waluty.
-3.  W okienku akcji kliknij polecenie **przypadek**.
-4.  Aby dodać pełną nazwę i krótka nazwa dla języka, kliknij przycisk **nowy** i wypełnij następujące pola.
+3.  W okienku akcji kliknij pozycję **Odchylenie**.
+4.  Aby dodać pełną nazwę i krótką nazwę dla języka, kliknij przycisk **Nowy** i wypełnij poniższe pola.
     |                                                           |                                                                                                                                                                                                                    |
     |-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | **Field**                                                 | **Description**                                                                                                                                                                                                    |
-    | **Language**                                              | Wybierz język dla bieżącego tekstu.                                                                                                                                                                          |
-    | **Mianownik l. (nazwa grupy pól jednostki)**       | Wprowadź pojedynczej walucie. Na przykład pojedynczej lit jest lit.                                                                                                                         |
-    | **Mianownik l. (nazwa grupy pól jednostki)**         | Wprowadź mnogiej waluty. Na przykład Podaj lity. **Uwaga:**: **Dopełniacz liczby pojedynczej** i **dopełniacz** pola są dostępne na podstawie języka wybranego w **języka** pole. |
-    | **Pole mianownik liczby pojedynczej (nazwa grupy pól części)** | Wprowadź pojedynczej podjednostki waluty.                                                                                                                                                            |
-    | **Mianownik l. (nazwa grupy pól części)**         | Wprowadź mnogiej podjednostki waluty.                                                                                                                                                              |
-    | **Nazwa skrótowa jednostek (krótka nazwa grupy pól)**       | Wprowadź kod ISO do identyfikowania waluty. Na przykład wpisz LTL w celu identyfikowania litów.                                                                                                                             |
-    | **Nazwa skrótowa części (krótka nazwa grupy pól)**      | Umożliwia wprowadzenie nazwy odmiany podjednostka. Na przykład Podaj centów.                                                                                                                                         |
-    | **Conjunction 'and' between units and parts**             | Zaznacz, aby wydrukować razem "i" między jednostkami waluty i części jednostki. Na przykład na fakturach lub w raportach, kwota dla LTL 100.20 pojawi się jako 100 lit a 20 centów.                      |
+    | **Pole**                                                 | **Opis**                                                                                                                                                                                                    |
+    | **Język**                                              | Wybierz język dla bieżącego tekstu.                                                                                                                                                                          |
+    | **Mianownik l. poj. (grupa pól Nazwa jednostek)**       | Wprowadź formę liczby pojedynczej dla waluty. Na przykład forma pojedyncza złotówki to „złoty”.                                                                                                                         |
+    | **Mianownik l. mn. (grupa pól Nazwa jednostek)**         | Wprowadź formę liczby mnogiej dla waluty. Na przykład wpisz „złotych”. **Uwaga:**: Pola **Dopełniacz liczby pojedynczej** i **Dopełniacz l. mn.** są dostępne zależnie od języka wybranego w polu **Język**. |
+    | **Mianownik l. poj. (grupa pól Nazwa części)** | Wprowadź formę liczby pojedynczej dla podjednostki waluty.                                                                                                                                                            |
+    | **Mianownik l. mn. (grupa pól Nazwa części)**         | Wprowadź formę liczby mnogiej dla podjednostki waluty.                                                                                                                                                              |
+    | **Nazwa skrótowa jednostek (grupa pól Krótka nazwa)**       | Wprowadź kod ISO identyfikujący walutę. Na przykład wpisz LTL w celu identyfikowania litów.                                                                                                                             |
+    | **Nazwa skrótowa części (grupa pól Krótka nazwa)**      | Wprowadź nazwę podjednostki waluty. Na przykład wpisz „groszy”.                                                                                                                                         |
+    | **Spójnik „i” między jednostkami i częściami**             | Zaznacz tę opcję, aby drukować spójnik„i” między jednostkami i częściami waluty. Na przykład w fakturach i raportach kwota 100,20 PLN będzie wyświetlana jako „100 złotych i 20 groszy”.                      |
 
-5.  Click **Save**.
+5.  Kliknij przycisk **Zapisz**.
+
+
 
 
 

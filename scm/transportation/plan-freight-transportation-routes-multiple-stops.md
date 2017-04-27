@@ -1,5 +1,5 @@
 ---
-title: Plan trasy przewozu frachtu z przystankami
+title: Planowanie tras przewozu frachtu z przystankami
 description: "W tym artykule opisano różne elementy używane do planowania tras transportu w systemie Microsoft Dynamics AX."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Plan trasy przewozu frachtu z przystankami
+# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Planowanie tras przewozu frachtu z przystankami
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule opisano różne elementy używane do planowania tras transportu w systemie Microsoft Dynamics AX.
 
@@ -48,5 +51,7 @@ Trasa z harmonogramem to wstępnie zdefiniowany plan trasy, który ma harmonogra
 
 ## <a name="load-building-workbench"></a>Pulpit kompilowania ładunku
 Do proponowania ładunków Pulpit kompilowania ładunku używa adresów odbiorców i dat dostaw z zamówień sprzedaży oraz dostępnych tras z harmonogramami. Domyślnie w pulpicie są wprowadzane wartości z trasy. Można jednak wybrać datę „od” wcześniejszą niż data „od” na trasie. Podczas proponowania ładunku są sprawdzane adres dostawy i data dostawy we wszystkich otwartych zamówieniach sprzedaży. Jeśli kod pocztowy adresu dostawy jest zgodny z kodem pocztowym centrum w planie trasy, a data dostawy mieści się w zakresie wybranym w kryteriach, zamówienie sprzedaży jest proponowane dla dostawy. Jest także uwzględniana pojemność określona w szablonie ładunku. Proponowany jest tylko jeden ładunek na raz. Jeśli masz zamówienie sprzedaży, które nie zostało uwzględnione, może być konieczne użycie innego szablonu ładunku (na przykład szablonu dla większej ciężarówki lub kontenera) albo zaplanowanie dodatkowej dostawy.
+
+
 
 

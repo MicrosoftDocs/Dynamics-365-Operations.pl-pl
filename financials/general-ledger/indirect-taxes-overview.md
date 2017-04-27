@@ -28,18 +28,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-overview"></a>Omówienie podatku
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie systemu podatków. Objaśniono w nim elementy konfiguracji podatku od sprzedaży oraz ich współdziałanie.
 
 <a name="overview"></a>Przegląd
 --------
 
-Platforma podatku obsługuje wiele rodzajów podatków pośrednich, takich jak podatek od sprzedaży, podatku od wartości dodanej (VAT), podatek towarów i usług (GST), opłat opartego na jednostkę i potrąconej zaliczki na podatek. Te podatki są obliczane i udokumentowane w trakcie transakcji zakupu i sprzedaży. Okresowo muszą być zgłaszane i wypłacane do organów podatkowych. 
+Struktura podatku obsługuje wiele różnych rodzajów podatków pośrednich, takich jak podatek, podatek od wartości dodanej (VAT), podatek od towarów i usług (GST), opłaty oparte na jednostce i potrącona zaliczka na podatek. Te podatki są obliczane i dokumentowane podczas transakcji zakupów i sprzedaży. Okresowo należy je zgłaszać i wpłacać do urzędu skarbowego. 
 
 Na poniższym diagramie przedstawiono jednostki podatku i jak są powiązane.
 
 [![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
-Dla którego konieczne jest uwzględnienie firmy co podatku musi być zdefiniowany kod podatku. Kody podatku zawierają stawki podatku oraz zasady obliczania dla każdego podatku. 
+Dla każdego podatku, z którego firma musi się rozliczać, należy zdefiniować kod. Kody podatku zawierają stawki podatku oraz zasady obliczania dla każdego podatku. 
 
 Każdy kod podatku musi być połączony z okresem rozliczania podatku. Okresy rozliczania podatku definiują interwały, w których należy zgłaszać i płacić podatek w urzędzie skarbowym. Każdy okres rozliczania podatku musi być przypisany do urzędu skarbowego. Urząd skarbowy to podmiot, w którym zgłasza się i opłaca podatek. Definiuje również układ raportu podatku. Urzędy skarbowe mogą być związane z kontami dostawców. 
 
@@ -69,26 +72,28 @@ Dla każdej transakcji (wierszy dokumentu sprzedaży/zakupu, arkuszy itd) należ
 Dla każdej transakcji można wyszukać obliczony podatek, otwierając stronę **transakcji podatku**. Można wyszukać podatek dla wiersza dokumentu lub całego dokumentu. W przypadku niektórych dokumentów (na przykład faktury od dostawcy i arkuszy finansowych) można skorygować podatek, jeśli oryginalny dokument wskazuje rozbieżne kwoty.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Rozliczanie i raportowanie podatku
-Podatek należy zgłosić i zapłacić w urzędzie skarbowym w ustalonych interwałach (miesięcznie, kwartalnie itd.). Microsoft Dynamics 365 dla operacji zawiera funkcje, które umożliwia rozliczenia podatku dla interwału i przesunięcie salda na konto rozliczeniowe podatku, jak określono w grup księgowania w księdze. Dostęp do tej funkcji na **rozliczenia i księgowanie podatku** strony. Należy określić okres rozliczania podatku, który powinien rozliczenia podatku dla. 
+Podatek należy zgłosić i zapłacić w urzędzie skarbowym w ustalonych interwałach (miesięcznie, kwartalnie itd.). Program Microsoft Dynamics 365 for Operations zawiera funkcje, które pozwalają rozliczać konto podatku za okres, a następnie ustawić saldo jako przeciwstawne na koncie rozliczania podatku, jak określono w grupach księgowania w księdze. Dostęp do tej funkcji można uzyskać na stronie **Rozlicz i zaksięguj podatek**. Należy określić okres rozliczania podatku, dla którego ma być rozliczony podatek. 
 
 Po zapłaceniu podatku saldo na koncie rozliczania podatku należy skorygować względem konta bankowego. Jeśli urząd skarbowy wskazany dla okresu rozliczania podatku jest związany z kontem dostawcy, saldo podatku jest księgowane jako otwarta faktura od dostawcy i może być uwzględnione w normalnej propozycji płatności.
 
 ## <a name="conditional-sales-tax"></a>Podatek warunkowy
-Podatek warunkowy jest podatek od sprzedaży, która jest wypłacana proporcjonalnie do rzeczywistej kwoty płaconej na fakturze. I odwrotnie standardowy podatek jest obliczany podczas fakturowania. Po zaksięgowaniu płatności, nie, po zaksięgowaniu faktury podatku warunkowego należy zwrócić do urzędu skarbowego. Po zaksięgowaniu faktury transakcji należy podać w raporcie księgi podatkowej. Jednak transakcja musi być wykluczony z raportu płatności podatku. 
+Podatek warunkowy to podatek płacony proporcjonalnie do rzeczywistej kwoty zapłaconej z tytułu faktury. Z kolei standardowy podatek jest obliczany podczas fakturowania. Podatki warunkowe należy wpłacać do urzędu skarbowego po zaksięgowaniu otrzymanej wpłaty, a nie faktury. Po zaksięgowaniu faktury transakcję należy wykazać w raporcie księgi podatkowej. Jednak transakcji nie można wykazać w raporcie zapłaty podatku. 
 
-Po zaznaczeniu pola wyboru podatku warunkowego w formularzu Parametry księgi głównej, bez podatku od sprzedaży można odliczyć uiszczenia faktury. Jest to wymóg prawny w niektórych krajach/regionach.
+Jeśli w formularzu Parametry księgi głównej zaznaczono pole wyboru Podatek warunkowy, podatek można odliczyć dopiero po zapłaceniu faktury. Jest to prawny wymóg w niektórych krajach/regionach.
 
 > [!NOTE]
-> Po zaznaczeniu pola wyboru podatku warunkowego, musi ustawiania kodów podatków i grup podatków, a także grupy księgowania można tworzyć, do obsługi funkcji. |
+> Po zaznaczeniu pola wyboru Podatek warunkowy musisz skonfigurować kody podatków i grupy podatków oraz utworzyć grupy księgowania w księdze. |
 
 ###  <a name="example"></a>Przykład
 
-Podatki są rozliczane co miesiąc. 15 czerwca Utwórz fakturę dla odbiorcy 10 000 plus podatek od sprzedaży.
--   Podatek wynosi 25 procent lub 2 500 zł.
--   Płatność faktury jest wynikiem 30 lipca.
+Rozliczasz podatki co miesiąc. 15 czerwca utworzono fakturę dla odbiorcy na kwotę 10 000 plus podatek.
+-   Podatek wynosi 25 procent, czyli 2,500.
+-   Fakturę należy zapłacić do 30 lipca.
 
-Zazwyczaj trzeba się osadowi zapłacić 2500 do urzędu skarbowego po zaksięgowaniu faktury w czerwcu, mimo że nie otrzymał płatności od odbiorcy. 
+Zazwyczaj trzeba rozliczyć i zapłacić podatek 2500 do urzędu skarbowego po zaksięgowaniu faktury w czerwcu, mimo że nie masz jeszcze wpłaty od odbiorcy. 
 
-Jednakże jeśli używasz podatku warunkowego są rozliczane z urzędem skarbowym po otrzymaniu płatności od odbiorcy 30 lipca.
+Jednakże jeśli używasz podatku warunkowego, rozliczasz się z urzędem skarbowym po otrzymaniu zapłaty od odbiorcy w dniu 30 lipca.
+
+
 
 

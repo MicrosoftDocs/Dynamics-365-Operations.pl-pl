@@ -1,6 +1,6 @@
 ---
 title: Kwestionariusze
-description: "Ten temat zawiera ogólne informacje o kwestionariusze i łącza do bardziej szczegółowych informacji. Kwestionariusz to zestaw pytań, które służą do gromadzenia informacji do różnych celów. Użytkownik może projektować, tworzyć, dystrybuować i wypełniać kwestionariusze, a następnie analizować wyniki."
+description: "Ten temat zawiera ogólne informacje o kwestionariuszach oraz łącza do bardziej szczegółowych informacji. Kwestionariusz to zestaw pytań, które służą do gromadzenia informacji do różnych celów. Użytkownik może projektować, tworzyć, dystrybuować i wypełniać kwestionariusze, a następnie analizować wyniki."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="questionnaires"></a>Kwestionariusze
 
-Ten temat zawiera ogólne informacje o kwestionariusze i łącza do bardziej szczegółowych informacji. Kwestionariusz to zestaw pytań, które służą do gromadzenia informacji do różnych celów. Użytkownik może projektować, tworzyć, dystrybuować i wypełniać kwestionariusze, a następnie analizować wyniki. 
+[!include[banner](includes/banner.md)]
 
-Można dostosować kwestionariusz dostosowanych do określonych wymagań przy użyciu różnych funkcji, które są dostępne w usłudze Microsoft Dynamics 365 dla operacji. Kwestionariuszy można używać do:
+
+Ten temat zawiera ogólne informacje o kwestionariuszach oraz łącza do bardziej szczegółowych informacji. Kwestionariusz to zestaw pytań, które służą do gromadzenia informacji do różnych celów. Użytkownik może projektować, tworzyć, dystrybuować i wypełniać kwestionariusze, a następnie analizować wyniki. 
+
+Można dostosować kwestionariusz do określonych potrzeb użytkownika przy użyciu różnych funkcji, które są dostępne w programie Microsoft Dynamics 365 for Operations. Kwestionariuszy można używać do:
 
 -   Testowania umiejętności zawodowych pracowników i kandydatów.
 -   Sprawdzania, czy kursanci przyswoili materiał szkolenia.
@@ -42,9 +45,9 @@ Poniższa tabela zawiera łącza do informacji o podstawowych zadaniach kwestion
 
 | Temat| opis|
 |------|------------|
-| [Design a questionnaire](design-questionnaires.md)  | Z tego artykułu dowiesz się, jak zaprojektować kwestionariusz. Proces projektowania obejmuje konfigurowanie wymagań wstępnych, odpowiedzi i pytań, a następnie łączenie ich w kwestionariusz. |
-| [Distribute and complete a questionnaire](distribute-questionnaires.md)  | Ten artykuł zawiera informacje o sposobach dystrybuowania kwestionariusza do respondentów i ich wypełniania.                                                                       |
-| [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md) | Ten artykuł zawiera informacje o sposobach przeglądania i oceniania wyników z wypełnionych kwestionariuszy.                                                                                        |
+| [Projektowanie kwestionariusza](design-questionnaires.md)  | Z tego artykułu dowiesz się, jak zaprojektować kwestionariusz. Proces projektowania obejmuje konfigurowanie wymagań wstępnych, odpowiedzi i pytań, a następnie łączenie ich w kwestionariusz. |
+| [Dystrybucja i wypełnianie kwestionariusza](distribute-questionnaires.md)  | Ten artykuł zawiera informacje o sposobach dystrybuowania kwestionariusza do respondentów i ich wypełniania.                                                                       |
+| [Wyświetlanie i ocena wyników kwestionariusza](evaluate-questionnaire-results.md) | Ten artykuł zawiera informacje o sposobach przeglądania i oceniania wyników z wypełnionych kwestionariuszy.                                                                                        |
 
 
 
@@ -55,6 +58,8 @@ Poniższa tabela zawiera łącza do informacji o podstawowych zadaniach kwestion
 
 [Dystrybucja i wypełnianie kwestionariuszy](distribute-questionnaires.md)
 
-[Przeglądanie i oceny wyników kwestionariuszy](evaluate-questionnaire-results.md)
+[Wyświetlanie i ocena wyników kwestionariuszy](evaluate-questionnaire-results.md)
+
+
 
 

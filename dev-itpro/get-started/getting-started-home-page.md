@@ -1,6 +1,6 @@
 ---
 title: "Gdzie zacząć"
-description: "Rozpocznij tutaj, aby na pokładzie szybko i Microsoft Dynamics 365 dla operacji interfejsu użytkownika."
+description: "Rozpocznij tutaj, aby się przygotować do pracy w programie Microsoft Dynamics 365 for Operations i poznać jego interfejs użytkownika."
 eauthor: sericks007
 manager: AnnBe
 ms.date: 2015-12-11 15 - 19 - 40
@@ -28,42 +28,42 @@ ms.lasthandoff: 03/30/2017
 
 # <a name="where-to-start"></a>Gdzie zacząć
 
-Rozpocznij tutaj, aby na pokładzie szybko i Microsoft Dynamics 365 dla operacji interfejsu użytkownika.
+Rozpocznij tutaj, aby się przygotować do pracy w programie Microsoft Dynamics 365 for Operations i poznać jego interfejs użytkownika.
 
-## <a name="onboarding"></a>Dołączanie
-Omówienie sposobu pracy z partnerem, aby uzyskać onboarded do Dynamics 365 dla operacji i jak używać Dynamics 365 dla operacji Lifecycle Services można znaleźć w następujących zasobach. 
+## <a name="onboarding"></a>Wdrażanie do pracy
+Poniższe zasoby zawierają omówienie, jak z pomocą partnera przygotować się do pracy w programie Dynamics 365 for Operations i jak korzystać z usługi Dynamics 365 for Operations Lifecycle Services. 
 
-- [FastTrack Microsoft Dynamics 365, omówienie](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
-- [Sign up for a subscription](../dev-tools/sign-up-preview-subscription.md) 
-- [Cyklu życia usługi (LCS) dla Microsoft Dynamics 365 dla klientów operacji](../lifecycle-services/lcs-works-lcs.md) 
-- [Jak uzyskać wersji lokalnej usługi Dynamics 365 dla operacji 2012 klientów, którzy kupili Microsoft Dynamics 365 dla operacji za pośrednictwem dostawcy usług w chmurze](../deployment/csp-download-customersource.md)
+- [Omówienie zasobów Microsoft FastTrack dla usługi Dynamics 365](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
+- [Tworzenie konta na potrzeby subskrypcji](../dev-tools/sign-up-preview-subscription.md) 
+- [Usługa Lifecycle Services (LCS) dla użytkowników programu Microsoft Dynamics 365 for Operations](../lifecycle-services/lcs-works-lcs.md) 
+- [Jak klienci, którzy kupili produkt Microsoft Dynamics 365 for Operations od dostawcy usług chmurowych, mogą uzyskać lokalną wersję programu Dynamics 365 for Operations 2012](../deployment/csp-download-customersource.md)
 
 ## <a name="user-interface"></a>Interfejs użytkownika
-Następujące zasoby zawierają informacje o 365 Dynamics podczas działania komputera użytkownika. 
--   [Nowości w usłudze Dynamics 365 dla operacji czynności użytkownika (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
+Następujące zasoby zawierają informacje o środowisku użytkownika w programie Dynamics 365 for Operations. 
+-   [Co nowego w środowisku użytkownika w programie Dynamics 365 for Operations (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
 -   [Personalizowanie funkcji użytkownika](/dynamics365/operations/get-started/personalize-user-experience)
 -   [Konfigurowanie i filtrowanie obszarów roboczych](/dynamics365/operations/get-started/configure-filter-workspaces)
--   [Navigation search](/dynamics365/operations/get-started/navigation-search)
+-   [Nawigacja z wyszukiwaniem](/dynamics365/operations/get-started/navigation-search)
 -   [Wyszukiwanie akcji](/dynamics365/operations/get-started/action-search)
--   [Keyboard shortcuts](/dynamics365/operations/get-started/shortcut-keys)
--   [Display pages side-by-side using the Open in New Window icon](/dynamics365/operations/get-started/display-pages-side-by-side)
--   [Advanced filtering and query options](/dynamics365/operations/get-started/advanced-filtering-query-options)
--   [Dynamics 365 dla operacji klienta — często zadawane pytania](/dynamics365/operations/get-started/client-faq)
--   [Change the banner or logo (Task guide)](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/)
+-   [Skróty klawiaturowe](/dynamics365/operations/get-started/shortcut-keys)
+-   [Równoległe wyświetlanie stron przy użyciu ikony Otwórz w nowym oknie](/dynamics365/operations/get-started/display-pages-side-by-side)
+-   [Opcje zaawansowane filtrowania i kwerendy](/dynamics365/operations/get-started/advanced-filtering-query-options)
+-   [Klient programu Dynamics 365 for Operations — często zadawane pytania](/dynamics365/operations/get-started/client-faq)
+-   [Zmienianie transparentu lub logo (przewodnik po zadaniu)](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/)
 
 ## <a name="help-system"></a>System pomocy
 Poniższe materiały zawierają omówienie systemu Pomocy i wyjaśnienie metod wyświetlania opisów pól.
 
--   [Getting started with Help](help-overview.md)
--   [Connect the Help system](help-connect.md)
+-   [Rozpoczęcie korzystania z Pomocy](help-overview.md)
+-   [Łączenie z systemem Pomocy](help-connect.md)
 -   [Wyświetlanie i eksportowanie opisów pól](/dynamics365/operations/get-started/view-export-field-descriptions)
--   [Pomoc Dynamics 365 dla operacji systemu (zestawienie)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
+-   [System Pomocy programu Dynamics 365 for Operations (arkusz informacyjny)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 
-### <a name="task-recordings-and-task-guides"></a>Nagrania zadań i zadań prowadnic
+### <a name="task-recordings-and-task-guides"></a>Nagrania zadań i przewodniki po zadaniach
 
-Program Task Recorder jest 365 Dynamics dla operacji narzędzie, które służy do rejestrowania działań, które należy podjąć w interfejsie użytkownika (UI). Po utworzeniu *nagrania zadania* są rejestrowane wszystkie zdarzenia odbywające się serwerze poprzez wykonywanie czynności w interfejsie użytkownika. Zdarzenia te obejmują dodawanie wartości, zmianę ustawień i usuwanie danych. *Przewodnik po zadaniu* to kontrolowana, sterowana, interaktywna prezentacja prowadząca przez kolejne kroki w nagraniu zadania. Przewodnik po zadaniu można otworzyć (lub *odtworzyć*) z systemu Pomocy.
+Rejestrator zadań to narzędzie w programie Microsoft Dynamics 365 for Operations, które służy do rejestrowania akcji wykonywanych w interfejsie użytkownika. Po utworzeniu *nagrania zadania* są rejestrowane wszystkie zdarzenia odbywające się serwerze poprzez wykonywanie czynności w interfejsie użytkownika. Zdarzenia te obejmują dodawanie wartości, zmianę ustawień i usuwanie danych. *Przewodnik po zadaniu* to kontrolowana, sterowana, interaktywna prezentacja prowadząca przez kolejne kroki w nagraniu zadania. Przewodnik po zadaniu można otworzyć (lub *odtworzyć*) z systemu Pomocy.
 -   [Łączenie z systemem pomocy](help-connect.md)
--   [Program Task Recorder w systemie Dynamics 365 dla operacji](../user-interface/task-recorder.md)
+-   [Rejestrator zadań w programie Dynamics 365 for Operations](../user-interface/task-recorder.md)
 -   [Tworzenie dokumentacji lub szkolenia przy użyciu nagrań zadań](../user-interface/task-recorder.md)
 -   [Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)
 
@@ -71,12 +71,12 @@ Program Task Recorder jest 365 Dynamics dla operacji narzędzie, które służy 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Tworzenie nowej biblioteki szkolenia dla usługi Dynamics 365 dla operacji w ramach cyklu życia usługi za pomocą programu Task Recorder (łącze zewnętrzne)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
+[Tworzenie nowych bibliotek szkoleń dla programu Dynamics 365 for Operations w portalu Lifecycle Services za pomocą Rejestratora zdań (łącze zewnętrzne)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
-[Nowe zadanie prowadzi (luty 2016)](new-task-guides-available-february-2016.md)
+[Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)
 
-[Nowe lub zaktualizowane zadania prowadzi (maja 2016)](new-updated-task-guides-available-may-2016.md)
+[Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)](new-updated-task-guides-available-may-2016.md)
 
-[Nowe lub zaktualizowane zadania prowadzi (listopad 2016)](new-task-guides-november-2016.md)
+[Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)](new-task-guides-november-2016.md)
 
 

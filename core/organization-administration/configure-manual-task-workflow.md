@@ -1,5 +1,5 @@
 ---
-title: "Skonfiguruj zadanie ręczne w przepływie pracy"
+title: "Konfigurowanie zadania ręcznego w przepływie pracy"
 description: "W tym temacie wyjaśniono sposób konfigurowania właściwości zadania ręcznego."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-manual-task-in-a-workflow"></a>Skonfiguruj zadanie ręczne w przepływie pracy
+# <a name="configure-a-manual-task-in-a-workflow"></a>Konfigurowanie zadania ręcznego w przepływie pracy
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym temacie wyjaśniono sposób konfigurowania właściwości zadania ręcznego.
 
@@ -124,10 +127,10 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisane to zadanie r
     </tr>
     <tr class="even">
     <td>Użytkownik</td>
-    <td>Szczególne usługi Microsoft Dynamics 365 dla użytkowników operacji</td>
+    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li><strong>Dostępni użytkownicy</strong> lista zawiera wszystkie 365 Dynamics dla użytkowników operacji. Wybierz użytkowników, którym chcesz przypisać zadanie, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz przypisać zadanie, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -145,8 +148,8 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisane to zadanie r
     <li>Na liście <strong>Typ kolejki</strong> zaznacz pozycję <strong>Warunkowe kolejki elementów roboczych</strong>.</li>
     <li>Na liście <strong>Nazwa kolejki</strong> zaznacz pozycję <strong>Kolejka warunkowa</strong>.</li>
     </ol></li>
-    </ol><ph id="t1">
-    </ph><strong>Uwaga:</strong> ta opcja jest używana dla tylko kilku procesów roboczych, takich jak zarządzanie sprawami.</td>
+    </ol>
+    <strong>Uwaga:</strong> Ta opcja jest używana tylko do niektórych przepływów pracy, takich jak Zarządzanie sprawami.</td>
     </tr>
     </tbody>
     </table>
@@ -214,10 +217,10 @@ Jeśli użytkownik nie wykona zadania ręcznego w wyznaczonym czasie, staje się
     </tr>
     <tr class="odd">
     <td>Użytkownik</td>
-    <td>Konkretne 365 Dynamics dla użytkowników operacji</td>
+    <td>Konkretni użytkownicy programu Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li><strong>Dostępni użytkownicy</strong> lista zawiera wszystkie 365 Dynamics dla użytkowników operacji. Wybierz użytkowników, do których chcesz eskalować zadanie, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, do których chcesz eskalować zadanie, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -234,7 +237,7 @@ Jeśli użytkownik nie wykona zadania ręcznego w wyznaczonym czasie, staje się
 6.  Jeśli użytkownicy wymienieni w ścieżce eskalacji nie wykonają zadania w wyznaczonym czasie, system wykona na nim operację. Aby określić akcję podejmowaną przez system, wybierz wiersz **Akcja**, a następnie na karcie **Zakończ działanie** wybierz akcję.
 
 ## <a name="specify-when-the-system-automatically-acts-on-the-task"></a>Określanie, kiedy system automatycznie wykonuje operację na zadaniu
-Można skonfigurować system, aby podejmował akcję wobec zadania ręcznego, jeśli są spełnione określone warunki. Na przykład zadanie wymaga, aby członek działu raportów z wydatków przeglądał paragony dostarczane razem z raportem z wydatków. Zgodnie z polityką firmy można wykonać to zadanie Jeśli całkowita kwota raportu z wydatków jest większa niż USD 100. W tym scenariuszu można tak skonfigurować system, aby automatycznie oznaczyć zadanie jako **wykonano** gdy całkowita kwota jest mniejsza niż 100. Wykonaj następujące kroki, aby określić, kiedy system podejmuje akcję wobec zadania ręcznego.
+Można skonfigurować system, aby podejmował akcję wobec zadania ręcznego, jeśli są spełnione określone warunki. Na przykład zadanie wymaga, aby członek działu raportów z wydatków przeglądał paragony dostarczane razem z raportem z wydatków. Zgodnie z zasadami firmy to zadanie trzeba wykonać, jeśli łączna kwota raportu z wydatków jest większa niż 100 USD. W tym scenariuszu można tak skonfigurować system, aby automatycznie oznaczał zadanie jako **Ukończone**, gdy łączna kwota jest mniejsza niż 100. Wykonaj następujące kroki, aby określić, kiedy system podejmuje akcję wobec zadania ręcznego.
 
 1.  W lewym okienku kliknij opcję **Akcje automatyczne**.
 2.  Zaznacz pole wyboru **Włącz akcje automatyczne**.
@@ -308,10 +311,10 @@ Możliwe jest wysyłanie do odpowiednich osób powiadomień w przypadku delegowa
     </tr>
     <tr class="odd">
     <td>Użytkownik</td>
-    <td>Konkretne 365 Dynamics dla użytkowników operacji</td>
+    <td>Konkretni użytkownicy programu Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li><strong>Dostępni użytkownicy</strong> lista zawiera wszystkie 365 Dynamics dla użytkowników operacji. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -325,8 +328,8 @@ Jeśli zadanie ręczne musi zostać ukończone w określonym czasie, wykonaj nas
 1.  W lewym okienku kliknij przycisk **Ustawienia zaawansowane**.
 2.  Zaznacz pole wyboru **Ustaw limit czasu dla elementu przepływu pracy**.
 3.  W polu **Czas trwania** określ, do kiedy zadanie ma zostać ukończone. Umożliwia wybranie jednej z następujących opcji:
-    -   **Godziny** — wprowadź liczbę godzin, które zadania muszą zostać ukończone w. Następnie wybierz kalendarz używany przez organizację i wprowadź informacje o tygodniu roboczym obowiązującym w organizacji.
-    -   **Dni** — wprowadź liczbę dni, w których zadanie musi być wypełnione. Następnie wybierz kalendarz używany przez organizację i wprowadź informacje o tygodniu roboczym obowiązującym w organizacji.
+    -   **Godziny** — Wprowadź liczbę godzin, w ciągu których należy wykonać zadanie. Następnie wybierz kalendarz używany przez organizację i wprowadź informacje o tygodniu roboczym obowiązującym w organizacji.
+    -   **Dni** — Wprowadź liczbę dni, w ciągu których należy wykonać zadanie. Następnie wybierz kalendarz używany przez organizację i wprowadź informacje o tygodniu roboczym obowiązującym w organizacji.
     -   **Tygodnie** — Wprowadź liczbę tygodni, w ciągu których należy wykonać zadanie.
     -   **Miesiące** — Wybierz dzień i tydzień, do kiedy należy wykonać zadanie. Może to być na przykład piątek trzeciego tygodnia w miesiącu.
     -   **Lata** — Wybierz dzień, tydzień i miesiąc, do kiedy należy wykonać zadanie. Może to być na przykład piątek trzeciego tygodnia grudnia.
@@ -343,6 +346,8 @@ Gdy zadanie ręczne zostanie przypisane użytkownikowi, musi on podjąć wobec n
 5.  Zaznacz pole wyboru **Deleguj**, jeśli użytkownik ma mieć możliwość przypisania zadania do innego użytkownika.
 6.  Zaznacz pole wyboru **Przypisz ponownie**, jeśli użytkownik ma mieć możliwość przypisania zadania innemu użytkownikowi w kolejce elementów roboczych.
 7.  Zaznacz pole wyboru **Zwolnienie**, jeśli użytkownik ma mieć możliwość przypisania zadania do kolejki elementów roboczych. Następnie inny użytkownik może wykonać to zadanie.
+
+
 
 
 

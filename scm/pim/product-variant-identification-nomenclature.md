@@ -1,6 +1,6 @@
 ---
-title: Nomenklatura numer produktu
-description: "W tym temacie opisano, jak można skonfigurować numer nomenklaturą produktów do zastąpienia ustalony format [produkt główny - Konfiguracja - rozmiar - Kolor — styl numeracji], z formatu docelowego, który zawiera numer głównego produktu, aktywne wymiary produktu i ograniczniki tekstu wybranych przez użytkownika. Można także skonstruować konwencję nazewnictwa do identyfikowania konfiguracji, które są tworzone przez konfiguratora produktów opartego na ograniczeniach. Te konwencje nazewnictwa mogą zawierać atrybuty wybrane przez użytkownika."
+title: "Nazewnictwo numerów produktu"
+description: "W tym temacie opisano, jak można skonfigurować konwencję nazewnictwa numerów produktu w celu zastąpienia ustalonego formatu [Numer produktu głównego - Konfiguracja - Rozmiar - Kolor - Styl] przy użyciu niestandardowego formatu, który zawiera numer produktu głównego, aktywne wymiary produktu i wybrane separatory tekstu. Można także skonstruować konwencję nazewnictwa do identyfikowania konfiguracji, które są tworzone przez konfiguratora produktów opartego na ograniczeniach. Te konwencje nazewnictwa mogą zawierać atrybuty wybrane przez użytkownika."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="product-number-nomenclature"></a>Nomenklatura numer produktu
+# <a name="product-number-nomenclature"></a>Nazewnictwo numerów produktu
 
-W tym temacie opisano, jak można skonfigurować numer nomenklaturą produktów do zastąpienia ustalony format [produkt główny - Konfiguracja - rozmiar - Kolor — styl numeracji], z formatu docelowego, który zawiera numer głównego produktu, aktywne wymiary produktu i ograniczniki tekstu wybranych przez użytkownika. Można także skonstruować konwencję nazewnictwa do identyfikowania konfiguracji, które są tworzone przez konfiguratora produktów opartego na ograniczeniach. Te konwencje nazewnictwa mogą zawierać atrybuty wybrane przez użytkownika.
+[!include[banner](../includes/banner.md)]
+
+
+W tym temacie opisano, jak można skonfigurować konwencję nazewnictwa numerów produktu w celu zastąpienia ustalonego formatu [Numer produktu głównego - Konfiguracja - Rozmiar - Kolor - Styl] przy użyciu niestandardowego formatu, który zawiera numer produktu głównego, aktywne wymiary produktu i wybrane separatory tekstu. Można także skonstruować konwencję nazewnictwa do identyfikowania konfiguracji, które są tworzone przez konfiguratora produktów opartego na ograniczeniach. Te konwencje nazewnictwa mogą zawierać atrybuty wybrane przez użytkownika.
 
 Nowe nazewnictwo numerów wariantów produktu pozwala umieszczać segmenty w identyfikatorach wariantów produktu. Segmenty te mogą zawierać numer produktu głównego, wymiary produktów, numeracje, stałe tekstowe i atrybuty. Ta funkcjonalność umożliwia szybkie znalezienie wariantu produktu podczas tworzenia zamówienia sprzedaży lub zamówienia zakupu.
 
@@ -66,8 +69,8 @@ Koszulka (TS1234) jest wytwarzana w 3 różnych rozmiarach (S, M, L), 4 różnyc
 
 Numer wariantu produktu Czerwony, Mały, Polo będzie następujący: TS1234-czerwony-mały-polo.
 
-## <a name="nomenclature-of-constraintbased-configurations"></a>Nomenklatura konfiguracji constraintbased
-W przypadku konfiguracji opartych na ograniczeniach dedykowany nomenklatury mogą być wbudowane w konfiguracji wymiaru produkt. Można wybrać następujące segmenty na stronie **Nazewnictwo produktów**.
+## <a name="nomenclature-of-constraintbased-configurations"></a>Nazewnictwo konfiguracji opartych na ograniczeniach
+W konfiguracjach opartych na ograniczeniach można zbudować dedykowaną konwencję nazewnictwa dla wymiaru konfiguracji produktu. Można wybrać następujące segmenty na stronie **Nazewnictwo produktów**.
 
 -   Wartość sekwencji numerów
 -   Stała tekstowa
@@ -90,8 +93,8 @@ Konwencję nazewnictwa konfiguracji definiuje się za pomocą następujących se
 
 Identyfikator konfiguracji materiału „drewno” o długości 78 otrzyma następującą wartość: DrewnoAAA78.
 
-## <a name="nomenclature-of-dimensionbased-configurations"></a>Nomenklatura konfiguracji dimensionbased
-W przypadku konfiguracji opartych na wymiarach dedykowany Nomenklatury Scalonej może być budowany dla konfiguracji Wymiar produktu. Można wybrać następujące segmenty na stronie **Nazewnictwo produktów**.
+## <a name="nomenclature-of-dimensionbased-configurations"></a>Nazewnictwo konfiguracji opartych na wymiarach
+W konfiguracjach opartych na wymiarach można zbudować dedykowaną konwencję nazewnictwa dla wymiaru konfiguracji produktu. Można wybrać następujące segmenty na stronie **Nazewnictwo produktów**.
 
 -   Wartość sekwencji numerów
 -   Stała tekstowa
@@ -132,7 +135,7 @@ Jeśli do konfigurowania wariantów produktu głównego jest używana technologi
 W tym przykładzie można użyć konwencji nazewnictwa numerów wariantów produktu składającej się z następujących segmentów:
 
 1.  Numer produktu głównego
-2.  Stałą tekstową "\_"
+2.  Stała tekstowa „\_”
 3.  Konfiguracja
 
 Konwencja nazewnictwa konfiguracji może zawierać następujące segmenty:
@@ -147,7 +150,7 @@ Można wprowadzić następujące wartości segmentów:
 -   Materiał = Plastik
 -   Długość = 12
 
-Staną się numer wariantu produktu: M0099\_PlasticAAA12.
+Numer wariantu produktu będzie miał wartość: M0099\_PlasticAAA12.
 
 ### <a name="example-for-dimension-based-configurations"></a>Przykład konfiguracji opartych na wymiarach
 
@@ -180,7 +183,7 @@ Wystąpi błąd, jeśli zostanie podjęta próba ręcznego lub automatycznego ge
 
 ### <a name="constraint-based-configurations"></a>Konfiguracje oparte na ograniczeniach
 
-W zależności od konwencji nazewnictwa system może próbować przypisać nieunikatowy numer wariantu produktu do konfiguracji. W takim przypadku system użyje sekwencji numerów dla wymiaru konfiguracji jako numer wariantu produktu w zamian. W takim przypadku pojawi się ostrzeżenie. Aby tego uniknąć, należy w konwencji nazewnictwa uwzględnić tyle atrybutów, ile pozwoli zagwarantować unikatowość, oraz włączyć dla składnika opcję **Użyj ponownie**.
+W zależności od konwencji nazewnictwa system może próbować przypisać nieunikatowy numer wariantu produktu do konfiguracji. W takim przypadku jako numeru wariantu produktu system użyje numeracji wymiaru konfiguracji. Jeśli tak się stanie, otrzymasz ostrzeżenie. Aby tego uniknąć, należy w konwencji nazewnictwa uwzględnić tyle atrybutów, ile pozwoli zagwarantować unikatowość, oraz włączyć dla składnika opcję **Użyj ponownie**.
 
 ### <a name="dimension-based-configurations"></a>Konfiguracje oparte na wymiarach
 
@@ -191,8 +194,10 @@ Proces konfigurowania zawiera etap, w którym system zaproponuje wartość konfi
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Tworzenie nomenklatury numer produktu dla wariantów produktu wstępnie zdefiniowane (Przewodnik zadania)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
+[Tworzenie konwencji nazewnictwa numerów produktu dla wstępnie zdefiniowanych wariantów produktu (przewodnik po zadaniu)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
 
-[Tworzenie nomenklatury numer produktu dla wariantów produktu skonfigurowanych (Przewodnik zadania)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
+[Tworzenie konwencji nazewnictwa numerów produktu dla skonfigurowanych wariantów produktu (przewodnik po zadaniu)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
+
+
 
 

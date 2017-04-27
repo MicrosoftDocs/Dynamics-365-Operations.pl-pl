@@ -1,6 +1,6 @@
 ---
 title: "Skróty klawiaturowe"
-description: "Następujące skróty klawiaturowe mają zastosowanie w usłudze Microsoft Dynamics 365 dla operacji."
+description: "Następujące skróty klawiaturowe mają zastosowanie w całym programie Microsoft Dynamics 365 for Operations."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
-Następujące skróty klawiaturowe mają zastosowanie w usłudze Microsoft Dynamics 365 dla operacji. 
+[!include[banner](../includes/banner.md)]
+
+
+Następujące skróty klawiaturowe mają zastosowanie w całym programie Microsoft Dynamics 365 for Operations. 
 
 **Uwaga:** skróty klawiaturowe opisane w tym miejscu odnoszą się do amerykańskiego układu klawiatury. Klawisze w innych układach mogą nie odpowiadać dokładnie klawiszom na klawiaturze w układzie amerykańskim.
 
@@ -40,7 +43,7 @@ Następujące skróty klawiaturowe mają zastosowanie w usłudze Microsoft Dynam
 | Przejdź do następnej/poprzedniej opcji w menu            | Strzałka w dół / strzałka w górę            |
 | Zamknij kartę w okienku akcji lub menu          | Esc                              |
 | Symulacja kliknięcia prawym przyciskiem myszy                            | Shift+F10                        |
-| Otwórz 365 Dynamics dla menu kontekstowego operacji | Ctrl+F10                         |
+| Otwórz menu kontekstowe programu Dynamics 365 for Operations | Ctrl+F10                         |
 | Naciśnij domyślny przycisk formularza/okna dialogowego       | Alt+Enter                        |
 | Kliknij przycisk lub kafelek                            | Enter lub Spacja                   |
 | Wyświetl odświeżone informacje dla kafelka liczenia         | Alt+strzałka w górę                     |
@@ -64,7 +67,7 @@ Następujące skróty klawiaturowe mają zastosowanie w usłudze Microsoft Dynam
 | Otwórz okienko pola informacji (lub przenieś zaznaczenie na okienko pola informacji, jeśli jest już otwarte) | Ctrl+F2                                   |
 | Zamknij okienko pola informacji (z wyróżnieniem na polu informacji)                         | Esc                                       |
 | Przejdź do następnego/poprzedniego pola informacji (z wyróżnieniem na okienku pola informacji)              | Alt+Shift+strzałka w dół / Alt+Shift+strzałka w górę |
-| Przenieś do &lt;n&gt;th pola informacji (z fokusem w okienko pola informacji)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Przejdź do pola informacji nr &lt;n&gt; (z wyróżnieniem na okienku pola informacji)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Rozwiń pole informacji (z wyróżnieniem na nagłówku pola informacji)                             | Spacja lub Enter                            |
 | Zwiń bieżące pole informacji                                                    | Alt+0                                     |
 
@@ -111,8 +114,8 @@ Następujące skróty klawiaturowe mają zastosowanie w usłudze Microsoft Dynam
 | Przejdź do następnego/poprzedniego pola                     | Tab / Shift+Tab                              |
 | Przejdź do następnej/poprzedniej karty                       | Alt+Shift+strzałka w prawo / Alt+Shift+strzałka w lewo |
 | Przejdź do następnej/poprzedniej skróconej karty                   | Alt+Shift+strzałka w dół / Alt+Shift+strzałka w górę    |
-| Przenieś do &lt;n&gt;th skróconej                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Przenieś do &lt;n&gt;kartę th                         | Alt + Shift +&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Przejdź do skróconej karty nr &lt;n&gt;                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Przejdź do karty nr &lt;n&gt;                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Rozwiń skróconą kartę (z wyróżnieniem na nagłówku skróconej karty) | Spacja lub Enter                               |
 | Zwiń bieżącą skróconą kartę                        | Alt+0                                        |
 | Przełącz na widok siatki                                 | Ctrl+Shift+G                                 |
@@ -152,7 +155,7 @@ Następujące skróty klawiaturowe mają zastosowanie w usłudze Microsoft Dynam
 | Otwórz wyszukiwanie, pole kombi, wybór daty, okno dialogowe przerywania           | Alt+strzałka w dół                |
 | Zamknij wyszukiwanie, pole kombi, wybór daty, okno dialogowego przerywania          | Esc                           |
 | Przenieś wyróżnienie do wyszukiwania (jeśli wyszukiwanie jest otwarte) | Alt+strzałka w dół                |
-| Otwórz Rozszerzony podgląd formantu                        | Alt+strzałka w górę                  |
+| Otwórz rozszerzony podgląd formantu                        | Alt+strzałka w górę                  |
 | Zaznacz tekst w bieżącym polu                           | Ctrl+A                        |
 | Przejdź do lub wyjdź z pola tekstowego w formancie edytora HTML        | Alt+strzałka w dół / Alt+strzałka w górę |
 
@@ -174,18 +177,18 @@ Następujące skróty klawiaturowe mają zastosowanie w usłudze Microsoft Dynam
 | Przejdź do pulpitu nawigacyjnego                                                       | Alt+Shift+Home  |
 | Przejdź do paska nawigacji                                                  | Alt+Shift+F1    |
 | Przejdź do okienka nawigacji                                                 | Alt + F1          |
-| Ulubiony element/ONZ-favorite formularz (z naciskiem na formularza w okienku nawigacji) | SHIFT + F         |
+| Dodawanie formularza do ulubionych/usuwanie formularza z ulubionych (z fokusem ustawionym na formularz w okienku nawigacji) | Shift+F         |
 | Przejdź do selektora firm                                                  | Ctrl+Shift+O    |
 | Przejdź do wyszukiwania nawigacji                                                   | Ctrl+/ lub Alt+G |
-| Otwórz okienko pomocy                                                        | CTRL +?          |
-| Otwórz narzędzie trace parser                                                     | Alt + Shift + T     |
+| Otwórz okienko pomocy                                                        | Ctrl+?          |
+| Otwórz analizator śledzenia                                                     | Alt+Shift+T     |
 
  
 
 ## <a name="segmented-entry-shortcuts"></a>Skróty wpis podzielonego na segmenty
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **To do this**                                                                                                          | **Press**                        |
+| **Funkcja**                                                                                                          | **Klawisze**                        |
 | Otwórz listę rozwijaną (gdy lista rozwijana jest zamknięta)                                                             | Alt+strzałka w dół                   |
 | Przenieś wyróżnienie na pole wprowadzania danych dla bieżącego segmentu na liście rozwijanej (gdy lista rozwijana jest otwarta) | Alt+strzałka w dół                   |
 | Zamknij listę rozwijaną                                                                                                | Alt+strzałka w górę                     |
@@ -199,5 +202,7 @@ Następujące skróty klawiaturowe mają zastosowanie w usłudze Microsoft Dynam
 | Przejdź do góry/na dół wyszukiwania                                                                                    | Home / End                       |
 
  
+
+
 
 

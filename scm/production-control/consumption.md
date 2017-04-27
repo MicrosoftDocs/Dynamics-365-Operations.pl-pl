@@ -1,5 +1,5 @@
 ---
-title: "Obliczanie zużycia materiałów"
+title: "Obliczanie zużycia materiału"
 description: "Ten artykuł zawiera informacje o różnych opcjach związanych z obliczaniem zużycia materiałów."
 author: YuyuScheller
 manager: AnnBe
@@ -27,22 +27,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="calculate-material-consumption"></a>Obliczanie zużycia materiałów
+# <a name="calculate-material-consumption"></a>Obliczanie zużycia materiału
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł zawiera informacje o różnych opcjach związanych z obliczaniem zużycia materiałów. 
 
 Następujące opcje, które odnoszą się do obliczania zużycia materiałów są dostępne na kartach **ustawienia** i **zużycie etapowe** na skróconej karcie **szczegóły wiersza** strony **BOM**.
 
 ## <a name="variable-and-constant-consumption"></a>Zużycie stałe i zmienne
-W **zużycie jest** pola, można wybrać, czy zużycie powinna być obliczana jako ilość stała lub zmienna ilość. Wybierz **stałej** Jeśli stała ilość lub objętość jest potrzebna do produkcji, niezależnie od ilości, który jest produkowany. Wybierz **zmienne** (ustawienie domyślne), gdy wymagana ilość materiału do towarów gotowych jest proporcjonalna do liczby gotowych towarów, które są produkowane.
+W polu **Zużycie jest** można określić, czy zużycie powinno być obliczane jako wartości stałe, czy zmienne. Wybierz opcję **Stała**, jeśli stała ilość lub objętość towaru jest potrzebna do produkcji, bez względu na ilość produkowanych pozycji. Wybierz **zmienne** (ustawienie domyślne), gdy wymagana ilość materiału do towarów gotowych jest proporcjonalna do liczby gotowych towarów, które są produkowane.
 
 ## <a name="calculating-consumption-from-a-formula"></a>Wzór do obliczania zużycia
 W polu **formuła** można skonfigurować różne formuły do obliczania zużycia materiału. W przypadku korzystania z wartości domyślnej **Standardowa**, zużycie nie jest obliczana na podstawie formuły. Poniższe formuły współpracują z polami **wysokość**, **szerokość**, **głębokość**, **gęstość**, i **stała**:
 
--   Wysokość \*stała
--   Wysokość \*szerokość \*stała
--   Wysokość \*szerokość \*głębokość \*stała
--   (Wysokość \*szerokość \*głębokość / gęstość) \*Stała
+-   Wysokość \* Stała
+-   Wysokość \* Szerokość \* Stała
+-   Wysokość \* Szerokość \* Długość \* Stała
+-   (Wysokość \* Szerokość \* Długość/Gęstość) \* Stała
 
 ## <a name="rounding-up-and-multiples"></a>Zaokrąglenie i wielokrotności
 Razem pola **zaokrąglanie w górę** i **wielokrotności** umożliwiają zaokrąglanie w górę do wartości zużycia materiału. Można na przykład zaokrąglać wartości na podstawie jednostki załadunkowej, w której surowiec jest pobierany dla produkcji. Dostępne są następujące opcje w polu **zaokrąglanie w górę**: **ilość**, **miara** i **zużycie**.
@@ -53,7 +56,7 @@ W przypadku wybrania opcji **ilość** jako mechanizmu zaokrąglenia w górę, i
 
 ### <a name="measurement"></a>Miara
 
-Zazwyczaj, zaznacza się **miarę** jako mechanizm zaokrąglania w górę, gdy surowce są dostarczane w określonych wymiarach. Na przykład: do wyprodukowania gotowego towaru potrzeba 2-metrowej metalowej rury, ale rury są fabrycznie cięte na kawałki o długości 4,5 m. W takim przypadku **miary** mechanizm zaokrąglania w górę może być używany do obliczenia, ile metalowych rur potrzeba do wyprodukowania określonej liczby gotowego produktu. Na przykład **formuła** pole jest ustawione na **wysokość \*stałej**. **Wysokość** pole jest ustawione na **2** do wskazania długość rury, który jest wymagany do wyrobu gotowego. W polu **Wielokrotność** ustawiono opcję **4,5**, co wskazuje, że rura jest dostarczana w kawałkach o długości 4,5 m. Obliczenie ma następującą postać:
+Zazwyczaj, zaznacza się **miarę** jako mechanizm zaokrąglania w górę, gdy surowce są dostarczane w określonych wymiarach. Na przykład: do wyprodukowania gotowego towaru potrzeba 2-metrowej metalowej rury, ale rury są fabrycznie cięte na kawałki o długości 4,5 m. W takim przypadku **miary** mechanizm zaokrąglania w górę może być używany do obliczenia, ile metalowych rur potrzeba do wyprodukowania określonej liczby gotowego produktu. W tym przykładzie pole **Formuła** jest ustawione jako **Wysokość \* Stała**. Pole **Wysokość** jest ustawione jako **2**, co wskazuje długość rury wymaganą dla towaru gotowego. W polu **Wielokrotność** ustawiono opcję **4,5**, co wskazuje, że rura jest dostarczana w kawałkach o długości 4,5 m. Obliczenie ma następującą postać:
 
 1.  Liczba wielokrotności, które są wymagane w przypadku 10 sztuk towaru gotowego: 10 / 2 = 5 sztuk
 2.  Suma zużycia: 4.5 x 5 = 22,5 m rury metalowej
@@ -78,5 +81,7 @@ Zużycie etapowe jest używane do obliczania zużycia stałego w interwałach il
 | 200,00      | 40 0000  |
 
 Ilość BOM wynosi 1, a ilość produkcji — 110. Formuła zużycia: Od serii (ilość) = zużycie. Ponieważ wielkość produkcji wynosi 110, należy do zakresu Od serii 100. Zatem ilość wynosi 20.
+
+
 
 

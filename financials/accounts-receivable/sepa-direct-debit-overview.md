@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sepa-direct-debit-overview"></a>Omówienie polecenia zapłaty SEPA
 
+[!include[banner](../includes/banner.md)]
+
+
 Jednolity Obszar Płatniczy w Euro (SEPA) został ustanowiony przez Komisję Europejską i decyduje o tym, że wszystkie płatności elektroniczne są uważane za krajowe, niezależnie od kraju/regionu, w którym znajdują się osoby, przedsiębiorstwa, organizacje oraz właściwy bank. Nie istnieje różnica między płatnościami krajowymi i międzynarodowymi. System SEPA obejmuje 28 państw członkowskich Unii Europejskiej (UE) oraz dodatkowo Islandię, Liechtenstein, Norwegię, Szwajcarię, Monako i San Marino. SEPA tworzy jeden rynek dla transakcji płatności w ramach europejskiego obszaru gospodarczego (EOG). Ostatecznie SEPA umożliwia zmniejszenie liczby formatów płatności, którymi operują banki, firmy i osoby prywatne.   
 
-<a name="what-is-the-goal-of-sepa-direct-debits"></a>Jaki jest cel zapłaty SEPA?
+<a name="what-is-the-goal-of-sepa-direct-debits"></a>Jaki jest cel poleceń zapłaty SEPA?
 ---------------------------------------
 
-Polecenie zapłaty SEPA umożliwia wierzyciela do zbierania funduszy z konta bankowego odbiorcy, pod warunkiem, że udzielono mandatu podpisane przez klienta na rzecz wierzyciela. Odbiorca podpisuje zgodę, która autoryzuje wierzyciela do pobrania płatności i powoduje, że bank odbiorcy wypłaca zaległą kwotę. 
+Polecenie zapłaty SEPA umożliwia wierzycielowi otrzymanie funduszy z konta bankowego odbiorcy, pod warunkiem, że udzielono odpowiedniej zgody podpisanej przez odbiorcę na rzecz wierzyciela. Odbiorca podpisuje zgodę, która autoryzuje wierzyciela do pobrania płatności i powoduje, że bank odbiorcy wypłaca zaległą kwotę. 
 
 Polecenia zapłaty SEPA po raz pierwszy tworzą instrument płatniczy używanych dla krajowych i międzynarodowych poleceń zapłaty w euro, w 32 krajach/regionach SEPA. 
 
@@ -60,7 +63,7 @@ Schemat firmowy SEPA dotyczy transakcji międzyfirmowych i wykorzystuje główny
 Tak. Można używać schematu COR1 do obsługi zgód na polecenie zapłaty SEPA w Austrii, Belgii, Niemczech, Francji, Włoszech, Hiszpanii i Holandii. Schemat zapewnia krótszy okres przed zgłoszeniem pobrania zapłaty dla dostawcy.
 
 ## <a name="what-are-international-bank-account-numbers-iban-and-bank-identifier-codes-bic"></a>Czym są Międzynarodowe numery konta bankowego (IBAN) i kody identyfikacyjne banku (SWIFT)?
-Międzynarodowy numer konta bankowego (IBAN) i kod identyfikacyjny banku (SWIFT) są używane do identyfikowania dowolnego konta w 32 krajach/regionach SEPA. Wprowadź kod identyfikacyjny w polu Kod SWIFT i IBAN w polu kod IBAN. Oba pola znajdują się na skróconej karcie Dodatkowa identyfikacja na karcie Konto bankowe na stronie Konta bankowe. Dotyczy to zarówno konta bankowego wierzyciela, jak i konta bankowego odbiorcy.
+Międzynarodowy numer konta bankowego (IBAN) i kod identyfikacyjny banku (SWIFT) są używane do identyfikowania dowolnego konta w 32 krajach/regionach SEPA. Wprowadź kod identyfikacyjny banku (BIC) w polu Kod SWIFT, a numer IBAN w polu IBAN. Oba pola znajdują się na skróconej karcie Dodatkowa identyfikacja na karcie Konto bankowe na stronie Konta bankowe. Dotyczy to zarówno konta bankowego wierzyciela, jak i konta bankowego odbiorcy.
 
 ## <a name="where-do-i-enter-creditor-identifiers-direct-debit-ids"></a>Gdzie wprowadzić identyfikatory wierzyciela (identyfikatory poleceń zapłaty)
 W SEPA, każdy wierzyciel posiada unikatowy identyfikator. Identyfikator służy do filtrowania każdego polecenia zapłaty przez odbiorcę lub bank odbiorcy, a następnie przetwarzania lub odrzucenia polecenia zapłaty zgodnie z instrukcjami odbiorcy. Wierzyciele musi zażądać wydania tego identyfikatora za pośrednictwem swojego banku. Wpisz ten identyfikator w polu Identyfikator polecenia zapłaty dla konta bankowego firmy.
@@ -69,7 +72,7 @@ W SEPA, każdy wierzyciel posiada unikatowy identyfikator. Identyfikator służy
 Odbiorca podpisuje zgodę, która autoryzuje wierzyciela do pobrania płatności i powoduje, że bank odbiorcy wypłaca zaległą kwotę. Odbiorcy mogą wystawiać zgody, w formie papierowej lub elektronicznej. Domyślnie zgody wygasają po upływie 36 miesięcy od ostatnio zainicjowanego polecenia zapłaty.
 
 ## <a name="where-do-i-specify-the-sepa-direct-debit-file-format-iso-20022"></a>Gdzie należy określić format pliku polecenia zapłaty SEPA (ISO 20022)?
-Formaty danych SEPA są oparte na normach ISO-20022 dla wiadomości. Należy zaznaczyć pole rodzajowy raportowania elektronicznego i wybierz SEPA bezpośredniego format debetu jako Konfiguracja format eksportu podczas konfigurowania kont z odbiorcami metod płatności. Ta metoda płatności jest używana podczas generowania pliku płatności w arkuszu płatności odbiorcy.
+Formaty danych SEPA są oparte na normach ISO-20022 dla wiadomości. Aby skonfigurować metodę płatności dla rozrachunków z odbiorcami, trzeba zaznaczyć pole wyboru Ogólne raportowanie elektroniczne i wybrać format Polecenie zapłaty SEPA jako konfigurację formatu eksportu. Ta metoda płatności jest używana podczas generowania pliku płatności w arkuszu płatności odbiorcy.
 
 ## <a name="in-what-file-formats-can-i-generate-sepa-direct-debit-payment-files"></a>W jakich formatach plików można generować pliki płatności polecenia zapłaty SEPA?
 Można generować pliki płatności elektronicznej dla poleceń zapłaty SEPA w następujących formatach:
@@ -78,6 +81,8 @@ Można generować pliki płatności elektronicznej dla poleceń zapłaty SEPA w 
 
 ## <a name="how-do-refunds-and-returns-work-with-sepa-direct-debits"></a>Jak wyglądają zwroty dla polecenia zapłaty SEPA?
 W ramach obu schematów poleceń zapłaty SEPA, odbiorcy mają określone prawa do refundacji. Odbiorca jest uprawniony do wycofania wszelkich autoryzowanych transakcji w okresie ośmiu tygodni po terminie, bez konieczności podawania przyczyny. W przypadku transakcji nieautoryzowanych, okres ten jest rozszerzony do 13 miesięcy po terminie płatności. Cofnięcia wszelkich płatności, które zostały wykonane, są realizowane ręcznie za pomocą przycisku Anuluj płatność na stronie Transakcje odbiorcy.
+
+
 
 
 

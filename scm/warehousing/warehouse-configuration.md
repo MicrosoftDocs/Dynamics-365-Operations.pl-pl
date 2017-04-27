@@ -52,13 +52,13 @@ W ramach procesu włączania układu magazynu należy zdefiniować grupy strefy 
 -   **Typy lokalizacji** — logiczne lub fizyczne grupowanie lokalizacji magazynu. Na przykład, można utworzyć typ lokalizacji dla wszystkich lokalizacji tymczasowych. Wymagane ustawienia na stronie **Parametry zarządzania magazynem** ułatwiają proces definiowania typów lokalizacji pośredniej i typów lokalizacji końcowej.
 -   **Lokalizacje** — najniższy poziom informacji o lokalizacji. Lokalizacje są używane do śledzenia, które dostępne zapasy są przechowywane i pobierane w magazynie.
 
-Jednostki utworzone w celu zdefiniowania układu magazynu są używane w kwerendach ustawionych w szablonach pracy w celu uruchomienia zleceń w magazynie. Dlatego podczas definiowania stref, typów lokalizacji itd. należy wziąć pod uwagę jak różne obszary w magazynie są używane dla różnych procesów. Ponadto należy wziąć pod uwagę czynniki, takie jak fizyczne charakterystyki określonego obszaru. Na przykład może być obszarów, gdzie można użyć tylko pewnego rodzaju wózka widłowego. Lub, jeżeli firma posiada zarówno produkcji, jak i wyroby gotowe w tym samym miejscu, warto utworzyć pojedynczy magazyn w usłudze Dynamics 365 dla operacji, ale następnie oddzielić dwie operacje, tworząc dwie grupy strefy. Dać obiekty opisowe nazwy, tak, że jest łatwo zidentyfikować je podczas korzystania z nich w kwerendach szablonu.
+Jednostki utworzone w celu zdefiniowania układu magazynu są używane w kwerendach ustawionych w szablonach pracy w celu uruchomienia zleceń w magazynie. Dlatego podczas definiowania stref, typów lokalizacji itd. należy wziąć pod uwagę jak różne obszary w magazynie są używane dla różnych procesów. Ponadto należy wziąć pod uwagę czynniki, takie jak fizyczne charakterystyki określonego obszaru. Na przykład mogą być obszary, w których można używać tylko określonego typu wózków widłowych. Lub jeśli firma ma zarówno produkcję, jak i wyroby gotowe w obrębie tego samego obiektu, może być pomocne utworzenie jednego magazynu w programie Microsoft Dynamics 365 for Operations, ale następnie oddzielenie tych dwóch funkcji poprzez utworzenie dwóch grup stref. Nadaj jednostkom opisowe nazwy, aby łatwo je identyfikować, gdy będzie trzeba ich użyć w zapytaniach szablonu.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Limity składowania w lokalizacji, profile lokalizacji i stałe lokalizacje pobrania
 
 Należy pamiętać o fizycznym układzie magazynu, zarówno do określenia pojemności magazynów (limity składowania w lokalizacji i profile lokalizacji), jak i w celu wypracowania optymalnych procesów magazynowych. 
 
-Lokalizacja obsady zwierząt limity pomóc w zagwarantowaniu, że praca nie jest tworzony do żądania spis umieścić w lokalizacji, która nie ma fizycznych zdolności produkcyjnych do przewozu zapasów. Na przykład jeśli niektórych lokalizacji w magazynie można przechowywać tylko jedna paleta według lokalizacji, można włączyć limity składowania w lokalizacji. ** Ilość ** wartość może być równa **1**i ** jednostki ** wartość może być równa **PL** grupie, profil użytkownika do określonej lokalizacji. 
+Limity składowania w lokalizacji gwarantują, że nie zostanie utworzona praca żądania przyjęcia w lokalizacji, która nie ma fizycznej pojemności, by pomieścić towar. Na przykład jeśli niektóre lokalizacje magazynu mogą zawierać tylko po jednej palecie, można włączyć limit składowania w lokalizacji. Wartość **Ilość** może być ustawiona jako to **1** a wartość **Jednostka** jako **PL** w ramach określonego grupowania profilu lokalizacji. 
 
 Jeśli są wymagane bardziej zaawansowane obliczenia do kontrolowania ograniczeń pojemności lokalizacji, można użyć ustawień profili lokalizacji. W tym przypadku waga i objętość są brane pod uwagę przy obliczaniu pojemności. 
 
@@ -66,7 +66,7 @@ Aby uzyskać optymalne procesy wychodzące, oceń, czy należy używać stałych
 
 ### <a name="location-setup-wizard"></a>Kreator konfiguracji lokalizacji
 
-Aby szybko utworzyć lokalizacji w magazynie, można użyć ** ustawienia lokalizacji ** kreatora. W ramach tego procesu możesz łatwo zachować format nazwy lokalizacji.
+Aby szybko utworzyć lokalizacji magazynu, można użyć **Kreatora konfiguracji lokalizacji**. W ramach tego procesu możesz łatwo zachować format nazwy lokalizacji.
 
 ## <a name="warehouse-processes"></a>Procesy magazynu
 W ramach konfiguracji magazynu ważne jest włączanie procesów magazynowych zgodnie z wymaganiami firmy. Najważniejsze składniki, które należy skonfigurować to szablony grupy czynności, szablony pracy, pule pracy i dyrektywy lokalizacji.
@@ -75,7 +75,7 @@ W ramach konfiguracji magazynu ważne jest włączanie procesów magazynowych zg
 
 Szablony grupy czynności pomagają włączyć proces wychodzący "Zwalniania do magazynu". Jak tylko wiersze zamówienia są zwalniane (albo bezpośrednio z dokumentów źródłowych, poprzez procesy zadań wsadowych lub za pośrednictwem ładunków, które już zostały utworzone), jest używana funkcja szablonu grupy czynności. 
 
-Można utworzyć trzy typy szablonów wave: **wysyłki**, **zlecenia produkcyjnego**, i **Kanban**. Parametry są używane do definiowania jak daleko system automatycznie powinien iść w przetwarzaniu ruchu wychodzącego pracy. Szablon grupy czynności jest wybierany na podstawie sekwencja szablonu grupy czynności i kryteriów określonych w szablonie. Jeśli szablon jest wyświetlany u góry sekwencji, najpierw sprawdza się kryteria w tym szablonie. Jeśli kryteria mogą być spełnione, szablon grupy czynności jest przetwarzany. W przeciwnym razie sprawdzane są kryteria w następnym szablonie itd. Z tego względu dobrze jest umieścić szablon, który ma u góry listy sekwencji szablonu grupy czynności najlepiej określone kryteria, aby był przetwarzany jako pierwszy. Na przykład chcesz przetworzyć wszystkie prace dla określonego przewoźnika dzisiaj i tymczasowo opóźnić przetwarzanie pracy innych przewoźników. W takim przypadku szablon grupy czynności, który wybiera kryteria pracy dla tego przewoźnika powinien się znaleźć wyżej w sekwencji niż inne szablony. W przeciwnym razie praca innych przewoźników może być przetworzona przed ukończeniem pracy dla tego przewoźnika. 
+Można utworzyć trzy typy szablonów grupy czynności: **Wysyłka**, **Zlecenie produkcyjne** i **Kanban**. Parametry służą do określania, jak daleko system powinien automatycznie dojść podczas przetwarzania pracy wychodzącej. Szablon grupy czynności jest wybierany na podstawie sekwencja szablonu grupy czynności i kryteriów określonych w szablonie. Jeśli szablon jest wyświetlany u góry sekwencji, najpierw sprawdza się kryteria w tym szablonie. Jeśli kryteria mogą być spełnione, szablon grupy czynności jest przetwarzany. W przeciwnym razie sprawdzane są kryteria w następnym szablonie itd. Z tego względu dobrze jest umieścić szablon, który ma u góry listy sekwencji szablonu grupy czynności najlepiej określone kryteria, aby był przetwarzany jako pierwszy. Na przykład chcesz przetworzyć wszystkie prace dla określonego przewoźnika dzisiaj i tymczasowo opóźnić przetwarzanie pracy innych przewoźników. W takim przypadku szablon grupy czynności, który wybiera kryteria pracy dla tego przewoźnika powinien się znaleźć wyżej w sekwencji niż inne szablony. W przeciwnym razie praca innych przewoźników może być przetworzona przed ukończeniem pracy dla tego przewoźnika. 
 
 Należy określić metody przetwarzania grupy czynności w poszczególnych szablonach grupy czynności. Dostępne metody zależą od typu szablonu grupy czynności.
 
@@ -107,6 +107,6 @@ Aby szybciej i łatwiej określić zadania związane z wierszem dyrektywy lokali
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Konfigurowanie lokalizacji w magazynie włączone WMS (Przewodnik zadania)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
+[Konfigurowanie lokalizacji w magazynie z obsługą WMS (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
 
 

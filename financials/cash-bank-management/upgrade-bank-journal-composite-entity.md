@@ -1,5 +1,5 @@
 ---
-title: "Aktualizacja podmiotu złożonego arkusza banku"
+title: "Aktualizowanie jednostki złożonej arkusza bankowego"
 description: "Poniższe czynności są niezbędne w celu wstawienia dodatkowego pola BankTransactionType do jednostki złożonej BankJournalEntity."
 author: twheeloc
 manager: AnnBe
@@ -24,20 +24,23 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="update-the-bank-journal-composite-entity"></a>Aktualizacja podmiotu złożonego arkusza banku
+# <a name="update-the-bank-journal-composite-entity"></a>Aktualizowanie jednostki złożonej arkusza bankowego
+
+[!include[banner](../includes/banner.md)]
+
 
 Poniższe czynności są niezbędne w celu wstawienia dodatkowego pola BankTransactionType do jednostki złożonej BankJournalEntity.
 
 Poniższa procedura umożliwia wstawienie dodatkowego pola BankTransactionType do jednostki złożonej BankJournalEntity.
 
 1.  Skompiluj i zsynchronizuj następujące jednostki złożone, jednostki i tabele tymczasowe w arkuszu bankowym:
-    -   Złożone jednostki\\BankJournalEntity
+    -   Jednostka złożona\\BankJournalEntity
     -   Jednostka\\BankJournalHeaderEntity
     -   Jednostka\\BankJournalLineEntity
     -   Tabela\\BankJournalHeaderStaging
     -   Tabela\\BankJournalLineStaging
 
-2.  Zarządzanie danymi\\dane projektów
+2.  Zarządzanie danymi\\projekty danych
     -   Udostępnij typ **Transakcja bankowa** w układzie **Dane źródłowe**.
         -   Format danych źródłowych = Element XML
         -   Nazwa jednostki = Arkusz bankowy
@@ -49,6 +52,8 @@ Poniższa procedura umożliwia wstawienie dodatkowego pola BankTransactionType d
             -   Upewnij się, że typ transakcji bankowej jest mapowany z obszaru Źródło do obszaru Tymczasowy.
 
 3.  Zaimportuj nowy wyciąg.
+
+
 
 
 

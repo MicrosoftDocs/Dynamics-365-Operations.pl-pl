@@ -1,9 +1,9 @@
 ---
-title: "Zmniejszyć amortyzacji degresywnej"
+title: Amortyzacja degresywna
 description: "Ten artykuł zawiera omówienie metody amortyzacji Degresywna."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reduce-balance-depreciation"></a>Zmniejszyć amortyzacji degresywnej
+# <a name="reduce-balance-depreciation"></a>Amortyzacja degresywna
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł zawiera omówienie metody amortyzacji Degresywna.
 
@@ -57,7 +60,7 @@ Na przykład jeśli wybierzesz opcję Roczne, roczna amortyzacja jest księgowan
 
 ### <a name="fiscal"></a>Fiskalny
 
-Jeśli zostanie wybrana opcja Obrachunkowy w polu Rok amortyzacji, będzie używana liniowa metoda amortyzacji. Jest ona obliczana na podstawie roku obrachunkowego, który został ustawiony na stronie Kalendarze obrachunkowe dla kalendarza obrachunkowego wybranego na stronie Księga. Na przykład dla roku obrachunkowego 1 lipca do 30 czerwca, obliczanie amortyzacji rozpoczyna się 1 lipca. Rok obrachunkowy może być dłuższy lub krótszy niż 12 miesięcy. Amortyzacja jest korygowana dla każdego okresu obrachunkowego. Długość następnego roku obrachunkowego opiera się na okresach obrachunkowych, które konfiguruje się podczas tworzenia nowego roku obrachunkowego na stronie Kalendarze obrachunkowe.
+Jeśli zostanie wybrana opcja Obrachunkowy w polu Rok amortyzacji, będzie używana liniowa metoda amortyzacji. Jest ona obliczana na podstawie roku obrachunkowego, który został ustawiony na stronie Kalendarze obrachunkowe dla kalendarza obrachunkowego wybranego na stronie Księga. Na przykład dla roku obrachunkowego od 1 lipca do 30 czerwca włącznie obliczanie amortyzacji rozpocznie się 1 lipca. Rok obrachunkowy może być dłuższy lub krótszy niż 12 miesięcy. Amortyzacja jest korygowana dla każdego okresu obrachunkowego. Długość następnego roku obrachunkowego opiera się na okresach obrachunkowych, które konfiguruje się podczas tworzenia nowego roku obrachunkowego na stronie Kalendarze obrachunkowe.
 
 
 W przypadku wybrania opcji Fiskalny w polu Częstotliwość okresu dostępne są następujące opcje:
@@ -73,12 +76,14 @@ Jeśli używasz metody Degresywna, 30 procent podstawy amortyzacji (wartość ks
 
 | Okres | Obliczenie kwoty rocznej amortyzacji | Wartość księgowa netto pod koniec roku |
 |--------|-------------------------------------------|---------------------------------------|
-| Rok 1 | (11,000 - 1,000) \* 30% = 3,000           | (11 000 - 1000) - 3000 = 7000      |
-| Rok 2 | (7,000 - 1,000) \* 30% = 1,800            | (7000 -1800) = 5200                |
-| Rok 3 | (5,200 - 1,000) \* 30% = 1,260            | (5200 - 1260) = 3940               |
+| Rok 1 | (11 000 - 1000) \* 30% = 3000           | (11 000 - 1000) - 3000 = 7000      |
+| Rok 2 | (7000 - 1000) \* 30% = 1800            | (7000 -1800) = 5200                |
+| Rok 3 | (5200 - 1000) \* 30% = 1260            | (5200 - 1260) = 3940               |
 
  
 -
+
+
 
 
 

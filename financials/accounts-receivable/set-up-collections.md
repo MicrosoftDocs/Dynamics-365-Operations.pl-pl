@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-credit-and-collections"></a>Konfigurowanie kredytów i windykacji
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł przedstawia sposób konfigurowania funkcji windykacji.
 
 <a name="set-up-aging-period-definitions"></a>Ustaw definicje okresów wiekowania
@@ -46,7 +49,7 @@ Wiele osób w organizacji wykonuje prace związane z windykacją, więc można s
 ## <a name="set-up-a-collections-case-category"></a>Tworzenie kategorii spraw windykacyjnych
 Jeśli uporządkujesz pracę zespołów według spraw, zdefiniuj kategorię z typem kategorii **Windykacja**. Ta konfiguracja jest wymagana tylko wtedy, gdy chcesz używać funkcji spraw na stronie **Windykacje**.
 
-## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Ustawianie nazw arkuszy (rozliczenia, writeoff oraz NSF)
+## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Umożliwia tworzenie nazw arkuszy (rozliczenie, odpis, niewystarczające fundusze)
 Możesz ustawić nazwy arkuszy, które są używane podczas przetwarzania transakcji na stronie **Windykacja**. Ten proces obejmuje rozliczanie transakcji, odpisy transakcji i przetwarzanie płatności przy niewystarczających funduszach (NSF).
 
 | Opis | Typ arkusza     |
@@ -55,7 +58,7 @@ Możesz ustawić nazwy arkuszy, które są używane podczas przetwarzania transa
 | Zmniejszenie   | Dziennie            |
 | NF         | Płatność od odbiorcy |
 
-## <a name="set-up-a-reason-code-for-writeoff-transactions"></a>Konfigurowanie kodu przyczyny dla transakcji writeoff
+## <a name="set-up-a-reason-code-for-writeoff-transactions"></a>Tworzenie kodu przyczyny dla transakcji odpisu
 Można skonfigurować domyślny kod przyczyny używany, gdy transakcje są odpisywane na stronie **Windykacja**. Można zmienić kod w procesie odpisu.
 
 ## <a name="set-up-a-folder-for-email-attachments-and-create-email-templates"></a>Skonfigurowanie folderu dla załączników do wiadomości i tworzenie szablonów wiadomości e-mail
@@ -67,7 +70,7 @@ Można ustawić parametry modułu Rozrachunki z odbiorcami, które są widoczne 
 ## <a name="optional-set-up-collections-agents"></a>Opcjonalnie: Ustawianie agentów ds. windykacji
 Wiele osób w organizacji wykonuje czynności windykacyjne, więc można skonfigurować agentów ds. windykacji. Agent ds. windykacji jest pracownikiem, który jest skonfigurowany jako użytkownik na stronie **Relacje użytkownika**. Można przypisać pule in klientów agentów ds. windykacji, co pomaga organizowania ich pracę. Agenci ds. windykacji są dodawani do zespołu wybranego na stronie **Parametry rozrachunków z odbiorcami**. Jeśli zespół nie został wybrany na tej stronie, nowy zespół o nazwie **Windykacja** jest tworzony automatycznie, a agenci ds. windykacji są dodawanie do tego zespołu.
 
-## <a name="set-up-a-writeoff-account"></a>Konfigurowanie konta writeoff
+## <a name="set-up-a-writeoff-account"></a>Konfigurowanie konta odpisów
 Można utworzyć konto odpisu, które będzie używane dla odpisów z księgi głównej przy odpisach transakcji. To konto jest przechowywane w profilu księgowania odbiorcy.
 
 ## <a name="set-up-nsf-information-for-bank-accounts"></a>Konfigurowanie informacji NSF dla kont bankowych
@@ -82,11 +85,13 @@ Można ustawić adresy e-mail dla kontaktów odbiorcy, jeśli chcesz wysyłać w
 Na skróconej karcie **Kredyty i windykacja** dla odbiorcy, w polu **Osoba kontaktowa ds. windykacji** wybierz osoby w organizacji odbiorcy, która współpracuje z Twoim agentem ds. windykacji. Ta osoba jest używana jako domyślna osoba kontaktowa na stronie **Windykacje** i do tej osoby wysyłane są e-maile. 
 
 > [!NOTE] 
-> Jeśli kontakt kolekcji nie jest określony dla klienta, kontakt podstawowy dla odbiorcy jest używany. Jeśli kontakt podstawowy nie jest określony, wiadomości e-mail wysyłane są na pierwszy adres wymieniony na stronie **Kontakty**.
+> Jeśli nie określono dla odbiorcy osoby kontaktowej ds. windykacji, używany jest kontakt podstawowy. Jeśli kontakt podstawowy nie jest określony, wiadomości e-mail wysyłane są na pierwszy adres wymieniony na stronie **Kontakty**.
 
 ## <a name="set-up-email-settings-for-salespeople"></a>Konfigurowanie ustawień wiadomości e-mail dla sprzedawców
 Ustaw adresy e-mail dla sprzedawców, jeśli chcesz wysyłać wiadomości e-mail do sprzedawców ze strony **Windykacja**. Ustaw adres e-mail dla każdego przedstawiciela handlowego w każdej grupie prowizji sprzedaży. Przedstawiciel handlowy, który ma zaznaczoną opcję **Kontakt**, jest domyślnym sprzedawcą, do którego są wysyłane wiadomości e-mail. 
 
 Jeśli przedstawiciel handlowy nie jest określony, podstawowy sprzedawca dla organizacji używa odbiorcy. Jeśli sprzedawca podstawowy nie jest określony, wiadomości e-mail wysyłane są na pierwszy adres z listy sprzedawców wymieniony na stronie.
+
+
 
 

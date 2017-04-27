@@ -45,7 +45,7 @@ Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zaw
 Definicja wiersza może zawierać maksymalnie 20 000 wierszy wymiarów finansowych i uwzględniać następujące informacje:
 
 -   Opisowy tekst, który dodaje znaczenie do raportu przez utworzenie nagłówków, wierszy i obszarów sekcji, np. **Gotówka** lub **Całkowity przychód**.
--   Łącza do danych finansowych, które mogą zawierać wartości w usłudze Microsoft Dynamics 365 dla operacji wymiaru **Uwaga:** służą do tworzenia definicji wiersza do pobierania danych z systemu wymiary finansowe zawsze wygenerować raport.
+-   Łącza do danych finansowych, co może obejmować wartości wymiarów z programu Microsoft Dynamics 365 for Operations **Uwaga:** Można skonfigurować definicję wiersza, aby były pobierane dane z systemu wymiarów finansowych przy każdym generowaniu raportu.
 -   Sumy wierszy i formuły oparte na połączonych danych finansowych.
 
 Zazwyczaj każdy wiersz w definicji wiersza zawiera jeden z następujących typów informacji:
@@ -64,7 +64,7 @@ Wymiar jest częścią wspólną danych i wartości. W projektancie raportów mo
 
 | Opcja                | Opis                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wymiar             | Wzorzec określający wymiar, który ma zostać dodany do definicji wiersza. Ten wzór zawiera jeden znak (&) lub znak numeru (\#) dla każdej pozycji w wymiarach. Ogólnie rzecz biorąc używaj wyłącznie znaków & dla wymiaru Konto główne i wyłącznie znaków # dla innych wymiarów. |
+| Wymiar             | Wzorzec określający wymiar, który ma zostać dodany do definicji wiersza. Ten wzorzec zawiera jeden znak & lub znak \# dla każde pozycji w wymiarach. Ogólnie rzecz biorąc używaj wyłącznie znaków & dla wymiaru Konto główne i wyłącznie znaków # dla innych wymiarów. |
 | Początek zakresu wymiaru | Pierwsza wartość tego wymiaru, która ma zostać dodana do definicji wiersza.                                                                                                                                                                                                                 |
 | Koniec zakres wymiaru   | Ostatnia wartość tego wymiaru, która ma zostać dodana do definicji wiersza.                                                                                                                                                                                                                  |
 
@@ -73,9 +73,9 @@ Aby dodać wymiary do definicji wiersza, należy wykonać następujące kroki:
 1.  W Projektancie raportów kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
 2.  W menu **Edycja** kliknij **Wstaw wiersze z wymiarów**.
 3.  W oknie dialogowym **Wstaw wiersze z wymiarów** w wierszu **Wymiary** wybierz komórki dla wymiaru, który ma zostać przeniesiony do definicji wiersza, a następnie kliknij przycisk **Wszystkie &&&**.
-4.  Aby ograniczyć definicję wiersza do określonego zakresu wartości wymiarów, wprowadź początkową wartość wymiaru w komórce **Początek zakresu wymiaru **, a następnie wprowadź końcową wartość wymiaru w komórce **Koniec zakresu wymiaru**. Aby uwzględnić wszystkie wartości dla wybranego wymiaru, pozostaw te komórki puste. **Uwaga:** symboli wieloznacznych (\* lub?) w wymiarze zakresów nie może zwrócić wszystkich wyników którego, w zależności od tego, jak baza danych ERP zestawia dane.
+4.  Aby ograniczyć definicję wiersza do określonego zakresu wartości wymiarów, wprowadź początkową wartość wymiaru w komórce **Początek zakresu wymiaru **, a następnie wprowadź końcową wartość wymiaru w komórce **Koniec zakresu wymiaru**. Aby uwzględnić wszystkie wartości dla wybranego wymiaru, pozostaw te komórki puste. **Uwaga:** Symbole wieloznaczne (\* lub ?) w zakresach wymiarów mogą nie zwracać wszystkich żądanych wyników, w zależności od tego, jak baza danych systemu ERP grupuje dane.
 5.  W polu **Początkowy kod wiersza** określ kod wiersza dla pierwszej wartości wymiaru, która ma zostać dodana do definicji wiersza.
-6.  W polu **Przyrost każdego wiersza** określ odstęp między kolejnymi kodami wierszy. Jeśli pierwszy kod wiersza wynosi 100, a wartość przyrostu wynosi 30, pierwszy nowe wiersze mają kody 100, 130, 160, 190 i 220. Użyj wartość przyrostu, która zapewnia miejsca na wstawienie nowych wierszy formatowanie i formuły.
+6.  W polu **Przyrost każdego wiersza** określ odstęp między kolejnymi kodami wierszy. Na przykład jeśli kod pierwszego wiersza wynosi 100, a wartość przyrostu wynosi 30, pierwsze nowe wiersze mają kody 100, 130, 160, 190 i 220. Użyj wartość przyrostu, która zapewnia wystarczający odstęp na wstawienie nowych wierszy formatu i formuły.
 7.  Kliknij przycisk **OK** Dla każdej wybranej wartości wymiaru jest dodawany jeden wiersz do definicji wiersza.
 
 ## <a name="adjust-rounding-in-a-row-definition"></a> Korekta zaokrąglenia w definicji wiersza
@@ -146,7 +146,7 @@ Formatowanie określone w definicji wiersza zastępuje wszelkie formatowanie okr
 
 1.  W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
 2.  Zaznacz komórki do formatowania. Aby wybrać wiele komórek, przytrzymaj klawisz Ctrl i zaznaczaj kolejne komórki.
-3.  Kliknij przycisk na pasku narzędzi dla formatu, który chcesz zastosować. Na przykład, aby zwiększyć wcięcie wiersza, zaznacz wiersz, a następnie kliknij **Zwiększ wcięcie**![Zwiększ wcięcie](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Zwiększ wcięcie") na pasku narzędzi.
+3.  Kliknij przycisk na pasku narzędzi dla formatu, który chcesz zastosować. Na przykład aby zwiększyć wcięcie wiersza, zaznacz wiersz, a następnie na pasku narzędzi kliknij przycisk **Zwiększ wcięcie** ![Zwiększ wcięcie](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Zwiększ wcięcie").
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Dostosowywanie kolumn podczas projektowania raportów
 
@@ -173,6 +173,6 @@ Aby ułatwić wyświetlanie kolumn, nad którymi pracujesz w definicji wiersza, 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Microsoft Dynamics 365 dla operacji sprawozdawczość finansowa](financial-reporting-intro.md)
+[Sprawozdawczość finansowa w programie Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

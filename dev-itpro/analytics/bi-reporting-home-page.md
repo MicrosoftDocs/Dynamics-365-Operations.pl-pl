@@ -1,6 +1,6 @@
 ---
-title: "BI &amp;zgłoszenie strony głównej"
-description: "W tym temacie wymieniono BI &amp;raportowania zasobów, które są dostępne w usłudze Microsoft Dynamics 365 dla operacji."
+title: "Analizy biznesowe i raportowanie — strona główna"
+description: "W tym temacie wymieniono zasoby związane z analizami biznesowymi i raportowaniem, które są dostępne w rozwiązaniu Microsoft Dynamics 365 for Operations."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,26 +24,29 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bi-amp-reporting-home-page"></a>BI &amp;zgłoszenie strony głównej
+# <a name="bi-amp-reporting-home-page"></a>Analizy biznesowe i raportowanie — strona główna
 
-W tym temacie wymieniono BI &amp;raportowania zasobów, które są dostępne w usłudze Microsoft Dynamics 365 dla operacji.
+[!include[banner](../includes/banner.md)]
+
+
+W tym temacie wymieniono zasoby związane z analizami biznesowymi i raportowaniem, które są dostępne w rozwiązaniu Microsoft Dynamics 365 for Operations. 
 
 <a name="working-with-aggregate-data"></a>Praca z danymi zagregowanymi
 ---------------------------
 
--   [Analytics](analytics.md)
+-   [Analizy](analytics.md)
 -   [Modele agregacji w pamięci, w czasie rzeczywistym zastępują moduły SSAS](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [Modelowania i agregowanie danych przy użyciu](model-aggregate-data.md)
--   [Migrowanie Ulepszony moduł Sprzedaż systemu Dynamics AX 2012 R3 w magazynie encji](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
+-   [Modelowanie i używanie zagregowanych danych](model-aggregate-data.md)
+-   [Migracja uaktualnionego modułu Sprzedaż w systemie Dynamics AX 2012 R3 do magazynu jednostek](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
-## <a name="self-service-reporting"></a>Samoobsługa raportowania
--   [Power BI integration](power-bi-integration.md)
+## <a name="self-service-reporting"></a>Samoobsługowa sprawozdawczość
+-   [Integracja usługi Power BI](power-bi-integration.md)
 -   [Konfigurowanie integracji Power BI dla przestrzeni roboczych](configure-power-bi-integration.md)
 -   [Tworzenie raportu w programie Power BI przy użyciu danych z programu Microsoft Dynamics 365 for Operations](create-powerbi-report-data.md)
--   [Tworzenie raportu Power BI i pulpitu nawigacyjnego](create-powerbi-report-dashboard.md)
--   [Zawartość BI zasilania wydajność kanału sprzedaży detalicznej](retail-channel-performance-dashboard-power-bi-data.md)
--   [Finansowe zawartości BI zasilania wydajność](financial-performance-power-bi-content-pack.md)
--   [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
+-   [Tworzenie raportu i pulpitu nawigacyjnego w programie Power BI](create-powerbi-report-dashboard.md)
+-   [Pakiet zawartości Wyniki kanału sieci sprzedaży](retail-channel-performance-dashboard-power-bi-data.md)
+-   [Pakiet zawartości usługi Power BI Wyniki finansowe](financial-performance-power-bi-content-pack.md)
+-   [Pakiet zawartości usługi Power BI Wyniki sprzedaży i rentowności](sales-profitability-performance-content-pack.md)
 -   [Używanie konfiguracji raportowania elektronicznego w celu dostarczania programowi Power BI danych z programu Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 ## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Konfigurowanie osadzonych środowisk analitycznych na kliencie programu Microsoft Dynamics 365 for Operations
@@ -95,6 +98,8 @@ W tym temacie wymieniono BI &amp;raportowania zasobów, które są dostępne w u
 -   [ER Używanie plików zarządzania dokumentami w danych wyjściowych formatu (Część 5: Modyfikacja i inicjowanie formatu)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format/) (przewodnik po zadaniu)
 -   [ER Generowanie dokumentów elektronicznych dla płatności przy użyciu konfiguracji formatu](http://ax.help.dynamics.com/en/wiki/generate-electronic-documents-for-payments-using-a-format-configuration/) (przewodnik po zadaniu)
 -   [ER Uaktualnianie formatu poprzez przyjęcie jego nowej wersji bazowej](http://ax.help.dynamics.com/en/wiki/upgrade-your-format-by-adopting-a-new-base-version-of-that-format/) (przewodnik po zadaniu)
+
+
 
 
 

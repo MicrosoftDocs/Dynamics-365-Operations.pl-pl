@@ -1,6 +1,6 @@
 ---
-title: "Konfigurowanie nazwy pól aplikacji w aplikacji magazynowanie"
-description: "W tym temacie opisano sposób definiowania i skonfigurować Magazyn aplikacji pola nazwy i priorytety w usłudze Dynamics 365 dla operacji."
+title: "Konfigurowanie nazw pól aplikacji w aplikacji Magazynowanie"
+description: "W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów pól aplikacji magazynowej w programie Dynamics 365 for Operations."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurowanie nazwy pól aplikacji w aplikacji magazynowanie
+# <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurowanie nazw pól aplikacji w aplikacji Magazynowanie
 
-W tym temacie opisano sposób definiowania i skonfigurować Magazyn aplikacji pola nazwy i priorytety w usłudze Dynamics 365 dla operacji. 
+[!include[banner](../includes/banner.md)]
 
-**Uwaga:** ten temat dotyczy funkcji w module Zarządzanie magazynem. Nie ma zastosowania do funkcji w module Zarządzanie zapasami. Dynamics 365 dla operacji - składu jest aplikacją, która służy do wykonywania zadań hurtowni. Użytkownik może zdefiniować i skonfigurować nazwy pól, które są używane w aplikacji, a także skonfigurować priorytet, do którego powinny być przypisane nazwy pól. W tym temacie wyjaśniono, jak zdefiniować i skonfigurować te nazwy pól aplikacji magazynu i priorytetów i jak są używane w usłudze Dynamics 365 dla operacji - składu. Aby uzyskać szczegółowe informacje dotyczące konfigurowania połączenia do 365 Dynamics dla operacji - składowania, skorzystaj z samouczka [zainstalować i skonfigurować usługi Dynamics 365 dla operacji - składu](install-configure-warehousing-app.md).
 
-<a name="configure-warehouse-app-field-names"></a>Konfigurowanie nazwy pól aplikacji magazynu
+W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów pól aplikacji magazynowej w programie Dynamics 365 for Operations. 
+
+**Uwaga:** Ten temat dotyczy funkcji w module Zarządzanie magazynem. Nie ma zastosowania do funkcji w module Zarządzanie zapasami. Dynamics 365 for Operations — Magazynowanie to aplikacja umożliwiająca wykonywanie zadań magazynowych. Można zdefiniować i skonfigurować nazwy pól używanych w aplikacji, a także skonfigurować priorytety, do których te nazwy pól powinny być przypisane. W tym temacie wyjaśniono sposób definiowania i konfigurowania nazw i priorytetów tych pól aplikacji magazynowej oraz ich używanie w programie Dynamics 365 for Operations — Magazynowanie. Aby uzyskać szczegółowe informacje dotyczące konfigurowania połączenia z programem Dynamics 365 for Operations — Magazynowanie, skorzystaj z samouczka [Instalowanie i konfigurowanie aplikacji Dynamics 365 for Operations — Magazynowanie](install-configure-warehousing-app.md).
+
+<a name="configure-warehouse-app-field-names"></a>Konfigurowanie nazw pól w aplikacji magazynowej
 ===================================
 
-Przy użyciu Dynamics 365 dla operacji - magazynowania na urządzeniu przenośnym, można skonfigurować wyświetlanie metadanych na urządzeniu na **magazyn, nazwy pól aplikacji** strony. W nowej firmy w usłudze Dynamics 365 dla operacji, zaznacz **Utwórz domyślne ustawienia** do generowania wszystkich nazw pól, które będą używane w przepływach pracy urządzenia przenośnego magazynu, a następnie przypisz do nich preferowany tryb wprowadzania i typ danych wejściowych. Po wygenerowaniu wszystkich nazw pól, można wybrać następujące opcje wprowadzania.
+Gdy używasz programu Dynamics 365 for Operations — Magazynowanie na urządzeniu komórkowym, można na stronie **Nazwy pól w aplikacji magazynowej** skonfigurować sposób wyświetlania metadanych na urządzeniu. W nowej firmie w programie Dynamics 365 for Operations wybierz opcję **Utwórz konfigurację domyślną**, aby wygenerować wszystkie nazwy pól, które będą używane w przepływach pracy magazynu na urządzeniu, a następnie przypisz do nich preferowany tryb wprowadzania i typ danych wejściowych. Po wygenerowaniu wszystkich nazw pól można wybrać następujące opcje wprowadzania danych:
 
 <table>
 <colgroup>
@@ -51,25 +54,25 @@ Przy użyciu Dynamics 365 dla operacji - magazynowania na urządzeniu przenośny
 <tbody>
 <tr class="odd">
 <td>Preferowany tryb wprowadzania</td>
-<td>Opcja ta określa, czy pole skanowania lub ręcznego wprowadzania pole wejściowe powinien być wyświetlany dla nazwy zaznaczonego pola. Jest to przydatne do rozróżniania pól w zależności od tego, jeśli używane są kody kreskowe dla pola. <strong>Uwaga:</strong> dla nazwy pól z preferowany tryb wprowadzania jest ustawiona na <strong>skanowanie</strong>, można wprowadzić dane ręcznie, jeśli kod kreskowy jest uszkodzony lub nieczytelny.</td>
+<td>Ta opcja określa, czy dla wybranej nazwy pola ma być wyświetlane pole wprowadzania danych przez skanowania, czy przez ręczne wpisywanie. Rozróżnianie pól jest przydatne, jeśli dla pola są używane kody kreskowe. <strong>Uwaga:</strong> Dla nazw pól o preferowanym trybie wprowadzania <strong>Skanowanie</strong> można wprowadzać dane ręcznie, jeśli kod kreskowy jest uszkodzony lub nieczytelny.</td>
 </tr>
 <tr class="even">
 <td>Typ danych wejściowych</td>
-<td>Opcja ta definiuje wejściowego typu stosuje się dla wybranego pola Nazwa. Dostępne są cztery opcje:
+<td>Ta opcja określa, który tryb wprowadzania powinien być stosowany do wybranej nazwy pola. Dostępne są cztery opcje:
 <ul>
-<li><strong>Wybór</strong> - zawiera listę opcji do wyboru. Nazwy pól z tej opcji nie są edytowalne.</li>
-<li><strong>Data</strong> - określony jako data pokaże format daty z etykietą nazw pól. Pomaga to zobaczyć w którym formacie należy wprowadzić datę pracowników magazynu. Nazwy pól z tej opcji nie są edytowalne.</li>
-<li><strong>Alfa</strong> - po zaznaczeniu klawiatury urządzenia będą używane podczas ręcznego wprowadzania informacji w aplikacji. Doświadczenie klawiatury można zmieniać w zależności od tego, które urządzenie jest używane.</li>
-<li><strong>Liczbowe</strong> - dla tego numeryczne użycia tylko odbiór nazwy pól, można wybrać tę opcję, aby wyświetlić niestandardowe numerycznej z pole wprowadzania zamiast klawiatury urządzenia.</li>
+<li><strong>Wybór</strong> - Zawiera listę opcji do wyboru. Nazwy pól z tą opcją nie mogą być edytowane.</li>
+<li><strong>Data</strong> - Nazwy pól określone jako daty będą pokazywały format daty z etykietą. Dzięki temu pracownicy magazynu łatwiej widzą, w jakim formacie należy wpisać datę. Nazwy pól z tą opcją nie mogą być edytowane.</li>
+<li><strong>Alfa</strong> - Gdy wybierzesz tę opcję, podczas ręcznego wprowadzania informacji w aplikacji będzie używana klawiatury urządzenia. Zachowanie klawiatury można zmieniać w zależności od wykorzystywanego urządzenia.</li>
+<li><strong>Numeryczna</strong> - Dla nazw pól wykorzystujących tylko numeryczne dane wejściowe można wybrać tę opcję, a zamiast klawiatury urządzenia będzie wyświetlana niestandardowa klawiatura numeryczna z polem wprowadzania.</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-<a name="configure-warehouse-app-field-priority"></a>Konfigurowanie priorytetu pole aplikacji magazynu
+<a name="configure-warehouse-app-field-priority"></a>Konfigurowanie priorytetu pól w aplikacji magazynowej
 ======================================
 
-Na **Magazyn aplikacji pole Priorytet** stronę, nazwy pól można umieścić w grupach różne priorytety. Dzięki temu można wybrać, jakie informacje mają być wyświetlane na stronie głównej zadania po pracowników magazynu wykonywanie zadań za pomocą aplikacji. Jeśli klikniesz **Utwórz domyślne ustawienia**, zostanie wygenerowany zestaw domyślny priorytet grup. Można utworzyć dowolną liczbę grup priorytetowych, w razie potrzeby, ale tylko trzy grupy priorytet pojawi się na stronie zadania. Przy 365 Dynamics dla operacji wysyła metadanych do aplikacji, będzie przypisanie każdego pola priorytet względny w zależności od jego grupa priorytet, a aplikacja wyświetli pierwszych trzech priorytet grup zawarte w metadanych na stronie zadania. Pozostałe brzegi metadanych pojawi się na stronie szczegółów pomocniczego. Poniższa tabela zawiera przykład pięć grup priorytetowych.
+Na stronie **Priorytet pola w aplikacji magazynowej** można umieścić nazwy pól w różnych grupach priorytetu. Dzięki temu można zdecydować, które informacje mają być wyświetlane na głównej stronie zadań, gdy pracownicy magazynu wykonują zadania za pomocą aplikacji. Jeśli klikniesz opcję **Utwórz konfigurację domyślną**, zostanie wygenerowany domyślny zestaw grup priorytetu. Można utworzyć dowolną potrzebną liczbę grup priorytetu, ale tylko trzy będą wyświetlane na stronie zadania. Gdy program Dynamics 365 for Operations wysyła metadane do aplikacji, przypisuje każdemu polu względny priorytet w zależności od jego grupy priorytetu, a aplikacja wyświetla na stronie zadania pierwsze trzy grupy priorytetu zawarte w metadanych. Pozostała zawartość metadanych będzie wyświetlana na pomocniczej stronie szczegółów. Poniższa tabela pokazuje przykład pięciu grup priorytetu.
 
 <table>
 <colgroup>
@@ -78,7 +81,7 @@ Na **Magazyn aplikacji pole Priorytet** stronę, nazwy pól można umieścić w 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Priorytet grupy</th>
+<th>Grupa priorytetu</th>
 <th>Przypisane pola</th>
 </tr>
 </thead>
@@ -123,25 +126,27 @@ Na **Magazyn aplikacji pole Priorytet** stronę, nazwy pól można umieścić w 
 </tbody>
 </table>
 
-Na przykład, kiedy pracownik magazynu jest wykonywanie zadań na urządzeniu przenośnym, jeśli metadanych, które będą wyświetlane w aplikacji składa się z następujących pól:
+Na przykład gdy pracownik magazynu wykonuje zadanie na urządzeniu przenośnym, a metadane, które będą wyświetlane w aplikacji, składają się z następujących pól:
 
 -   Element
 -   Ilość
 -   Jednostka miary
 -   Opis towaru
--   Rozmiar i położenie
+-   Rozmiar i lokalizacja
 
-Na podstawie magazynu aplikacji pola priorytetu w powyższej tabeli, następujące 3 wierszy zawierających informacje będą wyświetlane na stronie zadania:
+Na podstawie priorytetu pól aplikacji magazynowej skonfigurowanego w tabeli powyżej następujące 3 wiersze informacji będą wyświetlane na stronie zadania:
 
--   Rząd 1: Towaru, ilość, jednostka miary
--   Wiersza 2: Opis towaru
--   Rząd 3A: rozmiar
+-   Wiersz 1: Towar, Ilość, Jednostka miary
+-   Wiersz 2: Opis towaru
+-   Wiersz 3: Rozmiar
 
-Pozostałe metadane, na przykład lokalizacji, nie będą wyświetlane na stronie zadania, ale będą wyświetlane na stronie Szczegóły. Aby dowiedzieć się więcej i zobacz przykłady interfejsu użytkownika, należy zapoznać się z blogu [ogłaszając 365 Dynamics dla operacji - składu](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
+Pozostałe metadane, na przykład Lokalizacja, nie będą wyświetlane na stronie zadania, ale będą wyświetlane na stronie szczegółów. Aby dowiedzieć się więcej i zobaczyć przykłady interfejsu użytkownika, należy się zapoznać z wpisem na blogu [Zapowiedź aplikacji Dynamics 365 for Operations — Magazynowanie](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Instalowanie i konfigurowanie usługi Microsoft Dynamics 365 dla operacji – składu](install-configure-warehousing-app.md)
+[Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Operations — Magazynowanie](install-configure-warehousing-app.md)
+
+
 
 

@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="correct-a-free-text-invoice"></a>Korekta faktury niezależnej
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule wyjaśniono, jak poprawić zaksięgowaną fakturę niezależną i wystawić ją ponownie jako skorygowaną fakturę.
 
-Aby skorygować faktury niezależnej, która została już zaksięgowana, otwórz zaksięgowanej faktury niezależnej. Na **faktury** strony, kliknij **anulowanie**, a następnie wybierz **skorygowania faktury**. Wybierz kod przyczyny, dodaj komentarz i wybierz datę dla nowej, poprawionej faktury. Możesz zmodyfikować skorygowaną fakturę i zaksięgować ją. 
+Aby skorygować fakturę niezależną, która została zaksięgowana, otwórz ją. Na stronie **Faktura** wybierz opcję **Anuluj**, a następnie wybierz opcję **Poprawianie faktury**. Wybierz kod przyczyny, dodaj komentarz i wybierz datę dla nowej, poprawionej faktury. Możesz zmodyfikować skorygowaną fakturę i zaksięgować ją. 
 
 Podczas księgowania skorygowanej faktury tworzona jest faktura anulująca dla kwoty po stronie kredytowej, która jest równa kwocie pierwotnej faktury. W efekcie saldo połączone oryginalnej faktury i faktury anulującej wynosi 0 (zero). Faktura anulująca jest księgowana względem oryginalne faktury. 
 
@@ -43,9 +46,11 @@ Po zaksięgowaniu skorygowanej faktury, masz trzy faktury:
 Faktury anulujące i korygujące można określić na dwa sposoby:
 
 -   Strona **Wszystkie faktury niezależne** zawiera kolumnę **korekta**, na której widać, które faktury są fakturami anulującymi, a które są fakturami korygującymi.
--   Nagłówek faktury niezależnej, wskazuje stan **anulowanie faktury '\[numer faktury\]'** lub **skorygować faktury '\[numer faktury\]'**.
+-   Nagłówek faktury niezależnej pokazuje stan **Anulowanie faktury „\[numer faktury\]”** lub **Skorygowana faktura „\[numer faktury\]”**.
 
 > [!NOTE]
-> Ta funkcja jest dostępna tylko wtedy, gdy **wolny Korekta faktury tekstu** wybrano klucz konfiguracji.
+> Ta funkcja jest dostępna tylko, jeśli wybrany jest klucz konfiguracji **Poprawianie faktury niezależnej**.
+
+
 
 

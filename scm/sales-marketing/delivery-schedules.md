@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="delivery-schedules"></a>Harmonogramy dostaw
 
+[!include[banner](../includes/banner.md)]
+
+
 Harmonogramy dostaw umożliwiają śledzenie ilości w wierszu zamówienia, gdy jest używanych wiele dostaw dla jednego zamówienia sprzedaży, oferty sprzedaży lub zamówienia zakupu.
 
-Harmonogram dostaw należy użyć, gdy całkowita ilość w wierszu zamówienia lub oferty musi zostać dostarczony w kilku dostawach. Indywidualne przesyłki są reprezentowane przez linie dostawy. Dwa lub więcej wierszy zamówienia tworzą harmonogram dostawy. Wiersze dostawy mogą mieć różne daty dostawy, ilości, metody dostawy i wymiary magazynowania, takie jak oddział i magazyn.  
+Harmonogramu dostaw używa się, gdy łączna ilość pozycji w wierszu zamówienia lub oferty musi być dostarczona w wielu wysyłkach. Każdej wysyłce odpowiada osobny wiersz dostawy. Dwa lub więcej wierszy zamówienia tworzą harmonogram dostawy. Wiersze dostawy mogą mieć różne daty dostawy, ilości, metody dostawy i wymiary magazynowania, takie jak oddział i magazyn.  
 
 **Przykład harmonogramu dostaw**
 
@@ -42,7 +45,7 @@ Harmonogram dostaw należy użyć, gdy całkowita ilość w wierszu zamówienia 
 
 W tym scenariuszu klient żąda dostawy 600 krzeseł w partiach po 100 sztuk w okresie 6 miesięcy. Aby śledzić wymagania dostawy, można utworzyć harmonogram dostaw. Na stronie harmonogram dostaw można utworzyć sześć osobnych wierszy dostawy. Każdy wiersz dostawy zawiera 100 krzeseł i wskazuje datę ich dostarczenia do odbiorcy. W tym przypadku każdy wiersz jest przesunięty na pierwsze dni kolejnych sześciu miesięcy.  
 
-Tworząc harmonogram dostaw, typ wiersza oryginalnego zamówienia jest automatycznie zmieniany na **Wiersz zamówienia z wieloma dostawami**. Wiersz tego typu jest określany jako wiersz handlowy i jest oznaczony ikoną. Wiersz dostawy jest oznaczony inną ikoną. Jeśli użytkownik zmienia ilość w wierszu dostawy, handlowych wiersz zostanie zaktualizowany do całkowitej ilości harmonogram dostaw. Jeśli umowa handlowa zdefiniował Rabat końcowy dla zamówienia, harmonogram dostaw zapewnia, że zamówienie jest kwalifikujących się do rabatu zamówienia, nawet wtedy, gdy zamówienie jest podzielone na poszczególne dostawy.  
+Tworząc harmonogram dostaw, typ wiersza oryginalnego zamówienia jest automatycznie zmieniany na **Wiersz zamówienia z wieloma dostawami**. Wiersz tego typu jest określany jako wiersz handlowy i jest oznaczony ikoną. Wiersz dostawy jest oznaczony inną ikoną. Jeśli zmienisz ilość w wierszu dostawy, wiersz handlowy zostanie zaktualizowany do łącznej ilości harmonogramu dostawy. Jeśli w umowie handlowej zdefiniowano łączny rabat na zamówienie, harmonogram dostaw zapewnia, że zamówienie będzie kwalifikowało się do otrzymania rabatu końcowego, nawet jeśli zostanie podzielone na osobne dostawy.  
 
 Zamówienia z harmonogramem dostaw są przetwarzane na podstawie wierszy dostawy. Przetwarzanie obejmuje księgowanie dokumentów dostawy, dokumentów przyjęcia produktów, i fakturowanie.  
 
@@ -53,5 +56,7 @@ Wydruki dokumentów zamówień i ofert z harmonogramem dostaw zawierają tylko w
 -   Przeglądanie stron listy i raportów
 
 W przypadku potwierdzenia oferty sprzedaży wyświetlane zamówienia sprzedaży będą zawierały cały harmonogram dostaw, łącznie z wierszami zamówienia, dla których określono wiele dostaw. Ponadto cały harmonogram dostaw jest widoczny na wszystkich głównych stronach, takich jak zamówienia sprzedaży, oferty sprzedaży i zamówienia zakupu.
+
+
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-overview"></a>Omówienie zapotrzebowania na zakup
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano przepływ pracy zapotrzebowania na zakup oraz różne stany, jakie może przyjmować zapotrzebowanie na zakup.
 
 W zależności od konfiguracji organizacji, możesz tworzyć zapotrzebowania na zakup dla produktów, których używa organizacja. Zapotrzebowanie na zakup to wewnętrzny dokument, który upoważnia dział zakupów do nabycia towarów lub usług.  
@@ -48,7 +51,7 @@ Można skonfigurować proces przepływu pracy dla zapotrzebowania na zakup, tak 
 
 Na poniższym diagramie przedstawiono stany, które są przypisane do zapotrzebowania na zakup i wiersz zapotrzebowania na zakup w miarę jego przekazywania w procesie przepływu pracy.  
 
-[![Nagłówek zapotrzebowania na zakup i Stanów](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Stany nagłówka i wierszy zapotrzebowania na zakup](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Relacje stanów nagłówka i wierszy zapotrzebowania na zakup
 
@@ -77,7 +80,7 @@ Całościowy stan zapotrzebowania na zakup jest uzależniony od stanu jego wiers
 <td>Jeśli przepływ pracy został skonfigurowany tak, aby wiersze zapotrzebowania na zakup były przesyłane do różnych osób sprawdzających, każdy z nich będzie miał stan <strong>W trakcie przeglądu</strong> lub <strong>Odrzucono</strong>. Stan zapotrzebowania na zakup zostanie zaktualizowany, gdy zakończy się proces przeglądu wszystkich jego wierszy i nie pozostaną do wykonania żadne kroki procesu przeglądu dla danego zapotrzebowania.
 <ul>
 <li><strong>Trwa przegląd</strong> — wiersze zapotrzebowania na zakup zostały przesłane do przeglądu. Po zakończeniu procesu przepływu pracy dla wiersza zapotrzebowania na zakup, stan wiersza nadal ma wartość <strong>Trwa przegląd</strong>, aż zakończy się przegląd wszystkich pozostałych wierszy zapotrzebowania na zakup.</li>
-<li><strong>Odrzucone</strong> – wiersza zapotrzebowania na zakup został odrzucony. Wiersze zapotrzebowania zakupu, które zostały odrzucone mogą być modyfikowane i ponownie przesłany.</li>
+<li><strong>Odrzucone</strong> — Wiersz zapotrzebowania na zakup został odrzucony. Odrzucone wiersze zapotrzebowania na zakup można zmodyfikować i ponownie przesłać do przeglądu.</li>
 </ul>
 Ponowne przesłanie odrzuconego wiersza zamówienia na zakup spowoduje ponowne rozpoczęcie procedury przeglądu dla wszystkich przeglądanych wierszy zamówienia na zakup. <strong>Uwaga:</strong> można wycofać zapotrzebowanie na zakup, które już zostało przesłane. Wycofanie zapotrzebowania na zakup spowoduje również wycofanie jego wszystkich pozostałych wierszy. Wycofane wiersze zapotrzebowania na zakup można usunąć.</td>
 </tr>
@@ -133,7 +136,7 @@ Ponowne przesłanie odrzuconego wiersza zamówienia na zakup spowoduje ponowne r
 Można dystrybuować koszty produktu, który jest uwzględniany w zapotrzebowaniu zakupu, do wielu kont finansowych. Jeśli organizacja używa wymiarów, takich jak centra i działy kosztów, można dystrybuować koszty produktu do wymiarów dla kont finansowych.
 
 ## <a name="requisition-purposes"></a>Cele zapotrzebowania
-Cele zapotrzebowania uelastyczniają proces wypełniania zapotrzebowań. Podczas tworzenia zapotrzebowania można przypisać mu jeden z dwóch celów: zużycie lub uzupełnienie. W zależności od celu zapotrzebowania i ustawieniach organizacji zapotrzebowanie na żądanie mogą być spełnione przez zamówienie zakupu, zlecenie przesunięcia, zlecenie produkcyjne lub kanban.  
+Cele zapotrzebowania uelastyczniają proces wypełniania zapotrzebowań. Podczas tworzenia zapotrzebowania można przypisać mu jeden z dwóch celów: zużycie lub uzupełnienie. W zależności od celu zapotrzebowania i sposobu ustawień organizacji popyt regulowany zapotrzebowaniem może zostać zaspokojony przez zamówienie zakupu, zlecenie przesunięcia, zlecenie produkcyjne lub kartę Kanban.  
 
 W zasadach zaopatrzenia można kontrolować cele zapotrzebowania, które są dostępne podczas tworzenia zapotrzebowania w danej organizacji.
 
@@ -152,7 +155,7 @@ Aby można było używać zapotrzebowań na zakup, których celem jest uzupełni
 ## <a name="purchase-requisitions-and-requests-for-quotation"></a>Zapotrzebowania na zakup i zapytania ofertowe
 W niektórych przypadkach należy uruchomić procesu ZO, aby określić dostawcę i cenę produktów uwzględnionych w zapotrzebowaniu na zakup. ZO może zostać wygenerowane, gdy zapotrzebowanie na zakup jest w przeglądzie. Po zaakceptowaniu oferty, informacje o dostawcy, cenie itd. zostaną przeniesione do zapotrzebowania.  
 
-Można umieścić zapotrzebowania na zakup wstrzymane przez zaznaczenie **wstrzymane** pole wyboru na **szczegóły zapotrzebowania na zakup** strony. Przetwarzanie zapotrzebowania na zakup można kontynuować dopiero po usunięciu blokady przez wyczyszczenie pola wyboru.  
+Można wstrzymać zapotrzebowanie na zakup przez zaznaczenie pola wyboru **Wstrzymane** na stronie **Szczegóły zapotrzebowania na zakup**. Można kontynuować przetwarzanie zapotrzebowania na zakup tylko wtedy, gdy zostanie usunięte zaznaczenie tego pola wyboru.  
 
 **Uwaga:** w eProcurement ZO dla zapotrzebowania na zakup mogą umożliwiać dostawcom dodawanie alternatywnych wierszy. W takim przypadku zapotrzebowanie na zakup będzie zawierało zatwierdzone zmiany.
 
@@ -178,7 +181,7 @@ Aby utworzyć zamówienie zakupu dla wierszy zapotrzebowania na zakup, które ni
 
 Proces konsolidacji popytu rozpoczyna się po zatwierdzeniu zapotrzebowania na zakup w przepływie pracy i — jeśli została skonfigurowana kontrola budżetu dla organizacji — po zarejestrowaniu rezerwacji budżetu i przyszłych zobowiązań niewiążących. Poniższy diagram przedstawia przepływ procesu konsolidacji popytu.  
 
-[![Przebieg procesu konsolidacji popytu](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Przepływ procesu konsolidacji popytu](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 Aby skonsolidować zatwierdzone wiersze zapotrzebowania na zakup, wykonaj następujące kroki:
 
@@ -192,8 +195,10 @@ Aby skonsolidować zatwierdzone wiersze zapotrzebowania na zakup, wykonaj nastę
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Tworzenie zapotrzebowania do spożycia (Przewodnik zadania)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Tworzenie zapotrzebowania na zużycie (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
-[Purchase requisition workflow](purchase-requisitions-workflow.md)
+[Przepływ pracy w zapotrzebowaniu na zakup](purchase-requisitions-workflow.md)
+
+
 
 

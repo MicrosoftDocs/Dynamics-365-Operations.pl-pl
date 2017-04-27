@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="125-percent-reducing-balance-depreciation"></a>125% amortyzacja degresywna
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie metody amortyzacji 125% amortyzacja degresywna.
 
 Po skonfigurowaniu profilu amortyzacji środków trwałych i wybraniu wartości **Degresywna 125%** w polu **Metoda** na stronie **Profile amortyzacji** amortyzacja środków trwałych, które są przypisane do tego profilu amortyzacji, ma taką samą wartość procentową dla każdego okresu amortyzacji. Wartość procentowa jest obliczana na podstawie okresu użytkowania środków. Na przykład, jeżeli okres użytkowania środków wynosi pięć lat, wartość procentowa zostanie obliczona jako 25% (125%/5).
@@ -56,7 +59,7 @@ W przypadku wybrania opcji **Kalendarzowy** jako rok amortyzacji, dostępne są 
 
 W przypadku wybrania opcji **Obrachunkowy** w polu **Rok amortyzacji** amortyzacja degresywna 125% jest obliczana na podstawie roku obrachunkowego z kalendarza obrachunkowego określonego dla księgi lub wybranego na stronie **Księga**. Kalendarze obrachunkowe ustawia się na stronie **Kalendarze obrachunkowe**. 
 
-Na przykład dla roku obrachunkowego 1 lipca do 30 czerwca, obliczanie amortyzacji rozpoczyna się 1 lipca. Rok obrachunkowy może być dłuższy lub krótszy niż 12 miesięcy. Amortyzacja jest automatycznie korygowana dla każdego okresu obrachunkowego, a długość kolejnego roku obrachunkowego jest określona przez okresy obrachunkowe zdefiniowane na stronie **Kalendarze obrachunkowe**. 
+Na przykład dla roku obrachunkowego od 1 lipca do 30 czerwca włącznie obliczanie amortyzacji rozpocznie się 1 lipca. Rok obrachunkowy może być dłuższy lub krótszy niż 12 miesięcy. Amortyzacja jest automatycznie korygowana dla każdego okresu obrachunkowego, a długość kolejnego roku obrachunkowego jest określona przez okresy obrachunkowe zdefiniowane na stronie **Kalendarze obrachunkowe**. 
 
 W przypadku wybrania opcji **Fiskalny** jako rok amortyzacji, w polu **Częstotliwość okresu** dostępne są następujące opcje:
 
@@ -81,6 +84,8 @@ Metoda amortyzacji degresywnej 125% dzieli wartość 125% między lata okresu u�
 | Rok 3 | 5625 × 25% = 1406,25                        | (6625 – 1406,25) = 5218,75 | (5625 – 1406,25) = 4218,75         |
 
 > [!NOTE] 
-> Zazwyczaj, gdy kwota, która jest obliczana przy użyciu 125% zmniejszenie metody amortyzacji degresywnej staje się mniej niż kwota, która może być obliczona za pomocą metody liniowej jest konwersja do metody liniowej za pozostały okres użytkowania.
+> Zwykle kiedy kwota, która jest obliczana przy użyciu metody amortyzacji degresywnej 125%, stanie się niższa od kwoty, która może zostać obliczona za pomocą metody liniowej, następuje przejście do metody liniowej dla pozostałego okresu użytkowania.
+
+
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-effects-with-reversals"></a>Przykłady wyników amortyzacji z cofnięciami
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano potencjalne skutki stornowania transakcji na środkach trwałych. 
 
 Można cofać transakcje dotyczące środka trwałego oraz transakcje skojarzone ze środkiem trwałym. Można też anulować wycofaną transakcję. 
@@ -90,6 +93,8 @@ Amortyzacja jest zaniżona o 16,95 (983,62 – 966,67).
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Amortyzacja środka trwałego](fixed-asset-depreciation.md)
+
+
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Zapasów dostępnych mobilnych obszaru roboczego Microsoft Dynamics 365 dla operacji aplikacji"
-description: "Obszar roboczy mobilnych dostępnych zapasów pozwala uzyskać mobilnych wgląd w informacje zastrzeżone i dostępnych zapasów, zawsze i wszędzie."
+title: "Mobilny obszar roboczy Dostępne zapasy dla aplikacji Microsoft Dynamics 365 for Operations"
+description: "Mobilny obszar roboczy Dostępne zapasy pomaga uzyskać na urządzeniach komórkowych wgląd w zapasy zarezerwowane i dostępne w każdym miejscu i czasie."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,72 +25,72 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="inventory-on-hand-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Zapasów dostępnych mobilnych obszaru roboczego Microsoft Dynamics 365 dla operacji aplikacji
+# <a name="inventory-on-hand-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Mobilny obszar roboczy Dostępne zapasy dla aplikacji Microsoft Dynamics 365 for Operations
 
-Obszar roboczy mobilnych dostępnych zapasów pozwala uzyskać mobilnych wgląd w informacje zastrzeżone i dostępnych zapasów, zawsze i wszędzie. 
+Mobilny obszar roboczy Dostępne zapasy pomaga uzyskać na urządzeniach komórkowych wgląd w zapasy zarezerwowane i dostępne w każdym miejscu i czasie. 
 
 <a name="prerequisites"></a>Wymagania wstępne
 -------------
 
 | Wymaganie wstępne                                                         | opis                                                                                                                                        |
 |----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Przeczytaj na temat usługi Microsoft Dynamics 365 dla operacji platformy mobilnej | [Dynamics 365 dla operacji platformy mobilnej](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                   |
-| Dynamics 365 dla operacji                                          | Środowisku Microsoft Dynamics 365 dla wersji operacji 1611 i Microsoft Dynamics dla operacji platformy aktualizacji 3 (listopad 2016) |
-| Poprawka KB 3215650                                                    | Zainstaluj poprawkę, aby włączyć obszary robocze, które znajdują się w sieci Microsoft Dynamics 365 dla operacji.                                       |
-| Przenośne urządzenie, które ma 365 Dynamics dla operacji zainstalowaną aplikację | Pobierz 365 Dynamics dla operacji aplikacji ze sklepu internetowego.                                                                           |
+| Przeczytaj na temat platformy mobilnej Microsoft Dynamics 365 for Operations | [Platforma komórkowa Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                   |
+| Dynamics 365 for Operations                                          | Środowisko, w którym zainstalowano program Microsoft Dynamics 365 for Operations w wersji 1611 oraz aktualizację nr 3 platformy Microsoft Dynamics 365 for Operations (z listopada 2016 r.) |
+| Poprawka KB 3215650                                                    | Zainstaluj poprawkę, która włączy obsługę obszarów roboczych zawartych w usłudze Microsoft Dynamics 365 for Operations.                                       |
+| Urządzenie przenośne, które ma zainstalowaną aplikację Dynamics 365 for Operations | Pobierz aplikację Dynamics 365 for Operations ze sklepu z aplikacjami dla urządzeń komórkowych.                                                                           |
 
 ## <a name="introduction"></a>Wprowadzenie
-Zazwyczaj firmy mają wiele wydaniami i przyjęciami wielu zapasów każdego dnia. Przesunięcia te stale zmianę stanu dostępnych zapasów. Obszar roboczy mobilnych dostępnych zapasów pozwala sprawdzić stan międzyfirmowej dostępnych zapasów, tak, aby można było uzyskać najnowsze informacje do magazynu danych na urządzeniu przenośnym, wybranych przez użytkownika. Niezależnie od tego, czy pracujesz w magazynie, zakupów, sprzedaży, produkcji lub zarządzania, lub mieć inne role można dostęp do danych dostępnych zapasów, zawsze i wszędzie. Mobilne obszar roboczy zapewnia natychmiastowy przegląd stanu dostępnych zapasów w udogodnienia i umożliwia wyświetlanie dostępnych zapasów na udogodnienia, bieżących rezerwacji materiału i bezwarunkowe dostępnych zapasów. Można również wprowadzić numery zapasów do kwerendy dostępnych zapasów i wykonywać filtrowane wyszukiwanie dostępnych produktów lub wariantów. W szczególności przenośnych obszar roboczy oferuje następujące funkcje:
+Zazwyczaj firmy codziennie wykonują wiele wydań i przyjęć zapasów. Te przesunięcia cały czas zmieniają stan dostępnych zapasów. Mobilny obszar roboczy Dostępne zapasy pozwala widzieć stan dostępnych zapasów w całej organizacji, wykorzystując do tego dowolne urządzenie komórkowe. Niezależnie od tego, czy pracujesz w magazynie, zakupach, sprzedaży, produkcji czy administracji, lub czy masz inne role, informacje o dostępnych zapasach możesz sprawdzać w każdym miejscu i czasie. Mobilny obszar roboczy zapewnia natychmiastowy wgląd w stan dostępnych zapasów we wszystkich zakładach. Pokazuje m.in. dostępne zapasy w poszczególnych obiektach, bieżące rezerwacje materiałów oraz niezarezerwowane dostępne zapasy. Można również wpisać numery towarów, aby sprawdzić dostępność zapasów, i wykonywać filtrowane wyszukiwanie dostępnych produktów lub wariantów. W szczególności mobilny obszar roboczy oferuje następujące funkcje:
 
--   Możesz określić numer produktu lub nazwa produktu znaleźć produkty można wyświetlić stan dostępnych zapasów.
+-   Można szukać według numeru produktu lub nazwy produktu, aby znaleźć produkty, dla których chcesz sprawdzić stan dostępności zapasów.
 -   Dla wybranych produktów można wyświetlić następujące informacje:
-    -   Dostępne zapasy dla każdej witryny
-    -   Dostępnych zapasów na magazyn
+    -   Dostępne zapasy według oddziału
+    -   Dostępne zapasy według magazynu
     -   Dostępne zapasy według lokalizacji
-    -   Dostępne zapasy na partię (dla kontrolowanych partii produktów)
-    -   Dostępne zapasy na stan zapasów
+    -   Dostępne zapasy według partii (dla produktów wchodzących w skład partii)
+    -   Dostępne zapasy według stanu zapasów
 
 <!-- -->
 
--   Produkt dostępnych zapasów jest pokazywana w następujący sposób:
-    -   Przez Magazyn fizyczny (w tym widoku odpowiada całkowitej kwocie).
-    -   Przez fizyczne zarezerwowane (Widok przedstawia kwoty zarezerwowane).
-    -   Przez fizyczne dostępne (ten widok reprezentuje dostępna kwota, która nie ma żadnych zastrzeżeń.)
+-   Dostępne zapasy produktów są pokazywane w następujący sposób:
+    -   Według zapasów fizycznych (widok przedstawia łączną ilość)
+    -   Według fizycznie zarezerwowanych zapasów (widok przedstawia ilość zarezerwowaną)
+    -   Według fizycznie dostępnych zapasów (ten widok przedstawia dostępną ilość, która nie ma żadnych rezerwacji)
 
 ## <a name="get-started"></a>Rozpocznij
 Aby rozpocząć pracę na urządzeniu przenośnym:
 
-1.  Ze sklepu internetowego Pobierz i zainstaluj usługi Microsoft Dynamics 365 dla operacji aplikacji.
+1.  W sklepie z aplikacjami dla urządzeń komórkowych pobierz i zainstaluj aplikację Microsoft Dynamics 365 for Operations.
 2.  Uruchom aplikację na urządzeniu.
-3.  Podaj adres URL Dynamics 365.
-4.  Wprowadzić firmę do logowania się. Na przykład wpisz **USMF**.
-5.  Podczas pierwszego logowania, zostanie wyświetlony monit o nazwę użytkownika i hasło dla sieci Microsoft Dynamics 365 dla konta operacji. Wprowadź swoje poświadczenia. Po zalogowaniu się, można wyświetlić dostępne obszary robocze firmy.
+3.  Wprowadź adres URL usługi Dynamics 365.
+4.  Wpisz firmę, do której chcesz się zalogować. Na przykład wpisz **USMF**.
+5.  Podczas pierwszego logowania zostanie wyświetlony monit o podanie nazwy użytkownika i hasła dostępu do konta programu Microsoft Dynamics 365 for Operations. Wprowadź swoje poświadczenia. Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy.
 
-Aby wyświetlić obszary robocze w aplikacji mobilnej, należy najpierw opublikować żądane obszary robocze do 365 Dynamics dla operacji aplikacji.
+Aby widzieć obszary robocze w aplikacji mobilnej, należy najpierw opublikować żądane obszary w aplikacji Dynamics 365 for Operations.
 
-1.  Uruchom system Dynamics 365 dla operacji.
-2.  Przejdź do **Administracja systemu**&gt;**instalacji**&gt;**parametrów systemu**.
-3.  Wybierz **Opcje aplikacji mobilnych**.
-4.  Wybierz obszar roboczy, aby opublikować mobilnej platformie.
-5.  Wybierz **obszaru roboczego opublikować**.
-6.  Odśwież swoje urządzenie, aby sprawdzić opublikowanych obszarów roboczych.
+1.  Uruchom program Dynamics 365 for Operations.
+2.  Wybierz kolejno opcje **Administrowanie systemem** &gt; **Ustawienia** &gt; **Parametry systemu**.
+3.  Wybierz opcję **Zarządzaj aplikacją mobilną**.
+4.  Wybierz obszar roboczy, aby go opublikować na platformie mobilnej.
+5.  Wybierz opcję **Opublikuj obszar roboczy**.
+6.  Odśwież swoje urządzenie, a zobaczysz opublikowane obszary robocze.
 
-## <a name="view-the-onhand-inventory-for-a-product"></a>Wyświetl stan zapasów magazynowych dla produktu
-1.  Na urządzeniu przenośnym, wybierz **dostępnych zapasów** obszaru roboczego.
-2.  Wybierz **Sprawdź dostępne zapasy dla elementu**. Zobacz listę produktów, które są ładowane do aplikacji w trybie offline. Domyślnie elementy 50 są załadowane, ale można zmienić ten numer. Aby uzyskać więcej informacji zobacz Podręcznik wstępnie odczytu.
-3.  Jeśli przedmiot nie ma na liście, wybierz opcję **Wyszukaj więcej** do online wyszukiwania w usłudze Dynamics 365 dla operacji. Wyszukaj według numeru produktu, lub przełącz się do wyszukiwania według nazwy produktu.
-4.  Wybierz produkt. Jeśli element ma obrazu, obraz jest wyświetlany.
+## <a name="view-the-onhand-inventory-for-a-product"></a>Wyświetlanie dostępnych zapasów produktu
+1.  Na urządzeniu przenośnym wybierz obszar roboczy **Dostępne zapasy**.
+2.  Wybierz opcję **Sprawdź dostępne zapasy towaru**. Zobacz listę produktów załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 towarów, ale można zmienić tę liczbę. Aby uzyskać więcej informacji, zapoznaj się z podręcznikiem wprowadzającym.
+3.  Jeśli towaru nie ma na liście, wybierz opcję **Wyszukaj więcej**, aby wykonać wyszukiwanie online w usłudze Dynamics 365 for Operations. Poszukaj według numeru produktu lub przełącz na wyszukiwanie według nazwy produktu.
+4.  Wybierz produkt. Jeśli towar ma ilustrację, zostanie ona wyświetlona.
 5.  Wybierz jedną z poniższych opcji, aby wyświetlić stan dostępnych zapasów:
-    -   Przeglądaj dostępne zapasy dla każdej witryny
-    -   Wyświetlanie dostępnych zapasów na magazyn
-    -   Wyświetl dostępne zapasy według lokalizacji
-    -   Przeglądaj dostępne zapasy na partię (dla kontrolowanych partii produktów)
-    -   Wyświetl dostępne zapasy według stanu zapasów
+    -   Wyświetl dostępne wg oddziału
+    -   Wyświetl dostępne wg magazynu
+    -   Wyświetl dostępne wg lokalizacji
+    -   Wyświetl dostępne wg partii (dla produktów wchodzących w skład partii)
+    -   Wyświetl dostępne wg stanu zapasów
 
-    Produkt dostępnych zapasów jest pokazywana w następujący sposób:
-    -   Przez Magazyn fizyczny (w tym widoku odpowiada całkowitej kwocie).
-    -   Przez fizyczne zarezerwowane (Widok przedstawia kwoty zarezerwowane).
-    -   Przez fizyczne dostępne (w tym widoku reprezentuje dostępna kwota, która nie ma żadnych zastrzeżeń).
+    Dostępne zapasy produktów są pokazywane w następujący sposób:
+    -   Według zapasów fizycznych (widok przedstawia łączną ilość)
+    -   Według fizycznie zarezerwowanych zapasów (widok przedstawia ilość zarezerwowaną)
+    -   Według fizycznie dostępnych zapasów (ten widok przedstawia dostępną ilość, która nie ma żadnych rezerwacji)
 
 
 

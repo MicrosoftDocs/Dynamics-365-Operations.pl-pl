@@ -1,6 +1,6 @@
 ---
 title: "Definiowanie i obsługa kanałów sprzedaży detalicznej"
-description: "Ten artykuł zawiera omówienie procesu konfigurowania cegły i zaprawy sklepach, które są określane jako sklepów detalicznych w usłudze Microsoft Dynamics 365 dla operacji. Znajdują się tu informacje o zadaniach, które należy wykonać przed i po skonfigurowaniu sklepu detalicznego."
+description: "Ten artykuł zawiera omówienie procesu konfigurowania sklepów tradycyjnych (fizycznych), określanych jako „sklepy detaliczne” (sklepy sieci sprzedaży) w programie Microsoft Dynamics 365 for Operations. Znajdują się tu informacje o zadaniach, które należy wykonać przed i po skonfigurowaniu sklepu detalicznego."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
 ms.search.region: Global
@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="define-and-maintain-retail-channels"></a>Definiowanie i obsługa kanałów sprzedaży detalicznej
 
-Ten artykuł zawiera omówienie procesu konfigurowania cegły i zaprawy sklepach, które są określane jako sklepów detalicznych w usłudze Microsoft Dynamics 365 dla operacji. Znajdują się tu informacje o zadaniach, które należy wykonać przed i po skonfigurowaniu sklepu detalicznego.
+[!include[banner](includes/banner.md)]
 
-Handel detaliczny i handlu w usłudze Dynamics 365 dla operacji obsługuje wiele kanałów sprzedaży detalicznej, takie jak sklepy, biura obsługi i cegły i zaprawy sklepów. W module Handel detaliczny i inny sklep tradycyjny jest nazywany sklepem detalicznym. Każdy sklep detaliczny ma własne metody płatności, grupy cenowe, kasy punktów sprzedaży, konta przychodów i wydatków oraz personel. Wszystkie te elementy sklepu detalicznego należy skonfigurować przed jego utworzeniem. Po utworzeniu sklepu detalicznego, można przypisać produkty, które mają trafić do sklepu. Rejestry, pracowników i odbiorców również można przypisać do sklepu. Na koniec należy dodać nowy sklep do hierarchii organizacyjnej.
+
+Ten artykuł zawiera omówienie procesu konfigurowania sklepów tradycyjnych (fizycznych), określanych jako „sklepy detaliczne” (sklepy sieci sprzedaży) w programie Microsoft Dynamics 365 for Operations. Znajdują się tu informacje o zadaniach, które należy wykonać przed i po skonfigurowaniu sklepu detalicznego.
+
+Moduł Handel detaliczny i inny w programie Dynamics 365 for Operations obsługuje wiele kanałów sieci sprzedaży, takich jak sklepy internetowe, biura obsługi i sklepy tradycyjne. W module Handel detaliczny i inny sklep tradycyjny jest nazywany sklepem detalicznym. Każdy sklep detaliczny ma własne metody płatności, grupy cenowe, kasy punktów sprzedaży, konta przychodów i wydatków oraz personel. Wszystkie te elementy sklepu detalicznego należy skonfigurować przed jego utworzeniem. Po utworzeniu sklepu detalicznego, można przypisać produkty, które mają trafić do sklepu. Rejestry, pracowników i odbiorców również można przypisać do sklepu. Na koniec należy dodać nowy sklep do hierarchii organizacyjnej.
 
 ## <a name="setting-up-retail-stores"></a>Konfigurowanie sklepów detalicznych
-Przed zdefiniowaniem sklepie detalicznym w usłudze Dynamics 365 dla operacji należy wykonać niektórych wstępnie wymaganych zadań. Następnie można utworzyć sklep detaliczny i dodać szczegóły.
+Przed skonfigurowaniem sklepu detalicznego w programie Dynamics 365 for Operations należy wykonać niektóre zadania wymagań wstępnych. Następnie można utworzyć sklep detaliczny i dodać szczegóły.
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
@@ -49,7 +52,7 @@ Przed skonfigurowaniem sklepu detalicznego należy wykonać następujące zadani
 8.  Konfigurowanie produktów sieci sprzedaży. W ramach tego zadania należy także skonfigurować hierarchie produktów sieci sprzedaży, asortymentów produktów i wariantów produktu.
 9.  Konfigurowanie grup cenowych produktów.
 10. Konfigurowanie kalkulacji cen produktu sieci sprzedaży. W ramach tego zadania można również ustawić korekty cen, rabaty i okresy rabatu.
-11. Konfigurowanie członków personelu. **Uwaga:** należy również przypisać odpowiednie uprawnienia dla pracowników, aby zalogować się i wykonywać zadania za pomocą Dynamics 365 dla operacji systemu Retail POS.
+11. Konfigurowanie członków personelu. **Uwaga:** Należy również przypisać odpowiednie uprawnienia do pracowników, tak aby mogli się logować i wykonywać zadania za pomocą systemu Dynamics 365 for Operations z aplikacją Retail POS.
 12. Konfigurowanie profilów Retail POS, które mają zostać przypisane do danego sklepu. Konfigurowanie profilów obejmuje wiele zadań, takich jak konfigurowanie rejestrów, konfigurowanie profilów trybu offline i konfigurowanie profilów i formatów paragonu.
 
 Przejrzyj wszystkie zadania zawarte w wymaganiach wstępnych i wykonaj tylko te, które odnoszą się do Ciebie.
@@ -77,5 +80,7 @@ Po wprowadzeniu szczegółów sklepu detalicznego zakończ te zadania, aby wysł
 
 ## <a name="organization-hierarchies"></a>Hierarchie organizacyjne
 Handel detaliczny używa hierarchii organizacyjnych w systemie Microsoft Dynamics AX do struktury w kanałach sprzedaży detalicznej. Hierarchie organizacji reprezentują relacje między organizacjami, które składają się na działalność. Podczas konfigurowania sklepów, można je dodawać do hierarchii organizacyjnej. Sklepy współdzielą wówczas dane używane do asortymentów, uzupełnienia i raportów.
+
+
 
 

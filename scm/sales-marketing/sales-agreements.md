@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-agreements"></a>Umowy sprzedaży
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o umowach sprzedaży. Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktów w określonej ilości lub za określoną kwotę w ustalonym czasie w zamian za specjalne ceny i rabaty.
 
 Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktu w pewnej ilości lub kwocie w pewnym okresie czasu w zamian za specjalne ceny i rabaty, oraz z zachowaniem wszelki warunków specjalnych, takich jak warunki płatności i dostawy. Ceny i rabaty dla umowy zakupu zastępują ceny i rabaty, które są określone w jakichkolwiek istniejących umowach handlowych.  
@@ -36,7 +39,7 @@ Okres ważności wiersza umowy sprzedaży jest definiowany na postawie pól **Da
 
 Zamówienie sprzedaży można utworzyć bezpośrednio z umowy sprzedaży za pomocą działania **Zwolnij zamówienie**. Ewentualnie można wybrać obowiązującą umowę sprzedaży podczas przyjmowania zamówień (zobacz sekcję „Stosowanie umów sprzedaży w procesie zamawiania” w tym artykule).  
 
-**Uwaga:** w starszych wersjach, umowy sprzedaży zostały określone jako zbiorczych zamówień sprzedaży.
+**Uwaga:** W poprzednich wersjach umowy sprzedaży były nazywane zbiorczymi zamówieniami sprzedaży.
 
 ## <a name="commitment-types"></a>Typy zobowiązania
 Każdy wiersz umowy sprzedaży jest zobowiązaniem do zakupu czegoś. Ogólnie są dwie kategorie zobowiązania:
@@ -93,21 +96,23 @@ Po utworzeniu (zwolnieniu) zamówienia sprzedaży z umowy sprzedaży niektóre p
 | Pole                                                             | Opis                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Żądana data wysyłki                                               | Jeśli zmienisz żądaną datę wysyłki na datę wcześniejszą niż **Data obowiązywania** określona w wierszu umowy sprzedaży, trzeba usunąć łącze do wiersza umowy sprzedaży, aby można było zapisać zmienioną datę wysyłki. Jeśli zmienisz żądaną datę wysyłki na datę późniejszą niż **Data ważności** określona w wierszu umowy sprzedaży, trzeba usunąć łącze do wiersza umowy sprzedaży, aby można było zapisać zmienioną datę wysyłki. |
-| Kwota CurrencyDiscount, percentDiscountUnit, pricePrice, unitNet | Jeśli zmienisz wartość w którymkolwiek z tych pól i jeśli pole wyboru **Cena i rabat są stałe** jest zaznaczone w wierszu skojarzonej umowy sprzedaży, wyświetlane jest pole umożliwiające zapisanie zmian. Kliknij **tak** Aby usunąć łącze do wiersza umowy sprzedaży i ponowne obliczenie ceny. Kliknij **nr** usunąć łącze do wiersza umowy sprzedaży bez ponownego obliczenia ceny.                                                                   |
-| Kwota netto                                                        | Jeśli określisz kwotę, która przewyższa kwotę określoną w wierszu umowy sprzedaży, i jeśli pole **Wymuszono maks.** jest zaznaczone, wyświetlany jest monit o zapisanie zmienionej kwoty. Kliknij **tak** Aby usunąć łącze do wiersza umowy sprzedaży i ponowne obliczenie ceny. Kliknij **nr** usunąć łącze do wiersza umowy sprzedaży bez ponownego obliczenia ceny.                                                                 |
-| Ilość                                                          | Jeśli określisz ilość, która przewyższa ilość określoną w wierszu umowy sprzedaży, i jeśli pole **Wymuszono maks.** jest zaznaczone, wyświetlany jest monit o zapisanie zmienionej ilości. Kliknij **tak** Aby usunąć łącze do wiersza umowy sprzedaży i ponowne obliczenie ceny. Kliknij **nr** usunąć łącze do wiersza umowy sprzedaży bez ponownego obliczenia ceny.                                                            |
+| Kwota CurrencyDiscount, percentDiscountUnit, pricePrice, unitNet | Jeśli zmienisz wartość w którymkolwiek z tych pól i jeśli pole wyboru **Cena i rabat są stałe** jest zaznaczone w wierszu skojarzonej umowy sprzedaży, wyświetlane jest pole umożliwiające zapisanie zmian. Kliknij opcję **Tak**, aby usunąć łącze do wiersza umowy sprzedaży i ponownie obliczyć cenę. Kliknij opcję **Nie**, aby usunąć łącze do wiersza umowy sprzedaży bez przeliczania ceny.                                                                   |
+| Kwota netto                                                        | Jeśli określisz kwotę, która przewyższa kwotę określoną w wierszu umowy sprzedaży, i jeśli pole **Wymuszono maks.** jest zaznaczone, wyświetlany jest monit o zapisanie zmienionej kwoty. Kliknij opcję **Tak**, aby usunąć łącze do wiersza umowy sprzedaży i ponownie obliczyć cenę. Kliknij opcję **Nie**, aby usunąć łącze do wiersza umowy sprzedaży bez przeliczania ceny.                                                                 |
+| Ilość                                                          | Jeśli określisz ilość, która przewyższa ilość określoną w wierszu umowy sprzedaży, i jeśli pole **Wymuszono maks.** jest zaznaczone, wyświetlany jest monit o zapisanie zmienionej ilości. Kliknij opcję **Tak**, aby usunąć łącze do wiersza umowy sprzedaży i ponownie obliczyć cenę. Kliknij opcję **Nie**, aby usunąć łącze do wiersza umowy sprzedaży bez przeliczania ceny.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Zwracanie towaru zamówionego z umowy sprzedaży
-Gdy klient zwraca zamówionego produktu z umowy sprzedaży, Microsoft Dynamics 365 dla operacji można znaleźć i automatycznie Aktualizuj zobowiązania powiązana umowa sprzedaży w celu odzwierciedlenia zmian w ilości lub kwoty. Tworząc zamówienie zwrotu oparte na oryginalnym zamówieniu sprzedaży, które jest połączone z umową sprzedaży, można ustalić stosunek między zobowiązaniem z umowy sprzedaży, wierszem zamówienia sprzedaży i fakturą zamówienia zwrotu.  
+W przypadku zwrotu przez odbiorcę produktu, który został zamówiony na podstawie umowy sprzedaży, program Microsoft Dynamics 365 for Operations może odnaleźć powiązane zobowiązanie w umowie sprzedaży i automatycznie je zaktualizować, uwzględniając zmianę kwoty lub ilości. Tworząc zamówienie zwrotu oparte na oryginalnym zamówieniu sprzedaży, które jest połączone z umową sprzedaży, można ustalić stosunek między zobowiązaniem z umowy sprzedaży, wierszem zamówienia sprzedaży i fakturą zamówienia zwrotu.  
 
 Jeśli nie chcesz, aby ilość zwróconych towarów była odejmowana ze zobowiązania z umowy sprzedaży, możesz użyć formantu **Usuwanie łącza** na stronie **Zwróć zamówienie**, aby usunąć łącze między zamówieniem zwrotu i zobowiązaniem z umowy sprzedaży. Jeśli później trzeba ponownie utworzyć łącze, kliknij przycisk **Utwórz łącze**.  
 
 **Uwaga:** zamówienie zwrotu można łączyć tylko z jedną umową sprzedaży. Jeśli odbiorca zwraca więcej niż jeden produkt, który zamówił z więcej niż jednej umowy sprzedaży, należy utworzyć nowe zamówienie zwrotu dla każdego produktu i łącze do odpowiedniej umowy sprzedaży.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Automatyczne wyszukiwanie umów sprzedaży
-W niektórych sytuacjach, w których zamówienia sprzedaży są tworzone pośrednio takie jak podczas tworzenia faktury korygującej lub międzyfirmowe zamówienia sprzedaży, można kontrolować czy Microsoft Dynamics 365 dla operacji automatycznie wyszukuje stosowne umowy sprzedaży.
+W pewnych sytuacjach, kiedy zamówienia sprzedaży są tworzone bezpośrednio, np. gdy tworzona jest faktura korygująca lub międzyfirmowe zamówienia sprzedaży, można określi, czy program Microsoft Dynamics 365 for Operations ma automatycznie wyszukiwać odnośne umowy sprzedaży.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Wymiary finansowe umów sprzedaży
 Wymiary finansowe można skopiować do nagłówków dokumentu lub pojedynczych wierszy umowy sprzedaży. W każdej chwili można zmienić wymiary w nagłówku umowy lub wiersza umowy. W takim przypadku wymiary są automatycznie kopiowane do nagłówka zwolnienia lub wiersza zwolnienia na zleceniach zwolnienia.
+
+
 
 

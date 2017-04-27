@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-the-properties-of-a-workflow"></a>Konfigurowanie właściwości przepływu pracy
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym temacie wyjaśniono sposób konfigurowania różnych właściwości przepływu pracy.
 
 Aby skonfigurować właściwości przepływu pracy, otwórz przepływ pracy w edytorze przepływu pracy. Kliknij w obszarze roboczym edytora przepływu pracy, a następnie kliknij przycisk **Właściwości**, aby otworzyć stronę **Właściwości**. Można użyć poniższych procedur, aby skonfigurować różne właściwości przepływu pracy.
@@ -147,10 +150,10 @@ Podczas przesyłania dokumentu do przetwarzania tworzone jest wystąpienie przep
     </tr>
     <tr class="odd">
     <td>Użytkownik</td>
-    <td>Konkretne 365 Dynamics dla użytkowników operacji</td>
+    <td>Konkretni użytkownicy programu Dynamics 365 for Operations</td>
     <td><ol>
     <li>Na karcie <strong>Odbiorcy</strong> kliknij przycisk <strong>Użytkownik</strong>.</li>
-    <li>Na <strong>użytkownika</strong> kartę, <strong>Dostępni użytkownicy</strong> lista zawiera wszystkie 365 Dynamics dla użytkowników operacji. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Na karcie <strong>Użytkownik</strong> lista <strong>Dostępni użytkownicy</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -165,6 +168,8 @@ Aby wprowadzić komentarze dotyczące zmian zastosowanych w przepływie pracy, n
 2.  W polu **Wprowadź komentarze dotyczące przepływu pracy** wprowadź komentarze.
 3.  Przejrzyj wprowadzone komentarze. Po dodaniu komentarzy nie można ich modyfikować.
 4.  Kliknij przycisk **Dodaj**, aby dodać komentarze do obszaru **Historia komentarzy**.
+
+
 
 
 

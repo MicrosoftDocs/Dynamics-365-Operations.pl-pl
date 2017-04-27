@@ -26,16 +26,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="financial-dimensions-and-main-accounts-in-a-right-to-left-language"></a>Wymiary finansowe i konta główne w języku z pisownią od prawej do lewej
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym temacie opisano niektóre decyzje wdrożeniowe, które należy podjąć w przypadku używania języka z pisownią od prawej do lewej w programie Microsoft Dynamics 365 for Operations, gdy trzeba skonfigurować wymiary finansowe i konta główne.
 
 Wymiary finansowe i konta główne są kluczowymi składnikami fazy planowania we wdrożeniu. Po utworzeniu wymiarów finansowych i kont głównych w systemie są one używane na stronach **Skonfiguruj strukturę konta**, **Struktury reguł zaawansowanych** i **Konfiguracja wymiaru finansowego dla aplikacji integrujących**. Kolejność zdefiniowana na tych stronach jest używany w systemie do wprowadzania danych i zużycia. W niektórych miejscach w systemie wymiary finansowe i konta główne są wyświetlane w oddzielnych polach. Jednak w innych miejscach, takich jak arkusze, wymiary finansowe i konta główne są wyświetlane jako jeden ciąg znaków.
 
 ### <a name="best-practices-for-setting-up-financial-dimensions-and-main-accounts-in-a-right-to-left-system"></a>Najważniejsze wskazówki dotyczące konfigurowania wymiarów finansowych i kont głównych w systemie z pisownią od prawej do lewej
 
--   Po wybraniu ogranicznik dla planów kont, wybierz jedną z opcji podwójne ogranicznik: podwójny łącznik (-), pasek podwójny (|) lub podwójne kropki (.) lub podwójnego podkreślenia (\_\_).
+-   Wybierając separator dla planów kont, wybierz jeden z separatorów podwójnych: podwójny łącznik (--), podwójną kreskę pionową (||), podwójną kropkę (..) lub podwójne podkreślenie (\_\_).
 -   Podczas tworzenia wartości wymiarów finansowych i kont głównych używaj tylko cyfr i znaków języka z pisownią od prawej do lewej.
 -   Unikaj stosowania wybranego separatora planu kont w wartościach wymiarów finansowych i kont głównych.
 
 Przestrzegając poniższych najważniejszych wskazówek, pomagasz zapewnić spójne reprezentowanie kolejności zdefiniowanej przez użytkownika w całym systemie.
+
+
 
 

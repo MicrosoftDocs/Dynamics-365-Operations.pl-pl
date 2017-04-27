@@ -1,6 +1,6 @@
 ---
 title: "Raporty finansowe bilansu próbnego"
-description: "W tym artykule opisano domyślne raporty dla sald. Opisano również bloki konstrukcyjne, które są skojarzone z tych raportów i modyfikowaniu raportów dostosowanych do wymagań biznesowych."
+description: "W tym artykule opisano domyślne raporty o bilansach próbnych. Omówiono również bloki konstrukcyjne skojarzone z tymi raportami oraz sposoby modyfikowania raportów w celu dostosowania ich do wymagań biznesowych."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="trial-balance-financial-reports"></a>Raporty finansowe bilansu próbnego
 
-W tym artykule opisano domyślne raporty dla sald. Opisano również bloki konstrukcyjne, które są skojarzone z tych raportów i modyfikowaniu raportów dostosowanych do wymagań biznesowych. 
+[!include[banner](../includes/banner.md)]
+
+
+W tym artykule opisano domyślne raporty o bilansach próbnych. Omówiono również bloki konstrukcyjne skojarzone z tymi raportami oraz sposoby modyfikowania raportów w celu dostosowania ich do wymagań biznesowych. 
 
 <a name="default-trial-balance-reports"></a>Domyślne raporty finansowe bilansu próbnego
 -----------------------------
@@ -51,7 +54,7 @@ Raporty finansowe bilansu próbnego wykorzystują następujące podstawowe eleme
 
 ### <a name="row-definition"></a>Definicja wiersza
 
-Definicja wiersza bilansu próbnego — domyślny, zawiera pojedynczy wiersz, który w przypadku wszystkich kont głównych. Dlatego każdy może wygenerować raport bez konieczności wprowadzania żadnych zmian. Podczas przeglądania raportu można przejść do pojedynczego wiersza, aby wyświetlić szczegóły dotyczące poszczególnych kont. Można zmodyfikować definicję wiersza, tak aby zawierała więcej szczegółów. Aby zmodyfikować definicję wiersza Bilans próbny — domyślny, by zawierał wiesze dla wszystkich kont, należy wykonać następujące kroki.
+Definicja wiersza Bilans próbny — domyślny zawiera pojedynczy wiersz, który pobiera informacje ze wszystkich kont głównych. Dlatego każdy może wygenerować raport bez konieczności wprowadzania żadnych zmian. Podczas przeglądania raportu można przejść do pojedynczego wiersza, aby wyświetlić szczegóły dotyczące poszczególnych kont. Można zmodyfikować definicję wiersza, tak aby zawierała więcej szczegółów. Aby zmodyfikować definicję wiersza Bilans próbny — domyślny, by zawierał wiesze dla wszystkich kont, należy wykonać następujące kroki.
 
 1.  Kliknij **Edycja**, a następnie kliknij **Wstaw wiersze z wymiarów**. Polecenie **Wstaw wiersze z wymiarów** pozwala wybrać wymiary, które mają znaleźć się w definicji wiersza. Dla tej definicji wiersza użyjesz **Konta głównego**.
 2.  Upewnij się, że **Konto główne** zawiera wszystkie znaki „&”, a następnie kliknij przycisk **OK**.
@@ -100,10 +103,12 @@ Każdy raport bilansu próbnego używa innej definicji kolumny. Te definicje kol
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Raporty finansowe](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Wyświetlanie raportów finansowych](view-financial-reports.md)
 
-[Blog sprawozdawczości finansowej Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Blog o sprawozdawczości finansowej w systemie Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

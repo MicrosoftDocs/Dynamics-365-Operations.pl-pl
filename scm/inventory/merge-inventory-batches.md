@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="merge-inventory-batches"></a>Scalanie partii zapasów
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o konsolidowaniu dwóch lub więcej partii zapasów w jedną partię scaloną. 
 
 Przy scalaniu partii obliczenia mogą pomóc zoptymalizować cechy i atrybuty partii w scalonej partii. Po zaznaczeniu partii źródłowych można przejrzeć i zmodyfikować scaloną partię przed jej zaksięgowaniem. Możesz też przenieść scalenie partii do arkusza zapasów w celu zatwierdzenia. Zapasy można następnie rezerwować lub księgować bezpośrednio z tego arkusza magazynowego. Po zaksięgowaniu scalonej partii, ilość zapasów jest korygowana w celu uwzględnienia partii źródłowych i scalonej partii.
@@ -48,7 +51,7 @@ Tak, istnieją pewne elementy, które należy skonfigurować przed użyciem narz
 <tbody>
 <tr class="odd">
 <td>Nazwy arkuszy, Zapasy</td>
-<td>Należy utworzyć nazwę arkusza, która będzie używana domyślnie podczas księgowania scaleń partii w arkuszach magazynowych. Opcjonalnie (zalecane): Można określić, że rezerwacje mają być dokonywane automatycznie, gdy scalenie partii jest przenoszone do arkusza magazynowego. W przeciwnym razie istnieje ryzyko, że wystąpią zmiany w dostępnych zapasach po skonfigurowaniu szczegółów scalenia partii i zaksięgowaniu w arkuszu. Aby włączyć automatyczne zastrzeżeń dotyczących nazwy arkusza, zaznacz <strong>automatyczne</strong> w <strong><strong>rezerwacji</strong></strong> pole.</td>
+<td>Należy utworzyć nazwę arkusza, która będzie używana domyślnie podczas księgowania scaleń partii w arkuszach magazynowych. Opcjonalnie (zalecane): Można określić, że rezerwacje mają być dokonywane automatycznie, gdy scalenie partii jest przenoszone do arkusza magazynowego. W przeciwnym razie istnieje ryzyko, że wystąpią zmiany w dostępnych zapasach po skonfigurowaniu szczegółów scalenia partii i zaksięgowaniu w arkuszu. Aby włączyć automatyczne rezerwacje dla nazwy arkusza, w polu <strong><strong>Rezerwacja</strong> </strong>zaznacz opcję <strong>Automatycznie</strong>.</td>
 </tr>
 <tr class="even">
 <td>Parametry modułu Zarządzanie zapasami i magazynem</td>
@@ -134,9 +137,11 @@ Księgowanie działa na dwa sposoby, w zależności od tego, czy jest używany p
 -   **Przenieś do arkusza** — Przeniesienie szczegółów scalenia partii do nowego arkusza magazynowego. Jeśli skonfigurowano rezerwacje automatyczne, ilości w partiach źródłowych są rezerwowane. Nie można zmienić szczegółów scalenia partii. W celu zmodyfikowania scalenia partii należy usunąć arkusz. Arkusz może służyć jako zadanie do późniejszego wykonania przez innego pracownika. Rezerwacja ilości partii do wiersza arkusza jest zabezpieczona. Ta alokacja pozwala planiście jakości lub kierownikowi magazynu tworzyć zadania dla swoich pracowników.
 -   **Księgowanie scalenia partii** — Księgowanie scalenia partii bezpośrednio. Tę czynność można wykonać po zakończeniu fizycznego scalenia.
 
-Arkusz magazynowy scalenia partii można zatwierdzić ze strony listy **Wszystkie scalenia partii**. Kliknij **dziennika**&gt;**Post**. Po zaksięgowaniu arkusza nie można zmienić szczegółów w scalonej partii. Po przeniesieniu scalenia partii do arkusza magazynowego, szczegóły można zmienić tylko wtedy, jeśli arkusz zostanie usunięty.
+Arkusz magazynowy scalenia partii można zatwierdzić ze strony listy **Wszystkie scalenia partii**. Kliknij kolejno opcje **Arkusz** &gt; **Księguj**. Po zaksięgowaniu arkusza nie można zmienić szczegółów w scalonej partii. Po przeniesieniu scalenia partii do arkusza magazynowego, szczegóły można zmienić tylko wtedy, jeśli arkusz zostanie usunięty.
 
-## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Po zakończeniu scalania I element catchweight, dlaczego nie widzę informacji catchweight w arkuszu magazynowym?
+## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Dlaczego po scaleniu towaru w ilości efektywnej nie widać w arkuszu magazynowym informacji dotyczących ilości efektywnej?
 Można scalać partie towarów w ilości efektywnej tak samo, jak inne towary. Jednakże informacje o ilości efektywnej nie są wyświetlane w arkuszu magazynowym. Zaleca się sprawdzenie informacji o ilości efektywnej przed przeniesieniem scalenia partii do arkusza magazynowego.
+
+
 
 

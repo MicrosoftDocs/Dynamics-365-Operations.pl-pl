@@ -1,5 +1,5 @@
 ---
-title: "Rozlicz płatności częściowe dostawcy, który ma rabaty na fakturach korygujących dostawcy"
+title: "Rozliczenie płatności częściowej dostawcy, do której zastosowano rabaty na fakturach korygujących dostawcy"
 description: "Ten artykuł prowadzi przez scenariusz, w którym faktura korygująca jest rozliczana względem faktury."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Rozlicz płatności częściowe dostawcy, który ma rabaty na fakturach korygujących dostawcy
+# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Rozliczenie płatności częściowej dostawcy, do której zastosowano rabaty na fakturach korygujących dostawcy
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł prowadzi przez scenariusz, w którym faktura korygująca jest rozliczana względem faktury.
 
 Dostawcy firmy Fabrikam dają rabaty gotówkowe na fakturach korygujących. Dostawca 3050 daje firmie Fabrikam rabat gotówkowy w wysokości 1%, jeżeli faktura zostanie opłacona w ciągu 14 dni.
 
 ## <a name="invoice-and-credit-memo"></a>Faktura i nota kredytowa
-29 czerwca kwietnia tworzy fakturę za 1 000,00 dla dostawcy 3050. W dniu 2 lipca tworzy fakturę korygującą dla 200,00. Na stronie **Dostawcy** April otwiera stronę **rozliczenia transakcji**. Na stronie **rozliczenia transakcji** może zaznaczyć do rozliczenia zarówno fakturę korygującą, jak i fakturę. Rabat w wysokości 2,00 jest wliczony do faktury korygującej. W związku z tym łączna wartość faktury korygującej jest zmniejszona do 198,00.
+29 czerwca April tworzy fakturę na kwotę 1000,00 dla dostawcy 3050. 2 lipca tworzy fakturę korygującą na 200,00. Na stronie **Dostawcy** April otwiera stronę **rozliczenia transakcji**. Na stronie **rozliczenia transakcji** może zaznaczyć do rozliczenia zarówno fakturę korygującą, jak i fakturę. Rabat w wysokości 2,00 jest wliczony do faktury korygującej. W związku z tym łączna wartość faktury korygującej jest zmniejszona do 198,00.
 
 | Zaznacz                     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -65,6 +68,8 @@ April może przejrzeć transakcje dostawcy na stronie **transakcji dostawcy**, w
 | Inv-10071  |                  | 7/2/2015  | CR10071 | 200,00                               |                                       | 0,00    | USD      |
 | DISC-10071 |  Rabat gotówkowy   | 7/2/2015  |         | 2,00                                 |                                       | 0,00    | USD      |
 | DISC-10071 |  Rabat gotówkowy   | 7/2/2015  |         |                                      | 2,00                                  | 0,00    | USD      |
+
+
 
 
 

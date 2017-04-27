@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-customer-invoice"></a>Tworzenie faktury dla odbiorcy
 
+[!include[banner](../includes/banner.md)]
 
 
-**Faktura dla odbiorcy do zamówienia sprzedaży** jest wekslem związanym ze sprzedażą i który organizacja wystawia odbiorcy. Ten typ faktury dla odbiorcy jest tworzony na podstawie zamówienia sprzedaży, które zawiera wiersze zamówienia i numery towarów. Numery towarów są określane i księgowane w księdze. Zapisy w arkuszu księgi podrzędnej nie są dostępne dla faktury odbiorcy do zamówienia sprzedaży. 
+
+
+**Faktura dla odbiorcy do zamówienia sprzedaży** jest wekslem związanym ze sprzedażą i który organizacja wystawia odbiorcy. Ten typ faktury dla odbiorcy jest tworzony na podstawie zamówienia sprzedaży, które zawiera wiersze zamówienia i numery towarów. Numery towarów są określane i księgowane w księdze. Zapisy w arkuszu księgi podrzędnej nie są dostępne dla faktury dla odbiorcy do zamówienia sprzedaży. 
 
 **Faktura niezależna** nie jest związana z zamówieniem sprzedaży. Zawiera ona wiersze zamówienia uwzględniające konta księgowe, niezależne opisy oraz wprowadzaną przez użytkownika kwotę sprzedaży. Nie można wprowadzić numeru towaru tego rodzaju na fakturze. Konieczne jest wprowadzenie odpowiedniej informacji o podatku. Konto główne dla sprzedaży jest wskazane w każdym wierszu faktury, który użytkownik może dystrybuować do wielu kont księgowych za pomocą przycisku **Dystrybuuj kwoty** na stronie **Faktura niezależnej**. Ponadto saldo odbiorcy jest księgowane na koncie rozrachunkowym z profilu księgowania, który jest używany dla faktury niezależnej.
 
@@ -55,7 +58,7 @@ Stan zamówienia sprzedaży można wyświetlić na stronie listy **Wszystkie zam
 ## <a name="consolidate-sales-orders-or-packing-slips-for-posting"></a>Konsolidowanie zamówień sprzedaży lub dokumentów dostawy do księgowania
 Za pomocą tego procesu można wyświetlić jedno lub kilka zamówień sprzedaży, które są gotowe do zafakturowania, gdy trzeba skonsolidować je na jednej fakturze. 
 
-Można wybrać wiele faktur na stronie listy **Zamówienie sprzedaży** i skonsolidować je za pomocą funkcji **Generuj faktury**. Na **Księgowanie faktury** stronę, możesz zmienić **zamówienie zbiorcze** ustawienie, aby podsumować numer zamówienia (w przypadku wielu dokumentów dostawy dla pojedynczego zamówienia sprzedaży) lub według konta faktury (jeśli istnieje wiele zamówień sprzedaży dla konta pojedyncza faktura). Użyj **Rozmieść** przycisk konsolidować zamówień sprzedaży w pojedynczej faktury, na podstawie **zamówienie zbiorcze** ustawienia.
+Można wybrać wiele faktur na stronie listy **Zamówienie sprzedaży** i skonsolidować je za pomocą funkcji **Generuj faktury**. Na stronie **Księgowanie faktury** można zmienić ustawienie **Zamówienie zbiorcze** w celu podsumowania według numeru zamówienia (jeśli jest wiele dokumentów dostawy dla jednego zamówienia sprzedaży) lub według konta faktury (jeśli istnieje wiele zamówień sprzedaży dla jednego konta faktury). Użyj przycisku **Rozmieść**, aby konsolidować zamówienia sprzedaży na jednej fakturze na podstawie ustawienia **Zamówienie zbiorcze**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Dodatkowe ustawienia, które zmieniają działanie procesu księgowania
 Następujące pola zmieniają działanie procesu księgowania.
@@ -123,8 +126,8 @@ Następujące pola zmieniają działanie procesu księgowania.
 <td>Sprawdzanie limitu kredytu</td>
 <td>Umożliwia wybór informacji analizowanych podczas sprawdzania limitu kredytowego.
 <ul>
-<li><strong>None</strong> – There is no requirement for the credit limit check.</li>
-<li><strong>Balance</strong> – The credit limit is checked against the customer balance.</li>
+<li><strong>Brak</strong> — nie ma wymogu przeprowadzania sprawdzenia limitu kredytu.</li>
+<li><strong>Saldo</strong> — limit kredytu jest porównywany z saldem odbiorcy.</li>
 <li><strong>Saldo + dokument dostawy lub dokument przyjęcia produktów</strong> — limit kredytu jest porównywany z saldem odbiorcy i dostawami.</li>
 <li><strong>Saldo + wszystko</strong> — limit kredytu jest porównywany z saldem odbiorcy, dostawami i otwartymi zamówieniami.</li>
 </ul></td>
@@ -150,6 +153,8 @@ Następujące pola zmieniają działanie procesu księgowania.
 </tr>
 </tbody>
 </table>
+
+
 
 
 

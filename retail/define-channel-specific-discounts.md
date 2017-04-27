@@ -34,14 +34,14 @@ Sprzedawcy detaliczni często ustawiają różne rabaty w różnych kanałach. W
 <a name="channel-specific-discounts"></a>Rabaty właściwe dla kanału
 --------------------------
 
-Detaliści często oferują różne rabaty w różnych kanałach. Jest to maja odbywać się do adresów lokalnych warunków rynkowych lub radzić sobie z konkurencyjnych detalistów.
+Sprzedawcy detaliczni często oferują różne rabaty w różnych kanałach. To może zależeć od lokalnych uwarunkowań rynku lub być elementem konkurencji z innymi sprzedawcami detalicznymi.
 
-Sieci sprzedaży i handlu w usłudze Microsoft Dynamics 365 dla operacji używa grupy cenowe do definiowania rabatów poszczególnych kanałów. Grup cenowe mogą być skojarzone z jednym lub kilkoma następującymi elementami: kanały, katalogi, przynależności i programy lojalnościowe. Ten artykuł dotyczy kanałów, ale te same pojęcia dotyczą rabatów katalogu, przynależności i programów lojalnościowych.
+Moduł Handel detaliczny i inny w programie Microsoft Dynamics 365 for Operations oferuje funkcjonalność grup cenowych definiujących rabaty właściwe dla kanału. Grup cenowe mogą być skojarzone z jednym lub kilkoma następującymi elementami: kanały, katalogi, przynależności i programy lojalnościowe. Ten artykuł dotyczy kanałów, ale te same pojęcia dotyczą rabatów katalogu, przynależności i programów lojalnościowych.
 
 ## <a name="price-groups"></a>Grupy cenowe
-\[Identyfikator etykiety = "załącznik\_256084" Wyrównaj = szerokość "alignnone" = "640"\][![cena grup](./media/price-groups-1024x608.png)](./media/price-groups.png) cenę łącza grupy detalicznej\[/caption\]
+\[caption id="attachment\_256084" align="alignnone" width="640"\][![Grupy cenowe](./media/price-groups-1024x608.png)](./media/price-groups.png) Łącza do grup cenowych w module Handel detaliczny\[/caption\]
 
-Na powyższym diagramie przedstawiono relację między obiektami, które mogą znajdować się na transakcję (kanału, katalog, przynależności, klient, karta lojalnościowa) i różnych typów rabatów, które mogą być skonfigurowane. Wszystkie transakcje przeprowadzone w kanale, więc kanał jest musi znajdować się na transakcję. Pozostałe elementy są opcjonalne. Na poszczególnych stronach danych głównych są łącza do powiązanej grupy cenowej, na której można wyświetlać i dodawać grupy cenowe w razie potrzeby. Grupa cenowa służy do wiązania cztery różne typy jednostek do rabatów, korekty cen i umów handlowych. Zaleca się, że plan strategii jak będzie nazwa grupy cen. na utrzymywanie ich w porządku. Jedną z opcji jest użycie litery lub numer prefiks lub sufiks do rozróżniania różnych typów. Na przykład 1-xxxxx dla grupy cen kanału i 2-xxxxx dla wykazu grup cenowych. Dostępne są cztery strony zapytań, które koncentrują się na poszczególnych podmiotach sieci sprzedaży, dla których są skojarzone rabaty.
+Powyższy wykres ilustruje relację między jednostkami, które mogą znajdować się w transakcji (kanał, katalog, przynależność, odbiorca, karta lojalnościowa), a różnymi typami rabatów, które można skonfigurować. Wszystkie transakcje odbywają się w kanale, więc kanał na pewno będzie ujęty w transakcji. Pozostałe elementy są opcjonalne. Na poszczególnych stronach danych głównych są łącza do powiązanej grupy cenowej, na której można wyświetlać i dodawać grupy cenowe w razie potrzeby. Grupa cenowa służy do tworzenia relacji czterech różnych typów elementów z rabatami, korektami cen i umowami handlowymi. Dobrze jest zaplanować strategię nazywania grup cenowych, która pozwoli lepiej je uporządkować. Jedną z możliwości jest używanie litery i cyfry na początku lub na końcu nazwy dla rozróżnienia typów. Np. 1-xxxxx dla grup cenowych kanału i 2-xxxxx dla grup cenowych katalogu. Dostępne są cztery strony zapytań, które koncentrują się na poszczególnych podmiotach sieci sprzedaży, dla których są skojarzone rabaty.
 
 -   **Grupy cenowe kanału sprzedaży** — ta strona zawiera listę kanałów i rabatów połączonych ze sobą dla każdej grupy cenowej.
 -   **Grupy cenowe katalogu** — ta strona zawiera listę katalogów i rabatów połączonych ze sobą dla każdej grupy cenowej.
@@ -62,6 +62,6 @@ Przykład poniżej ilustruje zadania niezbędne do skonfigurowania rabatu kanał
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Price adjustments and discounts](price-adjustments-discounts.md)
+[Korekty ceny i rabaty](price-adjustments-discounts.md)
 
 

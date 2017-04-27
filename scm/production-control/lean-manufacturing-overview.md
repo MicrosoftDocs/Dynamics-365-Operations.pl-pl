@@ -1,5 +1,5 @@
 ---
-title: "Przegląd produkcji oszczędnej"
+title: "Produkcja oszczędna — omówienie"
 description: "Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w systemie Microsoft Dynamics AX."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="lean-manufacturing-overview"></a>Przegląd produkcji oszczędnej
+# <a name="lean-manufacturing-overview"></a>Produkcja oszczędna — omówienie
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w systemie Microsoft Dynamics AX.
 
@@ -49,7 +52,7 @@ Aby stworzyć podstawy produkcji oszczędnej (lean manufacturing), trzeba opraco
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a> Sygnalizowanie wymagań popytu za pomocą kart Kanban
 System ściągania wytwarza towary tylko wtedy, gdy są one potrzebne. Praktyka ta zmniejsza czasy realizacji dostawy i magazynowych nadwyżki. Można użyć kart Kanban do planowania, śledzenia i przetwarzania wymagań, które są oparte na przepływach produkcji. Aby utworzyć strukturę kanban, utwórz reguły kanban określające, kiedy są tworzone karty Kanban i jak wypełniane są wymagania. Możesz utworzyć dwa typy reguł Kanban. Reguły produkcji tworzą zadania przetwarzania w systemie Kanban, a reguły wycofania w systemie Kanban tworzą zadania przeniesienia w systemie Kanban. Można skonfigurować następujące strategie uzupełniania:
--   Reguły Kanban typu **Stała ilość** są powiązane ze stałą liczbą jednostek obsługi, co oznacza, że liczba aktywnych kart Kanban jest stała. Zawsze, gdy wszystkie produkty z karty Kanban są zużywane i jednostki obsługi ręcznie są opróżniane, tworzony jest nowy kanban tego samego typu. Podczas tworzenia stałej ilości reguł kanban można obliczyć ilości optymalnej kanban i ilości produktów, które są używane. Obliczenia uwzględniają prognozę, rzeczywisty popyt z otwartych zamówień, czas realizacji uzupełnienia towarów i historyczne zapotrzebowania.
+-   Reguły Kanban typu **Stała ilość** są powiązane ze stałą liczbą jednostek obsługi, co oznacza, że liczba aktywnych kart Kanban jest stała. Zawsze gdy wszystkie produkty z karty Kanban są zużywane i jednostki załadunkowe są ręcznie opróżniane, tworzona jest nowa karta Kanban tego samego typu. Podczas tworzenia reguł Kanban ze stałą ilością można obliczyć optymalną liczbę używanych kart Kanban i ilości produktu. Obliczenia uwzględniają prognozę, rzeczywisty popyt z otwartych zamówień, czas realizacji uzupełnienia towarów i historyczne zapotrzebowania.
 -   Reguły Kanban typu **Zaplanowane** służą do uzupełniania zapotrzebowań obliczanych podczas planowania głównego. Planowanie główne generuje zaplanowane reguły Kanban, które mogą zostać ustalone na kartach Kanban.
 -   Reguły Kanban typu **Zdarzenie** służą do uzupełniania zapotrzebowań pochodzących z wierszy zamówienia sprzedaży, wierszy listy składowej BOM produkcji, wierszy w systemie Kanban lub ustawień minimalnego poziomu zapasów. Kiedy generowane są zdarzenia Kanban, są one ustalane na podstawie wymagań źródłowych.
 
@@ -76,6 +79,8 @@ Zadania Kanban są w pełni zintegrowane z aktualnymi procesami dla transakcji m
 Oprócz tego produkcja oszczędna (lean manufacturing) obsługuje procesy zakupu i fakturowania dla usług, do których odwołują się działania podwykonawcze.
 -   Wiersze umowy zakupu można przypisać do działań podwykonawczych.
 -   Można tworzyć okresowe zamówienia zakupu i podsumowania przyjęć pod kątem kupowania i fakturowania usług.
+
+
 
 
 

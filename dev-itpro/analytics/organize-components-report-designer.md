@@ -49,18 +49,18 @@ Można grupować definicje raportów, by generować wiele raportów w tym samym 
 ### <a name="create-a-report-group"></a>Tworzenie grupy raportów
 
 1.  W Projektancie raportów w okienku nawigacji kliknij opcję **Grupy raportów**.
-2.  Na **pliku** menu, kliknij przycisk **nowy**&gt;**definicji raportu grupy** otworzyć nową grupę raport w oknie podglądu. Alternatywnie, kliknij przycisk **raport grupy** przycisk ![raport grupy](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "raport grupy") na pasku narzędzi.
+2.  W menu **Plik** kliknij kolejno opcje **Nowy** &gt; **Definicja grupy raportów**, aby otworzyć nową grupę raportów w oknie podglądu. Alternatywnie kliknij przycisk **Grupa raportów** ![Grupa raportów](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Grupa raportów") na pasku narzędzi.
 3.  Kliknij kartę **Grupa raportów**. Aby zastąpić informacje o definicjach poszczególnych raportów do generowania tego raportu, zaznacz pole wyboru **Zastąp ustawienia firmy, szczegółów i daty z poszczególnych definicji raportów**. Nazwa firmy, poziom szczegółowości, ustawienie tymczasowości i informacje o datach są wypełniane automatycznie, ale można je aktualizować.
 4.  Aby wygenerować wiele raportów z walutami raportowania, zaznacz pole wyboru **Uwzględnij wszystkie waluty raportowania**. Następnie podczas oglądania raportów w przeglądarce sieci web można kliknąć przycisk **Waluta**, a będzie dostępnych wiele widoków.
 5.  W polu **Raporty w grupie** kliknij opcję **Dodaj**, aby wybrać raporty w celu ich dodania do grupy raportów. Aby wybrać wiele raportów w oknie dialogowym **Dodaj**, przytrzymaj klawisz Ctrl podczas wybierania raportów. Po zakończeniu wybierania raportów kliknij przycisk **OK**.
-6.  Kliknij **pliku**&gt;**zapisać** Aby zapisać nową grupę raportu.
+6.  Kliknij kolejno opcje **Plik** &gt; **Zapisz**, aby zapisać nową grupę raportów.
 
 ### <a name="modify-a-report-group"></a>Modyfikowanie grupy raportów
 
 1.  W Projektancie raportów w okienku nawigacji kliknij opcję **Grupy raportów**.
 2.  Kliknij dwukrotnie grupę raportów, którą chcesz zmodyfikować.
 3.  Na karcie **Grupa raportów** wprowadź żądane zmiany.
-4.  Na **pliku** menu, kliknij przycisk **zapisać** Aby zapisać grupę zmodyfikowanego raportu, można też kliknąć **zapisać** przycisk ![zapisać](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "zapisać") na pasku narzędzi.
+4.  W menu **Plik** kliknij polecenie **Zapisz**, aby zapisać zmodyfikowaną grupę raportów. Alternatywnie kliknij przycisk **Zapisz** ![Zapisz](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Zapisz") na pasku narzędzi.
 
 **Uwaga:** Jeśli masz zaplanowane raporty do generowania w ustalonych odstępach czasu, można zastąpić te ustawienia i natychmiast wygenerować raport.
 
@@ -68,7 +68,7 @@ Można grupować definicje raportów, by generować wiele raportów w tym samym 
 
 1.  W Projektancie raportów w okienku nawigacji kliknij opcję **Grupy raportów**.
 2.  Otwórz grupę raportów do wygenerowania.
-3.  Kliknij **Generuj raport** przycisk ![Generuj raport](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Generuj raport") do generowania raportów.
+3.  Kliknij przycisk **Generuj raport** ![Generuj raport](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Generuj raport"), aby wygenerować raport.
 
 ### <a name="delete-a-report-group"></a>Usuwanie grupy raportu
 
@@ -104,8 +104,8 @@ W poniższej tabeli opisano formanty istniejące na karcie **Grupa raportów**.
 <td>Określ poziom szczegółowości raportów.
 <ul>
 <li><strong>Finanse</strong> — raport wysokiego poziomu. Nie można wyświetlić szczegółów kont i wymiarów, z wyjątkiem tych, które zostały dodane przy użyciu drzewa raportowania.</li>
-<li><strong>Finansowe &amp;konta</strong> − A raport, który zawiera podsumowanie wysokiego poziomu i szczegóły konta.</li>
-<li><strong>Finansowe, konto, &amp;transakcji</strong> − A raport, który zawiera podsumowanie wysokiego poziomu i szczegóły transakcji.</li>
+<li><strong>Finanse i konto</strong> — raport zawierający ogólne podsumowanie i szczegóły konta.</li>
+<li><strong>Finanse, konto i transakcja</strong> — raport zawierający ogólne podsumowanie i szczegóły transakcji.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -154,6 +154,6 @@ W definicji raportu są zapisywane tylko ustawienia domyślnego okresu podstawow
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Microsoft Dynamics 365 dla operacji sprawozdawczość finansowa](financial-reporting-intro.md)
+[Sprawozdawczość finansowa w programie Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie modelu konfiguracji produktu
+title: Tworzenie modelu konfiguracji produktu
 description: W tym artykule opisano kroki tworzenia i konfigurowania modelu konfiguracji produktu.
 author: YuyuScheller
 manager: AnnBe
@@ -27,13 +27,16 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-a-product-configuration-model"></a>Konfigurowanie modelu konfiguracji produktu
+# <a name="set-up-a-product-configuration-model"></a>Tworzenie modelu konfiguracji produktu
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule opisano kroki tworzenia i konfigurowania modelu konfiguracji produktu.
 
 | Zadanie                                                        | opis                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tworzenie produktu głównego.                                    | Tworzenie produktu głównego z listy **produkt główny**. Zwolnij produkt główny dla wszystkich odpowiednich przedsiębiorstw. Dla produktu głównego używanego jako wersji modelu konfiguracji produktu lub jako podskładnik **Konfiguracja oparta na ograniczeniach** musi być wybrane jako technologia konfiguracji i wymiar konfiguracji, należy wybrać tylko grupy wymiarów produktu. |
+| Tworzenie produktu głównego.                                    | Tworzenie produktu głównego z listy **produkt główny**. Zwolnij produkt główny do wszystkich odpowiednich firm. Dla produktu głównego używanego jako wersja modelu konfiguracji produktu lub jako podskładnik należy wybrać opcję **Konfiguracja oparta na ograniczeniach** jako technologię konfiguracji, a wymiar konfiguracji musi być wybrany tylko dla grupy wymiarów produktu. |
 | Tworzenie składników.                                          | Tworzenie składników na stronie **Składniki**. Składniki są elementami składowymi modelu konfiguracji produktu i mogą być ponownie użyte w wielu modelach konfiguracji produktu.                                                                                                                                                                                                                      |
 | Tworzenie typu atrybutu.                                     | Utwórz typy atrybutów na stronie **Typy atrybutów**. Typy atrybutów określają zestaw typów danych dla atrybutów, które są używane w modelach konfiguracji produktu. Atrybuty typu **Wartość logiczna**, **Tekst** z listą stałą i **Wartość całkowita** z typami zakresów i zestaw wartości, które są dostępne podczas konfigurowania wariantu produktu według modelu konfiguracji produktu.       |
 | Tworzenie modelu konfiguracji produktu.                       | Utwórz model konfiguracji produktu na stronie **Nowy model konfiguracji produktu**.                                                                                                                                                                                                                                                                                                              |
@@ -47,6 +50,8 @@ W tym artykule opisano kroki tworzenia i konfigurowania modelu konfiguracji prod
 | Testowanie modelu konfiguracji produktu.                         | Testowanie modelu konfiguracji produktu albo za strony **Szczegóły modelu konfiguracji produktu opartego na ograniczeniu** albo ze strony **Lista modeli konfiguracji produktu**. Testowanie modeli konfiguracji produktu symuluje proces konfiguracji modelu produktu, który powstaje w trakcie obsługi zamówienia.                                                                                                |
 | Tworzenie szablonu modelu konfiguracji produktu.                | Utwórz szablon modelu konfiguracji produktu na stronie **Szablony konfiguracji**. Szablon konfiguracji zawiera wartości atrybutów w modelu konfiguracji produktu. Wybierz wartości atrybutów na stronie **Wiersz konfiguracji**. Można załadować szablon konfiguracji modelu produktu w trakcie konfiguracji modelu produktu.                                                   |
 | Konfiguracja towaru.                                          | Model konfiguracji produktu może być skonfigurowany z zamówienia sprzedaży, oferty sprzedaży, zamówienia zakupu lub zlecenia produkcyjnego.                                                                                                                                                                                                                                                                           |
+
+
 
 
 

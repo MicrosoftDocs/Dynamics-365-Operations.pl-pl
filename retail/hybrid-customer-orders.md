@@ -1,6 +1,6 @@
 ---
-title: "Hybrydowe zamówienia klienta"
-description: "Zamówienie klienta hybrydowego jest jedno zamówienie, które zawiera produkty, które mogą być przenoszone ze Sklepu przez klienta, a także produktów, które będą pobierane lub wysłane później."
+title: "Hybrydowe zamówienia odbiorców"
+description: "Hybrydowe zamówienie odbiorcy to pojedyncze zamówienie zawierające produkty, które mogą być wyniesione ze sklepu przez odbiorcę, a także produktów, które zostaną odebrane lub wysłane później."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,20 +25,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="hybrid-customer-orders"></a>Hybrydowe zamówienia klienta
+# <a name="hybrid-customer-orders"></a>Hybrydowe zamówienia odbiorców
 
-Zamówienie klienta hybrydowego jest jedno zamówienie, które zawiera produkty, które mogą być przenoszone ze Sklepu przez klienta, a także produktów, które będą pobierane lub wysłane później.
+[!include[banner](includes/banner.md)]
 
-W usłudze Microsoft Dynamics 365 dla operacji - sprzedaż detaliczna, można wybrać albo wykonują wszystkie produkty lub przeprowadzenia wybranych produktów do zamówienia danego klienta. Produkt, który wiersze oznaczone jak przeprowadzać są automatycznie zafakturowane po utworzeniu zlecenia, podobnie to jest taka sama dla zamówienie, które ma być wyłapywane po utworzeniu zlecenia. Wysokość kwoty należnej na hybrydowe zamówień jest określana przez dodanie oprocentowanie lokaty na pobranie i linii produktów statku pełną kwotę przeprowadzą wierszy. Dla zamówień mieszańców można przełączać się między trybem zamówienia klienta i środków pieniężnych i własny transport w następujący sposób:
 
--   Jeżeli wszystkie produkty w koszyku są ustawione na **przeprowadzenia dostawy**, kolejność będzie obsługiwany jako transakcja środków pieniężnych i własny transport.
--   Jeśli wszystkie linie w koszyku jest ustawiony na **pobrania** lub **statek dostawy**, kolejność będzie obsługiwany jako transakcja zamówienia odbiorcy.
+Hybrydowe zamówienie odbiorcy to pojedyncze zamówienie zawierające produkty, które mogą być wyniesione ze sklepu przez odbiorcę, a także produktów, które zostaną odebrane lub wysłane później.
 
-Po zaznaczeniu wiersza koszyka i **wybierz zaznaczone**, **statek zaznaczone**, lub **przeprowadzać wybranego** jest zaznaczona, tylko wiersz określonego koszyka jest ustawiona z tej metody dostawy. W takim przypadku przepływ dalszych operacji jest kontynuowane w zwykły sposób. Jednak jeśli **wybierz zaznaczone**, **statek zaznaczone**, lub **przeprowadzić wybranego** jest zaznaczona bez wiersza koszyka zaznaczone, otwiera nową stronę, które są wyświetlane wszystkie wiersze koszyka. Na tym ekranie można wybrać wiele wierszy naraz do ustawiania metody dostawy. Użycie tej metody do zaznaczania wierszy, zostaną zastąpione wszystkie poprzednie metody dostawy, przypisany do wiersza.
+W programie Microsoft Dynamics 365 for Operations — Handel detaliczny można wybrać opcję wyniesienia wszystkich produktów lub wyniesienia tylko wybranych produktów dla zamówienia odbiorcy. Wiersze produktów oznaczone jako wynoszone są automatycznie fakturowane po utworzeniu zamówienia, podobnie jak w innym zamówieniu, którego towary mają być odbierane bezpośrednio po utworzeniu zamówienia. Wysokość kwoty należnej w zamówieniach hybrydowych jest określana przez dodanie procentu wpłaty do wierszy pobrania i wysłania produktów, a pełna kwota jest dodawana do wierszy wynoszonych produktów. W zamówieniach hybrydowych system przełącza się między trybami zamówienia odbiorcy i wyniesienia w następujący sposób:
+
+-   Jeżeli wszystkie produkty w koszyku są ustawione jako **Dostawa przez wyniesienie**, zamówienie będzie realizowane jako transakcja zapłaty przy kasie i wychodzenia z produktami ze sklepu.
+-   Jeśli wszystkie lub którekolwiek wiersze w koszyku są ustawiony na **Pobieranie** lub **Dostawa przez wysyłkę**, zamówienie będzie obsługiwane jako transakcja zamówienia odbiorcy.
+
+Po zaznaczeniu wiersza koszyka i wybraniu opcji **Wybierz zaznaczone**, **Wyślij wybrane** lub **Wynieś wybrane** tylko wskazany wiersz koszyka będzie miał ustawianą określoną metodę dostawy. W takim przypadku dalszy przepływ operacji jest kontynuowany w zwykły sposób. Jednak jeśli opcja **Wybierz zaznaczone**, **Wyślij wybrane** lub **Wynieś wybrane** zostanie wybrana bez zaznaczenia wiersza koszyka, zostanie otwarta nowa strona z listą wszystkich wierszy koszyka. Na tym ekranie można wybrać wiele wierszy na raz i ustawić im metodę dostawy. Użycie tej metody do wybierania wierszy spowoduje zastąpienie wszystkich poprzednich metod dostawy przypisany do wierszy.
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Omówienie zamówień klienta](customer-orders-overview.md)
+[Omówienie zamówień odbiorców](customer-orders-overview.md)
+
+
 
 

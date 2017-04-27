@@ -1,6 +1,6 @@
 ---
-title: "Naliczanie kosztu projektu na przyjęcia zakupu"
-description: "W tym temacie opisano sposób naliczonych kosztów projektu od zakupu przyjęć mogą być śledzone w programie Microsoft Dynamics 365 dla operacji."
+title: "Naliczanie kosztów projektu w przyjęciach zakupów"
+description: "W tym temacie opisano, jak koszty projektu naliczone z przyjęć zakupów można śledzić w programie Microsoft Dynamics 365 for Operations."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,59 +24,64 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="project-cost-accrual-on-purchase-receipts"></a>Naliczanie kosztu projektu na przyjęcia zakupu
+# <a name="project-cost-accrual-on-purchase-receipts"></a>Naliczanie kosztów projektu w przyjęciach zakupów
 
-W tym temacie opisano sposób naliczonych kosztów projektu od zakupu przyjęć mogą być śledzone w programie Microsoft Dynamics 365 dla operacji. 
+[!include[banner](../includes/banner.md)]
 
-Faktury dla projektu często przychodzą później niż towary i usługi są dostarczane, które mogą mieć znaczący wpływ na projekt kluczowych wskaźników wydajności (KPI). Ważne można było śledzić te transakcje w obu finansowych i projektu sprawozdania.
 
-Następujący przykład ilustruje to. 
+W tym temacie opisano, jak koszty projektu naliczone z przyjęć zakupów można śledzić w programie Microsoft Dynamics 365 for Operations. 
 
-Contoso konsultacji został uruchomiony nowy projekt wdrożenia chmury. Zamówienie zakupu jest tworzone na zakup komputera dla projektu. Komputer będzie kosztować $1500 i usług instalacji będzie kosztować $150. Dostawca jest pobierana i instalowana komputerze, ale faktura nie osiągnęła jeszcze Contoso konsultacji. Menedżer projektu chce Zobacz naliczania kosztów projektu o $1650, zanim faktura zostanie dostarczona. Koszt ten powinien również znaleźć odzwierciedlenie w sprawozdaniu finansowym spółki miesiąc zakończenia. 
+Faktury za projekt często przychodzą później niż są dostarczane towary i usługi, co może mieć znaczący wpływ na kluczowe wskaźniki wydajności (KPI) projektu. Ważna jest możliwość śledzenia tych transakcji w sprawozdaniach finansowych i raportach z projektu.
 
-Naliczony koszt musi być rejestrowana na poziomie finansowego i na poziomie projektu dla celów sprawozdawczości. W usłudze Dynamics 365 dla operacji finansowych aktualizację dokumentu przyjęcia produktów mogą być śledzone dla kategorii towarów i zamówień. 
+Ilustruje to przykładowy scenariusz opisany poniżej. 
 
-W przypadku towarów na **Rozrachunki z dostawcami Parametry** strony, kliknij **Księgowanie dokumentów dostawy w księdze** opcji.
+Firma Contoso Consulting rozpoczęła nowy projekt wdrożenia chmury. Utworzono zamówienie zakupu na zakup komputera do projektu. Komputer będzie kosztować 1500 USD, a usługi instalacyjne dodatkowe 150 USD. Dostawca dostarczył i zainstalował komputer, ale faktura jeszcze nie dotarła do Contoso Consulting. Kierownik projektu chciałby widzieć naliczenie kosztów projektu w kwocie 1650 USD, zanim faktura zostanie dostarczona. Ponadto koszt powinien znaleźć odzwierciedlenie w sprawozdaniu finansowym firmy na koniec miesiąca. 
+
+Dla celów sprawozdawczości naliczony koszt musi być zarejestrowany na poziomach finansowym i projektu. W programie Dynamics 365 for Operations finansową aktualizację przyjęcia produktu można śledzić w kategoriach towaru i zaopatrzenia. 
+
+W przypadku towarów na stronie **Parametry modułu rozrachunków z dostawcami** zaznacz opcję **Księguj przyjęcia produktów w księdze**.
 [![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
 
-Dla kategorii zaopatrzenia na **Reguła kategorii** strony, kliknij **zakup** zasady, a następnie wybierz **naliczania kosztów zakupu po otrzymaniu** dla każdej kategorii zaopatrzenia.
+Dla kategorii zaopatrzenia na stronie **Reguła kategorii** zaznacz zasady **Zakupy**, a następnie dla każdej kategorii zaopatrzenia zaznacz opcję **Naliczanie wydatku na zakup w momencie przyjęcia**.
 [![accruals2](./media/accruals2-1024x569.png)](./media/accruals2.png) 
 
-**Koszty, zapis przeciwstawny dokumentu dostawy zakupu** i **naliczania zakupu** kont w **ustawienia księgowania** będzie używana, gdy księgowane są załączniki, które są związane z dokumentu przyjęcia produktów.
+Konta **Koszty zakupu niezafakturowane** i **Naliczenie zakupu** w oknie **Ustawienia księgowania** będą używane podczas księgowana załączników związanych z przyjęciem produktu.
 [![accruals3](./media/accruals3-1024x429.png)](./media/accruals3.png) 
 
-Przy użyciu tego samego scenariusza, zobaczmy, jak księgowanie dokumentu przyjęcia produktów wpłynie na księgi głównej i informacji o projekcie. 
+W tym samym scenariuszu zobaczmy, jak księgowanie przyjęcia produktu wpłynie na księgę główną i informacji o projekcie. 
 
-**Krok 1:** Utwórz i Potwierdź nowe zamówienie zakupu dla projektu do rejestrowania zakup komputera dla usług $1500 i instalacji dla $150.
+**Krok 1:** Utwórz i potwierdź nowe zamówienie zakupu dla projektu, aby zarejestrować zakup komputera za 1500 USD i usług instalacyjnych za 150 USD.
 [![accruals4](./media/accruals4-1024x497.png)](./media/accruals4.png) 
 
-Po potwierdzeniu zamówienia zakupu tworzone są transakcje koszt ustalony dla projektu. 
+Po potwierdzeniu zamówienia zakupu zostaną dla projektu utworzone transakcje na ustalony koszt. 
 [![accruals5](./media/accruals5-1024x219.png)](./media/accruals5.png) 
 
 > [!NOTE]
-> Transakcje kosztu ustalonego będą miały **źródło transakcji** pole ustawione na **zamówienia zakupu**. Tworzenie i potwierdzenie zamówienia zakupu nie tworzy transakcje dla projektu. 
+> Transakcje na ustalony koszt będą miały w polu **Źródło transakcji** ustawioną wartość **Zamówienie zakupu**. Utworzenie i potwierdzenie zamówienia zakupu nie tworzy transakcji dla projektu. 
 
-**Krok 2:** dostarczenie towarów i usług i dostawy nie jest zarejestrowany. 
+**Krok 2:** Towary i usługi zostają dostarczone i następuje zarejestrowanie przyjęcia produktu. 
 
-Księgowanie dokumentu przyjęcia produktów generować i Księgowanie załącznika w księdze. Załącznik po stronie debetowej kosztów zakupu, niezafakturowane konto i konto naliczeń zakupu. 
+Zaksięgowanie przyjęcia produktu spowoduje wygenerowanie załącznika i jego zaksięgowanie w księdze. Załącznik zostanie zapisany po stronie debetowej na koncie niezafakturowanych kosztów zakupu, a po stronie uznaniowej na koncie naliczeń zakupu. 
 [![accruals6](./media/accruals6-1024x214.png)](./media/accruals6.png)
 
 > [!NOTE]
-> Księgowanie dokumentu przyjęcia produktów użyje ustawień księgowania dla kategorii zaopatrzenia i produktów, a nie ustawień księgowania dla kategorii projektu. W celu właściwego uwzględnienia wpływu finansowego naliczenia zakupu, ta konfiguracja musi być skoordynowana. 
+> W celu zaksięgowania przyjęcia produktu będzie używana konfiguracja księgowania kategorii zaopatrzenia i produktów, a nie konfiguracja księgowania kategorii projektu. W celu właściwego wykazania finansowego wpływu naliczeń zakupu należy odpowiednio dopasować tę konfigurację. 
 
-Umożliwia mapowanie kategorii zaopatrzenia do kategorii projektów na **kategorii zaopatrzenia** strony.
+Na stronie **Kategoria zaopatrzenia ** można zamapować kategorie zaopatrzenia na kategorie projektu.
 [![accruals7](./media/accruals7-1024x390.png)](./media/accruals7.png)
 
-**Krok 3:** utworzyć fakturę od dostawcy wersji roboczej. 
+**Krok 3:** Utwórz wersję roboczą faktury od dostawcy. 
 
-W usłudze Dynamics 365 dla operacji Księgowanie dokumentu przyjęcia produktów nie wpływa na informacje o projekcie. Jako rozwiązanie alternatywne można wygenerować fakturę od dostawcy projekt bezpośrednio po zaksięgowaniu przyjęcia zakupu. Przejdź do **zamówienia zakupu** strony &gt;**kartę faktura**&gt;**Generuj**&gt;**faktury**. Tworzy dokument oczekuje na fakturę, która aktualizuje informacje o projekcie. 
+W programie Dynamics 365 for Operations zaksięgowanie przyjęcia produktu nie wpływa na informacje o projekcie. Aby obejść to zachowanie, można wygenerować wersję roboczą faktury od dostawcy natychmiast po zaksięgowaniu przyjęcia zakupu. Przejdź do strony **Zamówienie zakupu** &gt; karta **Faktura** &gt; **Generuj** &gt; **fakturę**. Zostanie utworzony dokument oczekującej faktury, który aktualizuje dane projektu. 
 
-Tworzenie faktury dostawcy projektu spowoduje wygenerowanie oczekujące transakcje projektu. 
+Utworzenie wersji roboczej faktury od dostawcy spowoduje generowanie oczekujących transakcji projektu. 
 [![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 
 
-W **ustalony koszt** stronę, rekordy utworzone w kroku 1 zostanie zamknięty i zostanie utworzone nowe rekordy do odzwierciedlają zaangażowanie kosztów pochodzących z faktura oczekująca. **Źródło transakcji** w polu Koszt ustalony zostanie ustawione na wartość **faktury od dostawcy**.
+Na stronie **Ustalony koszt** rekordy utworzone w kroku 1 zostaną zamknięte, a program utworzy nowe rekordy odzwierciedlające potwierdzenie kosztów pochodzące z oczekującej faktury od dostawcy. Pole **Źródło transakcji** dotyczące ustalonego kosztu zostanie ustawione na wartość **Faktura od dostawcy**.
 [![accruals9](./media/accruals9-1024x200.png)](./media/accruals9.png)
 
-Faktura od dostawcy pozostaną w stanie oczekiwania do momentu nadejścia fakturę od dostawcy rzeczywista.
+Faktura od dostawcy pozostanie w stanie oczekiwania do momentu nadejścia rzeczywistej faktury od dostawcy.
+
+
 
 

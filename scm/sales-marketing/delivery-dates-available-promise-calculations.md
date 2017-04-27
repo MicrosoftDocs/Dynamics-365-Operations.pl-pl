@@ -28,23 +28,26 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="order-promising"></a>Zobowiązanie do zamówienia
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o zobowiązaniach zamówień. Zobowiązania zamówień pomagają wiarygodnie deklarować daty dostawy odbiorcom oraz wprowadzają elastyczność umożliwiającą dotrzymanie tych terminów.
 
 Zobowiązanie zamówienia oblicza najwcześniejsze daty wysyłki i przyjęcia, i opiera się na metodzie kontroli daty dostawy i dni transportu. Dostępne są cztery metody kontroli daty dostawy:
 
--   **Czas realizacji sprzedaży** -sprzedaży czasu realizacji jest czas między tworzenia zamówienia sprzedaży i wydania zapasów. Obliczanie daty dostawy opiera się na domyślnej liczby dni, a nie należy wziąć pod uwagę dostępność, znanych zapotrzebowaniem lub pokryciem planowane.
--   **ATP (dostępne ilość)** – ATP jest ilość towaru, która jest dostępna i może być zobowiązał się do klienta w określonym dniu. Obliczanie ATP obejmuje niezatwierdzone zapasy, czasy realizacji, planowane przychody i rozchody.
+-   **Czas realizacji sprzedaży** — Czas realizacji sprzedaży to okres od utworzenia zamówienia sprzedaży do wysyłki towarów. Obliczenie daty dostawy opiera się na domyślne liczbie dni i nie uwzględnia dostępności zapasu, znanego popytu ani planowanej podaży.
+-   **ATP (dostępność zapasów)** — ATP to dostępna ilość towaru, która może zostać zarezerwowana dla odbiorcy na konkretny dzień. Obliczanie ATP obejmuje niezatwierdzone zapasy, czasy realizacji, planowane przychody i rozchody.
 -   **ATP + Zapas czasu dla rozchodu** — data wysyłki jest równa dacie ATP plus zapas czasu dla rozchodu w odniesieniu do towaru. Jest to czas potrzebny na przygotowanie towaru do wysyłki.
 -   **CTP (stan zapasów)** — dostępność jest obliczana na podstawie rozłożenia.
 
 ## <a name="atp-calculations"></a>Obliczenia ATP
-Ilość ATP jest obliczana przy użyciu metody "ATP zbiorczej z wyprzedzeniem". Główną zaletą tej metody obliczania ATP jest, że może obsługiwać przypadkach, gdy Suma rozchodów wśród przychodów jest więcej niż najnowsze potwierdzenia (na przykład, gdy ilość z wcześniejszej daty otrzymania musi służyć do spełnienia wymogu). Metoda obliczania "ATP zbiorczej z wyprzedzeniem" zawiera wszystkie wydania, dopóki skumulowana ilość do wydania przekracza ilość skumulowana do odbierania. Z tego względu metoda obliczania ATP ocenia, czy niektóre ilości z poprzedniego okresu mogą być używane w późniejszym okresie.  
+Ilość ATP jest obliczana na podstawie metody „zbiorcze ATP z wyprzedzeniem”. Główną zaletą tej metody obliczania ATP jest to, że może ona obsługiwać przypadki, gdzie suma wydań między przyjęciami jest większa niż ostatnie przyjęcie (np. gdy wystąpi potrzeba użycia ilości z wcześniejszego przyjęcia, aby zaspokoić określone zapotrzebowanie). Metoda obliczania „zbiorcze ATP z wyprzedzeniem” obejmuje wszystkie wydania do momentu, aż łączna ilość do przyjęcia będzie większa niż łączna ilość do wydania. Z tego względu metoda obliczania ATP ocenia, czy niektóre ilości z poprzedniego okresu mogą być używane w późniejszym okresie.  
 
 Ilość ATP jest niezatwierdzonym saldem magazynowym w pierwszym okresie. Zazwyczaj jest ona obliczana dla każdego okresu, w którym planowany jest przychód. Program oblicza okres ATP w dniach i oblicza bieżąca datę jako pierwszą datę dla ilości ATP. W pierwszym okresie ATP obejmuje dostępne zapasy ATP z potrąceniem zamówień odbiorców, które są należne lub zaległe.  
 
 ATP są obliczane za pomocą następującego wzoru:  
 
-ATP = ATP dla poprzedniego okresu + przyjęć dla ilości rozchodu netto bieżącego okresu — problemy dla bieżącego okresu — dla każdego okresu przyszłego dopiero w okresie, kiedy Suma przychodów dla wszystkich przyszłych okresów, do i włącznie z przyszłego okresu przekracza sumę problemów do i włącznie z przyszłym okresie.  
+ATP = ATP dla poprzedniego okresu + przyjęcia w bieżącym okresie - wydania w bieżącym okresie - wydana ilość netto dla każdego przyszłego okresu do momentu, gdy suma przyjęć dla wszystkich przyszłych okresów, łącznie z ostatnim okresem w zakresie, przekracza sumę wydań do przyszłego okresu włącznie.  
 
 Jeśli nie ma już rozchodów lub przychodów do uwzględnienia, ilość ATP dla następujących dat jest taka sama jak ostatnia obliczona ilość ATP.  
 
@@ -66,8 +69,10 @@ Klient dzwoni i chce zamówić 150 sztuk tego samego produktu. Gdy sprawdzasz do
 
 Tworzysz wiersz zamówienia sprzedaży dla produktu i wprowadzasz ilość **150**.  
 
-Ponieważ metodą kontroli daty dostawy jest ATP, obliczana jest data ATP, aby ustalić najwcześniejszą możliwą datę wysyłki. Na podstawie ustawień, zamówienia zakupu opóźnione i zamówienia sprzedaży są uważane za, a wynikowa ilość ATP dla bieżącej daty jest równa 0. Jutro, gdy zamówienia zakupu opóźnione oczekuje się być odbierane, ilość ATP jest obliczana jako więcej niż 0 (w tym przypadku to jest obliczana jako 125). Jednak 10 dni od teraz, gdy oczekuje zamówienie zakupu dodatkowych 100 sztuk ma być otrzymana, ilość ATP staje się ponad 150.  
+Ponieważ metodą kontroli daty dostawy jest ATP, obliczana jest data ATP, aby ustalić najwcześniejszą możliwą datę wysyłki. Na podstawie ustawień opóźnione zamówienie zakupu i zamówienie sprzedaży są uwzględniane i otrzymana ilość ATP dla bieżącej daty wynosi 0. Następnego dnia, gdy towary z opóźnionego zamówienia zakupu mają zostać odebrane, ilość ATP jest obliczana jako większa niż 0 (w tym przypadku wynosi 125). Jednak 10 dni od teraz, kiedy oczekuje się przyjęcia towarów z dodatkowego zamówienia zakupu na 100 sztuk towaru, ilość ATP jest większa niż 150.  
 
-W związku z tym data wysyłki jest ustawiony na 10 dni od teraz, oparte na obliczenie ATP. Teraz można powiedzieć odbiorcy, że żądana ilość towaru może zostać dostarczona 10 dni od teraz.
+Z tego powodu data wysyłki jest ustawiana na 10 dni od teraz na podstawie obliczeń ATP. Teraz można powiedzieć odbiorcy, że żądana ilość towaru może zostać dostarczona 10 dni od teraz.
+
+
 
 

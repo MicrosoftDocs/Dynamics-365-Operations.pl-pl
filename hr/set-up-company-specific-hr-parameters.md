@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-company-specific-hr-parameters"></a>Konfigurowanie parametrów Zasobów ludzkich specyficznych dla firmy
 
+[!include[banner](includes/banner.md)]
+
+
 Niektóre parametry modułu Zasoby ludzkie (HR) są wspólne dla wielu firm, podczas gdy inne parametry są specyficzne dla firm. W tym artykule wyjaśniono, jak skonfigurować parametry modułu Zasoby ludzkie specyficzne dla firmy.
 
 Do ustawiania parametrów Zasobów ludzkich służą dwie strony. W przypadku parametrów współużytkowanych przez firmy, użyj strony **Udostępniane parametry zasobów ludzkich**. W przypadku parametrów specyficznych dla firmy (ustawienie dotyczy tylko jednej firmy), użyj strony **Parametry zasobów ludzkich**. Na stronie **parametrów zasobów ludzkich** ustawienia są podzielone na sześciu kartach:
@@ -42,9 +45,9 @@ Każda karta zawiera informacje dotyczące jednej firmy. Ustawienia wprowadzone 
 
 Ustawienia wprowadzone na karcie **rekrutacji** definiują typy dokumentów używanych do korespondencji automatycznie wysyłanej do kandydatów, i projekt rekrutacji używany do obsługi niezamawianych zgłoszeń (które nie dotyczą określonego projektu rekrutacji). Okres zdefiniowany dla wiekowania projektu rekrutacji określa projekty rekrutacji uwzględnione w kafelku **Projekty wiekowania** w obszarze roboczym **Zarządzanie rekrutacją**. Okres zdefiniowany dla ostrzeżenia o ostatecznym terminie zgłoszenia jest używany do wyświetlania projektów rekrutacji, których ostateczny termin zgłoszeń się zbliża i jest określony w kafelku **Zbliża się ostateczny termin zgłoszenia** w obszarze roboczym **Rekrutacja**. 
 
-Ustawienia na **wynagrodzenie** kartę zdefiniuj, czy użytkownicy muszą potwierdzać, że chcą, aby zapisać informacje o stałej lub zmiennej wynagrodzeń. Jeśli wybierzesz **Włącz zapisywanie sprawdzania poprawności** pole wyboru dowolnej chwili, aby użytkownicy zamknęli odszkodowanie związane strony, otrzymają komunikat z pytaniem, czy chce się zapisać rekord. Niektóre strony w zarządzaniu rekompensaty nie Pozwól użytkownikom na usuwanie informacji. Dzięki pytaniu użytkowników, czy chcą zapisać informacje, można ograniczyć ilość zapisywanych danych, których potem nie można usunąć. Jeśli pole wyboru **Włącz weryfikację zapisu** nie zostanie zaznaczone, rekordy będą zawsze natychmiast zapisywane, być może zanim użytkownik będzie gotowy. W przypadku korzystania z funkcji zarządzania wydajnością można wybrać model oceniania na karcie **Wynagrodzenie** zamiast modelu przypisanego do systemów wynagrodzeń przy ocenie wydajności. 
+Ustawienia wprowadzone na karcie **Wynagrodzenie** określają, czy użytkownicy muszą potwierdzać, że chcą zapisać informacje dla systemu wynagrodzeń o stałej lub zmiennej wysokości. W przypadku zaznaczenia pola wyboru **Włącz weryfikację zapisu** za każdym razem, kiedy użytkownik zamknie stronę związaną z wynagrodzeniami, otrzyma wiadomość z zapytaniem, czy chce zapisać rekord. Niektóre strony w module zarządzania wynagrodzeniami nie zezwalają na usuwanie informacji. Dzięki pytaniu użytkowników, czy chcą zapisać informacje, można ograniczyć ilość zapisywanych danych, których potem nie można usunąć. Jeśli pole wyboru **Włącz weryfikację zapisu** nie zostanie zaznaczone, rekordy będą zawsze natychmiast zapisywane, być może zanim użytkownik będzie gotowy. W przypadku korzystania z funkcji zarządzania wydajnością można wybrać model oceniania na karcie **Wynagrodzenie** zamiast modelu przypisanego do systemów wynagrodzeń przy ocenie wydajności. 
 
-Ustawienia wprowadzone na karcie **Sekwencja numerów** określają sekwencje używane do automatycznego przypisywania identyfikatorów do elementów w module Zasoby ludzkie, takich jak zgłoszenia, rejestracje nieobecności, wyniki procesu wynagrodzenia, numery spraw i terminarze kursów. Aby obsługa odwołań sekwencji numerów i kodów, użyj **sekwencje numerów** strony listy (kliknij **Administrowanie organizacją**&gt;**Number sequences**&gt;**Number sequences**). 
+Ustawienia wprowadzone na karcie **Sekwencja numerów** określają sekwencje używane do automatycznego przypisywania identyfikatorów do elementów w module Zasoby ludzkie, takich jak zgłoszenia, rejestracje nieobecności, wyniki procesu wynagrodzenia, numery spraw i terminarze kursów. Aby obsługiwać odwołania numeracji i kody, użyj strony listy **Sekwencje identyfikatorów** (kliknij kolejno opcje **Administrowanie organizacją** &gt; **Sekwencje identyfikatorów** &gt; **Sekwencje identyfikatorów**). 
 
 Ustawienia wprowadzone na karcie **FMLA** określają, ile godzin pracownik musi pracować, aby otrzymać świadczenia FMLA, wymagany staż pracy i datę zatrudnienia konieczną do określenia stażu pracy. Ustawienia te definiują również liczbę godzin FMLA, do których pracownik jest upoważniony oraz kalendarz nieobecności FMLA używany do obliczenia, ile godzin FMLA pracownik wykorzystał. Karta **FMLA** jest dostępna tylko dla firm w Stanach Zjednoczonych. 
 
@@ -54,5 +57,7 @@ Ustawienia wprowadzone na karcie **FMLA** określają, ile godzin pracownik musi
 --------
 
 [Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach](set-up-hr-parameters-across-legal-entities.md)
+
+
 
 

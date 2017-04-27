@@ -1,5 +1,5 @@
 ---
-title: "Zatwierdzanie i Potwierdź zamówienia zakupu"
+title: "Zatwierdzanie i potwierdzanie zamówień zakupu"
 description: "W tym artykule opisano stany, przez które przechodzi zamówienie zakupu po utworzeniu, oraz skutek włączenia funkcji zarządzanie zmianami w zamówieniach zakupu."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="approve-and-confirm-purchase-orders"></a>Zatwierdzanie i Potwierdź zamówienia zakupu
+# <a name="approve-and-confirm-purchase-orders"></a>Zatwierdzanie i potwierdzanie zamówień zakupu
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule opisano stany, przez które przechodzi zamówienie zakupu po utworzeniu, oraz skutek włączenia funkcji zarządzanie zmianami w zamówieniach zakupu.
 
@@ -73,12 +76,14 @@ Po potwierdzeniu zamówienia nie można go usunąć. Jednakże można anulować 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Omówienie zamówień zakupu](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Tworzenie zamówienia zakupu](purchase-order-creation.md)
 
 [Przyjęcie produktów względem zamówień zakupu](product-receipt-against-purchase-orders.md)
 
 [Przegląd faktur od dostawcy](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

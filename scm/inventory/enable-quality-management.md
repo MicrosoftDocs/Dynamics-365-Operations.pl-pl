@@ -1,5 +1,5 @@
 ---
-title: "Omówienie zarządzania jakością"
+title: "Omówienie zarządzanie jakością"
 description: "W tym artykule opisano, jak za pomocą funkcji zarządzania jakością w programie Microsoft Dynamics 365 for Operations poprawiać jakość produktów w łańcuchu dostaw."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="quality-management-overview"></a>Omówienie zarządzania jakością
+# <a name="quality-management-overview"></a>Omówienie zarządzanie jakością
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule opisano, jak za pomocą funkcji zarządzania jakością w programie Microsoft Dynamics 365 for Operations poprawiać jakość produktów w łańcuchu dostaw.
 
@@ -344,7 +347,7 @@ Należy określić skojarzenie jakości dla każdego odchylenia w procesie bizne
 </tr>
 <tr class="even">
 <td>Wyniki zmiennych testowych.</td>
-<td>Ta strona służy do konfigurowania, edytowania i wyświetlania możliwych wartości zmiennej testowej skojarzonej z testem jakości. Dla każdego wyniku należy przypisać stan <strong>powodzenie</strong> lub <strong>niepowodzenie</strong>. Należy zdefiniować zmienną i jej wyniki dla każdego testu jakości zdefiniowanego na stronie <strong>Testy</strong>. (W przypadku testów jakościowych ustawiono typ testu <strong>opcji</strong> na <strong>testy</strong> strony.) Użyj <strong>grupy testów</strong> stronę, aby przypisać zmiennej testowej i wynik domyślny dla poszczególnych badań jakościowych.</td>
+<td>Ta strona służy do konfigurowania, edytowania i wyświetlania możliwych wartości zmiennej testowej skojarzonej z testem jakości. Dla każdego wyniku należy przypisać stan <strong>powodzenie</strong> lub <strong>niepowodzenie</strong>. Należy zdefiniować zmienną i jej wyniki dla każdego testu jakości zdefiniowanego na stronie <strong>Testy</strong>. (Dla testów jakościowych ustawiono typ testu <strong>Opcja</strong> na stronie <strong>Testy</strong>). Strona <strong>Grupy testów</strong> służy do przypisywania zmiennej testowej i domyślnego wyniku do konkretnego testu.</td>
 <td>Firma produkująca ciasteczka przeprowadza testy kontrolne na gotowym produkcie. Ten test inspekcji zawiera kilka zmiennych. Jedną ze zmiennych jest smak, a jej możliwe wyniki to dobry i zły. Druga zmienna to kolor z wynikami zbyt ciemny, zbyt jasny i prawidłowy. Każdy wynik ma przypisany stan <strong>powodzenie</strong> lub <strong>niepowodzenie</strong>. Podczas sprawdzania poszczególnych zmiennych, kontroler raportuje wyniki testów, zaznaczając jeden z wyników.</td>
 </tr>
 </tbody>
@@ -355,8 +358,10 @@ Należy określić skojarzenie jakości dla każdego odchylenia w procesie bizne
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Quality management processes](quality-management-processes.md)
+[Procesy zarządzania jakością](quality-management-processes.md)
 
 [Włączanie zarządzania niezgodnościami](enable-nonconformance-management.md)
+
+
 
 

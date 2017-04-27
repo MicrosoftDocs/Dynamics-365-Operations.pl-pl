@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="main-account-types"></a>Typy konta głównego
 
+[!include[banner](../includes/banner.md)]
+
+
 Typ kont głównych określają sposób używania konta głównego w planie kont.
 
 Podczas tworzenia konta głównego trzeba wybrać jego typ na stronie Konta główne — plan kont.
@@ -35,6 +38,8 @@ Podczas tworzenia konta głównego trzeba wybrać jego typ na stronie Konta gł�
 -   Bilans, Składnik aktywów, Zobowiązanie i Kapitał własny — te konta główne są używane jako konta transakcji do zapisywania kwot należnych lub zobowiązań podmiotu prawnego.
 -   Suma — te konta główne służą do dodawania interwałów kont. Do konfiguracji typu konta głównego Suma służy strona Interwał kont, na której widoczna jest suma salda grup dla wszystkich interwałów konta. Aby wejść na stronę interwałów konta, kliknij Sumy na karcie Ogólne po wybraniu typu konta Suma.
 -   Sprawozdawczość — te konta główne służą do sprawozdań finansowych tylko w Brazylii.
+
+
 
 
 

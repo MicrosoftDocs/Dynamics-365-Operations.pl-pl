@@ -1,5 +1,5 @@
 ---
-title: "Obsługa tablicy Kanban transferu czytniki kodów kreskowych"
+title: "Obsługa tablicy Kanban przeniesienia dla skanerów kodów kreskowych"
 description: "Tablica Kanban przeniesienia obsługuje wprowadzanie ze skanera przy użyciu widżetu skanera kodów kreskowych, który obsługuje funkcje wybierania, rozpoczynania, kończenia i opróżniania zadań Kanban."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Obsługa tablicy Kanban transferu czytniki kodów kreskowych
+# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Obsługa tablicy Kanban przeniesienia dla skanerów kodów kreskowych
+
+[!include[banner](../includes/banner.md)]
+
 
 Tablica Kanban przeniesienia obsługuje wprowadzanie ze skanera przy użyciu widżetu skanera kodów kreskowych, który obsługuje funkcje wybierania, rozpoczynania, kończenia i opróżniania zadań Kanban.
 
@@ -46,7 +49,7 @@ Na skróconej karcie **Rejestracja skanera** można wybrać tryb rejestracji kon
 <a name="registration-mode-select"></a>Wybierz tryb rejestracji
 ------------------------
 
-Użycie czytnika kodu kreskowego do zaznacz zadanie, tryb wyświetlania o zmianach tablicy kanban. W tym trybie stosuje się następujące warunki:
+Gdy użyjesz czytnika kodów kreskowych do wybrania zadania, tryb wyświetlania na tablicy Kanban zmieni się. W tym trybie mają zastosowanie następujące warunki:
 
 -   Wyświetlane są tylko zeskanowane zadania Kanban.
 -   Szczegóły wybranego zadania są wyświetlane w na skróconej karcie **Szczegóły**.
@@ -185,6 +188,8 @@ Stan wybranego zadania oraz stan wszelkich niezaplanowanych zadań dla w dla kar
 </tr>
 </tbody>
 </table>
+
+
 
 
 

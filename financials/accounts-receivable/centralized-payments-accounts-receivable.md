@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-receivable"></a>Scentralizowane płatności dla rozrachunków z odbiorcami
 
+[!include[banner](../includes/banner.md)]
+
+
 Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą jednej firmy, która obsługuje wszystkie płatności. Dlatego tych samych transakcji nie trzeba wpisywać w wielu firmach. Ten artykuł zawiera przykłady pokazujące sposób księgowania scentralizowanych płatności w różnych scenariuszach.
 
 Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą firmy, która obsługuje wszystkie płatności. Dlatego tych samych transakcji nie trzeba wpisywać w wielu firmach. Ponadto organizacja oszczędza czas, bo procesy dla propozycji płatności, rozliczeń i edytowania otwartych i zamkniętych transakcji na potrzeby płatności scentralizowanych przebiegają sprawniej. 
 
-W organizacji scentralizowanej płatności istnieje wiele osób prawnych dla operacji i każdej działalności firmy zarządza własne informacje z odbiorcami faktur. Płatności za wszystkie działania podmioty prawne są odbierane przez jeden podmiot prawny, który jest znany jako podmiot prawny płatności. W trakcie procesu rozrachunku tworzone są odpowiednie transakcje „należne dla” i „należne od”. Użytkownik może określić, która firma w organizacji ma odbierać transakcje zrealizowanych dodatnich oraz ujemnych różnic kursowych i w jaki sposób mają być obsługiwane transakcje rabatów gotówkowych związane z płatnościami scentralizowanymi. 
+W organizacji stosującej scentralizowane płatności występuje wiele firm dla operacji i każda firma operacyjna zarządza własnymi informacjami o należnościach za faktury. Płatności dla wszystkich operacyjnych firm są zbierane przez jedną firmę nazywaną firmą płatności. W trakcie procesu rozrachunku tworzone są odpowiednie transakcje „należne dla” i „należne od”. Użytkownik może określić, która firma w organizacji ma odbierać transakcje zrealizowanych dodatnich oraz ujemnych różnic kursowych i w jaki sposób mają być obsługiwane transakcje rabatów gotówkowych związane z płatnościami scentralizowanymi. 
 
 Poniższe przykłady ilustrują sposób księgowania w przypadku różnych scenariuszy. Wszystkie przykłady dotyczą następującej konfiguracji:
 
@@ -66,14 +69,14 @@ Firma Fabrikam odbiera płatność 600,00 dla konta odbiorcy firmy Fabrikam o nu
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam East
 
-**Fabrikam posting**
+**Księgowanie w firmie Fabrikam**
 
 | Konto                         | Kwota debetu | Kwota kredytu |
 |---------------------------------|--------------|---------------|
 | Rozrachunki z odbiorcami (Fabrikam)  | 600,00       |               |
 | Należne dla Fabrikam East (Fabrikam) |              | 600,00        |
 
-**Fabrikam East posting**
+**Księgowanie w firmie Fabrikam East**
 
 | Konto                             | Kwota debetu | Kwota kredytu |
 |-------------------------------------|--------------|---------------|
@@ -81,7 +84,7 @@ Firma Fabrikam odbiera płatność 600,00 dla konta odbiorcy firmy Fabrikam o nu
 | Rozrachunki z odbiorcami (Fabrikam East) |              | 600,00        |
 
 ## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>Przykład 2: Płatność odbiorcy za fakturę innej firmy z rabatem gotówkowym
-Firma Fabrikam odbiera płatność 580,00 od odbiorcy 4000 firmy Fabrikam, Northwind Traders. Firma Fabrikam wschód ma otwartą fakturę dla odbiorcy 4000. Faktura ma dostępny rabat gotówkowy 20,00. Płatność jest rozliczana za pomocą otwartych faktur firmy Fabrikam East. Rabat gotówkowy jest księgowany w firmie obsługującej fakturowanie, Fabrikam East.
+Firma Fabrikam odbiera płatność 580,00 od odbiorcy 4000 firmy Fabrikam, Northwind Traders. Firma Fabrikam East ma otwartą fakturę dla odbiorcy 4000. Faktura ma dostępny rabat gotówkowy 20,00. Płatność jest rozliczana za pomocą otwartych faktur firmy Fabrikam East. Rabat gotówkowy jest księgowany w firmie obsługującej fakturowanie, Fabrikam East.
 
 ### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Faktura zostaje zaksięgowana w firmie Fabrikam East dla odbiorcy 4000 firmy Fabrikam East
 
@@ -99,14 +102,14 @@ Firma Fabrikam odbiera płatność 580,00 od odbiorcy 4000 firmy Fabrikam, North
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam East
 
-**Fabrikam posting**
+**Księgowanie w firmie Fabrikam**
 
 | Konto                         | Kwota debetu | Kwota kredytu |
 |---------------------------------|--------------|---------------|
 | Rozrachunki z odbiorcami (Fabrikam)  | 580,00       |               |
 | Należne dla Fabrikam East (Fabrikam) |              | 580,00        |
 
-**Fabrikam East posting**
+**Księgowanie w firmie Fabrikam East**
 
 | Konto                             | Kwota debetu | Kwota kredytu |
 |-------------------------------------|--------------|---------------|
@@ -137,7 +140,7 @@ Firma Fabrikam odbiera płatność 600,00 euro (EUR) od odbiorcy 4000 firmy Fabr
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam East
 
-**Fabrikam posting**
+**Księgowanie w firmie Fabrikam**
 
 | Konto                         | Kwota debetu            | Kwota kredytu           |
 |---------------------------------|-------------------------|-------------------------|
@@ -146,7 +149,7 @@ Firma Fabrikam odbiera płatność 600,00 euro (EUR) od odbiorcy 4000 firmy Fabr
 | Należne dla Fabrikam East (Fabrikam) | 0,00 EUR / 12,90 USD    |                         |
 | Zrealizowana dodatnia różnica kursowa (Fabrikam)        |                         | 0,00 EUR / 12,90 USD    |
 
-**Fabrikam East posting**
+**Księgowanie w firmie Fabrikam East**
 
 | Konto                             | Kwota debetu            | Kwota kredytu           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -178,7 +181,7 @@ Firma Fabrikam księguje płatność odbiorcy 4000 firmy Fabrikam, Northwind Tra
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam East
 
-**Fabrikam posting**
+**Księgowanie w firmie Fabrikam**
 
 | Konto                         | Kwota debetu            | Kwota kredytu           |
 |---------------------------------|-------------------------|-------------------------|
@@ -187,7 +190,7 @@ Firma Fabrikam księguje płatność odbiorcy 4000 firmy Fabrikam, Northwind Tra
 | Należne dla Fabrikam East (Fabrikam) | 0,00 EUR / 13,46 USD    |                         |
 | Zrealizowana dodatnia różnica kursowa (Fabrikam)        |                         | 0,00 EUR / 13,46 USD    |
 
-**Fabrikam East posting**
+**Księgowanie w firmie Fabrikam East**
 
 | Konto                             | Kwota debetu            | Kwota kredytu           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -199,7 +202,7 @@ Firma Fabrikam księguje płatność odbiorcy 4000 firmy Fabrikam, Northwind Tra
 | Rozrachunki z odbiorcami (Fabrikam East) |                         | 12,00 EUR / 14,47 USD   |
 
 ## <a name="example-5-customer-credit-note-with-primary-payment"></a>Przykład 5: Faktura korygująca odbiorcy z płatnością główną
-Firma Fabrikam odbiera płatność 75,00 od odbiorcy 4000, Northwind Traders. Płatność jest rozliczana za pomocą otwartej faktury dla odbiorcy 10000 firmy Fabrikam West i otwartej faktury korygującej dla odbiorcy 4000 firmy Fabrikam East. Płatność jest zaznaczone jako płatność główna na **rozliczenia transakcji** strony.
+Firma Fabrikam odbiera płatność 75,00 od odbiorcy 4000, Northwind Traders. Płatność jest rozliczana za pomocą otwartej faktury dla odbiorcy 10000 firmy Fabrikam West i otwartej faktury korygującej dla odbiorcy 4000 firmy Fabrikam East. Płatność jest wybrana jako płatność główna na stronie **Rozlicz transakcje**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Faktura zostaje zaksięgowana w firmie Fabrikam West dla odbiorcy 10000
 
@@ -224,7 +227,7 @@ Firma Fabrikam odbiera płatność 75,00 od odbiorcy 4000, Northwind Traders. P�
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam West i faktury korygującej firmy Fabrikam East
 
-**Fabrikam posting**
+**Księgowanie w firmie Fabrikam**
 
 | Konto                           | Kwota debetu | Kwota kredytu |
 |-----------------------------------|--------------|---------------|
@@ -233,14 +236,14 @@ Firma Fabrikam odbiera płatność 75,00 od odbiorcy 4000, Northwind Traders. P�
 | Rozrachunki z odbiorcami (Fabrikam)    | 100,00       |               |
 | Należne dla Fabrikam West (Fabrikam)   |              | 100,00        |
 
-**Fabrikam East posting**
+**Księgowanie w firmie Fabrikam East**
 
 | Konto                             | Kwota debetu | Kwota kredytu |
 |-------------------------------------|--------------|---------------|
 | Rozrachunki z odbiorcami (Fabrikam East) | 25,00        |               |
 | Należne dla Fabrikam (Fabrikam East)     |              | 25,00         |
 
-**Fabrikam West posting**
+**Księgowanie w firmie Fabrikam West**
 
 | Konto                             | Kwota debetu | Kwota kredytu |
 |-------------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ Firma Fabrikam odbiera płatność 75,00 od odbiorcy 4000, Northwind Traders. P�
 | Rozrachunki z odbiorcami (Fabrikam West) |              | 100,00        |
 
 ## <a name="example-6-customer-credit-note-without-primary-payment"></a>Przykład 6: Faktura korygująca odbiorcy bez płatności głównej
-Firma Fabrikam odbiera płatność 75,00 od odbiorcy 4000, Northwind Traders. Płatność jest rozliczana za pomocą otwartej faktury dla odbiorcy 10000 firmy Fabrikam West i otwartej faktury korygującej dla odbiorcy 4000 firmy Fabrikam East. Płatność nie jest zaznaczony jako płatność główna na **rozliczenia transakcji** strony.
+Firma Fabrikam odbiera płatność 75,00 od odbiorcy 4000, Northwind Traders. Płatność jest rozliczana za pomocą otwartej faktury dla odbiorcy 10000 firmy Fabrikam West i otwartej faktury korygującej dla odbiorcy 4000 firmy Fabrikam East. Płatność nie jest wybrana jako płatność główna na stronie **Rozlicz transakcje**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Faktura zostaje zaksięgowana w firmie Fabrikam West dla odbiorcy 10000
 
@@ -273,21 +276,21 @@ Firma Fabrikam odbiera płatność 75,00 od odbiorcy 4000, Northwind Traders. P�
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam West i faktury korygującej firmy Fabrikam East
 
-**Fabrikam posting**
+**Księgowanie w firmie Fabrikam**
 
 | Konto                         | Kwota debetu | Kwota kredytu |
 |---------------------------------|--------------|---------------|
 | Rozrachunki z odbiorcami (Fabrikam)  | 75,00        |               |
 | Należne dla Fabrikam West (Fabrikam) |              | 75,00         |
 
-**Fabrikam East posting**
+**Księgowanie w firmie Fabrikam East**
 
 | Konto                              | Kwota debetu | Kwota kredytu |
 |--------------------------------------|--------------|---------------|
 | Rozrachunki z odbiorcami (Fabrikam East)  | 25,00        |               |
 | Należne dla Fabrikam West (Fabrikam East) |              | 25,00         |
 
-**Fabrikam West posting**
+**Księgowanie w firmie Fabrikam West**
 
 | Konto                                | Kwota debetu | Kwota kredytu |
 |----------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ Firma Fabrikam odbiera płatność 75,00 od odbiorcy 4000, Northwind Traders. P�
 | Rozrachunki z odbiorcami (Fabrikam West)    |              | 75,00         |
 | Należne od Fabrikam East (Fabrikam West) | 25,00        |               |
 | Rozrachunki z odbiorcami (Fabrikam West)    |              | 25,00         |
+
+
 
 
 

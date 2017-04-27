@@ -1,5 +1,5 @@
 ---
-title: "Ponowne obliczanie, koszty wymiany i ubezpieczonych wartości dla grup środków trwałych"
+title: "Ponowne obliczanie kosztów wymiany i wartości ubezpieczenia dla grup środków trwałych"
 description: "W tym artykule wyjaśniono proces aktualizowania kosztów wymiany i wartości ubezpieczenia środków trwałych."
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Ponowne obliczanie, koszty wymiany i ubezpieczonych wartości dla grup środków trwałych
+# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Ponowne obliczanie kosztów wymiany i wartości ubezpieczenia dla grup środków trwałych
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule wyjaśniono proces aktualizowania kosztów wymiany i wartości ubezpieczenia środków trwałych.
 
@@ -38,18 +41,18 @@ Aby ponownie obliczyć koszty wymiany oraz wartości ubezpieczenia grup środkó
 
 W przypadku korzystania z formularza Zaktualizuj koszty wymiany i wartości ubezpieczenia w celu ponownego obliczania kosztów wymiany oraz wartości ubezpieczenia dla środków trwałych, system korzysta z następujących wzorów:
 
--   \[(Współczynnik kosztu wymiany Grupa środków trwałych / 100) + 1\]\* koszt odtworzenia istniejących środków trwałych
--   \[(Grupa środków trwałych jest ubezpieczona wartość współczynnika / 100) + 1\]\* składnika aktywów istniejących ubezpieczona wartość
+-   \[(Współczynnik kosztów wymiany grupy środków trwałych / 100) + 1\] \* Obecny koszt wymiany środków trwałych
+-   \[(Współczynnik wartości ubezpieczenia grupy środków trwałych / 100) + 1\] \* Obecna wartość ubezpieczenia środków trwałych
 
 > [!NOTE] 
 > Gdy używany jest formularz Zaktualizuj koszty wymiany i wartości ubezpieczenia, koszt wymiany oraz wartość ubezpieczenia są aktualizowane dla wybranych środków trwałych; nie można określić, aby tylko jedna wartość została zaktualizowana. Aby pozostawić jedną wartość taką samą i jednocześnie zaktualizować drugą wartość, wprowadź 0 (zero) jako współczynnik w formularzu Grupy środków trwałych. Współczynnik równy zero lub brak wartości powodują pominięcie obliczania podczas aktualizacji. Wartość księgowa oraz wartość księgowa netto środków trwałych nie są objęte okresową aktualizacją. 
 
 ## <a name="how-to-use-a-date-to-select-which-items-to-update"></a> Korzystanie z daty w celu wybrania elementów do aktualizacji
-Domyślnie proces aktualizacji aktualizuje wybrane środki trwałe, które nie zostały zaktualizowane bieżącego dnia, ale które mogły być zaktualizowane poprzedniego dnia. Na przykład &lt;oznacza bieżącą datę "przed dniem dzisiejszym." Data w aktualizacji koszty i ubezpieczonych wartości formularz wymiany można zmienić, klikając przycisk Wybierz. Określone kryteria daty są porównywane z datą ostatniej okresowej aktualizacji dla środków trwałych (pole Ostatnia okresowa aktualizacja wartości/kosztu w formularzu Środki trwałe). Za każdym razem, gdy zostaje pomyślnie zaktualizowany koszt wymiany lub wartość ubezpieczenia dla środków trwałych, system automatycznie aktualizuje pole Ostatnia okresowa aktualizacja wartości/kosztu bieżącą datą. 
+Domyślnie proces aktualizacji aktualizuje wybrane środki trwałe, które nie zostały zaktualizowane bieżącego dnia, ale które mogły być zaktualizowane poprzedniego dnia. Na przykład &lt; bieżąca data oznacza „przed dniem dzisiejszym”. Można zmienić datę w formularzu Zaktualizuj koszty wymiany i wartości ubezpieczenia, klikając przycisk Wybierz. Określone kryteria daty są porównywane z datą ostatniej okresowej aktualizacji dla środków trwałych (pole Ostatnia okresowa aktualizacja wartości/kosztu w formularzu Środki trwałe). Za każdym razem, gdy zostaje pomyślnie zaktualizowany koszt wymiany lub wartość ubezpieczenia dla środków trwałych, system automatycznie aktualizuje pole Ostatnia okresowa aktualizacja wartości/kosztu bieżącą datą. 
 
 Przykład 
 
-O 5 procent zaktualizowana wczoraj koszt odtworzenia pojazdów, meble biurowe i grupy budynków i teraz rozważyć dokładnie aktualizacji tych aktywów. Aby wykluczyć te aktywa po zaktualizowaniu wszystkich pozostałych środków trwałych dziś, wprowadź datę ostatniego pola aktualizacji okresowej wartość/Koszt jest wczoraj (&lt; z datą wczorajszą), ponieważ ostatnia aktualizacja dla grup pojazdów, meble biurowe i budynki miejsce poza kryteria daty wprowadzone.
+Zaktualizowano wczoraj o 5 procent koszt wymiany grup pojazdów, mebli biurowych oraz budynków, a teraz stwierdzasz, że te środki trwałe zostały prawidłowo zaktualizowane. Aby wykluczyć te środki trwałe z dzisiejszej aktualizacji pozostałych środków trwałych, wprowadzasz datę w polu Ostatnia okresowa aktualizacja wartości/kosztu, która jest datą wcześniejszą niż wczorajsza (&lt; data wczorajsza), ponieważ ostatnia okresowa aktualizacja dla pojazdów, mebli biurowych oraz budynków wystąpiła poza wprowadzonym kryterium daty.
 
 ## <a name="cumulative-effect-of-each-update"></a> Skumulowane skutki każdej aktualizacji
 Każda aktualizacja ma skutki skumulowane. Dlatego należy ostrożnie planować aktualizacje. Na przykład, jeśli zwiększysz środki trwałe w czwartek o 3%, a następnie zwiększysz w piątek ilość mebli biurowych o 4%, wartość mebli wzrośnie łącznie o 7,12%.
@@ -72,6 +75,8 @@ Następnego dnia menedżer informuje Cię, że komputery spadły o 8% zamiast 10
 
 > [!NOTE]  
 > Można wycofać współczynnik –10 poprzez wprowadzenie dodatniego współczynnika 10 (lub współczynnika 2, czyli różnicy między –10 i –8), ponieważ kwoty nie zostaną obliczone zgodnie z zamierzeniem. 
+
+
 
 
 

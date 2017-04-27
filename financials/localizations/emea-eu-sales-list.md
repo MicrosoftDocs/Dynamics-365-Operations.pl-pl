@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="eu-sales-list-reporting"></a>Raportowanie listy sprzedaży do UE
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o raportowaniu listy sprzedaży do państw Unii Europejskiej (UE).
 
 <a name="eu-sales-list-reporting"></a>Raportowanie listy sprzedaży do UE
@@ -64,11 +67,11 @@ W poniższej tabeli przedstawiono wymagania wstępne, które muszą istnieć prz
 <tbody>
 <tr class="odd">
 <td><strong>Konfiguracja:</strong> Firma</td>
-<td>Podstawowy adres firmy musi być w Unii Europejskiej. Na <strong>osoby prawne</strong> stronę (kliknij <strong>Administrowanie organizacją</strong>&gt;<strong>organizacji</strong>&gt;<strong>osoby prawne</strong>), wybierz podmiot prawny. Na skróconej karcie <strong>Adresy</strong> utwórz adres, wybierz kraj/region i inne składniki adresu i oznacz adres jako <strong>Podstawowy</strong>. Na skróconej karcie <strong>Rejestracja podatkowa</strong> w polu <strong>Numer identyfikacji podatkowej</strong> określ numer NIP swojej firmy.</td>
+<td>Podstawowy adres firmy musi być w Unii Europejskiej. Na stronie <strong>Firmy</strong> (kliknij kolejno opcje <strong>Administrowanie organizacją</strong> &gt; <strong>Organizacje</strong> &gt; <strong>Firmy</strong>) wybierz swoją firmę. Na skróconej karcie <strong>Adresy</strong> utwórz adres, wybierz kraj/region i inne składniki adresu i oznacz adres jako <strong>Podstawowy</strong>. Na skróconej karcie <strong>Rejestracja podatkowa</strong> w polu <strong>Numer identyfikacji podatkowej</strong> określ numer NIP swojej firmy.</td>
 </tr>
 <tr class="even">
 <td><strong>Konfiguracja:</strong> Parametry numeru identyfikacji podatkowej</td>
-<td>Ustawianie parametrów identyfikacji podatkowej na <strong>parametrów kraju/regionu</strong> stronę (kliknij <strong>podatku</strong>&gt;<strong>instalacji</strong>&gt;<strong>podatku</strong>&gt;<strong>parametrów kraju/regionu</strong>). Dla każdego kraju/regionu, w którym masz kontrahentów, utwórz rekord na stronie, a następnie określ następujące informacje:
+<td>Ustaw parametry identyfikacji podatkowej na stronie <strong>Parametry kraju/regionu</strong> (kliknij kolejno opcje <strong>Podatek</strong> &gt; <strong>Ustawienia</strong> &gt; <strong>Podatek</strong> &gt; <strong>Parametry kraju/regionu</strong>). Dla każdego kraju/regionu, w którym masz kontrahentów, utwórz rekord na stronie, a następnie określ następujące informacje:
 <ul>
 <li><strong>Kraj/region</strong> — wybierz kraj/region do powiązania z numerem identyfikacji podatkowej.</li>
 <li><strong>Podatek</strong> — umożliwia wprowadzenie numeru identyfikacji podatkowej (czyli prefiksu numeru identyfikacji podatkowej) dla wybranego kraju/regionu.</li>
@@ -77,7 +80,7 @@ W poniższej tabeli przedstawiono wymagania wstępne, które muszą istnieć prz
 </tr>
 <tr class="odd">
 <td><strong>Konfiguracja:</strong> Numery identyfikacji podatkowej</td>
-<td>Tworzenie numerów identyfikacji podatkowej typowych dla Twojego kontrahentów na <strong>numery identyfikacji podatkowej</strong> stronę (kliknij <strong>podatku</strong>&gt;<strong>instalacji</strong>&gt;<strong>podatku</strong>&gt;<strong>numery identyfikacji podatkowej</strong>). Dla każdego numeru identyfikacji podatkowej utwórz rekord na stronie, a następnie określ następujące informacje:
+<td>Utwórz numery identyfikacji podatkowej na stronie <strong>Numery identyfikacji podatkowej</strong> (kliknij kolejno opcje <strong>Podatek</strong> &gt; <strong>Ustawienia</strong> &gt; <strong>Podatek</strong> &gt; <strong>Numery identyfikacji podatkowej</strong>). Dla każdego numeru identyfikacji podatkowej utwórz rekord na stronie, a następnie określ następujące informacje:
 <ul>
 <li><strong>Kraj/region </strong>— wybierz kraj/region identyfikacji podatkowej kontrahenta.</li>
 <li><strong>Numer identyfikacji podatkowej</strong> — umożliwia wprowadzenie numeru identyfikacji podatkowej kontrahenta.</li>
@@ -86,11 +89,11 @@ W poniższej tabeli przedstawiono wymagania wstępne, które muszą istnieć prz
 </tr>
 <tr class="even">
 <td><strong>Konfiguracja:</strong> Rejestracja kontrahentów</td>
-<td>Skonfigurować informacje o identyfikacji podatkowej dla Twojego kontrahentów na jednej <strong>wszystkich klientów</strong> stronę (kliknij <strong>sprzedaży i marketingu</strong>&gt;<strong>klienci</strong>&gt;<strong>wszystkich klientów</strong>, wybierz rekord klienta, a następnie kliknij <strong>opcje</strong>&gt;<strong>zmienić widok</strong>&gt;<strong>widok szczegółów</strong>) lub <strong>dostawców</strong> stronę (kliknij <strong>zaopatrzenie i sourcing</strong>&gt;<strong>dostawców</strong>&gt;<strong>dostawców</strong>, wybierz rekord dostawcy, a następnie kliknij przycisk <strong>opcje</strong>&gt;<strong>zmienić widok</strong>&gt;<strong>widok szczegółów</strong>). Na skróconej karcie <strong>Faktura i dostawa</strong> w polu <strong>Numer identyfikacji podatkowej</strong> wybierz numer identyfikacji podatkowej.</td>
+<td>Ustaw informacje o identyfikacji podatkowej na stronie <strong>Wszyscy odbiorcy</strong> (kliknij kolejno opcje <strong>Sprzedaż i marketing</strong> &gt; <strong>Odbiorcy</strong> &gt; <strong>Wszyscy odbiorcy</strong>, wybierz rekord odbiorcy, a następnie kliknij kolejno opcje <strong>Opcje</strong> &gt; <strong>Zmień widok</strong> &gt; <strong>Widok szczegółów</strong>) lub na stronie <strong>Dostawcy</strong> (kliknij kolejno opcje <strong>Zaopatrzenie i sourcing</strong> &gt; <strong>Dostawcy</strong> &gt; <strong>Dostawcy</strong>, wybierz rekord dostawcy, a następnie kliknij kolejno opcje <strong>Opcje</strong> &gt; <strong>Zmień widok</strong> &gt; <strong>Widok szczegółów</strong>). Na skróconej karcie <strong>Faktura i dostawa</strong> w polu <strong>Numer identyfikacji podatkowej</strong> wybierz numer identyfikacji podatkowej.</td>
 </tr>
 <tr class="odd">
 <td><strong>Konfiguracja:</strong> Podatek</td>
-<td>Ustawianie kodów podatków do uwzględnienia w <strong>listy sprzedaży do UE</strong> sprawozdanie w sprawie <strong>kody podatków</strong> strony (kliknij <strong>podatku</strong>&gt;<strong>podatków pośrednich</strong>&gt;<strong>podatku</strong>&gt;<strong>kody podatków</strong>). Na skróconej karcie <strong>Konfiguracja raportu</strong> dla każdego kodu podatku, która powinna zostać uwzględniona w raporcie, wyczyść pole wyboru <strong>Wykluczone</strong>. Konfigurowanie parametrów podatek od sprzedaży dla elementów na <strong>grup podatku od sprzedaży towarów</strong> stronę (kliknij <strong>podatku</strong>&gt;<strong>podatków pośrednich</strong>&gt;<strong>podatku</strong>&gt;<strong>grup podatku od sprzedaży towarów</strong>). Dla każdej grupy podatków towarów wybierz wartość w polu <strong>Typ raportowania</strong>. Wybrana wartość określa kwotę kolumny ESL, w której zostanie uwzględniona kwota wiersza.
+<td>Ustaw kody podatków, które mają znaleźć się w raporcie <strong>Lista sprzedaży do UE</strong> na stronie <strong>Kody podatków</strong> (kliknij kolejno opcje <strong>Podatek</strong> &gt; <strong>Podatki pośrednie</strong> &gt; <strong>Podatek</strong> &gt; <strong>Kody podatków</strong>). Na skróconej karcie <strong>Konfiguracja raportu</strong> dla każdego kodu podatku, która powinna zostać uwzględniona w raporcie, wyczyść pole wyboru <strong>Wykluczone</strong>. Ustaw parametry podatku dla towarów na stronie <strong>Grupy podatków dla pozycji</strong> (kliknij kolejno opcje <strong>Podatek</strong> &gt; <strong>Podatki pośrednie</strong> &gt; <strong>Podatek</strong> &gt; <strong>Grupy podatków dla pozycji</strong>). Dla każdej grupy podatków towarów wybierz wartość w polu <strong>Typ raportowania</strong>. Wybrana wartość określa kwotę kolumny ESL, w której zostanie uwzględniona kwota wiersza.
 <ul>
 <li><strong>Puste</strong> — kwota wiersza jest uwzględniana w kolumnie <strong>Nieprzypisana wartość</strong>.</li>
 <li><strong>Towar</strong> — kwota wiersza jest uwzględniana w kolumnie <strong>Wartość towarów</strong>.</li>
@@ -104,7 +107,7 @@ W poniższej tabeli przedstawiono wymagania wstępne, które muszą istnieć prz
 </tr>
 <tr class="odd">
 <td><strong>Konfiguracja: </strong>Parametry ogólne</td>
-<td>Skonfigurować parametry raportowania na ESL <strong>Parametry handlu zagranicznego</strong> stronę (kliknij <strong>podatku</strong>&gt;<strong>instalacji</strong>&gt;<strong>handlu zagranicznego</strong>&gt;<strong>Parametry handlu zagranicznego</strong>). Określ następujące parametry:
+<td>Ustaw parametry raportowania ESL na stronie <strong>Parametry handlu zagranicznego</strong> (kliknij kolejno opcje <strong>Podatek</strong> &gt; <strong>Ustawienia</strong> &gt; <strong>Handel zagraniczny</strong> &gt; <strong>Parametry handlu zagranicznego</strong>). Określ następujące parametry:
 <ul>
 <li>Karta <strong>Lista sprzedaży do UE</strong>:
 <ul>
@@ -147,7 +150,7 @@ Transakcje następujących typów można uznać za transakcje handlu wewnątrzws
 -   Faktury projektu
 -   Faktury dostawcy
 
-Transakcja jest uznawana za transakcję handlu wewnątrzwspólnotowego, jeśli adres dostawy transakcji jest w państwie członkowskim UE. Dla tych krajów/regionów musi istnieć rekord na karcie **Parametry kraju/regionu** na stronie **Parametry handlu zagranicznego**, a **Typ kraju/regionu** powinien mieć wartość **UE**. Transakcje handlu wewnątrzwspólnotowego są oznaczane w polu **Kod listy**. Za pomocą tego pola, można także oddzielić ogólne transakcje handlu wewnątrzwspólnotowego od transakcji handlu trójstronnego. Można zbierać informacje dotyczące transakcji handlowych wewnątrz Wspólnoty, na **listy sprzedaży do UE** stronę (kliknij **podatku**&gt;**deklaracje**&gt;**handlu zagranicznego**&gt;**listy sprzedaży do UE**) za pomocą **transferu** funkcji. Ta funkcja pozwala na uwzględnianie transakcji zawierających kwoty o różnych typów raportowania (tzn., towary lub usługi) według grup podatku dla towarów określonych w wierszach transakcji. Można także zastosować inne filtry do określania transakcji, które mają być uwzględniane. Funkcja **Przenieś** tworzy rekord na stronie **Lista sprzedaży do UE** dla każdej uwzględnionej transakcji handlu wewnątrzwspólnotowego i umożliwia określenie numeru konta kontrahenta, kraju/regionu, numeru identyfikacji podatkowej, numeru faktury oraz daty i sumy wierszy według typu raportowania. Kopiuje ona także wartość **Kod listy** z transakcji. Kod listy transakcji można ręcznie zmienić na stronie **Lista sprzedaży do UE**. Funkcja **Przenieś** tworzy rekordy, w których wartość **Stan raportowania** jest ustawiona na **Uwzględnione**. Można sprawdzić poprawność informacji, które są gromadzone na stronie **Lista sprzedaży do UE** za pomocą **Sprawdzanie poprawności**.
+Transakcja jest uznawana za transakcję handlu wewnątrzwspólnotowego, jeśli adres dostawy transakcji jest w państwie członkowskim UE. Dla tych krajów/regionów musi istnieć rekord na karcie **Parametry kraju/regionu** na stronie **Parametry handlu zagranicznego**, a **Typ kraju/regionu** powinien mieć wartość **UE**. Transakcje handlu wewnątrzwspólnotowego są oznaczane w polu **Kod listy**. Za pomocą tego pola, można także oddzielić ogólne transakcje handlu wewnątrzwspólnotowego od transakcji handlu trójstronnego. Można zbierać informacje o transakcjach handlu wewnątrzwspólnotowego na stronie **Lista sprzedaży do UE** (kliknij kolejno opcje **Podatek** &gt; **Deklaracje** &gt; **Handel zagraniczny** &gt; **Lista sprzedaży do UE**) za pomocą funkcji **Przenieś**. Ta funkcja pozwala na uwzględnianie transakcji zawierających kwoty o różnych typów raportowania (tzn., towary lub usługi) według grup podatku dla towarów określonych w wierszach transakcji. Można także zastosować inne filtry do określania transakcji, które mają być uwzględniane. Funkcja **Przenieś** tworzy rekord na stronie **Lista sprzedaży do UE** dla każdej uwzględnionej transakcji handlu wewnątrzwspólnotowego i umożliwia określenie numeru konta kontrahenta, kraju/regionu, numeru identyfikacji podatkowej, numeru faktury oraz daty i sumy wierszy według typu raportowania. Kopiuje ona także wartość **Kod listy** z transakcji. Kod listy transakcji można ręcznie zmienić na stronie **Lista sprzedaży do UE**. Funkcja **Przenieś** tworzy rekordy, w których wartość **Stan raportowania** jest ustawiona na **Uwzględnione**. Można sprawdzić poprawność informacji, które są gromadzone na stronie **Lista sprzedaży do UE** za pomocą **Sprawdzanie poprawności**.
 
 ### <a name="generating-the-eu-sales-list-report"></a>Generowanie raportu ESL.
 
@@ -156,5 +159,7 @@ Można wygenerować raport **Lista sprzedaży do UE** za pomocą funkcji **Rapor
 ### <a name="closing-the-eu-sales-list-reporting-period"></a>Zamykanie okresu raportowania ESL
 
 Po zakończeniu procesu generowania raportów w danym okresie (na przykład, kiedy urząd skarbowy zaakceptował raport **Lista sprzedaży do UE**), można oznaczyć rekordy ESL znajdujące się w raporcie dla danego okresu, ustawiając **Stan raportowania** na **Zamknięty**. Aby ustawić ten stan, użyj funkcji **Zaznacz jako zamknięty** na stronie **Lista sprzedaży do UE**. W przypadku cofnięcia zamknięcia okresu można oznaczyć rekordy ESL, ustawiając **Stan raportowania** na **Uwzględniony**. Następnie można ponownie umieszczać te rekordy w raporcie **Lista sprzedaży do UE**. Aby ustawić ten stan, użyj funkcji **Zaznacz jako** **zgłoszony** na stronie **Lista sprzedaży do UE**.
+
+
 
 

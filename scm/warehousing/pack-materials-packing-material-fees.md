@@ -1,5 +1,5 @@
 ---
-title: "Materiały opakowaniowe i opłaty"
+title: "Materiały opakowaniowe i związane z nimi opłaty"
 description: "Opłaty za materiały opakowań są uiszczane firmie recyklingowej w pewnych odstępach czasu. Płaci się kwotę według jednostki masy za każdy materiał, z którego jest wykonana jednostka opakowania. Opłaty za materiały opakowań są obliczane i zgłaszane, ale transakcje finansowe nie są księgowane, ponieważ opłaty nie są uznawane za podatki należne właściwemu organowi."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="packing-materials-and-fees"></a>Materiały opakowaniowe i opłaty
+# <a name="packing-materials-and-fees"></a>Materiały opakowaniowe i związane z nimi opłaty
+
+[!include[banner](../includes/banner.md)]
+
 
 Opłaty za materiały opakowań są uiszczane firmie recyklingowej w pewnych odstępach czasu. Płaci się kwotę według jednostki masy za każdy materiał, z którego jest wykonana jednostka opakowania. Opłaty za materiały opakowań są obliczane i zgłaszane, ale transakcje finansowe nie są księgowane, ponieważ opłaty nie są uznawane za podatki należne właściwemu organowi.
 
@@ -52,7 +55,7 @@ W przypadku tworzenia wiersza zamówienia sprzedaży system sprawdza, czy jednos
 ## <a name="packing-units-on-purchase-order-lines"></a>Jednostki opakowań w wierszach zamówienia zakupu
 Transakcje materiału opakowań dla wiersza zamówienia zakupu nie są tworzone przez system. Transakcje tworzy się ręcznie dla wierszy zafakturowanego zamówienia zakupu na stronie **Transakcje materiałów opakowań**.
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Ustawianie numerów licencji odbiorcy packagingmaterialfee
+## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Konfigurowanie numerów licencji opłat za materiały opakowaniowe
 Jeśli odbiorcy uiszczają opłaty materiałów opakowań, na stronie **Odbiorcy** należy określić numery licencji opłat materiałów opakowań dla odbiorców. Po przypisaniu numeru licencji do odbiorcy opłaty materiałów opakowań są obliczane automatycznie przy fakturowaniu zamówień sprzedaży. Po zafakturowaniu pole wyboru **Oblicz opłaty** na stronie **Transakcje materiałów opakowań** jest zaznaczone, ponieważ nie trzeba obliczać ani drukować raportu. Istnieje możliwość wydrukowania wag materiałów opakowań na fakturze oraz powiadomienia odbiorców o uiszczaniu opłat. 
 
 Jeśli firma uiszcza opłaty materiałów opakowań, nie należy określać numerów licencji odbiorców. Po zafakturowaniu pole wyboru **Oblicz opłaty** na stronie **Transakcje materiałów opakowań** jest zaznaczone. To oznacza, że opłaty są obliczane w trakcie tworzenia raportu. Istnieje możliwość drukowania wag na fakturze oraz wskazywania, że firma uiszcza opłaty.
@@ -60,6 +63,8 @@ Jeśli firma uiszcza opłaty materiałów opakowań, nie należy określać nume
 ## <a name="print-packaging-material-weights-on-invoices"></a>Drukowanie wag materiałów opakowań na fakturach
 Istnieje możliwość drukowania wag materiałów opakowań na fakturze oraz wskazywania podmiotów uiszczających opłaty materiałowe opakowań. Wagi zestawione są na podstawie kodu opakowania.
  
+
+
 
 
 

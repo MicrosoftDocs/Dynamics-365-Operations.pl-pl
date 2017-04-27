@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 dla operacji słownik"
+title: "Słownik programu Dynamics 365 for Operations"
 description: "Słownik programu Microsoft Dynamics 365 for Operations definiuje kluczowe terminy i pojęcia Dynamics 365 for Operations."
 author: tonyafehr
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 dla operacji słownik
+# <a name="dynamics-365-for-operations-glossary"></a>Słownik programu Dynamics 365 for Operations
+
+[!include[banner](../includes/banner.md)]
+
 
 Słownik programu Microsoft Dynamics 365 for Operations definiuje kluczowe terminy i pojęcia Dynamics 365 for Operations. 
 
@@ -249,7 +252,7 @@ Metoda wdrażania testu akceptacji użytkownika (UAT) i środowiska produkcyjneg
 
 Narzędzie Visual Studio używane do tworzenia, aktualizowania i sprawdzania elementów modelu.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**.. Konfiguracja \financial-dimensions\dimension-based**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**Konfiguracja oparta na wymiarach**
 
 Technologia konfiguracji używana do tworzenia wariantów produktu przez wybranie wartości wymiarów produktu.
 
@@ -499,7 +502,7 @@ Część produktu.
 
 ###### <a name="product-dimension"></a>**wymiar produktu**
 
-Rozmiar, kolor lub konfiguracji produktu atrybuty, które są używane dla... \financial-dimensions\dimension-based konfiguracji.
+Atrybuty rozmiaru, koloru lub konfiguracji produktu, które są używane do konfiguracji opartej na wymiarach.
 
 ###### <a name="product-family"></a>**rodzina produktów**
 
@@ -697,7 +700,7 @@ Jednostka operacyjna, która kontroluje jeden lub więcej przepływów produkcji
 
 Metoda modelowania produktów głównych i wyszukiwanie konfiguracji wariantu produktu.
 
-###### <a name="vat-value-added-tax"></a>**VAT (podatek od wartości dodanej)**
+###### <a name="vat-value-added-tax"></a>**VAT (podatek od towarów i usług)**
 
 Podatek od produktów na każdym etapie ich produkcji na podstawie wartości dodanej podczas tego etapu.
 
@@ -722,5 +725,7 @@ Osoba, która przyjmuje rolę pracownika lub zleceniobiorcy i jest opłacana w z
 ###### <a name="workspace"></a>**obszar roboczy**
 
 Strona z przeglądem działania wykonywanego przez użytkownika. Informacje na temat pracy i inne dane pokrewne są wyświetlane za pomocą tytułów, list i wykresów. Dane pochodzą z wielu źródeł, a strona wyświetla częste zadania związane z tymi danymi. Kafelki wyświetlane w sekcji podsumowania obszaru roboczego są również wyświetlane w odpowiedniej sekcji na pulpicie nawigacyjnym.
+
+
 
 

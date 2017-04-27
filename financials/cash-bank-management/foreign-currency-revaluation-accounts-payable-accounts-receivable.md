@@ -28,15 +28,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami
 
+[!include[banner](../includes/banner.md)]
+
+
 Wahania kursów wymiany powodują, że wartość teoretyczna (wartość księgowa) otwartych transakcji w walutach obcych zmienia się w czasie. Ten artykuł zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami. 
 
-Wartość teoretyczna (wartość księgowa) otwartych transakcji w obcych walutach zmienia się w zależności od fluktuacji kursów wymiany. Aby zaktualizować wartość otwartych transakcji w module Rozrachunki z odbiorcami i Rozrachunki z dostawcami, uruchom proces przeszacowania w walucie obcej. Przeszacowanie w walucie obcej można wykonać zarówno dla rozrachunków z odbiorcami, jak i rozrachunków z dostawcami. Proces korzysta z nowego kursu wymiany do przeszacowywania otwartych kwot lub nierozliczonych kwot w określonym dniu. Różnice między kwotami zaksięgowanymi oryginalnie a kwotami przeszacowanymi spowoduje, że niezrealizowany zysk lub strata dla każdej otwartej transakcji. Rozrachunki z dostawcami i rachunków z odbiorcami ksiąg podrzędnych są następnie aktualizowane w celu odzwierciedlenia niezrealizowany zysk lub strata, a zapis księgowy jest księgowany w księdze głównej.
+Wartość teoretyczna (wartość księgowa) otwartych transakcji w obcych walutach zmienia się w zależności od fluktuacji kursów wymiany. Aby zaktualizować wartość otwartych transakcji w module Rozrachunki z odbiorcami i Rozrachunki z dostawcami, uruchom proces przeszacowania w walucie obcej. Przeszacowanie w walucie obcej można wykonać zarówno dla rozrachunków z odbiorcami, jak i rozrachunków z dostawcami. Proces korzysta z nowego kursu wymiany do przeszacowywania otwartych kwot lub nierozliczonych kwot w określonym dniu. Różnica między kwotami zaksięgowanymi oryginalnie a kwotami przeszacowanymi spowoduje niezrealizowaną dodatnią lub ujemną różnicę kursową dla każdej otwartej transakcji. Księgi podrzędne rozrachunków z dostawcami i rozrachunków z odbiorcami są zaktualizowane tak, aby odzwierciedlały niezrealizowaną dodatnią lub ujemną różnicę kursową, a wpis zostaje zaksięgowany w księdze głównej.
 
 ## <a name="simulate-a-foreign-currency-revaluation"></a>Symulowanie przeszacowania w walucie obcej
 Przed przeszacowywaniem kwoty w walucie obcej dla transakcji otwartych można uruchomić raport symulacji przeszacowania w walucie obcej dla tej samej daty i metody. Aby uruchomić raportu symulacji, na stronie **Przeszacowanie w walucie obcej** kliknij przycisk **Symulacja**. Raport umożliwia wyświetlenie podglądu kwoty niezrealizowanej dodatniej różnicy kursowej lub straty na podstawie parametrów określonych dla symulacji.
 
 ## <a name="process-a-foreign-currency-revaluation"></a>Przetwarzanie przeszacowania w walucie obcej
-Użyj **przeszacowanie w walucie obcej** strony pod **zadania okresowe** do przeszacowywania otwartych transakcji. Można uruchomić proces w czasie rzeczywistym lub zaplanować uruchomienie przy użyciu zadania wsadowego. Po zdefiniowaniu ustawienia dla procesu aktualizacji wyceny, pamiętaj sprawdzić, czy użytkownik chce wydrukować raport wyników. Po zakończeniu procesu, nie można ponownie wydrukować raportu przeszacowania. W przypadku generowania raportu przeszacowania w walucie obcej w raporcie zostaną przedstawione różne salda na poziomie odbiorcy/dostawcy i waluty:
+Strona **Przeszacowanie w walucie obcej** w obszarze **Zadania okresowe** służy do przeszacowywania otwartych transakcji. Można uruchomić proces w czasie rzeczywistym lub zaplanować uruchomienie przy użyciu zadania wsadowego. Podczas definiowania ustawień dla procesu przeszacowania należy określić, czy ma być drukowany raport wyników. Raport przeszacowania nie może być wydrukowany po zakończeniu procesu. W przypadku generowania raportu przeszacowania w walucie obcej w raporcie zostaną przedstawione różne salda na poziomie odbiorcy/dostawcy i waluty:
 
 -   Sald odbiorców lub dostawców, którzy mają przeszacowane transakcje w walucie obcej. Widoczne są następujące salda:
     -   Oryginalne saldo w walucie obcej.
@@ -45,7 +48,7 @@ Użyj **przeszacowanie w walucie obcej** strony pod **zadania okresowe** do prze
     -   Różnica między poprzednim i obecnym przeszacowaniem. Różnica ta jest dodatkową niezrealizowaną dodatnią różnicą kursową lub stratą.
 -   Suma niezrealizowanych dodatnich różnic kursowych lub strat dla każdej waluty.
 
-Po każdym uruchomieniu przeszacowania w walucie obcej jest wprowadzany zapis. Z zapisu na stronie **Przeszacowanie w walucie obcej** wybierz opcję **Transakcje**, aby wyświetlić szczegółową listę transakcji, które zostały utworzone z powodu przeszacowania. Każda transakcja na załączniku reprezentuje otwartych transakcji, które zostały przeszacowane. Jeśli transakcja otwarta został przeszacowany więcej niż jeden raz, zobaczysz dwa rekordy, które używają tego samego załącznika. Jeden rekord będzie na cofnięcie poprzednich niezrealizowany zysk lub strata, i dla nowych niezrealizowany zysk lub strata zostaną inne zapisy. Aby uruchomić proces przeszacowania, kliknij przycisk **Przeszacowanie w walucie obcej**. Zdefiniuj odpowiednie ustawienia następujących parametrów:
+Po każdym uruchomieniu przeszacowania w walucie obcej jest wprowadzany zapis. Z zapisu na stronie **Przeszacowanie w walucie obcej** wybierz opcję **Transakcje**, aby wyświetlić szczegółową listę transakcji, które zostały utworzone z powodu przeszacowania. Każda transakcja na załączniku reprezentuje otwarte transakcje, które zostały przeszacowane. Jeśli otwarta transakcja została przeszacowana więcej niż raz, zobaczysz dwa zapisy używające tego samego załącznika. Jeden zapis będzie dotyczył wycofania poprzedniej niezrealizowanej dodatniej lub ujemnej różnicy kursowej, a drugi nowej niezrealizowanej dodatniej lub ujemnej różnicy kursowej. Aby uruchomić proces przeszacowania, kliknij przycisk **Przeszacowanie w walucie obcej**. Zdefiniuj odpowiednie ustawienia następujących parametrów:
 
 -   **Metoda** — metoda użyta w wybranym zadaniu przeszacowania w walucie obcej:
     -   **Norma** — oznacza, że zadania przeszacowania w walucie obcej są księgowane niezależnie od tego, czy powstaje zysk czy strata.
@@ -61,6 +64,8 @@ Po każdym uruchomieniu przeszacowania w walucie obcej jest wprowadzany zapis. Z
     -   **Brak** — nie są księgowane żadne wymiary finansowe. Jeśli w strukturze konta wymagany jest wymiar finansowy, proces przeszacowania jest nadal aktywny i tworzy wpisy księgowe bez wymiarów finansowych. Otrzymasz najpierw wiadomość z ostrzeżeniem, co pozwala anulować przeszacowanie.
     -   **Tabela** — oznacza, że wymiary finansowe konta odbiorcy lub dostawcy zostały zaksięgowane w przypadku transakcji z przeszacowaniem w walucie obcej.
     -   **Zaksięgowanie** — oznacza, że wymiary finansowe przeszacowywanej transakcji zostały zaksięgowane w transakcjach z przeszacowaniem w walucie obcej. Domyślnie wymiary finansowe konta księgowego rozrachunków z dostawcami/rozrachunków z odbiorcami oryginalnych transakcji będą używane do ponownego przeszacowania konta głównego rozrachunków z dostawcami/rozrachunków z odbiorcami transakcji przeszacowania, a wymiary finansowe konta głównego wydatków/środków trwałych/zysków oryginalnej transakcji będą używane do konta głównego niezrealizowanej dodatniej różnicy kursowej/straty transakcji przeszacowania.
+
+
 
 
 

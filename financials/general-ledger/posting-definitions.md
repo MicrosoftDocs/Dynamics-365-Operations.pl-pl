@@ -59,5 +59,5 @@ Przy tworzeniu połączeń w definicjach księgowania obowiązują następujące
 -   Definicję księgowania można przypisać do dowolnego typu transakcji, ale typ transakcji musi znajdować się w tym samym module co definicja księgowania. Użyj strony **Definicje księgowania transakcji**, aby zobaczyć, w jakim modelu jest typ transakcji.
 
 
-Aby uzyskać więcej informacji, zobacz [księgowania przykładowe definicje](/general-ledger/example-posting-definitions.md). 
+Aby uzyskać więcej informacji, zobacz [Przykłady definicji księgowania](/general-ledger/example-posting-definitions.md). 
 

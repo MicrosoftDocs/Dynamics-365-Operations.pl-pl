@@ -1,5 +1,5 @@
 ---
-title: "Konfigurowanie kroku zatwierdzania w przepływie pracy"
+title: "Konfigurowanie etapu zatwierdzania w przepływie pracy"
 description: "W tym temacie wyjaśniono sposób konfigurowania właściwości kroku zatwierdzania."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurowanie kroku zatwierdzania w przepływie pracy
+# <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurowanie etapu zatwierdzania w przepływie pracy
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym temacie wyjaśniono sposób konfigurowania właściwości kroku zatwierdzania.
 
@@ -124,10 +127,10 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisany ten krok zat
     </tr>
     <tr class="even">
     <td>Użytkownik</td>
-    <td>Szczególne usługi Microsoft Dynamics 365 dla użytkowników operacji</td>
+    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li><strong>Dostępni użytkownicy</strong> lista zawiera wszystkie 365 Dynamics dla użytkowników operacji. Wybierz użytkowników, którym chcesz przypisać krok, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz przypisać krok, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -229,10 +232,10 @@ Jeśli użytkownik nie podejmie działania wobec dokumentu w wyznaczonym czasie,
     </tr>
     <tr class="odd">
     <td>Użytkownik</td>
-    <td>Konkretne 365 Dynamics dla użytkowników operacji</td>
+    <td>Konkretni użytkownicy programu Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li><strong>Dostępni użytkownicy</strong> lista zawiera wszystkie 365 Dynamics dla użytkowników operacji. Wybierz użytkowników, do których chcesz eskalować dokument, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, do których chcesz eskalować dokument, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -247,6 +250,8 @@ Jeśli użytkownik nie podejmie działania wobec dokumentu w wyznaczonym czasie,
 
 5.  Powtórz kroki od 3 do 4 dla każdego użytkownika, który powinien zostać dodany do ścieżki eskalacji. Można zmienić kolejność użytkowników.
 6.  Jeśli użytkownicy wymienieni w ścieżce eskalacji nie odpowiedzą w wyznaczonym czasie, system automatycznie wykona operację na dokumencie. Aby określić akcję podejmowaną przez system, wybierz wiersz **Akcja**, a następnie na karcie **Zakończ działanie** wybierz akcję.
+
+
 
 
 

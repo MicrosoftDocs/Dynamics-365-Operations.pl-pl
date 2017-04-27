@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="round-off-amount-for-depreciation-calculations"></a>Kwota zaokrąglenia do obliczenia amortyzacji
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule omówiono pole Zaokrąglenie amortyzacji, które znajduje się na stronach konfiguracji ksiąg.
 
-Zaokrąglenie amortyzacji kwot są ustawiane dla każdej księgi. Zaokrąglenie amortyzacji kwot są używane w profilu amortyzacji środka trwałego, który pokazuje przyszła amortyzacja i wartość środka trwałego, a także w propozycji amortyzacji. Wprowadź najniższą kwotę amortyzacji dozwoloną dla danej księgi. 
+Kwoty zaokrąglenia amortyzacji są ustawiane dla każdej księgi. Kwoty zaokrąglenia amortyzacji są używane w profilu amortyzacji środka trwałego, który pokazuje przyszłą amortyzację i wartość środka trwałego, a także w propozycjach amortyzacji. Wprowadź najniższą kwotę amortyzacji dozwoloną dla danej księgi. 
 
 Niezależnie od ustawionego zaokrąglenia kwota amortyzacji w ostatnim okresie amortyzacji nie jest zaokrąglana. Na końcu ostatniego okresu amortyzacji wartość środków trwałych musi wynosić 0 (zero) lub być równa wartości likwidacji, jeśli likwidacja jest stosowana.
 
@@ -40,9 +43,11 @@ Amortyzacja bez żadnego zaokrąglania została obliczona jako 2444,44. Jak poka
 | Metoda zaokrąglania | Kwota amortyzacji |
 |-----------------|---------------------|
 | Zaokrąglanie 0,1    | 2444,40            |
-| Zaokrąglanie 1,00   | 2444,00            |
-| Zaokrąglanie 10,00  | 2440,00            |
-| Zaokrąglanie 100,00 | 2400,00            |
+| Zaokrąglanie 1,00   | 2,444.00            |
+| Zaokrąglanie 10,00  | 2,440.00            |
+| Zaokrąglanie 100,00 | 2,400.00            |
+
+
 
 
 

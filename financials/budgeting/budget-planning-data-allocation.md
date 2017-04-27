@@ -1,6 +1,6 @@
 ---
 title: "Alokacja danych planowania budżetu"
-description: "W tym artykule opisano różne metody alokacji, które są dostępne w usłudze Microsoft Dynamics 365 dla operacji i jak mogą być używane."
+description: "W tym artykule opisano różne metody alokacji dostępne w programie Microsoft Dynamics 365 for Operations oraz sposoby ich wykorzystywania."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,15 +28,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-data-allocation"></a>Alokacja danych planowania budżetu
 
-W tym artykule opisano różne metody alokacji, które są dostępne w usłudze Microsoft Dynamics 365 dla operacji i jak mogą być używane.  
+[!include[banner](../includes/banner.md)]
+
+
+W tym artykule opisano różne metody alokacji dostępne w programie Microsoft Dynamics 365 for Operations oraz sposoby ich wykorzystywania.  
 
 Dane planu budżetu można dystrybuować na wiele sposobów, by dokładnie odzwierciedlić przewidywane kwoty.
 
 ## <a name="allocation-methods"></a>Metody alokacji
 Za pomocą trzech metod alokacji (Alokuj między okresami, Alokuj do wymiarów i Użyj reguł alokacji księgi) można utworzyć wiersze planu budżetu oparte na wierszach w tym samym planie budżetu. Za pomocą trzech innych metod (Agreguj, Dystrybuuj i Kopiuj z planu budżetu) można utworzyć wiersze planu budżetu w innych planach budżetu. We wszystkich sześciu metodach alokacji można określić scenariusza docelowy. Scenariusz docelowy może być albo taki sam jak scenariusz źródłowy lub inny od scenariusza źródłowego. Ponadto można określić, czy nowe wiersze są dołączane do planu budżetu czy zastępują bieżące wiersze planu budżetu.
 
-[![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)<ph id="t1">
-</ph>**Alokuj między okresami** — kategoria alokacji okresu jest używana do alokowania wiersze planu budżetu ze źródłowego scenariusza planu budżetu między okresami w scenariuszu docelowym. Kwota źródłowa jest przypisywana do wielu wierszy w scenariuszu docelowym na podstawie wartości procentowej i danych zdefiniowanych w kategorii alokacji okresu.         
+[![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+**Alokuj między okresami** — Kategoria alokacji okresu jest używana do alokacji wierszy planu budżetu ze źródłowego scenariusza planu budżetu między okresy w scenariuszu docelowym. Kwota źródłowa jest przypisywana do wielu wierszy w scenariuszu docelowym na podstawie wartości procentowej i danych zdefiniowanych w kategorii alokacji okresu.         
 
 [![AllocateToDimensions](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
 **Alokuj do wymiarów** — wiersze planu budżetu są alokowane ze scenariusza źródłowego planowania budżetu do jednego lub kilku wierszy w scenariuszu docelowym na podstawie wartości procentowych i wymiarów finansowych, które są zdefiniowane w wybranym warunku alokacji budżetu.           
@@ -70,5 +73,7 @@ Następnie należy utworzyć alokację etapu na stronie **Konfiguracja planowani
 Na koniec należy dodać zautomatyzowane zadanie dla alokacji etapu planowania budżetu na wybranych etapie przepływu pracy. W poniższym przykładzie dwie alokacje etapu planowania budżetu (wyróżnione na czerwono) zostały wstawione do przepływu pracy.
 
 [![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Średnia krocząca kosztu własnego"
-description: "Proces zamykania magazynu rozlicza problem transakcje przychodu, oparte na metody wyceny zapasów, który wybrano w Grupa modeli towaru. Jednak przed uruchomieniem zamknięcie magazynu, system oblicza średniego kosztu, który jest zazwyczaj używany podczas księgowania transakcji rozchodów."
+description: "Proces zamknięcia zapasów umożliwia rozliczenie transakcji wydania względem transakcji przyjęcia metodą wyceny zapasów wybranej w grupie modeli pozycji towaru. Jednak w okresie przed zamknięciem zapasów system oblicza średnią kroczącą kosztu własnego, która jest zazwyczaj używana podczas księgowania transakcji."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-04-07 15 - 11 - 47
@@ -28,29 +28,29 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="running-average-cost-price"></a>Średnia krocząca kosztu własnego
 
-Proces zamykania magazynu rozlicza problem transakcje przychodu, oparte na metody wyceny zapasów, który wybrano w Grupa modeli towaru. Jednak przed uruchomieniem zamknięcie magazynu, system oblicza średniego kosztu, który jest zazwyczaj używany podczas księgowania transakcji rozchodów.
+Proces zamknięcia zapasów umożliwia rozliczenie transakcji wydania względem transakcji przyjęcia metodą wyceny zapasów wybranej w grupie modeli pozycji towaru. Jednak w okresie przed zamknięciem zapasów system oblicza średnią kroczącą kosztu własnego, która jest zazwyczaj używana podczas księgowania transakcji.
 
-Według systemu to działa średniego kosztu własnego dla towaru przy użyciu następującego wzoru: szacunkowa cena = (kwota fizyczna + kwota finansowa) ÷ (ilość fizyczna + ilość finansowa)
+System szacuje tę średnią kroczącą kosztu własnego towaru przy użyciu następującej formuły: szacunkowa cena = (kwota fizyczna + kwota finansowa) ÷ (ilość fizyczna + ilość finansowa)
 
 ## <a name="using-the-running-average-cost-price"></a>Używanie średniej kroczącej kosztu własnego
-W poniższej tabeli przedstawiono, kiedy system zaksięguje transakcje magazynowe, przy użyciu średniego kosztu, a gdy używa się kosztu własnego, który jest zdefiniowany na rekord główny przedmiot w zamian.
+W poniższej tabeli pokazano, kiedy transakcje magazynowe są w systemie księgowane przy użyciu średniej kroczącej kosztu własnego, a kiedy jest używany koszt własny zdefiniowany w rekordzie głównym towaru.
 
-| Warunek                                               | System używa szacowany średni koszt własny | System używa kosztu własnego, który jest zdefiniowany na wzorcu elementu |
+| Warunek                                               | System używa szacowanej średniej kroczącej kosztu własnego | System używa kosztu własnego zdefiniowanego w rekordzie głównym towaru |
 |---------------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------|
-| Zarówno licznik\* i mianownik\*\* są pozytywne.  | Tak                                                      | Nr                                                                |
-| Licznik\*, mianownik\*\*, lub oba są negatywne. | Nr                                                       | Tak                                                               |
-| Mianownik\*\* ma wartość 0 (zero).                        | Nr                                                       | Tak                                                               |
+| Zarówno dzielna\*, jak i dzielnik\*\* są dodatnie.  | Tak                                                      | Nr                                                                |
+| Dzielna\*, dzielnik\*\* lub obie te wartości są ujemne. | Nr                                                       | Tak                                                               |
+| Dzielnik\*\* ma wartość 0 (zero).                        | Nr                                                       | Tak                                                               |
 
-\*Licznik = (kwota fizyczna + kwota finansowa) \*\*mianownik = (ilość fizyczna + ilość finansowa) **Uwaga:** Jeśli **Włącz wartość fizyczną** opcja nie jest zaznaczona dla towaru, system używa 0 (zero) dla fizycznej ilości i ilości fizycznej. Aby uzyskać informacje o tej opcji, zobacz [Włącz wartość fizyczną](include-physical-value.md).
+\* Dzielna = (kwota fizyczna + kwota finansowa) \*\* Dzielnik = (ilość fizyczna + ilość finansowa) **Uwaga:** Jeśli dla towaru nie zaznaczono opcji **Włącz wartość fizyczną**, system używa wartości 0 (zero) dla kwoty fizycznej i ilości fizycznej. Aby uzyskać informacje o tej opcji, zobacz [Włącz wartość fizyczną](include-physical-value.md).
 
 ## <a name="avoiding-pricing-amplification"></a>Zapobieganie podwyższaniu ceny
-W rzadkich przypadkach system cen kilka problemów, zanim ma zbyt mało przychodów do na podstawie ceny. Taki scenariusz może spowodować sztuczne zawyżanie szacowanej średniej kroczącej kosztu własnego. Można jednak podjąć pewne kroki, aby uniknąć takiego podwyższania ceny lub złagodzić jego wpływ, kiedy nastąpi. **Scenariusz** Na towarze, któremu zaznaczono opcję **Włącz wartość fizyczną**, zostały wykonane następujące operacje:
+W sporadycznych przypadkach system wycenia kilka wydań, zanim zgromadzi wystarczającą liczbę przyjęć, aby mieć na czym oprzeć cenę. Taki scenariusz może spowodować sztuczne zawyżanie szacowanej średniej kroczącej kosztu własnego. Można jednak podjąć pewne kroki, aby uniknąć takiego podwyższania ceny lub złagodzić jego wpływ, kiedy nastąpi. **Scenariusz** Na towarze, któremu zaznaczono opcję **Włącz wartość fizyczną**, zostały wykonane następujące operacje:
 
 1.  Przyjęto finansowo ilość 100 na kwotę 100,00 zł.
 2.  Wydano finansowo ilość 200.
 3.  Przyjęto fizycznie ilość 101 na kwotę 202,00 zł.
 
-Podczas sprawdzania szacowanej średniej kroczącej kosztu własnego towaru oczekujesz kosztu własnego 1,51 zł. Zamiast tego możesz znaleźć szacunkowo średnia wartość z USD 102.00, która opiera się na następującym wzorze: szacunkowa cena = \[202 + (-100)\] ÷ \[101 + (-100)\] = 102 ÷ 1 = 102 takiego wzmocnienia cenowe występuje, ponieważ 200 przedmiotów są finansowo w kroku 2, gdy system musi cena 100 elementów, zanim ma żadnych pokwitowań. Ta sytuacja powoduje ujemny poziom zapasów. System następnie oszacowania ceny jednostkowej z USD 1.00, jak możemy się spodziewać. Jednak gdy nadejdą towary do odnośnego przyjęcia 100 sztuk, mają one cenę jednostkową 2,00 zł. **Uwaga:** Mimo iż wydania powodują powstanie ujemnego stanu zapasów, stan jest dodatni podczas obliczania ceny jednostkowej. Dlatego jest używana średnia krocząca kosztu własnego, a nie cena z rekordu głównego towaru. W tym momencie system ma przesunięcia zapasów wartość USD 100.00. Mimo że to księgowanie zostało wykonane dla 100 sztuk, po 1 zł dla każdej sztuki, teraz w zapasach mamy tylko jedną sztukę. Dlatego całe księgowanie przeciwstawne 100,00 zł jest przypisane tylko do jednej sztuki. Wynikiem jest sztuczne zawyżenie szacowanego kosztu własnego. **Uwaga:** Dla porównania warto zwrócić uwagę, że gdyby w tym scenariuszu kroki 2 i 3 zamienić miejscami, wówczas zostałoby wydanych 200 sztuk towaru z ceną jednostkową 1,51 zł oraz pozostałaby jeszcze jedna sztuka z ceną 1,51 zł. Ponieważ ten scenariusz podwyższania ceny może wystąpić w przypadku ujemnego stanu magazynowego, trudno go uniknąć w następujących sytuacjach:
+Podczas sprawdzania szacowanej średniej kroczącej kosztu własnego towaru oczekujesz kosztu własnego 1,51 zł. Zamiast widzisz szacowaną średnią kroczącą 102,00 zł wyliczoną na podstawie następującej formuły: szacunkowa cena = \[202 + (-100)\] ÷ \[101 + (-100)\] = 102 To podwyższenie ceny wystąpiło, ponieważ podczas finansowego wydawania 200 sztuk w kroku 2 system musi wycenić 100 sztuk, zanim odnotuje jakiekolwiek powiązane przyjęcie. Ta sytuacja powoduje ujemny poziom zapasów. Następnie system szacuje cenę jednostkową 1,00 zł, zgodnie z oczekiwaniami. Jednak gdy nadejdą towary do odnośnego przyjęcia 100 sztuk, mają one cenę jednostkową 2,00 zł. **Uwaga:** Mimo iż wydania powodują powstanie ujemnego stanu zapasów, stan jest dodatni podczas obliczania ceny jednostkowej. Dlatego jest używana średnia krocząca kosztu własnego, a nie cena z rekordu głównego towaru. Na tym etapie w systemie występuje przesunięcie wartości zapasów wynoszące 100,00 USD. Mimo że to księgowanie zostało wykonane dla 100 sztuk, po 1 zł dla każdej sztuki, teraz w zapasach mamy tylko jedną sztukę. Dlatego całe księgowanie przeciwstawne 100,00 zł jest przypisane tylko do jednej sztuki. Wynikiem jest sztuczne zawyżenie szacowanego kosztu własnego. **Uwaga:** Dla porównania warto zwrócić uwagę, że gdyby w tym scenariuszu kroki 2 i 3 zamienić miejscami, wówczas zostałoby wydanych 200 sztuk towaru z ceną jednostkową 1,51 zł oraz pozostałaby jeszcze jedna sztuka z ceną 1,51 zł. Ponieważ ten scenariusz podwyższania ceny może wystąpić w przypadku ujemnego stanu magazynowego, trudno go uniknąć w następujących sytuacjach:
 
 -   Trzeba oszacować ceny wydania dla wartości i ilości dostępnych zapasów.
 -   Trzeba skorygować wartość i ilość dostępnych zapasów w wydaniach i przyjęciach.

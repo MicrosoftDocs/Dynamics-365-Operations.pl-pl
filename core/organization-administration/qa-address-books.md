@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="address-books"></a>Książki adresowe
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 <a name="how-do-i-check-for-duplicate-records"></a>Jak sprawdzić, czy występują duplikaty rekordów?
@@ -53,7 +56,7 @@ W każdej chwili można zaktualizować nazwę rekordu strony i adresy skojarzone
 ## <a name="can-i-merge-two-or-more-party-records-into-one-record"></a>Czy można scalić dwa lub więcej rekordów stron w jeden rekord?
 Czasami trzeba scalić dwa lub więcej rekordów stron w jednym rekordzie. Taka sytuacja może się zdarzyć po utworzeniu jednego lub kilku zduplikowanych rekordów stron, celowo lub przypadkowo. Podczas scalania rekordów stron wybiera się jeden, który zostanie zachowany. Informacje w innych rekordach są następnie scalane w tym jednym rekordzie. Na przykład okazuje się, że informacje o firmie Fabrikam są przechowywane w trzech rekordach stron: A, B i C. Postanawiasz zachować rekord A. Informacje przechowywane w rekordach stron B i C zostaną scalone w rekordzie jednostki A. W niektórych sytuacjach nie można scalać rekordów:
 
--   Nie można scalać stron, które są skojarzone z tą samą rolę strony, np. odbiorcą lub dostawcą w tej samej firmie. Na przykład jednostka A jest skojarzona z klientem w firmie 123, a strona B jest związana z różnych nabywców w firmie 123. Nie można scalić tych rekordów jednostek, ponieważ jeśli były one scalane, rekord scalone strony będzie związane z wielu klientów w ten sam podmiot prawny, a nie jest to dozwolone. Rekordy mogą zostać scalone, jeśli strona B jest skojarzona z dostawcą w firmie 123 lub odbiorcą w innej firmie.
+-   Nie można scalać stron, które są skojarzone z tą samą rolę strony, np. odbiorcą lub dostawcą w tej samej firmie. Na przykład strona A jest skojarzona z odbiorcą w firmie 123, a strona B jest skojarzona z innym odbiorcą w firmie 123. Nie można scalić tych rekordów stron, bo gdyby zostały one scalone, powstały w ten sposób rekord byłby skojarzony z wieloma odbiorcami w jednej firmie, a to jest niedozwolone. Rekordy mogą zostać scalone, jeśli strona B jest skojarzona z dostawcą w firmie 123 lub odbiorcą w innej firmie.
 -   Nie można scalić wewnętrznych rekordów stron organizacji w jednej firmie, zespole lub jednostce operacyjnej.
 
 ## <a name="should-i-create-a-party-record-in-the-global-address-book-or-in-another-place-such-as-the-customer-or-vendor-page"></a>Czy należy utworzyć rekord strony w globalnej książce adresowej lub w innym miejscu, takim jak strony Odbiorca lub Dostawca?
@@ -64,5 +67,7 @@ Rekordy stron można wprowadzić w globalnej książce adresowej albo na stronie
 
 ## <a name="can-i-translate-address-information-for-party-records"></a>Czy można tłumaczyć informacje adresowe dla rekordów stron?
 Można ustawić tłumaczenia informacji adresowych, tak aby były wyświetlane w języku użytkownika (systemu) w programie Microsoft Dynamics 365 for Operations, ale w innym języku w dokumentach, takich jak zamówienia sprzedaży. Można wprowadzić tłumaczenia nazw krajów/regionów, celów adresów oraz sekwencji nazw. Jeśli na przykład Twoim językiem jest duński, i chcesz utworzyć zamówienie sprzedaży dla klienta we Francji. W takim przypadku możesz wyświetlić rekord klienta po duńsku w programie, ale wyświetlić informacje adresowe po francusku w drukowanym zamówieniu sprzedaży. Podczas konfigurowania tłumaczenia należy wprowadzić tłumaczenie dla każdego elementu na liście. Elementy bez tłumaczenia będą zawsze wyświetlane w języku systemu. Jeśli na przykład Twoim językiem jest duński, i chcesz utworzyć zamówienie sprzedaży dla klienta we Francji. Jeśli nie wprowadzisz hiszpańskich (ESP) tłumaczeń informacji adresowych, będą one wyświetlane po duńsku zarówno w programie jaki w drukowanych dokumentach.
+
+
 
 

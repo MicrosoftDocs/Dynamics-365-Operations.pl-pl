@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Konwersja waluty rozliczeniowej lub raportowania
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Firma, która musi zmienić walutę rozliczeniową lub walutę raportowania, ma 2 opcje: Pierwszą opcją jest utworzenie nowej firmy i rozpoczęcie pracy od nowa. Druga opcja to uruchomienie procesu konwersji waluty raportowania i księgowania. Jest to bardzo długotrwały proces, zmieniający wszystkie transakcje w systemie. Wymagana jest także konfiguracja procesu przed jego uruchomieniem.
@@ -72,6 +75,8 @@ Po konwersji waluty należy wygenerować wszystkie raporty dot. uzgodnień, aby 
 -   Jeśli konwersja waluty rozliczeniowej księgi powoduje różnice zaokrągleń, różnice te nie są księgowane za pomocą załącznika, w którym wystąpiła różnica zaokrąglenia. Zamiast tego różnice są księgowane za pomocą załącznika wprowadzonego do księgowania konwersji. Tak więc po konwersji na wszystkich raportach sprawdzonych wg załącznika i daty wystąpią te różnice zaokrągleń. Nie oznaczają one nieprawidłowości i mogą zostać zignorowane.
 -   Jeżeli raporty uzgadniania odbiory i dostawcy wykazują różnice kwoty w wierszu sum, a żadna różnica nie występowała przed konwersją, kwotę różnicy należy zaksięgować. Konto jest kontem rozrachunkowym dla odbiorców i dostawców. Konto przeciwstawne jest kontem księgowym dla strata z konwersji lub zysków z konwersji.
 
-Jeśli wszystkie arkusze transakcji finansowych zostały usunięte, możesz ponownie wpisać transakcje finansowe do arkusza. Kliknij **księgi głównej**&gt;**okresowo**&gt;**arkuszach**&gt;**Generowanie arkuszy**. Można przeliczyć kwoty w walucie obcej po konwersji waluty, jeśli jest wymagane przeszacowanie. Aby przeszacować kwoty w walucie obcej, wybierz opcję **standardowa** w polu **metoda**.
+Jeśli wszystkie arkusze transakcji finansowych zostały usunięte, możesz ponownie wpisać transakcje finansowe do arkusza. Kliknij kolejno opcje **Księga główna** &gt; **Okresowe** &gt; **Arkusze** &gt; **Generowanie arkuszy**. Można przeliczyć kwoty w walucie obcej po konwersji waluty, jeśli jest wymagane przeszacowanie. Aby przeszacować kwoty w walucie obcej, wybierz opcję **standardowa** w polu **metoda**.
+
+
 
 

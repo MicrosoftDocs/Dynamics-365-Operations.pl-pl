@@ -27,12 +27,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-catalogs"></a>Katalogi zaopatrzenia
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano w sposób ogólny, jak specjaliści ds. zakupów mogą konfigurować katalogi zaopatrzenia i nimi zarządzać. Katalogi zaopatrzenia definiują towary i usługi, które pracownicy firmy mogą zamawiać do użytku wewnętrznego.
 
 Specjaliści ds. zakupu mogą tworzyć i obsługiwać katalogi towarów i usług, które mogą być kupowane na użytek wewnętrzny organizacji. Po skonfigurowaniu katalogów pracowników może utworzyć zapotrzebowania na zakup do zamawiania zawartych w nich pozycji. Katalogi te mogą służyć do wymuszania zasad zakupów, aby pracownicy mogli zamawiać tylko towary i usługi, które są dozwolone dla ich firmy. Podczas tworzenia katalogu zaopatrzenia, należy rozważyć następujące zadania:
 
 -   Skonfiguruj hierarchię kategorii zaopatrzenia przed utworzeniem katalogu.
--   Określ, które produkty pracownicy będą mogli zamawiać. Można pokazać lub ukryć określonych produktów w węźle katalog lub można wyświetlić lub ukryć wszystkie produkty w węźle.
+-   Określ, które produkty pracownicy będą mogli zamawiać. Można wyświetlić lub ukryć określone produkty w węźle katalogu lub można wyświetlić lub ukryć wszystkie produkty z węzła.
 -   Określ, ile katalogów zaopatrzenia potrzebujesz. Dostęp do katalogu zaopatrzenia zależy od reguły dotyczącej katalogów skonfigurowanej dla firmy i jednostki operacyjnej, do której przypisany jest pracownik.
 
 Kilka czynników decyduje o produktach dostępnych do zamówienia dla pracowników i kategoriach zaopatrzenia, z których mogą oni skorzystać podczas tworzenia zapotrzebowań na zakup:
@@ -52,7 +55,7 @@ W poniższej tabeli opisano zadania, które należy wykonać, zanim specjalista 
 ## <a name="setting-up-a-catalog"></a>Konfigurowanie katalogu
 Po spełnieniu wymagań wstępnych, można skonfigurować katalogi. Można utworzyć jeden katalog dla całej organizacji lub wiele katalogów dla poszczególnych oddziałów. W przypadku utworzenia jednego katalogu dla całej organizacji dostęp do niego będzie kontrolowany przez zasady zakupów.  
 
-Katalog określa, które produkty są dostępne podczas tworzenia zapotrzebowań na zakup, ale można wprowadzić dodatkowe ograniczenia, korzystając z zasad dostępu do kategorii. Ze względu na to, że węzły w katalogu są kategoriami zaopatrzenia, mogą być pominięte przez regułę dostępu do kategorii. W takim przypadku wyrobów w tej kategorii nie są dostępne do użytku w zapotrzebowaniach na pracowników. Definiowanie reguł dostępu do kategorii na **zasady zakupów** strony. W poniższej tabeli opisano zadania, które trzeba wykonać w celu skonfigurowania katalogu.
+Katalog określa, które produkty są dostępne podczas tworzenia zapotrzebowań na zakup, ale można wprowadzić dodatkowe ograniczenia, korzystając z zasad dostępu do kategorii. Ze względu na to, że węzły w katalogu są kategoriami zaopatrzenia, mogą być pominięte przez regułę dostępu do kategorii. W takim przypadku produkty w kategorii będą niedostępne dla pracowników na potrzeby zapotrzebowań. Reguły dostępu do kategorii można określić na stronie **Zasady zakupów**. W poniższej tabeli opisano zadania, które trzeba wykonać w celu skonfigurowania katalogu.
 
 | Zadanie                                                   | Rola             | Opis                                                                                                                                                                                                                                                                                                                  |
 |--------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,6 +73,8 @@ Aktualizacje są publikowane automatycznie lub ręcznie, w zależności od opcji
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Ustawianie hierarchii kategorii zaopatrzenia (Przewodnik zadania)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+[Ustawianie hierarchii kategorii zaopatrzenia (przewodnik po zadaniu)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+
+
 
 

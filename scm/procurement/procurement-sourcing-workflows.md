@@ -27,12 +27,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-and-sourcing-workflows"></a>Przepływy pracy dla zaopatrzenia i sourcingu
 
+[!include[banner](../includes/banner.md)]
+
+
 Niektóre organizacje wymagają, aby zapotrzebowania na zakup i zamówienia zakupu były zatwierdzane przez użytkowników innych niż osoby, która wprowadziły transakcję. Aby skonfigurować proces zatwierdzania, można utworzyć przepływ pracy.
 
 Przepływ pracy reprezentuje proces biznesowy. Określa sposób przepływu dokumentu przez system i wskazuje osoby, które muszą zakończyć zadanie lub zatwierdzić dokument. Używanie systemu przepływu pracy w organizacji ma kilka zalet:
 -   **Spójność procesów** — Możesz zdefiniować proces zatwierdzania określonych dokumentów, takich jak zapotrzebowania zakupu i raporty z wydatków. Używanie systemu przepływu pracy pomaga zapewnić, że dokumenty będą przetwarzane i zatwierdzane w spójny i wydajny sposób.
 -   **Widoczność procesu** — Możesz śledzić stan, historię i miary wydajności określonego wystąpienia przepływu pracy. Pozwala to na określanie, czy zmiany powinny zostać wprowadzone do przepływu pracy w celu poprawienia wydajności.
--   **Scentralizowana Lista prac**— użytkownicy mogą przeglądać listę scentralizowane pracy służy do wyświetlania zadań przepływu pracy i zatwierdzeń powierzonych im przez wszystkie przepływy pracy, które uczestniczą w. Polecenie jest dostępne w stronie elementów pracy.
+-   **Scentralizowana Lista prac** — Na scentralizowanej liście prac użytkownicy mogą wyświetlać zadania i zatwierdzenia przepływów pracy przypisane im we wszystkich przepływach pracy, w których uczestniczą. Ta opcja jest dostępna na stronie Elementy pracy.
 
 ## <a name="the-types-of-workflows-that-you-can-create"></a> Dostępne typy przepływów pracy
 Następujące typy przepływu pracy są dostępne w module Zaopatrzenie i sourcing.
@@ -46,7 +49,7 @@ Następujące typy przepływu pracy są dostępne w module Zaopatrzenie i sourci
 | Przepływ pracy wiersza zamówienia zakupu     | Tworzenie przepływów pracy przeglądania i zatwierdzania dla wierszy zamówień zakupu. |
 
 ## <a name="creating-a-workflow"></a>Tworzenie przepływu pracy
-Aby utworzyć przepływ pracy, przejdź do zaopatrzenia i sourcingu &gt;instalacji &gt;zaopatrzenie i sourcing przepływy pracy i utworzyć nowy przepływ pracy, wybierając typ przepływu pracy ma zostać utworzony.  
+Aby utworzyć przepływ pracy, kliknij kolejno opcje Zaopatrzenie i sourcing &gt; Ustawienia &gt; Przepływy pracy dla zaopatrzenia i sourcingu i utwórz nowy przepływ pracy poprzez wybranie typu przepływu pracy, który chcesz utworzyć.  
 
 Na kanwie przepływu pracy możesz przeciągać elementy przepływu pracy do projektanta i łączyć elementy w sekwencje. Elementy przepływu pracy powinny być skonfigurowane. Dla elementów przepływu pracy zatwierdzania i zadań można skonfigurować, którzy uczestnicy powinni wykonywać czynności.
 Typy uczestników
@@ -69,6 +72,8 @@ Można przypisać krok zatwierdzania do następujących grup uczestników.
 
 [Definiowanie przepływów pracy procesów biznesowych dla zapotrzebowań na zakup](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Purchase requisition workflow](purchase-requisitions-workflow.md)
+[Przepływ pracy zapotrzebowania na zakup](purchase-requisitions-workflow.md)
+
+
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchasing-policies"></a>Zasady zakupów
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o zasadach zakupów. Zasady zakupów to zbiór reguł, który steruje procesem zapotrzebowań. Zasady zakupów ułatwiają administratorom zaopatrzenia wdrażanie strategii zaopatrzenia poprzez utworzenie struktury zasad dopasowanej do strategicznych wymagań zakupowych organizacji.
 
 Zasady zakupów składają się z zestawu reguł. Tworząc regułę zasad inspekcji, najpierw należy zaznaczyć typ reguły. Następnie reguła jest tworzona dla tego typu reguły przez określenie ustawień, daty początkowej i daty końcowej dla reguły.  
@@ -41,13 +44,13 @@ W zależności od sposobu konfigurowania zasad zakupów użytkownicy w organizac
 
 ### <a name="example-1-simple-purchasing-policy-configuration"></a>Przykład 1: Konfigurowanie prostej zasady zakupów
 
-Organizacje, które są małe i mniej złożone można zdefiniować zasady zakupów przez podmiot prawny i można używać hierarchii organizacyjnej firmy.  
+W mniejszych organizacjach można konfigurować zasady zakupów według podmiotu prawnego i można w nich używać tylko hierarchii organizacyjnej Firmy.  
 
 Dla firmy Fabrikam, która jest małą firmą, wymagania dotyczące różnią się w niewielkim stopniu w skali całej organizacji. Zasady zakupów różnią się tylko między podmiotami prawnymi organizacji. Na przykład pracownicy Fabrikam Canada i pracownicy Fabrikam USA kupują towary i usługi z różnych katalogów i od różnych dostawców. Dlatego zasady zakupów w Fabrikam zostały skonfigurowane na poziomie podmiotu prawnego.  
 
-Fabrikam tworzy dwie zasady zakupów. Zasady A stosuje się do podmiotu prawnego, USA, 1111. Zasada B stosuje się do podmiotu prawnego kanadyjskich 2222. Gdy pracownik w firmie 1111 tworzy zapotrzebowania na zakup, reguły zasad są uzyskiwane z zasad A. Na przykład katalog produktów, które widzi, jest określona w katalogu reguły dla zasad A.  
+Fabrikam tworzy dwie zasady zakupów. Zasada A ma zastosowanie do firmy w Stanach Zjednoczonych (1111) Zasada B obowiązuje kanadyjską firmę (2222). Gdy pracownik w firmie 1111 tworzy zapotrzebowanie na zakup, reguły są pobierane z zasady A. Na przykład katalog produktów, które widzi pracownik, określono w regule katalogu dla zasady A.  
 
-Gdy pracownik w firmie 2222 tworzy zapotrzebowania na zakup, reguły zasad są uzyskiwane z zasad B.  
+Gdy pracownik w firmie 2222 tworzy zapotrzebowanie na zakup, reguły pochodzą z zasady B.  
 
 **Uwaga:** Jeśli pracownik firmy 1111 nabywa towar w imieniu pracownika firmy 2222, są stosowane reguły określone dla firmy 2222 (czyli reguły z zasady B).
 
@@ -117,7 +120,7 @@ Reguła kontroli uzupełniania zapasów jest opcjonalna i określa pola, które 
 
 ### <a name="purchase-order-creation-and-demand-consolidation-rule"></a>Reguła tworzenia zamówienia zakupu i konsolidacji popytu
 
-Zakupu zamówienia tworzenia i żądanie reguła konsolidacji definiuje reguły zasad, aby użyć podczas generowania zamówienia zakupu z zapotrzebowania na zakup zatwierdzony. Podczas tworzenia reguł tego typu można ustawić opcje na poszczególnych kartach:
+Reguła tworzenia zamówienia zakupu i konsolidacji popytu definiuje reguły, które mają być używane podczas generowania zamówienia zakupu z zatwierdzonego zapotrzebowania na zakup. Podczas tworzenia reguł tego typu można ustawić opcje na poszczególnych kartach:
 
 -   Na karcie **Podział zamówienia zakupu** można określić kryteria podziału wierszy zapotrzebowania na zakup na osobne zamówienia zakupu.
 -   Na karcie **Transfer ceny/rabatu** można zdefiniować, kiedy ponownie obliczyć umowę cenową na etapie tworzenia zamówienia zakupu:
@@ -126,7 +129,7 @@ Zakupu zamówienia tworzenia i żądanie reguła konsolidacji definiuje reguły 
 
     Można również zezwalać zleceniodawcy na zmianę metody przeniesienia ceny i rabatu dla poszczególnych wierszy zapotrzebowania na zakup, niezależnie od reguły przeniesienia ceny/rabatu, która jest zdefiniowana. Zaznacz opcję **Zezwalaj na zastępowanie ręczne w wierszu zapotrzebowania zakupu**, jeśli chcesz włączyć tę możliwość.
 -   Na karcie **Przeniesienie opisu pozycji** można przenosić opis towaru z zapotrzebowania, jeśli pochodzi z ZO.
--   Na karcie **Rozbieżność cenowa** można określić reguły kierowania zatwierdzonego zapotrzebowania na zakup z powrotem przez proces przeglądu, gdy zwiększa się cena towaru w katalogu zaopatrzenia. Ustaw maksymalną kwotę, o jaką może zwiększyć się kwota netto w wierszu towaru w wierszu zapotrzebowania na zakup od zatwierdzenia zapotrzebowania na zakup do utworzenia zamówienia zakupu. Kwota netto jest obliczana za pomocą następującego wzoru: (\[ilość x (cena jednostkowa-rabat) ÷ jednostki cenowej\] + opłaty dodatkowe zakupu) × (100-procent rabatu) ÷ 100 wierszy zapotrzebowania na zakup, które przekraczają rozbieżność cenową, ustawionego odbywają się do ręcznego przetwarzania. Reguły konfigurowane na karcie **Przetwarzanie błędów** określają sposób przetwarzania wierszy zapotrzebowania na zakup.
+-   Na karcie **Rozbieżność cenowa** można określić reguły kierowania zatwierdzonego zapotrzebowania na zakup z powrotem przez proces przeglądu, gdy zwiększa się cena towaru w katalogu zaopatrzenia. Ustaw maksymalną kwotę, o jaką może zwiększyć się kwota netto w wierszu towaru w wierszu zapotrzebowania na zakup od zatwierdzenia zapotrzebowania na zakup do utworzenia zamówienia zakupu. Kwota netto jest obliczana przy użyciu następującej formuły: (\[ilość x (cena jednostkowa – rabat) / jednostka cenowa\] + pozostałe koszty zakupu) x (100 – procent rabatu) / 100 wierszy zapotrzebowania na zakup, które przekraczają ustawioną rozbieżność cenową i są przetwarzane ręcznie. Reguły konfigurowane na karcie **Przetwarzanie błędów** określają sposób przetwarzania wierszy zapotrzebowania na zakup.
 -   Na karcie **Przetwarzanie błędów**można skonfigurować regułę przetwarzania, która jest stosowana do zapotrzebowania na zakup, jeśli nie powiedzie się sprawdzanie jego poprawności podczas tworzenia zamówienia zakupu z powodu błędu rozbieżności cenowych lub błędu dostawcy. Umożliwia wybranie jednej z następujących opcji:
     -   **Brak akcji** — wiersze zapotrzebowania na zakup pozostają na stronie **Zwolnij zatwierdzone zapotrzebowania na zakup**. Stan zapotrzebowania zakupu nadal ma wartość **Zatwierdzone**. Jednak błędy muszą być najpierw uzgodnione, aby było możliwe generowanie zamówienia zakupu dla wierszy zapotrzebowania na zakup.
     -   **Anuluj wiersz zapotrzebowania na zakup** — wiersze zapotrzebowania na zakup są anulowane. W razie potrzeby zleceniodawca może tworzyć nowe zapotrzebowanie na zakup dla anulowanych wierszy.
@@ -141,6 +144,8 @@ Zakupu zamówienia tworzenia i żądanie reguła konsolidacji definiuje reguły 
     -   **Nie zezwalaj na konsolidację popytu** — brak zatwierdzonych wierszy zapotrzebowania na zakup kwalifikujących się do konsolidacji popytu. Ta opcja jest domyślnie zaznaczona i ma zastosowanie tylko do wierszy zapotrzebowania na zakup, które wymagają ręcznego przetwarzania do tworzenia zamówienia zakupu.
     -   **Zawsze zezwalaj na konsolidację popytu** — wszystkie zatwierdzone wiersze zapotrzebowania na zakup kwalifikują się do konsolidacji popytu. **Uwaga:** jeśli wybierzesz opcję **Zawsze zezwalaj na konsolidację popytu** na karcie **konsolidacji popytu**, ale zaznaczysz **Automatyczne tworzenie zamówień zakupu** na karcie **Ręczne tworzenie zamówienia zakupu**, wszystkie zapotrzebowania na zakup będą zatrzymane do ręcznego przetwarzania.
     -   **Zezwalaj na konsolidację popytu pod tymi warunkami** — służy do definiowania kryteriów, które określają, czy zatwierdzone wiersze zapotrzebowania na zakup kwalifikują się do konsolidacji popytu. Dla każdego typu wiersza zapotrzebowania na zakup można określić kryteria według dostawcy i kategorii zaopatrzenia. Po wybraniu opcji **Zezwalaj na konsolidację popytu pod tymi warunkami** dla każdego typu wiersza zapotrzebowania na zakup można określić kryteria według dostawcy i kategorii zaopatrzenia. Po wybraniu kategorii zaopatrzenia wszelkie podkategorie dla tej kategorii zaopatrzenia są także wybierane. W przypadku wybrania opcji **Wszystkie** dla określonego typu wiersza wszystkie wiersze tego typu kwalifikują się do konsolidacji popytu.
+
+
 
 
 

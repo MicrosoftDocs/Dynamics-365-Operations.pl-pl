@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="warehouse-work-policies"></a>Zasady pracy magazynowej
 
+[!include[banner](../includes/banner.md)]
+
+
 W systemie Microsoft Dynamics AX 7.0.1 (aktualizacja z maja 2016 roku) wprowadzono nowy aparat zasad pracy magazynowej. Ta zasada pracy kontroluje, czy praca magazynowa jest tworzona dla procesów magazynu w produkcji.
 
-Ta zasada pracy kontroluje, czy praca magazynowa jest tworzona dla procesów magazynu w produkcji. Zasadę pracy można skonfigurować przy użyciu kombinacji **typów zleceń**, **lokalizacji zapasów** i **produktu**. Na przykład produkt, którego L0101 jest zgłaszane jako zakończone do lokalizacji danych wyjściowych 001. Wyrobu gotowego jest później zużywana w innego zlecenia produkcyjnego o lokalizację wyjściową 001. Można w takim przypadku, skonfiguruj zasadę pracy aby zapobiec utworzeniu przy raportowaniu produktu L0101 gotowych do lokalizacji danych wyjściowych 001 pracy dla gotowych odłożenia. Zasada pracy jest osobną jednostką, którą można opisać za pomocą następujących informacji:
+Ta zasada pracy kontroluje, czy praca magazynowa jest tworzona dla procesów magazynu w produkcji. Zasadę pracy można skonfigurować przy użyciu kombinacji **typów zleceń**, **lokalizacji zapasów** i **produktu**. Na przykład produkt L0101 jest zgłoszony jako ukończony do lokalizacji wyjściowej 001. Gotowy produkt jest później zużywany na podstawie innego zlecenia produkcyjnego w lokalizacji wyjściowej 001. W takim przypadku można skonfigurować zasadę pracy, która uniemożliwi tworzenie pracy odkładania wyrobów gotowych, gdy produkt L0101 zostanie zgłoszony jako gotowy do lokalizacji wyjściowej 001. Zasada pracy jest osobną jednostką, którą można opisać za pomocą następujących informacji:
 
 -   **Nazwa zasady pracy **(unikatowy identyfikator zasady pracy)
 -   **Typy zleceń** i **Metoda tworzenia pracy**
@@ -55,7 +58,7 @@ Można wybrać produkt, do którego ma zastosowanie zasada pracy. Zasada pracy m
 ## <a name="example"></a>Przykład
 W poniższym przykładzie istnieją dwa zlecenia produkcyjne, PRD-001 i PRD 00*2*. Zlecenie produkcyjne PRD-001 zawiera operację o nazwie **Montaż**, z której produkt SC1 jest zgłaszany jako gotowy do lokalizacji O1. Zlecenie produkcyjne PRD-002 ma operację o nazwie **Malowanie** i zużywa produkt SC1 z lokalizacji O1. Zlecenie produkcyjne PRD-002 zużywa także surowiec RM1 z lokalizacji O1. Surowiec RM1 jest przechowywany w lokalizacji magazynowej BULK-001 i zostanie pobrany do lokalizacji O1 za pomocą pracy magazynowej pobrania materiału. Praca pobierania jest generowana po zwolnieniu produkcji PRD-002. 
 
-[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
+[![Zasady pracy magazynowej](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
 
 Planując skonfigurowanie zasady pracy magazynowej dla tego scenariusza, należy uwzględnić następujące informacje:
 
@@ -66,12 +69,12 @@ Oto przykład zasady pracy, którą można skonfigurować z uwzględnieniem powy
 
 |                                         |                                                       |
 |-----------------------------------------|-------------------------------------------------------|
-|**Work policy name**<br>                 |**Work order types**<br>                               |
-| Nr odłożenia 01'                    |-Gotowe dobrej odłożone<br>                           |
-|                                         |**Locations**<br>                                      |
-|                                         |-O1   |                                               |
-|                                         |**Products** <br>                                      |
-|                                         |-SC1                                                  |
+|**Nazwa zasady pracy**<br>                 |**Typy zleceń**<br>                               |
+| Bez odłożenia 01     `                    |· Odłożenie gotowego wyrobu<br>                           |
+|                                         |**Lokalizacje**<br>                                      |
+|                                         |- O1   |                                               |
+|                                         |**Produkty** <br>                                      |
+|                                         |- SC1                                                  |
 
 Poniższe procedury zawierają instrukcje krok po kroku dotyczące konfigurowania zasady pracy magazynowej dla tego scenariusza. Opisano również przykładową konfigurację prezentującą zgłaszanie zlecenia produkcyjnego jako gotowego do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny.
 
@@ -244,5 +247,7 @@ KROKI (25)
 </tr>
 </tbody>
 </table>
+
+
 
 

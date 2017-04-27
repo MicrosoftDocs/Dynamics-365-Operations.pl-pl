@@ -1,6 +1,6 @@
 ---
-title: "Przegląd modeli konfiguracji produktu"
-description: "W tym artykule zdefiniowano terminy i pojęcia, które są istotne dla modeli konfiguracji produktu. Modele konfiguracji produktu pozwala na tworzenie struktury generyczny produkt, który może służyć do konfigurowania wielu wariantów produktu tego samego produktu."
+title: "Omówienie modeli konfiguracji produktu"
+description: "W tym artykule podano definicje terminów i pojęć, które są istotne dla modeli konfiguracji produktu. Modele konfiguracji produktu pozwalają zbudować standardową strukturę produktu, której potem można używać do konfigurowania wielu wariantów tego samego produktu."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="product-configuration-models-overview"></a>Przegląd modeli konfiguracji produktu
+# <a name="product-configuration-models-overview"></a>Omówienie modeli konfiguracji produktu
 
-W tym artykule zdefiniowano terminy i pojęcia, które są istotne dla modeli konfiguracji produktu. Modele konfiguracji produktu pozwala na tworzenie struktury generyczny produkt, który może służyć do konfigurowania wielu wariantów produktu tego samego produktu.
+W tym artykule podano definicje terminów i pojęć, które są istotne dla modeli konfiguracji produktu. Modele konfiguracji produktu pozwalają zbudować standardową strukturę produktu, której potem można używać do konfigurowania wielu wariantów tego samego produktu.
 
 Modele konfiguracji produktu są tworzone, aby reprezentować rodzajową strukturę produktu. Po utworzeniu modelu konfiguracji produktu można skonfigurować odrębny wariant produktu, który ma unikalny BOM i marszruty powstawania. W modelach konfiguracji produktów używane są zarówno ograniczenia deklaratywne, jak i obliczenia rozkazujące do obsługi relacji i ograniczeń między różnymi wariantami produktów. Można konfigurować elementy na zamówieniach sprzedaży, ofertach sprzedaży, zamówieniach zakupu i zleceniach produkcyjnych. W poniższej tabeli opisano pojęcia i terminy oparte na ograniczeniach.
 <table>
@@ -69,16 +69,16 @@ Można również określić warunek dla atrybutów. Jeśli warunek jest spełnio
 <li><strong>Tekst</strong> ze stałą listą lub bez</li>
 <li><strong>Wartość logiczna</strong></li>
 </ul>
-Jeśli typem atrybutu jest <strong>Wartość logiczna</strong>, <strong>Liczba całkowita</strong> z zakresem lub <strong>Tekst</strong> ze stałą listą, zbiór wartości jest dostępny podczas ustawiania modelu konfiguracji produktu. <strong>Uwaga:</strong> solver konfiguracji produktu rozpoznaje tylko następujących typów atrybutów: <strong>typu Boolean</strong>, <strong>tekstu</strong> ze stałą listą i <strong>całkowitą</strong> z zakresu. Dzięki temu można używać tylko tych typów atrybutów w ograniczeniach i warunkach wyrażeniowych.</td>
+Jeśli typem atrybutu jest <strong>Wartość logiczna</strong>, <strong>Liczba całkowita</strong> z zakresem lub <strong>Tekst</strong> ze stałą listą, zbiór wartości jest dostępny podczas ustawiania modelu konfiguracji produktu. <strong>Uwaga:</strong> Narzędzie do rozwiązywania problemów z konfiguracją produktu rozpoznaje tylko następujące typy atrybutów: <strong>Wartość logiczna</strong>, <strong>Tekst</strong> ze stałą listą i <strong>Liczba całkowita</strong> z zakresem. Dzięki temu można używać tylko tych typów atrybutów w ograniczeniach i warunkach wyrażeniowych.</td>
 </tr>
 <tr class="even">
 <td>Ograniczenia</td>
 <td>Ograniczenia opisują ograniczenia dla konfiguracji modelu produktu. Ograniczenia mają zagwarantować, że będą wybrane tylko prawidłowe wartości, gdy produkt jest konfigurowany. Ograniczenia mogą być ograniczeniami wyrażeniowymi lub powiązanymi tabelami:
 <ul>
 <li>Ograniczenie wyrażenia może służyć tylko do składnika, który jest powiązany. Ograniczenia wyrażenia dla składnika mogą odwoływać się do atrybutów składników podrzędnych dla składników. Narzędzie do rozwiązywania problemów z konfiguracją produktu jest używane w celu rozwiązania ograniczeń, a użytkownik musi używać jego składni podczas zapisywania ograniczeń. Więcej informacji można uzyskać w artykule wiki o ograniczeniach wyrażeń i tabel.</li>
-<li>Muszą być zdefiniowane ograniczenia tabeli, zanim mogą zostać zastosowane do składnika w modelu konfiguracji produktu. Ograniczenia tabeli mogą być albo zdefiniowane przez użytkownika lub przez system. Powiązane tabele zdefiniowane przez użytkownika to typ macierzy, który może być używany do opisywania zestawu kombinacji dla wartości atrybutów, które są zdefiniowane przez typy atrybutu. Na przykład w przypadku produkcji głośników, macierz dla powiązanych tabel zdefiniowanych przez użytkownika może mieć kolumny dla wykończenia i maskownice głośnika.</li>
+<li>Przed zastosowaniem ograniczeń tabel do składnika w modelu konfiguracji produktu takie ograniczenia muszą zostać zdefiniowane. Ograniczenia tabel mogą być definiowane albo przez użytkownika, albo przez system. Powiązane tabele zdefiniowane przez użytkownika to typ macierzy, który może być używany do opisywania zestawu kombinacji dla wartości atrybutów, które są zdefiniowane przez typy atrybutu. Na przykład w przypadku produkcji głośników, macierz dla powiązanych tabel zdefiniowanych przez użytkownika może mieć kolumny dla wykończenia i maskownice głośnika.</li>
 </ul>
-<strong>Przykład</strong> Głośniki są dostępne cztery wykończeniach: Czarny, Dąb, Rosewood i Biały. Głośniki mogą mieć jeden z trzech przednich kratki wentylacyjne: czarny, metalu lub biały. Czarne wykończenie jest dostępna dla wszystkich kratki wentylacyjne, ale inne materiały wykończeniowe są ograniczone do określonych kratki wentylacyjne. W poniższej tabeli przedstawiono przykład informacji wyświetlanych na karcie <strong>Dozwolone kombinacje</strong> na stronie <strong>Edytuj ograniczenie tabeli</strong>.
+<strong>Przykład</strong> Głośniki są dostępne cztery wykończeniach: Czarny, Dąb, Rosewood i Biały. Głośniki mogą mieć jeden z trzech rodzajów maskownicy: Czarny, Metal lub Biały. Białe wykończenie jest dostępne dla wszystkich maskownic, ale w przypadku innych wykończeń obowiązują ograniczenia. W poniższej tabeli przedstawiono przykład informacji wyświetlanych na karcie <strong>Dozwolone kombinacje</strong> na stronie <strong>Edytuj ograniczenie tabeli</strong>.
 <table>
 <thead>
 <tr class="header">
@@ -117,11 +117,11 @@ Jeśli typem atrybutu jest <strong>Wartość logiczna</strong>, <strong>Liczba c
 </tr>
 </tbody>
 </table>
-Powiązane tabele zdefiniowane przez system reprezentuje mapowanie typu atrybutu i do pola w 365 Dynamics dla tabeli operacji. Powiązanych tabel zdefiniowanych przez system dynamicznie łącza typu atrybutu do pola. Łącze umożliwia atrybut w modelu konfiguracji produktu, aby odzwierciedlić dane z pola w 365 Dynamics dla tabeli operacji.</td>
+Ograniczenia tabel zdefiniowane przez system reprezentują mapowanie między typem atrybutu a polem w tabeli programu Dynamics 365 for Operations. Ograniczenie tabeli zdefiniowane przez system dynamicznie łączy typ atrybutu z polem. Dzięki temu połączeniu atrybut w modelu konfiguracji produktu może odzwierciedlać dane widoczne w polu w tabeli programu Dynamics 365 for Operations.</td>
 </tr>
 <tr class="odd">
 <td>Obliczenia</td>
-<td>Obliczenia stanowią dodatek do ograniczenia. Obliczenia można użyć do wykonywania operacji arytmetycznych atrybuty <strong>dziesiętnych</strong> i <strong>całkowitą</strong> typów lub operacji logicznych, które obejmują atrybutów <strong>tekstu</strong> ze stałą listą i <strong>Boolean</strong> typów. Obliczenie ma atrybut docelowy, który będzie zawierał wynik wyrażenia do obliczeń. Wyrażenie do obliczania opiera się na edytorze wyrażeń.</td>
+<td>Obliczenia są dodatkiem do ograniczeń. Można ich używać do wykonywania operacji arytmetycznych na atrybutach typu <strong>Liczba dziesiętna</strong> i <strong>Liczba całkowita</strong> lub operacji logicznych, które obejmują atrybuty typu <strong>Tekst</strong> ze stałą listą i <strong>Wartość logiczna</strong>. Obliczenie ma atrybut docelowy, który będzie zawierał wynik wyrażenia do obliczeń. Wyrażenie do obliczania opiera się na edytorze wyrażeń.</td>
 </tr>
 <tr class="even">
 <td>Składniki podrzędne</td>

@@ -1,5 +1,5 @@
 ---
-title: "Konfiguracja ręczna decyzja w przepływie pracy"
+title: "Konfigurowanie ręcznej decyzji w przepływie pracy"
 description: "W tym temacie wyjaśniono sposób konfigurowania właściwości decyzji ręcznej."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-manual-decision-in-a-workflow"></a>Konfiguracja ręczna decyzja w przepływie pracy
+# <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurowanie ręcznej decyzji w przepływie pracy
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym temacie wyjaśniono sposób konfigurowania właściwości decyzji ręcznej.
 
@@ -95,8 +98,8 @@ Można wysyłać powiadomienia do osób w momencie wprowadzenia decyzji, jej del
 
 1.  W lewym okienku kliknij opcję **Powiadomienia**.
 2.  Zaznacz pola wyboru obok zdarzeń, o których mają być wysyłane powiadomienia:
-    -   **\[Wybór 1\]** — przypisany użytkownik wybrał **\[wybór 1\]**.
-    -   **\[Wybór 2\]** — przypisany użytkownik wybrał **\[2 wybór\]**.
+    -   **\[Wybór 1\]** — przypisany użytkownik wybrał opcję **\[Wybór 1\]**.
+    -   **\[Wybór 2\]** — przypisany użytkownik wybrał opcję **\[Wybór 2\]**.
     -   **Delegowanie** — przypisany użytkownik przypisał decyzję innemu użytkownikowi.
     -   **Eskaluj** — przypisany użytkownik nie podjął decyzji w wyznaczonym czasie.
 
@@ -148,10 +151,10 @@ Można wysyłać powiadomienia do osób w momencie wprowadzenia decyzji, jej del
     </tr>
     <tr class="odd">
     <td>Użytkownik</td>
-    <td>Szczególne usługi Microsoft Dynamics 365 dla użytkowników operacji</td>
+    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li><strong>Dostępni użytkownicy</strong> lista zawiera wszystkie 365 Dynamics dla użytkowników operacji. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -213,10 +216,10 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisana decyzja ręc
     </tr>
     <tr class="even">
     <td>Użytkownik</td>
-    <td>Konkretne 365 Dynamics dla użytkowników operacji</td>
+    <td>Konkretni użytkownicy programu Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li><strong>Dostępni użytkownicy</strong> lista zawiera wszystkie 365 Dynamics dla użytkowników operacji. Wybierz użytkowników, którym chcesz przypisać decyzję, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz przypisać decyzję, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -234,8 +237,8 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisana decyzja ręc
     <li>Na liście <strong>Typ kolejki</strong> zaznacz pozycję <strong>Warunkowe kolejki elementów roboczych</strong>.</li>
     <li>Na liście <strong>Nazwa kolejki</strong> zaznacz pozycję <strong>Kolejka warunkowa</strong>.</li>
     </ol></li>
-    </ol><ph id="t1">
-    </ph><strong>Uwaga:</strong> ta opcja jest używana dla tylko kilku procesów roboczych, takich jak zarządzanie sprawami.</td>
+    </ol>
+    <strong>Uwaga:</strong> Ta opcja jest używana tylko do niektórych przepływów pracy, takich jak Zarządzanie sprawami.</td>
     </tr>
     </tbody>
     </table>
@@ -258,9 +261,9 @@ Jeśli użytkownik nie podejmie decyzji w wyznaczonym czasie, staje się ona zal
     |----------|----------------------------|
     | 1        | Przypisać do: Danuta           |
     | 2        | Przypisać do: Ireny            |
-    | 3        | Ostateczne działania: \[element 1\] |
+    | 3        | Działanie końcowe: \[Wybór 1\] |
 
-    W tym przykładzie system przypisuje zaległą decyzję do Danuty. Jeśli Danuta nie podejmie decyzji w przydzielonym czasie, system przypisze decyzję do Ireny. Jeśli Erin nie podejmować decyzji w przewidzianym czasie, system wybiera **\[wybór 1\]** jako decyzji.
+    W tym przykładzie system przypisuje zaległą decyzję do Danuty. Jeśli Danuta nie podejmie decyzji w przydzielonym czasie, system przypisze decyzję do Ireny. Jeśli Irena nie podejmie decyzji w przydzielonym czasie, system wybierze opcję **\[Wybór 1\]** jako decyzję.
 3.  Aby dodać użytkownika do ścieżki eskalacji, kliknij opcję **Dodaj eskalację**. Wybierz jedną z opcji w tabeli poniżej, a następnie wykonaj dodatkowe kroki dla tej opcji, zanim przejdziesz do kroku 4.
     <table>
     <colgroup>
@@ -303,10 +306,10 @@ Jeśli użytkownik nie podejmie decyzji w wyznaczonym czasie, staje się ona zal
     </tr>
     <tr class="odd">
     <td>Użytkownik</td>
-    <td>Konkretne 365 Dynamics dla użytkowników operacji</td>
+    <td>Konkretni użytkownicy programu Dynamics 365 for Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li><strong>Dostępni użytkownicy</strong> lista zawiera wszystkie 365 Dynamics dla użytkowników operacji. Wybierz użytkowników, do których chcesz eskalować decyzję, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, do których chcesz eskalować decyzję, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -335,6 +338,8 @@ Jeśli decyzja musi zostać podjęta w określonym czasie, wykonaj następujące
     -   **Lata** — Wybierz dzień, tydzień i miesiąc, do kiedy należy podjąć decyzję. Może to być na przykład piątek trzeciego tygodnia grudnia.
 
 4.  W przypadku przekroczenia tego limitu czasu system sam podejmie decyzję. Na liście **Akcja** zaznacz opcję, którą system powinien wybrać.
+
+
 
 
 

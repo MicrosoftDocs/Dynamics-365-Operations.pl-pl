@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-payments-and-rounding-rules"></a>Reguły płatności podatkowych i zaokrąglania
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule wyjaśniono działanie konfiguracji reguły zaokrąglania w ustawieniach urzędu skarbowego oraz sposób zaokrąglania salda podatku podczas zadania rozliczania i księgowania podatku.
 
-Okresowo należy zgłaszać i płacić podatek w urzędzie skarbowym. To jest możliwe przez uruchomienie Rozlicz i po procesie podatku w stronę podatku od sprzedaży. Podatek od sprzedaży za okres zostaną rozliczone dla konta podatku od sprzedaży i Saldo podatku zostanie zaksięgowana na koncie rozliczenie podatku. Saldo podatku, który jest księgowany na koncie rozliczenie podatku, może być zaokrąglane zgodnie z wymogami urzędu skarbowego przez skonfigurowanie reguły zaokrąglania na stronie podatku od sprzedaży. 
+Okresowo należy zgłaszać i płacić podatek w urzędzie skarbowym. Można to zrobić, uruchamiając proces rozliczenia i księgowania podatku na stronie Podatek. Podatek od sprzedaży w danym okresie zostanie rozliczony dla kont podatku, a saldo podatku zostanie zaksięgowane na koncie rozliczenia podatku. Saldo podatku, który jest księgowany na koncie rozliczenie podatku, może być zaokrąglane zgodnie z wymogami urzędu skarbowego przez skonfigurowanie reguły zaokrąglania na stronie podatku od sprzedaży. 
 
 Różnica wynikająca z zaokrąglenia jest księgowana na koncie zaokrąglania podatku wybranym w polu Konta do transakcji automatycznych w księdze głównej.
 
@@ -42,10 +45,10 @@ Poniższy przykład pokazuje mechanizm działania reguły zaokrąglania na potrz
 
 Firma chce użyć metody zaokrąglania, która zaokrągla saldo do najbliższego 1,00 EUR. Użytkownik odpowiedzialny za księgowanie podatku musi wykonać następujące czynności:
 
-1.  Kliknij opcję Podatek &gt;podatków pośrednich &gt;podatku &gt;urzędów skarbowych
+1.  Wybierz kolejno opcje Podatek &gt; Podatki pośrednie &gt; Podatek &gt; Urzędy skarbowe.
 2.  Na skróconej karcie Ogólne zaznacz opcję Normalne w polu Metoda zaokrąglenia.
 3.  W polu Zaokrąglenie wpisz 1,00.
-4.  Gdy przyjdzie czas zapłacenia podatku urzędowi skarbowemu, otwórz stronę Rozlicz i zaksięguj podatek. (Kliknij przycisk podatku &gt;deklaracje &gt;podatku &gt;rozliczenia i księgowanie podatku od sprzedaży.)
+4.  Gdy przyjdzie czas zapłacenia podatku urzędowi skarbowemu, otwórz stronę Rozlicz i zaksięguj podatek. (Wybierz kolejno opcje Podatek &gt; Deklaracje &gt; Podatek &gt; Rozlicz i zaksięguj podatek).
 5.  Na koncie rozliczenie podatku kwota zobowiązań z tytułu podatku 98 765,43 jest zaokrąglana do 98 765.
 
 W poniższej tabeli przedstawiono, jak kwota 98 765,43 jest zaokrąglana przy użyciu każdej metody zaokrąglania, która jest dostępna w polu Metoda zaokrąglania na stronie urzędu skarbowego.
@@ -56,11 +59,13 @@ W poniższej tabeli przedstawiono, jak kwota 98 765,43 jest zaokrąglana przy u�
 | W dół                            | 98 765,43              | 98 765,40              | 98 765,00              | 98 700,00                |
 | Zaokrąglenie w górę                         | 98 765,43              | 98 765,50              | 98 766,00              | 98 800,00                |
 | Na korzyść firmy, salda kredytowe | 98 765,43              | 98 765,40              | 98 765,00              | 98 700,00                |
-| Na korzyść firmy, salda debetowe  | 98 765,43              | 98 765,50              | 98 766,00              | 98 800,00                |
+| Na korzyść firmy, salda debetowe  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
 
 > [!NOTE]                                                                                  
 > Jeśli wybierzesz Na korzyść firmy, zaokrąglanie jest zawsze na korzyść firmy. 
 
-Aby uzyskać więcej informacji, zobacz [omówienie podatku](indirect-taxes-overview.md). 
+Aby uzyskać więcej informacji, zobacz [Omówienie podatku](indirect-taxes-overview.md). 
+
+
 
 

@@ -118,7 +118,7 @@ eGiro opiera się na międzynarodowym standardzie ONZ EDIFACT CREMUL (Multiple C
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | Ten format płatności nie jest już używany.                                                     |
-| Zamieniona przez inną funkcję? | Nr Format zostanie zastąpiony przez ISO 20022 instrukcji import formatów w przyszłych wydaniach. |
+| Zamieniona przez inną funkcję? | Nr Ten format zostanie zastąpiony formatami importu wyciągów ISO 20022 w przyszłych wersjach. |
 | Moduły, których dotyczą zmiany             | Rozrachunki z odbiorcami                                                                       |
 
 ### <a name="external-inventory-for-poland"></a>Zapasy zewnętrzne dla Polski
@@ -138,7 +138,7 @@ Narzędzie służące do konfigurowania zbierania danych na potrzeby raportów k
 |                              |                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | Ograniczone użycie                                                                            |
-| Zamieniona przez inną funkcję? | Nr Narzędzie zostanie zastąpiony przez elektroniczną zgłoszenie konfiguracje w przyszłych wersjach. |
+| Zamieniona przez inną funkcję? | Nr Narzędzie zostanie zastąpione konfiguracjami raportowania elektronicznego w przyszłych wersjach. |
 | Moduły, których dotyczą zmiany             | Księga główna                                                                           |
 
 ### <a name="import-of-customer-payment-transactions-for-finland"></a>Import transakcji płatności od odbiorców dla Finlandii
@@ -148,7 +148,7 @@ Można wybrać formatu importu dla płatności fińskich, który importuje trans
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | Ten format płatności nie jest już używany.                                                     |
-| Zamieniona przez inną funkcję? | Nr Format zostanie zastąpiony przez ISO 20022 instrukcji import formatów w przyszłych wydaniach. |
+| Zamieniona przez inną funkcję? | Nr Ten format zostanie zastąpiony formatami importu wyciągów ISO 20022 w przyszłych wersjach. |
 | Moduły, których dotyczą zmiany             | Rozrachunki z odbiorcami                                                                       |
 
 ### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a>Import transakcji płatności do arkusza księgi głównej dla Finlandii
@@ -158,7 +158,7 @@ Format specyficzny dla Finlandii służy do importowania transakcji księgowych 
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | Ten format płatności nie jest już używany.                                                     |
-| Zamieniona przez inną funkcję? | Nr Format zostanie zastąpiony przez ISO 20022 instrukcji import formatów w przyszłych wydaniach. |
+| Zamieniona przez inną funkcję? | Nr Ten format zostanie zastąpiony formatami importu wyciągów ISO 20022 w przyszłych wersjach. |
 | Moduły, których dotyczą zmiany             | Rozrachunki z odbiorcami                                                                       |
 
 ### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a>Integracja z systemem Isabel zsynchronizowana (CIS) dla Belgii
@@ -168,7 +168,7 @@ Isabel jest systemem szkieletowym bankowości elektronicznej w Europie i de fact
 |                              |                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | Integracja z klientami systemu Isabel została wycofana.                                                                |
-| Zamieniona przez inną funkcję? | Nr Format płatności transferu ISO20022 kredytu dla Belgii zastępuje się formatów płatności, które nie są już używane. |
+| Zamieniona przez inną funkcję? | Nr Nieużywane formaty płatności zostały zastąpione formatem płatności poleceniem przelewu ISO20022 dla Belgii. |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami                                                                                                     |
 
 ### <a name="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain"></a>Zmiany w planie kont i regułach księgowania dla Hiszpanii
@@ -218,7 +218,7 @@ Formaty Telehansa i TeleTeenus są używane do importu płatności bankowych.
 |                              |                                                                                            |
 |------------------------------|--------------------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | Te formaty płatności nie są już używane.                                                    |
-| Zamieniona przez inną funkcję? | Nr Formaty zostaną zastąpione przez ISO 20022 instrukcji import formaty w przyszłych wydaniach. |
+| Zamieniona przez inną funkcję? | Nr Te formaty zostaną zastąpione formatami importu wyciągów ISO 20022 w przyszłych wersjach. |
 | Moduły, których dotyczą zmiany             | Rozrachunki z odbiorcami                                                                        |
 
 ### <a name="performance-management-goal-workflow"></a>Przepływ pracy celu zarządzania wydajnością
@@ -228,7 +228,7 @@ Zarządzanie wydajnością obejmuje zarządzanie celami oraz integrację z przeg
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | Moduł zarządzania wydajnością został przeprojektowany. Zmniejszono liczbę stron dotyczących celów, aby uprościć proces.                 |
-| Zamieniona przez inną funkcję? | Nr Cele są widoczne dla menedżerów za pośrednictwem portalu samoobsługi Manager i można zmieniać i przeglądać przez menedżera. |
+| Zamieniona przez inną funkcję? | Nr Cele są wyświetlane menedżerom w samoobsługowym portalu dla menedżerów i mogą być zmieniane oraz wyświetlane przez menedżerów. |
 | Moduły, których dotyczą zmiany             | Zarządzanie kapitałem ludzkim                                                                                                 |
 
 ### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a>Formaty płatności Postgirot i Postgirot Utland dla Szwecji
@@ -241,19 +241,19 @@ Formaty płatności Postgirot i Postgirot Utland dla Szwecji.
 | Zamieniona przez inną funkcję? | Tak, przez format płatności poleceniem przelewu ISO20022 dla Szwecji |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami                                        |
 
-### <a name="radio-frequency-identifier"></a>Identyfikator częstotliwości radiowej
+### <a name="radio-frequency-identifier"></a>Identyfikacja radiowa (RFID)
 
-Identyfikacji radiowej (RFID) to technologia zbierania danych, która używa elektronicznych znaczników do przechowywania danych identyfikacyjnych Czytelnik nie wiersza z wzrok żądanie do przechwytywania danych identyfikujących.
+Identyfikacja radiowa (RFID) to technologia zbierania danych przy użyciu elektronicznych znaczników do przechowywania danych identyfikacyjnych bez konieczności bezpośredniego dostępu do czytnika w celu odczytania danych identyfikacyjnych.
 
 |                              |                                               |
 |------------------------------|-----------------------------------------------|
-| Przyczyna amortyzacji       | Użycie klienta niskie i ograniczona funkcja zestaw. |
+| Przyczyna amortyzacji       | Brak wykorzystywania przez odbiorców i ograniczony zestaw funkcji. |
 | Zamieniona przez inną funkcję? | Nr                                            |
 | Moduły, których dotyczą zmiany             | Zarządzanie zapasami                          |
 
 ### <a name="report-about-state-invoices-numbering-for-latvia"></a>Raport o urzędowej numeracji faktur dla Łotwy
 
-Łotewskie prawo zawiera określone reguły numerowania faktur sprzedaży. Funkcje można przypisać specjalne numery faktur sprzedaży, na podstawie użytkownika lub grupy użytkowników. Następnie można wygenerować raport lub plik XML. Można również wydrukować raport o użytych numerach faktur.
+Łotewskie prawo zawiera określone reguły numerowania faktur sprzedaży. Funkcja pozwala przypisywać konkretne numery do faktur sprzedaży na podstawie użytkownika lub grupy użytkowników. Następnie można wygenerować raport lub plik XML. Można również wydrukować raport o użytych numerach faktur.
 
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -312,7 +312,7 @@ Przepływ pracy zarządzania tworzeniem celów dla pracowników jest jednym z ki
 
 ### <a name="aif-axd-and-axbc-integrations"></a>Integracja z AIF, AxD i AxBC
 
-W narzędziach integracji aplikacji (AIF) może dochodzić do wymiany danych z zewnętrznymi systemami poprzez logikę biznesową powiązaną z usługami. System Dynamics AX zawiera usługi, które są oparte na dokumentach i programie .NET Business Connector (AxBC). Dokument jest tworzony przy użyciu języka XML. Kod XML zawiera informacje nagłówka dodawane w celu tworzenia *komunikatów*, które mogą być przesyłane do systemu Dynamics AX lub z niego wysyłane. Przykłady dokumentów obejmują zamówienia sprzedaży i zamówienia zakupu. Jednak niemal wszystkie podmioty, np. odbiorca, mogą być reprezentowane przez dokument. Usługi, które są oparte na dokumenty, użyj **Axd &lt;*dokument*&gt;** klas.
+W narzędziach integracji aplikacji (AIF) może dochodzić do wymiany danych z zewnętrznymi systemami poprzez logikę biznesową powiązaną z usługami. System Dynamics AX zawiera usługi, które są oparte na dokumentach i programie .NET Business Connector (AxBC). Dokument jest tworzony przy użyciu języka XML. Kod XML zawiera informacje nagłówka dodawane w celu tworzenia *komunikatów*, które mogą być przesyłane do systemu Dynamics AX lub z niego wysyłane. Przykłady dokumentów obejmują zamówienia sprzedaży i zamówienia zakupu. Jednak niemal wszystkie podmioty, np. odbiorca, mogą być reprezentowane przez dokument. Usługi oparte na dokumentach używają klas **Axd &lt;*dokument*&gt;**.
 
 |                              |                                                                                                                                                                                                          |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -347,7 +347,7 @@ Krajowa deklaracja podatku ICMS
 |                              |                                                                                                                       |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | Ta deklaracja nie ma już zastosowania w niektórych stanach Brazylii.                                                     |
-| Zamieniona przez inną funkcję? | Nr Użytkownicy mogą używać rodzajowy elektroniczne Raportowanie narzędzia do konfigurowania instrukcji, jeśli jest to wymagane w szczególnych sytuacjach. |
+| Zamieniona przez inną funkcję? | Nr Użytkownicy mogą użyć narzędzia Ogólne raportowanie elektroniczne do skonfigurowania deklaracji, jeśli jest to wymagane w określonych sytuacjach. |
 | Moduły, których dotyczą zmiany             | Księgi podatkowe                                                                                                          |
 
 ### <a name="brazilian-scan-contingency-mode-for-nf-e"></a>Brazylijski tryb sytuacji awaryjnych SCAN dla NF-e
@@ -631,7 +631,7 @@ Informacje listy płac w module Zasoby ludzkie
 |                              |                                                                                                                                                                                                                                                                                                                              |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | Ta funkcja została zastąpiona stronami podstawowych modułów Lista płac i Zasoby ludzkie.                                                                                                                                                                                                                                              |
-| Zamieniona przez inną funkcję? | **Świadczenia**, **Zarobki** i inne pokrewne strony, które były poprzednio używane w module US Payroll, otrzymały nową konfigurację i są teraz częścią konfiguracji podstawowych modułów Zasoby ludzkie, aby ułatwić zewnętrzne przetwarzanie listy płac. Ta funkcja jest dostępna za pomocą **1 zasoby ludzkie**&gt;**listy płac** klucz konfiguracji. |
+| Zamieniona przez inną funkcję? | **Świadczenia**, **Zarobki** i inne pokrewne strony, które były poprzednio używane w module US Payroll, otrzymały nową konfigurację i są teraz częścią konfiguracji podstawowych modułów Zasoby ludzkie, aby ułatwić zewnętrzne przetwarzanie listy płac. Ta funkcja jest dostępna za pomocą klucza konfiguracji **Zasoby ludzkie 1** &gt; **Lista płac**. |
 | Moduły, których dotyczą zmiany             | Zasoby ludzkie, Lista płac                                                                                                                                                                                                                                                                                                     |
 
 ### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Prywatne blokowanie arkuszy zarządzania zapasami i magazynem
@@ -698,12 +698,12 @@ Usługi Sites Services pozwalają tworzyć witryny internetowe, które poszerzaj
 | Zamieniona przez inną funkcję? | Nie                                                                                                                                       |
 | Moduły, których dotyczą zmiany             | Rekrutacja kadr, zarządzanie sprawami, zapytania ofertowe, rejestracji dostawców                                                                  |
 
-### <a name="ssas-demand-forecasting-strategy"></a>Żądanie SSAS strategii prognozowania
+### <a name="ssas-demand-forecasting-strategy"></a>Funkcjonalność strategii prognozowania popytu na platformie SSAS
 
 |                              |                                                                              |
 |------------------------------|------------------------------------------------------------------------------|
-| Przyczyna amortyzacji       | Projekt funkcji, nie jest obsługiwana w nowej architektury chmury. |
-| Zamieniona przez inną funkcję? | Prognozowania strategii popytu uczenie maszynowe Azure                           |
+| Przyczyna amortyzacji       | Konstrukcja funkcji nie jest obsługiwana w nowej architekturze chmury. |
+| Zamieniona przez inną funkcję? | Funkcja strategii prognozowania popytu wykorzystująca usługę Uczenie maszynowe Azure                           |
 | Moduły, których dotyczą zmiany             | Planowanie                                                                     |
 
 ### <a name="travel-requisitions"></a>Wnioski wyjazdowe

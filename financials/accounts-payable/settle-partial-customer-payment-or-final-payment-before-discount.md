@@ -1,5 +1,5 @@
 ---
-title: "Rozliczanie płatności klienta częściowe i końcowe płatności w całości przed datą rabatu"
+title: "Rozliczanie płatności częściowej i płatności ostatecznej odbiorcy w całości przed datą rabatu"
 description: "Ten artykuł zawiera scenariusze pokazujące metody rejestrowania częściowych płatności od odbiorcy oraz stosowania rabatów gotówkowych w trakcie okresu rabatu gotówkowego."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Rozliczanie płatności klienta częściowe i końcowe płatności w całości przed datą rabatu
+# <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Rozliczanie płatności częściowej i płatności ostatecznej odbiorcy w całości przed datą rabatu
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł zawiera scenariusze pokazujące metody rejestrowania częściowych płatności od odbiorcy oraz stosowania rabatów gotówkowych w trakcie okresu rabatu gotówkowego.
 
-Firma Fabrikam sprzedaje towary do klienta 4028. Firma Fabrikam oferuje rabat gotówkowy, % 1, jeśli faktura jest zapłacona w ciągu 14 dni. Faktury muszą zostać zapłacone w ciągu 30 dni. Fabrikam oferuje też rabaty gotówkowe za rozliczenia częściowe. Parametry rozliczenia znajdują się na **rozrachunków z odbiorcami Parametry** strony.
+Firma Fabrikam sprzedaje towary odbiorcy 4028. Fabrikam oferuje rabat gotówkowy w wysokości 1%, jeśli faktura jest zapłacona w ciągu 14 dni. Faktury muszą zostać zapłacone w ciągu 30 dni. Fabrikam oferuje też rabaty gotówkowe za rozliczenia częściowe. Parametry rozliczenia znajdują się na stronie **Parametry modułu rozrachunków z odbiorcami**.
 
 ## <a name="customer-invoice"></a>Faktura dla odbiorcy
-25 czerwca Arnie wchodzi i księguje fakturę za 1 000,00 dla odbiorcy 4028. Arnie może wyświetlić tę transakcję na stronie **Transakcje dostawcy**.
+25 czerwca Arnie wprowadza i księguje fakturę na kwotę 1000,00 dla odbiorcy 4028. Arnie może wyświetlić tę transakcję na stronie **Transakcje dostawcy**.
 
 | Załącznik   | Typ transakcji | Data      | Faktura | Kwota debetu w walucie transakcji | Kwota kredytu w walucie transakcji | Saldo  | Waluta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -63,14 +66,14 @@ Arnie klika kartę **Rabat gotówkowy**, aby wyświetlić kwotę rabatu.
 | 7/25/2015          | 0,00                 | 1000,00                       |
 
 ## <a name="partial-payment-by-using-the-enter-customer-payments-page"></a>Płatność częściowa przy użyciu strony Wprowadzanie płatności odbiorcy
-Klient 4028 wysyła płatność dla 500,00 1 lipca. Aby wprowadzić tej płatności, kliknij nie Arnie **linii**. Zamiast tego rejestruje płatność, tworząc nowy arkusz płatności, a następnie otwierając stronę **Wprowadzanie płatności odbiorcy**. Wprowadza informacje o płatności i oznacza wprowadzoną fakturę. Gdy Arnie wprowadza **500,00** jako kwotę, wprowadza także **500,00** w polu **Kwota do zapłaty** w siatce. Ponieważ Fabrikam zezwala na stosowanie rabatu gotówkowego do płatności częściowych, Arnie zauważa, że zostanie także uwzględniony częściowy rabat gotówkowy w wysokości 5,05. Wzór do obliczeń dla tego rabatu: 500,00 ÷ 0,99 x 0,01 = 5,05. (W tych obliczeniach kwota 500,00 jest dzielona przez 0,99, ponieważ rabat wynosi 1%. W związku z tym odbiorca płaci 99 procent faktury. Wynik jest następnie mnożony przez procent rabatu, który wynosi 1% lub 0,01. Jeśli klient ma pełny rabat w wysokości 10,00, kwota, która musi zostać rozliczona będą 990.00). Informacje o rabacie zostanie wyświetlone w siatce w dolnej części **wprowadzanie płatności odbiorcy** strony.
+Odbiorca 4028 wysyła płatność w kwocie 500,00 w dniu 1 lipca. Aby wprowadzić tę płatność, Arnie nie klika pozycji **Wiersze**. Zamiast tego rejestruje płatność, tworząc nowy arkusz płatności, a następnie otwierając stronę **Wprowadzanie płatności odbiorcy**. Wprowadza informacje o płatności i oznacza wprowadzoną fakturę. Gdy Arnie wprowadza **500,00** jako kwotę, wprowadza także **500,00** w polu **Kwota do zapłaty** w siatce. Ponieważ Fabrikam zezwala na stosowanie rabatu gotówkowego do płatności częściowych, Arnie zauważa, że zostanie także uwzględniony częściowy rabat gotówkowy w wysokości 5,05. Wzór do obliczeń dla tego rabatu: 500,00 ÷ 0,99 x 0,01 = 5,05. (W tych obliczeniach kwota 500,00 jest dzielona przez 0,99, ponieważ rabat wynosi 1%. W związku z tym odbiorca płaci 99 procent faktury. Wynik jest następnie mnożony przez procent rabatu, który wynosi 1% lub 0,01. Jeśli odbiorca skorzysta z rabatu w pełnej wysokości 10,00, kwotą, która musi zostać rozliczona, będzie 990,00). Informacja o rabacie zostanie wyświetlona w siatce w dolnej części strony **Wprowadzanie płatności odbiorcy**.
 
 | Kwota rabatu gotówkowego do pobrania | Pobrany rabat gotówkowy | Kwota do zapłaty |
 |------------------------------|---------------------|---------------|
 | 5,05                         | 0,00                | 500,00        |
 
 ## <a name="partial-payment-by-using-the-journal-lines"></a>Płatność częściowa za pomocą wierszy arkusza
-Zamiast otwierania strony **Wprowadzanie płatności odbiorcy** w arkuszu płatności Arnie może kliknąć **Wiersze** w celu wprowadzenia płatności. Arkusz płatności jest wyświetlany, gdzie Arnie można wprowadzić wiersz dla odbiorcy 4028. Arnie otwiera stronę **Rozliczenia transakcji**, aby oznaczyć fakturę do rozliczenia. Arnie oznacza fakturę i zmienia wartość w polu **Kwota do rozliczenia** na **500,00**. Stwierdza, że wartość w polu **Kwota rabatu gotówkowego** wynosi **-10,00** dla pełnej faktury, a wartość w polu **Kwota rabatu gotówkowego do pobrania** wynosi **5,05**. Arnie rozlicza więc dla tej faktury kwotę 505,05.
+Zamiast otwierania strony **Wprowadzanie płatności odbiorcy** w arkuszu płatności Arnie może kliknąć **Wiersze** w celu wprowadzenia płatności. Zostanie wyświetlony arkusz płatności, w którym Arnie może wprowadzić wiersz dla odbiorcy 4028. Arnie otwiera stronę **Rozliczenia transakcji**, aby oznaczyć fakturę do rozliczenia. Arnie oznacza fakturę i zmienia wartość w polu **Kwota do rozliczenia** na **500,00**. Stwierdza, że wartość w polu **Kwota rabatu gotówkowego** wynosi **-10,00** dla pełnej faktury, a wartość w polu **Kwota rabatu gotówkowego do pobrania** wynosi **5,05**. Arnie rozlicza więc dla tej faktury kwotę 505,05.
 
 | Zaznacz     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -143,6 +146,8 @@ Arnie księguje arkusz i sprawdza transakcję odbiorcy na stronie **Transakcje o
 | DISC-10010 | Rabat gotówkowy    | 7/1/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
 | ARP-10011  | Płatność          | 7/8/2015  |         |                                      | 495,00                                | 0,00    | USD      |
 | DISC-10011 | Rabat gotówkowy    | 7/8/2015  |         |                                      | 5,00                                  | 0,00    | USD      |
+
+
 
 
 

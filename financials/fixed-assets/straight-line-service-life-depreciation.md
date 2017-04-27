@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="straight-line-service-life-depreciation"></a>Amortyzację za liniowy okres użytkowania
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie metody amortyzacji Liniowy okres użytkowania.
 
 Po skonfigurowaniu profilu amortyzacji środków trwałych i wybraniu opcji Liniowy okres użytkowania w polu Metoda na stronie Profile amortyzacji amortyzacja środków trwałych z przypisanym profilem amortyzacji są amortyzowane będzie obliczana na podstawie całkowitego okresu użytkowania środków. Jest to zwykle taka sama kwota w każdym okresie amortyzacji. 
@@ -57,7 +60,7 @@ Na przykład jeśli wybierzesz opcję Roczne, roczna amortyzacja jest księgowan
 
 Jeśli zostanie wybrana opcja Obrachunkowy w polu Rok amortyzacji, będzie używana amortyzację za liniowy okres użytkowania. Jest ona obliczana na podstawie roku obrachunkowego zdefiniowanego przez kalendarz obrachunkowy określony dla księgi lub wybrany na stronie Księga. Kalendarze obrachunkowe konfiguruje się ustawia się na stronie Kalendarze obrachunkowe.
 
-Na przykład dla roku obrachunkowego 1 lipca do 30 czerwca, obliczanie amortyzacji rozpoczyna się 1 lipca. Rok obrachunkowy może być dłuższy lub krótszy niż 12 miesięcy. Amortyzacja jest korygowana automatycznie dla każdego okresu obrachunkowego. Długość następnego roku obrachunkowego opiera się na okresach obrachunkowych, które konfiguruje się podczas tworzenia nowego roku obrachunkowego w formularzu Kalendarze obrachunkowe. 
+Na przykład dla roku obrachunkowego od 1 lipca do 30 czerwca włącznie obliczanie amortyzacji rozpocznie się 1 lipca. Rok obrachunkowy może być dłuższy lub krótszy niż 12 miesięcy. Amortyzacja jest korygowana automatycznie dla każdego okresu obrachunkowego. Długość następnego roku obrachunkowego opiera się na okresach obrachunkowych, które konfiguruje się podczas tworzenia nowego roku obrachunkowego w formularzu Kalendarze obrachunkowe. 
 
 W przypadku wybrania opcji Fiskalny w polu Częstotliwość okresu dostępne są następujące opcje:
 -   Roczne — służy do księgowania sumy amortyzacji obliczonej dla roku obrachunkowego jako jednej kwoty ostatniego dnia roku obrachunkowego.
@@ -98,9 +101,11 @@ Okres użytkowania korekty wartości początkowej jest taki sam jak środków tr
 | Rok 3 | 14 000 / 5 = 2800                        | 10 200 - 2800 = 7400                |
 | Rok 4 | 14 000 / 5 = 2800                        | 7400 - 2800 = 4600                 |
 | Rok 5 | 14 000 / 5 = 2800                        | 4600 - 2800 = 1800                 |
-| Rok 6 | Pozostałe 800\*                           | 1800 – 800 = 1000                   |
+| Rok 6 | Pozostało 800*\*                           | 1800 – 800 = 1000                   |
 
-\*Ponieważ pozostała kwota jest niższa niż kwota amortyzacji, pobiera się tylko kwota pozostała pomniejszona o wartość odzyskaną.
+\*Ponieważ pozostała kwota jest niższa niż kwota amortyzacji, uwzględniana jest tylko kwota pozostała pomniejszona o wartość odzyskaną.
+
+
 
 
 

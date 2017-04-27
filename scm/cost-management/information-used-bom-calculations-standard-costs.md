@@ -1,5 +1,5 @@
 ---
-title: "Obliczenia BOM z kosztów standardowych"
+title: "Obliczenia BOM przy użyciu kosztów standardowych"
 description: 
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bom-calculations-with-standard-costs"></a>Obliczenia BOM z kosztów standardowych
+# <a name="bom-calculations-with-standard-costs"></a>Obliczenia BOM przy użyciu kosztów standardowych
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -78,6 +81,8 @@ Informacje o wersji ceny używane w przypadku obliczeń kosztu standardowego na 
 -   Wersja wyceny musi uwzględniać koszty. Opcjonalnie może też zawierać cen sprzedaży w celu obliczania sugerowanych cen sprzedaży produkowanych towarów.
 
 Przy inicjowaniu obliczania BOM można określić kilka źródeł informacji. Mogą to być m.in. oddział, data obliczenia i wersja wyceny.
+
+
 
 
 

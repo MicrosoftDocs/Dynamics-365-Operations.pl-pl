@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="benefit-eligibility-policies"></a>Zasady uprawnienia do świadczenia
 
-Ten temat zawiera informacje o świadczenie zasady uprawnienia, które pomagają można zdefiniować, kto kwalifikuje się do szczególnych korzyści.
+[!include[banner](includes/banner.md)]
+
+
+Ten temat zawiera informacje o zasadach uprawnień do świadczeń, które pomagają określić, kto może otrzymywać określone świadczenia.
 
 Podczas tworzenia świadczeń określa się, które świadczenia będą dostępne dla których pracowników. W poniższej tabeli przedstawiono przykłady świadczeń, które można udostępnić określonym pracownikom.
 
@@ -38,7 +41,7 @@ Podczas tworzenia świadczeń określa się, które świadczenia będą dostępn
 | Telefon komórkowy     | Pracownicy działu sprzedaży, kadra zarządzająca         |
 | Przepustki parkingowe   | Kierownicy                      |
 
-Poniższe składniki w są używane do tworzenia zasady uprawnienia:
+Następujące składniki są używane do tworzenia zasad uprawnień:
 
 -   Typy reguł
 -   Zasady uprawnienia do świadczenia
@@ -51,5 +54,7 @@ Użytkownik określa zakres reguły w obrębie zasady. Jeśli na przykład użyt
 --------
 
 [Definiowanie programu świadczeń i zarządzanie nim](manage-benefit-program.md)
+
+
 
 

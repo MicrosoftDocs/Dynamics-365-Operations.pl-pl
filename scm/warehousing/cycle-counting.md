@@ -102,7 +102,7 @@ Istnieją dwa sposoby planowania cyklicznego tworzenia pracy inwentaryzacji cią
 
 ### <a name="create-cycle-counting-work-based-on-threshold-parameters-for-items"></a>Tworzenie pracy inwentaryzacji ciągłej na podstawie parametrów progu dla towarów
 
-Pracę inwentaryzacji ciągłej można utworzyć, gdy ilość towaru w lokalizacji spadnie poniżej określonej wartości progowej. Na przykład istnieją 60 elementów w lokalizacji, która ma progu 40 inwentaryzacji. Podczas transakcji zamówienia sprzedaży 25 elementów są pobierane z lokalizacji i umieścić w tymczasowej lokalizacji. Ponieważ nowa liczba sztuk (35) jest mniejsza niż ilość w progu, inwentaryzacja ciągła jest tworzona automatycznie dla lokalizacji.
+Pracę inwentaryzacji ciągłej można utworzyć, gdy ilość towaru w lokalizacji spadnie poniżej określonej wartości progowej. Na przykład w lokalizacji istnieje 60 sztuk towaru, dla którego próg inwentaryzacji ciągłej wynosi 40. Podczas transakcji zamówienia sprzedaży 25 sztuk jest pobieranych z lokalizacji i umieszczanych w lokalizacji pośredniej. Ponieważ nowa liczba sztuk (35) jest mniejsza niż ilość w progu, inwentaryzacja ciągła jest tworzona automatycznie dla lokalizacji.
 
 ### <a name="schedule-cycle-counting-work"></a>Tworzenie planu inwentaryzacji ciągłej
 
@@ -129,7 +129,7 @@ Poniższy przykład pokazuje sposób wykonania inwentaryzacji ciągłej punktowe
 ## <a name="resolve-cycle-counting-differences"></a>Postępowanie z różnicami w inwentaryzacji ciągłej
 Różnice w inwentaryzacji ciągłej występują w następujących scenariuszach, jeśli dla identyfikatora użytkownika pracy w opcji **Jest kierownikiem ds. inwentaryzacji ciągłej** ustawiono wartość **Nie**:
 
--   Zliczona wartość nie mieści się w granicach odchylenia określonych w polu **Maksymalny limit procentu** lub **Maksymalny limit ilości** na stronie **Użytkownicy pracy**. Na przykład ilość dostępnych zapasów w lokalizacji jest 50, a dopuszczalne odchylenie pracy użytkownika wynosi 10. Wartość, która nie jest od 40 do 60 wprowadzenie przez użytkownika pracy, występuje różnica.
+-   Zliczona wartość nie mieści się w granicach odchylenia określonych w polu **Maksymalny limit procentu** lub **Maksymalny limit ilości** na stronie **Użytkownicy pracy**. Na przykład ilość dostępnych zapasów w lokalizacji wynosi 50, a limit odchylenia dla użytkownika pracy wynosi 10. Różnica pojawi się, gdy użytkownik wprowadzi wartość, która nie mieści się w przedziale od 40 do 60.
 -   Wartość zliczona różni się od ilości dostępnych zapasów, a nie ustawiono żadnych limitów odchyleń.
 
 Na stronie **Inwentaryzacja cykliczna oczekuje na przegląd** można uzgodnić różnice zliczonej wartości, a następnie zaakceptować zliczoną wartość. Na stronie **Dostępne zapasy według lokalizacji** można zweryfikować zmodyfikowane obliczenie ilości towaru. Zliczona wartość jest odrzucana, jeśli różnicy nie można zatwierdzić.

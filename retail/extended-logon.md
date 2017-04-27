@@ -1,5 +1,5 @@
 ---
-title: Ustawianie funkcji Logowanie rozszerzone POS chmury i MPOS
+title: "Konfigurowanie funkcjonalności logowania rozszerzonego w programach Cloud POS i MPOS"
 description: Ta strona wiki omawia opcje konfigurowania rozszerzonego logowania do aplikacji Cloud POS i Retail Modern POS (MPOS).
 author: josaw1
 manager: AnnBe
@@ -25,14 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Ustawianie funkcji Logowanie rozszerzone POS chmury i MPOS
+# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Konfigurowanie funkcjonalności logowania rozszerzonego w programach Cloud POS i MPOS
 
 Ta strona wiki omawia opcje konfigurowania rozszerzonego logowania do aplikacji Cloud POS i Retail Modern POS (MPOS).
 
 <a name="setting-up-extended-logon"></a>Konfigurowanie logowania rozszerzonego
 =========================
 
-Można znaleźć ustawienia maski kodów kreskowych o **sieci sprzedaży i handlu**&gt;**konfigurację kanału**&gt;**konfiguracji punktu sprzedaży**&gt;**profile POS**&gt;**profile funkcji**. Na skróconej karcie **Funkcje** znajdują się następujące opcje, które są związane z logowaniem rozszerzonym.
+Konfiguracje masek kodów kreskowych można znaleźć w oknie **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktu sprzedaży** &gt; **Profile funkcji**. Na skróconej karcie **Funkcje** znajdują się następujące opcje, które są związane z logowaniem rozszerzonym.
 
 ### <a name="staff-bar-code-logon"></a>Logowanie się pracowników za pomocą kodu kreskowego
 
@@ -53,7 +53,7 @@ Jeśli włączona jest opcja **Logowanie się pracowników za pomocą karty wyma
 <a name="assigning-an-extended-logon"></a>Przypisywanie logowania rozszerzonego
 ===========================
 
-Domyślnie tylko menedżerowie mogą przypisywać pracownikom logowanie rozszerzone. Aby przypisać Logowanie rozszerzone, przejdź do **dziennika rozszerzonego na** w punkcie sprzedaży. Następnie wyszukaj pracownika po wprowadzeniu Identyfikatora operatora lub jej w polu wyszukiwania. Wybierz pracownika, a następnie kliknij przycisk **Przypisz**. Na następnej stronie przeciągnij lub zeskanuj kartę lub kod kreskowy do logowania rozszerzonego, aby przypisać pracownika. Jeśli odczyt danych się powiedzie, przycisk **OK **stanie się aktywny. Kliknij **OK**, aby zapisać logowanie rozszerzone dla tego pracownika.
+Domyślnie tylko menedżerowie mogą przypisywać pracownikom logowanie rozszerzone. Aby przypisać logowanie rozszerzone, przejdź do opcji **Logowanie rozszerzone** w aplikacji punktu sprzedaży. Następnie wyszukaj pracownika, wpisując w polu wyszukiwania jego identyfikator operatora. Wybierz pracownika, a następnie kliknij przycisk **Przypisz**. Na następnej stronie przeciągnij lub zeskanuj kartę lub kod kreskowy do logowania rozszerzonego, aby przypisać pracownika. Jeśli odczyt danych się powiedzie, przycisk **OK **stanie się aktywny. Kliknij **OK**, aby zapisać logowanie rozszerzone dla tego pracownika.
 
 <a name="deleting-an-extended-logon"></a>Anulowanie przypisania logowania rozszerzonego
 ==========================

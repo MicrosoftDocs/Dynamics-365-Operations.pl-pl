@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-invoicing"></a>Fakturowanie projektu
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie zasad fakturowania projektów rozliczanych według czasu i materiałów oraz projektów o stałej cenie. Znajdują się tu informacje dotyczące propozycji faktur (faktur wstępnych), kontroli faktur, fakturowania akonto, wystawiania faktur przed dostawców i faktur korygujących.
 
 Typ projektu określa, która procedura fakturowania powinna zostać zastosowana. Tylko dwa typy projektów zewnętrznych, czas i materiały oraz o stałej cenie, mogą być fakturowane. Projekty typu czas i materiały oraz projekty o stałej cenie są zawsze dołączane do umowy dotyczącej projektu.
@@ -103,7 +106,7 @@ Na przykład można skonfigurować następujący harmonogram fakturowania:
 Gdy płatności kamieni milowych są gotowe do zafakturowania, można zastosować tę procedurę do fakturowania kwot akonto.
 
 ## <a name="vendor-invoicing"></a>Dostawca wystawiający fakturę
-Jeśli zamawiasz towar od dostawcy i przypisujesz ten towar do projektu, właściwość wiersza wybrana dla wiersza zamówienia zakupu dla tego towaru określa, czy za kupiony towar zostanie wystawiona faktura dla odbiorcy. Jeśli ustawione domyślnych właściwości wiersza, są one wyświetlane w wierszu zamówienia zakupu dla towaru (szczegóły wiersza &gt;projekt &gt;właściwość wiersza). Istnieją dwa sposoby modyfikowania właściwości wiersza:
+Jeśli zamawiasz towar od dostawcy i przypisujesz ten towar do projektu, właściwość wiersza wybrana dla wiersza zamówienia zakupu dla tego towaru określa, czy za kupiony towar zostanie wystawiona faktura dla odbiorcy. Jeśli ustawisz domyślne właściwości wiersza, będą one wyświetlane dla towaru w wierszu zamówienia zakupu (Szczegóły wiersza &gt; Projekt &gt; Właściwość wiersza). Istnieją dwa sposoby modyfikowania właściwości wiersza:
 
 -   Faktura dla odbiorcy projektu za towar: ustaw właściwość wiersza towaru jako wartość płatną w zamówieniu zakupu, a następnie wystaw fakturę dla odbiorcy używając odpowiedniej metody fakturowania.
 -   Nie wystawiaj odbiorcy projektu faktury za towar: nie zaznaczaj właściwości wiersza **płatne** w wierszu zamówienia zakupu dla towaru. Następnie możesz zafakturować zamówienie zakupu i nie są wymagane dalsze akcje.
@@ -118,5 +121,7 @@ W tym samym dokumencie mogą się znaleźć transakcje wybrane do księgowania p
 Tworząc fakturę korygującą w celu skorygowania wcześniej zafakturowanej kwoty, najpierw należy wybrać zafakturowaną kwotę, która zostanie zaksięgowana po stronie kredytowej. Należy utworzyć fakturę korygującą, postępując zgodnie z tą samą procedurą, która służy do utworzenia zwykłej faktury dla odbiorcy. 
 
 Można utworzyć fakturę z kwotą ujemną i taka faktura jest klasyfikowana jako faktura korygująca. Aby utworzyć i wydrukować fakturę korygującą, trzeba wybrać transakcje wcześniej księgowane na fakturze dla odbiorcy, a następnie edytować transakcje. Z wyjątkiem firm, których adres podstawowy znajduje się w Niemczech, tytuł takiej faktury brzmi Faktura korygująca.
+
+
 
 

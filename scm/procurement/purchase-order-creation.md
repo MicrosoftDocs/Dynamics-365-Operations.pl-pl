@@ -33,7 +33,7 @@ Podczas tworzenia zamówienia zakupu ogólne informacje dotyczące całego zamó
 
 Zamówienia zakupu można również tworzyć przez kopiowanie wierszy z innego dokumentu zamówienia zakupu lub z zamówienia sprzedaży. W takim przypadku można zmienić znak w zapasach, tak jak zmienia się znak na fakturze, aby wskazać uznanie.  
 
-Chociaż można ręcznie tworzyć zamówienia zakupu, zazwyczaj są one generowane z innych procesów. Zamówienia mogą być tworzone automatycznie na podstawie innych dokumentów, takich jak zapotrzebowania. Alternatywnie mogą być tworzone jako część planowania procesu za pośrednictwem punktu sprzedaży planowane głównego. Jeśli używasz umów zakupu POs mogą być tworzone przez **wydania rozkazu** akcji. Istnieją również bardziej zaawansowane metody automatycznego tworzenia zamówień zakupu. Na przykład można tworzyć zamówienia, gdy są używane dostawy bezpośrednie lub łańcuchy zamówień międzyfirmowych.
+Chociaż można ręcznie tworzyć zamówienia zakupu, zazwyczaj są one generowane z innych procesów. Zamówienia mogą być tworzone automatycznie na podstawie innych dokumentów, takich jak zapotrzebowania. Alternatywnie mogą być tworzone w ramach procesu planowania głównego przy użyciu mechanizmu zaplanowanych zamówień zakupu. Jeśli używasz umów zakupu, zamówienia zakupu mogą być tworzone przez operację **Zwolnij zamówienie**. Istnieją również bardziej zaawansowane metody automatycznego tworzenia zamówień zakupu. Na przykład można tworzyć zamówienia, gdy są używane dostawy bezpośrednie lub łańcuchy zamówień międzyfirmowych.
 
 ## <a name="creating-a-purchase-order-header"></a>Tworzenie nagłówka zamówienia zakupu
 Podczas tworzenia nowego zamówienia zakupu zostanie wyświetlone okno dialogowe, gdzie można wprowadzić najbardziej typowe informacje nagłówka zamówienia zakupu. Po kliknięciu przycisku **OK** w celu zamknięcia okna dialogowego zamówienie zostanie utworzone i można wtedy określić dodatkowe informacje w nagłówku.  
@@ -84,7 +84,7 @@ Może wystąpić konieczność opóźnienia finalizacji zamówienia zakupu. Na p
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Omówienie zamówień zakupu](purchase-order-overview.md)
 
 [Zatwierdzanie i potwierdzanie zamówienia zakupu](purchase-order-approval-confirmation.md)
 

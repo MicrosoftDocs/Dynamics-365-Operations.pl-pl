@@ -1,6 +1,6 @@
 ---
 title: "Ustawienia języka użytkownika i aplikacji w punkcie sprzedaży"
-description: "W tym temacie opisano jak zmienić ustawienia języka w Retail POS nowoczesnych (MPOS) i POS chmury."
+description: "W tym temacie opisano, jak zmienić ustawienia języka w programach Retail Modern POS (MPOS) i Cloud POS."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: HcmWorker, RetailStoreTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 78891
 ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad
 ms.search.region: global
@@ -28,15 +28,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="pos-application-and-user-language-settings"></a>Ustawienia języka użytkownika i aplikacji w punkcie sprzedaży
 
-W tym temacie opisano jak zmienić ustawienia języka w Retail POS nowoczesnych (MPOS) i POS chmury.
+[!include[banner](includes/banner.md)]
+
+
+W tym temacie opisano, jak zmienić ustawienia języka w programach Retail Modern POS (MPOS) i Cloud POS.
 
 <a name="overview"></a>Przegląd
 ========
 
-Retail POS nowoczesnych (MPOS) i Cloud POS obsługują środowiskach, gdzie ustawienia języka i tłumaczenia mogą się różnić między ustawienia magazynu i użytkownika. Na przykład sklep może się w regionie, gdzie język angielski jest najczęściej dla swoich klientów, ale niektórzy pracownicy wolą używać aplikacji z tłumaczenia.
+Programy Modern POS (MPOS) i Cloud POS obsługują środowiska, w których ustawienia językowe i tłumaczenia mogą się różnić w zależności od sklepu i ustawień użytkownika. Na przykład sklep może znajdować się regionie, w którym głównym językiem odbiorców jest angielski, ale niektórzy pracownicy wolą korzystać z aplikacji w języku francuskim.
 
 ## <a name="data-language"></a>Język danych
-Niezależnie od ustawień użytkownika, MPOS i chmury POS będzie zawsze sklepu języka ustawienia służą do określania tłumaczenia, stosowany do przetwarzania danych. Daje to pewność, że wszyscy użytkownicy i klienci mają spójny wygląd.  Przykłady takich danych to:
+Niezależnie od ustawień programy MPOS i Cloud POS zawsze używają ustawień języka sklepu do tłumaczenia danych. To zapewnia spójność środowiska dla wszystkich użytkowników i odbiorców.  Przykładowe dane:
 
 -   Produkty
 -   Atrybuty i wartości
@@ -45,25 +48,27 @@ Niezależnie od ustawień użytkownika, MPOS i chmury POS będzie zawsze sklepu 
 -   Nazwy metod płatności
 -   Komunikaty wyświetlacza wierszowego
 
-Języka w sklepie będzie również dla głównego ekranu logowania POS, ponieważ użytkownik nie jest znana przed zalogowaniem. Jeśli tłumaczenie nie jest dostępne dla języka tego sklepu, punktu sprzedaży powróci do języka firmy.
+Język sklepu będzie również używany na głównym ekranie logowania w punkcie sprzedaży, ponieważ przed zalogowaniem użytkownik nie jest znany. Jeśli tłumaczenie nie jest dostępne w języku sklepu, będzie używany język firmy.
 
 ### <a name="configuring-the-stores-language-setting"></a>Konfigurowanie ustawień języka dla sklepu
 
-Ustawienie języka dla sklepu jest ustawiona z **wszystkich sklepów detalicznych** na **Retail Store** strony w obszarze ** Ogólne &gt;ustawienia regionalne &gt;języka. ** Użyj spadek w dół, aby wybrać języka dla każdego sklepu.
+Język sklepu ustawia się w obszarze **Wszystkie sklepy sieci sprzedaży** na stronie **Sklep sieci sprzedaży”** w menu **Ogólne &gt; Ustawienia regionalne &gt; Język. **Wybierz język dla każdego sklepu z listy rozwijanej.
 
 ## <a name="user-interface-language"></a>Język interfejsu użytkownika
-Ustawienie języka użytkownika POS określa tłumaczenia używany w interfejsie użytkownika aplikacji. Obejmuje to wszystkie etykiety, menu i list, które nie są uważane za dane. Jedynym wyjątkiem jest tekst, który jest wyświetlany na siatki przycisków punktu sprzedaży. Siatki przycisków nie obsługują tłumaczenia, więc zawsze pokażą tekst zgodnie z definicją na przycisku. W celu wsparcia przetłumaczonych przyciski, będziesz musiał kopiować i Obsługa siatek oddzielnych przycisków i przypisywać je do użytkowników stosownie do przypadku.
+Ustawienie języka użytkownika punktu sprzedaży określa tłumaczenia używane w interfejsie użytkownika aplikacji. Obejmuje to wszystkie etykiety, menu i listy, które nie są danymi. Jedynym wyjątkiem jest tekst wyświetlany na siatce przycisków punktu sprzedaży. Dla siatek przycisków nie są dostępne tłumaczenia, więc będą one zawsze wyświetlane zgodnie z konfiguracją przycisku. Aby włączyć tłumaczenia przycisków, trzeba skopiować i zachować siatki przycisków i przypisać je do użytkowników według potrzeb.
 
 ### <a name="configuring-the-users-language-setting"></a>Konfigurowanie ustawień języka użytkownika
 
-Ustawienie języka użytkownika POS jest ustawiona z **wszystkich pracowników** na **pracownika** strony pod **Retail &gt;języka**.  Nie ustawiono na głównej karcie profilu.  To ustawienie nie jest używane przez organizacje producentów. Jeśli nie ustawiono języka użytkownika lub tłumaczenia w wybranym języku są niedostępne, ustawienia językowe w punkcie sprzedaży wrócą do języka sklepu.  
+Język użytkownika punktu sprzedaży ustawia się w obszarze **Wszyscy pracownicy** na stronie **Pracownik** w menu **Handel detaliczny &gt; Język**.  Nie da się go ustawić na głównej karcie Profil.  To ustawienie jest używane przez aplikację punktu sprzedaży. Jeśli nie ustawiono języka użytkownika lub tłumaczenia w wybranym języku są niedostępne, ustawienia językowe w punkcie sprzedaży wrócą do języka sklepu.  
 
 |             |                            |                                                                   |
 |-------------|----------------------------|-------------------------------------------------------------------|
 | ** **       | **Język interfejsu użytkownika** ** **      | **Język danych (produkty, formaty paragonów, wyświetlacz wierszowy itp.)** |
 | **Firma** | Domyślna                    | Domyślna                                                           |
 | **Sklep**   | Zastępuje ustawienie dla firmy          | Zastępuje ustawienie dla firmy                                                 |
-| **User**    | Zastępuje ustawienie dla sklepu lub firmy | Nigdy                                                             |
+| **Użytkownik**    | Zastępuje ustawienie dla sklepu lub firmy | Nigdy                                                             |
+
+
 
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-resources"></a>Zasoby rozwiązania Operations
 
+[!include[banner](../includes/banner.md)]
+
+
 Zasoby operacyjne wykonują działania projektu lub procesu produkcji. Zasoby mogą być różnego typu i mieć różne możliwości. 
 
 <a name="operations-resources"></a>Zasoby rozwiązania Operations
@@ -36,7 +39,7 @@ Zasoby operacyjne wykonują działania projektu lub procesu produkcji. Zasoby mo
 Zasobami operacyjnymi są maszyny, narzędzia, pracownicy, zakłady, obszary fizyczne lub dostawcy wykonujący działania w ramach projektu lub procesu produkcyjnego. Zasoby mogą być różnego typu i mieć różne zdolności produkcyjne.
 
 -   **Dostawca** — Zasób operacyjny, który wykonuje działania w ramach projektu lub procesu produkcji. Przykładem jest podwykonawca. Łącząc zasoby dostawcy z kontem dostawcy, można generować zakupy dla podwykonawców na podstawie wierszy listy składowej (BOM) lub wierszy produkcji.
--   **Zasoby ludzkie** — pracownik w projekcie lub produkcji, który wykonuje działania samodzielnie lub jako operator narzędzia lub maszyny. Jeśli używasz funkcji zasoby ludzkie, zasoby ludzkie można połączyć pracownika. Aparat planowania może następnie przydzielić zasoby na podstawie kompetencji określonych dla danego pracownika.
+-   **Zasoby ludzkie** — pracownik w projekcie lub produkcji, który wykonuje działania samodzielnie lub jako operator narzędzia lub maszyny. Jeśli używasz funkcji zasobów ludzkich, zasoby ludzkie można połączyć z pracownikiem. Aparat planowania może następnie przydzielić zasoby na podstawie kompetencji określonych dla danego pracownika.
 -   **Maszyna** — maszyny lub inne urządzenia produkcyjne, wymagane w procesie produkcji.
 -   **Narzędzie** — przyrząd lub urządzenie, które jest zwykle używane wraz z innym zasobem do wykonania działania w projekcie lub w produkcji.
 -   **Lokalizacja** — fizyczna lokalizacji o określonym rozmiarze, która jest wymagana do wykonania działania. Przykładem jest obszar montażowy.
@@ -80,5 +83,7 @@ Jeżeli grupa zasobów jest używana jako komórka robocza produkcji oszczędnej
 
 ## <a name="costing-resources"></a>Zasoby wyceny
 Podczas definiowania działania, takiego jak operacja marszruty lub prognoza godzin projektu, można określić wymagania dla określonych zasobów operacyjnych lub grup zasobów. Można jednak również określić zapotrzebowanie na zasób operacyjny określonego typu lub zasób operacyjny o określonej zdolności produkcyjnej lub żądanych kompetencjach. Z tego powodu rzeczywiste przypisanie zasobów nie zostanie ukończone zanim zakończy się planowanie działań i rezerwacja zdolności produkcyjnych. W związku z tym w przypadku operacji marszruty można określić, że szacowanie i obliczanie BOM muszą być oparte na określonych zasobach operacyjnych. Te zasoby operacyjne są nazywane zasobami wyceny. Można także przenosić kategorii kosztu i czasy operacji z zasobu wyceny do działania. Podczas planowania operacji, szacowania i kalkulacje BOM są wykonywane przy użyciu rzeczywiście zaplanowanego zasobu operacyjnego.
+
+
 
 

@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-production-orders"></a>Tworzenie zleceń produkcyjnych
 
+[!include[banner](../includes/banner.md)]
+
+
 Po utworzeniu zlecenia produkcyjnego jest inicjowane żądanie rozpoczęcia produkcji towaru. Zlecenie produkcyjne zawiera informacje o produkowanym towarze, ilości do wyprodukowania i planowanej dacie zakończenia. Znajdują się w nim również informacje o materiałach, które będą zużywane, i procesach, jakie należy stosować w produkcji.
 
 Zlecenie produkcyjne przechodzą przez kolejne etapy cyklu produkcyjnego. Po utworzeniu zlecenie otrzymuje stan **Utworzone**. Po zakończeniu zlecenie otrzymuje stan **Zakończone**. Ustawienia parametru na każdym etapie umożliwia użytkownikowi konfigurowanie każdego kroku. Ustawienie można skonfigurować dla pojedynczego użytkownika lub dla wszystkich użytkowników.
@@ -40,6 +43,8 @@ Zlecenie produkcyjne można tworzyć w następujących sytuacjach:
 -   Tworzenie przez wykonanie głównego planowania według zapotrzebowania materiałów.
 -   Tworzenie bezpośrednio z wiersza zamówienia sprzedaży lub gdy zlecenie produkcyjne wyższego poziomu zostanie utworzone i oszacowane (ustalona dostawa).
 -   Tworzenie ręczne.
+
+
 
 
 

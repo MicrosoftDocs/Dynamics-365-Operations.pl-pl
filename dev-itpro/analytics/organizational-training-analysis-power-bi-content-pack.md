@@ -1,6 +1,6 @@
 ---
-title: "Zawartość szkolenia Power BI organizacyjne"
-description: "W tym temacie opisano 365 Dynamics dla operacji - zawartość organizacyjnej szkolenia Power BI. Wyjaśniono, jak dostęp do zawartości pack i opisuje model danych i podmiotów, które były użyte do utworzenia pakietu zawartości."
+title: "Pakiet zawartości usługi Power BI Szkolenie organizacyjne"
+description: "W tym temacie opisano pakiet zawartości Dynamics 365 for Operations — Szkolenie organizacyjne dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do pakietu zawartości, oraz opisano model danych i jednostki użyte do zbudowania pakietu."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,45 +24,48 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organizational-training-power-bi-content"></a>Zawartość szkolenia Power BI organizacyjne
+# <a name="organizational-training-power-bi-content"></a>Pakiet zawartości usługi Power BI Szkolenie organizacyjne
 
-W tym temacie opisano 365 Dynamics dla operacji - zawartość organizacyjnej szkolenia Power BI. Wyjaśniono, jak dostęp do zawartości pack i opisuje model danych i podmiotów, które były użyte do utworzenia pakietu zawartości.
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>Uzyskiwanie dostępu do zawartości pack
+
+W tym temacie opisano pakiet zawartości Dynamics 365 for Operations — Szkolenie organizacyjne dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do pakietu zawartości, oraz opisano model danych i jednostki użyte do zbudowania pakietu.
+
+<a name="accessing-the-content-pack"></a>Przechodzenie do pakietu zawartości
 --------------------------
 
-Szkolenie organizacyjne pack zawartości można znaleźć w bibliotece zasobów współużytkowanych w Microsoft Dynamics cyklu życia usługi (LCS). Aby uzyskać więcej informacji o tym, jak pobrać pakiet zawartości i podłącz go do sieci Microsoft Dynamics 365 dla danych operacji, zobacz [Power BI zawartości w LCS firmy Microsoft i jej partnerzy](power-bi-content-microsoft-partners.md).
+Pakiet zawartości Szkolenie organizacyjne znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i łączeniu go z danymi usługi Microsoft Dynamics 365 for Operations, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Raporty, które są zawarte w pakiecie zawartości
-Po połączeniu content pack na swoim 365 Dynamics dla operacji danych, raporty wyświetlanie danych organizacji. Jeśli nigdy nie używane Microsoft Power BI przed, można znaleźć informacje na jego temat na [stronę z przewodnikiem nauki BI zasilania](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporty, które są zawarte w pakiecie zawartości mają zarówno wykresów i tabel, które zawierają dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
+## <a name="reports-that-are-included-in-the-content-pack"></a>Raporty dostępne w pakiecie zawartości
+Gdy utworzysz połączenie między pakietem zawartości a danymi programu Dynamics 365 for Operations, w raportach są wyświetlone dane organizacji. Jeśli to Twoja pierwsza styczność z narzędziem Microsoft Power BI, możesz się o nim dowiedzieć więcej na [stronie Przewodnika z instruktażem po narzędziu Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporty dostępne w pakiecie zawartości mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
 
 | Raport          | Zawartość                                                                    |
 |-----------------|-----------------------------------------------------------------------------|
-| Analiza przebiegu | Rejestracja według lokalizacji, Uczestnicy kursu przez stan i Lista rejestracyjna |
+| Analiza kursu | Rejestracja według lokalizacji, uczestnicy kursu według stanu oraz lista rejestracyjna |
 | Typy kursów    | Typy kursów wg kwalifikacji                                                       |
 
-Można filtrować wykresy i płytki na te raporty i przypiąć wykresy i płytki do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtru i numer pin w BI zasilania, zobacz [tworzenie i konfigurowanie pulpitu nawigacyjnego A](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
-Dynamics 365 dla danych operacji jest używany do wypełniania raportów w pakiecie zawartości szkolenie organizacyjne. W poniższej tabeli przedstawiono podmiotów, że dodatek został oparty na.
+Dane programu Dynamics 365 for Operations są używane do wypełniania raportów w pakiecie zawartości Szkolenie organizacyjne. W poniższej tabeli przedstawiono jednostki, na których bazuje pakiet.
 
-| Jednostka                    | Zawartość                                                         | Relacje z innymi encjami                                                                                                                                                                  |
+| Jednostka                    | Zawartość                                                         | Powiązania z innymi jednostkami                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Szkolenia\_CalendarOffset  | Kalendarz jest przeciwstawna do plasterka raportów                                | Szkolenia\_szkolenia CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Szkolenia\_firmy         | Firm do filtrowania raportów przez                                   | Szkolenia\_szkolenia CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Szkolenia\_kursu          | Kurs, opis, imię i nazwisko instruktora, lokalizacji, miejsca i stanu | Szkolenia\_szkolenia CourseAgenda\_szkolenia CourseAttendees\_CourseSkill                                                                                                                             |
-| Szkolenia\_CourseAgenda    | Plan spotkania, kurs i czas rozpoczęcia i zakończenia                          | Szkolenia\_szkolenie firmowe\_szkolenia CalendarOffset\_Data szkolenia\_kursu                                                                                                                         |
-| Szkolenia\_CourseAttendees | Data nazwa, stan, zadanie i rejestracji                         | Szkolenia\_szkolenie firmowe\_szkolenia CalendarOffset\_Data szkolenia\_dane demograficzne szkolenia\_szkolenia zatrudnienia\_kurs kształcenia\_szkolenia WorkerName\_WorkerTitle szkolenia\_szkoleniem zawodowym\_pozycji |
-| Szkolenia\_CourseSkill     | Umiejętności, typ kwalifikacji i poziomu                                     | Szkolenia\_kursu                                                                                                                                                                                   |
-| Szkolenia\_Data            | Dni, tygodnie, miesiące i lata                                   | Szkolenia\_szkolenia CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Szkolenia\_dane demograficzne    | Data urodzenia, płeć, pochodzenie etniczne i stanu cywilnego         | Szkolenia\_szkolenia CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Szkolenia\_zatrudnienia      | Data rozpoczęcia, Data zakończenia i Data przejścia                        | Szkolenia\_szkolenia CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Szkolenia\_pracy             | Klawisze funkcyjne, typ i tytuł                                        | Szkolenia\_szkolenia CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Szkolenia\_pozycji        | Pozycja, tytuł i ekwiwalent pełnego wymiaru czasu (ekwiwalent pełnego wymiaru czasu)                  | Szkolenia\_szkolenia CourseAgenda\_CourseAttendees                                                                                                                                                   |
-| Szkolenia\_WorkerName      | Imię, nazwisko i imię i nazwisko                             | Szkolenia\_CourseAttendees                                                                                                                                                                          |
-| Szkolenia\_WorkerTitle     | Data tytuł i stażu pracy                                         | Szkolenia\_CourseAttendees                                                                                                                                                                          |
+| Training\_CalendarOffset  | Przesunięcia kalendarzy dla raportów wycinkowych                                | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Company         | Firmy, według których będą filtrowane raporty                                   | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Course          | Kurs, opis, imię i nazwisko instruktora, lokalizacja, pomieszczenie i stan | Training\_CourseAgenda Training\_CourseAttendees Training\_CourseSkill                                                                                                                             |
+| Training\_CourseAgenda    | Program kursu, kurs oraz godziny rozpoczęcia i zakończenia                          | Training\_Company Training\_CalendarOffset Training\_Date Training\_Course                                                                                                                         |
+| Training\_CourseAttendees | Imię i nazwisko, stan, zadanie i data rejestracji                         | Training\_Company Training\_CalendarOffset Training\_Date Training\_Demographics Training\_Employment Training\_Course Training\_WorkerName Training\_WorkerTitle Training\_Job Training\_Position |
+| Training\_CourseSkill     | Umiejętności, typ umiejętności i poziom                                     | Training\_Course                                                                                                                                                                                   |
+| Training\_Date            | Dni, tygodnie, miesiące i lata                                   | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Demographics    | Data urodzenia, płeć, pochodzenie etniczne i stan cywilny         | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Employment      | Data rozpoczęcia, data zakończenia i data przejścia                        | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Job             | Funkcja, typ i tytuł                                        | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_Position        | Stanowisko, tytuł i równoważnik pełnego etatu (FTE)                  | Training\_CourseAgenda Training\_CourseAttendees                                                                                                                                                   |
+| Training\_WorkerName      | Imię, drugie imię i nazwisko                             | Training\_CourseAttendees                                                                                                                                                                          |
+| Training\_WorkerTitle     | Tytuł i data ustalenia stażu pracy                                         | Training\_CourseAttendees                                                                                                                                                                          |
 
-Podmioty te były używane do tworzenia miar obliczeniowych w modelu danych. Obliczone te środki są następnie używane do obliczania kluczowych wskaźników wydajności (KPI) i raportów, które są używane w pakiecie zawartości. Jeśli chcesz dołączyć dodatkowe obliczenia w raportach i na pulpicie nawigacyjnym, można pobrać i zmodyfikować plik Training.pbix z LCS. Ten plik jest domyślny model danych, który został użyty do utworzenia pakietu zawartości. Po dokonaniu modyfikacji, można utworzyć organizacyjnej content pack oraz pulpitu nawigacyjnego, które zawierają informacje, które zostały dodane.
+Te jednostki zostały użyte do utworzenia obliczanych miar w modelu danych. Następnie obliczane miary są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości. Jeśli chcesz umieścić dodatkowe obliczenia w raportach i na pulpicie nawigacyjnym, możesz z usługi LCS pobrać plik Training.pbix i go zmodyfikować. Ten plik jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości. Po wprowadzeniu wszystkich modyfikacji można utworzyć organizacyjny pakiet zawartości i pulpit nawigacyjny, który zawiera dodane informacje.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworzenia zawartości w narzędziu Power BI:
@@ -71,6 +74,8 @@ Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworze
 -   [Tworzenie organizacyjnych pakietów zawartości](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Modelowanie danych przy użyciu narzędzia Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Dodawanie kafelków narzędzia Power BI do obszarów roboczych](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+
+
 
 
 

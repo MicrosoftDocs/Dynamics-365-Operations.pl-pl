@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="maintain-planned-orders"></a>Obsługa zamówień planowanych
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o metodach zarządzania zamówienia planowanymi. Opisano w nim sposób aktualizowania stanów zamówień planowanych i ich potwierdzania oraz odfiltrowywania zamówień planowanych, które mają taki sam stan jak wybrane zamówienie planowane.
 
 Można zarządzać planowanymi zamówieniami z obszaru roboczego **Planowanie główne**, listy **Zamówienie planowane** lub list **Planowane zamówienia zakupu**, **Planowane zlecenia produkcyjne** i **Planowane przeniesienie**. Pole **Stan** pomaga w śledzeniu postępu zamówień. Używane są następujące wartości:
@@ -48,6 +51,8 @@ Po ustaleniu zamówienie planowane zostanie przesunięte do sekcji zamówień w 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Master plans](master-plans.md)
+[Plany główne](master-plans.md)
+
+
 
 

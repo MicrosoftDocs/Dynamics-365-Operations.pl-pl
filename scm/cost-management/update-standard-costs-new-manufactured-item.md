@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Aktualizacja kosztów standardowych nowo produkowanego towaru
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera wskazówki dotyczące aktualizowania kosztów standardowych nowo produkowanego towaru. 
 
 W poniższych wytycznych założono, że aktualizowanie kosztów standardowych obejmuje tworzenie dwóch wersji. W tej metodzie jedna wersja wyceny zawiera koszty standardowe zdefiniowane pierwotnie dla okresu zamrożenia, a druga wersja wyceny zawiera przyrostowe aktualizacje dotyczące nowo produkowanych towarów. Aktualizacje przyrostowe wprowadza się jako rekordy kosztów w drugiej wersji wyceny i na końcu są one włączane. Podejście z dwoma wersjami wymagana zdefiniowania drugiej wersji wyceny. Poniżej przedstawiono wytyczne dotyczące definiowania tej wersji wyceny:
@@ -47,6 +50,8 @@ Aby dodawać nowe towary produkcyjne przez cały okres zamrożenia, wykonaj poni
 5.  Za pomocą strony **Konfiguracja wersji wyceny** zmień flagę blokowania, aby umożliwić aktywowanie rekordów kosztów oczekujących w drugiej wersji wyceny.
 6.  Na stronie **Aktywuj ceny** (którą można otworzyć ze strony **Obsługa wersji wyceny**) włącz wszystkie rekordy kosztów oczekujących w drugiej wersji wyceny. Można również włączyć rekordy kosztów oczekujących dla poszczególnych towarów, klikając przycisk **Aktywuj** umieszczony na stronie **Cena pozycji**.
 7.  Za pomocą strony **Konfiguracja wersji wyceny** zmień flagi blokowania w drugiej wersji wyceny, tak aby uniemożliwić dalsze modyfikowanie danych. Zasady blokowania zapobiegają wprowadzaniu nowych kosztów oczekujących i aktywowaniu kosztów oczekujących.
+
+
 
 
 

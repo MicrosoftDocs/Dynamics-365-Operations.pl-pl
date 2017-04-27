@@ -1,6 +1,6 @@
 ---
 title: "Dystrybucja i wypełnianie kwestionariusza"
-description: "W tym temacie wyjaśniono jak dystrybuować kwestionariusze, które zostaną zaprojektowane tak, aby były dostępne do osoby lub grupy osób, które będą je ukończyć."
+description: "W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="distribute-and-complete-a-questionnaire"></a>Dystrybucja i wypełnianie kwestionariusza
 
-W tym temacie wyjaśniono jak dystrybuować kwestionariusze, które zostaną zaprojektowane tak, aby były dostępne do osoby lub grupy osób, które będą je ukończyć. 
+W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać. 
 
 Istnieje wiele sposobów dystrybucji kwestionariusza:
 
@@ -38,7 +38,7 @@ Istnieje wiele sposobów dystrybucji kwestionariusza:
 -   Utwórz harmonogram. Kwestionariusz można być dostępny dla wielu osób.
 
 ## <a name="marking-a-questionnaire-as-active"></a>Oznaczanie kwestionariusza jako aktywnego
-Przez ustawienie **Active** na **tak** na **kwestionariusze** strony, możesz udostępnić kwestionariusza dla wszystkich pracowników zakończyć. Respondenci mogą wypełnić kwestionariusz wiele razy. Ta funkcja jest przydatna, jeśli chcesz zebrać opinie ciągły przez cały rok. Na przykład można przygotować kwestionariusz dla pracowników, aby wyrazili opinię na temat jakości posiłków w stołówce zakładowej.
+Ustawiając pole **Aktywne** jako **Tak** na stronie **Kwestionariusze**, można udostępnić kwestionariusz wszystkim pracownikom do wypełnienia. Respondenci mogą wypełnić kwestionariusz wiele razy. Ta funkcja jest przydatna do cyklicznego zbierania opinii przez cały rok. Na przykład można przygotować kwestionariusz dla pracowników, aby wyrazili opinię na temat jakości posiłków w stołówce zakładowej.
 
 ## <a name="questionnaire-groups"></a>Grupy kwestionariuszy
 Można ustawić grupy kwestionariusza i uwzględnić respondentów, do których należy przesłać kwestionariusz. 
@@ -48,7 +48,7 @@ Grupy kwestionariusza można utworzyć na następujących stronach:
 -   **Grupy kwestionariuszy **— tylko osoby w grupie kwestionariusza mogą wypełnić wybrany kwestionariusz. Na przykład grupą docelową są kontrahenci, więc możesz utworzyć grupę kwestionariusza dla tych respondentów.
 -   **Członkowie grupy kwestionariuszy** — do grup kwestionariuszy można dodawać osoby.
 
-Aby przypisać grupie kwestionariusza do kwestionariusza, na **kwestionariusze** kliknij przycisk **prawa użytkownika**. Po zapisaniu kwestionariusz jako aktywną członków grupy kwestionariusza można wypełnić kwestionariusz. Ta funkcja jest przydatne, jeśli chcesz przetestować kwestionariusza odnoszącego się do wybranej grupy osób, zanim gracz wyrzuci do większej grupy, czy chcesz przeanalizować kwestionariusza do bardzo określonej grupy odbiorców.
+Aby przypisać grupę kwestionariusza do kwestionariusza, na stronie **Kwestionariusze** kliknij opcję **Prawa użytkownika**. Po zapisaniu kwestionariusza jako aktywny członkowie grupy kwestionariusza mogą wypełnić kwestionariusz. Ta funkcja jest przydatna do testowania kwestionariusza na wybranej grupie osób przed udostępnieniem go szerszej grupie respondentów lub kiedy chcesz skierować kwestionariusz do bardzo określonej grupy odbiorców.
 
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planowane sesje odpowiedzi w kwestionariuszu
 Zaplanowane sesje odpowiedzi to kwestionariusze, które zostały opracowane i wybrane dla respondentów. 
@@ -82,24 +82,24 @@ Na stronie **harmonogramów kwestionariuszy** można określić typy planowania 
 
 Typy odwołań służą do wprowadzania kryteriów dla respondentów, które można wybrać podczas planowania kwestionariusza. 
 
-Użyj strony **typy odwołań** do skonfigurowania odwołań do kwestionariusza. Każdy typ odwołania odpowiada tabeli w programie Microsoft Dynamics 365 dla operacji. Podczas tworzenia harmonogramów kwestionariuszy można określić poszczególne rekordy w tabeli lub zakres rekordów, które będzie można skojarzyć z kwestionariuszem. 
+Użyj strony **typy odwołań** do skonfigurowania odwołań do kwestionariusza. Każdy typ odwołania odpowiada tabeli w programie Microsoft Dynamics 365 for Operations. Podczas tworzenia harmonogramów kwestionariuszy można określić poszczególne rekordy w tabeli lub zakres rekordów, które będzie można skojarzyć z kwestionariuszem. 
 
 Na przykład zaznaczenie w tabeli kursów pozwala określić, do których kursów będzie się odnosić kwestionariusz. Po skonfigurowaniu odwołanie do tabeli kursów, niektóre pola i przyciski na stronie **kursów** stają się dostępne.
 
 ### <a name="questionnaire-schedules"></a>Harmonogramy kwestionariuszy
 
-Harmonogramów kwestionariuszy służy do generowania wielu zaplanowanych sesji odpowiedzi dla grupy użytkowników, na podstawie typu odwołania. Tworzenie harmonogramu na **harmonogramów kwestionariuszy** strony. Umożliwia wybranie typu planowania do kategoryzowania harmonogramu, a także wybrać typ odwołania, które powinny być używane do kwerendy systemu dla określonych użytkowników. Na przykład jeśli ustawisz typu odwołania do tabeli kursów, możesz wybrać określonego kursu w **odwołania** pole. 
+Harmonogramy kwestionariuszy służą do generowania wielu planowanych sesji odpowiedzi dla grupy użytkowników, na podstawie typu odwołania. Utwórz harmonogram na stronie **Harmonogramy kwestionariuszy**. Wybierz typ planowania, aby skategoryzować harmonogram, a także wybierz typ odwołania, które powinno być używane do zapytań o konkretnych użytkowników systemu. Na przykład jeśli wybierzesz typ odwołania do tabeli kursów, możesz wybrać określony kurs w polu **Odwołanie**. 
 
-Kliknij **Szczegóły ustawień**, aby wybrać kwestionariusz i inne kryteria. Na przykład określ nazwę instruktora jako kryterium, jeśli kwestionariusz jest ocena instruktora. Po zakończeniu wprowadzania danych instalacji, system generuje zaplanowane sesje odpowiedzi dla użytkowników, które są uwzględnione w kwerendzie. 
+Kliknij **Szczegóły ustawień**, aby wybrać kwestionariusz i inne kryteria. Na przykład można określić imię i nazwisko instruktora jako kryterium, jeśli kwestionariusz służy do oceny instruktora. Po zakończeniu wprowadzania szczegółów konfiguracji system generuje zaplanowane sesje odpowiedzi dla użytkowników, którzy są uwzględnieni w zapytaniu. 
 
 Kliknij **Zaplanowane sesje odpowiedzi** w celu wyświetlania sesji odpowiedzi dla harmonogramu. Można ręcznie utworzyć dodatkowe planowane sesje odpowiedzi lub usunąć planowane sesje odpowiedzi, które nie otrzymały odpowiedzi. 
 
-Kliknij **funkcje**&gt;**Start** Aby udostępnić kwestionariusza użytkowników w powiązanych zaplanowanych sesji odpowiedzi. Kliknij **Odpowiedzi** w celu wyświetlania odpowiedzi z wypełnionych kwestionariuszy. Opcjonalnie można skopiować ustawienia harmonogramu kwestionariusza, zaplanowanych sesji odpowiedzi i odpowiedzi do nowego harmonogramu kwestionariusza.
+Kliknij kolejno opcje **Funkcje** &gt; **Start**, aby udostępnić kwestionariusz użytkownikom w powiązanych zaplanowanych sesjach odpowiedzi. Kliknij **Odpowiedzi** w celu wyświetlania odpowiedzi z wypełnionych kwestionariuszy. Opcjonalnie można skopiować ustawienia harmonogramu kwestionariusza, zaplanowanych sesji odpowiedzi i odpowiedzi do nowego harmonogramu kwestionariusza.
 
 ## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Powiadamianie respondentów o kwestionariuszach, które są dla nich dostępne
 Gdy rozprowadzasz kwestionariusz, musisz powiadomić respondentów, że kwestionariusze są dla nich dostępne. 
 
-**Uwaga:** respondenci muszą być użytkownikami w usłudze Microsoft Dynamics 365 dla operacji o wypełnienie kwestionariusza.
+**Uwaga:** Respondenci muszą być użytkownikami programu Microsoft Dynamics 365 for Operations, aby mogli wypełnić kwestionariusz.
 
 ### <a name="notifying-respondents-about-a-planned-answer-session"></a>Powiadamianie respondentów o planowanej sesji odpowiedzi
 
@@ -107,7 +107,7 @@ Jeśli używasz planowanej sesji odpowiedzi, należy powiadomić wybraną osobę
 
 ### <a name="notifying-respondents-about-a-scheduling"></a>Powiadamianie respondentów o planowaniu
 
-Na stronie **Harmonogramy kwestionariuszy** można przygotować i wysłać wiadomość e-mail do wszystkich respondentów przypisanych do danego kwestionariusza. Wpisz tekst e-maila na karcie **Wiadomość e-mail samoobsługi pracownika**. Po uruchomieniu harmonogram, kliknij przycisk **funkcje**&gt;**wysłać wiadomość e-mail** do generowania i wysyłania wiadomości e-mail do respondentów. Respondenci mogą, a następnie zaloguj się do witryny sieci Web i wypełnić kwestionariusz. 
+Na stronie **Harmonogramy kwestionariuszy** można przygotować i wysłać wiadomość e-mail do wszystkich respondentów przypisanych do danego kwestionariusza. Wpisz tekst e-maila na karcie **Wiadomość e-mail samoobsługi pracownika**. Po rozpoczęciu harmonogramu kliknij kolejno opcje **Funkcje** &gt; **Wyślij wiadomość e-mail**, aby wygenerować i wysłać wiadomość e-mail do respondentów. Respondenci mogą następnie zalogować się w witrynie i wypełnić kwestionariusz. 
 
 **Uwaga:** zanim będzie można skorzystać z funkcji poczty e-mail, administrator IT musi wprowadzić ustawienia poczty e-mail na stronie **Parametry poczty e-mail**.
 
@@ -119,7 +119,7 @@ Można zakończyć zaplanowany kwestionariusz po ukończeniu przez wszystkich re
 ## <a name="completing-questionnaires"></a>Wypełnianie kwestionariusza
 Po zaprojektowaniu i rozesłaniu kwestionariusza, kwestionariusz może zostać wypełniony przez wybranych respondentów. Kwestionariusze można wypełniać w dwóch lokalizacjach:
 
--   W okienku nawigacji kliknij **kwestionariusze**&gt;**Rozłóż**&gt;**o wypełnienie kwestionariusza**.
+-   W okienku nawigacji kliknij kolejno opcje **Kwestionariusze** &gt; **Dystrybuuj** &gt; **Wypełnianie kwestionariusza**.
 -   W obszarze Samoobsługa pracownika etatowego kliknij **Kwestionariusze do wypełnienia**.
 
 Kwestionariusze można udostępnić wszystkich osobom w sieci, określonym użytkownikom lub grupom użytkowników.
@@ -131,6 +131,6 @@ Kwestionariusze można udostępnić wszystkich osobom w sieci, określonym użyt
 
 [Używanie kwestionariuszy](questionnaires.md)
 
-[Przeglądanie i oceny wyników kwestionariuszy](evaluate-questionnaire-results.md)
+[Wyświetlanie i ocena wyników kwestionariuszy](evaluate-questionnaire-results.md)
 
 

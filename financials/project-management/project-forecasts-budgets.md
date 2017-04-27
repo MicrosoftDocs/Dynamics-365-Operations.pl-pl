@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-forecasts-and-budgets"></a>Prognozy i budżety projektów
 
+[!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 dla operacji oferuje dwa sposoby zarządzania i kontroli projekty: projekt prognoz oraz projektów budżetów. 
+
+
+Program Microsoft Dynamics 365 for Operations umożliwia obsługę i kontrolę projektów na dwa sposoby: za pomocą prognoz projektów i budżetów projektów. 
 
 Korzystaj z prognozowania projektu, jeśli Twoja organizacja ma perspektywę organizacyjną i koncentruje się przychodach i kosztach pochodzących z określonych transakcji. Korzystaj z budżetowania projektu, jeśli Twoja organizacja bardziej koncentruje się na kwotach finansowych. 
 
@@ -45,9 +48,9 @@ Każda metoda ma swoje zalety. Przed wybieraniem metody w danej organizacji, nal
 | **Zmienne transakcji ** | Po wprowadzeniu transakcji prognozowych można użyć każdego atrybutu, który istnieje dla rzeczywistych transakcji. Umożliwia to uzyskanie dokładniejszych informacji w prognozie. Na przykład można wprowadzić szczegółowe informacje dla pracowników, towarów, ilości lub właściwości wiersza.         | Po wprowadzeniu szczegółów budżetu można użyć kwot, kategorii i działań.                                                                                    |
 | **Zabezpieczenia **              | Prognozowanie jest oparte na transakcjach wprowadzonych w formularzach prognozy i wiąże się z mechanizm kontroli procesu. Każdy pracownik, który ma uprawnienia do formularza prognozy, możne wprowadzać zmiany informacji bez zatwierdzenia.                                        | Budżetowanie używa systemu przepływu pracy, który umożliwia zarządzanie zmianami i pozwala zachować historię zmian.                                                       |
 | **Typy wpisów **           | Zapisy transakcji prognozy są oparte na liczbie jednostek oraz na koszcie i cenach sprzedaży jednostki.                                                                                                                                                       | Szczegóły budżetu są oparte na kwotach, które są podzielone między koszty i przychody.                                                                                        |
-| **Forecast models**       | Ponieważ każda prognoza musi być skojarzona z modelem, można utworzyć kilka modeli prognozy oraz skonfigurować podmodele.                                                                                                                               | Budżetowanie projektów ogranicza modele prognozy, które są używane do budżetowania. Mniej modeli prognozy może pomóc zwiększyć spójność w prognozach.                           |
+| **Modele prognoz**       | Ponieważ każda prognoza musi być skojarzona z modelem, można utworzyć kilka modeli prognozy oraz skonfigurować podmodele.                                                                                                                               | Budżetowanie projektów ogranicza modele prognozy, które są używane do budżetowania. Mniej modeli prognozy może pomóc zwiększyć spójność w prognozach.                           |
 | **Przekroczenia kosztów **         | Można tylko zezwolić lub nie zezwolić na wprowadzanie transakcji powodujących przekroczenie kosztów.                                                                                                                                                                | Tworzenie budżetu projektu oferuje użytkownikom dodatkowe opcje kontroli. Można zezwolić na ostrzeżenia i przekroczenia.                                                                   |
-| **Control**               | Kontrola prognozy jest wykonywana przy użyciu redukcji prognozy. Wartości rzeczywiste są odejmowane od salda transakcji prognozy bez żadnych inspekcji. To może utrudniać śledzenie w miejscach, w których dochodzi do rzeczywistych transakcji.                   | W kontroli budżetu projektu rzeczywiste kwoty są odejmowane od kwot pozostałego budżetu. Umożliwia to uzyskanie dokładniejszych danych inspekcji.                                   |
+| **Kontrola**               | Kontrola prognozy jest wykonywana przy użyciu redukcji prognozy. Wartości rzeczywiste są odejmowane od salda transakcji prognozy bez żadnych inspekcji. To może utrudniać śledzenie w miejscach, w których dochodzi do rzeczywistych transakcji.                   | W kontroli budżetu projektu rzeczywiste kwoty są odejmowane od kwot pozostałego budżetu. Umożliwia to uzyskanie dokładniejszych danych inspekcji.                                   |
 
 ## <a name="project-forecasts"></a>Prognozy projektów
 Korzystając z prognozowania projektu, transakcje prognozy można wprowadzać w formularzach prognozy dla każdego typu transakcji. Każdy atrybut, który jest dostępny dla rzeczywistej transakcji, może być użyty dla transakcji prognozy; na przykład rentowność wiersza, atrybuty wiersza, pracownicy i opisy. Można także projektować, po jakim czasie ponosi się koszt zafakturowany na odbiorcę. 
@@ -62,7 +65,7 @@ Modele prognozy mogą używać redukcji prognozy jako mechanizmu kontroli dla pr
 
 Można poprawiać, kopiować, usuwać lub przenosić prognozy projektu do budżetu księgi głównej. Nie ma jednak kontroli procesu. Jakikolwiek pracownik z uprawnieniami do formularza prognozy może wprowadzać korekty bez oceny.
 
--   ** Popraw ** — można skorygować transakcji prognozy w tych samych formularzy, których oryginalne zapisy zostały wykonane.
+-   **Popraw** — W tych samych formularzach, gdzie wprowadzono oryginalne zapisy, można wykonać korekty transakcji prognozy.
 -   **Kopiuj lub usuń** — W przypadku kopiowania transakcji prognozy, wiersze transakcji jednego modelu prognozy są kopiowane do innego modelu prognozy. W przypadku usuwania prognozy, transakcje prognozy są usuwane z modelu prognozy. Aby ograniczyć transakcje prognozy, które są kopiowane lub usuwane, zaznacz określone typy transakcji i daty. Umożliwia to skopiowanie lub usunięcie tylko określonych części prognozy.
 -   **Przenieś** — W przypadku przenoszenia prognozy projektu do budżetu księgi głównej, przenosisz transakcje prognozy z modelu prognozy do budżetu księgi głównej. Możesz zastąpić wszelkie uprzednio przeniesione transakcje w budżecie księgi głównej, do którego jest przenoszona prognoza projektu.
 
@@ -78,6 +81,8 @@ Budżety projektów są automatycznie kojarzone z dwoma modelami prognozy, jedny
 ## <a name="forecast-models"></a>Modele prognoz
 Modele prognozy mają hierarchię jednowarstwową. To znaczy, że jedna prognoza projektu musi być skojarzona z jednym modelem prognozy.
 
-Jeśli używasz prognozowania projektu można zidentyfikować modeli podmodeli. Następnie można utworzyć prognozy według działów, okres czasu lub regionu. Na przykład można utworzyć model prognozy na rok, a następnie utworzyć podmodele prognoz regionalnych Północny Wschód, Południowy Wschód, Północny Zachód i Południowy Zachód dla, które przesyłają szefowie regionów. Suma prognozy lub podmodelu, wybierając różne opcje w dostępnych raportów, można wyświetlić informacje.
+Jeśli używasz prognozowania projektu, modele można określić jako podmodele Następnie można tworzyć prognozy według okresu, działu lub regionu. Na przykład można utworzyć model prognozy na rok, a następnie utworzyć podmodele prognoz regionalnych Północny Wschód, Południowy Wschód, Północny Zachód i Południowy Zachód dla, które przesyłają szefowie regionów. Wybierając różne opcje w dostępnych raportach, można wyświetlać informacje według całkowitej prognozy lub podmodelu.
+
+
 
 

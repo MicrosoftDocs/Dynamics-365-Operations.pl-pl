@@ -1,6 +1,6 @@
 ---
-title: "Widok i projektowania raportów finansowych"
-description: "Ten artykuł zawiera ćwiczenia, które wyjaśniają użytkownikowi przeglądanie i tworzenie raportów finansowych dla Microsoft Dynamics 365 dla operacji. Sprawozdawczości finansowej składa się z oglądania w ciągu Dynamics 365 dla operacji i kliknij-raz Projektant raportów umożliwia tworzenie i edytowanie raportów finansowych."
+title: "Wyświetlanie i projektowanie raportów finansowych"
+description: "Ten artykuł zawiera ćwiczenia, które prowadzą przez całą procedurę wyświetlania i tworzenia raportów finansowych w programie Microsoft Dynamics 365 for Operations. Funkcjonalność sprawozdawczości finansowej składa się z funkcji wyświetlania w programie Dynamics 365 for Operations oraz aplikacji ClickOnce projektanta raportów, który umożliwia tworzenie i edytowanie raportów finansowych."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,9 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="view-and-design-financial-reports"></a>Widok i projektowania raportów finansowych
+# <a name="view-and-design-financial-reports"></a>Wyświetlanie i projektowanie raportów finansowych
 
-Ten artykuł zawiera ćwiczenia, które wyjaśniają użytkownikowi przeglądanie i tworzenie raportów finansowych dla Microsoft Dynamics 365 dla operacji. Sprawozdawczości finansowej składa się z oglądania w ciągu Dynamics 365 dla operacji i kliknij-raz Projektant raportów umożliwia tworzenie i edytowanie raportów finansowych.  
+[!include[banner](../includes/banner.md)]
+
+
+Ten artykuł zawiera ćwiczenia, które prowadzą przez całą procedurę wyświetlania i tworzenia raportów finansowych w programie Microsoft Dynamics 365 for Operations. Funkcjonalność sprawozdawczości finansowej składa się z funkcji wyświetlania w programie Dynamics 365 for Operations oraz aplikacji ClickOnce projektanta raportów, który umożliwia tworzenie i edytowanie raportów finansowych.  
 
 <a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Ćwiczenie 1: Generowanie i przeglądanie domyślnego raportu finansowego
 -----------------------------------------------------------
@@ -45,7 +48,7 @@ W tym ćwiczeniu wygenerujemy i przejrzymy istniejący raport domyślny. Ten rap
 3.  Zapisz konfigurację wymiarów. Następnie wygenerujemy raport i przejrzymy dane w raporcie.
 4.  Przejdź do opcji **Raporty finansowe** w sekcji **Zapytania i raporty** w księdze głównej.
 5.  Wybierz wiersz dla raportu o nazwie **Szczegóły KG — domyślne.**
-6.  Wybierz opcję **Edycja.** Uwaga: Zostanie wyświetlony monit, Pobierz kliknij-raz Projektant raportów i zalogować się. Zaloguj się za pomocą poświadczeń.
+6.  Wybierz opcję **Edycja.** Uwaga: Pojawi się monit o pobranie i kliknięcie projektanta raportów w celu zalogowania się. Zaloguj się za pomocą swoich poświadczeń.
 7.  Zmień rok bazowy 2012 i wybierz **Generuj**. Wygenerowany raport otworzy się w nowej karcie przeglądarki. Raport można przeglądać w nowej karcie przeglądarki, albo przejść do wyjściowej karty przeglądarki i otworzyć go tam, wybierając z listy **Raporty finansowe**.
 8.  W otwartym raporcie wybierz jedną z kwot, aby wyświetlić szczegóły konta dla raportu.
 9.  Po wyświetleniu szczegółów konta wybierz konto z danymi i **przejdź niżej do poziomu transakcji raportu**. Na poziomie transakcji raportu widać właściwości (atrybuty), które zostały dołączone do projektu tego raportu. W zależności od transakcji i konta mogą być wyświetlane niektóre lub wszystkie atrybuty.
@@ -55,7 +58,7 @@ W tym ćwiczeniu wygenerujemy i przejrzymy istniejący raport domyślny. Ten rap
 13. Wybierz **Opcje raportowania**.
 14. Wybierz **Dodaj filtr wymiaru** i wybierz polecenie **Jednostka biznesowa**.
 15. Typ 001 w polu i wybierz **OK**. Teraz w raporcie widać tylko dane dla jednostki biznesowej 001. To jest spersonalizowany widok raportu, który jest niedostępny dla innych użytkowników.
-16. Zamknij filtrowany raport. Sprawozdania finansowe mogą być wyświetlane w dowolnej walucie, który został dodany do 365 Dynamics dla operacji.
+16. Zamknij filtrowany raport. Raporty finansowe mogą być wyświetlane w dowolnej walucie, która została dodana do programu Dynamics 365 for Operations.
 17. Wybierz opcję **Waluta**, a następnie wybierz **EUR.** Teraz raport jest wyświetlany w euro. Wszelkie kody i symbole waluty uwzględnione w projekcie raportu są teraz wyświetlane w zastosowanej walucie. Jeśli dla waluty nie zdefiniowano symbolu, symbol waluty nie jest wyświetlany.
 18. Zamknij raport **Szczegóły KG**.
 19. Zamknij **Projektanta raportów**.
@@ -66,7 +69,7 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Zaktualizujesz zar�
 1.  Przejdź do opcji **Raporty finansowe** w sekcji Zapytania i raporty w księdze głównej.
 2.  Wybierz wiersz dla raportu o nazwie **Sumaryczny bilans próbny — domyślny**
 3.  Wybierz opcję **Edycja**. **Sumaryczny bilans próbny — domyślny** zostanie otwarty w Projektancie raportów.
-4.  Wybierz **Plik**, a następnie **Zapisz jako** i nazwij raport „Szczegółowy bilans próbny z atrybutami”. Uwaga: Każdym razem, gdy nowy raport jest tworzony w programie report designer listy raportów finansowych jest aktualizowany w usłudze Dynamics 365 dla operacji.
+4.  Wybierz **Plik**, a następnie **Zapisz jako** i nazwij raport „Szczegółowy bilans próbny z atrybutami”. Uwaga: Za każdym razem, gdy tworzony jest nowy raport w projektancie raportów, lista raportów finansowych w programie Dynamics 365 for Operations jest aktualizowana.
 5.  Z poziomu definicji raportu wybierz ikonę definicji wiersza, aby otworzyć **Bilans próbny — domyślna definicja wiersza**.
 6.  Zapisz definicję wiersza jako **Szczegółowy bilans próbny z atrybutami**
 7.  Umieść kursor w wierszu 50, zaznacz opcję **Edycja**, a następnie **Wstaw wiersze z wymiarów**. Polecenie „Wstaw wiersze z wymiarów” pozwala wybrać wymiary dostępne w definicji wiersza. W tym ćwiczeniu zbudujemy definicję wiersza za pomocą Konta głównego.
@@ -96,7 +99,7 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Zaktualizujesz zar�
 25. Zamknij raport **Szczegółowy bilans próbny z atrybutami **.
 26. Zamknij **Projektanta raportów**.
 
-## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Ćwiczenie 3: Tworzenie raportu wielowymiarowych za pomocą drzewa raportowania
+## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Ćwiczenie 3: Tworzenie wielowymiarowego raportu za pomocą drzewa raportowania
 W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Będziemy tworzyli drzewo raportowania i dodawali do definicji raportu, aby wygenerować Rachunek wyników dla centrum kosztu/wymiaru. Po wprowadzeniu zmian wygenerujemy Rachunek wyników dla centrum kosztu/wymiaru i zapoznamy się z jego zawartością za pomocą drzewa raportowania. Zaczniemy od listy Raporty finansowe.
 
 1.  Przejdź do opcji **Raporty finansowe** w sekcji Zapytania i raporty w księdze głównej.
@@ -138,7 +141,7 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Dodasz hierarchię 
 1.  Przejdź do opcji **Raporty finansowe** w sekcji Zapytania i raporty w księdze głównej.
 2.  Wybierz wiersz raportu o nazwie **Bilans i rachunek wyników obok siebie — domyślny**
 3.  Wybierz opcję **Edycja**. Raport **Bilans i rachunek wyników obok siebie — domyślny** otworzy się w projektancie raportów.
-4.  Wybierz **pliku**&gt;**Zapisz jako** i nazwa raportu **skonsolidowanego bilansu oraz rachunku zysków i strat obok siebie**.
+4.  Wybierz kolejno opcje **Plik** &gt; **Zapisz jako** i nazwij raport **Skonsolidowany bilans i rachunek wyników obok siebie**.
 5.  Zmień rok podstawowy na 2012.
 6.  Kliknij strzałkę rozwijaną typu drzewa i wybierz **Hierarchie organizacyjne**.
 7.  Kliknij strzałkę rozwijaną typu drzewa i wybierz **Holdingi Contoso**.
@@ -151,7 +154,7 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Dodasz hierarchię 
 14. Zamknij raport **Skonsolidowany bilans i rachunek wyników obok siebie**.
 15. Zamknij **Projektanta raportów**.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Ćwiczenie 5: Tworzenie raportu wg działów sidebyside
+## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Ćwiczenie 5: Tworzenie raportu wg działów obok siebie
 W tym ćwiczeniu utworzymy nowy raport. Raport jest rachunkiem wyników działu wyświetlanym obok siebie. Użyjemy istniejącej definicji wiersza, ale utworzymy nową definicję raportu i nową definicję kolumny, które będą korzystały z filtrów wymiarów. Zaczniemy od listy Raporty finansowe.
 
 1.  Przejdź do opcji **Raporty finansowe** w sekcji Zapytania i raporty w księdze głównej.
@@ -179,8 +182,10 @@ W tym ćwiczeniu utworzymy nowy raport. Raport jest rachunkiem wyników działu 
 18. **Zapisz** zmiany i **wygeneruj**. Po otarciu wygenerowanego raportu możesz sprawdzić jego zawartość.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-[Sprawozdawczości finansowej](\financials\general-ledger\financial-reporting-getting-started.md)<ph id="t1">
-</ph>[wyświetlania raportów finansowych,](\financials\general-ledger\view-financial-reports.md)<ph id="t2">
-</ph>[Dynamics blogu raportowanie finansowe](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Raportowanie finansowe](\financials\general-ledger\financial-reporting-getting-started.md) 
+[Wyświetlanie raportów finansowych](\financials\general-ledger\view-financial-reports.md) 
+[Blog o sprawozdawczości finansowej w systemie Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

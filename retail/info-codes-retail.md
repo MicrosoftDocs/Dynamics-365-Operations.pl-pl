@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="info-codes"></a>Kody informacji
 
+[!include[banner](includes/banner.md)]
+
+
 Ten artykuł zawiera omówienie kodów informacji i grup kodów informacji oraz sposobów ich używania.
 
 Kody informacji umożliwiają przechwytywanie danych w kasie punktu sprzedaży (POS). Kodów informacji można użyć do ponaglenia kasjera, aby wprowadzał informacje podczas różnych działań w punkcie sprzedaży, takich jak sprzedaż towaru, zwrot towaru lub wybieranie odbiorców. Kasjerzy mogą wybrać dane z listy lub wprowadzić je jako kod, liczbę, datę lub tekst. Powiadomienia można przypisywać do wstępnie zdefiniowanych akcji wykonywanych w sklepie, towarów detalicznych, metod płatności, odbiorców lub określonych działań wykonywanych w punkcie sprzedaży. Kodów informacji można użyć do wykonania następujących czynności:
@@ -38,7 +41,7 @@ Kody informacji umożliwiają przechwytywanie danych w kasie punktu sprzedaży (
 -   Pozwala monitować kasjera, aby wprowadzał wartość lub wybierał pozycje z listy kodów podrzędnych przy otwieraniu szuflady kasy bez wykonywania operacji sprzedaży.
 
 ## <a name="info-codes-group-in-retail-and-commerce"></a>Grupa kodów informacji w module Handel detaliczny i inny
-Sprzedaż detaliczna, w usłudze Dynamics 365 dla operacji - można utworzyć grupy kodów informacji. Grupy kodów informacji zapewniają większą elastyczność, umożliwiając definiowanie mniejszej ilości kodów informacji i używanie ich w bardziej zróżnicowany sposób. Grup kodów informacji można użyć w następujący sposób:
+W programie Dynamics 365 for Operations — Handel detaliczny można utworzyć grupy kodów informacji. Grupy kodów informacji zapewniają większą elastyczność, umożliwiając definiowanie mniejszej ilości kodów informacji i używanie ich w bardziej zróżnicowany sposób. Grup kodów informacji można użyć w następujący sposób:
 -   Zdefiniuj mniejszą ilość kodów i ponowne je wykorzystuj w łatwy sposób. Kody informacji, które są uwzględnione w grupach kodów informacji nie mają wstępnie zdefiniowanych powiązań z innymi kodami informacji. Można dołączyć ten sam kod informacji do wielu grup kodów informacji, a następnie użyć priorytetów dotyczących kolejności wybierania w zależności od sytuacji.
 -   Połącz kody informacji z innymi kodami informacji lub grupami kodów informacji w celu zbierania informacji na temat produktu lub transakcji bez konieczności definiowania osobnego kodu informacji lub łączenia kodu informacji dla każdego scenariusza.
 
@@ -47,6 +50,8 @@ Sprzedaż detaliczna, w usłudze Dynamics 365 dla operacji - można utworzyć gr
 
  
 -
+
+
 
 
 

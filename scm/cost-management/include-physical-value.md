@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="include-physical-value"></a>Włącz wartość fizyczną
 
+[!include[banner](../includes/banner.md)]
+
+
 Pole wyboru Włącz wartość fizyczną na skróconej karcie Model magazynu na stronie Grupy modeli pozycji służy do określania, czy przy obliczaniu średniej kroczącej kosztu własnego towaru są uwzględniane fizycznie zaktualizowane transakcje.
 
 Pole wyboru **Włącz wartość fizyczną** ma następujące wartości.
@@ -49,5 +52,7 @@ To pole wyboru działa nieco inaczej zależnie od wybranego modelu zapasów.
 -   Zamówienie zakupu na ilość 3 z kosztem własnym 12,00 zł, które zostało zaktualizowane przez fakturę
 
 W tym przypadku średnia krocząca kosztu własnego wyniesie 11,20 zł, ponieważ do jego obliczenia są używane transakcje zaktualizowane fizycznie i finansowo. **Przykład 2** Nie zaznaczono pola wyboru **Włącz wartość fizyczną**, a koszt własny w konfiguracji towaru wynosi 10,00 zł. Przyjęto zamówienie zakupu na ilość 20 z kosztem własnym 12,00 zł, które zostało zaktualizowane przez dokument dostawy. Podczas księgowania zamówienia sprzedaży zaksięgowana kwota kosztu wyniesie 10,00 zł, ponieważ średnia krocząca kosztu własnego nie będzie uwzględniała transakcji zaktualizowanych fizycznie. **Uwaga:** Jeśli dla tego towaru zostałoby zaznaczone pole wyboru **Włącz wartość fizyczną**, podczas księgowania zamówienia sprzedaży zaksięgowana kwota kosztu wynosiłaby 12,00 zł.
+
+
 
 

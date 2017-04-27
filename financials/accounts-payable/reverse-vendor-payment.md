@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reverse-a-vendor-payment"></a>Cofanie płatność dostawcy
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule opisano różnice między wycofywaniem, usuwaniem, unieważnianiem i odrzucaniem płatności. Ponadto objaśniono dwie metody wycofywania czeku dostawcy. 
 
-Od czasu do czasu po zaksięgowaniu płatności na rzecz dostawcy płatność musi zostać wycofana. Wycofanie różni się od usuwania, unieważnienia lub odrzucania płatności. Płatność można usunąć tylko pod warunkiem, że ma stan **Utworzone**. Ten stan wskazuje, że płatność została utworzona, ale jeszcze nie został wygenerowany. Ograniczenie to zawsze ma zastosowanie bez względu na metodę płatności. Można unieważnić czeków niezaksięgowanych po zostały wygenerowane, ale zanim zostały zaksięgowane. Jeśli wygenerowany płatność jest realizowana jako transfer środków elektronicznych (EFT), może odrzucić płatności przed zaksięgowaniem. Aby odrzucić płatność, zmienić **stan płatności** wartość. Płatności, który został unieważniony lub odrzucone, można zregenerować po **stan płatności** wartość zostanie zmieniona z powrotem do **Brak**. 
+Od czasu do czasu po zaksięgowaniu płatności na rzecz dostawcy płatność musi zostać wycofana. Wycofanie różni się od usuwania, unieważnienia lub odrzucania płatności. Płatność można usunąć tylko pod warunkiem, że ma stan **Utworzone**. Ten stan wskazuje, że płatność została utworzona, ale jeszcze nie została wygenerowana. To ograniczenie obowiązuje zawsze, niezależnie od metody płatności. Można unieważnić niezaksięgowane czeki po wygenerowaniu, ale przed zaksięgowaniem. Jeśli wygenerowana płatność zostanie zrealizowana jako przeniesienie środków elektronicznych (EFT), można ją odrzucić przed zaksięgowaniem. Aby odrzucić płatność, trzeba zmienić wartość **Stan płatności**. Płatność, która została unieważniona lub odrzucona, może zostać wygenerowana ponownie po zmianie wartości **Stan płatności** z powrotem na **Brak**. 
 
-Po zaksięgowaniu płatności wycofań są używane. Płatności dokonywane w formie elektronicznej nie można cofnąć po zostały zaksięgowane. Zamiast tego należy utworzyć nową transakcję kwotę płatności, aby uzyskać odpowiedzialność wstecz na konta dostawcy. Istnieją dwie metody cofania zaksięgowane czeki. Według jednej metody cofnięcia są księgowane natychmiast po kliknięciu przycisku **Cofnięcie płatności** na stronie **Czek**. Według drugiej metody po kliknięciu opcji **Cofnięcie płatności** na stronie **Czek** cofnięcie jest przesyłane do arkusza cofania czeku w module Zarządzanie gotówką i bankami, gdzie osoba sprawdzająca może cofnięcie zaksięgować lub odrzucić. 
+Jeśli płatność została zaksięgowana, trzeba zastosować wycofanie. Płatności zrealizowanych elektronicznie nie można wycofać po zaksięgowaniu. Zamiast tego trzeba utworzyć nową transakcję dla kwoty płatności, by ustawić zobowiązanie z powrotem na koncie dostawcy. Istnieją dwie metody wycofywania zaksięgowanych czeków. Według jednej metody cofnięcia są księgowane natychmiast po kliknięciu przycisku **Cofnięcie płatności** na stronie **Czek**. Według drugiej metody po kliknięciu opcji **Cofnięcie płatności** na stronie **Czek** cofnięcie jest przesyłane do arkusza cofania czeku w module Zarządzanie gotówką i bankami, gdzie osoba sprawdzająca może cofnięcie zaksięgować lub odrzucić. 
 
 Aby sprawdzić, która metoda jest używana w danej organizacji, wyświetl stronę **Parametry zarządzania gotówką i bankami**. Jeśli opcja **Cofnij płatność w ramach procesu przeglądu** ma wartość **Tak**, cofnięcia są wysyłane do arkusza cofnięcia czeku do sprawdzenia. W poniższej tabeli opisano różnice pomiędzy metodami cofnięcia czeku.
 
@@ -57,7 +60,7 @@ Osoba, która dokonuje przeglądu cofnięć, może je zatwierdzić i zaksięgowa
 -   Aby odrzucić cofnięcie, należy usunąć arkusz cofania czeku.
 
 > [!NOTE]
-> Jeśli usuwanie arkusza, wycofanie jest usuwany z systemu, ale oryginalny czek pozostaje na **sprawdzić** strony. Stanem czeku nie będzie już **Anulowanie oczekujące**.
+> Usunięcie arkusza powoduje usunięcie wycofania z systemu, jednak oryginalny czek pozostaje na stronie **Czek**. Stanem czeku nie będzie już **Anulowanie oczekujące**.
 
 ## <a name="results-of-posting-a-reversal"></a>Wyniki zaksięgowania cofnięcia
 Po zaksięgowaniu cofnięcia czeku ma miejsce następująca sytuacja:
@@ -78,6 +81,8 @@ Jeśli cofnięty czek został wystawiony w związku ze zwrotem pieniędzy dla od
 
 -   Transakcja jest księgowana dla konta odbiorcy w związku z cofnięciem płatności, a rozliczenie między oryginalną płatnością a dokumentem, dla którego była początkowo rozliczana płatność, jest wycofywane (jest tworzona płatność ujemna).
 -   Cofnięcie płatności jest wprowadzane w odniesieniu do oryginalnej płatności. Wartość pola **Załącznik ostatniego rozliczenia** na stronie **Transakcje odbiorcy** dotyczącej oryginalnej płatności odbiorcy jest aktualizowana, tak aby wskazywała numer załącznika cofniętej transakcji.
+
+
 
 
 

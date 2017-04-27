@@ -1,5 +1,5 @@
 ---
-title: "Mapowania elementów członkowskich wymiaru elementu kosztów różnych wspólny zestaw elementów członkowskich wymiaru"
+title: "Mapowanie różnych elementów członkowskich wymiarów składników kosztów na wspólny zestaw elementów członkowskich wymiarów"
 description: "Poprzez mapowanie elementów członkowskich różnych wymiarów składników kosztów na wspólny zestaw takich elementów można scalić dane we wspólny format umożliwiający efektywną analizę."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Mapowania elementów członkowskich wymiaru elementu kosztów różnych wspólny zestaw elementów członkowskich wymiaru
+# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Mapowanie różnych elementów członkowskich wymiarów składników kosztów na wspólny zestaw elementów członkowskich wymiarów
 
 Poprzez mapowanie elementów członkowskich różnych wymiarów składników kosztów na wspólny zestaw takich elementów można scalić dane we wspólny format umożliwiający efektywną analizę.
 
@@ -38,10 +38,10 @@ W poniższym przykładzie pokazano, jak kontroler kosztów może w module Rachun
 |-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | Elementy członkowskie wymiarów składników kosztów zaimportowane z amerykańskiego planu kont | Elementy członkowskie wymiarów składników kosztów zaimportowane z francuskiego planu kont | Mapowanie amerykańskich i francuskich elementów członkowskich wymiarów składników kosztów do wspólnego zestawu |
 | 5001: Sprzedaż                                                           | 5001: Sprzedaż i reklama                                               | 5000: Sprzedaż i reklama                                             |
-| 5030: Reklama                                                     | 6390: czas zakupu\*                                                    | 7000: Wydatki na sprzątanie                                                 |
+| 5030: Reklama                                                     | 6390: Zakup zapasów\*                                                    | 7000: Wydatki na sprzątanie                                                 |
 | 7001: Wydatki na sprzątanie                                               | 7001: Wydatki na podróże służbowe                                                      | 7001: Wydatki na podróżne służbowe                                                   |
 
-\*Element członkowski wymiaru elementu francuski koszt zakupu zapasów nie jest mapowany.
+\*Francuski element członkowski wymiaru składników kosztów Zakup zapasów nie jest mapowany.
 
 ## <a name="currency-conversion"></a>Konwersja walut
 Konfiguracja różnych używanych planów kont może określać wykorzystywanie różnych walut. W takim przypadku koniecznie określ konwersję walut, tak aby dane kosztów były przetwarzane we właściwej walucie, zgodnie z definicją w księdze rachunku kosztów, w której są używane elementy członkowskie wymiarów składników kosztów. W przykładzie powyżej jeśli w księdze rachunku kosztów są używane dolary amerykańskie (USD), należy utworzyć konwersję waluty z USD na euro (EUR) na potrzeby przetwarzania transakcji, z których wynikają mapowane elementy członkowskie wymiarów składników kosztów.

@@ -1,6 +1,6 @@
 ---
-title: Grupy kont konsolidacji i dodatkowych kont konsolidacji
-description: "Ten temat zawiera informacje dotyczące grup kont konsolidacji i dodatkowych kont konsolidacji i wyjaśnia, jak są używane w programie Microsoft Dynamics 365 dla operacji."
+title: Grupy kont konsolidacji i dodatkowe konta konsolidacji
+description: "Ten temat zawiera informacje o grupach kont konsolidacji i dodatkowych kontach konsolidacji oraz wyjaśnia, jak są one używane w programie Microsoft Dynamics 365 for Operations."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,27 +24,32 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Grupy kont konsolidacji i dodatkowych kont konsolidacji
+# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Grupy kont konsolidacji i dodatkowe konta konsolidacji
 
-Ten temat zawiera informacje dotyczące grup kont konsolidacji i dodatkowych kont konsolidacji i wyjaśnia, jak są używane w programie Microsoft Dynamics 365 dla operacji.
+[!include[banner](../includes/banner.md)]
+
+
+Ten temat zawiera informacje o grupach kont konsolidacji i dodatkowych kontach konsolidacji oraz wyjaśnia, jak są one używane w programie Microsoft Dynamics 365 for Operations.
 
 <a name="consolidation-account-groups"></a>Grupy kont konsolidacji
 ----------------------------
 
-Grupy kont konsolidacji pozwalają tworzyć grupy kont, które chcesz użyć do konsolidowania danych. W większości przypadków grupy kont konsolidacji reprezentuje instrukcją planu kont lub mapuje konta do grupy, która jest zdefiniowana w siedzibie firmy. Konsolidację można znaleźć grupy kont w **instalacji** obszaru **konsolidacje** modułu. Po dodaniu nowej grupy należy wprowadzić identyfikator unikatowy dla grupy kont i nazwy.
+Grupy kont konsolidacji pozwalają tworzyć grupy kont, które mają użyć do konsolidowania danych. W większości przypadków grupa kont konsolidacji reprezentuje urzędowy plan kont lub mapuje konta na grupę zdefiniowaną przez centralę firmy. Grupy kont konsolidacji są podane w module **Konsolidacje** w obszarze **Ustawienia**. Podczas dodawania nowej grupy wprowadzasz unikatowy identyfikator i nazwę grupy kont.
 
 ## <a name="additional-consolidation-accounts"></a>Dodatkowe konta konsolidacji
-Dodatkowe konta konsolidacji umożliwiają przypisywanie konta z istniejącego planu kont do grupy kont konsolidacji. Następnie można określić wartość konta konsolidacji i nazwę. 
+Funkcja dodatkowych kont konsolidacji umożliwia przypisanie konta z istniejącego planu kont do grupy kont konsolidacji. Następnie można określić wartość i nazwę konta konsolidacji. 
 
-Można znaleźć dodatkowe konta konsolidacji w **instalacji** obszaru **konsolidacje** modułu. Podczas tworzenia nowego konta konsolidacji, należy określić następujące informacje:
+Dodatkowe konta konsolidacji są podane w module **Konsolidacje** w obszarze **Ustawienia**. Podczas tworzenia nowego konta konsolidacji należy określić następujące informacje:
 
--   **Konto główne** — jest to pole wyszukiwania, które zawiera wszystkie konta główne, oparte na plan kont, które wybrano na stronie. Należy wybrać konto, nazwa jest automatycznie wprowadzana w **nazwy konta głównego** pole.
--   **Grupa kont konsolidacji** — to pole służy do określania grupy, aby przypisać konto do. Jeśli można skonsolidować na dwa różne sposoby, należy dodać tego samego konta dla wszystkich grup kont konsolidacji cztery.
--   **Konto konsolidacji** — wprowadź wartość Konto konsolidacji. Ta wartość nie musi być konta z planu kont. To może być dowolną wartością, które wymagają.
--   **Nazwa konta konsolidacji** — wprowadź nazwę konta, jaka ma się pojawiać w zapytaniach i raportach.
--   **Poziom SAT** — to pole służy do zgłaszania organom podatkowym meksykański wyciągów z konta. 
+-   **Konto główne** — To pole jest odnośnikiem, który pokazuje wszystkie konta główne oparte na plan kont wybranym na stronie. Po wybraniu konta nazwa jest automatycznie wprowadzana w polu **Nazwa konta głównego**.
+-   **Grupa kont konsolidacji** — To pole służy określaniu grupy, do której ma zostać przypisane konto. Jeśli konsolidujesz na dwa różne sposoby, należy dodać to samo konto do wszystkich czterech grup kont konsolidacji.
+-   **Konto konsolidacji** — Wprowadź wartość konta konsolidacji. Ta wartość nie musi określać konta z planu kont. To może być dowolne inne konto.
+-   **Nazwa konta konsolidacji** — Wprowadź nazwę konta w postaci, w jakiej ma być wyświetlana w zapytaniach i raportach.
+-   **Poziom SAT** — To pole służy do zgłaszania wyciągów z kont meksykańskiemu urzędowi skarbowemu. 
 
-Po zakończeniu tworzenia sieci grup kont konsolidacji i dodatkowych kont konsolidacji, można zaznaczyć grupę w procesie online Konsoliduj.
+Po zakończeniu tworzenia grup kont konsolidacji i dodatkowych kont konsolidacji można wybrać grupę w procesie konsolidacji online.
+
+
 
 
 

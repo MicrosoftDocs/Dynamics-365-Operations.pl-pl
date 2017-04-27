@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-and-process-recurring-invoices"></a>Konfigurowanie i przetwarzania faktur cyklicznych
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule wyjaśniono, jak konfigurować i przetwarzać faktury cykliczne. Faktur cyklicznych można używać, jeśli regularnie trzeba fakturować odbiorców na tę samą kwotę.
 
 <a name="create-a-recurring-free-text-invoice-template"></a>Tworzenie szablonu cyklicznej faktury niezależnej
@@ -61,5 +64,7 @@ Drukowanie cyklicznych faktur niezależnych
 ----------------------------------
 
 Po zaksięgowaniu faktur cyklicznych można je drukować ze strony listy faktur niezależnych. Można drukować faktury, które są wybrane, lub można wybrać zakres faktur do wydrukowania.
+
+
 
 

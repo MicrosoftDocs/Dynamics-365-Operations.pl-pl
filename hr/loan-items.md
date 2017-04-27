@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-items-lent-to-workers"></a>Zarządzanie elementami wypożyczonymi pracownikom.
 
+[!include[banner](includes/banner.md)]
+
+
 Przedmioty pożyczek są rekordami, które pomagają kierownikom śledzić fizyczne przedmioty, które firma pożycza pracownikom. 
 
 Poniżej przedstawiono listę przykładowych towarów, które firma może wypożyczyć pracownikom:
@@ -39,7 +42,7 @@ Każdy przedmiot fizyczny musi mieć odpowiadający mu przedmiot pożyczki. Każ
 
 W przypadku pożyczania przedmiotu należy wprowadzić datę wypożyczenia przedmiotu oraz planowaną datę zwrócenia. W przypadku zwrócenia przedmiotu należy wprowadzić rzeczywistą datę zwrócenia.
 
-Pracowników można przeglądać rekordy zapasów, które zostały wypożyczony do nich przy użyciu obszaru roboczego samoobsługi pracownika. Mogą również edycję istniejących rekordów lub wprowadzić nowych przedmiotów pożyczki, jeśli one otrzymał dodatkowe elementy fizyczne.  Przepływ pracy można skonfigurować do zmiany trasy do nowej lub istniejącej pożyczki elementów przez proces zatwierdzania. 
+Pracownicy mogą wyświetlać rekordy wypożyczonych pozycji w obszarze roboczym Samoobsługa pracownika etatowego. Mogą również edytować istniejące rekordy lub wprowadzać nowe wypożyczone przedmioty, jeśli otrzymali kolejne towary fizyczne.  Przepływ pracy można ustawić tak, aby kierował zmiany do nowych lub istniejących wypożyczanych przedmiotów poprzez proces zatwierdzania. 
 
 Menedżerowie mogą wyświetlać towar wypożyczony przez ich bezpośrednich podwładnych. Mogą także dostać uprawnienia dodawania nowych przedmiotów pożyczki w imieniu swoich pracowników.
 
@@ -52,6 +55,8 @@ Jeśli przedmiot został uszkodzony lub przestawiony, należy zarejestrować fik
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Human resources](index.md)
+[Zasoby ludzkie](index.md)
+
+
 
 

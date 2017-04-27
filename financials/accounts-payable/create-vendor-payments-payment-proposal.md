@@ -27,32 +27,35 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Tworzenie płatności dla dostawców za pomocą propozycji płatności
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten temat zawiera omówienie opcji propozycji płatności wraz z przykładami pokazującymi działanie propozycji płatności. Propozycje płatności są często używane do tworzenia płatności dostawcy, ponieważ za pomocą zapytań można szybko wybrać faktury dostawcy do zapłaty na podstawie kryteriów takich jak termin i rabat gotówkowy. 
 
 Organizacje często używają propozycji płatności do tworzenia płatności dla dostawców, ponieważ przy użyciu propozycji płatności można szybko wybrać faktury od dostawcy do zapłacenia na podstawie terminu, rabatu gotówkowego i innych kryteriów. 
 
-Kwerenda propozycji płatności zawiera różne karty, z których każda ma różne opcje wyboru faktur do zapłaty. **Parametr** karta zawiera opcje, których większość organizacji korzysta najczęściej. Na **rekordy dołączane** skróconej można określić, które faktury lub nabywcy do włączenia do zapłaty przez Definiowanie zakresów dla różnych charakterystyk. Na przykład jeśli chcesz zapłacić określony zakres dostawców, można zdefiniować filtr dla zakresu dostawcy. Ta funkcja służy często do wybierz opcję faktury dla konkretnej metody płatności. Na przykład, jeśli zdefiniować filtr gdzie **metody płatności** = **sprawdzić**, wybrano tylko faktur, które zostały tej metody płatności dla płatności, pod warunkiem, że spełniają one również inne kryteria, które są określone w kwerendzie. Karta **Parametry zaawansowane** zawiera dodatkowe opcje. Niektóre z nich mogą nie być odpowiednie dla danej organizacji. Na przykład ta karta zawiera opcje płatności faktur w ramach płatności scentralizowanych.
+Kwerenda propozycji płatności zawiera różne karty, z których każda ma różne opcje wyboru faktur do zapłaty. Karta **Parametr** zawiera opcje najczęściej wykorzystywane przez większość organizacji. Na skróconej karcie **Rekordy do uwzględnienia** można określić faktury lub dostawców do uwzględnienia w płatności poprzez zdefiniowanie zakresów dla różnych charakterystyk. Na przykład jeśli chcesz zapłacić tylko określonej grupie dostawców, możesz zdefiniować filtr zakresu dostawców. Tej funkcji często używa się do wybrania faktur do określonej formy płatności. Na przykład: jeśli ustawisz filtr, w którym **Metoda płatności** = **Czek**, do zapłaty zostaną zaznaczone tylko te faktury, które są płatne czekiem, chyba że spełniają także inne kryteria wyszczególnione w zapytaniu. Karta **Parametry zaawansowane** zawiera dodatkowe opcje. Niektóre z nich mogą nie być odpowiednie dla danej organizacji. Na przykład ta karta zawiera opcje płatności faktur w ramach płatności scentralizowanych.
 
 ## <a name="parameters"></a>Parametry
--   **Wybierz opcję faktury przez** – faktur w zakres dat, który jest określony przez **od daty** i **do tej pory** pól można wybrać według daty wykonania, daty rabatu gotówkowego lub obu. Jeśli używasz daty rabatu gotówkowego, system szuka najpierw faktur, które mają daty rabatu gotówkowego między od dnia i do dnia. Następnie system za pomocą daty sesji określa, czy faktura kwalifikuje się do uzyskania rabatu gotówkowego, aby mieć pewność, że data rabatu nie upłynęła.
+-   **Wybierz faktury według** — Faktury w zakresie dat określonym przy użyciu pól **Od dnia** i **Do dnia** można wybrać według daty płatności, daty rabatu gotówkowego lub obu tych parametrów. W przypadku użycia daty rabatu gotówkowego system szuka najpierw faktur z datą rabatu gotówkowego między datami początkową i końcową. Następnie system za pomocą daty sesji określa, czy faktura kwalifikuje się do uzyskania rabatu gotówkowego, aby mieć pewność, że data rabatu nie upłynęła.
 -   **Od dnia** i** Do dnia** — faktury z datą płatności lub rabatu gotówkowego w tym zakresie dat zostaną zaznaczone do opłacenia.
 -   **Data płatności** — jeśli została zdefiniowana, wszystkie płatności zostaną utworzone tego dnia. Pole **Minimalna data płatności** jest ignorowane.
--   **Minimalna data płatności** — służy do wprowadzania daty minimalnej płatności. Na przykład **od daty** i **do tej pory** należy podać zakres od 1 września do 10 września, a datą minimalnej płatności 5 września. W takim przypadku wszystkie faktury z datą płatności od 1 września do 5 września mają daty płatności 5 września. Jednak wszystkie faktury z datą płatności od 5 września do 10 września mieć datę płatności, która jest równa termin realizacji każdej faktury.
+-   **Minimalna data płatności** — służy do wprowadzania daty minimalnej płatności. Na przykład pola **Od dnia** i **Do dnia** określają zakres od 1 września do 10 września, a minimalną datą płatności jest 5 września. W takim przypadku wszystkie faktury z datą płatności od 1 do 5 będą miały datę płatności 5 września, ale wszystkie faktury z datą płatności między 5 a 10 września będą miały daty płatności takie, jakie określono na poszczególnych fakturach.
 -   **Limit kwoty** — wprowadź maksymalną kwotę całkowitą dla wszystkich płatności.
--   **Tworzenie płatności bez podglądu faktury** -Jeśli ta opcja jest ustawiona na **tak**, płatności zostanie utworzony natychmiast na **płatności dostawcy** strony. **Propozycji płatności** strona zostanie pominięta. Dzięki temu płatności zostaną utworzone szybciej. Płatności mogą być nadal modyfikowane na stronie **Płatności dostawcy**. Można też wrócić na stronę **propozycji płatności**, klikając przycisk **Edytuj faktury dla wybranej płatności**.
+-   **Utwórz płatności bez przeglądania faktury** — Jeśli ustawisz tę opcję na **Tak**, płatności zostaną utworzone bezpośrednio na stronie **Płatności dostawcy**. Strona **Propozycja płatności** zostanie pominięta. Dzięki temu płatności zostaną utworzone szybciej. Płatności mogą być nadal modyfikowane na stronie **Płatności dostawcy**. Można też wrócić na stronę **propozycji płatności**, klikając przycisk **Edytuj faktury dla wybranej płatności**.
 
 ## <a name="advanced-options"></a>Opcje zaawansowane
--   **Sprawdź saldo dostawcy** — jeśli ta opcja jest ustawiona jako **Tak**, system sprawdza przed opłaceniem faktur, czy dostawca nie ma salda debetowego. Jeśli sprzedawca ma saldo debetowe, płatność nie jest tworzony. Na przykład dostawca może mieć faktury korygujące lub płatności, które zostały zaksięgowane, ale jeszcze nie została jeszcze rozliczona. W takim przypadku nie należy płacić dostawcy. Zamiast tego noty kredytowe lub płatności powinny zostać rozliczone względem niezapłaconych faktur.
+-   **Sprawdź saldo dostawcy** — jeśli ta opcja jest ustawiona jako **Tak**, system sprawdza przed opłaceniem faktur, czy dostawca nie ma salda debetowego. Jeśli dostawca ma saldo debetowe, płatność nie zostanie utworzona. Na przykład dostawca może mieć noty kredytowe lub zaksięgowane, ale jeszcze nierozliczone płatności. W takim przypadku nie należy płacić dostawcy. Zamiast tego noty kredytowe lub płatności powinny zostać rozliczone względem niezapłaconych faktur.
 -   **Usuń ujemne płatności** — opcja ta działa różnie, w zależności od tego, czy płatności dotyczą poszczególnych faktur czy sumy faktur spełniających kryteria płatności. Ta opcja jest określana w metodzie płatności.
 -   **Płatność dla każdej faktury** — jeśli opcja **Usuń ujemne płatności** jest ustawiona jako **Tak**, a istnieją nierozliczone faktury i płatności dla dostawcy, tylko faktura zostanie zaznaczona do płatności. Płatność jest rozliczana na podstawie faktury na kwotę. Jeśli opcja **Usuń ujemne płatności** jest ustawiona jako **Nie**i nie są rozliczane faktury i płatności, do zapłacenia zostaną wybrane i faktury i płatności. Dla płatności jest tworzona płatność i zwrot (płatność ujemna).
--   **Płatności dla sumy faktur** — w przypadku ustawienia opcji **Usuń ujemne płatności** jako **Tak**, a istnieją nierozliczone faktury i płatności dla dostawcy, do płatności zostanie wybrana nierozliczona faktura i płatność, a kwoty te są sumowane w łączną kwotę płatności. Jedyny wyjątek występuje wtedy, jeśli suma skutkuje zwrotem. W takim przypadku faktury ani płatności nie są zaznaczane. Jeśli ** Usuń ujemne płatności ** opcja jest ustawiona na **nr**, faktury i płatności nie są rozliczane, zarówno faktury i płatności są wybrane do płatności i kwoty są dodawane łącznie do produkcji łącznej kwoty płatności.
+-   **Płatności dla sumy faktur** — w przypadku ustawienia opcji **Usuń ujemne płatności** jako **Tak**, a istnieją nierozliczone faktury i płatności dla dostawcy, do płatności zostanie wybrana nierozliczona faktura i płatność, a kwoty te są sumowane w łączną kwotę płatności. Jedyny wyjątek występuje wtedy, jeśli suma skutkuje zwrotem. W takim przypadku faktury ani płatności nie są zaznaczane. Jeżeli opcja **Usuń ujemne płatności** jest ustawiona jako **Nie**, a faktura i płatność nie są rozliczone, zarówno faktura, jak i płatność są wybrane do płatności, natomiast kwoty są sumowane w łączną kwotę płatności.
 -   **Drukuj tylko raport** — ustaw tę opcję jako **Tak**, aby zobaczyć wyniki propozycji płatności w raporcie, ale bez tworzenia płatności.
 -   **Uwzględnij faktury od dostawców z innych firm** — jeśli dana organizacja ma scentralizowany proces płatności i propozycji płatności, a propozycja płatności powinna uwzględniać faktury z innych firm zamieszczonych w kryteriach wyszukiwania, ustaw tę opcję na **Tak**.
 -   **Proponuj osobną płatność dostawcy dla każdej firmy** — jeśli ta opcja jest ustawiona jako **Tak**, dla każdej firmy zostanie utworzona osobna płatność na dostawcę. Dostawca w płatności jest taki sam jak na fakturze z każdej firmy. Jeśli ta opcja została ustawiona jako **Nie**, a ten sam dostawca ma faktury w wielu podmiotach prawnych, zostanie utworzona jedna płatność na łączną kwotę z wybranych faktur. Dostawca na płatności jest taki sam jak dostawca w bieżącej firmie. Jeśli nie istnieje konto dostawcy w bieżącej firmie, używane jest konto dostawcy dla pierwszej faktury do zapłaty.
--   **Waluta płatności** — to pole określa waluty, w której wszystkie płatności są tworzone w. Jeśli waluta nie jest zdefiniowana, płatności każdej faktury w walucie faktury.
+-   **Waluta płatności** — To pole określa walutę, w której są tworzone wszystkie płatności. Jeśli waluta nie jest zdefiniowana, każda faktura jest płacona w walucie faktury.
 -   **Dzień roboczy dla płatności** — umożliwia wprowadzenie dnia tygodnia, gdy płatność powinna zostać wykonana. To pole jest używane tylko wtedy, gdy skonfigurowano metody płatności do sumy faktur do zapłaty w określonym dniu tygodnia.
--   **Typ konta przeciwstawnego** i **konto przeciwstawne** — ustaw te pola, aby zdefiniować typ określonego konta (takie jak **księgi** lub **Bank**) i przeciwstawne konto (na przykład określonego konta bankowego). Metoda płatności dla faktury definiuje domyślny typ konta przeciwstawnego i koncie przeciwstawnym, ale można użyć tych pól do zastępowania wartości domyślnych.
--   **Dodatkowe filtry** – nad **rekordy dołączane** skróconej, można zdefiniować dodatkowe zakresy kryteriów. Na przykład jeśli chcesz zapłacić w zakresie dostawców, można zdefiniować filtr dla zakresu dostawcy. Ta funkcja służy często do wybierz opcję faktury dla konkretnej metody płatności. Na przykład, jeśli zdefiniować filtr gdzie **metody płatności** = **sprawdzić**, wybrano tylko faktur, które zostały tej metody płatności dla płatności, pod warunkiem, że spełniają one również inne kryteria, które są określone w kwerendzie.
+-   **Typ konta przeciwstawnego** i **Konto przeciwstawne** — Te pola służą do definiowania określonego typu konta (takiego jak **Księga** lub **Bank**) i konta przeciwstawnego (na przykład określonego konta bankowego). Metoda płatności dla faktury określa domyślny typ konta przeciwstawnego i konto przeciwstawne, ale w tych polach można zmieniać wartości domyślne.
+-   **Dodatkowe filtry** — Na skróconej karcie **Rekordy do uwzględnienia** można określić dodatkowe zakresy kryteriów. Na przykład jeśli chcesz zapłacić tylko grupie dostawców, możesz zdefiniować filtr zakresu dostawców. Tej funkcji często używa się do wybrania faktur do określonej formy płatności. Na przykład: jeśli ustawisz filtr, w którym **Metoda płatności** = **Czek**, do zapłaty zostaną zaznaczone tylko te faktury, które są płatne czekiem, chyba że spełniają także inne kryteria wyszczególnione w zapytaniu.
 
 ## <a name="scenarios"></a>Scenariusze
 | Dostawca | Faktura | Data faktury | Kwota faktury | Data wymagalności | Data rabatu gotówkowego | Kwota rabatu gotówkowego |
@@ -66,7 +69,7 @@ W dniu 1 lipca April płaci dostawcom. Używa propozycji płatności, aby szybci
 
 ### <a name="option-1-by-cash-discount"></a>Opcja 1: Według rabatu gotówkowego
 
-April wybiera **rabat gotówkowy** jako typ propozycji. Wprowadza ona datę zakresu czerwca 26 do 10 lipca. Następujące faktury mają być uwzględniane w propozycji:
+April wybiera **rabat gotówkowy** jako typ propozycji. Wprowadza zakres dat od 26 czerwca do 10 lipca. W propozycji zostaną uwzględnione następujące faktury:
 
 -   1002, ponieważ data rabatu 4 lipca mieści się w zakresie dat płatności.
 -   1004, ponieważ data rabatu 1 lipca mieści się w zakresie dat płatności.
@@ -78,7 +81,7 @@ Następujące faktury nie są uwzględnione w propozycji:
 
 ### <a name="option-2-by-due-date"></a>Opcja 2: według terminu płatności
 
-April wybiera **Według terminu płatności** jako typ propozycji. Wprowadza ona datę zakresu czerwca 26 do 10 lipca. Następujące faktury mają być uwzględniane w propozycji:
+April wybiera **Według terminu płatności** jako typ propozycji. Wprowadza zakres dat od 26 czerwca do 10 lipca. W propozycji zostaną uwzględnione następujące faktury:
 
 -   1003, ponieważ termin płatności 29 czerwca mieści się w zakresie dat płatności.
 
@@ -90,7 +93,7 @@ Następujące faktury nie są uwzględnione w propozycji:
 
 ### <a name="option-3-by-due-date-and-cash-discount"></a>Opcja 3: Według daty i rabatu gotówkowego
 
-April wybiera **Termin i rabat gotówkowy** jako typ propozycji. Wprowadza ona datę zakresu czerwca 26 do 10 lipca. Następujące faktury mają być uwzględniane w propozycji:
+April wybiera **Termin i rabat gotówkowy** jako typ propozycji. Wprowadza zakres dat od 26 czerwca do 10 lipca. W propozycji zostaną uwzględnione następujące faktury:
 
 -   1003, ponieważ termin płatności 29 czerwca mieści się w zakresie dat płatności.
 -   1002, ponieważ data rabatu 4 lipca mieści się w zakresie dat płatności.
@@ -109,12 +112,14 @@ Funkcja kontroli wymiarów umożliwia kontrolowanie grupowania wierszy generowan
 
 -   Pole **Kontrola wymiarów** jest nieaktywne. Propozycja płatności działa tak, jak w przypadku jakiegokolwiek innego kraju.
 -   Pole **Kontrola wymiarów** jest uaktywnione bez dalszego definiowania wymiarów. Propozycja płatności zostanie utworzona bez brania wymiarów pod uwagę. Utworzona transakcja nie dziedziczy żadnych wymiarów z zastosowanego zapisu.
--   Pole **Kontrola wymiarów** jest uaktywnione i włączono dodatkowe wymiary. Teraz można zdefiniować sposób kopiowania wymiarów do arkusza. Na przykład: • Wybierz **jednostką biznesową** pole wyboru, aby utworzyć propozycję płatności za jednostkę biznesową dla metody płatności, • wybierz **funkcja** pole wyboru, aby utworzyć propozycję płatności na MPK dla metody płatności
+-   Pole **Kontrola wymiarów** jest uaktywnione i włączono dodatkowe wymiary. Teraz można zdefiniować sposób kopiowania wymiarów do arkusza. Na przykład: • Zaznacz pole wyboru **BusinessUnit**, aby utworzyć propozycję płatności według jednostki biznesowej dla metody płatności, • Zaznacz pole wyboru **CostCenter**, aby utworzyć propozycję płatności według centrum kosztu do metody płatności
 
 **Uwaga:** W przypadku wybrania kilku wymiarów w trzeciej opcji propozycja płatności zostanie utworzona z uwzględnieniem połączenia tych wymiarów.
 
 #### <a name="bank-account-selection"></a>Wybór konta bankowego
 
-Dla każdej metody płatności można zdefiniować standardowe konto płatności obciążających niezależnie od kontekstu krajowego. Konto jest ustawiane w wierszach płatności generowanych przez propozycję. Za pomocą funkcji konta bankowego można zdefiniować wiele kont bankowych obciążeń, które będą zarządzane według wymiaru i waluty lub ich dowolnej kombinacji, i używać różnych kont zależnie od potrzeb. Można skonfigurować te kombinacje w **metod płatności** stronę za pomocą **kont bankowych** przycisk dostępny dla każdej metody płatności w systemie **typu konta księgowania** = **Bank**.
+Dla każdej metody płatności można zdefiniować standardowe konto płatności obciążających niezależnie od kontekstu krajowego. Konto jest ustawiane w wierszach płatności generowanych przez propozycję. Za pomocą funkcji konta bankowego można zdefiniować wiele kont bankowych obciążeń, które będą zarządzane według wymiaru i waluty lub ich dowolnej kombinacji, i używać różnych kont zależnie od potrzeb. Te kombinacje można skonfigurować na stronie **Metody płatności**, naciskając przycisk **Konta bankowe** dostępny dla każdej metody płatności i wybierając ustawienie **Typ konta księgowania** = **Bank**.
+
+
 
 

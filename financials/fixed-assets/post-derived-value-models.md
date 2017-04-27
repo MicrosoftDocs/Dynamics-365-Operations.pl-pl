@@ -1,5 +1,5 @@
 ---
-title: "Księgowanie z pochodnych ksiąg"
+title: "Księgowanie za pomocą ksiąg pochodnych"
 description: "W tym artykule opisano sposób korzystania z ksiąg pochodnych."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="post-with-derived-books"></a>Księgowanie z pochodnych ksiąg
+# <a name="post-with-derived-books"></a>Księgowanie za pomocą ksiąg pochodnych
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule opisano sposób korzystania z ksiąg pochodnych.
 
@@ -49,11 +52,13 @@ Na podstawie poniższych informacji prześledźmy sposób konfigurowania transak
 
 Księgi można dołączać do określonych środków trwałych. 
 
-Po zaksięgowaniu nabycia dla środka trwałego z księgą VM 1, nabycie księgowania nie tylko w VM 1, ale również w pochodnej księdze VM 2. Stan obu księgi środków trwałych jest aktualizowany na otwarte.
+Jeżeli nabycie środka trwałego zostanie zaksięgowane w księdze VM 1, nie zostanie zaksięgowane tylko w księdze VM 1, ale również w księdze pochodnej VM 2. Stan obu ksiąg środków trwałych zmieni się na Otwarty.
 
 > [!NOTE]                                                                                                         
 > Jeżeli nie jest używana funkcja ksiąg pochodnych, należy zaksięgować nabycie środka trwałego osobno w księgach VM 1 i VM 2.
 
-Aby uzyskać więcej informacji, zobacz [pochodnych ksiąg](derived-books.md)
+Aby uzyskać więcej informacji, zobacz [Księgi pochodne](derived-books.md)
+
+
 
 

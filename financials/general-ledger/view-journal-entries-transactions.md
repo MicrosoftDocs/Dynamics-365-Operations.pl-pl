@@ -46,12 +46,12 @@ Oprócz raportów finansowych można używać następujących raportów księgow
 
 -   **Zestawienie wymiarów** — ten raport pokazuje transakcje według dnia i kont; można także wyświetlić transakcje według wymiaru i okresu.
 -   **Lista transakcji księgi** — ten raport pokazuje transakcje w walutach transakcji, księgowania i raportowania dla danego konta.
--   **Drukuj arkusz** — ten raport pokazuje wynik zaksięgowane arkusze. Można uruchomić raport przez typ arkusza lub arkusz z numerem partii, lub Dodaj dodatkowe pola.
+-   **Drukowanie arkusza** — W tym raporcie widać wynik opublikowanego arkusza. Można wygenerować raport według typu arkusza lub arkusza z numerem partii, albo dodać nowe pola.
 -   **Transakcje zaksięgowane według arkusza** — raport ten zawiera transakcje, które zostały zaksięgowane w arkuszu, pogrupowane według załącznika.
 -   **Wykaz transakcji wg daty** — ten raport zawiera wszystkie transakcje według dat, łącznie z numerem arkusza, załącznikiem i kontem księgowym. Ponadto pokazuje transakcje w walutach transakcji, księgowania i raportowania.
 -   **Podstawa transakcji** — ten raport pokazuje konta według arkusza, transakcji, księgowania i waluty raportowania. Pokazuje także każdy wiersz arkusza, który został użyty jako konto przeciwstawne.
 
 
-Aby uzyskać więcej informacji, zobacz [sald kont księgi głównej](general-ledger-account-balances.md), [explorer źródła rachunkowości](\financials\accounts-payable\accounting-source-explorer) i [sprawozdawczości finansowej](financial-reporting-getting-started.md)
+Aby uzyskać więcej informacji, zobacz [Salda kont księgi głównej](general-ledger-account-balances.md), [Eksplorator źródeł księgowania](\financials\accounts-payable\accounting-source-explorer) i [Raporty finansowe](financial-reporting-getting-started.md)
 
 

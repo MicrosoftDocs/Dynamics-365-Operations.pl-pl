@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="prepayment-invoices-vs-prepayments"></a>Faktury zaliczkowe i zaliczki
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera opis i porównanie dwóch metod, których organizacje używają do obsługi zaliczek (przedpłat). W jednej metodzie należy utworzyć fakturę zaliczkową skojarzoną z zamówieniem zakupu. W drugiej metodzie tworzy się załączniki arkusza zaliczki poprzez utworzenie zapisów w arkuszu i oznaczenie ich jako załączników arkusza zaliczki.
 
 Organizacje mogą wystawiać zaliczki (płatności z góry) dla dostawców za towary lub usługi, które nie zostały jeszcze dostarczone lub zrealizowane. Dostępne są dwa sposoby wystawiania zaliczek dla dostawców. Aby zminimalizować ryzyko, można śledzić zaliczki, definiując zaliczkę na zamówieniu zakupu. Dla tej metody należy utworzyć fakturę zaliczkową skojarzoną z zamówieniem zakupu. Ta metoda jest nazywana fakturowaniem zaliczki. Organizacje, które nie chcą muszą śledzić zaliczek z taką dokładnością lub nie otrzymują faktury zaliczkowej od dostawcy, mogą zamiast metody fakturowania zaliczki używać załączników arkusza zaliczki. Załączniki arkusza zaliczki można tworzyć przez tworzenie wpisów w arkuszu i oznaczanie ich jako załączników arkusza zaliczki. Dla tej metody nie można śledzić, które zaliczki dla dostawcy odpowiadają którym zamówieniom zakupu. Można jednak można oznaczyć zaksięgowaną zaliczkę do rozliczenia według zamówienia zakupu.
@@ -47,9 +50,9 @@ Zasady księgowości stosowane w niektórych krajach/regionach wymagają, aby za
 1.  Ustaw profile księgowania dla zaliczek.
 2.  W parametrach rozrachunków z odbiorcami i rozrachunków z dostawcami w obszarze **Księga i podatek** wybierz nowy profil księgowania za pomocą parametru **Profil księgowania dla arkusza płatności z przedpłatą**.
 3.  Utwórz arkusz płatności, a następnie utwórz nową płatność.
-4.  Można oznaczać flagami płatność jako zaliczkę. Jeśli płatność jest oznaczony jako przedpłata, płatność jest księgowana na kontach księgowych, które są zdefiniowane w profilu księgowania, który został ustawiony w krokach 1 i 2. Ponadto jeśli płatność jest oznaczony jako przedpłata, podatki są obliczane. W niektórych krajach podatki muszą być płacone w chwili rejestracji zaliczki, nawet jeśli nie ma jeszcze faktury.
+4.  Można oznaczać flagami płatność jako zaliczkę. Jeśli płatność jest oznaczona jako zaliczka, płatność jest księgowana na kontach księgowych zdefiniowanych w profilu księgowania ustawionym w krokach 1 i 2. Ponadto jeśli płatność jest oznaczona jako zaliczka, obliczane są podatki. W niektórych krajach podatki muszą być płacone w chwili rejestracji zaliczki, nawet jeśli nie ma jeszcze faktury.
 5.  Zaksięguj przedpłatę.
-6.  Opcjonalnie: Można rozliczyć przedpłaty zamówienia zakupu lub zamówienia sprzedaży przed utworzeniem faktury. Na zamówienia sprzedaży lub strony zamówienia zakupu, w okienku akcji za pomocą **rozliczenia transakcji**.
+6.  Opcjonalnie: Można rozliczyć zaliczkę dla zamówienia zakupu lub zamówienia sprzedaży przed utworzeniem faktury. Na stronie zamówienia sprzedaży lub zamówienia zakupu, w okienku akcji, użyj opcji **Rozlicz transakcje**.
 7.  Po tym jak dostawca dostarczy towary lub zrealizuje usługi zarejestruj fakturę. Jeśli w kroku 6 zaliczka została rozliczona dla zamówienia zakupu lub zamówienia sprzedaży, zaliczka jest automatycznie rozliczana dla utworzonej faktury. Jeśli zaliczka nie została rozliczona dla zamówienia zakupu lub zamówienia sprzedaży, można ręcznie rozliczyć ją dla faktury za pomocą opcji **Rozlicz transakcje** na stronie odbiorcy lub dostawcy. Kwota zaliczki jest następnie wycofywana z tymczasowego konta księgowego rozrachunków z dostawcami/rozrachunków z odbiorcami. Ponadto, jeśli zostały obliczone podatki, są one wycofywane, bo faktura zawiera rzeczywiste podatki.
 
 ## <a name="overview-of-the-prepayment-invoicing-process"></a>Omówienie procesu fakturowania zaliczek
@@ -60,6 +63,8 @@ Faktury zaliczkowe są często stosowaną praktyką biznesową. Dostawca wystawi
 3.  Koordynator rozrachunków z dostawcami rejestruje fakturę zaliczkową dla zamówienia zakupu, a następnie faktura zaliczkowa jest płacona.
 4.  Po tym jak dostawca dostarczy towary lub usługi i otrzymane faktury od dostawcy zostaną otrzymane, koordynator rozrachunków z dostawcami stosuje kwotę płatności, która została już zapłacona w odniesieniu do faktury.
 5.  Koordynator rozrachunków z dostawcami płaci i rozlicza pozostałą kwotę faktury.
+
+
 
 
 

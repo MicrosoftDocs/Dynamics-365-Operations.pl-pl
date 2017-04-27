@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="delays"></a>Opóźnienia
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o datach opóźnień w planowaniu głównym. Data opóźnienia to realistyczny termin przypisywany transakcji, jeśli najwcześniejsza data realizacji obliczona w planowaniu głównym jest późniejsza niż wnioskowana data.
 
 Planowanie główne pozwala obliczać najwcześniejszą datę realizacji transakcji na podstawie czasów realizacji, dostępności materiałów, dostępności zdolności produkcyjnych i różnych parametrów planowania. 
@@ -41,11 +44,13 @@ Można skonfigurować sposób obliczania opóźnienia dla grupy zapotrzebowania.
 
 Na stronie **Parametry planowania głównego** można ustawić czas rozpoczęcia dla obliczania opóźnień. Jeżeli zamówienie zostało zamknięte po tym czasie, do daty opóźnienia zamówienia dodawany jest jeden dzień opóźnienia. 
 
-**Uwaga:** w starszych wersjach, obliczone opóźnienia były znane jako *komunikatów prognoz*, Opóźniona data był znany jako *daty prognozy*, i opóźnionego transakcja została przekazana jako *transakcji, która została zestaw przyszłych*.
+**Uwaga:** We wcześniejszych wersjach obliczane opóźnienia były nazywane *komunikatami prognoz*, data opóźniona była nazywana *datą prognozy*, a transakcja opóźnienia była nazywana *transakcją z datą w przyszłości*.
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Ustawienia zapotrzebowania](coverage-settings.md)
+
+
 
 

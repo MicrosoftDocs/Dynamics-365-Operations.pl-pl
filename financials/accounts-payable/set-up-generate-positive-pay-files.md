@@ -26,12 +26,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-and-generate-positive-pay-files"></a>Konfigurowanie i generowanie plików płatności dodatnich
 
+[!include[banner](../includes/banner.md)]
+
+
 W tym artykule wyjaśniono, jak konfigurować płatności dodatnie i generować pliki płatności dodatnich. 
 
 Konfigurowanie płatności dodatnich w celu generowania elektronicznej listy czeków dostarczanych do banku. Gdy czek zostanie przekazany do banku, bank porównuje go z listą czeków. Jeśli czek pasuje do czeku na liście, wówczas bank rozlicza czek. Jeśli czek nie pasuje do czeku na liście, bank wstrzymuje czek w celu sprawdzenia.
 
 ## <a name="security-for-positive-pay-files"></a>Zabezpieczenia plików płatności dodatnich
-Pliki płatności dodatnich mogą zawierać poufne informacje na temat odbiorców płatności i kwot czeków. W związku z tym musisz podjąć odpowiednie środki bezpieczeństwa od momentu wygenerowania plików aż do ich odbioru przez bank. Pliki płatności dodatnich są pobierane do lokalizacji określonej przez przeglądarkę internetową. Płatności dodatnich pliki mogą zawierać poufne informacje, dlatego jest ważne, że tylko upoważnieni użytkownicy mają dostęp do Generowanie i wyświetlanie tych informacji w usłudze Microsoft Dynamics 365 dla operacji. Poniższa tabela pomaga określić uprawnienia, które są wymagane.
+Pliki płatności dodatnich mogą zawierać poufne informacje na temat odbiorców płatności i kwot czeków. W związku z tym musisz podjąć odpowiednie środki bezpieczeństwa od momentu wygenerowania plików aż do ich odbioru przez bank. Pliki płatności dodatnich są pobierane do lokalizacji określonej przez przeglądarkę internetową. Ponieważ pliki płatności dodatnich mogą zawierać informacje poufne, ważne jest, aby tylko upoważnieni użytkownicy mieli dostęp umożliwiający generowanie i wyświetlanie tych informacji w programie Microsoft Dynamics 365 for Operations. Poniższa tabela pomaga określić uprawnienia, które są wymagane.
 
 <table>
 <colgroup>
@@ -156,5 +159,7 @@ Po zapłaceniu czeków wymienionych w pliku płatności dodatnich, otrzymasz num
 
 ## <a name="recall-a-positive-pay-file"></a>Odwoływanie pliku płatności dodatnich
 Jeśli trzeba zmodyfikować plik płatności dodatnich, można go wycofać. Na stronie **Podsumowanie pliku płatności dodatnich** zaznacz plik płatności dodatnich, który ma stan **Utworzone**, a następnie wybierz akcję **Wycofaj**. Dla każdego czeku w pliku płatności dodatnich jest resetowane pole wskazujące, czy czek jest uwzględniony w pliku płatności dodatnich. Następnie można utworzyć nowy plik płatności dodatnich zawierający wycofany czek.
+
+
 
 

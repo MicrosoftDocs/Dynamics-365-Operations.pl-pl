@@ -1,6 +1,6 @@
 ---
 title: Raporty finansowe bilansu
-description: "W tym artykule opisano domyślne raporty bilansów. Opisano również bloki konstrukcyjne, które są skojarzone z tymi raportami."
+description: "W tym artykule opisano domyślne raporty o bilansach. Omówiono również bloki konstrukcyjne skojarzone z tymi raportami."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="balance-sheet-financial-reports"></a>Raporty finansowe bilansu
 
-W tym artykule opisano domyślne raporty bilansów. Opisano również bloki konstrukcyjne, które są skojarzone z tymi raportami. 
+[!include[banner](../includes/banner.md)]
+
+
+W tym artykule opisano domyślne raporty o bilansach. Omówiono również bloki konstrukcyjne skojarzone z tymi raportami. 
 
 <a name="default-balance-sheet-reports"></a>Domyślne raporty finansowe bilansu
 -----------------------------
@@ -72,10 +75,12 @@ Definicje kolumn zawierają różnego rodzaju kolumny oferujący różne poziomu
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Raporty finansowe](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Wyświetlanie raportów finansowych](view-financial-reports.md)
 
-[Blog sprawozdawczości finansowej Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Blog o sprawozdawczości finansowej w systemie Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 
