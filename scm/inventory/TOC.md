@@ -1,21 +1,21 @@
 # Tworzenie układu magazynu
-# Proces Indbound
+# Proces przychodzący
 # Proces wychodzący
 # Konfigurowanie śledzenia zapasów
-## [Inventory journals](inventory-journals.md)
-## [Inventory locations](inventory-locations.md)
-## [Inventory statuses](inventory-statuses.md)
-## [Minimalna ilość zapasów](reserve-inventory-quantities.md)
-## [Rezerwacja tej samej partii dla zamówienia sprzedaży](../sales-marketing/reserve-same-batch-sales-order.md)
+## [Arkusze magazynowe](inventory-journals.md)
+## [Lokalizacje magazynowe](inventory-locations.md)
+## [Stany zapasów](inventory-statuses.md)
+## [Rezerwowanie ilości zapasów](reserve-inventory-quantities.md)
+## [Rezerwowanie tej samej partii dla zamówienia sprzedaży](../sales-marketing/reserve-same-batch-sales-order.md)
 # Zapasy konsygnacyjne
-## [Consignment](consignment.md)
-## [Ustawianie wysyłki](set-up-consignment.md)
+## [Konsygnacja](consignment.md)
+## [Konfigurowanie konsygnacji](set-up-consignment.md)
 # Zarządzanie jakością
-## [Enable quality management](enable-quality-management.md)
-## [Inventory blocking](inventory-blocking.md)
-## [Zarządzanie niezgodności](enable-nonconformance-management.md)
-## [Quarantine order](quarantine-orders.md)
+## [Włączanie zarządzania jakością](enable-quality-management.md)
+## [Blokowanie zapasów](inventory-blocking.md)
+## [Zarządzanie brakiem zgodności](enable-nonconformance-management.md)
+## [Zlecenie kwarantanny](quarantine-orders.md)
 ## [Proces zarządzania jakością](quality-management-processes.md)
-# Śledzenie towarów i przetwarzania wsadowego
+# Śledzenie towarów i partii
 ## [Scalanie partii zapasów](merge-inventory-batches.md)
 ## [Śledzenie towarów i surowców](trace-items-raw-materials-inventory-production-sales.md)

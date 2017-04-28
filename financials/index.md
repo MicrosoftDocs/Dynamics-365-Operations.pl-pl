@@ -1,6 +1,6 @@
 ---
 title: "Zarządzanie finansami — strona główna"
-description: "Ten temat zawiera listę tematów Pomocy i innych zasobów dla funkcji zarządzania finansami w programie Microsoft Dynamics 365 for Operations."
+description: "Ten temat zawiera listę tematów Pomocy i innych zasobów dotyczących funkcji zarządzania finansami w rozwiązaniu Microsoft Dynamics 365 for Operations."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,18 +28,18 @@ ms.lasthandoff: 04/12/2017
 
 [!include[banner](includes/banner.md)]
 
-Ten temat zawiera listę tematów Pomocy i innych zasobów dla funkcji zarządzania finansami w programie Microsoft Dynamics 365 for Operations. 
+Ten temat zawiera listę tematów Pomocy i innych zasobów dotyczących funkcji zarządzania finansami w rozwiązaniu Microsoft Dynamics 365 for Operations. 
 
-Wybierz obszar funkcji, aby dowiedzieć się o nim więcej.
-- [Accounts payable](accounts-payable\accounts-payable.md) 
-- [Accounts receivable](accounts-receivable\accounts-receivable.md) 
-- [Cash and bank management](cash-bank-management\cash-bank-management.md)
-- [Cost accounting](cost-accounting\cost-accounting-home-page.md)
-- [Fixed assets](fixed-assets\fixed-assets.md)
-- [General ledger](general-ledger\general-ledger.md) 
-- [Project management](project-management\overview-project-management-accounting.md)
-- [Public sector](public-sector\public-sector-functionality.md) 
-- [Budgeting](budgeting\budgeting-overview.md) 
+Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
+- [Rozrachunki z dostawcami](accounts-payable\accounts-payable.md) 
+- [Rozrachunki z odbiorcami](accounts-receivable\accounts-receivable.md) 
+- [Zarządzanie gotówką i bankami](cash-bank-management\cash-bank-management.md)
+- [Rachunek kosztów](cost-accounting\cost-accounting-home-page.md)
+- [Środki trwałe](fixed-assets\fixed-assets.md)
+- [Księga główna](general-ledger\general-ledger.md) 
+- [Zarządzanie projektami](project-management\overview-project-management-accounting.md)
+- [Sektor publiczny](public-sector\public-sector-functionality.md) 
+- [Budżetowanie](budgeting\budgeting-overview.md) 
 
 
 

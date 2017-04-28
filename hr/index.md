@@ -1,6 +1,6 @@
 ---
 title: Zasoby ludzkie
-description: "Moduł Zasoby ludzkie upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Ponadto dla pracowników działu kadr stanowi platformę zarządzania odnośnymi obszarami. Te obszary uwzględniają rekrutację i utrzymanie pracownika, administrowanie świadczeniami, szkolenia, przeglądy wyników i zarządzanie zmianami."
+description: "Moduł Zasoby ludzkie upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Ponadto dla pracowników działu zasobów ludzkich stanowi platformę zarządzania odnośnymi obszarami. Te obszary obejmują rekrutację i utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami."
 author: rschloma
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,73 +29,73 @@ ms.lasthandoff: 04/12/2017
 
 [!include[banner](includes/banner.md)]
 
-Moduł Zasoby ludzkie upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Ponadto dla pracowników działu kadr stanowi platformę zarządzania odnośnymi obszarami. Te obszary uwzględniają rekrutację i utrzymanie pracownika, administrowanie świadczeniami, szkolenia, przeglądy wyników i zarządzanie zmianami.
+Moduł Zasoby ludzkie upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Ponadto dla pracowników działu zasobów ludzkich stanowi platformę zarządzania odnośnymi obszarami. Te obszary obejmują rekrutację i utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami.
 
-Za pomocą modułu Zasoby ludzkie można wykonywać następujące zadania:
+Za pomocą modułu Zasoby ludzkie możesz wykonywać następujące zadania:
 
 > + Administrowanie strukturami organizacyjnymi.
 > + Obsługa kompleksowych informacji o pracowniku od zatrudnienia do dnia odejścia na emeryturę.
-> + Definiowanie i administrowanie planami świadczeń, rejestrowaniem pracowników, obejmowanie świadczeniami osób zależnych i wskazywanie beneficjentów.
+> + Definiowanie planów świadczeń i administrowanie nimi, rejestrowanie pracowników, obejmowanie świadczeniami osób na utrzymaniu pracownika i wskazywanie beneficjentów.
 > + Określanie i monitorowanie zasad nieobecności.
-> + Wdrażanie i monitorowanie zarządzania czasem na podstawie profilu oraz generowania informacji o płatnościach eksportowanych do systemu listy płac.
-> + Zarządzanie kompetencjami pracownika.
-> + Przeglądanie wydajności i wdrażanie celów pracownika.
+> + Wdrażanie i monitorowanie zarządzania czasem na podstawie profilu oraz generowanie informacji o płatnościach eksportowanych do systemu listy płac.
+> + Zarządzanie kompetencjami pracowników.
+> + Przeglądanie wydajności i implementowanie celów pracownika.
 > + Konfigurowanie, dostarczanie i analizowanie kursów szkoleniowych, które obejmują terminarze, ścieżki i sesje.
 > + Rekrutacja pracowników i śledzenie kandydatów.
 
 <a name="develop-a-human-resources-strategy"></a>Opracowywanie strategii dotyczącej zasobów ludzkich
 ---------------------------------------------------------
 
-Podczas pracy z zasobami ludzkimi, możesz określić jak struktura organizacji, za pomocą elementów, takich jak departamentów, zadania i pozycje. Są wśród podstawowe elementy, które należy skonfigurować w module Zasoby ludzkie. Poszczególni pracownicy są przypisywani do stanowisk, które są skojarzone z zadaniami.
+Podczas pracy z użyciem modułu Zasoby ludzkie możesz określić strukturę swojej organizacji, używając elementów, takich jak działy, funkcje i stanowiska. Są to jedne z podstawowych elementów, które można skonfigurować w module Zasoby ludzkie. Poszczególni pracownicy etatowi są przypisywani do stanowisk, które są skojarzone z funkcjami.
 
--   [Organizowanie pracowników przy użyciu działów, zadań i stanowisk](departments-jobs-positions.md)
--   [Konfigurowanie parametrów Zasobów ludzkich specyficznych dla firmy](set-up-company-specific-hr-parameters.md)
+-   [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](departments-jobs-positions.md)
+-   [Konfigurowanie specyficznych dla firmy parametrów modułu Zasoby ludzkie](set-up-company-specific-hr-parameters.md)
 -   [Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach](set-up-hr-parameters-across-legal-entities.md) 
 
-## <a name="recruit-hire-and-motivate-employees"></a>Rekrutacja, zatrudnianie i motywowanie pracowników
+## <a name="recruit-hire-and-motivate-employees"></a>Rekrutacja, zatrudnianie i motywowanie pracowników etatowych
 
-Projekty rekrutacji zarządzają zawartością wykorzystywaną w ogłoszeniach o wakatach i mogą pomóc zarządzać podaniami na wakujące stanowiska. Można ich używać do monitorowania odpowiedzi na oferty pracy dla określonego projektu rekrutacji lub określonych kandydatów oraz aktualizować stan wolnych stanowisk. Można również zatrudniać pojedynczych kandydatów albo zarządzać „projektami zatrudnienia grupowego” umożliwiającymi zatrudnianie wielu pracowników, na przykład w reakcji na sezonowe potrzeby biznesowe.
+Projekty rekrutacji służą do zarządzania zawartością używaną w ogłoszeniach o wolnych stanowiskach i mogą pomóc w zarządzaniu zgłoszeniami na wolne stanowiska. Można ich używać do monitorowania odpowiedzi na oferty pracy dla określonego projektu rekrutacji lub określonych kandydatów oraz aktualizować stan wolnych stanowisk. Można również zatrudniać pojedynczych kandydatów albo zarządzać „projektami zatrudnienia grupowego” umożliwiającymi zatrudnianie wielu pracowników, na przykład w reakcji na sezonowe potrzeby biznesowe.
 
--   [Manage a recruiting process](manage-recruiting-process.md)
--   [Mass hire projects](mass-hire-projects.md) 
+-   [Zarządzanie procesem rekrutacji](manage-recruiting-process.md)
+-   [Projekty zatrudniania grupowego](mass-hire-projects.md) 
 
-Po zatrudnieniu personelu można skonfigurować plany umożliwiające skuteczne i sprawiedliwe zarządzanie wynagrodzeniami, a także zarządzać składnikami, takimi jak komputery lub telefony, które organizacja wypożycza swoim pracownikom. Można utworzyć plany wynagrodzeń o stałej i zmiennej wysokości, a także zdefiniować reguły weryfikujące spełnianie kryteriów podlegania tym planom.
+Po zatrudnieniu personelu można skonfigurować plany umożliwiające skuteczne i sprawiedliwe zarządzanie wynagrodzeniami, a także zarządzać przedmiotami, takimi jak komputery lub telefony, które organizacja wypożycza swoim pracownikom etatowym. Można utworzyć plany wynagrodzeń o stałej i zmiennej wysokości, a także zdefiniować reguły weryfikujące spełnianie kryteriów podlegania tym planom.
 
 -   [Plany wynagrodzeń](compensation-plans.md)
 -   [Tworzenie planów stałych wynagrodzeń](create-fixed-compensation-plans.md)
 -   [Tworzenie planów wynagrodzeń o zmiennej wysokości](create-variable-compensation-plans.md)
 
-## <a name="develop-and-train-employees"></a>Wspomagania rozwoju i szkolenie pracowników
+## <a name="develop-and-train-employees"></a>Wspomagania rozwoju i szkolenie pracowników etatowych
 
-Aby zwiększyć wydajność pracowników dotarcie do ich celów zawodowych, podczas gdy dostarczanie biznesowych wymaga od Ciebie można zdefiniować cele, tworzenie analiz wydajności i śledzenia opinii, aby pomóc pracownikom rozwijać umiejętności potrzebne, można również skonfigurować instruktorów, typy kursów, kursy, opisów kursu, terminarzy, ścieżek i sesji przed przypisać instruktora do kursu, lub zarejestrować osoby na kurs. Instruktorzy muszą istnieć jako pracownicy, kandydaci lub osoby kontaktowe.
+Aby pomóc pracownikom etatowym w osiągnięciu celów związanych z karierą przy jednoczesnym spełnianiu wymagań, jakie stawie im firma, możesz skonfigurować cele, tworzyć przeglądy wydajności oraz śledzić opinie. Aby pomóc pracownikom w rozwijaniu wymaganych umiejętności, możesz też skonfigurować instruktorów, typy kursów, opisy kursów, terminarze, ścieżki i sesje, zanim przypiszesz instruktora do kursu lub zarejestrujesz kogoś do udziału w kursie. Instruktorzy muszą być istniejącymi pracownikami, kandydatami lub kontaktami.
 
 -   [Zarządzanie wydajnością](performance-management-overview.md)
--   [Dopasowywanie umiejętności siły roboczej i potrzeb firmy](skills.md)
--   [Administer training through courses](courses.md)
+-   [Dopasowywanie umiejętności pracowników do potrzeb biznesowych](skills.md)
+-   [Administrowanie szkoleniami w ramach kursów](courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Tworzenie i obsługa świadczeń
 
-Poza wynagradzaniem pracowników za pomocą płac, wynagrodzeń i premii można opracować programy świadczeń, np. ubezpieczeń zdrowotnych lub emerytury. Można również zarządzać świadczeniami takimi jak programy pożyczkowe, w których firma wypożycza różne składniki, np. komputery lub telefony, swoim pracownikom.
+Poza wynagradzaniem pracowników za pomocą płac, wynagrodzeń i premii możesz opracować programy świadczeń, takie jak ubezpieczenia zdrowotne lub plany emerytalne. Możesz również zarządzać świadczeniami, takimi jak programy pożyczkowe, w których firma wypożycza różne przedmioty, np. komputery lub telefony, swoim pracownikom etatowym.
 
 -   [Zarządzanie programem świadczeń](manage-benefit-program.md)
--   [Benefit eligibility policies](benefit-eligibility-policies.md)
--   [Manage items lent to workers](loan-items.md)
+-   [Zasady uprawnień do świadczeń](benefit-eligibility-policies.md)
+-   [Zarządzanie przedmiotami wypożyczanymi pracownikom](loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Zarządzanie bezpieczeństwem i przestrzeganiem przepisów w miejscu pracy
 
-System Microsoft Dynamics AX może pomóc utrzymać bezpieczne środowisko pracy, w którym są przestrzegane obowiązujące przepisy prawa, w tym ustawa o osobach niepełnosprawnych oraz przepisy dotyczące imigracji i naturalizacji. Na przykład można zarządzać fizycznymi wymaganiami dla konkretnych zadań, a także śledzić wnioski o zakwaterowanie, co pomoże organizacji zoptymalizować kwalifikacje jej personelu.
+System Microsoft Dynamics AX może pomóc utrzymać bezpieczne środowisko pracy, w którym są przestrzegane obowiązujące przepisy prawa, w tym ustawa o osobach niepełnosprawnych oraz przepisy dotyczące imigracji i naturalizacji. Na przykład możesz zarządzać fizycznymi wymaganiami dla konkretnych funkcji, a także śledzić wnioski o zakwaterowanie, co pomoże organizacji zoptymalizować umiejętności pracowników.
 
--   [Formularz I-9 zatrudnienia weryfikacji](localizations/noam-usa-form-i-9-verification.md)
--   [Są zgodne z obywateli with Disabilities Act](localizations/noam-usa-comply-ada.md)
+-   [Weryfikacja zatrudnienia za pomocą formularzy I-9](localizations/noam-usa-form-i-9-verification.md)
+-   [Zgodność z ustawą ADA (Americans with Disabilities Act)](localizations/noam-usa-comply-ada.md)
 
 ## <a name="gather-information-using-questionnaires"></a>Zbieranie informacji za pomocą kwestionariuszy
 
-Istnieje możliwość projektowania kwestionariuszy i zarządzania nimi, aby zebrać informacje służące do wielu różnych celów. Funkcja Kwestionariusz pozwala projektować i tworzyć kwestionariusze. Gdy kwestionariusz jest gotowy, można go rozpowszechnić szeroko lub tylko do określonej grupy respondentów w celu wypełnienia. Gdy respondenci podadzą odpowiedzi, można przejrzeć i analizować wyniki.
+Możesz projektować kwestionariusze i administrować nimi, aby zbierać informacje służące do wielu różnych celów. Funkcja Kwestionariusz umożliwia projektowanie i tworzenie kwestionariuszy. Gdy kwestionariusz jest gotowy, możesz go rozesłać do szerokiego grona odbiorców lub tylko do określonej grupy respondentów w celu wypełnienia. Gdy respondenci podadzą odpowiedzi, możesz przejrzeć i przeanalizować wyniki.
 
--   [Questionnaires](questionnaires.md)
--   [Design a questionnaire](design-questionnaires.md)
--   [Distribute and complete a questionnaire](distribute-questionnaires.md)
--   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
+-   [Kwestionariusze](questionnaires.md)
+-   [Projektowanie kwestionariusza](design-questionnaires.md)
+-   [Rozsyłanie i wypełnianie kwestionariusza](distribute-questionnaires.md)
+-   [Wyświetlanie i ocenianie wyników kwestionariusza](evaluate-questionnaire-results.md)
 
 
 

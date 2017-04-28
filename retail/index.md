@@ -1,6 +1,6 @@
 ---
-title: "Strona główna sieci sprzedaży"
-description: "Strona główna dla usługi Dynamics 365 operacji — sieci sprzedaży"
+title: "Handel detaliczny — strona główna"
+description: "Strona główna rozwiązania Dynamics 365 for Operations – Retail"
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,71 +25,71 @@ ms.lasthandoff: 04/12/2017
 
 ---
 
-# <a name="retail-home-page"></a>Strona główna sieci sprzedaży
+# <a name="retail-home-page"></a>Handel detaliczny — strona główna
 
 [!include[banner](includes/banner.md)]
 
-Dynamics 365 operacji — sieci sprzedaży zapewnia pełne zakupów o płynną i rozróżnianie rozwiązania rozproszone kanału nowoczesnych przenośnych i globalnych. Możliwości to-end, od punktu nowoczesnych rozwiązań w zakresie oprogramowania sprzedaży (POS), operacje magazynu, artykuły promocyjne, e-commerce, personel Centrum obsługi telefonicznej, marketingu i obsługi klienta, aby łańcuch dostaw, Finanse i więcej, można wdrożyć w taki sposób, który sprawia, że jest najlepszym rozwiązaniem dla Twojej firmy.
+Rozwiązanie Dynamics 365 for Operations – Retail oferuje wszystkie funkcje związane z zakupami i stanowi nowoczesne, mobilne oraz globalne rozwiązanie umożliwiające bezproblemową obsługę i rozróżnianie wielu kanałów. Kompleksowe funkcje — od programowych rozwiązań nowoczesnego punktu sprzedaży (POS), operacji sklepowych, promocji, handlu elektronicznego, biura obsługi, marketingu i obsługi klienta do łańcucha dostaw, finansów i podobnych funkcji — można wdrożyć w sposób, który będzie najbardziej korzystny dla konkretnej firmy.
 
-Na tej stronie wymieniono zasoby, które pomogą Microsoft Dynamics 365 dla operacji — handel detaliczny efektywniej korzystać. W okienku po lewej stronie wybierz obszar funkcji, aby dowiedzieć się więcej o tym. 
+Na tej stronie wymieniono zasoby, które pomogą Ci efektywniej korzystać z rozwiązania Dynamics 365 for Operations – Retail. W okienku najdalej po lewej stronie wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat. 
 
-## <a name="set-up-retail-channels"></a>Konfigurowanie kanałów sprzedaży detalicznej
-Po skonfigurowaniu doświadczenia w sprzedaży detalicznej, można będzie podjęcie decyzji o sposobie definiowanie i konfigurowanie sklepu Cegła i posiadacze (o nazwie *w sklepie detalicznym* w Dynamics 365 dla operacji) i sklepu internetowego operacji. 
+## <a name="set-up-retail-channels"></a>Konfigurowanie kanałów w module Handel detaliczny
+Podczas konfigurowania funkcji modułu Handel detaliczny możesz określić definicję i konfigurację operacji w swoim sklepie fizycznym (nazywanym *sklepem detalicznym* w rozwiązaniu Dynamics 365 for Operations) oraz w sklepie internetowym. 
 
-Każdy sklep sieci sprzedaży może mieć własnych metod płatności, grupy cenowe, punktu sprzedaży rozwiązań, konta zysków i strat, kontami wydatków i personelu. Po utworzeniu sklepu sieci sprzedaży, należy przypisać produkty, które mają sklepu do przeniesienia. Rejestry, pracowników i odbiorców również można przypisać do sklepu. Na koniec należy dodać nowy sklep do hierarchii organizacyjnej.
+Każdy sklep detaliczny może mieć własne metody płatności, grupy cenowe, rozwiązania punktu sprzedaży, konta dochodów, konta wydatków oraz personel. Po utworzeniu sklepu detalicznego możesz przypisać produkty, które mają trafić do sklepu. Do sklepu możesz także przypisać pracowników etatowych, rejestry i odbiorców. Na koniec musisz dodać nowy sklep do hierarchii organizacyjnej.
 
-Podczas tworzenia sklepu internetowego, należy skonfigurować składniki, takie jak asortymentów, metod płatności i atrybuty metody wysyłki. Można także zdefiniować ceny, promocji, rabaty i warunki wysyłki, które są specyficzne dla sklepu internetowego.
+Podczas tworzenia sklepu internetowego musisz skonfigurować składniki, takie jak asortymenty, atrybuty, metody płatności i metody wysyłki. Możesz także zdefiniować ceny, promocje, rabaty i warunki wysyłki specyficzne dla sklepu internetowego.
 
 -   [Definiowanie kanałów sprzedaży detalicznej](define-maintain-retail-channels.md)
--   [Online store overview](online-stores.md)
+-   [Omówienie sklepu internetowego](online-stores.md)
 
 ## <a name="set-up-a-call-center"></a>Konfigurowanie biura obsługi
-Można skonfigurować biura obsługi jako typ kanału sprzedaży detalicznej. W biurze obsługi, pracownicy przyjmują zamówienia od odbiorców przez telefon i tworzą zamówienia sprzedaży. Aby ułatwić pracownikom zbierania zamówień i obsługi obsługi klienta w trakcie procesu realizacji zamówienia, skonfigurowaniem co będzie zawierać zamówienia sprzedaży, jak cen, będą podlegały kontroli i jakie dane o odbiorcach, produkty i ceny są dostępne. Dla każdego Biuro również skonfigurowaniem użytkowników, metod płatności, grupy cenowe, wymiarów finansowych i metod dostawy.
+Biuro obsługi można skonfigurować jako typ kanału sprzedaży detalicznej. W biurze obsługi pracownicy przyjmują zamówienia od odbiorców przez telefon i tworzą zamówienia sprzedaży. Aby ułatwić pracownikom zbieranie zamówień i obsługę klienta w trakcie procesu realizacji zamówienia, możesz określić, co będzie zawierać zamówienie sprzedaży, jak będą kontrolowane ceny oraz jakie dane dotyczące odbiorców, produktów i cen będą dostępne. Dla każdego biura obsługi możesz też skonfigurować użytkowników, metody płatności, grupy cenowe, wymiary finansowe i metody dostawy.
 
--   [Call center functionality](call-center-functionality.md)
--   [Create call center catalogs](create-call-center-catalogs.md)
+-   [Funkcje biura obsługi](call-center-functionality.md)
+-   [Tworzenie katalogów biura obsługi](create-call-center-catalogs.md)
 
-## <a name="define-your-pos-and-mpos-solutions"></a>Definiowanie rozwiązanie Retail POS i MPOS
-Nowoczesne punktu sprzedaży sieci sprzedaży (MPOS) jest aplikacja punktu sprzedaży dla PC, tablety i telefony. Personel sprzedażowy można przetwarzać transakcje sprzedaży, Odbiorca zamawia, wykonywanie codziennych operacji i Zarządzanie zapasami z urządzeniami przenośnymi, w dowolnym miejscu w sklepie, a także rabatu na kasach przez opartej na komputerze. Chmura POS jest POS opartego na przeglądarce. 
+## <a name="define-your-pos-and-mpos-solutions"></a>Definiowanie rozwiązań POS i MPOS
+Retail Modern POS (MPOS) to aplikacja dla punktów sprzedaży działająca na komputerach, tabletach i telefonach. Sprzedawcy mogą przetwarzać transakcje sprzedaży i zamówienia odbiorców oraz wykonywać codzienne operacje i zarządzać zapasami, używając urządzeń przenośnych w dowolnym miejscu w sklepie lub połączonych z komputerami rejestrów. Cloud POS to aplikacja POS działająca w przeglądarce. 
 
-Jest wiele składników, skonfigurowanych będzie do definiowania relacji między magazynem, rejestry punktu sprzedaży lub kanałów znajdujące się w magazynie i urządzeń peryferyjnych sprzedaży detalicznej, które tych rejestrów lub kanały służy do przetwarzania transakcji. Będzie również zdefiniować charakterystyki konkretnym wystąpieniem programu Retail POS, włącznie z profilu sprzętu lub ustawień dla urządzeń peryferyjnych sieci sprzedaży, które będą używane w kasie, sklep, który rejestr jest mapowany na oraz korzystaniem z programu visual dla użytkownika, który loguje się do którego rejestru.
+Istnieje kilka składników, które trzeba skonfigurować, aby zdefiniować relacje między sklepem, rejestrami punktu sprzedaży lub kanałami w sklepie oraz sklepowymi urządzeniami peryferyjnymi, których te rejestry lub kanały używają do przetwarzania transakcji. Trzeba będzie także zdefiniować charakterystyki konkretnego wystąpienia punktu sprzedaży, w tym profil sprzętu, albo skonfigurować sklepowe urządzenia peryferyjne, które będą używane z rejestrem, sklep, na który jest zamapowany rejestr, oraz interfejs graficzny dla użytkownika logującego się do danego rejestru.
 
--   [Definiowanie i obsługiwanie klientów kanału, rejestrów i stacje sprzętowe](define-maintain-channel-clients-registers-hw-stations.md)
--   [Skonfigurować i zainstalować MPOS](retail-modern-pos-device-activation.md)
--   [Funkcja trybu offline punktu sprzedaży](pos-offline-functionality.md)
+-   [Definiowanie klientów, rejestrów i stacji sprzętowych w kanale oraz zarządzanie nimi](define-maintain-channel-clients-registers-hw-stations.md)
+-   [Konfigurowanie i instalowanie aplikacji MPOS](retail-modern-pos-device-activation.md)
+-   [Funkcje punktu sprzedaży w trybie offline](pos-offline-functionality.md)
 
-## <a name="set-up-a-customer-loyalty-program"></a>Konfigurowanie programu lojalnościowego odbiorcy
-Istnieje możliwość programu lojalnościowego odbiorcy zdobywa się punkty na podstawie określonych kryteriów, a punkty mogą być obliczane w różny sposób. Programu lojalnościowego mogą być proste lub złożone i mają zastosowanie w całym danej firmy w dowolnym kanale sieci sprzedaży.
--   [Ustaw program lojalnościowy](set-up-customer-loyalty-program.md)
+## <a name="set-up-a-customer-loyalty-program"></a>Konfigurowanie programu lojalnościowego
+Możesz skonfigurować program lojalnościowy, w ramach którego odbiorcy będą zdobywać punkty na podstawie określonych kryteriów. Punkty mogą być obliczane w różny sposób. Program lojalnościowy może być prosty lub złożony i może być stosowany w różnych firmach w dowolnym kanale sprzedaży detalicznej.
+-   [Konfigurowanie programu lojalnościowego](set-up-customer-loyalty-program.md)
 
-## <a name="set-up-discounts-and-price-adjustments"></a>Ustaw rabaty i korekty ceny
-Można dostosować cen produktów, a także skonfigurować rabatów, które są stosowane do wiersza towaru lub transakcji w punkcie sprzedaży, zamówienie sprzedaży Centrum rozmów lub zamówienia online. 
--   [Price adjustments and discounts](price-adjustments-discounts.md)
--   [Define channel-specific discounts](define-channel-specific-discounts.md)
--   [Określenia optymalnej kombinacji rabatów nakładających się](optimal-combination-overlapping-discounts.md)
+## <a name="set-up-discounts-and-price-adjustments"></a>Konfigurowanie rabatów i korekt cen
+Możesz korygować ceny produktów, a także skonfigurować rabaty stosowane do towaru lub transakcji w punkcie sprzedaży, zamówienia sprzedaży w biurze obsługi lub zamówienia online. 
+-   [Korekt ceny i rabaty](price-adjustments-discounts.md)
+-   [Definiowanie rabatów specyficznych dla kanału](define-channel-specific-discounts.md)
+-   [Ustalanie optymalnej kombinacji nakładających się rabatów](optimal-combination-overlapping-discounts.md)
 
-## <a name="set-up-retail-products"></a>Konfigurowanie produktów sieci sprzedaży
-Zanim w kanałów sprzedaży detalicznej może zaoferować produktów przeznaczonych do sprzedaży, należy utworzyć i skonfigurować produkty w Dynamics 365 dla operacji. Można utworzyć produkty, zdefiniować ich właściwości i atrybuty oraz przypisać produkty do hierarchii kategorii sieci sprzedaży. Produkty dostępne dla kanałów sprzedaży detalicznej i dodać je do aktywnej asortymentu, będzie następnie zwolnieniu produkty do firm, w których są one dostępne.
--   [Set up retail products](set-up-retail-products.md)
+## <a name="set-up-retail-products"></a>Konfigurowanie produktów detalicznych
+Aby móc sprzedawać produkty w kanałach sprzedaży detalicznej, musisz utworzyć i skonfigurować te produkty w rozwiązaniu Dynamics 365 for Operations. Możesz utworzyć produkty, zdefiniować ich właściwości i atrybuty oraz przypisać produkty do hierarchii kategorii sprzedaży detalicznej. Aby udostępnić produkty w kanałach sprzedaży detalicznej i dodać je do aktywnego asortymentu, trzeba będzie zwolnić je do firm, w których są one dostępne.
+-   [Konfigurowanie produktów detalicznych](set-up-retail-products.md)
 
 ## <a name="monitor-and-analyze-performance"></a>Monitorowanie i analizowanie wydajności
-Za pomocą sieci Dynamics 365 dla danych operacji, można analizować wydajność magazynu rentowności odbiorców i produktów, trendów sprzedaży i więcej.
--   [Assess customer and product profitability](assess-customer-product-profitability.md)
--   [Analyze store performance](store-performance-information.md)
+Za pomocą danych z rozwiązania Dynamics 365 for Operations możesz analizować m.in. wydajność sklepu, rentowność odbiorców i produktów oraz trendy sprzedaży.
+-   [Ocenianie rentowności odbiorców i produktów](assess-customer-product-profitability.md)
+-   [Analizowanie wydajności sklepu](store-performance-information.md)
 
-## <a name="customize-and-administer-retail-environments"></a>Dostosowywanie i administrowania środowisk sieci sprzedaży
-Czy poproszono Cię do dostosowania środowiska, czy są podobne zadanie przypisane z wdrażania i konserwacji systemu, wyewidencjonuj dewelopera i specyficzne dla sprzedaży detalicznej zawartości administratora systemu, a także bardziej ogólnej treści dla Microsoft Dynamics 365 dla operacji. 
--   [Dynamics 365 dla operacji — sieci sprzedaży dla specjalistów IT i deweloperów](dev-itpro/dev-retail-home-page.md)
--   [Microsoft Dynamics 365 dla operacji dla deweloperów i specjalistów IT](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
+## <a name="customize-and-administer-retail-environments"></a>Dostosowywanie środowisk handlu detalicznego i administrowanie nimi
+Jeśli poproszono Cię o dostosowanie środowiska lub masz zadanie wdrożenia i obsługi systemu, przejrzyj zawartość dla programistów i administratorów systemu dotyczącą modułu Handel detaliczny, a także bardziej ogólną zawartość dotyczącą rozwiązania Microsoft Dynamics 365 for Operations. 
+-   [Rozwiązanie Dynamics 365 for Operations – Retail dla profesjonalistów IT i programistów](dev-itpro/dev-retail-home-page.md)
+-   [Microsoft Dynamics 365 for Operations — dla profesjonalistów IT i programistów](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-### <a name="whats-new-and-in-development"></a>Co to jest nowy i w zakresie rozwoju
-Przejdź do <a href="https://roadmap.dynamics.com/">Dynamics 365 w celu realizacji</a> jakie nowe funkcje są zwalniane, a nowe funkcje są w fazie projektowania. 
+### <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
+Przejdź na stronę <a href="https://roadmap.dynamics.com/">Plan rozwoju usługi Dynamics 365</a>, aby zobaczyć, jakie nowe funkcje zostały wydane, a jakie są jeszcze opracowywane. 
 
 ### <a name="blogs"></a>Blogi
-Znajduje się opinii, grup dyskusyjnych i innych informacji na temat usługi Microsoft Dynamics 365 dla operacji — sieci sprzedaży i innych rozwiązań na <a href="https://community.dynamics.com/b/msftdynamicsblog">Microsoft Dynamics 365 blog</a>.
+Opinie, wiadomości i inne informacje dotyczące rozwiązania Dynamics 365 for Operations – Retail możesz znaleźć w <a href="https://community.dynamics.com/b/msftdynamicsblog">blogu usługi Microsoft Dynamics 365</a>.
 
-Istnieje wiele tematów dotyczących sieci sprzedaży na <a href="https://blogs.msdn.microsoft.com/dax/">blogu zespołu programu Microsoft Dynamics AX</a>. Niektóre z tych wpisów zostały zapisane dla poprzedniej wersji systemu Dynamics 365 dla operacji, ale nadal stosować te same pojęcia i procedury są podobne w bieżącej wersji.
+Wiele tematów dotyczących modułu Handel detaliczny jest dostępnych w <a href="https://blogs.msdn.microsoft.com/dax/">blogu zespołu produktu Microsoft Dynamics AX</a>. Część z tych wpisów została napisana dla poprzedniej wersji rozwiązania Dynamics 365 for Operations, ale w obecnej wersji są używane te same pojęcia i podobne procedury.
 
-<a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics operacji partnerów Wspólnoty Blog</a> zawiera Microsoft Dynamics partnerom pojedynczego zasobu Aby dowiedzieć się więcej o tym, co jest nowy i testování w operacjach MB.
+Blog <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">społeczności partnerów obsługujących oprogramowanie Microsoft Dynamics</a> stanowi doskonały zasób dla partnerów obsługujących oprogramowanie Microsoft Dynamics zawierający informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
 

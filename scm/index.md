@@ -1,6 +1,6 @@
 ---
 title: "Zarządzanie łańcuchem dostaw — strona główna"
-description: "Na tej stronie wymieniono zasoby, które pomogą efektywniej korzystać Microsoft Dynamics 365 dla operacji — zarządzania łańcuchem dostaw."
+description: "Na tej stronie wymieniono zasoby, które pomogą Ci efektywniej korzystać z modułu Zarządzanie łańcuchem dostaw rozwiązania Microsoft Dynamics 365 for Operations."
 author: yuyus
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,31 +29,31 @@ ms.lasthandoff: 04/12/2017
 
 [!include[banner](includes/banner.md)]
 
-Na tej stronie wymieniono zasoby, które pomogą efektywniej korzystać Microsoft Dynamics 365 dla operacji — zarządzania łańcuchem dostaw. 
+Na tej stronie wymieniono zasoby, które pomogą Ci efektywniej korzystać z modułu Zarządzanie łańcuchem dostaw rozwiązania Microsoft Dynamics 365 for Operations. 
 
-## <a name="whats-new-and-in-development"></a>Co to jest nowy i w zakresie rozwoju
-Przejdź do <a href="https://roadmap.dynamics.com/">Dynamics 365 w celu realizacji</a> jakie nowe funkcje są zwalniane, a nowe funkcje są w fazie projektowania. 
+## <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
+Przejdź na stronę <a href="https://roadmap.dynamics.com/">Plan rozwoju usługi Dynamics 365</a>, aby zobaczyć, jakie nowe funkcje zostały wydane, a jakie są jeszcze opracowywane. 
 
 ## <a name="core-concepts-and-tasks"></a>Podstawowe pojęcia i zadania
-*  W lewym okienku wybierz obszar funkcji, aby dowiedzieć się więcej o nim. 
-*  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Przetwarzanie przychodzącego zawiadomienia o wysyłce w zarządzaniu magazynami</a> (wideo) 
+*  W lewym okienku wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat. 
+*  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Przetwarzanie przychodzących dokumentów WPW w module Zarządzanie magazynem</a> (wideo) 
 
 
 ## <a name="blogs"></a>Blogi
-Istnieje wiele tematów dotyczących produkcji i zarządzaniu łańcuchem dostaw na <a href="https://blogs.msdn.microsoft.com/axmfg/">systemu Dynamics AX produkcyjna R & D Blog zespołu</a> i <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Zarządzanie łańcuchem dostaw programu Dynamics AX R & D Blog zespołu</a>. Większość z nich została napisana dla poprzedniej wersji programu Dynamics 365 for Operations, ale obecna wersja używa tych samych pojęć i podobnych procedur. 
+Wiele tematów dotyczących zarządzania wytwarzaniem i łańcuchem dostaw można znaleźć w <a href="https://blogs.msdn.microsoft.com/axmfg/">blogu zespołu ds. badań i rozwoju modułu Wytwarzanie systemu Dynamics AX</a> oraz <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">blogu zespołu ds. badań i rozwoju modułu Zarządzanie łańcuchem dostaw systemu Dynamics AX </a>. Większość z nich została napisana dla poprzedniej wersji rozwiązania Dynamics 365 for Operations, ale w obecnej wersji są używane te same pojęcia i podobne procedury. 
 
-Na przykład można przeczytać najnowsze ogłoszenia o: 
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/">Ogłoszenie operacji — magazynowanie Dynamics 365</a>
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/">Funkcje ulepszone dostawy (Dynamics 365 dla operacji 1611)</a>
-* <a href="https://blogs.msdn.microsoft.com/axmfg/2017/02/13/cross-docking-from-production-orders-to-transfer-orders/">Przeładunek kompletacyjny na podstawie zleceń produkcyjnych do zamówienia przeniesienia</a>
+Na przykład możesz przeczytać najnowsze wpisy na następujące tematy: 
+* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/">Zapowiedź modułu Magazyn rozwiązania Dynamics 365 for Operations</a>
+* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/">Ulepszone funkcje dotyczące opakowań (Dynamics 365 for Operations 1611)</a>
+* <a href="https://blogs.msdn.microsoft.com/axmfg/2017/02/13/cross-docking-from-production-orders-to-transfer-orders/">Przeładunek kompletacyjny ze zleceń produkcyjnych do zamówień przeniesienia</a>
 
 ## <a name="white-papers"></a>Oficjalne dokumenty
-* <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Microsoft Dynamics 365 dla operacji — wprowadzenie do rachunku kosztów</a> oficjalny dokument zawiera podstawowe kroki umożliwiające konfigurowanie Microsoft Dynamics 365 operacji — rachunku, aby można było dokonać analizy kosztów rzeczywistych kosztów. Zawiera także szereg procedur, które można wykonać w kolejności, w której pojawiają się.
-* <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Dynamics 365 dla operacji — produkcji oszczędnej produkcji: możliwe do zrealizowania i planowanie zadań Kanban</a> oficjalny dokument zawiera informacje szczegółowe informacje o planowaniu zadań kanban i wprowadzenie pojęcia Pobieranie zamówienia sprzedaży, będącego możliwe do zrealizowania (CTP) metodą kontroli daty dostawy. Wyjaśniono również, jak CTP może składać się z karty Kanban zdarzenia Modelowanie scenariuszy składanie na zamówienie lub zamówienie na.
-* <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Microsoft Dynamics 365 dla operacji — Obliczanie BOM przy użyciu arkusza wyceny</a> oficjalny dokument w tym artykule opisano sposób konfigurowania arkusz wyceny, materiałów i produkcji, a wyniki wpływ ustawienia obliczania BOM. Można wykonać ćwiczeń w dodatku do celów szkoleniowych i wykorzystanie wiedzy, która została uzyskana odczytać ten dokument w celu analizy obliczeń BOM.
+* W oficjalnym dokumencie <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Microsoft Dynamics 365 for Operations — wprowadzenie do modułu Rachunek kosztów</a> opisano podstawowe kroki konfigurowania modułu Rachunek kosztów rozwiązania Microsoft Dynamics 365 for Operations w celu wykonywania analiz rzeczywistych kosztów. Przedstawiono w nim także serię procedur, które można wykonać w kolejności, w jakiej zostały wymienione.
+* W oficjalnym dokumencie <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Dynamics 365 for Operations — Lean Manufacturing: metoda Możliwe do zrealizowania oraz planowanie zadań Kanban</a> opisano szczegóły planowania zadań Kanban oraz wprowadzono koncepcję przyjęcia zamówienia sprzedaży z użyciem metody Możliwe do zrealizowania (CTP) służącej do określania daty dostawy. Wyjaśniono w nim również, jak można połączyć metodę CTP z kartami Kanban zdarzeń w celu modelowania scenariuszy „składanie na zamówienie” oraz „tworzenie na zamówienie”.
+* W oficjalnym dokumencie <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Microsoft Dynamics 365 for Operations — obliczanie BOM przy użyciu arkusza wyceny</a> opisano, jak skonfigurować arkusz wyceny obejmujący materiały i wytwarzanie oraz jak ta konfiguracja wpływa na wyniki obliczania BOM. Zamieszczone w Dodatku ćwiczenia możesz wykonać w celach szkoleniowych, a wiedzę zdobytą podczas czytania tego dokumentu możesz wykorzystać podczas analizowania obliczeń BOM.
 
-## <a name="elearning-courses"></a>Szkoleń elektronicznych kursów
-Aby uzyskać informacje dotyczące Microsoft Dynamics 365 dla operacji szkolenia, zobacz <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Portal uczenie systemu Microsoft Dynamics</a>. (wymagane konto CustomerSource) 
+## <a name="elearning-courses"></a>Kursy eLearning
+Aby uzyskać informacje na temat szkoleń dotyczących rozwiązania Microsoft Dynamics 365 for Operations, zobacz <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">Portal szkoleniowy systemu Microsoft Dynamics</a>. (wymagane jest konto w witrynie CustomerSource) 
 
 
 
