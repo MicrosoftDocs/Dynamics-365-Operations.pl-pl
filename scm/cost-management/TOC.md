@@ -22,10 +22,14 @@
 ## [Średnia ważona z datą](weighted-average-date.md)
 ## [Średnia ważona z wartością fizyczną i oznaczeniami](weighted-average-physical-value-marking.md)
 # Wycena wytwarzania
+## [Amortyzowanie kosztów stałych wytworzonego towaru](amortize-constant-costs-manufactured-item.md)
+## [Wycena wsteczna](backflush-costing.md)
+## [Obliczenia BOM](bom-calculations.md)
 ## [Grupa obliczania BOM](bom-calculation-groups.md)
 ## [Typowe źródła odchylenia produkcji](common-sources-of-production-variances.md)
 ## [Kategoria kosztów używana podczas wyboru trasy produkcji](cost-categories-used-production-routings.md)
 ## [Kategoria kosztów używana w kontroli produkcji oraz zarządzaniu projektami i księgowaniu ich](cost-categories-used-production-control-project-management-accounting.md)
+## [Wyświetlanie opłat związanych z wytworzonym towarem](charges-manufactured-item.md)
 ## [Analiza kosztów zlecenia produkcyjnego](production-order-cost-analysis.md)
 ## [Szacowanie kosztów zlecenia produkcyjnego](production-order-cost-estimation.md)
 ## [Księgowanie produkcji](production-posting.md)
@@ -39,5 +43,6 @@
 ## [Aktualizowanie kosztu standardowego w środowisku wytwarzania](update-standard-costs-manufacturing-environment.md)
 ## [Aktualizowanie kosztu standardowego dla nowo wytworzonego towaru](update-standard-costs-new-manufactured-item.md)
 ## [Aktualizowanie kosztu standardowego w środowisku nieobejmującym wytwarzania](update-standard-costs-non-manufacturing-environment.md)
+
 
 

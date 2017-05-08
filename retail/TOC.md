@@ -68,3 +68,16 @@
 ## [Omówienie podstawowych funkcji handlowych](commerce-essentials.md)
 ## [Organizacje i hierarchie organizacyjne (podstawowe funkcje handlowe)](organizational-hierarchies-commerce-essentials.md)
 # [Zawartość dla informatyków i programistów](dev-itpro/TOC.md)
+
+# [Finanse](/dynamics365/operations/financials/index)
+
+# [Zasoby ludzkie](/dynamics365/operations/human-resources/index)
+
+# [Zarządzanie łańcuchem dostaw](/dynamics365/operations/supply-chain/index)
+
+# [Dla programistów i administratorów](/dynamics365/operations/dev-itpro/index)
+
+# Inne zasoby
+## [Dynamics 365 for Operations — słownik](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
+## [Nowości i zmiany](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+

@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
-ms.openlocfilehash: 0d00f33ce8059acd877d1c177e3def0b5f0b73b1
-ms.lasthandoff: 04/12/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a8385e7103b74be33fd79c1143e481ad8edca31c
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -34,11 +35,9 @@ Rozwiązanie Dynamics 365 for Operations – Retail oferuje wszystkie funkcje zw
 Na tej stronie wymieniono zasoby, które pomogą Ci efektywniej korzystać z rozwiązania Dynamics 365 for Operations – Retail. W okienku najdalej po lewej stronie wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat. 
 
 ## <a name="set-up-retail-channels"></a>Konfigurowanie kanałów w module Handel detaliczny
-Podczas konfigurowania funkcji modułu Handel detaliczny możesz określić definicję i konfigurację operacji w swoim sklepie fizycznym (nazywanym *sklepem detalicznym* w rozwiązaniu Dynamics 365 for Operations) oraz w sklepie internetowym. 
+Podczas konfigurowania funkcji modułu Handel detaliczny możesz określić definicję i konfigurację swoich sklepów — fizycznego, internetowego i biura obsługi. 
 
-Każdy sklep detaliczny może mieć własne metody płatności, grupy cenowe, rozwiązania punktu sprzedaży, konta dochodów, konta wydatków oraz personel. Po utworzeniu sklepu detalicznego możesz przypisać produkty, które mają trafić do sklepu. Do sklepu możesz także przypisać pracowników etatowych, rejestry i odbiorców. Na koniec musisz dodać nowy sklep do hierarchii organizacyjnej.
-
-Podczas tworzenia sklepu internetowego musisz skonfigurować składniki, takie jak asortymenty, atrybuty, metody płatności i metody wysyłki. Możesz także zdefiniować ceny, promocje, rabaty i warunki wysyłki specyficzne dla sklepu internetowego.
+Każdy sklep detaliczny może mieć własne metody płatności, metody dostawy, grupy cen, konta przychodów/wydatków, rejestry oraz personel. Po utworzeniu sklepu detalicznego musisz utworzyć asortyment produktów, które mają być oferowane w tym sklepie. Możesz również zdefiniować specyficzne dla sklepu ceny i rabaty, które można będzie stosować do produktów dostępnych w sklepie.
 
 -   [Definiowanie kanałów sprzedaży detalicznej](define-maintain-retail-channels.md)
 -   [Omówienie sklepu internetowego](online-stores.md)
@@ -49,10 +48,10 @@ Biuro obsługi można skonfigurować jako typ kanału sprzedaży detalicznej. W 
 -   [Funkcje biura obsługi](call-center-functionality.md)
 -   [Tworzenie katalogów biura obsługi](create-call-center-catalogs.md)
 
-## <a name="define-your-pos-and-mpos-solutions"></a>Definiowanie rozwiązań POS i MPOS
-Retail Modern POS (MPOS) to aplikacja dla punktów sprzedaży działająca na komputerach, tabletach i telefonach. Sprzedawcy mogą przetwarzać transakcje sprzedaży i zamówienia odbiorców oraz wykonywać codzienne operacje i zarządzać zapasami, używając urządzeń przenośnych w dowolnym miejscu w sklepie lub połączonych z komputerami rejestrów. Cloud POS to aplikacja POS działająca w przeglądarce. 
+## <a name="define-your-pos-solutions"></a>Definiowanie rozwiązań punktu sprzedaży
+Retail Modern POS (MPOS) to aplikacja dla punktów sprzedaży działająca na komputerach, tabletach i telefonach. Sprzedawcy mogą przetwarzać transakcje sprzedaży i zamówienia odbiorców, wykonywać działania związane z obsługą relacji z klientami, oraz wykonywać codzienne operacje i zarządzać zapasami, używając urządzeń przenośnych w dowolnym miejscu w sklepie lub połączonych z komputerami rejestrów. Cloud POS to działająca w przeglądarce aplikacja dla punktu sprzedaży. Można ją uruchomić w dowolnej standardowej przeglądarce. 
 
-Istnieje kilka składników, które trzeba skonfigurować, aby zdefiniować relacje między sklepem, rejestrami punktu sprzedaży lub kanałami w sklepie oraz sklepowymi urządzeniami peryferyjnymi, których te rejestry lub kanały używają do przetwarzania transakcji. Trzeba będzie także zdefiniować charakterystyki konkretnego wystąpienia punktu sprzedaży, w tym profil sprzętu, albo skonfigurować sklepowe urządzenia peryferyjne, które będą używane z rejestrem, sklep, na który jest zamapowany rejestr, oraz interfejs graficzny dla użytkownika logującego się do danego rejestru.
+Istnieje kilka składników, które trzeba skonfigurować, aby zdefiniować relacje między sklepem, rejestrami punktu sprzedaży w sklepie oraz sklepowymi urządzeniami peryferyjnymi, których te rejestry używają do przetwarzania transakcji. Trzeba będzie także zdefiniować charakterystyki konkretnego wystąpienia punktu sprzedaży, w tym profil sprzętu, albo skonfigurować sklepowe urządzenia peryferyjne, które będą używane z rejestrem, sklep, na który jest zamapowany rejestr, interfejs graficzny dla użytkownika logującego się do danego rejestru oraz funkcje, które zostały włączone w rejestrze. Trzeba również określić, czy rejestr może działać w stanie braku połączenia (w trybie offline).
 
 -   [Definiowanie klientów, rejestrów i stacji sprzętowych w kanale oraz zarządzanie nimi](define-maintain-channel-clients-registers-hw-stations.md)
 -   [Konfigurowanie i instalowanie aplikacji MPOS](retail-modern-pos-device-activation.md)
@@ -92,4 +91,6 @@ Opinie, wiadomości i inne informacje dotyczące rozwiązania Dynamics 365 for O
 Wiele tematów dotyczących modułu Handel detaliczny jest dostępnych w <a href="https://blogs.msdn.microsoft.com/dax/">blogu zespołu produktu Microsoft Dynamics AX</a>. Część z tych wpisów została napisana dla poprzedniej wersji rozwiązania Dynamics 365 for Operations, ale w obecnej wersji są używane te same pojęcia i podobne procedury.
 
 Blog <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">społeczności partnerów obsługujących oprogramowanie Microsoft Dynamics</a> stanowi doskonały zasób dla partnerów obsługujących oprogramowanie Microsoft Dynamics zawierający informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
+
+
 

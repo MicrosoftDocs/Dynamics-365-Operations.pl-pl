@@ -1,5 +1,6 @@
 # Tworzenie układu magazynu
 # Proces przychodzący
+## [Omówienie przyjęć](arrival-overview.md)
 # Proces wychodzący
 # Konfigurowanie śledzenia zapasów
 ## [Arkusze magazynowe](inventory-journals.md)
@@ -11,6 +12,7 @@
 ## [Konsygnacja](consignment.md)
 ## [Konfigurowanie konsygnacji](set-up-consignment.md)
 # Zarządzanie jakością
+## [Mobilny obszar roboczy Dostępne zapasy](inventory-on-hand-mobile-workspace.md)
 ## [Włączanie zarządzania jakością](enable-quality-management.md)
 ## [Blokowanie zapasów](inventory-blocking.md)
 ## [Zarządzanie brakiem zgodności](enable-nonconformance-management.md)
@@ -19,3 +21,4 @@
 # Śledzenie towarów i partii
 ## [Scalanie partii zapasów](merge-inventory-batches.md)
 ## [Śledzenie towarów i surowców](trace-items-raw-materials-inventory-production-sales.md)
+

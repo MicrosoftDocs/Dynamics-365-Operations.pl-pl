@@ -60,3 +60,15 @@
 #### [Aktualizowanie danych listy płac — często zadawane pytania](localizations/noam-usa-payroll-data-updates.md)
 #### [Generowanie raportów dotyczących listy płac](localizations/noam-usa-generate-payroll-reports.md)
 
+# [Finanse](/dynamics365/operations/financials/index)
+
+# [Handel detaliczny](/dynamics365/operations/retail/index)
+
+# [Zarządzanie łańcuchem dostaw](/dynamics365/operations/supply-chain/index)
+
+# [Dla programistów i administratorów](/dynamics365/operations/dev-itpro/index)
+
+# Inne zasoby
+## [Dynamics 365 for Operations — słownik](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/human-resources/toc.json)
+## [Nowości i zmiany](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/human-resources/toc.json)
+

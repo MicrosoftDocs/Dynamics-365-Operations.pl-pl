@@ -39,9 +39,10 @@
 
 # Europa
 ## [Posiadacze zaliczek](emea-advance-holders.md)
-## [Edytowanie identyfikatorów faktur w zamówieniach sprzedaży](emea-edit-invoice-id-sales-orders.md)
+## [Edytowanie identyfikatorów faktur na zamówieniach sprzedaży](emea-edit-invoice-id-sales-orders.md)
 ## [Świadectwa wywozowe UE](emea-entry-certificates.md)
 ## [Raportowanie listy sprzedaży do UE](emea-eu-sales-list.md)
+## [Korekty kursów wymiany](emea-exchange-rate-adjustments.md)
 ## [Formaty plików metod płatności](emea-select-file-formats-for-the-method-of-payments.md)
 ## [Likwidacja środków trwałych w Estonii i na Litwie](emea-credit-note-reverse-fixed-asset-sale.md)
 ## [Intrastat](emea-intrastat.md)
@@ -56,18 +57,19 @@
 ## [Omówienie przeniesienia kredytu SEPA](../accounts-payable/sepa-credit-transfer.md)
 ## [Omówienie polecenia zapłaty SEPA](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [Konfigurowanie osób podpisujących drukowane formularze](emea-set-up-signers-for-printing-forms.md)
-## [Okresy podziału w arkuszach okresowych](emea-create-post-periodic-journals.md)
-## [Aktualizowanie sposobu wyświetlania kwot w raportach i dokumentach](emea-amount-printing-forms.md)
-## [Raportowanie podatku VAT](emea-vat-reporting.md)
+## [Kursy wymiany dla podatku VAT](emea-vat-exchange-rate.md)
 ## [Wyświetlanie transakcji w rozliczeniu](emea-transactions-settlement-form.md)
 ## Austria
+### [Amortyzacja półroczna](emea-aut-half-year-depreciation.md)
 ### [Opłaty od materiałów opakowań](emea-aut-packing-material-fee-calculation.md)
 ### [Deklaracja VAT](emea-aut-vat-statement-details.md)
 ## Belgia
 ### [Wyciąg bankowy CODA](emea-bel-coda-bank-statement-import.md)
+### [Deklaracja podatkowa INTERVAT](emea-bel-intervat-tax-declaration.md)
 ### [Ustawienia raportu PRODCOM](emea-bel-prodcom-report.md)
 
 ## Czechy
+### [Rabat gotówkowy na fakturze korygującej](emea-cze-credit-note-cash-discount.md)
 ### [Zaokrąglenie amortyzacji](emea-cze-depreciation-rounding.md)
 ### [Zawieszenie amortyzacji](emea-cze-depreciation-suspension-holidays.md)
 ### [Amortyzacja środków trwałych](emea-cze-fixed-assets-depreciation.md)
@@ -94,7 +96,9 @@
 ### [Raport listy arkuszy](emea-deu-journal-list-report.md)
 ### [Drukowanie osobnej etykiety dla not kredytowych pochodzących ze sprzedaży](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Węgry
+### [Metody amortyzacji środków trwałych](emea-hun-fixed-assets-depreciation-methods.md)    
 ### [Niskokosztowe środki trwałe](emea-hun-low-cost-fixed-assets.md)
+### [Przenoszenie środka trwałego do zapasów](emea-hun-fixed-asset-to-inventory.md)
 ## Włochy
 ### [Szczegóły deklaracji VAT](emea-ita-vat-statements-details.md)
 ### [Raport czarnej listy](emea-ita-black-list-report.md)
@@ -103,6 +107,7 @@
 ### [Weryfikacja daty dokumentu dostawy na fakturach](emea-ita-packing-slip-date-verification-on-invoice.md)
 ### [Księgi podatkowe](emea-ita-fiscal-books.md)
 ### [Podzielona płatność za faktury wystawione administracji publicznej](emea-ita-split-payment-invoices-issued-public-administration.md)
+### [Potrącona zaliczka na podatek](emea-ita-withholding tax.md)
 ## Łotwa
 ### [Księgowanie środków trwałych](emea-lva-fixed-assets-accounting.md)
 ### [Śledzenie zmian lokalizacji środków trwałych](emea-lva-fixed-assets-location-fields-change.md)
@@ -119,12 +124,17 @@
 ### [Numerowanie zduplikowanych faktur sprzedaży](emea-pol-sales-invoice-duplicates-numbering.md)
 ### [Amortyzacja środka trwałego](emea-pol-fixed-assets-depreciation.md)
 ### [Rozszerzenie funkcjonalności likwidacji środków trwałych](emea-pol-fixed-asset-disposal-functionality-extension.md)
+### [Opakowanie zwrotne](emea-pol-returnable-packages.md)
+### [Raporty podatków](emea-pol-sales-tax-reports.md)
+### [Standardowy plik audytu (SAF)](emea-pol-standard-audit-file-saf.md)
 ### [Zestawienie obrotów i sald](emea-pol-turnover-balances-statement.md)
 ## Hiszpania
-### [Opcje weksla](emea-esp-bill-of-exchange-options.md)
 ### [Stosowanie rabatów gotówkowych na fakturze](emea-esp-cash-discount-applied-invoice.md)
+### [Opcje weksla](emea-esp-bill-of-exchange-options.md)
+### [Podatek warunkowy](emea-esp-conditional-sales-tax.md)
 ### [Dane fiskalne z konta płatnika](emea-esp-fiscal-data-invoice-account.md)
 ### [Przeszacowanie grupy środków trwałych](emea-esp-fixed-asset-group-revaluation.md)
+### [Wewnątrzwspólnotowy podatek VAT](emea-esp-intra-community-vat.md)
 ### [Odbiorcy jednorazowi](emea-esp-no-one-time-customer-for-project-contracts.md)
 ### [Opcje skryptów dłużnych](emea-esp-promissory-note-options.md)
 ### [Cykle sprzedaży i zakupów](emea-esp-sales-purchase-cycle.md)
@@ -163,3 +173,4 @@
 
 # Ameryka Północna
 ## [Raporty 1099 na koniec roku w Stanach Zjednoczonych](noam-usa-year-end-1099-reporting.md)
+

@@ -1,6 +1,6 @@
 ---
 title: "Rozrachunki z odbiorcami — strona główna"
-description: "Moduł Rozrachunki z odbiorcami umożliwia śledzenie faktur dla odbiorcy i wszystkich płatności przychodzących od odbiorców."
+description: "Moduł Rozrachunki z odbiorcami umożliwia śledzenie faktur dla odbiorców oraz płatności przychodzących."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 00f022da597b1de2454e93123de31731c6a65962
-ms.openlocfilehash: 03d08f2cf75a8307bc465464917d86efc69be46f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: 1afa291099362c31a7a2c972cc45b19bfc3897bf
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -30,9 +31,9 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Moduł Rozrachunki z odbiorcami umożliwia śledzenie faktur dla odbiorcy i wszystkich płatności przychodzących od odbiorców. 
+Moduł Rozrachunki z odbiorcami umożliwia śledzenie faktur dla odbiorców oraz płatności przychodzących. 
 
-Można tworzyć faktury dla odbiorców, które są oparte na zamówieniach sprzedaży lub dokumentach dostawy. Można także wprowadzić faktury niezależne, które nie są powiązane z zamówieniami sprzedaży. Można otrzymywać płatności przy użyciu różnych typów płatności. Obejmują one weksle, gotówkę, czeki, karty kredytowe i płatności elektroniczne. Jeśli organizacja zawiera wiele firm, można użyć opcji płatności scentralizowanych w celu rejestracji płatności w jednej firmie w imieniu innych firm.
+Faktury dla odbiorców można tworzyć na podstawie zamówień sprzedaży lub dokumentów dostawy. Można także wprowadzić faktury niezależne, które nie są powiązane z zamówieniami sprzedaży. Płatności można odbierać przy użyciu kilku różnych typów płatności. Są to m.in. weksle, gotówka, czeki, karty kredytowe i płatności elektroniczne. Jeśli organizacja składa się z wielu firm, można użyć opcji płatności scentralizowanych w celu rejestracji płatności w jednej firmie w imieniu innych firm.
 
 
 

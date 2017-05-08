@@ -170,7 +170,8 @@
 ## [Wymiary składników kosztów](cost-accounting/cost-elements.md)
 ## [Wymiary obiektów kosztów](cost-accounting/cost-objects.md)
 ## [Mapowanie elementów członkowskich wymiaru elementu kosztów na wspólny zestaw elementów członkowskich wymiaru](cost-accounting/map-cost-elements-dimension-members.md)
-## [Mobilny obszar roboczy kontroli kosztów](cost-accounting/cost-controlling-mobile-workspace.md)
+## [Obliczanie narzutu](cost-accounting/overhead-calculation.md)
+## [Mobilny obszar roboczy Kontrola kosztów](cost-accounting/cost-controlling-mobile-workspace.md)
 ## [Zawartość usługi Power BI dotycząca analiz rachunku kosztów](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/operations/financials/toc.json)
 ## [Konfigurowanie zabezpieczeń dla zawartość usługi Power BI dotyczącej analiz rachunku kosztów](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/operations/financials/toc.json)
 # [Sektor publiczny](public-sector/public-sector-functionality.md)
@@ -206,4 +207,18 @@
 ## [Oferty w ramach projektu](project-management/project-quotations.md)
 ## [Pozyskiwanie zasobów na potrzeby projektów](project-management/project-resourcing.md)
 ## [Struktury podziału pracy](project-management/work-breakdown-structures.md)
+## [Mobilny obszar roboczy Wprowadzanie czasu projektu](project-management/project-time-entry-mobile-workspace.md)
 # [Lokalizacje](localizations/TOC.md)
+
+# [Zasoby ludzkie](/dynamics365/operations/human-resources/index)
+
+# [Handel detaliczny](/dynamics365/operations/retail/index)
+
+# [Zarządzanie łańcuchem dostaw](/dynamics365/operations/supply-chain/index)
+
+# [Dla programistów i administratorów](/dynamics365/operations/dev-itpro/index)
+
+# Inne zasoby
+## [Dynamics 365 for Operations — słownik](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/financials/toc.json)
+## [Nowości i zmiany](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/financials/toc.json)
+
