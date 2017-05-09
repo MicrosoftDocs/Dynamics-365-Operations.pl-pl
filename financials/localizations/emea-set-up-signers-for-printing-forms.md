@@ -1,0 +1,170 @@
+---
+title: "Konfigurowanie osób podpisujących drukowane formularze"
+description: "Dla firm w Czechach, Estonii, na Węgrzech, Litwie, Łotwie, w Polsce i Rosji można skonfigurować osoby podpisujące oraz tytuły dla odbiorców i dostawców, którzy drukują dokumenty, takie jak faktury i zamówienia gotówkowe."
+author: ShylaThompson
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+audience: Application User
+ms.search.scope: Operations, Core
+ms.custom: 263464
+ms.assetid: 7213914a-ecb6-4711-99fe-4e11867aaf4d
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+ms.author: v-elgolu
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+translationtype: Human Translation
+ms.sourcegitcommit: 6bb98cc72c2ec0c1551412dd39d5bea3ce10e2cd
+ms.openlocfilehash: 45d2facde1e5502f4a5863863554a486916c26cd
+ms.lasthandoff: 03/31/2017
+
+
+---
+
+# <a name="set-up-signers-for-print-forms"></a>Konfigurowanie osób podpisujących drukowane formularze
+
+[!include[banner](../includes/banner.md)]
+
+
+Dla firm w Czechach, Estonii, na Węgrzech, Litwie, Łotwie, w Polsce i Rosji można skonfigurować osoby podpisujące oraz tytuły dla odbiorców i dostawców, którzy drukują dokumenty, takie jak faktury i zamówienia gotówkowe.
+
+<a name="set-up-default-values"></a>Konfigurowanie wartości domyślnych
+---------------------
+
+Aby skonfigurować osoby podpisujące dokumenty drukowane przez firmę, należy użyć strony **Dane urzędowe**. Można skonfigurować osoby podpisujące i ich tytuły zarówno dla firmy, jak i dla odbiorców lub dostawców, w zależności od typu dokumentu. W poniższej tabeli opisano karty znajdujące się na stronie **Dane urzędowe**.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Karta</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ogólne</td>
+<td>Dodawanie stanowisk i pokrewnych informacji o osobach podpisujących (dyrektor i główny księgowy), które mogą podpisywać drukowane dokumenty wszystkich typów.</td>
+</tr>
+<tr class="even">
+<td>Księga</td>
+<td>Dodawanie stanowiska i pokrewnych informacji o osobach podpisujących, które mogą podpisywać następujące wewnętrzne dokumenty finansowe związane z przepływem środków pieniężnych:
+<ul>
+<li>Dokumenty kasowe</li>
+<li>Raport zaliczek</li>
+<li>Strona księgi kasowej</li>
+<li>Wyciąg kasowy zliczania</li>
+<li>Odroczenia*</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Zamówienia sprzedaży</td>
+<td>Dodawanie stanowisk i pokrewnych informacji o osobach podpisujących, które mogą podpisywać następujące główne dokumenty wychodzące związane z odbiorcami:
+<ul>
+<li>Faktura do zapłaty*</li>
+<li>Faktura VAT</li>
+<li>Dokument faktury*</li>
+<li>Faktura — faktura korygująca</li>
+<li>Dokument faktury — faktura korygująca*</li>
+<li>Dokument faktury transakcji podatku (klient)*</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Zamówienia zakupu</td>
+<td>Dodawanie stanowisk i pokrewnych informacji o osobach podpisujących, które mogą podpisywać następujące główne dokumenty przychodzące związane z dostawcami:
+<ul>
+<li>Faktura VAT</li>
+<li>Dokument faktury*</li>
+<li>Faktura — faktura korygująca</li>
+<li>Dokument faktury — faktura korygująca*</li>
+<li>Faktura do zapłaty*</li>
+<li>Dokument faktury transakcji podatku (dostawca)*</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Zarządzanie pozycjami magazynowymi</td>
+<td>Dodawanie stanowisk i pokrewnych informacji o osobach podpisujących, które mogą podpisywać następujące dokumenty magazynowe, gdy materialne środki trwałe są wydawane do odbiorcy lub przyjmowane od dostawcy:
+<ul>
+<li>Potwierdzenie wystawienia zamówienia sprzedaży (M-15)*</li>
+<li>Dokument KP/Zamówienie przyjęcia</li>
+<li>Potwierdzenie wydania towarów dla zamówienia przeniesienia (M-15)*</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+\* Ten typ dokumentu jest dostępny tylko w firmach, których adresem podstawowym jest Rosja. W poniższej tabeli opisano pola znajdujące się na stronie **Dane urzędowe**.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pole</th>
+<th>opis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pozycja</td>
+<td>Wybór tytułu stanowiska osoby podpisującej.</td>
+</tr>
+<tr class="even">
+<td>Nazwisko</td>
+<td>Wybór imienia i nazwiska osoby podpisującej. Imiona i nazwiska na liście pochodzą z tabeli Kontakty lub tabeli Pracownicy, w zależności od typu osoby podpisującej (tzn. w zależności od tego, czy jest zaznaczone pole wyboru <strong>Nasz</strong>). Jeśli imienia i nazwiska osoby podpisującej nie ma na liście, należy ręcznie wprowadzić tę informację.</td>
+</tr>
+<tr class="odd">
+<td>Stanowisko</td>
+<td>Wybór stanowiska osoby podpisującej. Jeśli stanowiska osoby podpisującej nie ma na liście, należy ręcznie wprowadzić tę informację.</td>
+</tr>
+<tr class="even">
+<td>Kod konta</td>
+<td>Określanie, czy osoba podpisująca może podpisywać wszystkie dokumenty wybranego typu, czy tylko dokumenty dotyczące określonego odbiorcy lub dostawcy.</td>
+</tr>
+<tr class="odd">
+<td>Relacja konta</td>
+<td>Wybór konta odbiorcy lub dostawcy związanego z kodem wybranego konta. To pole to jest dostępne tylko w przypadku, gdy w polu <strong>Kod konta</strong> zaznaczysz wartość <strong>Rekord</strong>.</td>
+</tr>
+<tr class="even">
+<td>Nasz</td>
+<td>Zaznaczone pole wyboru wskazuje, że stanowisko jest wewnętrzne.</td>
+</tr>
+<tr class="odd">
+<td>Powiązanie z magazynem</td>
+<td>Określanie, czy osoba podpisująca jest przypisana do wszystkich magazynów, czy tylko do określonego magazynu. Dostępne są następujące opcje:
+<ul>
+<li><strong>Wszystko</strong> — osoba podpisująca jest przypisana do wszystkich magazynów.</li>
+<li><strong>Rekord</strong> — osoba podpisująca jest przypisana do określonego magazynu.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Magazyn</td>
+<td>Wybór kodu magazynu odpowiadającego magazynowi, do którego jest przypisana osoba podpisująca. To pole to jest dostępne tylko w przypadku, gdy w polu <strong>Powiązanie z magazynem</strong> zaznaczysz wartość <strong>Rekord</strong>.</td>
+</tr>
+</tbody>
+</table>
+
+## <a name="set-up-a-number-sequence-code-for-officials"></a>Konfigurowanie kodu numeracji danych urzędowych
+Danym urzędowym można przypisać kod numeracji. Służy do tego sekcja **Sekwencje identyfikatorów** na stronie **Firmy**. Wybierz kod numeracji dla odwołania **Dane urzędowe — identyfikator sesji**.
+
+## <a name="modify-signers-in-primary-documents"></a>Modyfikowanie osób podpisujących w głównych dokumentach
+Funkcjonalność danych urzędowych pokazuje domyślne predefiniowane osoby podpisujące z tabeli Dane urzędowe. Na stronie **Księgowanie faktury** na karcie **Dane urzędowe** można modyfikować imiona i nazwiska oraz tytuły osób podpisujących główne dokumenty następujących typów:
+
+-   Faktura dla odbiorcy
+-   Faktura dostawcy
+-   Wyślij zamówienie przeniesienia
+-   Zamówienie gotówkowe
+
+**Uwaga:** Po zaksięgowaniu dokumentu danych urzędowych nie można edytować.
+
+
+
+

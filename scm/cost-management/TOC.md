@@ -1,0 +1,48 @@
+# Pakiet zawartości usługi Power BI
+## [Pakiet zawartości modułu Zarządzanie kosztami](/dynamics365/operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/operations/supply-chain/toc.json)
+# Wstępnie określony koszt
+## [Arkusz wyceny](costing-sheets.md)
+## [Wersja wyceny](costing-versions.md)
+## [Symulowanie zmian kosztów przy użyciu wersji wyceny dla kosztu planowanego](simulate-cost-changes-costing-version-planned-costs.md)
+# Wycena zapasów
+## [Korygowanie wartości kosztu dostępnych zapasów](adjust-hand-inventory-cost-values.md)
+## [Obiekt kosztów](cost-object.md)
+## [Wpis kosztu](cost-entries.md)
+## [Grupa kosztów](cost-groups.md)
+## [Kolejka FIFO z wartością fizyczną i oznaczeniami](fifo-physical-value-marking.md)
+## [Uwzględnianie wartości fizycznej](include-physical-value.md)
+## [Wartość obiektu magazynowego](physical-quantity.md)
+## [Zamknięcie zapasów](inventory-close.md)
+## [Data LIFO z wartością fizyczną i oznaczeniami](lifo-date-physical-value-marking.md)
+## [Kolejka LIFO z wartością fizyczną i oznaczeniami](lifo-physical-value-marking.md)
+## [Średnia ruchoma](moving-average.md)
+## [Aktualizacja fizyczna i finansowa](physical-financial-updates.md)
+## [Dynamiczny średni koszt własny](running-average-cost-price.md)
+## [Śledzenie dynamicznych średnich kosztów dla wymiaru magazynowego](track-running-average-cost-per-inventory-dimension.md)
+## [Średnia ważona z datą](weighted-average-date.md)
+## [Średnia ważona z wartością fizyczną i oznaczeniami](weighted-average-physical-value-marking.md)
+# Wycena wytwarzania
+## [Amortyzowanie kosztów stałych wytworzonego towaru](amortize-constant-costs-manufactured-item.md)
+## [Wycena wsteczna](backflush-costing.md)
+## [Obliczenia BOM](bom-calculations.md)
+## [Grupa obliczania BOM](bom-calculation-groups.md)
+## [Typowe źródła odchylenia produkcji](common-sources-of-production-variances.md)
+## [Kategoria kosztów używana podczas wyboru trasy produkcji](cost-categories-used-production-routings.md)
+## [Kategoria kosztów używana w kontroli produkcji oraz zarządzaniu projektami i księgowaniu ich](cost-categories-used-production-control-project-management-accounting.md)
+## [Wyświetlanie opłat związanych z wytworzonym towarem](charges-manufactured-item.md)
+## [Analiza kosztów zlecenia produkcyjnego](production-order-cost-analysis.md)
+## [Szacowanie kosztów zlecenia produkcyjnego](production-order-cost-estimation.md)
+## [Księgowanie produkcji](production-posting.md)
+## [Konfigurowanie produktu, który można wyprodukować lub w który można się zaopatrzyć](manufactured-items-treated-as-purchased-items.md)
+## [Metoda całkowitej alokacji kosztów](methodology-total-cost-allocation.md)
+# Koszt standardowy
+## [Obliczenia BOM przy użyciu kosztu standardowego](information-used-bom-calculations-standard-costs.md)
+## [Zarządzanie aktualizacjami kosztu standardowego](manage-standard-cost-updates.md)
+## [Wymaganie wstępne dotyczące konwersji na koszt standardowy](prerequisites-standard-cost-conversion.md)
+## [Omówienie konwersji na koszt standardowy](standard-cost-conversion-overview.md)
+## [Aktualizowanie kosztu standardowego w środowisku wytwarzania](update-standard-costs-manufacturing-environment.md)
+## [Aktualizowanie kosztu standardowego dla nowo wytworzonego towaru](update-standard-costs-new-manufactured-item.md)
+## [Aktualizowanie kosztu standardowego w środowisku nieobejmującym wytwarzania](update-standard-costs-non-manufacturing-environment.md)
+
+
+
