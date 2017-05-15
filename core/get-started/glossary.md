@@ -1,6 +1,6 @@
 ---
-title: "Słownik programu Dynamics 365 for Operations"
-description: "Słownik programu Microsoft Dynamics 365 for Operations definiuje kluczowe terminy i pojęcia Dynamics 365 for Operations."
+title: "Dynamics 365 for Operations — słownik"
+description: "W słowniku dotyczącym produktu Microsoft Dynamics 365 for Operations zdefiniowano kluczowe terminy i koncepcje używane w tym produkcie."
 author: tonyafehr
 manager: AnnBe
 ms.date: 04/04/2017
@@ -17,42 +17,43 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0d8af341c8020f756f1a736f6f74402e992d6e16
-ms.openlocfilehash: c6372e366db6abc7b586c2f1185ecd44bbf28502
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: dd9f65e045367aeba081d026da53894679ee7ed0
+ms.contentlocale: pl-pl
+ms.lasthandoff: 05/10/2017
 
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Słownik programu Dynamics 365 for Operations
+# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 for Operations — słownik
 
 [!include[banner](../includes/banner.md)]
 
 
-Słownik programu Microsoft Dynamics 365 for Operations definiuje kluczowe terminy i pojęcia Dynamics 365 for Operations. 
+W słowniku dotyczącym produktu Microsoft Dynamics 365 for Operations zdefiniowano kluczowe terminy i koncepcje używane w tym produkcie. 
 
-### <a name="a"></a>**I**
+### <a name="a"></a>**A**
 
-###### <a name="accounting-journal"></a>**arkusz księgowy**
+###### <a name="accounting-journal"></a>**arkusz księgowania**
 
-Arkusz, który jest używany do rejestrowania finansowych konsekwencji zdarzeń księgowych w systemie rachunkowości.
+Arkusz służący do rejestrowania finansowych konsekwencji zdarzeń księgowania w systemie księgowym.
 
 ###### <a name="accounting-rule"></a>**reguła księgowania**
 
-Reguła w systemie rachunkowości, która steruje zasadami, metodami i procedurami klasyfikacji, rejestrowania i raportowania finansowych konsekwencji zdarzeń księgowych.
+Reguła w systemie księgowania, która kontroluje zasady, metody i procedury klasyfikacji, rejestrowania i raportowania finansowych konsekwencji zdarzeń księgowych.
 
-###### <a name="ach-automated-clearing-house"></a>**ZIR (Zautomatyzowana Izba Rozliczeniowa)**
+###### <a name="ach-automated-clearing-house"></a>**ACH (Automated Clearing House)**
 
-System elektronicznego przelewu środków pieniężnych dostępny w Stanach Zjednoczonych, który ułatwia transfer funduszy między rachunkami bankowymi strony otrzymującej i inicjującej.
+Zautomatyzowana Izba Rozliczeniowa. System elektronicznych przelewów środków dostępny w Stanach Zjednoczonych, który ułatwia transfer środków między rachunkami bankowymi strony odbierającej i inicjującej.
 
 ###### <a name="actual-quantity"></a>**ilość rzeczywista**
 
-Zmierzona ilość, która jest wprowadzana do działania lub z niego wyprowadzana.
+Zmierzona ilość na wejściu/wyjściu działania.
 
 ###### <a name="address-verification-service"></a>**usługa weryfikacji adresu**
 
-Usługa świadczona przez agenta rozliczeniowego kart kredytowych, która sprawdza, czy adres bilingowy dostarczony przez posiadacza karty pasuje do informacji zapisanych w systemie wystawcy.
+Usługa świadczona przez operatora karty kredytowej, który sprawdza, czy adres rozliczeniowy podany przez posiadacza karty jest zgodny z informacjami w rejestrze banku wystawiającego kartę.
 
 ###### <a name="adjusted-unit-price"></a>**skorygowana cena jednostkowa**
 
@@ -60,29 +61,29 @@ Cena jednostkowa obliczona na podstawie wyceny opartej na atrybutach i rzeczywis
 
 ###### <a name="advanced-pricing"></a>**zaawansowana kalkulacja cen**
 
-Logika używana do obliczania ceny zakupu towaru zawartości.
+Algorytm stosowany przy obliczaniu ceny zakupu pozycji zawartości.
 
 ###### <a name="aging"></a>**wiekowanie**
 
-Proces klasyfikacji okresów według wieku.
+Proces klasyfikowania okresów według wieku.
 
 ###### <a name="aging-period"></a>**okres wiekowania**
 
-Liczba dni w okresie używanym do raportowania salda zaległych płatności odbiorcy.
+Liczba dni w okresie używanym do raportowania zaległego salda płatności klienta.
 
-### <a name="b"></a>**mld**
+### <a name="b"></a>**B**
 
 ###### <a name="balance-sheet"></a>**bilans**
 
-Sprawozdanie o sytuacji finansowej organizacji, które raportuje stan aktywów, pasywów i kapitału własnego w określonym dniu.
+Sprawozdanie z sytuacji finansowej organizacji informujące o stanie aktywów, pasywów i kapitałów własnych na określony dzień.
 
 ###### <a name="balance-sheet-account"></a>**konto bilansowe**
 
-Konto, które zawiera opis zmian w wartości raportowanej w bilansie.
+Konto opisujące zmiany wartości ujmowanej w bilansie.
 
-###### <a name="bank-reconciliation"></a>**uzgadnianie konta bankowego**
+###### <a name="bank-reconciliation"></a>**uzgodnienie rachunku bankowego**
 
-Praktyka uzgodnienia konta księgowego reprezentująca rachunek bankowy przez dopasowanie zapisów na koncie księgowym do zapisów wyciągu bankowego.
+Praktyka uzgodnienia konta księgowego przedstawiająca rachunek bankowy przez dopasowanie zapisów na koncie księgowym do zapisów wyciągu bankowego.
 
 ###### <a name="batch-attribute"></a>**atrybut partii**
 
@@ -90,39 +91,39 @@ Atrybut produktu partii towarów lub partii do przeniesienia.
 
 ###### <a name="best-before-date"></a>**data przydatności**
 
-Zalecana data uzyskania optymalnej jakości lub cechy charakterystycznej produktu.
+Zalecana data, do której produkt zachowuje optymalną jakość lub cechę charakterystyczną.
 
 ###### <a name="best-before-period"></a>**okres przydatności**
 
-Okres, w którym można uzyskać optymalną jakość lub cechę charakterystyczną produktu.
+Okres, w którym produkt zachowuje optymalną jakość lub cechę charakterystyczną.
 
 ###### <a name="bill-of-exchange"></a>**weksel**
 
-Dokument źródłowy, który dokumentuje bezwarunkowe żądanie, aby strona trzecia zapłaciła innej stronie, gdy tego zażąda.
+Dokument źródłowy, który zaświadcza o bezwarunkowej zgodzie strony trzeciej na zapłatę drugiej stronie, gdy tego zażąda.
 
-###### <a name="bill-of-materials"></a>**BOM**
+###### <a name="bill-of-materials"></a>**lista składowa (BOM)**
 
-Wykaz produktów i ich ilości, które są wymagane do produkcji jednego produktu.
+Wykaz materiałów i ich ilości, które są wymagane do wytworzenia jednego produktu.
 
 ###### <a name="blocking"></a>**blokowanie**
 
-Akcja wstrzymywania dokumentu lub produktu.
+Czynność wstrzymywania dokumentu lub produktu.
 
 ###### <a name="budget-control"></a>**kontrola budżetu**
 
-Praktyka autoryzowania rozchodów tylko wtedy, gdy środki budżetu można zarezerwować na pokrycie zobowiązań przyszłych płatności.
+Praktyka autoryzowania rozchodów tylko wtedy, gdy środki budżetu można zarezerwować na pokrycie przyszłych zobowiązań z tytułu płatności.
 
 ###### <a name="budget-control-dimension"></a>**wymiar kontroli budżetu**
 
-Kombinacja wartości aktywnych wymiarów finansowych używana do alokowania środków budżetu do zapłacenia za planowane działania.
+Kombinacja wartości aktywnych wymiarów finansowych używana do alokowania środków budżetu w celu zapłaty za planowane działania.
 
 ###### <a name="budget-control-rule"></a>**reguła kontroli budżetu**
 
-Kodowanie decyzji biznesowych do sprawdzenia zadeklarowanych i rzeczywistych rozchodów względem dostępnych środków budżetowych alokowanych na działania szczegółowe lub zagregowane zdefiniowane przez prawidłowe kombinacje wartości wymiarów kontroli budżetu.
+Zapis decyzji biznesowej w celu sprawdzenia ustalonych i rzeczywistych rozchodów względem dostępnych środków budżetowych alokowanych na działania szczegółowe lub zagregowane, zdefiniowany przez prawidłowe kombinacje wartości wymiarów kontroli budżetu.
 
 ###### <a name="budget-cycle-time-span"></a>**okres cyklu budżetu**
 
-Okres określony jako liczba okresów kalendarza obrachunkowego. Okres budżetowy może różnić się od okresu obrachunkowego.
+Przedział czasu podany jako liczba okresów kalendarza obrachunkowego. Okres budżetowy może różnić się od okresu księgowego.
 
 ###### <a name="budget-group"></a>**grupa budżetu**
 
@@ -132,9 +133,9 @@ Zestaw wartości wymiaru finansowego w hierarchii wymiarów budżetu, który jes
 
 Struktura planowania używana do planowania alokacji środków budżetu i rozchodów.
 
-###### <a name="bulk-item"></a>**towar masowy**
+###### <a name="bulk-item"></a>**produkt masowy**
 
-Towar z formuły wprowadzony do działania dostawy produktu.
+Produkt typu Formuła wprowadzony do działania dostawy produktu.
 
 ###### <a name="bundle"></a>**pakiet**
 
@@ -148,11 +149,11 @@ Częściowo autonomiczna jednostka operacyjna utworzona w celu spełnienia strat
 
 ###### <a name="capacity-load"></a>**obciążenie zdolności produkcyjnych**
 
-Maksymalna ilość zaplanowanej pracy , którą może wykonać gniazdo produkcyjne na wymaganym poziomie zdolności produkcyjnych.
+Maksymalna ilość zaplanowanej pracy, którą może wykonać gniazdo produkcyjne na wymaganym poziomie zdolności produkcyjnych.
 
 ###### <a name="capacity-planning"></a>**planowanie zdolności produkcyjnych**
 
-Procedura określania wymagań dotyczących zdolności produkcyjnej zasobu, które spełniają zapotrzebowanie na przyszłą produkcję w określonych okresach.
+Procedura określania wymagań dotyczących zdolności produkcyjnej zasobu w celu zaspokojenia zapotrzebowania na przyszłą produkcję w konkretnych okresach.
 
 ###### <a name="carry-forward-budget"></a>**budżet przeniesiony na późniejszy okres**
 
@@ -160,11 +161,11 @@ Budżet, który jest przekazywany z jednego roku obrachunkowego do następnego i
 
 ###### <a name="cash-generating-unit"></a>**ośrodek wypracowujący środki pieniężne**
 
-Najmniejsza grupa klasyfikowanych zasobów, która wypracowuje środki pieniężne niezależnie od innych zasobów w organizacji. Te grupy zasobów są używane do mierzenia poniesionych strat.
+Najmniejsza grupa klasyfikowanych zasobów, która wypracowuje środki pieniężne niezależnie od innych zasobów w organizacji. Te grupy zasobów są używane do mierzenia odpisów z tytułu utraty wartości, które zostaną poniesione.
 
 ###### <a name="catch-weight"></a>**ilość efektywna**
 
-Rzeczywista lub nominalna masa towaru do sprzedaży lub towaru magazynowego.
+Rzeczywista lub nominalna masa pozycji do sprzedaży lub pozycji magazynowej.
 
 ###### <a name="chart-of-accounts"></a>**plan kont**
 
@@ -176,19 +177,19 @@ Kategoria księgowa używana do sumowania konsekwencji finansowych wytwarzania p
 
 ###### <a name="commodity-pricing"></a>**wycena oparta na cenach towarów masowych**
 
-Strategia wyceny służąca do aktualizacji ceny towarów do sprzedaży wytwarzanych z towarów masowych podlegających częstym zmianom ceny.
+Strategia wyceny służąca do aktualizacji ceny pozycji do sprzedaży wytwarzanych z towarów masowych (surowców), które podlegają częstym zmianom ceny.
 
 ###### <a name="consolidated-order"></a>**zamówienie skonsolidowane**
 
-Dokument źródłowy, który dokumentuje więcej niż jedno zamówienie, do którego się odwołuje.
+Dokument źródłowy reprezentujący wiele zamówień, do których się odwołuje.
 
 ###### <a name="contractor"></a>**zleceniobiorca**
 
-Rola przyjmowana przez osobę, która uczestniczy w relacji zleceniobiorca-pracodawca z podmiotem prawnym.
+Rola przyjmowana przez osobę, która uczestniczy w relacji zleceniobiorca-pracodawca z jednostką prawną.
 
 ###### <a name="co-product"></a>**produkt towarzyszący**
 
-Towar wyprodukowany wspólnie z innym towarem.
+Pozycja wyprodukowana wspólnie z inną pozycją.
 
 ###### <a name="cost-center"></a>**centrum kosztów**
 
@@ -200,15 +201,15 @@ Kategoria księgowa używana do sumowania konsekwencji finansowych wytwarzania p
 
 ###### <a name="cost-variance"></a>**odchylenie kosztów**
 
-Różnica między oczekiwanym kosztem a rzeczywistym kosztem.
+Różnica między kosztem oczekiwanym i rzeczywistym.
 
 ###### <a name="costing"></a>**wycena**
 
-Proces obliczania przypisywania i alokowania kosztu zasobów ekonomicznych nabytych, wyprodukowanych lub dostarczanych przez organizację.
+Proces obliczania, przypisywania i alokowania kosztu zasobów ekonomicznych nabytych, wyprodukowanych lub dostarczanych przez organizację.
 
 ###### <a name="ctp-capable-to-promise"></a>**CTP (możliwe do zrealizowania)**
 
-Część ilości produktu z dostępnych zasobów operacyjnych i dostępny wsad produktu wymagany do spełnienia wymogu określonego odbiorcy.
+Część produkcji z dostępnych zasobów operacyjnych i dostępny wsad produktu niezbędny do spełnienia wymagania określonego odbiorcy.
 
 ###### <a name="currency-code"></a>**kod waluty**
 
@@ -222,19 +223,19 @@ Czas potrzebny do ukończenia działania.
 
 ###### <a name="dashboard"></a>**pulpit nawigacyjny**
 
-Typowa strona początkowa w programie Dynamics 365 for Operations. Na pulpicie nawigacyjnym widoczne są sekcje obszarów roboczych dostępnych dla użytkownika. Każda sekcja zawiera kafelki z podsumowaniem w powiązanych roboczym obszarze roboczym. Pulpit nawigacyjny składa się z nazwy i sekcji z kafelkami.
+Typowa strona początkowa w rozwiązaniu Dynamics 365 for Operations. Na pulpicie nawigacyjnym jest wyświetlana sekcja każdego obszaru roboczego, do którego użytkownik ma dostęp. W każdej sekcji są wyświetlane kafelki z sekcji podsumowania w powiązanym obszarze roboczym. Pulpit nawigacyjny składa się z nazwy i sekcji z kafelkami.
 
 ###### <a name="data-entity"></a>**jednostka danych**
 
-Struktura informacji, która reprezentuje cechę danych podmiotu.
+Struktura informacji, która reprezentuje charakterystykę danych jednostki.
 
 ###### <a name="delegate"></a>**delegat**
 
-Delegat odwołuje się do metod z konkretną listą parametrów i typem zwrotu.
+Delegat to typ reprezentujący odwołania do metod z listą konkretnych parametrów i typem wartości zwracanej.
 
 ###### <a name="delivery-note"></a>**dokument dostawy**
 
-Dokument biznesowy, który dokumentuje dostawę produktów między dwoma stronami.
+Dokument biznesowy potwierdzający dostawę produktów między dwiema stronami.
 
 ###### <a name="demand-forecast"></a>**prognoza popytu**
 
@@ -242,59 +243,59 @@ Przewidywanie przyszłego popytu na produkt.
 
 ###### <a name="demand-forecasting"></a>**prognozowanie popytu**
 
-Proces biznesowy polegający na szacowaniu przyszłego popytu, który tworzy prognozy popytu na podstawie danych historycznych transakcji.
+Proces biznesowy polegający na szacowaniu przyszłego popytu oraz tworzeniu prognozy popytu na podstawie danych historycznych transakcji.
 
 ###### <a name="deployable-package"></a>**wdrażalny pakiet**
 
-Metoda wdrażania testu akceptacji użytkownika (UAT) i środowiska produkcyjnego.
+Metoda wdrażania używana w teście akceptacji użytkownika (UAT) i środowiskach produkcyjnych.
 
 ###### <a name="designer"></a>**konstruktor**
 
-Narzędzie Visual Studio używane do tworzenia, aktualizowania i sprawdzania elementów modelu.
+Narzędzie pakietu Visual Studio używane do tworzenia, aktualizowania i sprawdzania elementów modelu.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**Konfiguracja oparta na wymiarach**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\wymiary finansowe\konfiguracja oparta na wymiarach**
 
-Technologia konfiguracji używana do tworzenia wariantów produktu przez wybranie wartości wymiarów produktu.
+Technologia konfiguracji używana do tworzenia wariantów produktu przez wybieranie wartości wymiarów produktu.
 
 ###### <a name="distinct-product"></a>**odrębny produkt**
 
-Produkt, który można jednoznacznie zidentyfikować.
+Produkt, który można unikatowo zidentyfikować.
 
 ###### <a name="document-blocking"></a>**blokowanie dokumentów**
 
-Metoda wstrzymywania procesu operacji, dopóki trwa proces zapewniania jakości zamówionych towarów.
+Metoda wstrzymywania procesu operacji, dopóki trwa proces kontroli jakości zamówionych towarów.
 
 ###### <a name="document-management-system"></a>**system zarządzania dokumentami**
 
 Usługa aplikacji do przechowywania i obsługi dokumentów w organizacji.
 
-###### <a name="duty"></a>**cło**
+###### <a name="duty"></a>**obowiązki**
 
-W modelu zabezpieczeń jest to zestaw uprawnień dostępu do aplikacji, które użytkownik musi mieć, aby wykonywać swoje obowiązki.
+W modelu bezpieczeństwa jest to zestaw uprawnień dostępu do aplikacji, które użytkownik musi mieć, aby wykonywać swoje obowiązki.
 
 ### <a name="e"></a>**E**
 
 ###### <a name="eft-electronic-funds-transfer"></a>**EFT (system elektronicznego przelewu środków pieniężnych)**
 
-Sieciowy system przesyłania funduszy z jednego konta bankowego na inne.
+Sieciowy system przesyłania środków z jednego rachunku bankowego na inny.
 
 ###### <a name="event"></a>**zdarzenie**
 
-Zdarzenie umożliwia klasie lub obiektowi wysyłanie wiadomości do innych klas lub obiektów, gdy wydarzy się coś interesującego.
+Zdarzenie umożliwia klasie lub obiektowi powiadamianie innych klas lub obiektów, gdy wydarzy się coś interesującego.
 
 ###### <a name="epe-every-product-every"></a>**EPE (każda część w każdym okresie)**
 
-Koncepcja produkcji Lean używana do ustanowienia regularnego powtarzalnego cyklu produkcyjnego.
+Koncepcja lean manufacturing używana do ustanowienia regularnego powtarzalnego cyklu produkcyjnego.
 
-###### <a name="extension"></a>**wewnętrzny **
+###### <a name="extension"></a>**rozszerzenie**
 
 Dostosowywanie aplikacji przez dodanie funkcjonalności do istniejącego kodu.
 
-### <a name="f"></a>**P**
+### <a name="f"></a>**F**
 
 ###### <a name="financial-dimension"></a>**wymiar finansowy**
 
-Klasyfikator danych finansowych utworzony na podstawie stron, lokalizacji, produktów i działań w organizacji i używany do raportowania zarządzania.
+Klasyfikator danych finansowych utworzony na podstawie stron, lokalizacji, produktów i działań w organizacji i używany do sprawozdawczości zarządczej.
 
 ###### <a name="financial-dimension-value"></a>**wartość wymiaru finansowego**
 
@@ -302,99 +303,99 @@ Element danych w domenie wymiaru finansowego.
 
 ###### <a name="financial-statement"></a>**sprawozdanie finansowe**
 
-Raport, który dokumentuje informacje finansowe i sytuację finansową organizacji.
+Raport obejmujący informacje finansowe i sytuację finansową organizacji.
 
 ###### <a name="fixed-cost"></a>**koszt stały**
 
-Koszt, który nie zależy od zmian przepustowości lub wydajności dostaw produktu.
+Koszt, który nie zależy od zmian mocy produkcyjnych ani możliwości dostaw produktu.
 
 ###### <a name="fixed-currency"></a>**waluta o stałym kursie wymiany**
 
-Waluta która ma stały kurs wymiany w stosunku do innej waluty.
+Waluta, która ma stały kurs wymiany w stosunku do innej waluty.
 
-###### <a name="fixed-quantity-kanban"></a>**Kanban ze stałą ilością**
+###### <a name="fixed-quantity-kanban"></a>**karta Kanban ze stałą ilością**
 
-Typ kanban używany, gdy liczba kart kanban, które są przypisane do reguły kanban, jest stała.
+Typ karty Kanban jest używany, gdy liczba kart Kanban przypisanych do reguły Kanban jest stała.
 
 ###### <a name="flexible-authentication"></a>**uwierzytelnianie kanałowe**
 
-Proces uwierzytelniania, gdzie mogą być uwierzytelnieni użytkownicy w różnych systemach zarządzania tożsamością.
+Proces uwierzytelniania umożliwiający uwierzytelnianie użytkowników w różnych systemach zarządzania tożsamością.
 
 ###### <a name="formula"></a>**formuła**
 
 Numeryczna relacja między danymi wejściowymi i wyjściowymi procesu produkcji.
 
-###### <a name="formula-item"></a>**towar z formuły**
+###### <a name="formula-item"></a>**produkt typu Formuła**
 
-Wynik produkcji seryjnej kontrolowany przez formułę.
+Wynik wsadowego procesu sterowanego przez formułę.
 
 ### <a name="g"></a>**G**
 
 ###### <a name="general-budget-reservation"></a>**rezerwacja środków w budżecie**
 
-Dokument, który jest często używany przez podmioty z sektora publicznego do odkładania lub oznaczania zabudżetowanych środków, tak aby nie były dostępne do innych celów.
+Dokument często używany przez podmioty z sektora publicznego do odkładania środków lub oznaczania ich jako zabudżetowane, aby nie były dostępne do innych celów.
 
 ###### <a name="grace-period"></a>**okres prolongaty**
 
-Okres po określonej dacie, w którym można wywiązać się ze zobowiązań bez kary.
+Okres po określonej dacie, w którym można zrealizować zobowiązanie bez ponoszenia kary.
 
-###### <a name="gst-goods-and-services-tax"></a>**PTU (podatek od towarów i usług)**
+###### <a name="gst-goods-and-services-tax"></a>**PTU (podatek od towarów i usług, GST)**
 
-Podatek VAT nakładany w niektórych krajach/regionach.
+Podatek od wartości dodanej (VAT) pobierany w niektórych krajach/regionach.
 
 ### <a name="i"></a>**I**
 
 ###### <a name="intercompany"></a>**międzyfirmowe**
 
-Występujące między lub odnoszące się do dwóch lub więcej podmiotów prawnych, które stanowią część tej samej organizacji, która konsoliduje wszystkie podmioty prawne.
+Operacje występujące między co najmniej dwiema osobami prawnymi stanowiącymi część tej samej organizacji, która konsoliduje wszystkie podmioty prawne, lub odnoszące się do takich osób prawnych.
 
 ###### <a name="invoice-matching"></a>**uzgadnianie faktur**
 
-Praktyka dopasowania cen i ilości na fakturze od dostawcy z zamówieniami zakupu i dokumentami przyjęcia produktów.
+Praktyka dopasowywania cen i ilości produktu na fakturze od dostawcy z zamówieniami zakupu i dokumentami przyjęcia produktów.
 
-###### <a name="item-allocation-key"></a>**klucz alokacji towaru**
+###### <a name="item-allocation-key"></a>**klucz alokacji produktów**
 
-Rodzina produktów zgrupowana na potrzeby prognozowania i planowania popytu.
+Grupa w ramach rodziny produktów używana do prognozowania i planowania popytu.
 
-###### <a name="item-relation"></a>**relacja towaru**
+###### <a name="item-relation"></a>**relacja produktu**
 
-Odwołanie do grupy alokacji towaru lub towaru i jego wymiarów produktu w regule kanban.
+Odwołanie do grupy alokacji produktów lub produktu i jego wymiarów produktu w regule Kanban.
 
-### <a name="k"></a>**tys.**
+### <a name="k"></a>**K**
 
 ###### <a name="kanban"></a>**Kanban**
 
-Sygnał, który komunikuje wymaganą ilość produktu.
+Sygnał komunikujący wymaganą ilość produktu.
 
 ###### <a name="kanban-flow"></a>**przepływ Kanban**
 
-Definiuje kolejność działań wykonywanych dla kart Kanban utworzonych dla reguły kanban.
+Definiuje kolejność działań wykonywanych dla kart Kanban utworzonych dla reguły Kanban.
 
 ###### <a name="kanban-job"></a>**zadanie w systemie Kanban**
 
-Działanie procesu lub transferu w przepływie produkcji, które zostanie wywołane przez Kanban.
+Działanie procesu lub transferu w przepływie produkcji, które zostanie wywołane przez kartę Kanban.
 
 ###### <a name="kanban-job-consumption"></a>**zużycie w ramach zadania w systemie Kanban**
 
-Wycofanie składników produktu z magazynu w celu ukończenia zadań produkcji kanban.
+Wycofanie składników produktu z magazynu w celu ukończenia zadań produkcji w systemie Kanban.
 
 ###### <a name="kanban-product-quantity"></a>**ilość produktu na karcie Kanban**
 
-Liczba zapotrzebowań na towary, które są przenoszone na karcie kanban zgodnie z regułą kanban.
+Ilość zapotrzebowań na pozycje przenoszonych na karcie Kanban zgodnie z regułą Kanban.
 
 ###### <a name="kanban-rule"></a>**reguła Kanban**
 
-Reguła w systemie lean manufacturing, która realizuje zasady planowania i uzupełnienia materiałów przez kontrolowanie sposobu koordynowania działań procesu i transferu w przepływach produkcji.
+Reguła w systemie lean manufacturing, która realizuje zasady planowania i uzupełnienia zapasów przez kontrolowanie sposobu koordynowania działań procesu i transferu w przepływach produkcji.
 
-### <a name="l"></a>**W**
+### <a name="l"></a>**L**
 
 ###### <a name="lean-manufacturing"></a>**lean manufacturing**
 
-Filozofia, według której operacje produkcyjne promują przepływy produkcji Lean i działania biznesowe.
+Filozofia, według której operacje produkcyjne promują proste przepływy produkcji i działania biznesowe.
 
-###### <a name="lean-schedule-group"></a>**grupa harmonogramów produkcji lean**
+###### <a name="lean-schedule-group"></a>**grupa prostych harmonogramów produkcji**
 
-Sposób agregowania towarów do produkcji, np. na podstawie ustawień grupy, grupy wysyłki lub grupy transportu.
+Sposób agregowania pozycji do produkcji, np. na podstawie grupy ustawień, grupy wysyłki lub grupy transportu.
 
 ###### <a name="ledger-account"></a>**konto księgowe**
 
@@ -402,21 +403,21 @@ Klasyfikator utworzony z kombinacji wartości konta głównego i wartości innyc
 
 ###### <a name="license-code"></a>**kod licencji**
 
-Alfanumeryczny klucz, który daje stronie prawo do używania oprogramowania lub składników oprogramowania zgodnie z warunkami umowy licencyjnej i który uaktywnia i dezaktywuje moduły oprogramowania, możliwości oprogramowania i funkcje oprogramowania.
+Alfanumeryczny klucz, który daje stronie prawo do używania oprogramowania lub składników oprogramowania zgodnie z warunkami umowy licencyjnej i który aktywuje i dezaktywuje moduły oprogramowania, możliwości oprogramowania i funkcje oprogramowania.
 
 ###### <a name="liquidity"></a>**płynność**
 
-Zdolność strony do użycia bieżących aktywów do rozliczenia bieżących zobowiązań.
+Zdolność strony do rozliczania bieżących zobowiązań za pomocą bieżących aktywów.
 
-### <a name="m"></a>**SC**
+### <a name="m"></a>**M**
 
-###### <a name="manufacturing-overhead-based-on-material"></a>**Koszty ogólne produkcji oparte na materiale**
+###### <a name="manufacturing-overhead-based-on-material"></a>**koszty ogólne produkcji oparte na materiale**
 
-Koszty ogólne produkcji są wyrażane jako formuły obliczania kosztów pośrednich dla procentu dopłat. Grupa kosztów przypisana do materiałów składowych służy jako podstawa dla formuły obliczania. Formuły obliczania można definiować dla pojedynczych produktów lub grup towarów, które są przypisane do produktów, co zapewnia większą elastyczność obliczania kosztów ogólnych produkcji w oparciu o materiały.
+Koszty ogólne produkcji są wyrażane jako formuły obliczania kosztów pośrednich dla procentu dopłat. Grupa kosztów przypisana do materiałów składowych służy jako podstawa dla formuły obliczania. Formuły obliczania można definiować dla pojedynczych produktów lub grup pozycji, które są przypisane do produktów, w celu zapewnienia większej elastyczności obliczania kosztów ogólnych produkcji w oparciu o materiały.
 
 ###### <a name="master-scheduling"></a>**planowanie główne**
 
-Proces generowania harmonogramu dopasowanie podaży do popytu.
+Proces generowania harmonogramu dopasowania podaży do popytu.
 
 ###### <a name="model"></a>**model**
 
@@ -424,13 +425,13 @@ Model zawiera elementy kodu i metadane odwołania. Tworzy się go i kontroluje w
 
 ###### <a name="model-element"></a>**element modelu**
 
-Model stanowi grupę elementów (plików źródłowych i metadanych) wspólnie tworzących oprogramowanie dystrybucyjne. Model jest pojęciem czasu projektowania.
+Model stanowi grupę elementów (plików źródłowych i metadanych) wspólnie tworzących rozwiązanie programowe, które można rozpowszechniać. Model jest pojęciem etapu projektowania.
 
 ### <a name="n"></a>**N**
 
 ###### <a name="nbv-net-book-value"></a>**NBV (wartość księgowa netto)**
 
-Wartość środka trwałego obliczana jako różnica między pierwotnym kosztem środka trwałego i jego zakumulowanymi amortyzacjami.
+Wartość środka trwałego obliczana jako różnica między pierwotnym kosztem środka trwałego i jego umorzeniem.
 
 ### <a name="o"></a>**O**
 
@@ -440,7 +441,7 @@ Dozwolona operacja tworzenia, odczytu, aktualizacji, usunięcia lub wykonania na
 
 ###### <a name="operating-unit"></a>**jednostka operacyjna**
 
-Organizacja, która dzieli kontrolę nad zasobami ekonomicznymi i procesami operacyjnymi między osoby, które mają obowiązek maksymalizować wykorzystanie ograniczonych zasobów i usprawniać procesy oraz są rozliczane z wyników.
+Organizacja dzieląca kontrolę nad zasobami ekonomicznymi i procesami operacyjnymi między osoby, które mają obowiązek maksymalizować wykorzystanie ograniczonych zasobów i usprawniać procesy oraz są rozliczane z wyników.
 
 ###### <a name="output-product"></a>**produkt**
 
@@ -448,17 +449,17 @@ Fizyczne produkty powstałe w wyniku działania.
 
 ###### <a name="overlayering"></a>**nakładanie**
 
-Metoda dostosowywania kodu źródłowego poprzez wprowadzenie nowego kodu źródłowego, który zastępuje kod domyślny.
+Metoda dostosowywania kodu źródłowego poprzez wprowadzenie nowego kodu źródłowego, który przesłania domyślny kod źródłowy.
 
-### <a name="p"></a>**PB**
+### <a name="p"></a>**P**
 
-###### <a name="package"></a>**opakowanie**
+###### <a name="package"></a>**pakiet**
 
-Opakowanie jest zgodną i możliwą do wdrożenia jednostką dla co najmniej jednego modelu.
+Pakiet to możliwa do utworzenia i wdrożenia jednostka obejmująca jeden lub kilka modeli.
 
 ###### <a name="party"></a>**strona**
 
-Podmiot, który przyjmuje prawnie wiążącą rolę, gdy uczestniczy w relacjach umownych.
+Podmiot przyjmujący prawnie wiążącą rolę w przypadku uczestniczenia w relacjach umownych.
 
 ###### <a name="party"></a>**strona**
 
@@ -466,23 +467,23 @@ Osoba lub organizacja, która uczestniczy w działaniach gospodarczych.
 
 ###### <a name="pegging"></a>**oznaczanie transakcji**
 
-Proces śledzenia ilości wymaganego towaru do jego źródła.
+Proces śledzenia ilości potrzebnej pozycji do jej źródła.
 
 ###### <a name="pegging-event"></a>**powiązania zlecenia z popytem źródłowym**
 
 Zdarzenie przepływu zasobów, które sygnalizuje popyt na produkt.
 
-###### <a name="phantom-item"></a>**fantom**
+###### <a name="phantom-item"></a>**pozycja fantomowa**
 
-Towar, który jest produkowany, ale nie jest magazynowany.
+Pozycja, która jest produkowana, ale nie jest magazynowana.
 
 ###### <a name="planned-intercompany-demand"></a>**zaplanowany popyt międzyfirmowy**
 
-Przewidywane zapotrzebowanie na produkt podmiotu prawnego, który przyjmuje rolę dostawcy. Planowane zapotrzebowanie jest generowane z planowanego zapotrzebowania na produkt zgłoszonego przez następny podmiot prawny.
+Przewidywane zapotrzebowanie na produkt ze strony jednostki prawnej, która przyjmuje rolę dostawcy. Planowane zapotrzebowanie jest generowane z planowanego zapotrzebowania na produkt zgłoszonego przez jednostkę prawną bliżej odbiorcy.
 
 ###### <a name="post"></a>**księgowanie**
 
-Rejestrować wartość pieniężną zdarzenia gospodarczego na określonym koncie lub podsumować i przeklasyfikować ogólne i pomocnicze zapisy na koncie w arkuszu na ogólne i pomocnicze zapisy na koncie księgi.
+Rejestrowanie wartości pieniężnej zdarzenia gospodarczego na określonym koncie lub podsumowanie i przeklasyfikowanie ogólnych i pomocniczych zapisów na koncie w arkuszu na ogólne i pomocnicze zapisy na koncie księgowym.
 
 ###### <a name="preparer"></a>**wystawca**
 
@@ -490,11 +491,11 @@ Osoba, która tworzy dokument źródłowy, aby zainicjować żądanie zasobów e
 
 ###### <a name="privilege"></a>**uprawnienie**
 
-Jedno lub więcej uprawnień, które użytkownik musi mieć, aby wykonać zadanie.
+Jedno lub kilka uprawnień, które użytkownik musi mieć, aby wykonać zadanie.
 
 ###### <a name="procurement-catalog"></a>**katalog zaopatrzenia**
 
-Lista ofert produktów, które są pogrupowane według kategorii zaopatrzenia. Katalog zaopatrzenia służy do żądania produktów do użytku wewnętrznego organizacji.
+Wykaz ofert produktów pogrupowanych według kategorii zaopatrzenia. Katalog zaopatrzenia służy do żądania produktów do użytku wewnętrznego organizacji.
 
 ###### <a name="product-component"></a>**składnik produktu**
 
@@ -502,91 +503,91 @@ Część produktu.
 
 ###### <a name="product-dimension"></a>**wymiar produktu**
 
-Atrybuty rozmiaru, koloru lub konfiguracji produktu, które są używane do konfiguracji opartej na wymiarach.
+Atrybuty rozmiaru, koloru lub konfiguracji produktu, które są używane do konfiguracji opartej na wymiarach (..\wymiary finansowe\konfiguracja oparta na wymiarach).
 
 ###### <a name="product-family"></a>**rodzina produktów**
 
-Unikatowe grupowanie towarów, usług lub praw, które uczestniczą w tym samym działaniu produkcji lub dostawy lub są oferowane tym samym segmentom rynku. W programie Dynamics 365 for Operations grupowanie jest reprezentowane za pomocą klucza alokacji prognozy.
+Unikatowa grupa towarów, usług lub praw, które są objęte tymi samymi działaniami produkcji lub dostawy albo są oferowane w tych samych segmentach rynku. W programie Dynamics 365 for Operations taka grupa jest reprezentowana za pomocą klucza alokacji prognozy.
 
 ###### <a name="product-master"></a>**produkt główny**
 
 Standardowe lub funkcjonalne przedstawienie produktu, które stanowi podstawę do konfigurowania wariantów produktu.
 
-###### <a name="product-receipt"></a>**odbiór produktu**
+###### <a name="product-receipt"></a>**przyjęcie produktu**
 
-Dokument źródłowy, który dokumentuje przyjęcie zamówionych produktów , przyjęcie zwróconych produktów lub przyjęcie produktów otrzymanych w przesyłce.
+Dokument źródłowy zaświadczający o przyjęciu zamówionych produktów, przyjęciu zwróconych produktów lub przyjęciu produktów w ramach konsygnacji.
 
 ###### <a name="product-variant"></a>**wariant produktu**
 
-konfiguracja produktu głównego.
+Konfiguracja produktu głównego.
 
 ###### <a name="production-flow"></a>**przepływ produkcji**
 
-Proces produkcji zaprojektowany przy użyciu zasad Lean.
+Proces produkcji zaprojektowany przy użyciu zasad lean manufacturing.
 
 ###### <a name="production-flow-model"></a>**model przepływu produkcji**
 
-Reprezentacja zdolności produkcyjnej zapewnionej przez grupę komórek roboczych w procesie przepływu produkcyjnego.
+Reprezentacja zdolności produkcyjnej zapewnionej przez grupę komórek roboczych w procesie przepływu produkcji.
 
 ###### <a name="production-order"></a>**zlecenie produkcyjne**
 
-Dokument źródłowy, który dokumentuje wymagania wyprodukowania towarów w celu zaspokojenia popytu.
+Dokument źródłowy zawierający wymagania dotyczące wyprodukowania towarów w celu zaspokojenia popytu.
 
 ###### <a name="production-schedule"></a>**harmonogram produkcji**
 
-Harmonogram produkowania określonego towaru i ilości towaru w określonym czasie i przez określone zasoby ludzkie i operacyjne.
+Harmonogram produkowania określonej pozycji i ilości pozycji w określonym czasie i przez określone zasoby ludzkie i operacyjne.
 
 ###### <a name="prospect"></a>**prospekt**
 
-Uczestnik, który ma istniejącą i potencjalną zdolność do świadczenia usługi lub prawdopodobnej przyszłej korzyści ekonomicznej podmiotowi prawnemu.
+Uczestnik z potencjalną zdolnością do świadczenia usługi lub prawdopodobnej przyszłej korzyści ekonomicznej na rzecz jednostki prawnej.
 
 ###### <a name="purchase-agreement-policy"></a>**klauzula zmiany umowy zakupu**
 
-Zasady, która autoryzują strony do modyfikowania warunków umowy zakupu.
+Zasady, które upoważniają strony do modyfikowania warunków umowy zakupu.
 
 ###### <a name="purchase-order-policy"></a>**klauzula zmiany zamówienia zakupu**
 
-Zasady, które autoryzują strony do modyfikowania warunków zamówienia zakupu oraz kontroli przetwarzania zamówień.
+Zasady, które upoważniają strony do modyfikowania warunków zamówienia zakupu oraz do kontroli przetwarzania zamówień.
 
 ###### <a name="purchase-quotation"></a>**oferta zakupu**
 
-Dokument źródłowy, który dokumentuje ofertę kupna ilość produktu za określoną cenę i do określonego dnia w odpowiedzi na zapytanie ofertowe w procesie zaopatrzenia.
+Dokument źródłowy zawierający ofertę kupna pewnej ilości produktu za określoną cenę i do określonego dnia w odpowiedzi na zapytanie ofertowe w procesie zaopatrzenia.
 
-###### <a name="purchase-requisition"></a>**zapotrzebowanie zakupu**
+###### <a name="purchase-requisition"></a>**zapotrzebowanie na zakup**
 
-Dokument źródłowy, który dokumentuje żądania produktów, aby mogły one zostać wysłane do przeglądu i użyte do autoryzowania zakupu przez organizację zakupów.
+Dokument źródłowy z żądaniami produktów, który umożliwia ich przedłożenie do przeglądu i użycie do autoryzowania zakupu przez organizację zakupów.
 
-### <a name="q"></a>**kwd.**
+### <a name="q"></a>**Q**
 
 ###### <a name="quantity-variance"></a>**odchylenie ilości**
 
 Różnica między zamówioną ilością produktu i przyjętą ilością produktu, gdy nie oczekuje się żadnych więcej przyjęć.
 
-### <a name="r"></a>**OD**
+### <a name="r"></a>**R**
 
 ###### <a name="receipt-advice"></a>**podsumowanie przyjęć**
 
-Dokument biznesowy, który dokumentuje podsumowanie produktów, które kupujący odbiera od dostawcy.
+Dokument biznesowy z podsumowaniem produktów, które kupujący odbiera od dostawcy.
 
 ###### <a name="reconciliation"></a>**uzgodnienie**
 
-Praktyka korygowani dwóch lub więcej kont lub zestawień tak, aby dane liczbowe były zgodne.
+Praktyka korygowania co najmniej dwóch kont lub zestawień w taki sposób, aby dane liczbowe były zgodne.
 
 ###### <a name="reduction-key"></a>**klucz redukcji**
 
-Metoda, która umożliwia zwiększenie lub zmniejszenie wymagań prognozy w planowaniu głównym, oparta na wartościach procentowych zdefiniowanych przez użytkownika, które są stosowane w określonych okresach.
+Metoda służąca do zwiększania lub zmniejszania wymagań prognozy w planowaniu głównym na podstawie wartości procentowych zdefiniowanych przez użytkownika, które są stosowane w konkretnych okresach.
 
 ###### <a name="register"></a>**rejestr**
 
-Rekord, który jest używany do rejestrowania operacyjnych, prawnych i finansowych konsekwencji zdarzenia przepływu zasobów w systemie księgowym.
+Zapis używany do rejestrowania operacyjnych, prawnych i finansowych konsekwencji zdarzenia przepływu zasobów w systemie księgowym.
 
-###### <a name="regulated-product"></a>**produkt regulowany**
+###### <a name="regulated-product"></a>**produkt podlegający regulacjom prawnym**
 
-Produkt, który jest regulowany przez organ rządowy, który wymaga zgodności i raportowania audytu.
+Produkt objęty regulacjami ustanawianymi przez organ rządowy, dla którego wymagane jest zapewnienie zgodności i sprawozdawczość kontrolna.
 
 ###### <a name="rfq-request-for-quotation"></a>**ZO (zapytanie ofertowe)**
 
-Dokument źródłowy, który dokumentuję zaproszenie do złożenia oferty na zaopatrzenie w ilość produktu za określoną cenę i do określonego dnia.
+Dokument źródłowy z zaproszeniem do złożenia oferty na dostarczenie ilości produktu za określoną cenę i do określonego dnia.
 
 ###### <a name="requester"></a>**zleceniodawca**
 
@@ -596,47 +597,47 @@ Osoba, która żąda zasobów ekonomicznych.
 
 Produkt, którego dystrybucja jest ograniczona lub regulowana przez organ rządowy.
 
-### <a name="s"></a>**N**
+### <a name="s"></a>**S**
 
 ###### <a name="sales-agreement"></a>**umowa sprzedaży**
 
-Dokument źródłowy, który dokumentuje umowę między dwiema lub więcej stronami opartą na ustaleniu, że strona sprzedająca zobowiązuje się do sprzedaży określonej ilości lub wartości produktu przez pewien czas w zamian za korzystne ceny i rabaty.
+Dokument źródłowy zawierający umowę między dwiema lub więcej stronami opartą na ustaleniu, że strona sprzedająca zobowiązuje się do sprzedaży określonej ilości lub wartości produktu przez pewien czas w zamian za korzystne ceny i rabaty.
 
 ###### <a name="sales-agreement-policy"></a>**klauzula zmiany umowy sprzedaży**
 
-Zasady, która autoryzują strony do modyfikowania warunków umowy sprzedaży.
+Zasady, które upoważniają strony do modyfikowania warunków umowy sprzedaży.
 
 ###### <a name="sales-order-policy"></a>**klauzula zmiany zamówienia sprzedaży**
 
-Zasady, które autoryzują strony do modyfikowania warunków zamówienia sprzedaży i kontrolowania procesów przetwarzania zamówień i płatności.
+Zasady, które upoważniają strony do modyfikowania warunków zamówienia sprzedaży i kontrolowania procesów przetwarzania zamówień i płatności.
 
 ###### <a name="sales-quotation"></a>**oferta sprzedaży**
 
-Dokument źródłowy, który dokumentuje ofertę dostarczenia ilości produktu za określoną cenę i do określonego dnia w odpowiedzi na zapytanie ofertowe w procesie sprzedaży.
+Dokument źródłowy z ofertą dostarczenia pewnej ilości produktu za określoną cenę i w określonym terminie w odpowiedzi na zapytanie ofertowe w procesie sprzedaży.
 
 ###### <a name="security-role"></a>**rola zabezpieczeń**
 
-Określony zestaw uprawnień dostępu do aplikacji. Rola zabezpieczeń przypisana do użytkownika określa zadania, które użytkownik może wykonywać i części interfejsu użytkownika, które użytkownik może przeglądać. Wszyscy użytkownicy musi mieć przypisaną co najmniej jedną rolę zabezpieczeń w celu uzyskania dostępu do systemu.
+Zdefiniowany zestaw uprawnień dostępu do aplikacji. Rola zabezpieczeń przypisana do użytkownika określa zadania, które użytkownik może wykonywać, i części interfejsu użytkownika, które użytkownik może przeglądać. Każdy użytkownik musi mieć przypisaną co najmniej jedną rolę zabezpieczeń w celu uzyskania dostępu do systemu.
 
 ###### <a name="segregation-of-duties"></a>**podział obowiązków**
 
-Zasada projektowania używana do zmniejszenia ryzyka nadużyć finansowych, nieprawidłowości i błędów, która rozdziela obowiązki dotyczące rejestrowania, weryfikacji, autoryzacji, nadzoru nad aktywami osób, które uczestniczą w transakcjach gospodarczych, dokumentują je lub rejestrują ich finansowe konsekwencje.
+Zasada projektowania używana do zmniejszenia ryzyka nadużyć finansowych, nieprawidłowości i błędów, która oddziela obowiązki w zakresie rejestrowania, weryfikacji, autoryzacji, opieki nad aktywami oraz okresowych przeglądów w przypadku osób, które uczestniczą w transakcjach gospodarczych, dokumentują je lub rejestrują ich finansowe konsekwencje.
 
 ###### <a name="sequencing"></a>**sekwencja**
 
-Kolejność w której przetwarzane są zadania lub operacje są wykonywane w zakładzie wytwórczym, aby osiągnąć cele.
+Kolejność przetwarzania zadań lub wykonywania operacji w zakładzie produkcyjnym w ramach realizacji celów.
 
 ###### <a name="shared-asset"></a>**aktywa wspólne**
 
-Aktywa używane przez więcej niż jeden ośrodek wypracowujący środki pieniężne. Przykładem jest centrum dystrybucji, które służy do przechowywania towarów przed ich przetransportowaniem do różnych rynków, które współużytkują to samo centrum dystrybucji.
+Składnik aktywów używany przez więcej niż jeden ośrodek wypracowujący środki pieniężne. Przykładem jest wspólne dla różnych rynków centrum dystrybucji używane do magazynowania pozycji przed ich transportem na te rynki.
 
 ###### <a name="single-use-kanban"></a>**Kanban jednorazowy**
 
-Typ kanban, używany wraz z regułą kanban ze stałą ilością, aby zaspokoić wyjątkowo wysokie zapotrzebowanie. Kanban jednorazowy nie jest wyzwalany, gdy nowy kanban zostanie odrzucony.
+Typ karty Kanban używany wraz z regułą Kanban ze stałą ilością w celu zaspokojenia wyjątkowo wysokiego zapotrzebowania. Kanban jednorazowy nie aktywuje nowej karty Kanban, gdy zostanie odrzucony.
 
 ###### <a name="smart-rounding"></a>**przyjazne zaokrąglanie**
 
-Praktyka marketingowa, że należy wyznaczać ceny przy użyciu liczb nieparzystych, które są nieznacznie mniejsze niż ich najbliższa zaokrąglona liczba.
+Praktyka marketingowa ustalania cen przy użyciu liczb nieparzystych, które są minimalnie mniejsze niż ich najbliższe zaokrąglenie.
 
 ###### <a name="source-requirement"></a>**wymaganie źródłowe**
 
@@ -644,7 +645,7 @@ Ilość produktu udokumentowana w wierszu dokumentu źródłowego, która tworzy
 
 ###### <a name="statistical-baseline-forecast"></a>**bazowa prognoza statystyczna**
 
-Oszacowanie przyszłego popytu utworzonego przy użyciu algorytmu prognozowania danych historycznych transakcji.
+Oszacowanie przyszłego popytu tworzone przez zastosowanie algorytmu prognozowania do danych transakcji historycznych.
 
 ###### <a name="supermarket"></a>**supermarket**
 
@@ -652,67 +653,67 @@ Magazyn działający na zasadzie just-in-time, który ma ograniczoną pojemnoś�
 
 ###### <a name="system-defined-financial-dimension-type"></a>**zdefiniowany w systemie typ wymiaru finansowego**
 
-Wymiar finansowy mapowany do tabeli lub widoku w bazie danych, który reprezentuje typ jednostki i którego wartości znajdują się w domenie jednego atrybutu tego typu jednostki.
+Wymiar finansowy zmapowany na tabelę lub widok w bazie danych, który reprezentuje typ jednostki i którego wartości znajdują się w domenie jednego atrybutu tego typu jednostki.
 
-### <a name="t"></a>**trl.**
+### <a name="t"></a>**T**
 
 ###### <a name="takt-time"></a>**czas taktu**
 
-Czas potrzebny do wyprodukowania jednej jednostki produktu.
+Czas potrzebny na wyprodukowanie jednej jednostki produktu.
 
-###### <a name="task-guide"></a>**Przewodniki po zadaniach**
+###### <a name="task-guide"></a>**Przewodnik zadania**
 
-Kontrolowane działania realizowane za pomocą kroków w Rejestratorze zadań. Przewodnik po zadaniach prowadzi użytkownika przez zarejestrowane działania. Wszystkie zachowania związane z zabezpieczeniami, danymi i aplikacją są takie same przy wypełnianiu kroków z Przewodnika po zadaniach, jak bez przewodnika. Przewodnik po zadaniach korzysta z tych samych instrumentów co Rejestrator zadań, tak aby dało się ustalić, kiedy użytkownik ukończył pożądany krok, by wyświetlić mu monit o podjęcie następnego kroku z nagrania.
+Kontrolowane, wspomagane przejście przez kroki w rejestrowaniu zadania. Przewodnik zadania prowadzi użytkownika przez zarejestrowane działanie. Wszystkie zachowania dotyczące zabezpieczeń, danych i aplikacji są takie same, niezależnie od tego, czy użytkownik korzysta z Przewodnika zadania. Przewodnik zadania korzysta z tych samych instrumentów co Rejestrator zadań, aby ustalić, kiedy użytkownik ukończył zamierzony krok, i wyświetlić monit o podjęcie następnego kroku z rejestrowanego zadania.
 
 ###### <a name="task-recorder"></a>**Rejestrator zadań**
 
-Narzędzie instalowane fabrycznie w programie Dynamics 365 for Operations. Rejestruje ono wszystkie zdarzenia wprowadzone przez użytkownika w interfejsie programu Dynamics 365 for Operations, które zostały wykonane na serwerze — w tym dodanie wartości, zmianę ustawień, usunięcie danych itd.
+Narzędzie instalowane fabrycznie w programie Dynamics 365 for Operations. Rejestruje ono wszystkie zdarzenia wprowadzane przez użytkownika w interfejsie użytkownika programu Dynamics 365 for Operations, które zostały wykonane na serwerze, w tym dodane wartości, zmienione ustawienia, usunięte dane itp.
 
-###### <a name="task-recording"></a>**Rejestrowanie zadań**
+###### <a name="task-recording"></a>**Rejestrowanie zadania**
 
 Plik zawierający działania i adnotacje zarejestrowane po uruchomieniu Rejestratora zadań w programie Microsoft Dynamics 365 for Operations.
 
 ###### <a name="three-way-matching-policy"></a>**trzyelementowe zasady uzgadniania**
 
-Zasady uzgadniania, które wymagają dopasowania jednej lub więcej cen z faktury od dostawcy z jedną lub więcej cen zamówienia zakupu i wymagają dopasowania jednej lub więcej ilości z faktury od dostawcy z jedną lub więcej ilości z dokumentu przyjęcia produktów.
+Zasady uzgadniania, które wymagają dopasowania jednej lub kilku cen z faktury od dostawcy do jednej lub kilku cen zamówienia zakupu oraz dopasowania jednej lub kilku ilości z faktury od dostawcy do jednej lub kilku ilości z dokumentu przyjęcia produktów.
 
 ###### <a name="transfer-batch"></a>**partia do przeniesienia**
 
-Ilość jednego lub więcej towarów, które są przenoszone lub mogą być przeniesione.
+Ilość jednej lub kilku pozycji, które są przenoszone lub mogą być przeniesione.
 
 ###### <a name="two-way-matching-policy"></a>**dwuelementowe zasady uzgadniania**
 
-Zasady uzgadniania, które wymagają dopasowania jednej lub więcej cen z faktury od dostawcy z jedną lub więcej cen z zamówienia zakupu.
+Zasady uzgadniania, które wymagają dopasowania jednej lub kilku cen z faktury od dostawcy do jednej lub kilku cen z zamówienia zakupu.
 
 ### <a name="u"></a>**U**
 
 ###### <a name="user-defined-financial-dimension-type"></a>**zdefiniowany przez użytkownika typ wymiaru finansowego**
 
-Wymiar finansowy mapowany do listy wartości zdefiniowanej przez użytkownika.
+Wymiar finansowy zmapowany na listę wartości zdefiniowanych przez użytkownika.
 
 ### <a name="v"></a>**V**
 
 ###### <a name="value-stream"></a>**strumień wartości**
 
-Jednostka operacyjna, która kontroluje jeden lub więcej przepływów produkcji.
+Jednostka operacyjna, która kontroluje co najmniej jeden przepływ produkcji.
 
 ###### <a name="variant-configuration-technology"></a>**technologia konfigurowania wariantów**
 
-Metoda modelowania produktów głównych i wyszukiwanie konfiguracji wariantu produktu.
+Metoda modelowania produktów głównych i wyszukiwania konfiguracji wariantów produktu.
 
 ###### <a name="vat-value-added-tax"></a>**VAT (podatek od towarów i usług)**
 
-Podatek od produktów na każdym etapie ich produkcji na podstawie wartości dodanej podczas tego etapu.
+Podatek od produktów na każdym etapie ich produkcji naliczany na podstawie wartości dodanej podczas tego etapu.
 
 ###### <a name="vendor-catalog"></a>**katalog dostawcy**
 
-Lista ofert produktów, które są dostępne do zakupu od dostawcy.
+Wykaz produktów, które są dostępne do zakupu od dostawcy.
 
 ###### <a name="vendor-invoice"></a>**faktura od dostawcy**
 
-Dokument źródłowy, który dokumentuje wniosek o płatność dla dostawcy. Faktura od dostawcy może odwoływać się do jednego lub więcej zamówień zakupu. Gdy faktura od dostawcy jest autoryzowana, płatność dla dostawcy może zostać wykonana.
+Dokument źródłowy z żądaniem płatności dla dostawcy. Faktura od dostawcy może odwoływać się do jednego lub kilku zamówień zakupu. Płatność dla dostawcy może zostać wykonana po autoryzowaniu faktury od dostawcy.
 
-### <a name="w"></a>**Ś**
+### <a name="w"></a>**W**
 
 ###### <a name="work-cell"></a>**komórka robocza**
 
@@ -720,11 +721,11 @@ Grupa zasobów, która uczestniczy w działaniu przepływu produkcji.
 
 ###### <a name="worker"></a>**pracownik**
 
-Osoba, która przyjmuje rolę pracownika lub zleceniobiorcy i jest opłacana w zamian za usługi.
+Osoba, która przyjmuje rolę pracownika etatowego lub zleceniobiorcy i jest opłacana w zamian za świadczenie usług.
 
 ###### <a name="workspace"></a>**obszar roboczy**
 
-Strona z przeglądem działania wykonywanego przez użytkownika. Informacje na temat pracy i inne dane pokrewne są wyświetlane za pomocą tytułów, list i wykresów. Dane pochodzą z wielu źródeł, a strona wyświetla częste zadania związane z tymi danymi. Kafelki wyświetlane w sekcji podsumowania obszaru roboczego są również wyświetlane w odpowiedniej sekcji na pulpicie nawigacyjnym.
+Strona z przeglądem jednego z działań wykonywanych przez użytkownika. Na stronie są używane kafelki, listy i wykresy w celu wyświetlania pracy oczekującej i pokrewnych danych z wielu źródeł. Na stronie wyróżnione są częste zadania powiązane z tymi danymi. Kafelki wyświetlane w sekcji podsumowania obszaru roboczego są również wyświetlane w powiązanej sekcji na pulpicie nawigacyjnym.
 
 
 
