@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16461
 ms.assetid: 2b85491c-f830-4e79-a2cb-681b7ced6988
 ms.search.region: global
@@ -18,15 +18,19 @@ ms.search.industry: Retail
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 26c628e10aaa5f47bc87d7510ca8f41ab3630204
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: a5c45bb0b9ed10c989a3222a751df3f454b14a0b
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="create-and-manage-attributes"></a>Tworzenie atrybutów i zarządzanie nimi
+
+[!include[banner](includes/banner.md)]
+
 
 Ten artykuł opisuje atrybuty dostępne w programie Microsoft Dynamics 365 for Operations. Atrybuty pozwalają opisać produkt i jego charakterystykę w polach definiowanych przez użytkownika.
 
@@ -34,110 +38,28 @@ Atrybuty pozwalają opisać produkt i jego charakterystykę w polach definiowany
 
 #### <a name="examples"></a>Przykłady
 
-Kategoria
+| Kategoria   | Atrybut                | Możliwe wartości          | Wartość domyślna |
+|------------|--------------------------|-----------------------------|---------------|
+| Telewizja i wideo | Marka                    | Dowolna prawidłowa wartość marki       | Brak          |
+| TELEWIZJA         | Rozmiar ekranu              | 20–80 cali                     | Brak          |
+| TELEWIZJA         | Rozdzielczość w pionie      | 480i, 720p, 1080i, lub 1080p | 1080p         |
+| TELEWIZJA         | Częstotliwość odświeżania ekranu      | 60hz, 120hz, lub 240hz       | 60hz          |
+| TELEWIZJA         | Wejścia HDMI              | 0–10                        | 3             |
+| TELEWIZJA         | Wejścia DVI               | 0–10                        | 1             |
+| TELEWIZJA         | Wejście kompozytowe         | 0–10                        | 2             |
+| TELEWIZJA         | Wejścia komponentów         | 0–10                        | 1             |
+| LCD        | 3D Ready                 | Tak lub Nie                   | Tak           |
+| LCD        | Obsługa 3D               | Tak lub Nie                   | Nr            |
+| Plazmowy     | Minimalna temperatura      | 32–110 stopni              | 32            |
+| Plazmowy     | Maksymalna temperatura        | 32–110 stopni              | 100           |
+| Projekcyjny | Gwarancja na lampę kineskopową | 6, 12 lub 18 miesięcy         | 12            |
+| Projekcyjny | #  lamp kineskopowych    | 1–5                         | 3             |
 
-Atrybut
-
-Możliwe wartości
-
-Wartość domyślna
-
-Telewizja i wideo
-
-Marka
-
-Dowolna prawidłowa wartość **marki**
-
-Brak
-
-TELEWIZJA
-
-Rozmiar ekranu
-
-**20"**–**80"**
-
-Brak
-
-Rozdzielczość w pionie
-
-**480i**, **720p**, **1080i**, lub **1080p**
-
-**1080p**
-
-Częstotliwość odświeżania ekranu
-
-**60hz**, **120hz**, lub **240hz**
-
-**60hz**
-
-Wejścia HDMI
-
-**0**–**10**
-
-**3**
-
-Wejścia DVI
-
-**0**–**10**
-
-**1**
-
-Wejście kompozytowe
-
-**0**–**10**
-
-**2**
-
-Wejścia komponentów
-
-**0**–**10**
-
-**1**
-
-LCD
-
-3D Ready
-
-**Tak** lub **Nie**
-
-**Tak**
-
-Obsługa 3D
-
-**Tak** lub **Nie**
-
-**Nie**
-
-Plazmowy
-
-Minimalna temperatura
-
-**32**–**110** stopni
-
-**32**
-
-Maksymalna temperatura
-
-**32**–**110** stopni
-
-**100**
-
-Projekcyjny
-
-Gwarancja na lampę kineskopową
-
-**6**, **12** lub **18** miesięcy
-
-**12**
-
-\# lamp kineskopowych
-
-**1**–**5**
-
-**3**
 
 ## <a name="attribute-type"></a>Typ atrybutu
-  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) Atrybuty są oparte na typach atrybutów. Typ atrybutu określa typ danych, które można wprowadzić dla określonego atrybutu. Obecnie program Microsoft Dynamics 365 for Operations obsługuje następujące typy atrybutów:
+  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
+  
+Atrybuty są oparte na typach atrybutów. Typ atrybutu określa typ danych, które można wprowadzić dla określonego atrybutu. Obecnie program Microsoft Dynamics 365 for Operations obsługuje następujące typy atrybutów:
 
 -   **Waluta** — ten typ atrybutu obsługuje wartości waluty. Może być ograniczona (czyli obsługuje zakres wartości), lub może pozostać otwarta.
 -   **Data i godzina** — ten typ atrybutu obsługuje wartości daty i godziny. Może być ograniczona (czyli obsługuje zakres wartości), lub może pozostać otwarta.
@@ -174,5 +96,7 @@ Gwarancja na lampę kineskopową
 ### <a name="at-the-retail-channel-level"></a>Na poziomie kanału sprzedaży detalicznej
 
   [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) Dla poszczególnych produktów można zastąpić domyślne wartości atrybutów w określonych katalogach kierowanych do konkretnych kanałów sprzedaży detalicznej.
+
+
 
 

@@ -1,16 +1,16 @@
 ---
 title: Definicje kolumn w raportach finansowych
 description: "Ten artykuł zawiera informacje o definicjach kolumn. Definicja kolumny to składnik (blok konstrukcyjny) raportu, który określa zawartość kolumn raportu. Podobnie jak definicje wierszy, definicje kolumn podstawowych mogą być używane w wielu raportach."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-08-09 21 - 27 - 36
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: af336db81f659d80248aa4ab1fbba96ed1ff48c2
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Definicje kolumn w raportach finansowych
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł zawiera informacje o definicjach kolumn. Definicja kolumny to składnik (blok konstrukcyjny) raportu, który określa zawartość kolumn raportu. Podobnie jak definicje wierszy, definicje kolumn podstawowych mogą być używane w wielu raportach.
 
@@ -150,7 +154,7 @@ Za pomocą okna dialogowego **Nagłówek kolumny** można dodawać, modyfikować
 
 1.  W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
 2.  Zaznacz komórkę w wierszu nagłówka.
-3.  W menu **Edycja** kliknij **Wstaw wiersz**. Nowy wiersz jest wstawiany nad wierszem wybranym w kroku 2. **Uwaga: **Jeśli masz cztery lub więcej wierszy nagłówków raportu w raporcie, nagłówki będą się nakładać po wyeksportowaniu raportu do arkusza programu Excel. Aby wyświetlić wszystkie nagłówki na raporcie, zwiększ górny margines w definicji raportu.
+3.  W menu **Edycja** kliknij **Wstaw wiersz**. Nowy wiersz jest wstawiany nad wierszem wybranym w kroku 2. **Uwaga:**Jeśli masz cztery lub więcej wierszy nagłówków raportu w raporcie, nagłówki będą się nakładać po wyeksportowaniu raportu do arkusza programu Excel. Aby wyświetlić wszystkie nagłówki na raporcie, zwiększ górny margines w definicji raportu.
 
 ### <a name="delete-a-column-header-row"></a>Usuwanie wiersza nagłówka kolumny
 
@@ -320,9 +324,9 @@ Komórka **Sterowanie wydrukiem** może zawierać kody zmieniające widok lub us
 4.  Wybierz opcję w polu **Opcje drukowania warunkowego**. Domyślnie wybrane jest ustawienie **(brak)**. W tym samym czasie może być wybrany tylko jeden kod drukowania warunkowego.
 5.  Kliknij przycisk **OK**
 
-**Porada:** można również wprowadzić kody drukowania bezpośrednio w komórce **Sterowanie wydrukiem**. Kolejne kody sterowania wydrukiem należy oddzielić przecinkami.
+> [!TIP]
+> Można również wprowadzić kody drukowania bezpośrednio w komórce **Sterowanie wydrukiem**. Kolejne kody sterowania wydrukiem należy oddzielić przecinkami.
 
-### 
 
 ## <a name="column-types"></a>Typy kolumn
 Typy danych zawartych w każdej kolumnie w raporcie określa wartość w wierszu **Typ kolumny** w definicji kolumny. Każda definicja kolumny musi zawierać co najmniej jedną kolumnę opisu (**DESC**) i jedną kolumnę kwoty (**FD**, **WKS** lub **CALC**). **Uwaga:** kody typów kolumn nie mają zastosowania do wszystkich systemów księgowych. Wybranie typu, który nie jest prawidłowy dla systemu księgowania, spowoduje, ze ta kolumna w raporcie będzie pusta.
@@ -412,7 +416,7 @@ Komórka **Rok obrachunkowy** określa rok obrachunkowy, który kolumna powinna 
 | Opcja  | Opis                                                                                                                  |
 |---------|------------------------------------------------------------------------------------------------------------------------------|
 | BASE    | Umożliwia użycie roku podstawowego określonego w czasie tworzenia raportu.                                                                          |
-| BASE+\# | Umożliwia użycie roku o określoną liczbę lat w przód od po roku podstawowym. Na przykład, aby użyć trzeciego w kolejności roku po roku podstawowym, należy wpisać **BASE+3**. |
+| BASE+\# | Umożliwia użycie roku o określoną liczbę lat w przód od roku podstawowego. Na przykład, aby użyć trzeciego w kolejności roku po roku podstawowym, należy wpisać **BASE+3**. |
 | BASE-\# | Umożliwia użycie roku o określoną liczbę lat wstecz od roku podstawowego. Na przykład, aby użyć poprzedniego roku, należy wpisać **BASE-1**.                 |
 | \#      | Umożliwia wprowadzenie rzeczywistego roku obrachunkowego.                                                                                                |
 
@@ -507,7 +511,8 @@ Raport z wieloma walutami może wyświetlać kwoty w walucie naturalnej (lokalne
 -   **Sposób wyświetlania waluty** — pozwala określić typ waluty (naturalna, funkcjonalna lub raportowania) używany do wyświetlania transakcji. Ta funkcja jest czasami nazywana przeliczaniem waluty. Przeliczania waluty polega na raportowaniu kwot księgi głównej w walucie, która nie musi być walutą funkcjonalną firmy lub walutą, w której wprowadzono transakcję.
 -   **Filtr waluty** — pozwala określić filtr waluty. W raporcie są wyświetlane tylko transakcje, które są wprowadzane w wybranej walucie.
 
-**Uwaga:** do tworzenia raportów obejmujących wiele walut, należy zaznaczyć pole wyboru **Uwzględniaj wszystkie waluty raportowania** na karcie **Raporty** w definicji raportu. Aby określić walutę funkcjonalną firmy, należy wykonać następujące czynności.
+> [!NOTE]
+> W celu tworzenia raportów obejmujących wiele walut należy zaznaczyć pole wyboru **Uwzględniaj wszystkie waluty raportowania** na karcie **Raporty** w definicji raportu. Aby określić walutę funkcjonalną firmy, należy wykonać następujące czynności.
 
 1.  W Projektancie raportów w menu **Firma** kliknij przycisk **Firmy**.
 2.  W oknie dialogowym **Firmy** wybierz firmę, a następnie kliknij **Widok**.
@@ -519,7 +524,8 @@ Raport z wieloma walutami może wyświetlać kwoty w walucie naturalnej (lokalne
 2.  Kliknij dwukrotnie komórkę **Sposób wyświetlania waluty** w odpowiedniej kolumnie **FD**, a następnie wybierz opcję wyświetlania informacji o walucie: **Waluta naturalna/pierwotna**, **Waluta funkcjonalna z informacjami o firmie**, lub waluta raportowania.
 3.  Kliknij dwukrotnie komórkę **Filtr waluty** w odpowiedniej kolumnie **FD**, a następnie wybierz odpowiedni kod waluty na liście. W raporcie są wyświetlane tylko transakcje, które są wprowadzane w tej walucie.
 
-**Uwaga:** opisane tutaj opcje mogą być różne, w zależności od systemu ERP. Więcej informacji można znaleźć w [dokumentacji systemu Microsoft ERP](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
+> [!NOTE]
+> Opisane tutaj opcje mogą się różnić, w zależności od systemu ERP. Więcej informacji można znaleźć w [dokumentacji systemu Microsoft ERP](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Przykład komórek Sposób wyświetlania waluty i Filtr waluty
 
@@ -584,5 +590,7 @@ Można podzielić kwotę w kolumnie przez określoną liczbę okresów. Na przyk
 [Definicje wierszy w raportowaniu finansowym](row-definitions-financial-reporting.md)
 
 [Zaawansowane opcje formatowania w raportowaniu finansowym](advanced-formatting-options-financial-reporting.md)
+
+
 
 

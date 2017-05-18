@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 7c5986dbce88a1cb704dddfc2afbcf2ac8c4b0dd
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2a39054e5736c1162634cf9b1dd3f7e0c0c4ec16
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -104,7 +105,7 @@ Tworzenie konfiguracji rewidenta rozchodów nie jest konieczne. Istnieje możliw
 
 Osoby sprawdzające wydatki można skonfigurować na stronie **Osoby sprawdzające wydatki związane z zapotrzebowaniami na zakup**. Utwórz konfigurację rewidenta rozchodów i wprowadź wartości dla każdej firmy określonej dla danej organizacji. Dla zapotrzebowań, które są przypisane do projektu można określić rolę odpowiedzialną za przegląd zapotrzebowania w: Kontroler projektu, Menedżer projektu lub Menedżer sprzedaży projektu. Rozchody będą wysyłane do użytkownika, który zostanie przypisany do określonej roli. Można także kierować rozchód do właściciela wymiaru finansowego, zaznaczając odpowiednie pole wyboru wymiaru finansowego na karcie **Dystrybucje organizacji**.  
 
-Aby skorzystać z jednej z osób sprawdzających wydatki, które zostały skonfigurowane w przepływie pracy, należy ustawić opcję **Typ uczestnika** jako** Uczestnicy rozchodu** we właściwościach ** przypisania** dla odpowiedniego elementu przepływu pracy.
+Aby skorzystać z jednej z osób sprawdzających wydatki, które zostały skonfigurowane w przepływie pracy, należy ustawić opcję **Typ uczestnika** jako**Uczestnicy rozchodu** we właściwościach **przypisania** dla odpowiedniego elementu przepływu pracy.
 
 <a name="see-also"></a>Informacje dodatkowe
 --------

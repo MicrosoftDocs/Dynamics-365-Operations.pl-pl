@@ -253,7 +253,7 @@ Metoda wdrażania używana w teście akceptacji użytkownika (UAT) i środowiska
 
 Narzędzie pakietu Visual Studio używane do tworzenia, aktualizowania i sprawdzania elementów modelu.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\wymiary finansowe\konfiguracja oparta na wymiarach**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**konfiguracja oparta na wymiarach produktu**
 
 Technologia konfiguracji używana do tworzenia wariantów produktu przez wybieranie wartości wymiarów produktu.
 
@@ -503,7 +503,7 @@ Część produktu.
 
 ###### <a name="product-dimension"></a>**wymiar produktu**
 
-Atrybuty rozmiaru, koloru lub konfiguracji produktu, które są używane do konfiguracji opartej na wymiarach (..\wymiary finansowe\konfiguracja oparta na wymiarach).
+Atrybuty rozmiaru, koloru lub konfiguracji produktu, które są używane do konfiguracji opartej na wymiarach produktu.
 
 ###### <a name="product-family"></a>**rodzina produktów**
 

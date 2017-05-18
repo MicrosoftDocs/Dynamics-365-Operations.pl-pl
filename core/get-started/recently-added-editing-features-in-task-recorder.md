@@ -1,6 +1,6 @@
 ---
 title: "Ostatnio dodane funkcje edycji w rejestratorze zadań"
-description: "Jeśli używasz rejestratora zadań do tworzenia przewodników po zadaniach, można sprawniej edytować pliki za pomocą funkcje opisanych na tej stronie wiki."
+description: "Jeśli używasz rejestratora zadań do tworzenia przewodników po zadaniach, można sprawniej edytować pliki za pomocą funkcji opisanych w tym temacie."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -17,17 +17,21 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: c8c96dc9705688308dd4a5c720700ddc17657d75
-ms.openlocfilehash: c4f9ac515eab6ed8b194fc8985f6d3fae40ced38
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3be54879494948f75b192fcc22239b9064173220
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="recently-added-editing-features-in-task-recorder"></a>Ostatnio dodane funkcje edycji w rejestratorze zadań
 
-Jeśli używasz rejestratora zadań do tworzenia przewodników po zadaniach, można sprawniej edytować pliki za pomocą funkcje opisanych na tej stronie wiki.
+[!include[banner](../includes/banner.md)]
+
+
+Jeśli używasz rejestratora zadań do tworzenia przewodników po zadaniach, można sprawniej edytować pliki za pomocą funkcji opisanych w tym temacie.
 
 Te funkcje są dostępne w menu **Ustawienia &gt; Rejestrator zadań &gt; Edytuj nagranie**.
 
@@ -86,5 +90,7 @@ Pola **Nazwa nagrania** i **Opis nagrania** można rozwijać i zwijać. Kiedy te
 [Tworzenie dokumentacji lub szkolenia przy użyciu nagrań zadań](/dynamics365/operations/dev-itpro/user-interface/task-recorder)
 
 [Skrócony wykaz funkcji Rejestratora zadań](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
+
+
 
 

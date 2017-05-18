@@ -3,7 +3,7 @@ title: "Analiza kosztów zlecenia produkcyjnego"
 description: "Ten artykuł zawiera informacje o analizach kosztów, jakie można wykonywać na zakończonych i bieżących zleceniach produkcyjnych. Koszty szacowane i rzeczywiste można analizować na stronie Obliczanie ceny lub w raporcie Szacowanie kosztów i wycena. Można oglądać informacje o szacowanych i rzeczywistych kosztach (oraz ilościach) dla każdego składnika, operacji marszruty i kosztu pośredniego."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-11 13 - 25 - 42
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f931432f6dc919d448ed690a1deae3d64bebe455
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: acb8e49ed86d3e22ba8e343280f77c0644f057c6
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="production-order-cost-analysis"></a>Analiza kosztów zlecenia produkcyjnego
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł zawiera informacje o analizach kosztów, jakie można wykonywać na zakończonych i bieżących zleceniach produkcyjnych. Koszty szacowane i rzeczywiste można analizować na stronie Obliczanie ceny lub w raporcie Szacowanie kosztów i wycena. Można oglądać informacje o szacowanych i rzeczywistych kosztach (oraz ilościach) dla każdego składnika, operacji marszruty i kosztu pośredniego.
 
@@ -40,7 +44,11 @@ Odchylenia odzwierciedlają wynik porównania zgłoszonych działań produkcyjny
 -   Rozbieżność cen produkcji
 -   Odchylenie podstawiania produkcji
 
-Poniższy diagram przedstawia cztery odchylenia, które składają się na różnicę między kosztami rzeczywistymi zlecenia produkcyjnego a kosztami obliczonymi w rekordzie kosztu towaru po zakończeniu zlecenia produkcyjnego. ![Odchylenia odzwierciedlające różnice w zakończonym zleceniu produkcyjnym](./media/control.jpg) Odchylenia produkcji można analizować za pomocą strony **Odchylenie** lub raportu **Odchylenia produkcji**. Korzystając z odpowiednich opcji wyświetlania, można przeglądać szczegóły odchyleń według towarów, zasobów operacyjnych lub grup kosztów. Zasady podziału kosztów określone w parametrach zapasów decydują o tym, czy odchylenia są śledzone według grup kosztów. Można także używać opcji wyświetlania **jeden**, **wiele** i **suma**, aby obejrzeć zbiorcze odchylenia. Szczegóły odchyleń pomagają poznać źródło każdego odchylenia. Aby przewidzieć odchylenia przed zakończeniem zlecenia produkcyjnego, należy przeanalizować szczegółowe informacje zawarte w raporcie **Szacowanie kosztów i wycena**.
+Poniższy diagram przedstawia cztery odchylenia, które składają się na różnicę między kosztami rzeczywistymi zlecenia produkcyjnego a kosztami obliczonymi w rekordzie kosztu towaru po zakończeniu zlecenia produkcyjnego. 
+
+![Odchylenia odzwierciedlające różnice w zakończonym zleceniu produkcyjnym](./media/control.jpg) 
+
+Odchylenia produkcji można analizować za pomocą strony **Odchylenie** lub raportu **Odchylenia produkcji**. Korzystając z odpowiednich opcji wyświetlania, można przeglądać szczegóły odchyleń według towarów, zasobów operacyjnych lub grup kosztów. Zasady podziału kosztów określone w parametrach zapasów decydują o tym, czy odchylenia są śledzone według grup kosztów. Można także używać opcji wyświetlania **jeden**, **wiele** i **suma**, aby obejrzeć zbiorcze odchylenia. Szczegóły odchyleń pomagają poznać źródło każdego odchylenia. Aby przewidzieć odchylenia przed zakończeniem zlecenia produkcyjnego, należy przeanalizować szczegółowe informacje zawarte w raporcie **Szacowanie kosztów i wycena**.
 
 ## <a name="cost-analysis-for-current-production-orders"></a>Analiza kosztów bieżących zleceń produkcyjnych
 Oddzielne raporty zapewniają informację o każdym typie transakcji. Raporty te służą do analizowania kosztów zgłoszonych działań produkcyjnych. Informacje są wyświetlane tylko dla bieżących zleceń produkcyjnych o stanie **Rozpoczęte** lub **Zgłoszone jako gotowe**.
@@ -56,5 +64,7 @@ Oddzielne raporty zapewniają informację o każdym typie transakcji. Raporty te
 --------
 
 [Typowe przyczyny odchyleń produkcji](common-sources-of-production-variances.md)
+
+
 
 

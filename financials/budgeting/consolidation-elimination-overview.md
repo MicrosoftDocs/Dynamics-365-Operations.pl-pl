@@ -3,7 +3,7 @@ title: "Omówienie konsolidacji i eliminacji"
 description: "Ten artykuł zawiera ogólne informacje o procesie konsolidacji i eliminacji. Znajdują się w nim również odpowiedzi na wybrane często zadawane pytania."
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ef99caf4570969d2b920cec8b53669ce2094965
-ms.openlocfilehash: 3868605826e3c6f0714736ffa8630d1569e17d6f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7ea83b349e5c4ab187cc06cf4df38ac15ea02a7d
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="consolidation-and-elimination-overview"></a>Omówienie konsolidacji i eliminacji
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł zawiera ogólne informacje o procesie konsolidacji i eliminacji. Znajdują się w nim również odpowiedzi na wybrane często zadawane pytania.
 
@@ -86,5 +90,7 @@ Rozwiązaniem jest opcja **Raport finansowy**. Hierarchie organizacji zawierają
 Za pomocą opcji **Eksportuj salda firmy** można wyeksportować dane z jednej instancji, a następnie przy użyciu opcji **Konsoliduj z importu** w drugiej instancji można skonsolidować dane.
 
 
-Aby uzyskać więcej informacji, zobacz [Przeszacowanie waluty w konsolidowanej firmie](\finanicials\general-ledger\currency-revaluation-consolidation-company).
+Aby uzyskać więcej informacji, zobacz [Przeszacowanie waluty w konsolidowanej firmie](..\general-ledger\currency-revaluation-consolidation-company.md).
+
+
 

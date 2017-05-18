@@ -1,7 +1,7 @@
 ---
 title: "Wyświetlanie i projektowanie raportów finansowych"
-description: "Ten artykuł zawiera ćwiczenia, które prowadzą przez całą procedurę wyświetlania i tworzenia raportów finansowych w programie Microsoft Dynamics 365 for Operations. Funkcjonalność sprawozdawczości finansowej składa się z funkcji wyświetlania w programie Dynamics 365 for Operations oraz aplikacji ClickOnce projektanta raportów, który umożliwia tworzenie i edytowanie raportów finansowych."
-author: twheeloc
+description: "Ten artykuł zawiera ćwiczenia, które prowadzą przez całą procedurę wyświetlania i tworzenia raportów finansowych w programie Microsoft Dynamics 365 for Operations."
+author: jcart1106
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3319fa0a919ca5e2737319f5cdc4190cf32d59b6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6f785ac8b9a8be503bf9122f21716f745b17115b
+ms.openlocfilehash: 635e9e90c63330b3d8b0cc46f16a36fa44ef915d
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -96,7 +97,7 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Zaktualizujesz zar�
 22. Z poziomu definicji raportu **Szczegółowy bilans próbny z atrybutami** wybierz Szczegółowy bilans próbny z atrybutami zarówno dla definicji wiersza, jak i dla definicji kolumny.
 23. Zmień rok podstawowy na **2012.**
 24. **Zapisz** definicję raportu i **wygeneruj** raport. Po wygenerowaniu i otwarciu raportu możesz przejrzeć jego zawartość tak samo, jak w pierwszym ćwiczeniu. Przejdź do szczegółów różnych kont, aby zobaczyć sposób wyświetlania dodatkowych atrybutów.
-25. Zamknij raport **Szczegółowy bilans próbny z atrybutami **.
+25. Zamknij raport **Szczegółowy bilans próbny z atrybutami**.
 26. Zamknij **Projektanta raportów**.
 
 ## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Ćwiczenie 3: Tworzenie wielowymiarowego raportu za pomocą drzewa raportowania
@@ -182,8 +183,8 @@ W tym ćwiczeniu utworzymy nowy raport. Raport jest rachunkiem wyników działu 
 18. **Zapisz** zmiany i **wygeneruj**. Po otarciu wygenerowanego raportu możesz sprawdzić jego zawartość.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-[Raportowanie finansowe](\financials\general-ledger\financial-reporting-getting-started.md) 
-[Wyświetlanie raportów finansowych](\financials\general-ledger\view-financial-reports.md) 
+[Raportowanie finansowe](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
+[Wyświetlanie raportów finansowych](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
 [Blog o sprawozdawczości finansowej w systemie Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

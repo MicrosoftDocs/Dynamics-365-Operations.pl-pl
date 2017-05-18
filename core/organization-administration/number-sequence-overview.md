@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: a812c93a13fd36f44e659c9976099af62793098f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ce03d3b55ecdc05f70a36762f7de49b3018b6451
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Przykłady sekwencji numerów
 Poniższe przykłady przedstawiają metody korzystania z segmentów do tworzenia formatów sekwencji numerów. W szczególności w przykładach tych przedstawiono efekty użycia segmentów zakresu.
 ### <a name="expense-report-numbers"></a>Numery raportu wydatków.
 
-W poniższym przykładzie numery raportu wydatków są ustawiane dla firmy oznaczonej jako **CS**. **Obszar: **Wyjazdy i wydatki **Odwołanie: **Numer raportu wydatków **Zakres: **Jednostka prawna **Jednostka prawna: **CS
+W poniższym przykładzie numery raportu wydatków są ustawiane dla firmy oznaczonej jako **CS**. **Obszar:**Wyjazdy i wydatki **Odwołanie:**Numer raportu wydatków **Zakres:**Jednostka prawna **Jednostka prawna:**CS
 | Segmenty  | Typ segmentów | Wartość     |
 |-----------|--------------|-----------|
 | Segment 1 | Firma | CS        |
@@ -49,7 +50,7 @@ W poniższym przykładzie numery raportu wydatków są ustawiane dla firmy oznac
 
 ### <a name="sales-order-numbers"></a>Numery zamówienia sprzedaży
 
-W poniższym przykładzie numery zamówienia sprzedaży są konfigurowane dla Identyfikatora firmy **CEU**. **Obszar: **Sprzedaż **Odwołanie: **Zamówienie sprzedaży **Zakres: **Firma **Firma: **CEU
+W poniższym przykładzie numery zamówienia sprzedaży są konfigurowane dla Identyfikatora firmy **CEU**. **Obszar:**Sprzedaż **Odwołanie:**Zamówienie sprzedaży **Zakres:**Firma **Firma:**CEU
 | Segmenty  | Typ segmentu | Wartość    |
 |-----------|--------------|----------|
 | Segment 1 | Stała     | SO-      |
@@ -59,7 +60,7 @@ W poniższym przykładzie numery zamówienia sprzedaży są konfigurowane dla Id
 
 ### <a name="purchase-requisition-numbers"></a>Numery zapotrzebowania na zakup
 
-W poniższym przykładzie numery zapotrzebowań na zakup są stosowane na poziomie organizacji. **Obszar: **Zakup **Odwołanie: **Zgłoszenie zapotrzebowania **Zakres: **Współdzielone
+W poniższym przykładzie numery zapotrzebowań na zakup są stosowane na poziomie organizacji. **Obszar:**Zakup **Odwołanie:**Zgłoszenie zapotrzebowania **Zakres:**Współdzielone
 | Segmenty  | Typ segmentu | Wartość    |
 |-----------|--------------|----------|
 | Segment 1 | Stała     | Ilość      |

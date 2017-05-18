@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 3e6b48768bb8e69d46f1555d9300f3b878b01ff1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 35d34f9a356f8a041f2abf0aa8d6c3a6d9ca4a46
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Pakiet zawartości usługi Power BI Wyniki sprzedaży i rentowności
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym temacie opisano, co się znajduje w pakiecie zawartości Dynamics 365 for Operations — Wyniki sprzedaży i rentowności dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
@@ -44,6 +48,7 @@ Rentowność może być analizowana według następujących kryteriów:
 
 ## <a name="accessing-the-content-pack"></a>Przechodzenie do pakietu zawartości
 Pakiet zawartości usługi Power BI Wyniki sprzedaży i rentowności jest publikowany jako składnik implementacyjny w usłudze Lifecycle Services (LCS) i można go uruchomić z programu Dynamics 365 for Operations. Aby uzyskać więcej informacji dotyczących sposobu uzyskiwania dostępu i uruchamianie raportów usługi Power BI, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md).
+**Uwaga:** Poprawka KB 4011327 jest wstępnie wymaganym składnikiem tego pakietu zawartości usługi Power BI. Po zalogowaniu się w usłudze Lifecycle Services można uzyskać dostęp do tej poprawki KB tutaj: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>.
 
 ## <a name="metrics-included-in-the-content-pack"></a>Wskaźniki dostępne w pakiecie zawartości
 Pakiet zawartości obejmuje raport zawierający zestaw wskaźników wizualizowanych jako wykresy, kafelki i tabele. Następująca tabela zawiera przegląd wizualizacji dostępnych w pakiecie zawartości.
@@ -110,6 +115,8 @@ Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworze
 -   [Tworzenie organizacyjnych pakietów zawartości](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Modelowanie danych przy użyciu narzędzia Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Dodawanie kafelków narzędzia Power BI do obszarów roboczych](configure-power-bi-integration.md)
+
+
 
 
 

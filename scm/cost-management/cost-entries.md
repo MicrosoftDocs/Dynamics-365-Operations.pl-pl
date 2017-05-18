@@ -3,7 +3,7 @@ title: "Wpisy kosztów"
 description: "Ten artykuł zawiera informacje o wpisach kosztów i sytuacjach, kiedy są tworzone. Wpis kosztu to rekord, w którym są rejestrowane ilość i koszt danego zdarzenia."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 55f5ee731c40acc40e8fe20c24d4ed707fe2c81a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 341251119304456a89b02c7a8d4af941ea21196d
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cost-entries"></a>Wpisy kosztów
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł zawiera informacje o wpisach kosztów i sytuacjach, kiedy są tworzone. Wpis kosztu to rekord, w którym są rejestrowane ilość i koszt danego zdarzenia.
 
@@ -53,17 +57,22 @@ Nowa strona **Wpisy kosztów** umożliwia przeglądanie i kontrolowanie rejestra
 -   Kilka dni po zarejestrowaniu zdarzenia faktury, koszt wzrasta do 11,00 USD. Dlatego łączna suma wynosi 1100 USD. Tworzony jest drugi załącznik, aby uwzględnić różnicę 100 USD.
 -   Kilka dni później opłata dodatkowa w wysokości 15,00 USD na pokrycie kosztów transportu jest rejestrowana na zamówieniu zakupu.
 
-| Załącznik | Data       | Referencje      | Identyfikator | Identyfikator partii  | Partia odwołania | Identyfikator partii zwrotu | Ilość | Kwota  |
-|---------|------------|----------------|--------|---------|---------------|---------------|----------|---------|
-| 00001   | 01-01-2015 | Zamówienie zakupu | 100001 | 0000101 |               |               | 100,00   | 1000.00 |
-| 00002   | 20-01-2015 | Zamówienie zakupu | 100001 | 0000101 |               |               |          | 100,00  |
-| 00003   | 31-01-2015 | Korekta     | 100001 | 0000101 |               |               |          | 15,00   |
+| Załącznik | Data       | Odwołanie      | Identyfikator | Identyfikator partii  | Ilość | Ilość  |
+|---------|------------|----------------|--------|---------|---------------|----|
+| 00001   | 01-01-2015 | Zamówienie zakupu | 100001 | 0000101 | 100,00   | 1000.00 |
+| 00002   | 20-01-2015 | Zamówienie zakupu | 100001 | 0000101 |          | 100,00  |
+| 00003   | 31-01-2015 | Korekta     | 100001 | 0000101 |          | 15,00   |
 
-Strona **Wpisy kosztu** umożliwia filtrowanie według identyfikatora dokumentu i daty dokumentu. **Uwaga:** Wpisy kosztów są dostępne tylko dla [obiektów kosztów](cost-object.md) lub zwolnionych produktów.
+Strona **Wpisy kosztu** umożliwia filtrowanie według identyfikatora dokumentu i daty dokumentu. 
+
+> [!NOTE]
+> Wpisy kosztów są dostępne tylko dla [obiektów kosztów](cost-object.md) lub zwolnionych produktów.
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Obiekty kosztów](cost-object.md)
+
+
 
 

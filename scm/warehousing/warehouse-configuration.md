@@ -3,7 +3,7 @@ title: Konfiguracja magazynu
 description: "W tym artykule wyjaśniono sposób konfigurowania magazynu. Artykuł zawiera informacje o włączaniu układu magazynu i procesów magazynowych."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 52 - 43
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 437f2348603db432df6d7589e4043d8145c52a1e
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e312f953d6a29d26b98794ed213d6ec70f6aa4b7
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="warehouse-configuration"></a>Konfiguracja magazynu
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule wyjaśniono sposób konfigurowania magazynu. Artykuł zawiera informacje o włączaniu układu magazynu i procesów magazynowych.
 
@@ -66,7 +70,7 @@ Aby uzyskać optymalne procesy wychodzące, oceń, czy należy używać stałych
 
 ### <a name="location-setup-wizard"></a>Kreator konfiguracji lokalizacji
 
-Aby szybko utworzyć lokalizacji magazynu, można użyć **Kreatora konfiguracji lokalizacji**. W ramach tego procesu możesz łatwo zachować format nazwy lokalizacji.
+Aby szybko utworzyć lokalizacji magazynu, można użyć kreatora **ustawienia lokalizacji**. W ramach tego procesu możesz łatwo zachować format nazwy lokalizacji.
 
 ## <a name="warehouse-processes"></a>Procesy magazynu
 W ramach konfiguracji magazynu ważne jest włączanie procesów magazynowych zgodnie z wymaganiami firmy. Najważniejsze składniki, które należy skonfigurować to szablony grupy czynności, szablony pracy, pule pracy i dyrektywy lokalizacji.
@@ -75,7 +79,12 @@ W ramach konfiguracji magazynu ważne jest włączanie procesów magazynowych zg
 
 Szablony grupy czynności pomagają włączyć proces wychodzący "Zwalniania do magazynu". Jak tylko wiersze zamówienia są zwalniane (albo bezpośrednio z dokumentów źródłowych, poprzez procesy zadań wsadowych lub za pośrednictwem ładunków, które już zostały utworzone), jest używana funkcja szablonu grupy czynności. 
 
-Można utworzyć trzy typy szablonów grupy czynności: **Wysyłka**, **Zlecenie produkcyjne** i **Kanban**. Parametry służą do określania, jak daleko system powinien automatycznie dojść podczas przetwarzania pracy wychodzącej. Szablon grupy czynności jest wybierany na podstawie sekwencja szablonu grupy czynności i kryteriów określonych w szablonie. Jeśli szablon jest wyświetlany u góry sekwencji, najpierw sprawdza się kryteria w tym szablonie. Jeśli kryteria mogą być spełnione, szablon grupy czynności jest przetwarzany. W przeciwnym razie sprawdzane są kryteria w następnym szablonie itd. Z tego względu dobrze jest umieścić szablon, który ma u góry listy sekwencji szablonu grupy czynności najlepiej określone kryteria, aby był przetwarzany jako pierwszy. Na przykład chcesz przetworzyć wszystkie prace dla określonego przewoźnika dzisiaj i tymczasowo opóźnić przetwarzanie pracy innych przewoźników. W takim przypadku szablon grupy czynności, który wybiera kryteria pracy dla tego przewoźnika powinien się znaleźć wyżej w sekwencji niż inne szablony. W przeciwnym razie praca innych przewoźników może być przetworzona przed ukończeniem pracy dla tego przewoźnika. 
+Możliwe jest tworzenie trzech rodzajów szablonów grupy czynności: 
+-   **Wysyłka**
+-   **Zlecenie produkcyjne**
+-   **Kanban** 
+
+Parametry służą do określania, jak daleko system powinien automatycznie dojść podczas przetwarzania pracy wychodzącej. Szablon grupy czynności jest wybierany na podstawie sekwencja szablonu grupy czynności i kryteriów określonych w szablonie. Jeśli szablon jest wyświetlany u góry sekwencji, najpierw sprawdza się kryteria w tym szablonie. Jeśli kryteria mogą być spełnione, szablon grupy czynności jest przetwarzany. W przeciwnym razie sprawdzane są kryteria w następnym szablonie itd. Z tego względu dobrze jest umieścić szablon, który ma u góry listy sekwencji szablonu grupy czynności najlepiej określone kryteria, aby był przetwarzany jako pierwszy. Na przykład chcesz przetworzyć wszystkie prace dla określonego przewoźnika dzisiaj i tymczasowo opóźnić przetwarzanie pracy innych przewoźników. W takim przypadku szablon grupy czynności, który wybiera kryteria pracy dla tego przewoźnika powinien się znaleźć wyżej w sekwencji niż inne szablony. W przeciwnym razie praca innych przewoźników może być przetworzona przed ukończeniem pracy dla tego przewoźnika. 
 
 Należy określić metody przetwarzania grupy czynności w poszczególnych szablonach grupy czynności. Dostępne metody zależą od typu szablonu grupy czynności.
 
@@ -107,6 +116,8 @@ Aby szybciej i łatwiej określić zadania związane z wierszem dyrektywy lokali
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Konfigurowanie lokalizacji w magazynie z obsługą WMS (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
+[Konfigurowanie lokalizacji w magazynie z obsługą WMS (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
+
+
 
 

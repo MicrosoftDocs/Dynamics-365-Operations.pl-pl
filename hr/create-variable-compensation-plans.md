@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9397e84f03ee5b340fa2aa0a64e582fc0078526e
-ms.openlocfilehash: be156afa73de731e54985485b617bcbae883db3a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 917771596a0c56561bf302ae990d95a987f442e0
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Obliczanie kwot wynagrodzeń o zmiennej wysokości dla pracowników może być o
 ## <a name="variable-compensation-components"></a>Składniki wynagrodzenia o zmiennej wysokości
 ### <a name="create-compensation-types"></a>Utwórz typy wynagrodzeń
 
-**Typy wynagrodzenia o zmiennej wysokości **są wymaganym składnikiem. Typy wynagrodzenia o zmiennej wysokości umożliwiają opis rodzajów wynagrodzenia o zmiennej wysokości, które otrzymuje organizacja. Pozwalają także określić, czy wynagrodzenie będzie w gotówce czy w formie niepięniężnej, np. formie akcji.
+**Typy wynagrodzenia o zmiennej wysokości**są wymaganym składnikiem. Typy wynagrodzenia o zmiennej wysokości umożliwiają opis rodzajów wynagrodzenia o zmiennej wysokości, które otrzymuje organizacja. Pozwalają także określić, czy wynagrodzenie będzie w gotówce czy w formie niepięniężnej, np. formie akcji.
 
 ### <a name="describe-vesting-rules"></a>Opisz reguły wypłat
 
@@ -53,7 +54,7 @@ Opcjonalnie firma może skonfigurować **reguł wypłat**. Reguły wypłat opisu
 Kwota nagrody o zmiennej wysokości może być oparta na wartości procentowej zarobków bazowych pracownika lub na ustalonej liczbie jednostek.
 
 -   Wybierz opcję **procent podstawy**, aby wprowadzić domyślną wartość procentową i określić, czy podstawa powinna być stałą stawką płacy pracownika czy punktem kontrolnym poziomu wynagrodzenia pracownika. Poziom wynagrodzenia jest ustawiony dla zadania pracownika. Jeden z punktów odniesienia w strukturze wynagrodzeń można ustawić jako punkt kontrolny w systemie stałych wynagrodzeń. System będzie używać poziomu wynagrodzeń z zadania pracownika i odwoływać go do punktu kontrolnego wymienionego w systemie stałych wynagrodzeń tego pracownika w celu znalezienia kwoty punktu kontrolnego dla poziomu wynagrodzenia pracownika. Kwota w punkcie kontrolnym zostanie użyta zamiast stałej stawki płacy pracownika jako podstawa naliczenia nagrody.
--   Wybierz opcję** Liczba jednostek**, aby wprowadzić domyślne liczby jednostek, wartość każdej jednostki i walutę jednostki, jeśli plan wynagrodzeń dotyczy nagrody w formie niepieniężnej (np. 200 jednostek akcji wartych 40 USD), lub po prostu liczbę jednostek, jeśli plan wynagrodzeń dotyczy nagród pieniężnych. W przypadku nagród pieniężnych pracownik będzie otrzymywać określoną liczbę jednostek waluty używanej dla jego systemu stałych wynagrodzeń (na przykład 500 jednostek po 1 USD). Kontrola relacji jeden do jednego może być używana do wskazania, czy jest bezpośrednie mapowanie jeden do jednego między liczbą jednostek a wartością jednostki. W przypadku tworzenia systemu wynagrodzeń o zmiennej wysokości dla systemu opartego na gotówce przy użyciu liczby jednostek ta opcja jest automatycznie zablokowana jako **Tak**, a wartość jednostki wynosi **1,0000**.
+-   Wybierz opcję**Liczba jednostek**, aby wprowadzić domyślne liczby jednostek, wartość każdej jednostki i walutę jednostki, jeśli plan wynagrodzeń dotyczy nagrody w formie niepieniężnej (np. 200 jednostek akcji wartych 40 USD), lub po prostu liczbę jednostek, jeśli plan wynagrodzeń dotyczy nagród pieniężnych. W przypadku nagród pieniężnych pracownik będzie otrzymywać określoną liczbę jednostek waluty używanej dla jego systemu stałych wynagrodzeń (na przykład 500 jednostek po 1 USD). Kontrola relacji jeden do jednego może być używana do wskazania, czy jest bezpośrednie mapowanie jeden do jednego między liczbą jednostek a wartością jednostki. W przypadku tworzenia systemu wynagrodzeń o zmiennej wysokości dla systemu opartego na gotówce przy użyciu liczby jednostek ta opcja jest automatycznie zablokowana jako **Tak**, a wartość jednostki wynosi **1,0000**.
 
 Ustawienie **Reguła zatrudnienia** pozwala określić, czy wszyscy pracownicy powinni otrzymać taką samą podwyżkę, niezależnie od daty ich zatrudnienia (**Reguła zatrudnienia** = **Brak**), czy też pracownicy powinni otrzymywać procent nagrody w oparciu o to, przez jaki czas byli zatrudnieni w cyklu (**Reguła zatrudnienia** = **Procent**). 
 
@@ -63,7 +64,7 @@ Ustawienie **Reguła zatrudnienia** pozwala określić, czy wszyscy pracownicy p
 -   Jeśli wydajność działu przekracza 100%, system dodaje wartość ustawioną w polu **Na każdy 1% powyżej celu** do wartości procentowej ustawionej w polu **Wypłata za 100%**, aż do osiągnięcia wartości ustawionej w polu **Najwyższa dopuszczalna wypłata**.
 -   Jeśli wydajność działu jest niższa od 100%, system odejmuje wartość ustawioną w polu **Na każdy 1% poniżej celu** od wartości procentowej ustawionej w polu **Wypłata za 100%**, aż do osiągnięcia wartości ustawionej w polu **Najniższa dopuszczalna wypłata**.
 
-Można ustawić** poziomy tolerancji** na wartości procentowe progu, tak aby komunikat o błędzie był wyświetlany, gdy użycie dźwigni finansowej spowoduje wzrost wartości procentowej powyżej progu. 
+Można ustawić**poziomy tolerancji** na wartości procentowe progu, tak aby komunikat o błędzie był wyświetlany, gdy użycie dźwigni finansowej spowoduje wzrost wartości procentowej powyżej progu. 
 
 Domyślnie system wyszukuje dział ustawiony na stanowisku pracownika, ale nagrody niektórych pracowników mogą zależeć od wydajności wielu działów. W takim przypadku różne działy i wartości procentowe nagrody przydzielane do wydajności każdego działu mogą być ustawione w rejestracji wynagrodzenia o zmiennej wysokości dla pracownika. Aby uzyskać więcej informacji, zobacz sekcję „Rejestracja wynagrodzenia o zmiennej wysokości" poniżej. 
 

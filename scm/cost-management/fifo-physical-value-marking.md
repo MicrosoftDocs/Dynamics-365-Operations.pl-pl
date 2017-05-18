@@ -3,7 +3,7 @@ title: "FIFO z wartością fizyczną i oznaczeniami"
 description: "Pierwszy na wejściu — pierwszy na wyjściu (First in, first out; FIFO) to model magazynu, w którym wcześniejsze nabycia są wydawane w pierwszej kolejności. Finansowo zaktualizowane elementy z magazynu są rozliczane z pierwszymi finansowo zaktualizowanymi przychodami do magazynu, na podstawie daty finansowej transakcji magazynowej."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 18 - 57 - 00
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Retail
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8e3d189fc4dbc5c747a3473d3a221c739c323050
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b0be852bde33e8dfc82ceb42dd98be10537f318d
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO z wartością fizyczną i oznaczeniami
+
+[!include[banner](../includes/banner.md)]
+
 
 Pierwszy na wejściu — pierwszy na wyjściu (First in, first out; FIFO) to model magazynu, w którym wcześniejsze nabycia są wydawane w pierwszej kolejności. Finansowo zaktualizowane elementy z magazynu są rozliczane z pierwszymi finansowo zaktualizowanymi przychodami do magazynu, na podstawie daty finansowej transakcji magazynowej. 
 
@@ -50,7 +54,9 @@ W tym przykładzie FIFO grupa modelu towaru nie jest oznaczona i nie zawiera war
 -   5b. Finansowe wydanie z magazynu ilości równej 1 o jednostkowym koszcie własnym równym 20,00 zł (średnia krocząca transakcji zaktualizowanych finansowo).
 -   6. Wykonywane jest zamknięcie magazynu. Zgodnie z metodą FIFO, pierwszy finansowo zaktualizowany rozchód będzie rozliczony z pierwszym finansowo zaktualizowanym przychodem. Dla transakcji wydania zostaje dokonana korekta równa 10,00 USD.
 
-Nowy średni bieżący koszt własny odzwierciedla średnią finansowo zaktualizowanych transakcji. Poniższe ilustracje pokazują efekty modelu magazynu FIFO na tę serię transakcji, gdy opcja **Włącz wartość fizyczną** nie jest używana. ![Model FIFO bez uwzględniania wartości fizycznej](./media/fifowithoutincludephysicalvalue.gif) **Objaśnienie wykresu**
+Nowy średni bieżący koszt własny odzwierciedla średnią finansowo zaktualizowanych transakcji. Poniższe ilustracje pokazują efekty modelu magazynu FIFO na tę serię transakcji, gdy opcja **Włącz wartość fizyczną** nie jest używana. ![Model FIFO bez uwzględniania wartości fizycznej](./media/fifowithoutincludephysicalvalue.gif) 
+
+**Objaśnienie wykresu**
 
 -   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 -   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
@@ -78,7 +84,9 @@ Jeśli pole wyboru **Włącz wartość fizyczną** jest zaznaczone dla towaru na
 -   6a. Fizyczny rozchód magazynowy w ilości 1 i po koszcie własnym 21,25 USD.
 -   7. Wykonywane jest zamknięcie magazynu. Zgodnie z metodą FIFO, finansowa transakcja rozchodu będzie skorygowana lub rozliczona z pierwszym zaktualizowanym przychodem, finansowym lub fizycznym.
 
-Transakcja 5b będzie rozliczona z transakcją przychodu 1b. Wystąpi korekta kwoty 11,25 USD dla tej transakcji rozchodu. Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 27,50 USD. Poniższa ilustracja pokazuje efekty modelu magazynu FIFO na tę serię transakcji, gdy używana jest opcja **Włącz wartość fizyczną**. ![Model FIFO z uwzględnianiem wartości fizycznej](./media/fifowithincludephysicalvalue.gif) **Objaśnienie wykresu**
+Transakcja 5b będzie rozliczona z transakcją przychodu 1b. Wystąpi korekta kwoty 11,25 USD dla tej transakcji rozchodu. Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 27,50 USD. Poniższa ilustracja pokazuje efekty modelu magazynu FIFO na tę serię transakcji, gdy używana jest opcja **Włącz wartość fizyczną**. ![Model FIFO z uwzględnianiem wartości fizycznej](./media/fifowithincludephysicalvalue.gif) 
+
+**Objaśnienie wykresu**
 
 -   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 -   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
@@ -106,7 +114,9 @@ Oznaczanie to proces, który pozwala połączyć (oznaczyć) transakcję wydania
 -   6a. Fizyczny rozchód magazynowy w ilości 1 i po koszcie własnym 21,25 USD.
 -   7. Wykonywane jest zamknięcie magazynu. Finansowo zaktualizowana transakcja FIFO została przypisana do istniejącego przychodu magazynowego, obie transakcje są zatem rozliczane względem siebie i nie ma miejsca żadna korekta.
 
-Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 27,50 USD. Poniższa ilustracja pokazuje wpływ modelu magazynowego FIFO na tę serię transakcji, jeśli używane są oznaczenia między przychodem i rozchodem. ![Model FIFO z oznaczaniem](./media/fifowithmarking.gif) **Objaśnienie wykresu**
+Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 27,50 USD. Poniższa ilustracja pokazuje wpływ modelu magazynowego FIFO na tę serię transakcji, jeśli używane są oznaczenia między przychodem i rozchodem. ![Model FIFO z oznaczaniem](./media/fifowithmarking.gif) 
+
+**Objaśnienie wykresu**
 
 -   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 -   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
@@ -118,6 +128,8 @@ Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z 
 -   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
 -   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
 -   Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
+
+
 
 
 

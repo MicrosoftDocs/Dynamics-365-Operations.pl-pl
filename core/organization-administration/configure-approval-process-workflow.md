@@ -3,7 +3,7 @@ title: "Konfigurowanie procesu zatwierdzania w przepływie pracy"
 description: "Procedura zamieszczona poniżej umożliwia skonfigurowanie właściwości procesu zatwierdzania."
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 579e393ef64bc5ad72d129ac08ac215c524d5c55
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 99decd86602e7537af6393c6d28c262f20ca1f00
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurowanie procesu zatwierdzania w przepływie pracy
+
+[!include[banner](../includes/banner.md)]
+
 
 Procedura zamieszczona poniżej umożliwia skonfigurowanie właściwości procesu zatwierdzania.
 
@@ -132,7 +136,7 @@ Można wyznaczyć osobę ostatecznie zatwierdzającą dla scenariuszy, gdzie oso
 
 ## <a name="set-a-time-limit"></a>Ustawianie limitu czasu
 Jeśli proces zatwierdzania musi zostać ukończony w określonym czasie, wykonaj następujące kroki.
-| **Uwaga **                                                                                                                                                |
+| **Uwaga**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Opcje wybrane w tych krokach zastąpią opcje wybrane w obszarach **Przypisanie** i **Eskalacja** w poszczególnych krokach zatwierdzania. |
 
@@ -161,7 +165,9 @@ Gdy dokument zostanie przypisany do użytkownika, aby go zatwierdził, użytkown
 Proces zatwierdzania składa się z kroków zatwierdzania. Należy wykonać poniższą procedurę, aby dodać kroki procesu zatwierdzania i je skonfigurować.
 1.  W edytorze przepływu pracy kliknij dwukrotnie procesu zatwierdzania. Edytor przepływu pracy wyświetli etapy procesu zatwierdzania.
 2.  Aby dodać krok zatwierdzania, przeciągnij go z obszaru **Elementy przepływu pracy** na kanwę.
-3.  Aby skonfigurować krok zatwierdzania, zobacz [Konfigurowanie kroku zatwierdzania](http://axhelp.dynamics.com/en/wiki/configure-an-approval-step/).
+3.  Aby skonfigurować krok zatwierdzania, zobacz [Konfigurowanie kroku zatwierdzania](configure-approval-step-workflow.md).
+
+
 
 
 

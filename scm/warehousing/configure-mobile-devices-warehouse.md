@@ -3,7 +3,7 @@ title: "Konfigurowanie urządzeń przenośnych do pracy w magazynie"
 description: "W tym artykule opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 34d7b246d74d1546b54494944903d160e31f7678
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a964587fa5dd48f0ed4e9f2c67fb52e5071ac98d
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy w magazynie
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych.
 
@@ -315,7 +319,7 @@ W poniższej tabeli opisano te opcje.
 </tr>
 <tr class="even">
 <td>Wyświetl kolumnę Stan zapasów</td>
-<td>Zaznaczenie tej opcji spowoduje wyświetlanie stanu towarów w zapasach. Aby uzyskać więcej informacji, zobacz <a href="/inventory/inventory-statuses.md">Korzyści związane z używaniem Stanów zapasów</a>. Ta opcja jest dostępna dla wszystkich elementów menu używających istniejącej pracy, poza inwentaryzacją ciągłą.</td>
+<td>Zaznaczenie tej opcji spowoduje wyświetlanie stanu towarów w zapasach. Ta opcja jest dostępna dla wszystkich elementów menu używających istniejącej pracy, poza inwentaryzacją ciągłą.</td>
 </tr>
 <tr class="odd">
 <td>Wyświetl podsumowanie ekranu pobrania</td>
@@ -412,5 +416,7 @@ W poniższej tabeli przedstawiono różne typy pracy, z którymi można używać
 [Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy typu Zamówienie zakupu (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
 [Konfigurowanie elementu menu urządzenia przenośnego do rejestrowania towarów przyjętych (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Korzyści wynikające z używania stanów zapasów](../inventory/inventory-statuses.md)
+
 
 

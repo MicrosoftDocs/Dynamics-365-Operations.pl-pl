@@ -1,0 +1,87 @@
+---
+title: "Korekty kursów wymiany"
+description: "Ten temat zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji."
+author: ShylaThompson
+manager: AnnBe
+ms.date: 04/10/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ms.search.form: LedgerParameters
+audience: Application User
+ms.reviewer: ShylaThompson
+ms.search.scope: Operations, Core
+ms.custom: 272683
+ms.assetid: cd1b9f11-4640-41a1-a114-222483333972
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+ms.author: v-elgolu
+ms.dyn365.ops.intro: Version 1611
+ms.search.validFrom: 2016-11-30
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5becb8bcc5aa619edfc0ad2fdcd31a483d003f0a
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
+
+
+---
+
+# <a name="exchange-rate-adjustments"></a>Korekty kursów wymiany
+
+[!include[banner](../includes/banner.md)]
+
+
+Ten temat zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji.
+
+Funkcja korekty kursów wymiany dla Estonii, Węgier, Czech, Łotwy, Litwy, Polski i Rosji obejmuje następujące rozszerzenia dla modułów Rozrachunki z odbiorcami i Rozrachunki z dostawcami:
+
+-   Księgowania korekt kursów wymiany można wycofywać jako korekty (kwoty ujemne) pierwotnych korekt.
+-   Podczas księgowania następujących po sobie niezrealizowanych korekt kursu wymiany są używane to samo konto księgowania w księdze głównej i typ transakcji, bez względu na to, czy korekty reprezentują dodanie, czy ujemne różnice kursowe.
+-   Obliczone dodatnie różnice kursowe są zawsze księgowane na kontach dodatnich różnic kursowych, a obliczone ujemne różnice kursowych są zawsze księgowane na kontach ujemnych różnic kursowych.
+
+Firmy mające adres podstawowy w Czechach mogą stosować specjalną metodę do korygowania kursów wymiany. Ta metoda nosi nazwę metody przyrostowej. Gdy ta metoda jest włączona, zmiany wprowadzone przez bieżącą funkcję nie są stosowane. Niezrealizowane i zrealizowane dodatnie lub ujemne różnice kursowe są obliczane względem ostatniego użytego kursu wymiany. Skorygowana kwota jest używana zamiast oryginalnej kwoty jako podstawa obliczeń. Aby przełączyć na metodę przyrostową korekty kursu wymiany, na stronie **Parametry księgi głównej** w sekcji **Przeszacowanie w walucie obcej** w polu **Metoda obliczania** zaznacz opcję **Zwiększany**. W poniższym przykładzie pokazano, jak działa funkcja korekty kursu wymiany dla Estonii, Węgier, Czech, Łotwy, Litwy, Polski i Rosji. Oto scenariusz biznesowy dla tego przykładu:
+
+-   Faktura w walucie obcej jest księgowana 1 grudnia 2012 r.
+-   Płatność w walucie obcej jest księgowana 3 stycznia 2013 r.
+-   Jest wykonywane rozliczenie w celu zastosowania płatności do faktury.
+-   Korekta kursu wymiany jest wykonywana 31 grudnia 2012 r. (metoda = Standardowo).
+-   Korekta kursu wymiany jest wykonywana 1 stycznia 2013 r. (metoda = Data faktury).
+
+Oto kursy wymiany dolarów kanadyjskich (CAD) na dolary amerykańskie (USD) dla tego przykładu:
+
+-   1 grudnia 2012: 400,0000
+-   31 grudnia 2012: 450,0000
+-   3 stycznia 2013: 420,0000
+
+| Zdarzenie                                       | Data                             | Strona debetowa/kredytowa | Kwoty               | Konto księgi głównej (KG)    | Typ transakcji             | Typ księgowania       | Strona kredytowa | Korekta |
+|---------------------------------------------|----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
+| Faktura VAT                                     | 1-gru-12                         | Strona debetowa        | 10 000 CAD/40 000 USD | rozrachunki z odbiorcami                             | Faktura VAT                      | Saldo odbiorcy   |        |            |
+| Faktura VAT                                     | 1-gru-12                         | Strona kredytowa       | 10 000 CAD/40 000 USD | Kompensaty                         | Faktura VAT                      | Arkusz księgi     | X      |            |
+| Płatność                                     | 3-sty-13                         | Strona debetowa        | 10 000 CAD/42 000 USD | Kompensaty                         | Płatność                      | Arkusz księgi     |        |            |
+| Płatność                                     | 3-sty-13                         | Strona kredytowa       | 10 000 CAD/42 000 USD | rozrachunki z odbiorcami                             | Płatność                      | Saldo odbiorcy   | X      |            |
+| Miejscowość                                  | 3 stycznia 2013 (= data płatności) | Strona debetowa        | 0 CAD/2000 USD       | rozrachunki z odbiorcami                             | Odbiorca                     | Zysk z tytułu dodatnich różnic kursowych |        |            |
+| Miejscowość                                  | 3 stycznia 2013 (= data płatności) | Strona kredytowa       | 0 CAD/2000 USD       | Zrealizowana dodatnia różnica kursowa   | Odbiorca                     | Zysk z tytułu dodatnich różnic kursowych | X      |            |
+| Przeszacowanie (metoda Standardowo; data = 31 grudnia 2012) | 31-gru-12           | Strona debetowa        | 0 CAD/5000 USD       | rozrachunki z odbiorcami                             | Przeszacowanie w walucie obcej | Zysk z tytułu dodatnich różnic kursowych |        |            |
+| Przeszacowanie (metoda Standardowo; data = 31 grudnia 2012) | 31-gru-12           | Strona kredytowa       | 0 CAD/5000 USD       | Niezrealizowana dodatnia różnica kursowa | Przeszacowanie w walucie obcej | Zysk z tytułu dodatnich różnic kursowych | X      |            |
+| Przeszacowanie (metoda Standardowo; data = 31 grudnia 2012) | 3-sty-13            | Strona debetowa        | 0 CAD/5000 USD       | rozrachunki z odbiorcami                             | Przeszacowanie w walucie obcej | Zysk z tytułu dodatnich różnic kursowych |        | X          |
+| Przeszacowanie (metoda Standardowo; data = 31 grudnia 2012) | 3-sty-13            | Strona kredytowa       | 0 CAD/5000 USD       | Niezrealizowana dodatnia różnica kursowa | Przeszacowanie w walucie obcej | Zysk z tytułu dodatnich różnic kursowych | X      | X          |
+
+
+
+W powyższym przeszacowaniu zauważ, że wpis z 3 stycznia 2013 r., jest bezpośrednim cofnięciem wpisu tuż nad nim (z 31 grudnia 2012 r.). Nawet konta KG i typy księgowania są takie same. Ponadto zauważ, że została ustawiona flaga **Korekta**.
+||||||||||
+|-----------------------------------------------------------|----------|--------|-----------------|--------------------------------|------------------------------|--------------------|---|---|
+|Przeszacowanie (metoda Data faktury; data = 1 stycznia 2013)  | 1-sty-13 | Strona debetowa  | 0 CAD/5000 USD | rozrachunki z odbiorcami                             | Przeszacowanie w walucie obcej | Zysk z tytułu dodatnich różnic kursowych |   | X |
+| Przeszacowanie (metoda Data faktury; data = 1 stycznia 2013) | 1-sty-13 | Strona kredytowa | 0 CAD/5000 USD | Niezrealizowana dodatnia różnica kursowa | Przeszacowanie w walucie obcej | Zysk z tytułu dodatnich różnic kursowych | X | X |
+| Przeszacowanie (metoda Data faktury; data = 1 stycznia 2013) | 3-sty-13 | Strona debetowa  | 0 CAD/5000 USD | rozrachunki z odbiorcami                             | Przeszacowanie w walucie obcej | Zysk z tytułu dodatnich różnic kursowych |   |   |
+| Przeszacowanie (metoda Data faktury; data = 1 stycznia 2013) | 3-sty-13 | Strona kredytowa | 0 CAD/5000 USD | Niezrealizowana dodatnia różnica kursowa | Przeszacowanie w walucie obcej | Zysk z tytułu dodatnich różnic kursowych | X |   |
+
+W powyższym przeszacowaniu zauważ, że wpis z 1 stycznia 2013 r., jest bezpośrednim cofnięciem wpisu tuż pod nim (z 3 stycznia 2013 r.). Nawet konta KG i typy księgowania są takie same. Ponadto zauważ, że została ustawiona flaga **Korekta**.
+
+Zachowanie systemu jest takie same, niezależnie od tego, czy w opcji **Korekta** w sekcji **Wycofanie transakcji** na stronie **Parametry księgi głównej** ustawiono wartość **Tak**, czy **Nie**.
+
+
+
+
+

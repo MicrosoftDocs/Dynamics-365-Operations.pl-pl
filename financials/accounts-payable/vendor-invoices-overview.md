@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: ecd32549b6067ed4c1211996e846e210f77f5013
-ms.openlocfilehash: bc6fb66e9038612cc133dc89e60eb3cb75cc7943
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a6b18343337ca7058c5027c8d4325c4301f1abed
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -52,7 +53,7 @@ Poniżej znajdziesz więcej informacji o używaniu stron **Otwarte faktury od do
 Po otwarciu faktury od dostawcy z pokrewnego zamówienia zakupu, wiersze faktury są tworzone na podstawie zamówienia zakupu. Domyślnie ilości są pobierane z ilości dokumentu przyjęcia produktów. Można jednak użyć jednego z następujących zachowań domyślnych:
 
 -   **Ilość dostarczana teraz** — należy stosować w przypadku dostaw częściowych. Domyślna ilość w polu **Ilość** jest pobierana z pola ilości **Dostarczone teraz** z zamówienia zakupu.
--   **Zamówiona ilość** — ta opcja jest dla dostaw pełnych. Domyślna wartość w polu ** Ilość** jest pobierana z pola ilości **Zamówione** z zamówienia zakupu.
+-   **Zamówiona ilość** — ta opcja jest dla dostaw pełnych. Domyślna wartość w polu **Ilość** jest pobierana z pola ilości **Zamówione** z zamówienia zakupu.
 -   **Zarejestrowana ilość** — Użyj tej opcji, jeśli towar wymaga zarejestrowania, jak określono na stronie **grup modeli towarów**. Domyślną wartością w polu **Ilość** jest fizyczna zaktualizowana ilość, która została zarejestrowana.
 -   **Ilość na dokumencie przyjęcia produktów** — ta opcja jest używana, jeżeli został już otrzymany dokument przyjęcia produktów dla zamówienia. Domyślna wartość w polu **Ilość** jest określana na podstawie łącznej ilości w dostępnych dokumentach przyjęcia produktów.
 -   **Zarejestrowane ilości i usługi** — zaznacz tę opcję, jeśli zostały zarejestrowane ilości w arkuszach przyjęć towarów magazynowanych lub towarów, które nie są magazynowane. Ta opcja dotyczy także usług, niezależnie od tego, czy są zarejestrowane.

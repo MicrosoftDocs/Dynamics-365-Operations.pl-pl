@@ -18,21 +18,25 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: b33cbf67c00b6baea4393e82d19300085781af29
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e60994f5c4fa38fc2be17b4021e2def904c87b7f
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="install-the-retail-pos-layout-designer"></a>Instalowanie projektanta układu programu Retail POS
 
+[!include[banner](includes/banner.md)]
+
+
 Za pomocą projektanta obsługiwanego jednym kliknięciem można projektować różne układy do programów Retail Modern POS (MPOS) and Cloud POS w orientacji poziomej i trybie pionowej dla różnych sklepów, kas, kasjerów i menedżerów.
 
 O wyglądzie interfejsu graficznego projektowania programu MPOS lub Cloud POS decydują ustawienia układu kasowego. Układ określa położenie różnych obiektów. Przykładami są układ podsumowania, układ siatki towarów, układ odbiorcy, układ płatności oraz układ różnych przycisków menu. Układy także określają ogólny wygląd interfejsu sprzedaży wyświetlanego pracownikom.
 
-## <a name="install-the-oneclick-designer"></a>Instalowanie projektanta obsługiwanego jednym kliknięciem
+## <a name="install-the-one-click-designer"></a>Instalowanie projektanta obsługiwanego jednym kliknięciem
 1.  W programie Microsoft Dynamics 365 for Operations w menu w lewym górnym rogu wybierz kolejno opcje **Handel detaliczny** **i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Punkt sprzedaży** &gt; **Układy ekranu**.
 2.  Zaznacz dowolny układu, który ma typ aplikacji **Modern POS for Windows** lub **Cloud POS**, a następnie kliknij przycisk **Projektant układu**.
 3.  Na pasku powiadomień, który pojawia się u dołu okna programu Internet Explorer, kliknij przycisk **Otwórz** i zainstaluj projektanta obsługiwanego jednym kliknięciem. (Pasek powiadomień może pojawiać się w innych miejscach w innych przeglądarkach).
@@ -52,5 +56,7 @@ O wyglądzie interfejsu graficznego projektowania programu MPOS lub Cloud POS de
 --------
 
 [Konfigurowanie, pobieranie, instalowanie i aktywowanie aplikacji Retail Modern POS](retail-modern-pos-device-activation.md)
+
+
 
 

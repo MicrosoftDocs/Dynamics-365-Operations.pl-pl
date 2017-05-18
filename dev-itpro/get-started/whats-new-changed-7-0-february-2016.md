@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 2928b86a9dbf001451933f9d17287400cafaf089
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 36d4aec3936ef99b880f3affc75df1b952cb3133
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nowości i zmiany w systemie Dynamics AX 7.0 (luty 2016)
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule opisano nowe oraz zmienione funkcje dostępne w systemie Microsoft Dynamics AX 7.0. Ta wersja zawiera funkcje zarówno platformy, jak i aplikacji. Została wydana w lutym 2016 r.
 
@@ -331,8 +335,8 @@ Ta funkcja działa niezależnie od metod wyceny, które są przypisane do produk
 <tr class="even">
 <td>Dostęp do pomocy dla procedur (przewodniki po zadaniach) i omówień różnych elementów systemu za pomocą przycisku **Pomoc**.</td>
 <td>System AX 2012 wskazuje tematy HTML, które są przechowywane na lokalnym serwerze sieciowym. Klienci i partnerzy można utworzyć swoją własną bibliotekę tematów pomocy.</td>
-<td>System pomocy w bieżącej wersji systemu Dynamics AX służy do wyświetlania przewodników po zadaniach zapisanych w Microsoft Dynamics Lifecycle Services (LCS) BPM. System pomocy wyświetla też tematy z zasobów Wiki firmy Microsoft. Aby uzyskać więcej informacji, zobacz [Pomoc systemu Dynamics AX — wprowadzenie](help-overview.md) i [Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md).</td>
-<td>Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych kroków w zadaniach i procesach biznesowych. Przewodniki po zadaniach udostępnione przez Microsoft można pobrać i dostosować. Witryna wiki umożliwia szybsze i bardziej elastyczne tworzenie, dostarczanie oraz aktualizowanie dokumentacji produktu. To pomaga zagwarantować, że użytkownik ma dostęp do najnowszych informacji technicznych.</td>
+<td>System pomocy w bieżącej wersji systemu Dynamics AX służy do wyświetlania przewodników po zadaniach zapisanych w Microsoft Dynamics Lifecycle Services (LCS) BPM. System pomocy wyświetla też tematy z witryny dokumentów firmy Microsoft. Aby uzyskać więcej informacji, zobacz [Pomoc systemu Dynamics AX — wprowadzenie](help-overview.md) i [Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md).</td>
+<td>Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych kroków w zadaniach i procesach biznesowych. Przewodniki po zadaniach udostępnione przez Microsoft można pobrać i dostosować. Temat przedstawia szybsze i bardziej elastyczne sposoby tworzenia, dostarczania i aktualizowania dokumentacji produktu. To pomaga zagwarantować, że użytkownik ma dostęp do najnowszych informacji technicznych.</td>
 </tr>
 </tbody>
 </table>
@@ -1076,5 +1080,7 @@ Nie dodano żadnych nowych funkcji.
 [Co nowego, jakie zmiany](whats-new-changed.md)
 
 [Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)
+
+
 
 

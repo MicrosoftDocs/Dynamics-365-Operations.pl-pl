@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 6f4429202efd0506378d681188035c5cc69f56a1
-ms.openlocfilehash: d330f73ee9cbdd6bdcc197c3783a9230b26e04d8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5ba5816b65bcaa3a71ab3367cfbe6a115e52062a
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="mass-hire-projects"></a>Projekty zatrudnienia grupowego
+
+[!include[banner](includes/banner.md)]
+
 
 Projekty zatrudnienia grupowego umożliwiają specjalistom z działów kadr tworzenie wielu stanowisk i sprawne rekrutowanie na nie pracowników.
 
@@ -46,7 +50,7 @@ Na stronie **Projekty zatrudnienia grupowego** wybierz projekt „Letnistaż” 
 
 Po wybraniu studentów, których chcesz przyjąć na staż wpisz dane każdego z nich na stronie **Szczegóły dotyczące stanowiska** dla stanowisk, na których mają zostać zatrudnieni. Po wprowadzeniu wszystkich szczegółów dotyczących stanowiska wybierz stanowisko na stronie Projekty zatrudnienia grupowego, a następnie kliknij **Zatrudnij**. Zostaną utworzone rekordy dla każdego stanowiska i pracownika, a każdy pracownik zostanie przypisany do odpowiedniego stanowiska.
 
-## <a name="masshire-project-statuses"></a>Stany projektu zatrudnienia grupowego
+## <a name="mass-hire-project-statuses"></a>Stany projektu zatrudnienia grupowego
 Projekt zatrudnienia grupowego może mieć następujące stany:
 -   Utworzony
 -   Otwarto
@@ -92,6 +96,8 @@ Na stronie **projektu zatrudnienia grupowego** kliknij **Otwórz projekt** lub *
 </table>
 
  
+
+
 
 
 

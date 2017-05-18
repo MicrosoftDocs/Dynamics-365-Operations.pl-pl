@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9f4d7fdd8cfa7a540fce219f6ae4792e57dfbe44
-ms.openlocfilehash: f849b98cac88d182875aca88aaf04cd3575ed99f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5ee2d132f0b23ceec2a79ee6b0ee33862d6a0518
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -55,7 +56,7 @@ Kilka przykładów ograniczeń:
 
 Aby utworzyć zdefiniowany przez użytkownika typ wymiaru finansowego, w kolumnie Użyj wartości z pola wybierz opcję &lt; Wymiar niestandardowy &gt;. Można również określić maskę konta, aby ograniczyć typ i ilość informacji, które można wprowadzić dla wartości wymiarów,. Można wprowadzić znaki, które pozostają takie same dla każdej wartości wymiaru, takie jak litery lub łącznik. Można także wprowadzić znaki cyfr (\#) oraz handlowego „i” (&) jako symbole zastępcze liter i cyfr, które zmieniają się za każdym razem, gdy wartość wymiaru jest tworzona. Znak cyfry (\#) służy jako symbol zastępczy dla cyfr, a znak handlowe „i” jako symbol zastępczy dla liter. 
 
-**Przykład ** 
+**Przykład** 
 
 Aby ograniczyć wartość wymiaru do liter CC i trzech cyfr, należy wprowadzić CC-\#\#\# jako maskę formatu. To pole jest dostępne tylko w przypadku zaznaczenia opcji &lt; Wymiar niestandardowy &gt; w polu Użyj wartości z. 
 

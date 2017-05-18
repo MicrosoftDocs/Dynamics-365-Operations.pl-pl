@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 9d3f356b62d272fef7d0f131c9e29605f1be5c6b
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0188d3e7e856b2881cdafe0ef33d791eb1e789f9
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -45,7 +46,7 @@ Dwie polityki blokowania dla wersji wyceny określają, czy koszty oczekujące m
 
 Po zdefiniowaniu formatu arkusza wyceny oraz obliczeniach dla kosztów pośrednich, należy przeprowadzić oddzielną procedurę zatwierdzania i zapisania informacji. Arkusz wyceny reprezentuje format ogólnofirmowy w celu spójnego przedstawiania informacji dotyczących kosztów sprzedanych towarów. 
 
-Arkusz wyceny jest wyświetlany jako część strony **Obliczanie kosztu pozycji**. Arkusz wyceny może być wyświetlany dla rekordu obliczonego kosztu wytwarzanego towaru na stronie **Cena towaru** lub dla rekordu obliczania właściwego dla zamówienia na stronie ** Wyniki obliczeń BOM**. Może być on również wyświetlony jako część strony **Obliczanie ceny** dla zlecenia produkcyjnego.
+Arkusz wyceny jest wyświetlany jako część strony **Obliczanie kosztu pozycji**. Arkusz wyceny może być wyświetlany dla rekordu obliczonego kosztu wytwarzanego towaru na stronie **Cena towaru** lub dla rekordu obliczania właściwego dla zamówienia na stronie **Wyniki obliczeń BOM**. Może być on również wyświetlony jako część strony **Obliczanie ceny** dla zlecenia produkcyjnego.
 
 
 

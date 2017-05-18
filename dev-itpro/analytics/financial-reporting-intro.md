@@ -1,9 +1,9 @@
 ---
 title: "Sprawozdawczość finansowa w programie Dynamics 365 for Operations"
 description: "Funkcjonalność raportowania finansowego w programie Dynamics 365 for Operations pozwala specjalistom finansowym i biznesowym tworzyć, obsługiwać, wdrażać i wyświetlać sprawozdania finansowe. Wychodzi poza tradycyjne ograniczenia sprawozdawczości, pomagając efektywne projektować różne rodzaje raportów."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 31 - 29
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 519b3d3fb53b20d0014c97bcb1b9b21802a376d6
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fee79dad870bfbf8852198c7e825cfaa95a8d10b
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="financial-reporting-for-dynamics-365-for-operations"></a>Sprawozdawczość finansowa w programie Dynamics 365 for Operations
+
+[!include[banner](../includes/banner.md)]
+
 
 Funkcjonalność raportowania finansowego w programie Dynamics 365 for Operations pozwala specjalistom finansowym i biznesowym tworzyć, obsługiwać, wdrażać i wyświetlać sprawozdania finansowe. Wychodzi poza tradycyjne ograniczenia sprawozdawczości, pomagając efektywne projektować różne rodzaje raportów.
 
@@ -36,15 +40,14 @@ Następujące składniki aparatu sprawozdawczości finansowej zapewniają łatwe
 | Składnik        | Funkcje                                                                                                                                                                                                                                                                           | Informacje dodatkowe                                                                          |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | Projektant raportów  | Tworzenie bloków konstrukcyjnych raportów, które można łączyć w celu definiowania i generowania raportów. Kreator raportów prowadzi mniej doświadczonych użytkowników przez proces projektowania. Użytkownicy zaawansowani mogą tworzyć nowe bloki konstrukcyjne raportów lub modyfikować istniejące bloki zgodnie z własnymi wymaganiami. |                                                                                                 |
-| Przeglądarka sieci Web       | Wyświetlanie raportów finansowych w przeglądarce sieci web. Przeglądarka sieci Web nie wymaga zainstalowania serwerowych składników sprawozdawczości finansowej.                                                                                                                                                        | [Przeglądarka sieci Web](financial-reporter-designer-web-client.md)            |
-| Harmonogramy raportu | Planowanie regularnego generowania jednego raportu lub grupy raportów.                                                                                                                                                                                          | [Generowanie raportu](/dynamics365/operations/financials/general-ledger/generate-financial-report) |
+| Harmonogramy raportu | Planowanie regularnego generowania jednego raportu lub grupy raportów.                                                                                                                                                                                          | [Generowanie raportu finansowego](generate-financial-report.md) |
 
 ## <a name="features"></a>Funkcje
 <table>
 <thead>
 <tr class="header">
 <th>Funkcja</th>
-<th>Opis</th>
+<th>opis</th>
 </tr>
 </thead>
 <tbody>
@@ -78,13 +81,15 @@ Następujące składniki aparatu sprawozdawczości finansowej zapewniają łatwe
 <li>Dodawanie filtrów wymiarów w celu ograniczenia zawartość raportu do określonego wymiaru lub kombinacji wymiarów.</li>
 <li>Dodawanie filtrów atrybutów w celu ograniczenia zawartość raportu do określonego atrybutu lub kombinacji atrybutów.</li>
 </ul>
-Aby uzyskać więcej informacji, zobacz sekcję „Interaktywne składniki i funkcje nawigacji” w artykule <a href="https://technet.microsoft.com/en-us/library/dn469079.aspx">Interfejs Podglądu na pulpicie</a>.</td>
+</td>
 </tr>
 </tbody>
 </table>
 
 #<a name="see-also"></a>Informacje dodatkowe
+[Generowanie raportu finansowego](generate-financial-report.md)
 
-[Generowanie raportu finansowego]((dynamics365\operations\financials\general-ledger\generate-financial-report)
+
+
 
 

@@ -1,16 +1,16 @@
 ---
 title: "Modyfikowanie komórek definicji wiersza"
 description: "W tym artykule opisano informacje, które są wymagane dla każdej komórki w definicji wiersza w raporcie finansowym, oraz wyjaśniono, jak wprowadzić te informacje."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-07 16 - 09 - 06
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: b61364c9055e5c5a63592c7f05551d0c145924b9
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 82a0b8c52a816a7fc608e90866bd564392f9c8d4
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Modyfikowanie komórek definicji wiersza
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule opisano informacje, które są wymagane dla każdej komórki w definicji wiersza w raporcie finansowym, oraz wyjaśniono, jak wprowadzić te informacje. 
 
@@ -38,7 +42,9 @@ W definicjach wierszy numery lub etykiety w komórce **Kod wiersza** identyfikuj
 
 Kod wiersza jest wymagany dla wszystkich wierszy. W jednej definicji wiersza można łączyć ze sobą numeryczne, alfanumeryczne i nieustawione (puste) kody wiersza. Kod wiersza może być dowolną dodatnią liczbą całkowitą (mniejszą niż 100 000 000) lub etykietą opisową identyfikującą dany wiersz. Etykieta opisowa musi być zgodna z następującymi regułami:
 
--   Etykieta musi zaczynać od litery (a-z lub A-Z) i może być dowolną kombinacją maksymalnie 16 cyfr i liter. **Uwaga:** Etykieta może zawierać znaki podkreślenia (\_), ale inne znaki specjalne są niedozwolone.
+-   Etykieta musi zaczynać od litery (a-z lub A-Z) i może być dowolną kombinacją maksymalnie 16 cyfr i liter. 
+    > [!NOTE]
+    > Etykieta może zawierać znaki podkreślenia (\_), ale inne znaki specjalne są niedozwolone.
 -   Etykieta nie może zawierać następujących słów zastrzeżonych: AND, OR, IF, THEN, ELSE, PERIODS, TO, BASEROW, UNIT, NULL, CPO i RPO.
 
 Oto przykłady prawidłowych kodów wiersza:
@@ -56,10 +62,14 @@ Oto przykłady prawidłowych kodów wiersza:
 
 1.  W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
 2.  W menu **Edycja** kliknij **Zmień numerację wierszy**.
-3.  W oknie dialogowym **Zmiana numeracji wierszy** określ nowe wartości dla początkowego kodu wiersza i przyrostu kodu wiersza. Kody numeryczne wierszy można zresetować do równomiernie rozłożonych wartości. Projektant raportów zmienia numerację tylko dla kodów wierszy, które zaczynają się od numerów (np. 130 lub 246). Nie zmienia kodów wierszy numerycznych zaczynających się od liter (np. INCOME\_93 lub TP0693). **Uwaga:** Podczas zmiany numeracji kodów wierszy projektant raportów automatycznie aktualizuje odwołania **TOT** i **CAL**. Na przykład jeśli **TOT** w wierszu odwołuje się do zakresu, który rozpoczyna się od kodu wiersza 100, i ponownie numeruje wiersze, począwszy od 90, początkowe odwołanie **TOT** zmienia się ze 100 na 90.
+3.  W oknie dialogowym **Zmiana numeracji wierszy** określ nowe wartości dla początkowego kodu wiersza i przyrostu kodu wiersza. Kody numeryczne wierszy można zresetować do równomiernie rozłożonych wartości. Projektant raportów zmienia numerację tylko dla kodów wierszy, które zaczynają się od numerów (np. 130 lub 246). Nie zmienia kodów wierszy numerycznych zaczynających się od liter (np. INCOME\_93 lub TP0693). 
+> [!NOTE]
+> Podczas zmiany numeracji kodów wierszy projektant raportów automatycznie aktualizuje odwołania **TOT** i **CAL**. Na przykład jeśli **TOT** w wierszu odwołuje się do zakresu, który rozpoczyna się od kodu wiersza 100, i ponownie numeruje wiersze, począwszy od 90, początkowe odwołanie **TOT** zmienia się ze 100 na 90.
 
 ## <a name="add-a-description"></a>Dodawanie opisu
-Komórka opisu zawiera opis danych finansowych w wierszu raportu, na przykład „Przychód” lub „Dochód netto”. Tekst w komórce **Opis** pojawia się w raporcie dokładnie tak, jak został wprowadzony w definicji wiersza. **Uwaga:** szerokość kolumny opisu w raporcie jest ustawiona w definicji kolumny. Jeśli tekst w kolumnie **Opis** w definicji wiersza jest długi, sprawdź szerokość kolumny **DESC**. Gdy okna dialogowego **Wstawianie wierszy z**, wartości w kolumnie **Opis** są wartościami segmentu lub wartościami wymiaru z danych finansowych. Można wstawić wiersze, aby dodać tekst opisowy, np. nagłówek sekcji lub sumę sekcji, a następnie dodać formatowanie, np. wiersz przed wierszem sumy. Jeśli raport zawiera drzewo raportowania, można dołączyć dodatkowy tekst, który jest zdefiniowany dla jednostek raportowania w drzewie raportowania. Istnieje również możliwość ograniczenia dodatkowego tekstu do określonej jednostki raportowania.
+Komórka opisu zawiera opis danych finansowych w wierszu raportu, na przykład „Przychód” lub „Dochód netto”. Tekst w komórce **Opis** pojawia się w raporcie dokładnie tak, jak został wprowadzony w definicji wiersza. 
+> [!NOTE]
+> Szerokość kolumny opisu w raporcie jest ustawiona w definicji kolumny. Jeśli tekst w kolumnie **Opis** w definicji wiersza jest długi, sprawdź szerokość kolumny **DESC**. Gdy okna dialogowego **Wstawianie wierszy z**, wartości w kolumnie **Opis** są wartościami segmentu lub wartościami wymiaru z danych finansowych. Można wstawić wiersze, aby dodać tekst opisowy, np. nagłówek sekcji lub sumę sekcji, a następnie dodać formatowanie, np. wiersz przed wierszem sumy. Jeśli raport zawiera drzewo raportowania, można dołączyć dodatkowy tekst, który jest zdefiniowany dla jednostek raportowania w drzewie raportowania. Istnieje również możliwość ograniczenia dodatkowego tekstu do określonej jednostki raportowania.
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Dodawanie opisu dla wiersza w raporcie
 
@@ -81,7 +91,9 @@ Komórka opisu zawiera opis danych finansowych w wierszu raportu, na przykład �
 4.  W polu **Wybieranie jednostki raportowania do ograniczenia** rozwiń lub zwiń drzewo raportowania, a następnie wybierz jednostkę raportowania.
 
 ## <a name="add-a-format-code"></a>Dodawanie kodu formatu
-Komórka **Kod formatu** pozwala wybrać wstępnie sformatowane elementy zawartości tego wiersza. Jeśli komórka **Kod formatu** jest pusta, wiersz jest interpretowany jako wiersz szczegółów danych finansowych. **Uwaga:** Jeśli raport zawiera wiersze z formatowaniem niekwotowym, które są powiązane z wierszami kwoty, które zostały pominięte (np. z powodu zerowych sald), można użyć kolumny **Powiązane formuły/wiersze/jednostki**, aby zapobiec drukowaniu wierszy tytułu i formatu.
+Komórka **Kod formatu** pozwala wybrać wstępnie sformatowane elementy zawartości tego wiersza. Jeśli komórka **Kod formatu** jest pusta, wiersz jest interpretowany jako wiersz szczegółów danych finansowych. 
+> [!NOTE]
+> Jeśli raport zawiera wiersze z formatowaniem niekwotowym, które są powiązane z wierszami kwoty, które zostały pominięte (np. z powodu zerowych sald), można użyć kolumny **Powiązane formuły/wiersze/jednostki**, aby zapobiec drukowaniu wierszy tytułu i formatu.
 
 ### <a name="add-a-format-code-to-a-report-row"></a>Dodawanie kodu formatu do wiersza raportu
 
@@ -140,7 +152,9 @@ Podczas tworzenia formuły sumy wiersza trzeba używać kodów wiersza do okreś
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Wiązanie wiersza formatu z wierszem kwoty
 
-W kolumnie **Kod formatu** w definicji wiersza kody formatu **DES**, **LFT**, **RGT**, **CEN**, **---** i **===** stosują formatowanie do wierszy niekwotowych. Aby to formatowanie nie było drukowane, gdy powiązane wiersze kwoty są pominięte (np. z powodu wartości zerowych w wierszach kwoty lub braku aktywności w okresie), trzeba powiązać wiersze formuły z odpowiednimi wierszami kwoty. Ta funkcja jest przydatna, jeśli chcesz zapobiec drukowaniu nagłówków lub formatowania sum częściowych, gdy dany okres nie zawiera informacji do wydrukowania. **Uwaga:** można również zapobiegać drukowaniu szczegółowych wierszy kwoty, usuwając zaznaczenie opcji wyświetlania wierszy bez kwot. Ta opcja znajduje się na karcie **Ustawienia** w definicji raportu. Domyślnie konta szczegółów transakcji, które mają zerowe saldo lub nie mają aktywności w okresie, są blokowane w raportach. Aby wyświetlić te konta szczegółów transakcji, zaznacz pole wyboru **Wyświetlaj wiersze bez kwot** na karcie **Ustawienia** w definicji raportu.
+W kolumnie **Kod formatu** w definicji wiersza kody formatu **DES**, **LFT**, **RGT**, **CEN**, **---** i **===** stosują formatowanie do wierszy niekwotowych. Aby to formatowanie nie było drukowane, gdy powiązane wiersze kwoty są pominięte (np. z powodu wartości zerowych w wierszach kwoty lub braku aktywności w okresie), trzeba powiązać wiersze formuły z odpowiednimi wierszami kwoty. Ta funkcja jest przydatna, jeśli chcesz zapobiec drukowaniu nagłówków lub formatowania sum częściowych, gdy dany okres nie zawiera informacji do wydrukowania. 
+    > [!NOTE]
+    >  You can also prevent the detailed amount rows from being printed by clearing the option to display rows without amounts. This option is located on the **Settings** tab of the report definition. By default, transaction detail accounts that have a zero balance or no period activity are suppressed in reports. To show these transaction detail accounts, select the **Display rows without an amounts** check box on the **Settings** tab of the report definition.
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Wiązanie wiersza formatu z wierszem kwoty
 
@@ -196,7 +210,9 @@ Kody sortowania sortują konta lub wartości, sortują raport odchyleń rzeczywi
 1.  W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
 2.  Kliknij dwukrotnie komórkę **Kod formatu**, a następnie wybierz opcję kod sortowania.
 3.  W komórce **Powiązane formuły/wiersze/jednostki** należy określić zakres kodów wiersza do sortowania. Aby określić zakres, należy wprowadzić kod pierwszego wiersza, dwukropek (:) i kod ostatniego wiersza. Na przykład wpisz **160:490**, aby określić, że zakres obejmuje wiersze od 160 do 490.
-4.  W komórce **Ograniczenia kolumny** należy wprowadzić literę kolumny raportu, która ma być użyta do sortowania. **Uwaga:** w obliczeniach sortowania należy uwzględniać tylko wiersze kwoty.
+4.  W komórce **Ograniczenia kolumny** należy wprowadzić literę kolumny raportu, która ma być użyta do sortowania. 
+    > [!NOTE]
+    > W obliczeniach sortowania należy uwzględniać tylko wiersze kwoty.
 
 ### <a name="examples-of-ascending-and-descending-column-values"></a>Przykłady wartości kolumn w porządku rosnącym i malejącym
 
@@ -220,255 +236,24 @@ W poniższym przykładzie wartości w kolumnie D raportu zostaną posortowane ro
 
 Oto przykład raportu, który jest generowany.
 
-**Analiza odchyleń (sortowanie wg odchylenia)**
+|||||||||
+|---|---|---|---|---|---|---|
+|**Analiza odchyleń (sortowanie wg odchylenia)**|||||||
 
-**Regiony Pekin i Atlanta**
+|**Regiony Pekin i Atlanta**|||||||
 
-**Za okres siedmiu miesięcy do 31 lipca 2013**
+|**Za okres siedmiu miesięcy do 31 lipca 2013**|||||||
 
-**Lipiec**
+||**Lipiec**|**Od początku roku**|||||
 
-**YTD**
+||**Wartości rzeczywiste**|**Budżet**|**Odchylenie**|**Wartości rzeczywiste**|**Budżet**|**Odchylenie**|
 
-**Rzeczywista**
+|**Posortowane według miesięcznego odchylenia w kolejności rosnącej**|||||||
 
-**Budżet**
+|KWS|873 872|236 144|(637 728)|4 864 274|1 590 315|(3 273 959)|
 
-**Odchylenie**
-
-**Rzeczywista**
-
-**Budżet**
-
-**Odchylenie**
-
-**Posortowane według miesięcznego odchylenia w kolejności rosnącej**
-
-KWS
-
-873 872
-
-236 144
-
-(637 728)
-
-4 864 274
-
-1 590 315
-
-(3 273 959)
-
-Wynagrodzenia
-
-97 624
-
-65 573
-
-(32 051)
-
-653 884
-
-441 664
-
-(212 220)
-
-Rabaty sprzedaży
-
-36 383
-
-24 152
-
-(12 231)
-
-241 562
-
-162 670
-
-(78 892)
-
-Zwroty sprzedaży
-
-10 917
-
-7246
-
-3671
-
-62 809
-
-48 803
-
-(14 006)
-
-Koszty wynajmu
-
-12 052
-
-9019
-
-(3033)
-
-80 444
-
-60 748
-
-(19 696)
-
-Koszty biura
-
-5023
-
-3291
-
-(1732)
-
-33 420
-
-22 098
-
-(11 322)
-
-Wydatki związane z podróżą
-
-7656
-
-7641
-
-(15)
-
-51 062
-
-51 469
-
-407
-
-Sprzedaż
-
-1 240 119
-
-410 389
-
-829 730
-
-7 139 288
-
-2 764 549
-
-4 374 739
-
-**Posortowane według odchylenia bezwzględnego od początku roku w kolejności malejącej**
-
-Sprzedaż
-
-1 240 119
-
-410 389
-
-829 730
-
-7 139 288
-
-2 764 549
-
-4 374 739
-
-Wydatki związane z podróżą
-
-7656
-
-7641
-
-(15)
-
-51 062
-
-51 469
-
-407
-
-Koszty biura
-
-5023
-
-3291
-
-(1732)
-
-33 420
-
-22 098
-
-(11 322)
-
-Zwroty sprzedaży
-
-10 917
-
-7246
-
-3671
-
-62 809
-
-48 803
-
-(14 006)
-
-Koszty wynajmu
-
-12 052
-
-9019
-
-(3033)
-
-80 444
-
-60 748
-
-(19 696)
-
-Rabaty sprzedaży
-
-36 383
-
-24 152
-
-(12 231)
-
-241 562
-
-162 670
-
-(78 892)
-
-Wynagrodzenia
-
-97 624
-
-65 573
-
-(32 051)
-
-653 884
-
-441 664
-
-(212 220)
-
-KWS
-
-873 872
-
-236 144
-
-(637 728)
-
-4 864 274
-
-1 590 315
-
-(3 273 959)
+|Wynagrodzenia i płace|97 624|65 573|(32 051)|653 884|441 664|(212 220)| |Rabaty sprzedaży|36 383|24 152|(12 231)|241 562|162 670|(78 892)| |Zwroty sprzedaży|10 917|7 246|(3 671)|62 809|48 803|(14 006)| |Koszty wynajmu|12 052|9 019|(3 033)|80 444|60 748|(19 696)| |Koszty biura|5 023|3 291|(1 732)|33 420|22 098|(11 322)| |Wydatki związane z podróżą|7 656|7 641|(15)|51 062|51 469|407| |Sprzedaż|1 240 119|410 389|829 730|7 139 288|2 764 549|4 374 739| |**Posortowane według odchylenia bezwzględnego od początku roku w kolejności malejącej**|||||||
+|Sprzedaż|1 240 119|410 389|829 730|7 139 288|2 764 549|4 374 739| |Wydatki związane z podróżą|7 656|7 641|(15)|51 062|51 469|407| |Koszty biura|5 023|3 291|(1 732)|33 420|22 098|(11 322)| |Zwroty sprzedaży|10 917|7 246|(3 671)|62 809|48 803|(14 006)| |Koszty wynajmu|12 052|9 019|(3 033)|80 444|60 748|(19 696)| |Rabaty sprzedaży|36 383|24 152|(12 231)|241 562|162 670|(78 892)| |Wynagrodzenia i płace|97 624|65 573|(32 051)|653 884|441 664|(212 220)| |KWS|873 872|236 144|(637 728)|4 864 274|1 590 315|(3 273 959)|
 
 ## <a name="specify-a-format-override-cell"></a>Określanie komórki Zmiana formatu
 Komórka **Zmiana formatu** określa format, który jest używany dla wiersza podczas drukowania raportu. To formatowanie ma wyższy priorytet od formatowania określonego w definicji kolumny i definicji raportu. Domyślnie w tych definicjach określone jest formatowanie walutowe. Jeśli jeden wiersz raportu zawiera liczbę środków trwałych, np. liczbę budynków, a inny wiersz zawiera wartość pieniężną tych środków trwałych, można zastąpić formatowanie walutowe i wprowadzić formatowanie numeryczne dla wiersza, który określa liczbę budynków. Można określić te informacje w oknie dialogowym **Zmiana formatu**. Dostępne opcje zależą od wybranej kategorii format. Obszar **Próbka** okna dialogowego pokazuje przykładowe formaty. Dostępne są następujące formaty kategorii:
@@ -492,7 +277,9 @@ Formatowanie walutowe ma zastosowanie do kwoty obrachunkowej i zawiera symbol wa
 -   **Symbol waluty** — symbol waluty dla raportu. Ta wartość zastępuje ustawienie **Opcje regionalne** dla informacji o firmie.
 -   **Liczby ujemne** — liczby ujemne mają znak minus (-), mogą pojawiać się w nawiasach lub mogą być oznaczone trójkątem (∆).
 -   **Miejsca dziesiętne** — liczba wyświetlanych miejsc po przecinku.
--   **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. **Uwaga:** Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
+-   **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. 
+    > [!NOTE]
+    >  Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
 
 ### <a name="numeric-formatting"></a>Formatowanie liczbowe
 
@@ -500,7 +287,9 @@ Formatowanie numeryczne jest stosowane do dowolnej kwoty i nie zawiera symbolu w
 
 -   **Liczby ujemne** — liczby ujemne mają znak minus (-), mogą pojawiać się w nawiasach lub mogą być oznaczone trójkątem (∆).
 -   **Miejsca dziesiętne** — liczba wyświetlanych miejsc po przecinku.
--   **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. **Uwaga:** Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
+-   **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. 
+    > [!NOTE]
+    >  Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
 
 ### <a name="percentage-formatting"></a>Formatowanie procentowe
 
@@ -508,14 +297,18 @@ Formatowanie procentowe zawiera znak procentów (%). Dostępne są następujące
 
 -   **Liczby ujemne** — liczby ujemne mają znak minus (-), mogą pojawiać się w nawiasach lub mogą być oznaczone trójkątem (∆).
 -   **Miejsca dziesiętne** — liczba wyświetlanych miejsc po przecinku.
--   **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. **Uwaga:** Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
+-   **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. 
+    > [!NOTE]
+    >  Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
 
 ### <a name="custom-formatting"></a>Formatowanie niestandardowe
 
 Za pomocą formatowania niestandardowego można tworzyć własne formaty nadrzędne. Dostępne są następujące opcje:
 
 -   **Typ** – format niestandardowy.
--   **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. **Uwaga:** Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
+-   **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. 
+    > [!NOTE]
+    >  Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
 
 Typ powinien być przestawiać wartość dodatnią, a następnie wartość ujemną. Zazwyczaj wprowadza się podobny format, który odróżnia wartości dodatnie od ujemnych. Na przykład aby określić, że ujemne i dodatnie wartości mają dwa miejsca dziesiętne, ale wartości ujemne są wyświetlane w nawiasach, wprowadź **0,00;(0,00)**. W poniższej tabeli przedstawiono formaty niestandardowe, których można używać do kontroli formatów wartości. Wszystkie przykłady zaczynają się od wartości 1234,56.
 
@@ -570,14 +363,18 @@ Po wybraniu określonego konta projektant raportów zwykle łączy konta i lata 
 
 ### <a name="book-code-modifiers"></a>Modyfikatory kody księgi
 
-Możesz ograniczyć wiersz do istniejącego kodu księgi. Definicja kolumny musi zawierać co najmniej jedną kolumnę **FD**, która ma kod księgi. **Uwaga:** ograniczenie kodu księgi dla wiersza zastępuje ograniczenia kodu księgi w definicji kolumny dla tego wiersza.
+Możesz ograniczyć wiersz do istniejącego kodu księgi. Definicja kolumny musi zawierać co najmniej jedną kolumnę **FD**, która ma kod księgi. 
+> [!NOTE]
+> Ograniczenie kodu księgi dla wiersza zastępuje ograniczenia kodu księgi w definicji kolumny dla tego wiersza.
 
 ### <a name="account-and-transaction-attributes"></a>Atrybuty konta i transakcji
 
 Niektóre systemy księgowe obsługują atrybuty konta i atrybuty transakcji w danych finansowych. Te atrybuty działają na zasadzie podobnie jak wirtualne segmenty kont i mogą zawierać dodatkowe informacje dotyczące konta lub transakcji. Te dodatkowe informacje mogą być identyfikatorami konta, identyfikatorami partii, kodami pocztowymi lub innymi atrybutami. Jeśli system księgowy obsługuje atrybuty, możesz używać atrybutów konta lub transakcji jako modyfikatorów wierszy w definicji wiersza. Aby uzyskać informacje dotyczące sposobu zastępowania informacji wiersza, zobacz sekcję „Zastępowanie definicji kolumny” we wcześniejszej części tego artykułu.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Określanie łącza do komórki wymiarów finansowych
-Komórka **Łącze do wymiarów finansowych** zawiera łącza do danych finansowych, które powinny znajdować się w każdym wierszu raportu. Ta komórka zawiera wartości wymiarów, ale można określić komórki w arkuszu programu Microsoft Excel zamiast lub oprócz wartości segmentów lub wartości wymiarów. Aby otworzyć okno dialogowe **Wymiary** kliknij dwukrotnie komórkę **Łącze do wymiarów finansowych**. **Uwaga:** Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. Aby określić informacje dla wiersza, które są już w definicji wiersza, dodaj informacje w komórce **Łącze do wymiarów finansowych**. Aby dodać nowe wiersze połączone z danymi finansowymi, użyj okna dialogowego **Wstaw wiersze z**, aby utworzyć nowe wiersze w definicji raportu. Tytuł kolumny zmienia się w zależności od tego, jak kolumna jest skonfigurowana i wyświetlana w następującej tabeli.
+Komórka **Łącze do wymiarów finansowych** zawiera łącza do danych finansowych, które powinny znajdować się w każdym wierszu raportu. Ta komórka zawiera wartości wymiarów, ale można określić komórki w arkuszu programu Microsoft Excel zamiast lub oprócz wartości segmentów lub wartości wymiarów. Aby otworzyć okno dialogowe **Wymiary** kliknij dwukrotnie komórkę **Łącze do wymiarów finansowych**. 
+> [!NOTE]
+> Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: \*, \[, \], { lub }. Aby określić informacje dla wiersza, które są już w definicji wiersza, dodaj informacje w komórce **Łącze do wymiarów finansowych**. Aby dodać nowe wiersze połączone z danymi finansowymi, użyj okna dialogowego **Wstaw wiersze z**, aby utworzyć nowe wiersze w definicji raportu. Tytuł kolumny zmienia się w zależności od tego, jak kolumna jest skonfigurowana i wyświetlana w następującej tabeli.
 
 | Typ łącza, które jest zaznaczone       | Opis kolumny Łącze zmienia się na ten tekst |
 |----------------------------------|----------------------------------------------------|
@@ -594,7 +391,7 @@ Komórka **Łącze do wymiarów finansowych** zawiera łącza do danych finansow
 4.  W oknie dialogowym wymiaru wybierz **Pojedynczy lub zakres**.
 5.  W polu **Z** wpisz wymiar początkowy lub kliknij przycisk ![Przeglądaj](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Przeglądaj"), aby wyszukać dostępne wymiary. Aby wprowadzić zakres wymiarów, należy wprowadzić wymiar końcowy w polu **Do**.
 6.  Kliknij **OK**, aby zamknąć okno dialogowe wymiaru. Okno dialogowe **Wymiary** wyświetla zaktualizowane wymiary lub zakresy.
-7.  Kliknij **OK **, aby zamknąć okno dialogowe **Wymiary**.
+7.  Kliknij **OK**, aby zamknąć okno dialogowe **Wymiary**.
 
 ## <a name="display-zero-balance-accounts-in-a-row-definition"></a>Wyświetlanie kont o saldzie zerowym w definicji wiersza
 Domyślnie projektant raportów nie drukuje wierszy, które nie mają odnośnego salda w danych finansowych. W związku z tym można utworzyć jedną definicję wiersza, która obejmuje wszystkie wartości segmentu naturalnego lub wszystkie wartości wymiaru, a następnie użyć tej definicji wiersza dla działów w organizacji.
@@ -606,21 +403,27 @@ Domyślnie projektant raportów nie drukuje wierszy, które nie mają odnośnego
 3.  W menu **Plik** kliknij **Zapisz**, aby zapisać zmiany.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Używanie symboli wieloznacznych i zakresów w definicji wiersza
-Po wprowadzeniu wartości segmentu naturalnego w oknie dialogowym **Wymiary** możesz wstawić symbol wieloznaczny (? lub \*) w dowolnym miejscu segmentu. Projektant raportów wyodrębnienia wszystkie wartości dla zdefiniowanych pozycji bez uwzględniania symboli wieloznacznych. Na przykład definicja wiersza zawiera tylko wartości naturalnych segmentów, a naturalne segmenty mają cztery znaki. Wprowadzając w wierszu wartość **6???**, tworzysz instrukcję dla projektanta raportów, aby uwzględniał wszystkie konta, które mają wartość naturalnego segmentu zaczynającą się od cyfry 6. Jeśli wprowadzisz **6\***, zwracane są te same wyniki, ale obejmują one również wartości o różnej szerokości, takie jak **60** i **600000**. Projektant raportów zastępuje poszczególne symbole wieloznaczne (?) pełnym zakresem możliwych wartości, co obejmuje litery i znaki specjalne. Na przykład w zakresie od **12?0** do **12?4**, symbol wieloznaczny w kombinacji **12?0** jest zastępowany najniższą wartością w zestawie znaków, a symbol wieloznaczny w kombinacji **12? 4** jest zastępowany najwyższą wartością w zestawie znaków. **Uwaga:** należy unikać używania symboli wieloznacznych dla kont na początkach i końcach zakresów. Używanie symboli wieloznacznych w konta początkowych lub końcowych może dawać nieoczekiwane wyniki.
+Po wprowadzeniu wartości segmentu naturalnego w oknie dialogowym **Wymiary** możesz wstawić symbol wieloznaczny (? lub \*) w dowolnym miejscu segmentu. Projektant raportów wyodrębnienia wszystkie wartości dla zdefiniowanych pozycji bez uwzględniania symboli wieloznacznych. Na przykład definicja wiersza zawiera tylko wartości naturalnych segmentów, a naturalne segmenty mają cztery znaki. Wprowadzając w wierszu wartość **6???**, tworzysz instrukcję dla projektanta raportów, aby uwzględniał wszystkie konta, które mają wartość naturalnego segmentu zaczynającą się od cyfry 6. Jeśli wprowadzisz **6\***, zwracane są te same wyniki, ale obejmują one również wartości o różnej szerokości, takie jak **60** i **600000**. Projektant raportów zastępuje poszczególne symbole wieloznaczne (?) pełnym zakresem możliwych wartości, co obejmuje litery i znaki specjalne. Na przykład w zakresie od **12?0** do **12?4**, symbol wieloznaczny w kombinacji **12?0** jest zastępowany najniższą wartością w zestawie znaków, a symbol wieloznaczny w kombinacji **12? 4** jest zastępowany najwyższą wartością w zestawie znaków. 
+> [!NOTE]
+> Należy unikać używania symboli wieloznacznych dla kont na początkach i końcach zakresów. Używanie symboli wieloznacznych w konta początkowych lub końcowych może dawać nieoczekiwane wyniki.
 
 ### <a name="single-segment-or-single-dimension-ranges"></a>Zakresy z jednym segmentem lub jednym wymiarem
 
-Można określić zakres wartości segmentów lub wartości wymiarów. Zaletą określania zakresu jest to, że nie trzeba aktualizować definicji wiersza za każdym razem, gdy do danych finansowych dodawana jest nowa wartość segmentu lub wartość wymiaru. Na przykład zakres **+Konto=\[6100:6900\]** pobiera wartości z kont od 6100 do 6900 do kwoty wiersza. Gdy zakres zawiera symbol wieloznaczny (?), projektant raportów nie ocenia zakresu na zasadzie znak po znaku. Zamiast tego określane są niższe i wyższe krańce zakresu, a następnie uwzględniane są wartości krańcowe i wszystkie wartości między nimi. **Uwaga:** Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. Można dodać znak „&” tylko w przypadku automatycznego tworzenia definicji wierszy przy użyciu okna dialogowego **Wstawianie wierszy z wymiarów**.
+Można określić zakres wartości segmentów lub wartości wymiarów. Zaletą określania zakresu jest to, że nie trzeba aktualizować definicji wiersza za każdym razem, gdy do danych finansowych dodawana jest nowa wartość segmentu lub wartość wymiaru. Na przykład zakres **+Konto=\[6100:6900\]** pobiera wartości z kont od 6100 do 6900 do kwoty wiersza. Gdy zakres zawiera symbol wieloznaczny (?), projektant raportów nie ocenia zakresu na zasadzie znak po znaku. Zamiast tego określane są niższe i wyższe krańce zakresu, a następnie uwzględniane są wartości krańcowe i wszystkie wartości między nimi. 
+> [!NOTE]
+> Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: \*, \[, \], { lub }. Można dodać znak „&” tylko w przypadku automatycznego tworzenia definicji wierszy przy użyciu okna dialogowego **Wstawianie wierszy z wymiarów**.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Zakresy z wieloma segmentami lub wieloma wymiarami
 
-Jeśli wprowadzany jest zakres przy użyciu kombinacji wielu wartości wymiaru, porównanie zakresu jest wykonywane na zasadzie wymiar po wymiarze. Porównanie zakresu nie może być wykonywane ani na zasadzie znak po znaku ani na podstawie segmentu częściowego. Na przykład zakres **+Konto=\[5000:6000\], Dział=\[1000:2000\], Centrum kosztu=\[00\]** zawiera tylko konta, które pasują do każdego segmentu. W tym scenariuszu pierwszy wymiar musi mieścić się w zakresie od 5000 do 6000, drugi wymiar musi mieścić się w zakresie od 1000 do 2000, a ostatni wymiar musi mieć wartość 00. Na przykład **+Konto=\[5100\], Dział=\[1100\], Centrum kosztu=\[01\]** nie jest uwzględniony w raporcie, ponieważ ostatni segment nie mieści się w określonym zakresie. Jeśli wartość segmentu zawiera spacje, należy umieścić tę wartość w nawiasach kwadratowych (\[ \]). Następujące wartości są prawidłowe dla segmentu złożonego z czterech znaków: **\[ 234\], \[123 \], \[1 34\]**. Wartości wymiarów powinny być ujęte w nawiasy kwadratowe (\[ \]), a projektant raportów dodaje te nawiasy samodzielnie. Jeśli zakres obejmujący wiele segmentów lub wiele wymiarów zawiera symbole wieloznaczne (? lub \*), określane są górne i dolne krańce całego zakresu złożonego z wielu segmentów lub wielu wymiarów, a następnie dodawane są wartości krańcowe i wszystkie wartości między nimi. Jeśli zakres jest duży, np. cały zakres kont od 40000 do 99999, należy określić prawidłowe konto początkowe i końcowe, jeśli jest to możliwe. **Uwaga:** Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. Można dodać znak „&” tylko w przypadku automatycznego tworzenia definicji wierszy przy użyciu okna dialogowego **Wstawianie wierszy z wymiarów**.
+Jeśli wprowadzany jest zakres przy użyciu kombinacji wielu wartości wymiaru, porównanie zakresu jest wykonywane na zasadzie wymiar po wymiarze. Porównanie zakresu nie może być wykonywane ani na zasadzie znak po znaku ani na podstawie segmentu częściowego. Na przykład zakres **+Konto=\[5000:6000\], Dział=\[1000:2000\], Centrum kosztu=\[00\]** zawiera tylko konta, które pasują do każdego segmentu. W tym scenariuszu pierwszy wymiar musi mieścić się w zakresie od 5000 do 6000, drugi wymiar musi mieścić się w zakresie od 1000 do 2000, a ostatni wymiar musi mieć wartość 00. Na przykład **+Konto=\[5100\], Dział=\[1100\], Centrum kosztu=\[01\]** nie jest uwzględniony w raporcie, ponieważ ostatni segment nie mieści się w określonym zakresie. Jeśli wartość segmentu zawiera spacje, należy umieścić tę wartość w nawiasach kwadratowych (\[ \]). Następujące wartości są prawidłowe dla segmentu złożonego z czterech znaków: **\[ 234\], \[123 \], \[1 34\]**. Wartości wymiarów powinny być ujęte w nawiasy kwadratowe (\[ \]), a projektant raportów dodaje te nawiasy samodzielnie. Jeśli zakres obejmujący wiele segmentów lub wiele wymiarów zawiera symbole wieloznaczne (? lub \*), określane są górne i dolne krańce całego zakresu złożonego z wielu segmentów lub wielu wymiarów, a następnie dodawane są wartości krańcowe i wszystkie wartości między nimi. Jeśli zakres jest duży, np. cały zakres kont od 40000 do 99999, należy określić prawidłowe konto początkowe i końcowe, jeśli jest to możliwe. 
+> [!NOTE]
+> Projektant raportów nie można wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: \*, \[, \], { lub }. Można dodać znak „&” tylko w przypadku automatycznego tworzenia definicji wierszy przy użyciu okna dialogowego **Wstawianie wierszy z wymiarów**.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Dodawanie i odejmowanie z innych kont w definicji wiersza
 Aby dodać lub odjąć kwoty pieniężne na jednym koncie z kwot pieniężnych na innym koncie, można użyć znaku plus (+) i znaku minus (-) w komórce **Łącze do wymiarów finansowych**. W poniższej tabeli przedstawiono dopuszczalne formaty dla dodawania i odejmowania łącz do danych finansowych.
 
-| Operacja                                                                               | Użyj następującego formatu                                                                                              |
-|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Operacja  | Użyj następującego formatu  |
+|------------|-----------------|
 | Dodaj dwa konta w pełni kwalifikowane.                                                       | +Oddział=\[000\], Konto=\[1205\], Dział=\[00\]+Oddział=\[100\], Konto=\[1205\], Dział=\[00\] |
 | Dodaj dwie wartości segmentów.                                                                 | +Konto=\[1205\]+Konto=\[1210\]                                                                           |
 | Dodaj wartości segmentów zawierające symbole wieloznaczne.                                    | +Konto=\[120?+Konto=\[11??\]                                                                             |
@@ -634,7 +437,9 @@ Aby dodać lub odjąć kwoty pieniężne na jednym koncie z kwot pieniężnych n
 | Odejmij zakres wartości segmentów.                                                     | -Konto=\[1200:1205\]                                                                                       |
 | Odejmij zakres wartości segmentów z symbolami wieloznacznymi.                    | -Konto=\[120?:130?\]                                                                                       |
 
-Chociaż można modyfikować konta bezpośrednio, można również użyć okna dialogowego **Wymiary**, aby zastosować prawidłowe formatowanie do łącza danych finansowych. Każda z wartości może zawierać symbole wieloznaczne (? lub \*). Projektant raportów nie można jednak wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. **Uwaga:** aby odjąć wartości, trzeba umieścić te wartości w nawiasach. Na przykład jeśli wpiszesz operację **450?-(4509)**, będzie ona wyświetlana jako **+Konto=\[4509\]-Konto=\[450?\]**, a projektant otrzymuje instrukcję odejmowania kwoty dla segmentu konta 4509 od kwoty dla każdego segmentu konta, który rozpoczyna się od 450.
+Chociaż można modyfikować konta bezpośrednio, można również użyć okna dialogowego **Wymiary**, aby zastosować prawidłowe formatowanie do łącza danych finansowych. Każda z wartości może zawierać symbole wieloznaczne (? lub \*). Projektant raportów nie można jednak wybierać kont, wymiarów ani pól z systemu Microsoft Dynamics ERP, który zawiera jakiekolwiek z następujących znaków zarezerwowanych: &, \*, \[, \], { lub }. 
+> [!NOTE]
+> Aby odjąć wartości, trzeba umieścić te wartości w nawiasach. Na przykład jeśli wpiszesz operację **450?-(4509)**, będzie ona wyświetlana jako **+Konto=\[4509\]-Konto=\[450?\]**, a projektant otrzymuje instrukcję odejmowania kwoty dla segmentu konta 4509 od kwoty dla każdego segmentu konta, który rozpoczyna się od 450.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Dodawanie kont do innych kont i odejmowanie kont od innych kont
 
@@ -648,7 +453,8 @@ Chociaż można modyfikować konta bezpośrednio, można również użyć okna d
 
 4.  Powtórz kroki od 2 do 3, aby dodać więcej operacji.
 
-**Uwaga:** operator ma zastosowanie do wszystkich wymiarów w wierszu.
+> [!NOTE]
+> Operator ma zastosowanie do wszystkich wymiarów w wierszu.
 
 ## <a name="description-of-the-dimensions-dialog-box"></a>Opis okna dialogowego Wymiary
 W poniższej tabeli opisano pola w tym oknie dialogowym **Wymiary**.
@@ -680,7 +486,9 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 2.  W menu **Edycja** kliknij **Zarządzaj zestawami wartości wymiarów**.
 3.  W oknie dialogowym **Zarządzanie zestawami wartości wymiarów** w polu **Wymiar** wybierz typ wymiaru.
 4.  Na liście wymierz zestaw wartości wymiarów do aktualizacji, a następnie kliknij **Modyfikuj**.
-5.  W oknie dialogowym **Modyfikowanie** modyfikuj wartości formuły, które mają znaleźć się w zestawie. **Uwaga:** jeśli dodajesz nowe konta lub wymiary pamiętaj, aby zmodyfikować istniejące zestawy wartości wymiaru, tak aby uwzględniały zmiany.
+5.  W oknie dialogowym **Modyfikowanie** modyfikuj wartości formuły, które mają znaleźć się w zestawie. 
+    > [!NOTE]
+    >  Jeśli dodajesz nowe konta lub wymiary, pamiętaj, aby zmodyfikować istniejące zestawy wartości wymiaru, tak aby uwzględniały zmiany.
 6.  Kliknij dwukrotnie komórkę, a następnie wybierz odpowiedni operator, konto **Z** i konto **Do**.
 7.  Kliknij **OK**, aby zamknąć okno dialogowe **Modyfikowanie** i zapisz zmiany.
 
@@ -703,6 +511,8 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Sprawozdawczość finansowa w programie Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
+[Raporty finansowe](financial-reporting-intro.md)
+
+
 
 

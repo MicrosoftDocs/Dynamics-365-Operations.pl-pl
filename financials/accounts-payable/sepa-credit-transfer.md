@@ -3,7 +3,7 @@ title: "Przegląd przeniesienia kredytu SEPA"
 description: "Ten artykuł zawiera ogólne informacje o poleceniach przelewu ISO 20022, co obejmuje polecenia przelewu Jednolitego Obszaru Płatniczego w Euro (SEPA) oraz wszelkie inne elektroniczne płatności dla dostawców. Polecenie przelewu SEPA jest szczególną formą płatności (w euro) realizowanej przez jedną firmę lub osobę na rzecz innej firmy lub osoby. W temacie wyjaśniono również, jak ustawić i przesłać plik płatności poleceniem przelewu."
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 848df5e3898f37284d7746c59bff8b38d35ac883
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f7adaf2f3a14d2c0e094314f0b36b5d4bdb0a65c
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="sepa-credit-transfer-overview"></a>Przegląd przeniesienia kredytu SEPA
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł zawiera ogólne informacje o poleceniach przelewu ISO 20022, co obejmuje polecenia przelewu Jednolitego Obszaru Płatniczego w Euro (SEPA) oraz wszelkie inne elektroniczne płatności dla dostawców. Polecenie przelewu SEPA jest szczególną formą płatności (w euro) realizowanej przez jedną firmę lub osobę na rzecz innej firmy lub osoby. W temacie wyjaśniono również, jak ustawić i przesłać plik płatności poleceniem przelewu.
 
@@ -55,7 +59,7 @@ Format płatności polecenia przelewu dla krajów europejskich jest implementowa
 Należy zawsze przejść do biblioteki zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) i wyświetlić najbardziej aktualną listę dostępnych plików, które mają typ składnika aktywów **Konfiguracja GER**. Następna sekcja — „Co trzeba skonfigurować?” — zawiera łącze do tematu, który wyjaśnia sposób tworzenia repozytorium usługi LCS na potrzeby przeglądania dostępnych konfiguracji i importowania wybranych konfiguracji.
 
 ## <a name="what-do-i-have-to-set-up"></a>Co trzeba skonfigurować?
--   Zanim będzie można tworzyć pliki poleceń przelewu, należy zaimportować co najmniej jedną aktywną konfigurację polecenia przelewu do konfiguracji raportowania elektronicznego. Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Zanim będzie można tworzyć pliki poleceń przelewu, należy zaimportować co najmniej jedną aktywną konfigurację polecenia przelewu do konfiguracji raportowania elektronicznego. Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 -   W przypadku konfigurowania metod płatności do rozrachunków z dostawcami należy zaznaczyć pole wyboru **Ogólne raportowanie elektroniczne** i wybrać odpowiedni format polecenia przelewu ISO (np. **Polecenie przelewu ISO 20022 (AT)**) jako konfigurację formatu eksportu.
 -   Należy także skonfigurować informacje firmy i konta bankowego w programie Dynamics 365 for Operations.
 -   Do tworzenia prawidłowych płatności poleceniami przelewu są potrzebne numery kont bankowych, numery IBAN i czasami kody SWIFT (BIC) lub inne identyfikatory. W związku z tym należy je skonfigurować dla konta bankowego dostawcy i konta bankowego organizacji wnioskującej o przelew.
@@ -121,5 +125,7 @@ Międzynarodowy numer konta bankowego (IBAN) i kod identyfikacyjny banku (SWIFT)
 
 ## <a name="how-do-i-transmit-a-payment-file-to-the-bank"></a>Jak przekazać plik płatności do banku?
 Podczas generowania płatności zostanie wygenerowany plik płatności, a użytkownik jest proszony o zapisanie go w przeglądarce sieci web w dowolnej dostępnej lokalizacji. Następnym krokiem jest wysłanie pliku XML do banku. Ten proces różni się w zależności od banku. Postępuj zgodnie z instrukcjami otrzymanymi z banku, aby przesłać pliki do banku do przetworzenia.
+
+
 
 

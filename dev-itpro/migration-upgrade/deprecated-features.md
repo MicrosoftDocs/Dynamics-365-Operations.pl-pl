@@ -3,7 +3,7 @@ title: "Przestarzałe funkcje"
 description: "W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia z programu Dynamics 365 for Operations. Wymieniono również funkcje, które zostały wycofane w wydaniach systemu Dynamics AX 7.0."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -15,16 +15,20 @@ ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
-ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: e9ba7239b9ff8b9b97c9dabc06fb2c68760d19d4
-ms.lasthandoff: 03/31/2017
+ms.dyn365.ops.version: Platform update 6
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8fbfc8c91c836eb9922f2bf1165ec887d8a0bc8e
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="deprecated-features"></a>Przestarzałe funkcje
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia z programu Dynamics 365 for Operations. Wymieniono również funkcje, które zostały wycofane w wydaniach systemu Dynamics AX 7.0.
 
@@ -472,7 +476,17 @@ Partycje danych zapewniają logiczne oddzielenie danych w bazie danych systemu M
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | Środowisko klienta systemu Dynamics AX zostało przeprojektowane, by poprawić funkcjonalność wielu platform i urządzeń.                      |
 | Zamieniona przez inną funkcję? | Nowy klient sieci web jest oparty na metadanych formatu dla komputerów i modelu programowania, który został dostosowany do potrzeb rozszerzonej platformy internetowej. |
-| Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                    |
+| Moduły, których dotyczą zmiany             | Wszystko                                                                                                                                    |
+
+### <a name="direct-database-connection"></a>Bezpośrednie połączenie z bazą danych
+
+W programie Dynamics AX 2012 R3 aplikacja Retail Modern POS mogła się łączyć bezpośrednio z bazą danych kanału w podobny sposób, jak robi to aplikacja Enterprise POS. Było to uzupełnienie standardowej metody komunikacji używanej przez aplikację Retail Modern POS, czyli korzystania z pośrednictwa serwera sieci sprzedaży.  
+
+|                              |                                                                                         |
+|------------------------------|-----------------------------------------------------------------------------------------|
+| Przyczyna amortyzacji       | Bezpośrednia łączność z bazą danych wymagała protokołów o słabszych zabezpieczeniach i była używana głównie do osiągnięcia najwyższej wydajności. Ze względu na ulepszenia w dziedzinach wydajności i zabezpieczeń, które wprowadzono przy okazji programu Dynamics 365 for Operations, ta funkcjonalność wywołuje teraz więcej problemów, niż rozwiązuje. |
+| Zamieniona przez inną funkcję? | Nr Teraz jest obsługiwana tylko standardowa komunikacja za pośrednictwem serwera sieci sprzedaży.    |
+| Moduły, których dotyczą zmiany             | Baza danych kanału/Retail Modern POS                                    |
 
 ### <a name="dutch-swift-mt940"></a>Holenderski SWIFT MT940
 
@@ -661,8 +675,18 @@ Ta funkcja pozwala zmienić nazwę jednego z trzech standardowych wymiarów prod
 |                              |                                                                               |
 |------------------------------|-------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | Bieżąca wersja systemu Dynamics AX nie obsługuje zmian etykiet w czasie wykonywania. |
-| Zamieniona przez inną funkcję? | Nie                                                                            |
+| Zamieniona przez inną funkcję? | Nr                                                                            |
 | Moduły, których dotyczą zmiany             | Zarządzanie informacjami o produktach                                                |
+
+### <a name="retail-server-connectivity-using-http"></a>Łączność serwera sieci sprzedaży przy użyciu protokołu HTTP
+
+W programie Dynamics AX 2012 R3 serwer sieci sprzedaży mógł wykorzystywać komunikację za pośrednictwem protokołu HTTP (niezabezpieczonego). Było to uzupełnienie standardowej komunikacji wykorzystującej protokół HTTPS.
+
+|                              |                                                                               |
+|------------------------------|-------------------------------------------------------------------------------|
+| Przyczyna amortyzacji       | Ze względu na nowe wymagania w kwestii bezpieczeństwa obecnie jest obsługiwana tylko zabezpieczona komunikacja przy użyciu protokołu TLS 1.2 (lub nowszego, jeśli jest dostępny). Samoobsługowy instalator automatycznie skonfiguruje komputer do obsługi tej komunikacji. |
+| Zamieniona przez inną funkcję? | Nr Teraz jest obsługiwana tylko standardowa komunikacja za pośrednictwem protokołu HTTPS.                                                                           |
+| Moduły, których dotyczą zmiany             | Serwer sprzedaży detalicznej                                                |
 
 ### <a name="role-center-pages"></a>Strony widoków głównych użytkownika
 
@@ -784,6 +808,8 @@ Informacje listy płac w module Zasoby ludzkie
 | Przyczyna amortyzacji       | Ta funkcja została zastąpiona inną funkcją.                                    |
 | Zamieniona przez inną funkcję? | Program Management Reporter (oznaczony jako **Raporty finansowe** w bieżącej wersji systemu Dynamics AX) |
 | Moduły, których dotyczą zmiany             | Księga główna                                                                              |
+
+
 
 
 

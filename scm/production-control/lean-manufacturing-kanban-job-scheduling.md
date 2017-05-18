@@ -3,7 +3,7 @@ title: "Planowanie zadań w systemie Kanban dla produkcji oszczędnej"
 description: "Ten artykuł zawiera informacje o kontroli wizualnej nad planowaniem zadań Kanban oraz o różnych sposobach planowania zadań w systemie Kanban."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15 - 02 - 36
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,22 +18,28 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 062cbbc8a4fd3b4dc738f24ee0606a3741736377
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 019974b96985748c82641b73e40a3131d5b27232
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Planowanie zadań w systemie Kanban dla produkcji oszczędnej
 
+[!include[banner](../includes/banner.md)]
+
+
 Ten artykuł zawiera informacje o kontroli wizualnej nad planowaniem zadań Kanban oraz o różnych sposobach planowania zadań w systemie Kanban.  
 
 Strona **Planowanie zadań Kanban** daje wizualną kontrolę nad harmonogramami komórek produkcji oszczędnej. Umożliwia wyświetlenie wszystkich zadań w systemie Kanban i oferuje wiele możliwości filtrowania. Z tej strony można przejść do wszystkich innych stron, które odnoszą się do konfiguracji i wykonania karty Kanban.
 
 ## <a name="automatic-scheduling-of-kanban-jobs"></a>Automatyczne planowanie zadań w systemie Kanban
-Planowanie może być uruchomione automatycznie, jeśli parametr **Ilość w automatycznym planowaniu** jest ustawiony w regule Kanban. Po ustawieniu parametru **Ilość w automatycznym planowaniu** na **1** zadania w systemie Kanban są planowane natychmiast po utworzeniu. Efektem jest seria operacji „first pull, first serve”. Jeśli wartość parametru **Ilość w automatycznym planowaniu** jest większa niż 1, zadania Kanban są grupowane, zanim zostaną zaplanowane. Takie podejście pozwala ograniczyć rozmiar zadań Kanban poniżej rzeczywistego rozmiaru partii ekonomicznej. Na przykład rozmiar partii ekonomicznej dla określonego towaru (lub rodziny towarów) wynosi 30. Zamiast tworzyć karty Kanban z ilością produktu 30, można skonfigurować regułę Kanban z ilością produktu 10 i wartością **3** dla parametru **Ilość w automatycznym planowaniu**. Choć harmonogram automatycznego planowania planuje zadania w systemie Kanban dla komórki roboczej tylko wtedy, gdy istnieją trzy nieplanowanych zadania, dla osoby planującej i kierownika hali produkcyjnej jest całkowicie jasne, że dwa nieplanowane zadania mogą oczekiwać na wykonanie. Osoba planująca lub kierownik hali produkcyjnej mogą następnie przenieść te dwa zadania do produkcji, planując je ręczne lub tworząc dodatkowe karty Kanban.
+Planowanie może być uruchomione automatycznie, jeśli parametr **Ilość w automatycznym planowaniu** jest ustawiony w regule Kanban. Po ustawieniu parametru **Ilość w automatycznym planowaniu** na **1** zadania w systemie Kanban są planowane natychmiast po utworzeniu. Efektem jest seria operacji „first pull, first serve”. Jeśli wartość parametru **Ilość w automatycznym planowaniu** jest większa niż 1, zadania Kanban są grupowane, zanim zostaną zaplanowane. 
+
+Takie podejście pozwala ograniczyć rozmiar zadań Kanban poniżej rzeczywistego rozmiaru partii ekonomicznej. Na przykład rozmiar partii ekonomicznej dla określonego towaru (lub rodziny towarów) wynosi 30. Zamiast tworzyć karty Kanban z ilością produktu 30, można skonfigurować regułę Kanban z ilością produktu 10 i wartością **3** dla parametru **Ilość w automatycznym planowaniu**. Choć harmonogram automatycznego planowania planuje zadania w systemie Kanban dla komórki roboczej tylko wtedy, gdy istnieją trzy nieplanowanych zadania, dla osoby planującej i kierownika hali produkcyjnej jest całkowicie jasne, że dwa nieplanowane zadania mogą oczekiwać na wykonanie. Osoba planująca lub kierownik hali produkcyjnej mogą następnie przenieść te dwa zadania do produkcji, planując je ręczne lub tworząc dodatkowe karty Kanban.
 
 ## <a name="manual-scheduling"></a>Planowanie ręczne
 Do obsługi ręcznego planowania system Microsoft Dynamics AX 2012 oferuje tablicę planowania kanban. Ręczne planowanie może być połączone z planowaniem automatycznym. Tablica planowania kanban pozwala planować zadania, usuwać je z harmonogramu, zmieniać ich kolejność lub przesuwać między okresami. Zadania oparte na regule kanban, w których wartość **Automatyczne planowanie** jest większa od **0** mogą być ręcznie usuwane z harmonogramu. Zadania te zostaną jednak ponownie zaplanowane w następnym zdarzeniu planowania automatycznego (tj. podczas tworzenia nowej karty kanban). Następujące opcje są dostępne do planowania ręcznego:
@@ -66,5 +72,7 @@ Strona listy **Planowania zadań Kanban** zawiera pole informacyjne pokazujące 
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
+
+
 
 

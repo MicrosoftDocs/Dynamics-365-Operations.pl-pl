@@ -1,6 +1,6 @@
 ---
-title: "Definiowania klientów w kanałach, kas i stacji sprzętowych oraz zarządzanie nimi"
-description: "Ta strona wiki omawia sposób podłączania urządzeń peryferyjnych do komputera z wystąpieniem aplikacji Retail POS."
+title: "Definiowanie klientów, rejestrów i stacji sprzętowych w kanale oraz zarządzanie nimi"
+description: "Ten temat omawia sposób podłączania urządzeń peryferyjnych do komputera z wystąpieniem aplikacji Retail POS."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
@@ -17,17 +17,21 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: dee5745670ad86000795f2913f99f49c0f123a00
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: db8b059309ecf4da9728394fc3acb091d60baf4d
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
-# <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definiowania klientów w kanałach, kas i stacji sprzętowych oraz zarządzanie nimi
+# <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definiowanie klientów, rejestrów i stacji sprzętowych w kanale oraz zarządzanie nimi
 
-Ta strona wiki omawia sposób podłączania urządzeń peryferyjnych do komputera z wystąpieniem aplikacji Retail POS.
+[!include[banner](includes/banner.md)]
+
+
+Ten temat omawia sposób podłączania urządzeń peryferyjnych do komputera z wystąpieniem aplikacji Retail POS.
 
 **Uwaga:** Aby uzyskać szczegółowe instrukcje instalacji, zobacz artykuły [Konfiguracja i instalacja składnika Retail Hardware Station](retail-hardware-station-configuration-installation.md) i [Samodzielne pobieranie/instalacja składnika Retail Modern POS oraz aktywacja urządzeń typu Modern POS i Cloud POS](retail-modern-pos-device-activation.md).
 
@@ -60,16 +64,19 @@ Nawigacja: Kliknij kolejno opcje **Handel detaliczny i inny** &gt; **Kanały** &
 
 ### <a name="hardware-station-profile"></a>Profil stacji sprzętowej
 
-Nawigacja: Kliknij kolejno opcje **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktów sprzedaży** &gt; **Profile stacji sprzętowych**. Sama stacja sprzętowa jest określana na poziomie kanału przy użyciu informacji specyficznych dla wystąpienia, takich jak adres URL stacji, natomiast profil stacji sprzętowej zawiera informacje, które mogą być statyczne lub udostępniane między wieloma stacjami sprzętowymi. Informacje statyczne obejmują port, który ma być używany, dane pakietu stacji sprzętowej oraz profilu sprzętu. Do informacji statycznych należy również opis typu wdrażanej stacji sprzętowej, np. **Finalizacja zakupu ** lub **Zwroty**, w zależności od sprzętu wymaganego dla każdej konkretnej stacji sprzętowej.
+Nawigacja: Kliknij kolejno opcje **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktów sprzedaży** &gt; **Profile stacji sprzętowych**. Sama stacja sprzętowa jest określana na poziomie kanału przy użyciu informacji specyficznych dla wystąpienia, takich jak adres URL stacji, natomiast profil stacji sprzętowej zawiera informacje, które mogą być statyczne lub udostępniane między wieloma stacjami sprzętowymi. Informacje statyczne obejmują port, który ma być używany, dane pakietu stacji sprzętowej oraz profilu sprzętu. Do informacji statycznych należy również opis typu wdrażanej stacji sprzętowej, np. **Finalizacja zakupu** lub **Zwroty**, w zależności od sprzętu wymaganego dla każdej konkretnej stacji sprzętowej.
 
 ## <a name="scenarios"></a>Scenariusze
 ### <a name="mpos-with-connected-peripheral-devices"></a>Punkt MPOS z podłączonymi urządzeniami peryferyjnymi
 
-[![Tradycyjny, stacjonarny punkt sprzedaży](./media/traditional-300x279.png)](./media/traditional.png) Aby połączyć aplikację MPOS z urządzeniami peryferyjnymi punktu sprzedaży w tradycyjnym scenariuszu stacjonarnego punktu sprzedaży, najpierw przejdź do kasy i przypisz jej profil sprzętu. Kasy POS są wyszczególnione w oknie **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Rejestry**. Po przypisaniu profilu sprzętu zsynchronizuj zmiany z bazą danych kanału, używając do tego harmonogramu dystrybucji „Rejestry”. Harmonogramy dystrybucji są wyszczególnione w oknie **Handel detaliczny i inny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogram dystrybucji**. Następny skonfiguruj „lokalną” stację sprzętową w kanale. Kliknij kolejno opcje **Handel detaliczny i inny** &gt; **Kanały** &gt; **Sklepy sieci sprzedaży** &gt; **Wszystkie sklepy sieci sprzedaży** i wybierz sklep. Następnie na skróconej karcie **Stacje sprzętowe** kliknij przycisk **Dodaj**, aby dodać stację sprzętową. Wprowadź opis, jako nazwę hosta wpisz **localhost**, a następnie zsynchronizuj zmiany z kanałem przy użyciu harmonogramu dystrybucji „Konfiguracja kanału”. Harmonogramy dystrybucji są wyszczególnione w oknie **Handel detaliczny i inny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogram dystrybucji**. Na koniec w aplikacji MPOS za pomocą operacji **Wybierz stację sprzętową** zaznacz stację sprzętową **localhost**. Ustaw dla tej stacji sprzętowej status **Aktywna**. Profil sprzętu używany w tym scenariuszu powinien pochodzić z samej kasy w punkcie sprzedaży. Profil stacji sprzętowej nie jest wymagany w tym scenariuszu. **Uwaga:** Niektóre zmiany w profilu sprzęt, takie jak modyfikacje szuflad kasowych, wymagają, aby po zsynchronizowaniu zmian z kanałem otworzyć nową zmianę. **Uwaga:** Aplikacja Cloud POS musi używać autonomicznej stacji sprzętowej do komunikowania się z urządzeniami peryferyjnymi sieci sprzedaży.
+[![Tradycyjny, stacjonarny punkt sprzedaży](./media/traditional-300x279.png)](./media/traditional.png) 
+
+Aby podłączyć punkt MPOS do urządzeń peryferyjnych punktu sprzedaży w tradycyjnym scenariuszu stacjonarnego punktu sprzedaży, najpierw przejdź do samej kasy POS i przypisz jej profil sprzętu. Kasy POS są wyszczególnione w oknie **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Rejestry**. Po przypisaniu profilu sprzętu zsynchronizuj zmiany z bazą danych kanału, używając do tego harmonogramu dystrybucji „Rejestry”. Harmonogramy dystrybucji są wyszczególnione w oknie **Handel detaliczny i inny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogram dystrybucji**. Następny skonfiguruj „lokalną” stację sprzętową w kanale. Kliknij kolejno opcje **Handel detaliczny i inny** &gt; **Kanały** &gt; **Sklepy sieci sprzedaży** &gt; **Wszystkie sklepy sieci sprzedaży** i wybierz sklep. Następnie na skróconej karcie **Stacje sprzętowe** kliknij przycisk **Dodaj**, aby dodać stację sprzętową. Wprowadź opis, jako nazwę hosta wpisz **localhost**, a następnie zsynchronizuj zmiany z kanałem przy użyciu harmonogramu dystrybucji „Konfiguracja kanału”. Harmonogramy dystrybucji są wyszczególnione w oknie **Handel detaliczny i inny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogram dystrybucji**. Na koniec w aplikacji MPOS za pomocą operacji **Wybierz stację sprzętową** zaznacz stację sprzętową **localhost**. Ustaw dla tej stacji sprzętowej status **Aktywna**. Profil sprzętu używany w tym scenariuszu powinien pochodzić z samej kasy w punkcie sprzedaży. Profil stacji sprzętowej nie jest wymagany w tym scenariuszu. **Uwaga:** Niektóre zmiany w profilu sprzęt, takie jak modyfikacje szuflad kasowych, wymagają, aby po zsynchronizowaniu zmian z kanałem otworzyć nową zmianę. **Uwaga:** Aplikacja Cloud POS musi używać autonomicznej stacji sprzętowej do komunikowania się z urządzeniami peryferyjnymi sieci sprzedaży.
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>Urządzenie MPOS lub Cloud POS z autonomiczną stacją sprzętową
+[![Współużytkowane urządzenia peryferyjne](./media/shared-300x254.png)](./media/shared.png)
 
-\[caption id="attachment\_340041" align="alignleft" width="300"\][![Współużytkowane urządzenia peryferyjne](./media/shared-300x254.png)](./media/shared.png) Współużytkowane urządzenia peryferyjne\[/caption\] W tym scenariuszu autonomiczna stacja sprzętowa jest współużytkowana przez aplikacje klienckie MPOS i Cloud POS. Ten scenariusz wymaga utworzenia profilu stacji sprzętowej, aby określić pakiet do pobrania, port oraz profil sprzętu, który będzie używany przez stację. Profil stacji sprzętowej można znaleźć w oknie **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktów sprzedaży** &gt; **Profile stacji sprzętowych**. Po utworzeniu profilu stacji sprzętowej przejdź do konkretnego kanału sprzedaży (**Handel detaliczny i inny** &gt; **Kanały** &gt; **Sklepy sieci sprzedaży** &gt; **Wszystkie sklepy sieci sprzedaży**) i dodaj nową stację sprzętową. Zmapuj tę nową stację sprzętową do utworzonego wcześniej profilu stacji sprzętowej. Następnie podaj opis, który pomoże kasjerowi zidentyfikować stację sprzętową. W polu **Nazwa hosta** wprowadź adres URL komputera hosta w następującym formacie: **https://&lt;NazwaKomputera:Port&gt;/HardwareStation** (wyrażenie **&lt;NazwaKomputera:Port&gt;** zastąp faktyczną nazwą komputera stacji sprzętowej oraz numerem portu określonym w profilu stacji sprzętowej). W przypadku autonomicznej stacji sprzętowej należy również określić identyfikator terminala systemu elektronicznego przelewu środków pieniężnych (EFT). Ta wartość identyfikuje terminal EFT, który jest podłączony do stacji sprzętowej, gdy aplikacja łącznika płatności komunikuje się z dostawcą płatności. Następnie z faktycznego komputera stacji sprzętowej przejdź do kanału i wybierz stację sprzętową. Kliknij przycisk **Pobierz** i zainstaluj stację sprzętową. Następnie w aplikacji MPOS lub Cloud POS wykonaj operację **Wybierz stację sprzętową** i wybierz zainstalowaną wcześniej stację sprzętową. Zaznacz opcję **Paruj**, aby utworzyć bezpieczną relację między kasą POS a stacją sprzętową. Ten krok należy wykonać jeden raz dla każdej kombinacji kasy POS i stacji sprzętowej. Po sparowaniu stacji sprzętowej ta sama operacja służy do uaktywnienia stacji sprzętowej podczas jej używania. W tym scenariuszu profil sprzętu powinien być przypisany do profilu stacji sprzętowej, a nie do samej kasy. Jeśli z jakiegoś powodu stacja sprzętowa nie ma bezpośrednio przypisanego profilu sprzętu, jest używany profil sprzętu przypisany do kasy.
+W tym scenariuszu autonomiczna stacja sprzętowa jest współużytkowana przez klientów MPOS i Cloud POS. Ten scenariusz wymaga utworzenia profilu stacji sprzętowej, aby określić pakiet do pobrania, port oraz profil sprzętu, który będzie używany przez stację. Profil stacji sprzętowej można znaleźć w oknie **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktów sprzedaży** &gt; **Profile stacji sprzętowych**. Po utworzeniu profilu stacji sprzętowej przejdź do konkretnego kanału sprzedaży (**Handel detaliczny i inny** &gt; **Kanały** &gt; **Sklepy sieci sprzedaży** &gt; **Wszystkie sklepy sieci sprzedaży**) i dodaj nową stację sprzętową. Zmapuj tę nową stację sprzętową do utworzonego wcześniej profilu stacji sprzętowej. Następnie podaj opis, który pomoże kasjerowi zidentyfikować stację sprzętową. W polu **Nazwa hosta** wprowadź adres URL komputera hosta w następującym formacie: **https://&lt;NazwaKomputera:Port&gt;/HardwareStation** (wyrażenie **&lt;NazwaKomputera:Port&gt;** zastąp faktyczną nazwą komputera stacji sprzętowej oraz numerem portu określonym w profilu stacji sprzętowej). W przypadku autonomicznej stacji sprzętowej należy również określić identyfikator terminala systemu elektronicznego przelewu środków pieniężnych (EFT). Ta wartość identyfikuje terminal EFT, który jest podłączony do stacji sprzętowej, gdy aplikacja łącznika płatności komunikuje się z dostawcą płatności. Następnie z faktycznego komputera stacji sprzętowej przejdź do kanału i wybierz stację sprzętową. Kliknij przycisk **Pobierz** i zainstaluj stację sprzętową. Następnie w aplikacji MPOS lub Cloud POS wykonaj operację **Wybierz stację sprzętową** i wybierz zainstalowaną wcześniej stację sprzętową. Zaznacz opcję **Paruj**, aby utworzyć bezpieczną relację między kasą POS a stacją sprzętową. Ten krok należy wykonać jeden raz dla każdej kombinacji kasy POS i stacji sprzętowej. Po sparowaniu stacji sprzętowej ta sama operacja służy do uaktywnienia stacji sprzętowej podczas jej używania. W tym scenariuszu profil sprzętu powinien być przypisany do profilu stacji sprzętowej, a nie do samej kasy. Jeśli z jakiegoś powodu stacja sprzętowa nie ma bezpośrednio przypisanego profilu sprzętu, jest używany profil sprzętu przypisany do kasy.
 
 ## <a name="client-maintenance"></a>Zarządzanie klientami
 ### <a name="registers"></a>Rejestry
@@ -152,5 +159,7 @@ Dodatkowe informacje związane z aktywacją obejmują dane pracownika, który zm
 ### <a name="client-data-synchronization"></a>Synchronizacja danych klienta
 
 Wszystkie zmiany na kliencie punktu sprzedaży, z wyjątkiem zmian stanu aktywacji urządzenia, działają dopiero po zsynchronizowaniu z bazą danych kanału. Aby zsynchronizować zmiany z bazą danych kanału, wybierz kolejno opcje **Handel detaliczny i inny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogram dystrybucji** i uruchom wymagany harmonogram dystrybucji. W przypadku zmian na kliencie należy uruchomić harmonogramy dystrybucji „Rejestry” i „Konfiguracja kanału”.
+
+
 
 

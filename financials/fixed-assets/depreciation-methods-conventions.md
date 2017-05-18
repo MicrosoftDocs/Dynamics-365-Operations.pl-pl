@@ -1,9 +1,9 @@
 ---
 title: Metody amortyzacji i konwencje
-description: "Ten artykuł zawiera omówienie konwencji amortyzacji i metod amortyzacji obsługiwanych w systemie Microsoft Dynamics AX."
+description: "Ten artykuł zawiera omówienie konwencji amortyzacji i metod amortyzacji obsługiwanych w programie Microsoft Dynamics 365 for Operations."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 51c053e6c130d20258e02284d097431a18bb38cb
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4b32cd8cbd270424d0790e242d75dc214ffea123
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera omówienie konwencji amortyzacji i metod amortyzacji obsługiwanych w systemie Microsoft Dynamics AX.
+Ten artykuł zawiera omówienie konwencji amortyzacji i metod amortyzacji obsługiwanych w programie Microsoft Dynamics 365 for Operations.
 
 Można wybrać różne metody i konwencje amortyzacji. Celem metod jest alokowanie wartości amortyzacji środka trwałego w okresach obrachunkowych. Wartość środka trwałego podlegająca amortyzacji jest ceną nabycia pomniejszoną o ewentualną wartość likwidacji. 
 
@@ -90,6 +91,7 @@ Można wybrać jedną z następujących metod amortyzacji.
 [175% amortyzacja degresywna](175-percent-reducing-balance-depreciation.md)
 
 [200% amortyzacja degresywna](200-percent-reducing-balance-depreciation.md)
+
 
 
 

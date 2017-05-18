@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 42dc414ff2bb6359b47d89c3bd3c510e4258f816
-ms.openlocfilehash: b2229466040351d8c2b9494b30b4c928651820b8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: 11a4633b0a1254f3a8cbdcba8d7aa99bb7c936c1
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/26/2017
 
 
 ---

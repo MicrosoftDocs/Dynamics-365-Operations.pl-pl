@@ -1,9 +1,9 @@
 ---
-title: "Omówienie systemu przepływu pracy"
-description: "W tym artykule opisano system przepływu pracy dostępny w rozwiązaniu Microsoft Dynamics 365 for Operations."
+title: "Omówienie systemu przepływów pracy"
+description: "W tym temacie opisano system przepływów pracy dostępny w programie Microsoft Dynamics 365 for Operations."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,20 +16,21 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 08c36f02f88fef7508730b6c01a1c99a0f77fb0c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5432e67ffa41e6a38b19c9fe5bb12c5acb2c345c
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="workflow-system-overview"></a>Omówienie systemu przepływu pracy
+# <a name="workflow-system-overview"></a>Omówienie systemu przepływów pracy
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym artykule opisano system przepływu pracy dostępny w rozwiązaniu Microsoft Dynamics 365 for Operations.
+W tym temacie opisano system przepływów pracy dostępny w programie Microsoft Dynamics 365 for Operations.
 
 <a name="what-is-workflow"></a>Co to jest przepływ pracy?
 -----------------
@@ -41,9 +42,13 @@ Przepływ pracy to system instalowany razem z programem Dynamics 365 for Operati
 
 ### <a name="workflow-is-a-business-process"></a>Przepływ pracy jest procesem biznesowym
 
-Przepływ pracy reprezentuje proces biznesowy. Definiuje sposób przepływu lub przenoszenia dokumentu przez system, pokazując, kto musi wykonać zadanie, podjąć decyzję lub zatwierdzić dokument. Na przykład poniższa ilustracja pokazuje przepływ pracy dla raportów z wydatków. ![Przepływ pracy z elementami przypisanymi do użytkowników](./media/workflow_user.gif) Aby lepiej zrozumieć ten przepływ pracy, załóżmy, że Sam przesyła raport z wydatków na 7000 USD. W tym scenariuszu Ivan musi przejrzeć pokwitowania wysłane przez Tomasza. Następnie Wojciech i Magda muszą zatwierdzić raport z wydatków. Teraz załóżmy, że Tomasz przesyła raport z wydatków na kwotę 11 000 USD. W tym scenariuszu Maciej musi przejrzeć pokwitowania, a Wojciech, Magda i Anna muszą zatwierdzić raport z wydatków.
- Zalety używania systemu przepływu pracy
--------------------------------------
+Przepływ pracy reprezentuje proces biznesowy. Definiuje sposób przepływu lub przenoszenia dokumentu przez system, pokazując, kto musi wykonać zadanie, podjąć decyzję lub zatwierdzić dokument. Na przykład poniższa ilustracja pokazuje przepływ pracy dla raportów z wydatków. 
+
+![Przepływ pracy z elementami przypisanymi do użytkowników](./media/workflow_user.gif) 
+
+Aby lepiej zrozumieć ten przepływ pracy, załóżmy, że Sam przesyła raport z wydatków na 7000 USD. W tym scenariuszu Ivan musi przejrzeć pokwitowania wysłane przez Tomasza. Następnie Wojciech i Magda muszą zatwierdzić raport z wydatków. Teraz załóżmy, że Tomasz przesyła raport z wydatków na kwotę 11 000 USD. W tym scenariuszu Maciej musi przejrzeć pokwitowania, a Wojciech, Magda i Anna muszą zatwierdzić raport z wydatków.
+
+## <a name="benefits-of-using-the-workflow-system"></a> Zalety używania systemu przepływu pracy
 
 Używanie systemu przepływu pracy w organizacji ma kilka zalet:
 -   **Spójność procesów** — Możesz zdefiniować sposób przetwarzania określonych dokumentów, takich jak zapotrzebowania zakupu i raporty z wydatków. System przepływu pracy zapewnia, że dokumenty będą przetwarzane i zatwierdzane w spójny i wydajny sposób.
@@ -51,6 +56,20 @@ Używanie systemu przepływu pracy w organizacji ma kilka zalet:
 -   **Scentralizowana lista prac** — użytkownicy mogą wyświetlić scentralizowaną listę prac, aby przeglądać przypisane do nich zadania i zatwierdzenia przepływu pracy.
 
 
+## <a name="workflow-content"></a>Zawartość przepływu pracy
 
-
++ [Architektura przepływu pracy](workflow-system-architecture.md)
++ [Elementy przepływu pracy](workflow-elements.md)
++ [Akcje przepływu pracy](workflow-actions.md)
++ [Tworzenie przepływu pracy](create-workflow.md)
++ [Konfigurowanie właściwości przepływu pracy](configure-workflow-properties.md)
++ [Konfigurowanie zadania ręcznego w przepływie pracy](configure-manual-task-workflow.md)
++ [Konfigurowanie zadania wykonywanego automatycznie w przepływie pracy](configure-automated-task-workflow.md)
++ [Konfigurowanie procesu zatwierdzania w przepływie pracy](configure-approval-process-workflow.md)
++ [Konfigurowanie etapu zatwierdzania w przepływie pracy](configure-approval-step-workflow.md)
++ [Konfigurowanie ręcznej decyzji w przepływie pracy](configure-manual-decision-workflow.md)
++ [Konfigurowanie decyzji warunkowej w przepływie pracy](configure-conditional-decision-workflow.md)
++ [Konfigurowanie działania równoległego w przepływie pracy](configure-parallel-activity-workflow.md)
++ [Konfigurowanie odgałęzienia równoległego w przepływie pracy](configure-parallel-branch-workflow.md)
++ [Konfigurowanie przepływu pracy dla pozycji w wierszu](configure-line-item-workflow.md)
 

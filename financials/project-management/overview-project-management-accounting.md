@@ -3,7 +3,7 @@ title: "Zarządzanie projektami i ich księgowanie"
 description: "Funkcji zarządzanie projektami i ich księgowania można używać w wielu branżach w celu świadczenia usług, wytwarzania produktów lub uzyskiwania rezultatów."
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: 7bfacfe69aed9b64d71760181d9a1683b86cbf44
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 56bacbbff03fe9329563981352e1e5fbcfee8c52
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="project-management-and-accounting"></a>Zarządzanie projektami i ich księgowanie
+
+[!include[banner](../includes/banner.md)]
+
 
 Funkcji zarządzanie projektami i ich księgowania można używać w wielu branżach w celu świadczenia usług, wytwarzania produktów lub uzyskiwania rezultatów.  
 
@@ -77,18 +81,16 @@ Korzystaj z prognozowania projektu, jeśli Twoja organizacja ma perspektywę org
 
 W programie Microsoft Dynamics 365 for Operations można utworzyć sześć typów projektów. W każdym z nich inaczej konfiguruje się rozpoznanie kosztów i przychodów. Wybrany typ projektu zależy od przeznaczenia projektu. W poniższej tabeli opisano typowe użycie każdego typu projektu.
 
-| Typ projektu      | Opis 
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Czas i materiały | W projektach czasowych i materiały odbiorcy wystawiany jest rachunek obejmujący wszystkie koszty poniesione w ramach projektu. Obejmują one koszty godzin, wydatków, towarów i opłat.                                                                                                                  |
-| Stała cena       | W projektach o stałej cenie faktury zawierają transakcje akonto. Projekt o stałej cenie jest fakturowany na podstawie harmonogramu opartego na umowie dotyczącej projektu. Przychód dla projektu o stałej cenie może być obliczany i księgowany przez cały okres trwania projektu przy użyciu metody procentu ukończenia. Można też obliczać i księgować przychód po zakończeniu projektu przy użyciu metody zakończonego kontraktu. Przedsiębiorstwa często korzystają z wartości prac w toku (PWT) do obliczania stopnia ukończenia projektu lub grupy projektów.                                                                                                                                     |
-| Inwestycje        | Projekty inwestycyjne to projekty, które nie przynoszą natychmiastowych dochodów. Zazwyczaj są używane w przypadku długoterminowych projektów wewnętrznych, w których koszty muszą być kapitalizowane. Dla projektów inwestycyjnych można rejestrować tylko koszty towarów, godziny i wydatki. Koszty w projekcie inwestycyjnym są śledzone i kontrolowane za pomocą funkcji szacowania. Projekty inwestycyjne można konfigurować z opcjonalnym maksymalnym limitem kapitalizacji. W miarę postępów projektu inwestycyjnego rejestrowane są jego koszty na kontach kosztów PWT, gdzie koszty są wstrzymane aż do ukończenia projektu. Po wyeliminowaniu projektu wartość PWT jest przenoszona do środka trwałego, na konto księgowe czy do nowego projektu.
-> [!NOTE] 
-> Transakcje w projektach inwestycyjnych nie są wyświetlane na stronach **Księgowanie kosztów**, **Naliczanie przychodów** ani **Tworzenie propozycji faktur**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | | Projekt kosztów      | Podobnie jak w projektach inwestycyjnych, projekty kosztów są zwykle używane do śledzenia projektów wewnętrznych i tylko godziny, wydatki i towary mogą być rejestrowane w projektach kosztów. Projekty kosztów są zwykle określane na okres krótszy niż projekty inwestycyjne. Dodatkowo, w przeciwieństwie do projektów inwestycyjnych projekty kosztów nie mogą być kapitalizowane na kontach bilansowych. Zamiast tego transakcje projektowe są księgowane tylko na kontach zysku i straty. 
-[!NOTE] 
-> Transakcje w projektach kosztów nie są uwzględniane na stronach **Księgowanie kosztów**, **Naliczanie przychodów** ani **Tworzenie propozycji faktur**. Ponieważ projekty kosztowe są zazwyczaj używane do śledzenia projektów wewnętrznych, zwykle nie muszą one być skojarzone z kontem odbiorcy. Jednak jeśli konfiguracja wymaga, aby dla zamówień zakupu można tworzyć zapotrzebowanie na towary, należy skojarzyć projekt kosztowy z odbiorcą. Jest to spowodowane tym, że zapotrzebowania na towary są zarządzane jako wiersze zamówienia sprzedaży, a system wymaga określenia odbiorcy. Jednak ta konfiguracja nie spowoduje automatycznego tworzenia zapotrzebowania na towary na podstawie zamówienia zakupu. W przypadku projektów kosztów ustawienie **tworzenie zapotrzebowania na towary** jest ignorowane. Jeśli jest potrzebne zapotrzebowanie na towary w projektach kosztowych, możesz utworzyć je ręcznie, o ile odbiorca jest skojarzony z projektem. | | Wewnętrzne          | Projekty wewnętrzne służą do śledzenia kosztów w projekcie, który jest wewnętrzny w danej organizacji. Projekty wewnętrzne mogą dostarczać narzędzia planowania do zarządzania zużyciem zasobów. **Note:** Transakcje w projektach wewnętrznych nie są uwzględniane na stronach **Naliczanie przychodów** ani **Tworzenie propozycji faktur**.                                                                                                                                                                                                                                                                       | | Czas              | Projekty czasowe służą do śledzenia czasu skojarzonego z niepłatnymi i nieproduktywnymi działaniami, takimi jak projekt śledzenia zwolnień dla pracowników. Transakcje w projektach typu czas nie są księgowane w księdze. Zamiast tego są uwzględniane w raportach wykorzystania pracownika. Tylko transakcje godzinowe mogą być rejestrowane w projektach czasowych. Arkusz godzin lub karta czasu pracy służy do rejestrowania tych godzin w projekcie. Po zarejestrowaniu godzin są one wyświetlane w postaci transakcji projektu, ale nie mają odpowiadających transakcji na załączniku.
+                                                                                                                                                                         |
+| Typ projektu      | Opis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Czas i materiały | W projektach czasowych i materiały odbiorcy wystawiany jest rachunek obejmujący wszystkie koszty poniesione w ramach projektu. Obejmują one koszty godzin, wydatków, towarów i opłat.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Stała cena       | W projektach o stałej cenie faktury zawierają transakcje akonto. Projekt o stałej cenie jest fakturowany na podstawie harmonogramu opartego na umowie dotyczącej projektu. Przychód dla projektu o stałej cenie może być obliczany i księgowany przez cały okres trwania projektu przy użyciu metody procentu ukończenia. Można też obliczać i księgować przychód po zakończeniu projektu przy użyciu metody zakończonego kontraktu. Przedsiębiorstwa często korzystają z wartości prac w toku (PWT) do obliczania stopnia ukończenia projektu lub grupy projektów.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Inwestycje        | Projekty inwestycyjne to projekty, które nie przynoszą natychmiastowych dochodów. Zazwyczaj są używane w przypadku długoterminowych projektów wewnętrznych, w których koszty muszą być kapitalizowane. Dla projektów inwestycyjnych można rejestrować tylko koszty towarów, godziny i wydatki. Koszty w projekcie inwestycyjnym są śledzone i kontrolowane za pomocą funkcji szacowania. Projekty inwestycyjne można konfigurować z opcjonalnym maksymalnym limitem kapitalizacji. W miarę postępów projektu inwestycyjnego rejestrowane są jego koszty na kontach kosztów PWT, gdzie koszty są wstrzymane aż do ukończenia projektu. Po wyeliminowaniu projektu wartość PWT jest przenoszona do środka trwałego, na konto księgowe czy do nowego projektu. Uwaga: Transakcje w projektach inwestycyjnych nie są wyświetlane na stronach **Księgowanie kosztów**, **Naliczanie przychodów** ani **Tworzenie propozycji faktur**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Projekt kosztów      | Podobnie jak w projektach inwestycyjnych, projekty kosztów są zwykle używane do śledzenia projektów wewnętrznych i tylko godziny, wydatki i towary mogą być rejestrowane w projektach kosztów. Projekty kosztów są zwykle określane na okres krótszy niż projekty inwestycyjne. Dodatkowo, w przeciwieństwie do projektów inwestycyjnych projekty kosztów nie mogą być kapitalizowane na kontach bilansowych. Zamiast tego transakcje projektowe są księgowane tylko na kontach zysku i straty. **UWAGA** Transakcje w projektach kosztów nie są uwzględniane na stronach **Księgowanie kosztów**, **Naliczanie przychodów** ani **Tworzenie propozycji faktur**. Ponieważ projekty kosztowe są zazwyczaj używane do śledzenia projektów wewnętrznych, zwykle nie muszą one być skojarzone z kontem odbiorcy. Jednak jeśli konfiguracja wymaga, aby dla zamówień zakupu można tworzyć zapotrzebowanie na towary, należy skojarzyć projekt kosztowy z odbiorcą. Jest to spowodowane tym, że zapotrzebowania na towary są zarządzane jako wiersze zamówienia sprzedaży, a system wymaga określenia odbiorcy. Jednak ta konfiguracja nie spowoduje automatycznego tworzenia zapotrzebowania na towary na podstawie zamówienia zakupu. W przypadku projektów kosztów ustawienie **tworzenie zapotrzebowania na towary** jest ignorowane. Jeśli jest potrzebne zapotrzebowanie na towary w projektach kosztowych, możesz utworzyć je ręcznie, o ile odbiorca jest skojarzony z projektem. |
+| Wewnętrzne          | Projekty wewnętrzne służą do śledzenia kosztów w projekcie, który jest wewnętrzny w danej organizacji. Projekty wewnętrzne mogą dostarczać narzędzia planowania do zarządzania zużyciem zasobów. **Note:** Transakcje w projektach wewnętrznych nie są uwzględniane na stronach **Naliczanie przychodów** ani **Tworzenie propozycji faktur**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Godzina              | Projekty czasowe służą do śledzenia czasu skojarzonego z niepłatnymi i i nieproduktywnymi działaniami, takimi jak projekt śledzenia zwolnień dla pracowników. Transakcje w projektach typu czas nie są księgowane w księdze. Zamiast tego są uwzględniane w raportach wykorzystania pracownika. Tylko transakcje godzinowe mogą być rejestrowane w projektach czasowych. Arkusz godzin lub karta czasu pracy służy do rejestrowania tych godzin w projekcie. Po zarejestrowaniu godzin są one wyświetlane w postaci transakcji projektu, ale nie mają odpowiadających transakcji na załączniku. **Uwaga:** Transakcje w projektach czasowych nie są uwzględniane na stronach **Księgowanie kosztów**, **Naliczanie przychodów** ani **Tworzenie propozycji faktur**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
-> [!NOTE] 
-> Transakcje w projektach czasowych nie są uwzględniane na stronach **Księgowanie kosztów**, **Naliczanie przychodów** ani **Tworzenie propozycji faktur**.                                                                                                                                                                                       |
 
 ### <a name="assign-workers-categories-and-resources"></a>Przypisywanie pracowników, kategorii i zasobów
 
@@ -202,11 +204,13 @@ Typ projektu określa, która procedura fakturowania powinna zostać zastosowana
 
 Przed utworzeniem faktury odbiorcy dla projektu, można utworzyć fakturę wstępną lub propozycję faktury. W propozycji faktury można wybrać transakcje projektu, które zostaną uwzględnione na fakturze projektu. Można również przejrzeć szczegóły faktury przed zaksięgowaniem faktury projektu i wysłać ją do odbiorcy lub źródła finansowania. 
 
-Aby uzyskać więcej informacji dotyczących przetwarzania faktur w projekcie, zobacz [Fakturowanie projektu](/accounts-payable/project-invoicing.md).
+
+Aby uzyskać więcej informacji dotyczących przetwarzania faktur w projekcie, zobacz [Fakturowanie projektu](../accounts-payable/project-invoicing.md).
+
 
 ### <a name="calculate-the-cost-to-complete-a-project"></a>Obliczanie kosztu do zakończonego projektu
 
-Podczas tworzenia oszacowania można wybrać metodę, która jest używana do obliczania kosztu ukończenia projektu. Wybierz metodę w polu **Metoda Koszt do zakończenia **na stronie **Tworzenie oszacowania**. Wybrana metoda będzie stosowana osobno w wierszach kosztów szacowania kosztów. Gdy wiersz ma stan **Utworzone**, można zmienić metodę stosowaną do niego na stronie **szacowania kosztów**. 
+Podczas tworzenia oszacowania można wybrać metodę, która jest używana do obliczania kosztu ukończenia projektu. Wybierz metodę w polu **Metoda Koszt do zakończenia**na stronie **Tworzenie oszacowania**. Wybrana metoda będzie stosowana osobno w wierszach kosztów szacowania kosztów. Gdy wiersz ma stan **Utworzone**, można zmienić metodę stosowaną do niego na stronie **szacowania kosztów**. 
 
 W poniższej tabeli opisano metody obliczania kosztu zakończenia projektu.
 
@@ -312,7 +316,7 @@ Na podstawie tych ustawień poniżej znajdują się daty płatności kosztu dla 
 
 Data płatności kosztu nie jest obliczana na dni buforowe. Po zakończeniu projektu wszystkie operacje obliczania kosztów i fakturowania zostają ukończone, a kwoty kosztów i sprzedaży zostają zaksięgowane na kontach zysków i strat. 
 
-Po zakończeniu wszystkich sprzedaży i faktur dostawcy można wyświetlić relację między polami na stronach **przepływów pieniężnych **i **Zestawienia projektu**.
+Po zakończeniu wszystkich sprzedaży i faktur dostawcy można wyświetlić relację między polami na stronach **przepływów pieniężnych**i **Zestawienia projektu**.
 
 | Strona Przepływy pieniężne | Strona Zestawienia projektu |
 |----------------|-------------------------|
@@ -329,14 +333,14 @@ Istnieje możliwość monitorowania kosztów ponoszonych przez organizację w cz
 
 #### <a name="viewing-the-remaining-budgeted-amounts"></a>Wyświetlanie pozostałych zaplanowanych kosztów
 
-Jeśli wybierzesz **Pozostały budżet **jako metodę kontroli kosztów na stronie **Parametry modułu Zarządzanie projektami i ich księgowanie**, strona **Kontrola kosztów** obliczy koszty, które jeszcze nie zostały zaksięgowane jako rzeczywiste ani oznaczone jako ustalone. W szczególności kwoty na karcie **Ogólne** w dolnym okienku strony **Kontrola kosztów **są obliczane w następujący sposób:
+Jeśli wybierzesz **Pozostały budżet**jako metodę kontroli kosztów na stronie **Parametry modułu Zarządzanie projektami i ich księgowanie**, strona **Kontrola kosztów** obliczy koszty, które jeszcze nie zostały zaksięgowane jako rzeczywiste ani oznaczone jako ustalone. W szczególności kwoty na karcie **Ogólne** w dolnym okienku strony **Kontrola kosztów**są obliczane w następujący sposób:
 
 -   **Koszt rzeczywisty** — całkowitą kwotę, która została wydana w projekcie dla wybranego wiersza kosztu. Kwota kosztu rzeczywistego jest obliczana na stronie **aktualizacje księgi**.
 -   **Ustalony koszt** — dodatkowa kwota wydatków, które firma zobowiązała się zapłacić. Kwoty kosztu ustalonego są obliczane na stronie **Koszt ustalony**.
 -   **Pozostały budżet** — kwota oryginalnej kwoty budżetu, która jest nadal dostępna dla wybranego wiersza kosztu. Pozostała kwota budżetu jest obliczana na stronie **podglądu księgi głównej**.
 -   **Łączny koszt** – suma kosztów rzeczywistych, ustalonych i pozostałych.
 
-Na stronie **Kontrola kosztów **, na karcie **Odchylenia **, możesz przejrzeć porównanie kosztów łącznych z pierwotnym budżetem. Porównanie to zawiera wszelkie różnice między tymi kwotami. Dzięki temu można sprawdzić, które dane nie są zgodne. Wartości odchyleń są obliczane następująco:
+Na stronie **Kontrola kosztów**, na karcie **Odchylenia**, możesz przejrzeć porównanie kosztów łącznych z pierwotnym budżetem. Porównanie to zawiera wszelkie różnice między tymi kwotami. Dzięki temu można sprawdzić, które dane nie są zgodne. Wartości odchyleń są obliczane następująco:
 
 -   **Budżet pierwotny** — kwota, która została pierwotnie uwzględniona w budżecie dla wybranego wiersza kosztu. Kwota pierwotnego budżetu jest obliczana na stronie **podglądu księgi głównej**.
 -   **Łączny koszt**– suma kosztów rzeczywistych, ustalonych i pozostałych określonych na karcie **Ogólne**.
@@ -353,7 +357,7 @@ Jeśli jako metodę kontroli kosztów wybrano **łączny budżet** na stronie **
 -   **Koszt ustalony** — całkowita kwota, która została ustalona w projekcie dla wybranego wiersza kosztu.
 -   **Odchylenie** — różnica między sumą kosztów rzeczywistych i ustalonych a łącznym kosztem. Odchylenie pokazuje, czy należy określić dodatkowe koszty dla łącznego budżetu.
 
-Na stronie **Kontrola kosztów**, na karcie **odchylenia **, możesz przejrzeć różnice między łącznym budżetem i pierwotnym budżetem na podstawie informacji w następujących polach:
+Na stronie **Kontrola kosztów**, na karcie **odchylenia**, możesz przejrzeć różnice między łącznym budżetem i pierwotnym budżetem na podstawie informacji w następujących polach:
 
 -   **Budżet pierwotny** — kwota, która została pierwotnie uwzględniona w budżecie dla wybranego wiersza kosztu. Kwota pierwotnego budżetu jest obliczana na stronie **podglądu księgi głównej**.
 -   **Łączny koszt w budżecie** — łączny koszt, który został pierwotnie uwzględniony w budżecie dla wybranego wiersza kosztu. Kwota łącznego kosztu w budżecie jest obliczana na stronie **podglądu księgi głównej**.
@@ -390,14 +394,14 @@ Podczas obliczania stawki wykorzystania dla pracownika, można użyć norm godzi
 
 ### <a name="review-project-statements"></a>Przegląd zestawień projektu
 
-Można utworzyć zestawienie projektu, aby wyświetlić szybki podgląd postępu projektu. Po uruchomieniu zestawienia projektu można określić kryteria, które są używane do obliczania zestawienia, dokonując wyborów na karcie **ogólne **na stronie **zestawienia projektu**. Można wybrać uwzględnienie lub wykluczenie następujących informacji:
+Można utworzyć zestawienie projektu, aby wyświetlić szybki podgląd postępu projektu. Po uruchomieniu zestawienia projektu można określić kryteria, które są używane do obliczania zestawienia, dokonując wyborów na karcie **ogólne**na stronie **zestawienia projektu**. Można wybrać uwzględnienie lub wykluczenie następujących informacji:
 
 -   Typy projektów
 -   Typy transakcji
 -   Data projektu/data księgi
 -   Dane
 
-Po obliczeniu zestawienia możesz wyświetlić następujące informacje na różnych kartach strony **Zestawienie projektu **:
+Po obliczeniu zestawienia możesz wyświetlić następujące informacje na różnych kartach strony **Zestawienie projektu**:
 
 -   **Ogólne** — ogólne informacje dotyczące podstawowej struktury zysków i strat projektu.
 -   **Zyski i straty** — informacje o przychodach przyszłych okresów.
@@ -405,6 +409,8 @@ Po obliczeniu zestawienia możesz wyświetlić następujące informacje na róż
 -   **Zużycie** — informacje na temat zużycia godzin, wydatków, towarów i transakcji listy płac.
 -   **Faktury** — informacje dotyczące faktury i fakturowania akonto.
 -   **Stawka godzinowa** — stawki godzinowe dla godzin zaksięgowanych na kontach przychodów i kosztów.
+
+
 
 
 

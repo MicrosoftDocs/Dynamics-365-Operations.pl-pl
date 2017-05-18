@@ -3,7 +3,7 @@ title: "Wyświetlanie i eksportowanie opisów pól"
 description: "W tym artykule opisano, jak wyświetlać opisy pól i jak używać strony Opisy pól do eksportowania opisów."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: c8c96dc9705688308dd4a5c720700ddc17657d75
-ms.openlocfilehash: d4fc9cdee0e2160e363f9defcf6bdbc57ed4db74
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3029cb441d124e6e5aa427f7fcd95540700254c6
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Wyświetlanie i eksportowanie opisów pól
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule opisano, jak wyświetlać opisy pól i jak używać strony Opisy pól do eksportowania opisów.
 
@@ -80,11 +84,11 @@ Ta sekcja zawiera informacje pomocne w rozwiązywaniu problemów, które mogą w
 
 ### <a name="i-cant-find-a-field-description"></a>Nie można odnaleźć opisu pola
 
-Pracujemy nad dodaniem opisów bardziej skomplikowanych pól. Jeśli potrzebujesz pomocy dla określonego pola, daj nam znać przez dodanie komentarza do tego artykułu wiki.
+Pracujemy nad dodaniem opisów bardziej skomplikowanych pól. Jeśli potrzebujesz pomocy dla określonego pola, daj nam znać przez dodanie komentarza do tego tematu.
 
 ### <a name="the-field-description-isnt-helpful"></a>Opis pola nie jest pomocny.
 
-Daj nam znać przez dodanie komentarza do tego artykułu wiki. Jeśli to możliwe, opisz dodatkowe informacje, których potrzebujesz.
+Daj nam znać przez dodanie komentarza do tego tematu. Jeśli to możliwe, opisz dodatkowe informacje, których potrzebujesz.
 
 ### <a name="i-cant-find-a-field-on-the-field-descriptions-page"></a>Nie mogę znaleźć pola na stronie Opisy pól
 
@@ -97,6 +101,9 @@ Aby uzyskać informacje o różnych sposobach znajdowania stron, zobacz sekcję 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Dostosowywanie pomocy pól](https:/docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/customize-field-help.md)
+[Dostosowywanie pomocy pól](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+
+
+
 
 

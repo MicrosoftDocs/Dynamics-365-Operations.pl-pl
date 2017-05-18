@@ -3,7 +3,7 @@ title: "Konfigurowanie działania równoległego w przepływie pracy"
 description: "Aby skonfigurować działanie równoległe, należy wykonać następujące procedury w edytorze przepływu pracy."
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 818fb054742b935d002a7341e54a37eca0bb4761
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ce3fca9d2dbca046232365b1375bfd920d5b10fd
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="configure-a-parallel-activity-in-a-workflow"></a>Konfigurowanie działania równoległego w przepływie pracy
+
+[!include[banner](../includes/banner.md)]
+
 
 Aby skonfigurować działanie równoległe, należy wykonać następujące procedury w edytorze przepływu pracy.
 
@@ -41,11 +45,13 @@ Wykonaj następujące kroki, aby nazwać działanie równoległe.
 Wykonaj następujące kroki, aby dodać i skonfigurować gałęzie działania równoległego.
 1.  Kliknij dwukrotnie działanie równoległe, aby wyświetlić jego odgałęzienia.
 2.  Aby dodać gałąź, przeciągnij element **Gałąź** z obszaru **Elementy przepływu pracy** na punkt wstawiania na kanwie. Na poniższej ilustracji przedstawiono punkt wstawiania.![Punkt wstawiania](./media/workflow_insertionpoint.gif)
-    | **Uwaga **                                                                                                         |
+    | **Uwaga**                                                                                                         |
     |------------------------------------------------------------------------------------------------------------------|
     | Kolejność odgałęzień jest nieważna, ponieważ wszystkie gałęzie działania równoległego są uruchamiane jednocześnie. |
 
-3.  Aby skonfigurować poszczególne gałęzie, zobacz [Konfigurowanie odgałęzienia równoległego](http://axhelp.dynamics.com/en/wiki/configure-a-parallel-branch/).
+3.  Aby skonfigurować poszczególne gałęzie, zobacz [Konfigurowanie odgałęzienia równoległego](configure-parallel-branch-workflow.md).
+
+
 
 
 
