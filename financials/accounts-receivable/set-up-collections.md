@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 1a9bf1067d0f6e0e139ef13d939d2f0e9bf2126b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8dd5cc110e83e1b10db233547b0ac2081cc6c380
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---

@@ -3,7 +3,7 @@ title: Przetwarzanie arkuszy finansowych
 description: "Ten artykuł opisuje funkcje programu Microsoft Dynamics 365 for Operations, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ef99caf4570969d2b920cec8b53669ce2094965
-ms.openlocfilehash: 50cd203025be8857de943e458fc32315e494fb7a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c020566928cecc15bd7de504164f5adbf34eda44
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł opisuje funkcje systemu Microsoft Dynamics AX, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli.  
+Ten artykuł opisuje funkcje programu Microsoft Dynamics 365 for Operations, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli.  
 
 Nazwy arkuszy
 
@@ -82,6 +83,7 @@ Konfiguracja konta głównego oferuje wiele opcji przetwarzania arkusza finansow
 Struktury księgowania i struktury zaawansowanych reguł są bardzo ważne do zagwarantowania, że dane, które są wymagane do raportowania finansowego i śledzenia wydajności, są rejestrowane przy przetwarzaniu arkusza finansowego i wszelkich dokumentów. Struktury księgowania i struktury reguły zaawansowanych pozwalają dostosować sposób wprowadzania danych. Można zezwolić na wprowadzanie danych tylko dla wymiarów finansowych, które są odpowiednie w poszczególnych sytuacjach, a można też wymuszać wymaganie, by rejestrowane były tylko dane wymagane i prawidłowe.
 
 Aby uzyskać więcej informacji, zobacz [Planowanie: Obsługa planu kont](plan-chart-of-accounts.md). 
+
 
 
 

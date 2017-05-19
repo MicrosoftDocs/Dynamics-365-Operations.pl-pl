@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 9db73514d71239d75dc63fcf6e9f45923b1272f4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c65f7e44459478cac7663575abe588ad057f18e0
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -76,7 +77,7 @@ Dane, które są używane podczas obliczania stawek w programie Microsoft Dynami
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Czy wszystkie konfiguracje aparatu wymagają metadanych?
 Nie, nie potrzebują ich aparaty zarządzania transportem, które są używane do pobierania danych potrzebnych przy obliczaniu stawki z systemów zewnętrznych. Można pobrać dane stawki dla tych aparatów z systemów przewoźnika transportu zewnętrznego, zazwyczaj za pośrednictwem usługi sieci web. Na przykład można użyć aparatu przebiegu, który pobiera dane bezpośrednio z map Bing, dzięki czemu aparat ten nie potrzebuje metadanych.
-| **Uwaga **                                                                                                                                                                                                                                                                                                                                                                     |
+| **Uwaga**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Aparaty zarządzania transportem, które zostały dostarczone z programu Microsoft Dynamics 365 for Operations, opierają się na danych, które są pobierane z aplikacji. Aparaty połączone z systemami zewnętrznymi nie są częścią programu Operations. Jednak model rozszerzania oparty na aparacie umożliwia rozszerzenia kompilacji przy użyciu pakietu Visual Studio Tools dla programu Microsoft Dynamics 365 for Operations. |
 

@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: RetailAffiliationPriceGroup, RetailCatalogPriceGroup, RetailChannelPriceGroup, RetailDiscountPriceGroup, RetailDiscountPricingWorkspace, RetailPeriodicDiscount, RetailStoreItemPriceList, RetailStoreTable
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16401
 ms.assetid: d807fd51-86aa-47a0-8e00-6c5ddd21ff6b
 ms.search.region: global
@@ -19,15 +19,19 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b21fd97426b331726c12ea29f89817a46dd445c3
-ms.openlocfilehash: b2f59db59ea49925c3bb5e1d75beee95191220d0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: 6e52ba4bdb8e879959ff886010092914332e6e12
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="define-channel-specific-discounts"></a>Definiowanie rabatów właściwych dla kanału
+
+[!include[banner](includes/banner.md)]
+
 
 Sprzedawcy detaliczni często ustawiają różne rabaty w różnych kanałach. W tym temacie opisano pojęcia, które należy znać, aby tworzyć rabaty dla konkretnych kanałów. 
 
@@ -39,7 +43,8 @@ Sprzedawcy detaliczni często oferują różne rabaty w różnych kanałach. To 
 Moduł Handel detaliczny i inny w programie Microsoft Dynamics 365 for Operations oferuje funkcjonalność grup cenowych definiujących rabaty właściwe dla kanału. Grup cenowe mogą być skojarzone z jednym lub kilkoma następującymi elementami: kanały, katalogi, przynależności i programy lojalnościowe. Ten artykuł dotyczy kanałów, ale te same pojęcia dotyczą rabatów katalogu, przynależności i programów lojalnościowych.
 
 ## <a name="price-groups"></a>Grupy cenowe
-\[caption id="attachment\_256084" align="alignnone" width="640"\][![Grupy cenowe](./media/price-groups-1024x608.png)](./media/price-groups.png) Łącza do grup cenowych w module Handel detaliczny\[/caption\]
+
+[![Grupy cenowe](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
 Powyższy wykres ilustruje relację między jednostkami, które mogą znajdować się w transakcji (kanał, katalog, przynależność, odbiorca, karta lojalnościowa), a różnymi typami rabatów, które można skonfigurować. Wszystkie transakcje odbywają się w kanale, więc kanał na pewno będzie ujęty w transakcji. Pozostałe elementy są opcjonalne. Na poszczególnych stronach danych głównych są łącza do powiązanej grupy cenowej, na której można wyświetlać i dodawać grupy cenowe w razie potrzeby. Grupa cenowa służy do tworzenia relacji czterech różnych typów elementów z rabatami, korektami cen i umowami handlowymi. Dobrze jest zaplanować strategię nazywania grup cenowych, która pozwoli lepiej je uporządkować. Jedną z możliwości jest używanie litery i cyfry na początku lub na końcu nazwy dla rozróżnienia typów. Np. 1-xxxxx dla grup cenowych kanału i 2-xxxxx dla grup cenowych katalogu. Dostępne są cztery strony zapytań, które koncentrują się na poszczególnych podmiotach sieci sprzedaży, dla których są skojarzone rabaty.
 
@@ -63,5 +68,7 @@ Przykład poniżej ilustruje zadania niezbędne do skonfigurowania rabatu kanał
 --------
 
 [Korekty ceny i rabaty](price-adjustments-discounts.md)
+
+
 
 

@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: fabaacbc7187b38a1745c2139a9eb7760f2be987
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: a0a105ade7e47d7c554d62ee112ed03437bb7521
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -57,17 +58,17 @@ Użyj konstruktor układu formularza, aby w sposób graficzny stworzyć układ f
 8.  Po przeciągnięciu elementu do obszaru roboczego ustaw właściwości dla części w okienku **Informacje o obiekcie** na dole strony. Wprowadź jedno lub więcej z następujących ustawień:
     -   **Wyrównaj** — umożliwia ustawienie wyrównania pola jako **Do lewej** lub **Do prawej**.
     -   **Znak wypełniający** — umożliwia określenie znaku odstępu. Domyślnie jest używane puste miejsce, ale można wprowadzić dowolny znak.
-    -   **Prefiks** — umożliwia wpisanie wartości, która ma pojawiać się na początku pola. To ustawienie dotyczy tylko elementu **Wiersze **układu.
+    -   **Prefiks** — umożliwia wpisanie wartości, która ma pojawiać się na początku pola. To ustawienie dotyczy tylko elementu **Wiersze**układu.
     -   **Znaki** — umożliwia określenie maksymalnej liczby znaków w polu, jeśli element zawiera zmienną. Jeśli tekst w tym polu jest dłuższy niż liczba znaków, którą określisz, tekst jest obcięty do rozmiaru pola.
     -   **Zmienna** — jeśli element zawiera zmienną i nie można go dostosować, to pole wyboru jest zaznaczane automatycznie.
-    -   **Typ czcionki **— można ustawić styl czcionki **Zwykła** lub **Pogrubiona**. Litery pogrubione zajmują dwa razy więcej miejsca niż normalne. Dlatego niektóre znaki mogą zostać obcięte.
+    -   **Typ czcionki**— można ustawić styl czcionki **Zwykła** lub **Pogrubiona**. Litery pogrubione zajmują dwa razy więcej miejsca niż normalne. Dlatego niektóre znaki mogą zostać obcięte.
     -   **Usuń** — ten przycisk należy kliknąć, aby usunąć zaznaczony element z układu formularza.
 
 ## <a name="assign-receipt-profiles"></a>Przypisywanie profili paragonów
 Profile paragonów są przypisywane bezpośrednio do drukarki za pomocą profilu sprzętu.
 
 1.  Otwórz profil sprzętu, klikając kolejno opcje **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktu sprzedaży** &gt; **Profil sprzętu**.
-2.  Wybierz drukarkę, a następnie w polu **profilu paragonów ** przypisz profil paragonu do użycia w rejestrze.
+2.  Wybierz drukarkę, a następnie w polu **profilu paragonów** przypisz profil paragonu do użycia w rejestrze.
 
 **Uwaga:** Jeśli używane są dwie drukarki, jedna drukarka może służyć do standardowych 40-kolumnowych paragonów. Druga drukarka jest zwykle używana do drukowania paragonów pełnostronicowych, które muszą zawierać więcej informacji. Paragony te uwzględniają paragony do zamówienia sprzedaży odbiorcy i faktury odbiorcy.
 

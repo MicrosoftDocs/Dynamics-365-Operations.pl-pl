@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: 1666691ec122e65128b74056817a0c40551f49b5
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c85c90feb7f314db6b47f64402f8b9455ed53d9d
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -67,7 +68,7 @@ Aby ustawić dni i godziny pracy w kalendarzu lub utworzyć nowy kalendarz, klik
 Aby korzystać z pełnej funkcjonalności szacowania kosztów SPP, należy ustawić koszty i płace pracowników, kategorie pracy, wydatki, opłaty i towary.
 
 -   Aby ustawić koszt i cenę robocizny, wydatki i kategorie opłat, kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Ceny**.
--   Aby skonfigurować koszt i ceny sprzedaży towarów, przejdź na stronę **umów handlowych **stronę dla każdego elementu na stronie listy **zwolnionych produktów** w module Zarządzanie informacjami o produktach.
+-   Aby skonfigurować koszt i ceny sprzedaży towarów, przejdź na stronę **umów handlowych**stronę dla każdego elementu na stronie listy **zwolnionych produktów** w module Zarządzanie informacjami o produktach.
 
 ## <a name="creating-a-wbs"></a>Tworzenie SPP
 Tworzenie SPP składa się z trzech czynności:
@@ -164,7 +165,7 @@ Podczas szacowania kosztów pracy, materiałów i wydatków dla każdego zadania
 
 **Oszacowania wydatków i kosztów materiałów** Na karcie **Szacowane koszty i przychód** można także oszacować wydatki i koszty materiałów dla zadania. 
 
-Koszt własny i cena sprzedaży dla każdego wiersza oszacowania robocizny lub wydatku opiera się na ustawieniach zdefiniowanych dla każdej kategorii w cennikach na stronie **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Ceny**. W przypadku towarów koszt i cena sprzedaży są dodawane domyślnie z umów dotyczących towarów lub handlowych na stronie listy **Zwolnione produkty **w module Zarządzanie informacjami o produktach.
+Koszt własny i cena sprzedaży dla każdego wiersza oszacowania robocizny lub wydatku opiera się na ustawieniach zdefiniowanych dla każdej kategorii w cennikach na stronie **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Ceny**. W przypadku towarów koszt i cena sprzedaży są dodawane domyślnie z umów dotyczących towarów lub handlowych na stronie listy **Zwolnione produkty**w module Zarządzanie informacjami o produktach.
 
 ## <a name="tracking-progress-on-the-wbs"></a>Monitorowanie postępu w SPP
 W niektórych branżach śledzi się postęp projektu względem SPP na bardzo szczegółowym poziomie, a w innych na wyższych poziomach SPP. W tej sekcji opisano sposób korzystania ze śledzenia SPP dla wymagań projektu. 

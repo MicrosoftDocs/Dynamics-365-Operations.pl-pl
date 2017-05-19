@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 318c88f88277a8300b1fcda5056a9a92c9a81eae
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7edf456b09c6f77550f1dd023e712c7ef379fd1a
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -36,7 +37,7 @@ Ten artykuł zawiera informacje o zgłaszaniu list składowych (BOM) jako gotowy
 Strony **Zgłoszenie wyrobów gotowych** i **Maksymalna ilość zgłoszonych jako gotowe** służą do zgłaszania list składowych (BOM) jako gotowe. Co do koncepcji proces zgłaszania BOM jako gotowych jest taki sam, jak proces zgłaszania zlecenia produkcyjnego jako gotowego. Ten proces może być stosowany m.in. w przypadku procesów prostego montażu i składania, gdzie nie są wymagane bardziej zaawansowane funkcje zlecenia produkcyjnego. Strona **Zgłoszenie wyrobów gotowych** umożliwia zgłoszenie wielu BOM jako gotowych w partii. Strona **Maksymalna ilość zgłoszonych jako gotowe** umożliwia zgłoszenie tylko jednego BOM jako gotowego w danym momencie. Strona **Zgłoszenie wyrobów gotowych** jest dostępna z menu w module Zarządzanie zapasami. Obie strony są dostępne jako elementy menu na stronie **Zwolnione produkty**.
 
 ## <a name="report-as-finished-page"></a>Strona Zgłoszenie wyrobów gotowych
-Po wyświetleniu strony **Zgłoszenie wyrobów gotowych ** z menu zwolniony produkt, strona proponuje zgłoszenie domyślnej ilości standardowych zapasów jako gotowych. Domyślnie wyświetlana jest aktywna wersja BOM, ale możesz ją zmienić, jeśli są inne zatwierdzone wersje. Strona daje również możliwość usuwania rekordów i tworzenia nowych rekordów dla zwolnionych produktów, które powinny być zgłoszone jako gotowe. Aby użyć kwerendy do wybrania produktów, kliknij przycisk **Zaznacz**. Można ręcznie potwierdzić zgłoszenie wybranych produktów jako gotowych, klikając przycisk **OK**. Istnieje również możliwość konfiguracja uruchamiania procesu w partii. Po potwierdzeniu zgłoszenia towaru jako gotowego, system generuje arkusz BOM przetwarzania księgowania w zapasach. Ten arkusz składa się z jednego wiersza dla gotowego produktu i wierszy dla każdego wiersza BOM. Można kontrolować, czy arkusz jest księgowany automatycznie czy pozostanie otwarty w celu wprowadzenia dodatkowych korekt.
+Po wyświetleniu strony **Zgłoszenie wyrobów gotowych** z menu zwolniony produkt, strona proponuje zgłoszenie domyślnej ilości standardowych zapasów jako gotowych. Domyślnie wyświetlana jest aktywna wersja BOM, ale możesz ją zmienić, jeśli są inne zatwierdzone wersje. Strona daje również możliwość usuwania rekordów i tworzenia nowych rekordów dla zwolnionych produktów, które powinny być zgłoszone jako gotowe. Aby użyć kwerendy do wybrania produktów, kliknij przycisk **Zaznacz**. Można ręcznie potwierdzić zgłoszenie wybranych produktów jako gotowych, klikając przycisk **OK**. Istnieje również możliwość konfiguracja uruchamiania procesu w partii. Po potwierdzeniu zgłoszenia towaru jako gotowego, system generuje arkusz BOM przetwarzania księgowania w zapasach. Ten arkusz składa się z jednego wiersza dla gotowego produktu i wierszy dla każdego wiersza BOM. Można kontrolować, czy arkusz jest księgowany automatycznie czy pozostanie otwarty w celu wprowadzenia dodatkowych korekt.
 
 ## <a name="max-report-as-finished-page"></a>Maks. wyrobów gotowych
 Na stronie **Maksymalna ilość zgłoszonych jako gotowe** każdy wiersz BOM zawiera liczbę sztuk produktu, którą można zgłosić jako gotowe. Ta wartość jest obliczana na podstawie fizycznej dostępności zapasów z każdego wiersza materiału. W poniższym przykładzie jedna sztuka towaru FG korzysta z dwóch rodzajów surowca RM10 i jednej sztuki surowca RM20. Ponieważ istnieje tylko 10 sztuk RM10 na stanie, można zgłosić jako gotowe maksymalnie 5 sztuk FG. Ta wartość jest wyświetlana w polu **Maksymalna ilość zgłoszonych jako gotowe**.

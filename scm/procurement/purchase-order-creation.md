@@ -3,7 +3,7 @@ title: "Tworzenie zamówień zakupu"
 description: "W tym artykule opisano proces i opcje ręcznego tworzenia zamówienia zakupu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: de8fa93bfc0119d6f9433fb4215c326abdda2899
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b87e4be4541ce5a33b3f6ed0ffe3b08f6447d293
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="create-purchase-orders"></a>Tworzenie zamówień zakupu
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule opisano proces i opcje ręcznego tworzenia zamówienia zakupu.
 
@@ -66,7 +70,7 @@ Czasami trzeba podzielić zamówioną ilość, tak aby różne części zostały
 Opłaty mogą być automatycznie dodawane do wierszy zamówienia zakupu, jeśli skonfigurowano automatyczne opłaty dla dostawcy lub grupy opłat dostawcy oraz dla pozycji lub grupy opłat za pozycje. Jednak najczęściej opłaty są dodawane ręcznie na poziomie wiersza zamówienia. Aby dodać opłatę, otwórz stronę **Obsługuj opłaty** za pomocą działania **Obsługuj opłaty** w menu **Finanse** w widoku **Wiersze**. Zaletą dodawania opłat bezpośrednio na poziomie wiersza zamówienia jest to, że opłatę można przydzielić jako koszt zapasów. Aby skonfigurować kody opłat w celu ujęcia kosztu produktu, należy użyć **Pozycja** po stronie debetowej (obciążeniowej). Tego rodzaju opłaty muszą być przydzielone z nagłówka zamówienia zakupu do wierszy, aby można było potwierdzić zamówienie. Na przykład można chcieć przydzielić opłaty na podstawie ilości w każdym wierszu. Kategoria opłat wpływa również na sposób ujmowania opłat. Na przykład opłaty stałe określają stałą kwotę, a opłaty Procentowe są obliczane jako procent kwoty netto w wierszu zamówienia. Zamówienia zakupu mogą być przypisane do ładunku, a ładunek może zawierać preliminarz oczekiwanych wydatków z tytułu kosztów transportu. Wydatek ten można przydzielić z powrotem od ładunku do wierszy zamówienia zakupu.
 
 ## <a name="purchase-order-actions"></a>Akcje związane z zamówieniem zakupu
-Po dodaniu nagłówka i wierszy do zamówienia zakupu często należy wykonać dodatkowe kroki, zanim zamówienie będzie gotowe do potwierdzenia. Ponieważ jest dostępnych bardzo dużo opcji, warto użyć funkcji [Wyszukiwanie akcji](/dynamics365/operations/action-search), aby znaleźć odpowiednią pozycję menu.  
+Po dodaniu nagłówka i wierszy do zamówienia zakupu często należy wykonać dodatkowe kroki, zanim zamówienie będzie gotowe do potwierdzenia. Ponieważ jest dostępnych bardzo dużo opcji, warto użyć funkcji [Wyszukiwanie akcji](/dynamics365/operations/get-started/action-search), aby znaleźć odpowiednią pozycję menu.  
 
 Produkty w zamówieniu można konfigurować w taki sposób, aby zawierały pozycje dodatkowe. Pozycje dodatkowe to produkty, które muszą lub mogą zostać kupione razem z innymi produktami. Pozycje dodatkowe mogą być dodawane bezpłatnie jako produkty towarzyszące lub też można decydować, czy mają być dodawane do zamówienia, czy nie. Pozycje dodatkowe można przejrzeć po każdym dodanym wierszu zamówienia. Jednakże prawdopodobnie bardziej wygodne będzie przejrzeć i dodać odpowiednie pozycje dodatkowe razem dla wszystkich wierszy zamówienia za pomocą strony **Pozycje dodatkowe**, którą można otworzyć z okienka akcji.  
 
@@ -91,5 +95,7 @@ Może wystąpić konieczność opóźnienia finalizacji zamówienia zakupu. Na p
 [Przyjęcie produktów względem zamówień zakupu](product-receipt-against-purchase-orders.md)
 
 [Przegląd faktur od dostawcy](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

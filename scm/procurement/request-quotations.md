@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: d70b4ae0a6b177508021ee72481333cf6f265069
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 20ad50ab5c2dddf4fe07ebb5bb940954c0408f8d
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -48,7 +49,7 @@ Jeśli trzeba zmienić ZO po jego wysłaniu, można wysłać ponownie ZO do dost
 
 Po otrzymaniu ofert, należy wprowadzić je na stronie **Odpowiedzi na zapytanie ofertowe**. Jeśli wybierzesz opcję **Kopiuj dane do odpowiedzi**, dane jak ilość i daty ze sprawy ZO zostaną skopiowane do odpowiedzi. Można zmienić te dane, tak aby odzwierciedlały ofertę dostawcy.  
 
-Jeśli w przypadku określonego dostawcy wymagana jest druga iteracja odpowiedzi, kliknij **zwrot **na stronie **Odpowiedź na zapytanie ofertowe**. Akcja zwrotu tworzy nowy arkusz i raport, który będzie można wydrukować, archiwizować i wysyłać zgodnie z ustawieniami zarządzania drukowaniem.  
+Jeśli w przypadku określonego dostawcy wymagana jest druga iteracja odpowiedzi, kliknij **zwrot**na stronie **Odpowiedź na zapytanie ofertowe**. Akcja zwrotu tworzy nowy arkusz i raport, który będzie można wydrukować, archiwizować i wysyłać zgodnie z ustawieniami zarządzania drukowaniem.  
 
 Po dodaniu do sprawy ZO kryteriów punktowania, odpowiedzi na ZO będą miały panel punktowania, w którym można wprowadzać oceny. Łączny wynik będzie wyświetlany podczas porównywania odpowiedzi na stronie **porównania odpowiedzi**, gdzie można porównać również inne dane dotyczące odpowiedzi, takie jak cena wiersza, data dostawy i łączna cena.  
 
@@ -133,7 +134,7 @@ W poniższej tabeli przedstawiono, jak zmienia się stan ZO przy tworzeniu ZO i 
 | Dodwanie nowego dostawcy.                | Utworzone                      | Wysłane (ZO zostało wysłane do tylko jednego dostawcy.) | Utworzony                    | Wysłano                        |
 | Wysyłanie ZO do drugiego dostawcy. | Wysłano                         | Wysłano                                            | Wysłano                       | Wysłano                        |
 
-**Uwaga: ** Można dodać kolejnych dostawców do ZO w dowolnym momencie, a najniższe i najwyższe stany zmieniają się, aby odzwierciedlić nowych dostawców, którzy zostali dodani. Na przykład, jeśli otrzymano oferty od wszystkich dostawców, a co najmniej jeden wiersz oferty zaakceptowano, najniższy stan w nagłówku ZO to **Odrzucono**, a najwyższy stan to **Zaakceptowany**. Po dodaniu nowego dostawcy, najniższy stan w dowolnym wierszu zostanie zmieniony na **Utworzono**. Dlatego najniższy stan w nagłówku ZO zmienia się na **Utworzono**, a najwyższy stan pozostaje **Zaakceptowane**.
+**Uwaga:** Można dodać kolejnych dostawców do ZO w dowolnym momencie, a najniższe i najwyższe stany zmieniają się, aby odzwierciedlić nowych dostawców, którzy zostali dodani. Na przykład, jeśli otrzymano oferty od wszystkich dostawców, a co najmniej jeden wiersz oferty zaakceptowano, najniższy stan w nagłówku ZO to **Odrzucono**, a najwyższy stan to **Zaakceptowany**. Po dodaniu nowego dostawcy, najniższy stan w dowolnym wierszu zostanie zmieniony na **Utworzono**. Dlatego najniższy stan w nagłówku ZO zmienia się na **Utworzono**, a najwyższy stan pozostaje **Zaakceptowane**.
 
 ## <a name="amending-an-rfq"></a>Zmienianie ZO
 Czasami trzeba zmienić ZO, które zostało już wysłane. Taka sytuacja może wystąpić, na przykład gdy zmienią się terminy dostawy lub trzeba dodać produkty albo zmienić ilości produktów. Proces zmiany można skonfigurować w taki sposób, by był bardziej lub mniej restrykcyjny.  

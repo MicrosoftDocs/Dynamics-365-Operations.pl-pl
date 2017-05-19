@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 9dca5dec846670da25926826f59d7bce0fa0dcea
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e2f3a352ca70472de838271fdedfede575cb839d
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten temat wyjaśnia sposób pobierania konfiguracji modułu Raportowanie elektroniczne (ER) z usługi Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -43,9 +47,10 @@ Ten samouczek prowadzi przez proces pobierania najnowszej wersji konfiguracji mo
     1.  Kliknij przycisk **Dodaj**, aby dodać nowe repozytorium.
     2.  Jako typ repozytorium wybierz **LCS**.
     3.  Kliknij opcję **Utwórz repozytorium**.
-    4.  Wprowadź nazwę i opis repozytorium.
-    5.  Kliknij przycisk **OK**, aby potwierdzić wprowadzenie nowego repozytorium.
-    6.  W siatce wybierz nowe repozytorium typu **LCS**.
+    4. W przypadku wyświetlenia monitu postępuj zgodnie z instrukcjami autoryzacji.
+    5.  Wprowadź nazwę i opis repozytorium.
+    6.  Kliknij przycisk **OK**, aby potwierdzić wprowadzenie nowego repozytorium.
+    7.  W siatce wybierz nowe repozytorium typu **LCS**.
 
 6.  Kliknij opcję **Otwórz**, aby wyświetlić listę konfiguracji modułu ER dla wybranego repozytorium. [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  W drzewie konfiguracji w lewym okienku zaznacz wymaganą konfigurację ER.
@@ -58,5 +63,7 @@ Ten samouczek prowadzi przez proces pobierania najnowszej wersji konfiguracji mo
 --------
 
 [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
+
+
 
 

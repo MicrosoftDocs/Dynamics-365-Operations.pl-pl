@@ -1,16 +1,16 @@
 ---
 title: "Definicje wierszy w Projektancie raportów finansowych"
 description: "Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zawartość każdego wiersza w raporcie finansowym. Definicję wiersza można łączyć z definicjami kolumn, drzewa raportowania i raportów, by tworzyć grupy elementów konstrukcyjnych dostępne dla wielu firm."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 42 - 39
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: a2f92effd1cfdc1d5da2c5ec895c0487a6fc82a4
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aa9fcc4d0c122d2355362b75ca210af4c2ef4338
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="row-definitions-in-financial-report-designer"></a>Definicje wierszy w Projektancie raportów finansowych
+
+[!include[banner](../includes/banner.md)]
+
 
 Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zawartość każdego wiersza w raporcie finansowym. Definicję wiersza można łączyć z definicjami kolumn, drzewa raportowania i raportów, by tworzyć grupy elementów konstrukcyjnych dostępne dla wielu firm.
 
@@ -73,7 +77,7 @@ Aby dodać wymiary do definicji wiersza, należy wykonać następujące kroki:
 1.  W Projektancie raportów kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
 2.  W menu **Edycja** kliknij **Wstaw wiersze z wymiarów**.
 3.  W oknie dialogowym **Wstaw wiersze z wymiarów** w wierszu **Wymiary** wybierz komórki dla wymiaru, który ma zostać przeniesiony do definicji wiersza, a następnie kliknij przycisk **Wszystkie &&&**.
-4.  Aby ograniczyć definicję wiersza do określonego zakresu wartości wymiarów, wprowadź początkową wartość wymiaru w komórce **Początek zakresu wymiaru **, a następnie wprowadź końcową wartość wymiaru w komórce **Koniec zakresu wymiaru**. Aby uwzględnić wszystkie wartości dla wybranego wymiaru, pozostaw te komórki puste. **Uwaga:** Symbole wieloznaczne (\* lub ?) w zakresach wymiarów mogą nie zwracać wszystkich żądanych wyników, w zależności od tego, jak baza danych systemu ERP grupuje dane.
+4.  Aby ograniczyć definicję wiersza do określonego zakresu wartości wymiarów, wprowadź początkową wartość wymiaru w komórce **Początek zakresu wymiaru**, a następnie wprowadź końcową wartość wymiaru w komórce **Koniec zakresu wymiaru**. Aby uwzględnić wszystkie wartości dla wybranego wymiaru, pozostaw te komórki puste. **Uwaga:** Symbole wieloznaczne (\* lub ?) w zakresach wymiarów mogą nie zwracać wszystkich żądanych wyników, w zależności od tego, jak baza danych systemu ERP grupuje dane.
 5.  W polu **Początkowy kod wiersza** określ kod wiersza dla pierwszej wartości wymiaru, która ma zostać dodana do definicji wiersza.
 6.  W polu **Przyrost każdego wiersza** określ odstęp między kolejnymi kodami wierszy. Na przykład jeśli kod pierwszego wiersza wynosi 100, a wartość przyrostu wynosi 30, pierwsze nowe wiersze mają kody 100, 130, 160, 190 i 220. Użyj wartość przyrostu, która zapewnia wystarczający odstęp na wstawienie nowych wierszy formatu i formuły.
 7.  Kliknij przycisk **OK** Dla każdej wybranej wartości wymiaru jest dodawany jeden wiersz do definicji wiersza.
@@ -97,9 +101,9 @@ Aby dostosować zaokrąglenie w bilansie, należy wykonać następujące kroki:
     -   **Wiersz sumy zobowiązań i kapitału własnego** — kod wiersza dla wierszy w bilansie, który zawiera sumy zobowiązań i kapitału własnego.
     -   **Limit kwoty korekty** — dodatnia liczba całkowita określająca limit dla automatycznych korekt. Ta kwota jest porównywana z wartością bezwzględną rzeczywistej różnicy zaokrągleń.
 
-    **Uwaga: **te kody wiersza muszą być połączone z danymi finansowymi. Innymi słowy, wiersz musi mieć wartość wymiaru w jego komórce **Łącze do wymiarów finansowych**. **Nie** należy używać odwołania do wiersza opisu (**DESC**), obliczenia (**CALC**) ani sumy (**TOT**).
+    **Uwaga:**te kody wiersza muszą być połączone z danymi finansowymi. Innymi słowy, wiersz musi mieć wartość wymiaru w jego komórce **Łącze do wymiarów finansowych**. **Nie** należy używać odwołania do wiersza opisu (**DESC**), obliczenia (**CALC**) ani sumy (**TOT**).
 
-Kwoty w bilansie będą teraz bilansowane równomiernie, gdy jest włączone zaokrąglanie. **Uwaga: **limit korekty jest stosowany na podstawie opcji **Dokładność zaokrąglania** określonej dla definicji raportu. Na przykład zaokrąglanie raportu do tysięcy i wprowadzenie wartości **2** w polu **Limit kwoty korekty** spowoduje wyświetlanie komunikatu ostrzegawczego, gdy wartość określona w polu **Wiersz korekty zaokrąglania** zwiększy się lub zmniejszy o ponad 2000.
+Kwoty w bilansie będą teraz bilansowane równomiernie, gdy jest włączone zaokrąglanie. **Uwaga:**limit korekty jest stosowany na podstawie opcji **Dokładność zaokrąglania** określonej dla definicji raportu. Na przykład zaokrąglanie raportu do tysięcy i wprowadzenie wartości **2** w polu **Limit kwoty korekty** spowoduje wyświetlanie komunikatu ostrzegawczego, gdy wartość określona w polu **Wiersz korekty zaokrąglania** zwiększy się lub zmniejszy o ponad 2000.
 
 ## <a name="format-row-and-column-text"></a>Formatowanie tekstu wiersza i kolumny
 Można dostosować wygląd raportów, zmieniając czcionki i formatując tekst. Poniższe sekcje zawierają wyjaśnienia dotyczące formatowania wyglądu wierszy i kolumn w raportach.
@@ -117,7 +121,7 @@ Można tworzyć i modyfikować style czcionek dla raportu. Następnie można zas
 <tr class="odd">
 <td>Tworzenie stylu czcionki</td>
 <td><ol>
-<li>W Projektancie raportów w menu <strong>Format </strong>kliknij <strong>Style i formatowanie</strong>.</li>
+<li>W Projektancie raportów w menu <strong>Format</strong> kliknij <strong>Style i formatowanie</strong>.</li>
 <li>W oknie dialogowym <strong>Style i formatowanie</strong> kliknij przycisk <strong>Nowy</strong>, a następnie nadaj unikatową nazwę nowemu stylowi.</li>
 <li>Wybierz czcionki i kliknij <strong>OK</strong>.</li>
 </ol></td>
@@ -125,7 +129,7 @@ Można tworzyć i modyfikować style czcionek dla raportu. Następnie można zas
 <tr class="even">
 <td>Modyfikowanie stylu czcionki</td>
 <td><ol>
-<li>W Projektancie raportów w menu <strong>Format </strong>kliknij <strong>Style i formatowanie</strong>.</li>
+<li>W Projektancie raportów w menu <strong>Format</strong> kliknij <strong>Style i formatowanie</strong>.</li>
 <li>W oknie dialogowym <strong>Style i formatowanie</strong> wybierz styl, który chcesz zmodyfikować, a następnie kliknij przycisk <strong>Modyfikuj</strong>.</li>
 <li>Wybierz czcionki i kliknij <strong>OK</strong>.</li>
 </ol></td>
@@ -173,6 +177,8 @@ Aby ułatwić wyświetlanie kolumn, nad którymi pracujesz w definicji wiersza, 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Sprawozdawczość finansowa w programie Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
+[Raporty finansowe](financial-reporting-intro.md)
+
+
 
 

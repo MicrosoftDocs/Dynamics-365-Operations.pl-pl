@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b21fd97426b331726c12ea29f89817a46dd445c3
-ms.openlocfilehash: 0a716310a3b813e08d46ac609e8ac6ce9a2db3e6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5f3d0e2016a3ffe5500ecae9508d44a115c56880
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,7 +52,7 @@ Urząd skarbowy nałożył na dany towar specjalne cła. Kwoty ceł są dodawane
 -   PODATEK = 25%, przy użyciu metody obliczeń Procent od kwoty brutto
 
 Jeśli kwota netto = 10,00, wtedy cło 1 = 1,00 x 10.00%= 10 , a cło 2 = 2,00 x 10.00% = 20. Kwoty będą następujące: Kwota brutto: kwota netto + CŁO 1 + CŁO 2 (10,00 + 1,00 + 2,00) = 13,00 PODATEK = 13,00 x 25% = 3,25 CŁA I PODATEK łącznie: 1,00 + 2,00 + 3,25 = 6,25 Suma: 10,00 + 6,25 = 16,25
-| **Uwaga **                                                                                                                                                                                                                 |
+| **Uwaga**                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tylko jeden kod z Podstawą = Procent od kwoty brutto może być użyty w transakcji. Jeśli więcej niż jeden taki kod podatku jest określony dla transakcji, zostanie wyświetlony błąd z informacją, że nie można obliczyć podatku. |
 
@@ -68,7 +69,7 @@ Kody podatków:
 -   PODATEK = 25%, przy użyciu metody obliczeń Procent od kwoty brutto
 
 Kwota netto: 10,00 cło 1: 10,00 x 10% = 1,00 cło 2: 1,00 x 20% = 0,20 kwota brutto: 10,00 + 1,00 + 0,20 = 11,20 podatek: 11,20 x 25% = 2.80 Suma ceł i podatek: 1,00 + 0,20 + 2,80 = 4,00 łączna kwota: 10,00 + 4,00 = 14,00
-| **Uwaga **                                                                                                                                                                                                                    |
+| **Uwaga**                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nie można używać wielu poziomów podatku w obliczeniach podatku. Podatek nie może być obliczany na podstawie podatku, który już jest obliczony na podstawie innego podatku. Można obliczyć wiele jednopoziomowych podatków dla kodu podatku w transakcji. |
 
@@ -77,7 +78,7 @@ Po wybraniu opcji Kwota na jednostkę w polu Podstawa, podatek jest obliczany ja
 ### <a name="example"></a>Przykład
 
 Kod podatku jest skonfigurowany jako: 1,20 USD na jednostkę = pole W wierszu faktury sprzedaży 25 opakowań towaru jest sprzedanych Podatek jest obliczany jako 25 x 1,20 = 30,00.
-| **Uwaga **                                                                                                                                                                                                 |
+| **Uwaga**                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Jeśli transakcja zostanie wprowadzona w jednostce innej niż jednostka określona w kodzie podatku, jest ona automatycznie konwertowana w oparciu o konwersje jednostek ustawiane na stronie Konwersje jednostek. |
 

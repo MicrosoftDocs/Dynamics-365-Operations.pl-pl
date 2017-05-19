@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: 25703ea2bde70c5c2d3de9f2dc9d3d1d889e4ac9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aae20fa2b899ab51bad5aeb54e21a7c9cbadb9be
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="design-a-questionnaire"></a>Projektowanie kwestionariusza
+
+[!include[banner](includes/banner.md)]
+
 
 W tym temacie opisano proces tworzenia kwestionariusza. Pierwszym krokiem jest projektowanie kwestionariusza. Przy projektowaniu kwestionariusza, można nie tylko zapisać pytania i odpowiedzi, ale również utworzyć strukturę, która umożliwia rejestrowanie odpowiedzi i umieszczanie ich w tabelach. 
 
@@ -109,7 +113,7 @@ Grupy odpowiedzi i odpowiedzi są składnikami, które składają się na głów
 
 Grupa odpowiedzi może być następnie używana do jednego lub większej liczby pytań w tym samym kwestionariuszu lub w więcej niż jednym kwestionariuszu. 
 
-**Uwaga:** Jeśli modyfikujesz tekst odpowiedzi w grupach odpowiedzi już użytych w wypełnionych kwestionariuszach, dane mogą stać się trudne do oceny i wyniki kwestionariusza przestaną być prawidłowe. Jeśli trzeba zmienić grupy odpowiedzi, należy wziąć pod uwagę utworzenie nowej grupy odpowiedzi zamiast zmieniać istniejące. Nie można usunąć grup odpowiedzi dołączonych do pytania lub odpowiedzi albo tych, które zostały wykorzystane.
+>**Uwaga:** Jeśli modyfikujesz tekst odpowiedzi w grupach odpowiedzi już użytych w wypełnionych kwestionariuszach, dane mogą stać się trudne do oceny i wyniki kwestionariusza przestaną być prawidłowe. Jeśli trzeba zmienić grupy odpowiedzi, należy wziąć pod uwagę utworzenie nowej grupy odpowiedzi zamiast zmieniać istniejące. Nie można usunąć grup odpowiedzi dołączonych do pytania lub odpowiedzi albo tych, które zostały wykorzystane.
 
 ### <a name="questions"></a>Pytania
 
@@ -117,12 +121,13 @@ Kwestionariusz musi zawierać pytania. Pytania mogą mieć postać otwartą lub 
 
 -   Odpowiedzi na pytania otwarte nie są kontrolowane i respondenci mogą wpisywać własne odpowiedzi.
 -   Pytania zamknięte wymagają listy opcji odpowiedzi i pytania mogą mieć strukturę, aby pozwalać respondentom na wybranie wielu odpowiedzi. Pytania powinny być sformułowane tak, aby uzyskać od respondenta określoną informację i muszą być połączone z grupą odpowiedzi, która zapewnia opcje odpowiedzi dla poszczególnych pytań zamkniętych. 
-     -  **Uwaga:** przed skonfigurowaniem pytań zamkniętych, należy utworzyć odpowiedzi i grup odpowiedzi.
+    >**Uwaga:** Przed skonfigurowaniem pytań zamkniętych należy utworzyć odpowiedzi i grupy odpowiedzi.
 
 Pytania mogą zostać ułożone w hierarchii pytań warunkowych, dzięki czemu zadawanie pytań pomocniczych zależy od odpowiedzi, które respondent wybiera do poprzedniego pytania. Można najpierw zapisać pytania i rozmieść je w hierarchii później.
 
 ## <a name="setting-up-questionnaires"></a>Konfigurowanie kwestionariuszy
-**Uwaga:** przed skonfigurowaniem kwestionariusza, należy skonfigurować odpowiedzi, pytania i wymagania wstępne. 
+>**Uwaga**
+>  Przed skonfigurowaniem kwestionariusza należy skonfigurować odpowiedzi, pytania i wymagania wstępne. 
 
 Dla każdego kwestionariusza można określić następujące informacje:
 
@@ -158,7 +163,7 @@ Na stronie **Kwestionariusze**, możesz wykonać następujące zadania:
 -   Usuwanie i dodawanie pytań.
 -   Wprowadzanie zmian w grupach wyników i numerach sekwencyjnych 
 
-**Uwaga:** Wprowadzając zmiany do kwestionariuszy, na które udzielono już odpowiedzi, należy zachować ostrożność. Zmiany mogą zmniejszać dokładność danych statystycznych stanowiących w rezultacie wadliwą podstawę do oceny. Zamiast zmieniać pytanie, na które już udzielono odpowiedzi, lepiej rozważyć utworzenie nowego pytania.
+>**Uwaga:** Wprowadzając zmiany do kwestionariuszy, na które udzielono już odpowiedzi, należy zachować ostrożność. Zmiany mogą zmniejszać dokładność danych statystycznych stanowiących w rezultacie wadliwą podstawę do oceny. Zamiast zmieniać pytanie, na które już udzielono odpowiedzi, lepiej rozważyć utworzenie nowego pytania.
 
 Nie można usunąć z kwestionariusza następujących typów pytań:
 
@@ -176,7 +181,8 @@ Grupa wyników jest używana do obliczania punktów i klasyfikacji wyników kwes
 -   Generowanie statystyk poszczególnych grup wyników ułatwiające analizowanie wyników.
 -   Drukowanie raportu, który pokazuje wyniki dla każdej grupy wyników, a także opcjonalne punkty/teksty, oparte na punktach przyznawanych w każdej grupie wyników.
 
-**Uwaga:** przed skonfigurowaniem grup wyników, należy wykonać następujące zadania:
+> **Uwaga**
+>   Przed skonfigurowaniem grup wyników należy wykonać następujące zadania:
 
 -   Konfigurowanie pytań zamkniętych. Dla pytań zamkniętych należy danymi wejściowymi na stronie **Pytania** strona musi być **Pole wyboru**, **Alternatywny przycisk** lub **Pole kombi**.
 -   Zdefiniuj punkty za odpowiedzi w grupie odpowiedzi przypisanej do każdego pytania.
@@ -186,7 +192,8 @@ Aby dołączyć pytania do kwestionariusza, korzystając z grup wyników, najpie
 
 Można skonfigurować wiele grup wyników do oceny punktacji, które respondent uzyskuje w każdej kategorii. Po wypełnieniu kwestionariusza, można wyświetlić punkty uzyskane dla każdej grupy wyników. 
 
-**Porada:** do oceny kwestionariusza za pomocą punktów, ale nie oddzielnych kategorii, wszystkie pytania można dodać do jednej grupy wyników. 
+> **Porada**
+>    W celu oceny kwestionariusza za pomocą punktów, ale nie oddzielnych kategorii, wszystkie pytania można dodać do jednej grupy wyników. 
 
 Dla każdej grupy wyników można skonfigurować co najmniej jedną wiadomość opartą na punktach, którą respondenci otrzymują po wypełnieniu kwestionariusza. Wyświetlany tekst może być różny w zależności od wyniku uzyskanego przez respondenta w grupie wyników. Aby używać wiadomości opartych na puntach, trzeba zdefiniować przedziały punktacji i opisy do każdego z przedziałów. Gdy respondent osiąga wynik z określonego przedziału, do raportu wyników jest dołączany tekst przeznaczony dla tego przedziału. 
 
@@ -212,13 +219,15 @@ W poniższej tabeli przedstawiono komunikaty na podstawie punktów zdefiniowane 
 
 Można skonfigurować przedziały punktacji i tekstów dla poszczególnych grup wyników kwestionariusza. Teksty, które odpowiadają wynikom respondentów są wyświetlane dla każdej grupy wyników. 
 
-**Uwaga:** Przedziały i tekst można zmieniać. Jednak jeśli kwestionariusz został ukończony, zmiany mogą wywołać niezgodności między starymi i nowymi raportami wyników.
+> **Uwaga**
+>   Przedziały i tekst można zmieniać. Jednak jeśli kwestionariusz został ukończony, zmiany mogą wywołać niezgodności między starymi i nowymi raportami wyników.
 
 ### <a name="conditional-question-hierarchies"></a>Hierarchie pytań warunkowych
 
 Hierarchie pytań warunkowych są opcjonalne podczas ustawiania kwestionariusza. 
 
-**Uwaga:** Przed utworzeniem hierarchii pytań warunkowych należy dołączyć do kwestionariusza pytania, do których przypisane są grupy odpowiedzi. 
+> **Uwaga**
+>   Przed utworzeniem hierarchii pytań warunkowych należy dołączyć do kwestionariusza pytania, do których przypisane są grupy odpowiedzi. 
 
 Aby używać pytań warunkowych to utworzenie hierarchii pytań w kwestionariuszu, można utworzyć kolejność prezentowania pytań w zależności od odpowiedzi wybranej w każdym pytaniu. Opierając sekwencję pytań na odpowiedziach respondenta, można modyfikować kwestionariusz do respondenta, który go wypełnia.
 
@@ -236,5 +245,7 @@ Alternatywnie można ustawić kwestionariusz tak, że jeśli respondent wybierz 
 [Dystrybucja i wypełnianie kwestionariuszy](distribute-questionnaires.md)
 
 [Wyświetlanie i ocena wyników kwestionariuszy](evaluate-questionnaire-results.md)
+
+
 
 

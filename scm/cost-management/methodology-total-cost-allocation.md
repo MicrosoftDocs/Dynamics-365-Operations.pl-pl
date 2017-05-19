@@ -3,7 +3,7 @@ title: "Metoda całkowitej alokacji kosztów"
 description: "Ten artykuł zawiera wskazówki dotyczące korzystania z metody całkowitej alokacji kosztów (TCA). TCA jest metodą obliczania kosztu między głównym towarem formuły szarży produkcyjnej a produktami towarzyszącymi zdefiniowanymi w formule."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: c26dcc5a8caa461bce90f931bb5c584f1816526b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a5c5788a3145dd6cabeed097d25a03a243577b8f
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="total-cost-allocation-method"></a>Metoda całkowitej alokacji kosztów
+
+[!include[banner](../includes/banner.md)]
+
 
 Ten artykuł zawiera wskazówki dotyczące korzystania z metody całkowitej alokacji kosztów (TCA). TCA jest metodą obliczania kosztu między głównym towarem formuły szarży produkcyjnej a produktami towarzyszącymi zdefiniowanymi w formule.
 
@@ -36,6 +40,11 @@ Całkowita alokacja kosztów (TCA) jest metodą obliczania kosztu między głów
 Poniżej przedstawiono wybrane wskazówki dotyczące używania metody TCA dla produktów towarzyszących:
 
 -   Jeśli w wersji formuły na suwaku **Całkowita alokacja kosztów** ustawisz wartość **Tak**, produkty towarzyszące muszą mieć koszt własny większy niż 0 (zero). Wartość może być pobierana z wersji aktywnego kosztu tego samego oddziału, a w przypadku formuły niepowiązanej z konkretnym oddziałem — z pierwszego dostępnego oddziału. Ten warunek jest weryfikowany podczas zatwierdzania formuły.
+
+    -   Nie trzeba ręcznie wprowadzać wartości procentowych alokacji kosztów dla produktów towarzyszących. Zamiast tego system automatycznie tworzy wartości procentowe alokacji kosztów jako średnią aktywnych kosztów własnych produktów towarzyszących. 
+    -   Nie trzeba wprowadzać kosztu standardowego towarów mających koszt niestandardowy, które są produktami towarzyszącymi. Istnieją dwa typy wersji wyceny w systemie: koszt standardowy i koszt planowany 
+    -   Jeśli towar nie jest wyceniany metodą kosztu standardowego, zaleca się używanie aktywnego kosztu własnego w wersji kosztu planowanego. Ta cena jest używana do szacowania kosztów, na przykład w obliczaniu BOM, szacowaniu kosztów produkcji i ustalaniu ceny alternatywnej w procesu inwentaryzacji zapasów. 
+
 -   Jeśli w wersji formuły na suwaku **Całkowita alokacja kosztów** ustawisz wartość **Tak** i są spełnione poniższe warunki, metodą alokacji kosztów jest **TCA**, a procent alokacji kosztów pozostaje bez zmian:
     -   Dodano produkty towarzyszące.
     -   Użyto innej metody alokacji kosztów dla produktów towarzyszących.
@@ -53,6 +62,8 @@ Pole **Alokacja kosztów produktu ubocznego** na stronie **Produkty towarzysząc
 -   **Procent** — Kwota kosztu jest obliczana jako procent sumy kosztów surowców zużywanych w produkcji. Procent używany do obliczeń należy wpisać w polu.
 -   **W serii** — Kwota kosztu jest obliczana jako kwota dla standardowego rozmiaru partii zlecenia produkcyjnego. Nie zależy od ilości zgłoszonej w produkcji. Kwotę używaną do obliczeń należy wpisać w polu.
 -   **Na ilość** — Kwota kosztu jest obliczana jako kwota dla zgłoszonej ilości towaru formuły w produkcji. Kwotę używaną do obliczeń należy wpisać w polu.
+
+
 
 
 

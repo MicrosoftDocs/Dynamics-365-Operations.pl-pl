@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: b46037b9509f329e18f0da69d530f6b1f88c8888
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: fef518bf156aa45dff66d21d49b433ed613cead1
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,7 +39,7 @@ Kwerenda propozycji płatności zawiera różne karty, z których każda ma ró�
 
 ## <a name="parameters"></a>Parametry
 -   **Wybierz faktury według** — Faktury w zakresie dat określonym przy użyciu pól **Od dnia** i **Do dnia** można wybrać według daty płatności, daty rabatu gotówkowego lub obu tych parametrów. W przypadku użycia daty rabatu gotówkowego system szuka najpierw faktur z datą rabatu gotówkowego między datami początkową i końcową. Następnie system za pomocą daty sesji określa, czy faktura kwalifikuje się do uzyskania rabatu gotówkowego, aby mieć pewność, że data rabatu nie upłynęła.
--   **Od dnia** i** Do dnia** — faktury z datą płatności lub rabatu gotówkowego w tym zakresie dat zostaną zaznaczone do opłacenia.
+-   **Od dnia** i**Do dnia** — faktury z datą płatności lub rabatu gotówkowego w tym zakresie dat zostaną zaznaczone do opłacenia.
 -   **Data płatności** — jeśli została zdefiniowana, wszystkie płatności zostaną utworzone tego dnia. Pole **Minimalna data płatności** jest ignorowane.
 -   **Minimalna data płatności** — służy do wprowadzania daty minimalnej płatności. Na przykład pola **Od dnia** i **Do dnia** określają zakres od 1 września do 10 września, a minimalną datą płatności jest 5 września. W takim przypadku wszystkie faktury z datą płatności od 1 do 5 będą miały datę płatności 5 września, ale wszystkie faktury z datą płatności między 5 a 10 września będą miały daty płatności takie, jakie określono na poszczególnych fakturach.
 -   **Limit kwoty** — wprowadź maksymalną kwotę całkowitą dla wszystkich płatności.

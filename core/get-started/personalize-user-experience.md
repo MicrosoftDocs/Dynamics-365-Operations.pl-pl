@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4bb647cfd3f012efbffa93a81462c538a24ac850
-ms.openlocfilehash: 8965c193839002776b3c61036b23b54625c974a4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 734bf8a5cd71d218942e1a57fbb6af8fef4dc998
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -39,10 +40,10 @@ Wszystkie personalizacje dowolnego typu, które użytkownik wprowadzi w programi
 ## <a name="systemwide-options-for-the-current-user"></a>Opcje dla bieżącego użytkownika dotyczące całego systemu
 Na pasku nawigacyjnym znajduje się ikonka koła zębatego. To przycisk menu **Ustawienia**. Po otworzeniu menu **Ustawienia** widać szereg elementów do wyboru. Jeśli wybierzesz **Opcje** zostanie wyświetlona strona **opcji** użytkownika. Na tej stronie są 4 karty opcji: **Wygląd**, **Preferencje**, **Konto**, i **Przepływ pracy**.
 
--   **Wygląd: **umożliwia wybieranie motywu kolorów i domyślnego rozmiaru elementów na stronach.
+-   **Wygląd:**umożliwia wybieranie motywu kolorów i domyślnego rozmiaru elementów na stronach.
 -   **Preferencje:** W tym miejscu można wybrać ustawienia domyślne stosowane przy każdym otwarciu programu Dynamics 365 for Operations, w tym firmę, stronę początkową i domyślny tryb Wyświetl/Edytuj (określający, czy strona jest zablokowana do wyświetlania lub otwarta do edycji w każdym jej wyświetleniu). Dostępne są również opcje językowe, strefy czasowej, daty, godziny i formatu liczb. Ponadto strona ta zawiera szereg preferencji różnych, których dostępność i funkcjonalność różni się w zależności od wersji oprogramowania.
--   **Konto: **umożliwia podanie Identyfikatora użytkownika i innych opcji związanych z kontem.
--   **Przepływ pracy: **tutaj można ustawiać opcje związane z przepływem pracy.
+-   **Konto:**umożliwia podanie Identyfikatora użytkownika i innych opcji związanych z kontem.
+-   **Przepływ pracy:**tutaj można ustawiać opcje związane z przepływem pracy.
 
 ## <a name="implicit-personalizations"></a>Personalizacje pośrednie
 Personalizacje pośrednie to takie, które wykonuje się po prostu poprzez interakcję z określonymi funkcjami sterowania, które zapamiętują bieżący stan i wygląd wykorzystywanych funkcji. 
@@ -106,9 +107,9 @@ Niektóre obszary robocze zawierają kafelki (płytki z liczbami), które mogą 
 Pulpit nawigacyjny jest często pierwszą stroną, którą widzisz po uruchomieniu programu Dynamics 365 for Operations. Możesz spersonalizować pulpit nawigacyjny i zmienić nazwę kafelków nawigacyjnych obszaru roboczego, aby wyświetlić tylko te kafelki, które chcesz widzieć, zmieniać ich nazwy lub układ. Aby spersonalizować pulpit nawigacyjny, wybierz dowolny kafelek i kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe. W menu kontekstowym wybierz **Personalizuj**. Jeśli chcesz ukryć, zmienić nazwę lub pominąć wybrany kafelek, możesz wprowadzić żądane zmiany bezpośrednio w wyświetlonym oknie Właściwości. Jeśli chcesz rozmieścić kafelki, wybierz opcję **Personalizuj ten formularz** w oknie właściwości, aby wyświetlić pasek narzędzi personalizacji. Można następnie użyć narzędzia przenoszenia do uporządkowania kafelków.
 
 ## <a name="administration-of-personalization"></a>Administrowanie personalizacją.
-Istnieje możliwość personalizowania strony i udostępnienia jej innym użytkownikom. W tym celu wystarczy wyeksportować spersonalizowaną stronę i poprosić innych użytkowników, aby do niej przeszli i zaimportowali utworzony przez Ciebie plik personalizacji. Jeśli użytkownik ma uprawnienia administratora, można też zarządzać personalizacją dla innych użytkowników na stronie **ustawienia personalizacji**. Przejdź do strony b. Na stronie **Personalizacja** znajdują się dwie karty: **System** i ** Użytkownicy**. 
+Istnieje możliwość personalizowania strony i udostępnienia jej innym użytkownikom. W tym celu wystarczy wyeksportować spersonalizowaną stronę i poprosić innych użytkowników, aby do niej przeszli i zaimportowali utworzony przez Ciebie plik personalizacji. Jeśli użytkownik ma uprawnienia administratora, można też zarządzać personalizacją dla innych użytkowników na stronie **ustawienia personalizacji**. Przejdź do strony b. Na stronie **Personalizacja** znajdują się dwie karty: **System** i **Użytkownicy**. 
 
-**System:** tutaj można tymczasowo wyłączyć wszelkie opcje personalizacji w systemie. Nie powoduje to usunięcia personalizacji, ale zresetuje wszystkie formularze do stanu domyślnego. Później można ponownie włączyć personalizację i przywrócić wszystkie opcje personalizacji we wszystkich formularzach. Można także usunąć wszystkie ustawienia personalizacji wszystkich użytkowników. Należy pamiętać, że w przypadku usunięcia personalizacji nie można ich później automatycznie ponownie włączyć. Dlatego przed wykonaniem tej czynności, należy pamiętać o wyeksportowaniu wszystkich spersonalizowanych ustawień, tak aby można było je w razie potrzeby zaimportować. 
+**System**: tutaj można tymczasowo wyłączyć wszelkie opcje personalizacji w systemie. Nie powoduje to usunięcia personalizacji, ale zresetuje wszystkie formularze do stanu domyślnego. Później można ponownie włączyć personalizację i przywrócić wszystkie opcje personalizacji we wszystkich formularzach. Można także usunąć wszystkie ustawienia personalizacji wszystkich użytkowników. Należy pamiętać, że w przypadku usunięcia personalizacji nie można ich później automatycznie ponownie włączyć. Dlatego przed wykonaniem tej czynności, należy pamiętać o wyeksportowaniu wszystkich spersonalizowanych ustawień, tak aby można było je w razie potrzeby zaimportować. 
 
 **Użytkownicy:** tutaj można ustawić dla każdego użytkownika możliwość wprowadzania personalizacji bezpośredniej lub pośredniej. Można także określić, czy użytkownik może wykonywać bezpośrednią lub pośrednią personalizację na określonych formularzach. Można też importować, eksportować lub usunąć personalizację każdego z użytkowników. 
 

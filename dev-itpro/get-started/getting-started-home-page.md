@@ -3,7 +3,7 @@ title: "Gdzie zacząć"
 description: "Rozpocznij tutaj, aby się przygotować do pracy w programie Microsoft Dynamics 365 for Operations i poznać jego interfejs użytkownika."
 eauthor: sericks007
 manager: AnnBe
-ms.date: 2015-12-11 15 - 19 - 40
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ o# ms.search.industry:
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 8f75131c6be6ce0f23cce456405d5e211912f19a
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 69995d2f8a463e82e7a26b673737889b4ea17402
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="where-to-start"></a>Gdzie zacząć
+
+[!include[banner](../includes/banner.md)]
+
 
 Rozpocznij tutaj, aby się przygotować do pracy w programie Microsoft Dynamics 365 for Operations i poznać jego interfejs użytkownika.
 
@@ -36,7 +40,7 @@ Poniższe zasoby zawierają omówienie, jak z pomocą partnera przygotować się
 - [Omówienie zasobów Microsoft FastTrack dla usługi Dynamics 365](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
 - [Tworzenie konta na potrzeby subskrypcji](../dev-tools/sign-up-preview-subscription.md) 
 - [Usługa Lifecycle Services (LCS) dla użytkowników programu Microsoft Dynamics 365 for Operations](../lifecycle-services/lcs-works-lcs.md) 
-- [Jak klienci, którzy kupili produkt Microsoft Dynamics 365 for Operations od dostawcy usług chmurowych, mogą uzyskać lokalną wersję programu Dynamics 365 for Operations 2012](../deployment/csp-download-customersource.md)
+- [Jak klienci, którzy kupili produkt Microsoft Dynamics 365 for Operations od dostawcy usług chmurowych, mogą uzyskać lokalną wersję programu Dynamics AX 2012](../deployment/csp-download-customersource.md)
 
 ## <a name="user-interface"></a>Interfejs użytkownika
 Następujące zasoby zawierają informacje o środowisku użytkownika w programie Dynamics 365 for Operations. 
@@ -71,12 +75,12 @@ Rejestrator zadań to narzędzie w programie Microsoft Dynamics 365 for Operatio
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Tworzenie nowych bibliotek szkoleń dla programu Dynamics 365 for Operations w portalu Lifecycle Services za pomocą Rejestratora zdań (łącze zewnętrzne)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)
 
 [Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)](new-updated-task-guides-available-may-2016.md)
 
 [Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)](new-task-guides-november-2016.md)
+
+
 
 

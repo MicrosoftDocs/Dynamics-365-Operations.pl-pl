@@ -3,7 +3,7 @@ title: Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Operati
 description: "W tym temacie opisano sposób instalowania i konfigurowania programu Microsoft Dynamics 365 for Operations — Magazynowanie."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 231c087ddc976aa552fc9cd6c89188f82a0247d1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bbf6df8d43889e7a62bfe28921997c45c8b4c632
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="install-and-configure-microsoft-dynamics-365-for-operations-8211-warehousing"></a>Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Operations &#8211; Magazynowanie
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym temacie opisano sposób instalowania i konfigurowania programu Microsoft Dynamics 365 for Operations — Magazynowanie.
 
@@ -67,7 +71,7 @@ Aby umożliwić aplikacji interakcje z konkretnym serwerem programu Dynamics 365
 ## <a name="create-and-configure-a-user-account-in-dynamics-365-for-operations"></a>Tworzenie i konfigurowanie konta użytkownika w programie Dynamics 365 for Operations
 Aby umożliwić programowi Dynamics 365 for Operations używanie aplikacji Azure AD, należy wykonać następujące czynności konfiguracyjne:
 
-1.  Tworzenie nowego konta użytkownika w usłudze Active Directory Azure dla dzierżawy usługi Dynamics 365 for Operations. Celem tego konta użytkownika jest uzyskanie dostępu do określonej niestandardowej usługi w aplikacji magazynowania, którą udostępnia serwer programu Dynamics 365 for Operations. Po wykonaniu tej czynności będziesz mieć poświadczenia użytkownika WMDP, które składają się z adresu e-mail WMDP i hasła WMDP. Aby dowiedzieć się więcej o podstawowych czynnościach dodawania użytkowników do usług Azure AD and Dynamics 365 for Operations, skorzystaj z tego samouczka: [Subskrybowanie usługi Microsoft Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/sign-up-preview-subscription).
+1.  Tworzenie nowego konta użytkownika w usłudze Active Directory Azure dla dzierżawy usługi Dynamics 365 for Operations. Celem tego konta użytkownika jest uzyskanie dostępu do określonej niestandardowej usługi w aplikacji magazynowania, którą udostępnia serwer programu Dynamics 365 for Operations. Po wykonaniu tej czynności będziesz mieć poświadczenia użytkownika WMDP, które składają się z adresu e-mail WMDP i hasła WMDP. Aby dowiedzieć się więcej o podstawowych czynnościach dodawania użytkowników do usług Azure AD and Dynamics 365 for Operations, skorzystaj z tego samouczka: [Subskrybowanie usługi Microsoft Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription).
 2.  Tworzenie użytkownika programu Dynamics 365 for Operations odpowiadającego poświadczeniom użytkownika aplikacji magazynowania.
     1.  W programie Dynamics 365 for Operations wybierz kolejno opcje **Administrowanie systemem** &gt; **Wspólne** &gt; **Użytkownicy**.
     2.  Utwórz nowego użytkownika.
@@ -98,6 +102,8 @@ Jeśli urządzenie zostanie zgubione lub dostanie się w niepowołane ręce, nal
 6.  Kliknij kartę **Konfigurowanie**, przewiń w dół i upewnij się, że wartość **Identyfikator klienta** aplikacji jest taka sama, jak w kroku 2 w tej sekcji.
 7.  Na pasku poleceń kliknij przycisk **Usuń**.
 8.  W komunikacie potwierdzenia kliknij przycisk **Tak**.
+
+
 
 
 

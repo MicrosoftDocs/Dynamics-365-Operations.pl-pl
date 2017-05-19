@@ -1,6 +1,6 @@
 ---
 title: Nowe przewodniki po zadaniach (luty 2016 r.)
-description: "Ta strona typu wiki wyświetla listę przewodników po zadaniach, które znajdują się bibliotekach narzędzia Microsoft BPM według stanu na koniec lutego 2016 r.  Są tu ujednolicone biblioteki APQC (z lutego 2016 r.) dla programu Microsoft Dynamics 365 for Operations oraz biblioteki ułatwiające rozpoczęcie pracy (z lutego 2016 r.)."
+description: "Ten temat przedstawia listę przewodników po zadaniach, które znajdują się bibliotekach narzędzia Microsoft BPM według stanu na koniec lutego 2016 r.  Są tu ujednolicone biblioteki APQC (z lutego 2016 r.) dla programu Microsoft Dynamics 365 for Operations oraz biblioteki ułatwiające rozpoczęcie pracy (z lutego 2016 r.)."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -16,17 +16,21 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 6462951cba3c289368887a037d4b71187f4523df
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d9e6620c1f4c808646e6f5c3b9f5b607c64c51df
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="new-task-guides-february-2016"></a>Nowe przewodniki po zadaniach (luty 2016 r.)
 
-Ta strona typu wiki wyświetla listę przewodników po zadaniach, które znajdują się bibliotekach narzędzia Microsoft BPM według stanu na koniec lutego 2016 r.  Są tu ujednolicone biblioteki APQC (z lutego 2016 r.) dla programu Microsoft Dynamics 365 for Operations oraz biblioteki ułatwiające rozpoczęcie pracy (z lutego 2016 r.).
+[!include[banner](../includes/banner.md)]
+
+
+Ten temat przedstawia listę przewodników po zadaniach, które znajdują się bibliotekach narzędzia Microsoft BPM według stanu na koniec lutego 2016 r.  Są tu ujednolicone biblioteki APQC (z lutego 2016 r.) dla programu Microsoft Dynamics 365 for Operations oraz biblioteki ułatwiające rozpoczęcie pracy (z lutego 2016 r.).
 
 <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z lutego 2016 r.) dla programu Microsoft Dynamics 365 for Operations
 ---------------------------------------------------------------------------------
@@ -723,5 +727,7 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 [Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)](new-updated-task-guides-available-august-2016.md)
 
 [Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)](new-task-guides-november-2016.md)
+
+
 
 

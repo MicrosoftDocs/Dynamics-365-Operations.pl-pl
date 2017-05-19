@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 19eeee753c15cf2670948ce2c615a112813c16ad
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2112d6dd45c76af3cea75a4e06b06f9577c572ad
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="master-planning-and-multisite-functionality"></a>Planowanie główne a funkcjonalność wielooddziałowości
+
+[!include[banner](../includes/banner.md)]
+
 
 Planowanie główne uwzględnia ustawienia wymiarów magazynowych „oddział” i „magazyn”. 
 
@@ -37,7 +41,7 @@ Jeśli dany wymiar jest wymagany, jego wartość należy wprowadzać we wszystki
 
 Jeśli magazyn nie zostanie ustawiony jako wymagany, może nie zostać rozpoznany przy pierwszym zamówieniu. Aparat planowania, na podstawie zdefiniowanych ustawień towaru, poszczególnych magazynów i szczegółów wiersza zamówienia musi określać, który magazyn ma być użyty.
 
-Poniższe artykuły wiki zawierają opisy działania aparatu planowania podczas określania magazynu, który ma być użyty, w przypadku różnych ustawień.
+Poniższe tematy zawierają opisy działania aparatu planowania podczas określania magazynu, który ma być użyty, w przypadku różnych ustawień.
 
 [Planowanie główny — zapotrzebowania oddziału i magazynu, magazyn wymagany](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
@@ -48,5 +52,7 @@ Poniższe artykuły wiki zawierają opisy działania aparatu planowania podczas 
 [Planowanie główny — zapotrzebowania oddziału i magazynu, magazyn niewymagany](master-plan-site-coverage-warehouse-not-mandatory.md)
 
 [Planowanie główne — jak określa się wersję BOM](master-plan-bom-version-determined.md)
+
+
 
 

@@ -3,7 +3,7 @@ title: "Pakiet zawartości usługi Power BI Analiza wydatków zakupowych"
 description: "W tym temacie opisano, co się znajduje w pakiecie zawartości Analiza wydatków zakupowych dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach używanych do zbudowania pakietu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-12-30 09 - 40 - 51
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 8cb928cbf1316e63a8c7de833587168cd36a455c
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d392b88942f4b7d7365b000df1cd69809060b910
+ms.openlocfilehash: e39b1677038037cd91cfad8d104d0130bc20fb9b
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="purchase-spend-analysis-power-bi-content"></a>Pakiet zawartości usługi Power BI Analiza wydatków zakupowych
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym temacie opisano, co się znajduje w pakiecie zawartości Analiza wydatków zakupowych dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach używanych do zbudowania pakietu.
 
@@ -38,6 +42,7 @@ Pakiet zawartości Analiza wydatków zakupowych dla usługi Microsoft Power BI z
 
 ## <a name="accessing-the-content-pack"></a>Przechodzenie do pakietu zawartości
 Pakiet zawartości Analiza wydatków zakupowych jest publikowany jako składnik implementacyjny w usłudze Microsoft Dynamics Lifecycle Services (LCS) i można go uruchomić z programu Microsoft Dynamics 365 for Operations. Aby uzyskać więcej informacji dotyczących sposobu uzyskiwania dostępu i otwierania raportów usługi Power BI, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md).
+Uwaga: Poprawka KB 4011327 jest wstępnie wymaganym składnikiem tego pakietu zawartości usługi Power BI. Po zalogowaniu się w usłudze Lifecycle Services można uzyskać dostęp do tej poprawki KB tutaj: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="metrics-that-are-included-in-the-content-pack"></a>Wskaźniki dostępne w pakiecie zawartości
 Pakiet zawartości Analiza wydatków zakupowych obejmuje raport zawierający zestaw wskaźników. Te wskaźniki są wizualizowane jako wykresy, kafelki i tabele. Następująca tabela zawiera przegląd wizualizacji dostępnych w pakiecie zawartości.
@@ -129,7 +134,7 @@ Pakiet zawartości Analiza wydatków zakupowych obejmuje raport zawierający zes
 \* Zakupy w tym i ubiegłym roku oraz wzrost według kategorii zaopatrzenia.
 
 ## <a name="data-model-and-entities"></a>Model i jednostki danych
-W raportach w pakiecie zawartości Analiza wydatków zakupowych są wykorzystywane dane programu Dynamics 365 for Operations. Te dane są przedstawiane jako zagregowane miary umieszczane w magazynie jednostek, który jest bazą danych programu Microsoft SQL zoptymalizowaną pod kątem analiz. Aby uzyskać więcej informacji o magazynie jednostek, zobacz wpis na blogu [Integracja usługi Power BI z magazynem jednostek w systemie Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Zagregowane miary w tym pakiecie zawartości są podzbiorem zagregowanych miar, które były dostępne w module Zakupy w systemach Microsoft Dynamics AX 2012 i Microsoft Dynamics 365 for Operations 2012 R3. Aby zagregowane miary modułu można było umieścić w magazynie jednostek, trzeba ustawić te miary jako wdrażalne. Aby uzyskać więcej informacji, zobacz procedurę umieszczania zagregowanych miar w magazynie jednostek we wpisie na blogu [Integracja usługi Power BI z magazynem jednostek w systemie Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Następujące najważniejsze zagregowane miary są dostępne bezpośrednio w jednostce Wiersze faktury i używane jako podstawa w pakiecie zawartości:
+W raportach w pakiecie zawartości Analiza wydatków zakupowych są wykorzystywane dane programu Dynamics 365 for Operations. Te dane są przedstawiane jako zagregowane miary umieszczane w magazynie jednostek, który jest bazą danych programu Microsoft SQL zoptymalizowaną pod kątem analiz. Aby uzyskać więcej informacji o magazynie jednostek, zobacz wpis na blogu [Integracja usługi Power BI z magazynem jednostek w systemie Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Zagregowane miary w tym pakiecie zawartości są podzbiorem zagregowanych miar, które były dostępne w module Zakupy w programach Microsoft Dynamics AX 2012 i Microsoft Dynamics AX 2012 R3. Aby zagregowane miary modułu można było umieścić w magazynie jednostek, trzeba ustawić te miary jako wdrażalne. Aby uzyskać więcej informacji, zobacz procedurę umieszczania zagregowanych miar w magazynie jednostek we wpisie na blogu [Integracja usługi Power BI z magazynem jednostek w systemie Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Następujące najważniejsze zagregowane miary są dostępne bezpośrednio w jednostce Wiersze faktury i używane jako podstawa w pakiecie zawartości:
 
 | Jednostka        | Najważniejsze zagregowane miary | Źródło danych programu Dynamics 365 for Operations | Pole              | opis                           |
 |---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
@@ -162,6 +167,8 @@ Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworze
 -   [Tworzenie organizacyjnych pakietów zawartości](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Modelowanie danych przy użyciu narzędzia Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Dodawanie kafelków narzędzia Power BI do obszarów roboczych](configure-power-bi-integration.md)
+
+
 
 
 

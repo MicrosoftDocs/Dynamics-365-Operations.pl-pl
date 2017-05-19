@@ -3,7 +3,7 @@ title: "Inwentaryzacja ciągła"
 description: "W tym artykule opisano sposób używania inwentaryzacji ciągłej w aplikacji magazynowej dostępnej w module zarządzania magazynem. Artykuł nie ma zastosowania do aplikacji magazynowej zawartej w module zarządzania zapasami."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-18 11 - 46 - 20
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3d02a15387231160f5b8a237aa11008b91ef1223
-ms.openlocfilehash: ffc1523d53732616d77511f39b72efc8f97744eb
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 387d114936567fc471cdcafcb2e93c1704db7ead
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cycle-counting"></a>Inwentaryzacja ciągła
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule opisano sposób używania inwentaryzacji ciągłej w aplikacji magazynowej dostępnej w module zarządzania magazynem. Artykuł nie ma zastosowania do aplikacji magazynowej zawartej w module zarządzania zapasami.
 
@@ -39,7 +43,6 @@ Poniższa ilustracja pokazuje proces inwentaryzacji ciągłej. ![Przebieg proces
 
 ## <a name="cycle-counting-prerequisites"></a>Warunki wstępne inwentaryzacji ciągłej
 W poniższej tabeli przedstawiono warunki wstępne, które muszą być spełnione przez rozpoczęciem inwentaryzacji ciągłej.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -82,7 +85,7 @@ W poniższej tabeli przedstawiono warunki wstępne, które muszą być spełnion
 <li>Grupowanie inwentaryzacji ciągłej</li>
 <li>Inwentaryzacja ciągła punktowa</li>
 </ul>
-Aby uzyskać więcej informacji, zobacz <a href="configure-mobile-devices-warehouse">Konfigurowanie urządzeń przenośnych do pracy w magazynie</a>.</li>
+</li>
 <li>Skonfiguruj menu dla urządzenia przenośnego.</li>
 <li>Utwórz konto użytkownika pracy i przypisz menu urządzenia przenośnego do identyfikatora użytkownika pracy.</li>
 </ul></td>
@@ -133,6 +136,9 @@ Różnice w inwentaryzacji ciągłej występują w następujących scenariuszach
 -   Wartość zliczona różni się od ilości dostępnych zapasów, a nie ustawiono żadnych limitów odchyleń.
 
 Na stronie **Inwentaryzacja cykliczna oczekuje na przegląd** można uzgodnić różnice zliczonej wartości, a następnie zaakceptować zliczoną wartość. Na stronie **Dostępne zapasy według lokalizacji** można zweryfikować zmodyfikowane obliczenie ilości towaru. Zliczona wartość jest odrzucana, jeśli różnicy nie można zatwierdzić.
+
+# <a name="see-also"></a>Informacje dodatkowe
+[Konfigurowanie urządzeń przenośnych do pracy w magazynie](configure-mobile-devices-warehouse.md)
 
 
 

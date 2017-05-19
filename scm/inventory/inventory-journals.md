@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: c64ba9e081ab4224556af86ec855ebf508853454
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e50d12b62e03ae3c3c6a37b5f0be879ad8d802d7
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -67,7 +68,7 @@ Podczas zgłaszania BOM jako gotowych można utworzyć arkusz BOM. Przy użyciu 
 
 ### <a name="item-arrival"></a>Przyjęcie pozycji
 
-Arkusz przyjęcia towaru służy do rejestrowania przyjęć towarów (na przykład z zamówienia zakupu). Arkusz przyjęcia towaru można utworzyć w ramach zarządzania przyjęciem na stronie **Przegląd przyjęć** lub można ręcznie utworzyć wpis dziennika na stronie **przyjęcia towaru **. Jeśli w arkuszu przyjęcia towaru włączysz opcję sprawdzania lokalizacji pobrania, program Dynamics 365 for Operations szuka lokalizacji dla przyjmowanych towarów i jeśli znajdzie miejsce, generuje docelowe lokalizacje dla nadchodzących towarów.
+Arkusz przyjęcia towaru służy do rejestrowania przyjęć towarów (na przykład z zamówienia zakupu). Arkusz przyjęcia towaru można utworzyć w ramach zarządzania przyjęciem na stronie **Przegląd przyjęć** lub można ręcznie utworzyć wpis dziennika na stronie **przyjęcia towaru**. Jeśli w arkuszu przyjęcia towaru włączysz opcję sprawdzania lokalizacji pobrania, program Dynamics 365 for Operations szuka lokalizacji dla przyjmowanych towarów i jeśli znajdzie miejsce, generuje docelowe lokalizacje dla nadchodzących towarów.
 
 ### <a name="production-input"></a>Przyjęcie z produkcji
 
@@ -82,8 +83,8 @@ Arkusze zliczania pozwalają poprawić bieżącą ilość dostępnych zapasów z
 Arkusze zliczania służą do przypisywania numerowanego znacznika do zliczonej partii. Znacznik powinien zawierać numer, numer pozycji i ilość towaru. Aby zagwarantować, że znacznik jest używany tylko jeden raz i, że wszystkie znaczniki są używane, numer każdego towaru powinien mieć niepowtarzalny zestaw znaczników z własną sekwencją numerów. Dla każdego znacznika można ustawić trzy wartości stanu:
 
 -   **Używany** — numer towaru jest zliczany dla znacznika.
--   **Unieważnione ** — numer towaru jest unieważniany dla znacznika.
--   **Brakujący ** — brakuje numeru towaru dla znacznika.
+-   **Unieważnione** — numer towaru jest unieważniany dla znacznika.
+-   **Brakujący** — brakuje numeru towaru dla znacznika.
 
 Po zaksięgowaniu arkusza zliczania znaczników na podstawie jego wierszy jest tworzony nowy arkusz zliczania. Aby uzyskać więcej informacji na temat zliczania znaczników, zobacz [Zliczanie znaczników zapasów](inventory-tag-counting.md).
 

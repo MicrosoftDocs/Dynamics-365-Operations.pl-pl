@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: d585ae0716a4bd9c3531e8639cd7c6b3cab780ac
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c8947f9335b3a2de83ab00bad1043ee14d35f2c8
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -142,7 +143,7 @@ W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może p
 | Dostawca wysyła odpowiedź **Zaakceptowano ze zmianami**.                  | Stan to nadal **W trakcie analizy zewnętrznej**.                                                                                                                  |
 | Wprowadzasz kilka zmian, o które prosił dostawca.                  | Stan zostaje zmieniony na **Zatwierdzone**.                                                                                                                        |
 | Wysyłasz nową wersję zamówienia zakupu do dostawcy.                        | Nowa wersja jest rejestrowana w interfejsie współpracy z dostawcami, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**.                                      |
-| Dostawca akceptuje nową wersję zamówienia zakupu.                            | Stanem jest nadal **W trakcie analizy zewnętrznej **, chyba że dostawca jest skonfigurowany do automatycznego ustawiania zamówienia zakupu do stanu **Potwierdzone** w momencie akceptacji. |
+| Dostawca akceptuje nową wersję zamówienia zakupu.                            | Stanem jest nadal **W trakcie analizy zewnętrznej**, chyba że dostawca jest skonfigurowany do automatycznego ustawiania zamówienia zakupu do stanu **Potwierdzone** w momencie akceptacji. |
 
 Dostawcy nie muszą potwierdzać zamówień zakupu w interfejsie współpracy z dostawcami. Zamiast tego mogą również wysłać wiadomość e-mail lub zawiadomić o przyjęciu zamówienia zakupu przez inne kanały komunikacji. Wtedy można potwierdzić zamówienie ręcznie w programie Dynamics 365 for Operations. W takim przypadku zobaczysz ostrzeżenie informujące, że trwa potwierdzanie zamówienia, nawet jeśli nie ma odpowiedzi od dostawcy. Zamówienie zakupu pojawi się wtedy w historii potwierdzeń jako otwarte zamówienie potwierdzone, które nie ma żadnych odpowiedzi. Dostawca nie będzie już mógł potwierdzić ani odrzucić zamówienia zakupu.  
 

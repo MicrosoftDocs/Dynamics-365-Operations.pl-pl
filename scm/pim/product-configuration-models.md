@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: yuyus
 ms.dyn365.intro: Feb-16
 ms.dyn365.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 15af90d007d77a490db7cb540ef96b4104dbba7e
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 35c3d59abe8c2cb4d2db9fa1cf581f022dbc8c39
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="product-configuration-models-overview"></a>Omówienie modeli konfiguracji produktu
+
+[!include[banner](../includes/banner.md)]
+
 
 W tym artykule podano definicje terminów i pojęć, które są istotne dla modeli konfiguracji produktu. Modele konfiguracji produktu pozwalają zbudować standardową strukturę produktu, której potem można używać do konfigurowania wielu wariantów tego samego produktu.
 
@@ -75,7 +79,7 @@ Jeśli typem atrybutu jest <strong>Wartość logiczna</strong>, <strong>Liczba c
 <td>Ograniczenia</td>
 <td>Ograniczenia opisują ograniczenia dla konfiguracji modelu produktu. Ograniczenia mają zagwarantować, że będą wybrane tylko prawidłowe wartości, gdy produkt jest konfigurowany. Ograniczenia mogą być ograniczeniami wyrażeniowymi lub powiązanymi tabelami:
 <ul>
-<li>Ograniczenie wyrażenia może służyć tylko do składnika, który jest powiązany. Ograniczenia wyrażenia dla składnika mogą odwoływać się do atrybutów składników podrzędnych dla składników. Narzędzie do rozwiązywania problemów z konfiguracją produktu jest używane w celu rozwiązania ograniczeń, a użytkownik musi używać jego składni podczas zapisywania ograniczeń. Więcej informacji można uzyskać w artykule wiki o ograniczeniach wyrażeń i tabel.</li>
+<li>Ograniczenie wyrażenia może służyć tylko do składnika, który jest powiązany. Ograniczenia wyrażenia dla składnika mogą odwoływać się do atrybutów składników podrzędnych dla składników. Narzędzie do rozwiązywania problemów z konfiguracją produktu jest używane w celu rozwiązania ograniczeń, a użytkownik musi używać jego składni podczas zapisywania ograniczeń. Więcej informacji można uzyskać w temacie o ograniczeniach wyrażeń i tabel.</li>
 <li>Przed zastosowaniem ograniczeń tabel do składnika w modelu konfiguracji produktu takie ograniczenia muszą zostać zdefiniowane. Ograniczenia tabel mogą być definiowane albo przez użytkownika, albo przez system. Powiązane tabele zdefiniowane przez użytkownika to typ macierzy, który może być używany do opisywania zestawu kombinacji dla wartości atrybutów, które są zdefiniowane przez typy atrybutu. Na przykład w przypadku produkcji głośników, macierz dla powiązanych tabel zdefiniowanych przez użytkownika może mieć kolumny dla wykończenia i maskownice głośnika.</li>
 </ul>
 <strong>Przykład</strong> Głośniki są dostępne cztery wykończeniach: Czarny, Dąb, Rosewood i Biały. Głośniki mogą mieć jeden z trzech rodzajów maskownicy: Czarny, Metal lub Biały. Białe wykończenie jest dostępne dla wszystkich maskownic, ale w przypadku innych wykończeń obowiązują ograniczenia. W poniższej tabeli przedstawiono przykład informacji wyświetlanych na karcie <strong>Dozwolone kombinacje</strong> na stronie <strong>Edytuj ograniczenie tabeli</strong>.
@@ -147,6 +151,8 @@ Można wyświetlić, czy zwolniony produkt może być używany jako składnik lu
 </tr>
 </tbody>
 </table>
+
+
 
 
 

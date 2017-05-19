@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: c4ebedab6d7de62479d3bc80583afadbe780aac4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8a12f79c9b2b02198c268a293b357ef805e2f4b9
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -54,7 +55,7 @@ Karta marszrut zawiera przegląd informacji z konfiguracji marszruty i operacji 
 W zadaniu marszruty są wymienione wraz ze szczegółami wszystkie zadania w ramach operacji, a także jest podany czas konfiguracji, procesu, oczekiwania i czas transportu. Na przykład operacja malowania może się składać z kilku pojedynczych zadań – przygotowania, wykonywania pracy (czyli malowania) i czas oczekiwania (na wyschnięcie pomalowanej powierzchni).
 
 ## <a name="job-cards"></a>Karty zadania
-W karcie zadania są wymienione numery poszczególnych zadań w ramach określonej operacji. Jedno zadanie pojawia się na każdej stronie. Zadania znajdujące się na karcie zadania, a także szacunkowe czasy tych zadań są podawane na podstawie informacji konfiguracyjnych marszruty i operacji. Za pomocą karty zadań można otworzyć stronę **Wiersze arkusza produkcji**, **karta zadań **. Osoby, które pracują w gniazdach produkcyjnych, mogą dostarczać informacji zwrotnych dotyczących procesu produkcji. W tych polach można wprowadzać dane statystyczne zużycia oraz informacje o niewłaściwych ilościach.
+W karcie zadania są wymienione numery poszczególnych zadań w ramach określonej operacji. Jedno zadanie pojawia się na każdej stronie. Zadania znajdujące się na karcie zadania, a także szacunkowe czasy tych zadań są podawane na podstawie informacji konfiguracyjnych marszruty i operacji. Za pomocą karty zadań można otworzyć stronę **Wiersze arkusza produkcji**, **karta zadań**. Osoby, które pracują w gniazdach produkcyjnych, mogą dostarczać informacji zwrotnych dotyczących procesu produkcji. W tych polach można wprowadzać dane statystyczne zużycia oraz informacje o niewłaściwych ilościach.
 
 ## <a name="warehouse-work-for-raw-material-picking"></a>Praca magazynu dla pobrania surowca.
 Praca pobrania surowca jest generowana podczas zwalniania. Praca jest generowana tylko dla ilości materiałów fizycznie zarezerwowanej dla zlecenia produkcyjnego przed zwolnieniem zlecenia. Do wygenerowania pracy magazynu dla pobrania surowca konieczna jest następująca konfiguracja:

@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 3c608f13c93446329702f07ef7e8bb08a29d87b9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8cb9428ff6be93f9a395ec3085ef1fda05847a8a
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -40,7 +41,7 @@ Lean manufacturing oferuje narzędzia służące do modelowania produkcji oszcz�
 -   Monitorowanie i obsługa zadań w systemie Kanban.
 
 Architektura produkcji oszczędnej (lean manufacturing) w systemie Microsoft Dynamics AX 7 składa się z przepływów produkcji, działań i reguł systemu Kanban. Te struktury są pełni zintegrowane z procesami systemu Microsoft Dynamics AX 7. W środowisku produkcji oszczędnej (lean manufacturing) trybu mieszanego pozwala to łączyć ze sobą różne strategie dostaw, produkcji i pozyskiwania materiałów. Te strategie obejmują zamówienia produkcyjne, zamówienia partii w przemyśle procesowym, zamówienia zakupu i zamówienia przeniesienia.
-| **Ważne **                                                                                                                                                                                                                                                                |
+| **Ważne**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Program Microsoft Dynamics AX 7 służy do obsługi implementacji produkcji oszczędnej (lean manufacturing) z kartami Kanban. Powodzenie wprowadzania w życie zasad produkcji oszczędnej (lean manufacturing) zależy jednak od wewnętrznych procesów biznesowych, jakich używasz, oraz rzeczywistych warunki produkcji i środowiska. |
 

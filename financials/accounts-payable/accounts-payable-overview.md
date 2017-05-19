@@ -1,6 +1,6 @@
 ---
 title: "Konfigurowanie modułu Rozrachunki z dostawcami"
-description: "Ten artykuł zawiera opis stron, które służą do konfigurowania podstawowych i opcjonalnych funkcji modułu Rozrachunki z dostawcami w systemie Microsoft Dynamics AX. Opisano również kroki konfiguracji, które należy wykonać przed rozpoczęciem konfigurowania modułu Rozrachunki z dostawcami."
+description: "Ten artykuł zawiera opis stron, które służą do konfigurowania podstawowych i opcjonalnych funkcji modułu Rozrachunki z dostawcami w programie Microsoft Dynamics 365 for Operations. Opisano również kroki konfiguracji, które należy wykonać przed rozpoczęciem konfigurowania modułu Rozrachunki z dostawcami."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 926ee087a0e0c4743f29315b1d82c7d37e95be28
-ms.openlocfilehash: b06623a0eb754654f41c50b92af67dc94a069663
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8581401bfefe4ddf29f32691b5678317e392db96
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera opis stron, które służą do konfigurowania podstawowych i opcjonalnych funkcji modułu Rozrachunki z dostawcami w systemie Microsoft Dynamics AX. Opisano również kroki konfiguracji, które należy wykonać przed rozpoczęciem konfigurowania modułu Rozrachunki z dostawcami.
+Ten artykuł zawiera opis stron, które służą do konfigurowania podstawowych i opcjonalnych funkcji modułu Rozrachunki z dostawcami w programie Microsoft Dynamics 365 for Operations. Opisano również kroki konfiguracji, które należy wykonać przed rozpoczęciem konfigurowania modułu Rozrachunki z dostawcami.
 
 <a name="prerequisites-for-accounts-payable-setup"></a>Wymagania wstępne do konfiguracji modułu Rozrachunki z dostawcami
 ----------------------------------------
@@ -145,6 +146,7 @@ Dodatkowe strony ustawień są zorganizowane według funkcji.
 **Zarządzanie gotówką i bankami**
 
 -   Strona Kody celów płatności umożliwia ustawieni kodu celu banku centralnego.
+
 
 
 

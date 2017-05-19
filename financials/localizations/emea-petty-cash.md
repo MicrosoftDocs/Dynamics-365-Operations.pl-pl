@@ -17,10 +17,11 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 6bb98cc72c2ec0c1551412dd39d5bea3ce10e2cd
-ms.openlocfilehash: e843abff91f74ff8c2c577f499fa829821fc56ee
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a1d7adbbdb1f7f8cb715effdb2a2861200cc423c
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---

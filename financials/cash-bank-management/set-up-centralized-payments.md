@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 44d51807cd6bb64ae2c4bef58d8a445417ffa3a9
-ms.openlocfilehash: 815282422a6d7b8eef7d0628cf10b715449e1d1d
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 474453e7f33526bc7bebc60ef68f560d489a1841
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -52,10 +53,10 @@ Jeśli płacisz dostawcy z jednej firmy i chcesz wybrać faktury dla tego dostaw
 Gdy w jednej firmie tworzysz płatność, która skutkuje rozliczeniem faktur w innych firmach, wówczas w każdej firmie musi być używany ten sam identyfikator profilu księgowania. Aby zapewnić poprawne utworzenie płatności, w każdej firmie obsługującej fakturowanie skonfiguruj profil księgowania odpowiadający profilom księgowania używanym w firmie obsługującej płatności. Przełącz do pierwszej firmy obsługującej fakturę, a następnie na stronie **Profile księgowania dostawców** można utworzyć nowy profil księgowania lub edytować istniejący. Opcje wybrane w profilu księgowania firmy obsługującej fakturowanie nie muszą się zgadzać z konfiguracją profilu księgowania w firmie obsługującej płatności.
 
 ## <a name="set-up-methods-of-payment-for-centralized-payments"></a>Konfigurowanie metod płatności na potrzeby płatności scentralizowanych
-Gdy w jednej firmie tworzysz płatność, która skutkuje rozliczeniem faktur w innych firmach, wówczas w każdej firmie musi być używany ten sam identyfikator metody płatności. Aby zapewnić poprawne utworzenie płatności, w każdej firmie obsługującej fakturowanie skonfiguruj metodę płatności odpowiadającą metodom płatności używanym w firmie obsługującej płatności. Przełącz do pierwszej firmy obsługującej fakturę, a następnie na stronie **Metody płatności ** można utworzyć nową metodę płatności lub edytować istniejącą metodę płatności. Opcje wybrane w przypadku metody płatności firmy obsługującej fakturowanie nie muszą się zgadzać z konfiguracją metody płatności w firmie obsługującej płatności.
+Gdy w jednej firmie tworzysz płatność, która skutkuje rozliczeniem faktur w innych firmach, wówczas w każdej firmie musi być używany ten sam identyfikator metody płatności. Aby zapewnić poprawne utworzenie płatności, w każdej firmie obsługującej fakturowanie skonfiguruj metodę płatności odpowiadającą metodom płatności używanym w firmie obsługującej płatności. Przełącz do pierwszej firmy obsługującej fakturę, a następnie na stronie **Metody płatności** można utworzyć nową metodę płatności lub edytować istniejącą metodę płatności. Opcje wybrane w przypadku metody płatności firmy obsługującej fakturowanie nie muszą się zgadzać z konfiguracją metody płatności w firmie obsługującej płatności.
 
 ## <a name="set-up-default-descriptions"></a>Ustawianie opisów domyślnych
-Można zdefiniować domyślne opisy dla załączników rozliczeń międzyfirmowych. Domyślny opis jest dołączany do transakcji „należne do” i „należne od” w trakcie procesu rozliczeń międzyfirmowych. Na stronie **Opisy domyślne** można tworzyć nowe opisy dla **rozliczenia z odbiorcą międzyfirmowym **i **rozliczenia z dostawcą międzyfirmowym** poprzez wybranie języka i wprowadzenie tekstu.
+Można zdefiniować domyślne opisy dla załączników rozliczeń międzyfirmowych. Domyślny opis jest dołączany do transakcji „należne do” i „należne od” w trakcie procesu rozliczeń międzyfirmowych. Na stronie **Opisy domyślne** można tworzyć nowe opisy dla **rozliczenia z odbiorcą międzyfirmowym**i **rozliczenia z dostawcą międzyfirmowym** poprzez wybranie języka i wprowadzenie tekstu.
 
 
 
