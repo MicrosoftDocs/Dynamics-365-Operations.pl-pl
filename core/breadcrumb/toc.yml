@@ -1,23 +1,23 @@
-- name: "Dynamics 365"
+- name: Dynamics 365
   tocHref: /dynamics365/
   topicHref: /dynamics365
   items:
-  - name: "Operations"
+  - name: Operations
     tocHref: /dynamics365/operations/
     topicHref: /dynamics365/operations/index
     items:
-    - name: "Dla programistów i administratorów"
+    - name: Dla programistów i administratorów
       tocHref: /dynamics365/operations/dev-itpro/
       topicHref: /dynamics365/operations/dev-itpro/index
-    - name: "Finanse"
+    - name: Finanse
       tocHref: /dynamics365/operations/financials/
       topicHref: /dynamics365/operations/financials/index
-    - name: "Zasoby ludzkie"
+    - name: Zasoby ludzkie
       tocHref: /dynamics365/operations/human-resources/
       topicHref: /dynamics365/operations/human-resources/index
-    - name: "Handel detaliczny"
+    - name: Handel detaliczny
       tocHref: /dynamics365/operations/retail/
       topicHref: /dynamics365/operations/retail/index
-    - name: "Łańcuch dostaw"
+    - name: Łańcuch dostaw 
       tocHref: /dynamics365/operations/supply-chain/
       topicHref: /dynamics365/operations/supply-chain/index
