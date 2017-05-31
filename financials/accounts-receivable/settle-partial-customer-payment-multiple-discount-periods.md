@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 31c3354590935b40ecadd3a2fb380f4f103eb2b7
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 08f87cbb37f8b52ec5554c8ab940d96a77c53d20
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -52,7 +52,7 @@ Arnie może wyświetlić tę transakcję na stronie **Transakcje dostawcy**.
 | FTI-10030 | Faktura          | 6/25/2015 | 10030   | 1000,00                             |                                       | 1000,00 | USD      |
 
 ## <a name="partial-payment-before-the-cash-discount-date"></a>Częściowe rozliczenie przed zakończeniem pierwszego okresu rabatu gotówkowego
-28 czerwca 4031 Odbiorca 4031 dokonuje częściowego rozliczenia w wysokości 294,00. Ponieważ 28 czerwca mieści się w pierwszym okresie rabatu gotówkowego, odbiorca podejmuje rabat o wartości 6,00. Na stronie **Rozliczenia transakcji** wartość **Kwota rabatu gotówkowego** wynosi 20,00 a wartość **Kwota rabatu gotówkowego do pobrania** wynosi 6,00.
+28 czerwca Odbiorca 4031 dokonuje częściowego rozliczenia w wysokości 294,00. Ponieważ 28 czerwca mieści się w pierwszym okresie rabatu gotówkowego, odbiorca podejmuje rabat o wartości 6,00. Na stronie **Rozliczenia transakcji** wartość **Kwota rabatu gotówkowego** wynosi 20,00 a wartość **Kwota rabatu gotówkowego do pobrania** wynosi 6,00.
 
 | Zaznacz     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|

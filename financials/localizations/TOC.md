@@ -67,6 +67,7 @@
 ### [Wyciąg bankowy CODA](emea-bel-coda-bank-statement-import.md)
 ### [Deklaracja podatkowa INTERVAT](emea-bel-intervat-tax-declaration.md)
 ### [Ustawienia raportu PRODCOM](emea-bel-prodcom-report.md)
+### [Raporty uzgodnienia](emea-bel-reconciliation-reports.md)
 
 ## Czechy
 ### [Rabat gotówkowy na fakturze korygującej](emea-cze-credit-note-cash-discount.md)
@@ -74,6 +75,7 @@
 ### [Zawieszenie amortyzacji](emea-cze-depreciation-suspension-holidays.md)
 ### [Amortyzacja środków trwałych](emea-cze-fixed-assets-depreciation.md)
 ### [Amortyzacja półroczna](emea-cze-half-depreciation-fixed-asset-disposal.md)
+### [Raportowanie podatku ](emea-cze-intra-community-vat-transactions.md)
 ### [Deklaracja VAT](emea-cze-vat-statement-details.md)
 ## Estonia
 ### [Deklaracja VAT](emea-est-vat-statement-details.md)

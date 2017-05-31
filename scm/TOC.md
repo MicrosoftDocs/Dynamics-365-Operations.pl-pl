@@ -4,6 +4,7 @@
 ## Tworzenie prognozy popytu
 ### [Omówienie prognozy popytu](master-planning/introduction-demand-forecasting.md)
 ### [Konfigurowanie prognozy popytu](master-planning/demand-forecasting-setup.md)
+### [Importowanie danych historycznych na potrzeby prognozowania popytu](master-planning/import-historical-data.md)
 ### [Generowanie bazowej prognozy statystycznej](master-planning/generate-statistical-baseline-forecast.md)
 ### [Tworzenie ręcznej korekty prognozy bazowej](master-planning/manual-adjustments-baseline-forecast.md)
 ### [Autoryzowanie skorygowanej prognozy](master-planning/authorize-adjusted-forecast.md)

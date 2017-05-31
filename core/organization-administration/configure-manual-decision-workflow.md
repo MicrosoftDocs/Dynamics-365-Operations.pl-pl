@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: ac4f520d17c721e249737b4ae95c10685f914497
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ac86ffa794b5fd92ca9aba24537fbc05057fe824
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -195,13 +195,11 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisana decyzja ręc
     <td>Użytkownicy w określonej hierarchii organizacyjnej</td>
     <td><ol>
     <li>Gdy wybierzesz wartość w polu <strong>Hierarchia</strong>, na karcie <strong>Wybór hierarchii</strong> na liście <strong>Typ hierarchii</strong> wybierz typ hierarchii, do której ma zostać przypisana decyzja.</li>
-    <li>System musi pobrać zakres nazwisk użytkowników z hierarchii. Te nazwy reprezentują użytkowników, którym można przypisać decyzję. Wykonaj poniższe kroki, aby określić początek i koniec zakresu nazw użytkowników pobieranych przez system:
-    <ol>
+    <li>System musi pobrać zakres nazwisk użytkowników z hierarchii. Te nazwy reprezentują użytkowników, którym można przypisać decyzję. Wykonaj poniższe kroki, aby określić początek i koniec zakresu nazw użytkowników pobieranych przez system: <ol>
     <li>Aby określić początek zakresu, zaznacz osobę na liście <strong>Rozpocznij od</strong>.</li>
     <li>Aby określić koniec zakresu, kliknij opcję <strong>Dodaj warunek</strong>. Następnie wprowadź warunek określający miejsce w hierarchii, w którym system ma zakończyć pobieranie nazwisk.</li>
     </ol></li>
-    <li>Na karcie <strong>Opcje hierarchii</strong> określ, którym użytkownikom w zakresie należy przypisać decyzję:
-    <ul>
+    <li>Na karcie <strong>Opcje hierarchii</strong> określ, którym użytkownikom w zakresie należy przypisać decyzję: <ul>
     <li><strong>Przypisz do wszystkich pobranych użytkowników</strong> — decyzja zostanie przypisana do wszystkich użytkowników w zakresie.</li>
     <li><strong>Przypisz tylko do ostatnio pobranego użytkownika</strong> — decyzja zostanie przypisana tylko do ostatniego użytkownika w zakresie.</li>
     <li><strong>Nie uwzględniaj użytkowników spełniających następujący warunek</strong> — decyzja nie zostanie przypisana żadnym użytkownikom w zakresie, którzy spełniają określony warunek. Kliknij przycisk <strong>Dodaj warunek</strong>, aby określić warunek.</li>
@@ -228,13 +226,11 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisana decyzja ręc
     <td>Kolejka elementów roboczych</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Kolejka</strong> kliknij kartę <strong>Na podstawie kolejki</strong>.</li>
-    <li>Aby przypisać decyzję do określonej kolejki, wykonaj następujące czynności:
-    <ol>
+    <li>Aby przypisać decyzję do określonej kolejki, wykonaj następujące czynności: <ol>
     <li>Na liście <strong>Typ kolejki</strong> zaznacz pozycję <strong>Kolejki elementów roboczych</strong>.</li>
     <li>Na liście <strong>Nazwa kolejki</strong> zaznacz kolejkę.</li>
     </ol></li>
-    <li>Jeśli określony warunek ma decydować o kolejce, do której zostanie przypisana decyzja, wykonaj następujące czynności:
-    <ol>
+    <li>Jeśli określony warunek ma decydować o kolejce, do której zostanie przypisana decyzja, wykonaj następujące czynności: <ol>
     <li>Na liście <strong>Typ kolejki</strong> zaznacz pozycję <strong>Warunkowe kolejki elementów roboczych</strong>.</li>
     <li>Na liście <strong>Nazwa kolejki</strong> zaznacz pozycję <strong>Kolejka warunkowa</strong>.</li>
     </ol></li>
@@ -285,13 +281,11 @@ Jeśli użytkownik nie podejmie decyzji w wyznaczonym czasie, staje się ona zal
     <td>Użytkownicy w określonej hierarchii organizacyjnej</td>
     <td><ol>
     <li>Gdy wybierzesz wartość w polu <strong>Hierarchia</strong>, na karcie <strong>Wybór hierarchii</strong> na liście <strong>Typ hierarchii</strong> wybierz typ hierarchii, do której ma zostać eskalowana decyzja.</li>
-    <li>System musi pobrać zakres nazwisk użytkowników z hierarchii. Te nazwy reprezentują użytkowników, do których można eskalować decyzję. Wykonaj poniższe kroki, aby określić początek i koniec zakresu nazw użytkowników pobieranych przez system:
-    <ol>
+    <li>System musi pobrać zakres nazwisk użytkowników z hierarchii. Te nazwy reprezentują użytkowników, do których można eskalować decyzję. Wykonaj poniższe kroki, aby określić początek i koniec zakresu nazw użytkowników pobieranych przez system: <ol>
     <li>Aby określić początek zakresu, zaznacz osobę na liście <strong>Rozpocznij od</strong>.</li>
     <li>Aby określić koniec zakresu, kliknij opcję <strong>Dodaj warunek</strong>. Następnie wprowadź warunek określający miejsce w hierarchii, w którym system ma zakończyć pobieranie nazwisk.</li>
     </ol></li>
-    <li>Na karcie <strong>Opcje hierarchii</strong> określ, do których użytkowników w zakresie należy eskalować decyzję:
-    <ul>
+    <li>Na karcie <strong>Opcje hierarchii</strong> określ, do których użytkowników w zakresie należy eskalować decyzję: <ul>
     <li><strong>Przypisz do wszystkich pobranych użytkowników</strong> — decyzja zostanie eskalowana do wszystkich użytkowników w zakresie.</li>
     <li><strong>Przypisz tylko do ostatnio pobranego użytkownika</strong> — decyzja zostanie eskalowana tylko do ostatniego użytkownika w zakresie.</li>
     <li><strong>Nie uwzględniaj użytkowników spełniających następujący warunek:</strong> — decyzja nie będzie eskalowana do żadnych użytkowników w zakresie, którzy spełniają określony warunek. Kliknij przycisk <strong>Dodaj warunek</strong>, aby określić warunek.</li>

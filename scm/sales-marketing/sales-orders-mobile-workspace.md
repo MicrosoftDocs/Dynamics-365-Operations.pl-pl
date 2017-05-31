@@ -3,10 +3,10 @@ title: "Mobilny obszar roboczy Zamówienia sprzedaży"
 description: "W tym temacie omówiono mobilny obszar roboczy Zamówienia sprzedaży, który jest dostępny w aplikacji komórkowej Microsoft Dynamics 365 for Operations. Ten obszar roboczy pomaga być na bieżąco z zamówieniami sprzedaży w dowolnym miejscu i czasie."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 119b80e5d8067ffbf75d8b067f4803558c2c94b0
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 11898146a13756a6bb22a769e37e8773484e0d04
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -37,7 +37,9 @@ W tym temacie omówiono mobilny obszar roboczy Zamówienia sprzedaży, który je
 <a name="overview-of-the-sales-orders-mobile-workspace"></a>Omówienie komórkowego obszaru roboczego Zamówienia sprzedaży
 ---------------------------------------------
 
-Komórkowy obszar roboczy **Zamówienia sprzedaży** uzyskuje dostęp do programu Microsoft Dynamics 365 for Operations i umożliwia przeglądanie szczegółowych informacji o poszczególnych zamówieniach sprzedaży. Informacje te obejmują stan zamówienia, informacje kontaktowe odbiorcy oraz informacje kontaktowe osoby przyjmującej zamówienie. Mobilny obszar roboczy **Zamówienia sprzedaży** zapewnia natychmiastowy podgląd zamówień sprzedaży. Można wyświetlić wszystkie zamówienia sprzedaży, zamówienia dla poszczególnych odbiorców albo informacje o określonym zamówieniu sprzedaży. Mobilny obszar roboczy oferuje dwa widoki pomagające dogłębnie analizować zamówienia sprzedaży.
+Komórkowy obszar roboczy **Zamówienia sprzedaży** uzyskuje dostęp do programu Microsoft Dynamics 365 for Operations i umożliwia przeglądanie szczegółowych informacji o poszczególnych zamówieniach sprzedaży. Informacje te obejmują stan zamówienia, informacje kontaktowe odbiorcy oraz informacje kontaktowe osoby przyjmującej zamówienie. Mobilny obszar roboczy **Zamówienia sprzedaży** zapewnia natychmiastowy podgląd zamówień sprzedaży. Można wyświetlić wszystkie zamówienia sprzedaży, zamówienia dla poszczególnych odbiorców albo informacje o określonym zamówieniu sprzedaży. 
+
+Mobilny obszar roboczy oferuje dwa widoki pomagające dogłębnie analizować zamówienia sprzedaży.
 
 ### <a name="view-all-sales-orders"></a>Wyświetl wszystkie zamówienia sprzedaży
 
@@ -50,6 +52,7 @@ Ten widok wyświetla listę wszystkich zamówień sprzedaży.
     -   Wyszukaj wg stanu
     -   Wyszukaj wg stanu zwolnienia
     -   Wyszukaj wg daty i godziny utworzenia
+    
 -   Po wybraniu zamówień sprzedaży można wyświetlić ich szczegółowe informacje. W szczególności można wyświetlić następujące informacje:
     -   Nazwa i informacje adresowe odbiorcy
     -   Różne daty dotyczące zamówienia sprzedaży, takie jak żądana data wysyłki i potwierdzona data wysyłki
@@ -65,6 +68,7 @@ Ten widok pokazuje zamówienia sprzedaży z podziałem na odbiorców.
 -   Użyj jednego z następujących filtrów, aby wyświetlić zamówienia wybranego odbiorcy:
     -   Wyszukaj wg nazwy
     -   Wyszukaj wg konta
+
 -   Po wybraniu odbiorcy można wyświetlać następujące informacje:
     -   Nazwa i grupa odbiorcy
     -   Informacje kontaktowe odbiorcy
@@ -96,7 +100,7 @@ Aby można było używać mobilnego obszaru roboczego **Zamówienia sprzedaży**
 <tr class="odd">
 <td>Należy zainstalować program Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą.</td>
 <td>Administrator systemu</td>
-<td>Jeśli w organizacji jeszcze nie wdrożono programu Dynamics 365 for Operations, administrator systemu powinien przeczytać temat <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Wdrażanie środowiska demonstracyjnego programu Microsoft Dynamics 365 for Operations</a>.</td>
+<td>Jeśli w organizacji jeszcze nie wdrożono programu Dynamics 365 for Operations, administrator systemu powinien przeczytać temat <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment/">Wdrażanie środowiska demonstracyjnego programu Microsoft Dynamics 365 for Operations</a>.</td>
 </tr>
 <tr class="even">
 <td>Należy zainstalować poprawkę KB 4013633.</td>
@@ -104,9 +108,9 @@ Aby można było używać mobilnego obszaru roboczego **Zamówienia sprzedaży**
 <td>KB 4013633 (aktualizacja platformy języka X++ lub poprawka metadanych) zawiera cztery komórkowe obszary robocze dla zarządzania łańcuchem dostaw. W celu zainstalowania poprawki KB 4013633 administrator systemu musi wykonać następującą procedurę:
 <ol>
 <li>Pobierz poprawkę KB 4013633 z usługi Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Zainstaluj poprawkę metadanych</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Utwórz wdrażalny pakiet</a> zawierający model <strong>SCMMobile</strong>, a następnie przekaż ten wdrażalny pakiet do usługi LCS.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Zastosuj wdrażalny pakiet</a> do systemu Dynamics 365 for Operations.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Zainstaluj poprawkę metadanych</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Utwórz wdrażalny pakiet</a> zawierający model <strong>SCMMobile</strong>, a następnie przekaż ten wdrażalny pakiet do usługi LCS.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Zastosuj wdrażalny pakiet</a> do systemu Dynamics 365 for Operations.</li>
 </ol></td>
 </tr>
 <tr class="odd">

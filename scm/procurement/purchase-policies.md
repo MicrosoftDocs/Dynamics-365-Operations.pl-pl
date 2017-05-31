@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 3df3144b08c54441699d9c0b48fe507857877586
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5208dc64d86345de4e53c5e293fbc861351a63ef
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -59,6 +59,7 @@ Gdy pracownik w firmie 2222 tworzy zapotrzebowanie na zakup, reguły pochodzą z
 
 W poprzednim przykładzie wszystkie reguły zakupów były zdefiniowane w jednej hierarchii organizacyjnej, tj. Firma. Jednak w złożonej organizacji może być konieczność zdefiniowania zasad dla wielu hierarchii organizacyjnych.  
 
+
 Firma Contoso jest dużą firmą, która wymaga złożonych reguł zakupów do obsługi procesu zapotrzebowania. Firma Contoso zdefiniowała reguły z dwoma różnymi hierarchiami organizacyjnymi: Oddział i Globalna kontrola zakupów.  
 
 Zasada 123 została zdefiniowana dla hierarchii organizacyjnej Dział dla firmy Sales UK — działu sprzedaży. W zasadzie 123 reguła kontroli zapotrzebowania określa, że ograniczenia muszą zostać zastosowane dla minimalnych ilości zamówienia. W tej regule wybrana jest opcja **Wymuszanie ograniczeń dotyczących minimalnej ilości zamówienia**.  
@@ -93,6 +94,9 @@ Reguła kategorii określa, jak użytkownicy mogą wybrać dostawców dla każde
 ### <a name="re-approval-rule-for-purchase-orders"></a>Reguła ponownego zatwierdzania zamówień zakupu
 
 Reguła ponownego zatwierdzania jest opcjonalna i określa kryteria do wymagania ponownego zatwierdzenia w przypadku wprowadzenia zmian w zamówieniu zakupu. Wybrane pola muszą zostać ocenione w przepływie pracy zamówienia zakupu, jeśli został w nim ustawiony warunek „Wymagaj ponownego zatwierdzenia zamówienia zakupu”.
+
+> [!NOTE]
+> W przypadku zmiany zatwierdzonego zamówienie zakupu z włączonym zarządzaniem zmianami zasady podziału księgowań zawsze zostaną zresetowane. Należy więc pamiętać, że aby uniknąć konieczności ponownego zatwierdzenia zamówienia zakupu po zmianie niektórych pól, zmienione pole zasad podziału księgowań nie powinno być uwzględnione jako pole wybrane do ponownego zatwierdzania. 
 
 ### <a name="purchase-requisition-rfq-rule"></a>Reguła zapytania ofertowego do zapotrzebowania na zakup
 

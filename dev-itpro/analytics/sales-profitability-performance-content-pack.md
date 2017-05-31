@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
 ms.search.scope: Operations, Core
@@ -17,10 +17,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 35d34f9a356f8a041f2abf0aa8d6c3a6d9ca4a46
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 357f7071d801b13518c83170f8d0e7946dd9dede
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -60,7 +60,7 @@ Pakiet zawartości obejmuje raport zawierający zestaw wskaźników wizualizowan
 |                        | Całkowity przychód wg grupy odbiorców            | Wzrost przychodu r/r                                      |
 |                        | Średni przychód z odbiorcy wg grupy odbiorców | Marża brutto                                            |
 |                        | Przychód i zysk brutto wg grupy odbiorców   |                                                         |
-| Przychód wg produktu     | Przychód i zysk brutto wg kategorii sprzedaży   | Łączna liczba produktów                                    |
+| Przychód wg produktu     | Przychód i zysk brutto wg kategorii sprzedaży   | Łączna liczba produktów: \#                                    |
 |                        | 10 najważniejszych produktów wg przychodów                 | Całkowita liczba aktywnych produktów i procent całości |
 |                        | Całkowity przychód wg kategorii sprzedaży            | Liczba produktów odpowiedzialnych za 80% przychodu           |
 | Przychód wg okresu\*    | Przychód wg miesiąca                           | Wzrost przychodu r/r                                      |

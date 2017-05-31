@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
@@ -18,17 +18,15 @@ ms.author: sericks
 ms.dyn365.ops.intro: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e1a9e0eeb45f011ccb2aa091e68aff92782e1ae7
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5962fa36b061382e7f0ad55c08c81ac2cebc047d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
 
 # <a name="dynamics-365-for-operations-mobile-app-home-page"></a>Strona główna aplikacji komórkowej Dynamics 365 for Operations
-
-[!include[banner](../includes/banner.md)]
 
 [!include[banner](../includes/banner.md)]
 
@@ -61,7 +59,7 @@ Nawigacja w aplikacji mobilnej jest podzielona na cztery proste koncepcje: pulpi
 ## <a name="implementation-process"></a>Projekt wdrażania
 Na poniższej ilustracji przedstawiono proces wdrażania aplikacji komórkowej Dynamics 365 for Operations w organizacji. 
 
-[![](./media/mobile-implementation-process_4.png)](./media/mobile-implementation-process_4.png) 
+![Proces implementacji aplikacji mobilnych](./media/mobile-implementation-process_4.png)
 
 Tabela poniżej zawiera łącza do zasobów, które mogą pomóc w zaimplementowaniu aplikacji mobilnej Dynamics 365 for Operations w organizacji. Numery w pierwszej kolumnie odpowiadają ponumerowanym krokom na poprzedniej ilustracji.
 
@@ -85,7 +83,7 @@ Tabela poniżej zawiera łącza do zasobów, które mogą pomóc w zaimplementow
 <td>1</td>
 <td>Administrator systemu</td>
 <td>Wdrożenie programu Dynamics 365 for Operations w organizacji.</td>
-<td>Jeśli w organizacji jeszcze nie wdrożono programu Dynamics 365 for Operations zobacz <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Wdrażanie środowiska demonstracyjnego programu Microsoft Dynamics 365 for Operations</a>.</td>
+<td>Jeśli w organizacji jeszcze nie wdrożono programu Dynamics 365 for Operations zobacz <a href="../deployment/deploy-demo-environment.md">Wdrażanie środowiska demonstracyjnego programu Microsoft Dynamics 365 for Operations</a>.</td>
 </tr>
 <tr class="even">
 <td>2</td>
@@ -93,32 +91,27 @@ Tabela poniżej zawiera łącza do zasobów, które mogą pomóc w zaimplementow
 <td>Pobranie i zainstalowanie aktualizacji KB, które włączą obsługę mobilnych obszarów roboczych dostarczanych przez Microsoft.</td>
 <td>Zobacz sekcję &quot;Wymagania wstępne&quot; w temacie o komórkowych obszarach roboczych, który chce używać Twoja organizacja:
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobilny obszar roboczy Kontrola kosztów</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Mobilny obszar roboczy Dostępne zapasy</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Mobilny obszar roboczy Zamówienia sprzedaży</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobilny obszar roboczy współpracy z dostawcami</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobilny obszar roboczy Wprowadzanie czasu projektu</a></li>
+<li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobilny obszar roboczy Kontrola kosztów</a></li>
+<li><a href="/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Mobilny obszar roboczy Dostępne zapasy</a></li>
+<li><a href="/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Mobilny obszar roboczy Zamówienia sprzedaży</a></li>
+<li><a href="/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobilny obszar roboczy współpracy z dostawcami</a></li>
+<li><a href="/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobilny obszar roboczy Wprowadzanie czasu projektu</a></li>
+<li><a href="/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace">Mobilny obszar roboczy Zarządzanie wydatkami</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>Administrator systemu</td>
 <td>Opublikowanie mobilnych obszarów roboczych dostarczonych przez Microsoft.</td>
-<td>Zobacz sekcję &quot;Wymagania wstępne&quot; w temacie o komórkowych obszarach roboczych, który chce używać Twoja organizacja:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobilny obszar roboczy Kontrola kosztów</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Mobilny obszar roboczy Dostępne zapasy</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Mobilny obszar roboczy Zamówienia sprzedaży</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobilny obszar roboczy współpracy z dostawcami</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobilny obszar roboczy Wprowadzanie czasu projektu</a></li>
-</ul></td>
+<td><a href="publish-mobile-workspace.md">Publikowanie mobilnego obszaru roboczego</a>
+</td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>Programista lub niezależny dostawca oprogramowania (ISV)</td>
 <td>Tworzenie niestandardowych mobilnych obszarów roboczych za pomocą platformy komórkowej Dynamics 365 for Operations.</td>
 <td><ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform">Platforma komórkowa Dynamics 365 for Operations</a></li>
+<li><a href="mobile-platform.md">Platforma komórkowa Dynamics 365 for Operations</a></li>
 <li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">Interfejsy API języka X++ dla obszarów roboczych programu Dynamics 365 for Operations</a></li>
 </ul></td>
 </tr>
@@ -126,19 +119,19 @@ Tabela poniżej zawiera łącza do zasobów, które mogą pomóc w zaimplementow
 <td>5</td>
 <td>Niezależny dostawca oprogramowania</td>
 <td>Utworzenie wdrażalnego pakietu zawierającego niestandardowe mobilne obszary robocze i przekazanie pakietu do usługi Microsoft Dynamics Lifecycle Services (LCS).</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Generowanie wdrażalnego pakietu</a></td>
+<td><a href="../deployment/create-apply-deployable-package.md">Tworzenie wdrażalnego pakietu</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>Administrator systemu</td>
 <td>Zastosowanie wdrażalnego pakietu zawierającego niestandardowe obszary robocze dostarczonego przez niezależnego dostawcę oprogramowania.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Stosowanie wdrażalnego pakietu w systemie Microsoft Dynamics 365 for Operations</a></td>
+<td><a href="../deployment/apply-deployable-package-system.md">Stosowanie wdrażalnego pakietu w systemie Microsoft Dynamics 365 for Operations</a></td>
 </tr>
 <tr class="odd">
 <td>7</td>
 <td>Administrator systemu</td>
 <td>Opublikowanie niestandardowych mobilnych obszarów roboczych dostarczonych przez niezależnego dostawcę oprogramowania.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publikowanie mobilnego obszaru roboczego</a></td>
+<td><a href="publish-mobile-workspace.md">Publikowanie mobilnego obszaru roboczego</a></td>
 </tr>
 <tr class="even">
 <td>8</td>
@@ -153,24 +146,12 @@ Tabela poniżej zawiera łącza do zasobów, które mogą pomóc w zaimplementow
 <td>9</td>
 <td>Użytkownik</td>
 <td>Zalogowanie się do aplikacji komórkowej Dynamics 365 for Operations i jej używanie. Aplikacja zawiera mobilne obszary robocze, które zostały opublikowane.</td>
-<td>Firma Microsoft dostarczyła następujące komórkowe obszary robocze:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobilny obszar roboczy Kontrola kosztów</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Mobilny obszar roboczy Dostępne zapasy</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Mobilny obszar roboczy Zamówienia sprzedaży</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobilny obszar roboczy współpracy z dostawcami</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobilny obszar roboczy Wprowadzanie czasu projektu</a></li>
-</ul></td>
+<td>Aby wyświetlić listę mobilnych obszarów roboczych dostarczanych przez firmę Microsoft, zobacz <a href="mobile-workspaces-released.md">Mobilne obszary robocze ostatnio wydane dla aplikacji komórkowej Dynamics 365 for Operations</a>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="see-also"></a>Informacje dodatkowe
---------
-
-[Mobilne obszary robocze ostatnio wydane dla aplikacji komórkowej Dynamics 365 for Operations](mobile-workspaces-released.md)
 
 
 
