@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
 ms.reviewer: annbe
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 17a5dcf0f406380fbc4ff242932516894562fe5d
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 7d9b5870d8b1c64e3d444900253b06bbb76b6feb
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -30,7 +30,6 @@ ms.lasthandoff: 04/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-"[!include[banner](../includes/banner.md)]"
 
 
 W tym temacie wymieniono listę mobilnych obszarów roboczych, które niedawno wydano dla aplikacji komórkowej Microsoft Dynamics 365 for Operations.
@@ -51,9 +50,9 @@ W tym temacie wymieniono listę mobilnych obszarów roboczych, które niedawno w
 | Mobilny obszar roboczy     | opis                                                                                                                                                                         | Więcej informacji                                                                                                                                                        |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kontrola kosztów     | Menedżerowie centrów kosztów mają podgląd na działanie podległych im centrów zawsze i wszędzie.                                                                                               | [Mobilny obszar roboczy Kontrola kosztów](/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)         |
-| Dostępne zapasy    | Pozwala uzyskać na urządzeniach komórkowych w każdym miejscu i czasie wgląd w zapasy zarezerwowane i dostępne.                                                                                                    | [Mobilny obszar roboczy Dostępne zapasy](/dynamics365/operations/scm/production-control/inventory-on-hand-mobile-workspace)       |
-| Zamówienia sprzedaży         | Pozwala być na bieżąco z zamówieniami sprzedaży w dowolnym miejscu i czasie.                                                                                                                          | [Mobilny obszar roboczy Zamówienia sprzedaży](/dynamics365/operations/scm/production-control/sales-orders-mobile-workspace)                 |
-| Portal współpracy z dostawcami | Dostawcy mogą być na bieżąco z zamówieniami zakupu, które im wysłano do zatwierdzenia, oraz wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych. | [Mobilny obszar roboczy współpracy z dostawcami](/dynamics365/operations/scm/procurement/vendor-collaboration-mobile-workspace) |
+| Dostępne zapasy    | Pozwala uzyskać na urządzeniach komórkowych w każdym miejscu i czasie wgląd w zapasy zarezerwowane i dostępne.                                                                                                    | [Mobilny obszar roboczy Dostępne zapasy](/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace)       |
+| Zamówienia sprzedaży         | Pozwala być na bieżąco z zamówieniami sprzedaży w dowolnym miejscu i czasie.                                                                                                                          | [Mobilny obszar roboczy Zamówienia sprzedaży](/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace)                 |
+| Portal współpracy z dostawcami | Dostawcy mogą być na bieżąco z zamówieniami zakupu, które im wysłano do zatwierdzenia, oraz wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych. | [Mobilny obszar roboczy współpracy z dostawcami](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
 
 ## <a name="mobile-workspace-functionality-that-was-released-in-december-2016"></a>Funkcjonalność mobilnych obszarów roboczych wydana w grudniu 2016 r.
 | Mobilny obszar roboczy        | opis                                                                    | Więcej informacji                                                                                                            |

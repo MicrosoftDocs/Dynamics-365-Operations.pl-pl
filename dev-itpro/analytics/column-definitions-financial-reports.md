@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ca82d24f591aaeb0d675716857cf94a4696785ad
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -350,8 +350,7 @@ Typy danych zawartych w każdej kolumnie w raporcie określa wartość w wierszu
     <tbody>
     <tr class="odd">
     <td>FD</td>
-    <td>Wyświetl dane finansowe lub dane z arkusza programu Excel podczas korzystania z kolumny <strong>Łącze do wymiarów finansowych</strong> lub kolumny <strong>Łącze do arkusza roboczego</strong> w definicji wiersza. Po wybraniu typu kolumny <strong>FD</strong>, domyślne ustawienia są automatycznie określane dla następujących wierszy:
-    <ul>
+    <td>Wyświetl dane finansowe lub dane z arkusza programu Excel podczas korzystania z kolumny <strong>Łącze do wymiarów finansowych</strong> lub kolumny <strong>Łącze do arkusza roboczego</strong> w definicji wiersza. Po wybraniu typu kolumny <strong>FD</strong>, domyślne ustawienia są automatycznie określane dla następujących wierszy: <ul>
     <li><strong>Kategoria kodu/atrybutu księgi:</strong> ACTUAL</li>
     <li><strong>Kategoria kodu/atrybutu księgi:</strong> ACTUAL</li>
     <li><strong>Rok obrachunkowy:</strong> BASE</li>
@@ -359,7 +358,7 @@ Typy danych zawartych w każdej kolumnie w raporcie określa wartość w wierszu
     <li><strong>Objęte okresy:</strong> PERIODIC</li>
     <li><strong>Szerokość kolumny:</strong> 14</li>
     </ul>
-    Można zmieniać takie ustawienia domyślne.</td>
+Można zmieniać takie ustawienia domyślne.</td>
     </tr>
     <tr class="even">
     <td>CALC</td>
@@ -387,12 +386,11 @@ Typy danych zawartych w każdej kolumnie w raporcie określa wartość w wierszu
     </tr>
     <tr class="even">
     <td>WKS</td>
-    <td>Umożliwia wyświetlanie danych pobieranych z arkusza programu Excel. Po wybraniu typu kolumny <strong>WKS</strong>, domyślne ustawienia są automatycznie określane dla następujących wierszy:
-    <ul>
+    <td>Umożliwia wyświetlanie danych pobieranych z arkusza programu Excel. Po wybraniu typu kolumny <strong>WKS</strong>, domyślne ustawienia są automatycznie określane dla następujących wierszy: <ul>
     <li><strong>Rok obrachunkowy:</strong> PERIODIC</li>
     <li><strong>Okres:</strong> BASE</li>
     </ul>
-    Można zmieniać takie ustawienia domyślne.</td>
+Można zmieniać takie ustawienia domyślne.</td>
     </tr>
     <tr class="odd">
     <td>ATTR</td>
@@ -416,8 +414,8 @@ Komórka **Rok obrachunkowy** określa rok obrachunkowy, który kolumna powinna 
 | Opcja  | Opis                                                                                                                  |
 |---------|------------------------------------------------------------------------------------------------------------------------------|
 | BASE    | Umożliwia użycie roku podstawowego określonego w czasie tworzenia raportu.                                                                          |
-| BASE+\# | Umożliwia użycie roku o określoną liczbę lat w przód od roku podstawowego. Na przykład, aby użyć trzeciego w kolejności roku po roku podstawowym, należy wpisać **BASE+3**. |
-| BASE-\# | Umożliwia użycie roku o określoną liczbę lat wstecz od roku podstawowego. Na przykład, aby użyć poprzedniego roku, należy wpisać **BASE-1**.                 |
+| BASE+\# | Umożliwia użycie roku o następującą liczbę lat w przód od roku podstawowego: \#. Na przykład, aby użyć trzeciego w kolejności roku po roku podstawowym, należy wpisać **BASE+3**. |
+| BASE-\# | Umożliwia użycie roku o następującą liczbę lat wstecz od roku podstawowego: \#. Na przykład, aby użyć poprzedniego roku, należy wpisać **BASE-1**.                 |
 | \#      | Umożliwia wprowadzenie rzeczywistego roku obrachunkowego.                                                                                                |
 
 #### <a name="period-cell"></a>Komórka Okres
@@ -427,8 +425,8 @@ Komórka **Okres** określa okres obrachunkowy, który kolumna powinna uwzględn
 | Opcja          | opis                                                                                                                                                                                                                          |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | BASE            | Umożliwia użycie okresu podstawowego.                                                                                                                                                                                                                 |
-| BASE+\#         | Umożliwia użycie okresu o określoną liczbę okresów w przód od okresu podstawowego. Na przykład, aby użyć trzeciego w kolejności okresu po okresie podstawowym, należy wpisać **BASE+3**.                                                                                               |
-| BASE-\#         | Umożliwia użycie okresu o określoną liczbę okresów wstecz od okresu podstawowego. Na przykład, aby użyć poprzedniego okresu, należy wpisać **BASE-1**.                                                                                                                 |
+| BASE+\#         | Umożliwia użycie okresu o następującą liczbę okresów w przód od okresu podstawowego: \#. Na przykład, aby użyć trzeciego w kolejności okresu po okresie podstawowym, należy wpisać **BASE+3**.                                                                                               |
+| BASE-\#         | Umożliwia użycie okresu o następującą liczbę okresów wstecz od okresu podstawowego: \#. Na przykład, aby użyć poprzedniego okresu, należy wpisać **BASE-1**.                                                                                                                 |
 | BASE-\#:BASE    | Umożliwia użycie wielu okresów od kilku okresów przed okresem podstawowym i z uwzględnieniem okresu podstawowego. Na przykład, aby użyć trzech poprzednich okresów wraz z okresem podstawowym, należy wpisać **BASE-3:BASE**                                                |
 | BASE:BASE+\#    | Umożliwia użycie wielu okresów od okresu podstawowego przez kilka okresów po okresie podstawowym. Na przykład, aby użyć okresu podstawowego i kolejnych dwóch okresów, należy wpisać **BASE:BASE+2**.                                                  |
 | BASE-\#:BASE+\# | Umożliwia użycie wielu okresów od kilku okresów przed okresem podstawowym do kilku okresów po okresie podstawowym. Na przykład, aby użyć trzech wcześniejszych okresów, okresu podstawowego i kolejnych dwóch okresów, należy wpisać **BASE-3:BASE+2**. |

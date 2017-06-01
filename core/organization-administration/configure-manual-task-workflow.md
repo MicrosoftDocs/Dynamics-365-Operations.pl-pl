@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: a62b56bd2ac0a7484471190c5f342a1db335ab07
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5d2a69066a1245d5b86d27d01db4b67d4a490488
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -106,13 +106,11 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisane to zadanie r
     <td>Użytkownicy w określonej hierarchii organizacyjnej</td>
     <td><ol>
     <li>Gdy wybierzesz wartość w polu <strong>Hierarchia</strong>, na karcie <strong>Wybór hierarchii</strong> na liście <strong>Typ hierarchii</strong> wybierz typ hierarchii, do której ma zostać przypisane zadanie.</li>
-    <li>System musi pobrać zakres nazwisk użytkowników z hierarchii. Te nazwy reprezentują użytkowników, którym można przypisać zadanie. Wykonaj poniższe kroki, aby określić początek i koniec zakresu nazw użytkowników pobieranych przez system:
-    <ol>
+    <li>System musi pobrać zakres nazwisk użytkowników z hierarchii. Te nazwy reprezentują użytkowników, którym można przypisać zadanie. Wykonaj poniższe kroki, aby określić początek i koniec zakresu nazw użytkowników pobieranych przez system: <ol>
     <li>Aby określić początek zakresu, zaznacz osobę na liście <strong>Rozpocznij od</strong>.</li>
     <li>Aby określić koniec zakresu, kliknij opcję <strong>Dodaj warunek</strong>. Następnie wprowadź warunek określający miejsce w hierarchii, w którym system ma zakończyć pobieranie nazwisk.</li>
     </ol></li>
-    <li>Na karcie <strong>Opcje hierarchii</strong> określ, którym użytkownikom w zakresie należy przypisać zadanie:
-    <ul>
+    <li>Na karcie <strong>Opcje hierarchii</strong> określ, którym użytkownikom w zakresie należy przypisać zadanie: <ul>
     <li><strong>Przypisz do wszystkich pobranych użytkowników</strong> — zadanie zostanie przypisane do wszystkich użytkowników w zakresie.</li>
     <li><strong>Przypisz tylko do ostatnio pobranego użytkownika</strong> — zadanie zostanie przypisane tylko do ostatniego użytkownika w zakresie.</li>
     <li><strong>Nie uwzględniaj użytkowników spełniających następujący warunek</strong> — zadanie nie zostanie przypisane użytkownikom w zakresie, którzy spełniają określony warunek. Kliknij przycisk <strong>Dodaj warunek</strong>, aby określić warunek.</li>
@@ -139,13 +137,11 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisane to zadanie r
     <td>Kolejka elementów roboczych</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Kolejka</strong> kliknij kartę <strong>Na podstawie kolejki</strong>.</li>
-    <li>Aby przypisać zadanie do określonej kolejki, wykonaj następujące czynności:
-    <ol>
+    <li>Aby przypisać zadanie do określonej kolejki, wykonaj następujące czynności: <ol>
     <li>Na liście <strong>Typ kolejki</strong> zaznacz pozycję <strong>Kolejki elementów roboczych</strong>.</li>
     <li>Na liście <strong>Nazwa kolejki</strong> zaznacz kolejkę.</li>
     </ol></li>
-    <li>Jeśli określony warunek ma decydować o kolejce, do której zostanie przypisane zadanie, wykonaj następujące czynności:
-    <ol>
+    <li>Jeśli określony warunek ma decydować o kolejce, do której zostanie przypisane zadanie, wykonaj następujące czynności: <ol>
     <li>Na liście <strong>Typ kolejki</strong> zaznacz pozycję <strong>Warunkowe kolejki elementów roboczych</strong>.</li>
     <li>Na liście <strong>Nazwa kolejki</strong> zaznacz pozycję <strong>Kolejka warunkowa</strong>.</li>
     </ol></li>
@@ -196,13 +192,11 @@ Jeśli użytkownik nie wykona zadania ręcznego w wyznaczonym czasie, staje się
     <td>Użytkownicy w określonej hierarchii organizacyjnej</td>
     <td><ol>
     <li>Gdy wybierzesz wartość w polu <strong>Hierarchia</strong>, na karcie <strong>Wybór hierarchii</strong> na liście <strong>Typ hierarchii</strong> wybierz typ hierarchii, do której ma zostać eskalowane zadanie.</li>
-    <li>System musi pobrać zakres nazwisk użytkowników z hierarchii. Te nazwy reprezentują użytkowników, do których można eskalować zadanie. Wykonaj poniższe kroki, aby określić początek i koniec zakresu nazw użytkowników pobieranych przez system:
-    <ol>
+    <li>System musi pobrać zakres nazwisk użytkowników z hierarchii. Te nazwy reprezentują użytkowników, do których można eskalować zadanie. Wykonaj poniższe kroki, aby określić początek i koniec zakresu nazw użytkowników pobieranych przez system: <ol>
     <li>Aby określić początek zakresu, zaznacz osobę na liście <strong>Rozpocznij od</strong>.</li>
     <li>Aby określić koniec zakresu, kliknij opcję <strong>Dodaj warunek</strong>. Następnie wprowadź warunek określający miejsce w hierarchii, w którym system ma zakończyć pobieranie nazwisk.</li>
     </ol></li>
-    <li>Na karcie <strong>Opcje hierarchii</strong> określ, do których użytkowników w zakresie należy eskalować zadanie:
-    <ul>
+    <li>Na karcie <strong>Opcje hierarchii</strong> określ, do których użytkowników w zakresie należy eskalować zadanie: <ul>
     <li><strong>Przypisz do wszystkich pobranych użytkowników</strong> — zadanie zostanie eskalowane do wszystkich użytkowników w zakresie.</li>
     <li><strong>Przypisz tylko do ostatnio pobranego użytkownika</strong> — zadanie zostanie eskalowane tylko do ostatniego użytkownika w zakresie.</li>
     <li><strong>Nie uwzględniaj użytkowników spełniających następujący warunek</strong> — to zadanie nie będzie eskalowane do użytkowników w zakresie, którzy spełniają określony warunek. Kliknij przycisk <strong>Dodaj warunek</strong>, aby określić warunek.</li>

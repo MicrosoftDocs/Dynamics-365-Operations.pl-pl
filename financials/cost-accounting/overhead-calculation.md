@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bb02e0756d675726f6c3b9f456b980a7ed695463
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -53,7 +53,8 @@ W obliczaniu kosztów ogólnych następuje wykonanie zasad rachunku kosztów w o
 -   Rok obrachunkowy
 -   Okres obrachunkowy
 
-Obliczanie kosztów ogólnych jest uruchamiane niezależnie od wersji. W związku z tym można obliczyć wersję budżetową przed wersją rzeczywistą. Obliczanie kosztów ogólnych składa się z czterech etapów, jak pokazano na poniższej ilustracji. Na każdym etapie jest tworzony nagłówek arkusza z zapisami w arkuszu. Ten nagłówek arkusza przechowuje dane wejściowe dla każdego etapu obliczeń. Zasady i reguły są stosowane do każdego wiersza arkusza, a jako dane wyjściowe są generowane wpisy kosztów. Dlatego zawsze masz pełną identyfikację źródeł wyników obliczania kosztów. [![Obliczanie kosztów ogólnych](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+Obliczanie kosztów ogólnych jest uruchamiane niezależnie od wersji. W związku z tym można obliczyć wersję budżetową przed wersją rzeczywistą. Obliczanie kosztów ogólnych składa się z czterech etapów, jak pokazano na poniższej ilustracji. Na każdym etapie jest tworzony nagłówek arkusza z zapisami w arkuszu. Ten nagłówek arkusza przechowuje dane wejściowe dla każdego etapu obliczeń. Zasady i reguły są stosowane do każdego wiersza arkusza, a jako dane wyjściowe są generowane wpisy kosztów. Dlatego zawsze masz pełną identyfikację źródeł wyników obliczania kosztów. 
+[![Obliczanie kosztów ogólnych](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Obliczanie i przypisywanie kosztów ogólnych energii elektrycznej
 W rachunkowości finansowej niektóre koszty, takie jak energii elektrycznej, są rejestrowane jako ryczałt. W związku z tym menedżerowie nie mają szczegółowego wglądu w te dane w rachunku kosztów. Aby w module Rachunek kosztów zapewnić poprawne prezentowanie informacji kierownictwu we wszystkich jednostkach organizacyjnych i na wszystkich poziomach, koszty muszą przepływać przez jednostki organizacyjne. Ten przepływ musi się opierać na dokładnym rejestrze zużycia lub na uczciwej ocenie. W księdze głównej koszty energii elektrycznej mogą być księgowane w sposób pokazany w poniższej tabeli.
@@ -622,7 +623,7 @@ Aby uzyskać szczegółowe informacje o zasadach stawek kosztów ogólnych, zoba
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Krok 4: Przetwarzanie obliczania alokacji kosztów
 
-Alokacja jest używana w celu alokowania salda obiektu kosztów do innych obiektów kosztów poprzez zastosowanie podstawy alokacji. Program Microsoft Dynamics 365 for Operations obsługuje metody wzajemnej alokacji. W metodzie alokacji wzajemnej są w pełni wykazywane wzajemne usługi, jakie między sobą wymieniają pomocnicze obiekty kosztów. System automatycznie ustala kolejność, w jakiej ma zostać wykonana alokacja. Saldo obiektu kosztów jest alokowane przy użyciu jednej podstawy alokacji. Są obsługiwane alokacje między wymiarami obiektów kosztów i ich elementami członkowskimi. Kolejność alokacji jest kontrolowana przez jednostkę kontroli kosztów. [![](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+Alokacja jest używana w celu alokowania salda obiektu kosztów do innych obiektów kosztów poprzez zastosowanie podstawy alokacji. Program Microsoft Dynamics 365 for Operations obsługuje metody wzajemnej alokacji. W metodzie alokacji wzajemnej są w pełni wykazywane wzajemne usługi, jakie między sobą wymieniają pomocnicze obiekty kosztów. System automatycznie ustala kolejność, w jakiej ma zostać wykonana alokacja. Saldo obiektu kosztów jest alokowane przy użyciu jednej podstawy alokacji. Są obsługiwane alokacje między wymiarami obiektów kosztów i ich elementami członkowskimi. Kolejność alokacji jest kontrolowana przez jednostkę kontroli kosztów. [![Metoda wzajemna](./media/reciprocal-method.png)]
 
 #### <a name="define-the-cost-allocation"></a>Definiowanie alokacji kosztów
 
