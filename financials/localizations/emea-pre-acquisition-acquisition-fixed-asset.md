@@ -9,9 +9,9 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 ms.custom: 264704
-ms.assetid: 89218666-7c5e-45ca-aead-a87853d05928
 ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30

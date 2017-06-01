@@ -9,9 +9,9 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 ms.custom: 262574
-ms.assetid: 87924785-6032-4125-8279-5b1a758f4d80
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30

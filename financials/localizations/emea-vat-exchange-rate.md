@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans
 audience: Application User
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 ms.custom: 272703
 ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
 ms.search.region: Czech Republic, Hungary, Poland
 ms.author: mrolecki
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670

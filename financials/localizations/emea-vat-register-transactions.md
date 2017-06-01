@@ -10,9 +10,9 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: RegisterVAT_W, TaxTable
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 270434
-ms.assetid: cccf9f0d-cd04-4cc3-a0e3-b7e304a82a20
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31

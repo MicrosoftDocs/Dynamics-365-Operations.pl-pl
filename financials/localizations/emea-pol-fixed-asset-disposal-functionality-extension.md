@@ -10,9 +10,9 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 266964
-ms.assetid: 99f3a20c-2e2e-4fc7-b846-3d86802174c4
 ms.search.region: Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31

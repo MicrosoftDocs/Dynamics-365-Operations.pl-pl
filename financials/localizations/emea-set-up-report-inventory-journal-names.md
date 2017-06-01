@@ -10,9 +10,9 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalName
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 ms.custom: 265144
-ms.assetid: 0f07f62f-1053-46e9-b235-a7b38cbda409
 ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30

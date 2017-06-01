@@ -9,9 +9,9 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 ms.custom: 263404
-ms.assetid: c66b3a3d-f199-4da5-965a-b69377c5dd22
 ms.search.region: Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
