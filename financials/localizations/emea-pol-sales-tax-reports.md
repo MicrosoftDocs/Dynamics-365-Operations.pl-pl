@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.1, Operations, Core
 ms.custom: 274063
 ms.assetid: 2cc5a59c-8c93-4122-afe7-5a1bd73b933d
