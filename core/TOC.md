@@ -1,34 +1,34 @@
 # [Wprowadzenie](index.md)
 
-# [Wprowadzenie rozwiązania Dynamics 365 for Operations](get-started/onboarding-home.md)
-## Wprowadzenie do rozwiązania Dynamics 365 for Operations
-### [Rozpoczęcie pracy z programem Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
-### [Tworzenie konta na potrzeby subskrypcji](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/operations/toc.json)
-### [Jak uzyskać lokalną wersję systemu Dynamics AX 2012](/dynamics365/operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/operations/toc.json)
-## [Wdrażanie środowiska demonstracyjnego](/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/operations/toc.json)
+# [Wprowadzenie do rozwiązania Finance and Operations](get-started/onboarding-home.md)
+## Wprowadzenie do rozwiązania Finance and Operations
+### [Rozpoczęcie korzystania z programu Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
+### [Tworzenie konta na potrzeby subskrypcji](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Jak uzyskać lokalną wersję systemu Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+## [Wdrażanie środowiska demonstracyjnego](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Poznawanie interfejsu użytkownika
 ### [Wyszukiwanie akcji](get-started/action-search.md)
 ### [Filtrowanie zaawansowane i składnia zapytań](get-started/advanced-filtering-query-options.md)
-### [Klient rozwiązania Dynamics 365 for Operations — często zadawane pytania](get-started/client-faq.md)
+### [Klient rozwiązania Finance and Operations — często zadawane pytania](get-started/client-faq.md)
 ### [Konfigurowanie i filtrowanie obszarów roboczych](get-started/configure-filter-workspaces.md)
 ### [Równoległe wyświetlanie stron przy użyciu ikony Otwórz w nowym oknie](get-started/display-pages-side-by-side.md)
 ### [Nawigacja z wyszukiwaniem](get-started/navigation-search.md)
 ### [Personalizacja interfejsu użytkownika](get-started/personalize-user-experience.md)
 ### [Skróty klawiaturowe](get-started/shortcut-keys.md)
 ### [Zarządzanie wyświetlaniem stron](get-started/window-management.md)
-### [Opis usługi Lifecycle Services](/dynamics365/operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/operations/toc.json)
+### [Opis usługi Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Uzyskiwanie pomocy i obsługi technicznej
-### [Omówienie Pomocy](/dynamics365/operations/dev-itpro/get-started/help-overview?toc=/dynamics365/operations/toc.json)
-### [Nawiązywanie połączenia z Pomocą](/dynamics365/operations/dev-itpro/get-started/help-connect?toc=/dynamics365/operations/toc.json)
+### [Omówienie Pomocy](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Nawiązywanie połączenia z Pomocą](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Wyświetlanie i eksportowanie opisów pól](get-started/view-export-field-descriptions.md)
 
 ### Przewodniki zadania i rejestrator zadań
-#### [Rejestrator zadań](/dynamics365/operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
-#### [Tworzenie dokumentacji lub szkolenia](/dynamics365/operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
+#### [Rejestrator zadań](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Tworzenie dokumentacji lub szkolenia](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## [Zawartość Pomocy specyficzna dla kraju/regionu](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/toc.json)
+## [Zawartość Pomocy specyficzna dla kraju/regionu](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 # [Konfigurowanie organizacji](organization-administration/organization-administration-home-page.md)
 ## [Organizacje i hierarchie organizacyjne](organization-administration/organizations-organizational-hierarchies.md)
@@ -63,17 +63,17 @@
 ## [Konfigurowanie zadania wsadowego do przetwarzania komunikatów](organization-administration/workflow-batch-job-critical.md)
 ## [Raport typów przepływów pracy](organization-administration/workflow-types-report.md)
 
-# [Finanse](/dynamics365/operations/financials/index)
+# [Finanse](/dynamics365/unified-operations/financials/index)
 
-# [Zasoby ludzkie](/dynamics365/operations/human-resources/index)
+# [Zasoby ludzkie](/dynamics365/unified-operations/talent/index)
 
-# [Handel detaliczny](/dynamics365/operations/retail/index)
+# [Handel detaliczny](/dynamics365/unified-operations/retail/index)
 
-# [Zarządzanie łańcuchem dostaw](/dynamics365/operations/supply-chain/index)
+# [Zarządzanie łańcuchem dostaw](/dynamics365/unified-operations/supply-chain/index)
 
-# [Dla programistów i administratorów](/dynamics365/operations/dev-itpro/index)
+# [Dla programistów i administratorów](/dynamics365/unified-operations/dev-itpro/index)
 
 # Inne zasoby
-## [Dynamics 365 for Operations — słownik](get-started/glossary.md)
-## [Nowości i zmiany](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/toc.json)
+## [Glosariusz terminów używanych w rozwiązaniu Finance and Operations](get-started/glossary.md)
+## [Nowości i zmiany](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 

@@ -21,4 +21,5 @@
 # Śledzenie towarów i partii
 ## [Scalanie partii zapasów](merge-inventory-batches.md)
 ## [Śledzenie towarów i surowców](trace-items-raw-materials-inventory-production-sales.md)
+## [Rejestrowanie numeru seryjnego w procesie sprzedaży](../sales-marketing/register-serial-numbers-sales-process.md)
 

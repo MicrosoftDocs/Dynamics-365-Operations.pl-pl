@@ -43,26 +43,46 @@
 ### [Konfigurowanie kont dostawców](procurement/set-up-vendor-accounts.md)
 ### [Współpraca dostawców z zewnętrznymi dostawcami](procurement/vendor-collaboration-work-external-vendors.md)
 ### [Współpraca dostawców z odbiorcami](procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
+### [Używanie katalogów zewnętrznych dla rozwiązania PunchOut eProcurement](procurement/use-external-catalogs-for-punchout.md)
+### [Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut eProcurement](procurement/set-up-external-catalog-for-punchout.md)
 ### [Współpraca z dostawcami za pomocą portalu dostawców](procurement/collaborate-vendors-vendor-portal.md)
-### [Mobilny obszar roboczy współpracy z dostawcami](procurement/vendor-collaboration-mobile-workspace.md)
+### [Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych](procurement/vendor-collaboration-mobile-workspace.md)
 ### [Zabezpieczenia użytkowników portalu dostawców](procurement/configure-security-vendor-portal-users.md)
 ## Ceny i rabaty
 ### [Umowy zakupu](procurement/purchase-agreements.md)
 ## Przyjęcia produktów i fakturowanie
 ### [Przyjęcie produktów na podstawie zamówień zakupu](procurement/product-receipt-against-purchase-orders.md)
-### [Omówienie faktur od dostawców](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
-### [Profile księgowania dostawców](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+### [Omówienie faktur od dostawców](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Profile księgowania dostawców](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Zarządzanie informacjami o produktach
-## Informacje o produktach
-### [BOM i formuła](production-control/bill-of-material-bom.md)
-### [Funkcjonalność konstruktora BOM](production-control/bom-designer-functionality.md)
-### [Wymiar produktu](pim/product-dimensions.md)
-### [Domyślne ustawienia zamówienia dla wymiarów i wariantów produktu](production-control/default-order-settings.md)
-### [Nazewnictwo numerów produktów](pim/product-variant-identification-nomenclature.md)
-### [Tłumaczenie związane z produktem — często zadawane pytania](pim/translations-product-related-information.md)
-### [Rejestrowanie numeru seryjnego w procesie sprzedaży](sales-marketing/register-serial-numbers-sales-process.md)
-### [Wyszukiwanie produktu podczas wprowadzania zamówień](pim/search-products-product-variants.md)
-## Tworzenie konfiguracji produktu
+## [Omówienie informacji o produktach](pim/product-information.md)
+## Aktualizacja kategorii produktów
+## Aktualizacja informacji o produktach
+### Aktualizacja definicji produktów
+#### [Nazewnictwo numerów produktów](pim/product-variant-identification-nomenclature.md)
+#### Szablony produktów
+#### [Wymiar produktu](pim/product-dimensions.md)
+#### Atrybuty produktu
+#### Zdjęcia i załączniki dotyczące produktów
+#### Identyfikatory produktów
+#### [Tłumaczenie informacji o produktach — często zadawane pytania](pim/translations-product-related-information.md)
+### Wydawanie produktów firmom
+### Wyszukiwanie produktów
+#### [Wyszukiwanie produktu podczas wprowadzania zamówień](pim/search-products-product-variants.md)
+### Przygotowanie produktu do planowania
+#### [Domyślne ustawienia zamówienia dla wymiarów i wariantów produktu](production-control/default-order-settings.md)
+#### Modele prognoz i klucze alokacji produktów
+### Przygotowanie produktu do produkcji
+#### BOM i formuła
+##### [Listy składowe (BOM) i formuły](production-control/bill-of-material-bom.md)
+##### [Użycie konstruktora BOM](production-control/bom-designer-functionality.md)
+##### [Użycie konstruktora formuł](production-control/formula-designer.md)
+#### Marszruty
+#### Lean manufacturing
+### Przygotowanie produktów do magazynowania i transportu
+### Oszacowanie kosztów produktów
+#### [Obliczenia BOM](cost-management/bom-calculations.md)
+## Aktualizacja modeli konfiguracji produktów
 ### [Tworzenie modelu konfiguracji produktu](pim/build-product-configuration-model.md)
 ### [Obliczenia na potrzeby modelu konfiguracji produktu — często zadawane pytania](pim/calculate-product-configuration-models.md)
 ### [Reguła konfiguracji](pim/configuration-rules.md)
@@ -71,6 +91,8 @@
 ### [Ponowne używanie konfiguracji produktu](pim/reuse-product-configurations.md)
 ### [Konfigurowanie modelu konfiguracji](pim/set-up-maintain-product-configuration-model.md)
 ### [Ograniczenie tabeli zdefiniowane przez system i przez użytkownika](pim/system-defined-user-defined-table-constraints.md)
+## Importowanie informacji o produkcie
+## Eksportowanie informacji o produkcie
 # Kontrola produkcji
 ## [Omówienie procesu produkcji](production-control/production-process-overview.md)
 ## [Planowanie w trybie mieszanym: łączenie sourcingu dyskretnego, procesowego i oszczędnego](production-control/mixed-mode-plan.md)
@@ -96,6 +118,8 @@
 #### [Wycofywanie stanu zlecenia produkcyjnego](production-control/reverse-production-order-status.md)
 #### [Zgłaszanie zleceń produkcyjnych jako gotowych](production-control/report-production-orders-as-finished.md)
 #### [Zgłaszanie list składowych (BOM) jako gotowych](production-control/report-boms-as-finished.md)
+#### [Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych](production-control/cross-docking-opportunities.md)
+#### [Rejestracja na urządzeniu przenośnym zużycia materiałów](production-control/register-material-consumption-hand-held-device.md)
 #### [Zastępowanie materiałów w procesie produkcji](production-control/substitute-items-bom-lines.md)
 #### [Rejestracja w celu wykonania produkcji](production-control/registration-manufacturing-execution.md)
 #### [Informacja zwrotna o produkcji](production-control/production-feedback.md)
@@ -111,7 +135,8 @@
 #### [Modelowanie organizacji oszczędnej](production-control/lean-manufacturing-modeling-lean-organization.md)
 #### [Zasoby operacyjne](production-control/operations-resources.md)
 ### Tworzenie harmonogramu zadań w systemie Kanban
-#### [Planowanie zadań w systemie Kanban na potrzeby wytwarzania typu lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
+#### [Wizualne planowanie zadań na potrzeby lean manufacturing](production-control/visual-scheduling-lean-manufacturing.md)
+#### [Planowanie zadań w systemie Kanban na potrzeby lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
 #### [Planowanie zadań](production-control/job-scheduling.md)
 ### Wykonywanie zadań w systemie Kanban
 #### [Obsługa tablicy przeniesień w systemie Kanban dla skanerów kodów kreskowych](production-control/kanban-transfer-board-support-barcode-scanner.md)
@@ -128,6 +153,7 @@
 #### [Planowanie operacji](production-control/operations-scheduling.md)
 #### [Opcje planowania operacji](production-control/operation-scheduling-options.md)
 #### [Planowanie zadań](production-control/job-scheduling.md)
+#### [Wykres Gantta do planowania zadań](production-control/visual-scheduling-production.md)
 ### Wykonywanie zadań związanych z produkcją
 #### [Skonsolidowane zamówienia partii](production-control/consolidated-batch-orders.md)
 #### [Zastępowanie materiałów w procesie produkcji](production-control/substitute-items-bom-lines.md)
@@ -162,18 +188,26 @@
 ## [Zarządzanie transportem](transportation/transportation-management-overview.md)
 ## [Aparat transportu](transportation/transportation-management-engines.md)
 # Zarządzanie magazynem
+## Zaawansowane zarządzanie magazynem
+### [Migracja z systemu AX 2012 do rozwiązania Finance and Operations](warehousing/upgrade-migration-warehouse-management-processes.md)
 ## Konfiguracja 
 ### [Kontrola pracy przy użyciu szablonów pracy i dyrektyw lokalizacji](warehousing/control-warehouse-location-directives.md)
 ### [Zarządzanie pracownikami magazynu](warehousing/manage-warehouse-workers.md)
 ### [Konfigurowanie układu](warehousing/warehouse-configuration.md)
 ### [Zasady pracy magazynowej](warehousing/warehouse-work-policies.md)
 ### [Jednostka miary i zasady składowania](warehousing/unit-measure-stocking-policies.md)
-### [Zawartość usługi Power BI związana z magazynem](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
+### [Zawartość usługi Power BI związana z magazynem](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
+### [Potwierdzenie partii i numeru identyfikacyjnego](warehousing/batch-and-license-plate-confirmation.md)
+### [Przesuwanie zapasów za pomocą skojarzonej pracy](warehousing/move-inventory-associated-work.md)
+### [Grupowanie systemowe na liście otwartych prac](warehousing/system-group-on-open-work-list.md)
+### [Potwierdzenie produktu na potrzeby pobierania dla grupy](warehousing/cluster-picking-item-confirmation.md)
 ## Pobieranie i pakowanie
 ### [Materiały opakowań i opłaty](warehousing/pack-materials-packing-material-fees.md)
+### [Potwierdzenie pobrania sztuk](warehousing/piece-picking-confirmation.md)
 ## Inwentaryzacja
 ### [Blokowanie zapasów](inventory/inventory-blocking.md)
 ### [Inwentaryzacja ciągła](warehousing/cycle-counting.md)
+### [Częściowa inwentaryzacja ciągła w lokalizacji](warehousing/partial-location-cycle-counting.md)
 ### [Arkusz magazynowy](inventory/inventory-journals.md)
 ### [Lokalizacja magazynowa](inventory/inventory-locations.md)
 ### [Stan zapasów](inventory/inventory-statuses.md)
@@ -181,22 +215,23 @@
 ## Konteneryzacja 
 ## Uzupełnianie zapasów
 ### [Uzupełnianie zapasów](warehousing/replenishment.md)
+### [Uzupełnianie zapasów za pomocą kart Kanban wypłat](warehousing/material-replenishment-withdrawal-kanban.md)
 ## Urządzenia przenośne
-### [Instalowanie i konfigurowanie aplikacji magazynu](warehousing/install-configure-warehousing-app.md)
+### [Instalowanie i konfigurowanie aplikacji magazynu ](warehousing/install-configure-warehousing-app.md)
 ### [Konfigurowanie nazw pól w aplikacji magazynu](warehousing/configure-app-field-names-priorities-warehouse.md)
 ### [Konfigurowanie urządzeń przenośnych do pracy magazynowej](warehousing/configure-mobile-devices-warehouse.md)
 ### [Portal urządzeń przenośnych używanych w magazynie](warehousing/warehouse-mobile-devices-portal.md)
 ### [Ustawienia wyświetlania urządzeń przenośnych używanych w magazynie](warehousing/change-warehouse-mobile-device-displays.md)
 
-# [Finanse](/dynamics365/operations/financials/index)
+# [Finanse](/dynamics365/unified-operations/financials/index)
 
-# [Zasoby ludzkie](/dynamics365/operations/human-resources/index)
+# [Zasoby ludzkie](/dynamics365/unified-operations/talent/index)
 
-# [Handel detaliczny](/dynamics365/operations/retail/index)
+# [Handel detaliczny](/dynamics365/unified-operations/retail/index)
 
-# [Dla programistów i administratorów](/dynamics365/operations/dev-itpro/index)
+# [Dla programistów i administratorów](/dynamics365/unified-operations/dev-itpro/index)
 
 # Inne zasoby
-## [Dynamics 365 for Operations — słownik](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
-## [Nowości i zmiany](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Glosariusz terminów używanych w rozwiązaniu Finance and Operations](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## [Nowości i zmiany](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 

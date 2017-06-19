@@ -1,4 +1,4 @@
-# [Omówienie lokalizacji](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/financials/toc.json)
+# [Omówienie lokalizacji](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/toc.json)
 # Azja i Pacyfik
 ## Australia
 ### [Formaty plików bankowych](apac-aus-method-of-payment-pay-vendors-banks.md)
@@ -54,7 +54,8 @@
 ## [Księgowanie wstępnego nabycia środka trwałego](emea-pre-acquisition-acquisition-fixed-asset.md)
 ## [Kody pocztowe](emea-import-create-postal-codes-manually.md)
 ## [Identyfikatory rejestracji](emea-registration-ids.md)
-## [Omówienie przeniesienia kredytu SEPA](../accounts-payable/sepa-credit-transfer.md)
+## [Opłata zwrotna VAT](emea-reverse-charge.md)
+## [Omówienie polecenia przelewu SEPA](../accounts-payable/sepa-credit-transfer.md)
 ## [Omówienie polecenia zapłaty SEPA](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [Konfigurowanie osób podpisujących drukowane formularze](emea-set-up-signers-for-printing-forms.md)
 ## [Kursy wymiany dla podatku VAT](emea-vat-exchange-rate.md)
@@ -98,7 +99,7 @@
 ### [Raport listy arkuszy](emea-deu-journal-list-report.md)
 ### [Drukowanie osobnej etykiety dla not kredytowych pochodzących ze sprzedaży](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Węgry
-### [Metody amortyzacji środków trwałych](emea-hun-fixed-assets-depreciation-methods.md)    
+### [Metody amortyzacji środków trwałych](emea-hun-fixed-assets-depreciation-methods.md)   
 ### [Niskokosztowe środki trwałe](emea-hun-low-cost-fixed-assets.md)
 ### [Przenoszenie środka trwałego do zapasów](emea-hun-fixed-asset-to-inventory.md)
 ## Włochy
@@ -138,6 +139,7 @@
 ### [Przeszacowanie grupy środków trwałych](emea-esp-fixed-asset-group-revaluation.md)
 ### [Wewnątrzwspólnotowy podatek VAT](emea-esp-intra-community-vat.md)
 ### [Odbiorcy jednorazowi](emea-esp-no-one-time-customer-for-project-contracts.md)
+### [Drukowanie czeków w układzie hiszpańskim](emea-esp-print-checks-with-spanish-layout.md)
 ### [Opcje skryptów dłużnych](emea-esp-promissory-note-options.md)
 ### [Cykle sprzedaży i zakupów](emea-esp-sales-purchase-cycle.md)
 ### [Specjalne wpisy i arkusze otwarcia](emea-esp-opening-sheets-spain.md)
@@ -153,7 +155,9 @@
 ### [Księgi podatkowe](latam-bra-fiscal-books.md)
 #### [Dokumenty fiskalne dotyczące podatku ICMS](latam-bra-icms-tax-fiscal-documents.md)
 #### [Importowanie dokumentów fiskalnych](latam-bra-import-fiscal-documents.md)
+#### [Eksportowanie i importowanie transakcji firmowych z konsolidacji księgi głównej](latam-bra-general-ledger-consolidation-transactions.md)
 #### [Importowanie i weryfikowanie dokumentów NF-e w formacie XML oraz plików DANFE](latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+#### [Przetwarzanie przelewów elektronicznych](latam-bra-process-electronic-payment-remittances.md)
 #### [Dokumenty fiskalne](latam-bra-fiscal-documents-fiscal-document-framework.md)
 #### [Teksty zastępcze w dokumentach fiskalnych](latam-bra-fiscal-document-text-placeholders.md)
 #### [Uzupełniające dokumenty fiskalne dotyczące zakupów](latam-bra-purchase-complementary-fiscal-documents.md)
@@ -163,6 +167,8 @@
 ### [Arkusze wygenerowane podczas procesu zwrotu płatności elektronicznych](latam-bra-examples-journals-generated-electronic-payment-return-process.md)
 ### [Proces NF-e](latam-bra-nf-e-process.md)
 ### [Parametry dla firm](latam-bra-legal-entity-parameters.md)
+### [Nabycie środka trwałego CIAP](latam-bra-ciap-fixed-asset.md)
+### [Likwidacja środka trwałego CIAP](latam-bra-ciap-fixed-asset.md)
 ### [Podatki](latam-bra-calculate-taxes.md)
 #### [Atrybuty podatków](latam-bra-tax-attributes.md)
 #### [Płatności podatków](latam-bra-tax-payments.md)

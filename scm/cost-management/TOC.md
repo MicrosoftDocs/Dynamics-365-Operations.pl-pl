@@ -1,5 +1,5 @@
 # Pakiet zawartości usługi Power BI
-## [Pakiet zawartości modułu Zarządzanie kosztami](/dynamics365/operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Pakiet zawartości modułu Zarządzanie kosztami](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Wstępnie określony koszt
 ## [Arkusz wyceny](costing-sheets.md)
 ## [Wersja wyceny](costing-versions.md)

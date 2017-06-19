@@ -17,7 +17,8 @@
 # Aplikacje Modern Point of Sale (MPOS) i Cloud POS
 ## Sprzęt i urządzenia peryferyjne
 ### [Omówienie sklepowych urządzeń peryferyjnych](retail-peripherals-overview.md)
-### [Urządzenia peryferyjne punktu sprzedaży przetestowane przez firmę Microsoft](microsoft-tested-pos-hardware-peripherals.md)
+### [Symulator sklepowych urządzeń peryferyjnych](retail-peripheral-simulator.md)
+### [Sklepowe urządzenia peryferyjne przetestowane przez Microsoft](microsoft-tested-pos-hardware-peripherals.md)
 ### [Definiowanie klientów, rejestrów i stacji sprzętowych w kanale oraz zarządzanie nimi](define-maintain-channel-clients-registers-hw-stations.md)
 ## Układ ekranu
 ### [Konfigurowanie układów ekranu dla punktu sprzedaży](pos-screen-layouts.md)
@@ -42,6 +43,7 @@
 ## Paragony
 ### [Konfigurowanie szablonów paragonów](receipt-templates-printing.md) 
 ### [Wysyłanie paragonów pocztą e-mail z aplikacji MPOS](email-receipts.md)
+## [Rejestrator zadań i Pomoc dla punktu sprzedaży](task-recorder-retail-pos.md)
 # Monitorowanie i analizy
 ## [Monitorowanie wydajności sprzedaży i marży](monitor-sales-margin-performance.md)
 ## [Analizowanie trendów i wzorców sprzedaży](analyze-sales-trends-patterns.md)
@@ -53,13 +55,15 @@
 ## [Korekt ceny i rabaty](price-adjustments-discounts.md)
 ## [Ustalanie optymalnej kombinacji nakładających się rabatów](optimal-combination-overlapping-discounts.md)
 ## [Definiowanie rabatów specyficznych dla kanału](define-channel-specific-discounts.md)
-# Produkty i promocje
+## [Tworzenie kuponów dla sieci sprzedaży](retail-coupons.md)
+# Produkty i merchandising
 ## [Hierarchie handlu detalicznego](retail-hierarchies.md)
 ## [Tworzenie atrybutów i zarządzanie nimi](create-manage-attributes.md)
 ## [Konfigurowanie produktów detalicznych](set-up-retail-products.md)
 ## [Konfigurowanie kodów kreskowych](set-up-bar-codes.md)
 ## [Konfigurowanie masek kodów kreskowych](set-up-bar-code-masks.md)
-## [Konfigurowanie asortymentów](set-up-assortments.md)
+## [Konfigurowanie asortymentu](set-up-assortments.md)
+## [Sprzedaż i zwrot produktów spoza asortymentu](sell-return-outside-assortments.md)
 # Lojalność
 ## [Konfigurowanie programu lojalnościowego](set-up-customer-loyalty-program.md)
 # Zapasy
@@ -69,15 +73,15 @@
 ## [Organizacje i hierarchie organizacyjne (podstawowe funkcje handlowe)](organizational-hierarchies-commerce-essentials.md)
 # [Zawartość dla informatyków i programistów](dev-itpro/TOC.md)
 
-# [Finanse](/dynamics365/operations/financials/index)
+# [Finanse](/dynamics365/unified-operations/financials/index)
 
-# [Zasoby ludzkie](/dynamics365/operations/human-resources/index)
+# [Zasoby ludzkie](/dynamics365/unified-operations/talent/index)
 
-# [Zarządzanie łańcuchem dostaw](/dynamics365/operations/supply-chain/index)
+# [Zarządzanie łańcuchem dostaw](/dynamics365/unified-operations/supply-chain/index)
 
-# [Dla programistów i administratorów](/dynamics365/operations/dev-itpro/index)
+# [Dla programistów i administratorów](/dynamics365/unified-operations/dev-itpro/index)
 
 # Inne zasoby
-## [Dynamics 365 for Operations — słownik](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
-## [Nowości i zmiany](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+## [Glosariusz terminów używanych w rozwiązaniu Dynamics 365 for Retail](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/retail/toc.json)
+## [Nowości i zmiany](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/retail/toc.json)
 
