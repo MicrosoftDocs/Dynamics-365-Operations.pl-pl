@@ -3,7 +3,7 @@ title: "Opcje transakcji środków trwałych"
 description: "W tym artykule opisano różne dostępne metody tworzenia transakcji na środkach trwałych."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

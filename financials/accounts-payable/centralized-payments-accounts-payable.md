@@ -3,7 +3,7 @@ title: "Scentralizowane płatności dla rozrachunków z dostawcami"
 description: "Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą jednej firmy, która obsługuje wszystkie płatności. Dlatego tych samych płatności nie trzeba wpisywać w wielu firmach. Ten artykuł zawiera przykłady pokazujące sposób księgowania scentralizowanych płatności w różnych scenariuszach."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

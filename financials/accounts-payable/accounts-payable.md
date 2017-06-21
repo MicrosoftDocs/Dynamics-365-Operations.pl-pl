@@ -3,7 +3,7 @@ title: "Rozrachunki z dostawcami — strona główna"
 description: "Ten temat zawiera omówienie modułu Rozrachunki z dostawcami."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

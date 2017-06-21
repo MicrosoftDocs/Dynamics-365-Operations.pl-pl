@@ -3,7 +3,7 @@ title: "Analiza kosztów zlecenia produkcyjnego"
 description: "Ten artykuł zawiera informacje o analizach kosztów, jakie można wykonywać na zakończonych i bieżących zleceniach produkcyjnych. Koszty szacowane i rzeczywiste można analizować na stronie Obliczanie ceny lub w raporcie Szacowanie kosztów i wycena. Można oglądać informacje o szacowanych i rzeczywistych kosztach (oraz ilościach) dla każdego składnika, operacji marszruty i kosztu pośredniego."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

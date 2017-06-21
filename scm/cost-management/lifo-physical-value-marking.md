@@ -3,7 +3,7 @@ title: "LIFO z wartością fizyczną i oznaczeniami"
 description: "Ostatni na wejściu — pierwszy na wyjściu (Last in, first out; LIFO) to model magazynu, w którym ostatnie (najnowsze) przyjęcia na magazyn są wydawane jako pierwsze. Rozchody zapasów są rozliczane w kolejności odwrotnej do odbierania towarów w magazynie, na podstawie daty transakcji magazynowej."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

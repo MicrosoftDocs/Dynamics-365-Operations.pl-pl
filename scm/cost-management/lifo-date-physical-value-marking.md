@@ -3,7 +3,7 @@ title: "LIFO wg daty z wartością fizyczną i oznaczeniami"
 description: "Ostatnie przyszło, pierwsze wyszło na dzień (LIFO na dzień) to model magazynu oparty na metodzie LIFO. Rozchody zapasów są rozliczane w kolejności odwrotnej do odbierania towarów w magazynie, na podstawie daty transakcji magazynowej. W metodzie LIFO wg daty jeśli nie ma żadnego przyjęcia przed wydaniem, wydanie jest rozliczane względem dowolnego przyjęcia po dacie wydania. Kilka rozchodów tego samego dnia można rozliczyć w kolejności ostatni rozchód, ostatnie przyjęcie."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

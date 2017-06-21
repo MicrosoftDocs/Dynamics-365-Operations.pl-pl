@@ -3,7 +3,7 @@ title: "Grupy obliczeń BOM"
 description: "Ten artykuł zawiera informacje o grupach obliczania dla list składowych (BOM) oraz ich konfigurowaniu. Aby uruchomić obliczanie BOM, należy utworzyć grupy obliczania i przypisać je do poszczególnych towarów albo utworzyć domyślną grupę obliczania. Ustawienia obliczania z grupy obliczania są następnie używane jako wartości domyślne na stronie Obliczanie BOM podczas obliczania listy składowej."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Zaawansowane opcje formatowania w raportowaniu finansowym
 description: "Podczas tworzenia raportu w module raportowania finansowego są dostępne dodatkowe funkcje formatowania, włącznie z filtrami wymiarów, ograniczeniami kolumn i jednostek sprawozdawczych, wierszami niedrukowanymi i instrukcjami IF/THEN/ELSE w obliczeniach."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

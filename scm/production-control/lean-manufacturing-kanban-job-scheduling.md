@@ -3,7 +3,7 @@ title: "Planowanie zadań w systemie Kanban dla produkcji oszczędnej"
 description: "Ten artykuł zawiera informacje o kontroli wizualnej nad planowaniem zadań Kanban oraz o różnych sposobach planowania zadań w systemie Kanban."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

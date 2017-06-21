@@ -3,7 +3,7 @@ title: "Planowanie zadań"
 description: "Ten artykuł zawiera informacje o planowaniu zadań, co jest bardziej szczegółową formą planowania niż planowanie operacji. Można używać planowania zadań do tworzenia harmonogramu pojedynczych zadań lub zamówień w sklepie i kontrolowania środowiska produkcyjnego."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

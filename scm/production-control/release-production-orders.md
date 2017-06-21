@@ -3,7 +3,7 @@ title: "Zwalnianie zleceń produkcyjnych"
 description: "Zwolnione zlecenie produkcyjne to zlecenie zatwierdzone do produkcji. Określenie „zwolnione” opisuje stan w cyklu życia zlecenia produkcyjnego, gdzie jest ono dostępne do wykonania na wydziale produkcji i dla procesów magazynowych."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

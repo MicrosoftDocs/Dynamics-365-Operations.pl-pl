@@ -3,7 +3,7 @@ title: "Rozliczenie płatności częściowej odbiorcy, która ma wiele okresów 
 description: "W tym artykule przedstawiono sposób rozliczania częściowych płatności od odbiorców w przypadku istnienia wielu okresów rabatu."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

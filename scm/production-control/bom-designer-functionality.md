@@ -3,7 +3,7 @@ title: Funkcje konstruktora BOM
 description: "W tym artykule opisano, jak za pomocą strony projektanta BOM zaprojektować struktury drzewa dla list składowych (BOM) oraz ich używać. Można kliknąć przycisk Ustawienia i wybierać różne konfiguracje oraz określić rodzaj informacji wyświetlanych w wierszach drzewa."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

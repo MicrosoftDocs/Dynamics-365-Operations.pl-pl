@@ -3,7 +3,7 @@ title: Wycofywanie stanu zlecenia produkcyjnego
 description: "W tym temacie opisano sposób wycofania stanu zlecenia produkcyjnego."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

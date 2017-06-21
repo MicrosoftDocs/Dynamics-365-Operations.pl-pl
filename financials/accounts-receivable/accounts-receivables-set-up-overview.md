@@ -3,7 +3,7 @@ title: "Konfiguracja modułów Rozrachunki z odbiorcami i Kredyty i windykacja"
 description: "Odpowiednie skonfigurowanie modułów Rozrachunki z odbiorcami oraz Kredyty i windykacja umożliwi śledzenie faktur i płatności przychodzących od odbiorców."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

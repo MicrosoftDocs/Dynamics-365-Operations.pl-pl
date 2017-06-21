@@ -3,7 +3,7 @@ title: "Rozliczanie płatności częściowej dostawcy przed datą rabatu z ostat
 description: "Ten artykuł prowadzi przez scenariusz, w którym jest dokonywanych wiele płatności częściowych — niektóre w okresie rabatu gotówkowego, a inne poza okresem rabatu gotówkowego."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

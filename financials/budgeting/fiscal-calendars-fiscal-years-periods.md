@@ -3,7 +3,7 @@ title: Kalendarze, lata i okresy obrachunkowe
 description: "W tym artykule omówiono narzędzia kalendarzy obrachunkowych, lat obrachunkowych i okresów oraz możliwości ich wykorzystywania dla firm, środków trwałych i budżetowania."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

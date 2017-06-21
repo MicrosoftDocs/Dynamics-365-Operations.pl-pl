@@ -3,7 +3,7 @@ title: Transakcje rejestru VAT dla Europy Wschodniej
 description: "Ten temat zawiera informacje o transakcjach rejestru VAT dla Estonii, Litwy, Czech, Węgier, Łotwy i Polski."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

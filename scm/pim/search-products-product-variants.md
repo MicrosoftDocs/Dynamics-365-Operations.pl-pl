@@ -3,7 +3,7 @@ title: "Wyszukiwanie produktów i wariantów produktów podczas wprowadzania zam
 description: "Za pomocą pola <strong>Numer pozycji</strong> można szukać produktów i wariantów produktów podczas ręcznego tworzenia wiersza zamówienia sprzedaży lub zakupu.  Dzięki temu można szybko znaleźć warianty produktu, gdy znasz tylko fragment konfiguracji lub jeden wymiar produktu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

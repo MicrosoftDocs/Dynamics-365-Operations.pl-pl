@@ -3,7 +3,7 @@ title: "Salda głównego konta księgowego"
 description: "W tym artykule opisano dwa sposoby wyświetlania sald kont księgi głównej — ze strony listy Bilans próbny i za pomocą raportów finansowych. Omówiono także sposoby aktualizacji sald zestawów wymiarów."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

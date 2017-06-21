@@ -3,7 +3,7 @@ title: "Edytowanie identyfikator faktur w zamówieniach sprzedaży dla Europy Ws
 description: "Ten temat zawiera informacje o parametrach rozrachunków z odbiorcami, które wpływają na numery faktur w dokumentach dostawy i fakturach dla Czech, Estonii, Węgier, Litwy, Łotwy i Polski."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

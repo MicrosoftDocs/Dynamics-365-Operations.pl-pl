@@ -3,7 +3,7 @@ title: "Rozliczanie płatności częściowej i płatności ostatecznej odbiorcy 
 description: "Ten artykuł zawiera scenariusze pokazujące metody rejestrowania częściowych płatności od odbiorcy oraz stosowania rabatów gotówkowych w trakcie okresu rabatu gotówkowego."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Wymagania konfiguracji produkcji
 description: "Ten artykuł zawiera informacje o konfiguracji, jaką należy zapewnić przed rozpoczęciem używania modułu Kontrola produkcji."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

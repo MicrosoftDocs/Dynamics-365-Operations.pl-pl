@@ -3,7 +3,7 @@ title: "Preferencje użytkownika w projektancie raportów finansowych"
 description: "W tym artykule wyjaśniono, jak skonfigurować preferencje użytkownika, aby dostosować swoje interakcje w projektancie raportów finansowych i kontrolować zachowanie interfejsu podczas pierwszego logowania. Można też kontrolować sposób wyświetlania indywidualnych raportów, biblioteki raportów i domyślnych lokalizacje plików."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

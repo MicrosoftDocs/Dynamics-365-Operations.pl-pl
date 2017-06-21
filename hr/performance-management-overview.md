@@ -3,10 +3,10 @@ title: "Omówienie zarządzania wydajnością"
 description: "Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi. Z kolei menedżerowie mogą dostarczać informacje zwrotne i wskazówki pracownikom."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma

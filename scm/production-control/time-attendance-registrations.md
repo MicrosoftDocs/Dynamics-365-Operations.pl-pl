@@ -3,7 +3,7 @@ title: Rejestracja czasu i frekwencji
 description: "Pracownicy odpowiedzialni za rejestrację czasu mogą wprowadzać różne zdarzenia, na przykład wejścia, wyjścia, działania pośrednie i nieobecności. W tym artykule opisano rejestracje, ich obliczanie i zatwierdzanie, a także stosowanie przepływu pracy w celu dodania struktury i automatycznego zatwierdzania do procesu zatwierdzania kart czasu pracy."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Średnia krocząca kosztu własnego"
 description: "Proces zamknięcia zapasów umożliwia rozliczenie transakcji wydania względem transakcji przyjęcia metodą wyceny zapasów wybranej w grupie modeli pozycji towaru. Jednak w okresie przed zamknięciem zapasów system oblicza średnią kroczącą kosztu własnego, która jest zazwyczaj używana podczas księgowania transakcji."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

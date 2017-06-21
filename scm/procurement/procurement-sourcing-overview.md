@@ -3,7 +3,7 @@ title: "Omówienie zaopatrzenia i sourcingu"
 description: "Ten artykuł zawiera omówienie funkcji dostępnych w module Zaopatrzenie i sourcing."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

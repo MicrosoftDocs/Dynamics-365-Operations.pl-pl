@@ -3,7 +3,7 @@ title: "Zasoby rozwiązania Operations"
 description: "Zasoby operacyjne wykonują działania projektu lub procesu produkcji. Zasoby mogą być różnego typu i mieć różne możliwości."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

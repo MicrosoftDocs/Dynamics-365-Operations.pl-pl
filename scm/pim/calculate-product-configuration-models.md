@@ -3,7 +3,7 @@ title: "Obliczenia dla modeli produktu w konfiguracji — często zadawane pytan
 description: "W tym artykule opisano obliczenia dla modeli konfiguracji produktu i wyjaśniono sposób korzystania z obliczeń wraz z ograniczeniami."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

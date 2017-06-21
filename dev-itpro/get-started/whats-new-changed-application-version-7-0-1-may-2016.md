@@ -3,7 +3,7 @@ title: "Nowości i zmiany w aplikacji Dynamics AX w wersji 7.0.1 (maj 2016)"
 description: "W tym artykule opisano nowe oraz zmienione funkcje dostępne w aplikacji Microsoft Dynamics AX w wersji 7.0.1. Ta wersja została wydana w maju 2016 r. i ma numer kompilacji 7.0.1265.23014."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

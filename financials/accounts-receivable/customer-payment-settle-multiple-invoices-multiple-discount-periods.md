@@ -3,7 +3,7 @@ title: "Używanie jednej płatności odbiorcy do rozliczenia wielu faktur obejmu
 description: "W tym artykule przedstawiono sposób zapłaty wielu faktur, gdy każda faktura kwalifikuje się do rabatu gotówkowego. Scenariusze w tym artykule pokazują różnice w stosowanych rabatach gotówkowych zależnie od dnia uregulowania płatności."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

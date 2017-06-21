@@ -3,7 +3,7 @@ title: "Rozrachunki z odbiorcami — strona główna"
 description: "Moduł Rozrachunki z odbiorcami umożliwia śledzenie faktur dla odbiorców oraz płatności przychodzących."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

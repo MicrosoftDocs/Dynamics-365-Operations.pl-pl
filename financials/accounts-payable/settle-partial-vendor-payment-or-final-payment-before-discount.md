@@ -3,7 +3,7 @@ title: "Rozliczanie płatności częściowej i płatności ostatecznej dostawcy 
 description: "Ten artykuł prowadzi przez scenariusz, w którym są dokonywane częściowe płatności za fakturę od dostawcy z zastosowaniem rabatu gotówkowego."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Świadectwa wywozowe UE"
 description: "Ten artykuł zawiera informacje dotyczące świadectw wywozowych umożliwiających wprowadzanie towarów na teren Unii Europejskiej (UE)."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

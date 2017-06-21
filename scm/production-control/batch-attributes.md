@@ -3,7 +3,7 @@ title: Atrybuty partii
 description: "Ten artykuł zawiera informacje o atrybutach partii. Atrybuty partii to cechy surowców i produktów gotowych wchodzących w skład partii zapasów. W artykule wyjaśniono też, jak przypisywać atrybuty partii i jak szukać według nich podczas rezerwowania partii."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

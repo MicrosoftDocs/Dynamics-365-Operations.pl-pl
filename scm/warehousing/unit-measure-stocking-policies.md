@@ -3,7 +3,7 @@ title: "Jednostka miary i zasady składowania"
 description: "W tym artykule opisano, jak domyślne jednostki, sekwencje jednostek i konwersje jednostek są używane w procesach magazynowych."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

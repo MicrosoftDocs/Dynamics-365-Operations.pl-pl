@@ -3,7 +3,7 @@ title: "Materiały opakowaniowe i związane z nimi opłaty"
 description: "Opłaty za materiały opakowań są uiszczane firmie recyklingowej w pewnych odstępach czasu. Płaci się kwotę według jednostki masy za każdy materiał, z którego jest wykonana jednostka opakowania. Opłaty za materiały opakowań są obliczane i zgłaszane, ale transakcje finansowe nie są księgowane, ponieważ opłaty nie są uznawane za podatki należne właściwemu organowi."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Naruszenia zasad inspekcji i sprawy
 description: "W tym artykule wyjaśniono, jak są generowane sprawy inspekcji na podstawie naruszeń reguł inspekcji. Znajdują się tu także informacje o różnych sposobach, w jakie zasady inspekcji wykorzystują funkcje zakresu dat wyboru dokumentów."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

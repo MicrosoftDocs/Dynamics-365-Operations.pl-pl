@@ -3,7 +3,7 @@ title: Autoryzowanie skorygowanej prognozy
 description: "Nie wszystkie prognozy muszą być autoryzowane natychmiast. W tym artykule wyjaśniono, jak można określić okres, dla którego prognoza jest autoryzowana. Opisano również, jak można autoryzować prognozę dla konkretnych firm i modeli prognozy."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

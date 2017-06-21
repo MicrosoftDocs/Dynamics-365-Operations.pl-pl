@@ -3,7 +3,7 @@ title: "Zasady podziału księgowań"
 description: "Ten artykuł zawiera informacje o zasadach podziału księgowań oraz opis opcji dostępnych do przetwarzania tych zasad. Zasady podziału księgowań są używane do przypisywania kwot pieniężnych z dokumentu źródłowego do określonych kont księgowych."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

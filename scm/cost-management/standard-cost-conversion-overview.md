@@ -3,7 +3,7 @@ title: "Omówienie konwersji na koszt standardowy"
 description: "Ten artykuł zawiera omówienie procesu ułatwiające konfigurowanie i wykonywanie konwersji na koszt standardowy. Podane kroki należy wykonać po spełnieniu warunków wstępnych konwersji na koszt standardowy."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

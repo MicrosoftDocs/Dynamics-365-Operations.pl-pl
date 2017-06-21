@@ -3,7 +3,7 @@ title: "Amortyzacja za pozostały liniowy okres użytkowania"
 description: "Ten artykuł zawiera omówienie metody amortyzacji Liniowy pozostały okres użytkowania."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

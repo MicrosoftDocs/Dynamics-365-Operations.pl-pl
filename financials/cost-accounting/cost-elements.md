@@ -3,7 +3,7 @@ title: "Wymiary składników kosztów"
 description: "Wymiary składników kosztów są jednym z filarów rachunku kosztów. Służą do kategoryzowania i śledzenia, dokąd płyną koszty."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej"
 description: "Ten temat zawiera informacje o stronie Transakcje w rozliczeniu dla odbiorców i dostawców."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

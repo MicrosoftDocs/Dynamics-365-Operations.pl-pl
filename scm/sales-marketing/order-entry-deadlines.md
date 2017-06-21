@@ -3,7 +3,7 @@ title: "Terminy realizacji zamówień"
 description: "Ten artykuł zawiera informacje o terminach wprowadzania zamówień. Termin wprowadzania zamówień to graniczny czas decydujący o tym, czy zamówienie klienta jest traktowane (i realizowane) tak jakby zostało odebrany w dniu bieżącym lub następnym."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

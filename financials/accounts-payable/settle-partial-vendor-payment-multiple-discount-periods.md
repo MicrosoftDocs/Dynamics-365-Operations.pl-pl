@@ -3,7 +3,7 @@ title: "Rozliczenie płatności częściowej dostawcy, która ma wiele okresów 
 description: "Ten artykuł prowadzi przez scenariusz, w którym jest dokonywanych wiele częściowych płatności do dostawcy oferującego wiele różnych rabatów gotówkowych."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Omówienie konsolidacji i eliminacji"
 description: "Ten artykuł zawiera ogólne informacje o procesie konsolidacji i eliminacji. Znajdują się w nim również odpowiedzi na wybrane często zadawane pytania."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Obsługa rabatów gotówkowych w przypadku nadpłat"
 description: "Ten artykuł zawiera scenariusze pokazujące sposób obsługi płatności, gdy odbiorca ma rabat gotówkowy, a mimo to nawet nadpłaca."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

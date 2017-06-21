@@ -3,7 +3,7 @@ title: Informacja zwrotna o produkcji
 description: "Ten artykuł zawiera omówienie informacji zwrotnych o produkcji, dzięki którym pracownicy wiedzą o przebiegu zadań produkcji. Znajdują się tu również informacje o różnych sposobach aktualizowania informacji zwrotnych z produkcji."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

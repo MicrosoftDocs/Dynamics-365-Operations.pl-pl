@@ -3,7 +3,7 @@ title: "Przeszacowanie w walucie obcej dla księgi głównej"
 description: "W tym temacie omówiono następujące aspekty procesu przeszacowania w walucie obcej dla księgi głównej: konfiguracja, uruchamianie procesu, wykonywanie obliczeń dla procesu oraz wycofywanie transakcji przeszacowania, jeśli okaże się to konieczne."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

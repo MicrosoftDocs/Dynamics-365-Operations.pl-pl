@@ -3,7 +3,7 @@ title: "Planowanie główne dla zapotrzebowania oddziału, magazyn niewymagany"
 description: "W tym temacie opisano sposób planowania towaru, który ma wymiar zapotrzebowania „oddział”."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

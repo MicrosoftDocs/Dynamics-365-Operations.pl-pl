@@ -3,7 +3,7 @@ title: "Zaawansowane uzgadnianie konta bankowego, import dla formatu MT940 — u
 description: "Aby zapewnić obsługę formatu MT940, trzeba dodać numer kolejny do importowanej jednostki wyciągu bankowego."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

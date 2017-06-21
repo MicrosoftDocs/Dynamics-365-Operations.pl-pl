@@ -3,7 +3,7 @@ title: 175% amortyzacja degresywna
 description: "Ten artykuł zawiera omówienie metody amortyzacji 175% amortyzacja degresywna."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

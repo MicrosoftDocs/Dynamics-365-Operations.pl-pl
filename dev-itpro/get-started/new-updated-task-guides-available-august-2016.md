@@ -3,7 +3,7 @@ title: "Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)"
 description: "Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z sierpnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

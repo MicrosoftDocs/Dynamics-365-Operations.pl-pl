@@ -3,7 +3,7 @@ title: "Rozliczanie płatności częściowej odbiorcy przed datą rabatu z ostat
 description: "W tym artykule omówiono wpływ rozliczania płatności za faktury dla odbiorców. Scenariusz koncentruje się na skutkach w księdze podrzędnej, a nie w księdze głównej."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

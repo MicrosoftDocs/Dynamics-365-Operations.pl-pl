@@ -3,7 +3,7 @@ title: "Rozwiązywanie problemów z budżetowaniem stanowisk"
 description: "Ten artykuł zawiera odpowiedzi na pytania, które mogą się pojawić podczas konfigurowania budżetowania stanowisk. Odpowiada na często zadawane pytania na temat tworzenia składników kosztu budżetowego, grup wynagrodzeń i siatek wynagrodzeń."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

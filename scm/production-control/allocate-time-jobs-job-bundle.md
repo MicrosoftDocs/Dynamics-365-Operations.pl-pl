@@ -3,7 +3,7 @@ title: "Alokowanie czasu do zadań w pakiecie zadań"
 description: "W module Uruchomienie produkcji można łączyć zadania w pakiety. Następnie można uruchomić wiele zadań jednocześnie na stronie Lista zadań."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

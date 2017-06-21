@@ -3,7 +3,7 @@ title: "Korzystanie z funkcji śledzenia rozłożenia"
 description: "W tym artykule wyjaśniono, jak za pomocą funkcji śledzenia można badać przyczyny stojące za wynikiem rozłożenia zamówienia."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

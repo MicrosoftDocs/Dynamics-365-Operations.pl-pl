@@ -3,7 +3,7 @@ title: "Środki trwałe — strona główna"
 description: "Środki trwałe to składniki majątku, takie jak budynki, pojazdy, grunty, maszyny i urządzenia, które należą do osoby fizycznej lub organizacji."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

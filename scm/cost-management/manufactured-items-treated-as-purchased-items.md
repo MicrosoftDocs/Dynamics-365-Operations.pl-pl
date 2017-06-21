@@ -3,7 +3,7 @@ title: "Konfigurowanie produktów, które mogą być produkowane lub zamawiane"
 description: "Produkty można pozyskiwać na różne sposoby — mogą być produkowane (wytwarzane) lub zamawiane (kupowane). W tym artykule opisano niektóre typowe kwestie do rozważenia podczas konfigurowania dla produktów obsługi pozyskiwania z wielu źródeł."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

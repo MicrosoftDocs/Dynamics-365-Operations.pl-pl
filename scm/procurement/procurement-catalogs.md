@@ -3,7 +3,7 @@ title: Katalogi zaopatrzenia
 description: "W tym artykule opisano w sposób ogólny, jak specjaliści ds. zakupów mogą konfigurować katalogi zaopatrzenia i nimi zarządzać. Katalogi zaopatrzenia definiują towary i usługi, które pracownicy firmy mogą zamawiać do użytku wewnętrznego."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Wybieranie metody obliczeń podatków w polu podstawy"
 description: "W tym artykule opisano opcje dostępne w polu Podstawy opodatkowania na stronie kodów podatków oraz sposób obliczania podatku na podstawie wybranej opcji kodu podatku."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Zarządzanie gotówką i bankami — strona główna"
 description: "Moduł Zarządzanie gotówką i bankami służy do obsługi kont bankowych firmy i instrumentów finansowych skojarzonych z tym kontami bankowymi."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

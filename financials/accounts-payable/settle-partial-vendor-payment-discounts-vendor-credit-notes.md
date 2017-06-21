@@ -3,7 +3,7 @@ title: "Rozliczenie płatności częściowej dostawcy, do której zastosowano ra
 description: "Ten artykuł prowadzi przez scenariusz, w którym faktura korygująca jest rozliczana względem faktury."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

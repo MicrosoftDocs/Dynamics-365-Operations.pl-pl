@@ -3,7 +3,7 @@ title: Wersje wyceny
 description: "Ten artykuł zawiera informacje o wersjach wyceny, zarządzaniu nimi oraz o typach danych, które można w nich uwzględnić. Głównym celem wersji wyceny jest objęcie rekordów kosztów dotyczących towarów, kategorii kosztów oraz wzorów obliczania kosztów pośrednich."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

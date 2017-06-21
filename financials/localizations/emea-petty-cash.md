@@ -3,7 +3,7 @@ title: "Gotówka podręczna dla krajów Europy Wschodniej"
 description: "Ten temat zawiera informacje o funkcji gotówki podręcznej, która pozwala użytkownikom w Estonii, na Litwie, w Czechach, na Węgrzech, na Łotwie, w Polsce i w Rosji uwzględniać operacje gotówkowe w systemie."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Wymagania wstępne dotyczące konwersji na koszt standardowy"
 description: "W tym temacie omówiono zadania do wykonania przed dokonaniem konwersji na koszt standardowy."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

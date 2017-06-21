@@ -3,7 +3,7 @@ title: Akredytywy i inkasa eksportowe
 description: "Ten artykuł zawiera ogólne informacje o akredytywach i inkasie importowym. Oba rodzaje dokumentów bankowych są często używane do kupna i sprzedaży towarów między krajami."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

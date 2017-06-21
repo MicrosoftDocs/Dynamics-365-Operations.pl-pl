@@ -3,7 +3,7 @@ title: Faktury zaliczkowe i zaliczki
 description: "Ten artykuł zawiera opis i porównanie dwóch metod, których organizacje używają do obsługi zaliczek (przedpłat). W jednej metodzie należy utworzyć fakturę zaliczkową skojarzoną z zamówieniem zakupu. W drugiej metodzie tworzy się załączniki arkusza zaliczki poprzez utworzenie zapisów w arkuszu i oznaczenie ich jako załączników arkusza zaliczki."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

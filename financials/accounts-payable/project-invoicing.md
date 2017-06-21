@@ -3,7 +3,7 @@ title: Fakturowanie projektu
 description: "Ten artykuł zawiera omówienie zasad fakturowania projektów rozliczanych według czasu i materiałów oraz projektów o stałej cenie. Znajdują się tu informacje dotyczące propozycji faktur (faktur wstępnych), kontroli faktur, fakturowania akonto, wystawiania faktur przed dostawców i faktur korygujących."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
