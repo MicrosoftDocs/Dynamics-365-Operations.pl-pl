@@ -3,7 +3,7 @@ title: "Symulacja zmian kosztów przy użyciu wersji wyceny kosztów planowanych
 description: "W tym artykule wyjaśniono, jak symulować wpływ zmian kosztów na obliczone koszty wytwarzanego towaru poprzez użycie osobnej wersji wyceny dla kosztów planowanych."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

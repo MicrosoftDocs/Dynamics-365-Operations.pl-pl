@@ -3,7 +3,7 @@ title: Konfigurowanie konsygnacji
 description: "W tym temacie wyjaśniono sposób konfigurowania operacji konsygnacji przychodzącej dla zapasów."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

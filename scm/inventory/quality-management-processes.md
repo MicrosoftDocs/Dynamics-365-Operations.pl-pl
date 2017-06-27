@@ -3,7 +3,7 @@ title: "Procesy zarządzania jakością"
 description: "Ten artykuł zawiera informacje o procesie zarządzania jakością produktów niespełniającymi norm. Opisano w nim, jak korzystać z funkcji kontroli jakości, jak definiować i obsługiwać braki zgodności oraz jak obsługiwać korekty."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

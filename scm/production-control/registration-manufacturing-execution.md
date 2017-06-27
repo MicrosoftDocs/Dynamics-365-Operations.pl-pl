@@ -3,7 +3,7 @@ title: Rejestracja w celu uruchomienia produkcji
 description: "W tym temacie opisano podstawowe pojęcia i terminy, które należy znać, aby prawidłowo skonfigurować moduł Wykonywanie produkcji i go używać."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

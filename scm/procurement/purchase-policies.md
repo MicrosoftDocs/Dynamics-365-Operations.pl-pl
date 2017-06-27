@@ -3,7 +3,7 @@ title: "Zasady zakupów"
 description: "Ten artykuł zawiera informacje o zasadach zakupów. Zasady zakupów to zbiór reguł, który steruje procesem zapotrzebowań. Zasady zakupów ułatwiają administratorom zaopatrzenia wdrażanie strategii zaopatrzenia poprzez utworzenie struktury zasad dopasowanej do strategicznych wymagań zakupowych organizacji."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

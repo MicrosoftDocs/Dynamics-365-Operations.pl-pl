@@ -3,7 +3,7 @@ title: "Umowy z dostawcą z płatnością po otrzymaniu zapłaty"
 description: "Ten artykuł zawiera omówienie warunków płatności po otrzymaniu zapłaty (PWP) stosowanych w umowach z dostawcami. Warunki PWP pozwalają częściowo lub całkowicie wstrzymać płatności dla dostawcy do czasu, aż zapłaci odbiorca projektu. Ten artykuł zawiera także realny przykład wykorzystania warunków PWP w projekcie."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

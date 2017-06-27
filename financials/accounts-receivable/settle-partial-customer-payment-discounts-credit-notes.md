@@ -3,7 +3,7 @@ title: "Rozliczenie płatności częściowej odbiorcy, do której zastosowano ra
 description: "Ten artykuł prowadzi przez scenariusz, w którym rabat gotówkowy jest stosowany do faktury korygującej w sytuacji, gdy również oryginalna faktura miała rabat gotówkowy."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

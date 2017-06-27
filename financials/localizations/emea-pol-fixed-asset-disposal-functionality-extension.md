@@ -3,16 +3,16 @@ title: "Likwidacja środków trwałych dla Polski"
 description: "Ten temat zawiera informacje o funkcjonalności likwidacji środków trwałych dla użytkowników w firmach w Polsce."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 266964
-ms.assetid: 99f3a20c-2e2e-4fc7-b846-3d86802174c4
 ms.search.region: Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31

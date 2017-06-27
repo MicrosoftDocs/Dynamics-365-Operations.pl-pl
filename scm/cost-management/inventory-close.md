@@ -3,7 +3,7 @@ title: "Zamknięcie zapasów"
 description: "W ramach procesu rozliczania transakcji rozchodu z transakcjami przychodu można również wybrać aktualizowanie księgi głównej, tak aby uwzględniała wprowadzane korekty."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

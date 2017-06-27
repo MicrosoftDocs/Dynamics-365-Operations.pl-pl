@@ -3,7 +3,7 @@ title: "Kategorie kosztów używane w kontroli produkcji i rachunkowości zarzą
 description: "Niektóre typy działań produkcyjnych mogą mieć zastosowanie do szacowania i raportowania czasu trwania projektu. Ten artykuł zawiera informacje o kategoriach kosztów, które należy zdefiniować dla tego typu działań produkcyjnych na potrzeby produkcji i projektu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

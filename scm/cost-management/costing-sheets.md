@@ -3,7 +3,7 @@ title: Arkusze wyceny
 description: "Konfiguracja arkusza wyceny obejmuje dwa cele. Pierwszym celem jest określenie formatu wyświetlania informacji o kosztach sprzedanych towarów, wyprodukowanych towarów oraz zlecenia produkcyjnego. Sformatowane wyświetlenie nosi nazwę arkusz wyceny. Drugim celem jest określenie podstawy obliczania kosztów pośrednich. Konfiguracja arkusza wyceny opiera się na funkcji grupy kosztów dla wyświetlania informacji oraz wzorów obliczania kosztów pośrednich. Oba cele konfigurowania arkusza wyceny są opisane w tym artykule."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

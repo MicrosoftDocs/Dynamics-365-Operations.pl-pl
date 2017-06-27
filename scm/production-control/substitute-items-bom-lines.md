@@ -3,7 +3,7 @@ title: "Zastępowanie materiałów w procesie produkcji"
 description: "W tym temacie opisano sposób zastępowania materiałów w procesie produkcji."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

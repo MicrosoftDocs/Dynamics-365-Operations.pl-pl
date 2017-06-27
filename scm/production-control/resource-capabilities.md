@@ -3,7 +3,7 @@ title: "Możliwości zasobu"
 description: "Ten artykuł zawiera informacje o organizowaniu możliwościach zasobów. Możliwość to zdolność zasobu operacyjnego do wykonania określonego działania. Wyjaśniono, jak możliwości i związane z nimi funkcje, takie jak poziom biegłości i priorytet, służą do wybierania zasobów odpowiednich dla działań."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

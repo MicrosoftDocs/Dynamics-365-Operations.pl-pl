@@ -3,7 +3,7 @@ title: "Ponowne obliczanie kosztów wymiany i wartości ubezpieczenia dla grup �
 description: "W tym artykule wyjaśniono proces aktualizowania kosztów wymiany i wartości ubezpieczenia środków trwałych."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

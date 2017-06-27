@@ -3,15 +3,15 @@ title: Obliczanie rabatu wiersza od ceny jednostkowej dla Polski
 description: "Dla firm w Polsce rabat wiersza może być obliczany na podstawie ceny jednostkowej z wiersza faktury, a nie z kwoty wiersza. Ten temat zawiera informacje o metodzie obliczania rabatu wiersza względem ceny jednostkowej i wyjaśnienia, jak skonfigurować tę funkcję."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 ms.custom: 263424
-ms.assetid: d0645f8d-05a4-4212-b6de-975a625b1fe0
 ms.search.region: Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30

@@ -3,7 +3,7 @@ title: "Konfiguracja księgowania międzyfirmowego"
 description: "W tym temacie wyjaśniono, jak skonfigurować księgowanie międzyfirmowe, co pozwoli używać arkuszy międzyfirmowych do alokacji księgi i arkuszy finansowych, takich jak arkusze dzienne, arkusze faktur od dostawców i arkusze płatności."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

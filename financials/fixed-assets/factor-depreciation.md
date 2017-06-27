@@ -3,7 +3,7 @@ title: Amortyzacja czynnikowa
 description: "Ten artykuł zawiera omówienie metody amortyzacji współczynnikowej."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

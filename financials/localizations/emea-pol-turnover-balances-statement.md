@@ -3,15 +3,15 @@ title: "Zestawienie obrotów i sald dla Polski"
 description: "Ten temat zawiera informacje o funkcji zestawienia obrotów i sald dla Polski."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 ms.custom: 264354
-ms.assetid: 55291998-d863-4d02-ba13-65f1ff0b227e
 ms.search.region: Poland
 ms.author: v-semaz
 ms.search.validFrom: 2016-11-30

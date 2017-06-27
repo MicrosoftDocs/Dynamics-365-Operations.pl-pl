@@ -3,7 +3,7 @@ title: Zapytania ofertowe (RFQ)
 description: "W tym artykule omówiono funkcjonalność zapytań ofertowych (ZO), które organizacje wystawiają, kiedy muszą kupić towary lub usługi, a chcą otrzymać konkurencyjne oferty od kilku dostawców. W ZO dostawcy są proszeni o podanie cen i terminów dostaw dla ilości towarów określonych przez użytkownika. Można również poprosić dostawców, aby określili, czy są jakieś dodatkowe opłaty, takie jak koszty wysyłki, albo zniżki za duże zamówienia lub szybką zapłatę faktury."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

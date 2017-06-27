@@ -3,7 +3,7 @@ title: "Ustawienia wyświetlania urządzenia przenośnego używanego w magazynie
 description: "W tym artykule opisano konfigurowanie wyglądu ekranu urządzenia przenośnego oraz mapowanie skrótów klawiaturowych na formanty takie jak przyciski."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,10 +3,10 @@ title: "Tworzenie planów wynagrodzeń o zmiennej wysokości"
 description: "Wynagrodzenie o zmiennej wysokości to nieregularne wynagrodzenie pracownika, takie jak premie lub akcje. Ten temat zawiera opis składników, które muszą zostać skonfigurowane, zanim będzie można używać wynagrodzenia o zmiennej wysokości i rejestrować pracowników w systemie wynagrodzeń o zmiennej wysokości."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 ms.search.form: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan
 audience: Application User
@@ -17,7 +17,7 @@ ms.assetid: fc3a394e-9ac6-4f8c-9162-dc16ec22720f
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 26ed9de01bffbcd468ac0cf1b9eb3f101707eb04

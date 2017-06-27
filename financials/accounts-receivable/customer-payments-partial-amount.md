@@ -3,7 +3,7 @@ title: "Częściowa płatność odbiorcy"
 description: "Czasami odbiorcy dokonują płatności na kwoty niższe niż kwota faktury. W tym artykule opisano różne opcje postępowania w takiej sytuacji. Faktycznie dostępne opcje zależą od konkretnych wymagań biznesowych i istniejącej konfiguracji."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,16 +3,16 @@ title: "Amortyzacja środków trwałych dla Polski"
 description: "Ten temat zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosting
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 264274
-ms.assetid: dcdabcbe-84e5-4615-aa39-2aa055b36da9
 ms.search.region: Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31

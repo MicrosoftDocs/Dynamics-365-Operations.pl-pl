@@ -3,7 +3,7 @@ title: "Tłumaczenia informacji dotyczących produktów — często zadawane pyt
 description: "W tym temacie opisano sposób zarządzania tłumaczeniami produktów, wartości wymiarów produktu i atrybutów produktu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Ustawienia zapotrzebowania
 description: "Ustawienia zapotrzebowania są używane przez planowanie główne do obliczania zapotrzebowań na towary."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
