@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PlCustPackageHolder, PlCustPackageReturn, PlInventPackageTable, PlInventPackageTrans
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 273043
 ms.assetid: decdb3af-9fc3-4aff-add1-bbb9d2eadc27
 ms.search.region: Poland

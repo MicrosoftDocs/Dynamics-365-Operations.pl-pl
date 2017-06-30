@@ -1,12 +1,12 @@
 ---
-title: Zasoby ludzkie
-description: "Moduł Zasoby ludzkie upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Ponadto dla pracowników działu zasobów ludzkich stanowi platformę zarządzania odnośnymi obszarami. Te obszary obejmują rekrutację i utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami."
+title: Microsoft Dynamics 365 for Talent
+description: "Rozwiązanie Talent upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Te procesy obejmują utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/19/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
@@ -16,23 +16,25 @@ ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 213d1dc69ac0f6dc10138e185625a142e107f073
+ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
+ms.openlocfilehash: e0f41445c621a317fcdccef6cb08766dd6fac279
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
 
-# <a name="welcome-to-human-resources"></a>Zasoby ludzkie — Zapraszamy!
+# <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Zapraszamy do korzystania z rozwiązania Microsoft Dynamics 365 for Talent
 
 [!include[banner](includes/banner.md)]
 
-Moduł Zasoby ludzkie upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Ponadto dla pracowników działu zasobów ludzkich stanowi platformę zarządzania odnośnymi obszarami. Te obszary obejmują rekrutację i utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami.
+Rozwiązanie Microsoft Dynamics 365 for Talent upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Te procesy obejmują utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami. Ponadto dla pracowników działu zasobów ludzkich stanowi platformę zarządzania odnośnymi obszarami.
 
-Za pomocą modułu Zasoby ludzkie możesz wykonywać następujące zadania:
+Rozwiązanie Dynamics 365 for Talent jest blisko związane z modułem Zasoby ludzkie w rozwiązaniu Dynamics 365 for Finance and Operations Enterprise Edition. Te same funkcje mogą być dostępne w obu tych produktach. W związku z tym w tematach, które dotyczą głównie modułu Zasoby ludzkie, będzie używana nazwa produktu Dynamics 365 for Finance and Operations Enterprise Edition, a w tematach dotyczących głównie rozwiązania Talent będzie używana nazwa produktu Dynamics 365 for Talent. Tematów, które zostały napisane dla jednego produktu można używać w odniesieniu do tych samych funkcji w powiązanym produkcie.
+
+Za pomocą rozwiązania Talent możesz wykonywać następujące zadania:
 
 > + Administrowanie strukturami organizacyjnymi.
 > + Obsługa kompleksowych informacji o pracowniku od zatrudnienia do dnia odejścia na emeryturę.
@@ -42,25 +44,19 @@ Za pomocą modułu Zasoby ludzkie możesz wykonywać następujące zadania:
 > + Zarządzanie kompetencjami pracowników.
 > + Przeglądanie wydajności i implementowanie celów pracownika.
 > + Konfigurowanie, dostarczanie i analizowanie kursów szkoleniowych, które obejmują terminarze, ścieżki i sesje.
-> + Rekrutacja pracowników i śledzenie kandydatów.
 
-<a name="develop-a-human-resources-strategy"></a>Opracowywanie strategii dotyczącej zasobów ludzkich
+<a name="develop-a-strategy-for-managing-your-human-resources"></a>Opracowywanie strategii zarządzania zasobami ludzkimi
 ---------------------------------------------------------
 
-Podczas pracy z użyciem modułu Zasoby ludzkie możesz określić strukturę swojej organizacji, używając elementów, takich jak działy, funkcje i stanowiska. Są to jedne z podstawowych elementów, które można skonfigurować w module Zasoby ludzkie. Poszczególni pracownicy etatowi są przypisywani do stanowisk, które są skojarzone z funkcjami.
+Podczas pracy z użyciem rozwiązania Talent możesz określić strukturę swojej organizacji, używając elementów, takich jak działy, funkcje i stanowiska. Są to jedne z podstawowych elementów, które można skonfigurować. Poszczególni pracownicy etatowi są przypisywani do stanowisk, które są skojarzone z funkcjami.
 
 -   [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](departments-jobs-positions.md)
 -   [Konfigurowanie specyficznych dla firmy parametrów modułu Zasoby ludzkie](set-up-company-specific-hr-parameters.md)
 -   [Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach](set-up-hr-parameters-across-legal-entities.md) 
 
-## <a name="recruit-hire-and-motivate-employees"></a>Rekrutacja, zatrudnianie i motywowanie pracowników etatowych
+## <a name="retain-and-motivate-employees"></a>Utrzymanie i motywowanie pracowników etatowych
 
-Projekty rekrutacji służą do zarządzania zawartością używaną w ogłoszeniach o wolnych stanowiskach i mogą pomóc w zarządzaniu zgłoszeniami na wolne stanowiska. Można ich używać do monitorowania odpowiedzi na oferty pracy dla określonego projektu rekrutacji lub określonych kandydatów oraz aktualizować stan wolnych stanowisk. Można również zatrudniać pojedynczych kandydatów albo zarządzać „projektami zatrudnienia grupowego” umożliwiającymi zatrudnianie wielu pracowników, na przykład w reakcji na sezonowe potrzeby biznesowe.
-
--   [Zarządzanie procesem rekrutacji](manage-recruiting-process.md)
--   [Projekty zatrudniania grupowego](mass-hire-projects.md) 
-
-Po zatrudnieniu personelu można skonfigurować plany umożliwiające skuteczne i sprawiedliwe zarządzanie wynagrodzeniami, a także zarządzać przedmiotami, takimi jak komputery lub telefony, które organizacja wypożycza swoim pracownikom etatowym. Można utworzyć plany wynagrodzeń o stałej i zmiennej wysokości, a także zdefiniować reguły weryfikujące spełnianie kryteriów podlegania tym planom.
+Możesz skonfigurować plany umożliwiające skuteczne i sprawiedliwe zarządzanie wynagrodzeniami, a także zarządzać przedmiotami, takimi jak komputery lub telefony, które organizacja wypożycza swoim pracownikom etatowym. Można utworzyć plany wynagrodzeń o stałej i zmiennej wysokości, a także zdefiniować reguły weryfikujące spełnianie kryteriów podlegania tym planom.
 
 -   [Plany wynagrodzeń](compensation-plans.md)
 -   [Tworzenie planów stałych wynagrodzeń](create-fixed-compensation-plans.md)
@@ -84,10 +80,10 @@ Poza wynagradzaniem pracowników za pomocą płac, wynagrodzeń i premii możesz
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Zarządzanie bezpieczeństwem i przestrzeganiem przepisów w miejscu pracy
 
-System Microsoft Dynamics AX może pomóc utrzymać bezpieczne środowisko pracy, w którym są przestrzegane obowiązujące przepisy prawa, w tym ustawa o osobach niepełnosprawnych oraz przepisy dotyczące imigracji i naturalizacji. Na przykład możesz zarządzać fizycznymi wymaganiami dla konkretnych funkcji, a także śledzić wnioski o zakwaterowanie, co pomoże organizacji zoptymalizować umiejętności pracowników.
+Rozwiązanie Talent może pomóc utrzymać bezpieczne środowisko pracy, w którym są przestrzegane obowiązujące przepisy prawa, w tym ustawa o osobach niepełnosprawnych oraz przepisy dotyczące imigracji i naturalizacji. Na przykład możesz zarządzać fizycznymi wymaganiami dla konkretnych funkcji, a także śledzić wnioski o zakwaterowanie, co pomoże organizacji zoptymalizować umiejętności pracowników.
 
--   [Weryfikacja zatrudnienia za pomocą formularzy I-9](localizations/noam-usa-form-i-9-verification.md)
--   [Zgodność z ustawą ADA (Americans with Disabilities Act)](localizations/noam-usa-comply-ada.md)
+-   [Weryfikacja zatrudnienia za pomocą formularzy I-9](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
+-   [Zgodność z ustawą ADA (Americans with Disabilities Act)](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada)
 
 ## <a name="gather-information-using-questionnaires"></a>Zbieranie informacji za pomocą kwestionariuszy
 
@@ -97,7 +93,4 @@ Możesz projektować kwestionariusze i administrować nimi, aby zbierać informa
 -   [Projektowanie kwestionariusza](design-questionnaires.md)
 -   [Rozsyłanie i wypełnianie kwestionariusza](distribute-questionnaires.md)
 -   [Wyświetlanie i ocenianie wyników kwestionariusza](evaluate-questionnaire-results.md)
-
-
-
 
