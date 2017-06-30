@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 266964
 ms.search.region: Poland
 ms.author: v-elgolu
