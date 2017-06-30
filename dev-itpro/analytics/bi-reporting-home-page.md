@@ -1,15 +1,15 @@
 ---
 title: "Analizy biznesowe i raportowanie — strona główna"
-description: "W tym temacie wymieniono zasoby związane z analizami biznesowymi i raportowaniem, które są dostępne w rozwiązaniu Microsoft Dynamics 365 for Operations."
+description: "W tym temacie wymieniono zasoby związane z analizami biznesowymi i raportowaniem, które są dostępne w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 27681
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3e97fda52acf6b61bf47eb30d53ce6597b4929d3
+ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
+ms.openlocfilehash: 448517531112636d553dc895b17c5644c9c1f0bc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-W tym temacie wymieniono zasoby związane z analizami biznesowymi i raportowaniem, które są dostępne w rozwiązaniu Microsoft Dynamics 365 for Operations. 
+W tym temacie wymieniono zasoby związane z analizami biznesowymi i raportowaniem, które są dostępne w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations. 
 
 <a name="working-with-aggregate-data"></a>Praca z danymi zagregowanymi
 ---------------------------
@@ -43,14 +43,14 @@ W tym temacie wymieniono zasoby związane z analizami biznesowymi i raportowanie
 ## <a name="self-service-reporting"></a>Raportowanie samoobsługowe
 -   [Integracja usługi Power BI](power-bi-integration.md)
 -   [Konfigurowanie integracji usługi Power BI dla obszarów roboczych](configure-power-bi-integration.md)
--   [Tworzenie raportu usługi Power BI przy użyciu danych z rozwiązania Microsoft Dynamics 365 for Operations](create-powerbi-report-data.md)
+-   [Tworzenie raportu usługi Power BI przy użyciu danych z rozwiązania Microsoft Dynamics 365 for Finance and Operations](create-powerbi-report-data.md)
 -   [Tworzenie raportu i pulpitu nawigacyjnego w usłudze Power BI](create-powerbi-report-dashboard.md)
 -   [Zawartość usługi Power BI dotycząca wydajności kanału sprzedaży detalicznej](retail-channel-performance-dashboard-power-bi-data.md)
 -   [Zawartość usługi Power BI dotycząca wyników finansowych](financial-performance-power-bi-content-pack.md)
 -   [Zawartość usługi Power BI dotycząca wyników sprzedaży i rentowności](sales-profitability-performance-content-pack.md)
--   [Używanie konfiguracji Raportowania elektronicznego w celu dostarczania do usługi Power BI danych z rozwiązania Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Używanie konfiguracji Raportowania elektronicznego w celu dostarczania do usługi Power BI danych z rozwiązania Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
-## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Tworzenie osadzonych funkcji analitycznych w kliencie rozwiązania Microsoft Dynamics 365 for Operations
+## <a name="building-embedded-analytical-experiences-in-the-finance-and-operations-client"></a>Tworzenie osadzonych funkcji analitycznych w kliencie rozwiązania Finance and Operations
 -   [Osadzone funkcje analizy biznesowej](analytics.md#embedded-business-intelligence)
 -   [Modelowanie i dostosowywanie kluczowych wskaźników wydajności](analytics.md#kpi-modeling-and-customization)
 -   [Dodawanie funkcji analizy biznesowej do obszarów roboczych](add-bi-workspaces.md)
@@ -58,7 +58,7 @@ W tym temacie wymieniono zasoby związane z analizami biznesowymi i raportowanie
 
 ## <a name="document-reporting-and-printing"></a>Raportowanie i drukowanie dokumentów
 -   [Omówienie usług raportowania dokumentów](document-reporting-services.md)
--   [Drukowanie w aplikacjach rozwiązania Dynamics 365 for Operations](print-documents.md)
+-   [Drukowanie w aplikacjach rozwiązania Finance and Operations](print-documents.md)
 -   [Instalowanie agenta rozsyłania dokumentów w celu obsługi drukarek sieciowych](install-document-routing-agent.md)
 -   [Uruchamianie agenta rozsyłania dokumentów jako usługi systemu Windows](run-document-routing-agent-as-windows-service.md)
 -   [Tworzenie rozwiązań raportowania nowej generacji](create-nextgen-reporting-solutions.md)
@@ -72,7 +72,7 @@ W tym temacie wymieniono zasoby związane z analizami biznesowymi i raportowanie
 -   [Projektant formuł w Raportowaniu elektronicznym](general-electronic-reporting-formula-designer.md)
 -   [Aplikacje docelowe Raportowania elektronicznego](electronic-reporting-destinations.md)
 -   [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
--   [Używanie konfiguracji Raportowania elektronicznego w celu dostarczania do usługi Power BI danych z rozwiązania Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Używanie konfiguracji Raportowania elektronicznego w celu dostarczania do usługi Power BI danych z rozwiązania Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [Raportowanie elektroniczne: tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego](http://ax.help.dynamics.com/en/wiki/er-select-service-provider/) (przewodnik zadania)
 -   [Raportowanie elektroniczne: projektowanie modelu danych dla konkretnej domeny](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-data-model/) (przewodnik zadania)
 -   [Raportowanie elektroniczne: definiowanie mapowania modelu i wybieranie źródeł danych](http://ax.help.dynamics.com/en/wiki/er-define-model-mapping-and-select-data-sources/) (przewodnik zadania)
