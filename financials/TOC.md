@@ -3,34 +3,52 @@
 ## [Rozpoczęcie pracy](/dynamics365/unified-operations/fin-and-ops/get-started/onboarding-home?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Program Microsoft FastTrack for Dynamics 365](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Tworzenie konta na potrzeby subskrypcji](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/financials/toc.json)
-### [Jak uzyskać lokalną wersję systemu Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/financials/toc.json)
+### [Jak uzyskać lokalną wersję rozwiązania Finance and Operations](/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises?toc=/dynamics365/unified-operations/financials/toc.json)
+### [Informacje dla klientów, którzy kupili rozwiązanie Finance and Operations za pośrednictwem dostawcy usług w chmurze](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Wdrażanie środowiska demonstracyjnego](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Nowości i zmiany](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Przestarzałe funkcje](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Jeszcze nie zaimplementowane funkcje systemu AX 2012](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Funkcje niezaimplementowane we wdrożeniach lokalnych](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/financials/toc.json)
-
+#### [Finance and Operations, Enterprise Edition, aktualizacja z lipca 2017](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Aktualizacja platformy 8 (czerwiec 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-8?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Aktualizacja platformy 7 (maj 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Aktualizacja platformy 6 (kwiecień 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Aktualizacja platformy 5 (marzec 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Aktualizacja platformy 4 (luty 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Rozwiązanie Operations w wersji 1611 (listopad 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Aktualizacja platformy 3 (listopad 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Aktualizacja platformy 2 (sierpień 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/financials/toc.json) 
+#### [System Dynamics AX, wersja 7.0.1 (maj 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Aktualizacja platformy 1 (maj 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [System Dynamics AX 7.0 (luty 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/financials/toc.json)
+### [Przestarzałe funkcje](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/financials/toc.json)
+### [Jeszcze nie zaimplementowane funkcje systemu AX 2012](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/financials/toc.json)
+### [Funkcje niezaimplementowane we wdrożeniach lokalnych](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/financials/toc.json)
+### [Zasady świadczenia pomocy technicznej](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### Poznawanie interfejsu użytkownika
+#### [Interfejs użytkownika klienta — często zadawane pytania](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Wyszukiwanie akcji](/dynamics365/unified-operations/fin-and-ops/get-started/action-search?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Filtrowanie zaawansowane i składnia zapytań](/dynamics365/unified-operations/fin-and-ops/get-started/advanced-filtering-query-options?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Klient rozwiązania Dynamics 365 for Finance and Operations Enterprise Edition — często zadawane pytania](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Konfigurowanie i filtrowanie obszarów roboczych](/dynamics365/unified-operations/fin-and-ops/get-started/configure-filter-workspaces?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Równoległe wyświetlanie stron przy użyciu ikony Otwórz w nowym oknie](/dynamics365/unified-operations/fin-and-ops/get-started/display-pages-side-by-side?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Nawigacja z wyszukiwaniem](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Personalizacja interfejsu użytkownika](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Skróty klawiaturowe](/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Zarządzanie wyświetlaniem stron](/dynamics365/unified-operations/fin-and-ops/get-started/window-management?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Nawigacja z wyszukiwaniem](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Dostosowanie do użytkownika](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Używanie odnośników do znajdowania informacji](/dynamics365/unified-operations/fin-and-ops//get-started/use-lookups-to-find-information?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Opis usługi Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### Uzyskiwanie pomocy i obsługi technicznej
 #### [Omówienie Pomocy](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Nawiązywanie połączenia z Pomocą](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Wyświetlanie i eksportowanie opisów pól](/dynamics365/unified-operations/fin-and-ops/get-started/view-export-field-descriptions?toc=/dynamics365/unified-operations/financials/toc.json)
-#### Przewodniki zadania i rejestrator zadań
+#### Przewodniki po zadaniach i rejestrator zadań
 ##### [Rejestrator zadań](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Tworzenie dokumentacji lub szkolenia](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Zawartość Pomocy specyficzna dla kraju/regionu](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Tworzenie dokumentacji lub szkolenia](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Przewodniki po zadaniach — listopad 2016](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Przewodniki po zadaniach — sierpień 2016](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Przewodniki po zadaniach — maj 2016](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Przewodniki po zadaniach — luty 2016](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Funkcje związane z lokalizacją i wymagane przepisami prawa](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Słownik](/dynamics365/unified-operations/fin-and-ops/get-started/glossary?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ## Zgodność z przepisami
@@ -39,52 +57,52 @@
 
 ## Zarządzanie kosztami
 ### Pakiet zawartości usługi Power BI
-#### [Pakiet zawartości modułu Zarządzanie kosztami](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Pakiet zawartości modułu Zarządzanie kosztami](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
 ### Wstępnie ustalony koszt
-#### [Arkusz wyceny](/dynamics365/unified-operations/supply-chain/costing-sheets?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Wersja wyceny](/dynamics365/unified-operations/supply-chain/costing-versions?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Symulowanie zmian kosztów przy użyciu wersji wyceny dla kosztu planowanego](/dynamics365/unified-operations/supply-chain/simulate-cost-changes-costing-version-planned-costs?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Arkusz wyceny](/dynamics365/unified-operations/supply-chain/cost-management/costing-sheets?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Wersja wyceny](/dynamics365/unified-operations/supply-chain/cost-management/costing-versions?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Symulowanie zmian kosztów przy użyciu wersji wyceny dla kosztu planowanego](/dynamics365/unified-operations/supply-chain/cost-management/simulate-cost-changes-costing-version-planned-costs?toc=/dynamics365/unified-operations/financials/toc.json)
 ### Wycena zapasów
-#### [Korygowanie wartości kosztu dostępnych zapasów](/dynamics365/unified-operations/supply-chain/inventory/adjust-hand-inventory-cost-values?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Obiekt kosztów](/dynamics365/unified-operations/supply-chain/inventory/cost-object?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Wpis kosztu](/dynamics365/unified-operations/supply-chain/inventory/cost-entries?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Grupa kosztów](/dynamics365/unified-operations/supply-chain/inventory/cost-groups?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Kolejka FIFO z wartością fizyczną i oznaczeniami](/dynamics365/unified-operations/supply-chain/inventory/fifo-physical-value-marking?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Uwzględnianie wartości fizycznej](/dynamics365/unified-operations/supply-chain/inventory/include-physical-value?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Wartość obiektu magazynowego](/dynamics365/unified-operations/supply-chain/inventory/physical-quantity?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Zamknięcie zapasów](/dynamics365/unified-operations/supply-chain/inventory/inventory-close?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Data LIFO z wartością fizyczną i oznaczeniami](/dynamics365/unified-operations/supply-chain/inventory/lifo-date-physical-value-marking?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Kolejka LIFO z wartością fizyczną i oznaczeniami](/dynamics365/unified-operations/supply-chain/inventory/lifo-physical-value-marking?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Średnia ruchoma](/dynamics365/unified-operations/supply-chain/inventory/moving-average?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Aktualizacja fizyczna i finansowa](/dynamics365/unified-operations/supply-chain/inventory/physical-financial-updates?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Dynamiczny średni koszt własny](/dynamics365/unified-operations/supply-chain/inventory/running-average-cost-price?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Śledzenie dynamicznych średnich kosztów dla wymiaru magazynowego](/dynamics365/unified-operations/supply-chain/inventory/track-running-average-cost-per-inventory-dimension?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Średnia ważona z datą](/dynamics365/unified-operations/supply-chain/inventory/weighted-average-date?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Średnia ważona z wartością fizyczną i oznaczeniami](/dynamics365/unified-operations/supply-chain/inventory/weighted-average-physical-value-marking?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Korygowanie wartości kosztu dostępnych zapasów](/dynamics365/unified-operations/supply-chain/cost-management/adjust-hand-inventory-cost-values?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Obiekt kosztów](/dynamics365/unified-operations/supply-chain/cost-management/cost-object?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Wpis kosztu](/dynamics365/unified-operations/supply-chain/cost-management/cost-entries?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Grupa kosztów](/dynamics365/unified-operations/supply-chain/cost-management/cost-groups?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Kolejka FIFO z wartością fizyczną i oznaczeniami](/dynamics365/unified-operations/supply-chain/cost-management/fifo-physical-value-marking?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Uwzględnianie wartości fizycznej](/dynamics365/unified-operations/supply-chain/cost-management/include-physical-value?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Wartość obiektu magazynowego](/dynamics365/unified-operations/supply-chain/cost-management/physical-quantity?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Zamknięcie zapasów](/dynamics365/unified-operations/supply-chain/cost-management/inventory-close?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Data LIFO z wartością fizyczną i oznaczeniami](/dynamics365/unified-operations/supply-chain/cost-management/lifo-date-physical-value-marking?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Kolejka LIFO z wartością fizyczną i oznaczeniami](/dynamics365/unified-operations/supply-chain/cost-management/lifo-physical-value-marking?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Średnia ruchoma](/dynamics365/unified-operations/supply-chain/cost-management/moving-average?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Aktualizacja fizyczna i finansowa](/dynamics365/unified-operations/supply-chain/cost-management/physical-financial-updates?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Dynamiczny średni koszt własny](/dynamics365/unified-operations/supply-chain/cost-management/running-average-cost-price?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Śledzenie dynamicznych średnich kosztów dla wymiaru magazynowego](/dynamics365/unified-operations/supply-chain/cost-management/track-running-average-cost-per-inventory-dimension?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Średnia ważona z datą](/dynamics365/unified-operations/supply-chain/cost-management/weighted-average-date?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Średnia ważona z wartością fizyczną i oznaczeniami](/dynamics365/unified-operations/supply-chain/cost-management/weighted-average-physical-value-marking?toc=/dynamics365/unified-operations/financials/toc.json)
 ### Wycena wytwarzania
-#### [Amortyzowanie kosztów stałych wytworzonego towaru](/dynamics365/unified-operations/supply-chain/amortize-constant-costs-manufactured-item?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Wycena wsteczna](/dynamics365/unified-operations/supply-chain/backflush-costing?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Obliczenia BOM](/dynamics365/unified-operations/supply-chain/bom-calculations?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Grupa obliczania BOM](/dynamics365/unified-operations/supply-chain/bom-calculation-groups?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Typowe źródła odchylenia produkcji](/dynamics365/unified-operations/supply-chain/common-sources-of-production-variances?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Kategoria kosztów używana podczas wyboru trasy produkcji](/dynamics365/unified-operations/supply-chain/cost-categories-used-production-routings?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Kategoria kosztów używana w kontroli produkcji oraz zarządzaniu projektami i księgowaniu ich](/dynamics365/unified-operations/supply-chain/cost-categories-used-production-control-project-management-accounting?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Wyświetlanie opłat związanych z wytworzonym towarem](/dynamics365/unified-operations/supply-chain/charges-manufactured-item?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Analiza kosztów zlecenia produkcyjnego](/dynamics365/unified-operations/supply-chain/production-order-cost-analysis?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Szacowanie kosztów zlecenia produkcyjnego](/dynamics365/unified-operations/supply-chain/production-order-cost-estimation?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Księgowanie produkcji](/dynamics365/unified-operations/supply-chain/production-posting?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Konfigurowanie produktu, który można wyprodukować lub w który można się zaopatrzyć](/dynamics365/unified-operations/supply-chain/manufactured-items-treated-as-purchased-items?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Metoda całkowitej alokacji kosztów](/dynamics365/unified-operations/supply-chain/methodology-total-cost-allocation?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Amortyzowanie kosztów stałych wytworzonego towaru](/dynamics365/unified-operations/supply-chain/cost-management/amortize-constant-costs-manufactured-item?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Wycena wsteczna](/dynamics365/unified-operations/supply-chain/cost-management/backflush-costing?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Obliczenia BOM](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Grupa obliczania BOM](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculation-groups?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Typowe źródła odchylenia produkcji](/dynamics365/unified-operations/supply-chain/cost-management/common-sources-of-production-variances?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Kategoria kosztów używana podczas wyboru trasy produkcji](/dynamics365/unified-operations/supply-chain/cost-management/cost-categories-used-production-routings?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Kategoria kosztów używana w kontroli produkcji oraz zarządzaniu projektami i księgowaniu ich](/dynamics365/unified-operations/supply-chain/cost-management/cost-categories-used-production-control-project-management-accounting?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Wyświetlanie opłat związanych z wytworzonym towarem](/dynamics365/unified-operations/supply-chain/cost-management/charges-manufactured-item?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Analiza kosztów zlecenia produkcyjnego](/dynamics365/unified-operations/supply-chain/cost-management/production-order-cost-analysis?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Szacowanie kosztów zlecenia produkcyjnego](/dynamics365/unified-operations/supply-chain/cost-management/production-order-cost-estimation?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Księgowanie produkcji](/dynamics365/unified-operations/supply-chain/cost-management/production-posting?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Konfigurowanie produktu, który można wyprodukować lub w który można się zaopatrzyć](/dynamics365/unified-operations/supply-chain/cost-management/manufactured-items-treated-as-purchased-items?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Metoda całkowitej alokacji kosztów](/dynamics365/unified-operations/supply-chain/cost-management/methodology-total-cost-allocation?toc=/dynamics365/unified-operations/financials/toc.json)
 ### Koszt standardowy
-#### [Obliczenia BOM przy użyciu kosztu standardowego](/dynamics365/unified-operations/supply-chain/information-used-bom-calculations-standard-costs?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Zarządzanie aktualizacjami kosztu standardowego](/dynamics365/unified-operations/supply-chain/manage-standard-cost-updates?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Wymaganie wstępne dotyczące konwersji na koszt standardowy](/dynamics365/unified-operations/supply-chain/prerequisites-standard-cost-conversion?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Omówienie konwersji na koszt standardowy](/dynamics365/unified-operations/supply-chain/standard-cost-conversion-overview?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Aktualizowanie kosztu standardowego w środowisku wytwarzania](/dynamics365/unified-operations/supply-chain/update-standard-costs-manufacturing-environment?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Aktualizowanie kosztu standardowego dla nowo wytworzonego towaru](/dynamics365/unified-operations/supply-chain/update-standard-costs-new-manufactured-item?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Aktualizowanie kosztu standardowego w środowisku nieobejmującym wytwarzania](/dynamics365/unified-operations/supply-chain/update-standard-costs-non-manufacturing-environment?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Obliczenia BOM przy użyciu kosztu standardowego](/dynamics365/unified-operations/supply-chain/cost-management/information-used-bom-calculations-standard-costs?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Zarządzanie aktualizacjami kosztu standardowego](/dynamics365/unified-operations/supply-chain/cost-management/manage-standard-cost-updates?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Wymaganie wstępne dotyczące konwersji na koszt standardowy](/dynamics365/unified-operations/supply-chain/cost-management/prerequisites-standard-cost-conversion?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Omówienie konwersji na koszt standardowy](/dynamics365/unified-operations/supply-chain/cost-management/standard-cost-conversion-overview?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Aktualizowanie kosztu standardowego w środowisku wytwarzania](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-manufacturing-environment?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Aktualizowanie kosztu standardowego dla nowo wytworzonego towaru](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-new-manufactured-item?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Aktualizowanie kosztu standardowego w środowisku nieobejmującym wytwarzania](/dynamics365/unified-operations/supply-chain/cost-management/update-standard-costs-non-manufacturing-environment?toc=/dynamics365/unified-operations/financials/toc.json)
 
-## [Zarządzanie finansami](/dynamics365/unified-operations/financials/TOC)
+## Zarządzanie finansami
 
 ### [Księga główna](/dynamics365/unified-operations/financials/general-ledger/general-ledger?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Konta
@@ -125,6 +143,10 @@
 ##### [Reguły płatności podatku i zaokrąglania](/dynamics365/unified-operations/financials/general-ledger/round-sales-tax-payments?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Wybieranie metody obliczania podatku w polu Źródło](/dynamics365/unified-operations/financials/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Opcje Cała kwota i Obliczanie interwału dla kodów podatku](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/unified-operations/financials/toc.json)
+#### Zarządzanie wydatkami
+##### [Planowanie zarządzania wydatkami](/dynamics365/unified-operations/financials/expense-management/plan-expense-management?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Parametry zarządzania wydatkami](/dynamics365/unified-operations/financials/expense-management/Expense-Management-Parameters?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Mobilny obszar roboczy Zarządzanie wydatkami](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### [Rozrachunki z dostawcami](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Omówienie faktur od dostawców](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -141,14 +163,14 @@
 #### [Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami](/dynamics365/unified-operations/financials/cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Zatwierdzanie faktur na urządzeniach przenośnych](/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Obszar roboczy fakturowania w portalu współpracy z dostawcami](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Automatyzacja obsługi faktur od dostawców](/dynamics365/unified-operations/financials/vendor-invoice-automation?toc=/dynamics365/unified-operations/financials/toc.json) 
+#### [Automatyzacja obsługi faktur od dostawców](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoice-automation?toc=/dynamics365/unified-operations/financials/toc.json) 
 #### Płatności i rozliczenia
 ##### [Scentralizowane płatności na potrzeby rozrachunków z dostawcami](/dynamics365/unified-operations/financials/accounts-payable/centralized-payments-accounts-payable?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Konfigurowanie rozliczenia](/dynamics365/unified-operations/financials/cash-bank-management/configure-settlement?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Obszar roboczy płatności dla dostawców](/dynamics365/unified-operations/financials/vendor-payments-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Obszar roboczy płatności dla dostawców](/dynamics365/unified-operations/financials/accounts-payable/vendor-payments-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Tworzenie płatności od dostawców za pomocą propozycji płatności](/dynamics365/unified-operations/financials/accounts-payable/create-vendor-payments-payment-proposal?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Cofanie płatności dla dostawcy](/dynamics365/unified-operations/financials/accounts-payable/reverse-vendor-payment?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Raportowanie elektroniczne czeków od dostawców](/dynamics365/unified-operations/financials/electronic-reporting-sample-vendor-checks?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Raportowanie elektroniczne czeków od dostawców](/dynamics365/unified-operations/financials/accounts-payable/electronic-reporting-sample-vendor-checks?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Omówienie przedpłat i faktur zaliczkowych](/dynamics365/unified-operations/financials/accounts-payable/prepayments-invoices-vs-prepayments?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Rozliczanie częściowej płatności dla dostawcy przed datą rabatu](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Rozliczanie częściowej płatności dla dostawcy, do której zastosowano rabaty na fakturach korygujących dostawcy](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -167,6 +189,7 @@
 #### [Zasady podziału księgowań i zapisy w arkuszu księgi podrzędnej dla faktur niezależnych](/dynamics365/unified-operations/financials/accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Profile księgowania odbiorców](/dynamics365/unified-operations/financials/accounts-receivable/customer-posting-profiles?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Omówienie polecenia zapłaty SEPA](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Zgoda na obciążenie rachunku poleceniem zapłaty SEPA](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-mandate?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Konfiguracja, autoryzacja i przechwytywanie karty kredytowej](/dynamics365/unified-operations/financials/accounts-receivable/credit-card-authorizations?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Poprawianie faktury niezależnej](/dynamics365/unified-operations/financials/accounts-receivable/correct-free-text-invoice?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Konfigurowanie stóp procentowych dla kodu odsetek](/dynamics365/unified-operations/financials/accounts-receivable/set-up-interest-rates-interest-code?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -178,7 +201,7 @@
 #### Płatności i rozliczenia
 ##### [Używanie płatności odbiorcy do rozliczenia wielu faktur obejmujących wiele okresów rabatu](/dynamics365/unified-operations/financials/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Scentralizowane płatności na potrzeby rozrachunków z odbiorcami](/dynamics365/unified-operations/financials/accounts-receivable/centralized-payments-accounts-receivable?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Rozliczanie częściowej lub ostatecznej płatności odbiorcy przed rabatem](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/financials/toc.json) 
+##### [Rozliczanie częściowej lub ostatecznej płatności odbiorcy przed rabatem](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount?toc=/dynamics365/unified-operations/financials/toc.json) 
 ##### [Rozliczanie częściowej płatności odbiorcy przed datą rabatu z ostateczną płatnością po dacie rabatu](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Rozliczanie częściowej płatności odbiorcy, do której zastosowano rabaty na fakturach korygujących odbiorcy](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-discounts-credit-notes?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Rozliczanie częściowej płatności odbiorcy, która ma wiele okresów rabatu](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-multiple-discount-periods?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -187,8 +210,9 @@
 
 ### [Zarządzanie gotówką i bankami](/dynamics365/unified-operations/financials/cash-bank-management/cash-bank-management?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Prognozowanie przepływów pieniężnych](/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Obszar roboczy zarządzania rachunkami bankowymi](/dynamics365/unified-operations/financials/cash-bank-management/bank-management-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Rabaty gotówkowe](/dynamics365/unified-operations/financials/cash-bank-management/cash-discount-handling-overpayments?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Obszar roboczy zarządzania rachunkami bankowymi](/dynamics365/unified-operations/financials/cash-bank-management/Bank-management-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Rabaty gotówkowe](/dynamics365/unified-operations/financials/cash-bank-management/cash-discounts?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Rabaty gotówkowe w przypadku nadpłat](/dynamics365/unified-operations/financials/cash-bank-management/cash-discount-handling-overpayments?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Omówienie rozliczeń](/dynamics365/unified-operations/financials/cash-bank-management/settlement-overview-centralized-payments?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Omówienie rozliczeń w płatnościach scentralizowanych](/dynamics365/unified-operations/financials/cash-bank-management/settlement-overview-centralized-payments?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Akredytywy](/dynamics365/unified-operations/financials/cash-bank-management/letters-of-credit?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -211,7 +235,7 @@
 ##### [Aktualizowanie złożonej jednostki arkusza bankowego](/dynamics365/unified-operations/financials/cash-bank-management/upgrade-bank-journal-composite-entity?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### [Środki trwałe](/dynamics365/unified-operations/financials/fixed-assets/fixed-assets?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Obszar roboczy środka trwałego](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Obszar roboczy środka trwałego](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-management-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Omówienie uaktualnienia księgi amortyzacji](/dynamics365/unified-operations/financials/fixed-assets/depreciation-book-upgrade-considerations?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Księgi pochodne](/dynamics365/unified-operations/financials/fixed-assets/derived-books?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Scalanie modelu ewidencji i księgi amortyzacji środków trwałych](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-value-model-depreciation-book-merge?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -257,15 +281,15 @@
 #### [Integracja modułu Planowanie budżetu z innymi modułami](/dynamics365/unified-operations/financials/budgeting/budget-planning-integration-other-modules?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Raportowanie](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Raporty finansowe bilansu](/dynamics365/unified-operations/financials/general-ledger/balance-sheet-financial-reports?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Generowanie raportu finansowego](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Generowanie raportu finansowego](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Raport finansowy zestawienia dochodów](/dynamics365/unified-operations/financials/general-ledger/income-statement-financial-report?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Raporty finansowe bilansu próbnego](/dynamics365/unified-operations/financials/general-ledger/trial-balance-financial-reports?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Wyświetlanie raportów finansowych](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Projektant raportów](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Projektant raportów](/dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### [Rachunek kosztów](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Warunki](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Warsztaty szkoleniowe (/dynamics365/unified-operations/financials/oficjalny dokument)](/dynamics365/unified-operations/financials/https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
+#### [Warsztaty szkoleniowe (oficjalny dokument)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
 #### [Wymiary składników kosztów](/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Wymiary obiektów kosztów](/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Mapowanie elementów członkowskich wymiaru elementu kosztów na wspólny zestaw elementów członkowskich wymiaru](/dynamics365/unified-operations/financials/cost-accounting/map-cost-elements-dimension-members?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -277,8 +301,8 @@
 #### [Prawa dostępu kontrolera obiektów kosztów](/dynamics365/unified-operations/financials/cost-accounting/access-rights-cost-object-controller?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Obszar roboczy Kontrola kosztów](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Obszar roboczy kontroli kosztów na urządzeniach przenośnych](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Zawartość usługi Power BI dotycząca analiz rachunku kosztów](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Konfigurowanie zabezpieczeń dla zawartość usługi Power BI dotyczącej analiz rachunku kosztów](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Zawartość usługi Power BI dotycząca analiz rachunku kosztów](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Konfigurowanie zabezpieczeń dla zawartość usługi Power BI dotyczącej analiz rachunku kosztów](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### [Sektor publiczny](/dynamics365/unified-operations/financials/public-sector/public-sector-functionality?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Planowanie funkcjonalności dla sektora publicznego](/dynamics365/unified-operations/financials/public-sector/plan-public-sector-functionality?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -317,36 +341,36 @@
 ### [Modyfikowanie komórek definicji wiersza](/dynamics365/unified-operations/dev-itpro/analytics/modify-row-definition-cells-financial-reporting?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Resetowanie składnicy danych modułu raportowania finansowego po przywróceniu bazy danych](/dynamics365/unified-operations/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore?toc=/dynamics365/unified-operations/financials/toc.json)
 
-### [Omówienie lokalizacji](/dynamics365/unified-operations/financials/localizations//dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/localizations/toc.json)
+## [Funkcje związane z lokalizacją i wymagane przepisami prawa](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/toc.json)
 ### Azja i Pacyfik
 #### Australia
 ##### [Formaty plików bankowych](/dynamics365/unified-operations/financials/localizations/apac-aus-method-of-payment-pay-vendors-banks?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Oświadczenie o działalności gospodarczej ](/dynamics365/unified-operations/financials/localizations/apac-aus-business-activity-statement?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Oświadczenie o prowadzeniu działalności gospodarczej ](/dynamics365/unified-operations/financials/localizations/apac-aus-business-activity-statement?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Amortyzacja puli środków trwałych o niskiej wartości](/dynamics365/unified-operations/financials/localizations/apac-aus-low-value-pool-depreciation?toc=/dynamics365/unified-operations/financials/toc.json)
 
 #### Chiny
 ##### [Porównanie list składowych (BOM)](/dynamics365/unified-operations/financials/localizations/apac-chn-bom-comparison?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Chińskie załączniki](/dynamics365/unified-operations/financials/localizations/apac-chn-vouchers?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Konfigurowanie integracji podatków](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Faktury VAT dla odbiorców — często zadawane pytania](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Faktury VAT dla odbiorców — często zadawane pytania](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Metody amortyzacji środków trwałych ](/dynamics365/unified-operations/financials/localizations/apac-chn-depreciation-methods-fixed-assets?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Importowanie jednostki danych Chiński podatek od złota](/dynamics365/unified-operations/financials/localizations/apac-chn-import-golden-tax-data-entity?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Model średnich kosztów miesięcznych](/dynamics365/unified-operations/financials/localizations/apac-chn-monthly-average-cost-model?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Księgowanie kont głównych zapasów według oddziału](/dynamics365/unified-operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Konfigurowanie ujemnych debetów i kredytów ](/dynamics365/unified-operations/financials/localizations/apac-chn-negative-debits-credits?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Japonia
+##### [Reguły alokacji](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Opłaty od płatności bankowych ponoszone przez dostawców](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Faktury skonsolidowane](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices?toc=/dynamics365/unified-operations/financials/toc.json)
-##### Środki trwałe
-###### [Reguły alokacji](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Amortyzacja — często zadawane pytania](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Metoda równego podziału amortyzacji](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Księgowanie utraty wartości](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-fixed-assets?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Księgowanie utraty wartości w ośrodku wypracowującym środki pieniężne](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Konfigurowanie zobowiązania do wycofania środka trwałego (ARO)](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Konfigurowanie wpisów redukcji](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Amortyzacja — często zadawane pytania](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Metoda równego podziału amortyzacji](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Księgowanie utraty wartości](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-fixed-assets?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Księgowanie utraty wartości w ośrodku wypracowującym środki pieniężne](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Import kodów pocztowych](/dynamics365/unified-operations/financials/localizations/apac-jpn-import-postal-codes?toc=/dynamics365/unified-operations/financials/toc.json) 
 ##### [Płatność dla dostawcy przez potwierdzenie weksla](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Progresywne obliczanie potrąconej zaliczki na podatek](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Konfigurowanie zobowiązania do wycofania środka trwałego (ARO)](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Konfigurowanie wpisów redukcji](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Malezja
 ##### [Podatek od towarów i usług (GST)](/dynamics365/unified-operations/financials/localizations/apac-mys-gst?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Singapur
@@ -358,13 +382,20 @@
 
 ### Europa
 #### [Posiadacze zaliczek](/dynamics365/unified-operations/financials/localizations/emea-advance-holders?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Transakcje posiadacza zaliczki](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Zaawansowane fakturowanie](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Uzgadnianie konta bankowego](/dynamics365/unified-operations/financials/localizations/emea-bank-reconciliation?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Faktury korygujące](/dynamics365/unified-operations/financials/localizations/emea-corrective-invoice?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Tworzenie i księgowanie arkuszy okresowych](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Edytowanie identyfikatorów faktur na zamówieniach sprzedaży](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Świadectwa wywozowe UE](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Raportowanie listy sprzedaży do UE](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Korekty kursów wymiany](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Formaty plików metod płatności](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Likwidacja środków trwałych w Estonii i na Litwie](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Importowanie plików ISO20022](/dynamics365/unified-operations/financials/localizations/emea-ISO20022-file-formats?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Raporty arkuszy magazynowych](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Numerowanie faktur i dokumentów dostawy na Łotwie i Litwie](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Terminy wystawiania faktur](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Standardy OIOUBL](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -373,14 +404,22 @@
 #### [Księgowanie wstępnego nabycia środka trwałego](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Kody pocztowe](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Identyfikatory rejestracji](/dynamics365/unified-operations/financials/localizations/emea-registration-ids?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Opłaty zwrotne](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Omówienie przeniesienia kredytu SEPA](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Omówienie polecenia zapłaty SEPA](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Konfiguracja kompensacji odbiorców oraz dostawców](/dynamics365/unified-operations/financials/accounts-receivable/emea-compensation-customer-vendor-transactions?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Konfigurowanie osób podpisujących drukowane formularze](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Stornowanie](/dynamics365/unified-operations/financials/localizations/emea-storno?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Dyrektywy podatkowe](/dynamics365/unified-operations/financials/localizations/emea-tax-directives?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Aktualizowanie sposobu wyświetlania kwot w raportach i dokumentach](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms?toc=/dynamics365/unified-operations/financials/toc.json) 
 #### [Kursy wymiany dla podatku VAT](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Transakcje rejestru VAT dla Europy Wschodniej](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Raportowanie podatku VAT](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Wyświetlanie transakcji w rozliczeniu](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Austria
 ##### [Amortyzacja półroczna](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Opłaty od materiałów opakowań](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Opłaty materiałowe opakowań](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Cła od zakupu](/dynamics365/unified-operations/financials/localizations/emea-aut-purchase-duties?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Deklaracja VAT](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Belgia
 ##### [Wyciąg bankowy CODA](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -389,7 +428,7 @@
 ##### [Raporty uzgodnienia](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports?toc=/dynamics365/unified-operations/financials/toc.json)
 
 #### Czechy
-##### [Rabat gotówkowy na fakturze korygującej](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Faktura korygująca na rabacie gotówkowym](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Zaokrąglenie amortyzacji](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-rounding?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Zawieszenie amortyzacji](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Amortyzacja środków trwałych](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -403,6 +442,7 @@
 ###### [Księgowanie w sektorze publicznym](/dynamics365/unified-operations/financials/localizations/emea-fra-public-sector-accounting?toc=/dynamics365/unified-operations/financials/toc.json)
 ###### [Zobowiązania](/dynamics365/unified-operations/financials/localizations/emea-fra-commitments-public-sector?toc=/dynamics365/unified-operations/financials/toc.json)
 ###### [Upoważnienia „Mandats de paiement”](/dynamics365/unified-operations/financials/localizations/emea-fra-mandats-de-paiement?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Zaopatrzenie i sourcing](/dynamics365/unified-operations/financials/localizations/emea-fra-procurement-sourcing-public-sector?toc=/dynamics365/unified-operations/financials/toc.json)
 ###### [Titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector?toc=/dynamics365/unified-operations/financials/toc.json)
 ###### [Wstrzymanie płatności za fakturę od dostawcy](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Chronologiczne załączniki faktur](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -428,7 +468,7 @@
 ##### [Weryfikacja daty dokumentu dostawy na fakturach](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Księgi podatkowe](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Podzielona płatność za faktury wystawione administracji publicznej](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Potrącona zaliczka na podatek](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Potrącona zaliczka na podatek](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Łotwa
 ##### [Księgowanie środków trwałych](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-accounting?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Śledzenie zmian lokalizacji środków trwałych](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-location-fields-change?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -439,6 +479,7 @@
 ##### [Szczegóły deklaracji VAT](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Norwegia
 ##### [Format importu Nets](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Deklaracja VAT](/dynamics365/unified-operations/financials/localizations/emea-nor-sales-tax-payment-report?toc=/dynamics365/unified-operations/financials/toc.json) 
 #### Polska
 ##### [Obliczanie rabatów wiersza na podstawie ceny jednostkowej](/dynamics365/unified-operations/financials/localizations/emea-pol-line-discount-calculation-from-unit-price?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Noty korygujące](/dynamics365/unified-operations/financials/localizations/emea-pol-correction-notes?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -475,6 +516,7 @@
 ###### [Importowanie dokumentów fiskalnych](/dynamics365/unified-operations/financials/localizations/latam-bra-import-fiscal-documents?toc=/dynamics365/unified-operations/financials/toc.json)
 ###### [Eksportowanie i importowanie transakcji firmowych z konsolidacji księgi głównej](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions?toc=/dynamics365/unified-operations/financials/toc.json)
 ###### [Importowanie i weryfikowanie dokumentów NF-e w formacie XML oraz plików DANFE](/dynamics365/unified-operations/financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Konfigurowanie NF-e i plików DANFE](/dynamics365/unified-operations/financials/localizations/Set-up-import-nf-e-documents?toc=/dynamics365/unified-operations/financials/toc.json) 
 ###### [Przetwarzanie przelewów elektronicznych](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances?toc=/dynamics365/unified-operations/financials/toc.json)
 ###### [Dokumenty fiskalne](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework?toc=/dynamics365/unified-operations/financials/toc.json)
 ###### [Teksty zastępcze w dokumentach fiskalnych](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -482,7 +524,7 @@
 ###### [Referencyjne dokumenty fiskalne](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents?toc=/dynamics365/unified-operations/financials/toc.json)
 ###### [Uzupełniające dokumenty fiskalne dotyczące sprzedaży](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents?toc=/dynamics365/unified-operations/financials/toc.json)
 ###### [Elektroniczny dokument fiskalny dotyczący usługi](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Arkusze wygenerowane podczas procesu zwrotu płatności elektronicznych](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Arkusze wygenerowane podczas procesu zwrotu płatności elektronicznych](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Proces NF-e](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Parametry dla firm](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Nabycie środka trwałego CIAP](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -496,11 +538,13 @@
 ##### [Faktury elektroniczne ](/dynamics365/unified-operations/financials/localizations/latam-mex-CFDI-electronic-invoices?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Wyciągi z konta w księdze elektronicznej](/dynamics365/unified-operations/financials/localizations/latam-mex-electronic-ledger-accounting-statements?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Raport deklaracji ISR](/dynamics365/unified-operations/financials/localizations/latam-mex-isr-declaration-report-supporting-processes?toc=/dynamics365/unified-operations/financials/toc.json)
-
+### Środkowy Wschód
+#### [Raportowanie zakatu dla Arabii Saudyjskiej](/dynamics365/unified-operations/financials/localizations/emea-sau-zakat-reporting?toc=/dynamics365/unified-operations/financials/toc.json)
 ### Ameryka Północna
 #### [Raporty 1099 na koniec roku w Stanach Zjednoczonych](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting?toc=/dynamics365/unified-operations/financials/toc.json)
-## Zasoby ludzkie
+#### [Formularz 1099 dla sektora publicznego](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector?toc=/dynamics365/unified-operations/financials/toc.json)
 
+## Zasoby ludzkie
 ### Rekrutacja
 #### [Zarządzanie procesem rekrutacji](/dynamics365/unified-operations/fin-and-ops/hr/manage-recruiting-process?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Projekty zatrudniania grupowego](/dynamics365/unified-operations/fin-and-ops/hr/mass-hire-projects?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -539,6 +583,7 @@
 ### [Dostęp do zawartości usługi Power BI](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### [Wydana zawartość usługi Power BI](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Wartości rzeczywiste a budżet](/dynamics365/unified-operations/dev-itpro/analytics/ledger-budgets-power-bi?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Świadczenia](/dynamics365/unified-operations/dev-itpro/analytics/benefits-power-bi?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Omówienie operacji gotówkowych](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 #### [Omówienie funkcji Dyrektor finansowy](/dynamics365/unified-operations/dev-itpro/analytics/CFO-power-bi?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -551,7 +596,7 @@
 #### [Kompetencje i rozwój pracownika etatowego](/dynamics365/unified-operations/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Rozwój pracownika etatowego](/dynamics365/unified-operations/dev-itpro/analytics/employee-development-PBI?toc=/dynamics365/unified-operations/financials/toc.json) 
 #### [Wyniki finansowe](/dynamics365/unified-operations/dev-itpro/analytics/financial-performance-power-bi-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Zarządzanie środkami trwałymi](/dynamics365/unified-operations/dev-itpro/analytics//dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace)
+#### [Zarządzanie środkami trwałymi](/dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Szkolenia](/dynamics365/unified-operations/dev-itpro/analytics/learning-power-bi?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Szkolenie organizacyjne](/dynamics365/unified-operations/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Kierownik praktyk](/dynamics365/unified-operations/dev-itpro/analytics/practice-manager-power-bi?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -560,7 +605,7 @@
 #### [Rekrutacja](/dynamics365/unified-operations/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Wyniki kanału detalicznego ](/dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Wyniki w zakresie sprzedaży i rentowności](/dynamics365/unified-operations/dev-itpro/analytics/sales-profitability-performance-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Płatności dla dostawców](/dynamics365/unified-operations/dev-itpro/analytics//dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace)
+#### [Płatności dla dostawców](/dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Wydajność magazynu](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Metryki pracowników](/dynamics365/unified-operations/dev-itpro/analytics/workforce-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
 
@@ -568,6 +613,7 @@
 #### [Omówienie usług raportowania dokumentów](/dynamics365/unified-operations/dev-itpro/analytics/document-reporting-services?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Drukowanie](/dynamics365/unified-operations/dev-itpro/analytics/print-documents?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Włączanie urządzeń drukarek sieciowych](/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Generowanie dokumentu, publikacji i drukowanie możliwości we wdrożeniach lokalnych](/dynamics365/unified-operations/dev-itpro/analytics/printing-capabilities-on-premises?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Uruchamianie Agenta rozsyłania dokumentów jako usługi systemu Windows](/dynamics365/unified-operations/dev-itpro/analytics/run-document-routing-agent-as-windows-service?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Pomoc dotycząca zapobiegania upływowi limitu czasu w przypadku długo działających raportów](/dynamics365/unified-operations/dev-itpro/analytics/prevent-long-running-reports-timing-out?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Lista raportów usług SQL Server Reporting Services](/dynamics365/unified-operations/dev-itpro/analytics/SSRS-report?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -594,6 +640,7 @@
 ### Narzędzia analityczne i wizualizacje
 #### [Analizy, miary agregacji i modelowanie wskaźników KPI](/dynamics365/unified-operations/dev-itpro/analytics/analytics?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Modelowanie i agregowanie danych](/dynamics365/unified-operations/dev-itpro/analytics/model-aggregate-data?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Dodawanie wymiarów finansowych do miar agregacji](/dynamics365/unified-operations/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Dodawanie kontekstowych funkcji analizy biznesowej do formularzy](/dynamics365/unified-operations/dev-itpro/analytics/add-contextual-bi-forms?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Raport miar agregacji](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-measurements-report?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Raport zagregowanych jednostek danych](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-data-entities-report?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -601,10 +648,13 @@
 #### [Integracja usługi Power BI](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Integracja usługi Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-embedded-integration?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Osadzona usługa Power BI w obszarach roboczych](/dynamics365/unified-operations/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Dodawanie analizy do obszarów roboczych za pomocą usługi Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/secure-analytical-workspaces?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Pomoc w zabezpieczeniu analitycznych obszarów roboczych i raportów za pomocą usługi Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Dodawanie usługi Power BI do obszarów roboczych](/dynamics365/unified-operations/dev-itpro/analytics/add-bi-workspaces?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Przypinanie raportów usługi Power BI do obszarów roboczych](/dynamics365/unified-operations/dev-itpro/analytics/pin-power-bi-reports?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Integracja usługi Power BI z magazynem jednostek](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Tworzenie i rozsyłanie raportów usługi Power BI przy użyciu magazynu jednostek](/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Eksportowanie jednostek we własnej bazie danych programu SQL Azure](/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/unified-operations/financials/toc.json)
 
 
 ## Zarządzanie zapasami
@@ -658,6 +708,7 @@
 ##### [Grupowanie systemowe na liście otwartych prac](/dynamics365/unified-operations/supply-chain/warehousing/system-group-on-open-work-list?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Pobieranie i pakowanie
 ##### [Pobieranie najstarszej partii na urządzeniu przenośnym](/dynamics365/unified-operations/supply-chain/warehousing/pick-oldest-batch?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Konfigurowanie wyświetlania starszych partii w magazynie na urządzeniu przenośnym](/dynamics365/unified-operations/supply-chain/warehousing/display-older-batches-within-warehouses?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Potwierdzenie pobrania sztuk](/dynamics365/unified-operations/supply-chain/warehousing/piece-picking-confirmation?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Materiały opakowań i opłaty](/dynamics365/unified-operations/supply-chain/warehousing/pack-materials-packing-material-fees?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Inwentaryzacja
@@ -678,6 +729,8 @@
 ##### [Konfigurowanie urządzeń przenośnych do pracy magazynowej](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Portal urządzeń przenośnych używanych w magazynie](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-mobile-devices-portal?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Ustawienia wyświetlania urządzeń przenośnych używanych w magazynie](/dynamics365/unified-operations/supply-chain/warehousing/change-warehouse-mobile-device-displays?toc=/dynamics365/unified-operations/financials/toc.json)
+#### Uaktualnianie i migracja
+##### [Migracja z systemu AX 2012 do rozwiązania Finance and Operations](/dynamics365/unified-operations/supply-chain/warehousing/upgrade-migration-warehouse-management-processes?toc=/dynamics365/unified-operations/financials/toc.json)
 
 
 ## Planowanie główne
@@ -720,12 +773,13 @@
 ##### [Omówienie zamówień zakupu](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-overview?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Tworzenie zamówień zakupu](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-creation?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Zatwierdzanie i potwierdzanie zamówień zakupu](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-approval-confirmation?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Mobilny obszar roboczy zatwierdzenia zamówienia zakupu](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-mobile-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Ceny i rabaty
 ##### [Umowy zakupu](/dynamics365/unified-operations/supply-chain/procurement/purchase-agreements?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Przyjęcia produktów i fakturowanie
 ##### [Przyjęcie produktów na podstawie zamówień zakupu](/dynamics365/unified-operations/supply-chain/procurement/product-receipt-against-purchase-orders?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Omówienie faktur od dostawców](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-##### [Profile księgowania dostawców](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Omówienie faktur od dostawców](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Profile księgowania dostawców](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Zarządzanie dostawcami i współpraca z nimi
 ##### [Konfigurowanie i obsługa współpracy z dostawcami](/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Zarządzanie użytkownikami portalu współpracy z dostawcami](/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-users?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -763,6 +817,7 @@
 ### [Omówienie podpisów elektronicznych](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Omówienie zarządzania sprawami](/dynamics365/unified-operations/fin-and-ops/organization-administration/cases?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Konfigurowanie zabezpieczeń, procesów i kategorii spraw](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-case-management?toc=/dynamics365/unified-operations/financials/toc.json)
+### [Konfigurowanie zarządzania dokumentami](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Tworzenie szablonów rekordów](/dynamics365/unified-operations/fin-and-ops/organization-administration/record-templates?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Konfigurowanie i wysyłanie wiadomości e-mail](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Dane dotyczące daty/godziny i strefy czasowe](/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -823,6 +878,9 @@
 #### Zarządzanie surowcami
 ##### [Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych](/dynamics365/unified-operations/supply-chain/production-control/cross-docking-opportunities?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Rejestrowanie zużycia materiałów za pomocą urządzenia przenośnego](/dynamics365/unified-operations/supply-chain/production-control/register-material-consumption-hand-held-device?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Kontrola zużycia surowców za pomocą zasad usuwania](/dynamics365/unified-operations/supply-chain/production-control/flushing-principles?toc=/dynamics365/unified-operations/financials/toc.json) 
+#### Zarządzanie towarami gotowymi
+##### [Konfigurowanie lokalizacji wyjściowej produkcji dla wyrobów gotowych](/dynamics365/unified-operations/supply-chain/production-control/production-output-location?toc=/dynamics365/unified-operations/financials/toc.json)
 ### Lean manufacturing 
 #### [Omówienie wytwarzania typu lean manufacturing](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-overview?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Podwykonawstwo na podstawie działań](/dynamics365/unified-operations/supply-chain/production-control/activity-based-subcontracting?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -913,35 +971,17 @@
 
 ## [Programowanie i administrowanie przy użyciu platformy Unified Operations](/dynamics365/unified-operations/dev-itpro/index)
 
-### [Programowanie i administrowanie — omówienie](/dynamics365/unified-operations/dev-itpro/get-started/getting-started-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Wymagania systemowe](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Omówienie danych demonstracyjnych](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/financials/toc.json)
-#### System Pomocy
-##### [Omówienie systemu Pomocy](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Łączenie z systemem Pomocy](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Nowości i zmiany](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Rozwiązanie Operations — aktualizacja platformy 7 (maj 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Rozwiązanie Operations — aktualizacja platformy 6 (kwiecień 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Rozwiązanie Operations — aktualizacja platformy 5 (marzec 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Rozwiązanie Operations — aktualizacja platformy 4 (luty 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Rozwiązanie Operations w wersji 1611 (listopad 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Rozwiązanie Operations — aktualizacja platformy 3 (listopad 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [System Dynamics AX — aktualizacja platformy 2 (sierpień 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/financials/toc.json) 
-##### [Aplikacja Dynamics AX w wersji 7.0.1 (maj 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [System Dynamics AX — aktualizacja platformy 1 (maj 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [System Dynamics AX 7.0 (luty 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/financials/toc.json)
-##### Zaktualizowane przewodniki zadań
-###### [Przewodniki zadań (listopad 2016)](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Przewodniki zadań (sierpień 2016)](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Przewodniki zadań (maj 2016)](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Przewodniki zadań (luty 2016)](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/financials/toc.json)
+### [Wymagania systemowe](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/financials/toc.json)
+### [Dane demonstracyjne](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/financials/toc.json)
+### [Sprawdzanie poprawności danych](/dynamics365/unified-operations/dev-itpro/user-interface/data-validation-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
+
 
 
 ### [Programowanie i dostosowywanie przy użyciu programu Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Stos aplikacji i architektura serwera](/dynamics365/unified-operations/dev-itpro/dev-tools/application-stack-server-architecture?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Pobieranie kopii ewaluacyjnej](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Tworzenie konta na potrzeby subskrypcji](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Uzyskiwanie dostępu do wystąpień rozwiązania Access Dynamics 365 for Finance and Operations Enterprise Edition](/dynamics365/unified-operations/dev-itpro/dev-tools/dev-tools/access-instances?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Uzyskiwanie dostępu do wystąpień](/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Wymagania systemowe dotyczące programowania](/dynamics365/unified-operations/dev-itpro/dev-tools/development-system-requirements?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Przykładowa aplikacja Zarządzanie flotą
 ##### [Przykładowa aplikacja Zarządzanie flotą](/dynamics365/unified-operations/dev-itpro/dev-tools/fleet-management-sample?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -956,7 +996,6 @@
 ##### [Tworzenie modelu i elementów modelu danych](/dynamics365/unified-operations/dev-itpro/dev-tools/create-data-model-elements?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Tworzenie nowego użytkownika na komputerze deweloperskim](/dynamics365/unified-operations/dev-itpro/dev-tools/enable-development-machine?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Raport Analizy dostosowań](/dynamics365/unified-operations/dev-itpro/dev-tools/customization-analysis-report?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Narzędzia programistyczne](/dynamics365/unified-operations/dev-itpro/dev-tools/development-tools?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Projektanci elementów](/dynamics365/unified-operations/dev-itpro/dev-tools/element-designers?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Użycie elementów](/dynamics365/unified-operations/dev-itpro/dev-tools/element-usage?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Eksportowanie i importowanie modelu](/dynamics365/unified-operations/dev-itpro/dev-tools/models-export-import?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -971,9 +1010,9 @@
 ##### [Debugowanie kodu w języku X++ w odniesieniu do kopii produkcyjnej bazy danych](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-x-issue-against-copy-of-production?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Debugowanie kodu w języku X++](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-xpp?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Klasy EventHandlerResult w scenariuszach dotyczących żądań lub odpowiedzi](/dynamics365/unified-operations/dev-itpro/dev-tools/event-handler-result-class?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Pisanie logiki biznesowej przy użyciu kodu źródłowego w językach C#### i X++](/dynamics365/unified-operations/dev-itpro/dev-tools/write-business-logic?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Pisanie logiki biznesowej przy użyciu kodu źródłowego w językach C\# i X++](/dynamics365/unified-operations/dev-itpro/dev-tools/write-business-logic?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Obsługa języków programowania](/dynamics365/unified-operations/dev-itpro/dev-tools/programming-language-support?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Dostawca LINQ dla języka C#](/dynamics365/unified-operations/dev-itpro/dev-tools/linq-provider-c?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Dostawca LINQ dla języka C\#](/dynamics365/unified-operations/dev-itpro/dev-tools/linq-provider-c?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Tworzenie najlepszych rozwiązań](/dynamics365/unified-operations/dev-itpro/dev-tools/author-best-practice-rules?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Właściwości Eksploratora aplikacji](/dynamics365/unified-operations/dev-itpro/dev-ref/application-explorer-aot-properties?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### Informacje dotyczące języka X++
@@ -986,7 +1025,7 @@
 ###### [Wybór danych i wykonywanie na nich operacji w języku X++](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-data-query?toc=/dynamics365/unified-operations/financials/toc.json)
 ###### [Makra w języku X++](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-macros?toc=/dynamics365/unified-operations/financials/toc.json)
 ###### [Klasy atrybutów w języku X++](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-attribute-classes?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Porównanie języków X++ i C####](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-cs-comparison?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Porównanie języków X++ i C\#](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-cs-comparison?toc=/dynamics365/unified-operations/financials/toc.json)
 ###### [Składnia języka X++](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-syntax?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Funkcje czasu kompilacji
 ##### [Funkcje czasu kompilacji języka X++](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-compile-time-functions?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1040,7 +1079,7 @@
 ##### [Klasy — W](/dynamics365/unified-operations/dev-itpro/dev-ref/w-classes?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Klasy — X](/dynamics365/unified-operations/dev-itpro/dev-ref/x-classes?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Dostosowywanie za pomocą rozszerzeń i nakładania warstw
-##### Możliwości rozszerzania
+##### [Możliwości rozszerzania](/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Dostosowywanie elementów modelu przy użyciu rozszerzeń](/dynamics365/unified-operations/dev-itpro/extensibility/customize-model-elements-extensions?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Dostosowywanie za pomocą rozszerzeń i nakładania warstw](/dynamics365/unified-operations/dev-itpro/extensibility/customization-overlayering-extensions?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Rozszerzenia klas](/dynamics365/unified-operations/dev-itpro/extensibility/class-extensions?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1049,8 +1088,11 @@
 ##### Synchronizacja bazy danych
 #### Przenoszenie pakietów między środowiskami
 ##### Tworzenie i stosowanie wdrażalnych pakietów
-##### [Ciągłe dostarczanie](/dynamics365/unified-operations/dev-itpro/continuous-delivery-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
-
+#### [Ciągłe dostarczanie — strona główna](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Rozwój i ciągłe dostarczanie — często zadawane pytania](/dynamics365/unified-operations/dev-itpro/dev-tools/continuous-delivery-faq?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Wykluczenie pakietów testowych z wyników kompilacji](/dynamics365/unified-operations/dev-itpro/dev-tools/exclude-test-packages?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Zarządzanie modelami innych firm i pakietami uruchamiania za pomocą kontroli źródła](/dynamics365/unified-operations/dev-itpro/dev-tools/manage-runtime-packages?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Modele wersji w kompilacjach automatycznych](/dynamics365/unified-operations/dev-itpro/dev-tools/version-models-build?toc=/dynamics365/unified-operations/financials/toc.json)
 
 #### Wydajność — strona główna
 ##### [Śledzenie danych za pomocą Analizatora śledzenia](/dynamics365/unified-operations/dev-itpro/perf-test/trace-trace-tutorial?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1087,8 +1129,8 @@
 ##### [Filtry](/dynamics365/unified-operations/dev-itpro/user-interface/filtering?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Sterowanie hostem usługi PowerApps](/dynamics365/unified-operations/dev-itpro/user-interface/powerapps-host-control?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Zarządzanie oknami
-##### [Wykonywanie migracji kodu menu kontekstowego](/dynamics365/unified-operations/dev-itpro/user-interface/migration-upgrade/code-migration-context-menus?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Wykonywanie migracji kodu dwukrotnego kliknięcia myszą](/dynamics365/unified-operations/dev-itpro/user-interface/migration-upgrade/code-migration-double-click?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Wykonywanie migracji kodu menu kontekstowego](/dynamics365/unified-operations/dev-itpro/migration-upgrade/code-migration-context-menus?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Wykonywanie migracji kodu dwukrotnego kliknięcia myszą](/dynamics365/unified-operations/dev-itpro/migration-upgrade/code-migration-double-click?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Wprowadzanie danych kontekstowych na potrzeby wyszukiwania](/dynamics365/unified-operations/dev-itpro/user-interface/contextual-data-entry-lookups?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Kontrolka HierarchyViewer](/dynamics365/unified-operations/dev-itpro/user-interface/hierarchy-viewer-control?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Kontrolki wyszukiwania](/dynamics365/unified-operations/dev-itpro/user-interface/lookups-controls?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1129,8 +1171,8 @@
 ##### [Wzorzec formularza pola informacji](/dynamics365/unified-operations/dev-itpro/user-interface/factbox-form-patterns?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Wzorce podrzędne
 ##### [Wzorzec podrzędny grupy filtrów niestandardowych](/dynamics365/unified-operations/dev-itpro/user-interface/custom-filter-group-subpattern?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Wzorzec podrzędny kontrolki wprowadzania wymiarów](/dynamics365/unified-operations/dev-itpro/user-interface/financial/dimension-entry-control-subpattern?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Wzorzec podrzędny konstruktora wyrażań wymiarów](/dynamics365/unified-operations/dev-itpro/user-interface/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Wzorzec podrzędny kontrolki wprowadzania wymiarów](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-subpattern?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Wzorzec podrzędny konstruktora wyrażań wymiarów](/dynamics365/unified-operations/dev-itpro/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Wzorzec podrzędny pól i grup pól](/dynamics365/unified-operations/dev-itpro/user-interface/fields-field-groups-subpattern?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Wzorce podrzędne filtrów i paska narzędzi](/dynamics365/unified-operations/dev-itpro/user-interface/filters-toolbar-subpattern?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Wzorzec podrzędny wypełniania tekstem](/dynamics365/unified-operations/dev-itpro/user-interface/fill-text-subpattern?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1159,9 +1201,9 @@
 #### Tworzenie obszarów roboczych
 ##### [Tworzenie operacyjnych obszarów roboczych](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspaces?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Buforowanie kafelków i list dla obszarów roboczych](/dynamics365/unified-operations/dev-itpro/user-interface/tile-list-caching-workspaces?toc=/dynamics365/unified-operations/financials/toc.json)
-#### Rejestrator zadań
-##### [Rejestrator zadań w rozwiązaniu Dynamics 365 for Finance and Operations Enterprise Edition](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Rejestrator zadań](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Skrócone informacje dotyczące Rejestratora zadań](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### Wydawanie rozwiązań przy użyciu usługi Lifecycle Services
 #### [Tworzenie i wydawanie](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source)
@@ -1182,7 +1224,7 @@
 ##### [Przesyłanie alertu dotyczącego wymogów prawnych](/dynamics365/unified-operations/dev-itpro/lcs-solutions/submit-localization-alerts)
 
 
-### [Jednostki danych](/dynamics365/unified-operations/dev-itpro/data-entities?toc=/dynamics365/unified-operations/financials/toc.json)
+### [Jednostki danych](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Domyślne jednostki danych
 ##### [Raport jednostek danych](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-report?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Jednostki danych: rozrachunki z dostawcami i podatki](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-payable-taxes?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1212,7 +1254,9 @@
 
 #### Wykonywanie migracji jednostek
 ##### [Projekty danych konfiguracji](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Pakiety danych konfiguracji](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages?toc=/dynamics365/unified-operations/financials/toc.json)
 ###### [Szablony danych konfiguracji](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/financials/toc.json)
+
 ###### [Kopiowanie danych konfiguracji między firmami](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Najlepsze rozwiązania w zakresie importowania załączników za pomocą jednostki Arkusz finansowy](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/financials/toc.json)
 
@@ -1249,7 +1293,7 @@
 ### Integracja z pakietem Office
 #### [Integracja z pakietem Office](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Integracja z pakietem Office — samouczek](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Używanie dodatku programu Excel](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Używanie dodatku programu Excel](/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Tworzenie funkcji otwierania w programie Excel](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Dodawanie szablonów do menu Otwórz wiersze w programie Excel](/dynamics365/unified-operations/dev-itpro/user-interface/add-templates-open-lines-excel-menu?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Dostosowywanie menu Otwórz w pakiecie Microsoft Office](/dynamics365/unified-operations/dev-itpro/office-integration/customize-open-office-menu?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1279,19 +1323,30 @@
 #### [Podręcznik programowania wykresów Gantta](/dynamics365/unified-operations/dev-itpro/user-interface/gantt-development-guide?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Tworzenie nowego aparatu zarządzania transportem](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/unified-operations/financials/toc.json)
 
-### [Biblioteka programowania dla rozwiązania Retail](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### Wdrażanie
-#### [Wdrażanie środowiska demonstracyjnego rozwiązania Microsoft Dynamics 365 for Finance and Operations Enterprise Edition](/dynamics365/unified-operations/dev-itpro/deploy-demo-environment?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Wprowadzanie usługi Azure Resource Manager](/dynamics365/unified-operations/dev-itpro/arm-onboarding?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Usługa Azure ExpressRoute i rozwiązanie Dynamics 365 for Finance and Operations Enterprise Edition](/dynamics365/unified-operations/dev-itpro/expressroute?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Wdrażanie środowiska demonstracyjnego rozwiązania Microsoft Dynamics 365 for Finance and Operations Enterprise Edition](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Wprowadzanie usługi Azure Resource Manager](/dynamics365/unified-operations/dev-itpro/deployment/arm-onboarding?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Usługa Azure ExpressRoute i rozwiązanie Dynamics 365 for Finance and Operations Enterprise Edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/financials/toc.json)
+
+#### [Lokalne wdrożenie rozwiązania Microsoft Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+##### [Omówienie rozwiązania Dynamics 365 for Finance and Operations, Enterprise Edition (lokalnego)](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-overview?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Wymagania systemowe](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Szacowanie zapotrzebowania na sprzęt dla środowisk lokalnych](/dynamics365/unified-operations/dev-itpro/get-started/hardware-sizing-on-premises-environments?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Zasad cyklu pomocy technicznej dotyczące usług online i oprogramowania lokalnego](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Zakup rozwiązania Dynamics 365 for Finance and Operations, Enterprise Edition (lokalnego)](/dynamics365/unified-operations/dev-itpro/https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Tworzenie projektu lokalnego w usłudze Lifecycle Services](/dynamics365/unified-operations/dev-itpro/deployment/lifecycle-services/lbd-create-lcs-on-prem-project?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Konfigurowanie i wdrażanie środowisk lokalnych](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Konfigurowanie usług SQL Server Reporting Services dla wdrożenia lokalnego](/dynamics365/unified-operations/dev-itpro/analytics/configure-ssrs-on-premises?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych](/dynamics365/unified-operations/dev-itpro/deployment/develop-deploy-custom-models-on-premises?toc=/dynamics365/unified-operations/financials/toc.json)
+
 
 #### Wdrażanie kodu niestandardowego
-##### [Tworzenie wdrażalnego pakietu](/dynamics365/unified-operations/dev-itpro/create-apply-deployable-package?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Stosowanie wdrażalnego pakietu](/dynamics365/unified-operations/dev-itpro/apply-deployable-package-system?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Instalowanie wdrażalnego pakietu](/dynamics365/unified-operations/dev-itpro/install-deployable-package?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Tworzenie wdrażalnego pakietu](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Stosowanie wdrażalnego pakietu](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Instalowanie wdrażalnego pakietu](/dynamics365/unified-operations/dev-itpro/deployment/install-deployable-package?toc=/dynamics365/unified-operations/financials/toc.json)
 
-#### [Pliki do pobrania dostawcy usług w chmurze i system Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/csp-download-customersource?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Pliki do pobrania dostawcy usług w chmurze i system Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### [Uaktualnianie i migracja](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Uaktualnianie z systemu AX 2012 do rozwiązania Dynamics 365 for Finance and Operations](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1301,8 +1356,8 @@
 ##### [Uaktualnianie — uaktualnianie danych w środowisku projektowym](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Uaktualnianie — zadania uaktualniania danych systemu AX 2012](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Uaktualnianie — uaktualnianie danych w środowisku piaskownicy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Weryfikowanie — testowanie odcięcia](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Weryfikowanie — proces weryfikacji aplikacji](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Weryfikowanie — testowanie przełączenia](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Weryfikowanie — zadania do wykonania po uaktualnieniu](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Weryfikowanie — testowanie funkcjonalne](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Weryfikowanie — przygotowanie do rozpoczęcia eksploatacji](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep?toc=/dynamics365/unified-operations/financials/toc.json)
 
@@ -1322,7 +1377,7 @@
 
 #### Uaktualnianie do ostatniej aktualizacji
 ##### [Przygotowania do przejścia do ostatniej aktualizacji](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Wersje i zasady aktualizacji](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Zasady świadczenia pomocy technicznej](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Uaktualnianie do najnowszej aktualizacji platformy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Uaktualnianie platformy Dynamics do wydania z sierpnia 2016](/dynamics365/unified-operations/dev-itpro/migration-upgrade/update-platform-each-release?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Uaktualnianie środowiska piaskownicy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-sandbox-environment?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1342,116 +1397,118 @@
 
 
 ### Administrowanie systemem
-#### [Comiesięczne aktualizacje platformy — często zadawane pytania](/dynamics365/unified-operations/dev-itpro/faq-platform-monthly-updates?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Dodawanie linków do postanowień prawnych i zasad zachowania poufności informacji organizacji](/dynamics365/unified-operations/dev-itpro/legal-terms-privacy-statement?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Raport kodów licencji i kluczy konfiguracji](/dynamics365/unified-operations/dev-itpro/license-codes-configuration-keys-report?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Udostępnianie danych między firmami](/dynamics365/unified-operations/dev-itpro/cross-company-data-sharing?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Tryb konserwacji](/dynamics365/unified-operations/dev-itpro/maintenance-mode?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Comiesięczne aktualizacje platformy — często zadawane pytania](/dynamics365/unified-operations/dev-itpro/sysadmin/faq-platform-monthly-updates?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Dodawanie linków do postanowień prawnych i zasad zachowania poufności informacji organizacji](/dynamics365/unified-operations/dev-itpro/sysadmin/legal-terms-privacy-statement?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Raport kodów licencji i kluczy konfiguracji](/dynamics365/unified-operations/dev-itpro/sysadmin/license-codes-configuration-keys-report?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Udostępnianie danych między firmami](/dynamics365/unified-operations/dev-itpro/sysadmin/cross-company-data-sharing?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Tryb konserwacji](/dynamics365/unified-operations/dev-itpro/sysadmin/maintenance-mode?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Zabezpieczenia
-##### [Zabezpieczenia oparte na rolach](/dynamics365/unified-operations/dev-itpro/role-based-security?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Architektura zabezpieczeń](/dynamics365/unified-operations/dev-itpro/security-architecture?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Zabezpieczenia oparte na rolach](/dynamics365/unified-operations/dev-itpro/sysadmin/role-based-security?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Architektura zabezpieczeń](/dynamics365/unified-operations/dev-itpro/sysadmin/security-architecture?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Raporty dotyczące zabezpieczeń](/dynamics365/unified-operations/dev-itpro/sysadmin/security-reports?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Przetwarzanie wsadowe
-##### [Omówienie przetwarzania wsadowego](/dynamics365/unified-operations/dev-itpro/batch-processing-overview?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Omówienie serwera przetwarzania wsadowego](/dynamics365/unified-operations/dev-itpro/batch-server-overview?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Omówienie przetwarzania wsadowego](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-processing-overview?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Omówienie serwera przetwarzania wsadowego](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-server-overview?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### Usługa Lifecycle Services
-#### [Omówienie usługi Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Usługa LCS dla odbiorców](/dynamics365/unified-operations/dev-itpro/lcs-works-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Usługa LCS dla partnerów](/dynamics365/unified-operations/dev-itpro/getting-started-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Co nowego](/dynamics365/unified-operations/dev-itpro/whats-new-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Znane problemy](/dynamics365/unified-operations/dev-itpro/known-issues?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Przewodnik użytkownika usługi Dynamics Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lcs-user-guide?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Konfigurowanie zabezpieczeń](/dynamics365/unified-operations/dev-itpro/configure-lcs-security?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Wyszukiwanie problemów](/dynamics365/unified-operations/dev-itpro/issue-search-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Menedżer konfiguracji](/dynamics365/unified-operations/dev-itpro/configuration-manager-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Konfigurowanie Menedżera konfiguracji ](/dynamics365/unified-operations/dev-itpro/set-up-configuration-manager-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Konfigurowanie usługi uaktualniania kodu](/dynamics365/unified-operations/dev-itpro/configure-execute-code-upgrade?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Tworzenie metodologii ](/dynamics365/unified-operations/dev-itpro/create-methodology?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Narzędzie do modelowania procesów biznesowych](/dynamics365/unified-operations/dev-itpro/business-process-modeler-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Biblioteki procesów biznesowych w narzędziu do modelowania procesów biznesowych](/dynamics365/unified-operations/dev-itpro/business-process-libraries-business-process-modeler?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Schematy blokowe Narzędzia do modelowania procesów biznesowych](/dynamics365/unified-operations/dev-itpro/flowcharts-business-process-modeler?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Przekazywanie niestandardowych procesów biznesowych](/dynamics365/unified-operations/dev-itpro/upload-business-processes-bpm-task-recorder?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Monitorowanie i diagnostyka ](/dynamics365/unified-operations/dev-itpro/monitoring-diagnostics?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Omówienie usługi Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Usługa LCS dla odbiorców](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Usługa LCS dla partnerów](/dynamics365/unified-operations/dev-itpro/lifecycle-services/getting-started-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Co nowego](/dynamics365/unified-operations/dev-itpro/lifecycle-services/whats-new-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Znane problemy](/dynamics365/unified-operations/dev-itpro/lifecycle-services/known-issues?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Przewodnik użytkownika usługi Dynamics Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Konfigurowanie zabezpieczeń](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-lcs-security?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Wyszukiwanie problemów](/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Menedżer konfiguracji](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configuration-manager-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Konfigurowanie Menedżera konfiguracji ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/set-up-configuration-manager-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Konfigurowanie usługi uaktualniania kodu](/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-execute-code-upgrade?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Tworzenie metodologii ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/create-methodology?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Narzędzie do modelowania procesów biznesowych](/dynamics365/unified-operations/dev-itpro/lifecycle-services/business-process-modeler-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Biblioteki procesów biznesowych w narzędziu do modelowania procesów biznesowych](/dynamics365/unified-operations/dev-itpro/lifecycle-services/business-process-libraries-business-process-modeler?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Schematy blokowe Narzędzia do modelowania procesów biznesowych](/dynamics365/unified-operations/dev-itpro/lifecycle-services/flowcharts-business-process-modeler?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Przekazywanie niestandardowych procesów biznesowych](/dynamics365/unified-operations/dev-itpro/lifecycle-services/upload-business-processes-bpm-task-recorder?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Monitorowanie i diagnostyka ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/monitoring-diagnostics?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Biblioteka elementów zawartości](/dynamics365/unified-operations/dev-itpro/lifecycle-services/asset-library?toc=/dynamics365/unified-operations/financials/toc.json)
 
 #### Funkcje usługi Dynamics AX 2012 Lifecycle Services
 ##### Wdrażanie
-###### [Środowiska hostowane w chmurze](/dynamics365/unified-operations/dev-itpro/ax-2012/cloud-hosted-environments-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Kopiowanie konfiguracji](/dynamics365/unified-operations/dev-itpro/copy-configuration-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Planowanie wdrożenia systemu Dynamics AX 2012 R3 na platformie Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/plan-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Wdrażanie systemu Dynamics AX 2012 R3 na platformie Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-2012-r3-azure-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Wdrażanie środowiska demonstracyjnego systemu Dynamics AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Wdrażanie środowiska projektowego na platformie Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-development-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Wdrażanie środowiska o wysokiej dostępności na platformie Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-high-availability-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Wdrażanie środowiska testowego na platformie Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-test-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Zarządzanie wdrożeniem systemu Dynamics AX 2012 R3 na platformie Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/manage-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Dołączenie serwerów modułu Enterprise Portal do farmy jednoserwerowej](/dynamics365/unified-operations/dev-itpro/ax-2012/join-enterprise-portal-servers-single-server-farm?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Punkty wprowadzania rekordów w module Enterprise Portal systemu Dynamics AX](/dynamics365/unified-operations/dev-itpro/ax-2012/record-entry-points-enterprise-portal?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Wdrażanie środowiska projektowego/testowego funkcji handlu elektronicznego modułu Handel detaliczny na platformie Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-ecommerce-devtest-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Wdrażanie środowiska demonstracyjnego podstawowych funkcji modułu Handel detaliczny na platformie Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-essentials-demo-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Wdrażanie środowiska projektowego/testowego podstawowych funkcji modułu Handel detaliczny na platformie Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-essentials-devtest-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Wdrażanie środowiska projektowego/testowego funkcji mobilności modułu Handel detaliczny na platformie Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-mobility-devtest-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Rozwiązywanie problemów z wdrożeniem systemu Dynamics AX 2012 R3 na platformie Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/troubleshoot-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Aktualizacje dla systemu Dynamics AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/update-2012-r3-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Przewodnik użytkownika struktury importu/eksportu danych](/dynamics365/unified-operations/dev-itpro/ax-2012/user-guide-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Instalacja](/dynamics365/unified-operations/dev-itpro/ax-2012/install-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Instalacja systemu AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/install-ax-2012-r3?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Instalacja systemu Dynamics AX 2012 R2 w wersji CU7 dla programu SQL Server 2014](/dynamics365/unified-operations/dev-itpro/ax-2012/install-dixf-ax-2012-r2-cu7-ss-2014?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Wykonywanie migracji danych](/dynamics365/unified-operations/dev-itpro/ax-2012/migrate-data-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Konfigurowanie wersji usług SSIS](/dynamics365/unified-operations/dev-itpro/ax-2012/configure-sql-server-integration-services-multiple-versions-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Kopiowanie i porównywanie danych jednostek między firmami](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-compare-entity-data-between-companies-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Kopiowanie danych między firmami w systemie Dynamics AX](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-data-between-companies-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Kopiowanie danych między wystąpieniami systemu Dynamics AX](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-data-between-instances-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Tworzenie niestandardowej jednostki docelowej](/dynamics365/unified-operations/dev-itpro/ax-2012/create-custom-target-entity-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Jednostki struktury importu/eksportu danych](/dynamics365/unified-operations/dev-itpro/ax-2012/entities-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Importowanie danych ze źródła danych CSV](/dynamics365/unified-operations/dev-itpro/ax-2012/import-data-csv-data-source-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Importowanie danych ze źródła danych ODBC](/dynamics365/unified-operations/dev-itpro/ax-2012/import-data-odbc-data-source-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Pliki demonstracyjne](/dynamics365/unified-operations/dev-itpro/ax-2012/demo-files-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Szybkie importowanie/eksportowanie](/dynamics365/unified-operations/dev-itpro/ax-2012/quick-import-export?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Środowiska hostowane w chmurze](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/cloud-hosted-environments-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Kopiowanie konfiguracji](/dynamics365/unified-operations/dev-itpro/lifecycle-services/copy-configuration-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Planowanie wdrożenia systemu Dynamics AX 2012 R3 na platformie Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/plan-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Wdrażanie systemu Dynamics AX 2012 R3 na platformie Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-2012-r3-azure-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Wdrażanie środowiska demonstracyjnego systemu Dynamics AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Wdrażanie środowiska projektowego na platformie Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-development-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Wdrażanie środowiska o wysokiej dostępności na platformie Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-high-availability-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Wdrażanie środowiska testowego na platformie Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-test-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Zarządzanie wdrożeniem systemu Dynamics AX 2012 R3 na platformie Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/manage-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Dołączenie serwerów modułu Enterprise Portal do farmy jednoserwerowej](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/join-enterprise-portal-servers-single-server-farm?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Punkty wprowadzania rekordów w module Enterprise Portal systemu Dynamics AX](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/record-entry-points-enterprise-portal?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Wdrażanie środowiska projektowego/testowego funkcji handlu elektronicznego modułu Handel detaliczny na platformie Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-ecommerce-devtest-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Wdrażanie środowiska demonstracyjnego podstawowych funkcji modułu Handel detaliczny na platformie Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-essentials-demo-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Wdrażanie środowiska projektowego/testowego podstawowych funkcji modułu Handel detaliczny na platformie Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-essentials-devtest-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Wdrażanie środowiska projektowego/testowego funkcji mobilności modułu Handel detaliczny na platformie Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/deploy-retail-mobility-devtest-environment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Rozwiązywanie problemów z wdrożeniem systemu Dynamics AX 2012 R3 na platformie Azure](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/troubleshoot-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Aktualizacje dla systemu Dynamics AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/update-2012-r3-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Przewodnik użytkownika struktury importu/eksportu danych](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/user-guide-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Instalacja](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Instalacja systemu AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-ax-2012-r3?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Instalacja systemu Dynamics AX 2012 R2 w wersji CU7 dla programu SQL Server 2014](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-dixf-ax-2012-r2-cu7-ss-2014?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Wykonywanie migracji danych](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/migrate-data-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Konfigurowanie wersji usług SSIS](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/configure-sql-server-integration-services-multiple-versions-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Kopiowanie i porównywanie danych jednostek między firmami](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-compare-entity-data-between-companies-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Kopiowanie danych między firmami w systemie Dynamics AX](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-data-between-companies-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Kopiowanie danych między wystąpieniami systemu Dynamics AX](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/copy-data-between-instances-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Tworzenie niestandardowej jednostki docelowej](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-custom-target-entity-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Jednostki struktury importu/eksportu danych](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/entities-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Importowanie danych ze źródła danych CSV](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-data-csv-data-source-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Importowanie danych ze źródła danych ODBC](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-data-odbc-data-source-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Pliki demonstracyjne](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/demo-files-dixf?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Szybkie importowanie/eksportowanie](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/quick-import-export?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### Tabele 
-###### [Tworzenie tabel](/dynamics365/unified-operations/dev-itpro/ax-2012/create-tables?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Właściwości tabel](/dynamics365/unified-operations/dev-itpro/ax-2012/table-properties?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Tworzenie tabel](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-tables?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Właściwości tabel](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/table-properties?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### Narzędzia usługi Dynamics AX 2012 LCS
-###### [Projekty](/dynamics365/unified-operations/dev-itpro/ax-2012/projects-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Metodologie](/dynamics365/unified-operations/dev-itpro/ax-2012/methodologies-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Analiza dostosowań ](/dynamics365/unified-operations/dev-itpro/ax-2012/customization-analysis-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Narzędzie do szacowania infrastruktury](/dynamics365/unified-operations/dev-itpro/ax-2012/infrastructure-estimator-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Narzędzie do szacowania zapotrzebowania na licencje](/dynamics365/unified-operations/dev-itpro/ax-2012/license-sizing-estimator-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Odpowiedzi na żądania propozycji (/dynamics365/unified-operations/dev-itpro/RFP)](/dynamics365/unified-operations/dev-itpro/ax-2012/rfp-responses-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Diagnostyka systemów](/dynamics365/unified-operations/dev-itpro/ax-2012/system-diagnostics-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Instalowanie i uruchamianie Diagnostyki systemów](/dynamics365/unified-operations/dev-itpro/ax-2012/install-run-system-diagnostics-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Analiza możliwości uaktualnienia](/dynamics365/unified-operations/dev-itpro/ax-2012/upgrade-analysis-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Profiler wykorzystania](/dynamics365/unified-operations/dev-itpro/ax-2012/usage-profiler-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Projekty](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/projects-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Metodologie](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/methodologies-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Analiza dostosowań ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/customization-analysis-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Narzędzie do szacowania infrastruktury](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/infrastructure-estimator-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Narzędzie do szacowania zapotrzebowania na licencje](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/license-sizing-estimator-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Odpowiedzi na żądania propozycji (/dynamics365/unified-operations/dev-itpro/lifecycle-services/RFP)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/rfp-responses-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Diagnostyka systemów](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/system-diagnostics-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Instalowanie i uruchamianie Diagnostyki systemów](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-run-system-diagnostics-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Analiza możliwości uaktualnienia](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/upgrade-analysis-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Profiler wykorzystania](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/usage-profiler-lcs?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### Narzędzia systemu Dynamics AX 2012 do pobrania
-###### [Przewodnik użytkownika Narzędzia do uaktualniania kodu (przestarzały)](/dynamics365/unified-operations/dev-itpro/ax-2012/code-upgrade-tool-user-guide?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Narzędzia usługi Lifecycle Services do pobrania](/dynamics365/unified-operations/dev-itpro/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Narzędzie do przenoszenia danych testowych (beta)](/dynamics365/unified-operations/dev-itpro/ax-2012/test-data-transfer-tool-beta-2012?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Instalowanie](/dynamics365/unified-operations/dev-itpro/ax-2012/install-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Uruchamianie](/dynamics365/unified-operations/dev-itpro/ax-2012/run-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Importowanie danych demonstracyjnych dla systemu AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Narzędzie do tworzenia zabezpieczeń](/dynamics365/unified-operations/dev-itpro/ax-2012/overview-security-development-tool-user-interface?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Instalowanie](/dynamics365/unified-operations/dev-itpro/ax-2012/install-security-development-tool?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Przewodnik użytkownika](/dynamics365/unified-operations/dev-itpro/ax-2012/security-development-tool-user-guide?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Definiowanie lub edytowanie uprawnień punktów wejścia](/dynamics365/unified-operations/dev-itpro/ax-2012/define-edit-entry-point-permissions?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Zestaw narzędzi Performance Benchmark Software Development Toolkit](/dynamics365/unified-operations/dev-itpro/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Narzędzie Doradca uaktualnienia zabezpieczeń](/dynamics365/unified-operations/dev-itpro/ax-2012/security-upgrade-advisor-tool-user-guide?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Intelligent Data Management Framework (IDMF)](/dynamics365/unified-operations/dev-itpro/ax-2012/microsoft-idmf?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Przegląd](/dynamics365/unified-operations/dev-itpro/ax-2012/overview-idmf?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Przewodnik instalacji](/dynamics365/unified-operations/dev-itpro/ax-2012/installation-guide-idmf?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Konfiguracja](/dynamics365/unified-operations/dev-itpro/ax-2012/configuration-functionality-idmf-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Analiza](/dynamics365/unified-operations/dev-itpro/ax-2012/analysis-functionality-idmf-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Obiekty przeczyszczania i archiwum](/dynamics365/unified-operations/dev-itpro/ax-2012/work-with-purge-objects-archive-objects?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Tworzenie obiektów archiwum](/dynamics365/unified-operations/dev-itpro/ax-2012/create-archive-objects?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Tworzenie obiektów przeczyszczania](/dynamics365/unified-operations/dev-itpro/ax-2012/create-purge-objects?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Planowanie zadań przeczyszczania i analizy](/dynamics365/unified-operations/dev-itpro/ax-2012/schedule-purge-analysis-tasks?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Wyświetlanie zadań przeczyszczania lub archiwizowania](/dynamics365/unified-operations/dev-itpro/ax-2012/view-status-purge-archive-jobs?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Obsługa](/dynamics365/unified-operations/dev-itpro/ax-2012/maintain-idmf?toc=/dynamics365/unified-operations/financials/toc.json)
-####### [Rozwiązywanie problemów](/dynamics365/unified-operations/dev-itpro/ax-2012/troubleshoot-idmf?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Przewodnik użytkownika Narzędzia do uaktualniania kodu (przestarzały)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/code-upgrade-tool-user-guide?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Narzędzia usługi Lifecycle Services do pobrania](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Narzędzie do przenoszenia danych testowych (beta)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/test-data-transfer-tool-beta-2012?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Instalowanie](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Uruchamianie](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/run-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Importowanie danych demonstracyjnych dla systemu AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Narzędzie do tworzenia zabezpieczeń](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/overview-security-development-tool-user-interface?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Instalacja](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-security-development-tool?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Przewodnik użytkownika](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/security-development-tool-user-guide?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Definiowanie lub edytowanie uprawnień punktów wejścia](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/define-edit-entry-point-permissions?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Zestaw narzędzi Performance Benchmark Software Development Toolkit](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Narzędzie Doradca uaktualnienia zabezpieczeń](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/security-upgrade-advisor-tool-user-guide?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Intelligent Data Management Framework (IDMF)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/microsoft-idmf?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Przegląd](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/overview-idmf?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Przewodnik instalacji](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/installation-guide-idmf?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Konfiguracja](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/configuration-functionality-idmf-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Analiza](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/analysis-functionality-idmf-workspace?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Obiekty przeczyszczania i archiwum](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/work-with-purge-objects-archive-objects?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Tworzenie obiektów archiwum](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-archive-objects?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Tworzenie obiektów przeczyszczania](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-purge-objects?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Planowanie zadań przeczyszczania i analizy](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/schedule-purge-analysis-tasks?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Wyświetlanie zadań przeczyszczania lub archiwizowania](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/view-status-purge-archive-jobs?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Obsługa](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/maintain-idmf?toc=/dynamics365/unified-operations/financials/toc.json)
+####### [Rozwiązywanie problemów](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/troubleshoot-idmf?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### Zarządzania bazami danych
-#### [Kopiowanie bazy danych z usługi Azure SQL Database do środowiska programu SQL Server](/dynamics365/unified-operations/dev-itpro/copy-database-from-azure-sql-to-sql-server?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Kopiowanie bazy danych z programu SQL Server do środowiska produkcyjnego usługi Azure SQL Database](/dynamics365/unified-operations/dev-itpro/copy-database-from-sql-server-to-azure-sql?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Przywracanie bazy danych w środowisku nieprodukcyjnym](/dynamics365/unified-operations/dev-itpro/request-point-in-time-restore?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Eksportowanie kopii bazy danych w celu późniejszego przywrócenia](/dynamics365/unified-operations/dev-itpro/copy-operations-database?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Kopiowanie bazy danych z usługi Azure SQL Database do środowiska programu SQL Server](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Kopiowanie bazy danych z programu SQL Server do środowiska produkcyjnego usługi Azure SQL Database](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-sql-server-to-azure-sql?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Przywracanie bazy danych w środowisku nieprodukcyjnym](/dynamics365/unified-operations/dev-itpro/database/request-point-in-time-restore?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Eksportowanie kopii bazy danych w celu późniejszego przywrócenia](/dynamics365/unified-operations/dev-itpro/database/copy-operations-database?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### Pomoc techniczna
 #### [Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 for Finance and Operations Enterprise Edition i usługi Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)
@@ -1467,6 +1524,7 @@
 
 ## Płatności
 ### [Metody płatności](/dynamics365/unified-operations/retail/payment-methods?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Płatności — często zadawane pytania](/dynamics365/unified-operations/retail/dev-itpro/payments-retail?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ## Biuro obsługi
 ### [Omówienie biura obsługi](/dynamics365/unified-operations/retail/call-center-functionality?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1489,6 +1547,7 @@
 ### Sprzęt i urządzenia peryferyjne
 #### [Omówienie sklepowych urządzeń peryferyjnych](/dynamics365/unified-operations/retail/retail-peripherals-overview?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Urządzenia peryferyjne punktu sprzedaży przetestowane przez firmę Microsoft](/dynamics365/unified-operations/retail/microsoft-tested-pos-hardware-peripherals?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Symulator sklepowych urządzeń peryferyjnych](/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Definiowanie klientów, rejestrów i stacji sprzętowych w kanale oraz zarządzanie nimi](/dynamics365/unified-operations/retail/define-maintain-channel-clients-registers-hw-stations?toc=/dynamics365/unified-operations/financials/toc.json)
 ### Układ ekranu
 #### [Konfigurowanie układów ekranu dla punktu sprzedaży](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1513,7 +1572,7 @@
 ### Paragony
 #### [Konfigurowanie szablonów paragonów](/dynamics365/unified-operations/retail/receipt-templates-printing?toc=/dynamics365/unified-operations/financials/toc.json) 
 #### [Wysyłanie paragonów pocztą e-mail z aplikacji MPOS](/dynamics365/unified-operations/retail/email-receipts?toc=/dynamics365/unified-operations/financials/toc.json)
-### [Rejestrator zadań i Pomoc dla punktu sprzedaży](/dynamics365/unified-operations/retail/task-recorder-retail-pos?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Rejestrator zadań i Pomoc dla punktu sprzedaży](/dynamics365/unified-operations/retail/task-recorder-retail-pos?toc=/dynamics365/unified-operations/financials/toc.json)
 ## Monitorowanie i analizy
 ### [Monitorowanie wydajności sprzedaży i marży](/dynamics365/unified-operations/retail/monitor-sales-margin-performance?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Analizowanie trendów i wzorców sprzedaży](/dynamics365/unified-operations/retail/analyze-sales-trends-patterns?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1526,7 +1585,7 @@
 ### [Korekt ceny i rabaty](/dynamics365/unified-operations/retail/price-adjustments-discounts?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Ustalanie optymalnej kombinacji nakładających się rabatów](/dynamics365/unified-operations/retail/optimal-combination-overlapping-discounts?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Definiowanie rabatów specyficznych dla kanału](/dynamics365/unified-operations/retail/define-channel-specific-discounts?toc=/dynamics365/unified-operations/financials/toc.json)
-### [Tworzenie kuponów dla sieci sprzedaży](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Tworzenie kuponów dla sieci sprzedaży](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/financials/toc.json)
 ## Produkty i merchandising
 ### [Hierarchie handlu detalicznego](/dynamics365/unified-operations/retail/retail-hierarchies?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Tworzenie atrybutów i zarządzanie nimi](/dynamics365/unified-operations/retail/create-manage-attributes?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1534,17 +1593,14 @@
 ### [Konfigurowanie kodów kreskowych](/dynamics365/unified-operations/retail/set-up-bar-codes?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Konfigurowanie masek kodów kreskowych](/dynamics365/unified-operations/retail/set-up-bar-code-masks?toc=/dynamics365/unified-operations/financials/toc.json)
 ### [Konfigurowanie asortymentu](/dynamics365/unified-operations/retail/set-up-assortments?toc=/dynamics365/unified-operations/financials/toc.json)
-### [Sprzedaż i zwrot produktów spoza asortymentu](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/retail/toc.json)
+### [Sprzedaż i zwrot produktów spoza asortymentu](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/financials/toc.json)
 ## Lojalność
 ### [Konfigurowanie programu lojalnościowego](/dynamics365/unified-operations/retail/set-up-customer-loyalty-program?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ## Zapasy
 ### [Zarządzanie zapasami w sklepie](/dynamics365/unified-operations/retail/work-with-store-inventory?toc=/dynamics365/unified-operations/financials/toc.json)
-## Podstawowe funkcje handlowe
-### [Omówienie podstawowych funkcji handlowych](/dynamics365/unified-operations/retail/commerce-essentials?toc=/dynamics365/unified-operations/financials/toc.json)
-### [Organizacje i hierarchie organizacyjne w podstawowych funkcjach handlowych](/dynamics365/unified-operations/retail/organizational-hierarchies-commerce-essentials?toc=/dynamics365/unified-operations/financials/toc.json)
 
-## [Programowanie dla rozwiązania Retail i administrowaniem nim](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
+## [Rozwój handlu detalicznego i zarządzanie nim](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### Architektura
 #### [Składniki rozwiązania Microsoft Dynamics 365 for Finance and Operations Enterprise Edition — Retail](/dynamics365/unified-operations/retail/retail-components?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1552,16 +1608,16 @@
 #### [Komunikacja w kanale sprzedaży detalicznej](/dynamics365/unified-operations/retail/dev-itpro/define-retail-channel-communications-cdx?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Architektura aplikacji MPOS](/dynamics365/unified-operations/retail/dev-itpro/retail-modern-pos-architecture?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Architektura publikowania detalicznego sklepu internetowego](/dynamics365/unified-operations/retail/dev-itpro/retail-online-store-publishing-architecture?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Zawartość usługi Power BI dotycząca wydajności kanału sprzedaży detalicznej](/dynamics365/unified-operations/retail/dev-itpro//dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
+#### [Zawartość usługi Power BI dotycząca wydajności kanału sprzedaży detalicznej](/dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
 
 ### Wdrażanie i poprawki
 #### [Konfigurowanie i instalowanie jednostki skalowania sklepów detalicznych](/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [System sklepu detalicznego — przed rozpoczęciem](/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Konfigurowanie i instalowanie aplikacji Retail Modern POS](/dynamics365/unified-operations/retail//retail-modern-pos-device-activation?toc=/dynamics365/unified-operations/financials/toc.json)
-##### [Zarządzanie kontami i urządzeniami handlu detalicznego z centrali](/dynamics365/unified-operations/retail//set-up-activation-accounts-validate-devices-hq?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Konfigurowanie i instalowanie aplikacji Retail Modern POS](/dynamics365/unified-operations/retail/retail-modern-pos-device-activation?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Zarządzanie kontami i urządzeniami handlu detalicznego z centrali](/dynamics365/unified-operations/retail/set-up-activation-accounts-validate-devices-hq?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Aktywacja urządzenia w aplikacji Retail POS](/dynamics365/unified-operations/retail/dev-itpro/retail-device-activation?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Zabezpieczanie aplikacji Cloud POS w sklepie detalicznym](/dynamics365/unified-operations/retail/dev-itpro/secure-retail-cloud-pos?toc=/dynamics365/unified-operations/financials/toc.json)
-#### [Konfigurowanie i instalowanie modułu Retail Hardware Station](/dynamics365/unified-operations/retail//retail-hardware-station-configuration-installation?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Konfigurowanie i instalowanie modułu Retail Hardware Station](/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Zdarzenia składników rozwiązania Retail używane na potrzeby diagnostyki i rozwiązywania problemów](/dynamics365/unified-operations/retail/dev-itpro/retail-component-events-diagnostics-troubleshooting?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Stosowanie wdrażalnego pakietu](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=/dynamics365/unified-operations/financials/toc.json)
 
@@ -1571,8 +1627,8 @@
 
 ### Możliwości rozszerzania
 #### Punkt sprzedaży
-##### [Układy ekranu aplikacji Retail POS](/dynamics365/unified-operations/retail//pos-screen-layouts?toc=/dynamics365/unified-operations/financials/toc.json)
-###### [Instalowanie projektanta układów punktu sprzedaży](/dynamics365/unified-operations/retail//install-pos-layout-designer?toc=/dynamics365/unified-operations/financials/toc.json)
+##### [Układy ekranu aplikacji Retail POS](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=/dynamics365/unified-operations/financials/toc.json)
+###### [Instalowanie projektanta układów punktu sprzedaży](/dynamics365/unified-operations/retail/install-pos-layout-designer?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Konfigurowanie aplikacji MPOS do działania w trybie offline](/dynamics365/unified-operations/retail/dev-itpro/retail-modern-pos-offline?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Możliwości rozszerzania wyzwalacza aplikacji MPOS i Cloud POS](/dynamics365/unified-operations/retail/dev-itpro/modern-pos-trigger-extensibility?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Tworzenie aplikacji Środowisko handlu detalicznego](/dynamics365/unified-operations/retail/dev-itpro/create-retail-experience-app?toc=/dynamics365/unified-operations/financials/toc.json)
@@ -1597,7 +1653,7 @@
 ##### [Platforma handlu elektronicznego](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Zestaw SDK platformy handlu elektronicznego](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk?toc=/dynamics365/unified-operations/financials/toc.json)
 #### Łącznik płatności
-##### [Implementowanie łącznika płatności i urządzenia płatniczego (oficjalny dokument)](/dynamics365/unified-operations/retail/dev-itpro/http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+##### [Implementowanie łącznika płatności i urządzenia płatniczego (oficjalny dokument)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 ##### [Wdrażanie łącznika płatności](/dynamics365/unified-operations/retail/dev-itpro/deploy-payment-connector?toc=/dynamics365/unified-operations/financials/toc.json)
 ##### [Tworzenie Instalatora Windows dla łącznika płatności](/dynamics365/unified-operations/retail/dev-itpro/create-windows-installer-payment-connector?toc=/dynamics365/unified-operations/financials/toc.json)
 
@@ -1605,13 +1661,14 @@
 #### [Omówienie zestawu Retail SDK](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-overview?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Integrowanie zestawu Retail SDK z systemem ciągłej kompilacji](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Przykłady możliwości rozszerzania zestawu Retail SDK](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Próbki dla integracji programu Retail POS z jednostkami kontrolnymi dla Szwecji](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Pakiety zestawu Retail SDK](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-packaging?toc=/dynamics365/unified-operations/financials/toc.json)
 #### [Przykłady zestawu Retail SDK ](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-samples?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ### Środowisko uruchomieniowe Commerce runtime
 #### [Rozszerzenie lojalnościowe](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/loyalty-extension-sample?toc=/dynamics365/unified-operations/financials/toc.json)
 
-# [Dynamics 365 for Talent](/dynamics365/unified-operations/talent/index)
+# [Dynamics 365 for Talent](/dynamics365/unified-operations/talent/index?toc=/dynamics365/unified-operations/financials/toc.json)
 
 ## Opracowywanie strategii dotyczącej zasobów ludzkich
 ### [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=/dynamics365/unified-operations/financials/toc.json)
