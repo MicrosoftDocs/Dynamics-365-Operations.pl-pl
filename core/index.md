@@ -40,7 +40,7 @@ Z tej dokumentacji dowiesz się, jak wykorzystać rozwiązanie Dynamics 365 for 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><h3>Finanse</h3>
+<td><h3>Financials</h3>
 <p><a href="../financials/general-ledger/audit-policy-rules">Zgodność z przepisami</a></p>
 <p>Zarządzanie finansami</p>
 <ul style="list-style-type:none">
