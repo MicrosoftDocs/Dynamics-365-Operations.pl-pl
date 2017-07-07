@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -31,6 +31,8 @@ ms.lasthandoff: 05/25/2017
 # <a name="weighted-average-date"></a>Średnia ważona z datą
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Średnia ważona z datą to model zapasów oparty na zasadzie średniej ważonej. W tej metodzie wydania z zapasów są wyceniane na podstawie średniej wartości towarów przyjętych do zapasów w każdym dniu w okresie zamknięcia zapasów. Podczas zamknięcia zapasów przy użyciu średniej ważonej z datą wszystkie dzienne przyjęcia są rozliczane względem wirtualnego wydania. To wirtualne wydanie zawiera łączną przyjętą ilość i wartość w danym dniu. Dla wirtualnego rozchodu istnieje odpowiadający mu wirtualny przychód, z którego zostanie rozliczony. W ten sposób wszystkie wydania mają ten sam średni koszt. Wirtualny rozchód i przychód mogą być postrzegane jako wirtualne przeniesienie na podstawie *średniej ważonej zamknięcia magazynu*. 

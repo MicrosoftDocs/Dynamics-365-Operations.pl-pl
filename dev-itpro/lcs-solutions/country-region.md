@@ -6,22 +6,21 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: shylaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 104173
-ms.assetid: 2e299a38-16e5-474e-b993-d88cebfadca0
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
-ms.openlocfilehash: 25a9885a31871a19285cdd30987e3d1caa99bc04
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: ac77d2d374dc77aa4cf43ae2621b3692e556c9d0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
@@ -54,6 +53,9 @@ Wymienione poniżej zasoby zawierają informacje o planowanych i nowych funkcjac
 -   [Obserwacje otoczenia prawnego i informacje dotyczące zmian przepisów](regulatory-watch-communication.md)
 -   [Informowanie firmy Microsoft o alertach dotyczących przepisów krajowych/regionalnych oraz śledzenie stanu funkcji wymaganych przepisami prawa](submit-localization-alerts.md)
 
+### <a name="dynamics-365-roadmap"></a>Plan rozwoju usługi Dynamics 365
+[Plan rozwoju usługi Dynamics 365](https://roadmap.dynamics.com/) zawiera informacje na temat tego, nad czym pracujemy. Z tego planu możesz dowiedzieć się, jakie funkcje są udostępniane publicznie, a jakie są opracowywane. Wszystkie daty oraz lista funkcji, które są aktualnie opracowywane, są w wersji wstępnej, zostały określone na podstawie aktualnych oczekiwań i mogą ulec zmianie bez powiadomienia.
+
 ## <a name="electronic-reporting"></a>Raportowanie elektroniczne
 Narzędzie Raportowanie elektroniczne (ER) umożliwia konfigurowanie formatów dokumentów elektronicznych zgodnie z wymogami prawnymi obowiązującymi w różnych krajach/regionach. Raportowanie elektroniczne umożliwia zarządzanie tymi formatami podczas ich całego cyklu życia. Aby uzyskać więcej informacji, zobacz jedne z następujących tematów:
 -   [Omówienie Raportowania elektroniczne](../analytics/general-electronic-reporting.md)
@@ -62,7 +64,9 @@ Narzędzie Raportowanie elektroniczne (ER) umożliwia konfigurowanie formatów d
 -   [Rozszerzanie listy funkcji Raportowania elektronicznego)](../analytics/general-electronic-reporting-formulas-list-extension.md)
 -   [Aplikacje docelowe Raportowania elektronicznego](../analytics/electronic-reporting-destinations.md)
 -   [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../analytics/download-electronic-reporting-configuration-lcs.md)
+-   [Importowanie konfiguracji raportowania elektronicznego](../analytics/electronic-reporting-import-ger-configurations.md)
 -   [Konfigurowanie Raportowania elektronicznego do ściągania danych do usługi Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Generowanie dokumentów elektronicznych i aktualizowanie danych aplikacji za pomocą narzędzia Raportowanie elektroniczne](../analytics/generate-electronic-documents-update-application-data.md)
 
 ## <a name="task-guides"></a>Przewodniki zadań
 Przewodniki zadań są dostępne w okienku Pomocy produktu i oferują nadzorowane przewodniki po kluczowych procesach biznesowych. Możesz otworzyć przewodnik zadania, aby zapoznać się z krokami procesu biznesowego, ale możesz też go odtworzyć, aby przejść przez proces biznesowy i wprowadzić dane.
@@ -83,9 +87,10 @@ W poniższych sekcjach wymieniono zasoby według kraju/regionu.
 
 ### <a name="austria"></a>Austria
 
--   [Amortyzacja półroczna](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation)
--   [Opłaty od materiałów opakowań](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation)
--   [Deklaracja VAT](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details)
+- [Amortyzacja półroczna](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation)
+- [Opłaty od materiałów opakowań](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation)
+- [Cła od zakupu](/dynamics365/unified-operations/financials/localizations/emea-aut-purchase-duties)
+- [Deklaracja VAT](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details)
 
 ### <a name="belgium"></a>Belgia
 
@@ -130,7 +135,6 @@ W poniższych sekcjach wymieniono zasoby według kraju/regionu.
 -   [Półroczna amortyzacja przy likwidacji środka trwałego w Czechach](/dynamics365/unified-operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
 -   [Zawieszenie amortyzacji (święta)](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
 -   [Metody amortyzacji środków trwałych w Czechach](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation)
-
 -   [Księgowanie wstępnego nabycia środka trwałego](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
 -   [Deklaracja VAT w Czechach](/dynamics365/unified-operations/financials/localizations/emea-cze-vat-statement-details)
 -   [Raportowanie podatku ](/dynamics365/unified-operations/financials/localizations/emea-cze-intra-community-vat-transactions)
@@ -144,30 +148,39 @@ W poniższych sekcjach wymieniono zasoby według kraju/regionu.
 -   [Likwidacja środków trwałych](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
 
 ### <a name="europe"></a>Europa
--   [Posiadacze zaliczek](/dynamics365/unified-operations/financials/localizations/emea-advance-holders)
--   [Edytowanie identyfikatorów faktur na zamówieniach sprzedaży](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders)
--   [Świadectwa wywozowe UE](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates)
--   [Raportowanie listy sprzedaży do UE](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list)
--   [Korekty kursów wymiany](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
--   [Formaty plików metod płatności](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
--   [Likwidacja środków trwałych w Estonii i na Litwie](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
--   [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
--   [Numerowanie faktur i dokumentów dostawy na Łotwie i Litwie](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
--   [Terminy wystawiania faktur](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
--   [Standardy OIOUBL](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing)
--   [Raport dokumentów płatności](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro)
--   [Gotówka podręczna](/dynamics365/unified-operations/financials/localizations/emea-petty-cash)
--   [Księgowanie wstępnego nabycia środka trwałego](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
--   [Kody pocztowe](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually)
--   [Identyfikatory rejestracji](/dynamics365/unified-operations/financials/localizations/emea-registration-ids)
--   [Omówienie przeniesienia kredytu SEPA](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer)
--   [Omówienie polecenia zapłaty SEPA](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
--   [Konfigurowanie osób podpisujących drukowane formularze](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
--   [Okresy podziału w arkuszach okresowych](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
--   [Aktualizowanie sposobu wyświetlania kwot w raportach i dokumentach](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms)
--   [Kursy wymiany dla podatku VAT](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
--   [Raportowanie podatku VAT w Europie](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting)
--   [Wyświetlanie transakcji w rozliczeniu](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form)
+- [Posiadacze zaliczek](/dynamics365/unified-operations/financials/localizations/emea-advance-holders)
+- [Transakcje posiadacza zaliczki](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions)
+- [Zaawansowane fakturowanie](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice)
+- [Uzgadnianie konta bankowego](/dynamics365/unified-operations/financials/localizations/emea-bank-reconciliation)
+- [Faktury korygujące](/dynamics365/unified-operations/financials/localizations/emea-corrective-invoice)
+- [Tworzenie i księgowanie arkuszy okresowych](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
+- [Edytowanie identyfikatorów faktur na zamówieniach sprzedaży](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders)
+- [Świadectwa wywozowe UE](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates)
+- [Raportowanie listy sprzedaży do UE](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list)
+- [Korekty kursów wymiany](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
+- [Formaty plików metod płatności](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
+- [Likwidacja środków trwałych w Estonii i na Litwie](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+- [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
+- [Raporty arkuszy magazynowych](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
+- [Numerowanie faktur i dokumentów dostawy na Łotwie i Litwie](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
+- [Terminy wystawiania faktur](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
+- [Standardy OIOUBL](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing)
+- [Raport dokumentów płatności](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro)
+- [Gotówka podręczna](/dynamics365/unified-operations/financials/localizations/emea-petty-cash)
+- [Księgowanie wstępnego nabycia środka trwałego](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
+- [Kody pocztowe](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually)
+- [Identyfikatory rejestracji](/dynamics365/unified-operations/financials/localizations/emea-registration-ids)
+- [Opłaty zwrotne](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge)
+- [Omówienie przeniesienia kredytu SEPA](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer)
+- [Omówienie polecenia zapłaty SEPA](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
+- [Konfiguracja kompensacji odbiorców oraz dostawców](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
+- [Konfigurowanie osób podpisujących drukowane formularze](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
+- [Dyrektywy podatkowe](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
+- [Aktualizowanie sposobu wyświetlania kwot w raportach i dokumentach](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
+- [Kursy wymiany dla podatku VAT](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
+- [Transakcje rejestru VAT dla Europy Wschodniej](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions)
+- [Raportowanie podatku VAT](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting)
+- [Wyświetlanie transakcji w rozliczeniu](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form)
 
 ### <a name="france"></a>Francja
 -   [Chronologiczne numery faktur i załączników](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
@@ -180,6 +193,7 @@ W poniższych sekcjach wymieniono zasoby według kraju/regionu.
 #### <a name="public-sector"></a>Sektor publiczny
    -   [Zobowiązania w sektorze publicznym](/dynamics365/unified-operations/financials/localizations/emea-fra-commitments-public-sector)
    -   [Upoważnienia „Mandats de paiement” w sektorze publicznymi](/dynamics365/unified-operations/financials/localizations/emea-fra-mandats-de-paiement)
+   -   [Zaopatrzenie i sourcing](/dynamics365/unified-operations/financials/localizations/emea-fra-procurement-sourcing-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
    -   [Księgowanie w sektorze publicznym](/dynamics365/unified-operations/financials/localizations/emea-fra-public-sector-accounting)
    -   [Titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector)
    -   [Wstrzymanie płatności za fakturę od dostawcy](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector)
@@ -205,22 +219,21 @@ W poniższych sekcjach wymieniono zasoby według kraju/regionu.
 -   [Weryfikacja daty dokumentu dostawy na fakturach we Włoszech](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
 -   [Włoskie księgi podatkowe](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books)
 -   [Podzielona płatność za faktury wystawione administracji publicznej](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
--   [Potrącona zaliczka na podatek](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax)
+-   [Potrącona zaliczka na podatek](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax)
 
 ### <a name="japan"></a>Japonia
 
--   [Opłaty od płatności bankowych ponoszone przez dostawców](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors)
--   [Faktury skonsolidowane](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices)
-
-#### <a name="fixed-assets"></a>Środki trwałe
-   -  [Reguły alokacji dla środków trwałych](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
-   -  [Metoda równego podziału amortyzacji](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
-   -  [Amortyzacja środka trwałego](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
-   -  [Zarządzanie utratą wartości środków trwałych w ośrodku wypracowującym środki pieniężne](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit)
-   -  [Konfiguracja zobowiązania do wycofania składników aktywów dla środków trwałych](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets)
-   -  [Konfigurowanie wpisów redukcji dla środków trwałych](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets)
--   [Płatność dla dostawcy przez potwierdzenie weksla](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange)
--   [Progresywne obliczanie potrąconej zaliczki na podatek](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation)
+-  [Opłaty od płatności bankowych ponoszone przez dostawców](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors)
+-  [Faktury skonsolidowane](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices)
+-  [Reguły alokacji dla środków trwałych](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
+-  [Metoda równego podziału amortyzacji](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
+-  [Amortyzacja środka trwałego](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
+-  [Zarządzanie utratą wartości środków trwałych w ośrodku wypracowującym środki pieniężne](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit)
+-  [Importowanie kodów pocztowych](/dynamics365/unified-operations/financials/localizations/apac-jpn-import-postal-codes)
+-  [Konfigurowanie zobowiązania do wycofania składników aktywów dla środków trwałych](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets)
+-  [Konfigurowanie wpisów redukcji dla środków trwałych](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets)
+-  [Płatność dla dostawcy przez potwierdzenie weksla](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange)
+-  [Progresywne obliczanie potrąconej zaliczki na podatek](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation)
 
 ### <a name="latvia"></a>Łotwa
 
@@ -254,6 +267,7 @@ W poniższych sekcjach wymieniono zasoby według kraju/regionu.
 ### <a name="norway"></a>Norwegia
 
 -   [Format importu Nets](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format)
+-   [Deklaracja VAT](/dynamics365/unified-operations/financials/localizations/emea-nor-sales-tax-payment-report)
 
 ### <a name="poland"></a>Polska
 
@@ -291,6 +305,7 @@ W poniższych sekcjach wymieniono zasoby według kraju/regionu.
 ### <a name="sweden"></a>Szwecja
 
 -   [Formaty importowania płatności w Szwecji](/dynamics365/unified-operations/financials/localizations/emea-swe-payment-formats-import)
+-   [Kasy w Szwecji](/dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers)
 
 ### <a name="switzerland"></a>Szwajcaria
 

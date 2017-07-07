@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
-ms.openlocfilehash: e0f41445c621a317fcdccef6cb08766dd6fac279
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 28b5c72a174c7d40fcf1e4c348834fc532b04fcc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
@@ -32,18 +32,19 @@ ms.lasthandoff: 06/21/2017
 
 Rozwiązanie Microsoft Dynamics 365 for Talent upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Te procesy obejmują utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami. Ponadto dla pracowników działu zasobów ludzkich stanowi platformę zarządzania odnośnymi obszarami.
 
-Rozwiązanie Dynamics 365 for Talent jest blisko związane z modułem Zasoby ludzkie w rozwiązaniu Dynamics 365 for Finance and Operations Enterprise Edition. Te same funkcje mogą być dostępne w obu tych produktach. W związku z tym w tematach, które dotyczą głównie modułu Zasoby ludzkie, będzie używana nazwa produktu Dynamics 365 for Finance and Operations Enterprise Edition, a w tematach dotyczących głównie rozwiązania Talent będzie używana nazwa produktu Dynamics 365 for Talent. Tematów, które zostały napisane dla jednego produktu można używać w odniesieniu do tych samych funkcji w powiązanym produkcie.
-
 Za pomocą rozwiązania Talent możesz wykonywać następujące zadania:
 
-> + Administrowanie strukturami organizacyjnymi.
-> + Obsługa kompleksowych informacji o pracowniku od zatrudnienia do dnia odejścia na emeryturę.
-> + Definiowanie planów świadczeń i administrowanie nimi, rejestrowanie pracowników, obejmowanie świadczeniami osób na utrzymaniu pracownika i wskazywanie beneficjentów.
-> + Określanie i monitorowanie zasad nieobecności.
-> + Wdrażanie i monitorowanie zarządzania czasem na podstawie profilu oraz generowanie informacji o płatnościach eksportowanych do systemu listy płac.
-> + Zarządzanie kompetencjami pracowników.
-> + Przeglądanie wydajności i implementowanie celów pracownika.
-> + Konfigurowanie, dostarczanie i analizowanie kursów szkoleniowych, które obejmują terminarze, ścieżki i sesje.
++ Administrowanie strukturami organizacyjnymi.
++ Obsługa kompleksowych informacji o pracowniku od zatrudnienia do dnia odejścia na emeryturę.
++ Definiowanie planów świadczeń i administrowanie nimi, rejestrowanie pracowników, obejmowanie świadczeniami osób na utrzymaniu pracownika i wskazywanie beneficjentów.
++ Określanie i monitorowanie zasad nieobecności.
++ Wdrażanie i monitorowanie zarządzania czasem na podstawie profilu oraz generowanie informacji o płatnościach eksportowanych do systemu listy płac.
++ Zarządzanie kompetencjami pracowników.
++ Przeglądanie wydajności i implementowanie celów pracownika.
++ Konfigurowanie, dostarczanie i analizowanie kursów szkoleniowych, które obejmują terminarze, ścieżki i sesje.
+
+> [!NOTE] 
+> Rozwiązanie Dynamics 365 for Talent jest blisko związane z modułem Zasoby ludzkie w rozwiązaniu Dynamics 365 for Finance and Operations Enterprise Edition. Te same funkcje mogą być dostępne w obu tych produktach. W związku z tym w tematach, które dotyczą głównie modułu Zasoby ludzkie, będzie używana nazwa produktu Dynamics 365 for Finance and Operations Enterprise Edition, a w tematach dotyczących głównie rozwiązania Talent będzie używana nazwa produktu Dynamics 365 for Talent. Tematów, które zostały napisane dla jednego produktu, można używać w odniesieniu do tych samych funkcji w powiązanym produkcie.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Opracowywanie strategii zarządzania zasobami ludzkimi
 ---------------------------------------------------------
