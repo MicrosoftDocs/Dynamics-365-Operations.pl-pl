@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3a95ce92fe40f7e1c52bba554b82bd73d627c6b4
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cf6d4756ae706316a342590ab76b4a5cbdd7e4f9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="procurement-and-sourcing-home-page"></a>Zaopatrzenie i sourcing — strona główna
+# Zaopatrzenie i sourcing — strona główna
+<a id="procurement-and-sourcing-home-page" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,20 +35,23 @@ Ten temat zawiera listę tematów Pomocy oraz innych zasobów dostępnych dla mo
 
 Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na produkty i usługi, przez zakup produktów, przyjęcie, zafakturowanie, aż do zrealizowania płatności dla dostawców. Procesy zaopatrzenia można skonfigurować według konkretnych potrzeb biznesowych, definiując zasady i przepływy pracy związane z zaopatrzeniem. Aby uzyskać ogólne informacje, zobacz [Omówienie zaopatrzenia i sourcingu](procurement-sourcing-overview.md). Poniżej znajduje się lista dodatkowych zasobów.
 
-## <a name="purchase-requisitions"></a>Zapotrzebowania na zakup
+## Zapotrzebowania na zakup
+<a id="purchase-requisitions" class="xliff"></a>
 -   [Omówienie zapotrzebowania na zakup](purchase-requisitions-overview.md)
 -   [Tworzenie zapotrzebowania na zużycie](http://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 -   [Tworzenie zapotrzebowania wykorzystującego ZO](http://ax.help.dynamics.com/en/wiki/create-a-requisition-that-uses-an-rfq/)
 -   [Tworzenie uprawnień do zamawiania produktów w imieniu innej osoby](http://ax.help.dynamics.com/en/wiki/set-up-permissions-for-ordering-products-on-behalf-of-someone-else/)
 
-## <a name="requests-for-quotation"></a>Zapytanie ofertowe
+## Zapytanie ofertowe
+<a id="requests-for-quotation" class="xliff"></a>
 -   [Zapytania ofertowe](request-quotations.md)
 -   [Tworzenie zapytania ofertowego](http://ax.help.dynamics.com/en/wiki/create-a-request-for-quotation/)
 -   [Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień](http://ax.help.dynamics.com/en/wiki/enter-and-compare-rfq-bids-and-award-contracts/)
 -   [Tworzenie metody punktowania dla ZO](http://ax.help.dynamics.com/en/wiki/create-a-scoring-method-for-rfqs/)
 -   [Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO](http://ax.help.dynamics.com/en/wiki/create-solicitation-types-and-scoring-criteria-for-rfqs/)
 
-## <a name="vendor-management-and-collaboration"></a>Zarządzanie i współpraca z dostawcami
+## Zarządzanie i współpraca z dostawcami
+<a id="vendor-management-and-collaboration" class="xliff"></a>
 -   [Ustawianie kont dostawców](set-up-vendor-accounts.md)
 -   [Tworzenie konta dostawcy](http://ax.help.dynamics.com/en/wiki/create-a-vendor-account/)
 -   [Tworzenie konta bankowego dostawcy](http://ax.help.dynamics.com/en/wiki/create-a-vendor-bank-account/)
@@ -57,13 +61,14 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 -   [Współpraca dostawców z odbiorcami](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md)
 -   [Konfigurowanie i obsługa współpracy z dostawcami](set-up-maintain-vendor-collaboration.md)
--   [Skrypt demonstracji przychodzących zapasów konsygnacyjnych w programie Microsoft Dynamics 365 for Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(oficjalny dokument)
+-   [Skrypt demonstracji przychodzących zapasów konsygnacyjnych w programie Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(oficjalny dokument)
 -   [Monitorowanie zapasów konsygnacyjnych poprzez współpracę z dostawcami](http://ax.help.dynamics.com/en/wiki/monitor-consignment-inventory-using-vendor-collaboration/)
--   [Współpraca z dostawcami za pomocą portalu dostawców](collaborate-vendors-vendor-portal.md) (tylko wersje programu Dynamics 365 for Operations z lutego i maja 2016 roku)
--   [Konfiguracja zabezpieczeń użytkowników portalu dostawców](configure-security-vendor-portal-users.md) (tylko wersje programu Dynamics 365 for Operations z lutego i maja 2016 roku)
--   [Mobilny obszar roboczy Współpraca z dostawcami dla aplikacji Microsoft Dynamics 365 for Operations](vendor-collaboration-mobile-workspace.md)
+-   [Współpraca z dostawcami za pomocą portalu dostawców](collaborate-vendors-vendor-portal.md) (tylko wersje systemu Dynamics AX z lutego i maja 2016 roku)
+-   [Konfiguracja zabezpieczeń użytkowników portalu dostawców](configure-security-vendor-portal-users.md) (tylko wersje programu Finance and Operations z lutego i maja 2016 roku)
+-   [Mobilny obszar roboczy Współpraca z dostawcami dla aplikacji Microsoft Dynamics 365 for Finance and Operations](vendor-collaboration-mobile-workspace.md)
 
-## <a name="procurement-product-management"></a>Zarządzanie zaopatrzeniem w produkty
+## Zarządzanie zaopatrzeniem w produkty
+<a id="procurement-product-management" class="xliff"></a>
 -   [Katalogi zaopatrzenia](procurement-catalogs.md)
 -   [Tworzenie katalogu zaopatrzenia](http://ax.help.dynamics.com/en/wiki/create-a-procurement-catalog/)
 -   [Importowanie katalogów dostawców](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (wpis na blogu)
@@ -71,7 +76,8 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 -   [Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia](http://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/)
 -   [Zatwierdzanie dostawców dla konkretnych kategorii zaopatrzenia](http://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/)
 
-## <a name="procurement"></a>Zaopatrzenie
+## Zaopatrzenie
+<a id="procurement" class="xliff"></a>
 -   [Omówienie zamówień zakupu](purchase-order-overview.md)
 -   [Tworzenie zamówienia zakupu](purchase-order-creation.md)
 -   [Zatwierdzanie i potwierdzanie zamówienia zakupu](purchase-order-approval-confirmation.md)
@@ -85,17 +91,20 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 -   [Tworzenie zlecenia wydania zakupu podczas tworzenia zamówienia zakupu](http://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-when-creating-the-purchase-order/)
 -   [Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych](http://ax.help.dynamics.com/en/wiki/create-a-consignment-replenishment-order/)
 
-## <a name="prices-and-discounts"></a>Ceny i rabaty
+## Ceny i rabaty
+<a id="prices-and-discounts" class="xliff"></a>
 -   [Umowy zakupu](purchase-agreements.md)
 -   [Tworzenie umowy zakupu](http://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
 -   [Rabaty dostawców](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (oficjalny dokument)
 
-## <a name="product-receipt-and-invoicing"></a>Dokument przyjęcia produktów i fakturowanie
+## Dokument przyjęcia produktów i fakturowanie
+<a id="product-receipt-and-invoicing" class="xliff"></a>
 -   [Przyjęcie produktów względem zamówień zakupu](product-receipt-against-purchase-orders.md)
--   [Omówienie faktur od dostawców](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
--   [Profile księgowania dostawców](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+-   [Omówienie faktur od dostawców](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+-   [Profile księgowania dostawców](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-## <a name="procurement-and-sourcing-workflows"></a>Przepływy pracy dla zaopatrzenia i sourcingu
+## Przepływy pracy dla zaopatrzenia i sourcingu
+<a id="procurement-and-sourcing-workflows" class="xliff"></a>
 -   [Omówienie zaopatrzenia i sourcingu](procurement-sourcing-overview.md)
 -   [Przepływy pracy dla zaopatrzenia i sourcingu](procurement-sourcing-workflows.md)
 -   [Rejestrowanie przyjęcia towarów w zamówieniu zakupu](http://ax.help.dynamics.com/en/wiki/record-receipt-of-goods-on-a-purchase-order/)

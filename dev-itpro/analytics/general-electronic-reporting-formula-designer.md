@@ -3,7 +3,7 @@ title: "Projektant formuł w raportowaniu elektronicznym"
 description: "W tym temacie wyjaśniono, jak używać projektanta formuł w raportowaniu elektronicznym (ER). Podczas projektowania formatu dla określonego dokumentu elektronicznego w module raportowania elektronicznego można używać formuł podobnych do znanych z programu Microsoft Excel w celu przekształcania danych w sposób spełniający wymagania dotyczące realizacji i formatowania tego dokumentu. Obsługiwane są różne typy funkcji: tekstu, daty i godziny, matematyczne, logiczne, informacyjne, konwersji typów danych i inne (specyficzne dla domeny biznesowej)."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,27 +18,29 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5726a6fc60977a82b49e00ca653696e4051cbb10
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 655a6fd99c0688b13c31c79f3322a287f902e7f1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="formula-designer-in-electronic-reporting"></a>Projektant formuł w raportowaniu elektronicznym
+# Projektant formuł w raportowaniu elektronicznym
+<a id="formula-designer-in-electronic-reporting" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie wyjaśniono, jak używać projektanta formuł w raportowaniu elektronicznym (ER). Podczas projektowania formatu dla określonego dokumentu elektronicznego w module raportowania elektronicznego można używać formuł podobnych do znanych z programu Microsoft Excel w celu przekształcania danych w sposób spełniający wymagania dotyczące realizacji i formatowania tego dokumentu. Obsługiwane są różne typy funkcji: tekstu, daty i godziny, matematyczne, logiczne, informacyjne, konwersji typów danych i inne (specyficzne dla domeny biznesowej).
 
-<a name="formula-designer-overview"></a>Projektant formuł — omówienie
+Projektant formuł — omówienie
+<a id="formula-designer-overview" class="xliff"></a>
 -------------------------
 
 Raportowanie elektroniczne (ER) obsługuje projektanta formuł. Z tego względu w czasie projektowania można konfigurować wyrażenia, które mogą być używane do następujących zadań w czasie wykonywania:
 
--   Przekształcanie danych otrzymanych z bazy danych programu Microsoft Dynamics 365 for Operations, które powinny być umieszczone w modelu danych ER (raportowania elektronicznego) zaprojektowanym jako źródło danych dla formatów ER (filtrowanie, grupowanie, konwersje typów danych itp.).
+-   Przekształcanie danych otrzymanych z bazy danych programu Microsoft Dynamics 365 for Finance and Operations, które powinny być umieszczone w modelu danych ER (raportowania elektronicznego) zaprojektowanym jako źródło danych dla formatów ER (filtrowanie, grupowanie, konwersje typów danych itp.).
 -   Formatowanie danych, które muszą zostać wysłane do generowanego dokumentu elektronicznego zgodnie z układem i warunkami określonego formatu ER (według żądanego języka lub kultury, szyfrowania itp.).
 -   Kontrolowania procesu generowania dokumentów elektronicznych (włączanie/wyłączanie tworzenia określonych elementów formatu w zależności od przetwarzania danych, przerywania tworzenia dokumentów, wysyłania komunikatów do użytkowników końcowych itp.).
 
@@ -54,22 +56,26 @@ Stronę projektanta formuł można otworzyć podczas wykonywania następujących
 -   Definiowanie warunków weryfikacji kontroli procesu.
 -   Definiowanie treści komunikatów weryfikacji kontroli procesu.
 
-## <a name="designing-er-formulas"></a>Projektowanie formuł ER
-### <a name="data-binding"></a>Wiązanie danych
+## Projektowanie formuł ER
+<a id="designing-er-formulas" class="xliff"></a>
+### Wiązanie danych
+<a id="data-binding" class="xliff"></a>
 
 Projektant formuł raportowania elektronicznego może służyć do definiowania wyrażenia przekształcającego dane otrzymywane ze źródeł danych, dzięki czemu dane mogą być umieszczane w danych klienta w czasie wykonywania:
 
--   ze źródeł danych programu Dynamics 365 for Operations i parametrów czasu wykonywania na model danych ER,
+-   ze źródeł danych programu Finance and Operations i parametrów czasu wykonywania na model danych ER,
 -   z modelu danych ER na format ER,
--   ze źródeł danych programu Dynamics 365 for Operations i parametrów czasu wykonywania na format ER.
+-   ze źródeł danych programu Finance and Operations i parametrów czasu wykonywania na format ER,
 
-Poniższa ilustracja pokazuje projekt wyrażenia tego typu. W tym przykładzie wyrażenie zwróci wartość pola **Intrastat.AmountMST** tabeli **Intrastat** programu Dynamics 365 for Operations po uprzednim zaokrągleniu wartości do dwóch miejsc dziesiętnych. [![picture-expression-binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg) Na poniższej ilustracji przedstawiono sposób używania tego typu wyrażenia. W tym przykładzie wynik zaprojektowanego wyrażenia jest umieszczany w składniku **Transaction.InvoicedAmount** modelu danych **Model raportowania podatku**. [![picture-expression-binding2](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg) W czasie wykonywania zaprojektowana formuła **ROUND (Intrastat.AmountMST, 2)** zaokrągla wartość pola **AmountMST** dla każdego rekordu tabeli **Intrastat** do dwóch miejsc dziesiętnych, a następnie umieszcza zaokrągloną wartość w składniku **Transaction.InvoicedAmount** modelu danych **Raportowanie podatku**.
+Poniższa ilustracja pokazuje projekt wyrażenia tego typu. W tym przykładzie wyrażenie zwróci wartość pola **Intrastat.AmountMST** tabeli **Intrastat** programu Finance and Operations po uprzednim zaokrągleniu wartości do dwóch miejsc dziesiętnych. [![picture-expression-binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg) Na poniższej ilustracji przedstawiono sposób używania tego typu wyrażenia. W tym przykładzie wynik zaprojektowanego wyrażenia jest umieszczany w składniku **Transaction.InvoicedAmount** modelu danych **Model raportowania podatku**. [![picture-expression-binding2](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg) W czasie wykonywania zaprojektowana formuła **ROUND (Intrastat.AmountMST, 2)** zaokrągla wartość pola **AmountMST** dla każdego rekordu tabeli **Intrastat** do dwóch miejsc dziesiętnych, a następnie umieszcza zaokrągloną wartość w składniku **Transaction.InvoicedAmount** modelu danych **Raportowanie podatku**.
 
-### <a name="data-formatting"></a>Formatowanie danych
+### Formatowanie danych
+<a id="data-formatting" class="xliff"></a>
 
 Projektant formuł ER może służyć do definiowania wyrażenia formatującego dane otrzymywane ze źródeł danych, dzięki czemu dane mogą być wysyłane w ramach generowania dokumentu elektronicznego. Jeśli masz formatowanie, które musi być stosowane jako typowa reguła powtarzana dla formatu, można wprowadzić to formatowanie jeden raz do konfiguracji formatu jako nazwane przekształcenie zawierające wyrażenie formatujące. Później to nazwane przekształcenie można połączyć z wieloma składnikami formatu, których dane wyjściowe muszą być sformatowane zgodnie z utworzonym wyrażeniem. Poniższa ilustracja pokazuje projekt przekształcenia tego typu. W tym przykładzie przekształcenie **TrimmedString** pobiera przychodzące dane o typie danych **Ciąg**, a przy zwracaniu wartości ciągu obcina spacje początkowe i końcowe. [![picture-transformation-design](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg) Poniższa ilustracja pokazuje sposób użycia przekształcenia tego typu. W tym przykładzie kilka składników formatu, które wysyłają tekst jako dane wyjściowe do generowania dokumentu elektronicznego w czasie wykonywania, odwołuje się do przekształcenia **TrimmedString** według nazwy. [![picture-transformation-usage](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg) Jeśli składniki formatu odwołują się do przekształcenia **TrimmedString** (na przykład składnik **partyName** na poprzedniej ilustracji), powoduje to wysyłanie tekstu jako danych wyjściowych do generowanego dokumentu. Tekst nie zawiera spacji wiodących ani końcowych. Jeśli jest używane formatowanie, które musi być stosowane indywidualnie, można je wprowadzić jako indywidualne wyrażenie wiązania konkretnego składnika formatu. Poniższa ilustracja pokazuje wyrażenie tego typu. W tym przykładzie składnik formatu **partyType** jest powiązany ze źródłem danych poprzez wyrażenie, które konwertuje dane przychodzące z pola **Model.Company.RegistrationType** w źródle danych na tekst pisany wielkimi literami, a następnie wysyła ten tekst jako dane wyjściowe do dokumentu elektronicznego. [![picture-binding-with-formula](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-### <a name="process-flow-control"></a>Kontrola przepływu procesu
+### Kontrola przepływu procesu
+<a id="process-flow-control" class="xliff"></a>
 
 Projektant formuł ER może służyć do definiowania wyrażeń, które kontrolują przebieg procesu generowania dokumentów. Możesz wykonać następujące zadania:
 
@@ -92,7 +98,8 @@ Każda reguła kontroli przepływu procesu została zaprojektowana jako indywidu
 
 [![picture-file-control](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-### <a name="basic-syntax"></a>Podstawowa składnia
+### Podstawowa składnia
+<a id="basic-syntax" class="xliff"></a>
 
 Wyrażenia raportowania elektronicznego mogą zawierać dowolne lub wszystkie z następujących elementów:
 
@@ -102,11 +109,13 @@ Wyrażenia raportowania elektronicznego mogą zawierać dowolne lub wszystkie z 
 -   Ścieżki
 -   Funkcje
 
-#### <a name="constants"></a>Stałe
+#### Stałe
+<a id="constants" class="xliff"></a>
 
 Do projektowania wyrażeń można używać stałych tekstowych i liczbowych (wartości, które nie są obliczane). Na przykład w wyrażeniu **VALUE ("100") + 20** są używane stała liczbowa 20 i stała ciągu „100”, a wyrażenie zwraca wartość liczbową **120**. Projektant formuł ER obsługuje sekwencje specjalne, co oznacza, że można określić ciąg wyrażenia, który powinien być traktowany inaczej. Na przykład wyrażenie **„Lew Tołstoj ”„Wojna i pokój”„ Tom 1”** zwraca ciąg tekstowy **Lew Tołstoj „Wojna i pokój” Tom 1**.
 
-#### <a name="operators"></a>Operatory
+#### Operatory
+<a id="operators" class="xliff"></a>
 
 W poniższej tabeli przedstawiono operatory arytmetyczne, których można używać do wykonania podstawowych operacji matematycznych, takich jak dodawanie, odejmowanie, dzielenie i mnożenie.
 
@@ -134,7 +143,8 @@ Ponadto można użyć znaku handlowego „i” (&) jako operatora łączenia tek
 |----------|-------------|------------------------------------------------|
 | &        | Złącz | „Nie ma nic do wydrukowania” & „: ” & „nie znaleziono żadnych rekordów” |
 
-#### <a name="operator-precedence"></a>Pierwszeństwo operatorów
+#### Pierwszeństwo operatorów
+<a id="operator-precedence" class="xliff"></a>
 
 Kolejność, w jakiej części wyrażenia złożonego są obliczane, jest ważna. Na przykład wynik wyrażenia **1 + 4 / 2** różni się w zależności od tego, czy jako pierwsza jest wykonywana operacja dodawania, czy dzielenia. Nawiasy umożliwiają jawne zdefiniowanie sposobu wyznaczania wartości wyrażenia. Na przykład aby wskazać, że najpierw powinna być wykonywana operacja dodawania, można zmodyfikować poprzednie wyrażenie na **(1 + 4) / 2**. Jeśli kolejność operacji, które muszą być wykonywane w wyrażeniu, nie jest jawnie zdefiniowana, kolejność jest zależna od domyślnego pierwszeństwa przypisanego do obsługiwanych operatorów. Poniższe tabele zawierają operatory i priorytety przypisane do każdego z nich. Operatory o wyższym priorytecie (na przykład 7) są odczytywane przed operatorami, które mają niższy priorytet (na przykład 1).
 
@@ -150,42 +160,71 @@ Kolejność, w jakiej części wyrażenia złożonego są obliczane, jest ważna
 
 Operatory w tym samym wierszu mają równy priorytet. Jeśli wyrażenie zawiera więcej niż jeden z tych operatorów, jest obliczane od lewej do prawej. Na przykład wyrażenie **1 + 6 / 2 \* 3 &gt; 5** zwraca wartość **prawda**. Zaleca się używanie nawiasów w celu jawnego wskazania żądanej kolejności obliczania wyrażeń, aby ułatwić odczyt wyrażenia i zarządzanie nim.
 
-#### <a name="references"></a>Odwołania
+#### Odwołania
+<a id="references" class="xliff"></a>
 
 Wszystkie źródła danych bieżącego składnika ER (model lub format), które są dostępne podczas projektowania wyrażenia, mogą być używane jako odwołania nazwane. Na przykład bieżący model danych ER zawiera źródło danych **ReportingDate**, które zwraca wartość o typie danych **DATETIME**. Aby ta wartość była właściwie sformatowana w generowanym dokumencie, można utworzyć odwołanie z wyrażenia do źródła danych w następujący sposób: **DATETIMEFORMAT (ReportingDate, "dd-MM-rrrr")** Wszystkie znaki w nazwie przywoływanego źródła danych, które nie reprezentują litery alfabetu, muszą być poprzedzone pojedynczym cudzysłowem ('). Jeśli nazwa przywoływanego źródła danych zawiera co najmniej jeden symbol, który nie reprezentuje litery alfabetu (na przykład znaki interpunkcyjne lub inne symbole piśmiennicze), musi zostać ujęta w pojedyncze cudzysłowy. Oto kilka przykładów:
 
 -   Źródło danych **Dzisiejsza data & godzina** musi mieć następujące odwołanie w wyrażeniu ER: **'Dzisiejsza data & godzina'**.
 -   Metoda **name()** ze źródła danych **Customers** musi mieć następujące odwołanie w wyrażeniu ER: **Customers.'name()'**.
 
-#### <a name="path"></a>Ścieżka
+Należy zwrócić uwagę, że następująca składnia jest wykorzystywana do wywoływania metod źródeł danych programu Dynamics 365 for Operations z parametrami:
+
+- Metoda isLanguageRTL źródła danych System z parametrem EN-US o typie danych Ciąg musi być przywoływana w wyrażeniu ER w następujący sposób: System.’isLanguageRTL’("EN-US").
+- Cudzysłowy nie są obowiązkowe, jeśli nazwa metody zawiera tylko symbole alfanumeryczne. Są one wymagane dla metody tabeli, gdy nazwa zawiera nawiasy.
+
+Gdy źródło danych System zostanie dodane do mapowania raportowania elektronicznego, które odwołuje się do klasy Global aplikacji Dynamics 365 for Operations, wyrażenie zwraca wartość logiczną FALSE. Zmodyfikowane wyrażenie System.’ isLanguageRTL'("AR") zwraca wartość logiczną TRUE.
+
+Należy zauważyć, że przekazywanie parametrów do takich metod można zdefiniować z następującym ograniczeniami:
+
+- Do takich metod mogą być przekazywane tylko stałe, których wartości są definiowane w czasie projektowania.
+- Dla takich parametrów są obsługiwane tylko pierwotne (podstawowe) typy danych (liczby całkowite, liczby rzeczywiste, wartości logiczne, ciągi tekstowe itd.).
+
+#### Ścieżka
+<a id="path" class="xliff"></a>
 
 Jeśli wyrażenie odwołuje się do źródła danych usystematyzowanych, można użyć definicji ścieżki, aby wybrać określony element podstawowy tego źródła danych. Znak kropki (.) jest używany do oddzielania poszczególnych elementów źródła danych usystematyzowanych. Na przykład bieżący model danych ER zawiera źródło danych **InvoiceTransactions**, które zwraca listę rekordów. Struktura rekordu **InvoiceTransactions** zawiera pola **AmountDebit** i **AmountCredit**, które zwracają wartości liczbowe. W związku z tym można zaprojektować następujące wyrażenie służące do obliczania zafakturowanej kwoty: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**.
 
-#### <a name="functions"></a>Funkcje
+#### Funkcje
+<a id="functions" class="xliff"></a>
 
 W następnej sekcji opisano funkcje, które mogą być używane w wyrażeniach raportowania elektronicznego. Wszystkie źródła danych kontekstu wyrażenia (bieżący model danych ER lub format ER), a także stałe, mogą służyć jako parametry wywoływania funkcji, zgodnie z listą argumentów wywoływania funkcji. Na przykład bieżący model danych ER zawiera źródło danych **InvoiceTransactions**, które zwraca listę rekordów. Struktura rekordu **InvoiceTransactions** zawiera pola **AmountDebit** i **AmountCredit**, które zwracają wartości liczbowe. W efekcie w celu obliczania zafakturowanej kwoty można zaprojektować następujące wyrażenie używające wbudowanej funkcji zaokrąglania ER: **ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**.
 
-## <a name="supported-functions"></a>Obsługiwane funkcje
+## Obsługiwane funkcje
+<a id="supported-functions" class="xliff"></a>
 W poniższych tabelach opisano funkcje edycji danych, które mogą służyć do projektowania modeli danych i raportów ER. Ta lista funkcji nie jest zamknięta i może być rozszerzana przez programistów. Aby wyświetlić listę funkcji, których można użyć, przejdź do okienka funkcji w projektancie formuł ER.
 
-### <a name="date-and-time-functions"></a>Funkcje daty i godziny
+### Funkcje daty i godziny
+<a id="date-and-time-functions" class="xliff"></a>
 
 | Funkcja                                   | Opis                                                                                                                                                                                                                                                                                                                                                      | Przykład                                                                                                                                                                                                                                                                                               |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ADDDAYS (data i godzina, dni)                   | Dodawanie określonej liczby dni do określonej wartości daty i godziny.                                                                                                                                                                                                                                                                                                | **ADDDAYS (NOW(), 7)** zwraca datę i godzinę siedem dni w przyszłości.                                                                                                                                                                                                                            |
-| DATETODATETIME (data)                      | Konwertowanie określonej wartości daty na wartość daty i godziny.                                                                                                                                                                                                                                                                                                            | **DATETODATETIME (CompInfo. 'getCurrentDate()')** zwraca datę bieżącej sesji programu Dynamics 365 for Operations, 24.12.2015, jako **12/24/2015 12:00:00 AM**. W tym przykładzie **CompInfo** jest źródłem danych ER typu **Dynamics 365 for Operations/Tabela**, które odwołuje się do tabeli CompanyInfo. |
-| NOW ()                                     | Zwracanie bieżącej daty i godziny serwera aplikacji Dynamics 365 for Operations jako wartości daty i godziny.                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                       |
-| TODAY ()                                   | Zwracanie bieżącej daty serwera aplikacji Dynamics 365 for Operations jako wartości daty.                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                       |
+| DATETODATETIME (data)                      | Konwertowanie określonej wartości daty na wartość daty i godziny.                                                                                                                                                                                                                                                                                                            | **DATETODATETIME (CompInfo. "getCurrentDate()')** zwraca datę bieżącej sesji programu Finance and Operations, 24.12.2015, jako **12/24/2015 12:00:00 AM**. W tym przykładzie **CompInfo** jest źródłem danych ER typu **Finance and Operations/Tabela**, które odwołuje się do tabeli CompanyInfo. |
+| NOW ()                                     | Zwracanie bieżącej daty i godziny serwera aplikacji Finance and Operations jako wartości daty i godziny.                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                       |
+| TODAY ()                                   | Zwracanie bieżącej daty i godziny serwera aplikacji Finance and Operations jako wartości daty.                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                       |
 | NULLDATE ()                                | Zwracanie wartości daty **null**.                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                       |
 | NULLDATETIME ()                            | Zwracanie wartości daty i godziny **null**.                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                       |
-| DATETIMEFORMAT (data i godzina, format)          | Konwertowanie określonej wartości daty i godziny na ciąg znaków w określonym formacie. (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz [standardowe](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)).                                                                        | **DATETIMEFORMAT (NOW(), "dd-MM-rrrr")** zwraca bieżącą datę serwera aplikacji Dynamics 365 for Operations, 24.12.2015, jako **"24-12-2015"**, zgodnie z określonym niestandardowych formatem.                                                                                                          |
-| DATETIMEFORMAT (data i godzina, format, kultura) | Konwertowanie określonej wartości daty i godziny na ciąg znaków w określonym formacie i [kulturze](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz [standardowe](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (NOW(), "d", "de")** zwraca bieżącą datę serwera aplikacji Dynamics 365 for Operations, 24.12.2015, jako **"24.12.2015"**, zgodnie z wybraną kulturą niemiecką.                                                                                                             |
-| SESSIONTODAY ()                            | Zwraca datę bieżącej sesji programu Dynamics 365 for Operations jako wartość daty.                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                                                                                                       |
-| SESSIONNOW ()                              | Zwraca datę i godzinę bieżącej sesji programu Dynamics 365 for Operations jako wartość daty i godziny.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
-| DATEFORMAT (data, format)                  | Zwraca ciąg przedstawiający datę w określonym formacie.                                                                                                                                                                                                                                                                                                    | **DATEFORMAT (SESSIONTODAY (), "dd-MM-rrrr")** zwraca datę bieżącej sesji programu Dynamics 365 for Operations, 24.12.2015, jako **"24-12-2015"**, zgodnie z określonym niestandardowych formatem.                                                                                                                      |
-| DATEFORMAT (data, format, kultura)         | Konwertowanie określonej wartości daty na ciąg znaków w określonym formacie i [kulturze](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz [standardowe](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)).     | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** zwraca datę bieżącej sesji programu Dynamics 365 for Operations, 24.12.2015, jako **"24.12.2015"**, zgodnie z wybraną kulturą niemiecką.                                                                                                                       |
+| DATETIMEFORMAT (data i godzina, format)          | Konwertowanie określonej wartości daty i godziny na ciąg znaków w określonym formacie. (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz [standardowe](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)).                                                                        | **DATETIMEFORMAT (NOW(), "dd-MM-rrrr")** zwraca datę serwera aplikacji Finance and Operations, 24.12.2015, jako **"24-12-2015"**, zgodnie z określonym formatem niestandardowym.                                                                                                          |
+| DATETIMEFORMAT (data i godzina, format, kultura) | Konwertowanie określonej wartości daty i godziny na ciąg znaków w określonym formacie i [kulturze](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz [standardowe](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (NOW(), "d", "de")** zwraca bieżącą datę serwera aplikacji Finance and Operations, 24.12.2015, jako **"24.12.2015"**, zgodnie z wybraną kulturą niemiecką.                                                                                                             |
+| SESSIONTODAY ()                            | Zwraca datę i godzinę bieżącej sesji programu Dynamics 365 for Finance and Operations jako wartość daty.                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                                                                                                       |
+| SESSIONNOW ()                              | Zwraca datę i godzinę bieżącej sesji programu Dynamics 365 for Finance and Operations jako wartość daty i godziny.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
+| DATEFORMAT (data, format)                  | Zwraca ciąg przedstawiający datę w określonym formacie.                                                                                                                                                                                                                                                                                                    | **DATEFORMAT (SESSIONTODAY (), "dd-MM-rrrr")** zwraca datę bieżącej sesji programu Dynamics 365 for Finance and Operations, 24.12.2015, jako "**24-12-2015**", zgodnie z określonym niestandardowych formatem.                                                                                                                      |
+| DATEFORMAT (data, format, kultura)         | Konwertowanie określonej wartości daty na ciąg znaków w określonym formacie i [kulturze](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Aby uzyskać informacje na temat obsługiwanych formatów, zobacz [standardowe](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) i [niestandardowe](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)).     | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** zwraca datę bieżącej sesji programu Finance and Operations, 24.12.2015, jako **"24.12.2015"**, zgodnie z wybraną kulturą niemiecką.                                                                                                                       |
+| DAYOFYEAR (data)              | Zwraca reprezentację liczby dni między 1 stycznia a określoną datą w postaci liczby całkowitej.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-rrrr"))** zwraca wartość **61**.
+**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-rrrr"))** zwraca wartość **1**.                                                                                                                       |
 
-### <a name="list-functions"></a>Lista funkcji
+**Funkcje konwersji danych**
+
+| Funkcja                                   | opis                                                                                                                                                                                                                                                                                                                                                      | Przykład                                                                                                                                                                                                                                                                                               |
+|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DATETODATETIME (data)                 | Konwertowanie określonej wartości daty na wartość daty i godziny.           | **DATETODATETIME (CompInfo. "getCurrentDate()')** zwraca datę bieżącej sesji programu Finance and Operations, 24.12.2015, jako **12/24/2015 12:00:00 AM**. W tym przykładzie **CompInfo** jest źródłem danych ER typu **Finance and Operations/Tabela**, które odwołuje się do tabeli **CompanyInfo**.                                                                                                                       |
+| DATEVALUE (ciąg tekstowy, format)              | Zwraca datę przedstawiającą ciąg w określonym formacie.       | **DATEVALUE ("21-gru-2016", "dd-MMM-rrrr")** zwraca datę 21.12.2016 zgodnie z określonym formatem niestandardowym i domyślną kulturą **EN-US** aplikacji.                                                                                                                       |
+| DATEVALUE (ciąg tekstowy, kultura)              | Zwraca reprezentację ciągu w postaci daty, używając określonego formatu i kultury.       | **DATEVALUE ("21-Gen-2016", "dd-MMM-rrrr", "IT")** zwraca datę 21.01.2016 zgodnie z określonym niestandardowym formatem i kulturą. Dla wywołania **DATEVALUE ("21-Gen-2016", "dd-MMM-rrrr", "EN-US")** tej funkcji zostanie wygenerowany wyjątek informujący, że podany ciąg tekstowy nie jest rozpoznawany jako prawidłowa data.                                                                                                                       |
+| DATETIMEVALUE (ciąg tekstowy, format)              | Zwraca reprezentację ciągu w postaci daty i godziny, używając określonego formatu.       | **DATETIMEVALUE ("21-gru-2016 02:55:00", "dd-MMM-rrrr gg:mm:ss")** zwraca godzinę 2:55:00: AM w dniu 21 grudnia 2016 roku, zgodnie z określonym formatem niestandardowym i domyślną kulturą **EN-US** aplikacji.                                                                                                                       |
+| DATETIMEVALUE (ciąg tekstowy, kultura)              | Zwraca reprezentację ciągu w postaci daty i godziny, używając określonego formatu i kultury.       | **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-rrrr gg:mm:ss", "IT")** zwraca godzinę 2:55:00: AM w dniu 21 grudnia 2016 roku, zgodnie z określonym formatem niestandardowym i kulturą. Dla wywołania **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-rrrr gg:mm:ss", "EN-US")** tej funkcji zostanie wygenerowany wyjątek informujący, że podany ciąg tekstowy nie jest rozpoznawany jako prawidłowa data i godzina.                                                                                                                       |
+### Lista funkcji
+<a id="list-functions" class="xliff"></a>
 
 <table>
 <colgroup>
@@ -325,17 +364,19 @@ Pola Etykieta i Opis będą zwracać wartości podczas wykonywania zależne od u
 </tbody>
 </table>
 
-### <a name="logical-functions"></a>Funkcje logiczne
+### Funkcje logiczne
+<a id="logical-functions" class="xliff"></a>
 
 | Funkcja                                                                                | opis                                                                                                                                                                                                                                                                     | Przykład                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CASE (wyrażenie, opcja 1, wynik 1 \[, opcja 2, wynik 2\] ... \[, wynik domyślny\]) | Wyznaczanie wartości określonego wyrażenia względem określonych opcji alternatywnych. Zwracany jest wynik opcji równej wartości wyrażenia. W przeciwnym razie jest zwracany opcjonalnie wprowadzony wynik domyślny (ostatni parametr niepoprzedzony opcją). | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "ZIMA", "11", "ZIMA", "12", "ZIMA", "")** zwraca ciąg **"ZIMA"**, gdy data bieżącej sesji programu Dynamics 365 for Operations mieści się w okresie od października do grudnia. W przeciwnym razie zwraca ciąg pusty. |
+| CASE (wyrażenie, opcja 1, wynik 1 \[, opcja 2, wynik 2\] ... \[, wynik domyślny\]) | Wyznaczanie wartości określonego wyrażenia względem określonych opcji alternatywnych. Zwracany jest wynik opcji równej wartości wyrażenia. W przeciwnym razie jest zwracany opcjonalnie wprowadzony wynik domyślny (ostatni parametr niepoprzedzony opcją). | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "ZIMA", "11", "ZIMA", "12", "ZIMA", "")** zwraca ciąg **"ZIMA"**, gdy data bieżącej sesji programu Finance and Operations mieści się w okresie od października do grudnia. W przeciwnym razie zwraca ciąg pusty. |
 | IF (warunek, wartość 1, wartość 2)                                                        | Zwracanie podanej wartości 1, jeśli określony warunek jest spełniony. W przeciwnym wypadku jest zwracana wartość 2. Jeśli wartości 1 i 2 są rekordami lub listami rekordów, wynik będzie miał tylko pola, które istnieją na obu listach.                                                                     | **IF (1=2, "warunek jest spełniony", "warunek nie jest spełniony")** zwraca ciąg **"warunek nie jest spełniony"**.                                                                                                                                                      |
 | NOT (warunek)                                                                         | Zwracanie odwrotnej wartości logicznej określonego warunku.                                                                                                                                                                                                                   | **NOT (TRUE)** zwraca wartość **FALSE**.                                                                                                                                                                                                                            |
 | AND (warunek 1\[, warunek 2, ...\])                                                 | Zwracanie wartości **TRUE**, jeśli *wszystkie* określone warunki są spełnione. W przeciwnym jest zwracana wartość **FALSE**.                                                                                                                                                                                            | Funkcja **AND (1=1, "a"="a")** zwraca wartość **TRUE**. **AND (1=2, "a"="a")** zwraca wartość **FALSE**.                                                                                                                                                                           |
 | OR (warunek 1\[, warunek 2, ...\])                                                  | Zwracanie wartości **FALSE**, jeśli *żaden* określony warunek nie jest spełniony. Zwracanie wartości **TRUE**, jeśli *którykolwiek* określony warunek jest spełniony.                                                                                                                                                                 | **OR (1=2, "a"="a")** zwraca wartość **TRUE**.                                                                                                                                                                                                                      |
 
-### <a name="mathematical-functions"></a>Funkcje matematyczne
+### Funkcje matematyczne
+<a id="mathematical-functions" class="xliff"></a>
 
 <table>
 <colgroup>
@@ -394,14 +435,29 @@ Pola Etykieta i Opis będą zwracać wartości podczas wykonywania zależne od u
 </tbody>
 </table>
 
-### <a name="record-functions"></a>Funkcje zapisu
+**Funkcje konwersji danych**
 
-| Funkcja             | Opis                                                                                                                                                                                                                                     | Przykład                                                                                                                                             |
+| Funkcja             | opis                                                                                                                                                                                                                                     | Przykład                                                                                                                                             |
+|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| VALUE (ciąg) | Konwertowanie określonego ciągu na liczbę. Przecinki i kropki (.) są traktowane jako separatory dziesiętne, a wiodący łącznik (-) jako znak minusa. W przypadku wystąpienia innych nieliczbowych znaków w określonym ciągu jest zgłaszany błąd.                                                                                  | **VALUE ("1 234,56")** generuje wyjątek.   |
+| NUMBERVALUE (ciąg, separator dziesiętny, separator grupowania cyfr) | Konwertowanie określonego ciągu na liczbę. Podany symbol jest używany do oddzielania części całkowitych od ułamkowych w liczbie dziesiętnej. Jest również używany określony separator tysięcy.                                                                                  | **NUMBERVALUE("1 234,56", ",", " ")** zwraca wartość **1234.56**.    |
+| INTVALUE (ciąg tekstowy) | Zwraca reprezentację ciągu w postaci liczby całkowitej. Wszystkie dostępne części dziesiętne zostaną obcięte.                                                                                  | **INTVALUE ("100,77")** zwraca wartość **100**. |
+| INTVALUE (liczba) | Zwraca reprezentację liczby w postaci liczby całkowitej. Wszystkie dostępne części dziesiętne zostaną obcięte.                                                                                  | **INTVALUE (-100,77")** zwraca wartość **-100**. |
+| INT64VALUE (ciąg) | Zwraca reprezentację ciągu w postaci liczby int64. Wszystkie dostępne części dziesiętne zostaną obcięte.                                                                                  | **INT64VALUE ("22565422744")** zwraca **22565422744**. |
+| INT64VALUE (liczba) | Zwraca reprezentację liczby w postaci liczby int64. Wszystkie dostępne części dziesiętne zostaną obcięte.                                                                                  | **INT64VALUE (22565422744.00)** zwraca **22565422744**. |
+
+
+
+### Funkcje zapisu
+<a id="record-functions" class="xliff"></a>
+
+| Funkcja             | opis                                                                                                                                                                                                                                     | Przykład                                                                                                                                             |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | NULLCONTAINER (lista) | Zwracanie rekordu **null**, który ma taką samą strukturę, jak podana lista rekordów lub rekord. **Uwaga:** Ta funkcja jest przestarzała. Zamiast niej należy używać funkcji **EMPTYRECORD**.                                                                                  | **NULLCONTAINER (SPLIT ("abc", 1))** zwraca nowy pusty rekord, który ma taką samą strukturę, jak lista zwracana przez funkcję **SPLIT**. |
 | EMPTYRECORD (rekord) | Zwracanie rekordu **null**, który ma taką samą strukturę, jak podana lista rekordów lub rekord. **Uwaga:** Rekord **null** jest rekordem, w którym wszystkie pola mają wartość pustą (**0** \[zero\] w przypadku liczb, pusty ciąg w przypadku ciągów tekstowych itp.). | **EMPTYRECORD (SPLIT ("abc", 1))** zwraca nowy pusty rekord, który ma taką samą strukturę, jak lista zwracana przez funkcję **SPLIT**.   |
 
-### <a name="text-functions"></a>Funkcje tekstowe
+### Funkcje tekstowe
+<a id="text-functions" class="xliff"></a>
 
 <table>
 <colgroup>
@@ -469,20 +525,20 @@ Pola Etykieta i Opis będą zwracać wartości podczas wykonywania zależne od u
 </tr>
 <tr class="odd">
 <td>TEXT (dane wejściowe)</td>
-<td>Zwracanie określonych danych wejściowych przekształconych na ciąg tekstowy, który jest sformatowany zgodnie z ustawieniami regionalnymi serwera bieżącego wystąpienia programu Dynamics 365 for Operations. Dla wartości typu <strong>faktyczny</strong> konwersja ciągu jest ograniczona do dwóch miejsc dziesiętnych.</td>
-<td>Jeśli ustawienia regionalne serwera wystąpienia programu Dynamics 365 for Operations są określone jako <strong>EN-US</strong>, funkcja <strong>TEXT (NOW ())</strong> zwraca datę bieżącej sesji programu Dynamics 365 for Operations, 17.12.2015, jako ciąg tekstowy <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>. <strong>TEXT (1/3)</strong> zwraca <strong>&quot;0.33&quot;</strong>.</td>
+<td>Zwracanie określonych danych wejściowych przekształconych na ciąg tekstowy, który jest sformatowany zgodnie z ustawieniami regionalnymi serwera bieżącego wystąpienia programu Finance and Operations. Dla wartości typu <strong>faktyczny</strong> konwersja ciągu jest ograniczona do dwóch miejsc dziesiętnych.</td>
+<td>Jeśli ustawienia regionalne serwera wystąpienia programu Finance and Operations są określone jako <strong>EN-US</strong>, funkcja <strong>TEXT (NOW ())</strong> zwraca datę bieżącej sesji programu Finance and Operations, 17.12.2015, jako ciąg tekstowy <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>. <strong>TEXT (1/3)</strong> zwraca <strong>&quot;0.33&quot;</strong>.</td>
 </tr>
 <tr class="even">
 <td>FORMAT (ciąg 1, ciąg 2[, ciąg 3, ...])</td>
 <td>Zwracanie określonego ciągu sformatowanego poprzez zastąpienie wszystkich wystąpień elementu <strong>%N</strong> <em>n</em>-tym argumentem. Argumenty są ciągami tekstowymi. Jeśli dla parametru nie podano argumentu, parametr jest zwracany w ciągu jako <strong>&quot;%N&quot;</strong>. Dla wartości typu <strong>faktyczny</strong> konwersja ciągu jest ograniczona do dwóch miejsc dziesiętnych.</td>
 <td>W tym przykładzie źródło danych <strong>PaymentModel</strong> zwraca listę rekordów odbiorców przy użyciu składnika <strong>Customer</strong> oraz wartość daty przetwarzania przy użyciu pola <strong>ProcessingDate</strong>. <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> W formacie raportowania elektronicznego przeznaczonym do generowania pliku elektronicznego dla wybranych odbiorców <strong>PaymentModel</strong> jest wybrane jako źródło danych i kontroluje przebieg procesu. Wyjątek jest zgłaszany w przypadku użytkowników końcowych, gdy wybrany odbiorca jest zablokowany w dniu generowania raportu. Formuła przeznaczona dla tego typu kontroli przetwarzania może skorzystać z poniższych zasobów:
 <ul>
-<li>Etykieta SYS70894 programu Dynamics 365 for Operations, która ma następujący tekst:
+<li>Etykieta SYS70894 programu Finance and Operations, która ma następujący tekst:
 <ul>
 <li><strong>W języku polskim:</strong> &quot;Nie ma nic do wydrukowania&quot;</li>
 <li><strong>W języku niemieckim:</strong> &quot;Nichts zu drucken&quot;</li>
 </ul></li>
-<li>Etykieta SYS18389 programu Dynamics 365 for Operations, która ma następujący tekst:
+<li>Etykieta SYS18389 programu Finance and Operations, która ma następujący tekst:
 <ul>
 <li><strong>W języku polskim:</strong> &quot;Odbiorca %1 jest zablokowany do %2.&quot;</li>
 <li><strong>W języku niemieckim:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
@@ -490,8 +546,8 @@ Pola Etykieta i Opis będą zwracać wartości podczas wykonywania zależne od u
 </ul>
 Poniżej przedstawiono formułę, którą można zaprojektować: FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;)) Jeśli raport jest przetwarzany dla <strong>odbiorcy Litware Retail</strong> w dniu 17 grudnia 2015 r. w kulturze <strong>polskiej</strong> i języku <strong>polskim</strong>, formuła zwraca następujący tekst, który może być prezentowany jako komunikat o wyjątku dla użytkownika końcowego: &quot;Nie ma nic do wydrukowania. Odbiorca Litware Retail jest zablokowany do 17.12.2015.&quot; Jeśli ten sam raport będzie przetwarzany dla <strong>odbiorcy Litware Retail</strong> w dniu 17 grudnia 2015 w języku <strong>niemieckim</strong> i kulturze <strong>niemieckiej</strong>, formuła zwraca następujący tekst: &quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot; <strong>Uwaga:</strong> W formułach raportowania elektronicznego dla etykiet jest stosowana następująca składnia:
 <ul>
-<li><strong>Etykiety zasobów programu Dynamics 365 for Operations:</strong> <strong>@&quot;X&quot;</strong>, gdzie X oznacza identyfikator etykiety w drzewie obiektów aplikacji (AOT)</li>
-<li><strong>Etykiety, które znajdują się w konfiguracjach ER:</strong> <strong>@&quot;ER_LABEL:X&quot;</strong>, gdzie X oznacza identyfikator etykiety w konfiguracji raportowania elektronicznego</li>
+<li><strong>Etykiety zasobów programu Finance and Operations:</strong> <strong>@&quot;X&quot;</strong>, gdzie X oznacza identyfikator etykiety w drzewie obiektów aplikacji (AOT)</li>
+<li><strong>Etykiety, które znajdują się w konfiguracjach ER:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, gdzie X oznacza identyfikator etykiety w konfiguracji raportowania elektronicznego</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -501,7 +557,7 @@ Poniżej przedstawiono formułę, którą można zaprojektować: FORMAT (CONCATE
 </tr>
 <tr class="even">
 <td>NUMERALSTOTEXT (liczba, język, waluta, flaga nazwy waluty wydruku, miejsca dziesiętne)</td>
-<td>Zwraca liczbę w zapisie fonetycznym (przekonwertowaną) do ciągów tekstowych w zdefiniowanym języku. Kod języka jest opcjonalny. Jeśli jest zdefiniowany jako pusty ciąg znaków, będzie używany aktualnie uruchomiony kod języka kontekstu (zdefiniowany dla generowanego pliku lub folderu). Kod waluty jest opcjonalny. Gdy jest zdefiniowany jako pusty ciąg znaków, jest pobierana waluta firmy. Uwaga: Parametry <strong>Nazwa waluty wydruku</strong> i <strong>Miejsca dziesiętne</strong> są analizowane tylko następujące kodów języków: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> i <strong>RU</strong>. Uwaga: Parametr <strong>Nazwa waluty wydruku</strong> w programie Dynamics 365 for Operations jest analizowany tylko dla firm z kontekstem kraju obsługującym deklinację walut.</td>
+<td>Zwraca liczbę w zapisie fonetycznym (przekonwertowaną) do ciągów tekstowych w zdefiniowanym języku. Kod języka jest opcjonalny. Jeśli jest zdefiniowany jako pusty ciąg znaków, będzie używany aktualnie uruchomiony kod języka kontekstu (zdefiniowany dla generowanego pliku lub folderu). Kod waluty jest opcjonalny. Gdy jest zdefiniowany jako pusty ciąg znaków, jest pobierana waluta firmy. Uwaga: Parametry <strong>Nazwa waluty wydruku</strong> i <strong>Miejsca dziesiętne</strong> są analizowane tylko następujące kodów języków: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> i <strong>RU</strong>. Uwaga: Parametr <strong>Nazwa waluty wydruku</strong> w programie Finance and Operations jest analizowany tylko dla firm z kontekstem kraju obsługującym deklinację walut.</td>
 <td>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2) zwraca „One Thousand Two Hundred Thirty Four and 56” NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0) zwraca „Sto dwadzieścia” NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2) zwraca „Сто двадцать евро 21 евроцент”</td>
 </tr>
 <tr class="odd">
@@ -509,63 +565,70 @@ Poniżej przedstawiono formułę, którą można zaprojektować: FORMAT (CONCATE
 <td>Zwraca ciąg o określonej długości, w którym początek bieżącego ciągu jest dopełniany określonymi znakami.</td>
 <td>PADLEFT ("1234", 10, " ") zwraca ciąg tekstowy „      1234”</td>
 </tr>
+<tr class="even">
+<td>TRIM (ciąg)</td>
+<td>Zwraca dany tekst po usunięciu spacji wiodących i końcowych oraz usunięciu wielokrotnych spacji między wyrazami. </td>
+<td><strong>TRIM ("     Przykładowy     tekst     ")</strong> zwraca <strong>"Przykładowy tekst"</strong>.</td>
+=======
+<td>GETENUMVALUEBYNAME (ścieżka źródła danych wartości stałotekstowej, tekst etykiety wartości stałotekstowej)</td>
+<td>Zwraca wartość źródła danych wartości stałotekstowej określonego przez tekst w tej etykiecie wartości stałotekstowej.</td>
+<td>W poniższym przykładzie pokazano wartość stałotekstową ReportDirection wprowadzoną w modelu danych. Należy zauważyć, że etykiety są zdefiniowane dla wartości stałotekstowych.
+Przykłady poniżej pokazują:
+<ul><li>Wartość stałotekstową <strong>ReportDirection</strong> modelu wstawioną do raportu jako źródło danych <strong>$Direction</strong>.</li>
+<li>Wyrażenie ER <strong>$IsArrivals</strong> zaprojektowane tak, aby używało wartości stałotekstowej modelu jako parametru tej funkcji. Wartością tego wyrażenia jest <strong>TRUE</strong>.</li></ul></td>
+</tr>
 </tbody>
 </table>
 
-### <a name="data-collection-functions"></a>Funkcje gromadzenia danych
+**Funkcje konwersji danych**
 
-Funkcja
+| Funkcja             | opis                                                                                                                                                                                                                                     | Przykład                                                                                                                                             |
+|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| TEXT (dane wejściowe) | Zwracanie określonych danych wejściowych przekształconych na ciąg tekstowy, który jest sformatowany zgodnie z ustawieniami regionalnymi serwera bieżącego wystąpienia programu Finance and Operations.
+Dla wartości typu faktyczny konwersja ciągu jest ograniczona do dwóch miejsc dziesiętnych.| Jeśli ustawienia regionalne serwera wystąpienia programu Finance and Operations są określone jako **EN-US**, funkcja TEXT (NOW ()) zwraca datę bieżącej sesji programu Finance and Operations, 17.12.2015, jako ciąg tekstowy **"12/17/2015 07:59:23 AM"**.
+**TEXT (1/3) zwraca "0,33"**. |
+| QRCODE (ciąg tekstowy) | Zwraca obraz kodu QR w formacie binarnym base64 dla danego ciągu. | **QRCODE ("Przykładowy tekst")** zwraca **U2FtcGxlIHRleHQ =**.   |
 
-opis
+### Funkcje gromadzenia danych
+<a id="data-collection-functions" class="xliff"></a>
 
-Przykład
+| Funkcja             | opis                                                                                                                                                                                                                                     | Przykład                                                                                                                                             |
+|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| FORMATELEMENTNAME () | Zwraca nazwę elementu bieżącego formatu. Zwraca pusty ciąg, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona.| Aby dowiedzieć się więcej o korzystaniu z tych funkcji, zobacz przewodnik po zadaniu **ER Używanie danych wyjściowych formatu do inwentaryzacji i sumowania** (część procesu biznesowego **Nabywanie/opracowywanie składników usług/rozwiązań informatycznych**). |
+| SUMIFS (ciąg klucza dla sumowania, ciąg zakresu kryteriów 1, ciąg wartości kryteriów 1 \[, ciąg zakresu kryteriów 2, ciąg wartości kryteriów 2, …\]) |Zwraca sumę wartości węzłów (z nazwami zdefiniowanymi jako kluczami) w kodzie XML, które zostały zebrane podczas wykonywania tego formatu i spełniają wprowadzone warunki (pary zakresu i wartości). Zwraca wartość zerową, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona. |            |
+| SUMIF (ciąg klucza dla sumowania, ciąg zakresu kryteriów, ciąg wartości kryteriów) | Zwraca sumę wartości węzłów (z nazwami zdefiniowanymi jako kluczami) w kodzie XML, które zostały zebrane podczas wykonywania tego formatu i spełniają wprowadzony warunek (zakres i wartość). Zwraca wartość zerową, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona.|           |
+| COUNTIFS (ciąg zakresu kryteriów 1, ciąg wartości kryteriów 1 \[, ciąg zakresu kryteriów 2, ciąg wartości kryteriów 2, …\]) | Zwraca liczbę węzłów w kodzie XML, które zostały zebrane podczas wykonywania tego formatu i spełniają wprowadzone warunki (pary zakresu i wartości). Zwraca wartość zerową, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona.|     |
+| COUNTIF (ciąg zakresu kryteriów, ciąg wartości kryteriów) | Zwraca liczbę węzłów w kodzie XML, które zostały zebrane podczas wykonywania tego formatu i spełniają wprowadzony warunek (zakres i wartość). Zwraca wartość zerową, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona.|          |
+| COLLECTEDLIST (ciąg zakresu kryteriów 1, ciąg wartości kryteriów 1 \[, ciąg zakresu kryteriów 2, ciąg wartości kryteriów 2, …\]) | Zwraca listę wartości węzłów w kodzie XML, które zostały zebrane podczas wykonywania tego formatu i spełniają wprowadzone warunki (zakres i wartość). Zwraca pustą listę, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona.|               |   
 
-FORMATELEMENTNAME ()
 
-Zwraca nazwę elementu bieżącego formatu. Zwraca pusty ciąg, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona.
 
-Aby dowiedzieć się więcej o korzystaniu z tych funkcji, zobacz przewodnik po zadaniu **ER Używanie danych wyjściowych formatu do inwentaryzacji i sumowania** (część procesu biznesowego **Nabywanie/opracowywanie składników usług/rozwiązań informatycznych**).
 
-SUMIFS (ciąg klucza dla sumowania, ciąg zakresu kryteriów 1, ciąg wartości kryteriów 1 \[, ciąg zakresu kryteriów 2, ciąg wartości kryteriów 2, …\])
-
-Zwraca sumę wartości węzłów (z nazwami zdefiniowanymi jako kluczami) w kodzie XML, które zostały zebrane podczas wykonywania tego formatu i spełniają wprowadzone warunki (pary zakresu i wartości). Zwraca wartość zerową, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona.
-
-SUMIF (ciąg klucza dla sumowania, ciąg zakresu kryteriów, ciąg wartości kryteriów)
-
-Zwraca sumę wartości węzłów (z nazwami zdefiniowanymi jako kluczami) w kodzie XML, które zostały zebrane podczas wykonywania tego formatu i spełniają wprowadzony warunek (zakres i wartość). Zwraca wartość zerową, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona.
-
-COUNTIFS (ciąg zakresu kryteriów 1, ciąg wartości kryteriów 1 \[, ciąg zakresu kryteriów 2, ciąg wartości kryteriów 2, …\])
-
-Zwraca liczbę węzłów w kodzie XML, które zostały zebrane podczas wykonywania tego formatu i spełniają wprowadzone warunki (pary zakresu i wartości). Zwraca wartość zerową, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona.
-
-COUNTIF (ciąg zakresu kryteriów, ciąg wartości kryteriów)
-
-Zwraca liczbę węzłów w kodzie XML, które zostały zebrane podczas wykonywania tego formatu i spełniają wprowadzony warunek (zakres i wartość). Zwraca wartość zerową, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona.
-
-COLLECTEDLIST (ciąg zakresu kryteriów 1, ciąg wartości kryteriów 1 \[, ciąg zakresu kryteriów 2, ciąg wartości kryteriów 2, …\])
-
-Zwraca listę wartości węzłów w kodzie XML, które zostały zebrane podczas wykonywania tego formatu i spełniają wprowadzone warunki (zakres i wartość). Zwraca pustą listę, gdy flaga **Pobierz szczegóły rezultatu** dla bieżących plików jest wyłączona.
-
-### <a name="other-business-domainspecific-functions"></a>Inne funkcje (specyficzne dla domeny biznesowej)
+### Inne funkcje (specyficzne dla domeny biznesowej)
+<a id="other-business-domainspecific-functions" class="xliff"></a>
 
 | Funkcja                                                                         | opis                                                                                                                                                                                                                                                        | Przykład                                                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CONVERTCURRENCY (kwota, waluta źródłowa, waluta docelowa, data, firma)        | Konwertowanie określonej kwoty pieniężnej z waluty źródłowej na walutę docelową przy użyciu ustawień określonej firmy programu Dynamics 365 for Operations na określony dzień.                                                                            | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** zwraca równoważność jednego euro w dolarach amerykańskich w dniu bieżącej sesji na podstawie ustawień dla firmy DEMF.                                                                                                                                  |
-| ROUNDAMOUNT (liczba, miejsca dziesiętne, reguła zaokrąglania)                                       | Zaokrąglanie określonej kwoty zgodnie z określoną regułą zaokrąglania i podaną liczbą miejsc dziesiętnych. **Uwaga:** Reguła zaokrąglania musi być podana jako wartość elementu stałotekstowego **RoundOffType** programu Dynamics 365 for Operations.                          | Jeśli w parametrze **model.RoundOff** ustawiono wartość ****W dół****, wyrażenie **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** zwraca wartość **1000.78**. Jeśli w parametrze **model.RoundOff** ustawiono wartość **Normalnie** lub **Zaokrąglenie w górę**, wyrażenie **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** zwraca wartość **1000.79**. |
+| CONVERTCURRENCY (kwota, waluta źródłowa, waluta docelowa, data, firma)        | Konwertowanie określonej kwoty pieniężnej z waluty źródłowej na walutę docelową przy użyciu ustawień określonej firmy programu Finance and Operations na określony dzień.                                                                            | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** zwraca równoważność jednego euro w dolarach amerykańskich w dniu bieżącej sesji na podstawie ustawień dla firmy DEMF.                                                                                                                                  |
+| ROUNDAMOUNT (liczba, miejsca dziesiętne, reguła zaokrąglania)                                       | Zaokrąglanie określonej kwoty zgodnie z określoną regułą zaokrąglania i podaną liczbą miejsc dziesiętnych. **Uwaga:** Reguła zaokrąglania musi być podana jako wartość elementu stałotekstowego **RoundOffType** programu Finance and Operations.                          | Jeśli w parametrze **model.RoundOff** ustawiono wartość ****W dół****, wyrażenie **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** zwraca wartość **1000.78**. Jeśli w parametrze **model.RoundOff** ustawiono wartość **Normalnie** lub **Zaokrąglenie w górę**, wyrażenie **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** zwraca wartość **1000.79**. |
 | CURCredRef (cyfry)                                                              | Zwracanie odwołania do wierzyciela w oparciu o cyfry określonego numeru faktury.                                                                                                                                                                                  | **CURCredRef ("VEND-200002")** zwraca **"2200002"**.                                                                                                                                                                                                                                                         |
 | MOD\_97 (cyfry)                                                                 | Zwracanie odwołania do wierzyciela jako wyrażenia MOD97 w oparciu o cyfry określonego numeru faktury.                                                                                                                                                            | **MOD\_97 ("VEND-200002")** zwraca **"20000285"**.                                                                                                                                                                                                                                                           |
 | ISOCredRef (cyfry)                                                              | Zwracanie odwołania do wierzyciela w formacie ISO w oparciu o cyfry i znaki alfabetyczne określonego numeru faktury. **Uwaga:** Aby wyeliminować symbole z alfabetów niezgodnych z systemem ISO, parametr wejściowy musi zostać przetłumaczony przed przekazaniem go do tej funkcji. | **ISOCredRef ("VEND-200002")** zwraca **"RF23VEND-200002"**.                                                                                                                                                                                                                                                 |
 | CN\_GBT\_AdditionalDimensionID (ciąg, liczba)                                  | Pobieranie identyfikatora dodatkowego wymiaru finansowego. Wymiary są przedstawiane w tym ciągu jako identyfikatory rozdzielone przecinkami. Liczby określają kod numeracji żądanego wymiaru w tym ciągu.                                                                            | CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3) zwraca „CC”                                                                                                                                                                                                                                      |
-| GetCurrentCompany ()                                                             | Zwraca kod firmy, której użytkownik jest obecnie zalogowany.                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                               |
+| GetCurrentCompany ()                                                             | Zwraca tekstową reprezentację kodu firmy (firma), do której użytkownik jest aktualnie zalogowany.                                                                                                                                                                                                                    | **GETCURRENTCOMPANY ()** zwraca **USMF** dla użytkownika zalogowanego w programie Finance and Operations do firmy **Contoso Entertainment System USA**.                                                                                                                                                                                                                                                                                                              |
 | CH\_BANK\_MOD\_10 (cyfry)                                                       | Zwraca odwołanie do wierzyciela jako wyrażenia MOD10 w oparciu o cyfry podanego numeru faktury.                                                                                                                                                                      | CH\_BANK\_MOD\_10 ("VEND-200002") zwraca 3                                                                                                                                                                                                                                                                   |
 | FA\_SUM (kod środka trwałego, kod modelu ewidencji, data początkowa, data końcowa)               | Zwraca przygotowany kontener danych dla kwot środków trwałych w okresie.                                                                                                                                                                                         | FA\_SUM ("COMP-000001", "Bieżący", Data1, Data2) zwraca przygotowany kontener danych środka trwałego „COMP-000001” z modelem ewidencji „Bieżący” za okres od Data1 do Data 2.                                                                                                                        |
-| FA\_BALANCE (kod środka trwałego, kod modelu ewidencji, rok sprawozdawczy, data raportowania) | Zwraca przygotowany kontener danych dla sald środków trwałych. Rok sprawozdawczy musi być podany jako wartość stałotekstowa **AssetYear** programu Dynamics 365 for Operations.                                                                                           | FA\_SUM ("COMP-000001", "Bieżący", AxEnumAssetYear.ThisYear, SESSIONTODAY ()) zwraca przygotowany kontener sald dla środka trwałego „COMP-000001” z modelem ewidencji „Bieżący” na dzień bieżącej sesji programu Dynamics 365 for Operations.                                                                |
+| FA\_BALANCE (kod środka trwałego, kod modelu ewidencji, rok sprawozdawczy, data raportowania) | Zwraca przygotowany kontener danych dla sald środków trwałych. Rok sprawozdawczy musi być podany jako wartość stałotekstowa **AssetYear** programu Finance and Operations.                                                                                           | FA\_SUM ("COMP-000001", "Bieżący", AxEnumAssetYear.ThisYear, SESSIONTODAY ()) zwraca przygotowany kontener sald dla środka trwałego „COMP-000001” z modelem ewidencji „Bieżący” na dzień bieżącej sesji programu Finance and Operations.                                                                |
+| TABLENAME2ID (ciąg)                                                       | Zwraca reprezentację identyfikatora tabeli dla danej nazwy tabeli w postaci liczby całkowitej.                                                                                                                                                                      | **TABLENAME2ID ("Intrastat")** zwraca **1510**.                                                                                                                                                                                                                                                                   |
+| ISVALIDCHARACTERISO7064 (ciąg)                                                       | Zwraca wartość logiczną **TRUE**, gdy podany ciąg tekstowy reprezentuje prawidłowy międzynarodowy numer konta bankowego (IBAN). W przeciwnym razie zwraca wartość logiczną **FALSE**.                                                                                                                                                                      | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** zwraca wartość **TRUE**. **ISVALIDCHARACTERISO7064 ("AT61")** zwraca wartość **FALSE**.                                                                                                                                                                                                                                                                   |
 
-### <a name="functions-list-extension"></a>Rozszerzenie listy funkcji
+### Rozszerzenie listy funkcji
+<a id="functions-list-extension" class="xliff"></a>
 
 Model raportowania elektronicznego umożliwia rozszerzanie listy funkcji używanych w wyrażeniach ER. Wymaga to działań programistycznych. Aby uzyskać szczegółowe informacje, zobacz [Rozszerzanie listy funkcji raportowania elektronicznego](general-electronic-reporting-formulas-list-extension.md).
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)

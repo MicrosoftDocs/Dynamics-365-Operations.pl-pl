@@ -1,16 +1,16 @@
 ---
 title: "Pakiet zawartości usługi Power BI Wydajność magazynu"
 description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Wydajność magazynu. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
-author: YuyuScheller
+author: Mirzaab
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.reviewer: annbe
-ms.search.scope: Operations
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272953
 ms.assetid: 4e4d4323-78cf-4ffa-8d5a-05e856c33db6
 ms.search.region: Global
@@ -18,38 +18,38 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: cba8d990c18f2db414d837118a54edfa09cba486
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 3daa69a1f042c2eb525e7e26eb0fe29253fe9e90
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="warehouse-performance-power-bi-content"></a>Pakiet zawartości usługi Power BI Wydajność magazynu
+# Pakiet zawartości usługi Power BI Wydajność magazynu
+<a id="warehouse-performance-power-bi-content" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
-"[!include[banner](../includes/banner.md)]"
+W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft Power BI **Wydajność magazynu**. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
+## Przegląd
+<a id="overview" class="xliff"></a>
 
-W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Wydajność magazynu. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+Pakiet zawartości **Wydajność magazynu** dla usługi Power BI został utworzony, aby kierownicy magazynów i kierownicy ds. operacyjnych mogli monitorować ważne wskaźniki dotyczące towarów przychodzących, wychodzących i zapasów. Wykorzystuje dane modułu Zarządzanie magazynem, informacje o produktach i inne dane transakcyjne z firmowego systemu oraz przedstawia zarówno zagregowany widok parametrów działania magazynu, jak i podział według dostawców, grup produktów, produktów, oddziałów i magazynów. 
 
-<a name="overview"></a>Przegląd
-========
+Pakiet zawartości usługi Power **Wydajność magazynu** umożliwia kierownikom magazynów pomiar trzech następujących obszarów:
 
-Pakiet zawartości **Wydajność magazynu** dla usługi Microsoft Power BI został utworzony, aby kierownicy magazynów i kierownicy ds. operacyjnych mogli monitorować ważne wskaźniki dotyczące towarów przychodzących, wychodzących i zapasów. Wykorzystuje dane modułu Zarządzanie magazynem, informacje o produktach i inne dane transakcyjne z programu Microsoft Dynamics 365 for Operations oraz przedstawia zarówno zagregowany widok parametrów działania magazynu, jak i podział według dostawców, grup produktów, produktów, oddziałów i magazynów. Pakiet zawartości usługi Power **Wydajność magazynu** umożliwia kierownikom magazynów pomiar trzech następujących obszarów:
+-   **Wydajność operacji przychodzących** — Mierzenie, na ile dobrze dostawca spełnia wymagania odbiorcy (innymi słowy mierzenie wydajności dostaw), oraz mierzenie wydajności odkładania, dzięki czemu można identyfikować problemy z udziałem pracowników lub towarów w wybranym okresie. Ważna jest wiedza, czy dostawcy dostarczają na czas, przed terminem czy z opóźnieniem, co pozwala określić, jak parametry działania dostawcy wpływają na ogólną wydajność odkładania. Dostawca, który dostarcza poza uzgodnionym zakresem dat, może wywierać dodatkowy nacisk na magazyn z powodu nieoczekiwanej pracy i w ten sposób wydłużać średni czas odłożenia.
+-   **Wydajność wysyłki** — Mierzenie, czy magazyn wysyła w całości i w terminie do odbiorców (innymi słowy mierzenie wydajności wysyłek i dostaw towarów wychodzących), dzięki czemu można identyfikować wszelkie problemy z produktami, oddziałami, magazynami lub dedykowanymi odbiorcami. Jeśli się okaże, że wysyłasz z opóźnieniem do określonych regionów lub miejscowości, należy zwrócić większą uwagę na zarządzanie transportem lub klientami.
+-   **Dokładność zapasów w lokalizacji** — Dokładność zapasów jest ważnym wewnętrznym parametrem analizy biznesowej (BI) w magazynie. Jest bardzo ważne, aby określić, na ile dokładnie liczysz (inwentaryzujesz) towary. Jednak ważne jest także określenie, na ile dokładnie przechowujesz towary w prawidłowych lokalizacjach, oraz wyróżnianie danych o rozbieżnościach, dzięki czemu można znaleźć lepsze miejsca dla towarów lub inicjować całkowitą inwentaryzację określonych towarów. (Obecnie nowa funkcja inwentaryzacji opartej na towarach jest dostępna jako poprawka). Jeśli używasz tego pakietu zawartości usługi Power BI do weryfikowania poprawności danych o dostępnych zapasach w poszczególnych lokalizacjach, możesz także identyfikować kradzieże w sklepach swojej sieci. Można też określić, czy w którejkolwiek lokalizacji istnieją ilości dostępnych zapasów, które różnią się od danych w systemie planowania zasobów przedsiębiorstwa (ERP). Być może te lokalizacje są zbyt duże albo nie da się w nich przeprowadzić inwentaryzacji. Ewentualnie niektóre fizyczne umiejscowienia mogą być błędne, wskutek czego trudno jest synchronizować określone rodzaje towarów z danymi o dostępności.
 
--   **Wydajność operacji przychodzących**: Mierzenie, na ile dobrze dostawca obsługuje odbiorcę (innymi słowy mierzenie wydajności dostaw), oraz mierzenie wydajności odkładania, dzięki czemu można identyfikować problemy z udziałem pracowników lub towarów w wybranym okresie. Ważna jest wiedza, czy dostawcy dostarczają na czas, przed terminem czy z opóźnieniem, co pozwala określić, jak parametry działania dostawcy wpływają na ogólną wydajność odkładania. Dostawca, który dostarcza poza uzgodnionym zakresem dat, może wywierać dodatkowy nacisk na magazyn z powodu nieoczekiwanej pracy i w ten sposób wydłużać średni czas odłożenia.
--   **Wydajność wysyłki**: Mierzenie, czy magazyn wysyła w całości i w terminie do odbiorców (innymi słowy mierzenie wydajności wysyłek i dostaw towarów wychodzących), dzięki czemu można identyfikować wszelkie problemy z produktami, oddziałami, magazynami lub dedykowanymi odbiorcami. Jeśli się okaże, że wysyłasz z opóźnieniem do określonych regionów lub miejscowości, należy zwrócić większą uwagę na zarządzanie transportem lub klientami.
--   **Dokładność zapasów w lokalizacji**: Dokładność zapasów jest ważnym wewnętrznym parametrem analizy biznesowej (BI) w magazynie. Jest bardzo ważne, aby określić, na ile dokładnie liczysz (inwentaryzujesz) towary. Jednak ważne jest także określenie, na ile dokładnie przechowujesz towary w prawidłowych lokalizacjach, oraz wyróżnianie danych o rozbieżnościach, dzięki czemu można znaleźć lepsze miejsca dla towarów lub inicjować całkowitą inwentaryzację określonych towarów. (Obecnie nowa funkcja inwentaryzacji opartej na towarach jest dostępna jako poprawka). Jeśli używasz tego pakietu zawartości usługi Power BI do weryfikowania poprawności danych o dostępnych zapasach w poszczególnych lokalizacjach, możesz także identyfikować kradzieże w sklepach swojej sieci. Można też określić, czy w którejkolwiek lokalizacji istnieją ilości dostępnych zapasów, które różnią się od danych w systemie planowania zasobów przedsiębiorstwa (ERP). Być może te lokalizacje są zbyt duże albo nie da się w nich przeprowadzić inwentaryzacji. Ewentualnie niektóre fizyczne umiejscowienia mogą być błędne, wskutek czego trudno jest synchronizować określone rodzaje towarów z danymi o dostępności.
+## Przechodzenie do pakietu zawartości usługi Power BI
+<a id="accessing-the-power-bi-content-pack" class="xliff"></a>
+Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r., pakiet zawartości usługi Power BI **Wydajność magazynu** jest wyświetlany na stronie **Wydajność magazynu** (**Zarządzanie magazynem** > **Zapytania i raporty** > **Analizy wydajności magazynu** > **Wydajność magazynu**). 
 
-## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Pakiet zawartości usługi Power BI **Wydajność magazynu** znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Administratorzy systemów mogą pobrać pakiet zawartości i połączyć go z danymi usługi Microsoft Dynamics 365 for Operations, wykonując instrukcje zawarte w temacie [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md). 
-
-**Uwaga:** Poprawka **KB 4011327** jest wstępnie wymaganym składnikiem tego pakietu zawartości usługi Power BI. Po zalogowaniu się w usłudze Lifecycle Services można uzyskać dostęp do tej poprawki KB tutaj: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
-
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
+## Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
+<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
 Pakiet zawartości **Wydajność magazynu** dla usługi Power BI obejmuje raport. Raport zawiera zestaw wskaźników, które są wizualizowane jako wykresy, kafelki i tabele. Poniższa tabela zawiera omówienie wizualizacji dostępnych w pakiecie zawartości usługi Power BI **Wydajność magazynu**.
 
 | Strona raportu                 | Wykresy                                   | opis                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -81,9 +81,20 @@ Pakiet zawartości **Wydajność magazynu** dla usługi Power BI obejmuje raport
 | Wydajność wysyłki        | Wysłane wg produktów                       | Procent towarów wysłanych wcześniej, punktualnie lub z opóźnieniem z podziałem na towary lub grupy towarów.                                                                                                                                                                                                                                                                                                                                   |
 | Wydajność wysyłki        | Wysłane wg odbiorców                      | Procent towarów wysłanych wcześniej, punktualnie lub z opóźnieniem z podziałem na odbiorców lub grupy odbiorców.                                                                                                                                                                                                                                                                                                                           |
 | Wydajność wysyłki        | Wysłane wg oddziałów/magazynów              | Procent towarów wysłanych wcześniej, punktualnie lub z opóźnieniem z podziałem na oddziały lub magazyny.                                                                                                                                                                                                                                                                                                                                    |
+## Rozszerzanie funkcjonalności pakietu zawartości usługi Power BI
+<a id="extending-the-power-bi-content" class="xliff"></a>
+Za pomocą pakietów zawartości dostępnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) można dostarczać zaawansowane funkcje analityczne osobom, które się nie logują w programie Microsoft Dynamics 365. Te pakiety zawartości można modyfikować, tak aby zawierały inne raporty lub wizualizacje, a następnie publikować je w swojej dzierżawie usługi Power BI.com na potrzeby wykonywania analiz. 
 
-## <a name="understanding-the-data-model-and-calculations"></a>Opis modelu danych i obliczeń
-Dane programu Dynamics 365 for Operations są używane do wypełniania raportu w pakiecie zawartości usługi Power BI **Wydajność magazynu**. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md). 
+Pakiet zawartości usługi Power BI **Wydajność magazynu** znajduje się w bibliotece zasobów wspólnych w usłudze LCS. Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).
+
+Uważaj, aby pobrać pakiet zawartości **Wydajność magazynu** mający zastosowanie do używanej wersji systemu Dynamics 365.
+
+> [!NOTE]
+> Jeśli używasz programu Microsoft Dynamics 365 for Operations w wersji 1611, ten pakiet zawartości usługi Power BI wymaga poprawki KB 4011327. Po zalogowaniu się w usłudze LCS można uzyskać dostęp do tej poprawki KB tutaj: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+
+## Opis modelu danych i obliczeń
+<a id="understanding-the-data-model-and-calculations" class="xliff"></a>
+Następujące dane są używane do wypełniania stron raportów w pakiecie zawartości **Wydajność magazynu** dla usługi Power BI. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md). 
 
 Następujące najważniejsze zagregowane miary są używane jako podstawa w pakiecie zawartości:
 
@@ -117,17 +128,4 @@ Następujące najważniejsze zagregowane miary są używane jako podstawa w paki
 | Wydajność wysyłki        | Wysłane wg produktów                       | CustPackingSlipOnTimeStatus           | Wcześnie, Na czas i Późno (zobacz opisy we wcześniejszej części tej tabeli).                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Wydajność wysyłki        | Wysłane wg odbiorców                      | CustPackingSlipOnTimeStatus           | Wcześnie, Na czas i Późno (zobacz opisy we wcześniejszej części tej tabeli).                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Wydajność wysyłki        | Wysłane wg oddziałów/magazynów              | CustPackingSlipOnTimeStatus           | Wcześnie, Na czas i Późno (zobacz opisy we wcześniejszej części tej tabeli).                                                                                                                                                                                                                                                                                                                                                                                                                        |
-
-## <a name="additional-resources"></a>Dodatkowe zasoby
-Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworzenia zawartości w narzędziu Power BI:
-
--   [Jednostki danych](../data-entities/data-entities.md)
--   [Tworzenie organizacyjnych pakietów zawartości](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Modelowanie danych przy użyciu narzędzia Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Dodawanie kafelków narzędzia Power BI do obszarów roboczych](configure-power-bi-integration.md)
-
-
-
-
-
 

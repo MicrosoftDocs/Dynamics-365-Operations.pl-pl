@@ -3,7 +3,7 @@ title: "Szablony planowania budżetu dla programu Excel"
 description: "W tym temacie opisano sposób tworzenia szablonów programu Microsoft Excel, które mogą być używane w planach budżetu."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,15 +17,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 93aa0aeffad0411542f36e27745f63198c4438b2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 9f8073a2eb0d1b61d6a168f43eba983d113cf453
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="budget-planning-templates-for-excel"></a>Szablony planowania budżetu dla programu Excel
+# Szablony planowania budżetu dla programu Excel
+<a id="budget-planning-templates-for-excel" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,7 +35,8 @@ W tym temacie opisano sposób tworzenia szablonów programu Microsoft Excel, kt�
 
 W tym temacie pokazano, jak tworzyć szablony programu Excel przeznaczone dla planów budżetu, wykorzystując do tego standardowy zestaw danych demonstracyjnych i logowanie użytkownika będącego administratorem. Aby uzyskać więcej informacji na temat planowania budżetu, zobacz [Przegląd planowania budżetu.](budget-planning-overview-configuration.md) Można również przejść samouczek [Planowanie budżetu 101](budget-plan.md), który przekazuje podstawowe informacje o konfiguracjach modułu i zasadach użytkowania.
 
-## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Generowanie arkusza przy użyciu układu dokumentu planu budżetu
+## Generowanie arkusza przy użyciu układu dokumentu planu budżetu
+<a id="generate-a-worksheet-using-budget-plan-document-layout" class="xliff"></a>
 Dokumenty planu budżetu można wyświetlać i edytować za pomocą jednego lub więcej układów. Z każdym układem może być skojarzony szablon dokumentu planu budżetu, który umożliwia wyświetlanie i edytowanie danych planu budżetu w arkuszu programu Excel. W tym temacie szablon dokumentu planu budżetu zostanie wygenerowany przy użyciu istniejącej konfiguracji układu. Otwórz **listę planów budżetu** (**Budżetowanie**&gt; **Plany budżetu**). Kliknij przycisk **Nowy**, aby utworzyć nowy dokument planu budżetu. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 Za pomocą opcji wierszy **Dodaj** dodaj wiersze. Kliknij opcję **Układy**, aby wyświetlić konfigurację układu dokumentu planu budżetu. 
@@ -50,9 +52,10 @@ Szablon programu Excel będzie zawierał wszystkie elementy z układu dokumentu 
 [![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
-> Aby uniknąć potencjalnych problemów z wyświetlaniem i edytowaniem danych planu budżetu za pomocą programu Excel, ten sam użytkownik powinien być zalogowany w programie Dynamics 365 for Operations oraz łączniku danych dodatku pakietu Office dla usługi Microsoft Dynamics.
+> Aby uniknąć potencjalnych problemów z wyświetlaniem i edytowaniem danych planu budżetu za pomocą programu Excel, ten sam użytkownik powinien być zalogowany w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition oraz łączniku danych dodatku pakietu Office dla usługi Microsoft Dynamics.
 
-## <a name="add-a-header-to-budget-plan-document-template"></a>Dodawanie nagłówka do szablonu dokumentu planu budżetu
+## Dodawanie nagłówka do szablonu dokumentu planu budżetu
+<a id="add-a-header-to-budget-plan-document-template" class="xliff"></a>
 Aby dodać informacje nagłówka, zaznacz górny wiersz w pliku programu Excel i wstaw puste wiersze. W obszarze **Łącznik danych** kliknij opcję **Projekt** i dodaj pola nagłówka do pliku programu Excel.
 
 [![bpt5](./media/bpt5-1024x615.png)](./media/bpt5.png) 
@@ -63,9 +66,11 @@ Na karcie **Projekt** kliknij** **pola **Dodaj**, a następnie wybierz pozycję 
 
 Ustaw kursor w żądanym miejscu w pliku programu Excel. Kliknij przycisk **Dodaj etykietę**, aby dodać etykietę pola w wybranym miejscu. Kliknij przycisk **Dodaj wartość**, aby dodać pole wartości w wybranym miejscu. Kliknij przycisk **Gotowe**, aby zamknąć projektanta.
 
-## <a name="bpt7mediabpt7pngmediabpt7png"></a>[![bpt7](./media/bpt7.png)](./media/bpt7.png)
+## [![bpt7](./media/bpt7.png)](./media/bpt7.png)
+<a id="bpt7mediabpt7pngmediabpt7png" class="xliff"></a>
 
-<a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Dodawanie kolumny obliczanej do tabeli szablonu dokumentu planu budżetu
+Dodawanie kolumny obliczanej do tabeli szablonu dokumentu planu budżetu
+<a id="add-a-calculated-column-to-budget-plan-document-template-table" class="xliff"></a>
 --------------------------------------------------------------
 
 Następnie kolumny obliczane zostaną dodane do wygenerowanego szablonu dokumentu planu budżetu. Kolumna **Wniosek razem**, która sumuje wartości kolumn od Wniosek K1 do Wniosek K4, oraz kolumna **Korekta**, która przelicza wartość w kolumnie **Wniosek razem** o ustawiony wcześniej współczynnik.
@@ -79,11 +84,11 @@ Wybrana grupa pól pokazuje kolumny dostępne w szablonie. Kliknij przycisk **Fo
 [![bpt12](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Aby zdefiniować formułę (wzór), utwórz ją w arkuszu kalkulacyjnym, a następnie skopiuj do okna **Projekt**. Tabela powiązania z programem Dynamics 365 for Operations zazwyczaj nosi nazwę „AXTable1”. Na przykład aby podsumować kolumny Wniosek K1: Wniosek K4 w arkuszu kalkulacyjnym, formuła ma postać = AxTable1\[Wniosek K1\]+AxTable1\[Wniosek K2\]+AxTable1\[Wniosek K3\]+AxTable1\[Wniosek K4\].
+> Aby zdefiniować formułę (wzór), utwórz ją w arkuszu kalkulacyjnym, a następnie skopiuj do okna **Projekt**. Tabela powiązana z programem Finance and Operations zazwyczaj nosi nazwę „AXTable1”. Na przykład aby podsumować kolumny Wniosek K1: Wniosek K4 w arkuszu kalkulacyjnym, formuła ma postać = AxTable1\[Wniosek K1\]+AxTable1\[Wniosek K2\]+AxTable1\[Wniosek K3\]+AxTable1\[Wniosek K4\].
 
 Powtórz te kroki, aby wstawić kolumnę **Korekta**. Dla tej kolumny użyj formuły = AxTable1\[Wniosek razem\]\*$I$1. Spowoduje to pobranie wartości z komórki I1 i pomnożenie jej przez wartości z kolumny **Wniosek razem** w celu obliczania kwot korekt.
 
-Zapisz i zamknij plik programu Excel. Wróć do programu Dynamics 365 for Operations i w obszarze **Układy** kliknij kolejno opcje **Szablon &gt; Przekaż**, aby przekazać zapisany szablon programu Excel przeznaczony do używania w planie budżetu. 
+Zapisz i zamknij plik programu Excel. Wróć do programu Finance and Operations i w obszarze **Układy** kliknij kolejno opcje **Szablon &gt; Przekaż**, aby przekazać zapisany szablon programu Excel przeznaczony do używania w planie budżetu. 
 
 [![bpt10](./media/bpt10-1024x352.png)](./media/bpt10.png) 
 
@@ -91,14 +96,17 @@ Zamknij suwak **Układy**. W dokumencie **Plan budżetu** kliknij opcję **Arkus
 
 [![bpt11](./media/bpt111-1024x431.png)](./media/bpt111.png)
 
-## <a name="tips--tricks-for-creating-budget-plan-templates"></a>Porady i wskazówki dotyczące tworzenia szablonów planu budżetu
-### <a name="can-i-add-and-use-additional-data-sources-to-a-budget-plan-template"></a>Czy można dodać i używać więcej źródeł danych do szablonu planu budżetu?
+## Porady i wskazówki dotyczące tworzenia szablonów planu budżetu
+<a id="tips--tricks-for-creating-budget-plan-templates" class="xliff"></a>
+### Czy można dodać i używać więcej źródeł danych do szablonu planu budżetu?
+<a id="can-i-add-and-use-additional-data-sources-to-a-budget-plan-template" class="xliff"></a>
 
 Tak, za pomocą menu **Projekt** można dodać więcej jednostek do tego samego lub innych arkuszy w szablonie programu Excel. Na przykład można dodać źródło danych **BudgetPlanProposedProject**, aby utworzyć i prowadzić listę proponowanych projektów w tym samym czasie, kiedy pracujesz z danymi planu budżetu w programie Excel. Należy zauważyć, że dołączenie dużych źródeł danych może mieć negatywny wpływ na działanie skoroszytu programu Excel. 
 
 Można użyć opcji **Filtr** w obszarze **Łącznik danych**, aby dodać żądane filtry do dodatkowych źródeł danych.
 
-### <a name="can-i-hide-the-design-option-in-the-data-connector-for-other-users"></a>Czy można ukryć opcję Projekt w obszarze Łącznik danych dla innych użytkowników?
+### Czy można ukryć opcję Projekt w obszarze Łącznik danych dla innych użytkowników?
+<a id="can-i-hide-the-design-option-in-the-data-connector-for-other-users" class="xliff"></a>
 
 Tak, otwórz opcje narzędzia **Łącznik danych** i tam można schować opcję **Projekt** przed innymi użytkownikami.
 
@@ -108,7 +116,8 @@ Rozwiń opcje narzędzia **Łącznik danych** i wyczyść pole wyboru **Włącz 
 
 [![bpt14](./media/bpt14-1024x592.png)](./media/bpt14.png)
 
-### <a name="can-i-prevent-users-from-accidently-closing-the-data-connector-while-working-with-data"></a>Czy można uniemożliwić użytkownikom przypadkowe zamknięcie łącznika danych podczas pracy z danymi?
+### Czy można uniemożliwić użytkownikom przypadkowe zamknięcie łącznika danych podczas pracy z danymi?
+<a id="can-i-prevent-users-from-accidently-closing-the-data-connector-while-working-with-data" class="xliff"></a>
 
 Zalecamy zablokowanie szablonu, aby uniemożliwić użytkownikom jego zamknięcie. Aby włączyć blokadę, kliknij przycisk **Łącznik danych** w prawym górnym rogu. Pojawi się strzałka. 
 
@@ -116,9 +125,11 @@ Zalecamy zablokowanie szablonu, aby uniemożliwić użytkownikom jego zamknięci
 
 Kliknij strzałkę, a pojawi się dodatkowe menu. Wybierz opcję **Blokowanie**.
 
-### <a name="bpt16mediabpt16-1024x614pngmediabpt16png"></a>[![bpt16](./media/bpt16-1024x614.png)](./media/bpt16.png)
+### [![bpt16](./media/bpt16-1024x614.png)](./media/bpt16.png)
+<a id="bpt16mediabpt16-1024x614pngmediabpt16png" class="xliff"></a>
 
-### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Czy w moich szablonach planu budżetu mogę używać innych funkcji programu Excel, takich jak formatowanie komórek, kolory, formatowanie warunkowe i wykresy?
+### Czy w moich szablonach planu budżetu mogę używać innych funkcji programu Excel, takich jak formatowanie komórek, kolory, formatowanie warunkowe i wykresy?
+<a id="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates" class="xliff"></a>
 
 Tak, większość standardowych funkcji programu Excel będzie działać w szablonach planu budżetu. Zalecamy użytkownikom stosowanie kolorów do rozróżniania między kolumnami tylko do odczytu i edytowalnymi. Formatowanie warunkowe może służyć do wyróżniania problematycznych obszarów budżetu. Sumy kolumn można łatwo przedstawiać za pomocą standardowych formuł programu Excel nad tabelą.
 

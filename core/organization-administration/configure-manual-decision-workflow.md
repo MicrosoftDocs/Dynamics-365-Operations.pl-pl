@@ -3,13 +3,13 @@ title: "Konfigurowanie ręcznej decyzji w przepływie pracy"
 description: "W tym temacie wyjaśniono sposób konfigurowania właściwości decyzji ręcznej."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192101
 ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ac86ffa794b5fd92ca9aba24537fbc05057fe824
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 6ea8b060741ea94af16861d5bb52894a577e5521
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurowanie ręcznej decyzji w przepływie pracy
+# Konfigurowanie ręcznej decyzji w przepływie pracy
+<a id="configure-a-manual-decision-in-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,13 +35,15 @@ W tym temacie wyjaśniono sposób konfigurowania właściwości decyzji ręcznej
 
 Aby skonfigurować decyzję ręczną, w edytorze przepływu pracy kliknij decyzję ręczną prawym przyciskiem myszy i wybierz polecenie **Właściwości**, a zostanie otwarta strona **Właściwości**. Następnie za pomocą procedur zamieszczonych niżej skonfiguruj właściwości decyzji ręcznej.
 
-## <a name="name-the-decision"></a>Nazywanie decyzji
+## Nazywanie decyzji
+<a id="name-the-decision" class="xliff"></a>
 Wykonaj następujące kroki, aby wprowadzić nazwę decyzji ręcznej.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
 2.  W polu **Nazwa** wprowadź unikatową nazwę decyzji ręcznej.
 
-## <a name="enter-a-subject-line-and-instructions"></a>Wprowadzanie wiersza tematu i instrukcji
+## Wprowadzanie wiersza tematu i instrukcji
+<a id="enter-a-subject-line-and-instructions" class="xliff"></a>
 Należy wprowadzić wiersz tematu i instrukcje dla użytkowników przypisanych do decyzji ręcznej. Na przykład jeśli konfigurujesz decyzję dla zapotrzebowań na zakup, użytkownik przypisany do decyzji zobaczy wiersz tematu i instrukcje na stronie **Zapotrzebowania na zakup**. Wiersz tematu pojawia się na pasku komunikatów na stronie. Może wtedy kliknąć ikonę na pasku komunikatów i przeczytać instrukcje. Aby wprowadzić wiersz tematu i instrukcje, należy wykonać poniższe kroki.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
@@ -74,7 +77,8 @@ Należy wprowadzić wiersz tematu i instrukcje dla użytkowników przypisanych d
     5.  Aby spersonalizować tekst, możesz wstawić symbole zastępcze, jak opisano w kroku 6.
     6.  Kliknij przycisk **Zamknij**.
 
-## <a name="specify-the-possible-outcomes-of-a-decision"></a>Określanie możliwych wyników decyzji
+## Określanie możliwych wyników decyzji
+<a id="specify-the-possible-outcomes-of-a-decision" class="xliff"></a>
 Zazwyczaj gdy dokument jest przypisany do osoby podejmującej decyzje, osobie tej jest zadawane pytanie. Odpowiedź na to pytanie brzmi zazwyczaj **Tak** lub **Nie** albo **Prawda** lub **Fałsz**. Wykonaj następujące kroki, aby określić możliwe wyniki decyzji ręcznej.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
@@ -94,7 +98,8 @@ Zazwyczaj gdy dokument jest przypisany do osoby podejmującej decyzje, osobie te
     4.  W polu **Przetłumaczony tekst** wprowadź tekst.
     5.  Kliknij przycisk **Zamknij**.
 
-## <a name="specify-when-notifications-are-sent"></a>Określanie, kiedy są wysyłane powiadomienia
+## Określanie, kiedy są wysyłane powiadomienia
+<a id="specify-when-notifications-are-sent" class="xliff"></a>
 Można wysyłać powiadomienia do osób w momencie wprowadzenia decyzji, jej delegowania lub eskalowania. Wykonaj następujące kroki, aby określić, kiedy i do kogo są wysyłane powiadomienia.
 
 1.  W lewym okienku kliknij opcję **Powiadomienia**.
@@ -152,10 +157,10 @@ Można wysyłać powiadomienia do osób w momencie wprowadzenia decyzji, jej del
     </tr>
     <tr class="odd">
     <td>Użytkownik</td>
-    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Operations</td>
+    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Finance and Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Finance and Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -163,7 +168,8 @@ Można wysyłać powiadomienia do osób w momencie wprowadzenia decyzji, jej del
 
 8.  Powtórz kroki od 3 do 7 dla każdego zdarzenia wybranego w kroku 2.
 
-## <a name="assign-a-decision"></a>Przypisywanie decyzji
+## Przypisywanie decyzji
+<a id="assign-a-decision" class="xliff"></a>
 Wykonaj poniższe kroki, aby określić, komu ma zostać przypisana decyzja ręczna.
 
 1.  W lewym okienku kliknij opcję **Przypisanie**.
@@ -215,10 +221,10 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisana decyzja ręc
     </tr>
     <tr class="even">
     <td>Użytkownik</td>
-    <td>Konkretni użytkownicy programu Dynamics 365 for Operations</td>
+    <td>Konkretny użytkownik programu Finance and Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz przypisać decyzję, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Finance and Operations. Wybierz użytkowników, którym chcesz przypisać decyzję, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -249,7 +255,8 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisana decyzja ręc
 
     Jeśli użytkownik nie podejmie decyzji w wyznaczonym czasie, staje się ona zaległa. Decyzję zaległą można eskalować na podstawie opcji wybranych na stronie w obszarze **Eskalacja**.
 
-## <a name="specify-what-happens-when-a-decision-is-overdue"></a>Określanie, co się dzieje z decyzją zaległą
+## Określanie, co się dzieje z decyzją zaległą
+<a id="specify-what-happens-when-a-decision-is-overdue" class="xliff"></a>
 Jeśli użytkownik nie podejmie decyzji w wyznaczonym czasie, staje się ona zaległa. Decyzja zaległa może być eskalowana lub automatycznie przypisywana do innego użytkownika. Wykonaj następujące kroki, aby eskalować zaległą decyzję.
 
 1.  W lewym okienku kliknij opcję **Eskalacja**.
@@ -301,10 +308,10 @@ Jeśli użytkownik nie podejmie decyzji w wyznaczonym czasie, staje się ona zal
     </tr>
     <tr class="odd">
     <td>Użytkownik</td>
-    <td>Konkretni użytkownicy programu Dynamics 365 for Operations</td>
+    <td>Konkretny użytkownik programu Finance and Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, do których chcesz eskalować decyzję, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Finance and Operations. Wybierz użytkowników, do których chcesz eskalować decyzję, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -320,7 +327,8 @@ Jeśli użytkownik nie podejmie decyzji w wyznaczonym czasie, staje się ona zal
 5.  Powtórz kroki od 3 do 4 dla każdego użytkownika, który powinien zostać dodany do ścieżki eskalacji. Można zmienić kolejność użytkowników.
 6.  Jeśli użytkownicy wymienieni w ścieżce eskalacji nie podejmą decyzji w wyznaczonym czasie, system sam podejmie decyzję. Aby określić opcję wybieraną przez system, wybierz wiersz **Akcja**, a następnie na karcie **Zakończ działanie** wybierz opcję.
 
-## <a name="set-a-time-limit"></a>Ustawianie limitu czasu
+## Ustawianie limitu czasu
+<a id="set-a-time-limit" class="xliff"></a>
 Jeśli decyzja musi zostać podjęta w określonym czasie, wykonaj następujące kroki. **Uwaga:** Opcje wybranej w tej procedurze zastępują opcje wybrane na stronie w obszarach **Przypisanie** i **Eskalacja**.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia zaawansowane**.

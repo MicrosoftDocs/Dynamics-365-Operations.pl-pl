@@ -3,14 +3,14 @@ title: "Publikowanie wierszy arkuszy i dokumentów z programu Excel"
 description: "W tym temacie wyjaśniono, jak wprowadzać i publikować wiersze arkuszy finansowych z programu Microsoft Excel. Znajdują się tu informacje dotyczące różnych szablonów, których można używać w zależności od typu wprowadzanych transakcji."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62213
 ms.assetid: 211874a7-4bf0-4a0c-96c2-fa05042777d3
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a43bf66de7602aa9fb47925996ec5b979e1f8dac
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1fed8d162a37736883365fa765a059e5beff06be
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="publish-journal-lines-and-documents-from-excel"></a>Publikowanie wierszy arkuszy i dokumentów z programu Excel
+# Publikowanie wierszy arkuszy i dokumentów z programu Excel
+<a id="publish-journal-lines-and-documents-from-excel" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -48,9 +49,9 @@ Użytkownicy mogą wprowadzać i publikować wiersze arkuszy finansowych z progr
 | Arkusz płatności odbiorcy | Konto: Konto przeciwstawne Odbiorca: Międzyfirmowe Księga, Bank jest obsługiwane.                                               | Arkusz płatności odbiorcy                                                                |
 | Arkusz wydatków w ramach projektu  | Konto: Konto przeciwstawne Projekt, Księga, Odbiorca, Dostawca: Międzyfirmowe Projekt, Księga, Odbiorca, Dostawca jest obsługiwane. | Arkusz finansowy wydatków (w obszarze Zarządzanie projektami i ich księgowanie)                       |
 
-Podczas publikowania wierszy są one weryfikowane w celu uzyskania pewności, że są zgodne z regułami skonfigurowanymi w arkuszach finansowych. Po opublikowaniu wierszy użytkownicy mogą edytować i księgować załączniki z poziomu programu Microsoft Dynamics 365 for Operations. 
+Podczas publikowania wierszy są one weryfikowane w celu uzyskania pewności, że są zgodne z regułami skonfigurowanymi w arkuszach finansowych. Po opublikowaniu wierszy użytkownicy mogą edytować i księgować załączniki z poziomu programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. 
 
-Aby dodać wymiary finansowe do szablonu, trzeba wprowadzić dodatkowe zmiany. Aby uzyskać więcej informacji, zobacz [Dodawanie wymiarów do szablonu programu Microsoft Excel](/dynamics365/operations/dev-itpro/financial/add-dimensions-excel-templates). Po dodaniu wymiarów do jednostki są one dostępne w projektancie programu Excel i mogą być dodawane do szablonu.
+Aby dodać wymiary finansowe do szablonu, trzeba wprowadzić dodatkowe zmiany. Aby uzyskać więcej informacji, zobacz [Dodawanie wymiarów do szablonu programu Microsoft Excel](/dynamics365/unified-operations/dev-itpro/financial/add-dimensions-excel-templates). Po dodaniu wymiarów do jednostki są one dostępne w projektancie programu Excel i mogą być dodawane do szablonu.
 
 
 

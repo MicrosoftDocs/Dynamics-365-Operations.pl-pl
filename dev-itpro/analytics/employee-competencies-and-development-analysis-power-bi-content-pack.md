@@ -1,15 +1,15 @@
 ---
 title: "Pakiet zawartości usługi Power BI Kompetencje i rozwój pracownika etatowego"
-description: "W tym temacie opisano pakiet zawartości Dynamics 365 for Operations — Kompetencje i rozwój pracownika etatowego dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
+description: "W tym temacie opisano pakiet zawartości Finance and Operations — Kompetencje i rozwój pracownika etatowego dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 263894
 ms.assetid: 7d375d8a-b2de-4bec-b575-93d1d4521b79
 ms.search.region: Global
@@ -17,28 +17,31 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 770a832efe8ee2da44d65670b1818be4fcf4bcc0
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: f5b3c180f0a9d60fa5d4d8398daf79a14da2d6f4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="employee-competencies-and-development-power-bi-content"></a>Pakiet zawartości usługi Power BI Kompetencje i rozwój pracownika etatowego
+# Pakiet zawartości usługi Power BI Kompetencje i rozwój pracownika etatowego
+<a id="employee-competencies-and-development-power-bi-content" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym temacie opisano pakiet zawartości Dynamics 365 for Operations — Kompetencje i rozwój pracownika etatowego dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+W tym temacie opisano pakiet zawartości Finance and Operations — Kompetencje i rozwój pracownika etatowego dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
-<a name="accessing-the-content-pack"></a>Przechodzenie do pakietu zawartości
+Przechodzenie do pakietu zawartości
+<a id="accessing-the-content-pack" class="xliff"></a>
 --------------------------
 
-Pakiet zawartości Kompetencje i rozwój pracownika etatowego znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i łączeniu go z danymi usługi Microsoft Dynamics 365 for Operations, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md).
+Pakiet zawartości Kompetencje i rozwój pracownika etatowego znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i łączeniu go z danymi usługi Microsoft Dynamics 365 for Finance and Operations, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Raporty dostępne w pakiecie zawartości
-Gdy utworzysz połączenie między pakietem zawartości a danymi programu Dynamics 365 for Operations, w raportach są wyświetlone dane organizacji. Jeśli to Twoja pierwsza styczność z narzędziem Microsoft Power BI, możesz się o nim dowiedzieć więcej na [stronie Przewodnika z instruktażem po narzędziu Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporty dostępne w pakiecie zawartości mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
+## Raporty dostępne w pakiecie zawartości
+<a id="reports-that-are-included-in-the-content-pack" class="xliff"></a>
+Gdy utworzysz połączenie między pakietem zawartości a danymi programu Finance and Operations, w raportach są wyświetlone dane organizacji. Jeśli to Twoja pierwsza styczność z narzędziem Microsoft Power BI, możesz się o nim dowiedzieć więcej na [stronie Przewodnika z instruktażem po narzędziu Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporty dostępne w pakiecie zawartości mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
 
 | Raport                            | Zawartość                                               |
 |-----------------------------------|--------------------------------------------------------|
@@ -48,8 +51,9 @@ Gdy utworzysz połączenie między pakietem zawartości a danymi programu Dynami
 
 Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
-Dane programu Dynamics 365 for Operations są używane do wypełniania raportów w pakiecie zawartości Kompetencje i rozwój pracownika etatowego. W poniższej tabeli przedstawiono jednostki, na których bazuje pakiet.
+## Opis modelu danych i jednostek
+<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+Dane programu Finance and Operations są używane do wypełniania raportów w pakiecie zawartości Kompetencje i rozwój pracownika etatowego. W poniższej tabeli przedstawiono jednostki, na których bazuje pakiet.
 
 | Jednostka                            | Zawartość                                                                                                   | Powiązania z innymi jednostkami                                                                                                                                                                                                                                                                       |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -80,7 +84,8 @@ Dane programu Dynamics 365 for Operations są używane do wypełniania raportów
 
 Te jednostki zostały użyte do utworzenia obliczanych miar w modelu danych. Następnie obliczane miary są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości. Jeśli chcesz umieścić dodatkowe obliczenia w raportach i na pulpicie nawigacyjnym, możesz z usługi LCS pobrać plik CompetenciesandDevelopment.pbix i go zmodyfikować. Ten plik jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości. Po wprowadzeniu wszystkich modyfikacji można utworzyć organizacyjny pakiet zawartości i pulpit nawigacyjny, który zawiera dodane informacje.
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
+## Dodatkowe zasoby
+<a id="additional-resources" class="xliff"></a>
 Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworzenia zawartości w narzędziu Power BI:
 
 -   [Jednostki danych](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)

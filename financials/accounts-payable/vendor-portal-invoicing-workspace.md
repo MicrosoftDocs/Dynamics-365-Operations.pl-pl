@@ -3,13 +3,14 @@ title: "Obszar roboczy fakturowania w portalu współpracy z dostawcami"
 description: "W tym temacie wyjaśniono, jak wyświetlić faktury od dostawców i przesyłać faktury z obszaru roboczego Fakturowanie w portalu współpracy z dostawcami."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221534
 ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
 ms.search.region: Global
@@ -17,35 +18,38 @@ ms.author: abruer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7c8fe2fea08dbad625cd373ca316135ac4e29e13
+ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
+ms.openlocfilehash: 2171a454c763abab82f6555950994237b4de7b8b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/14/2017
 
 
 ---
 
-# <a name="vendor-collaboration-invoicing-workspace"></a>Obszar roboczy fakturowania w portalu współpracy z dostawcami
+# Obszar roboczy fakturowania w portalu współpracy z dostawcami
+<a id="vendor-collaboration-invoicing-workspace" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie wyjaśniono, jak wyświetlić faktury od dostawców i przesyłać faktury z obszaru roboczego Fakturowanie w portalu współpracy z dostawcami.
 
-Obszar roboczy **Fakturowanie w portalu współpracy dostawcy** może służyć do przeglądania informacji o fakturach od dostawców i przesyłania faktur do programu Microsoft Dynamics 365 for Operations za pomocą funkcji przepływu pracy.
+Obszar roboczy **Fakturowanie w portalu współpracy dostawcy** może służyć do przeglądania informacji o fakturach od dostawców i przesyłania faktur do programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition za pomocą funkcji przepływu pracy.
 Obszar roboczy fakturowania w portalu współpracy z dostawcami
 ----------------------------------------
 
-### <a name="summary-tiles"></a>Kafelki podsumowania
+### Kafelki podsumowania
+<a id="summary-tiles" class="xliff"></a>
 
 Kafelki **Podsumowanie** prezentują przegląd faktur od wybranego dostawcy. Istnieje możliwość wyświetlania faktur według ich stanu.
 -   Wersje robocze faktur nie zostały przesłane do przepływu pracy.
--   Przesłane niezatwierdzone faktury to takie faktury, które dostawca przesłał, ale nie zostały one jeszcze zaksięgowane w programie Dynamics 365 for Operations.
--   Zatwierdzone niezapłacone faktury to takie faktury, które zostały zaksięgowane w programie Dynamics 365 for Operations, ale ich jeszcze w całości nie opłacono.
--   Zapłacone faktury to takie faktury, które zostały w całości zapłacone w programie Dynamics 365 for Operations.
+-   Przesłane niezatwierdzone faktury to takie faktury, które dostawca przesłał, ale nie zostały one jeszcze zaksięgowane w programie Finance and Operations.
+-   Zatwierdzone niezapłacone faktury to takie faktury, które zostały zaksięgowane w programie Finance and Operations, ale ich jeszcze w całości nie opłacono.
+-   Zapłacone faktury to takie faktury, które zostały w całości zapłacone w programie Finance and Operations.
 
 Kliknięcie kafelka otwiera przefiltrowany widok strony **Lista faktur**.
-### <a name="tabular-lists"></a>Listy tabelaryczne
+### Listy tabelaryczne
+<a id="tabular-lists" class="xliff"></a>
 
 W sekcji **Listy tabelaryczne** stan fakturowania dzieli się w podobny sposób, jak w kafelkach podsumowania: listy wersji roboczych i przesłanych niezatwierdzonych. W stanie Wersja robocza fakturę można przesłać do przepływu pracy lub usunąć. Ostatnia lista tabelaryczna to opcja pozwalająca odnaleźć faktury. Można filtrować podczas wyszukiwania, aby przyspieszyć wyszukiwanie.
 Strona listy Wszystkie faktury od dostawcy
@@ -59,7 +63,7 @@ Nową fakturę od dostawcy można utworzyć, wybierając akcję **Nowy** w obsza
 
 
 
-Aby uzyskać więcej informacji, zobacz [Współpraca z dostawcami za pomocą portalu dostawców](/dynamics365/operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
+Aby uzyskać więcej informacji, zobacz [Współpraca z dostawcami za pomocą portalu dostawców](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
 
 
 

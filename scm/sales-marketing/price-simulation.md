@@ -3,7 +3,7 @@ title: Symulacja ceny
 description: "Ten artykuł zawiera informacje o symulacjach cen dla ofert. Symulacja ceny pomaga ocenić wpływ obniżek na przyszłą cenę sprzedaży w trakcie procesu sporządzania oferty, zanim określona cena zostanie potwierdzona."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
@@ -19,15 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 293f09ca8758c0b1a66614eb9c75ca266b044fe7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c5381ab48e394702c2423de7a5b5cb9166993388
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="price-simulation"></a>Symulacja ceny
+# Symulacja ceny
+<a id="price-simulation" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -49,26 +50,31 @@ Podczas tworzenia oferty można skonfigurować alarm. Oto kilka zastosowań alar
 -   Mogą one powiadamiać o statusie ofert w organizacji.
 -   Mogą wywołać przegląd określonej oferty lub informować o przekroczeniu limitu rabatu.
 
-## <a name="price-simulation-and-discounts"></a>Symulacja cen i rabaty
+## Symulacja cen i rabaty
+<a id="price-simulation-and-discounts" class="xliff"></a>
 Aby zagwarantować, że rabaty i ceny są obliczane prawidłowo, należy zachować ostrożność przy uruchamianiu symulacji cen dla ofert z rabatami. Ponieważ wszystkie symulacje cen są traktowane jako specjalne rabaty dotyczące aktywnego wiersza oferty lub całej oferty, istotne znaczenie ma uwzględnianie różnic w rabatach.
 
-### <a name="types-of-discounts-in-trade-agreements"></a>Typy rabatów w umowach handlowych
+### Typy rabatów w umowach handlowych
+<a id="types-of-discounts-in-trade-agreements" class="xliff"></a>
 
-Umowy handlowe w programie Microsoft Dynamics 365 for Operations mogą zawierać cztery typy rabatów. Rabaty te można konfigurować dla różnych towarów, odbiorców lub grup cenowych i można je ograniczać terminem. Aby uniknąć błędów w obliczeniach, podczas wykonywania symulacji ceny należy wziąć pod uwagę umowy handlowe. Oto cztery typy rabatów w umowach handlowych:
+Umowy handlowe w programie Microsoft Dynamics 365 for Finance and Operations mogą zawierać cztery typy rabatów. Rabaty te można konfigurować dla różnych towarów, odbiorców lub grup cenowych i można je ograniczać terminem. Aby uniknąć błędów w obliczeniach, podczas wykonywania symulacji ceny należy wziąć pod uwagę umowy handlowe. Oto cztery typy rabatów w umowach handlowych:
 
 -   **Cena sprzedaży** – można określić osobne ceny sprzedaży towarów. Podczas tworzenia wierszy zapytania ofertowego, program wyszukuje poprawnych cen sprzedaży dla towaru i przenosi je do wierszy zamówienia sprzedaży. Z tego względu umowa handlowa zawierająca ten rodzaj rabatu nie wpływa na symulację ceny. Cena sprzedaży, która jest używana w wierszu oferty, odzwierciedla zapisy umowy handlowej.
 -   **Rabat wiersza** — specjalne rabaty określone dla towarów, w zależności od zamówionej ilości. Kwoty wierszy są zwykle pomniejszane o rabat wiersza przed uruchomieniem symulacji ceny. Z tego względu umowa handlowa zawierająca ten rodzaj rabatu wpływa na symulację ceny.
 -   **Rabaty wspólne** – jeśli połączone ilości przekraczają określony limit, wstępnie określone kombinacje zamówionych towarów wymuszają zastosowanie rabatu do całego zamówienia. Kwoty wierszy są zwykle pomniejszane o rabat wiersza przed uruchomieniem symulacji ceny. Z tego względu umowa handlowa zawierająca ten rodzaj rabatu wpływa na symulację ceny.
 -   **Rabat końcowy** – jeśli połączone kwoty przekraczają określony limit, wstępnie określone zamówione towary wymuszają zastosowanie rabatu do całego zamówienia. Rabat końcowy jest generowany przez wiersze oferty. Jednak ponieważ rabat końcowy jest stosowany do sumy oferty jako rabat, zmniejsza łączna kwota oferty. Z tego względu umowa handlowa zawierająca ten rodzaj rabatu wpływa na symulację ceny.
 
-### <a name="quotation-lines-and-trade-agreements"></a>Wiersze oferty a umowy handlowe
+### Wiersze oferty a umowy handlowe
+<a id="quotation-lines-and-trade-agreements" class="xliff"></a>
 
 Podczas tworzenia lub poprawiania wierszy oferty, rabaty wiersza są obliczane automatycznie. Odnajdowana jest odpowiednia cena sprzedaży dla towarów, w zależności od umowy handlowej.
 
-## <a name="price-simulation-examples"></a>Przykłady symulacji ceny
+## Przykłady symulacji ceny
+<a id="price-simulation-examples" class="xliff"></a>
 W poniższych przykładach symulacja cen jest stosowana do nagłówków ofert i pojedynczych towarów.
 
-### <a name="price-simulation-for-quotation-headers"></a>Symulacja ceny dla nagłówków oferty
+### Symulacja ceny dla nagłówków oferty
+<a id="price-simulation-for-quotation-headers" class="xliff"></a>
 
 Utworzono ofertę z następującymi wierszami:
 
@@ -99,7 +105,8 @@ Uruchomiono symulację ceny i zastosowano 15 procent rabatu końcowego dla całe
 | Nowa marża pokrycia w USD                       | 270,47 – 184,96                           | 85,51    |
 | Nowy współczynnik udziału                               | \[(270,47 – 184,96) ÷ 270,47\] × 100      | 31,61%   |
 
-### <a name="price-simulation-for-single-line-items"></a>Symulacja ceny dla pojedynczych towarów
+### Symulacja ceny dla pojedynczych towarów
+<a id="price-simulation-for-single-line-items" class="xliff"></a>
 
 Utworzono ofertę z następującymi wierszami:
 

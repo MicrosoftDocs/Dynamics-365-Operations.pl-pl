@@ -1,16 +1,16 @@
 ---
 title: "Konfigurowanie nazw pól aplikacji w aplikacji Magazynowanie"
-description: "W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów pól aplikacji magazynowej w programie Dynamics 365 for Operations."
+description: "W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów pól aplikacji magazynowej w programie Finance and Operations."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 269434
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ms.search.region: global
@@ -19,27 +19,29 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: edcbf8a0921e0eb08d0f970e681c9d098b354c0b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 49db5ad10914897b2157e123c5803ca51e4e66e7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurowanie nazw pól aplikacji w aplikacji Magazynowanie
+# Konfigurowanie nazw pól aplikacji w aplikacji Magazynowanie
+<a id="configure-app-field-names-in-warehousing-app" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów pól aplikacji magazynowej w programie Dynamics 365 for Operations. 
+W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów pól aplikacji magazynowej w programie Finance and Operations. 
 
-**Uwaga:** Ten temat dotyczy funkcji w module Zarządzanie magazynem. Nie ma zastosowania do funkcji w module Zarządzanie zapasami. Dynamics 365 for Operations — Magazynowanie to aplikacja umożliwiająca wykonywanie zadań magazynowych. Można zdefiniować i skonfigurować nazwy pól używanych w aplikacji, a także skonfigurować priorytety, do których te nazwy pól powinny być przypisane. W tym temacie wyjaśniono sposób definiowania i konfigurowania nazw i priorytetów tych pól aplikacji magazynowej oraz ich używanie w programie Dynamics 365 for Operations — Magazynowanie. Aby uzyskać szczegółowe informacje dotyczące konfigurowania połączenia z programem Dynamics 365 for Operations — Magazynowanie, skorzystaj z samouczka [Instalowanie i konfigurowanie aplikacji Dynamics 365 for Operations — Magazynowanie](install-configure-warehousing-app.md).
+**Uwaga:** Ten temat dotyczy funkcji w module Zarządzanie magazynem. Nie ma zastosowania do funkcji w module Zarządzanie zapasami. Finance and Operations — Magazynowanie to aplikacja umożliwiająca wykonywanie zadań magazynowych. Można zdefiniować i skonfigurować nazwy pól używanych w aplikacji, a także skonfigurować priorytety, do których te nazwy pól powinny być przypisane. W tym temacie wyjaśniono sposób definiowania i konfigurowania nazw i priorytetów tych pól aplikacji magazynowej oraz ich używanie w programie Finance and Operations — Magazynowanie. Aby uzyskać szczegółowe informacje dotyczące konfigurowania połączenia z programem Finance and Operations — Magazynowanie, skorzystaj z samouczka [Instalowanie i konfigurowanie aplikacji Finance and Operations — Magazynowanie](install-configure-warehousing-app.md).
 
-<a name="configure-warehouse-app-field-names"></a>Konfigurowanie nazw pól w aplikacji magazynowej
+Konfigurowanie nazw pól w aplikacji magazynowej
+<a id="configure-warehouse-app-field-names" class="xliff"></a>
 ===================================
 
-Gdy używasz programu Dynamics 365 for Operations — Magazynowanie na urządzeniu komórkowym, można na stronie **Nazwy pól w aplikacji magazynowej** skonfigurować sposób wyświetlania metadanych na urządzeniu. W nowej firmie w programie Dynamics 365 for Operations wybierz opcję **Utwórz konfigurację domyślną**, aby wygenerować wszystkie nazwy pól, które będą używane w przepływach pracy magazynu na urządzeniu, a następnie przypisz do nich preferowany tryb wprowadzania i typ danych wejściowych. Po wygenerowaniu wszystkich nazw pól można wybrać następujące opcje wprowadzania danych:
+Gdy używasz programu Finance and Operations — Magazynowanie na urządzeniu komórkowym, można na stronie **Nazwy pól w aplikacji magazynowej** skonfigurować sposób wyświetlania metadanych na urządzeniu. W nowej firmie w programie Finance and Operations wybierz opcję **Utwórz konfigurację domyślną**, aby wygenerować wszystkie nazwy pól, które będą używane w przepływach pracy magazynu na urządzeniu, a następnie przypisz do nich preferowany tryb wprowadzania i typ danych wejściowych. Po wygenerowaniu wszystkich nazw pól można wybrać następujące opcje wprowadzania danych:
 
 <table>
 <colgroup>
@@ -70,10 +72,11 @@ Gdy używasz programu Dynamics 365 for Operations — Magazynowanie na urządzen
 </tbody>
 </table>
 
-<a name="configure-warehouse-app-field-priority"></a>Konfigurowanie priorytetu pól w aplikacji magazynowej
+Konfigurowanie priorytetu pól w aplikacji magazynowej
+<a id="configure-warehouse-app-field-priority" class="xliff"></a>
 ======================================
 
-Na stronie **Priorytet pola w aplikacji magazynowej** można umieścić nazwy pól w różnych grupach priorytetu. Dzięki temu można zdecydować, które informacje mają być wyświetlane na głównej stronie zadań, gdy pracownicy magazynu wykonują zadania za pomocą aplikacji. Jeśli klikniesz opcję **Utwórz konfigurację domyślną**, zostanie wygenerowany domyślny zestaw grup priorytetu. Można utworzyć dowolną potrzebną liczbę grup priorytetu, ale tylko trzy będą wyświetlane na stronie zadania. Gdy program Dynamics 365 for Operations wysyła metadane do aplikacji, przypisuje każdemu polu względny priorytet w zależności od jego grupy priorytetu, a aplikacja wyświetla na stronie zadania pierwsze trzy grupy priorytetu zawarte w metadanych. Pozostała zawartość metadanych będzie wyświetlana na pomocniczej stronie szczegółów. Poniższa tabela pokazuje przykład pięciu grup priorytetu.
+Na stronie **Priorytet pola w aplikacji magazynowej** można umieścić nazwy pól w różnych grupach priorytetu. Dzięki temu można zdecydować, które informacje mają być wyświetlane na głównej stronie zadań, gdy pracownicy magazynu wykonują zadania za pomocą aplikacji. Jeśli klikniesz opcję **Utwórz konfigurację domyślną**, zostanie wygenerowany domyślny zestaw grup priorytetu. Można utworzyć dowolną potrzebną liczbę grup priorytetu, ale tylko trzy będą wyświetlane na stronie zadania. Gdy program Finance and Operations wysyła metadane do aplikacji, przypisuje każdemu polu względny priorytet w zależności od jego grupy priorytetu, a aplikacja wyświetla na stronie zadania pierwsze trzy grupy priorytetu zawarte w metadanych. Pozostała zawartość metadanych będzie wyświetlana na pomocniczej stronie szczegółów. Poniższa tabela pokazuje przykład pięciu grup priorytetu.
 
 <table>
 <colgroup>
@@ -141,12 +144,13 @@ Na podstawie priorytetu pól aplikacji magazynowej skonfigurowanego w tabeli pow
 -   Wiersz 2: Opis towaru
 -   Wiersz 3: Rozmiar
 
-Pozostałe metadane, na przykład Lokalizacja, nie będą wyświetlane na stronie zadania, ale będą wyświetlane na stronie szczegółów. Aby dowiedzieć się więcej i zobaczyć przykłady interfejsu użytkownika, należy się zapoznać z wpisem na blogu [Zapowiedź aplikacji Dynamics 365 for Operations — Magazynowanie](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
+Pozostałe metadane, na przykład Lokalizacja, nie będą wyświetlane na stronie zadania, ale będą wyświetlane na stronie szczegółów. Aby dowiedzieć się więcej i zobaczyć przykłady interfejsu użytkownika, należy się zapoznać z wpisem na blogu [Zapowiedź aplikacji Finance and Operations — Magazynowanie](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
-[Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Operations — Magazynowanie](install-configure-warehousing-app.md)
+[Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Finance and Operations — Magazynowanie](install-configure-warehousing-app.md)
 
 
 

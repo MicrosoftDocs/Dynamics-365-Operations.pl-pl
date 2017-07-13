@@ -1,15 +1,16 @@
 ---
 title: Wyszukiwanie akcji
-description: "W tym artykule opisano funkcję wyszukiwania akcji dostępną w programie Microsoft Dynamics 365 for Operations. Funkcja pomaga znajdować i wykonywać czynności na stronie."
+description: "W tym artykule opisano funkcję wyszukiwania akcji dostępną w programie Microsoft Dynamics 365 for Finance and Operations. Funkcja pomaga znajdować i wykonywać czynności na stronie."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62303
 ms.assetid: 62c70de0-fdde-4417-8e08-0583fb095a40
 ms.search.region: Global
@@ -17,29 +18,32 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ef5709889dcabd4c9ed760f57d210956f38c37e9
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cd024f2bc06fca9c21ea41fbed44efbc519cee94
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="action-search"></a>Wyszukiwanie akcji
+# Wyszukiwanie akcji
+<a id="action-search" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym artykule opisano funkcję wyszukiwania akcji dostępną w programie Microsoft Dynamics 365 for Operations. Funkcja pomaga znajdować i wykonywać czynności na stronie.
+W tym artykule opisano funkcję wyszukiwania akcji dostępną w programie Microsoft Dynamics 365 for Finance and Operations. Funkcja pomaga znajdować i wykonywać czynności na stronie.
 
-<a name="introduction"></a>Wprowadzenie
+Wprowadzenie
+<a id="introduction" class="xliff"></a>
 ------------
 
-Strony w programie Microsoft Dynamics 365 for Operations głównie wyświetlają polecenia w okienkach akcji, zarówno w samodzielnym okienku akcji, które wyświetla się u góry strony, jak i na paskach narzędzi, które pojawiają się w różnych częściach strony. W poprzednich wersjach funkcja klawiszy skrótu dawała szybki dostęp do dowolnego przycisku w okienku akcji po naciśnięciu klawisza Alt w kombinacji z właściwą literą. 
+Strony w programie Microsoft Dynamics 365 for Finance and Operations głównie wyświetlają polecenia w okienkach akcji, zarówno w samodzielnym okienku akcji, które wyświetla się u góry strony, jak i na paskach narzędzi, które pojawiają się w różnych częściach strony. W poprzednich wersjach funkcja klawiszy skrótu dawała szybki dostęp do dowolnego przycisku w okienku akcji po naciśnięciu klawisza Alt w kombinacji z właściwą literą. 
 
-[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) W aktualnej wersji programu Dynamics 365 for Operations klawisze skrótu nie są już dostępne i zostały zastąpione przez funkcję wyszukiwania akcji. Ta nowa funkcja umożliwia szybkie wyszukiwanie i korzystanie z przycisków w dowolnym widocznym okienku akcji.
+[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) W aktualnej wersji programu Finance and Operations klawisze skrótu nie są już dostępne i zostały zastąpione przez funkcję wyszukiwania akcji. Ta nowa funkcja umożliwia szybkie wyszukiwanie i korzystanie z przycisków w dowolnym widocznym okienku akcji.
 
-## <a name="using-action-search"></a>Korzystanie z funkcji wyszukiwania akcji
+## Korzystanie z funkcji wyszukiwania akcji
+<a id="using-action-search" class="xliff"></a>
 Aby skorzystać z funkcji wyszukiwania akcji, wykonaj następujące kroki.
 
 1.  W okienku akcji kliknij pole **wyszukiwanie akcji**. (Pole **wyszukiwanie akcji** zawiera ikonę lupy).
@@ -52,8 +56,9 @@ Po uruchomieniu przycisku wyróżnienie na ekranie wraca do poprzedniego miejsca
 
 Wyszukiwanie akcji można też uruchomić za pomocą kombinacji klawiszy Ctrl+/ lub Alt+Q. Naciśnij skrót klawiaturowy ponownie, aby wyróżnienie wróciło do ostatniej pozycji na stronie.
 
-## <a name="understanding-the-results-list"></a>Opis listy wyników
-Często w programie Dynamics 365 for Operations trzeba znać zarówno lokalizację, jak kontekst przycisku, aby w pełni rozumieć, do czego służy. Dlatego dla każdego elementu na liście wyników wyświetlane są dodatkowe informacje, które pomagają zorientować się, które przyciski są widoczne na liście. W szczególności wyświetlana jest „ścieżka” przycisku. Ścieżka może wyróżniać etykiety następujących elementów interfejsu użytkownika:
+## Opis listy wyników
+<a id="understanding-the-results-list" class="xliff"></a>
+Często w programie Finance and Operations trzeba znać zarówno lokalizację, jak kontekst przycisku, aby w pełni rozumieć, do czego służy. Dlatego dla każdego elementu na liście wyników wyświetlane są dodatkowe informacje, które pomagają zorientować się, które przyciski są widoczne na liście. W szczególności wyświetlana jest „ścieżka” przycisku. Ścieżka może wyróżniać etykiety następujących elementów interfejsu użytkownika:
 
 -   Karta Okienko akcji
 -   Grupa przycisków
@@ -69,8 +74,9 @@ W poprzednim przykładzie wyszukiwanie akcji dało wyniki ze standardowego okien
 
 [![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
-## <a name="action-search-vs-navigation-search"></a>Wyszukiwanie akcji a wyszukiwanie nawigacji
-Wyszukiwanie akcji służy do znajdowania i wykonywania akcji na stronie, Do znajdowania i elementów i poruszania się na stronach w programie Dynamics 365 for Operations służy oddzielny mechanizm wyszukiwania. Aby uzyskać więcej informacji na temat tej funkcji, zobacz artykuł [Nawigacja z wyszukiwaniem](navigation-search.md).
+## Wyszukiwanie akcji a wyszukiwanie nawigacji
+<a id="action-search-vs-navigation-search" class="xliff"></a>
+Wyszukiwanie akcji służy do znajdowania i wykonywania akcji na stronie, Do znajdowania i elementów i poruszania się na stronach w programie Finance and Operations służy oddzielny mechanizm wyszukiwania. Aby uzyskać więcej informacji na temat tej funkcji, zobacz artykuł [Nawigacja z wyszukiwaniem](navigation-search.md).
 
 
 

@@ -1,16 +1,16 @@
 ---
-title: "Strona główna aplikacji komórkowej Dynamics 365 for Operations"
-description: "W tym temacie opisano aplikację mobilną Microsoft Dynamics 365 for Operations oraz zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji."
+title: "Strona główna aplikacji mobilnej"
+description: "W tym temacie opisano aplikację mobilną Microsoft Dynamics 365 for Unified Operations oraz zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji."
 author: sericks007
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.reviewer: annbe
-ms.search.scope: Operations, Platform
+ms.reviewer: sericks
+ms.search.scope: Operations, UnifiedOperations, Platform
 ms.custom: 272853
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
@@ -18,50 +18,57 @@ ms.author: sericks
 ms.dyn365.ops.intro: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5962fa36b061382e7f0ad55c08c81ac2cebc047d
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 663a03dc37cc1631bd285a76ef564993a34ed057
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="dynamics-365-for-operations-mobile-app-home-page"></a>Strona główna aplikacji komórkowej Dynamics 365 for Operations
+# Strona główna aplikacji mobilnej
+<a id="mobile-app-home-page" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+W tym temacie opisano aplikację mobilną Microsoft Dynamics 365 for Unified Operations oraz zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji.
 
-W tym temacie opisano aplikację mobilną Microsoft Dynamics 365 for Operations oraz zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji.
+> [!NOTE]
+> Poprzednio aplikacja mobilnej nazywała się *Microsoft Dynamics 365 for Finance and Operations*.
 
-<a name="overview"></a>Przegląd
+Przegląd
+<a id="overview" class="xliff"></a>
 --------
 
-Aplikacja komórkowa Microsoft Dynamics 365 for Operations umożliwia organizacji udostępnianie procesów biznesowych na urządzeniach przenośnych. Gdy administrator systemów informatycznych włączy funkcję komórkowych obszarów roboczych w organizacji, użytkownicy mogą się logować do aplikacji i natychmiast zacząć wykonywać procesy biznesowe na swoich urządzeniach komórkowych. Aplikacja mobilna Dynamics 365 for Operations zawiera następujące funkcje, które mogą pomóc zwiększyć wydajność pracy:
+Aplikacja komórkowa umożliwia organizacji udostępnianie procesów biznesowych na urządzeniach przenośnych. Gdy administrator systemów informatycznych włączy komórkowe obszary robocze w organizacji, użytkownicy mogą się logować do aplikacji i natychmiast zacząć wykonywać procesy biznesowe na swoich urządzeniach komórkowych. Aplikacja mobilna zawiera następujące funkcje, które mogą pomóc zwiększyć wydajność pracy:
 
--   Użytkownicy mogą przeglądać, edytować i przetwarzać dane biznesowe, nawet jeśli mają przerywaną łączność z siecią albo ich urządzenia przenośne są całkowicie w trybie offline. Gdy urządzenie ponownie nawiąże połączenie sieciowe, operacje na danych wykonane w trybie offline są synchronizowane automatycznie z programem Dynamics 365 for Operations.
--   Administratorzy IT i programiści mogą tworzyć i publikować mobilne obszary robocze spersonalizowane do organizacji. Aplikacja wykorzystuje istniejące środowisko oprogramowania. W związku z tym nie jest konieczne ponowne implementowanie procedur sprawdzania poprawności, logiki biznesowej ani konfiguracji zabezpieczeń.
--   Administratorzy IT i deweloperzy mogą łatwo projektować komórkowe obszary robocze za pomocą projektanta obszarów roboczych typu „wskaż i kliknij”, który jest zawarty w kliencie internetowym usługi Dynamics 365 for Operations.
--   Administratorzy IT i deweloperzy mogą opcjonalnie optymalizować funkcje offline obszarów roboczych za pomocą struktury rozszerzania logiki biznesowej. Ponieważ dane są cały czas przetwarzane, gdy urządzenie jest w trybie offline, scenariusz użytkowania mobilnego pozostaje bogaty funkcjonalnie i płynny, nawet jeśli urządzenia nie mają stałej łączności z siecią.
+- Użytkownicy mogą przeglądać, edytować i przetwarzać dane biznesowe, nawet jeśli mają przerywaną łączność z siecią albo ich urządzenia przenośne są całkowicie w trybie offline. Gdy urządzenie ponownie nawiąże połączenie sieciowe, operacje na danych wykonane w trybie offline są synchronizowane automatycznie z programem Dynamics 365 for Finance and Operations Enterprise Edition lub Microsoft Dynamics 365 for Finance and Operations.
+- Administratorzy IT i programiści mogą tworzyć i publikować mobilne obszary robocze spersonalizowane do organizacji. Aplikacja wykorzystuje istniejące środowisko oprogramowania. W związku z tym nie jest konieczne ponowne implementowanie procedur sprawdzania poprawności, logiki biznesowej ani konfiguracji zabezpieczeń.
+- Administratorzy IT i deweloperzy mogą łatwo projektować komórkowe obszary robocze za pomocą projektanta obszarów roboczych typu „wskaż i kliknij”, który jest zawarty w kliencie internetowym.
+- Administratorzy IT i deweloperzy mogą opcjonalnie optymalizować funkcje offline obszarów roboczych za pomocą struktury rozszerzania logiki biznesowej. Ponieważ dane są cały czas przetwarzane, gdy urządzenie jest w trybie offline, scenariusz użytkowania mobilnego pozostaje bogaty funkcjonalnie i płynny, nawet jeśli urządzenia nie mają stałej łączności z siecią.
 
-## <a name="elements-of-the-mobile-app"></a>Elementy aplikacji mobilnej
-Nawigacja w aplikacji mobilnej jest podzielona na cztery proste koncepcje: pulpit nawigacyjny, obszary robocze, strony i akcje. 
+## Elementy aplikacji mobilnej
+<a id="elements-of-the-mobile-app" class="xliff"></a>
+Nawigacja w aplikacji mobilnej jest podzielona na cztery podstawowe koncepcje: pulpit nawigacyjny, obszary robocze, strony i akcje. 
 
 [![Koncepcje nawigacyjne w aplikacji mobilnej](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
--   Po uruchomieniu aplikacji przechodzisz do **pulpitu nawigacyjnego**.
--   Na pulpicie nawigacyjnym widać listę **obszarów roboczych**, które są opublikowane w środowisku Dynamics 365 for Operations.
--   W każdym obszarze roboczym widać listę **stron** dostępnych dla tego obszaru roboczego.
--   Na stronie można przeglądać dane zbierane z jednej lub więcej stron w programie Dynamics 365 for Operations.
--   Ze strony można przejść do innych stron zawierających pokrewne dane, takie jak szczegóły jednostek lub wiersze.
--   Na stronie widać także listę **akcji** dostępnych dla tej strony.
--   Akcje umożliwiają tworzenie nowych i edytowanie istniejących danych.
+1. Po uruchomieniu aplikacji przechodzisz do **pulpitu nawigacyjnego**.
+2. Na pulpicie nawigacyjnym widać listę **obszarów roboczych**, które zostały opublikowane.
+3. W każdym obszarze roboczym widać listę **stron** dostępnych dla tego obszaru roboczego.
+4. Po przejściu do strony można wykonać kilka czynności. Oto kilka przykładów:
 
-## <a name="implementation-process"></a>Projekt wdrażania
-Na poniższej ilustracji przedstawiono proces wdrażania aplikacji komórkowej Dynamics 365 for Operations w organizacji. 
+    - Wyświetlanie szczegółowych danych.
+    - Przechodzenie do innych stron zawierających pokrewne dane, takie jak szczegóły jednostek lub wiersze.
+    - Wyświetlanie listy **akcji** dostępnych dla tej strony. Akcje umożliwiają tworzenie nowych i edytowanie istniejących danych.
 
-![Proces implementacji aplikacji mobilnych](./media/mobile-implementation-process_4.png)
+## Projekt wdrażania
+<a id="implementation-process" class="xliff"></a>
+Na poniższej ilustracji przedstawiono proces wdrażania mobilnych obszarów roboczych dostarczanych przez Microsoft i niestandardowych mobilnych obszarów roboczych. 
 
-Tabela poniżej zawiera łącza do zasobów, które mogą pomóc w zaimplementowaniu aplikacji mobilnej Dynamics 365 for Operations w organizacji. Numery w pierwszej kolumnie odpowiadają ponumerowanym krokom na poprzedniej ilustracji.
+![Proces implementacji aplikacji mobilnych](./media/Mobile-implementation-process-5.png)
+
+Poniższa tabela zawiera łącza do zasobów, które mogą pomóc we wdrażaniu mobilnych obszarów roboczych dostarczanych przez Microsoft i niestandardowych mobilnych obszarów roboczych. Numery w pierwszej kolumnie odpowiadają ponumerowanym krokom na poprzedniej ilustracji.
 
 <table>
 <colgroup>
@@ -82,21 +89,23 @@ Tabela poniżej zawiera łącza do zasobów, które mogą pomóc w zaimplementow
 <tr class="odd">
 <td>1</td>
 <td>Administrator systemu</td>
-<td>Wdrożenie programu Dynamics 365 for Operations w organizacji.</td>
-<td>Jeśli w organizacji jeszcze nie wdrożono programu Dynamics 365 for Operations zobacz <a href="../deployment/deploy-demo-environment.md">Wdrażanie środowiska demonstracyjnego programu Microsoft Dynamics 365 for Operations</a>.</td>
+<td>Zaimplementowanie programu Finance and Operations w organizacji.</td>
+<td><ul><li>Jeśli w organizacji jeszcze nie wdrożono wersji oprogramowania Microsoft Dynamics 365, zobacz <a href="../deployment/deploy-demo-environment.md">Wdrażanie środowiska demonstracyjnego</a>.</li><li>Aby wyświetlić listę komórkowych obszarów roboczych, których można używać, zobacz <a href="mobile-workspaces-released.md">Ostatnio wydane mobilne obszary robocze</a>.</li></ul></td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>Administrator systemu</td>
-<td>Pobranie i zainstalowanie aktualizacji KB, które włączą obsługę mobilnych obszarów roboczych dostarczanych przez Microsoft.</td>
-<td>Zobacz sekcję &quot;Wymagania wstępne&quot; w temacie o komórkowych obszarach roboczych, który chce używać Twoja organizacja:
+<td><strong>Jeśli w organizacji jest już używany program Microsoft Dynamics 365 for Finance and Operations w wersji 1611:</strong> Pobranie i zainstalowanie aktualizacji KB, które włączą obsługę mobilnych obszarów roboczych dostarczanych przez Microsoft.</td>
+<td>Aby uzyskać więcej informacji, zobacz następujące tematy:
 <ul>
-<li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobilny obszar roboczy Kontrola kosztów</a></li>
-<li><a href="/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Mobilny obszar roboczy Dostępne zapasy</a></li>
-<li><a href="/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Mobilny obszar roboczy Zamówienia sprzedaży</a></li>
-<li><a href="/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobilny obszar roboczy współpracy z dostawcami</a></li>
-<li><a href="/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobilny obszar roboczy Wprowadzanie czasu projektu</a></li>
-<li><a href="/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace">Mobilny obszar roboczy Zarządzanie wydatkami</a></li>
+
+<li><a href="/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobilny obszar roboczy Kontrola kosztów</a></li>
+<li><a href="/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Mobilny obszar roboczy Dostępne zapasy</a></li>
+<li><a href="/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Mobilny obszar roboczy Zamówienia sprzedaży</a></li>
+<li><a href="/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych</a></li>
+<li><a href="/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace">Mobilny obszar roboczy Wprowadzanie czasu projektu</a></li>
+<li><a href="/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace">Mobilny obszar roboczy Zarządzanie wydatkami</a></li>
+
 </ul></td>
 </tr>
 <tr class="odd">
@@ -109,10 +118,10 @@ Tabela poniżej zawiera łącza do zasobów, które mogą pomóc w zaimplementow
 <tr class="even">
 <td>4</td>
 <td>Programista lub niezależny dostawca oprogramowania (ISV)</td>
-<td>Tworzenie niestandardowych mobilnych obszarów roboczych za pomocą platformy komórkowej Dynamics 365 for Operations.</td>
+<td>Tworzenie niestandardowych mobilnych obszarów roboczych za pomocą platformy komórkowej.</td>
 <td><ul>
-<li><a href="mobile-platform.md">Platforma komórkowa Dynamics 365 for Operations</a></li>
-<li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">Interfejsy API języka X++ dla obszarów roboczych programu Dynamics 365 for Operations</a></li>
+<li><a href="mobile-platform.md">Platforma komórkowa</a></li>
+<li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">Interfejsy API w języku X++ dla obszarów roboczych</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -124,8 +133,8 @@ Tabela poniżej zawiera łącza do zasobów, które mogą pomóc w zaimplementow
 <tr class="even">
 <td>6</td>
 <td>Administrator systemu</td>
-<td>Zastosowanie wdrażalnego pakietu zawierającego niestandardowe obszary robocze dostarczonego przez niezależnego dostawcę oprogramowania.</td>
-<td><a href="../deployment/apply-deployable-package-system.md">Stosowanie wdrażalnego pakietu w systemie Microsoft Dynamics 365 for Operations</a></td>
+<td>Zastosowanie wdrażalnego pakietu zawierającego niestandardowe obszary robocze dostarczonego przez niezależnego dostawcę oprogramowania (ISV).</td>
+<td><a href="../deployment/apply-deployable-package-system.md">Stosowanie wdrażalnego pakietu</a></td>
 </tr>
 <tr class="odd">
 <td>7</td>
@@ -136,24 +145,19 @@ Tabela poniżej zawiera łącza do zasobów, które mogą pomóc w zaimplementow
 <tr class="even">
 <td>8</td>
 <td>Użytkownik</td>
-<td>Pobranie i zainstalowanie aplikacji komórkowej Dynamics 365 for Operations.</td>
+<td>Pobieranie i instalowanie aplikacji mobilnej.</td>
 <td><ul>
-<li>Android: <a href="https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile">Dynamics 365 for Operations w sklepie Google Play</a></li>
-<li>iPhone: <a href="https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8">Dynamics 365 for Operations w sklepie z aplikacjami iTunes</a></li>
-</ul></td>
+<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">Telefony z systemem Android</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?linkid=850663">Telefony iPhone</a></li></ul>
+</td>
 </tr>
 <tr class="odd">
 <td>9</td>
 <td>Użytkownik</td>
-<td>Zalogowanie się do aplikacji komórkowej Dynamics 365 for Operations i jej używanie. Aplikacja zawiera mobilne obszary robocze, które zostały opublikowane.</td>
-<td>Aby wyświetlić listę mobilnych obszarów roboczych dostarczanych przez firmę Microsoft, zobacz <a href="mobile-workspaces-released.md">Mobilne obszary robocze ostatnio wydane dla aplikacji komórkowej Dynamics 365 for Operations</a>
+<td>Zalogowanie się do aplikacji mobilnej i jej używanie. Aplikacja zawiera mobilne obszary robocze, które zostały opublikowane przez administratora systemu.</td>
+<td>Aby wyświetlić listę komórkowych obszarów roboczych dostarczonych przez Microsoft, zobacz <a href="mobile-workspaces-released.md">Ostatnio wydane mobilne obszary robocze</a>.
 </td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
 

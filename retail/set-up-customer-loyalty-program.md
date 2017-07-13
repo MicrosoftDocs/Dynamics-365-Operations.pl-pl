@@ -1,39 +1,43 @@
 ---
 title: "Konfigurowanie programu lojalnościowego"
-description: "W tym artykule opisano sposób konfigurowania programu lojalnościowego. Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za zakup produktów w sklepach sieci sprzedaży. W programie Microsoft Dynamics 365 for Operations można skonfigurować proste lub złożone programy lojalnościowe, które mają zastosowanie w firmach w dowolnym kanale sprzedaży detalicznej."
+description: "W tym artykule opisano sposób konfigurowania programu lojalnościowego. Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za zakup produktów w sklepach sieci sprzedaży. W programie Microsoft Dynamics 365 for Retail można skonfigurować proste lub złożone programy lojalnościowe, które mają zastosowanie w firmach w dowolnym kanale sprzedaży detalicznej."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 04521c20ddeca1154b134b23c1db69f45c554ed3
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 710f8ae3a6a2b5072f37879aad066dc699ede8f0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="set-up-a-customer-loyalty-program"></a>Konfigurowanie programu lojalnościowego
+# Konfigurowanie programu lojalnościowego
+<a id="set-up-a-customer-loyalty-program" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-W tym artykule opisano sposób konfigurowania programu lojalnościowego. Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za zakup produktów w sklepach sieci sprzedaży. W programie Microsoft Dynamics 365 for Operations można skonfigurować proste lub złożone programy lojalnościowe, które mają zastosowanie w firmach w dowolnym kanale sprzedaży detalicznej.
+W tym artykule opisano sposób konfigurowania programu lojalnościowego. Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za zakup produktów w sklepach sieci sprzedaży. W programie Microsoft Dynamics 365 for Retail można skonfigurować proste lub złożone programy lojalnościowe, które mają zastosowanie w firmach w dowolnym kanale sprzedaży detalicznej.
 
-<a name="loyalty-features"></a>Funkcje lojalnościowe
+Funkcje lojalnościowe
+<a id="loyalty-features" class="xliff"></a>
 ----------------
 
 Program lojalnościowy można skonfigurować w taki sposób, żeby zawierał następujące opcje:
@@ -44,10 +48,12 @@ Program lojalnościowy można skonfigurować w taki sposób, żeby zawierał nas
 -   Wystawianie kart lojalnościowych z dowolnego kanału sprzedaży detalicznej, który bierze udział w programach lojalnościowych, i łączenie kart lojalnościowych z jednym lub kilkoma programami lojalnościowymi, w których odbiorcy mogą brać udział. Można też połączyć rekord odbiorcy z kartą lojalnościową, aby umożliwić odbiorcy gromadzenie puli punktów lojalnościowych z wielu kart oraz ich wykorzystywanie.
 -   Ręczne dopasowanie kart lojalnościowych lub przeniesienie salda nagród w programie lojalnościowym z jednej karty do drugiej w celu dostosowania lub nagrodzenia odbiorcy.
 
-## <a name="setting-up-loyalty-programs"></a>Konfigurowanie programów lojalnościowych
-Należy skonfigurować kilka składników, aby włączyć funkcję lojalnościową w module Dynamics 365 for Operations — Handel detaliczny. Na poniższym diagramie przedstawiono składniki lojalnościowe i ich relacje względem siebie. ![Przebieg procesu konfigurowania systemu lojalności](./media/loyaltyprocess.gif)
+## Konfigurowanie programów lojalnościowych
+<a id="setting-up-loyalty-programs" class="xliff"></a>
+Należy skonfigurować kilka składników, aby włączyć funkcję lojalnościową w module Dynamics 365 for Retail. Na poniższym diagramie przedstawiono składniki lojalnościowe i ich relacje względem siebie. ![Przebieg procesu konfigurowania systemu lojalności](./media/loyaltyprocess.gif)
 
-## <a name="loyalty-components"></a>Składniki lojalnościowe
+## Składniki lojalnościowe
+<a id="loyalty-components" class="xliff"></a>
 W poniższej tabeli opisano każdy składnik i miejsce, w którym jest on używany w konfiguracji lojalnościowej.
 
 | Składnik                                        | Opis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Miejsce użycia                                                                                                                                                                                                                                                                                                                                                                 |
@@ -63,12 +69,13 @@ W poniższej tabeli opisano każdy składnik i miejsce, w którym jest on używa
 | Konfigurowanie programów lojalnościowych                           | Schematy lojalnościowe określają reguły zdobywania i realizacji, które dotyczą wybranego programu lojalnościowego. Kanały sprzedaży detalicznej są przypisywane do schematu lojalnościowego, aby określić, który program lojalnościowy, reguły zdobywania i reguły realizacji stosuje się do sklepu sieci sprzedaży.                                                                                                                                                                                                                                                                                                                                  | Schemat lojalnościowy jest przypisany do programu lojalnościowego oraz do kanałów sprzedaży detalicznej. Do tego samego programu lojalnościowego można przypisać wiele schematów lojalnościowych; wiele schematów lojalnościowych można przypisać do wielu kanałów sprzedaży detalicznej.                                                                                                                                                                        |
 | Konfigurowanie kart lojalnościowych                             | Karta lojalnościowa upoważnia posiadacza karty do uczestnictwa w programach lojalnościowych, które są przypisane do karty. Można wystawiać karty lojalnościowe anonimowo lub mogą być przypisane do określonego odbiorcy. Możliwe jest przeglądanie transakcji w programie lojalnościowym dla określonej karty; można wyświetlić podsumowanie punktów lojalnościowych, które zostały zgromadzone na karcie. Można wystawiać karty lojalnościowe z dowolnego kanału sprzedaży detalicznej. Można również ręcznie zmienić kartę lojalnościową, aby uaktualnić odbiorcę do innej warstwy, dodać punkty lojalnościowe lub przenieść saldo punktów lojalnościowych z jednej karty na inną. | Programy lojalnościowe są przypisywane do karty lojalnościowej.                                                                                                                                                                                                                                                                                                                                  |
 
-## <a name="loyalty-processes"></a>Procesy lojalnościowe
+## Procesy lojalnościowe
+<a id="loyalty-processes" class="xliff"></a>
 W poniższej tabeli opisano procesy, które należy wykonać, aby wysłać konfiguracje lojalnościowe i dane do sklepów i pobrać transakcje lojalnościowe ze sklepów.
 
 | Nazwa procesu                         | Opis                                                                                                                                                                                                                                                                                                                                                                                                    | Nazwa strony                            |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| 1050 (informacje o lojalności)           | Uruchom ten proces w celu wysyłania danych lojalnościowych z programu Dynamics 365 for Operations do sklepów sieci sprzedaży. Dobrze jest zaplanować częste wykonywanie tego procesu, tak aby dane lojalnościowe były przesyłane do wszystkich sklepów.                                                                                                                                                                                               | Harmonogram dystrybucji                |
+| 1050 (informacje o lojalności)           | Uruchom ten proces w celu wysyłania danych lojalnościowych z programu Dynamics 365 for Retail do sklepów sieci sprzedaży. Dobrze jest zaplanować częste wykonywanie tego procesu, tak aby dane lojalnościowe były przesyłane do wszystkich sklepów.                                                                                                                                                                                               | Harmonogram dystrybucji                |
 | Przetwarzanie programów lojalnościowych              | Uruchom ten proces, aby skojarzyć schematy lojalnościowe z kanałami sprzedaży detalicznej, do których jest przypisany schemat lojalnościowy. Ten proces może zostać zaplanowany do uruchamiania jako zadanie wsadowe. Należy uruchamiać ten proces przy każdej zmianie danych konfiguracji lojalności, takich jak harmonogramy, programy lojalnościowe lub punkty lojalnościowe.                                                                                               | Przetwarzanie programów lojalnościowych              |
 | Przetwarzaj transakcje programu lojalnościowego w trybie offline | Uruchom ten proces, aby zaktualizować karty lojalnościowe tak, aby uwzględniały transakcje przetworzone w trybie offline. Ten proces ma zastosowanie tylko wtedy, gdy jest zaznaczone pole wyboru **Uzyskaj w trybie offline** na stronie **Wspólne parametry sieci sprzedaży**, dzięki czemu możliwie jest odbieranie nagród w trybie offline.                                                                                                                                               | Przetwarzaj transakcje programu lojalnościowego w trybie offline |
 | Aktualizuj warstwy kart lojalnościowych            | Uruchom ten proces, aby ocenić aktywność zdobywania punktów odbiorcy pod kątem reguł warstwy dla programu lojalnościowego oraz zaktualizować stan warstwy odbiorcy. Ten proces jest wymagany tylko, gdy zmienisz reguły warstwy w programach lojalnościowych i chcesz wstecznie zastosować zaktualizowane reguły do kart lojalnościowych, które zostały już wystawione. Ten proces może być uruchamiany jako zadanie wsadowe lub dla poszczególnych kart. | Aktualizuj warstwy kart lojalnościowych            |

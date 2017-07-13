@@ -1,39 +1,42 @@
 ---
 title: "Konfigurowanie opcji przetwarzania zamówień"
-description: "Ten temat zawiera informacje dotyczące sposobu przetwarzania zamówień dla biur obsługi przy użyciu modułu Microsoft Dynamics 365 for Operations — Handel detaliczny."
+description: "Ten temat zawiera informacje dotyczące sposobu przetwarzania zamówień dla biur obsługi przy użyciu modułu Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 78973
 ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 52b56274c8b72c67bc0a50f23114cebc510f1667
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: afdea84b7016fcc3214dc94f2d393a5f3d256370
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="set-up-order-processing-options"></a>Konfigurowanie opcji przetwarzania zamówień
+# Konfigurowanie opcji przetwarzania zamówień
+<a id="set-up-order-processing-options" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Ten temat zawiera informacje dotyczące sposobu przetwarzania zamówień dla biur obsługi przy użyciu modułu Microsoft Dynamics 365 for Operations — Handel detaliczny. 
+Ten temat zawiera informacje dotyczące sposobu przetwarzania zamówień dla biur obsługi przy użyciu modułu Microsoft Dynamics 365 for Retail. 
 
-Moduł Handel detaliczny i inny w programie Dynamics 365 for Operations obsługuje wiele kanałów sieci sprzedaży, takich jak sklepy internetowe, sklepy tradycyjne i biura obsługi. W biurach obsługi, pracownicy zbierają zamówienia odbiorców przez telefon i tworzą zamówienia sprzedaży. W tym temacie opisano sposób tworzenia biura obsługi i konfigurowania opcji biura obsługi. Każde biuro obsługi może mieć własnych użytkowników, metody płatności, grupy cenowe, wymiary finansowe oraz metody dostawy. Opcje te można konfigurować podczas tworzenia biura obsługi. **Ważne:** zanim będzie można używać przepływów pracy biura obsługi podczas tworzenia przez użytkownika zamówień sprzedaży w systemie Dynamics AX, użytkownik musi być przypisany do centrum obsługi jako jego użytkownik. Na stronie **Biuro obsługi** również można użyć w celu włączenia lub wyłączenia grup funkcji, które są unikatowe dla biur obsługi. Można włączyć następujące grupy funkcji:
+Moduł Handel detaliczny obsługuje wiele kanałów sieci sprzedaży, takich jak sklepy internetowe, sklepy tradycyjne i biura obsługi. W biurach obsługi, pracownicy zbierają zamówienia odbiorców przez telefon i tworzą zamówienia sprzedaży. W tym temacie opisano sposób tworzenia biura obsługi i konfigurowania opcji biura obsługi. Każde biuro obsługi może mieć własnych użytkowników, metody płatności, grupy cenowe, wymiary finansowe oraz metody dostawy. Opcje te można konfigurować podczas tworzenia biura obsługi. **Ważne:** zanim będzie można używać przepływów pracy biura obsługi podczas tworzenia zamówień sprzedaży przez użytkownika, użytkownik musi być przypisany do centrum obsługi jako jego użytkownik. Na stronie **Biuro obsługi** również można użyć w celu włączenia lub wyłączenia grup funkcji, które są unikatowe dla biur obsługi. Można włączyć następujące grupy funkcji:
 
 -   **Kończenie zamówienia** — Ta grupa zawiera funkcje, które odnoszą się do płatności i kończenia zamówienia na stronie **Zamówienie sprzedaży**.
 -   **Sprzedaż sterowana** — Ta grupa zawiera funkcje, które są powiązane z kodami źródłowymi, skryptami i żądaniami katalogu.

@@ -3,13 +3,13 @@ title: "Konfigurowanie procesu zatwierdzania w przepływie pracy"
 description: "Procedura zamieszczona poniżej umożliwia skonfigurowanie właściwości procesu zatwierdzania."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 195643
 ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 159fe64b7a37ffdcbcd6c122116c2e110300122b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c2765cf4ed8e0f5e00491bfe74835102bddff611
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurowanie procesu zatwierdzania w przepływie pracy
+# Konfigurowanie procesu zatwierdzania w przepływie pracy
+<a id="configure-an-approval-process-in-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,7 +41,8 @@ Aby wprowadzić nazwę procesu zatwierdzania, należy wykonać poniższe kroki.
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
 2.  W polu **Nazwa** wprowadź unikatową nazwę procesu zatwierdzania.
 
-## <a name="specify-when-the-system-automatically-acts-on-the-document"></a>Określanie, kiedy system automatycznie wykonuje operację na dokumencie
+## Określanie, kiedy system automatycznie wykonuje operację na dokumencie
+<a id="specify-when-the-system-automatically-acts-on-the-document" class="xliff"></a>
 System można skonfigurować do automatycznego wykonywania operacji na dokumencie, gdy są spełnione określone warunki. Na przykład system może zatwierdzać raporty o wydatkach, których suma kwot jest mniejsza niż 100 USD. Wykonaj następujące kroki, aby określić, kiedy system podejmuje akcję wobec dokumentu.
 1.  W lewym okienku kliknij opcję **Akcje automatyczne**.
 2.  Zaznacz pole wyboru **Włącz akcje automatyczne**.
@@ -55,7 +57,8 @@ System można skonfigurować do automatycznego wykonywania operacji na dokumenci
 
 7.  Z listy **Akcja automatycznego ukończenia** wybierz akcję, jaką ma podjąć system wobec dokumentu.
 
-## <a name="specify-when-notifications-are-sent"></a>Określanie, kiedy są wysyłane powiadomienia
+## Określanie, kiedy są wysyłane powiadomienia
+<a id="specify-when-notifications-are-sent" class="xliff"></a>
 Możliwe jest wysyłanie do odpowiednich osób powiadomień w przypadku zatwierdzenia, odrzucenia, delegowania lub eskalowania dokumentu albo żądania jego modyfikacji. Wykonaj następujące kroki, aby określić, kiedy i do kogo są wysyłane powiadomienia.
 1.  W lewym okienku kliknij opcję **Powiadomienia**.
 2.  Zaznacz pola wyboru obok zdarzeń, o których mają być wysyłane powiadomienia:
@@ -117,10 +120,10 @@ Możliwe jest wysyłanie do odpowiednich osób powiadomień w przypadku zatwierd
     </tr>
     <tr class="odd">
     <td><strong>Użytkownik</strong></td>
-    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Operations</td>
+    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Finance and Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Microsoft Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy:</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Microsoft Dynamics 365 for Finance and Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy:</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -128,13 +131,15 @@ Możliwe jest wysyłanie do odpowiednich osób powiadomień w przypadku zatwierd
 
 10. Powtórz kroki od 3 do 9 dla każdego zdarzenia wybranego w kroku 2.
 
-## <a name="specify-a-final-approver"></a> Określanie ostatecznej osoby zatwierdzającej
+##  Określanie ostatecznej osoby zatwierdzającej
+<a id="specify-a-final-approver" class="xliff"></a>
 Można wyznaczyć osobę ostatecznie zatwierdzającą dla scenariuszy, gdzie osobą zatwierdzającą jest użytkownik, który przesłał dokument do zatwierdzenia. Aby określić ostateczną osobę zatwierdzającą, wykonaj następujące kroki.
 1.  W lewym okienku kliknij przycisk **Ustawienia zaawansowane**.
 2.  Zaznacz pole wyboru **Użyj ostatecznej osoby zatwierdzającej**.
 3.  Wybierz z listy użytkownika, który ma być osobą ostatecznie zatwierdzającą.
 
-## <a name="set-a-time-limit"></a>Ustawianie limitu czasu
+## Ustawianie limitu czasu
+<a id="set-a-time-limit" class="xliff"></a>
 Jeśli proces zatwierdzania musi zostać ukończony w określonym czasie, wykonaj następujące kroki.
 | **Uwaga**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -151,7 +156,8 @@ Jeśli proces zatwierdzania musi zostać ukończony w określonym czasie, wykona
 
 4.  W przypadku przekroczenia tego limitu czasu system wykona operację na dokumencie. Na liście **Akcja** zaznacz akcję, jaką ma podjąć system.
 
-## <a name="specify-which-actions-are-available-to-the-user"></a>Określanie akcji dostępnych użytkownikowi
+## Określanie akcji dostępnych użytkownikowi
+<a id="specify-which-actions-are-available-to-the-user" class="xliff"></a>
 Gdy dokument zostanie przypisany do użytkownika, aby go zatwierdził, użytkownik musi zareagować na dokument. Wykonaj następujące kroki, aby określić, które akcje użytkownik może wykonywać na przesłanym dokumencie.
 1.  W lewym okienku kliknij przycisk **Ustawienia zaawansowane**.
 2.  Zaznacz pole wyboru **Zatwierdzanie**, jeśli użytkownik może zatwierdzić dokument.
@@ -161,7 +167,8 @@ Gdy dokument zostanie przypisany do użytkownika, aby go zatwierdził, użytkown
 
 **Uwaga**: Pole wyboru **Włącz wykonywanie akcji z listy zadań w module Enterprise Portal** zostało wycofane.
 
-## <a name="configure-the-approval-steps"></a> Konfigurowanie kroków zatwierdzania
+##  Konfigurowanie kroków zatwierdzania
+<a id="configure-the-approval-steps" class="xliff"></a>
 Proces zatwierdzania składa się z kroków zatwierdzania. Należy wykonać poniższą procedurę, aby dodać kroki procesu zatwierdzania i je skonfigurować.
 1.  W edytorze przepływu pracy kliknij dwukrotnie procesu zatwierdzania. Edytor przepływu pracy wyświetli etapy procesu zatwierdzania.
 2.  Aby dodać krok zatwierdzania, przeciągnij go z obszaru **Elementy przepływu pracy** na kanwę.

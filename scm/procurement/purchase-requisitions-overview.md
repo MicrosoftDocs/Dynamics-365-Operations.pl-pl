@@ -3,14 +3,14 @@ title: "Omówienie zapotrzebowania na zakup"
 description: "W tym artykule opisano przepływ pracy zapotrzebowania na zakup oraz różne stany, jakie może przyjmować zapotrzebowanie na zakup."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 38e7fba3fbd12de3a1cd9ac7b1c627834978ba30
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8c60d870d0ca178af84919e5ebaaa13769b46f8a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="purchase-requisition-overview"></a>Omówienie zapotrzebowania na zakup
+# Omówienie zapotrzebowania na zakup
+<a id="purchase-requisition-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,24 +38,28 @@ W zależności od konfiguracji organizacji, możesz tworzyć zapotrzebowania na 
 
 Po zatwierdzeniu zapotrzebowania na zakup, może ono służyć do generowania zamówienia zakupu. Zamówienia zakupu to dokumenty zewnętrzne, które dział zakupów przesyła do dostawców.
 
-## <a name="creating-purchase-requisitions"></a>Tworzenie zapotrzebowań zakupu
+## Tworzenie zapotrzebowań zakupu
+<a id="creating-purchase-requisitions" class="xliff"></a>
 Zapotrzebowanie na zakup można utworzyć na stronie **Moje zapotrzebowania na zakup**, a następnie wybierać potrzebne towary i usługi. Można wybrać towary z katalogu zaopatrzenia, który został utworzony w firmie, lub można wygenerować żądanie towarów, których nie ma w katalogu, wybierając kategorię zaopatrzenia i wprowadzając szczegóły produktu.  
 
-Zanim prześlesz zapotrzebowania na zakupu do przeglądu, przepływy pracy muszą zostać skonfigurowany w programie Microsoft Dynamics 365 for Operations. Przepływ pracy jest używany do przenoszenia zapotrzebowania na zakup przez proces przeglądu, z początkowego stanu **Wersja robocza**do stanu finalnego **Zatwierdzono**.
+Zanim prześlesz zapotrzebowania na zakupu do przeglądu, przepływy pracy muszą zostać skonfigurowany w programie Microsoft Dynamics 365 for Finance and Operations. Przepływ pracy jest używany do przenoszenia zapotrzebowania na zakup przez proces przeglądu, z początkowego stanu **Wersja robocza** do stanu finalnego **Zatwierdzono**.
 
-### <a name="purchase-requisition-statuses"></a>Stany zapotrzebowania zakupu
+### Stany zapotrzebowania zakupu
+<a id="purchase-requisition-statuses" class="xliff"></a>
 
 Podczas tworzenia nowego zamówienia na zakup jest do niego przypisywany stan. Stan jest przypisywany również do każdego wiersza dodawanego do zapotrzebowania na zakup. Podczas przesyłania zapotrzebowania na zakup do przepływu pracy celem przeglądu, stan zapotrzebowania na zakup i stan każdego wiersza są aktualizowane w miarę postępu procesu przepływu pracy.  
 
 Można skonfigurować proces przepływu pracy dla zapotrzebowania na zakup, tak aby kierować zapotrzebowanie przez proces przeglądu jako pojedynczy dokument. Alternatywnie wiersze zapotrzebowania na zakup mogą być kierowane indywidualnie do odpowiednich osób sprawdzających. Jeśli wiersze zapotrzebowania na zakup są sprawdzane pojedynczo, można zaktualizować stan każdego wiersza zapotrzebowania na zakup w miarę przepływu wiersza w trakcie procesu przeglądu. Gdy wszystkie wiersze przejdą proces przeglądu i nie pozostaną do wykonania żadne kroki w procesie przeglądu, stan całego zapotrzebowania na zakup zostanie zaktualizowany.
 
-### <a name="purchase-requisition-workflow"></a>Przepływ pracy w zapotrzebowaniu na zakup
+### Przepływ pracy w zapotrzebowaniu na zakup
+<a id="purchase-requisition-workflow" class="xliff"></a>
 
 Na poniższym diagramie przedstawiono stany, które są przypisane do zapotrzebowania na zakup i wiersz zapotrzebowania na zakup w miarę jego przekazywania w procesie przepływu pracy.  
 
 [![Stany nagłówka i wierszy zapotrzebowania na zakup](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
-### <a name="purchase-requisition-header-and-line-status-relationships"></a>Relacje stanów nagłówka i wierszy zapotrzebowania na zakup
+### Relacje stanów nagłówka i wierszy zapotrzebowania na zakup
+<a id="purchase-requisition-header-and-line-status-relationships" class="xliff"></a>
 
 Całościowy stan zapotrzebowania na zakup jest uzależniony od stanu jego wierszy. W związku z tym, do ukończenia przepływu pracy w ramach całego zapotrzebowania na zakup konieczne jest dokonanie przeglądu wszystkich jego wierszy. W poniższej tabeli przedstawiono stany, które są przypisane do nagłówka i wierszy zapotrzebowania na zakup w miarę jego przekazywania w procesie przepływu pracy.
 
@@ -133,19 +138,23 @@ Ponowne przesłanie odrzuconego wiersza zamówienia na zakup spowoduje ponowne r
 </tbody>
 </table>
 
-## <a name="distributing-costs-to-multiple-financial-accounts"></a>Dystrybucja kosztów do wielu kont finansowych
+## Dystrybucja kosztów do wielu kont finansowych
+<a id="distributing-costs-to-multiple-financial-accounts" class="xliff"></a>
 Można dystrybuować koszty produktu, który jest uwzględniany w zapotrzebowaniu zakupu, do wielu kont finansowych. Jeśli organizacja używa wymiarów, takich jak centra i działy kosztów, można dystrybuować koszty produktu do wymiarów dla kont finansowych.
 
-## <a name="requisition-purposes"></a>Cele zapotrzebowania
+## Cele zapotrzebowania
+<a id="requisition-purposes" class="xliff"></a>
 Cele zapotrzebowania uelastyczniają proces wypełniania zapotrzebowań. Podczas tworzenia zapotrzebowania można przypisać mu jeden z dwóch celów: zużycie lub uzupełnienie. W zależności od celu zapotrzebowania i sposobu ustawień organizacji popyt regulowany zapotrzebowaniem może zostać zaspokojony przez zamówienie zakupu, zlecenie przesunięcia, zlecenie produkcyjne lub kartę Kanban.  
 
 W zasadach zaopatrzenia można kontrolować cele zapotrzebowania, które są dostępne podczas tworzenia zapotrzebowania w danej organizacji.
 
-### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Zapotrzebowania, których celem jest zużycie
+### Zapotrzebowania, których celem jest zużycie
+<a id="requisitions-that-have-a-purpose-of-consumption" class="xliff"></a>
 
-Zapotrzebowanie, którego celem jest zużycie, reprezentuje popyt na towary lub usługi, które będą używane wewnętrznie przez organizację. Popyt, który jest tworzony przez ten rodzaj zapotrzebowania, zawsze jest zaspokajany przez zamówienie zakupu. Jeśli program Microsoft Dynamics 365 for Operations jest skonfigurowany do automatycznego generowania zamówień zakupu, zamówienia zakupu są tworzone po zatwierdzeniu zapotrzebowania na zakup.
+Zapotrzebowanie, którego celem jest zużycie, reprezentuje popyt na towary lub usługi, które będą używane wewnętrznie przez organizację. Popyt, który jest tworzony przez ten rodzaj zapotrzebowania, zawsze jest zaspokajany przez zamówienie zakupu. Jeśli program Microsoft Dynamics 365 for Finance and Operations jest skonfigurowany do automatycznego generowania zamówień zakupu, zamówienia zakupu są tworzone po zatwierdzeniu zapotrzebowania na zakup.
 
-### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Zapotrzebowania, których celem jest uzupełnienie
+### Zapotrzebowania, których celem jest uzupełnienie
+<a id="requisitions-that-have-a-purpose-of-replenishment" class="xliff"></a>
 
 Zapotrzebowanie, które ma cel uzupełnienia, reprezentuje popyt na uzupełnienie zapasów. Na przykład, można utworzyć zapotrzebowanie na uzupełnienie towarów, tak aby mogły być sprzedawane w określonej lokalizacji detalicznej w określonym czasie. Popyt kreowany przez ten rodzaj zapotrzebowania można zaspokoić, korzystając z zamówienia zakupu, zamówienia przeniesienia, zlecenia produkcyjnego lub Kanban.  
 
@@ -153,14 +162,16 @@ Jeśli celem zapotrzebowania jest uzupełnienie, popyt jest wyrażony jako iloś
 
 Aby można było używać zapotrzebowań na zakup, których celem jest uzupełnienie, konfiguracja systemu w module planowania głównego musi obejmować funkcję żądania zapotrzebowania. Metoda zaspokajania popytu generowanego przez ten typ zapotrzebowania jest automatycznie określana na podstawie zasad dostaw skonfigurowanych dla pozycji w organizacji oraz planowana w ramach planowania głównego.
 
-## <a name="purchase-requisitions-and-requests-for-quotation"></a>Zapotrzebowania na zakup i zapytania ofertowe
+## Zapotrzebowania na zakup i zapytania ofertowe
+<a id="purchase-requisitions-and-requests-for-quotation" class="xliff"></a>
 W niektórych przypadkach należy uruchomić procesu ZO, aby określić dostawcę i cenę produktów uwzględnionych w zapotrzebowaniu na zakup. ZO może zostać wygenerowane, gdy zapotrzebowanie na zakup jest w przeglądzie. Po zaakceptowaniu oferty, informacje o dostawcy, cenie itd. zostaną przeniesione do zapotrzebowania.  
 
 Można wstrzymać zapotrzebowanie na zakup przez zaznaczenie pola wyboru **Wstrzymane** na stronie **Szczegóły zapotrzebowania na zakup**. Można kontynuować przetwarzanie zapotrzebowania na zakup tylko wtedy, gdy zostanie usunięte zaznaczenie tego pola wyboru.  
 
 **Uwaga:** w eProcurement ZO dla zapotrzebowania na zakup mogą umożliwiać dostawcom dodawanie alternatywnych wierszy. W takim przypadku zapotrzebowanie na zakup będzie zawierało zatwierdzone zmiany.
 
-## <a name="demand-consolidation"></a>Konsolidacja popytu
+## Konsolidacja popytu
+<a id="demand-consolidation" class="xliff"></a>
 Konsolidowanie wierszy zapotrzebowania na zakup z wielu zapotrzebowań na zakup pozwala wzmocnić pozycję negocjacyjną podczas rozmów z dostawiamy, by uzyskać lepsze ceny, niższe koszty wysyłki i obsługi oraz zmniejszenie kosztów ogólnych.  
 
 Wiersze zapotrzebowania na zakup kwalifikują się do konsolidacji popytu tylko wtedy, gdy są spełnione następujące warunki:
@@ -174,11 +185,12 @@ Możliwości konsolidacji jest zbiorem wierszy zapotrzebowania zakupu, które s�
 
 Po dodaniu wierszy zapotrzebowania do możliwości konsolidacji i wprowadzeniu odpowiednich zmian, można utworzyć zamówienie zakupu dla skonsolidowanych wierszy zapotrzebowania na zakup.  
 
-**Uwaga:**Zmiany wprowadzone w wierszu zapotrzebowania na zakup na stronie **Konsolidacja zapotrzebowania na zakup** są odzwierciedlone w utworzonym zamówieniu zakupu. W zapotrzebowaniu na zakup wiersze pozostają bez zmian, aby jego historia została zachowana.  
+**Uwaga:** Zmiany wprowadzone w wierszu zapotrzebowania na zakup na stronie **Konsolidacja zapotrzebowania na zakup** są odzwierciedlone w utworzonym zamówieniu zakupu. W zapotrzebowaniu na zakup wiersze pozostają bez zmian, aby jego historia została zachowana.  
 
 Aby utworzyć zamówienie zakupu dla wierszy zapotrzebowania na zakup, które nie kwalifikują się do konsolidacji popytu lub które nie zostały wybrane do możliwości konsolidacji, należy je przetworzyć ręcznie.
 
-### <a name="consolidating-purchase-requisition-lines"></a>Konsolidowanie wierszy zapotrzebowania na zakup
+### Konsolidowanie wierszy zapotrzebowania na zakup
+<a id="consolidating-purchase-requisition-lines" class="xliff"></a>
 
 Proces konsolidacji popytu rozpoczyna się po zatwierdzeniu zapotrzebowania na zakup w przepływie pracy i — jeśli została skonfigurowana kontrola budżetu dla organizacji — po zarejestrowaniu rezerwacji budżetu i przyszłych zobowiązań niewiążących. Poniższy diagram przedstawia przepływ procesu konsolidacji popytu.  
 
@@ -193,7 +205,8 @@ Aby skonsolidować zatwierdzone wiersze zapotrzebowania na zakup, wykonaj nastę
 5.  Utwórz zamówienia zakupu dla skonsolidowanych wierszy zapotrzebowania lub wierszy zapotrzebowania na zakup w możliwości konsolidacji.
 
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Tworzenie zapotrzebowania na zużycie (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)

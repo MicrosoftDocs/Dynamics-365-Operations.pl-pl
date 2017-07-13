@@ -1,16 +1,16 @@
 ---
 title: "Integracja modułu Planowanie budżetu z innymi modułami"
-description: 
+description: "Plany budżetu mogą być generowane z kilku różnych zasobów: Podstawowe elementy przetwarzania okresowego są takie same dla wszystkich zasobów."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 64443
 ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490
 ms.search.region: Global
@@ -18,22 +18,24 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3828416b7da366aa53757ea1b5ed7d2e84446344
+ms.sourcegitcommit: 975497e8ed0c9738c225bad4db9165bf2ebc0192
+ms.openlocfilehash: 7f3dc8089153a6c67c1666aa8f859d63dcc9d3c9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/05/2017
 
 
 ---
 
-# <a name="budget-planning-integration-with-other-modules"></a>Integracja modułu Planowanie budżetu z innymi modułami
+# Integracja modułu Planowanie budżetu z innymi modułami
+<a id="budget-planning-integration-with-other-modules" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 
 
-<a name="periodic-processes-for-generating-budget-plans"></a>Przetwarzanie okresowe w celu generowania planów budżetu
+Przetwarzanie okresowe w celu generowania planów budżetu
+<a id="periodic-processes-for-generating-budget-plans" class="xliff"></a>
 ----------------------------------------------
 
 Plany budżetu mogą być generowane z poniższych zasobów:
@@ -49,7 +51,8 @@ Plany budżetu mogą być generowane z poniższych zasobów:
 
 Podstawowe elementy przetwarzania okresowego są takie same dla wszystkich procesów. Na kartach można zdefiniować źródła danych, atrybuty docelowe (plan budżetu) oraz opcje uruchamiania procesu w tle jako zadania wsadowego. W dalszej części tego artykułu opisano elementy, które mogą nie być widoczne w każdym procesie.
 
-### <a name="actions"></a>Akcje
+### Akcje
+<a id="actions" class="xliff"></a>
 
 Dla każdego procesu generowania dostępne są trzy operacje:
 
@@ -57,11 +60,13 @@ Dla każdego procesu generowania dostępne są trzy operacje:
 -   **Zamiana istniejącego scenariusza planu budżetu** powoduje usunięcie wszystkich danych w docelowym planie budżetu w wybranym scenariuszu planu budżetu i utworzenie nowych wierszy z wybranego źródła danych.
 -   **Aktualizowanie istniejącego scenariusza planu budżetu i dołączanie nowych danych** aktualizacje istniejące wiersze w planie docelowym, które pasują do wierszy źródła, i dodaje nowe wiersze dla nowych danych. Dopasowanie opiera się na koncie księgowym, danych, klasie budżetu i różnych innych polach. Na przykład podczas generowania planów budżetu z pozycji prognozy, numer pozycji jest ważnym polem. Wszystkie wiersze zawierające numer pozycji odpowiadający źródłowemu numerowi pozycji są zastępowane nowymi wierszami z tekstu źródłowego.
 
-### <a name="source"></a>Źródło
+### Źródło
+<a id="source" class="xliff"></a>
 
 Dla wszystkich procesów karta **Źródło** umożliwia filtrowanie danych za pomocą przycisku **Filtr**. Domyślnie konkretne pola są dodawane do filtra dla każdego procesu. Na przykład dla procesu **Generowanie planu budżetu na podstawie księgi głównej** dostępne są kategorie **Konto księgowe** i **Konto główne** i są widoczne na stronie generowania. Wszelkie pola dodane do filtra są również dodawane do strony razem z wszelkimi dodanymi kryteriami.
 
-### <a name="target"></a>Grupa docelowa
+### Grupa docelowa
+<a id="target" class="xliff"></a>
 
 Opcja **Historyczny** na karcie **Cel** umożliwia używanie dat z danych źródłowych jako dat wejścia w życie w planie budżetu. Zwykle data wejścia w życie musi się mieścić w cyklu budżetu dla planu. Jeśli opcja **Historyczne** jest ustawiona na **Tak**, używana jest data źródła (nawet jeśli jest to tylko rok), umożliwiając użycie danych przeszłości jako podstawy do porównania. Nie można modyfikować danych historycznych w planie budżetu i plan jest ustawiony przepływ pracy ze stanem zatwierdzonym. Można jednak zresetować stan, jeśli inne scenariusze w planie wymagają zmiany.
 
@@ -71,7 +76,8 @@ Wiele pól na karcie **Celu** staje się dostępne do edycji lub tylko do odczyt
 
 Pole **Klasa budżetu** pozwala wybrać wiersze planu budżetu jako transakcje wydatkowe lub transakcje przychodu. Zazwyczaj transakcje przychodu stanowią kredyt na koncie księgowym i dlatego są zapisywane jako liczby ujemne. Te transakcje pojawiają się również zwykle jako kwoty ujemne w planie budżetu. Jednak po dodaniu klasy budżetu jako pola w układzie planu można włączyć wyświetlanie przychodu jako wartości dodatnich.
 
-### <a name="generation-rules"></a>Reguły generowania
+### Reguły generowania
+<a id="generation-rules" class="xliff"></a>
 
 Trzy pola oferują dodatkowe funkcje : **Współczynnik**, **Minimum** i **Reguła** **zaokrąglania**. 
 
@@ -81,18 +87,22 @@ Pole **Minimum** pozwala określić kwotę progową dla tworzenia wiersza planu 
 
 Pole **Reguła zaokrąglania** pozwala ustawić dokładność tworzonych wierszy planu budżetu. Użytkownik może zaokrąglać kwoty do najbliższej wartości 1,00, 10,00, 100,00 itd. w wybranej walucie.
 
-## <a name="notes-for-specific-processes"></a>Uwagi do konkretnych procesów
-### <a name="generate-budget-plan-from-general-ledger"></a>Generowanie planu budżetu na podstawie księgi głównej
+## Uwagi do konkretnych procesów
+<a id="notes-for-specific-processes" class="xliff"></a>
+### Generowanie planu budżetu na podstawie księgi głównej
+<a id="generate-budget-plan-from-general-ledger" class="xliff"></a>
 
 Podczas tworzenia planu budżetu z danych księgi głównej, należy ustawić w polu **Agreguj sumę według** wartość **Rok obrachunkowy**, jeśli opcja **Historyczne** jest ustawiona na **Nie**. Okresy i daty w źródle mogą być niezgodne z okresami w datach docelowych. Ponieważ w ramach procesu nie ma żadnego niezawodnego mechanizmu mapowania tych wartości, należy ograniczyć proces do pierwszego roku. 
 
 W lokalizacji docelowej pole **Klasa budżetu** ma wartość **Wydatki** lub **Przychód**. Takie ustawienie jest używane w celu wybrania atrybutu **Typ budżetu** dla wierszy, które są tworzone, gdy konto główne w wierszu nie ma typu **Przychód** lub **Wydatki**.
 
-### <a name="generate-budget-plan-from-fixed-assets"></a>Generowanie planu budżetu na podstawie środków trwałych
+### Generowanie planu budżetu na podstawie środków trwałych
+<a id="generate-budget-plan-from-fixed-assets" class="xliff"></a>
 
 Proces **Generowanie planu budżetu na podstawie środków trwałych** nie oferuje opcji agregowania według dnia lub okresu. Nie można też ustawić planu jako historycznego. Ten proces okresowy służy do uwzględnienia przewidywanych transakcji na środkach trwałych w planowaniu budżetu.
 
-### <a name="generate-budget-plan-from-forecast-positions"></a>Generowanie planu budżetu na podstawie pozycji prognozy
+### Generowanie planu budżetu na podstawie pozycji prognozy
+<a id="generate-budget-plan-from-forecast-positions" class="xliff"></a>
 
 Proces **Generowanie planu budżetu na podstawie pozycji prognozy** przypisuje pozycję z prognozy źródłowej do wiersza planu budżetu. Można wyświetlić pozycję, dodając pozycję prognozy jako wiersz w układzie planu budżetu lub za pomocą zapytania **Wiersze planu budżetu**. Jeśli nie chcesz, aby stanowisko podlegającego prognozie było przypisane do wierszy planu budżetu, ustaw opcję **Uwzględnienie pozycji w wierszu planu budżetu** na **Nie**.
 
@@ -102,7 +112,8 @@ W polu **Scenariusz planu budżetu w przeliczeniu na pełne etaty** można wybra
 
 Proces planowania budżetu i scenariusz planu budżetu, wybrane w źródle, ustawiają scenariusz docelowy procesu i scenariusza planowania budżetu. Ponieważ te atrybuty są przypisane pozycji prognozy, muszą być dopasowane do planu budżetu. Dlatego te atrybuty nie mogą być zmodyfikowane w obiekcie docelowym.
 
-### <a name="generate-budget-plan-from-project-forecasts"></a>Generuj plan budżetu na podstawie prognoz projektów
+### Generuj plan budżetu na podstawie prognoz projektów
+<a id="generate-budget-plan-from-project-forecasts" class="xliff"></a>
 
 Proces **Generuj plan budżetu na podstawie prognoz projektów**, podobnie jak proces **Generowanie planu budżetu na podstawie pozycji prognozy** pozwala uwzględnić ilości projektu (godziny, wydatki i towary) w scenariuszu ilościowym. Oba procesy mają też podobne filtry dla kolumn w układzie planu budżetu. 
 
@@ -118,24 +129,30 @@ Tylko jeden model prognozy może służyć do generowania scenariusza planu bud�
 
 Proces **Generuj plan budżetu na podstawie prognoz projektów** również przypisuje projekt źródłowy do wiersza plan budżetu.
 
-### <a name="generate-budget-plan-from-supply-forecast"></a>Generuj plan budżetu na podstawie prognozy dostaw
+### Generuj plan budżetu na podstawie prognozy dostaw
+<a id="generate-budget-plan-from-supply-forecast" class="xliff"></a>
 
 Opcje filtra źródłowego w procesie **Generuj plan budżetu na podstawie prognozy dostaw** zostały stworzone na podstawie opcji funkcji **Przeniesienie budżetu zakupów do księgi** ze względu na podobieństwa między procesem i funkcją.
 
-### <a name="generate-budget-plan-from-demand-forecast"></a>Generuj plan budżetu na podstawie prognozy popytu
+### Generuj plan budżetu na podstawie prognozy popytu
+<a id="generate-budget-plan-from-demand-forecast" class="xliff"></a>
 
 Dla procesu **Generuj plan budżetu na podstawie prognoz popytu** można ustawić opcję **Zamówienie sprzedaży** na **Tak**, aby wygenerować wiersze przychodu w planie budżetu, ustawić opcję **Konsumpcja** na **Tak**, aby utworzyć wiersze wydatków lub ustawić obie opcje na **Tak**.
 
-### <a name="generate-budget-plan-from-budget-register-entries"></a>Generowanie planu budżetu na podstawie wpisów do rejestru budżetu
+### Generowanie planu budżetu na podstawie wpisów do rejestru budżetu
+<a id="generate-budget-plan-from-budget-register-entries" class="xliff"></a>
 
 Dla procesu **Generowanie planu budżetu z wpisów do rejestru budżetu** źródło musi określać jeden model podrzędny, jeden kod budżetu i jeden numer wpisu. Innymi słowy jednocześnie można tworzyć wiersze planu budżetu tylko dla jednego wpisu rejestru budżetu. Można użyć dodatkowych wpisów w tym samym planie budżetu, uruchamiając proces raz la każdego wpisu źródła.
 
-### <a name="generate-budget-plan-from-budget-plan"></a>Generowanie planu budżetu na podstawie planu budżetu
+### Generowanie planu budżetu na podstawie planu budżetu
+<a id="generate-budget-plan-from-budget-plan" class="xliff"></a>
 
 Dla procesu **Generowanie planu budżetu na podstawie planu budżetu** dodatkowy zestaw opcji na karcie **Cel** pozwala przypisać nowe wymiary finansowe. Po wybraniu wymiaru finansowego ta wartość będzie używana dla wszystkich wierszy planu budżetu. W związku z tym można użyć jednego planu budżetu jako podstawy dla innego planu budżetu, ale można też przypisać np. inny dział lub MPK do nowego planu budżetu.
 
-## <a name="looking-back-from-the-budget-plan"></a>Wyszukiwanie wstecz z planu budżetu
-### <a name="budget-plans-by-dimension-set-inquiry"></a>Plany budżetu na podstawie zapytania o zestaw wymiarów
+## Wyszukiwanie wstecz z planu budżetu
+<a id="looking-back-from-the-budget-plan" class="xliff"></a>
+### Plany budżetu na podstawie zapytania o zestaw wymiarów
+<a id="budget-plans-by-dimension-set-inquiry" class="xliff"></a>
 
 Zapytanie **Plany budżetu według zestawu wymiarów** obejmują kilka opcji, które pozwalają wysyłać zapytania umożliwiające identyfikację źródła danych planu budżetu. 
 

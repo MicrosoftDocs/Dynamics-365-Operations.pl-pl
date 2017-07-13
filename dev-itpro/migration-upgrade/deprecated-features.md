@@ -1,9 +1,9 @@
 ---
 title: "Przestarzałe funkcje"
-description: "W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia z programu Dynamics 365 for Operations. Wymieniono również funkcje, które zostały wycofane w wydaniach systemu Dynamics AX 7.0."
+description: "W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia."
 author: sericks007
 manager: AnnBe
-ms.date: 04/18/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,25 +17,64 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 46a6f054f1cc5162e19d962964eb6eeb780087a6
+ms.sourcegitcommit: 3267bd1cbd738b5ced9996fc3b28eee211627591
+ms.openlocfilehash: 8feffb27b5d08a9c90e97ac0d7e00abf0448d0df
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
 
-# <a name="deprecated-features"></a>Przestarzałe funkcje
+# Przestarzałe funkcje
+<a id="deprecated-features" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia.
 
-W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia z programu Dynamics 365 for Operations. Wymieniono również funkcje, które zostały wycofane w wydaniach systemu Dynamics AX 7.0.
+## Funkcje, które wycofano w programie Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r.
+<a id="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a>
 
-<a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Funkcje, które wycofano w programie Dynamics 365 for Operations 1611 po aktualizacji platformy 3
+### Portal urządzeń przenośnych używanych w magazynie
+<a id="warehouse-mobile-devices-portal" class="xliff"></a>
+
+Portal urządzeń przenośnych używanych w magazynie (WMDP) był autonomicznym składnikiem przeznaczonym do lokalnego samodzielnego instalowania. Ten składnik nie jest już obsługiwany w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Funkcjonalność portalu WMDP została zastąpiona macierzystą aplikacją o ulepszonej funkcjonalności. 
+
+|                                  |                                                 |
+|----------------------------------|-------------------------------------------------|
+| **Przyczyna wycofania**       | Pokrywające się funkcje.                        |
+| **Zamieniona przez inną funkcję?** | Tak. Ta funkcja została zastąpiona przez moduł Finance and Operations — Magazynowanie. Aby uzyskać więcej informacji na temat konfiguracji i wymagań wstępnych, zobacz [Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Finance and Operations — Magazynowanie](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Moduły, których dotyczą zmiany**             | Zarządzanie magazynem, Zarządzanie transportem |
+
+### Reguła zaawansowanego uzgadniania konta bankowego w ręcznym uzgadnianiu
+<a id="advanced-bank-reconciliation-matching-rule-for-manual-matching" class="xliff"></a>
+
+Reguła uzgadniania używana do wybierania i zaznaczania dokumentu bankowego podczas ręcznego uzgadniania dokumentów w arkuszu uzgadniania.
+
+|                                  |                                                                                        |
+|----------------------------------|----------------------------------------------------------------------------------------|
+| **Przyczyna wycofania**       | Ograniczone użycie.                                                                         |
+| **Zamieniona przez inną funkcję?** | Nr Do wyszukiwania dokumentów na potrzeby uzgadniania należy używać funkcji filtrowania kolumn. |
+| **Moduły, których dotyczą zmiany**             | Zarządzanie gotówką i bankami                                                               |
+
+### Aplikacja na tablety z systemem Windows 8
+<a id="windows-8-tablet-app" class="xliff"></a>
+
+Aplikacja na tablety z systemem Windows 8 zawierała funkcje wprowadzania i zatwierdzania wydatków.
+
+|                                  |                                                                                          |
+|----------------------------------|------------------------------------------------------------------------------------------|
+| **Przyczyna wycofania**       | Program Finance and Operations jest zgodny z tabletami. Aplikacja na tablety przestała być potrzebna. |
+| **Zamieniona przez inną funkcję?** | Nr                                                                                      |
+| **Moduły, których dotyczą zmiany**             | Zarządzanie wydatkami                                                                       |
+
+
+Funkcje, które wycofano w programie Dynamics 365 for Operations 1611 po aktualizacji platformy 3
+<a id="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3" class="xliff"></a>
 ---------------------------------------------------------------------------------------------
 
-### <a name="aeb-payment-formats-for-spain"></a>Formaty płatności AEB dla Hiszpanii
+### Formaty płatności AEB dla Hiszpanii
+<a id="aeb-payment-formats-for-spain" class="xliff"></a>
 
 Formaty płatności Consejo Superior Bancario służą do wysyłania plików przekazów do banku dla płatności odbiorcy i dostawcy. Zawartość tych formatów jest określana przez Asociación Española de Banca. Obejmuje ona Cuaderno 19, 32, 58, 34.
 
@@ -45,7 +84,8 @@ Formaty płatności Consejo Superior Bancario służą do wysyłania plików prz
 | Zamieniona przez inną funkcję? | Tak, przez formaty płatności poleceniem przelewu i poleceniem zapłaty ISO20022 dla Hiszpanii |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami, Rozrachunki z odbiorcami                                    |
 
-### <a name="bank-payments-transfer-for-lithuania"></a>Przelewy płatnościami bankowymi dla Litwy
+### Przelewy płatnościami bankowymi dla Litwy
+<a id="bank-payments-transfer-for-lithuania" class="xliff"></a>
 
 Przelewy płatnościami bankowymi na Litwie są generowane i drukowane przy użyciu formatu eksportu przelewów (LT). Na litewskim rynku w 2005 r. zaczęto używać ujednoliconego systemu bankowości elektronicznej LITAS.
 
@@ -55,7 +95,8 @@ Przelewy płatnościami bankowymi na Litwie są generowane i drukowane przy uży
 | Zamieniona przez inną funkcję? | Tak, przez format płatności poleceniem przelewu ISO20022 dla Litwy |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami                                           |
 
-### <a name="bbs-direkte-remittering-payment-formats-for-norway"></a>Formaty płatności BBS Direkte Remittering dla Norwegii
+### Formaty płatności BBS Direkte Remittering dla Norwegii
+<a id="bbs-direkte-remittering-payment-formats-for-norway" class="xliff"></a>
 
 Formaty płatności BBS Direkte Remittering zawierają funkcje eksportu inkasa płatności od odbiorcy (polecenie zapłaty) i importu komunikatu zwrotnego.
 
@@ -65,7 +106,8 @@ Formaty płatności BBS Direkte Remittering zawierają funkcje eksportu inkasa p
 | Zamieniona przez inną funkcję? | Format płatności od odbiorcy AvtaleGiro dla Norwegii może służyć do generowania komunikatów polecenia zapłaty. Import komunikatów zwrotnych zostanie zaimplementowany w przyszłych wersjach. |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami, Rozrachunki z odbiorcami                                                                                                                          |
 
-### <a name="chart-of-accounts-tool-for-spain"></a>Narzędzie planu kont dla Hiszpanii
+### Narzędzie planu kont dla Hiszpanii
+<a id="chart-of-accounts-tool-for-spain" class="xliff"></a>
 
 To narzędzie jest używane, gdy plan kont w Hiszpanii wymaga dużych zmian. Użytkownicy mogą zaimportować nowy plan kont w formacie programu Microsoft Excel lub tekstowym, a także zaimportować sprawozdania finansowe.
 
@@ -75,7 +117,8 @@ To narzędzie jest używane, gdy plan kont w Hiszpanii wymaga dużych zmian. Uż
 | Zamieniona przez inną funkcję? | Nr             |
 | Moduły, których dotyczą zmiany             | Księga główna |
 
-### <a name="dom80-payment-format-for-belgium"></a>Format płatności Dom80 dla Belgii
+### Format płatności Dom80 dla Belgii
+<a id="dom80-payment-format-for-belgium" class="xliff"></a>
 
 Starszy belgijski format płatności dla inkasa płatności (polecenie zapłaty).
 
@@ -85,7 +128,8 @@ Starszy belgijski format płatności dla inkasa płatności (polecenie zapłaty)
 | Zamieniona przez inną funkcję? | Tak, przez format płatności poleceniem zapłaty ISO 20022 dla Belgii |
 | Moduły, których dotyczą zmiany             | Rozrachunki z odbiorcami                                    |
 
-### <a name="dtaezag-payment-formats-for-switzerland"></a>Formaty płatności DTA/EZAG dla Szwajcarii
+### Formaty płatności DTA/EZAG dla Szwajcarii
+<a id="dtaezag-payment-formats-for-switzerland" class="xliff"></a>
 
 Formaty DTA/EZAG są zintegrowane w systemie ESR, ponieważ mogą być nośnikami numeru odwołania. Numery odwołania nie są obowiązkowe i dlatego te formaty mogą służyć do przetwarzania wszelkich płatności dla dostawców. Te formaty są używane przez firmy, które mają konta bankowe w lokalizacji innej niż „Postfinance”.
 
@@ -95,7 +139,8 @@ Formaty DTA/EZAG są zintegrowane w systemie ESR, ponieważ mogą być nośnikam
 | Zamieniona przez inną funkcję? | Tak, przez format płatności poleceniem przelewu ISO20022 dla Szwajcarii |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami                                             |
 
-### <a name="edifact-dirdeb-payment-format-for-austria"></a>Format płatności EDIFACT-DIRDEB dla Austrii
+### Format płatności EDIFACT-DIRDEB dla Austrii
+<a id="edifact-dirdeb-payment-format-for-austria" class="xliff"></a>
 
 Format płatności EDIFACT-DIRDEB dla inkasa płatności (polecenie zapłaty).
 
@@ -105,7 +150,8 @@ Format płatności EDIFACT-DIRDEB dla inkasa płatności (polecenie zapłaty).
 | Zamieniona przez inną funkcję? | Tak, przez format płatności poleceniem zapłaty ISO 20022 dla Austrii |
 | Moduły, których dotyczą zmiany             | Rozrachunki z odbiorcami                                    |
 
-### <a name="edivat-for-belgium"></a>EDIVAT dla Belgii
+### EDIVAT dla Belgii
+<a id="edivat-for-belgium" class="xliff"></a>
 
 EDIVAT to starszy belgijski standard wysyłania deklaracji elektronicznych za pośrednictwem bezpiecznej poczty. System Microsoft Dynamics AX 2012 zachowuje rozwiązanie tylko do odczytu, aby umożliwić dostęp do danych historycznych.
 
@@ -115,7 +161,8 @@ EDIVAT to starszy belgijski standard wysyłania deklaracji elektronicznych za po
 | Zamieniona przez inną funkcję? | Nr                                   |
 | Moduły, których dotyczą zmiany             | Księga główna                       |
 
-### <a name="egiro-edifact-cremul-payment-import-format-for-norway"></a>Format importu płatności eGiro EDIFACT CREMUL dla Norwegii
+### Format importu płatności eGiro EDIFACT CREMUL dla Norwegii
+<a id="egiro-edifact-cremul-payment-import-format-for-norway" class="xliff"></a>
 
 eGiro opiera się na międzynarodowym standardzie ONZ EDIFACT CREMUL (Multiple Credit Advice Message), który jest używany do automatycznego księgowania płatności od odbiorców. W systemie Microsoft Dynamics AX funkcjonalność eGiro jest zaimplementowana jako format importu płatności od odbiorców.
 
@@ -125,7 +172,8 @@ eGiro opiera się na międzynarodowym standardzie ONZ EDIFACT CREMUL (Multiple C
 | Zamieniona przez inną funkcję? | Nr Ten format zostanie zastąpiony formatami importu wyciągów ISO 20022 w przyszłych wersjach. |
 | Moduły, których dotyczą zmiany             | Rozrachunki z odbiorcami                                                                       |
 
-### <a name="external-inventory-for-poland"></a>Zapasy zewnętrzne dla Polski
+### Zapasy zewnętrzne dla Polski
+<a id="external-inventory-for-poland" class="xliff"></a>
 
 Dowód przyjęcia towarów, które otrzymano od dostawcy do sprzedaży bez zakupu. Towary, które są obsługiwane w zewnętrznych zapasach, nie mają wpływu na zapasy standardowe i mogą być sprzedawane, a następnie automatycznie kupowane. Ten proces tworzy faktyczne przesunięcia magazynowe.
 
@@ -135,7 +183,8 @@ Dowód przyjęcia towarów, które otrzymano od dostawcy do sprzedaży bez zakup
 | Zamieniona przez inną funkcję? | Tak, przez podstawową funkcjonalność konsygnacji przychodzącej |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami, Zarządzanie zapasami          |
 
-### <a name="financial-reports-generator-for-eastern-europe"></a>Generator raportów finansowych dla Europy Wschodniej
+### Generator raportów finansowych dla Europy Wschodniej
+<a id="financial-reports-generator-for-eastern-europe" class="xliff"></a>
 
 Narzędzie służące do konfigurowania zbierania danych na potrzeby raportów księgowych i podatkowych oraz eksportowania danych do szablonów raportów XLS i DOC.
 
@@ -145,7 +194,8 @@ Narzędzie służące do konfigurowania zbierania danych na potrzeby raportów k
 | Zamieniona przez inną funkcję? | Nr Narzędzie zostanie zastąpione konfiguracjami raportowania elektronicznego w przyszłych wersjach. |
 | Moduły, których dotyczą zmiany             | Księga główna                                                                           |
 
-### <a name="import-of-customer-payment-transactions-for-finland"></a>Import transakcji płatności od odbiorców dla Finlandii
+### Import transakcji płatności od odbiorców dla Finlandii
+<a id="import-of-customer-payment-transactions-for-finland" class="xliff"></a>
 
 Można wybrać formatu importu dla płatności fińskich, który importuje transakcje płatności od odbiorców z zewnętrznego pliku dostarczonego przez bank.
 
@@ -155,7 +205,8 @@ Można wybrać formatu importu dla płatności fińskich, który importuje trans
 | Zamieniona przez inną funkcję? | Nr Ten format zostanie zastąpiony formatami importu wyciągów ISO 20022 w przyszłych wersjach. |
 | Moduły, których dotyczą zmiany             | Rozrachunki z odbiorcami                                                                       |
 
-### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a>Import transakcji płatności do arkusza księgi głównej dla Finlandii
+### Import transakcji płatności do arkusza księgi głównej dla Finlandii
+<a id="import-of-payment-transactions-into-a-general-ledger-journal-for-finland" class="xliff"></a>
 
 Format specyficzny dla Finlandii służy do importowania transakcji księgowych do księgi głównej.
 
@@ -165,7 +216,8 @@ Format specyficzny dla Finlandii służy do importowania transakcji księgowych 
 | Zamieniona przez inną funkcję? | Nr Ten format zostanie zastąpiony formatami importu wyciągów ISO 20022 w przyszłych wersjach. |
 | Moduły, których dotyczą zmiany             | Rozrachunki z odbiorcami                                                                       |
 
-### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a>Integracja z systemem Isabel zsynchronizowana (CIS) dla Belgii
+### Integracja z systemem Isabel zsynchronizowana (CIS) dla Belgii
+<a id="integration-with-isabel-synchronized-cis-for-belgium" class="xliff"></a>
 
 Isabel jest systemem szkieletowym bankowości elektronicznej w Europie i de facto normą w Belgii.
 
@@ -175,7 +227,8 @@ Isabel jest systemem szkieletowym bankowości elektronicznej w Europie i de fact
 | Zamieniona przez inną funkcję? | Nr Nieużywane formaty płatności zostały zastąpione formatem płatności poleceniem przelewu ISO20022 dla Belgii. |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami                                                                                                     |
 
-### <a name="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain"></a>Zmiany w planie kont i regułach księgowania dla Hiszpanii
+### Zmiany w planie kont i regułach księgowania dla Hiszpanii
+<a id="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain" class="xliff"></a>
 
 Ta funkcja jest stosowana dla zmian w planie kont i regułach księgowania w Hiszpanii. Mapuje konta, ułatwiając przekształcanie starych planów kont na nowe plany kont oraz porównuje poprzedni rok obrachunkowy z nowym rokiem obrachunkowym, nawet jeśli zostały one zaksięgowane pod różnymi numerami kont.
 
@@ -185,7 +238,8 @@ Ta funkcja jest stosowana dla zmian w planie kont i regułach księgowania w His
 | Zamieniona przez inną funkcję? | Nr             |
 | Moduły, których dotyczą zmiany             | Księga główna |
 
-### <a name="pagamento-fornittori-vendor-payment-format"></a>Format płatności od dostawców Pagamento Fornittori
+### Format płatności od dostawców Pagamento Fornittori
+<a id="pagamento-fornittori-vendor-payment-format" class="xliff"></a>
 
 Starszy włoski format płatności dla poleceń przelewu.
 
@@ -195,7 +249,8 @@ Starszy włoski format płatności dla poleceń przelewu.
 | Zamieniona przez inną funkcję? | Tak, przez format płatności poleceniem przelewu ISO20022 dla Włoch |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami                                       |
 
-### <a name="payment-export-formats-for-estonia"></a>Formaty eksportu płatności dla Estonii
+### Formaty eksportu płatności dla Estonii
+<a id="payment-export-formats-for-estonia" class="xliff"></a>
 
 Formaty Telehansa i Teleservice są używane do eksportu płatności bankowych.
 
@@ -205,7 +260,8 @@ Formaty Telehansa i Teleservice są używane do eksportu płatności bankowych.
 | Zamieniona przez inną funkcję? | Tak, przez format płatności poleceniem przelewu ISO20022 dla Estonii |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami                                         |
 
-### <a name="payment-file-archive-for-norway"></a>Archiwum plików płatności dla Norwegii
+### Archiwum plików płatności dla Norwegii
+<a id="payment-file-archive-for-norway" class="xliff"></a>
 
 Podczas generowania plików płatności są one automatycznie umieszczane w archiwum. Dotyczy to nawet plików, które zostały wcześniej zapisane lub odczytane.
 
@@ -215,7 +271,8 @@ Podczas generowania plików płatności są one automatycznie umieszczane w arch
 | Zamieniona przez inną funkcję? | Tak, przez zarchiwizowane zadania raportowania elektronicznego                            |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami, Rozrachunki z odbiorcami, Administrowanie organizacją |
 
-### <a name="payment-import-formats-for-estonia"></a>Formaty importu płatności dla Estonii
+### Formaty importu płatności dla Estonii
+<a id="payment-import-formats-for-estonia" class="xliff"></a>
 
 Formaty Telehansa i TeleTeenus są używane do importu płatności bankowych.
 
@@ -225,7 +282,8 @@ Formaty Telehansa i TeleTeenus są używane do importu płatności bankowych.
 | Zamieniona przez inną funkcję? | Nr Te formaty zostaną zastąpione formatami importu wyciągów ISO 20022 w przyszłych wersjach. |
 | Moduły, których dotyczą zmiany             | Rozrachunki z odbiorcami                                                                        |
 
-### <a name="performance-management-goal-workflow"></a>Przepływ pracy celu zarządzania wydajnością
+### Przepływ pracy celu zarządzania wydajnością
+<a id="performance-management-goal-workflow" class="xliff"></a>
 
 Zarządzanie wydajnością obejmuje zarządzanie celami oraz integrację z przeglądami wydajności.
 
@@ -235,7 +293,8 @@ Zarządzanie wydajnością obejmuje zarządzanie celami oraz integrację z przeg
 | Zamieniona przez inną funkcję? | Nr Cele są wyświetlane menedżerom w samoobsługowym portalu dla menedżerów i mogą być zmieniane oraz wyświetlane przez menedżerów. |
 | Moduły, których dotyczą zmiany             | Zarządzanie kapitałem ludzkim                                                                                                 |
 
-### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a>Formaty płatności Postgirot i Postgirot Utland dla Szwecji
+### Formaty płatności Postgirot i Postgirot Utland dla Szwecji
+<a id="postgirot-and-postgirot-utland-payment-formats-for-sweden" class="xliff"></a>
 
 Formaty płatności Postgirot i Postgirot Utland dla Szwecji.
 
@@ -245,7 +304,8 @@ Formaty płatności Postgirot i Postgirot Utland dla Szwecji.
 | Zamieniona przez inną funkcję? | Tak, przez format płatności poleceniem przelewu ISO20022 dla Szwecji |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami                                        |
 
-### <a name="radio-frequency-identifier"></a>Identyfikacja radiowa (RFID)
+### Identyfikacja radiowa (RFID)
+<a id="radio-frequency-identifier" class="xliff"></a>
 
 Identyfikacja radiowa (RFID) to technologia zbierania danych przy użyciu elektronicznych znaczników do przechowywania danych identyfikacyjnych bez konieczności bezpośredniego dostępu do czytnika w celu odczytania danych identyfikacyjnych.
 
@@ -255,7 +315,8 @@ Identyfikacja radiowa (RFID) to technologia zbierania danych przy użyciu elektr
 | Zamieniona przez inną funkcję? | Nr                                            |
 | Moduły, których dotyczą zmiany             | Zarządzanie zapasami                          |
 
-### <a name="report-about-state-invoices-numbering-for-latvia"></a>Raport o urzędowej numeracji faktur dla Łotwy
+### Raport o urzędowej numeracji faktur dla Łotwy
+<a id="report-about-state-invoices-numbering-for-latvia" class="xliff"></a>
 
 Łotewskie prawo zawiera określone reguły numerowania faktur sprzedaży. Funkcja pozwala przypisywać konkretne numery do faktur sprzedaży na podstawie użytkownika lub grupy użytkowników. Następnie można wygenerować raport lub plik XML. Można również wydrukować raport o użytych numerach faktur.
 
@@ -265,7 +326,8 @@ Identyfikacja radiowa (RFID) to technologia zbierania danych przy użyciu elektr
 | Zamieniona przez inną funkcję? | Nr                                                                                                                       |
 | Moduły, których dotyczą zmiany             | Rozrachunki z odbiorcami                                                                                                      |
 
-### <a name="set-up-the-names-of-the-manager-and-general-accountant-of-a-company-for-lithuania"></a>Ustawianie imion i nazwisk menedżera i głównego księgowego firmy dla Litwy
+### Ustawianie imion i nazwisk menedżera i głównego księgowego firmy dla Litwy
+<a id="set-up-the-names-of-the-manager-and-general-accountant-of-a-company-for-lithuania" class="xliff"></a>
 
 Imiona i nazwiska menedżera oraz głównego księgowego firmy można podać w danych firmy i następnie używać w różnych raportach drukowanych lokalnie.
 
@@ -275,7 +337,8 @@ Imiona i nazwiska menedżera oraz głównego księgowego firmy można podać w d
 | Zamieniona przez inną funkcję? | Tak, w tym samym celu można używać konfiguracji urzędników.   |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami, Rozrachunki z odbiorcami, Zaawansowane uzgadnianie konta bankowego |
 
-### <a name="telepay-payment-formats-for-norway"></a>Formaty płatności TelePay dla Norwegii
+### Formaty płatności TelePay dla Norwegii
+<a id="telepay-payment-formats-for-norway" class="xliff"></a>
 
 Formaty płatności TelePay obejmują funkcje eksportu płatności dla dostawców (polecenie przelewu) i inkasa płatności od odbiorców (polecenie zapłaty).
 
@@ -285,7 +348,8 @@ Formaty płatności TelePay obejmują funkcje eksportu płatności dla dostawcó
 | Zamieniona przez inną funkcję? | Tak, przez format płatności poleceniem przelewu ISO20022 i format płatności od odbiorcy AvtaleGiro dla Norwegii |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami, Rozrachunki z odbiorcami                                                          |
 
-### <a name="vendor-payment-export-formats-for-finland"></a>Formaty eksportu płatności dla dostawców dla Finlandii
+### Formaty eksportu płatności dla dostawców dla Finlandii
+<a id="vendor-payment-export-formats-for-finland" class="xliff"></a>
 
 Dwa formaty eksportowania płatności są dostępne dla Finlandii. LM02 (FI) jest używany w przypadku krajowych płatności, a LUM2 (FI) jest używany w przypadku płatności zagranicznych.
 
@@ -295,18 +359,21 @@ Dwa formaty eksportowania płatności są dostępne dla Finlandii. LM02 (FI) jes
 | Zamieniona przez inną funkcję? | Tak, przez format płatności poleceniem przelewu ISO20022 dla Finlandii |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami                                         |
 
-### <a name="workflow-for-creating-goals"></a>Przepływ pracy tworzenia celów
+### Przepływ pracy tworzenia celów
+<a id="workflow-for-creating-goals" class="xliff"></a>
 
 Przepływ pracy zarządzania tworzeniem celów dla pracowników jest jednym z kilku przepływów pracy, które były dostępne jako pomoc w koordynowaniu procesu zarządzania wydajnością.
 
 |                              |                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Przyczyna amortyzacji       | Zarządzanie wydajnością zostało całkowicie przeprojektowane w programie Microsoft Dynamics 365 for Operations.                                                                                                                                                                                                                                        |
+| Przyczyna amortyzacji       | Zarządzanie wydajnością zostało całkowicie przeprojektowane w programie Microsoft Dynamics 365 for Finance and Operations.                                                                                                                                                                                                                                        |
 | Zamieniona przez inną funkcję? | Przeprojektowana funkcjonalność zarządzania wydajnością zapewnia większą kontrolę nad treścią celów, miarami służącymi do śledzenia postępów oraz dołączaniem towarzyszącej dokumentacji. Cele można zapisywać jako szablony i ponownie wykorzystywać. Ta funkcja może pomóc szybciej konfigurować dodatkowe cele dla pracowników. |
 | Moduły, których dotyczą zmiany             | Zarządzanie kapitałem ludzkim                                                                                                                                                                                                                                                                                                               |
 
-## <a name="features-deprecated-in-dynamics-ax-70-releases"></a>Funkcje wycofane w wydaniach systemu Dynamics AX 7.0
-### <a name="ability-to-cancel-changes-to-a-vendor-invoice"></a>Możliwość anulowania zmian na fakturze od dostawcy
+## Funkcje wycofane w wydaniach systemu Dynamics AX 7.0
+<a id="features-deprecated-in-dynamics-ax-70-releases" class="xliff"></a>
+### Możliwość anulowania zmian na fakturze od dostawcy
+<a id="ability-to-cancel-changes-to-a-vendor-invoice" class="xliff"></a>
 
 |                              |                         |
 |------------------------------|-------------------------|
@@ -314,7 +381,8 @@ Przepływ pracy zarządzania tworzeniem celów dla pracowników jest jednym z ki
 | Zamieniona przez inną funkcję? | Nie                      |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami        |
 
-### <a name="aif-axd-and-axbc-integrations"></a>Integracja z AIF, AxD i AxBC
+### Integracja z AIF, AxD i AxBC
+<a id="aif-axd-and-axbc-integrations" class="xliff"></a>
 
 W narzędziach integracji aplikacji (AIF) może dochodzić do wymiany danych z zewnętrznymi systemami poprzez logikę biznesową powiązaną z usługami. System Dynamics AX zawiera usługi, które są oparte na dokumentach i programie .NET Business Connector (AxBC). Dokument jest tworzony przy użyciu języka XML. Kod XML zawiera informacje nagłówka dodawane w celu tworzenia *komunikatów*, które mogą być przesyłane do systemu Dynamics AX lub z niego wysyłane. Przykłady dokumentów obejmują zamówienia sprzedaży i zamówienia zakupu. Jednak niemal wszystkie podmioty, np. odbiorca, mogą być reprezentowane przez dokument. Usługi oparte na dokumentach używają klas **Axd &lt;*dokument*&gt;**.
 
@@ -324,7 +392,8 @@ W narzędziach integracji aplikacji (AIF) może dochodzić do wymiany danych z z
 | Zamieniona przez inną funkcję? | W bieżącej wersji systemu Dynamics AX ta funkcja jest zastąpiona strukturą importu/eksportu danych, która obsługuje cykliczny import/eksport zbiorczy. Dla klasy AxBC zaleca się użycie samych tabel. |
 | Moduły, których dotyczą zmiany             | AxD, AxBC i AIF                                                                                                                                                                                     |
 
-### <a name="boms-without-bom-versions"></a>BOM bez wersji BOM
+### BOM bez wersji BOM
+<a id="boms-without-bom-versions" class="xliff"></a>
 
 Po wyłączeniu klucza konfiguracji **Wersje BOM** wersje list składowych (BOM) były ukrywane we wszystkich formularzach, a system wymuszał relację 1:1 między zwolnionymi produktami i listami BOM. W bieżącej wersji systemu Dynamics AX klucza konfiguracji **Wersje BOM** nie da się wyłączyć.
 
@@ -334,7 +403,8 @@ Po wyłączeniu klucza konfiguracji **Wersje BOM** wersje list składowych (BOM)
 | Zamieniona przez inną funkcję? | Nie                                                                                      |
 | Moduły, których dotyczą zmiany             | Zarządzanie informacjami o produktach, Zarządzanie zapasami                                    |
 
-### <a name="brazilian-bordero"></a>Brazylijski format Bordero
+### Brazylijski format Bordero
+<a id="brazilian-bordero" class="xliff"></a>
 
 Specjalna metoda płatności dla firm brazylijskich
 
@@ -344,7 +414,8 @@ Specjalna metoda płatności dla firm brazylijskich
 | Zamieniona przez inną funkcję? | Nr                                                                                                    |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami                                                                                      |
 
-### <a name="brazilian-sintegra-statement"></a>Brazylijska deklaracja Sintegra
+### Brazylijska deklaracja Sintegra
+<a id="brazilian-sintegra-statement" class="xliff"></a>
 
 Krajowa deklaracja podatku ICMS
 
@@ -354,7 +425,8 @@ Krajowa deklaracja podatku ICMS
 | Zamieniona przez inną funkcję? | Nr Użytkownicy mogą użyć narzędzia Ogólne raportowanie elektroniczne do skonfigurowania deklaracji, jeśli jest to wymagane w określonych sytuacjach. |
 | Moduły, których dotyczą zmiany             | Księgi podatkowe                                                                                                          |
 
-### <a name="brazilian-scan-contingency-mode-for-nf-e"></a>Brazylijski tryb sytuacji awaryjnych SCAN dla NF-e
+### Brazylijski tryb sytuacji awaryjnych SCAN dla NF-e
+<a id="brazilian-scan-contingency-mode-for-nf-e" class="xliff"></a>
 
 Środowisko awaryjne (SCAN) jest używane do generowania, eksportowania i importowania stanu z portalu Nota Fiscal eletrônica (NF-e), gdy środowisko Secretaria da Fazenda (SEFAZ) jest niedostępne.
 
@@ -364,7 +436,8 @@ Krajowa deklaracja podatku ICMS
 | Zamieniona przez inną funkcję? | Nr                                                                          |
 | Moduły, których dotyczą zmiany             | Rozrachunki z odbiorcami                                                         |
 
-### <a name="business-analyzer"></a>Aplikacja Business Analyzer
+### Aplikacja Business Analyzer
+<a id="business-analyzer" class="xliff"></a>
 
 Ta aplikacja mobilna pozwala użytkownikom przeglądać kluczowe pomiary biznesowe.
 
@@ -374,7 +447,8 @@ Ta aplikacja mobilna pozwala użytkownikom przeglądać kluczowe pomiary bizneso
 | Zamieniona przez inną funkcję? | Pakiet materiałów do monitorowania wyników finansowych dla usługi Microsoft Power BI będzie zawierał najważniejsze mierniki finansowe, które wcześniej były dostępne w aplikacji Business Analyzer. |
 | Moduły, których dotyczą zmiany             | Księga główna                                                                                                                                                |
 
-### <a name="business-statistics"></a>Statystyki
+### Statystyki
+<a id="business-statistics" class="xliff"></a>
 
 Konfiguracja zapytań o statystyki biznesowe, które mogą ułatwić analizowanie funkcjonowania organizacji.
 
@@ -384,7 +458,8 @@ Konfiguracja zapytań o statystyki biznesowe, które mogą ułatwić analizowani
 | Zamieniona przez inną funkcję? | Nowe rozwiązanie BI dla aktualnej wersji systemu Dynamics AX.                                      |
 | Moduły, których dotyczą zmiany             | Zaopatrzenie i sourcing, Rozrachunki z dostawcami, Sprzedaż i marketing, Rozrachunki z odbiorcami         |
 
-### <a name="change-document-date-function-in-invoice-approval-journal"></a>Funkcja zmiany daty dokumentu w Arkuszu zatwierdzania faktur
+### Funkcja zmiany daty dokumentu w Arkuszu zatwierdzania faktur
+<a id="change-document-date-function-in-invoice-approval-journal" class="xliff"></a>
 
 |                              |                                                                         |
 |------------------------------|-------------------------------------------------------------------------|
@@ -392,7 +467,8 @@ Konfiguracja zapytań o statystyki biznesowe, które mogą ułatwić analizowani
 | Zamieniona przez inną funkcję? | Tak. Można zmienić datę dokumentu dla zaksięgowanej transakcji dostawcy. |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami                                                        |
 
-### <a name="clieop03-payment-format-for-the-netherlands"></a>Format płatności ClieOp03 dla Holandii
+### Format płatności ClieOp03 dla Holandii
+<a id="clieop03-payment-format-for-the-netherlands" class="xliff"></a>
 
 |                              |                                                                                                            |
 |------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -400,7 +476,8 @@ Konfiguracja zapytań o statystyki biznesowe, które mogą ułatwić analizowani
 | Zamieniona przez inną funkcję? | Eksport płatności SEPA                                                                                       |
 | Moduły, których dotyczą zmiany             | Wszyscy                                                                                                        |
 
-### <a name="compliance-center"></a>Centrum zgodności
+### Centrum zgodności
+<a id="compliance-center" class="xliff"></a>
 
 Centrum zgodności było witryną Enterprise Portal do zarządzania wymaganiami dokumentacji dla inicjatyw zgodności związanych z ustawą Sarbanes-Oxley.
 
@@ -410,7 +487,8 @@ Centrum zgodności było witryną Enterprise Portal do zarządzania wymaganiami 
 | Zamieniona przez inną funkcję? | Nie                                                                                                                     |
 | Moduły, których dotyczą zmiany             | Zgodność z przepisami i kontrole wewnętrzne                                                                                       |
 
-### <a name="connector-for-microsoft-dynamics"></a>Connector for Microsoft Dynamics
+### Connector for Microsoft Dynamics
+<a id="connector-for-microsoft-dynamics" class="xliff"></a>
 
 To narzędzie zostało użyte do integracji najważniejszych danych z programu Microsoft Dynamics CRM do aplikacji systemu Microsoft Dynamics ERP.
 
@@ -420,7 +498,8 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 | Zamieniona przez inną funkcję? | Integrator systemu Dynamics                                      |
 | Moduły, których dotyczą zmiany             | Connector for Microsoft Dynamics                         |
 
-### <a name="container-unit-and-multi-dimension-on-hand"></a>Jednostka kontenera i wielowymiarowe zapasy na stanie
+### Jednostka kontenera i wielowymiarowe zapasy na stanie
+<a id="container-unit-and-multi-dimension-on-hand" class="xliff"></a>
 
 |                              |                                                                                                                                                                 |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -428,7 +507,8 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 | Zamieniona przez inną funkcję? | Tak. Od wersji AX 2012 ta funkcja jest zastąpiona zestawem funkcji skonsolidowanych szarż produkcyjnych. Zestaw zawiera skonsolidowany widok dostępnych zapasów. |
 | Moduły, których dotyczą zmiany             | Zarządzanie informacjami o produktach, Kontrola produkcji, Zarządzanie zapasami, Sprzedaż i marketing                                                                   |
 
-### <a name="cue-group-metadata"></a>Metadane grupy wskaźników
+### Metadane grupy wskaźników
+<a id="cue-group-metadata" class="xliff"></a>
 
 |                              |                                                                                                                                                                                                                               |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -436,7 +516,8 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 | Zamieniona przez inną funkcję? | Nie                                                                                                                                                                                                                            |
 | Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                                                                                                           |
 
-### <a name="cue-metadata"></a>Metadane wskaźnika
+### Metadane wskaźnika
+<a id="cue-metadata" class="xliff"></a>
 
 |                              |                                                                                                                                                                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -444,7 +525,8 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 | Zamieniona przez inną funkcję? | Wprowadzono metadane kafelka, by poprawić elastyczność modelowania. Można na przykład modelować aktualne liczby, nawigację i kluczowe wskaźniki wydajności (KPI). Metadane wskaźnika zostały bezpośrednio zastąpione przez metadane kafelka z liczbami. |
 | Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                                                                                                                     |
 
-### <a name="danish-check-format"></a>Duński format czeku
+### Duński format czeku
+<a id="danish-check-format" class="xliff"></a>
 
 |                              |                                                                                                                         |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -452,7 +534,8 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 | Zamieniona przez inną funkcję? | Nie                                                                                                                      |
 | Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                     |
 
-### <a name="data-partitions"></a>Partycje danych
+### Partycje danych
+<a id="data-partitions" class="xliff"></a>
 
 Partycje danych zapewniają logiczne oddzielenie danych w bazie danych systemu Microsoft Dynamics AX.
 
@@ -462,7 +545,8 @@ Partycje danych zapewniają logiczne oddzielenie danych w bazie danych systemu M
 | Zamieniona przez inną funkcję? | W przyszłym wydaniu partycje danych zostaną zastąpione przez obsługę wielu baz danych lub wystąpień systemu Dynamics AX.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
-### <a name="delimitation"></a>Ogranicznik
+### Ogranicznik
+<a id="delimitation" class="xliff"></a>
 
 |                              |                                        |
 |------------------------------|----------------------------------------|
@@ -470,7 +554,8 @@ Partycje danych zapewniają logiczne oddzielenie danych w bazie danych systemu M
 | Zamieniona przez inną funkcję? | Nie                                     |
 | Moduły, których dotyczą zmiany             | Czas i frekwencja                    |
 
-### <a name="desktop-client"></a>Klient komputerowy
+### Klient komputerowy
+<a id="desktop-client" class="xliff"></a>
 
 |                              |                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -478,17 +563,19 @@ Partycje danych zapewniają logiczne oddzielenie danych w bazie danych systemu M
 | Zamieniona przez inną funkcję? | Nowy klient sieci web jest oparty na metadanych formatu dla komputerów i modelu programowania, który został dostosowany do potrzeb rozszerzonej platformy internetowej. |
 | Moduły, których dotyczą zmiany             | Wszystko                                                                                                                                    |
 
-### <a name="direct-database-connection"></a>Bezpośrednie połączenie z bazą danych
+### Bezpośrednie połączenie z bazą danych
+<a id="direct-database-connection" class="xliff"></a>
 
 W programie Dynamics AX 2012 R3 aplikacja Retail Modern POS mogła się łączyć bezpośrednio z bazą danych kanału w podobny sposób, jak robi to aplikacja Enterprise POS. Było to uzupełnienie standardowej metody komunikacji używanej przez aplikację Retail Modern POS, czyli korzystania z pośrednictwa serwera sieci sprzedaży.  
 
 |                              |                                                                                         |
 |------------------------------|-----------------------------------------------------------------------------------------|
-| Przyczyna amortyzacji       | Bezpośrednia łączność z bazą danych wymagała protokołów o słabszych zabezpieczeniach i była używana głównie do osiągnięcia najwyższej wydajności. Ze względu na ulepszenia w dziedzinach wydajności i zabezpieczeń, które wprowadzono przy okazji programu Dynamics 365 for Operations, ta funkcjonalność wywołuje teraz więcej problemów, niż rozwiązuje. |
+| Przyczyna amortyzacji       | Bezpośrednia łączność z bazą danych wymagała protokołów o słabszych zabezpieczeniach i była używana głównie do osiągnięcia najwyższej wydajności. Ze względu na ulepszenia w dziedzinach wydajności i zabezpieczeń, które wprowadzono przy okazji programu Dynamics 365 for Finance and Operations, ta funkcjonalność wywołuje teraz więcej problemów, niż rozwiązuje. |
 | Zamieniona przez inną funkcję? | Nr Teraz jest obsługiwana tylko standardowa komunikacja za pośrednictwem serwera sieci sprzedaży.    |
 | Moduły, których dotyczą zmiany             | Baza danych kanału/Retail Modern POS                                    |
 
-### <a name="dutch-swift-mt940"></a>Holenderski SWIFT MT940
+### Holenderski SWIFT MT940
+<a id="dutch-swift-mt940" class="xliff"></a>
 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -496,7 +583,8 @@ W programie Dynamics AX 2012 R3 aplikacja Retail Modern POS mogła się łączy�
 | Zamieniona przez inną funkcję? | Tak, ta funkcja została zastąpiona funkcją zaawansowanego uzgadniania kont bankowych. Oprócz tego w następnej aktualizacji systemu Dynamics AX jest planowana implementacja funkcji importu wyciągów z kont camt.053 ISO20022 dla arkusza finansowego. |
 | Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                                                                                                                   |
 
-### <a name="ebilanz-xbrl-for-germany"></a>eBilanz (XBRL dla Niemiec)
+### eBilanz (XBRL dla Niemiec)
+<a id="ebilanz-xbrl-for-germany" class="xliff"></a>
 
 Ta funkcja generowała dane wyjściowe w formacie eXtensible Business Reporting Language (XBRL) dostosowane specjalnie do niemieckiej taksonomii eBilanz.
 
@@ -506,7 +594,8 @@ Ta funkcja generowała dane wyjściowe w formacie eXtensible Business Reporting 
 | Zamieniona przez inną funkcję? | Ta funkcja nie została zastąpiona przez inną funkcję, ale dla rynku niemieckiego jest dostępnych wiele wyspecjalizowanych pakietów XBRL oferujących rozbudowane funkcje XBRL. |
 | Moduły, których dotyczą zmiany             | Program Management Reporter                                                                                                                                                    |
 
-### <a name="enterprise-portal-client"></a>Klient witryny Enterprise Portal
+### Klient witryny Enterprise Portal
+<a id="enterprise-portal-client" class="xliff"></a>
 
 |                              |                                                                                                                                        |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -514,7 +603,8 @@ Ta funkcja generowała dane wyjściowe w formacie eXtensible Business Reporting 
 | Zamieniona przez inną funkcję? | Nowy klient sieci web jest oparty na metadanych formatu dla komputerów i modelu programowania, który został dostosowany do potrzeb rozszerzonej platformy internetowej. |
 | Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                    |
 
-### <a name="environmental-sustainability"></a>Równowaga środowiskowa
+### Równowaga środowiskowa
+<a id="environmental-sustainability" class="xliff"></a>
 
 |                              |                                                    |
 |------------------------------|----------------------------------------------------|
@@ -522,7 +612,8 @@ Ta funkcja generowała dane wyjściowe w formacie eXtensible Business Reporting 
 | Zamieniona przez inną funkcję? | Nie                                                 |
 | Moduły, których dotyczą zmiany             | Zgodność z przepisami i kontrole wewnętrzne, Rozrachunki z dostawcami |
 
-### <a name="form-activex-and-managed-host-controls"></a>Formanty ActiveX i Zarządzany host
+### Formanty ActiveX i Zarządzany host
+<a id="form-activex-and-managed-host-controls" class="xliff"></a>
 
 |                              |                                                                                                                                                                                               |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -530,7 +621,8 @@ Ta funkcja generowała dane wyjściowe w formacie eXtensible Business Reporting 
 | Zamieniona przez inną funkcję? | Rozszerzana struktura formantów pozwala tworzyć nowe formanty oparte na HTML, CSS i JavaScript i jest formantem pierwszej klasy w środowisku narzędziowym Microsoft Visual Studio. |
 | Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                                                                           |
 
-### <a name="generate-prenotes-by-using-a-batch"></a>Generowanie przelewów testowych przy użyciu zadania wsadowego
+### Generowanie przelewów testowych przy użyciu zadania wsadowego
+<a id="generate-prenotes-by-using-a-batch" class="xliff"></a>
 
 Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale może to zrobić użytkownik.
 
@@ -540,7 +632,8 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 | Zamieniona przez inną funkcję? | Przelewy testowe nadal można wygenerować, a użytkownik ma kontrolę nad miejscem zapisu pliku.   |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami, Rozrachunki z odbiorcami, Zaawansowane uzgadnianie konta bankowego                                        |
 
-### <a name="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions"></a>Niemiecki eksport płatności i import wyciągu z konta DTAUS (sumy i transakcje)
+### Niemiecki eksport płatności i import wyciągu z konta DTAUS (sumy i transakcje)
+<a id="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions" class="xliff"></a>
 
 |                              |                                                                                                                                                                                                                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -548,7 +641,8 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 | Zamieniona przez inną funkcję? | Tak, ta funkcja została zastąpiona funkcjami eksportu płatności SEPA i zaawansowanego uzgadniania kont bankowych w imporcie wyciągów z kont. Oprócz tego w następnej aktualizacji systemu Dynamics AX jest planowana implementacja funkcji importu wyciągów z kont camt.053 ISO20022 dla arkusza finansowego. |
 | Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                                                                                                                                                                            |
 
-### <a name="german-dtazv-payment-format"></a>Niemiecki format płatności DTAZV
+### Niemiecki format płatności DTAZV
+<a id="german-dtazv-payment-format" class="xliff"></a>
 
 |                              |                                                                                                    |
 |------------------------------|----------------------------------------------------------------------------------------------------|
@@ -556,7 +650,8 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 | Zamieniona przez inną funkcję? | Eksport płatności SEPA                                                                               |
 | Moduły, których dotyczą zmiany             | Wszyscy                                                                                                |
 
-### <a name="german-mt940-import"></a>Niemiecki import MT940
+### Niemiecki import MT940
+<a id="german-mt940-import" class="xliff"></a>
 
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -564,7 +659,8 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 | Zamieniona przez inną funkcję? | Tak, ta funkcja została zastąpiona funkcją zaawansowanego uzgadniania kont bankowych. Oprócz tego w następnej aktualizacji systemu Dynamics AX jest planowana implementacja funkcji importu wyciągów z kont camt.053 ISO20022 dla arkusza finansowego. |
 | Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                                                                                                                   |
 
-### <a name="german-xml-eu-sales-list"></a>Niemiecka lista sprzedaży do UE w formacie XML
+### Niemiecka lista sprzedaży do UE w formacie XML
+<a id="german-xml-eu-sales-list" class="xliff"></a>
 
 |                              |                                                                                                                                                                                    |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -572,7 +668,8 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 | Zamieniona przez inną funkcję? | Nie                                                                                                                                                                                 |
 | Moduły, których dotyczą zmiany             | Podatek                                                                                                                                                                                |
 
-### <a name="gl-ssrs-reports"></a>Raporty GL SSRS
+### Raporty GL SSRS
+<a id="gl-ssrs-reports" class="xliff"></a>
 
 Usunięto raporty zawierające następujące elementy menu: **Sumaryczny bilans próbny**, **Szczegółowy bilans próbny**, **Plan kont**, **Dziennik inspekcji**, **Salda** i **Lista sald**.
 
@@ -582,7 +679,8 @@ Usunięto raporty zawierające następujące elementy menu: **Sumaryczny bilans 
 | Zamieniona przez inną funkcję? | Program Management Reporter (oznaczony jako **Raporty finansowe** w bieżącej wersji systemu Dynamics AX)                                                  |
 | Moduły, których dotyczą zmiany             | Księga główna                                                                                                                               |
 
-### <a name="infopart-and-formpart-metadata"></a>Metadane InfoPart i FormPart
+### Metadane InfoPart i FormPart
+<a id="infopart-and-formpart-metadata" class="xliff"></a>
 
 |                              |                                                                                                                                                                                                                                |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -590,7 +688,8 @@ Usunięto raporty zawierające następujące elementy menu: **Sumaryczny bilans 
 | Zamieniona przez inną funkcję? | Metadane InfoPart, które były uproszczoną definicję formularza, są konwertowane na formularz przez narzędzia uaktualniania. Metadane FormPart odwołujące się do formularza są zastępowane przez bardziej bezpośrednie odwołanie tworzone przez narzędzia uaktualniania. |
 | Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                                                                                                            |
 
-### <a name="main-account-list-page"></a>Strona listy konta głównego
+### Strona listy konta głównego
+<a id="main-account-list-page" class="xliff"></a>
 
 Lista kont dla podmiotu prawnego i powiązane informacje o saldzie
 
@@ -600,7 +699,8 @@ Lista kont dla podmiotu prawnego i powiązane informacje o saldzie
 | Zamieniona przez inną funkcję? | Strona **Konta główne** zawiera tę samą listę kont, która jest dostępna na stronie listy **Konto główne**. Widok siatki na stronie **Konta główne** również pokazuje nawet mniejszy widok przypominający siatkę. |
 | Moduły, których dotyczą zmiany             | Księga główna                                                                                                                                                                     |
 
-### <a name="malaysia-and-singapore-bank-cash-flow-report"></a>Raport dotyczący bankowych przepływów pieniężnych w Malezji i Singapurze
+### Raport dotyczący bankowych przepływów pieniężnych w Malezji i Singapurze
+<a id="malaysia-and-singapore-bank-cash-flow-report" class="xliff"></a>
 
 Ta funkcja umożliwia drukowanie raportu przepływów pieniężnych, który przedstawia transakcje oraz szczegóły przychodów i rozchodów gotówkowych w określonym zakresie dat dla wybranych kont bankowych.
 
@@ -610,7 +710,8 @@ Ta funkcja umożliwia drukowanie raportu przepływów pieniężnych, który prze
 | Zamieniona przez inną funkcję? | Transakcja bankowa Informacje.                                            |
 | Moduły, których dotyczą zmiany             | Zarządzanie gotówką i bankami                                                |
 
-### <a name="mexican-cfd-electronic-invoice"></a>Meksykański faktura elektroniczna CFD
+### Meksykański faktura elektroniczna CFD
+<a id="mexican-cfd-electronic-invoice" class="xliff"></a>
 
 Ta funkcja służyła do generowania meksykańskich faktur elektronicznych za pomocą metody Comprobante Fiscal Digital (CFD), gdzie firma podpisuje fakturę, żądając powiązanej autoryzacji od rządu. Ta funkcja obejmuje też miesięczne raporty zawierające wszystkie faktury elektroniczne, które zostały wystawione w danym okresie.
 
@@ -620,7 +721,8 @@ Ta funkcja służyła do generowania meksykańskich faktur elektronicznych za po
 | Zamieniona przez inną funkcję? | Nie                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Moduły, których dotyczą zmiany             | Rozrachunki z odbiorcami, Projekt                                                                                                                                                                                                                                                                                                                                                                              |
 
-### <a name="mexico-realized-and-unrealized-vat"></a>Zrealizowany i niezrealizowany podatek VAT w Meksyku
+### Zrealizowany i niezrealizowany podatek VAT w Meksyku
+<a id="mexico-realized-and-unrealized-vat" class="xliff"></a>
 
 Zarządzanie podatkiem od towarów i usług (VAT) w systemie Microsoft Dynamics AX 2012 odbywało się przy użyciu właściwej dla Meksyku funkcji dla „podatku niezrealizowanego”.
 
@@ -630,7 +732,8 @@ Zarządzanie podatkiem od towarów i usług (VAT) w systemie Microsoft Dynamics 
 | Zamieniona przez inną funkcję? | Tak, ta funkcja została zastąpiona standardową funkcją podatku warunkowego dostępną w module podstawowym. |
 | Moduły, których dotyczą zmiany             | Podatek                                                                                                                 |
 
-### <a name="microsoft-outlook-integration"></a>Integracja z programem Microsoft Outlook
+### Integracja z programem Microsoft Outlook
+<a id="microsoft-outlook-integration" class="xliff"></a>
 
 |                              |                                                                                |
 |------------------------------|--------------------------------------------------------------------------------|
@@ -638,7 +741,8 @@ Zarządzanie podatkiem od towarów i usług (VAT) w systemie Microsoft Dynamics 
 | Zamieniona przez inną funkcję? | Tak                                                                            |
 | Moduły, których dotyczą zmiany             | Sprzedaż i marketing                                                            |
 
-### <a name="payroll-information-in-human-resources"></a>Informacje listy płac w module Zasoby ludzkie
+### Informacje listy płac w module Zasoby ludzkie
+<a id="payroll-information-in-human-resources" class="xliff"></a>
 
 Informacje listy płac w module Zasoby ludzkie
 
@@ -648,7 +752,8 @@ Informacje listy płac w module Zasoby ludzkie
 | Zamieniona przez inną funkcję? | **Świadczenia**, **Zarobki** i inne pokrewne strony, które były poprzednio używane w module US Payroll, otrzymały nową konfigurację i są teraz częścią konfiguracji podstawowych modułów Zasoby ludzkie, aby ułatwić zewnętrzne przetwarzanie listy płac. Ta funkcja jest dostępna za pomocą klucza konfiguracji **Zasoby ludzkie 1** &gt; **Lista płac**. |
 | Moduły, których dotyczą zmiany             | Zasoby ludzkie, Lista płac                                                                                                                                                                                                                                                                                                     |
 
-### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Prywatne blokowanie arkuszy zarządzania zapasami i magazynem
+### Prywatne blokowanie arkuszy zarządzania zapasami i magazynem
+<a id="private-blocking-of-inventory-and-warehouse-management-journals" class="xliff"></a>
 
 Nie da się już oznaczyć arkusza zapasów i lub arkusza magazynu jako prywatnego. Możliwe jest jedynie blokowanie arkuszy jako prywatnych dla grup użytkowników oraz blokowanie podczas edycji.
 
@@ -658,7 +763,8 @@ Nie da się już oznaczyć arkusza zapasów i lub arkusza magazynu jako prywatne
 | Zamieniona przez inną funkcję? | Nie                                     |
 | Moduły, których dotyczą zmiany             | Zarządzanie zapasami                   |
 
-### <a name="product-builder"></a>Konstruktor produktów
+### Konstruktor produktów
+<a id="product-builder" class="xliff"></a>
 
 Konstruktor produktów był używany do dynamicznego konfigurowania elementów z zamówienia sprzedaży, zamówienia zakupu, zlecenia produkcyjnego, wyceny, oferty w ramach projektu lub zapotrzebowania na towary. Na podstawie modelu produktu, który miał zmienne modelowania użytkownik mógł wybrać wartości w celu spełnienia wymagań odbiorcy i uzyskać unikatowy wariant produktu, który miał BOM i marszrutę.
 
@@ -668,7 +774,8 @@ Konstruktor produktów był używany do dynamicznego konfigurowania elementów z
 | Zamieniona przez inną funkcję? | Konfiguracja produktu                                                                                                                                                                                   |
 | Moduły, których dotyczą zmiany             | Zarządzanie informacjami o produktach, Sprzedaż i marketing                                                                                                                                                     |
 
-### <a name="rename-product-dimension"></a>Zmiana nazwy wymiaru produktu
+### Zmiana nazwy wymiaru produktu
+<a id="rename-product-dimension" class="xliff"></a>
 
 Ta funkcja pozwala zmienić nazwę jednego z trzech standardowych wymiarów produktów (rozmiar, kolor lub styl) na taką, która lepiej pasuje do wymagań firmy. Można było zmieniać wszystkie etykiety, dla których użyto nazwy wymiaru produktu.
 
@@ -678,7 +785,8 @@ Ta funkcja pozwala zmienić nazwę jednego z trzech standardowych wymiarów prod
 | Zamieniona przez inną funkcję? | Nr                                                                            |
 | Moduły, których dotyczą zmiany             | Zarządzanie informacjami o produktach                                                |
 
-### <a name="retail-server-connectivity-using-http"></a>Łączność serwera sieci sprzedaży przy użyciu protokołu HTTP
+### Łączność serwera sieci sprzedaży przy użyciu protokołu HTTP
+<a id="retail-server-connectivity-using-http" class="xliff"></a>
 
 W programie Dynamics AX 2012 R3 serwer sieci sprzedaży mógł wykorzystywać komunikację za pośrednictwem protokołu HTTP (niezabezpieczonego). Było to uzupełnienie standardowej komunikacji wykorzystującej protokół HTTPS.
 
@@ -688,7 +796,8 @@ W programie Dynamics AX 2012 R3 serwer sieci sprzedaży mógł wykorzystywać ko
 | Zamieniona przez inną funkcję? | Nr Teraz jest obsługiwana tylko standardowa komunikacja za pośrednictwem protokołu HTTPS.                                                                           |
 | Moduły, których dotyczą zmiany             | Serwer sprzedaży detalicznej                                                |
 
-### <a name="role-center-pages"></a>Strony widoków głównych użytkownika
+### Strony widoków głównych użytkownika
+<a id="role-center-pages" class="xliff"></a>
 
 |                              |                                                                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -696,7 +805,8 @@ W programie Dynamics AX 2012 R3 serwer sieci sprzedaży mógł wykorzystywać ko
 | Zamieniona przez inną funkcję? | Nowy wzór formularza obszaru roboczego oferuje użytkownikom architekturę ukierunkowaną na proces z łatwym dostępem do często używanych zadań w ramach procesu.                       |
 | Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                                                      |
 
-### <a name="sales-tax-jurisdictions"></a>Właściwe miejscowo urzędy skarbowe
+### Właściwe miejscowo urzędy skarbowe
+<a id="sales-tax-jurisdictions" class="xliff"></a>
 
 |                              |                                              |
 |------------------------------|----------------------------------------------|
@@ -704,7 +814,8 @@ W programie Dynamics AX 2012 R3 serwer sieci sprzedaży mógł wykorzystywać ko
 | Zamieniona przez inną funkcję? | Nie                                           |
 | Moduły, których dotyczą zmiany             | Podatki (od sprzedaży) na rynek amerykański                                 |
 
-### <a name="shipping-carrier-interface"></a>Interfejs firmy przewozowej
+### Interfejs firmy przewozowej
+<a id="shipping-carrier-interface" class="xliff"></a>
 
 |                              |                                                                                                                                                 |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -712,7 +823,8 @@ W programie Dynamics AX 2012 R3 serwer sieci sprzedaży mógł wykorzystywać ko
 | Zamieniona przez inną funkcję? | Tak, ta funkcja została częściowo zastąpiona funkcjami modułu Zarządzanie transportem, ale nie jest jeszcze zastąpiona w podstawowym module Zarządzanie magazynem (WMS I). |
 | Moduły, których dotyczą zmiany             | Sprzedaż i marketing, Zarządzanie magazynem                                                                                                       |
 
-### <a name="sites-services"></a>Sites Services
+### Sites Services
+<a id="sites-services" class="xliff"></a>
 
 Usługi Sites Services pozwalają tworzyć witryny internetowe, które poszerzają zasięg procesów biznesowych o Internet bez wsparcia działu informatycznego.
 
@@ -722,7 +834,8 @@ Usługi Sites Services pozwalają tworzyć witryny internetowe, które poszerzaj
 | Zamieniona przez inną funkcję? | Nie                                                                                                                                       |
 | Moduły, których dotyczą zmiany             | Rekrutacja kadr, zarządzanie sprawami, zapytania ofertowe, rejestracji dostawców                                                                  |
 
-### <a name="ssas-demand-forecasting-strategy"></a>Funkcjonalność strategii prognozowania popytu na platformie SSAS
+### Funkcjonalność strategii prognozowania popytu na platformie SSAS
+<a id="ssas-demand-forecasting-strategy" class="xliff"></a>
 
 |                              |                                                                              |
 |------------------------------|------------------------------------------------------------------------------|
@@ -730,7 +843,8 @@ Usługi Sites Services pozwalają tworzyć witryny internetowe, które poszerzaj
 | Zamieniona przez inną funkcję? | Funkcja strategii prognozowania popytu wykorzystująca usługę Uczenie maszynowe Azure                           |
 | Moduły, których dotyczą zmiany             | Planowanie                                                                     |
 
-### <a name="travel-requisitions"></a>Wnioski wyjazdowe
+### Wnioski wyjazdowe
+<a id="travel-requisitions" class="xliff"></a>
 
 |                              |                                                                 |
 |------------------------------|-----------------------------------------------------------------|
@@ -738,7 +852,8 @@ Usługi Sites Services pozwalają tworzyć witryny internetowe, które poszerzaj
 | Zamieniona przez inną funkcję? | Nie                                                              |
 | Moduły, których dotyczą zmiany             | Zarządzanie wydatkami                                              |
 
-### <a name="vendor-invoice-pool-excluding-posting-details"></a>Szczegóły puli faktur od dostawcy bez księgowania
+### Szczegóły puli faktur od dostawcy bez księgowania
+<a id="vendor-invoice-pool-excluding-posting-details" class="xliff"></a>
 
 |                              |                                                                                                         |
 |------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -746,7 +861,8 @@ Usługi Sites Services pozwalają tworzyć witryny internetowe, które poszerzaj
 | Zamieniona przez inną funkcję? | Funkcje przepływu pracy w arkuszu faktur.                                                           |
 | Moduły, których dotyczą zmiany             | Rozrachunki z dostawcami                                                                                        |
 
-### <a name="virtual-company-accounts"></a>Firmy wirtualne
+### Firmy wirtualne
+<a id="virtual-company-accounts" class="xliff"></a>
 
 Funkcja firm wirtualnych nie jest już obsługiwana w systemie Dynamics AX. Funkcja firm wirtualnych pozwalała użytkownikom na konfigurowanie tabel wspólnych dla zbioru firm. Opis tej funkcji można znaleźć w temacie [Firmy oraz firmy wirtualne](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). Funkcja działa poprzez grupowanie tabel w zbiory przypisane do wirtualnych firm będących grupami istniejących „rzeczywistych” firm. Tworzone są zapytania, tak aby wszystkie firmy w firmie wirtualnej miały dostęp do danych w tabelach skojarzonych zbiorów tabel.
 
@@ -775,7 +891,8 @@ Funkcja firm wirtualnych nie jest już obsługiwana w systemie Dynamics AX. Funk
 </tbody>
 </table>
 
-### <a name="warehouse-management-ii"></a>Zarządzanie magazynem II
+### Zarządzanie magazynem II
+<a id="warehouse-management-ii" class="xliff"></a>
 
 |                              |                                                                                                                                                                                                                                                                                                             |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -783,7 +900,8 @@ Funkcja firm wirtualnych nie jest już obsługiwana w systemie Dynamics AX. Funk
 | Zamieniona przez inną funkcję? | Moduł **Zarządzanie magazynem**, który został udostępniony w wersjach systemu AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 i Microsoft Dynamics AX 2012 R3 CU9, zastępuje funkcje modułu WMS II. Nowy moduł ma bardziej zaawansowane funkcje i elastyczniejsze procesy zarządzania magazynem niż oferowane w module Zarządzanie magazynem II. |
 | Moduły, których dotyczą zmiany             | Zarządzanie zapasami, sprzedaż i marketing, zaopatrzenie i sourcing                                                                                                                                                                                                                                         |
 
-### <a name="worker-reminders-in-human-resources"></a>Przypomnienia dla pracowników w module Zasoby ludzkie
+### Przypomnienia dla pracowników w module Zasoby ludzkie
+<a id="worker-reminders-in-human-resources" class="xliff"></a>
 
 Informacje listy płac w module Zasoby ludzkie
 
@@ -793,7 +911,8 @@ Informacje listy płac w module Zasoby ludzkie
 | Zamieniona przez inną funkcję? | Nie              |
 | Moduły, których dotyczą zmiany             | Zasoby ludzkie |
 
-### <a name="workplanner"></a>Planowanie pracy
+### Planowanie pracy
+<a id="workplanner" class="xliff"></a>
 
 |                              |                                                                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -801,16 +920,13 @@ Informacje listy płac w module Zasoby ludzkie
 | Zamieniona przez inną funkcję? | Nie, ale strona **Relacja profilu**, którą można otworzyć ze strony **Grupy profilów**, obsługuje ten sam scenariusz biznesowy, co wycofana strona **Planowanie produkcji**. |
 | Moduły, których dotyczą zmiany             | Czas i frekwencja                                                                                                                                                  |
 
-### <a name="x-financial-statements"></a>Sprawozdania finansowe X++
+### Sprawozdania finansowe X++
+<a id="x-financial-statements" class="xliff"></a>
 
 |                              |                                                                                             |
 |------------------------------|---------------------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | Ta funkcja została zastąpiona inną funkcją.                                    |
 | Zamieniona przez inną funkcję? | Program Management Reporter (oznaczony jako **Raporty finansowe** w bieżącej wersji systemu Dynamics AX) |
 | Moduły, których dotyczą zmiany             | Księga główna                                                                              |
-
-
-
-
 
 

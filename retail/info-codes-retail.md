@@ -3,31 +3,33 @@ title: Kody informacji
 description: "Ten artykuł zawiera omówienie kodów informacji i grup kodów informacji oraz sposobów ich używania."
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5790f54a531336b30ee140ebf8b9c782d8b347f7
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: b7417a8fece55963dcde53e7016e4d41793a6102
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="info-codes"></a>Kody informacji
+# Kody informacji
+<a id="info-codes" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
@@ -41,12 +43,14 @@ Kody informacji umożliwiają przechwytywanie danych w kasie punktu sprzedaży (
 -   Sprzedaż produktu w ramach zwykłej sprzedaży, sprzedaży z rabatem lub oferowania bezpłatnych produktów.
 -   Pozwala monitować kasjera, aby wprowadzał wartość lub wybierał pozycje z listy kodów podrzędnych przy otwieraniu szuflady kasy bez wykonywania operacji sprzedaży.
 
-## <a name="info-codes-group-in-retail-and-commerce"></a>Grupa kodów informacji w module Handel detaliczny i inny
-W programie Dynamics 365 for Operations — Handel detaliczny można utworzyć grupy kodów informacji. Grupy kodów informacji zapewniają większą elastyczność, umożliwiając definiowanie mniejszej ilości kodów informacji i używanie ich w bardziej zróżnicowany sposób. Grup kodów informacji można użyć w następujący sposób:
+## Grupa kodów informacji
+<a id="info-codes-group" class="xliff"></a>
+W programie Dynamics 365 for Retail można utworzyć grupy kodów informacji. Grupy kodów informacji zapewniają większą elastyczność, umożliwiając definiowanie mniejszej ilości kodów informacji i używanie ich w bardziej zróżnicowany sposób. Grup kodów informacji można użyć w następujący sposób:
 -   Zdefiniuj mniejszą ilość kodów i ponowne je wykorzystuj w łatwy sposób. Kody informacji, które są uwzględnione w grupach kodów informacji nie mają wstępnie zdefiniowanych powiązań z innymi kodami informacji. Można dołączyć ten sam kod informacji do wielu grup kodów informacji, a następnie użyć priorytetów dotyczących kolejności wybierania w zależności od sytuacji.
 -   Połącz kody informacji z innymi kodami informacji lub grupami kodów informacji w celu zbierania informacji na temat produktu lub transakcji bez konieczności definiowania osobnego kodu informacji lub łączenia kodu informacji dla każdego scenariusza.
 
-## <a name="info-code-examples"></a>Przykłady kodów informacji
+## Przykłady kodów informacji
+<a id="info-code-examples" class="xliff"></a>
 **Przykład 1: Użyj ponownie kodów informacji** W przypadku wcześniejszych wersji systemu , można połączyć kody informacji tak, aby po uruchomieniu jednego kodu informacji, natychmiast został uruchamiany inny kod informacji. Na przykład w przypadku sprzedaży niektórych produktów kasjer może być monitowany o zapytanie klienta, czy życzy sobie zakupić baterie i gwarancje dla produktu. Przy sprzedaży innych produktów kasjer może być monitowany o zapytanie klienta, czy życzy sobie zakupić baterie i poproszenie o podanie kodu pocztowego. Jeśli utworzymy połączone kody informacji dla tych scenariuszy, musimy skonfigurować każdą odmianę kodu informacji, dzięki czemu kasjer po odczytaniu monitu poprosi odbiorcę o odpowiednie informacje. Jeśli używamy grup kodów informacji, wspólne kody informacji, takie jak pytania o baterie, mogą być ustawione jeden raz, a następnie i wykorzystywane ponownie w wielu grupach kodów informacji. Można także użyć priorytetów w grupach kodów informacji do określania kolejności wyświetlania monitów.
 
 

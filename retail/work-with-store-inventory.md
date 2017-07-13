@@ -16,17 +16,18 @@ ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail Version
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5e5043d5951015fc14d29989ef4cab20a8b24f3b
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 1a5f2cd60e09b67cee4bab211bba4e07e9ef181f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="manage-store-inventory"></a>Zarządzanie zapasami w sklepie
+# Zarządzanie zapasami w sklepie
+<a id="manage-store-inventory" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
@@ -35,15 +36,21 @@ W tym artykule opisano typy dokumentów, których można używać do zarządzani
 
 Następujące typy dokumentów służą do zarządzania zapasami w organizacji.
 
-## <a name="purchase-orders"></a>Zamówienia zakupu
-Zamówienia zakupu są tworzone w centrali. Jeśli magazyn sprzedaży detalicznej znajduje się w nagłówku zamówienia zakupu, zamówienia można otrzymać w sklepie przy użyciu aplikacji Modern POS (MPOS) lub Cloud POS dostępnej w module Microsoft Dynamics 365 for Operations — Handel detaliczny. Po wprowadzeniu ilości, które są odbierane w sklepie, można je zapisać lokalnie i modyfikować. Można też zatwierdzić ilości i wysłać do centrali. Zlokalizowane w centrali ilości, które zostały odebrane w sklepie, są wyświetlane w programie Dynamics 365 for Operations w polu **Dostarczone teraz** na zamówieniu zakupu.
+## Zamówienia zakupu
+<a id="purchase-orders" class="xliff"></a>
+Zamówienia zakupu są tworzone w centrali. Jeśli magazyn sprzedaży detalicznej znajduje się w nagłówku zamówienia zakupu, zamówienia można otrzymać w sklepie przy użyciu aplikacji Modern POS (MPOS) lub Cloud POS dostępnej w module Microsoft Dynamics 365 for Retail. Po wprowadzeniu ilości, które są odbierane w sklepie, można je zapisać lokalnie i modyfikować. Można też zatwierdzić ilości i wysłać do centrali. Zlokalizowane w centrali ilości, które zostały odebrane w sklepie, są wyświetlane w programie Dynamics 365 for Retail w polu **Dostarczone teraz** na zamówieniu zakupu.
 
-## <a name="transfer-orders"></a>Zamówienia przeniesienia
-W zleceniu przesunięcia można określić, że dany sklep jest lokalizacją, z której można wysyłać towary. W takim przypadku zamówienie przeniesienia jest wyświetlane w sklepie jako żądanie pobrania w aplikacji MPOS lub Cloud POS. Po pobraniu żądanych ilości zostaną one zatwierdzone i przesłane do centrali. Zlokalizowane w centrali ilości, które zostały pobrane w sklepie, są wyświetlane w programie Dynamics 365 for Operations w polu **Wyślij teraz** na zamówieniu przeniesienia. W zleceniu przesunięcia można określić, że dany sklep jest lokalizacją, do której można wysyłać towary. W takim przypadku zamówienie przeniesienia jest wyświetlane w sklepie jako żądanie przyjęcia w aplikacji MPOS lub Cloud POS. Po wprowadzeniu ilości, które są odbierane w sklepie, można je zapisać lokalnie i modyfikować. Można też zatwierdzić ilości i wysłać do centrali. Zlokalizowane w centrali ilości, które zostały odebrane w sklepie, są wyświetlane w programie Dynamics 365 for Operations w polu **Dostarczone teraz** na zamówieniu przeniesienia.
+## Zamówienia przeniesienia
+<a id="transfer-orders" class="xliff"></a>
+W zleceniu przesunięcia można określić, że dany sklep jest lokalizacją, z której można wysyłać towary. W takim przypadku zamówienie przeniesienia jest wyświetlane w sklepie jako żądanie pobrania w aplikacji MPOS lub Cloud POS. Po pobraniu żądanych ilości zostaną one zatwierdzone i przesłane do centrali. Zlokalizowane w centrali ilości, które zostały pobrane w sklepie, są wyświetlane w programie Dynamics 365 for Retail w polu **Wyślij teraz** na zamówieniu przeniesienia. W zleceniu przesunięcia można określić, że dany sklep jest lokalizacją, do której można wysyłać towary. W takim przypadku zamówienie przeniesienia jest wyświetlane w sklepie jako żądanie przyjęcia w aplikacji MPOS lub Cloud POS. Po wprowadzeniu ilości, które są odbierane w sklepie, można je zapisać lokalnie i modyfikować. Można też zatwierdzić ilości i wysłać do centrali. Zlokalizowane w centrali ilości, które zostały odebrane w sklepie, są wyświetlane w programie Dynamics 365 for Retail w polu **Dostarczone teraz** na zamówieniu przeniesienia.
 
-## <a name="stock-counts"></a>Stany zapasów z inwentaryzacji
+## Stany zapasów z inwentaryzacji
+<a id="stock-counts" class="xliff"></a>
 Inwentaryzacje mogą być zaplanowane lub niezaplanowane. Zaplanowana inwentaryzacja jest inicjowana z poziomu centrali, która określa towary podlegające inwentaryzacji. Centrala tworzy dokument inwentaryzacji, który można otrzymać w sklepie. Rzeczywista ilość dostępnych zapasów jest wprowadzana w aplikacji MPOS lub Cloud POS. Niezaplanowane inwentaryzacje są inicjowane w sklepie, a rzeczywista ilość dostępnych zapasów jest aktualizowana w aplikacji MPOS lub Cloud POS. W odróżnieniu od zaplanowanej inwentaryzacji niezaplanowana nie ma wstępnie zdefiniowanej listy pozycji. Po zakończeniu inwentaryzacja dowolnego typu jest zatwierdzana wysyłana do centrali. W centrali dane podlegają sprawdzeniu i zaksięgowaniu.
 
+## Wyszukiwanie w magazynie
+<a id="inventory-lookup" class="xliff"></a>
+Bieżącą ilość produktów dostępnych w wielu sklepach i magazynach można obejrzeć na stronie Wyszukiwanie w magazynie. Oprócz bieżącej ilości dostępnej w zapasach można wyświetlić przyszłe dostępności zapasów (ATP) dla poszczególnych sklepów. Aby to zrobić, zaznacz sklep, dla którego chcesz obejrzeć ATP, i kliknij przycisk **Pokaż dostępność sklepu**.
 
 
 

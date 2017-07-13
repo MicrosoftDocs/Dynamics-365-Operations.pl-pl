@@ -1,83 +1,94 @@
 ---
 title: Wymiary finansowe
-description: "W tym artykule omówiono różne typy wymiarów finansowych oraz sposoby ich konfigurowania."
-author: RobinARH
+description: "W tym temacie opisano różne typy wymiarów finansowych oraz sposoby ich konfigurowania."
+author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ems.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 audience: Application User
-ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 25871
-ms.assetid: af54621c-c8be-4b72-b6df-dcf886c40ce4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 01f189b8de3f0cc707dcc54f4cde75aed95b8e3f
+ms.sourcegitcommit: a0edbad63c51d111d7c8985aa7fdf7312da6149d
+ms.openlocfilehash: e82d53b3f6b4c8d3e2363f26576331e1d03434d9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="financial-dimensions"></a>Wymiary finansowe
+# Wymiary finansowe
+<a id="financial-dimensions" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+W tym temacie omówiono różne typy wymiarów finansowych oraz sposoby ich konfigurowania.
 
-W tym artykule omówiono różne typy wymiarów finansowych oraz sposoby ich konfigurowania.
+Strona **Wymiary finansowe** umożliwia tworzenie wymiarów finansowych, które mogą być używane jako segmenty kont w planach kont. Istnieją dwa typy wymiarów finansowych: wymiary niestandardowe i wymiary oparte na jednostce. Niestandardowe wymiary są współużytkowane przez podmioty prawne i wartości są wprowadzane i obsługiwane przez użytkowników. W wymiarach opartych na jednostce wartości są zdefiniowane w innych miejscach w systemie, takich jak jednostki Odbiorcy lub Sklepy. Niektóre wymiary oparte na jednostce są współużytkowane przez podmioty prawne, podczas gdy inne są przypisane do określonej firmy. 
 
-Strona Wymiary finansowe umożliwia utworzenie wymiarów finansowych, które mogą być używane jako segmenty obrachunkowe dla udostępnionych planów kont. Istnieją dwa typy wymiarów finansowych: wymiary niestandardowe i wymiary oparte na jednostce. Niestandardowe wymiary są współużytkowane przez podmioty prawne i wartości są wprowadzane i obsługiwane przez użytkownika. Wymiary oparte na jednostce to wymiary, których wartości są zdefiniowane w innych miejscach w systemie, takich jak Odbiorcy lub Sklepy. Niektóre wymiary oparte na jednostce są współużytkowane przez podmioty prawne, a niektóre są przypisane do określonej firmy. 
+Po utworzeniu wymiarów finansowych na stronie **Wartości wymiarów finansowych** przypisz dodatkowe właściwości do każdego wymiaru finansowego. 
 
-Po utworzeniu wymiarów finansowych, na stronie Wartości wymiarów finansowych przypisz dodatkowe właściwości do każdego wymiaru finansowego. 
+Wymiary finansowe mogą służyć do reprezentowania firm. Nie ma obowiązku tworzenia firm w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Jednak wymiary finansowe nie są zaprojektowane do zaspokajania wymagań operacyjnych ani biznesowych firmy. Funkcję księgowania międzyjednostkowego w programie Finance and Operations zaprojektowano tylko z myślą o zapisach księgowych, które są tworzone przy każdej transakcji. 
 
-Wprawdzie można używać wymiarów finansowych do reprezentowania firmy bez tworzenia firm w programie Microsoft Dynamics 365 for Operations, ale wymiary finansowe nie są przeznaczone do zaspokajania operacyjnych lub biznesowych potrzeb firmy. Funkcję księgowania międzyjednostkowego w programie Microsoft Dynamics 365 for Operations zaprojektowano tylko z myślą o zapisach księgowych, które są tworzone przy każdej transakcji. 
+Przed skonfigurowaniem wymiarów finansowych jako firmy oceń swoje procesy biznesowe w następujących obszarach, aby ustalić, czy ta konfiguracja będzie działać w Twojej organizacji:
 
-Przed skonfigurowaniem wymiarów finansowych jako firmy, oceń swoje procesy biznesowe w następujących obszarach, aby ustalić, czy ta konfiguracja będzie działać w danej organizacji:
+- Zapasy
+- Sprzedaż i zakupy między wymiarami finansowymi i firmami
+- Obliczanie i raportowanie podatku
+- Raportowanie operacyjne
 
--   Zapasy
--   Sprzedaż i zakupy między wymiarami finansowymi i firmami
--   Obliczanie i raportowanie podatku
--   Raportowanie operacyjne
+Poniżej przedstawiono wybrane ograniczenia:
 
-Kilka przykładów ograniczeń:
+- Można używać funkcji podatkowych tylko z firmami, a nie z wymiarami finansowymi.
+- Niektóre raporty nie zawierają wymiarów finansowych. W związku z tym w celu raportowania według wymiarów finansowych może być konieczne modyfikowanie raportów.
 
--   Można używać funkcji podatkowych tylko z firmami, a nie z wymiarami finansowymi.
--   Niektóre raporty nie zawierają wymiarów finansowych, dlatego nie można zawsze raportować wg wymiaru finansowego, chyba że te raporty są modyfikowane.
+## Wymiary niestandardowe
+<a id="custom-dimensions" class="xliff"></a>
 
-**Wymiary niestandardowe** 
+Aby utworzyć zdefiniowany przez użytkownika typ wymiaru finansowego, w polu **Użyj wartości z** wybierz opcję **&lt; Wymiar niestandardowy &gt;**. Można również określić maskę konta, aby ograniczyć typ i ilość informacji, które można wprowadzić dla wartości wymiarów,. Można wprowadzić znaki, które pozostają takie same dla każdej wartości wymiaru, na przykład litery lub łącznik (-). Można także wprowadzić znaki cyfr (\#) oraz handlowego „i” (&) jako symbole zastępcze liter i cyfr, które zmieniają się za każdym razem, gdy wartość wymiaru jest tworzona. Znak cyfry (\#) służy jako symbol zastępczy dla cyfr, a znak handlowe „i” jako symbol zastępczy dla liter. Pole maski formatu jest dostępne tylko w przypadku zaznaczenia opcji **&lt; Wymiar niestandardowy &gt;** w polu **Użyj wartości z**.
 
-Aby utworzyć zdefiniowany przez użytkownika typ wymiaru finansowego, w kolumnie Użyj wartości z pola wybierz opcję &lt; Wymiar niestandardowy &gt;. Można również określić maskę konta, aby ograniczyć typ i ilość informacji, które można wprowadzić dla wartości wymiarów,. Można wprowadzić znaki, które pozostają takie same dla każdej wartości wymiaru, takie jak litery lub łącznik. Można także wprowadzić znaki cyfr (\#) oraz handlowego „i” (&) jako symbole zastępcze liter i cyfr, które zmieniają się za każdym razem, gdy wartość wymiaru jest tworzona. Znak cyfry (\#) służy jako symbol zastępczy dla cyfr, a znak handlowe „i” jako symbol zastępczy dla liter. 
+**Przykład**
 
-**Przykład** 
+Aby ograniczyć wartość wymiaru do liter „CC” i trzech cyfr, należy wprowadzić **CC-\#\#\#** jako maskę formatu.
 
-Aby ograniczyć wartość wymiaru do liter CC i trzech cyfr, należy wprowadzić CC-\#\#\# jako maskę formatu. To pole jest dostępne tylko w przypadku zaznaczenia opcji &lt; Wymiar niestandardowy &gt; w polu Użyj wartości z. 
+## Wymiary oparte na jednostce
+<a id="entity-backed-dimensions" class="xliff"></a>
 
-**Wymiary oparte na jednostce** 
+Aby utworzyć wymiary oparte na jednostce, w polu **Użyj wartości z** wybierz jednostkę zdefiniowaną przez system, która będzie podstawą wymiaru finansowego. Wartości wymiarów finansowych będą wtedy tworzone na bazie tej jednostki. Na przykład aby utworzyć wartości wymiarów dla projektów, wybierz opcję **Projekty**. Wartość wymiaru zostanie wtedy utworzona dla każdej nazwy projektu. Strona **Wartości wymiarów finansowych** pokazuje wartości jednostki. Jeśli te wartości są związane z konkretną firmą, na stronie widać również firmę.
 
-Aby utworzyć wymiary oparte na jednostce, w polu Użyj wartości z wybierz podmiot zdefiniowany przez system, który będzie podstawą wymiaru finansowego. Wartości wymiaru finansowego są tworzone na podstawie tego zaznaczenia. Na przykład aby utworzyć wartości wymiarów dla projektów, wybierz opcję Projekty. Wartość wymiaru zostanie utworzona dla każdej nazwy projektu. Strona Wartości wymiarów pokazuje wartości dla firmy, a jeśli są to wartości charakterystyczne dla danego podmiotu, także firmę. 
+## Aktywowanie wymiaru
+<a id="activating-dimensions" class="xliff"></a>
 
-**Aktywowanie wymiaru** 
+Po uaktywnieniu wymiaru finansowego tabela zostanie zaktualizowana, tak aby zawierała nazwę wymiaru finansowego. Usunięte wymiary zostaną wykasowane. Wartości wymiaru finansowego można wprowadzić przed jego uaktywnieniem. Jednak wymiar finansowy będzie mógł być zużywany dopiero po uaktywnieniu. Na przykład, nie można dodać wymiaru finansowego do struktury konta przed aktywowaniem wymiaru finansowego. Po kliknięciu przycisku **Uaktywnij** wszystkie wymiary są aktualizowane i pokazują zmianę stanu. 
 
-Aktywowanie wymiaru finansowego aktualizuje tabelę o nazwę wymiaru finansowego i kasuje usunięte wymiary. Można wprowadzić wartości wymiarów przed aktywacją wymiaru finansowego, ale nie można używać wymiaru finansowego, dopóki nie zostanie aktywowany. Na przykład, nie można dodać wymiaru finansowego do struktury konta przed aktywowaniem wymiaru finansowego. Należy kliknąć przycisk Aktywuj, aby zaktualizować wszystkie wymiary ze zmianą stanu. 
+## Tłumaczenia
+<a id="translations" class="xliff"></a>
 
-**Tłumaczenia** 
+Na stronie **Tłumaczenie tekstu** można wprowadzić tekst dla wybranego wymiaru finansowego w różnych językach. Na stronie **Tłumaczenie konta głównego** można wprowadzić tekst dla konta głównego w różnych językach. 
 
-Strona Tłumaczenie tekstu pozwala wprowadzać tekst, który będzie wyświetlany w różnych językach dla wybranego wymiaru finansowego. Strona tłumaczenia konta głównego pozwala wprowadzać tekst wyświetlany w różnych językach dla konta głównego. 
+## Firma zastępuje
+<a id="legal-entity-overrides" class="xliff"></a>
 
-**Firma zastępuje** 
+Nie wszystkie wymiary mogą być używane we wszystkich firmach. Ponadto niektóre wymiary mogą mieć zastosowanie tylko do wybranych okresów. W takich przypadkach można w sekcji **Firma zastępuje** określić firmy, dla których wymiar powinien być zawieszony, właściciela oraz okres aktywności wymiaru.
 
-Nie wszystkie wymiary są prawidłowe dla wszystkich firm, a niektóre mogą być dostępne tylko w określonym przedziale czasu. W tym scenariuszu sekcja Firma zastępuje może służyć do identyfikowania firm, dla wymiar powinien być zawieszony, właściciela oraz okresu aktywności wymiaru.
+## Usuwanie wymiarów finansowych
+<a id="deleting-financial-dimensions" class="xliff"></a>
 
+Aby pomóc utrzymać więzy integralności danych, w wyjątkowych sytuacjach można usuwać wymiary finansowe. Jeśli zostanie podjęta próba usunięcia wymiaru finansowego, sprawdzane są następujące kryteria:
 
+- Czy wymiar finansowy został użyty w jakiejkolwiek zaksięgowanej lub niezaksięgowanej transakcji albo w jakimkolwiek rodzaju kombinacja wartości wymiarów?
+- Czy wymiar finansowy jest używany w jakiejkolwiek aktywnej strukturze konta, strukturze reguły zaawansowanej lub zestawie wymiarów finansowych?
+- Czy wymiar finansowy wchodzi w skład domyślnego formatu integracji wymiarów finansowych?
+- Czy wymiar finansowy ustawiono jako wymiar domyślny?
 
-
-
+Jeśli którekolwiek z tych kryteriów jest spełnione, nie można usunąć wymiaru finansowego.
 

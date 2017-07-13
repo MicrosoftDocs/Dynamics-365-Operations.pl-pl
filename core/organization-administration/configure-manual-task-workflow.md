@@ -3,13 +3,13 @@ title: "Konfigurowanie zadania ręcznego w przepływie pracy"
 description: "W tym temacie wyjaśniono sposób konfigurowania właściwości zadania ręcznego."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5d2a69066a1245d5b86d27d01db4b67d4a490488
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 242abaae1aa17578ba8eab4b2664794ff2c2caec
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-a-manual-task-in-a-workflow"></a>Konfigurowanie zadania ręcznego w przepływie pracy
+# Konfigurowanie zadania ręcznego w przepływie pracy
+<a id="configure-a-manual-task-in-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,13 +35,15 @@ W tym temacie wyjaśniono sposób konfigurowania właściwości zadania ręczneg
 
 Aby skonfigurować zadanie ręczne, w edytorze przepływu pracy kliknij zadanie prawym przyciskiem myszy i wybierz polecenie **Właściwości**, a zostanie otwarta strona **Właściwości**. Następnie za pomocą procedur zamieszczonych niżej skonfiguruj właściwości zadania ręcznego.
 
-## <a name="name-the-task"></a>Nadawanie nazwy zadaniu
+## Nadawanie nazwy zadaniu
+<a id="name-the-task" class="xliff"></a>
 Wykonaj następujące kroki, aby wprowadzić nazwę zadania ręcznego.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
 2.  W polu **Nazwa** wprowadź unikatową nazwę zadania.
 
-## <a name="enter-a-subject-line-and-instructions"></a>Wprowadzanie wiersza tematu i instrukcji
+## Wprowadzanie wiersza tematu i instrukcji
+<a id="enter-a-subject-line-and-instructions" class="xliff"></a>
 Należy wprowadzić wiersz tematu i instrukcje dla użytkowników przypisanych do zadania. Na przykład jeśli konfigurujesz zadanie dla zapotrzebowań na zakup, użytkownik przypisany do zadania zobaczy wiersz tematu i instrukcje na stronie **Zapotrzebowania na zakup**. Wiersz tematu pojawia się na pasku komunikatów na stronie. Może wtedy kliknąć ikonę na pasku komunikatów i przeczytać instrukcje. Aby wprowadzić wiersz tematu i instrukcje, należy wykonać poniższe kroki.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
@@ -74,7 +77,8 @@ Należy wprowadzić wiersz tematu i instrukcje dla użytkowników przypisanych d
     5.  Aby spersonalizować tekst, możesz wstawić symbole zastępcze, jak opisano w kroku 6.
     6.  Kliknij przycisk **Zamknij**.
 
-## <a name="assign-the-task"></a>Przypisywanie zadania
+## Przypisywanie zadania
+<a id="assign-the-task" class="xliff"></a>
 Wykonaj poniższe kroki, aby określić, komu ma zostać przypisane to zadanie ręczne.
 
 1.  W lewym okienku kliknij opcję **Przypisanie**.
@@ -126,10 +130,10 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisane to zadanie r
     </tr>
     <tr class="even">
     <td>Użytkownik</td>
-    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Operations</td>
+    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Finance and Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz przypisać zadanie, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Finance and Operations. Wybierz użytkowników, którym chcesz przypisać zadanie, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -160,7 +164,8 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisane to zadanie r
 
     Jeśli użytkownik nie wykona zadania w wyznaczonym czasie, staje się ono zaległe. Zadanie zaległe można eskalować na podstawie opcji wybranych na stronie w obszarze **Eskalacja**.
 
-## <a name="specify-what-happens-when-the-task-is-overdue"></a>Określanie, co się dzieje z zadaniem zaległym
+## Określanie, co się dzieje z zadaniem zaległym
+<a id="specify-what-happens-when-the-task-is-overdue" class="xliff"></a>
 Jeśli użytkownik nie wykona zadania ręcznego w wyznaczonym czasie, staje się ono zaległe. Zadanie zaległe może być eskalowane lub automatycznie przypisywane do innego użytkownika. Wykonaj następujące kroki, eskalować zaległe zadanie.
 
 1.  W lewym okienku kliknij opcję **Eskalacja**.
@@ -212,10 +217,10 @@ Jeśli użytkownik nie wykona zadania ręcznego w wyznaczonym czasie, staje się
     </tr>
     <tr class="odd">
     <td>Użytkownik</td>
-    <td>Konkretni użytkownicy programu Dynamics 365 for Operations</td>
+    <td>Konkretny użytkownik programu Finance and Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, do których chcesz eskalować zadanie, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Finance and Operations. Wybierz użytkowników, do których chcesz eskalować zadanie, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -231,7 +236,8 @@ Jeśli użytkownik nie wykona zadania ręcznego w wyznaczonym czasie, staje się
 5.  Powtórz kroki od 3 do 4 dla każdego użytkownika, który powinien zostać dodany do ścieżki eskalacji. Można zmienić kolejność użytkowników.
 6.  Jeśli użytkownicy wymienieni w ścieżce eskalacji nie wykonają zadania w wyznaczonym czasie, system wykona na nim operację. Aby określić akcję podejmowaną przez system, wybierz wiersz **Akcja**, a następnie na karcie **Zakończ działanie** wybierz akcję.
 
-## <a name="specify-when-the-system-automatically-acts-on-the-task"></a>Określanie, kiedy system automatycznie wykonuje operację na zadaniu
+## Określanie, kiedy system automatycznie wykonuje operację na zadaniu
+<a id="specify-when-the-system-automatically-acts-on-the-task" class="xliff"></a>
 Można skonfigurować system, aby podejmował akcję wobec zadania ręcznego, jeśli są spełnione określone warunki. Na przykład zadanie wymaga, aby członek działu raportów z wydatków przeglądał paragony dostarczane razem z raportem z wydatków. Zgodnie z zasadami firmy to zadanie trzeba wykonać, jeśli łączna kwota raportu z wydatków jest większa niż 100 USD. W tym scenariuszu można tak skonfigurować system, aby automatycznie oznaczał zadanie jako **Ukończone**, gdy łączna kwota jest mniejsza niż 100. Wykonaj następujące kroki, aby określić, kiedy system podejmuje akcję wobec zadania ręcznego.
 
 1.  W lewym okienku kliknij opcję **Akcje automatyczne**.
@@ -247,7 +253,8 @@ Można skonfigurować system, aby podejmował akcję wobec zadania ręcznego, je
 
 7.  Z listy **Akcja automatycznego ukończenia** wybierz akcję, jaką ma podjąć system wobec zadania.
 
-## <a name="specify-when-notifications-are-sent"></a>Określanie, kiedy są wysyłane powiadomienia
+## Określanie, kiedy są wysyłane powiadomienia
+<a id="specify-when-notifications-are-sent" class="xliff"></a>
 Możliwe jest wysyłanie do odpowiednich osób powiadomień w przypadku delegowania, eskalowania, ukończenia lub odrzucenia zadania ręcznego albo żądania jego modyfikacji. Wykonaj następujące kroki, aby określić, kiedy i do kogo są wysyłane powiadomienia.
 
 1.  W lewym okienku kliknij opcję **Powiadomienia**.
@@ -306,10 +313,10 @@ Możliwe jest wysyłanie do odpowiednich osób powiadomień w przypadku delegowa
     </tr>
     <tr class="odd">
     <td>Użytkownik</td>
-    <td>Konkretni użytkownicy programu Dynamics 365 for Operations</td>
+    <td>Konkretny użytkownik programu Finance and Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Finance and Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -317,7 +324,8 @@ Możliwe jest wysyłanie do odpowiednich osób powiadomień w przypadku delegowa
 
 8.  Powtórz kroki od 3 do 7 dla każdego zdarzenia wybranego w kroku 2.
 
-## <a name="set-a-time-limit"></a>Ustawianie limitu czasu
+## Ustawianie limitu czasu
+<a id="set-a-time-limit" class="xliff"></a>
 Jeśli zadanie ręczne musi zostać ukończone w określonym czasie, wykonaj następujące kroki. **Uwaga:** Opcje wybranej w tej procedurze zastępują opcje wybrane na stronie w obszarach **Przypisanie** i **Eskalacja**.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia zaawansowane**.
@@ -331,7 +339,8 @@ Jeśli zadanie ręczne musi zostać ukończone w określonym czasie, wykonaj nas
 
 4.  W przypadku przekroczenia tego limitu czasu system wykona operację na zadaniu. Na liście **Akcja** zaznacz akcję, jaką ma podjąć system.
 
-## <a name="specify-which-actions-are-available-to-the-user"></a>Określanie akcji dostępnych użytkownikowi
+## Określanie akcji dostępnych użytkownikowi
+<a id="specify-which-actions-are-available-to-the-user" class="xliff"></a>
 Gdy zadanie ręczne zostanie przypisane użytkownikowi, musi on podjąć wobec niego działanie. Wykonaj następujące kroki, aby określić, które akcje użytkownik może wykonywać na zadaniu. **Uwaga:** Dostępne akcje będą się różnić w zależności od projektu zadania.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia zaawansowane**.

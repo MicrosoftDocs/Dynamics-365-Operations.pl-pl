@@ -3,7 +3,7 @@ title: "Obiekty kosztów"
 description: "Ten artykuł zawiera informacje o obiektach kosztów. Wyjaśniono w nim też sposób kumulowania kosztów i ilości. Obiekt kosztów to jednostka, dla której są kumulowane koszty i ilości. Jednostką obiektu kosztów może być produkt lub wariant produktu, takich jak wariant pod względem koloru i stylu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventCostOnhandItem
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19451
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
@@ -20,22 +20,24 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c818bfac6645b71bcc8b2249534aa80907786651
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 823d3edd106925339607d01fbf5f1921b85ff244
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="cost-objects"></a>Obiekty kosztów
+# Obiekty kosztów
+<a id="cost-objects" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Ten artykuł zawiera informacje o obiektach kosztów. Wyjaśniono w nim też sposób kumulowania kosztów i ilości. Obiekt kosztów to jednostka, dla której są kumulowane koszty i ilości. Jednostką obiektu kosztów może być produkt lub wariant produktu, takich jak wariant pod względem koloru i stylu.  
 
-<a name="cost-objects"></a>Obiekty kosztów
+Obiekty kosztów
+<a id="cost-objects" class="xliff"></a>
 ------------
 
 Na stronie **Obiekty kosztów** znajduje się lista wszystkich obiektów kosztów, które są zarejestrowane dla produktu. Obiekty kosztów są definiowane na podstawie danych z następujących źródeł:
@@ -58,7 +60,8 @@ W poniższej tabeli przedstawiono, co jest przedmiotem kosztu i co jest obiektem
 | Obiekt kosztów      | x           | x    |           |           |
 | Obiekt magazynu | x           | x    |  x        | x         |
 
-## <a name="accumulation-of-costs-and-quantities"></a>Akumulacja kosztów i ilości
+## Akumulacja kosztów i ilości
+<a id="accumulation-of-costs-and-quantities" class="xliff"></a>
 -   Pole **Wartość** zawiera sumę z następujących wartości:
     -   Fizyczna wartość kosztu
     -   Wartość finansowa
@@ -71,7 +74,8 @@ W poniższej tabeli przedstawiono, co jest przedmiotem kosztu i co jest obiektem
 
 **Uwaga:** Parametr **Włącz wartość fizyczną** nie ma wpływu na wcześniejsze obliczenia.
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Grupa wymiarów produktu](https://technet.microsoft.com/en-us/library/aa499382.aspx)
@@ -80,7 +84,7 @@ W poniższej tabeli przedstawiono, co jest przedmiotem kosztu i co jest obiektem
 
 [Grupa wymiarów śledzenia](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[Nowości i zmiany w systemie Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Nowości i zmiany](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed)
 
 [Wpisy kosztów](cost-entries.md)
 

@@ -3,7 +3,7 @@ title: Marszruty i operacje
 description: "Ten temat zawiera informacje o marszrutach i operacjach. Marszruta definiuje proces wytwarzania produktu lub wariantu produktu. Opisuje każdy krok (operację) w procesie produkcji oraz kolejność, w jakiej te kroki należy wykonać. Dla każdego kroku marszruta definiuje również wymagane zasoby operacyjne, wymagane czasy przezbrajania i wykonywania oraz sposób obliczania kosztów."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,43 +19,48 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3abc4e6f648ecc10105346ce181d8bc752d95f17
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 61548f2e308781e8329ca3cd26c3e6502d2f92c9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="routes-and-operations"></a>Marszruty i operacje
+# Marszruty i operacje
+<a id="routes-and-operations" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Ten temat zawiera informacje o marszrutach i operacjach. Marszruta definiuje proces wytwarzania produktu lub wariantu produktu. Opisuje każdy krok (operację) w procesie produkcji oraz kolejność, w jakiej te kroki należy wykonać. Dla każdego kroku marszruta definiuje również wymagane zasoby operacyjne, wymagane czasy przezbrajania i wykonywania oraz sposób obliczania kosztów.
 
-<a name="overview"></a>Przegląd
+Przegląd
+<a id="overview" class="xliff"></a>
 --------
 
-Marszruta opisuje kolejność operacji niezbędnych w celu wytworzenia produktu lub wariantu produktu. Dla każdej operacji marszruta definiuje również wymagane zasoby operacyjne, czas potrzebny na przezbrojenie i wykonanie operacji oraz sposób obliczania kosztów. Można użyć tej samej marszruty do wytwarzania wielu produktów lub zdefiniować unikatową marszrutę dla każdego produktu lub wariantu produktu. Można nawet mieć wiele marszrut dla tego samego produktu. W takim przypadku używana marszruta zmienia się i zależy od czynników takich jak ilość, która musi zostać wyprodukowana. Definicja marszruty w programie Microsoft Dynamics 365 for Operations składa się z czterech oddzielnych elementów, które wspólnie opisują proces produkcji:
+Marszruta opisuje kolejność operacji niezbędnych w celu wytworzenia produktu lub wariantu produktu. Dla każdej operacji marszruta definiuje również wymagane zasoby operacyjne, czas potrzebny na przezbrojenie i wykonanie operacji oraz sposób obliczania kosztów. Można użyć tej samej marszruty do wytwarzania wielu produktów lub zdefiniować unikatową marszrutę dla każdego produktu lub wariantu produktu. Można nawet mieć wiele marszrut dla tego samego produktu. W takim przypadku używana marszruta zmienia się i zależy od czynników takich jak ilość, która musi zostać wyprodukowana. Definicja marszruty w programie Microsoft Dynamics 365 for Finance and Operations składa się z czterech oddzielnych elementów, które wspólnie opisują proces produkcji:
 
 -   **Marszruta** — Marszruta definiuje strukturę procesu produkcji. Innymi słowy definiuje kolejność operacji.
 -   **Operacja** — Operacja identyfikuje nazwany krok w marszrucie, taki jak **Montaż**. Ta sama operacja może wystąpić w wielu marszrutach i mieć różne numery operacji.
 -   **Relacja operacji** — Relacja operacji definiuje właściwości operacyjnych operacji, takie jak czasy przezbrajania i wykonywania, kategorie kosztów, parametry zużycia i zapotrzebowanie na zasoby. Relacja operacji umożliwia różnicowanie właściwości operacyjnych operacji w zależności od marszruty, w której jest używana operacja, lub produktów, które są wytwarzane.
 -   **Wersja marszruty** — Wersja marszruty określa marszrutę używaną do wytworzenia produktu lub wariantu produktu. Wersje marszrut umożliwiają wykorzystywanie marszrut do różnych produktów lub ich późniejszą zmianę. Umożliwiają również używanie różnych marszrut do wytwarzania tego samego produktu. W takim przypadku używana marszruta zależy od czynników takich jak lokalizacja lub ilość, która musi zostać wyprodukowana.
 
-## <a name="routes"></a>Marszruty
-Marszruta opisuje kolejność operacji niezbędnych do wytworzenia produktu lub wariantu produktu. Każdej operacji jest przypisywany numer operacji i operacja następująca. Kolejność operacji tworzy sieć marszrut, które mogą być reprezentowane przez ukierunkowany wykres mający jeden lub więcej punktów początkowych i jeden punkt końcowy. W programie Dynamics 365 for Operations marszruty są rozróżniane na podstawie typu struktury. Istnieją dwa typy marszrut: proste i sieciowe. W oknie Parametry kontroli produkcji można określić, czy mogą być używane tylko marszruty proste czy też można używać bardziej złożonych marszrut sieciowych.
+## Marszruty
+<a id="routes" class="xliff"></a>
+Marszruta opisuje kolejność operacji niezbędnych do wytworzenia produktu lub wariantu produktu. Każdej operacji jest przypisywany numer operacji i operacja następująca. Kolejność operacji tworzy sieć marszrut, które mogą być reprezentowane przez ukierunkowany wykres mający jeden lub więcej punktów początkowych i jeden punkt końcowy. W programie Dynamics 365 for Finance and Operations marszruty są rozróżniane na podstawie typu struktury. Istnieją dwa typy marszrut: proste i sieciowe. W oknie Parametry kontroli produkcji można określić, czy mogą być używane tylko marszruty proste czy też można używać bardziej złożonych marszrut sieciowych.
 
-### <a name="simple-routes"></a>Marszruty proste
+### Marszruty proste
+<a id="simple-routes" class="xliff"></a>
 
 Marszruta prosta jest sekwencyjna i istnieje tylko jeden punkt początkowy marszruty.  
 
 [![Marszruta prosta](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-Jeśli w oknie Parametry kontroli produkcji zostanie włączona obsługa tylko prostych marszrut, program Dynamics 365 for Operations będzie automatycznie generował numery operacji (10, 20, 30 i tak dalej) podczas definiowania marszruty.
+Jeśli w oknie Parametry kontroli produkcji zostanie włączona obsługa tylko prostych marszrut, program Finance and Operations będzie automatycznie generował numery operacji (10, 20, 30 i tak dalej) podczas definiowania marszruty.
 
-### <a name="route-networks"></a>Marszruty sieciowe
+### Marszruty sieciowe
+<a id="route-networks" class="xliff"></a>
 
 Jeśli w oknie Parametry kontroli produkcji włączysz obsługę bardziej złożonych marszrut sieciowych, można definiować marszruty mające wiele punktów początkowych oraz operacje, które mogą być wykonywane równolegle.  
 
@@ -67,7 +72,8 @@ Jeśli w oknie Parametry kontroli produkcji włączysz obsługę bardziej złoż
 -   Nie ma żadnej gwarancji, że wiele operacji mających tę samą operację następującą (na przykład operacje 30 i 40 na wcześniejszej ilustracji) będą rzeczywiście wykonywane równolegle. Dostępność i zdolności produkcyjne zasobów mogą nakładać ograniczenia na sposób planowania operacji.
 -   Nie można używać wartości 0 (zero) jako numeru operacji. Ten numer jest zarezerwowany i służy do określania, że ostatnia operacja w marszrucie ma żadnej operacji następującej.
 
-### <a name="parallel-operations"></a>Operacje równoległe
+### Operacje równoległe
+<a id="parallel-operations" class="xliff"></a>
 
 Czasami w celu wykonania operacji jest wymagane połączenie wielu zasobów operacyjnych mających różne charakterystyki. Na przykład operacja montażu może wymagać maszyny, narzędzia oraz jednego pracownika nadzoru na każdą parę maszyn. Ten przykład można wymodelować przy użyciu operacji równoległych, gdzie jedna operacja jest wyznaczona jako główna, a pozostałe jako podrzędne.  
 
@@ -79,16 +85,18 @@ Zarówno operacja główna, jak i operacje podrzędne muszą mieć ten sam numer
 
 W poprzednim przykładzie zapotrzebowaniem na zasób dla operacji głównej (30) jest maszyna, natomiast zapotrzebowaniami na zasoby dla operacji podrzędnych (30' i 30'') są narzędzie i pracownik. Pięćdziesięcioprocentowe obciążenie pracą pomaga zagwarantować, że zaplanowany pracownik może nadzorować dwie maszyny w tym samym czasie.
 
-### <a name="approval-of-routes"></a>Zatwierdzenie marszrut
+### Zatwierdzenie marszrut
+<a id="approval-of-routes" class="xliff"></a>
 
 Marszruta musi zostać zatwierdzona, żeby można było jej użyć w procesie planowania lub produkcji. Zatwierdzenie wskazuje, że projektowanie marszruty zostało ukończone. Ten sam zwolniony produkt albo zwolniony wariant produktu może mieć wiele zatwierdzonych marszrut. Na ogół zatwierdzenie marszruty następuje, gdy zostanie zatwierdzona pierwsza wersja odnośnej marszruty. Jednak w niektórych scenariuszach biznesowych zatwierdzanie marszruty i wersji marszruty to oddzielne działania, które mogą obejmować różnych właścicieli procesów.  
 
 Każdą marszrutę można z osobna zatwierdzać lub odmawiać zatwierdzenia. Należy zwrócić uwagę, że jeśli marszruta jest niezatwierdzona, wszystkie powiązane wersje marszruty są również niezatwierdzone. W oknie Parametry kontroli produkcji można określić, czy marszruty mogą być niezatwierdzone i czy zatwierdzone marszruty można edytować.  
 
-Jeśli trzeba prowadzić dziennik przechowujący informacje o tym, kto zatwierdza każdą marszrutę, można wymagać podpisów elektronicznych dla zatwierdzania marszrut. Wtedy użytkownicy będą musieli potwierdzić swoją tożsamość za pomocą [podpisu elektronicznego](/dynamics365/operations/organization-administration/electronic-signature-overview).
+Jeśli trzeba prowadzić dziennik przechowujący informacje o tym, kto zatwierdza każdą marszrutę, można wymagać podpisów elektronicznych dla zatwierdzania marszrut. Wtedy użytkownicy będą musieli potwierdzić swoją tożsamość za pomocą [podpisu elektronicznego](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview).
 
-## <a name="operations"></a>Rozwiązanie Operations
-Operacja jest etapem procesu produkcji. W programie Dynamics 365 for Operations każda operacja ma identyfikator i prosty opis. Następujące tabele przedstawiają typowe przykłady operacji w warsztacie.
+## Rozwiązanie Operations
+<a id="operations" class="xliff"></a>
+Operacja jest etapem procesu produkcji. W programie Dynamics 365 for Finance and Operations każda operacja ma identyfikator i prosty opis. Następujące tabele przedstawiają typowe przykłady operacji w warsztacie.
 
 | Operacja  | opis        |
 |------------|--------------------|
@@ -99,7 +107,8 @@ Operacja jest etapem procesu produkcji. W programie Dynamics 365 for Operations 
 
 Właściwości operacyjne operacji, takie jak czasy przezbrajania i wykonywania, zapotrzebowanie na zasoby, informacje o kosztach i obliczenia zużycia, określa się w relacji operacji. Więcej informacji o relacjach operacji znajdziesz w następnej części.
 
-## <a name="operation-relations"></a>Relacje operacji
+## Relacje operacji
+<a id="operation-relations" class="xliff"></a>
 W relacji operacji są przechowywane następujące właściwości operacyjnych operacji:
 
 -   Kategorie kosztu
@@ -126,9 +135,10 @@ Relacje operacji dają dużą elastyczność podczas definiowania marszrut. Pona
 
 **Uwaga:** Ponieważ właściwości operacyjne są przechowywane w relacjach operacji dla poszczególnych operacji z podziałem na marszruty, wszystkie wystąpienia tej samej operacji (na przykład Montaż) mają taki sam czas przezbrajania, czasu wykonywania, zapotrzebowania na zasoby i tak dalej. W związku z tym jeśli dwa wystąpienia operacji muszą występować w tej samej marszrucie, ale mają różne czasy wykonywania, należy utworzyć dwie odrębne operacje, takie jak Montaż1 i Montaż2.
 
-### <a name="modifying-product-specific-routes"></a>Modyfikowanie marszrut specyficznych dla produktów
+### Modyfikowanie marszrut specyficznych dla produktów
+<a id="modifying-product-specific-routes" class="xliff"></a>
 
-Po otwarciu strony **Marszruta** ze strony **Szczegóły zwolnionego produktu** są wyświetlane wersje marszruty skojarzone z wybranym zwolnionym produktem. W tym kontekście dla każdej operacji program Dynamics 365 for Operations pokazuje właściwości operacyjne z relacji operacji najlepiej pasującej do wersji marszruty. Można zauważyć, że lista operacji zawiera właściwości **Kod pozycji** i **Kod marszruty** z relacji operacji. W związku z tym można określić, która relacja operacji jest wyświetlana.  
+Po otwarciu strony **Marszruta** ze strony **Szczegóły zwolnionego produktu** są wyświetlane wersje marszruty skojarzone z wybranym zwolnionym produktem. W tym kontekście dla każdej operacji program Dynamics 365 for Finance and Operations pokazuje właściwości operacyjne z relacji operacji najlepiej pasującej do wersji marszruty. Można zauważyć, że lista operacji zawiera właściwości **Kod pozycji** i **Kod marszruty** z relacji operacji. W związku z tym można określić, która relacja operacji jest wyświetlana.  
 
 Na stronie **Marszruta** można zmodyfikować właściwości operacyjnych operacji, takie jak czas wykonywania lub kategorie kosztów. Wprowadzone zmiany są przechowywane w relacji operacji specyficznej dla marszruty i zwolnionego produktu, do których odwołuje się bieżąca wersja marszruty. Jeśli wyświetlana relacja operacji nie jest specyficzna dla marszruty i zwolnionego produktu, przed zapisaniem zmian system tworzy kopię relacji operacji. Ta kopia *jest* specyficzna dla marszruty i zwolnionego produktu. W związku z tym wprowadzone zmiany nie mają wpływu na pozostałe marszruty ani zwolnione produkty. Aby sprawdzić, która relacja operacji jest modyfikowana na stronie **Marszruta**, spójrz w pola **Kod pozycji** i **Kod marszruty**.  
 
@@ -136,23 +146,26 @@ Można także ręcznie utworzyć operację specyficzną dla marszruty i zwolnion
 
 **Uwaga:** Jeśli dodasz nową operację do marszruty na stronie **Marszruta**, relacja operacji zostanie utworzona tylko dla bieżącego zwolnionego produktu. Dlatego jeśli marszruta jest również używana do wytwarzania innych zwolnionych produktów, nie będzie istniała żadna relacja operacji mająca zastosowanie do tych zwolnionych produktów i marszruty nie będzie można już używać dla tych zwolnionych produktów.
 
-### <a name="maintaining-operation-relations-per-route"></a>Obsługa relacji operacji w marszrucie
+### Obsługa relacji operacji w marszrucie
+<a id="maintaining-operation-relations-per-route" class="xliff"></a>
 
 Po otwarciu strony **Szczegóły marszruty** ze strony listy **Marszruty** pojawi się lista wszystkich relacji operacji mających zastosowanie do wybranej marszruty. W związku z tym można łatwo sprawdzić, które właściwości operacyjne są używane do których produktów. Można zmodyfikować domyślne wartości właściwości oraz wartości właściwości specyficzne dla produktu.  
 
 Po dodaniu nowej relacji operacji na stronie **Szczegółów marszruty** pole **Kod marszruty** jest automatycznie ustawiane na **Marszruta**, a pole **Relacja do marszruty** jest ustawiane na numer marszruty bieżącej marszruty.
 
-### <a name="maintaining-operation-relations-per-operation"></a>Obsługa relacji operacji w operacji
+### Obsługa relacji operacji w operacji
+<a id="maintaining-operation-relations-per-operation" class="xliff"></a>
 
 Na stronie **Operacje** można otworzyć stronę **Relacje operacji**. Na tej stronie można zmodyfikować wszystkie relacje operacji dla określonej operacji. Można nawet modyfikować relacje operacji zawierające wartości domyślne.  
 
 Jeśli firma używa standardowych operacji, a parametry operacyjne są takie same we wszystkich produktach i procesach, strona **Relacje operacji** oferuje wygodny sposób zarządzania domyślnymi właściwościami operacyjnymi tych operacji.
 
-### <a name="applying-operation-relations"></a>Stosowanie relacji operacji
+### Stosowanie relacji operacji
+<a id="applying-operation-relations" class="xliff"></a>
 
-W niektórych przypadkach program Dynamics 365 for Operations musi znaleźć właściwości operacyjne operacji. Na przykład podczas tworzenia zamówienia zakupu właściwości operacyjne każdej operacji muszą zostać skopiowane z relacji operacji do marszruty produkcji. W takich sytuacjach program Dynamics 365 for Operations szuka odnośnych relacji operacji w porządku od najbardziej specyficznej kombinacji do najmniej specyficznej kombinacji.  
+W niektórych przypadkach program Dynamics 365 for Finance and Operations musi znaleźć właściwości operacyjne operacji. Na przykład podczas tworzenia zamówienia zakupu właściwości operacyjne każdej operacji muszą zostać skopiowane z relacji operacji do marszruty produkcji. W takich sytuacjach program Finance and Operations szuka odnośnych relacji operacji w porządku od najbardziej specyficznej kombinacji do najmniej specyficznej kombinacji.  
 
-Kiedy program Dynamics 365 for Operations szuka najbardziej odpowiedniej relacji operacji dla zwolnionego produktu, relacja operacji pasująca do identyfikatora towaru zwolnionego produktu jest preferowana wobec relacji operacji, która pasuje do identyfikator grupy towarów. Z kolei relacja operacji pasująca do identyfikatora grupy towarów jest preferowana wobec domyślnej relacji operacji. Wyszukiwanie odbywa się w następującej kolejności:
+Kiedy program Dynamics 365 for Finance and Operations szuka najbardziej odpowiedniej relacji operacji dla zwolnionego produktu, relacja operacji pasująca do identyfikatora towaru zwolnionego produktu jest preferowana wobec relacji operacji, która pasuje do identyfikator grupy towarów. Z kolei relacja operacji pasująca do identyfikatora grupy towarów jest preferowana wobec domyślnej relacji operacji. Wyszukiwanie odbywa się w następującej kolejności:
 
 1.  **Kod pozycji**=**Tabela** i **Relacja produktu**=&lt;identyfikator towaru&gt;
 2.  **Kod pozycji**=**Grupa** i **Relacja produktu**=&lt;identyfikator grupy towarów&gt;
@@ -166,7 +179,8 @@ Kiedy program Dynamics 365 for Operations szuka najbardziej odpowiedniej relacji
 
 W związku z tym operacji należy użyć tylko jeden raz dla każdej marszruty. Jeśli operacja występuje wiele razy w tej samej marszrucie, wszystkie wystąpienia tej operacji będą miały tę samą relację operacji i nie będzie można zdefiniować różnych właściwości (na przykład czasów wykonywania) dla każdego wystąpienia.
 
-## <a name="route-versions"></a>Wersje marszruty
+## Wersje marszruty
+<a id="route-versions" class="xliff"></a>
 Wersje marszruty pozwalają dostosować warianty wytwarzania produktów lub uzyskać lepszą kontrolę nad procesem produkcji. Określają, które marszruty powinny być używane podczas wytwarzania określonego zwolnionego produktu lub zwolnionego wariantu produktu. Można używać następujących ograniczeń do definiowania, która marszruta ma być używana dla zwolnionego produktu:
 
 -   Wymiary produktów (rozmiar, kolor, styl lub konfiguracja)
@@ -178,34 +192,41 @@ Gdy produkt jest wytwarzany w określonym oddziale, określonej ilości lub okre
 
 W oknie Parametry kontroli produkcji można określić wymóg, że zawsze ma być podawany okres ważności wersji marszruty.
 
-### <a name="approval-of-route-versions"></a>Zatwierdzanie wersji marszrut
+### Zatwierdzanie wersji marszrut
+<a id="approval-of-route-versions" class="xliff"></a>
 
 Aby można było używać wersji marszruty w procesie planowania lub produkcji, musi ona zostać zatwierdzona. Po zatwierdzeniu wersji marszruty można zatwierdzić również odnośną marszrutę. Należy zwrócić uwagę, że wersję marszruty można zatwierdzić tylko wtedy, jeśli zatwierdzono również powiązaną marszrutę.
 
-### <a name="activating-the-default-route-version"></a>Aktywowanie domyślnej wersji marszruty
+### Aktywowanie domyślnej wersji marszruty
+<a id="activating-the-default-route-version" class="xliff"></a>
 
 Podczas aktywacji wersji marszruty wyznaczasz ją jako domyślną wersję marszruty, która będzie używana w planowaniu głównym lub będzie służyła do tworzenia zleceń produkcyjnych. Można mieć tylko jedną aktywną wersję marszruty dla danego zestawu ograniczeń (na przykład okres, oddział lub ilość). Jeśli wersja, którą próbujesz uaktywnić, powoduje konflikt z wersją już aktywną, zostanie wyświetlony komunikat o błędzie. Aby uniknąć niejednoznacznej aktywacji, należy następnie zdezaktywować wersję powodującą konflikt lub zmodyfikować ograniczenia (zwykle okres) w wersji marszruty.
 
-### <a name="electronic-signatures"></a>Podpisy elektroniczne
+### Podpisy elektroniczne
+<a id="electronic-signatures" class="xliff"></a>
 
-Jeśli trzeba prowadzić dziennik przechowujący informacje o tym, kto zatwierdza i aktywuje każdą wersję marszruty, można wymagać podpisów elektronicznych dla tych zadań. Wtedy użytkownicy, którzy zatwierdzają i aktywują wersje marszrut, będą musieli potwierdzić swoją tożsamość za pomocą [podpisu elektronicznego](/dynamics365/operations/organization-administration/electronic-signature-overview).
+Jeśli trzeba prowadzić dziennik przechowujący informacje o tym, kto zatwierdza i aktywuje każdą wersję marszruty, można wymagać podpisów elektronicznych dla tych zadań. Wtedy użytkownicy, którzy zatwierdzają i aktywują wersje marszrut, będą musieli potwierdzić swoją tożsamość za pomocą [podpisu elektronicznego](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview).
 
-### <a name="product-change-that-uses-case-management"></a>Zmiany w produkcie używającym funkcji zarządzania sprawami
+### Zmiany w produkcie używającym funkcji zarządzania sprawami
+<a id="product-change-that-uses-case-management" class="xliff"></a>
 
 Sprawa zmiany w produkcie do zatwierdzenia i uaktywnienia nowych lub zmienionych marszrut i wersji marszrut zapewnia prosty sposób przeglądania ograniczeń wersji marszrut. Można również zatwierdzić i aktywować wszystkie marszruty związane z określoną zmianą w jednej operacji oraz udokumentować wyniki w sprawie zmiany w produkcie.
 
-## <a name="maintaining-routes"></a>Obsługa marszrut
+## Obsługa marszrut
+<a id="maintaining-routes" class="xliff"></a>
 W zależności od wymagań biznesowych może być możliwe zmniejszenie nakładu pracy wymaganego do zarządzania definicjami procesów.
 
-### <a name="making-routes-independent-of-resources"></a>Uniezależnianie marszrut od zasobów
+### Uniezależnianie marszrut od zasobów
+<a id="making-routes-independent-of-resources" class="xliff"></a>
 
-W wielu systemach w marszrucie należy określić zasób operacyjny lub grupę zasobów, które mają wykonać operację. Jednak w programie Dynamics 365 for Operations można zdefiniować zestaw wymagań, które musi spełnić zasób operacyjny, aby mieć zastosowanie do operacji. W związku z tym konkretny zasób operacyjny lub grupa zasobów, które mają być używane, mogą zostać określone dopiero w trakcie faktycznego planowania operacji. Ta funkcja jest szczególnie przydatna, gdy masz wielu pracowników lub maszyn mogących wykonać tę samą operację.  
+W wielu systemach w marszrucie należy określić zasób operacyjny lub grupę zasobów, które mają wykonać operację. Jednak w programie Dynamics 365 for Finance and Operations można zdefiniować zestaw wymagań, które musi spełnić zasób operacyjny, aby mieć zastosowanie do operacji. W związku z tym konkretny zasób operacyjny lub grupa zasobów, które mają być używane, mogą zostać określone dopiero w trakcie faktycznego planowania operacji. Ta funkcja jest szczególnie przydatna, gdy masz wielu pracowników lub maszyn mogących wykonać tę samą operację.  
 
 Na przykład określasz, że operacja wymaga zasobu operacyjnego typu **Maszyna** o możliwości **Tłoczenie** wynoszącej 20 ton. Aparat planowania następnie powiąże te wymagania z określonym zasobem operacyjnym lub grupą zasobów w trakcie planowania operacji. Ponieważ można po prostu określić te wymagania zamiast przypisywać operacje do określonej maszyny, masz znacznie większą elastyczność. Dodatkowo jest łatwiejsze zarządzanie w trakcie przenoszenia zasobów lub dodawania nowych zasobów.  
 
 Aby uzyskać więcej informacji na temat różnych rodzajów zapotrzebowań na zasoby i sposobu ich używania, zobacz sekcje Zapotrzebowania na zasoby operacyjne i [Możliwości zasobu](resource-capabilities.md).
 
-### <a name="sharing-routes-across-sites"></a>Udostępnianie marszrut między oddziałami
+### Udostępnianie marszrut między oddziałami
+<a id="sharing-routes-across-sites" class="xliff"></a>
 
 Jeśli wytwarzasz ten sam produkt w więcej niż jednym oddziale produkcji, a kroki wytwarzania produktu są takie same we wszystkich oddziałach, często można zaprojektować udostępnioną marszrutę, która będzie używana we wszystkich oddziałach produkcji. Aby utworzyć udostępnioną marszrutę, nie określaj oddziału w samej marszrucie. Jednakże nadal należy utworzyć wersję marszruty, która kojarzy udostępnioną marszrutę z produktem w każdym oddziale.  
 
@@ -213,7 +234,8 @@ Również należy się upewnić, że zapotrzebowania na zasoby dla każdej opera
 
 Aby w pełni wykorzystać zalety marszrut udostępnionych, należy również użyć zużycia zasobów w odnośnej liście składowej (BOM). Gdy ustawisz flagę zużycia zasobu w wierszu BOM, magazyn i lokalizacja, z których powinny być zużywane surowce, są wnioskowane z zasobu operacyjnego zaplanowanego dla operacji. W związku z tym magazyn i lokalizacja mogą zostać określone dopiero w trakcie faktycznego planowania produkcji. W ten sposób zarówno BOM, jak i marszruta mogą być niezależne od fizycznej lokalizacji, w której jest wytwarzany produkt.
 
-### <a name="standard-operation-relations"></a>Standardowe relacji operacji
+### Standardowe relacji operacji
+<a id="standard-operation-relations" class="xliff"></a>
 
 Jeśli firma stosuje standardowe operacje w całej produkcji, a czasy przezbrajania, czasy wykonywania, obliczenia zużycia, obliczenia kosztów itd. różnią się niewiele lub w ogóle, być może warto utworzyć domyślne relacje operacji dla wszystkich operacji. W takim przypadku należy unikać tworzenia relacji operacji, które są specyficzne dla którejkolwiek trasy lub zwolnionego produktu.  
 
@@ -221,7 +243,8 @@ Jeśli również zapotrzebowania na zasoby są wyrażane w kategoriach umiejętn
 
 Kiedy używasz tej metody, strona **Relacje operacji** staje się głównym miejscem zarządzania czasami wykonywania i innymi właściwościami.
 
-### <a name="resource-specific-process-times"></a>Czasy procesów specyficzne dla zasobów
+### Czasy procesów specyficzne dla zasobów
+<a id="resource-specific-process-times" class="xliff"></a>
 
 Jeśli w ramach zapotrzebowania na zasoby dla operacji nie określisz zasobu operacyjnego ani grupy zasobów, odnośne zasoby mogą pracować z różnymi prędkościami. W związku z tym czas potrzebny na przetwarzanie operacji może się różnić. Aby rozwiązać ten problem, można użyć pola **Formuła** w relacji operacji, aby określić sposób obliczania czasu procesu. Dostępne są następujące opcje:
 
@@ -231,7 +254,8 @@ Jeśli w ramach zapotrzebowania na zasoby dla operacji nie określisz zasobu ope
 -   **Partia zasobów** — Ta opcja zasadniczo działa tak samo, jak opcja **Partia**. Jednak obliczanie obejmuje pole **Wielkość partii** z zasobu operacyjnego. W związku z tym czas jest zależny od zasobu.
 
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Listy składowe (BOM) i formuły](bill-of-material-bom.md)
@@ -240,7 +264,7 @@ Jeśli w ramach zapotrzebowania na zasoby dla operacji nie określisz zasobu ope
 
 [Możliwości zasobu](resource-capabilities.md)
 
-[Omówienie podpisów elektronicznych](/dynamics365/operations/organization-administration/electronic-signature-overview)
+[Omówienie podpisów elektronicznych](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview)
 
 
 

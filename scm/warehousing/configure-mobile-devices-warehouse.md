@@ -3,14 +3,14 @@ title: "Konfigurowanie urządzeń przenośnych do pracy w magazynie"
 description: "W tym artykule opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSRFMenuItem
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 29941
 ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6a7658c56e2d0712c6aa27a4bb8ffc02bbd01d6c
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: dfb738e41f4b3f7d475a551dca0aba7a071dd989
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy w magazynie
+# Konfigurowanie urządzeń przenośnych do pracy w magazynie
+<a id="set-up-mobile-devices-for-warehouse-work" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,7 +42,8 @@ W tym artykule opisano sposób konfigurowania elementów menu, których pracowni
 
 Aby utworzyć element menu dla działania lub zapytania, należy wybrać w polu **Tryb** wartość **Pośredni**. Zostanie wtedy udostępniona lista opcji **Kod działania**, umożliwiając wybranie typu zapytania lub działania, którego dotyczy element menu. Aby utworzyć element menu do generowania pracy magazynu, należy ustawić w polu **Tryb** wartość **Praca**. Zostanie wyświetlona lista opcji **Proces tworzenia pracy**. Aby utworzyć element menu do przetwarzania istniejącej pracy magazynu, należy ustawić pole **Tryb** na **Praca**, a następnie ustawić opcję **Użyj istniejącej pracy** na **Tak**. **Uwaga:** W zależności od trybu wybranego dla elementu menu i jeśli służy on do wykonywania istniejącej pracy, dodatkowe pola są dostępne dla tego elementu menu. Informacje o dodatkowych polach wyboru można znaleźć w sekcji „Dodatkowe opcje elementów menu” w tym artykule.
 
-## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurowanie elementów menu pod kątem działań i zapytań
+## Konfigurowanie elementów menu pod kątem działań i zapytań
+<a id="configure-menu-items-for-activities-and-inquiries" class="xliff"></a>
 Jeśli pole **Tryb** dla elementu menu jest ustawione na **Pośredni**, można utworzyć element menu do wykonywania działań lub zapytań, które nie tworzą pracy. Może to być np. ponowne drukowanie etykiet numerów identyfikacyjnych czy zapytanie o towary w lokalizacji. W poniższej tabeli przedstawiono dostępne opcje.
 
 | Opcja                      | Opis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -64,7 +66,8 @@ Jeśli pole **Tryb** dla elementu menu jest ustawione na **Pośredni**, można u
 | Zmień dyspozycję partii    | Umożliwia zezwolenie pracownikom na określenie kodu dyspozycji partii dla towaru i partii. Wybranie tej opcji spowoduje zaktualizowanie kodu dyspozycji określony dla danej partii.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Wyświetl listę otwartych prac      | Umożliwia wyświetlenie listy dostępnych pracy dla określonego użytkownika. Użytkownik może następnie wybrać pracę do wykonania i zostanie do niej przekierowany. Tę listę można wyświetlać na tabletach z ekranem o przekątnej co najmniej 7 cali. Po wybraniu tej opcji pozycje menu **Edytuj kwerendę** i **Lista pól** staną się dostępne. Strona **Edycji kwerendy** umożliwia skonfigurowanie kryteriów pracy, która znajduje się na liście. Strona **Listy pól** umożliwia wybranie, które pola będą wyświetlane na liście prac. Przykładowo można zmniejszyć liczbę widocznych pól, aby użytkownik mógł szybciej wybrać najodpowiedniejszą pozycję pracy. Na skróconej karcie **Ogólne** w polu **Rekordy na stronie** można też wybrać, ile rekordów pracy jest wyświetlanych na stronie. Jeśli opcja **Zezwalaj użytkownikom na filtrowanie pracy według typu transakcji** jest zaznaczona, lista pracy będzie zawierała formant **Filtruj pracę**, który umożliwia filtrowanie według typu transakcji. Na liście pracy użytkownik widzi tylko te prace, do których ma uprawnienia dostępu. Należy się upewnić, że ma on uprawnienia do co najmniej jednej pozycji menu sterowanej przez użytkownika obsługującej określone typy klasy pracy, do których powinien mieć dostęp. Uprawnienia są sprawdzane również wtedy, gdy użytkownik próbuje wykonać pracę z listy. |
 
-## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurowanie elementów menu do tworzenia pracy dla innego pracownika lub procesu
+## Konfigurowanie elementów menu do tworzenia pracy dla innego pracownika lub procesu
+<a id="configure-menu-items-to-create-work-for-another-worker-or-process" class="xliff"></a>
 Możesz skonfigurować element menu, który tworzy pracę dla innego pracownika po wykonaniu działania początkowego na urządzeniu przenośnym. Na przykład gdy jeden pracownik przyjmuje towar za pomocą urządzenia przenośnego, dla innego pracownika tworzona jest praca odłożenia. Aby skonfigurować element menu, który tworzy pracę, na stronie **Elementy menu urządzenia przenośnego** w polu **Tryb** trzeba wybrać **Praca**. W poniższej tabeli opcje w polu **Proces tworzenia pracy** są rozmieszczane według typu zlecenia.
 
 <table>
@@ -165,7 +168,7 @@ Możesz skonfigurować element menu, który tworzy pracę dla innego pracownika 
 </tr>
 <tr>
 <td>Przeniesienie według szablonu</td>
-<td>Przenosi towary z jednej lokalizacji do innej w sposób półautomatyczny. Pracownik wybiera lokalizację źródłową towarów i program Microsoft Dynamics 365 for Operations używa dyrektywy lokalizacji do określenia lokalizacji docelowej.</td>
+<td>Przenosi towary z jednej lokalizacji do innej w sposób półautomatyczny. Pracownik wybiera lokalizację źródłową towarów i program Finance and Operations używa dyrektywy lokalizacji do określenia lokalizacji docelowej.</td>
 </tr>
 <tr>
 <td>Przeniesienie magazynu</td>
@@ -193,7 +196,8 @@ Możesz skonfigurować element menu, który tworzy pracę dla innego pracownika 
 </tbody>
 </table>
 
-## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurowanie elementów menu do przetwarzania istniejącej pracy
+## Konfigurowanie elementów menu do przetwarzania istniejącej pracy
+<a id="configure-menu-items-to-process-existing-work" class="xliff"></a>
 Oprócz zdefiniowania elementów to utworzenia pracy magazynu, można ustawić pozycje menu do przetwarzania pracy, która została już utworzona. Ustaw pole **Tryb** na wartość **Praca** i wybierz opcję **Użyj istniejącej pracy**. Na karcie **Ogólne** pojawi się kilka dodatkowych opcji. Można kontrolować dostęp do elementu menu poprzez przypisanie do niego jednej lub kilku klas roboczych na skróconej karcie **Klasa robocza**. Klasy pracy definiują pracę, którą element menu może przetworzyć. Klasa pracy może również być używana do udzielania dostępu rolom właściwym dla użytkownika lub oddzielnego przetwarzania różnych typów operacji. W poniższej tabeli przedstawiono dostępne opcje.
 
 <table>
@@ -214,7 +218,7 @@ Oprócz zdefiniowania elementów to utworzenia pracy magazynu, można ustawić p
 </tr>
 <tr class="even">
 <td>Sterowane przez system</td>
-<td>Program Microsoft Dynamics 365 for Operations określa rodzaj pracy, która jest przypisana do pracownika, i kolejność, w jakiej pracownik wykonuje pracę. Po wybraniu tej opcji można kliknąć opcję <strong>Praca sterowana przez system</strong> w okienku akcji, aby otworzyć stronę <strong>Kolejność sortowania określona przez system</strong>, na której można ustawić kryteria sortowania dla pracy. Kryteria sortowania określają porządek wykonywania pracy przez pracownika. Można dodać dowolną liczbę kryteriów zależnie od potrzeb.</td>
+<td>Program Microsoft Dynamics 365 for Finance and Operations określa rodzaj pracy, która jest przypisana do pracownika, i kolejność, w jakiej pracownik wykonuje pracę. Po wybraniu tej opcji można kliknąć opcję <strong>Praca sterowana przez system</strong> w okienku akcji, aby otworzyć stronę <strong>Kolejność sortowania określona przez system</strong>, na której można ustawić kryteria sortowania dla pracy. Kryteria sortowania określają porządek wykonywania pracy przez pracownika. Można dodać dowolną liczbę kryteriów zależnie od potrzeb.</td>
 </tr>
 <tr class="odd">
 <td>Sterowane przez użytkownika</td>
@@ -226,7 +230,7 @@ Oprócz zdefiniowania elementów to utworzenia pracy magazynu, można ustawić p
 </tr>
 <tr class="odd">
 <td>Grupowanie systemowe</td>
-<td>Program Microsoft Dynamics 365 for Operations grupuje pracę dla pracownika na podstawie określonego pola. Na przykład praca pobierania jest grupowana gdy pracownik skanuje identyfikator wysyłki, identyfikator ładunku lub dowolną wartość, którą można połączyć z poszczególnymi jednostkami pracy. Jeśli wybierzesz tę opcję, wymagane są następujące pola:
+<td>Program Microsoft Dynamics 365 for Finance and Operations grupuje pracę dla pracownika na podstawie określonego pola. Na przykład praca pobierania jest grupowana gdy pracownik skanuje identyfikator wysyłki, identyfikator ładunku lub dowolną wartość, którą można połączyć z poszczególnymi jednostkami pracy. Jeśli wybierzesz tę opcję, wymagane są następujące pola:
 <ul>
 <li><strong>Pole grup systemowych</strong> — wybierz pole, które pracownik musi przeskanować w celu pogrupowania pracy.</li>
 <li><strong>Etykieta grup systemowych</strong> — wpisz tekst informujący pracownika o tym, co należy zeskanować w celu pogrupowania pracy.</li>
@@ -247,12 +251,13 @@ Ta opcja przydaje się na przykład wtedy, gdy wiele palet jest przygotowanych d
 </tr>
 <tr class="even">
 <td>Grupowanie inwentaryzacji ciągłej</td>
-<td>Pracownik wybiera strefę, pulę pracy lub lokalizację, a program Microsoft Dynamics 365 for Operations przypisuje pracę na podstawie wyboru. Jeśli wybierzesz tę opcję, możesz też kliknąć <strong>Inwentaryzacja ciągła</strong> w okienku akcji, aby określić dodatkowe informacje do wyświetlenia i możesz też określić, ile razy pracownik musi potworzyć zliczanie, jeśli wystąpi rozbieżność.</td>
+<td>Pracownik wybiera strefę, pulę pracy lub lokalizację, a program Microsoft Dynamics 365 for Finance and Operations przypisuje pracę na podstawie wyboru. Jeśli wybierzesz tę opcję, możesz też kliknąć <strong>Inwentaryzacja ciągła</strong> w okienku akcji, aby określić dodatkowe informacje do wyświetlenia i możesz też określić, ile razy pracownik musi potworzyć zliczanie, jeśli wystąpi rozbieżność.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="additional-menu-item-options"></a>Dodatkowe opcje elementów menu
+## Dodatkowe opcje elementów menu
+<a id="additional-menu-item-options" class="xliff"></a>
 Dodatkowe elementy menu są dostępne na stronie **Elementy menu urządzenia przenośnego**. Dostępne opcje zależą od procesu, dla którego elementu menu jest konfigurowany. 
 
 W poniższej tabeli opisano te opcje.
@@ -331,7 +336,7 @@ W poniższej tabeli opisano te opcje.
 </tr>
 <tr class="odd">
 <td>Grupuj odłożone</td>
-<td>Zaznaczenie tej opcji powoduje pogrupowanie pracy odłożenia. Ta opcja jest dostępna, gdy praca została pogrupowana przez pracownika lub przez program Microsoft Dynamics 365 for Operations. Gdy pracownik zakończy wszystkie prace pobrania w grupie zostanie dla niej utworzona praca odłożenia.</td>
+<td>Zaznaczenie tej opcji powoduje pogrupowanie pracy odłożenia. Ta opcja jest dostępna, gdy praca została pogrupowana przez pracownika lub przez program Microsoft Dynamics 365 for Finance and Operations. Gdy pracownik zakończy wszystkie prace pobrania w grupie zostanie dla niej utworzona praca odłożenia.</td>
 </tr>
 <tr class="even">
 <td>Typy korekt zapasów </td>
@@ -364,11 +369,11 @@ W poniższej tabeli opisano te opcje.
 </tr>
 <tr class="even">
 <td>Pole grup systemowych</td>
-<td>Wybierz pole określające, jak program Microsoft Dynamics 365 for Operations pogrupuje pracę pobierania dla pracownika. Na przykład, jeśli wybierzesz pole <strong>ShipmentId</strong>, pracownik będzie skanować identyfikator wysyłki w celu pogrupowania pracy pobrania. Wszystkie prace dla wysyłki są następnie przypisywane do pracownika. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Trzeba też wprowadzić tekst w polu <strong>Etykieta grup systemowych</strong>, informujący pracownika o tym, co należy zeskanować.</td>
+<td>Wybierz pole określające, jak program Microsoft Dynamics 365 for Finance and Operations pogrupuje pracę pobierania dla pracownika. Na przykład, jeśli wybierzesz pole <strong>ShipmentId</strong>, pracownik będzie skanować identyfikator wysyłki w celu pogrupowania pracy pobrania. Wszystkie prace dla wysyłki są następnie przypisywane do pracownika. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Trzeba też wprowadzić tekst w polu <strong>Etykieta grup systemowych</strong>, informujący pracownika o tym, co należy zeskanować.</td>
 </tr>
 <tr class="odd">
 <td>Etykieta grup systemowych</td>
-<td>Wpisz tekst informujący pracownika o tym, co należy zeskanować, gdy praca pobierania jest pogrupowana przez program Microsoft Dynamics 365 for Operations. Na przykład, jeśli używasz pola <strong>ShipmentId</strong> do grupowania pracy pobrania według wysyłki, możesz wprowadzić <strong>Shipment ID</strong> w polu. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Musisz także wybrać pole, według którego będzie przeprowadzane grupowanie w polu <strong>Pole grupowania systemu</strong>.</td>
+<td>Wpisz tekst informujący pracownika o tym, co należy zeskanować, gdy praca pobierania jest pogrupowana przez program Microsoft Dynamics 365 for Finance and Operations. Na przykład, jeśli używasz pola <strong>ShipmentId</strong> do grupowania pracy pobrania według wysyłki, możesz wprowadzić <strong>Shipment ID</strong> w polu. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Musisz także wybrać pole, według którego będzie przeprowadzane grupowanie w polu <strong>Pole grupowania systemu</strong>.</td>
 </tr>
 <tr class="even">
 <td>Użyj danych domyślnych</td>
@@ -384,13 +389,14 @@ W poniższej tabeli opisano te opcje.
 </tr>
 <tr class="odd">
 <td>Kod szablonu pracy</td>
-<td>Wybierz szablon pracy, który utworzy pracę dla procesu. Na przykład jeśli otrzymujesz towar dla zamówienia zakupu, praca odłożenia zostanie wygenerowana na podstawie szablonu pracy. Jeśli w tym polu nie wybierzesz szablonu pracy, program Microsoft Dynamics 365 for Operations przypisze szablon na podstawie kryteriów zapytania. Aby uzyskać więcej informacji dotyczących szablonów pracy, zobacz <a href="control-warehouse-location-directives.md">Kontrolowanie pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji</a>.</td>
+<td>Wybierz szablon pracy, który utworzy pracę dla procesu. Na przykład jeśli otrzymujesz towar dla zamówienia zakupu, praca odłożenia zostanie wygenerowana na podstawie szablonu pracy. Jeśli w tym polu nie wybierzesz szablonu pracy, program Microsoft Dynamics 365 for Finance and Operations przypisze szablon na podstawie kryteriów zapytania. Aby uzyskać więcej informacji dotyczących szablonów pracy, zobacz <a href="control-warehouse-location-directives.md">Kontrolowanie pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Wymagaj od pracowników potwierdzenia produktów, lokalizacji lub ilości podczas pobierania pozycji
-Można skonfigurować potwierdzenia pracy, które wymagają od pracownika użycia urządzenia mobilnego w celu zarejestrowania lokalizacji lub ilości podczas wykonywania pracy w magazynie. Potwierdzenia pracy pomagają zapewnić, że pracownik jest w prawidłowym miejscu lub obsługuje poprawne ilości towarów. Można także włączyć w programie Microsoft Dynamics 365 for Operations automatyczne potwierdzanie rejestracji pracownika. Po włączeniu automatycznego potwierdzenia nie można jednocześnie wymagać potwierdzeń dla lokalizacji lub ilości. Potwierdzenia pracy zawierają także produkty i warianty produktu. Ponadto można zarejestrować potwierdzenia przez skanowanie kodu kreskowego. Aby potwierdzić produkty i warianty produktów, trzeba wprowadzić identyfikator produktu/wariantu produktu. Może to być identyfikator produktu, identyfikator wyszukiwania produktu, identyfikator zewnętrzny, GTIN lub kod kreskowy. Po wprowadzeniu identyfikatora lub zeskanowaniu kodu kreskowego wymiary wariantu produktu są wyświetlane w urządzeniu przenośnym. 
+## Wymagaj od pracowników potwierdzenia produktów, lokalizacji lub ilości podczas pobierania pozycji
+<a id="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items" class="xliff"></a>
+Można skonfigurować potwierdzenia pracy, które wymagają od pracownika użycia urządzenia mobilnego w celu zarejestrowania lokalizacji lub ilości podczas wykonywania pracy w magazynie. Potwierdzenia pracy pomagają zapewnić, że pracownik jest w prawidłowym miejscu lub obsługuje poprawne ilości towarów. Można także włączyć w programie Microsoft Dynamics 365 for Finance and Operations automatyczne potwierdzanie rejestracji pracownika. Po włączeniu automatycznego potwierdzenia nie można jednocześnie wymagać potwierdzeń dla lokalizacji lub ilości. Potwierdzenia pracy zawierają także produkty i warianty produktu. Ponadto można zarejestrować potwierdzenia przez skanowanie kodu kreskowego. Aby potwierdzić produkty i warianty produktów, trzeba wprowadzić identyfikator produktu/wariantu produktu. Może to być identyfikator produktu, identyfikator wyszukiwania produktu, identyfikator zewnętrzny, GTIN lub kod kreskowy. Po wprowadzeniu identyfikatora lub zeskanowaniu kodu kreskowego wymiary wariantu produktu są wyświetlane w urządzeniu przenośnym. 
 
 W poniższej tabeli przedstawiono różne typy pracy, z którymi można używać potwierdzenia pracy.
 
@@ -408,7 +414,8 @@ W poniższej tabeli przedstawiono różne typy pracy, z którymi można używać
 
 **Uwaga:** Możesz jedynie wymagać potwierdzenia produktu dla prac typu pobieranie i odkładanie.
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Ustawienia wyświetlania urządzenia przenośnego używanego w magazynie](change-warehouse-mobile-device-displays.md)

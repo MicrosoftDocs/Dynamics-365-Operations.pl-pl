@@ -3,7 +3,7 @@ title: "Obszar roboczy zamknięcia okresu obrachunkowego"
 description: "Ten artykuł zawiera omówienie obszaru roboczego Zamknięcie okresu obrachunkowego oraz pokrewnej konfiguracji."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
@@ -19,15 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 788b0af30eb750cad8f958ecc4c33cf989b2a417
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="financial-period-close-workspace"></a>Obszar roboczy zamknięcia okresu obrachunkowego
+# Obszar roboczy zamknięcia okresu obrachunkowego
+<a id="financial-period-close-workspace" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,11 +41,13 @@ Obszar roboczy **Zamknięcie okresu obrachunkowego** umożliwia śledzenie proce
 
 Należy najpierw wybrać harmonogram zamknięcia w górnej części obszaru roboczego. Wszystkie dane, które są widoczne w obszarze roboczym, są następnie filtrowane według wybranego harmonogramu zamknięcia.
 
-### <a name="summary-tiles"></a>Kafelki podsumowania
+### Kafelki podsumowania
+<a id="summary-tiles" class="xliff"></a>
 
 Kafelki **Podsumowanie** oferują podgląd procesu, a wskaźniki pomagają zachować proces zamknięcia w odpowiednich torach. Można wyświetlić zadania, które są zaległe, pozostałe zadania na dziś, zadania, które mają zostać wykonane dzisiaj, ale są zablokowane ze względu na zależności, oraz wszystkie pozostałe zadania procesu. Te informacje dotyczą wszystkich firm, które są uwzględniane w wybranym harmonogramie zamknięcia.
 
-### <a name="tasks-and-status-section"></a>Sekcja Zadania i stan
+### Sekcja Zadania i stan
+<a id="tasks-and-status-section" class="xliff"></a>
 
 W sekcji **Zadania i stan** ogólny harmonogramu zamknięcia daje się podzielić na różne sposoby: stan według firmy, stan według obszaru oraz stan według osoby odpowiedzialnej. Można wyświetlić stan dla wszystkich zadań w harmonogramie zamknięcia, tylko zadania, które mają zostać wykonane dzisiaj, lub zadania, które są zaległe, przez zmianę filtru u góry listy kart. Można również wybrać filtr firm, aby wyświetlić stan dla określonej firmy. Każda karta stanu pokazuje podział według procentu ukończenia oraz według liczby pozostałych zadań. Kliknij kartę lub akcję **Wyświetl szczegóły**, aby wyfiltrować szczegółową listę zadań według wybranej karty. 
 
@@ -61,13 +64,16 @@ Do zadania można dołączać pliki, notatki, obrazy i adresy URL za pomocą akc
 
 Opcję **Zadanie ukończone** należy zaznaczyć ręcznie po ukończeniu zadania. Gdy zadanie jest oznaczone jako ukończone, pole **Data zakończenia** jest automatycznie aktualizowane na bieżącą datę i godzinę. Również wskaźniki zależności są odpowiednio aktualizowane.
 
-## <a name="all-financial-period-close-tasks-list-page"></a>Strona listy wszystkich zadań zamknięcia okresu obrachunkowego
+## Strona listy wszystkich zadań zamknięcia okresu obrachunkowego
+<a id="all-financial-period-close-tasks-list-page" class="xliff"></a>
 Wszystkie zadania zamknięcia bieżącego i poprzedniego okresu można wyświetlić na stronie listy **Wszystkie zadania zamknięcia okresu obrachunkowego**. Ta strona listy najlepiej nadaje się do historycznej analizy procesu zamknięcia, ponieważ zawiera informacje o zaplanowanej dacie wykonania, dacie rzeczywistego zakończenia i osobie, która ukończyła zadanie. Informacje na tej stronie listy można łatwo wyeksportować do programu Microsoft Excel do celów raportowania i inspekcji.
 
-## <a name="financial-period-close-configuration-page"></a>Strona konfiguracji zamknięcia okresu obrachunkowego
-Aby można było używać przestrzeni roboczej **Zamknięcie okresu obrachunkowego**, należy skonfigurować proces w programie Microsoft Dynamics 365 for Operations za pomocą strony **Konfiguracja zamknięcia okresu obrachunkowego**. (Kliknij kolejno opcje **Księga główna** &gt; **Zamknięcie okresu** &gt; **Konfiguracja zamknięcia okresu obrachunkowego**).
+## Strona konfiguracji zamknięcia okresu obrachunkowego
+<a id="financial-period-close-configuration-page" class="xliff"></a>
+Aby można było używać przestrzeni roboczej **Zamknięcie okresu obrachunkowego**, należy skonfigurować proces w programie Microsoft Dynamics 365 for Finance and Operations za pomocą strony **Konfiguracja zamknięcia okresu obrachunkowego**. (Kliknij kolejno opcje **Księga główna** &gt; **Zamknięcie okresu** &gt; **Konfiguracja zamknięcia okresu obrachunkowego**).
 
-### <a name="resources"></a>Zasoby
+### Zasoby
+<a id="resources" class="xliff"></a>
 
 Na karcie **Zasoby** definiuje się osoby, które są zaangażowane w procesy zamknięcia. Najpierw należy przypisać tutaj dowolnego pracownika, który będzie odpowiedzialny za zadanie zamknięcia. Należy także określić widok obszaru roboczego pracownika. Dostępne są następujące opcje:
 
@@ -76,21 +82,24 @@ Na karcie **Zasoby** definiuje się osoby, które są zaangażowane w procesy za
 
 Użytkownicy, którzy mają uprawnienia do wyświetlania tylko przydzielonych zadań nie mogą dodawać zadań do listy zadań, edytować zadań ani usuwać zadań z listy zadań.
 
-### <a name="task-areas"></a>Obszary zadań
+### Obszary zadań
+<a id="task-areas" class="xliff"></a>
 
 Za pomocą obszarów zadań można grupować zadania zamknięcia w logiczne obszary własności w obrębie organizacji. Obszarami zadań mogą być na przykład Rozrachunki z dostawcami, Rozrachunki z odbiorcami lub Księga główna.
 
-### <a name="calendars"></a>Kalendarze
+### Kalendarze
+<a id="calendars" class="xliff"></a>
 
 Można tworzyć i edytować kalendarze zamknięcia finansowego za pomocą karty Kalendarze.  W tym miejscu definiuje się dni robocze procesów zamknięcia, które będą używane do planowania zadań związanych z zamknięciem.  Można utworzyć nowy kalendarz i wskazać dni robocze, które będą używane do planowania zadań.  Najlepiej utworzyć kalendarz obejmujący dłuższy czas, np. rok lub kilka lat, ponieważ po utworzeniu można go edytować.  Po utworzeniu kalendarza kliknij przycisk Edytuj, aby zaktualizować kalendarz dla określonych dni, np. wolnych od pracy.  Zadania zamknięcia będą planowane według dni, dla których opcja Kontrola ma wartość Otwarte.  Jeśli zadania zamknięcia nie powinny być zaplanowane na określony dzień, ten dzień powinien mieć w opcji Kontrola wartość Zamknięte.
 
-### <a name="templates"></a>Szablony
+### Szablony
+<a id="templates" class="xliff"></a>
 
 Za pomocą szablonu zamknięcia finansowego można zdefiniować wszystkie zadania, które są częścią procesu zamknięcia. Zadanie zamknięcia jest pracą cykliczną, która jest przypisywana do osoby w celu wykonania podczas każdego procesu zamknięcia. W szablonie względna data wykonania musi być zdefiniowana dla każdego zadania zamknięcia. Względna data wykonania to liczba dni przed lub po zdefiniowanej dacie zakończenia okresu, kiedy zadanie musi zostać ukończone dla tego okresu. Godzina wykonania jest również przypisywana do każdego zadania. Godzinę wykonania ustawia się w kontekście strefy czasowej administratora i jest ona konwertowana na strefy czasowe poszczególnych użytkowników. 
 
 Zadanie w szablonie można przypisać do jednego lub kilku firm, do których stosuje się to zadanie. Jeśli inna osoba jest przypisana do ukończenia tej pracy w każdej firmie, pomocne może być utworzenie wielu zadań dla tej samej pracy. Utwórz jedno zadanie dla każdej firmy. 
 
-Element menu **Łącze do zadania** jest skojarzone z nakładem pracy i pozwala przejść bezpośrednio do skojarzonej strony z łącza zadania w obszarze roboczym. Na przykład zadanie zamknięcia służące do realizacji procesu przeszacowania waluty w module Rozrachunki z dostawcami może być połączone ze stroną **Przeszacowanie w walucie obcej** w programie Microsoft Dynamics 365 for Operations. Można również utworzyć łącze do zewnętrznego adresu URL. 
+Element menu **Łącze do zadania** jest skojarzone z nakładem pracy i pozwala przejść bezpośrednio do skojarzonej strony z łącza zadania w obszarze roboczym. Na przykład zadanie zamknięcia służące do realizacji procesu przeszacowania waluty w module Rozrachunki z dostawcami może być połączone ze stroną **Przeszacowanie w walucie obcej** w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Można również utworzyć łącze do zewnętrznego adresu URL. 
 
 > [Wskazówka[ Aby utworzyć łącze pomiędzy raportem programu Management Reporter a zadaniem zamknięcia okresu obrachunkowego, można użyć adresu URL raportu. Aby uzyskać dostęp do adresu URL raportu, otwórz raport w projektancie raportów i kliknij kolejno opcje **Plik** &gt; **Wyświetl raport**, a raport zostanie otwarty w przeglądarce internetowej. Można następnie skopiować adres URL w pasku adresu przeglądarki i wkleić go w polu **URL** **łącza zadania**. 
 
@@ -98,7 +107,8 @@ W szablonie można zdefiniować współzależności zadań. Jeśli zadanie zosta
 
 Można utworzyć wiele szablonów zamknięcia finansowego. Różnych szablonów można następnie używać do śledzenia procesów zamknięcia dla różnych typów okresów, np. na koniec miesiąca lub na koniec roku, lub do śledzenia firm korzystających z różnych procesów zamknięcia. Po utworzeniu jednego szablonu można skopiować go do nowego szablonu i wprowadzić wymagane zmiany. Do każdego arkusza zamknięcia można przypisać tylko jeden szablon.
 
-### <a name="closing-schedules"></a>Harmonogramy zamknięcia
+### Harmonogramy zamknięcia
+<a id="closing-schedules" class="xliff"></a>
 
 Harmonogram zamknięcia umożliwia przypisanie szablonu zamknięcia finansowego do określonego okresu obrachunkowego, który musi zostać zamknięty. Zadania z wybranego szablonu są następnie generowane automatycznie w podanym okresie, a nowy harmonogram zamknięcia jest dodawany do obszaru roboczego. Podczas tworzenia nowego harmonogramu zamknięcia pole **Data końcowa okresu** pozwala określić rzeczywiste daty wykonania dla zadań zamknięcia w oparciu o względną datę wykonania, która jest przypisana w szablonie zamknięcia finansowego. 
 

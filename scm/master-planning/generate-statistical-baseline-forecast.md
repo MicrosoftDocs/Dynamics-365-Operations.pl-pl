@@ -3,14 +3,14 @@ title: Generowanie bazowej prognozy statystycznej
 description: "Ten artykuł zawiera informacje dotyczące parametrów i filtrów, które są używane w obliczeniach prognozy popytu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72683
 ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
 ms.search.region: global
@@ -19,15 +19,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d5232b0862d02962c6524ddc5ef37a6ad49d4143
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 93646e37ee511d433097bb284fccc73c230aee32
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="generate-a-statistical-baseline-forecast"></a>Generowanie bazowej prognozy statystycznej
+# Generowanie bazowej prognozy statystycznej
+<a id="generate-a-statistical-baseline-forecast" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -49,13 +50,13 @@ Gdy strategia prognoza jest ustawiona na **Kopiuj na popycie historycznym**, kon
 
 Aby uniknąć nieporozumień w planach produkcji, pewną liczbę przedziałów prognozy można zablokować. Tę liczbę ustala się w polu **Horyzont czasowy zamrożenia**. Na stronie **Skorygowana prognoza popytu** komórki dla zamrożonych przedziałów są wyłączone, by pokazać, że tych wartości nie należy zmieniać. 
 
-Data rozpoczęcia dla bazowa prognozy popytu nie musi być datą bieżącą ani datę w przyszłości. Aby ustawić inną datę rozpoczęcia, użyj pola **Data początkowa prognozy bazowej — Od daty**. Na przykład w czerwcu, użytkownicy mogą wygenerować prognozę w następnym roku. Ponieważ brakuje przedziałów prognozy między końcem prognozy historycznej a początkiem prognozy bazowej, przewidywania mogą być nieprecyzyjne. Jeśli używasz usługi prognozowania popytu w programie Microsoft Dynamics 365 for Operations, masz do dyspozycji cztery sposoby uzupełniania braków. Metodę wybiera się, ustawiając parametr MISSING\_VALUE\_SUBSTITUTION na stronie **Parametry prognozowania popytu**. 
+Data rozpoczęcia dla bazowa prognozy popytu nie musi być datą bieżącą ani datę w przyszłości. Aby ustawić inną datę rozpoczęcia, użyj pola **Data początkowa prognozy bazowej — Od daty**. Na przykład w czerwcu, użytkownicy mogą wygenerować prognozę w następnym roku. Ponieważ brakuje przedziałów prognozy między końcem prognozy historycznej a początkiem prognozy bazowej, przewidywania mogą być nieprecyzyjne. Jeśli używasz usługi prognozowania popytu w programie Microsoft Dynamics 365 for Finance and Operations, masz do dyspozycji cztery sposoby uzupełniania braków. Metodę wybiera się, ustawiając parametr MISSING\_VALUE\_SUBSTITUTION na stronie **Parametry prognozowania popytu**. 
 
 Pole **Data początkowa prognozy bazowej** - **Od dnia** musi być ustawione na początek przedziału prognozy, np. w Stanach Zjednoczonych w niedzielę, jeśli przedziałem prognozowania jest tydzień. System automatycznie dopasowuje pole **Data początkowa prognozy bazowej** - **Od dnia** do początku przedziału prognozy. 
 
 Pole **Data początkowa prognozy bazowej** - **Od dnia** może być ustawione na datę w przeszłości. Innymi słowy można wygenerować prognozę popytu w przeszłości. Jest to przydatne, ponieważ pozwala regulować parametry usługi prognozy, aby statystyczna prognoza generowana w przeszłości pasowała do historycznego popytu. Użytkownicy mogą dalej używać tych ustawień parametrów do generowania bazowej prognozy statystycznej dla przyszłości. 
 
-Ręczne korekty wprowadzane w poprzednich iteracjach prognozowania popytu mogą być automatycznie stosowane do nowej podstawowej prognozy, ale musi być zaznaczone pole wyboru **Przenieś ręczne korekty prognozy popytu**. Jeśli pole wyboru nie jest zaznaczone, ręczne korekty nie są dodawane do prognozy bazowej, ale nie są też usuwane. Ręczne korekty prognozy można usunąć tylko w momencie importu prognozy, usuwając zaznaczenie pola wyboru **Zapisz korekty ręczne bazowej prognozy popytu**. Ręczne korekty są zapisywane w chwili autoryzacji. Z tego względu jeśli użytkownik dokonuje ręcznej korekty prognozy, ale nie autoryzuje prognozy wstecz w programie Dynamics 365 for Operations, zmiany są tracone. Aby uzyskać więcej informacji o ręcznych korektach i sposobie ich działania, zobacz [Autoryzowanie skorygowanej prognozy](authorize-adjusted-forecast.md). 
+Ręczne korekty wprowadzane w poprzednich iteracjach prognozowania popytu mogą być automatycznie stosowane do nowej podstawowej prognozy, ale musi być zaznaczone pole wyboru **Przenieś ręczne korekty prognozy popytu**. Jeśli pole wyboru nie jest zaznaczone, ręczne korekty nie są dodawane do prognozy bazowej, ale nie są też usuwane. Ręczne korekty prognozy można usunąć tylko w momencie importu prognozy, usuwając zaznaczenie pola wyboru **Zapisz korekty ręczne bazowej prognozy popytu**. Ręczne korekty są zapisywane w chwili autoryzacji. Z tego względu jeśli użytkownik dokonuje ręcznej korekty prognozy, ale nie autoryzuje prognozy wstecz w programie Finance and Operations, zmiany są tracone. Aby uzyskać więcej informacji o ręcznych korektach i sposobie ich działania, zobacz [Autoryzowanie skorygowanej prognozy](authorize-adjusted-forecast.md). 
 
 Generowanie prognozy popytu może obejmować nazwę i komentarze, by ułatwić użytkownikom identyfikowanie prognoz, które zostały wygenerowany. Te wartości są widoczne w historii generowania prognozy na stronie **Historia generowania bazowej prognozy statystycznej**. 
 
@@ -65,7 +66,8 @@ Podczas generowania prognozy można używać międzyfirmowej grupy planowania, k
 
 Jeśli prognoza nie jest generowana dla dużego zestawu towarów, ale na przykład dla jednego towaru lub jednego klucza alokacji produktów, wówczas aby poprawić wydajność procesu, można zaznaczyć pole wyboru **Użyj trybu odpowiedzi na żądanie** na karcie **Planowanie główne - Ustawienia - Prognozowanie popytu** - **Parametry prognozowania popytu - Uczenie maszynowe Azure**.
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Ustawianie prognozowania popytu](demand-forecasting-setup.md)

@@ -3,14 +3,14 @@ title: "Raporty finansowe bilansu próbnego"
 description: "W tym artykule opisano domyślne raporty o bilansach próbnych. Omówiono również bloki konstrukcyjne skojarzone z tymi raportami oraz sposoby modyfikowania raportów w celu dostosowania ich do wymagań biznesowych."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12314
 ms.assetid: 3b77d6f3-fd07-41a7-9ddb-1b22d1ae33fc
 ms.search.region: Global
@@ -18,25 +18,27 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 353880e162e38c7b2e89656be8cdffe5fbc30250
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 86e8e91f2af474999d89bb63ac9e2afad7843c8a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="trial-balance-financial-reports"></a>Raporty finansowe bilansu próbnego
+# Raporty finansowe bilansu próbnego
+<a id="trial-balance-financial-reports" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym artykule opisano domyślne raporty o bilansach próbnych. Omówiono również bloki konstrukcyjne skojarzone z tymi raportami oraz sposoby modyfikowania raportów w celu dostosowania ich do wymagań biznesowych. 
 
-<a name="default-trial-balance-reports"></a>Domyślne raporty finansowe bilansu próbnego
+Domyślne raporty finansowe bilansu próbnego
+<a id="default-trial-balance-reports" class="xliff"></a>
 -----------------------------
 
-Raporty bilansu próbnego są dostępne na karcie Raporty finansowe w systemie Microsoft Dynamics AX 7.
+W programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition w module Raporty finansowe są dostępne trzy raporty bilansu próbnego.
 
 | Raport domyślny                                 | Działanie                                                                                                                                                                                        |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -44,7 +46,8 @@ Raporty bilansu próbnego są dostępne na karcie Raporty finansowe w systemie M
 | Sumaryczny bilans próbny — domyślny                | Oferuje informacje o saldzie dla wszystkich kont i zawiera salda otwarcia i zamknięcia oraz salda po stronie debetowej i kredytowej razem z ich różnicą netto.                                        |
 | Sumaryczny bilans próbny rok do roku — domyślny | Oferuje informacje o saldzie dla wszystkich kont i zawiera salda otwarcia i zamknięcia oraz salda po stronie debetowej i kredytowej razem z ich różnicą netto dla bieżącego roku i roku ubiegłego. |
 
-## <a name="building-blocks"></a>Podstawowe elementy
+## Podstawowe elementy
+<a id="building-blocks" class="xliff"></a>
 Raporty finansowe bilansu próbnego wykorzystują następujące podstawowe elementy.
 
 | Raport domyślny                                 | Definicja wiersza          | Definicja kolumny                              |
@@ -53,7 +56,8 @@ Raporty finansowe bilansu próbnego wykorzystują następujące podstawowe eleme
 | Sumaryczny bilans próbny — domyślny                | Bilans próbny — domyślny | Sumaryczny bilans próbny — domyślny                |
 | Sumaryczny bilans próbny rok do roku — domyślny | Bilans próbny — domyślny | Sumaryczny bilans próbny rok do roku — domyślny |
 
-### <a name="row-definition"></a>Definicja wiersza
+### Definicja wiersza
+<a id="row-definition" class="xliff"></a>
 
 Definicja wiersza Bilans próbny — domyślny zawiera pojedynczy wiersz, który pobiera informacje ze wszystkich kont głównych. Dlatego każdy może wygenerować raport bez konieczności wprowadzania żadnych zmian. Podczas przeglądania raportu można przejść do pojedynczego wiersza, aby wyświetlić szczegóły dotyczące poszczególnych kont. Można zmodyfikować definicję wiersza, tak aby zawierała więcej szczegółów. Aby zmodyfikować definicję wiersza Bilans próbny — domyślny, by zawierał wiesze dla wszystkich kont, należy wykonać następujące kroki.
 
@@ -62,7 +66,8 @@ Definicja wiersza Bilans próbny — domyślny zawiera pojedynczy wiersz, który
 
 Teraz definicja wiersza zawiera wszystkie konta główne dla Twojej domyślnej firmy.
 
-### <a name="column-definition"></a>Definicja kolumny
+### Definicja kolumny
+<a id="column-definition" class="xliff"></a>
 
 Każdy raport bilansu próbnego używa innej definicji kolumny. Te definicje kolumn zawierają różnego rodzaju kolumny oferujący różne poziomu szczegółowości i danych finansowych.
 
@@ -101,7 +106,8 @@ Każdy raport bilansu próbnego używa innej definicji kolumny. Te definicje kol
 
  
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Raporty finansowe](financial-reporting-getting-started.md)

@@ -3,7 +3,7 @@ title: "Omówienie procesu produkcji"
 description: "Ten artykuł zawiera omówienie procesów produkcji. Opisuje różne etapy zleceń produkcyjnych, szarż produkcji i zadań Kanban — od utworzenia zamówienia aż do zamknięcia okresu finansowego."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -20,15 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 311debe610b58af7cd986bd33ce9473e41cb3d8b
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b73ec05442c8b089435d5813ea93b997c473cbb4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="production-process-overview"></a>Omówienie procesu produkcji
+# Omówienie procesu produkcji
+<a id="production-process-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -39,19 +40,21 @@ Produkcja towarów, nazywana też cyklem produkcyjnym, następuje zgodnie z okre
 
 Moduł **Kontrola produkcji** jest połączony z innymi modułami, takimi jak **Zarządzanie informacjami o produktach**, **Zarządzanie zapasami**, **Księga główna**, **Zarządzanie magazynem**, **Księgowość projektu** i **Administrowanie organizacją**. Taka integracja sprzyja przepływowi informacji, który jest wymagany do ukończenia produkcji towaru.  
 
-Na proces produkcji mają z reguły wpływ metody rachunku kosztów i inwentaryzacji zapasów, wybrane dla określonego procesu produkcyjnego. Program Dynamics 365 for Operations obsługuje zarówno metody kosztu rzeczywistego (\[FIFO\]; \[LIFO\]; średnia ruchoma i okresowa średnia ważona), jak i kosztu standardowego. Lean manufacturing wdraża się na podstawie reguły wyceny wstecznej.  
+Na proces produkcji mają z reguły wpływ metody rachunku kosztów i inwentaryzacji zapasów, wybrane dla określonego procesu produkcyjnego. Program Finance and Operations obsługuje zarówno metody kosztu rzeczywistego (\[FIFO\]; \[LIFO\]; średnia ruchoma i okresowa średnia ważona), jak i kosztu standardowego. Lean manufacturing wdraża się na podstawie reguły wyceny wstecznej.  
 
 Wybór metod pomiaru kosztów określa również wymagania dotyczące raportów na temat zużycia zasobów i materiałów w procesie produkcji. Zazwyczaj metody kosztu rzeczywistego wymagają dokładnej sprawozdawczości na poziomie zadania, a metody kosztów okresowych pozwalają na mniej szczegółowe raportowanie zużycia materiałów i zasobów.
 
-## <a name="mixed-mode-manufacturing"></a>Tryb mieszany produkcji
-Różne produkty i topologie produkcji wymagają stosowania różnych typów zamówienia. W programie Dynamics 365 for Operations można połączyć różne typy zamówień w tryb mieszany. Innymi słowy wszystkich w całym cyklu produkcji gotowego towaru mogą wystąpić wszystkie typy zamówień.
+## Tryb mieszany produkcji
+<a id="mixed-mode-manufacturing" class="xliff"></a>
+Różne produkty i topologie produkcji wymagają stosowania różnych typów zamówienia. W programie Finance and Operations można połączyć różne typy zamówień w tryb mieszany. Innymi słowy wszystkich w całym cyklu produkcji gotowego towaru mogą wystąpić wszystkie typy zamówień.
 
 -   **Zlecenie produkcyjne** — jest to typ klasycznego zlecenia produkcji do wyprodukowania określonego produktu lub wariantu produktu w określonej ilości w danym dniu. Zlecenia produkcyjne są oparte na specyfikacji listy składowej BOM i marszruty.
 -   **Zamówienie partii** — ten typ zamówienia jest używany w produkcji procesowej i dyskretnej, gdzie konwersja produkcji opiera się na formule lub produkty towarzyszące i uboczne mogą być produktami końcowymi zamiast lub oprócz produktu głównego. Zamówienia partii wykorzystują BOM i marszruty typu **formuły**.
 -   **Kanban** — karty Kanban są używane do sygnalizowania powtarzających się procesów lean manufacturing, opartych na przepływach produkcji, regułach kanban i BOM.
 -   **Projekt** — projekt produkcji łączy produkty i usługi o określonym harmonogramie i budżecie. Część produkcyjna projektu może być zrealizowana poprzez dowolny inny typ zlecenia.
 
-## <a name="manufacturing-principles"></a>Zasady produkcji
+## Zasady produkcji
+<a id="manufacturing-principles" class="xliff"></a>
 Aby wybrać zasady produkcji najlepiej dostosowane do określonego produktu i rynku, należy rozważyć wymagania dotyczące produkcji i logistyki oraz oczekiwania odbiorców dotyczące czasu realizacji dostawy.
 
 -   **Produkcja na magazyn** — to klasyczna zasada produkcji, gdzie produkty są wytwarzane jako zapasy na podstawie prognozy lub minimalnego uzupełnienia zapasów (te ostatnie są zazwyczaj obliczane w oparciu na prognozie lub zużyciu historycznym).
@@ -59,7 +62,8 @@ Aby wybrać zasady produkcji najlepiej dostosowane do określonego produktu i ry
 -   **Konfigurowanie do zamówienia** — jak dla zasady Produkcja na zamówienie, ostateczne operacje łańcucha wartości są wykonywane na zamówienie. Rzeczywisty produkowany wariant produktu nie jest wstępnie zdefiniowany, tylko jest tworzony w chwili wprowadzania zamówień na podstawie modelu konfiguracji produktu sprzedaży. Reguła Konfigurowanie do zamówienia wymaga określonego poziomu unifikacji procesu dla danej linii produktów.
 -   **Projektowanie na zamówienie** — te procesy są zazwyczaj wskazywane w projekcie i zaczynają się od fazy projektowania. Podczas fazy projektowania tworzy się koncepcje i opis produktów koniecznych do realizacji zamówienia. Następnie można utworzyć zlecenia produkcyjne, zamówienia partii lub kanban do wyprodukowania produktów.
 
-## <a name="overview-of-the-production-life-cycle"></a>Omówienie cyklu produkcyjnego
+## Omówienie cyklu produkcyjnego
+<a id="overview-of-the-production-life-cycle" class="xliff"></a>
 Dla wszystkich typów trybu mieszanego produkcji mogą wystąpić następujące kroki w cyklu produkcyjnym. Jednak nie wszystkie z nich są przedstawiane jako stan zlecenia jawny.
 
 1.  **Utworzone** — można tworzyć zlecenia produkcyjne, zamówienia partii lub kanban ręcznie, ale można też skonfigurować ich tworzenie przez system na podstawie różnych sygnałów popytu. Planowanie główne tworzy zlecenia produkcyjne, zamówienia partii, lub karty Kanban przy ustalaniu zamówień planowanych. Innymi sygnałami popytu są zamówienia sprzedaży lub sygnały ustalonej dostawy ze zleceń produkcyjnych lub kart kanban. W przypadku kart kanban o stałej ilości sygnały popytu są generowane, gdy kanban zostaną zarejestrowane jako puste.
@@ -80,7 +84,8 @@ Dla wszystkich typów trybu mieszanego produkcji mogą wystąpić następujące 
 12. **Zamknięcie okresu** — niektóre zasady rachunku kosztów, takie jak średnia okresowa, wycena wsteczna, FIFO lub LIFO wymagają okresowych działań w celu zamknięcia zapasów lub okresu obrachunkowego. Na ogół system próbuje zgłosić całe zużycie materiałów i zasobów oraz korekty zapasów i odpadków przed zamknięciem okresów. Zgłoszenie to odbywa się zwykle za pomocą arkuszy przesunięć magazynowych lub arkuszy korekt. Celem jest dokonanie oceny wyników ekonomicznych jednostek operacyjnych na okres. W niektórych przypadkach, gdy używane są zlecenia produkcyjne obejmujące okresy raportowania finansowego, stosuje się arkusze produkcyjne do zgłaszania postępów produkcji i zużycia zasobów na koniec okresu.
 
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Informacja zwrotna o produkcji](production-feedback.md)

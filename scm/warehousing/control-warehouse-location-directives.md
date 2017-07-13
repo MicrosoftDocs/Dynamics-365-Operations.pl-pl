@@ -3,14 +3,14 @@ title: "Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizac
 description: "W tym artykule opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania jak i gdzie praca jest wykonywana w magazynie."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72921
 ms.assetid: 377ab8af-5b0c-4b5e-a387-06ac1e1820c0
 ms.search.region: Global
@@ -18,24 +18,26 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9d0ad4f64ee84da4e90dfa1525ebb5ff9fec4063
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: f8bcdcf70089aaed06ba0f88cdbec8dfdf9121d1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji
+# Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji
+<a id="control-warehouse-work-by-using-work-templates-and-location-directives" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym artykule opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania jak i gdzie praca jest wykonywana w magazynie.
 
-Instrukcje otrzymywane przez pracowników magazynu na urządzeniu przenośnym są określane w szablonach pracy konfigurowanych w programie Microsoft Dynamics 365 for Operations w celu zdefiniowania różnych procesów i zadań magazynowych. Szablony pracy określają, jak wykonywana jest praca dla każdego procesu magazynowego. Połączenie dyrektywy lokalizacji z szablonem pracy pomaga zagwarantować, że praca ma miejsce w określonych obszarach fizycznych magazynów.
+Instrukcje otrzymywane przez pracowników magazynu na urządzeniu przenośnym są określane w szablonach pracy konfigurowanych w programie Microsoft Dynamics 365 for Finance and Operations w celu zdefiniowania różnych procesów i zadań magazynowych. Szablony pracy określają, jak wykonywana jest praca dla każdego procesu magazynowego. Połączenie dyrektywy lokalizacji z szablonem pracy pomaga zagwarantować, że praca ma miejsce w określonych obszarach fizycznych magazynów.
 
-## <a name="work-templates"></a>Szablony pracy
+## Szablony pracy
+<a id="work-templates" class="xliff"></a>
 Strona **Szablony pracy** pozwala zdefiniować operacje pracy, które muszą być wykonane w magazynie. Zwykle operacje pracy w magazynie składają się z dwóch działań: pracownik magazynu odbiera dostępny towar w lokalizacji, a następnie odkłada odebrany towar w innej lokalizacji. 
 
 Szablony pracy składają się z nagłówka i skojarzonych z nim wierszy. Każdy szablon pracy dotyczy określonego *typu zlecenia*. Wiele typów zleceń jest skojarzonych z dokumentami źródłowymi, takimi jak zamówienia zakupu lub sprzedaży. Jednak inne typy zleceń reprezentują odrębne czynności magazynowe, takie jak inwentaryzacja ciągła. *Identyfikator puli pracy* umożliwia organizowanie pracy w grupy. 
@@ -48,7 +50,8 @@ Za pomocą specjalnego zapytania można kontrolować sposób używania określon
 
 Aby zatrzymać lub wstrzymać proces pracy, można użyć ustawienia **Zatrzymanie pracy** w wierszu pracy. W takim przypadku pracownik, który wykonuje pracę, nie będzie musiał wykonywać następnego kroku wiersza pracy. Aby przejść do następnego kroku, ten lub inny pracownik musi wybrać pracę ponownie. Można też oddzielić zadania w ramach danej pracy przy użyciu różnych *identyfikatorów klasy pracy* w wierszach szablonu pracy.
 
-## <a name="location-directives"></a>Dyrektywy lokalizacji
+## Dyrektywy lokalizacji
+<a id="location-directives" class="xliff"></a>
 Dyrektywy lokalizacji to zasady pomagające w zidentyfikowaniu lokalizacji pobrania i odłożenia do celów przesunięcia magazynowego. Na przykład w ramach transakcji zamówienia sprzedaży, dyrektywa lokalizacji określa, gdzie towary zostaną pobrane i gdzie zostaną umieszczone pobrane zapasy. Dyrektywy lokalizacji składają się z nagłówka i skojarzonych z nim wierszy. Tworzy się je na stronie **Dyrektywy lokalizacji**. 
 
 W nagłówku każda dyrektywa lokalizacji musi być skojarzona z *typem zlecenia* określającym rodzaj transakcji magazynowej, dla którego dyrektywa będzie używana, np. zamówienia sprzedaży, uzupełnienia zapasów czy pobranie surowca. *Typ pracy* określa, czy dyrektywa lokalizacji będzie używana do pobierania lub odkładania pracy czy jakiegoś innego procesu magazynu, np. liczenie czy zmiany stanu zapasów. Należy także określić *oddział* i *magazyn*. *Kod dyrektywy* określony w nagłówku może służyć do łączenia dyrektywy lokalizacji w jeden lub kilka szablonów pracy. 
@@ -59,7 +62,8 @@ Wiersze dyrektywy lokalizacji określają dodatkowe ograniczenia dotyczące stos
 
 Dyrektywa lokalizacji ma jeden dodatkowy poziom szczegółowości: *działania dyrektywy lokalizacji*. Można określić wiele działań dyrektywy lokalizacji dla każdego wiersza. I znowu numer kolejny jest używany do określania porządku oceniania działań. Na tym poziomie można skonfigurować zapytanie do określenia sposobu znajdowania najlepszej lokalizacji w magazynie. Można też znaleźć optymalną lokalizację przy użyciu predefiniowanego ustawienia **Strategia**.
 
-### <a name="example-of-the-use-of-location-directives"></a>Przykład zastosowania dyrektyw lokalizacji
+### Przykład zastosowania dyrektyw lokalizacji
+<a id="example-of-the-use-of-location-directives" class="xliff"></a>
 
 W tym przykładzie przyjrzymy się procesowi zamówienia zakupu, w którym dyrektywa lokalizacji musi być znaleźć wolne zdolności produkcyjne w magazynie dla pozycji magazynowych, które zostały właśnie zarejestrowane w doku rozładunkowym. Najpierw chcemy znaleźć wolne zdolności produkcyjne w magazynie poprzez konsolidację z istniejącymi zapasami dostępnymi. Jeśli konsolidacja jest niemożliwa, w dalszej kolejności chcemy znaleźć pustą lokalizację. 
 

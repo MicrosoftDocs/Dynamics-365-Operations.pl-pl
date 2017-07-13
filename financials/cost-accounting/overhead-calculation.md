@@ -10,8 +10,8 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272163
 ms.assetid: 93119afb-47ed-4786-ba44-ba93576d3e28
 ms.search.region: global
@@ -20,22 +20,24 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c040a50d9962d7a900fbef285ea1f1baea124033
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="overhead-calculation"></a>Obliczenie narzutu
+# Obliczenie narzutu
+<a id="overhead-calculation" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie opisano typowe procesy służące obliczaniu i podzielaniu kosztów ogólnych.
 
-<a name="term-definition"></a>Definicja terminu
+Definicja terminu
+<a id="term-definition" class="xliff"></a>
 ---------------
 
 Koszty ogólne to koszty poniesione w celu prowadzenia firmy, których nie można bezpośrednio przypisać do żadnej konkretnej aktywności biznesowej, produktu ani usługi. Koszty ogólne zapewniają newralgiczne wsparcie działań generujących zysk. Oto kilka przykładów kosztów ogólnych:
@@ -44,7 +46,8 @@ Koszty ogólne to koszty poniesione w celu prowadzenia firmy, których nie możn
 -   Elektryczność
 -   Wynagrodzenia administracyjne
 
-## <a name="overhead-calculation-overview"></a>Omówienie obliczania kosztów ogólnych
+## Omówienie obliczania kosztów ogólnych
+<a id="overhead-calculation-overview" class="xliff"></a>
 W obliczaniu kosztów ogólnych następuje wykonanie zasad rachunku kosztów w odpowiedniej kolejności. Można uruchomić obliczanie kosztów ogólnych wiele razy dla tego samego okresu obrachunkowego, jeśli zmieniono zasady rachunku kosztów lub wykryto określone błędy. Każda sesja obliczania kosztów ogólnych jest zapisywana i otrzymuje unikatowy identyfikator wersji, który pozwala porównywać obliczenia w różnych wersjach. Wpisy kosztów generowane przez obliczanie kosztów ogólnych otrzymują datę księgowania. Ta data księgowania odpowiada dacie zakończenia okresu obrachunkowego użytego w obliczaniu. Unikatowy identyfikator wersji składa się z następujących elementów:
 
 -   Typ wersji
@@ -56,7 +59,8 @@ W obliczaniu kosztów ogólnych następuje wykonanie zasad rachunku kosztów w o
 Obliczanie kosztów ogólnych jest uruchamiane niezależnie od wersji. W związku z tym można obliczyć wersję budżetową przed wersją rzeczywistą. Obliczanie kosztów ogólnych składa się z czterech etapów, jak pokazano na poniższej ilustracji. Na każdym etapie jest tworzony nagłówek arkusza z zapisami w arkuszu. Ten nagłówek arkusza przechowuje dane wejściowe dla każdego etapu obliczeń. Zasady i reguły są stosowane do każdego wiersza arkusza, a jako dane wyjściowe są generowane wpisy kosztów. Dlatego zawsze masz pełną identyfikację źródeł wyników obliczania kosztów. 
 [![Obliczanie kosztów ogólnych](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
-## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Obliczanie i przypisywanie kosztów ogólnych energii elektrycznej
+## Obliczanie i przypisywanie kosztów ogólnych energii elektrycznej
+<a id="calculate-and-allocate-the-electricity-overhead-cost" class="xliff"></a>
 W rachunkowości finansowej niektóre koszty, takie jak energii elektrycznej, są rejestrowane jako ryczałt. W związku z tym menedżerowie nie mają szczegółowego wglądu w te dane w rachunku kosztów. Aby w module Rachunek kosztów zapewnić poprawne prezentowanie informacji kierownictwu we wszystkich jednostkach organizacyjnych i na wszystkich poziomach, koszty muszą przepływać przez jednostki organizacyjne. Ten przepływ musi się opierać na dokładnym rejestrze zużycia lub na uczciwej ocenie. W księdze głównej koszty energii elektrycznej mogą być księgowane w sposób pokazany w poniższej tabeli.
 
 <table>
@@ -80,11 +84,13 @@ W rachunkowości finansowej niektóre koszty, takie jak energii elektrycznej, s�
 </tbody>
 </table>
 
-### <a name="step-1-process-the-cost-behavior-calculation"></a>Krok 1: Przetwarzanie obliczania zachowania kosztów
+### Krok 1: Przetwarzanie obliczania zachowania kosztów
+<a id="step-1-process-the-cost-behavior-calculation" class="xliff"></a>
 
 Domyślnie podczas importowania z danych źródłowych wpisy kosztów otrzymują kategorię zachowania kosztów **Niesklasyfikowane** w rachunku kosztów. Stosując reguły zachowania kosztów, można zmienić klasyfikację wpisów kosztów na **Koszt stały** lub **Koszt zmienny**.
 
-#### <a name="define-the-cost-behavior-rule"></a>Definiowanie reguły zachowania kosztów
+#### Definiowanie reguły zachowania kosztów
+<a id="define-the-cost-behavior-rule" class="xliff"></a>
 
 W niektórych przypadkach część kosztu jest stałą opłatą, a pozostały koszt opiera się na zużyciu. Rachunki za energię elektryczną często pasują do tej definicji. Po zapłaceniu określonej stałej opłaty płaci się za zużycie kilowatogodzin (kWh). Na przykład jeśli stała opłata wynosi 1000,00, oto jak jest definiowana reguła zachowania kosztów:
 
@@ -92,7 +98,8 @@ W niektórych przypadkach część kosztu jest stałą opłatą, a pozostały ko
     -   0 &lt;= 1000,00 = Stały
     -   1000,01 &lt; N = Zmienny
 
-##### <a name="journal"></a>W arkuszu
+##### W arkuszu
+<a id="journal" class="xliff"></a>
 
 <table>
 <thead>
@@ -115,7 +122,8 @@ W niektórych przypadkach część kosztu jest stałą opłatą, a pozostały ko
 </tbody>
 </table>
 
-##### <a name="journal-entries-cost-object-balance-journal-entries"></a>Zapisy w arkuszu (wpisy w arkuszu dotyczące salda obiektów kosztów)
+##### Zapisy w arkuszu (wpisy w arkuszu dotyczące salda obiektów kosztów)
+<a id="journal-entries-cost-object-balance-journal-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -140,7 +148,8 @@ W niektórych przypadkach część kosztu jest stałą opłatą, a pozostały ko
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a>Wpisy kosztów
+##### Wpisy kosztów
+<a id="cost-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -194,11 +203,13 @@ W niektórych przypadkach część kosztu jest stałą opłatą, a pozostały ko
 
 Aby uzyskać szczegółowe informacje o zachowaniu kosztów, zobacz temat Zasada zachowania kosztów. (należy zwrócić uwagę, że ten temat nie jest jeszcze ukończony, ale niedługo będzie gotowy).
 
-### <a name="step-2-process-the-cost-distribution-calculation"></a>Krok 2: Przetwarzanie obliczania dystrybucji kosztów
+### Krok 2: Przetwarzanie obliczania dystrybucji kosztów
+<a id="step-2-process-the-cost-distribution-calculation" class="xliff"></a>
 
 Dystrybucja kosztów umożliwia rozdzielenie kosztów od jednego obiektu kosztów do jednego lub więcej innych obiektów kosztów poprzez zastosowanie odpowiedniej podstawy alokacji. Dystrybucja kosztów i alokacja kosztów różnią się tym, że dystrybucja kosztów zawsze jest wykonywana na poziomie podstawowego składnika kosztów pierwotnego kosztu.
 
-#### <a name="define-the-cost-distribution-rule"></a>Definiowanie reguły dystrybucji kosztów
+#### Definiowanie reguły dystrybucji kosztów
+<a id="define-the-cost-distribution-rule" class="xliff"></a>
 
 W rachunkowości finansowej koszty energii elektrycznej są często rejestrowane jako ryczałt. W rachunku kosztów to podejście nie jest wystarczająco szczegółowe. Koszt zmienny powinien zostać rozpisany między poszczególne obiekty kosztów na podstawie najlepszej wiedzy. Najbardziej logiczną podstawą alokacji jest zużycie energii elektrycznej (kWh). Jest tworzony element członkowski wymiaru statystycznego o nazwie Energia elektryczna, po czym jest rejestrowane zużycie energii elektrycznej. Domyślnie wszystkie elementy członkowskie wymiarów statystycznych stają się dostępne jako podstawy alokacji.
 
@@ -304,7 +315,8 @@ Koszt stały powinien zostać rozdzielony równomiernie między poszczególne ob
 </tbody>
 </table>
 
-##### <a name="journal"></a>W arkuszu
+##### W arkuszu
+<a id="journal" class="xliff"></a>
 
 <table>
 <thead>
@@ -327,7 +339,8 @@ Koszt stały powinien zostać rozdzielony równomiernie między poszczególne ob
 </tbody>
 </table>
 
-##### <a name="journal-entries-cost-object-balance-journal-entries"></a>Zapisy w arkuszu (wpisy w arkuszu dotyczące salda obiektów kosztów)
+##### Zapisy w arkuszu (wpisy w arkuszu dotyczące salda obiektów kosztów)
+<a id="journal-entries-cost-object-balance-journal-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -361,7 +374,8 @@ Koszt stały powinien zostać rozdzielony równomiernie między poszczególne ob
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a>Wpisy kosztów
+##### Wpisy kosztów
+<a id="cost-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -433,11 +447,13 @@ Koszt stały powinien zostać rozdzielony równomiernie między poszczególne ob
 
 Aby uzyskać szczegółowe informacje na temat dystrybucji kosztów i podstaw alokacji, zobacz tematy Zasada dystrybucji kosztów i Podstawa alokacji. (należy zwrócić uwagę, że ten temat nie jest jeszcze ukończony, ale niedługo będzie gotowy).
 
-### <a name="step-3-process-the-overhead-rate-calculation"></a>Krok 3: Przetwarzanie obliczania stawki kosztu ogólnego
+### Krok 3: Przetwarzanie obliczania stawki kosztu ogólnego
+<a id="step-3-process-the-overhead-rate-calculation" class="xliff"></a>
 
 Stawka kosztu ogólnego jest używana do zapisywania w ciężar jednego lub więcej konkretnych obiektów kosztów. Obciążenie bazuje na wstępnie określonej stawce kosztu oraz na wartości względem przypisanej podstawy alokacji. 
 
-#### <a name="define-the-overhead-rate"></a>Definiowanie stawki kosztu ogólnego
+#### Definiowanie stawki kosztu ogólnego
+<a id="define-the-overhead-rate" class="xliff"></a>
 
 Obiekt kosztów CC001 Zasoby ludzkie wnosi wkład do zestawu projektów wewnętrznych. Jest tworzony element członkowski wymiaru statystycznego o nazwie Projekty kadrowe w celu mierzenia zużywanej wartości.
 
@@ -518,7 +534,8 @@ W poniższej tabeli przedstawiono wynik, gdy projekty kadrowe są stosowane jako
 </tbody>
 </table>
 
-##### <a name="journal"></a>W arkuszu
+##### W arkuszu
+<a id="journal" class="xliff"></a>
 
 <table>
 <thead>
@@ -541,7 +558,8 @@ W poniższej tabeli przedstawiono wynik, gdy projekty kadrowe są stosowane jako
 </tbody>
 </table>
 
-##### <a name="journal-entries-journal-entries-for-overhead-rate-calculation"></a>Zapisy w arkuszu (wpisy w arkuszu do obliczania stawki kosztu ogólnego)
+##### Zapisy w arkuszu (wpisy w arkuszu do obliczania stawki kosztu ogólnego)
+<a id="journal-entries-journal-entries-for-overhead-rate-calculation" class="xliff"></a>
 
 <table>
 <thead>
@@ -567,7 +585,8 @@ W poniższej tabeli przedstawiono wynik, gdy projekty kadrowe są stosowane jako
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a>Wpisy kosztów
+##### Wpisy kosztów
+<a id="cost-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -621,11 +640,13 @@ W poniższej tabeli przedstawiono wynik, gdy projekty kadrowe są stosowane jako
 
 Aby uzyskać szczegółowe informacje o zasadach stawek kosztów ogólnych, zobacz tematy Zasada stawki kosztu ogólnego i Podstawy alokacji. (należy zwrócić uwagę, że ten temat nie jest jeszcze ukończony, ale niedługo będzie gotowy).
 
-### <a name="step-4-process-the-cost-allocation-calculation"></a>Krok 4: Przetwarzanie obliczania alokacji kosztów
+### Krok 4: Przetwarzanie obliczania alokacji kosztów
+<a id="step-4-process-the-cost-allocation-calculation" class="xliff"></a>
 
-Alokacja jest używana w celu alokowania salda obiektu kosztów do innych obiektów kosztów poprzez zastosowanie podstawy alokacji. Program Microsoft Dynamics 365 for Operations obsługuje metody wzajemnej alokacji. W metodzie alokacji wzajemnej są w pełni wykazywane wzajemne usługi, jakie między sobą wymieniają pomocnicze obiekty kosztów. System automatycznie ustala kolejność, w jakiej ma zostać wykonana alokacja. Saldo obiektu kosztów jest alokowane przy użyciu jednej podstawy alokacji. Są obsługiwane alokacje między wymiarami obiektów kosztów i ich elementami członkowskimi. Kolejność alokacji jest kontrolowana przez jednostkę kontroli kosztów. [![Metoda wzajemna](./media/reciprocal-method.png)]
+Alokacja jest używana w celu alokowania salda obiektu kosztów do innych obiektów kosztów poprzez zastosowanie podstawy alokacji. Program Finance and Operations obsługuje metody wzajemnej alokacji. W metodzie alokacji wzajemnej są w pełni wykazywane wzajemne usługi, jakie między sobą wymieniają pomocnicze obiekty kosztów. System automatycznie ustala kolejność, w jakiej ma zostać wykonana alokacja. Saldo obiektu kosztów jest alokowane przy użyciu jednej podstawy alokacji. Są obsługiwane alokacje między wymiarami obiektów kosztów i ich elementami członkowskimi. Kolejność alokacji jest kontrolowana przez jednostkę kontroli kosztów. [![Metoda wzajemna](./media/reciprocal-method.png)]
 
-#### <a name="define-the-cost-allocation"></a>Definiowanie alokacji kosztów
+#### Definiowanie alokacji kosztów
+<a id="define-the-cost-allocation" class="xliff"></a>
 
 Poniżej przedstawiono prosty przykład wyjaśniający, jak można śledzić przepływ kosztów. Obiekt kosztów CC001 Zasoby ludzkie wnosi wkład do kilku obiektów kosztów. Jest tworzony element członkowski wymiaru statystycznego o nazwie Usługi kadrowe w celu mierzenia zużywanej wartości.
 
@@ -724,7 +745,7 @@ Obiekt kosztów CC004 Pakowanie wnosi wkład do kilku obiektów kosztów. Jest t
 </tbody>
 </table>
 
-**Uwaga:** W programie Dynamics 365 for Operations miary statystyczne, takiej jak liczba godzin produkcji zużywana przez produkt, mogą być wyprowadzane z danych źródłowych. Aby uzyskać bardziej szczegółowe informacje o dostawcach miar statystycznych, zobacz temat Szablon dostawcy miar statystycznych (należy zwrócić uwagę, że ten temat nie jest jeszcze ukończony, ale niedługo będzie gotowy). W poniższej tabeli przedstawiono wynik, gdy usługi kadrowe są stosowane jako podstawa alokacji dla kosztu łącznego (stałego i zmiennego).
+**Uwaga:** W programie Finance and Operations miary statystyczne, takiej jak liczba godzin produkcji zużywana przez produkt, mogą być wyprowadzane z danych źródłowych. Aby uzyskać bardziej szczegółowe informacje o dostawcach miar statystycznych, zobacz temat Szablon dostawcy miar statystycznych (należy zwrócić uwagę, że ten temat nie jest jeszcze ukończony, ale niedługo będzie gotowy). W poniższej tabeli przedstawiono wynik, gdy usługi kadrowe są stosowane jako podstawa alokacji dla kosztu łącznego (stałego i zmiennego).
 
 <table>
 <thead>
@@ -932,7 +953,8 @@ W poniższej tabeli przedstawiono wynik, gdy usługi pakowania są stosowane jak
 </tbody>
 </table>
 
-##### <a name="journal-entries-cost-object-balance-journal-entries"></a>Zapisy w arkuszu (wpisy w arkuszu dotyczące salda obiektów kosztów)
+##### Zapisy w arkuszu (wpisy w arkuszu dotyczące salda obiektów kosztów)
+<a id="journal-entries-cost-object-balance-journal-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -955,7 +977,8 @@ W poniższej tabeli przedstawiono wynik, gdy usługi pakowania są stosowane jak
 </tbody>
 </table>
 
-##### <a name="journal-lines"></a>Wiersze arkusza
+##### Wiersze arkusza
+<a id="journal-lines" class="xliff"></a>
 
 <table>
 <thead>
@@ -1079,7 +1102,8 @@ W poniższej tabeli przedstawiono wynik, gdy usługi pakowania są stosowane jak
 </tbody>
 </table>
 
-##### <a name="cost-entries"></a>Wpisy kosztów
+##### Wpisy kosztów
+<a id="cost-entries" class="xliff"></a>
 
 <table>
 <thead>
@@ -1329,7 +1353,8 @@ W poniższej tabeli przedstawiono wynik, gdy usługi pakowania są stosowane jak
 </tbody>
 </table>
 
-## <a name="conclusion"></a>Wniosek
+## Wniosek
+<a id="conclusion" class="xliff"></a>
 W rachunkowości finansowej koszt 10 000,00 za energię elektryczną jest księgowany w centrum kosztu o fikcyjnym identyfikatorze. W związku z tym księgowi kosztów będą wiedzieć, że ten koszt musi zostać rozdzielony. W rachunku kosztów koszty przepływają przez jednostki organizacyjne i poziomy na podstawie zasad i reguł, które są stosowane. Każdy koszt został skojarzony z podstawą alokacji, która zapewnia najlepszą ocenę alokacji kosztów.
 
 <table>

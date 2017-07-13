@@ -1,42 +1,45 @@
 ---
 title: Korekty ceny i rabaty
-description: "Ten artykuł zawiera informacje o korektach ceny i rabatach w module sprzedaży Handel detaliczny i inny w programie Microsoft Dynamics 365 for Operations."
+description: "Ten artykuł zawiera informacje o korektach ceny i rabatach w programie Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 15891
 ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a942f7876ab08598a019892056ce6be152d56985
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: caa701dfcbffe045d701442b1a39b88ea5f43125
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="price-adjustments-and-discounts"></a>Korekty ceny i rabaty
+# Korekty ceny i rabaty
+<a id="price-adjustments-and-discounts" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Ten artykuł zawiera informacje o korektach ceny i rabatach w module sprzedaży Handel detaliczny i inny w programie Microsoft Dynamics 365 for Operations.
+Ten artykuł zawiera informacje o korektach ceny i rabatach w programie Microsoft Dynamics 365 for Retail.
 
-W module Dynamics 365 for Operations — Handel detaliczny użytkownik może dokonywać korygowania cen na produkty, a także konfigurowania rabatów, które są stosowane do wiersza towaru lub transakcji w punkcie sprzedaży, w zamówieniu sprzedaży biura obsługi lub w zamówieniu online. Do grup cen mogą być podłączone zarówno korekty ceny i rabaty. Zarówno w przypadku korekty ceny, jak i rabatów, można określić pojedynczy datę rozpoczęcia i datę zakończenia lub okres cykliczny, kod rabatu i kilka dodatkowych atrybutów. Korekty ceny i rabaty mogą dotyczyć produktów, wariantów lub kategorii. W przypadku zastosowania więcej niż jednego rabatu do produktu odbiorca może otrzymać jeden rabat lub rabat połączony. Program Dynamics 365 for Operations automatycznie zastosuje rabat lub kombinację rabatów oferującą odbiorcy najlepszą cenę. Podczas ustawiania korekty ceny lub rabatu należy sprawdzić, czy grupy cen są przypisane do właściwych kanałów, katalogów, przynależności lub programów lojalnościowych, do których ma mieć zastosowanie rabat. Ponadto jeśli chcesz automatycznie wygenerować identyfikator rabatu, możesz ustawić sekwencje numerów na stronie **Parametry handlu detalicznego** zanim zdefiniujesz nowy rabat lub korektę ceny lub rabat. **Uwaga:** Korekty ceny lub rabaty można usunąć. Jednak informacje statystyczne zostaną utracone.
+W module Dynamics 365 for Retail użytkownik może dokonywać korygowania cen na produkty, a także konfigurowania rabatów, które są stosowane do wiersza towaru lub transakcji w punkcie sprzedaży, w zamówieniu sprzedaży biura obsługi lub w zamówieniu online. Do grup cen mogą być podłączone zarówno korekty ceny i rabaty. Zarówno w przypadku korekty ceny, jak i rabatów, można określić pojedynczy datę rozpoczęcia i datę zakończenia lub okres cykliczny, kod rabatu i kilka dodatkowych atrybutów. Korekty ceny i rabaty mogą dotyczyć produktów, wariantów lub kategorii. W przypadku zastosowania więcej niż jednego rabatu do produktu odbiorca może otrzymać jeden rabat lub rabat połączony. Program Dynamics 365 for Retail automatycznie zastosuje rabat lub kombinację rabatów oferującą odbiorcy najlepszą cenę. Podczas ustawiania korekty ceny lub rabatu należy sprawdzić, czy grupy cen są przypisane do właściwych kanałów, katalogów, przynależności lub programów lojalnościowych, do których ma mieć zastosowanie rabat. Ponadto jeśli chcesz automatycznie wygenerować identyfikator rabatu, możesz ustawić sekwencje numerów na stronie **Parametry handlu detalicznego** zanim zdefiniujesz nowy rabat lub korektę ceny lub rabat. **Uwaga:** Korekty ceny lub rabaty można usunąć. Jednak informacje statystyczne zostaną utracone.
 
-### <a name="types-of-discounts"></a>Typy rabatów
+### Typy rabatów
+<a id="types-of-discounts" class="xliff"></a>
 
 Istnieją cztery typy rabatów sieci sprzedaży:
 
