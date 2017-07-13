@@ -3,14 +3,14 @@ title: "Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lif
 description: "Ten temat wyjaśnia sposób pobierania konfiguracji modułu Raportowanie elektroniczne (ER) z usługi Microsoft Dynamics Lifecycle Services (LCS)."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERSolutionImport, ERWorkspace
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 105843
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1e73cd38c33d88feaba825abb64721bc332a4d6e
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: be77d76194e9d38589548113cc650599d5af4323
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services
+# Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services
+<a id="download-electronic-reporting-configurations-from-lifecycle-services" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,7 +36,7 @@ Ten temat wyjaśnia sposób pobierania konfiguracji modułu Raportowanie elektro
 
 Ten samouczek prowadzi przez proces pobierania najnowszej wersji konfiguracji modułu Raportowanie elektroniczne (ER) z usługi Microsoft Dynamics Lifecycle Services (LCS).
 
-1.  Zaloguj się do programu Dynamics 365 for Operations przy użyciu jednej z następujących ról:
+1.  Zaloguj się do programu Finance and Operations przy użyciu jednej z następujących ról:
     -   Deweloper raportowania elektronicznego
     -   Konsultant funkcjonalny raportowania elektronicznego
     -   Administrator systemu
@@ -55,11 +56,12 @@ Ten samouczek prowadzi przez proces pobierania najnowszej wersji konfiguracji mo
 6.  Kliknij opcję **Otwórz**, aby wyświetlić listę konfiguracji modułu ER dla wybranego repozytorium. [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  W drzewie konfiguracji w lewym okienku zaznacz wymaganą konfigurację ER.
 8.  Na skróconej karcie **Wersje** wybierz wymaganą wersję wybranej konfiguracji ER.
-9.  Kliknij opcję **Importuj**, aby pobrać wybraną wersję z usługi LCS do bieżącego wystąpienia programu Dynamics 365 for Operations. **Uwaga:** Przycisk **Importuj** jest niedostępny dla wersji konfiguracji ER, które już się znajdują w bieżącym wystąpieniu programu Dynamics 365 for Operations. [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+9.  Kliknij opcję **Importuj**, aby pobrać wybraną wersję z usługi LCS do bieżącego wystąpienia programu Finance and Operations. **Uwaga:** Przycisk **Importuj** jest niedostępny dla wersji konfiguracji ER, które już się znajdują w bieżącym wystąpieniu programu Finance and Operations. [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 **Uwaga:** W zależności od ustawień ER podczas importowania konfiguracji jest sprawdzana ich poprawność. Możesz otrzymywać powiadomienia o wszelkich wykrytych problemach z niespójnością. Przed rozpoczęciem używania zaimportowanej wersji konfiguracji należy rozwiązać te problemy. Aby uzyskać więcej informacji, zobacz listę pokrewnych artykułów do tego tematu.
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)

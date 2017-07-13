@@ -3,7 +3,7 @@ title: "Definicje wierszy w Projektancie raportów finansowych"
 description: "Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zawartość każdego wiersza w raporcie finansowym. Definicję wiersza można łączyć z definicjami kolumn, drzewa raportowania i raportów, by tworzyć grupy elementów konstrukcyjnych dostępne dla wielu firm."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,45 +11,49 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: Management Reporter, Core
+ms.search.scope: Management Reporter, UnifiedOperations, Core
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: cf0886725e2d8d4031e19810e75755f4306b7c49
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="row-definitions-in-financial-report-designer"></a>Definicje wierszy w Projektancie raportów finansowych
+# Definicje wierszy w Projektancie raportów finansowych
+<a id="row-definitions-in-financial-report-designer" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zawartość każdego wiersza w raporcie finansowym. Definicję wiersza można łączyć z definicjami kolumn, drzewa raportowania i raportów, by tworzyć grupy elementów konstrukcyjnych dostępne dla wielu firm.
 
-<a name="create-a-row-definition"></a>Tworzenie definicji wiersza
+Tworzenie definicji wiersza
+<a id="create-a-row-definition" class="xliff"></a>
 -----------------------
 
 1.  W Projektancie raportów w okienku nawigacji kliknij **Definicje wierszy**.
 2.  W menu **Plik** kliknij **Nowy**, a następnie kliknij polecenie **Definicja wiersza**. Aby uzyskać więcej informacji dotyczących zawartości każdej komórki, zobacz [Modyfikowanie komórek definicji wiersza](modify-row-definition-cells-financial-reporting.md).
 
-## <a name="open-a-row-definition"></a>Otwieranie definicji wiersza
+## Otwieranie definicji wiersza
+<a id="open-a-row-definition" class="xliff"></a>
 1.  W Projektancie raportów w okienku nawigacji kliknij **Definicje wierszy**.
 2.  Kliknij dwukrotnie nazwę definicji wiersza, którą chcesz otworzyć.
 3.  Aby wyświetlić podstawowe elementy skojarzone z definicja wiersza, kliknij definicję wiersz prawym przyciskiem myszy, a następnie wybierz **Skojarzenia**.
 
-## <a name="contents-of-a-row-definition"></a> Zawartość definicji wiersza
+##  Zawartość definicji wiersza
+<a id="contents-of-a-row-definition" class="xliff"></a>
 Definicja wiersza może zawierać maksymalnie 20 000 wierszy wymiarów finansowych i uwzględniać następujące informacje:
 
 -   Opisowy tekst, który dodaje znaczenie do raportu przez utworzenie nagłówków, wierszy i obszarów sekcji, np. **Gotówka** lub **Całkowity przychód**.
--   Łącza do danych finansowych, co może obejmować wartości wymiarów z programu Microsoft Dynamics 365 for Operations **Uwaga:** Można skonfigurować definicję wiersza, aby były pobierane dane z systemu wymiarów finansowych przy każdym generowaniu raportu.
+-   Łącza do danych finansowych, co może obejmować wartości wymiarów z programu Microsoft Dynamics 365 for Finance and Operations **Uwaga:** Można skonfigurować definicję wiersza, aby były pobierane dane z systemu wymiarów finansowych przy każdym generowaniu raportu.
 -   Sumy wierszy i formuły oparte na połączonych danych finansowych.
 
 Zazwyczaj każdy wiersz w definicji wiersza zawiera jeden z następujących typów informacji:
@@ -63,7 +67,8 @@ Istnieją dwie metody wprowadzania danych w definicji wiersza:
 -   Ręczne wprowadzanie danych wiersza w nowej definicji wiersza. Aby uzyskać więcej informacji, zobacz [Modyfikowanie komórek definicji wiersza](modify-row-definition-cells-financial-reporting.md).
 -   Używanie Projektanta raportów do pobierania danych wiersza bezpośrednio z wymiarów finansowych. Aby uzyskać więcej informacji, zobacz sekcję „Powiązane formuły/wiersze/jednostki” w artykule [Modyfikowanie komórek definicji wiersza](modify-row-definition-cells-financial-reporting.md).
 
-## <a name="add-dimensions-in-a-row-definition"></a> Dodawanie wymiarów w definicji wiersza
+##  Dodawanie wymiarów w definicji wiersza
+<a id="add-dimensions-in-a-row-definition" class="xliff"></a>
 Wymiar jest częścią wspólną danych i wartości. W projektancie raportów można grupować dane i wartości. Następnie można klasyfikować i analizować transakcje bardziej szczegółowo. Można użyć okna dialogowego **Wstaw wiersze z wymiarów**, aby dodawać wiersze do definicji wiersza w tym samym czasie. To okno dialogowe wyświetla jedną kolumnę dla każdego wymiaru. W poniższej tabeli opisano informacje, które można podać dla każdego wymiaru.
 
 | Opcja                | Opis                                                                                                                                                                                                                                                                      |
@@ -82,7 +87,8 @@ Aby dodać wymiary do definicji wiersza, należy wykonać następujące kroki:
 6.  W polu **Przyrost każdego wiersza** określ odstęp między kolejnymi kodami wierszy. Na przykład jeśli kod pierwszego wiersza wynosi 100, a wartość przyrostu wynosi 30, pierwsze nowe wiersze mają kody 100, 130, 160, 190 i 220. Użyj wartość przyrostu, która zapewnia wystarczający odstęp na wstawienie nowych wierszy formatu i formuły.
 7.  Kliknij przycisk **OK** Dla każdej wybranej wartości wymiaru jest dodawany jeden wiersz do definicji wiersza.
 
-## <a name="adjust-rounding-in-a-row-definition"></a> Korekta zaokrąglenia w definicji wiersza
+##  Korekta zaokrąglenia w definicji wiersza
+<a id="adjust-rounding-in-a-row-definition" class="xliff"></a>
 W przypadku bilansu, w którym kwoty są zaokrąglane, sumy mogą się nie bilansować. Ten problem może wystąpić, jeśli na przykład używasz opcji zaokrąglania w raporcie o bilansie, a definicja raportu również określa zaokrąglanie. Aby bilansować kwoty w bilansach, można w definicji wiersza użyć opcji **Korygowanie zaokrągleń**. W definicji raportu na karcie **Ustawienia** można wyłączyć zaokrąglanie lub je zmodyfikować. W poniższej tabeli przedstawiono sposób zaokrąglania kwot: W tej tabeli sumy wierszy 100 i 200 różnią się, gdy zaokrąglanie jest włączone.
 
 | Kod wiersza | Kwoty bez zaokrąglania | Kwota z zaokrąglaniem do całych tysięcy |
@@ -101,14 +107,16 @@ Aby dostosować zaokrąglenie w bilansie, należy wykonać następujące kroki:
     -   **Wiersz sumy zobowiązań i kapitału własnego** — kod wiersza dla wierszy w bilansie, który zawiera sumy zobowiązań i kapitału własnego.
     -   **Limit kwoty korekty** — dodatnia liczba całkowita określająca limit dla automatycznych korekt. Ta kwota jest porównywana z wartością bezwzględną rzeczywistej różnicy zaokrągleń.
 
-    **Uwaga:**te kody wiersza muszą być połączone z danymi finansowymi. Innymi słowy, wiersz musi mieć wartość wymiaru w jego komórce **Łącze do wymiarów finansowych**. **Nie** należy używać odwołania do wiersza opisu (**DESC**), obliczenia (**CALC**) ani sumy (**TOT**).
+    **Uwaga:** te kody wiersza muszą być połączone z danymi finansowymi. Innymi słowy, wiersz musi mieć wartość wymiaru w jego komórce **Łącze do wymiarów finansowych**. **Nie** należy używać odwołania do wiersza opisu (**DESC**), obliczenia (**CALC**) ani sumy (**TOT**).
 
-Kwoty w bilansie będą teraz bilansowane równomiernie, gdy jest włączone zaokrąglanie. **Uwaga:**limit korekty jest stosowany na podstawie opcji **Dokładność zaokrąglania** określonej dla definicji raportu. Na przykład zaokrąglanie raportu do tysięcy i wprowadzenie wartości **2** w polu **Limit kwoty korekty** spowoduje wyświetlanie komunikatu ostrzegawczego, gdy wartość określona w polu **Wiersz korekty zaokrąglania** zwiększy się lub zmniejszy o ponad 2000.
+Kwoty w bilansie będą teraz bilansowane równomiernie, gdy jest włączone zaokrąglanie. **Uwaga:** limit korekty jest stosowany na podstawie opcji **Dokładność zaokrąglania** określonej dla definicji raportu. Na przykład zaokrąglanie raportu do tysięcy i wprowadzenie wartości **2** w polu **Limit kwoty korekty** spowoduje wyświetlanie komunikatu ostrzegawczego, gdy wartość określona w polu **Wiersz korekty zaokrąglania** zwiększy się lub zmniejszy o ponad 2000.
 
-## <a name="format-row-and-column-text"></a>Formatowanie tekstu wiersza i kolumny
+## Formatowanie tekstu wiersza i kolumny
+<a id="format-row-and-column-text" class="xliff"></a>
 Można dostosować wygląd raportów, zmieniając czcionki i formatując tekst. Poniższe sekcje zawierają wyjaśnienia dotyczące formatowania wyglądu wierszy i kolumn w raportach.
 
-### <a name="manage-font-styles"></a>Zarządzanie stylami czcionek
+### Zarządzanie stylami czcionek
+<a id="manage-font-styles" class="xliff"></a>
 
 Można tworzyć i modyfikować style czcionek dla raportu. Następnie można zastosować te style do dokumentu albo do określonego wiersza lub kolumny w raporcie.
 
@@ -144,7 +152,8 @@ Można tworzyć i modyfikować style czcionek dla raportu. Następnie można zas
 </tbody>
 </table>
 
-### <a name="format-row-text"></a>Formatowanie tekstu wiersza
+### Formatowanie tekstu wiersza
+<a id="format-row-text" class="xliff"></a>
 
 Formatowanie określone w definicji wiersza zastępuje wszelkie formatowanie określone w definicji kolumny oraz w definicji raportu. Format tekstu można zmodyfikować za pomocą formantów na pasku narzędzi formatowania. Te opcje są standardowymi opcjami systemu Microsoft Windows.
 
@@ -152,29 +161,34 @@ Formatowanie określone w definicji wiersza zastępuje wszelkie formatowanie okr
 2.  Zaznacz komórki do formatowania. Aby wybrać wiele komórek, przytrzymaj klawisz Ctrl i zaznaczaj kolejne komórki.
 3.  Kliknij przycisk na pasku narzędzi dla formatu, który chcesz zastosować. Na przykład aby zwiększyć wcięcie wiersza, zaznacz wiersz, a następnie na pasku narzędzi kliknij przycisk **Zwiększ wcięcie** ![Zwiększ wcięcie](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Zwiększ wcięcie").
 
-### <a name="adjust-columns-while-you-design-reports"></a>Dostosowywanie kolumn podczas projektowania raportów
+### Dostosowywanie kolumn podczas projektowania raportów
+<a id="adjust-columns-while-you-design-reports" class="xliff"></a>
 
 Aby ułatwić wyświetlanie kolumn, nad którymi pracujesz w definicji wiersza, można dopasować szerokość kolumny oraz ukryć (zminimalizować) lub pokazać kolumny w okienku widoku. Wprowadzane modyfikacje wpływają tylko na wygląd kolumn na ekranie. Nie wpływają na formatowanie kolumn w raportach.
 
-### <a name="change-the-width-of-a-column-in-the-view-pane"></a>Zmienianie szerokości kolumny w okienku widoku
+### Zmienianie szerokości kolumny w okienku widoku
+<a id="change-the-width-of-a-column-in-the-view-pane" class="xliff"></a>
 
 1.  W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
 2.  W menu **Format** wybierz **Szerokość kolumny**.
 3.  W oknie dialogowym **Szerokość kolumny** wprowadź wartość, a następnie kliknij przycisk **OK**. Alternatywnie można przeciągać prawą granicę komórki nagłówka kolumny, aby zmienić szerokość kolumny.
 
-### <a name="hide-columns-in-the-view-pane"></a>Ukrywanie kolumn w okienku widoku
+### Ukrywanie kolumn w okienku widoku
+<a id="hide-columns-in-the-view-pane" class="xliff"></a>
 
 1.  W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
 2.  Zaznacz kolumnę lub kolumny, które chcesz zminimalizować.
 3.  Kliknij prawym przyciskiem myszy, a następnie kliknij **Ukryj**.
 
-### <a name="show-all-hidden-columns-in-the-view-pane"></a>Pokazywanie wszystkich ukrytych kolumn w okienku widoku
+### Pokazywanie wszystkich ukrytych kolumn w okienku widoku
+<a id="show-all-hidden-columns-in-the-view-pane" class="xliff"></a>
 
 1.  W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
 2.  Kliknij prawym przyciskiem myszy zminimalizowaną kolumnę, którą chcesz wyświetlać, a następnie kliknij **Odkryj**.
 
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Raporty finansowe](financial-reporting-intro.md)

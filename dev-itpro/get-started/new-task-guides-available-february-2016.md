@@ -3,13 +3,13 @@ title: Nowe przewodniki po zadaniach (luty 2016 r.)
 description: "Ten temat przedstawia listę przewodników po zadaniach, które znajdują się bibliotekach narzędzia Microsoft BPM według stanu na koniec lutego 2016 r.  Są tu ujednolicone biblioteki APQC (z lutego 2016 r.) dla programu Microsoft Dynamics 365 for Operations oraz biblioteki ułatwiające rozpoczęcie pracy (z lutego 2016 r.)."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 102083
 ms.assetid: f50585e8-4ef6-4cd8-90d8-c8d6a65b22b8
 ms.search.region: global
@@ -17,27 +17,30 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3c99753f22e537fdc026342dce12389fb9acc83a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cdad1d6c2466b47b07133a5335866ef6881609ca
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="new-task-guides-february-2016"></a>Nowe przewodniki po zadaniach (luty 2016 r.)
+# Nowe przewodniki po zadaniach (luty 2016 r.)
+<a id="new-task-guides-february-2016" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten temat przedstawia listę przewodników po zadaniach, które znajdują się bibliotekach narzędzia Microsoft BPM według stanu na koniec lutego 2016 r.  Są tu ujednolicone biblioteki APQC (z lutego 2016 r.) dla programu Microsoft Dynamics 365 for Operations oraz biblioteki ułatwiające rozpoczęcie pracy (z lutego 2016 r.).
+Ten temat przedstawia listę przewodników po zadaniach, które znajdują się bibliotekach narzędzia Microsoft BPM według stanu na koniec lutego 2016 r.  Są tu ujednolicone biblioteki APQC (z lutego 2016 r.) dla systemu Microsoft Dynamics AX oraz biblioteki ułatwiające rozpoczęcie pracy (z lutego 2016 r.).
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z lutego 2016 r.) dla programu Microsoft Dynamics 365 for Operations
+Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z lutego 2016 r.) dla systemu Microsoft Dynamics AX
+<a id="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax" class="xliff"></a>
 ---------------------------------------------------------------------------------
 
-Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach, które przewidziano jako pomoc dla programu Dynamics 365 for Operations w wersji 7.0.0. Jeśli potrzebujesz zlokalizowanych wersji tych przewodników po zadaniach, są one dostępne w ujednoliconej bibliotece APQC (z maja 2016 r.) dla programu Microsoft Dynamics 365 for Operations. Aby uzyskać więcej informacji na temat sposobu łączenia systemu pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md).
+Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach, które przewidziano jako pomoc dla systemu Dynamics AX w wersji 7.0.0. Jeśli potrzebujesz zlokalizowanych wersji tych przewodników po zadaniach, są one dostępne w ujednoliconej bibliotece APQC (z maja 2016 r.) dla systemu Microsoft Dynamics AX. Aby uzyskać więcej informacji na temat sposobu łączenia systemu pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md).
 
-### <a name="accounts-payable"></a>Rozrachunki z dostawcami
+### Rozrachunki z dostawcami
+<a id="accounts-payable" class="xliff"></a>
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
@@ -52,7 +55,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="accounts-receivable"></a>Rozrachunki z odbiorcami
+### Rozrachunki z odbiorcami
+<a id="accounts-receivable" class="xliff"></a>
 
 |                                                             |                    |
 |-------------------------------------------------------------|--------------------|
@@ -73,7 +77,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="cash-and-bank-management"></a>Zarządzanie gotówką i bankami
+### Zarządzanie gotówką i bankami
+<a id="cash-and-bank-management" class="xliff"></a>
 
 |                                                                      |                    |
 |----------------------------------------------------------------------|--------------------|
@@ -101,7 +106,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="compliance"></a>Zgodność
+### Zgodność
+<a id="compliance" class="xliff"></a>
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
@@ -110,7 +116,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="cost-management"></a>Zarządzanie kosztami
+### Zarządzanie kosztami
+<a id="cost-management" class="xliff"></a>
 
 |                                                                     |                    |
 |---------------------------------------------------------------------|--------------------|
@@ -123,7 +130,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="countryregion-functionality"></a>Funkcje specyficzne dla kraju/regionu
+### Funkcje specyficzne dla kraju/regionu
+<a id="countryregion-functionality" class="xliff"></a>
 
 |                                                                                                        |                                 |
 |--------------------------------------------------------------------------------------------------------|---------------------------------|
@@ -265,7 +273,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="develop-vision-and-strategy"></a>Opracowywanie wizji i strategii
+### Opracowywanie wizji i strategii
+<a id="develop-vision-and-strategy" class="xliff"></a>
 
 |                                                                                          |                    |
 |------------------------------------------------------------------------------------------|--------------------|
@@ -278,7 +287,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="electronic-reporting"></a>Raportowanie elektroniczne
+### Raportowanie elektroniczne
+<a id="electronic-reporting" class="xliff"></a>
 
 |                                                 |                    |
 |-------------------------------------------------|--------------------|
@@ -291,7 +301,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="expense-management"></a>Zarządzanie wydatkami
+### Zarządzanie wydatkami
+<a id="expense-management" class="xliff"></a>
 
 |                              |                    |
 |------------------------------|--------------------|
@@ -300,7 +311,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="fixed-assets"></a>Środki trwałe
+### Środki trwałe
+<a id="fixed-assets" class="xliff"></a>
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
@@ -323,7 +335,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="general-ledger"></a>Księga główna
+### Księga główna
+<a id="general-ledger" class="xliff"></a>
 
 |                                                                   |                    |
 |-------------------------------------------------------------------|--------------------|
@@ -356,7 +369,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="human-capital-management"></a>Zarządzanie kapitałem ludzkim
+### Zarządzanie kapitałem ludzkim
+<a id="human-capital-management" class="xliff"></a>
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
@@ -400,7 +414,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="inventory-management"></a>Zarządzanie zapasami
+### Zarządzanie zapasami
+<a id="inventory-management" class="xliff"></a>
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
@@ -424,7 +439,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="manufacturing"></a>Wytwarzanie
+### Wytwarzanie
+<a id="manufacturing" class="xliff"></a>
 
 |                                                               |                    |
 |---------------------------------------------------------------|--------------------|
@@ -476,7 +492,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="master-planning"></a>Planowanie główne
+### Planowanie główne
+<a id="master-planning" class="xliff"></a>
 
 |                                                   |                    |
 |---------------------------------------------------|--------------------|
@@ -489,7 +506,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="organization-administration"></a>Administrowanie organizacją
+### Administrowanie organizacją
+<a id="organization-administration" class="xliff"></a>
 
 |                                           |                    |
 |-------------------------------------------|--------------------|
@@ -503,7 +521,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="planning"></a>Planowanie
+### Planowanie
+<a id="planning" class="xliff"></a>
 
 |                        |                    |
 |------------------------|--------------------|
@@ -512,7 +531,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="procurement-and-sourcing"></a>Zaopatrzenie i sourcing
+### Zaopatrzenie i sourcing
+<a id="procurement-and-sourcing" class="xliff"></a>
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
@@ -527,7 +547,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="product-information-and-configuration"></a>Dane i konfiguracja produktu
+### Dane i konfiguracja produktu
+<a id="product-information-and-configuration" class="xliff"></a>
 
 |                                                       |                    |
 |-------------------------------------------------------|--------------------|
@@ -553,7 +574,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="public-sector"></a>Sektor publiczny
+### Sektor publiczny
+<a id="public-sector" class="xliff"></a>
 
 |                                                                                         |                    |
 |-----------------------------------------------------------------------------------------|--------------------|
@@ -579,7 +601,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="retail-and-commerce"></a>Handel detaliczny i inny
+### Handel detaliczny i inny
+<a id="retail-and-commerce" class="xliff"></a>
 
 |                                                                                           |                    |
 |-------------------------------------------------------------------------------------------|--------------------|
@@ -621,7 +644,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="sales"></a>Sprzedaż
+### Sprzedaż
+<a id="sales" class="xliff"></a>
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
@@ -644,7 +668,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="sales-tax"></a>Podatek
+### Podatek
+<a id="sales-tax" class="xliff"></a>
 
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
@@ -663,7 +688,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="security"></a>Zabezpieczenia
+### Zabezpieczenia
+<a id="security" class="xliff"></a>
 
 |                                                         |                    |
 |---------------------------------------------------------|--------------------|
@@ -674,7 +700,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-### <a name="warehouse-and-transportation"></a>Magazyn i transport
+### Magazyn i transport
+<a id="warehouse-and-transportation" class="xliff"></a>
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
@@ -699,7 +726,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Przewodniki po zadaniach w bibliotece ułatwiającej rozpoczęcie pracy (z lutego 2016 r.)
+## Przewodniki po zadaniach w bibliotece ułatwiającej rozpoczęcie pracy (z lutego 2016 r.)
+<a id="task-guides-in-the-february-2016-getting-started-library" class="xliff"></a>
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **Wiersz narzędzia BPM**                                       | **Kraj/region** |
@@ -719,7 +747,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 
  
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)](new-updated-task-guides-available-may-2016.md)

@@ -3,13 +3,13 @@ title: "Tworzenie szablonów rekordów"
 description: "Ten artykuł zawiera wprowadzenie do koncepcji szablonów rekordów oraz wyjaśnienia, jak używać tych szablonów do tworzenia rekordów udostępniających informacje."
 author: pvillads
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 16101
 ms.assetid: 61ada2d8-84c3-44bc-b4c5-516b1aeac3d1
 ms.search.region: Global
@@ -17,22 +17,23 @@ ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 505ecdac2f8f7bca18c0510ee883b221d43e6226
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 24643909b0b481d0fe16a5613f28ec6161ef8314
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="create-record-templates"></a>Tworzenie szablonów rekordów
+# Tworzenie szablonów rekordów
+<a id="create-record-templates" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Ten artykuł zawiera wprowadzenie do koncepcji szablonów rekordów oraz wyjaśnienia, jak używać tych szablonów do tworzenia rekordów udostępniających informacje.
 
-Szablony rekordów pomagają w szybkim tworzeniu rekordów w programie Microsoft Dynamics 365 for Operations. Istnieje możliwość tworzenia szablonów rekordów tylko dla niektórych typów rekordów w programie Microsoft Dynamics 365 for Operations. Na przykład załóżmy,**** że wprowadzasz dane wynajmu dla wypożyczali samochodów w San Francisco. Ponieważ większość klientów będzie prawdopodobnie pochodziła z San Francisco, byłoby dobrze, gdy pola **Stan**, **Kraju** i **Miasto** na formularzu wynajmu mogły wypełniać się automatycznie **Uwaga:** Szablony mogą być stosowane tylko w odniesieniu do obszarów programu Dynamics 365 for Operations, do których użytkownicy mają dostęp. Jednak wszystkie tytuły szablonów są dla Ciebie widoczne podczas tworzenia nowego rekordu, a także dla innych użytkowników w przypadku tworzenia szablonów, które będą dostępne dla wszystkich użytkowników. Należy to wziąć pod uwagę podczas nadawania nazw szablonom. Na przykład należy unikać nazw zawierających słowo „prowizja”, jeśli poufną informacją jest to, że wynagrodzenia niektórych pracowników mają charakter prowizyjny. Gdy jeden lub więcej szablonów, do których masz dostęp, istnieje dla określonego formularza i próbujesz utworzyć nowy rekord w formularzu, wyświetlany jest strona **Wybierz szablon dla...**. Po wybraniu szablonu z listy jest tworzony nowy rekord, zawierający domyślne informacje utworzone na podstawie wybranego szablonu. Jeśli nie chcesz używać szablonów podczas tworzenia nowych rekordów, zaznacz pole wyboru **Nie pytaj ponownie** na stronie **Wybierz szablon dla**. Aby ponownie wyświetlić okno dialogowe wyboru szablonu, kliknij prawym przyciskiem myszy dowolny rekord, kliknij opcję **Informacje o rekordzie**, a następnie kliknij przycisk **Pokaż zaznaczenie szablonów**.
+Szablony rekordów pomagają w szybkim tworzeniu rekordów w programie Microsoft Dynamics 365 for Finance and Operations. Istnieje możliwość tworzenia szablonów rekordów tylko dla niektórych typów rekordów w programie Microsoft Dynamics 365 for Finance and Operations. Na przykład załóżmy,**** że wprowadzasz dane wynajmu dla wypożyczali samochodów w San Francisco. Ponieważ większość klientów będzie prawdopodobnie pochodziła z San Francisco, byłoby dobrze, gdy pola **Stan**, **Kraju** i **Miasto** na formularzu wynajmu mogły wypełniać się automatycznie **Uwaga:** Szablony mogą być stosowane tylko w odniesieniu do segmentów systemu Finance and Operations, do których mają dostęp. Jednak wszystkie tytuły szablonów są dla Ciebie widoczne podczas tworzenia nowego rekordu, a także dla innych użytkowników w przypadku tworzenia szablonów, które będą dostępne dla wszystkich użytkowników. Należy to wziąć pod uwagę podczas nadawania nazw szablonom. Na przykład należy unikać nazw zawierających słowo „prowizja”, jeśli poufną informacją jest to, że wynagrodzenia niektórych pracowników mają charakter prowizyjny. Gdy jeden lub więcej szablonów, do których masz dostęp, istnieje dla określonego formularza i próbujesz utworzyć nowy rekord w formularzu, wyświetlany jest strona **Wybierz szablon dla...**. Po wybraniu szablonu z listy jest tworzony nowy rekord, zawierający domyślne informacje utworzone na podstawie wybranego szablonu. Jeśli nie chcesz używać szablonów podczas tworzenia nowych rekordów, zaznacz pole wyboru **Nie pytaj ponownie** na stronie **Wybierz szablon dla**. Aby ponownie wyświetlić okno dialogowe wyboru szablonu, kliknij prawym przyciskiem myszy dowolny rekord, kliknij opcję **Informacje o rekordzie**, a następnie kliknij przycisk **Pokaż zaznaczenie szablonów**.
 
 
 

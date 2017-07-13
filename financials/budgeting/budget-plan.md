@@ -1,9 +1,9 @@
 ---
 title: "Planowanie budżetu"
-description: "Celem tego warsztatu jest praktyczne zaprezentowanie aktualizacji funkcji programu Microsoft Dynamics 365 for Operations w obszarze planowania budżetu. Zilustrowaliśmy przykład krótkiej konfiguracji modułu planowania budżetu oraz pokazaliśmy, jak przy użyciu tej konfiguracji można planować budżet.  Ten warsztat dotyczy głównie następujących procesów lub zadań biznesowych:  - Tworzenie hierarchii organizacyjnej na potrzeby planowania budżetu i konfigurowania zabezpieczeń użytkownika  - Definiowanie scenariuszy planu budżetu, kolumn planu budżetu, układów i szablonów programu Excel  - Tworzenie i aktywacja procesu planowania budżetu  - Tworzenie dokumentu planu budżetu poprzez pobieranie wartości rzeczywistych z księgi głównej  - Używanie alokacji do korygowania danych dokumentu planu budżetu  - Edytowanie danych dokumentu planu budżetu w programie Excel"
+description: "Celem tego warsztatu jest praktyczne zaprezentowanie aktualizacji funkcji programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition w obszarze planowania budżetu. Zilustrowaliśmy przykład krótkiej konfiguracji modułu planowania budżetu oraz pokazaliśmy, jak przy użyciu tej konfiguracji można planować budżet.  Ten warsztat dotyczy głównie następujących procesów lub zadań biznesowych:  - Tworzenie hierarchii organizacyjnej na potrzeby planowania budżetu i konfigurowania zabezpieczeń użytkownika  - Definiowanie scenariuszy planu budżetu, kolumn planu budżetu, układów i szablonów programu Excel  - Tworzenie i aktywacja procesu planowania budżetu  - Tworzenie dokumentu planu budżetu poprzez pobieranie wartości rzeczywistych z księgi głównej  - Używanie alokacji do korygowania danych dokumentu planu budżetu  - Edytowanie danych dokumentu planu budżetu w programie Excel"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,27 +18,30 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dbe2b386de9e88af354015705e1444987a3f7e82
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 11b5ffacef06fd3e83c61cd14da11ad645eec335
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="budget-planning"></a>Planowanie budżetu
+# Planowanie budżetu
+<a id="budget-planning" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Celem tego warsztatu jest praktyczne zaprezentowanie aktualizacji funkcji programu Microsoft Dynamics 365 for Operations w obszarze planowania budżetu. Zilustrowaliśmy przykład krótkiej konfiguracji modułu planowania budżetu oraz pokazaliśmy, jak przy użyciu tej konfiguracji można planować budżet.  Ten warsztat dotyczy głównie następujących procesów lub zadań biznesowych:  - Tworzenie hierarchii organizacyjnej na potrzeby planowania budżetu i konfigurowania zabezpieczeń użytkownika  - Definiowanie scenariuszy planu budżetu, kolumn planu budżetu, układów i szablonów programu Excel  - Tworzenie i aktywacja procesu planowania budżetu  - Tworzenie dokumentu planu budżetu poprzez pobieranie wartości rzeczywistych z księgi głównej  - Używanie alokacji do korygowania danych dokumentu planu budżetu  - Edytowanie danych dokumentu planu budżetu w programie Excel 
+Celem tego warsztatu jest praktyczne zaprezentowanie aktualizacji funkcji programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition w obszarze planowania budżetu. Zilustrowaliśmy przykład krótkiej konfiguracji modułu planowania budżetu oraz pokazaliśmy, jak przy użyciu tej konfiguracji można planować budżet.  Ten warsztat dotyczy głównie następujących procesów lub zadań biznesowych:  - Tworzenie hierarchii organizacyjnej na potrzeby planowania budżetu i konfigurowania zabezpieczeń użytkownika  - Definiowanie scenariuszy planu budżetu, kolumn planu budżetu, układów i szablonów programu Excel  - Tworzenie i aktywacja procesu planowania budżetu  - Tworzenie dokumentu planu budżetu poprzez pobieranie wartości rzeczywistych z księgi głównej  - Używanie alokacji do korygowania danych dokumentu planu budżetu  - Edytowanie danych dokumentu planu budżetu w programie Excel 
 
-<a name="prerequisites"></a>Wymagania wstępne 
+Wymagania wstępne
+<a id="prerequisites" class="xliff"></a> 
 ------------------
 
-Aby skorzystać z tego samouczka, musisz uzyskać dostęp do środowiska Dynamics 365 for Operations z danymi demonstracyjnymi Contoso i mieć uprawnienia administratora w używanym wystąpieniu. Podczas tego warsztatu nie należy używać trybu prywatnego przeglądarki — w razie potrzeby wyloguj się ze wszystkich innych kont w przeglądarce i zaloguj się w programie Dynamics 365 for Operations przy użyciu poświadczeń administratora. Podczas logowania się w programie Dynamics 365 for Operations **musisz** zaznaczyć pole wyboru „Nie wylogowuj mnie”. Spowoduje to utworzenie trwałego pliku cookie potrzebnego w aplikacji Excel. Jeśli zalogujesz się w programie Dynamics 365 for Operations przy użyciu przeglądarki innej niż IE, zobaczysz monit o zalogowanie się do aplikacji Excel. Po kliknięciu przycisku Zaloguj się w aplikacji Excel zostanie wyświetlone wyskakujące okienko i podczas logowania się **TRZEBA** zaznaczyć pole wyboru Nie wylogowuj mnie. Jeśli kliknięcie przycisku Zaloguj się w aplikacji Excel nie spowoduje wyświetlenia okienka, wyczyść pamięć podręczną plików cookie aplikacji IE.
+Aby skorzystać z tego samouczka, musisz uzyskać dostęp do środowiska Finance and Operations z danymi demonstracyjnymi Contoso i mieć uprawnienia administratora w używanym wystąpieniu. Podczas tego warsztatu nie należy używać trybu prywatnego przeglądarki — w razie potrzeby wyloguj się ze wszystkich innych kont w przeglądarce i zaloguj się w programie Finance and Operations przy użyciu poświadczeń administratora. Podczas logowania się w programie Finance and Operations **musisz** zaznaczyć pole wyboru „Nie wylogowuj mnie”. Spowoduje to utworzenie trwałego pliku cookie potrzebnego w aplikacji Excel. Jeśli zalogujesz się w programie Finance and Operations przy użyciu przeglądarki innej niż IE, zobaczysz monit o zalogowanie się do aplikacji Excel. Po kliknięciu przycisku Zaloguj się w aplikacji Excel zostanie wyświetlone wyskakujące okienko i podczas logowania się **TRZEBA** zaznaczyć pole wyboru Nie wylogowuj mnie. Jeśli kliknięcie przycisku Zaloguj się w aplikacji Excel nie spowoduje wyświetlenia okienka, wyczyść pamięć podręczną plików cookie aplikacji IE.
 
-## <a name="scenario-overview"></a>**Omówienie scenariusza**
+## **Omówienie scenariusza**
+<a id="scenario-overview" class="xliff"></a>
 Julia pracuje na stanowisku menedżera finansów w firmie Contoso Entertainment Systems w Niemczech (DEMF). Gdy nadchodzi rok obrachunkowy 2016, Julia musi skonfigurować budżet firmy na nadchodzący rok. Przygotowanie budżetu wygląda następująco:
 
 1.  Julia używa kwot rzeczywistych z poprzedniego roku jako punktu początkowego tworzenia budżetu.
@@ -53,10 +56,12 @@ Julia używa następującego szablonu programu Excel do przygotowania budżetu:
 
 [![Szablon programu Excel](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
 
-<a name="exercise-1-configuration"></a>Ćwiczenie 1: Konfiguracja
+Ćwiczenie 1: Konfiguracja
+<a id="exercise-1-configuration" class="xliff"></a>
 =========================
 
-## <a name="task-1-create-organizational-hierarchy"></a>**Zadanie 1: Tworzenie hierarchii organizacyjnej**
+## **Zadanie 1: Tworzenie hierarchii organizacyjnej**
+<a id="task-1-create-organizational-hierarchy" class="xliff"></a>
 Cały proces budżetowania odbywa się w dziale finansów, dlatego Julia musi utworzyć bardzo prostą hierarchię organizacji, składającą się tylko z działu finansów. 1.1. Przejdź do okna Hierarchie organizacyjne (Administrowanie organizacją &gt; Organizacje &gt; Hierarchie organizacyjne) i kliknij przycisk Nowy.
 
 ![Hierarchia organizacyjna](./media/screenshot3.png) 
@@ -85,7 +90,8 @@ Cały proces budżetowania odbywa się w dziale finansów, dlatego Julia musi ut
 
 [![Data obowiązywania](./media/screenshot9.png)](./media/screenshot9.png)
 
-## <a name="task-2-configure-user-security"></a>Zadanie 2: Konfigurowanie zabezpieczeń użytkownika
+## Zadanie 2: Konfigurowanie zabezpieczeń użytkownika
+<a id="task-2-configure-user-security" class="xliff"></a>
 Planowanie budżetu używa specjalnych zasad zabezpieczeń do konfigurowania dostępu do danych planów budżetu. Julia musi przyznać sobie dostęp do planów budżetu działu finansowego. 
 
 2.1. Przełącz się do kontekstu firmy DEMF: 
@@ -110,7 +116,8 @@ Planowanie budżetu używa specjalnych zasad zabezpieczeń do konfigurowania dos
 
 [![Udzielanie dostępu](./media/screenshot14.png)](./media/screenshot14.png)
 
-## <a name="task-3-create-scenarios"></a>Zadanie 3: Tworzenie scenariuszy
+## Zadanie 3: Tworzenie scenariuszy
+<a id="task-3-create-scenarios" class="xliff"></a>
 3.1. Wybierz kolejno opcje Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu. Na stronie scenariuszy zwróć uwagę na scenariusze, które wykorzystasz w dalszej części ćwiczenia: Wartości rzeczywiste w poprzednim roku i Zabudżetowane. 
 
 *Uwaga: możesz utworzyć nowe scenariusze i użyć ich zamiast proponowanych.* 
@@ -119,7 +126,8 @@ Planowanie budżetu używa specjalnych zasad zabezpieczeń do konfigurowania dos
 
 *Uwaga: Ze względu na to, że do przygotowania budżetu Julia nie używa procesu formalnego zatwierdzenia, w tym ćwiczeniu pominiemy konfigurację przepływów pracy, etapów i etapów przepływów pracy, a użyjemy istniejącej konfiguracji przepływu pracy automatycznego zatwierdzania. Ta konfiguracja przepływu pracy jest omówiona w dodatku.*
 
-## <a name="task-4-create-budget-plan-columns"></a>Zadanie 4: Tworzenie kolumn planu budżetu
+## Zadanie 4: Tworzenie kolumn planu budżetu
+<a id="task-4-create-budget-plan-columns" class="xliff"></a>
 Kolumny planu budżetu zawierają wartości pieniężne lub ilości i można je umieścić w układzie dokumentu planu budżetu. W naszym przykładzie musimy utworzyć kolumnę dla Wartości rzeczywistych w poprzednim roku oraz 12 kolumn dla wszystkich miesięcy w budżetowanym roku. Można utworzyć kolumny albo po prostu klikając przycisk Dodaj i wypełniając wartości lub z pomocą jednostki danych. W tym ćwiczeniu użyjemy jednostki danych do wstawienia wartości. 
 
 4.1. W oknie Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu otwórz stronę Kolumny. Kliknij przycisk Office w prawym górnym rogu formularza i wskaż opcję Kolumny (niefiltrowane). 
@@ -148,11 +156,12 @@ Kolumny planu budżetu zawierają wartości pieniężne lub ilości i można je 
 
 [![Automatyczne wypełnianie](./media/screenshot22.png)](./media/screenshot22.png) 
 
-4.7. Wróć do programu Dynamics 365 for Operations i odśwież stronę. Opublikowane wartości będą wyświetlane w programie Dynamics 365 for Operations. 
+4.7. Wróć do programu Finance and Operations i odśwież stronę. Opublikowane wartości będą wyświetlane w programie Finance and Operations. 
 
-[![Odświeżanie](./media/screenshot23.png)](./media/screenshot23.png)
+[![Odśwież](./media/screenshot23.png)](./media/screenshot23.png)
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Zadanie 5: Utwórz szablony i układy dokumentów planu budżetu
+## Zadanie 5: Utwórz szablony i układy dokumentów planu budżetu
+<a id="task-5-create-budget-plan-document-layouts-and-templates" class="xliff"></a>
 Układ określa, jak siatka wierszy dokumentu planu budżetu będzie wyglądać, gdy użytkownik otworzy dokument planu budżetu. Istnieje również możliwość przełączenia układu dokumentu planu budżetu, żeby zobaczyć te same dane pod różnymi kątami. Teraz, kiedy Julia ma już zdefiniowane kolumny, które zostaną wykorzystane w dokumencie planu budżetu, musi utworzyć układ dokumentu planu budżetu, który będzie wyglądał podobnie do tabeli programu Excel wykorzystywanej do utworzenia danych budżetu (zobacz sekcję Omówienie scenariusza w tym ćwiczeniu). 
 
 5.1. W oknie Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu otwórz stronę Układy. Utwórz nowy układ dla wpisu miesięcznego budżetu:
@@ -172,7 +181,8 @@ Na podstawie definicji układu planu budżetu możemy utworzyć szablon programu
 
 5.3. &lt; Opcjonalny krok&gt; Zmodyfikuj szablon programu Excel, tak aby był bardziej przyjazny użytkownikowi — dodaj formuły sumy, pola nagłówków, formatowanie itd. Zapisz zmiany i załaduj plik do układu planu budżetu, klikając kolejno opcje Układ &gt; Przekaż. [![Przekazywanie](./media/screenshot26.png)](./media/screenshot26.png)
 
-## <a name="task-6-create-a-budget-planning-process"></a>Zadanie 6: Utwórz proces planowania budżetu
+## Zadanie 6: Utwórz proces planowania budżetu
+<a id="task-6-create-a-budget-planning-process" class="xliff"></a>
 Julia musi utworzyć i aktywować nowy proces planowania budżetu, uwzględniając całą powyższą konfigurację, aby rozpocząć wprowadzanie planów budżetu. Proces planowania budżetu określa, jakie organizacje budżetowania, przepływ pracy, układy i szablony będą używane do tworzenia planów budżetu. 
 
 6.1. Przejdź do okna Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Proces planowania budżetu i utwórz nowy rekord.
@@ -193,10 +203,12 @@ Julia musi utworzyć i aktywować nowy proces planowania budżetu, uwzględniaj�
 
 [![Aktywowanie](./media/screenshot28.png)](./media/screenshot28.png)
 
-<a name="exercise-2-process-simulation"></a>Ćwiczenie 2: Symulacja procesu
+Ćwiczenie 2: Symulacja procesu
+<a id="exercise-2-process-simulation" class="xliff"></a>
 ==============================
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Zadanie 7: Generowanie danych początkowych dla planu budżetu z księgi głównej
+## Zadanie 7: Generowanie danych początkowych dla planu budżetu z księgi głównej
+<a id="task-7-generate-initial-data-for-budget-plan-from-general-ledger" class="xliff"></a>
 7.1. Przejdź do okna Budżetowanie &gt; Okresowo &gt; Generowanie planu budżetu z księgi głównej. Wprowadź parametry przetwarzania okresowego i kliknij przycisk Generuj. 
 
 [![Generowanie](./media/screenshot29.png)](./media/screenshot29.png) 
@@ -209,7 +221,8 @@ Julia musi utworzyć i aktywować nowy proces planowania budżetu, uwzględniaj�
 
 [![Wyświetlanie planu budżetu](./media/screenshot31.png)](./media/screenshot31.png)
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Zadanie 8: Utwórz budżet bieżącego roku w oparciu o wartości rzeczywiste w poprzednim roku
+## Zadanie 8: Utwórz budżet bieżącego roku w oparciu o wartości rzeczywiste w poprzednim roku
+<a id="task-8-create-current-year-budget-based-on-previous-year-actuals" class="xliff"></a>
 W planie budżetu można użyć metody alokacji, aby łatwo skopiować informacje o planie budżetu z jednego scenariusza do drugiego, podzielić je na okresy i alokować do wymiarów. Użyjemy alokacji do utworzenia budżetu na bieżący rok na podstawie wartości rzeczywistych z poprzedniego roku. 
 
 8.1. Pobierz wszystkie wiersze siatki dokumentu planu budżetu, a następnie kliknij przycisk alokowania budżetu. 
@@ -224,25 +237,28 @@ Kwoty rzeczywiste poprzedniego roku zostaną skopiowane do budżetu bieżącego 
 
 [![Krzywa sprzedaży](./media/screenshot34.png)](./media/screenshot34.png)
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Zadanie 9: Korygowanie planu budżetu przy użyciu programu Excel i kończenie pracy nad dokumentem
+## Zadanie 9: Korygowanie planu budżetu przy użyciu programu Excel i kończenie pracy nad dokumentem
+<a id="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document" class="xliff"></a>
 9.1. Kliknij przycisk Arkusz, aby otworzyć zawartość dokumentu w programie Excel.
 
 [![Program Excel](./media/screenshot35.png)](./media/screenshot35.png)
 
 9.2. Gdy skoroszyt programu Excel zostanie wyświetlony, skoryguj liczby w dokumencie planu budżetu i kliknij przycisk Publikuj.
 
-[![Publikowanie](./media/screenshot36.png)](./media/screenshot36.png)
+[![Publikuj](./media/screenshot36.png)](./media/screenshot36.png)
 
-9.3. Wróć do dokumentu planu budżetu w programie Dynamics 365 for Operations. Kliknij kolejno opcje Przepływ pracy &gt; Prześlij, aby automatycznie zatwierdzić dokument.
+9.3. Wróć do dokumentu planu budżetu w programie Finance and Operations. Kliknij kolejno opcje Przepływ pracy &gt; Prześlij, aby automatycznie zatwierdzić dokument.
 
 [![Automatyczne zatwierdzanie](./media/screenshot37.png)](./media/screenshot37.png) 
 
 Po zakończeniu przepływu pracy etap dokumentu planu budżetu zmieni się na Zatwierdzony. [![Zatwierdzone](./media/screenshot38.png)](./media/screenshot38.png)
 
-<a name="appendix"></a>Dodatek
+Dodatek
+<a id="appendix" class="xliff"></a>
 ========
 
-### <a name="auto-approve-workflow-configuration"></a>Konfiguracja przepływu pracy automatycznego zatwierdzania
+### Konfiguracja przepływu pracy automatycznego zatwierdzania
+<a id="auto-approve-workflow-configuration" class="xliff"></a>
 
 A. Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Przepływy pracy budżetowania Utwórz nowy przepływ pracy przy użyciu szablonu Przepływy pracy planowania budżetu
 

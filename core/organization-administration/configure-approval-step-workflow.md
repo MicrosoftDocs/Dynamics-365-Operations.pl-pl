@@ -3,13 +3,13 @@ title: "Konfigurowanie etapu zatwierdzania w przepływie pracy"
 description: "W tym temacie wyjaśniono sposób konfigurowania właściwości kroku zatwierdzania."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192161
 ms.assetid: 8b478e3d-d6b4-403b-aae0-f639a71ca36c
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1924562f866ecdbb6fa6d3d0a9dc7627387f2d6a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 61b3107516c7af8d1c0f4c427bdffa9be0fbc18d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurowanie etapu zatwierdzania w przepływie pracy
+# Konfigurowanie etapu zatwierdzania w przepływie pracy
+<a id="configure-an-approval-step-in-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,13 +35,15 @@ W tym temacie wyjaśniono sposób konfigurowania właściwości kroku zatwierdza
 
 Aby skonfigurować krok zatwierdzania, w edytorze przepływu pracy kliknij krok zatwierdzania prawym przyciskiem myszy i wybierz polecenie **Właściwości**, a zostanie otwarta strona **Właściwości**. Następnie za pomocą procedur zamieszczonych niżej skonfiguruj właściwości kroku zatwierdzania.
 
-## <a name="name-the-step"></a>Nadawanie nazwy krokowi
+## Nadawanie nazwy krokowi
+<a id="name-the-step" class="xliff"></a>
 Wykonaj następujące kroki, aby wprowadzić nazwę kroku zatwierdzania.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
 2.  W polu **Nazwa** wprowadź unikatową nazwę kroku zatwierdzania.
 
-## <a name="enter-a-subject-line-and-instructions"></a>Wprowadzanie wiersza tematu i instrukcji
+## Wprowadzanie wiersza tematu i instrukcji
+<a id="enter-a-subject-line-and-instructions" class="xliff"></a>
 Należy wprowadzić wiersz tematu i instrukcje dla użytkowników przypisanych do kroku zatwierdzania. Na przykład jeśli konfigurujesz krok zatwierdzania dla zapotrzebowań na zakup, użytkownik przypisany do kroku zobaczy wiersz tematu i instrukcje na stronie **Zapotrzebowania na zakup**. Wiersz tematu pojawia się na pasku komunikatów na stronie. Może wtedy kliknąć ikonę na pasku komunikatów i obejrzeć instrukcje. Aby wprowadzić wiersz tematu i instrukcje, należy wykonać poniższe kroki.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
@@ -74,7 +77,8 @@ Należy wprowadzić wiersz tematu i instrukcje dla użytkowników przypisanych d
     5.  Aby spersonalizować tekst, możesz wstawić symbole zastępcze, jak opisano w kroku 6.
     6.  Kliknij przycisk **Zamknij**.
 
-## <a name="assign-the-approval-step"></a>Przypisywanie kroku zatwierdzania
+## Przypisywanie kroku zatwierdzania
+<a id="assign-the-approval-step" class="xliff"></a>
 Wykonaj poniższe kroki, aby określić, komu ma zostać przypisany ten krok zatwierdzania.
 
 1.  W lewym okienku kliknij opcję **Przypisanie**.
@@ -126,10 +130,10 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisany ten krok zat
     </tr>
     <tr class="even">
     <td>Użytkownik</td>
-    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Operations</td>
+    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Finance and Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz przypisać krok, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Finance and Operations. Wybierz użytkowników, którym chcesz przypisać krok, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -153,17 +157,20 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisany ten krok zat
         -   Jeśli Magda i Ewa zatwierdzą dokument, zostanie on wysłany do Anny do zatwierdzenia.
     -   **Wszystkie osoby zatwierdzające** — Wszystkie osoby zatwierdzające muszą zatwierdzić dokument. W przeciwnym razie nie można kontynuować przepływu pracy. Na przykład Tomasz przesłał raport z wydatków na 15 000 zł. Raport z wydatków jest obecnie przypisany do Magdy, Ewy i Bartka. Jeśli Magda i Ewa zatwierdzą dokument, ale Bartek go odrzuci, dokument zostanie odrzucony i wysłany z powrotem do Tomasza. Jeśli Magda, Ewa i Bartek zatwierdzą dokument, zostanie wysłany do Anny do zatwierdzenia.
 
-## <a name="specify-when-the-approval-step-is-required"></a>Określanie, kiedy krok zatwierdzania jest wymagany
+## Określanie, kiedy krok zatwierdzania jest wymagany
+<a id="specify-when-the-approval-step-is-required" class="xliff"></a>
 Można określić, kiedy krok zatwierdzania jest wymagany. Krok zatwierdzenia może być wymagany zawsze lub tylko wtedy, gdy są spełnione określone warunki.
 
-### <a name="the-approval-step-is-always-required"></a>Krok zatwierdzania jest zawsze wymagany
+### Krok zatwierdzania jest zawsze wymagany
+<a id="the-approval-step-is-always-required" class="xliff"></a>
 
 Jeśli krok zatwierdzania jest zawsze wymagany, wykonaj następujące czynności.
 
 1.  W lewym okienku kliknij opcję **Warunek**.
 2.  Wybierz opcję **Zawsze wykonuj ten krok**.
 
-### <a name="the-approval-step-is-required-in-specific-conditions"></a>Krok zatwierdzania jest wymagany w określonych warunkach
+### Krok zatwierdzania jest wymagany w określonych warunkach
+<a id="the-approval-step-is-required-in-specific-conditions" class="xliff"></a>
 
 Konfigurowany krok zatwierdzania może być wymagany tylko w określonych warunkach. Na przykład jeśli konfigurujesz krok zatwierdzania przepływu pracy zapotrzebowania na zakup, można określić, aby krok następował tylko wtedy, gdy kwota zapotrzebowania na zakup jest większa niż 10 000 zł. Wykonaj następujące czynności, aby określić, kiedy krok zatwierdzania jest wymagany.
 
@@ -177,7 +184,8 @@ Konfigurowany krok zatwierdzania może być wymagany tylko w określonych warunk
     3.  Kliknij przycisk **Test**. System oszacuje rekord i określi, czy rekord spełnia określone warunki.
     4.  Kliknij przycisk **OK** lub **Anuluj**, aby powrócić do strony **Właściwości**.
 
-## <a name="specify-what-happens-when-the-document-is-overdue"></a>Określanie, co się dzieje z dokumentem zaległym
+## Określanie, co się dzieje z dokumentem zaległym
+<a id="specify-what-happens-when-the-document-is-overdue" class="xliff"></a>
 Jeśli użytkownik nie podejmie działania wobec dokumentu w wyznaczonym czasie, dokument staje się zaległy. Dokument zaległy może być eskalowany lub automatycznie przypisywany do innego użytkownika w celu zatwierdzenia. Wykonaj następujące kroki, aby eskalować zaległy dokument.
 
 1.  W lewym okienku kliknij opcję **Eskalacja**.
@@ -229,10 +237,10 @@ Jeśli użytkownik nie podejmie działania wobec dokumentu w wyznaczonym czasie,
     </tr>
     <tr class="odd">
     <td>Użytkownik</td>
-    <td>Konkretni użytkownicy programu Dynamics 365 for Operations</td>
+    <td>Konkretny użytkownik programu Finance and Operations</td>
     <td><ol>
     <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, do których chcesz eskalować dokument, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Finance and Operations. Wybierz użytkowników, do których chcesz eskalować dokument, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>

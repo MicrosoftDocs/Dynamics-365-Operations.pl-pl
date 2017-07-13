@@ -1,40 +1,42 @@
 ---
-title: "Sprawozdawczość finansowa w programie Dynamics 365 for Operations"
-description: "Funkcjonalność raportowania finansowego w programie Dynamics 365 for Operations pozwala specjalistom finansowym i biznesowym tworzyć, obsługiwać, wdrażać i wyświetlać sprawozdania finansowe. Wychodzi poza tradycyjne ograniczenia sprawozdawczości, pomagając efektywne projektować różne rodzaje raportów."
+title: Raportowanie finansowe w programie Finance and Operations
+description: "Funkcjonalność raportowania finansowego w programie Finance and Operations pozwala specjalistom finansowym i biznesowym tworzyć, obsługiwać, wdrażać i wyświetlać sprawozdania finansowe. Wychodzi poza tradycyjne ograniczenia sprawozdawczości, pomagając efektywne projektować różne rodzaje raportów."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.search.scope: Management Reporter
+ms.search.scope: Management Reporter, UnifiedOperations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 997c34856d2445b02038d208f91522fe7a9a487c
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: 4e0c984b95cd395e7ab23394b886782e55fac90f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="financial-reporting-for-dynamics-365-for-operations"></a>Sprawozdawczość finansowa w programie Dynamics 365 for Operations
+# Raportowanie finansowe w programie Finance and Operations
+<a id="financial-reporting-for-finance-and-operations" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Funkcjonalność raportowania finansowego w programie Dynamics 365 for Operations pozwala specjalistom finansowym i biznesowym tworzyć, obsługiwać, wdrażać i wyświetlać sprawozdania finansowe. Wychodzi poza tradycyjne ograniczenia sprawozdawczości, pomagając efektywne projektować różne rodzaje raportów.
+Funkcjonalność raportowania finansowego w programie Finance and Operations pozwala specjalistom finansowym i biznesowym tworzyć, obsługiwać, wdrażać i wyświetlać sprawozdania finansowe. Wychodzi poza tradycyjne ograniczenia sprawozdawczości, pomagając efektywne projektować różne rodzaje raportów.
 
 Funkcjonalność sprawozdawczości finansowej obejmuje obsługę wymiarów. W związku z tym segmenty i wymiary kont są od razu dostępne. Nie są wymagane żadne dodatkowe narzędzia ani czynności konfiguracyjnych.
 
-## <a name="financial-reporting-components"></a>Składniki raportowania finansowego
+## Składniki raportowania finansowego
+<a id="financial-reporting-components" class="xliff"></a>
 Następujące składniki aparatu sprawozdawczości finansowej zapewniają łatwe tworzenie, wyświetlanie i planowanie raportów.
 
 | Składnik        | Funkcje                                                                                                                                                                                                                                                                           | Informacje dodatkowe                                                                          |
@@ -42,7 +44,8 @@ Następujące składniki aparatu sprawozdawczości finansowej zapewniają łatwe
 | Projektant raportów  | Tworzenie bloków konstrukcyjnych raportów, które można łączyć w celu definiowania i generowania raportów. Kreator raportów prowadzi mniej doświadczonych użytkowników przez proces projektowania. Użytkownicy zaawansowani mogą tworzyć nowe bloki konstrukcyjne raportów lub modyfikować istniejące bloki zgodnie z własnymi wymaganiami. |                                                                                                 |
 | Harmonogramy raportu | Planowanie regularnego generowania jednego raportu lub grupy raportów.                                                                                                                                                                                          | [Generowanie raportu finansowego](generate-financial-report.md) |
 
-## <a name="features"></a>Funkcje
+## Funkcje
+<a id="features" class="xliff"></a>
 <table>
 <thead>
 <tr class="header">
@@ -86,7 +89,8 @@ Następujące składniki aparatu sprawozdawczości finansowej zapewniają łatwe
 </tbody>
 </table>
 
-#<a name="see-also"></a>Informacje dodatkowe
+#Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 [Generowanie raportu finansowego](generate-financial-report.md)
 
 

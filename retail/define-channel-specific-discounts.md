@@ -3,46 +3,50 @@ title: "Definiowanie rabatów właściwych dla kanału"
 description: "Sprzedawcy detaliczni często ustawiają różne rabaty w różnych kanałach. W tym temacie opisano pojęcia, które należy znać, aby tworzyć rabaty dla konkretnych kanałów."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 ms.search.form: RetailAffiliationPriceGroup, RetailCatalogPriceGroup, RetailChannelPriceGroup, RetailDiscountPriceGroup, RetailDiscountPricingWorkspace, RetailPeriodicDiscount, RetailStoreItemPriceList, RetailStoreTable
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16401
 ms.assetid: d807fd51-86aa-47a0-8e00-6c5ddd21ff6b
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 750f61198550a248d70fd531c3cb2ff86ca37f50
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: d40c37628f03a7605e04b95339072a67806f2fa1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="define-channel-specific-discounts"></a>Definiowanie rabatów właściwych dla kanału
+# Definiowanie rabatów właściwych dla kanału
+<a id="define-channel-specific-discounts" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
 Sprzedawcy detaliczni często ustawiają różne rabaty w różnych kanałach. W tym temacie opisano pojęcia, które należy znać, aby tworzyć rabaty dla konkretnych kanałów. 
 
-<a name="channel-specific-discounts"></a>Rabaty właściwe dla kanału
+Rabaty właściwe dla kanału
+<a id="channel-specific-discounts" class="xliff"></a>
 --------------------------
 
 Sprzedawcy detaliczni często oferują różne rabaty w różnych kanałach. To może zależeć od lokalnych uwarunkowań rynku lub być elementem konkurencji z innymi sprzedawcami detalicznymi.
 
-Moduł Handel detaliczny i inny w programie Microsoft Dynamics 365 for Operations oferuje funkcjonalność grup cenowych definiujących rabaty właściwe dla kanału. Grup cenowe mogą być skojarzone z jednym lub kilkoma następującymi elementami: kanały, katalogi, przynależności i programy lojalnościowe. Ten artykuł dotyczy kanałów, ale te same pojęcia dotyczą rabatów katalogu, przynależności i programów lojalnościowych.
+Program Microsoft Dynamics 365 for Retail oferuje grupy cenowe definiujące rabaty właściwe dla kanału. Grup cenowe mogą być skojarzone z jednym lub kilkoma następującymi elementami: kanały, katalogi, przynależności i programy lojalnościowe. Ten artykuł dotyczy kanałów, ale te same pojęcia dotyczą rabatów katalogu, przynależności i programów lojalnościowych.
 
-## <a name="price-groups"></a>Grupy cenowe
+## Grupy cenowe
+<a id="price-groups" class="xliff"></a>
 
 [![Grupy cenowe](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
@@ -53,7 +57,8 @@ Powyższy wykres ilustruje relację między jednostkami, które mogą znajdować
 -   **Grupy cenowe programów lojalnościowych** — ta strona zawiera listę programów lojalnościowych i rabatów połączonych ze sobą dla każdej grupy cenowej.
 -   **Grupy cenowe przynależności** — ta strona zawiera listę przynależności i rabatów połączonych ze sobą dla każdej grupy cenowej.
 
-## <a name="example-channel-discount-set-up"></a>Przykładowa konfiguracja rabatu kanału
+## Przykładowa konfiguracja rabatu kanału
+<a id="example-channel-discount-set-up" class="xliff"></a>
 Przykład poniżej ilustruje zadania niezbędne do skonfigurowania rabatu kanału.
 
 1.  W tym przykładzie masz kanał **Houston** i chcesz utworzyć nowy rabat o nazwie **Powrót-do-szkoły**.
@@ -64,7 +69,8 @@ Przykład poniżej ilustruje zadania niezbędne do skonfigurowania rabatu kanał
 
  
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Korekty ceny i rabaty](price-adjustments-discounts.md)

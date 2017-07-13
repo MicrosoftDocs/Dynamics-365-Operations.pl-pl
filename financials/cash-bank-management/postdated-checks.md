@@ -1,16 +1,16 @@
 ---
 title: Czeki postdatowane
-description: "Ten artykuł zawiera informacje o obsłudze czeków postdatowanych w programie Microsoft Dynamics 365 for Operations. Czeki postdatowane są wystawiane do celów wykonywania i odbierania płatności w przyszłości. W związku z tym czeki można zrealizować dopiero od określonego dnia."
+description: "Ten artykuł zawiera informacje o obsłudze czeków postdatowanych w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Czeki postdatowane są wystawiane do celów wykonywania i odbierania płatności w przyszłości. W związku z tym czeki można zrealizować dopiero od określonego dnia."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 21741
 ms.assetid: 4eb7c7da-1e6b-4d35-9f41-373b66103229
 ms.search.region: Global
@@ -18,22 +18,23 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c3e59ae5126cd21e668459686133ba8bcf728df3
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: f7cf2b7996d113f0f883b39f3603de8236e8ad2c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="postdated-checks"></a>Czeki postdatowane
+# Czeki postdatowane
+<a id="postdated-checks" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera informacje o obsłudze czeków postdatowanych w programie Microsoft Dynamics 365 for Operations. Czeki postdatowane są wystawiane do celów wykonywania i odbierania płatności w przyszłości. W związku z tym czeki można zrealizować dopiero od określonego dnia.
+Ten artykuł zawiera informacje o obsłudze czeków postdatowanych w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Czeki postdatowane są wystawiane do celów wykonywania i odbierania płatności w przyszłości. W związku z tym czeki można zrealizować dopiero od określonego dnia.
 
-Program Microsoft Dynamics 365 for Operations obsługuje pełny cykl zarządzania dla czeków postdatowanych w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami, jak pokazano w poniższej tabeli.
+Program Microsoft Dynamics 365 for Finance and Operations obsługuje pełny cykl zarządzania dla czeków postdatowanych w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami, jak pokazano w poniższej tabeli.
 <table>
 <colgroup>
 <col width="50%" />

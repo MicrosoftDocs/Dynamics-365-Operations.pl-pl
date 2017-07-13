@@ -9,25 +9,27 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0d1e2b9a51c2d7a7c30c2458b7babf8ac5c08118
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 957626a283b750645adefa5176480e68cc27e4f1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="import-historical-data-for-demand-forecasts"></a>Importowanie danych historycznych dla prognoz popytu
+# Importowanie danych historycznych dla prognoz popytu
+<a id="import-historical-data-for-demand-forecasts" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
-W celu zagwarantowania dokładności prognoz popytu, musisz mieć tyle historycznych danych popytu, ile możesz uzyskać dla pozycji lub klucza alokacji produktów. Jeśli historyczne dane popytu nie zostały jeszcze zaimportowane, użyj jednostki danych **Historyczny popyt zewnętrzny** (ReqDemPlanHistoricalExternalDemandEntity) w Microsoft Dynamics 365 for Operations do ich zaimportowania.
+W celu zagwarantowania dokładności prognoz popytu, musisz mieć tyle historycznych danych popytu, ile możesz uzyskać dla pozycji lub klucza alokacji produktów. Jeśli historyczne dane popytu nie zostały jeszcze zaimportowane, użyj jednostki danych **Historyczny popyt zewnętrzny** (ReqDemPlanHistoricalExternalDemandEntity) w Microsoft Dynamics 365 for Finance and Operations do ich zaimportowania.
 
 W obszarze roboczym **Zarządzanie danymi** można wyświetlić przegląd wszystkich pól w jednostce.
 
@@ -38,7 +40,8 @@ W obszarze roboczym **Zarządzanie danymi** można wyświetlić przegląd wszyst
 
 Aby użyć jednostki danych, musisz mieć plik programu Microsoft Excel lub plik wartości rozdzielanych przecinkami (CSV) zawierający dane historyczne popytu. Poniższy przykład pokazuje, jak przeprowadzić import danych z pliku CSV.
 
-## <a name="example"></a>Przykład
+## Przykład
+<a id="example" class="xliff"></a>
 
 Można użyć następującego pliku jako przykładowego. Pobierz [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast). Ten plik zawiera historyczne dane dotyczące popytu dla pozycji D0001. Zawiera on tylko następujące wymagane pola: oddział, ilość i data zapotrzebowania.
 
@@ -54,7 +57,8 @@ Można użyć następującego pliku jako przykładowego. Pobierz [HistoricalDema
 
 Po zaimportowaniu historycznych danych popytu można generować prognozy popytu.
 
-## <a name="see-also"></a>Informacje dodatkowe
+## Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 
 [Generowanie bazowej prognozy statystycznej](generate-statistical-baseline-forecast.md)
 

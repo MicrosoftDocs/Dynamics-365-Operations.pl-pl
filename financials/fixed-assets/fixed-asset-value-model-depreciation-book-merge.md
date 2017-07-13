@@ -1,15 +1,15 @@
 ---
 title: "Scalenie funkcjonalności modeli ewidencji i księgi amortyzacji środków trwałych"
-description: "W poprzednich wersjach istniały dwie koncepcje wyceny środków trwałych: modele ewidencji i księgi amortyzacji. W programie Microsoft Dynamics 365 for Operations w wydaniu 1611 funkcje modeli ewidencji i ksiąg amortyzacji zostały scalone w pojedynczy obiekt zwany księgą."
+description: "W poprzednich wersjach istniały dwie koncepcje wyceny środków trwałych: modele ewidencji i księgi amortyzacji. W programie Microsoft Dynamics 365 for Operations (wydanie 1611) funkcje modeli ewidencji i ksiąg amortyzacji zostały scalone w pojedynczy obiekt zwany księgą."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221564
 ms.assetid: 7c68eb7c-8b1a-4dd9-afb8-04b4040e305e
 ms.search.region: Global
@@ -17,24 +17,26 @@ ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ed01fc3c5f2f8b0870f22b39a8b0f6e98596af21
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: add41ceb1dd31d5b5aa26916114d7d7864cb1626
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Scalenie funkcjonalności modeli ewidencji i księgi amortyzacji środków trwałych
+# Scalenie funkcjonalności modeli ewidencji i księgi amortyzacji środków trwałych
+<a id="fixed-asset-value-model-and-depreciation-book-merge" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-W poprzednich wersjach istniały dwie koncepcje wyceny środków trwałych: modele ewidencji i księgi amortyzacji. W programie Microsoft Dynamics 365 for Operations w wydaniu 1611 funkcje modeli ewidencji i ksiąg amortyzacji zostały scalone w pojedynczy obiekt zwany księgą.
+W poprzednich wersjach istniały dwie koncepcje wyceny środków trwałych: modele ewidencji i księgi amortyzacji. W programie Microsoft Dynamics 365 for Operations (wydanie 1611) funkcje modeli ewidencji i ksiąg amortyzacji zostały scalone w pojedynczy obiekt zwany księgą.
 
 Nowa funkcjonalność księgi opiera się na wcześniejszej funkcjonalności modelu ewidencji, ale także zawiera wszystkie funkcje dostępne wcześniej tylko w księgach amortyzacji. [![Księga jako narzędzie powstałe ze scalenia modeli ewidencji i ksiąg amortyzacji](./media/fixed-assets.png)](./media/fixed-assets.png) Ze względu na to scalenie można teraz używać jednego zbioru stron, zapytań i raportów dla wszystkich procesów związanych ze środkami trwałymi. Tabele w tym temacie opisują wcześniejsze funkcje ksiąg amortyzacji i modeli ewidencji oraz nową funkcjonalność ksiąg.
 
-## <a name="setup"></a>Konfiguracja
+## Konfiguracja
+<a id="setup" class="xliff"></a>
 Domyślnie zapisy ksiąg są księgowane do księgi głównej (KG) i księgi podrzędnej środków trwałych. Księgi mają nową funkcję **Księguj w księdze głównej**, która pozwala wyłączyć księgowanie w księdze głównej i księgować tylko w księdze podrzędnej środków trwałych. Ta funkcja jest podobna do wcześniejszego zachowania funkcji księgowania stosowanego w księgach amortyzacji. Konfiguracja arkuszy ma nową warstwę księgowania o nazwie Brak. Tę warstwę księgowania dodano specjalnie dla transakcji na środkach trwałych. Aby zaksięgować transakcje dla ksiąg, które nie księgują w KG, należy użyć arkusza, w którym została ustawiona warstwa księgowania **Brak**.
 
 |                                                  |                                 |                                 |                                                         |
@@ -46,7 +48,8 @@ Domyślnie zapisy ksiąg są księgowane do księgi głównej (KG) i księgi pod
 | Księgi pochodne                                    | Niedozwolone                     | Dozwolone                         | Dozwolone                                                 |
 | Zastąpienie profilu amortyzacji na poziomie składnika aktywów | Dozwolone                         | Niedozwolone                     | Dozwolone                                                 |
 
-## <a name="processes"></a>Procesy
+## Procesy
+<a id="processes" class="xliff"></a>
 Teraz procesy używają wspólnej strony. Niektóre procesy są dozwolone tylko wtedy, gdy w konfiguracji księgi opcja **Księguj w księdze głównej** ma ustawioną wartość **Nie**.
 
 |                                |                           |                     |                                          |
@@ -57,7 +60,8 @@ Teraz procesy używają wspólnej strony. Niektóre procesy są dozwolone tylko 
 | Usuwanie historycznych transakcji | Dozwolone                   | Niedozwolone         | Dozwolone, chyba że księgujesz w KG |
 | Aktualizacja grupowa                    | Dozwolone                   | Niedozwolone         | Dozwolone, chyba że księgujesz w KG |
 
-## <a name="inquiries-and-reports"></a>Zapytania i raporty
+## Zapytania i raporty
+<a id="inquiries-and-reports" class="xliff"></a>
 Zapytania i raporty obsługują wszystkie księgi. Raporty, które nie są uwzględnione w tabeli poniżej, wcześniej obsługiwały modele ewidencji i księgi amortyzacji, i teraz nadal będą obsługiwały wszystkie typy ksiąg. Do raportów również zostało dodane pole **Warstwa księgowania**, dzięki czemu można łatwiej rozpoznać księgowania transakcji.
 
 |                                       |                                |                          |                          |
@@ -68,7 +72,8 @@ Zapytania i raporty obsługują wszystkie księgi. Raporty, które nie są uwzgl
 | Podstawa środka trwałego                     | Dozwolone                        | Niedozwolone              | Dozwolone                  |
 | Możliwość zastosowania środka trwałego w trakcie kwartału | Dozwolone                        | Niedozwolone              | Dozwolone                  |
 
-## <a name="upgrade"></a>Uaktualnienie
+## Uaktualnienie
+<a id="upgrade" class="xliff"></a>
 Proces uaktualniania spowoduje przeniesienie istniejących ustawień i wszystkich istniejących transakcji do nowej struktury księgi. Modele ewidencji pozostaną w swoim obecnym kształcie, jako księgi powodujące księgowanie w księdze głównej. Natomiast księgi amortyzacji zostaną przeniesione do księgi, która w opcji **Księguj w księdze głównej** ma wartość **Nie**. Arkusze ksiąg amortyzacji zostaną przeniesiona do arkusza księgi głównej, w której ustawiono warstwę księgowania **Brak**.
 
 

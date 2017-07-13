@@ -3,13 +3,13 @@ title: "Konfigurowanie właściwości przepływu pracy"
 description: "W tym temacie wyjaśniono sposób konfigurowania różnych właściwości przepływu pracy."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 196083
 ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 263ebaf1cf509589a745f1a9ec3384f97e854519
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 713204bc1e9c757bda48d556ea5b0f66ed79a5c9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-the-properties-of-a-workflow"></a>Konfigurowanie właściwości przepływu pracy
+# Konfigurowanie właściwości przepływu pracy
+<a id="configure-the-properties-of-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,25 +35,29 @@ W tym temacie wyjaśniono sposób konfigurowania różnych właściwości przep�
 
 Aby skonfigurować właściwości przepływu pracy, otwórz przepływ pracy w edytorze przepływu pracy. Kliknij w obszarze roboczym edytora przepływu pracy, a następnie kliknij przycisk **Właściwości**, aby otworzyć stronę **Właściwości**. Można użyć poniższych procedur, aby skonfigurować różne właściwości przepływu pracy.
 
-## <a name="name-the-workflow"></a>Nadawanie nazwy przepływowi pracy
+## Nadawanie nazwy przepływowi pracy
+<a id="name-the-workflow" class="xliff"></a>
 Należy wykonać następujące kroki, aby wprowadzić nazwę przepływu pracy.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
 2.  W polu **Nazwa** wprowadź unikatową nazwę przepływu pracy. Na przykład jeśli tworzysz przepływ pracy zapotrzebowania na zakup dla każdego kraju lub regionu, w którym działa firma, można nazwać przepływy **Zapotrzebowania na zakup — Dania** lub **Zapotrzebowania na zakup — Hiszpania**.
 
-## <a name="specify-the-workflow-owner"></a>Określanie właściciela przepływu pracy
+## Określanie właściciela przepływu pracy
+<a id="specify-the-workflow-owner" class="xliff"></a>
 Właściciel przepływu pracy jest osobą, która zarządza przepływem pracy i obsługuje go. Aby określić właściciela przepływu pracy, należy wykonać następujące kroki.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
 2.  Na liście **Właściciel** zaznacz nazwę osoby, która będzie zarządzać przepływem pracy.
 
-## <a name="select-an-email-template"></a>Wybór szablonu wiadomości e-mail
+## Wybór szablonu wiadomości e-mail
+<a id="select-an-email-template" class="xliff"></a>
 Wykonaj następujące kroki, aby wybrać szablon wiadomości e-mail, który będzie używany do generowania komunikatów powiadomień dotyczących przepływu pracy.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
 2.  Na liście **Szablon wiadomości e-mail dla powiadomień o przepływie pracy** zaznacz szablon.
 
-## <a name="enter-instructions-for-users"></a>Wprowadzanie instrukcji dla użytkowników
+## Wprowadzanie instrukcji dla użytkowników
+<a id="enter-instructions-for-users" class="xliff"></a>
 Istnieje możliwość udostępniania instrukcji użytkownikom, którzy będą przesyłać dokumenty do przetwarzania i zatwierdzania. Ci użytkownicy są również zwani *inicjatorami*. Na przykład tworzysz przepływ pracy zapotrzebowania na zakup i wprowadzasz instrukcje. Te instrukcje mogą być wyświetlane przez użytkowników wprowadzających zapotrzebowania na zakup na stronie **Zapotrzebowania na zakup**. Aby wyświetlić instrukcje, inicjator klika ikonę na pasku komunikatów przepływu pracy. Aby wprowadzić instrukcje dla użytkowników, należy wykonać następujące kroki.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
@@ -71,7 +76,8 @@ Istnieje możliwość udostępniania instrukcji użytkownikom, którzy będą pr
     5.  Aby spersonalizować tekst, możesz wstawić symbole zastępcze. Aby uzyskać instrukcje dotyczące sposobu wprowadzania symbolu zastępczego, zobacz krok 3.
     6.  Kliknij przycisk **Zamknij**.
 
-## <a name="specify-when-this-workflow-is-used"></a>Określanie, kiedy jest używany ten przepływ pracy
+## Określanie, kiedy jest używany ten przepływ pracy
+<a id="specify-when-this-workflow-is-used" class="xliff"></a>
 Można utworzyć wiele przepływów pracy opartych na tym samym typie. Na przykład można utworzyć przepływ pracy zapotrzebowania na zakup dla każdego kraju lub regionu, w którym działa firma, na przykład Zapotrzebowania na zakup — Dania lub Zapotrzebowania na zakup — Hiszpania. Jeśli istnieje wiele przepływów pracy opartych na tym samym typie, trzeba określić warunki używania poszczególnych przepływów pracy. Dla poprzedniego przykładu należałoby określić następujące warunki:
 
 -   Zapotrzebowania na zakup — Dania jest używany, gdy krajem/regionem jest DK.
@@ -90,7 +96,8 @@ Aby określić, kiedy ma być używany konfigurowany przepływ pracy, należy wy
     3.  Kliknij przycisk **Test**. System oszacuje rekord i określi, czy rekord spełnia określone warunki. Na przykład jeśli tworzysz przepływ pracy zapotrzebowania na zakup dla Hiszpanii, obszar **Sprawdź poprawność warunku** na stronie zawiera listę zapotrzebowań na zakup. Kliknięcie przycisku **Test** spowoduje uruchomienie systemowego szacowania wybranego zapotrzebowania na zakup w celu sprawdzenia, czy krajem/regionem jest ES.
     4.  Kliknij przycisk **OK** lub **Anuluj**, aby powrócić do strony **Właściwości**.
 
-## <a name="specify-when-notifications-are-sent"></a>Określanie, kiedy są wysyłane powiadomienia
+## Określanie, kiedy są wysyłane powiadomienia
+<a id="specify-when-notifications-are-sent" class="xliff"></a>
 Podczas przesyłania dokumentu do przetwarzania tworzone jest wystąpienie przepływu pracy. Można wysyłać powiadomienia do użytkowników, gdy wystąpienia przepływu pracy oparte na przepływie pracy są uruchamiane, kończone, przerywane lub zatrzymane z powodu błędu. Aby określić, kiedy są wysyłane powiadomienia, należy wykonać następujące kroki.
 
 1.  W lewym okienku kliknij opcję **Powiadomienia**.
@@ -151,10 +158,10 @@ Podczas przesyłania dokumentu do przetwarzania tworzone jest wystąpienie przep
     </tr>
     <tr class="odd">
     <td>Użytkownik</td>
-    <td>Konkretni użytkownicy programu Dynamics 365 for Operations</td>
+    <td>Konkretny użytkownik programu Finance and Operations</td>
     <td><ol>
     <li>Na karcie <strong>Odbiorcy</strong> kliknij przycisk <strong>Użytkownik</strong>.</li>
-    <li>Na karcie <strong>Użytkownik</strong> lista <strong>Dostępni użytkownicy</strong> zawiera wszystkich użytkowników programu Dynamics 365 for Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li>Na karcie <strong>Użytkownik</strong> lista <strong>Dostępni użytkownicy</strong> zawiera wszystkich użytkowników programu Finance and Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -162,7 +169,8 @@ Podczas przesyłania dokumentu do przetwarzania tworzone jest wystąpienie przep
 
 8.  Powtórz kroki od 3 do 7 dla każdego zdarzenia wybranego w kroku 2.
 
-## <a name="enter-comments-about-the-changes-that-you-made-to-the-workflow"></a>Wprowadzanie komentarzy dotyczących zmian zastosowanych w przepływie pracy
+## Wprowadzanie komentarzy dotyczących zmian zastosowanych w przepływie pracy
+<a id="enter-comments-about-the-changes-that-you-made-to-the-workflow" class="xliff"></a>
 Aby wprowadzić komentarze dotyczące zmian zastosowanych w przepływie pracy, należy wykonać następujące kroki.
 
 1.  W lewym okienku kliknij opcję **Uwagi**.

@@ -3,30 +3,32 @@ title: "Konfigurowanie parametrów Zasobów ludzkich specyficznych dla firmy"
 description: "Niektóre parametry modułu Zasoby ludzkie (HR) są wspólne dla wielu firm, podczas gdy inne parametry są specyficzne dla firm. W tym artykule wyjaśniono, jak skonfigurować parametry modułu Zasoby ludzkie specyficzne dla firmy."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 ms.search.form: HRMParameters
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: rschloma
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e1a3560013271fc1b83bdb931aef2153b1d07317
+ms.sourcegitcommit: f83bc127f7bf3cdceb39a79c1e69f4f7e96f6462
+ms.openlocfilehash: ef84ad6e90e7c58ea921930e23b67228d393bc7e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/19/2017
 
 
 ---
 
-# <a name="set-up-company-specific-hr-parameters"></a>Konfigurowanie parametrów Zasobów ludzkich specyficznych dla firmy
+# Konfigurowanie parametrów Zasobów ludzkich specyficznych dla firmy
+<a id="set-up-company-specific-hr-parameters" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
@@ -36,8 +38,8 @@ Niektóre parametry modułu Zasoby ludzkie (HR) są wspólne dla wielu firm, pod
 Do ustawiania parametrów Zasobów ludzkich służą dwie strony. W przypadku parametrów współużytkowanych przez firmy, użyj strony **Udostępniane parametry zasobów ludzkich**. W przypadku parametrów specyficznych dla firmy (ustawienie dotyczy tylko jednej firmy), użyj strony **Parametry zasobów ludzkich**. Na stronie **parametrów zasobów ludzkich** ustawienia są podzielone na sześciu kartach:
 
 -   Ogólne
--   Rekrutacja
--   Kompensata
+-   Rekrutacja — tej funkcjonalności nie ma w aplikacji Dynamics 365 for Talent
+-   Wynagrodzenie
 -   Sekwencje identyfikatorów
 -   Rozporządzenie dotyczące zwolnień chorobowych i rodzinnych (FMLA)
 -   Samoobsługa pracownika
@@ -48,13 +50,20 @@ Ustawienia wprowadzone na karcie **rekrutacji** definiują typy dokumentów uży
 
 Ustawienia wprowadzone na karcie **Wynagrodzenie** określają, czy użytkownicy muszą potwierdzać, że chcą zapisać informacje dla systemu wynagrodzeń o stałej lub zmiennej wysokości. W przypadku zaznaczenia pola wyboru **Włącz weryfikację zapisu** za każdym razem, kiedy użytkownik zamknie stronę związaną z wynagrodzeniami, otrzyma wiadomość z zapytaniem, czy chce zapisać rekord. Niektóre strony w module zarządzania wynagrodzeniami nie zezwalają na usuwanie informacji. Dzięki pytaniu użytkowników, czy chcą zapisać informacje, można ograniczyć ilość zapisywanych danych, których potem nie można usunąć. Jeśli pole wyboru **Włącz weryfikację zapisu** nie zostanie zaznaczone, rekordy będą zawsze natychmiast zapisywane, być może zanim użytkownik będzie gotowy. W przypadku korzystania z funkcji zarządzania wydajnością można wybrać model oceniania na karcie **Wynagrodzenie** zamiast modelu przypisanego do systemów wynagrodzeń przy ocenie wydajności. 
 
-Ustawienia wprowadzone na karcie **Sekwencja numerów** określają sekwencje używane do automatycznego przypisywania identyfikatorów do elementów w module Zasoby ludzkie, takich jak zgłoszenia, rejestracje nieobecności, wyniki procesu wynagrodzenia, numery spraw i terminarze kursów. Aby obsługiwać odwołania numeracji i kody, użyj strony listy **Sekwencje identyfikatorów** (kliknij kolejno opcje **Administrowanie organizacją** &gt; **Sekwencje identyfikatorów** &gt; **Sekwencje identyfikatorów**). 
+### Wcześniej wydane grupy funkcjonalności
+<a id="previously-released-functionality" class="xliff"></a>
+Ustawienia wprowadzone na karcie **Sekwencja numerów** określają sekwencje używane do automatycznego przypisywania identyfikatorów do elementów w module Zasoby ludzkie, takich jak zgłoszenia, rejestracje nieobecności, wyniki procesu wynagrodzenia, numery spraw i terminarze kursów. Aby obsługiwać odwołania numeracji i kody, użyj strony listy **Sekwencje identyfikatorów** (kliknij kolejno opcje **Administrowanie organizacją** &gt; **Sekwencje identyfikatorów** &gt; **Sekwencje identyfikatorów**).
+
+### Jeśli używasz programu Dynamics 365 for Talent
+<a id="if-youre-using-dynamics-365-for-talent" class="xliff"></a>
+Ustawienia wprowadzone na karcie **Sekwencja numerów** określają sekwencje używane do automatycznego przypisywania identyfikatorów do elementów w module Zasoby ludzkie, takich jak zgłoszenia, rejestracje nieobecności, wyniki procesu wynagrodzenia, numery spraw i terminarze kursów. Aby obsługiwać odwołania numeracji i kody, użyj strony listy **Sekwencje identyfikatorów** (kliknij kolejno opcje **Administrowanie systemem** &gt; **karta Linki** &gt; **Sekwencje identyfikatorów** &gt; **Sekwencje identyfikatorów**). 
 
 Ustawienia wprowadzone na karcie **FMLA** określają, ile godzin pracownik musi pracować, aby otrzymać świadczenia FMLA, wymagany staż pracy i datę zatrudnienia konieczną do określenia stażu pracy. Ustawienia te definiują również liczbę godzin FMLA, do których pracownik jest upoważniony oraz kalendarz nieobecności FMLA używany do obliczenia, ile godzin FMLA pracownik wykorzystał. Karta **FMLA** jest dostępna tylko dla firm w Stanach Zjednoczonych. 
 
 **Uwaga:** liczba przepracowanych godzin nie może przekroczyć 1250, a staż pracy nie może przekroczyć 12 miesięcy. Te maksymalne wartości są zgodne z prawem federalnym w Stanach Zjednoczonych. Ustawienia na karcie **Samoobsługa pracownika** określają informacje,jakie może wprowadzać menedżer w imieniu pracowników.
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach](set-up-hr-parameters-across-legal-entities.md)

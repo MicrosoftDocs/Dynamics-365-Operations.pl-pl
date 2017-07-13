@@ -1,16 +1,16 @@
 ---
 title: "Omówienie zarządzanie jakością"
-description: "W tym artykule opisano, jak za pomocą funkcji zarządzania jakością w programie Microsoft Dynamics 365 for Operations poprawiać jakość produktów w łańcuchu dostaw."
+description: "W tym artykule opisano, jak za pomocą funkcji zarządzania jakością w programie Microsoft Dynamics 365 for Finance and Operations poprawiać jakość produktów w łańcuchu dostaw."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
@@ -19,28 +19,30 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bb3f36bb425adffa7e055eba4e8732866cb67c49
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 255035bf13155190e59088a7f64f798c7462b885
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="quality-management-overview"></a>Omówienie zarządzanie jakością
+# Omówienie zarządzanie jakością
+<a id="quality-management-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym artykule opisano, jak za pomocą funkcji zarządzania jakością w programie Microsoft Dynamics 365 for Operations poprawiać jakość produktów w łańcuchu dostaw.
+W tym artykule opisano, jak za pomocą funkcji zarządzania jakością w programie Microsoft Dynamics 365 for Finance and Operations poprawiać jakość produktów w łańcuchu dostaw.
 
-Zarządzanie jakością pomaga przy zarządzaniu czasem przetwarzania, kiedy masz do czynienia z produktami niespełniającymi norm, bez względu na pochodzenie tych produktów. Ze względu na to, że typy diagnostyki są powiązane z raportowaniem korekt, program Microsoft Dynamics 365 for Operations może zaplanować zadania usuwania problemów i zapobiegania ich ponownemu występowaniu.
+Zarządzanie jakością pomaga przy zarządzaniu czasem przetwarzania, kiedy masz do czynienia z produktami niespełniającymi norm, bez względu na pochodzenie tych produktów. Ze względu na to, że typy diagnostyki są powiązane z raportowaniem korekt, program Microsoft Dynamics 365 for Finance and Operations może zaplanować zadania usuwania problemów i zapobiegania ich ponownemu występowaniu.
 
 Oprócz funkcji związanych z zarządzaniem brakiem zgodności zarządzanie jakością zawiera funkcje monitorowania błędów według typu problemu (łącznie z błędami wewnętrznymi) i identyfikowania rozwiązań krótko- i długoterminowych. Statystyki kluczowych wskaźników wydajności (KPI) pokazują historię wcześniejszych problemów z brakiem zgodności i rozwiązania, które zostały zastosowane do ich korekty. Korzystając z danych historycznych można sprawdzić skuteczność pomiarów jakości, które zostały wcześniej przeprowadzone, i określić odpowiednie rozwiązania na przyszłość.
 
-Po skonfigurowaniu powiązania jakości program Microsoft Dynamics 365 for Operations może generować zlecania kontroli jakości dla różnych procesów biznesowych, zdarzeń i warunków. Skojarzenia jakości mogą obejmować określone pozycje, grupy towarów lub wszystkie pozycje.
+Po skonfigurowaniu powiązania jakości system Finance and Operations może generować zlecania kontroli jakości dla różnych procesów biznesowych, zdarzenia i warunki. Skojarzenia jakości mogą obejmować określone pozycje, grupy towarów lub wszystkie pozycje.
 
-## <a name="examples-of-the-use-of-quality-management"></a>Przykłady korzystania z funkcji zarządzania jakością
+## Przykłady korzystania z funkcji zarządzania jakością
+<a id="examples-of-the-use-of-quality-management" class="xliff"></a>
 Zarządzanie jakością jest elastyczne i może być implementowane na różne sposoby, aby spełnić wymagania określonych poziomów operacji łańcucha dostaw. Poniższe przykłady ilustrują możliwe wykorzystanie tych funkcji:
 
 -   Automatyczne uruchamianie procesu kontroli jakości, na podstawie wstępnie zdefiniowanych kryteriów (przy rejestracji magazynu zamówienia zakupu od określonego dostawcy).
@@ -50,7 +52,8 @@ Zarządzanie jakością jest elastyczne i może być implementowane na różne s
 -   Określanie akceptowanego poziomu jakości (AQL) do kontrolowania tolerancji pomiaru jakości.
 -   Określanie zasobów wymaganych do operacji inspekcji, takich jak obszar testowy i przyrządy testowe.
 
-## <a name="working-with-quality-associations"></a>Korzystanie ze skojarzeń jakości
+## Korzystanie ze skojarzeń jakości
+<a id="working-with-quality-associations" class="xliff"></a>
 Proces biznesowy, który używa skojarzeń jakości może być powiązany z różnymi dokumentami źródłowymi, takimi jak zamówienia zakupu, zamówienia sprzedaży lub zlecenia produkcyjne. 
 
 Poszczególne rekordy skojarzenia jakości określają serie testów, akceptowany poziom jakości i plan próbkowania dotyczące generowanych zleceń kontroli jakości. Należy określić rekord skojarzenia jakości dla każdego odchylenia w procesie biznesowym. Na przykład można skonfigurować skojarzenia jakości, które generuje zlecenia kontroli jakości podczas aktualizowania dokumentu przyjęcia produktów. W zależności od ustawień planu wykonania, można zablokować sam proces uruchomienia, gdy jest otwarte zlecenie kontroli jakości, lub następne procesy, takie jak fakturowanie zamówień zakupu. 
@@ -295,7 +298,8 @@ Poniższa tabela zawiera więcej informacji na temat sposobu generowania zleceń
 </tbody>
 </table>
 
-## <a name="quality-management-pages"></a>Strony zarządzania jakością
+## Strony zarządzania jakością
+<a id="quality-management-pages" class="xliff"></a>
 <table>
 <colgroup>
 <col width="33%" />
@@ -356,7 +360,8 @@ Należy określić skojarzenie jakości dla każdego odchylenia w procesie bizne
 
 
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Procesy zarządzania jakością](quality-management-processes.md)

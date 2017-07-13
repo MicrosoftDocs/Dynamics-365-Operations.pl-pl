@@ -3,14 +3,14 @@ title: "Scalanie partii zapasów"
 description: "Ten artykuł zawiera informacje o konsolidowaniu dwóch lub więcej partii zapasów w jedną partię scaloną."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e97257955f4f8fa86c8bf957a182aa71d4fbc8ef
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: aec97976ef6a2b4c66118289f7f76b14351456f8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="merge-inventory-batches"></a>Scalanie partii zapasów
+# Scalanie partii zapasów
+<a id="merge-inventory-batches" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,7 +36,8 @@ Ten artykuł zawiera informacje o konsolidowaniu dwóch lub więcej partii zapas
 
 Przy scalaniu partii obliczenia mogą pomóc zoptymalizować cechy i atrybuty partii w scalonej partii. Po zaznaczeniu partii źródłowych można przejrzeć i zmodyfikować scaloną partię przed jej zaksięgowaniem. Możesz też przenieść scalenie partii do arkusza zapasów w celu zatwierdzenia. Zapasy można następnie rezerwować lub księgować bezpośrednio z tego arkusza magazynowego. Po zaksięgowaniu scalonej partii, ilość zapasów jest korygowana w celu uwzględnienia partii źródłowych i scalonej partii.
 
-## <a name="are-there-any-prerequisites"></a>Czy istnieją wymagania wstępne?
+## Czy istnieją wymagania wstępne?
+<a id="are-there-any-prerequisites" class="xliff"></a>
 Tak, istnieją pewne elementy, które należy skonfigurować przed użyciem narzędzia scalenia partii. W poniższej tabeli opisano te wymagania wstępne.
 
 <table>
@@ -78,20 +80,24 @@ Tak, istnieją pewne elementy, które należy skonfigurować przed użyciem narz
 </tbody>
 </table>
 
-## <a name="when-might-i-want-to-merge-batches-of-inventory"></a>Kiedy warto scalać partie zapasów?
+## Kiedy warto scalać partie zapasów?
+<a id="when-might-i-want-to-merge-batches-of-inventory" class="xliff"></a>
 Oto kilka przykładów scenariuszy, kiedy może być przydatne scalenie partii:
 
 -   Podczas spaceru po magazynie Sammy zauważył, że istnieje kilka niewielkich partii tego samego towaru. Oczekuje otrzymania kilku nowych wysyłek i zdaje sobie sprawę, że poprzez scalenie małych ilości w jedną partię może zwolnić miejsce w magazynie.
 -   Sammy przyjmuje zapasy i chce połączyć nową partię z już przyjętą partią, aby zoptymalizować wartość atrybutu istniejącej partii.
 
-## <a name="can-i-merge-batches-across-sites-and-legal-entities"></a>Czy mogę scalać partię dla różnych oddziałów i firm?
+## Czy mogę scalać partię dla różnych oddziałów i firm?
+<a id="can-i-merge-batches-across-sites-and-legal-entities" class="xliff"></a>
 Nie, można scalić tylko partie w tym samym oddziale i o tych samych wymiarach magazynowania w granicach jednej firmy. Można jednak określić inną lokalizację i identyfikator palety dla scalonej partii.
 
-## <a name="can-i-merge-partial-quantities"></a>Czy można scalać częściowe ilości?
+## Czy można scalać częściowe ilości?
+<a id="can-i-merge-partial-quantities" class="xliff"></a>
 Nie, można scalić tylko pełne ilości partii. Funkcja scalania partii jest przewidziana jako funkcja zapasów, a nie funkcja produkcji.
 
-## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>Co zrobić, jeśli partie mają różne wartości atrybutów partii?
-Po wybraniu partii źródłowych do połączenia w partię scaloną program Microsoft Dynamics 365 for Operations sprawdza, czy wszystkie partie mają określone cechy lub wartości atrybutów. Gdy wartości danego atrybutu są takie same, system sugeruje wartość dla scalonej partii. Tę wartość można zmienić. Wartości atrybutów, które nie są takie same, są pozostawiane puste w scalonej partii i można je wprowadzić ręcznie. Jeśli typem atrybutu partii dla wartości atrybutu jest liczba całkowita lub ułamek, a wartości nie są takie same dla wszystkich partii źródłowych, taka wartość zostanie obliczona przy użyciu średniej ważonej. Obliczona wartość jest zaokrąglana w górę lub w dół, do najbliższej wartości przyrostu. Jeśli wartość jest pusta w partii źródłowej, wtedy partia i jej ilość nie są uwzględniane w obliczeniach. **Przykład** Poniższy przykład pokazuje sposób obliczania średniej ważonej dla scalonej partii. Dwie partie źródłowe mają wartość pustą dla typu atrybutu partii, która jest liczbą całkowitą. Następujący atrybut jest przypisany do partii źródłowych.
+## Co zrobić, jeśli partie mają różne wartości atrybutów partii?
+<a id="what-if-the-batches-have-different-batch-attribute-values" class="xliff"></a>
+Po wybraniu partii źródłowych do połączenia w partię scaloną program Finance and Operations sprawdza, czy wszystkie partie mają określone cechy lub wartości atrybutów. Gdy wartości danego atrybutu są takie same, system sugeruje wartość dla scalonej partii. Tę wartość można zmienić. Wartości atrybutów, które nie są takie same, są pozostawiane puste w scalonej partii i można je wprowadzić ręcznie. Jeśli typem atrybutu partii dla wartości atrybutu jest liczba całkowita lub ułamek, a wartości nie są takie same dla wszystkich partii źródłowych, taka wartość zostanie obliczona przy użyciu średniej ważonej. Obliczona wartość jest zaokrąglana w górę lub w dół, do najbliższej wartości przyrostu. Jeśli wartość jest pusta w partii źródłowej, wtedy partia i jej ilość nie są uwzględniane w obliczeniach. **Przykład** Poniższy przykład pokazuje sposób obliczania średniej ważonej dla scalonej partii. Dwie partie źródłowe mają wartość pustą dla typu atrybutu partii, która jest liczbą całkowitą. Następujący atrybut jest przypisany do partii źródłowych.
 
 | Atrybut | Minimum | Przyrost | Maksimum |
 |-----------|---------|-----------|---------|
@@ -122,17 +128,20 @@ Wartości i ilości dla partii B1 i B4 nie są uwzględniane w obliczaniu średn
 | 25    | 30                                             | 0.461538462     | 11.53846154                                                           |
 |       | **Suma:** 65, czyli suma wag |                 | **Suma:** 21.5384615, zaokrąglona do 21 (najbliższej wartości przyrostu) |
 
-## <a name="what-if-the-batches-have-different-batch-dates"></a>Co zrobić, jeśli partie mają różne daty atrybutów partii?
+## Co zrobić, jeśli partie mają różne daty atrybutów partii?
+<a id="what-if-the-batches-have-different-batch-dates" class="xliff"></a>
 Jeśli partie mają różne daty partii, niektóre daty są obliczane na podstawie wartości w grupie **Daty partii** na skróconej karcie **Scalona partia** na stronie **Scalanie partii**. System oblicza wartość pól w grupie **Daty partii**. Wartości te obejmują daty produkcji, ważności, zalecanego ponownego przetestowania i przydatności. Daty są obliczane na podstawie ustawień towaru w grupie pól **Dane pozycji** na stronie **Szczegóły zwolnionego produktu**. Wartości można zmienić lub wprowadzić ręcznie. Dla żadnych pozostałych dat obliczenia nie są wykonywane. Ta sama zasada jest używana dla wartości atrybutów partii. Jeśli data jest taka sama dla wszystkich partii źródłowych, będzie ona sugerowana dla scalonej partii. Jeśli data nie jest taka sama we wszystkich partiach źródłowych, pole daty zostanie puste w scalonej partii i można wypełnić je ręcznie.
 
-## <a name="what-if-the-dimensions-are-different-on-the-batches-that-i-want-to-merge"></a>Co zrobić, jeśli wymiary różnią się w partiach, które chcę scalić?
+## Co zrobić, jeśli wymiary różnią się w partiach, które chcę scalić?
+<a id="what-if-the-dimensions-are-different-on-the-batches-that-i-want-to-merge" class="xliff"></a>
 Wymiary produktu, śledzenia i magazynowania są obsługiwane w następujący sposób:
 
 -   **Wymiary produktów** — Wszystkie wymiary produktu dla wybranego towaru muszą być takie same. Nie można scalić partii o różnych wymiarach produktów.
 -   **Wymiary śledzenia** — Jeśli określono grupę numerów partii dla towaru, nowy numer partii jest generowany automatycznie. Jeśli grupa numerów partii nie jest przypisana do towaru, można wybrać istniejącą partię lub wprowadzić numer ręcznie. Numery seryjne są przenoszone z partii źródłowej do wierszy arkusza magazynowego dla scalonej partii.
 -   **Wymiary magazynowania** — Wymiary magazynowania dla oddziału i magazynu muszą być takie same we wszystkich partiach źródłowych i scalonej partii. Można jednak określić nową lokalizację i identyfikator palety dla scalonej partii.
 
-## <a name="how-does-posting-work"></a>Jak działa księgowanie?
+## Jak działa księgowanie?
+<a id="how-does-posting-work" class="xliff"></a>
 Księgowanie działa na dwa sposoby, w zależności od tego, czy jest używany proces zatwierdzania arkuszy. Można użyć akcji **Przenieś do arkusza** i **Księgowanie scalenia partii** w celu przeniesienia scalenia partii do arkusza, w którym scalenie zostanie zweryfikowane i zaksięgowane, lub też można bezpośrednio zaksięgować scalenie partii. Najważniejsza różnica między tymi dwoma operacjami polega na tym, że przeniesienie do arkusza nie powoduje zaksięgowania scalenia partii. Obie akcje tworzą nową partię (jeżeli nie zaznaczono istniejącej partii), aktualizują wszystkie szczegóły partii i wartości atrybutów oraz tworzą arkusz magazynowy.
 
 -   **Przenieś do arkusza** — Przeniesienie szczegółów scalenia partii do nowego arkusza magazynowego. Jeśli skonfigurowano rezerwacje automatyczne, ilości w partiach źródłowych są rezerwowane. Nie można zmienić szczegółów scalenia partii. W celu zmodyfikowania scalenia partii należy usunąć arkusz. Arkusz może służyć jako zadanie do późniejszego wykonania przez innego pracownika. Rezerwacja ilości partii do wiersza arkusza jest zabezpieczona. Ta alokacja pozwala planiście jakości lub kierownikowi magazynu tworzyć zadania dla swoich pracowników.
@@ -140,7 +149,8 @@ Księgowanie działa na dwa sposoby, w zależności od tego, czy jest używany p
 
 Arkusz magazynowy scalenia partii można zatwierdzić ze strony listy **Wszystkie scalenia partii**. Kliknij kolejno opcje **Arkusz** &gt; **Księguj**. Po zaksięgowaniu arkusza nie można zmienić szczegółów w scalonej partii. Po przeniesieniu scalenia partii do arkusza magazynowego, szczegóły można zmienić tylko wtedy, jeśli arkusz zostanie usunięty.
 
-## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Dlaczego po scaleniu towaru w ilości efektywnej nie widać w arkuszu magazynowym informacji dotyczących ilości efektywnej?
+## Dlaczego po scaleniu towaru w ilości efektywnej nie widać w arkuszu magazynowym informacji dotyczących ilości efektywnej?
+<a id="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal" class="xliff"></a>
 Można scalać partie towarów w ilości efektywnej tak samo, jak inne towary. Jednakże informacje o ilości efektywnej nie są wyświetlane w arkuszu magazynowym. Zaleca się sprawdzenie informacji o ilości efektywnej przed przeniesieniem scalenia partii do arkusza magazynowego.
 
 

@@ -1,39 +1,37 @@
 ---
 title: "Struktury podziału pracy"
-description: 
+description: "Struktura podziału pracy (SPP) to opis pracy, która zostanie wykonana w ramach projektu. Jest to hierarchia zadań ustalona przez zespół na podstawie koniecznej pracy, zakresu, kosztu i czasu trwania każdego ze składników lub zadań."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ProjWorkBreakdownStructure
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23861
 ms.assetid: 241a0464-0056-4a69-b468-0afbe2d5f3ae
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1a700f61bcc6e6d9c699987999be25649862b0d8
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 6d4391f1a6fa517b447387562fd3216201451316
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="work-breakdown-structures"></a>Struktury podziału pracy
+# Struktury podziału pracy
+<a id="work-breakdown-structures" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
-
-
-
-Struktury podziału pracy (SPP) to opis pracy, która zostanie wykonana w ramach projektu. Jest to hierarchia zadań ustalona przez zespół na podstawie koniecznej pracy, zakresu, kosztu i czasu trwania każdego ze składników lub zadań. SPP pełni trzy główne funkcje:
+Struktura podziału pracy (SPP) to opis pracy, która zostanie wykonana w ramach projektu. Jest to hierarchia zadań ustalona przez zespół na podstawie koniecznej pracy, zakresu, kosztu i czasu trwania każdego ze składników lub zadań. SPP pełni trzy główne funkcje:
 
 -   Opis podziału lub kompozycji pracy w zadaniach.
 -   Planowanie pracy w ramach projektu.
@@ -43,12 +41,14 @@ Stopień szczegółowości w SPP zależy od poziomu dokładności, jaki jest wym
 
 Dla odmiany, projekty w branżach, takich jak media i reklama, IT są zazwyczaj jednego typu a wydajność zależy od doświadczenia i kompetencji osób wykonujących zadania. Z tego względu w takich branżach wykorzystuje się SPP do określenia przybliżonej wielkości projektu, a nie do szczegółowego monitorowania jego postępów. 
 
-Tworzenie SPP to intensywny proces, który zazwyczaj trwa długo i wymaga współpracy oraz przekazywania informacji między dużą grupą osób. W tym temacie opisujemy, jak można wykorzystać udoskonalenia wprowadzone do funkcji SPP w programie Microsoft Dynamics 365 for Operations, aby ułatwić sobie szacowanie i monitorowanie w projekcie.
+Tworzenie SPP to intensywny proces, który zazwyczaj trwa długo i wymaga współpracy oraz przekazywania informacji między dużą grupą osób. W tym temacie opisujemy, jak można wykorzystać udoskonalenia wprowadzone do funkcji SPP w programie Microsoft Dynamics 365 for Finance and Operations, aby ułatwić sobie szacowanie i monitorowanie w projekcie.
 
-## <a name="prerequisites-for-creating-a-wbs"></a>Wymagania wstępne dotyczące tworzenia SPP
+## Wymagania wstępne dotyczące tworzenia SPP
+<a id="prerequisites-for-creating-a-wbs" class="xliff"></a>
 Aby utworzyć SPP, konieczne jest utworzenie harmonogramu pracy i oszacowanie jej kosztów.
 
-### <a name="prerequisites-for-creating-a-work-schedule"></a>Wymagania wstępne dotyczące tworzenia harmonogramu pracy
+### Wymagania wstępne dotyczące tworzenia harmonogramu pracy
+<a id="prerequisites-for-creating-a-work-schedule" class="xliff"></a>
 
 Aby korzystać w pełni możliwości planowania w funkcjach SPP, należy wprowadzić następujące ustawienia:
 
@@ -63,14 +63,16 @@ Aby korzystać w pełni możliwości planowania w funkcjach SPP, należy wprowad
 
 Aby ustawić dni i godziny pracy w kalendarzu lub utworzyć nowy kalendarz, kliknij kolejno opcje **Administrowanie organizacją** &gt; **Wspólne** &gt; **Kalendarze**.
 
-### <a name="prerequisites-for-estimating-the-cost-of-work"></a>Wymagania wstępne dotyczące oszacowania kosztów pracy
+### Wymagania wstępne dotyczące oszacowania kosztów pracy
+<a id="prerequisites-for-estimating-the-cost-of-work" class="xliff"></a>
 
 Aby korzystać z pełnej funkcjonalności szacowania kosztów SPP, należy ustawić koszty i płace pracowników, kategorie pracy, wydatki, opłaty i towary.
 
 -   Aby ustawić koszt i cenę robocizny, wydatki i kategorie opłat, kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Ceny**.
--   Aby skonfigurować koszt i ceny sprzedaży towarów, przejdź na stronę **umów handlowych**stronę dla każdego elementu na stronie listy **zwolnionych produktów** w module Zarządzanie informacjami o produktach.
+-   Aby skonfigurować koszt i ceny sprzedaży towarów, przejdź na stronę **umów handlowych** stronę dla każdego elementu na stronie listy **zwolnionych produktów** w module Zarządzanie informacjami o produktach.
 
-## <a name="creating-a-wbs"></a>Tworzenie SPP
+## Tworzenie SPP
+<a id="creating-a-wbs" class="xliff"></a>
 Tworzenie SPP składa się z trzech czynności:
 
 1.  **Rozkład pracy** — dzielenie pracy na możliwe do zarządzania fragmenty lub zadania.
@@ -79,7 +81,8 @@ Tworzenie SPP składa się z trzech czynności:
 
 W następujących sekcjach omówiono, w jaki sposób możliwości SPP pomagają w każdym z tych działań.
 
-### <a name="work-decomposition"></a>Dekompozycja pracy
+### Dekompozycja pracy
+<a id="work-decomposition" class="xliff"></a>
 
 Tworzenie podziału lub dekompozycji pracy jest zwykle pierwszym krokiem w procesie tworzenia SPP. Funkcja SPP obsługuje następujące podstawowe elementy podziału pracy: 
 
@@ -104,12 +107,13 @@ Obecnie nie można dostosowywać numerowania SPP.
 
 **Przenieś w górę i Przenieś w dół** klikając polecenia **Przenieś w górę** i **Przenieś w dół**, można zmienić położenie zadania w ramach jego elementu nadrzędnego hierarchii. Położenie zadania nie wpływa na nakład pracy, koszt, daty lub czasu trwania zadania. Ale numer SPP tego zadania jest automatycznie ponownie wyliczany, tak aby odzwierciedlał jego nowe położenie.
 
-### <a name="schedule-estimation"></a>Szacowanie harmonogramu
+### Szacowanie harmonogramu
+<a id="schedule-estimation" class="xliff"></a>
 
-Szacowanie harmonogramu zazwyczaj jest to drugi etap w tworzeniu SPP. Zaleca się wykonywanie tego kroku po utworzeniu zadań. Strona **Struktury podziału pracy** w programie Microsoft Dynamics 365 for Operations składa się z dwóch części. Górne okienko jest przeznaczone do szacowania harmonogramu, a dolne zawiera kartę **szacowane koszty i dochody**, której można użyć do szacowania kosztów. 
+Szacowanie harmonogramu zazwyczaj jest to drugi etap w tworzeniu SPP. Zaleca się wykonywanie tego kroku po utworzeniu zadań. Strona **Struktury podziału pracy** w programie Finance and Operations składa się z dwóch części. Górne okienko jest przeznaczone do szacowania harmonogramu, a dolne zawiera kartę **szacowane koszty i dochody**, której można użyć do szacowania kosztów. 
 **Zależności zadania** w SPP można utworzyć relację z zadaniem poprzedzającym. Po przypisaniu zadania poprzedzającego do zadania, zadanie to można uruchomić tylko po ukończeniu wszystkich zadań poprzedzających. Planowana data rozpoczęcia zadania jest ustawiana automatycznie jako najpóźniejsza data zakończenia wszystkich jego zadań poprzedzających. 
 
-**Planowanie zadań w programie Microsoft Dynamics 365 for Operations** Następujące czynniki określają planowanie zadań węzła liścia:
+**Planowanie zadań w programie Microsoft Dynamics 365 for Finance and Operations** Następujące czynniki określają planowanie zadań węzła liścia:
 
 -   Poprzedniki
 -   Nakład pracy
@@ -126,7 +130,7 @@ Data rozpoczęcia zadania węzła liścia, które nie zawiera zadań poprzedzaj�
 
 Liczba osób x czas trwania x liczba godzin w standardowym dniu roboczym w kalendarzu projektu 
 
-W niektórych przypadkach może zaistnieć potrzeba odchylenia od tych reguł. Można wyłączyć automatyczne planowanie, aby uniemożliwić programowi Microsoft Dynamics 365 for Operations automatyczne ustawianie lub poprawianie właściwości zadania węzła liścia. Po wprowadzeniu informacji dla zadania, która powoduje naruszenie reguły planowania, w zadaniu jest wyświetlana ikona błędu harmonogramu. Jeśli nie chcesz, żeby błędy harmonogramu były wyświetlane, kliknij przycisk **Błędy planowania są wyświetlane**, aby wyłączyć tę funkcję. 
+W niektórych przypadkach może zaistnieć potrzeba odchylenia od tych reguł. Można wyłączyć automatyczne planowanie, aby uniemożliwić programowi Finance and Operations automatyczne ustawianie lub poprawianie właściwości zadania węzła liścia. Po wprowadzeniu informacji dla zadania, która powoduje naruszenie reguły planowania, w zadaniu jest wyświetlana ikona błędu harmonogramu. Jeśli nie chcesz, żeby błędy harmonogramu były wyświetlane, kliknij przycisk **Błędy planowania są wyświetlane**, aby wyłączyć tę funkcję. 
 
 > [!NOTE] 
 > Wartości dla zadania podsumowania lub kontenera nadal będą liczone jako suma wartości zadań składowych, niezależnie od tego, czy asysta automatycznego planowania jest włączona, czy nie. 
@@ -135,7 +139,7 @@ W niektórych przypadkach może zaistnieć potrzeba odchylenia od tych reguł. M
 
 **Naprawianie błędów planowania według zadań** po dwukrotnym kliknięciu ikony błędu harmonogramu dla określonego zadania, zostanie wyświetlone okno dialogowe ze wszystkimi błędami planowania dla tego zadania. Można określić, które błędy planowania należy skorygować dla zadania. 
 
-**Naprawianie wszystkich błędów planowania** Jeśli chcesz, żeby program Microsoft Dynamics 365 for Operations naprawił wszystkie błędy w SPP, w okienku akcji kliknij opcję **Korygowanie wszystkich rozbieżności planowania**. 
+**Naprawianie wszystkich błędów planowania** jeśli chcesz, żeby program Finance and Operations naprawił wszystkie błędy w SPP, w okienku akcji kliknij **Korygowanie wszystkich rozbieżności planowania**. 
 
 > [!NOTE] 
 > Ta funkcja może spowodować wprowadzenie istotnych zmian w SPP. Błędy są naprawiane w następującej kolejności:
@@ -144,7 +148,8 @@ W niektórych przypadkach może zaistnieć potrzeba odchylenia od tych reguł. M
 2.  Data rozpoczęcia każdego zadania jest modyfikowana tak, aby dane zadanie było rozpoczynane po zakończeniu wszystkich jego zadań poprzedzających.
 3.  Data rozpoczęcia każdego zadania jest zmieniana tak, aby usunąć luki w datach rozpoczęcia zadań poprzedzających.
 
-### <a name="cost-estimation"></a>Szacowanie kosztów
+### Szacowanie kosztów
+<a id="cost-estimation" class="xliff"></a>
 
 Jak wspomniano wcześniej w tym dokumencie, oszacowanie kosztów wprowadza się dla każdego zadania węzła liścia przy użyciu karty **szacowane koszty i dochody** w dolnym okienku strony **struktury podziału pracy**. 
 
@@ -165,18 +170,21 @@ Podczas szacowania kosztów pracy, materiałów i wydatków dla każdego zadania
 
 **Oszacowania wydatków i kosztów materiałów** Na karcie **Szacowane koszty i przychód** można także oszacować wydatki i koszty materiałów dla zadania. 
 
-Koszt własny i cena sprzedaży dla każdego wiersza oszacowania robocizny lub wydatku opiera się na ustawieniach zdefiniowanych dla każdej kategorii w cennikach na stronie **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Ceny**. W przypadku towarów koszt i cena sprzedaży są dodawane domyślnie z umów dotyczących towarów lub handlowych na stronie listy **Zwolnione produkty**w module Zarządzanie informacjami o produktach.
+Koszt własny i cena sprzedaży dla każdego wiersza oszacowania robocizny lub wydatku opiera się na ustawieniach zdefiniowanych dla każdej kategorii w cennikach na stronie **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Ceny**. W przypadku towarów koszt i cena sprzedaży są dodawane domyślnie z umów dotyczących towarów lub handlowych na stronie listy **Zwolnione produkty** w module Zarządzanie informacjami o produktach.
 
-## <a name="tracking-progress-on-the-wbs"></a>Monitorowanie postępu w SPP
+## Monitorowanie postępu w SPP
+<a id="tracking-progress-on-the-wbs" class="xliff"></a>
 W niektórych branżach śledzi się postęp projektu względem SPP na bardzo szczegółowym poziomie, a w innych na wyższych poziomach SPP. W tej sekcji opisano sposób korzystania ze śledzenia SPP dla wymagań projektu. 
 
-W programie Microsoft Dynamics 365 for Operations są dostępne trzy widoki dla SPP projektu: widok planowania, widok śledzenia nakładu pracy i widok śledzenia kosztów.
+W programie Finance and Operations są dostępne trzy widoki dla SPP projektu: widok planowania, widok śledzenia robocizny i widok śledzenia kosztów.
 
-### <a name="planning-view"></a>Widok planowania
+### Widok planowania
+<a id="planning-view" class="xliff"></a>
 
 Widok planowania pokazuje planowane lub podstawowe oszacowanie harmonogramu i kosztów. Mimo że nie istnieją żadne funkcje śledzenia wersji i bazy SPP projektu, wartości w tym widoku odzwierciedlają wersję podstawową. Sekcje szacowania harmonogramu i kosztów sekcje w tym temacie opisują ten widok i pokazują, jak jest używany do tworzenia SPP.
 
-### <a name="effort-tracking-view"></a>Widok śledzenia nakładu pracy
+### Widok śledzenia nakładu pracy
+<a id="effort-tracking-view" class="xliff"></a>
 
 Śledzenie nakładu pracy pokazuje postęp zadań w SPP. Porównuje skumulowane rzeczywiste nakłady pracy w godzinach dla zadania z planowanym nakładem pracy. Poniższe formuły zawierają wartości w widoku śledzenia nakładu pracy:
 
@@ -209,7 +217,8 @@ Każda z tych metod powoduje ponowne obliczenie ETC, EAC, postępu procentowego 
 
 Kliknij **Rozwiń do poziomu** w widoku śledzenia nakładów pracy, aby ustawić poziom, na którym będzie śledzony i zachowany SPP. Struktura podziału pracy jest automatycznie dodawana do tego poziomu w widoku śledzenia nakładów pracy przy każdym jego otwarciu.
 
-### <a name="cost-tracking-view"></a>Widok śledzenia kosztów
+### Widok śledzenia kosztów
+<a id="cost-tracking-view" class="xliff"></a>
 
 Widok śledzenia kosztów pokazuje zużycie kosztów w zadaniu. W tym widoku koszt rzeczywisty wydany na realizację zadania do dnia jest porównywany z planowanym kosztem zadania. Poniższe formuły zawierają wartości w widoku śledzenia kosztu:
 
@@ -238,7 +247,8 @@ Widok śledzenia kosztu pokazuje prognozę odchylenia kosztu dla zadania na pods
 
 Kliknij **Rozwiń do poziomu** w widoku śledzenia kosztów, aby ustawić poziom, na którym będzie śledzony i zachowany SPP. Struktura podziału pracy jest automatycznie dodawana do tego poziomu w widoku śledzenia kosztów przy każdym jego otwarciu.
 
-### <a name="earned-value-management"></a>Zarządzanie uzyskanymi wartościami
+### Zarządzanie uzyskanymi wartościami
+<a id="earned-value-management" class="xliff"></a>
 
 Można używać metody wartości wypracowanej (EVM) do śledzenia postępu projektu. Mierniki uzyskanej wartości można zobaczyć w widoku głównym menedżera projektu. Wykres uzyskanej wartości przedstawia wartości okresowe wartości planowanych i rzeczywistych kosztów. Uzyskana wartość dla bieżącego dnia jest wskazana jako punkt. Uzyskana wartość danych okresowych nie jest obecnie dostępna. 
 
@@ -246,13 +256,13 @@ Faza czasu na wykresie uzyskanej wartości jest wyświetlana według tygodnia lu
 
 **Wartość planowana** EVM teoretycznie wskazuje, że planowana wartość reprezentuje kurs, według którego zespół projektu planuje uzyskane wartości w projekcie. 
 
-Microsoft Dynamics 365 for Operations używa reguły zdobywania punktów 0:100 podczas szkicowania wartości planowanej. Zgodnie z tą regułą wartość zadania jest księgowana w zadaniu w dniu zakończenia zadania. Wartości nie są księgowane przed całkowitym zakończeniem zadania. 
+Finance and Operations używa reguły zarabiania 0:100 podczas planowania wartości. Zgodnie z tą regułą wartość zadania jest księgowana w zadaniu w dniu zakończenia zadania. Wartości nie są księgowane przed całkowitym zakończeniem zadania. 
 
 W module Zarządzanie projektami i ich księgowanie wprowadza się datę końcową węzłów liścia i planowany koszt dla tej daty. Po wyświetleniu wykres planowanej wartości wg tygodnia jest ona podsumowywana wg tygodnia dla wszystkich zadań węzłów liści w czasie trwania projektu. 
 
 **Wartość uzyskana** według teorii EVM planowana wartość uzyskana jest stawką, według której zespół projektu uzyskuje realną wartość w projekcie. 
 
-Microsoft Dynamics 365 for Operations używa reguły zdobywania punktów 0:100 podczas szkicowania wartości wypracowanej. Zgodnie z tą regułą wartość zadania jest księgowana w zadaniu w dniu zakończenia zadania. Wartości nie są księgowane przed całkowitym zakończeniem zadania. 
+Finance and Operations używa reguły zarabiania 0:100 podczas rysowania wykresu wartości wypracowanej. Zgodnie z tą regułą wartość zadania jest księgowana w zadaniu w dniu zakończenia zadania. Wartości nie są księgowane przed całkowitym zakończeniem zadania. 
 
 W obliczaniu wartości uzyskanej jest uwzględniany procent postępu każdego zadania. Zgodnie z regułą zarabiania 0:100 tylko zadania ukończone w danym okresie są uwzględniane w obliczeniach wartości uzyskanej na koniec okresu. Wartość uzyskana w projekcie jest obliczana dla wszystkich zadań, które zostały wypełnione podczas tworzenia wykresu. 
 
@@ -263,7 +273,8 @@ W obliczaniu wartości uzyskanej jest uwzględniany procent postępu każdego za
 
 Transakcje, które zostały zaksięgowane do projektu służą do planowania wiersza kosztu rzeczywistego. Koszty są zestawione według daty. Te dane są następnie używane do tworzenia wykresów kosztu rzeczywistego wg tygodnia lub miesiąca na wykresie uzyskanej wartości.
 
-### <a name="how-to-use-the-concepts-of-planned-value-earned-value-and-actual-cost"></a>Jak używać koncepcji wartości planowanej, uzyskanej i kosztu rzeczywistego
+### Jak używać koncepcji wartości planowanej, uzyskanej i kosztu rzeczywistego
+<a id="how-to-use-the-concepts-of-planned-value-earned-value-and-actual-cost" class="xliff"></a>
 
 **Odchylenie od harmonogramu** podczas planowania tworzone są prognozy dla pracy na osi czasu. W związku z tym planowana wartość jest stawką, wg której planiści projektu zakładali ukończenie pracy w projekcie. Po rozpoczęciu projektu, praca jest wykonywana, a projekt uzyskuje wartość. Porównanie wartości planowanych do uzyskanych umożliwia wyświetlenie postępów prac nad projektem. Wynik porównania jest nazywany odchyleniem od harmonogramu. 
 
@@ -277,22 +288,26 @@ Jeśli koszt rzeczywisty w okresie jest większy od wartości uzyskanej, wydatki
 
 Jeśli koszt rzeczywisty w okresie jest większy od wartości uzyskanej, wydatki są wyższe niż zarobki. W związku z tym projekt przekracza budżet.
 
-## <a name="wbs-templates"></a>Szablony WBS
+## Szablony WBS
+<a id="wbs-templates" class="xliff"></a>
 Funkcja szablonów SPP umożliwia tworzenie standardowych szablonów dla projektów. Jeśli projekt zakłada dużo powtarzającej się pracy, rozważ utworzenie szablonu SPP. 
 
 Szablon SPP można utworzyć z SPP istniejącego projektu, dzięki czemu wiedza i sprawdzone metody zgromadzone podczas planowania projektu mogą być wykorzystane w przyszłości do podobnych projektów. Ale czasem nie ma sensu zapisywanie całego SPP jako szablonu. Dlatego też można utworzyć szablony z części SPP dla projektu.
 
-### <a name="saving-a-projects-wbs-as-a-template"></a>Zapisywanie SPP projektu jako szablonu
+### Zapisywanie SPP projektu jako szablonu
+<a id="saving-a-projects-wbs-as-a-template" class="xliff"></a>
 
 Po utworzeniu szablonu można zaimportować go do nowego projektu SPP pod węzłem głównym lub w obszarze każdego zadania w SPP projektu.
 
-### <a name="importing-a-wbs-template-into-a-projects-wbs"></a>Importowanie szablonu struktury podziału pracy do SPP projektu
+### Importowanie szablonu struktury podziału pracy do SPP projektu
+<a id="importing-a-wbs-template-into-a-projects-wbs" class="xliff"></a>
 
 Importowane zadania są porządkowane wg daty rozpoczęcia zadania, dla którego są importowane. Podczas importu do obliczania dat początkowych dla importowanych zadań używane są relacje istniejące wcześniej w zadaniach szablonu. Kalendarz pracy standardowej w projekcie docelowym jest stosowany do obliczania dat zakończenia importowanych zadań, tak aby dni robocze i standardowe godziny pracy określone w kalendarzu czasu pracy bieżącego projektu zostały zachowane. 
 
 W wierszach oszacowania uwzględnia się ceny kosztu i sprzedaży, aby zapewnić, że ceny właściwe dla projektu lub umowy dotyczącej projektu mają prawidłowe daty.
 
-### <a name="differences-between-a-projects-wbs-and-a-wbs-template"></a>Różnice między SPP projektu a szablonem SPP
+### Różnice między SPP projektu a szablonem SPP
+<a id="differences-between-a-projects-wbs-and-a-wbs-template" class="xliff"></a>
 
 -   Zadania w szablonach SPP nie mają dat rozpoczęcia i zakończenia.
 

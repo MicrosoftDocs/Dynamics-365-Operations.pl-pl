@@ -1,39 +1,41 @@
 ---
 title: "Metody płatności w biurze obsługi"
-description: "W tym temacie omówiono różne metody płatności, których można używać w biurze obsługi module Handel detaliczny i inny."
+description: "W tym temacie omówiono różne metody płatności, których można używać w biurze obsługi w programie Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 930264f9c22cbde102b59237e432df7d7e4836c8
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 07cb1bcb3870b96e34f7f6725fe5b7da32628fde
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="payment-methods-in-a-call-center"></a>Metody płatności w biurze obsługi
+# Metody płatności w biurze obsługi
+<a id="payment-methods-in-a-call-center" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-W tym temacie omówiono różne metody płatności, których można używać w biurze obsługi module Handel detaliczny i inny.
+W tym temacie omówiono różne metody płatności, których można używać w biurze obsługi w programie Dynamics 365 for Retail.
 
-Metody płatności używane w innych kanałach w module Handel detaliczny i inny w systemie Microsoft Dynamics AX, takie jak gotówka, czeki, karty kredytowe i karty upominkowe, mogą też być używane w biurach obsługi. Po skonfigurowaniu metody płatności dla biura obsługi jest ona wyświetlana jako jedna z opcji w sekcji **Płatności** na stronie **Zamówienie sprzedaży** dla użytkowników biura obsługi. Ponadto można skonfigurować kupony w celu oferowania rabatu odbiorcom składającym zamówienia przez biuro obsługi w organizacji. Kupony mogą określać stałą kwotę rabatu albo procent od ceny towaru lub sumy zamówienia. Na przykład kupon kwotowy może oferować odbiorcom rabat wysokości 75,00 przy zakupie, na który odbiorca przeznaczy 750,00 lub więcej. Można tworzyć różne rodzaje kuponów, ustawiać kupony nadrzędne/podrzędne oraz kopiować i unieważniać kupony. Aby tworzyć kupony, użyj opcji w poniższej tabeli.
+Metody płatności, które są używane w innych kanałach, takie jak gotówka, czeki, karty kredytowe i karty upominkowe, mogą też być używane w biurach obsługi. Po skonfigurowaniu metody płatności dla biura obsługi jest ona wyświetlana jako jedna z opcji w sekcji **Płatności** na stronie **Zamówienie sprzedaży** dla użytkowników biura obsługi. Ponadto można skonfigurować kupony w celu oferowania rabatu odbiorcom składającym zamówienia przez biuro obsługi w organizacji. Kupony mogą określać stałą kwotę rabatu albo procent od ceny towaru lub sumy zamówienia. Na przykład kupon kwotowy może oferować odbiorcom rabat wysokości 75,00 przy zakupie, na który odbiorca przeznaczy 750,00 lub więcej. Można tworzyć różne rodzaje kuponów, ustawiać kupony nadrzędne/podrzędne oraz kopiować i unieważniać kupony. Aby tworzyć kupony, użyj opcji w poniższej tabeli.
 
 |                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

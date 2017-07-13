@@ -3,13 +3,13 @@ title: "Konfigurowanie i generowanie plików płatności dodatnich"
 description: "W tym artykule wyjaśniono, jak konfigurować płatności dodatnie i generować pliki płatności dodatnich."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 88433
 ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: abruer
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f82ed69aaaf4d3345ef4e74a338124465dcf2358
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: fc4269fc8bf8319a2a2f4e3769f0ffb31d5ef79d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="set-up-and-generate-positive-pay-files"></a>Konfigurowanie i generowanie plików płatności dodatnich
+# Konfigurowanie i generowanie plików płatności dodatnich
+<a id="set-up-and-generate-positive-pay-files" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,8 +35,9 @@ W tym artykule wyjaśniono, jak konfigurować płatności dodatnie i generować 
 
 Konfigurowanie płatności dodatnich w celu generowania elektronicznej listy czeków dostarczanych do banku. Gdy czek zostanie przekazany do banku, bank porównuje go z listą czeków. Jeśli czek pasuje do czeku na liście, wówczas bank rozlicza czek. Jeśli czek nie pasuje do czeku na liście, bank wstrzymuje czek w celu sprawdzenia.
 
-## <a name="security-for-positive-pay-files"></a>Zabezpieczenia plików płatności dodatnich
-Pliki płatności dodatnich mogą zawierać poufne informacje na temat odbiorców płatności i kwot czeków. W związku z tym musisz podjąć odpowiednie środki bezpieczeństwa od momentu wygenerowania plików aż do ich odbioru przez bank. Pliki płatności dodatnich są pobierane do lokalizacji określonej przez przeglądarkę internetową. Ponieważ pliki płatności dodatnich mogą zawierać informacje poufne, ważne jest, aby tylko upoważnieni użytkownicy mieli dostęp umożliwiający generowanie i wyświetlanie tych informacji w programie Microsoft Dynamics 365 for Operations. Poniższa tabela pomaga określić uprawnienia, które są wymagane.
+## Zabezpieczenia plików płatności dodatnich
+<a id="security-for-positive-pay-files" class="xliff"></a>
+Pliki płatności dodatnich mogą zawierać poufne informacje na temat odbiorców płatności i kwot czeków. W związku z tym musisz podjąć odpowiednie środki bezpieczeństwa od momentu wygenerowania plików aż do ich odbioru przez bank. Pliki płatności dodatnich są pobierane do lokalizacji określonej przez przeglądarkę internetową. Ponieważ pliki płatności dodatnich mogą zawierać informacje poufne, ważne jest, aby tylko upoważnieni użytkownicy mieli dostęp umożliwiający generowanie i wyświetlanie tych informacji w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Poniższa tabela pomaga określić uprawnienia, które są wymagane.
 
 <table>
 <colgroup>
@@ -78,10 +80,12 @@ Pliki płatności dodatnich mogą zawierać poufne informacje na temat odbiorcó
 </tbody>
 </table>
 
-## <a name="set-up-a-positive-pay-format"></a>Konfigurowanie formatu płatności dodatnich
+## Konfigurowanie formatu płatności dodatnich
+<a id="set-up-a-positive-pay-format" class="xliff"></a>
 Pliki płatności dodatnich tworzy się za pomocą jednostek danych. Zanim będzie można wygenerować plik płatności dodatnich, należy zdefiniować format danych wejściowych przekształcenia, który będzie używany do translacji danych czeku na format umożliwiający komunikację z bankiem. Na stronie **Format płatności dodatnich** można utworzyć identyfikator i opis formatu pliku. Format danych wejściowych przekształcenia musi być typu XML Konkretny format zależy od używanego pliku przekształcenia. Na przykład dołączony testowy plik XSLT (Extensible Stylesheet Language Transformations) używa formatu **XML-Element**. Użyj akcji **Przekaż plik używany na potrzeby przekształcenia**, aby określić lokalizację pliku przekształcenia dla formatu wymaganego przez bank.
 
-## <a name="example-xslt-file-for-positive-pay-file"></a>Przykład: Plik płatności dodatnich typu XSLT
+## Przykład: Plik płatności dodatnich typu XSLT
+<a id="example-xslt-file-for-positive-pay-file" class="xliff"></a>
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl xslthelper" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xslthelper="http://schemas.microsoft.com/BizTalk/2003/xslthelper">
       <xsl:output method="xml" omit-xml-declaration="no" version="1.0" encoding="utf-8"/>
       <xsl:template match="/">
@@ -140,25 +144,32 @@ Pliki płatności dodatnich tworzy się za pomocą jednostek danych. Zanim będz
       </xsl:template>
     </xsl:stylesheet>
 
-## <a name="assign-the-positive-pay-format-to-a-bank-account"></a>Przypisywanie formatu płatności dodatnich do konta bankowego
+## Przypisywanie formatu płatności dodatnich do konta bankowego
+<a id="assign-the-positive-pay-format-to-a-bank-account" class="xliff"></a>
 Dla każdego konta bankowego, dla którego chcesz wygenerować informacje o płatnościach dodatnich, należy przypisać format płatności dodatnich, który został określony w poprzedniej sekcji. Na stronie **Konta bankowe** zaznacz format płatności dodatnich odpowiadający kontu bankowemu. W polu **Data początkowa płatności dodatnich** wprowadź pierwszą datę dla generowania plików płatności dodatnich. Wypełnienie tego pola jest bardzo ważne. W przeciwnym razie pierwszy generowany plik płatności dodatnich będzie obejmował wszystkie czeki, które zostały utworzone dla tego konta bankowego.
 
-## <a name="assign-a-number-sequence-for-positive-pay-files"></a>Konfigurowanie sekwencji identyfikatorów plików płatności dodatnich
+## Konfigurowanie sekwencji identyfikatorów plików płatności dodatnich
+<a id="assign-a-number-sequence-for-positive-pay-files" class="xliff"></a>
 Każdy plik płatności dodatnich musi mieć unikatowy numer. Na karcie **Sekwencje identyfikatorów** na stronie **Parametry modułu Zarządzanie gotówką i bankami** utwórz sekwencję identyfikatorów plików płatności dodatnich.
 
-## <a name="generate-a-positive-pay-file-for-a-single-bank-account"></a>Generowanie pliku płatności dodatnich dla jednego konta bankowego
+## Generowanie pliku płatności dodatnich dla jednego konta bankowego
+<a id="generate-a-positive-pay-file-for-a-single-bank-account" class="xliff"></a>
 Można wygenerować plik płatności dodatnich dla pojedynczej firmy i pojedynczego konta bankowego. Informacje o generowaniu plików płatności dodatnich dla wielu firm i kont bankowych w tym samym czasie znajdują się w następnej sekcji. Aby wygenerować plik płatności dodatnich dla jednej firmy i jednego konta bankowego, ze strony **Konta bankowe** otwórz okno dialogowe **Generuj plik płatności dodatnich**. W polu **Data graniczna** wprowadź ostatnią datę czeku do uwzględnienia w pliku płatności dodatnich. Wszystkie czeki, które jeszcze nie zostały uwzględnione w pliku płatności dodatnich do tej daty czeku, znajdą się w pliku.
 
-## <a name="generate-a-positive-pay-file-for-multiple-bank-accounts"></a>Generowanie pliku płatności dodatnich dla wielu kont bankowych
+## Generowanie pliku płatności dodatnich dla wielu kont bankowych
+<a id="generate-a-positive-pay-file-for-multiple-bank-accounts" class="xliff"></a>
 Aby wygenerować plik płatności dodatnich dla wielu kont bankowych, użyj zadania okresowego **Generuj plik płatności dodatnich**. Wybierz format pliku płatności dodatnich oraz określ, czy wygenerować plik dla wszystkich firm, czy tylko dla wybranej firmy. Można również wygenerować plik płatności dodatnich dla wszystkich kont bankowych używających określonego formatu płatności dodatnich albo tylko dla wybranego konta bankowego. W polu **Data graniczna** wprowadź ostatnią datę czeku do uwzględnienia w pliku płatności dodatnich. Wszystkie czeki, które jeszcze nie zostały uwzględnione w pliku płatności dodatnich do tej daty czeku, znajdą się w pliku.
 
-## <a name="view-the-results-of-positive-pay-file-generation"></a>Wyświetlanie wyników generowania pliku płatności dodatnich
+## Wyświetlanie wyników generowania pliku płatności dodatnich
+<a id="view-the-results-of-positive-pay-file-generation" class="xliff"></a>
 Po wygenerowaniu pliku płatności dodatnich wyniki można obejrzeć na stronie **Podsumowanie pliku płatności dodatnich**. Aby wyświetlić szczegółowe informacje o poszczególnych czekach, należy użyć strony szczegółów **Plik płatności dodatnich**.
 
-## <a name="confirm-a-positive-pay-file"></a>Potwierdź plik płatności dodatnich
+## Potwierdź plik płatności dodatnich
+<a id="confirm-a-positive-pay-file" class="xliff"></a>
 Po zapłaceniu czeków wymienionych w pliku płatności dodatnich, otrzymasz numer potwierdzenia z banku. Wtedy można potwierdzić plik płatności dodatnich. Na stronie **Podsumowanie pliku płatności dodatnich** zaznacz plik płatności dodatnich, który ma stan **Utworzone**, a następnie wybierz akcję **Wprowadź potwierdzenie**. Po potwierdzeniu pliku płatności dodatnich następuje odnotowanie numeru potwierdzenia otrzymanego z banku.
 
-## <a name="recall-a-positive-pay-file"></a>Odwoływanie pliku płatności dodatnich
+## Odwoływanie pliku płatności dodatnich
+<a id="recall-a-positive-pay-file" class="xliff"></a>
 Jeśli trzeba zmodyfikować plik płatności dodatnich, można go wycofać. Na stronie **Podsumowanie pliku płatności dodatnich** zaznacz plik płatności dodatnich, który ma stan **Utworzone**, a następnie wybierz akcję **Wycofaj**. Dla każdego czeku w pliku płatności dodatnich jest resetowane pole wskazujące, czy czek jest uwzględniony w pliku płatności dodatnich. Następnie można utworzyć nowy plik płatności dodatnich zawierający wycofany czek.
 
 

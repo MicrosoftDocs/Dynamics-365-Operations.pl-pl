@@ -1,16 +1,16 @@
 ---
 title: Zasady pracy magazynowej
-description: "W systemie Microsoft Dynamics AX 7.0.1 (aktualizacja z maja 2016 roku) wprowadzono nowy aparat zasad pracy magazynowej. Ta zasada pracy kontroluje, czy praca magazynowa jest tworzona dla procesów magazynu w produkcji."
+description: "Zasady kontroli pracy magazynowej określają, czy praca magazynowa jest tworzona przez procesy magazynowe na produkcji w oparciu o typ zlecenia pracy, lokalizację zapasów i produkt."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSWorkPolicy
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 196561
 ms.assetid: cbf48ec6-1836-48d5-ad66-a9b534af1786
 ms.search.region: Global
@@ -19,20 +19,21 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6c9cdf361e4d4543e6aca962e9ec712428bc76e6
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 7612003bc20f91f173629893750478b034cff27b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="warehouse-work-policies"></a>Zasady pracy magazynowej
+# Zasady pracy magazynowej
+<a id="warehouse-work-policies" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-W systemie Microsoft Dynamics AX 7.0.1 (aktualizacja z maja 2016 roku) wprowadzono nowy aparat zasad pracy magazynowej. Ta zasada pracy kontroluje, czy praca magazynowa jest tworzona dla procesów magazynu w produkcji.
+Zasady kontroli pracy magazynowej w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition określają, czy praca magazynowa jest tworzona przez procesy magazynowe na produkcji w oparciu o typ zlecenia pracy, lokalizację zapasów i produkt.
 
 Ta zasada pracy kontroluje, czy praca magazynowa jest tworzona dla procesów magazynu w produkcji. Zasadę pracy można skonfigurować przy użyciu kombinacji **typów zleceń**, **lokalizacji zapasów** i **produktu**. Na przykład produkt L0101 jest zgłoszony jako ukończony do lokalizacji wyjściowej 001. Gotowy produkt jest później zużywany na podstawie innego zlecenia produkcyjnego w lokalizacji wyjściowej 001. W takim przypadku można skonfigurować zasadę pracy, która uniemożliwi tworzenie pracy odkładania wyrobów gotowych, gdy produkt L0101 zostanie zgłoszony jako gotowy do lokalizacji wyjściowej 001. Zasada pracy jest osobną jednostką, którą można opisać za pomocą następujących informacji:
 
@@ -41,7 +42,8 @@ Ta zasada pracy kontroluje, czy praca magazynowa jest tworzona dla procesów mag
 -   **Magazyny**
 -   **Produkty**
 
-## <a name="work-order-types"></a>Typy zleceń
+## Typy zleceń
+<a id="work-order-types" class="xliff"></a>
 Możesz wybrać spośród następujących typów zleceń:
 
 -   Ukończono odkładanie wyrobów
@@ -50,13 +52,16 @@ Możesz wybrać spośród następujących typów zleceń:
 
 Pole **Metoda tworzenia pracy** ma wartość **Nigdy**. Ta wartość wskazuje, że zasada pracy uniemożliwi tworzenie pracy magazynowej dla wybranego typu zlecenia.
 
-## <a name="inventory-locations"></a>Magazyny
+## Magazyny
+<a id="inventory-locations" class="xliff"></a>
 Można wybrać lokalizację, do której ma zastosowanie zasada pracy. Jeśli z zasadą pracy nie zostanie skojarzona żadna lokalizacja, zasada nie ma zastosowania do żadnych procesów. Na stronie **Lokalizacje** można również zaznaczyć lub usunąć zaznaczenie zasady pracy dla określonej lokalizacji.
 
-## <a name="products"></a>Produkty
+## Produkty
+<a id="products" class="xliff"></a>
 Można wybrać produkt, do którego ma zastosowanie zasada pracy. Zasada pracy może dotyczyć wszystkich produktów lub wybranych produktów.
 
-## <a name="example"></a>Przykład
+## Przykład
+<a id="example" class="xliff"></a>
 W poniższym przykładzie istnieją dwa zlecenia produkcyjne, PRD-001 i PRD 00*2*. Zlecenie produkcyjne PRD-001 zawiera operację o nazwie **Montaż**, z której produkt SC1 jest zgłaszany jako gotowy do lokalizacji O1. Zlecenie produkcyjne PRD-002 ma operację o nazwie **Malowanie** i zużywa produkt SC1 z lokalizacji O1. Zlecenie produkcyjne PRD-002 zużywa także surowiec RM1 z lokalizacji O1. Surowiec RM1 jest przechowywany w lokalizacji magazynowej BULK-001 i zostanie pobrany do lokalizacji O1 za pomocą pracy magazynowej pobrania materiału. Praca pobierania jest generowana po zwolnieniu produkcji PRD-002. 
 
 [![Zasady pracy magazynowej](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
@@ -71,7 +76,7 @@ Oto przykład zasady pracy, którą można skonfigurować z uwzględnieniem powy
 |                                         |                                                       |
 |-----------------------------------------|-------------------------------------------------------|
 |**Nazwa zasady pracy**<br>                 |**Typy zleceń**<br>                               |
-| Bez odłożenia 01     `                    |· Odłożenie gotowego wyrobu<br>                           |
+| Bez odłożenia 01     `                    |- Odłożenie gotowego wyrobu<br>                           |
 |                                         |**Lokalizacje**<br>                                      |
 |                                         |- O1   |                                               |
 |                                         |**Produkty** <br>                                      |
@@ -79,7 +84,8 @@ Oto przykład zasady pracy, którą można skonfigurować z uwzględnieniem powy
 
 Poniższe procedury zawierają instrukcje krok po kroku dotyczące konfigurowania zasady pracy magazynowej dla tego scenariusza. Opisano również przykładową konfigurację prezentującą zgłaszanie zlecenia produkcyjnego jako gotowego do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny.
 
-## <a name="set-up-a-warehouse-work-policy"></a>Konfigurowanie zasady pracy magazynowej
+## Konfigurowanie zasady pracy magazynowej
+<a id="set-up-a-warehouse-work-policy" class="xliff"></a>
 Procesy magazynowe nie zawsze obejmują pracę magazynową. Poprzez zdefiniowanie pracy magazynowej można zablokować tworzenie pracy pobierania surowców i odkładania wyrobów gotowych dla zbioru produktów w określonych lokalizacjach. Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej USMF. 
 
 KROKI (21)
@@ -108,7 +114,8 @@ KROKI (21)
 | 20. | W polu Numer pozycji wprowadź lub wybierz wartość „L0101”.                         |
 | 21. | Kliknij przycisk Zapisz.                                                                |
 
-## <a name="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled"></a>Zgłaszanie zlecenia produkcyjnego jako gotowego do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny
+## Zgłaszanie zlecenia produkcyjnego jako gotowego do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny
+<a id="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled" class="xliff"></a>
 Ta procedura zawiera przykład zgłaszania wyrobu gotowego do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny. Warunkiem wstępnym tego zadania jest istnienie odpowiedniej zasady pracy. Poprzednia procedura ilustruje konfigurowanie zasady pracy. 
 
 KROKI (25)

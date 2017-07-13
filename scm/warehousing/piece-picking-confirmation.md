@@ -1,0 +1,55 @@
+---
+title: Potwierdzenie pobrania sztuk
+description: "W tym temacie opisano sposób konfigurowania i stosowania potwierdzenia pobrania sztuk z urządzenia przenośnego."
+author: Mirzaab
+manager: AnnBe
+ms.date: 05/26/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application User
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.custom: 269384
+ms.search.region: Global
+ms.author: mirzaab
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: c5340f4dacd743600ef955c8d5228d1e2d2d2fa9
+ms.contentlocale: pl-pl
+ms.lasthandoff: 06/20/2017
+
+
+---
+
+# Potwierdzenie pobrania sztuk
+<a id="piece-picking-confirmation" class="xliff"></a>
+
+[!include[banner](../includes/banner.md)]
+
+Funkcja pobrania sztuk umożliwia potwierdzanie każdego artykułu w zapasach za pomocą pracy pobrania lub inwentaryzacji na urządzeniu przenośnym. Dla pobrań można potwierdzić ilość pracy do przetworzenia aż do ilości wymienionej w pracy, która ma zostać pobrana. Dla pracy inwentaryzacji pracy można skanować inwentaryzowane zapasy oraz śledzić łączną ilość.
+
+Włączenie funkcji pobrania sztuk powoduje automatyczne zaznaczenie opcji Potwierdzenie produktu. Dla pobrań będących pracą jest włączana maksymalna liczba towarów. Pozwala to ustawić wartość maksymalną w postaci liczby artykułów, które muszą zostać potwierdzone w trakcie procesu pracy. Ilość maksymalna zależy od aktualnie przetwarzanej jednostki roboczej. W pracy typu Inwentaryzacja nie można ustawić wartości maksymalnej.
+
+Można również użyć ilości i jednostki miary (JM) skojarzonej z zeskanowanym kodem kreskowym. Ta funkcjonalność będzie działać w przyjęciach w przepływach przychodzących, w tym przyjęciach spod mieszanych numerów identyfikacyjnych oraz towarów z zamówień zakupu, zamówienia przeniesienia i ładunków. Działa także dla pobrań sztuk, gdzie zeskanowanie kodu kreskowego powoduje dodanie ilości do łącznej liczby potwierdzonych sztuk konwertowanych między jednostką miary kodu kreskowego a jednostką roboczą. Jeśli podczas zliczania w jednostce miary kodu kreskowego potwierdzi się, że ilość jest dozwolona dla inwentaryzacji w grupie sekwencji, ilość zostanie dodana do łącznej liczby.
+
+## Zastosowanie
+<a id="where-it-applies" class="xliff"></a>
+
+Pobranie sztuk działa dla wszystkich prac inwentaryzacji oraz dla pierwszego pobrania w każdym typie pracy. Pobranie sztuk nie ma zastosowania, gdy towar jest kontrolowany przez numery seryjne lub gdy jest pobraniem do produkcji lub karty Kanban z lokalizacji oznaczonej numerem identyfikacyjnym, a ma ustawiony atrybut lokalizacji tymczasowej.
+
+## Konfigurowanie funkcji pobrania sztuk
+<a id="set-up-piece-picking" class="xliff"></a>
+
+1.  Na urządzeniu przenośnym w menu otwórz formularz ustawień potwierdzenia pracy: Zarządzanie magazynem > **Zarządzanie magazynem** > **Ustawienia** > **Urządzenie przenośne** > **Elementy menu urządzenia przenośnego**. 
+2. Na urządzeniu przenośnym w menu otwórz pozycję Konfiguracja potwierdzenia pracy.
+
+W przypadku pracy typu Pobranie lub Inwentaryzacja są dostępne następujące opcje do wyboru.
+
+| Opcja        | opis   | 
+| ------------- | ------------- |
+| Potwierdzenie pobrania sztuk   | Dostępne dla typów prac Pobranie i Inwentaryzacja. Opcja Potwierdzenie produktu jest automatycznie zaznaczona. Umożliwia potwierdzenie każdego artykułu w zapasach z urządzenia przenośnego. | 
+| Maksymalna liczba sztuk     | Dostępne dla pracy pobrania, jeśli włączono funkcję potwierdzania pobrania sztuk. Ustawia limit liczby sztuk, które należy potwierdzić. |  
+

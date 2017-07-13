@@ -1,6 +1,6 @@
 ---
 title: "Omówienie systemu przepływów pracy"
-description: "W tym temacie opisano system przepływów pracy dostępny w programie Microsoft Dynamics 365 for Operations."
+description: "W tym temacie opisano system przepływów pracy dostępny w programie Microsoft Dynamics 365 for Finance and Operations."
 author: sericks007
 manager: AnnBe
 ms.date: 04/25/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 56381
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
@@ -17,30 +17,34 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 142f6f122172f717733db6f39b964c3f6f2e2f77
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1dc7935bf92567d529d393abf3069935a387e388
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="workflow-system-overview"></a>Omówienie systemu przepływów pracy
+# Omówienie systemu przepływów pracy
+<a id="workflow-system-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym temacie opisano system przepływów pracy dostępny w programie Microsoft Dynamics 365 for Operations.
+W tym temacie opisano system przepływów pracy dostępny w programie Microsoft Dynamics 365 for Finance and Operations.
 
-<a name="what-is-workflow"></a>Co to jest przepływ pracy?
+Co to jest przepływ pracy?
+<a id="what-is-workflow" class="xliff"></a>
 -----------------
 
 Termin *przepływ pracy* można definiować na dwa sposoby: jako system i jako proces biznesowy.
-### <a name="workflow-is-a-system"></a>Przepływ pracy jest systemem
+### Przepływ pracy jest systemem
+<a id="workflow-is-a-system" class="xliff"></a>
 
-Przepływ pracy to system instalowany razem z programem Dynamics 365 for Operations i uruchamiany na serwerze obiektów aplikacji (AOS). System przepływu pracy zawiera funkcjonalność, której można używać do tworzenia pojedynczych przepływów pracy, czyli procesów biznesowych.
+Przepływ pracy to system instalowany razem z programem Finance and Operations i uruchamiany na serwerze obiektów aplikacji (AOS). System przepływu pracy zawiera funkcjonalność, której można używać do tworzenia pojedynczych przepływów pracy, czyli procesów biznesowych.
 
-### <a name="workflow-is-a-business-process"></a>Przepływ pracy jest procesem biznesowym
+### Przepływ pracy jest procesem biznesowym
+<a id="workflow-is-a-business-process" class="xliff"></a>
 
 Przepływ pracy reprezentuje proces biznesowy. Definiuje sposób przepływu lub przenoszenia dokumentu przez system, pokazując, kto musi wykonać zadanie, podjąć decyzję lub zatwierdzić dokument. Na przykład poniższa ilustracja pokazuje przepływ pracy dla raportów z wydatków. 
 
@@ -48,7 +52,8 @@ Przepływ pracy reprezentuje proces biznesowy. Definiuje sposób przepływu lub 
 
 Aby lepiej zrozumieć ten przepływ pracy, załóżmy, że Sam przesyła raport z wydatków na 7000 USD. W tym scenariuszu Ivan musi przejrzeć pokwitowania wysłane przez Tomasza. Następnie Wojciech i Magda muszą zatwierdzić raport z wydatków. Teraz załóżmy, że Tomasz przesyła raport z wydatków na kwotę 11 000 USD. W tym scenariuszu Maciej musi przejrzeć pokwitowania, a Wojciech, Magda i Anna muszą zatwierdzić raport z wydatków.
 
-## <a name="benefits-of-using-the-workflow-system"></a> Zalety używania systemu przepływu pracy
+##  Zalety używania systemu przepływu pracy
+<a id="benefits-of-using-the-workflow-system" class="xliff"></a>
 
 Używanie systemu przepływu pracy w organizacji ma kilka zalet:
 -   **Spójność procesów** — Możesz zdefiniować sposób przetwarzania określonych dokumentów, takich jak zapotrzebowania zakupu i raporty z wydatków. System przepływu pracy zapewnia, że dokumenty będą przetwarzane i zatwierdzane w spójny i wydajny sposób.
@@ -56,7 +61,8 @@ Używanie systemu przepływu pracy w organizacji ma kilka zalet:
 -   **Scentralizowana lista prac** — użytkownicy mogą wyświetlić scentralizowaną listę prac, aby przeglądać przypisane do nich zadania i zatwierdzenia przepływu pracy.
 
 
-## <a name="workflow-content"></a>Zawartość przepływu pracy
+## Zawartość przepływu pracy
+<a id="workflow-content" class="xliff"></a>
 
 + [Architektura przepływu pracy](workflow-system-architecture.md)
 + [Elementy przepływu pracy](workflow-elements.md)

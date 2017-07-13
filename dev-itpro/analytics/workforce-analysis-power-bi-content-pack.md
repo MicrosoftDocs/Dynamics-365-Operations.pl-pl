@@ -1,15 +1,15 @@
 ---
 title: "Pakiet zawartości usługi Power BI Metryki pracowników"
-description: "W tym temacie opisano pakiet zawartości Dynamics 365 for Operations — Metryki pracowników dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
-author: twheeloc
+description: "W tym temacie opisano pakiet zawartość Metryki pracowników dostępny dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
+author: jcart1106
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations, Talent, Core
 ms.custom: 264084
 ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
 ms.search.region: Global
@@ -17,85 +17,86 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2a3f611d29e041a5f05e3f93fd2330f4218b9dd1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1f732a53eee17317417058b92706a9228d783cb5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="workforce-metrics-power-bi-content"></a>Pakiet zawartości usługi Power BI Metryki pracowników
+# Pakiet zawartości usługi Power BI Metryki pracowników
+<a id="workforce-metrics-power-bi-content" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+W tym temacie opisano pakiet zawartość **Metryki pracowników** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
-W tym temacie opisano pakiet zawartości Dynamics 365 for Operations — Metryki pracowników dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+## Przechodzenie do pakietu zawartości usługi Power BI
+<a id="accessing-the-power-bi-content" class="xliff"></a>
+Pakiet zawartości usługi Power BI zatytułowany **Metryki pracowników** jest wyświetlany w obszarze roboczym **Zarządzanie pracownikami**, jeśli używasz jednego z następujących produktów:
 
-<a name="accessing-the-content-pack"></a>Przechodzenie do pakietu zawartości
---------------------------
+- Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r.
+- Microsoft Dynamics 365 for Talent
 
-Pakiet zawartości Metryki pracowników znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i łączeniu go z danymi usługi Microsoft Dynamics 365 for Operations, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md).
+## Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
+<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+W poniższej tabeli pokazano mierniki dostępne na każdej stronie raportu.
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Raporty dostępne w pakiecie zawartości
-Gdy utworzysz połączenie między pakietem zawartości a danymi programu Dynamics 365 for Operations, w raportach są wyświetlone dane organizacji. Jeśli to Twoja pierwsza styczność z narzędziem Microsoft Power BI, możesz się o nim dowiedzieć więcej na [stronie Przewodnika z instruktażem po narzędziu Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Raporty dostępne w pakiecie zawartości mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
-
-| Raport                                           | Zawartość                                                                                                                                                                                                            |
+| Raport                                           | Metryki                                                                                                                                                                                                            |
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Mierniki osób                                   | Podsumowanie innych raportów                                                                                                                           |
 | Analiza stanu osobowego według firmy, działu, lokalizacji | Stan osobowy według firmy, stan osobowy według działu, stan osobowy według lokalizacji i łączny stan osobowy                                                                                                                           |
 | Analiza stanu osobowego według zadania, kroku i menedżera            | Stan osobowy według zadania, stan osobowy według kroku, stan osobowy według menedżera i łączny stan osobowy                                                                                                                                      |
 | Analiza trendu stanu osobowego                         | Stan osobowy w tym roku w porównaniu z zeszłym rokiem z podziałem na firmy oraz skumulowany stan osobowy w ciągu ostatnich 12 miesięcy                                                                                                                        |
-| Dane demograficzne pracowników                           | Stan osobowy według wieku i płci, stan osobowy według pochodzenia etnicznego, stan osobowy według statusu weterana wojennego, stan osobowy według stanu cywilnego, liczba studentów na studiach dziennych, średni staż pracy, średni wiek oraz stosunek liczby kobiet do liczby mężczyzn |
+| Analiza FTE                                     | Suma etatów przeliczeniowych (przeliczeniu na pełne etaty), suma przypisanych etatów przeliczeniowych, etaty przeliczeniowe według działów, etaty przeliczeniowe w ciągu ostatnich 12 miesięcy oraz etaty przeliczeniowe według zadań |
+| Dane demograficzne pracowników                           | Stan osobowy według wieku i płci, stan osobowy według pochodzenia etnicznego, stan osobowy według statusu weterana wojennego, stan osobowy według stanu cywilnego, liczba studentów na studiach dziennych, średni staż pracy, średni wiek, stosunek liczby kobiet do liczby mężczyzn oraz języki używane przez pracowników |
 | Analiza stanowisk                                | Wolne stanowiska według działu, stanowiska wolne do obsadzenia, stosunek liczby stanowisk aktywnych do nieaktywnych oraz stanowiska według działów                                                                                                   |
-| Analiza rotacji                               | Rotacja w tym roku w porównaniu z zeszłym rokiem, rotacja, średni staż pracy odchodzących osób, średni wiek pracy odchodzących osób oraz odejścia pracowników według powodów                                                                   |
+| Analiza rotacji                               | Rotacja w tym roku w porównaniu do ubiegłego, rotacja, odchodzący pracownicy według wieku i płci, średni staż pracy odchodzących pracowników, pracownicy odchodzący w tym miesiącu oraz odejścia pracowników z podziałem na przyczyny                                                                   |
 | Pracownicy wg działów                             | Pracownicy z numerami pracowniczymi według działów, stanowisk oraz dat rozpoczęcia i zakończenia przypisania do stanowiska                                                                                                                       |
-| Analiza stażu pracy                               | Średni staż pracy według firmy i listy stażu pracy                                                                                                                                                              |
-| Rocznice i lata pracy               | Pracownicy według liczby lat pracy i rocznic                                                                                                                                                                    |
+| Analiza stażu pracy                               | Średni staż pracy, średni staż pracy według firmy, lista stażu pracy                                                                                                                                                              |
+| Rocznice pracowników                           | Rocznice w tym miesiącu, rocznice w przyszłym miesiącu, pracownicy według stażu pracy i rocznic, staż pracy według działów                                                                                                                                                                    |
+| Urodziny pracowników                               | Urodziny w tym miesiącu, urodziny w następnym miesiącu, urodziny pracowników oraz urodziny według miesięcy i działów                                                                                                                                                                    |
+| Projekty zatrudnienia grupowego                               | Projekty zatrudnienia grupowego razem, projekty zatrudnienia grupowego według stanów, projekty zatrudnienia grupowego według działów i właścicieli, projektów zatrudnienia grupowego według zadań oraz projekty zatrudnienia grupowego                                                                                                                                                                    |
 
 Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
-Dane programu Dynamics 365 for Operations są używane do wypełniania raportów w pakiecie zawartości Metryki pracowników. W poniższej tabeli przedstawiono jednostki, na których bazuje pakiet.
+## Rozszerzanie funkcjonalności pakietu zawartości usługi Power BI
+<a id="extending-the-power-bi-content" class="xliff"></a>
+Za pomocą pakietów zawartości dostępnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) można dostarczać zaawansowane funkcje analityczne osobom, które się nie logują w programie Finance and Operations. Te pakiety zawartości można modyfikować, tak aby zawierały inne raporty lub wizualizacje, a następnie publikować je w swojej dzierżawie usługi Power BI.com na potrzeby wykonywania analiz.
 
-| Jednostka                            | Zawartość                                                                                                   | Powiązania z innymi jednostkami                                                                                                                                                                                                                                                                                                |
-|-----------------------------------|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Workforce\_CalendarOffset         | Przesunięcia kalendarzy dla raportów wycinkowych                                                                          | Workforce\_PastPositionAssignment Workforce\_PositionTrend Workorce\_WorkerTrend Workforce\_TerminatedWorker                                                                                                                                                                                                                     |
-| Workforce\_Company                | Firmy, według których będą filtrowane raporty                                                                             | Workforce\_CurrentCompensation Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                        |
-| Workforce\_Compensation           | Stawka płacy i częstotliwość wypłat w okresie                                                                           | Workforce\_CurrentCompensation Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                        |
-| Workforce\_CurrentCompensation    | Stawka płacy i częstotliwość wypłat na obecny dzień                                                              | Workforce\_Company Workforce\_Compensation Workforce\_Demographics Workforce\_Job Workforce\_Position                                                                                                                                                                                                                            |
-| Workforce\_CurrentPosition        | Stanowiska na obecny dzień, równoważnik pełnego etatu (FTE), wolne stanowiska i stanowiska wolne do obsadzenia | Workforce\_Job Workforce\_Position                                                                                                                                                                                                                                                                                               |
-| Workforce\_CurrentWorker          | Liczba pracowników na obecny dzień, wiek i stan osobowy                                                         | Workforce\_Company Workforce\_Compensation Workforce\_GeographicLocation Workforce\_Performance Workforce\_WorkerName Workforce\_ReportsToWorkerName Workforce\_WorkerTitle Workforce\_Demographics Workforce\_Job Workforce\_Employment Workforce\_Position Workforce\_WorkerBenefit                                            |
-| Workforce\_Date                   | Dni, tygodnie, miesiące i lata                                                                             | Workforce\_PastPositionAssignment Workforce\_PositionTrend Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                     |
-| Workforce\_Demographics           | Data urodzenia, płeć, pochodzenie etniczne i stan cywilny                                                   | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_Employment             | Data rozpoczęcia, data zakończenia i data przejścia                                                                  | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_GeographicLocation     | Miejscowość, kod pocztowy i województwo                                                           | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_Job                    | Funkcja, typ i tytuł                                                                                  | Workforce\_CurrentPosition Workforce\_CurrentWorker                                                                                                                                                                                                                                                                              |
-| Workforce\_JobPerferredSkill      |                                                                                                            |                                                                                                                                                                                                                                                                                                                                  |
-| Workforce\_PastPositionAssignment | Przyczyna przypisania, data rozpoczęcia, data zakończenia i zadanie                                                           | Workforce\_CalendarOffset Workforce\_Date Workforce\_Job Workforce\_Position                                                                                                                                                                                                                                                     |
-| Workforce\_Performance            | Ocena, opis i model oceniania                                                                      | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_PersonSkill            | Poziom i kwalifikacje                                                                                            | Workforce\_Skill                                                                                                                                                                                                                                                                                                                 |
-| Workforce\_PersonSkillAnalysis    | Certyfikaty, poziom i kwalifikacje                                                                                | Workforce\_Skill Workforce\_WorkerName                                                                                                                                                                                                                                                                                           |
-| Workforce\_Position               | Dział, równoważnik pełnego etatu, stanowisko, typ stanowiska i tytuł                                                        | Workforce\_CurrentPosition Workforce\_CurrentWorker                                                                                                                                                                                                                                                                              |
-| Workforce\_PositionTrend          | Stanowiska zajmowane w okresie, równoważnik pełnego etatu i zadanie                                                                          | Workforce\_CalendarOffset Workforce\_Date Workforce\_Job Workforce\_Position                                                                                                                                                                                                                                                     |
-| Workforce\_ReportsToWorkerName    | Imię, drugie imię i nazwisko                                                                       | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_Skill                  | Umiejętności, typ umiejętności i klasyfikacja                                                                              | Workforce\_PersonSkill Workforce\_PersonSkillAnalysis                                                                                                                                                                                                                                                                            |
-| Workforce\_TerminatedWorker       | Zwolnieni pracownicy, data rozwiązania stosunku pracy, tytuł, stanowisko i zadanie                                             | Workforce\_Company Workforce\_Compensation Workforce\_GeographicLocation Workforce\_Performance Workforce\_WorkerName Workforce\_ReportsToWorkerName Workforce\_CalendarOffset Workforces\_Date Workforce\_WorkerTitle Workforce\_Demographics Workforce\_Employment Workforce\_Job Workforce\_Position Workforce\_WorkerBenefit |
-| Workforce\_WorkerBenefit          | Data wejścia w życie, opcja świadczenia, plan świadczeń i typ świadczenia                                             | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workforce\_WorkerName             | Imię, drugie imię i nazwisko                                                                       | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend Workforce\_PersonSkillAnalysis                                                                                                                                                                                                                        |
-| Workforce\_WorkerTitle            | Tytuł i data ustalenia stażu pracy                                                                                   | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                                                       |
-| Workorce\_WorkerTrend             | Liczba pracowników w okresie, stan osobowy, firma i stanowisko                                                        | Workforce\_Company Workforce\_Compensation Workforce\_GeographicLocation Workforce\_Performance Workforce\_WorkerName Workforce\_ReportsToWorkerName Workforce\_CalendarOffset Workforces\_Date Workforce\_WorkerTitle Workforce\_Demographics Workforce\_Employment Workforce\_Job Workforce\_WorkerBenefit                     |
+Pakiet zawartości usługi Power BI **Metryki pracowników** znajduje się w bibliotece zasobów wspólnych w usłudze LCS. Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).
 
-Te jednostki zostały użyte do utworzenia obliczanych miar w modelu danych. Następnie obliczane miary są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości. Jeśli chcesz umieścić dodatkowe obliczenia w raportach i na pulpicie nawigacyjnym, możesz z usługi LCS pobrać plik CompensationandBenefits.pbix i go zmodyfikować. Ten plik jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości. Po wprowadzeniu wszystkich modyfikacji można utworzyć organizacyjny pakiet zawartości i pulpit nawigacyjny, który zawiera dodane informacje.
+Uważaj, aby pobrać pakiet zawartości usługi Power BI **Metryki pracowników** mający zastosowanie do używanej wersji systemu Microsoft Dynamics 365.
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
-Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworzenia zawartości w narzędziu Power BI:
+>[!NOTE]
+>Pliki .pbix dostępne w usłudze Lifecycle Services dotyczą tylko modułu Finance and Operations.
 
--   [Jednostki danych](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)
--   [Tworzenie organizacyjnych pakietów zawartości](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Modelowanie danych przy użyciu narzędzia Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Dodawanie kafelków narzędzia Power BI do obszarów roboczych](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+## Opis modelu danych i jednostek
+<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+W poniższej tabeli przedstawiono jednostki, na których bazuje pakiet.
 
+| Jednostka                   | Zawartość                                                                            | Powiązania z innymi jednostkami |
+|--------------------------|-------------------------------------------------------------------------------------|-----------------------------------|
+| Przesunięcie kalendarza          | Przesunięcia kalendarzy dla raportów wycinkowych                                                   | Przeszłe przypisania stanowisk, Trend stanowisk, Trend pracowników, Pracownik z rozwiązanym stosunkiem pracy |
+| Firma                  | Firmy, według których będą filtrowane raporty                                                      | Bieżący pracownik etatowy, Pracownik z rozwiązanym stosunkiem pracy, Trend pracowników |
+| Bieżące stanowisko         | Stanowiska na obecny dzień, etat przeliczeniowy (FTE), wolne stanowiska i stanowiska wolne do obsadzenia | Zadanie, Stanowisko |
+| Bieżący pracownik etatowy         | Liczba pracowników na obecny dzień, wiek i stan osobowy                                  | Firma, Położenie geograficzne, Nazwisko pracownika etatowego, Przełożony, Tytuł pracownika, Dane demograficzne, Zadanie, Zatrudnienie, Stanowisko |
+| Data                     | Dni, tygodnie, miesiące i lata                                                      | Przeszłe przypisania stanowisk, Trend stanowisk, Pracownik z rozwiązanym stosunkiem pracy, Trend pracowników |
+| Dane demograficzne             | Data urodzenia, płeć, pochodzenie etniczne i stan cywilny                            | Bieżący pracownik etatowy, Pracownik z rozwiązanym stosunkiem pracy, Trend pracowników |
+| Zatrudnienie               | Data rozpoczęcia, data zakończenia i data przejścia                                           | Bieżący pracownik etatowy, Pracownik z rozwiązanym stosunkiem pracy, Trend pracowników |
+| Położenie geograficzne      | Miejscowość, kod pocztowy i województwo                                    | Bieżący pracownik etatowy, Pracownik z rozwiązanym stosunkiem pracy, Trend pracowników |
+| Stanowisko                      | Funkcja, typ i tytuł                                                           | Bieżące stanowisko, Bieżący pracownik etatowy |
+| Przeszłe przypisania stanowisk | Przyczyna przypisania, data rozpoczęcia, data zakończenia i zadanie                                    | Przesunięcie kalendarza, Data, Zadanie, Stanowisko |
+| Pozycja                 | Dział, równoważnik pełnego etatu, stanowisko, typ stanowiska i tytuł                                 | Bieżące stanowisko, Bieżący pracownik etatowy |
+| Trend stanowisk           | Stanowiska zajmowane w okresie, równoważnik pełnego etatu i zadanie                                                   | Przesunięcie kalendarza, Data, Zadanie, Stanowisko |
+| Przełożony               | Imię, drugie imię i nazwisko                                                | Bieżący pracownik etatowy, Pracownik z rozwiązanym stosunkiem pracy, Trend pracowników |
+| Pracownik z rozwiązanym stosunkiem pracy      | Zwolnieni pracownicy, data rozwiązania stosunku pracy, tytuł, stanowisko i zadanie                      | Firma, Położenie geograficzne, Nazwisko pracownika etatowego, Przełożony, Przesunięcie kalendarza, Data, Tytuł pracownika, Dane demograficzne, Zatrudnienie, Zadanie, Stanowisko |
+| Nazwisko pracownika etatowego            | Imię, drugie imię i nazwisko                                                | Bieżący pracownik, Pracownik z rozwiązanym stosunkiem pracy, Trend pracowników |
+| Tytuł pracownika           | Tytuł i data ustalenia stażu pracy                                                            | Bieżący pracownik etatowy, Pracownik z rozwiązanym stosunkiem pracy, Trend pracowników |
+| Trend pracowników           | Liczba pracowników w okresie, stan osobowy, firma i stanowisko                                 | Firma, Położenie geograficzne, Nazwisko pracownika etatowego, Przełożony, Przesunięcie kalendarza, Data, Tytuł pracownika, Dane demograficzne, Zatrudnienie, Zadanie |
+| Projekt zatrudnienia grupowego        | Liczba projektów zatrudnienia grupowego, właściciel projektu oraz stan projektu                     | Firma, Wiersz zatrudnienia grupowego |
+| Wiersz zatrudnienia grupowego           | Dział, typ zatrudnienia i stanowisko                                           | Data, Zadanie, Projekt zatrudnienia grupowego |
 
-
-
+Te jednostki zostały użyte do utworzenia obliczanych miar w modelu danych. Następnie obliczane miary są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości usługi Power BI. Jeśli chcesz umieścić dodatkowe obliczenia w raportach i na pulpicie nawigacyjnym, możesz z usługi LCS pobrać plik .pbix i go zmodyfikować. Ten plik jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości usługi Power BI. Po wprowadzeniu wszystkich modyfikacji można utworzyć organizacyjny pakiet zawartości i pulpit nawigacyjny, który zawiera dodane informacje.
 

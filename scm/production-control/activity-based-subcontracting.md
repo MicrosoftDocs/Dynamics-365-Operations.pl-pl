@@ -3,14 +3,14 @@ title: "Podwykonawstwo działań"
 description: "W tym temacie opisano szczegółowo, jak używać działań podwykonawczych w przepływie produkcji dla produkcji oszczędnej."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 267034
 ms.assetid: 15c76a51-fa6d-42d2-994a-c67df6bae6a9
 ms.search.region: Global
@@ -19,24 +19,26 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4cf93c861345ad11b995ac2fe50c9a94dddcbd56
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 43c95c8ab8599a048b1c8c732d6dcac1c3e8b9e9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="activity-based-subcontracting"></a>Podwykonawstwo działań
+# Podwykonawstwo działań
+<a id="activity-based-subcontracting" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie opisano szczegółowo, jak używać działań podwykonawczych w przepływie produkcji dla produkcji oszczędnej.
 
-W programie Microsoft Dynamics 365 for Operations istnieją dwa podejścia do podwykonawstwa: zlecenia produkcyjne i produkcja oszczędna (lean manufacturing). W ujęciu z perspektywy produkcji oszczędnej praca podwykonawcza jest modelowana jako usługa powiązana z działaniem w przepływie produkcji. Wprowadzono specjalny typ grupy kosztów o nazwie **Outsourcing bezpośredni**, a usługi podwykonawcze nie są już częścią listy składowej (BOM). Rachunek kosztów pracy podwykonawczej jest w pełni zintegrowany z rozwiązaniem wyceny dla produkcji oszczędnej.
+W programie Microsoft Dynamics 365 for Finance and Operations istnieją dwa podejścia do podwykonawstwa: zlecenia produkcyjne i produkcja oszczędna (lean manufacturing). W ujęciu z perspektywy produkcji oszczędnej praca podwykonawcza jest modelowana jako usługa powiązana z działaniem w przepływie produkcji. Wprowadzono specjalny typ grupy kosztów o nazwie **Outsourcing bezpośredni**, a usługi podwykonawcze nie są już częścią listy składowej (BOM). Rachunek kosztów pracy podwykonawczej jest w pełni zintegrowany z rozwiązaniem wyceny dla produkcji oszczędnej.
 
-## <a name="production-flows-that-involve-subcontractors"></a>Przepływy produkcji z udziałem podwykonawców
+## Przepływy produkcji z udziałem podwykonawców
+<a id="production-flows-that-involve-subcontractors" class="xliff"></a>
 Podstawowa zasada przepływu produkcji nie zmienia się w przypadku wykonywania działań przez podwykonawców. Materiał nadal przepływa między lokalizacjami, działania procesu przekształcają materiał na produkty, a działania przeniesienia przemieszczają materiał lub produkty z jednej lokalizacji do drugiej. Lokalizacje i komórki robocze można modelować jako zarządzane przez dostawcę, przypisując konto dostawcy do magazynu lub do zasobu w grupie zasobów.  
 
 Dzięki tym możliwościom produkcja oszczędna nie wymaga żadnych szczególnych funkcji do obsługi przepływu materiałów i produktów. Wszystkie możliwe scenariusze z dostawcami jako dostarczycielami usług produkcji lub transportu mogą być modelowane w oparciu o architekturę przepływu produkcji i działań.  
@@ -47,7 +49,8 @@ Można wykorzystywać podwykonawcę do równoważenia obciążenia łącznych zd
 
 Jak każde inne działanie w przepływie produkcji, działania podwykonawcze mogą zużywać oraz dostarczać materiały i produkty należące do zapasów, nienależące do zapasów (praca w toku \[PWT\]) i półprodukty. We wszystkich przypadkach procesy planowania i wykonywania działań podwykonawczych są takie same. Ponadto w tych procesach przetwarzanie odbywa się tak samo, jak w procesach pracy wewnętrznej.
 
-## <a name="purchase-process-for-subcontracted-activities-services"></a>Proces zakupu działań (usług) podwykonawczych
+## Proces zakupu działań (usług) podwykonawczych
+<a id="purchase-process-for-subcontracted-activities-services" class="xliff"></a>
 Proces zakupu działań podwykonawczych opiera się na fizycznym przepływie materiałów, który jest rejestrowany przez postęp zadania w systemie Kanban, na przykład operacje rozpoczęcia i zakończenia. Przepływ finansowy, na przykład koszty prac podwykonawczych, jest dodatkowym przepływem naśladującym przepływ fizyczny. W tym samym czasie proces zakupu jest niezależnym procesem, który pozwala na ręczne dopasowywanie dokumentów zakupu na każdym kroku. Oto przebieg procesu zakupu działań podwykonawczych:
 
 1.  Tworzenie umowy zakupu. Umowa zakupu jest tworzona dla usługi i łączona z działaniem w przepływie produkcji.
@@ -59,10 +62,12 @@ Proces zakupu działań podwykonawczych opiera się na fizycznym przepływie mat
 
 Proces kończy się z chwilą zafakturowania podwykonawcy za okres. Uzgadnianie faktury jest wykonywane względem utworzonych podsumowań przyjęć. Ponieważ podsumowania przyjęć reprezentują dokładne fizyczne przyjęcie materiału, uzgadnianie trzyelementowe jest uproszczone.
 
-## <a name="configuring-activities-for-subcontracting"></a>Konfigurowanie działań podwykonawczych
+## Konfigurowanie działań podwykonawczych
+<a id="configuring-activities-for-subcontracting" class="xliff"></a>
 W sekcjach poniżej opisano, jak skonfigurować działania podwykonawcze.
 
-### <a name="subcontracted-services"></a>Usługi podwykonawcze
+### Usługi podwykonawcze
+<a id="subcontracted-services" class="xliff"></a>
 
 Element płatności używany w podwykonawstwie działań musi być produktem o następujących właściwościach:
 
@@ -71,14 +76,16 @@ Element płatności używany w podwykonawstwie działań musi być produktem o n
 
 Ten wymóg wymusza użycie modelu zapasów FIFO (pierwszy na wejściu, pierwszy na wyjściu). **Uwaga:** W celu obliczania kosztów produktów musi być zdefiniowany standardowy koszt usługi. Wymagana jest umowa zakupu z dostawcą. W przeciwnym razie usługa nie może być wykorzystywana w podwykonawstwie działań.
 
-### <a name="subcontracted-process-activities"></a>Działania procesu podwykonawczego
+### Działania procesu podwykonawczego
+<a id="subcontracted-process-activities" class="xliff"></a>
 
 Aby skonfigurować działanie procesu jako działanie podwykonawcze, wykonaj następujące kroki.
 
 1.  Konfigurowanie podwykonawczej komórki roboczej. Aby skonfigurować komórkę roboczą jako podwykonawczą, należy utworzyć zasób o typie **Dostawca** i skojarzyć go z komórką roboczą (grupą zasobów). Do komórki roboczej należy przypisać kategorię kosztu czasu wykonywania o typie grupy kosztów **Outsourcing bezpośredni**. Kategorie kosztów dla konfiguracji i ilości nie są wymagane.
 2.  Po utworzeniu działania procesu i powiązaniu go z podwykonawczą komórką roboczą należy skonfigurować usługę dla działania, zanim będzie można aktywować wersję przepływu produkcji. Ten krok wykonuje się na stronie **Szczegóły** **dotyczące działania**. Dla działań skojarzonych z podwykonawczą komórką roboczą jest wyświetlana skrócona karta **Warunki usługi**. Na tej skróconej karcie dodaj domyślną usługę obowiązującą dla wszystkich pozycji wyjściowych. Jeśli określone pozycje wyjściowe wymagają innych usług lub innych parametrów obliczania usług (na przykład innego wskaźnika usługi), można dodać inne usługi do działania.
 
-## <a name="subcontracted-transfer-activities"></a>Działania przeniesienia podwykonawczego
+## Działania przeniesienia podwykonawczego
+<a id="subcontracted-transfer-activities" class="xliff"></a>
 Działanie przeniesienia jest konfigurowane jako działanie podwykonawcze w zależności od ustawienia **Transportowane przez** w opcjach działania przeniesienia. Dostępne są następujące opcje:
 
 -   **Spedytor** — działanie jest podwykonawcze, jeśli przeniesienie z magazynu jest zarządzane przez dostawcę (zgodnie z definicją we właściwości magazynu). Wszystkie wybrane umowy zakupu usług muszą mieć ten sam identyfikator dostawcy jako magazyn.
@@ -87,24 +94,27 @@ Działanie przeniesienia jest konfigurowane jako działanie podwykonawcze w zale
 
 Jeśli chodzi o działania procesu, należy skonfigurować domyślną usługę dla podwykonawczych działań przeniesienia na skróconej karcie **Warunki usługi** na stronie **Szczegóły** **dotyczące działania**.
 
-## <a name="service-quantity-calculation"></a>Obliczanie ilości usługi
+## Obliczanie ilości usługi
+<a id="service-quantity-calculation" class="xliff"></a>
 Cały proces zakupu opiera się na odwołaniu do pozycji w usłudze. To odwołanie do pozycji jest mierzone w jednostce miary usługi. Usługi są zwykle mierzone za pomocą liczby usług (jednostek) lub czasu. Aby obliczyć liczbę usług (w oparciu o zarejestrowane ukończenie zadań w systemie Kanban), można użyć następujących metod:
 
 -   **Obliczenie oparte na liczbie zadań** — jedno zadanie Kanban jest równe *n* jednostkom usługi, bez względu na dostarczoną ilość produktu. W produkcji oszczędnej jedno zadanie odpowiada jednej jednostce załadunkowej. Ta metoda obliczania stosuje się do wszystkich usług mających stałą ceny za jednostkę załadunkową. Dlatego ta metoda zazwyczaj stosuje się do działań przeniesienia. Jednakże można ją także stosować do działań procesów, w których są przetwarzane całe jednostki załadunkowe.
 -   **Obliczenie oparte na ilości produktu** — ilość usługi jest względna wobec zaplanowanej/dostarczonej ilości produktu. Podczas obliczania dostarczonej ilości produktu ilości błędne można uwzględniać lub wykluczać. Ta metoda obliczania stosuje się do wszystkich przypadków, gdzie uzgodniono cenę usługi na jednostkę przetworzonego produktu.
 -   **Obliczenie oparte na czasie działania** — teoretyczne czasy działań są obliczane na podstawie czasów przetwarzania w działaniu, łącznej przetworzonej ilości i wskaźnika produktywności przetworzonego produktu. Ta metoda obliczania stosuje się do usług, które są opłacane godzinowo i mają różne czasy dla każdego przetwarzanego produktu.
 
-## <a name="cost-accounting-of-subcontracted-services"></a>Rachunek kosztów usług podwykonawczych
+## Rachunek kosztów usług podwykonawczych
+<a id="cost-accounting-of-subcontracted-services" class="xliff"></a>
 Podczas księgowaniu podsumowania przyjęcia lub dokumentu dostawy od dostawcy z zamówienia zakupu utworzonego dla przepływu produkcji (innymi słowy z zamówienia zakupu wygenerowanego na podstawie zadań w systemie Kanban dla działań podwykonawczych) wartość przyjęcia jest rozliczana na kontach PWT przepływu produkcji. Odchylenia faktur księguje się również na kontach przepływu produkcji. Wprowadzono funkcjonalność kategorii kosztu dla prac podwykonawczych. Ta kategoria kosztu umożliwia przejrzyste śledzenie wartości prac podwykonawczych, które są przydzielone do PWT i zużywane w ciągu okresu.  
 
 Wycena wsteczna produkcji oszczędnej na koniec okresu wyceny powoduje obliczanie rzeczywistego odchylenia wytwarzanych produktów od przepływu produkcji w okresie wyceny.
 
-## <a name="modeling-transfers-as-subcontracted-activities"></a>Modelowanie przeniesień jako działań podwykonawczych
+## Modelowanie przeniesień jako działań podwykonawczych
+<a id="modeling-transfers-as-subcontracted-activities" class="xliff"></a>
 Ludzie często uważają transport za nieproduktywny i sądzą, że nie dodaje wartości. Jednakże porównując koszty podwykonawstwa z kosztami produkcji wewnętrznej, trzeba uwzględniać koszty dodatkowych działań transportowych. Przepływ produkcji, który obejmuje wiele lokalizacji i wymaga usług transportowych, powinien modelować koszt transportu jako składnik kosztu dostarczenia produktów do odbiorcy. 
 
 Podwykonawstwo działań w produkcji oszczędnej pozwala zintegrować przewoźników i dostawców usług transportowych, którzy przemieszczają materiały i produkty między lokalizacjami przepływu produkcji. Modelując działanie przeniesienia, można przypisać przewoźnika lub dostawcę. Działania/zadanie przeniesienia opiera się na usłudze i umowie sprzedaży. Można tworzyć zamówienia zakupu i podsumowania przyjęć na podstawie faktycznych zadań przeniesienia. Ta funkcjonalność jest taka sama, jak funkcjonalność działań procesu podwykonawczego.  
 
-W związku z tym program Dynamics 365 for Operations obsługuje teraz obliczanie BOM, które obejmuje usługi transportowe, tworzenie powiązanych zamówień zakupu, zintegrowaną rejestrację przyjęć oraz integrację kosztów usług transportowych w wycenie przepływu produkcji.
+W związku z tym program Finance and Operations obsługuje teraz obliczanie BOM, które obejmuje usługi transportowe, tworzenie powiązanych zamówień zakupu, zintegrowaną rejestrację przyjęć oraz integrację kosztów usług transportowych w wycenie przepływu produkcji.
 
 
 

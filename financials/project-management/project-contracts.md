@@ -1,37 +1,38 @@
 ---
 title: "Umowy dotyczące projektu"
-description: "Ten artykuł zawiera opisy i przykłady umów dotyczących projektów, które można tworzyć dla różnych typów projektów i źródeł finansowania, oraz opis metod zarządzania umowami i fakturowania odbiorców projektów w programie Microsoft Dynamics 365 for Operations."
+description: "Ten artykuł zawiera opisy i przykłady umów dotyczących projektów, które można tworzyć dla różnych typów projektów i źródeł finansowania, oraz opis metod zarządzania umowami i fakturowania klientów projektów w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ProjProjectContractsListPage, ProjProjectsListPage
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23561
 ms.assetid: bfd18d9b-d9a6-4e21-bc95-bf4af45f617f
 ms.search.region: Global
-ms.author: kfend
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9f3bdbd147f3132d64e3b9ac2bdd37f7278ae18d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2aa70e050bf068a26e2d0d86c26045fc000931eb
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="project-contracts"></a>Umowy dotyczące projektu
+# Umowy dotyczące projektu
+<a id="project-contracts" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera opisy i przykłady umów dotyczących projektów, które można tworzyć dla różnych typów projektów i źródeł finansowania, oraz opis metod zarządzania umowami i fakturowania odbiorców projektów w programie Microsoft Dynamics 365 for Operations.
+Ten artykuł zawiera opisy i przykłady umów dotyczących projektów, które można tworzyć dla różnych typów projektów i źródeł finansowania, oraz opis metod zarządzania umowami i fakturowania klientów projektów w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.
 
 Typ projektu tworzonego dla umowy dotyczącej projektu określa metodę wystawiania faktur dla klientów projektu. Umowę dotyczącą projektu i powiązany projekt można zmienić, ale nie można zmienić typu projektu. 
 
@@ -41,7 +42,8 @@ Każdy projekt, dla którego zostanie wystawiona faktura, musi być skojarzony z
 
 Umowa dotycząca projektu może określać jedno lub więcej źródeł finansowania. Dzięki temu można podzielić fakturę między wielu płatników, skonfigurować limity finansowania tak, aby źródła finansowania nie były wyświetlane na rachunku dla więcej niż określonej kwoty i skonfigurować reguły finansowania dla rozchodów związanych z opłatami.
 
-## <a name="funding-for-project-contracts"></a>Finansowanie umów dotyczących projektów
+## Finansowanie umów dotyczących projektów
+<a id="funding-for-project-contracts" class="xliff"></a>
 Niektóre umowy dotyczące projektu określają, że kilka podmiotów finansuje koszty projektu. Oto kilka przykładów:
 
 -   Duży odbiorca, który ma wiele oddziałów, prosi o podzielenie finansowania projektu między oddziały.
@@ -49,7 +51,7 @@ Niektóre umowy dotyczące projektu określają, że kilka podmiotów finansuje 
 -   Projekt drogi jest wspólnie finansowany przez dwie gminy.
 -   Projekt mostu jest finansowany z dotacji rządowej oraz ze środków firmy prywatnej.
 
-W programie Microsoft Dynamics 365 for Operations można podzielić rozliczenie jednej transakcji lub całego projektu między wielu odbiorców, grantów lub organizacji. 
+W programie Finance and Operations można podzielić rozliczenie jednej transakcji lub całego projektu między wielu klientów, wiele grantów i organizacji. 
 
 W przypadku projektów, które mają wiele fundatorów, wszystkie strony partycypujące w finansowaniu zaawansowanego projektu są nazywane źródłami finansowania. Po zdefiniowaniu odbiorcy, organizacji lub dotacji jako źródła finansowania można je przypisać do jednej lub kilku reguł finansowania. Reguły finansowania zawierają kryteria, które określają sposób podziału opłat między różne źródła finansowania projektu. 
 
@@ -68,7 +70,8 @@ Poniżej przedstawiono niektóre czynności, które można wykonać, aby podziel
 
 Aby określić, która grupa podatku ma zostać skojarzona z transakcją, projekt zostanie przeszukany pod kątem przypisania grupy podatku. Jeśli na etapie projektu nie została przypisana grupa podatku, zostanie przeszukana umowa dotycząca projektu.
 
-### <a name="example-multiple-funding-sources-simple"></a>Przykład: Wiele źródeł finansowania (uproszczone)
+### Przykład: Wiele źródeł finansowania (uproszczone)
+<a id="example-multiple-funding-sources-simple" class="xliff"></a>
 
 Poniższa tabela zawiera scenariusze zarządzania alokacją finansowania między wiele źródeł finansowania. Scenariusze te opierają się na następujących założeniach:
 
@@ -164,7 +167,8 @@ Poniższa tabela zawiera scenariusze zarządzania alokacją finansowania między
 </tbody>
 </table>
 
-### <a name="example-multiple-funding-sources-complex"></a>Przykład: Wiele źródeł finansowania (złożone)
+### Przykład: Wiele źródeł finansowania (złożone)
+<a id="example-multiple-funding-sources-complex" class="xliff"></a>
 
 Masz trzy źródła finansowania, których chcesz użyć w następującej kolejności:
 
@@ -249,7 +253,8 @@ Poniższa tabela przedstawia ten scenariusz w bardziej szczegółowy sposób.
 </tbody>
 </table>
 
-## <a name="billing-rules"></a>Reguły fakturowania
+## Reguły fakturowania
+<a id="billing-rules" class="xliff"></a>
 Podczas negocjowania umową dotyczącej projektu z odbiorcą, można zdefiniować, jak i kiedy można wystawiać faktury dla odbiorcy z tytułu pracy w zakresie projektu. Po skonfigurowaniu umowy dotyczącej projektu oraz projektu, można skonfigurować reguły fakturowania dla projektu. Reguły fakturowania opierają się na warunkach projektu, które są określone w umowie dotyczącej projektu. Reguły fakturowania, które można utworzyć zależą od warunków umowy dotyczącej projektu i typu projektu, np. Czas i materiały lub Stała cena, który można skojarzyć z regułą fakturowania. Można utworzyć tylko jedną regułę fakturowania dla kontraktu projektu. Regułę fakturowania można przypisać do wielu projektów, które są skojarzone z umową dotyczącą projektu i posiadają podobne warunki fakturowania. 
 
 Można skonfigurować następujące typy reguł fakturowania:
@@ -268,7 +273,8 @@ Gdy jesteś gotowy do wystawienia faktury dla odbiorcy projektu, kwota do zafakt
 
 Poniższe sekcje zawierają przykłady, które ilustrują sposób ustawiania i zarządzania regułą fakturowania dla projektu.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-the-number-of-units-delivered"></a>Przykład: Tworzenie reguły fakturowania na podstawie liczby jednostek dostawy
+### Przykład: Tworzenie reguły fakturowania na podstawie liczby jednostek dostawy
+<a id="example-create-a-billing-rule-that-is-based-on-the-number-of-units-delivered" class="xliff"></a>
 
 Twoja organizacja podpisuje umowę na przeprowadzenie cyklu pięciu szkoleń dla pracowników odbiorcy. Cena jednego szkolenia wynosi 10 000. Faktura odbiorcy jest wystawiana po zakończeniu każdego szkolenia. 
 
@@ -280,14 +286,16 @@ Konfigurując reguły fakturowania dla umowy, używasz następujących wartości
 
 Po zakończeniu jednej sesji szkoleniowej, można utworzyć fakturę na 10 000 z tytułu pierwszej dostarczonej jednostki dostawy i wysłać fakturę do odbiorcy.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-manual-calculation"></a>Przykład: Tworzenie reguły fakturowania na podstawie określonego procentu ukończenia projektu (obliczanie ręczne)
+### Przykład: Tworzenie reguły fakturowania na podstawie określonego procentu ukończenia projektu (obliczanie ręczne)
+<a id="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-manual-calculation" class="xliff"></a>
 
 Organizacja będąca firmą konsultingową specjalizująca się w oprogramowaniu, zawiera umowę z odbiorcą, dotyczącą opracowywania części produktu, który jest opracowywany przez odbiorcę. Organizacja zgadza się dostarczać kod oprogramowania przez okres sześciu miesięcy. Odbiorca zgadza się na zapłacenie organizacji całkowitej kwoty równej 100 000 z tytułu wykonanej pracy. Tworzysz regułę fakturowania przy rozliczaniu odbiorcy na podstawie procentu pracy wykonanej nad projektem, jak określono w umowie.
 
 -   Na koniec pierwszego miesiąca należy spotkać się z odbiorcą w celu określenia procentu pracy wykonanej. Po sprawdzeniu projektu okazuje się, projekt został zrealizowany w 15%.
 -   Tworzysz fakturę na 15 000 (15% ze 100 000) i wysyłasz do odbiorcy.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-automatic-calculation"></a>Przykład: Tworzysz regułę fakturowania na podstawie określonego procentu ukończenia projektu (obliczanie automatyczne)
+### Przykład: Tworzysz regułę fakturowania na podstawie określonego procentu ukończenia projektu (obliczanie automatyczne)
+<a id="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-automatic-calculation" class="xliff"></a>
 
 Twoja firma zajmująca się tworzeniem oprogramowania, wyraża zgodę na opracowanie pakietu księgowania listy płac dla odbiorcy za kwotę 30 000. Odbiorca zgadza się na zapłacenie wynagrodzenia organizacji obliczonego na podstawie procentu zakończonej pracy. Oszacowane koszty projektu wynoszą 20 000. Umowa dotycząca projektu określa kategorie pracy, których można użyć w procesie fakturowania. Należy zdefiniować reguły fakturowania, które obliczą automatycznie kwoty faktury dla procentu wykonanej pracy dla poszczególnych kategorii. Skonfiguruj budżet dla każdej kategorii:
 
@@ -300,7 +308,8 @@ Podczas tworzenia faktury dla odbiorcy po raz pierwszy, kwota faktury jest autom
 -   Kwota faktury wynosi 8667 i jest automatycznie obliczana (33% z 20 000, powiększone o 20 procent z 10 000).
 -   Tworzysz fakturę na 8667 i wysyłasz do odbiorcy.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-agreed-upon-milestones"></a>Przykład: Tworzenie reguły fakturowania, opartej na uzgodnionych punktach kontrolnych
+### Przykład: Tworzenie reguły fakturowania, opartej na uzgodnionych punktach kontrolnych
+<a id="example-create-a-billing-rule-that-is-based-on-agreed-upon-milestones" class="xliff"></a>
 
 Organizacja będąca firmą konsultingowa specjalizującą się w zarządzaniu, zgadza się na przeprowadzenie badania rynku dla produktu konsumpcyjnego, którego planuje sprzedać odbiorca. Odbiorca zgadza się na korzystanie z usług przez trzy miesiące, począwszy od marca, i wyraża zgodę na wypłacenie organizacji kwoty równej 50000. Projekt zawiera trzy punkty kontrolne:
 
@@ -317,7 +326,8 @@ Podczas konfigurowania umowy dotyczącej projektu, zgadzasz się na wystawianie 
 
 Po zakończeniu pierwszego punktu kontrolnego w dniu 31 marca, zaznacz punkt kontrolny jako ukończony, a następnie utwórz fakturę na kwotę 10 000 i wyślij ją do odbiorcy. Nie można utworzyć fakturę dla punktu kontrolnego, dopóki nie zostanie on zaznaczony jako ukończony.
 
-### <a name="example-create-a-billing-rule-that-is-based-on-services-plus-a-management-fee"></a>Przykład: Tworzenie reguły fakturowania na podstawie usługi plus opłaty od zarządzania
+### Przykład: Tworzenie reguły fakturowania na podstawie usługi plus opłaty od zarządzania
+<a id="example-create-a-billing-rule-that-is-based-on-services-plus-a-management-fee" class="xliff"></a>
 
 Twoja organizacja z branży consultingowej zgadza się na przeprowadzenie badania rynku w celu oceny rentowności produktu opracowywanego przez klienta z branży detalicznej. Warunki umowy określają, że zapewnisz usługi trzech najlepszych konsultantów ds. zarządzania w celu przeprowadzenia badania kosztu dla czasu i materiałów. Odbiorca zgadza się zapłacić 100 na godzinę plus 10-procentową opłatę za zarządzanie z tytułu godzin konsultacji, które zostały zafakturowane dla projektu. 
 
@@ -331,7 +341,8 @@ Po utworzeniu faktury dla odbiorcy, wystawiany jest rachunek odbiorcy dotyczący
 
 Jeśli opłaty są należne dla odbiorcy, a użytkownik wybrał grupę podatków w umowie dotyczącej projektu, grupa podatku jest automatyczne wprowadzana do reguły fakturowania opłat.
 
-### <a name="example-create-a-billing-rule-for-the-value-of-time-and-materials"></a>Przykład: Tworzenie reguły fakturowania dla wartości modułu czas i materiały
+### Przykład: Tworzenie reguły fakturowania dla wartości modułu czas i materiały
+<a id="example-create-a-billing-rule-for-the-value-of-time-and-materials" class="xliff"></a>
 
 Organizacja z branży consultingowej zgadza się na zapewnienie pięciu konsultantów technicznych do pracy nad projektem oprogramowania rozwoju dla odbiorcy na następnych sześć miesięcy. Klient akceptuje płatność 150 za każdą godzinę konsultacji plus koszty materiałów biurowych. Organizacja wysyła faktury dla odbiorcy na koniec każdego miesiąca. 
 

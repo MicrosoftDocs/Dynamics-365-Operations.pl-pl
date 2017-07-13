@@ -3,15 +3,15 @@ title: Trzyelementowe zasady uzgadniania
 description: "Ten artykuł zawiera przykłady uzgadniania trzyelementowego."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
@@ -19,22 +19,24 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b9f66a9a907cf01046c78677a3f1d55f112fa8c7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8ae07088fec05ad416ce1891dd0d0ecd489364ca
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="three-way-matching-policies"></a>Trzyelementowe zasady uzgadniania
+# Trzyelementowe zasady uzgadniania
+<a id="three-way-matching-policies" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Ten artykuł zawiera przykłady uzgadniania trzyelementowego.
 
-<a name="example-three-way-matching-for-items"></a>Przykład: Trzyelementowe uzgadniania dla towarów
+Przykład: Trzyelementowe uzgadniania dla towarów
+<a id="example-three-way-matching-for-items" class="xliff"></a>
 -------------------------------------
 
 **Podsumowanie:** Ken jest kontrolerem w centrali firmy Fabrikam. Chce, aby wszystkie faktury od dostawców oparte na zamówieniach zakupu były dopasowane do wierszy zamówień zakupu (uzgadnianie dwuelementowe). Dla zakupu towarów, które będą używane jako środki trwałe, faktura powinna być uzgodniona zarówno z wierszami zamówienia zakupu, jak i wierszami dokumentu przyjęcia towarów (uzgodnienie trzyelementowe).
@@ -47,7 +49,8 @@ Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na nastę
 -   Phyllis i April są menedżerami ds. księgowości w dziale rozrachunków z dostawcami dla oddziału firmy Fabrikam w USA. Mogą oni wymuszać stosowanie zasad korporacyjnych i zapewniać, że faktury są płacone dopiero po ich uzgodnieniu z zamówieniem zakupu i odebraniem towarów lub usług.
 -   Tony jest kierownikiem produkcji w amerykańskim oddziale Fabrikam. On i inni pracownicy działu produkcji muszą upewnić się, że towary zostały odebrane zgodnie z zamówieniem od dostawcy, tak aby inni pracownicy mieli materiały potrzebne do wykonywania ich obowiązków.
 
-### <a name="prerequisites"></a>Wymagania wstępne
+### Wymagania wstępne
+<a id="prerequisites" class="xliff"></a>
 
 -   Ken ustawia zasadę uzgadniania na poziomie firmy na uzgadnianie trzyelementowe.
 -   W pola Automatycznie aktualizuj stan uzgodnienia nagłówka na poziomie firmy Ken wybiera wartość Tak.
@@ -61,12 +64,13 @@ Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na nastę
 
 -   Arnie, pracownik działu rozrachunki z odbiorcami w Contoso, sprawdza wysyłki w danym tygodniu. Wybiera transakcje wysyłki do zafakturowania dla Fabrikam za dostawę obrabiarek Milicron. Arnie uwzględnia opłatę za wysyłkę i obsługę. Fabrikam uzna, że ta opłata jest częścią kosztów środka trwałego.
 
-### <a name="scenario"></a>Scenariusz
+### Scenariusz
+<a id="scenario" class="xliff"></a>
 
 1.  Sammy, pracownik działu przyjęć w firmie Fabrikam, odbiera całkowitą liczbę maszyn, które zostały wysyłane z firmy Contoso. Wprowadza ilość 5 w dokumencie przyjęcia produktów. Ponieważ zamówienie zakupu zostało całkowicie otrzymane, stan zamówienia zakupu zmienia się na Otrzymane.
 2.  April, koordynatorka rozrachunków z dostawcami w firmie Fabrikam, wprowadza i sprawdza fakturę przesyłaną przez firmę Contoso. Sprawdza poprawność następujących informacji:
     -   Dla towarów, które wymagają uzgodnienia trzyelementowego, ilość w wierszu faktury odpowiada ilości, która została przyjęta. Przyjęta ilość jest wskazana w dokumencie przyjęcia produktów, który jest uzgodniony z fakturą.
-    -   W przypadku towarów wymagających dwuelementowego lub trzyelementowego uzgadniania ceny w wierszu faktury są w granicach tolerancji zdefiniowanych w programie Microsoft Dynamics 365 for Operations. Obejmuje to następujące typy uzgadniania cen:
+    -   W przypadku towarów wymagających dwuelementowego lub trzyelementowego uzgadniania ceny w wierszu faktury są w granicach tolerancji zdefiniowanych w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Obejmuje to następujące typy uzgadniania cen:
         -   Uzgadnianie ceny jednostkowej netto — cena jednostkowa netto w wierszu faktury odpowiada cenie jednostkowej w wierszu zamówienia zakupu w ramach wartości procentowej rozbieżności. W tym przykładzie tolerancja ceny jednostkowej netto to +8%.
         -   Uzgodnienie cen całkowitych — kwota netto w wierszu faktury odpowiada kwocie netto w wierszu zamówienia zakupu w ramach wartości procentowej, kwoty lub procentu i kwoty rozbieżności. W tym przykładzie tolerancja uzgadniania cen całkowitych to +15%.
 
@@ -79,7 +83,7 @@ Faktura papierowa z firmy Contoso zawiera następujące informacje.
 | Podatek                         |          |            | 0,00       |
 | Razem                       |          |            | 44,500.00  |
 
-W programie Microsoft Dynamics 365 for Operations wiersz faktury zawiera następujące informacje.
+W programie Finance and Operations wiersz faktury zawiera następujące informacje.
 
 | Numer towaru                 | Ilość | Cena jednostkowa | Kwota netto wiersza | Zasady uzgadniania    | Dopasowanie ilości dokumentów przyjęcia produktów | Zgodność cen | Uzgadnianie cen całkowitych |
 |-----------------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -87,7 +91,8 @@ W programie Microsoft Dynamics 365 for Operations wiersz faktury zawiera następ
 
 Ponieważ ten wiersz jest zgodny z procesem uzgadniania faktur, fakturę można zaksięgować.
 
-## <a name="example-three-way-matching-for-item-and-vendor-combinations"></a> Przykład: trzyelementowe uzgadnianie dla kombinacji towaru i dostawcy
+##  Przykład: trzyelementowe uzgadnianie dla kombinacji towaru i dostawcy
+<a id="example-three-way-matching-for-item-and-vendor-combinations" class="xliff"></a>
 Podsumowanie: Ken jest kontrolerem w centrali firmy Fabrikam. Chce, aby wszystkie faktury oparte na zamówieniach zakupu były dopasowane do wierszy zamówień zakupu (uzgadnianie dwuelementowe). Cassie jest kontystką w malezyjskim oddziale firmy Fabrikam. Określa, że wybrane elementy, które zostały zamówione od określonych dostawców w Malezji powinny być uzgadniane zarówno z wierszami zamówienia, jak i z wierszami dokumentu przyjęcia produktów (uzgadnianie trzyelementowe). Może ona również zastąpić zasadę uzgadniania regułą wyższego poziomu dla określonych zamówień zakupu. 
 
 Wielkości i kwoty są małe i w przeszłości zdarzały się problemy z dostawami od niektórych dostawców z Malezji. Z tego powodu Cassie ustawia poziom kontroli dla niektórych kombinacji towaru i dostawcy, które są nabywane w Malezji, na uzgadnianie trzyelementowe. 
@@ -96,7 +101,8 @@ Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na nastę
 -   Ken jest kontrolerem w firmie Fabrikam. Może on pomóc pracownikom swojej firmy w identyfikowaniu i rozwiązywaniu problemów związanych z zamawianiem, odbieraniem zamówień i płaceniem za towary lub usługi od dostawców.
 -   Cassie jest kontystką w malezyjskim oddziale firmy Fabrikam. Może ona wymuszać stosowanie zasad korporacyjnych i zapewniać, że faktury są płacone dopiero po ich uzgodnieniu z wierszami zamówienia zakupu i dokumentem przyjęcia produktów będącym dowodem odebrania towarów lub usług. Może ona także podnieść poziom kontroli do uzgadniania trzyelementowego dla określonych towarów, by umożliwić kontrolę kosztów operacyjnych.
 
-### <a name="prerequisites"></a>Wymagania wstępne
+### Wymagania wstępne
+<a id="prerequisites" class="xliff"></a>
 
 -   Ken ustawia zasadę uzgadniania na poziomie firmy na uzgadnianie dwuelementowe.
 -   Wolu Dopasuj ceny całkowite dla firmy Ken wybiera wartość Procent i wpisuje 10% jako wartość procentową rozbieżności.
@@ -110,12 +116,13 @@ Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na nastę
     | MM01 – mysz bezprzewodowa | 2        | 40,00      | 80,00      | Uzgadnianie dwuelementowe                | Uzgadnianie trzyelementowe                           |
     | Napęd USB             | 200      | 10,00      | 2000,00   | Uzgadnianie dwuelementowe                | Uzgadnianie dwuelementowe                             |
 
-### <a name="scenario"></a>Scenariusz
+### Scenariusz
+<a id="scenario" class="xliff"></a>
 
 1.  Towary są dostarczane. Sammy, pracownik działu przyjęć w malezyjskim oddziale firmy Fabrikam, nie księguje dokumentu przyjęcia produktów natychmiast, bo coś odrywa go od pracy.
 2.  April, koordynatorka rozrachunków z dostawcami w firmie Fabrikam, wprowadza i sprawdza fakturę przesyłaną przez firmę Contoso. Sprawdza poprawność następujących informacji:
     -   Dla towarów, które wymagają uzgodnienia trzyelementowego, ilość w wierszu faktury odpowiada ilości, która została przyjęta. Przyjęta ilość jest wskazana w dokumencie przyjęcia produktów, który jest uzgodniony z fakturą.
-    -   W przypadku towarów wymagających dwuelementowego lub trzyelementowego uzgadniania ceny w wierszu faktury są w granicach tolerancji zdefiniowanych w programie Microsoft Dynamics 365 for Operations. Obejmuje to następujące typy uzgadniania cen:
+    -   W przypadku towarów wymagających dwuelementowego lub trzyelementowego uzgadniania ceny w wierszu faktury są w granicach tolerancji zdefiniowanych w programie Finance and Operations. Obejmuje to następujące typy uzgadniania cen:
         -   Uzgadnianie ceny jednostkowej netto — cena jednostkowa netto w wierszu faktury odpowiada cenie jednostkowej w wierszu zamówienia zakupu w ramach wartości procentowej rozbieżności. W tym przykładzie tolerancja ceny jednostkowej netto to +2%.
         -   Uzgodnienie cen całkowitych — kwota netto w wierszu faktury odpowiada kwocie netto w wierszu zamówienia zakupu w ramach wartości procentowej, kwoty lub procentu i kwoty rozbieżności. W tym przykładzie tolerancja uzgadniania cen całkowitych to +10%.
 
@@ -128,7 +135,7 @@ Faktura papierowa z firmy Contoso zawiera następujące informacje.
 | Napęd USB             | 200      | 10.05      | 2,010.00   |
 | Suma faktury         |          |            | 7,092.00   |
 
-W programie Microsoft Dynamics 365 for Operations wiersz faktury zawiera następujące informacje.
+W programie Finance and Operations wiersz faktury zawiera następujące informacje.
 
 | Numer towaru           | Ilość | Cena jednostkowa | Kwota netto wiersza | Zasady uzgadniania    | Dopasowanie ilości dokumentów przyjęcia produktów | Zgodność cen | Uzgadnianie cen całkowitych |
 |-----------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|

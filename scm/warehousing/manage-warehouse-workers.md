@@ -1,16 +1,16 @@
 ---
 title: "Zarządzanie pracownikami magazynu"
-description: "Ten artykuł opisuje sposób korzystania z systemu Microsoft Dynamics AX do zwiększania kontroli i monitorowania pracy, która jest wykonywana przez pracowników w magazynach."
+description: "Ten artykuł opisuje sposób korzystania z programu Dynamics 365 for Finance and Operations do zwiększania kontroli i monitorowania pracy, która jest wykonywana przez pracowników w magazynach."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
@@ -18,20 +18,21 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b4e2cb91cac210a659f261c5fcabb5f3643cdbec
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 52753c21862a2955e15140bb1cdb5ef6f6efe31a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="manage-warehouse-workers"></a>Zarządzanie pracownikami magazynu
+# Zarządzanie pracownikami magazynu
+<a id="manage-warehouse-workers" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł opisuje sposób korzystania z systemu Microsoft Dynamics AX do zwiększania kontroli i monitorowania pracy, która jest wykonywana przez pracowników w magazynach.
+Ten artykuł opisuje sposób korzystania z programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition do zwiększania kontroli i monitorowania pracy, która jest wykonywana przez pracowników w magazynach.
 
 Jeśli używasz funkcji zarządzania magazynem, wszystkie operacje pracownika magazynu są określane jako *praca*. Praca, taka jak pobieranie, przenoszenie i zliczanie dostępnych zapasów, jest rejestrowana przy użyciu urządzeń przenośnych. Zanim pracownik magazynu będzie mógł wykonać pracę, musi być powiązany z pracownikiem w dziale Zasoby ludzkie. Każde konto **pracownika** może mieć wielu powiązanych użytkowników pracy w magazynie. Ci użytkownicy pracy mogą pracować w różnych magazynach i mieć różne poziomy dostępu do rozmaitych menu urządzeń przenośnych. Użytkowników pracy w magazynie można traktować jak logowanie wielokrotne dla wybranego pracownika. Każdy użytkownik pracy w magazynie ma domyślny magazyn i określone przepływy pracy są używane w pozycjach menu dostępnych dla danego użytkownika pracy. 
 
@@ -39,12 +40,14 @@ Aby utworzyć nowego użytkownika pracy, kliknij **Pracownik** na stronie **Prac
 
 W ramach konfiguracji dla każdego użytkownika pracy można również zdefiniować przepływy pracy dla określonego procesu. Na przykład można użyć pola **Jest kierownikiem ds. inwentaryzacji ciągłej**, aby określić, czy użytkownik może korygować rozbieżności inwentaryzacji ciągłej podczas liczenia lub czy te korekty muszą najpierw zostać przejrzane przez inną osobę.
 
-## <a name="defining-labor-standards"></a>Definiowanie norm robocizny
+## Definiowanie norm robocizny
+<a id="defining-labor-standards" class="xliff"></a>
 Na stronie **Normy robocizny** można określić metody obliczania szacowanego czasu potrzebnego na wykonanie danego typu pracy. Tę definicję można ustawić na poziomie ogólnym lub szczegółowym. Można na przykład zdefiniować czas wymagany do odebrania zamówienia sprzedaży według wagi dla określonej definicji jednostki w konkretnym procesie odbierania. Jednocześnie można rejestrować czas na podstawie innej metody obliczania dla operacji odkładania dostępnych towarów, które są odbierane 
 
 Aby włączyć zdefiniowane normy robocizny, trzeba wybrać opcję **Zezwalaj na normy robocizny** dla każdego magazynu w którym norm robocizny będą używane.
 
-## <a name="monitoring-and-controlling-warehouse-work"></a>Monitorowanie i kontrolowanie pracy w magazynie
+## Monitorowanie i kontrolowanie pracy w magazynie
+<a id="monitoring-and-controlling-warehouse-work" class="xliff"></a>
 Na stronie **Cała praca** można monitorować i obsługiwać całą pracę, która została zaplanowana, jest w toku lub została ukończona. Na tej stronie można aktualizować różne procesy, takie jak przypisania pracowników do prac w magazynie i priorytety prac. Można też wyświetlać informacje szczegółowe związane z nagłówkiem i wierszami pracy w celu analizy oczekiwanych lub ukończonych procesów pracy. 
 
 Po włączeniu opcji **Normy robocizny** można wyświetlić obliczoną prognozę czasu pracy. Następnie podczas przetwarzania pracy rzeczywisty czas będzie również wyświetlany dla każdej operacji pracy. W ten sposób można porównać prognozy obliczeń czasu z rzeczywistym czasem. 

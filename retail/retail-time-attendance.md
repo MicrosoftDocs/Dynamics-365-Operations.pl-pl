@@ -1,59 +1,68 @@
 ---
 title: "Czas i frekwencja w sieci sprzedaży"
-description: "W tym temacie opisano scenariusze obsługiwane w zakresie zarządzania czasem i frekwencją w module Microsoft Dynamics 365 for Operations — Handel detaliczny."
+description: "W tym temacie opisano scenariusze obsługiwane w zakresie zarządzania czasem i frekwencją w module Microsoft Dynamics 365 for Retail."
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 021f0ce8ee73ede482b2b74fce93f61a886288fc
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: b458d1938f49a2f33f7dd3ce3062880f0d4d7bfc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="retail-time-and-attendance"></a>Czas i frekwencja w sieci sprzedaży
+# Czas i frekwencja w handlu detalicznym
+<a id="retail-time-and-attendance" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-W tym temacie opisano scenariusze obsługiwane w zakresie zarządzania czasem i frekwencją w module Microsoft Dynamics 365 for Operations — Handel detaliczny. 
+W tym temacie opisano scenariusze obsługiwane w zakresie zarządzania czasem i frekwencją w module Microsoft Dynamics 365 for Retail. 
 
-<a name="manage-worker-setup-and-scheduling"></a>Zarządzanie ustawieniami i planowaniem pracowników
+Zarządzanie ustawieniami i planowaniem pracowników
+<a id="manage-worker-setup-and-scheduling" class="xliff"></a>
 ----------------------------------
 
-### <a name="initial-configuration"></a>Pierwotna konfiguracja 
+### Pierwotna konfiguracja 
+<a id="initial-configuration" class="xliff"></a>
 
 -   Włącz kreatora konfiguracji.
 -   Zarejestruj pracowników jako pracowników odpowiedzialnych za rejestrację czasu.
 
-### <a name="plan-worker-schedules"></a>Planowanie harmonogramów pracowników
+### Planowanie harmonogramów pracowników
+<a id="plan-worker-schedules" class="xliff"></a>
 
 -   Zastosuj profil za pomocą planowania pracy. Aby uzyskać więcej informacji, zobacz <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
 
 Aby uzyskać więcej informacji o etapach konfiguracji, zobacz <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
 
-### <a name="retail-specific-configuration"></a>Konfiguracja właściwa dla sieci sprzedaży
+### Konfiguracja właściwa dla sieci sprzedaży
+<a id="retail-specific-configuration" class="xliff"></a>
 
 -   Włącz profil funkcji dla Zegara, dla pracowników, którzy mają być odpowiedzialni za rejestrację czasu. Kliknij kolejno opcje **Profile funkcji punktu sprzedaży** &gt; **Funkcje** &gt; **Rejestracje czasu w punkcie sprzedaży** &gt; **Włącz rejestracje czasu**.
 -   Skonfiguruj grupy uprawnień w punkcie sprzedaży, aby włączyć uprawnienie Wyświetlanie wpisów zegara. To uprawnienie pozwala wyświetlać rejestracje zegara innych pracowników w danym sklepie (i w każdym innym sklepie, z którym użytkownik jest skojarzony, za pomocą książki adresowej). Można włączyć uprawnienie dla roli Menedżer, ale nie dla roli Kasjer. Kliknij kolejno opcje **Grupy uprawnień punktu sprzedaży** &gt; **Wyświetlanie wpisów zegara**.
 
-## <a name="register-time"></a>Czas rejestracji
-### <a name="cashier-and-non-cashier-time-registrations"></a>Rejestracje czasu dla roli Kasjer i ról innych niż Kasjer
+## Czas rejestracji
+<a id="register-time" class="xliff"></a>
+### Rejestracje czasu dla roli Kasjer i ról innych niż Kasjer
+<a id="cashier-and-non-cashier-time-registrations" class="xliff"></a>
 
 -   W punkcie sprzedaży:
     -   Operacje rejestrowania:
@@ -112,8 +121,10 @@ Aby uzyskać więcej informacji o etapach konfiguracji, zobacz <https://technet.
 -   Różne strefy czasowe:
     -   W przypadku wyświetlenia czasu z innej lokalizacji (dla dziennika kasjera lub za pomocą opcji **Wyświetlanie wpisów zegara** dla menedżera) i gdy ta lokalizacja jest w innej strefie czasowej, widoczne rejestracje czasu są konwertowane na czas lokalny. Załóżmy, że zarządzasz dwoma sklepami — w Arizonie i Nevadzie. Kasjer rejestruje przyjście do pracy o godzinie 9:00 w Arizonie. W tym momencie w Nevadzie jest godzina 8:00. Jeśli więc jesteś w Nevadzie i przeglądasz dane rejestracji czasu, wskazywana jest godzina 8:00.
 
-## <a name="view-worker-time-registrations"></a>Wyświetlanie rejestracji czasu pracownika
-### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a>Wyświetlanie rejestracji czasu pracownika i filtrowanie według sklepu lub typu aktywności
+## Wyświetlanie rejestracji czasu pracownika
+<a id="view-worker-time-registrations" class="xliff"></a>
+### Wyświetlanie rejestracji czasu pracownika i filtrowanie według sklepu lub typu aktywności
+<a id="view-worker-time-registrations-and-filter-by-store-or-activity-type" class="xliff"></a>
 
 W punkcie sprzedaży:
 
@@ -121,16 +132,19 @@ W punkcie sprzedaży:
 -   Widać działania rejestracji czasu dla wszystkich pracowników przypisanych do tych samych sklepów, do których jesteś przypisany Ty.
 -   Za pomocą filtrów typu działania i sklepu możesz filtrować rejestracje czasu.
 
-## <a name="process-and-manage-time-registrations"></a>Przetwarzanie rejestracji czasu i zarządzanie nimi
-Użytkownik programu Dynamics 365 for Operations — Handel detaliczny wykonuje procedurę obliczania, zatwierdzania i przesłania rejestracji czasu do listy płac.
+## Przetwarzanie rejestracji czasu i zarządzanie nimi
+<a id="process-and-manage-time-registrations" class="xliff"></a>
+Użytkownik programu Dynamics 365 for Retail wykonuje procedurę obliczania, zatwierdzania i przesłania rejestracji czasu do listy płac.
 
-### <a name="primary-operations"></a>Podstawowe operacje
+### Podstawowe operacje
+<a id="primary-operations" class="xliff"></a>
 
 -   Oblicz
 -   Zatwierdź
 -   Prześlij do listy płac
 
-### <a name="other-common-operations"></a>Inne częste operacje
+### Inne częste operacje
+<a id="other-common-operations" class="xliff"></a>
 
 -   Grupowe wyrejestrowania
 -   Rejestrowanie nieobecności

@@ -1,16 +1,16 @@
 ---
 title: "Mobilny obszar roboczy Dostępne zapasy"
-description: "W tym temacie omówiono mobilny obszar roboczy Dostępne zapasy, który jest dostępny w aplikacji komórkowej Microsoft Dynamics 365 for Operations. Ten obszar roboczy pomaga uzyskać na urządzeniach komórkowych w każdym miejscu i czasie wgląd w zapasy zarezerwowane i dostępne."
-author: YuyuScheller
+description: "Ten temat zawiera informacje o komórkowym obszarze roboczym Dostępne zapasy. Ten obszar roboczy pomaga uzyskać na urządzeniach komórkowych w każdym miejscu i czasie wgląd w zapasy zarezerwowane i dostępne."
+author: Mirzaab
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 267094
 ms.assetid: 3fa385ba-894d-4a9e-b394-ef3697abf895
 ms.search.region: global
@@ -19,24 +19,25 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7387df37e047d5ab7a90b696a6ffa249094499c4
+ms.sourcegitcommit: a0edbad63c51d111d7c8985aa7fdf7312da6149d
+ms.openlocfilehash: d14f3510df45169e3b77ee9c4f3d0d9d389e6036
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="inventory-on-hand-mobile-workspace"></a>Mobilny obszar roboczy Dostępne zapasy
+# Mobilny obszar roboczy Dostępne zapasy
+<a id="inventory-on-hand-mobile-workspace" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Ten temat zawiera informacje o komórkowym obszarze roboczym **Dostępne zapasy**. Ten obszar roboczy pomaga uzyskać w każdym miejscu i czasie wgląd w zapasy zarezerwowane i dostępne.
 
-W tym temacie omówiono mobilny obszar roboczy Dostępne zapasy, który jest dostępny w aplikacji komórkowej Microsoft Dynamics 365 for Operations. Ten obszar roboczy pomaga uzyskać na urządzeniach komórkowych w każdym miejscu i czasie wgląd w zapasy zarezerwowane i dostępne.
+Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji komórkowej Microsoft Dynamics 365 for Unified Operations.
 
-<a name="overview-of-the-inventory-on-hand-mobile-workspace"></a>Omówienie komórkowego obszaru roboczego Dostępne zapasy
---------------------------------------------------
-
+## Przegląd
+<a id="overview" class="xliff"></a>
 Zazwyczaj firmy codziennie wykonują wiele wydań i przyjęć zapasów. Te przesunięcia cały czas zmieniają stan dostępnych zapasów. Mobilny obszar roboczy **Dostępne zapasy** pozwala widzieć stan dostępnych zapasów w całej organizacji, wykorzystując do tego dowolne urządzenie komórkowe. Niezależnie od tego, czy pracujesz w magazynie, zakupach, sprzedaży, produkcji czy administracji, lub czy masz inne role, informacje o dostępnych zapasach możesz sprawdzać w każdym miejscu i czasie. 
 
 Mobilny obszar roboczy zapewnia natychmiastowy wgląd w stan dostępnych zapasów we wszystkich zakładach. Pokazuje m.in. dostępne zapasy w poszczególnych obiektach, bieżące rezerwacje materiałów oraz niezarezerwowane dostępne zapasy. Można również wpisać numery towarów, aby sprawdzić dostępność zapasów, i wykonywać filtrowane wyszukiwanie dostępnych produktów lub wariantów. 
@@ -44,8 +45,8 @@ Mobilny obszar roboczy zapewnia natychmiastowy wgląd w stan dostępnych zapasó
 W szczególności mobilny obszar roboczy oferuje następujące funkcje:
 
 -   Można szukać według numeru produktu lub nazwy produktu, aby znaleźć produkty, dla których chcesz sprawdzić stan dostępności zapasów.
-
 -   Dla wybranych produktów można wyświetlić następujące informacje:
+
     -   Dostępne zapasy według oddziału
     -   Dostępne zapasy według magazynu
     -   Dostępne zapasy według lokalizacji
@@ -53,19 +54,24 @@ W szczególności mobilny obszar roboczy oferuje następujące funkcje:
     -   Dostępne zapasy według stanu zapasów
     
 -   Dostępne zapasy produktów są pokazywane w następujący sposób:
+
     -   Według zapasów fizycznych (widok przedstawia łączną ilość)
     -   Według fizycznie zarezerwowanych zapasów (widok przedstawia ilość zarezerwowaną)
     -   Według fizycznie dostępnych zapasów (ten widok przedstawia dostępną ilość, która nie ma żadnych rezerwacji)
 
-## <a name="prerequisites"></a>Wymagania wstępne
-Aby można było używać mobilnego obszaru roboczego **Dostępne zapasy**, administrator systemu musi zapewnić spełnienie następujących warunków wstępnych:
+## Wymagania wstępne
+<a id="prerequisites" class="xliff"></a>
+Wymagania wstępne różnią się w zależności od wersji systemu Microsoft Dynamics 365 wdrożonej w organizacji.
+
+### Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r.
+<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r., administrator systemu musi opublikować mobilny obszar roboczy **Dostępne zapasy**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą
+<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą, administrator systemu musi wykonać następujące zadania wstępne. 
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Wymaganie wstępne</th>
@@ -75,55 +81,55 @@ Aby można było używać mobilnego obszaru roboczego **Dostępne zapasy**, admi
 </thead>
 <tbody>
 <tr class="odd">
-<td>Należy zainstalować program Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą.</td>
+<td>Zainstalowanie poprawki KB 4013633.</td>
 <td>Administrator systemu</td>
-<td>Jeśli w organizacji jeszcze nie wdrożono programu Dynamics 365 for Operations, administrator systemu powinien przeczytać temat <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Wdrażanie środowiska demonstracyjnego programu Microsoft Dynamics 365 for Operations</a>.</td>
+
+<td>KB 4013633 jest aktualizacją platformy języka X++ lub poprawką metadanych, która zawiera mobilny obszar roboczy <strong>Dostępne zapasy</strong>. W celu zainstalowania poprawki KB 4013633 administrator systemu musi wykonać następującą procedurę:
+<ol>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Pobierz poprawkę metadanych z usługi Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Zainstaluj poprawkę metadanych</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Utwórz wdrażalny pakiet</a> zawierający model <strong>SCMMobile</strong>, a następnie przekaż ten wdrażalny pakiet do usługi LCS.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Zastosuj wdrażalny pakiet</a></li>
+
+</ol></td>
 </tr>
 <tr class="even">
-<td>Należy zainstalować poprawkę KB 4013633.</td>
+<td>Opublikowanie mobilnego obszaru roboczego <strong>Dostępne zapasy</strong>.</td>
 <td>Administrator systemu</td>
-<td>KB 4013633 (aktualizacja platformy języka X++ lub poprawka metadanych) zawiera cztery komórkowe obszary robocze dla zarządzania łańcuchem dostaw. W celu zainstalowania poprawki KB 4013633 administrator systemu musi wykonać następującą procedurę:
-<ol>
-<li>Pobierz poprawkę KB 4013633 z usługi Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Zainstaluj poprawkę metadanych</a>.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Utwórz wdrażalny pakiet</a> zawierający model <strong>SCMMobile</strong>, a następnie przekaż ten wdrażalny pakiet do usługi LCS.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Zastosuj wdrażalny pakiet</a> do systemu Dynamics 365 for Operations.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td>Mobilny obszar roboczy <strong>Dostępne zapasy</strong> musi zostać opublikowany w aplikacji komórkowej Dynamics 365 for Operations.</td>
-<td>Administrator systemu</td>
-<td><ol>
-<li>Uruchom program Dynamics 365 for Operations w przeglądarce internetowej.</li>
-<li>Na stronie <strong>Parametry systemu</strong> zaznacz opcję <strong>Zarządzaj mobilnymi obszarami roboczymi</strong>.</li>
-<li>Wybierz obszar roboczy <strong>Dostępne zapasy</strong>.</li>
-<li>Kliknij opcję <strong>Opublikuj mobilny obszar roboczy</strong>.</li>
-</ol></td>
+<td>Zobacz <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publikowanie mobilnego obszaru roboczego</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Pobieranie i instalowanie aplikacji komórkowej Dynamics 365 for Operations
-W sklepie z aplikacjami dla urządzeń komórkowych pobierz i zainstaluj aplikację Dynamics 365 for Operations.
+## Pobieranie i instalowanie aplikacji mobilnej
+<a id="download-and-install-the-mobile-app" class="xliff"></a>
 
--   Android: [Dynamics 365 for Operations w sklepie Google Play](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   iPhone: [Dynamics 365 for Operations w sklepie z aplikacjami iTunes](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
-## <a name="sign-in-to-the-dynamics-365-for-operations-mobile-app"></a>Logowanie do aplikacji komórkowej Dynamics 365 for Operations
+-   [Telefony z systemem Android](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [Telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
+
+## Logowanie do aplikacji mobilnej
+<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+
 1.  Uruchom aplikację na urządzeniu komórkowym.
-2.  Wprowadź adres URL programu Dynamics 365 for Operations.
-3.  Wpisz firmę, do której chcesz się zalogować. Na przykład wpisz **USMF**.
-4.  Podczas pierwszego logowania zostanie wyświetlony monit o podanie nazwy użytkownika i hasła dostępu do konta programu Dynamics 365 for Operations. Wprowadź swoje poświadczenia.
-5.  Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy. Należy zauważyć, że jeśli administrator systemu później opublikuje nowy obszar roboczy, można wykonać operację ściągania i odświeżyć listę komórkowych obszarów roboczych. 
+2.  Wprowadź adres URL usługi Dynamics 365.
+3.  Podczas pierwszego logowania pojawi się monit o podanie nazwy użytkownika i hasła. Wprowadź swoje poświadczenia.
+4.  Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy. Należy zauważyć, że jeśli administrator systemu później opublikuje nowy obszar roboczy, trzeba odświeżyć listę komórkowych obszarów roboczych.
 
     [![Ściąganie w celu odświeżenia](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## <a name="view-the-onhand-inventory-for-a-product-by-using-the-inventory-onhand-mobile-workspace"></a>Wyświetlanie dostępnych zapasów produktu za pomocą mobilnego obszaru roboczego Dostępne zapasy
+## Wyświetlanie dostępnych zapasów produktu za pomocą mobilnego obszaru roboczego Dostępne zapasy
+<a id="view-the-on-hand-inventory-for-a-product-by-using-the-inventory-on-hand-mobile-workspace" class="xliff"></a>
+
 1.  Na urządzeniu przenośnym wybierz obszar roboczy **Dostępne zapasy**.
-2.  Wybierz opcję **Sprawdź dostępne zapasy towaru**. Zobacz listę produktów załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma komórkowa Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
-3.  Jeśli towaru nie ma na liście, wybierz opcję **Wyszukaj więcej**, aby wykonać wyszukiwanie online w usłudze Dynamics 365 for Operations. Poszukaj według numeru produktu lub przełącz na wyszukiwanie według nazwy produktu.
+
+2.  Wybierz opcję **Sprawdź dostępne zapasy towaru**. Zobacz listę produktów załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+3.  Jeśli Twojego towaru nie ma na liście, kliknij przycisk **Wyszukaj więcej**. Poszukaj według numeru produktu lub przełącz na wyszukiwanie według nazwy produktu.
+
 4.  Wybierz produkt. Jeśli towar ma ilustrację, zostanie ona wyświetlona.
 5.  Wybierz jedną z poniższych opcji, aby wyświetlić stan dostępnych zapasów:
+
     -   Wyświetl dostępne wg oddziału
     -   Wyświetl dostępne wg magazynu
     -   Wyświetl dostępne wg lokalizacji
@@ -134,9 +140,4 @@ W sklepie z aplikacjami dla urządzeń komórkowych pobierz i zainstaluj aplikac
     -   Według zapasów fizycznych (widok przedstawia łączną ilość)
     -   Według fizycznie zarezerwowanych zapasów (widok przedstawia ilość zarezerwowaną)
     -   Według fizycznie dostępnych zapasów (ten widok przedstawia dostępną ilość, która nie ma żadnych rezerwacji)
-
-
-
-
-
 

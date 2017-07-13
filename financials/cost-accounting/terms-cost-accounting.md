@@ -3,14 +3,14 @@ title: "Terminologia z dziedziny rachunku kosztów"
 description: "W tym temacie opisano kluczowe pojęcia używane w rachunku kosztów."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
@@ -19,15 +19,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7ce12337c22542aea2002ffc5abd09e4f4d770c1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 35b8e510e7e2c13aebb73f46d20b16275d097432
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="cost-accounting-terminology"></a>Terminologia z dziedziny rachunku kosztów
+# Terminologia z dziedziny rachunku kosztów
+<a id="cost-accounting-terminology" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,7 +37,7 @@ W tym temacie opisano kluczowe pojęcia używane w rachunku kosztów.
 
 **Rachunek kosztów**
 
-Moduł Rachunek kosztów pozwala zbierać dane z różnych źródeł, takich jak księga główna, księgi podrzędne, budżety i zasoby informacji statystycznych. Następnie można analizować, sumować i oceniać dane kosztów, dzięki czemu kierownictwo może podejmować najlepsze decyzje w kwestii aktualizacji cen, budżetów, kontroli kosztów i tak dalej. Dane źródłowe używane do analizy kosztów są traktowane niezależnie w rachunku kosztów. Dlatego aktualizacje w rachunku kosztów nie mają wpływu na dane źródłowe. Jednak podczas zbierania danych o kosztach z różnych źródeł, a zwłaszcza w przypadku importowania kont głównych z księgi głównej w programie Microsoft Dynamics 365 for Operations jako składników kosztów, istnieje redundancja danych, ponieważ te same dane znajduje się w księdze głównej i module Rachunek kosztów. Ta nadmiarowość jest wymagana, ponieważ zarządzanie finansowe jest używane do sprawozdawczości zewnętrznej, a rachunek kosztów do sprawozdawczości wewnętrznej.
+Moduł Rachunek kosztów pozwala zbierać dane z różnych źródeł, takich jak księga główna, księgi podrzędne, budżety i zasoby informacji statystycznych. Następnie można analizować, sumować i oceniać dane kosztów, dzięki czemu kierownictwo może podejmować najlepsze decyzje w kwestii aktualizacji cen, budżetów, kontroli kosztów i tak dalej. Dane źródłowe używane do analizy kosztów są traktowane niezależnie w rachunku kosztów. Dlatego aktualizacje w rachunku kosztów nie mają wpływu na dane źródłowe. Jednak podczas zbierania danych o kosztach z różnych źródeł, a zwłaszcza w przypadku importowania kont głównych z księgi głównej w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition jako składników kosztów, istnieje redundancja danych, ponieważ te same dane znajduje się w księdze głównej i module Rachunek kosztów. Ta nadmiarowość jest wymagana, ponieważ zarządzanie finansowe jest używane do sprawozdawczości zewnętrznej, a rachunek kosztów do sprawozdawczości wewnętrznej.
 
 **Księga rachunku kosztów**
 

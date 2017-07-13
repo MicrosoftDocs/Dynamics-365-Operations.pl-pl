@@ -3,14 +3,14 @@ title: "Stany zapasów"
 description: "W tym artykule opisano, jak za pomocą stanów zapasów klasyfikować i śledzić zapasy."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1565b7738260270a986b515dfd21931296ce83bd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b3ec66c805d028c20f3d3f95e7af9d78252828c7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="inventory-statuses"></a>Stany zapasów
+# Stany zapasów
+<a id="inventory-statuses" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -44,7 +45,7 @@ Oto kilka przykładów zastosowania stanów zapasów:
 
 Stan zapasów jest jednym z wymiarów w grupie wymiarów magazynowania. Stany zapasów można sklasyfikować jako dostępne i niedostępne i można używać parametru **Blokowanie zapasów**, aby blokować towary z niedostępnym stanem zapasów. Pozycje ze stanem zablokowanym są uznawane za zapasy fizyczne i nie można ich użyć w zleceniu produkcyjnym, zamówieniu sprzedaży ani transakcji wychodzącej. 
 
-Można korzystać z pozycji magazynowych ze stanem niedostępne lub dostępne w przypadku pracy przychodzącej. Można na przykład utworzyć stan dostępny o nazwie **Gotowe**, stan niedostępny o nazwie **Uszkodzone** i stan zablokowany o nazwie **Zablokowane**. Podczas tworzenia zamówienia zakupu dla odebranych lub zwróconych towarów, jeśli wszystkie towary są uszkodzone, można zmienić stan zapasów tych towarów na **Uszkodzone** w wierszu zamówienia zakupu. Po przyjęciu tych towarów ich stan jest automatycznie ustawiany na **Zablokowane**. W przypadku zeskanowania uszkodzonych towarów za pomocą urządzenia przenośnego program Microsoft Dynamics 365 for Operations może użyć dyrektywy lokalizacji i szablonów pracy, aby wyświetlić informacje o odpowiedniej lokalizacji lub zakresie lokalizacji, w których można odłożyć te towary. W przypadku zwróconych towarów na stronie **Transakcje magazynowe** tworzony jest typ **Rezerwacja**. 
+Można korzystać z pozycji magazynowych ze stanem niedostępne lub dostępne w przypadku pracy przychodzącej. Można na przykład utworzyć stan dostępny o nazwie **Gotowe**, stan niedostępny o nazwie **Uszkodzone** i stan zablokowany o nazwie **Zablokowane**. Podczas tworzenia zamówienia zakupu dla odebranych lub zwróconych towarów, jeśli wszystkie towary są uszkodzone, można zmienić stan zapasów tych towarów na **Uszkodzone** w wierszu zamówienia zakupu. Po przyjęciu tych towarów ich stan jest automatycznie ustawiany na **Zablokowane**. W przypadku zeskanowania uszkodzonych towarów za pomocą urządzenia przenośnego program Microsoft Dynamics 365 for Finance and Operations może użyć dyrektywy lokalizacji i szablonów pracy, aby wyświetlić informacje o odpowiedniej lokalizacji lub zakresie lokalizacji, w których można odłożyć te towary. W przypadku zwróconych towarów na stronie **Transakcje magazynowe** tworzony jest typ **Rezerwacja**. 
 
 W przypadku pracy wychodzącej należy użyć towarów z dostępnym stanem zapasów. Jeśli masz towary ze stanem **Uszkodzone** i zostało dla nich uruchomione planowanie główne, pozycje te zostaną uznane za brakujące, a zapasy są uzupełniane automatycznie. 
 

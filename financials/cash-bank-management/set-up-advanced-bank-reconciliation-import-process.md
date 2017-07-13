@@ -1,16 +1,16 @@
 ---
 title: Konfigurowanie procesu importu zaawansowanego uzgadniania konta bankowego
-description: "Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych, a następnie ich automatyczne uzgadnianie z transakcjami bankowymi w programie Microsoft Dynamics 365 for Operations. W tym artykule wyjaśniono, jak skonfigurować funkcję importu wyciągów bankowych."
+description: "Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych oraz ich automatyczne uzgadnianie z transakcjami bankowymi w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. W tym artykule wyjaśniono, jak skonfigurować funkcję importu wyciągów bankowych."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 106853
 ms.assetid: 45dae275-ea45-4c7e-b38f-89297c7b5352
 ms.search.region: Global
@@ -18,25 +18,27 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fda4dca4339c09757477b04166b17d5f92f46a7c
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a4d1c81386c0ef03391f3127fa51a6b09a5142b3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Konfigurowanie procesu importu zaawansowanego uzgadniania konta bankowego
+# Konfigurowanie procesu importu zaawansowanego uzgadniania konta bankowego
+<a id="set-up-the-advanced-bank-reconciliation-import-process" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych, a następnie ich automatyczne uzgadnianie z transakcjami bankowymi w programie Microsoft Dynamics 365 for Operations. W tym artykule wyjaśniono, jak skonfigurować funkcję importu wyciągów bankowych. 
+Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych oraz ich automatyczne uzgadnianie z transakcjami bankowymi w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. W tym artykule wyjaśniono, jak skonfigurować funkcję importu wyciągów bankowych. 
 
-Konfiguracja importu wyciągów bankowych różni się i zależy od formatu elektronicznych wyciągów bankowych. Program Microsoft Dynamics 365 for Operations obsługuje standardowo trzy formaty wyciągów bankowych: ISO20022, MT940 i BAI2.
+Konfiguracja importu wyciągów bankowych różni się i zależy od formatu elektronicznych wyciągów bankowych. Program Finance and Operations obsługuje standardowo trzy formaty wyciągów bankowych: ISO20022, MT940 i BAI2.
 
-## <a name="sample-files"></a>Przykładowe pliki
-We wszystkich trzech formatach są niezbędne pliki, które dokonują translacji wyciągu elektronicznego z oryginalnego formatu na format, którego można używać w programie Dynamics 365 for Operations. Konieczne pliki zasobów znajdują się w węźle **Zasoby** w Eksploratorze aplikacji w programie Microsoft Visual Studio. Po znalezieniu plików skopiuj je do jednej znanej lokalizacji, co ułatwi ich przekazywanie na serwer w trakcie procesu konfigurowania.
+## Przykładowe pliki
+<a id="sample-files" class="xliff"></a>
+We wszystkich trzech formatach są niezbędne pliki, które dokonują translacji wyciągu elektronicznego z oryginalnego formatu na format, którego można używać w programie Finance and Operations. Konieczne pliki zasobów znajdują się w węźle **Zasoby** w Eksploratorze aplikacji w programie Microsoft Visual Studio. Po znalezieniu plików skopiuj je do jednej znanej lokalizacji, co ułatwi ich przekazywanie na serwer w trakcie procesu konfigurowania.
 
 | Nazwa zasobu                                           | Nazwa pliku                            |
 |---------------------------------------------------------|--------------------------------------|
@@ -48,7 +50,8 @@ We wszystkich trzech formatach są niezbędne pliki, które dokonują translacji
 | BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt      | MT940XML-to-Reconciliation.xslt      |
 | BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
 
-## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Przykłady formatów i układów technicznych i wyciągów bankowych
+## Przykłady formatów i układów technicznych i wyciągów bankowych
+<a id="examples-of-bank-statement-formats-and-technical-layouts" class="xliff"></a>
 Poniżej przedstawiono przykłady definicji układów technicznych plików importu zaawansowanego uzgadniania konta bankowego i trzy powiązane przykładowe pliki wyciągów bankowych: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 | Definicja układu technicznego                             | Przykładowy plik wyciągu bankowego          |
@@ -59,7 +62,8 @@ Poniżej przedstawiono przykłady definicji układów technicznych plików impor
 
  
 
-## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Konfigurowanie importowanie wyciągów bankowych w formacie ISO20022
+## Konfigurowanie importowanie wyciągów bankowych w formacie ISO20022
+<a id="set-up-the-import-of-iso20022-bank-statements" class="xliff"></a>
 Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych ISO20022, używając do tego struktury jednostek danych.
 
 1.  Kliknij kolejno opcje **Obszary robocze** &gt; **Zarządzanie danymi**.
@@ -71,7 +75,7 @@ Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych 
 7.  Po przekazaniu jednostki Wyciągi bankowe i utworzeniu mapowania kliknij operację **Wyświetl mapę** dla tej jednostki.
 8.  Jednostka Wyciągi bankowe jest jednostką złożoną, który składa się z czterech odrębnych jednostek. Na liście zaznacz pozycję **BankStatementDocumentEntity** i kliknij operację **Wyświetl mapę**.
 9.  Na karcie **Przekształcenia** kliknij przycisk **Nowy**.
-10. Dla numeru kolejnego 1 kliknij przycisk **Przekaż plik** i wybierz plik **ISO20022XML-to-Reconciliation.xslt**, który został wcześniej zapisany. **Uwaga:** Pliki przekształceń w programie Dynamics 365 for Operations są skonstruowane dla standardowego formatu. Ponieważ banki często odbiegają od tego formatu, może być konieczne zaktualizowanie pliku przekształcenia, aby był dokładnie zmapowany na formatu wyciągów bankowych używany przez firmę. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+10. Dla numeru kolejnego 1 kliknij przycisk **Przekaż plik** i wybierz plik **ISO20022XML-to-Reconciliation.xslt**, który został wcześniej zapisany. **Uwaga:** Pliki przekształceń w programie Finance and Operations są skonstruowane dla standardowego formatu. Ponieważ banki często odbiegają od tego formatu, może być konieczne zaktualizowanie pliku przekształcenia, aby był dokładnie zmapowany na formatu wyciągów bankowych używany przez firmę. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
 11. Kliknij przycisk **Nowy**.
 12. Dla numeru kolejnego 2 kliknij przycisk **Przekaż plik** i wybierz plik **BankReconciliation-to-Composite.xslt**, który został wcześniej zapisany.
 13. Kliknij przycisk **Zastosuj przekształcenia**.
@@ -92,7 +96,8 @@ Ostatnim krokiem jest włączenie funkcji Zaawansowane uzgadnianie konta bankowe
 3.  Na karcie **Uzgodnienie** w opcji **Zaawansowane uzgadnianie konta bankowego** zaznacz wartość **Tak**.
 4.  W polu **Format wyciągu** ustaw format, który został utworzony wcześniej, np. **ISO20022**.
 
-## <a name="set-up-the-import-of-mt940-bank-statements"></a>Konfigurowanie importowanie wyciągów bankowych w formacie MT940
+## Konfigurowanie importowanie wyciągów bankowych w formacie MT940
+<a id="set-up-the-import-of-mt940-bank-statements" class="xliff"></a>
 Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych MT940, używając do tego struktury jednostek danych.
 
 1.  Kliknij kolejno opcje **Obszary robocze** &gt; **Zarządzanie danymi**.
@@ -106,7 +111,7 @@ Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych 
 9.  Na karcie **Przekształcenia** kliknij przycisk **Nowy**.
 10. Dla numeru kolejnego 1 kliknij przycisk **Przekaż plik** i wybierz plik **MT940TXT-to-MT940XML.xslt**, który został wcześniej zapisany.
 11. Kliknij przycisk **Nowy**.
-12. Dla numeru kolejnego 2 kliknij przycisk **Przekaż plik** i wybierz plik **MT940XML-to-Reconciliation.xslt**, który został wcześniej zapisany. **Uwaga:** Pliki przekształceń w programie Dynamics 365 for Operations są skonstruowane dla standardowego formatu. Ponieważ banki często odbiegają od tego formatu, może być konieczne zaktualizowanie pliku przekształcenia, aby był dokładnie zmapowany na formatu wyciągów bankowych używany przez firmę. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+12. Dla numeru kolejnego 2 kliknij przycisk **Przekaż plik** i wybierz plik **MT940XML-to-Reconciliation.xslt**, który został wcześniej zapisany. **Uwaga:** Pliki przekształceń w programie Finance and Operations są skonstruowane dla standardowego formatu. Ponieważ banki często odbiegają od tego formatu, może być konieczne zaktualizowanie pliku przekształcenia, aby był dokładnie zmapowany na formatu wyciągów bankowych używany przez firmę. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
 13. Kliknij przycisk **Nowy**.
 14. Dla numeru kolejnego 3 kliknij przycisk **Przekaż plik** i wybierz plik **BankReconciliation-to-Composite.xslt**, który został wcześniej zapisany.
 15. Kliknij przycisk **Zastosuj przekształcenia**.
@@ -128,7 +133,8 @@ Ostatnim krokiem jest włączenie funkcji Zaawansowane uzgadnianie konta bankowe
 4.  Kiedy zostanie wyświetlony monit o potwierdzenie wyboru i włączenie funkcji Zaawansowane uzgadnianie konta bankowego, kliknij przycisk **OK**.
 5.  W polu **Format wyciągu** ustaw format, który został utworzony wcześniej, np. **MT940**.
 
-## <a name="set-up-the-import-of-bai2-bank-statements"></a>Konfigurowanie importowanie wyciągów bankowych w formacie BAI2
+## Konfigurowanie importowanie wyciągów bankowych w formacie BAI2
+<a id="set-up-the-import-of-bai2-bank-statements" class="xliff"></a>
 Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych BAI2, używając do tego struktury jednostek danych.
 
 1.  Kliknij kolejno opcje **Obszary robocze** &gt; **Zarządzanie danymi**.
@@ -142,7 +148,7 @@ Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych 
 9.  Na karcie **Przekształcenia** kliknij przycisk **Nowy**.
 10. Dla numeru kolejnego 1 kliknij przycisk **Przekaż plik** i wybierz plik **BAI2CSV-to-BAI2XML.xslt**, który został wcześniej zapisany.
 11. Kliknij przycisk **Nowy**.
-12. Dla numeru kolejnego 2 kliknij przycisk **Przekaż plik** i wybierz plik **BAI2XML-to-Reconciliation.xslt**, który został wcześniej zapisany. **Uwaga:** Pliki przekształceń w programie Dynamics 365 for Operations są skonstruowane dla standardowego formatu. Ponieważ banki często odbiegają od tego formatu, może być konieczne zaktualizowanie pliku przekształcenia, aby był dokładnie zmapowany na formatu wyciągów bankowych używany przez firmę. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+12. Dla numeru kolejnego 2 kliknij przycisk **Przekaż plik** i wybierz plik **BAI2XML-to-Reconciliation.xslt**, który został wcześniej zapisany. **Uwaga:** Pliki przekształceń w programie Finance and Operations są skonstruowane dla standardowego formatu. Ponieważ banki często odbiegają od tego formatu, może być konieczne zaktualizowanie pliku przekształcenia, aby był dokładnie zmapowany na formatu wyciągów bankowych używany przez firmę. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
 13. Kliknij przycisk **Nowy**.
 14. Dla numeru kolejnego 3 kliknij przycisk **Przekaż plik** i wybierz plik **BankReconciliation-to-Composite.xslt**, który został wcześniej zapisany.
 15. Kliknij przycisk **Zastosuj przekształcenia**.
@@ -164,7 +170,8 @@ Ostatnim krokiem jest włączenie funkcji Zaawansowane uzgadnianie konta bankowe
 4.  Kiedy zostanie wyświetlony monit o potwierdzenie wyboru i włączenie funkcji Zaawansowane uzgadnianie konta bankowego, kliknij przycisk **OK**.
 5.  W polu **Format wyciągu** ustaw format, który został utworzony wcześniej, np. **BAI2**.
 
-## <a name="test-the-bank-statement-import"></a>Test działania importu wyciągu z konta
+## Test działania importu wyciągu z konta
+<a id="test-the-bank-statement-import" class="xliff"></a>
 Ostatnim krokiem jest sprawdzenie, czy faktycznie jest możliwe zaimportowanie wyciągu bankowego.
 
 1.  Wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Konta bankowe**.

@@ -1,9 +1,9 @@
 ---
 title: "Produkcja oszczędna — omówienie"
-description: "Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w systemie Microsoft Dynamics AX."
+description: "Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w programie Dynamics 365 for Finance and Operations."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
@@ -20,38 +20,41 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dd29e601cb78b6903e09e63182196427183f6dbe
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 376b521a7527b4f60bc01c080f8eabb5cb231b30
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="lean-manufacturing-overview"></a>Produkcja oszczędna — omówienie
+# Omówienie wytwarzania typu lean manufacturing
+<a id="lean-manufacturing-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w systemie Microsoft Dynamics AX.
+Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.
 
 Lean manufacturing oferuje narzędzia służące do modelowania produkcji oszczędnej. Te narzędzia obsługują i promują stosowanie następujących pojęć i działań:
 -   Tworzenie podstaw produkcji oszczędnej (lean manufacturing) przez modelowania procesów produkcji i logistyki jako przepływów produkcji.
 -   Implementacja systemu ściągania lean poprzez sygnalizowanie wymagań popytu za pomocą kart Kanban.
 -   Monitorowanie i obsługa zadań w systemie Kanban.
 
-Architektura produkcji oszczędnej (lean manufacturing) w systemie Microsoft Dynamics AX 7 składa się z przepływów produkcji, działań i reguł systemu Kanban. Te struktury są pełni zintegrowane z procesami systemu Microsoft Dynamics AX 7. W środowisku produkcji oszczędnej (lean manufacturing) trybu mieszanego pozwala to łączyć ze sobą różne strategie dostaw, produkcji i pozyskiwania materiałów. Te strategie obejmują zamówienia produkcyjne, zamówienia partii w przemyśle procesowym, zamówienia zakupu i zamówienia przeniesienia.
+Architektura produkcji oszczędnej (lean manufacturing) w programie Finance and Operations składa się z przepływów produkcji, działań i reguł systemu Kanban. Te struktury są pełni zintegrowane z procesami programu Finance and Operations. W środowisku produkcji oszczędnej (lean manufacturing) trybu mieszanego pozwala to łączyć ze sobą różne strategie dostaw, produkcji i pozyskiwania materiałów. Te strategie obejmują zamówienia produkcyjne, zamówienia partii w przemyśle procesowym, zamówienia zakupu i zamówienia przeniesienia.
 | **Ważne**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Program Microsoft Dynamics AX 7 służy do obsługi implementacji produkcji oszczędnej (lean manufacturing) z kartami Kanban. Powodzenie wprowadzania w życie zasad produkcji oszczędnej (lean manufacturing) zależy jednak od wewnętrznych procesów biznesowych, jakich używasz, oraz rzeczywistych warunki produkcji i środowiska. |
+| Program Finance and Operations umożliwia implementację produkcji oszczędnej (lean manufacturing) z kartami Kanban. Powodzenie wprowadzania w życie zasad produkcji oszczędnej (lean manufacturing) zależy jednak od wewnętrznych procesów biznesowych, jakich używasz, oraz rzeczywistych warunki produkcji i środowiska. |
 
-## <a name="modeling-manufacturing-and-logistics-processes-as-production-flows"></a> Modelowanie procesów produkcji i logistyki jako przepływów produkcji
+##  Modelowanie procesów produkcji i logistyki jako przepływów produkcji
+<a id="modeling-manufacturing-and-logistics-processes-as-production-flows" class="xliff"></a>
 Aby stworzyć podstawy produkcji oszczędnej (lean manufacturing), trzeba opracować model procesów produkcji i logistyki jako przepływów produkcji. To obejmuje następujące zadania:
 1.  Zidentyfikuj procesy, dla których chcesz wdrożyć strategię oszczędnego uzupełnienie zapasów, a następnie stwórz model tych procesów jako przepływów produkcji. Następnie możesz przeanalizować i usprawnić te procesy. Jednym z celów implementacji schematu lean jest ograniczenie odpadów poprzez poprawę przepływu informacji i materiałów.
 2.  Zdefiniuj przepływ produkcji jako sekwencję czynności opisującą przepływ materiałów. Działanie przeniesienia określa przesunięcie produktu lub produktów z jednej lokalizacji do innej. Działanie procesu definiuje operację wartości dodanej, która jest stosowana do produktu.
 3.  Utwórz wersję przepływu produkcji, która określa wymagania dotyczące czasu taktu przepływu produkcji. Wymagania te są używane do obliczania czasów cyklu każdego działania w procesie produkcji. Można utworzyć wiele wersji przepływów produkcji i następnie użyć tych wersji do poprawy tych procesów.
 
-## <a name="using-kanbans-to-signal-demand-requirements"></a> Sygnalizowanie wymagań popytu za pomocą kart Kanban
+##  Sygnalizowanie wymagań popytu za pomocą kart Kanban
+<a id="using-kanbans-to-signal-demand-requirements" class="xliff"></a>
 System ściągania wytwarza towary tylko wtedy, gdy są one potrzebne. Praktyka ta zmniejsza czasy realizacji dostawy i magazynowych nadwyżki. Można użyć kart Kanban do planowania, śledzenia i przetwarzania wymagań, które są oparte na przepływach produkcji. Aby utworzyć strukturę kanban, utwórz reguły kanban określające, kiedy są tworzone karty Kanban i jak wypełniane są wymagania. Możesz utworzyć dwa typy reguł Kanban. Reguły produkcji tworzą zadania przetwarzania w systemie Kanban, a reguły wycofania w systemie Kanban tworzą zadania przeniesienia w systemie Kanban. Można skonfigurować następujące strategie uzupełniania:
 -   Reguły Kanban typu **Stała ilość** są powiązane ze stałą liczbą jednostek obsługi, co oznacza, że liczba aktywnych kart Kanban jest stała. Zawsze gdy wszystkie produkty z karty Kanban są zużywane i jednostki załadunkowe są ręcznie opróżniane, tworzona jest nowa karta Kanban tego samego typu. Podczas tworzenia reguł Kanban ze stałą ilością można obliczyć optymalną liczbę używanych kart Kanban i ilości produktu. Obliczenia uwzględniają prognozę, rzeczywisty popyt z otwartych zamówień, czas realizacji uzupełnienia towarów i historyczne zapotrzebowania.
 -   Reguły Kanban typu **Zaplanowane** służą do uzupełniania zapotrzebowań obliczanych podczas planowania głównego. Planowanie główne generuje zaplanowane reguły Kanban, które mogą zostać ustalone na kartach Kanban.
@@ -59,7 +62,8 @@ System ściągania wytwarza towary tylko wtedy, gdy są one potrzebne. Praktyka 
 
 Po utworzeniu kart kanban, generowane jest jedno lub wiele zadań w systemie, zgodnie z działaniami przepływu kanban, które są zdefiniowane w regułach kanban.
 
-## <a name="monitoring-and-maintaining-kanban-jobs"></a> Monitorowanie i obsługa zadań w systemie Kanban
+##  Monitorowanie i obsługa zadań w systemie Kanban
+<a id="monitoring-and-maintaining-kanban-jobs" class="xliff"></a>
 Produkcja oszczędna (lean manufacturing) zapewnia widoczność bieżącego stanu działań produkcji i logistyki, które są objęte regułami kanban. Dzięki temu można planować i określać priorytety następujących zadań:
 
 -   Przegląd bieżącego harmonogramu zadań Kanban.
@@ -71,8 +75,9 @@ Poniższa lista opisuje specjalne tablice Kanban:
 -   Tablica Kanban dla zadań przeniesienia — oferuje przegląd bieżących zadań przeniesienia. Można zaktualizować i rejestrować listy pobrania, rozpoczynać i kończyć zadania przeniesienia i wykonywać inne zadania.
 -   Tablica Kanban dla zadań procesu — służy do obsługi normalnego przepływu produkcji i wyświetla przegląd bieżącej sytuacji w jednej lub wielu komórkach roboczych. Z tej tablicy zadania Kanban mogą otrzymywać priorytet, można je odbierać lub przekazywać do produkcji. Ta tablica obsługuje też skanowanie kodu kreskowego pod kątem raportowania Kanban.
 
-## <a name="kanban-jobs-and-integration-with-microsoft-dynamics-ax-processes"></a> Zadania Kanban i integracja z procesami Microsoft Dynamics AX
-Zadania Kanban są w pełni zintegrowane z aktualnymi procesami dla transakcji magazynowych w systemie Microsoft Dynamics AX.
+## Zadania Kanban i integracja z procesami programu Finance and Operations
+<a id="kanban-jobs-and-integration-with-finance-and-operations-processes" class="xliff"></a>
+Zadania Kanban są w pełni zintegrowane z aktualnymi procesami dla transakcji magazynowych w programie Finance and Operations.
 -   Można wykonywać działania pobrania w celu uzupełnienia materiałów używanych do wypełniania zapotrzebowania w zadaniach Kanban.
 -   Można drukować karty Kanban i listy pobrania pod kątem obsługi zadań kanban. Dokumenty te są używane do reprezentowania, monitorowania i rejestrowania zadań w systemie kanban w magazynie i dla produkcji.
 -   Można rejestrować działania pobrania i przenoszenia w magazynie, skanując kody kreskowe.

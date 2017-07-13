@@ -1,41 +1,44 @@
 ---
 title: "Konfigurowanie układów ekranu dla aplikacji punktu sprzedaży"
-description: "Ten temat zawiera informacje dotyczące układów ekranu dla aplikacji Microsoft Dynamics 365 for Operations — Retail Point of Sale (POS)."
+description: "Ten temat zawiera informacje dotyczące układów ekranu dla aplikacji Microsoft Dynamics 365 for Retail Point of Sale (POS)."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application user
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7dee20166ea89b56523e3ef38e66de53d6e4a621
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 9f7f46c1bae5bac6eefa0b8c70b079cab76aa8b6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="configure-screen-layouts-for-pos"></a>Konfigurowanie układów ekranu dla aplikacji punktu sprzedaży
+# Konfigurowanie układów ekranu dla punktu sprzedaży
+<a id="configure-screen-layouts-for-pos" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Ten temat zawiera informacje dotyczące układów ekranu dla aplikacji Microsoft Dynamics 365 for Operations — Retail Point of Sale (POS).
+Ten temat zawiera informacje dotyczące układów ekranu dla aplikacji Microsoft Dynamics 365 for Retail Point of Sale (POS).
 
-Interfejs użytkownika programu Microsoft Dynamics 365 for Operations — Retail Point of Sale (POS) można konfigurować przy użyciu kombinacji profili graficznych i układów ekranu, które się przypisuje do sklepów, kas i/lub użytkowników.
+Interfejs użytkownika programu Microsoft Dynamics 365 for Retail Point of Sale (POS) można konfigurować przy użyciu kombinacji profili graficznych i układów ekranu, które się przypisuje do sklepów, kas i/lub użytkowników.
 
-## <a name="visual-profile"></a>Profil graficzny
+## Profil graficzny
+<a id="visual-profile" class="xliff"></a>
 Profile graficzne są przypisywane do kas i używane do określania elementów wizualnych, które są specyficzne dla kas i wspólne dla użytkowników. Każdy użytkownik, który się loguje do kasy, będzie widział ten sam motyw, kolory i obrazy. 
 
 **Numer profilu** — Numer profilu jest unikatowym identyfikatorem profilu graficznego. 
@@ -46,13 +49,14 @@ Profile graficzne są przypisywane do kas i używane do określania elementów w
 
 **Kolor akcentu** — Kolor akcentu jest używany w całej aplikacji POS do odróżniania lub wyróżniania pewnych elementów wizualnych, takich jak kafelki, przyciski poleceń i hiperłącza. Zazwyczaj te elementy wykonują różne akcje.
 
-**Kolor nagłówka** — Kolor nagłówka pozwala użytkownikowi skonfigurować kolor nagłówka strony zgodnie z identyfikacją wizualną sprzedawcy detalicznego. Ta funkcja jest dostępna tylko w programie Dynamics 365 for Operations w wersji 1611.
+**Kolor nagłówka** — Kolor nagłówka pozwala użytkownikowi skonfigurować kolor nagłówka strony zgodnie z identyfikacją wizualną sprzedawcy detalicznego. Ta funkcja jest dostępna tylko w programie Dynamics 365 for Retail w wersji 1611.
 
 **Tło logowania** — Użytkownicy mogą określić obraz tła dla ekranu logowania. Rozmiary plików obrazów tła powinny być jak najmniejsze, ponieważ przechowywanie i ładowanie dużych plików może mieć negatywny wpływ na szybkość działania i zachowanie aplikacji.
 
 **Tło aplikacji** — Aplikacja POS można również jako tła w swoich wszystkich oknach używać obrazu zamiast jednolitego koloru motywu. Podobnie jak w przypadku teł logowania, zaleca się stosować jak najmniejsze rozmiary plików.
 
-## <a name="screen-layouts"></a>Układy ekranu
+## Układy ekranu
+<a id="screen-layouts" class="xliff"></a>
 Konfiguracja układu ekranu decyduje o akcjach, zawartości i położeniu formantów interfejsu użytkownika na ekranie powitalnym i ekranie transakcji w aplikacji punktu sprzedaży. 
 
 **Ekran powitalny** — W większości przypadków ekran powitalny to strona, którą użytkownicy widzą podczas pierwszego logowania do aplikacji punktu sprzedaży. Ekran powitalny może zawierać obraz identyfikacyjny marki oraz siatki przycisków umożliwiające dostęp do operacji w punkcie sprzedaży. Zwykle w tym miejscu umieszcza się operacje, które nie są specyficzne dla bieżącej transakcji. 
@@ -61,27 +65,30 @@ Konfiguracja układu ekranu decyduje o akcjach, zawartości i położeniu forman
 
 **Domyślny ekran startowy** — Niektórzy sprzedawcy detaliczni wolą, aby kasjer po zalogowaniu przechodził bezpośrednio do ekranu transakcji. Ustawienie domyślnego ekranu startowego pozwala użytkownikom ustawić takie zachowanie dla każdego układu ekranu.
 
-### <a name="assignment"></a>Przypisanie
+### Przypisanie
+<a id="assignment" class="xliff"></a>
 
 Układy ekranów można przypisywać na poziomie sklepu, kasy lub użytkownika. Przypisanie użytkownikowi zastępuje przypisanie do kasy i sklepu, a przypisanie na poziomie kasy ma priorytet nad przypisaniem do sklepu. W prostym scenariuszu, gdzie wszyscy użytkownicy korzystają z tego samego układu niezależnie od kasy ani roli, układ ekranu można ustawić tylko na poziomie sklepu. W przypadkach, gdy niektóre kasy lub użytkownicy wymagają specjalnych układów, można je przypisywać indywidualnie.
 
-### <a name="layout-sizes"></a>Rozmiary układów
+### Rozmiary układów
+<a id="layout-sizes" class="xliff"></a>
 
-Ta funkcja ma zastosowanie tylko do programu Dynamics 365 for Operations w wersji 1611. Ponieważ w wielu przypadkach układy ekranu mogą być używane w wielu rozmiarach i rozdzielczościach ekranu, użytkownicy mogą konfigurować układ i zawartość dla każdego ekranu. Aplikacji punktu sprzedaży będzie automatycznie wybierać najbliższy rozmiar układu dla urządzenia w momencie uruchamiania. Układ ekranu może również zawierać konfiguracje dla urządzeń pełnoekranowych i kompaktowych. Ta konfiguracja pozwala przypisać użytkownika do jednego układu ekranu, który będzie działał w urządzeniach o różnych rozmiarach i typach znajdujących się w sklepie. 
+Ta funkcja ma zastosowanie tylko do programu Dynamics 365 for Retail w wersji 1611. Ponieważ w wielu przypadkach układy ekranu mogą być używane w wielu rozmiarach i rozdzielczościach ekranu, użytkownicy mogą konfigurować układ i zawartość dla każdego ekranu. Aplikacji punktu sprzedaży będzie automatycznie wybierać najbliższy rozmiar układu dla urządzenia w momencie uruchamiania. Układ ekranu może również zawierać konfiguracje dla urządzeń pełnoekranowych i kompaktowych. Ta konfiguracja pozwala przypisać użytkownika do jednego układu ekranu, który będzie działał w urządzeniach o różnych rozmiarach i typach znajdujących się w sklepie. 
 
 **Modern POS - Pełna wersja** — Pełne układy zazwyczaj najlepiej nadają się do większych ekranów, takich jak w monitorach komputerowych i tabletach. Użytkownicy mogą wybierać elementy interfejsu użytkownika, które mają się znaleźć w układach, określać ich rozmiar i położenie oraz konfigurować ich szczegółowe właściwości. Układy pełne obsługują konfiguracje poziome i pionowe. 
 
 **Modern POS - Wersja kompaktowa** — Układy kompaktowe zazwyczaj najlepiej nadają się do telefonów lub małych tabletów. Możliwości projektowania są ograniczone do urządzeń kompaktowych. Użytkownicy mogą konfigurować kolumny i pola okienek pokwitowania i sum.
 
-### <a name="screen-layout-designer"></a>Projektant układu ekranu
+### Projektant układu ekranu
+<a id="screen-layout-designer" class="xliff"></a>
 
 Każdy rozmiar układu w układzie ekranu musi być skonfigurowany przy użyciu projektanta układu ekranu. Projektant umożliwia użytkownikom określanie i konfigurowanie elementów interfejsu użytkownika ekranu transakcji. Projektant układu ekranu używa funkcji ClickOnce, aby pobrać, zainstalować i uruchomić najnowszą wersję aplikacji za każdym razem, gdy użytkownik uzyskuje do niej dostęp. Koniecznie sprawdź wymagania funkcji ClickOnce dotyczące przeglądarek — niektóre przeglądarki, taka jak Chrome, wymagają rozszerzeń. 
 
-**Klawiatura numeryczna** — Klawiatura numeryczna jest głównym narzędziem wprowadzania danych przez użytkownika na ekranie transakcji w aplikacji punktu sprzedaży. Można ją skonfigurować tak, aby była pokazywana cała klawiatura ekranowa, co jest idealnym rozwiązaniem dla ekranów dotykowych, lub tylko pole wprowadzania danych, którego można używać w połączeniu z klawiaturą fizyczną. Ustawienia klawiatury numeryczne są dostępne tylko w pełnym układzie. W programie Dynamics 365 for Operations w wersji 1611 układy kompaktowe zawsze mają dostępną pełną klawiaturę numeryczną na ekranie transakcji.
+**Klawiatura numeryczna** — Klawiatura numeryczna jest głównym narzędziem wprowadzania danych przez użytkownika na ekranie transakcji w aplikacji punktu sprzedaży. Można ją skonfigurować tak, aby była pokazywana cała klawiatura ekranowa, co jest idealnym rozwiązaniem dla ekranów dotykowych, lub tylko pole wprowadzania danych, którego można używać w połączeniu z klawiaturą fizyczną. Ustawienia klawiatury numeryczne są dostępne tylko w pełnym układzie. W programie Dynamics 365 for Retail w wersji 1611 układy kompaktowe zawsze mają dostępną pełną klawiaturę numeryczną na ekranie transakcji.
 
-**Panel sum** — Panel sum można skonfigurować na jedną lub dwie kolumny pokazujące pola takie jak liczba wierszy, kwota rabatu, opłaty, suma częściowa i podatek. W programie Dynamics 365 for Operations w wersji 1611 układy kompaktowe obsługują tylko pojedyncze kolumny sum. 
+**Panel sum** — Panel sum można skonfigurować na jedną lub dwie kolumny pokazujące pola takie jak liczba wierszy, kwota rabatu, opłaty, suma częściowa i podatek. W programie Dynamics 365 for Retail w wersji 1611 układy kompaktowe obsługują tylko pojedyncze kolumny sum. 
 
-**Pokwitowanie** — Panel pokwitowania zawiera wiersze sprzedaży, wiersze płatności oraz informacje o dostawie produktów i usług przetwarzanych w aplikacji punktu sprzedaży. Użytkownicy mogą określać kolumny, szerokości i położenie. W układach kompaktowych w programie Dynamics 365 for Operations w wersji 1611 można również skonfigurować dodatkowe informacje, które będą wyświetlane w wierszu poniżej głównego wiersza. 
+**Pokwitowanie** — Panel pokwitowania zawiera wiersze sprzedaży, wiersze płatności oraz informacje o dostawie produktów i usług przetwarzanych w aplikacji punktu sprzedaży. Użytkownicy mogą określać kolumny, szerokości i położenie. W układach kompaktowych w programie Dynamics 365 for Retail w wersji 1611 można również skonfigurować dodatkowe informacje, które będą wyświetlane w wierszu poniżej głównego wiersza. 
 
 **Karta odbiorcy** — Karta odbiorcy pokazuje informacje odnoszące się do odbiorcy aktualnie skojarzonego z transakcją. Kartę odbiorcy można skonfigurować tak, aby ukrywała lub pokazywała dodatkowe informacje. 
 
@@ -89,9 +96,10 @@ Każdy rozmiar układu w układzie ekranu musi być skonfigurowany przy użyciu 
 
 **Obraz** — Formant obrazu może służyć do wyświetlania logo sklepu lub innego obrazu identyfikacyjnego marki na ekranie transakcji. Formant obrazu jest dostępny tylko w pełnych układach. 
 
-**Rekomendowane produkty** — Jeśli formant rekomendowanych produktów zostanie skonfigurowany dla środowiska, będzie wyświetlał sugestie produktów przy użyciu mechanizmu uczenia maszynowego. Formant rekomendowanych produktów jest dostępny tylko w pełnych układach w programie Dynamics 365 for Operations w wersji 1611. **Formant niestandardowy**— Formant niestandardowy pełni rolę symbolu zastępczego w układzie ekranu, pozwalając użytkownikom rezerwować miejsce na niestandardową zawartość. Formant niestandardowy jest dostępny tylko w pełnych układach.
+**Rekomendowane produkty** — Jeśli formant rekomendowanych produktów zostanie skonfigurowany dla środowiska, będzie wyświetlał sugestie produktów przy użyciu mechanizmu uczenia maszynowego. Formant rekomendowanych produktów jest dostępny tylko w pełnych układach w programie Dynamics 365 for Retail w wersji 1611. **Formant niestandardowy**— Formant niestandardowy pełni rolę symbolu zastępczego w układzie ekranu, pozwalając użytkownikom rezerwować miejsce na niestandardową zawartość. Formant niestandardowy jest dostępny tylko w pełnych układach.
 
-<a name="see-also"></a>Informacje dodatkowe
+Informacje dodatkowe
+<a id="see-also" class="xliff"></a>
 --------
 
 [Instalowanie projektanta układu programu Retail POS](install-pos-layout-designer.md)

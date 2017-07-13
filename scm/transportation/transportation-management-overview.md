@@ -1,15 +1,15 @@
 ---
 title: "Zarządzanie transportem — omówienie"
-description: "W tym temacie omówiono funkcjonalność zarządzania transportem dostępną w programie Microsoft Dynamics 365 for Operations."
+description: "W tym temacie omówiono funkcjonalność zarządzania transportem dostępną w programie Microsoft Dynamics 365 for Finance and Operations."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30251
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
@@ -17,22 +17,23 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 796bf42f103bd6d14e872138d07e4a911ddcab1a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2fbea4f5e86a6bef98be5df3a2b69aac36e371e5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="transportation-management-overview"></a>Zarządzanie transportem — omówienie
+# Zarządzanie transportem — omówienie
+<a id="transportation-management-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym temacie omówiono funkcjonalność zarządzania transportem dostępną w programie Microsoft Dynamics 365 for Operations.
+W tym temacie omówiono funkcjonalność zarządzania transportem dostępną w programie Microsoft Dynamics 365 for Finance and Operations.
 
-Moduł Zarządzanie transportem pozwala zarządzać transportem w firmie oraz identyfikować dostawców i rozwiązania wyboru trasy dla zamówień przychodzących i wychodzących. Można na przykład określić najszybszą trasę lub najtańszą stawkę za wysyłkę. W poniższej tabeli opisano główne scenariusze używania zarządzania transportem w programie Microsoft Dynamics 365 for Operations.
+Moduł Zarządzanie transportem pozwala zarządzać transportem w firmie oraz identyfikować dostawców i rozwiązania wyboru trasy dla zamówień przychodzących i wychodzących. Można na przykład określić najszybszą trasę lub najtańszą stawkę za wysyłkę. W poniższej tabeli opisano główne scenariusze używania zarządzania transportem w programie Microsoft Dynamics 365 for Finance and Operations.
 
 <table>
 <colgroup>
@@ -68,23 +69,27 @@ Moduł Zarządzanie transportem pozwala zarządzać transportem w firmie oraz id
 </tbody>
 </table>
 
-## <a name="planning-transportation-in-dynamics-365-for-operations"></a>Planowanie transportu w programie Dynamics 365 for Operations
+## Planowanie transportu w programie Finance and Operations
+<a id="planning-transportation-in-finance-and-operations" class="xliff"></a>
 W module Zarządzanie transportem planowania transportu może być oparte na zamówieniach lub na wysyłkach tworzonych w oparciu o te zamówienia. Wysyłki zawsze się pojawiają w pewnym momencie, ale nie są wymagane do planowania transportu. Zamówienia przeniesienia są częścią scenariusza transportu wychodzącego i mogą być planowane razem z zamówieniami sprzedaży. 
 
 ![Rysunek ładunku](./media/Load-drawing1-1024x477.jpg)
 
-## <a name="inbound-transportation"></a>Transport przychodzący
-Gdy zamawiasz towary od dostawcy i muszą one zostać dostarczone do Twojego magazynu, można samodzielnie zorganizować transport. Program Dynamics 365 for Operations umożliwia zaplanowanie transportu i przyjęcia przychodzącego ładunku. Poniższy rysunek przedstawia przepływ procesu biznesowego dla planowania transportu towarów przychodzących. 
+## Transport przychodzący
+<a id="inbound-transportation" class="xliff"></a>
+Gdy zamawiasz towary od dostawcy i muszą one zostać dostarczone do Twojego magazynu, można samodzielnie zorganizować transport. Program Finance and Operations umożliwia zaplanowanie transportu i przyjęcia przychodzącego ładunku. Poniższy rysunek przedstawia przepływ procesu biznesowego dla planowania transportu towarów przychodzących. 
 
 ![Przebieg procesu biznesowego przychodzącego transportu ładunku](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
-## <a name="outbound-transportation"></a>Transport wychodzący
-Można planować i przetwarzać ładunki wychodzące w celu wysłania określonych towarów z magazynu firmy do odbiorcy. Program Dynamics 365 for Operations może służyć do planowania transportu i wysyłania ładunków wychodzących. Poniższy rysunek przedstawia przepływ procesu biznesowego planowania i przetwarzania obciążenia wychodzącego dla ładunku. 
+## Transport wychodzący
+<a id="outbound-transportation" class="xliff"></a>
+Można planować i przetwarzać ładunki wychodzące w celu wysłania określonych towarów z magazynu firmy do odbiorcy. Program Finance and Operations umożliwia zaplanowanie transportu i wysyłania ładunków wychodzących. Poniższy rysunek przedstawia przepływ procesu biznesowego planowania i przetwarzania obciążenia wychodzącego dla ładunku. 
 
 ![Planowanie i przetwarzania ładunków wychodzących](./media/Planningandprocessingoutboundloads.jpg)
 
-## <a name="load-building"></a>Kompilowanie ładunku
-Program Dynamics 365 for Operations zawiera strategię kompilowania ładunku o nazwie Strategia kompilowania ładunku na podstawie objętości. Pozwala ona stosować maksymalne wartości wysokości i wagi określone w szablonie ładunku albo zastępować te ustawienia wprowadzaniem nowych wartości. Aby użyć tej strategii, zaznacz ją w polu **Strategia kompilowania ładunku** na skróconej karcie **Ustawienia** na karcie **Pulpit kompilowania ładunku**. Ponadto można dodawać własne strategie kompilowania ładunku przez utworzenie nowej klasy w drzewie obiektów aplikacji (AOT).
+## Kompilowanie ładunku
+<a id="load-building" class="xliff"></a>
+Program Finance and Operations zawiera strategię kompilowania ładunku o nazwie Strategia kompilowania ładunku na podstawie objętości. Pozwala ona stosować maksymalne wartości wysokości i wagi określone w szablonie ładunku albo zastępować te ustawienia wprowadzaniem nowych wartości. Aby użyć tej strategii, zaznacz ją w polu **Strategia kompilowania ładunku** na skróconej karcie **Ustawienia** na karcie **Pulpit kompilowania ładunku**. Ponadto można dodawać własne strategie kompilowania ładunku przez utworzenie nowej klasy w drzewie obiektów aplikacji (AOT).
 
 
 

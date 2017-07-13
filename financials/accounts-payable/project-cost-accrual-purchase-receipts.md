@@ -1,15 +1,15 @@
 ---
 title: "Naliczanie kosztów projektu w przyjęciach zakupów"
-description: "W tym temacie opisano, jak koszty projektu naliczone z przyjęć zakupów można śledzić w programie Microsoft Dynamics 365 for Operations."
+description: "W tym temacie opisano, jak koszty projektu naliczone z przyjęć zakupów można śledzić w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 266984
 ms.assetid: 61e7d2a3-5aab-4113-bccc-213f932885d2
 ms.search.region: Global
@@ -17,20 +17,21 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: acb14deb9d77927ffc95500e4e97763ba3ad7826
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b46929d2991f3ec1b38d54ddc57de632aa9b01b9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="project-cost-accrual-on-purchase-receipts"></a>Naliczanie kosztów projektu w przyjęciach zakupów
+# Naliczanie kosztów projektu w przyjęciach zakupów
+<a id="project-cost-accrual-on-purchase-receipts" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym temacie opisano, jak koszty projektu naliczone z przyjęć zakupów można śledzić w programie Microsoft Dynamics 365 for Operations. 
+W tym temacie opisano, jak koszty projektu naliczone z przyjęć zakupów można śledzić w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. 
 
 Faktury za projekt często przychodzą później niż są dostarczane towary i usługi, co może mieć znaczący wpływ na kluczowe wskaźniki wydajności (KPI) projektu. Ważna jest możliwość śledzenia tych transakcji w sprawozdaniach finansowych i raportach z projektu.
 
@@ -38,7 +39,7 @@ Ilustruje to przykładowy scenariusz opisany poniżej.
 
 Firma Contoso Consulting rozpoczęła nowy projekt wdrożenia chmury. Utworzono zamówienie zakupu na zakup komputera do projektu. Komputer będzie kosztować 1500 USD, a usługi instalacyjne dodatkowe 150 USD. Dostawca dostarczył i zainstalował komputer, ale faktura jeszcze nie dotarła do Contoso Consulting. Kierownik projektu chciałby widzieć naliczenie kosztów projektu w kwocie 1650 USD, zanim faktura zostanie dostarczona. Ponadto koszt powinien znaleźć odzwierciedlenie w sprawozdaniu finansowym firmy na koniec miesiąca. 
 
-Dla celów sprawozdawczości naliczony koszt musi być zarejestrowany na poziomach finansowym i projektu. W programie Dynamics 365 for Operations finansową aktualizację przyjęcia produktu można śledzić w kategoriach towaru i zaopatrzenia. 
+Dla celów sprawozdawczości naliczony koszt musi być zarejestrowany na poziomach finansowym i projektu. W programie Finance and Operations finansową aktualizację przyjęcia produktu można śledzić w kategoriach towaru i zaopatrzenia. 
 
 W przypadku towarów na stronie **Parametry modułu rozrachunków z dostawcami** zaznacz opcję **Księguj przyjęcia produktów w księdze**.
 [![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
@@ -73,7 +74,7 @@ Na stronie **Kategoria zaopatrzenia** można zamapować kategorie zaopatrzenia n
 
 **Krok 3:** Utwórz wersję roboczą faktury od dostawcy. 
 
-W programie Dynamics 365 for Operations zaksięgowanie przyjęcia produktu nie wpływa na informacje o projekcie. Aby obejść to zachowanie, można wygenerować wersję roboczą faktury od dostawcy natychmiast po zaksięgowaniu przyjęcia zakupu. Przejdź do strony **Zamówienie zakupu** &gt; karta **Faktura** &gt; **Generuj** &gt; **fakturę**. Zostanie utworzony dokument oczekującej faktury, który aktualizuje dane projektu. 
+W programie Finance and Operations zaksięgowanie przyjęcia produktu nie wpływa na informacje o projekcie. Aby obejść to zachowanie, można wygenerować wersję roboczą faktury od dostawcy natychmiast po zaksięgowaniu przyjęcia zakupu. Przejdź do strony **Zamówienie zakupu** &gt; karta **Faktura** &gt; **Generuj** &gt; **fakturę**. Zostanie utworzony dokument oczekującej faktury, który aktualizuje dane projektu. 
 
 Utworzenie wersji roboczej faktury od dostawcy spowoduje generowanie oczekujących transakcji projektu. 
 [![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 

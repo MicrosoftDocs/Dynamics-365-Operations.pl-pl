@@ -3,7 +3,7 @@ title: Konfigurowanie rozliczenia
 description: "Sposoby i terminy rozliczania transakcji mogą być złożonymi zagadnieniami, dlatego trzeba dokładnie poznać i poprawnie zdefiniować parametry zgodnie z potrzebami firmy. W tym artykule opisano parametry używane do rozliczeń w modułach dla Rozrachunki z odbiorcami i Rozrachunki z dostawcami."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
@@ -19,22 +19,23 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d3015004371aa041a7ee545df9a4c7f0e48ca31
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 059513de66827aa3a839b9eb06973ec4c1549f73
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-settlement"></a>Konfigurowanie rozliczenia
+# Konfigurowanie rozliczenia
+<a id="configure-settlement" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Sposoby i terminy rozliczania transakcji mogą być złożonymi zagadnieniami, dlatego trzeba dokładnie poznać i poprawnie zdefiniować parametry zgodnie z potrzebami firmy. W tym artykule opisano parametry używane do rozliczeń w modułach dla Rozrachunki z odbiorcami i Rozrachunki z dostawcami. 
 
-Następujące parametry mają wpływ na sposób przetwarzania rozliczeń w programie Microsoft Dynamics 365 for Operations. Rozliczenie to proces rozliczania faktury względem płatności lub faktury korygującej. Parametry te znajdują się w obszarze **Rozliczenia** na stronach **Parametry modułu rozrachunków z odbiorcami** i **Parametry modułu rozrachunków z dostawcami**.
+Następujące parametry mają wpływ na sposób przetwarzania rozliczeń w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Rozliczenie to proces rozliczania faktury względem płatności lub faktury korygującej. Parametry te znajdują się w obszarze **Rozliczenia** na stronach **Parametry modułu rozrachunków z odbiorcami** i **Parametry modułu rozrachunków z dostawcami**.
 
 -   **Automatyczne rozliczanie** — ustaw tę opcję jako **Tak** , jeśli transakcja ma zostać rozliczona automatycznie dla innych otwartych transakcji podczas księgowania. Jeśli ta opcja jest ustawiona jako **Nie**, użytkownicy mogą ręcznie rozliczać transakcji podczas wprowadzania płatności lub później, przy użyciu strony **Rozlicz transakcje**.
 -   **Zarządzanie rabatami gotówkowymi** — Określ, jak [rabat gotówkowy jest obsługiwany, jeśli faktura jest nadpłacona](cash-discount-handling-overpayments.md). Dla nadpłaty można zmniejszyć rabat gotówkowy, potraktować ją jako różnicę lub potraktować ją jako akonto dla odbiorcy lub dostawcy.

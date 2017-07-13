@@ -1,6 +1,6 @@
 ---
 title: Przetwarzanie arkuszy finansowych
-description: "Ten artykuł opisuje funkcje programu Microsoft Dynamics 365 for Operations, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli."
+description: "Ten artykuł opisuje funkcje programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/25/2017
@@ -10,8 +10,8 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
@@ -19,20 +19,21 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 150ca540fca154947cca47e97e45ce865ab1f507
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 244eada4202106b65198e3d6e3d0dedaa5486632
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="general-journal-processing"></a>Przetwarzanie arkuszy finansowych
+# Przetwarzanie arkuszy finansowych
+<a id="general-journal-processing" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł opisuje funkcje programu Microsoft Dynamics 365 for Operations, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli.  
+Ten artykuł opisuje funkcje programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli.  
 
 Nazwy arkuszy
 
@@ -59,10 +60,12 @@ Na stronie **Arkusze okresowe** można skonfigurować dzienniki cykliczne automa
 
 Możesz skorzystać z szablonów załącznika w dowolnym momencie. Na stronie **Arkusz finansowy** działania **Zapisz** i **Wybierz szablon załącznika** są dostępne na stronie **Załącznik arkusza** w sekcji **Funkcje** dla wierszy załącznika.
 
-## <a name="related-setup"></a>Pokrewna konfiguracja
+## Pokrewna konfiguracja
+<a id="related-setup" class="xliff"></a>
 Następująca konfiguracja nie jest właściwa dla arkuszy finansowych, ale ułatwia prawidłowe wprowadzanie danych.
 
-### <a name="main-account"></a>Konto główne
+### Konto główne
+<a id="main-account" class="xliff"></a>
 
 Konfiguracja konta głównego oferuje wiele opcji przetwarzania arkusza finansowego:
 
@@ -78,7 +81,8 @@ Konfiguracja konta głównego oferuje wiele opcji przetwarzania arkusza finansow
     -   **Weryfikacja użytkownika** — ta opcja pozwala kontrolować, którzy użytkownicy mogą księgować na koncie głównym.
     -   **Weryfikacja typów księgowania** — ta opcja pozwala kontrolować, które typy księgowania są dopuszczalne na koncie głównym.
 
-### <a name="accounting-structures-and-advanced-rules-structures"></a>Struktury księgowania i struktury reguł zaawansowanych
+### Struktury księgowania i struktury reguł zaawansowanych
+<a id="accounting-structures-and-advanced-rules-structures" class="xliff"></a>
 
 Struktury księgowania i struktury zaawansowanych reguł są bardzo ważne do zagwarantowania, że dane, które są wymagane do raportowania finansowego i śledzenia wydajności, są rejestrowane przy przetwarzaniu arkusza finansowego i wszelkich dokumentów. Struktury księgowania i struktury reguły zaawansowanych pozwalają dostosować sposób wprowadzania danych. Można zezwolić na wprowadzanie danych tylko dla wymiarów finansowych, które są odpowiednie w poszczególnych sytuacjach, a można też wymuszać wymaganie, by rejestrowane były tylko dane wymagane i prawidłowe.
 

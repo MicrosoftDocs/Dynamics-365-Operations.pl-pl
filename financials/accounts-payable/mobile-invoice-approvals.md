@@ -1,15 +1,15 @@
 ---
-title: "Zatwierdzanie faktur na urządzeniach komórkowych"
-description: "Funkcje komórkowe w programie Microsoft Dynamics 365 for Operations pozwalają użytkownikom biznesowym projektować mobilne środowiska obsługi. W scenariuszach zaawansowanych platforma umożliwia również deweloperom rozszerzanie funkcjonalności zgodnie z potrzebami. Najbardziej skutecznym sposobem, aby poznać niektóre nowe koncepcje obsługi na telefonach komórkowych, jest przejście przez proces projektowania w kilku scenariuszach. Ten temat przedstawia praktyczne podejście do projektowania scenariuszy komórkowych na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych. Ten temat powinien ułatwić projektowanie w innych wariantach scenariuszy i może być również wykorzystywany w innych scenariuszach, niezwiązanych z fakturami od dostawców."
+title: "Zatwierdzanie faktur na urządzeniach przenośnych"
+description: "Ten temat przedstawia praktyczne podejście do projektowania scenariuszy komórkowych w programie Dynamics 365 for Finance and Operations na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
@@ -17,34 +17,37 @@ ms.author: sunilg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7c412562a5b224e682c4a555a56e713570a1e4ef
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 0ca4ebdca1fce3863a50abf19a071af1f1c425e0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="mobile-invoice-approvals"></a>Zatwierdzanie faktur na urządzeniach komórkowych
+# Zatwierdzanie faktur na urządzeniach przenośnych
+<a id="mobile-invoice-approvals" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Funkcje komórkowe w programie Microsoft Dynamics 365 for Operations pozwalają użytkownikom biznesowym projektować mobilne środowiska obsługi. W scenariuszach zaawansowanych platforma umożliwia również deweloperom rozszerzanie funkcjonalności zgodnie z potrzebami. Najbardziej skutecznym sposobem, aby poznać niektóre nowe koncepcje obsługi na telefonach komórkowych, jest przejście przez proces projektowania w kilku scenariuszach. Ten temat przedstawia praktyczne podejście do projektowania scenariuszy komórkowych na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych. Ten temat powinien ułatwić projektowanie w innych wariantach scenariuszy i może być również wykorzystywany w innych scenariuszach, niezwiązanych z fakturami od dostawców.
+Funkcje komórkowe w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition pozwalają użytkownikom biznesowym projektować mobilne środowiska obsługi. W scenariuszach zaawansowanych platforma umożliwia również deweloperom rozszerzanie funkcjonalności zgodnie z potrzebami. Najbardziej skutecznym sposobem, aby poznać niektóre nowe koncepcje obsługi na telefonach komórkowych, jest przejście przez proces projektowania w kilku scenariuszach. Ten temat przedstawia praktyczne podejście do projektowania scenariuszy komórkowych na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych. Ten temat powinien ułatwić projektowanie w innych wariantach scenariuszy i może być również wykorzystywany w innych scenariuszach, niezwiązanych z fakturami od dostawców.
 
-<a name="prerequisites"></a>Wymagania wstępne
+Wymagania wstępne
+<a id="prerequisites" class="xliff"></a>
 -------------
 
 | Wymaganie wstępne                                                                                            | opis                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Podręcznik wprowadzający do platformy komórkowej                                                                                |(/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform.md)                                                                                                  |
-| Dynamics 365 for Operations                                                                             | Środowisko, w którym zainstalowano program Microsoft Dynamics 365 for Operations w wersji 1611 oraz aktualizację nr 3 platformy Microsoft Dynamics 365 for Operations (z listopada 2016 r.)                   |
+| Podręcznik wprowadzający do platformy komórkowej                                                                                |[Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform)                                                                                                  |
+| Dynamics 365 for Finance and Operations                                                                             | Środowisko, w którym zainstalowano program Microsoft Dynamics 365 for Operations w wersji 1611 oraz aktualizację nr 3 platformy Microsoft Dynamics 365 for Operations (z listopada 2016 r.)                   |
 | Instalacja poprawki KB 3204341.                                                                              | Rejestrator zadań może błędnie nagrywać dwa polecenia Zamknij dla rozwijanych okien dialogowych. Poprawka jest dołączona do aktualizacji nr 3 platformy Dynamics 365 for Operations (aktualizacja z listopada 2016 r.). |
 | Instalacja poprawki KB 3207800.                                                                              | Ta poprawka umożliwia wyświetlanie załączników na klientach mobilnych. Poprawka jest dołączona do aktualizacji nr 3 platformy Dynamics 365 for Operations (aktualizacja z listopada 2016 r.).           |
 | Instalacja poprawki KB 3208224.                                                                              | Kod źródłowy aplikacji zatwierdzania faktur od dostawców na urządzeniach komórkowych. Poprawka jest dołączona w aplikacji Microsoft Dynamics AX w wersji 7.0.1 (z maja 2016 r.).                          |
-| Urządzenie z systemem Android, iOS lub Windows, na którym zainstalowano aplikację komórkową usługi Dynamics 365 for Operations | Wyszukaj aplikację w odpowiednim sklepie z aplikacjami.                                                                                                                     |
+| Urządzenie z systemem Android, iOS lub Windows, na którym zainstalowano aplikację komórkową usługi Finance and Operations | Wyszukaj aplikację w odpowiednim sklepie z aplikacjami.                                                                                                                     |
 
-## <a name="introduction"></a>Wprowadzenie
+## Wprowadzenie
+<a id="introduction" class="xliff"></a>
 Aby można było zatwierdzać faktury od dostawców na urządzeniach komórkowych, należy zainstalować trzy poprawki wymienione w sekcji „Wymagania wstępne”. Te poprawki nie udostępniają obszaru roboczego dla zatwierdzania faktur. Aby się dowiedzieć, czym jest obszar roboczy w kontekście pracy na urządzeniach komórkowych, przeczytaj podręcznik o platformie komórkowej wymieniony w sekcji „Wymagania wstępne”. Obszar roboczy zatwierdzania faktur musi być zaprojektowany. 
 
 Każda organizacja inaczej przygotowuje i definiuje proces biznesowy faktur od dostawców. Przed rozpoczęciem projektowania komórkowego środowiska obsługi zatwierdzenia faktur od dostawców należy rozważyć następujące aspekty procesu biznesowego. Chcemy, aby korzystać z tych punktów w najszerszym możliwym zakresie w celu zoptymalizowania środowiska użytkownika na urządzeniu.
@@ -65,7 +68,8 @@ Projekt komórkowego środowiska obsługi zatwierdzania faktur będzie się ró�
 
 Jako ogólną wskazówkę należy pamiętać, aby podczas pracy w projektancie środowiska komórkowego „publikować” zmiany w celu uniknięcia utraty aktualizacji.
 
-## <a name="designing-a-simple-invoice-approval-scenario-for-contoso"></a>Projektowanie prostego scenariusza zatwierdzania faktur dla firmy Contoso
+## Projektowanie prostego scenariusza zatwierdzania faktur dla firmy Contoso
+<a id="designing-a-simple-invoice-approval-scenario-for-contoso" class="xliff"></a>
 <table>
 <colgroup>
 <col width="50%" />
@@ -124,9 +128,10 @@ Jako ogólną wskazówkę należy pamiętać, aby podczas pracy w projektancie �
 </tbody>
 </table>
 
-### <a name="create-the-workspace"></a>Tworzenie obszaru roboczego
+### Tworzenie obszaru roboczego
+<a id="create-the-workspace" class="xliff"></a>
 
-1.  W przeglądarce otwórz usługę Dynamics 365 for Operations i się zaloguj.
+1.  W przeglądarce otwórz usługę Finance and Operations i się zaloguj.
 2.  Po zalogowaniu dołącz wyrażenie **&mode=mobile** do adresu URL, jak pokazano w przykładzie poniżej, i odśwież stronę: https://&lt;TwójadresURL&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
 3.  Kliknij przycisk **Ustawienia** (koło zębate) w prawym górnym rogu strony, a następnie kliknij opcję **Aplikacja mobilna**. Musi zostać wyświetlony projektant aplikacji komórkowych, tak jak się pojawia Rejestrator zadań.
 4.  Kliknij przycisk **Dodaj**, aby utworzyć nowy obszar roboczy. W tym przykładzie nazwij obszar roboczy **Moje zatwierdzenia**.
@@ -136,11 +141,12 @@ Jako ogólną wskazówkę należy pamiętać, aby podczas pracy w projektancie �
 8.  Kliknij przycisk **Gotowe**.
 9.  Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać zmiany.
 
-### <a name="vendor-invoices-assigned-to-me"></a>Faktury od dostawcy przypisane do mnie
+### Faktury od dostawcy przypisane do mnie
+<a id="vendor-invoices-assigned-to-me" class="xliff"></a>
 
-Pierwszą stroną środowiska mobilnego, jaką należy zaprojektować, jest lista faktur przypisanych użytkownikowi w celu weryfikacji. Aby zaprojektować tę stronę dla urządzeń przenośnych, użyj strony **VendMobileInvoiceAssignedToMeListPage** strony w programie Dynamics 365 for Operations. Przed wykonaniem tej procedury upewnij się, że co najmniej jedna faktura od dostawcy jest Ci przypisana do weryfikacji, a wiersz tej faktury ma dwie dystrybucje. Ta konfiguracja spełnia wymagania tego scenariusza.
+Pierwszą stroną środowiska mobilnego, jaką należy zaprojektować, jest lista faktur przypisanych użytkownikowi w celu weryfikacji. Aby zaprojektować tę stronę dla urządzeń przenośnych, użyj strony **VendMobileInvoiceAssignedToMeListPage** strony w programie Finance and Operations. Przed wykonaniem tej procedury upewnij się, że co najmniej jedna faktura od dostawcy jest Ci przypisana do weryfikacji, a wiersz tej faktury ma dwie dystrybucje. Ta konfiguracja spełnia wymagania tego scenariusza.
 
-1.  W adresie URL usługi Dynamics 365 for Operations zastąp nazwę elementu menu wyrażeniem **VendMobileInvoiceAssignedToMeListPage**, aby otwierać mobilną wersję strony listy **Oczekujące faktury od dostawcy — przypisane do mnie** w module **rozrachunków z dostawcami**. W zależności od liczby faktur, które zostały w systemie przypisane do Ciebie, na tej stronie będą wyświetlane te faktury. Aby znaleźć konkretną fakturę, możesz użyć filtru z lewej strony. Jednak w tym przykładzie nie potrzebujemy konkretnej faktury. Musisz mieć tylko przypisaną jakąś fakturę, co umożliwi Ci projektowanie strony mobilnej. Nowe strony, które są dostępne, zostały zaprojektowane specjalnie do tworzenia scenariuszy mobilnych dla faktur od dostawców. W związku z tym należy używać tych stron. Adres URL powinien przypominać poniższy adres URL, a po jego wprowadzeniu musi zostać wyświetlona strona przedstawiona na rysunku: https://&lt;TwójadresURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Strona Oczekujące faktury od dostawcy — przypisane do mnie](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  W adresie URL usługi Finance and Operations zastąp nazwę elementu menu wyrażeniem **VendMobileInvoiceAssignedToMeListPage**, aby otwierać mobilną wersję strony listy **Oczekujące faktury od dostawcy — przypisane do mnie** w module **rozrachunków z dostawcami**. W zależności od liczby faktur, które zostały w systemie przypisane do Ciebie, na tej stronie będą wyświetlane te faktury. Aby znaleźć konkretną fakturę, możesz użyć filtru z lewej strony. Jednak w tym przykładzie nie potrzebujemy konkretnej faktury. Musisz mieć tylko przypisaną jakąś fakturę, co umożliwi Ci projektowanie strony mobilnej. Nowe strony, które są dostępne, zostały zaprojektowane specjalnie do tworzenia scenariuszy mobilnych dla faktur od dostawców. W związku z tym należy używać tych stron. Adres URL powinien przypominać poniższy adres URL, a po jego wprowadzeniu musi zostać wyświetlona strona przedstawiona na rysunku: https://&lt;TwójadresURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Strona Oczekujące faktury od dostawcy — przypisane do mnie](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
 2.  Kliknij przycisk **Ustawienia** (koło zębate) w prawym górnym rogu strony, a następnie kliknij opcję **Aplikacja mobilna**.
 3.  Zaznacz swój obszar roboczy i kliknij przycisk **Edytuj**.
 4.  Kliknij przycisk **Dodaj stronę**, aby utworzyć pierwszą stronę dla urządzeń przenośnych.
@@ -148,64 +154,70 @@ Pierwszą stroną środowiska mobilnego, jaką należy zaprojektować, jest list
 6.  Kliknij przycisk **Gotowe**.
 7.  W projektancie środowiska komórkowego na karcie **Pola** kliknij przycisk **Wybierz pola**. Kolumny na stronie listy muszą przypominać te na ilustracji poniżej. [![Kolumny na stronie Oczekujące faktury od dostawcy — przypisane do mnie](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
 8.  Ze strony listy dodaj wymagane kolumny, które muszą być wyświetlane użytkownikom na stronie dla urządzeń komórkowych. Kolejność dodawania będzie kolejnością, w jakiej pola będą wyświetlane użytkownikowi końcowemu. Jedynym sposobem zmiany kolejności pól będzie ponowne wybranie wszystkich pól. Zgodnie z wymaganiami tego scenariusza wymaganych jest osiem poniższych pól. Jednak niektórzy użytkownicy mogą uznawać, że osiem pól to zbyt wiele informacji na urządzeniu przenośnym. W związku z tym w widoku listy dla urządzeń przenośnych przedstawimy tylko najważniejsze pola. Pozostałe pola będą wyświetlane w widoku szczegółów, który zaprojektujemy później. Na razie dodamy pola wymienione poniżej. Kliknij znak plusa (**+**) w tych kolumnach, aby dodać je do strony komórkowej.
-    1.  Nazwa dostawcy
-    2.  Suma faktury
-    3.  Faktura akonto
-    4.  Numer faktury
-    5.  Data faktury
+    - Nazwa dostawcy
+    - Suma faktury
+    - Faktura akonto
+    - Numer faktury
+    - Data faktury
 
-    Po dodaniu pól strona środowiska komórkowego musi przypominać ilustrację poniżej. [![Strona po dodaniu pól](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    Po dodaniu pól strona środowiska komórkowego musi przypominać ilustrację poniżej. 
+    [![Strona po dodaniu pól](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 9.  Należy także dodać następujące kolumny teraz, aby umożliwić obsługę akcji przepływu pracy później.
-    1.  Pokaż zadanie ukończenia
-    2.  Pokaż zadanie delegowania
-    3.  Pokaż zadanie wycofania
-    4.  Pokaż zadanie odrzucenia
-    5.  Pokaż zadanie wnioskowania o wykonanie
-    6.  Pokaż zadanie ponownego przesłania
+    - Pokaż zadanie ukończenia
+    - Pokaż zadanie delegowania
+    - Pokaż zadanie wycofania
+    - Pokaż zadanie odrzucenia
+    - Pokaż zadanie wnioskowania o wykonanie
+    - Pokaż zadanie ponownego przesłania
 
 10. Kliknij przycisk **Gotowe**, aby wyjść z trybu edycji.
 11. Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
 12. Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 13. W formularzu Parametry modułu rozrachunków z dostawcami w obszarze **Faktura** włącz opcję **Wyświetl sumę faktury na liście oczekujących faktur od dostawców** . Należy zauważyć, że tylko po włączeniu tego parametru będą obliczane sumy faktur z przeznaczeniem do wyświetlenia na stronie listy oczekujących faktur od dostawców. Jest to nowa funkcja zawarta w poprawce 3208224 stanowiącej wymóg wstępny.
 
-### <a name="vendor-invoice-details"></a>Szczegóły faktur od dostawców
+### Szczegóły faktur od dostawców
+<a id="vendor-invoice-details" class="xliff"></a>
 
-Aby zaprojektować stronę szczegółów faktur dla urządzeń przenośnych, użyj strony **VendMobileInvoiceHeaderDetails** w usłudze Dynamics 365 for Operations. Należy zauważyć, że w zależności od liczby faktur istniejących w systemie ta strona pokazuje najstarszą fakturę (tzn. tę, która została utworzona jako pierwsza). Aby znaleźć konkretną fakturę, możesz użyć filtru z lewej strony. Jednak w tym przykładzie nie potrzebujemy konkretnej faktury. Potrzebujemy po prostu jakichś danych faktury, aby móc zaprojektować stronę dla urządzeń przenośnych. [![Strona przepływu pracy](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+Aby zaprojektować stronę szczegółów faktur dla urządzeń przenośnych, użyj strony **VendMobileInvoiceHeaderDetails** w usłudze Finance and Operations. Należy zauważyć, że w zależności od liczby faktur istniejących w systemie ta strona pokazuje najstarszą fakturę (tzn. tę, która została utworzona jako pierwsza). Aby znaleźć konkretną fakturę, możesz użyć filtru z lewej strony. Jednak w tym przykładzie nie potrzebujemy konkretnej faktury. Potrzebujemy po prostu jakichś danych faktury, aby móc zaprojektować stronę dla urządzeń przenośnych. [![Strona przepływu pracy](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
-1.  W adresie URL usługi Dynamics 365 for Operations zastąp nazwę elementu menu wyrażeniem **VendMobileInvoiceHeaderDetails**, aby otworzyć formularz.
+1.  W adresie URL usługi Finance and Operations zastąp nazwę elementu menu wyrażeniem **VendMobileInvoiceHeaderDetails**, aby otworzyć formularz.
 2.  Otwórz projektanta środowiska komórkowego za pomocą przycisku **Ustawienia** (koło zębate).
 3.  Kliknij przycisk **Edytuj**, aby uruchomić tryb edycji w obszarze roboczym.
 4.  Zaznacz utworzoną wcześniej stronę **Moje faktury od dostawców** i kliknij przycisk **Edytuj**.
 5.  Na karcie **Pola** kliknij nagłówek kolumny **Siatka**.
 6.  Kliknij kolejno przyciski **Właściwości** &gt; **Dodaj stronę**. **Uwaga:** Po kliknięciu nagłówka **Siatka** i dodaniu strony automatycznie jest ustanawiana relacja ze stroną szczegółów.
 7.  Wprowadź tytuł strony, taki jak **Szczegóły faktury**, oraz opis, taki jak **Wyświetlanie nagłówka i szczegółów wiersza faktury**.
-8.  Kliknij przycisk **Wybierz pola**. Pamiętaj, że kolejność dodawania będzie kolejnością, w jakiej pola będą wyświetlane użytkownikowi końcowemu. Jedynym sposobem zmiany kolejności pól będzie ponowne wybranie wszystkich pól.
+8.  Kliknij przycisk **Wybierz pola**. Pamiętaj, że kolejność dodawania będzie kolejnością, w jakiej pola będą wyświetlane użytkownikowi końcowemu. Jedynym sposobem zmiany kolejności pól będzie ponowne wybranie wszystkich pól. 
 9.  Zgodnie z wymaganiami tego scenariusza dodaj następujące pola z nagłówka:
-    1.  Nazwa dostawcy
-    2.  Suma faktury
-    3.  Faktura akonto
-    4.  Numer faktury
-    5.  Data faktury
-    6.  Opis faktury
-    7.  Termin
-    8.  Waluta faktury
+    - Nazwa dostawcy
+    - Suma faktury
+    - Faktura akonto
+    - Numer faktury
+    - Data faktury
+    - Opis faktury
+    - Termin
+    - Waluta faktury
 
 10. Dodaj następujące pola z siatki wierszy na stronie:
-    1.  Kategoria zaopatrzenia
-    2.  Ilość
-    3.  Cena jednostkowa
-    4.  Kwota netto wiersza
-    5.  Wartość 1099
+    - Kategoria zaopatrzenia
+    - Ilość
+    - Cena jednostkowa
+    - Kwota netto wiersza
+    - Wartość 1099
 
-11. Po dodaniu wszystkich pól z dwóch poprzednich kroków kliknij przycisk **Gotowe**. Strona musi przypominać tę na ilustracji poniżej. [![Strona po dodaniu pól](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+11. Po dodaniu wszystkich pól z dwóch poprzednich kroków kliknij przycisk **Gotowe**. Strona musi przypominać tę na ilustracji poniżej.
+[![Strona po dodaniu pól](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 12. Kliknij przycisk **Gotowe**, aby wyjść z trybu edycji.
 13. Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
 14. Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 
-### <a name="workflow-actions"></a>Akcje przepływu pracy
+### Akcje przepływu pracy
+<a id="workflow-actions" class="xliff"></a>
 
-Aby dodać akcje przepływu pracy, użyj strony **VendMobileInvoiceHeaderDetails** w usłudze Dynamics 365 for Operations. Aby otworzyć tę stronę, należy zastąpić nazwę elementu menu w adresie URL, tak jak poprzednio. Następnie otwórz projektanta środowiska komórkowego za pomocą przycisku **Ustawienia** (koło zębate). Wykonaj następujące kroki, aby dodać akcje przepływu pracy na stronie szczegółów.
+Aby dodać akcje przepływu pracy, użyj strony **VendMobileInvoiceHeaderDetails** w usłudze Finance and Operations. Aby otworzyć tę stronę, należy zastąpić nazwę elementu menu w adresie URL, tak jak poprzednio. Następnie otwórz projektanta środowiska komórkowego za pomocą przycisku **Ustawienia** (koło zębate). Wykonaj następujące kroki, aby dodać akcje przepływu pracy na stronie szczegółów. Musisz mieć przypisane faktury będące w stanie umożliwiającym udostępnienie Ci akcji przepływu pracy, dla których zamierzasz projektować środowisko.
 
+#### Rejestrowanie akcji przepływu pracy
+<a id="record-workflow-actions" class="xliff"></a>
 1.  Kliknij przycisk **Edytuj**, aby uruchomić tryb edycji w obszarze roboczym.
 2.  Zaznacz utworzoną wcześniej stronę **Szczegóły faktury** i kliknij przycisk **Edytuj**.
 3.  Na karcie **Akcje** kliknij przycisk **Dodaj akcję**.
@@ -217,14 +229,41 @@ Aby dodać akcje przepływu pracy, użyj strony **VendMobileInvoiceHeaderDetails
 9.  Kliknij przycisk **Gotowe**, aby wyjść z trybu edycji.
 10. Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
 11. Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
-12. Powtórz kroki od 3 do 11, aby zarejestrować wszystkie wymagane akcje przepływu pracy. Pamiętać, że musisz mieć przypisane faktury będące w stanie umożliwiającym udostępnienie Ci akcji przepływu pracy, dla których zamierzasz projektować środowisko.
-13. Otwórz aplikację Notatnik lub Microsoft Visual Studio i wklej poniższy kod źródłowy. Zapisz plik w formacie .js. Ten kod wykonuje dwa zadania:
-    1.  Ukrywa dodatkowe kolumny dotyczące przepływu pracy, które wcześniej dodano na stronie listy elementów dla urządzeń przenośnych. Dodaliśmy te kolumny, tak aby aplikacja posiadała te informacje w kontekście i mogła wykonać następny krok.
-    2.  Na podstawie aktywnego kroku przepływu pracy zastosuje logikę powodującą pokazanie tylko tych akcji.
+12. Powtórz poprzednie kroki, aby zarejestrować wszystkie wymagane akcje przepływu pracy. 
 
-Należy zauważyć, że nazwy stron i innych formantów w kodzie źródłowym JS muszą być takie same, jak w obszarze roboczym.
+#### Tworzenie pliku .js
+<a id="create-a-js-file" class="xliff"></a>
+1. Otwórz aplikację Notatnik lub Microsoft Visual Studio i wklej poniższy kod źródłowy. Zapisz plik w formacie .js. Ten kod powoduje wykonanie następujących czynności:
+    - Ukrywa dodatkowe kolumny dotyczące przepływu pracy, które wcześniej dodano na stronie listy elementów dla urządzeń przenośnych. Dodaliśmy te kolumny, tak aby aplikacja posiadała te informacje w kontekście i mogła wykonać następny krok.
+    - Na podstawie aktywnego kroku przepływu pracy zastosuje logikę powodującą pokazanie tylko tych akcji.
 
-1.  function main(metadataService, dataService, cacheService, $q) {        return {            appInit: function (appMetadata) {                // Ukrywanie formantów, które muszą istnieć, ale mają być niewidoczne                metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });              metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });            metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });            },            pageInit: function (pageMetadata, params) {     if (pageMetadata.Name == 'Invoice-details') {                    // Pokazywanie/ukrywanie akcji przepływu pracy na podstawie kroku przepływu pracy                    metadataService.configureAction('Accept', { visible: true });                    metadataService.configureAction('Approve', { visible: true });                    metadataService.configureAction('Reject', { visible: true });                    metadataService.configureAction('Delegate', { visible: true });                    metadataService.configureAction('Request-change', { visible: true });                    metadataService.configureAction('Recall', { visible: true });                    metadataService.configureAction('Complete', { visible: true });                    metadataService.configureAction('Resubmit', { visible: true });
+> [!NOTE]
+> Nazwy stron i innych formantów w kodzie źródłowym muszą być takie same, jak nazwy w obszarze roboczym.
+
+    function main(metadataService, dataService, cacheService, $q) {
+           return {
+               appInit: function (appMetadata) {
+                   // Hide controls that need to be present, but not visible
+                   metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });
+                 metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });
+               metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });
+               },
+               pageInit: function (pageMetadata, params) {
+        if (pageMetadata.Name == 'Invoice-details') {
+                       // Show/hide workflow actions based on workflow step
+                       metadataService.configureAction('Accept', { visible: true });
+                       metadataService.configureAction('Approve', { visible: true });
+                       metadataService.configureAction('Reject', { visible: true });
+                       metadataService.configureAction('Delegate', { visible: true });
+                       metadataService.configureAction('Request-change', { visible: true });
+                       metadataService.configureAction('Recall', { visible: true });
+                       metadataService.configureAction('Complete', { visible: true });
+                       metadataService.configureAction('Resubmit', { visible: true });
 
                        var entityContextParts = params.pageContext.split(':');
                        var data = dataService.getEntityData(entityContextParts[0], entityContextParts[1]);
@@ -265,25 +304,28 @@ Należy zauważyć, że nazwy stron i innych formantów w kodzie źródłowym JS
 4.  Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
 5.  Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 
-### <a name="vendor-invoice-attachments"></a>Załączniki faktur od dostawców
+### Załączniki faktur od dostawców
+<a id="vendor-invoice-attachments" class="xliff"></a>
 
 1.  Kliknij przycisk **Ustawienia** (koło zębate) w prawym górnym rogu strony, a następnie kliknij opcję **Aplikacja mobilna**.
 2.  Kliknij przycisk **Edytuj**, aby uruchomić tryb edycji w obszarze roboczym.
 3.  Zaznacz utworzoną wcześniej stronę **Szczegóły faktury** i kliknij przycisk **Edytuj**.
 4.  Ustaw w opcji **Zarządzanie dokumentami** wartość **Tak**, jak pokazano poniżej. **Uwaga:** Jeśli nie ma żadnego wymogu wyświetlania załączników na urządzeniu przenośnym, można pozostawić tę opcję ustawioną na **Nie**, co jest ustawieniem domyślnym.
-5.  [![docmanagement](./media/docmanagement-216x300.png)](./media/docmanagement.png)
+![Zarządzanie dokumentami](./media/docmanagement-216x300.png)
 6.  Kliknij przycisk **Gotowe**, aby wyjść z trybu edycji.
 7.  Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
 8.  Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 
-### <a name="vendor-invoice-line-distributions"></a>Dystrybucje wierszy faktury od dostawcy
+### Dystrybucje wierszy faktury od dostawcy
+<a id="vendor-invoice-line-distributions" class="xliff"></a>
 
-Wymagania dotyczące tego scenariusza potwierdzają, że będzie tylko dystrybucja na poziomie wierszy, a fakturę zawsze będzie miała tylko jeden wiersz. Ponieważ ten scenariusz jest prosty, środowisko użytkownika na urządzeniu przenośnym również musi być na tyle proste, aby w celu wyświetlenia dystrybucji użytkownik nie musiał przechodzić kilka poziomów w głąb. Funkcjonalność faktur od dostawców w programie Dynamics 365 for Operations obejmuje opcję wyświetlania wszystkich dystrybucji z nagłówka faktury. To zachowanie jest potrzebne w scenariuszu mobilnym. W związku z tym użyjemy strony **VendMobileInvoiceAllDistributionTree** do zaprojektowania tej części scenariusza mobilnego. 
+Wymagania dotyczące tego scenariusza potwierdzają, że będzie tylko dystrybucja na poziomie wierszy, a fakturę zawsze będzie miała tylko jeden wiersz. Ponieważ ten scenariusz jest prosty, środowisko użytkownika na urządzeniu przenośnym również musi być na tyle proste, aby w celu wyświetlenia dystrybucji użytkownik nie musiał przechodzić kilka poziomów w głąb. Funkcjonalność faktur od dostawców w programie Finance and Operations obejmuje opcję wyświetlania wszystkich dystrybucji z nagłówka faktury. To zachowanie jest potrzebne w scenariuszu mobilnym. W związku z tym użyjemy strony **VendMobileInvoiceAllDistributionTree** do zaprojektowania tej części scenariusza mobilnego. 
 
 > [!NOTE] 
 > Znajomość wymagań pomaga nam zdecydować, której konkretnej strony należy użyć i jak dokładnie zoptymalizować komórkowe środowisko obsługi dla użytkownika podczas projektowania scenariusza. W drugim scenariuszu użyjemy innej strony do pokazania dystrybucji, ponieważ wymagania w tym scenariuszu się różnią.
 
-1.  W adresie URL zastąp nazwę elementu menu tak jak poprzednio. Wyświetlona strona powinna przypominać tę na poniższej ilustracji. [![Strona wszystkich dystrybucji](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+1.  W adresie URL zastąp nazwę elementu menu tak jak poprzednio. Wyświetlona strona powinna przypominać tę na poniższej ilustracji.
+[![Strona wszystkich dystrybucji](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 2.  Otwórz projektanta środowiska komórkowego za pomocą przycisku **Ustawienia** (koło zębate).
 3.  Kliknij przycisk **Edytuj**, aby uruchomić tryb edycji w obszarze roboczym. **Uwaga:** Zobaczysz, że dwie nowe strony zostały utworzone automatycznie. System tworzy te strony, ponieważ w poprzedniej sekcji włączone funkcję zarządzania dokumentami. Można zignorować te nowe strony.
 4.  Kliknij przycisk **Dodaj stronę**.
@@ -294,22 +336,50 @@ Wymagania dotyczące tego scenariusza potwierdzają, że będzie tylko dystrybuc
     2.  Waluta
     3.  Konto księgowe
 
-> [!NOTE] 
-> Nie wybraliśmy kolumny **Opis** z siatki dystrybucji, ponieważ wymagania tego scenariusza potwierdziły, że cena rozszerzona jest jedną kwotą, dla której będą istniały dystrybucje. W związku z tym użytkownik nie będzie potrzebował dodatkowego pola w celu określenia typu kwoty, dla której jest określana dystrybucja. Jednak w następnym scenariuszu **użyjemy** tych informacji, ponieważ wymagania tego scenariusza określają, że dystrybucje istnieją również dla innych typów kwot (na przykład dla podatku).
+    > [!NOTE] 
+    > Nie wybraliśmy kolumny **Opis** z siatki dystrybucji, ponieważ wymagania tego scenariusza potwierdziły, że cena rozszerzona jest jedną kwotą, dla której będą istniały dystrybucje. W związku z tym użytkownik nie będzie potrzebował dodatkowego pola w celu określenia typu kwoty, dla której jest określana dystrybucja. Jednak w następnym scenariuszu **użyjemy** tych informacji, ponieważ wymagania tego scenariusza określają, że dystrybucje istnieją również dla innych typów kwot (na przykład dla podatku).
 8.  Kliknij przycisk **Gotowe**, aby wyjść z trybu edycji.
 9.  Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
 10. Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 
-**Uwaga:** Strona środowiska komórkowego **Widok księgowania** nie jest obecnie połączona z żadną stroną mobilną, które do tej pory zaprojektowaliśmy. Ponieważ użytkownik powinien być w stanie przejść do strony **Widok księgowania** ze strony **Szczegóły faktury** na urządzeniu przenośnym, musimy zapewnić nawigację ze strony **Szczegóły faktury** do strony **Widok księgowania**. Ustanowimy tę nawigację przy użyciu dodatkowej logiki za pomocą kodu źródłowego JavaScript.
+> [!NOTE] 
+> Strona środowiska komórkowego **Widok księgowania** nie jest obecnie połączona z żadną stroną mobilną, które do tej pory zaprojektowaliśmy. Ponieważ użytkownik powinien być w stanie przejść do strony **Widok księgowania** ze strony **Szczegóły faktury** na urządzeniu przenośnym, musimy zapewnić nawigację ze strony **Szczegóły faktury** do strony **Widok księgowania**. Ustanowimy tę nawigację przy użyciu dodatkowej logiki za pomocą kodu źródłowego JavaScript.
 
 1.  Otwórz utworzony wcześniej plik .js i dodaj wiersze wyróżnione w poniższym kodzie źródłowym. Ten kod wykonuje dwa zadania:
     1.  Pomaga zagwarantować, że użytkownicy nie mogą przechodzić bezpośrednio z obszaru roboczego do strony **Widok księgowania**.
     2.  Ustanawia formant nawigacji ze strony **Szczegóły faktury** do strony **Widok księgowania**.
 
 > [!NOTE] 
-> Nazwy stron i innych formantów w kodzie źródłowym JS muszą być takie same, jak w obszarze roboczym.
+> Nazwy stron i innych formantów w kodzie źródłowym muszą być takie same, jak nazwy w obszarze roboczym.
 
-1.  function main(metadataService, dataService, cacheService, $q) {        return {            appInit: function (appMetadata) {                // Ukrywanie formantów, które muszą istnieć, ale mają być niewidoczne                metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });              metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });            metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });                // Ukrywanie stron, które nie są objęte nawigowaniem po elementach głównych                metadataService.hideNavigation('View-accounting');                //Łącze do wyświetlania informacji o księgowaniu                metadataService.addLink('Invoice-details', 'View-accounting', 'View-accounting-nav-control', 'View accounting', true);            },            pageInit: function (pageMetadata, params) {     if (pageMetadata.Name == 'Invoice-details') {                    // Pokazywanie/ukrywanie akcji przepływu pracy na podstawie kroku przepływu pracy                    metadataService.configureAction('Accept', { visible: true });                    metadataService.configureAction('Approve', { visible: true });                    metadataService.configureAction('Reject', { visible: true });                    metadataService.configureAction('Delegate', { visible: true });                    metadataService.configureAction('Request-change', { visible: true });                    metadataService.configureAction('Recall', { visible: true });                    metadataService.configureAction('Complete', { visible: true });                    metadataService.configureAction('Resubmit', { visible: true });
+    function main(metadataService, dataService, cacheService, $q) {
+           return {
+               appInit: function (appMetadata) {
+                   // Hide controls that need to be present, but not visible
+                   metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });
+                 metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });
+                   metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });
+               metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });
+                   // Hide pages not applicable for root navigation
+                   metadataService.hideNavigation('View-accounting');
+                   //Link to view accounting
+                   metadataService.addLink('Invoice-details', 'View-accounting', 'View-accounting-nav-control', 'View accounting', true);
+               },
+               pageInit: function (pageMetadata, params) {
+        if (pageMetadata.Name == 'Invoice-details') {
+                       // Show/hide workflow actions based on workflow step
+                       metadataService.configureAction('Accept', { visible: true });
+                       metadataService.configureAction('Approve', { visible: true });
+                       metadataService.configureAction('Reject', { visible: true });
+                       metadataService.configureAction('Delegate', { visible: true });
+                       metadataService.configureAction('Request-change', { visible: true });
+                       metadataService.configureAction('Recall', { visible: true });
+                       metadataService.configureAction('Complete', { visible: true });
+                       metadataService.configureAction('Resubmit', { visible: true });
 
                        var entityContextParts = params.pageContext.split(':');
                        var data = dataService.getEntityData(entityContextParts[0], entityContextParts[1]);
@@ -350,9 +420,10 @@ Wymagania dotyczące tego scenariusza potwierdzają, że będzie tylko dystrybuc
 4.  Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
 5.  Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 
-### <a name="validation"></a>Weryfikacja
+### Weryfikacja
+<a id="validation" class="xliff"></a>
 
-Na urządzeniu przenośnym otwórz aplikację i połącz się z wystąpieniem usługi Dynamics 365 for Operations. Koniecznie zaloguj się w firmie, gdzie faktury od dostawców są Ci przypisane do weryfikacji. Powinna być możliwość wykonania następujących czynności:
+Na urządzeniu przenośnym otwórz aplikację i połącz się z wystąpieniem usługi Finance and Operations. Koniecznie zaloguj się w firmie, gdzie faktury od dostawców są Ci przypisane do weryfikacji. Powinna być możliwość wykonania następujących czynności:
 
 -   Wyświetlenie obszaru roboczego **Moje zatwierdzenia**.
 -   Szczegółowe przejście do obszaru roboczego **Moje zatwierdzenia** i wyświetlenie strony **Moje faktury od dostawców**.
@@ -362,7 +433,8 @@ Na urządzeniu przenośnym otwórz aplikację i połącz się z wystąpieniem us
 -   Na stronie szczegółów wyświetlenie łącza do strony **Widok księgowania** oraz użycie tego łącza w celu przejścia do strony dystrybucji i wyświetlenia dystrybucji.
 -   Na stronie szczegółów u dołu kliknięcie menu **Akcje** i wykonanie akcji przepływu pracy mających zastosowanie do etapu przepływu pracy.
 
-## <a name="designing-a-complex-invoice-approval-scenario-for-fabrikam"></a>Projektowanie skomplikowanego scenariusza zatwierdzania faktur dla firmy Fabrikam
+## Projektowanie skomplikowanego scenariusza zatwierdzania faktur dla firmy Fabrikam
+<a id="designing-a-complex-invoice-approval-scenario-for-fabrikam" class="xliff"></a>
 <table>
 <colgroup>
 <col width="50%" />
@@ -421,9 +493,10 @@ Na urządzeniu przenośnym otwórz aplikację i połącz się z wystąpieniem us
 </tbody>
 </table>
 
-### <a name="exercise"></a>Ćwiczenie
+### Następne kroki
+<a id="next-steps" class="xliff"></a>
 
-W scenariuszu 1 można wprowadzić zmiany wymienione poniżej zgodnie z wymaganiami scenariusza 2. Użyj tej sekcji jako ćwiczenia, które można wykonać w celach edukacyjnych.
+W scenariuszu 1 można wprowadzić zmiany wymienione poniżej zgodnie z wymaganiami scenariusza 2. Informacje w tej sekcji pomogą usprawnić korzystanie z aplikacji komórkowej.
 
 1.  Ponieważ w scenariuszu 2 jest potrzebnych więcej wierszy faktury, wymienione poniżej zmiany w projekcie pomogą zoptymalizować środowisko użytkownika na urządzeniu przenośnym:
     1.  Zamiast przeglądać wiersze faktury na stronie szczegółów (jak w scenariuszu 1), użytkownicy mogą wybrać opcję wyświetlania wierszy na osobnej stronie dla urządzeń komórkowych.
@@ -432,8 +505,6 @@ W scenariuszu 1 można wprowadzić zmiany wymienione poniżej zgodnie z wymagani
 
 2.  Ponieważ dystrybucje w scenariuszu 2 wymagają więcej niż jednego typu kwoty (podatek, opłaty i tak dalej), warto, aby były wyświetlane opisy typów kwot. (Pominęliśmy te informacje w scenariuszu 1).
 
-## <a name="conclusion"></a>Wniosek
-Platforma komórkowa i funkcje aplikacji pozwalają projektować scenariusze mobilne zoptymalizowane dla użytkowników w organizacji. W oparciu o przykłady znajdujące się w tym temacie można spróbować innych wariantów i tworzyć różne środowiska obsługi spełniające szczególne potrzeby.
 
 
 
