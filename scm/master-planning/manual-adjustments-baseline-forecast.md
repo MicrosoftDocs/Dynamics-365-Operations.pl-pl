@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 0b3b56aa838888461a6d27c6612e405a3cf59414
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Wprowadzanie ręcznych korekt prognozy bazowej
-<a id="make-manual-adjustments-to-the-baseline-forecast" class="xliff"></a>
+# <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Wprowadzanie ręcznych korekt prognozy bazowej
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,16 +36,14 @@ W tym artykule wyjaśniono, jak wprowadzać ręczne korekty prognozy bazowej i j
 
 Przed dokonaniem ręcznych korekt bardzo ważne jest, aby zapoznać się z kilkoma koncepcjami na różnych stronach.
 
-## Siatka na stronie Skorygowana prognoza popytu
-<a id="grid-on-the-adjusted-demand-forecast-page" class="xliff"></a>
+## <a name="grid-on-the-adjusted-demand-forecast-page"></a>Siatka na stronie Skorygowana prognoza popytu
 Strona **Skorygowana prognoza popytu** zawiera siatkę, która oferuje następującą strukturę:
 
 -   Pierwsza kolumna pokazuje towary, klucze alokacji produktów, firmy itd., dla których wygenerowano prognozę. Podtytuł strony zawiera opis bieżących wymiarów prognozy, które są widoczne na siatce. Jeśli na przykład strona ma podtytuł **Firma / Oddział / Klucz alokacji produktów**, a jeden z nagłówków wierszy w siatce to **USMF / 1 / D\_Alloc**, ten wiersz pokazuje prognozę dla oddziału 1 firmy USMF i klucza alokacji produktów **D\_Alloc**.
 -   Kolejne kolumny zawierają przedziały prognozy, dla których prognoza została wygenerowana. Każdy nagłówek kolumny jest pierwszą datą przedziału prognozy, jaka jest widoczna w kolumnie.
 -   Wartości w komórkach pokazują prognozę dla jednego towaru, klucza alokacji produktów itd, dla określonego przedziału prognozy.
 
-## Agregacja i deagregacja prognozy
-<a id="forecast-aggregation-and-deaggregation" class="xliff"></a>
+## <a name="forecast-aggregation-and-deaggregation"></a>Agregacja i deagregacja prognozy
 Podtytuł strony pokazuje poziom agregacji prognozy. 
 
 Na przykład, jeśli strona ma podtytuł **Firma / Oddział / Klucza alokacji / Kod towaru / Kolor / Rozmiar / Konfiguracja / Style**, nie ma żadnej agregacji prognozy i prognoza jest wyświetlana na poziomie towaru i jego wymiarów. Aby zmienić agregację, użyj strony **Zmień wymiary prognozy**, który można otworzyć z menu aplikacji. 
@@ -61,8 +58,7 @@ Po skorygowaniu prognozowanej ilości na poziomie sumarycznym system używa alok
 
 Można też wprowadzać ręczne korekty na stronie **Wiersze prognozy popytu**, zmieniając wartość **Ilość całkowita** lub komórki **Ilość** na siatce deagregacji.
 
-## Wyświetlanie szczegółów prognozy
-<a id="viewing-details-of-the-forecast" class="xliff"></a>
+## <a name="viewing-details-of-the-forecast"></a>Wyświetlanie szczegółów prognozy
 Można otworzyć stronę **Szczegóły prognozy popytu**, aby wyświetlić więcej informacji na temat prognozy. 
 
 Strona **Szczegóły prognozy popytu** pokazuje następujące informacje na grafice i w tabeli:
@@ -81,8 +77,7 @@ Strona **Szczegóły prognozy popytu** pokazuje następujące informacje na graf
 
 Istnieje również możliwość ręcznego korygowania prognozy na stronie **Szczegóły prognozy popytu** poprzez modyfikację wartości w wierszu **Prognoza** w sekcji **Prognoza**.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Monitorowanie dokładności prognozy](monitor-forecast-accuracy.md)

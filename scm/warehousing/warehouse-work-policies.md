@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSWorkPolicy
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 196561
 ms.assetid: cbf48ec6-1836-48d5-ad66-a9b534af1786
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2016-05-31
+ms.search.validFrom: 2016-05-31T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -24,11 +25,9 @@ ms.openlocfilehash: 7612003bc20f91f173629893750478b034cff27b
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Zasady pracy magazynowej
-<a id="warehouse-work-policies" class="xliff"></a>
+# <a name="warehouse-work-policies"></a>Zasady pracy magazynowej
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Ta zasada pracy kontroluje, czy praca magazynowa jest tworzona dla procesów mag
 -   **Magazyny**
 -   **Produkty**
 
-## Typy zleceń
-<a id="work-order-types" class="xliff"></a>
+## <a name="work-order-types"></a>Typy zleceń
 Możesz wybrać spośród następujących typów zleceń:
 
 -   Ukończono odkładanie wyrobów
@@ -52,16 +50,13 @@ Możesz wybrać spośród następujących typów zleceń:
 
 Pole **Metoda tworzenia pracy** ma wartość **Nigdy**. Ta wartość wskazuje, że zasada pracy uniemożliwi tworzenie pracy magazynowej dla wybranego typu zlecenia.
 
-## Magazyny
-<a id="inventory-locations" class="xliff"></a>
+## <a name="inventory-locations"></a>Magazyny
 Można wybrać lokalizację, do której ma zastosowanie zasada pracy. Jeśli z zasadą pracy nie zostanie skojarzona żadna lokalizacja, zasada nie ma zastosowania do żadnych procesów. Na stronie **Lokalizacje** można również zaznaczyć lub usunąć zaznaczenie zasady pracy dla określonej lokalizacji.
 
-## Produkty
-<a id="products" class="xliff"></a>
+## <a name="products"></a>Produkty
 Można wybrać produkt, do którego ma zastosowanie zasada pracy. Zasada pracy może dotyczyć wszystkich produktów lub wybranych produktów.
 
-## Przykład
-<a id="example" class="xliff"></a>
+## <a name="example"></a>Przykład
 W poniższym przykładzie istnieją dwa zlecenia produkcyjne, PRD-001 i PRD 00*2*. Zlecenie produkcyjne PRD-001 zawiera operację o nazwie **Montaż**, z której produkt SC1 jest zgłaszany jako gotowy do lokalizacji O1. Zlecenie produkcyjne PRD-002 ma operację o nazwie **Malowanie** i zużywa produkt SC1 z lokalizacji O1. Zlecenie produkcyjne PRD-002 zużywa także surowiec RM1 z lokalizacji O1. Surowiec RM1 jest przechowywany w lokalizacji magazynowej BULK-001 i zostanie pobrany do lokalizacji O1 za pomocą pracy magazynowej pobrania materiału. Praca pobierania jest generowana po zwolnieniu produkcji PRD-002. 
 
 [![Zasady pracy magazynowej](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
@@ -84,8 +79,7 @@ Oto przykład zasady pracy, którą można skonfigurować z uwzględnieniem powy
 
 Poniższe procedury zawierają instrukcje krok po kroku dotyczące konfigurowania zasady pracy magazynowej dla tego scenariusza. Opisano również przykładową konfigurację prezentującą zgłaszanie zlecenia produkcyjnego jako gotowego do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny.
 
-## Konfigurowanie zasady pracy magazynowej
-<a id="set-up-a-warehouse-work-policy" class="xliff"></a>
+## <a name="set-up-a-warehouse-work-policy"></a>Konfigurowanie zasady pracy magazynowej
 Procesy magazynowe nie zawsze obejmują pracę magazynową. Poprzez zdefiniowanie pracy magazynowej można zablokować tworzenie pracy pobierania surowców i odkładania wyrobów gotowych dla zbioru produktów w określonych lokalizacjach. Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej USMF. 
 
 KROKI (21)
@@ -114,8 +108,7 @@ KROKI (21)
 | 20. | W polu Numer pozycji wprowadź lub wybierz wartość „L0101”.                         |
 | 21. | Kliknij przycisk Zapisz.                                                                |
 
-## Zgłaszanie zlecenia produkcyjnego jako gotowego do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny
-<a id="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled" class="xliff"></a>
+## <a name="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled"></a>Zgłaszanie zlecenia produkcyjnego jako gotowego do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny
 Ta procedura zawiera przykład zgłaszania wyrobu gotowego do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny. Warunkiem wstępnym tego zadania jest istnienie odpowiedniej zasady pracy. Poprzednia procedura ilustruje konfigurowanie zasady pracy. 
 
 KROKI (25)

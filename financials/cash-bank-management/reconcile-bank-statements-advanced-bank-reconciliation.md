@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 98243
 ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 ms.search.region: global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,19 +23,16 @@ ms.openlocfilehash: eb7fd01874b08417933ddf575c7d6ff866b4e6f8
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Uzgadnianie wyciągów bankowych przy użyciu funkcji Zaawansowane uzgadnianie konta bankowego
-<a id="reconcile-bank-statements-by-using-advanced-bank-reconciliation" class="xliff"></a>
+# <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Uzgadnianie wyciągów bankowych przy użyciu funkcji Zaawansowane uzgadnianie konta bankowego
 
 [!include[banner](../includes/banner.md)]
 
 
 Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych oraz ich automatyczne uzgadnianie z transakcjami bankowymi w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. W tym temacie opisano proces uzgadniania.  
 
-Importowanie elektronicznego wyciągu bankowego
-<a id="import-an-electronic-bank-statement" class="xliff"></a>
+<a name="import-an-electronic-bank-statement"></a>Importowanie elektronicznego wyciągu bankowego
 -----------------------------------
 
 Wyciągi bankowe importuje się przy użyciu operacji **Importowanie wyciągu** dostępnej na karcie **Wyciągi bankowe**. Na wyciągu bankowym konto bankowe jest identyfikowane za pomocą kombinacji wartości ustawianych w szczegółach konta bankowego. Wartości te obejmują nazwę banku, numer konta bankowego, numer rozliczeniowy, kod SWIFT (Stowarzyszenie na rzecz Światowej Międzybankowej Telekomunikacji Finansowej) i międzynarodowy numer konta bankowego (IBAN). 
@@ -50,8 +48,7 @@ Można użyć pliku .zip i przekazać wiele plików wyciągów do programu Finan
 
 Dostępna jest opcja **Uzgodnij po imporcie**. Gdy ta opcja ma ustawioną wartość **Tak**, w trakcie przekazywania wyciągu bankowego system automatycznie sprawdza poprawność wyciągu, tworzy nowe uzgodnienie konta bankowego i arkusz oraz uruchamia domyślny zestaw reguł uzgadniania. Ta funkcja automatyzuje proces aż do momentu, gdy transakcje trzeba uzgodnić ręcznie.
 
-## Sprawdzanie poprawności wyciągu bankowego
-<a id="validate-the-bank-statement" class="xliff"></a>
+## <a name="validate-the-bank-statement"></a>Sprawdzanie poprawności wyciągu bankowego
 Aby sprawdzić poprawność wyciągu, na stronie **Wyciągi bankowe** kliknij przycisk **Sprawdź poprawność**. Aby można było uzgodnić wyciągi bankowe, muszą zostać najpierw zweryfikowane. Ten krok jest wykonywany automatycznie, jeśli podczas importu opcja **Uzgodnij po imporcie** ma wartość **Tak**. 
 
 Sprawdzanie poprawności wyciągu bankowego weryfikuje, czy:
@@ -66,8 +63,7 @@ Sprawdzanie poprawności wyciągu bankowego weryfikuje, czy:
 
 Po zakończeniu sprawdzania poprawności stan wyciągu bankowego jest aktualizowany na **Zweryfikowano**. Aby można było uzgodnić wyciąg bankowy, musi on zostać najpierw zweryfikowany.
 
-## Uzgadnianie wyciągu bankowego
-<a id="reconcile-the-bank-statement" class="xliff"></a>
+## <a name="reconcile-the-bank-statement"></a>Uzgadnianie wyciągu bankowego
 Po zaimportowaniu elektronicznego wyciągu bankowego i sprawdzeniu jego poprawności na stronie **Wyciągi bankowe** można uzgodnić wyciąg, używając do tego stron **Uzgadnianie konta bankowego** i **Arkusz uzgadniania konta bankowego** stron. 
 
 Na stronie **Uzgadnianie konta bankowego** kliknij przycisk **Nowy**, aby utworzyć nowe uzgodnienie, a następnie zaznacz konto bankowe zaimportowanego wyciągu. Konto bankowe może mieć tylko jedno otwarte uzgodnienie. Data graniczna określa transakcje wyciągu bankowego i transakcje bankowe programu Operations, które są uwzględnione w arkuszu uzgadniania. Domyślnie datą graniczną jest bieżąca data systemowa, ale można zmienić datę uzgodnienia. Pozostałe informacje nagłówka są automatycznie pobierane z wyciągu. Ten krok jest wykonywany automatycznie, jeśli podczas importu opcja **Uzgodnij po imporcie** ma wartość **Tak**. 
@@ -96,8 +92,7 @@ Można anulować uzgodnienie błędnie uzgodnionych transakcji. Zaznacz uzgodnio
 
 Po przetworzeniu wszystkich wierszy wyciągu należy oznaczyć arkusz uzgadniania konta bankowego jako uzgodniony.
 
-## Księgowanie nowych transakcji skojarzonych z uzgodnieniem
-<a id="post-new-transactions-that-are-associated-with-the-reconciliation" class="xliff"></a>
+## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Księgowanie nowych transakcji skojarzonych z uzgodnieniem
 Transakcje na wyciągu bankowym, które w arkuszu uzgadniania zostały oznaczone jako **Nowy**, są księgowane na stronie **Wyciąg bankowy**. Na stronie **Wyciąg bankowy** zaznacz identyfikator wyciągu, aby wyświetlić szczegóły wyciągu. W menu **Księgowanie** można użyć opcji **Wyświetl dystrybucje** i **Wyświetl księgowanie**, aby wyświetlić szczegóły stojące za nowymi transakcjami i powiązanymi zapisami księgi. Zaznacz opcję **Księguj**, aby w księdze głównej księgować wiersze wyciągu bankowego oznaczone jako **Nowy**. Należy pamiętać, że księgowanie można wykonać tylko raz dla każdego wyciągu bankowego.
 
 

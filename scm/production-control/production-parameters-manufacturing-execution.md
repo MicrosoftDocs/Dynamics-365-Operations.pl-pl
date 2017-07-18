@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: JmgProdParameters
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.industry: Manufacturing
 ms.author: johanhoffmann
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Parametry produkcji w module Wykonywanie produkcji
-<a id="production-parameters-in-manufacturing-execution" class="xliff"></a>
+# <a name="production-parameters-in-manufacturing-execution"></a>Parametry produkcji w module Wykonywanie produkcji
 
 [!include[banner](../includes/banner.md)]
 
@@ -44,8 +43,7 @@ Zanim pracownicy przystąpią do rejestrowania zużycia w zadaniach produkcyjnyc
 - **Zgłoszenie wyrobów gotowych** — parametry używane, gdy towary są zgłaszane jako gotowe w ostatniej operacji zlecenia produkcyjnego.
 - **Weryfikacja ilości** — parametry służące do sprawdzania poprawności ilości startowych i podawanych w informacjach zwrotnych dla zleceń produkcyjnych.
 
-## Typy zadań produkcji
-<a id="types-of-production-jobs" class="xliff"></a>
+## <a name="types-of-production-jobs"></a>Typy zadań produkcji
 Na karcie **Operacje** wybiera się typy zadań produkcyjnych, które wymagają rejestracji na stronie **Rejestracja zadania**.
 
 Na ogół pracownicy dokonują rejestracji w przypadku zadań przezbrajania lub przetwarzania. Jeśli jednak używane jest planowanie zadań, można wybrać inne typy zadań, które również wymagają rejestracji podczas przetwarzania zleceń produkcyjnych. Na przykład można wymagać rejestrowania dla zadań transportu.
@@ -58,8 +56,7 @@ Jeśli zaznaczona jest opcja **Zarządzanie zadaniami** w grupie marszrut, ten t
 > [!NOTE]
 > Niektóre typy zadań mogą być zgłaszane ręcznie poprzez arkusze produkcji. W takim przypadku zaznacz opcję **Zarządzanie zadaniami** dla typu zadania, ale nie wybieraj typu zadania dla rejestracji na karcie **Operacje** na stronie **Parametry produkcji** w module Wykonywanie produkcji.
 
-## Arkusze zużycia BOM i list pobrania
-<a id="bom-consumption-and-picking-list-journals" class="xliff"></a>
+## <a name="bom-consumption-and-picking-list-journals"></a>Arkusze zużycia BOM i list pobrania
 Ważna jest spójna konfiguracja zużycia list składowych (BOM), ponieważ pomaga to zagwarantować efektywne zarządzanie zapasami. Na przykład jeśli parametry zużycia BOM nie są poprawnie skonfigurowane w module Wykonywanie produkcji, materiały mogą być odejmowane z zapasów dwa razy albo wcale.
 
 Na stronie **Parametry produkcji** automatyczne zużywanie BOM ustawia się w trzech etapach:
@@ -91,8 +88,7 @@ Dla każdego etapu w polu **Automatyczne zużycie BOM** można wybrać jedną z 
 
 Poniższe przykłady ilustrują ustawienia parametrów obsługujących różne zasady zużywania BOM. Parametry konfiguruje się na stronie **Parametry produkcji** w module Wykonywanie produkcji.
 
-### Przykład 1: Wstecznie rozliczanie w operacjach
-<a id="example-1-backflushing-on-operations" class="xliff"></a>
+### <a name="example-1-backflushing-on-operations"></a>Przykład 1: Wstecznie rozliczanie w operacjach
 
 Użyj poniższych ustawień, jeśli arkusze list pobrania i zużycie towarów z BOM powinny być generowane, gdy towary są zgłaszane jako gotowe w operacji.
 
@@ -104,8 +100,7 @@ Użyj poniższych ustawień, jeśli arkusze list pobrania i zużycie towarów z 
 | Zgłoszenie wyrobów gotowych | Automatyczne zużycie BOM      | **Nigdy**                           |
 | Zgłoszenie wyrobów gotowych | Aktualizuj raport zakończonych online | **Stan + ilość**               |
 
-### Przykład 2: Wstecznie rozliczanie w produkcji
-<a id="example-2-backflushing-on-production" class="xliff"></a>
+### <a name="example-2-backflushing-on-production"></a>Przykład 2: Wstecznie rozliczanie w produkcji
 
 Użyj poniższych ustawień, jeśli arkusze list pobrania i zużycie towarów z BOM powinny być generowane, gdy towary są zgłaszane jako gotowe w zleceniu produkcyjnym.
 
@@ -117,8 +112,7 @@ Użyj poniższych ustawień, jeśli arkusze list pobrania i zużycie towarów z 
 | Zgłoszenie wyrobów gotowych | Automatyczne zużycie BOM      | **Zawsze**                          |
 | Zgłoszenie wyrobów gotowych | Aktualizuj raport zakończonych online | **Stan + ilość**               |
 
-### Przykład 3: Reguła rozliczania
-<a id="example-3-flushing-principle" class="xliff"></a>
+### <a name="example-3-flushing-principle"></a>Przykład 3: Reguła rozliczania
 
 Użyj tych ustawień, jeśli arkusze list pobrania i zużycie towarów z BOM powinny być generowane zgodnie z regułą rozliczania ustawioną dla towarów BOM.
 
@@ -130,8 +124,7 @@ Użyj tych ustawień, jeśli arkusze list pobrania i zużycie towarów z BOM pow
 | Zgłoszenie wyrobów gotowych | Automatyczne zużycie BOM      | **Nigdy**              |
 | Zgłoszenie wyrobów gotowych | Aktualizuj raport zakończonych online | **Stan + ilość**  |
 
-### Przykład 4: Odejmowanie materiałów podczas uruchamiania zlecenia produkcyjnego
-<a id="example-4-deduction-of-materials-during-startup-of-a-production-order" class="xliff"></a>
+### <a name="example-4-deduction-of-materials-during-startup-of-a-production-order"></a>Przykład 4: Odejmowanie materiałów podczas uruchamiania zlecenia produkcyjnego
 
 Użyj poniższych ustawień, jeśli arkusze list pobrania i zużycie towarów z BOM powinny być generowane podczas rozpoczynania produkcji.
 
@@ -149,8 +142,7 @@ Zgodnie z opcjami opisanymi wcześniej w tej sekcji arkusze list pobrania są ks
 - Gdy informacja zwrotna dotycząca ilości jest zgłaszana dla operacji
 - Gdy towary są zgłaszane jako gotowe w ramach zlecenia produkcyjnego
 
-### Przykład 5: Ręczne zużywanie BOM
-<a id="example-5-manual-bom-consumption" class="xliff"></a>
+### <a name="example-5-manual-bom-consumption"></a>Przykład 5: Ręczne zużywanie BOM
 
 Jeśli materiały zawsze mają być ręcznie odejmowane z zapasów, można użyć następujących ustawień. W takim przypadku arkusze list pobrania nie są księgowane.
 

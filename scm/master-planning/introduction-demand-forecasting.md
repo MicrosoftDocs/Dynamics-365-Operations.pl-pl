@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72004
 ms.assetid: 916707c9-1333-460f-a0fa-4e95f6fda2ad
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 6b4498ae05b9495918c0a079cc88903820192a59
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Podstawowe informacje o prognozowaniu popytu
-<a id="demand-forecasting-overview" class="xliff"></a>
+# <a name="demand-forecasting-overview"></a>Podstawowe informacje o prognozowaniu popytu
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Prognozowanie popytu jest używane do przewidywania niezależnego popytu z zamó
 
 Aby wygenerować prognozę bazową, podsumowanie transakcji historycznych jest przekazywane do usługi uczenia maszynowego Microsoft Azure hostowanej w Azure. Ponieważ ta usługa nie jest współużytkowana przez użytkowników, można ją łatwo dostosować do wymagań danej branży. Program Finance and Operations umożliwia wizualizację prognozy, korygowanie prognozy i wyświetlanie najważniejszych wskaźników trafności prognozy.
 
-## Najważniejsze funkcje prognozowania popytu
-<a id="key-features-of-demand-forecasting" class="xliff"></a>
+## <a name="key-features-of-demand-forecasting"></a>Najważniejsze funkcje prognozowania popytu
 Poniżej przedstawiono główne funkcje prognozowania popytu:
 
 -   Generowanie bazowej prognozy statystycznej opartej na danych historycznych.
@@ -48,8 +46,7 @@ Poniżej przedstawiono główne funkcje prognozowania popytu:
 -   Usuwanie wartości odstających.
 -   Tworzenie miary dokładności prognozy.
 
-## Najważniejsze motywy w prognozowaniu popytu
-<a id="major-themes-in-demand-forecasting" class="xliff"></a>
+## <a name="major-themes-in-demand-forecasting"></a>Najważniejsze motywy w prognozowaniu popytu
 Trzy najważniejsze motywy w prognozowaniu popytu:
 
 -   **Modułowość** — prognozowania popytu jest modułowe i łatwe do skonfigurowania. Funkcję tę można włączać i wyłączać poprzez zmianę klucza konfiguracji w oknie **Handel** &gt; **Prognoza zapasów** &gt; **Prognozowanie popytu**.
@@ -60,8 +57,7 @@ Trzy najważniejsze motywy w prognozowaniu popytu:
     -   Jeśli nie jest wymagana wysoka wydajność lub nie potrzeba przetwarzać bardzo dużych ilości danych, można korzystać z bezpłatnej wersji oprogramowania do uczenia maszynowego. Zalecamy rozpoczęcie pracy od wersji bezpłatnej, zwłaszcza w fazie testowania i implementacji. Jeśli konieczna jest większa wydajność i dodatkowa pamięć, można korzystać z wersji standardowej oprogramowania do uczenia maszynowego. Ta wersja wymaga subskrypcji usługi Azure i wiąże się z dodatkowymi kosztami. Aby uzyskać szczegółowe informacje o cenach oprogramowania do uczenia maszynowego, zobacz <http://aka.ms/machine-learning-price-info>.
 -   **Zmniejszenie prognozy w dowolnym punkcie oddzielania** — Prognoza popytu w programie Finance and Operations dla tej funkcji, która pozwala prognozować zarówno zależny, jak i niezależny popyt w dowolnym punkcie oddzielania.
 
-## Podstawowy przepływ w prognozowaniu popytu
-<a id="basic-flow-in-demand-forecasting" class="xliff"></a>
+## <a name="basic-flow-in-demand-forecasting"></a>Podstawowy przepływ w prognozowaniu popytu
 Poniższy wykres przedstawia podstawowy przepływ dla prognozowania popytu. 
 
 [![diagram wprowadzenia do prognozowania popytu](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
@@ -74,12 +70,10 @@ Prognozy, dane historyczne i wszelkie zmiany, które zostały wprowadzone w prog
 
 Za pomocą programu Finance and Operations można wizualizować i modyfikować prognozy bazowe. Ręczne korekty wymagają autoryzacji przed zastosowaniem prognoz do planowania.
 
-## Ograniczenia
-<a id="limitations" class="xliff"></a>
+## <a name="limitations"></a>Ograniczenia
 Prognozowanie popytu w programie Finance and Operations to narzędzie, które pomaga odbiorcom w przemyśle wytwórczym tworzyć procesy prognozowania. Oferuje podstawowe funkcje rozwiązania do prognozowania i jest zaprojektowane w taki sposób, że może być łatwo rozszerzone. Prognozowanie popytu nie musi być najlepszym narzędziem dla odbiorców w takich branżach, jak handel detaliczny, handel hurtowy, magazynowanie, transport lub inne usługi profesjonalne.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Ustawianie prognozowania popytu](demand-forecasting-setup.md)

@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: a192688315adb2d83f349c525c5d8f70309375db
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Przyjęcie produktów względem zamówień zakupu
-<a id="product-receipt-against-purchase-orders" class="xliff"></a>
+# <a name="product-receipt-against-purchase-orders"></a>Przyjęcie produktów względem zamówień zakupu
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,18 +37,15 @@ W tym artykule opisano różne opcje rejestrowania produktów jako przyjętych.
 
 Przyjęcie produktów to proces rejestrowania, że zamówione produkty zostały odebrane, wskutek czego wiersze zamówienia zakupu mogą być przetwarzane na potrzeby fakturowania. W niektórych przypadkach produkty są poddawane wstępnej rejestracji, w której przed przyjęciem produktów są odnotowywane dodatkowe informacje od dostawcy. Po przybyciu produktów są one najpierw oznaczane jako **Zarejestrowane**. Produkty mogą następnie przejść przez dodatkowe procesy, takie jak zarządzanie jakością, zanim ostatecznie są oznaczone jako **Otrzymane**.
 
-## Wstępna rejestracja (WPW)
-<a id="preregistration-asn" class="xliff"></a>
+## <a name="preregistration-asn"></a>Wstępna rejestracja (WPW)
 Dostawcy mogą udostępniać informacje o produktach, które zostaną wysłane. W takim przypadku można wstępnie zarejestrować produkty, aby odnotować te informacje, zanim produkty zostaną odebrane. Wstępna rejestracja produktów zmniejsza ilość pracy wymaganej podczas rejestracji i przyjęcia. Dostawcy mogą udostępniać informacje o produktach elektronicznie za pośrednictwem wcześniejszego powiadomienia o wysyłce (WPW), który jest następnie automatycznie rejestrowane w systemie. Informacje w WPW obejmują ilość produktów, które zostaną wydane, oraz datę wysyłki. WPW może również zawierać informacje takie jak dane partii lub numery seryjne. Rejestracja WPW następuje w module **Zarządzanie transportem**.
 
-## Rejestracja
-<a id="registration" class="xliff"></a>
+## <a name="registration"></a>Rejestracja
 Rejestrowanie przyjęcia produktów często następuje w dokach rozładunkowych w magazynie. Wykonuje się je przy użyciu ręcznego urządzenia albo za pomocą arkuszy przyjęć. Alternatywnie można ręcznie zarejestrować przyjęcie produktów za pomocą operacji **Rejestracja** na stronie **Zamówienie zakupu**. W obu przypadkach produkty są oznaczone jako **Zarejestrowane**. Należy zauważyć, że produkty nie są jeszcze oznaczone jako **Otrzymane**.  
 
 Produkty przyjęte do magazynu mogą przechodzić kontrolę jakości, zanim zostaną odłożone do zapasów. Do wykonywania kontroli jakości mogą być używane zlecenia kontroli jakości lub zlecenia kwarantanny. Jeśli są używane zlecenia kontroli jakości, można skonfigurować proces tymczasowego blokowania produktów za pomocą rezerwacji na okres, gdy są kontrolowane. Jeśli są używane zlecenia kwarantanny, produkty są przenoszone do innego magazynu w celu kontroli. Ten magazyn jest nazywany magazynem kwarantanny. W obu procesach kontroli jakości niektóre towary mogą zostać uznane za odpadki, ponieważ nie spełniają oczekiwań jakościowych albo kontrola jakości obejmuje badania niszczące próbki produktu.
 
-## Dokument przyjęcia produktów
-<a id="product-receipt" class="xliff"></a>
+## <a name="product-receipt"></a>Dokument przyjęcia produktów
 Najczęściej do oznaczania produktów z zamówienia zakupu jako **Otrzymane** jest używana operacja **Dokument przyjęcia produktów** znajdująca się na karcie **Zamówienie zakupu**. Strona **Księgowanie dokumentu przyjęcia produktów** zawiera różne opcje dotyczące ilości ujmowanej jako przyjęta. Na przykład w polu **Ilość** można ustawić wartość **Ilość zamówiona** lub **Ilość dostarczana teraz**. Alternatywnie w przypadku używania procesu przybycia do magazynu często w tym polu ustawia się wartość **Ilość zarejestrowana**. Można zmodyfikować ilości w każdym wierszu zamówienia, który ma zostać oznaczony jako **Otrzymane**, aby uwzględnić wszelkie rozbieżności, takie jak niedobór w dostawie i nadwyżka w dostawie. Podczas przyjęcia produktów należy podać identyfikator przyjęcia produktów, którym zazwyczaj jest odwołanie do dokumentu dostawy od dostawcy. Ten identyfikator jest wymagany przez księgowość, ponieważ umożliwia sprawdzanie lub inspekcję dokumentów dostawy od dostawcy względem faktycznie otrzymanych towarów oraz względem zaksięgowanych zapasów lub wydatków.  
 
 Jeśli pracownik zamówił towary przy użyciu zapotrzebowania na zakup, może zostać poproszony o własnoręczne potwierdzenie otrzymania produktu. To zachowanie konfiguruje się za pomocą przepływu pracy. Można skonfigurować warunki przepływu pracy tak, aby pasowały do procesu biznesowego w firmie.  
@@ -66,8 +62,7 @@ Po przetworzeniu przyjęcia produktów w zamówieniu zakupu stan zamówienia zak
 
 Do tej strony można przejść z grupy akcji **Przyjęcie** na stronie **Zamówienie zakupu**. Informacje zawarte w arkuszach obejmują szczegóły dotyczące ilości, dat i wymiarów.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Omówienie zamówień zakupu](purchase-order-overview.md)

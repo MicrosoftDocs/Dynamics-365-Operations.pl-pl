@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: abruer
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,8 +23,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobilny obszar roboczy Zatwierdzenia faktur
-<a id="invoice-approvals-mobile-workspace" class="xliff"></a>
+# <a name="invoice-approvals-mobile-workspace"></a>Mobilny obszar roboczy Zatwierdzenia faktur
 
 [!include[banner](../includes/banner.md)]
 
@@ -31,13 +31,11 @@ Ten temat zawiera informacje o komórkowym obszarze roboczym **Zatwierdzenia fak
 
 Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji komórkowej Microsoft Dynamics 365 for Unified Operations.
 
-## Przegląd
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Przegląd
 
 Komórkowy obszar roboczy **Zatwierdzenia faktur** pozwala pracownikom i kierownikom ds. rozrachunków z dostawcami wyświetlać faktury, które zostały im przypisane w procesie przepływu pracy nagłówków faktur od dostawców. Można wyświetlić informacje o fakturze, a nawet szczegóły wiersza i dystrybucji, aby podejmować najbardziej trafne decyzje o zatwierdzeniu. W obszarze roboczym można podjąć odpowiednie działania, aby przeprowadzić fakturę przez kolejne etapy przepływu pracy. 
 
-## Wymagania wstępne
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Wymagania wstępne
 
 Aby można było używać tego mobilnego obszaru roboczego, muszą być spełnione następujące wymagania wstępne.
 
@@ -64,16 +62,14 @@ Aby można było używać tego mobilnego obszaru roboczego, muszą być spełnio
 </tbody>
 </table>
 
-## Pobieranie i instalowanie aplikacji mobilnej
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Pobieranie i instalowanie aplikacji mobilnej
 
 Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
 -   [Telefony z systemem Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Logowanie do aplikacji mobilnej
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logowanie do aplikacji mobilnej
 
 1.  Uruchom aplikację na urządzeniu komórkowym.
 2.  Wprowadź adres URL usługi Microsoft Dynamics 365.
@@ -82,8 +78,7 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
     [![Ściąganie w celu odświeżenia](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Zatwierdzanie faktur w mobilnym obszarze roboczym Zatwierdzenia faktur
-<a id="approve-invoices-by-using-the-invoice-approvals-mobile-workspace" class="xliff"></a>
+## <a name="approve-invoices-by-using-the-invoice-approvals-mobile-workspace"></a>Zatwierdzanie faktur w mobilnym obszarze roboczym Zatwierdzenia faktur
 1.  Na urządzeniu przenośnym wybierz obszar roboczy **Zatwierdzenia faktur**.
 2.  Zaznacz fakturę, która została Ci przypisana w procesie przepływu pracy nagłówków faktur od dostawców.
 3.  Na stronie **Szczegóły faktury** przejrzyj informacje z nagłówka faktury, w tym o dostawcy i dacie.

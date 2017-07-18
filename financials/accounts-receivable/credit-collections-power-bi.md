@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations. Core
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -22,13 +23,11 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Pakiet zawartości usługi Power BI Zarządzanie kredytami i windykacją
-<a id="credit-and-collections-management-power-bi-content" class="xliff"></a>
+# <a name="credit-and-collections-management-power-bi-content"></a>Pakiet zawartości usługi Power BI Zarządzanie kredytami i windykacją
 
 W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft Power BI **Zarządzanie kredytami i windykacją**. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
-## Przegląd
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Przegląd
 
 Pakiet zawartości usługi Power BI zatytułowany **Zarządzanie kredytami i windykacją** jest przeznaczony dla kierowników ds. kredytów i windykacji oraz dla pracowników ds. windykacji. Zawiera najważniejsze mierniki kredytu i windykacji, takie jak wskaźnik rotacji należności w dniach, saldo zaległości, kwota udzielonych kredytów oraz odbiorcy z przekroczonym limitem kredytu. Wykorzystuje dane transakcyjne i przedstawia zagregowane widoki kredytów i windykacji dla wszystkich firm. Prezentuje także podział na firmy, grupy odbiorców i odbiorców.
 
@@ -41,12 +40,10 @@ Wszystkie kwoty są wyświetlane w walucie systemowej. Można ustawiać walutę 
 
 Domyślnie są wyświetlane dane kredytów i windykacji dla bieżącej firmy. Aby wyświetlić dane dla wszystkich firm, należy przypisać obowiązek **CustCollectionsBICrossCompany** do roli.
 
-## Przechodzenie do pakietu zawartości usługi Power BI
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r., pakiet zawartości usługi Power BI **Zarządzanie kredytami i windykacją** jest wyświetlany w obszarze roboczym **Kredyty i windykacja odbiorcy** .
 
-## Raporty umieszczone w pakiecie zawartości usługi Power BI
-<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
 
 Pakiet zawartości usługi Power BI **CustCollectionsBICrossCompany** obejmuje raport zawierający zbiór mierników. Te wskaźniki są wizualizowane jako wykresy, kafelki i tabele. Poniższa tabela zawiera omówienie wizualizacji dostępnych w pakiecie zawartości usługi Power BI **CustCollectionsBICrossCompany**.
 
@@ -65,16 +62,14 @@ Pakiet zawartości usługi Power BI **CustCollectionsBICrossCompany** obejmuje r
 
 Wykresy i kafelki we wszystkich tych raportach można filtrować i przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Można także użyć funkcji eksportu danych źródłowych do wyeksportowania danych podsumowanych w wizualizacji.
 
-## Rozszerzanie funkcjonalności pakietu zawartości usługi Power BI
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Rozszerzanie funkcjonalności pakietu zawartości usługi Power BI
 Za pomocą pakietów zawartości dostępnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) można dostarczać zaawansowane funkcje analityczne osobom, które się nie logują w programie Finance and Operations. Te pakiety zawartości można modyfikować, tak aby zawierały inne raporty lub wizualizacje, a następnie publikować je w swojej dzierżawie usługi Power BI.com na potrzeby wykonywania analiz.
 
 Pakiet zawartości usługi Power BI **Zarządzanie kredytami i windykacją** znajduje się w bibliotece zasobów wspólnych w usłudze LCS. Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).
 
 Uważaj, aby pobrać pakiet zawartości **Zarządzanie kredytami i windykacją** usługi Power BI odpowiedni do używanej wersji programu Finance and Operations.
 
-## Opis modelu danych i jednostek
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 
 Następujące dane są używane do wypełniania raportów w pakiecie zawartości usługi Power BI **Zarządzanie kredytami i windykacją**. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store).
 

@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93083
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
@@ -23,11 +24,9 @@ ms.openlocfilehash: a5dd28e79cbd66e79311c0549c63ea844394ab14
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/09/2017
 
-
 ---
 
-# Omówienie zamówień zakupu
-<a id="purchase-order-overview" class="xliff"></a>
+# <a name="purchase-order-overview"></a>Omówienie zamówień zakupu
 
 [!include[banner](../includes/banner.md)]
 
@@ -51,8 +50,7 @@ Poniższe artykuły zawierają omówienie różnych etapów, przez które przech
 -   [Przyjęcie produktów względem zamówień zakupu](product-receipt-against-purchase-orders.md)
 -   [Omówienie faktur od dostawców](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
-## Typy zamówień zakupu
-<a id="types-of-purchase-orders" class="xliff"></a>
+## <a name="types-of-purchase-orders"></a>Typy zamówień zakupu
 Istnieją trzy typy zamówień zakupu. Podczas tworzenia zamówienia zakupu należy określić jego typ. Na stronie **Parametry modułu Zaopatrzenie i sourcing** można skonfigurować domyślny typ nowych zamówień.
 
 | Typ zamówienia zakupu        | Opis                                                                                                                                                                                                                                                                           |
@@ -61,8 +59,7 @@ Istnieją trzy typy zamówień zakupu. Podczas tworzenia zamówienia zakupu nale
 | Zamówienie zakupu | Ten typ umożliwia tworzenie zamówień zakupu, gdy zamówienia mają być potwierdzane z dostawcą, ponieważ zamówienia są przetwarzane z użyciem przyjęcia i fakturowania, zanim dostawca otrzyma płatność. Tego rodzaju zamówienie zakupu jest najczęściej stosowane.                                                                          |
 | Zwrot towaru | Tego typu należy używać przy zwracaniu towarów do dostawcy. Ten typ zamówienia wymaga podania numeru autoryzacji zwrotu materiałów (RMA) otrzymanego od dostawcy. Numer RMA podaje się na karcie **Ogólne** w ustawieniach zamówienia zakupu. Wiersze zamówienia muszą mieć ilości ujemne. |
 
-## Stany zamówień zakupu
-<a id="purchase-order-statuses" class="xliff"></a>
+## <a name="purchase-order-statuses"></a>Stany zamówień zakupu
 Zamówienia zakupu zawierają kilka pól stanu, które wskazują postęp realizacji zamówienia. Wszystkie te pola są widoczne w widoku zamówienia **Nagłówek**, a niektóre z nich są również widoczne w siatce przeglądu wszystkich zamówień. Pole **Stan** pokazuje stan dotyczący ilości w zamówieniu. Dostępne są następujące wartości:
 
 -   **Otwarte zamówienie** — Zamówienia zostały utworzone i podano ilości w zamówieniu.
@@ -86,8 +83,7 @@ Pole **Stan zatwierdzenia** jest używane, gdy zamówienie zakupu przechodzi prz
 -   **Potwierdzone** — To stan przypisywany po potwierdzeniu zamówienia. Zazwyczaj ten stan jest ostatnim stanem zatwierdzania przypisywanym do zamówienia.
 
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Tworzenie zamówienia zakupu](purchase-order-creation.md)

@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,11 +25,9 @@ ms.openlocfilehash: c236c72c2f29578f5ce8f2e536bd708a6ef358a6
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-## Zasady akumulacji kosztów i obliczanie narzutu
-<a id="cost-rollup-policy-and-overhead-calculation" class="xliff"></a> 
+## <a name="cost-rollup-policy-and-overhead-calculation"></a>Zasady akumulacji kosztów i obliczanie narzutu 
 
 [!include[banner](../includes/banner.md)]
 
@@ -45,8 +44,7 @@ Aby uniknąć tych efektów, moduł Rachunek kosztów umożliwia skonfigurowanie
 > [!NOTE]
 > W razie zmiany wymagań w zakresie sprawozdawczości można zmieniać konfiguracje.
 
-## Przykład konfiguracji zasady akumulacji kosztów
-<a id="example-of-cost-rollup-policy-setup" class="xliff"></a>
+## <a name="example-of-cost-rollup-policy-setup"></a>Przykład konfiguracji zasady akumulacji kosztów
 
 Załóżmy, że organizacja ma następującą strukturę z 4 centrami kosztów.
 
@@ -155,8 +153,7 @@ Reguły alokacji kosztów można skonfigurować w następujący sposób.
 | CC001                                | Razem         | **Usługi kadrowe**        |
 | CC002                                | Razem         | **Usługi finansowe** |
 
-<br>Przepływ kosztów między centrami kosztów
-<a id="brhow-cost-flows-between-cost-centers" class="xliff"></a> 
+<a name="brhow-cost-flows-between-cost-centers"></a><br>Przepływ kosztów między centrami kosztów 
 ---------------------------------------------------
 
 Jeśli chcesz się dowiedzieć, jak koszty przepływają między centrami kosztów w organizacji, można dla każdego centrum kosztów utworzyć składniki kosztów typu **Podrzędny**. Te składniki kosztów będą następnie używane do przenoszenia sald między centrami kosztów podczas obliczania kosztów ogólnych.
@@ -207,8 +204,7 @@ Utwórz **zasadę akumulacji kosztów**, gdzie każde centrum kosztów jest zama
 | CC003                                | Rachunek zysków i strat               | **SC-CC003**           |
 | CC004                                | Rachunek zysków i strat               | **SC-CC004**           |
 
-## Obliczanie kosztów ogólnych
-<a id="perform-overhead-calculation" class="xliff"></a>
+## <a name="perform-overhead-calculation"></a>Obliczanie kosztów ogólnych
 
 **Arkusz**
 
@@ -257,8 +253,7 @@ Strona **Szczegóły wpisu w arkuszu sald kosztów obiektów kosztów** otwieran
 
 Po zakończeniu **obliczania kosztów ogólnych** można zaraportować wyniki przy użyciu narzędzi takich jak Microsoft SharePoint Workspace, Excel lub Power BI.
 
-## Wyświetlanie raportów w programie Excel
-<a id="view-reporting-in-excel" class="xliff"></a> 
+## <a name="view-reporting-in-excel"></a>Wyświetlanie raportów w programie Excel 
 
 Hierarchie wymiarów umożliwiają wyświetlanie danych na różnych poziomach agregacji.
 
@@ -302,8 +297,7 @@ Wyraźne rozgraniczenie między **alokacją kosztów** a **zasadami akumulacji k
 
 
 
-## Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Informacje dodatkowe
 -  [Wymiary obiektów kosztów](cost-objects.md)
 -  [Wymiary składników kosztów](cost-elements.md)
 -  [Hierarchie wymiarów](dimension-hierarchy.md)

@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 259594
 ms.assetid: 52576fad-32b9-48f2-8197-c11ec313fc29
 ms.search.region: Global
 ms.author: ryansand
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 1d23c0e1725a39d25d2be8971f541b2c31bbe859
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Dokumenty uzasadnienia planowania budżetu
-<a id="budget-planning-justification-documents" class="xliff"></a>
+# <a name="budget-planning-justification-documents"></a>Dokumenty uzasadnienia planowania budżetu
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Dokumenty uzasadnienia dostarczają osobom wnioskującym o budżet wyjaśnień, 
 
 Menedżera budżetu tworzy szablon planu budżetu w programie Microsoft Word i przypisuje go do bieżącego procesu planowania budżetu. Następnie właściciele budżetów mogą otworzyć szablon i automatycznie wypełnić dane w programie Word na podstawie swoich żądań budżetów. Potem mogą wprowadzić dodatkowy tekst lub dane, a następnie zapisać i dołączyć spersonalizowany dokument uzasadnienia do planu budżetu.
 
-##### Konfigurowanie dodatku pakietu Office dla usługi Microsoft Dynamics dla programu Word
-<a id="set-up-microsoft-dynamics-office-add-in-for-microsoft-word" class="xliff"></a>
+##### <a name="set-up-microsoft-dynamics-office-add-in-for-microsoft-word"></a>Konfigurowanie dodatku pakietu Office dla usługi Microsoft Dynamics dla programu Word
 
 1.  Otwórz nowy dokument programu Microsoft Word.
 2.  Na wstążce kliknij przycisk **Wstaw**, a następnie kliknij opcję **Sklep**.
@@ -44,8 +42,7 @@ Menedżera budżetu tworzy szablon planu budżetu w programie Microsoft Word i p
 4.  W programie Word w prawym okienku kliknij opcję **Dodaj informacje dotyczące serwera**.
 5.  Wpisz lub wklej adres URL serwera i kliknij przycisk **OK**.
 
-##### Definiowanie szablonu uzasadnienia w programie Microsoft Word
-<a id="define-the-justification-template-in-microsoft-word" class="xliff"></a>
+##### <a name="define-the-justification-template-in-microsoft-word"></a>Definiowanie szablonu uzasadnienia w programie Microsoft Word
 
 1.  Po zalogowaniu w dodatku pakietu Office dla usługi Microsoft Dynamics kliknij opcję **Projekt**.
 2.  Dla informacji nagłówka użyj przycisku **Dodaj pola**.
@@ -58,8 +55,7 @@ Menedżera budżetu tworzy szablon planu budżetu w programie Microsoft Word i p
 9.  Wprowadź wszelkie dodatkowe instrukcje dla użytkownika końcowego i zastosuj do dokumentu niezbędne formatowanie lub style.
 10. Zapisz dokument na lokalnym komputerze i zamknij plik.
 
-##### Konfigurowanie używania szablonu uzasadnienia w procesie planowania budżetu
-<a id="set-up-the-budget-planning-process-to-use-the-justification-template" class="xliff"></a>
+##### <a name="set-up-the-budget-planning-process-to-use-the-justification-template"></a>Konfigurowanie używania szablonu uzasadnienia w procesie planowania budżetu
 
 1.  W programie Finance and Operations wybierz kolejno opcje **Budżetowanie** &gt; **Ustawienia** &gt; **Planowanie budżetu** &gt; **Szablony dokumentów uzasadnienia**.
 2.  Kliknij przycisk **Nowy** i przejdź do nowo utworzonego dokumentu programu Microsoft Word.
@@ -68,8 +64,7 @@ Menedżera budżetu tworzy szablon planu budżetu w programie Microsoft Word i p
 5.  Zaznacz proces, w którym ma być używany szablon uzasadnienia, i kliknij przycisk **Edytuj**.
 6.  W polu **Szablon dokumentu uzasadnienia** zaznacz odpowiedni szablon i zapisz.
 
-##### Edytowanie i zapisywanie spersonalizowanych dokumentów uzasadnienia
-<a id="edit-and-save-personalized-justification-documents" class="xliff"></a>
+##### <a name="edit-and-save-personalized-justification-documents"></a>Edytowanie i zapisywanie spersonalizowanych dokumentów uzasadnienia
 
 1.  W programie Finance and Operations utwórz nowy planu budżetu lub otwórz istniejący plan budżetu.
 2.  W menu rozwijanym **Uzasadnienie** wybierz polecenie **Utwórz nowe uzasadnienie**.

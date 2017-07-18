@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations, Talent, Core
 ms.search.region: Global
 ms.author: JCart
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,22 +23,19 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Pakiet zawartości usługi Power BI Świadczenia
-<a id="benefits-power-bi-content" class="xliff"></a>
+# <a name="benefits-power-bi-content"></a>Pakiet zawartości usługi Power BI Świadczenia
 
 [!include[banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartość **Świadczenia** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
-## Przechodzenie do pakietu zawartości usługi Power BI
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 Pakiet zawartości usługi Power BI zatytułowany **Świadczenia** jest wyświetlany w obszarze roboczym **Zarządzanie świadczeniami**, jeśli używasz jednego z następujących produktów:
 
 - Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r.
 - Microsoft Dynamics 365 for Talent
 
-## Raporty umieszczone w pakiecie zawartości usługi Power BI
-<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
 Raporty dostępne w pakiecie zawartości usługi Power BI **Świadczenia** mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
 
 | Raport                       | Zawartość                                                                                       |
@@ -47,8 +45,7 @@ Raporty dostępne w pakiecie zawartości usługi Power BI **Świadczenia** mają
                                                                                              
 Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## Rozszerzanie funkcjonalności pakietu zawartości usługi Power BI
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Rozszerzanie funkcjonalności pakietu zawartości usługi Power BI
 Za pomocą pakietów zawartości dostępnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) można dostarczać zaawansowane funkcje analityczne osobom, które się nie logują w programie Finance and Operations. Te pakiety zawartości można modyfikować, tak aby zawierały inne raporty lub wizualizacje, a następnie publikować je w swojej dzierżawie usługi Power BI.com na potrzeby wykonywania analiz.
 
 Pakiet zawartości usługi Power BI **Świadczenia** znajduje się w bibliotece zasobów wspólnych w usłudze LCS. Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).
@@ -56,8 +53,7 @@ Pakiet zawartości usługi Power BI **Świadczenia** znajduje się w bibliotece 
 >[!NOTE]
 >Pliki .pbix dostępne w usłudze Lifecycle Services dotyczą tylko modułu Finance and Operations.
 
-## Opis modelu danych i jednostek
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 Następujące dane są używane do wypełniania raportów w pakiecie zawartości usługi Power BI **Świadczenia**. W tej tabeli przedstawiono jednostki, na których bazuje pakiet.
 
 | Jednostka                   | Zawartość                                                                                                   | Powiązania z innymi jednostkami |

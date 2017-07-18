@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 8daf9d0c5b83e3bca66c0229a328737adeeb2951
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Skróty klawiaturowe
-<a id="keyboard-shortcuts" class="xliff"></a>
+# <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Następujące skróty klawiaturowe mają zastosowanie w całym programie Microso
 
 **Uwaga:** skróty klawiaturowe opisane w tym miejscu odnoszą się do amerykańskiego układu klawiatury. Klawisze w innych układach mogą nie odpowiadać dokładnie klawiszom na klawiaturze w układzie amerykańskim.
 
-## Skróty akcji
-<a id="action-shortcuts" class="xliff"></a>
+## <a name="action-shortcuts"></a>Skróty akcji
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | **Funkcja**                                    | **Naciśnij**                        |
@@ -53,8 +51,7 @@ Następujące skróty klawiaturowe mają zastosowanie w całym programie Microso
 
  
 
-## Skróty selektora dat
-<a id="date-picker-shortcuts" class="xliff"></a>
+## <a name="date-picker-shortcuts"></a>Skróty selektora dat
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Funkcja**                        | **Naciśnij**                                 |
@@ -65,8 +62,7 @@ Następujące skróty klawiaturowe mają zastosowanie w całym programie Microso
 
  
 
-## Skróty pola informacji
-<a id="factbox-shortcuts" class="xliff"></a>
+## <a name="factbox-shortcuts"></a>Skróty pola informacji
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | Otwórz okienko pola informacji (lub przenieś zaznaczenie na okienko pola informacji, jeśli jest już otwarte) | Ctrl+F2                                   |
@@ -78,8 +74,7 @@ Następujące skróty klawiaturowe mają zastosowanie w całym programie Microso
 
  
 
-## Filtrowanie skrótów
-<a id="filtering-shortcuts" class="xliff"></a>
+## <a name="filtering-shortcuts"></a>Filtrowanie skrótów
 |                                                                                                                     |               |
 |---------------------------------------------------------------------------------------------------------------------|---------------|
 | **Funkcja**                                                                                                      | **Naciśnij**     |
@@ -91,8 +86,7 @@ Następujące skróty klawiaturowe mają zastosowanie w całym programie Microso
 
  
 
-## Skróty formularza
-<a id="form-shortcuts" class="xliff"></a>
+## <a name="form-shortcuts"></a>Skróty formularza
 |                                                                                                                                 |                   |
 |---------------------------------------------------------------------------------------------------------------------------------|-------------------|
 | **Funkcja**                                                                                                                  | **Naciśnij**         |
@@ -114,8 +108,7 @@ Następujące skróty klawiaturowe mają zastosowanie w całym programie Microso
 
  
 
-## Skróty nawigacji formularza
-<a id="form-navigation-shortcuts" class="xliff"></a>
+## <a name="form-navigation-shortcuts"></a>Skróty nawigacji formularza
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | **Funkcja**                                      | **Naciśnij**                                    |
@@ -136,8 +129,7 @@ Następujące skróty klawiaturowe mają zastosowanie w całym programie Microso
 
  
 
-## Skróty siatki
-<a id="grid-shortcuts" class="xliff"></a>
+## <a name="grid-shortcuts"></a>Skróty siatki
 |                                                                                                               |                                 |
 |---------------------------------------------------------------------------------------------------------------|---------------------------------|
 | **Funkcja**                                                                                                | **Naciśnij**                       |
@@ -155,8 +147,7 @@ Następujące skróty klawiaturowe mają zastosowanie w całym programie Microso
 
  
 
-## Skróty wpisywania danych
-<a id="input-control-shortcuts" class="xliff"></a>
+## <a name="input-control-shortcuts"></a>Skróty wpisywania danych
 |                                                            |                               |
 |------------------------------------------------------------|-------------------------------|
 | **Funkcja**                                             | **Naciśnij**                     |
@@ -171,8 +162,7 @@ Następujące skróty klawiaturowe mają zastosowanie w całym programie Microso
 
  
 
-## Skróty wiadomości
-<a id="messaging-shortcuts" class="xliff"></a>
+## <a name="messaging-shortcuts"></a>Skróty wiadomości
 |                          |               |
 |--------------------------|---------------|
 | **Funkcja**           | **Naciśnij**     |
@@ -181,8 +171,7 @@ Następujące skróty klawiaturowe mają zastosowanie w całym programie Microso
 
  
 
-## Skróty nawigacji
-<a id="navigation-shortcuts" class="xliff"></a>
+## <a name="navigation-shortcuts"></a>Skróty nawigacji
 |                                                                           |                 |
 |---------------------------------------------------------------------------|-----------------|
 | **Funkcja**                                                            | **Naciśnij**       |
@@ -197,8 +186,7 @@ Następujące skróty klawiaturowe mają zastosowanie w całym programie Microso
 
  
 
-## Skróty wpis podzielonego na segmenty
-<a id="segmented-entry-shortcuts" class="xliff"></a>
+## <a name="segmented-entry-shortcuts"></a>Skróty wpis podzielonego na segmenty
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | **Funkcja**                                                                                                          | **Klawisze**                        |

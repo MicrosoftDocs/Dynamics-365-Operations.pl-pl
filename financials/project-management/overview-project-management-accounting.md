@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 87983
 ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 12afcde947463b3abf58dea6138653a32dcda6f1
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Zarządzanie projektami i ich księgowanie
-<a id="project-management-and-accounting" class="xliff"></a>
+# <a name="project-management-and-accounting"></a>Zarządzanie projektami i ich księgowanie
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,14 +34,12 @@ Funkcji zarządzanie projektami i ich księgowania można używać w wielu bran�
 
 Projekt to grupa działań mających na celu dostarczenie usługi, wytworzenie produktu lub osiągniecie celu. Projekty zużywają zasoby i generują wyniki finansowe w formie przychodów lub aktywów.
 
-## Projekty różnych branż
-<a id="projects-across-industries" class="xliff"></a>
+## <a name="projects-across-industries"></a>Projekty różnych branż
 Funkcje zarządzania projektami i księgowania można wykorzystywać w różnych branżach, jak pokazano na poniższej ilustracji. [![Projekty w różnych branżach](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
 W biurze obsługi można użyć biletu do opisania zestawu działań wymaganych do rozwiązania zgłoszonego problemu. Firmy konsultingowe, takie jak organizacje zarządzające, reklamowe lub świadczące usługi w zakresie porad technicznych, nazywają swoje działania projektami. W marketingu kampania oznacza pakiet pracy, która musi zostać dostarczona. W produkcji na podstawie projektu, zlecenie produkcyjne dotyczy różnych prac, które muszą być wykonane w celu wyprodukowania gotowego towaru. Niezależnie od nazwy tych projektów, obejmują one zasoby, harmonogramy i koszty, a funkcje zarządzania projektem i księgowania w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition pomagają w planowaniu, wykonaniu i analizie tych projektów.
 
-## Fazy projektu
-<a id="project-phases" class="xliff"></a>
+## <a name="project-phases"></a>Fazy projektu
 Mimo że przebieg poniższego procesu jest ukierunkowany na projekty zewnętrzne lub projekty realizowane dla jednego lub kilku odbiorców, funkcja ma także zastosowanie do wewnętrznych projektów dotyczących tylko kosztów. 
 
 ![3 etapy projektu](./media/3-stages-of-a-project.png) 
@@ -53,12 +50,10 @@ Jak pokazano na poprzedniej ilustracji, zarządzanie projektami i ich księgowan
 2.  Wykonaj
 3.  Analizuj
 
-## Inicjowanie projektu
-<a id="initiate-the-project" class="xliff"></a>
+## <a name="initiate-the-project"></a>Inicjowanie projektu
 Przy uruchamianiu projektu występuje kilka kluczowych procesów. Za pomocą ofert w ramach projektu można informować odbiorcę o szacowanej robociźnie, wydatkach i materiałach. Można rejestrować warunki fakturowania, limity i porozumienia w ramach umowy dotyczącej projektu. Struktura podziału pracy (SPP) umożliwia planowanie i szacowanie pracy. Jako wytyczne wykonania projektu można ustawić prognozy i budżety. Poniższa ilustracja pokazuje strukturę projektu.[![struktura projektu](./media/project-structure1.jpg)](./media/project-structure1.jpg)  
 
-### Utwórz oferty w ramach projektu
-<a id="create-project-quotations" class="xliff"></a>
+### <a name="create-project-quotations"></a>Utwórz oferty w ramach projektu
 
 W fazie początkowej sprzedaży projektu, oferty w ramach projektu umożliwiają przedstawienie odbiorcy niewiążącej oferty. Oferta może obejmować wiele elementów, na przykład oferowane towary i usługi, podstawowe informacje kontaktowe, specjalne umowy handlowe i rabaty oraz możliwe podatki i dopłaty.
 
@@ -66,27 +61,23 @@ Można także wystawić poręczenie dla transakcji oferty w ramach projektu mię
 
 Aby uzyskać więcej informacji, zobacz [Oferty w ramach projektu](project-quotations.md).
 
-### Tworzenie umów dotyczących projektów
-<a id="create-project-contracts" class="xliff"></a>
+### <a name="create-project-contracts"></a>Tworzenie umów dotyczących projektów
 
 Po zawarciu umowy z odbiorcą lub innym źródłem finansowania w celu realizacji projektu musisz najpierw utworzyć umowę dotyczącą projektu. Następnie podczas tworzenia projektu, należy przypisać go do odpowiedniej umowy. Typ projektu tworzonego dla umowy dotyczącej projektu określa metodę wystawiania faktur dla klientów projektu. Umowę dotyczącą projektu i powiązany projekt można zmienić, ale nie można zmienić typu projektu. Aby uzyskać więcej informacji dotyczących typów projektów zobacz sekcję "Tworzenie projektów".
 
 Aby uzyskać więcej informacji o umowie dotyczącej projektu, zobacz [Umowy dotyczące projektu](project-contracts.md).
 
-### Tworzenie struktury podziału pracy
-<a id="create-work-breakdown-structures" class="xliff"></a>
+### <a name="create-work-breakdown-structures"></a>Tworzenie struktury podziału pracy
 
 Stopień szczegółowości w SPP zależy od poziomu dokładności, jaki jest wymagany w szacunkach i poziomu śledzenia, który jest wymagany dla tych oszacowań. Projektów o bardzo małej tolerancji na opóźnienia harmonogramu czy wahania kosztów zazwyczaj wymagają bardziej szczegółowych SPP i dokładnego monitorowania postępów pracy i kosztów względem SPP. 
 
 Aby uzyskać więcej informacji, zobacz [Struktury podziału pracy](work-breakdown-structures.md).
 
-### Tworzenie prognoz i budżetów projektów
-<a id="create-project-forecasts-and-budgets" class="xliff"></a>
+### <a name="create-project-forecasts-and-budgets"></a>Tworzenie prognoz i budżetów projektów
 
 Korzystaj z prognozowania projektu, jeśli Twoja organizacja ma perspektywę organizacyjną i koncentruje się przychodach i kosztach pochodzących z określonych transakcji. Korzystaj z budżetowania projektu, jeśli Twoja organizacja bardziej koncentruje się na kwotach finansowych. Każda metoda ma swoje zalety. Aby uzyskać więcej informacji, zobacz [Budżety i prognozy projektu](project-forecasts-budgets.md).
 
-### Tworzenie projektów
-<a id="create-projects" class="xliff"></a>
+### <a name="create-projects"></a>Tworzenie projektów
 
 W programie Finance and Operations można utworzyć sześć typów projektów. W każdym z nich inaczej konfiguruje się rozpoznanie kosztów i przychodów. Wybrany typ projektu zależy od przeznaczenia projektu. W poniższej tabeli opisano typowe użycie każdego typu projektu.
 
@@ -101,8 +92,7 @@ W programie Finance and Operations można utworzyć sześć typów projektów. W
 | Godzina              | Projekty czasowe służą do śledzenia czasu skojarzonego z niepłatnymi i i nieproduktywnymi działaniami, takimi jak projekt śledzenia zwolnień dla pracowników. Transakcje w projektach typu czas nie są księgowane w księdze. Zamiast tego są uwzględniane w raportach wykorzystania pracownika. Tylko transakcje godzinowe mogą być rejestrowane w projektach czasowych. Arkusz godzin lub karta czasu pracy służy do rejestrowania tych godzin w projekcie. Po zarejestrowaniu godzin są one wyświetlane w postaci transakcji projektu, ale nie mają odpowiadających transakcji na załączniku. **Uwaga:** Transakcje w projektach czasowych nie są uwzględniane na stronach **Księgowanie kosztów**, **Naliczanie przychodów** ani **Tworzenie propozycji faktur**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 
-### Przypisywanie pracowników, kategorii i zasobów
-<a id="assign-workers-categories-and-resources" class="xliff"></a>
+### <a name="assign-workers-categories-and-resources"></a>Przypisywanie pracowników, kategorii i zasobów
 
 Można planować zasoby pracowników w oparciu o wymagania i harmonogram projektu lub o umiejętności i dostępność pracowników. Używając funkcji planowania zasobów, można wydajnie i efektywnie rozdzielać pracowników organizacji. Można szybko znaleźć najbardziej wykwalifikowanych pracowników, którzy są dostępni do pracy nad projektem. Można także łatwo zobaczyć, jak efektywniej wykorzystać tych pracowników podczas trwania projektu. 
 
@@ -115,26 +105,22 @@ Poniżej przedstawiono sposoby wykorzystania funkcji planowania zasobów:
 -   Przegląd informacji o wykorzystaniu pracownika w ujęciu sumarycznym, np. według działu lub pracownika, lub w widoku szczegółowym, np. wg pracowników w dziale lub tygodniowych szczegółów dla każdego pracownika.
 -   Modyfikowanie przydziałów zasobów dla różnych jednostek czasu, takich jak dzień, tydzień lub miesiąc, aby zoptymalizować wykorzystanie pracowników.
 
-## Realizacja projektów
-<a id="execute-the-project" class="xliff"></a>
+## <a name="execute-the-project"></a>Realizacja projektów
 W czasie wykonywania projektu członkowie zespołu i menedżerowie rejestrują pracę i poniesione wydatki przy użyciu kart czasu pracy, raportów wydatków i innych dokumentów biznesowych. Menedżerowie projektu korzystają z narzędzi do śledzenia wykorzystania kwot budżetu projektu. Menedżerowie projektów mogą również zamawiać, pobierać lub dostarczać materiały do projektów za pomocą zamówień zakupu i innych dokumentów biznesowych. Faktury są przygotowane i zatwierdzane, tak aby można było wystawiać faktury dla odbiorców za pracę w toku. Na koniec tego procesu szacowany jest przychód i uwzględniany w finansach organizacji.
 
-### Zarządzanie strukturą podziału pracy
-<a id="manage-work-breakdown-structures" class="xliff"></a>
+### <a name="manage-work-breakdown-structures"></a>Zarządzanie strukturą podziału pracy
 
 SPP to opis pracy, która zostanie wykonana w ramach projektu. Struktura podziału pracy jest hierarchią zadań. Reprezentuje ona nie tylko pracę dla każdego zadania, ale również zakres, koszt i czas trwania zadania. 
 
 Aby uzyskać więcej informacji, zobacz [Struktury podziału pracy](work-breakdown-structures.md).
 
-### Zarządzanie prognozami i budżetami projektów
-<a id="manage-project-forecasts-and-budgets" class="xliff"></a>
+### <a name="manage-project-forecasts-and-budgets"></a>Zarządzanie prognozami i budżetami projektów
 
 Obsługa i kontrola projektów jest możliwa na dwa sposoby: za pomocą prognoz projektów i budżetów projektów. Korzystaj z prognozowania projektu, jeśli Twoja organizacja ma perspektywę organizacyjną i koncentruje się przychodach i kosztach pochodzących z określonych transakcji. Korzystaj z budżetowania projektu, jeśli Twoja organizacja bardziej koncentruje się na kwotach finansowych.
 
 Aby uzyskać więcej informacji, zobacz [Budżety i prognozy projektu](project-forecasts-budgets.md).
 
-### Tworzenie zlecenia produkcyjnego
-<a id="create-production-orders" class="xliff"></a>
+### <a name="create-production-orders"></a>Tworzenie zlecenia produkcyjnego
 
 Zlecenie produkcyjne związane z projektem może być połączone z zamówieniem sprzedaży lub zapotrzebowaniem na towar przy użyciu metody towaru gotowego lub metody towaru zużytego. Ponadto, jeśli zlecenie produkcyjne zostało utworzone ręcznie, nie ma żadnego połączenia między zleceniem produkcyjnym i zamówieniem sprzedaży lub zapotrzebowaniem na towary (brak połączenia z zamówieniem). Ale w przypadku automatycznego utworzenia zlecenia produkcyjnego w celu zrealizowania zamówienia sprzedaży lub zapotrzebowaniem na towar, istnieje powiązanie między zleceniem produkcyjnym i zamówieniem sprzedaży lub zapotrzebowaniem na towary (łącze do zamówienia). 
 
@@ -145,13 +131,11 @@ Na podstawie kombinacji tych czynników, użyj jednej z następujących metod:
 -   **Towar zużyty/Połączenie z zamówieniem** – powiąż projekt z zapotrzebowaniem na towar. Dzięki tej metodzie można przejrzeć rzeczywiste koszty projektu, gdy produkcja ma stan **Rozpoczęte** lub gdy jest zgłoszona jako gotowa. Koszty zostaną zaksięgowane jako wiele transakcji towarów projektu odnoszących się do surowców i godzin zużytych w ramach produkcji. Po zaktualizowaniu dokumentu dostawy, z uwzględnieniem zapotrzebowanie na towar, koszty projektowe nie są księgowane. Można zdefiniować poziom hierarchii listy składowej (BOM), przy którym powinny być śledzone projekty w ramach produkcji.
 -   ****Towar zużyty/brak połączenia z zamówieniem**** — powiąż projekt z zapotrzebowaniem na towar. Dzięki tej metodzie można przejrzeć rzeczywiste koszty projektu, gdy produkcja ma stan **Rozpoczęte** lub gdy jest zgłoszona jako gotowa. Koszty zostaną zaksięgowane jako wiele transakcji towarów projektu odnoszących się do surowców i godzin zużytych w ramach produkcji. Można zdefiniować poziom hierarchii listy składowej (BOM), przy którym powinny być śledzone projekty w ramach produkcji.
 
-### Zaopatrzenie w produkty i usługi
-<a id="procure-products-and-services" class="xliff"></a>
+### <a name="procure-products-and-services"></a>Zaopatrzenie w produkty i usługi
 
 Zakup i sprzedaż towarów są dominującymi działaniami firmach skoncentrowanych na projekcie.
 
-#### Zamówienia zakupu dla projektu
-<a id="purchase-orders-for-projects" class="xliff"></a>
+#### <a name="purchase-orders-for-projects"></a>Zamówienia zakupu dla projektu
 
 Cel zamówienia zakupu wyznacza termin realizacji zamówienia zakupu, a w konsekwencji termin uwzględnienia towarów w projekcie.
 
@@ -191,8 +175,7 @@ Cel zamówienia zakupu wyznacza termin realizacji zamówienia zakupu, a w konsek
 </tbody>
 </table>
 
-#### Zamówienia sprzedaży dla projektów
-<a id="sales-orders-for-projects" class="xliff"></a>
+#### <a name="sales-orders-for-projects"></a>Zamówienia sprzedaży dla projektów
 
 W zarządzaniu projektami księgowaniu można rejestrować zużycie towarów na różne sposoby. Można sprzedawać lub kupować towary z projektu, albo rezerwować towary dla projektu. 
 
@@ -215,8 +198,7 @@ W poniższej tabeli wymieniono metody zamawiania towarów i opisano sposób wyko
 | Zapotrzebowanie na pozycje  | Wprowadź towary, które nie zostaną zużyte natychmiast. Ta metoda umożliwia użytkownikom śledzenie liczby towarów zużytych w ramach jednego rekordu zapotrzebowania na towary.    | Transakcje towarowe są zużywane w momencie zaktualizowania dokumentu dostawy. Oznacza to, że zapotrzebowanie na towary jest tworzone w momencie zaksięgowania dokumentu dostawy. |
 | Zamówienia zakupu   | Wprowadź transakcje w jednej z trzech lokalizacji, zależnie od metody zakupu.                                                                              | Transakcje towarowe są zużywane w momencie zaktualizowania dokumentu dostawy albo utworzenia faktury dla odbiorcy lub dostawcy.                                      |
 
-### Przetwarzanie faktur dotyczących projektu
-<a id="process-project-invoices" class="xliff"></a>
+### <a name="process-project-invoices"></a>Przetwarzanie faktur dotyczących projektu
 
 Typ projektu określa, która procedura fakturowania powinna zostać zastosowana. Tylko dwa typy projektów zewnętrznych, czas i materiały oraz o stałej cenie, mogą być fakturowane. Projekty typu czas i materiały oraz projekty o stałej cenie są zawsze dołączane do umowy dotyczącej projektu. 
 
@@ -226,8 +208,7 @@ Przed utworzeniem faktury odbiorcy dla projektu, można utworzyć fakturę wstę
 Aby uzyskać więcej informacji dotyczących przetwarzania faktur w projekcie, zobacz [Fakturowanie projektu](../accounts-payable/project-invoicing.md).
 
 
-### Obliczanie kosztu do zakończonego projektu
-<a id="calculate-the-cost-to-complete-a-project" class="xliff"></a>
+### <a name="calculate-the-cost-to-complete-a-project"></a>Obliczanie kosztu do zakończonego projektu
 
 Podczas tworzenia oszacowania można wybrać metodę, która jest używana do obliczania kosztu ukończenia projektu. Wybierz metodę w polu **Metoda Koszt do zakończenia** na stronie **Tworzenie oszacowania**. Wybrana metoda będzie stosowana osobno w wierszach kosztów szacowania kosztów. Gdy wiersz ma stan **Utworzone**, można zmienić metodę stosowaną do niego na stronie **szacowania kosztów**. 
 
@@ -279,21 +260,18 @@ Program Finance and Operations nie zmniejsza automatycznie prognozowanych oszaco
 </tbody>
 </table>
 
-## Analizowanie projektu
-<a id="analyze-the-project" class="xliff"></a>
+## <a name="analyze-the-project"></a>Analizowanie projektu
 Na najbardziej podstawowym poziomie projekt jest używany do grupowania transakcji rejestrujących koszty i księgowania tych kosztów w księdze głównej. 
 
 Ogólnie rzecz biorąc, transakcje te są wynikiem dokumentów biznesowych, takich jak karty czasu pracy, raporty z wydatków, faktury od dostawcy lub transakcje magazynowe. Zazwyczaj cykl życia projektu rozpoczyna się od szacunki, prognoz i budżetów, które pomagają w planowaniu i przewidywaniu pracy oraz wpływu finansowego projektu. Podczas analizy projektu można ocenić nie tylko transakcje, które wystąpiły w trakcie projektu, ale również dokładność oszacowania i prognoz, stawki wykorzystania członków zespołu projektu i ogólny sukces projektu.
 
-### Analiza przepływu gotówki
-<a id="analyze-cash-flow" class="xliff"></a>
+### <a name="analyze-cash-flow"></a>Analiza przepływu gotówki
 
 Za pomocą monitorowania przepływów pieniężnych można kontrolować zarówno prognozowane, jak i rzeczywiste przepływy gotówkowe dla projektu. Można kontrolować przepływy pieniężne w trakcie projektu, a także wyświetlać ich stan po ukończeniu projektu. 
 
 Monitorują przepływy pieniężne, można ocenić konkretny projekt, korzystać z raportów w celu kontroli wielu projektów i przenosić przepływy pieniężne projektu do prognoz w księdze głównej.
 
-#### Prognozowanie przepływów pieniężnym
-<a id="cash-inflow-forecasting" class="xliff"></a>
+#### <a name="cash-inflow-forecasting"></a>Prognozowanie przepływów pieniężnym
 
 Na podstawie konfiguracji można prognozować wpływy gotówki dla wybranego projektu. Na przykład, jeśli datą projektu jest 5 marca 2012 roku, a faktura ma zostać wystawiona 31 marca 2012 roku, oto jak można przewidzieć termin realizacji i datę oczekiwanej płatności za sprzedaż
 
@@ -309,8 +287,7 @@ Ogólne dni buforowe mogą zastąpić indywidualne dni buforowe lub zostać doda
 
 Ustaw indywidualne dni buforowe w umowie dotyczącej projektu. Dni są obliczane na podstawie daty płatności faktury sprzedaży dotychczasowych doświadczeń firmy ze schematem płatności odbiorcy.
 
-#### Rzeczywiste przychody gotówkowe
-<a id="actual-cash-inflow" class="xliff"></a>
+#### <a name="actual-cash-inflow"></a>Rzeczywiste przychody gotówkowe
 
 Rzeczywiste przepływy pieniężne są podobne do przepływów prognozowanych, umożliwiają jednak rozpoczęcie obliczeń od pierwszej daty faktury. Oto przykład:
 
@@ -318,8 +295,7 @@ Rzeczywiste przepływy pieniężne są podobne do przepływów prognozowanych, u
 -   **Data wykonania:** 16 marca 2012 r. Warunki płatności są ustawione na 14 dni.
 -   **Data oczekiwanej płatności za sprzedaż:** 29 marca 2012 r. Obliczenie obejmuje trzy ogólne dni buforowe i 10 indywidualnych dni buforowych.
 
-#### Prognozowanie kosztów
-<a id="cost-forecasting" class="xliff"></a>
+#### <a name="cost-forecasting"></a>Prognozowanie kosztów
 
 Na podstawie zdefiniowanych dni data płatności kosztu może się różnić od daty projektu. W takim przypadku data płatności kosztu jest obliczana przez dodanie liczby dni od daty projektu do liczby dni w polu warunki płatności. 
 
@@ -348,16 +324,14 @@ Po zakończeniu wszystkich sprzedaży i faktur dostawcy można wyświetlić rela
 | Rozchody gotówkowe  | Łączny koszt              |
 | Przychody gotówkowe netto | Marża brutto            |
 
-### Przegląd kosztów
-<a id="review-costs" class="xliff"></a>
+### <a name="review-costs"></a>Przegląd kosztów
 
 Istnieje możliwość monitorowania kosztów ponoszonych przez organizację w czasie trwania projektu na stronie **Kontrola kosztów**. Przez porównanie pierwotnie zaplanowane koszty projektu z bieżącymi kosztami rzeczywistymi i kosztami ustalonymi można określić, czy projekt mieści się w budżecie, przekracza budżet lub jego koszty są mniejsze niż przewidywane. 
 
 > [!NOTE] 
 > Korzystając ze strony **Kontrola kosztów** do sprawdzenia bieżącego kosztu projektu, użyj modeli prognozy wybranych dla pierwotnego i pozostałego budżetu. Jeśli podczas obliczania kosztów wybierzesz inne modele prognozy, wyniki obliczeń nie będą prawidłowe.
 
-#### Wyświetlanie pozostałych zaplanowanych kosztów
-<a id="viewing-the-remaining-budgeted-amounts" class="xliff"></a>
+#### <a name="viewing-the-remaining-budgeted-amounts"></a>Wyświetlanie pozostałych zaplanowanych kosztów
 
 Jeśli wybierzesz **Pozostały budżet** jako metodę kontroli kosztów na stronie **Parametry modułu Zarządzanie projektami i ich księgowanie**, strona **Kontrola kosztów** obliczy koszty, które jeszcze nie zostały zaksięgowane jako rzeczywiste ani oznaczone jako ustalone. W szczególności kwoty na karcie **Ogólne** w dolnym okienku strony **Kontrola kosztów** są obliczane w następujący sposób:
 
@@ -374,8 +348,7 @@ Na stronie **Kontrola kosztów**, na karcie **Odchylenia**, możesz przejrzeć p
 -   **Odchylenie na podstawie ilości** — łączna różnica w kwocie między prognozą pierwotną i prognozą całkowitą. Ta różnica może być wyrażona matematycznie jako [(całkowita prognozowana ilość) * (pierwotna średnia cena - całkowita średnia cena)] To obliczenie dotyczy tylko godzin w projekcie.
 -   **Odchylenie na podstawie ceny** — łączna różnica w kwocie między prognozą pierwotną i prognozą całkowitą. Ta różnica może być wyrażona matematycznie jako [(pierwotna prognozowana cena) * (pierwotna prognozowana ilość - całkowita prognozowana ilość)]. To obliczenie dotyczy tylko godzin w projekcie.
 
-#### Wyświetlanie łącznych zaplanowanych kosztów
-<a id="viewing-the-total-budgeted-amounts" class="xliff"></a>
+#### <a name="viewing-the-total-budgeted-amounts"></a>Wyświetlanie łącznych zaplanowanych kosztów
 
 Jeśli jako metodę kontroli kosztów wybrano **łączny budżet** na stronie **Parametry modułu Zarządzanie projektami i ich księgowanie**, strona **Kontrola kosztów** obliczy koszty rzeczywiste i łączne koszty projektu, ułatwiając wykrywanie wszelkich różnic między tymi kosztami. W szczególności kwoty na stronie **Kontrola kosztów** w kolumnach w okienku na dole karty **Ogólne** są obliczane w następujący sposób:
 
@@ -392,8 +365,7 @@ Na stronie **Kontrola kosztów**, na karcie **odchylenia**, możesz przejrzeć r
 -   **Odchylenie na podstawie ilości** — łączna różnica w kwocie między budżetem pierwotnym i budżetem całkowitym. Wartość ta została obliczona przez odjęcie od liczby godzin zaplanowanych w pierwotnym budżecie łącznej liczby godzin, a następnie pomnożenie powstałej różnicy przez zaplanowany w pierwotnym budżecie koszt własny. Różnica ta może być wyrażona matematycznie jako (zaplanowany w pierwotnym budżecie koszt własny) x (godziny w pierwotnym budżecie — łączna liczba godzin). To obliczenie dotyczy tylko godzin w projekcie.
 -   **Odchylenie na podstawie ceny** – Wartość ta została obliczona przez odjęcie od liczby godzin zaplanowanych w pierwotnym budżecie łącznej liczby godzin, a następnie pomnożenie powstałej różnicy przez łączną liczbę zużytych godzin. Różnica ta może być wyrażona matematycznie jako (wszystkie godziny wykorzystane w projekcie) x (godziny w pierwotnym budżecie — łączna liczba godzin). To obliczenie dotyczy tylko godzin w projekcie.
 
-### Analiza wykorzystania
-<a id="analyze-utilization" class="xliff"></a>
+### <a name="analyze-utilization"></a>Analiza wykorzystania
 
 Stawka wykorzystania jest wartością procentową czasu, w którym pracownik wykonuje płatną lub produktywną pracę w danym okresie pracy. Godziny do zafakturowania są godzinami pracy pracownika, za które można naliczyć opłatę określonemu odbiorcy. 
 
@@ -420,8 +392,7 @@ Na stronie **wykorzystanie godzin** poza ogólną procentową stawką wykorzysta
 
 Podczas obliczania stawki wykorzystania dla pracownika, można użyć norm godzinowych lub godzin uwzględnionych. Jeśli używasz godzin uwzględnionych, upewnij się, że pracownicy rejestrują cały swój czas pracy w danym okresie, ponieważ wynikiem obliczenia jest wartość procentowa wprowadzonych godzin. Podczas obliczania stawki wykorzystania godzin dla projektu, umowy dotyczącej projektu, rekordu odbiorcy lub kategorii, do obliczeń należy użyć godzin uwzględnionych.
 
-### Przegląd zestawień projektu
-<a id="review-project-statements" class="xliff"></a>
+### <a name="review-project-statements"></a>Przegląd zestawień projektu
 
 Można utworzyć zestawienie projektu, aby wyświetlić szybki podgląd postępu projektu. Po uruchomieniu zestawienia projektu można określić kryteria, które są używane do obliczania zestawienia, dokonując wyborów na karcie **ogólne** na stronie **zestawienia projektu**. Można wybrać uwzględnienie lub wykluczenie następujących informacji:
 

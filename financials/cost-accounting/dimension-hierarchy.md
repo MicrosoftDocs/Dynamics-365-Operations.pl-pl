@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,18 +25,15 @@ ms.openlocfilehash: dcbab70d2057a2eb252538a51343fa8bae16873d
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Hierarchia wymiarów
-<a id="dimension-hierarchy" class="xliff"></a>
+# <a name="dimension-hierarchy"></a>Hierarchia wymiarów
 
 [!include[banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o hierarchiach wymiarów. Hierarchie wymiarów służą do definiowania struktury raportowania, zasad kosztów i ustawień zabezpieczeń w module Rachunek kosztów.  
 
-## Przegląd
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Przegląd
 
 Hierarchie wymiarów są używane w różnych miejscach w rachunku kosztów. Hierarchia wymiarów pozwala zdefiniować następujące informacje:
 
@@ -59,26 +57,22 @@ Hierarchię wymiarów można utworzyć dla następujących typów wymiarów:
 > - Hierarchia wymiarów może mieć nieograniczoną liczbę poziomów w swojej strukturze. Wszystkie poziomy będą dostępne w obszarze roboczym **Kontrola kosztów**. Jeśli używasz programu Microsoft Excel lub Microsoft Power BI na potrzeby sprawozdawczości, eksportowanych jest tylko pierwszych 15 poziomów hierarchii wymiarów. To ograniczenie istnieje, ponieważ programy Excel i Power BI wymagają ustalonego schematu.
 > - Hierarchia wymiarów nie ma daty obowiązywania. Dlatego wszelkie zmiany w hierarchii wymiarów są natychmiast zapisywane w rekordzie i nie można porównać stanów sprzed daty modyfikacji i po dacie modyfikacji.
 
-## Typ hierarchii wymiarów
-<a id="dimension-hierarchy-type" class="xliff"></a>
+## <a name="dimension-hierarchy-type"></a>Typ hierarchii wymiarów
 
 Tworząc nową hierarchię wymiarów, trzeba wybrać typ hierarchii. Wybierz kolejno opcje **Rachunek kosztów** > **Wymiary** > **Hierarchie wymiarów**. Kliknij przycisk **Nowy** i wybierz typ hierarchii wymiarów. Można wybrać opcję **Hierarchia kategoryzacji wymiarów** lub **Hierarchia klasyfikacji wymiarów**.
 
-### Hierarchia kategoryzacji wymiarów
-<a id="dimension-categorization-hierarchy" class="xliff"></a>
+### <a name="dimension-categorization-hierarchy"></a>Hierarchia kategoryzacji wymiarów
 
 Typ **Hierarchia kategoryzacji wymiarów** jest używany na potrzeby sprawozdawczości. Obsługuje tylko wymiary składników kosztów. Po wybraniu tego typu obowiązują następujące reguły:
 
 -  Element członkowski wymiaru może być skojarzony więcej niż jeden raz w strukturze hierarchii.
 -  Element członkowski wymiaru składnika kosztów można umieścić w różnych węzłach, przypisując zachowanie kosztów do węzła liścia.
 
-### Hierarchia klasyfikacji wymiarów
-<a id="dimension-classification-hierarchy" class="xliff"></a>
+### <a name="dimension-classification-hierarchy"></a>Hierarchia klasyfikacji wymiarów
 
 Typ **Hierarchia klasyfikacji wymiarów** jest używany do definiowania reguł i na potrzeby sprawozdawczości. Obsługuje wszystkie wymiary, takie jak obiekty kosztów, składniki kosztów i wymiary statystyczne. Po wybraniu tego typu element członkowski wymiaru może być skojarzony tylko jeden raz w strukturze hierarchii.
 
-## Tworzenie i obsługa hierarchii wymiarów
-<a id="create-and-maintain-a-dimension-hierarchy" class="xliff"></a>
+## <a name="create-and-maintain-a-dimension-hierarchy"></a>Tworzenie i obsługa hierarchii wymiarów
 
 Hierarchia wymiarów jest tworzona jako struktura drzewa z relacjami węzłów i węzłów liścia.
 
@@ -86,8 +80,7 @@ Hierarchia wymiarów jest tworzona jako struktura drzewa z relacjami węzłów i
 -  Węzeł nie mieć przypisanych równocześnie węzłów liścia i podwęzłów (węzłów podrzędnych).
 -  Węzeł liścia można przypisać tylko na najniższym poziomie w hierarchii.
 
-### Przykład
-<a id="example" class="xliff"></a>
+### <a name="example"></a>Przykład
 
 Mała firma ma następującą strukturę organizacyjną, gdzie Finanse i Kadry to działy w pionie Administracja, a Montaż i Pakowanie to działy w pionie Produkcja.
 
@@ -165,13 +158,11 @@ Hierarchię wymiarów dla zasady można skonfigurować w sposób pokazany poniż
 > [!NOTE]
 > W obszarze **Zakresy elementów członkowskich wymiaru** węzeł może zawierać 1:_n_ zakresów elementów członkowskich wymiaru. Można wstawić identyfikatory elementów członkowskich wymiaru, które jeszcze nie istnieje jako elementy członkowskie wymiaru. Ta funkcjonalność pozwala przygotować hierarchię na przyszłe potrzeby.  
 
-### Kopiowanie hierarchii
-<a id="copy-a-hierarchy" class="xliff"></a>
+### <a name="copy-a-hierarchy"></a>Kopiowanie hierarchii
 
 Można skopiować bieżącą hierarchię wymiarów jako punkt wyjściowy dla nowej hierarchii wymiarów. Jest to przydatne, gdy chcesz porównywać poprzednią hierarchię wymiarów z nową hierarchią wymiarów.
 
-### Zmiana rozmieszczenia węzłów w hierarchii
-<a id="rearrange-nodes-in-a-hierarchy" class="xliff"></a>
+### <a name="rearrange-nodes-in-a-hierarchy"></a>Zmiana rozmieszczenia węzłów w hierarchii
 
 Węzeł można przenosić w górę i w dół w granicach jego bieżącego poziomu w strukturze. W ten sposób można zmienić kolejność węzłów na potrzeby raportowania w obszarze roboczym **Kontrola kosztów**.
 
@@ -183,8 +174,7 @@ Przenoszenie węzła do nowej lokalizacji w hierarchii odbywa się poprzez zazna
 > [!NOTE] 
 > Kolejność węzłów nie jest zachowywana podczas eksportowania danych do programu Excel lub Power BI, ponieważ te narzędzia domyślnie używają alfanumerycznego porządku sortowania. Kolejność należy zmienić ręcznie.
 
-## Definiowanie hierarchii wymiarów dla raportowania
-<a id="define-dimension-hierarchies-for-reporting" class="xliff"></a>
+## <a name="define-dimension-hierarchies-for-reporting"></a>Definiowanie hierarchii wymiarów dla raportowania
 
 Hierarchie wymiarów są ważne w raportowaniu. Umożliwiają zdefiniowanie konkretnej struktury pasującej do danej organizacji. Agregacje wykonywane na poziomie węzła w hierarchii wymiarów umożliwiają zainteresowanym stronom na każdym poziomie organizacji wgląd w dane na wszystkich poziomach.
 
@@ -223,8 +213,7 @@ W poniższym przykładzie pokazano, jak hierarchia wymiarów może wyglądać w 
 | Organizacja                              | Produkcja                                | Opakowanie                                 | CC005                                     |                                            |
 | Organizacja                              | Produkcja                                | Zestaw                                  | CC006                                     |                                            |
 
-### Aktualizacja hierarchie wymiarów używanych do raportowania
-<a id="update-the-dimension-hierarchies-that-are-used-for-reporting" class="xliff"></a> 
+### <a name="update-the-dimension-hierarchies-that-are-used-for-reporting"></a>Aktualizacja hierarchie wymiarów używanych do raportowania 
 
 Z czasem hierarchie wymiarów używane we wspomnianych wyżej narzędziach raportowania muszą być aktualizowane. Hierarchie wymiarów można zaktualizować przez odświeżenie klienta
 
@@ -239,8 +228,7 @@ Aktualizacje hierarchii wymiarów są pobierane co 24 godziny przez zadanie umie
 > [!NOTE] 
 > Aby ręcznie zainicjować aktualizację pamięci podręcznej hierarchii wymiarów, można utworzyć nową operację eksportu do programu Excel dla odnośnych hierarchii wymiarów.
 
-## Definiowanie hierarchii wymiarów dla zasad kosztów
-<a id="define-dimension-hierarchies-for-cost-policies" class="xliff"></a>
+## <a name="define-dimension-hierarchies-for-cost-policies"></a>Definiowanie hierarchii wymiarów dla zasad kosztów
 
 Moduł Rachunek kosztów zawiera wiele zasad, w których są zdefiniowane szczegółowe reguły. Należy zdefiniować co najmniej jedną hierarchię wymiarów dla następujących zasad:
 
@@ -251,8 +239,7 @@ Moduł Rachunek kosztów zawiera wiele zasad, w których są zdefiniowane szczeg
 
 Hierarchie wymiarów ułatwiają tworzenie reguł. Aby uniknąć konieczności tworzenia reguł dla każdego elementu członkowskiego wymiaru, można użyć agregacji elementów członkowskich wymiarów, które są dostępne na poziomach hierarchii wymiarów. Jeśli masz nakładające się reguły, należy zdefiniować konkretne reguły, które system będzie brał pod uwagę przy obliczaniu kosztów ogólnych.
 
-### Przykład: Definiowanie zasady zachowania kosztów
-<a id="example-define-a-cost-behavior-policy" class="xliff"></a>
+### <a name="example-define-a-cost-behavior-policy"></a>Przykład: Definiowanie zasady zachowania kosztów
 
 Jest tworzona nowa zasada zachowania kosztów, a do zasady są przypisywane odpowiednie hierarchie wymiarów, jak pokazano poniżej.
 
@@ -295,8 +282,7 @@ Reguła przestanie być uwzględniana we wszystkich obliczeniach kosztów ogóln
 > [!NOTE] 
 > Pola **Obowiązuje od** i **Obowiązuje do** mają daty i godziny obowiązywania. Można wygasić regułę i uruchomić nowe obliczanie kosztów ogólnych w tym samym dniu.
 
-## Definiowanie hierarchii wymiarów dla ustawień zabezpieczeń
-<a id="define-dimension-hierarchies-for-security-setup" class="xliff"></a>
+## <a name="define-dimension-hierarchies-for-security-setup"></a>Definiowanie hierarchii wymiarów dla ustawień zabezpieczeń
 
 Dane rachunku kosztów powinny być dostępne dla wszystkich menedżerów odpowiedzialnych za jednostkę raportowania. W terminologii rachunku kosztów jednostka raportowania jest reprezentowana jako obiekt kosztów lub zbiór obiektów kosztów.
 

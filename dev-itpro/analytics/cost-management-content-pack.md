@@ -9,13 +9,14 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,24 +24,20 @@ ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Pakiet zawartości usługi Power BI Zarządzanie kosztami
-<a id="cost-management-power-bi-content" class="xliff"></a>
+# <a name="cost-management-power-bi-content"></a>Pakiet zawartości usługi Power BI Zarządzanie kosztami
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Zarządzanie kosztami. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
-# Przegląd
-<a id="overview" class="xliff"></a>
+# <a name="overview"></a>Przegląd
 
 Pakiet zawartości **Zarządzanie kosztami** dostępny w usłudze Microsoft Power BI jest przeznaczony dla pracowników księgujących zapasy lub osób w organizacji, które są odpowiedzialne za zapasy. Pakiet zawartości **Zarządzanie kosztami** w usłudze Power BI zapewnia zaawansowany wgląd w zapasy i zapasy pracy w toku (PWT) oraz przepływy kosztów między tymi zapasami z podziałem na kategorie w ujęciu czasowym. Informacje mogą być również wykorzystywane jako szczegółowe uzupełnienie sprawozdania finansowego.
 
-## Najważniejsze miary
-<a id="key-measures" class="xliff"></a>
+## <a name="key-measures"></a>Najważniejsze miary
 
 + Saldo początkowe
 + Saldo końcowe
@@ -48,19 +45,16 @@ Pakiet zawartości **Zarządzanie kosztami** dostępny w usłudze Microsoft Powe
 + Zmiana netto w %
 + Wiekowanie
 
-## Kluczowe wskaźniki wydajności
-<a id="key-performance-indicators" class="xliff"></a>
+## <a name="key-performance-indicators"></a>Kluczowe wskaźniki wydajności
 + Obrót magazynowy
 + Dokładność zapasów
 
 Głównym źródłem danych jednostki CostAggregatedCostStatementEntryEntity jest tabela CostStatementCache. Ta tabela jest zarządzana przez strukturę pamięci podręcznej zestawów danych. Domyślnie tabela jest aktualizowana co 24 godziny, ale można włączyć ręczne aktualizacje w konfiguracji pamięci podręcznej danych. Następnie można wykonywać ręczną aktualizację w obszarze roboczym **Zarządzanie kosztami** lub **Analiza kosztów**. Po zaktualizowaniu pamięci podręcznej zarządzania kosztami trzeba zaktualizować połączenie OData na stronie BI.com, aby zobaczyć zaktualizowane dane w witrynie. Miary odchyleń (zakup, produkcja) w tym pakiecie zawartości usługi Power BI odnoszą się tylko do elementów, które są wyceniane metodą inwentaryzacji Koszt standardowy. Odchylenie produkcji jest obliczane jako różnica między kosztami aktywnym i zrealizowanym. Odchylenie produkcji jest obliczane w momencie, gdy zlecenie produkcyjne uzyskuje stan **Zakończone**. Aby uzyskać więcej informacji o typach odchyleń produkcji i sposobach ich obliczania, zobacz [Analiza odchyleń dla zrealizowanego zlecenia produkcyjnego](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
-## Przechodzenie do pakietu zawartości usługi Power BI
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 Pakiet zawartości usługi Power BI **Zarządzanie kosztami** jest dostępny w witrynie PowerBI.com. Aby uzyskać więcej informacji o tworzeniu połączenia z danymi programu Microsoft Dynamics 365 for Finance and Operations i ich ładowaniu, zobacz [Dostęp do pakietu zawartości usługi Power BI z witryny Microsoft Dynamics 365 for Operations](power-bi-home-page.md).
 
-## Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
-<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
 Pakiet zawartości zawiera zestaw stron raportów. Każda strona zawiera zestaw wskaźników, które są wizualizowane jako wykresy, kafelki i tabele. Poniższa tabela zawiera omówienie wizualizacji dostępnych w pakiecie zawartości usługi Power BI **Zarządzanie kosztami**.
 
 | Strona raportu | Wykresy | Stanowiska |
@@ -89,8 +83,7 @@ Pakiet zawartości zawiera zestaw stron raportów. Każda strona zawiera zestaw 
 | |Zmiana netto PWT wg nazwy oddziału i nazwy kategorii poziomu 2 | |
 | |Odchylenia produkcji wg nazwy oddziału i nazwy kategorii poziomu 3 | |
 
-## Opis modelu danych i jednostek
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 Dane programu Finance and Operations są używane do wypełniania stron raportów w pakiecie zawartości usługi Power BI **Zarządzanie kosztami**. Te dane są przedstawiane jako zagregowane miary umieszczane w magazynie jednostek, który jest bazą danych programu Microsoft SQL zoptymalizowaną pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md). Następujące najważniejsze zagregowane miary są używane jako podstawa w pakiecie zawartości:
 
 | Jednostka            | Najważniejsza zagregowana miara | Źródło danych programu Finance and Operations | Pole             | opis                       |
@@ -143,8 +136,7 @@ Następujące najważniejsze wymiary są używane jako filtry do dzielenia zagre
 | Księgi          | Waluta, Nazwa, Opis                  |
 | Oddziały            | Identyfikator, Nazwa, Kraj, Miejscowość                      |
 
-## Dodatkowe zasoby
-<a id="additional-resources" class="xliff"></a>
+## <a name="additional-resources"></a>Dodatkowe zasoby
 Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworzenia zawartości w narzędziu Power BI:
 
 -   [Jednostki danych](..\data-entities\data-entities.md)

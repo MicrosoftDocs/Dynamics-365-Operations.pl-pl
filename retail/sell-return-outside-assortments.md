@@ -15,7 +15,7 @@ ms.custom:
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: prabhup
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
@@ -23,11 +23,9 @@ ms.openlocfilehash: ab6d22cf2c1610843de42d1e62cd93b17d74d8b8
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/14/2017
 
-
 ---
 
-# Sprzedaż i zwrot produktów spoza asortymentu
-<a id="sell-and-return-products-outside-of-an-assortment" class="xliff"></a>
+# <a name="sell-and-return-products-outside-of-an-assortment"></a>Sprzedaż i zwrot produktów spoza asortymentu
 Typowy scenariusz u każdego sprzedawcy detalicznego to sprzedaż produktów klientom lub przyjmowanie zwrotów od klientów, nawet jeśli sprzedawcy nie mają tych produktów w sklepie (innymi słowy produkty nie wchodzą w skład asortymentu sklepu).
 Poniżej przedstawiono niektóre typowe scenariusze:
 

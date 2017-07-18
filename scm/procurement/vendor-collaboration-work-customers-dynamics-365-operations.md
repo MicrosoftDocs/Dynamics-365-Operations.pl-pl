@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: 41436dab710a5fee0fe0800dff1ebefefa841afc
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Współpraca dostawców z odbiorcami
-<a id="vendor-collaboration-with-customers" class="xliff"></a>
+# <a name="vendor-collaboration-with-customers"></a>Współpraca dostawców z odbiorcami
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ W tym temacie opisano używanie portalu współpracy z dostawcami w programie Fi
 
 W tym temacie opisano używanie portalu współpracy z dostawcami do zarządzania współpracą z odbiorcami w programie Microsoft Finance and Operations. Są tu informacje dotyczące sposobów monitorowania i odpowiadania na zamówienia zakupu oraz monitorowanie zapasów konsygnacyjnych. Można również używać portalu współpracy z dostawcami do pracy z fakturami. Aby uzyskać więcej informacji, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
 
-## Praca z zamówieniami zakupu
-<a id="working-with-purchase-orders" class="xliff"></a>
+## <a name="working-with-purchase-orders"></a>Praca z zamówieniami zakupu
 Obszar roboczy **Potwierdzenie zamówienia zakupu** pozwala odpowiadać na zamówienia zakupu wysłane Ci do przeglądu. Umożliwia także wyświetlanie informacji o zamówieniach oczekujących na interwencję odbiorcy oraz zamówień zakupu, które zostały potwierdzone, ale są nadal otwarte. W obszarze roboczym **Potwierdzenie zamówienia zakupu** istnieją trzy listy:
 
 -   **Zamówienia zakupu do przeglądu** — Na tej liście znajdują się zamówienia sprzedaży, które zostały Ci wysłane i oczekują na Twoją odpowiedź. Po udzieleniu odpowiedzi zamówienia są usuwane z listy. Jeśli odbiorca wyśle Ci nową wersję zamówienia zakupu, zanim udzielisz odpowiedzi na poprzednią, zobaczysz tylko najnowszą wersję.
@@ -51,8 +49,7 @@ Poniższa lista zawiera cztery strony, których można używać do pracy z zamó
 -   **Otwarte potwierdzone zamówienia zakupu** (patrz wyżej)
 -   **Wszystkie potwierdzone zamówienia zakupu** — Ta strona zawiera wszystkie zamówienia zakupu, które zostały potwierdzone, włącznie z tymi, których produkty lub usługi już otrzymano. Ta lista może służyć do monitorowania, za które zamówienia zakupu można wysłać faktury.
 
-### Odpowiadanie na zamówienia zakupu
-<a id="responding-to-purchase-orders" class="xliff"></a>
+### <a name="responding-to-purchase-orders"></a>Odpowiadanie na zamówienia zakupu
 
 Zamówienia zakupu wysłane Ci przez odbiorcę do przeglądu są widoczne w obszarze roboczym **Potwierdzenie zamówienia zakupu** i na stronie **Zamówienia zakupu do przeglądu**. Po otwarciu zamówienia zakupu można je zaakceptować, odrzucić lub zaakceptować ze zmianami. Mogą istnieć załączniki w nagłówku zamówienia zakupu lub w poszczególnych wierszach. Możesz również dołączyć informacje do swojej odpowiedzi w nagłówku zamówienia zakupu lub w poszczególnych wierszach. Na przykład możesz zasugerować użycie towaru zastępczego w jednym z wierszy. Możesz wyświetlić podgląd zamówienia zakupu i wydrukować je jako plik PDF za pomocą opcji **Podgląd/drukuj**. Za pomocą akcji **Wyświetl wymiary** akcji możesz ukryć lub pokazać następujące kolumny wymiarów: Oddział, Magazyn, Kolor, Rozmiar, Styl i Konfiguracja. Jeśli użyjesz opcji **Zaakceptuj ze zmianami**, możesz zaakceptować lub odrzucić poszczególne wiersze. W wierszach można także wprowadzać następujące zmiany:
 
@@ -62,8 +59,7 @@ Zamówienia zakupu wysłane Ci przez odbiorcę do przeglądu są widoczne w obsz
 
 Nie można zmienić informacji o cenach ani opłat, ale za pomocą notatek można zasugerować ich modyfikacje. Jeśli odbiorca wyśle Ci nową wersję zamówienia, będzie ona miała sufiks wersji wskazujący, że jest to zmodyfikowana wersja zamówienia zakupu, które zostało wcześniej przekazane. Na stronie **Historia potwierdzeń zamówień zakupu przez dostawcę** możesz śledzić historię każdego zamówienia.
 
-## Monitorowanie zapasów konsygnacyjnych
-<a id="monitoring-consignment-inventory" class="xliff"></a>
+## <a name="monitoring-consignment-inventory"></a>Monitorowanie zapasów konsygnacyjnych
 Jeśli używasz zapasów konsygnacyjnych, możesz w interfejsie współpracy z dostawcami wyświetlać informacje na następujących stronach:
 
 -   **Zamówienia zakupu zużywające zapasy konsygnacyjne** — Zamówienia zakupu dla zapasów konsygnacyjnych są generowane, gdy odbiorca przejmuje własność zapasów. Te zamówienia zakupu konsygnacyjnego są wyświetlane tylko na stronie **Zamówienia zakupu zużywające zapasy konsygnacyjne**. Nie są one umieszczane na stronie **Wszystkie potwierdzone zamówienia zakupu**.
@@ -71,8 +67,7 @@ Jeśli używasz zapasów konsygnacyjnych, możesz w interfejsie współpracy z d
 -   **Dostępne zapasy konsygnacyjne** — Na tej stronie są pokazane dostępne zapasy konsygnacyjne będące własnością Twojej firmy, które znajdują się na stanie w magazynie odbiorcy.
 
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md)

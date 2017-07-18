@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261824
 ms.assetid: d0784b2c-fe10-428d-8d07-fd474ca50fcc
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: c132c04bc64f02201252f03830d3f8309306f19c
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Resetowanie składnicy danych modułu raportowania finansowego po przywróceniu bazy danych
-<a id="reset-the-financial-reporting-data-mart-after-restoring-a-database" class="xliff"></a>
+# <a name="reset-the-financial-reporting-data-mart-after-restoring-a-database"></a>Resetowanie składnicy danych modułu raportowania finansowego po przywróceniu bazy danych
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ W tym temacie opisano, jak zresetować składnicę danych modułu raportowania f
 
 Istnieje kilka scenariuszy, w których może być konieczne przywrócenie bazy danych programu Finance and Operations z kopii zapasowej albo skopiowanie bazy danych z innego środowiska. W takiej sytuacji należy też wykonać odpowiednie kroki w celu zapewnienia, że składnica danych raportowania finansowego poprawnie używa przywróconej bazy danych programu Finance and Operations. Jeśli masz pytania dotyczące resetowania składnicy danych raportowania finansowego z powodów innych niż przywrócenie bazy danych programu Finance and Operations, więcej informacji znajdziesz w temacie [Resetowanie składnicy danych programu Management Reporter](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/). Należy zauważyć, że etapy tego procesu są obsługiwane dla programu Dynamics 365 for Operations w wydaniu z maja 2016 r. (kompilacja aplikacja 7.0.1265.23014 i kompilacja modułu raportowania finansowego 7.0.10000.4) oraz nowszych wydań. Jeśli masz wcześniejszą wersję programu Finance and Operations, poproś o pomoc nasz dział pomocy technicznej.
 
-## Eksportowanie definicji raportów
-<a id="export-report-definitions" class="xliff"></a>
+## <a name="export-report-definitions"></a>Eksportowanie definicji raportów
 Najpierw wyeksportuj projekty raportów znajdujące się w projektancie raportów, wykonując następujące czynności:
 
 1.  W Projektancie raportów wybierz kolejno opcje **Firma** &gt; **Grupy bloków konstrukcyjnych**.
@@ -55,8 +53,7 @@ Plik można skopiować lub przekazać do bezpiecznej lokalizacji, dzięki czemu 
 > [!WARNING]
 > Należy pamiętać o zachowaniu dysku D na maszynach wirtualnych Azure. Nie przechowuj na nim trwale wyeksportowanych grup bloków konstrukcyjnych. Aby uzyskać więcej informacji o dyskach tymczasowych, zobacz [Opis koncepcji dysku tymczasowego na maszynach wirtualnych systemu Windows Azure](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
-## Zatrzymywanie usług
-<a id="stop-services" class="xliff"></a>
+## <a name="stop-services"></a>Zatrzymywanie usług
 Za pomocą narzędzia Pulpit zdalny połącz się z komputerami w środowisku i zatrzymaj następujące usługi systemu Windows przy użyciu konsoli services.msc:
 
 -   Usługa publikowania w sieci World Wide Web (na wszystkich komputerach z serwerem AOS)
@@ -65,15 +62,12 @@ Za pomocą narzędzia Pulpit zdalny połącz się z komputerami w środowisku i 
 
 Te usługi mają otwarte połączenia z bazą danych programu Finance and Operations.
 
-## Zeruj
-<a id="reset" class="xliff"></a>
-#### Znajdowanie najnowszego pakietu DataUpgrade.zip
-<a id="locate-the-latest-dataupgradezip-package" class="xliff"></a>
+## <a name="reset"></a>Zeruj
+#### <a name="locate-the-latest-dataupgradezip-package"></a>Znajdowanie najnowszego pakietu DataUpgrade.zip
 
 Odszukaj najnowszy pakiet DataUpgrade.zip przy użyciu instrukcji podanych w temacie [Pobieranie pliku skryptu DataUpgrade.zip](..\migration-upgrade\upgrade-data-to-latest-update.md). Instrukcje wyjaśniają, jak znaleźć poprawną wersję pakietu uaktualnienia danych dla używanego środowiska.
 
-#### Wykonywanie skryptów w bazie danych programu Finance and Operations
-<a id="execute-scripts-against-finance-and-operations-database" class="xliff"></a>
+#### <a name="execute-scripts-against-finance-and-operations-database"></a>Wykonywanie skryptów w bazie danych programu Finance and Operations
 
 Uruchom następujące skrypty w bazie danych programu Finance and Operations (nie w bazie danych modułu raportowania finansowego).
 
@@ -82,8 +76,7 @@ Uruchom następujące skrypty w bazie danych programu Finance and Operations (ni
 
 Te skrypty zagwarantują, że użytkownicy, role i ustawienia śledzenia zmian są poprawne.
 
-#### Wykonywanie poleceń narzędzia PowerShell w celu przywrócenia bazy danych
-<a id="execute-powershell-command-to-reset-database" class="xliff"></a>
+#### <a name="execute-powershell-command-to-reset-database"></a>Wykonywanie poleceń narzędzia PowerShell w celu przywrócenia bazy danych
 
 Wykonaj następujące polecenie bezpośrednio na komputerze serwera AOS, aby zresetować integrację między programem Finance and Operations a modułem raportowania finansowego:
 
@@ -100,16 +93,14 @@ Wyjaśnienie parametrów:
 -   Parametr -ReasonDetail ma format zwykłego tekstu.
 -   Wartości parametrów Reason i ReasonDetail zostaną zarejestrowane w funkcji telemetrii/monitorowania środowiska.
 
-## Uruchamianie usług
-<a id="start-services" class="xliff"></a>
+## <a name="start-services"></a>Uruchamianie usług
 Za pomocą konsoli services.msc uruchom usługi, które zostały wcześniej zatrzymane:
 
 -   Usługa publikowania w sieci World Wide Web (na wszystkich komputerach z serwerem AOS)
 -   Usługa zarządzania wsadowego w programie Microsoft Dynamics 365 for Finance and Operations (tylko nieprywatne komputery z serwerem AOS)
 -   Usługa procesu w programie Management Reporter 2012 (tylko na komputerach z oprogramowaniem BI)
 
-## Importowanie definicji raportów
-<a id="import-report-definitions" class="xliff"></a>
+## <a name="import-report-definitions"></a>Importowanie definicji raportów
 Zaimportuj projekty raportów z projektanta raportów, używając pliku utworzony podczas eksportu:
 
 1.  W Projektancie raportów wybierz kolejno opcje **Firma** &gt; **Grupy bloków konstrukcyjnych**.

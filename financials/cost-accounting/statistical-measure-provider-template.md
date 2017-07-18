@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,11 +25,9 @@ ms.openlocfilehash: 180863b5c3b8fe7870ab58f3849e52583f5880c1
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Elementy członkowskie wymiaru statystycznego i szablony dostawców miar statystycznych
-<a id="statistical-dimension-members-and-statistical-measure-provider-templates" class="xliff"></a>
+# <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Elementy członkowskie wymiaru statystycznego i szablony dostawców miar statystycznych
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Wymiar statystyczny i jego elementy członkowskie są używane do rejestrowania 
 - Jako podstawa alokacji w zasadach, na przykład dystrybucji kosztów lub alokacji kosztów
 - Do raportowania zużycia niepieniężnego
 
-## Wymiar statystyczny
-<a id="statistical-dimension" class="xliff"></a>
+## <a name="statistical-dimension"></a>Wymiar statystyczny
 
 Wymiar statystyczny ma unikatową nazwę i zbiór unikatowych elementów członkowskich wymiaru. Wymiar statystyczny jest przypisany do identyfikatora księgi rachunku kosztów. Ta relacja wiąże wszystkie odnośne elementy członkowskie wymiaru statystycznego z księgą rachunku kosztów. W związku z tym wszystkie wpisy statystyczne będą tworzone w kontekście księgi rachunku kosztów.
 
@@ -57,8 +55,7 @@ Oto przykład wymiaru statystycznego przypisanego do księgi rachunku kosztów.
 |-----------------------|---------------------|--------------------|-----------------|------------------------|-----------------------------|
 | Księgowość zarządcza | USD                 | Stały kurs wymiany  | Okres obrachunkowy   | Współdzielone składniki kosztów   | Współdzielone elementy statystyczne |
 
-## Elementy członkowskie wymiaru statystycznego
-<a id="statistical-dimension-members" class="xliff"></a>
+## <a name="statistical-dimension-members"></a>Elementy członkowskie wymiaru statystycznego
 
 Element członkowski wymiaru statystycznego jednostkę, dla której mają zostać zarejestrowane miary niepieniężne. Te miary mogą służyć jako podstawa alokacji albo tylko do raportowania wartości niepieniężnych.
 
@@ -74,8 +71,7 @@ Oto kilka przykładów typowych elementów członkowskich wymiaru statystycznego
 | Współdzielone elementy statystyczne | Elektryczność          | Zużycie energii elektrycznej | kWh  |
 | Współdzielone elementy statystyczne | Pack CC              | Centrum kosztów Pakowanie   | Godz. |
 
-## Szablon dostawcy miar statystycznych
-<a id="statistical-measure-provider-template" class="xliff"></a>
+## <a name="statistical-measure-provider-template"></a>Szablon dostawcy miar statystycznych
 
 Miary statystyczne mogą pochodzić z wielu rodzajów źródeł. Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition jest świetnym źródłem, z którego można wyodrębniać miary statystyczne. Szablon dostawcy miar statystycznych pozwala w prosty sposób skonfigurować miary statystyczne, które mają zostać wyodrębniane.
 
@@ -113,8 +109,7 @@ Podczas tworzenia rekordu **Szablon dostawcy miar statystycznych** należy zdecy
 - **Zliczanie** — jest przenoszona liczba rekordów dla każdego obiektu kosztów.
 - **Suma** — jest przenoszona suma rekordów dla każdego obiektu kosztów. (Pola **Suma** i **Data** są wymagane).
 
-## Używanie funkcji Zliczanie
-<a id="using-the-count-function" class="xliff"></a>
+## <a name="using-the-count-function"></a>Używanie funkcji Zliczanie
 
 Na przykład szablon dostawcy miar statystycznych można skonfigurować w następujący sposób.
 
@@ -183,8 +178,7 @@ Jeśli w regule dystrybucji kosztów jako podstawę alokacji przypisano wstępni
 | CC002       | FI | 2.00      | (2/5) × kwota    |
 | CC003       | MM | 2.00      | (2/5) × kwota    |
 
-## Używanie funkcji Suma
-<a id="using-the-sum-function" class="xliff"></a>
+## <a name="using-the-sum-function"></a>Używanie funkcji Suma
 
 Produkcyjne centrum kosztów CC010 (Pakowanie) jest odpowiedzialne za pakowanie produktów, zanim zostaną one wysłane do odbiorców. Bezpośrednie koszty robocizny są dodawane do produktów za pośrednictwem listy składowej (BOM) i marszruty. Koszty pośrednie utrzymania centrum kosztów również muszą zostać przydzielone do wytwarzanych produktów. Często najlepszą miarą statystyczną dla takiej alokacji jest liczba zarejestrowanych godzin produkcji dla każdego produktu w podanym okresie.
 
@@ -271,8 +265,7 @@ Jeśli w regule dystrybucji kosztów jako podstawę alokacji przypisano wstępni
 | Sok pomarańczowy B2B      | 16.00     | (16 ÷ 24) × kwota |
 | Sok pomarańczowy dla konsumentów | 8.00      | (8 ÷ 24) × kwota  |
 
-## Importowane miary statystyczne
-<a id="imported-statistical-measures" class="xliff"></a>
+## <a name="imported-statistical-measures"></a>Importowane miary statystyczne
 
 Miar statystyczne można zaimportować do modułu Rachunek kosztów za pomocą narzędzia importu/eksportu Zarządzanie danymi.
 
@@ -351,8 +344,7 @@ Jeśli w regule dystrybucji kosztów jako podstawę alokacji przypisano wstępni
 | CC002       | FI | 4,100.00  | (4100 ÷ 21 550) × kwota  |
 | CC003       | MM | 15,000.00 | (15 000 ÷ 21 550) × kwota |
 
-## Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Informacje dodatkowe
 
 [Podstawy alokacji](allocation-bases.md)
 

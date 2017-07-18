@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -23,11 +24,9 @@ ms.openlocfilehash: 52753c21862a2955e15140bb1cdb5ef6f6efe31a
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Zarządzanie pracownikami magazynu
-<a id="manage-warehouse-workers" class="xliff"></a>
+# <a name="manage-warehouse-workers"></a>Zarządzanie pracownikami magazynu
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,14 +39,12 @@ Aby utworzyć nowego użytkownika pracy, kliknij **Pracownik** na stronie **Prac
 
 W ramach konfiguracji dla każdego użytkownika pracy można również zdefiniować przepływy pracy dla określonego procesu. Na przykład można użyć pola **Jest kierownikiem ds. inwentaryzacji ciągłej**, aby określić, czy użytkownik może korygować rozbieżności inwentaryzacji ciągłej podczas liczenia lub czy te korekty muszą najpierw zostać przejrzane przez inną osobę.
 
-## Definiowanie norm robocizny
-<a id="defining-labor-standards" class="xliff"></a>
+## <a name="defining-labor-standards"></a>Definiowanie norm robocizny
 Na stronie **Normy robocizny** można określić metody obliczania szacowanego czasu potrzebnego na wykonanie danego typu pracy. Tę definicję można ustawić na poziomie ogólnym lub szczegółowym. Można na przykład zdefiniować czas wymagany do odebrania zamówienia sprzedaży według wagi dla określonej definicji jednostki w konkretnym procesie odbierania. Jednocześnie można rejestrować czas na podstawie innej metody obliczania dla operacji odkładania dostępnych towarów, które są odbierane 
 
 Aby włączyć zdefiniowane normy robocizny, trzeba wybrać opcję **Zezwalaj na normy robocizny** dla każdego magazynu w którym norm robocizny będą używane.
 
-## Monitorowanie i kontrolowanie pracy w magazynie
-<a id="monitoring-and-controlling-warehouse-work" class="xliff"></a>
+## <a name="monitoring-and-controlling-warehouse-work"></a>Monitorowanie i kontrolowanie pracy w magazynie
 Na stronie **Cała praca** można monitorować i obsługiwać całą pracę, która została zaplanowana, jest w toku lub została ukończona. Na tej stronie można aktualizować różne procesy, takie jak przypisania pracowników do prac w magazynie i priorytety prac. Można też wyświetlać informacje szczegółowe związane z nagłówkiem i wierszami pracy w celu analizy oczekiwanych lub ukończonych procesów pracy. 
 
 Po włączeniu opcji **Normy robocizny** można wyświetlić obliczoną prognozę czasu pracy. Następnie podczas przetwarzania pracy rzeczywisty czas będzie również wyświetlany dla każdej operacji pracy. W ten sposób można porównać prognozy obliczeń czasu z rzeczywistym czasem. 

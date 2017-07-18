@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSReplenishmentTemplates
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 90043
 ms.assetid: 49fa97eb-8e10-49a5-9261-1e393159f178
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -26,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Uzupełnianie zapasów
-<a id="replenishment" class="xliff"></a>
+# <a name="replenishment"></a>Uzupełnianie zapasów
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,8 +40,7 @@ W tym temacie opisano strategie uzupełniania zapasów, które są dostępne dla
 
 Wszystkie trzy strategie tworzą pracę uzupełniania opartą na szablonie uzupełniania zapasów.
 
-## Uzupełnianie popytu grupy czynności
-<a id="wave-demand-replenishment" class="xliff"></a>
+## <a name="wave-demand-replenishment"></a>Uzupełnianie popytu grupy czynności
 
 Uzupełnianie popytu grupy czynności tworzy pracę uzupełniania na podstawie popytu, jeśli ilość wymagana dla zleceń produkcyjnych, kart Kanban, wychodzących zamówień lub ładunków nie jest dostępna podczas tworzenia pracy przez grupę czynności. Szablon uzupełniania zapasów zawiera informacje o kryteriach towaru, jednostce miary, przyroście popytu i lokalizacji. 
 
@@ -54,20 +53,17 @@ Strona **Szablon uzupełniania** zawiera pole wyboru **Zezwalaj na używanie nie
 
 Uzupełnienie zapasów popytu jest obsługiwane w przypadku zamówień sprzedaży, zamówień przeniesienia, zleceń produkcyjnych i kart Kanban. 
 
-## Uzupełnianie według minimalnej/maksymalnej ilości
-<a id="minmax-replenishment" class="xliff"></a>
+## <a name="minmax-replenishment"></a>Uzupełnianie według minimalnej/maksymalnej ilości
 W uzupełnianiu według minimalnej/maksymalnej ilości zapasy są uzupełniane w taki sposób, aby znajdowały się między ustawioną minimalną i maksymalną wartością graniczną. Zazwyczaj ten proces występuje raz każdego dnia, aby zagwarantować, że wszystkie lokalizacje pobrania są wypełnione do maksymalnego poziomu przed rozpoczęciem pobierania. 
 
 Minimalne i maksymalne kwoty są ustawiane w szablonie uzupełniania zapasów. Wiele innych ustawień w szablonie przypomina ustawienia w szablonach używanych do uzupełniania popytu grupy czynności. Ten szablon powinien zawierać jeden wiersz dla każdego towaru i lokalizacji. Po uruchomieniu uzupełniania zapasów przy użyciu zadania wsadowego program Finance and Operations ocenia, czy uzupełnianie zapasów jest wymagane, w kolejności ułożenia wierszy. 
 
 Należy zwrócić uwagę, strategia uzupełniania według ilości minimalnej/maksymalnej nie może uzupełniać pustej lokalizacji, chyba że lokalizacja jest ustawiona jako stała lokalizacja dla towaru. Jeśli lokalizacja przeznaczona do uzupełniania nie jest stałą lokalizacją, nie można ustalić, który towar ma być uzupełniany. W związku z tym przed rozpoczęciem uzupełniania musi istnieć co najmniej pewna ilość dostępna.
 
-## Uzupełnianie zapasów popytu ładunku
-<a id="load-demand-replenishment" class="xliff"></a>
+## <a name="load-demand-replenishment"></a>Uzupełnianie zapasów popytu ładunku
 Strategia uzupełniania zapasów popytu ładunku sumuje popyt kilku ładunków i tworzy pracę uzupełniania niezbędną w celu dostarczenia zapasów do odpowiednich lokalizacji pobrania. Pod wieloma względami uzupełnianie zapasów popytu ładunku przypomina uzupełnianie popytu grupy czynności. Główna różnica polega na tym, jak i kiedy są uruchamiane oba rodzaje uzupełniania. Podobnie jak uzupełnianie według minimalnej/maksymalnej ilości, uzupełnianie zapasów popytu ładunku jest wykonywane przy użyciu zadania wsadowego. Aby skonfigurować zadanie wsadowe, na stronie **Uzupełnianie zapasów popytu ładunku** wybierz szablon uzupełniania zapasów, który ma być używany, i ustaw zapytanie filtrujące, aby określić, które ładunki będą używane do określania popytu. Zapytanie o lokalizację zdefiniuje lokalizacje, z których będą odejmowane wszelkie dostępne ilości, aby zaspokoić zagregowany popyt ładunków.
 
-## Warunki wstępne uzupełniania zapasów
-<a id="replenishment-prerequisites" class="xliff"></a>
+## <a name="replenishment-prerequisites"></a>Warunki wstępne uzupełniania zapasów
 | Wymaganie wstępne            | Opis                                                                                                                                                                                                                                        |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Pozycja                    | Dla danego towaru musi być możliwa obsługa zarządzania magazynem.                                                                                                                                                                                       |

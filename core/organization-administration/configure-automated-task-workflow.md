@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192061
 ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 66f1b8e03cc0da5d21fea9b3c795d8f4097c8cfc
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Konfigurowanie zadania wykonywanego automatycznie w przepływie pracy
-<a id="configure-an-automated-task-in-a-workflow" class="xliff"></a>
+# <a name="configure-an-automated-task-in-a-workflow"></a>Konfigurowanie zadania wykonywanego automatycznie w przepływie pracy
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,15 +34,13 @@ W tym temacie wyjaśniono sposób konfigurowania właściwości zadania wykonywa
 
 Aby skonfigurować zadanie wykonywane automatycznie, w edytorze przepływu pracy kliknij zadanie prawym przyciskiem myszy i wybierz polecenie **Właściwości**, a zostanie otwarta strona **Właściwości**. Następnie za pomocą procedur zamieszczonych niżej skonfiguruj właściwości zadania wykonywanego automatycznie.
 
-## Nadawanie nazwy zadaniu
-<a id="name-the-task" class="xliff"></a>
+## <a name="name-the-task"></a>Nadawanie nazwy zadaniu
 Wykonaj następujące kroki, aby wprowadzić nazwę zadania wykonywanego automatycznie.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
 2.  W polu **Nazwa** wprowadź unikatową nazwę zadania.
 
-## Określanie, kiedy są wysyłane powiadomienia
-<a id="specify-when-notifications-are-sent" class="xliff"></a>
+## <a name="specify-when-notifications-are-sent"></a>Określanie, kiedy są wysyłane powiadomienia
 Można wysyłać powiadomienia do odpowiednich osób po ponownym uruchomieniu lub anulowaniu zadania wykonywanego automatycznie. Wykonaj następujące kroki, aby określić, kiedy i do kogo są one wysyłane.
 
 1.  W lewym okienku kliknij opcję **Powiadomienia**.

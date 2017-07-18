@@ -10,13 +10,14 @@ ms.service: dynamics-365-retail
 ms.technology: 
 ms.search.form: RetailTillLayout
 audience: Application User
+ms.reviewer: margoc
 ms.search.scope: Retail, Operations, Core, UnifiedOperations
 ms.custom: 219684
 ms.assetid: 2e2c4eea-c6e2-4912-9832-a6b22416e39f
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: athinesh
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611, Retail Version
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
@@ -24,11 +25,9 @@ ms.openlocfilehash: 4308e7bad71271f242def93d587e4a0c1f7c06cc
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Instalowanie projektanta układu programu Retail POS
-<a id="install-the-retail-pos-layout-designer" class="xliff"></a>
+# <a name="install-the-retail-pos-layout-designer"></a>Instalowanie projektanta układu programu Retail POS
 
 [!include[banner](includes/banner.md)]
 
@@ -37,8 +36,7 @@ Za pomocą projektanta obsługiwanego jednym kliknięciem można projektować r�
 
 O wyglądzie interfejsu graficznego projektowania programu MPOS lub Cloud POS decydują ustawienia układu kasowego. Układ określa położenie różnych obiektów. Przykładami są układ podsumowania, układ siatki towarów, układ odbiorcy, układ płatności oraz układ różnych przycisków menu. Układy także określają ogólny wygląd interfejsu sprzedaży wyświetlanego pracownikom.
 
-## Instalowanie projektanta obsługiwanego jednym kliknięciem
-<a id="install-the-one-click-designer" class="xliff"></a>
+## <a name="install-the-one-click-designer"></a>Instalowanie projektanta obsługiwanego jednym kliknięciem
 1.  W programie Microsoft Dynamics 365 for Retail w menu w lewym górnym rogu wybierz kolejno opcje **Handel detaliczny** **i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Punkt sprzedaży** &gt; **Układy ekranu**.
 2.  Zaznacz dowolny układu, który ma typ aplikacji **Modern POS for Windows** lub **Cloud POS**, a następnie kliknij przycisk **Projektant układu**.
 3.  Na pasku powiadomień, który pojawia się u dołu okna programu Internet Explorer, kliknij przycisk **Otwórz** i zainstaluj projektanta obsługiwanego jednym kliknięciem. (Pasek powiadomień może pojawiać się w innych miejscach w innych przeglądarkach).
@@ -46,8 +44,7 @@ O wyglądzie interfejsu graficznego projektowania programu MPOS lub Cloud POS de
 5.  Po zakończeniu instalacji przejdź do strony **Zaloguj**, wprowadź nazwę i hasło użytkownika programu Microsoft Dynamics 365 for Retail, a następnie kliknij przycisk **Zaloguj**, aby uruchomić projektanta.
 6.  Po zweryfikowaniu Twoich poświadczeń i uruchomieniu projektanta możesz zaprojektować własny układ albo zmodyfikować istniejący. [![Układ w projektancie obsługiwanym jednym kliknięciem](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
 
-## Rozwiązywanie problemów z instalacją projektanta układu
-<a id="troubleshoot-the-installation-of-the-layout-designer" class="xliff"></a>
+## <a name="troubleshoot-the-installation-of-the-layout-designer"></a>Rozwiązywanie problemów z instalacją projektanta układu
 -   Po kliknięciu przycisku **Projektant** nie jest wyświetlany monit o pobranie (lub uruchomienie) instalatora albo Twoje obecne ustawienia zabezpieczeń nie pozwalają na pobranie pliku. **Rozwiązania:**
     -   W programie Internet Explorer upewnij się, że blokada wyskakujących okienek jest wyłączona dla tej witryny. Kliknij kolejno opcje **Ustawienia** &gt; **Opcje** &gt; **Prywatność** &gt; **Blokuj wyskakujące okienka** i w razie potrzeby zmień ustawienie.
     -   W programie Internet Explorer dodaj adres URL programu Dynamics 365 for Retail do zaufanych witryn. Kliknij kolejno opcje **Ustawienia** &gt; **Opcje** &gt; **Zabezpieczenia** &gt; **Zaufane witryny** &gt; **Witryny** &gt; **Dodaj**.
@@ -55,8 +52,7 @@ O wyglądzie interfejsu graficznego projektowania programu MPOS lub Cloud POS de
 
 **Znany problem:** Projektant nie działa poprawnie w przeglądarkach Google Chrome i Mozilla Firefox. Pracujemy nad rozwiązaniem tego problemu.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Konfigurowanie, pobieranie, instalowanie i aktywowanie aplikacji Retail Modern POS](retail-modern-pos-device-activation.md)

@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192101
 ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 6ea8b060741ea94af16861d5bb52894a577e5521
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Konfigurowanie ręcznej decyzji w przepływie pracy
-<a id="configure-a-manual-decision-in-a-workflow" class="xliff"></a>
+# <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurowanie ręcznej decyzji w przepływie pracy
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,15 +34,13 @@ W tym temacie wyjaśniono sposób konfigurowania właściwości decyzji ręcznej
 
 Aby skonfigurować decyzję ręczną, w edytorze przepływu pracy kliknij decyzję ręczną prawym przyciskiem myszy i wybierz polecenie **Właściwości**, a zostanie otwarta strona **Właściwości**. Następnie za pomocą procedur zamieszczonych niżej skonfiguruj właściwości decyzji ręcznej.
 
-## Nazywanie decyzji
-<a id="name-the-decision" class="xliff"></a>
+## <a name="name-the-decision"></a>Nazywanie decyzji
 Wykonaj następujące kroki, aby wprowadzić nazwę decyzji ręcznej.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
 2.  W polu **Nazwa** wprowadź unikatową nazwę decyzji ręcznej.
 
-## Wprowadzanie wiersza tematu i instrukcji
-<a id="enter-a-subject-line-and-instructions" class="xliff"></a>
+## <a name="enter-a-subject-line-and-instructions"></a>Wprowadzanie wiersza tematu i instrukcji
 Należy wprowadzić wiersz tematu i instrukcje dla użytkowników przypisanych do decyzji ręcznej. Na przykład jeśli konfigurujesz decyzję dla zapotrzebowań na zakup, użytkownik przypisany do decyzji zobaczy wiersz tematu i instrukcje na stronie **Zapotrzebowania na zakup**. Wiersz tematu pojawia się na pasku komunikatów na stronie. Może wtedy kliknąć ikonę na pasku komunikatów i przeczytać instrukcje. Aby wprowadzić wiersz tematu i instrukcje, należy wykonać poniższe kroki.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
@@ -77,8 +74,7 @@ Należy wprowadzić wiersz tematu i instrukcje dla użytkowników przypisanych d
     5.  Aby spersonalizować tekst, możesz wstawić symbole zastępcze, jak opisano w kroku 6.
     6.  Kliknij przycisk **Zamknij**.
 
-## Określanie możliwych wyników decyzji
-<a id="specify-the-possible-outcomes-of-a-decision" class="xliff"></a>
+## <a name="specify-the-possible-outcomes-of-a-decision"></a>Określanie możliwych wyników decyzji
 Zazwyczaj gdy dokument jest przypisany do osoby podejmującej decyzje, osobie tej jest zadawane pytanie. Odpowiedź na to pytanie brzmi zazwyczaj **Tak** lub **Nie** albo **Prawda** lub **Fałsz**. Wykonaj następujące kroki, aby określić możliwe wyniki decyzji ręcznej.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
@@ -98,8 +94,7 @@ Zazwyczaj gdy dokument jest przypisany do osoby podejmującej decyzje, osobie te
     4.  W polu **Przetłumaczony tekst** wprowadź tekst.
     5.  Kliknij przycisk **Zamknij**.
 
-## Określanie, kiedy są wysyłane powiadomienia
-<a id="specify-when-notifications-are-sent" class="xliff"></a>
+## <a name="specify-when-notifications-are-sent"></a>Określanie, kiedy są wysyłane powiadomienia
 Można wysyłać powiadomienia do osób w momencie wprowadzenia decyzji, jej delegowania lub eskalowania. Wykonaj następujące kroki, aby określić, kiedy i do kogo są wysyłane powiadomienia.
 
 1.  W lewym okienku kliknij opcję **Powiadomienia**.
@@ -168,8 +163,7 @@ Można wysyłać powiadomienia do osób w momencie wprowadzenia decyzji, jej del
 
 8.  Powtórz kroki od 3 do 7 dla każdego zdarzenia wybranego w kroku 2.
 
-## Przypisywanie decyzji
-<a id="assign-a-decision" class="xliff"></a>
+## <a name="assign-a-decision"></a>Przypisywanie decyzji
 Wykonaj poniższe kroki, aby określić, komu ma zostać przypisana decyzja ręczna.
 
 1.  W lewym okienku kliknij opcję **Przypisanie**.
@@ -255,8 +249,7 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisana decyzja ręc
 
     Jeśli użytkownik nie podejmie decyzji w wyznaczonym czasie, staje się ona zaległa. Decyzję zaległą można eskalować na podstawie opcji wybranych na stronie w obszarze **Eskalacja**.
 
-## Określanie, co się dzieje z decyzją zaległą
-<a id="specify-what-happens-when-a-decision-is-overdue" class="xliff"></a>
+## <a name="specify-what-happens-when-a-decision-is-overdue"></a>Określanie, co się dzieje z decyzją zaległą
 Jeśli użytkownik nie podejmie decyzji w wyznaczonym czasie, staje się ona zaległa. Decyzja zaległa może być eskalowana lub automatycznie przypisywana do innego użytkownika. Wykonaj następujące kroki, aby eskalować zaległą decyzję.
 
 1.  W lewym okienku kliknij opcję **Eskalacja**.
@@ -327,8 +320,7 @@ Jeśli użytkownik nie podejmie decyzji w wyznaczonym czasie, staje się ona zal
 5.  Powtórz kroki od 3 do 4 dla każdego użytkownika, który powinien zostać dodany do ścieżki eskalacji. Można zmienić kolejność użytkowników.
 6.  Jeśli użytkownicy wymienieni w ścieżce eskalacji nie podejmą decyzji w wyznaczonym czasie, system sam podejmie decyzję. Aby określić opcję wybieraną przez system, wybierz wiersz **Akcja**, a następnie na karcie **Zakończ działanie** wybierz opcję.
 
-## Ustawianie limitu czasu
-<a id="set-a-time-limit" class="xliff"></a>
+## <a name="set-a-time-limit"></a>Ustawianie limitu czasu
 Jeśli decyzja musi zostać podjęta w określonym czasie, wykonaj następujące kroki. **Uwaga:** Opcje wybranej w tej procedurze zastępują opcje wybrane na stronie w obszarach **Przypisanie** i **Eskalacja**.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia zaawansowane**.

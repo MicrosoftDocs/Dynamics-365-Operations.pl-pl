@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,19 +24,16 @@ ms.openlocfilehash: fedde78a563939fd7080e748c412c89c71586823
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Raporty finansowe
-<a id="financial-reporting" class="xliff"></a>
+# <a name="financial-reporting"></a>Raporty finansowe
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition i jak korzystać z funkcji raportowania finansowego. Zawiera opis domyślnych raportów finansowych, które są zawarte w programie.
 
-Uzyskiwanie dostępu do raportowania finansowego
-<a id="accessing-financial-reporting" class="xliff"></a>
+<a name="accessing-financial-reporting"></a>Uzyskiwanie dostępu do raportowania finansowego
 -----------------------------
 
 Menu **Raporty finansowe** można znaleźć w następujących miejscach w programie Finance and Operations:
@@ -55,8 +53,7 @@ Aby tworzyć i generować raporty finansowe firmy, należy ustawić następując
 
 Funkcje raportowania finansowego są dostępne dla użytkowników, którzy mają odpowiednie uprawnienia i obowiązki przypisane za pomocą ich ról zabezpieczeń. W poniższych sekcjach wymieniono te uprawnienia i obowiązki, łącznie z powiązanymi rolami.
 
-### Obowiązki
-<a id="duties" class="xliff"></a>
+### <a name="duties"></a>Obowiązki
 
 | Etykieta cła                            | Opis                                                             | Nazwa drzewa obiektów aplikacji (AOT)                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
@@ -65,8 +62,7 @@ Funkcje raportowania finansowego są dostępne dla użytkowników, którzy mają
 | Generowanie raportów finansowych            | Generowanie i odświeżanie raportów finansowych.                                 | FinancialReportsGenerate         |
 | Przeglądanie wyników finansowych          | Przeglądanie i analizowanie wyników finansowych.                               | FinancialReportsPerfReview       |
 
-### Uprawnienia
-<a id="privileges" class="xliff"></a>
+### <a name="privileges"></a>Uprawnienia
 
 | Uprawnienie etykiety                       | Opis                                                             | Nazwa drzewa obiektów aplikacji (AOT)                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
@@ -75,8 +71,7 @@ Funkcje raportowania finansowego są dostępne dla użytkowników, którzy mają
 | Generowanie raportów finansowych            | Generowanie i odświeżanie raportów finansowych.                                 | FinancialReportsGenerateReports  |
 | Wyświetlanie raportów finansowych                | Wyświetlanie raportów finansowych.                                                 | FinancialReportsView             |
 
-### Role
-<a id="roles" class="xliff"></a>
+### <a name="roles"></a>Role
 
 | Uprawnienie etykiety                       | Obowiązek                                  | Role                                                                           |
 |---------------------------------------|---------------------------------------|---------------------------------------------------------------------------------|
@@ -87,8 +82,7 @@ Funkcje raportowania finansowego są dostępne dla użytkowników, którzy mają
 
 Po dodaniu użytkownika lub zmianie roli, użytkownik powinien mieć dostęp do raportów finansowych za kilka minut. **Uwaga:** Rola sysadmin jest dodawana do wszystkich ról w module sprawozdawczości finansowej.
 
-## Raporty domyślne
-<a id="default-reports" class="xliff"></a>
+## <a name="default-reports"></a>Raporty domyślne
 Raporty finansowe to 22 domyślne raporty. Każdy raport używa domyślnych kategorii konta głównego w programie Finance and Operations. Raporty te można wykorzystywać w takiej formie, w jakiej są lub jako bazy do utworzenia własnego raportu finansowego. Oprócz tradycyjnych sprawozdań finansowych, takich jak Zestawienie przychodów i Bilans, te domyślne raporty obejmują raporty, które pokazują różne typy raportów finansowych, które możesz utworzyć. Wpis każdego raportu w poniższej tabeli prowadzi do prezentacji Office Mix o danym raporcie.
 
 | Raport domyślny                                                                                         | opis                                                                                                                                                                                                                                                                                                          |
@@ -116,16 +110,13 @@ Raporty finansowe to 22 domyślne raporty. Każdy raport używa domyślnych kate
 | [Tygodniowa sprzedaż i rabaty — domyślne](https://mix.office.com/watch/112ng0hy5de0j)                     | Lepszy wgląd w sprzedaż i rabaty dla każdego tygodnia w miesiącu. Ten raport zawiera sumę z czterech tygodni.                                                                                                                                                                                                              |
 | [Dostępne środki budżetowe — domyślny](https://mix.office.com/watch/15hcpezcbx7tv)                         | Wyświetlanie szczegółowego porównania skorygowanego budżetu, rzeczywistych rozchodów, rezerwacji budżetu i środków budżetowych dostępnych dla wszystkich kont                                                                                                                                                                                  |
 
-## Otwieranie raportów finansowych
-<a id="opening-financial-reports" class="xliff"></a>
+## <a name="opening-financial-reports"></a>Otwieranie raportów finansowych
 Po kliknięciu menu **Raporty finansowe** jest wyświetlana lista domyślnych raportów finansowych firmy. Następnie można otworzyć lub zmodyfikować raport. Aby otworzyć jeden z domyślnych raportów, należy wybrać nazwę raportu. Kiedy raport zostanie otwarty po raz pierwszy, zostanie automatycznie wygenerowany raport za poprzedni miesiąc. Na przykład jeśli raport zostanie otwarty po raz pierwszy w sierpniu 2016, jest generowany raport na 31 lipca 2016 r. Po otwarciu raportu, możesz zapoznać się ze szczegółowymi danymi i opcjami modyfikacji.
 
-## Tworzenie i modyfikowanie raportów finansowych
-<a id="creating-and-modifying-financial-reports" class="xliff"></a>
+## <a name="creating-and-modifying-financial-reports"></a>Tworzenie i modyfikowanie raportów finansowych
 Z listy raportów finansowych można utworzyć nowy raport lub zmodyfikować istniejący raport. Jeśli masz odpowiednie uprawnienia, możesz utworzyć nowy raport finansowy, klikając przycisk **Nowy** w okienku akcji. Projektant raportów zostanie pobrany na Twoje urządzenie i uruchomiony. Po uruchomieniu projektanta raportów można utworzyć nowy raport. Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych. Na liście są wyświetlane tylko raporty, które zostały utworzone dla firmy używanej w programie Finance and Operations. Aby uzyskać więcej informacji na temat procesu tworzenia i modyfikowania raportów finansowych w programie Finance and Operations, zobacz następujące [wpisy](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) na blogu o module sprawozdawczości finansowej w systemie Dynamics. **Uwaga:** Komputer, do którego pobierasz aplikację kliencką projektanta raportów, musi mieć zainstalowane oprogramowanie Microsoft .NET Framework w wersji 4.6.2. Tę wersję programu Microsoft .NET Framework można pobrać i zainstalować [stąd](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Jeśli używasz przeglądarki Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta projektanta raportów. Jeśli pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito. Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych. Po wybraniu obszaru wokół nazwy raportu kliknij przycisk **Edytuj** w okienku akcji. Zostanie uruchomiony projektant raportów.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Wyświetlanie raportów finansowych](view-financial-reports.md)

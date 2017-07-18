@@ -10,13 +10,14 @@ ms.service: dynamics-365-retail
 ms.technology: 
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
+ms.reviewer: josaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: mumani
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
@@ -24,11 +25,9 @@ ms.openlocfilehash: 3f0b566963574569cb40b72550e2337c9ba8a2ce
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Definiowanie i obsługa kanałów sprzedaży detalicznej
-<a id="define-and-maintain-retail-channels" class="xliff"></a>
+# <a name="define-and-maintain-retail-channels"></a>Definiowanie i obsługa kanałów sprzedaży detalicznej
 
 [!include[banner](includes/banner.md)]
 
@@ -37,12 +36,10 @@ Ten artykuł zawiera omówienie procesu konfigurowania sklepów tradycyjnych (fi
 
 Program Dynamics 365 for Retail obsługuje wiele kanałów sieci sprzedaży, takich jak sklepy internetowe, biura obsługi i sklepy tradycyjne. Sklep tradycyjny jest nazywany sklepem detalicznym. Każdy sklep detaliczny ma własne metody płatności, grupy cenowe, kasy punktów sprzedaży, konta przychodów i wydatków oraz personel. Wszystkie te elementy sklepu detalicznego należy skonfigurować przed jego utworzeniem. Po utworzeniu sklepu detalicznego, można przypisać produkty, które mają trafić do sklepu. Rejestry, pracowników i odbiorców również można przypisać do sklepu. Na koniec należy dodać nowy sklep do hierarchii organizacyjnej.
 
-## Konfigurowanie sklepów detalicznych
-<a id="setting-up-retail-stores" class="xliff"></a>
+## <a name="setting-up-retail-stores"></a>Konfigurowanie sklepów detalicznych
 Przed skonfigurowaniem sklepu detalicznego w programie Dynamics 365 for Retail należy wykonać niektóre zadania wymagań wstępnych. Następnie można utworzyć sklep detaliczny i dodać szczegóły.
 
-### Wymagania wstępne
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Wymagania wstępne
 
 Przed skonfigurowaniem sklepu detalicznego należy wykonać następujące zadania:
 
@@ -61,8 +58,7 @@ Przed skonfigurowaniem sklepu detalicznego należy wykonać następujące zadani
 
 Przejrzyj wszystkie zadania zawarte w wymaganiach wstępnych i wykonaj tylko te, które odnoszą się do Ciebie.
 
-### Konfigurowanie sklepu sieci sprzedaży
-<a id="set-up-a-retail-store" class="xliff"></a>
+### <a name="set-up-a-retail-store"></a>Konfigurowanie sklepu sieci sprzedaży
 
 Po zakończeniu zadania wymagań wstępnych wykonaj te zadania, aby skonfigurować szczegóły sklepu detalicznego:
 
@@ -72,8 +68,7 @@ Po zakończeniu zadania wymagań wstępnych wykonaj te zadania, aby skonfigurowa
 4.  Dodawanie szczegółów do opisów produktów dla produktów, które oferujesz w sklepach detalicznych. Na przykład można dodawać obrazy i tekst sformatowany RTF. Te informacje szczegółowe o produkcie są wyświetlane w różnych kontekstach, takich jak kasy w punkcie sprzedaży lub wydrukowane etykiety.
 5.  Dodawanie sklepu sieci sprzedaży do domyślnej hierarchii organizacyjnej przypisanej do celu **Asortyment sieci sprzedaży**, **Uzupełnianie zapasów sieci sprzedaży** lub **Raportowanie sieci sprzedaży**.
 
-### Po skonfigurowaniu sklepu detalicznego
-<a id="after-you-set-up-a-retail-store" class="xliff"></a>
+### <a name="after-you-set-up-a-retail-store"></a>Po skonfigurowaniu sklepu detalicznego
 
 Po wprowadzeniu szczegółów sklepu detalicznego zakończ te zadania, aby wysłać nowe dane sklepu detalicznego do Retail POS.
 
@@ -84,8 +79,7 @@ Po wprowadzeniu szczegółów sklepu detalicznego zakończ te zadania, aby wysł
 5.  Publikowanie sklepu detalicznego, aby wysyłać dane sklepu do Retail POS.
 6.  Uruchamianie zadań, aby wysyłać dane sklepu do Retail POS.
 
-## Hierarchie organizacyjne
-<a id="organization-hierarchies" class="xliff"></a>
+## <a name="organization-hierarchies"></a>Hierarchie organizacyjne
 Moduł Handel detaliczny używa hierarchii organizacji do tworzenia struktury w kanałach sprzedaży detalicznej. Hierarchie organizacji reprezentują relacje między organizacjami, które składają się na działalność. Podczas konfigurowania sklepów, można je dodawać do hierarchii organizacyjnej. Sklepy współdzielą wówczas dane używane do asortymentów, uzupełnienia i raportów.
 
 

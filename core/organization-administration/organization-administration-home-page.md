@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20421
 ms.assetid: 7aa24a03-d172-47e9-81f8-ebd39e80bc60
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,33 +23,28 @@ ms.openlocfilehash: 889a9ce79d4599a60a4503d7876276a1452a5465
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Administrowanie organizacją — strona główna
-<a id="organization-administration-home-page" class="xliff"></a>
+# <a name="organization-administration-home-page"></a>Administrowanie organizacją — strona główna
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie wymieniono zasoby, które pomogą korzystać z rozwiązania Microsoft Dynamics 365 for Finance and Operations w organizacji.
 
-Sekwencje identyfikatorów
-<a id="number-sequences" class="xliff"></a>
+<a name="number-sequences"></a>Sekwencje identyfikatorów
 ----------------
 
 -   [Omówienie sekwencji numerów](number-sequence-overview.md)
 -   [Konfigurowanie sekwencji numeracji za pomocą kreatora](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (przewodnik po zadaniu)
 -   [Konfigurowanie indywidualnych sekwencji identyfikatorów](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (przewodnik po zadaniu)
 
-## Książki adresowe
-<a id="address-books" class="xliff"></a>
+## <a name="address-books"></a>Książki adresowe
 -   [Książki adresowe](qa-address-books.md)
 -   [Omówienie: Globalna książka adresowa](overview-global-address-book.md)
 -   [Planowanie konfiguracji globalnej książki adresowej i dodatkowych książek adresowych](plan-configuration-global-address-book-additional-address-books.md)
 
-## System Workflow
-<a id="workflow" class="xliff"></a>
+## <a name="workflow"></a>System Workflow
 -   [Przegląd systemu przepływu pracy](overview-workflow-system.md)
 -   [Architektura systemu przepływu pracy](workflow-system-architecture.md)
 -   [Elementy przepływu pracy](workflow-elements.md)
@@ -65,26 +61,22 @@ Sekwencje identyfikatorów
 -   [Konfigurowanie odgałęzienia równoległego](configure-parallel-branch-workflow.md)
 -   [Konfigurowanie elementu przepływu pracy dla pozycji w wierszu](configure-line-item-workflow.md)
 
-## Zarządzanie sprawami
-<a id="case-management" class="xliff"></a>
+## <a name="case-management"></a>Zarządzanie sprawami
 -   [Planowanie: Konfiguracja sprawy](plan-case-management.md)
 -   [Przykłady zarządzania sprawami](cases.md)
 
-## Podpisy elektroniczne
-<a id="electronic-signatures" class="xliff"></a>
+## <a name="electronic-signatures"></a>Podpisy elektroniczne
 -   [Omówienie podpisów elektronicznych](electronic-signature-overview.md)
 -   [Konfigurowanie podpisów elektronicznych](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (przewodnik po zadaniu)
 
-## Organizacje
-<a id="organizations" class="xliff"></a>
+## <a name="organizations"></a>Organizacje
 -   [Organizacje i hierarchie organizacyjne](organizations-organizational-hierarchies.md)
 -   [Planowanie hierarchii organizacyjnej](plan-organizational-hierarchy.md)
 -   [Tworzenie jednostki operacyjnej](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (przewodnik po zadaniu)
 -   [Tworzenie hierarchii organizacyjnej](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (przewodnik po zadaniu)
 -   [Tworzenie firmy](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (przewodnik po zadaniu)
 
-## Ogólne administrowanie
-<a id="general-administration" class="xliff"></a>
+## <a name="general-administration"></a>Ogólne administrowanie
 -   [Zmienianie transparentu lub logo](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (przewodnik po zadaniu)
 -   [Dane dotyczące daty/godziny i strefy czasowe — Informacje](date-time-zones.md)
 -   [Szablony rekordów](record-templates.md)

@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventCostOnhandItem
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19451
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -25,19 +25,16 @@ ms.openlocfilehash: 823d3edd106925339607d01fbf5f1921b85ff244
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Obiekty kosztów
-<a id="cost-objects" class="xliff"></a>
+# <a name="cost-objects"></a>Obiekty kosztów
 
 [!include[banner](../includes/banner.md)]
 
 
 Ten artykuł zawiera informacje o obiektach kosztów. Wyjaśniono w nim też sposób kumulowania kosztów i ilości. Obiekt kosztów to jednostka, dla której są kumulowane koszty i ilości. Jednostką obiektu kosztów może być produkt lub wariant produktu, takich jak wariant pod względem koloru i stylu.  
 
-Obiekty kosztów
-<a id="cost-objects" class="xliff"></a>
+<a name="cost-objects"></a>Obiekty kosztów
 ------------
 
 Na stronie **Obiekty kosztów** znajduje się lista wszystkich obiektów kosztów, które są zarejestrowane dla produktu. Obiekty kosztów są definiowane na podstawie danych z następujących źródeł:
@@ -60,8 +57,7 @@ W poniższej tabeli przedstawiono, co jest przedmiotem kosztu i co jest obiektem
 | Obiekt kosztów      | x           | x    |           |           |
 | Obiekt magazynu | x           | x    |  x        | x         |
 
-## Akumulacja kosztów i ilości
-<a id="accumulation-of-costs-and-quantities" class="xliff"></a>
+## <a name="accumulation-of-costs-and-quantities"></a>Akumulacja kosztów i ilości
 -   Pole **Wartość** zawiera sumę z następujących wartości:
     -   Fizyczna wartość kosztu
     -   Wartość finansowa
@@ -74,8 +70,7 @@ W poniższej tabeli przedstawiono, co jest przedmiotem kosztu i co jest obiektem
 
 **Uwaga:** Parametr **Włącz wartość fizyczną** nie ma wpływu na wcześniejsze obliczenia.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Grupa wymiarów produktu](https://technet.microsoft.com/en-us/library/aa499382.aspx)

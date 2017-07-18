@@ -10,13 +10,13 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31
+ms.search.validFrom: 2016-05-31T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,25 +24,21 @@ ms.openlocfilehash: aad8f2617d94e9abc77dafe96cb95f7e191873bd
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Interfejs Projektanta raportów
-<a id="report-designer-interface" class="xliff"></a>
+# <a name="report-designer-interface"></a>Interfejs Projektanta raportów
 
 [!include[banner](../includes/banner.md)]
 
 
 Ten artykuł wyjaśnia, jak się poruszać w Projektancie raportów i jak używać różnych opcji do własnych potrzeb. 
 
-Polecenia menu Projektanta raportów
-<a id="report-designer-menu-commands" class="xliff"></a>
+<a name="report-designer-menu-commands"></a>Polecenia menu Projektanta raportów
 -----------------------------
 
 W poniższych tabelach opisano polecenia menu i opcje, których można używać podczas projektowania sprawozdań finansowych. Niektóre polecenia menu i opcje są dostępne tylko w określonych warunkach. Na przykład polecenia promocji i obniżanie poziomu jednostek raportowania są dostępne tylko podczas modyfikowania definicji drzewa raportowania.
 
-### Menu Plik
-<a id="file-menu" class="xliff"></a>
+### <a name="file-menu"></a>Menu Plik
 
 Menu **Pliku** jest dostępne dla wszystkich użytkowników i obejmuje następujące polecenia.
 
@@ -63,8 +59,7 @@ Menu **Pliku** jest dostępne dla wszystkich użytkowników i obejmuje następuj
 | Ostatnie definicje drzew raportowania | Umożliwia wyświetlenie listy definicji drzew raportowania, które zostały ostatnio utworzone lub zmodyfikowane. Następnie można wybrać definicję drzewa raportowania z listy.                                              |
 | Zakończ                              | Zamykanie projektanta raportów.                                                                                                                                                                            |
 
-### Menu Edycja
-<a id="edit-menu" class="xliff"></a>
+### <a name="edit-menu"></a>Menu Edycja
 
 Menu **Edycja** jest dostępne dla użytkowników, którzy mają role **Konstruktor** lub **Administrator**. Obejmuje ono następujące polecenia:
 
@@ -92,8 +87,7 @@ Menu **Edycja** jest dostępne dla użytkowników, którzy mają role **Konstruk
 | Wstaw jednostkę raportowania                  | Umożliwia wstawienie pustego wiersza do definicji drzewa raportowania. To polecenie jest dostępne z definicji drzewa raportowania.                                                                                                |
 | Usuń jednostkę raportowania                  | Usuwanie zaznaczonego wiersza jednostki raportowania z definicji drzewa raportowania. To polecenie jest dostępne z definicji drzewa raportowania.                                                                             |
 
-### Menu Widok
-<a id="view-menu" class="xliff"></a>
+### <a name="view-menu"></a>Menu Widok
 
 Menu **Widok** jest dostępne dla wszystkich użytkowników i obejmuje następujące polecenia.
 
@@ -104,8 +98,7 @@ Menu **Widok** jest dostępne dla wszystkich użytkowników i obejmuje następuj
 | Pasek stanu      | Wyświetlanie lub ukrywanie informacji o stanie w oknie **Projektant raportów**. |
 | Strona powitalna    | Otwieranie **Strony powitalnej**.                                             |
 
-### Menu Format
-<a id="format-menu" class="xliff"></a>
+### <a name="format-menu"></a>Menu Format
 
 Menu **Format** jest dostępne dla użytkowników, którzy mają role **Konstruktor** lub **Administrator**. Obejmuje ono następujące polecenia:
 
@@ -116,8 +109,7 @@ Menu **Format** jest dostępne dla użytkowników, którzy mają role **Konstruk
 | Ukryj                  | Ukrywanie zaznaczonej kolumny. To polecenie jest dostępne z definicji wiersza, definicji kolumny lub definicji drzewa raportowania.                                                                                        |
 | Odkryj                | Wyświetlanie kolumn ukrytych między zaznaczonymi kolumnami. To polecenie jest dostępne z definicji wiersza, definicji kolumny lub definicji drzewa raportowania.                                                      |
 
-### Menu Firma
-<a id="company-menu" class="xliff"></a>
+### <a name="company-menu"></a>Menu Firma
 
 Menu **Firma** jest dostępne dla użytkowników, którzy mają role **Konstruktor** lub **Administrator**. Obejmuje ono następujące polecenia:
 
@@ -126,8 +118,7 @@ Menu **Firma** jest dostępne dla użytkowników, którzy mają role **Konstrukt
 | Firmy             | Otwieranie okna dialogowego **Firmy**, w którym można tworzyć i modyfikować firmy.                                          |
 | Grupy bloków konstrukcyjnych | Otwieranie okna dialogowego **Grupa bloków konstrukcyjnych**, gdzie można tworzyć, modyfikować, importować i eksportować grupy bloków konstrukcyjnych. |
 
-### Menu Przejdź
-<a id="go-menu" class="xliff"></a>
+### <a name="go-menu"></a>Menu Przejdź
 
 Menu **Przejdź** jest dostępne dla wszystkich użytkowników i obejmuje następujące polecenia. **Uwaga:** skutków zastosowania tych poleceń nie widać, jeśli okienko nawigacji jest niewidoczne.
 
@@ -139,8 +130,7 @@ Menu **Przejdź** jest dostępne dla wszystkich użytkowników i obejmuje nastę
 | Definicje drzew raportowania | Umożliwia wyświetlanie definicji drzew raportowania w okienku nawigacji.                            |
 | Zabezpieczenia                   | Umożliwia wyświetlenie informacji o zabezpieczeniach dla użytkowników, grup i firm w okienku nawigacji. |
 
-### Menu Narzędzia
-<a id="tools-menu" class="xliff"></a>
+### <a name="tools-menu"></a>Menu Narzędzia
 
 Menu **Narzędzia** jest dostępne dla wszystkich użytkowników, ale niektóre polecenia ograniczonej dostępności. Obejmuje ono następujące polecenia:
 
@@ -153,8 +143,7 @@ Menu **Narzędzia** jest dostępne dla wszystkich użytkowników, ale niektóre 
 | Odśwież dane finansowe w pamięci podręcznej | Pozwala zaktualizować dane w kolumnie wymiary finansowe.                                                                                                                                                               |
 | Opcje                       | Otwórz okno dialogowe **Opcje**, w którym można zmodyfikować preferencje użytkownika dla Projektanta raportów.                                                                                                                       |
 
-### Menu Okno
-<a id="window-menu" class="xliff"></a>
+### <a name="window-menu"></a>Menu Okno
 
 Menu **Okno** jest dostępne dla wszystkich użytkowników i obejmuje następujące polecenia.
 
@@ -167,8 +156,7 @@ Menu **Okno** jest dostępne dla wszystkich użytkowników i obejmuje następuj�
 | Zablokuj w pionie      | Zablokuj wybraną kolumnę, aby podczas przewijania ta kolumna była nadal widoczna w oknie. To polecenie jest dostępne dla użytkowników, którzy mają rolę **Projektant** lub **Administrator**. |
 | Lista otwartych okien | Pokaż listę otwartych okien. Wybierz okno, aby przenieść je na pierwszy plan.                                                                                                               |
 
-### Menu Pomoc
-<a id="help-menu" class="xliff"></a>
+### <a name="help-menu"></a>Menu Pomoc
 
 Menu **Pomoc** jest dostępne dla wszystkich użytkowników i obejmuje następujące polecenia.
 
@@ -177,12 +165,10 @@ Menu **Pomoc** jest dostępne dla wszystkich użytkowników i obejmuje następuj
 | Pomoc    | Otwieranie tematu pomocy programu Finance and Operations dotyczącego sprawozdawczości finansowej. |
 |         |                                                              |
 
-## Przyciski paska narzędzi Projektanta raportów
-<a id="report-designer-toolbar-buttons" class="xliff"></a>
+## <a name="report-designer-toolbar-buttons"></a>Przyciski paska narzędzi Projektanta raportów
 W poniższych tabelach opisano przyciski paska narzędzi, których można używać podczas projektowania raportów. Niektóre przyciski paska narzędzi są dostępne tylko w określonych warunkach. Na przykład przyciski promocji i obniżanie poziomu jednostek raportowania są dostępne tylko podczas modyfikowania definicji drzewa raportowania.
 
-### Standardowy pasek narzędzi
-<a id="standard-toolbar" class="xliff"></a>
+### <a name="standard-toolbar"></a>Standardowy pasek narzędzi
 
 Standardowy pasek narzędzi zapewnia szybki dostęp do plików i poleceń edycji. Ten pasek narzędzi zawiera następujące przyciski.
 
@@ -207,8 +193,7 @@ Standardowy pasek narzędzi zapewnia szybki dostęp do plików i poleceń edycji
 | [![Przycisk Zwiń](./media/collapsec130389.png)](./media/collapsec130389.png)               | Zwiń drzewo raportowania.                                                                                                                                                           |
 | [![Przycisk Pomoc](./media/helpc130389.png)](./media/helpc130389.png)                           | Otwieranie Pomocy.                                                                                                                                                                             |
 
-### Pasek narzędzi Formatowanie
-<a id="formatting-toolbar" class="xliff"></a>
+### <a name="formatting-toolbar"></a>Pasek narzędzi Formatowanie
 
 Pasek narzędzi formatowania zapewnia łatwy dostęp do poleceń stylów. Ten pasek narzędzi zawiera następujące przyciski.
 
@@ -225,8 +210,7 @@ Pasek narzędzi formatowania zapewnia łatwy dostęp do poleceń stylów. Ten pa
 | [![Przycisk Kolor tła](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Zmiana koloru tła bieżącej komórki.        |
 | [![Przycisk Kolor czcionki](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Zmiana koloru bieżącego tekstu.                   |
 
-### Pasek narzędzi projektanta raportów
-<a id="report-designer-toolbar" class="xliff"></a>
+### <a name="report-designer-toolbar"></a>Pasek narzędzi projektanta raportów
 
 Pasek narzędzi projektanta raportów oferuje szybki dostęp do poleceń nawigowania wewnątrz projektanta raportów. Ten pasek narzędzi zawiera następujące przyciski.
 
@@ -241,8 +225,7 @@ Pasek narzędzi projektanta raportów oferuje szybki dostęp do poleceń nawigow
 
 
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Raporty finansowe](financial-reporting-intro.md)

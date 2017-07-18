@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.assetid: 
 ms.search.region: Global
 ms.author: knelson
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.version: Enterprise edition, July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 993e88703f19dbeec435d07a4599cbbfcda563bc
@@ -21,18 +22,15 @@ ms.openlocfilehash: b63e31f3e4993c1fda229a54b4e5ef2fed824355
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Zawartość usługi Power BI dla kierownika praktyk
-<a id="practice-manager-power-bi-content" class="xliff"></a>
+# <a name="practice-manager-power-bi-content"></a>Zawartość usługi Power BI dla kierownika praktyk
 
 [!include[banner](../includes/banner.md)]
 
 W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft Power BI **Kierownik praktyk**. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
-## Przegląd
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Przegląd
 
 Zawartości usługi Power BI **Kierownik praktyk** została utworzona dla kierowników praktyk i kierowników projektów. Zawiera podstawowe wskaźniki, które odnoszą się do projektów, nad którymi organizacja pracuje. Pulpit nawigacyjny zawiera przegląd projektów i powiązanych odbiorców. Filtr poziomu raportu może służyć do raportowania dla określonych firm. Ten pakiet zawartości usługi Power BI pobiera dane ze zagregowanych miar rozliczania projektu.
 
@@ -40,12 +38,10 @@ Pakiet zawartości Power BI **Kierownik praktyk** zawiera pięć stron raportu: 
 
 Wszystkie kwoty w zawartości są wyświetlane w walucie systemu. Można ustawiać walutę systemową na stronie **Parametry systemowe**.
 
-## Przechodzenie do pakietu zawartości usługi Power BI
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r., pakiet zawartości usługi Power BI **Kierownik praktyk** jest wyświetlany w obszarze roboczym **Zarządzanie projektami** .
 
-## Raporty umieszczone w pakiecie zawartości usługi Power BI
-<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
 
 W poniższej tabeli przedstawiono szczegóły dotyczące mierników, które znajdują się na każdej stronie raportu w pakiecie zawartości dla usługi Power BI **Kierownik praktyk** .
 
@@ -59,23 +55,20 @@ W poniższej tabeli przedstawiono szczegóły dotyczące mierników, które znaj
 
 Wykresy i kafelki we wszystkich tych raportach można filtrować i przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Można także użyć funkcji eksportu danych źródłowych do wyeksportowania danych podsumowanych w wizualizacji.
 
-## Rozszerzanie funkcjonalności pakietu zawartości usługi Power BI
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Rozszerzanie funkcjonalności pakietu zawartości usługi Power BI
 Za pomocą pakietów zawartości dostępnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) można dostarczać zaawansowane funkcje analityczne osobom, które się nie logują w programie Microsoft Dynamics 365. Te pakiety zawartości można modyfikować, tak aby zawierały inne raporty lub wizualizacje, a następnie publikować je w swojej dzierżawie usługi Power BI.com na potrzeby wykonywania analiz. 
 
 Pakiet zawartości usługi Power BI **Kierownik praktyk** znajduje się w bibliotece zasobów wspólnych w usłudze LCS. Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).
 
 Uważaj, aby pobrać pakiet zawartości **Kierownik praktyk** mający zastosowanie do używanej wersji systemu Dynamics 365.
 
-## Opis modelu danych i jednostek
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 
 Następujące dane są używane do wypełniania stron raportów w pakiecie zawartości **Kierownik praktyk** dla usługi Power BI. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md).
 
 Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 
-### Jednostka: ProjectAccountingCube_ActualHourUtilization
-<a id="entity-projectaccountingcubeactualhourutilization" class="xliff"></a>
+### <a name="entity-projectaccountingcubeactualhourutilization"></a>Jednostka: ProjectAccountingCube_ActualHourUtilization
 **Źródło danych**: ProjEmplTrans
 
 | Najważniejsza zagregowana miara      | Pole                              | opis | 
@@ -83,8 +76,7 @@ Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 | Rzeczywiste wykorzystanie do zafakturowania — godziny | Sum(ActualUtilizationBillableRate) | Rzeczywiste wykorzystanie do zafakturowania w godzinach łącznie. |
 | Rzeczywiste obciążenie do zafakturowania — godziny   | Sum(ActualBurdenBillableRate)      | Wskaźnik rzeczywistego obciążenia łącznie. |
 
-### Jednostka: ProjectAccountingCube_Actuals
-<a id="entity-projectaccountingcubeactuals" class="xliff"></a>
+### <a name="entity-projectaccountingcubeactuals"></a>Jednostka: ProjectAccountingCube_Actuals
 **Źródło danych**: ProjTransPosting
 
 | Najważniejsza zagregowana miara | Pole              | opis | 
@@ -92,8 +84,7 @@ Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 | Rzeczywisty przychód            | Sum(ActualRevenue) | Przychód zaksięgowany dla wszystkich transakcji łącznie. |   
 | Koszt rzeczywisty               | Sum(ActualCost)    | Koszt zaksięgowany dla wszystkich typów transakcji łącznie. |
 
-### Jednostka: ProjectAccountingCube_Customer
-<a id="entity-projectaccountingcubecustomer" class="xliff"></a>
+### <a name="entity-projectaccountingcubecustomer"></a>Jednostka: ProjectAccountingCube_Customer
 **Źródło danych**: CustTable
 
 | Najważniejsza zagregowana miara | Pole                                            | opis | 
@@ -101,8 +92,7 @@ Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 | Liczba projektów        | COUNTA(ProjectAccountingCube_Projects[PROJECTS]) | Liczba dostępnych projektów. |
 
 
-### Jednostka: ProjectAccountingCube_Forecasts
-<a id="entity-projectaccountingcubeforecasts" class="xliff"></a>
+### <a name="entity-projectaccountingcubeforecasts"></a>Jednostka: ProjectAccountingCube_Forecasts
 **Źródło danych**: ProjTransBudget
 
 | Najważniejsza zagregowana miara | Pole                  | opis | 
@@ -111,16 +101,14 @@ Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 | Przychód budżetowy            | Sum(BudgetRevenue)     | Prognozowany przychód naliczony/zafakturowany łącznie.  |
 | Budżetowa marża brutto       | Sum(BudgetGrossMargin) | Różnica między sumą prognozowanego przychodu łącznie a sumą kosztów prognozowanych łącznie. |
 
-### Jednostka: ProjectAccountingCube_ProjectPlanCostsView
-<a id="entity-projectaccountingcubeprojectplancostsview" class="xliff"></a>
+### <a name="entity-projectaccountingcubeprojectplancostsview"></a>Jednostka: ProjectAccountingCube_ProjectPlanCostsView
 **Źródło danych**: Projekt
 
 | Najważniejsza zagregowana miara | Pole                    | opis | 
 |---------------------------|--------------------------|-------------|
 | Planowany koszt              | Sum(SumOfTotalCostPrice) | Całkowity koszt własny w oszacowaniach dla wszystkich typów transakcji projektu zawierających planowane zadania. |
 
-### Jednostka: ProjectAccountingCube_Projects
-<a id="entity-projectaccountingcubeprojects" class="xliff"></a>
+### <a name="entity-projectaccountingcubeprojects"></a>Jednostka: ProjectAccountingCube_Projects
 **Źródło danych**: Projekt
 
 | Najważniejsza zagregowana miara    | Pole | opis | 
@@ -131,8 +119,7 @@ Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 | Wskaźnik rzeczywistych godzin do zafakturowania  | ProjectAccountingCube_Projects [rzeczywiste wykorzystanie do zafakturowania w godzinach łącznie dla projektu] / (ProjectAccountingCube_Projects [rzeczywiste wykorzystanie do zafakturowania w godzinach łącznie dla projektu] +ProjectAccountingCube_Projects[rzeczywiste obciążenie do zafakturowania w godzinach łącznie dla projektu]) | Rzeczywista suma godzin do zafakturowania na podstawie godzin wykorzystanych (produktywnych) i obciążenia (nieproduktywnych). |
 | Uzyskana wartość                 | ProjectAccountingCube_Projects[suma kosztów planowanych projektu] * ProjectAccountingCube_Projects [Procent wykonanej pracy] | Całkowity planowany koszt pomnożony przez procent wykonanej pracy. |
 
-### Jednostka: ProjectAccountingCube_TotalEstimatedCosts
-<a id="entity-projectaccountingcubetotalestimatedcosts" class="xliff"></a> 
+### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Jednostka: ProjectAccountingCube_TotalEstimatedCosts 
 **Źródło danych**: ProjTable
 
 | Najważniejsza zagregowana miara       | Pole               | opis | 

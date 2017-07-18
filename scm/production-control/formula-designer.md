@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: 
 ms.author: cvocph
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 84322bb3f02d236843bebc24c4c5eccdd4d9f2bf
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Projektant formuł
-<a id="formula-designer" class="xliff"></a>
+# <a name="formula-designer"></a>Projektant formuł
 
 [!include[banner](../includes/banner.md)]
 
@@ -45,8 +44,7 @@ Kliknij **Filtr**, aby zmienić początkowy wybór w widoku. Jeśli ustawisz zas
 
 W poniższych sekcjach opisano funkcje dostępne w projektancie BOM.
 
-## Analizowanie struktury formuły za pomocą projektanta formuł
-<a id="analyze-a-formula-structure-by-using-the-formula-designer" class="xliff"></a>
+## <a name="analyze-a-formula-structure-by-using-the-formula-designer"></a>Analizowanie struktury formuły za pomocą projektanta formuł
 Projektant formuł ma dwie sekcje:
 
 -   Widok drzewa struktury formuły.
@@ -57,8 +55,7 @@ Projektant formuł ma dwie sekcje:
     -   **Marszruta** — wyświetlanie nagłówka marszruty powiązanego z wybranym węzłem.
     -   **Operacje marszruty** — wyświetlanie podglądu operacji w marszrucie. Po wybraniu wiersza listy składowej (BOM) przypisanego do konkretnej operacji operacja ta jest oznaczana jako **Składnik wymagany w operacji**.
 
-## Wybieranie formuły i marszruty
-<a id="select-a-formula-and-route" class="xliff"></a>
+## <a name="select-a-formula-and-route"></a>Wybieranie formuły i marszruty
 Filtr stosowany do formuły i marszruty jest wyświetlany w nagłówku projektanta formuł. Można zmienić filtr za pomocą okna dialogowego **Filtr**. W poniższej tabeli opisano pola w tym oknie dialogowym.
 
 <table>
@@ -102,8 +99,7 @@ Filtr stosowany do formuły i marszruty jest wyświetlany w nagłówku projektan
 
 Jeśli używasz projektanta formuł do sprawdzania i edytowania formuł składających się z jednego lub więcej poziomów fantomów, marszruta skojarzona z pozycją u góry zwykle obejmuje całą hierarchię formuły. Aby uprościć przegląd, możesz zablokować marszrutę górnego poziomu w na ekranie, klikając kolejno opcje **Widok** &gt; **Zablokuj marszrutę**. Aby odblokować marszrutę, kliknij kolejno opcje **Widok** &gt; **Odblokuj marszrutę**.
 
-## Dodawanie i edytowanie formuł i ich wierszy
-<a id="add-and-edit-formulas-and-formula-lines" class="xliff"></a>
+## <a name="add-and-edit-formulas-and-formula-lines"></a>Dodawanie i edytowanie formuł i ich wierszy
 Aby zmodyfikować wiersze formuły lub formułę, użyj funkcji **Wiersze BOM** lub **Formuła**. Po wybraniu węzła na drzewie typ węzła określa funkcje, które są dostępne.
 
 | Funkcja                            | opis                                                                                               | Typ węzła i warunki |
@@ -117,8 +113,7 @@ Aby zmodyfikować wiersze formuły lub formułę, użyj funkcji **Wiersze BOM** 
 | Formuła &gt; Obliczanie            | Otwórz okno dialogowe, w którym można uruchomić koszty lub obliczanie ceny sprzedaży dla wariantu produktu. | Funkcja ta jest dostępna, gdy wybrany węzeł jest powiązany z wersją formuły. |
 | Formuła &gt; Sprawdź                  | Weryfikowanie i sprawdzanie wybranej formuły.                                                                  | Funkcja ta jest dostępna, gdy wybrany węzeł jest powiązany z wersją formuły. |
 
-## Konfigurowanie widoku drzewa
-<a id="configuring-the-tree-view" class="xliff"></a>
+## <a name="configuring-the-tree-view"></a>Konfigurowanie widoku drzewa
 Kliknij przycisk **Ustawienia**, aby dostosować informacje wyświetlane w widoku drzewa w projektancie formuł.
 
 | Grupa pola | opis |

@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -23,11 +24,9 @@ ms.openlocfilehash: fbf5337ac41ceae6e911c056db5226c8ed1cefb0
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Tworzenie zamówień zakupu
-<a id="create-purchase-orders" class="xliff"></a>
+# <a name="create-purchase-orders"></a>Tworzenie zamówień zakupu
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Zamówienia zakupu można również tworzyć przez kopiowanie wierszy z innego d
 
 Chociaż można ręcznie tworzyć zamówienia zakupu, zazwyczaj są one generowane z innych procesów. Zamówienia mogą być tworzone automatycznie na podstawie innych dokumentów, takich jak zapotrzebowania. Alternatywnie mogą być tworzone w ramach procesu planowania głównego przy użyciu mechanizmu zaplanowanych zamówień zakupu. Jeśli używasz umów zakupu, zamówienia zakupu mogą być tworzone przez operację **Zwolnij zamówienie**. Istnieją również bardziej zaawansowane metody automatycznego tworzenia zamówień zakupu. Na przykład można tworzyć zamówienia, gdy są używane dostawy bezpośrednie lub łańcuchy zamówień międzyfirmowych.
 
-## Tworzenie nagłówka zamówienia zakupu
-<a id="creating-a-purchase-order-header" class="xliff"></a>
+## <a name="creating-a-purchase-order-header"></a>Tworzenie nagłówka zamówienia zakupu
 Podczas tworzenia nowego zamówienia zakupu zostanie wyświetlone okno dialogowe, gdzie można wprowadzić najbardziej typowe informacje nagłówka zamówienia zakupu. Po kliknięciu przycisku **OK** w celu zamknięcia okna dialogowego zamówienie zostanie utworzone i można wtedy określić dodatkowe informacje w nagłówku.  
 
 Pierwszym szczegółem, który należy rozważyć podczas tworzenia zamówienia zakupu, jest typ zamówienia. Najczęściej jest używany typ **Zamówienie zakupu**. Jednakże jeśli jest wymagana faktura korygująca, można użyć typu **Zwrot towaru**.  
@@ -56,8 +54,7 @@ Jeśli z zamówieniem jest skojarzona umowa zakupu, należy podać tę informacj
 
 Nagłówek zamówienia zakupu zawiera także informacje dotyczące opłat mających zastosowanie do całego zamówienia, a nie pojedynczych wierszy. Opłaty mogą być automatycznie dodawane do zamówienia, jeśli skonfigurowano automatyczne opłaty dla dostawcy lub grupy opłat dostawcy. Można także ręcznie dodać opłaty do nagłówka zamówienia, w okienku akcji klikając przycisk **Obsługuj opłaty**.
 
-## Dodawanie wierszy zamówienia zakupu
-<a id="adding-purchase-order-lines" class="xliff"></a>
+## <a name="adding-purchase-order-lines"></a>Dodawanie wierszy zamówienia zakupu
 Zamówienia zakupu mogą dotyczyć fizycznych produktów lub usług. Ustawienie w grupie modeli zapasów określa, czy konkretny numer pozycji stosuje się do produktu czy usługi. Zazwyczaj kupowany towar jest określany przez numer towaru (pozycji). Jednak jeśli zamówienie opiewa na produkty lub usługi, które podlegają bezpośredniemu zużyciu, pozycję można określić również za pomocą kategorii zaopatrzenia.  
 
 Wiersze zamówienia zakupu zawierają wiele pól, ale wiele z nich ma wartości domyślne lub dziedziczone z nagłówka zamówienia. Dodatkowe pola są ustawiane po wybraniu produktu lub usługi. Pola najczęściej ustawiane ręcznie to m.in. pola numeru pozycji, ilości i żądanej daty dostawy. Informacje o cenie jednostkowej i rabatach również są bardzo ważne, ale wartości tych pól są często określane przez umowy handlowe lub umowy zakupu.  
@@ -74,8 +71,7 @@ Czasami trzeba podzielić zamówioną ilość, tak aby różne części zostały
 
 Opłaty mogą być automatycznie dodawane do wierszy zamówienia zakupu, jeśli skonfigurowano automatyczne opłaty dla dostawcy lub grupy opłat dostawcy oraz dla pozycji lub grupy opłat za pozycje. Jednak najczęściej opłaty są dodawane ręcznie na poziomie wiersza zamówienia. Aby dodać opłatę, otwórz stronę **Obsługuj opłaty** za pomocą działania **Obsługuj opłaty** w menu **Finanse** w widoku **Wiersze**. Zaletą dodawania opłat bezpośrednio na poziomie wiersza zamówienia jest to, że opłatę można przydzielić jako koszt zapasów. Aby skonfigurować kody opłat w celu ujęcia kosztu produktu, należy użyć **Pozycja** po stronie debetowej (obciążeniowej). Tego rodzaju opłaty muszą być przydzielone z nagłówka zamówienia zakupu do wierszy, aby można było potwierdzić zamówienie. Na przykład można chcieć przydzielić opłaty na podstawie ilości w każdym wierszu. Kategoria opłat wpływa również na sposób ujmowania opłat. Na przykład opłaty stałe określają stałą kwotę, a opłaty Procentowe są obliczane jako procent kwoty netto w wierszu zamówienia. Zamówienia zakupu mogą być przypisane do ładunku, a ładunek może zawierać preliminarz oczekiwanych wydatków z tytułu kosztów transportu. Wydatek ten można przydzielić z powrotem od ładunku do wierszy zamówienia zakupu.
 
-## Akcje związane z zamówieniem zakupu
-<a id="purchase-order-actions" class="xliff"></a>
+## <a name="purchase-order-actions"></a>Akcje związane z zamówieniem zakupu
 Po dodaniu nagłówka i wierszy do zamówienia zakupu często należy wykonać dodatkowe kroki, zanim zamówienie będzie gotowe do potwierdzenia. Ponieważ jest dostępnych bardzo dużo opcji, warto użyć funkcji [Wyszukiwanie akcji](/dynamics365/unified-operations/fin-and-ops/get-started/action-search), aby znaleźć odpowiednią pozycję menu.  
 
 Produkty w zamówieniu można konfigurować w taki sposób, aby zawierały pozycje dodatkowe. Pozycje dodatkowe to produkty, które muszą lub mogą zostać kupione razem z innymi produktami. Pozycje dodatkowe mogą być dodawane bezpłatnie jako produkty towarzyszące lub też można decydować, czy mają być dodawane do zamówienia, czy nie. Pozycje dodatkowe można przejrzeć po każdym dodanym wierszu zamówienia. Jednakże prawdopodobnie bardziej wygodne będzie przejrzeć i dodać odpowiednie pozycje dodatkowe razem dla wszystkich wierszy zamówienia za pomocą strony **Pozycje dodatkowe**, którą można otworzyć z okienka akcji.  
@@ -91,8 +87,7 @@ Zamówienia zakupu można skonfigurować tak, aby środki budżetu zostały przy
 
 Może wystąpić konieczność opóźnienia finalizacji zamówienia zakupu. Na przykład mogą być potrzebne dodatkowe informacje o produktach lub usługach lub może zajść potrzeba uzyskania autoryzacji na wydatek. Istnieje kilka sposobów wstrzymania zamówienia. Na przykład można poczekać z potwierdzeniem zamówienia. Alternatywnie, jeśli jest stosowany przepływ pracy zarządzania zmianami, nie przesyłaj zamówienia do zatwierdzenia. Jeśli należy zablokować wszystkie zamówienia dla konkretnego dostawcy, można również oznaczyć dostawcę w jego danych głównych jako **Wstrzymane** w zakresie przetwarzania. Istnieją okoliczności, które mogą uniemożliwić przetwarzanie zamówienia. Na przykład przetwarzanie może być niemożliwe, jeśli przekroczono limity kredytowe lub jeżeli wymagane środki budżetowe nie są dostępne.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Omówienie zamówień zakupu](purchase-order-overview.md)
