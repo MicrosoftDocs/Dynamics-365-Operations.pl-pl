@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17291
 ms.assetid: 76b7ca45-93d4-45cc-b191-66ee63afa1fd
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,31 +23,26 @@ ms.openlocfilehash: 4a7e1253d83e9212d423868a1f841b6944b07ad7
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Organizacje i hierarchie organizacyjne
-<a id="organizations-and-organizational-hierarchies" class="xliff"></a>
+# <a name="organizations-and-organizational-hierarchies"></a>Organizacje i hierarchie organizacyjne
 
 [!include[banner](../includes/banner.md)]
 
 
 Organizacja to grupa osób, które pracują razem, aby przeprowadzić proces biznesowy lub osiągnąć cel. Hierarchie organizacyjne reprezentują relacje między organizacjami, które tworzą firmę.
 
-Organizacje
-<a id="organizations" class="xliff"></a>
+<a name="organizations"></a>Organizacje
 -------------
 
 W programie Microsoft Dynamics 365 for Finance and Operations można zdefiniować następujące typy organizacji wewnętrznych: podmioty prawne (zwykle dla uproszczenia określane jako firmy), jednostki operacyjne i zespoły.
 
 Wszystkie organizacje wewnętrzne są typami jednostek **Strona**. Z tego względu te organizacje używają książki adresowej do przechowywania adresów i informacji kontaktowych. Strona, który może być osobą lub organizacją, może należeć do jednej lub więcej książek adresowych.
-### Firmy
-<a id="legal-entities" class="xliff"></a>
+### <a name="legal-entities"></a>Firmy
 
 Firma to organizacja, która ma zarejestrowaną lub uchwaloną strukturę prawną. Firmy mogą zawierać zgodne z prawem umowy i wymaga się od nich przygotowywania zestawień na temat ich wydajności. Firma jest typem podmiotu prawnego. W tej wersji programu Microsoft Dynamics 365 for Finance and Operations firma (w rozumieniu „przedsiębiorstw”) to jedyny rodzaj firmy, który można tworzyć, a każda firma jest skojarzona z identyfikatorem firmy. To skojarzenie istnieje, ponieważ niektóre obszary funkcjonalne w programie wykorzystują identyfikator lub DataAreaId firmy w ich modelach danych. W tych obszarach funkcjonalnych firmy są używane jako granica zabezpieczeń danych. Użytkownicy mogą uzyskiwać dostęp do danych tylko dla firmy, do której są aktualnie zalogowani.
 
-### Jednostki operacyjne
-<a id="operating-units" class="xliff"></a>
+### <a name="operating-units"></a>Jednostki operacyjne
 
 Jednostka operacyjna to organizacja używana do dzielenia formantu zasobów ekonomicznych i procesów operacyjnych w firmie. Osoby w jednostce operacyjnej mają obowiązek maksymalizować wykorzystanie ograniczonych zasobów i konta dla zapewnienia ich wydajności. W programie Microsoft Dynamics 365 for Finance and Operations typami jednostek operacyjnych są centra kosztów, jednostki biznesowe, strumienie wartości, działy i kanały sprzedaży detalicznej. Poniższa tabela zawiera więcej informacji o każdym typie jednostki operacyjnej.
 | Typ jednostki operacyjnej | Opis                                                                                                                                    | Cel                                                                                                                                 |
@@ -57,8 +53,7 @@ Jednostka operacyjna to organizacja używana do dzielenia formantu zasobów ekon
 | Dział          | Jednostka operacyjna, która reprezentuje kategorię lub funkcjonalną część organizacji, która wykonuje określone zadanie, takie jak sprzedaż lub księgowanie. | Używana w raportach dla obszarów funkcjonalnych. Dział może mieć obowiązek raportowania zysków i strat i może się składać z grupy centrów kosztów.   |
 | Kanał sprzedaży      | Jednostka operacyjna, która reprezentuje sklep tradycyjny, sklep internetowy lub internetowy serwis sprzedażowy.                                          | Służy do kontroli operacyjnej przynajmniej jednego sklepu w ramach podmiotu prawnego lub wielu podmiotów prawnych oraz do zarządzania takim sklepem.                                  |
 
-### Zespoły
-<a id="teams" class="xliff"></a>
+### <a name="teams"></a>Zespoły
 
 Zespół to organizacja, której członkowie mają wspólne obowiązki, zainteresowania lub cel. Nie można używać zespołów w hierarchiach organizacyjnych.
 Hierarchie organizacyjne

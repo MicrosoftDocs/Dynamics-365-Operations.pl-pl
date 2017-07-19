@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: sarasch
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
@@ -20,11 +21,9 @@ ms.openlocfilehash: a8ccd99431178c3cb4e73e7cd199de8e0845d716
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/14/2017
 
-
 ---
 
-# Prognozowanie przepływów pieniężnych
-<a id="cash-flow-forecasting" class="xliff"></a>
+# <a name="cash-flow-forecasting"></a>Prognozowanie przepływów pieniężnych
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Narzędzia prognozowania przepływów pieniężnych mogą służyć do analizy n
 
 Po wykonaniu tych zadań można obliczać i analizować prognozy przepływów pieniężnych i nadchodzących zapotrzebowań na waluty.
 
-## Integracja prognozowania przepływów pieniężnych
-<a id="cash-flow-forecasting-integration" class="xliff"></a>
+## <a name="cash-flow-forecasting-integration"></a>Integracja prognozowania przepływów pieniężnych
 
 Funkcjonalność prognozowania środków pieniężnych można zintegrować z modułami Księga główna, Rozrachunki z dostawcami, Rozrachunki z odbiorcami, Budżetowanie i Zarządzanie zapasami. Proces prognozowania używa informacji o transakcjach wprowadzonych w systemie, a proces obliczania prognozuje oczekiwany skutek gotówkowy każdej transakcji. Następujące typy transakcji są uwzględniane podczas obliczania przepływ pieniężnych:
 
@@ -51,13 +49,11 @@ Funkcjonalność prognozowania środków pieniężnych można zintegrować z mod
 
 Mimo iż nie ma bezpośredniej integracji z modułem Zarządzanie projektami i ich księgowanie, istnieje kilka sposobów na uwzględnienie transakcji projektu w prognozie przepływów pieniężnych. Zaksięgowane faktury projektu są uwzględniane w prognozie jako część otwartych transakcji odbiorcy. Zamówienia sprzedaży i zamówienia zakupu inicjowane przez projekt są uwzględniane w prognozie jako otwarte zamówienia po ich wprowadzeniu w systemie. Można także przenieść prognozy projektu do modelu budżetu księgi. Następnie ten model budżetu księgi zostanie uwzględniony w prognozie przepływów pieniężnych jako część wpisów do rejestru budżetu.
 
-## Konfiguracja
-<a id="configuration" class="xliff"></a>
+## <a name="configuration"></a>Konfiguracja
 
 Proces prognozowania przepływów pieniężnych można skonfigurować za pomocą strony **Ustawienia prognozy przepływów pieniężnych**. Na tej stronie określasz konta płynności, które mają być śledzone, oraz domyślne zachowanie prognozowania dla każdego obszaru.
 
-### Księga główna
-<a id="general-ledger" class="xliff"></a>
+### <a name="general-ledger"></a>Księga główna
 
 Najpierw należy określić konta płynności, które mają być śledzone w całym procesie prognozowania przepływów pieniężnych. Zazwyczaj te konta płynności są kontami głównymi skojarzonymi z kontami bankowych, na których będzie wpłacana i wypłacana gotówka. Na stronie **Ustawienia prognozy przepływów pieniężnych** na karcie **Księga główna** wybierz konta główne, które mają być uwzględniane w prognozowaniu. Jeśli konto bankowe skojarzono z kontem głównym na stronie **Konto bankowe**, jest ono wyświetlane w polu **Konto bankowe**.
 
@@ -65,8 +61,7 @@ Istnieje możliwość skonfigurowania zależnej prognozy przepływów pieniężn
 
 Najpierw w polu **Konto główne** ustaw podstawowe konto główne, na którym oczekuje się, że początkowo będą dokonywane transakcje. W polu **Zależne konta główne** ustaw konto, na które będą miały wpływ początkowe transakcje dokonywane na podstawowym koncie głównym. Ustaw odpowiednie wartości w pozostałych polach w wierszu. Można zmienić wartość w polu **Procent**, aby odzwierciedlała ona wpływ podstawowego konta głównego na zależne konto główne. Przy prognozowaniu sprzedaży lub zakupów w polu **Warunki płatności** należy wybrać wartość typową dla większości odbiorców lub nabywców. W polu **Typ księgowania** ustaw oczekiwany typ księgowania powiązany z prognozą przepływów pieniężnych.
 
-### Rozrachunki z dostawcami
-<a id="accounts-payable" class="xliff"></a>
+### <a name="accounts-payable"></a>Rozrachunki z dostawcami
 
 Prognozy dla zakupów można obliczać za pomocą opcji konfiguracji na karcie **Rozrachunki z dostawcami** na stronie **Ustawienia prognozy przepływów pieniężnych**. Aby można było skonfigurować prognozowania przepływów pieniężnych dla rozrachunków z dostawcami, należy skonfigurować warunki płatności, grupy dostawców i profile księgowania dostawców.
 
@@ -78,8 +73,7 @@ Możesz zastąpić domyślną wartość w polu **Czas między datą wymagalnośc
 
 Możesz zastąpić domyślną wartość w polu **Konto płynności** dla konkretnych profili księgowania dostawców. Prognoza będzie używać wartości domyślnej z sekcji **Ustawienia domyślne prognoz zakupów**, chyba że zostanie określone inne konto płynności dla profilu księgowania powiązanego z dostawcą w transakcji. Aby zastąpić wartość domyślną, zaznacz profil księgowania, a następnie określ konto płynności, na które mają być wywierane skutki.
 
-### Rozrachunki z odbiorcami
-<a id="accounts-receivable" class="xliff"></a>
+### <a name="accounts-receivable"></a>Rozrachunki z odbiorcami
 
 Prognozy dla sprzedaży można obliczać za pomocą opcji konfiguracji na karcie **Rozrachunki z odbiorcami** na stronie **Ustawienia prognozy przepływów pieniężnych**. Aby można było skonfigurować prognozowania przepływów pieniężnych dla rozrachunków z odbiorcami, należy skonfigurować warunki płatności, grupy odbiorców i profile księgowania odbiorców.
 
@@ -91,18 +85,15 @@ Możesz zastąpić domyślną wartość w polu **Czas między datą wymagalnośc
 
 Możesz zastąpić domyślną wartość w polu **Konto płynności** dla konkretnych profili księgowania odbiorców. Prognoza będzie używać wartości domyślnej z sekcji **Ustawienia domyślne prognoz sprzedaży**, chyba że zostanie określone inne konto płynności dla profilu księgowania powiązanego z odbiorcą w transakcji. Aby zastąpić wartość domyślną, zaznacz profil księgowania, a następnie ustaw konto płynności, na które mają być wywierane skutki.
 
-### Budżetowanie
-<a id="budgeting" class="xliff"></a>
+### <a name="budgeting"></a>Budżetowanie
 
 Budżety tworzone na podstawie modeli budżetu można uwzględniać w prognozach przepływów pieniężnych. Na stronie **Ustawienia prognozy przepływów pieniężnych** na karcie **Budżetowanie** zaznacz modele budżetu do uwzględnienia w prognozie. Domyślnie nowe wpisy do rejestru budżetu są uwzględniane w prognozach po włączeniu opcji wykorzystywania modelu budżetu w prognozowaniu przepływów pieniężnych. Uwzględnianie w prognozowaniu przepływów pieniężnych można zastępować na poziomie poszczególnych wpisów do rejestru budżetu.
 
-### Zarządzanie zapasami
-<a id="inventory-management" class="xliff"></a>
+### <a name="inventory-management"></a>Zarządzanie zapasami
 
 W prognozach przepływów pieniężnych można uwzględniać prognozy dostaw zapasów i popytu na zapasy. Na stronie **Ustawienia prognozy przepływów pieniężnych** na karcie **Zarządzanie zapasami** zaznacz modelu prognozy do uwzględnienia w prognozie przepływów pieniężnych. Uwzględnianie w prognozowaniu przepływów pieniężnych można zastępować na poziomie poszczególnych wierszy prognoz dostaw i popytu.
 
-### Obliczenie
-<a id="calculation" class="xliff"></a>
+### <a name="calculation"></a>Obliczenie
 
 Aby można było wyświetlać analizy prognostyczne przepływów pieniężnych, należy uruchomić proces obliczania przepływów pieniężnych. Proces obliczania będzie prognozował przyszłe skutki gotówkowe wprowadzanych transakcji.
 
@@ -113,8 +104,7 @@ Obliczanie prognoz przepływów pieniężnych odbywa się na stronie **Oblicz pr
 
 Do prognozowania przepływów pieniężnych można także używać przetwarzania wsadowego. W celu zagwarantowania, że analizy prognostyczne są regularnie aktualizowane, skonfiguruj cykliczny proces wsadowy obliczania prognoz przepływów pieniężnych.
 
-### Raportowanie
-<a id="reporting" class="xliff"></a>
+### <a name="reporting"></a>Raportowanie
 
 Po obliczeniu prognozy przepływów pieniężnych należy odświeżyć informacje skojarzonej jednostki dla sprawozdawczości analitycznej. Na stronie **Magazyn jednostek** zaznacz miarę agregacji **LedgerCovLiquidityMeasurement** i kliknij przycisk **Odśwież**.
 

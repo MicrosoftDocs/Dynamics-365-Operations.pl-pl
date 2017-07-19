@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: ec7ed3a81d296e9bef4d26f1756b73883d560cb5
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Zarządzanie użytkownikami portalu współpracy z dostawcami
-<a id="manage-vendor-collaboration-users" class="xliff"></a>
+# <a name="manage-vendor-collaboration-users"></a>Zarządzanie użytkownikami portalu współpracy z dostawcami
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +37,7 @@ Interfejs współpracy z dostawcami w programie Microsoft Dynamics 365 for Finan
 
 Aby uzyskać więcej informacji na temat używania portalu współpracy z dostawcami przez pracownika działu zaopatrzenia, zobacz [Współpraca z zewnętrznymi dostawcami](vendor-collaboration-work-external-vendors.md).
 
-## Dodawanie nowych osób kontaktowych w portalu współpracy z dostawcami
-<a id="add-new-vendor-collaboration-contacts" class="xliff"></a>
+## <a name="add-new-vendor-collaboration-contacts"></a>Dodawanie nowych osób kontaktowych w portalu współpracy z dostawcami
 Jeśli ktoś ma mieć dostęp do portalu współpracy z dostawcami, musi najpierw zostać dodany jako osoba kontaktowa w portalu współpracy z dostawcami. Można również jako osoby kontaktowe dodać pracowników firmy, którzy nie będą używać portalu współpracy z dostawcami. Na przykład mogą być osobami kontaktowymi w sprawie innych rodzajów informacji zaopatrzeniowych. Nowe osoby kontaktowe są dodawane na stronie **Wszystkie osoby kontaktowe**, do której można przejść z menu **Portal współpracy z dostawcami** &gt; **Kontakty**. Aby dodać nową osobę kontaktową:
 
 1.  Kliknij przycisk **Nowy**.
@@ -49,8 +47,7 @@ Jeśli ktoś ma mieć dostęp do portalu współpracy z dostawcami, musi najpier
 
 Jeśli chcesz usunąć osobę kontaktową, możesz wykasować tylko osoby utworzone przez siebie.
 
-## Żądania użytkowników portalu współpracy z dostawcami
-<a id="vendor-collaboration-user-requests" class="xliff"></a>
+## <a name="vendor-collaboration-user-requests"></a>Żądania użytkowników portalu współpracy z dostawcami
 Wnioski o dodanie użytkowników do portalu współpracy z dostawcami mogą zgłaszać pracownicy działu zaopatrzenia i administratorzy zewnętrznych dostawców.
 
 -   Zewnętrzny dostawca przesyła wnioski ze strony **Wszystkie osoby kontaktowe** w module **Portal współpracy z dostawcami**.
@@ -60,8 +57,7 @@ Można złożyć wniosek o zainicjowanie obsługi użytkownika, dezaktywację u�
 
 Przesłany wniosek jest dodawany do listy **Żądania użytkowników portalu współpracy z dostawcami** w module **Portal współpracy z dostawcami** oraz do listy **Żądanie użytkownika portalu współpracy z dostawcami** w module **Zaopatrzenie i sourcing** (moduł Zaopatrzenie i sourcing nie jest dostępny dla użytkowników zewnętrznych).
 
-### Inicjowanie obsługi użytkownika
-<a id="provision-a-user" class="xliff"></a>
+### <a name="provision-a-user"></a>Inicjowanie obsługi użytkownika
 
 Zanim będzie można wnioskować o zainicjowanie obsługi nowego użytkownika, ta osoba musi być skonfigurowana jako osoba kontaktowa dla jednego lub więcej dostawców. Aby utworzyć wniosek o nowego użytkownika portalu współpracy z dostawcami:
 
@@ -73,8 +69,7 @@ Zanim będzie można wnioskować o zainicjowanie obsługi nowego użytkownika, t
 
 Po przesłaniu wniosku o użytkownika dostawcy pole **Dostęp do portalu współpracy z dostawcami jest dozwolony** otrzymuje wartość **Tak** dla wybranego konta dostawcy i rozpoczyna się przepływ pracy wnioskowania o użytkownika. W ramach przepływu pracy nowy użytkownik jest tworzony w programie Finance and Operations i są mu przypisywane role zabezpieczeń. Ponadto jest aktywowana usługa Azure B2B, która inicjuje interakcję z portalem Azure i kojarzy nowe lub istniejące konto w usłudze AAD z kontem użytkownika w programie Finance and Operations.
 
-### Dezaktywowanie użytkownika
-<a id="inactivate-a-user" class="xliff"></a>
+### <a name="inactivate-a-user"></a>Dezaktywowanie użytkownika
 
 Istnieją dwa sposoby usuwania użytkownikowi dostępu do portalu współpracy z dostawcami:
 
@@ -87,8 +82,7 @@ Aby poprosić o dezaktywację użytkownika:
 2.  Wpisz komentarz w polu **Uzasadnienie biznesowe**.
 3.  Kliknij przycisk **Prześlij**.
 
-### Modyfikowanie ról zabezpieczeń
-<a id="modify-security-roles" class="xliff"></a>
+### <a name="modify-security-roles"></a>Modyfikowanie ról zabezpieczeń
 
 Strona **Obsługa ról użytkowników-dostawców** jest taka sama, jak strona **Inicjuj obsługę użytkownika-dostawcy**, a różnica polega na tym, że można edytować listę ról zabezpieczeń.  
 

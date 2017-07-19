@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 keywords: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Częściowa inwentaryzacja ciągła w lokalizacji
-<a id="partial-location-cycle-counting" class="xliff"></a>
+# <a name="partial-location-cycle-counting"></a>Częściowa inwentaryzacja ciągła w lokalizacji
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Plany inwentaryzacji ciągłej decydują o faktycznym przebiegu operacji inwenta
 
 Tworząc pracę inwentaryzacji za pomocą planów inwentaryzacji ciągłej, można decydować o faktycznym przebiegu operacji inwentaryzacji. Można poprosić, aby były inwentaryzowane tylko określone produkty i warianty produktu, a nie wszystkie zapasy dostępne w lokalizacji. Wyfiltrowując określone produkty, kierownik magazynu może zmniejszyć pracochłonność przeglądu, uniknąć błędów konsolidacji i zaoszczędzić czas.
 
-## Jak skonfigurować częściową inwentaryzację ciągłą w lokalizacji
-<a id="how-to-configure-partial-location-cycle-counting" class="xliff"></a>
+## <a name="how-to-configure-partial-location-cycle-counting"></a>Jak skonfigurować częściową inwentaryzację ciągłą w lokalizacji
 Jeśli do operacji inwentaryzacji wykorzystujesz proces pracy magazynowej, dla każdej lokalizacji jest tworzony nagłówek pracy. Podczas definiowaniu planu inwentaryzacji ciągłej można użyć zapytania **Wybierz lokalizacje**, aby ograniczyć tworzoną pracę inwentaryzacji ciągłej. Po wybraniu produktów do planu inwentaryzacji ciągłej można użyć zapytań o produkty i wariantu produktów w celu doprecyzowania zakresu inwentaryzacji. 
 
 Można skojarzyć **szablon pracy** z planem inwentaryzacji ciągłej w celu zdefiniowania sposobu tworzenia pracy inwentaryzacji ciągłej. Szablon pracy operacji inwentaryzacji wywoływany bezpośrednio z planu inwentaryzacji ciągłej. 
@@ -51,8 +49,7 @@ Aby można było wykonywać pracę częściowej inwentaryzacji ciągłej, należ
 
 W procesie częściowej inwentaryzacji ciągłej pole daty/godziny **Ostatnie obliczenie cyklu** nie będzie aktualizowane dla lokalizacji.
 
-## Przykład
-<a id="example" class="xliff"></a>
+## <a name="example"></a>Przykład
 W tym przykładzie musi być inwentaryzowany tylko towar o numerze A0001 w magazynie 61.
 
 1.  Zostanie utworzony nowy szablon pracy inwentaryzacji ciągłej. Opcja **Podziały wierszy pracy** służy do grupowania wierszy pracy inwentaryzacji według numerów towarów. W związku z tym tworzona praca inwentaryzacji ciągłej będzie miała wiersze dla każdego numeru towaru. Można również grupować wiersze według numeru wariantu produktu.
@@ -61,8 +58,7 @@ W tym przykładzie musi być inwentaryzowany tylko towar o numerze A0001 w magaz
 
 
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Inwentaryzacja ciągła](cycle-counting.md)

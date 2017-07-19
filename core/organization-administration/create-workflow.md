@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, UnifiedOperations
 ms.custom: 195583
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-08-30
+ms.search.validFrom: 2016-08-30T00:00:00.000Z
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,19 +23,16 @@ ms.openlocfilehash: 138cf8d60f5a6e1ec1e46837a516e981c8ff4c19
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Utwórz przepływ pracy
-<a id="create-a-workflow" class="xliff"></a>
+# <a name="create-a-workflow"></a>Utwórz przepływ pracy
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie wyjaśniono, jak utworzyć przepływ pracy.
 
-Otwórz edytor przepływu pracy
-<a id="open-the-workflow-editor" class="xliff"></a>
+<a name="open-the-workflow-editor"></a>Otwórz edytor przepływu pracy
 ------------------------
 
 Moduł programu Microsoft Dynamics 365 for Finance and Operations, w którym pracujesz, określa typy przepływów pracy, jakie można tworzyć. Wykonaj następujące kroki, aby wybrać typ tworzonego przepływu pracy i otworzyć edytora przepływu pracy.
@@ -44,24 +42,20 @@ Moduł programu Microsoft Dynamics 365 for Finance and Operations, w którym pra
 3.  Na wyświetlonej stronie listy w okienku akcji kliknij przycisk **Nowy**.
 4.  Na stronie **Utwórz przepływ pracy** wybierz typ przepływu pracy, który ma zostać utworzony, i kliknij przycisk **Utwórz przepływ pracy**. Zostanie wyświetlony edytor przepływu pracy. Teraz można użyć poniższych procedur w celu zaprojektowania przepływu pracy.
 
-## Przeciągnij elementy przepływu pracy na kanwę
-<a id="drag-workflow-elements-onto-the-canvas" class="xliff"></a>
+## <a name="drag-workflow-elements-onto-the-canvas"></a>Przeciągnij elementy przepływu pracy na kanwę
 Obszar **Elementy przepływu pracy** w edytorze przepływu pracy zawiera elementy, które można dodawać do przepływu pracy. Aby dodać elementy do przepływu pracy, przeciągnij na kanwę.
 
-## Połącz elementy
-<a id="connect-the-elements" class="xliff"></a>
+## <a name="connect-the-elements"></a>Połącz elementy
 Aby połączyć jeden element przepływu pracy z innym, przytrzymaj wskaźnik nad elementem, aż punkty połączeń zostaną wyświetlone. Kliknij punkt połączenia i przeciągnij go do innego elementu. Należy pamiętać, aby łączyć wszystkie elementy.
 
-## Konfigurowanie właściwości przepływu pracy
-<a id="configure-the-properties-of-the-workflow" class="xliff"></a>
+## <a name="configure-the-properties-of-the-workflow"></a>Konfigurowanie właściwości przepływu pracy
 Wykonaj poniższe czynności, aby skonfigurować właściwości przepływu pracy.
 
 1.  Kliknij kanwę, aby upewnić się, że nie został wybrany żaden element przepływu pracy.
 2.  Kliknij przycisk **Właściwości**. a zostanie otwarta strona **Właściwości** dotycząca przepływu pracy.
 3.  Wykonaj procedury opisane w temacie [Konfigurowanie właściwości przepływu pracy](configure-workflow-properties.md).
 
-## Konfigurowanie elementów przepływu pracy
-<a id="configure-the-elements-of-the-workflow" class="xliff"></a>
+## <a name="configure-the-elements-of-the-workflow"></a>Konfigurowanie elementów przepływu pracy
 Skonfiguruj każdy element przeciągnięty na kanwę. Aby uzyskać więcej informacji dotyczących sposobu konfigurowania każdego elementu przepływu pracy, zobacz następujące tematy.
 
 -   [Konfigurowanie zadania ręcznego](configure-manual-task-workflow.md)
@@ -74,12 +68,10 @@ Skonfiguruj każdy element przeciągnięty na kanwę. Aby uzyskać więcej infor
 -   [Konfigurowanie odgałęzienia równoległego](configure-parallel-branch-workflow.md)
 -   [Konfigurowanie przepływu pracy dla pozycji w wierszu](configure-line-item-workflow.md)
 
-## Rozwiąż wszelkie błędy lub ostrzeżenia
-<a id="resolve-any-errors-or-warnings" class="xliff"></a>
+## <a name="resolve-any-errors-or-warnings"></a>Rozwiąż wszelkie błędy lub ostrzeżenia
 Okienko **Błędy i ostrzeżenia** w dolnej części edytora przepływu pracy pokazuje komunikaty, które zostały wygenerowane dla przepływu pracy. Aby znaleźć element, w którym wystąpił błąd lub ostrzeżenie, kliknij dwukrotnie błąd lub ostrzeżenie. Wszystkie błędy i ostrzeżenia muszą zostać rozwiązane przed uaktywnieniem przepływu pracy.
 
-## Zapisywanie i aktywowanie przepływu pracy
-<a id="save-and-activate-the-workflow" class="xliff"></a>
+## <a name="save-and-activate-the-workflow"></a>Zapisywanie i aktywowanie przepływu pracy
 Gdy wszystko jest gotowe do zapisania i aktywacji przepływu pracy, wykonaj następujące kroki.
 
 1.  Kliknij przycisk **Zapisz i zamknij**, aby zamknąć edytor i otworzyć stronę **Zapisz przepływ pracy**.

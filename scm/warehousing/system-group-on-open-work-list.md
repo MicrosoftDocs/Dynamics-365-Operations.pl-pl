@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: bis
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -21,19 +22,16 @@ ms.openlocfilehash: dbf0e49b1156c54cd37bbbe57ca564cdbc45fb2d
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Grupowanie systemowe na liście otwartych prac
-<a id="system-grouping-on-an-open-work-list" class="xliff"></a>
+# <a name="system-grouping-on-an-open-work-list"></a>Grupowanie systemowe na liście otwartych prac
 
 [!include[banner](../includes/banner.md)]
 
 Za pomocą pola grup systemowych można wyfiltrować listę otwartych prac bez konieczności edytowania elementu menu w urządzeniu komórkowym.
 Funkcja grupowania systemowego filtruje listę prac według jednego pola nagłówka pracy. Nie można używać grupowania systemowego do filtrowania według pól na poziomie wierszy.
 
-## Konfigurowanie grupowania systemowego listy otwartych prac
-<a id="set-up-system-grouping-on-an-open-work-list" class="xliff"></a>
+## <a name="set-up-system-grouping-on-an-open-work-list"></a>Konfigurowanie grupowania systemowego listy otwartych prac
 Wykonaj poniższe kroki, aby skonfigurować grupowanie systemowego listy otwartych prac.
 
 -   Na urządzeniu komórkowym z menu wybierz opcje **Tryb: Pośrednie** i **Kod działania: Wyświetl listę otwartych prac**. Zostaną udostępnione opcje wymienione poniżej. Te opcje są wymagane przy grupowaniu systemowym listy otwartych prac. 

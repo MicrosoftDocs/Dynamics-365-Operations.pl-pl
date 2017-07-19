@@ -10,12 +10,13 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58801
 ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,19 +24,16 @@ ms.openlocfilehash: b1f5da07ffff5e34d8c73012a1e3c85fe1546fda
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Zarządzanie cyklem życia konfiguracji Raportowania elektronicznego
-<a id="manage-the-electronic-reporting-configuration-lifecycle" class="xliff"></a>
+# <a name="manage-the-electronic-reporting-configuration-lifecycle"></a>Zarządzanie cyklem życia konfiguracji Raportowania elektronicznego
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie opisano sposób zarządzania cyklem życia konfiguracji aparatu raportowania elektronicznego (ER) w programie Microsoft Dynamics 365 for Finance and Operations.
 
-Przegląd
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Przegląd
 --------
 
 Raportowanie elektroniczne (ER) jest aparatem, który obsługuje dokumenty elektroniczne wymagane ustawowo i specyficzne dla danego kraju w programie Microsoft Dynamics 365 for Finance and Operations. Zasadniczo moduł ER umożliwia wykonywanie następujących zadań dla pojedynczego dokumentu elektronicznego. Aby uzyskać więcej szczegółowych informacji, zobacz [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md).
@@ -59,8 +57,7 @@ Raportowanie elektroniczne (ER) jest aparatem, który obsługuje dokumenty elekt
 -   Używanie szablonu w określonym procesie biznesowym:
     -   Uruchamianie konfiguracji ER w określonym procesie biznesowym (na przykład w celu generowania komunikatu płatności elektronicznej do przetwarzania faktur po wybraniu metody płatności odwołującej się do konfiguracji ER).
 
-## Koncepcje
-<a id="concepts" class="xliff"></a>
+## <a name="concepts"></a>Koncepcje
 Następujące role i pokrewne działania są powiązane z cyklem życia konfiguracji ER:
 
 | Rola                                       | Działania                                                      | opis                                                                                                                                                                                                                  |
@@ -70,8 +67,7 @@ Następujące role i pokrewne działania są powiązane z cyklem życia konfigur
 | Kierownik ds. księgowania                      | Konfigurowanie ustawień procesów odwołujących się do artefaktów ER. | Na przykład rola **Kierownik ds. księgowania**, która pozwala używać ustawień konfiguracji ER w określonej metodzie płatności w module rozrachunków z dostawcami w celu generowania komunikatu płatności elektronicznej do przetwarzania faktur. |
 | Pracownik ds. płatności rozrachunków z dostawcami            | Używanie artefaktów ER w określonym procesie biznesowym.                | Na przykład rola **Pracownik ds. płatności rozrachunków z dostawcami** umożliwiająca generowanie komunikatów płatności elektronicznych do przetwarzania faktur na podstawie formatu ER skonfigurowanego dla określonej metody płatności.           |
 
-## Cykl życia tworzenia konfiguracji ER
-<a id="er-configuration-development-lifecycle" class="xliff"></a>
+## <a name="er-configuration-development-lifecycle"></a>Cykl życia tworzenia konfiguracji ER
 Zalecamy projektować konfiguracje raportowania elektronicznego w środowisku programistycznym jako odrębnym wystąpieniu programu Finance and Operations z następujących przyczyn:
 
 -   Użytkownicy posiadający rolę **Deweloper raportowania elektronicznego** lub **Konsultant funkcjonalny raportowania elektronicznego** mogą edytować konfiguracje i uruchamiać je do celów testowych. Ten scenariusz może powodować wywoływanie metod klas i tabel mogących uszkadzać dane firmy i spowalniać działanie wystąpienia programu Finance and Operations.
@@ -79,8 +75,7 @@ Zalecamy projektować konfiguracje raportowania elektronicznego w środowisku pr
 
 Konfiguracje ER zaprojektowane w środowisku programistycznym można przesłać do środowiska testowego w celu oceny konfiguracji (właściwa integracja procesów, poprawność wyników, wydajność) oraz sprawdzenia jakości (właściwe prawa dostępu według ról, podział obowiązków itd.). Do tego celu mogą służyć funkcje wymieniania się konfiguracją ER. Na koniec sprawdzone konfiguracje ER można przesłać do usługi LCS, gdzie zostaną udostępnione subskrybentom usługi, lub do środowiska produkcyjnego na potrzeby użytku wewnętrznego, jak pokazano na poniższej ilustracji. ![Cykl życia konfiguracji ER](./media/ger-configuration-lifecycle.png)
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)

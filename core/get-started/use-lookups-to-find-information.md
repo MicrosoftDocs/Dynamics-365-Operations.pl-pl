@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269934
 ms.assetid: f20cbd2c-14e0-47e7-b351-8e60d3537f96
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,19 +23,16 @@ ms.openlocfilehash: a5d0a9edd2cb5747fc799c6fdca45dd9ba5720f7
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Używanie odnośników do znajdowania informacji
-<a id="use-lookups-to-find-information" class="xliff"></a>
+# <a name="use-lookups-to-find-information"></a>Używanie odnośników do znajdowania informacji
 
 [!include[banner](../includes/banner.md)]
 
 
 W programie Microsoft Dynamics 365 for Finance and Operations wiele pól ma odnośniki (służące do wyszukiwania), które bardzo ułatwiają znajdowanie poprawnych lub żądanych wartości. W funkcjonalności odnośników wprowadzono szereg ulepszeń, które zwiększają użyteczność tych formantów i w efekcie wydajność pracy użytkowników. W tym temacie dowiesz się więcej o tych nowych funkcjach odnośników i otrzymasz pomocne wskazówki dotyczące ich optymalnego wykorzystywania w systemie.  
 
-Odnośniki elastyczne
-<a id="responsive-lookups" class="xliff"></a>
+<a name="responsive-lookups"></a>Odnośniki elastyczne
 ------------------
 
 W poprzednich wersjach programu Finance and Operations podczas interakcji z formantem odnośnika użytkownik musiał jednoznacznie otworzyć menu rozwijane. Mogło się do odbywać poprzez wpisanie gwiazdki (\*) w formancie, aby wyfiltrować wyszukiwanie na podstawie bieżącej wartość formantu, kliknięcie przycisku rozwijanego lub użycie skrótu klawiaturowego **Alt**+**strzałka w dół**. Formanty wyszukiwania zostały zmodyfikowane w następujący sposób, aby lepiej pasowały do obecnych praktyk używania Internetu:
@@ -59,8 +57,7 @@ Mimo iż fokus jest nadal w formancie wyszukiwania, można również użyć klaw
 
 ![changingSelectionLookup](./media/changingselectionlookup.png)
 
-## Wpisywanie nie tylko identyfikatorów
-<a id="typing-in-more-than-ids" class="xliff"></a>
+## <a name="typing-in-more-than-ids"></a>Wpisywanie nie tylko identyfikatorów
 Podczas wprowadzania danych jest naturalne dla użytkowników, że próbują identyfikować jednostkę, taką jak odbiorca lub dostawca, za pomocą nazwy, a nie oficjalnego identyfikatora. W obecnej wersji programu Finance and Operations wiele (choć nie wszystkie) odnośniki pozwalają teraz na kontekstowe wprowadzanie danych. Ta zaawansowana funkcja umożliwia użytkownikowi wpisanie identyfikatora lub odnośnej nazwy w formancie wyszukiwania. 
 
 Na przykład rozważmy pole **Konto odbiorcy** podczas tworzenia zamówienia sprzedaży. To pole zawiera **identyfikator konta** odbiorcy, ale podczas tworzenia zamówienia sprzedaży użytkownik zazwyczaj wolałby wpisać **nazwę konta** zamiast **identyfikatora konta**, np. „Hurtownia leśna” zamiast „PL-003”.
@@ -73,8 +70,7 @@ Jednak użytkownik może teraz również wprowadzić początek **nazwy konta**. 
 
 [![Wyszukiwanie kontekstowe po wprowadzeniu nazwy odbiorcy](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
-## Używanie nagłówków kolumn siatki do bardziej zaawansowanego filtrowania i sortowania
-<a id="using-grid-column-headers-for-more-advanced-filtering-and-sorting" class="xliff"></a>
+## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Używanie nagłówków kolumn siatki do bardziej zaawansowanego filtrowania i sortowania
 Ulepszenia odnośników omówione w poprzednich dwóch rozdziałach znacznie poprawiają zdolność użytkownika do nawigowania po wierszach odnośnika w oparciu o wyszukiwanie „zaczyna się od” zastosowanego do pola **Identyfikator** lub **Nazwa** w odnośniku. Jednak istnieją sytuacje, w których do znalezienia prawidłowego wiersza jest potrzebne bardziej zaawansowane filtrowanie (lub sortowanie). W takich sytuacjach użytkownik musi użyć opcji filtrowania i sortowania nagłówków kolumn siatki wewnątrz odnośnika. Rozważmy na przykład pracownika wprowadzającego wiersz zamówienia sprzedaży, który musi odnaleźć prawidłowy „kabel” jako produkt. Wpisanie słowa „kabel” w formancie **Numer pozycji** nie wystarczy, ponieważ nie istnieją żadne nazwy produktów rozpoczynające się od „kabel”. 
 
 ![emptyitemlookup](./media/emptyitemlookup.png) 

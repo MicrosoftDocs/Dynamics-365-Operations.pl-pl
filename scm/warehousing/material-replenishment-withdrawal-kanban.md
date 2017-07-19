@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 keywords: KanbanBoardTransferJob, KanbanFlow, KanbanRules
 audience: Application User
-ms.reviewer: 121
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.industry: Manufacturing
 ms.author: johanhoffmann
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Uzupełnianie zapasów za pomocą kart Kanban wypłat
-<a id="replenishment-with-withdrawal-kanbans" class="xliff"></a>
+# <a name="replenishment-with-withdrawal-kanbans"></a>Uzupełnianie zapasów za pomocą kart Kanban wypłat
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie opisano, jak zadanie Kanban wycofania służy do uzupełnienia zapasów materiałów dla działań produkcyjnych.
 
-## Przepływ pracy uzupełnienia materiałów wykorzystującego zadanie Kanban wycofania
-<a id="workflow-for-material-replenishment-that-uses-the-withdrawal-kanban" class="xliff"></a>
+## <a name="workflow-for-material-replenishment-that-uses-the-withdrawal-kanban"></a>Przepływ pracy uzupełnienia materiałów wykorzystującego zadanie Kanban wycofania
 -------------------------------------------------------------------
 
 Zadanie Kanban wycofania może służyć do przenoszenia jednego towaru w systemie Kanban między lokalizacjami w magazynie i na produkcji, gdzie materiał zostanie zużyty. Zadanie Kanban wycofania obsługuje uzupełnianie materiałów w systemie ssania, gdzie sygnał ssania jest wymagany do zainicjowania dostawy dla określonego popytu. 
@@ -56,18 +54,15 @@ Następujący scenariusz przedstawia system uzupełniania zapasów wykorzystują
 
 W tym scenariuszu proces produkcji (4) zużywa materiał z lokalizacji wejściowej produkcji (3) w magazynie produkcji (8). Po zużyciu jednostki załadunkowej materiału (w zadaniu Kanban) jest ona rejestrowana jako pusta. Jest generowany sygnał uzupełniania zapasów dla źródła towaru i tworzona nowa karta Kanban (1). W tym przypadku źródłem towaru są lokalizacje w magazynie materiałów [7]. Materiał dla zadania Kanban jest pobierany i odkładany do lokalizacji (2) w tym samym magazynie. Materiał po pobraniu jest gotowy do przeniesienia z lokalizacji 2 do lokalizacji wejściowej produkcji (3) w magazynie produkcji (8).
 
-## Konfigurowanie pracy magazynowej pobrania Kanban dla zadania Kanban wycofania
-<a id="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban" class="xliff"></a>
+## <a name="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban"></a>Konfigurowanie pracy magazynowej pobrania Kanban dla zadania Kanban wycofania
 
 Aby umożliwić pobranie surowca dla zadania Kanban wycofania, należy skonfigurować szablony grup czynności, szablony pracy i dyrektywy lokalizacji dla zlecenia pracy typu **Pobieranie Kanban**. Ten typ zlecenia pracy obsługuje nie tylko proces pobrania dla zadania Kanban wycofania. Obsługuje również proces pobrania dla zadania Kanban produkcji. Można jednak skonfigurować oddzielny proces pobrania dla każdego typu zadania Kanban, rozdzielając szablony grup czynności, szablony pracy i dyrektywy lokalizacji. Aby rozdzielić szablony grup czynności, szablony pracy i dyrektywy lokalizacji, ustaw dla typu działania (**Przetwarzanie** lub **Przeniesienie**) w zapytaniach dla tych jednostek.
 
-## Konfigurowanie zadania Kanban wycofania
-<a id="configure-the-withdrawal-kanban" class="xliff"></a>
+## <a name="configure-the-withdrawal-kanban"></a>Konfigurowanie zadania Kanban wycofania
 
 Działanie przeniesienia używane do zadania Kanban wycofania jest konfigurowane jako część aktywowanego planu działań w przepływie produkcji oszczędnej. W ramach konfiguracji działania przeniesienia określasz lokalizacje źródłową i docelową przeniesienia. Po skonfigurowaniu działania przeniesienia przypisujesz je do reguły Kanban o typie **Wycofanie**. Reguła Kanban ustawia zasady i konfiguracje dla zadania Kanban wycofania. Ilość w zadaniu Kanban określa, ile jednostek załadunkowych zostanie przemieszczonych za pomocą karty Kanban w procesie przenoszenia. Stała ilość w zadaniu Kanban jest używana po wybraniu strategii stałego uzupełnienia zapasów. Ta ilość określa liczbę kart Kanban, które są niezbędne, aby zapobiec wyczerpaniu zapasów w miejscu źródłowym popytu. Stałą ilość można obliczyć na podstawie rzeczywistego popytu, historycznego popytu i poziomów usług. Poniższe dwa scenariusze ilustrują, jak można zarządzać uzupełnianiem materiałów przy użyciu zadania Kanban wycofania.
 
-## Scenariusz 1: Uzupełnienie lokalizacji wejściowej produkcji za pomocą zadania Kanban wycofania o stałej ilości
-<a id="scenario-1-replenish-a-production-input-location-by-using-a-fixed-withdrawal-kanban" class="xliff"></a>
+## <a name="scenario-1-replenish-a-production-input-location-by-using-a-fixed-withdrawal-kanban"></a>Scenariusz 1: Uzupełnienie lokalizacji wejściowej produkcji za pomocą zadania Kanban wycofania o stałej ilości
 
 Proces produkcji zużywa kupiony surowiec z lokalizacji wejściowej produkcji znajdującej się w magazynie produkcji. Surowiec odbierany od dostawcy jest przechowywany w lokalizacji w magazynie materiałów. Ponieważ popyt na materiał jest uważany za stabilny w dłuższym przedziale czasu, został skonfigurowany do zaopatrywania produkcji za pomocą przepływu Kanban o stałej ilości. Po zużyciu ilości Kanban w lokalizacji wejściowej produkcji jest rejestrowany sygnał pustej ilości i do przepływu jest dodawana nowa karta Kanban tego samego typu. 
 
@@ -79,8 +74,7 @@ W tym scenariuszu praca pobrania w magazynie materiałów jest przetwarzana jako
 
 Jeśli odległość między lokalizacjami w magazynie a lokalizacją wejściową produkcji jest mała, bardziej wydajnym rozwiązaniem może być uwzględnienie działania przeniesienia w procesie pobrania. Pobrany materiał można go odłożyć bezpośrednio do lokalizacji wejściowej produkcji. Aby umożliwić ten proces, należy skonfigurować działanie przeniesienia w taki sposób, aby było wykonywane automatycznie w trakcie przetwarzania pracy pobrania w zadaniu Kanban wycofania.
 
-## Scenariusz 2: Automatyczne wykonywanie działania przeniesienia w trakcie przetwarzania pracy pobrania w zadaniu Kanban
-<a id="scenario-2-automatically-complete-the-transfer-activity-when-kanban-picking-work-is-processed" class="xliff"></a>
+## <a name="scenario-2-automatically-complete-the-transfer-activity-when-kanban-picking-work-is-processed"></a>Scenariusz 2: Automatyczne wykonywanie działania przeniesienia w trakcie przetwarzania pracy pobrania w zadaniu Kanban
 
 W poniższym scenariuszu działanie przeniesienia w zadaniu Kanban wycofania jest skonfigurowane w taki sposób, aby przeniesienie następowało między dwoma lokalizacjami w tym samym magazynie. Działanie przeniesienia w zadaniu Kanban wycofania jest skonfigurowane tak, aby było wykonywane automatycznie. 
 

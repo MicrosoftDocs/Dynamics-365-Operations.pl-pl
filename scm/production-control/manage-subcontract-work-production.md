@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 0e1368d3f637143fd47c3772c811257e8472cc74
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Zarządzanie pracą podwykonawczą w produkcji
-<a id="manage-subcontracting-work-in-production" class="xliff"></a>
+# <a name="manage-subcontracting-work-in-production"></a>Zarządzanie pracą podwykonawczą w produkcji
 
 [!include[banner](../includes/banner.md)]
 
@@ -59,8 +58,7 @@ Istnieją dwie metody modelowania prac podwykonawczych (podwykonawstwa) w operac
     -   Ta metoda umożliwia stosowanie zaopatrzenia zagregowanego i asynchronicznego. (Przepływ materiału jest niezależny od procesu zaopatrzenia).
     -   Moduł Kontrola kosztów rozdziela pracę podwykonawczą w jej własnym bloku podziału kosztów.
 
-## Podwykonawstwo operacji marszruty
-<a id="subcontracting-of-route-operations" class="xliff"></a>
+## <a name="subcontracting-of-route-operations"></a>Podwykonawstwo operacji marszruty
 Aby stosować podwykonawstwo operacji marszruty do zleceń produkcyjnych lub szarż produkcyjnych, produkt usługi używany dla zaopatrzenia w usługę musi być zdefiniowana jako produkt typu **Usługa**. Ponadto musi mieć grupę modeli pozycji, który ma opcję **Produkt magazynowany** w obszarze **Zasady zapasów** ustawioną na **Tak**. Ta opcja określa, czy produkt jest księgowany jako zapasy podczas przyjęcia produktów (**Produkt magazynowany** = **Tak**) czy też jest ujmowany w kosztach na koncie wynikowym (**Produkt magazynowany** = **Nie**). Chociaż to zachowanie może się wydawać sprzeczne, to opiera się na fakcie, że tylko produkty mające ustawioną tę zasadę będą tworzyły transakcje magazynowe, których można używać w kontroli kosztów do obliczania kosztu planowanego i określania kosztu rzeczywistego po zakończeniu zlecenia produkcyjnego.  
 
 Aby usługa była uwzględniana w planowaniu i obliczeniach kosztów, musi być dodana do listy BOM. Wiersz BOM musi być typu **Dostawca** i być przydzielony do operacji marszruty, do której jest przydzielona usługa. Ta operacja marszruty musi mieć zasób wyceny oraz zapotrzebowanie na zasoby wskazujące zasób typu **Dostawca**, które łączy operację i odnośną usługę z odpowiednim kontem dostawcy.  
@@ -69,26 +67,22 @@ Gdy jest używana ta konfiguracja, jest tworzone zamówienie zakupu na odnośny 
 
 Zlecenie produkcyjne może mieć wiele operacji, a każda operacja może być przydzielona do innego dostawcy. W związku z tym całościowe zlecenie produkcyjne może inicjować wiele zamówień zakupu.
 
-## Podwykonawstwo działań przepływu produkcji
-<a id="subcontracting-of-production-flow-activities" class="xliff"></a>
+## <a name="subcontracting-of-production-flow-activities"></a>Podwykonawstwo działań przepływu produkcji
 W rozwiązaniu [produkcji oszczędnej](lean-manufacturing-overview.md)praca podwykonawcza jest modelowana jako usługa powiązana z działaniem w [przepływie produkcji](http://ax.help.dynamics.com/en/wiki/create-a-production-flow-version/) (temat przewodnika po zadaniu). W związku z tym ten rodzaj podwykonawstwa jest również zwany [podwykonawstwem działań.](activity-based-subcontracting.md) Wprowadzono specjalny typ grupy kosztów **Outsourcing bezpośredni**, a usługi podwykonawcze nie są częścią listy składowej (BOM) wyrobów gotowych. Podczas korzystania z produkcji oszczędnej wszystkie działania są definiowane przez karty Kanban, które mogą być powiązane z jednym lub wieloma działaniami przepływu produkcji. Na razie to wyjaśnienie brzmi jak wyjaśnienie koncepcji zleceń produkcyjnych. Jednak o ile zlecenia produkcyjne zawsze muszą się kończyć wyrobem gotowym, można utworzyć karty Kanban służące dostarczaniu półproduktów. Nie trzeba dodawać nowego produktu ani poziomu BOM.  
 
 Ponieważ reguły Kanban mogą być bardzo dynamiczne, można modelować różne warianty dostarczania tego samego produktu w przepływie produkcji. Podczas korzystania z podwykonawstwa w produkcji oszczędnej przepływ materiałów jest ściśle oddzielony od przepływu finansowego. Cały przepływ materiałów jest reprezentowany przez działania Kanban. Zamówienia zakupu na produkty usług oraz księgowanie przyjęć tych usług można zautomatyzować na podstawie stanu zadań Kanban w przepływie produkcji. Zadania Kanban można uruchamiać i kończyć nawet przed utworzeniem zamówień zakupu. Dokumenty podwykonawstwa (zamówienia zakupu i dowody zakupu usług) mogą być agregowane według okresów i usług. Dzięki temu można zminimalizować liczbę dokumentów i wierszy zakupu, nawet dla operacji z dużą liczbą powtórzeń, gdzie dostawcy dostarczają usługi podwykonawcze w jednoelementowym przepływie.
 
-### Modelowanie podwykonawstwa w przepływie produkcji
-<a id="modeling-subcontracting-in-a-production-flow" class="xliff"></a>
+### <a name="modeling-subcontracting-in-a-production-flow"></a>Modelowanie podwykonawstwa w przepływie produkcji
 
 W [przepływie produkcji oszczędnej](lean-manufacturing-modeling-lean-organization.md) działanie procesu może być zdefiniowane jako podwykonawcze, gdy jest przydzielone do komórki roboczej (grupy zasobów) mającej jeden zasób dostawcy. Gdy komórka robocza jest podwykonawcza, działania odnośnego procesu muszą być połączone z aktywnym wierszem umowy zakupu zawierającym usługę i cenę usługi. Umowa serwisowa na działanie definiuje również obliczenie stosunku ilości produktu w zadaniu Kanban do wynikowej ilości usługi. Można wybrać, czy ilość usługi ma być obliczana na podstawie liczby zadań, ilości dobrego produktu raportowanej w zadaniach czy całkowitej ilości produktu (ta całkowita ilość obejmuje produkty złomowane).  
 
 Również działania przeniesienia mogą być definiowane jako podwykonawcze. Ta definicja następuje niejawnie po zaznaczeniu strony odpowiedzialnej za wysyłkę w działaniu przeniesienia. Jeśli wybrano opcję **Spedytor** lub **Adresat**, a odnośny magazyn źródłowy lub docelowy jest zarządzany przez dostawcę, działanie jest uważane za podwykonawcze. Po wybraniu opcji **Przewoźnik** działanie jest zawsze podwykonawcze. Podobnie jak w podwykonawczych działaniach procesu podwykonawcze działanie przeniesienia musi być połączone z umową serwisową, aby można było aktywować przepływ produkcji.
 
-### Wycena wsteczna
-<a id="backflush-costing" class="xliff"></a>
+### <a name="backflush-costing"></a>Wycena wsteczna
 
 Rachunek kosztów pracy podwykonawczej jest całkowicie zintegrowany z wyceną dla rozwiązania dla produkcji oszczędnej (wycena wsteczna). Podczas księgowania przyjęcia usługi określonej z zamówienia zakupu oraz podczas fakturowania koszt usługi jest przydzielany do przepływu produkcji. Dla wyceny wstecznej odchylenie usług podwykonawczych jest obliczane poprzez porównanie bloku podwykonawstwa w koszcie standardowym otrzymanych produktów z rzeczywiście otrzymanymi i zafakturowanymi ilościami usług.
 
-## Dostarczanie materiałów do operacji podwykonawczych
-<a id="material-supply-for-subcontracted-operations" class="xliff"></a>
+## <a name="material-supply-for-subcontracted-operations"></a>Dostarczanie materiałów do operacji podwykonawczych
 Półprodukty i inne pokrewne materiały muszą zostać przeniesione do lokalizacji, gdzie fizycznie jest wykonywana praca. W przypadku używania operacji i działań podwykonawczych takie przeniesienie jest często związane z dodatkowym transportem do lokacji prowadzonej przez dostawcę. Przydzielając materiał w BOM do operacji podwykonawczej, deklarujesz, że materiał musi zostać umieszczony w lokalizacji wejściowej grupy zasobów dla przydzielonego zasobu. Następnie proces planowania głównego lub uzupełnienia zapasów dla produkcji oszczędnej zapewnia przeniesienie materiału do tej lokalizacji.  
 
 W kwestii modelowania zapasów znajdujących się w lokacji dostawcy najlepsza branżowa praktyka stanowi, aby zdefiniować magazyn zarządzany przez dostawcę. Magazyn zarządzany przez dostawcę można łatwo zdefiniować poprzez utworzenie nowego magazynu i przypisanie mu konta dostawcy. Aby udokumentować konieczność przeniesienia tego materiału do dostawcy przed rozpoczęciem operacji, należy przydzielić magazyn zarządzany przez dostawcę do magazynu wejściowego grupy zasobów zawierającej zasób.  

@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17404
 ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 26ca948e26708126686ca0d96ea21dc16b1c3799
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Konfigurowanie hierarchii organizacyjnej
-<a id="configure-organizational-hierarchy" class="xliff"></a>
+# <a name="configure-organizational-hierarchy"></a>Konfigurowanie hierarchii organizacyjnej
 
 [!include[banner](../includes/banner.md)]
 
@@ -58,8 +57,7 @@ Musi istnieć co najmniej jedna firma, która będzie reprezentować przedsiębi
 | Produkty                                 | Definicje produktów są udostępniane i muszą być zwalniane do poszczególnych firm przed włączeniem ich do transakcji. Każda firma ma własny zestaw zwolnionych produktów, które mogą być uwzględniane w dokumentach transakcji. Jeśli organizacje wewnętrzne muszą używać różnych zestawów produktów, należy modelować te organizacje jako firmy. **Uwaga:** Mimo że definicje produktu są udostępniane w każdej firmie, której produkt został wydany, można określić różne parametry sprzedaży, zakupu i składowania dla towarów w każdym miejscu składowania zapasów.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Wszystkie jednostki operacyjne współużytkują ten sam zestaw produktów. Jeśli organizacje wewnętrzne mogą współużytkować ten sam zestaw produktów, można modelować te organizacje jako jednostki operacyjne.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Zapytania i raporty                    | Należy ręcznie zmienić firmy do wprowadzania transakcji i wykonywania zapytania w wielu firmach. Ze względu na granice zabezpieczeń danych, skonsolidowane zapytania i raporty mogą być czasochłonne i wymagać wielu zasobów.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Nie trzeba zmieniać firm w celu uzyskania dostępu do danych z wielu jednostek operacyjnych. Skonsolidowane zapytania i raportowania oraz indywidualne zapytania regionalne są łatwiejsze i szybsze.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
-## Najważniejsze wskazówki dotyczące modelowania organizacji i hierarchii
-<a id="best-practices-for-modeling-organizations-and-hierarchies" class="xliff"></a>
+## <a name="best-practices-for-modeling-organizations-and-hierarchies"></a>Najważniejsze wskazówki dotyczące modelowania organizacji i hierarchii
 Podczas implementowania hierarchii organizacyjnej należy wziąć pod uwagę następujące wskazówki:
 -   Utwórz dział do modelowania przestrzeni wspólnej między firmą i jednostką biznesową. Następnie zbierz dane z działu do firmy na potrzeby raportowania ustawowego i z działu do jednostki biznesowej dla sprawozdawczości wewnętrznej. Działy mogą służyć jako centra zysku. Korzystając z działów, nie należy używać firm i jednostek biznesowych jako wymiarów w strukturze konta. Działów można użyć jako wymiaru. Jednak należy użyć zarówno centrów kosztów i działów jako wymiarów w strukturze konta, jeśli centra kosztów są używane tylko jako akumulatory kosztów, a działy są używane do rozpoznawania przychodu.
 -   Modeluj wiele hierarchii dla jednostek operacyjnych, jeśli masz złożone wymagania dotyczące raportowania zysków i strat.

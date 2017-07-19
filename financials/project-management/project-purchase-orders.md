@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 83972
 ms.assetid: 247e4d72-610b-4fa5-9873-601ed0f4b2d6
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 9715d33598c0749ff1ad2523f2fa8834987998ed
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Zamówienia zakupu dla projektu
-<a id="purchase-orders-for-a-project" class="xliff"></a>
+# <a name="purchase-orders-for-a-project"></a>Zamówienia zakupu dla projektu
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ W tym artykule opisano różne metody, których można używać do tworzenia zam
 
 W programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition można używać wielu metod tworzenia zamówień zakupu dla projektu. Wybrana metoda zależy od przeznaczenia zamówienia zakupu, czasu zużywania kupionych towarów i oraz momentu zapisania kupionych towarów w ciężar projektu.
 
-### Metody tworzenia zamówienia zakupu
-<a id="methods-for-creating-a-purchase-order" class="xliff"></a>
+### <a name="methods-for-creating-a-purchase-order"></a>Metody tworzenia zamówienia zakupu
 
 Można użyć jednej z następujących metod w celu utworzenia zamówienia zakupu w module Zarządzanie projektami i ich księgowanie. Przeznaczenie zamówienia zakupu decyduje o tym, kiedy jest ono zużywane i w efekcie kiedy towary są zapisywane w ciężar projektu.
 

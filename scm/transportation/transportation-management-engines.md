@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
@@ -23,11 +24,9 @@ ms.openlocfilehash: c4aac72d9f7e975d4a270deb340f96ddcc9ca1fb
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Aparaty do zarządzania transportem
-<a id="transportation-management-engines" class="xliff"></a>
+# <a name="transportation-management-engines"></a>Aparaty do zarządzania transportem
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Aparaty zarządzania transportem definiują logikę, która służy do tworzenia
 
 Aparat zarządzania transportem oblicza zadania, takie jak stawki przewoźnika za transport. System umożliwia zmianę strategii obliczeń w czasie wykonywania na podstawie danych w programie Microsoft Dynamics 365 for Finance and Operations. Aparatu zarządzania transportem jest podobny do dodatku, który jest powiązany z umową przewoźnika.
 
-## Jakie aparaty są dostępne?
-<a id="what-engines-are-available" class="xliff"></a>
+## <a name="what-engines-are-available"></a>Jakie aparaty są dostępne?
 Poniższa tabela zawiera aparaty zarządzania transportem dostępne w programie Microsoft Dynamics 365 for Finance and Operations.
 
 | Aparat zarządzania transportem | opis                                                                                                                                                                                                                                                                                                                 |
@@ -50,14 +48,12 @@ Poniższa tabela zawiera aparaty zarządzania transportem dostępne w programie 
 | **Typ opłaty frachtowej**            | Standaryzuje faktury za fracht i wiersze BOM frachtu i jest używane do automatycznego uzgadniania rachunków za transport.                                                                                                                                                                                                                |
 
  
-Jakie aparaty muszą być skonfigurowane do ustalenia stawki za przesyłkę?
-<a id="what-engines-must-be-configured-to-rate-a-shipment" class="xliff"></a>
+<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Jakie aparaty muszą być skonfigurowane do ustalenia stawki za przesyłkę?
 ---------------------------------------------------
 
 Aby ustalić stawkę za przesyłkę dla określonego przewoźnika, należy skonfigurować wiele aparatów zarządzania transportem. **Aparat stawki** jest wymagany, ale do obsługi  mogą być konieczne również inne aparaty do **zarządzania transportem**. Na przykład **aparat stawki** może być używany do pobierania danych z **aparatu przebiegu** w celu obliczenia stawki w oparciu o przebieg między lokalizacją źródłową a miejscem docelowym.
 
-## Co jest wymagane do zainicjowania aparatu zarządzania transportem?
-<a id="whats-required-to-initialize-a-transportation-management-engine" class="xliff"></a>
+## <a name="whats-required-to-initialize-a-transportation-management-engine"></a>Co jest wymagane do zainicjowania aparatu zarządzania transportem?
 Aparat zarządzania transportem wymaga ustawienia inicjowania danych do działania w określony sposób. Konfiguracja może obejmować następujące typy danych:
 -   Odwołania do innych aparatów zarządzania transportem. Aby uzyskać szczegółowe informacje, zobacz przykład konfiguracji w tej sekcji.
 -   Odwołania do typów .NET, które są używane przez aparat zarządzania transportem.
@@ -71,25 +67,21 @@ W większości przypadków można kliknąć przycisk **Parametry** w formularzac
 | *ApportionmentEngine* | Kod aparatu ogólnego identyfikujący rekord aparatu przydziału w bazie danych programu Microsoft Dynamics 365 for Finance and Operations.                                                                                                                                                                                                                                                              |
 
  
-Jak używane są metadane w aparatach zarządzania transportem?
-<a id="how-is-metadata-used-in-transportation-management-engines" class="xliff"></a>
+<a name="how-is-metadata-used-in-transportation-management-engines"></a>Jak używane są metadane w aparatach zarządzania transportem?
 ----------------------------------------------------------
 
 Aparaty zarządzania transportem, które opierają się na danych zdefiniowanych w programie Dynamics 365 for Finance and Operations, mogą używać różnych schematów danych. System zarządzania transportem umożliwia różnych aparatom zarządzania transportem korzystanie z tych samych ogólnych tabel fizycznej bazy danych. Aby się upewnić, że interpretacja wykonania tego aparatu dane jest poprawna, można zdefiniować metadane dla tabel baz danych. Zmniejsza to koszty budowania nowych aparatów zarządzania transportem, ponieważ nie są wymagane dodatkowe struktury tabeli i formularza w programie Operations.
 
-## Co może być używane jako dane wyszukiwania w obliczeniach stawki?
-<a id="what-can-be-used-as-search-data-in-rate-calculations" class="xliff"></a>
+## <a name="what-can-be-used-as-search-data-in-rate-calculations"></a>Co może być używane jako dane wyszukiwania w obliczeniach stawki?
 Dane, które są używane podczas obliczania stawek w programie Microsoft Dynamics 365 for Finance and Operations, są zależne od konfiguracji metadanych. Na przykład, aby wyszukać kursy w oparciu o kody pocztowe, trzeba skonfigurować metadane na podstawie typu wyszukiwania kodu pocztowego.
 
-## Czy wszystkie konfiguracje aparatu wymagają metadanych?
-<a id="do-all-engine-configurations-require-metadata" class="xliff"></a>
+## <a name="do-all-engine-configurations-require-metadata"></a>Czy wszystkie konfiguracje aparatu wymagają metadanych?
 Nie, nie potrzebują ich aparaty zarządzania transportem, które są używane do pobierania danych potrzebnych przy obliczaniu stawki z systemów zewnętrznych. Można pobrać dane stawki dla tych aparatów z systemów przewoźnika transportu zewnętrznego, zazwyczaj za pośrednictwem usługi sieci web. Na przykład można użyć aparatu przebiegu, który pobiera dane bezpośrednio z map Bing, dzięki czemu aparat ten nie potrzebuje metadanych.
 | **Uwaga**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Aparaty zarządzania transportem, które zostały dostarczone z programem Finance and Operations, opierają się na danych, które są pobierane z aplikacji. Aparaty połączone z systemami zewnętrznymi nie są częścią programu Operations. Jednak model rozszerzania oparty na aparacie umożliwia rozszerzenia kompilacji przy użyciu pakietu Visual Studio Tools dla programu Microsoft Dynamics 365 for Finance and Operations. |
 
-## W jaki sposób skonfigurować metadane dla aparatu zarządzania transportem?
-<a id="how-do-i-configure-metadata-for-a-transportation-management-engine" class="xliff"></a>
+## <a name="how-do-i-configure-metadata-for-a-transportation-management-engine"></a>W jaki sposób skonfigurować metadane dla aparatu zarządzania transportem?
 Metadane dla aparatów zarządzania transportem są skonfigurowane inaczej dla różnych typów aparatów.
 
 | Aparat zarządzania transportem               | Konfiguracja metadanych                                                                                                                                                                                                                                                                                                                                                                                                                                               |

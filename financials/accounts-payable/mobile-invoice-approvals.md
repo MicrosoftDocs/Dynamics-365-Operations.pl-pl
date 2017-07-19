@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: sunilg
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
@@ -22,19 +23,16 @@ ms.openlocfilehash: 0ca4ebdca1fce3863a50abf19a071af1f1c425e0
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Zatwierdzanie faktur na urządzeniach przenośnych
-<a id="mobile-invoice-approvals" class="xliff"></a>
+# <a name="mobile-invoice-approvals"></a>Zatwierdzanie faktur na urządzeniach przenośnych
 
 [!include[banner](../includes/banner.md)]
 
 
 Funkcje komórkowe w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition pozwalają użytkownikom biznesowym projektować mobilne środowiska obsługi. W scenariuszach zaawansowanych platforma umożliwia również deweloperom rozszerzanie funkcjonalności zgodnie z potrzebami. Najbardziej skutecznym sposobem, aby poznać niektóre nowe koncepcje obsługi na telefonach komórkowych, jest przejście przez proces projektowania w kilku scenariuszach. Ten temat przedstawia praktyczne podejście do projektowania scenariuszy komórkowych na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych. Ten temat powinien ułatwić projektowanie w innych wariantach scenariuszy i może być również wykorzystywany w innych scenariuszach, niezwiązanych z fakturami od dostawców.
 
-Wymagania wstępne
-<a id="prerequisites" class="xliff"></a>
+<a name="prerequisites"></a>Wymagania wstępne
 -------------
 
 | Wymaganie wstępne                                                                                            | opis                                                                                                                                                          |
@@ -46,8 +44,7 @@ Wymagania wstępne
 | Instalacja poprawki KB 3208224.                                                                              | Kod źródłowy aplikacji zatwierdzania faktur od dostawców na urządzeniach komórkowych. Poprawka jest dołączona w aplikacji Microsoft Dynamics AX w wersji 7.0.1 (z maja 2016 r.).                          |
 | Urządzenie z systemem Android, iOS lub Windows, na którym zainstalowano aplikację komórkową usługi Finance and Operations | Wyszukaj aplikację w odpowiednim sklepie z aplikacjami.                                                                                                                     |
 
-## Wprowadzenie
-<a id="introduction" class="xliff"></a>
+## <a name="introduction"></a>Wprowadzenie
 Aby można było zatwierdzać faktury od dostawców na urządzeniach komórkowych, należy zainstalować trzy poprawki wymienione w sekcji „Wymagania wstępne”. Te poprawki nie udostępniają obszaru roboczego dla zatwierdzania faktur. Aby się dowiedzieć, czym jest obszar roboczy w kontekście pracy na urządzeniach komórkowych, przeczytaj podręcznik o platformie komórkowej wymieniony w sekcji „Wymagania wstępne”. Obszar roboczy zatwierdzania faktur musi być zaprojektowany. 
 
 Każda organizacja inaczej przygotowuje i definiuje proces biznesowy faktur od dostawców. Przed rozpoczęciem projektowania komórkowego środowiska obsługi zatwierdzenia faktur od dostawców należy rozważyć następujące aspekty procesu biznesowego. Chcemy, aby korzystać z tych punktów w najszerszym możliwym zakresie w celu zoptymalizowania środowiska użytkownika na urządzeniu.
@@ -68,8 +65,7 @@ Projekt komórkowego środowiska obsługi zatwierdzania faktur będzie się ró�
 
 Jako ogólną wskazówkę należy pamiętać, aby podczas pracy w projektancie środowiska komórkowego „publikować” zmiany w celu uniknięcia utraty aktualizacji.
 
-## Projektowanie prostego scenariusza zatwierdzania faktur dla firmy Contoso
-<a id="designing-a-simple-invoice-approval-scenario-for-contoso" class="xliff"></a>
+## <a name="designing-a-simple-invoice-approval-scenario-for-contoso"></a>Projektowanie prostego scenariusza zatwierdzania faktur dla firmy Contoso
 <table>
 <colgroup>
 <col width="50%" />
@@ -128,8 +124,7 @@ Jako ogólną wskazówkę należy pamiętać, aby podczas pracy w projektancie �
 </tbody>
 </table>
 
-### Tworzenie obszaru roboczego
-<a id="create-the-workspace" class="xliff"></a>
+### <a name="create-the-workspace"></a>Tworzenie obszaru roboczego
 
 1.  W przeglądarce otwórz usługę Finance and Operations i się zaloguj.
 2.  Po zalogowaniu dołącz wyrażenie **&mode=mobile** do adresu URL, jak pokazano w przykładzie poniżej, i odśwież stronę: https://&lt;TwójadresURL&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
@@ -141,8 +136,7 @@ Jako ogólną wskazówkę należy pamiętać, aby podczas pracy w projektancie �
 8.  Kliknij przycisk **Gotowe**.
 9.  Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać zmiany.
 
-### Faktury od dostawcy przypisane do mnie
-<a id="vendor-invoices-assigned-to-me" class="xliff"></a>
+### <a name="vendor-invoices-assigned-to-me"></a>Faktury od dostawcy przypisane do mnie
 
 Pierwszą stroną środowiska mobilnego, jaką należy zaprojektować, jest lista faktur przypisanych użytkownikowi w celu weryfikacji. Aby zaprojektować tę stronę dla urządzeń przenośnych, użyj strony **VendMobileInvoiceAssignedToMeListPage** strony w programie Finance and Operations. Przed wykonaniem tej procedury upewnij się, że co najmniej jedna faktura od dostawcy jest Ci przypisana do weryfikacji, a wiersz tej faktury ma dwie dystrybucje. Ta konfiguracja spełnia wymagania tego scenariusza.
 
@@ -175,8 +169,7 @@ Pierwszą stroną środowiska mobilnego, jaką należy zaprojektować, jest list
 12. Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 13. W formularzu Parametry modułu rozrachunków z dostawcami w obszarze **Faktura** włącz opcję **Wyświetl sumę faktury na liście oczekujących faktur od dostawców** . Należy zauważyć, że tylko po włączeniu tego parametru będą obliczane sumy faktur z przeznaczeniem do wyświetlenia na stronie listy oczekujących faktur od dostawców. Jest to nowa funkcja zawarta w poprawce 3208224 stanowiącej wymóg wstępny.
 
-### Szczegóły faktur od dostawców
-<a id="vendor-invoice-details" class="xliff"></a>
+### <a name="vendor-invoice-details"></a>Szczegóły faktur od dostawców
 
 Aby zaprojektować stronę szczegółów faktur dla urządzeń przenośnych, użyj strony **VendMobileInvoiceHeaderDetails** w usłudze Finance and Operations. Należy zauważyć, że w zależności od liczby faktur istniejących w systemie ta strona pokazuje najstarszą fakturę (tzn. tę, która została utworzona jako pierwsza). Aby znaleźć konkretną fakturę, możesz użyć filtru z lewej strony. Jednak w tym przykładzie nie potrzebujemy konkretnej faktury. Potrzebujemy po prostu jakichś danych faktury, aby móc zaprojektować stronę dla urządzeń przenośnych. [![Strona przepływu pracy](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
@@ -211,13 +204,11 @@ Aby zaprojektować stronę szczegółów faktur dla urządzeń przenośnych, uż
 13. Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
 14. Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 
-### Akcje przepływu pracy
-<a id="workflow-actions" class="xliff"></a>
+### <a name="workflow-actions"></a>Akcje przepływu pracy
 
 Aby dodać akcje przepływu pracy, użyj strony **VendMobileInvoiceHeaderDetails** w usłudze Finance and Operations. Aby otworzyć tę stronę, należy zastąpić nazwę elementu menu w adresie URL, tak jak poprzednio. Następnie otwórz projektanta środowiska komórkowego za pomocą przycisku **Ustawienia** (koło zębate). Wykonaj następujące kroki, aby dodać akcje przepływu pracy na stronie szczegółów. Musisz mieć przypisane faktury będące w stanie umożliwiającym udostępnienie Ci akcji przepływu pracy, dla których zamierzasz projektować środowisko.
 
-#### Rejestrowanie akcji przepływu pracy
-<a id="record-workflow-actions" class="xliff"></a>
+#### <a name="record-workflow-actions"></a>Rejestrowanie akcji przepływu pracy
 1.  Kliknij przycisk **Edytuj**, aby uruchomić tryb edycji w obszarze roboczym.
 2.  Zaznacz utworzoną wcześniej stronę **Szczegóły faktury** i kliknij przycisk **Edytuj**.
 3.  Na karcie **Akcje** kliknij przycisk **Dodaj akcję**.
@@ -231,8 +222,7 @@ Aby dodać akcje przepływu pracy, użyj strony **VendMobileInvoiceHeaderDetails
 11. Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 12. Powtórz poprzednie kroki, aby zarejestrować wszystkie wymagane akcje przepływu pracy. 
 
-#### Tworzenie pliku .js
-<a id="create-a-js-file" class="xliff"></a>
+#### <a name="create-a-js-file"></a>Tworzenie pliku .js
 1. Otwórz aplikację Notatnik lub Microsoft Visual Studio i wklej poniższy kod źródłowy. Zapisz plik w formacie .js. Ten kod powoduje wykonanie następujących czynności:
     - Ukrywa dodatkowe kolumny dotyczące przepływu pracy, które wcześniej dodano na stronie listy elementów dla urządzeń przenośnych. Dodaliśmy te kolumny, tak aby aplikacja posiadała te informacje w kontekście i mogła wykonać następny krok.
     - Na podstawie aktywnego kroku przepływu pracy zastosuje logikę powodującą pokazanie tylko tych akcji.
@@ -304,8 +294,7 @@ Aby dodać akcje przepływu pracy, użyj strony **VendMobileInvoiceHeaderDetails
 4.  Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
 5.  Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 
-### Załączniki faktur od dostawców
-<a id="vendor-invoice-attachments" class="xliff"></a>
+### <a name="vendor-invoice-attachments"></a>Załączniki faktur od dostawców
 
 1.  Kliknij przycisk **Ustawienia** (koło zębate) w prawym górnym rogu strony, a następnie kliknij opcję **Aplikacja mobilna**.
 2.  Kliknij przycisk **Edytuj**, aby uruchomić tryb edycji w obszarze roboczym.
@@ -316,8 +305,7 @@ Aby dodać akcje przepływu pracy, użyj strony **VendMobileInvoiceHeaderDetails
 7.  Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
 8.  Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 
-### Dystrybucje wierszy faktury od dostawcy
-<a id="vendor-invoice-line-distributions" class="xliff"></a>
+### <a name="vendor-invoice-line-distributions"></a>Dystrybucje wierszy faktury od dostawcy
 
 Wymagania dotyczące tego scenariusza potwierdzają, że będzie tylko dystrybucja na poziomie wierszy, a fakturę zawsze będzie miała tylko jeden wiersz. Ponieważ ten scenariusz jest prosty, środowisko użytkownika na urządzeniu przenośnym również musi być na tyle proste, aby w celu wyświetlenia dystrybucji użytkownik nie musiał przechodzić kilka poziomów w głąb. Funkcjonalność faktur od dostawców w programie Finance and Operations obejmuje opcję wyświetlania wszystkich dystrybucji z nagłówka faktury. To zachowanie jest potrzebne w scenariuszu mobilnym. W związku z tym użyjemy strony **VendMobileInvoiceAllDistributionTree** do zaprojektowania tej części scenariusza mobilnego. 
 
@@ -420,8 +408,7 @@ Wymagania dotyczące tego scenariusza potwierdzają, że będzie tylko dystrybuc
 4.  Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
 5.  Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 
-### Weryfikacja
-<a id="validation" class="xliff"></a>
+### <a name="validation"></a>Weryfikacja
 
 Na urządzeniu przenośnym otwórz aplikację i połącz się z wystąpieniem usługi Finance and Operations. Koniecznie zaloguj się w firmie, gdzie faktury od dostawców są Ci przypisane do weryfikacji. Powinna być możliwość wykonania następujących czynności:
 
@@ -433,8 +420,7 @@ Na urządzeniu przenośnym otwórz aplikację i połącz się z wystąpieniem us
 -   Na stronie szczegółów wyświetlenie łącza do strony **Widok księgowania** oraz użycie tego łącza w celu przejścia do strony dystrybucji i wyświetlenia dystrybucji.
 -   Na stronie szczegółów u dołu kliknięcie menu **Akcje** i wykonanie akcji przepływu pracy mających zastosowanie do etapu przepływu pracy.
 
-## Projektowanie skomplikowanego scenariusza zatwierdzania faktur dla firmy Fabrikam
-<a id="designing-a-complex-invoice-approval-scenario-for-fabrikam" class="xliff"></a>
+## <a name="designing-a-complex-invoice-approval-scenario-for-fabrikam"></a>Projektowanie skomplikowanego scenariusza zatwierdzania faktur dla firmy Fabrikam
 <table>
 <colgroup>
 <col width="50%" />
@@ -493,8 +479,7 @@ Na urządzeniu przenośnym otwórz aplikację i połącz się z wystąpieniem us
 </tbody>
 </table>
 
-### Następne kroki
-<a id="next-steps" class="xliff"></a>
+### <a name="next-steps"></a>Następne kroki
 
 W scenariuszu 1 można wprowadzić zmiany wymienione poniżej zgodnie z wymaganiami scenariusza 2. Informacje w tej sekcji pomogą usprawnić korzystanie z aplikacji komórkowej.
 

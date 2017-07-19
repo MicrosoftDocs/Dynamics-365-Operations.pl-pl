@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,25 +25,21 @@ ms.openlocfilehash: 5c5f06d1a518963738e446b5032261059d98bf13
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Omówienie obszaru roboczego Kontrola kosztów
-<a id="cost-control-overview" class="xliff"></a> 
+# <a name="cost-control-overview"></a>Omówienie obszaru roboczego Kontrola kosztów 
 
 [!include[banner](../includes/banner.md)]
 
 Obszar roboczy **Kontrola kosztów** jest centralnym miejscem, w którym menedżerowie odpowiedzialni za kontrolę obiektu kosztów lub zbioru obiektów kosztów w granicach wymiaru lub między wymiarami (np. w centrach kosztów i grupach produktów) mają dostęp do raportów. Raporty w obszarze roboczym są w pełni zarządzane przez księgowych kosztów, dzięki czemu układ i dane używane w raportach mogą być spójne w całej organizacji.
 
-## Konfiguracja obszaru roboczego Kontrola kosztów
-<a id="cost-control-workspace-configuration" class="xliff"></a>
+## <a name="cost-control-workspace-configuration"></a>Konfiguracja obszaru roboczego Kontrola kosztów
 
 Księgowi kosztów mogą zdefiniować dowolną liczbę konfiguracji raportów, jakiej potrzebują dla żądanej kompozycji danych lub układu. Konfiguracja raportu składa się z sześciu sekcji. Każda sekcja ma pewien udział w wybieraniu docelowej kompozycji danych lub układu.
 
 Aby skonfigurować obszar roboczy kontroli kosztów, kliknij kolejno opcje **Rachunek kosztów** \> **Ustawienia** \> **Konfiguracja obszaru roboczego Kontrola kosztów**.
 
-### Ogólne
-<a id="general" class="xliff"></a>
+### <a name="general"></a>Ogólne
 
 Na skróconej karcie **Ogólne** można utworzyć unikatowy układ raportu. Nazwa raportu będzie unikatowym identyfikatorem, który użytkownicy będą mogli rozpoznać w obszarze roboczym **Kontrola kosztów**. Można również określić, czy raport powinien być udostępniany, czy też przechowywany wewnętrznie tylko dla księgowych kosztów.
 
@@ -52,8 +49,7 @@ Na skróconej karcie **Ogólne** można utworzyć unikatowy układ raportu. Nazw
 | opis | Wprowadź szczegółowy opis. |
 | Opublikowane   | Jeśli w tym polu zostanie ustawiona wartość **Tak**, użytkownik, któremu przypisano jedną z następujących ról, może wyświetlać raport w obszarze roboczym **Kontrola kosztów**:<ul><li>Menedżer rachunku kosztów</li><li>Księgowy kosztów</li><li>Księgowy rachunku kosztów</li><li>Kontroler obiektów kosztów</li></ul>Jeśli w tym polu zostanie ustawiona wartość **Nie**, tylko użytkownicy, którym przypisano jedną z następujących ról, mogą wyświetlać raport w obszarze roboczym **Kontrola kosztów**:<ul><li>Menedżer rachunku kosztów</li><li>Księgowy kosztów</li><li>Księgowy rachunku kosztów</li></ul> |
 
-### Filtrowanie danych
-<a id="data-filtering" class="xliff"></a>
+### <a name="data-filtering"></a>Filtrowanie danych
 
 Na skróconej karcie **Filtrowanie danych** można zdefiniować dane podstawowe raportu. Użytkownicy tego raportu będą widzieć wartości w raporcie po przetworzeniu danych źródłowych.
 
@@ -66,8 +62,7 @@ Na skróconej karcie **Filtrowanie danych** można zdefiniować dane podstawowe 
 | Pierwotna wersja budżetu                                           | Wybierz identyfikator wersji budżetu pełniącego rolę pierwotnego budżetu w kontekście tego raportu. |
 | Skorygowana wersja budżetu                                            | Wybierz identyfikator wersji budżetu pełniącego rolę skorygowanego budżetu w kontekście tego raportu. |
 
-### Przypisz rekordy obliczeń
-<a id="assign-calculation-records" class="xliff"></a>
+### <a name="assign-calculation-records"></a>Przypisz rekordy obliczeń
 
 Aparat obliczania kosztów ogólnych wykonuje kilka kroków obliczeniowych na danych źródłowych. Np. oblicza klasyfikację zachowania kosztów, dystrybucję kosztów i alokację kosztów. Dla tego samego okresu obrachunkowego można wykonać kilka obliczeń kosztów ogólnych, jeśli na przykład zostanie wykryte brakujące źródło danych lub wystąpi konieczność aktualizacji reguł. Każde obliczenie kosztów ogólnych jest zapisywane z unikatowym identyfikatorem. Księgowy kosztów może wybrać konkretny identyfikator obliczania kosztów ogólnych. Użytkownicy raportów, tacy jak menedżerowie, będą widzieć wyniki obliczania kosztów ogólnych w obszarze roboczym **Kontrola kosztów**.
 
@@ -78,8 +73,7 @@ Aparat obliczania kosztów ogólnych wykonuje kilka kroków obliczeniowych na da
 | Wersja budżetu         | Wybierz odpowiedni identyfikator obliczania kosztów ogólnych. |
 | Skorygowana wersja budżetu | Wybierz odpowiedni identyfikator obliczania kosztów ogólnych. |
 
-### Okresy obrachunkowe na kolumnę
-<a id="fiscal-periods-per-column" class="xliff"></a>
+### <a name="fiscal-periods-per-column"></a>Okresy obrachunkowe na kolumnę
 
 Na skróconej karcie **Okresy obrachunkowe na kolumnę** księgowy kosztów decyduje, który okres obrachunkowy powinien być wyświetlany w układzie raportu.
 
@@ -92,8 +86,7 @@ Wartości w wybranych kolumnach zostaną pomnożone przez wybrane wartości na s
 | Od początku roku do chwili obecnej         | Jest wyświetlana wartość od początku roku. Stosowany jest poniższy wzór:<br>YearToDate (bieżący okres obrachunkowy)<blockquote>[!NOTE]<br>Domyślnie bieżący okres zależy od daty sesji. W obszarze roboczym **Kontrola kosztów** można wybrać konkretny okres obrachunkowy. Wtedy wybrana wartość reprezentuje bieżący okres, a wartość **Od początku roku do chwili obecnej** zostanie odpowiednio zaktualizowana.</blockquote> |
 | Średnia od początku roku do chwili obecnej | Jest wyświetlana średnia wartość od początku roku. Stosowany jest poniższy wzór:<br>(YearToDate [bieżący okres obrachunkowy]) / (Count [bieżący okres obrachunkowy])<p><strong>Przykład</strong></p><ul><li>**Element członkowski wymiaru statystycznego:** Pracownicy etatowi zatrudnieni w pełnym wymiarze czasu</li><li>**Bieżąca data:** 21-3-2017</li><li>**Okres:** Okres obrachunkowy 1, Okres obrachunkowy 2, Okres obrachunkowy 3</li><li>**Wartość:** 10, 10, 12</li></ul>W tym przypadku **Średnia od początku roku do chwili obecnej** = (10 + 10 + 12) ÷ 3 = 10,67<p>Wartość **Średnia od początku roku do chwili obecnej** można obliczyć dla elementów członkowskich wymiaru składnika kosztu i elementów członkowskich wymiaru statystycznego.</p><blockquote>[!NOTE]<br>Domyślnie bieżący okres zależy od daty sesji. W obszarze roboczym **Kontrola kosztów** można wybrać konkretny okres obrachunkowy. Wtedy wybrana wartość reprezentuje bieżący okres, a wartość **Od początku roku do chwili obecnej** i **Średnia od początku roku do chwili obecnej** zostaną odpowiednio zaktualizowane.</blockquote> |
 
-### Kolumny do wyświetlenia dla kosztów
-<a id="columns-to-display-for-costs" class="xliff"></a>
+### <a name="columns-to-display-for-costs"></a>Kolumny do wyświetlenia dla kosztów
 
 Na skróconej karcie **Kolumny do wyświetlenia dla kosztów** księgowy kosztów decyduje, które kolumny powinien zawierać układ raportu. Istnieją trzy kategorie: Koszt stały, Koszt zmienny i Koszt niesklasyfikowany.
 
@@ -105,8 +98,7 @@ Na skróconej karcie **Kolumny do wyświetlenia dla kosztów** księgowy kosztó
 | Łączny koszt            | Kolumna tego typu pokazuje łączny koszt (nieklasyfikowany, stały i zmienny).<blockquote>[!NOTE]<br>Kolumna tego typu zawsze pokazuje saldo.</blockquote> |
 | Koszt niesklasyfikowany     | Kolumna tego typu pokazuje koszt niesklasyfikowany.<blockquote>[!NOTE]<br>Ta kolumna może służyć do sprawdzania, czy wszystkie koszty zostały prawidłowo sklasyfikowane przez aparat obliczania kosztów ogólnych, czy też należy skorygować reguły zachowania kosztów.</blockquote> |
 
-### Kolumny do wyświetlenia dla kosztów budżetowych
-<a id="columns-to-display-for-budgeted-costs" class="xliff"></a>
+### <a name="columns-to-display-for-budgeted-costs"></a>Kolumny do wyświetlenia dla kosztów budżetowych
 
 Na skróconej karcie **Kolumny do wyświetlenia dla kosztów budżetowych** księgowy kosztów decyduje, które kolumny powinny być wyświetlane dla wybranych wersji budżetu. Osobnych wyborów można dokonać dla budżetów pierwotnego i skorygowanego.
 
@@ -122,8 +114,7 @@ Na skróconej karcie **Kolumny do wyświetlenia dla kosztów budżetowych** ksi�
 | Próg odchylenia w roku   | Ustaw wartość progową dla odchylenia kwoty pieniężnej w roku. Jeśli próg zostanie przekroczony, wiersz zostanie wyróżniony na czerwono w obszarze roboczym **Kontrola kosztów**. |
 | Próg odchylenia (%)      | Ustaw wartość progową dla odchylenia w procentach. Jeśli próg zostanie przekroczony, wiersz zostanie wyróżniony na czerwono w obszarze roboczym **Kontrola kosztów**.<blockquote>[!NOTE]<br>Ten sam próg procentowy stosuje się do bieżącego okresu i roku.</blockquote> |
 
-## Obszar roboczy kontroli kosztów
-<a id="cost-control-workspace" class="xliff"></a>
+## <a name="cost-control-workspace"></a>Obszar roboczy kontroli kosztów
 
 Obszar roboczy **Kontrola kosztów** został zaprojektowany jako raport sieci Web. W związku z tym wszystkim menedżerom odpowiedzialnym za obiekt kosztów można udzielić dostępu w sposób opisany w temacie [Definiowanie uprawnień dostępu kontrolerów obiektów kosztów](access-rights-cost-object-controller.md).
 
@@ -137,13 +128,11 @@ Wartości w okresie kalendarza obrachunkowego są określane przez nazwę raport
 
 W hierarchii wymiarów obiektów kosztów użytkownicy mogą wybrać poziom agregacji, na którym powinny być wyświetlane salda. Włączając zabezpieczenia na poziomie dostępu, można kontrolować uprawnienia, tak aby użytkownicy mogli wybierać tylko poziomy hierarchii, do których przyznano im dostęp. Z tego względu będą widzieć tylko zagregowane salda, wobec których otrzymali dostęp.
 
-### Dodaj lub usuń kolumny
-<a id="add-or-remove-columns" class="xliff"></a>
+### <a name="add-or-remove-columns"></a>Dodaj lub usuń kolumny
 
 Użytkownicy mogą dostosowywać kolumny w raporcie do własnych potrzeb.
 
-### Wyświetlanie szczegółów
-<a id="view-details" class="xliff"></a>
+### <a name="view-details"></a>Wyświetlanie szczegółów
 
 Użytkownicy mogą przechodzić do szczegółowych informacji sald wyświetlanych w obszarze roboczym. Jeśli użytkownik zaznaczy węzeł hierarchii wymiarów składników kosztów, a następnie kliknie przycisk **Wyświetl szczegóły**, w oknie dialogowym **Szczegóły składnika kosztu** zostaną wyświetlone szczegółowe informacje dla węzła.
 

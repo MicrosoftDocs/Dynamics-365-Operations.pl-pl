@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysUserSetup
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
 ms.author: tlefor
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Personalizacja interfejsu użytkownika
-<a id="personalize-the-user-experience" class="xliff"></a>
+# <a name="personalize-the-user-experience"></a>Personalizacja interfejsu użytkownika
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +37,7 @@ Microsoft Dynamics 365 for Finance and Operations daje wiele różnych możliwo�
 
 Wszystkie personalizacje dowolnego typu, które użytkownik wprowadzi w programie Dynamics 365 for Finance and Operations, dotyczą wyłącznie danego użytkownika bez względu na firmę, z którą współpracuje. Zmiany, które użytkownik wprowadza na stronie nie mają wpływu na innych użytkowników w systemie.
 
-## Opcje dla bieżącego użytkownika dotyczące całego systemu
-<a id="systemwide-options-for-the-current-user" class="xliff"></a>
+## <a name="systemwide-options-for-the-current-user"></a>Opcje dla bieżącego użytkownika dotyczące całego systemu
 Na pasku nawigacyjnym znajduje się ikonka koła zębatego. To przycisk menu **Ustawienia**. Po otworzeniu menu **Ustawienia** widać szereg elementów do wyboru. Jeśli wybierzesz **Opcje** zostanie wyświetlona strona **opcji** użytkownika. Na tej stronie są 4 karty opcji: **Wygląd**, **Preferencje**, **Konto**, i **Przepływ pracy**.
 
 -   **Wygląd:** umożliwia wybieranie motywu kolorów i domyślnego rozmiaru elementów na stronach.
@@ -47,8 +45,7 @@ Na pasku nawigacyjnym znajduje się ikonka koła zębatego. To przycisk menu **U
 -   **Konto:** umożliwia podanie Identyfikatora użytkownika i innych opcji związanych z kontem.
 -   **Przepływ pracy:** tutaj można ustawiać opcje związane z przepływem pracy.
 
-## Personalizacje pośrednie
-<a id="implicit-personalizations" class="xliff"></a>
+## <a name="implicit-personalizations"></a>Personalizacje pośrednie
 Personalizacje pośrednie to takie, które wykonuje się po prostu poprzez interakcję z określonymi funkcjami sterowania, które zapamiętują bieżący stan i wygląd wykorzystywanych funkcji. 
 
 **Kolumny w siatce:** można dopasować szerokość kolumny na liście, zaznaczając pasek zmiany rozmiaru znajdujący się po lewej lub po prawej stronie nagłówka kolumny i przesuwanie go do lewej lub do prawej o odpowiednią odległość. Program Dynamics 365 for Finance and Operations zapamięta wybraną szerokość i będzie wyświetlał kolumnę o tej szerokości za każdym razem, gdy otworzysz stronę z tą listą. 
@@ -57,8 +54,7 @@ Personalizacje pośrednie to takie, które wykonuje się po prostu poprzez inter
 
 **Pola informacji:** niektóre strony mają sekcję o nazwie okienko pola informacji. To okienko zawiera informacje tylko do odczytu związane z tematem bieżącej strony. Każda sekcja w okienku pola informacji to pole informacji. Pola informacji można zwijać i rozwijać, a program Dynamics 365 for Finance and Operations zapamiętuje preferencje użytkownika. W niektórych przypadkach zwinięcie pola informacji może poprawić wydajność, bo program Dynamics 365 for Finance and Operations nie będzie musiał pobierać informacji zawartych w tym polu, dopóki nie zostanie ono rozwinięte.
 
-## Personalizacje bezpośrednie przy użyciu paska narzędzi do personalizacji
-<a id="explicit-personalizations-using-the-personalization-toolbar" class="xliff"></a>
+## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Personalizacje bezpośrednie przy użyciu paska narzędzi do personalizacji
 Dla każdej osoby i firmy ważne są inne informacje. Możliwość dostosowania sposobu uporządkowania informacji, interakcji z nimi lub ukrywania danych ma kluczowe znaczenie w kontekście dostosowania programu Dynamics 365 for Finance and Operations do indywidualnych potrzeb. 
 
 Personalizacje bezpośrednie to te, które wykonujesz bezpośrednio z zamiarem zmiany wyglądu lub zachowania danego elementu strony poprzez wybranie opcji z menu personalizacji. Najbardziej podstawowym typem personalizacji bezpośredniej jest kliknięcie elementu prawym przyciskiem myszy i wybranie opcji **Personalizuj**. (Pamiętaj, że nie wszystkie elementy na stronie można personalizować). Po wybraniu tej metody personalizacji pojawi się okno właściwości elementu. 
@@ -93,8 +89,7 @@ Wybierz przycisk **Zamknij**, aby zamknąć pasek narzędzi i przywrócić stron
 
 Zmiany wprowadzane przy użyciu paska narzędzi Personalizacja są domyślne. Ustawienia personalizacji są aktywne natychmiast po ich wprowadzeniu i nie trzeba klikać przycisku **Zapisz**. W niektórych przypadkach po wybraniu narzędzia pojawi się obok ikona kłódki. Oznacza to, że w celu zapewnienia prawidłowego działania strony nie można zmieniać właściwości związanych z wybranym narzędziem. Po otwarciu paska narzędzi personalizacji stronę przestaje być interaktywna. Nie można wprowadzać danych, ani zwijać lub rozwijać sekcji.
 
-## Personalizacja bezpośrednia: dodawanie kafelka lub listy do obszaru roboczego
-<a id="explicit-personalization-adding-a-tile-or-list-to-a-workspace" class="xliff"></a>
+## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Personalizacja bezpośrednia: dodawanie kafelka lub listy do obszaru roboczego
 Niektóre strony z listami będą miały dodatkową funkcję personalizacji dostępną w okienku akcji w grupie personalizacji na karcie opcji. Wybierz **Dodaj do obszaru roboczego**, aby wyświetlić listę rozwijaną, która umożliwia pokazywanie informacji na bieżącej liście (filtrowanych, sortowanych lub domyślnie) w obszarze roboczym w formie listy lub kafelka podsumowania (kafelek może pokazywać liczbę elementów na liście). 
 
 [![Dodaj do obszaru roboczego](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
@@ -105,16 +100,13 @@ Aby dodać kafelek do obszaru roboczego, najpierw przefiltruj listę, tak aby pr
 
 Po dodaniu do obszaru roboczego listy lub kafelka można otworzyć dany obszar roboczy i ponownie zmienić ułożenie listy lub kafelka w grupie, w której te elementy zostały umieszczone.
 
-## Personalizacja bezpośrednia: dodawanie podsumowania z obszaru roboczego do pulpitu nawigacyjnego
-<a id="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard" class="xliff"></a>
+## <a name="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard"></a>Personalizacja bezpośrednia: dodawanie podsumowania z obszaru roboczego do pulpitu nawigacyjnego
 Niektóre obszary robocze zawierają kafelki (płytki z liczbami), które mogą być także widoczne w pulpicie nawigacyjnym. W obszarze roboczym kliknij kafelek z liczbą prawym przyciskiem myszy i wybierz opcję **Personalizuj**. Wybierz **Przypnij do pulpitu nawigacyjnego**. Następnym razem, kiedy przejdziesz do wybranego pulpitu nawigacyjnego (i odświeżysz go), zobaczysz tę liczbę poniżej kafelka nawigacji obszaru roboczego na pulpicie nawigacyjnym.
 
-## Personalizacja bezpośrednia: personalizowanie pulpitu nawigacyjnego
-<a id="explicit-personalization-personalizing-your-dashboard" class="xliff"></a>
+## <a name="explicit-personalization-personalizing-your-dashboard"></a>Personalizacja bezpośrednia: personalizowanie pulpitu nawigacyjnego
 Pulpit nawigacyjny jest często pierwszą stroną, którą widzisz po uruchomieniu programu Finance and Operations. Możesz spersonalizować pulpit nawigacyjny i zmienić nazwę kafelków nawigacyjnych obszaru roboczego, aby wyświetlić tylko te kafelki, które chcesz widzieć, zmieniać ich nazwy lub układ. Aby spersonalizować pulpit nawigacyjny, wybierz dowolny kafelek i kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe. W menu kontekstowym wybierz **Personalizuj**. Jeśli chcesz ukryć, zmienić nazwę lub pominąć wybrany kafelek, możesz wprowadzić żądane zmiany bezpośrednio w wyświetlonym oknie Właściwości. Jeśli chcesz rozmieścić kafelki, wybierz opcję **Personalizuj ten formularz** w oknie właściwości, aby wyświetlić pasek narzędzi personalizacji. Można następnie użyć narzędzia przenoszenia do uporządkowania kafelków.
 
-## Administrowanie personalizacją.
-<a id="administration-of-personalization" class="xliff"></a>
+## <a name="administration-of-personalization"></a>Administrowanie personalizacją.
 Po personalizowania strony można udostępnić te personalizacje innym użytkownikom. W tym celu po prostu wyeksportuj spersonalizowaną stronę. Następnie możesz poprosić innych użytkowników, aby przeszli do spersonalizowanej strony i zaimportowali utworzony przez Ciebie plik personalizacji.
 
 Użytkownicy posiadający uprawnienia administratora mogą też zarządzać personalizacjami dla innych użytkowników na stronie **Personalizacja**. Ta strona zawiera cztery karty: **System**, **Użytkownicy**, **Import** i **Wyczyść**.

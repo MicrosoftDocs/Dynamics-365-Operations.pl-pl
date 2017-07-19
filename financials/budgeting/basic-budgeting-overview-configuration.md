@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,19 +23,16 @@ ms.openlocfilehash: f35db274a6b14f6bae185b69348d3829c77801b5
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Omówienie budżetu 
-<a id="budgeting-overview" class="xliff"></a>
+# <a name="budgeting-overview"></a>Omówienie budżetu 
 
 [!include[banner](../includes/banner.md)]
 
 
 Prawie każda firma, która używa funkcji finansowych w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations lub ich wczytywania z innych programów.
 
-Przegląd
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Przegląd
 --------
 
 Zatwierdzony budżet dla firmy jest przechowywany w dokumencie pod nazwą *wpisu do rejestru budżetu*. Wiersze dokumentu wpisu rejestru budżetu są nazywane zapisami *konta budżetu* i zawierają informacje o wymiarach finansowych, datach i kwotach zatwierdzonego budżetu. Dokument z wpisami rejestru budżetu jest zintegrowany z podstawowymi raportami finansowymi oraz stronami zapytań, na których porównywane są rzeczywiste kwoty w księgach z kwotami ustalonymi w budżecie. 
@@ -48,8 +46,7 @@ Istnieje wiele metod tworzenia wpisów do rejestru budżetu w programie Finance 
 
 Wpis do rejestru budżetu jest uważany za zakończony, gdy salda budżetu zostaną zaktualizowane. Na stronie **Wpisy do rejestru budżetu** kliknij przycisk **Aktualizuj salda budżetu** dla wybranego wpisu do rejestru budżetu lub dla wielu wpisów. Po zaktualizowaniu sald budżetu stan wpisu do rejestru budżetu zmienia się na **Zakończono**. Zakończonego wpisu do rejestru budżetu nie można ponownie otworzyć w celu edycji. Dlatego w przypadku konieczności skorygowania danych budżetu należy utworzyć nowy wpis do rejestru budżetu, a nie poprawiać dane w zakończonym wpisie.
 
-## Konfiguracja
-<a id="configuration" class="xliff"></a>
+## <a name="configuration"></a>Konfiguracja
 Konfigurowanie budżetowania należy rozpocząć na stronie **Parametry budżetowania**. Na tej stronie należy utworzyć Arkusz budżetu, liczbę sekwencji dla wpisów do rejestru budżetu oraz domyślne zachowanie w obszarach roboczych.
 
 Następnie, jeśli są zasady kierujące zatwierdzaniem wpisów do rejestru budżetu, w zależności o typu budżetu (np. przeniesienia lub korekty), należy utworzyć przepływy pracy wpisów do rejestru budżetu na stronie **przepływów pracy budżetowania**. Jeśli istnieją scenariusze, w których mogą występować przeniesienia bez konieczności zatwierdzania przepływów pracy, można zdefiniować reguły przeniesienia budżetu do obsługi tych scenariuszy. 
@@ -74,8 +71,7 @@ Kody budżetu pozwalają prowadzić dziennik inspekcji modyfikacji zatwierdzoneg
 
 Można też dodatkowo skonfigurować *reguły przeniesienia budżetu*. Aby zastosować reguły przeniesienia budżetu, wybierz opcję **Użyj reguł dla przeniesień budżetu** na stronie **Parametry budżetu**. Gdy reguły przeniesienia budżetu są używane, jeśli użytkownik tworzy dokument za pomocą kodu budżetu typu **Przeniesienie**, salda budżetu nie będą aktualizowane w przypadku naruszenia reguł przeniesienia budżetu. Na przykład można zezwolić na korzystanie z dokumentów przeniesienia, w których budżet wydatków jest przenoszony między głównymi kontami w dziale sprzedaży i marketingu, ale można zablokować przenoszenie budżetu z lub do tego działu do momentu zatwierdzenia przepływu pracy dla tego typu wpisu do rejestru budżetu.
 
-## Korzystanie z obszarów roboczych i stron zapytania do śledzenia budżetu i wartości rzeczywistych
-<a id="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals" class="xliff"></a>
+## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Korzystanie z obszarów roboczych i stron zapytania do śledzenia budżetu i wartości rzeczywistych
 Menedżer budżetu może sprawdzić bieżący stan budżetu w obszarze roboczym **Budżety i prognozy księgi**. Karty **Wydatki przekraczające budżet** i **Przychody poniżej budżetu** zawierają szybki widok kombinacji wymiaru finansowego, gdzie cele budżetu nie zostały osiągnięte lub zbliżają się do progu. Można dostosować wartość procentowa progu budżetu i zestawy wymiarów finansowych, które są używane na tych kartach, klikając **Konfiguruj mój obszar roboczy**. Można kliknąć opcję **Menedżerowie jednostki**, aby wyświetlić pracowników odpowiedzialnych za określone kombinacje wymiarów finansowych wybrane na tych kartach. Na przykład, jeśli zobaczysz, że budżet wydatków działu operacji przekracza próg, możesz łatwo znaleźć menedżera działu operacji i skontaktować się z nim w celu omówienia problemu. 
 
 > [!NOTE] 

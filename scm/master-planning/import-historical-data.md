@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.author: roxanad
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -21,11 +22,9 @@ ms.openlocfilehash: 957626a283b750645adefa5176480e68cc27e4f1
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Importowanie danych historycznych dla prognoz popytu
-<a id="import-historical-data-for-demand-forecasts" class="xliff"></a>
+# <a name="import-historical-data-for-demand-forecasts"></a>Importowanie danych historycznych dla prognoz popytu
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,8 +39,7 @@ W obszarze roboczym **Zarządzanie danymi** można wyświetlić przegląd wszyst
 
 Aby użyć jednostki danych, musisz mieć plik programu Microsoft Excel lub plik wartości rozdzielanych przecinkami (CSV) zawierający dane historyczne popytu. Poniższy przykład pokazuje, jak przeprowadzić import danych z pliku CSV.
 
-## Przykład
-<a id="example" class="xliff"></a>
+## <a name="example"></a>Przykład
 
 Można użyć następującego pliku jako przykładowego. Pobierz [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast). Ten plik zawiera historyczne dane dotyczące popytu dla pozycji D0001. Zawiera on tylko następujące wymagane pola: oddział, ilość i data zapotrzebowania.
 
@@ -57,8 +55,7 @@ Można użyć następującego pliku jako przykładowego. Pobierz [HistoricalDema
 
 Po zaimportowaniu historycznych danych popytu można generować prognozy popytu.
 
-## Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Informacje dodatkowe
 
 [Generowanie bazowej prognozy statystycznej](generate-statistical-baseline-forecast.md)
 

@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMDimensionMember
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223174
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,11 +25,9 @@ ms.openlocfilehash: 74a3033ffbdba2efc6c5ecd6c55019898751a146
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Podstawy alokacji
-<a id="allocation-bases" class="xliff"></a> 
+# <a name="allocation-bases"></a>Podstawy alokacji 
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,8 +39,7 @@ Istnieją trzy typy podstaw alokacji w rachunku kosztów:
 - Podstawy alokacji hierarchii
 - Podstawy alokacji formuły
 
-## Podstawy alokacji wstępnie zdefiniowanych elementów członkowskich wymiarów
-<a id="predefined-dimension-member-allocation-bases" class="xliff"></a>
+## <a name="predefined-dimension-member-allocation-bases"></a>Podstawy alokacji wstępnie zdefiniowanych elementów członkowskich wymiarów
 
 Wstępnie zdefiniowane podstawy alokacji elementów członkowskich wymiarów są tworzone automatycznie podczas tworzenia elementów członkowskich wymiarów o jednym z następujących typów:
 
@@ -51,8 +49,7 @@ Wstępnie zdefiniowane podstawy alokacji elementów członkowskich wymiarów są
 > [!NOTE]
 > Wstępnie zdefiniowane podstawy alokacji elementów członkowskich wymiarów oparte na elemencie członkowskim wymiaru składnika kosztów uwzględniają wartości tylko z dostawcy źródła danych, takiego jak księga główna lub budżet.
 
-### Przykład 1: Używanie elementu członkowskiego wymiaru składnika kosztu jako podstawy alokacji
-<a id="example-1-use-a-cost-element-dimension-member-as-the-allocation-base" class="xliff"></a>
+### <a name="example-1-use-a-cost-element-dimension-member-as-the-allocation-base"></a>Przykład 1: Używanie elementu członkowskiego wymiaru składnika kosztu jako podstawy alokacji
 W tym przykładzie pokazano, jak utworzyć regułę alokacji kosztów w celu przydzielania składnika kosztu 10002 (Ubezpieczenia pracowników) do salda rejestrowanego w składniku kosztu 10001 (Wynagrodzenia). Reguła alokacji jest definiowana na podstawie stosunku wynagrodzeń w poszczególnych działach firmy do sumy wynagrodzeń. (Potrzeba weryfikacja!)
 
 W księdze głównej plan kont jest zdefiniowany w następujący sposób.
@@ -140,8 +137,7 @@ Po zastosowaniu składnika kosztu 10001 (Wynagrodzenia) jako podstawy alokacji k
 | CC002       | FI                  | 10002        | Ubezpieczenia pracowników | Niesklasyfikowane  | 500.00    | 31-01-2017      |
 | CC099       | MM                  | 10002        | Ubezpieczenia pracowników | Niesklasyfikowane  | 300,00    | 31-01-2017      |
 
-### Przykład 2: Używanie elementu członkowskiego wymiaru statystycznego jako podstawy alokacji
-<a id="example-2-use-a-statistical-dimension-member-as-the-allocation-base" class="xliff"></a>
+### <a name="example-2-use-a-statistical-dimension-member-as-the-allocation-base"></a>Przykład 2: Używanie elementu członkowskiego wymiaru statystycznego jako podstawy alokacji
 
 Elementy członkowskie wymiaru statystycznego mogą służyć jako podstawy alokacji w celu definiowania zasad lub raportowania zużycia niepieniężnego z podziałem na obiekty kosztów. Można ręcznie utworzyć elementy członkowskie wymiaru statystycznego lub zaimportować je z pliku przy użyciu narzędzia importu/eksportu Zarządzanie danymi.
 
@@ -234,13 +230,11 @@ Oto przykład reguły dystrybucji kosztów, gdy jako podstawę alokacji ma przyp
 | CC002       | FI   | 4,100.00  | (4100 ÷ 21 550) × kwota  |
 | CC003       | MM   | 15,000.00 | (15 000 ÷ 21 550) × kwota |
 
-## Podstawy alokacji hierarchii
-<a id="hierarchy-allocation-bases" class="xliff"></a>
+## <a name="hierarchy-allocation-bases"></a>Podstawy alokacji hierarchii
 
 Księgowi kosztów mogą ręcznie utworzyć podstawy alokacji hierarchii poprzez zastosowanie węzła hierarchii wymiarów obiektu kosztów do istniejącej podstawy alokacji. W ten sposób można ograniczyć zakres pierwotnej wstępnie zdefiniowanej podstawy alokacji elementu członkowskiego wymiaru. Jedna wstępnie zdefiniowana podstawa alokacji elementu członkowskiego wymiaru może służyć do tworzenia kilku podstaw alokacji w hierarchii. Zakresy mogą być prowadzone w hierarchii wymiarów obiektów kosztów skojarzonej z podstawami alokacji hierarchii.
 
-### Przykład: Podstawy alokacji hierarchii oparte na pracownikach pełnoetatowych w organizacji
-<a id="example-hierarchy-allocation-bases-that-are-based-on-full-time-employees-in-the-organization" class="xliff"></a>
+### <a name="example-hierarchy-allocation-bases-that-are-based-on-full-time-employees-in-the-organization"></a>Przykład: Podstawy alokacji hierarchii oparte na pracownikach pełnoetatowych w organizacji
 Poniżej przedstawiono przykład hierarchii wymiarów obiektów kosztów, które można utworzyć w celu opisania uproszczonej organizacji.
 
 | Nazwa hierarchii | Poziom węzła 0 | Poziom węzła 1 | Poziom węzła 2 | Elementy członkowskie wymiaru |
@@ -283,8 +277,7 @@ Oto przykład reguły dystrybucji kosztów, gdy jako podstawę alokacji ma przyp
 | CC001       | Zasoby ludzkie   | 1.00      | (1/3) × kwota    |
 | CC002       | FI   | 2.00      | (2/3) × kwota    |
 
-## Podstawy alokacji formuły
-<a id="formula-allocation-bases" class="xliff"></a>
+## <a name="formula-allocation-bases"></a>Podstawy alokacji formuły
 
 Podstawy alokacji formuły umożliwiają definiowanie zaawansowanych formuł w celu osiągnięcia poprawnej podstawy alokacji. Można ręcznie tworzyć podstawy alokacji formuły.
 
@@ -313,8 +306,7 @@ Tradycyjne instrukcje **IF** nie są obsługiwane. Można jednak tworzyć instru
 | a \> b    | Prawda       | 1      |
 | a \> b    | Fałsz      | 0      |
 
-### Przykład 1: Prosta formuła
-<a id="example-1-a-simple-formula" class="xliff"></a>
+### <a name="example-1-a-simple-formula"></a>Przykład 1: Prosta formuła
 
 Rachunki za energię elektryczną często składają się z dwóch części:
 
@@ -379,8 +371,7 @@ Oto przykład reguły dystrybucji kosztów, gdy jako podstawę alokacji ma przyp
 | CC002       | FI   | 1.00      | (1/3) × kwota     |
 | CC003       | MM   | 1.00      | (1/3) × kwota     |
 
-### Przykład 2: Zaawansowana formuła
-<a id="example-2-an-advanced-formula" class="xliff"></a>
+### <a name="example-2-an-advanced-formula"></a>Przykład 2: Zaawansowana formuła
 W tym przykładzie koszt energii elektrycznej nie powinien jedynie odzwierciedlać faktycznego zużycia prądu w kWh. Kierownictwo chce dodać zachęty do obniżania zużycia energii elektrycznej. 
 
 | Reguła              | Kurs | 

@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerEliminationRule
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: robinr
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +24,9 @@ ms.openlocfilehash: 76af350f37109260a757ccc0b93908637d0579dc
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Reguły eliminacji
-<a id="elimination-rules" class="xliff"></a>
+# <a name="elimination-rules"></a>Reguły eliminacji
 
 [!include[banner](../includes/banner.md)]
 
@@ -123,8 +121,7 @@ W poniższej tabeli przedstawiono typy transakcji, które być może trzeba będ
 </tbody>
 </table>
 
-## Przykład
-<a id="example" class="xliff"></a>
+## <a name="example"></a>Przykład
 Twoja firma, czyli firma A, sprzedaje gadżety innej firmie w twojej organizacji, czyli firmie B. W poniższym przykładzie pokazano sposób, w jaki być może trzeba będzie wyeliminować transakcje między dwiema firmami:
 
 -   Firma A sprzedaje gadżet, który kosztuje 10,00, firmie B za 10,00.
@@ -134,8 +131,7 @@ Twoja firma, czyli firma A, sprzedaje gadżety innej firmie w twojej organizacji
 
 Wszystkie te transakcje tworzą transakcje międzyfirmowe, księgowane na kontach zobowiązań i należności. Ponadto w tych transakcjach mogą być uwzględniane kwoty podwyżek i obniżek, gdy kwota sprzedaży międzyfirmowej nie jest równa kosztowi sprzedanych towarów.
 
-## Konfigurowanie reguł eliminacji
-<a id="set-up-elimination-rules" class="xliff"></a>
+## <a name="set-up-elimination-rules"></a>Konfigurowanie reguł eliminacji
 Podczas konfigurowania reguł eliminacji w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition zalecamy utworzenie wymiaru finansowego specjalnie do celów eliminacji. Większość klientów nazywa ten wymiar Partner handlowy lub podobnie. Jeśli postanowisz nie używać wymiaru finansowego, to upewnij się, że masz konta główne przeznaczone tylko do transakcji międzyfirmowych. 
 
 Ta konfiguracja eliminacji znajduje się w obszarze Ustawienia w module Konsolidacje. Po wprowadzeniu opisu reguły trzeba wybrać firmę, w której arkusza eliminacji będzie księgowany. Powinna to być firma, która ma wybraną opcję **Użyj na potrzeby procesu eliminacji finansowej** w ustawieniach firmy. 
@@ -152,8 +148,7 @@ Specyfikacja wymiaru działa w ten sam sposób. Jeśli wybierzesz opcję **Źró
 
 Wybierz wymiary źródłowe i wymiary finansowe oraz wartości, które będą używane jako źródło eliminacji.
 
-## Przetwarzanie transakcje eliminacji
-<a id="process-elimination-transactions" class="xliff"></a>
+## <a name="process-elimination-transactions"></a>Przetwarzanie transakcje eliminacji
 Istnieją dwa sposoby przetwarzania transakcji eliminacji: w procesie konsolidacji online lub poprzez utworzenie arkusza eliminacji i uruchomienie procesu propozycji eliminacji. W tej sekcji skupiono się na tworzeniu arkusza i wykonywaniu procesu eliminacji. 
 
 W firmie zdefiniowanej jako firma eliminacji wybierz opcję **Arkusz eliminacji** w module Konsolidacje. Po wybraniu arkusza kliknij przycisk **Wiersze**. Propozycję można wygenerować, wybierając menu **Propozycje**, a następnie wybierając opcję **Propozycja eliminacji**.

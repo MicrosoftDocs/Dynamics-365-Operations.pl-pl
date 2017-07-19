@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: 
 ms.assetid: 
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
@@ -21,28 +22,23 @@ ms.openlocfilehash: 4011a2383fe4556b730fa0b6353ba0b9773a4eec
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/14/2017
 
-
 ---
 
-# Obszar roboczy płatności dla dostawców
-<a id="vendor-payments-workspace" class="xliff"></a>
+# <a name="vendor-payments-workspace"></a>Obszar roboczy płatności dla dostawców
 
 [!include[banner](../includes/banner.md)]
 
 Obszar roboczy **Płatności dla dostawców** zawiera informacje związane z przetwarzaniem płatności dla dostawców. Ten obszar roboczy zawiera widok **Moja praca** i stronę **Analizy**. Widok **Moja praca** zawiera kafelki podsumowań, siatki transakcji z dostawcami i informacje o odnośnych dostawcach. Strona **Analizy** wykorzystuje funkcje programu Microsoft Power BI, aby pokazywać wizualizacje dotyczące płatności dla dostawców.
 
-## Widok Moja praca
-<a id="my-work-view" class="xliff"></a>
+## <a name="my-work-view"></a>Widok Moja praca
 
-### Kafelki podsumowania
-<a id="summary-tiles" class="xliff"></a>
+### <a name="summary-tiles"></a>Kafelki podsumowania
 
 Kafelki w sekcji **Podsumowanie** pokazują całościowy stan informacji o płatności. Można wyświetlić arkusze płatności, które nie są jeszcze zaksięgowane, przeterminowane faktury, dane wszystkich dostawców oraz wstrzymanych dostawców. Z sekcji **Podsumowanie** można utworzyć nową sesję płatności.
 
 Informacje zawarte w sekcji **Podsumowanie** dotyczą firmy, do której użytkownik jest aktualnie zalogowany.
 
-### Siatki transakcji z dostawcami
-<a id="vendor-transactions-grids" class="xliff"></a>
+### <a name="vendor-transactions-grids"></a>Siatki transakcji z dostawcami
 
 Sekcja **Transakcje dostawcy** zawiera siatki pokazujące zaległe faktury i nierozliczone płatności. Z siatki **Zaległe faktury** można wyświetlić historię rozliczania wybranej faktury. Z siatki **Nierozliczone płatności** można wyświetlić historię rozliczania wybranej faktury i rozliczyć tę fakturę.
 
@@ -50,13 +46,11 @@ Pracownicy zajmujący się centralną obsługą płatności mogą za pomocą fil
 
 Karta **Znajdź transakcje** w sekcji **Transakcje dostawcy** pozwala wyszukiwać transakcje z dostawcami.
 
-### Informacje pokrewne
-<a id="related-information" class="xliff"></a>
+### <a name="related-information"></a>Informacje pokrewne
 
 Można wyświetlić raporty **Wiekowanie dostawców** i **Podsumowanie płatności na dzień** przy użyciu łączy w sekcji **Informacje pokrewne** w obszarze roboczym.
 
-## Strona Analizy
-<a id="analytics-page" class="xliff"></a>
+## <a name="analytics-page"></a>Strona Analizy
 
 Strona **Analizy** zawiera ważne mierniki, takie jak faktury od dostawców zaległe i należne w przyszłości. Ta strona zawiera dziewięć stron raportów. Jedna strona zawiera przegląd, a pozostałe osiem stron dostarczają szczegółowych informacji o miernikach płatności w module Rozrachunki z dostawcami.
 

@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94153
 ms.assetid: 33e98da7-01c1-4369-923d-aa1c8326cb80
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 205903bb68804a46414410c85eacce03c6df6fc7
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Fakturowanie międzyfirmowe
-<a id="intercompany-invoicing" class="xliff"></a>
+# <a name="intercompany-invoicing"></a>Fakturowanie międzyfirmowe
 
 [!include[banner](../includes/banner.md)]
 
@@ -53,8 +52,7 @@ Cel jest taki, aby operacje kontroli kosztów, rozpoznawania przychodów, podatk
     -   **Ilość poniżej ceny sprzedaży** — Część ceny sprzedaży, którą firma pożyczająca zatrzymuje u siebie, zanim przeniesie zasoby do firmy pożyczającej.
     -   **Współczynnik marży** — Liczba wprowadzona w polu **Ceny** jest współczynnikiem marży wyrażonym jako procent ceny sprzedaży.
 
-## Przykład 1: Konfigurowanie parametrów fakturowania międzyfirmowego
-<a id="example-1-set-up-parameters-for-intercompany-invoicing" class="xliff"></a>
+## <a name="example-1-set-up-parameters-for-intercompany-invoicing"></a>Przykład 1: Konfigurowanie parametrów fakturowania międzyfirmowego
 W tym przykładzie USSI jest firmą wypożyczającą, a jej pracownicy rozliczają swój do firmy pożyczającej FRSI, która jest właścicielem umowy z odbiorcą końcowym. Przepracowane godziny i wydatki zgłaszane przez pracowników USSI mogą być uwzględnione w fakturze za projekt wystawianej przez FRSI. Ponadto istnieje trzecie źródło transakcji. Mogą one pochodzić od firmy wypożyczającej (w tym przykładzie USSI), jeśli zapewnia ona usługi wspólne dla dostawców swoim przedsiębiorstwom zależnym (takiemu jak FRSI), a następnie przenosi te koszty do projektów w tych spółkach zależnych. Całe uzgadnianie dokumentów faktur i obliczanie podatków jest wykonywane w programie Finance and Operations. 
 
 W tym przykładzie FRSI musi być odbiorcą w firmie USSI, a USSI musi być dostawcą w firmie FRSI. Następnie można skonfigurować relację międzyfirmową między tymi dwoma firmami. Poniższa procedura pokazuje, jak skonfigurować parametry, aby obie firmy mogły uczestniczyć w fakturowaniu międzyfirmowym.
@@ -74,8 +72,7 @@ W tym przykładzie FRSI musi być odbiorcą w firmie USSI, a USSI musi być dost
 4.  Wybierz walutę, typ transakcji i model ceny transferowej. Walutą użytą na fakturze jest waluta skonfigurowana w rekordzie odbiorcy dla firmy pożyczającej w firmie wypożyczającej. Ta waluta służy do uzgadniania wpisów w tabeli cen transferowych.
 5.  Kliknij kolejno opcje **Księga główna** &gt; **Ustawienia księgowania** &gt; **Księgowanie międzyfirmowe**, a następnie zdefiniuj relację między firmami USSI i FRSI.
 
-## Przykład 2: Tworzenie i księgowanie międzyfirmowej karty czasu pracy
-<a id="example-2-create-and-post-an-intercompany-timesheet" class="xliff"></a>
+## <a name="example-2-create-and-post-an-intercompany-timesheet"></a>Przykład 2: Tworzenie i księgowanie międzyfirmowej karty czasu pracy
 USSI — firma wypożyczająca — musi utworzyć i zaksięgować kartę dla projektu realizowanego w FRSI, firmie pożyczającej. Istnieją dwa punkty wejścia dla etapów wymaganych w tym zadaniu.
 
 | Krok | Punkt wejścia                                                                       | opis                                                                                                                                                                                       |
@@ -83,8 +80,7 @@ USSI — firma wypożyczająca — musi utworzyć i zaksięgować kartę dla pro
 | A    | **Zarządzanie projektami i ich księgowanie** &gt; **Karty czasu pracy** &gt; **Wszystkie karty czasu pracy** | Utwórz nową kartę czasu pracy. W wierszu karty czasu pracy w polu **Firmy** zaznacz wartość **FRSI**. W polu **Identyfikator projektu** zaznacz projekt realizowany w firmie FRSI. Wprowadź liczbę godzin w każdym dniu tygodnia. |
 | mld    | Strona **Karta czasu pracy**                                                                | Po wykonaniu przepływu pracy zaksięguj kartę czasu pracy i zanotuj numer załącznika.                                                                                                               |
 
-## Przykład 3: Tworzenie i księgowanie międzyfirmowej faktury od dostawcy
-<a id="example-3-create-and-post-an-intercompany-vendor-invoice" class="xliff"></a>
+## <a name="example-3-create-and-post-an-intercompany-vendor-invoice"></a>Przykład 3: Tworzenie i księgowanie międzyfirmowej faktury od dostawcy
 USSI — firma wypożyczająca — musi utworzyć i zaksięgować międzyfirmową fakturę od dostawcy dla projektu realizowanego w FRSI, firmie pożyczającej. Ta faktura od dostawcy reprezentuje prace i koszty zlecone na zewnątrz, które wykonali/ponieśli dostawcy opłacani przez USSI. Istnieją dwa punkty wejścia dla etapów wymaganych w tym zadaniu.
 
 | Krok | Punkt wejścia                                                                                      | opis                                                                                                                                                                                                                                                                          |
@@ -92,8 +88,7 @@ USSI — firma wypożyczająca — musi utworzyć i zaksięgować międzyfirmow�
 | A    | **Rozrachunki z dostawcami** &gt; **Faktury** &gt; **Otwarte faktury dostawców** &gt; **Nowa faktura od dostawcy** | Utwórz nową fakturę od dostawcy i wprowadź usługi, które pozyskano na potrzeby projektu realizowanego w FRSI.                                                                                                                                                                                  |
 | mld    | Strona **Faktura od dostawcy**                                                                      | Wprowadź wiersze reprezentujące usługi zlecone na zewnątrz w imieniu FRSI. Na skróconej karcie **Szczegóły wiersza** na karcie **Projekt** dotyczącej wiersza faktury w polu **Firma projektu** wpisz **FRSI**. Wprowadź projekt i odpowiednie informacje. Następnie zaksięguj fakturę od dostawcy. |
 
-## Przykład 4: Tworzenie i księgowanie faktury międzyfirmowej
-<a id="example-4-create-and-post-the-intercompany-invoice" class="xliff"></a>
+## <a name="example-4-create-and-post-the-intercompany-invoice"></a>Przykład 4: Tworzenie i księgowanie faktury międzyfirmowej
 USSI — firma wypożyczająca — musi utworzyć i zaksięgować fakturę międzyfirmową. Istnieją dwa punkty wejścia dla etapów wymaganych w tym zadaniu.
 
 | Krok | Punkt wejścia                                                                                             | opis                                                                                                                                      |
@@ -104,8 +99,7 @@ USSI — firma wypożyczająca — musi utworzyć i zaksięgować fakturę międ
 | D    | Strona **Faktura międzyfirmowa**                                                                       | Zostanie wyświetlona propozycja międzyfirmowej faktury dla odbiorcy.                                                                                             |
 | E    | Strona **Faktura międzyfirmowa**                                                                       | Kliknij przycisk **Księguj**.                                                                                                                                  |
 
-## Przykład 5: Księgowanie faktury od dostawcy i fakturowanie odbiorcy
-<a id="example-5-post-the-vendor-invoice-and-invoice-the-customer" class="xliff"></a>
+## <a name="example-5-post-the-vendor-invoice-and-invoice-the-customer"></a>Przykład 5: Księgowanie faktury od dostawcy i fakturowanie odbiorcy
 Gdy firma wypożyczająca — USSI — księguje międzyfirmową fakturę dla odbiorcy, w firmie pożyczającej FRSI jest tworzona pasująca oczekująca faktura od dostawcy. Po zaksięgowaniu tej faktury od dostawcy firma FRSI fakturuje odbiorcę projektu za godziny wprowadzone przez USSI. Istnieją trzy punkty wejścia dla etapów wymaganych w tym zadaniu.
 
 | Krok | Punkt wejścia                                                                                        | opis                                                                                                             |

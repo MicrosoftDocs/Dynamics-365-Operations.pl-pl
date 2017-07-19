@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -20,11 +21,9 @@ ms.openlocfilehash: e5633d1db9593e2e0cb8bb4703de76766ab706b0
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Ostatnio wydane mobilne obszary robocze
-<a id="mobile-workspaces-recently-released" class="xliff"></a>
+# <a name="mobile-workspaces-recently-released"></a>Ostatnio wydane mobilne obszary robocze
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ W tym temacie wymieniono listę mobilnych obszarów roboczych, które niedawno w
 > Poprzednio aplikacja mobilnej nazywała się *Microsoft Dynamics 365 for Finance and Operations*.
 
 
-## Nowe mobilne obszary robocze wydane w czerwcu 2017 r.
-<a id="new-mobile-workspaces-released-in-june-2017" class="xliff"></a>
+## <a name="new-mobile-workspaces-released-in-june-2017"></a>Nowe mobilne obszary robocze wydane w czerwcu 2017 r.
 
 | Mobilny obszar roboczy     | opis   | Więcej informacji   |
 |----------------------|---------------|--------------|
@@ -45,23 +43,20 @@ W tym temacie wymieniono listę mobilnych obszarów roboczych, które niedawno w
 |Mój zespół| Umożliwia użytkownikom wyświetlanie informacji o bezpośrednich podwładnych i pracownikach na dalszych szczeblach podwładności, a także wysyłanie pochwał osobom w łańcuchach relacji służbowych.| [Mobilny obszar roboczy Mój zespół](manager-self-service-mobile-workspace.md)|     
 |Zatwierdzenia faktur| Wyświetla listę faktur, które zostały Ci przypisane przez proces przepływu pracy nagłówków faktur od dostawców.|[Mobilny obszar roboczy Zatwierdzenia faktur](invoice-approval-mobile-workspace.md)    |    
 
-## Nowe mobilne obszary robocze wydane w kwietniu 2017 r.
-<a id="new-mobile-workspaces-released-in-april-2017" class="xliff"></a>
+## <a name="new-mobile-workspaces-released-in-april-2017"></a>Nowe mobilne obszary robocze wydane w kwietniu 2017 r.
 
 | Mobilny obszar roboczy   | opis                                                                                                                                                                                                      | Więcej informacji                                                                                                      |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Zarządzanie wydatkami | Pozwala użytkownikom rejestrować i przekazywać paragony, dzięki czemu można je później dołączać do raportów z wydatków. Ponadto w tym mobilnym obszarze roboczym użytkownicy mogą szybko tworzyć wiersze wydatków za pomocą dołączonych paragonów. | [Mobilny obszar roboczy Zarządzanie wydatkami](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace) |
 | Zatwierdzenie zamówienia zakupu | Umożliwia użytkownikom wyświetlanie i reagowanie na zamówienia zakupu poprzez akcje takie jak zatwierdzenie lub odrzucenie. | [Mobilny obszar roboczy Zatwierdzenie zamówienia zakupu](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-mobile-workspace) |
 
-## Nowe mobilne obszary robocze wydane w marcu 2017 r.
-<a id="new-mobile-workspaces-released-in-march-2017" class="xliff"></a>
+## <a name="new-mobile-workspaces-released-in-march-2017"></a>Nowe mobilne obszary robocze wydane w marcu 2017 r.
 
 | Mobilny obszar roboczy   | opis                                                                                   | Więcej informacji                                                                                                                                                                              |
 |--------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wpis czasu projektu | Umożliwia użytkownikom wprowadzanie i zapisywanie czasu względem projektu za pomocą ich urządzeń przenośnych. | [Mobilny obszar roboczy Wprowadzanie czasu projektu](/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace) |
 
-## Nowe mobilne obszary robocze wydane w styczniu 2017 r.
-<a id="new-mobile-workspaces-released-in-january-2017" class="xliff"></a>
+## <a name="new-mobile-workspaces-released-in-january-2017"></a>Nowe mobilne obszary robocze wydane w styczniu 2017 r.
 
 | Mobilny obszar roboczy     | opis                                                                                                                                                                         | Więcej informacji                                                                                                                                                        |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,8 +65,7 @@ W tym temacie wymieniono listę mobilnych obszarów roboczych, które niedawno w
 | Zamówienia sprzedaży         | Pozwala użytkownikom być na bieżąco z zamówieniami sprzedaży w dowolnym miejscu i czasie.                                                                                                                          | [Mobilny obszar roboczy Zamówienia sprzedaży](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace)                 |
 | Portal współpracy z dostawcami | Pomaga Twoim dostawcom być na bieżąco z zamówieniami zakupu, które zostały im wysłane do zatwierdzenia. Mogą również wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych. | [Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
 
-## Nowa funkcjonalność mobilnych obszarów roboczych wydana w grudniu 2016 r.
-<a id="new-mobile-workspace-functionality-released-in-december-2016" class="xliff"></a>
+## <a name="new-mobile-workspace-functionality-released-in-december-2016"></a>Nowa funkcjonalność mobilnych obszarów roboczych wydana w grudniu 2016 r.
 
 | Mobilny obszar roboczy        | opis                                                                    | Więcej informacji                                                                                                            |
 |-------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|

@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 263934
 ms.assetid: 38e6827b-0819-473c-bc47-821a1ec482b8
 ms.search.region: Global
 ms.author: jcart
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,22 +23,18 @@ ms.openlocfilehash: 49cfd0f1ed645f1980b21b6d4f453cb7a8957a1a
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Pakiet zawartości usługi Power BI Rekrutacja
-<a id="recruiting-power-bi-content" class="xliff"></a>
+# <a name="recruiting-power-bi-content"></a>Pakiet zawartości usługi Power BI Rekrutacja
 
 [!include[banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartość **Rekrutacja** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
-## Przechodzenie do pakietu zawartości usługi Power BI
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r., pakiet zawartości usługi Power BI **Rekrutacja** jest wyświetlany w obszarze roboczym **Zarządzanie rekrutacją** . 
 
-## Raporty i wizualizacje w obszarze roboczym Zarządzanie rekrutacją
-<a id="reports-and-visuals-in-the-recruitment-management-workspace" class="xliff"></a>
+## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>Raporty i wizualizacje w obszarze roboczym Zarządzanie rekrutacją
 Obszar roboczy **Zarządzanie rekrutacją** zawiera kartę **Analizy**. Na tej karcie znajduje się osadzony pakiet zawartości usługi Power BI dotyczący rekrutacji. Pakiet składa się z karty przeglądu oraz dodatkowych kart z informacjami szczegółowymi. W poniższej tabeli opisano raporty dostępne na każdej karcie.
 
 | Raport               | Zawartość |
@@ -47,8 +44,7 @@ Obszar roboczy **Zarządzanie rekrutacją** zawiera kartę **Analizy**. Na tej k
 | Stan kandydata     | Kandydaci według typu i stanu, stan kandydata |
 | Analiza rekrutacji  | Współczynnik zatrudnienia netto, średnia liczba dni do zatrudnienia, procent nietrafionych zatrudnień, koszty rekrutacji, liczba projektów rekrutacji, liczba zatrudnionych kandydatów do liczby zgłoszeń oraz liczba kandydatów do liczby wakatów według projektów rekrutacji |
 
-## Opis modelu danych i jednostek
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 W poniższej tabeli przedstawiono jednostki, na których bazuje pakiet zawartości **Rekrutacja** dostępny dla usługi Power BI.

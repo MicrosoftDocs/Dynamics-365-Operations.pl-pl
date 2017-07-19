@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: bis
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -21,11 +22,9 @@ ms.openlocfilehash: c5340f4dacd743600ef955c8d5228d1e2d2d2fa9
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Potwierdzenie pobrania sztuk
-<a id="piece-picking-confirmation" class="xliff"></a>
+# <a name="piece-picking-confirmation"></a>Potwierdzenie pobrania sztuk
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,13 +34,11 @@ Włączenie funkcji pobrania sztuk powoduje automatyczne zaznaczenie opcji Potwi
 
 Można również użyć ilości i jednostki miary (JM) skojarzonej z zeskanowanym kodem kreskowym. Ta funkcjonalność będzie działać w przyjęciach w przepływach przychodzących, w tym przyjęciach spod mieszanych numerów identyfikacyjnych oraz towarów z zamówień zakupu, zamówienia przeniesienia i ładunków. Działa także dla pobrań sztuk, gdzie zeskanowanie kodu kreskowego powoduje dodanie ilości do łącznej liczby potwierdzonych sztuk konwertowanych między jednostką miary kodu kreskowego a jednostką roboczą. Jeśli podczas zliczania w jednostce miary kodu kreskowego potwierdzi się, że ilość jest dozwolona dla inwentaryzacji w grupie sekwencji, ilość zostanie dodana do łącznej liczby.
 
-## Zastosowanie
-<a id="where-it-applies" class="xliff"></a>
+## <a name="where-it-applies"></a>Zastosowanie
 
 Pobranie sztuk działa dla wszystkich prac inwentaryzacji oraz dla pierwszego pobrania w każdym typie pracy. Pobranie sztuk nie ma zastosowania, gdy towar jest kontrolowany przez numery seryjne lub gdy jest pobraniem do produkcji lub karty Kanban z lokalizacji oznaczonej numerem identyfikacyjnym, a ma ustawiony atrybut lokalizacji tymczasowej.
 
-## Konfigurowanie funkcji pobrania sztuk
-<a id="set-up-piece-picking" class="xliff"></a>
+## <a name="set-up-piece-picking"></a>Konfigurowanie funkcji pobrania sztuk
 
 1.  Na urządzeniu przenośnym w menu otwórz formularz ustawień potwierdzenia pracy: Zarządzanie magazynem > **Zarządzanie magazynem** > **Ustawienia** > **Urządzenie przenośne** > **Elementy menu urządzenia przenośnego**. 
 2. Na urządzeniu przenośnym w menu otwórz pozycję Konfiguracja potwierdzenia pracy.

@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
 ms.author: mafoge
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: fa629b4b8f7fcbd15ee89bc66cbc0bd7ca45215c
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Arkusze magazynowe
-<a id="inventory-journals" class="xliff"></a>
+# <a name="inventory-journals"></a>Arkusze magazynowe
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +37,7 @@ W tym artykule opisano, jak używać arkuszy magazynowych do księgowania różn
 
 Arkusze magazynowe w programie Microsoft Dynamics 365 for Finance and Operations są używane do księgowania różnych typów transakcji na fizycznych zapasach, np. do księgowania wydań i przyjęć, przesunięć magazynowych, tworzenia list składowych BOM i uzgadniania zapasów fizycznych. Wszystkie arkusze magazynowe są używane w sposób podobny, ale są one podzielone na różne typy.
 
-## Typy arkuszy magazynowych
-<a id="types-of-inventory-journals" class="xliff"></a>
+## <a name="types-of-inventory-journals"></a>Typy arkuszy magazynowych
 Dostępne są następujące typy arkuszy magazynowych:
 
 -   Przesunięcie
@@ -51,46 +49,38 @@ Dostępne są następujące typy arkuszy magazynowych:
 -   Inwentaryzacja
 -   Zliczanie znaczników
 
-### Przesunięcie
-<a id="movement" class="xliff"></a>
+### <a name="movement"></a>Przesunięcie
 
 Używając arkusza przesunięcia magazynowego, koszt można dodać do towaru po dodaniu zapasów, jednak można ręcznie przydzielić koszt dodatkowy do konta księgi głównej poprzez określenie konta przeciwstawnego księgi głównej podczas tworzenia arkusza. Ten typ arkusza magazynowego przydaje się do wydatkowania pozycji w innym dziale, jeśli chcesz usunąć pozycję z magazynu na cele wydatków.
 
-### Korekta zapasów
-<a id="inventory-adjustment" class="xliff"></a>
+### <a name="inventory-adjustment"></a>Korekta zapasów
 
 W przypadku korzystania z arkusza korekt zapasów koszt można dodać do towaru po dodaniu zapasów. Koszt dodatkowy jest automatycznie księgowany na koncie określonej księgi głównej, na podstawie ustawień profili księgowania grup towarów. Ten typ arkusza magazynowego umożliwia aktualizowanie zysków i strat do ilości zapasów, gdy towar ma zachować jego domyślne konto przeciwstawne księgi głównej. Podczas księgowania arkusza korekt zapasów księgowane jest przyjęcie na magazyn lub rozchód z magazynu, zmieniane są wartości zapasów i tworzone są transakcje księgi.
 
-### Przenieś
-<a id="transfer" class="xliff"></a>
+### <a name="transfer"></a>Przenieś
 
 Arkusz przeniesienia służy do przenoszenia towarów między lokalizacjami składowania, partiami lub wariantami produktów bez kojarzenia efektów kosztowych. Na przykład można przenosić elementy z jednego magazynu do innego magazynu w obrębie tej samej firmy. W przypadku korzystania z arkusza przeniesienia, należy określić wymiary magazynowe „od” i „do” (na przykład dla oddziału i magazynu). Dostępne zapasy zdefiniowanego wymiaru magazynowego są odpowiednio zmieniane. Przeniesienia zapasów odzwierciedlają natychmiastowe przeniesienie materiału. Zapasy w tranzycie nie są śledzone. Jeśli konieczne jest śledzenie zapasów w tranzycie, należy skorzystać z zamówienia przeniesienia. Przy księgowaniu arkusza przeniesienia tworzone są dwie transakcje magazynowe dla każdego wiersza arkusza:
 
 -   Wydanie z magazynu w lokalizacji "od"
 -   Przyjęcie na magazyn w lokalizacji "do"
 
-### lista BOM
-<a id="bom" class="xliff"></a>
+### <a name="bom"></a>lista BOM
 
 Podczas zgłaszania BOM jako gotowych można utworzyć arkusz BOM. Przy użyciu arkusza BOM, można księgować bezpośrednio BOM. To księgowanie generuje przyjęcie produktu na magazyn wraz z powiązanym BOM i wydaniem z magazynu produktów uwzględnionych w BOM. Ten typ arkusza magazynowego jest przydatny w sytuacjach dużej produkcji, gdzie marszruty nie są wymagane.
 
-### Przyjęcie pozycji
-<a id="item-arrival" class="xliff"></a>
+### <a name="item-arrival"></a>Przyjęcie pozycji
 
 Arkusz przyjęcia towaru służy do rejestrowania przyjęć towarów (na przykład z zamówienia zakupu). Arkusz przyjęcia towaru można utworzyć w ramach zarządzania przyjęciem na stronie **Przegląd przyjęć** lub można ręcznie utworzyć wpis dziennika na stronie **przyjęcia towaru**. Jeśli w arkuszu przyjęcia towaru włączysz opcję sprawdzania lokalizacji pobrania, program Finance and Operations szuka lokalizacji dla przyjmowanych towarów i jeśli znajdzie miejsce, generuje docelowe lokalizacje dla nadchodzących towarów.
 
-### Przyjęcie z produkcji
-<a id="production-input" class="xliff"></a>
+### <a name="production-input"></a>Przyjęcie z produkcji
 
 Arkusz przyjęcia z produkcji działa jak arkusz przyjęcia towaru, ale jest używany w przypadku zleceń produkcyjnych.
 
-### Inwentaryzacja
-<a id="counting" class="xliff"></a>
+### <a name="counting"></a>Inwentaryzacja
 
 Arkusze zliczania pozwalają poprawić bieżącą ilość dostępnych zapasów zarejestrowaną dla towarów lub grup towarów. Następnie można zaksięgować rzeczywistą fizyczna ilość, tak aby wprowadzić korekty wymagane do uzgadniania różnic. Zasady obliczania można skojarzyć z grupami inwentaryzacji, co ułatwia grupowanie towarów o różnych właściwościach, dzięki czemu pozycje można uwzględnić w arkuszu zliczania. Na przykład można ustawić grupy inwentaryzacji, tak aby zliczały pozycje o określonej częstotliwości lub obliczały towar, gdy zapasy spadną do określonego poziomu. Aby uzyskać informacje o definiowaniu grup inwentaryzacji, zobacz [Definiowanie procesów inwentaryzacji zapasów (przewodnik po zadaniu)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
 
-### Zliczanie znaczników
-<a id="tag-counting" class="xliff"></a>
+### <a name="tag-counting"></a>Zliczanie znaczników
 
 Arkusze zliczania służą do przypisywania numerowanego znacznika do zliczonej partii. Znacznik powinien zawierać numer, numer pozycji i ilość towaru. Aby zagwarantować, że znacznik jest używany tylko jeden raz i, że wszystkie znaczniki są używane, numer każdego towaru powinien mieć niepowtarzalny zestaw znaczników z własną sekwencją numerów. Dla każdego znacznika można ustawić trzy wartości stanu:
 
@@ -100,12 +90,10 @@ Arkusze zliczania służą do przypisywania numerowanego znacznika do zliczonej 
 
 Po zaksięgowaniu arkusza zliczania znaczników na podstawie jego wierszy jest tworzony nowy arkusz zliczania. Aby uzyskać więcej informacji na temat zliczania znaczników, zobacz [Zliczanie znaczników zapasów](inventory-tag-counting.md).
 
-## Praca z arkuszami
-<a id="working-with-journals" class="xliff"></a>
+## <a name="working-with-journals"></a>Praca z arkuszami
 Tylko jeden użytkownik może mieć w danej chwili dostęp do określonego arkusza. Jeśli kilku użytkowników musi mieć dostęp do arkuszy w tym samym czasie do tworzenia wierszy arkusza, użytkownicy muszą zaznaczyć arkusze, które nie są aktualnie używane, aby uniknąć nadpisania danych. W sytuacji, w której wiele działów używa tego samego typu arkusza warto utworzyć wiele nazw arkusza (na przykład jeden na dział). Można także podzielić arkusze tak, że każda procedura księgowania będzie wprowadzana we własnym unikatowym arkuszu magazynowym. Dla procedur księgowania powiązanych z transakcjami magazynowymi należy utworzyć jeden arkusz do okresowych korekt zasobów i jeden do zliczania zasobów.
 
-## Wiersze arkusza księgowania
-<a id="posting-journal-lines" class="xliff"></a>
+## <a name="posting-journal-lines"></a>Wiersze arkusza księgowania
 Można księgować wiersze arkusza, które można utworzyć w dowolnym momencie, dopóki towar nie zostanie zablokowany z innych transakcji. Wpisane w arkuszu dane pozostają w arkuszu nawet po zamknięciu go bez księgowania wierszy arkusza.
 
 

@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
@@ -23,11 +24,9 @@ ms.openlocfilehash: a8284e5a79e00def964b41f5c20bbb7377bf36be
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/09/2017
 
-
 ---
 
-# Współpraca z dostawcami za pomocą portalu dostawców
-<a id="collaborate-with-vendors-by-using-the-vendor-portal" class="xliff"></a>
+# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Współpraca z dostawcami za pomocą portalu dostawców
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,8 +39,7 @@ Portal dostawców jest przeznaczony dla dostawców, którzy nie posiadają inter
 
 Proces można skonfigurować tak, aby potwierdzenie od dostawcy automatycznie potwierdzało zamówienie. W takim przypadku wykonanie kolejnych kroków jest konieczne tylko od czasu do czasu, gdy zamówienie zostanie odrzucone lub potwierdzenie dostawcy jest zarejestrowane jako odpowiedź, ale stan zamówienia zakupu nie został zaktualizowany na **Potwierdzone** z powodu błędu w procesie potwierdzania.
 
-## Potwierdzanie i odrzucanie zamówienia zakupu
-<a id="po-confirmation-and-rejection" class="xliff"></a>
+## <a name="po-confirmation-and-rejection"></a>Potwierdzanie i odrzucanie zamówienia zakupu
 Zamówienia zakupu są przygotowywane w systemie Dynamics AX. Jeśli masz zamówienia zakupu o stanie **Zatwierdzone**, wysyłasz je do dostawcy poprzez wygenerowanie żądania potwierdzenia. Jeśli chcesz zwrócić uwagę dostawcy na nowe zamówienie zakupu, możesz je wysłać e-mailem z systemu zarządzania drukowaniem. Zamówienie zakupu pojawi się w portalu dostawców i zawiera opcję pozwalającą dostawcy je potwierdzić lub odrzucić. Dostawca może również dodać komentarze w celu przekazania informacji, np. o zmianach w zamówieniu zakupu.  
 
 W portalu dostawców dostawca widzi wiersze zamówienia. Wiersze te zawierają informacje takie jak zewnętrzny numer produktu, wymiary, ceny, ilość, data dostawy i adres dostawy. Dostawa może wygenerować raport pokazujący informacje o zamówieniu zakupu oraz łączną cenę. Opłaty ponoszone przez dostawcę są wyświetlane, gdy dostawca kliknie przycisk **Opłaty** w nagłówku lub w wierszach. Dostawca może zaimportować informacje o zamówieniu zakupu do własnego systemu przy użyciu funkcji **Eksportuj do programu Excel**.  
@@ -54,14 +52,12 @@ W poniższej tabeli przedstawiono typową wymianę informacji, zależną od odpo
 | Dostawca potwierdził zamówienie. W systemie nie skonfigurowano automatycznego potwierdzania zamówień zakupu po ich potwierdzeniu przez dostawców. | Odpowiedź dostawcy zostanie zarejestrowana jako **Potwierdzone**, ale zamówienie zakupu będzie nadal miało stan **W trakcie analizy zewnętrznej**.                                                                                                                                                                                      |
 | Dostawca odrzucił zamówienie.                                                                                     | Odpowiedź dostawcy zostanie zarejestrowana jako **Odrzucone**, a zamówienie zakupu będzie nadal miało stan **W trakcie analizy zewnętrznej**. Odrzucenie jest odbierane wraz z przyczyną i propozycją zmiany, na przykład na inną datę dostawy. Aktualizujesz zamówienia zakupu, a następnie wysyłasz nową wersję do potwierdzenia. |
 
-## Zmiany w zamówieniu zakupu
-<a id="changes-to-a-po" class="xliff"></a>
+## <a name="changes-to-a-po"></a>Zmiany w zamówieniu zakupu
 Kiedy trzeba zmienić zamówienie zakupu, które zostało już potwierdzone, można wysłać do dostawcy nowe zamówienie zakupu w portalu. Nowe zamówienie będzie miało sufiks wersji wskazujący, że jest to zmodyfikowana wersja zamówienia zakupu, które zostało wcześniej przekazane. Portal dostawców umożliwia dostawcom śledzenie historii każdego zamówienia. Poprzednio potwierdzona wersja zamówienia zakupu pozostanie na liście potwierdzonych zamówień zakupu do czasu potwierdzenia nowego zamówienia zakupu.  
 
 Po anulowaniu zamówienia zakupu jego stan zmienia się z powrotem na **Zatwierdzone**. Zamówienie zakupu trzeba odesłać dostawcy za pośrednictwem portalu, tak aby dostawca mógł potwierdzić lub odrzucić anulowanie. Po potwierdzeniu anulowania zamówienie zakupu pojawi się na liście potwierdzonych zamówień zakupu dostawcy jako **Anulowane**.
 
-## Wersje, zmiany stanu i zarządzanie zmianami
-<a id="versions-status-transitions-and-change-management" class="xliff"></a>
+## <a name="versions-status-transitions-and-change-management"></a>Wersje, zmiany stanu i zarządzanie zmianami
 Po wysłaniu zamówienia zakupu do dostawcy zostaje ono zarejestrowane w systemie jako określona wersja zamówienia zakupu, a jego stan zmienia się z **Zatwierdzone** na **W trakcie analizy zewnętrznej**. W przypadku późniejszego wprowadzenia zmian w zamówieniu zakupu zostanie utworzona nowa wersja zamówienia zakupu, a stan zmieni się z powrotem na **Zatwierdzone** (lub **Wersja robocza**, jeżeli została włączona opcja zarządzania zmianami).  
 
 W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może przechodzić zamówienie zakupu.
@@ -82,8 +78,7 @@ Dostawcy nie muszą potwierdzać zamówień zakupu w portalu dostawców. Zamiast
 
 **Uwaga:** Wersją zamówienia zakupu dostępną dla innych procesów w systemie Dynamics AX jest zawsze najnowsza wersja, nawet jeśli jeszcze nie została zarejestrowana.
 
-### Zarządzanie zmianami
-<a id="change-management" class="xliff"></a>
+### <a name="change-management"></a>Zarządzanie zmianami
 
 Jeśli dla zamówienia zakupu włączono funkcję zarządzania zmianami, zamówienie przejdzie przez przepływ pracy zatwierdzania aż do osiągnięcia stanu **Zatwierdzone**. Ten proces nie jest widoczny dla dostawcy.  
 
@@ -100,8 +95,7 @@ W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może p
 | Zamówienie zakupu jest wysyłane z powrotem do procesu zatwierdzania.                                                            | Stan zmienia się z **Wersja robocza** na **W trakcie przeglądu** i dalej na **Zatwierdzenie**, jeśli zamówienie zakupu nie zostanie odrzucone w procesie zatwierdzania. Alternatywnie można skonfigurować system w taki sposób, żeby modyfikacje w określonych polach nie wymagały ponownego zatwierdzania. W takim przypadku stan zmienia się najpierw na **Wersja robocza**, a następnie jest automatycznie aktualizowany do wartości **Zatwierdzone**. Zatwierdzone zamówienie zakupu jest rejestrowane jako nowa wersja. |
 | Wysyłasz nową wersję zamówienia zakupu do portalu dostawców.                                                      | Nowa wersja jest rejestrowana w portalu dostawców, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**.                                                                                                                                                                                                                                                                                    |
 | Dostawca zatwierdza nową wersję zamówienia zakupu.                                                                | Stan zmienia się na **Potwierdzone** automatycznie lub po otrzymaniu odpowiedzi od dostawcy i następnie ręcznym potwierdzeniu.                                                                                                                                                                                                                                                     |
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Konfiguracja zabezpieczeń dla użytkowników portalu współpracy z dostawcami](configure-security-vendor-portal-users.md)

@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72653
 ms.assetid: c5fa4b09-512d-4349-ac51-cc13da69a160
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 74d520199410711b80b750a12ee726633e09d01c
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Ustawianie prognozowania popytu
-<a id="demand-forecasting-setup" class="xliff"></a>
+# <a name="demand-forecasting-setup"></a>Ustawianie prognozowania popytu
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,24 +36,21 @@ W tym temacie opisano ustawienia zadania, które należy wykonać, by przygotowa
 
 Zadania konfiguracji obejmują konfigurowanie następujących parametrów i danych.
 
-## Klucz alokacji produktów
-<a id="item-allocation-key" class="xliff"></a>
+## <a name="item-allocation-key"></a>Klucz alokacji produktów
 Prognoza popytu jest obliczana dla towaru i jego wymiarów tylko wtedy, gdy towar jest częścią klucza alokacji towaru. Ta reguła zostaje wymuszona w celu pogrupowania dużej liczby towarów, tak aby można było szybciej utworzyć prognozy popytu. Procent klucza alokacji produktów jest ignorowany podczas generowania prognoz popytu. Prognozy są tworzone tylko na podstawie danych historycznych. 
 
 Towar i jego wymiary muszą być częścią tylko jednego klucza alokacji produktów, o ile klucz jest używany podczas tworzenia prognozy. 
 
 Aby dodać jednostkę magazynową do klucza alokacji produktów, przejdź do okna **Planowanie główne** &gt; **Ustawienia** &gt; **Prognozowania popytu** &gt; **Klucze alokacji produktu**. Na stronie **przypisywania towarów** przypisz produkty do klucza alokacji.
 
-## Grupy planowania międzyfirmowego
-<a id="intercompany-planning-groups" class="xliff"></a>
+## <a name="intercompany-planning-groups"></a>Grupy planowania międzyfirmowego
 Prognozowanie popytu generuje prognozy w obrębie firmy. W programie Microsoft Dynamics 365 for Finance and Operations, które są planowane razem, są grupowane w jednej grupie planowania międzyfirmowego. Aby określić dla każdej firmy, które klucze alokacji mają być brane pod uwagę przy prognozowaniu popytu, należy przypisać klucz alokacji produktów do członka grupy planowania międzyfirmowego, przechodząc do okna **Planowanie główne** &gt; **Ustawienia** &gt; **Grupy planowania międzyfirmowego**. 
 
 Domyślnie, jeśli do członków grupy planowania firmowego nie są przypisane klucze alokacji produktów, prognoza popytu jest obliczana dla wszystkich pozycji przypisanych do wszystkich kluczy alokacji z wszystkich firm w programie Finance and Operations. Dodatkowe opcje filtrowania dla firm i klucze alokacji produktów są dostępne na stronie **generowania bazowej prognozy statystycznej**. 
 
 Przejrzyj liczbę pozycji podlegających prognozie. Niepotrzebne pozycje mogą powodować zwiększenie kosztów, jeśli korzystasz z usługi uczenia maszynowego Microsoft Azure.
 
-## Parametry prognozowania popytu
-<a id="demand-forecasting-parameters" class="xliff"></a>
+## <a name="demand-forecasting-parameters"></a>Parametry prognozowania popytu
 Aby ustawić parametry prognozowania popytu, wybierz kolejno opcje **Planowanie główne** &gt; **Ustawienia** &gt; **Parametry prognozowania popytu**. Prognozowanie popytu jest uruchamiane w obrębie firmy, dlatego to ustawienie ma charakter globalny. Innymi słowy konfiguracja ma zastosowanie do wszystkich firm. 
 
 Prognozowanie popytu generuje prognozy w ilościach. W związku z tym w polu **Jednostka prognozy popytu** należy określić jednostki miary, w których mają być wyrażone ilości. Jednostka miary musi być unikatowa w celu zagwarantowania, że agregacja i rozdział procentowy mają sens. Aby uzyskać więcej informacji o agregacji i rozdziale procentowym, zobacz [Ręczne korekty prognozy bazowej](manual-adjustments-baseline-forecast.md). Dla każdej jednostki miary używanej dla jednostek SKU zawartych w prognozie popytu należy sprawdzić, czy istnieje reguła konwersji dla jednostki miary i ogólna jednostka miary prognozowania. Po uruchomieniu prognozy rejestrowana jest lista towarów, które nie mają konwersji jednostki miary, ułatwiając wprowadzenie korekty w ustawieniach. 
@@ -80,12 +76,10 @@ Aby wygenerować prognozę, program Finance and Operations używa sieciowej usł
 
 Aby utworzyć prognozy popytu, można wdrożyć własną usługę za pomocą platformy Machine Learning Studio lub eksperymentów prognozowania popytu dostępnych w programie Finance and Operations. Instrukcje wdrażania eksperymentów prognozowania popytu programu Finance and Operations jako usługi sieciowej są dostępne w programie Finance and Operations. Na stronie **Parametry prognozowania popytu** kliknij kartę **Uczenie maszynowe Azure**.
 
-## Ustawienia usługi uczenia maszynowego prognozy popytu w programie Finance and Operations
-<a id="settings-for-the-finance-and-operations-demand-forecasting-machine-learning-service" class="xliff"></a>
+## <a name="settings-for-the-finance-and-operations-demand-forecasting-machine-learning-service"></a>Ustawienia usługi uczenia maszynowego prognozy popytu w programie Finance and Operations
 Aby wyświetlić parametry, które można skonfigurować na potrzeby prognozowania usługi popytu w programie Finance and Operations, wybierz kolejno opcje **Planowanie główne** &gt; **Ustawienia** &gt; **Prognozowanie popytu** &gt; **Parametry algorytmu prognozowania**. Strona **Parametry algorytmu prognozowania** zawiera wartości domyślne parametrów. Można zastąpić te parametry na stronie **Parametry prognozowania popytu**. Na karcie **Ogólne** można zastąpi parametry globalnie lub użyć karty **Klucze alokacji produktów**, aby zastąpić te parametry według klucza alokacji produktów. Parametry, które są zastępowane dla klucza alokacji produktów mają wpływ tylko prognozę towarów, które są skojarzone z tym kluczem alokacji towaru.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Wprowadzenie do prognozowania popytu](introduction-demand-forecasting.md)

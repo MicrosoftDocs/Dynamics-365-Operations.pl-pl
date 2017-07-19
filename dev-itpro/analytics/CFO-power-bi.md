@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application user, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,21 +23,18 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Pakiet zawartości usługi Power BI Przegląd dla dyrektora finansowego
-<a id="cfo-overview-power-bi-content" class="xliff"></a>
+# <a name="cfo-overview-power-bi-content"></a>Pakiet zawartości usługi Power BI Przegląd dla dyrektora finansowego
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie opisano pakiet zawartość **Przegląd dla dyrektora finansowego** dostępny dla usługi Microsoft Power BI. 
 
-## Przechodzenie do pakietu zawartości usługi Power BI
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 
 Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r., raporty z pakietu zawartości usługi Power BI **Przegląd dla dyrektora finansowego** są wyświetlane w obszarze roboczym **Przegląd dla dyrektora finansowego** .
 
-## Raporty umieszczone w pakiecie zawartości usługi Power BI
-<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
 Pakiet zawartości usługi Power BI **Przegląd dla dyrektora finansowego** jest zbiorem raportów z różnych innych pakietów zawartości usługi Power BI, a także zawiera niektóre salda wartości rzeczywistych i zabudżetowanych z księgi głównej. W efekcie ten pakiet zawartości usługi Power BI oferuje dyrektorowi finansowemu (CFO) podgląd na całą organizację.
 
 W poniższej tabeli przedstawiono pakiety zawartości usługi Power BI, z których są kopiowane raporty, oraz raporty znajdujące się w obszarze roboczym **Przegląd dla dyrektora finansowego**. Znajdują się tu również łącza do dokumentacji różnych pakietów zawartości usługi Power BI.
@@ -49,8 +47,7 @@ W poniższej tabeli przedstawiono pakiety zawartości usługi Power BI, z który
 | [Zarządzanie kredytami i windykacją](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi) | <ul><li>Zaległości odbiorców</li><li>Odbiorcy przekraczający limit kredytu</li><li>Wiekowane salda</li></ul> |
 | [Analiza wydatków zakupowych](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi) | <ul><li>Zakupy wg miesięcy/dni</li><li>10 dostawców z najwyższymi zakupami</li><li>10 najczęściej kupowanych produktów</li></ul> |
 
-## Rozszerzanie funkcjonalności pakietu zawartości usługi Power BI
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Rozszerzanie funkcjonalności pakietu zawartości usługi Power BI
 Za pomocą pakietów zawartości dostępnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) można dostarczać zaawansowane funkcje analityczne osobom, które się nie logują w programie Microsoft Dynamics 365. Te pakiety zawartości można modyfikować, tak aby zawierały inne raporty lub wizualizacje, a następnie publikować je w swojej dzierżawie usługi Power BI.com na potrzeby wykonywania analiz.
 
 Pakiet zawartości usługi Power BI **Przegląd dla dyrektora finansowego** znajduje się w bibliotece zasobów wspólnych w usłudze LCS. Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).

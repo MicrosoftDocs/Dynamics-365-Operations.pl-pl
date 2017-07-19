@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations, Retail, UnifiedOperations
 ms.custom: 31541
 ms.assetid: 7a25f9b4-a0bb-4e8c-95c0-c0799ec0620d
 ms.search.region: Global
 ms.author: meeram
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -22,11 +23,9 @@ ms.openlocfilehash: 1191ad3180544a70668aef8dbdb4f0a3d8bfc937
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Konfigurowanie sklepu internetowego
-<a id="configure-an-online-store" class="xliff"></a>
+# <a name="configure-an-online-store"></a>Konfigurowanie sklepu internetowego
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,8 +33,7 @@ Ten artykuł zawiera łącza do tematów, które pomogą centralnie konfigurowa�
 
 Tematy wymienione w tabeli poniżej pomagają skonfigurować składniki modułu Handel detaliczny oraz detaliczny sklep internetowy na komputerze klienckim.
 
-## Konfigurowanie sklepu internetowego
-<a id="configure-an-online-store" class="xliff"></a>
+## <a name="configure-an-online-store"></a>Konfigurowanie sklepu internetowego
 | Zadanie                                                | Szczegóły                                                                                                                                                                                                                                                                                                                                                   | Tematy                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurowanie składników sieci sprzedaży                        | Konfigurowanie informacji operacji detalicznych i zarządzanie nimi. Informacje te dotyczą sklepów, podatków, produktów, kart upominkowych, promocji i rabatów.                                                                                                                                                                                                          | [Konfigurowanie i obsługiwanie modułu Handel detaliczny](https://technet.microsoft.com/en-us/library/hh597201.aspx) (materiał w serwisie TechNet dla systemu Microsoft Dynamics AX 2012)                                                                                                                                                                                                                                                                                          |
@@ -44,8 +42,7 @@ Tematy wymienione w tabeli poniżej pomagają skonfigurować składniki modułu 
 | Dodawanie metod dostawy do sklepu internetowego          | Wybór metod dostawy, które będą oferowane przez sklep internetowy.                                                                                                                                                                                                                                                                                                 | [Konfigurowanie sklepu internetowego](https://technet.microsoft.com/en-us/library/jj682095.aspx) (materiał w serwisie TechNet dla systemu AX 2012)                                                                                                                                                                                                                                                                                                     |
 | Mapowanie atrybutów i dodawanie metadanych                   | Wybór opcji wskazujących, jak atrybuty dla każdej kategorii lub kanału produktu powinny zachowywać się w sklepie internetowym w witrynie Microsoft SharePoint.                                                                                                                                                                                              | [Konfigurowanie sklepu internetowego](https://technet.microsoft.com/en-us/library/jj682095.aspx) (materiał w serwisie TechNet dla systemu AX 2012)                                                                                                                                                                                                                                                                                                     |
 
-## Konfigurowanie produktów sklepu internetowego
-<a id="configure-online-store-products" class="xliff"></a>
+## <a name="configure-online-store-products"></a>Konfigurowanie produktów sklepu internetowego
 | Zadanie                                 | Szczegóły                                                                                                                                           | Tematy                                                                                                                                                                                                                                                                            |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dodawanie asortymentów do sklepu internetowego | Dodawanie asortymentu zawierającego produkty oferowane w sklepie internetowym.                                                                  | [Konfigurowanie sklepu internetowego](https://technet.microsoft.com/en-us/library/jj682095.aspx) (materiał w serwisie TechNet dla systemu AX 2012)                                                                                                                                              |
@@ -55,8 +52,7 @@ Tematy wymienione w tabeli poniżej pomagają skonfigurować składniki modułu 
 | Zarządzanie opłatami transportowymi             | Konfigurowanie opłat transportowych specyficznych dla sklepu internetowego i zarządzanie nimi.                                                                     | [Konfigurowanie opłat transportowych w sklepach internetowych](https://technet.microsoft.com/en-us/library/jj728714.aspx) (materiał w serwisie TechNet dla systemu AX 2012)                                                                                                                           |
 | Zarządzanie metodami dostawy            | Zarządzanie metodami dostawy oferowanymi w sklepach internetowych.                                                                                        | [Konfigurowanie metod dostawy](https://technet.microsoft.com/en-us/library/jj728719.aspx) (materiał w serwisie TechNet dla systemu AX 2012)                                                                                                                                            |
 
-## Konfigurowanie wymiany danych między programem Microsoft Dynamics 365 for Retail a sklepem internetowym
-<a id="set-up-data-exchange-between-microsoft-dynamics-365-for-retail-and-the-online-store" class="xliff"></a>
+## <a name="set-up-data-exchange-between-microsoft-dynamics-365-for-retail-and-the-online-store"></a>Konfigurowanie wymiany danych między programem Microsoft Dynamics 365 for Retail a sklepem internetowym
 | Zadanie                                 | Szczegóły                                                                                                                               | Tematy                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurowanie profil integracji kanałów | Profile umożliwiają składnikom modułu Handel detaliczny komunikowanie się między sobą. Profile należy skonfigurować przed skonfigurowaniem ustawień wymiany danych. | [Konfigurowanie profilu usługi Real-time Service](https://technet.microsoft.com/en-us/library/hh580631.aspx) (materiał w serwisie TechNet dla systemu AX 2012) [Konfigurowanie profilu kanału](https://technet.microsoft.com/en-us/library/jj677402.aspx) (materiał w serwisie TechNet dla systemu AX 2012) |

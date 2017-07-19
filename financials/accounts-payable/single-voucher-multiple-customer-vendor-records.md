@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
 ms.author: abruer
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 31040ff14b99a9b351268feb88698ac706befb55
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Jeden załącznik z wieloma rekordami odbiorców lub dostawców
-<a id="single-voucher-with-multiple-customer-or-vendor-records" class="xliff"></a>
+# <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Jeden załącznik z wieloma rekordami odbiorców lub dostawców
 
 [!include[banner](../includes/banner.md)]
 
@@ -46,12 +45,10 @@ W tym temacie opisano sposób przetwarzania rozliczenia podczas księgowania jed
 -   Księgowanie rabatów gotówkowych
 -   Księgowanie przeszacowania
 
-## Jak na rozliczenie wpływa użycie jednego załącznika
-<a id="how-does-settlement-impact-single-voucher-usage" class="xliff"></a>
+## <a name="how-does-settlement-impact-single-voucher-usage"></a>Jak na rozliczenie wpływa użycie jednego załącznika
 Podczas księgowania załącznika, który zawiera wiele rekordów odbiorców lub dostawców, jest tworzony pojedynczy załącznik księgowy, który zawiera wiele sald rozrachunków z odbiorcami lub dostawcami. W procesie rozliczania oryginalne zapisy księgowe są używane do tworzenia zapisów księgowych dla rabatu gotówkowego, niezrealizowanych dodatnich i ujemnych różnic kursowych, zrealizowanych dodatnich i ujemnych różnic kursowych oraz zwolnienia konta rozrachunkowego oryginalnego dokumentu. Na przykład jeśli podczas rozliczania płatności dla dostawcy względem faktury zostanie uwzględniony rabat gotówkowy, musi on zostać zaksięgowany na koncie księgowym rozrachunków z dostawcami konta z oryginalnej faktury. Jeśli oryginalna faktura została zaksięgowana w załączniku zawierającym wiele rekordów dostawców, oryginalne zapisy księgowe są sumowane. W tym przypadku nie jest możliwe przejście do szczegółowego zapisu księgowego dla każdej transakcji z dostawcą w jednym załączniku, dlatego nie istnieje sposób określenia, jak użytkownik zamierzał rozliczyć rabat gotówkowy.
 
-### Jeden załącznik z wieloma dostawcami i jego wpływ na księgowanie rabatu gotówkowego
-<a id="one-voucher-with-multiple-vendors-and-the-impact-on-cash-discount-accounting" class="xliff"></a>
+### <a name="one-voucher-with-multiple-vendors-and-the-impact-on-cash-discount-accounting"></a>Jeden załącznik z wieloma dostawcami i jego wpływ na księgowanie rabatu gotówkowego
 
 W następującym przykładzie wiele faktur od dostawców jest rejestrowanych w księdze głównej na pojedynczym załączniku na stronie **Arkusz finansowy**. Te faktury są rozdzielone między wiele wymiarów kont.
 
@@ -115,8 +112,7 @@ Teraz podczas opłacania faktury INV2 zostanie dokonany następujący wpis. Zwr�
 | 14000056    | 520200-003-- | Rabat gotówkowy dostawcy |           | 3,00       |
 | 14000056    | 200110-001-  | Saldo dostawcy       | 3,00      |            |
 
-### Jeden załącznik z wieloma dostawcami i jego wpływ na księgowanie zrealizowanych dodatnich/ujemnych różnic kursowych
-<a id="one-voucher-with-multiple-vendors-and-the-impact-on-realized-gainloss-accounting" class="xliff"></a>
+### <a name="one-voucher-with-multiple-vendors-and-the-impact-on-realized-gainloss-accounting"></a>Jeden załącznik z wieloma dostawcami i jego wpływ na księgowanie zrealizowanych dodatnich/ujemnych różnic kursowych
 
 |             |                  |             |                 |           |            |                  |              |
 |-------------|------------------|-------------|-----------------|-----------|------------|------------------|--------------|
@@ -165,8 +161,7 @@ Teraz podczas opłacania faktury INV2 zostanie dokonany następujący wpis. Zwr�
 | 14000056    | 801300-002- | Ujemne różnice kursowe | 0,00                                     | 2.00                                    |
 | 14000056    | 200110-001- | Saldo dostawcy     |                                          | -2,00                                   |
 
-## Jeden załącznik do przenoszenia sald i dla scenariuszy kompensowania
-<a id="one-voucher-for-balance-transfers-and-netting-scenarios" class="xliff"></a>
+## <a name="one-voucher-for-balance-transfers-and-netting-scenarios"></a>Jeden załącznik do przenoszenia sald i dla scenariuszy kompensowania
 Dwa najczęstsze scenariusze wykorzystywania jednego załącznika zawierającego wielu odbiorców lub dostawców to przeniesienia sald od jednego odbiorcy/dostawcy do innego odbiorcy/dostawcy oraz kompensowanie odbiorcy i dostawcy będącego tą samą organizacją. Dwa poniższe przykłady ilustrują preferowaną metodę wykonywania tych scenariuszy w programie Finance and Operations jako alternatywę do używania pojedynczych załączników. 
 
 W *przeniesieniu salda* istnieje jeden załącznik z wieloma odbiorcami. Jego celem jest przeniesienie salda od jednego odbiorcy do innego odbiorcy (tak samo dla dostawców). Ten scenariusz może wystąpić, jeśli odpowiedzialność za zapłatę faktury zostanie przeniesiona na inną stronę, np. gdy firma podrzędna przenosi odpowiedzialność na firmę macierzystą. 
@@ -238,8 +233,7 @@ W pokrewnym załączniku rabatu gotówkowego będą używane wymiary finansowe z
 
 ### 
 
-## Jeden załącznik z kompensacją dla wielu odbiorców i dostawców
-<a id="one-voucher-with-a-netting-for-multiple-customers-and-vendors" class="xliff"></a>
+## <a name="one-voucher-with-a-netting-for-multiple-customers-and-vendors"></a>Jeden załącznik z kompensacją dla wielu odbiorców i dostawców
 Kompensacja może być przydatna, gdy organizacja kupuje i sprzedaje do tej samej firmy. Zamiast opłacać faktury od dostawców i czekać na otrzymanie płatności za faktury dla odbiorców, organizacja może kompensować oba rodzaje faktur. Transakcje kompensacyjne są rozliczane względem zaległych sald. 
 
 Aby to zilustrować, załóżmy, że dostawca 1001 i odbiorca 008 są tą samą jednostką, więc organizacja chce zbilansować salda należności i zobowiązań, a następnie zapłacić/otrzymać pozostałe saldo. Załóżmy, że rekord odbiorcy wykazuje zobowiązanie 75,00 EUR, a rekord dostawcy należność 100,00 EUR. Oznacza to, że chcesz zbilansować salso i zapłacić dostawcy tylko 25,00 EUR. Dodatkowo załóżmy, że walutą rozliczeniową jest USD. W tym przypadku transakcja kompensacyjna jest wprowadzana w jednym załączniku w arkuszu płatności rozrachunków z dostawcami.

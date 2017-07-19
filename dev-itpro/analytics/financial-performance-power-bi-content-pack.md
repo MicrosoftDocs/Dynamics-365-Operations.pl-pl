@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,23 +23,19 @@ ms.openlocfilehash: b20f526d20d357750777d0f9bda26e4d9d55b335
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Pakiet zawartości usługi Power BI Wyniki finansowe
-<a id="financial-performance-power-bi-content" class="xliff"></a>
+# <a name="financial-performance-power-bi-content"></a>Pakiet zawartości usługi Power BI Wyniki finansowe
 
 [!include[banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartość **Wyniki finansowe** dostępny dla usługi Microsoft Power BI. Omówiono dostępny pulpit nawigacyjny i raporty oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
-## Przechodzenie do pakietu zawartości usługi Power BI
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 
 Dostęp do pakietu zawartości usługi Power BI **Wyniki finansowe** można uzyskać z usługi Microsoft Dynamics Lifecycle Services (LCS) i z witryny PowerBI.com.
 
-### Dostępny z usługi LCS
-<a id="available-from-lcs" class="xliff"></a>
+### <a name="available-from-lcs"></a>Dostępny z usługi LCS
 Pakiet zawartości usługi Power BI **Wyniki finansowe** dostępny w usłudze LCS obsługuje poniższe wersje:
 
 - Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r.
@@ -46,16 +43,13 @@ Pakiet zawartości usługi Power BI **Wyniki finansowe** dostępny w usłudze LC
 
 Ten pakiet zawartości usługi Power BI znajduje się w bibliotece zasobów wspólnych w usłudze LCS. Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).
 
-### Dostępny z witryny z PowerBI.com
-<a id="available-from-powerbicom" class="xliff"></a>
+### <a name="available-from-powerbicom"></a>Dostępny z witryny z PowerBI.com
 Pakiet zawartości usługi Power BI **Wyniki finansowe** dostępny w witrynie PowerBI.com współpracuje z oprogramowaniem Microsoft Dynamics AX w wersjach 7.0 i 7.0.1. Aby uzyskać więcej informacji o tworzeniu połączenia z danymi programu Dynamics AX i ich ładowaniu, zobacz [Dostęp do pakietu zawartości usługi Power BI z witryny Microsoft Dynamics 365 for Operations](power-bi-home-page.md).
 
-## Konfiguracja konta głównego
-<a id="main-account-setup" class="xliff"></a>
+## <a name="main-account-setup"></a>Konfiguracja konta głównego
 Ponieważ organizacje chcą, aby kwoty zobowiązań i przychodów były wyświetlane jako kwoty dodatnie w raportach, ważne jest odpowiednie skonfigurowanie kont głównych. Aby kwoty na tych kontach głównych były wyświetlane jako dodatnie, typ konta głównego musi być ustawiony jako **Pasywa** lub **Przychód**. Gdy są używane te typy kont, sprawozdawczość za pośrednictwem usługi Power BI będzie powodowała odwracanie znaków i wyświetlanie kwot jako dodatnich.
 
-## Pulpit nawigacyjny i raporty dostępne w tym pakiecie zawartości usługi Power BI
-<a id="dashboard-and-reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="dashboard-and-reports-that-are-included-in-the-power-bi-content"></a>Pulpit nawigacyjny i raporty dostępne w tym pakiecie zawartości usługi Power BI
 Pulpit nawigacyjny zawiera kafelki podsumowań danych oparte na źródłowych raportach. Każdy kafelek zawiera podsumowanie informacji o bieżącym roku dla wszystkich firm w organizacji. Oto kilka dostępnych kafelków:
 
 - Kasa
@@ -91,8 +85,7 @@ Każdy kafelek wykorzystuje pomocniczy raport. Raporty zawierają wykresy i tabe
 
 Wykresy i kafelki we wszystkich tych raportach można filtrować i przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## Opis modelu danych i jednostek
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 Następujące jednostki zostały użyte jako podstawa w pakiecie zawartości usługi Power BI **Wyniki finansowe**:
 
 **Jednostki zagregowanych danych**
