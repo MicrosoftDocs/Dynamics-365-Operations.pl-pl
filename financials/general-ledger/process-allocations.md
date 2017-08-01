@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Przetwarzanie alokacji
-<a id="process-allocations" class="xliff"></a>
+# <a name="process-allocations"></a>Przetwarzanie alokacji
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,8 +40,7 @@ Microsoft Dynamics 365 for Finance and Operations oferuje następujące funkcje 
 -   Automatyczne przydzielanie kwot transakcji na podstawie warunków alokacji zdefiniowanych na poszczególnych kontach głównych. Zapisy na koncie alokacji zostaną wygenerowane dla każdego arkusza według wartości procentowej i docelowego konta księgowego zawsze gdy zapis księgowy spełnia kryteria określone jako konto księgowe źródła.
 -   Automatyczne przydzielanie sald księgi lub stałych kwot na podstawie reguł alokacji księgi. Reguły alokacji księgi są przetwarzane w regularnych odstępach przy użyciu arkuszy alokacji. 
 
-###  Alokacje w planowaniu budżetu
-<a id="allocations-in-budget-planning" class="xliff"></a>
+###  <a name="allocations-in-budget-planning"></a>Alokacje w planowaniu budżetu
 
 Reguły alokacji księgi mogą służyć do obsługi planów budżetowych. Korzystając z reguł alokacji księgi do planowania budżetu, reguły alokacji działają tak samo jak w księdze, ale źródło danych oraz miejsce docelowe danych pochodzi z planu budżetu. Można ręcznie wybrać reguły alokacji księgi do użycia dla planów budżetu. Można także użyć harmonogramu alokacji, który jest uruchamiany jako część procesu przepływu pracy.
 

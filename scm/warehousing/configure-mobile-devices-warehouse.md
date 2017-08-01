@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurowanie urządzeń przenośnych do pracy w magazynie
-<a id="set-up-mobile-devices-for-warehouse-work" class="xliff"></a>
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy w magazynie
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ W tym artykule opisano sposób konfigurowania elementów menu, których pracowni
 
 Aby utworzyć element menu dla działania lub zapytania, należy wybrać w polu **Tryb** wartość **Pośredni**. Zostanie wtedy udostępniona lista opcji **Kod działania**, umożliwiając wybranie typu zapytania lub działania, którego dotyczy element menu. Aby utworzyć element menu do generowania pracy magazynu, należy ustawić w polu **Tryb** wartość **Praca**. Zostanie wyświetlona lista opcji **Proces tworzenia pracy**. Aby utworzyć element menu do przetwarzania istniejącej pracy magazynu, należy ustawić pole **Tryb** na **Praca**, a następnie ustawić opcję **Użyj istniejącej pracy** na **Tak**. **Uwaga:** W zależności od trybu wybranego dla elementu menu i jeśli służy on do wykonywania istniejącej pracy, dodatkowe pola są dostępne dla tego elementu menu. Informacje o dodatkowych polach wyboru można znaleźć w sekcji „Dodatkowe opcje elementów menu” w tym artykule.
 
-## Konfigurowanie elementów menu pod kątem działań i zapytań
-<a id="configure-menu-items-for-activities-and-inquiries" class="xliff"></a>
+## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurowanie elementów menu pod kątem działań i zapytań
 Jeśli pole **Tryb** dla elementu menu jest ustawione na **Pośredni**, można utworzyć element menu do wykonywania działań lub zapytań, które nie tworzą pracy. Może to być np. ponowne drukowanie etykiet numerów identyfikacyjnych czy zapytanie o towary w lokalizacji. W poniższej tabeli przedstawiono dostępne opcje.
 
 | Opcja                      | Opis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -66,8 +64,7 @@ Jeśli pole **Tryb** dla elementu menu jest ustawione na **Pośredni**, można u
 | Zmień dyspozycję partii    | Umożliwia zezwolenie pracownikom na określenie kodu dyspozycji partii dla towaru i partii. Wybranie tej opcji spowoduje zaktualizowanie kodu dyspozycji określony dla danej partii.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Wyświetl listę otwartych prac      | Umożliwia wyświetlenie listy dostępnych pracy dla określonego użytkownika. Użytkownik może następnie wybrać pracę do wykonania i zostanie do niej przekierowany. Tę listę można wyświetlać na tabletach z ekranem o przekątnej co najmniej 7 cali. Po wybraniu tej opcji pozycje menu **Edytuj kwerendę** i **Lista pól** staną się dostępne. Strona **Edycji kwerendy** umożliwia skonfigurowanie kryteriów pracy, która znajduje się na liście. Strona **Listy pól** umożliwia wybranie, które pola będą wyświetlane na liście prac. Przykładowo można zmniejszyć liczbę widocznych pól, aby użytkownik mógł szybciej wybrać najodpowiedniejszą pozycję pracy. Na skróconej karcie **Ogólne** w polu **Rekordy na stronie** można też wybrać, ile rekordów pracy jest wyświetlanych na stronie. Jeśli opcja **Zezwalaj użytkownikom na filtrowanie pracy według typu transakcji** jest zaznaczona, lista pracy będzie zawierała formant **Filtruj pracę**, który umożliwia filtrowanie według typu transakcji. Na liście pracy użytkownik widzi tylko te prace, do których ma uprawnienia dostępu. Należy się upewnić, że ma on uprawnienia do co najmniej jednej pozycji menu sterowanej przez użytkownika obsługującej określone typy klasy pracy, do których powinien mieć dostęp. Uprawnienia są sprawdzane również wtedy, gdy użytkownik próbuje wykonać pracę z listy. |
 
-## Konfigurowanie elementów menu do tworzenia pracy dla innego pracownika lub procesu
-<a id="configure-menu-items-to-create-work-for-another-worker-or-process" class="xliff"></a>
+## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurowanie elementów menu do tworzenia pracy dla innego pracownika lub procesu
 Możesz skonfigurować element menu, który tworzy pracę dla innego pracownika po wykonaniu działania początkowego na urządzeniu przenośnym. Na przykład gdy jeden pracownik przyjmuje towar za pomocą urządzenia przenośnego, dla innego pracownika tworzona jest praca odłożenia. Aby skonfigurować element menu, który tworzy pracę, na stronie **Elementy menu urządzenia przenośnego** w polu **Tryb** trzeba wybrać **Praca**. W poniższej tabeli opcje w polu **Proces tworzenia pracy** są rozmieszczane według typu zlecenia.
 
 <table>
@@ -196,8 +193,7 @@ Możesz skonfigurować element menu, który tworzy pracę dla innego pracownika 
 </tbody>
 </table>
 
-## Konfigurowanie elementów menu do przetwarzania istniejącej pracy
-<a id="configure-menu-items-to-process-existing-work" class="xliff"></a>
+## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurowanie elementów menu do przetwarzania istniejącej pracy
 Oprócz zdefiniowania elementów to utworzenia pracy magazynu, można ustawić pozycje menu do przetwarzania pracy, która została już utworzona. Ustaw pole **Tryb** na wartość **Praca** i wybierz opcję **Użyj istniejącej pracy**. Na karcie **Ogólne** pojawi się kilka dodatkowych opcji. Można kontrolować dostęp do elementu menu poprzez przypisanie do niego jednej lub kilku klas roboczych na skróconej karcie **Klasa robocza**. Klasy pracy definiują pracę, którą element menu może przetworzyć. Klasa pracy może również być używana do udzielania dostępu rolom właściwym dla użytkownika lub oddzielnego przetwarzania różnych typów operacji. W poniższej tabeli przedstawiono dostępne opcje.
 
 <table>
@@ -256,8 +252,7 @@ Ta opcja przydaje się na przykład wtedy, gdy wiele palet jest przygotowanych d
 </tbody>
 </table>
 
-## Dodatkowe opcje elementów menu
-<a id="additional-menu-item-options" class="xliff"></a>
+## <a name="additional-menu-item-options"></a>Dodatkowe opcje elementów menu
 Dodatkowe elementy menu są dostępne na stronie **Elementy menu urządzenia przenośnego**. Dostępne opcje zależą od procesu, dla którego elementu menu jest konfigurowany. 
 
 W poniższej tabeli opisano te opcje.
@@ -394,8 +389,7 @@ W poniższej tabeli opisano te opcje.
 </tbody>
 </table>
 
-## Wymagaj od pracowników potwierdzenia produktów, lokalizacji lub ilości podczas pobierania pozycji
-<a id="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items" class="xliff"></a>
+## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Wymagaj od pracowników potwierdzenia produktów, lokalizacji lub ilości podczas pobierania pozycji
 Można skonfigurować potwierdzenia pracy, które wymagają od pracownika użycia urządzenia mobilnego w celu zarejestrowania lokalizacji lub ilości podczas wykonywania pracy w magazynie. Potwierdzenia pracy pomagają zapewnić, że pracownik jest w prawidłowym miejscu lub obsługuje poprawne ilości towarów. Można także włączyć w programie Microsoft Dynamics 365 for Finance and Operations automatyczne potwierdzanie rejestracji pracownika. Po włączeniu automatycznego potwierdzenia nie można jednocześnie wymagać potwierdzeń dla lokalizacji lub ilości. Potwierdzenia pracy zawierają także produkty i warianty produktu. Ponadto można zarejestrować potwierdzenia przez skanowanie kodu kreskowego. Aby potwierdzić produkty i warianty produktów, trzeba wprowadzić identyfikator produktu/wariantu produktu. Może to być identyfikator produktu, identyfikator wyszukiwania produktu, identyfikator zewnętrzny, GTIN lub kod kreskowy. Po wprowadzeniu identyfikatora lub zeskanowaniu kodu kreskowego wymiary wariantu produktu są wyświetlane w urządzeniu przenośnym. 
 
 W poniższej tabeli przedstawiono różne typy pracy, z którymi można używać potwierdzenia pracy.
@@ -414,8 +408,7 @@ W poniższej tabeli przedstawiono różne typy pracy, z którymi można używać
 
 **Uwaga:** Możesz jedynie wymagać potwierdzenia produktu dla prac typu pobieranie i odkładanie.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Ustawienia wyświetlania urządzenia przenośnego używanego w magazynie](change-warehouse-mobile-device-displays.md)

@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Alokacja danych na potrzeby planowania budżetu
-<a id="budget-planning-data-allocation" class="xliff"></a>
+# <a name="budget-planning-data-allocation"></a>Alokacja danych na potrzeby planowania budżetu
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ W tym artykule opisano różne metody alokacji dostępne w programie Microsoft D
 
 Dane planu budżetu można dystrybuować na wiele sposobów, by dokładnie odzwierciedlić przewidywane kwoty.
 
-## Metody alokacji
-<a id="allocation-methods" class="xliff"></a>
+## <a name="allocation-methods"></a>Metody alokacji
 Za pomocą trzech metod alokacji (Alokuj między okresami, Alokuj do wymiarów i Użyj reguł alokacji księgi) można utworzyć wiersze planu budżetu oparte na wierszach w tym samym planie budżetu. Za pomocą trzech innych metod (Agreguj, Dystrybuuj i Kopiuj z planu budżetu) można utworzyć wiersze planu budżetu w innych planach budżetu. We wszystkich sześciu metodach alokacji można określić scenariusza docelowy. Scenariusz docelowy może być albo taki sam jak scenariusz źródłowy lub inny od scenariusza źródłowego. Ponadto można określić, czy nowe wiersze są dołączane do planu budżetu czy zastępują bieżące wiersze planu budżetu.
 
 [![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
@@ -59,16 +57,14 @@ Za pomocą trzech metod alokacji (Alokuj między okresami, Alokuj do wymiarów i
 [![CopyFromBudgetPlan](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
 **Kopiuj z planu budżetu** — tak jak w metodzie dystrybucji alokacji wiersze planu budżetu są tworzone w lokalizacji docelowej na podstawie wierszy w powiązanym planie budżetu. Jednak w tej metodzie źródłowy plan budżetu nie musi być elementem nadrzędnym, ale może być na dowolnym wyższym poziomie w hierarchii planów budżetu. Ta metoda alokacji jest użyteczna, jeśli skonsolidowane kwoty są pierwotnie budżetowane na dużo wyższym poziomie, i muszą być przekazywane na niższy poziom organizacji do szczegółowego sprawdzenia i korekty, zanim będą mogły zostać zatwierdzone na wyższym poziomie.          
 
-## Korzystanie z metod alokacji w planie budżetu
-<a id="using-allocation-methods-in-a-budget-plan" class="xliff"></a>
+## <a name="using-allocation-methods-in-a-budget-plan"></a>Korzystanie z metod alokacji w planie budżetu
 Aby wykonać alokacje na stronie plan budżetu, wybierz wiersze do alokowania, a następnie kliknij przycisk **Alokuj budżet**.
 
 [![AllocateBudgetButton](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
 Następnie wybierz metodę alokacji. Pozostałe pola są następnie ustawiane na podstawie wybranej metody. Te pola uwzględniają źródło i lokalizację docelową danych planu budżetu oraz opcję mnożenia źródeł przez określony współczynnik podczas tworzenia kwoty docelowej, aby uprościć korekty wsadowe. Można również ustawić opcję **Dołącz do planu**. Wybierz **Nie**, aby zastąpić istniejące wiersze planu budżetu lub wybierz **Tak**, aby zachować istniejące wiersze planu budżetu i dodać nowe wiersze dla alokowanych kwot.
 
-## Automatyzacja alokacji podczas przepływu pracy
-<a id="automating-allocations-during-a-workflow" class="xliff"></a>
+## <a name="automating-allocations-during-a-workflow"></a>Automatyzacja alokacji podczas przepływu pracy
 Jedna zaawansowana funkcja pozwala wykonywać alokacje automatycznie w ramach przepływu pracy planowania budżetu. W miarę realizacji przepływu pracy planu budżetu zautomatyzowane zadania mogą wywoływać alokację na określonym etapie planowania budżetu. 
 
 Aby skonfigurować automatyczne alokacje, należy najpierw utworzyć harmonogram alokacji na stronie **Konfiguracja planowania budżetu**. Harmonogram alokacji definiuje metodę alokacji, która będzie używana podczas automatycznego alokowania oraz wartości różnych opcji alokacji (opisy znajdują się w poprzedniej sekcji). 

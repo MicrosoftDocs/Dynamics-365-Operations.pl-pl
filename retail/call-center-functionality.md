@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Funkcje biura obsługi
-<a id="call-center-functionality" class="xliff"></a>
+# <a name="call-center-functionality"></a>Funkcje biura obsługi
 
 [!include[banner](includes/banner.md)]
 

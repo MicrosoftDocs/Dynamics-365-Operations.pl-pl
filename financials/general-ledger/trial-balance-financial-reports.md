@@ -26,16 +26,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Raporty finansowe bilansu próbnego
-<a id="trial-balance-financial-reports" class="xliff"></a>
+# <a name="trial-balance-financial-reports"></a>Raporty finansowe bilansu próbnego
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym artykule opisano domyślne raporty o bilansach próbnych. Omówiono również bloki konstrukcyjne skojarzone z tymi raportami oraz sposoby modyfikowania raportów w celu dostosowania ich do wymagań biznesowych. 
 
-Domyślne raporty finansowe bilansu próbnego
-<a id="default-trial-balance-reports" class="xliff"></a>
+<a name="default-trial-balance-reports"></a>Domyślne raporty finansowe bilansu próbnego
 -----------------------------
 
 W programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition w module Raporty finansowe są dostępne trzy raporty bilansu próbnego.
@@ -46,8 +44,7 @@ W programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition
 | Sumaryczny bilans próbny — domyślny                | Oferuje informacje o saldzie dla wszystkich kont i zawiera salda otwarcia i zamknięcia oraz salda po stronie debetowej i kredytowej razem z ich różnicą netto.                                        |
 | Sumaryczny bilans próbny rok do roku — domyślny | Oferuje informacje o saldzie dla wszystkich kont i zawiera salda otwarcia i zamknięcia oraz salda po stronie debetowej i kredytowej razem z ich różnicą netto dla bieżącego roku i roku ubiegłego. |
 
-## Podstawowe elementy
-<a id="building-blocks" class="xliff"></a>
+## <a name="building-blocks"></a>Podstawowe elementy
 Raporty finansowe bilansu próbnego wykorzystują następujące podstawowe elementy.
 
 | Raport domyślny                                 | Definicja wiersza          | Definicja kolumny                              |
@@ -56,8 +53,7 @@ Raporty finansowe bilansu próbnego wykorzystują następujące podstawowe eleme
 | Sumaryczny bilans próbny — domyślny                | Bilans próbny — domyślny | Sumaryczny bilans próbny — domyślny                |
 | Sumaryczny bilans próbny rok do roku — domyślny | Bilans próbny — domyślny | Sumaryczny bilans próbny rok do roku — domyślny |
 
-### Definicja wiersza
-<a id="row-definition" class="xliff"></a>
+### <a name="row-definition"></a>Definicja wiersza
 
 Definicja wiersza Bilans próbny — domyślny zawiera pojedynczy wiersz, który pobiera informacje ze wszystkich kont głównych. Dlatego każdy może wygenerować raport bez konieczności wprowadzania żadnych zmian. Podczas przeglądania raportu można przejść do pojedynczego wiersza, aby wyświetlić szczegóły dotyczące poszczególnych kont. Można zmodyfikować definicję wiersza, tak aby zawierała więcej szczegółów. Aby zmodyfikować definicję wiersza Bilans próbny — domyślny, by zawierał wiesze dla wszystkich kont, należy wykonać następujące kroki.
 
@@ -66,8 +62,7 @@ Definicja wiersza Bilans próbny — domyślny zawiera pojedynczy wiersz, który
 
 Teraz definicja wiersza zawiera wszystkie konta główne dla Twojej domyślnej firmy.
 
-### Definicja kolumny
-<a id="column-definition" class="xliff"></a>
+### <a name="column-definition"></a>Definicja kolumny
 
 Każdy raport bilansu próbnego używa innej definicji kolumny. Te definicje kolumn zawierają różnego rodzaju kolumny oferujący różne poziomu szczegółowości i danych finansowych.
 
@@ -106,8 +101,7 @@ Każdy raport bilansu próbnego używa innej definicji kolumny. Te definicje kol
 
  
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Raporty finansowe](financial-reporting-getting-started.md)

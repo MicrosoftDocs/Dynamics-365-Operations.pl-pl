@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Konfigurowanie asortymentu
-<a id="set-up-assortments" class="xliff"></a>
+# <a name="set-up-assortments"></a>Konfigurowanie asortymentu
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ W tym artykule opisano, co jest asortyment, i wyjaśniono, jak konfigurować aso
 
 Asortyment jest zbiorem pokrewnych produktów, które można przypisać do kanału sprzedaży detalicznej, takich jak sklep tradycyjny (stacjonarny) lub sklep internetowy. Asortymenty służą do identyfikacji produktów, które są dostępne w każdym sklepie. Asortyment może zawierać kategorie produktów. W związku z tym wszystkie produkty, które są przypisane do wybranej kategorii, znajdują się w asortymencie. Asortyment może również uwzględniać określone produkty i ich warianty. Konfigurując asortyment można jednocześnie przypisać tysiące produktów do kanałów sprzedaży w dowolnej kombinacji wymaganej w sklepach. Można skonfigurować dowolną liczbę asortymentów produktów. Każdy produkt można włączyć do jednego lub większej liczby asortymentów, a każdy z asortymentów można przypisać do jednego lub większej liczby kanałów sprzedaży detalicznej. Na przykład można zdefiniować jeden asortyment, który uwzględnia bazowy zestaw produktów. Wszystkie sklepy otrzymają ten sam asortyment. Następnie można zdefiniować inny asortyment zawierający tylko duży sprzęt sportowy. Ten asortyment trafi tylko do większych sklepów. Na poniższym diagramie pokazano, jak można przypisać produkty do asortymentu, i jak przypisać asortymenty do kanałów detalicznych. ![Asortyment produktów — relacje](./media/assortments_relationship.gif)
 
-## Wymagania wstępne
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Wymagania wstępne
 Aby można było skonfigurować asortyment i przypisać go do kanału sprzedaży, należy wykonać następujące zadania.
 
 | Zadanie                              | Opis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -49,8 +47,7 @@ Aby można było skonfigurować asortyment i przypisać go do kanału sprzedaży
 | Definiowanie produktów.                  | Przed dodaniem produktów do asortymentu, należy dodać je w systemie Microsoft Dynamics 365 for Retail. Istnieje możliwość ręcznego dodawania produktów lub można je zaimportować od dostawcy. Po dodaniu produktów można je zwolnić do firmy. Tylko zatwierdzone produkty, które zostały zwolnione dla firmy mogą być dostępne dla kanałów sprzedaży detalicznej. Produkty, które nie zostały jeszcze zwolnione do firmy, mogą być dodawane do asortymentu, a asortyment może zostać zatwierdzony. Ale przed zwolnieniem produktów do firmy nie można ich udostępnić w kanałach sprzedaży detalicznej.                                                                                                                                                                                                                                                                                     |
 | Ustawianie hierarchii kategorii.      | Podczas tworzenia produktów sieci sprzedaży można je grupować i klasyfikować za pomocą funkcji hierarchii kategorii. Można utworzyć jedną hierarchię podstawową do grupowania i klasyfikowania wszystkich produktów, które można dystrybuować w kanałach sprzedaży detalicznej. Można także tworzyć osobne hierarchie kategorii uzupełniającej, do grupowania lub kategoryzowania produktów do celów specjalnych, takich jak promocje lub asortymenty. Za pomocą hierarchii kategorii można przypisać wszystkie produkty z określonej kategorii do asortymentu. Wszystkie produkty, które są dodawane do kategorii uwzględnionej w asortymencie są automatycznie uwzględnione w asortymencie. Następnie podczas następnego uruchomienia harmonogramu asortymentu sieci sprzedaży, produkty te stają się dostępne dla kanałów sprzedaży przypisanych do asortymentu.                                            |
 
-## Konfigurowanie asortymentu
-<a id="setting-up-an-assortment" class="xliff"></a>
+## <a name="setting-up-an-assortment"></a>Konfigurowanie asortymentu
 Po spełnieniu wymagań wstępnych można tworzyć asortyment i przypisywać go w kanałach sprzedaży detalicznej. Aby skonfigurować asortyment, należy wykonać następujące zadania:
 
 1.  Tworzenie nowego asortymentu lub skopiowanie istniejącego.

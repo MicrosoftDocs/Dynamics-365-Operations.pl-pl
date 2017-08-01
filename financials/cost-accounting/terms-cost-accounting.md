@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Terminologia z dziedziny rachunku kosztów
-<a id="cost-accounting-terminology" class="xliff"></a>
+# <a name="cost-accounting-terminology"></a>Terminologia z dziedziny rachunku kosztów
 
 [!include[banner](../includes/banner.md)]
 

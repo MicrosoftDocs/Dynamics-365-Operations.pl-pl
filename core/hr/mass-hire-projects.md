@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Projekty zatrudnienia grupowego
-<a id="mass-hire-projects" class="xliff"></a>
+# <a name="mass-hire-projects"></a>Projekty zatrudnienia grupowego
 
 [!include[banner](../includes/banner.md)]
 
 
 Projekty zatrudnienia grupowego umożliwiają specjalistom z działów kadr tworzenie wielu stanowisk i sprawne rekrutowanie na nie pracowników.
 
-Przegląd
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Przegląd
 --------
 
 Użyj projektów zatrudnienia grupowego do jednoczesnego zatrudnienia kilku pracowników, np. kiedy zatrudniasz pracowników sezonowych. Tworzenie projektu zatrudnienia grupowego jest przydatne, ponieważ umożliwia jednoczesne tworzenie rekordów stanowisk, pracowników i przypisań pracowników. Podczas tworzenia stanowisk dla projektu zatrudnienia grupowego można określić następujące informacje:
@@ -45,16 +43,14 @@ Użyj projektów zatrudnienia grupowego do jednoczesnego zatrudnienia kilku prac
 -   Dział i zadanie związane z tymi stanowiskami
 -   Wartość przeliczenia na pełne etaty dla stanowiska
 
-## Przykład
-<a id="example" class="xliff"></a>
+## <a name="example"></a>Przykład
 Latem zazwyczaj zatrudnia się 15-20 studentów na staże dostępne w firmie. W tym roku chcesz zatrudnić 5 księgowych, 5 osób do przetwarzania zamówień i 5 kasjerów. Zamiast tworzyć każdy rekord stanowiska i pracownika z osobna można utworzyć jeden projekt zatrudnienia grupowego pod nazwą „Letnistaż”. Daty rozpoczęcia i zakończenia projektu pokrywają się z datami rozpoczęcia i zakończenia ważności stanowisk utworzonych w ramach projektu zatrudnienia grupowego. 
 
 Na stronie **Projekty zatrudnienia grupowego** wybierz projekt „Letnistaż” i kliknij **Otwórz projekt**. Na stronie Otwórz projekt zatrudnienia grupowego kliknij przycisk **Utwórz stanowiska** i wprowadź informacje o stanowisku księgowego. Można wybrać utworzenie pięciu stanowisk księgowych przy użyciu tych samych informacji, a następnie kliknąć przycisk OK. Powtórz ten proces dla stanowisk przetwarzania zamówień i kasjerów. 
 
 Po wybraniu studentów, których chcesz przyjąć na staż wpisz dane każdego z nich na stronie **Szczegóły dotyczące stanowiska** dla stanowisk, na których mają zostać zatrudnieni. Po wprowadzeniu wszystkich szczegółów dotyczących stanowiska wybierz stanowisko na stronie Projekty zatrudnienia grupowego, a następnie kliknij **Zatrudnij**. Zostaną utworzone rekordy dla każdego stanowiska i pracownika, a każdy pracownik zostanie przypisany do odpowiedniego stanowiska.
 
-## Stany projektu zatrudnienia grupowego
-<a id="mass-hire-project-statuses" class="xliff"></a>
+## <a name="mass-hire-project-statuses"></a>Stany projektu zatrudnienia grupowego
 Projekt zatrudnienia grupowego może mieć następujące stany:
 -   Utworzony
 -   Otwarto

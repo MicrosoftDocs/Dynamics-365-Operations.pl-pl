@@ -26,20 +26,17 @@ ms.lasthandoff: 06/14/2017
 
 [!include[banner](../includes/banner.md)]
 
-# Przykładowe formaty czeków w raportowaniu elektronicznym
-<a id="electronic-reporting-sample-check-formats" class="xliff"></a>
+# <a name="electronic-reporting-sample-check-formats"></a>Przykładowe formaty czeków w raportowaniu elektronicznym
 
 Modułu Raportowanie elektroniczne (ER) można używać do formatowania czeków od dostawców. Na rynku jest dostępnych wiele formatów czeków specyficznych dla banków i wystawców czeków. Przykładowe formaty czeków zostały umieszczone w modelu płacenia czekami w repozytorium narzędzie ER. Te przykładowe czeki są zatytułowane **Czek w środku (Stany Zjednoczone)** i **Czek na górze, pokwitowanie pod spodem (Stany Zjednoczone)**.
 
-## Które formaty czeków są obecnie obsługiwane?
-<a id="what-check-formats-are-currently-supported" class="xliff"></a>
+## <a name="what-check-formats-are-currently-supported"></a>Które formaty czeków są obecnie obsługiwane?
 
 Należy zawsze przejść do biblioteki zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) i wyświetlić aktualną listę dostępnych plików, które mają typ składnika aktywów **Konfiguracja GER**. Następna sekcja — „Co trzeba skonfigurować?” — zawiera łącze do tematu, który wyjaśnia sposób tworzenia repozytorium usługi LCS na potrzeby przeglądania dostępnych konfiguracji i importowania wybranych konfiguracji.
 
 Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition zawiera przykładowy format, w którym czek jest na górze, a pod spodem znajdują się dwie sekcje przekazu. Jest również przykładowy formularz, w którym czek znajduje się na środku, między dwoma sekcjami przekazu. Te przykładowe formaty odpowiadają formatowi czeków firmowych Deluxe.
 
-## Co trzeba skonfigurować?
-<a id="what-do-i-have-to-set-up" class="xliff"></a>
+## <a name="what-do-i-have-to-set-up"></a>Co trzeba skonfigurować?
 
 - Aby możliwe było drukowanie czeków przy użyciu modułu ER, co najmniej jedna aktywna konfiguracja czeku musi zostać zaimportowana do konfiguracji ER. Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 - Podczas konfigurowania czeków w module Zarządzanie gotówką i bankami dla rachunku bankowego zaznacz pole wyboru **Ogólny elektroniczny format eksportu**, a następnie wybierz odpowiedni format czeku jako konfigurację formatu eksportu.

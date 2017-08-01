@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Kredyty i windykacja w rozrachunkach z odbiorcami
-<a id="credit-and-collections-in-accounts-receivable" class="xliff"></a>
+# <a name="credit-and-collections-in-accounts-receivable"></a>Kredyty i windykacja w rozrachunkach z odbiorcami
 
 [!include[banner](../includes/banner.md)]
 
@@ -47,8 +46,7 @@ Przed rozpoczęciem konfigurowania lub pracy z windykacjami należy zapoznać si
 
 Poniżej opisano poszczególne pojęcia.
 
-## Migawka wiekowania odbiorcy 
-<a id="customer-aging-snapshots" class="xliff"></a>
+## <a name="customer-aging-snapshots"></a>Migawka wiekowania odbiorcy 
 Migawka wiekowania zawiera obliczone wiekowane salda dla odbiorcy w jednym punkcie w czasie. Informacje migawki wiekowania pojawiają się na stronie listy Wiekowane salda i na stronie Windykacja. Aby wyświetlić informacje na stronach listy windykacji, należy utworzyć migawkę wiekowania. 
 
 Dla każdego odbiorcy migawka wiekowania zawiera nagłówek i szczegółowe zapisy dotyczące każdego okresu wiekowania w definicji okresu wiekowania. 
@@ -57,18 +55,15 @@ Nagłówek migawki wiekowania zawiera całkowitą kwotę do zapłaty, limit kred
 
 Dla każdego okresu wiekowania w definicji okresów wiekowania jest tworzony szczegółowy zapis migawki wiekowania. Każdy szczegółowy zapis migawki wiekowania zawiera identyfikator okresu wiekowania i łączną kwotę transakcji z datami w okresie wiekowania. Transakcje są przypisane do okresu wiekowania, np. 30 dni po terminie. Data jest powiązana z wiekowaniem począwszy od daty, która została określona podczas tworzenia migawki wiekowania. Informacje migawki wiekowania pojawiają się w polu informacji Wiekowane salda i na stronie Windykacja.
 
-##  Pule klientów związanych z windykacjami
-<a id="collections-customer-pools" class="xliff"></a>
+## <a name="collections-customer-pools"></a> Pule klientów związanych z windykacjami
 Pule odbiorców są kwerendami definiującymi grupę rekordów odbiorców, które mogą być wyświetlane i zarządzane dla windykacji lub procesów wiekowania. Używaj pul klientów, aby filtrować informacje na stronach listy Wiekowane salda, Działania związane z windykacją i sprawy związane z windykacją. Pule klientów mogą również służyć do filtrowania kont odbiorców, które są uwzględniane podczas tworzenia migawki wiekowania.
 
-## Agenci ds. windykacji
-<a id="collections-agents" class="xliff"></a>
+## <a name="collections-agents"></a>Agenci ds. windykacji
 Domyślnie użytkownicy programu Microsoft Dynamics 365 for Finance and Operations mogą wyświetlać wszystkie informacje o odbiorcy na stronach listy windykacji. Rekordy agenta ds. windykacji służą do określania pul klientów, dostępnych do filtrowania informacji na stronach listy windykacji i na stronie windykacji. 
 
 Agent ds. windykacji jest osobą, która współpracuje z odbiorcami w celu upewnienia się, że płatności są inkasowane w terminie. W programie Finance and Operations agentami ds. windykacji są pracownicy przypisani do użytkowników na stronie ustawień użytkownika.
 
-##  Strony list windykacji 
-<a id="collections-list-pages" class="xliff"></a>
+## <a name="collections-list-pages"></a> Strony list windykacji 
 Następujące strony listy pomagają organizować informacje o windykacji.
 -   Wiekowane salda — kolumny na stronie listy wyświetlają salda odbiorców i kwoty przeterminowane według okresów wiekowania. Te informacje są przechowywane w migawce wiekowania. Okresy wiekowania są określone przez używaną definicję okresu wiekowania. Definicja okresu wiekowania jest pobierana z puli klientów, o ile została określona dla zapytania o pulę. Jeśli pula nie ma definicji okresu wiekowania, jest używana domyślna definicja okresu wiekowania określona na stronie Parametry modułu rozrachunków z odbiorcami. Jeśli nie określono domyślnego okresu wiekowania, używana jest pierwsza definicja okresu wiekowania ze strony Definicje okresów wiekowania.
 -   Działania związane z windykacją — kolumn na stronie listy wyświetla działania, które są określone jako działania związane z windykacją. Działania te są tworzone przy użyciu strony windykacji. Użyj tych działań do śledzenia wykonywanej pracy powiązanej z windykacją.
@@ -81,8 +76,7 @@ Następujące strony listy pomagają organizować informacje o windykacji.
 <li>Jeśli użytkownik jest skonfigurowany jako agent ds., tylko pule, które są wybrane dla tego agenta, są dostępne na stronie listy. W przypadku włączenia dla danego agenta opcji Zezwalaj agentowi na przeglądanie wszystkich pul klientów na stronie Agent ds. windykacji, będzie miał dostęp do wszystkich pul.</li>
 
 
-##  strona Windykacja
-<a id="collections-page" class="xliff"></a>
+## <a name="collections-page"></a> strona Windykacja
 Strona Windykacja służy do wyświetlania, zarządzania i podejmowania działań względem informacji dotyczących windykacji oraz spraw danego odbiorcy. 
 
 Górne okienko wyświetla sprawy wybranego odbiorcy. Środkowe okienko pokazuje transakcje odbiorcy. Dolne okienko służy do wyświetlania działań dla odbiorcy. Można utworzyć sprawy dotyczące windykacji, aby śledzić informacje o windykacjach dla jednej lub większej liczby transakcji lub działań. Informacje w okienkach górnym i dolnym można filtrować według sprawy. 
@@ -91,14 +85,12 @@ Pola informacji wyświetlają wiekowane salda i limit kredytu dla wybranego odbi
 
 Okienko akcji zawiera przyciski, które wyświetlają powiązane informacje dla wybranego odbiorcy, sprawy, transakcji lub działania. Można również wykonać typowe akcje, takie jak zmiana stanu windykacji transakcji, wysyłania korespondencji e-mail dzięki integracji ze swoim dostawcą poczty e-mail, zwrotu dla odbiorców, przetwarzania płatności przy niewystarczających funduszach i odpisy z nieściągalnych sald.
 
-##  Uchylanie, przywracanie lub wycofywanie odsetek lub opłat 
-<a id="waive-reinstate-or-reverse-interest-and-fees" class="xliff"></a>
+## <a name="waive-reinstate-or-reverse-interest-and-fees"></a> Uchylanie, przywracanie lub wycofywanie odsetek lub opłat 
 Można uchylić, przywróć lub wycofać pełne noty odsetkowe, opłaty i odsetki transakcji, które są częścią not odsetkowych. Można to zrobić na karcie Windykacja w okienku akcji na stronie listy wszystkich odbiorców, klikając notę odsetkową, odsetki transakcji lub opłaty. 
 
 Te zmiany wpływają tylko na noty odsetkowe oraz odsetki i opłaty, których dotyczą. Należy wykonać kroki w sekcji „Tworzenie transakcji odpisu w jednym kroku”, aby odpisać łączną kwotę zobowiązań odbiorcy.
 
-## Tworzenie transakcji odpisu
-<a id="create-writeoff-transactions" class="xliff"></a>
+## <a name="create-writeoff-transactions"></a>Tworzenie transakcji odpisu
 Można odpisać nieściągalne długi, klikając Odpisz w formularzu Windykacja i na stronach listy Wiekowane salda, Odbiorcy i Otwarte faktury dla odbiorców. 
 
 Gdy odpisujesz transakcje dla odbiorcy, wszystkie transakcje dla tego odbiorcy są automatycznie oznaczane do rozliczenia. Odpisywana kwota zależy od kwoty netto oznaczonych transakcji. Transakcja odpisu jest tworzona w arkuszu finansowym i może zawierać maksymalnie trzy typy wierszy arkusza.

@@ -27,16 +27,14 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Omówienie spersonalizowanych rekomendacji produktów
-<a id="personalized-product-recommendations-overview" class="xliff"></a>
+# <a name="personalized-product-recommendations-overview"></a>Omówienie spersonalizowanych rekomendacji produktów
 
 [!include[banner](includes/banner.md)]
 
 
 W programie Dynamics 365 for Retail rekomendacje produktów mogą być wyświetlane na urządzenia w punkcie sprzedaży (POS). Rekomendacje to towary, którymi odbiorca może być zainteresowany w związku z wcześniej dokonywanymi zakupami, towary na liście życzeń odbiorcy oraz towary, które inni podobni odbiorcy kupowali w sklepach internetowych i tradycyjnych. U sprzedawców detalicznych z dużymi katalogami rekomendacje pomagają odbiorcom znajdować ciekawe inne produkty. Eksponując produkty ukierunkowane na zainteresowania i nawyki zakupowe odbiorców, rekomendacje produktów mogą pomóc sprzedawać powiązane i dodatkowe produkty oraz wzmacniać lojalność odbiorców. W programie Dynamics 365 for Retail funkcjonalność rekomendacji produktów bazuje na usługach Cognitive Services i aparacie uczenia maszynowego Microsoft Azure.
 
-Scenariusze
-<a id="scenarios" class="xliff"></a>
+<a name="scenarios"></a>Scenariusze
 ---------
 
 Rekomendacje produktów działają w opisanych niżej scenariuszach w punkcie sprzedaż. Są dostępne dla aplikacji Cloud POS i Modern POS (MPOS).
@@ -60,8 +58,7 @@ Rekomendacje produktów działają w opisanych niżej scenariuszach w punkcie sp
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## Konfigurowanie programu Dynamics 365 for Retail do wyświetlania rekomendacji w punkcie sprzedaży
-<a id="configure-dynamics-365-for-retail-to-enable-pos-recommendations" class="xliff"></a>
+## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurowanie programu Dynamics 365 for Retail do wyświetlania rekomendacji w punkcie sprzedaży
 Aby skonfigurować rekomendowanie produktów, należy wykonać poniższe czynności:
 
 1.  Upewnij się, że wybrano poprawną wartość **Firmy**.
@@ -70,8 +67,7 @@ Aby skonfigurować rekomendowanie produktów, należy wykonać poniższe czynno�
 4.  Przejdź do okna **Parametry sieci sprzedaży**, wybierz opcję **Uczenie maszynowe** i w ustawieniu **Włącz rekomendacje w punkcie sprzedaży** wybierz wartość **Tak**.
 5.  Aby rekomendacje były wyświetlane w punkcie sprzedaży, uruchom zadanie konfiguracji globalnej **1110**. Aby pokazywać zmiany wprowadzone w projektancie układu ekranu punktu sprzedaży, uruchom zadanie konfiguracji kanału **1070**.
 
-## []()Jak to działa?
-<a id="how-does-it-work" class="xliff"></a>
+## <a name="how-does-it-work"></a>[]()Jak to działa?
 Gdy odświeżasz jednostkę **Magazyn jednostek**, są wykonywane następujące czynności:
 
 -   Dane w formacie wymaganym przez usługi Cognitive Services są wyodrębniane z operacyjnej bazy danych programu Dynamics 365 for Retail i wysyłane do magazynu jednostek.
@@ -84,8 +80,7 @@ Po włączeniu opcji **Włącz rekomendacje** i uruchomieniu zadań konfiguracji
 -   Poświadczenia i identyfikator modelu są udostępniane środowisku CRT, co umożliwia obsługę wywołań o rekomendacje produktów z aplikacji Cloud POS i MPOS w trybie online.
 
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Dodawanie formantu rekomendacji do strony transakcji na urządzeniu punktu sprzedaży](add-recommendations-control-pos-screen.md)

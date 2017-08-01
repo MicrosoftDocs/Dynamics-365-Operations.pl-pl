@@ -26,16 +26,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobilny obszar roboczy Zarządzanie wydatkami
-<a id="expense-management-mobile-workspace" class="xliff"></a>
+# <a name="expense-management-mobile-workspace"></a>Mobilny obszar roboczy Zarządzanie wydatkami
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie omówiono mobilny obszar roboczy Zarządzanie wydatkami, który jest dostępny w aplikacji komórkowej Microsoft Dynamics 365 for Finance and Operations. Ten obszar roboczy pozwala użytkownikom rejestrować i przekazywać paragony, dzięki czemu można je później dołączać do raportów z wydatków. Ponadto w tym mobilnym obszarze roboczym użytkownicy mogą szybko tworzyć wiersze wydatków za pomocą dołączonych paragonów.
 
-Omówienie komórkowego obszaru roboczego Zarządzanie wydatkami
-<a id="overview-of-the-expense-management-mobile-workspace" class="xliff"></a>
+<a name="overview-of-the-expense-management-mobile-workspace"></a>Omówienie komórkowego obszaru roboczego Zarządzanie wydatkami
 ---------------------------------------------------
 
 Wiele organizacji wymaga, aby kopie paragonów były dołączane do raportów o wydatkach z podróży lub wydatkach biznesowych, które pracownicy składają w celu uzyskania zwrotu pieniędzy. Mobilny obszar roboczy **Zarządzanie wydatkami** pozwala użytkownikom szybko tworzyć nowe wiersze wydatków na dowolnych urządzeniach komórkowych za pomocą dołączonej fotografii paragonu. Alternatywnie użytkownicy mogą zarejestrować zdjęcie paragonu i później dołączyć je do raportu z wydatków. W szczególności mobilny obszar roboczy **Zarządzanie wydatkami** oferuje następujące możliwości:
@@ -46,8 +44,7 @@ Wiele organizacji wymaga, aby kopie paragonów były dołączane do raportów o 
 
 Pozostałe sekcje w tym temacie opisują wdrażanie i używanie mobilnego obszaru roboczego **Zarządzanie wydatkami**.
 
-## Wymagania wstępne
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Wymagania wstępne
 Aby można było wdrożyć mobilny obszar roboczy **Zarządzanie wydatkami**, administrator systemu musi zapewnić spełnienie następujących warunków wstępnych:
 
 <table>
@@ -93,15 +90,13 @@ Aby można było wdrożyć mobilny obszar roboczy **Zarządzanie wydatkami**, ad
 </tbody>
 </table>
 
-## Pobieranie i instalowanie aplikacji komórkowej Finance and Operations
-<a id="download-and-install-the-finance-and-operations-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-finance-and-operations-mobile-app"></a>Pobieranie i instalowanie aplikacji komórkowej Finance and Operations
 W sklepie z aplikacjami dla urządzeń komórkowych pobierz i zainstaluj aplikację Finance and Operations.
 
 -   Telefony z systemem Android: [Finance and Operations w sklepie Google Play](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
 -   Telefony iPhone: [Finance and Operations w sklepie z aplikacjami iTunes](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
 
-## Logowanie w aplikacji komórkowej Finance and Operations
-<a id="sign-in-to-the-finance-and-operations-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-finance-and-operations-mobile-app"></a>Logowanie w aplikacji komórkowej Finance and Operations
 1.  Uruchom aplikację na urządzeniu komórkowym.
 2.  Wprowadź adres URL usługi Finance and Operations.
 3.  Wpisz firmę, do której chcesz się zalogować. Na przykład wpisz **USMF**.
@@ -110,8 +105,7 @@ W sklepie z aplikacjami dla urządzeń komórkowych pobierz i zainstaluj aplikac
 
 [![Ściąganie w celu odświeżenia](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Rejestrowanie paragonu za pomocą komórkowego obszaru roboczego Zarządzanie wydatkami
-<a id="capture-a-receipt-by-using-the-expense-management-mobile-workspace" class="xliff"></a>
+## <a name="capture-a-receipt-by-using-the-expense-management-mobile-workspace"></a>Rejestrowanie paragonu za pomocą komórkowego obszaru roboczego Zarządzanie wydatkami
 1.  Na urządzeniu przenośnym wybierz obszar roboczy **Zarządzanie wydatkami**.
 2.  Wybierz opcję **Zarejestruj paragon**.
 3.  Wybierz opcję **Zrób zdjęcie** lub **Wybierz obraz**.
@@ -125,8 +119,7 @@ W sklepie z aplikacjami dla urządzeń komórkowych pobierz i zainstaluj aplikac
 
 5.  Wybierz opcję **Gotowe**.
 
-## Szybkie wprowadzanie wydatku za pomocą komórkowego obszaru roboczego Zarządzanie wydatkami
-<a id="quick-expense-entry-by-using-the-expense-management-mobile-workspace" class="xliff"></a>
+## <a name="quick-expense-entry-by-using-the-expense-management-mobile-workspace"></a>Szybkie wprowadzanie wydatku za pomocą komórkowego obszaru roboczego Zarządzanie wydatkami
 1.  Na urządzeniu przenośnym wybierz obszar roboczy **Zarządzanie wydatkami**.
 2.  Wybierz opcję **Szybkie wprowadzanie wydatku**.
 3.  Wybierz kategorię wydatku. Zobaczysz listę kategorii wydatków załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych maksymalnie 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma komórkowa Finance and Operations](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jeśli żądanej kategorii nie ma na liście, wybierz opcję **Szukaj**, aby wykonać wyszukiwanie online w usłudze Finance and Operations. Poszukaj według kategorii wydatków lub przejdź do wyszukiwania według typu wydatku.

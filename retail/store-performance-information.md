@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Analizowanie wydajności sklepu
-<a id="analyze-store-performance" class="xliff"></a>
+# <a name="analyze-store-performance"></a>Analizowanie wydajności sklepu
 
 [!include[banner](includes/banner.md)]
 

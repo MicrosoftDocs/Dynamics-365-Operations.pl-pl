@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfiguracja i autoryzacja karty kredytowej
-<a id="credit-card-setup-authorization-and-capture" class="xliff"></a>
+# <a name="credit-card-setup-authorization-and-capture"></a>Konfiguracja i autoryzacja karty kredytowej
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ ms.lasthandoff: 06/13/2017
 
 Ten artykuł zawiera omówienie funkcji autoryzacji kart kredytowych w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Znajdują się tu informacje o konfigurowaniu usługi płatności, dodawaniu karty kredytowej do zamówienia sprzedaży oraz o unieważnianiu autoryzacji.
 
-Konfigurowanie usługi płatności kartą kredytową
-<a id="setting-up-the-credit-card-payment-service" class="xliff"></a>
+<a name="setting-up-the-credit-card-payment-service"></a>Konfigurowanie usługi płatności kartą kredytową
 ------------------------------------------
 
 Aby skonfigurować karty kredytowe, należy ustawić i aktywować usługę płatności na stronie Usługi płatności. Usługa płatności pełni rolę pomostu między firmą i bankiem, który przetwarza opłaty kartą kredytową odbiorcy. Należy skontaktować się z wystawcą karty kredytowej wymienionym w polu Łącznik płatności i skonfigurować konto u tego wystawcy. Następnie trzeba ustawić inne opcje na stronie Usługi płatności, ustawić typy kart kredytowych American Express, Discover, MasterCard na stronie Typy kart kredytowych i aktywować wystawcę jako domyślnego. Trzeba też wykonać następujące kroki, by ukończyć konfigurację:
@@ -46,8 +44,7 @@ Aby skonfigurować karty kredytowe, należy ustawić i aktywować usługę płat
 -   Na stronie Warunki płatności należy ustawić wartości płatności dla kart kredytowych. W polu Typ płatności należy wybrać opcję Karta kredytowa.
 -   Na stronie Karty kredytowe klienta należy wpisać dane karty kredytowej dla klientów.
 
-## Dodawanie nowej karty kredytowej
-<a id="adding-a-new-credit-card" class="xliff"></a>
+## <a name="adding-a-new-credit-card"></a>Dodawanie nowej karty kredytowej
 Można tworzyć nowe rekordy kart kredytowych na stronie Odbiorcy, używając opcji Odbiorca, Ustawienia, Karta kredytowa. Można też tworzyć rekordy kart kredytowych podczas wprowadzania zamówień sprzedaży na stronie Zamówienie sprzedaży, używają opcji Zarządzaj, Odbiorca, Karta kredytowa, Rejestr.
 Dodawanie karty kredytowej dla zamówienia sprzedaży
 -------------------------------------
@@ -58,13 +55,11 @@ Autoryzacja karty kredytowej
 
 Autoryzacja karty kredytowej polega na zweryfikowaniu numeru karty i tożsamości jej posiadacza oraz potwierdzeniu dostępnego salda kredytu. Opcjonalnie weryfikowane są wartość weryfikacji karty i adres posiadacza karty. Dostępne saldo kredytu odbiorcy jest następnie zmniejszane o kwotę faktury. Usługa płatności wysyła informację, czy karta kredytowa została przyjęta, czy odrzucona. Podczas fakturowania zamówienia sprzedaży karta kredytowa jest obciążana (autoryzowana) kwotą faktury.
 
-### Wartość weryfikacji karty
-<a id="card-verification-value" class="xliff"></a>
+### <a name="card-verification-value"></a>Wartość weryfikacji karty
 
 Można wymagać wartości weryfikacji karty, która jest czasem określana jako kod bezpieczeństwa na karcie. Na kartach American Express jest to kod czterocyfrowy. Na kartach Discover, MasterCard i Visa są to trzy cyfry.
 
-### Weryfikacja adresu
-<a id="address-verification" class="xliff"></a>
+### <a name="address-verification"></a>Weryfikacja adresu
 
 Informacje weryfikacji adresu są zawsze wysyłane do dostawcy płatności. Można określić, ile informacji jest wymaganych do zaakceptowania transakcji. Należy skontaktować się z dostawcą, aby określić, czy może on akceptować te informacje. Oto opcje weryfikacji adresu:
 -   **Zawsze akceptuj transakcję** — akceptuj transakcję, niezależnie od wyników weryfikacji adresu.
@@ -72,19 +67,16 @@ Informacje weryfikacji adresu są zawsze wysyłane do dostawcy płatności. Moż
 -   **Adres na fakturze** — porównanie imienia i nazwiska i adresu rozliczeniowego z transakcji z informacjami od wystawcy karty kredytowej.
 -   **Kod pocztowy do faktury** — porównanie imienia i nazwiska, adresu rozliczeniowego i kodu pocztowego z transakcji z informacjami od wystawcy karty kredytowej.
 
-## Obsługa danych
-<a id="data-support" class="xliff"></a>
+## <a name="data-support"></a>Obsługa danych
 Dla każdego typu karty kredytowej, który jest obsługiwany, można określić poziom obsługi danych. Poziom określa ilość informacji dotyczących transakcji, jaka jest przesyłana do usługi płatności. Należy skontaktować się z dostawcą, aby określić, czy ma on te informacje. Poniżej przedstawiono opcje poziom obsługi danych:
 -   **Poziom 1** — przesłanie danych transakcji, kwoty transakcji i opisu.
 -   **Poziom 2** — przesłanie informacje poziomu 1 plus adresy wysyłki i handlowca oraz informacji podatkowych.
 -   **Poziom 3** — przesłanie informacji poziomu 2 plus informacji w wierszu zamówienia.
 
-## Płatności częściowe
-<a id="partial-payments" class="xliff"></a>
+## <a name="partial-payments"></a>Płatności częściowe
 Jeśli wysyłasz części zamówienia, kwota częściowego zamówienia jest rejestrowana, a autoryzacja będącą kwotą całego zamówienia jest zamykana. Nowa autoryzacja jest następnie przesyłana na pozostałą kwotę zamówienia, która nie została jeszcze wysłana.
 
-## Unieważnianie autoryzacji 
-<a id="voiding-an-authorization" class="xliff"></a>
+## <a name="voiding-an-authorization"></a>Unieważnianie autoryzacji 
 Abu unieważnić autoryzację karty kredytowej, można zmienić metodę płatności na inną, która nie ma typu karty kredytowej.
 
 

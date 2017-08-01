@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Katalogi biura obsługi
-<a id="call-center-catalogs" class="xliff"></a>
+# <a name="call-center-catalogs"></a>Katalogi biura obsługi
 
 [!include[banner](includes/banner.md)]
 

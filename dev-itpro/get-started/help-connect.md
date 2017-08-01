@@ -27,23 +27,20 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Łączenie z systemem Pomocy
-<a id="connect-the-help-system" class="xliff"></a>
+# <a name="connect-the-help-system"></a>Łączenie z systemem Pomocy
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie opisano składniki systemu Pomocy w programie Microsoft Dynamics 365 for Finance and Operations. Omówiono sposoby podłączania tych składników oraz podstawowe zasady tworzenia pomocy niestandardowej. 
 
-## Architektura modułu Pomoc
-<a id="help-architecture" class="xliff"></a>
+## <a name="help-architecture"></a>Architektura modułu Pomoc
 Poniższa ilustracja pokazuje części systemu Pomocy w programie Dynamics 365 for Finance and Operations. Wewnętrzny system Pomocy ściąga artykuły z witryny programu Dynamics 365 for Finance and Operations pod adresem https://docs.microsoft.com oraz przewodniki po zadaniach przechowywane w narzędziu do modelowania procesów biznesowych w usłudze Lifecycle Services (LCS). 
 > [!NOTE]
 > Funkcje oznaczone w diagramie gwiazdką (\*) są planowane, ale jeszcze niedostępne. [![Architektura modułu Pomoc](./media/help-architecture.png)](./media/help-architecture.png)
 
 
-## Łączenie z systemem Pomocy
-<a id="connecting-the-help-system" class="xliff"></a>
+## <a name="connecting-the-help-system"></a>Łączenie z systemem Pomocy
 > [!NOTE]
 > Karta **Przewodniki po zadaniach** jest obecnie niedostępna w programach Microsoft Dynamics 365 for Talent i Microsoft Dynamics 365 for Retail. Obecnie pracujemy nad włączeniem tej funkcjonalności w przyszłym wydaniu. Przewodniki po zadaniach w sekcji Rozpoczęcie pracy w module Talent pozostają dostępne i oferują podstawowe funkcje. Ponadto jest dostępna pomoc dla procedur w witrynie docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) dla aplikacji Retail i Talent.
  
@@ -63,8 +60,7 @@ Za pomocą strony **Parametry systemowe** administratorzy łączą elementy syst
 
 Po wykonaniu tych kroków można otworzyć okienko **pomocy** i kliknąć kartę **Przewodniki po zadaniach**. Teraz widać przewodniki po zadaniach, które mają zastosowanie do strony aktualnie wyświetlanej w programie Finance and Operations. Jeśli nie zostaną znalezione żadne przewodniki po zadaniach, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie.
 
-### Wyświetlanie przetłumaczonych przewodników po zadaniach
-<a id="showing-translated-task-guides" class="xliff"></a>
+### <a name="showing-translated-task-guides"></a>Wyświetlanie przetłumaczonych przewodników po zadaniach
 
 Przetłumaczone przewodniki po zadaniach po raz pierwszy umieszczono w ujednoliconej bibliotece APQC w wydaniu z maja 2016 r. oraz w bibliotece ułatwiającej rozpoczęcie pracy. Aby wyświetlić przetłumaczone przewodniki po zadaniach w pomocy w programie Finance and Operations, upewnij się, że masz połączenie z biblioteką z maja. Język wyświetlania przetłumaczonego przewodnika po zadaniu jest kontrolowany przez każdego użytkownika w ustawieniach języka w oknie **Opcje** &gt; **Preferencje**. 
 
@@ -73,14 +69,12 @@ Przetłumaczone przewodniki po zadaniach po raz pierwszy umieszczono w ujednolic
 > -   Jeśli przewodnik po zadaniu został przetłumaczony, po otwarciu przewodnika jego cały tekst będzie wyświetlany w wybranym języku.
 > -   Jeśli przewodnik po zadaniu nie został jeszcze przetłumaczony, po otwarciu przewodnika tylko część tekstu (formanty) będzie wyświetlana w wybranym języku.
 
-## Tworzenie pomocy niestandardowej
-<a id="creating-custom-help" class="xliff"></a>
+## <a name="creating-custom-help"></a>Tworzenie pomocy niestandardowej
 W programie Finance and Operations i aplikacji Retail można utworzyć pomoc niestandardową poprzez utworzenie nagrań zadań odpowiadających konkretnemu wdrożeniu i zapisanie ich w bibliotece procesów biznesowych LCS. Nie można tworzyć niestandardowych przewodników po zadaniach dla modułu Talent. 
 
 W przypadku partnerów: jeśli zostanie podniesiony poziom biblioteki do firmowej i zostanie ona uwzględniona w rozwiązaniu, będzie dostępna dla klientów. Można również utworzyć kopię ujednoliconej globalnej biblioteki APQC, a następnie otworzyć tę kopię, otwierać z niej nagrania zadań, modyfikować je i zapisywać nagrania z wprowadzonymi zmianami. Aby uzyskać więcej informacji, zobacz [Jak utworzyć nagrania zadań do użycia w dokumentacji lub na szkoleniach](../user-interface/task-recorder.md).
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Omówienie Pomocy](help-overview.md)

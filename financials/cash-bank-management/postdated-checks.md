@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Czeki postdatowane
-<a id="postdated-checks" class="xliff"></a>
+# <a name="postdated-checks"></a>Czeki postdatowane
 
 [!include[banner](../includes/banner.md)]
 

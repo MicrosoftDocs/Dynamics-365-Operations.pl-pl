@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Analizowanie trendów i wzorców sprzedaży
-<a id="analyze-sales-trends-and-patterns" class="xliff"></a>
+# <a name="analyze-sales-trends-and-patterns"></a>Analizowanie trendów i wzorców sprzedaży
 
 [!include[banner](includes/banner.md)]
 

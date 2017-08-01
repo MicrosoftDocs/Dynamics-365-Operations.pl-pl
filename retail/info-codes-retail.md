@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Kody informacji
-<a id="info-codes" class="xliff"></a>
+# <a name="info-codes"></a>Kody informacji
 
 [!include[banner](includes/banner.md)]
 
@@ -43,14 +42,12 @@ Kody informacji umożliwiają przechwytywanie danych w kasie punktu sprzedaży (
 -   Sprzedaż produktu w ramach zwykłej sprzedaży, sprzedaży z rabatem lub oferowania bezpłatnych produktów.
 -   Pozwala monitować kasjera, aby wprowadzał wartość lub wybierał pozycje z listy kodów podrzędnych przy otwieraniu szuflady kasy bez wykonywania operacji sprzedaży.
 
-## Grupa kodów informacji
-<a id="info-codes-group" class="xliff"></a>
+## <a name="info-codes-group"></a>Grupa kodów informacji
 W programie Dynamics 365 for Retail można utworzyć grupy kodów informacji. Grupy kodów informacji zapewniają większą elastyczność, umożliwiając definiowanie mniejszej ilości kodów informacji i używanie ich w bardziej zróżnicowany sposób. Grup kodów informacji można użyć w następujący sposób:
 -   Zdefiniuj mniejszą ilość kodów i ponowne je wykorzystuj w łatwy sposób. Kody informacji, które są uwzględnione w grupach kodów informacji nie mają wstępnie zdefiniowanych powiązań z innymi kodami informacji. Można dołączyć ten sam kod informacji do wielu grup kodów informacji, a następnie użyć priorytetów dotyczących kolejności wybierania w zależności od sytuacji.
 -   Połącz kody informacji z innymi kodami informacji lub grupami kodów informacji w celu zbierania informacji na temat produktu lub transakcji bez konieczności definiowania osobnego kodu informacji lub łączenia kodu informacji dla każdego scenariusza.
 
-## Przykłady kodów informacji
-<a id="info-code-examples" class="xliff"></a>
+## <a name="info-code-examples"></a>Przykłady kodów informacji
 **Przykład 1: Użyj ponownie kodów informacji** W przypadku wcześniejszych wersji systemu , można połączyć kody informacji tak, aby po uruchomieniu jednego kodu informacji, natychmiast został uruchamiany inny kod informacji. Na przykład w przypadku sprzedaży niektórych produktów kasjer może być monitowany o zapytanie klienta, czy życzy sobie zakupić baterie i gwarancje dla produktu. Przy sprzedaży innych produktów kasjer może być monitowany o zapytanie klienta, czy życzy sobie zakupić baterie i poproszenie o podanie kodu pocztowego. Jeśli utworzymy połączone kody informacji dla tych scenariuszy, musimy skonfigurować każdą odmianę kodu informacji, dzięki czemu kasjer po odczytaniu monitu poprosi odbiorcę o odpowiednie informacje. Jeśli używamy grup kodów informacji, wspólne kody informacji, takie jak pytania o baterie, mogą być ustawione jeden raz, a następnie i wykorzystywane ponownie w wielu grupach kodów informacji. Można także użyć priorytetów w grupach kodów informacji do określania kolejności wyświetlania monitów.
 
 

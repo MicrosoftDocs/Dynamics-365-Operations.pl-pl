@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Ocenianie wydajności sprzedaży według produktów
-<a id="assess-sales-performance-by-product" class="xliff"></a>
+# <a name="assess-sales-performance-by-product"></a>Ocenianie wydajności sprzedaży według produktów
 
 [!include[banner](includes/banner.md)]
 

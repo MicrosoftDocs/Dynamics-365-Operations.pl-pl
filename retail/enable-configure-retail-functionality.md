@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Inicjowanie danych początkowych w nowym środowisku sieci sprzedaży
-<a id="initialize-seed-data-in-a-new-retail-environment" class="xliff"></a>
+# <a name="initialize-seed-data-in-a-new-retail-environment"></a>Inicjowanie danych początkowych w nowym środowisku sieci sprzedaży
 
 [!include[banner](includes/banner.md)]
 

@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurowanie procesu importu zaawansowanego uzgadniania konta bankowego
-<a id="set-up-the-advanced-bank-reconciliation-import-process" class="xliff"></a>
+# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Konfigurowanie procesu importu zaawansowanego uzgadniania konta bankowego
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektro
 
 Konfiguracja importu wyciągów bankowych różni się i zależy od formatu elektronicznych wyciągów bankowych. Program Finance and Operations obsługuje standardowo trzy formaty wyciągów bankowych: ISO20022, MT940 i BAI2.
 
-## Przykładowe pliki
-<a id="sample-files" class="xliff"></a>
+## <a name="sample-files"></a>Przykładowe pliki
 We wszystkich trzech formatach są niezbędne pliki, które dokonują translacji wyciągu elektronicznego z oryginalnego formatu na format, którego można używać w programie Finance and Operations. Konieczne pliki zasobów znajdują się w węźle **Zasoby** w Eksploratorze aplikacji w programie Microsoft Visual Studio. Po znalezieniu plików skopiuj je do jednej znanej lokalizacji, co ułatwi ich przekazywanie na serwer w trakcie procesu konfigurowania.
 
 | Nazwa zasobu                                           | Nazwa pliku                            |
@@ -50,8 +48,7 @@ We wszystkich trzech formatach są niezbędne pliki, które dokonują translacji
 | BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt      | MT940XML-to-Reconciliation.xslt      |
 | BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
 
-## Przykłady formatów i układów technicznych i wyciągów bankowych
-<a id="examples-of-bank-statement-formats-and-technical-layouts" class="xliff"></a>
+## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Przykłady formatów i układów technicznych i wyciągów bankowych
 Poniżej przedstawiono przykłady definicji układów technicznych plików importu zaawansowanego uzgadniania konta bankowego i trzy powiązane przykładowe pliki wyciągów bankowych: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 | Definicja układu technicznego                             | Przykładowy plik wyciągu bankowego          |
@@ -62,8 +59,7 @@ Poniżej przedstawiono przykłady definicji układów technicznych plików impor
 
  
 
-## Konfigurowanie importowanie wyciągów bankowych w formacie ISO20022
-<a id="set-up-the-import-of-iso20022-bank-statements" class="xliff"></a>
+## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Konfigurowanie importowanie wyciągów bankowych w formacie ISO20022
 Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych ISO20022, używając do tego struktury jednostek danych.
 
 1.  Kliknij kolejno opcje **Obszary robocze** &gt; **Zarządzanie danymi**.
@@ -96,8 +92,7 @@ Ostatnim krokiem jest włączenie funkcji Zaawansowane uzgadnianie konta bankowe
 3.  Na karcie **Uzgodnienie** w opcji **Zaawansowane uzgadnianie konta bankowego** zaznacz wartość **Tak**.
 4.  W polu **Format wyciągu** ustaw format, który został utworzony wcześniej, np. **ISO20022**.
 
-## Konfigurowanie importowanie wyciągów bankowych w formacie MT940
-<a id="set-up-the-import-of-mt940-bank-statements" class="xliff"></a>
+## <a name="set-up-the-import-of-mt940-bank-statements"></a>Konfigurowanie importowanie wyciągów bankowych w formacie MT940
 Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych MT940, używając do tego struktury jednostek danych.
 
 1.  Kliknij kolejno opcje **Obszary robocze** &gt; **Zarządzanie danymi**.
@@ -133,8 +128,7 @@ Ostatnim krokiem jest włączenie funkcji Zaawansowane uzgadnianie konta bankowe
 4.  Kiedy zostanie wyświetlony monit o potwierdzenie wyboru i włączenie funkcji Zaawansowane uzgadnianie konta bankowego, kliknij przycisk **OK**.
 5.  W polu **Format wyciągu** ustaw format, który został utworzony wcześniej, np. **MT940**.
 
-## Konfigurowanie importowanie wyciągów bankowych w formacie BAI2
-<a id="set-up-the-import-of-bai2-bank-statements" class="xliff"></a>
+## <a name="set-up-the-import-of-bai2-bank-statements"></a>Konfigurowanie importowanie wyciągów bankowych w formacie BAI2
 Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych BAI2, używając do tego struktury jednostek danych.
 
 1.  Kliknij kolejno opcje **Obszary robocze** &gt; **Zarządzanie danymi**.
@@ -170,8 +164,7 @@ Ostatnim krokiem jest włączenie funkcji Zaawansowane uzgadnianie konta bankowe
 4.  Kiedy zostanie wyświetlony monit o potwierdzenie wyboru i włączenie funkcji Zaawansowane uzgadnianie konta bankowego, kliknij przycisk **OK**.
 5.  W polu **Format wyciągu** ustaw format, który został utworzony wcześniej, np. **BAI2**.
 
-## Test działania importu wyciągu z konta
-<a id="test-the-bank-statement-import" class="xliff"></a>
+## <a name="test-the-bank-statement-import"></a>Test działania importu wyciągu z konta
 Ostatnim krokiem jest sprawdzenie, czy faktycznie jest możliwe zaimportowanie wyciągu bankowego.
 
 1.  Wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Konta bankowe**.

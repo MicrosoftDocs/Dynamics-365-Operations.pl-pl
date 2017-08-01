@@ -23,8 +23,7 @@ ms.lasthandoff: 06/14/2017
 
 ---
 
-# Opłata zwrotna VAT
-<a id="reverse-charge-vat" class="xliff"></a>
+# <a name="reverse-charge-vat"></a>Opłata zwrotna VAT
 W tym temacie opisano standardową metodę konfigurowania odwróconego podatku od towarów i usług (VAT) dla krajów europejskich.
 
 Podatek odwrócony to schemat podatkowy, w którym odpowiedzialność za rozliczenie i sprawozdawczość podatku VAT jest przenoszona ze sprzedawcy na nabywcę towarów i/lub usług. W związku z tym odbiorcy towarów i/lub usług raportują w swoich deklaracjach VAT zarówno należny podatek VAT (w roli sprzedawcy), jak i naliczony podatek VAT (w roli nabywcy).
@@ -33,8 +32,7 @@ Dyrektywa Unii Europejskiej (UE) umożliwia państwom członkowskim samodzielne 
 
 Aby zastosować podatek odwrócony, należy skonfigurować następujące ustawienia.
 
-## Ustawianie kodów podatków
-<a id="set-up-sales-tax-codes" class="xliff"></a>
+## <a name="set-up-sales-tax-codes"></a>Ustawianie kodów podatków
 Zalecamy stosowanie oddzielnych kodów podatków dla operacji zakupu i sprzedaży.
 
 <table>
@@ -58,8 +56,7 @@ Ten kod podatku ujemnego należy przypisać do grupy podatków od towarów, po c
 </tbody>
 </table>
 
-## Konfigurowanie grup podatków i grup podatków dla towarów
-<a id="set-up-sales-tax-groups-and-item-sales-tax-groups" class="xliff"></a>
+## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Konfigurowanie grup podatków i grup podatków dla towarów
 Zalecamy stosowanie oddzielnych grup podatków dla operacji zakupu i sprzedaży.
 
 <table>
@@ -77,12 +74,10 @@ Zalecamy stosowanie oddzielnych grup podatków dla operacji zakupu i sprzedaży.
 </tr>
 </table>
 
-## Konfigurowanie grup podatku odwróconego
-<a id="set-up-reverse-charge-groups" class="xliff"></a>
+## <a name="set-up-reverse-charge-groups"></a>Konfigurowanie grup podatku odwróconego
 Na stronie **Grupy towarów sprzedawanych z opłatą zwrotną** (**Podatek** > **Ustawienia** > **Podatek** > **Grupy towarów sprzedawanych z opłatą zwrotną**) można zdefiniować grupy produktów lub usług albo pojedyncze produkty lub usługi, do których będzie stosowany podatek odwrócony. Dla każdej grupy towarów z podatkiem odwróconym utwórz listę towarów, grup towarów i kategorii do sprzedaży i/lub zakupów.
 
-## Konfigurowanie reguł podatku odwróconego
-<a id="set-up-reverse-charge-rules" class="xliff"></a>
+## <a name="set-up-reverse-charge-rules"></a>Konfigurowanie reguł podatku odwróconego
 Na stronie **Reguły opłaty zwrotnej** (**Podatek** > **Ustawienia** > **Podatek** > **Reguły opłaty zwrotnej**) można zdefiniować reguły stosowania do transakcji zakupu i sprzedaży. Można skonfigurować cały zbiór reguł stosowania podatku odwróconego. Dla każdej reguły ustaw następujące pola:
 
 - **Typ dokumentu** — Zaznacz opcję **Zamówienie zakupu**, **Arkusz faktur od dostawców**, **Zamówienie sprzedaży**, **Faktura niezależna**, **Arkusz faktur dla odbiorcy** i/lub **Faktura dostawcy**.
@@ -99,18 +94,15 @@ Ponadto można określić, czy po spełnieniu warunku dla tego wiersza dokumentu
 - **Monituj** — Jest wyświetlane powiadomienie potwierdzające, że można zastosować podatek odwrócony.
 - **Ustaw** — Wiersz dokumentu jest aktualizowany bez dodatkowego powiadamiania.
 
-## Konfigurowanie parametrów domyślnych
-<a id="set-up-default-parameters" class="xliff"></a>
+## <a name="set-up-default-parameters"></a>Konfigurowanie parametrów domyślnych
 Aby włączyć tę funkcję, na stronie **Parametry księgi głównej** na karcie **Opłata zwrotna** w opcji **Włącz opłatę zwrotną** zaznacz wartość **Tak**. W polach **Grupa podatków dla zamówienia zakupu** i **Grupa podatków dla zamówienia sprzedaży** zaznacz domyślne grupy podatków. Jeśli jest spełniony warunek zastosowania podatku odwróconego, wiersz zamówienia zakupu lub sprzedaży jest aktualizowany o te grupy podatków.
 
-## Podatek odwrócony w fakturze sprzedaży
-<a id="reverse-charge-on-a-sales-invoice" class="xliff"></a>
+## <a name="reverse-charge-on-a-sales-invoice"></a>Podatek odwrócony w fakturze sprzedaży
 W sprzedaży objętej schematem podatku odwróconego sprzedawca nie nalicza podatku VAT. Zamiast tego faktura wskazuje towary podlegające odwróconemu podatkowi VAT i sumę podatku VAT w odwróceniu.
 
 Podczas księgowania faktury sprzedaży zawierającej podatek odwrócony transakcje podatkowe mają kierunek podatku **Podatek należny** i zerową wartość podatku, a pole wyboru **Opłata zwrotna** jest zaznaczone.
 
-## Podatek odwrócony w fakturze zakupu
-<a id="reverse-charge-on-a-purchase-invoice" class="xliff"></a>
+## <a name="reverse-charge-on-a-purchase-invoice"></a>Podatek odwrócony w fakturze zakupu
 W zakupach w schemacie podatku odwróconego nabywca, który otrzymuje fakturę zawierającą podatek odwrócony, na potrzeby księgowania podatku VAT występuje jako nabywca i sprzedawca.
 
 Podczas księgowania faktury zakupu zawierającej podatek odwrócony są tworzone dwie transakcje podatku. Jedna transakcja ma kierunek podatku **Podatek naliczony**. Druga transakcja ma kierunek podatku **Podatek należny**, a pole wyboru **Opłata zwrotna** jest zaznaczone.

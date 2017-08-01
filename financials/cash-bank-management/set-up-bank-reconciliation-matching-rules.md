@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurowanie reguł uzgadniania wyciągów bankowych
-<a id="set-up-bank-reconciliation-matching-rules" class="xliff"></a>
+# <a name="set-up-bank-reconciliation-matching-rules"></a>Konfigurowanie reguł uzgadniania wyciągów bankowych
 
 [!include[banner](../includes/banner.md)]
 

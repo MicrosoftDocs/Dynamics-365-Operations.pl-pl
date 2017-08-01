@@ -26,24 +26,21 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Wyszukiwanie akcji
-<a id="action-search" class="xliff"></a>
+# <a name="action-search"></a>Wyszukiwanie akcji
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym artykule opisano funkcję wyszukiwania akcji dostępną w programie Microsoft Dynamics 365 for Finance and Operations. Funkcja pomaga znajdować i wykonywać czynności na stronie.
 
-Wprowadzenie
-<a id="introduction" class="xliff"></a>
+<a name="introduction"></a>Wprowadzenie
 ------------
 
 Strony w programie Microsoft Dynamics 365 for Finance and Operations głównie wyświetlają polecenia w okienkach akcji, zarówno w samodzielnym okienku akcji, które wyświetla się u góry strony, jak i na paskach narzędzi, które pojawiają się w różnych częściach strony. W poprzednich wersjach funkcja klawiszy skrótu dawała szybki dostęp do dowolnego przycisku w okienku akcji po naciśnięciu klawisza Alt w kombinacji z właściwą literą. 
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) W aktualnej wersji programu Finance and Operations klawisze skrótu nie są już dostępne i zostały zastąpione przez funkcję wyszukiwania akcji. Ta nowa funkcja umożliwia szybkie wyszukiwanie i korzystanie z przycisków w dowolnym widocznym okienku akcji.
 
-## Korzystanie z funkcji wyszukiwania akcji
-<a id="using-action-search" class="xliff"></a>
+## <a name="using-action-search"></a>Korzystanie z funkcji wyszukiwania akcji
 Aby skorzystać z funkcji wyszukiwania akcji, wykonaj następujące kroki.
 
 1.  W okienku akcji kliknij pole **wyszukiwanie akcji**. (Pole **wyszukiwanie akcji** zawiera ikonę lupy).
@@ -56,8 +53,7 @@ Po uruchomieniu przycisku wyróżnienie na ekranie wraca do poprzedniego miejsca
 
 Wyszukiwanie akcji można też uruchomić za pomocą kombinacji klawiszy Ctrl+/ lub Alt+Q. Naciśnij skrót klawiaturowy ponownie, aby wyróżnienie wróciło do ostatniej pozycji na stronie.
 
-## Opis listy wyników
-<a id="understanding-the-results-list" class="xliff"></a>
+## <a name="understanding-the-results-list"></a>Opis listy wyników
 Często w programie Finance and Operations trzeba znać zarówno lokalizację, jak kontekst przycisku, aby w pełni rozumieć, do czego służy. Dlatego dla każdego elementu na liście wyników wyświetlane są dodatkowe informacje, które pomagają zorientować się, które przyciski są widoczne na liście. W szczególności wyświetlana jest „ścieżka” przycisku. Ścieżka może wyróżniać etykiety następujących elementów interfejsu użytkownika:
 
 -   Karta Okienko akcji
@@ -74,8 +70,7 @@ W poprzednim przykładzie wyszukiwanie akcji dało wyniki ze standardowego okien
 
 [![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
-## Wyszukiwanie akcji a wyszukiwanie nawigacji
-<a id="action-search-vs-navigation-search" class="xliff"></a>
+## <a name="action-search-vs-navigation-search"></a>Wyszukiwanie akcji a wyszukiwanie nawigacji
 Wyszukiwanie akcji służy do znajdowania i wykonywania akcji na stronie, Do znajdowania i elementów i poruszania się na stronach w programie Finance and Operations służy oddzielny mechanizm wyszukiwania. Aby uzyskać więcej informacji na temat tej funkcji, zobacz artykuł [Nawigacja z wyszukiwaniem](navigation-search.md).
 
 

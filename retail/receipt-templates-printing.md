@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Szablony paragonów i drukowanie
-<a id="receipt-templates-and-printing" class="xliff"></a>
+# <a name="receipt-templates-and-printing"></a>Szablony paragonów i drukowanie
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ W tym artykule opisano modyfikowanie układów formularzy w celu sterowania spos
 
 **Ważne:** Musisz ustawić układy formularza i profile paragonów, aby drukować potwierdzenia i inne dokumenty z aplikacji Retail Modern POS i Cloud POS. Można umieścić wiele układów formularzy w profilu paragonu. Następnie można przypisać profil paragonu do drukarki, modyfikując profil sprzętu.
 
-## Konfigurowanie formatu paragonów
-<a id="set-up-a-receipt-format" class="xliff"></a>
+## <a name="set-up-a-receipt-format"></a>Konfigurowanie formatu paragonów
 1.  Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Punkt sprzedaży** &gt; **Formaty paragonu**.
 2.  Na stronie **Format paragonu** kliknij opcję **Nowy**, aby utworzyć nowy układ paragonu lub wybrać istniejący układ.
 3.  W polu **Format paragonu** wprowadź identyfikator układu formularza, a następnie wybierz typ paragonu, dla którego będzie używany ten układ. Można także wprowadzić opis i krótką nazwę paragonu w polu **Tytuł**.
@@ -49,8 +47,7 @@ W tym artykule opisano modyfikowanie układów formularzy w celu sterowania spos
     -   **Monituj użytkownika** — użytkownik jest proszony o wydrukowanie paragonu.
     -   **Zgodnie z wymogami** — ta opcja jest używana tylko dla paragonów za upominek. Gdy ta opcja jest zaznaczona, użytkownik może drukować paragon ze strony **zmiany**, jeśli paragon za upominek jest wymagany.
 
-## Projektowanie formatu paragonu
-<a id="design-a-receipt-format" class="xliff"></a>
+## <a name="design-a-receipt-format"></a>Projektowanie formatu paragonu
 Użyj konstruktor układu formularza, aby w sposób graficzny stworzyć układ formularza dokumentu. Strona **Projektant formatu paragonu** zawiera trzy części: **Nagłówek**, **Wiersze** i **Stopka**. Niektóre typy układu formularza używają elementów ze wszystkich trzech sekcji, natomiast inne typy elementów tylko z jednej lub z dwóch części. Aby wyświetlić elementy, które są dostępne dla każdej sekcji, kliknij odpowiedni przycisk w okienku nawigacji po lewej stronie strony.
 
 1.  Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Punkt sprzedaży** &gt; **Formaty paragonu**.
@@ -70,8 +67,7 @@ Użyj konstruktor układu formularza, aby w sposób graficzny stworzyć układ f
     -   **Rozmiar czcionki**— można ustawić rozmiar czcionki **Zwykła** lub **Duża**. Duże litery są dwa razy wyższa niż zwykłe. Z tego względu stosowanie dużych liter może powodować nakładanie się tekstu na paragonie.
     -   **Usuń** — ten przycisk należy kliknąć, aby usunąć zaznaczony element z układu formularza.
 
-## Przypisywanie profili paragonów
-<a id="assign-receipt-profiles" class="xliff"></a>
+## <a name="assign-receipt-profiles"></a>Przypisywanie profili paragonów
 Profile paragonów są przypisywane bezpośrednio do drukarki za pomocą profilu sprzętu.
 
 1.  Otwórz profil sprzętu, klikając kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktu sprzedaży** &gt; **Profil sprzętu**.

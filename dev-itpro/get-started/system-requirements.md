@@ -25,16 +25,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Wymagania systemowe
-<a id="system-requirements" class="xliff"></a>
+# <a name="system-requirements"></a>Wymagania systemowe
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie wymieniono wymagania systemowe aktualnej wersji programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.
 
-Obsługiwane przeglądarki
-<a id="supported-web-browsers" class="xliff"></a>
+<a name="supported-web-browsers"></a>Obsługiwane przeglądarki
 ----------------------
 
 Aplikacja internetowa może działać w każdej z poniższych przeglądarek w kombinacji z określonym systemem operacyjnym:
@@ -54,8 +52,7 @@ Aby znaleźć najnowszą wersję dla każdej przeglądarki, przejdź do witryny 
 -   Aby wyświetlać podgląd plików PDF, zalecamy używanie przeglądarek takich jak Microsoft Edge (nowszej publicznie dostępnej wersji) w systemie Windows 10 lub Google Chrome (nowszej publicznie dostępnej wersji) w systemach Windows 10, Windows 8.1, Windows 8 i Windows 7 lub na tablecie Google Nexus 10.
 
 
-### Obsługiwane przeglądarki dla aplikacji Retail Cloud POS
-<a id="supported-web-browsers-for-retail-cloud-pos" class="xliff"></a>
+### <a name="supported-web-browsers-for-retail-cloud-pos"></a>Obsługiwane przeglądarki dla aplikacji Retail Cloud POS
 
 Aplikacja Retail Cloud POS może działać w każdej z poniższych przeglądarek w kombinacji z określonym systemem operacyjnym:
 
@@ -63,8 +60,7 @@ Aplikacja Retail Cloud POS może działać w każdej z poniższych przeglądarek
 -   Internet Explorer 11 w systemach Windows 10, Windows 8.1 lub Windows 7
 -   Chrom (najnowsza publicznie dostępna wersja) w systemie Windows 10, Windows 8.1 lub Windows 7
 
-## Wymagania sieciowe
-<a id="network-requirements" class="xliff"></a>
+## <a name="network-requirements"></a>Wymagania sieciowe
 -   Dynamics 365 for Finance and Operations Enterprise Edition jest zaprojektowany dla sieci o opóźnieniu nieprzekraczającym 250-300 milisekund (ms). Jest to opóźnienie na drodze od klienta przeglądarkowego do centrum danych Microsoft Azure zawierającego usługę Finance and Operations. Zaleca się przetestowanie opóźnienia w sieci na stronie <http://www.azurespeed.com>.
 -   Wymagania dotyczące przepustowości zależą od konkretnego scenariusza. Większość typowych scenariuszy wymaga przepustowości powyżej 50 kilobajtów na sekundę (KB/s). Jednak dla scenariuszy z dużymi obciążeniami przesyłania danych, takich jak używanie obszarów roboczych czy scenariusze obejmujące rozbudowaną personalizację, zaleca się większą przepustowość sieci.
 
@@ -72,25 +68,20 @@ Ogólnie rzecz biorąc program Finance and Operations jest zoptymalizowany dla I
 
 **Ostrzeżenie:** Nie obliczaj wymagań dotyczących przepustowości z lokalizacji klienta poprzez pomnożenie liczby użytkowników przez minimalną wymaganą przepustowość. Równoczesne użytkowanie danej lokalizacji przez wiele osób jest trudne do obliczenia. Dla odbiorców, którzy się boją, że ciężko będzie im spełnić wymagania dotyczące przepustowości, użyj wersji zapoznawczej programu Finance and Operations.
 
-## Wymagania dotyczące środowiska .NET Framework
-<a id="net-framework-requirements" class="xliff"></a>
+## <a name="net-framework-requirements"></a>Wymagania dotyczące środowiska .NET Framework
 Wszystkie aplikacje ClickOnce, takie jak agent rozsyłania dokumentów, wymagają środowiska .NET Framework w wersji 4.6.2. Instrukcje instalacji znajdują się w temacie [Instalowanie środowiska .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
 
-## Obsługiwane aplikacje pakietu Microsoft Office
-<a id="supported-microsoft-office-applications" class="xliff"></a>
+## <a name="supported-microsoft-office-applications"></a>Obsługiwane aplikacje pakietu Microsoft Office
 -   Aby można było uruchamiać dodatki programów Microsoft Excel i Word, musi być zainstalowany pakiet Microsoft Office 2016 dla systemu Windows lub Mac. Aby uzyskać więcej szczegółów na temat wymagań dotyczących wersji, zobacz [Rozwiązywanie problemów z integracją pakietu Office](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).
 -   Aby wyświetlać dokumenty generowane przez funkcję Eksportuj do programu Excel lub Eksportuj do programu Word, należy mieć zainstalowany pakiet Microsoft Office 2007 lub nowszy.
 
-## Wymagania dotyczące programu Retail Modern POS
-<a id="retail-modern-pos-requirements" class="xliff"></a>
-### Obsługiwane systemy operacyjne
-<a id="supported-operating-systems" class="xliff"></a>
+## <a name="retail-modern-pos-requirements"></a>Wymagania dotyczące programu Retail Modern POS
+### <a name="supported-operating-systems"></a>Obsługiwane systemy operacyjne
 
 -   Aplikacja Retail Modern POS jest 32-bitowa, ale będzie działała w architekturach x86 i x64.
 -   Aplikacja Retail Modern POS jest obsługiwana w systemie Windows 10 tylko w wydaniach Pro, Enterprise i Enterprise Long Term Servicing Branch (LTSB).
 
-### Minimalne wymagania systemowe
-<a id="minimum-system-requirements" class="xliff"></a>
+### <a name="minimum-system-requirements"></a>Minimalne wymagania systemowe
 
 -   Minimalna obsługiwana rozdzielczość wynosi 1280 × 1024 piksele.
 -   Komputer, na którym jest uruchamiany program Retail Modern POS, musi spełniać następujące wymagania:
@@ -98,10 +89,8 @@ Wszystkie aplikacje ClickOnce, takie jak agent rozsyłania dokumentów, wymagaj�
     -   Musi mieć najmniej 3 gigabajty (GB) pamięci RAM.
     -   Musi mieć dostęp do Internetu.
 
-## Wymagania dotyczące programu Retail hardware station
-<a id="retail-hardware-station-requirements" class="xliff"></a>
-### Obsługiwane systemy operacyjne
-<a id="supported-operating-systems" class="xliff"></a>
+## <a name="retail-hardware-station-requirements"></a>Wymagania dotyczące programu Retail hardware station
+### <a name="supported-operating-systems"></a>Obsługiwane systemy operacyjne
 
 -   Aplikacja Retail hardware station jest 32-bitowa, ale będzie działała w architekturach x86 i x64.
 -   Aplikacja Retail hardware station jest obsługiwana w następujących systemach operacyjnych:
@@ -109,18 +98,15 @@ Wszystkie aplikacje ClickOnce, takie jak agent rozsyłania dokumentów, wymagaj�
     -   Windows 8.1 z aktualizacją 1 w wydaniach Professional, Enterprise i Embedded
     -   Windows 10 w wydaniach Pro, Enterprise i Enterprise LTSB
 
-### Minimalne wymagania systemowe
-<a id="minimum-system-requirements" class="xliff"></a>
+### <a name="minimum-system-requirements"></a>Minimalne wymagania systemowe
 
 Komputer musi spełniać wszystkie wymagania systemowe dotyczące instalowania i używania następujących składników:
 
 -   Internetowe usługi informacyjne (IIS)
 -   Sprzęt innych firm
 
-## Wymagania dotyczące programu Retail Store Scale Unit
-<a id="retail-store-scale-unit-requirements" class="xliff"></a>
-### Obsługiwane systemy operacyjne
-<a id="supported-operating-systems" class="xliff"></a>
+## <a name="retail-store-scale-unit-requirements"></a>Wymagania dotyczące programu Retail Store Scale Unit
+### <a name="supported-operating-systems"></a>Obsługiwane systemy operacyjne
 
 -   Aplikacja Retail Store Scale Unit jest 32-bitowa, ale będzie działała w architekturach x86 i x64.
 -   Aplikacja Retail Store Scale Unit jest obsługiwana w następujących systemach operacyjnych:
@@ -128,24 +114,20 @@ Komputer musi spełniać wszystkie wymagania systemowe dotyczące instalowania i
     -   Windows 8.1 z aktualizacją 1 w wydaniach Professional, Enterprise i Embedded
     -   Windows 10 w wydaniach Pro, Enterprise i Enterprise LTSB
 
-### Minimalne wymagania systemowe
-<a id="minimum-system-requirements" class="xliff"></a>
+### <a name="minimum-system-requirements"></a>Minimalne wymagania systemowe
 
 -   4 GB pamięci RAM
 -   Procesor o szczytowej szybkości każdego rdzenia 1,6 GHz (co najmniej dwa rdzenie)
 -   Co najmniej 10 GB wolnego miejsca (baza danych kanałów można wymagać dużej ilości miejsca)
 
-### Zalecane wymagania systemowe
-<a id="recommended-system-requirements" class="xliff"></a>
+### <a name="recommended-system-requirements"></a>Zalecane wymagania systemowe
 
 -   6 GB pamięci RAM
 -   Procesor i7 o szczytowej szybkości każdego rdzenia 2,4 GHz (lub równoważny) (zalecane są cztery rdzenie)
 -   Co najmniej 10 GB wolnego miejsca (baza danych kanałów można wymagać dużej ilości miejsca)
 
-## Wymagania dotyczące aplikacji łącznika
-<a id="connector-requirements" class="xliff"></a>
-### Obsługiwane systemy operacyjne
-<a id="supported-operating-systems" class="xliff"></a>
+## <a name="connector-requirements"></a>Wymagania dotyczące aplikacji łącznika
+### <a name="supported-operating-systems"></a>Obsługiwane systemy operacyjne
 
 -   Oprogramowanie łącznika systemu Microsoft Dynamics AX ma dwie osobne wersje instalacyjne — **Usługa Async Server Connector** i **Usługa Real-Time service dla systemu Dynamics AX 2012 R3**.
 -   Oba składniki są 32-bitowymi aplikacjami, ale będą działały w architekturach x86 i x64.
@@ -155,19 +137,16 @@ Komputer musi spełniać wszystkie wymagania systemowe dotyczące instalowania i
     -   Windows 10 w wydaniach Pro, Enterprise i Enterprise LTSB
     -   Windows Server 2012 R2, Windows Server 2016
 
-### Minimalne wymagania systemowe
-<a id="minimum-system-requirements" class="xliff"></a>
+### <a name="minimum-system-requirements"></a>Minimalne wymagania systemowe
 
 -   2 GB pamięci RAM, zalecane 4 GB pamięci RAM
 -   Procesor o szczytowej szybkości każdego rdzenia 1,6 GHz (co najmniej dwa rdzenie)
 -   Co najmniej 10 GB wolnego miejsca (baza danych kanałów można wymagać dużej ilości miejsca)
 
-## Wymagania dotyczące instalowania na lokalnych maszynach wirtualnych
-<a id="requirements-for-development-on-local-vms" class="xliff"></a>
+## <a name="requirements-for-development-on-local-vms"></a>Wymagania dotyczące instalowania na lokalnych maszynach wirtualnych
 Szczegółowe informacje o wymaganiach dotyczących instalowania na lokalnych maszynach wirtualnych (VM) zawiera temat [Maszyny wirtualne uruchamiane lokalnie](../dev-tools/access-instances.md).
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Pobieranie kopii ewaluacyjnej programu Dynamics 365 for Finance and Operations Enterprise Edition](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy)

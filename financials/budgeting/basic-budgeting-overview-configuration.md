@@ -58,7 +58,7 @@ Należy określić „model budżetu” odnoszący się do wszystkich lub tylko 
 > [!NOTE] 
 > W przypadku korzystania z kontroli budżetu można powiązać tylko jeden model budżetu z jednym okresem cyklu budżetu. 
 
-Należy utworzyć *kody budżetu *określające typ transakcji budżetu na potrzeby zapisywania wszelkich powiązanych przepływów pracy. Kody budżetu mogą obsługiwać następujące typy budżetu:
+Należy utworzyć *kody budżetu* określające typ transakcji budżetu na potrzeby zapisywania wszelkich powiązanych przepływów pracy. Kody budżetu mogą obsługiwać następujące typy budżetu:
 
 -   Budżet pierwotny
 -   Przenieś
@@ -79,7 +79,7 @@ Menedżer budżetu może sprawdzić bieżący stan budżetu w obszarze roboczym 
 
 Strona zapytań **Budżet a wartości rzeczywiste** pozwala przejść do szczegółów budżetu w porównaniu z wartościami rzeczywistymi. Wybierz wiersz na stronie zapytania, a następnie kliknij przycisk **Salda okresowe**, aby wyświetlić wartości rzeczywiste w podziale na okresy obrachunkowe. Strona **Zapisów na koncie budżetu** umożliwia przeglądanie szczegółowych kwot budżetu we wpisach do rejestru budżetu. Strona **Zapisy w arkuszu finansowym** otwiera transakcje księgi uwzględnione w obliczonej kwocie **rzeczywistej**. 
 
-Firma, która korzysta z funkcji planowania budżetu może tworzyć i używać *prognoz budżetowych *w obszarze roboczym **Budżety i prognozy księgi**.
+Firma, która korzysta z funkcji planowania budżetu może tworzyć i używać *prognoz budżetowych* w obszarze roboczym **Budżety i prognozy księgi**.
 
 
 

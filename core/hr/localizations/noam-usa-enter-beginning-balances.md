@@ -26,8 +26,7 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Wprowadzanie sald początkowych listy płac
-<a id="enter-payroll-beginning-balances" class="xliff"></a>
+# <a name="enter-payroll-beginning-balances"></a>Wprowadzanie sald początkowych listy płac
 
 [!include[banner](../../includes/banner.md)]]
 
@@ -52,12 +51,10 @@ W poniższym przykładzie pokazano, jak można wprowadzić salda początkowe lis
 > [!NOTE] 
 > Jeśli chcesz odtworzyć te same czynności poniżej, możesz użyć danych demonstracyjnych. Dane demonstracyjne można pobrać z witryny PartnerSource.
 
-### A. Konfigurowanie używania kodów zarobków w saldach początkowych listy płac
-<a id="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances" class="xliff"></a>
+### <a name="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances"></a>A. Konfigurowanie używania kodów zarobków w saldach początkowych listy płac
 Podczas wprowadzania sald początkowych listy płac upewnij się, że kody zarobków, których będziesz używać, są skonfigurowane z włączoną opcją „Zezwalaj na edytowanie stawek w sprawozdaniu o zarobkach”. Dzięki temu będzie można ręcznie wprowadzać kwoty ze starszych systemów. 
 
-### B. Tworzenie sprawozdania o zarobkach dla pracownika w celu uzyskania salda początkowego
-<a id="b-create-earnings-statement-for-an-employee-to-have-a-beginning-balance" class="xliff"></a>
+### <a name="b-create-earnings-statement-for-an-employee-to-have-a-beginning-balance"></a>B. Tworzenie sprawozdania o zarobkach dla pracownika w celu uzyskania salda początkowego
 W tym kroku jest ręcznie tworzone sprawozdanie o zarobkach dla każdego pracownika za ostatni okres płac ze starszego systemu, co powoduje utworzenie wierszy sprawozdania o zarobkach w nowym systemie listy płac. Wprowadź jeden wiersz dla każdego kodu zarobków oraz sumę od początku roku i godziny. Oto przykładowe czynności:
 
 1. Otwórz stronę **Wszystkie sprawozdania o zarobkach** i kliknij przycisk **Nowy**.  
@@ -121,12 +118,10 @@ Wiersz 3: karta **Wiersz sprawozdania o zarobkach**
 
 Kliknij przycisk **OK** i zamknij okno **Dziennik informacyjny**.
 
-#### Dlaczego podczas generowania sprawozdań o wynagrodzeniach pole wyboru Wyłącz księgowanie musi być zaznaczone?
-<a id="why-disable-accounting-checkbox-needs-to-be-turned-on-when-generating-pay-statements" class="xliff"></a>
+#### <a name="why-disable-accounting-checkbox-needs-to-be-turned-on-when-generating-pay-statements"></a>Dlaczego podczas generowania sprawozdań o wynagrodzeniach pole wyboru Wyłącz księgowanie musi być zaznaczone?
 Zapobiega to rozdzielaniu wierszy w sprawozdaniu o wynagrodzeniach i ich księgowaniu w księdze głównej. Nie chcesz księgować tego salda początkowego ze sprawozdania o wynagrodzeniach, ponieważ jego wartości zostały już przeniesione do księgi głównej ze starego systemu. To ładowanie salda jest używane wyłącznie do celów raportowania i ograniczania.
 
-### C. Tworzenie sprawozdań o wynagrodzeniach dla pracowników
-<a id="c-create-pay-statements-for-employees" class="xliff"></a>
+### <a name="c-create-pay-statements-for-employees"></a>C. Tworzenie sprawozdań o wynagrodzeniach dla pracowników
 Po wygenerowaniu sprawozdań o wynagrodzeniach mających salda początkowe należy zweryfikować, czy sprawozdania o wynagrodzeniach dokładnie odzwierciedlają dane listy płac. Należy także ręcznie zaktualizować dane świadczeń i podatków, aby były one zgodne z wartościami w poprzednim systemie listy płac. Po upewnieniu się, że kwoty z poprzedniego systemu listy płac są zgodne z kwotami w bieżących sprawozdaniach o wynagrodzeniach, należy sfinalizować sprawozdania o wynagrodzeniach.
 
 1. Otwórz stronę **Wszystkie sprawozdania o wynagrodzeniach**.
@@ -180,8 +175,7 @@ Po wygenerowaniu sprawozdań o wynagrodzeniach mających salda początkowe nale�
 
 W razie potrzeby ten sam proces można wykonać w przyrostach kwartalnych dla wszystkich poprzednich kwartałów w każdym roku. Jest to potrzebne tylko wtedy, gdy odbiorca chce widzieć dane z podziałem na kwartały bez wracania do starego systemu.
 
-## W razie popełnienia błędu przy wprowadzaniu sald początkowych dla pracownika
-<a id="if-you-make-a-mistake-entering-beginning-balances-for-an-employee" class="xliff"></a>
+## <a name="if-you-make-a-mistake-entering-beginning-balances-for-an-employee"></a>W razie popełnienia błędu przy wprowadzaniu sald początkowych dla pracownika
 Istnieje możliwość wycofywania i ponownego wprowadzania transakcji. Aby wystornować transakcję, wystarczy tylko wykonać następujące czynności na stronie **Wszystkie sprawozdania o wynagrodzeniach**.
 
 1. Kliknij przycisk **Wycofaj**.

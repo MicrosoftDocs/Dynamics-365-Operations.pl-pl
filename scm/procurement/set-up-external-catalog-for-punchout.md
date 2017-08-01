@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut eProcurement
-<a id="set-up-an-external-catalog-for-punchout-eprocurement" class="xliff"></a>
+# <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut eProcurement
 
 Używając zewnętrznego katalogu, można mieć pewność, że informacje o produktach i cenach, które następnie będą przetwarzane w programie Dynamics 365 for Finance and Operations Enterprise Edition w wersji z lipca 2017 roku, są dokładne i aktualne. Zapotrzebowanie można następnie zatwierdzić i przekonwertować na zamówienie zakupu, które zostanie złożone u dostawcy.
 
@@ -35,13 +34,11 @@ Po skonfigurowaniu zewnętrznego katalogu pracownik przygotowujący zapotrzebowa
 
 Aby można było skonfigurować taką komunikację, dostawca musi podać elementy informacji, których będziesz używać w konfiguracji zewnętrznego katalogu, takie jak tożsamość, domena firmy nabywcy (na przykład „DUNS” i „Numer DUNS”), poświadczenia oraz adres URL, pod którym jest dostępny katalog dostawcy.
 
-## Konfigurowanie zewnętrznego katalogu
-<a id="setting-up-an-external-catalog" class="xliff"></a>
+## <a name="setting-up-an-external-catalog"></a>Konfigurowanie zewnętrznego katalogu
 
 Zewnętrzny katalog powinien umożliwiać pracownikowi wprowadzającemu zapotrzebowanie na zakup przejście do zewnętrznej witryny w celu wybrania produktów. Produkty wybrane przez pracownika z zewnętrznego katalogu są zwracane do programu Dynamics 365 for Finance and Operations z aktualnymi informacjami cenowymi i z tego miejsca mogą zostać dodane do zapotrzebowania na zakup. Celem nie jest umożliwienie pracownikom składania zamówień bezpośrednio w zewnętrznej witrynie. Podczas konfigurowania zewnętrznego katalogu należy upewnić się, że celem witryny dostępnej przez zewnętrzny katalog jest tylko zebranie informacji ofertowych, a nie złożenie faktycznego zamówienia.
 
-### Aby skonfigurować zewnętrzny katalog dostawcy, należy wykonać następujące zadania:
-<a id="to-set-up-an-external-vendor-catalog-complete-the-following-tasks" class="xliff"></a>
+### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Aby skonfigurować zewnętrzny katalog dostawcy, należy wykonać następujące zadania:
 
 1. Ustawianie hierarchii kategorii zaopatrzenia. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia](/https://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/).
 2. Zarejestrowanie dostawcy w programie Finance and Operations. Aby można było utworzyć konfiguracje pozwalające na dostęp do zewnętrznego katalogu dostawcy, należy skonfigurować dostawcę i jego osobę kontaktową w programie Microsoft Dynamics 365. Ponadto dostawca zewnętrznego katalogu musi być dodany do wybranej kategorii zaopatrzenia. Aby uzyskać więcej informacji o rejestrowaniu dostawców w programie Microsoft Dynamics 365, zobacz [Zarządzanie użytkownikami modułu Współpraca z dostawcami](/procurement/manage-vendor-collaboration-users.md). Aby uzyskać informacje o przypisywaniu dostawcy do kategorii zaopatrzenia, zobacz [Zatwierdzanie dostawców dla konkretnych kategorii zaopatrzenia](/https://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/).
@@ -51,8 +48,7 @@ Zewnętrzny katalog powinien umożliwiać pracownikowi wprowadzającemu zapotrze
 6. Aktywacja zewnętrznego katalogu za pomocą przycisku **Uaktywnij katalog** znajdującego się na stronie **Katalogi zewnętrzne**. Zewnętrzny katalog musi zostać aktywowany, zanim będą go mogli używać pracownicy. Zewnętrzny katalog można w dowolnym momencie zdezaktywować.
 
 
-## (4) Konfigurowanie zewnętrznego katalogu dostawcy
-<a id="4-configure-the-external-vendor-catalog" class="xliff"></a>
+## <a name="4-configure-the-external-vendor-catalog"></a>(4) Konfigurowanie zewnętrznego katalogu dostawcy
 
 W tej sekcji dokładniej omówiono 4 zadania z poprzedniej części.
 
@@ -68,8 +64,7 @@ Zasady zaopatrzenia są używane w celu zezwolenia na dostęp lub ograniczenia d
 
 W dowolnym momencie można ponownie załadować systemowy szablon komunikatu, klikając przycisk **Przywróć format komunikatu**. Należy zauważyć, że jeśli przywrócisz format komunikatu, bieżący komunikat zostanie zastąpiony przez automatycznie wygenerowany format komunikatu, który ma puste znaczniki.
 
-### Komunikat konfiguracyjny cXML
-<a id="cxml-setup-message" class="xliff"></a>
+### <a name="cxml-setup-message"></a>Komunikat konfiguracyjny cXML
 Poniżej znajduje się opis znaczników zawartych w szablonie:
 
 | Pole | opis | 
@@ -84,15 +79,13 @@ Poniżej znajduje się opis znaczników zawartych w szablonie:
 |< Request deploymentMode=”” >|Środowisko testowe lub produkcyjne.|
 |< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|Adres URL punktu końcowego z zewnętrznym katalogiem dostawcy.|
 
-### Elementy zewnętrzne
-<a id="extrinsic-elements" class="xliff"></a>
+### <a name="extrinsic-elements"></a>Elementy zewnętrzne
 
 Element zewnętrzny to dodatkowe informacje, takie jak nazwa użytkownika, które zależy od użytkownika dokonującego wyboru w zewnętrznym katalogu. Element zewnętrzny jest ustawiany podczas wybierania w zewnętrznym katalogu i może być wysyłany w komunikacie żądania konfiguracji.
 Dostawca może ustanowić wymóg, aby w żądaniu konfiguracji był mu przesyłany element zewnętrzny. W takim przypadku należy dodać element zewnętrzny do listy elementów zewnętrznych na stronie **Katalog zewnętrzny** w sekcji **Format komunikatu**. Nadaj elementowi zewnętrznemu nazwę, którą dostawca może rozpoznać, i zamapuj ją na wartość. Dostępne opcje wartości: Nazwa użytkownika, Adres e-mail użytkownika lub Wartość losowa.
 Aby uzyskać więcej informacji o protokole cXML, zobacz: http://cxml.org/
 
-## Komunikat ogłaszania zwrotnego
-<a id="post-back-message" class="xliff"></a>
+## <a name="post-back-message"></a>Komunikat ogłaszania zwrotnego
 Komunikat ogłaszania zwrotnego to komunikat otrzymywany od dostawcy, gdy użytkownik finalizuje transakcję w zewnętrznej witrynie i wraca do programu Finance and Operations. Komunikatów ogłaszania zwrotnego nie można konfigurować. Komunikat bazuje na definicji protokołu cXML. Poniżej przedstawiono informacje, które mogą wchodzić w skład komunikatu ogłaszania zwrotnego otrzymywanego w wierszu zapotrzebowania:
 
 | Komunikat otrzymywany od dostawcy | Informacja kopiowana do wiersza zapotrzebowania w programie Finance and Operations|
@@ -107,8 +100,7 @@ Komunikat ogłaszania zwrotnego to komunikat otrzymywany od dostawcy, gdy użytk
 |< ItemDetail >< Classification >< /Classification >|Zawarty w opisie towaru|
 |< ItemDetail >< Classification domain=”” >|Zawarty w opisie towaru|
 
-## Usuwanie katalogu zewnętrznego
-<a id="delete-an-external-catalog" class="xliff"></a>
+## <a name="delete-an-external-catalog"></a>Usuwanie katalogu zewnętrznego
 Katalog zewnętrzny można usunąć za pomocą operacji Usuń dostępnej na stronie.
 
 Jeśli poproszono o produkt z zewnętrznego katalogu dostawcy, nie można usunąć tego katalogu. Zamiast tego dla katalogu jest ustawiany stan nieaktywności. Jeśli chcesz usunąć dostęp do witryny z zewnętrznym katalogiem dostawcy, ale bez usuwania samego katalogu, zmień stan zewnętrznego katalogu na Nieaktywny.

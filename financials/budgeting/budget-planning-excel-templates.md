@@ -25,8 +25,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Szablony planowania budżetu dla programu Excel
-<a id="budget-planning-templates-for-excel" class="xliff"></a>
+# <a name="budget-planning-templates-for-excel"></a>Szablony planowania budżetu dla programu Excel
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ W tym temacie opisano sposób tworzenia szablonów programu Microsoft Excel, kt�
 
 W tym temacie pokazano, jak tworzyć szablony programu Excel przeznaczone dla planów budżetu, wykorzystując do tego standardowy zestaw danych demonstracyjnych i logowanie użytkownika będącego administratorem. Aby uzyskać więcej informacji na temat planowania budżetu, zobacz [Przegląd planowania budżetu.](budget-planning-overview-configuration.md) Można również przejść samouczek [Planowanie budżetu 101](budget-plan.md), który przekazuje podstawowe informacje o konfiguracjach modułu i zasadach użytkowania.
 
-## Generowanie arkusza przy użyciu układu dokumentu planu budżetu
-<a id="generate-a-worksheet-using-budget-plan-document-layout" class="xliff"></a>
+## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Generowanie arkusza przy użyciu układu dokumentu planu budżetu
 Dokumenty planu budżetu można wyświetlać i edytować za pomocą jednego lub więcej układów. Z każdym układem może być skojarzony szablon dokumentu planu budżetu, który umożliwia wyświetlanie i edytowanie danych planu budżetu w arkuszu programu Excel. W tym temacie szablon dokumentu planu budżetu zostanie wygenerowany przy użyciu istniejącej konfiguracji układu. Otwórz **listę planów budżetu** (**Budżetowanie**&gt; **Plany budżetu**). Kliknij przycisk **Nowy**, aby utworzyć nowy dokument planu budżetu. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 Za pomocą opcji wierszy **Dodaj** dodaj wiersze. Kliknij opcję **Układy**, aby wyświetlić konfigurację układu dokumentu planu budżetu. 
@@ -54,8 +52,7 @@ Szablon programu Excel będzie zawierał wszystkie elementy z układu dokumentu 
 > [!NOTE] 
 > Aby uniknąć potencjalnych problemów z wyświetlaniem i edytowaniem danych planu budżetu za pomocą programu Excel, ten sam użytkownik powinien być zalogowany w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition oraz łączniku danych dodatku pakietu Office dla usługi Microsoft Dynamics.
 
-## Dodawanie nagłówka do szablonu dokumentu planu budżetu
-<a id="add-a-header-to-budget-plan-document-template" class="xliff"></a>
+## <a name="add-a-header-to-budget-plan-document-template"></a>Dodawanie nagłówka do szablonu dokumentu planu budżetu
 Aby dodać informacje nagłówka, zaznacz górny wiersz w pliku programu Excel i wstaw puste wiersze. W obszarze **Łącznik danych** kliknij opcję **Projekt** i dodaj pola nagłówka do pliku programu Excel.
 
 [![bpt5](./media/bpt5-1024x615.png)](./media/bpt5.png) 
@@ -66,11 +63,9 @@ Na karcie **Projekt** kliknij** **pola **Dodaj**, a następnie wybierz pozycję 
 
 Ustaw kursor w żądanym miejscu w pliku programu Excel. Kliknij przycisk **Dodaj etykietę**, aby dodać etykietę pola w wybranym miejscu. Kliknij przycisk **Dodaj wartość**, aby dodać pole wartości w wybranym miejscu. Kliknij przycisk **Gotowe**, aby zamknąć projektanta.
 
-## [![bpt7](./media/bpt7.png)](./media/bpt7.png)
-<a id="bpt7mediabpt7pngmediabpt7png" class="xliff"></a>
+## <a name="bpt7mediabpt7pngmediabpt7png"></a>[![bpt7](./media/bpt7.png)](./media/bpt7.png)
 
-Dodawanie kolumny obliczanej do tabeli szablonu dokumentu planu budżetu
-<a id="add-a-calculated-column-to-budget-plan-document-template-table" class="xliff"></a>
+<a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Dodawanie kolumny obliczanej do tabeli szablonu dokumentu planu budżetu
 --------------------------------------------------------------
 
 Następnie kolumny obliczane zostaną dodane do wygenerowanego szablonu dokumentu planu budżetu. Kolumna **Wniosek razem**, która sumuje wartości kolumn od Wniosek K1 do Wniosek K4, oraz kolumna **Korekta**, która przelicza wartość w kolumnie **Wniosek razem** o ustawiony wcześniej współczynnik.
@@ -96,17 +91,14 @@ Zamknij suwak **Układy**. W dokumencie **Plan budżetu** kliknij opcję **Arkus
 
 [![bpt11](./media/bpt111-1024x431.png)](./media/bpt111.png)
 
-## Porady i wskazówki dotyczące tworzenia szablonów planu budżetu
-<a id="tips--tricks-for-creating-budget-plan-templates" class="xliff"></a>
-### Czy można dodać i używać więcej źródeł danych do szablonu planu budżetu?
-<a id="can-i-add-and-use-additional-data-sources-to-a-budget-plan-template" class="xliff"></a>
+## <a name="tips--tricks-for-creating-budget-plan-templates"></a>Porady i wskazówki dotyczące tworzenia szablonów planu budżetu
+### <a name="can-i-add-and-use-additional-data-sources-to-a-budget-plan-template"></a>Czy można dodać i używać więcej źródeł danych do szablonu planu budżetu?
 
 Tak, za pomocą menu **Projekt** można dodać więcej jednostek do tego samego lub innych arkuszy w szablonie programu Excel. Na przykład można dodać źródło danych **BudgetPlanProposedProject**, aby utworzyć i prowadzić listę proponowanych projektów w tym samym czasie, kiedy pracujesz z danymi planu budżetu w programie Excel. Należy zauważyć, że dołączenie dużych źródeł danych może mieć negatywny wpływ na działanie skoroszytu programu Excel. 
 
 Można użyć opcji **Filtr** w obszarze **Łącznik danych**, aby dodać żądane filtry do dodatkowych źródeł danych.
 
-### Czy można ukryć opcję Projekt w obszarze Łącznik danych dla innych użytkowników?
-<a id="can-i-hide-the-design-option-in-the-data-connector-for-other-users" class="xliff"></a>
+### <a name="can-i-hide-the-design-option-in-the-data-connector-for-other-users"></a>Czy można ukryć opcję Projekt w obszarze Łącznik danych dla innych użytkowników?
 
 Tak, otwórz opcje narzędzia **Łącznik danych** i tam można schować opcję **Projekt** przed innymi użytkownikami.
 
@@ -116,8 +108,7 @@ Rozwiń opcje narzędzia **Łącznik danych** i wyczyść pole wyboru **Włącz 
 
 [![bpt14](./media/bpt14-1024x592.png)](./media/bpt14.png)
 
-### Czy można uniemożliwić użytkownikom przypadkowe zamknięcie łącznika danych podczas pracy z danymi?
-<a id="can-i-prevent-users-from-accidently-closing-the-data-connector-while-working-with-data" class="xliff"></a>
+### <a name="can-i-prevent-users-from-accidently-closing-the-data-connector-while-working-with-data"></a>Czy można uniemożliwić użytkownikom przypadkowe zamknięcie łącznika danych podczas pracy z danymi?
 
 Zalecamy zablokowanie szablonu, aby uniemożliwić użytkownikom jego zamknięcie. Aby włączyć blokadę, kliknij przycisk **Łącznik danych** w prawym górnym rogu. Pojawi się strzałka. 
 
@@ -125,11 +116,9 @@ Zalecamy zablokowanie szablonu, aby uniemożliwić użytkownikom jego zamknięci
 
 Kliknij strzałkę, a pojawi się dodatkowe menu. Wybierz opcję **Blokowanie**.
 
-### [![bpt16](./media/bpt16-1024x614.png)](./media/bpt16.png)
-<a id="bpt16mediabpt16-1024x614pngmediabpt16png" class="xliff"></a>
+### <a name="bpt16mediabpt16-1024x614pngmediabpt16png"></a>[![bpt16](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
-### Czy w moich szablonach planu budżetu mogę używać innych funkcji programu Excel, takich jak formatowanie komórek, kolory, formatowanie warunkowe i wykresy?
-<a id="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates" class="xliff"></a>
+### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Czy w moich szablonach planu budżetu mogę używać innych funkcji programu Excel, takich jak formatowanie komórek, kolory, formatowanie warunkowe i wykresy?
 
 Tak, większość standardowych funkcji programu Excel będzie działać w szablonach planu budżetu. Zalecamy użytkownikom stosowanie kolorów do rozróżniania między kolumnami tylko do odczytu i edytowalnymi. Formatowanie warunkowe może służyć do wyróżniania problematycznych obszarów budżetu. Sumy kolumn można łatwo przedstawiać za pomocą standardowych formuł programu Excel nad tabelą.
 

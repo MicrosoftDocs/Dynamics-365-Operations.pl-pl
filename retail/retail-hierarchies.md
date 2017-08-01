@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Hierarchie sieci sprzedaży
-<a id="retail-hierarchies" class="xliff"></a>
+# <a name="retail-hierarchies"></a>Hierarchie sieci sprzedaży
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Ten artykuł opisuje hierarchie sieci sprzedaży w programie Microsoft Dynamics 
 
 Można skonfigurować hierarchię kategorii w sieci sprzedaży w celu zorganizowania produktów sprzedawanych w Twoim kanale sprzedaży. Hierarchie produktów sieci sprzedaży umożliwiają łączenie produktów w kategorie i grupy. Następnie można używać tych produktów do tworzenia asortymentów produktów i programów lojalnościowych. Można również przypisywać właściwości i atrybuty produktu, strukturę cen, dodawać produkty w do produktów i używać produktów na potrzeby raportowania. Można utworzyć jedną hierarchię kategorii sieci sprzedaży do reprezentowania wszystkich produktów i kategorii w organizacji, a następnie użyć tej hierarchii kategorii do wielu celów. Alternatywnie można utworzyć wiele hierarchii kategorii sieci sprzedaży do celów specjalnych, takich jak promocja produktów. Podczas tworzenia hierarchii produktów detalicznych należy przypisać typ hierarchii kategorii w celu identyfikacji przeznaczenia hierarchii kategorii. Na przykład tylko hierarchie produktów, które mają przypisany typ **Hierarchia nawigacji w sieci sprzedaży**, są wskazywane podczas przeglądania produktów według kategorii online lub w punkcie sprzedaży.
 
-## Typy hierarchii w sieci sprzedaży
-<a id="retail-hierarchy-types" class="xliff"></a>
+## <a name="retail-hierarchy-types"></a>Typy hierarchii w sieci sprzedaży
 Poniższa tabela pokazuje dostępne hierarchie typów kategorii w sieci sprzedaży oraz ich ogólne zastosowania.
 
 | Typ hierarchii kategorii       | Cel                                                                                                                                                                                                                                                                                                            |

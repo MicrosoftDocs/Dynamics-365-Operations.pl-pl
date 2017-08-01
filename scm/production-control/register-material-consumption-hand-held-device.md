@@ -25,23 +25,19 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Rejestracja na urządzeniu przenośnym zużycia materiałów
-<a id="register-material-consumption-using-a-mobile-device" class="xliff"></a>
+# <a name="register-material-consumption-using-a-mobile-device"></a>Rejestracja na urządzeniu przenośnym zużycia materiałów
 W tym temacie opisano przepływ pracy umożliwiający rejestrowanie zużycia surowców w produkcji przy użyciu urządzenia przenośnego (podręcznego).
 
-Wprowadzenie
-<a id="introduction" class="xliff"></a>
+<a name="introduction"></a>Wprowadzenie
 ------------
 
 Ten przepływ pracy ma zastosowanie, jeśli istnieje ścisły wymóg identyfikowalności materiałów. W tych przypadkach w celu utrzymania identyfikowalności materiałów należy raportować dokładny czas i ilość zużycia. Ten proces może być traktowany jako przeciwieństwo operacji rozliczania wstępnego i wstecznego, gdzie występuje przesunięcie między czasem rejestracji a momentem, gdy dochodzi do faktycznego zużycia. To wyjaśnia, dlaczego strategii automatycznego zużycia nie można używać do niektórych materiałów z wymogiem identyfikowalności. Spójrzmy na prosty scenariusz, który wyjaśnia, jak skonfigurować przepływ pracy, aby włączyć rejestrowanie zużycia surowców w produkcji za pomocą urządzenia podręcznego. [![](./media/scenario3.png)](./media/scenario3.png)
 
-### Szczegóły scenariusza
-<a id="scenario-details" class="xliff"></a>
+### <a name="scenario-details"></a>Szczegóły scenariusza
 
 W procesie produkcji ciągłej (5) jest zużywany surowiec RM-100 wchodzący w skład partii. Materiał jest dostępny w lokalizacji Bulk-001 (1) pod numerem identyfikacyjnym PL-1 w dwóch partiach B1 i B2, obu z ilością 100 kg. Dla surowca RM-100 jest zwalniana i przetwarzana praca magazynowa (2), a materiał zostaje pobrany z lokalizacji Bulk-001 do lokalizacji wejściowej produkcji PIL-01 (3), która jest zdefiniowana jako niekontrolowana przez numer identyfikacyjny. Operator maszyny waży materiał z lokalizacji wejściowej produkcji (3) i rejestruje masę oraz numer partii jako zużyte (4). Z lokalizacji wejściowej produkcji część materiału jest ręcznie dodawana do procesu produkcji w zdefiniowanych odstępach czasu. Gdy operator maszyny dodaje materiał, waży go na wadze i rejestruje numer partii.
 
-## Konfigurowanie przepływu pracy rejestrowania zużycia przy użyciu urządzenia podręcznego
-<a id="set-up-the-workflow-to-register-consumption-using-a-handheld-device" class="xliff"></a>
+## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>Konfigurowanie przepływu pracy rejestrowania zużycia przy użyciu urządzenia podręcznego
 Utwórz wyrób gotowy FG-100 z listą składową zawierającą surowiec RM-100 wchodzący w skład partii. Doda dwie partie B1 i B2 surowca RM-100 w ilości 100 do lokalizacji Bulk-001 pod numerem identyfikacyjnym PL-1. Reguła rozliczania w wierszu listy składowej dla surowca RM-100 ma wartość **Ręcznie**. Jako lokalizację wejściową produkcji ustaw PIL-01. Można to zrobić przez zaznaczenie tej lokalizacji jako domyślnej lokalizacji wejściowej produkcji w magazynie 51.
 
 1.  Utwórz nowy element menu w urządzeniu komórkowym: 
@@ -85,8 +81,7 @@ Teraz możesz wybrać opcję kontynuowania rejestracji, na przykład partii o nu
 
 Po zakończeniu rejestrowania kliknij przycisk **Gotowe**, aby zaksięgować arkusz i zakończyć przepływ pracy.
 
-### Dodatkowe uwagi
-<a id="additional-comments" class="xliff"></a> 
+### <a name="additional-comments"></a>Dodatkowe uwagi 
 
 -   Jeśli użytkownik anuluje przepływ pracy po utworzeniu wiersza arkusza, arkusz jest w stanie niezaksięgowania, ale jeśli użytkownik później użyje przepływu pracy do tego samego zlecenia produkcyjnego, wiersze zostaną dodane do otwartego arkusza, a nie do nowego arkusza.
 -   Nowy przepływ pracy umożliwia również rejestrowanie numerów seryjnych.

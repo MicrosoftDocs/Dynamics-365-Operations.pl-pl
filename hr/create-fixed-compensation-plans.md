@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Tworzenie planów stałych wynagrodzeń
-<a id="create-fixed-compensation-plans" class="xliff"></a>
+# <a name="create-fixed-compensation-plans"></a>Tworzenie planów stałych wynagrodzeń
 
 [!include[banner](includes/banner.md)]
 
@@ -37,32 +36,26 @@ Pojęcie „stałe wynagrodzenie” odnosi się do standardowego wynagrodzenia b
 
 Można obliczyć kwoty stałych wynagrodzeń dla pracowników na podstawie czynników, takich jak wydajność, region i zwiększenia budżetu. Moduł Microsoft Talent obsługuje wynagrodzenia etapowe, stopniowe i pasmowe.
 
-## Składniki wynagrodzenia o stałej wysokości
-<a id="fixed-compensation-components" class="xliff"></a>
-### Poziomy wynagrodzeń
-<a id="compensation-levels" class="xliff"></a>
+## <a name="fixed-compensation-components"></a>Składniki wynagrodzenia o stałej wysokości
+### <a name="compensation-levels"></a>Poziomy wynagrodzeń
 
 Można użyć **poziomów wynagrodzeń** do ustawiania wynagrodzenia dla różnych zadań w celu zagwarantowania, że pracownicy, którzy posiadają te zadania, są uczciwie opłacani. Na stronie **Poziomy wynagrodzeń** można skonfigurować poziomy wynagrodzeń, które są wymagane w przypadku każdego systemu etapowego, stopniowego i pasmowego. Za pomocą przycisków **W górę** i **W dół** można ustawić poziomy we właściwej kolejności według ich typu. Poziomy wynagrodzeń dla zadania pozwalają zapewnić, że wszyscy pracownicy zatrudnieni na stanowiskach obsługujących dane zadanie są wynagradzani na tym samym poziomie.
 
-### Punkty odniesienia
-<a id="reference-points" class="xliff"></a>
+### <a name="reference-points"></a>Punkty odniesienia
 
 **Punkty odniesienia** to kolumny w siatce, określające zakresy wynagrodzeń dla poszczególnych poziomów. Poziom wynagrodzenia jest wierszem w siatce. Typowymi punktami odniesienia dla systemu stopniowego są minimum, środek i maksimum. Punkty odniesienia tworzy się na stronie **Konfiguracje punktów odniesienia**.
 
-### Siatki wynagrodzeń
-<a id="compensation-grids" class="xliff"></a>
+### <a name="compensation-grids"></a>Siatki wynagrodzeń
 
 Po skonfigurowaniu poziomów i punktów odniesienia, można je łączyć, aby utworzyć **siatkę wynagrodzeń**. Na stronie **Siatka wynagrodzeń** określ informacje dotyczące siatki. Na przykład określ, do czego ma być używana projektowana siatka, z jakiego typu planem będzie używana i jakie punkty odniesienia lub kolumny są wymagane w siatce. Po zakończeniu wprowadzania tych informacji kliknij przycisk **Struktura wynagrodzeń**, aby dodać poziomy i kwoty do siatki. 
 
 **Porada:** Użyj funkcji **Zmiany grupowe** w strukturze wynagrodzeń, aby ustawić kwoty wstępne, a następnie ustal przyrost procentowy lub kwotowy dla wszystkich poziomów lub punktów odniesienia.
 
-### Częstotliwości wypłat
-<a id="pay-frequencies" class="xliff"></a>
+### <a name="pay-frequencies"></a>Częstotliwości wypłat
 
 **Częstotliwości wypłat** są używane do definiowania sposobu określania wynagrodzenia dla pracownika (na przykład 10 USD za godzinę, a 50 000 USD rocznie) i konwersji między stawkami godzinowymi, tygodniowymi, miesięcznymi (12 miesięcy) i rocznymi. Na przykład firmy, która obsługuje 38-godzinny tydzień pracy dla pracowników zatrudnionych według stawek godzinowych ustawia częstotliwość wypłat ze stawką godzinową 1, tygodniową 38, miesięczną 164,6666666667 i roczną 1 976. Konwersje te są używane do obliczania różnych stawek płacowych, które pojawiają się w rekordzie stałego wynagrodzenia pracownika.
 
-## Systemy stałych wynagrodzeń
-<a id="fixed-compensation-plans" class="xliff"></a>
+## <a name="fixed-compensation-plans"></a>Systemy stałych wynagrodzeń
 Można zaprojektować plan stałych wynagrodzeń, aby łączył wszystkie skonfigurowane składniki. Aby utworzyć plan stałych wynagrodzeń, otwórz stronę **Plany stałych wynagrodzeń**. W tym miejscu można wpisać nazwę i opis planu, wybrać typ planu (etap, stopień czy pasmo), wybrać częstotliwość wypłat dla stawki pracownika (godzinowej, rocznej itd.) i ustawić niektóre opcje, które kontrolują sposób przetwarzania wynagrodzeń. 
 
 Ustawienie **Tolerancja wyjścia poza zakres** pozwala określić, jak ściśle ma być przestrzegany zakres minimalnego i maksymalnego poziomu wynagrodzeń. **Twarda** tolerancja wymaga, aby wynagrodzenie mieściło się w określonym zakresie dla danego poziomu. **Miękka** tolerancja powoduje wyświetlenie ostrzeżenia, gdy kwota wynagrodzenia wykracza poza zakres, ale zezwala na kontynuowanie. Ustawienie **Brak** dla tolerancji umożliwia wpisanie dowolnej kwoty wynagrodzenia dla pracownika bez wyświetlania ostrzeżenia ani komunikatu o błędach. 
@@ -79,10 +72,8 @@ Po zdefiniowaniu podstawy planu stałych wynagrodzeń, można skonfigurować str
 
 Po wybraniu opcji otwiera się strona **Struktura wynagrodzeń** i można wprowadzić zmiany w nowej lub istniejącej siatce wynagrodzeń.
 
-## Rejestracja stałego wynagrodzenia
-<a id="fixed-compensation-enrollment" class="xliff"></a>
-### Określanie, kto może skorzystać z planu
-<a id="determine-who-is-eligible-for-the-plan" class="xliff"></a>
+## <a name="fixed-compensation-enrollment"></a>Rejestracja stałego wynagrodzenia
+### <a name="determine-who-is-eligible-for-the-plan"></a>Określanie, kto może skorzystać z planu
 
 Pierwszym krokiem podczas rejestrowania pracowników w planie stałego wynagrodzenia jest określenie, kto jest uprawniony do wynagrodzenia zdefiniowanego w planie. Do czasu określenia uprawnień nie będzie można przypisać planu do żadnego pracownika. Aby skonfigurować uprawnienia, otwórz stronę **Reguły uprawnienia**. W tym miejscu można utworzyć nową regułę uprawnień dla systemu wynagrodzeń i zdefiniować kryteria, które pracownik musi spełnić, aby kwalifikować się do systemu. Można ograniczyć uprawnienia na podstawie działu, związku zawodowego, regionu wynagrodzenia (lokalizacja), zadania, funkcji zadania, typu zadania lub poziomu wynagrodzenia. Pracowników można rejestrować w planie wynagrodzeń, tylko jeśli spełniają wszystkie warunki ustawione w regule uprawnienia. 
 
@@ -98,15 +89,13 @@ Reguła uprawnienia uwzględnia wartość określonych pól w rekordach Zadanie,
 
 Reguły uprawnienia biorą również pod uwagę związki zawodowe skojarzone z pracownikiem (na stronie **Pracownicy** na karcie **Pracownik** kliknij kolejno opcje **Informacje osobiste** &gt; **Związki zawodowe**).
 
-### Definiowanie akcji związanych ze stałym wynagrodzeniem
-<a id="define-fixed-compensation-actions" class="xliff"></a>
+### <a name="define-fixed-compensation-actions"></a>Definiowanie akcji związanych ze stałym wynagrodzeniem
 
 **Akcje związane ze stałym wynagrodzeniem** są używane podczas konfigurowania lub stosowania zmian stałego wynagrodzenia pracownika. Akcje związane ze stałym wynagrodzeniem pozwalają nadać opisową nazwę typom akcji, które mogą być wykonywane przez menedżera ds. wynagrodzeń i świadczeń. Różne typy akcji opierają się na określonej logice, więc mogą być używane o określonych porach. 
 
 Na przykład podczas ustawiania stałego wynagrodzenia dla pracownika mogą być używane tylko akcje typu **Zatrudnienie/ponowne zatrudnienie**. W takim przypadku można utworzyć trzy różne akcje typu **Zatrudnienie/ponowne zatrudnienie** i nadać im nazwy **Zatrudnienie**, **Ponowne zatrudnienie** i **Przeniesieni**. Następnie można utworzyć bardziej opisowe wyjaśnienie, dlaczego stałe wynagrodzenie zostało przyznane pracownikowi lub zmienione.
 
-### Rejestracja pracownika
-<a id="enroll-the-employee" class="xliff"></a>
+### <a name="enroll-the-employee"></a>Rejestracja pracownika
 
 Teraz można przypisać pracownika do planu stałych wynagrodzeń. Otwórz stronę **Pracownicy** i wybierz pracownika, których chcesz zarejestrować w planie wynagrodzeń. W okienku akcji kliknij kolejno opcje **Wynagrodzenie** &gt; **Plan stałych wynagrodzeń**. Teraz możesz utworzyć nową akcję stałego wynagrodzenia dla tego pracownika. 
 
@@ -114,8 +103,7 @@ Teraz można przypisać pracownika do planu stałych wynagrodzeń. Otwórz stron
 
 System sprawdza, czy kwota wynagrodzenia określona dla planu wynagrodzeń typu stopniowego lub pasmowego mieści się zakresie wyznaczonym przez maksymalne i minimalne punkty odniesienia dla danego poziomu wynagrodzeń w zadaniu pracownika. Jeśli kwota wynagrodzenia jest spoza dozwolonym zakresem, pojawia się ostrzeżenie lub komunikat o błędzie w zależności od poziomu tolerancji ustawionego w planie stałych wynagrodzeń.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Plany wynagrodzeń](compensation-plans.md)

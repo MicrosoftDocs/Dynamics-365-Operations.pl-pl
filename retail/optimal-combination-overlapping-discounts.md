@@ -27,8 +27,7 @@ ms.lasthandoff: 06/14/2017
 
 ---
 
-# Określenia optymalnej kombinacji rabatów nakładających się
-<a id="determine-the-optimal-combination-of-overlapping-discounts" class="xliff"></a>
+# <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Określenia optymalnej kombinacji rabatów nakładających się
 
 [!include[banner](includes/banner.md)]
 
@@ -37,12 +36,10 @@ Gdy rabaty się nakładają, należy określić taką kombinację nakładającyc
 
 Ten artykuł dotyczy systemu Microsoft Dynamics AX 2012 R3 z poprawką KB 3105973 (wydaną 2 listopada 2015 r.) i nowszych wersji oraz programu Microsoft Dynamics 365 for Retail. Aby umożliwić bezzwłoczne stosowanie kombinacji nakładających się rabatów, wprowadziliśmy metodę stosowania nakładających się rabatów. Nazywamy tę nową metodę **rankingiem wartości krańcowej**. Ranking wartości krańcowej jest stosowany w przypadku, gdy czas potrzebny do ocenienia możliwych kombinacji nakładających się rabatów przekracza próg skonfigurowany na stronie **Parametry sieci sprzedaży**. W metodzie rankingu wartości krańcowej wartość jest obliczana dla każdego nakładającego się rabatu poprzez użycie wartość rabatu ze wspólnych produktów. Nakładające się rabaty są następnie stosowane w porządku od najwyższej wartości względnej do najniższej wartości względnej. Szczegółowe informacje na temat nowej metody zawiera sekcja „Wartość krańcowa” w dalszej części tego artykułu. Ranking wartości krańcowej nie jest używany, gdy kwoty rabatów na produkt są całkowicie niezależne od innych produktów w transakcji. Na przykład ta metoda nie jest używana dla dwóch rabatów prostych ani dla rabatu prostego i rabatu ilościowego na jeden produkt.
 
-## Przykłady rabatów
-<a id="discount-examples" class="xliff"></a>
+## <a name="discount-examples"></a>Przykłady rabatów
 Można utworzyć nieograniczoną liczbę rabatów detalicznych dla wspólnego zestawu produktów. Jednakże ponieważ nie ma żadnego limitu, mogą wystąpić problemy z działaniem systemu podczas próby obliczania rabatów, które powinny być używane do różnych produktów. Poniższe przykłady ilustrują ten problem bardziej szczegółowo. W przykładzie 1 zaczynamy od dwóch produktów i dwóch nakładających się rabatów. Następnie w przykładzie 2 pokażemy, jak problem się rozwija wraz z dodawaniem kolejnych produktów.
 
-### Przykład 1: Dwa produkty i dwa rabaty
-<a id="example-1-two-products-and-two-discounts" class="xliff"></a>
+### <a name="example-1-two-products-and-two-discounts"></a>Przykład 1: Dwa produkty i dwa rabaty
 
 W tym przykładzie są niezbędne dwa produkty, aby uzyskać każdy rabat, a rabaty nie mogą być łączone. Rabaty w tym przykładzie są typu **Najlepsza cena**. Oba produkty kwalifikują się do obu rabatów. Poniżej przedstawiono oba rabaty.
 ![Kombinacja nakładających się rabatów 01](./media/overlapping-discount-combo-01.jpg)
@@ -51,8 +48,7 @@ Dla dowolnych dwóch produktów to, który rabat jest lepszy, zależy od cen tyc
 
 **Uwaga:** Gdy cena produktu 1 jest równa dwóm trzecim ceny produktu 2, rabaty są równe. W tym przykładzie efektywny procent rabatu 1 waha się od kilku procent (gdy ceny obu produktów są bardzo różne) do maksymalnie 25 procent (gdy dwa produkty mają taką samą cenę). Efektywny procent rabatu 2 jest stały. Zawsze wynosi 20 procent. Ponieważ efektywny procent rabatu 1 ma zakres, którego wartości mogą być wyższe lub niższe niż rabat 2, najlepszy rabat zależy od cen dwóch produktów, dla których ma zostać obliczony rabat. W tym przykładzie obliczanie kończy się szybko, ponieważ są stosowane tylko dwa rabaty tylko do dwóch produktów. Istnieją tylko dwie możliwe kombinacje: jedno zastosowanie rabatu 1 lub jedno zastosowanie rabatu 2. Nie ma permutacji do obliczenia. Wartość każdego rabatu jest obliczana przy użyciu obu produktów i jest stosowany najlepszych rabat.
 
-### Przykład 2: Cztery produkty i dwa rabaty
-<a id="example-2-four-products-and-two-discounts" class="xliff"></a>
+### <a name="example-2-four-products-and-two-discounts"></a>Przykład 2: Cztery produkty i dwa rabaty
 
 Następnie użyjemy czterech produktów i tych samych dwóch rabatów. Wszystkie cztery produkty kwalifikują się do obu rabatów. Istnieje dwanaście możliwych kombinacji. Na koniec do transakcji zostaną zastosowane dwa rabaty w jednej z trzech kombinacjach: dwa zastosowania rabatu 1, dwa zastosowania rabatu 2 lub jedno zastosowanie rabatu 1 i jedno zastosowanie rabatu 2. Aby zilustrować możliwe kombinacje, przyjrzymy się dwóm różnym zestawom czterech produktów o różnych cenach:
 
@@ -68,16 +64,14 @@ Najpierw znajdziemy największy rabat dostępny dla dowolnych dwóch produktów 
 
 **Uwaga:** Gdy ceny się różnią, a dwa lub więcej rabatów konkurują ze sobą, jedynym sposobem zagwarantowania sobie najlepszej kombinacji rabatów jest ocena obu rabatów i ich porównanie.
 
-## Łączna liczba możliwych kombinacji
-<a id="total-possible-combinations" class="xliff"></a>
+## <a name="total-possible-combinations"></a>Łączna liczba możliwych kombinacji
 W tej sekcji kontynuujemy przykład z poprzedniej sekcji. Dodamy więcej produktów i kolejny rabat i zobaczymy, ile kombinacji trzeba obliczyć i porównać. Poniższa tabela pokazuje liczbę możliwych kombinacji rabatów wraz ze wzrostem liczby produktów. W tabeli przedstawiono, co się dzieje, gdy istnieją dwa nakładające się rabaty, jak w poprzednim przykładzie, i gdy istnieją trzy nakładające się rabaty. Liczba możliwych kombinacji rabatów, które muszą zostać ocenione, wkrótce przekracza zdolności szybkiego komputera do obliczenia i porównania w tempie akceptowanym w transakcjach detalicznych.
 
 ![Kombinacja nakładających się rabatów 05](./media/overlapping-discount-combo-05.jpg)
 
 W przypadku jeszcze większej liczby produktów i nakładających się rabatów całkowita liczba możliwych kombinacji rabatów szybko sięga milionów i czas niezbędny do oceny i wybrania najlepszej kombinacji szybko staje się zauważalny. Dlatego w aparacie ustalania cen detalicznych wprowadzono pewne optymalizacje, które zmniejszają łączną liczbę kombinacji wymagających oceny. Jednak ponieważ liczba nakładających się rabatów i ilości produktów w transakcjach są nieograniczone, zawsze trzeba oceniać dużą liczbę kombinacji, gdy tylko istnieją nakładające się rabaty. W celu rozwiązania tego problemu wprowadzono metodę rankingu wartości krańcowej.
 
-## Metoda wartości krańcowej
-<a id="marginal-value-method" class="xliff"></a>
+## <a name="marginal-value-method"></a>Metoda wartości krańcowej
 Aby rozwiązać problem lawinowo wzrastającej liczby kombinacji wymagających oceny, wprowadzono optymalizację, która oblicza wartość dla każdego wspólnego produktu w każdym rabacie w zbiorze produktów, do którego można zastosować dwa lub więcej rabatów. Nazywamy tę wartość **wartością krańcową** rabatu na wspólne produkty. Wartość krańcowa jest średnim wzrostem łącznej kwoty rabatu na każdy produkt, gdy w każdym rabacie występują wspólne produkty. Wartość krańcowa jest obliczana następująco: od łącznej kwoty rabatu (DTotal) jest odejmowana kwota rabatu bez wspólnych produktów (DMinus\\ Shared), a uzyskana różnica jest dzielona przez liczbę wspólnych produktów (ProductsShared). 
 ![Kombinacja nakładających się rabatów 06](./media/overlapping-discount-combo-06.jpg)
 

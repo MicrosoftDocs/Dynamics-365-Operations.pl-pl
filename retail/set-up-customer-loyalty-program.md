@@ -28,16 +28,14 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Konfigurowanie programu lojalnościowego
-<a id="set-up-a-customer-loyalty-program" class="xliff"></a>
+# <a name="set-up-a-customer-loyalty-program"></a>Konfigurowanie programu lojalnościowego
 
 [!include[banner](includes/banner.md)]
 
 
 W tym artykule opisano sposób konfigurowania programu lojalnościowego. Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za zakup produktów w sklepach sieci sprzedaży. W programie Microsoft Dynamics 365 for Retail można skonfigurować proste lub złożone programy lojalnościowe, które mają zastosowanie w firmach w dowolnym kanale sprzedaży detalicznej.
 
-Funkcje lojalnościowe
-<a id="loyalty-features" class="xliff"></a>
+<a name="loyalty-features"></a>Funkcje lojalnościowe
 ----------------
 
 Program lojalnościowy można skonfigurować w taki sposób, żeby zawierał następujące opcje:
@@ -48,12 +46,10 @@ Program lojalnościowy można skonfigurować w taki sposób, żeby zawierał nas
 -   Wystawianie kart lojalnościowych z dowolnego kanału sprzedaży detalicznej, który bierze udział w programach lojalnościowych, i łączenie kart lojalnościowych z jednym lub kilkoma programami lojalnościowymi, w których odbiorcy mogą brać udział. Można też połączyć rekord odbiorcy z kartą lojalnościową, aby umożliwić odbiorcy gromadzenie puli punktów lojalnościowych z wielu kart oraz ich wykorzystywanie.
 -   Ręczne dopasowanie kart lojalnościowych lub przeniesienie salda nagród w programie lojalnościowym z jednej karty do drugiej w celu dostosowania lub nagrodzenia odbiorcy.
 
-## Konfigurowanie programów lojalnościowych
-<a id="setting-up-loyalty-programs" class="xliff"></a>
+## <a name="setting-up-loyalty-programs"></a>Konfigurowanie programów lojalnościowych
 Należy skonfigurować kilka składników, aby włączyć funkcję lojalnościową w module Dynamics 365 for Retail. Na poniższym diagramie przedstawiono składniki lojalnościowe i ich relacje względem siebie. ![Przebieg procesu konfigurowania systemu lojalności](./media/loyaltyprocess.gif)
 
-## Składniki lojalnościowe
-<a id="loyalty-components" class="xliff"></a>
+## <a name="loyalty-components"></a>Składniki lojalnościowe
 W poniższej tabeli opisano każdy składnik i miejsce, w którym jest on używany w konfiguracji lojalnościowej.
 
 | Składnik                                        | Opis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Miejsce użycia                                                                                                                                                                                                                                                                                                                                                                 |
@@ -69,8 +65,7 @@ W poniższej tabeli opisano każdy składnik i miejsce, w którym jest on używa
 | Konfigurowanie programów lojalnościowych                           | Schematy lojalnościowe określają reguły zdobywania i realizacji, które dotyczą wybranego programu lojalnościowego. Kanały sprzedaży detalicznej są przypisywane do schematu lojalnościowego, aby określić, który program lojalnościowy, reguły zdobywania i reguły realizacji stosuje się do sklepu sieci sprzedaży.                                                                                                                                                                                                                                                                                                                                  | Schemat lojalnościowy jest przypisany do programu lojalnościowego oraz do kanałów sprzedaży detalicznej. Do tego samego programu lojalnościowego można przypisać wiele schematów lojalnościowych; wiele schematów lojalnościowych można przypisać do wielu kanałów sprzedaży detalicznej.                                                                                                                                                                        |
 | Konfigurowanie kart lojalnościowych                             | Karta lojalnościowa upoważnia posiadacza karty do uczestnictwa w programach lojalnościowych, które są przypisane do karty. Można wystawiać karty lojalnościowe anonimowo lub mogą być przypisane do określonego odbiorcy. Możliwe jest przeglądanie transakcji w programie lojalnościowym dla określonej karty; można wyświetlić podsumowanie punktów lojalnościowych, które zostały zgromadzone na karcie. Można wystawiać karty lojalnościowe z dowolnego kanału sprzedaży detalicznej. Można również ręcznie zmienić kartę lojalnościową, aby uaktualnić odbiorcę do innej warstwy, dodać punkty lojalnościowe lub przenieść saldo punktów lojalnościowych z jednej karty na inną. | Programy lojalnościowe są przypisywane do karty lojalnościowej.                                                                                                                                                                                                                                                                                                                                  |
 
-## Procesy lojalnościowe
-<a id="loyalty-processes" class="xliff"></a>
+## <a name="loyalty-processes"></a>Procesy lojalnościowe
 W poniższej tabeli opisano procesy, które należy wykonać, aby wysłać konfiguracje lojalnościowe i dane do sklepów i pobrać transakcje lojalnościowe ze sklepów.
 
 | Nazwa procesu                         | Opis                                                                                                                                                                                                                                                                                                                                                                                                    | Nazwa strony                            |

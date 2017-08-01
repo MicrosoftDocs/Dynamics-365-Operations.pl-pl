@@ -26,16 +26,14 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Projektant formuł w raportowaniu elektronicznym
-<a id="formula-designer-in-electronic-reporting" class="xliff"></a>
+# <a name="formula-designer-in-electronic-reporting"></a>Projektant formuł w raportowaniu elektronicznym
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie wyjaśniono, jak używać projektanta formuł w raportowaniu elektronicznym (ER). Podczas projektowania formatu dla określonego dokumentu elektronicznego w module raportowania elektronicznego można używać formuł podobnych do znanych z programu Microsoft Excel w celu przekształcania danych w sposób spełniający wymagania dotyczące realizacji i formatowania tego dokumentu. Obsługiwane są różne typy funkcji: tekstu, daty i godziny, matematyczne, logiczne, informacyjne, konwersji typów danych i inne (specyficzne dla domeny biznesowej).
 
-Projektant formuł — omówienie
-<a id="formula-designer-overview" class="xliff"></a>
+<a name="formula-designer-overview"></a>Projektant formuł — omówienie
 -------------------------
 
 Raportowanie elektroniczne (ER) obsługuje projektanta formuł. Z tego względu w czasie projektowania można konfigurować wyrażenia, które mogą być używane do następujących zadań w czasie wykonywania:
@@ -56,10 +54,8 @@ Stronę projektanta formuł można otworzyć podczas wykonywania następujących
 -   Definiowanie warunków weryfikacji kontroli procesu.
 -   Definiowanie treści komunikatów weryfikacji kontroli procesu.
 
-## Projektowanie formuł ER
-<a id="designing-er-formulas" class="xliff"></a>
-### Wiązanie danych
-<a id="data-binding" class="xliff"></a>
+## <a name="designing-er-formulas"></a>Projektowanie formuł ER
+### <a name="data-binding"></a>Wiązanie danych
 
 Projektant formuł raportowania elektronicznego może służyć do definiowania wyrażenia przekształcającego dane otrzymywane ze źródeł danych, dzięki czemu dane mogą być umieszczane w danych klienta w czasie wykonywania:
 
@@ -69,13 +65,11 @@ Projektant formuł raportowania elektronicznego może służyć do definiowania 
 
 Poniższa ilustracja pokazuje projekt wyrażenia tego typu. W tym przykładzie wyrażenie zwróci wartość pola **Intrastat.AmountMST** tabeli **Intrastat** programu Finance and Operations po uprzednim zaokrągleniu wartości do dwóch miejsc dziesiętnych. [![picture-expression-binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg) Na poniższej ilustracji przedstawiono sposób używania tego typu wyrażenia. W tym przykładzie wynik zaprojektowanego wyrażenia jest umieszczany w składniku **Transaction.InvoicedAmount** modelu danych **Model raportowania podatku**. [![picture-expression-binding2](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg) W czasie wykonywania zaprojektowana formuła **ROUND (Intrastat.AmountMST, 2)** zaokrągla wartość pola **AmountMST** dla każdego rekordu tabeli **Intrastat** do dwóch miejsc dziesiętnych, a następnie umieszcza zaokrągloną wartość w składniku **Transaction.InvoicedAmount** modelu danych **Raportowanie podatku**.
 
-### Formatowanie danych
-<a id="data-formatting" class="xliff"></a>
+### <a name="data-formatting"></a>Formatowanie danych
 
 Projektant formuł ER może służyć do definiowania wyrażenia formatującego dane otrzymywane ze źródeł danych, dzięki czemu dane mogą być wysyłane w ramach generowania dokumentu elektronicznego. Jeśli masz formatowanie, które musi być stosowane jako typowa reguła powtarzana dla formatu, można wprowadzić to formatowanie jeden raz do konfiguracji formatu jako nazwane przekształcenie zawierające wyrażenie formatujące. Później to nazwane przekształcenie można połączyć z wieloma składnikami formatu, których dane wyjściowe muszą być sformatowane zgodnie z utworzonym wyrażeniem. Poniższa ilustracja pokazuje projekt przekształcenia tego typu. W tym przykładzie przekształcenie **TrimmedString** pobiera przychodzące dane o typie danych **Ciąg**, a przy zwracaniu wartości ciągu obcina spacje początkowe i końcowe. [![picture-transformation-design](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg) Poniższa ilustracja pokazuje sposób użycia przekształcenia tego typu. W tym przykładzie kilka składników formatu, które wysyłają tekst jako dane wyjściowe do generowania dokumentu elektronicznego w czasie wykonywania, odwołuje się do przekształcenia **TrimmedString** według nazwy. [![picture-transformation-usage](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg) Jeśli składniki formatu odwołują się do przekształcenia **TrimmedString** (na przykład składnik **partyName** na poprzedniej ilustracji), powoduje to wysyłanie tekstu jako danych wyjściowych do generowanego dokumentu. Tekst nie zawiera spacji wiodących ani końcowych. Jeśli jest używane formatowanie, które musi być stosowane indywidualnie, można je wprowadzić jako indywidualne wyrażenie wiązania konkretnego składnika formatu. Poniższa ilustracja pokazuje wyrażenie tego typu. W tym przykładzie składnik formatu **partyType** jest powiązany ze źródłem danych poprzez wyrażenie, które konwertuje dane przychodzące z pola **Model.Company.RegistrationType** w źródle danych na tekst pisany wielkimi literami, a następnie wysyła ten tekst jako dane wyjściowe do dokumentu elektronicznego. [![picture-binding-with-formula](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
-### Kontrola przepływu procesu
-<a id="process-flow-control" class="xliff"></a>
+### <a name="process-flow-control"></a>Kontrola przepływu procesu
 
 Projektant formuł ER może służyć do definiowania wyrażeń, które kontrolują przebieg procesu generowania dokumentów. Możesz wykonać następujące zadania:
 
@@ -98,8 +92,7 @@ Każda reguła kontroli przepływu procesu została zaprojektowana jako indywidu
 
 [![picture-file-control](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-### Podstawowa składnia
-<a id="basic-syntax" class="xliff"></a>
+### <a name="basic-syntax"></a>Podstawowa składnia
 
 Wyrażenia raportowania elektronicznego mogą zawierać dowolne lub wszystkie z następujących elementów:
 
@@ -109,13 +102,11 @@ Wyrażenia raportowania elektronicznego mogą zawierać dowolne lub wszystkie z 
 -   Ścieżki
 -   Funkcje
 
-#### Stałe
-<a id="constants" class="xliff"></a>
+#### <a name="constants"></a>Stałe
 
 Do projektowania wyrażeń można używać stałych tekstowych i liczbowych (wartości, które nie są obliczane). Na przykład w wyrażeniu **VALUE ("100") + 20** są używane stała liczbowa 20 i stała ciągu „100”, a wyrażenie zwraca wartość liczbową **120**. Projektant formuł ER obsługuje sekwencje specjalne, co oznacza, że można określić ciąg wyrażenia, który powinien być traktowany inaczej. Na przykład wyrażenie **„Lew Tołstoj ”„Wojna i pokój”„ Tom 1”** zwraca ciąg tekstowy **Lew Tołstoj „Wojna i pokój” Tom 1**.
 
-#### Operatory
-<a id="operators" class="xliff"></a>
+#### <a name="operators"></a>Operatory
 
 W poniższej tabeli przedstawiono operatory arytmetyczne, których można używać do wykonania podstawowych operacji matematycznych, takich jak dodawanie, odejmowanie, dzielenie i mnożenie.
 
@@ -143,8 +134,7 @@ Ponadto można użyć znaku handlowego „i” (&) jako operatora łączenia tek
 |----------|-------------|------------------------------------------------|
 | &        | Złącz | „Nie ma nic do wydrukowania” & „: ” & „nie znaleziono żadnych rekordów” |
 
-#### Pierwszeństwo operatorów
-<a id="operator-precedence" class="xliff"></a>
+#### <a name="operator-precedence"></a>Pierwszeństwo operatorów
 
 Kolejność, w jakiej części wyrażenia złożonego są obliczane, jest ważna. Na przykład wynik wyrażenia **1 + 4 / 2** różni się w zależności od tego, czy jako pierwsza jest wykonywana operacja dodawania, czy dzielenia. Nawiasy umożliwiają jawne zdefiniowanie sposobu wyznaczania wartości wyrażenia. Na przykład aby wskazać, że najpierw powinna być wykonywana operacja dodawania, można zmodyfikować poprzednie wyrażenie na **(1 + 4) / 2**. Jeśli kolejność operacji, które muszą być wykonywane w wyrażeniu, nie jest jawnie zdefiniowana, kolejność jest zależna od domyślnego pierwszeństwa przypisanego do obsługiwanych operatorów. Poniższe tabele zawierają operatory i priorytety przypisane do każdego z nich. Operatory o wyższym priorytecie (na przykład 7) są odczytywane przed operatorami, które mają niższy priorytet (na przykład 1).
 
@@ -160,8 +150,7 @@ Kolejność, w jakiej części wyrażenia złożonego są obliczane, jest ważna
 
 Operatory w tym samym wierszu mają równy priorytet. Jeśli wyrażenie zawiera więcej niż jeden z tych operatorów, jest obliczane od lewej do prawej. Na przykład wyrażenie **1 + 6 / 2 \* 3 &gt; 5** zwraca wartość **prawda**. Zaleca się używanie nawiasów w celu jawnego wskazania żądanej kolejności obliczania wyrażeń, aby ułatwić odczyt wyrażenia i zarządzanie nim.
 
-#### Odwołania
-<a id="references" class="xliff"></a>
+#### <a name="references"></a>Odwołania
 
 Wszystkie źródła danych bieżącego składnika ER (model lub format), które są dostępne podczas projektowania wyrażenia, mogą być używane jako odwołania nazwane. Na przykład bieżący model danych ER zawiera źródło danych **ReportingDate**, które zwraca wartość o typie danych **DATETIME**. Aby ta wartość była właściwie sformatowana w generowanym dokumencie, można utworzyć odwołanie z wyrażenia do źródła danych w następujący sposób: **DATETIMEFORMAT (ReportingDate, "dd-MM-rrrr")** Wszystkie znaki w nazwie przywoływanego źródła danych, które nie reprezentują litery alfabetu, muszą być poprzedzone pojedynczym cudzysłowem ('). Jeśli nazwa przywoływanego źródła danych zawiera co najmniej jeden symbol, który nie reprezentuje litery alfabetu (na przykład znaki interpunkcyjne lub inne symbole piśmiennicze), musi zostać ujęta w pojedyncze cudzysłowy. Oto kilka przykładów:
 
@@ -180,22 +169,18 @@ Należy zauważyć, że przekazywanie parametrów do takich metod można zdefini
 - Do takich metod mogą być przekazywane tylko stałe, których wartości są definiowane w czasie projektowania.
 - Dla takich parametrów są obsługiwane tylko pierwotne (podstawowe) typy danych (liczby całkowite, liczby rzeczywiste, wartości logiczne, ciągi tekstowe itd.).
 
-#### Ścieżka
-<a id="path" class="xliff"></a>
+#### <a name="path"></a>Ścieżka
 
 Jeśli wyrażenie odwołuje się do źródła danych usystematyzowanych, można użyć definicji ścieżki, aby wybrać określony element podstawowy tego źródła danych. Znak kropki (.) jest używany do oddzielania poszczególnych elementów źródła danych usystematyzowanych. Na przykład bieżący model danych ER zawiera źródło danych **InvoiceTransactions**, które zwraca listę rekordów. Struktura rekordu **InvoiceTransactions** zawiera pola **AmountDebit** i **AmountCredit**, które zwracają wartości liczbowe. W związku z tym można zaprojektować następujące wyrażenie służące do obliczania zafakturowanej kwoty: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**.
 
-#### Funkcje
-<a id="functions" class="xliff"></a>
+#### <a name="functions"></a>Funkcje
 
 W następnej sekcji opisano funkcje, które mogą być używane w wyrażeniach raportowania elektronicznego. Wszystkie źródła danych kontekstu wyrażenia (bieżący model danych ER lub format ER), a także stałe, mogą służyć jako parametry wywoływania funkcji, zgodnie z listą argumentów wywoływania funkcji. Na przykład bieżący model danych ER zawiera źródło danych **InvoiceTransactions**, które zwraca listę rekordów. Struktura rekordu **InvoiceTransactions** zawiera pola **AmountDebit** i **AmountCredit**, które zwracają wartości liczbowe. W efekcie w celu obliczania zafakturowanej kwoty można zaprojektować następujące wyrażenie używające wbudowanej funkcji zaokrąglania ER: **ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**.
 
-## Obsługiwane funkcje
-<a id="supported-functions" class="xliff"></a>
+## <a name="supported-functions"></a>Obsługiwane funkcje
 W poniższych tabelach opisano funkcje edycji danych, które mogą służyć do projektowania modeli danych i raportów ER. Ta lista funkcji nie jest zamknięta i może być rozszerzana przez programistów. Aby wyświetlić listę funkcji, których można użyć, przejdź do okienka funkcji w projektancie formuł ER.
 
-### Funkcje daty i godziny
-<a id="date-and-time-functions" class="xliff"></a>
+### <a name="date-and-time-functions"></a>Funkcje daty i godziny
 
 | Funkcja                                   | Opis                                                                                                                                                                                                                                                                                                                                                      | Przykład                                                                                                                                                                                                                                                                                               |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -223,8 +208,7 @@ W poniższych tabelach opisano funkcje edycji danych, które mogą służyć do 
 | DATEVALUE (ciąg tekstowy, kultura)              | Zwraca reprezentację ciągu w postaci daty, używając określonego formatu i kultury.       | **DATEVALUE ("21-Gen-2016", "dd-MMM-rrrr", "IT")** zwraca datę 21.01.2016 zgodnie z określonym niestandardowym formatem i kulturą. Dla wywołania **DATEVALUE ("21-Gen-2016", "dd-MMM-rrrr", "EN-US")** tej funkcji zostanie wygenerowany wyjątek informujący, że podany ciąg tekstowy nie jest rozpoznawany jako prawidłowa data.                                                                                                                       |
 | DATETIMEVALUE (ciąg tekstowy, format)              | Zwraca reprezentację ciągu w postaci daty i godziny, używając określonego formatu.       | **DATETIMEVALUE ("21-gru-2016 02:55:00", "dd-MMM-rrrr gg:mm:ss")** zwraca godzinę 2:55:00: AM w dniu 21 grudnia 2016 roku, zgodnie z określonym formatem niestandardowym i domyślną kulturą **EN-US** aplikacji.                                                                                                                       |
 | DATETIMEVALUE (ciąg tekstowy, kultura)              | Zwraca reprezentację ciągu w postaci daty i godziny, używając określonego formatu i kultury.       | **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-rrrr gg:mm:ss", "IT")** zwraca godzinę 2:55:00: AM w dniu 21 grudnia 2016 roku, zgodnie z określonym formatem niestandardowym i kulturą. Dla wywołania **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-rrrr gg:mm:ss", "EN-US")** tej funkcji zostanie wygenerowany wyjątek informujący, że podany ciąg tekstowy nie jest rozpoznawany jako prawidłowa data i godzina.                                                                                                                       |
-### Lista funkcji
-<a id="list-functions" class="xliff"></a>
+### <a name="list-functions"></a>Lista funkcji
 
 <table>
 <colgroup>
@@ -364,8 +348,7 @@ Pola Etykieta i Opis będą zwracać wartości podczas wykonywania zależne od u
 </tbody>
 </table>
 
-### Funkcje logiczne
-<a id="logical-functions" class="xliff"></a>
+### <a name="logical-functions"></a>Funkcje logiczne
 
 | Funkcja                                                                                | opis                                                                                                                                                                                                                                                                     | Przykład                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -375,8 +358,7 @@ Pola Etykieta i Opis będą zwracać wartości podczas wykonywania zależne od u
 | AND (warunek 1\[, warunek 2, ...\])                                                 | Zwracanie wartości **TRUE**, jeśli *wszystkie* określone warunki są spełnione. W przeciwnym jest zwracana wartość **FALSE**.                                                                                                                                                                                            | Funkcja **AND (1=1, "a"="a")** zwraca wartość **TRUE**. **AND (1=2, "a"="a")** zwraca wartość **FALSE**.                                                                                                                                                                           |
 | OR (warunek 1\[, warunek 2, ...\])                                                  | Zwracanie wartości **FALSE**, jeśli *żaden* określony warunek nie jest spełniony. Zwracanie wartości **TRUE**, jeśli *którykolwiek* określony warunek jest spełniony.                                                                                                                                                                 | **OR (1=2, "a"="a")** zwraca wartość **TRUE**.                                                                                                                                                                                                                      |
 
-### Funkcje matematyczne
-<a id="mathematical-functions" class="xliff"></a>
+### <a name="mathematical-functions"></a>Funkcje matematyczne
 
 <table>
 <colgroup>
@@ -448,16 +430,14 @@ Pola Etykieta i Opis będą zwracać wartości podczas wykonywania zależne od u
 
 
 
-### Funkcje zapisu
-<a id="record-functions" class="xliff"></a>
+### <a name="record-functions"></a>Funkcje zapisu
 
 | Funkcja             | opis                                                                                                                                                                                                                                     | Przykład                                                                                                                                             |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | NULLCONTAINER (lista) | Zwracanie rekordu **null**, który ma taką samą strukturę, jak podana lista rekordów lub rekord. **Uwaga:** Ta funkcja jest przestarzała. Zamiast niej należy używać funkcji **EMPTYRECORD**.                                                                                  | **NULLCONTAINER (SPLIT ("abc", 1))** zwraca nowy pusty rekord, który ma taką samą strukturę, jak lista zwracana przez funkcję **SPLIT**. |
 | EMPTYRECORD (rekord) | Zwracanie rekordu **null**, który ma taką samą strukturę, jak podana lista rekordów lub rekord. **Uwaga:** Rekord **null** jest rekordem, w którym wszystkie pola mają wartość pustą (**0** \[zero\] w przypadku liczb, pusty ciąg w przypadku ciągów tekstowych itp.). | **EMPTYRECORD (SPLIT ("abc", 1))** zwraca nowy pusty rekord, który ma taką samą strukturę, jak lista zwracana przez funkcję **SPLIT**.   |
 
-### Funkcje tekstowe
-<a id="text-functions" class="xliff"></a>
+### <a name="text-functions"></a>Funkcje tekstowe
 
 <table>
 <colgroup>
@@ -589,8 +569,7 @@ Dla wartości typu faktyczny konwersja ciągu jest ograniczona do dwóch miejsc 
 **TEXT (1/3) zwraca "0,33"**. |
 | QRCODE (ciąg tekstowy) | Zwraca obraz kodu QR w formacie binarnym base64 dla danego ciągu. | **QRCODE ("Przykładowy tekst")** zwraca **U2FtcGxlIHRleHQ =**.   |
 
-### Funkcje gromadzenia danych
-<a id="data-collection-functions" class="xliff"></a>
+### <a name="data-collection-functions"></a>Funkcje gromadzenia danych
 
 | Funkcja             | opis                                                                                                                                                                                                                                     | Przykład                                                                                                                                             |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -604,8 +583,7 @@ Dla wartości typu faktyczny konwersja ciągu jest ograniczona do dwóch miejsc 
 
 
 
-### Inne funkcje (specyficzne dla domeny biznesowej)
-<a id="other-business-domainspecific-functions" class="xliff"></a>
+### <a name="other-business-domainspecific-functions"></a>Inne funkcje (specyficzne dla domeny biznesowej)
 
 | Funkcja                                                                         | opis                                                                                                                                                                                                                                                        | Przykład                                                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -622,13 +600,11 @@ Dla wartości typu faktyczny konwersja ciągu jest ograniczona do dwóch miejsc 
 | TABLENAME2ID (ciąg)                                                       | Zwraca reprezentację identyfikatora tabeli dla danej nazwy tabeli w postaci liczby całkowitej.                                                                                                                                                                      | **TABLENAME2ID ("Intrastat")** zwraca **1510**.                                                                                                                                                                                                                                                                   |
 | ISVALIDCHARACTERISO7064 (ciąg)                                                       | Zwraca wartość logiczną **TRUE**, gdy podany ciąg tekstowy reprezentuje prawidłowy międzynarodowy numer konta bankowego (IBAN). W przeciwnym razie zwraca wartość logiczną **FALSE**.                                                                                                                                                                      | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** zwraca wartość **TRUE**. **ISVALIDCHARACTERISO7064 ("AT61")** zwraca wartość **FALSE**.                                                                                                                                                                                                                                                                   |
 
-### Rozszerzenie listy funkcji
-<a id="functions-list-extension" class="xliff"></a>
+### <a name="functions-list-extension"></a>Rozszerzenie listy funkcji
 
 Model raportowania elektronicznego umożliwia rozszerzanie listy funkcji używanych w wyrażeniach ER. Wymaga to działań programistycznych. Aby uzyskać szczegółowe informacje, zobacz [Rozszerzanie listy funkcji raportowania elektronicznego](general-electronic-reporting-formulas-list-extension.md).
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)

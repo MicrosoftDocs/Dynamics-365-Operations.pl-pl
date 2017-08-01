@@ -21,15 +21,13 @@ ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
 
 ---
-# Automatyzacja obsługi faktur od dostawców
-<a id="vendor-invoice-automation" class="xliff"></a>
+# <a name="vendor-invoice-automation"></a>Automatyzacja obsługi faktur od dostawców
 
 W tym temacie opisano dostępne funkcje kompleksowej automatyzacji obsługi faktur od dostawców, w tym nawet faktur zawierających załączniki.
 
 Organizacje, które chcą usprawnić swoje procesy rozrachunków z dostawcami (AP), często wskazują na przetwarzanie faktur jako na jeden z głównych obszarów przetwarzania, który powinien być bardziej efektywny. W wielu przypadkach takie organizacje przekazują przetwarzanie papierowych faktur zewnętrznym dostawcom usług optycznego rozpoznawania znaków (OCR). Następnie otrzymują metadane faktur nadające się do odczytu maszynowego razem z zeskanowanego obrazem każdej faktury. Aby pomóc w automatyzacji, jest następnie budowane rozwiązanie „ostatniej mili”, które umożliwia wykorzystywanie tych artefaktów w systemie fakturowania. Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition teraz umożliwia tę automatyzację „ostatniej mili” w standardzie, za pomocą rozwiązania do automatyzacji obsługi faktur.
 
-## Kontekst rozwiązania
-<a id="solution-context" class="xliff"></a>
+## <a name="solution-context"></a>Kontekst rozwiązania
 
 Rozwiązanie automatyzacji obsługi faktur oferuje standardowy interfejs, który może akceptować metadane nagłówków i wierszy faktur, a także załączniki odnośnych faktur. Każdy system zewnętrzny, który może generować artefakty zgodne z tym interfejsem, będzie mógł wysyłać te dane do programu Finance and Operations na potrzeby automatycznego przetwarzania faktur i załączników.
 
@@ -39,8 +37,7 @@ Na poniższej ilustracji przedstawiono przykładowy scenariusz integracji, w kt�
 
 Jest możliwych kilka odmian powyższego scenariusza, jeśli jest wymagana integracja faktur. Migracja danych jest kolejnym przypadkiem użycia, w którym ten interfejs może być wykorzystywany do tworzenia faktur i załączników w programie Finance and Operations.
 
-### Składniki rozwiązania
-<a id="solution-components" class="xliff"></a>
+### <a name="solution-components"></a>Składniki rozwiązania
 
 Rozwiązanie zawiera następujące składniki:
 
@@ -50,8 +47,7 @@ Rozwiązanie zawiera następujące składniki:
 
 Pozostała część tego tematu zawiera szczegółowe opisy tych składników rozwiązania.
 
-## Jednostki danych
-<a id="data-entities" class="xliff"></a>
+## <a name="data-entities"></a>Jednostki danych
 
 Pakiet danych jest jednostką pracy, która musi zostać wysłana do programu Finance and Operations, aby można było tworzyć nagłówki, wiersze i załączniki faktur. Następujące jednostki danych są używane do artefaktów składających się na pakiet danych:
 
@@ -77,8 +73,7 @@ Aby szybko wygenerować dane testowe zawierające faktury i załączniki, wykona
 1. Wyeksportuj dane.
 1. Pobierz wyeksportowane dane jako pakiet. Teraz możesz użyć pakietu w celu zaimportowania danych do wystąpień docelowych dla celów testowych.
 
-### Określanie firmy dla faktury
-<a id="determining-the-legal-entity-for-an-invoice" class="xliff"></a>
+### <a name="determining-the-legal-entity-for-an-invoice"></a>Określanie firmy dla faktury
 
 Faktury importowane za pośrednictwem pakietów danych mogą być skojarzone z firmą, do której należą, na dwa sposoby:
 
@@ -88,13 +83,11 @@ Faktury importowane za pośrednictwem pakietów danych mogą być skojarzone z f
 > [!NOTE]
 > To zachowanie jest standardowym zachowaniem zarządzania danymi. Wyjaśniono je tutaj, w kontekście faktur, tylko dla kompletności.
 
-## Przetwarzanie wyjątków
-<a id="exception-processing" class="xliff"></a>
+## <a name="exception-processing"></a>Przetwarzanie wyjątków
 
 W scenariuszach, gdzie faktury od dostawców wchodzą do programu Finance and Operations wskutek integracji, musi istnieć prosty sposób, w jaki członek zespołu rozrachunków z dostawcami może przetwarzać wyjątki lub niepomyślnie rozliczone faktury oraz tworzyć faktury oczekujące z niepomyślnie rozliczonych faktur. Taka funkcjonalność przetwarzania wyjątków faktur od dostawców jest obecnie częścią programu Finance and Operations.
 
-### Strona listy wyjątków
-<a id="exceptions-list-page" class="xliff"></a>
+### <a name="exceptions-list-page"></a>Strona listy wyjątków
 
 Nowa strona listy dla wyjątków faktur jest dostępna w oknie **Rozrachunki z dostawcami** > **Faktury** > **Niepowodzenia importu** > **Faktury od dostawców, których importowanie nie powiodło się**. Na tej stronie są pokazane wszystkie rekordy nagłówków faktur od dostawców z tabeli tymczasowej jednostki danych Nagłówek faktury od dostawcy. Należy zauważyć, że można wyświetlić te same rekordy z obszaru roboczego **Zarządzanie danymi**, w którym można również wykonać te same czynności, jakie są dostępne w funkcji obsługi wyjątków. Jednak interfejs użytkownika funkcji obsługi wyjątków jest zoptymalizowany dla użytkownika funkcjonalnego.
 
@@ -129,8 +122,7 @@ Na stronie listy można wykonywać następujące akcje:
 + **Edytuj** — Służy do otwierania rekordu wyjątku w trybie edycji umożliwiającym rozwiązywanie problemów.
 + **Opcje** — Przechodzenie do standardowych opcji dostępnych na stronach list. Można użyć opcji **Dodaj do obszaru roboczego**, aby przypiąć stronę listy wyjątków do swojego obszaru roboczego jako listę lub kafelek.
 
-### Strona szczegółów wyjątków
-<a id="exception-details-page" class="xliff"></a>
+### <a name="exception-details-page"></a>Strona szczegółów wyjątków
 
 Po uruchomieniu trybu edycji pojawia się strona szczegółów wyjątków dla faktury, w której występują problemy. Jeśli istnieją jakiekolwiek załączniki, faktura i domyślny załącznik są wyświetlane obok siebie na stronie szczegółów wyjątków.
 
@@ -142,8 +134,7 @@ Strona szczegółów wyjątków obsługuje następującą operację:
 
 + **Utwórz fakturę oczekującą** — Po rozwiązaniu problemów z fakturą w ramach przetwarzania wyjątków można kliknąć ten przycisk, aby utworzyć fakturę oczekującą. Tworzenie faktur oczekujących jest wykonywane w tle (jako operacja asynchroniczna).
 
-### Usługa udostępniona a przetwarzanie wyjątków wewnątrz organizacji
-<a id="shared-service-vs-organization-based-exception-processing" class="xliff"></a>
+### <a name="shared-service-vs-organization-based-exception-processing"></a>Usługa udostępniona a przetwarzanie wyjątków wewnątrz organizacji
 
 Na stronie listy wyjątków są obsługiwane standardowe konstrukcje zabezpieczeń, które obszar roboczy **Zarządzanie danymi** obsługuje dla przetwarzania rekordów pośrednich. Zadanie importu faktur można zabezpieczyć w następujące sposoby:
 
@@ -159,8 +150,7 @@ Na przykład firma Contoso podjęła decyzję o przetwarzaniu wyjątków faktur 
 
 Firma Contoso mogłaby również podjąć decyzję, aby nie wymuszać żadnych zabezpieczeń, dzięki czemu ci sami użytkownicy mogliby przetwarzać wyjątki faktur dla wszystkich firm. Taka konfiguracja wspiera scenariusz usług udostępnionych w zarządzaniu wyjątkami faktur.
 
-## Przeglądarka umożliwiająca wyświetlanie załączników obok siebie
-<a id="side-by-side-attachment-viewer" class="xliff"></a>
+## <a name="side-by-side-attachment-viewer"></a>Przeglądarka umożliwiająca wyświetlanie załączników obok siebie
 
 Aby ułatwić przeglądanie załączników faktur od dostawców, następujące strony używane w procesie fakturowania teraz zawierają funkcjonalność przeglądarki załączników:
 
@@ -184,20 +174,17 @@ Poniżej przedstawiono główne funkcje zawarte w przeglądarce załączników:
 > [!NOTE]
 > Te akcje są dostępne tylko w przypadku plików obrazów (JPEG, TIFF, PNG itd.). Wszelkie zmiany wprowadzone w obrazie za pomocą tych czynności są zapisywane w pliku obrazu. Obecnie przeglądarka załączników nie zawiera funkcji tworzenia wersji ani audytowania.
 
-### Załącznik domyślny
-<a id="default-attachment" class="xliff"></a>
+### <a name="default-attachment"></a>Załącznik domyślny
 
 Jeśli faktura od dostawcy ma więcej niż jeden załącznik, na stronie **Załączniki** można ustawić jeden z tych dokumentów jako załącznik domyślny. Opcja **Jest załącznikiem domyślnym** to nowa opcja dodana jako część tej funkcji. Ta opcja jest także widoczna w jednostce danych Załącznik dokumentu faktury od dostawcy. Dzięki temu poprzez integrację można ustawić załącznik domyślny.
 
 Tylko jeden dokument można ustawić jako załącznik domyślny. Po ustawieniu dokumentu jako załącznika domyślnego jest on automatycznie wyświetlany w przeglądarce załączników po otwarciu faktury. Jeśli nie ustawiono żadnego dokumentu jako załącznika domyślnego, przeglądarka nie będzie automatycznie pokazywać żadnego załącznika po otwarciu faktury.
 
-### Pokazywanie/ukrywanie załączników faktur
-<a id="showhide-invoice-attachments" class="xliff"></a>
+### <a name="showhide-invoice-attachments"></a>Pokazywanie/ukrywanie załączników faktur
 
 Nowy przycisk dostępny na stronach zapytań **Przetwarzanie wyjątków**, **Faktura oczekująca** i **Arkusz faktur** umożliwia pokazywanie lub ukrywanie przeglądarki załączników.
 
-### Zabezpieczenia
-<a id="security" class="xliff"></a>
+### <a name="security"></a>Zabezpieczenia
 
 Następujące akcje w przeglądarce załączników są kontrolowane przez zabezpieczenia oparte na rolach:
 
@@ -205,8 +192,7 @@ Następujące akcje w przeglądarce załączników są kontrolowane przez zabezp
 + Zablokuj
 + Adnotowanie
 
-### Strona Oczekujące faktury od dostawcy
-<a id="pending-vendor-invoices-page" class="xliff"></a>
+### <a name="pending-vendor-invoices-page"></a>Strona Oczekujące faktury od dostawcy
 
 Następujące uprawnienia zapewniają dostęp tylko do odczytu lub odczytu i zapisu w przeglądarce załączników dla akcji wyróżniania, blokowania i adnotowania:
 
@@ -223,8 +209,7 @@ Następujące role zapewniają dostęp tylko do odczytu lub odczytu i zapisu w p
 + **Pracownik ds. rozrachunków z dostawcami** i **Menedżer ds. rozrachunków z dostawcami** — Do tych ról jest przypisany obowiązek Obsługa faktur od dostawcy.
 + **Pracownik ds. rozrachunków z dostawcami**, **Menedżer ds. rozrachunków z dostawcami**, **Pracownik ds. płatności scentralizowanych w rozrachunkach z dostawcami** i **Pracownik ds. płatności rozrachunków z dostawcami** — Do tych ról jest przypisany obowiązek Zapytanie o stan faktury od dostawcy.
 
-### Strona szczegółów wyjątków faktur
-<a id="invoice-exception-details-page" class="xliff"></a>
+### <a name="invoice-exception-details-page"></a>Strona szczegółów wyjątków faktur
 
 Następujące uprawnienia zapewniają dostęp tylko do odczytu lub odczytu i zapisu w przeglądarce załączników dla akcji wyróżniania, blokowania i adnotowania.
 

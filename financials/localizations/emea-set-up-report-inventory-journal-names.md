@@ -26,8 +26,7 @@ ms.lasthandoff: 06/09/2017
 
 ---
 
-# Raporty arkuszy magazynowych
-<a id="inventory-journal-reports" class="xliff"></a>
+# <a name="inventory-journal-reports"></a>Raporty arkuszy magazynowych
 
 [!include[banner](../includes/banner.md)]
 

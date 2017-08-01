@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurowanie rozliczenia
-<a id="configure-settlement" class="xliff"></a>
+# <a name="configure-settlement"></a>Konfigurowanie rozliczenia
 
 [!include[banner](../includes/banner.md)]
 

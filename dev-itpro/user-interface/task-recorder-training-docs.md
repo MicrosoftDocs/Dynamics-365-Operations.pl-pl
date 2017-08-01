@@ -27,8 +27,7 @@ ms.lasthandoff: 06/17/2017
 
 ---
 
-# Tworzenie dokumentacji lub szkolenia przy użyciu nagrań zadań
-<a id="create-documentation-or-training-using-task-recordings" class="xliff"></a>
+# <a name="create-documentation-or-training-using-task-recordings"></a>Tworzenie dokumentacji lub szkolenia przy użyciu nagrań zadań
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ W tym temacie wyjaśniono, czym jest Rejestrator zadań i przewodniki po zadania
 > [!IMPORTANT]
 > Nie można tworzyć niestandardowych przewodników po zadaniach dla modułu Dynamics 365 for Talent. System Pomocy programu Talent jest automatycznie łączony z przewodnikami po zadaniach dla tego produktu. 
 
-Więcej informacji o Rejestratorze zadań
-<a id="learn-about-task-recorder" class="xliff"></a>
+<a name="learn-about-task-recorder"></a>Więcej informacji o Rejestratorze zadań
 -------------------------
 
 Rejestrator zadań to narzędzie systemu umożliwiające nagrywanie czynności wykonywanych w interfejsie użytkownika (UI) produktu. Przy użyciu Rejestratora zadań wszystkie zdarzenia wykonywane w interfejsie użytkownika, które są wykonywane na serwerze — takie jak dodawanie wartości, zmiana ustawień i usuwanie danych — są przechwytywane. Zapisywane kroki są zbiorczo zwane *nagraniami zadań*. Nagrania zadań mogą być używane na wiele sposobów:
@@ -50,8 +48,7 @@ Rejestrator zadań to narzędzie systemu umożliwiające nagrywanie czynności w
 
 Można tworzyć własne nagrania zadań, odtwarzać nagrania zadań udostępnione przez firmę Microsoft lub modyfikować te nagrania zgodnie z własną konfiguracją. Aby uzyskać więcej informacji na temat Rejestratora zadań, zobacz [Rejestrator zadań](task-recorder.md).
 
-## Planowanie nagrań zadań
-<a id="plan-your-task-recording" class="xliff"></a>
+## <a name="plan-your-task-recording"></a>Planowanie nagrań zadań
 Niezależnie od tego, czy tworzysz najnowsze nagranie, czy opierasz się na nagraniach od Microsoft, pamiętaj o następujących informacjach.
 
 -   Zaplanuj nagranie jak film wideo. Wszystkie decyzje podejmij z wyprzedzeniem.
@@ -101,12 +98,10 @@ Tak wygląda adnotacja uwag w „dymku” w przewodniku po zadaniu.
 
 **Określ gdzie w interfejsie użytkownika zacząć nagrywanie** Strona, na której jesteś na początku nagrania, ma wpływ na to, dla której strony wyświetlany jest przewodnik po zadaniu. Na przykład jeśli nagranie zadania ma się znaleźć na liście w okienku Pomocy, gdy użytkownik kliknie przycisk Pomocy na stronie parametrów księgi głównej, musisz zacząć nagranie na stronie parametrów księgi głównej. **Zapisz nagrania jako pliki .axtr** Po zakończeniu tworzenia lub edytowania nagrania zadania, masz kilka opcji pobrania lub zapisania nagrania. Możesz pobrać plik jako pakiet nagrania zadania (.axtr), nieprzetworzony plik nagrania (.xml), dokument programu Word lub zapisać plik w bibliotece LCS. Dobrze jest zapisać nagranie zadania jako plik pakietu nagrania zadania (.axtr). To ułatwia obsługę plików, jeśli później trzeba zmienić procedury lub adnotacje. Jeśli chcesz pobrać ten plik jako dokument programu Word, zapisz go również jako plik pakietu nagrania zadania.
 
-## Tworzenie nagrania zadania
-<a id="create-your-task-recording" class="xliff"></a>
+## <a name="create-your-task-recording"></a>Tworzenie nagrania zadania
 Szczegółowe omówienie znajduje się w temacie [Jak utworzyć nagrania zadań](task-recorder.md).
 
-## Kopiowanie i dostosowywanie nagrań uzyskanych od firmy Microsoft
-<a id="copy-and-customize-microsofts-task-recordings" class="xliff"></a>
+## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopiowanie i dostosowywanie nagrań uzyskanych od firmy Microsoft
 Można pobrać i edytować nagrania firmy Microsoft i używać ich do tworzenia własnej dokumentacji Pomocy lub materiałów szkoleniowych. Aby pobrać nagranie zadania od Microsoft, wykonaj następujące czynności:
 
 1.  Otwórz Rejestratora zadań. Rejestrator zadań znajduje się w menu **Ustawienia**.
@@ -121,12 +116,10 @@ Można pobrać i edytować nagrania firmy Microsoft i używać ich do tworzenia 
 10. Po odtworzeniu nagrania do końca, kliknij **Stop** na pasku rejestratora zadań w górnej części ekranu.
 11. Wybierz, jak chcesz zapisać nagranie zadania.
 
-## Umieszczanie nagrań zadań w okienku Pomocy
-<a id="include-your-task-recordings-in-the-help-pane" class="xliff"></a>
+## <a name="include-your-task-recordings-in-the-help-pane"></a>Umieszczanie nagrań zadań w okienku Pomocy
 Aby wyświetlić własne niestandardowe nagrania zadań w okienku Pomocy, by mogły być odtwarzane jako przewodniki po zadaniach lub wyświetlane jako tekst, należy zapisać nagrania zadań w bibliotece BPM, a następnie zaktualizować parametry systemu Pomocy, aby wskazywał bibliotekę BPM. Aby uzyskać więcej informacji, zobacz [Łączenie z systemem Pomocy](../get-started/help-connect.md).
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Omówienie Pomocy](..\get-started\help-overview.md)

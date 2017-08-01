@@ -26,24 +26,21 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Przegląd planowania budżetu
-<a id="budget-planning-overview" class="xliff"></a>
+# <a name="budget-planning-overview"></a>Przegląd planowania budżetu
 
 [!include[banner](../includes/banner.md)]
 
 
 Ten artykuł zawiera wprowadzenie do koncepcji planowania budżetu oraz informacje pomocne w konfigurowaniu planowania budżetu i odnośnych procesów.
 
-Przegląd planowania budżetu
-<a id="overview-of-budget-planning" class="xliff"></a>
+<a name="overview-of-budget-planning"></a>Przegląd planowania budżetu
 ---------------------------
 
 Planowanie budżetu to proces przygotowywania budżetów, które zostaną zaimplementowane przez organizację. Organizacja może konfigurować planowanie budżetu, a następnie konfigurować procesy planowania budżetu, zgodnie z zasadami, procedurami i wymaganiami organizacji dotyczącymi przygotowania budżetu. 
 
 Gdy znasz pojęcia i terminologię używaną w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, implementacja planowania budżetu w organizacji jest łatwiejsza.
 
-### Kluczowe terminy
-<a id="key-terms" class="xliff"></a>
+### <a name="key-terms"></a>Kluczowe terminy
 
 -   **Procesy planowania budżetu** — procesy planowania budżetu decydują o sposobach aktualizowania, obiegu, przeglądania i zatwierdzania planów budżetu w hierarchii organizacyjnej Budżetowanie. Proces planowania budżetu jest połączony z cyklem budżetu i organizacją poprzez podmiot prawny.
 -   **Plany budżetu** — plany budżetu zawierają dane budżetu dla cyklu budżetu. Można używać wielu planów budżetu, które są używane do różnych celów. Na przykład plany budżetu mogą służyć do tworzenia kwot budżetu dla różnych jednostek organizacyjnych lub mogą pomagać przy porównaniach i podejmowaniu decyzji.
@@ -53,8 +50,7 @@ Gdy znasz pojęcia i terminologię używaną w programie Microsoft Dynamics 365 
 
 [![Terminologia związana z planowaniem budżetu](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
-### Zadania wspólne
-<a id="common-tasks" class="xliff"></a>
+### <a name="common-tasks"></a>Zadania wspólne
 
 Planowania budżetu można używać do wykonywania następujących zadań:
 
@@ -65,12 +61,10 @@ Planowania budżetu można używać do wykonywania następujących zadań:
 
 Planowanie budżetu jest zintegrowane z innymi modułami programu Microsoft Dynamics 365 for Finance and Operations. Pozwala to przenieść informacje z poprzednich budżetów, rzeczywistych wydatków, środków trwałych i zasobów ludzkich. Planowanie budżetu jest także zintegrowane z programami Microsoft Excel i Microsoft Word, dzięki czemu można użyć tych narzędzi do pracy z danymi planowania budżetu. Na przykład, menedżer budżetu może wyeksportować wniosek budżetowy działu ze scenariusza planu budżetu do arkusza programu Excel. Dane można analizować, aktualizować i obrazować na wykresie w arkuszu, a następnie publikować z powrotem do wierszy planu budżetu.
 
-## Konfigurowanie planowania budżetu
-<a id="configuring-budget-planning" class="xliff"></a>
+## <a name="configuring-budget-planning"></a>Konfigurowanie planowania budżetu
 Strona **Konfiguracja planowania budżetu** zawiera większość ustawień, które są wymagane do tworzenia planowania budżetu. W poniższych sekcjach opisano niektóre kluczowe czynniki, o których trzeba pamiętać podczas konfigurowania planowania budżetu. Po zakończeniu konfiguracji można ustawić procesy planowania budżetu.
 
-### Tworzenie schematu planowania budżetu
-<a id="create-a-budget-planning-schema" class="xliff"></a>
+### <a name="create-a-budget-planning-schema"></a>Tworzenie schematu planowania budżetu
 
 Opcjonalnym, ale zalecanym pierwszym krokiem jest utworzenie schematu zawierającego procedury opracowywania budżetu organizacji. Metoda tworzenia takiego schematu jest dowolna. Na poniższej ilustracji pokazano ogólny przykład, w którym dla różnych poziomów organizacji tworzone są oddzielne przepływy pracy. Dla każdego przepływu pracy definiowane są etapy, a do każdego etapu przypisywane są określone scenariusze z danymi budżetowymi. Wykonywane są zadania przenoszenia danych z jednego etapu do następnego Na przykład kwoty mogą być przydzielane lub agregowane na różnych kontach, zatwierdzeniach lub innych dokumentach kontrolnych. W tym przykładzie kursywa oznacza scenariusz niedostępny do edycji na danym etapie lub dane archiwalne albo zatwierdzone na wcześniejszym etapie, które z tego powodu nie powinny być zmieniane. 
 
@@ -80,20 +74,17 @@ W poniższym przykładzie centrala firmy prognozuje wstępne kwoty podstawowe bu
 
 [![Przykład schematu planowania budżetu](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
-###  Hierarchia organizacyjna dla planowania budżetu
-<a id="organization-hierarchy-for-budget-planning" class="xliff"></a>
+###  <a name="organization-hierarchy-for-budget-planning"></a>Hierarchia organizacyjna dla planowania budżetu
 
 Na stronie **Hierarchia organizacyjna** można określić hierarchię organizacyjną jako hierarchię planowania budżetu dla każdego procesu planowania budżetu. Hierarchia planowania budżetu nie musi pasować do standardowej hierarchii organizacyjnej, która jest używana do innych celów. Ponieważ ta hierarchia służy do agregowania i dystrybucji danych, można zaprojektować dla niej inną strukturę. W przykładowym schemacie działy sprzedaży są poniżej poziomu centrali obejmującego działy budżetu i finansowy. Ta struktura prawdopodobnie różni się od struktury służącej do zarządzania operacjami działów sprzedaży. Do każdego procesu planowania budżetu można przypisać tylko hierarchię organizacyjną. 
 
 Więcej informacji można znaleźć w temacie [Organizacje i hierarchie organizacyjne](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies).
 
-### Zabezpieczenia użytkownika
-<a id="user-security" class="xliff"></a>
+### <a name="user-security"></a>Zabezpieczenia użytkownika
 
 Planowanie budżetu być realizowane według jednego z modeli zabezpieczeń definiujących uprawnienia użytkownika. Aby określić model zabezpieczeń, należy ustawić parametr planowania budżetu na stronie **Konfiguracji planowania budżetu**.
 
-### Etapy przepływu pracy planowania budżetu
-<a id="budget-planning-workflows-stages" class="xliff"></a>
+### <a name="budget-planning-workflows-stages"></a>Etapy przepływu pracy planowania budżetu
 
 Przepływy pracy planowania budżetu są używane razem z przepływami pracy Budżetowanie do zarządzania, tworzenia i oceny planów budżetu.
 
@@ -111,8 +102,7 @@ Przepływ pracy zawiera elementy dla alokacji do działów sprzedaży i agregowa
 
 Przypisywanie przepływu pracy do poszczególnych przepływów pracy planowania budżetu odbywa się w sekcji **Etapy przepływu pracy** na stronie **Konfiguracja planowania budżetu**.
 
-### Parametry, scenariusze i etapy
-<a id="parameters-scenarios-and-stages" class="xliff"></a>
+### <a name="parameters-scenarios-and-stages"></a>Parametry, scenariusze i etapy
 
 Początkowe ustawienia na stronie **Konfiguracja planowania budżetu** pozwalają tworzyć bloki konstrukcyjne do późniejszych etapów konfiguracji:
 
@@ -120,8 +110,7 @@ Początkowe ustawienia na stronie **Konfiguracja planowania budżetu** pozwalaj�
 -   **Scenariusze** — obejmują kategorie danych, które mają być stosowane dla planów budżetu. Scenariusze planu budżetu definiuje się do obsługi klas walutowych i innych klas jednostki miary, takich jak ilość. W planie budżetu scenariusze dotyczą jednej wersji danych planowania budżetu. Przykłady pieniężnych scenariuszy planu budżetu to m.in. Sprzedaż w ubiegłym roku i Podpisane umowy. Przykłady scenariuszy, w których używane są ilości to m.in. Liczba wywołań sprzedaży i Przeliczenia na pełne etaty (FTE).
 -   **Etapy** — definiują czynności planu budżetu od jego powstania do ostatecznego zatwierdzenia. Przykłady etapów planowania budżetu to m.in. Akumulacja centrali, Kontrola CFO i Ostateczne.
 
-### Harmonogramy alokacji
-<a id="allocation-schedules" class="xliff"></a>
+### <a name="allocation-schedules"></a>Harmonogramy alokacji
 
 Podczas planowania budżetu można alokować kwoty lub ilości w wierszach planu budżetu z jednego scenariusza do innego scenariusza lub nawet do tego samego scenariusza. Na przykład można alokować do tego samego scenariusza, jeśli trzeba zastosować zmiany do wymiarów finansowych lub dat, w tym scenariuszu kwot. Alokacja może odbywać się w ramach planu budżetu lub między dwoma planami budżetu. 
 
@@ -134,8 +123,7 @@ Harmonogramy alokacji automatycznie alokują wiersze planu budżetu podczas prze
 -   **Użyj reguł alokacji księgi** — rozdzielanie wierszy planu budżetu następuje ze źródłowego scenariusza planu budżetu do docelowego scenariusza planu budżetu na podstawie wybranej reguły alokacji księgi.
 -   **Kopiuj z planu budżetu** — można wybrać inny plan budżetu do użycia jako źródło alokacji.
 
-### Alokacje etapu
-<a id="stage-allocations" class="xliff"></a>
+### <a name="stage-allocations"></a>Alokacje etapu
 
 Alokacje etapu umożliwiają automatyczną alokację wierszy planu budżetu podczas przetwarzania przepływu pracy. Gdy używane są alokacje etapów, wiersze planu budżetu w scenariuszu docelowym można tworzyć i modyfikować bez interwencji osoby odpowiedzialnej za przygotowanie planu budżetu lub osoby sprawdzającej.
 
@@ -149,13 +137,11 @@ Ponadto w przykładowym schemacie agregacja jest wykonywana z planów i scenariu
 
 [![Agregacja](./media/aggregation-109x300.png)](./media/aggregation.png)
 
-### Priorytety
-<a id="priorities" class="xliff"></a>
+### <a name="priorities"></a>Priorytety
 
 Można opcjonalnie użyć priorytetów planu budżetu do definiowania kategorii o celów dla planów budżetu, które zostały skonfigurowane. Priorytety mogą być stosowane do organizowania, klasyfikowania i oceniania kilku planów budżetu. Na przykład można utworzyć budżet priorytet planowania dla zdrowia i bezpieczeństwa i następnie ocenić plany budżetu, które są przypisane do tego priorytetu. Można również przypisać numer do określania rangi planów budżetu we wszystkich planach budżetu.
 
-### Kolumny i układy
-<a id="columns-and-layouts" class="xliff"></a>
+### <a name="columns-and-layouts"></a>Kolumny i układy
 
 Wartości budżetu są wyświetlane w planie budżetu w wierszach i kolumnach. Należy najpierw zdefiniować kolumny, a następnie należy utworzyć układ, aby zdefiniować sposób wyświetlania kolumn. 
 
@@ -171,8 +157,7 @@ W przykładowym schemacie można utworzyć kolumny dla scenariuszy Sprzedaż w p
 
 Można również określić, czy poszczególne elementy układu (kolumna) są dostępne do edycji i czy są one dostępne w jakimkolwiek szablonie arkusza utworzonego w tym układzie. W przykładowym schemacie w układzie używanym dla etapu Szacowanie kolumny Prognoza są dostępne do edycji, a kolumny Sprzedaż w poprzednim roku i Umowy są tylko do odczytu.
 
-### Szablony
-<a id="templates" class="xliff"></a>
+### <a name="templates"></a>Szablony
 
 W sekcji **Układy** strony **Konfiguracja planowania budżetu** można też generować, wyświetlać lub przesyłać szablony programu Excel. Te szablony to skoroszyty, które są połączone z każdym planem budżetu, oferując dodatkowe analizy, wykresy i opcje wprowadzania danych. 
 
@@ -181,13 +166,11 @@ Można wygenerować, wyświetlić i przesłać szablon dla każdego układu. Pod
 > [!NOTE] 
 > Szablon należy zapisać w miejscu, do którego użytkownik ma dostęp, aby dało się go przesłać do układu po zakończeniu edycji. W ten sposób szablon będzie używany z planami budżetu, które używają układu.
 
-### Opisy
-<a id="descriptions" class="xliff"></a>
+### <a name="descriptions"></a>Opisy
 
 Opisy, które można przypisać w sekcji **Układy** służą do wyświetlania nazw wymiarów finansowych dostępnych w układzie. Na przykład organizacja może chcieć, aby nazwa konta głównego organizacji była wyświetlana obok numeru konta głównego w planie budżetu, ale bez nazw innych wymiarów finansowych, aby widok był przejrzysty i czytelny.
 
-## Konfigurowanie procesów planowania budżetu
-<a id="setting-up-budget-planning-processes" class="xliff"></a>
+## <a name="setting-up-budget-planning-processes"></a>Konfigurowanie procesów planowania budżetu
 
 Po zakończeniu konfigurowania planowania budżetu można skonfigurować procesy planowania budżetu na stronie **Proces planowania budżetu**. Procesy planowania budżetu to zestawy reguł, które decydują o sposobach aktualizowania, obiegu, przeglądania i zatwierdzania planów budżetu w hierarchii organizacyjnej Budżetowanie. 
 

@@ -26,16 +26,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Wyświetlanie i projektowanie raportów finansowych
-<a id="view-and-design-financial-reports" class="xliff"></a>
+# <a name="view-and-design-financial-reports"></a>Wyświetlanie i projektowanie raportów finansowych
 
 [!include[banner](../includes/banner.md)]
 
 
 Ten artykuł zawiera ćwiczenia, które prowadzą przez całą procedurę wyświetlania i tworzenia raportów finansowych w programie Microsoft Dynamics 365 for Finance and Operations. Funkcjonalność sprawozdawczości finansowej składa się z funkcji wyświetlania w programie Finance and Operations oraz aplikacji ClickOnce projektanta raportów, który umożliwia tworzenie i edytowanie raportów finansowych.  
 
-Ćwiczenie 1: Generowanie i przeglądanie domyślnego raportu finansowego
-<a id="exercise-1-generate-and-explore-a-default-financial-report" class="xliff"></a>
+<a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Ćwiczenie 1: Generowanie i przeglądanie domyślnego raportu finansowego
 -----------------------------------------------------------
 
 W tym ćwiczeniu wygenerujemy i przejrzymy istniejący raport domyślny. Ten raport zawiera wszystkie konta i zawiera także właściwości (atrybuty) dla kont. Można będzie wyświetlić szczegóły, stosować filtry wymiarów, zmieniać walutę w raporcie. Najpierw zaktualizujemy kolejność wyświetlania wymiarów dla raportowania finansowego. Umożliwia to wybranie sposobu wyświetlania wymiarów nie tylko podczas projektowania i wyświetlania raportów finansowych.
@@ -66,8 +64,7 @@ W tym ćwiczeniu wygenerujemy i przejrzymy istniejący raport domyślny. Ten rap
 18. Zamknij raport **Szczegóły KG**.
 19. Zamknij **Projektanta raportów**.
 
-## Ćwiczenie 2: Dodawanie dodatkowych właściwości konta do projektu raportu
-<a id="exercise-2-add-additional-account-properties-to-a-report-design" class="xliff"></a>
+## <a name="exercise-2-add-additional-account-properties-to-a-report-design"></a>Ćwiczenie 2: Dodawanie dodatkowych właściwości konta do projektu raportu
 W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Zaktualizujesz zarówno definicję wiersza, tak aby zawierała wszystkie konta, jak i definicję kolumny, tak aby zawierała atrybuty konta. Po zakończeniu aktualizacji wygenerujesz nowo utworzony raport i przejrzysz jego treść. Zaczniemy od listy Raporty finansowe.
 
 1.  Przejdź do opcji **Raporty finansowe** w sekcji Zapytania i raporty w księdze głównej.
@@ -103,8 +100,7 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Zaktualizujesz zar�
 25. Zamknij raport **Szczegółowy bilans próbny z atrybutami**.
 26. Zamknij **Projektanta raportów**.
 
-## Ćwiczenie 3: Tworzenie wielowymiarowego raportu za pomocą drzewa raportowania
-<a id="exercise-3-create-a-multidimensional-report-using-a-reporting-tree" class="xliff"></a>
+## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Ćwiczenie 3: Tworzenie wielowymiarowego raportu za pomocą drzewa raportowania
 W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Będziemy tworzyli drzewo raportowania i dodawali do definicji raportu, aby wygenerować Rachunek wyników dla centrum kosztu/wymiaru. Po wprowadzeniu zmian wygenerujemy Rachunek wyników dla centrum kosztu/wymiaru i zapoznamy się z jego zawartością za pomocą drzewa raportowania. Zaczniemy od listy Raporty finansowe.
 
 1.  Przejdź do opcji **Raporty finansowe** w sekcji Zapytania i raporty w księdze głównej.
@@ -140,8 +136,7 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Będziemy tworzyli 
 31. Zamknij **Raport wyników — domyślny**.
 32. Zamknij **Projektanta raportów**.
 
-## Ćwiczenie 4: Tworzenie skonsolidowanego raportu przy użyciu hierarchii organizacyjnej
-<a id="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy" class="xliff"></a>
+## <a name="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy"></a>Ćwiczenie 4: Tworzenie skonsolidowanego raportu przy użyciu hierarchii organizacyjnej
 W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Dodasz hierarchię organizacyjną do definicji raportu, aby wygenerować raporty Skonsolidowany rachunek wyników i bilans Po wprowadzeniu zmian wygenerujesz skonsolidowany raport i zapoznasz się z jego zawartością za pomocą drzewa raportowania. Zaczniemy od listy Raporty finansowe.
 
 1.  Przejdź do opcji **Raporty finansowe** w sekcji Zapytania i raporty w księdze głównej.
@@ -160,8 +155,7 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Dodasz hierarchię 
 14. Zamknij raport **Skonsolidowany bilans i rachunek wyników obok siebie**.
 15. Zamknij **Projektanta raportów**.
 
-## Ćwiczenie 5: Tworzenie raportu wg działów obok siebie
-<a id="exercise-5-create-a-sidebyside-departmental-report" class="xliff"></a>
+## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Ćwiczenie 5: Tworzenie raportu wg działów obok siebie
 W tym ćwiczeniu utworzymy nowy raport. Raport jest rachunkiem wyników działu wyświetlanym obok siebie. Użyjemy istniejącej definicji wiersza, ale utworzymy nową definicję raportu i nową definicję kolumny, które będą korzystały z filtrów wymiarów. Zaczniemy od listy Raporty finansowe.
 
 1.  Przejdź do opcji **Raporty finansowe** w sekcji Zapytania i raporty w księdze głównej.
@@ -188,8 +182,7 @@ W tym ćwiczeniu utworzymy nowy raport. Raport jest rachunkiem wyników działu 
 17. Zmień poziom szczegółów na **Finanse, konto i transakcja**.
 18. **Zapisz** zmiany i **wygeneruj**. Po otarciu wygenerowanego raportu możesz sprawdzić jego zawartość.
 
-## Dodatkowe zasoby
-<a id="additional-resources" class="xliff"></a>
+## <a name="additional-resources"></a>Dodatkowe zasoby
 [Raportowanie finansowe](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
 [Wyświetlanie raportów finansowych](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
 [Blog o sprawozdawczości finansowej w systemie Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)

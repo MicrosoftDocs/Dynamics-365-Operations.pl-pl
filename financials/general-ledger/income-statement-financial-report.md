@@ -26,37 +26,32 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Raport finansowego zestawienia przychodów
-<a id="income-statement-financial-report" class="xliff"></a>
+# <a name="income-statement-financial-report"></a>Raport finansowego zestawienia przychodów
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym artykule opisano domyślny raport o rachunkach wyników. Omówiono również bloki konstrukcyjne skojarzone z tym raportem. 
 
-Raport domyślny zestawienia przychodów
-<a id="default-income-statement-report" class="xliff"></a>
+<a name="default-income-statement-report"></a>Raport domyślny zestawienia przychodów
 -------------------------------
 
 | Raport domyślny             | Działanie                                                                                              |
 |----------------------------|-----------------------------------------------------------------------------------------------------------|
 | Zestawienie przychodów — domyślne | Pokazuje rentowność organizacji w bieżącym okresie i od początku roku. |
 
-## Podstawowe elementy
-<a id="building-blocks" class="xliff"></a>
+## <a name="building-blocks"></a>Podstawowe elementy
 W raportach finansowych zestawienia przychodów używane są następujące podstawowe elementy.
 
 | Raport domyślny             | Definicja wiersza                     | Definicja kolumny          |
 |----------------------------|------------------------------------|----------------------------|
 | Zestawienie przychodów — domyślne | Podsumowujące zestawienie przychodów — domyślne | Okresowe i od początku roku — domyślne |
 
-### Definicja wiersza
-<a id="row-definition" class="xliff"></a>
+### <a name="row-definition"></a>Definicja wiersza
 
 Definicja wiersza Podsumowujące zestawienie przychodów — domyślne zawiera sekcję dla każdej części tradycyjnego zestawienia przychodów. Wymiar Kategoria konta głównego jest używany do tworzenia definicji tego wiersza. Dlatego każdy może wygenerować raport bez konieczności wprowadzania żadnych zmian.
 
-### Definicja kolumny
-<a id="column-definition" class="xliff"></a>
+### <a name="column-definition"></a>Definicja kolumny
 
 Definicje kolumn zawierają różnego rodzaju kolumny oferujący różne poziomu szczegółowości i danych finansowych.
 
@@ -67,8 +62,7 @@ Definicje kolumn zawierają różnego rodzaju kolumny oferujący różne poziomu
 
  
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Raporty finansowe](financial-reporting-getting-started.md)

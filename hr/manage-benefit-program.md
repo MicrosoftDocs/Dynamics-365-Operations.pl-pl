@@ -27,24 +27,21 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Definiowanie programu świadczeń i zarządzanie nim
-<a id="define-and-manage-a-benefits-program" class="xliff"></a>
+# <a name="define-and-manage-a-benefits-program"></a>Definiowanie programu świadczeń i zarządzanie nim
 
 [!include[banner](includes/banner.md)]
 
 
 W module Zasoby ludzkie dostępny jest pakiet narzędzi służących do konfigurowania i obsługi świadczeń, potrąceń i planów wynagrodzeń pracowników, które organizacja oferuje swoim pracownikom lub przetwarza w ich imieniu. Ten temat zawiera informacje o sposobie konfigurowania zarządzania świadczeniami.
 
-Konfiguracja świadczeń
-<a id="benefit-setup" class="xliff"></a>
+<a name="benefit-setup"></a>Konfiguracja świadczeń
 -------------
 
 Aby przypisać pracownika do świadczenia, trzeba najpierw utworzyć elementy poszczególnych świadczeń. Te elementy łączą podobne plany świadczeń i określają domyślne ustawienia, takie jak stawki potrąceń i szczegóły księgowania. Wiele z tych ustawień można dostosować później, bo przypisywaniu pracowników do świadczeń. Dla każdego planu świadczenia organizacja może oferować kilka opcji rejestrowania lub pracownik może zrezygnować z rejestracji w planie. 
 
 [![Przebieg procesu świadczeń](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
-## Elementy świadczenia
-<a id="benefit-elements" class="xliff"></a>
+## <a name="benefit-elements"></a>Elementy świadczenia
 Przed przystąpieniem do tworzenia świadczeń i przypisywania do nich pracowników, trzeba zdefiniować elementy, które składają się na świadczenie: typ, plan i opcje.
 
 -   **Typ** — zbiór planów szczególnych korzyści, takich jak ochrona zdrowia lub parkowanie.
@@ -55,8 +52,7 @@ Dla każdego typu świadczenia, np. badania okulistyczne lub opieka stomatologic
 
 [![ilustracja świadczenia](./media/benefit-pic.png)](./media/benefit-pic.png)
 
-## Uprawnienie
-<a id="eligibility" class="xliff"></a>
+## <a name="eligibility"></a>Uprawnienie
 Dostępność świadczeń oferowanych przez pracodawcę zależy od różnych czynników. Podczas tworzenia świadczenia w programie Microsoft Talent można ustawić dla niego typ dostępności. 
 
 Można udostępnić świadczenie wszystkim pracownikom. Na przykład niektóre firmy oferują przepustki parkingowe wszystkim pracowniom jako świadczenia nieodpłatne. Podczas tworzenia tego świadczenia, należy ustawić dostępność na **Dostępne dla wszystkich pracowników**. 
@@ -65,16 +61,14 @@ W przypadku innych świadczeń, takich jak zajęcia wierzytelności lub opłaty 
 
 Uprawnienia do świadczeń mogą również opierać się na regułach. Na przykład firma oferuje pracownikom dwa rodzaje ubezpieczeń na życie. Członkowie kadry kierowniczej są uprawnieni do jednego planu ubezpieczenia na życie, a dla pozostałych pracowników pełnoetatowych dostępny jest inny plan ubezpieczenia na życie. W module Talent można utworzyć regułę wyszukującą wszystkich członków kadry kierowniczej oraz regułę wyszukującą wszystkich pozostałych pracowników pełnoetatowych, a następnie zastosować te reguły do odpowiedniego świadczenia.
 
-## Rejestracja
-<a id="enrollment" class="xliff"></a>
+## <a name="enrollment"></a>Rejestracja
 Po utworzeniu świadczenia oferowanego w Twojej organizacji i określeniu dostępności, można zarejestrować w nich pracowników. W jednym procesie można zarejestrować jednego pracownika w świadczeniu lub wielu pracowników w jednym lub kilku świadczeniach. 
 
 Czasami organizacja wstrzymuje realizację jakiegoś świadczenia. W takim przypadku trzeba zaktualizować świadczenie i zarejestrowanych w nim pracowników. Grupowe wygaszanie świadczenia pozwala za jednym razem zmienić datę ważności zarówno dla świadczenia, jak i dla rejestracji pracowników w tym świadczeniu. Można również wybrać wielu pracowników, którzy są zarejestrowani do świadczenia i zmienić datę końcową ich polisy. 
 
 To samo dotyczy grupowego przedłużania świadczeń, za pomocą którego można wydłużyć datę ważności zarówno dla świadczenia, jak i dla rejestracji pracowników w danym świadczeniu, jeśli świadczenie ma być oferowane dłużej, niż pierwotnie zaplanowano.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Zasady uprawnienia do świadczenia](benefit-eligibility-policies.md)

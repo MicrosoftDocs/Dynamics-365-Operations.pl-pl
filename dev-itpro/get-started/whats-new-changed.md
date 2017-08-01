@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Nowości i zmiany
-<a id="whats-new-or-changed" class="xliff"></a>
+# <a name="whats-new-or-changed"></a>Nowości i zmiany
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Ta strona wskazuje tematy, które mogą pomóc dowiedzieć się o nowych funkcja
 
 Aby dowiedzieć się, jak uaktualnić do najnowszej wersji, zobacz [Proces uaktualniania do najnowszej aktualizacji](../migration-upgrade/upgrade-latest-update.md).
 
-## Wydania aplikacji
-<a id="application-releases" class="xliff"></a>
+## <a name="application-releases"></a>Wydania aplikacji
 
 Aby dowiedzieć się więcej na temat opublikowanych niedawno mobilnych obszarów roboczych i zawartości Power BI, zobacz [Mobilne obszary robocze ostatnio wydane dla aplikacji komórkowej Dynamics 365 for Finance and Operations](../mobile-apps/mobile-workspaces-released.md) i [Pakiety zawartości usługi Power BI wydane niedawno dla programu Dynamics 365 for Finance and Operations](../analytics/power-bi-home-page.md)
 
@@ -89,8 +87,7 @@ Aby dowiedzieć się więcej na temat opublikowanych niedawno mobilnych obszaró
 </tbody>
 </table>
 
-## Wydania platformy
-<a id="platform-releases" class="xliff"></a>
+## <a name="platform-releases"></a>Wydania platformy
 
 <table>
 <colgroup>
