@@ -27,8 +27,7 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach
-<a id="set-up-hr-parameters-across-legal-entities" class="xliff"></a>
+# <a name="set-up-hr-parameters-across-legal-entities"></a>Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach
 
 [!include[banner](includes/banner.md)]
 
@@ -39,12 +38,10 @@ Niektórych typy rekordów, np. Stanowisko, są współużytkowane w wielu firma
 
 Na stronie **Udostępniane parametry zasobów ludzkich** parametry są pogrupowane według obszarów na podstawie ich funkcji. 
 
-### Wcześniej wydane grupy funkcjonalności
-<a id="previously-released-functionality" class="xliff"></a>
+### <a name="previously-released-functionality"></a>Wcześniej wydane grupy funkcjonalności
 Na karcie **Identyfikacja** trzeba wybrać typy identyfikacji, które reprezentują numery identyfikacyjne, które znajdują się na stronie. Identyfikację typów należy skonfigurować przed rozpoczęciem wprowadzania informacji identyfikacyjnych dla pracowników. Informacje o numerze PESEL, numerze dowodu osobistego, numerze obcego dowodu osobistego i osobistym kodzie identyfikacyjnym są obsługiwane na stronie **Typ identyfikacji**. Aby zdefiniować nowy typ identyfikacji lub sprawdzić listę istniejących typów, kliknij kolejno opcje **Zarządzanie pracownikami** &gt; **karta Linki** &gt; **Ustawienia** &gt; **Typy identyfikacji**. Można wprowadzić prosty kod i opis. 
 
-### Jeśli używasz programu Dynamics 365 for Talent
-<a id="if-youre-using-dynamics-365-for-talent" class="xliff"></a>
+### <a name="if-youre-using-dynamics-365-for-talent"></a>Jeśli używasz programu Dynamics 365 for Talent
 Na karcie **Identyfikacja** trzeba wybrać typy identyfikacji, które reprezentują numery identyfikacyjne, które znajdują się na stronie. Identyfikację typów należy skonfigurować przed rozpoczęciem wprowadzania informacji identyfikacyjnych dla pracowników. Informacje o numerze PESEL, numerze dowodu osobistego, numerze obcego dowodu osobistego i osobistym kodzie identyfikacyjnym są obsługiwane na stronie **Typ identyfikacji**. Aby zdefiniować nowy typ identyfikacji lub sprawdzić listę istniejących typów, kliknij kolejno opcje **Zasoby ludzkie** &gt; **Ustawienia** &gt; **Typy identyfikacji**. Można wprowadzić prosty kod i opis. 
 
 Na karcie **Sekwencje identyfikatorów** można wybrać kolejne numery używane dla następujących rekordów: numer pracownika, stanowisko, identyfikator zgłoszenia użytkownika, dokumentu I-9, kandydat, dyskusja, identyfikator świadczenia i akcja dotycząca pracowników (jeśli ten typ rekordu jest włączony). Do obsługi odwołań do sekwencji identyfikatorów i kodów służy strona listy **Sekwencje identyfikatorów**. Aby znaleźć tę stronę, użyj funkcji wyszukiwania stron. 
@@ -55,8 +52,7 @@ Na karcie **Stanowiska** określ, czy są dostępne nowe stanowiska do domyślne
 -   **Nigdy** — nie można przypisać pracowników do nowych stanowisk podczas tworzenia stanowisk. Jeśli zostanie wybrana ta opcja, należy otworzyć stronę **Stanowisko** dla każdego nowego stanowiska, gdy staje się dostępne, a następnie na karcie **Ogólne** wpisać datę **Dostępne do przypisania**, aby umożliwić przypisanie pracownika.
 
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Konfigurowanie parametrów modułu zasobów ludzkich specyficznych dla firmy](set-up-company-specific-hr-parameters.md)

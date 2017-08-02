@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Oferty projektu
-<a id="project-quotations" class="xliff"></a>
+# <a name="project-quotations"></a>Oferty projektu
 
 [!include[banner](../includes/banner.md)]
 

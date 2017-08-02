@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Dodawanie formantu rekomendacji do strony transakcji na urządzeniu punktu sprzedaży
-<a id="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device" class="xliff"></a>
+# <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a>Dodawanie formantu rekomendacji do strony transakcji na urządzeniu punktu sprzedaży
 
 [!include[banner](includes/banner.md)]
 
@@ -37,8 +36,7 @@ W tym temacie opisano sposób dodawania formantu rekomendacji do ekranu transakc
 
 Rekomendacje produktów mogą być wyświetlane na urządzeniu punktu sprzedaży podczas używania programu Microsoft Dynamics 365 for Retail. *Rekomendacje* to towary, którymi odbiorca może być zainteresowany w związku z wcześniej dokonywanymi zakupami, towary na liście życzeń odbiorcy oraz towary, które inni podobni odbiorcy kupowali w sklepach internetowych i tradycyjnych. Aby wyświetlać rekomendacje produktów, należy za pomocą projektanta układu ekranu dodać formant do ekranu transakcji.
 
-## Otwieranie projektanta układu
-<a id="open-layout-designer" class="xliff"></a>
+## <a name="open-layout-designer"></a>Otwieranie projektanta układu
 1.  Wybierz kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Punkt sprzedaży** &gt; **Układy ekranu**.
 2.  Za pomocą szybkiego filtru znajdź ekran, do którego chcesz dodać formant. Na przykład wyfiltruj według pola **Identyfikator układu ekranu**, używając wartości „F2CP16:9M”.
 3.  Na liście znajdź i zaznacz odpowiedni rekord. Na przykład zaznacz pozycję „Nazwa: F2CP16:9M Identyfikator układu ekranu: F2CP16:9M”.
@@ -53,8 +51,7 @@ Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najl
 -   Rekomendacje są zawsze widoczne.
 -   W siatce po prawej stronie ekranu jest wyświetlana karta **Zalecenia**.
 
-#### Aby rekomendacje były zawsze widoczne
-<a id="to-make-recommendations-always-visible" class="xliff"></a>
+#### <a name="to-make-recommendations-always-visible"></a>Aby rekomendacje były zawsze widoczne
 
 1.  Zmniejsz wysokość obszaru szczegółów wierszy transakcji, tak aby była taka sama, jak wysokość panelu odbiorcy po lewej stronie.[](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 2.  Z menu po lewej stronie przeciągnij formant rekomendacji i upuść go między obszar szczegółów wierszy transakcji a siatkę przycisków na środku w dolnej części ekranu transakcji. Zmień rozmiar formantu, tak aby mieścił się w tej przestrzeni.[](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
@@ -63,8 +60,7 @@ Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najl
 5.  Na liście zaznacz pozycję **1090 Kasy**.
 6.  Kliknij przycisk **Uruchom teraz**.
 
-#### Dodawanie karty Zalecenia do siatki przycisków po prawej stronie ekranu
-<a id="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen" class="xliff"></a>
+#### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Dodawanie karty Zalecenia do siatki przycisków po prawej stronie ekranu
 
 1.  Kliknij prawym przyciskiem myszy puste miejsce pod ostatnią kartą w siatce przycisków umieszczoną z prawej strony ekranu.
 2.  Kliknij przycisk **Dostosuj**.[![pic-5](./media/pic-5.png)](./media/pic-5.png)
@@ -80,8 +76,7 @@ Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najl
 12. Kliknij przycisk **Uruchom teraz**.
 
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Podstawowe informacje o spersonalizowanych rekomendacjach produktów](personalized-product-recommendations.md)

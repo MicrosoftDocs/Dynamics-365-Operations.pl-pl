@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Automatyczne rozliczanie i priorytety
-<a id="automatic-settlement-and-prioritization" class="xliff"></a>
+# <a name="automatic-settlement-and-prioritization"></a>Automatyczne rozliczanie i priorytety
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Dostępne są dwie opcje rozliczania płatności za pomocą faktur i innych tran
 
 W poniższych sekcjach opisano sposób rozliczania transakcji w przypadku każdej z metod.
 
-## Przykładowe transakcje
-<a id="example-transactions" class="xliff"></a>
+## <a name="example-transactions"></a>Przykładowe transakcje
 Przykłady rozliczeń w dalszej części tego artykułu są oparte na następujących transakcjach. Wszystkie transakcje dotyczą odbiorcy 2050.
 
 | Transakcja   | Data        | Kwota | Warunki rabatu gotówkowego | Data rabatu gotówkowego | Komentarze                                                                                                                                                                                      |
@@ -53,8 +51,7 @@ Przykłady rozliczeń w dalszej części tego artykułu są oparte na następuj�
 | Faktura 3     | 15 października  | 500,00 | 2%14/ netto 30        | 29 października         |                                                                                                                                                                                               |
 | Nota odsetkowa | 15 października  | 7,00   |                     |                    | Ta nota odsetkowa dotyczy faktur 1 i 2. Kwota wynosi 2% odsetek od kwot zaległych co najmniej 30 dni. Na przykład: 0,02 × (100,00 + 250,00) = 7,00. |
 
-## Priorytet rozliczania zdefiniowany przez użytkownika
-<a id="userdefined-settlement-priority" class="xliff"></a>
+## <a name="userdefined-settlement-priority"></a>Priorytet rozliczania zdefiniowany przez użytkownika
 Po ustawieniu opcji **Użyj priorytetu dla rozliczeń automatycznych** jako **Tak** na stronie **Parametry modułu rozrachunków z odbiorcami**, będzie używany priorytet rozliczenia zdefiniowany na stronie **priorytetu rozliczenia**, jeśli transakcje zostaną zaznaczone do automatycznego rozliczenia. W tym przykładzie zdefiniowano następujący priorytet rozliczenia:
 
 1.  Typ transakcji
@@ -75,8 +72,7 @@ Jeśli księgujesz płatność na kwotę 700,00 25 października, płatność je
 | Faktura 2     | 9/1/2015   | 10002   | 250,00                         | 250,00           | 0,00    | USD      |
 | Faktura 3     | 10/15/2015 |         | 500,00                         | 343,00           | 157,00  | USD      |
 
-## Domyślne automatyczne rozliczanie
-<a id="default-automatic-settlement" class="xliff"></a>
+## <a name="default-automatic-settlement"></a>Domyślne automatyczne rozliczanie
 W przypadku braku priorytetu rozliczenia zdefiniowanego przez użytkownika transakcje są automatycznie zaznaczane do rozliczenia na podstawie terminu. Transakcje, które są rozliczone, muszą mieć tę samą walutę co transakcje, którymi zostały rozliczone. Jeśli księgujesz płatność na kwotę 700,00 25 października, następujące transakcje są zaznaczone do rozliczenia.
 
 | Załącznik       | Data       | Faktura | Kwota w walucie transakcji | Kwota do rozliczenia | Saldo | Waluta |

@@ -27,8 +27,7 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Konfigurowanie parametrów Zasobów ludzkich specyficznych dla firmy
-<a id="set-up-company-specific-hr-parameters" class="xliff"></a>
+# <a name="set-up-company-specific-hr-parameters"></a>Konfigurowanie parametrów Zasobów ludzkich specyficznych dla firmy
 
 [!include[banner](includes/banner.md)]
 
@@ -50,20 +49,17 @@ Ustawienia wprowadzone na karcie **rekrutacji** definiują typy dokumentów uży
 
 Ustawienia wprowadzone na karcie **Wynagrodzenie** określają, czy użytkownicy muszą potwierdzać, że chcą zapisać informacje dla systemu wynagrodzeń o stałej lub zmiennej wysokości. W przypadku zaznaczenia pola wyboru **Włącz weryfikację zapisu** za każdym razem, kiedy użytkownik zamknie stronę związaną z wynagrodzeniami, otrzyma wiadomość z zapytaniem, czy chce zapisać rekord. Niektóre strony w module zarządzania wynagrodzeniami nie zezwalają na usuwanie informacji. Dzięki pytaniu użytkowników, czy chcą zapisać informacje, można ograniczyć ilość zapisywanych danych, których potem nie można usunąć. Jeśli pole wyboru **Włącz weryfikację zapisu** nie zostanie zaznaczone, rekordy będą zawsze natychmiast zapisywane, być może zanim użytkownik będzie gotowy. W przypadku korzystania z funkcji zarządzania wydajnością można wybrać model oceniania na karcie **Wynagrodzenie** zamiast modelu przypisanego do systemów wynagrodzeń przy ocenie wydajności. 
 
-### Wcześniej wydane grupy funkcjonalności
-<a id="previously-released-functionality" class="xliff"></a>
+### <a name="previously-released-functionality"></a>Wcześniej wydane grupy funkcjonalności
 Ustawienia wprowadzone na karcie **Sekwencja numerów** określają sekwencje używane do automatycznego przypisywania identyfikatorów do elementów w module Zasoby ludzkie, takich jak zgłoszenia, rejestracje nieobecności, wyniki procesu wynagrodzenia, numery spraw i terminarze kursów. Aby obsługiwać odwołania numeracji i kody, użyj strony listy **Sekwencje identyfikatorów** (kliknij kolejno opcje **Administrowanie organizacją** &gt; **Sekwencje identyfikatorów** &gt; **Sekwencje identyfikatorów**).
 
-### Jeśli używasz programu Dynamics 365 for Talent
-<a id="if-youre-using-dynamics-365-for-talent" class="xliff"></a>
+### <a name="if-youre-using-dynamics-365-for-talent"></a>Jeśli używasz programu Dynamics 365 for Talent
 Ustawienia wprowadzone na karcie **Sekwencja numerów** określają sekwencje używane do automatycznego przypisywania identyfikatorów do elementów w module Zasoby ludzkie, takich jak zgłoszenia, rejestracje nieobecności, wyniki procesu wynagrodzenia, numery spraw i terminarze kursów. Aby obsługiwać odwołania numeracji i kody, użyj strony listy **Sekwencje identyfikatorów** (kliknij kolejno opcje **Administrowanie systemem** &gt; **karta Linki** &gt; **Sekwencje identyfikatorów** &gt; **Sekwencje identyfikatorów**). 
 
 Ustawienia wprowadzone na karcie **FMLA** określają, ile godzin pracownik musi pracować, aby otrzymać świadczenia FMLA, wymagany staż pracy i datę zatrudnienia konieczną do określenia stażu pracy. Ustawienia te definiują również liczbę godzin FMLA, do których pracownik jest upoważniony oraz kalendarz nieobecności FMLA używany do obliczenia, ile godzin FMLA pracownik wykorzystał. Karta **FMLA** jest dostępna tylko dla firm w Stanach Zjednoczonych. 
 
 **Uwaga:** liczba przepracowanych godzin nie może przekroczyć 1250, a staż pracy nie może przekroczyć 12 miesięcy. Te maksymalne wartości są zgodne z prawem federalnym w Stanach Zjednoczonych. Ustawienia na karcie **Samoobsługa pracownika** określają informacje,jakie może wprowadzać menedżer w imieniu pracowników.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach](set-up-hr-parameters-across-legal-entities.md)

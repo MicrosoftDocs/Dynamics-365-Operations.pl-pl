@@ -25,15 +25,13 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Dostępne pakiety zawartości usługi Power BI
-<a id="power-bi-content-available" class="xliff"></a>
+# <a name="power-bi-content-available"></a>Dostępne pakiety zawartości usługi Power BI
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie wymieniono dostępne pakiety zawartości usługi Microsoft Power BI oraz wskazano zasoby, gdzie można uzyskać więcej informacji o tych pakietach.
 
-## Pakiety zawartości usługi Power BI dla programu Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r.
-<a id="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a>
+## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Pakiety zawartości usługi Power BI dla programu Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r.
 Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r., masz dostępne następujące pakiety zawartości usługi Power BI:
 
 - [Pakiet zawartości usługi Power BI Świadczenia](benefits-power-bi.md)
@@ -55,19 +53,15 @@ Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enter
 - [Pakiet zawartości usługi Power BI Wydajność magazynu](warehouse-power-bi-content.md)
 - [Pakiet zawartości usługi Power BI Metryki pracowników](workforce-analysis-power-bi-content-pack.md)  
 
-### Przechodzenie do pakietów zawartości
-<a id="accessing-the-content" class="xliff"></a>
+### <a name="accessing-the-content"></a>Przechodzenie do pakietów zawartości
 
-#### Osadzone pakiety zawartości
-<a id="embedded-content" class="xliff"></a>
+#### <a name="embedded-content"></a>Osadzone pakiety zawartości
 Z wyjątkiem pakietów zawartości oznaczonych gwiazdką (\*) wszystkie pakiety zawartości na powyższej liście są osadzone w aplikacji. Aby dowiedzieć się więcej o tym, gdzie można wyświetlać pakiety zawartości usługi Power BI, kliknij odpowiednie łącza.
 
-#### Pliki dostępne w usłudze Lifecycle Services
-<a id="files-available-in-lifecycle-services" class="xliff"></a>
+#### <a name="files-available-in-lifecycle-services"></a>Pliki dostępne w usłudze Lifecycle Services
 Ten pakiet zawartości usługi Power BI znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego łączeniu z firmowymi danymi, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).
 
-## Pakiety zawartości usługi Power BI dla programu Dynamics 365 for Operations w wersji 1611
-<a id="power-bi-content-for-dynamics-365-for-operations-version-1611" class="xliff"></a>
+## <a name="power-bi-content-for-dynamics-365-for-operations-version-1611"></a>Pakiety zawartości usługi Power BI dla programu Dynamics 365 for Operations w wersji 1611
 Jeśli używasz programu Microsoft Dynamics 365 for Operations w wersji 1611, są dostępne następujące pakiety zawartości usługi Power BI:
 
 - [Pakiet zawartości usługi Power BI Wynagrodzenia i świadczenia](compensation-and-benefits-analysis-power-bi-content-pack.md)   
@@ -84,20 +78,17 @@ Jeśli używasz programu Microsoft Dynamics 365 for Operations w wersji 1611, s�
 - [Pakiet zawartości usługi Power BI Wydajność magazynu](warehouse-power-bi-content.md)
 - [Pakiet zawartości usługi Power BI Metryki pracowników](workforce-analysis-power-bi-content-pack.md)  
 
-### Przechodzenie do pakietów zawartości
-<a id="accessing-the-content" class="xliff"></a>
+### <a name="accessing-the-content"></a>Przechodzenie do pakietów zawartości
 Ten pakiet zawartości usługi Power BI znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego łączeniu z firmowymi danymi, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).
 
-## Pakiety zawartości usługi Power BI dla systemu Microsoft Dynamics AX
-<a id="power-bi-content-for-microsoft-dynamics-ax" class="xliff"></a>
+## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Pakiety zawartości usługi Power BI dla systemu Microsoft Dynamics AX
 Jeśli używasz programu Microsoft Dynamics AX 7.0 lub Microsoft Dynamics AX 7.0.1, są dostępne następujące pakiety zawartości usługi Power BI:
 
 - [Pakiet zawartości usługi Power BI Zarządzanie kosztami](cost-management-content-pack.md)    
 - [Pakiet zawartości usługi Power BI Wyniki finansowe](financial-performance-power-bi-content-pack.md)
 - [Pakiet zawartości usługi Power BI Wyniki kanału detalicznego](retail-channel-performance-dashboard-power-bi-data.md) 
 
-### Przechodzenie do pakietów zawartości
-<a id="accessing-the-content" class="xliff"></a>
+### <a name="accessing-the-content"></a>Przechodzenie do pakietów zawartości
 Ten pakiet zawartości usługi Power BI jest dostępny w witrynie PowerBI.com.
 
 1. Zaloguj się w witrynie [PowerBI.com](https://www.powerbi.com/).

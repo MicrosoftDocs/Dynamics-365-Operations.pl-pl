@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Wymiary finansowe
-<a id="financial-dimensions" class="xliff"></a>
+# <a name="financial-dimensions"></a>Wymiary finansowe
 
 [!include[banner](../includes/banner.md)]
 
@@ -51,8 +50,7 @@ Poniżej przedstawiono wybrane ograniczenia:
 - Można używać funkcji podatkowych tylko z firmami, a nie z wymiarami finansowymi.
 - Niektóre raporty nie zawierają wymiarów finansowych. W związku z tym w celu raportowania według wymiarów finansowych może być konieczne modyfikowanie raportów.
 
-## Wymiary niestandardowe
-<a id="custom-dimensions" class="xliff"></a>
+## <a name="custom-dimensions"></a>Wymiary niestandardowe
 
 Aby utworzyć zdefiniowany przez użytkownika typ wymiaru finansowego, w polu **Użyj wartości z** wybierz opcję **&lt; Wymiar niestandardowy &gt;**. Można również określić maskę konta, aby ograniczyć typ i ilość informacji, które można wprowadzić dla wartości wymiarów,. Można wprowadzić znaki, które pozostają takie same dla każdej wartości wymiaru, na przykład litery lub łącznik (-). Można także wprowadzić znaki cyfr (\#) oraz handlowego „i” (&) jako symbole zastępcze liter i cyfr, które zmieniają się za każdym razem, gdy wartość wymiaru jest tworzona. Znak cyfry (\#) służy jako symbol zastępczy dla cyfr, a znak handlowe „i” jako symbol zastępczy dla liter. Pole maski formatu jest dostępne tylko w przypadku zaznaczenia opcji **&lt; Wymiar niestandardowy &gt;** w polu **Użyj wartości z**.
 
@@ -60,28 +58,23 @@ Aby utworzyć zdefiniowany przez użytkownika typ wymiaru finansowego, w polu **
 
 Aby ograniczyć wartość wymiaru do liter „CC” i trzech cyfr, należy wprowadzić **CC-\#\#\#** jako maskę formatu.
 
-## Wymiary oparte na jednostce
-<a id="entity-backed-dimensions" class="xliff"></a>
+## <a name="entity-backed-dimensions"></a>Wymiary oparte na jednostce
 
 Aby utworzyć wymiary oparte na jednostce, w polu **Użyj wartości z** wybierz jednostkę zdefiniowaną przez system, która będzie podstawą wymiaru finansowego. Wartości wymiarów finansowych będą wtedy tworzone na bazie tej jednostki. Na przykład aby utworzyć wartości wymiarów dla projektów, wybierz opcję **Projekty**. Wartość wymiaru zostanie wtedy utworzona dla każdej nazwy projektu. Strona **Wartości wymiarów finansowych** pokazuje wartości jednostki. Jeśli te wartości są związane z konkretną firmą, na stronie widać również firmę.
 
-## Aktywowanie wymiaru
-<a id="activating-dimensions" class="xliff"></a>
+## <a name="activating-dimensions"></a>Aktywowanie wymiaru
 
 Po uaktywnieniu wymiaru finansowego tabela zostanie zaktualizowana, tak aby zawierała nazwę wymiaru finansowego. Usunięte wymiary zostaną wykasowane. Wartości wymiaru finansowego można wprowadzić przed jego uaktywnieniem. Jednak wymiar finansowy będzie mógł być zużywany dopiero po uaktywnieniu. Na przykład, nie można dodać wymiaru finansowego do struktury konta przed aktywowaniem wymiaru finansowego. Po kliknięciu przycisku **Uaktywnij** wszystkie wymiary są aktualizowane i pokazują zmianę stanu. 
 
-## Tłumaczenia
-<a id="translations" class="xliff"></a>
+## <a name="translations"></a>Tłumaczenia
 
 Na stronie **Tłumaczenie tekstu** można wprowadzić tekst dla wybranego wymiaru finansowego w różnych językach. Na stronie **Tłumaczenie konta głównego** można wprowadzić tekst dla konta głównego w różnych językach. 
 
-## Firma zastępuje
-<a id="legal-entity-overrides" class="xliff"></a>
+## <a name="legal-entity-overrides"></a>Firma zastępuje
 
 Nie wszystkie wymiary mogą być używane we wszystkich firmach. Ponadto niektóre wymiary mogą mieć zastosowanie tylko do wybranych okresów. W takich przypadkach można w sekcji **Firma zastępuje** określić firmy, dla których wymiar powinien być zawieszony, właściciela oraz okres aktywności wymiaru.
 
-## Usuwanie wymiarów finansowych
-<a id="deleting-financial-dimensions" class="xliff"></a>
+## <a name="deleting-financial-dimensions"></a>Usuwanie wymiarów finansowych
 
 Aby pomóc utrzymać więzy integralności danych, w wyjątkowych sytuacjach można usuwać wymiary finansowe. Jeśli zostanie podjęta próba usunięcia wymiaru finansowego, sprawdzane są następujące kryteria:
 

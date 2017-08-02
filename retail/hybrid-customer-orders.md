@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Hybrydowe zamówienia odbiorców
-<a id="hybrid-customer-orders" class="xliff"></a>
+# <a name="hybrid-customer-orders"></a>Hybrydowe zamówienia odbiorców
 
 [!include[banner](includes/banner.md)]
 
@@ -42,8 +41,7 @@ W programie Microsoft Dynamics 365 for Retail można wybrać opcję wyniesienia 
 
 Po zaznaczeniu wiersza koszyka i wybraniu opcji **Wybierz zaznaczone**, **Wyślij wybrane** lub **Wynieś wybrane** tylko wskazany wiersz koszyka będzie miał ustawianą określoną metodę dostawy. W takim przypadku dalszy przepływ operacji jest kontynuowany w zwykły sposób. Jednak jeśli opcja **Wybierz zaznaczone**, **Wyślij wybrane** lub **Wynieś wybrane** zostanie wybrana bez zaznaczenia wiersza koszyka, zostanie otwarta nowa strona z listą wszystkich wierszy koszyka. Na tym ekranie można wybrać wiele wierszy na raz i ustawić im metodę dostawy. Użycie tej metody do wybierania wierszy spowoduje zastąpienie wszystkich poprzednich metod dostawy przypisany do wierszy.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Omówienie zamówień odbiorców](customer-orders-overview.md)

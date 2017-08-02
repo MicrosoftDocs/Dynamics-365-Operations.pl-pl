@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Omówienie zarządzanie jakością
-<a id="quality-management-overview" class="xliff"></a>
+# <a name="quality-management-overview"></a>Omówienie zarządzanie jakością
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,8 +40,7 @@ Oprócz funkcji związanych z zarządzaniem brakiem zgodności zarządzanie jako
 
 Po skonfigurowaniu powiązania jakości system Finance and Operations może generować zlecania kontroli jakości dla różnych procesów biznesowych, zdarzenia i warunki. Skojarzenia jakości mogą obejmować określone pozycje, grupy towarów lub wszystkie pozycje.
 
-## Przykłady korzystania z funkcji zarządzania jakością
-<a id="examples-of-the-use-of-quality-management" class="xliff"></a>
+## <a name="examples-of-the-use-of-quality-management"></a>Przykłady korzystania z funkcji zarządzania jakością
 Zarządzanie jakością jest elastyczne i może być implementowane na różne sposoby, aby spełnić wymagania określonych poziomów operacji łańcucha dostaw. Poniższe przykłady ilustrują możliwe wykorzystanie tych funkcji:
 
 -   Automatyczne uruchamianie procesu kontroli jakości, na podstawie wstępnie zdefiniowanych kryteriów (przy rejestracji magazynu zamówienia zakupu od określonego dostawcy).
@@ -52,8 +50,7 @@ Zarządzanie jakością jest elastyczne i może być implementowane na różne s
 -   Określanie akceptowanego poziomu jakości (AQL) do kontrolowania tolerancji pomiaru jakości.
 -   Określanie zasobów wymaganych do operacji inspekcji, takich jak obszar testowy i przyrządy testowe.
 
-## Korzystanie ze skojarzeń jakości
-<a id="working-with-quality-associations" class="xliff"></a>
+## <a name="working-with-quality-associations"></a>Korzystanie ze skojarzeń jakości
 Proces biznesowy, który używa skojarzeń jakości może być powiązany z różnymi dokumentami źródłowymi, takimi jak zamówienia zakupu, zamówienia sprzedaży lub zlecenia produkcyjne. 
 
 Poszczególne rekordy skojarzenia jakości określają serie testów, akceptowany poziom jakości i plan próbkowania dotyczące generowanych zleceń kontroli jakości. Należy określić rekord skojarzenia jakości dla każdego odchylenia w procesie biznesowym. Na przykład można skonfigurować skojarzenia jakości, które generuje zlecenia kontroli jakości podczas aktualizowania dokumentu przyjęcia produktów. W zależności od ustawień planu wykonania, można zablokować sam proces uruchomienia, gdy jest otwarte zlecenie kontroli jakości, lub następne procesy, takie jak fakturowanie zamówień zakupu. 
@@ -298,8 +295,7 @@ Poniższa tabela zawiera więcej informacji na temat sposobu generowania zleceń
 </tbody>
 </table>
 
-## Strony zarządzania jakością
-<a id="quality-management-pages" class="xliff"></a>
+## <a name="quality-management-pages"></a>Strony zarządzania jakością
 <table>
 <colgroup>
 <col width="33%" />
@@ -360,8 +356,7 @@ Należy określić skojarzenie jakości dla każdego odchylenia w procesie bizne
 
 
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Procesy zarządzania jakością](quality-management-processes.md)

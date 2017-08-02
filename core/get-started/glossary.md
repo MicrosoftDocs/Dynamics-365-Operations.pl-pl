@@ -1,37 +1,35 @@
 ---
-title: "Dynamics 365 for Operations — słownik"
-description: "W słowniku dotyczącym produktu Microsoft Dynamics 365 for Operations zdefiniowano kluczowe terminy i koncepcje używane w tym produkcie."
+title: "Glosariusz terminów używanych w rozwiązaniu Finance and Operations"
+description: "W tym słowniku zdefiniowano kluczowe terminy i pojęcia dotyczące rozwiązania Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 44101
 ms.assetid: d4e01957-69a0-4c92-91c5-4646c8b0cad8
 ms.search.region: Global
 ms.author: tfehr
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4f3015ed4f8dc165d988b2b63ed9ad89d6d6f578
+ms.translationtype: HT
+ms.sourcegitcommit: 84ee9110fa32a551133a6ab4b7c6feb9ea9c017a
+ms.openlocfilehash: 0b4d5285cc1aa44da566ec5d7fa7ebe568729fdf
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/08/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 for Operations — słownik
+# <a name="finance-and-operations-glossary"></a>Glosariusz terminów używanych w rozwiązaniu Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-
-W słowniku dotyczącym produktu Microsoft Dynamics 365 for Operations zdefiniowano kluczowe terminy i koncepcje używane w tym produkcie. 
+W tym słowniku zdefiniowano kluczowe terminy i pojęcia dotyczące rozwiązania Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. 
 
 ### <a name="a"></a>**A**
 
@@ -51,17 +49,9 @@ Zautomatyzowana Izba Rozliczeniowa. System elektronicznych przelewów środków 
 
 Zmierzona ilość na wejściu/wyjściu działania.
 
-###### <a name="address-verification-service"></a>**usługa weryfikacji adresu**
+###### <a name="address-verification"></a>**weryfikacja adresu**
 
 Usługa świadczona przez operatora karty kredytowej, który sprawdza, czy adres rozliczeniowy podany przez posiadacza karty jest zgodny z informacjami w rejestrze banku wystawiającego kartę.
-
-###### <a name="adjusted-unit-price"></a>**skorygowana cena jednostkowa**
-
-Cena jednostkowa obliczona na podstawie wyceny opartej na atrybutach i rzeczywistej otrzymanej zawartości.
-
-###### <a name="advanced-pricing"></a>**zaawansowana kalkulacja cen**
-
-Algorytm stosowany przy obliczaniu ceny zakupu pozycji zawartości.
 
 ###### <a name="aging"></a>**wiekowanie**
 
@@ -101,14 +91,13 @@ Okres, w którym produkt zachowuje optymalną jakość lub cechę charakterystyc
 
 Dokument źródłowy, który zaświadcza o bezwarunkowej zgodzie strony trzeciej na zapłatę drugiej stronie, gdy tego zażąda.
 
-###### <a name="bill-of-materials"></a>**lista składowa (BOM)**
-
-Wykaz materiałów i ich ilości, które są wymagane do wytworzenia jednego produktu.
-
 ###### <a name="blocking"></a>**blokowanie**
 
-Czynność wstrzymywania dokumentu lub produktu.
+Akcja wstrzymywania dokumentu lub produktu.
 
+###### <a name="bom-bill-of-materials"></a>**lista składowa (BOM)**
+
+Wykaz materiałów i ich ilości, które są wymagane do wytworzenia jednego produktu.
 ###### <a name="budget-control"></a>**kontrola budżetu**
 
 Praktyka autoryzowania rozchodów tylko wtedy, gdy środki budżetu można zarezerwować na pokrycie przyszłych zobowiązań z tytułu płatności.
@@ -175,17 +164,9 @@ Lista kont głównych.
 
 Kategoria księgowa używana do sumowania konsekwencji finansowych wytwarzania produktów i prowadzenia zapasów.
 
-###### <a name="commodity-pricing"></a>**wycena oparta na cenach towarów masowych**
-
-Strategia wyceny służąca do aktualizacji ceny pozycji do sprzedaży wytwarzanych z towarów masowych (surowców), które podlegają częstym zmianom ceny.
-
-###### <a name="consolidated-order"></a>**zamówienie skonsolidowane**
-
-Dokument źródłowy reprezentujący wiele zamówień, do których się odwołuje.
-
 ###### <a name="contractor"></a>**zleceniobiorca**
 
-Rola przyjmowana przez osobę, która uczestniczy w relacji zleceniobiorca-pracodawca z jednostką prawną.
+Rola przyjmowana przez osobę, która uczestniczy w relacji zleceniobiorca-pracodawca z firmą.
 
 ###### <a name="co-product"></a>**produkt towarzyszący**
 
@@ -194,10 +175,6 @@ Pozycja wyprodukowana wspólnie z inną pozycją.
 ###### <a name="cost-center"></a>**centrum kosztów**
 
 Jednostka operacyjna, której menedżerowie są rozliczani z budżetowanych i rzeczywistych rozchodów.
-
-###### <a name="cost-of-goods-sold"></a>**koszt własny sprzedaży**
-
-Kategoria księgowa używana do sumowania konsekwencji finansowych wytwarzania produktów i prowadzenia zapasów.
 
 ###### <a name="cost-variance"></a>**odchylenie kosztów**
 
@@ -223,7 +200,7 @@ Czas potrzebny do ukończenia działania.
 
 ###### <a name="dashboard"></a>**pulpit nawigacyjny**
 
-Typowa strona początkowa w rozwiązaniu Dynamics 365 for Operations. Na pulpicie nawigacyjnym jest wyświetlana sekcja każdego obszaru roboczego, do którego użytkownik ma dostęp. W każdej sekcji są wyświetlane kafelki z sekcji podsumowania w powiązanym obszarze roboczym. Pulpit nawigacyjny składa się z nazwy i sekcji z kafelkami.
+Typowa strona początkowa w rozwiązaniu Finance and Operations. Na pulpicie nawigacyjnym jest wyświetlana sekcja każdego obszaru roboczego, do którego użytkownik ma dostęp. W każdej sekcji są wyświetlane kafelki z sekcji podsumowania w powiązanym obszarze roboczym. Pulpit nawigacyjny składa się z nazwy i sekcji z kafelkami.
 
 ###### <a name="data-entity"></a>**jednostka danych**
 
@@ -260,10 +237,6 @@ Technologia konfiguracji używana do tworzenia wariantów produktu przez wybiera
 ###### <a name="distinct-product"></a>**odrębny produkt**
 
 Produkt, który można unikatowo zidentyfikować.
-
-###### <a name="document-blocking"></a>**blokowanie dokumentów**
-
-Metoda wstrzymywania procesu operacji, dopóki trwa proces kontroli jakości zamówionych towarów.
 
 ###### <a name="document-management-system"></a>**system zarządzania dokumentami**
 
@@ -316,10 +289,6 @@ Waluta, która ma stały kurs wymiany w stosunku do innej waluty.
 ###### <a name="fixed-quantity-kanban"></a>**karta Kanban ze stałą ilością**
 
 Typ karty Kanban jest używany, gdy liczba kart Kanban przypisanych do reguły Kanban jest stała.
-
-###### <a name="flexible-authentication"></a>**uwierzytelnianie kanałowe**
-
-Proces uwierzytelniania umożliwiający uwierzytelnianie użytkowników w różnych systemach zarządzania tożsamością.
 
 ###### <a name="formula"></a>**formuła**
 
@@ -379,10 +348,6 @@ Działanie procesu lub transferu w przepływie produkcji, które zostanie wywoł
 
 Wycofanie składników produktu z magazynu w celu ukończenia zadań produkcji w systemie Kanban.
 
-###### <a name="kanban-product-quantity"></a>**ilość produktu na karcie Kanban**
-
-Ilość zapotrzebowań na pozycje przenoszonych na karcie Kanban zgodnie z regułą Kanban.
-
 ###### <a name="kanban-rule"></a>**reguła Kanban**
 
 Reguła w systemie lean manufacturing, która realizuje zasady planowania i uzupełnienia zapasów przez kontrolowanie sposobu koordynowania działań procesu i transferu w przepływach produkcji.
@@ -410,10 +375,6 @@ Alfanumeryczny klucz, który daje stronie prawo do używania oprogramowania lub 
 Zdolność strony do rozliczania bieżących zobowiązań za pomocą bieżących aktywów.
 
 ### <a name="m"></a>**M**
-
-###### <a name="manufacturing-overhead-based-on-material"></a>**koszty ogólne produkcji oparte na materiale**
-
-Koszty ogólne produkcji są wyrażane jako formuły obliczania kosztów pośrednich dla procentu dopłat. Grupa kosztów przypisana do materiałów składowych służy jako podstawa dla formuły obliczania. Formuły obliczania można definiować dla pojedynczych produktów lub grup pozycji, które są przypisane do produktów, w celu zapewnienia większej elastyczności obliczania kosztów ogólnych produkcji w oparciu o materiały.
 
 ###### <a name="master-scheduling"></a>**planowanie główne**
 
@@ -459,10 +420,6 @@ Pakiet to możliwa do utworzenia i wdrożenia jednostka obejmująca jeden lub ki
 
 ###### <a name="party"></a>**strona**
 
-Podmiot przyjmujący prawnie wiążącą rolę w przypadku uczestniczenia w relacjach umownych.
-
-###### <a name="party"></a>**strona**
-
 Osoba lub organizacja, która uczestniczy w działaniach gospodarczych.
 
 ###### <a name="pegging"></a>**oznaczanie transakcji**
@@ -473,13 +430,9 @@ Proces śledzenia ilości potrzebnej pozycji do jej źródła.
 
 Zdarzenie przepływu zasobów, które sygnalizuje popyt na produkt.
 
-###### <a name="phantom-item"></a>**pozycja fantomowa**
-
-Pozycja, która jest produkowana, ale nie jest magazynowana.
-
 ###### <a name="planned-intercompany-demand"></a>**zaplanowany popyt międzyfirmowy**
 
-Przewidywane zapotrzebowanie na produkt ze strony jednostki prawnej, która przyjmuje rolę dostawcy. Planowane zapotrzebowanie jest generowane z planowanego zapotrzebowania na produkt zgłoszonego przez jednostkę prawną bliżej odbiorcy.
+Przewidywane zapotrzebowanie na produkt ze strony firmy, która przyjmuje rolę dostawcy. Planowane zapotrzebowanie jest generowane z planowanego zapotrzebowania na produkt zgłoszonego przez jednostkę prawną bliżej odbiorcy.
 
 ###### <a name="post"></a>**księgowanie**
 
@@ -489,17 +442,9 @@ Rejestrowanie wartości pieniężnej zdarzenia gospodarczego na określonym konc
 
 Osoba, która tworzy dokument źródłowy, aby zainicjować żądanie zasobów ekonomicznych.
 
-###### <a name="privilege"></a>**uprawnienie**
-
-Jedno lub kilka uprawnień, które użytkownik musi mieć, aby wykonać zadanie.
-
 ###### <a name="procurement-catalog"></a>**katalog zaopatrzenia**
 
 Wykaz ofert produktów pogrupowanych według kategorii zaopatrzenia. Katalog zaopatrzenia służy do żądania produktów do użytku wewnętrznego organizacji.
-
-###### <a name="product-component"></a>**składnik produktu**
-
-Część produktu.
 
 ###### <a name="product-dimension"></a>**wymiar produktu**
 
@@ -507,7 +452,7 @@ Atrybuty rozmiaru, koloru lub konfiguracji produktu, które są używane w konfi
 
 ###### <a name="product-family"></a>**rodzina produktów**
 
-Unikatowa grupa towarów, usług lub praw, które są objęte tymi samymi działaniami produkcji lub dostawy albo są oferowane w tych samych segmentach rynku. W programie Dynamics 365 for Operations taka grupa jest reprezentowana za pomocą klucza alokacji prognozy.
+Unikatowa grupa towarów, usług lub praw, które są objęte tymi samymi działaniami produkcji lub dostawy albo są oferowane w tych samych segmentach rynku. W rozwiązaniu Finance and Operations taka grupa jest reprezentowana za pomocą klucza alokacji prognozy.
 
 ###### <a name="product-master"></a>**produkt główny**
 
@@ -581,10 +526,6 @@ Metoda służąca do zwiększania lub zmniejszania wymagań prognozy w planowani
 
 Zapis używany do rejestrowania operacyjnych, prawnych i finansowych konsekwencji zdarzenia przepływu zasobów w systemie księgowym.
 
-###### <a name="regulated-product"></a>**produkt podlegający regulacjom prawnym**
-
-Produkt objęty regulacjami ustanawianymi przez organ rządowy, dla którego wymagane jest zapewnienie zgodności i sprawozdawczość kontrolna.
-
 ###### <a name="rfq-request-for-quotation"></a>**ZO (zapytanie ofertowe)**
 
 Dokument źródłowy z zaproszeniem do złożenia oferty na dostarczenie ilości produktu za określoną cenę i do określonego dnia.
@@ -593,9 +534,6 @@ Dokument źródłowy z zaproszeniem do złożenia oferty na dostarczenie ilości
 
 Osoba, która żąda zasobów ekonomicznych.
 
-###### <a name="restricted-product"></a>**produkt podlegający ograniczeniom**
-
-Produkt, którego dystrybucja jest ograniczona lub regulowana przez organ rządowy.
 
 ### <a name="s"></a>**S**
 
@@ -647,13 +585,6 @@ Ilość produktu udokumentowana w wierszu dokumentu źródłowego, która tworzy
 
 Oszacowanie przyszłego popytu tworzone przez zastosowanie algorytmu prognozowania do danych transakcji historycznych.
 
-###### <a name="supermarket"></a>**supermarket**
-
-Magazyn działający na zasadzie just-in-time, który ma ograniczoną pojemność i jest używany do składowania materiału w pobliżu punktu zużycia.
-
-###### <a name="system-defined-financial-dimension-type"></a>**zdefiniowany w systemie typ wymiaru finansowego**
-
-Wymiar finansowy zmapowany na tabelę lub widok w bazie danych, który reprezentuje typ jednostki i którego wartości znajdują się w domenie jednego atrybutu tego typu jednostki.
 
 ### <a name="t"></a>**T**
 
@@ -667,11 +598,11 @@ Kontrolowane, wspomagane przejście przez kroki w rejestrowaniu zadania. Przewod
 
 ###### <a name="task-recorder"></a>**Rejestrator zadań**
 
-Narzędzie instalowane fabrycznie w programie Dynamics 365 for Operations. Rejestruje ono wszystkie zdarzenia wprowadzane przez użytkownika w interfejsie użytkownika programu Dynamics 365 for Operations, które zostały wykonane na serwerze, w tym dodane wartości, zmienione ustawienia, usunięte dane itp.
+Narzędzie instalowane fabrycznie w rozwiązaniu Finance and Operations. Rejestruje ono wszystkie zdarzenia wprowadzane przez użytkownika w interfejsie użytkownika rozwiązania Finance and Operations, które zostały wykonane na serwerze, w tym dodane wartości, zmienione ustawienia, usunięte dane itp.
 
 ###### <a name="task-recording"></a>**Rejestrowanie zadania**
 
-Plik zawierający działania i adnotacje zarejestrowane po uruchomieniu Rejestratora zadań w programie Microsoft Dynamics 365 for Operations.
+Plik zawierający akcje i adnotacje zarejestrowane po uruchomieniu Rejestratora zadań w rozwiązaniu Finance and Operations.
 
 ###### <a name="three-way-matching-policy"></a>**trzyelementowe zasady uzgadniania**
 
@@ -684,12 +615,6 @@ Ilość jednej lub kilku pozycji, które są przenoszone lub mogą być przenies
 ###### <a name="two-way-matching-policy"></a>**dwuelementowe zasady uzgadniania**
 
 Zasady uzgadniania, które wymagają dopasowania jednej lub kilku cen z faktury od dostawcy do jednej lub kilku cen z zamówienia zakupu.
-
-### <a name="u"></a>**U**
-
-###### <a name="user-defined-financial-dimension-type"></a>**zdefiniowany przez użytkownika typ wymiaru finansowego**
-
-Wymiar finansowy zmapowany na listę wartości zdefiniowanych przez użytkownika.
 
 ### <a name="v"></a>**V**
 
@@ -726,7 +651,4 @@ Osoba, która przyjmuje rolę pracownika etatowego lub zleceniobiorcy i jest op�
 ###### <a name="workspace"></a>**obszar roboczy**
 
 Strona z przeglądem jednego z działań wykonywanych przez użytkownika. Na stronie są używane kafelki, listy i wykresy w celu wyświetlania pracy oczekującej i pokrewnych danych z wielu źródeł. Na stronie wyróżnione są częste zadania powiązane z tymi danymi. Kafelki wyświetlane w sekcji podsumowania obszaru roboczego są również wyświetlane w powiązanej sekcji na pulpicie nawigacyjnym.
-
-
-
 

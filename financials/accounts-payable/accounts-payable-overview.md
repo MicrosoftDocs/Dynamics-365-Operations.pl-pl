@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurowanie modułu Rozrachunki z dostawcami
-<a id="configure-accounts-payable" class="xliff"></a>
+# <a name="configure-accounts-payable"></a>Konfigurowanie modułu Rozrachunki z dostawcami
 
 [!include[banner](../includes/banner.md)]
 
 
 Ten artykuł zawiera opis stron, które służą do konfigurowania podstawowych i opcjonalnych funkcji modułu Rozrachunki z dostawcami w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Opisano również kroki konfiguracji, które należy wykonać przed rozpoczęciem konfigurowania modułu Rozrachunki z dostawcami.
 
-Wymagania wstępne do konfiguracji modułu Rozrachunki z dostawcami
-<a id="prerequisites-for-accounts-payable-setup" class="xliff"></a>
+<a name="prerequisites-for-accounts-payable-setup"></a>Wymagania wstępne do konfiguracji modułu Rozrachunki z dostawcami
 ----------------------------------------
 
 Przed skonfigurowaniem modułu Rozrachunki z dostawcami, trzeba wykonać następującą konfigurację:
@@ -46,8 +44,7 @@ Przed skonfigurowaniem modułu Rozrachunki z dostawcami, trzeba wykonać następ
     -   Jeśli mają być uruchamiane korekty kursu wymiany, ustaw kody waluty na stronie Waluty, skonfiguruj typy kursu wymiany na stronie Typy kursu wymiany i skonfiguruj kursy wymiany walut na stronie Kursy wymiany walut.
 -   W sekcji Zarządzanie gotówką i bankami skonfiguruj konta bankowe używane z metodami płatności.
 
-## Strony ustawień modułu Rozrachunki z dostawcami
-<a id="setup-pages-for-accounts-payable" class="xliff"></a>
+## <a name="setup-pages-for-accounts-payable"></a>Strony ustawień modułu Rozrachunki z dostawcami
 
 Poniższe strony umożliwiają konfigurowanie podstawowych funkcji rozrachunków z dostawcami dla każdej firmy. Strony są wymienione w zalecanej kolejności ustawień. Aby ułatwić proces ustawień, można tworzyć szablony na podstawie pierwszych utworzonych rekordów. W szablonie wartości są zwykle wprowadzane w wielu polach, aby odzwierciedlić funkcje, które organizacja chce zaimplementować dla określonego typu dostawcy.
 1.  Na stronie Warunki płatności można definiować warunki płatności przypisywane do zamówień sprzedaży, zamówień zakupu, odbiorców i dostawców oraz określających terminy płatności faktur.
@@ -58,8 +55,7 @@ Poniższe strony umożliwiają konfigurowanie podstawowych funkcji rozrachunków
 6.  Strona Ustawienia formularza umożliwia definiowanie formatu różnych dokumentów związanych z dostawcami oraz używanych w firmie do śledzenia przychodów od dostawców i wprowadzania przyczyn przepływu płatności do dostawców.
 7.  Strona Dostawcy umożliwia tworzenie i obsługiwanie kont dostawców, w tym urzędów skarbowych, do których organizacja przesyła deklaracje podatkowe.
 
-## Opcjonalne strony ustawień rozrachunków z dostawcami
-<a id="optional-setup-pages-for-accounts-payable" class="xliff"></a>
+## <a name="optional-setup-pages-for-accounts-payable"></a>Opcjonalne strony ustawień rozrachunków z dostawcami
 Oprócz podstawowych funkcji moduł Rozrachunki z dostawcami ma inne funkcje, które można skonfigurować.
 
 Dodatkowe strony ustawień są zorganizowane według funkcji.
@@ -125,8 +121,7 @@ Dodatkowe strony ustawień są zorganizowane według funkcji.
 
 -   Strona **Pola 1099** umożliwia sprawdzenie i aktualizację minimalnych kwot, które należy podać do urzędu skarbowego zgodnie z najnowszymi wymaganiami.
 
-## **Ustawienia opcjonalne dla innych modułów**
-<a id="optional-setup-for-other-modules" class="xliff"></a>
+## <a name="optional-setup-for-other-modules"></a>**Ustawienia opcjonalne dla innych modułów**
 **Administrowanie organizacją**
 
 -   Strona Sekwencja identyfikatorów umożliwia konfigurowanie grup sekwencji identyfikatorów dla numerów faktur.

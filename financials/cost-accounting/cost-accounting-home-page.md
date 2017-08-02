@@ -24,8 +24,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Rachunek kosztów — strona główna
-<a id="cost-accounting-home-page" class="xliff"></a>
+# <a name="cost-accounting-home-page"></a>Rachunek kosztów — strona główna
 
 [!include[banner](../includes/banner.md)]
 
@@ -48,8 +47,7 @@ Moduł Rachunek kosztów umożliwia wykonywanie następujących czynności:
 -   Tworzenie zestawień, które mogą być wyświetlane w obszarze roboczym.
 -   Tworzenie raportów za pomocą programu Excel.
 
-## Rozpocznij
-<a id="get-started" class="xliff"></a>
+## <a name="get-started"></a>Rozpocznij
 
 > [!Video https://www.youtube.com/embed/https://www.youtube.com/embed/1pUDtJQZ8FU]
 
@@ -66,14 +64,12 @@ Aby zrozumieć sposób korzystania z modułu Rachunek kosztów w codziennej prac
 -   [Wymiary obiektów kosztów](cost-objects.md)
 -   [Tworzenie obiektów kosztów](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (przewodnik po zadaniu)
 
-## Mobilny obszar roboczy Kontrola kosztów
-<a id="cost-control-mobile-workspace" class="xliff"></a>
+## <a name="cost-control-mobile-workspace"></a>Mobilny obszar roboczy Kontrola kosztów
 W mobilnym obszarze roboczym Kontrola kosztów menedżerowie centrów kosztów mają podgląd na działanie tych centów zawsze i wszędzie.
 
 -   [Mobilny obszar roboczy Kontrola kosztów](cost-controlling-mobile-workspace.md)
 
-## Pakiet zawartości usługi Power BI Analiza rachunku kosztów
-<a id="cost-accounting-analysis-power-bi-content" class="xliff"></a>
+## <a name="cost-accounting-analysis-power-bi-content"></a>Pakiet zawartości usługi Power BI Analiza rachunku kosztów
 Pakiet zawartości usługi Microsoft Power BI Analiza rachunku kosztów jest przeznaczony dla kontrolerów kosztów i innych osób odpowiedzialnych za kontrolowanie kosztów w organizacji. Obejmuje kluczowe wskaźniki, takie jak koszt, wartość oraz stawka kosztu rzeczywistego, budżetowego lub budżetu elastycznego. Wykorzystuje dane transakcji z modułu Rachunek kosztów w programie Finance and Operations i zapewnia zagregowany widok kosztów dla całej organizacji w jednej walucie raportowania. Menedżerowie mogą filtrować dane według obiektów kosztów w celu kontrolowania kosztów w podległych jednostkach organizacyjnych, nawet jeśli organizacja jest podzielona na kilka firm.
 
 -   [Pakiet zawartości usługi Power BI Analiza rachunku kosztów](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)

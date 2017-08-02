@@ -28,16 +28,14 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Ustawianie masek kodów kreskowych
-<a id="set-up-bar-code-masks" class="xliff"></a>
+# <a name="set-up-bar-code-masks"></a>Ustawianie masek kodów kreskowych
 
 [!include[banner](includes/banner.md)]
 
 
 W tym temacie opisano, jak konfigurować znaki maski kodów kreskowych i maski kodów kreskowych oraz jak przypisywać maski kodów kreskowych do kodów kreskowych.
 
-Konfigurowanie znaków maski kodu kreskowego
-<a id="set-up-bar-code-mask-characters" class="xliff"></a>
+<a name="set-up-bar-code-mask-characters"></a>Konfigurowanie znaków maski kodu kreskowego
 -------------------------------
 
 Maski kodów kreskowych są używane do tworzenia kodów kreskowych i do szybkiej identyfikacji kodów kreskowych skanowanych w punkcie sprzedaży (POS). Maski składają się ze znaków, które pełnią rolę symboli zastępczych wskazujących format kodów kreskowych, które zostaną utworzone. Aby skonfigurować maskę kodu kreskowego, należy skonfigurować znaki maski kodu kreskowego. Wybierz kolejno opcje **Handel detaliczny** &gt; **Zarządzanie zapasami** &gt; **Kody kreskowe i etykiety** &gt; **Znaki maski**. Kliknij przycisk **Nowy** i utwórz znaki maski kodu kreskowego. Znaki maski mogą być tworzone w celu wskazywania następujących danych kodu kreskowego:
@@ -62,8 +60,7 @@ Maski kodów kreskowych są używane do tworzenia kodów kreskowych i do szybkie
 | **Karta upominkowa**        | Wskazuje numer karty upominkowej w przypadku wydawania karty upominkowej lub płacenia taką kartą.                                               |
 | **Karta lojalnościowa**     | Dodaje do transakcji odbiorcę zarejestrowanego w programie lojalnościowym i może być używany w trakcie płacenia kartą lojalnościową.                             |
 
-## Definiowanie masek kodów kreskowych
-<a id="define-bar-code-masks" class="xliff"></a>
+## <a name="define-bar-code-masks"></a>Definiowanie masek kodów kreskowych
 Po określeniu znaków wymaganych masek kodów kreskowych wybierz kolejno opcje **Handel detaliczny** &gt; **Zarządzanie zapasami** &gt; **Kody kreskowe i etykiety** &gt; **Ustawienia maski kodów kreskowych**. Na tej stronie można zdefiniować maski kodów kreskowych, które korzystają z wcześniej określonych znaków. Te maski kodów kreskowych będą używane podczas generowania kodów kreskowych i również pomogą identyfikować kody kreskowe skanowane w punkcie sprzedaży.
 
 1.  Kliknij przycisk **Nowy**, aby utworzyć nową maskę kodu kreskowego.
@@ -79,8 +76,7 @@ Na przykład aby utworzyć maskę kodu kreskowego z identyfikatorem maski „Pro
 4.  Dodaj segment maski. Segment maski „Produkt” zostanie zaznaczony.
 5.  Podaj długość segmentu Produkt, na przykład „10”. Długość powinna odpowiadać długości identyfikatora produkt powszechnie używanej w sklepie. Maska będzie wyświetlana jako podgląd w sekcji **Ogólne** w obszarze **Maska**.
 
-## Przypisywanie masek kodów kreskowych do kodów kreskowych
-<a id="assign-bar-code-masks-to-bar-codes" class="xliff"></a>
+## <a name="assign-bar-code-masks-to-bar-codes"></a>Przypisywanie masek kodów kreskowych do kodów kreskowych
 Aby można było używać masek kodów kreskowych, muszą one zostać przypisane do kodów kreskowych. Kontynuując poprzedni przykład, w celu przypisania maski kodu kreskowego do kodu kreskowego wykonaj następujące czynności:
 
 1.  Wybierz kolejno opcje **Administrowanie organizacją** &gt; **Ustawienia** &gt; **Kody kreskowe**. Kliknij przycisk **Nowy**, aby utworzyć nowy kod kreskowy.

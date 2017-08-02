@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-## Prawa dostępu kontrolera obiektów kosztów
-<a id="access-rights-of-a-cost-object-controller" class="xliff"></a>
+## <a name="access-rights-of-a-cost-object-controller"></a>Prawa dostępu kontrolera obiektów kosztów
 
 [!include[banner](../includes/banner.md)]
 
@@ -56,8 +55,7 @@ Gdy rola **Kontroler obiektów kosztów** jest przypisana do menedżera, menedż
 > [!NOTE]
 > Rola **Kontroler obiektów kosztów** nie pozwala decydować, do których obiektów kosztów użytkownik ma dostęp i z których może wyświetlać dane. Zabezpieczenia na poziomie wiersza są dostarczane za pośrednictwem hierarchii wymiarów i hierarchii listy dostępu.
 
-## Przyznawanie praw dostępu
-<a id="grant-access-rights" class="xliff"></a>
+## <a name="grant-access-rights"></a>Przyznawanie praw dostępu
 W poniższym przykładzie pokazano, jak może wyglądać hierarchia wymiarów.
 
 **Szczegóły hierarchii wymiarów**

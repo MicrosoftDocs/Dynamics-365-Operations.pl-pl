@@ -25,8 +25,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Używanie dodatku programu Excel
-<a id="use-the-excel-add-in" class="xliff"></a>
+# <a name="use-the-excel-add-in"></a>Używanie dodatku programu Excel
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ W tym temacie wyjaśniono, jak otwierać dane jednostek w programie Microsoft Ex
 
 Otwierając dane jednostek w programie Microsoft Excel, można łatwo i szybko wyświetlić i edytować te dane przy użyciu dodatku pakietu Office dla usługi Microsoft Dynamics dla programu Excel. Ten dodatek wymaga programu Microsoft Excel 2016. **Uwaga:** Jeśli dzierżawa usługi Microsoft Azure Active Directory (Azure AD) jest skonfigurowana do używania usług federacyjnych w usłudze Active Directory (AD FS), należy się upewnić, że zastosowano aktualizację z maja 2016 r., ponieważ tylko wtedy dodatek programu Excel będzie poprawnie logował użytkowników.
 
-## Otwieranie danych jednostki w programie Excel przy rozpoczynaniu z programu Dynamics 365 for Finance and Operations
-<a id="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-finance-and-operations" class="xliff"></a>
+## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-finance-and-operations"></a>Otwieranie danych jednostki w programie Excel przy rozpoczynaniu z programu Dynamics 365 for Finance and Operations
 1.  Na stronie w usłudze Microsoft Dynamics 365 for Finance and Operations kliknij przycisk **Otwórz w pakiecie Microsoft Office**. Jeśli główne źródło danych (tabela) na stronie jest takie same, jak główne źródło danych którychkolwiek jednostek, dla strony zostaną wygenerowane domyślnie opcje **Otwórz w programie Excel**. Opcje **Otwórz w programie Excel** można znaleźć na często używanych stronach, takich jak **Wszyscy dostawcy** i **Wszyscy odbiorcy**.
 2.  Kliknij opcję **Otwórz w programie Excel**, a następnie otwórz wygenerowany skoroszyt. Ten skoroszyt zawiera informacje o powiązaniu jednostki, wskaźnik do środowiska oraz wskaźnik do dodatku programu Excel.
 3.  W programie Excel kliknij przycisk **Włącz edytowanie**, co umożliwi uruchamianie dodatku programu Excel. Dodatek programu Excel jest uruchamiany w okienku z prawej strony okna programu Excel.
@@ -45,8 +43,7 @@ Otwierając dane jednostek w programie Microsoft Excel, można łatwo i szybko w
 
 Dodatek programu Excel automatycznie odczytuje dane wybranej jednostki. Należy zauważyć, że nie będzie żadnych danych w skoroszycie, dopóki dodatek programu Excel ich nie wczyta.
 
-## Otwieranie danych jednostki w programie Excel przy rozpoczynaniu z programu Excel
-<a id="open-entity-data-in-excel-when-you-start-from-excel" class="xliff"></a>
+## <a name="open-entity-data-in-excel-when-you-start-from-excel"></a>Otwieranie danych jednostki w programie Excel przy rozpoczynaniu z programu Excel
 1.  W programie Excel na karcie **Wstaw** w grupie **Dodatki** kliknij opcję **Sklep**, co spowoduje otwarcie Sklepu Office.
 2.  W Sklepie Office wyszukaj według słowa kluczowego „Dynamics”, a następnie kliknij przycisk **Dodaj** obok pozycji **Dodatek pakietu Office dla usługi Microsoft Dynamics** (lub Microsoft Dynamics Office Add-in). Jest to żądany dodatek programu Excel.
 3.  Jeśli uruchamiasz dodatek programu Excel po raz pierwszy, kliknij opcję **Ufaj temu dodatkowi**, co umożliwi uruchamianie dodatku. Dodatek programu Excel jest uruchamiany w okienku z prawej strony okna programu Excel.
@@ -61,12 +58,10 @@ Na przykład jeśli adres URL to https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustT
 11. Po zakończeniu dodawania pól do listy **Wybrane pola** upewnij się, że kursor znajduje się w odpowiednim miejscu w arkuszu (na przykład w komórce A1), a następnie kliknij przycisk **Gotowe**. Następnie kliknij przycisk **Gotowe**, aby zamknąć projektanta.
 12. Kliknij przycisk **Odśwież**, aby pobrać zestaw danych.
 
-## Wyświetlanie i aktualizowanie danych jednostki w programie Excel
-<a id="view-and-update-entity-data-in-excel" class="xliff"></a>
+## <a name="view-and-update-entity-data-in-excel"></a>Wyświetlanie i aktualizowanie danych jednostki w programie Excel
 Gdy dodatek programu Excel wczyta dane jednostki do skoroszytu, można w dowolnym momencie aktualizować te dane, klikając przycisk **Odśwież** w dodatku programu Excel.
 
-## Edytowanie danych jednostki w programie Excel
-<a id="edit-entity-data-in-excel" class="xliff"></a>
+## <a name="edit-entity-data-in-excel"></a>Edytowanie danych jednostki w programie Excel
 Można zmienić dane jednostki w żądany sposób, a następnie opublikować je ponownie, klikając przycisk **Opublikuj** w dodatku programu Excel. Aby zmodyfikować rekord, zaznacz komórkę w arkuszu, a następnie zmień wartość komórki. Aby dodać nowy rekord, wykonaj jedną z następujących czynności:
 
 -   Kliknij w dowolnym miejscu tabeli źródeł danych, a następnie kliknij przycisk **Nowy** w dodatku programu Excel.
@@ -81,8 +76,7 @@ Aby usunąć rekord, wykonaj jedną z następujących czynności:
 -   Kliknij prawym przyciskiem myszy wiersz arkusza, który chcesz usunąć, i kliknij kolejno opcje **Usuń** &gt; **Wiersze tabeli**.
 Jeśli źródła danych zostały dodane jako pokrewne, nagłówek jest publikowany przed wierszami. Jeśli istnieją zależności między innymi źródłami danych, może być konieczna zmiana domyślnej kolejności publikowania. Aby zmienić kolejność publikowania, w dodatku programu Excel kliknij przycisk **Opcje** (symbol koła zębatego). Następnie na skróconej karcie **Łącznik danych** kliknij opcję **Konfiguruj publikowanie zamówienia**.
 
-## Dodaj lub usuń kolumny
-<a id="add-or-remove-columns" class="xliff"></a>
+## <a name="add-or-remove-columns"></a>Dodaj lub usuń kolumny
 Można użyć projektanta, aby dostosować kolumny dodawane automatycznie do arkusza.
 
 1.  Uruchom projektanta danych źródłowych dodatku programu Excel, klikając przycisk **Opcje** (symbol koła zębatego), a następnie zaznaczając pole wyboru **Włącz projekt**.
@@ -96,8 +90,7 @@ Można użyć projektanta, aby dostosować kolumny dodawane automatycznie do ark
 5. Aby zastosować zmiany do źródła danych, kliknij przycisk **Aktualizuj**. Następnie kliknij przycisk **Gotowe**, aby zamknąć projektanta. 
 6. Jeśli dodano pole (kolumnę), kliknij przycisk **Odśwież**, aby pobrać zaktualizowany zbiór danych.
 
-## [](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Rozwiązywanie problemów
-<a id="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting" class="xliff"></a>
+## <a name="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting"></a>[](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Rozwiązywanie problemów
 Istnieje kilka problemów, które można rozwiązać poprzez wykonanie kilku prostych kroków.
 
 -   **Jest wyświetlany przycisk Ładuj aplety.** Jeśli po zalogowaniu dodatek programu Excel zawiera przycisk **Ładuj aplety**, prawdopodobnie nie jesteś zalogowany jako poprawny użytkownik. Aby rozwiązać ten problem, sprawdź, czy w prawym górnym rogu dodatku programu Excel jest wyświetlana poprawna nazwa użytkownika. Jeśli widać niepoprawną nazwę użytkownika, kliknij ją, wyloguj się, a następnie zaloguj ponownie.

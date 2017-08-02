@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Typy arkuszy księgi
-<a id="ledger-journal-types" class="xliff"></a>
+# <a name="ledger-journal-types"></a>Typy arkuszy księgi
 
 [!include[banner](../includes/banner.md)]
 

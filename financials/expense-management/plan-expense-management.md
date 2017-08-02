@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurowanie zarządzania wydatkami
-<a id="configure-expense-management" class="xliff"></a>
+# <a name="configure-expense-management"></a>Konfigurowanie zarządzania wydatkami
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,16 +36,13 @@ W tym artykule opisano zagadnienia i decyzje, które należy uwzględnić w proc
 
 Ponieważ wiele decyzji podjętych podczas planowania konfiguracji zarządzania wydatkami jest opartych na hierarchii i strukturze finansowej organizacji, musisz konsultować się z dokumentami planowania dla tych dokumentów.
 
-## Wydatki międzyfirmowe
-<a id="intercompany-expenses" class="xliff"></a>
+## <a name="intercompany-expenses"></a>Wydatki międzyfirmowe
 Jeśli włączysz wydatki międzyfirmowe, zezwalasz firmom i pracownikom na tworzenie wydatków lub pobieranie opłat w imieniu lub od innych firm w obrębie organizacji. Na przykład pracownik w firmie A kończy projektu dla firmy B. Jeżeli wydatki międzyfirmowe są włączone, pracownik może przesłać kartę czasu pracy do firmy B lub otrzymać płatność od firmy B. Jeśli Twoja organizacja nie ma wielu podmiotów prawnych, nie musisz włączać wydatków międzyfirmowych. **Decyzja:** Czy chcesz włączyć wydatki międzyfirmowe?
 
-## Zarządzanie finansami
-<a id="financial-management" class="xliff"></a>
+## <a name="financial-management"></a>Zarządzanie finansami
 Zarządzanie wydatkami jest ściśle zintegrowane z zarządzaniem finansami organizacji. Wiele konfiguracji zarządzania wydatkami będzie opierać się na decyzjach dotyczących finansów organizacji. W poniższych sekcjach opisano różne obszary, które wymagają planowania i decyzji opartych na decyzjach finansowych i wskazówkach organizacji pochodzących od zespołu kierowniczego.
 
-### Diety
-<a id="per-diems" class="xliff"></a>
+### <a name="per-diems"></a>Diety
 
 Musisz zdefiniować pracownika dla diet oferowanych przez organizację. Ponieważ diety są zazwyczaj używane w celu pokrycia wydatków, takich jak wyżywienie, zakwaterowanie i inne koszty dodatkowe, można utworzyć reguły dla odpisów diet oferowanych przez organizację. Stawki diet można określić na podstawie sezonu roku lub lokalizacji podróży albo ich obu. Podczas definiowania reguły obliczania diety można określić, że pewien procent stawki diety zostanie wstrzymany, jeśli pracownik otrzymuje bezpłatne posiłki lub usługi. Można także zdefiniować poziom stawek diet, aby wyznaczyć minimalną i maksymalną liczbę godzin, dla których można zastosować stawkę diety dla wyjazdu pracownika. **Decyzje:**
 
@@ -67,8 +63,7 @@ Musisz zdefiniować pracownika dla diet oferowanych przez organizację. Poniewa�
         -   hotel
         -   inne wydatki
 
-### Konta i arkusze zarządzania wydatkami
-<a id="expense-management-journals-and-accounts" class="xliff"></a>
+### <a name="expense-management-journals-and-accounts"></a>Konta i arkusze zarządzania wydatkami
 
 Zarządzanie wydatkami wymaga użycia wielu arkuszy i kont. Trzeba zdecydować, na przykład, czy to samo konto jest używane dla zaliczek gotówkowych i spory dotyczących kart kredytowych. **Decyzje:**
 
@@ -76,8 +71,7 @@ Zarządzanie wydatkami wymaga użycia wielu arkuszy i kont. Trzeba zdecydować, 
 -   Które konto jest używane dla zaliczek gotówkowych?
 -   Czy zaliczki gotówkowe powinny być księgowane natychmiast?
 
-### Metody płatności
-<a id="payment-methods" class="xliff"></a>
+### <a name="payment-methods"></a>Metody płatności
 
 Jeśli zezwalasz pracownikom na ponoszenie wydatków w imieniu Twojej firmy, musisz określić metody płatności, których pracownicy mogą używać. Na przykład możesz zezwolić pracownikom na używanie gotówki lub firmowej karty kredytowej. Możesz też zezwolić pracownikom na używanie osobistych kart kredytowych, a następnie zwracać im pieniądze. Należy podjąć następujące decyzje dla każdej dozwolonej metody płatności. **Decyzje:**
 
@@ -87,8 +81,7 @@ Jeśli zezwalasz pracownikom na ponoszenie wydatków w imieniu Twojej firmy, mus
 -   Jeśli dostępne jest konto przeciwstawne, co nim jest?
 -   Jeśli metodą płatności jest karta kredytowa, czy metoda płatności powinna być używana tylko do obsługi zaimportowanych transakcji?
 
-### Kategorie wydatków i udostępniane kategorie
-<a id="expense-categories-and-shared-categories" class="xliff"></a>
+### <a name="expense-categories-and-shared-categories"></a>Kategorie wydatków i udostępniane kategorie
 
 Gdy pracownicy tworzą raport wydatków, każdy zarejestrowany wydatek musi być skojarzony z kategorią wydatków. Kategorie wydatków pochodzą z kategorii udostępnionych, które mogą być udostępniane dla podmiotów prawnych w obrębie organizacji. Kategorie te również mogą być współużytkowane w zarządzaniu projektami i księgowaniu, w zależności od sposobu zdefiniowania danej organizacji. Na podstawie definicji organizacji i wskazówek zespołu implementacji określ, czy kategorie używane w zarządzaniu wydatkami mają być stosowane tylko dla wydatków czy też powinny być współużytkowane między projektami i wydatkami. Pamiętaj, że te kategorie mogą być współużytkowane między projektami i wydatkami lub projektami i produkcją, ale nie między wydatkami i produkcją. Należy wybrać następujące decyzje dla każdej kategorii wydatków. **Decyzje:**
 
@@ -126,8 +119,7 @@ Gdy pracownicy tworzą raport wydatków, każdy zarejestrowany wydatek musi być
 
  
 
-### Podatki
-<a id="taxes" class="xliff"></a>
+### <a name="taxes"></a>Podatki
 
 W przypadku podatków związanych z podatkami trzeba określić, co jest uwzględnione lub dozwolone w raportach wydatków. **Decyzje:**
 
@@ -136,8 +128,7 @@ W przypadku podatków związanych z podatkami trzeba określić, co jest uwzglę
 
 Warto pamiętać, że jeśli przy planowaniu księgi głównej podjęto decyzję o zastosowaniu podatku amerykańskiego i użyciu reguł podatkowych, co można zrobić, ustawiając w polu **Zastosuj zasady opodatkowania dla podatku** wartość Tak, nie można włączyć zwrotu z podatku w wydatkach.
 
-## Zasady
-<a id="policies" class="xliff"></a>
+## <a name="policies"></a>Zasady
 Można utworzyć zasady raportu wydatków tak, aby organizacja mogła oszczędzić czas i pieniądze, gdy pracownicy ponoszą koszty w jej imieniu. Zasady zapewniają, że pracownicy mieszczą się w budżecie, podają wszystkie wymagane informacje i wydają pieniądze tylko wtedy, gdy jest to konieczne. Należy wybrać następujące decyzje dla każdej zasady raportu wydatków i każdej zasady zatwierdzenia raportu wydatków. **Decyzje:**
 
 -   Jak nazywa się zasada?

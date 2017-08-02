@@ -26,16 +26,13 @@ ms.lasthandoff: 06/13/2017
 
 
 ---
-# Generowanie raportów do ustawy ACA
-<a id="generate-affordable-care-act-reports" class="xliff"></a>
+# <a name="generate-affordable-care-act-reports"></a>Generowanie raportów do ustawy ACA
 Jest dostępna funkcjonalność wspierająca pracodawców, którzy muszą monitorować informacje zgłaszane w deklaracjach 1095-B i 1095-C dotyczących sekcji **Employer Mandate** (Obowiązki pracodawcy) amerykańskiej ustawy o powszechnym dostępie do opieki zdrowotnej (ACA). Należy zauważyć, że ta funkcjonalność jest włączona tylko dla firm w Stanach Zjednoczonych.
 
-## Rozpoczęcie pracy
-<a id="getting-started" class="xliff"></a>
+## <a name="getting-started"></a>Rozpoczęcie pracy
 Rozpoczynając śledzenie informacji przeznaczonych do zgłaszania w deklaracjach 1095-B i 1095-C, należy najpierw utworzyć jedną lub więcej grup objętych świadczeniem ACA. Te grupy objęte świadczeniem ACA będą używane w celu wskazania oferty zakresu świadczeń dostarczonej pracownikowi, udziału pracownika w płaceniu najniższej miesięcznej składki (jeśli koszt przekracza federalną granicę ubóstwa) oraz zasad „bezpiecznej przystani” (programu Safe Harbor) stosowanych przez pracodawcę (jeśli dotyczy). Za pomocą grup ACA można zarządzać informacjami dla tych pól bez konieczności otwierania rekordów wszystkich pracowników mających takie same warunki. Ponadto grupy objęte świadczeniem ACA można łatwo przypisać do jednego lub wielu pracowników przy użyciu funkcji przypisywania grupowego dostępnej na stronie.
 
-## Prowadzenie wielu wersji grupy objętej świadczeniem
-<a id="maintaining-multiple-versions-of-a-coverage-group" class="xliff"></a>
+## <a name="maintaining-multiple-versions-of-a-coverage-group"></a>Prowadzenie wielu wersji grupy objętej świadczeniem
 W systemie można zarządzać wieloma wersjami każdej grupy objętej świadczeniem, co pozwala wprowadzać zmiany utrzymujące aktualność informacji w grupie bez konieczności tworzenia nowej grupy ani przypisywania do niej pracowników, gdy coś się zmieni w organizacji lub w oferowanych świadczeniach. 
 
 Po utworzeniu potrzebnych grup objętych świadczeniem ACA można je zbiorczo przypisać do pracowników przy użyciu funkcji **Przypisanie grupowe** dostępnej na stronie albo przejść indywidualnie do każdego pracownika i wskazać, czy informacje ACA muszą być śledzone i zgłaszane dla tego pracownika, jak również przypisać tego pracownika do grupy objętej świadczeniem ACA.
@@ -44,8 +41,7 @@ Jeśli informacje dotyczące objęcia świadczeniem ACA nie muszą być śledzon
 
 Aby wprowadzić wyjątki od którychkolwiek wartości grupy objętej świadczeniem ACA, kliknij łącze Świadczenie ACA znajdujące się na stronie Szczegóły pracownika, pod sekcją Informacje dodatkowe: na karcie Zatrudnienie.
 
-## Zgłaszanie objęcia świadczeniem zdrowotnym
-<a id="reporting-health-care-coverage" class="xliff"></a>
+## <a name="reporting-health-care-coverage"></a>Zgłaszanie objęcia świadczeniem zdrowotnym
 Można śledzić nie tylko, jaki zakres ubezpieczenia zdrowotnego zaoferowano pracownikowi pełnoetatowemu, ale jeśli pracodawca oferuje dodatkowe finansowane przez firmę ubezpieczenie zdrowotne, z którego korzysta pracownik (niezależnie od tego, czy jest zatrudniony w pełnym czy niepełnym wymiarze godzin), w deklaracji 1095-C trzeba podać dodatkowe informacje. Każdy pracownik (w tym osoby na jego utrzymaniu) objęty systemem świadczeń finansowanym przez pracodawcę musi być wykazany w raporcie za miesiące, w których był objęty świadczeniem. 
 
 Aby wskazać, że dany plan świadczeń musi być zgłaszany, można zaznaczyć pole wyboru **Podlega zgłoszeniu na mocy ACA**.
@@ -54,14 +50,12 @@ Ponadto jeśli pracownicy wybrali objęcie świadczeniem jakichkolwiek osób poz
 
 Na stronie **Menedżer dat świadczenia dla osoby będącej na utrzymaniu** można podać daty objęcia osoby na utrzymaniu świadczeniem. Wprowadzenie dat na tej stronie spowoduje automatyczne zaznaczenie pola wyboru **Pokryte** na stronie **Obsługa świadczeń**.
 
-## Generowanie deklaracji 1095B i 1095C
-<a id="generate-1095b-and-1095c-forms" class="xliff"></a>
+## <a name="generate-1095b-and-1095c-forms"></a>Generowanie deklaracji 1095B i 1095C
 Formularze 109-B i 1095-C można również wygenerować z poziomu programu i rozesłać je odnośnym pracownikom. Z systemu można też elektronicznie wygenerować deklarację 1095-C i towarzyszące jej pliki 1094-C przekazywane do urzędu skarbowego.  
 
 Podczas generowania formularza 1095-C należy wprowadzić odpowiedni rok kalendarzowy lub podatkowy oraz określić, czy chcesz drukować formularz na dwóch stronach czy trzech. Formularz trzystronicowy jest potrzebny tylko wtedy, gdy pracodawca oferuje dodatkowe świadczenia finansowane przez siebie, a pracownik włączył do świadczeń siebie i ponad pięć osób na swoim utrzymaniu. Podczas generowania deklaracji dwustronicowej system automatycznie wykryje, czy pracownik zapisał do świadczeń więcej niż 6 osób, i nie uwzględni tego pracownika podczas tworzenia formularza. Ponadto podczas generowania deklaracji trzystronicowej system uwzględni tylko tych pracowników, którzy zgłosili siebie i więcej niż pięć osób na utrzymaniu.
 
-## Wyświetlanie informacji
-<a id="viewing-information" class="xliff"></a>
+## <a name="viewing-information"></a>Wyświetlanie informacji
 Na stronie **Świadczenie ACA dla pracownika** można zobaczyć, których pracowników przypisano do poszczególnych grup objętych świadczeniem, których pracowników nie trzeba uwzględniać w raporcie i którzy pracownicy są nieprzypisani.
 
 Jeśli którakolwiek domyślna wartość grupy objętej świadczeniem ACA zostanie zastąpiona, obok niej będzie widoczna gwiazdka. Jeśli wartości dla wszystkich dwunastu miesięcy są takie same i nie zostały zastąpione, wartość zostanie wydrukowana w kolumnie **Wszystkie 12 miesięcy**.

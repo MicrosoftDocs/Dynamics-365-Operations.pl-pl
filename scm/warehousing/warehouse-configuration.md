@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfiguracja magazynu
-<a id="warehouse-configuration" class="xliff"></a>
+# <a name="warehouse-configuration"></a>Konfiguracja magazynu
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ W tym artykule wyjaśniono sposób konfigurowania magazynu. Artykuł zawiera inf
 
 **Uwaga:** Ten artykuł dotyczy funkcji zaawansowanego zarządzania magazynem w module **Zarządzanie magazynem**. Nie ma zastosowania do funkcji w module **Zarządzanie zapasami**.
 
-## Układ magazynu
-<a id="warehouse-layout" class="xliff"></a>
+## <a name="warehouse-layout"></a>Układ magazynu
 System zarządzania magazynem w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition zapewnia elastyczne metody definiowania układu magazynu do zaspokojenia zmieniających się potrzeb, dzięki czemu można uzyskać optymalną wydajność magazynu.
 
 -   Istnieje możliwość ustalenia obszarów magazynowych o wysokim priorytecie i niskim priorytecie dla optymalnego umieszczenia towarów.
@@ -48,8 +46,7 @@ System zarządzania magazynem w programie Microsoft Dynamics 365 for Finance and
 
 Aby użyć zarządzania magazynem w programie Finance and Operations, należy utworzyć magazyn i uaktywnić bardziej zaawansowane lub wyspecjalizowane działania związane z obsługą magazynu. Na stronie **Magazyny** wybierz opcję **Użyj procesów zarządzania magazynami**.
 
-### Grupy stref, strefy, typy lokalizacji i lokalizacje
-<a id="zone-groups-zones-location-types-and-locations" class="xliff"></a>
+### <a name="zone-groups-zones-location-types-and-locations"></a>Grupy stref, strefy, typy lokalizacji i lokalizacje
 
 W ramach procesu włączania układu magazynu należy zdefiniować grupy strefy magazynowej, strefy, profile lokalizacji, typy lokalizacji i lokalizacje.
 
@@ -61,8 +58,7 @@ W ramach procesu włączania układu magazynu należy zdefiniować grupy strefy 
 
 Jednostki utworzone w celu zdefiniowania układu magazynu są używane w kwerendach ustawionych w szablonach pracy w celu uruchomienia zleceń w magazynie. Dlatego podczas definiowania stref, typów lokalizacji itd. należy wziąć pod uwagę jak różne obszary w magazynie są używane dla różnych procesów. Ponadto należy wziąć pod uwagę czynniki, takie jak fizyczne charakterystyki określonego obszaru. Na przykład mogą być obszary, w których można używać tylko określonego typu wózków widłowych. Lub jeśli firma ma zarówno produkcję, jak i wyroby gotowe w obrębie tego samego obiektu, może być pomocne utworzenie jednego magazynu w programie Finance and Operations, ale następnie oddzielenie tych dwóch funkcji poprzez utworzenie dwóch grup stref. Nadaj jednostkom opisowe nazwy, aby łatwo je identyfikować, gdy będzie trzeba ich użyć w zapytaniach szablonu.
 
-### Limity składowania w lokalizacji, profile lokalizacji i stałe lokalizacje pobrania
-<a id="location-stocking-limits-location-profiles-and-fixed-picking-locations" class="xliff"></a>
+### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Limity składowania w lokalizacji, profile lokalizacji i stałe lokalizacje pobrania
 
 Należy pamiętać o fizycznym układzie magazynu, zarówno do określenia pojemności magazynów (limity składowania w lokalizacji i profile lokalizacji), jak i w celu wypracowania optymalnych procesów magazynowych. 
 
@@ -72,17 +68,14 @@ Jeśli są wymagane bardziej zaawansowane obliczenia do kontrolowania ogranicze�
 
 Aby uzyskać optymalne procesy wychodzące, oceń, czy należy używać stałych lokalizacji pobrania i/lub lokalizacji pakowania. Często uzupełnienia minimum/maksimum służy do procesu uzupełniania zapasów z lokalizacji zbiorczej do ustalonych lokalizacji pobrania, a wiele stałych lokalizacji pobrania można włączyć w jednym magazynie i dla wariantów produktów. Należy wziąć pod uwagę elastyczność, którą można osiągnąć włączając lokalizacje przepełnienia uzupełnienia zapasów dla popytu dedykowanego, które są używane tylko do przetwarzania uzupełnienia fali/ładunku.
 
-### Kreator konfiguracji lokalizacji
-<a id="location-setup-wizard" class="xliff"></a>
+### <a name="location-setup-wizard"></a>Kreator konfiguracji lokalizacji
 
 Aby szybko utworzyć lokalizacji magazynu, można użyć kreatora **ustawienia lokalizacji**. W ramach tego procesu możesz łatwo zachować format nazwy lokalizacji.
 
-## Procesy magazynu
-<a id="warehouse-processes" class="xliff"></a>
+## <a name="warehouse-processes"></a>Procesy magazynu
 W ramach konfiguracji magazynu ważne jest włączanie procesów magazynowych zgodnie z wymaganiami firmy. Najważniejsze składniki, które należy skonfigurować to szablony grupy czynności, szablony pracy, pule pracy i dyrektywy lokalizacji.
 
-### Szablony grupy czynności
-<a id="wave-templates" class="xliff"></a>
+### <a name="wave-templates"></a>Szablony grupy czynności
 
 Szablony grupy czynności pomagają włączyć proces wychodzący "Zwalniania do magazynu". Jak tylko wiersze zamówienia są zwalniane (albo bezpośrednio z dokumentów źródłowych, poprzez procesy zadań wsadowych lub za pośrednictwem ładunków, które już zostały utworzone), jest używana funkcja szablonu grupy czynności. 
 
@@ -95,15 +88,13 @@ Parametry służą do określania, jak daleko system powinien automatycznie doj�
 
 Należy określić metody przetwarzania grupy czynności w poszczególnych szablonach grupy czynności. Dostępne metody zależą od typu szablonu grupy czynności.
 
-### Szablony pracy
-<a id="work-templates" class="xliff"></a>
+### <a name="work-templates"></a>Szablony pracy
 
 Definicje szablonów pracy odgrywają ważną rolę w definicji procesów pracy zarządzania magazynem. Określają one, jaka praca jest wykonywana i sposób wykonywania pracy. Szablony mogą zawierać również kod dyrektywy łączący dyrektywy lokalizacji do określenia, gdzie praca jest wykonywana. Szablony pracy zawierają kwerendy, które określają kryteria dla pracy. Każdy szablon musi zawierać co najmniej jedną operację pobrania i jednej operację odłożenia do uruchomienia podstawowej operacji pracy w postaci przeniesienia dostępnych zapasów z jednej lokalizacji do innej. 
 
 Jeśli kilku pracowników musi mieć możliwość przetworzenia pracy dla niektórych operacji magazynowych, warto używać koncepcji *etapów* dla zapasów i rozdzielić wykonanie pracy na różne klasy pracy.
 
-### Pula pracy
-<a id="work-pools" class="xliff"></a>
+### <a name="work-pools"></a>Pula pracy
 
 Można używać puli prac do organizacji pracy w grupy. Można na przykład utworzyć pulę pracy do sklasyfikowania pracy, która występuje w określonej lokalizacji magazynu. Dla wszystkich typów prac, z wyjątkiem zliczania można przypisać pulę pracy do szablonu pracy. Do inwentaryzacji ciągłej można przypisać pulę pracy na następujących stronach:
 
@@ -116,15 +107,13 @@ W przypadku korzystania z szablonów pracy przy tworzeniu pracy, pula pracy jest
 
 Identyfikator puli pracy możne też służyć do ograniczenia typu pracy kierowanej do określonego pracownika magazynu, pod warunkiem, że ta funkcja jest skonfigurowana w menu urządzenia przenośnego.
 
-### Dyrektywy lokalizacji
-<a id="location-directives" class="xliff"></a>
+### <a name="location-directives"></a>Dyrektywy lokalizacji
 
 Jak sugeruje nazwa, dyrektywy lokalizacji służą do kierowania transakcji pracy do odpowiednich lokalizacji w magazynie. Innymi słowy określają lokalizacje pobrania i odłożenia. 
 
 Aby szybciej i łatwiej określić zadania związane z wierszem dyrektywy lokalizacji, użyj jednej z wstępnie zdefiniowanych strategii. Na przykład, można użyć strategii **Pusta lokalizacja bez przychodzącej pracy** do wyszukiwania wolnej lokalizacji w magazynie, lub można użyć strategii **Rezerwacja partii FEFO** dla wychodzących pobrań sprzedaży.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Konfigurowanie lokalizacji w magazynie z obsługą WMS (przewodnik po zadaniu)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)

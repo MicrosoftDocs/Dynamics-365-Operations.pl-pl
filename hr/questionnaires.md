@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Kwestionariusze
-<a id="questionnaires" class="xliff"></a>
+# <a name="questionnaires"></a>Kwestionariusze
 
 Ten temat zawiera ogólne informacje o kwestionariuszach oraz łącza do bardziej szczegółowych informacji. Kwestionariusz to zestaw pytań, które służą do gromadzenia informacji do różnych celów. Użytkownik może projektować, tworzyć, dystrybuować i wypełniać kwestionariusze, a następnie analizować wyniki. 
 
@@ -50,8 +49,7 @@ Poniższa tabela zawiera łącza do informacji o podstawowych zadaniach kwestion
 
 
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Projektowanie kwestionariuszy](design-questionnaires.md)

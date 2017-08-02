@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurowanie kont odbiorców
-<a id="set-up-vendor-accounts" class="xliff"></a>
+# <a name="set-up-vendor-accounts"></a>Konfigurowanie kont odbiorców
 
 [!include[banner](../includes/banner.md)]
 
@@ -49,20 +48,16 @@ Aby przyspieszyć proces tworzenia kont dostawców, można utworzyć szablony. A
 
 Można także utworzyć szablon użytkownika do własnego użytku. Nie można usunąć dostawcy, który jest skojarzony z innymi rekordami, np. kontaktów lub produktów.
 
-## Numery kont dostawców
-<a id="vendor-account-numbers" class="xliff"></a>
+## <a name="vendor-account-numbers"></a>Numery kont dostawców
 Numer konta jest unikatowym identyfikatorem dostawcy. Można ustawić automatyczne generowanie numerów kont przy tworzeniu dostawców. Można także skonfigurować numerację w celu ręcznego wprowadzania numerów kont. Na przykład można użyć numeru telefonu dostawcy jako identyfikatora.
 
-## Organizacje dostawców i indywidualni dostawcy
-<a id="vendor-organizations-and-individual-vendors" class="xliff"></a>
+## <a name="vendor-organizations-and-individual-vendors"></a>Organizacje dostawców i indywidualni dostawcy
 Podczas tworzenia nowego konta dostawcy należy wybrać, czy dostawca jest organizacją, czy osobą. Wybór wpływa na informacje, które należy wypełnić dla dostawcy. W wypadku osoby jest to imię, nazwisko i tytuł. Dla organizacji informacje te obejmują numer organizacji i liczbę pracowników.
 
-## Adresy
-<a id="addresses" class="xliff"></a>
+## <a name="addresses"></a>Adresy
 Dla każdego dostawcy można określić wiele adresów, z których każdy będzie używany do innego celu. Można na przykład utworzyć adres, który ma cel **Faktura**. Albo jeśli będziesz płacić dostawcy czekami, można utworzyć adres o celu **Przekaż do**. Jeśli trzeba określić adres, który będzie używany dla przekazów pieniężnych do banków zagranicznych, celem będzie **SWIFT**.
 
-## Osoby kontaktowe dostawców
-<a id="vendor-contacts" class="xliff"></a>
+## <a name="vendor-contacts"></a>Osoby kontaktowe dostawców
 Można przechowywać dane osób kontaktowych dostawców. Te kontakty mogą być następnie używane w dokumentach takich jak zamówienia zakupu lub zapytania ofertowe (ZO).  
 
 Aby dodać osoby kontaktowe dla dostawcy, na stronie **Wszyscy dostawcy** na karcie **Dostawca** w grupie **Konfiguracja** kliknij kolejno opcje **Kontakty** &gt; **Dodaj kontakty**.  
@@ -75,8 +70,7 @@ Nie można usunąć rekordu osoby kontaktowej, jeżeli istnieje odwołanie do ni
 
 Osoby kontaktowe dostawcy można dodać do kontaktów osobistych w usłudze Microsoft Office 365. Jednakże najpierw należy skonfigurować synchronizację między programem Finance and Operations a usługą Office 365 w ustawieniach synchronizacji programu Microsoft Exchange Server oraz w kreatorze instalacji programu Microsoft Outlook.
 
-## Dostawcy w różnych firmach
-<a id="vendors-in-different-legal-entities" class="xliff"></a>
+## <a name="vendors-in-different-legal-entities"></a>Dostawcy w różnych firmach
 Jeśli dostawca jest zarejestrowany tylko dla jednej firmy w organizacji, a inne firmy muszą zarejestrować tego samego dostawcę, można użyć strony **Dodawanie dostawcy do innej firmy**, aby skonfigurować dostawcę do współpracy z inną firmą. Należy wybrać grupę dostawców, walutę i stan wstrzymania dla dostawcy w wybranej firmie.  
 
 Jeśli kilka firm w ramach jednej organizacji prowadzi interesy z tym samym dostawcą i każda z nich prowadzi oddzielne konto dla tego dostawcy, można scalić identyfikatory stron odnoszące się do kont dostawcy. W ten sposób można udostępnić informacje takie jak adres i liczba pracowników, co pozwoli je aktualizować tylko w jednym miejscu.  
@@ -86,12 +80,10 @@ Aby scalić identyfikatory stron, wykonaj następujące kroki.
 1.  Na stronie **Globalna książka adresowa** zaznacz rekordy książki adresowej odpowiadające dostawcy w każdej firmie, która powinna zostać uwzględniona w mapowaniu.
 2.  W okienku akcji kliknij opcję **Scal rekordy**.
 
-## Umowy
-<a id="agreements" class="xliff"></a>
+## <a name="agreements"></a>Umowy
 Po skonfigurowaniu konta dostawcy można zarejestrować umowy zawarte z dostawcą. Korzystając z akcji w rekordzie dostawcy, można skonfigurować umowy handlowe. Można także skonfigurować umowę zakupu na stronie **Umowy zakupu**.
 
-## Wstrzymywanie dostawcy
-<a id="putting-a-vendor-on-hold" class="xliff"></a>
+## <a name="putting-a-vendor-on-hold"></a>Wstrzymywanie dostawcy
 Można wstrzymywać dostawcę dla różnych typów transakcji. Dostępne są następujące opcje:
 
 -   **Nie** — Nie nałożono żadnych wstrzymań dla dostawcy.
@@ -103,16 +95,13 @@ Można wstrzymywać dostawcę dla różnych typów transakcji. Dostępne są nas
 
 Gdy wstrzymujesz dostawcę, można także określić przyczynę wstrzymania oraz datę końcową stanu wstrzymania. Jeśli nie wprowadzisz daty końcowej, stan wstrzymania dostawcy trwa przez czas nieokreślony.
 
-## Konto płatnika dostawcy
-<a id="vendor-invoice-account" class="xliff"></a>
+## <a name="vendor-invoice-account"></a>Konto płatnika dostawcy
 Jeśli istnieje więcej niż jeden dostawca z takim samym adresem rozliczeniowym lub jeśli dostawca jest fakturowany przez firmę zewnętrzną, można określić konto płatnika w rekordzie dostawcy. Konto płatnika jest kontem, na którym po stronie kredytowej księgowana jest kwota faktury przy tworzeniu faktury od dostawcy z zamówienia zakupu. Jeśli nie zostanie wprowadzone konto płatnika w rekordzie dostawcy, jego funkcję będzie spełniać konto dostawcy.
 
-## Konta bankowe dostawcy
-<a id="vendor-bank-accounts" class="xliff"></a>
+## <a name="vendor-bank-accounts"></a>Konta bankowe dostawcy
 Jeśli trzeba dokonywać płatności na konto bankowe dostawcy, można wprowadzić informacje dotyczące banku i kont bankowych dostawcy na stronie **Konta bankowe dostawcy**. Można również wprowadzić informacje na temat sprawdzania poprawności i płatności dla konta bankowego. Na przykład można dodać przelewy testowe do kont bankowych dostawcy. Te przelewy testowe mogą służyć do weryfikacji dokładności danych księgowych, takich jak numery rozliczeniowe i numery kont. Należy określić domyślne konto dla płatności na rzecz dostawcy. Jednak podczas faktycznego dokonywania płatności można zmienić to konto na jedno z innych kont dostawcy.
 
-## Konta księgowe
-<a id="ledger-accounts" class="xliff"></a>
+## <a name="ledger-accounts"></a>Konta księgowe
 Można określić konta domyślne, które będą automatycznie wyświetlane w arkuszach faktur od wybranego dostawcy. Ta funkcja może być przydatna, jeśli zwykle płacisz za te same typy towarów lub usług od tych samych dostawców przez dłuższy czas. Po określeniu domyślnego konta można szybko i sprawnie dokonywać wpisów w arkuszu faktur. Ustawione domyślne konta nie są używane do zamówień zakupu ani do faktur od dostawcy wprowadzonych na stronie **Faktura od dostawcy**.  
 
 Domyślne konta wybiera się na stronie **Ustawienia konta domyślnego**, którą można otworzyć za pomocą karty **Faktura** w rekordzie dostawcy. Konta wybrane w tym miejscu są wyświetlane na wyfiltrowanej liście kont dostawcy podczas wprowadzania wpisu w arkuszu. Można ustawić jedno z kont jako konto domyślne.

@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Przetwarzanie arkuszy finansowych
-<a id="general-journal-processing" class="xliff"></a>
+# <a name="general-journal-processing"></a>Przetwarzanie arkuszy finansowych
 
 [!include[banner](../includes/banner.md)]
 
@@ -60,12 +59,10 @@ Na stronie **Arkusze okresowe** można skonfigurować dzienniki cykliczne automa
 
 Możesz skorzystać z szablonów załącznika w dowolnym momencie. Na stronie **Arkusz finansowy** działania **Zapisz** i **Wybierz szablon załącznika** są dostępne na stronie **Załącznik arkusza** w sekcji **Funkcje** dla wierszy załącznika.
 
-## Pokrewna konfiguracja
-<a id="related-setup" class="xliff"></a>
+## <a name="related-setup"></a>Pokrewna konfiguracja
 Następująca konfiguracja nie jest właściwa dla arkuszy finansowych, ale ułatwia prawidłowe wprowadzanie danych.
 
-### Konto główne
-<a id="main-account" class="xliff"></a>
+### <a name="main-account"></a>Konto główne
 
 Konfiguracja konta głównego oferuje wiele opcji przetwarzania arkusza finansowego:
 
@@ -81,8 +78,7 @@ Konfiguracja konta głównego oferuje wiele opcji przetwarzania arkusza finansow
     -   **Weryfikacja użytkownika** — ta opcja pozwala kontrolować, którzy użytkownicy mogą księgować na koncie głównym.
     -   **Weryfikacja typów księgowania** — ta opcja pozwala kontrolować, które typy księgowania są dopuszczalne na koncie głównym.
 
-### Struktury księgowania i struktury reguł zaawansowanych
-<a id="accounting-structures-and-advanced-rules-structures" class="xliff"></a>
+### <a name="accounting-structures-and-advanced-rules-structures"></a>Struktury księgowania i struktury reguł zaawansowanych
 
 Struktury księgowania i struktury zaawansowanych reguł są bardzo ważne do zagwarantowania, że dane, które są wymagane do raportowania finansowego i śledzenia wydajności, są rejestrowane przy przetwarzaniu arkusza finansowego i wszelkich dokumentów. Struktury księgowania i struktury reguły zaawansowanych pozwalają dostosować sposób wprowadzania danych. Można zezwolić na wprowadzanie danych tylko dla wymiarów finansowych, które są odpowiednie w poszczególnych sytuacjach, a można też wymuszać wymaganie, by rejestrowane były tylko dane wymagane i prawidłowe.
 

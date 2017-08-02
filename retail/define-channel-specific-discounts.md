@@ -29,24 +29,21 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Definiowanie rabatów właściwych dla kanału
-<a id="define-channel-specific-discounts" class="xliff"></a>
+# <a name="define-channel-specific-discounts"></a>Definiowanie rabatów właściwych dla kanału
 
 [!include[banner](includes/banner.md)]
 
 
 Sprzedawcy detaliczni często ustawiają różne rabaty w różnych kanałach. W tym temacie opisano pojęcia, które należy znać, aby tworzyć rabaty dla konkretnych kanałów. 
 
-Rabaty właściwe dla kanału
-<a id="channel-specific-discounts" class="xliff"></a>
+<a name="channel-specific-discounts"></a>Rabaty właściwe dla kanału
 --------------------------
 
 Sprzedawcy detaliczni często oferują różne rabaty w różnych kanałach. To może zależeć od lokalnych uwarunkowań rynku lub być elementem konkurencji z innymi sprzedawcami detalicznymi.
 
 Program Microsoft Dynamics 365 for Retail oferuje grupy cenowe definiujące rabaty właściwe dla kanału. Grup cenowe mogą być skojarzone z jednym lub kilkoma następującymi elementami: kanały, katalogi, przynależności i programy lojalnościowe. Ten artykuł dotyczy kanałów, ale te same pojęcia dotyczą rabatów katalogu, przynależności i programów lojalnościowych.
 
-## Grupy cenowe
-<a id="price-groups" class="xliff"></a>
+## <a name="price-groups"></a>Grupy cenowe
 
 [![Grupy cenowe](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
@@ -57,8 +54,7 @@ Powyższy wykres ilustruje relację między jednostkami, które mogą znajdować
 -   **Grupy cenowe programów lojalnościowych** — ta strona zawiera listę programów lojalnościowych i rabatów połączonych ze sobą dla każdej grupy cenowej.
 -   **Grupy cenowe przynależności** — ta strona zawiera listę przynależności i rabatów połączonych ze sobą dla każdej grupy cenowej.
 
-## Przykładowa konfiguracja rabatu kanału
-<a id="example-channel-discount-set-up" class="xliff"></a>
+## <a name="example-channel-discount-set-up"></a>Przykładowa konfiguracja rabatu kanału
 Przykład poniżej ilustruje zadania niezbędne do skonfigurowania rabatu kanału.
 
 1.  W tym przykładzie masz kanał **Houston** i chcesz utworzyć nowy rabat o nazwie **Powrót-do-szkoły**.
@@ -69,8 +65,7 @@ Przykład poniżej ilustruje zadania niezbędne do skonfigurowania rabatu kanał
 
  
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Korekty ceny i rabaty](price-adjustments-discounts.md)

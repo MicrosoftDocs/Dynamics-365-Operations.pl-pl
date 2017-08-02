@@ -26,14 +26,12 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Tworzenie kuponów dla sieci sprzedaży
-<a id="create-coupons-for-retail-sales" class="xliff"></a>
+# <a name="create-coupons-for-retail-sales"></a>Tworzenie kuponów dla sieci sprzedaży
 
 [!include[banner](includes/banner.md)]
 
 
-## Ogólne informacje o kuponach
-<a id="overview-of-coupons" class="xliff"></a>
+## <a name="overview-of-coupons"></a>Ogólne informacje o kuponach
 
 Kupony to kody i kody kreskowe używane w celu dodawania rabatów detalicznych do transakcji. Każdy kupon może mieć wiele kodów, a każdy kod może mieć własną datę wejścia w życie. 
 
@@ -46,22 +44,19 @@ Aby utworzyć kuponu, należy utworzyć oddzielnie rabat i kupon. Następnie trz
 > [!NOTE]
 > Po połączeniu kuponu z rabatem kilka pól na stronie rabatu w programie Microsoft Dynamics 365 for Retail staje się tylko do odczytu, ponieważ są one zarządzane przez ustawienia kuponu. Są to m.in. pola stanu i standardowych zakresów dat.
 
-### Kupony o ograniczonym użyciu
-<a id="limited-use-coupons" class="xliff"></a>
+### <a name="limited-use-coupons"></a>Kupony o ograniczonym użyciu
 
 Kupony można skonfigurować jako kupony o ograniczonym użyciu. Limit użycia można zdefiniować dla klienta lub kanału lub jako limit globalny. Ten limit jest wymuszany podczas wprowadzania lub skanowania kodu lub kodu kreskowego w punkcie sprzedaży albo podczas wprowadzania zamówienia sprzedaży. Kupon jest rejestrowany jako użyty po sfinalizowaniu zamówienia, z którym jest skojarzony kupon.
 
 Limit jest wymuszany dla kodu kuponu na kuponie. Na przykład kupon jednorazowego użytku, który zawiera dwa kody kuponu, może zostać wykorzystany dwukrotnie, po jednym razie dla każdego kodu kuponu. Każdy kod na kuponie można niezależnie ustawić jako aktywny.
 
-## Zarządzanie kuponami
-<a id="managing-coupons" class="xliff"></a>
+## <a name="managing-coupons"></a>Zarządzanie kuponami
 
 Rabat i kupon należy utworzyć oddzielnie. Następnie trzeba połączyć te elementy, zaznaczając rabat na stronie kuponu. Po połączeniu kuponu z rabatem kilka pól na stronie rabatu staje się tylko do odczytu, ponieważ są one zarządzane przez ustawienia kuponu. Są to m.in. pola stanu i standardowych zakresów dat.  
 
 Zasadniczo kupony są dodatkową weryfikacją nad rabatami detalicznymi. Kupon zawiera kody kuponu i kody kreskowe, zakresy dat dla tych kodów, limity użycia oraz wymagane właściwości odbiorcy. Rabat określa zbiór produktów, dla których kupon jest ważny. Grupy cenowe rabatu określają zbiór odbiorców, kanały lub katalogi, dla których kupon jest ważny.
 
-## Konfiguracja systemu dla kuponów
-<a id="system-setup-for-coupons" class="xliff"></a> 
+## <a name="system-setup-for-coupons"></a>Konfiguracja systemu dla kuponów 
 
 Zanim będzie można utworzyć kupon, należy skonfigurować kod kreskowy kuponu i dwie numeracje kuponu. 
 
@@ -77,8 +72,7 @@ Zanim będzie można utworzyć kupon, należy skonfigurować kod kreskowy kuponu
 6.  Na stronie **Parametry sieci sprzedaży** na karcie **Sekwencje identyfikatorów** zaznacz utworzone przez siebie numeracje numeru kuponu i identyfikatora kod kuponu.
 7.  Teraz można otworzyć stronę **Kupony** i utworzyć nowe kupony.
 
-## Wpływ częściowych aktualizacji na kupony
-<a id="the-effect-of-partial-updates-on-coupons" class="xliff"></a>
+## <a name="the-effect-of-partial-updates-on-coupons"></a>Wpływ częściowych aktualizacji na kupony
 
 Funkcjonalność kuponów obejmuje wiele odrębnych funkcji w programie Dynamics 365 for Retail. Program Microsoft Dynamics 365 for Retail Headquarters (HQ) i kanał mogą być częściowo aktualizowane w różnych składnikach. Dlatego trzeba dokładnie rozumieć, jak częściowe aktualizuje wpływają na całą funkcjonalność kuponów.
 

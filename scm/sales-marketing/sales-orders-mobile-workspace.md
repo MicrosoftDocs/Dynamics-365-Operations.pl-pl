@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobilny obszar roboczy Zamówienia sprzedaży
-<a id="sales-orders-mobile-workspace" class="xliff"></a>
+# <a name="sales-orders-mobile-workspace"></a>Mobilny obszar roboczy Zamówienia sprzedaży
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,14 +35,12 @@ Ten temat zawiera informacje o komórkowym obszarze roboczym **Zamówienia sprze
 
 Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji komórkowej Microsoft Dynamics 365 for Unified Operations.
 
-## Przegląd
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Przegląd
 Mobilny obszar roboczy **Zamówienia sprzedaży** umożliwia przeglądanie szczegółowych informacji o poszczególnych zamówieniach sprzedaży. Informacje te obejmują stan zamówienia, informacje kontaktowe odbiorcy oraz informacje kontaktowe osoby przyjmującej zamówienie. Mobilny obszar roboczy **Zamówienia sprzedaży** zapewnia natychmiastowy podgląd zamówień sprzedaży. Można wyświetlić wszystkie zamówienia sprzedaży, zamówienia dla poszczególnych odbiorców albo informacje o określonym zamówieniu sprzedaży. 
 
 Mobilny obszar roboczy oferuje dwa widoki pomagające dogłębnie analizować zamówienia sprzedaży.
 
-### Wyświetl wszystkie zamówienia sprzedaży
-<a id="view-all-sales-orders" class="xliff"></a>
+### <a name="view-all-sales-orders"></a>Wyświetl wszystkie zamówienia sprzedaży
 Ten widok wyświetla listę wszystkich zamówień sprzedaży.
 
 -   Użyj jednego z następujących filtrów, aby wybrać zamówienia sprzedaży do wyświetlenia:
@@ -64,8 +61,7 @@ Ten widok wyświetla listę wszystkich zamówień sprzedaży.
     -   Wiersze zamówienia
     -   Wysyłki, które pokazują, jak i kiedy wysłano towary z zamówienia sprzedaży
 
-### Wyświetl zamówienia odbiorcy
-<a id="view-orders-for-a-customer" class="xliff"></a>
+### <a name="view-orders-for-a-customer"></a>Wyświetl zamówienia odbiorcy
 Ten widok pokazuje zamówienia sprzedaży z podziałem na odbiorców.
 
 -   Użyj jednego z następujących filtrów, aby wyświetlić zamówienia wybranego odbiorcy:
@@ -86,16 +82,13 @@ Ten widok pokazuje zamówienia sprzedaży z podziałem na odbiorców.
         -   Wiersze zamówienia
         -   Wysyłki, które pokazują, jak i kiedy wysłano towary z zamówienia sprzedaży
 
-## Wymagania wstępne
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Wymagania wstępne
 Wymagania wstępne różnią się w zależności od wersji systemu Microsoft Dynamics 365 wdrożonej w organizacji.
 
-### Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r.
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r. 
 Jeśli w organizacji wdrożono oprogramowanie Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r., administrator systemu musi opublikować mobilny obszar roboczy **Zamówienia sprzedaży**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Warunki wstępne, jeśli jest używany program Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą
-<a id="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Warunki wstępne, jeśli jest używany program Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą
 Jeśli w organizacji wdrożono oprogramowanie Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą, administrator systemu musi wykonać następujące zadania wstępne. 
 
 <table>
@@ -128,15 +121,13 @@ Jeśli w organizacji wdrożono oprogramowanie Dynamics 365 for Operations w wers
 </tbody>
 </table>
 
-## Pobieranie i instalowanie aplikacji mobilnej
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Pobieranie i instalowanie aplikacji mobilnej
 Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
 -   [Telefony z systemem Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Logowanie do aplikacji mobilnej
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logowanie do aplikacji mobilnej
 
 1.  Uruchom aplikację na urządzeniu komórkowym.
 2.  Wprowadź adres URL usługi Dynamics 365.
@@ -145,8 +136,7 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
 [![Ściąganie w celu odświeżenia](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Wyświetlanie informacji o zamówieniach sprzedaży dla odbiorcy przy użyciu mobilnego obszaru roboczego Zamówienia sprzedaży
-<a id="view-information-about-sales-orders-for-a-customer-by-using-the-sales-order-mobile-workspace" class="xliff"></a>
+## <a name="view-information-about-sales-orders-for-a-customer-by-using-the-sales-order-mobile-workspace"></a>Wyświetlanie informacji o zamówieniach sprzedaży dla odbiorcy przy użyciu mobilnego obszaru roboczego Zamówienia sprzedaży
 
 1.  Na urządzeniu przenośnym wybierz obszar roboczy **Zamówienia sprzedaży**.
 2.  Wybierz opcję **Wyświetl zamówienia odbiorcy**.

@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Trzyelementowe zasady uzgadniania
-<a id="three-way-matching-policies" class="xliff"></a>
+# <a name="three-way-matching-policies"></a>Trzyelementowe zasady uzgadniania
 
 [!include[banner](../includes/banner.md)]
 
 
 Ten artykuł zawiera przykłady uzgadniania trzyelementowego.
 
-Przykład: Trzyelementowe uzgadniania dla towarów
-<a id="example-three-way-matching-for-items" class="xliff"></a>
+<a name="example-three-way-matching-for-items"></a>Przykład: Trzyelementowe uzgadniania dla towarów
 -------------------------------------
 
 **Podsumowanie:** Ken jest kontrolerem w centrali firmy Fabrikam. Chce, aby wszystkie faktury od dostawców oparte na zamówieniach zakupu były dopasowane do wierszy zamówień zakupu (uzgadnianie dwuelementowe). Dla zakupu towarów, które będą używane jako środki trwałe, faktura powinna być uzgodniona zarówno z wierszami zamówienia zakupu, jak i wierszami dokumentu przyjęcia towarów (uzgodnienie trzyelementowe).
@@ -49,8 +47,7 @@ Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na nastę
 -   Phyllis i April są menedżerami ds. księgowości w dziale rozrachunków z dostawcami dla oddziału firmy Fabrikam w USA. Mogą oni wymuszać stosowanie zasad korporacyjnych i zapewniać, że faktury są płacone dopiero po ich uzgodnieniu z zamówieniem zakupu i odebraniem towarów lub usług.
 -   Tony jest kierownikiem produkcji w amerykańskim oddziale Fabrikam. On i inni pracownicy działu produkcji muszą upewnić się, że towary zostały odebrane zgodnie z zamówieniem od dostawcy, tak aby inni pracownicy mieli materiały potrzebne do wykonywania ich obowiązków.
 
-### Wymagania wstępne
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Wymagania wstępne
 
 -   Ken ustawia zasadę uzgadniania na poziomie firmy na uzgadnianie trzyelementowe.
 -   W pola Automatycznie aktualizuj stan uzgodnienia nagłówka na poziomie firmy Ken wybiera wartość Tak.
@@ -64,8 +61,7 @@ Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na nastę
 
 -   Arnie, pracownik działu rozrachunki z odbiorcami w Contoso, sprawdza wysyłki w danym tygodniu. Wybiera transakcje wysyłki do zafakturowania dla Fabrikam za dostawę obrabiarek Milicron. Arnie uwzględnia opłatę za wysyłkę i obsługę. Fabrikam uzna, że ta opłata jest częścią kosztów środka trwałego.
 
-### Scenariusz
-<a id="scenario" class="xliff"></a>
+### <a name="scenario"></a>Scenariusz
 
 1.  Sammy, pracownik działu przyjęć w firmie Fabrikam, odbiera całkowitą liczbę maszyn, które zostały wysyłane z firmy Contoso. Wprowadza ilość 5 w dokumencie przyjęcia produktów. Ponieważ zamówienie zakupu zostało całkowicie otrzymane, stan zamówienia zakupu zmienia się na Otrzymane.
 2.  April, koordynatorka rozrachunków z dostawcami w firmie Fabrikam, wprowadza i sprawdza fakturę przesyłaną przez firmę Contoso. Sprawdza poprawność następujących informacji:
@@ -91,8 +87,7 @@ W programie Finance and Operations wiersz faktury zawiera następujące informac
 
 Ponieważ ten wiersz jest zgodny z procesem uzgadniania faktur, fakturę można zaksięgować.
 
-##  Przykład: trzyelementowe uzgadnianie dla kombinacji towaru i dostawcy
-<a id="example-three-way-matching-for-item-and-vendor-combinations" class="xliff"></a>
+## <a name="example-three-way-matching-for-item-and-vendor-combinations"></a> Przykład: trzyelementowe uzgadnianie dla kombinacji towaru i dostawcy
 Podsumowanie: Ken jest kontrolerem w centrali firmy Fabrikam. Chce, aby wszystkie faktury oparte na zamówieniach zakupu były dopasowane do wierszy zamówień zakupu (uzgadnianie dwuelementowe). Cassie jest kontystką w malezyjskim oddziale firmy Fabrikam. Określa, że wybrane elementy, które zostały zamówione od określonych dostawców w Malezji powinny być uzgadniane zarówno z wierszami zamówienia, jak i z wierszami dokumentu przyjęcia produktów (uzgadnianie trzyelementowe). Może ona również zastąpić zasadę uzgadniania regułą wyższego poziomu dla określonych zamówień zakupu. 
 
 Wielkości i kwoty są małe i w przeszłości zdarzały się problemy z dostawami od niektórych dostawców z Malezji. Z tego powodu Cassie ustawia poziom kontroli dla niektórych kombinacji towaru i dostawcy, które są nabywane w Malezji, na uzgadnianie trzyelementowe. 
@@ -101,8 +96,7 @@ Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na nastę
 -   Ken jest kontrolerem w firmie Fabrikam. Może on pomóc pracownikom swojej firmy w identyfikowaniu i rozwiązywaniu problemów związanych z zamawianiem, odbieraniem zamówień i płaceniem za towary lub usługi od dostawców.
 -   Cassie jest kontystką w malezyjskim oddziale firmy Fabrikam. Może ona wymuszać stosowanie zasad korporacyjnych i zapewniać, że faktury są płacone dopiero po ich uzgodnieniu z wierszami zamówienia zakupu i dokumentem przyjęcia produktów będącym dowodem odebrania towarów lub usług. Może ona także podnieść poziom kontroli do uzgadniania trzyelementowego dla określonych towarów, by umożliwić kontrolę kosztów operacyjnych.
 
-### Wymagania wstępne
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Wymagania wstępne
 
 -   Ken ustawia zasadę uzgadniania na poziomie firmy na uzgadnianie dwuelementowe.
 -   Wolu Dopasuj ceny całkowite dla firmy Ken wybiera wartość Procent i wpisuje 10% jako wartość procentową rozbieżności.
@@ -116,8 +110,7 @@ Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na nastę
     | MM01 – mysz bezprzewodowa | 2        | 40,00      | 80,00      | Uzgadnianie dwuelementowe                | Uzgadnianie trzyelementowe                           |
     | Napęd USB             | 200      | 10,00      | 2000,00   | Uzgadnianie dwuelementowe                | Uzgadnianie dwuelementowe                             |
 
-### Scenariusz
-<a id="scenario" class="xliff"></a>
+### <a name="scenario"></a>Scenariusz
 
 1.  Towary są dostarczane. Sammy, pracownik działu przyjęć w malezyjskim oddziale firmy Fabrikam, nie księguje dokumentu przyjęcia produktów natychmiast, bo coś odrywa go od pracy.
 2.  April, koordynatorka rozrachunków z dostawcami w firmie Fabrikam, wprowadza i sprawdza fakturę przesyłaną przez firmę Contoso. Sprawdza poprawność następujących informacji:

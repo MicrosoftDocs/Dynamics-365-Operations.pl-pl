@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobilny obszar roboczy Wprowadzanie czasu projektu
-<a id="project-time-entry-mobile-workspace" class="xliff"></a>
+# <a name="project-time-entry-mobile-workspace"></a>Mobilny obszar roboczy Wprowadzanie czasu projektu
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Ten temat zawiera informacje o komórkowym obszarze roboczym **Wprowadzanie czas
 
 Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji komórkowej Microsoft Dynamics 365 for Unified Operations. 
 
-## Przegląd
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Przegląd
 W ramach swojej codziennej pracy członkowie zespołu projektu często przebywają na miejscu realizacji lub są w podróży. Mobilny obszar roboczy **Wprowadzanie czasu projektu** pozwala użytkownikom wprowadzać czas pracy w projekcie podlegający i niepodlegający fakturowaniu na dowolnych urządzeniach komórkowych. Dzięki temu członkowie zespołu projektu mogą rejestrować przepracowany czas w dowolnym miejscu i czasie. Mogą również wyświetlać wpisy czasu, które zostały już zarejestrowane. 
 
 W szczególności w mobilnym obszarze roboczym **Wprowadzanie czasu projektu** użytkownicy mogą wykonywać następujące zadania:
@@ -48,16 +46,13 @@ W szczególności w mobilnym obszarze roboczym **Wprowadzanie czasu projektu** u
 -   Rejestrowanie czasu jako podlegającego lub niepodlegającego zafakturowaniu dla projektu.
 -   Opcjonalne wprowadzanie komentarzy wewnętrznych lub zewnętrznych.
 
-## Wymagania wstępne
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Wymagania wstępne
 Wymagania wstępne różnią się w zależności od wersji systemu Microsoft Dynamics 365 wdrożonej w organizacji.
 
-### Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r.
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r. 
 Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r., administrator systemu musi opublikować mobilny obszar roboczy **Wprowadzanie czasu projektu**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą
 Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą, administrator systemu musi wykonać następujące zadania wstępne. 
 
 <table>
@@ -90,16 +85,14 @@ Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operati
 </tbody>
 </table>
 
-## Pobieranie i instalowanie aplikacji mobilnej
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Pobieranie i instalowanie aplikacji mobilnej
 
 Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
 -   [Telefony z systemem Android](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Logowanie do aplikacji mobilnej
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logowanie do aplikacji mobilnej
 1.  Uruchom aplikację na urządzeniu komórkowym.
 2.  Wprowadź adres URL usługi Dynamics 365.
 3.  Podczas pierwszego logowania pojawi się monit o podanie nazwy użytkownika i hasła. Wprowadź swoje poświadczenia.
@@ -107,8 +100,7 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
 [![Ściąganie w celu odświeżenia](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Wprowadzanie czasu za pomocą mobilnego obszaru roboczego Wprowadzanie czasu projektu
-<a id="enter-time-by-using-the-project-time-entry-mobile-workspace" class="xliff"></a>
+## <a name="enter-time-by-using-the-project-time-entry-mobile-workspace"></a>Wprowadzanie czasu za pomocą mobilnego obszaru roboczego Wprowadzanie czasu projektu
 1.  Na urządzeniu przenośnym wybierz obszar roboczy **Wprowadzanie czasu projektu**.
 2.  Wybierz opcję **Wpis czasu**. Zostaną wyświetlone daty kalendarzowe bieżącego tygodnia.
 3.  Dla wybranej daty wybierz kolejno opcje **Akcje** &gt; **Nowy wpis**.

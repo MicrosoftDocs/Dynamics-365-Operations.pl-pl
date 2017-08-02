@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Konfigurowanie produktów detalicznych
-<a id="set-up-retail-products" class="xliff"></a>
+# <a name="set-up-retail-products"></a>Konfigurowanie produktów detalicznych
 
 [!include[banner](includes/banner.md)]
 

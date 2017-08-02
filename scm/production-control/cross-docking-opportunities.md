@@ -24,13 +24,11 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych
-<a id="cross-docking-from-production-orders-to-outbound-docks" class="xliff"></a>
+# <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych
 
 W tym temacie opisano sposób zarządzania procesem przeładunku kompletacyjnego materiału, który jest zgłaszany jako gotowy z linii produkcyjnej do doku transportu wychodzącego.
 
-Wprowadzenie
-<a id="introduction" class="xliff"></a>
+<a name="introduction"></a>Wprowadzenie
 ------------
 
 Przeładunek kompletacyjny z produkcji do lokalizacji załadunkowej ma zastosowanie do producentów, którzy wytwarzają duże ilości i w najbardziej korzystnym scenariuszu chcieliby wysyłać wyroby gotowe natychmiast po ich zgłoszeniu jako gotowe z linii produkcyjnych. Celem tego procesu jest wysyłanie produktów do centrów dystrybucji, które fizycznie znajdują się blisko miejsc zapotrzebowania odbiorców, zamiast kumulować zapasy w zakładzie produkcyjnym.
@@ -47,25 +45,21 @@ Produkt jest zgłaszany jako gotowy do lokalizacji wyjściowej produkcji (3) i o
 
 [![](./media/scenario1.png)](./media/scenario1.png)
 
-## Konfigurowanie przeładunku kompletacyjnego
-<a id="configure-cross-docking" class="xliff"></a>
+## <a name="configure-cross-docking"></a>Konfigurowanie przeładunku kompletacyjnego
 Proces przeładunku kompletacyjnego konfiguruje się w **zasadach pracy**. Zasada pracy określa typ zlecenia pracy, lokalizację i produkt. W poniższym przykładzie przeładunek kompletacyjny jest konfigurowany dla produktu X i lokalizacji Y.
 
-#### Typy zleceń
-<a id="work-order-types" class="xliff"></a>
+#### <a name="work-order-types"></a>Typy zleceń
 
 -   Typ zlecenia pracy: Odłożenie wyrobów gotowych
 -   Metoda tworzenia pracy: Przeładunek kompletacyjny
 -   Nazwa zasady przeładunku kompletacyjnego: Zamówienia przeniesienia
 
-#### Magazyny
-<a id="inventory-locations" class="xliff"></a>
+#### <a name="inventory-locations"></a>Magazyny
 
 -   Magazyn: 51
 -   Lokalizacja: Y
 
-#### Produkty
-<a id="products" class="xliff"></a>
+#### <a name="products"></a>Produkty
 
 -   Numer towaru: X
 
@@ -76,31 +70,26 @@ Obecnie przeładunek kompletacyjny można konfigurować tylko dla dwóch typów 
 
 W **zasadzie przeładunku kompletacyjnego** określasz, które typy dokumentów są stosowane do przeładunku kompletacyjnego. Obecnie jedynym obsługiwanym typem dokumentu jest **Zamówienia przeniesienia**. Poniższy przykład pokazuje konfigurację zasady przeładunku kompletacyjnego.
 
-### Nazwa zasady przeładunku kompletacyjnego: Zamówienie przeniesienia
-<a id="cross-docking-policy-name-transfer-order" class="xliff"></a>
+### <a name="cross-docking-policy-name-transfer-order"></a>Nazwa zasady przeładunku kompletacyjnego: Zamówienie przeniesienia
 
 -   Numer kolejny: 10
 -   Typ zlecenia pracy: Wydanie przeniesienia
 -   Zapotrzebowanie na przeładunek kompletacyjny wymaga lokalizacji: Fałsz
 -   Strategia przeładunku kompletacyjnego: Data i godzina
 
-### Numer sekwencyjny
-<a id="sequence-number" class="xliff"></a>
+### <a name="sequence-number"></a>Numer sekwencyjny
 
 **Numer kolejny** wskazuje priorytet danego typu dokumentu. Obecnie jedynym obsługiwanym typem jest **Wydanie przeniesienia**. W związku z tym numer kolejny stanie się istotny dopiero wtedy, gdy system będzie obsługiwał więcej typów zleceń pracy.
 
-### Zasada przeładunku kompletacyjnego
-<a id="cross-docking-policy" class="xliff"></a>
+### <a name="cross-docking-policy"></a>Zasada przeładunku kompletacyjnego
 
 Zasada przeładunku kompletacyjnego ustawia także zasadę priorytetyzacji zapotrzebowania na zamówienie przeniesienia. Na przykład jeśli istnieje wiele zamówień przeniesienia na ten sam produkt, planowana data i godzina ustawiona dla ładunku oraz skojarzona z zamówieniem przeniesienia decydują o priorytetach między zamówieniami. Zaplanowaną datę i godzinę można ustawić bezpośrednio w ładunku albo w **harmonogramie terminów** skojarzonym z ładunkiem. Priorytety zależą od strategii przeładunku kompletacyjnego. Obecnie istnieje tylko jedna strategia: **Data i godzina**.
 
-### Zapotrzebowanie na przeładunek kompletacyjny wymaga lokalizacji
-<a id="cross-docking-demand-requires-location" class="xliff"></a>
+### <a name="cross-docking-demand-requires-location"></a>Zapotrzebowanie na przeładunek kompletacyjny wymaga lokalizacji
 
 W zasadzie przeładunku kompletacyjnego można skonfigurować kryterium powodujące wymóg, aby zamówienia przeniesienia miały przypisaną lokalizację, jeśli mają się kwalifikować do przeładunku kompletacyjnego. To kryterium jest ustawiane w polu **Zapotrzebowanie na przeładunek kompletacyjny wymaga lokalizacji**. Lokalizacja w harmonogramie terminów skojarzonym z ładunkiem służy jako lokalizacja końcowa dla towarów objętych przeładunkiem kompletacyjnym. Lokalizacja końcowa towarów objętych tym przeładunkiem zależy od dyrektywy lokalizacji dla zlecenia pracy **Wydanie przeniesienia** o typie **Odłożenie**. W scenariuszu, gdzie wyroby gotowe powinny być objęte przeładunkiem kompletacyjnym tylko wtedy, gdy przyczepa jest przypisana bramy dokowej, może być przydatne ustawienie opcji **Zapotrzebowanie na przeładunek kompletacyjny wymaga lokalizacji** . W tym scenariuszu towary są przesuwane bezpośrednio z linii produkcyjnej do przyczepy. Podczas przypisywania przyczepy do bramy dokowej użytkownik przypisze lokalizację do harmonogramu terminów, w związku z czym aktywuje lokalizację dla przeładunków kompletacyjnych. W poniższych sekcjach omówiono dwa przykłady.
 
-#### Scenariusz 1 — Przeładunek kompletacyjny z produkcji do zamówień przeniesienia
-<a id="scenario-1--cross-docking-from-production-to-transfer-orders" class="xliff"></a>
+#### <a name="scenario-1--cross-docking-from-production-to-transfer-orders"></a>Scenariusz 1 — Przeładunek kompletacyjny z produkcji do zamówień przeniesienia
 
 Po zgłoszeniu produktu jako gotowego na linii produkcyjnej jest on przenoszony do lokalizacji przy bramie dokowej, skąd jest ładowany na ciężarówkę i następnie przenoszony do centrum dystrybucji. Użyj danych firmy USMF.
 
@@ -117,8 +106,7 @@ Po zgłoszeniu produktu jako gotowego na linii produkcyjnej jest on przenoszony 
 
 Praca typu **Odłożenie wyrobów gotowych** została utworzona i przetworzona.
 
-#### Scenariusz 2 — Przeładunek kompletacyjny z produkcji do zamówień przeniesienia z harmonogramem terminów
-<a id="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule" class="xliff"></a>
+#### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>Scenariusz 2 — Przeładunek kompletacyjny z produkcji do zamówień przeniesienia z harmonogramem terminów
 
 Po zgłoszeniu produktu jako gotowego na linii produkcyjnej jest on przenoszony do lokalizacji przy bramie dokowej, która jest identyfikowana przez harmonogram terminów dla lokalizacji przy bramach dokowych. Użyj danych firmy USMF.
 
@@ -132,8 +120,7 @@ Po zgłoszeniu produktu jako gotowego na linii produkcyjnej jest on przenoszony 
 8.  Przejdź do portalu urządzeń przenośnych i wybierz pozycję menu **Zgłoszenie i odłożenie wyrobów gotowych**.
 9.  Z urządzenia przenośnego zgłoś towar o numerze **L0101** jako produkt gotowy. Zauważ, że lokalizacją odłożenia jest teraz **BAYDOOR 2**. Ta lokalizacja jest pobierana z harmonogramu terminów, a nie z dyrektywy lokalizacji **Przyjęcie przeniesienia**.
 
-### Informacje dodatkowe
-<a id="additional-information" class="xliff"></a>
+### <a name="additional-information"></a>Informacje dodatkowe
 
 -   Scenariusz przeładunku kompletacyjnego jest obsługiwany dla towarów wchodzących w skład partii i serii, gdzie wymiary partii i numeru seryjnego są zdefiniowane powyżej i poniżej lokalizacji w hierarchii rezerwacji.
 -   Ilość zgłaszana jako gotowa nie może być dzielona w celu przekazania do zapotrzebowania zamówienia przeniesienia o niższej ilości. Na przykład jeśli 20 sztuk jest zgłaszanych jako gotowe, a istnieje zamówienie przeniesienia na 5 sztuk, zamówienia przeniesienia nie będzie interpretowane jako nadające się przeładunku kompletacyjnego.

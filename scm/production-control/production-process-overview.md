@@ -28,8 +28,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Omówienie procesu produkcji
-<a id="production-process-overview" class="xliff"></a>
+# <a name="production-process-overview"></a>Omówienie procesu produkcji
 
 [!include[banner](../includes/banner.md)]
 
@@ -44,8 +43,7 @@ Na proces produkcji mają z reguły wpływ metody rachunku kosztów i inwentaryz
 
 Wybór metod pomiaru kosztów określa również wymagania dotyczące raportów na temat zużycia zasobów i materiałów w procesie produkcji. Zazwyczaj metody kosztu rzeczywistego wymagają dokładnej sprawozdawczości na poziomie zadania, a metody kosztów okresowych pozwalają na mniej szczegółowe raportowanie zużycia materiałów i zasobów.
 
-## Tryb mieszany produkcji
-<a id="mixed-mode-manufacturing" class="xliff"></a>
+## <a name="mixed-mode-manufacturing"></a>Tryb mieszany produkcji
 Różne produkty i topologie produkcji wymagają stosowania różnych typów zamówienia. W programie Finance and Operations można połączyć różne typy zamówień w tryb mieszany. Innymi słowy wszystkich w całym cyklu produkcji gotowego towaru mogą wystąpić wszystkie typy zamówień.
 
 -   **Zlecenie produkcyjne** — jest to typ klasycznego zlecenia produkcji do wyprodukowania określonego produktu lub wariantu produktu w określonej ilości w danym dniu. Zlecenia produkcyjne są oparte na specyfikacji listy składowej BOM i marszruty.
@@ -53,8 +51,7 @@ Różne produkty i topologie produkcji wymagają stosowania różnych typów zam
 -   **Kanban** — karty Kanban są używane do sygnalizowania powtarzających się procesów lean manufacturing, opartych na przepływach produkcji, regułach kanban i BOM.
 -   **Projekt** — projekt produkcji łączy produkty i usługi o określonym harmonogramie i budżecie. Część produkcyjna projektu może być zrealizowana poprzez dowolny inny typ zlecenia.
 
-## Zasady produkcji
-<a id="manufacturing-principles" class="xliff"></a>
+## <a name="manufacturing-principles"></a>Zasady produkcji
 Aby wybrać zasady produkcji najlepiej dostosowane do określonego produktu i rynku, należy rozważyć wymagania dotyczące produkcji i logistyki oraz oczekiwania odbiorców dotyczące czasu realizacji dostawy.
 
 -   **Produkcja na magazyn** — to klasyczna zasada produkcji, gdzie produkty są wytwarzane jako zapasy na podstawie prognozy lub minimalnego uzupełnienia zapasów (te ostatnie są zazwyczaj obliczane w oparciu na prognozie lub zużyciu historycznym).
@@ -62,8 +59,7 @@ Aby wybrać zasady produkcji najlepiej dostosowane do określonego produktu i ry
 -   **Konfigurowanie do zamówienia** — jak dla zasady Produkcja na zamówienie, ostateczne operacje łańcucha wartości są wykonywane na zamówienie. Rzeczywisty produkowany wariant produktu nie jest wstępnie zdefiniowany, tylko jest tworzony w chwili wprowadzania zamówień na podstawie modelu konfiguracji produktu sprzedaży. Reguła Konfigurowanie do zamówienia wymaga określonego poziomu unifikacji procesu dla danej linii produktów.
 -   **Projektowanie na zamówienie** — te procesy są zazwyczaj wskazywane w projekcie i zaczynają się od fazy projektowania. Podczas fazy projektowania tworzy się koncepcje i opis produktów koniecznych do realizacji zamówienia. Następnie można utworzyć zlecenia produkcyjne, zamówienia partii lub kanban do wyprodukowania produktów.
 
-## Omówienie cyklu produkcyjnego
-<a id="overview-of-the-production-life-cycle" class="xliff"></a>
+## <a name="overview-of-the-production-life-cycle"></a>Omówienie cyklu produkcyjnego
 Dla wszystkich typów trybu mieszanego produkcji mogą wystąpić następujące kroki w cyklu produkcyjnym. Jednak nie wszystkie z nich są przedstawiane jako stan zlecenia jawny.
 
 1.  **Utworzone** — można tworzyć zlecenia produkcyjne, zamówienia partii lub kanban ręcznie, ale można też skonfigurować ich tworzenie przez system na podstawie różnych sygnałów popytu. Planowanie główne tworzy zlecenia produkcyjne, zamówienia partii, lub karty Kanban przy ustalaniu zamówień planowanych. Innymi sygnałami popytu są zamówienia sprzedaży lub sygnały ustalonej dostawy ze zleceń produkcyjnych lub kart kanban. W przypadku kart kanban o stałej ilości sygnały popytu są generowane, gdy kanban zostaną zarejestrowane jako puste.
@@ -84,8 +80,7 @@ Dla wszystkich typów trybu mieszanego produkcji mogą wystąpić następujące 
 12. **Zamknięcie okresu** — niektóre zasady rachunku kosztów, takie jak średnia okresowa, wycena wsteczna, FIFO lub LIFO wymagają okresowych działań w celu zamknięcia zapasów lub okresu obrachunkowego. Na ogół system próbuje zgłosić całe zużycie materiałów i zasobów oraz korekty zapasów i odpadków przed zamknięciem okresów. Zgłoszenie to odbywa się zwykle za pomocą arkuszy przesunięć magazynowych lub arkuszy korekt. Celem jest dokonanie oceny wyników ekonomicznych jednostek operacyjnych na okres. W niektórych przypadkach, gdy używane są zlecenia produkcyjne obejmujące okresy raportowania finansowego, stosuje się arkusze produkcyjne do zgłaszania postępów produkcji i zużycia zasobów na koniec okresu.
 
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Informacja zwrotna o produkcji](production-feedback.md)

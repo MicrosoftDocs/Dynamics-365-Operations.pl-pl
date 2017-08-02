@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Konfigurowanie kodów kreskowych
-<a id="set-up-bar-codes" class="xliff"></a>
+# <a name="set-up-bar-codes"></a>Konfigurowanie kodów kreskowych
 
 [!include[banner](includes/banner.md)]
 
@@ -44,8 +43,7 @@ Kodów kreskowych można używać do kupowania i sprzedawania produktów, śledz
 4.  Tworzenie kodów kreskowych dla produktów.
 
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Ustawianie masek kodów kreskowych](set-up-bar-code-masks.md)

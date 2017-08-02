@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Strona główna aplikacji mobilnej
-<a id="mobile-app-home-page" class="xliff"></a>
+# <a name="mobile-app-home-page"></a>Strona główna aplikacji mobilnej
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ W tym temacie opisano aplikację mobilną Microsoft Dynamics 365 for Unified Ope
 > [!NOTE]
 > Poprzednio aplikacja mobilnej nazywała się *Microsoft Dynamics 365 for Finance and Operations*.
 
-Przegląd
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Przegląd
 --------
 
 Aplikacja komórkowa umożliwia organizacji udostępnianie procesów biznesowych na urządzeniach przenośnych. Gdy administrator systemów informatycznych włączy komórkowe obszary robocze w organizacji, użytkownicy mogą się logować do aplikacji i natychmiast zacząć wykonywać procesy biznesowe na swoich urządzeniach komórkowych. Aplikacja mobilna zawiera następujące funkcje, które mogą pomóc zwiększyć wydajność pracy:
@@ -47,8 +45,7 @@ Aplikacja komórkowa umożliwia organizacji udostępnianie procesów biznesowych
 - Administratorzy IT i deweloperzy mogą łatwo projektować komórkowe obszary robocze za pomocą projektanta obszarów roboczych typu „wskaż i kliknij”, który jest zawarty w kliencie internetowym.
 - Administratorzy IT i deweloperzy mogą opcjonalnie optymalizować funkcje offline obszarów roboczych za pomocą struktury rozszerzania logiki biznesowej. Ponieważ dane są cały czas przetwarzane, gdy urządzenie jest w trybie offline, scenariusz użytkowania mobilnego pozostaje bogaty funkcjonalnie i płynny, nawet jeśli urządzenia nie mają stałej łączności z siecią.
 
-## Elementy aplikacji mobilnej
-<a id="elements-of-the-mobile-app" class="xliff"></a>
+## <a name="elements-of-the-mobile-app"></a>Elementy aplikacji mobilnej
 Nawigacja w aplikacji mobilnej jest podzielona na cztery podstawowe koncepcje: pulpit nawigacyjny, obszary robocze, strony i akcje. 
 
 [![Koncepcje nawigacyjne w aplikacji mobilnej](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
@@ -62,8 +59,7 @@ Nawigacja w aplikacji mobilnej jest podzielona na cztery podstawowe koncepcje: p
     - Przechodzenie do innych stron zawierających pokrewne dane, takie jak szczegóły jednostek lub wiersze.
     - Wyświetlanie listy **akcji** dostępnych dla tej strony. Akcje umożliwiają tworzenie nowych i edytowanie istniejących danych.
 
-## Projekt wdrażania
-<a id="implementation-process" class="xliff"></a>
+## <a name="implementation-process"></a>Projekt wdrażania
 Na poniższej ilustracji przedstawiono proces wdrażania mobilnych obszarów roboczych dostarczanych przez Microsoft i niestandardowych mobilnych obszarów roboczych. 
 
 ![Proces implementacji aplikacji mobilnych](./media/Mobile-implementation-process-5.png)

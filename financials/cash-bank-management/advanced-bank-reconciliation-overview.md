@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Zaawansowanego uzgodnienia konta bankowego — omówienie
-<a id="advanced-bank-reconciliation-overview" class="xliff"></a>
+# <a name="advanced-bank-reconciliation-overview"></a>Zaawansowanego uzgodnienia konta bankowego — omówienie
 
 [!include[banner](../includes/banner.md)]
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Omówienie zamówień odbiorców
-<a id="customer-orders-overview" class="xliff"></a>
+# <a name="customer-orders-overview"></a>Omówienie zamówień odbiorców
 
 [!include[banner](includes/banner.md)]
 
@@ -44,8 +43,7 @@ W świecie wielokanałowego handlu detalicznego wielu sprzedawców udostępnia o
 
 Sprzedawcy detaliczni wykorzystują również zamówienia odbiorców, aby minimalizować utraconą sprzedaż, jaką mogą powodować przestoje w zaopatrzeniu, ponieważ towar może być dostarczany lub odbierany w różnych miejscach i czasie.
 
-## Konfigurowanie zamówień odbiorców
-<a id="set-up-customer-orders" class="xliff"></a>
+## <a name="set-up-customer-orders"></a>Konfigurowanie zamówień odbiorców
 Oto kilka parametrów, które można skonfigurować na stronie **Parametry sieci sprzedaży** w celu zdefiniowania sposobu realizacji zamówień odbiorców:
 
 -   **Domyślne oprocentowanie lokaty** — Określ kwotę, jaką odbiorca musi wpłacić jako depozyt, zanim zamówienie zostanie potwierdzone. Domyślna kwota kaucji jest obliczana jako procent wartości zamówienia. W zależności od posiadanych uprawnień pracownik sklepu może być w stanie ręcznie zmienić tę kwotę za pomocą opcji **Zastąpienie wpłaty**.
@@ -57,10 +55,8 @@ Oto kilka parametrów, które można skonfigurować na stronie **Parametry sieci
     -   Opłaty są stosowane na poziomie nagłówka zamówienia sprzedaży, a gdy pewna ilość z wiersza produktu jest zwracana, maksymalny zwrot opłat transportowych dozwolony dla produktów i ilości nie może zostać określony w sposób pasujący dla wszystkich odbiorców detalicznych.
     -   Opłaty transportowe są ponoszone dla każdego zdarzenia wysyłki. Jeśli odbiorca zwraca produkty wiele razy, a polityka sprzedawcy detalicznego określa, że ponosi on koszty zwrotu opłat transportowych, zwracane opłaty transportowe będą wyższe, niż faktyczne opłaty transportowe.
 
-## Przepływ transakcji w zamówieniach odbiorców
-<a id="transaction-flow-for-customer-orders" class="xliff"></a>
-### Tworzenie zamówienia odbiorcy w aplikacji Retail Modern POS
-<a id="create-a-customer-order-in-retail-modern-pos" class="xliff"></a>
+## <a name="transaction-flow-for-customer-orders"></a>Przepływ transakcji w zamówieniach odbiorców
+### <a name="create-a-customer-order-in-retail-modern-pos"></a>Tworzenie zamówienia odbiorcy w aplikacji Retail Modern POS
 
 1.  Dodaj odbiorcę do transakcji.
 2.  Dodaj produkty do koszyka.
@@ -69,46 +65,39 @@ Oto kilka parametrów, które można skonfigurować na stronie **Parametry sieci
 5.  Kliknij opcję **Odbierz wybrane** lub **Pobierz wszystko**, aby zaznaczyć produkty, które mają zostać pobrane z bieżącego sklepu lub innego sklepu w określonym dniu.
 6.  Jeśli jest wymagana kaucja, pobierz ją.
 
-### Edytowanie istniejącego zamówienia odbiorcy
-<a id="edit-an-existing-customer-order" class="xliff"></a>
+### <a name="edit-an-existing-customer-order"></a>Edytowanie istniejącego zamówienia odbiorcy
 
 1.  Na stronie głównej kliknij opcję **Znajdź zamówienie**.
 2.  Znajdź i zaznacz zamówienie, które chcesz zmodyfikować. U dołu strony kliknij przycisk **Edytuj**.
 
-### Pobieranie zamówienia
-<a id="pick-up-an-order" class="xliff"></a>
+### <a name="pick-up-an-order"></a>Pobieranie zamówienia
 
 1.  Na stronie głównej kliknij opcję **Znajdź zamówienie**.
 2.  Zaznacz zamówienie, dla którego chcesz pobrać produkty. U dołu strony kliknij opcję **Pobieranie i pakowanie**.
 3.  Kliknij przycisk **Pobierz**.
 
-### Anulowanie zamówienia
-<a id="cancel-an-order" class="xliff"></a>
+### <a name="cancel-an-order"></a>Anulowanie zamówienia
 
 1.  Na stronie głównej kliknij opcję **Znajdź zamówienie**.
 2.  Zaznacz zamówienie, które chcesz anulować. U dołu strony kliknij przycisk **Anuluj**.
 
-#### Tworzenie zamówienia zwrotu
-<a id="create-a-return-order" class="xliff"></a>
+#### <a name="create-a-return-order"></a>Tworzenie zamówienia zwrotu
 
 1.  Na stronie głównej kliknij opcję **Znajdź zamówienie**.
 2.  Zaznacz zamówienie, którego produkty chcesz zwrócić, zaznacz fakturę do zamówienia, a następnie zaznacz wiersz produktu, który chcesz zwrócić.
 3.  U dołu strony kliknij przycisk **Zwróć zamówienie**.
 
-## Asynchroniczny przepływ transakcji w zamówieniach odbiorców
-<a id="asynchronous-transaction-flow-for-customer-orders" class="xliff"></a>
+## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Asynchroniczny przepływ transakcji w zamówieniach odbiorców
 Zamówienia odbiorców mogą być tworzone w aplikacji klienckiej punktu sprzedaży (POS) w trybie synchronicznym lub asynchronicznym.
 
-### Włączanie funkcji tworzenia zamówień odbiorców w trybie asynchronicznym
-<a id="enable-customer-orders-to-be-created-in-asynchronous-mode" class="xliff"></a>
+### <a name="enable-customer-orders-to-be-created-in-asynchronous-mode"></a>Włączanie funkcji tworzenia zamówień odbiorców w trybie asynchronicznym
 
 1.  Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktów sprzedaży** &gt; **Profile funkcji**.
 2.  Na skróconej karcie **Ogólne** w opcji **Utwórz zamówienie odbiorcy w trybie asynchronicznym** ustaw wartość **Tak**.
 
 Gdy opcja **Utwórz zamówienie odbiorcy w trybie asynchronicznym** jest ustawiona na **Tak**, zamówienia odbiorców są zawsze tworzone w trybie asynchronicznym, nawet jeśli jest dostępna usługa Retail Transaction Service (RTS). Jeśli ustawisz tę opcję na **Nie**, zamówienia odbiorców są zawsze tworzone w trybie synchronicznym przy użyciu usługi RTS. Po utworzeniu zamówień odbiorców w trybie asynchronicznym są one pobierane i wstawiane do modułu Handel detaliczny przez zadania ściągania (P). Odnośne zamówienia sprzedaży są tworzone w module Handel detaliczny podczas wykonywania operacji **Synchronizuj zamówienia** ręcznie lub w procesie wsadowym.
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Hybrydowe zamówienia odbiorców](hybrid-customer-orders.md)

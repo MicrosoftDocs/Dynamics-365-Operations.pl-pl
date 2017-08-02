@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Tworzenie katalogu biura obsługi
-<a id="create-a-call-center-catalog" class="xliff"></a>
+# <a name="create-a-call-center-catalog"></a>Tworzenie katalogu biura obsługi
 
 [!include[banner](includes/banner.md)]
 
@@ -43,8 +42,7 @@ W biurze obsługi można używać katalogów produktów do identyfikowania produ
 
 Przed zaakceptowaniem i opublikowaniem katalogu te opcje muszą być skonfigurowane.
 
-## Wymagania wstępne
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Wymagania wstępne
 Przed rozpoczęciem muszą być ukończone następujące zadania:
 
 -   Konfigurowanie produktów i asortymentów produktów.
@@ -55,28 +53,23 @@ Przed rozpoczęciem muszą być ukończone następujące zadania:
 -   Dodawanie biura obsługi do hierarchii organizacyjnej.
 -   Konfigurowanie lub modyfikowanie hierarchii organizacyjnej.
 
-## Tworzenie katalogu
-<a id="create-a-catalog" class="xliff"></a>
+## <a name="create-a-catalog"></a>Tworzenie katalogu
 Należy najpierw otworzyć katalog, dodać produkty do katalogu, a następnie przejrzeć i zaktualizować atrybuty dla produktów.
 
-## Weryfikacja katalogu
-<a id="validate-the-catalog" class="xliff"></a>
+## <a name="validate-the-catalog"></a>Weryfikacja katalogu
 Po zakończeniu konfigurowania katalogu, należy sprawdzić jej poprawność. Ten proces sprawdza, czy dane wymagane dla atrybutów kanału i atrybutów produktu są prawidłowe i kompletne, a katalog może zostać opublikowany.
 
-## Przesłanie katalogu zaopatrzenia do sprawdzania i zatwierdzenia
-<a id="submit-the-catalog-for-review-and-approval" class="xliff"></a>
+## <a name="submit-the-catalog-for-review-and-approval"></a>Przesłanie katalogu zaopatrzenia do sprawdzania i zatwierdzenia
 Po sprawdzeniu poprawności katalogu, można przesłać katalog do przeglądu i zatwierdzenia. Katalog musi zostać zatwierdzony zanim można go będzie opublikować. Istnieje możliwość konfigurowania przepływu pracy tak, aby katalogi były zatwierdzane automatycznie albo wymagały zatwierdzenia ręcznego.
 
-## Opcjonalnie: Dodaj kody źródłowe, produkty bezpłatne i skrypty
-<a id="optional-add-source-codes-free-products-and-scripts" class="xliff"></a>
+## <a name="optional-add-source-codes-free-products-and-scripts"></a>Opcjonalnie: Dodaj kody źródłowe, produkty bezpłatne i skrypty
 Możesz też dodać następujące elementy do katalogu głównego użytkownika rozmów. Te elementy są opcjonalne.
 
 -   **Kody źródłowe** mogą być używane przez firmy, które mogą używać kodów źródłowych do śledzenie odpowiedzi odbiorcy na określone katalogi. Kody źródłowe są często drukowane na tylnej okładce katalogu i są wprowadzane do zamówienia sprzedaży, gdy odbiorca dokonuje zakupu. Aby dodać kod źródłowy do katalogu, należy najpierw utworzyć rynek docelowy. Rynek docelowy zazwyczaj jest mapowany do własnej lub wynajmowanej listy wysyłkowej.
 -   **Produkty bezpłatne** to towary promocyjne dodawane bezpłatnie do zamówienia odbiorcy, gdy występuje odwołanie do katalogu.
 -   **Skrypty** mogą służyć do obsługi interakcji między pracownikiem i odbiorcą w kontekście katalogu lub produktu w katalogu.
 
-## Publikowanie katalogu
-<a id="publish-the-catalog" class="xliff"></a>
+## <a name="publish-the-catalog"></a>Publikowanie katalogu
 Opublikowanie katalogu dla biura obsługi oznacza finalizację informacji o produktach w katalogu. Publikacja wskazuje także, czy katalog jest gotowy do prowadzenia wszelkich dodatkowych akcji, które chcesz wykonać. Można na przykład utworzyć drukowany katalog. Katalogi można publikować ręcznie, ale można też robić to za pomocą zadania przetwarzania wsadowego, umożliwiającego publikację w oparciu o harmonogram. Przed opublikowaniem katalogu, musi on być sprawdzony i zatwierdzony. Aby zmienić katalog po jego opublikowaniu, można wycofać katalog, a następnie ponownie go opublikować.
 
 

@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurowanie globalnej książki adresowej
-<a id="configure-global-address-books" class="xliff"></a>
+# <a name="configure-global-address-books"></a>Konfigurowanie globalnej książki adresowej
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym artykule opisano zagadnienia i decyzje, które należy uwzględnić w procesie planowania przed utworzeniem i skonfigurowaniem globalnej książki adresowej i wszelkich dodatkowych książek adresowych w programie Microsoft Dynamics 365 for Finance and Operations. Niektóre z decyzji obejmują potwierdzenie decyzji dokonanych w innych obszarów produktu, na przykład w hierarchii organizacyjnej.
 
-Globalna książka adresowa
-<a id="global-address-book" class="xliff"></a>
+<a name="global-address-book"></a>Globalna książka adresowa
 -------------------
 
 Przed rozpoczęciem pracy z globalną książką adresową, należy określić wartości domyślne dla niej. Wartości te są następnie używane do wszelkich dodatkowych książek adresowych utworzone przez Ciebie. **Decyzje:**
@@ -49,8 +47,7 @@ Przed rozpoczęciem pracy z globalną książką adresową, należy określić w
 -   Czy po utworzeniu rekordu strony w globalnej książce adresowej chcesz używać domyślnego typu strony, osoby lub organizacji?
 -   Które role użytkownik powinny mieć dostęp do prywatnych adresów i danych kontaktowych rekordów stron?
 
-## Dodatkowe książki adresowe
-<a id="additional-address-books" class="xliff"></a>
+## <a name="additional-address-books"></a>Dodatkowe książki adresowe
 Po utworzeniu w globalnej książki adresowej można utworzyć dodatkowe książki adresowe, np. oddzielne książki adresowe dla każdej firmy w organizacji lub dla każdego wiersza biznesowego. Na przykład firma Fabrikam jest międzynarodową organizacją mającą wiele firm i wiele obszarów działalności. Fabrikam planuje utworzyć książkę adresową dla każdego rodzaju działalności. Dla obszarów działalności, jakie pojawiają się w więcej niż jednej lokalizacji, takich jak narzędzia pneumatyczne, Fabrikam planuje utworzyć książkę adresową dla każdej lokalizacji. Chris, kierownik IT w firmie Fabrikam, utworzyć poniższą listę książek adresowych, które są wymagane. Ta lista zawiera również rekordy stron, które każda książka adresowa musi zawierać.
 
 -   **Umowy dotyczące sektora publicznego (PubSC)** — rekordy stron dla wszystkich stron, które uczestniczą w umowach sektora publicznego, które posiada firma Fabrikam.
@@ -63,8 +60,7 @@ Po utworzeniu w globalnej książki adresowej można utworzyć dodatkowe książ
 
 -   Ile dodatkowych książek adresowych zostało utworzonych?
 
-### Zabezpieczenia książki adresowej
-<a id="address-book-security" class="xliff"></a>
+### <a name="address-book-security"></a>Zabezpieczenia książki adresowej
 
 W dowolnym momencie można utworzyć książki adresowe i w dowolnym momencie można również ustawić parametry zabezpieczeń książki adresowej. Ustawianie uprawnień zabezpieczeń dla książki adresowej nie jest konieczne, ale w przeciwnym wypadku wszyscy pracownicy w firmie mogą wyświetlić wszystkie rekordy jednostek w tej książce adresowej. Można ustawić uprawnienia zabezpieczeń do rekordów stron za pomocą książki adresowej. Uprawnienia zabezpieczeń są oparte na zespołach. Takie rozwiązanie gwarantuje, że tylko pracownicy, którzy są przypisani do zespołu, mają dostęp do książki adresowej i mogą wyświetlić rekordy stron w tej książce adresowej. Musisz wybrać zespoły, które mają dostęp do każdej z książek adresowych. Dla każdej książki adresowej można ustawić uprawnienia zabezpieczeń, które przyznają lub blokują dostęp do określonych zespołów. Po udostępnieniu zespołowi uprawnień dostępu do książki adresowej jego członkowie mogą wyświetlać jej rekordy. Jeśli nie przyznasz zespołowi dostępu do książki adresowej, członkowie zespołu nie mogą wyświetlać książki adresowej ani jej zawartości. **Decyzja:**
 

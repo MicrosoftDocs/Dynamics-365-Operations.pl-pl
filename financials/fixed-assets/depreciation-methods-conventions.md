@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Metody amortyzacji i konwencje
-<a id="depreciation-methods-and-conventions" class="xliff"></a>
+# <a name="depreciation-methods-and-conventions"></a>Metody amortyzacji i konwencje
 
 [!include[banner](../includes/banner.md)]
 
@@ -68,8 +67,7 @@ Można wybrać jedną z następujących metod amortyzacji.
 
 
 
-Informacje dodatkowe
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Informacje dodatkowe
 --------
 
 [Amortyzacja środka trwałego](fixed-asset-depreciation.md)

@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Zarządzanie zmianami i szufladami kasowymi
-<a id="shift-and-cash-drawer-management" class="xliff"></a>
+# <a name="shift-and-cash-drawer-management"></a>Zarządzanie zmianami i szufladami kasowymi
 
 [!include[banner](includes/banner.md)]
 
@@ -38,12 +37,10 @@ W tym artykule wyjaśniono, jak skonfigurować i używać dwóch typów zmian w 
 
 Istnieją dwa typy zmian stosowanych w punktach sprzedaży detalicznej (POS): autonomiczne i wspólne. Zmiany autonomiczne mogą być wykorzystywane tylko przez jednego pracownika na raz. Zmiany wspólne mogą być wykorzystywane przez wielu użytkowników w wielu miejscach. W związku z tym w praktyce są używane do tworzenia pojedynczych zmian dla wielu pracowników w sklepie.
 
-## Zmiany autonomiczne
-<a id="standalone-shifts" class="xliff"></a>
+## <a name="standalone-shifts"></a>Zmiany autonomiczne
 Zmiany autonomiczne są używane w tradycyjnych scenariuszach stacjonarnych punktów sprzedaży, gdzie gotówka jest uzgadniana niezależnie w każdej kasie POS. Na przykład w środowisku sklepu spożywczego zazwyczaj istnieje kilka stacjonarnych kas i do każdej jest przypisany kasjer. W takim przypadku każda kasa prawdopodobnie wykorzystuje zmianę autonomiczną, a kasjer jest odpowiedzialny za kasę rejestrującą lub fizyczne środki pieniężne w tej kasie. Autonomiczna zmiana obejmuje wszystkie działania w tej kasie podczas zmiany kasjera. Z kolei działania mogą obejmować wprowadzenie kwoty otwarcia do kasy rejestrującej, wszystkie czynności usuwania i dodawania gotówki poprzez operacje takie jak przekazanie pieniędzy do banku czy przyjęcie do kasy oraz deklarowanie stanu kasy (środków płatniczych) na koniec zmiany.
 
-### Konfigurowanie zmiany autonomicznej
-<a id="set-up-a-stand-alone-shift" class="xliff"></a>
+### <a name="set-up-a-stand-alone-shift"></a>Konfigurowanie zmiany autonomicznej
 
 Zmianę autonomiczną wyznacza się na poziomie szuflady kasowej. Poniższa procedura przedstawia sposób konfigurowania autonomicznej zmiany w kasie w punkcie sprzedaży.
 
@@ -58,8 +55,7 @@ Zmianę autonomiczną wyznacza się na poziomie szuflady kasowej. Poniższa proc
 9.  Kliknij kolejno opcje **Handel detaliczny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogram dystrybucji**.
 10. Wybierz harmonogram dystrybucji **1090**, a następnie kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 
-### Używanie zmiany autonomicznej
-<a id="use-a-stand-alone-shift" class="xliff"></a>
+### <a name="use-a-stand-alone-shift"></a>Używanie zmiany autonomicznej
 
 1.  Zaloguj się w kasie POS.
 2.  Jeśli nie jest otwarta żadna zmiana, wybierz opcję **Otwórz nową zmianę**.
@@ -71,12 +67,10 @@ Zmianę autonomiczną wyznacza się na poziomie szuflady kasowej. Poniższa proc
 
 **Uwaga:** Podczas zmiany są też dostępne inne operacje, w zależności od procesów biznesowych stosowanych na miejscu. Za pomocą operacji **Przekazanie pieniędzy do sejfu**, **Przekazanie pieniędzy do banku** i **Pobranie środków płatniczych** można usunąć pieniądze z kasy rejestrującej w ciągu dnia lub przed zamknięciem zmiany. Jeśli w kasie rejestrującej skończy się gotówka, można użyć operacji **Przyjęcie do kasy**, aby dodać gotówkę do szuflady.
 
-## Zmiany wspólne
-<a id="shared-shifts" class="xliff"></a>
+## <a name="shared-shifts"></a>Zmiany wspólne
 Zmiany wspólne są wykorzystywane w środowisku, gdzie wielu kasjerów współużytkuje szufladę kasową lub zestaw szuflad kasowych przez cały dzień pracy. Zazwyczaj wspólne zmiany stosuje się w mobilnych punktach sprzedaży. W takim środowisku kasjerzy nie są przypisywani jako osoby odpowiedzialne za konkretne kasy. Zamiast tego wszyscy kasjerzy muszą mieć możliwość realizowania sprzedaży i dodawania gotówki do najbliższej szuflady kasowej. W tym scenariuszu szuflady kasowe współużytkowane przez wszystkich kasjerów należą do wspólnej zmiany. Wszystkie szuflady kasowe we wspólnej zmianie należą do tej samej zmiany na potrzeby wykonywania działań związanych z zarządzaniem gotówką podczas tej zmiany. W związku z tym kwota początkowa zmiany powinna być sumą wszystkich środków pieniężnych we wszystkich szufladach kasowych należących do wspólnej zmiany. Analogicznie deklaracja środków płatniczych będzie sumą wszystkich środków pieniężnych we wszystkich szufladach kasowych należących do wspólnej zmiany. **Uwaga:** W każdym sklepie może być otwarta jednocześnie tylko jedna wspólna zmiana. W tym samym sklepie można używać zmian wspólnych i autonomicznych.
 
-### Konfigurowanie zmiany wspólnej
-<a id="set-up-a-shared-shift" class="xliff"></a>
+### <a name="set-up-a-shared-shift"></a>Konfigurowanie zmiany wspólnej
 
 1.  Kliknij kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktów sprzedaży** &gt; **Profile sprzętu**.
 2.  Wybierz profil sprzętu, który ma być używany dla wspólnej zmiany.
@@ -89,8 +83,7 @@ Zmiany wspólne są wykorzystywane w środowisku, gdzie wielu kasjerów współu
 9.  Kliknij kolejno opcje **Handel detaliczny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogram dystrybucji**.
 10. Wybierz harmonogram dystrybucji **1090**, a następnie kliknij przycisk **Uruchom teraz**, aby zsynchronizować zmiany z punktem sprzedaży.
 
-### Używanie zmiany wspólnej
-<a id="use-a-shared-shift" class="xliff"></a>
+### <a name="use-a-shared-shift"></a>Używanie zmiany wspólnej
 
 1.  Zaloguj się w kasie POS.
 2.  Jeśli kasa POS nie jest jeszcze podłączona do stacji sprzętowej, zaznacz opcję **Operacja bez szuflady**, a następnie wybierz operację **Wybierz stację sprzętową**, aby uaktywnić stację sprzętową dla wspólnej zmiany. Ten krok jest wymagany tylko podczas dodawania kasy po raz pierwszy do środowiska wspólnej zmiany.

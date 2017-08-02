@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Ocenianie rentowności odbiorców i produktów
-<a id="assess-customer-and-product-profitability" class="xliff"></a>
+# <a name="assess-customer-and-product-profitability"></a>Ocenianie rentowności odbiorców i produktów
 
 [!include[banner](includes/banner.md)]
 

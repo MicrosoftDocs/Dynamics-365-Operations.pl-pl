@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Monitorowanie wydajności sprzedaży i marży
-<a id="monitor-sales-and-margin-performance" class="xliff"></a>
+# <a name="monitor-sales-and-margin-performance"></a>Monitorowanie wydajności sprzedaży i marży
 
 [!include[banner](includes/banner.md)]
 

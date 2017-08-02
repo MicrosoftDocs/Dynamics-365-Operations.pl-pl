@@ -24,8 +24,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Wdrażanie do pracy — strona główna
-<a id="onboarding-home-page" class="xliff"></a>
+# <a name="onboarding-home-page"></a>Wdrażanie do pracy — strona główna
 
 [!include[banner](../includes/banner.md)]
 

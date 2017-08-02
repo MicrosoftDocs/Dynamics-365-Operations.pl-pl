@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Korekty ceny i rabaty
-<a id="price-adjustments-and-discounts" class="xliff"></a>
+# <a name="price-adjustments-and-discounts"></a>Korekty ceny i rabaty
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Ten artykuł zawiera informacje o korektach ceny i rabatach w programie Microsof
 
 W module Dynamics 365 for Retail użytkownik może dokonywać korygowania cen na produkty, a także konfigurowania rabatów, które są stosowane do wiersza towaru lub transakcji w punkcie sprzedaży, w zamówieniu sprzedaży biura obsługi lub w zamówieniu online. Do grup cen mogą być podłączone zarówno korekty ceny i rabaty. Zarówno w przypadku korekty ceny, jak i rabatów, można określić pojedynczy datę rozpoczęcia i datę zakończenia lub okres cykliczny, kod rabatu i kilka dodatkowych atrybutów. Korekty ceny i rabaty mogą dotyczyć produktów, wariantów lub kategorii. W przypadku zastosowania więcej niż jednego rabatu do produktu odbiorca może otrzymać jeden rabat lub rabat połączony. Program Dynamics 365 for Retail automatycznie zastosuje rabat lub kombinację rabatów oferującą odbiorcy najlepszą cenę. Podczas ustawiania korekty ceny lub rabatu należy sprawdzić, czy grupy cen są przypisane do właściwych kanałów, katalogów, przynależności lub programów lojalnościowych, do których ma mieć zastosowanie rabat. Ponadto jeśli chcesz automatycznie wygenerować identyfikator rabatu, możesz ustawić sekwencje numerów na stronie **Parametry handlu detalicznego** zanim zdefiniujesz nowy rabat lub korektę ceny lub rabat. **Uwaga:** Korekty ceny lub rabaty można usunąć. Jednak informacje statystyczne zostaną utracone.
 
-### Typy rabatów
-<a id="types-of-discounts" class="xliff"></a>
+### <a name="types-of-discounts"></a>Typy rabatów
 
 Istnieją cztery typy rabatów sieci sprzedaży:
 

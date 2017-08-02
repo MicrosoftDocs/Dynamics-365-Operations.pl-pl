@@ -24,17 +24,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfiguracja kompensacji odbiorców oraz dostawców
-<a id="set-up-customer-and-vendor-compensation" class="xliff"></a>
+# <a name="set-up-customer-and-vendor-compensation"></a>Konfiguracja kompensacji odbiorców oraz dostawców
 Ten temat zawiera informacje, które pomogą wykonywać proces kompensat na kontach dostawców i odbiorców dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce.
 
 Często użytkownicy w Europie Wschodniej muszą rozliczać kwoty należności i zobowiązań dla firmy, która jest zarejestrowana w systemie równocześnie jako odbiorca i dostawca. Ten proces rozliczania wykorzystuje prawną procedurę znaną jako *kompensata* lub *netowanie* (netting). 
 
-## Włączanie kompensowania
-<a id="enabling-compensation" class="xliff"></a>
+## <a name="enabling-compensation"></a>Włączanie kompensowania
 
-### Konfigurowanie notek kompensacyjnych
-<a id="set-up-compensation-notes" class="xliff"></a>
+### <a name="set-up-compensation-notes"></a>Konfigurowanie notek kompensacyjnych
 Można skonfigurować notki, które będą drukowane w dokumentach kompensaty. Stronę **Notatki** można otworzyć ze strony **Ustawienia** > **Formularze** w modułach Rozrachunki z odbiorcami, Rozrachunki z dostawcami lub Zarządzanie projektami i ich księgowanie.
 
 Tworząc nową notatkę formularza, można wybrać część dokumentu kompensaty, której notatka ma dotyczyć:
@@ -52,16 +49,13 @@ Notatka formularza jest oparta na znaku matematycznym kwoty salda w raporcie o k
 - Jeśli kwota salda jest mniejsza niż 0 (zero), jest drukowana notka o kompensacie zobowiązań.
 - Jeśli kwota salda jest równa kwocie w dokumencie kompensaty, jest drukowana notka o saldzie.
 
-### Konfigurowanie dostawcy i odbiorcy
-<a id="set-up-a-vendor-and-a-customer" class="xliff"></a>
+### <a name="set-up-a-vendor-and-a-customer"></a>Konfigurowanie dostawcy i odbiorcy
 Firma lub osoba fizyczna może być odbiorcą lub dostawcą Twojej firmy. Opcja kompensaty jest dostępna tylko dla stron powiązanych z Twoją firmą. Aby skonfigurować powiązanie, otwórz szczegóły konta odbiorcy lub dostawcy, a następnie na karcie **Różne** w grupie pól **Przekaz** zaznacz konto powiązanej strony: **Konto odbiorcy** dla głównego dostawcy lub **Konto dostawcy** dla głównego odbiorcy.
 
-### Tworzenie arkusza kompensaty
-<a id="create-a-compensation-journal" class="xliff"></a>
+### <a name="create-a-compensation-journal"></a>Tworzenie arkusza kompensaty
 Opcjonalnie można utworzyć arkusza, który będzie używany do przedstawiania propozycji kompensaty. Można zaksięgować transakcje z propozycji oraz dodatkowo wydrukować raport o kompensacie. Wybierz kolejno opcje **Księga główna** > **Wpisy w arkuszu** > **Arkusze finansowe**.
 
-## Rejestrowanie transakcji
-<a id="record-transactions" class="xliff"></a>
+## <a name="record-transactions"></a>Rejestrowanie transakcji
 Zazwyczaj wszystkie faktury zarejestrowane dla skojarzonych kont odbiorców i dostawców są dostępne i mogą być używane do kompensaty: 
 
  - Faktur sprzedaży (**Rozrachunki z odbiorcami** > **Zamówienia** > **Wszystkie zamówienia sprzedaży**)
@@ -71,8 +65,7 @@ Zazwyczaj wszystkie faktury zarejestrowane dla skojarzonych kont odbiorców i do
 
 W procesie kompensaty można również używać dowolnych otwartych transakcji z dostawcami i odbiorcami. Transakcje te obejmują płatności lub faktury rejestrowane za pomocą arkuszy. 
 
-## Przetwarzanie dokumentu kompensaty
-<a id="process-a-compensation-letter" class="xliff"></a>
+## <a name="process-a-compensation-letter"></a>Przetwarzanie dokumentu kompensaty
 Jeśli masz otwarte transakcje z dostawcami i odbiorcami, można rozpocząć proces kompensaty. Otwórz stronę **Wszyscy odbiorcy** lub **Wszyscy dostawcy**, a następnie kliknij przycisk **Transakcje** i przejrzyj wszystkie transakcje ze stronami. Zaznacz jedną lub więcej otwartych transakcji (transakcje mające saldo większe lub mniejsze niż 0 [zero]). Następnie kliknij przycisk **Kompensata**, a zostanie otwarta **Kompensata transakcji odbiorcy/dostawcy**. Ta strona zawiera dwie siatki: jedną dla transakcji z odbiorcami i jedną dla transakcji z dostawcami. Jedna siatka będzie zawierała wybrane przez Ciebie transakcje. Druga siatka pokaże transakcje dostępne dla kompensaty. Można zaznaczyć jedną lub więcej transakcji do skompensowania. Po zakończeniu wybierania transakcji kliknij przycisk **Utwórz kompensatę**. W wyświetlonym oknie dialogowym można ustawić następujące pola:
 
  - **Arkusz** — wybierz nazwę, pod jaką ma zostać utworzony nowy arkusz.
@@ -82,13 +75,11 @@ Jeśli masz otwarte transakcje z dostawcami i odbiorcami, można rozpocząć pro
 
 Jeśli ustawisz wartości jednocześnie w polach **Arkusz** i **Arkusz z numerem partii**, numer ma priorytet. W związku z tym transakcje będą tworzone w tym arkuszu, a nie w nowym arkuszu.
 
-## Przetwarzanie kompensaty
-<a id="process-compensation" class="xliff"></a>
+## <a name="process-compensation"></a>Przetwarzanie kompensaty
 Gdy utworzysz propozycje kompensaty w arkuszu i propozycja zostanie następnie zaakceptowana przez drugą stronę, można przejść do arkusza finansowego i zaksięgować transakcje w celu zarejestrowania kompensat w księdze głównej. Jeśli trzeba ponownie wydrukować raport o kompensacie, należy kliknąć opcję **Drukuj** > **Dokument kompensaty** na stronie wierszy arkusza finansowego.
 
 
-## Często zadawane pytania
-<a id="frequently-asked-questions" class="xliff"></a>
+## <a name="frequently-asked-questions"></a>Często zadawane pytania
 **P: Czy można skompensować transakcje równocześnie dla wielu kont dostawców i odbiorców?**
 
 **O:** Może istnieć relacja przekazu między jednym kontem dostawcy i jednym kontem odbiorcy. W związku z tym jednocześnie można przetwarzać kompensatę tylko między pojedynczymi kontami.

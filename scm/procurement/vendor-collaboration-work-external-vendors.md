@@ -25,8 +25,7 @@ ms.lasthandoff: 06/15/2017
 
 ---
 
-# Współpraca z zewnętrznymi dostawcami
-<a id="vendor-collaboration-with-external-vendors" class="xliff"></a>
+# <a name="vendor-collaboration-with-external-vendors"></a>Współpraca z zewnętrznymi dostawcami
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,8 +40,7 @@ Aby uzyskać więcej informacji o tym, jak dostawcy mogą wykorzystywać portal 
 
 Aby uzyskać więcej informacji o inicjowaniu obsługi nowych użytkowników portalu współpracy z dostawcami, zobacz [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md).
 
-## Definiowanie informacji wyświetlanych dostawcom podczas odpowiadania na zamówienia zakupu
-<a id="define-the-information-that-is-shown-to-vendors-when-they-respond-to-pos" class="xliff"></a>
+## <a name="define-the-information-that-is-shown-to-vendors-when-they-respond-to-pos"></a>Definiowanie informacji wyświetlanych dostawcom podczas odpowiadania na zamówienia zakupu
 Kiedy dostawcy odpowiadają na wysłane im zamówienie zakupu, widzą okno komunikatu, w którym muszą potwierdzić zamiar zaakceptowania zamówienia zakupu, odrzucenia go lub zaakceptowania ze zmianami. Informacje niezbędne do pokazania dostawcy w tym momencie mogą być specyficzne dla firmy, dlatego można określić tekst, który będzie wyświetlany w każdym z trzech komunikatów potwierdzenia. Na przykład tekst może informować dostawcę o następnych krokach w procesie lub o warunkach i postanowieniach.  
 
 Aby określić tekst, który jest pokazywany w odpowiedzi na zamówienie zakupu:
@@ -54,34 +52,28 @@ Aby określić tekst, który jest pokazywany w odpowiedzi na zamówienie zakupu:
 
 Jeśli zachodzi konieczność dodania komunikatów w więcej niż jednym języku, utwórz różne komunikaty i dla każdego określ odpowiedni kod języka. Komunikat wyświetlany dostawcy będzie w języku, którego ten używa.
 
-## Ustawianie opcji współpracy z dostawcami dla określonego dostawcy
-<a id="set-the-vendor-collaboration-options-for-a-specific-vendor" class="xliff"></a>
+## <a name="set-the-vendor-collaboration-options-for-a-specific-vendor"></a>Ustawianie opcji współpracy z dostawcami dla określonego dostawcy
 Ustawienia ogólne współpracy z dostawcami w programie Finance and Operations są konfigurowane przez administratora. Na przykład administrator określa, które role zabezpieczeń są dostępne dla wszystkich dostawców, z którymi współpracujesz. Istnieją też ustawienia, które są różne dla różnych dostawców, oraz trzeba ustawić następujące opcje:
 -   Włączyć współpracę z dostawcami.
 -   Zdecydować, czy dostawca ma widzieć informacje o cenach.
 
-### Włączanie współpracy z dostawcami
-<a id="enable-vendor-collaboration" class="xliff"></a>
+### <a name="enable-vendor-collaboration"></a>Włączanie współpracy z dostawcami
 
 Zanim będzie można tworzyć konta użytkowników u zewnętrznego dostawcy, należy skonfigurować konto dostawcy, aby umożliwić mu używanie portalu współpracy z dostawcami. W tym celu na stronie **Dostawcy** na karcie **Ogólne** ustaw pole **Aktywacja współpracy** jako aktywne. Dostępne są dwie opcje do wyboru:
 
 -   **Aktywna (zamówienie zakupu zostało automatycznie potwierdzone)** — zamówienia zakupu są automatycznie potwierdzane, gdy dostawca akceptuje je bez zmian.
 -   **Aktywna (zamówienie zakupu nie zostało automatycznie potwierdzone)** — zamówienia zakupu muszą zostać ręcznie potwierdzone przez Twoją organizację po ich zaakceptowaniu przez dostawcę.
 
-### Decydowanie, czy dostawca ma widzieć informacje o cenach
-<a id="decide-whether-you-want-the-vendor-to-see-price-information" class="xliff"></a>
+### <a name="decide-whether-you-want-the-vendor-to-see-price-information"></a>Decydowanie, czy dostawca ma widzieć informacje o cenach
 
 Jeśli za pośrednictwem interfejsu współpracy chcesz udostępnić informacje o cenach, takie jak cena jednostkowa, rabaty i opłaty, należy w koncie dostawcy w **Ceny/kwota zamówienia zakupu** ustawić wartość **Tak**. Ta opcja jest dostępna na karcie **Ustawienia domyślne zamówienia zakupu**.
 
-## Praca z zamówieniami zakupu podczas używania portalu współpracy z dostawcami
-<a id="work-with-pos-when-using-vendor-collaboration" class="xliff"></a>
-### Wysyłanie zamówienia zakupu do dostawcy
-<a id="sending-a-po-to-the-vendor" class="xliff"></a>
+## <a name="work-with-pos-when-using-vendor-collaboration"></a>Praca z zamówieniami zakupu podczas używania portalu współpracy z dostawcami
+### <a name="sending-a-po-to-the-vendor"></a>Wysyłanie zamówienia zakupu do dostawcy
 
 Zamówienia zakupu są przygotowywane w programie Finance and Operations. Gdy zamówienie zakupu ma stan **Zatwierdzone**, można je wysłać do dostawcy za pomocą akcji **Wyślij w celu potwierdzenia** dostępnej na stronie **Zamówienie zakupu**. Stan zamówienia zakupu zmieni się na **W trakcie analizy zewnętrznej**. Po wysłaniu zamówienia zakupu dostawca widzi je na stronie **Zamówienia zakupu do przeglądu** w interfejsie współpracy z dostawcami. Dostawca może zaakceptować zamówienie, odrzucić lub zasugerować jego modyfikację. Dostawca może również dodać komentarze w celu przekazania informacji, np. o zmianach w zamówieniu zakupu. Jeśli chcesz zwrócić uwagę dostawcy na nowe zamówienie zakupu, możesz je wysłać e-mailem z systemu zarządzania drukowaniem.
 
-### Potwierdzanie i akceptacja zamówienia zakupu przez dostawcę
-<a id="confirmation-and-acceptance-of-the-po-by-the-vendor" class="xliff"></a>
+### <a name="confirmation-and-acceptance-of-the-po-by-the-vendor"></a>Potwierdzanie i akceptacja zamówienia zakupu przez dostawcę
 
 Gdy dostawca zaakceptuje zamówienie zakupu, może ono zostać potwierdzone automatycznie lub wymagać ręcznego potwierdzenia. Zależy to od tego, czy dla dostawcy w polu **Aktywacja dostawcy** ustawiono opcję **Aktywna (zamówienie zakupu zostało automatycznie potwierdzone)**, czy **Aktywna (zamówienie zakupu nie zostało automatycznie potwierdzone)**.  
 
@@ -133,23 +125,19 @@ Można użyć obszaru roboczego **Przygotowanie** **zamówienia zakupu** do moni
 -   W trakcie przeglądu zewnętrznego (wymaga wykonania akcji).
 -   W trakcie analizy zewnętrznej, oczekuje na odpowiedź dostawcy.
 
-### Zmiana zamówienia zakupu
-<a id="changing-a-po" class="xliff"></a>
+### <a name="changing-a-po"></a>Zmiana zamówienia zakupu
 
 Aby zmodyfikować zamówienie zakupu, na które już odpowiedziano, należy wysłać nowe zamówienie zakupu do dostawcy. Nowe zamówienie będzie miało sufiks wersji wskazujący, że jest to zmodyfikowana wersja zamówienia zakupu, które zostało wcześniej przekazane. Na stronie **Historia potwierdzeń zamówień zakupu przez dostawcę** Ty i Twoi dostawcy możecie śledzić historię każdego zamówienia. Poprzednio potwierdzona wersja zamówienia zakupu pozostaje na liście potwierdzonych zamówień zakupu do czasu potwierdzenia nowego zamówienia zakupu.
 
-### Anulowanie zamówienia zakupu
-<a id="cancelling-a-po" class="xliff"></a>
+### <a name="cancelling-a-po"></a>Anulowanie zamówienia zakupu
 
 Po anulowaniu zamówienia zakupu jego stan zmienia się na **Zatwierdzone**. Zamówienie zakupu trzeba odesłać dostawcy za pośrednictwem portalu, tak aby dostawca mógł potwierdzić lub odrzucić anulowanie. Po potwierdzeniu anulowania zamówienie zakupu pojawi się na liście potwierdzonych zamówień zakupu dostawcy jako **Anulowane**.
 
-### Dodawanie załączników do zamówienia zakupu
-<a id="adding-attachments-to-a-po" class="xliff"></a>
+### <a name="adding-attachments-to-a-po"></a>Dodawanie załączników do zamówienia zakupu
 
 Za pomocą systemu zarządzania dokumentami można do zamówienia zakupu dodawać załączniki, takie jak pliki, obrazy i notatki. Załączniki typu **Zewnętrzne** będą widoczne dla dostawcy po wysłaniu mu zamówienia zakupu.
 
-## Aktualizowanie zamówienia zakupu o zmiany sugerowane przez dostawcę
-<a id="update-the-po-when-a-vendor-suggests-changes" class="xliff"></a>
+## <a name="update-the-po-when-a-vendor-suggests-changes"></a>Aktualizowanie zamówienia zakupu o zmiany sugerowane przez dostawcę
 Gdy dostawca odpowie na zamówienie zakupu i zaproponuje zmiany, następnym krokiem jest zareagowanie na odpowiedź.
 W obszarze roboczym **Przygotowanie zamówienia zakupu** na liście W trakcie przeglądu zewnętrznego (wymaga wykonania akcji) możesz zidentyfikować zamówienie, na które dostawca odpowiedział, ponieważ jest oznaczone jako zaakceptowane ze zmianami. Na liście W trakcie przeglądu zewnętrznego (wymaga wykonania akcji) można również przejść do odpowiedzi dostawcy. W odpowiedzi dostawca może zmienić następujące informacje w nagłówku.
  
@@ -178,12 +166,10 @@ Nie wszystkimi sugerowanymi zmianami można zaktualizować zamówienie zakupu. T
 Wiersz o stanie **Zaakceptowane** ma potwierdzoną datę dostawy, która zaktualizuje zamówienie zakupu podczas wykonywania operacji **Przetwórz aktualizację zamówienia zakupu**. Uwagi i załączniki nie będą automatycznie przenoszone do bieżącego zamówienia zakupu. Należy zauważyć, że w przypadku aktualizacji bieżącego zamówienia zakupu za pomocą operacji **Przetwórz aktualizację zamówienia zakupu** umowy handlowe nie będą ponownie weryfikowane w wierszach zamówienia zakupu.
 
 
-## Stany i wersje zamówień zakupu
-<a id="po-statuses-and-versions" class="xliff"></a>
+## <a name="po-statuses-and-versions"></a>Stany i wersje zamówień zakupu
 W tej sekcji opisano różne stany, które może przyjmować zamówienie zakupu, aż do etapu potwierdzenia. Wyjaśniono również, w których momentach nowe wersje zamówienia zakupu będą dostępne dla dostawcy. Zachowanie to się różni w zależności od tego, czy do zamówień sprzedaży jest stosowany proces zarządzania zmianami. 
 
-### Wersji i stany, jeśli nie jest używane zarządzanie zmianami
-<a id="versions-and-statuses-if-you-dont-use-change-management" class="xliff"></a>
+### <a name="versions-and-statuses-if-you-dont-use-change-management"></a>Wersji i stany, jeśli nie jest używane zarządzanie zmianami
 
 W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może przechodzić zamówienie zakupu.
 
@@ -204,8 +190,7 @@ Dostawcy nie muszą potwierdzać zamówień zakupu w interfejsie współpracy z 
 >[!NOTE]
 >Wersją zamówienia zakupu dostępną dla innych procesów w programie Dynamics 365 for Finance and Operations jest zawsze najnowsza wersja, nawet jeśli jeszcze nie została zarejestrowana w interfejsie współpracy z dostawcami.
 
-### Wersji i stany, jeśli jest używane zarządzanie zmianami
-<a id="versions-and-statuses-if-you-use-change-management" class="xliff"></a>
+### <a name="versions-and-statuses-if-you-use-change-management"></a>Wersji i stany, jeśli jest używane zarządzanie zmianami
 
 Jeśli dla zamówień zakupu włączono funkcję zarządzania zmianami, zamówienie przejdzie przez przepływ pracy zatwierdzania aż do osiągnięcia stanu **Zatwierdzone**. Ten proces nie jest widoczny dla dostawcy.  
 
@@ -218,8 +203,7 @@ W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może p
 
 | Zamówienie zakupu jest wysyłane do procesu zatwierdzania. (Proces zatwierdzania jest procesem wewnętrznym, w którym dostawca nie uczestniczy). | Stan zmienia się z **Wersja robocza** na **W trakcie przeglądu** i dalej na **Zatwierdzenie**, jeśli zamówienie zakupu nie zostanie odrzucone w procesie zatwierdzania. Zatwierdzone zamówienie zakupu jest rejestrowane jako wersja.                                                                                                                                                                                                                     | | Zamówienie zakupu jest wysyłane do dostawcy                                                                                  | Wersja jest rejestrowana w interfejsie współpracy z dostawcami, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**.                                                                                                                                                                                                                                                                       | | Wprowadzasz kilka zmian, o które prosił dostawca, ręcznie lub za pomocą akcji w odpowiedzi, i w ten sposób aktualizujesz zamówienie zakupu.                                                       | Stan zostaje zmieniony z powrotem na **Wersja robocza**.                                                                                                                                                                                                                                                                                                                                                    | | Zamówienie zakupu jest wysyłane z powrotem do procesu zatwierdzania.                                                            | Stan zmienia się z **Wersja robocza** na **W trakcie przeglądu** i dalej na **Zatwierdzenie**, jeśli zamówienie zakupu nie zostanie odrzucone w procesie zatwierdzania. Alternatywnie można skonfigurować system w taki sposób, żeby modyfikacje w określonych polach nie wymagały ponownego zatwierdzania. W takim przypadku stan zmienia się najpierw na **Wersja robocza**, a następnie jest automatycznie aktualizowany do wartości **Zatwierdzone**. Zatwierdzone zamówienie zakupu jest rejestrowane jako nowa wersja. | | Wysyłasz nową wersję zamówienia zakupu do dostawcy.                                                             | Nowa wersja jest rejestrowana w interfejsie współpracy z dostawcami, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**.                                                                                                                                                                                                                                                                   | | Dostawca zatwierdza nową wersję zamówienia zakupu.                                                                | Stan zmienia się na **Potwierdzone** automatycznie lub po otrzymaniu odpowiedzi od dostawcy i następnie ręcznym potwierdzeniu.                                                                                                                                                                                                                                                     |
 
-## Udostępnianie informacji o zapasach konsygnacyjnych
-<a id="share-information-about-consignment-inventory" class="xliff"></a>
+## <a name="share-information-about-consignment-inventory"></a>Udostępnianie informacji o zapasach konsygnacyjnych
 Jeśli używasz zapasów konsygnacyjnych, dostawcy mogą w interfejsie współpracy z dostawcami wyświetlać informacje na następujących stronach:
 
 -   **Zamówienia zakupu zużywające zapasy konsygnacyjne** — Zamówienia zakupu dla zapasów konsygnacyjnych są generowane po zmianie właściciela zapasów z dostawcy na Twoją firmę. W tym samym momencie jest księgowany dokument przyjęcia produktów. Te zamówienia zakupu konsygnacyjnego są wyświetlane tylko na stronie **Zamówienia zakupu zużywające zapasy konsygnacyjne**. Nie są one umieszczane na stronie **Wszystkie potwierdzone zamówienia zakupu** w module **Portal współpracy z dostawcami**.

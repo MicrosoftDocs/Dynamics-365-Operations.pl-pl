@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Konfigurowanie opcji przetwarzania zamówień
-<a id="set-up-order-processing-options" class="xliff"></a>
+# <a name="set-up-order-processing-options"></a>Konfigurowanie opcji przetwarzania zamówień
 
 [!include[banner](includes/banner.md)]
 
