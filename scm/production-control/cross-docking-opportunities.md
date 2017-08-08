@@ -1,5 +1,5 @@
 ---
-title: "Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych | Microsoft Docs"
+title: "Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych"
 description: "W tym temacie opisano sposób zarządzania procesem przeładunku kompletacyjnego materiału, który jest zgłaszany jako gotowy z linii produkcyjnej do doku transportu wychodzącego."
 author: johanhoffmann
 manager: AnnBe
@@ -8,19 +8,20 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+audience: Application User
 ms.reviewer: bis
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 0b5541b6752da0c73e4309951ecabc0793f24289
+ms.translationtype: HT
+ms.sourcegitcommit: b424be5396df9434cd799ca7e7e9342a7c476e29
+ms.openlocfilehash: 231808260eeab73120bab43558ab5745f9fdbe46
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -123,7 +124,6 @@ Po zgłoszeniu produktu jako gotowego na linii produkcyjnej jest on przenoszony 
 ### <a name="additional-information"></a>Informacje dodatkowe
 
 -   Scenariusz przeładunku kompletacyjnego jest obsługiwany dla towarów wchodzących w skład partii i serii, gdzie wymiary partii i numeru seryjnego są zdefiniowane powyżej i poniżej lokalizacji w hierarchii rezerwacji.
--   Ilość zgłaszana jako gotowa nie może być dzielona w celu przekazania do zapotrzebowania zamówienia przeniesienia o niższej ilości. Na przykład jeśli 20 sztuk jest zgłaszanych jako gotowe, a istnieje zamówienie przeniesienia na 5 sztuk, zamówienia przeniesienia nie będzie interpretowane jako nadające się przeładunku kompletacyjnego.
 
 
 

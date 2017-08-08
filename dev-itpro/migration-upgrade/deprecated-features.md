@@ -3,25 +3,25 @@ title: "Przestarzałe funkcje"
 description: "W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia."
 author: sericks007
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: Operations, Platform
+ms.reviewer: sericks
+ms.search.scope: Operations, Platform, UnifiedOperations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-08-30
+ms.search.validFrom: 2016-08-30T00:00:00.000Z
 ms.dyn365.ops.version: Platform update 6
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3267bd1cbd738b5ced9996fc3b28eee211627591
-ms.openlocfilehash: 8feffb27b5d08a9c90e97ac0d7e00abf0448d0df
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 18274d9ca390ee3d6d463b3a6d67ddc3a39294f8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/16/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -29,9 +29,10 @@ ms.lasthandoff: 06/16/2017
 
 [!include[banner](../includes/banner.md)]
 
-W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia.
+W tym temacie opisano funkcje, które zostały lub zostaną usunięte z programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.
 
-## <a name="features-that-have-been-deprecated-in-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Funkcje, które wycofano w programie Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r.
+## <a name="features-that-have-been-deprecated-for-all-deployment-types-of-the-july-2017-update-with-platform-update-8"></a>Funkcje, które wycofano dla wszystkich typów wdrożeń w aktualizacji z lipca 2017 r. z aktualizacją platformy 8
+Ta lista zawiera funkcje, które zostały wycofane dla wdrożeń chmurowych i lokalnych.
 
 ### <a name="warehouse-mobile-devices-portal"></a>Portal urządzeń przenośnych używanych w magazynie
 
@@ -40,7 +41,7 @@ Portal urządzeń przenośnych używanych w magazynie (WMDP) był autonomicznym 
 |                                  |                                                 |
 |----------------------------------|-------------------------------------------------|
 | **Przyczyna wycofania**       | Pokrywające się funkcje.                        |
-| **Zamieniona przez inną funkcję?** | Tak. Ta funkcja została zastąpiona przez moduł Finance and Operations — Magazynowanie. Aby uzyskać więcej informacji na temat konfiguracji i wymagań wstępnych, zobacz [Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Finance and Operations — Magazynowanie](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Zamieniona przez inną funkcję?** | Tak. Ta funkcja została zastąpiona przez moduł Finance and Operations — Magazynowanie. Aby uzyskać więcej informacji na temat konfiguracji i wymagań wstępnych, zobacz [Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Finance and Operations — Magazynowanie](/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Moduły, których dotyczą zmiany**             | Zarządzanie magazynem, Zarządzanie transportem |
 
 ### <a name="advanced-bank-reconciliation-matching-rule-for-manual-matching"></a>Reguła zaawansowanego uzgadniania konta bankowego w ręcznym uzgadnianiu
@@ -62,6 +63,28 @@ Aplikacja na tablety z systemem Windows 8 zawierała funkcje wprowadzania i zatw
 | **Przyczyna wycofania**       | Program Finance and Operations jest zgodny z tabletami. Aplikacja na tablety przestała być potrzebna. |
 | **Zamieniona przez inną funkcję?** | Nr                                                                                      |
 | **Moduły, których dotyczą zmiany**             | Zarządzanie wydatkami                                                                       |
+
+## <a name="features-that-have-been-deprecated-for-on-premises-deployments-of-the-july-2017-update-with-platform-update-8"></a>Funkcje, które wycofano dla wdrożeń lokalnych w aktualizacji z lipca 2017 r. z aktualizacją platformy 8
+
+### <a name="ssrs-report-viewer-control"></a>Formant podglądu raportów usługi SSRS
+
+Ta funkcja służyła do interakcji z raportami w formacie HTML na kliencie sieci web programu Finance and Operations.
+
+|                                  |  |
+|----------------------------------|--|
+| **Przyczyna wycofania**       | Usługa SQL Reporting Services (SSRS) nie obsługuje formantu podglądu raportów, który jest zgodny z lokalnym klientem sieci web.      |
+| **Zamieniona przez inną funkcję?** | Raporty są renderowane jako dokumenty PDF przez usługę lokalną. Aby umożliwić używanie osadzonych łączy przechodzenia do szczegółów w raportach aplikacji, należy użyć rozszerzeń. |
+| **Moduły, których dotyczą zmiany**             | Wszystko    |
+
+### <a name="document-routing-agent"></a>Agent rozsyłania dokumentów
+
+Klient agenta rozsyłania dokumentów jest używany jako brama usług do nawiązywania połączenia między chmurą a drukarkami sieciowymi uwierzytelnianymi w domenie.
+
+|                                  |  |
+|----------------------------------|--|
+| **Przyczyna wycofania**       | Lokalne wdrożenia są umieszczane na serwerach uwierzytelnianych w domenie. Takie rozwiązanie zapewnia bezpieczny, bezpośredni dostęp do drukarek sieciowych. |
+| **Zamieniona przez inną funkcję?** | Ten składnik nie jest konieczny dla wdrożeń lokalnych.|
+| **Moduły, których dotyczą zmiany**             | Brak               |
 
 
 <a name="features-that-have-been-deprecated-in-dynamics-365-for-operations-1611-with-platform-update-3"></a>Funkcje, które wycofano w programie Dynamics 365 for Operations 1611 po aktualizacji platformy 3
@@ -488,11 +511,20 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 
 Partycje danych zapewniają logiczne oddzielenie danych w bazie danych systemu Microsoft Dynamics AX.
 
-|                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   |   |
+|---|---|
 | Przyczyna amortyzacji       | Partycje danych zostały wprowadzone w systemie Microsoft Dynamics AX 2012 R2, aby umożliwić izolowanie danych. W typowym scenariuszu firma ma oddziały. Dane z jednego oddziału firmy nie powinny być widoczne w innym oddziale, mimo że oba oddziały są zarządzane przez ten sam dział IT. Jednak były wymagane dodatkowe skrypty i towarzyszące zarządzanie programem w celu utworzenia nowych partycji i wypełnienia ich danymi oraz utworzenia kopii zapasowych danych partycji. W chmurze, gdzie mamy dostęp do usług bazy danych (baza danych SQL Microsoft Azure) w postaci platformy jako usługi (PaaS), znacznie bardziej efektywne jest używanie bazy danych jako kontenera izolacji niż konfigurowanie izolacji w programie. Niezależnie od tego, czy partycjonowanie danych jest wymagane dla oddziałów, wielu dzierżawców czy tylko ze względu na skalę, jesteśmy przekonani, że wszystkie scenariusze można lepiej obsługiwać za pomocą wielu baz danych lub wielu wystąpień systemu Dynamics AX. |
-| Zamieniona przez inną funkcję? | W przyszłym wydaniu partycje danych zostaną zastąpione przez obsługę wielu baz danych lub wystąpień systemu Dynamics AX.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Zamieniona przez inną funkcję? | W przyszłym wydaniu partycje danych zostaną zastąpione przez obsługę wielu baz danych lub wystąpień systemu Dynamics AX.    |
+| Moduły, których dotyczą zmiany             | Wszystko  |
+
+### <a name="database-and-file-share-storage-for-attachments"></a>Przechowywanie załączników w bazach danych i udziałach plików
+System Microsoft Dynamics AX 2012 pozwalał na przechowywania załączników w bazach danych i udziałach plików. Obie te opcje nie są już obsługiwane.
+
+|                              |                                        |
+|------------------------------|----------------------------------------|
+| Przyczyna amortyzacji       | Przechowywanie w udziałach plików nie jest już obsługiwane, ponieważ środowiska hostowane w chmurze nie mogą się komunikować z lokalnymi udziałami plików. Przechowywanie w bazie danych zostało zastąpione magazynem obiektów blob w usłudze Azure. Magazyn obiektów blob Azure odpowiada przechowywaniu w bazie danych, ponieważ dokumenty są dostępne wyłącznie za pośrednictwem formularzy klienta programu Dynamics 365 for Finance and Operations. Zapewnia to dodatkową korzyść w postaci magazynu, który nie wpływa negatywnie na wydajność bazy danych. Magazyn obiektów blob jest domyślnym mechanizmem przechowywania modułu Zarządzanie dokumentami i działa natychmiast. |
+| Zamieniona przez inną funkcję? | Przechowywanie w bazie danych zostało zastąpione magazynem obiektów blob w usłudze Azure.       |
+| Moduły, których dotyczą zmiany             | Wszystko                   |
 
 ### <a name="delimitation"></a>Ogranicznik
 
@@ -525,8 +557,8 @@ W programie Dynamics AX 2012 R3 aplikacja Retail Modern POS mogła się łączy�
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | W miejsce funkcji zlokalizowanej używana jest teraz funkcja ogólna.                                                                                                                                                                 |
-| Zamieniona przez inną funkcję? | Tak, ta funkcja została zastąpiona funkcją zaawansowanego uzgadniania kont bankowych. Oprócz tego w następnej aktualizacji systemu Dynamics AX jest planowana implementacja funkcji importu wyciągów z kont camt.053 ISO20022 dla arkusza finansowego. |
-| Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                                                                                                                   |
+| Zamieniona przez inną funkcję? | Tak, ta funkcja została zastąpiona funkcją zaawansowanego uzgadniania kont bankowych. |
+| Moduły, których dotyczą zmiany             | Wszystko                                                                                                                                                                                                                                   |
 
 ### <a name="ebilanz-xbrl-for-germany"></a>eBilanz (XBRL dla Niemiec)
 
@@ -577,8 +609,8 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 |                              |                                                                                                                                                                                                                                                                                                |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | Ten format nie jest już używany w Niemczech, ponieważ został zastąpiony przez funkcję Jednolity Obszar Płatniczy w Euro (SEPA).                                                                                                                                                                 |
-| Zamieniona przez inną funkcję? | Tak, ta funkcja została zastąpiona funkcjami eksportu płatności SEPA i zaawansowanego uzgadniania kont bankowych w imporcie wyciągów z kont. Oprócz tego w następnej aktualizacji systemu Dynamics AX jest planowana implementacja funkcji importu wyciągów z kont camt.053 ISO20022 dla arkusza finansowego. |
-| Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                                                                                                                                                                            |
+| Zamieniona przez inną funkcję? | Tak, ta funkcja została zastąpiona funkcjami eksportu płatności SEPA i zaawansowanego uzgadniania kont bankowych w imporcie wyciągów z kont. |
+| Moduły, których dotyczą zmiany             | Wszystko                                                                                                                                                                                                                                                                                            |
 
 ### <a name="german-dtazv-payment-format"></a>Niemiecki format płatności DTAZV
 
@@ -593,8 +625,8 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 |                              |                                                                                                                                                                                                                                       |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Przyczyna amortyzacji       | W miejsce funkcji zlokalizowanej używana jest teraz funkcja ogólna.                                                                                                                                                                 |
-| Zamieniona przez inną funkcję? | Tak, ta funkcja została zastąpiona funkcją zaawansowanego uzgadniania kont bankowych. Oprócz tego w następnej aktualizacji systemu Dynamics AX jest planowana implementacja funkcji importu wyciągów z kont camt.053 ISO20022 dla arkusza finansowego. |
-| Moduły, których dotyczą zmiany             | Wszyscy                                                                                                                                                                                                                                   |
+| Zamieniona przez inną funkcję? | Tak, ta funkcja została zastąpiona funkcją zaawansowanego uzgadniania kont bankowych. |
+| Moduły, których dotyczą zmiany             | Wszystko                                                                                                                                                                                                                                   |
 
 ### <a name="german-xml-eu-sales-list"></a>Niemiecka lista sprzedaży do UE w formacie XML
 

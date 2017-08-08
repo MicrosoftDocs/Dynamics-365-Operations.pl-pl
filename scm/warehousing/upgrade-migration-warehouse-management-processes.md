@@ -15,13 +15,13 @@ ms.custom: 1714054
 ms.assetid: 79a1a3b9-3a36-4162-8839-ec39b5e26602
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 5ab19faddedae8cf61222762714609601b0ae96f
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: cacf48bc10be5c06154816c2f9951ab4bbaee1c1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +35,7 @@ W tym temacie omówiono opcje migracji funkcji zarządzania produktami i magazyn
 Podczas uaktualniania do programu Finance and Operations produkty są blokowane, jeśli są skojarzone z grupą wymiarów magazynowania mającą ustawienia niezgodne z wymaganiami ustawień grupy wymiarów magazynowania w programie Finance and Operations. Jednak po uaktualnieniu można użyć różnych opcji migracji dostępnych w procesie **Zmiana grupy wymiarów magazynowania dla towarów** i odblokować produkty, które zostały zablokowane podczas uaktualniania. Następnie można przetwarzać transakcje dla tych produktów. Niektóre towary mogą już być skojarzone z grupami wymiarów magazynowania, w których wymiary Oddział, Magazyn i Zapasy w lokalizacji są aktywne i fizycznie śledzone. W takim przypadku można użyć procesu **Zmiana grupy wymiarów magazynowania dla towarów**, aby włączyć dla tych towarów możliwość używania w procesach zarządzania magazynem. Ta funkcja jest użyteczna, jeśli chcesz korzystać z funkcji zarządzania magazynem dla istniejących towarów.
 
 ## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Uaktualnianie do programu Finance and Operations, gdy jest używane oprogramowanie AX 2012 R3 WMSII
-Program Finance and Operations nie obsługuje już starszego modułu **WMSII** z systemu Microsoft Dynamics AX 2012. Zamiast niego można używać nowego modułu **Zarządzanie magazynem**. Aby uzyskać więcej informacji, zobacz [Zarządzanie magazynem — strona główna](https://ax.help.dynamics.com/en/wiki/warehouse-management/). W poprzednich wersjach wymiary zapasów Lokalizacja i Identyfikator palety może było wybierać dla zapasów finansowych. Jednak w ramach procesu uaktualniania usunięto możliwość włączania wymiaru zapasów Identyfikator palety dla zapasów finansowych. Wszystkie produkty skojarzone z grupą wymiarów magazynowania, która używa wymiaru zapasów Identyfikator palety, zostaną zablokowane i nie będą przetwarzane.
+Program Finance and Operations nie obsługuje już starszego modułu **WMSII** z systemu Microsoft Dynamics AX 2012. Zamiast niego można używać nowego modułu **Zarządzanie magazynem**. W poprzednich wersjach wymiary zapasów Lokalizacja i Identyfikator palety może było wybierać dla zapasów finansowych. Jednak w ramach procesu uaktualniania usunięto możliwość włączania wymiaru zapasów Identyfikator palety dla zapasów finansowych. Wszystkie produkty skojarzone z grupą wymiarów magazynowania, która używa wymiaru zapasów Identyfikator palety, zostaną zablokowane i nie będą przetwarzane.
 
 ### <a name="enabling-items-in-finance-and-operations"></a>Włączanie towarów w rozwiązaniu Finance and Operations
 
@@ -70,7 +70,7 @@ Aby można było używać zwolnionych produktów w module **Zarządzanie magazyn
 1.  Utwórz co najmniej jeden nowy profil lokalizacji.
 2.  Kliknij kolejno opcje **Zarządzanie magazynem** &gt; **Ustawienia** &gt; **Włącz procesy zarządzania magazynem** &gt; **Włącz konfigurowanie magazynu**.
 3.  Na stronie **Włącz konfigurowanie magazynu** dodaj magazyn, który powinien być włączony. Ten krok można wykonać bezpośrednio na stronie lub za pomocą integracji z programem Microsoft Office.
-4.  Przypisz profil lokalizacji do wszystkich lokalizacji. Ten krok można łatwo wykonać bezpośrednio ze strony, wykorzystując integrację z programem Microsoft Office. Można eksportować i importować dane lub używać funkcji przetwarzania jednostek danych dostępnych w module [Zarządzanie danymi](https://ax.help.dynamics.com/en/wiki/data-management-and-integration-through-data-entity/).
+4.  Przypisz profil lokalizacji do wszystkich lokalizacji. Ten krok można łatwo wykonać bezpośrednio ze strony, wykorzystując integrację z programem Microsoft Office. Można eksportować i importować dane lub używać funkcji przetwarzania jednostek danych dostępnych w module [Zarządzanie danymi](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities).
 5.  Sprawdź poprawność zmian. W ramach procesu sprawdzania poprawności następują różne weryfikacje integralności danych. Jako część większego procesu uaktualniania może wystąpić konieczność rozwiązania zaistniałych problemów w implementacji źródłowej. W takim przypadku będzie potrzebne dodatkowe uaktualnienie danych.
 6.  Wprowadź zmiany.
 
@@ -81,7 +81,7 @@ Aby można było używać zwolnionych produktów w module **Zarządzanie magazyn
 3.  Na stronie **Hierarchia rezerwacji** zdefiniuj nową hierarchię rezerwacji zgodnie z magazynem i grupami wymiarów śledzenia dla towaru.
 4.  Utwórz jedną lub więcej grup numeracji jednostek, które zawierają co najmniej te same jednostki, jak używane do jednostek magazynowych towarów.
 5.  Kliknij kolejno opcje **Zarządzanie magazynem** &gt; **Ustawienia** &gt; **Włącz procesy zarządzania magazynem** &gt; **Zmiana grupy wymiarów magazynowania dla towarów**.
-6.  Na stronie **Zmiana grupy wymiarów magazynowania dla towarów** dodaj numery towarów, grup wymiarów magazynowania i grupy numeracji jednostek. Ten krok można wykonać bezpośrednio na stronie, wykorzystując integrację z programem Microsoft Office, lub przy użyciu przetwarzania jednostek danych w module [Zarządzanie danymi](https://ax.help.dynamics.com/en/wiki/data-management-and-integration-through-data-entity/).
+6.  Na stronie **Zmiana grupy wymiarów magazynowania dla towarów** dodaj numery towarów, grup wymiarów magazynowania i grupy numeracji jednostek. Ten krok można wykonać bezpośrednio na stronie, wykorzystując integrację z programem Microsoft Office, lub przy użyciu przetwarzania jednostek danych w module [Zarządzanie danymi](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities).
 7.  Sprawdź poprawność zmian. W ramach procesu sprawdzania poprawności następują różne weryfikacje integralności danych. Jako część większego procesu uaktualniania może wystąpić konieczność rozwiązania zaistniałych problemów w implementacji źródłowej. W takim przypadku będzie potrzebne dodatkowe uaktualnienie danych.
 8.  Wprowadź zmiany. Aktualizacja wszystkich wymiarów zapasów może nieco potrwać. Można monitorować postęp za pomocą zadań wsadowych.
 

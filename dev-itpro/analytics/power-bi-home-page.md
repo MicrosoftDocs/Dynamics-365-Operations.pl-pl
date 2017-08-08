@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.reviewer: sericks
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 265694
 ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 2df0c6dc9b41dde861f5361bfcc1226786e7aa76
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 282973618e56db3feb0103a7021a66d137218a7a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/25/2017
 
 ---
 
@@ -35,28 +35,30 @@ W tym temacie wymieniono dostępne pakiety zawartości usługi Microsoft Power B
 Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r., masz dostępne następujące pakiety zawartości usługi Power BI:
 
 - [Pakiet zawartości usługi Power BI Świadczenia](benefits-power-bi.md)
-- [Pakiet zawartości usługi Power BI Przegląd środków pieniężnych](/dynamics365/operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
+- [Pakiet zawartości usługi Power BI Przegląd środków pieniężnych](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 - [Pakiet zawartości usługi Power BI Przegląd dla dyrektora finansowego](CFO-power-bi.md)
 - [Pakiet zawartości usługi Power BI Wynagrodzenia](compensation-power-bi.md)
 - [Pakiet zawartości usługi Power BI Analiza rachunku kosztów*](cost-accounting-analysis-content-pack.md) 
-- [Pakiet zawartości usługi Power BI Zarządzanie kredytami i windykacją](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [Pakiet zawartości usługi Power BI Zarządzanie kredytami i windykacją](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
 - [Pakiet zawartości usługi Power BI Rozwój pracownika etatowego](employee-development-PBI.md) 
 - [Pakiet zawartości usługi Power BI Wyniki finansowe*](financial-performance-power-bi-content-pack.md)
-- [Pakiet zawartości usługi Power BI Zarządzanie środkami trwałymi](/dynamics365/operations/financials/fixed-assets/Fixed-asset-management-workspace)
+- [Pakiet zawartości usługi Power BI Zarządzanie środkami trwałymi](/dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace)
 - [Pakiet zawartości usługi Power BI Szkolenia](learning-power-bi.md)
 - [Pakiet zawartości usługi Power BI Kierownik praktyk](practice-manager-power-bi.md)
 - [Pakiet zawartości usługi Power BI Wydajność produkcji](production-performance-power-bi.md)
 - [Pakiet zawartości usługi Power BI Analiza wydatków zakupowych](purchase-content-pack-for-power-bi.md) 
 - [Pakiet zawartości usługi Power BI Rekrutacja](recruiting-analysis-power-bi-content-pack.md) 
 - [Zawartość usługi Power BI dotycząca wyników sprzedaży i rentowności](sales-profitability-performance-content-pack.md)
-- [Pakiet zawartości usługi Power BI Płatności dla dostawców](/dynamics365/operations/financials/accounts-payable/Vendor-payments-workspace)
+- [Pakiet zawartości usługi Power BI Płatności dla dostawców](/dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace)
 - [Pakiet zawartości usługi Power BI Wydajność magazynu](warehouse-power-bi-content.md)
 - [Pakiet zawartości usługi Power BI Metryki pracowników](workforce-analysis-power-bi-content-pack.md)  
 
 ### <a name="accessing-the-content"></a>Przechodzenie do pakietów zawartości
 
 #### <a name="embedded-content"></a>Osadzone pakiety zawartości
-Z wyjątkiem pakietów zawartości oznaczonych gwiazdką (\*) wszystkie pakiety zawartości na powyższej liście są osadzone w aplikacji. Aby dowiedzieć się więcej o tym, gdzie można wyświetlać pakiety zawartości usługi Power BI, kliknij odpowiednie łącza.
+Z wyjątkiem pakietów zawartości oznaczonych gwiazdką (\*) wszystkie pakiety zawartości na powyższej liście są osadzone w aplikacji. Aby dowiedzieć się więcej o tym, gdzie można wyświetlać pakiety zawartości usługi Power BI, kliknij odpowiednie łącza powyżej.
+
+Aby obejrzeć dane w raportach programu Power BI, koniecznie odśwież magazyn jednostek. Aby uzyskać więcej informacji, zobacz rozdział *Aktualizowanie magazynu jednostek* w temacie [Omówienie integracji usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md).
 
 #### <a name="files-available-in-lifecycle-services"></a>Pliki dostępne w usłudze Lifecycle Services
 Ten pakiet zawartości usługi Power BI znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego łączeniu z firmowymi danymi, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).
@@ -66,7 +68,7 @@ Jeśli używasz programu Microsoft Dynamics 365 for Operations w wersji 1611, s�
 
 - [Pakiet zawartości usługi Power BI Wynagrodzenia i świadczenia](compensation-and-benefits-analysis-power-bi-content-pack.md)   
 - [Zawartość usługi Power BI dotycząca analiz rachunku kosztów](cost-accounting-analysis-content-pack.md) 
-- [Pakiet zawartości usługi Power BI Zarządzanie kredytami i windykacją](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [Pakiet zawartości usługi Power BI Zarządzanie kredytami i windykacją](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
 - [Pakiet zawartości usługi Power BI Kompetencje i rozwój pracownika etatowego](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
 - [Pakiet zawartości usługi Power BI Wyniki finansowe](financial-performance-power-bi-content-pack.md)
 - [Pakiet zawartości usługi Power BI Szkolenie organizacyjne](organizational-training-analysis-power-bi-content-pack.md) 

@@ -3,12 +3,13 @@ title: "Rachunek kosztów — strona główna"
 description: "Ten temat zawiera listę tematów pomocy oraz innych zasobów dostępnych dla modułu Rachunek kosztów."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 256254
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
@@ -16,11 +17,11 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 4514c6dbf014720c29e79889bf1fcc0efd6cd3ec
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: e87ed2b47136deb6b9ecf33b54f248bfc85257e2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -28,54 +29,34 @@ ms.lasthandoff: 06/13/2017
 
 [!include[banner](../includes/banner.md)]
 
+## <a name="learning-map"></a>Mapa szkoleń 
 
-Ten temat zawiera listę tematów pomocy oraz innych zasobów dostępnych dla modułu Rachunek kosztów.
+Poniższa mapa szkoleń przedstawia główne koncepcje i zadania, z liniami łączącymi między pokrewnymi zadaniami, które opisują charakter modułu Rachunek kosztów.
 
-Moduł Rachunek kosztów umożliwia wykonywanie następujących czynności:
+![Mapa szkoleń na temat rachunku kosztów](./media/cost-accounting-map.png)
 
--   Definiowanie wymiarów składników kosztów, importowanie elementów członkowskich wymiarów składników kosztów i mapowanie wymiarów składników kosztów.
--   Definiowanie wymiarów obiektów kosztów i importowanie elementów członkowskich wymiarów obiektów kosztów.
--   Definiowanie i importowanie wymiarów statystycznych.
--   Tworzenie szablonów dostawców miar statystycznych.
--   Tworzenie ksiąg rachunku kosztów.
--   Tworzenie jednostek kontroli kosztów.
--   Przetwarzanie zapisów księgi głównej.
--   Przetwarzanie wpisów budżetu.
--   Tworzenie i stosowanie zasad zachowania kosztów.
--   Śledzenie kosztów.
--   Definiowanie hierarchii wymiarów.
--   Tworzenie zestawień, które mogą być wyświetlane w obszarze roboczym.
--   Tworzenie raportów za pomocą programu Excel.
-
-## <a name="get-started"></a>Rozpocznij
-
-> [!Video https://www.youtube.com/embed/https://www.youtube.com/embed/1pUDtJQZ8FU]
-
-Warsztaty poświęcone modułowi Rachunek kosztów obejmują podstawowe kroki konfigurowania aplikacji Microsoft Dynamics 365 for Finance and Operations Enterprise Edition — Rachunek kosztów niezbędne do wykonywania faktycznych analizy kosztów. Zawiera także szereg procedur, które można wykonać w kolejności, w jakiej są przedstawione.
-
--   [Wprowadzenie do rachunku kosztów](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (oficjalny dokument, wymaga konta w witrynie CustomerSource)
-
-Aby zrozumieć sposób korzystania z modułu Rachunek kosztów w codziennej pracy, należy poznać te pojęcia.
-
--   [Najważniejsze pojęcia w rachunku kosztów](terms-cost-accounting.md)
--   [Składniki kosztów i wymiary składników kosztów](cost-elements.md)
--   [Mapowanie różnych elementów członkowskich wymiarów składników kosztów na wspólny zestaw elementów członkowskich wymiarów składników kosztów](map-cost-elements-dimension-members.md)
--   [Tworzenie składników kosztów](http://ax.help.dynamics.com/en/wiki/create-cost-elements/) (przewodnik po zadaniu)
--   [Wymiary obiektów kosztów](cost-objects.md)
--   [Tworzenie obiektów kosztów](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (przewodnik po zadaniu)
-
-## <a name="cost-control-mobile-workspace"></a>Mobilny obszar roboczy Kontrola kosztów
-W mobilnym obszarze roboczym Kontrola kosztów menedżerowie centrów kosztów mają podgląd na działanie tych centów zawsze i wszędzie.
-
--   [Mobilny obszar roboczy Kontrola kosztów](cost-controlling-mobile-workspace.md)
-
-## <a name="cost-accounting-analysis-power-bi-content"></a>Pakiet zawartości usługi Power BI Analiza rachunku kosztów
-Pakiet zawartości usługi Microsoft Power BI Analiza rachunku kosztów jest przeznaczony dla kontrolerów kosztów i innych osób odpowiedzialnych za kontrolowanie kosztów w organizacji. Obejmuje kluczowe wskaźniki, takie jak koszt, wartość oraz stawka kosztu rzeczywistego, budżetowego lub budżetu elastycznego. Wykorzystuje dane transakcji z modułu Rachunek kosztów w programie Finance and Operations i zapewnia zagregowany widok kosztów dla całej organizacji w jednej walucie raportowania. Menedżerowie mogą filtrować dane według obiektów kosztów w celu kontrolowania kosztów w podległych jednostkach organizacyjnych, nawet jeśli organizacja jest podzielona na kilka firm.
-
--   [Pakiet zawartości usługi Power BI Analiza rachunku kosztów](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
--   [Konfigurowanie zabezpieczeń pakietu zawartości usługi Power BI Analiza rachunku kosztów](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+## <a name="get-started-videos"></a>Filmy Rozpoczęcie pracy
 
 
+<table>
+<tr>
+<iframe width="280" height="158" src="https://www.youtube.com/embed/1pUDtJQZ8FU" frameborder="0" allowfullscreen></iframe>
+</tr>
+<table>
+
+
+<table>
+<tr>
+<iframe width="280" height="158" src="https://www.youtube.com/embed/imsuTg8rUVk" frameborder="0" allowfullscreen></iframe>
+</tr>
+<table>
+
+
+<table>
+<tr>
+<iframe width="280" height="158" src="https://www.youtube.com/embed/-HKHYdClvx8" frameborder="0" allowfullscreen></iframe>
+</tr>
+</table>
 
 
 

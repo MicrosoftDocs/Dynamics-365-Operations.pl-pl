@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 15767a54da25c293bb3d6d5e0a14e7e05a7d730b
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: b94ecf3e173a2a7ce649170b6eff1e16f2626074
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -62,7 +62,7 @@ Katalog określa, które produkty są dostępne podczas tworzenia zapotrzebowań
 |--------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tworzenie nowego katalogu.                                  | Pracownik działu zakupów | Podczas tworzenia katalogu, należy określić nazwę i opis dla katalogu. Można również określić, czy katalog będzie aktualizowany ręcznie czy automatycznie, oraz określić właściciela katalogu.                                                                                                                                      |
 | Określ, czy produkty są dostępne w katalogu. | Pracownik działu zakupów | Ze względu na to, że produkty są dziedziczone z kategorii zaopatrzenia, pojawiają się w odpowiednich węzłach katalogu. Można kontrolować, czy wszystkie produkty w węźle będą ukryte czy widoczne, gdy katalog będzie wykorzystywany do tworzenia zapotrzebowania na zakup. Można również kontrolować, czy poszczególne produkty w węźle są ukryte albo wyświetlane. |
-| Publikowanie katalogu.                                   | Pracownik działu zakupów | Zanim katalog będzie dostępny dla pracowników do tworzenia zapotrzebowań konieczne jest zdefiniowanie jego reguł, ustawienie statusu jako **Aktywny**i opublikowanie katalogu. Można również dezaktywować katalogi, które już nie mają być dostępne dla użytkowników.                                              |
+| Publikowanie katalogu.                                   | Pracownik działu zakupów | Zanim katalog będzie dostępny dla pracowników do tworzenia zapotrzebowań konieczne jest zdefiniowanie jego reguł, ustawienie statusu jako **Aktywny** i opublikowanie katalogu. Można również dezaktywować katalogi, które już nie mają być dostępne dla użytkowników.                                              |
 
 Aktualizacje są publikowane automatycznie lub ręcznie, w zależności od opcji wybranych dla katalogu w polu **Domyślny typ aktualizacji** na stronie **katalogów**. Dostępne są następujące domyślne typy aktualizacji dla katalogów:
 
@@ -74,7 +74,7 @@ Aktualizacje są publikowane automatycznie lub ręcznie, w zależności od opcji
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Ustawianie hierarchii kategorii zaopatrzenia (przewodnik po zadaniu)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+[Ustawianie hierarchii kategorii zaopatrzenia (przewodnik po zadaniu)](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-procurement-category-hierarchy)
 
 
 

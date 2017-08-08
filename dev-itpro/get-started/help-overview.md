@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 91207e03902fa8a45ab44270cc61b58ef9e3c98c
+ms.translationtype: HT
+ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
+ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -32,33 +31,31 @@ ms.lasthandoff: 06/20/2017
 
 Ten artykuł zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations. Wyjaśniono tu również, jak można dostarczać niestandardową dokumentację i szkolenia dla swojej organizacji. 
 
-> [!IMPORTANT] 
+> [!NOTE] 
 > Następujące produkty są ściśle związane ze sobą: Dynamics 365 for Finance and Operations Enterprise Edition, Dynamics 365 for Retail i Dynamics 365 for Talent. Te same funkcje mogą być dostępne we wszystkich 3 produktach. W związku z tym w tematach związanych głównie z modułem Retail nazwą produktu będzie Dynamics 365 for Retail, w tematach dotyczących przede wszystkim modułu Talent nazwą produktu będzie Dynamics 365 for Talent, a w tematach związanych z produktem podstawowym nazwą produktu będzie Dynamics 365 for Finance and Operations. Tematów, które zostały napisane dla jednego produktu, można używać w odniesieniu do tych samych funkcji w powiązanym produkcie.
-
-Program Finance and Operations zawiera system Pomocy oparty na dwóch głównych składnikach:
-
--   Witryna z dokumentacją
--   Przewodniki zadań
-
-Następujące produkty są ściśle związane ze sobą: Dynamics 365 for Finance and Operations Enterprise Edition, Dynamics 365 for Retail i Dynamics 365 for Talent. Te same funkcje mogą być dostępne we wszystkich 3 produktach. W związku z tym w tematach związanych głównie z modułem Retail nazwą produktu będzie Dynamics 365 for Retail, w tematach dotyczących przede wszystkim modułu Talent nazwą produktu będzie Dynamics 365 for Talent, a w tematach związanych z produktem podstawowym nazwą produktu będzie Dynamics 365 for Finance and Operations. Tematów, które zostały napisane dla jednego produktu, można używać w odniesieniu do tych samych funkcji w powiązanym produkcie. 
 
 System Pomocy jest wspólny dla wszystkich produktów platformy Unified Operations:
 - Dynamics 365 for Finance and Operations Enterprise Edition
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
+Program Finance and Operations zawiera system Pomocy oparty na dwóch głównych składnikach:
+
+-   Witryna z dokumentacją
+-   Przewodniki zadań
+
 Dostęp do tematów pomocy i przewodników po zadaniach można uzyskać z okienka Pomocy każdego używanego produktu. Następujące zrzuty ekranu przedstawiają program Dynamics 365 for Finance and Operations:
 
-![Okienko pomocy](./media/help-pane-ops-task-guides-1024x741.png)
+![Okienko pomocy](./media/help-pane-ops-task-guides.png)
 
 Ten temat zawiera opis systemu Pomocy oraz wyjaśnia sposób tworzenia niestandardowych dokumentów i materiałów szkoleniowych w organizacji.
 
 > [!IMPORTANT]
-> Karta **Przewodniki po zadaniach** jest obecnie niedostępna w programach Microsoft Dynamics 365 for Talent i Microsoft Dynamics 365 for Retail. Obecnie pracujemy nad włączeniem tej funkcjonalności w przyszłym wydaniu. Przewodniki po zadaniach w sekcji Rozpoczęcie pracy w module Talent pozostają dostępne i oferują podstawowe funkcje. Ponadto jest dostępna pomoc dla procedur w witrynie docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) dla aplikacji Retail i Talent.
+> Karta **Przewodniki po zadaniach** jest obecnie niedostępna w programach Microsoft Dynamics 365 for Talent i Microsoft Dynamics 365 for Retail. Obecnie pracujemy nad włączeniem tej funkcjonalności w przyszłym wydaniu. Przewodniki po zadaniach w sekcji Rozpoczęcie pracy w module Talent pozostają dostępne i oferują podstawowe funkcje. Ponadto jest dostępna pomoc dla procedur w witrynie docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)) dla aplikacji Retail i Talent.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Pomoc w witrynie docs.microsoft.com
 
-Witryna docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) to podstawowe źródło dokumentacji produktu Finance and Operations. Witryna oferuje następujące funkcje:
+Witryna docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)) to podstawowe źródło dokumentacji produktu Finance and Operations. Witryna oferuje następujące funkcje:
 
 -   **Dostęp do najaktualniejszych treści** — Witryna pozwala szybciej i elastyczniej tworzyć, dostarczać i aktualizować dokumentację produktu. To pomaga zagwarantować, że masz dostęp do najnowszych informacji technicznych.
 -   **Artykuły pisane przez ekspertów** — Witryna zawiera bardziej rozbudowany zestaw dokumentacji produktu, który może być rozszerzany przez członków społeczności wewnątrz i na zewnątrz firmy Microsoft.
@@ -68,12 +65,13 @@ Witryna docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamic
 ### <a name="searching-on-docsmicrosoftcom"></a>Wyszukiwanie w witrynie docs.microsoft.com
 Otrzymujemy wiele pytań dotyczących sposobu przeszukiwania naszej zawartości. Jeżeli wizytę w naszej witrynie rozpoczniesz na stronie dotyczącej programu Finance and Operations, wyszukiwanie będzie ograniczone tylko do zawartości dotyczącej tego programu. Możesz usunąć to ograniczenie zakresu, klikając znak X obok nazwy Operations w polu wyszukiwania. 
 
-![Wyszukaj zamówienia](./media/search-scope.png)
+![Wyszukaj zamówienia](./media/search-scope-2.png)
 
 Można również znaleźć naszą zawartość przy użyciu dowolnego aparatu wyszukiwania. W celu uzyskania najlepszych wyników zalecamy korzystanie z przeszukiwania witryny, takiego jak site:docs.microsoft.com dynamics 365 „szukany termin”.  
-![Przeszukiwanie witryny](./media/site-search.png)
 
-![Wyniki przeszukiwania witryny](./media/site-search-results.png)
+![Przeszukiwanie witryny](./media/site-search-1.png)
+
+![Wyniki przeszukiwania witryny](./media/site-search-results-2.png)
 
 ### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>Spis treści w na stronie docs.microsoft.com dla programu Unified Operations
 Wszystkie produkty mają jeden wspólny spis treści w witrynie dokumentów, dzięki czemu użytkownicy widzą kontekst aktualnie wyświetlonego tematu. Pozwala to również używać formantu Filtr do znajdowania szukanych tematów.
@@ -105,7 +103,7 @@ Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych krok�
 
 Udostępniamy różne zestawy przewodników po zadaniach dla każdego produktu platformy Unified Operations. Sekcja Uzyskiwanie dostępu do przewodników po zadaniach z okienka Pomocy opisuje sposób znajdowania odpowiednich przewodników po zadaniach dla używanego produktu. 
 
-![Przewodnik po zadaniu w widoku do czytania](./media/task-guide-ops-1024x742.png)
+![Przewodnik po zadaniu w widoku do czytania](./media/task-guide-ops.png)
 
 Aby rozpocząć korzystanie z interaktywnego przewodnika, kliknij opcję **Uruchom przewodnik po zadaniach** u dołu okienka Pomocy. Zostanie wyświetlony czarny wskaźnik pokazujący czynność, którą należy wykonać. Postępuj zgodnie z instrukcjami wyświetlanymi w interfejsie użytkownika, a następnie wprowadź dane, zgodnie ze wskazówkami. 
 ![Instrukcje krok po kroku przewodnika po zadaniu](./media/task-guide-step-1-ops.png)
@@ -129,7 +127,7 @@ Można utworzyć własne nagrania zadań lub pobierać i dostosowywać nagrania 
 ## <a name="in-product-help"></a>Pomoc w produkcie
 Aby uzyskać dostęp do zawartości pomocy w programie Finance and Operations, kliknij ikonę **pomocy** (**?**), a następnie wybierz polecenie Pomoc lub naciśnij klawisze Ctrl + Shift +?. W obu przypadkach zostanie otwarte okienko pomocy. Z okienka pomocy można uzyskać dostęp do artykułów lub przewodników po zadaniach. 
 
-![Okienko pomocy](./media/help-pane-wiki-1024x684.png)
+![Okienko pomocy](./media/help-pane-wiki.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Uzyskiwanie dostępu do tematów pomocy z okienka Pomocy
 
@@ -162,7 +160,7 @@ Na stronie **Parametry systemu** wykonaj następujące kroki:
 
 Po wykonaniu tych kroków przez administratora systemu można otworzyć okienko pomocy i kliknąć kartę **Przewodniki po zadaniach**. Teraz widać przewodniki po zadaniach, które mają zastosowanie do strony aktualnie wyświetlanej w programie Finance and Operations. Jeśli nie zostaną znalezione żadne przewodniki po zadaniach, możesz wprowadzić słowa kluczowe, aby doprecyzować wyszukiwanie. Po kliknięciu przewodnika po zadaniu w okienku pomocy zobaczysz w nim instrukcje krok po kroku i można odtworzyć przewodnik po zadaniu. 
 
-![Przewodnik po zadaniu w widoku do czytania](./media/task-guide-ops-1024x742.png)
+![Przewodnik po zadaniu w widoku do czytania](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides"></a>Gdzie są przetłumaczone przewodniki po zadaniach?
 

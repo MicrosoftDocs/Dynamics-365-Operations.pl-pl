@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 36c5e78f4b85d0c763c35b62a6592365501db325
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 6be91dfc02b728ffdf0f9d3baf1d41d3d2c10fea
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -103,7 +103,7 @@ Kliknij przycisk **Ustawienia** dla nowego rekordu miejsca docelowego. Następni
 Na stronie **Konfiguracje** (**Administrowanie organizacją** &gt; **Raportowanie elektroniczne** &gt; **Konfiguracje**) w drzewie konfiguracji wybierz utworzoną wcześniej konfigurację **Działania importu/eksportu**. Zmień stan wersji 1.1 z **Robocza** na **Ukończono**, co spowoduje udostępnienie tego formatu do użytku. [![Strona Konfiguracje](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) Wybierz ukończoną wersję konfiguracji **Działania importu/eksportu**, a następnie kliknij przycisk **Uruchom**. Należy zwrócić uwagę, ze skonfigurowane miejsce docelowe będzie stosowane do danych wyjściowych wygenerowanych w formacie programu Excel. W opcji **Przetwarzanie wsadowe** ustaw wartość **Tak**, aby generować ten raport w trybie nienadzorowanym. Kliknij opcję **Cykl**, aby zaplanować wymagane cykliczne wykonywanie tego przetwarzania wsadowego. Cykl określa, jak często zaktualizowane dane będą przesyłane z programu Finance and Operations do programu Power BI. [![Okno dialogowe Parametry raportu elektronicznego](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) Po skonfigurowaniu zadania wykonywania raportu ER można je znaleźć na stronie **Zadania wsadowe** (**Administrowanie systemem &gt; Zapytania &gt; Zadania wsadowe**). [![Strona zadania wsadowe](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) Gdy to zadanie jest wykonywane po raz pierwszy, aplikacja docelowa tworzy nowy plik programu Excel o skonfigurowanej nazwie w wybranym folderze programu SharePoint. Podczas każdego kolejnego wykonywania zadania aplikacja docelowa tworzy nową wersję tego pliku programu Excel. [![Nowa wersja pliku programu Excel](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## <a name="create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format"></a>Tworzenie zestawu danych programu Power BI za pomocą danych wyjściowych formatu raportowania elektronicznego
-Zaloguj się w programie Power BI i otwórz istniejącą grupę (obszar roboczy) programu Power BI lub utwórz nową grupę. Kliknij łącze **Dodaj** w obszarze **Pliki** w sekcji **Importuj lub połącz z danymi** lub kliknij znak plusa (**+**) obok opcji **Zestawy danych** w lewym okienku. [![Tworzenie zestawu danych](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) Zaznacz opcję **SharePoint — witryny zespołu**, a następnie wprowadź ścieżkę do używanego serwera programu SharePoint (w omawianym przykładzie jest to **https://ax7partner.spoppe.com**). Następnie przejdź do folderu **/Shared Documents/GER data/PowerBI** i wybierz utworzony plik programu Excel jako źródło danych dla nowego zestawu danych programu Power BI. [![Wybieranie pliku programu Excel](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) Kliknij kolejno przyciski **Połącz** i **Importuj**. Zostanie utworzony nowy zestaw danych oparty na wybranym pliku programu Excel. Zestaw danych może być również dodawany automatycznie do nowo tworzonego pulpitu nawigacyjnego. [![Zestaw danych w pulpicie nawigacyjnym](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) Skonfiguruj harmonogram odświeżania tego zestawu danych, aby wymusić okresowe aktualizacje. Okresowe aktualizacje umożliwiają wykorzystywanie nowych danych biznesowych pochodzących z programu Finance and Operations poprzez okresowe generowanie raportu modułu ER przy użyciu nowych wersji pliku programu Excel, które są tworzone na serwerze programu SharePoint.
+Zaloguj się w programie Power BI i otwórz istniejącą grupę (obszar roboczy) programu Power BI lub utwórz nową grupę. Kliknij łącze **Dodaj** w obszarze **Pliki** w sekcji **Importuj lub połącz z danymi** lub kliknij znak plusa (**+**) obok opcji **Zestawy danych** w lewym okienku. [![Tworzenie zestawu danych](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) Zaznacz opcję **SharePoint — witryny zespołu**, a następnie wprowadź ścieżkę do używanego serwera programu SharePoint (w omawianym przykładzie jest to **https://ax7partner.litware.com**). Następnie przejdź do folderu **/Shared Documents/GER data/PowerBI** i wybierz utworzony plik programu Excel jako źródło danych dla nowego zestawu danych programu Power BI. [![Wybieranie pliku programu Excel](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png) Kliknij kolejno przyciski **Połącz** i **Importuj**. Zostanie utworzony nowy zestaw danych oparty na wybranym pliku programu Excel. Zestaw danych może być również dodawany automatycznie do nowo tworzonego pulpitu nawigacyjnego. [![Zestaw danych w pulpicie nawigacyjnym](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png) Skonfiguruj harmonogram odświeżania tego zestawu danych, aby wymusić okresowe aktualizacje. Okresowe aktualizacje umożliwiają wykorzystywanie nowych danych biznesowych pochodzących z programu Finance and Operations poprzez okresowe generowanie raportu modułu ER przy użyciu nowych wersji pliku programu Excel, które są tworzone na serwerze programu SharePoint.
 
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Tworzenie raportu programu Power BI przy użyciu nowego zestawu danych
 Aby wygenerować nowy raport programu Power BI, kliknij utworzony zestaw danych programu Power BI o nazwie **Szczegóły importu i eksportu**. Następnie skonfiguruj wizualizację. Na przykład zaznacz wizualizację **Wypełniona mapa** i skonfiguruj ją w następujący sposób:

@@ -3,26 +3,26 @@ title: "Składnia zaawansowanego filtrowania i zapytań"
 description: "W tym artykule opisano opcje filtrowania i kwerend dostępne dla operatora „dopasowania” w oknie dialogowym Zaawansowany filtr/sortowanie."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysQueryForm
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3811
 ms.assetid: b4969b30-2fe1-4a3c-bbea-725dc37c8b60
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 48b2049c3f5025d7e8d3fc7e944aa9360786d18a
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 616366009ce7bf7135704e980becc331617cf5af
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -68,7 +68,7 @@ W tym artykule opisano opcje filtrowania i kwerend dostępne dla operatora „do
 <td><em>Od</em>..<em>Do</em> (dwie kropki)</td>
 <td>Między wartościami rozdzielonymi dwoma kropkami</td>
 <td>Wpisz wartość Od, a po niej dwie kropki i wartość Do.</td>
-<td>Wyrażenie <strong>1..10</strong> pozwala wyszukać wszystkie wartości od 1 do 10. Jednakże w polu tekstowym wyrażenie <strong>A..C</strong> pozwala wyszukać wszystkie wartości rozpoczynające się od &quot;A&quot; i &quot;B&quot; oraz dokładnie równe &quot;C&quot;. To zapytanie nie pozwala na przykład znaleźć wyrażenia &quot;Ca&quot;. Aby wyszukać wszystkie wartości od &quot;A*&quot; do &quot;C*&quot; włącznie, wpisz <strong>A..D</strong>.</td>
+<td>Wyrażenie <strong>1..10</strong> pozwala wyszukać wszystkie wartości od 1 do 10. Jednak w polu tekstowym wyrażenie <strong>A..C</strong> pozwala wyszukać wszystkie wartości rozpoczynające się od &quot;A&quot; i &quot;B&quot; oraz dokładnie równe &quot;C&quot;. To zapytanie nie pozwala na przykład znaleźć wyrażenia &quot;Ca&quot;. Aby wyszukać wszystkie wartości od &quot;A*&quot; do &quot;C*&quot; włącznie, wpisz <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>wartość</em> (dwie kropki)</td>
@@ -122,7 +122,7 @@ W tym artykule opisano opcje filtrowania i kwerend dostępne dla operatora „do
 <td><em>wartość</em>,<em>wartość</em> (przecinek)</td>
 <td>Zgodne z wprowadzonymi wartościami, rozdzielonymi przecinkami</td>
 <td>Wpisz wszystkie kryteria, rozdzielając je przecinkami.</td>
-<td>Wyrażenie <strong>A, D, F, G</strong> pozwala wyszukać dokładnie &quot;A&quot;, &quot;D&quot;, &quot;F&quot; i &quot;G&quot;. Wyrażenie <strong>10, 20, 30, 100</strong> pozwala wyszukać dokładnie &quot;10, 20, 30, 100&quot;.</td>
+<td>Wyrażenie <strong>A, D, F, G</strong> pozwala wyszukać dokładnie &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, i &quot;G&quot;. Wyrażenie <strong>10, 20, 30, 100</strong> pozwala wyszukać dokładnie &quot;10, 20, 30, 100&quot;.</td>
 </tr>
 <tr class="odd">
 <td>(<span class="code">Instrukcji SQL</span>) (Instrukcja SQL w nawiasach okrągłych)</td>
