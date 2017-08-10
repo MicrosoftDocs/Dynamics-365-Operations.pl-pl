@@ -3,7 +3,7 @@ title: "Konfiguracja kompensacji odbiorców oraz dostawców"
 description: "Ten temat zawiera informacje o sposobach wykonywania procesu kompensat na kontach dostawców i odbiorców dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce."
 author: mrolecki
 manager: AnnBe
-ms.date: 05-19-2017
+ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
