@@ -1,6 +1,6 @@
 ---
-title: Zapytania ofertowe (RFQ)
-description: "W tym artykule omówiono funkcjonalność zapytań ofertowych (ZO), które organizacje wystawiają, kiedy muszą kupić towary lub usługi, a chcą otrzymać konkurencyjne oferty od kilku dostawców. W ZO dostawcy są proszeni o podanie cen i terminów dostaw dla ilości towarów określonych przez użytkownika. Można również poprosić dostawców, aby określili, czy są jakieś dodatkowe opłaty, takie jak koszty wysyłki, albo zniżki za duże zamówienia lub szybką zapłatę faktury."
+title: Zapytania ofertowe
+description: "W tym temacie omówiono funkcjonalność zapytań ofertowych (ZO), które organizacje wystawiają, kiedy muszą kupić towary lub usługi, a chcą otrzymać konkurencyjne oferty od kilku dostawców."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 06/20/2017
@@ -10,34 +10,34 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2154
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d681f4c107a9dbc1ea8c5e1de38b2d45cf19bcfa
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 47e394c8642f502c698dbcd5506979b7cac0a830
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="request-for-quotations-rfqs"></a>Zapytania ofertowe (RFQ)
+# <a name="request-for-quotations-rfqs"></a>Zapytania ofertowe
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym artykule omówiono funkcjonalność zapytań ofertowych (ZO), które organizacje wystawiają, kiedy muszą kupić towary lub usługi, a chcą otrzymać konkurencyjne oferty od kilku dostawców. W ZO dostawcy są proszeni o podanie cen i terminów dostaw dla ilości towarów określonych przez użytkownika. Można również poprosić dostawców, aby określili, czy są jakieś dodatkowe opłaty, takie jak koszty wysyłki, albo zniżki za duże zamówienia lub szybką zapłatę faktury.
+W tym temacie omówiono funkcjonalność zapytań ofertowych (ZO), które organizacje wystawiają, kiedy muszą kupić towary lub usługi, a chcą otrzymać konkurencyjne oferty od kilku dostawców. W ZO dostawcy są proszeni o podanie cen i terminów dostaw dla ilości towarów określonych przez użytkownika. Można również poprosić dostawców, aby określili, czy są jakieś dodatkowe opłaty, takie jak koszty wysyłki, albo zniżki za duże zamówienia lub szybką zapłatę faktury.
 
 Proces zapytania ofertowego obejmuje następujące zadania:
 
 -   tworzenie i wysyłanie ZO do jednego lub większej liczby dostawców,
--   odbieranie i rejestrowanie odpowiedzi na ZO (oferty),
--   przenoszenie zaakceptowanych ofert do zamówienia zakupu, umowy zakupu lub zapotrzebowania na zakup.
+-   Odbieranie i rejestrowanie odpowiedzi na ZO (oferty).
+-   Przenoszenie zaakceptowanych ofert do zamówienia zakupu, umowy zakupu lub zapotrzebowania na zakup.
 
 Na poniższej ilustracji przedstawiono przegląd procesu ZO.  
 
@@ -49,7 +49,7 @@ Jeśli trzeba zmienić ZO po jego wysłaniu, można wysłać ponownie ZO do dost
 
 Po otrzymaniu ofert, należy wprowadzić je na stronie **Odpowiedzi na zapytanie ofertowe**. Jeśli wybierzesz opcję **Kopiuj dane do odpowiedzi**, dane jak ilość i daty ze sprawy ZO zostaną skopiowane do odpowiedzi. Można zmienić te dane, tak aby odzwierciedlały ofertę dostawcy.  
 
-Jeśli w przypadku określonego dostawcy wymagana jest druga iteracja odpowiedzi, kliknij **zwrot**na stronie **Odpowiedź na zapytanie ofertowe**. Akcja zwrotu tworzy nowy arkusz i raport, który będzie można wydrukować, archiwizować i wysyłać zgodnie z ustawieniami zarządzania drukowaniem.  
+Jeśli w przypadku określonego dostawcy wymagana jest druga iteracja odpowiedzi, kliknij **zwrot** na stronie **Odpowiedź na zapytanie ofertowe**. Akcja zwrotu tworzy nowy arkusz i raport, który będzie można wydrukować, archiwizować i wysyłać zgodnie z ustawieniami zarządzania drukowaniem.  
 
 Po dodaniu do sprawy ZO kryteriów punktowania, odpowiedzi na ZO będą miały panel punktowania, w którym można wprowadzać oceny. Łączny wynik będzie wyświetlany podczas porównywania odpowiedzi na stronie **porównania odpowiedzi**, gdzie można porównać również inne dane dotyczące odpowiedzi, takie jak cena wiersza, data dostawy i łączna cena.  
 
@@ -66,17 +66,17 @@ Sekwencja stanów dla przetwarzania ZO jest następująca:
 3.  **Odebrane**
 4.  **Zaakceptowane**/**Anulowane**/**Odrzucone**
 
-Stany zostaną opisane bardziej szczegółowo w kolejnych rozdziałach tego artykułu.
+Stany zostaną opisane bardziej szczegółowo w kolejnych rozdziałach tego tematu.
 
 ## <a name="setting-up-rfq-functionality"></a>Konfigurowanie funkcji ZO
 Aby można było tworzyć sprawy ZO, należy skonfigurować informacje ZO na stronie **Parametry modułu Zaopatrzenie i sourcing**. Po utworzeniu sprawy ZO można określić wartości domyślne, które są kopiowane do ZO. Można określić następujące wartości domyślne:
 
--   Typ zakupu nowych ZO: **Zamówienia zakupu** lub **Umowy zakupu**
--   Ustawienia daty i godziny ważności
+-   Typ zakupu nowych ZO: **Zamówienie zakupu** lub **Umowa zakupu**.
+-   Ustawienia daty i godziny ważności.
 -   Informacje o dostawie i warunki płatności.
--   Pola, które powinny znajdować się w odpowiedzi na ZO
+-   Pola, które powinny znajdować się w odpowiedzi na ZO.
 
-Można zastąpić te wartości dla określonej sprawy ZO. Należy także skonfigurować proces poprawki. W ramach tej konfiguracji można włączyć pole blokowania. Jeśli pole blokowania jest włączone, najpierw pracownik działu zaopatrzenia, który chce zmienić ZO, musi kliknąć **Utwórz** w sekcji **Poprawki** na karcie **Oferta**. Po aktualizacji ZO i wprowadzeniu poprawki pracownik działu zaopatrzenia musi ukończyć proces, klikając przycisk **Finalizuj**.** **Akcja Finalizuj generuje wiadomość e-mail powiadamiającą dostawcę o poprawionym ZO. Szablon powiadomienia e-mail przesyłanego do dostawców można wybrać na stronie **Parametry modułu Zaopatrzenie i sourcing**. Po utworzeniu szablon może zawierać następujące tokeny wymiany:
+Można zastąpić te wartości dla określonej sprawy ZO. Należy także skonfigurować proces poprawki. W ramach tej konfiguracji można włączyć pole blokowania. Jeśli pole blokowania jest włączone, najpierw pracownik działu zaopatrzenia, który chce zmienić ZO, musi kliknąć **Utwórz** w sekcji **Poprawki** na karcie **Oferta**. Po aktualizacji ZO i wprowadzeniu poprawki pracownik działu zaopatrzenia musi ukończyć proces, klikając przycisk **Finalizuj**. Akcja **Finalizuj** generuje wiadomość e-mail powiadamiającą dostawcę o poprawionym ZO. Szablon powiadomienia e-mail przesyłanego do dostawców można wybrać na stronie **Parametry modułu Zaopatrzenie i sourcing**. Po utworzeniu szablon może zawierać następujące tokeny wymiany:
 
 -   %Przyczyna zwrotu oferty%
 -   %Przyczyna sporządzenia poprawki%
@@ -87,7 +87,10 @@ Tokeny %Przyczyna zwrotu oferty% i %Przyczyna sporządzenia poprawki% zastępuje
 
 Jeśli chcesz użyć kodów przyczyn w odpowiedzi na ZO, aby wskazać, dlaczego oferta została zaakceptowana lub odrzucona, musisz ustawić te kody na stronie **przyczyny dotyczące dostawcy**.  
 
-Na stronie **ustawienia formularza** w module Zaopatrzenie i sourcing można skonfigurować wygląd drukowanych lub przechowywanych dokumentów ZO.  
+Na stronie **ustawienia formularza** w module Zaopatrzenie i sourcing można skonfigurować wygląd drukowanych lub przechowywanych dokumentów ZO. 
+
+**Uwaga:** W konfiguracji dla sektora publicznego wszelkie zmiany wprowadzone w ZO, które już zostało wysłane, wymagają stosowania procesu poprawki. Po wysłaniu zapytania ofertowego pola są blokowane, więc kliknięcie przycisku **Utwórz** w celu użycia procesu poprawki jest obowiązkowym krokiem dla wprowadzenia zmian do zapytania ofertowego.
+To zachowanie jest kontrolowane za pomocą parametru blokowania pól **Zablokuj ZO, gdy zostaną wysłane** znajdującego się w oknie **Parametry modułu Zaopatrzenie i sourcing**. Ten parametr ma ustawioną wartość **Tak** i w konfiguracji dla sektora publicznego jest to ustawienie domyślne, którego nie można zmienić. Oznacza to, że o ile proces poprawki może być obsługiwany ręcznie w konfiguracji dla sektora prywatnego, w sektorze publicznym obowiązuje proces poprawki z blokowaniem pól po wysłaniu zapytania ofertowego.
 
 Gdy tworzysz ZO dla zamówienia zakupu i dodajesz towar magazynowy do ZO, zostaje wygenerowana transakcja magazynowa, która ma stan przyjęcia **Otrzymanie oferty**. Tylko wiersze ZO z tym stanem są uwzględniane podczas korzystania z planu głównego do obliczania dostaw. Aby uwzględniać wiersze ZO jako oczekiwane przyjęcia planu głównego, należy skonfigurować to zachowanie w ustawieniach planowania głównego.  
 
@@ -137,7 +140,7 @@ W poniższej tabeli przedstawiono, jak zmienia się stan ZO przy tworzeniu ZO i 
 **Uwaga:** Można dodać kolejnych dostawców do ZO w dowolnym momencie, a najniższe i najwyższe stany zmieniają się, aby odzwierciedlić nowych dostawców, którzy zostali dodani. Na przykład, jeśli otrzymano oferty od wszystkich dostawców, a co najmniej jeden wiersz oferty zaakceptowano, najniższy stan w nagłówku ZO to **Odrzucono**, a najwyższy stan to **Zaakceptowany**. Po dodaniu nowego dostawcy, najniższy stan w dowolnym wierszu zostanie zmieniony na **Utworzono**. Dlatego najniższy stan w nagłówku ZO zmienia się na **Utworzono**, a najwyższy stan pozostaje **Zaakceptowane**.
 
 ## <a name="amending-an-rfq"></a>Zmienianie ZO
-Czasami trzeba zmienić ZO, które zostało już wysłane. Taka sytuacja może wystąpić, na przykład gdy zmienią się terminy dostawy lub trzeba dodać produkty albo zmienić ilości produktów. Proces zmiany można skonfigurować w taki sposób, by był bardziej lub mniej restrykcyjny.  
+Czasami trzeba zmienić ZO, które zostało już wysłane. Na przykład taka sytuacja może wystąpić, gdy zmienią się terminy dostawy lub trzeba dodać produkty albo zmienić ilości produktów. Proces zmiany można skonfigurować w taki sposób, by był bardziej lub mniej restrykcyjny.  
 
 W przypadku metody bardziej restrykcyjnej, trzeba kliknąć przycisk **Utwórz** w sprawie ZO, aby uruchomić proces zmian. Inaczej pola w sprawie ZO nie są dostępne do edycji. Po wprowadzeniu zmian należy kliknąć **Finalizuj**. Następnie redaguje się powiadomienia wysyłane e-mailem do dostawców i informujące ich o wprowadzonych zmianach. Zaktualizowany raport ZO z informacją o zmianie jest automatycznie dołączany do wiadomości.  
 
@@ -181,7 +184,7 @@ Po zaakceptowaniu odpowiedzi na ZO typu **Zapotrzebowanie na zakup**, wiersze ta
 
 Po uzyskaniu odpowiedzi można dodać kod przyczyny wyjaśniającej, dlaczego oferta została przyjęta lub odrzucona.  
 
-Można zaakceptować niektóre wiersze oferty i odrzucić inne. Można również zaakceptować wiersze pochodzące od różnych dostawców. Trzeba tylko pamiętać, że w przypadku zaakceptowania niektórych wierszy pojawi się monit o odrzuceniu wszystkich pozostałych. Aby zaakceptować te pozostałe wiersze, trzeba kliknąć **Anuluj** po pojawieniu się monitu.  
+Można zaakceptować niektóre wiersze oferty i odrzucić inne. Można również zaakceptować wiersze pochodzące od różnych dostawców. Trzeba pamiętać, że w przypadku zaakceptowania niektórych wierszy pojawi się monit o odrzuceniu wszystkich pozostałych. Aby zaakceptować te pozostałe wiersze, trzeba kliknąć **Anuluj** po pojawieniu się monitu.  
 
 W poniższej tabeli przedstawiono, jak zmienia się stan ZO w przypadku akceptowania lub odrzucania ofert od dostawców.
 

@@ -18,13 +18,12 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: e520c292b7350f332649f23fb4232e7ecd191776
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.translationtype: HT
+ms.sourcegitcommit: 9ea9eb66abf7898ce735e1204259fcc9b9523c52
+ms.openlocfilehash: 404803c6317b2aeda78de86d4ba11987b2a8cf65
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +34,7 @@ ms.lasthandoff: 06/13/2017
 
 Ten temat zawiera wprowadzenie do koncepcji wyceny wstecznej używanej w produkcji oszczędnej. 
 
-Funkcjonalność wyceny w produkcji wstecznej pozwala, aby w przepływie produkcji używać metody akumulacji kosztów znanej jako wycena wsteczna. W metodzie wyceny wstecznej zużywane materiały bezpośrednie są kumulowane na koncie kosztów pracy w toku (PWT) przepływu produkcji. Jest używana grupa modeli magazynu z kosztem standardowym. Produkty przyjmowane z przepływu produkcji są odejmowane od PWT według ich kosztu standardowego. Główna różnica między wyceną wsteczną a kosztem standardowym polega na tym, że w wycenie wstecznej odchylenia nie są obliczane dla poszczególnych kart Kanban ani wyrobów gotowych. Zamiast tego odchylenia są obliczane dla przepływu produkcji w okresie. Ta metoda wprowadza mechanizm zgłaszania zużycia materiałów rzeczywiście zgodnego z koncepcją produkcji oszczędnej. Dedykowane pobrane ilości materiału nie są zgłaszane względem karty Kanban ani zlecenia produkcyjnego. Zamiast tego pełne partie lub jednostki załadunkowe są umieszczane w przepływie produkcji. Po zarejestrowaniu partii lub jednostek załadunkowych jako pustych są one deklarowane jako zużyte. Może być wykorzystywane zaawansowane zużycie, zależnie od [konfiguracji przepływu produkcji](http://ax.help.dynamics.com/en/wiki/lean-manufacturing-modeling-the-lean-organization/). Aby można było stosować zaawansowane zużycie, organizacje muszą włączyć możliwość znikania materiałów w PWT przepływu produkcji. Okresowa wycena wsteczna określa efektywną wartość PWT na koniec okresu. To ustalenie bazuje na jednostkach załadunkowych w systemie Kanban i stanie zadania w systemie Kanban. Odchylenia między wartościami efektywnymi a rzeczywistymi wartościami PWT według grup kosztów i towarów są księgowane i wykazywane jako odchylenia.
+Funkcjonalność wyceny w produkcji wstecznej pozwala, aby w przepływie produkcji używać metody akumulacji kosztów znanej jako wycena wsteczna. W metodzie wyceny wstecznej zużywane materiały bezpośrednie są kumulowane na koncie kosztów pracy w toku (PWT) przepływu produkcji. Jest używana grupa modeli magazynu z kosztem standardowym. Produkty przyjmowane z przepływu produkcji są odejmowane od PWT według ich kosztu standardowego. Główna różnica między wyceną wsteczną a kosztem standardowym polega na tym, że w wycenie wstecznej odchylenia nie są obliczane dla poszczególnych kart Kanban ani wyrobów gotowych. Zamiast tego odchylenia są obliczane dla przepływu produkcji w okresie. Ta metoda wprowadza mechanizm zgłaszania zużycia materiałów rzeczywiście zgodnego z koncepcją produkcji oszczędnej. Dedykowane pobrane ilości materiału nie są zgłaszane względem karty Kanban ani zlecenia produkcyjnego. Zamiast tego pełne partie lub jednostki załadunkowe są umieszczane w przepływie produkcji. Po zarejestrowaniu partii lub jednostek załadunkowych jako pustych są one deklarowane jako zużyte. Może być wykorzystywane zaawansowane zużycie, zależnie od [konfiguracji przepływu produkcji](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-modeling-lean-organization). Aby można było stosować zaawansowane zużycie, organizacje muszą włączyć możliwość znikania materiałów w PWT przepływu produkcji. Okresowa wycena wsteczna określa efektywną wartość PWT na koniec okresu. To ustalenie bazuje na jednostkach załadunkowych w systemie Kanban i stanie zadania w systemie Kanban. Odchylenia między wartościami efektywnymi a rzeczywistymi wartościami PWT według grup kosztów i towarów są księgowane i wykazywane jako odchylenia.
 
 ## <a name="configuring-backflush-costing"></a>Konfigurowanie wyceny wstecznej
 Aby umożliwić kalkulację kosztów (wycenę), należy wykonać następujące czynności konfiguracyjne:

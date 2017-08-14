@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: cf6d4756ae706316a342590ab76b4a5cbdd7e4f9
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 6e9402eb1fd559784a9013f91205503d806e2a44
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,58 +36,58 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 
 ## <a name="purchase-requisitions"></a>Zapotrzebowania na zakup
 -   [Omówienie zapotrzebowania na zakup](purchase-requisitions-overview.md)
--   [Tworzenie zapotrzebowania na zużycie](http://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
--   [Tworzenie zapotrzebowania wykorzystującego ZO](http://ax.help.dynamics.com/en/wiki/create-a-requisition-that-uses-an-rfq/)
--   [Tworzenie uprawnień do zamawiania produktów w imieniu innej osoby](http://ax.help.dynamics.com/en/wiki/set-up-permissions-for-ordering-products-on-behalf-of-someone-else/)
+-   [Tworzenie zapotrzebowania na zużycie](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-requisition-consumption)
+-   [Tworzenie zapotrzebowania wykorzystującego ZO](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-requisition-uses-rfq)
+-   [Tworzenie uprawnień do zamawiania produktów w imieniu innej osoby](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-permissions-ordering-products)
 
 ## <a name="requests-for-quotation"></a>Zapytanie ofertowe
 -   [Zapytania ofertowe](request-quotations.md)
--   [Tworzenie zapytania ofertowego](http://ax.help.dynamics.com/en/wiki/create-a-request-for-quotation/)
--   [Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień](http://ax.help.dynamics.com/en/wiki/enter-and-compare-rfq-bids-and-award-contracts/)
--   [Tworzenie metody punktowania dla ZO](http://ax.help.dynamics.com/en/wiki/create-a-scoring-method-for-rfqs/)
--   [Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO](http://ax.help.dynamics.com/en/wiki/create-solicitation-types-and-scoring-criteria-for-rfqs/)
+-   [Tworzenie zapytania ofertowego](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-request-quotation)
+-   [Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień](/dynamics365/unified-operations/supply-chain/procurement/tasks/enter-compare-rfq-bids-award-contracts)
+-   [Tworzenie metody punktowania dla ZO](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-scoring-method-rfqs)
+-   [Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-solicitation-types-scoring-criteria-rfqs)
 
 ## <a name="vendor-management-and-collaboration"></a>Zarządzanie i współpraca z dostawcami
 -   [Ustawianie kont dostawców](set-up-vendor-accounts.md)
--   [Tworzenie konta dostawcy](http://ax.help.dynamics.com/en/wiki/create-a-vendor-account/)
--   [Tworzenie konta bankowego dostawcy](http://ax.help.dynamics.com/en/wiki/create-a-vendor-bank-account/)
--   [Szukanie dostawców](http://ax.help.dynamics.com/en/wiki/search-for-vendors/)
--   [Zatwierdzanie dostawców określonych produktów](http://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-products/)
+-   [Utworzenie konta dostawcy](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-vendor-account)
+-   [Tworzenie konta bankowego dostawcy](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-vendor-bank-account)
+-   [Szukanie dostawców](/dynamics365/unified-operations/supply-chain/procurement/tasks/search-vendors)
+-   [Zatwierdzanie dostawców określonych produktów](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-products)
 -   [Współpraca z zewnętrznymi dostawcami](vendor-collaboration-work-external-vendors.md)
 -   [Współpraca dostawców z odbiorcami](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md)
 -   [Konfigurowanie i obsługa współpracy z dostawcami](set-up-maintain-vendor-collaboration.md)
 -   [Skrypt demonstracji przychodzących zapasów konsygnacyjnych w programie Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(oficjalny dokument)
--   [Monitorowanie zapasów konsygnacyjnych poprzez współpracę z dostawcami](http://ax.help.dynamics.com/en/wiki/monitor-consignment-inventory-using-vendor-collaboration/)
+-   [Monitorowanie zapasów konsygnacyjnych poprzez współpracę z dostawcami](/dynamics365/unified-operations/supply-chain/inventory/tasks/monitor-consignment-inventory-vendor-collaboration)
 -   [Współpraca z dostawcami za pomocą portalu dostawców](collaborate-vendors-vendor-portal.md) (tylko wersje systemu Dynamics AX z lutego i maja 2016 roku)
 -   [Konfiguracja zabezpieczeń użytkowników portalu dostawców](configure-security-vendor-portal-users.md) (tylko wersje programu Finance and Operations z lutego i maja 2016 roku)
 -   [Mobilny obszar roboczy Współpraca z dostawcami dla aplikacji Microsoft Dynamics 365 for Finance and Operations](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Zarządzanie zaopatrzeniem w produkty
 -   [Katalogi zaopatrzenia](procurement-catalogs.md)
--   [Tworzenie katalogu zaopatrzenia](http://ax.help.dynamics.com/en/wiki/create-a-procurement-catalog/)
+-   [Tworzenie katalogu zaopatrzenia](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-procurement-catalog)
 -   [Importowanie katalogów dostawców](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (wpis na blogu)
--   [Ustawianie hierarchii kategorii zaopatrzenia](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
--   [Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia](http://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/)
--   [Zatwierdzanie dostawców dla konkretnych kategorii zaopatrzenia](http://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/)
+-   [Ustawianie hierarchii kategorii zaopatrzenia](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-procurement-category-hierarchy)
+-   [Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies)
+-   [Zatwierdzanie dostawców dla konkretnych kategorii zaopatrzenia](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories)
 
 ## <a name="procurement"></a>Zaopatrzenie
 -   [Omówienie zamówień zakupu](purchase-order-overview.md)
 -   [Tworzenie zamówienia zakupu](purchase-order-creation.md)
 -   [Zatwierdzanie i potwierdzanie zamówienia zakupu](purchase-order-approval-confirmation.md)
--   [Tworzenie zamówienia zakupu](http://ax.help.dynamics.com/en/wiki/create-a-purchase-order/)
--   [Tworzenie powtarzalnego zamówienia zakupu](http://ax.help.dynamics.com/en/wiki/create-a-repeat-purchase-order/)
--   [Tworzenie zamówienia zakupu na podstawie zamówienia sprzedaży](http://ax.help.dynamics.com/en/wiki/create-a-purchase-order-from-a-sales-order/)
--   [Tworzenie zamówienia zakupu dla dostawcy jednorazowego](http://ax.help.dynamics.com/en/wiki/create-a-purchase-order-for-a-one-time-supplier/)
--   [Tworzenie zamówienia zakupu z harmonogramem dostaw](http://ax.help.dynamics.com/en/wiki/create-a-purchase-order-with-a-delivery-schedule/)
--   [Tworzenie zamówienia zwrotu zakupu](http://ax.help.dynamics.com/en/wiki/create-a-purchase-return-order/)
--   [Tworzenie zlecenia wydania zakupu na podstawie umów zakupu](http://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
--   [Tworzenie zlecenia wydania zakupu podczas tworzenia zamówienia zakupu](http://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-when-creating-the-purchase-order/)
--   [Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych](http://ax.help.dynamics.com/en/wiki/create-a-consignment-replenishment-order/)
+-   [Tworzenie zamówienia zakupu](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-order)
+-   [Tworzenie powtarzalnego zamówienia zakupu](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-repeat-purchase-order)
+-   [Tworzenie zamówienia zakupu na podstawie zamówienia sprzedaży](/dynamics365/unified-operations/supply-chain/sales-marketing/tasks/create-purchase-order-sales-order)
+-   [Tworzenie zamówienia zakupu dla dostawcy jednorazowego](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-order-one-time-supplier)
+-   [Tworzenie zamówienia zakupu z harmonogramem dostaw](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-order-delivery-schedule)
+-   [Tworzenie zamówienia zwrotu zakupu](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-return-order)
+-   [Tworzenie zlecenia wydania zakupu na podstawie umów zakupu](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement)
+-   [Tworzenie zlecenia wydania zakupu podczas tworzenia zamówienia zakupu](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-release-order-creating-purchase-order)
+-   [Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-consignment-replenishment-order)
 
 ## <a name="prices-and-discounts"></a>Ceny i rabaty
 -   [Umowy zakupu](purchase-agreements.md)
--   [Tworzenie umowy zakupu](http://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
+-   [Tworzenie umowy zakupu](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchase-agreement)
 -   [Rabaty dostawców](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (oficjalny dokument)
 
 ## <a name="product-receipt-and-invoicing"></a>Dokument przyjęcia produktów i fakturowanie
@@ -98,11 +98,11 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 ## <a name="procurement-and-sourcing-workflows"></a>Przepływy pracy dla zaopatrzenia i sourcingu
 -   [Omówienie zaopatrzenia i sourcingu](procurement-sourcing-overview.md)
 -   [Przepływy pracy dla zaopatrzenia i sourcingu](procurement-sourcing-workflows.md)
--   [Rejestrowanie przyjęcia towarów w zamówieniu zakupu](http://ax.help.dynamics.com/en/wiki/record-receipt-of-goods-on-a-purchase-order/)
+-   [Rejestrowanie przyjęcia towarów w zamówieniu zakupu](/dynamics365/unified-operations/supply-chain/procurement/tasks/record-receipt-goods-purchase-order)
 -   [Przepływ pracy zapotrzebowania na zakup](purchase-requisitions-workflow.md)
 -   [Definiowanie przepływów pracy procesów biznesowych dla zapotrzebowań na zakup](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (oficjalny dokument)
 -   [Zasady zakupów](purchase-policies.md)
--   [Tworzenie zasad zakupów](http://ax.help.dynamics.com/en/wiki/create-purchasing-policies/)
+-   [Tworzenie zasad zakupów](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-purchasing-policies)
 
 
 

@@ -3,26 +3,26 @@ title: "Tworzenie płatności dla dostawców za pomocą propozycji płatności"
 description: "Ten temat zawiera omówienie opcji propozycji płatności wraz z przykładami pokazującymi działanie propozycji płatności. Propozycje płatności są często używane do tworzenia płatności dostawcy, ponieważ za pomocą zapytań można szybko wybrać faktury dostawcy do zapłaty na podstawie kryteriów takich jak termin i rabat gotówkowy."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b351ea58a25c763dcf90ff1c61e0e3b3cba6c34a
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: aac70abc25c45ef4479425cdb648f4450d5db2dc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -39,8 +39,8 @@ Kwerenda propozycji płatności zawiera różne karty, z których każda ma ró�
 
 ## <a name="parameters"></a>Parametry
 -   **Wybierz faktury według** — Faktury w zakresie dat określonym przy użyciu pól **Od dnia** i **Do dnia** można wybrać według daty płatności, daty rabatu gotówkowego lub obu tych parametrów. W przypadku użycia daty rabatu gotówkowego system szuka najpierw faktur z datą rabatu gotówkowego między datami początkową i końcową. Następnie system za pomocą daty sesji określa, czy faktura kwalifikuje się do uzyskania rabatu gotówkowego, aby mieć pewność, że data rabatu nie upłynęła.
--   **Od dnia** i**Do dnia** — faktury z datą płatności lub rabatu gotówkowego w tym zakresie dat zostaną zaznaczone do opłacenia.
--   **Data płatności** — jeśli została zdefiniowana, wszystkie płatności zostaną utworzone tego dnia. Pole **Minimalna data płatności** jest ignorowane.
+-   **Od dnia** i **Do dnia** — faktury z datą płatności lub rabatu gotówkowego w tym zakresie dat zostaną zaznaczone do opłacenia.
+-   **Data płatności** — Ta opcja jest używane tylko wtedy, gdy pole **Okres** w metodzie płatności zawiera wartość **Suma**. Jeśli data jest zdefiniowana, wszystkie płatności zostaną utworzone tego dnia. Pole **Minimalna data płatności** jest ignorowane.
 -   **Minimalna data płatności** — służy do wprowadzania daty minimalnej płatności. Na przykład pola **Od dnia** i **Do dnia** określają zakres od 1 września do 10 września, a minimalną datą płatności jest 5 września. W takim przypadku wszystkie faktury z datą płatności od 1 do 5 będą miały datę płatności 5 września, ale wszystkie faktury z datą płatności między 5 a 10 września będą miały daty płatności takie, jakie określono na poszczególnych fakturach.
 -   **Limit kwoty** — wprowadź maksymalną kwotę całkowitą dla wszystkich płatności.
 -   **Utwórz płatności bez przeglądania faktury** — Jeśli ustawisz tę opcję na **Tak**, płatności zostaną utworzone bezpośrednio na stronie **Płatności dostawcy**. Strona **Propozycja płatności** zostanie pominięta. Dzięki temu płatności zostaną utworzone szybciej. Płatności mogą być nadal modyfikowane na stronie **Płatności dostawcy**. Można też wrócić na stronę **propozycji płatności**, klikając przycisk **Edytuj faktury dla wybranej płatności**.
@@ -48,7 +48,7 @@ Kwerenda propozycji płatności zawiera różne karty, z których każda ma ró�
 ## <a name="advanced-options"></a>Opcje zaawansowane
 -   **Sprawdź saldo dostawcy** — jeśli ta opcja jest ustawiona jako **Tak**, system sprawdza przed opłaceniem faktur, czy dostawca nie ma salda debetowego. Jeśli dostawca ma saldo debetowe, płatność nie zostanie utworzona. Na przykład dostawca może mieć noty kredytowe lub zaksięgowane, ale jeszcze nierozliczone płatności. W takim przypadku nie należy płacić dostawcy. Zamiast tego noty kredytowe lub płatności powinny zostać rozliczone względem niezapłaconych faktur.
 -   **Usuń ujemne płatności** — opcja ta działa różnie, w zależności od tego, czy płatności dotyczą poszczególnych faktur czy sumy faktur spełniających kryteria płatności. Ta opcja jest określana w metodzie płatności.
--   **Płatność dla każdej faktury** — jeśli opcja **Usuń ujemne płatności** jest ustawiona jako **Tak**, a istnieją nierozliczone faktury i płatności dla dostawcy, tylko faktura zostanie zaznaczona do płatności. Płatność jest rozliczana na podstawie faktury na kwotę. Jeśli opcja **Usuń ujemne płatności** jest ustawiona jako **Nie**i nie są rozliczane faktury i płatności, do zapłacenia zostaną wybrane i faktury i płatności. Dla płatności jest tworzona płatność i zwrot (płatność ujemna).
+-   **Płatność dla każdej faktury** — jeśli opcja **Usuń ujemne płatności** jest ustawiona jako **Tak**, a istnieją nierozliczone faktury i płatności dla dostawcy, tylko faktura zostanie zaznaczona do płatności. Płatność jest rozliczana na podstawie faktury na kwotę. Jeśli opcja **Usuń ujemne płatności** jest ustawiona jako **Nie** i nie są rozliczane faktury i płatności, do zapłacenia zostaną wybrane i faktury i płatności. Dla płatności jest tworzona płatność i zwrot (płatność ujemna).
 -   **Płatności dla sumy faktur** — w przypadku ustawienia opcji **Usuń ujemne płatności** jako **Tak**, a istnieją nierozliczone faktury i płatności dla dostawcy, do płatności zostanie wybrana nierozliczona faktura i płatność, a kwoty te są sumowane w łączną kwotę płatności. Jedyny wyjątek występuje wtedy, jeśli suma skutkuje zwrotem. W takim przypadku faktury ani płatności nie są zaznaczane. Jeżeli opcja **Usuń ujemne płatności** jest ustawiona jako **Nie**, a faktura i płatność nie są rozliczone, zarówno faktura, jak i płatność są wybrane do płatności, natomiast kwoty są sumowane w łączną kwotę płatności.
 -   **Drukuj tylko raport** — ustaw tę opcję jako **Tak**, aby zobaczyć wyniki propozycji płatności w raporcie, ale bez tworzenia płatności.
 -   **Uwzględnij faktury od dostawców z innych firm** — jeśli dana organizacja ma scentralizowany proces płatności i propozycji płatności, a propozycja płatności powinna uwzględniać faktury z innych firm zamieszczonych w kryteriach wyszukiwania, ustaw tę opcję na **Tak**.

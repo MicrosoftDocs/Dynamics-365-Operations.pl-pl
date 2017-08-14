@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b0aefc62f2d54da963f03dc74d492260722cd451
-ms.openlocfilehash: aabb8277218895566edada3c74d99c02a83dae1e
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: cbd099403f48b502ca74bcb38ae12decedb8f2da
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/15/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,7 +36,7 @@ Moduł **Współpraca z dostawcami** jest przeznaczony dla dostawców, którzy n
 
 Aby uzyskać więcej informacji o tym, jak dostawcy mogą wykorzystywać portal współpracy z dostawcami w procesach fakturowania, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). Aby uzyskać więcej informacji o inicjowaniu obsługi nowych użytkowników portalu współpracy z dostawcami, zobacz [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md).
 
-Aby uzyskać więcej informacji o tym, jak dostawcy mogą wykorzystywać portal współpracy z dostawcami w procesach fakturowania, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace). 
+Aby uzyskać więcej informacji o tym, jak dostawcy mogą wykorzystywać portal współpracy z dostawcami w procesach fakturowania, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). 
 
 Aby uzyskać więcej informacji o inicjowaniu obsługi nowych użytkowników portalu współpracy z dostawcami, zobacz [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md).
 
@@ -196,12 +196,16 @@ Jeśli dla zamówień zakupu włączono funkcję zarządzania zmianami, zamówie
 
 W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może przechodzić zamówienie zakupu przy włączonej opcji zarządzania zmianami. Wersja jest rejestrowana po zatwierdzeniu zamówienia, a nie wtedy, gdy zamówienie zakupu zostanie wysłane do dostawcy lub potwierdzone.
 
-|                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                             |
-|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Akcja**                                                                                                    | **Stan i wersja**                                                                                                                                                                                                                                                                                                                                                                      |
-| Pierwotna wersja zamówienia zakupu jest tworzona w programie Finance and Operations.                                      | Stan to **Wersja robocza**.                                                                                                                                                                                                                                                                                                                                                                    |
-
-| Zamówienie zakupu jest wysyłane do procesu zatwierdzania. (Proces zatwierdzania jest procesem wewnętrznym, w którym dostawca nie uczestniczy). | Stan zmienia się z **Wersja robocza** na **W trakcie przeglądu** i dalej na **Zatwierdzenie**, jeśli zamówienie zakupu nie zostanie odrzucone w procesie zatwierdzania. Zatwierdzone zamówienie zakupu jest rejestrowane jako wersja.                                                                                                                                                                                                                     | | Zamówienie zakupu jest wysyłane do dostawcy                                                                                  | Wersja jest rejestrowana w interfejsie współpracy z dostawcami, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**.                                                                                                                                                                                                                                                                       | | Wprowadzasz kilka zmian, o które prosił dostawca, ręcznie lub za pomocą akcji w odpowiedzi, i w ten sposób aktualizujesz zamówienie zakupu.                                                       | Stan zostaje zmieniony z powrotem na **Wersja robocza**.                                                                                                                                                                                                                                                                                                                                                    | | Zamówienie zakupu jest wysyłane z powrotem do procesu zatwierdzania.                                                            | Stan zmienia się z **Wersja robocza** na **W trakcie przeglądu** i dalej na **Zatwierdzenie**, jeśli zamówienie zakupu nie zostanie odrzucone w procesie zatwierdzania. Alternatywnie można skonfigurować system w taki sposób, żeby modyfikacje w określonych polach nie wymagały ponownego zatwierdzania. W takim przypadku stan zmienia się najpierw na **Wersja robocza**, a następnie jest automatycznie aktualizowany do wartości **Zatwierdzone**. Zatwierdzone zamówienie zakupu jest rejestrowane jako nowa wersja. | | Wysyłasz nową wersję zamówienia zakupu do dostawcy.                                                             | Nowa wersja jest rejestrowana w interfejsie współpracy z dostawcami, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**.                                                                                                                                                                                                                                                                   | | Dostawca zatwierdza nową wersję zamówienia zakupu.                                                                | Stan zmienia się na **Potwierdzone** automatycznie lub po otrzymaniu odpowiedzi od dostawcy i następnie ręcznym potwierdzeniu.                                                                                                                                                                                                                                                     |
+|                                                                          |                                                                                                                                                              |
+|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Akcja**                                                               | **Stan i wersja**                                                                                                                                       |
+| Pierwotna wersja zamówienia zakupu jest tworzona w programie Finance and Operations.      | Stan to **Wersja robocza**.  |
+| Zamówienie zakupu jest wysyłane do procesu zatwierdzania (Proces zatwierdzania jest procesem wewnętrznym, w którym dostawca nie uczestniczy).                                                           | Stan zmienia się z **Wersja robocza** na **W trakcie przeglądu** i dalej na **Zatwierdzenie**, jeśli zamówienie zakupu nie zostanie odrzucone w procesie zatwierdzania. Zatwierdzone zamówienie zakupu jest rejestrowane jako wersja.           | 
+| Zamówienie zakupu jest wysyłane do dostawcy.                                                            | Wersja jest rejestrowana w interfejsie współpracy z dostawcami, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**.      |
+| Wprowadzasz kilka zmian, o które prosił dostawca, ręcznie lub za pomocą akcji w odpowiedzi, i w ten sposób aktualizujesz zamówienie zakupu.                                                            | Stan zostaje zmieniony z powrotem na **Wersja robocza**.     |
+|Zamówienie zakupu jest wysyłane z powrotem do procesu zatwierdzania.                                                |  Stan zmienia się z **Wersja robocza** na **W trakcie przeglądu** i dalej na **Zatwierdzenie**, jeśli zamówienie zakupu nie zostanie odrzucone w procesie zatwierdzania. Alternatywnie można skonfigurować system w taki sposób, żeby modyfikacje w określonych polach nie wymagały ponownego zatwierdzania. W takim przypadku stan zmienia się najpierw na **Wersja robocza**, a następnie jest automatycznie aktualizowany do wartości **Zatwierdzone**. Zatwierdzone zamówienie zakupu jest rejestrowane jako nowa wersja.                                         |
+|Wysyłasz nową wersję zamówienia zakupu do dostawcy.                                                |  Nowa wersja jest rejestrowana w interfejsie współpracy z dostawcami, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**.                                         |
+|Dostawca zatwierdza nową wersję zamówienia zakupu.                                                |  Stan zmienia się na **Potwierdzone** automatycznie lub po otrzymaniu odpowiedzi od dostawcy i następnie ręcznym potwierdzeniu. |
 
 ## <a name="share-information-about-consignment-inventory"></a>Udostępnianie informacji o zapasach konsygnacyjnych
 Jeśli używasz zapasów konsygnacyjnych, dostawcy mogą w interfejsie współpracy z dostawcami wyświetlać informacje na następujących stronach:

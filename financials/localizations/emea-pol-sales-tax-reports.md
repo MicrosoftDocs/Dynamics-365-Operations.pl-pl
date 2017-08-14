@@ -1,7 +1,7 @@
 ---
 title: "Raporty podatków dla Polski (konfigurowanie informacji podatkowych i innych funkcji)"
 description: "Ten temat zawiera informacje o sprawozdawczości podatku VAT w Polsce oraz podaje informacje, które są wymagane przez prawo w rejestrach podatku VAT w Polsce."
-author: annbe
+author: ShylaThompson
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
@@ -12,17 +12,15 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: AX 7.0.1, Operations, Core
 ms.custom: 274063
-ms.assetid: 2cc5a59c-8c93-4122-afe7-5a1bd73b933d
 ms.search.region: Poland
-ms.author: annbe
+ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.1
-ms.search.validFrom: 2016-05-31
+ms.search.validFrom: 2016-05-31T00:00:00.000Z
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: efc2ff1a0a4bc30ede1fb49bbfb1a3f5f338a1d3
 ms.contentlocale: pl-pl
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

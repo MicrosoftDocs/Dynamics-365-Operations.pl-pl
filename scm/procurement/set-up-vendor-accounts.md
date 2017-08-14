@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: bis
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 4c97f11fa85b8eee54daea8ccaa183859a89fe7f
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 3c3c215dbc64c3b823ab8537b66f72d7d7fdf5c1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -94,6 +94,18 @@ Można wstrzymywać dostawcę dla różnych typów transakcji. Dostępne są nas
 -   **Nigdy** — Na dostawcę nigdy nie są nakładane wstrzymania działań.
 
 Gdy wstrzymujesz dostawcę, można także określić przyczynę wstrzymania oraz datę końcową stanu wstrzymania. Jeśli nie wprowadzisz daty końcowej, stan wstrzymania dostawcy trwa przez czas nieokreślony.
+
+Można zbiorczo zaktualizować stan wstrzymania na **Wszystko** dla dostawców na podstawie kryteriów wybranych na stronie **Zdezaktywowanie dostawcy** oraz przypisać przyczynę wstrzymania dostawcy.
+
+Następujące kryteria są używane do uwzględnienia dostawców, którzy byli nieaktywni w okresie, uwzględnienia lub wykluczenia dostawców, którzy są pracownikami, oraz wykluczenia dostawców, którzy znajdują się w okresie prolongaty przed następnym wstrzymaniem.
+
+- Na podstawie liczby dni wprowadzonej w polu **W okresie działania** na stronie **Zdezaktywowanie dostawcy** aplikacja oblicza ostatni dzień, kiedy dostawca może wykonać działanie, zanim zostanie uznany za nieaktywnego. Dokładnie rzecz biorąc, od bieżącego dnia jest odejmowana wpisana liczba dni. Jeśli istnieje co najmniej jedna faktura od dostawcy, której data jest późniejsza niż obliczona najpóźniejsza data, dostawca zostanie wykluczony z dezaktywacji. Jest to również weryfikowane, gdy dostawca ma płatności po tej dacie, otwarte zapotrzebowania na zakup, otwarte zamówienia zakupu, zapytania ofertowe lub odpowiedzi.
+- Liczba dni w polu **Czas prolongaty przed następnym wstrzymaniem** jest używana do obliczania najpóźniejszej daty okresu prolongaty. Dokładnie rzecz biorąc, od bieżącego dnia jest odejmowana wpisana liczba dni. Dotyczy to tylko dostawców, którzy wcześniej zostali zdezaktywowani. W przypadku wcześniejszej dezaktywacji aplikacja weryfikuje historię pozostałych wystąpień dezaktywacji dostawcy i sprawdza, czy ostatnia dezaktywacja nastąpiła przed najpóźniejszą datą okresu prolongaty. Jeśli tak istotnie było, dostawca zostanie uwzględniony w procesie dezaktywacji.
+- Parametr **Uwzględnij pracowników etatowych** odnosi się do dostawców przypisanych do pracownika. Możesz określić, czy chcesz uwzględniać tych pracowników.
+
+Ten proces zawsze powoduje wyłączenie dostawców, którzy w ustawieniu **Wstrzymanie dostawcy** mają wartość **Nigdy**.
+
+Dostawcy pomyślnie przechodzący weryfikację są wstrzymywani, co powoduje ustawienie w polu **Wstrzymanie dostawcy** wartości **Wszystko**, a w polu **Przyczyna** wybranego powodu. Dla dostawcy jest tworzony rekord w historii wstrzymań.
 
 ## <a name="vendor-invoice-account"></a>Konto płatnika dostawcy
 Jeśli istnieje więcej niż jeden dostawca z takim samym adresem rozliczeniowym lub jeśli dostawca jest fakturowany przez firmę zewnętrzną, można określić konto płatnika w rekordzie dostawcy. Konto płatnika jest kontem, na którym po stronie kredytowej księgowana jest kwota faktury przy tworzeniu faktury od dostawcy z zamówienia zakupu. Jeśli nie zostanie wprowadzone konto płatnika w rekordzie dostawcy, jego funkcję będzie spełniać konto dostawcy.

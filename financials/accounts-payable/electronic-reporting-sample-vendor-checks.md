@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.assetid: 
 ms.search.region: Global
 ms.author: twheeloc
-ms.dyn365.intro: 2017-06-30
+ms.dyn365.intro: 2017-06-30T00:00:00.000Z
 ms.dyn365.version: Enterprise edition, July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6cb473962f40ed9ef2f5f807f089098764f47009
-ms.openlocfilehash: 8228690ee5ab7839ec19c307c23f9b6150006371
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: a8ba439ff643fce4811be9224a3edf96b2b9025c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/14/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -38,11 +38,11 @@ Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition zaw
 
 ## <a name="what-do-i-have-to-set-up"></a>Co trzeba skonfigurować?
 
-- Aby możliwe było drukowanie czeków przy użyciu modułu ER, co najmniej jedna aktywna konfiguracja czeku musi zostać zaimportowana do konfiguracji ER. Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+- Aby możliwe było drukowanie czeków przy użyciu modułu ER, co najmniej jedna aktywna konfiguracja czeku musi zostać zaimportowana do konfiguracji ER. Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 - Podczas konfigurowania czeków w module Zarządzanie gotówką i bankami dla rachunku bankowego zaznacz pole wyboru **Ogólny elektroniczny format eksportu**, a następnie wybierz odpowiedni format czeku jako konfigurację formatu eksportu.
 - Ponadto należy określić liczbę wierszy pokwitowania, które zostaną wydrukowane na przekazie. Pamiętaj, aby przy obliczaniu tej liczby uwzględnić wiersze nagłówka. W dwóch przykładowych formatach czeku zaleca się, aby było 17 wierszy pokwitowania. Jednak ta liczba będzie się różnić w zależności od wzorów blankietów czeków i sterowników drukarki.
 - Zalecamy wydrukowanie testowego czeku w celu sprawdzania poprawności jego układu. Aby wydrukować czek testowy, zaznacz opcję **Drukowanie testu**. Przykładowe formaty czeków działają najlepiej, gdy w zaawansowanych właściwościach drukarki dla programu Microsoft Excel w opcji **Marginesy** jest ustawiona wartość **Brak**. Po wygenerowaniu testowego czeku włącz edytowanie danych wyjściowych programu Excel i skonfiguruj układ strony tak, aby wszystkie marginesy miały ustawioną wartość **0** (zero). Porównaj kopię testową czeku z używanymi blankietami czeków i koryguj ustawienia, aż osiągniesz zadowalające wyrównanie.
 - Podczas generowania płatności dla skonfigurowanego konta bankowego w arkuszu płatności czeki zostaną wydrukowanie zgodnie z podanym formatem.
 
-Aby uzyskać więcej informacji, zobacz [Modyfikowanie formatu raportowania elektronicznego](/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
+Aby uzyskać więcej informacji, zobacz [Modyfikowanie formatu raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template).
 

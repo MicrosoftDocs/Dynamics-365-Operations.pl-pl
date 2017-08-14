@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 0cebd30a560ff033efab89c2055827b62cf31576
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 9bc4dba3c31e82da2285ef5e339ace634fbd6fde
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -39,7 +39,7 @@ Ten artykuł zawiera omówienie podpisów elektronicznych, a także opis sposobu
 Podpis elektroniczny potwierdza tożsamość osoby, która ma rozpocząć lub zatwierdzić jakiś proces obliczeniowy. W przypadku niektórych branż podpis elektroniczny jest tak samo prawnie wiążący jak podpis odręczny. Podpisy elektroniczne są wymagane przepisami w przypadku kilku branż regulowanych, takich jak przemysł farmaceutyczny, spożywczy oraz lotniczy i obronny. Wymagają ich również przepisy 21 CFR część 11 wydane przez amerykańską Agencję ds. Żywności i Leków (FDA). **Uwaga:** Sam podpis elektroniczny nie jest tym samym, co podpis cyfrowy. Podpis elektroniczny jest po prostu substytutem podpisu odręcznego, podczas gdy podpis cyfrowy stanowi dodatkowy środek zabezpieczeń. Podpis cyfrowy pomaga w ustaleniu, czy inny użytkownik lub proces nie naruszył danych. Podpis cyfrowy może być również weryfikowany i ta weryfikacja nie może zostać zakwestionowana przez właściciela certyfikatu użytego do podpisania danych. Jak opisano poniżej, podpisy elektroniczne w programie Microsoft Dynamics 365 for Finance and Operations mają wbudowaną funkcjonalność podpisu cyfrowego.
 
 ## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Podpisy elektroniczne w programie Dynamics 365 for Finance and Operations
-W programie Finance and Operations można używać podpisów elektronicznych w przypadku procesów biznesowych o podstawowym znaczeniu. Niektóre procesy mają wbudowane możliwości podpisu elektronicznego. Można również tworzyć niestandardowe wymagania dotyczące podpisu cyfrowego dla dowolnej tabeli lub pola bazy danych. Podpisy elektroniczne mają wbudowaną funkcjonalność podpisu cyfrowego. Każdy użytkownik, który podpisuje dokumenty, musi uzyskać prawidłowy certyfikat kryptograficzny. Podczas podpisywania dokumentu sprawdzana jest poprawność klucza prywatnego skojarzonego z tym certyfikatem. Program Finance and Operations rejestruje informacje dotyczące podpisów elektronicznych w dzienniku inspekcji. Aby skonfigurować podpisy elektroniczne, zobacz [Konfigurowanie podpisów elektronicznych (przewodnik po zadaniach)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
+W programie Finance and Operations można używać podpisów elektronicznych w przypadku procesów biznesowych o podstawowym znaczeniu. Niektóre procesy mają wbudowane możliwości podpisu elektronicznego. Można również tworzyć niestandardowe wymagania dotyczące podpisu cyfrowego dla dowolnej tabeli lub pola bazy danych. Podpisy elektroniczne mają wbudowaną funkcjonalność podpisu cyfrowego. Każdy użytkownik, który podpisuje dokumenty, musi uzyskać prawidłowy certyfikat kryptograficzny. Podczas podpisywania dokumentu sprawdzana jest poprawność klucza prywatnego skojarzonego z tym certyfikatem. Program Finance and Operations rejestruje informacje dotyczące podpisów elektronicznych w dzienniku inspekcji. Aby skonfigurować podpisy elektroniczne, zobacz [Konfigurowanie podpisów elektronicznych (przewodnik po zadaniach)](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Użytkownicy, którzy potrzebują dostępu do podpisów elektronicznych
 Trzy rodzaje użytkowników zwykle wymagają dostępu zabezpieczeń do podpisów elektronicznych: administratorzy podpisów elektronicznych, osoby podpisujące i audytorzy podpisów elektronicznych.

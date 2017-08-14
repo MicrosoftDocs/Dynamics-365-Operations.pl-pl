@@ -1,9 +1,9 @@
 ---
-title: "Konfiguracja kompensacji odbiorców oraz dostawców | Microsoft Docs"
+title: "Konfiguracja kompensacji odbiorców oraz dostawców"
 description: "Ten temat zawiera informacje o sposobach wykonywania procesu kompensat na kontach dostawców i odbiorców dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce."
 author: mrolecki
 manager: AnnBe
-ms.date: 05-19-2017
+ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,13 +14,13 @@ ms.reviewer: shylaw
 ms.custom: 1691503
 ms.search.region: Hungary, Poland
 ms.author: mrolecki
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 716262a2787f312aac758f354a72c7cfd2913dff
-ms.openlocfilehash: 4690779974a49d21f21d6df4fc2c8399db9c9e51
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 17f21eb370b7a107e31be3629dbf7c2ee88a0703
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 

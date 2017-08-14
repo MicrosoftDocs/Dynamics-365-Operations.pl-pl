@@ -11,19 +11,18 @@ ms.technology:
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: cebd1b6f041e18c2e016142aba7447bf813f570b
-ms.openlocfilehash: f6327b339441f2f1f6d4e557e45d085685245a08
+ms.translationtype: HT
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: b9ad00b4157d1f732a8f2400712c94a92a17b273
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/19/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -34,7 +33,7 @@ ms.lasthandoff: 06/19/2017
 
 Ten temat zawiera omówienie narzędzia Raportowanie elektroniczne. Przedstawiono w nim informacje dotyczące najważniejszych koncepcji, scenariusze obsługiwane przez narzędzie Raportowanie elektroniczne oraz listę formatów zaprojektowanych i udostępnionych w ramach rozwiązania.
 
-Raportowanie elektroniczne (ER) jest narzędziem, które służy do konfigurowania formatów dokumentów elektronicznych przychodzących i wychodzących zgodnie z wymogami prawnymi różnych krajów/regionów. ER pozwala zarządzać tymi formatami podczas ich całego cyklu życia. Na przykład można wdrożyć nowe wymogi prawne, a następnie generować dokumenty biznesowe w wymaganym formacie w celu elektronicznej wymiany informacji z organami rządowymi, bankami i innymi stronami.
+ER jest narzędziem, które służy do konfigurowania formatów dokumentów elektronicznych przychodzących i wychodzących zgodnie z wymogami prawnymi różnych krajów/regionów. ER pozwala zarządzać tymi formatami podczas ich całego cyklu życia. Na przykład można wdrożyć nowe wymogi prawne, a następnie generować dokumenty biznesowe w wymaganym formacie w celu elektronicznej wymiany informacji z organami rządowymi, bankami i innymi stronami.
 
 Aparat ER jest adresowany do użytkowników biznesowych, a nie programistów. Ponieważ konfiguruje się formaty, a nie kod, procesy tworzenia i dostosowywania formatów dokumentów elektronicznych są szybsze i łatwiejsze.
 
@@ -43,8 +42,8 @@ ER obecnie obsługuje arkusze w formatach tekstowym, XML, dokumentów programu M
 ## <a name="capabilities"></a>Możliwości
 Aparat GER ma następujące cechy:
 
-- Stanowi jedno współużytkowane narzędzie do raportowania elektronicznego w różnych domenach oraz zastępuje ponad 20 różnych innych aparatów obsługujących różne formy raportowania elektronicznego w programie Microsoft Dynamics 365 for Operations.
-- Izoluje format raportu od bieżącej implementacji programu Dynamics 365 for Operations. Innymi słowy format można stosować do różnych wersji programu Dynamics 365 for Operations.
+- Stanowi jedno współużytkowane narzędzie do raportowania elektronicznego w różnych domenach oraz zastępuje ponad 20 różnych innych aparatów obsługujących różne formy raportowania elektronicznego w programie Microsoft Dynamics 365 for Finance and Operations.
+- Izoluje format raportu od bieżącej implementacji programu Finance and Operations. Innymi słowy format można stosować do różnych wersji programu Finance and Operations.
 - Obsługuje tworzenie niestandardowego formatu opartego na oryginalnym formacie. Zawiera również funkcje automatycznego uaktualniania dostosowanego formatu po dokonaniu zmian w oryginalnym formacie spowodowanych koniecznością przetłumaczenia/dostosowania.
 - Staje się podstawowym standardowym narzędziem do obsługi wymagań tłumaczeniowych w raportach elektronicznych — dla oprogramowania zarówno firmy Microsoft, jak i jej partnerów.
 - Obsługuje możliwość dystrybucji formatów do partnerów i odbiorców za pomocą portalu Microsoft Dynamics Lifecycle Services (LCS).
@@ -59,7 +58,8 @@ ER obsługuje dwa typy składników: **Model danych** i **Format**.
 Składnik typu Model danych jest abstrakcyjnym przedstawieniem struktury danych. Służy do opisu konkretnego obszaru domeny biznesowej w sposób na tyle szczegółowy, by spełnić wymagania raportowania w tej domenie. Składnik będący modelem danych zawiera następujące elementy:
 
 - Model danych jako zestaw jednostek biznesowych określonej domeny oraz hierarchiczna definicja relacji między tymi jednostkami.
-- Mapowanie modelu, które łączy wybrane źródła danych programu Dynamics 365 for Operations z poszczególnymi elementami tego modelu danych, które określają w czasie wykonywania przepływ danych i reguły wprowadzania danych biznesowych do składnika będącego modelem danych.
+- Mapowanie modelu, które łączy wybrane źródła danych programu Finance and Operations z poszczególnymi elementami tego modelu danych, które określają w czasie wykonywania przepływ danych i reguły wprowadzania danych biznesowych do składnika będącego modelem danych.
+
 Jednostka biznesowa modelu danych jest przedstawiona jako kontener (rekord). Właściwości jednostki biznesowej są przedstawione jako składniki danych (pola). Każdy element danych ma niepowtarzalną nazwę, etykietę, opis i wartość. Wartość każdego elementu danych może być zaprojektowane tak, aby była rozpoznawana jako ciąg tekstowy, liczba całkowita, liczba rzeczywista, data, element stałotekstowy, wartość logiczna itd. Ponadto może to być inny rekord lub lista rekordów.
 
 Pojedynczy składnik typu Model danych może zawierać kilka hierarchii jednostek biznesowych właściwych dla danej domeny. Może również zawierać mapowania modelu obsługujące przepływ danych właściwy dla raportu w czasie wykonywania. Hierarchie są rozróżniane przez pojedynczy rekord, który został wybrany jako główny dla mapowania modelu. Na przykład model danych obszaru domeny płatności może obsługiwać następujące mapowania:
@@ -71,17 +71,18 @@ Zauważ, że jednostki biznesowe, np. Firma i Transakcje płatności, są projek
 
 Mapowanie modelu obsługujące wychodzące dokumenty elektroniczne ma następujące możliwości:
 
-- Może wykorzystywać różne typy danych programu Dynamics 365 for Operations jako źródła danych dla modelu danych. Na przykład może używać tabel, jednostek danych, metod lub tekstów stałych.
+- Może wykorzystywać różne typy danych programu Finance and Operations jako źródła danych dla modelu danych. Na przykład może używać tabel, jednostek danych, metod lub tekstów stałych.
 - Obsługuje parametry wejściowe użytkownika, które można zdefiniować jako źródła danych modelu danych, gdy część danych musi być określona w czasie wykonywania.
-- Obsługuje przekształcanie danych programu Dynamics 365 for Operations w wymagane grupy. Umożliwia także filtrowanie, sortowanie i sumowanie danych, a także dołączanie logicznych pól obliczanych projektowanych za pomocą formuł przypominających formuły programu Microsoft Excel, co pokazano na ilustracji poniżej. Aby uzyskać więcej informacji, zobacz [Projektant formuł w raportowaniu elektronicznym](general-electronic-reporting-formula-designer.md).
+- Obsługuje przekształcanie danych programu Finance and Operations w wymagane grupy. Umożliwia także filtrowanie, sortowanie i sumowanie danych, a także dołączanie logicznych pól obliczanych projektowanych za pomocą formuł przypominających formuły programu Microsoft Excel, co pokazano na ilustracji poniżej. Aby uzyskać więcej informacji, zobacz [Projektant formuł w raportowaniu elektronicznym](general-electronic-reporting-formula-designer.md).
 
 [![Projektant formuł](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
 
 Mapowanie modelu obsługujące przychodzące dokumenty elektroniczne ma następujące możliwości:
 
-- Może używać różnych aktualizowanych elementów danych programu Dynamics 365 for Operations jako celów. Te elementy danych obejmują tabele, jednostki danych i widoki. Dane mogą być aktualizowane przy użyciu danych z przychodzących dokumentów elektronicznych. W jednym mapowaniu modelu można użyć wielu elementów docelowych.
+- Może używać różnych aktualizowanych elementów danych jako celów. Te elementy danych obejmują tabele, jednostki danych i widoki. Dane mogą być aktualizowane przy użyciu danych z przychodzących dokumentów elektronicznych. W jednym mapowaniu modelu można użyć wielu elementów docelowych.
 - Obsługuje parametry wejściowe użytkownika, które można zdefiniować jako źródła danych modelu danych, gdy część danych musi być określona w czasie wykonywania.
-Składnik typu Model danych jest projektowany dla każdej domeny biznesowej i służy jako ujednolicone źródło danych dla raportowania, które izoluje raportowanie od fizycznej implementacji źródeł danych programu Dynamics 365 for Operations. Reprezentuje właściwe dla domeny koncepcje i funkcje biznesowe w formie, która upraszcza początkowe projektowanie formatów raportowania i ich dalszą obsługę.
+
+Składnik typu Model danych jest projektowany dla każdej domeny biznesowej i służy jako ujednolicone źródło danych dla raportowania, które izoluje raportowanie od fizycznej implementacji źródeł danych. Reprezentuje właściwe dla domeny koncepcje i funkcje biznesowe w formie, która upraszcza początkowe projektowanie formatów raportowania i ich dalszą obsługę.
 
 #### <a name="format-components-for-outgoing-electronic-documents"></a>Składniki typu Format dla wychodzących dokumentów elektronicznych
 
@@ -133,32 +134,32 @@ Dla składników ER jest obsługiwane przechowywanie wersji. Poniższy przepływ
 
 Wersje ze stanem **Ukończona** lub **Udostępniona** są dostępne dla innych procesów wymiany danych. Na składniku mającym te stany można wykonywać następujące operacje:
 
-- Składnik może być serializowany w formacie XML i eksportowany z programu Dynamics 365 for Operations jako plik w formacie XML.
-- Składnik może być reserializowany z pliku XML i importowany do programu Dynamics 365 for Operations jako nowa wersja składnika raportowania elektronicznego.
+- Składnik może być serializowany w formacie XML i eksportowany jako plik w formacie XML.
+- Składnik może być reserializowany z pliku XML i importowany do programu Finance and Operations jako nowa wersja składnika raportowania elektronicznego.
 
 #### <a name="component-date-effectivity"></a>Daty obowiązywania składnika
 
-Wersje składników ER mają daty obowiązywania. Dla składnika ER można zdefiniować datę **Obowiązuje od**, aby określić datę, od której ten składnik zaczyna działać dla procesów raportowania. Data sesji programu Dynamics 365 for Operations pozwala określić, czy składnik może zostać wykonany. Gdy dla danej daty jest dostępnych kilka wersji, najnowsza wersja jest używana w procesach raportowania.
+Wersje składników ER mają daty obowiązywania. Dla składnika ER można zdefiniować datę **Obowiązuje od**, aby określić datę, od której ten składnik zaczyna działać dla procesów raportowania. Data sesji programu Finance and Operations pozwala określić, czy składnik może zostać wykonany. Gdy dla danej daty jest dostępnych kilka wersji, najnowsza wersja jest używana w procesach raportowania.
 
 #### <a name="component-access"></a>Dostęp do składnika
 
-Dostęp do składników formatu aplikacji ER zależy od ustawienia kodu ISO kraju/regionu. Gdy to ustawienie jest puste dla wybranej wersji konfiguracji formatu, dostęp do składnika formatu można uzyskać podczas wykonywania z każdej firmy w programie Dynamics 365 for Operations. Gdy to zawiera kody ISO kraju/regionu, składnik formatu jest dostępny tylko z tych firm w programie Dynamics 365 for Operations, których adres główny został zdefiniowany dla jednego z kodów ISO kraju/regionu istniejących w składniku formatu.
+Dostęp do składników formatu aplikacji ER zależy od ustawienia kodu ISO kraju/regionu. Gdy to ustawienie jest puste dla wybranej wersji konfiguracji formatu, dostęp do składnika formatu można uzyskać podczas wykonywania z każdej firmy. Gdy to zawiera kody ISO kraju/regionu, składnik formatu jest dostępny tylko z tych firm, których adres główny został zdefiniowany dla jednego z kodów ISO kraju/regionu istniejących w składniku formatu.
 
 Różne wersje składnika formatu danych mogą mieć różne ustawienia kodów ISO kraju/regionu.
 
 #### <a name="configuration"></a>Konfiguracja
 
-Konfiguracja narzędzia ER jest otoką konkretnego składnika ER. Składnik ten może być typu Model danych lub Format. Konfiguracja może zawierać różne wersje składnika ER. Każda konfiguracja jest oznaczona jako należąca do określonego dostawcy konfiguracji. Wersja **Wersja robocza** składnika konfiguracji może być edytowana, gdy właściciel konfiguracji został wybrany jako aktywny dostawca w ustawieniach ER w programie Dynamics 365 for Operations.
+Konfiguracja narzędzia ER jest otoką konkretnego składnika ER. Składnik ten może być typu Model danych lub Format. Konfiguracja może zawierać różne wersje składnika ER. Każda konfiguracja jest oznaczona jako należąca do określonego dostawcy konfiguracji. Wersja **Wersja robocza** składnika konfiguracji może być edytowana, gdy właściciel konfiguracji został wybrany jako aktywny dostawca w ustawieniach ER w programie Finance and Operations.
 
 Każda konfiguracja modelu zawiera składnik Model danych. Nowa konfiguracja formatu może zostać wygenerowana na podstawie określonej konfiguracji modelu danych. W drzewie konfiguracji utworzona konfiguracja formatu będzie wyświetlana jako element podrzędny oryginalnej konfiguracji modelu danych.
 
 Tworzona konfiguracja formatu zawiera składnik Format. Składnik Model danych oryginalnej konfiguracji modelu jest automatycznie wstawiany do składnika Format podrzędnej konfiguracji formatu jako domyślne źródło danych.
 
-Konfiguracja ER jest udostępniana firmom w programie Dynamics 365 for Operations.
+Konfiguracja ER jest udostępniana firmom w programie Finance and Operations.
 
 #### <a name="provider"></a>Dostawca
 
-Dostawca ER określa stronę (podmiotu) używaną do wskazania autora (właściciela) konfiguracji ER. Aplikacja ER pozwala zarządzać listą dostawców konfiguracji. Konfiguracje formatu publikowane dla dokumentów elektronicznych w ramach rozwiązania Dynamics 365 for Operations są oznaczone jako należące do dostawcy konfiguracji **Microsoft**.
+Dostawca ER określa stronę (podmiotu) używaną do wskazania autora (właściciela) konfiguracji ER. Aplikacja ER pozwala zarządzać listą dostawców konfiguracji. Konfiguracje formatu publikowane dla dokumentów elektronicznych w ramach rozwiązania Finance and Operations są oznaczone jako należące do dostawcy konfiguracji **Microsoft**.
 
 Aby uzyskać informacje o rejestrowaniu nowego dostawcy ER, odtwórz przewodnik po zadaniu **ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego** (część procesu biznesowego **7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)**).
 
@@ -166,11 +167,11 @@ Aby uzyskać informacje o rejestrowaniu nowego dostawcy ER, odtwórz przewodnik 
 
 Konfiguracje ER są przechowywane w repozytorium ER. Obecnie obsługiwane są dwa typy repozytoriów ER: **Zasoby operacyjne** i **Projekt usługi LCS**.
 
-Repozytorium **Zasoby operacyjne** zapewnia dostęp do listy konfiguracji, które firma Microsoft, jako dostawca konfiguracji raportowania elektronicznego, publikuje w ramach rozwiązania Dynamics 365 for Operations. Te konfiguracje można importować do bieżącego wystąpienia programu Dynamics 365 for Operations i używać dla raportowania elektronicznego. Można je również wykorzystywać dla dodatkowych tłumaczeń i dostosowań.
+Repozytorium **Zasoby operacyjne** zapewnia dostęp do listy konfiguracji, które firma Microsoft, jako dostawca konfiguracji raportowania elektronicznego, publikuje w ramach rozwiązania Finance and Operations. Te konfiguracje można importować do bieżącego wystąpienia programu Finance and Operations i używać dla raportowania elektronicznego. Można je również wykorzystywać dla dodatkowych tłumaczeń i dostosowań.
 
-Repozytorium **Projekt usługi LCS** zapewnia dostęp do listy konfiguracji określonego projektu LCS (biblioteki zasobów projektu usługi LCS) wybranego na etapie rejestracji repozytorium. Narzędzie ER umożliwia przekazywanie udostępnionych konfiguracji z bieżącego wystąpienia programu Dynamics 365 for Operations do konkretnego repozytorium **Projekt usługi LCS**. Można także importować konfiguracje z repozytorium **Projekt usługi LCS** do bieżącego wystąpienia programu Dynamics 365 for Operations.
+Repozytorium **Projekt usługi LCS** zapewnia dostęp do listy konfiguracji określonego projektu LCS (biblioteki zasobów projektu usługi LCS) wybranego na etapie rejestracji repozytorium. Narzędzie ER umożliwia przekazywanie udostępnionych konfiguracji z bieżącego wystąpienia programu Finance and Operations do konkretnego repozytorium **Projekt usługi LCS**. Można także importować konfiguracje z repozytorium **Projekt usługi LCS** do bieżącego wystąpienia programu Finance and Operations.
 
-Wymagane repozytoria **Projekt usługi LCS** można rejestrować indywidualnie dla każdego dostawcy konfiguracji bieżącego wystąpienia programu Dynamics 365 for Operations. Każde repozytorium może być dedykowane określonemu dostawcy konfiguracji.
+Wymagane repozytoria **Projekt usługi LCS** można rejestrować indywidualnie dla każdego dostawcy konfiguracji bieżącego wystąpienia programu Finance and Operations. Każde repozytorium może być dedykowane określonemu dostawcy konfiguracji.
 
 ## <a name="supported-scenarios"></a>Obsługiwane scenariusze
 ### <a name="building-a-data-model"></a>Budowanie modelu danych
@@ -204,7 +205,7 @@ Aplikacja ER zawiera projektanta mapowania modeli, który pozwala użytkownikom 
 Aby zapoznać się z tym scenariuszem w szczegółach, obejrzyj przewodniki po zadaniach **ER Definiowanie mapowania modelu i wybieranie źródeł danych** oraz **ER Mapowanie modelu danych na wybrane źródła danych** (część procesu biznesowego **7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)**).
 
 ### <a name="configuring-data-model-mappings-for-incoming-documents"></a>Konfigurowanie mapowań modelu danych dla dokumentów przychodzących
-Aplikacja ER zawiera projektanta mapowania modeli, który pozwala użytkownikom mapować zaprojektowane modele danych na konkretne miejsca docelowe. Na przykład modele danych mogą być mapowane na aktualizowalne składniki danych programu Dynamics 365 for Operations (tabele, jednostki danych i widoki). W oparciu o mapowanie dane programu Dynamics 365 for Operations będą aktualizowane w czasie wykonywania przy użyciu danych z modelu danych. Jako abstrakcyjny magazyn formatu raportowania elektronicznego model danych jest wypełniany danymi importowanymi z przychodzącego dokumentu elektronicznego. Ilustracja poniżej zawiera przykład tego rodzaju mapowania modelu danych. W tym przykładzie mapowanie modelu danych domeny płatności **Mapowanie importu dla NETS** jest używane do obsługi importu wyciągów bankowych w formacie bankowym NETS dla Norwegii.
+Aplikacja ER zawiera projektanta mapowania modeli, który pozwala użytkownikom mapować zaprojektowane modele danych na konkretne miejsca docelowe. Na przykład modele danych mogą być mapowane na aktualizowalne składniki danych programu Finance and Operations (tabele, jednostki danych i widoki). W oparciu o mapowanie dane programu Finance and Operations będą aktualizowane w czasie wykonywania przy użyciu danych z modelu danych. Jako abstrakcyjny magazyn formatu raportowania elektronicznego model danych jest wypełniany danymi importowanymi z przychodzącego dokumentu elektronicznego. Ilustracja poniżej zawiera przykład tego rodzaju mapowania modelu danych. W tym przykładzie mapowanie modelu danych domeny płatności **Mapowanie importu dla NETS** jest używane do obsługi importu wyciągów bankowych w formacie bankowym NETS dla Norwegii.
 
 [![Przykład mapowania importu dla modelu danych NETS](./media/ER-overview-08.png)](./media/ER-overview-08.png)
 
@@ -283,7 +284,7 @@ Aplikacja ER pozwala utworzyć (pochodny) nowy składnik z bieżącej (bazowej) 
 
 ### <a name="upgrading-a-format-selecting-a-new-version-of-base-format-rebase"></a>Uaktualnianie formatu przez przyjęcie jej nowej wersji bazowej (zmiana bazy)
 
-Narzędzie ER pozwala automatyczne powielać zmiany z najnowszej wersji składnika bazowego do aktualnej wersji roboczej składnika pochodnego. Ten proces jest nazywany *zmianą bazy*. Na przykład nowa zmiana przepisów, którą wprowadzono w najnowszej wersji składnika formatu zaimportowanego z usługi LCS, może być automatycznie scalana do dostosowanej wersji tego formatu dokumentu elektronicznego. Wszelkie zmiany, których nie można scalić automatycznie, są uznawane za konflikty. Te konflikty są wyświetlane do rozstrzygnięcia ręcznego w projektancie odpowiedniego składnika. Aby zapoznać się z tym scenariuszem w szczegółach, obejrzyj przewodnik po zadaniu **ER Uaktualnianie formatu przez przyjęcie jej nowej wersji bazowej** (część procesu biznesowego **7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)**).
+Narzędzie ER pozwala automatyczne powielać zmiany z najnowszej wersji składnika bazowego do aktualnej wersji roboczej składnika pochodnego. Ten proces jest nazywany *zmianą bazy*. Na przykład nowa zmiana przepisów, którą wprowadzono w najnowszej wersji składnika formatu zaimportowanego z usługi LCS, może być automatycznie scalana do dostosowanej wersji tego formatu dokumentu elektronicznego. Wszelkie zmiany, których nie można scalić automatycznie, są uznawane za konflikty. Te konflikty są wyświetlane do rozstrzygnięcia ręcznego w projektancie odpowiedniego składnika. Aby zapoznać się z tym scenariuszem w szczegółach, obejrzyj przewodnik po zadaniu **ER Uaktualnianie formatu przez przyjęcie jego nowej wersji bazowej** (część procesu biznesowego **7.5.5.3 Nabywanie/opracowywanie zmienionego składnika usługi/rozwiązania informatycznego (10683)**).
 
 ## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-and-operations-solution"></a>Wykaz konfiguracji ER dostarczanych w programie Finance and Operations
 | Konfiguracje modeli danych specyficzne dla domen: Tytuł | Domena                | Konfiguracje formatów zależne od modeli danych: Tytuł | Opis                                                        |

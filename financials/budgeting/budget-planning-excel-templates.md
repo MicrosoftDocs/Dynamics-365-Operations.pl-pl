@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 9f8073a2eb0d1b61d6a168f43eba983d113cf453
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,12 +35,18 @@ W tym temacie opisano sposób tworzenia szablonów programu Microsoft Excel, kt�
 W tym temacie pokazano, jak tworzyć szablony programu Excel przeznaczone dla planów budżetu, wykorzystując do tego standardowy zestaw danych demonstracyjnych i logowanie użytkownika będącego administratorem. Aby uzyskać więcej informacji na temat planowania budżetu, zobacz [Przegląd planowania budżetu.](budget-planning-overview-configuration.md) Można również przejść samouczek [Planowanie budżetu 101](budget-plan.md), który przekazuje podstawowe informacje o konfiguracjach modułu i zasadach użytkowania.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Generowanie arkusza przy użyciu układu dokumentu planu budżetu
-Dokumenty planu budżetu można wyświetlać i edytować za pomocą jednego lub więcej układów. Z każdym układem może być skojarzony szablon dokumentu planu budżetu, który umożliwia wyświetlanie i edytowanie danych planu budżetu w arkuszu programu Excel. W tym temacie szablon dokumentu planu budżetu zostanie wygenerowany przy użyciu istniejącej konfiguracji układu. Otwórz **listę planów budżetu** (**Budżetowanie**&gt; **Plany budżetu**). Kliknij przycisk **Nowy**, aby utworzyć nowy dokument planu budżetu. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+
+Dokumenty planu budżetu można wyświetlać i edytować za pomocą jednego lub więcej układów. Z każdym układem może być skojarzony szablon dokumentu planu budżetu, który umożliwia wyświetlanie i edytowanie danych planu budżetu w arkuszu programu Excel. W tym temacie szablon dokumentu planu budżetu zostanie wygenerowany przy użyciu istniejącej konfiguracji układu. 
+
+Otwórz **listę planów budżetu** (**Budżetowanie** &gt; **Plany budżetu**). Kliknij przycisk **Nowy**, aby utworzyć nowy dokument planu budżetu. 
+
+[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 Za pomocą opcji wierszy **Dodaj** dodaj wiersze. Kliknij opcję **Układy**, aby wyświetlić konfigurację układu dokumentu planu budżetu. 
+
 [![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Możesz przejrzeć konfigurację układu i dostosować ją w razie potrzeby. Wybierz kolejno opcje **Szablon** &gt; **Generuj**, aby utworzyć plik programu Excel dla tego układu. Po wygenerowaniu szablonu przejdź do opcji **Szablon** &gt; **Widok** i otwórz oraz przejrzyj szablon dokumentu planu budżetu. Plik programu Excel można zapisać na lokalnym dysku. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png) 
+Możesz przejrzeć konfigurację układu i dostosować ją w razie potrzeby. Wybierz kolejno opcje **Szablon** &gt; **Generuj**, aby utworzyć plik programu Excel dla tego układu. Po wygenerowaniu szablonu przejdź do opcji **Szablon** &gt; **Widok** i otwórz oraz przejrzyj szablon dokumentu planu budżetu. Plik programu Excel można zapisać na lokalnym dysku. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Nie można edytować układu dokumentu planu budżetu, gdy zostanie z nim skojarzony szablon program Excel. Aby zmodyfikować układ, należy usunąć skojarzony plik szablonu programu Excel i wygenerować układ ponownie. Jest to niezbędne, aby zachować synchronizację pól w układzie i arkuszu. 
