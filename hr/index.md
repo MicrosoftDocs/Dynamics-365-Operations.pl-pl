@@ -15,14 +15,13 @@ ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 28b5c72a174c7d40fcf1e4c348834fc532b04fcc
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: ed80e59579c2356cc3c1e0f13b33026284867a2c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/29/2017
-
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -54,12 +53,15 @@ Podczas pracy z użyciem rozwiązania Talent możesz określić strukturę swoje
 -   [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](departments-jobs-positions.md)
 -   [Konfigurowanie specyficznych dla firmy parametrów modułu Zasoby ludzkie](set-up-company-specific-hr-parameters.md)
 -   [Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach](set-up-hr-parameters-across-legal-entities.md) 
+-   [Akcje dotyczące pracowników — często zadawane pytania](personnel-actions-faq.md)
+-   [Omówienie urlopów i nieobecności](leave-absence-overview.md)
 
 ## <a name="retain-and-motivate-employees"></a>Utrzymanie i motywowanie pracowników etatowych
 
 Możesz skonfigurować plany umożliwiające skuteczne i sprawiedliwe zarządzanie wynagrodzeniami, a także zarządzać przedmiotami, takimi jak komputery lub telefony, które organizacja wypożycza swoim pracownikom etatowym. Można utworzyć plany wynagrodzeń o stałej i zmiennej wysokości, a także zdefiniować reguły weryfikujące spełnianie kryteriów podlegania tym planom.
 
 -   [Plany wynagrodzeń](compensation-plans.md)
+-   [Przetwarzanie wynagrodzenia](process-compensation.md)
 -   [Tworzenie planów stałych wynagrodzeń](create-fixed-compensation-plans.md)
 -   [Tworzenie planów wynagrodzeń o zmiennej wysokości](create-variable-compensation-plans.md)
 
