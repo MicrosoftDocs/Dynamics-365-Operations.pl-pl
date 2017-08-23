@@ -1,9 +1,9 @@
 ---
 title: Grupy kont konsolidacji i dodatkowe konta konsolidacji
 description: "Ten temat zawiera informacje o grupach kont konsolidacji i dodatkowych kontach konsolidacji oraz wyjaśnia, jak są one używane w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
-author: RobinARH
+author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,13 +15,13 @@ ms.custom: 265544
 ms.assetid: 71c31df7-b655-46a8-8844-4f92a8bd71b0
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 835669de01deb1ba0dcc5752d9d6d8f498e6ff7d
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 3c08e48b22f964c3f643c5ddc4ecd687502d7fda
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -50,6 +50,8 @@ Dodatkowe konta konsolidacji są podane w module **Konsolidacje** w obszarze **U
 
 Po zakończeniu tworzenia grup kont konsolidacji i dodatkowych kont konsolidacji można wybrać grupę w procesie konsolidacji online.
 
+
+Aby uzyskać więcej informacji, zobacz [Tworzenie grup konsolidacji i dodatkowych kont konsolidacyjnych](../general-ledger/tasks/create-consolidation-groups.md). 
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: "Szablony planowania budżetu dla programu Excel"
 description: "W tym temacie opisano sposób tworzenia szablonów programu Microsoft Excel, które mogą być używane w planach budżetu."
-author: twheeloc
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
-ms.author: sigitac
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.author: ryansand
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
+ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.openlocfilehash: 7cec40859a8c68cb8a9751c5531c67cef7706258
 ms.contentlocale: pl-pl
 ms.lasthandoff: 07/27/2017
 
@@ -38,22 +38,27 @@ W tym temacie pokazano, jak tworzyć szablony programu Excel przeznaczone dla pl
 
 Dokumenty planu budżetu można wyświetlać i edytować za pomocą jednego lub więcej układów. Z każdym układem może być skojarzony szablon dokumentu planu budżetu, który umożliwia wyświetlanie i edytowanie danych planu budżetu w arkuszu programu Excel. W tym temacie szablon dokumentu planu budżetu zostanie wygenerowany przy użyciu istniejącej konfiguracji układu. 
 
-Otwórz **listę planów budżetu** (**Budżetowanie** &gt; **Plany budżetu**). Kliknij przycisk **Nowy**, aby utworzyć nowy dokument planu budżetu. 
+1. Otwórz **listę planów budżetu** (**Budżetowanie** &gt; **Plany budżetu**). 
+2. Kliknij przycisk **Nowy**, aby utworzyć nowy dokument planu budżetu. 
 
-[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+  [![Lista planów budżetu](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
-Za pomocą opcji wierszy **Dodaj** dodaj wiersze. Kliknij opcję **Układy**, aby wyświetlić konfigurację układu dokumentu planu budżetu. 
+3. Za pomocą opcji wierszy **Dodaj** dodaj wiersze. Kliknij opcję **Układy**, aby wyświetlić konfigurację układu dokumentu planu budżetu. 
 
-[![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+  [![Dodawanie planów budżetu](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Możesz przejrzeć konfigurację układu i dostosować ją w razie potrzeby. Wybierz kolejno opcje **Szablon** &gt; **Generuj**, aby utworzyć plik programu Excel dla tego układu. Po wygenerowaniu szablonu przejdź do opcji **Szablon** &gt; **Widok** i otwórz oraz przejrzyj szablon dokumentu planu budżetu. Plik programu Excel można zapisać na lokalnym dysku. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
+Możesz przejrzeć konfigurację układu i dostosować ją w razie potrzeby. 
+1. Wybierz kolejno opcje **Szablon** &gt; **Generuj**, aby utworzyć plik programu Excel dla tego układu. 
+2. Po wygenerowaniu szablonu przejdź do opcji **Szablon** &gt; **Widok** i otwórz oraz przejrzyj szablon dokumentu planu budżetu. Plik programu Excel można zapisać na lokalnym dysku. 
+
+[![Zapisz jako](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Nie można edytować układu dokumentu planu budżetu, gdy zostanie z nim skojarzony szablon program Excel. Aby zmodyfikować układ, należy usunąć skojarzony plik szablonu programu Excel i wygenerować układ ponownie. Jest to niezbędne, aby zachować synchronizację pól w układzie i arkuszu. 
 
 Szablon programu Excel będzie zawierał wszystkie elementy z układu dokumentu planu budżetu, gdzie kolumna **Dostępny w arkuszu** jest ustawiona na Prawda. Nakładające się elementy są niedozwolone w szablonie programu Excel. Na przykład jeśli układ zawiera kolumny Wniosek K1, Wniosek K2, Wniosek K3 i Wniosek K4 oraz kolumnę łącznej kwoty wniosku reprezentującą sumę wszystkich 4 kolumn kwartalnych, w szablonie programu Excel do użycia będą dostępne tylko indywidualne kolumny kwartalne lub kolumna wartości łącznej. Podczas aktualizacji nie można zaktualizować nakładających się kolumn w pliku programu Excel, ponieważ dane w tabeli mogłyby stać się nieaktualne i błędne.
 
-[![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
+[![Przykład ](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
 > Aby uniknąć potencjalnych problemów z wyświetlaniem i edytowaniem danych planu budżetu za pomocą programu Excel, ten sam użytkownik powinien być zalogowany w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition oraz łączniku danych dodatku pakietu Office dla usługi Microsoft Dynamics.
@@ -63,7 +68,7 @@ Aby dodać informacje nagłówka, zaznacz górny wiersz w pliku programu Excel i
 
 [![bpt5](./media/bpt5-1024x615.png)](./media/bpt5.png) 
 
-Na karcie **Projekt** kliknij** **pola **Dodaj**, a następnie wybierz pozycję **BudgetPlanHeader** jako źródło danych jednostki.
+Na karcie **Projekt** kliknij pola **Dodaj**, a następnie wybierz pozycję **BudgetPlanHeader** jako źródło danych jednostki.
 
 [![bpt6](./media/bpt6-1024x615.png)](./media/bpt6.png)
 

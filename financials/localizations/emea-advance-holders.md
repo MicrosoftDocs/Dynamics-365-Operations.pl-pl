@@ -14,13 +14,13 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262574
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: v-elgolu
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: c6cbc225d6ac8eb4c4c22dc50c42bf9563cec02a
+ms.sourcegitcommit: cb5ab0e64b2a663af627d4d46e3a74aa526058b8
+ms.openlocfilehash: 9c68a5849fcc64584f568f86a89bd3cdfeaaeb95
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 07/28/2017
 
 ---
 
@@ -104,10 +104,10 @@ Aby wyświetlić podgląd i wydrukować raport oparty na transakcjach posiadaczy
 
 
 
-<a name="see-also"></a>Informacje dodatkowe
---------
+## <a name="see-also"></a>Informacje dodatkowe
 
-[Transakcje posiadacza zaliczki](emea-advance-holders-transactions.md)
+- [Transakcje posiadacza zaliczki](emea-advance-holders-transactions.md)
+- [Zaliczki na rzecz pracownika (Europa Wschodnia)](./tasks/advance-payment-employee.md)
 
 
 

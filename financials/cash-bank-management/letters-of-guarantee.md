@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8fc539a31f4f3f465a877e5ca5e6352de57929ab
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: d7144a979b98b3dbd2052661945e6d4fe22220a7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -61,7 +60,11 @@ W poniższej tabeli opisano akcje, które można wykonywać w związku z poręcz
 | Zlikwiduj           | Kiedy beneficjent okaże w banku poręczenie, można je spłacić.                      |
 
 
+Aby uzyskać więcej informacji, zobacz następujące tematy:
 
+[Transakcja poręczenia](tasks/letter-guarantee-transaction.md)
+
+[Konfigurowanie instrumentów bankowych i profilów księgowania dla poręczeń](tasks/set-up-bank-facilities-posting-profiles.md)
 
 
 

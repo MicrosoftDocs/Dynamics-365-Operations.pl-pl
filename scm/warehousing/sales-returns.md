@@ -15,13 +15,13 @@ ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b66bf79413ad21f12f789eabafe8413af3f58c9c
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: 0484723217ccff2ebf717d059429d863ececb797
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -37,7 +37,7 @@ Odbiorcy mogą zwracać towary z różnych powodów. Na przykład towar może by
 ## <a name="return-order-process"></a>Proces zamówienia zwrotu
 Na poniższej ilustracji przedstawiono przegląd procesu zamówienia zwrotu.  
 
-[![salesreturns01](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
+[![Proces zamówienia zwrotu](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
 
 Istnieją dwa rodzaje procesu zamówienia zwrotu: zwrot fizyczny i tylko uznanie (kredyt).
 
@@ -213,7 +213,7 @@ Istnieją dwie metody zarządzania wymianą produktów:
 
 W wymianie zawczasu towar zastępczy może być dostarczany odbiorcy przed otrzymaniem od niego zwróconego produktu. Ta metoda jest przydatna, gdy na przykład towar jest częścią maszyny, której nie można wymontować, jeśli na jej miejsce nie zostanie wstawiona część zamienna, albo gdy po prostu chcesz, aby odbiorca otrzymał produkt zastępczy jak najszybciej. Zamówienie wymiany zawczasu jest niezależnym zamówieniem sprzedaży. Informacje nagłówka są inicjowane przez odbiorcę, a informacje wiersza są inicjowane przez zamówienie zwrotu. Zamówienie wymiany można edytować, przetwarzać i usuwać niezależnie od zamówienia zwrotu. Podczas usuwania zamówienia wymiany pojawia się komunikat z informacją, że zamówienie zostało utworzone jako zamówienie wymiany. Poniższa ilustracja przedstawia proces wymiany zawczasu.  
 
-[![Proces wymiany zawczasu](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)  
+![Proces wymiany zawczasu](./media/SalesReturn04.png)
 
 Zamówienie zwrotu zawiera odwołanie do zamówienia wymiany. Jeśli zamówienie wymiany zawczasu zostanie utworzone dla zamówienia zwrotu przed zwróceniem wadliwego towaru, nie można wybrać kodów dyspozycji dla wymiany po zwrocie wadliwego towaru.
 
@@ -221,7 +221,7 @@ Zamówienie zwrotu zawiera odwołanie do zamówienia wymiany. Jeśli zamówienie
 
 Jeśli wysyłasz towar zastępczy do odbiorcy i w zamówieniu zwrotu używasz akcji dyspozycji **Zastąp i zlikwiduj** lub **Zastąp i zaksięguj po stronie kredytowej**, użyj procesu przedstawionego na poniższej ilustracji.  
 
-[![Proces wymiany w przypadku używania kodu dyspozycji](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)  
+![Proces wymiany w przypadku używania kodu dyspozycji](./media/SalesReturn05.png)
 
 Towar zastępczy zostanie dostarczony przy użyciu niezależnego zamówienia sprzedaży — zamówienia sprzedaży wymiany. To zamówienie sprzedaży jest tworzone podczas generowania dokumentu dostawy dla zamówienia zwrotu. Nagłówek zamówienia używa informacji od odbiorcy, do którego odwołuje się nagłówek zamówienia zwrotu. Informacje wiersza są pobierane z informacji wprowadzonych na stronie **Pozycja zastępcza**. Strona **Pozycja zastępcza** musi być wypełniona dla wierszy, które mają akcje dyspozycji rozpoczynające się słowem „zamień”. Jednak ani ilość, ani dane identyfikacyjne towaru zastępczego nie są weryfikowane ani w żaden sposób ograniczane. Takie zachowanie pozwala na przypadki, gdy odbiorca chce otrzymać ten sam towar, ale w innej konfiguracji lub rozmiarze, a także na przypadki, gdy odbiorca chce otrzymać całkowicie inny towar. Domyślnie na stronie **Pozycja zastępcza** jest wprowadzany identyczny towar. Można jednak wybrać inny towar, pod warunkiem, że funkcja została skonfigurowana. **Uwaga:** Po utworzeniu zamówienia sprzedaży wymiany można je edytować i usuwać.
 
@@ -254,7 +254,7 @@ Zamówienia zwrotu mogą być wykonywane między dwoma firmami wewnątrz organiz
 
 Poniższa ilustracja przedstawia minimalną konfigurację wymaganą, aby dwie firmy mogły uczestniczyć w relacji międzyfirmowej i korzystać z funkcji handlu międzyfirmowego.  
 
-[![Konfiguracja minimalna](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)  
+![Konfiguracja minimalna](./media/SalesReturn06.png)
 
 W poniższym scenariuszu CompBuy jest firmą kupującą, a CompSell jest firmą sprzedającą. Na ogół firma sprzedająca sprzedaje towary do firmy kupującej albo, w scenariuszach wysyłki z dostawą bezpośrednią, prosto do odbiorcy końcowego. W firmie CompBuy dostawca IC\_CompSell jest zdefiniowany jako międzyfirmowego punkt końcowy skojarzony z firmą CompSell. Równocześnie w firmie CompSell odbiorca IC\_CompBuy jest zdefiniowany jako międzyfirmowego punkt końcowy skojarzony z firmą CompBuy. W obu firmach muszą być zdefiniowane odpowiednie szczegóły zasad działań i mapowania wartości. W scenariuszu wysyłki z dostawą bezpośrednią w firmie sprzedającej jest tworzone międzyfirmowe zamówienie zwrotu, które jest również międzyfirmowym zamówieniem sprzedaży. Numer autoryzacji zwrotu do międzyfirmowego zamówienia zwrotu może zostać pobrany z numeracji RMA w firmie CompSell lub skopiowany z numeru RMA przypisanego do oryginalnego zamówienia zwrotu w firmie CompBuy. O tych działaniach decydują ustawienia numeru autoryzacji zwrotu w zasadach działań **PurchaseRequisition** w firmie CompBuy. Jeśli numer RMA jest synchronizowany, należy zaplanować łagodzenie skutków konfliktu powstającego w przypadku, gdy obie firmy używają tej samej numeracji.
 
@@ -262,7 +262,7 @@ W poniższym scenariuszu CompBuy jest firmą kupującą, a CompSell jest firmą 
 
 Ten scenariusz obejmuje dwie firmy w tej samej organizacji, jak pokazano na poniższej ilustracji.  
 
-[![Prosty zwrot międzyfirmowy](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
+![Prosty zwrot międzyfirmowy](./media/SalesReturn07.png)
 
 Łańcuch zamówień można utworzyć w momencie, gdy zamówienie zwrotu do dostawcy jest tworzone w firmie kupującej lub zamówienie zwrotu od odbiorcy jest tworzone w firmie sprzedającej. Program Finance and Operations tworzy odnośne zamówienie w drugiej firmie i sprawdza, czy informacje nagłówka i wierszy w zamówieniu zwrotu do dostawcy odzwierciedlają ustawienia w zamówieniu zwrotu od odbiorcy. Tworzone zamówienie zwrotu może uwzględniać lub pomijać odwołanie (**Znajdź zamówienie sprzedaży**) do istniejącej faktury dla odbiorcy. Dokumenty dostawy i faktury powiązane z oboma zamówieniami mogą być przetwarzane indywidualnie. Na przykład nie trzeba generować dokumentu dostawy dla zamówienia zwrotu do dostawcy przed wygenerowaniem dokument dostawy dla zamówienia zwrotu od odbiorcy.
 
@@ -270,7 +270,7 @@ Ten scenariusz obejmuje dwie firmy w tej samej organizacji, jak pokazano na poni
 
 Ten scenariusz można utworzyć, jeśli poprzednia sprzedaż typu **Dostawa bezpośrednia** została zakończona, a w firmie współpracującej z odbiorcą istnieje faktura wystawiona odbiorcy. Na poniższej ilustracji firma CompBuy uprzednio sprzedała produkty do odbiorcy Extern i wystawiła mu za to fakturę. Produkty zostały wysłane bezpośrednio z firmy CompSell do odbiorcy za pośrednictwem łańcucha zamówień międzyfirmowych.  
 
-[![Zwroty za pomocą wysyłki z dostawą bezpośrednią między trzema stronami](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)  
+![Zwroty za pomocą wysyłki z dostawą bezpośrednią między trzema stronami](./media/SalesReturn08.png)
 
 Jeśli odbiorca Extern chce zwrócić produkty, w firmie CompBuy jest dla niego tworzone zamówienie zwrotu (RMA02). Aby można było utworzyć łańcuch międzyfirmowy, zamówienie zwrotu musi być oznaczone dla dostawy bezpośredniej. Gdy użyjesz funkcji **Znajdź zamówienie sprzedaży**, aby wybrać fakturę odbiorcy do zwrotu, zostanie utworzony łańcucha zamówień międzyfirmowych składający się z następujących dokumentów:
 
@@ -292,7 +292,7 @@ W przykładach poniżej koszt własny zwrotu jest reprezentowany jako **Inv. Cos
 
 Zamówienie zwrotu nie odwołuje się do faktury dla odbiorcy. Z tytułu zwrotu towaru jest uznawane konto odbiorcy. Parametr **Korekta z czerwonym stornem** nie jest zaznaczony podczas generowania faktury (lub faktury korygującej) do zamówienia zwrotu.  
 
-[![Zamówienie zwrotu nie odwołuje się do faktury dla odbiorcy](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)  
+![Zamówienie zwrotu nie odwołuje się do faktury dla odbiorcy](./media/SalesReturn09.png)  
 
 **Uwaga:** Domyślną wartością parametru **Koszt własny dla zwrotu** jest cena z rekordu głównego towaru. Cena domyślna różni się od kosztu własnego w momencie wydawania zapasów. Ma to taką konsekwencję, że jest ponoszona strata wynosząca 3 jednostki pieniężne. Ponadto zamówienie zwrotu nie zawiera rabatu udzielonego odbiorcy w zamówieniu sprzedaży. W związku z tym następuje nadmierne uznanie konta odbiorcy.
 
@@ -300,7 +300,7 @@ Zamówienie zwrotu nie odwołuje się do faktury dla odbiorcy. Z tytułu zwrotu 
 
 Przykład 2 jest taki sam, jak przykład 1, ale podczas generowania faktury do zamówienia zwrotu wybrano parametr **Korekta z czerwonym stornem**.  
 
-[![Zamówienie zwrotu z wybraną korektą z czerwonym stornem ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)  
+![Zamówienie zwrotu z wybraną korektą z czerwonym stornem ](./media/SalesReturn10.png)  
 
 **Uwaga:** Księgowania w księdze są wprowadzane jako ujemne korekty.
 
@@ -308,7 +308,7 @@ Przykład 2 jest taki sam, jak przykład 1, ale podczas generowania faktury do z
 
 W tym przykładzie jest tworzony wiersz zamówienia zwrotu przy użyciu funkcji **Znajdź zamówienie sprzedaży**. Podczas tworzenia faktury parametr **Korekta z czerwonym stornem** nie jest zaznaczony.  
 
-[![Wiersz zamówienia zwrotu tworzony przy użyciu funkcji Znajdź zamówienie sprzedaży ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)  
+![Wiersz zamówienia zwrotu tworzony przy użyciu funkcji Znajdź zamówienie sprzedaży ](./media/SalesReturn11.png)  
 
 **Uwaga:** Opcje **Rabat** i **Koszt własny dla zwrotu** są poprawnie ustawione. W związku z tym następuje dokładne wycofanie faktury dla odbiorcy.
 

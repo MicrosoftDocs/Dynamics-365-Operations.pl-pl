@@ -3,7 +3,7 @@ title: "Importowanie plików ISO20022"
 description: "W tym temacie wyjaśniono, jak importować pliki płatności w formatach ISO 20022 camt.054 i pain.002 do programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
 author: neserovleo
 manager: AnnBe
-ms.date: 05/25/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,13 +13,13 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
 ms.author: v-lenest
-ms.search.validFrom: 2017-06-01T00:00:00.000Z
+ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Enterprise edition, July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 48e280bf0a6c5db237bd389fe448c9d698d3ae12
-ms.openlocfilehash: acf6ed5f503d77f372d802a51a71cec062c2b24b
+ms.sourcegitcommit: 77a0d4c2a31128fb7d082238d443f297fd40664f
+ms.openlocfilehash: 90e21bb939bd96a3420decb5f9bc07c017c3e946
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 07/31/2017
 
 ---
 
@@ -105,4 +105,29 @@ W przypadku importowania pliku camt.054 należy określić następujące dodatko
 - **Rozlicz transakcje** — ustaw w tej opcji wartość **Tak**, jeśli importowane płatności do dostawców muszą być rozliczane względem faktur znajdujących się w systemie.
 
 Zaimportowane informacje można przejrzeć na stronie **Przelewy**. 
+
+## <a name="additional-details"></a>Dodatkowe szczegóły
+
+Podczas importowania konfiguracji formatu z usługi LCS importujesz całe drzewo konfiguracja, a więc również konfiguracje modelu i mapowania modelu. W modelu płatności począwszy od wersji 8 mapowania znajdują się w oddzielnych konfiguracjach raportowania elektronicznego w drzewie rozwiązania (Mapowanie modelu płatności 1611, Mapowanie modelu płatności do lokalizacji docelowej ISO20022 itp.). W jednym modelu (modelu płatności) istnieje wiele różnych formatów płatności, dlatego oddzielna obsługa mapowań jest kluczowa dla łatwego zarządzania rozwiązaniem. Rozważmy na przykład następujący scenariusz: używasz płatności ISO20022 do generowania plików poleceń przelewu, a następnie importujesz komunikaty zwrotne z banku. W tym scenariuszu należy korzystać z następujących konfiguracji:
+
+ - **Model płatności**
+ - **Mapowanie modelu płatności 1611** — to mapowanie będzie używane do generowania pliku eksportu
+ - **Mapowanie modelu płatności do lokalizacji docelowej ISO20022** — ta konfiguracja zawiera wszystkie mapowania, które będą używane do importowania danych (kierunek mapowania „do lokalizacji docelowej”)
+ - **Polecenie przelewu ISO20022** — ta konfiguracja zawiera składnik formatu odpowiedzialny za generowanie pliku eksportu (pain.001) na podstawie konfiguracji Mapowanie modelu płatności 1611, a także format do modelowania składnika mapowania, który będzie używany razem z konfiguracją Mapowanie modelu płatności do lokalizacji docelowej ISO20022 w celu rejestrowania wyeksportowanych płatności w systemie na potrzeby dalszego importu (import w tabeli technicznej CustVendProcessedPayments)
+ - **Polecenie przelewu ISO20022 (CE)**, gdzie CE odpowiada rozszerzeniu kraju — format pochodny od formatu Polecenie przelewu ISO20022 z taką samą strukturą i pewnymi różnicami specyficznymi dla krajów
+ - **Pain.002** — ten format zostanie użyty wraz z konfiguracją Mapowanie modelu płatności do lokalizacji docelowej ISO20022 w celu zaimportowania pliku pain.002 do arkusza przeniesień płatności dostawców
+ - **Camt.054** — ten format zostanie użyty wraz z konfiguracją Mapowanie modelu płatności do lokalizacji docelowej ISO20022 w celu zaimportowania pliku camt.054 do arkusza przeniesień płatności dostawców Ta sama konfiguracja formatu będzie używana w funkcji importowania płatności odbiorców, ale inne mapowanie będzie używane w konfiguracji Mapowanie modelu płatności do lokalizacji docelowej ISO20022.
+
+Aby uzyskać więcej informacji na temat raportowania elektronicznego, zobacz [Omówienie raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+
+## <a name="additional-resources"></a>Dodatkowe zasoby
+- [Tworzenie i eksport płatności dla dostawcy przy użyciu formatu płatności ISO20022](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
+- [Importowanie konfiguracji polecenia przelewu ISO20022](./tasks/import-iso20022-credit-transfer-configuration.md)
+- [Importowanie konfiguracji polecenia zapłaty ISO20022](./tasks/import-iso20022-direct-debit-configuration.md)
+- [Konfigurowanie kont bankowych firmy dla poleceń przelewu ISO20022](./tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)
+- [Konfigurowanie kont bankowych firmy dla poleceń zapłaty ISO20022](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
+- [Konfigurowanie odbiorców i kont bankowych odbiorców dla poleceń zapłaty ISO20022](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)
+- [Konfigurowanie metody płatności przelewu ISO20022](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
+- [Konfigurowanie metody płatności polecenia zapłaty ISO20022](./tasks/setup-method-payment-iso20022-direct-debit.md)
+- [Konfigurowanie dostawców i kont bankowych dostawców dla poleceń przelewu ISO20022](./tasks/set-up-vendor-iso20022-credit-transfers.md)
 

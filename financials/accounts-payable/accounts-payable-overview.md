@@ -1,9 +1,9 @@
 ---
 title: "Konfigurowanie modułu Rozrachunki z dostawcami"
 description: "Ten artykuł zawiera opis stron, które służą do konfigurowania podstawowych i opcjonalnych funkcji modułu Rozrachunki z dostawcami w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Opisano również kroki konfiguracji, które należy wykonać przed rozpoczęciem konfigurowania modułu Rozrachunki z dostawcami."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24671
 ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2a61cb86a4f2cfc6d701445c139e22df0db44f8c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 9b29fec7fadbb1ac699f1144f011df1bfd2f511a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -47,7 +46,7 @@ Przed skonfigurowaniem modułu Rozrachunki z dostawcami, trzeba wykonać następ
 ## <a name="setup-pages-for-accounts-payable"></a>Strony ustawień modułu Rozrachunki z dostawcami
 
 Poniższe strony umożliwiają konfigurowanie podstawowych funkcji rozrachunków z dostawcami dla każdej firmy. Strony są wymienione w zalecanej kolejności ustawień. Aby ułatwić proces ustawień, można tworzyć szablony na podstawie pierwszych utworzonych rekordów. W szablonie wartości są zwykle wprowadzane w wielu polach, aby odzwierciedlić funkcje, które organizacja chce zaimplementować dla określonego typu dostawcy.
-1.  Na stronie Warunki płatności można definiować warunki płatności przypisywane do zamówień sprzedaży, zamówień zakupu, odbiorców i dostawców oraz określających terminy płatności faktur.
+1.  Na stronie Warunki płatności można definiować warunki płatności przypisywane do zamówień sprzedaży, zamówień zakupu, odbiorców i dostawców oraz określających terminy płatności faktur. Aby uzyskać więcej informacji, zobacz [Definiowanie opłat od płatności dostawcy](tasks/define-vendor-payment-fees.md).
 2.  Na stronie Metody płatności — Dostawcy można tworzyć i obsługiwać informacji o tym, jak organizacja płaci swoim dostawcom.
 3.  Strona Grupy dostawców umożliwia tworzenie i obsługiwanie grup dostawców, którzy mają wspólne kluczowe parametry dotyczące księgowania, rozliczania i płatności, raportowania oraz prognozowania.
 4.  Strona Profile księgowania dostawców pozwala zdefiniować, jak transakcje dostawcy są księgowane w księdze głównej.

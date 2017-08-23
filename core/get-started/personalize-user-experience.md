@@ -1,9 +1,9 @@
 ---
 title: "Personalizacja interfejsu użytkownika"
-description: "W tym artykule wyjaśniono, jak można spersonalizować program Microsoft Dynamics 365 for Finance and Operations."
+description: "W tym temacie wyjaśniono, jak można spersonalizować program Microsoft Dynamics 365 for Finance and Operations."
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
 ms.author: tlefor
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
+ms.translationtype: HT
+ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 
@@ -31,28 +31,28 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-W tym artykule wyjaśniono, jak można spersonalizować program Microsoft Dynamics 365 for Finance and Operations.
+W tym temacie wyjaśniono, jak można spersonalizować program Microsoft Dynamics 365 for Finance and Operations.
 
 Microsoft Dynamics 365 for Finance and Operations daje wiele różnych możliwości dostosowania oprogramowania do własnych potrzeb. Niektóre z nich można wybrać z listy na stronie konfiguracji. Niektóre personalizacje są domyślne. Na przykład Dynamics 365 for Finance and Operations przechowuje informacje o szerokość kolumn siatki, jeśli je zmienisz, oraz o rozwiniętych/zwiniętych skróconych kartach. Inne personalizacje są bezpośrednie. W przypadku personalizacji bezpośrednich należy wprowadzić tryb personalizacji interaktywnej i zmodyfikować widok strony poprzez bezpośrednie zarządzanie sposobem wyświetlania lub działania poszczególnych elementów na danej stronie. 
 
 Wszystkie personalizacje dowolnego typu, które użytkownik wprowadzi w programie Dynamics 365 for Finance and Operations, dotyczą wyłącznie danego użytkownika bez względu na firmę, z którą współpracuje. Zmiany, które użytkownik wprowadza na stronie nie mają wpływu na innych użytkowników w systemie.
 
 ## <a name="systemwide-options-for-the-current-user"></a>Opcje dla bieżącego użytkownika dotyczące całego systemu
-Na pasku nawigacyjnym znajduje się ikonka koła zębatego. To przycisk menu **Ustawienia**. Po otworzeniu menu **Ustawienia** widać szereg elementów do wyboru. Jeśli wybierzesz **Opcje** zostanie wyświetlona strona **opcji** użytkownika. Na tej stronie są 4 karty opcji: **Wygląd**, **Preferencje**, **Konto**, i **Przepływ pracy**.
+Na pasku nawigacyjnym znajduje się ikonka koła zębatego. To przycisk menu **Ustawienia**. Po otworzeniu menu **Ustawienia** widać szereg elementów do wyboru. Jeśli wybierzesz **Opcje** zostanie wyświetlona strona **opcji** użytkownika. Na tej stronie są 4 karty opcji: 
 
--   **Wygląd:** umożliwia wybieranie motywu kolorów i domyślnego rozmiaru elementów na stronach.
--   **Preferencje:** W tym miejscu można wybrać ustawienia domyślne stosowane przy każdym otwarciu programu Dynamics 365 for Finance and Operations, w tym firmę, stronę początkową i domyślny tryb Wyświetl/Edytuj (określający, czy strona jest zablokowana do wyświetlania lub otwarta do edycji w każdym jej wyświetleniu). Dostępne są również opcje językowe, strefy czasowej, daty, godziny i formatu liczb. Ponadto strona ta zawiera szereg preferencji różnych, których dostępność i funkcjonalność różni się w zależności od wersji oprogramowania.
--   **Konto:** umożliwia podanie Identyfikatora użytkownika i innych opcji związanych z kontem.
--   **Przepływ pracy:** tutaj można ustawiać opcje związane z przepływem pracy.
+-   **Wygląd** — Umożliwia wybieranie motywu kolorów i domyślnego rozmiaru elementów na stronach.
+-   **Preferencje** — W tym miejscu można wybrać ustawienia domyślne stosowane przy każdym otwarciu programu Dynamics 365 for Finance and Operations, w tym firmę, stronę początkową i domyślny tryb Wyświetl/Edytuj (określający, czy strona jest zablokowana do wyświetlania lub otwarta do edycji w każdym jej wyświetleniu). Dostępne są również opcje językowe, strefy czasowej, daty, godziny i formatu liczb. Ponadto strona ta zawiera szereg preferencji różnych, których dostępność i funkcjonalność różni się w zależności od wersji oprogramowania.
+-   **Konto** — Umożliwia podanie Identyfikatora użytkownika i innych opcji związanych z kontem.
+-   **Przepływ pracy** — Tutaj można ustawiać opcje związane z przepływem pracy.
 
 ## <a name="implicit-personalizations"></a>Personalizacje pośrednie
 Personalizacje pośrednie to takie, które wykonuje się po prostu poprzez interakcję z określonymi funkcjami sterowania, które zapamiętują bieżący stan i wygląd wykorzystywanych funkcji. 
 
-**Kolumny w siatce:** można dopasować szerokość kolumny na liście, zaznaczając pasek zmiany rozmiaru znajdujący się po lewej lub po prawej stronie nagłówka kolumny i przesuwanie go do lewej lub do prawej o odpowiednią odległość. Program Dynamics 365 for Finance and Operations zapamięta wybraną szerokość i będzie wyświetlał kolumnę o tej szerokości za każdym razem, gdy otworzysz stronę z tą listą. 
+**Kolumny w siatce** — Można dopasować szerokość kolumny na liście, zaznaczając pasek zmiany rozmiaru znajdujący się po lewej lub po prawej stronie nagłówka kolumny i przesuwanie go do lewej lub do prawej o odpowiednią odległość. Program Dynamics 365 for Finance and Operations zapamięta wybraną szerokość i będzie wyświetlał kolumnę o tej szerokości za każdym razem, gdy otworzysz stronę z tą listą. 
 
-**Skrócone karty:** niektóre strony mają rozwijane sekcje nazywane skróconymi kartami. Program Dynamics 365 for Finance and Operations zapamiętuje, które skrócone karty zostały rozwinięte lub zwinięte. Za każdym razem, gdy wracasz do strony, będą rozwinięte i zwinięte te same karty, które były zwinięte lub rozwinięte, gdy poprzednio była używana dana strona. W tym artykule wyjaśnimy jak zmienić układ sekcji skróconych kart. W niektórych przypadkach zwinięcie skróconej karty może poprawić wydajność, bo program Dynamics 365 for Finance and Operations nie będzie musiał pobierać informacji zawartych w tej karcie, dopóki nie zostanie ona rozwinięta. 
+**Skrócone karty** — Niektóre strony mają rozwijane sekcje nazywane skróconymi kartami. Program Dynamics 365 for Finance and Operations zapamiętuje, które skrócone karty zostały rozwinięte lub zwinięte. Za każdym razem, gdy wracasz do strony, będą rozwinięte i zwinięte te same karty, które były zwinięte lub rozwinięte, gdy poprzednio była używana dana strona. W tym artykule wyjaśnimy jak zmienić układ sekcji skróconych kart. W niektórych przypadkach zwinięcie skróconej karty może poprawić wydajność, bo program Dynamics 365 for Finance and Operations nie będzie musiał pobierać informacji zawartych w tej karcie, dopóki nie zostanie ona rozwinięta. 
 
-**Pola informacji:** niektóre strony mają sekcję o nazwie okienko pola informacji. To okienko zawiera informacje tylko do odczytu związane z tematem bieżącej strony. Każda sekcja w okienku pola informacji to pole informacji. Pola informacji można zwijać i rozwijać, a program Dynamics 365 for Finance and Operations zapamiętuje preferencje użytkownika. W niektórych przypadkach zwinięcie pola informacji może poprawić wydajność, bo program Dynamics 365 for Finance and Operations nie będzie musiał pobierać informacji zawartych w tym polu, dopóki nie zostanie ono rozwinięte.
+**Pola informacji** — Niektóre strony mają sekcję o nazwie okienko pola informacji. To okienko zawiera informacje tylko do odczytu związane z tematem bieżącej strony. Każda sekcja w okienku pola informacji to pole informacji. Pola informacji można zwijać i rozwijać, a program Dynamics 365 for Finance and Operations zapamiętuje preferencje użytkownika. W niektórych przypadkach zwinięcie pola informacji może poprawić wydajność, bo program Dynamics 365 for Finance and Operations nie będzie musiał pobierać informacji zawartych w tym polu, dopóki nie zostanie ono rozwinięte.
 
 ## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Personalizacje bezpośrednie przy użyciu paska narzędzi do personalizacji
 Dla każdej osoby i firmy ważne są inne informacje. Możliwość dostosowania sposobu uporządkowania informacji, interakcji z nimi lub ukrywania danych ma kluczowe znaczenie w kontekście dostosowania programu Dynamics 365 for Finance and Operations do indywidualnych potrzeb. 
@@ -107,15 +107,20 @@ Niektóre obszary robocze zawierają kafelki (płytki z liczbami), które mogą 
 Pulpit nawigacyjny jest często pierwszą stroną, którą widzisz po uruchomieniu programu Finance and Operations. Możesz spersonalizować pulpit nawigacyjny i zmienić nazwę kafelków nawigacyjnych obszaru roboczego, aby wyświetlić tylko te kafelki, które chcesz widzieć, zmieniać ich nazwy lub układ. Aby spersonalizować pulpit nawigacyjny, wybierz dowolny kafelek i kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe. W menu kontekstowym wybierz **Personalizuj**. Jeśli chcesz ukryć, zmienić nazwę lub pominąć wybrany kafelek, możesz wprowadzić żądane zmiany bezpośrednio w wyświetlonym oknie Właściwości. Jeśli chcesz rozmieścić kafelki, wybierz opcję **Personalizuj ten formularz** w oknie właściwości, aby wyświetlić pasek narzędzi personalizacji. Można następnie użyć narzędzia przenoszenia do uporządkowania kafelków.
 
 ## <a name="administration-of-personalization"></a>Administrowanie personalizacją.
-Po personalizowania strony można udostępnić te personalizacje innym użytkownikom. W tym celu po prostu wyeksportuj spersonalizowaną stronę. Następnie możesz poprosić innych użytkowników, aby przeszli do spersonalizowanej strony i zaimportowali utworzony przez Ciebie plik personalizacji.
+Po spersonalizowaniu strony można udostępnić te personalizacje innym użytkownikom poprzez wyeksportowanie strony. Następnie możesz poprosić innych użytkowników, aby przeszli do spersonalizowanej strony i zaimportowali utworzony przez Ciebie plik personalizacji.
 
-Użytkownicy posiadający uprawnienia administratora mogą też zarządzać personalizacjami dla innych użytkowników na stronie **Personalizacja**. Ta strona zawiera cztery karty: **System**, **Użytkownicy**, **Import** i **Wyczyść**.
+Użytkownicy posiadający uprawnienia administratora mogą też zarządzać personalizacjami dla innych użytkowników na stronie **Personalizacja**. Ta strona zawiera cztery karty: 
 
 - **System** — Tutaj można tymczasowo wyłączyć wszystkie personalizacje istniejące w systemie. W takim przypadku nie usuwasz personalizacji. Zamiast tego po prostu resetujesz wszystkie strony do ich stanu domyślnego. Jeśli później ponownie włączysz personalizację, wszystkie personalizacje zostaną ponownie zastosowane do stron użytkownika. Można także usunąć wszystkie ustawienia personalizacji wszystkich użytkowników. Należy pamiętać, że w przypadku usunięcia personalizacji nie można ich później automatycznie ponownie włączyć. Dlatego przed wykonaniem tego kroku należy koniecznie wyeksportować wszystkie personalizacje, które potem możesz chcieć zaimportować.
 - **Użytkownicy** — Tutaj można określić, czy każdy użytkownik może dokonywać personalizacji pośredniej, czy bezpośredniej. Można także określić, czy każdy użytkownik może wykonywać bezpośrednią lub pośrednią personalizację na określonych stronach. Można też zaimportować, wyeksportować lub usunąć personalizację każdego z użytkowników.
 - **Import** — Tutaj można zaimportować personalizację dla jednego lub więcej użytkowników. Tej karty należy użyć po utworzeniu personalizacji na stronie lub w obszarze roboczym, i następnie jej wyeksportowany jako pliku personalizacji. Aby zaimportować plik personalizacji i go zastosować do jednego lub więcej użytkowników, wybierz poszczególnych użytkowników z listy wszystkich użytkowników lub wyfiltruj według określonej roli, a następnie zaznacz użytkowników mających tę rolę. Po wybraniu użytkowników, którzy będą używać Twojej personalizacji, kliknij przycisk **Import** i zaznacz swój plik personalizacji. Personalizacja zostanie zweryfikowana i zastosowana do wszystkich zaznaczonych użytkowników następnym razem, gdy otworzą wybraną stronę.
 - **Wyczyść** — Tutaj można usunąć personalizacje strony lub obszaru roboczego dla jednego lub więcej użytkowników. Najpierw zaznacz stronę lub obszar roboczy, z którego chcesz usunąć personalizacje. Następnie wybierz poszczególnych użytkowników z listy wszystkich użytkowników lub wyfiltruj według określonej roli, a następnie zaznacz użytkowników mających tę rolę. Po wybraniu strony lub obszaru roboczego i użytkowników kliknij przycisk **Wyczyść**. Wszystkie personalizacje zastosowane przez wybranych użytkowników do wybranej strony lub obszaru roboczego zostaną usunięte. Tej operacji nie można cofnąć. Jednak jeśli strona lub obszar roboczy ma zapisaną personalizację, można ponownie zaimportować tę personalizację.
 
+## <a name="personalization-of-inventory-dimensions"></a>Personalizacja wymiarów magazynowych
 
+W przypadku personalizowania konfiguracji wymiarów magazynowych na stronie należy wziąć pod uwagę ustawienia utworzone przy użyciu opcji **Wyświetl wymiary**. Na przykład jeśli używasz personalizacji w celu ukrycia kolumny wymiaru magazynowego Numer partii, a kolumna pojawi się przy następnym otwarciu strony, być może jest to spowodowane tym, że ustawienia wyświetlania wymiarów decydują o wyświetlaniu kolumn wymiarów magazynowych. 
 
+Ustawienia wyświetlania wymiarów mają zastosowanie do wszystkich stron i zastępują wszelkie spersonalizowane konfiguracje pól wymiarów magazynowych na poszczególnych stronach. 
+
+Na przykład wymiar magazynowy Numer partii musiałby zostać wyczyszczony w opcji **Wyświetl wymiary**, jeśli w tabeli ta kolumna nie miałaby być wyświetlana. Ostatecznie ta zmiana byłaby stosowana nie tylko na jednej konkretnej stronie, ale na wszystkich stronach.
 

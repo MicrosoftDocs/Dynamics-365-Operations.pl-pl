@@ -1,9 +1,9 @@
 ---
 title: "Częściowa płatność dostawcy"
 description: "Czasami płatność dokonywana na rzecz dostawcy jest mniejsza od kwoty faktury. W tym artykule opisano różne opcje postępowania w takiej sytuacji. Faktycznie dostępne opcje zależą od konkretnych wymagań biznesowych i istniejącej konfiguracji."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14321
 ms.assetid: 9a17075e-5325-4d55-a1e5-1791b8c460a0
 ms.search.region: Global
-ms.author: kweekley
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 48812d33be6b84bbe0eac15adc4bd41a3ea8706b
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 191d1ee0b47da4930e10146ba164d601d038e81b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -56,5 +55,5 @@ Na przykład możesz otrzymać 2-procentowy rabat gotówkowy, jeśli faktura zos
 Możesz dokonać częściowej płatności, jeśli kwota pozostała do zapłacenia, jest bardzo mała. Na przykład faktura od dostawcy ma wartość 1000,00 i płacisz kwotę 999,90. Jeśli pozostała kwota jest mniejsza od kwoty określonej dla nadpłaty i niedopłaty w na stronie **Parametry modułu rozrachunków z dostawcami**, różnica jest automatycznie księgowana na koncie księgi niedopłaty/nadpłaty.
 
 
-
+Aby uzyskać więcej informacji, zobacz [Przegląd płatności dla dostawcy](../cash-bank-management/tasks/vendor-payment-overview.md).
 

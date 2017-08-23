@@ -1,9 +1,9 @@
 ---
 title: "Konfiguracja modułów Rozrachunki z odbiorcami i Kredyty i windykacja"
 description: "Odpowiednie skonfigurowanie modułów Rozrachunki z odbiorcami oraz Kredyty i windykacja umożliwi śledzenie faktur i płatności przychodzących od odbiorców."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24631
 ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74556e571c215b0fea8deb061fd968c240b063d4
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 1d37014e8f7b333a15077fc3477808a3ad62b96f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -66,12 +65,12 @@ Poniższa tabela zawiera listę stron, które umożliwiają konfigurację i obs�
 |                                                      | Waluty                           | Umożliwia tworzenie i wyświetlanie walut używanych w organizacji.                                                                                                                                                                                                                       |
 |                                                      | Kursy wymiany waluty              | Umożliwia tworzenie i obsługiwanie odpowiednich kursów wymiany pomiędzy walutą rozliczeniową a innymi walutami.                                                                                                                                                                              |
 |                                                      | Księgowanie międzyfirmowe              | Umożliwia tworzenie listy kont, na których bieżąca firma może dokonywać księgowań. Należy utworzyć konta debetowe i kredytowe oraz skonfigurować arkusz, w którym będą zapisywane transakcje drugiej firmy.                                                                             |
-|                                                      | Metody płatności — odbiorca        | Umożliwia tworzenie i obsługiwanie informacji dotyczących metod dokonywania płatności przez odbiorców.                                                                                                                                                                                                           |
+|                                                      | Metody płatności — odbiorca        | Umożliwia tworzenie i obsługiwanie informacji dotyczących metod dokonywania płatności przez odbiorców. Aby uzyskać więcej informacji, zobacz [Definiowanie metody płatności odbiorcy](tasks/establish-customer-method-payment.md).                                                                                             |
 |                                                      | Hierarchie organizacyjne             | Konfigurowanie hierarchii organizacyjnej na potrzeby płatności scentralizowanych.                                                                                                                                                                                                                        |
 |                                                      | Cele hierarchii organizacji      | Umożliwia określenie celu scentralizowanych płatności.                                                                                                                                                                                                                                       |
 |                                                      | Dni płatności                         | Umożliwia definiowanie dni płatności, które służą do obliczania terminów płatności otrzymywanych od odbiorców lub dokonywanych na rzecz dostawców.                                                                                                                                                |
-|                                                      | Opłata                          | Umożliwia tworzenie i obsługiwanie opłat związanych z odbiorcami, takich jak opłaty za weksle.                                                                                                                                                                               |
-|                                                      | Ustawienia opłat                    | Umożliwia konfigurowanie opłat dla różnych kombinacji banków, metod płatności, typów przekazu, specyfikacji płatności, walut i interwałów dat.                                                                                                                              |
+|                                                      | Opłata                          | Umożliwia tworzenie i obsługiwanie opłat związanych z odbiorcami, takich jak opłaty za weksle.                                                                                                                                                                         |
+|                                                      | Ustawienia opłat                    | Umożliwia konfigurowanie opłat dla różnych kombinacji banków, metod płatności, typów przekazu, specyfikacji płatności, walut i interwałów dat.  Aby uzyskać więcej informacji, zobacz [Definiowanie opłat od płatności odbiorcy](tasks/establish-customer-payment-fees.md).                                                                                   |
 |                                                      | Harmonogramy płatności                    | Umożliwia tworzenie harmonogramów płatności, które służą do planowania opłat ratalnych od odbiorców i dla dostawców.                                                                                                                                                                       |
 |                                                      | Specyfikacja płatności                | Umożliwia tworzenie i wyświetlanie kodów specyfikacji płatności dla metody płatności wybranej na stronie Metody płatności. Kody specyfikacji płatności należy określić na podstawie umowy z bankiem dotyczącej wybranej metody płatności.                    |
 |                                                      | Tekst transakcji                     | Umożliwia tworzenie tekstu transakcji dla automatycznych księgowań w księdze głównej. Tekst transakcji można ustawiać w różnych językach.                                                                                                                                                           |
@@ -83,7 +82,7 @@ Poniższa tabela zawiera listę stron, które umożliwiają konfigurację i obs�
 |                                                      | Metody płatności — odbiorca        | Umożliwia tworzenie i obsługiwanie informacji dotyczących metod dokonywania płatności przez odbiorców.                                                                                                                                                                                                           |
 |                                                      | Podpis                            | Umożliwia dodawanie, zmienianie i usuwanie plików z obrazami podpisów, takich jak bmp, jpg i gif. Pliki obrazów podpisów są drukowane na czekach w charakterze oficjalnych podpisów firmowych.                                                                                                             |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |
-| Konfigurowanie statystyk modułu Rozrachunki z odbiorcami           | Definicje okresów wiekowania             | Skonfiguruj i zarządzaj zdefiniowanymi przez użytkownika definicjami okresów wiekowania, które służą do analizowania terminów płatności dla kont odbiorców i dostawców na podstawie wprowadzonej daty, a także zarządzanie tymi przedziałami.                                                                                                         |
+| Konfigurowanie statystyk modułu Rozrachunki z odbiorcami           | Definicje okresów wiekowania             | Skonfiguruj i zarządzaj zdefiniowanymi przez użytkownika definicjami okresów wiekowania, które służą do analizowania terminów płatności dla kont odbiorców i dostawców na podstawie wprowadzonej daty, a także zarządzanie tymi przedziałami. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i generowanie informacji o wiekowaniu rozrachunków z odbiorcami](tasks/set-up-accounts-receivable-aging-information.md).                                                           |
 |                                                      | Statystyki                  | Umożliwia konfigurowanie zapytań statystycznych, które mogą ułatwić analizowanie funkcjonowania organizacji.                                                                                                                                                                              |
 |                                                      | Statystyki             | Umożliwia wyświetlanie danych dotyczących wybranej wielkości statystycznej w formacie siatki.                                                                                                                                                                                                                     |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |

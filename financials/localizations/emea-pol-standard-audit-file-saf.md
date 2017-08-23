@@ -17,12 +17,12 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 ms.search.region: Poland
 ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 78b273b89e26073d4c979413786b3844dad17418
+ms.sourcegitcommit: 3e0122d6e61efa012722c707ac4ca74c619e5a20
+ms.openlocfilehash: 378f9b3aa5dafc645cb892692df5e2ba16eb531a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 07/31/2017
 
 ---
 
@@ -131,537 +131,400 @@ Kod raportowania jest liczbą całkowitą. Kody raportowania powinny być numero
 
 W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatkowej dla tego przykładu.
 
-**Kod podatku**
-
-**Kod raportowania podatku**
-
-**Opis**
-
-**Nazwa znacznika w podatku VAT SAF-T**
-
-**Znak w podatku VAT SAF-T**
-
-**ExportCust**
-
-10101
-
-Sprzedaż opodatkowana
-
-K\_11
-
--
-
-10102
-
-Sprzedaż wolna od podatku
-
-K\_11
-
--
-
-10104
-
-Opodatkowana faktura korygująca sprzedaży
-
-K\_11
-
--
-
-10105
-
-Faktura korygująca sprzedaży zwolnionej z podatku
-
-K\_11
-
--
-
-**Art100**
-
-10201
-
-Sprzedaż opodatkowana
-
-K\_12
-
--
-
-10204
-
-Opodatkowana faktura korygująca sprzedaży
-
-K\_12
-
--
-
-**VAT22\_23**
-
-10301
-
-Sprzedaż opodatkowana
-
-K\_19
-
--
-
-10302
-
-Sprzedaż wolna od podatku
-
-K\_10
-
--
-
-10303
-
-Podatek należny
-
-K\_20
-
--
-
-10304
-
-Opodatkowana faktura korygująca sprzedaży
-
-K\_19
-
--
-
-10306
-
-Podatek od faktury korygującej sprzedaży
-
-K\_20
-
--
-
-**VAT7\_8**
-
-10401
-
-Sprzedaż opodatkowana
-
-K\_17
-
--
-
-10402
-
-Sprzedaż wolna od podatku
-
-K\_10
-
--
-
-10403
-
-Podatek należny
-
-K\_18
-
--
-
-10404
-
-Opodatkowana faktura korygująca sprzedaży
-
-K\_17
-
--
-
-10406
-
-Podatek od faktury korygującej sprzedaży
-
-K\_18
-
--
-
-**VAT5**
-
-10501
-
-Sprzedaż opodatkowana
-
-K\_15
-
--
-
-10502
-
-Sprzedaż wolna od podatku
-
-K\_10
-
--
-
-10503
-
-Podatek należny
-
-K\_16
-
--
-
-10504
-
-Opodatkowana faktura korygująca sprzedaży
-
-K\_15
-
--
-
-10506
-
-Podatek od faktury korygującej sprzedaży
-
-K\_16
-
--
-
-**VAT0**
-
-10601
-
-Sprzedaż opodatkowana
-
-K\_13
-
--
-
-10602
-
-Sprzedaż wolna od podatku
-
-K\_10
-
--
-
-10604
-
-Opodatkowana faktura korygująca sprzedaży
-
-K\_13
-
--
-
-**ART129**
-
-10701
-
-Sprzedaż opodatkowana
-
-K\_14
-
--
-
-10702
-
-Sprzedaż wolna od podatku
-
-K\_14
-
--
-
-10704
-
-Opodatkowana faktura korygująca sprzedaży
-
-K\_14
-
--
-
-10705
-
-Faktura korygująca sprzedaży zwolnionej z podatku
-
-K\_14
-
--
-
-**IntraEUGoods**
-
-10801
-
-Sprzedaż wolna od podatku
-
-K\_21
-
--
-
-10810
-
-Import opodatkowany
-
-K\_23
-
-+
-
-10812
-
-Podatek nienaliczony
-
-K\_24
-
-+
-
-**ExportOfGoods**
-
-10901
-
-Sprzedaż wolna od podatku
-
-K\_22
-
--
-
-10905
-
-Faktura korygująca sprzedaży zwolnionej z podatku
-
-K\_22
-
--
-
-**ImportOfGoodsART33**
-
-20207
-
-Import opodatkowany
-
-K\_45
-
-+
-
-11010
-
-Przeciwstawna wartość importu podlegająca opodatkowaniu
-
-K\_25
-
--
-
-20209
-
-Podatek nienaliczony
-
-K\_46
-
-+
-
-11012
-
-Konto przeciwstawne podatku nienaliczonego
-
-K\_26
-
--
-
-**ImportOfServices**
-
-20207
-
-Import opodatkowany
-
-K\_45
-
-+
-
-11110
-
-Przeciwstawna wartość importu podlegająca opodatkowaniu
-
-K\_27
-
--
-
-20209
-
-Podatek nienaliczony
-
-K\_46
-
-+
-
-11112
-
-Konto przeciwstawne podatku nienaliczonego
-
-K\_28
-
--
-
-**ImportART28**
-
-20207
-
-Import opodatkowany
-
-K\_45
-
-+
-
-11210
-
-Przeciwstawna wartość importu podlegająca opodatkowaniu
-
-K\_29
-
--
-
-20209
-
-Podatek nienaliczony
-
-K\_46
-
-+
-
-11212
-
-Konto przeciwstawne podatku nienaliczonego
-
-K\_30
-
--
-
-**ReverseCharge**
-
-11301
-
-Sprzedaż opodatkowana
-
-K\_31
-
--
-
-11302
-
-Podatek należny
-
-K\_35
-
--
-
-11304
-
-Opodatkowana faktura korygująca sprzedaży
-
-K\_31
-
--
-
-11306
-
-Podatek od faktury korygującej sprzedaży
-
-K\_35
-
--
-
-**FixedAssetPurch**
-
-20107
-
-Zakup podlegający opodatkowaniu
-
-K\_43
-
-+
-
-20109
-
-Podatek naliczony
-
-K\_44
-
-+
-
-20115
-
-Opodatkowana faktura korygująca zakupu
-
-K\_43
-
-+
-
-20116
-
-Podatek od faktury korygującej zakupu
-
-K\_47
-
-+
-
-**GoodServPurch**
-
-20207
-
-Zakup podlegający opodatkowaniu
-
-K\_45
-
-+
-
-20209
-
-Podatek naliczony
-
-K\_46
-
-+
-
-20215
-
-Opodatkowana faktura korygująca zakupu
-
-K\_45
-
-+
-
-20216
-
-Podatek od faktury korygującej zakupu
-
-K\_48
-
-+
-
-**CorrATR89b1**
-
-30101
-
-Podatek należny
-
-K\_49
-
-+
-
-30109
-
-Podatek naliczony
-
-K\_49
-
-+
-
-**CorrATR89b4**
-
-30201
-
-Podatek należny
-
-K\_50
-
-+
-
-30209
-
-Podatek naliczony
-
-K\_50
-
-+
+<table width="100%">
+<tbody>
+<tr>
+<td><strong>Kod podatku</strong></td>
+<td><strong>Kod raportowania podatku</strong></td>
+<td><strong>Opis</strong></td>
+<td><strong>Nazwa znacznika w podatku VAT SAF-T</strong></td>
+<td><strong>Znak w podatku VAT SAF-T</strong></td>
+</tr>
+<tr>
+<td rowspan="4"><strong>ExportCust</strong></td>
+<td>10101</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10102</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10104</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10105</td>
+<td>Faktura korygująca sprzedaży zwolnionej z podatku</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="2"><strong>Art100</strong></td>
+<td>10201</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_12</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10204</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_12</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5"><strong>VAT22_23</strong></td>
+<td>10301</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_19</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10302</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10303</td>
+<td>Podatek należny</td>
+<td>K_20</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10304</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_19</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10306</td>
+<td>Podatek od faktury korygującej sprzedaży</td>
+<td>K_20</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5"><strong>VAT7_8</strong></td>
+<td>10401</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_17</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10402</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10403</td>
+<td>Podatek należny</td>
+<td>K_18</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10404</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_17</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10406</td>
+<td>Podatek od faktury korygującej sprzedaży</td>
+<td>K_18</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5"><strong>VAT5</strong></td>
+<td>10501</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_15</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10502</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10503</td>
+<td>Podatek należny</td>
+<td>K_16</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10504</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_15</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10506</td>
+<td>Podatek od faktury korygującej sprzedaży</td>
+<td>K_16</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="3"><strong>VAT0</strong></td>
+<td>10601</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_13</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10602</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10604</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_13</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4"><strong>ART129</strong></td>
+<td>10701</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10702</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10704</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10705</td>
+<td>Faktura korygująca sprzedaży zwolnionej z podatku</td>
+<td>K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="3"><strong>IntraEUGoods</strong></td>
+<td>10801</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_21</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10810</td>
+<td>Import opodatkowany</td>
+<td>K_23</td>
+<td>+</td>
+</tr>
+<tr>
+<td>10812</td>
+<td>Podatek nienaliczony</td>
+<td>K_24</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2"><strong>ExportOfGoods</strong></td>
+<td>10901</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_22</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10905</td>
+<td>Faktura korygująca sprzedaży zwolnionej z podatku</td>
+<td>K_22</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4"><strong>ImportOfGoodsART33</strong></td>
+<td>20207</td>
+<td>Import opodatkowany</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11010</td>
+<td>Przeciwstawna wartość importu podlegająca opodatkowaniu</td>
+<td>K_25</td>
+<td>-</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Podatek nienaliczony</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11012</td>
+<td>Konto przeciwstawne podatku nienaliczonego</td>
+<td>K_26</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4"><strong>ImportOfServices</strong></td>
+<td>20207</td>
+<td>Import opodatkowany</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11110</td>
+<td>Przeciwstawna wartość importu podlegająca opodatkowaniu</td>
+<td>K_27</td>
+<td>-</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Podatek nienaliczony</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11112</td>
+<td>Konto przeciwstawne podatku nienaliczonego</td>
+<td>K_28</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4"><strong>ImportART28</strong></td>
+<td>20207</td>
+<td>Import opodatkowany</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11210</td>
+<td>Przeciwstawna wartość importu podlegająca opodatkowaniu</td>
+<td>K_29</td>
+<td>-</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Podatek nienaliczony</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11212</td>
+<td>Konto przeciwstawne podatku nienaliczonego</td>
+<td>K_30</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4"><strong>ReverseCharge</strong></td>
+<td>11301</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_31</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11302</td>
+<td>Podatek należny</td>
+<td>K_35</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11304</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_31</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11306</td>
+<td>Podatek od faktury korygującej sprzedaży</td>
+<td>K_35</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4"><strong>FixedAssetPurch</strong></td>
+<td>20107</td>
+<td>Zakup podlegający opodatkowaniu</td>
+<td>K_43</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20109</td>
+<td>Podatek naliczony</td>
+<td>K_44</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20115</td>
+<td>Opodatkowana faktura korygująca zakupu</td>
+<td>K_43</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20116</td>
+<td>Podatek od faktury korygującej zakupu</td>
+<td>K_47</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="4"><strong>GoodServPurch</strong></td>
+<td>20207</td>
+<td>Zakup podlegający opodatkowaniu</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Podatek naliczony</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20215</td>
+<td>Opodatkowana faktura korygująca zakupu</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20216</td>
+<td>Podatek od faktury korygującej zakupu</td>
+<td>K_48</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2"><strong>CorrATR89b1</strong></td>
+<td>30101</td>
+<td>Podatek należny</td>
+<td>K_49</td>
+<td>+</td>
+</tr>
+<tr>
+<td>30109</td>
+<td>Podatek naliczony</td>
+<td>K_49</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2"><strong>CorrATR89b4</strong></td>
+<td>30201</td>
+<td>Podatek należny</td>
+<td>K_50</td>
+<td>+</td>
+</tr>
+<tr>
+<td>30209</td>
+<td>Podatek naliczony</td>
+<td>K_50</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
 
 ### <a name="configure-the-er-model-and-format-for-the-report"></a>Konfigurowanie modelu i formatu raportowania elektronicznego dla raportu
 

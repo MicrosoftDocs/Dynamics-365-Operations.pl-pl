@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bd61cd2a5fa7705f3f9152323281e6f4ca520dc1
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 64446efd518390ee2a7204e2c977fa4174581808
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -46,6 +45,13 @@ Akredytywa zawiera opis towarów, wszelkie wymagane dokumenty, datę wysyłki i 
 
 Akredytywa może mieć typ Odwołalne lub Nieodwołalne. Akredytywa może być przenoszalna, nieprzenoszalna lub obrotowa. Zazwyczaj akredytywa jest nieodwołalną i potwierdzoną umową gwarantującą, że płatność zostanie dokonana na rzecz określonego beneficjenta po przekazaniu pełnej i dokładnej dokumentacji wysyłkowej.
 
+Aby uzyskać więcej informacji, zobacz następujące tematy:
+
+[Importowanie akredytywy](tasks/import-letter-credit.md)
+
+[Eksportowanie akredytywy](tasks/export-letter-credit.md)
+
+[Tworzenie instrumentu bankowego na akredytywę](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
 
