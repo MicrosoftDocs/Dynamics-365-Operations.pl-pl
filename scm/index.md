@@ -16,13 +16,13 @@ ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: 
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 7e916dd91126d140790cbb3a6a740c2e2f20ccef
+ms.sourcegitcommit: 9e0d4e510542ffdeb01c8c9daffab40f5ba4b654
+ms.openlocfilehash: 3875aab63d2046bf6f0ebeb04622babb6f3f104d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 
@@ -59,8 +59,11 @@ Te krótkie filmy ułatwiają rozpoczęcie pracy z nowymi funkcjami rozwiązania
 -  [Rozpoczęcie korzystania z modułu Rachunek kosztów](https://youtu.be/1pUDtJQZ8FU)
 -  [Obszar roboczy kontroli kosztów na urządzeniach przenośnych](https://youtu.be/imsuTg8rUVk)
 -  [Korzystanie z programu Excel podczas analizy kosztów](https://youtu.be/-HKHYdClvx8)
+-  [Zatwierdzanie zamówień zakupu na urządzeniu przenośnym](https://youtu.be/gZ-gOlJe7H8)
 
-### <a name="tech-talk"></a>Informacje dotyczące technologii 
+### <a name="tech-talks"></a>Informacje dotyczące technologii
+Większość z nich dotyczy funkcji poprzedniej wersji rozwiązania Finance and Operations, ale w obecnej wersji są używane te same pojęcia i podobne procedury. 
+
 -  <a href="https://youtu.be/zotrj3SbCl4">Konfigurator produktów w rozwiązaniu Microsoft Dynamics AX</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Planowanie główne — porady i wskazówki dotyczące rozwiązywania problemów z wydajnością</a>
 -  <a href="https://youtu.be/RLXybx20B5o">Pomocy! Zadania MRP działają zbyt wolno!</a>
@@ -71,6 +74,7 @@ Te krótkie filmy ułatwiają rozpoczęcie pracy z nowymi funkcjami rozwiązania
 -  <a href="https://youtu.be/5w1MngVchBA">Etykiety w nowym module zarządzania magazynem w rozwiązaniu Microsoft Dynamics AX 2012 R3</a>
 -  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: zaawansowane zarządzanie magazynem — codzienne procedury w zakresie produkcji procesowej</a>
 -  <a href="https://youtu.be/y1jrd3A_k70">Podwykonawstwo operacji i działania w zakresie produkcji</a>
+-  <a href="https://youtu.be/jgmTgJIgEFQ">Zarządzanie transportem (TMS) w nowym rozwiązaniu Microsoft Dynamics AX</a>
 
 ## <a name="blogs"></a>Blogi
 Wiele tematów dotyczących zarządzania wytwarzaniem i łańcuchem dostaw można znaleźć w <a href="https://blogs.msdn.microsoft.com/axmfg/">blogu zespołu ds. badań i rozwoju modułu Wytwarzanie systemu Dynamics AX</a> oraz <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">blogu zespołu ds. badań i rozwoju modułu Zarządzanie łańcuchem dostaw systemu Dynamics AX </a>. Większość z nich została napisana dla poprzedniej wersji rozwiązania Finance and Operations, ale w obecnej wersji są używane te same pojęcia i podobne procedury. 
