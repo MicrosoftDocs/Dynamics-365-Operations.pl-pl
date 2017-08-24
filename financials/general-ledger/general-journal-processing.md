@@ -3,7 +3,7 @@ title: Przetwarzanie arkuszy finansowych
 description: "Ten artykuł opisuje funkcje programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/25/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 244eada4202106b65198e3d6e3d0dedaa5486632
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 68da281cb4793ed83f70c68d061d327aa8a8c772
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -82,8 +81,13 @@ Konfiguracja konta głównego oferuje wiele opcji przetwarzania arkusza finansow
 
 Struktury księgowania i struktury zaawansowanych reguł są bardzo ważne do zagwarantowania, że dane, które są wymagane do raportowania finansowego i śledzenia wydajności, są rejestrowane przy przetwarzaniu arkusza finansowego i wszelkich dokumentów. Struktury księgowania i struktury reguły zaawansowanych pozwalają dostosować sposób wprowadzania danych. Można zezwolić na wprowadzanie danych tylko dla wymiarów finansowych, które są odpowiednie w poszczególnych sytuacjach, a można też wymuszać wymaganie, by rejestrowane były tylko dane wymagane i prawidłowe.
 
-Aby uzyskać więcej informacji, zobacz [Planowanie: Obsługa planu kont](plan-chart-of-accounts.md). 
-
+Aby uzyskać więcej informacji, zobacz następujące tematy:
+- [Planowanie: Obsługa planu kont](plan-chart-of-accounts.md). 
+- [Tworzenie reguł zaawansowanych dla arkuszy](tasks/create-advanced-rules-journals.md)
+- [Tworzenie wpisu w arkuszu za pomocą szablonu](tasks/create-journal-entry-template.md)
+- [Tworzenie i sprawdzanie arkuszy](tasks/create-validate-journals.md)
+- [Księgowanie arkuszy okresowych](tasks/post-periodic-journals.md)
+- [Przetwarzanie arkusza alokacji księgi](tasks/process-ledger-allocation-journal.md)
 
 
 

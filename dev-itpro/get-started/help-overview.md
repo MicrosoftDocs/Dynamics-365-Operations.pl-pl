@@ -15,13 +15,13 @@ ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
-ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
+ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
+ms.openlocfilehash: 171d006e20834ea4ad6d5651ec27fc305eac4bc6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -34,7 +34,7 @@ Ten artykuł zawiera omówienie składników systemu Pomocy programu Microsoft D
 > [!NOTE] 
 > Następujące produkty są ściśle związane ze sobą: Dynamics 365 for Finance and Operations Enterprise Edition, Dynamics 365 for Retail i Dynamics 365 for Talent. Te same funkcje mogą być dostępne we wszystkich 3 produktach. W związku z tym w tematach związanych głównie z modułem Retail nazwą produktu będzie Dynamics 365 for Retail, w tematach dotyczących przede wszystkim modułu Talent nazwą produktu będzie Dynamics 365 for Talent, a w tematach związanych z produktem podstawowym nazwą produktu będzie Dynamics 365 for Finance and Operations. Tematów, które zostały napisane dla jednego produktu, można używać w odniesieniu do tych samych funkcji w powiązanym produkcie.
 
-System Pomocy jest wspólny dla wszystkich produktów platformy Unified Operations:
+System Pomocy jest wspólny dla następujących produktów:
 - Dynamics 365 for Finance and Operations Enterprise Edition
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
@@ -73,7 +73,7 @@ Można również znaleźć naszą zawartość przy użyciu dowolnego aparatu wys
 
 ![Wyniki przeszukiwania witryny](./media/site-search-results-2.png)
 
-### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>Spis treści w na stronie docs.microsoft.com dla programu Unified Operations
+### <a name="the-docsmicrosoftcom-table-of-contents"></a>Spis treści na stronie docs.microsoft.com
 Wszystkie produkty mają jeden wspólny spis treści w witrynie dokumentów, dzięki czemu użytkownicy widzą kontekst aktualnie wyświetlonego tematu. Pozwala to również używać formantu Filtr do znajdowania szukanych tematów.
 
 ### <a name="how-can-i-contribute"></a>Jak mogę wnieść swój wkład? 
@@ -101,7 +101,7 @@ Po prawej stronie wprowadź adres e-mail i nowe hasło, aby utworzyć nowe konto
 ## <a name="task-guides"></a>Przewodniki zadań
 Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych kroków w zadaniach i procesach biznesowych. Przewodnik można otworzyć (i odtworzyć) z okienka pomocy. Po kliknięciu przewodnika po zadaniu okienko pomocy pokaże dokładne instrukcje wykonania zadania. Dostępne są przetłumaczone przewodniki po zadaniach. 
 
-Udostępniamy różne zestawy przewodników po zadaniach dla każdego produktu platformy Unified Operations. Sekcja Uzyskiwanie dostępu do przewodników po zadaniach z okienka Pomocy opisuje sposób znajdowania odpowiednich przewodników po zadaniach dla używanego produktu. 
+Udostępniamy różne zestawy przewodników po zadaniach dla każdego produktu, na przykład Dynamics 365 for Retail, Dynamics 365 for Finance and Operations czy Dynamics 365 for Talent. Sekcja Uzyskiwanie dostępu do przewodników po zadaniach z okienka Pomocy opisuje sposób znajdowania odpowiednich przewodników po zadaniach dla używanego produktu. 
 
 ![Przewodnik po zadaniu w widoku do czytania](./media/task-guide-ops.png)
 
@@ -169,7 +169,7 @@ Przetłumaczone przewodniki po zadaniach są wydawane w bibliotekach z tytułem 
 -   Jeśli przewodnik po zadaniu nie został jeszcze przetłumaczony, po otwarciu przewodnika tylko część tekstu (formanty) będzie wyświetlana w wybranym języku.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-W poniższej tabeli wymieniono witryny sieci Web, które dostarczają zawartość platformy Unified Operations. Nasze strony z zawartością są zorganizowane tak, aby wspomagać cykl życia klienta. Do każdej fazy jest inny zestaw witryn. Witryny z gwiazdką (\*) obok nazwy wymagają logowania przy użyciu konta, które jest skojarzone z planem usługi.
+W poniższej tabeli wymieniono nasze witryny internetowe. Nasze strony z zawartością są zorganizowane tak, aby wspomagać cykl życia klienta. Do każdej fazy jest inny zestaw witryn. Witryny z gwiazdką (\*) obok nazwy wymagają logowania przy użyciu konta, które jest skojarzone z planem usługi.
 
 | Oddział                                                                     | opis                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

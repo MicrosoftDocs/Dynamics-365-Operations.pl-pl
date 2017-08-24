@@ -15,13 +15,13 @@ ms.custom: 261824
 ms.assetid: d0784b2c-fe10-428d-8d07-fd474ca50fcc
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: c132c04bc64f02201252f03830d3f8309306f19c
+ms.translationtype: HT
+ms.sourcegitcommit: 9953d2f29a67b35f4bb43f577df1c4d910e379a1
+ms.openlocfilehash: 08a420a776f47119a5dc47f9119545aa448ffdbd
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -30,15 +30,20 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-W tym temacie opisano, jak zresetować składnicę danych modułu raportowania finansowego po przywróceniu bazy danych programu Microsoft Dynamics 365 for Finance and Operations. 
+W tym temacie opisano, jak zresetować składnicę danych modułu raportowania finansowego po przywróceniu bazy danych programu Microsoft Dynamics 365 for Finance and Operations.
 
-Istnieje kilka scenariuszy, w których może być konieczne przywrócenie bazy danych programu Finance and Operations z kopii zapasowej albo skopiowanie bazy danych z innego środowiska. W takiej sytuacji należy też wykonać odpowiednie kroki w celu zapewnienia, że składnica danych raportowania finansowego poprawnie używa przywróconej bazy danych programu Finance and Operations. Jeśli masz pytania dotyczące resetowania składnicy danych raportowania finansowego z powodów innych niż przywrócenie bazy danych programu Finance and Operations, więcej informacji znajdziesz w temacie [Resetowanie składnicy danych programu Management Reporter](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/). Należy zauważyć, że etapy tego procesu są obsługiwane dla programu Dynamics 365 for Operations w wydaniu z maja 2016 r. (kompilacja aplikacja 7.0.1265.23014 i kompilacja modułu raportowania finansowego 7.0.10000.4) oraz nowszych wydań. Jeśli masz wcześniejszą wersję programu Finance and Operations, poproś o pomoc nasz dział pomocy technicznej.
+Jeśli kiedykolwiek będziesz przywracać bazę danych programu Finance and Operations z kopii zapasowej albo kopiować bazę danych z innego środowiska, należy wykonać kroki opisane w tym temacie w celu zapewnienia, że składnica danych raportowania finansowego poprawnie używa przywróconej bazy danych programu Finance and Operations. 
+<!--If you have questions about resetting the financial reporting data mart for a reason outside of restoring a Finance and Operations database, refer to the [Resetting the Management Reporter data mart](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) for more information. -->
+> [!Note] 
+> Etapy tego procesu są obsługiwane dla programu Dynamics 365 for Operations w wydaniu z maja 2016 r. (kompilacja aplikacja 7.0.1265.23014 i kompilacja modułu raportowania finansowego 7.0.10000.4) oraz nowszych wydań. Jeśli masz wcześniejszą wersję programu Finance and Operations, poproś o pomoc nasz dział pomocy technicznej.
 
 ## <a name="export-report-definitions"></a>Eksportowanie definicji raportów
 Najpierw wyeksportuj projekty raportów znajdujące się w projektancie raportów, wykonując następujące czynności:
 
 1.  W Projektancie raportów wybierz kolejno opcje **Firma** &gt; **Grupy bloków konstrukcyjnych**.
-2.  Wybierz grupę blok konstrukcyjny do wyeksportowania, a następnie kliknij przycisk **Eksportuj**. **Uwaga:** W programie Finance and Operations obsługiwana jest tylko jedna grupa bloków konstrukcyjnych — **Domyślne**.
+2.  Wybierz grupę blok konstrukcyjny do wyeksportowania, a następnie kliknij przycisk **Eksportuj**. 
+    > [!Note] 
+    > W programie Finance and Operations obsługiwana jest tylko jedna grupa bloków konstrukcyjnych — **Domyślne**.
 3.  Wybierz definicje raportów do wyeksportowania:
     -   Aby wyeksportować wszystkie definicje raportów i powiązane bloki konstrukcyjne, kliknij **Zaznacz wszystko**.
     -   Aby wyeksportować wybrane raporty, wiersze, kolumny, drzewa lub zestawy wymiarów, kliknij odpowiednią kartę i wybierz elementy do wyeksportowania. Naciśnij i przytrzymaj klawisz Ctrl, aby wybrać wiele elementów na karcie. Podczas zaznaczania raportów do wyeksportowania zaznaczane są skojarzone wiersze, kolumny, drzewa i zestawy wymiarów.
@@ -63,9 +68,9 @@ Za pomocą narzędzia Pulpit zdalny połącz się z komputerami w środowisku i 
 Te usługi mają otwarte połączenia z bazą danych programu Finance and Operations.
 
 ## <a name="reset"></a>Zeruj
-#### <a name="locate-the-latest-dataupgradezip-package"></a>Znajdowanie najnowszego pakietu DataUpgrade.zip
+#### <a name="locate-and-download-the-latest-minorversiondataupgradezip-package"></a>Znajdowanie i pobieranie najnowszego pakietu MinorVersionDataUpgrade.zip
 
-Odszukaj najnowszy pakiet DataUpgrade.zip przy użyciu instrukcji podanych w temacie [Pobieranie pliku skryptu DataUpgrade.zip](..\migration-upgrade\upgrade-data-to-latest-update.md). Instrukcje wyjaśniają, jak znaleźć poprawną wersję pakietu uaktualnienia danych dla używanego środowiska.
+Odszukaj najnowszy pakiet MinorVersionDataUpgrade.zip przy użyciu instrukcji podanych w temacie [Pobieranie najnowszego wdrażalnego pakietu uaktualniania danych](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). Instrukcje wyjaśniają, jak znaleźć i pobrać poprawną wersję pakietu uaktualnienia danych. Uaktualnienie nie jest wymagane w celu pobrania pakietu MinorVersionDataUpgrade.zip. Aby pobrać kopię pakietu MinorVersionDataUpgrade.zip, należy tylko wykonać kroki opisane w sekcji „Pobieranie najnowszego wdrażalnego pakietu uaktualniania danych”, bez wykonywania żadnych innych czynności opisanych w tym artykule.
 
 #### <a name="execute-scripts-against-finance-and-operations-database"></a>Wykonywanie skryptów w bazie danych programu Finance and Operations
 
@@ -105,8 +110,10 @@ Zaimportuj projekty raportów z projektanta raportów, używając pliku utworzon
 
 1.  W Projektancie raportów wybierz kolejno opcje **Firma** &gt; **Grupy bloków konstrukcyjnych**.
 2.  Wybierz grupę blok konstrukcyjny do wyeksportowania, a następnie kliknij przycisk **Eksportuj**. 
+
     > [!NOTE]
     > W programie Finance and Operations obsługiwana jest tylko jedna grupa bloków konstrukcyjnych — **Domyślne**.
+    
 3.  Zaznacz blok konstrukcyjny **Domyślne** i kliknij przycisk **Importuj**.
 4.  Zaznacz plik zawierający wyeksportowane definicje raportów i kliknij przycisk **Otwórz**.
 5.  W oknie dialogowym Importowanie wybierz definicje raportów do zaimportowania:

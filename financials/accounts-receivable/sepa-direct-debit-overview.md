@@ -1,9 +1,9 @@
 ---
 title: "Omówienie polecenia zapłaty SEPA"
 description: "Jednolity Obszar Płatniczy w Euro (SEPA) został ustanowiony przez Komisję Europejską i decyduje o tym, że wszystkie płatności elektroniczne są uważane za krajowe, niezależnie od kraju/regionu, w którym znajdują się osoby, przedsiębiorstwa, organizacje oraz właściwy bank. Nie istnieje różnica między płatnościami krajowymi i międzynarodowymi. System SEPA obejmuje 28 państw członkowskich Unii Europejskiej (UE) oraz dodatkowo Islandię, Liechtenstein, Norwegię, Szwajcarię, Monako i San Marino. SEPA tworzy jeden rynek dla transakcji płatności w ramach europejskiego obszaru gospodarczego (EOG). Ostatecznie SEPA umożliwia zmniejszenie liczby formatów płatności, którymi operują banki, firmy i osoby prywatne."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11144
 ms.assetid: 3277c9b6-e46e-40c9-aa76-9b0449467842
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: f3b20b033fc701204cbb3f62468a421b3bdd6a80
 ms.contentlocale: pl-pl
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

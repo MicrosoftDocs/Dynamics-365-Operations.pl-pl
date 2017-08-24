@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: f7cf2b7996d113f0f883b39f3603de8236e8ad2c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 6a535b5f1192b7c27383cb8ece53f76a9c76f047
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -52,7 +51,7 @@ Program Microsoft Dynamics 365 for Finance and Operations obsługuje pełny cykl
 </tr>
 <tr class="even">
 <td>Rejestruje czek postdatowany dla dostawcy i księgowanie</td>
-<td>Zapisujesz szczegóły czeku postdatowanego wystawionego dostawcy. Po zaksięgowaniu płatności zobowiązanie wobec dostawcy jest rozpoznawane, ale konto bankowe nie jest jeszcze uznawane. Zamiast tego jest używane konto rozliczeniowe.</td>
+<td>Zapisujesz szczegóły czeku postdatowanego wystawionego dostawcy. Po zaksięgowaniu płatności zobowiązanie wobec dostawcy jest rozpoznawane, ale konto bankowe nie jest jeszcze uznawane. Zamiast tego jest używane konto rozliczeniowe. </td>
 </tr>
 <tr class="odd">
 <td>Rejestrowanie i księgowanie czeku postdatowanego dla odbiorcy</td>
@@ -87,6 +86,17 @@ Jeśli oryginalny czek dla dostawcy lub odbiorcy został zniszczony lub utracony
 
 
 
+Aby uzyskać więcej informacji, zobacz następujące tematy:
+
+[Konfigurowanie czeków postdatowanych](tasks/set-up-postdated-checks.md)
+
+[Rejestrowanie i księgowanie czeku postdatowanego dla odbiorcy](tasks/register-post-postdated-check-customer.md)
+
+[Rozliczanie czeku postdatowanego od odbiorcy](tasks/settle-postdated-check-customer.md)
+
+[Rejestrowanie i księgowanie czeku postdatowanego dla dostawcy](tasks/register-post-postdated-check-vendor.md) 
+
+[Rozliczanie czeku postdatowanego dla dostawcy](tasks/settle-postdated-check-vendor.md)
 
 
 

@@ -10,7 +10,6 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventAdjInventOnHand
 audience: Application User
-ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 53231
 ms.assetid: bc1fde9f-5ad9-4339-8ae8-e2839b792eb2
@@ -31,7 +30,6 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
-
 Na stronie Korygowanie dostępnych zapasów można skorygować wartość kosztów ilości dostępnych zapasów po wykonaniu procesu zamknięcia zapasów.
 
 Można użyć strony **Korygowanie dostępnych zapasów** do korygowania wartości kosztu dostępnych zapasów po uruchomieniu procesu zamknięcia magazynu. **Uwaga:** Aby otworzyć stronę **Korygowanie dostępnych zapasów**, na stronie **Zamknięcie i korekta** wybierz rekord zakończonego procesu zamknięcia zapasów, a następnie kliknij kolejno opcje **Korekta** &gt; **Dostępne**. **Przykład:** W lutym są realizowane następujące transakcje:
@@ -46,7 +44,4 @@ Ten towar został skonfigurowany przy użyciu modelu zapasów FIFO (pierwsze na 
 -   5 lutego: ilość 1, koszt 13,00 USD
 
 Aby ustawić koszt tych dwóch towarów na 15,00 USD, należy skorygować otwarte ilości dostępnych zapasów w ostatnim okresie zamknięcia magazynu za pomocą opcji korekty dostępnych zapasów. **Uwaga:** Datą księgowania transakcji korekty dostępnych zapasów będzie dzień ostatniego zamknięcia magazynu. Tego ustawienia nie można zmodyfikować.
-
-
-
 

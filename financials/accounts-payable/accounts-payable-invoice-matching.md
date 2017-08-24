@@ -3,7 +3,7 @@ title: "Uzgadnianie faktur rozrachunków z dostawcami"
 description: "Uzgadnianie faktur rozrachunków z dostawcami jest procesem uzgadniania obejmującym informacje z faktury dostawcy, zamówienia zakupu i przyjęć produktów."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6d1348ad43f8170f29bfc2f3df8a2ec60f9f8912
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: aa195f6057ae4ea511d661ffb47b1feeed58d2f9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -192,7 +191,7 @@ Faktury dostawców często są oparte na dokumentach przyjęcia produktów odpow
 -   Wprowadzanie kwot faktur nieuwzględnionych w oryginalnym zamówieniu zakupu, tak aby dane z faktury były zgodne z fakturą otrzymaną od dostawcy. Można porównywać opłaty w zamówieniach zakupu z opłatami w fakturach. W razie potrzeby można dodać opłaty do faktur i przydzielić je do wierszy faktur.
 -   Przeglądanie i zatwierdzanie rozbieżności przy uzgadnianiu rozbieżności cen występujących między ceną jednostkową netto z faktury a ceną jednostkową netto z zamówienia zakupu. Można skonfigurować dozwolone wartości procentowe dla firm, dostawców i towarów. Jeśli cena wiersza faktury dostawcy nie mieści się w dopuszczonym zakresie cen, można zapisać fakturę i czekać na jej zatwierdzenie przed zaksięgowaniem lub na dostarczenie korekty przez dostawcę.
 
-Aby uzyskać więcej informacji, zobacz [Trzyelementowe zasady uzgadniania](three-way-matching-policies.md).
+Aby uzyskać więcej informacji, zobacz [Trzyelementowe zasady uzgadniania](three-way-matching-policies.md) i [Konfigurowanie sprawdzania uzgadniania faktur rozrachunków z dostawcami](tasks/set-up-accounts-payable-invoice-matching-validation.md). 
 
 
 

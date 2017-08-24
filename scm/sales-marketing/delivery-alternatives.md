@@ -18,10 +18,10 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 33fe96562777443bffc5dac30fd3a273bcffb6e0
+ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.openlocfilehash: 9240e86a80e23ed5e787bdb3dd1a72b0318e3cc0
 ms.contentlocale: pl-pl
 ms.lasthandoff: 07/27/2017
 
@@ -150,7 +150,7 @@ Na tej karcie są eksponowane skutki wybranej alternatywnej opcji dostawy. Klikn
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Zobowiązanie do zamówienia](/dynamics365/unified-operations/supplychain/sales-marketing/delivery-dates-available-promise-calculations)
+[Zobowiązanie do zamówienia](delivery-dates-available-promise-calculations.md)
 
 
 

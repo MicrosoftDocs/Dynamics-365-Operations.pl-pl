@@ -5,8 +5,10 @@
 #### [Rejestracja w celu uzyskania subskrypcji w wersji Preview](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Wdrażanie środowiska demonstracyjnego](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Wybieranie opcji wdrożenia](/dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Wdrożenia w chmurze](/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview)
-##### [Wdrożenia lokalne](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+##### [Wdrożenie w chmurze](/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Wymagania systemowe dotyczące wdrożeń w chmurze](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Wdrożenie lokalne](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Wymagania systemowe dotyczące wdrożeń lokalnych](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements-on-prem?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Zakup rozwiązania Finance and Operations
 ##### [Program Microsoft FastTrack for Dynamics 365](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -17,7 +19,8 @@
 #### [Jeszcze nie zaimplementowane funkcje systemu AX 2012](/dynamics365/unified-operations/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Funkcje niezaimplementowane we wdrożeniach lokalnych](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Zasady świadczenia pomocy technicznej](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Finance and Operations, Enterprise Edition, aktualizacja z lipca 2017](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Rozwiązanie Finance and Operations Enterprise Edition — aktualizacja z lipca 2017](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-application-July-2017-update?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Rozwiązanie Operations — aktualizacja platformy 9 (lipiec 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-9?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Rozwiązanie Operations — aktualizacja platformy 8 (czerwiec 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-8?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Rozwiązanie Operations — aktualizacja platformy 7 (maj 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Rozwiązanie Operations — aktualizacja platformy 6 (kwiecień 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -71,6 +74,7 @@
 #### [Arkusz wyceny](/dynamics365/unified-operations/supply-chain/cost-management/costing-sheets?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Wersja wyceny](/dynamics365/unified-operations/supply-chain/cost-management/costing-versions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Symulowanie zmian kosztów przy użyciu wersji wyceny dla kosztu planowanego](/dynamics365/unified-operations/supply-chain/cost-management/simulate-cost-changes-costing-version-planned-costs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ### Wycena zapasów
 #### [Korygowanie wartości kosztu dostępnych zapasów](/dynamics365/unified-operations/supply-chain/cost-management/adjust-hand-inventory-cost-values?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Obiekt kosztów](/dynamics365/unified-operations/supply-chain/cost-management/cost-object?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -153,6 +157,7 @@
 
 #### Wykonywanie migracji jednostek
 ##### [Projekty danych konfiguracji](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Pakiety danych konfiguracji](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-packages?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Szablony danych konfiguracji](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Kopiowanie danych konfiguracji między firmami](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Najlepsze rozwiązania w zakresie importowania załączników za pomocą jednostki Arkusz finansowy](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -181,9 +186,9 @@
 #### [Rozwiązywanie problemów z uwierzytelnianiem usług](/dynamics365/unified-operations/dev-itpro/data-entities/troubleshoot-service-authentication?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### [OData](/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Integracje cykliczne](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Integracje cykliczne](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Integracja danych za pomocą usługi Common Data Service](/common-data-service/entity-referencedynamics-365-integration) 
+### [Integracja danych za pomocą usługi Common Data Service](/common-data-service/entity-reference/dynamics-365-integration) 
 #### [Konfigurowanie scenariusza prospektu na gotówkę](/dynamics365/unified-operations/supply-chain/sales-marketing/prospect-to-cash?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Synchronizowanie produktów w rozwiązaniu Finance and Operations do produktów w rozwiązaniu Sales](/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Synchronizowanie kont w rozwiązaniu Sales do odbiorców w rozwiązaniu Finance and Operations](/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -739,7 +744,7 @@
 #### [Omówienie polecenia zapłaty SEPA](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Konfigurowanie kont bankowych firmy dla poleceń przelewu ISO20022](/dynamics365/unified-operations/financials/localizations/tasks/set-up-company-bank-accounts-iso20022-credit-transfers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Konfigurowanie kont bankowych firmy dla poleceń zapłaty ISO20022](/dynamics365/unified-operations/financials/localizations/tasks/set-up-company-bank-accounts-iso20022-direct-debits?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Konfiguracja kompensacji odbiorców oraz dostawców](/dynamics365/unified-operations/financials/accounts-receivable/emea-compensation-customer-vendor-transactions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Konfigurowanie kompensacji odbiorców oraz dostawców](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Konfigurowanie odbiorców i kont bankowych odbiorców dla poleceń zapłaty ISO20022](/dynamics365/unified-operations/financials/localizations/tasks/set-up-bank-accounts-iso20022-direct-debits?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Konfigurowanie raportowania listy sprzedaży do UE](/dynamics365/unified-operations/financials/localizations/tasks/eur-00011-eu-sales-list-reporting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Konfigurowanie metody płatności przelewu ISO20022](/dynamics365/unified-operations/financials/localizations/tasks/set-up-method-payment-iso20022-credit-transfer?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -804,21 +809,21 @@
 ###### [Zaopatrzenie i sourcing](/dynamics365/unified-operations/financials/localizations/emea-fra-procurement-sourcing-public-sector?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ###### [Wstrzymanie płatności za fakturę od dostawcy](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Zatwierdzanie i księgowanie weksli (Francja)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Zatwierdzanie i księgowanie weksli](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Chronologiczne załączniki faktur](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Wyciągi z konta odbiorcy i dostawcy (Francja)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00002-customer-vendor-account-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Dzienne obliczanie odsetek dla opóźnionej płatności i ryczałtu na fakturze i ponagleniu (Francja)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00018-daily-interest?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Wyciągi z konta odbiorcy i dostawcy](/dynamics365/unified-operations/financials/localizations/tasks/fr-00002-customer-vendor-account-statements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Dzienne obliczanie odsetek dla opóźnionej płatności i ryczałtu na fakturze i ponagleniu](/dynamics365/unified-operations/financials/localizations/tasks/fr-00018-daily-interest?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Amortyzacja derogacyjna](/dynamics365/unified-operations/financials/localizations/emea-fra-derogatory-depreciation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Weksle i skrypty dłużne (Francja)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-french-bills-exchange-promissory-notes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Weksle i skrypty dłużne](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-french-bills-exchange-promissory-notes?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Kody NAF i numery siret](/dynamics365/unified-operations/financials/localizations/emea-fra-naf-codes-siret-numbers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Konfigurowanie kodów NAF i numerów siret (Francja)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00003-naf-codes-siret-numbers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Konfigurowanie kodów NAF i numerów siret](/dynamics365/unified-operations/financials/localizations/tasks/fr-00003-naf-codes-siret-numbers?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Kary za zaległe płatności odbiorców](/dynamics365/unified-operations/financials/localizations/emea-fra-apply-penalty-customer-payment-past-due?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Księgowanie arkusza oprotestowanego wystawionego weksla (Francja)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-post-protest-draw-bill-exchange-journal?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Księgowanie arkusza ponownego wystawiania weksli (Francja)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-post-re-draw-bill-exchange-journal?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Księgowanie protestu dotyczącego arkusza wystawiania weksli](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-post-protest-draw-bill-exchange-journal?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Księgowanie arkusza ponownego wystawiania weksli](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-post-re-draw-bill-exchange-journal?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Drukowanie tekstu odzyskiwania ryczałtu na fakturze dla odbiorcy](/dynamics365/unified-operations/financials/localizations/emea-fra-print-lump-sum-recovery-text?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Amortyzacja degresywna/liniowa](/dynamics365/unified-operations/financials/localizations/emea-fra-rbsl-depreciation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Konfigurowanie metody płatności (Francja)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-setup-method-payment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Aktualizowanie metody płatności odbiorcy (Francja)](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-update-method-payment-customer?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Konfigurowanie metody płatności](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-setup-method-payment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Aktualizowanie metody płatności odbiorcy](/dynamics365/unified-operations/financials/localizations/tasks/fr-00004-update-method-payment-customer?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Niemcy
 ##### [Amortyzacja dodatkowych nabyć](/dynamics365/unified-operations/financials/localizations/emea-deu-additional-acquisition-depreciation?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Plik audytu ](/dynamics365/unified-operations/financials/localizations/emea-deu-gdpdu-audit-data-export?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -859,7 +864,7 @@
 ##### [Szczegóły deklaracji VAT](/dynamics365/unified-operations/financials/localizations/emea-lva-vat-statement-details?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Litwa
 ##### [Zestawienie napraw środków trwałych](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Generowanie dokumentu przeniesienia środków trwałych między magazynami (Litwa)](/dynamics365/unified-operations/financials/localizations/tasks/lt-00003-fixed-asset-transfer?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Generowanie dokumentu przeniesienia środków trwałych między magazynami](/dynamics365/unified-operations/financials/localizations/tasks/lt-00003-fixed-asset-transfer?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Szczegóły deklaracji VAT](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 #### Holandia
@@ -879,7 +884,7 @@
 ##### [Rozszerzenie funkcjonalności likwidacji środków trwałych](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Opakowanie zwrotne](/dynamics365/unified-operations/financials/localizations/emea-pol-returnable-packages?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Raporty podatków](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-tax-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Standardowy plik audytu (/dynamics365/unified-operations/financials/localizations/SAF)](/dynamics365/unified-operations/financials/localizations/emea-pol-standard-audit-file-saf?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Standardowy plik audytu](/dynamics365/unified-operations/financials/localizations/emea-pol-standard-audit-file-saf?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Zestawienie obrotów i sald](/dynamics365/unified-operations/financials/localizations/emea-pol-turnover-balances-statement?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Hiszpania
 ##### [Stosowanie rabatów gotówkowych na fakturze](/dynamics365/unified-operations/financials/localizations/emea-esp-cash-discount-applied-invoice?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -902,9 +907,8 @@
 ##### [Tworzenie kredytu na podstawie ustalonego rabatu](/dynamics365/unified-operations/financials/localizations/tasks/gb-00009-credit-note-settlement-discount?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Tworzenie zamówienia zakupu zawierającego towary podlegające opłacie zwrotnej VAT](/dynamics365/unified-operations/financials/localizations/tasks/purchase-order-reverse-charge-vat?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Tworzenie zamówienia sprzedaży zawierającego towary podlegające opłacie zwrotnej VAT](/dynamics365/unified-operations/financials/localizations/tasks/gb-00002-sales-order?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Zatrudnianie istniejącego pracownika przez rekrutację](/dynamics365/unified-operations/financials/localizations/tasks/hire-existing-employee-through-recruiting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Konfigurowanie grup podatkowych do opłaty zwrotnej VAT](/dynamics365/unified-operations/financials/localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Ustawianie grup towarów z opłatą zwrotną VAT, reguł i parametrów](/dynamics365/unified-operations/financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Konfigurowanie grup towarów z opłatą zwrotną VAT, reguł i parametrów](/dynamics365/unified-operations/financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Konfigurowanie grup podatkowych do opłaty zwrotnej VAT](/dynamics365/unified-operations/financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Ameryka Łacińska
@@ -1118,6 +1122,7 @@
 #### [Wprowadzanie kart czasu pracy projektu](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enter-project-timesheets?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Wprowadzanie informacji o pracowniku](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enter-worker-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Zatrudnianie kandydata przez rekrutację](/dynamics365/unified-operations/fin-and-ops/hr/tasks/hire-candidate-through-recruiting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Zatrudnianie istniejącego pracownika etatowego przez rekrutację](/dynamics365/unified-operations/fin-and-ops/hr/tasks/hire-existing-employee-through-recruiting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów](/dynamics365/unified-operations/fin-and-ops/hr/tasks/identify-deploy-candidate-selection-tools?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Wypożyczanie przedmiotów pracownikom](/dynamics365/unified-operations/fin-and-ops/hr/tasks/loan-item-worker?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Obsługa informacji dotyczących urazów i chorób pracowników](/dynamics365/unified-operations/fin-and-ops/hr/tasks/maintain-employee-injury-illness-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1133,7 +1138,7 @@
 ## [Analizy](/dynamics365/unified-operations/dev-itpro/analytics/information-access-reporting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Dostęp do zawartości usługi Power BI](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Wydana zawartość usługi Power BI](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Zawartość usługi Power BI](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Wartości rzeczywiste a budżet](/dynamics365/unified-operations/dev-itpro/analytics/ledger-budgets-power-bi?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Świadczenia](/dynamics365/unified-operations/dev-itpro/analytics/benefits-power-bi?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Omówienie operacji gotówkowych](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
@@ -1162,9 +1167,10 @@
 
 ### Raportowanie i drukowanie dokumentów
 #### [Omówienie usług raportowania dokumentów](/dynamics365/unified-operations/dev-itpro/analytics/document-reporting-services?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Konfigurowanie usług SSRS na potrzeby wdrożenia lokalnego](/dynamics365/unified-operations/dev-itpro/analytics/configure-ssrs-on-premises?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Drukowanie](/dynamics365/unified-operations/dev-itpro/analytics/print-documents?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Włączanie urządzeń drukarek sieciowych](/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Generowanie dokumentu, publikacji i drukowanie możliwości we wdrożeniach lokalnych](/dynamics365/unified-operations/dev-itpro/analytics/printing-capabilities-on-premises?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Możliwości generowania dokumentów, publikowania i drukowania we wdrożeniach lokalnych](/dynamics365/unified-operations/dev-itpro/analytics/printing-capabilities-on-premises?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Uruchamianie Agenta rozsyłania dokumentów jako usługi systemu Windows](/dynamics365/unified-operations/dev-itpro/analytics/run-document-routing-agent-as-windows-service?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Pomoc dotycząca zapobiegania upływowi limitu czasu w przypadku długo działających raportów](/dynamics365/unified-operations/dev-itpro/analytics/prevent-long-running-reports-timing-out?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Lista raportów usług SQL Server Reporting Services](/dynamics365/unified-operations/dev-itpro/analytics/SSRS-report?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1187,6 +1193,48 @@
 #### [Miejsca docelowe](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-destinations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Konfigurowanie Raportowania elektronicznego za pomocą usługi Power BI](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Generowanie dokumentów elektronicznych i aktualizowanie danych aplikacji za pomocą narzędzia Raportowanie elektroniczne](/dynamics365/unified-operations/dev-itpro/analytics/generate-electronic-documents-update-application-data?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### Zadania raportowania elektronicznego
+##### [Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Definiowanie zależności konfiguracji od innych składników na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Definiowanie mapowania modelu i wybieranie źródeł danych na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Projektowanie konfiguracji do generowania raportów w formacie programu Microsoft Word na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Projektowanie modelu danych specyficznego dla domeny na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Projektowanie konfiguracji do generowania raportów w formacie OpenXML na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Konfigurowanie lokalizacji docelowych na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Przygotowywanie modelu danych w celu używania plików zarządzania dokumentami w danych wyjściowych formatu na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-1?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Rozszerzanie modelu danych w celu używania plików zarządzania dokumentami w danych wyjściowych formatu na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-2?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Tworzenie formatu w celu używania plików zarządzania dokumentami w danych wyjściowych formatu na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-3?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Uruchamianie formatu w celu używania plików zarządzania dokumentami w danych wyjściowych formatu na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-4?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Modyfikowanie i uruchamianie formatu w celu używania plików zarządzania dokumentami w danych wyjściowych formatu na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-5?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Generowanie dokumentów elektronicznych dla płatności przy użyciu konfiguracji formatu na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-electronic-payments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Projektowanie modelu danych w celu używania wymiarów finansowych jako źródła danych na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Mapowanie modeli w celu używania wymiarów finansowych jako źródła danych na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Projektowanie raportu w celu używania wymiarów finansowych jako źródła danych na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Uruchamianie raportu, w którym wymiary finansowe są używane jako źródła danych na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Tworzenie konfiguracji formatu na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-configuration-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Tworzenie formatu służącego do zliczania i sumowania na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-1?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Konfigurowanie obliczeń służących do zliczania i sumowania na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-2?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Używanie obliczeń w celu tworzenia wyników zliczania i sumowania na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-3?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Uruchamianie formatu w celu wykonania zliczania i sumowania na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-4?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Importowanie konfiguracji w celu generowania dokumentów z aktualizacjami danych aplikacji na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Generowanie dokumentów z aktualizacjami danych aplikacji na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Modyfikowanie modelu i mapowania w celu generowania dokumentów z aktualizacjami danych aplikacji na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Modyfikowanie formatu w celu generowania dokumentów z aktualizacjami danych aplikacji na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Generowanie dokumentów z aktualizacjami danych aplikacji na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Projektowanie formatu w celu używania poziomo rozszerzalnych zakresów do dynamicznego dodawania kolumn w raportach programu Excel na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-1?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Uruchamianie formatu, w którym poziomo rozszerzalne zakresy są używane do dynamicznego dodawania kolumn w raportach programu Excel, na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-2?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Importowanie konfiguracji z usługi Lifecycle Services na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Tworzenie raportów w formacie pakietu Microsoft Office z osadzonymi obrazami na potrzeby raportowania elektronicznego (część 1)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Przeglądanie konfiguracji w celu tworzenia raportów w formacie pakietu Microsoft Office z osadzonymi obrazami na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Generowanie raportów w formacie pakietu Microsoft Office z osadzonymi obrazami na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Zarządzanie konfiguracjami mapowania modeli na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Mapowanie składników utworzonego formatu na elementy modelu danych na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Mapowanie modelu danych na wybrane źródła danych na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Modyfikowanie formatu przez ponowne zastosowanie szablonu programu Microsoft Excel na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-modify-format-by-reapplying-microsoft-excel-template-july-2017?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Tworzenie wymaganych konfiguracji do importowania danych z pliku zewnętrznego na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-required-configurations-import-data?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Wybieranie definicji modelu danych podczas tworzenia formatu na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Uaktualnianie formatu przez adaptację nowej wersji podstawowej na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-upgrade-format?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Przekazywanie konfiguracji do usługi Lifecycle Services na potrzeby raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Narzędzia analityczne i wizualizacje
 #### [Analizy, miary agregacji i modelowanie wskaźników KPI](/dynamics365/unified-operations/dev-itpro/analytics/analytics?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1197,6 +1245,8 @@
 #### [Raport zagregowanych jednostek danych](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-data-entities-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Raport kluczowych wskaźników wydajności (KPI)](/dynamics365/unified-operations/dev-itpro/analytics/key-performance-indicators-report?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Integracja usługi Power BI](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Tworzenie raportu i pulpitu nawigacyjnego w usłudze Power BI](/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Tworzenie raportu usługi Power BI przy użyciu danych z rozwiązania Finance and Operations](/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-data?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Konfigurowanie integracji usługi Power BI dla obszarów roboczych](/dynamics365/unified-operations/dev-itpro/analytics/configure-power-bi-integration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Integracja usługi Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-embedded-integration?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Osadzona usługa Power BI w obszarach roboczych](/dynamics365/unified-operations/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1205,8 +1255,9 @@
 #### [Dodawanie usługi Power BI do obszarów roboczych](/dynamics365/unified-operations/dev-itpro/analytics/add-bi-workspaces?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Przypinanie raportów usługi Power BI do obszarów roboczych](/dynamics365/unified-operations/dev-itpro/analytics/pin-power-bi-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Integracja usługi Power BI z magazynem jednostek](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Tworzenie i rozsyłanie raportów usługi Power BI przy użyciu magazynu jednostek](/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Eksportowanie jednostek we własnej bazie danych programu SQL Azure](/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Eksportowanie jednostek do własnej bazy danych usługi SQL Azure](/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Tworzenie raportów analitycznych za pomocą aplikacji Power BI Desktop](/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Publikowanie aplikacji analitycznych w usłudze Power BI](/dynamics365/unified-operations/dev-itpro/analytics/publish-apps-powerbi?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 
 ## Zarządzanie zapasami
@@ -1380,10 +1431,18 @@
 
 ## Aplikacje mobilne
 ### [Aplikacje mobilne — strona główna](/dynamics365/unified-operations/dev-itpro/mobile-apps/Mobile-app-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Ostatnio wydane mobilne obszary robocze](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspaces-released?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Mobilne obszary robocze](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspaces-released?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Dyrektor firmy](/dynamics365/unified-operations/dev-itpro/mobile-apps/company-directory-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Kontrola kosztów](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Zarządzanie wydatkami](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Dostępne zapasy](/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Zatwierdzenia faktur](/dynamics365/unified-operations/dev-itpro/mobile-apps/invoice-approval-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Mój zespół](/dynamics365/unified-operations/dev-itpro/mobile-apps/manager-self-service-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Wpis czasu projektu](/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Zatwierdzenie zamówienia zakupu](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Zamówienia sprzedaży](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Portal współpracy z dostawcami](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Publikowanie mobilnego obszaru roboczego](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Interfejsy API języka X++ dla mobilnych obszarów roboczych](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspace-xpp-apis?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Integracja z pakietem Office
 ### [Integracja z pakietem Office](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1396,8 +1455,7 @@
 ### [Rozwiązywanie problemów](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Zarządzanie zamówieniami
-### Zaopatrzenie i sourcing
-#### [Omówienie zaopatrzenia i sourcingu](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Zaopatrzenie i sourcing](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Przepływ pracy dla zaopatrzenia i sourcingu](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-workflows?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Zasady zakupów](/dynamics365/unified-operations/supply-chain/procurement/purchase-policies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Katalogi zaopatrzenia](/dynamics365/unified-operations/supply-chain/procurement/procurement-catalogs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1457,11 +1515,10 @@
 ##### [Ustawianie hierarchii kategorii zaopatrzenia](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-procurement-category-hierarchy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Konfigurowanie informacji o zasobach projektu](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-project-resource-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Przesyłanie i zatwierdzanie budżetu projektu](/dynamics365/unified-operations/supply-chain/procurement/tasks/submit-approve-project-budget?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Przesyłanie i zatwierdzanie korekt budżetu projektu](/dynamics365/unified-operations/supply-chain/procurement/tasks/submit-approve-project-budget-revision?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Przesyłanie i zatwierdzanie zmian budżetu projektu](/dynamics365/unified-operations/supply-chain/procurement/tasks/submit-approve-project-budget-revision?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 
-### Sprzedaż i marketing
-#### [Marketing](/dynamics365/unified-operations/supply-chain/sales-marketing/overview-sales-marketing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Sprzedaż i marketing](/dynamics365/unified-operations/supply-chain/sales-marketing/overview-sales-marketing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Zamówienia sprzedaży
 ##### [Zobowiązanie do zamówienia](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Dostawy alternatywne](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-alternatives?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1499,10 +1556,16 @@
 ## [Administrowanie organizacją](/dynamics365/unified-operations/fin-and-ops/organization-administration/organization-administration-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Organizacje i hierarchie organizacyjne](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Konfigurowanie hierarchii organizacyjnej](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-organizational-hierarchy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Tworzenie hierarchii organizacyjnej](/dynamics365/unified-operations/core/organization-administration/tasks/create-organization-hierarchy?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Tworzenie firmy](/dynamics365/unified-operations/core/organization-administration/tasks/create-legal-entity?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Tworzenie nowej jednostki operacyjnej](/dynamics365/unified-operations/core/organization-administration/tasks/create-operating-unit?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Książki adresowe](/dynamics365/unified-operations/fin-and-ops/organization-administration/qa-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Globalna książka adresowa](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Konfigurowanie globalnych książek adresowych](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Planowanie globalnej książki adresowej](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Konfigurowanie globalnej książki adresowej](/dynamics365/unified-operations/core/organization-administration/tasks/configure-global-address-book?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Omówienie sekwencji numerów](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Konfigurowanie indywidualnych sekwencji numerów](/dynamics365/unified-operations/core/organization-administration/tasks/set-up-number-sequences-individual-basis?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Konfigurowanie sekwencji numerów za pomocą kreatora](/dynamics365/unified-operations/core/organization-administration/tasks/set-up-number-sequences-wizard?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Omówienie podpisów elektronicznych](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Konfigurowanie podpisów elektronicznych](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Omówienie zarządzania sprawami](/dynamics365/unified-operations/fin-and-ops/organization-administration/cases?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1529,6 +1592,9 @@
 ##### [Konfigurowanie odgałęzienia równoległego](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-parallel-branch-workflow?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Konfigurowanie właściwości przepływu pracy](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-workflow-properties?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Konfigurowanie zadania wsadowego do przetwarzania komunikatów](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-batch-job-critical?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Delegowanie elementów pracy w przepływie pracy](/dynamics365/unified-operations/core/organization-administration/tasks/delegate-work-items-workflow?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Wyświetlanie historii przepływu pracy](/dynamics365/unified-operations/core/organization-administration/tasks/view-workflow-history?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Umożliwianie użytkownikom odbierania wiadomości e-mail związanych z przepływem pracy](/dynamics365/unified-operations/core/organization-administration/tasks/users-receive-workflow-related-email-messages?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Raport typów przepływów pracy](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-types-report?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Produkcja
@@ -1766,6 +1832,7 @@
 ## Płatności
 ### [Metody płatności](/dynamics365/unified-operations/retail/payment-methods?toc=dynamics365/unified-operations/retail/toc.json)
 ### [Konfiguracja, autoryzacja i przechwytywanie karty kredytowej](/dynamics365/unified-operations/financials/accounts-receivable/credit-card-authorizations?toc=dynamics365/unified-operations/retail/toc.json)
+### [Konfigurowanie metod płatności dla punktu sprzedaży](/dynamics365/unified-operations/retail/cash-denominations?toc=dynamics365/unified-operations/retail/toc.json)
 ### [Płatności — często zadawane pytania](/dynamics365/unified-operations/retail/dev-itpro/payments-retail?toc=dynamics365/unified-operations/retail/toc.json)
 
 ## Zamówienia zakupu
@@ -1977,6 +2044,7 @@
 #### [Omówienie zestawu Retail SDK](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-overview?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Integrowanie zestawu Retail SDK z systemem ciągłej kompilacji](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Przykłady możliwości rozszerzania zestawu Retail SDK](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples?toc=dynamics365/unified-operations/retail/toc.json)
+#### [Kasy w Szwecji](/dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Próbki dla integracji programu Retail POS z jednostkami kontrolnymi dla Szwecji](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Pakiety zestawu Retail SDK](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-packaging?toc=dynamics365/unified-operations/retail/toc.json)
 #### [Przykłady zestawu Retail SDK ](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-samples?toc=dynamics365/unified-operations/retail/toc.json)
@@ -1986,6 +2054,9 @@
 
 # [Dynamics 365 for Talent](/dynamics365/unified-operations/talent/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
+## Rozpoczęcie pracy
+### [Wymagania systemowe i zasady aktualizacji](/dynamics365/unified-operations/talent/talent-versions-update-policy?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ## Opracowywanie strategii dotyczącej zasobów ludzkich
 ### [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Konfigurowanie składników funkcji](/dynamics365/unified-operations/talent/create-job?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -1994,6 +2065,7 @@
 ### [Konfigurowanie specyficznych dla firmy parametrów modułu Zasoby ludzkie](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Akcje dotyczące pracowników — często zadawane pytania](/dynamics365/unified-operations/talent/personnel-actions-faq?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Używanie przepływu pracy do zarządzania informacjami pracowników etatowych](/dynamics365/unified-operations/talent/workflow-manage-employee-information?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Omówienie urlopów i nieobecności](/dynamics365/unified-operations/talent/leave-and-absence-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Motywowanie pracowników etatowych
 ### [Plany wynagrodzeń](/dynamics365/unified-operations/talent/compensation-plans?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2023,7 +2095,8 @@
 
 # [Programowanie i administrowanie przy użyciu platformy Unified Operations](/dynamics365/unified-operations/dev-itpro/index?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## [Wymagania systemowe](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+## [Wymagania systemowe dotyczące wdrożeń w chmurze](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+## [Wymagania systemowe dotyczące wdrożeń lokalnych](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements-on-prem?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ## [Dane demonstracyjne](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 
@@ -2277,6 +2350,116 @@
 #### [Skrócone informacje dotyczące Rejestratora zadań](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-training-docs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
+## [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### Rozpoczęcie pracy
+#### [Rozpoczęcie pracy](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-getting-started?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Uwagi dotyczące architektury i projektowania](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### Konfigurowanie mobilnego obszaru roboczego
+#### [Konfigurowanie obszaru roboczego za pomocą klasy SysAppWorkspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/mobile-workspace-configuration?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Lokalizowanie obszarów roboczych na serwerze](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/localize-workspaces-on-server?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Zabezpieczanie obszaru roboczego aplikacji mobilnej](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/secure-mobile-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Dostosowywanie wyświetlania pola, tak aby można było je kliknąć](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/make-workspace-field-clickable?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Określanie pola jako obowiązkowego przy użyciu klas obszaru roboczego](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/make-field-mandatory?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### Optymalizowanie mobilnego obszaru roboczego
+#### [Wyświetlanie liczby w polu](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/display-count-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### Informacje dotyczące programowania po stronie serwera
+#### [Programowanie po stronie serwera (interfejsy API języka X++ obszaru roboczego)](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-workspace-server-apis?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+### Informacje dotyczące programowania po stronie klienta
+#### [Omówienie interfejsów API programowania po stronie klienta](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/scenarios/client-api-design-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Interfejsy API klienta](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/client-apis-reference?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Application](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/services-application?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Application](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/services-application-iapplication?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [ApplicationMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/services-application-iapplicationmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [main](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/services-application.md#main)
+#### [Control](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Container](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [ContainerControl](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrol?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [ContainerControlDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [ContainerControlMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrolmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Field](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-field-ifield?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Field](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifield?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [FieldDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifielddesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [FieldMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifieldmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [FileUploader](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-fileuploader-ifileuploader?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [FileUploader](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploader?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [FileUploaderDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploaderdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [FileUploaderMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploadermetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Group](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-group-igroup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Group](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [GroupDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [GroupMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Hyperlink](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-hyperlink-ihyperlink?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [HyperLink](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlink?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [HyperLinkDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [HyperLinkMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Image](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-image-iimage?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Image](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimage?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [ImageDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagedesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [ImageMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/ interfaces/view-model-control-image-iimage-iimagemetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [ImageStyleType](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-image-iimage.md#imagestyletype)
+##### [Input](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-iinputcontrol?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [InputControl](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [InputControlDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [InputControlMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [NumberSequenceConfig](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [List](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-list-ilist?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [List](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilist?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [ListDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [ListMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Row](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Lookup](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-lookup-ilookup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Lookup](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [LookupDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [LookupMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Multi-Lookup](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-lookup-imultilookup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [MultiLookup](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookup?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [MultiLookupDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [MultiLookupMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Pagelink](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-pagelink-ipagelink?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [PageLink](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelink?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [PageLinkDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [PageLinkMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Part](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-part-ipart?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Part](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipart?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [PartDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [PartMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Value](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-value-ivalue?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [GenericValue](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-igenericvalue?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [Value](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [ValueDesign](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+###### [ValueMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Control](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrol?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [ControlMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [ControlType](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md#controltype)
+#### [Defer](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/defer?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [all](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/defer.md#all)
+##### [defer](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/defer.md#defer)
+##### [Deferred](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/defer-ideferred?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [reject](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/defer.md#reject)
+##### [resolve](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/defer.md#resolve)
+#### [Event](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/event-ievent?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [EventHook](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/event-ievent-ieventhook?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [IEventListener](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/event-ievent.md#ieventlistener)
+#### [Page](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/view-model-ipage?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [CompleteEventArgs](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-icompleteeventargs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Design](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-idesign?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [NavigationArgs](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-inavigationargs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [Page](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipage?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [PageDataState](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/enums/view-model-ipage-pagedatastate?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [PageLoadState](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/enums/view-model-ipage-pageloadstate?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [PageMetadata](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagemetadata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [PageOptions](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipageoptions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [PageSubmitArgs](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagesubmitargs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [PageTarget](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagetarget?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Services](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/services-business-logic-services?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [AsyncService](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-iasyncservice?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [CacheService](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-icacheservice?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [DataService](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-idataservice?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [ExpressionOperator](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/modules/services-business-logic-services.md#expressionoperator)
+##### [MetadataService](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-imetadataservice?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+##### [PageData](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-ipagedata?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+
+
 ## Wydawanie rozwiązań przy użyciu usługi Lifecycle Services
 ### [Tworzenie i wydawanie](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Przenoszenie do środowiska przejściowego i publikowanie](/dynamics365/unified-operations/dev-itpro/lcs-solutions/marketing-content-lcs-solutions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2328,7 +2511,11 @@
 #### [Wprowadzanie usługi Azure Resource Manager](/dynamics365/unified-operations/dev-itpro/deployment/arm-onboarding?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Usługa Azure ExpressRoute i rozwiązanie Dynamics 365 for Finance and Operations Enterprise Edition](/dynamics365/unified-operations/dev-itpro/deployment/expressroute?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-### [Wdrożenia lokalne](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+### [Wdrożenie lokalne](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-deployment-landing-page)
+#### [Omówienie wdrożenia lokalnego](/dynamics365/unified-operations/dev-itpro/deployment/on-premises-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Określanie zapotrzebowania na sprzęt](/dynamics365/unified-operations/dev-itpro/get-started/hardware-sizing-on-premises-environments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Tworzenie projektu wdrożenia lokalnego](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Konfigurowanie i wdrażanie środowisk lokalnych](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-environments?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Wdrażanie kodu niestandardowego
 #### [Tworzenie wdrażalnego pakietu](/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2340,8 +2527,8 @@
 #### [Analizowanie — używanie narzędzia Analizator uaktualnienia w celu zaplanowania uaktualnienia](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Analizowanie — używanie usługi uaktualniania kodu w celu oszacowania nakładu pracy potrzebnego do uaktualnienia kodu](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analyze-code-upgrade?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Analizowanie — wdrażanie w środowisku piaskownicy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Uaktualnianie — uaktualnianie danych w środowisku projektowym](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Uaktualnianie — zadania uaktualniania danych systemu AX 2012](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Uaktualnianie — uaktualnianie danych w środowisku projektowym](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Uaktualnianie — zadania uaktualniania danych systemu AX 2012](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Uaktualnianie — uaktualnianie danych w środowisku piaskownicy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Weryfikowanie — testowanie przełączenia](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Weryfikowanie — zadania do wykonania po uaktualnieniu](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2375,14 +2562,11 @@
 ### Poprawki i obsługa
 #### [Pobieranie poprawek z usługi Lifecycle Services](/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Instalowanie poprawki metadanych](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### [Instalowanie poprawki binarnej funkcji raportowania finansowego](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-financial-reporting-binary-hotfix?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Poprawianie usług Reporting Services w środowisku jednoczęściowym](/dynamics365/unified-operations/dev-itpro/migration-upgrade/patch-reporting-service-environment?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ### Przestarzałe elementy
 #### [Przestarzałe interfejsy API](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-apis?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Przestarzałe funkcje](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
-
 
 ## Administrowanie systemem
 ### [Comiesięczne aktualizacje platformy — często zadawane pytania](/dynamics365/unified-operations/dev-itpro/sysadmin/faq-platform-monthly-updates?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2394,6 +2578,11 @@
 #### [Zabezpieczenia oparte na rolach](/dynamics365/unified-operations/dev-itpro/sysadmin/role-based-security?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Architektura zabezpieczeń](/dynamics365/unified-operations/dev-itpro/sysadmin/security-architecture?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Raporty dotyczące zabezpieczeń](/dynamics365/unified-operations/dev-itpro/sysadmin/security-reports?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Tworzenie nowych użytkowników](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Konfigurowanie podziału obowiązków](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/set-up-segregation-duties?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Identyfikowanie i rozwiązywanie konfliktów w podziale obowiązków](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Przypisywanie użytkowników do ról zabezpieczeń](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+
 ### Przetwarzanie wsadowe
 #### [Omówienie przetwarzania wsadowego](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-processing-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### [Omówienie serwera przetwarzania wsadowego](/dynamics365/unified-operations/dev-itpro/sysadmin/batch-server-overview?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
@@ -2467,46 +2656,6 @@
 ##### [Instalowanie i uruchamianie Diagnostyki systemów](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-run-system-diagnostics-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Analiza możliwości uaktualnienia](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/upgrade-analysis-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Profiler wykorzystania](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/usage-profiler-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-#### Narzędzia systemu Dynamics AX 2012 do pobrania
-##### [Przewodnik użytkownika Narzędzia do uaktualniania kodu (przestarzały)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/code-upgrade-tool-user-guide?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Narzędzia usługi Lifecycle Services do pobrania](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Narzędzie do przenoszenia danych testowych (beta)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/test-data-transfer-tool-beta-2012?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Instalowanie](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-test-data-transfer-tool-beta?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Uruchamianie](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/run-test-data-transfer-tool-beta?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Importowanie danych demonstracyjnych dla systemu AX 2012 R3](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Narzędzie do tworzenia zabezpieczeń](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/overview-security-development-tool-user-interface?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Instalowanie](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/install-security-development-tool?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Przewodnik użytkownika](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/security-development-tool-user-guide?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Definiowanie lub edytowanie uprawnień punktów wejścia](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/define-edit-entry-point-permissions?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Zestaw narzędzi Performance Benchmark Software Development Toolkit](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Narzędzie Doradca uaktualnienia zabezpieczeń](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/security-upgrade-advisor-tool-user-guide?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-##### [Intelligent Data Management Framework (IDMF)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/microsoft-idmf?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Przegląd](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/overview-idmf?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Przewodnik instalacji](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/installation-guide-idmf?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Konfiguracja](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/configuration-functionality-idmf-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Analiza](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/analysis-functionality-idmf-workspace?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Obiekty przeczyszczania i archiwum](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/work-with-purge-objects-archive-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Tworzenie obiektów archiwum](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-archive-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Tworzenie obiektów przeczyszczania](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/create-purge-objects?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Planowanie zadań przeczyszczania i analizy](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/schedule-purge-analysis-tasks?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Wyświetlanie zadań przeczyszczania lub archiwizowania](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/view-status-purge-archive-jobs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Obsługa](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/maintain-idmf?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-###### [Rozwiązywanie problemów](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/troubleshoot-idmf?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
-## Zarządzania bazami danych
-### [Kopiowanie bazy danych z usługi Azure SQL Database do środowiska programu SQL Server](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Kopiowanie bazy danych z programu SQL Server do środowiska produkcyjnego usługi Azure SQL Database](/dynamics365/unified-operations/dev-itpro/database/copy-database-from-sql-server-to-azure-sql?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Przywracanie bazy danych w środowisku nieprodukcyjnym](/dynamics365/unified-operations/dev-itpro/database/request-point-in-time-restore?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Eksportowanie kopii bazy danych w celu późniejszego przywrócenia](/dynamics365/unified-operations/dev-itpro/database/copy-operations-database?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-
-## Pomoc techniczna
-### [Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 for Finance and Operations Enterprise Edition i usługi Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Rejestrowanie zgłoszenia do pomocy technicznej typu Premier](/dynamics365/unified-operations/dev-itpro/lifecycle-services/premier-support?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Przesyłanie zgłoszenia do zespołu inżynierów usług Dynamics](/dynamics365/unified-operations/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Konfigurowanie pomocy technicznej dotyczącej rozwiązania Dynamics 365 for Finance and Operations Enterprise Edition i usługi Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/support-experience?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
-### [Okno planowanej konserwacji — często zadawane pytania](/dynamics365/unified-operations/dev-itpro/lifecycle-services/planned-maintenance-window-faq?toc=dynamics365/unified-operations/fin-and-ops/toc.json) 
-### [Operacje i obsługa w chmurze](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-operations-servicing?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
-### [Zarządzanie środowiskiem pomocy technicznej rozwiązania Finance and Operations](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 #### Narzędzia systemu Dynamics AX 2012 do pobrania
 ##### [Przewodnik użytkownika Narzędzia do uaktualniania kodu (przestarzały)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/code-upgrade-tool-user-guide?toc=dynamics365/unified-operations/fin-and-ops/toc.json)
 ##### [Narzędzia usługi Lifecycle Services do pobrania](/dynamics365/unified-operations/dev-itpro/lifecycle-services/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=dynamics365/unified-operations/fin-and-ops/toc.json)

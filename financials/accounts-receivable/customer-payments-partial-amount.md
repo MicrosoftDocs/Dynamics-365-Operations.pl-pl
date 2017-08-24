@@ -1,9 +1,9 @@
 ---
 title: "Częściowa płatność odbiorcy"
 description: "Czasami odbiorcy dokonują płatności na kwoty niższe niż kwota faktury. W tym artykule opisano różne opcje postępowania w takiej sytuacji. Faktycznie dostępne opcje zależą od konkretnych wymagań biznesowych i istniejącej konfiguracji."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,15 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13011
 ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
 ms.search.region: Global
-ms.author: kweekley
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 795d13a07065a125a750970beaff85b59307f623
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: ebfa8aaed6f82e9c3142540d0850c59d49328d59
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -50,7 +49,7 @@ Na przykład możesz zaoferować 2-procentowy rabat gotówkowy, jeśli faktura z
 > Jeśli wpiszesz częściową płatność i zostawisz pełną wartość faktury w polu **Kwota do rozliczenia**, pole **Kwota rabatu gotówkowego do pobrania** jest automatycznie obliczane ponownie po zaksięgowaniu transakcji.
 
 ## <a name="credit-notes-with-discounts"></a>Faktury korygujące z rabatami
-Jeśli odbiorca zwróci część towarów znajdujących się na fakturze, możesz wystawić fakturę korygującą. Jeśli rabat gotówkowy został wykorzystany w przypadku oryginalnej faktury, faktura korygująca dla odbiorcy powinna być kwotą netto rabatu gotówkowego podjętego przez odbiorcę. Jeśli opcja **Oblicz rabaty gotówkowe dla faktur korygujących**na stronie **Parametry modułu rozrachunków z odbiorcami** ma wartość **Tak**, rabat dla faktury korygującej jest automatycznie obliczany. 
+Jeśli odbiorca zwróci część towarów znajdujących się na fakturze, możesz wystawić fakturę korygującą. Jeśli rabat gotówkowy został wykorzystany w przypadku oryginalnej faktury, faktura korygująca dla odbiorcy powinna być kwotą netto rabatu gotówkowego podjętego przez odbiorcę. Jeśli opcja **Oblicz rabaty gotówkowe dla faktur korygujących** na stronie **Parametry modułu rozrachunków z odbiorcami** ma wartość **Tak**, rabat dla faktury korygującej jest automatycznie obliczany. 
 
 Na przykład możesz zaoferować warunki płatności z 2-procentowym rabatem gotówkowym, jeśli faktura zostanie zapłacona w ciągu 10 dni od wystawienia. Zaksięgowano fakturę dla 100,00, a odbiorca podjął rabat gotówkowy. Jeśli odbiorca zwraca towary i wystawiasz fakturę korygującą, można wprowadzić fakturę korygującą na kwotę -100,00. Podczas wyświetlania faktury korygującej na stronie **Rozliczanie otwartych transakcji** w polu **Kwota do rozliczenia** pojawia się wartość **98,00**, a w polu **Kwota rabaty gotówkowego** pojawia się wartość **-2,00**. Kwota rabatu jest księgowana na koncie rabatu gotówkowego.
 
@@ -61,5 +60,5 @@ Jeśli odbiorca dokonuje płatności, może pojawić się bardzo mała kwota, kt
 Odbiorca może dokonać częściowej płatności, jeśli pozostała kwota nie zostanie zapłacona, ale jest większa niż kwota niedopłaty, która znajduje się na stronie **Parametry modułu rozrachunków z dostawcami**. Jeśli chcesz oznaczyć fakturę jako w pełni rozliczoną, możesz użyć opcji **Pełne rozliczenie** na stronie **Rozlicz transakcje**. (Możesz włączyć funkcję pełnego rozliczania za pomocą klucza konfiguracji). Na przykład faktura jest księgowana na kwotę 1000,00, a odbiorca dokonuje płatności 990.00. Uzgadniasz z odbiorcą, że nie musi płacić pozostałej kwoty 10,00. Po oznaczeniu faktury jako całkowicie rozliczonej możesz również wybrać opcję **Pełne rozliczenie**. Faktura zostanie następnie uznana za w pełni rozliczoną. Różnica w wysokości 10,00 jest księgowana na koncie rabatu gotówkowego jako kwoty dodatkowa kwota rabatu gotówkowego.
 
 
-
+Aby uzyskać więcej informacji, zobacz [Deponowanie płatności odbiorców](tasks/deposit-customer-payments.md).
 

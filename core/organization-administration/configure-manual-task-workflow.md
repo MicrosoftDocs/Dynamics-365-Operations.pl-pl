@@ -3,7 +3,7 @@ title: "Konfigurowanie zadania ręcznego w przepływie pracy"
 description: "W tym temacie wyjaśniono sposób konfigurowania właściwości zadania ręcznego."
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -165,6 +165,7 @@ Jeśli użytkownik nie wykona zadania ręcznego w wyznaczonym czasie, staje się
 
 1.  W lewym okienku kliknij opcję **Eskalacja**.
 2.  Zaznacz pole wyboru **Użyj ścieżki eskalacji**, aby utworzyć ścieżkę eskalacji. System automatycznie przypisze zadanie do użytkowników wymienionych w ścieżce eskalacji. Na przykład poniższa tabela przedstawia ścieżkę eskalacji.
+
     | Kolejność | Ścieżka eskalacji      |
     |----------|----------------------|
     | 1 przypada na wpłatę z zysku na rzecz budżetu państwa        | Przypisać do: Danuta     |
@@ -318,7 +319,9 @@ Możliwe jest wysyłanie do odpowiednich osób powiadomień w przypadku delegowa
 8.  Powtórz kroki od 3 do 7 dla każdego zdarzenia wybranego w kroku 2.
 
 ## <a name="set-a-time-limit"></a>Ustawianie limitu czasu
-Jeśli zadanie ręczne musi zostać ukończone w określonym czasie, wykonaj następujące kroki. **Uwaga:** Opcje wybranej w tej procedurze zastępują opcje wybrane na stronie w obszarach **Przypisanie** i **Eskalacja**.
+Jeśli zadanie ręczne musi zostać ukończone w określonym czasie, wykonaj następujące kroki. 
+
+**Uwaga:** Opcje wybranej w tej procedurze zastępują opcje wybrane na stronie w obszarach **Przypisanie** i **Eskalacja**.
 
 1.  W lewym okienku kliknij przycisk **Ustawienia zaawansowane**.
 2.  Zaznacz pole wyboru **Ustaw limit czasu dla elementu przepływu pracy**.

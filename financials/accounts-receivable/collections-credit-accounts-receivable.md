@@ -1,9 +1,9 @@
 ---
 title: Kredyty i windykacja w rozrachunkach z odbiorcami
 description: "Zarządzanie informacjami dotyczącymi windykacji w module Rozrachunki z odbiorcami odbywa się w jednym centralnym widoku przy użyciu strony Windykacja dostępnej w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Kierownicy ds. kredytów i windykacji mogą używać tego centralnego widoku do zarządzania windykacją. Agenci ds. windykacji mogą rozpocząć proces windykacji na podstawie list odbiorców, które są generowane przy użyciu wstępnie zdefiniowanych kryteriów windykacji, lub ze strony Windykacja."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 49bc7ca4e5fff4c2686a8b7396d5bd2bcdd0c51a
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 282084b9d4e63795ec475690e5b22e06c23bb704
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -90,6 +89,8 @@ Można uchylić, przywróć lub wycofać pełne noty odsetkowe, opłaty i odsetk
 
 Te zmiany wpływają tylko na noty odsetkowe oraz odsetki i opłaty, których dotyczą. Należy wykonać kroki w sekcji „Tworzenie transakcji odpisu w jednym kroku”, aby odpisać łączną kwotę zobowiązań odbiorcy.
 
+Aby uzyskać więcej informacji, zobacz [Tworzenie kodu odsetek z zakresem](tasks/create-interest-code-range.md) i [Przetwarzanie odsetek](tasks/process-interest.md). 
+
 ## <a name="create-writeoff-transactions"></a>Tworzenie transakcji odpisu
 Można odpisać nieściągalne długi, klikając Odpisz w formularzu Windykacja i na stronach listy Wiekowane salda, Odbiorcy i Otwarte faktury dla odbiorców. 
 
@@ -100,7 +101,10 @@ Gdy odpisujesz transakcje dla odbiorcy, wszystkie transakcje dla tego odbiorcy s
 -   Trzeci typ wiersza arkusza zawiera informacje o odpisie księgi głównej dotyczące podatków. Ten wiersz arkusza jest tworzony tylko wtedy, gdy wybrano przełącznik Oddziel podatek na stronie parametrów rozrachunków z odbiorcami. Jeśli zaznaczone transakcje zawierają wiele kombinacji konta płatności podatku, wymiarów i kodu podatku, tworzony jest osobny wiersz arkusza dla każdej kombinacji.
 
 Transakcja odpisu jest tworzona w walucie transakcji.
-Przetwarzanie płatności przy niewystarczających funduszach  
+
+Aby uzyskać więcej informacji, zobacz [Tworzenie arkusza odpisów dla odbiorcy](tasks/create-write-off-journal-customer.md).
+
+<a name="process-not-sufficient-funds-nsf-payments"></a>Przetwarzanie płatności przy niewystarczających funduszach  
 --------------------------------------------
 
 Klikając płatności przy niewystarczających funduszach na stronie kolekcje można przetwarzać płatności przy niewystarczających funduszach. Po kliknięciu tego przycisku nastąpi anulowanie płatności. Jeśli do odbiorcy ma być stosowana opłata za niewystarczające fundusze, w arkuszu płatności jest tworzona transakcja opłat. Kwota opłaty jest oparta na ustawieniach dla automatycznych opłat. Automatyczne opłaty, które są stosowane do płatności przy niewystarczających funduszach, są określone przez grupę opłat wybraną na stronie Konta bankowe dla danego konta bankowego.

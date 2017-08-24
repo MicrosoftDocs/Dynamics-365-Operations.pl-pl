@@ -18,12 +18,11 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: d80dea89db1fbe270b96063f3818ec3ac95239c8
+ms.translationtype: HT
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 83899969255a9b771fc5e62e66e3c5ffdca0296e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -105,11 +104,11 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 2.  Wybierz opcję **Wpis czasu**. Zostaną wyświetlone daty kalendarzowe bieżącego tygodnia.
 3.  Dla wybranej daty wybierz kolejno opcje **Akcje** &gt; **Nowy wpis**.
 4.  Wpisz liczbę godzin, która ma zostać zarejestrowana.
-5.  Wybierz projekt, dla którego wprowadzasz czas. Zostanie wyświetlona lista projektów załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, zobacz [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+5.  Wybierz projekt, dla którego wprowadzasz czas. Zostanie wyświetlona lista projektów załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, zobacz [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 6.  Jeśli Twojego projektu nie ma na liście, kliknij przycisk **Szukaj**. Poszukaj według nazwy lub przejdź do wyszukiwania według nazwy projektu lub odbiorcy.
-7.  Umożliwia wybór kategorii. Zostanie wyświetlona lista kategorii załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, zobacz [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+7.  Umożliwia wybór kategorii. Zostanie wyświetlona lista kategorii załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, zobacz [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 8.  Jeśli Twojej kategorii nie ma na liście, kliknij przycisk **Szukaj**. Wyszukaj według kategorii lub przełącz się do wyszukiwania według nazwy kategorii.
-9.  Wybierz działanie. Zostanie wyświetlona lista działań załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, zobacz [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+9.  Wybierz działanie. Zostanie wyświetlona lista działań załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, zobacz [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 10. Jeśli Twojego działania nie ma na liście, kliknij przycisk **Szukaj**. Wyszukaj według numeru działania lub przełącz się do wyszukiwania według celu.
 
 11. Wybierz właściwość wiersza.

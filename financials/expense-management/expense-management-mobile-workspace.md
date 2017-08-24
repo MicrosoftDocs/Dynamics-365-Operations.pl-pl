@@ -16,12 +16,12 @@ ms.assetid: 3605eda1-a7ed-4675-8031-5279c5a8f5e4
 ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2dd3db95eb741c37dd8a50c397cb4c9494599250
-ms.openlocfilehash: 993586b1fb46c21d2b68a6060ab897c8ccc76a6c
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 58d36505461ea89bf466209d3da968d1357e58ae
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -131,11 +131,11 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 ## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a>Szybkie wprowadzanie wydatków za pomocą komórkowego obszaru roboczego Zarządzanie wydatkami
 1. Na urządzeniu przenośnym otwórz obszar roboczy **Zarządzanie wydatkami**.
 2. Wybierz opcję **Szybkie wprowadzanie wydatku**.
-3. Wybierz kategorię wydatku. Zobaczysz listę kategorii wydatków załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jeśli Twojej kategorii nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według kategorii wydatków lub przejdź do wyszukiwania według typu wydatku.
+3. Wybierz kategorię wydatku. Zobaczysz listę kategorii wydatków załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jeśli Twojej kategorii nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według kategorii wydatków lub przejdź do wyszukiwania według typu wydatku.
 4. Wprowadź datę transakcji wydatkowej.
 5. Opcjonalnie: Wprowadź handlowca dla wydatku.
 6. Wprowadź kwotę wydatku.
-7. Wybierz walutę wydatku. Zobaczysz listę kodów walut załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 400 walut, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jeśli Twojej waluty nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Wyszukaj według waluty lub przełącz się do wyszukiwania według nazwy.
+7. Wybierz walutę wydatku. Zobaczysz listę kodów walut załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 400 walut, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jeśli Twojej waluty nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Wyszukaj według waluty lub przełącz się do wyszukiwania według nazwy.
 8. Wybierz opcję **Zrób zdjęcie** lub **Wybierz obraz**.
 9. Wykonaj jeden z następujących kroków:
 
@@ -166,11 +166,11 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 7. Zaznacz jeden lub więcej wydatków na liście.
 8. Wybierz opcję **Gotowe**.
 9. Aby dodać nowy wydatek do raportu z wydatków, wybierz opcję **Nowy wydatek**.
-10. Wybierz kategorię wydatku. Zobaczysz listę kategorii wydatków załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jeśli Twojej kategorii nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według kategorii wydatków lub przejdź do wyszukiwania według typu wydatku.
+10. Wybierz kategorię wydatku. Zobaczysz listę kategorii wydatków załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jeśli Twojej kategorii nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według kategorii wydatków lub przejdź do wyszukiwania według typu wydatku.
 11. Opcjonalnie: Wprowadź handlowca dla wydatku.
 12. Wprowadź datę transakcji wydatkowej.
 13. Wprowadź kwotę wydatku.
-14. Wybierz walutę wydatku. Zobaczysz listę kodów walut załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 400 walut, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jeśli Twojej waluty nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Wyszukaj według waluty lub przełącz się do wyszukiwania według nazwy.
+14. Wybierz walutę wydatku. Zobaczysz listę kodów walut załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 400 walut, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jeśli Twojej waluty nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Wyszukaj według waluty lub przełącz się do wyszukiwania według nazwy.
 15. Wybierz opcję **Gotowe**.
 16. Aby dodać więcej szczegółów do wydatku, wybierz opcję **Dodaj więcej szczegółów**. Dostępne pola zależą od konfiguracji modułu Zarządzanie wydatkami w firmie.
 17. Jeśli zasady obowiązujące w firmie wymagają wskazania paragonu dla wydatku, wybierz opcję **Paragony**, a następnie wykonaj poniższe czynności:
@@ -216,12 +216,12 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
         - W przypadku wybrania opcji **Poprzedni goście** wykonaj następujące kroki:
 
-            1. Zaznacz jednego lub więcej poprzednich gości na liście. Zobaczysz listę poprzednich gości dodanych do poprzednich raportów z wydatków, które są załadowane do aplikacji do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jeśli Twojego poprzedniego gościa nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według nazwy lub przejdź do wyszukiwania według organizacji, kraju albo tytułu.
+            1. Zaznacz jednego lub więcej poprzednich gości na liście. Zobaczysz listę poprzednich gości dodanych do poprzednich raportów z wydatków, które są załadowane do aplikacji do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jeśli Twojego poprzedniego gościa nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według nazwy lub przejdź do wyszukiwania według organizacji, kraju albo tytułu.
             2. Wybierz opcję **Gotowe**.
 
         - Jeśli wybrano opcję **Współpracownicy**, wykonaj następujące kroki:
 
-            1. Zaznacz jednego lub więcej współpracowników na liście. Zobaczysz listę współpracowników załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jeśli Twojego współpracownika nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według nazwy lub przejdź do wyszukiwania według firmy albo tytułu.
+            1. Zaznacz jednego lub więcej współpracowników na liście. Zobaczysz listę współpracowników załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jeśli Twojego współpracownika nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według nazwy lub przejdź do wyszukiwania według firmy albo tytułu.
             2. Wybierz opcję **Gotowe**.
 
     3. Kliknij przycisk **Wstecz**, aby wrócić do szczegółów wydatku.
@@ -230,7 +230,7 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
     1. Zaznacz pierwszą datę, dla której chcesz wyszczególnić pozycje wydatkowe.
     2. Wybierz opcję **Dodaj podział na pozycje**.
-    3. Wybierz podkategorię wyszczególnienia pozycji wydatku. Zobaczysz listę podkategorii wydatków załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Jeśli Twojej podkategorii nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według nazwy podkategorii wydatków.
+    3. Wybierz podkategorię wyszczególnienia pozycji wydatku. Zobaczysz listę podkategorii wydatków załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jeśli Twojej podkategorii nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według nazwy podkategorii wydatków.
     4. Wprowadź kwotę transakcji dla wyszczególnienia.
     5. W razie potrzeby edytuj datę transakcji.
     6. Wybierz opcję **Gotowe**.

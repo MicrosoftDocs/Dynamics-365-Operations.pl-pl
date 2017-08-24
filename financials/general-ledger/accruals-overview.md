@@ -3,7 +3,7 @@ title: "Przegląd naliczeń"
 description: "W tym artykule opisano koncepcję naliczeń oraz sposób ich konfigurowania i tworzenia transakcji."
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 14131
 ms.assetid: 0489b59a-37a7-4a78-87bf-4b597e9efad9
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5ad5030da963ca961d49e645b1d9ad19453376b8
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 87d9f7fbdbc06a3399a6ec5c2492de0f053b1513
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -47,5 +47,5 @@ Po ustaleniu, które konta należy zastosować, można określić sposób tworze
 Po wprowadzeniu arkusza można kliknąć opcję **Naliczenia finansowe** w menu **Funkcje**. Następnie, po wybraniu schematu naliczania, zostanie wyświetlona kwota podstawy z arkusza, która zostanie rozłożona w okresie zgodnie ze schematem naliczania. Na przykład jeśli płacisz ubezpieczenie pracownika za cały rok w styczniu, a kwota ubezpieczenia wynosi 12 000, trzeba wykazać ten wydatek w każdym miesiącu. Można wybrać datę początkową. Można również określić, czy naliczana kwota, jest oparta na koncie lub koncie przeciwstawnym. Po dokonaniu wyboru kliknij przycisk **Transakcje**, aby wyświetlić wszystkie transakcje utworzone na podstawie schematu naliczania. Na przykład jeśli podzielisz kwotę ubezpieczenia 12 000 na rok, zobaczysz 1000 w każdym miesiącu. Po zaksięgowaniu arkusza można przeglądać transakcje za pomocą strony zapytań **Transakcje na załączniku**. Jeśli nie można zastosować schematu naliczania (na przykład gdy transakcja dotyczy faktury do zamówienia sprzedaży lub faktury do zamówienia zakupu), można zwrócić przedpłaconą kwotę i potrącić kwotę wydatku. Następnie można wybrać **przeciwstawne**, jeśli stosujesz schemat naliczania.
 
 
-
+Aby uzyskać więcej informacji, zobacz [Tworzenie schematów naliczania](tasks/create-accrual-schemes.md) i [Tworzenie transakcji naliczeń finansowych](tasks/create-ledger-accrual-transactions.md).
 
