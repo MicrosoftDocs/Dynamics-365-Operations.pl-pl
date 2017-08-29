@@ -1,7 +1,7 @@
 ---
 title: Konwersja waluty rozliczeniowej lub raportowania
 description: 
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: "Zamknięcie księgi głównej na koniec okresu"
 description: "W tym temacie opisano zadania, które zazwyczaj są wykonywane podczas wykonywania operacji zamknięcia okresu w księdze głównej."
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

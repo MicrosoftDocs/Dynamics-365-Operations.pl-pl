@@ -1,7 +1,7 @@
 ---
 title: "Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami"
 description: "Wahania kursów wymiany powodują, że wartość teoretyczna (wartość księgowa) otwartych transakcji w walutach obcych zmienia się w czasie. Ten artykuł zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: f09589a6f0a684752c7c9b98528e9546fedf341e
 ms.contentlocale: pl-pl
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

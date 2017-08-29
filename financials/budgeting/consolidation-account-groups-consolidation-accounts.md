@@ -1,7 +1,7 @@
 ---
 title: Grupy kont konsolidacji i dodatkowe konta konsolidacji
 description: "Ten temat zawiera informacje o grupach kont konsolidacji i dodatkowych kontach konsolidacji oraz wyjaśnia, jak są one używane w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

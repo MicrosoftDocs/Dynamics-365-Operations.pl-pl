@@ -1,7 +1,7 @@
 --- 
 title: "Konfigurowanie raportowania listy sprzedaży do UE"
 description: "To zadanie prowadzi przez omówienie warunków wstępnych wymaganych na potrzeby raportowania listy sprzedaży do UE."
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -14,7 +14,7 @@ ms.search.scope: Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
+ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
 ms.openlocfilehash: 1379c8c5bc6f0f80eaa0d9b3348f810631f7c737

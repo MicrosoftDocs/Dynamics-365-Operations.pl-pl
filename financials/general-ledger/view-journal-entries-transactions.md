@@ -1,7 +1,7 @@
 ---
 title: "Wyświetlanie wpisów w arkuszu i transakcji"
 description: "W tym artykule wyjaśniono różne sposoby, za pomocą których można przeglądać zapisy w arkuszu i transakcje."
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

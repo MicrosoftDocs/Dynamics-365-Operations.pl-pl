@@ -1,7 +1,7 @@
 ---
 title: "Zarządzanie elementami wypożyczonymi pracownikom."
 description: "Przedmioty pożyczek są rekordami, które pomagają kierownikom śledzić fizyczne przedmioty, które firma pożycza pracownikom."
-author: rschloma
+author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 69fea8edf3d69647a934273a3877b31643db6f13
 ms.contentlocale: pl-pl
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Definiowanie programu świadczeń i zarządzanie nim"
 description: "W module Zasoby ludzkie dostępny jest pakiet narzędzi służących do konfigurowania i obsługi świadczeń, potrąceń i planów wynagrodzeń pracowników, które organizacja oferuje swoim pracownikom lub przetwarza w ich imieniu. Ten artykuł zawiera informacje o sposobie konfigurowania zarządzania świadczeniami."
-author: rschloma
+author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
 ms.openlocfilehash: 09ad9ad22c676c3b117cc39e692c64ef92637dc1
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/13/2017
-
 
 ---
 

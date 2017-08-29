@@ -14,7 +14,7 @@ ms.search.scope: Operations
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
+ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
 ms.openlocfilehash: 0f0aed4dd530f7ec06d717e51b084d14e0816e43

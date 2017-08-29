@@ -1,7 +1,7 @@
 ---
 title: Planowanie planu kont
 description: "Ten artykuł zawiera informacje, które pomogą zaprojektować plan kont w organizacji."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

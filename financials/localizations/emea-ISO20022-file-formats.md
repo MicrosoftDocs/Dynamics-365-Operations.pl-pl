@@ -14,7 +14,7 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
-ms.dyn365.ops.version: Enterprise edition, July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
 ms.sourcegitcommit: 77a0d4c2a31128fb7d082238d443f297fd40664f
 ms.openlocfilehash: 90e21bb939bd96a3420decb5f9bc07c017c3e946

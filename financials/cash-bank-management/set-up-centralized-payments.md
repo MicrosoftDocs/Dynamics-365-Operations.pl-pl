@@ -1,7 +1,7 @@
 ---
 title: "Konfigurowanie scentralizowanych płatności"
 description: "Wykonaj następujące kroki, aby przygotować się do przetwarzania płatności w jednej firmie w imieniu innych firm w organizacji."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article

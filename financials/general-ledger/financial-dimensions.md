@@ -1,7 +1,7 @@
 ---
 title: Wymiary finansowe
 description: "W tym temacie opisano różne typy wymiarów finansowych oraz sposoby ich konfigurowania."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
