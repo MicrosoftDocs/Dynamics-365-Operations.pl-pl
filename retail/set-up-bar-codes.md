@@ -1,7 +1,7 @@
 ---
 title: "Ustawianie kodów kreskowych"
 description: "W tym artykule opisano, jak używać skanera kodów kreskowych w programie Microsoft Dynamics 365 for Retail."
-author: josaw1
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 80f0383d3e39994ccae96c2ee518f11087a340ca
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

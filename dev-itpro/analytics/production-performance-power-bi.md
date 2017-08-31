@@ -1,7 +1,7 @@
 ---
 title: "Pakiet zawartości usługi Power BI Wydajność produkcji"
 description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Wydajność produkcji. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
-author: sericks
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article

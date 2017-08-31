@@ -1,7 +1,7 @@
 ---
 title: Faktury zaliczkowe dla Europy Wschodniej
 description: "Faktura zaliczkowa jest dokumentem, który można utworzyć dla odbiorcy lub dostawcy. Podaje ona kwotę, która ma zostać opłacona z góry z tytułu zamówienia sprzedaży. Ten temat zawiera informacje dotyczące faktur zaliczkowych dla Europy Wschodniej."
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -21,7 +21,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 948124526f5718d783b1ecd80462701610734f82
 ms.contentlocale: pl-pl
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

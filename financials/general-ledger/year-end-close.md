@@ -1,7 +1,7 @@
 ---
 title: "Zamknięcie na koniec roku"
 description: "W tym temacie opisano wymaganą konfigurację i kroki wykonywania procesu zamknięcia roku w księdze głównej."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

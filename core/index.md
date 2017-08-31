@@ -13,22 +13,22 @@ ms.reviewer: margoc
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: fc446f381850f4f42b6dbc886646d3d32f2d5dd7
-ms.openlocfilehash: 1b46d24a0f671502c9dc3d46849240342d680468
+ms.sourcegitcommit: 8ae84f23744947cf49365d318a208802c6db95a9
+ms.openlocfilehash: 5c40e4bf1d2defeeb656348e1bc3886d5423ca12
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 
 # <a name="introduction-to-dynamics-365-for-finance-and-operations"></a>Wprowadzenie do rozwiązania Dynamics 365 for Finance and Operations
 [!include[banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations to aplikacja biznesowa firmy Microsoft przeznaczona dla przedsiębiorstw. Umożliwia szybkie podejmowanie trafnych decyzji za pomocą inteligentnego interfejsu użytkownika, który zapewnia dostęp do tworzonych w czasie rzeczywistym wyników analiz oraz danych. Umożliwia firmom przekształcanie działalności i wprowadzanie innowacji, oferując sprawdzoną logikę biznesową, dzięki której można szybciej przeprojektowywać procesy biznesowe. Oferuje firmom elastyczność wymaganą do rozwijania się w dowolnie wybranym tempie oraz prowadzenia działalności praktycznie w dowolnym miejscu i czasie, umożliwiając globalne skalowanie operacji zgodnie z potrzebami biznesowymi. 
+Microsoft Dynamics 365 for Finance and Operations to aplikacja biznesowa firmy Microsoft przeznaczona dla przedsiębiorstw. Umożliwia szybkie podejmowanie trafnych decyzji za pomocą inteligentnego interfejsu użytkownika, który zapewnia dostęp do tworzonych w czasie rzeczywistym wyników analiz oraz danych. Pozwala firmom przekształcać działalność i wprowadzać innowacje, oferując sprawdzoną logikę biznesową, dzięki której można szybciej przeprojektowywać procesy biznesowe. Oferuje firmom elastyczność wymaganą do rozwijania się w dowolnie wybranym tempie oraz prowadzenia działalności praktycznie w dowolnym miejscu i czasie, umożliwiając globalne skalowanie operacji zgodnie z potrzebami biznesowymi. 
 
-Z tej dokumentacji dowiesz się, jak wykorzystać rozwiązanie Dynamics 365 for Finance and Operations w pracy na rzecz swojej firmy. Jest ona połączona z dokumentacją powiązanych produktów z pakietu Unified Operations, czyli Dynamics 365 for Retail i Dynamics 365 for Talent. 
+Z tej dokumentacji dowiesz się, jak wykorzystać rozwiązanie Dynamics 365 for Finance and Operations w pracy na rzecz swojej firmy. Jest ona połączona z dokumentacją powiązanych produktów: Dynamics 365 for Retail i Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
@@ -86,7 +86,7 @@ Z tej dokumentacji dowiesz się, jak wykorzystać rozwiązanie Dynamics 365 for 
 <p><a href="../dev-itpro/analytics/financial-reporting-intro">Raporty finansowe</a></p>
 <p><a href="../dev-itpro/analytics/general-electronic-reporting">Raportowanie wymagane przepisami</a></p>
 
-<h3><a href="../dev-itpro/mobile-apps/mobile-platform">Platforma mobilna</a></h3>
+<h3><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">Platforma mobilna</a></h3>
 
 <h3>Funkcje dla programistów</h3>
 <p><a href="../dev-itpro/dev-tools/developer-home-page">Strona główna dla programistów</a></p>

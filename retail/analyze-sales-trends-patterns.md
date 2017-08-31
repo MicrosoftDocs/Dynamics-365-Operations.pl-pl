@@ -1,7 +1,7 @@
 ---
 title: "Analizowanie trendów i wzorców sprzedaży"
 description: "W module Microsoft Dynamics 365 for Retail istnieje możliwość badania trendów i wzorców sprzedaży w czasie rzeczywistym."
-author: josaw1
+author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: f27e332e5a8028055903054a6175baafd224abe9
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
-
 
 ---
 

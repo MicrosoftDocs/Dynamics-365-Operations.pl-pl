@@ -1,7 +1,7 @@
 ---
 title: "Typy konta głównego"
 description: "Typ kont głównych określają sposób używania konta głównego w planie kont."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

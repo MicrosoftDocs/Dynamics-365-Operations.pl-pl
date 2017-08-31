@@ -1,7 +1,7 @@
 ---
 title: "Raportowanie listy sprzedaży do UE"
 description: "Ten artykuł zawiera informacje o raportowaniu listy sprzedaży do państw Unii Europejskiej (UE)."
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -21,7 +21,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 06656fe519c82293d5a0eb2d48ae0f89ae0aef49
 ms.contentlocale: pl-pl
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

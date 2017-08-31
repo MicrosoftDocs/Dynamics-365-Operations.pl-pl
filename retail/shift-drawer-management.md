@@ -1,7 +1,7 @@
 ---
 title: "Zarządzanie zmianami i szufladami kasowymi"
 description: "W tym artykule wyjaśniono, jak skonfigurować i używać dwóch typów zmian w punkcie sprzedaży detalicznej (POS) — wspólnych i autonomicznych. Zmiany wspólne mogą być wykorzystywane przez wielu użytkowników w wielu miejscach, podczas gdy zmiany autonomiczne mogą być używane tylko przez jednego pracownika na raz."
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 0d5e05e8f1edcc01af985c25459d93de0bc2acf1
 ms.contentlocale: pl-pl
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 
