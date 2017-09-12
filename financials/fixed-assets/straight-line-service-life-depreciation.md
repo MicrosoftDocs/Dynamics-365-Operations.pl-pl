@@ -16,95 +16,95 @@ ms.custom: 3341
 ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5ff3d87f610489608f0bebadd9bb4c9c5c727992
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2b8c078841ca2e4bd994bbfbbe2abb130a4cf6fa
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="straight-line-service-life-depreciation"></a>Amortyzację za liniowy okres użytkowania
+# <a name="straight-line-service-life-depreciation"></a><span data-ttu-id="26593-103">Amortyzację za liniowy okres użytkowania</span><span class="sxs-lookup"><span data-stu-id="26593-103">Straight line service life depreciation</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera omówienie metody amortyzacji Liniowy okres użytkowania.
+<span data-ttu-id="26593-104">Ten artykuł zawiera omówienie metody amortyzacji Liniowy okres użytkowania.</span><span class="sxs-lookup"><span data-stu-id="26593-104">This article gives an overview of the Straight line service life method of depreciation.</span></span>
 
-Po skonfigurowaniu profilu amortyzacji środków trwałych i wybraniu opcji Liniowy okres użytkowania w polu Metoda na stronie Profile amortyzacji amortyzacja środków trwałych z przypisanym profilem amortyzacji są amortyzowane będzie obliczana na podstawie całkowitego okresu użytkowania środków. Jest to zwykle taka sama kwota w każdym okresie amortyzacji. 
+<span data-ttu-id="26593-105">Po skonfigurowaniu profilu amortyzacji środków trwałych i wybraniu opcji Liniowy okres użytkowania w polu Metoda na stronie Profile amortyzacji amortyzacja środków trwałych z przypisanym profilem amortyzacji są amortyzowane będzie obliczana na podstawie całkowitego okresu użytkowania środków.</span><span class="sxs-lookup"><span data-stu-id="26593-105">When you set up a fixed asset depreciation profile and select Straight line service life in the Method field in the Depreciation profiles page, the assets that have this depreciation profile assigned to them are depreciated based on the total service life of the asset.</span></span> <span data-ttu-id="26593-106">Jest to zwykle taka sama kwota w każdym okresie amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="26593-106">This generally is the same depreciation amount in each depreciation period.</span></span> 
 
-Różnica między kwotą amortyzacji obliczoną za liniowy pozostały okres użytkowania i liniowy okres użytkowania występuje w przypadku zaksięgowania korekty dla środków. 
+<span data-ttu-id="26593-107">Różnica między kwotą amortyzacji obliczoną za liniowy pozostały okres użytkowania i liniowy okres użytkowania występuje w przypadku zaksięgowania korekty dla środków.</span><span class="sxs-lookup"><span data-stu-id="26593-107">The difference in the depreciation amount that is calculated between straight line service life remaining and straight line service life is when there is an adjustment posted to the asset.</span></span> 
 
-Aby skonfigurować metodę amortyzacji liniowej, trzeba również wybrać opcje w polach Rok amortyzacji i Częstotliwość okresu na stronie Profile amortyzacji.
+<span data-ttu-id="26593-108">Aby skonfigurować metodę amortyzacji liniowej, trzeba również wybrać opcje w polach Rok amortyzacji i Częstotliwość okresu na stronie Profile amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="26593-108">To set up straight line service life depreciation, you must also select options in the Depreciation year and Period frequency fields in the Depreciation profiles page.</span></span>
 
-## <a name="select-a-depreciation-year"></a>Wybór roku amortyzacji
-Można wybrać Kalendarzowy lub Obrachunkowy w polu Rok amortyzacji na stronie Profile amortyzacji. Wybór określa opcje dostępne w polu Częstotliwość okresu. Opcją domyślną jest Kalendarz.
+## <a name="select-a-depreciation-year"></a><span data-ttu-id="26593-109">Wybór roku amortyzacji</span><span class="sxs-lookup"><span data-stu-id="26593-109">Select a depreciation year</span></span>
+<span data-ttu-id="26593-110">Można wybrać Kalendarzowy lub Obrachunkowy w polu Rok amortyzacji na stronie Profile amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="26593-110">You can select either Calendar or Fiscal in the Depreciation year field in the Depreciation profiles page.</span></span> <span data-ttu-id="26593-111">Wybór określa opcje dostępne w polu Częstotliwość okresu.</span><span class="sxs-lookup"><span data-stu-id="26593-111">The selection defines the options that are available in the Period frequency field.</span></span> <span data-ttu-id="26593-112">Opcją domyślną jest Kalendarz.</span><span class="sxs-lookup"><span data-stu-id="26593-112">The default option is Calendar.</span></span>
 
-### <a name="calendar"></a>Kalendarz
+### <a name="calendar"></a><span data-ttu-id="26593-113">Kalendarz</span><span class="sxs-lookup"><span data-stu-id="26593-113">Calendar</span></span>
 
-Jeśli zostanie wybrana opcja Kalendarz, przyjmowany jest rok od 1 stycznia do 31 grudnia, nawet jeżeli okresy w kalendarzu obrachunkowym są inne. 
+<span data-ttu-id="26593-114">Jeśli zostanie wybrana opcja Kalendarz, przyjmowany jest rok od 1 stycznia do 31 grudnia, nawet jeżeli okresy w kalendarzu obrachunkowym są inne.</span><span class="sxs-lookup"><span data-stu-id="26593-114">If you select Calendar, a year of January 1 to December 31 is assumed, even if you have defined the fiscal calendar differently.</span></span> 
 
-Opcja Kalendarz aktualizuje podstawę amortyzacji (zwykle wartość księgowa netto pomniejszona o wartość odzyskana) 1. stycznia każdego roku. W poniższych przykładach podstawa amortyzacji stanowi kolejny numer w pierwszym wyrażeniu w obliczeniach w kolumnie Obliczenia. 
+<span data-ttu-id="26593-115">Opcja Kalendarz aktualizuje podstawę amortyzacji (zwykle wartość księgowa netto pomniejszona o wartość odzyskana) 1. stycznia każdego roku.</span><span class="sxs-lookup"><span data-stu-id="26593-115">The Calendar option updates the depreciation base, which is typically the net book value minus the salvage value, on January 1 of each year.</span></span> <span data-ttu-id="26593-116">W poniższych przykładach podstawa amortyzacji stanowi kolejny numer w pierwszym wyrażeniu w obliczeniach w kolumnie Obliczenia.</span><span class="sxs-lookup"><span data-stu-id="26593-116">In the examples later in this topic, the depreciation base is the numerator in the first expression in the calculations column.</span></span> 
 
-Po wybraniu opcji Kalendarz dostępne są następujące opcje w polu Częstotliwość okresu, które określa daty księgowania naliczenia amortyzacji oraz kwoty w całym roku kalendarzowym:
--   Roczne — księgowanie kwoty 31 grudnia.
--   Miesięczne — służy do księgowania miesięcznej kwoty pod koniec każdego miesiąca kalendarzowego.
--   Kwartalne — księgowanie kwoty kwartalnej na koniec każdego kwartału kalendarzowego (31 marca, 30 czerwca, 30 września i 31 grudnia).
--   Półroczne — służy do księgowania półrocznej kwoty na koniec każdego półrocza kalendarzowego (30 czerwca i 31 grudnia).
--   Dzienne — służy do księgowania kwoty amortyzacji na potrzeby metody amortyzacji dziennej przy użyciu jednej transakcji dziennie.
+<span data-ttu-id="26593-117">Po wybraniu opcji Kalendarz dostępne są następujące opcje w polu Częstotliwość okresu, które określa daty księgowania naliczenia amortyzacji oraz kwoty w całym roku kalendarzowym:</span><span class="sxs-lookup"><span data-stu-id="26593-117">If you select Calendar, the following options are available in the Period frequency field, which defines the depreciation accrual posting dates and amounts throughout the calendar year:</span></span>
+-   <span data-ttu-id="26593-118">Roczne — księgowanie kwoty 31 grudnia.</span><span class="sxs-lookup"><span data-stu-id="26593-118">Yearly posts an amount on December 31.</span></span>
+-   <span data-ttu-id="26593-119">Miesięczne — służy do księgowania miesięcznej kwoty pod koniec każdego miesiąca kalendarzowego.</span><span class="sxs-lookup"><span data-stu-id="26593-119">Monthly posts a monthly amount at the end of each calendar month.</span></span>
+-   <span data-ttu-id="26593-120">Kwartalne — księgowanie kwoty kwartalnej na koniec każdego kwartału kalendarzowego (31 marca, 30 czerwca, 30 września i 31 grudnia).</span><span class="sxs-lookup"><span data-stu-id="26593-120">Quarterly posts a quarterly amount at the end of each calendar quarter (March 31, June 30, September 30, and December 31).</span></span>
+-   <span data-ttu-id="26593-121">Półroczne — służy do księgowania półrocznej kwoty na koniec każdego półrocza kalendarzowego (30 czerwca i 31 grudnia).</span><span class="sxs-lookup"><span data-stu-id="26593-121">Half-Yearly posts a half-yearly amount at the end of each calendar half year (June 30 and December 31).</span></span>
+-   <span data-ttu-id="26593-122">Dzienne — służy do księgowania kwoty amortyzacji na potrzeby metody amortyzacji dziennej przy użyciu jednej transakcji dziennie.</span><span class="sxs-lookup"><span data-stu-id="26593-122">Daily posts the depreciation amount for the daily depreciation method using one transaction for each day.</span></span>
 
-Na przykład jeśli wybierzesz opcję Roczne, roczna amortyzacja jest księgowana tylko raz, 31 grudnia każdego roku. Jeśli wybierzesz opcję Miesięczne, miesięczna amortyzacja jest księgowana każdego miesiąca jako 1/12 kwoty amortyzacji.
+<span data-ttu-id="26593-123">Na przykład jeśli wybierzesz opcję Roczne, roczna amortyzacja jest księgowana tylko raz, 31 grudnia każdego roku.</span><span class="sxs-lookup"><span data-stu-id="26593-123">For example, if you select Yearly, the yearly depreciation is posted only one time, on December 31 of each year.</span></span> <span data-ttu-id="26593-124">Jeśli wybierzesz opcję Miesięczne, miesięczna amortyzacja jest księgowana każdego miesiąca jako 1/12 kwoty amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="26593-124">If you select Monthly, the monthly depreciation is posted each month as 1/12 of the yearly depreciation amount.</span></span>
 
-### <a name="fiscal"></a>Fiskalny
+### <a name="fiscal"></a><span data-ttu-id="26593-125">Fiskalny</span><span class="sxs-lookup"><span data-stu-id="26593-125">Fiscal</span></span>
 
-Jeśli zostanie wybrana opcja Obrachunkowy w polu Rok amortyzacji, będzie używana amortyzację za liniowy okres użytkowania. Jest ona obliczana na podstawie roku obrachunkowego zdefiniowanego przez kalendarz obrachunkowy określony dla księgi lub wybrany na stronie Księga. Kalendarze obrachunkowe konfiguruje się ustawia się na stronie Kalendarze obrachunkowe.
+<span data-ttu-id="26593-126">Jeśli zostanie wybrana opcja Obrachunkowy w polu Rok amortyzacji, będzie używana amortyzację za liniowy okres użytkowania.</span><span class="sxs-lookup"><span data-stu-id="26593-126">If you select Fiscal in the Depreciation year field, the straight line service life depreciation is used.</span></span> <span data-ttu-id="26593-127">Jest ona obliczana na podstawie roku obrachunkowego zdefiniowanego przez kalendarz obrachunkowy określony dla księgi lub wybrany na stronie Księga.</span><span class="sxs-lookup"><span data-stu-id="26593-127">It is calculated based on the fiscal year, which is defined by the fiscal calendar that is specified for the book, or by the fiscal calendar that is selected in the Ledger page.</span></span> <span data-ttu-id="26593-128">Kalendarze obrachunkowe konfiguruje się ustawia się na stronie Kalendarze obrachunkowe.</span><span class="sxs-lookup"><span data-stu-id="26593-128">Fiscal calendars are set up in the Fiscal calendars page.</span></span>
 
-Na przykład dla roku obrachunkowego od 1 lipca do 30 czerwca włącznie obliczanie amortyzacji rozpocznie się 1 lipca. Rok obrachunkowy może być dłuższy lub krótszy niż 12 miesięcy. Amortyzacja jest korygowana automatycznie dla każdego okresu obrachunkowego. Długość następnego roku obrachunkowego opiera się na okresach obrachunkowych, które konfiguruje się podczas tworzenia nowego roku obrachunkowego w formularzu Kalendarze obrachunkowe. 
+<span data-ttu-id="26593-129">Na przykład dla roku obrachunkowego od 1 lipca do 30 czerwca włącznie obliczanie amortyzacji rozpocznie się 1 lipca.</span><span class="sxs-lookup"><span data-stu-id="26593-129">For example, for fiscal year July 1 through June 30, the depreciation calculation starts on July 1.</span></span> <span data-ttu-id="26593-130">Rok obrachunkowy może być dłuższy lub krótszy niż 12 miesięcy.</span><span class="sxs-lookup"><span data-stu-id="26593-130">The fiscal year can be longer or shorter than 12 months.</span></span> <span data-ttu-id="26593-131">Amortyzacja jest korygowana automatycznie dla każdego okresu obrachunkowego.</span><span class="sxs-lookup"><span data-stu-id="26593-131">The depreciation automatically is adjusted for each fiscal period.</span></span> <span data-ttu-id="26593-132">Długość następnego roku obrachunkowego opiera się na okresach obrachunkowych, które konfiguruje się podczas tworzenia nowego roku obrachunkowego w formularzu Kalendarze obrachunkowe.</span><span class="sxs-lookup"><span data-stu-id="26593-132">The length of the next fiscal year is based on the fiscal periods that you set up when you create a new fiscal year in the Fiscal calendars form.</span></span> 
 
-W przypadku wybrania opcji Fiskalny w polu Częstotliwość okresu dostępne są następujące opcje:
--   Roczne — służy do księgowania sumy amortyzacji obliczonej dla roku obrachunkowego jako jednej kwoty ostatniego dnia roku obrachunkowego.
--   Okres obrachunkowy — służy do obliczania dla roku obrachunkowego sumy amortyzacji, która jest naliczana w okresach obrachunkowych określonych w formularzu Kalendarze obrachunkowe dla kalendarza obrachunkowego.
+<span data-ttu-id="26593-133">W przypadku wybrania opcji Fiskalny w polu Częstotliwość okresu dostępne są następujące opcje:</span><span class="sxs-lookup"><span data-stu-id="26593-133">If you select Fiscal, the following options are available in the Period frequency field:</span></span>
+-   <span data-ttu-id="26593-134">Roczne — służy do księgowania sumy amortyzacji obliczonej dla roku obrachunkowego jako jednej kwoty ostatniego dnia roku obrachunkowego.</span><span class="sxs-lookup"><span data-stu-id="26593-134">Yearly posts the total amount of the depreciation that is calculated for the fiscal year as one amount on the last day of the fiscal year.</span></span>
+-   <span data-ttu-id="26593-135">Okres obrachunkowy — służy do obliczania dla roku obrachunkowego sumy amortyzacji, która jest naliczana w okresach obrachunkowych określonych w formularzu Kalendarze obrachunkowe dla kalendarza obrachunkowego.</span><span class="sxs-lookup"><span data-stu-id="26593-135">Fiscal period calculates the total amount of the depreciation for the fiscal year, which is accrued into the periods that are defined in the Fiscal calendars form for the fiscal calendar.</span></span>
 
-## <a name="example-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Przykład: amortyzacja liniowa środków trwałych, które nie uległy zmianie
-Załóżmy, że środki trwałe mają następujące właściwości.
+## <a name="example-straight-line-depreciation-of-an-unchanged-fixed-asset"></a><span data-ttu-id="26593-136">Przykład: amortyzacja liniowa środków trwałych, które nie uległy zmianie</span><span class="sxs-lookup"><span data-stu-id="26593-136">Example: Straight line depreciation of an unchanged fixed asset</span></span>
+<span data-ttu-id="26593-137">Załóżmy, że środki trwałe mają następujące właściwości.</span><span class="sxs-lookup"><span data-stu-id="26593-137">Suppose that a fixed asset has the following characteristics.</span></span>
 
 |                     |        |
 |---------------------|--------|
-| Koszt nabycia    | 11 000 |
-| Wartość odzyskana       | 1 000  |
-| Podstawa amortyzacji   | 10000 |
-| Okres użytkowania (lata)  | 5 przypada na składniki z tytułu ubezpieczeń majątkowych i osobowych      |
-| Amortyzacja roczna | 2 000  |
+| <span data-ttu-id="26593-138">Koszt nabycia</span><span class="sxs-lookup"><span data-stu-id="26593-138">Acquisition cost</span></span>    | <span data-ttu-id="26593-139">11 000</span><span class="sxs-lookup"><span data-stu-id="26593-139">11,000</span></span> |
+| <span data-ttu-id="26593-140">Wartość odzyskana</span><span class="sxs-lookup"><span data-stu-id="26593-140">Salvage value</span></span>       | <span data-ttu-id="26593-141">1 000</span><span class="sxs-lookup"><span data-stu-id="26593-141">1,000</span></span>  |
+| <span data-ttu-id="26593-142">Podstawa amortyzacji</span><span class="sxs-lookup"><span data-stu-id="26593-142">Depreciation base</span></span>   | <span data-ttu-id="26593-143">10000</span><span class="sxs-lookup"><span data-stu-id="26593-143">10,000</span></span> |
+| <span data-ttu-id="26593-144">Okres użytkowania (lata)</span><span class="sxs-lookup"><span data-stu-id="26593-144">Service life years</span></span>  | <span data-ttu-id="26593-145">5 przypada na składniki z tytułu ubezpieczeń majątkowych i osobowych</span><span class="sxs-lookup"><span data-stu-id="26593-145">5</span></span>      |
+| <span data-ttu-id="26593-146">Amortyzacja roczna</span><span class="sxs-lookup"><span data-stu-id="26593-146">Yearly depreciation</span></span> | <span data-ttu-id="26593-147">2 000</span><span class="sxs-lookup"><span data-stu-id="26593-147">2,000</span></span>  |
 
-Każdego roku uzyskuje się taką samą kwotę amortyzacji. (Koszt nabycia - Wartość odzyskana) / Lata okresu użytkowania
+<span data-ttu-id="26593-148">Każdego roku uzyskuje się taką samą kwotę amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="26593-148">You get the same depreciation amount each year.</span></span> <span data-ttu-id="26593-149">(Koszt nabycia - Wartość odzyskana) / Lata okresu użytkowania</span><span class="sxs-lookup"><span data-stu-id="26593-149">(Acquisition cost - Salvage value) / Service life years</span></span>
 
-| Okres | Obliczanie rocznej kwoty amortyzacji | Wartość księgowa netto na koniec roku |
+| <span data-ttu-id="26593-150">Okres</span><span class="sxs-lookup"><span data-stu-id="26593-150">Period</span></span> | <span data-ttu-id="26593-151">Obliczanie rocznej kwoty amortyzacji</span><span class="sxs-lookup"><span data-stu-id="26593-151">Calculation of yearly depreciation amount</span></span> | <span data-ttu-id="26593-152">Wartość księgowa netto na koniec roku</span><span class="sxs-lookup"><span data-stu-id="26593-152">Net book value at the end of the year</span></span> |
 |--------|-------------------------------------------|---------------------------------------|
-| Rok 1 | (11 000 - 1000) / 5 = 2000              | 9000                                 |
-| Rok 2 | (11 000 - 1000) / 5 = 2000              | 7000                                 |
-| Rok 3 | (11 000 - 1000) / 5 = 2000              | 5000                                 |
-| Rok 4 | (11 000 - 1000) / 5 = 2000              | 3000                                 |
-| Rok 5 | (11 000 - 1000) / 5 = 2000              | 1 000                                 |
+| <span data-ttu-id="26593-153">Rok 1</span><span class="sxs-lookup"><span data-stu-id="26593-153">Year 1</span></span> | <span data-ttu-id="26593-154">(11 000 - 1000) / 5 = 2000</span><span class="sxs-lookup"><span data-stu-id="26593-154">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="26593-155">9000</span><span class="sxs-lookup"><span data-stu-id="26593-155">9,000</span></span>                                 |
+| <span data-ttu-id="26593-156">Rok 2</span><span class="sxs-lookup"><span data-stu-id="26593-156">Year 2</span></span> | <span data-ttu-id="26593-157">(11 000 - 1000) / 5 = 2000</span><span class="sxs-lookup"><span data-stu-id="26593-157">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="26593-158">7000</span><span class="sxs-lookup"><span data-stu-id="26593-158">7,000</span></span>                                 |
+| <span data-ttu-id="26593-159">Rok 3</span><span class="sxs-lookup"><span data-stu-id="26593-159">Year 3</span></span> | <span data-ttu-id="26593-160">(11 000 - 1000) / 5 = 2000</span><span class="sxs-lookup"><span data-stu-id="26593-160">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="26593-161">5000</span><span class="sxs-lookup"><span data-stu-id="26593-161">5,000</span></span>                                 |
+| <span data-ttu-id="26593-162">Rok 4</span><span class="sxs-lookup"><span data-stu-id="26593-162">Year 4</span></span> | <span data-ttu-id="26593-163">(11 000 - 1000) / 5 = 2000</span><span class="sxs-lookup"><span data-stu-id="26593-163">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="26593-164">3000</span><span class="sxs-lookup"><span data-stu-id="26593-164">3,000</span></span>                                 |
+| <span data-ttu-id="26593-165">Rok 5</span><span class="sxs-lookup"><span data-stu-id="26593-165">Year 5</span></span> | <span data-ttu-id="26593-166">(11 000 - 1000) / 5 = 2000</span><span class="sxs-lookup"><span data-stu-id="26593-166">(11,000 - 1,000) / 5 = 2,000</span></span>              | <span data-ttu-id="26593-167">1 000</span><span class="sxs-lookup"><span data-stu-id="26593-167">1,000</span></span>                                 |
 
-## <a name="example-straight-line-depreciation-of-a-modified-fixed-asset"></a> Przykład: amortyzacja liniowa środków trwałych, które uległy zmianie
+## <a name="example-straight-line-depreciation-of-a-modified-fixed-asset"></a><span data-ttu-id="26593-168"> Przykład: amortyzacja liniowa środków trwałych, które uległy zmianie</span><span class="sxs-lookup"><span data-stu-id="26593-168">Example: Straight line depreciation of a modified fixed asset</span></span>
 
-Załóżmy, że do tych samych środków trwałych w roku 2. dodano korektę wartości początkowej w wysokości 4000. 
+<span data-ttu-id="26593-169">Załóżmy, że do tych samych środków trwałych w roku 2. dodano korektę wartości początkowej w wysokości 4000.</span><span class="sxs-lookup"><span data-stu-id="26593-169">Suppose that you add an acquisition adjustment of 4,000 in year 2 to the same fixed asset.</span></span> 
 
-Okres użytkowania korekty wartości początkowej jest taki sam jak środków trwałych i rozpoczyna się od momentu dodania korekty. Wartość księgowa netto na końcu roku 5. odpowiada wartości księgowej netto korekty wartości początkowej. Amortyzacja za okres jest obliczana zgodnie z poniższą tabelą.
+<span data-ttu-id="26593-170">Okres użytkowania korekty wartości początkowej jest taki sam jak środków trwałych i rozpoczyna się od momentu dodania korekty.</span><span class="sxs-lookup"><span data-stu-id="26593-170">The service life of the acquisition adjustment is the same as that of the fixed asset and starts at the time of its acquisition.</span></span> <span data-ttu-id="26593-171">Wartość księgowa netto na końcu roku 5. odpowiada wartości księgowej netto korekty wartości początkowej.</span><span class="sxs-lookup"><span data-stu-id="26593-171">A net book value remains at the end of year 5, corresponding to the net book value of the acquisition adjustment.</span></span> <span data-ttu-id="26593-172">Amortyzacja za okres jest obliczana zgodnie z poniższą tabelą.</span><span class="sxs-lookup"><span data-stu-id="26593-172">The depreciation by period is calculated as shown in the following table.</span></span>
 
-| Okres | Obliczenie kwoty rocznej amortyzacji | Wartość księgowa netto pod koniec roku |
+| <span data-ttu-id="26593-173">Okres</span><span class="sxs-lookup"><span data-stu-id="26593-173">Period</span></span> | <span data-ttu-id="26593-174">Obliczenie kwoty rocznej amortyzacji</span><span class="sxs-lookup"><span data-stu-id="26593-174">Calculation of yearly depreciation amount</span></span> | <span data-ttu-id="26593-175">Wartość księgowa netto pod koniec roku</span><span class="sxs-lookup"><span data-stu-id="26593-175">Net book value at the end of the year</span></span> |
 |--------|-------------------------------------------|---------------------------------------|
-| Rok 1 | 10 000 / 5 = 2000                        | 11 000 - 2000 = 9000                |
-| Rok 2 | 4000 (korekta wartości początkowej)            | 9000 + 4000 =13 000                 |
-| Rok 2 | 14 000 / 5 = 2800                        | 13 000 - 2800 = 10 200               |
-| Rok 3 | 14 000 / 5 = 2800                        | 10 200 - 2800 = 7400                |
-| Rok 4 | 14 000 / 5 = 2800                        | 7400 - 2800 = 4600                 |
-| Rok 5 | 14 000 / 5 = 2800                        | 4600 - 2800 = 1800                 |
-| Rok 6 | Pozostało 800*\*                           | 1800 – 800 = 1000                   |
+| <span data-ttu-id="26593-176">Rok 1</span><span class="sxs-lookup"><span data-stu-id="26593-176">Year 1</span></span> | <span data-ttu-id="26593-177">10 000 / 5 = 2000</span><span class="sxs-lookup"><span data-stu-id="26593-177">10,000 / 5 = 2,000</span></span>                        | <span data-ttu-id="26593-178">11 000 - 2000 = 9000</span><span class="sxs-lookup"><span data-stu-id="26593-178">11,000 - 2,000 = 9,000</span></span>                |
+| <span data-ttu-id="26593-179">Rok 2</span><span class="sxs-lookup"><span data-stu-id="26593-179">Year 2</span></span> | <span data-ttu-id="26593-180">4000 (korekta wartości początkowej)</span><span class="sxs-lookup"><span data-stu-id="26593-180">4,000 (acquisition adjustment)</span></span>            | <span data-ttu-id="26593-181">9000 + 4000 =13 000</span><span class="sxs-lookup"><span data-stu-id="26593-181">9,000 + 4,000 =13,000</span></span>                 |
+| <span data-ttu-id="26593-182">Rok 2</span><span class="sxs-lookup"><span data-stu-id="26593-182">Year 2</span></span> | <span data-ttu-id="26593-183">14 000 / 5 = 2800</span><span class="sxs-lookup"><span data-stu-id="26593-183">14,000 / 5 = 2,800</span></span>                        | <span data-ttu-id="26593-184">13 000 - 2800 = 10 200</span><span class="sxs-lookup"><span data-stu-id="26593-184">13,000 - 2,800 = 10,200</span></span>               |
+| <span data-ttu-id="26593-185">Rok 3</span><span class="sxs-lookup"><span data-stu-id="26593-185">Year 3</span></span> | <span data-ttu-id="26593-186">14 000 / 5 = 2800</span><span class="sxs-lookup"><span data-stu-id="26593-186">14,000 / 5 = 2,800</span></span>                        | <span data-ttu-id="26593-187">10 200 - 2800 = 7400</span><span class="sxs-lookup"><span data-stu-id="26593-187">10,200 - 2,800 = 7,400</span></span>                |
+| <span data-ttu-id="26593-188">Rok 4</span><span class="sxs-lookup"><span data-stu-id="26593-188">Year 4</span></span> | <span data-ttu-id="26593-189">14 000 / 5 = 2800</span><span class="sxs-lookup"><span data-stu-id="26593-189">14,000 / 5 = 2,800</span></span>                        | <span data-ttu-id="26593-190">7400 - 2800 = 4600</span><span class="sxs-lookup"><span data-stu-id="26593-190">7,400 - 2,800 = 4,600</span></span>                 |
+| <span data-ttu-id="26593-191">Rok 5</span><span class="sxs-lookup"><span data-stu-id="26593-191">Year 5</span></span> | <span data-ttu-id="26593-192">14 000 / 5 = 2800</span><span class="sxs-lookup"><span data-stu-id="26593-192">14,000 / 5 = 2,800</span></span>                        | <span data-ttu-id="26593-193">4600 - 2800 = 1800</span><span class="sxs-lookup"><span data-stu-id="26593-193">4,600 - 2,800 = 1,800</span></span>                 |
+| <span data-ttu-id="26593-194">Rok 6</span><span class="sxs-lookup"><span data-stu-id="26593-194">Year 6</span></span> | <span data-ttu-id="26593-195">Pozostało 800*\*</span><span class="sxs-lookup"><span data-stu-id="26593-195">Remaining 800\*</span></span>                           | <span data-ttu-id="26593-196">1800 – 800 = 1000</span><span class="sxs-lookup"><span data-stu-id="26593-196">1,800 – 800 = 1,000</span></span>                   |
 
-\*Ponieważ pozostała kwota jest niższa niż kwota amortyzacji, uwzględniana jest tylko kwota pozostała pomniejszona o wartość odzyskaną.
+<span data-ttu-id="26593-197">\*Ponieważ pozostała kwota jest niższa niż kwota amortyzacji, uwzględniana jest tylko kwota pozostała pomniejszona o wartość odzyskaną.</span><span class="sxs-lookup"><span data-stu-id="26593-197">\*Because the remaining amount is less than the depreciation amount, only the remaining amount minus the salvage value is taken.</span></span>
 
 
 

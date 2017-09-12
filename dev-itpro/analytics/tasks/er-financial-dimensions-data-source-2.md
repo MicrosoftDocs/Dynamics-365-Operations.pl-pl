@@ -16,131 +16,131 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: bbc7401284146c2ab4fdfe325cfefb95d1eefb81
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 58a0ce881e5cb8d459256244a144cf51dc357299
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="map-models--to-use-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>Mapowanie modeli w celu używania wymiarów finansowych jako źródła danych na potrzeby raportowania elektronicznego (ER)
+# <a name="map-models--to-use-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a><span data-ttu-id="95dda-103">Mapowanie modeli w celu używania wymiarów finansowych jako źródła danych na potrzeby raportowania elektronicznego (ER)</span><span class="sxs-lookup"><span data-stu-id="95dda-103">Map models  to use financial dimensions as a data source for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować model raportowania elektronicznego (ER), aby używał on wymiarów finansowych jako źródła danych w raportach ER. Kroki można wykonać na danych dowolnej firmy.
+<span data-ttu-id="95dda-104">W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować model raportowania elektronicznego (ER), aby używał on wymiarów finansowych jako źródła danych w raportach ER.</span><span class="sxs-lookup"><span data-stu-id="95dda-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports.</span></span> <span data-ttu-id="95dda-105">Kroki można wykonać na danych dowolnej firmy.</span><span class="sxs-lookup"><span data-stu-id="95dda-105">These steps can be performed in any company.</span></span>
 
-Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używanie wymiarów finansowych jako źródła danych (Część 1: Projektowanie modelu danych)”.
+<span data-ttu-id="95dda-106">Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używanie wymiarów finansowych jako źródła danych (Część 1: Projektowanie modelu danych)”.</span><span class="sxs-lookup"><span data-stu-id="95dda-106">To complete these steps, you must first complete the steps in the “ER Use financial dimensions as a data source (Part 1: Design data model” procedure.</span></span>
 
 
-## <a name="add-required-data-sources-to-model-mapping"></a>Dodawanie wymaganych źródeł danych do mapowania modelu
-1. Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Konfiguracje.
-2. W drzewie zaznacz element „Wymiany finansowe przykładowego modelu”.
-3. Kliknij przycisk Konstruktor.
-4. Kliknij opcję Mapuj model na źródło danych.
-5. Kliknij przycisk Nowy.
-6. W polu Definicja zaznacz wartość Wpis.
-7. W polu Nazwa wpisz „Mapowanie danych wymiarów”.
-8. W polu Opis wpisz „Mapowanie danych wymiarów”.
-9. Kliknij przycisk Zapisz.
-10. Kliknij przycisk Konstruktor.
-11. W drzewie zaznacz element „Dynamics 365 for Operations\Tabela”.
-12. Kliknij opcję Dodaj element główny.
-13. W polu Nazwa wpisz „Firma”.
-14. W polu Tabela wpisz „CompanyInfo”.
-15. Kliknij przycisk OK.
-16. W drzewie zaznacz element „Funkcje\Szczegóły wymiarów finansowych”.
-17. Kliknij opcję Dodaj element główny.
-    * To źródło danych określa, jak zakres wymiarów finansowych zostanie zdefiniowany dla każdego raportu, który będzie używał tego modelu jako źródła danych.  
-18. W polu Nazwa wpisz wartość.
-19. W polu Zapytaj o wymiary wybierz opcję Tak.
-    * Wybierz opcję Tak, aby umożliwić użytkownikowi wybieranie wymiarów w czasie wykonywania w formularzu Okno dialogowe użytkownika. Jeśli ustawisz wartość Nie, domyślnie będą używane wszystkie wymiary finansowe bieżącego wystąpienia.  
-20. W polu Wybór wymiarów finansowych zaznacz wartość „Firma”.
-    * Zaznacz opcję Wszystko, aby umożliwić użytkownikowi wybieranie żądanych wymiarów dla bieżącego wystąpienia w polu Wyszukiwanie.  Zaznacz opcję Firma, aby umożliwić użytkownikowi wybieranie wymiarów dla firmy w polu Wyszukiwanie.  Wybierz opcję Wymiar, aby umożliwić użytkownikowi wybieranie wymiarów przy użyciu jednego zestawu wymiarów.  
-21. W polu Zapytaj o konto główne wybierz opcję Tak.
-    * W ustawieniu „Zapytaj o konto główne” zaznacz wartość Tak, aby zezwolić użytkownikom na wybieranie konta głównego jako części listy wymiarów.   Jeśli zaznaczysz wartość Nie, konto główne nie zostanie włączone do listy wymiarów, a opcja „Czy konto główne jest obowiązkowe” zostanie włączona. Jeśli w opcji „Czy konto główne jest obowiązkowe” ustawisz wartość Tak, konto główne będzie umieszczane na liście wymiarów niezależnie od wyboru dokonanego przez użytkownika.  
-22. Kliknij przycisk OK.
-23. W drzewie zaznacz element „Dynamics 365 for Operations\Rekordy w tabeli”.
-24. Kliknij opcję Dodaj element główny.
-25. W polu Nazwa wpisz „LedgerJournal”.
-26. W polu Monituj o zapytanie wybierz opcję Tak.
-27. W polu Tabela wpisz „LedgerJournalTable”.
-28. Kliknij przycisk OK.
+## <a name="add-required-data-sources-to-model-mapping"></a><span data-ttu-id="95dda-107">Dodawanie wymaganych źródeł danych do mapowania modelu</span><span class="sxs-lookup"><span data-stu-id="95dda-107">Add required data sources to model mapping</span></span>
+1. <span data-ttu-id="95dda-108">Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Konfiguracje.</span><span class="sxs-lookup"><span data-stu-id="95dda-108">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="95dda-109">W drzewie zaznacz element „Wymiany finansowe przykładowego modelu”.</span><span class="sxs-lookup"><span data-stu-id="95dda-109">In the tree, select 'Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="95dda-110">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="95dda-110">Click Designer.</span></span>
+4. <span data-ttu-id="95dda-111">Kliknij opcję Mapuj model na źródło danych.</span><span class="sxs-lookup"><span data-stu-id="95dda-111">Click Map model to datasource.</span></span>
+5. <span data-ttu-id="95dda-112">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="95dda-112">Click New.</span></span>
+6. <span data-ttu-id="95dda-113">W polu Definicja zaznacz wartość Wpis.</span><span class="sxs-lookup"><span data-stu-id="95dda-113">In the Definition field, select Entry.</span></span>
+7. <span data-ttu-id="95dda-114">W polu Nazwa wpisz „Mapowanie danych wymiarów”.</span><span class="sxs-lookup"><span data-stu-id="95dda-114">In the Name field, type 'Dimensions data mapping'.</span></span>
+8. <span data-ttu-id="95dda-115">W polu Opis wpisz „Mapowanie danych wymiarów”.</span><span class="sxs-lookup"><span data-stu-id="95dda-115">In the Description field, type 'Dimensions data mapping'.</span></span>
+9. <span data-ttu-id="95dda-116">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="95dda-116">Click Save.</span></span>
+10. <span data-ttu-id="95dda-117">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="95dda-117">Click Designer.</span></span>
+11. <span data-ttu-id="95dda-118">W drzewie zaznacz element „Dynamics 365 for Operations\Tabela”.</span><span class="sxs-lookup"><span data-stu-id="95dda-118">In the tree, select 'Dynamics 365 for Operations\Table'.</span></span>
+12. <span data-ttu-id="95dda-119">Kliknij opcję Dodaj element główny.</span><span class="sxs-lookup"><span data-stu-id="95dda-119">Click Add root.</span></span>
+13. <span data-ttu-id="95dda-120">W polu Nazwa wpisz „Firma”.</span><span class="sxs-lookup"><span data-stu-id="95dda-120">In the Name field, type 'Company'.</span></span>
+14. <span data-ttu-id="95dda-121">W polu Tabela wpisz „CompanyInfo”.</span><span class="sxs-lookup"><span data-stu-id="95dda-121">In the Table field, type 'CompanyInfo'.</span></span>
+15. <span data-ttu-id="95dda-122">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="95dda-122">Click OK.</span></span>
+16. <span data-ttu-id="95dda-123">W drzewie zaznacz element „Funkcje\Szczegóły wymiarów finansowych”.</span><span class="sxs-lookup"><span data-stu-id="95dda-123">In the tree, select 'Functions\Financial dimensions details'.</span></span>
+17. <span data-ttu-id="95dda-124">Kliknij opcję Dodaj element główny.</span><span class="sxs-lookup"><span data-stu-id="95dda-124">Click Add root.</span></span>
+    * <span data-ttu-id="95dda-125">To źródło danych określa, jak zakres wymiarów finansowych zostanie zdefiniowany dla każdego raportu, który będzie używał tego modelu jako źródła danych.</span><span class="sxs-lookup"><span data-stu-id="95dda-125">This data source specifies how the scope of financial dimensions will be defined for any report that will use this model as a data source.</span></span>  
+18. <span data-ttu-id="95dda-126">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="95dda-126">In the Name field, type a value.</span></span>
+19. <span data-ttu-id="95dda-127">W polu Zapytaj o wymiary wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="95dda-127">Select Yes in the Ask for dimensions field.</span></span>
+    * <span data-ttu-id="95dda-128">Wybierz opcję Tak, aby umożliwić użytkownikowi wybieranie wymiarów w czasie wykonywania w formularzu Okno dialogowe użytkownika.</span><span class="sxs-lookup"><span data-stu-id="95dda-128">Select Yes to allow the user to select dimensions at run-time on the User dialog form.</span></span> <span data-ttu-id="95dda-129">Jeśli ustawisz wartość Nie, domyślnie będą używane wszystkie wymiary finansowe bieżącego wystąpienia.</span><span class="sxs-lookup"><span data-stu-id="95dda-129">If set to No, all financial dimensions of the current instance will be used by default.</span></span>  
+20. <span data-ttu-id="95dda-130">W polu Wybór wymiarów finansowych zaznacz wartość „Firma”.</span><span class="sxs-lookup"><span data-stu-id="95dda-130">In the Financial dimensions selection field, select 'Legal entity'.</span></span>
+    * <span data-ttu-id="95dda-131">Zaznacz opcję Wszystko, aby umożliwić użytkownikowi wybieranie żądanych wymiarów dla bieżącego wystąpienia w polu Wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="95dda-131">Select All to allow the user to select desire dimensions for the current  instance in the Lookup field.</span></span>  <span data-ttu-id="95dda-132">Zaznacz opcję Firma, aby umożliwić użytkownikowi wybieranie wymiarów dla firmy w polu Wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="95dda-132">Select Legal entity to allow the user to select dimensions for the company in the Lookup field.</span></span>  <span data-ttu-id="95dda-133">Wybierz opcję Wymiar, aby umożliwić użytkownikowi wybieranie wymiarów przy użyciu jednego zestawu wymiarów.</span><span class="sxs-lookup"><span data-stu-id="95dda-133">Select Dimension to allow the user to select dimensions using a single dimension set.</span></span>  
+21. <span data-ttu-id="95dda-134">W polu Zapytaj o konto główne wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="95dda-134">Select Yes in the Ask for main account field.</span></span>
+    * <span data-ttu-id="95dda-135">W ustawieniu „Zapytaj o konto główne” zaznacz wartość Tak, aby zezwolić użytkownikom na wybieranie konta głównego jako części listy wymiarów.</span><span class="sxs-lookup"><span data-stu-id="95dda-135">Set ‘Ask for main account’ to Yes to allow users to select the main account as part of the list of dimensions.</span></span>   <span data-ttu-id="95dda-136">Jeśli zaznaczysz wartość Nie, konto główne nie zostanie włączone do listy wymiarów, a opcja „Czy konto główne jest obowiązkowe” zostanie włączona.</span><span class="sxs-lookup"><span data-stu-id="95dda-136">If set to No, the main account will not be included to the list of dimensions and the ‘Is main account mandatory’ option is enabled.</span></span> <span data-ttu-id="95dda-137">Jeśli w opcji „Czy konto główne jest obowiązkowe” ustawisz wartość Tak, konto główne będzie umieszczane na liście wymiarów niezależnie od wyboru dokonanego przez użytkownika.</span><span class="sxs-lookup"><span data-stu-id="95dda-137">If “Is main account mandatory’ is set to Yes, include the main account in the list of dimensions regardless of the user’s selection.</span></span>  
+22. <span data-ttu-id="95dda-138">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="95dda-138">Click OK.</span></span>
+23. <span data-ttu-id="95dda-139">W drzewie zaznacz element „Dynamics 365 for Operations\Rekordy w tabeli”.</span><span class="sxs-lookup"><span data-stu-id="95dda-139">In the tree, select 'Dynamics 365 for Operations\Table records'.</span></span>
+24. <span data-ttu-id="95dda-140">Kliknij opcję Dodaj element główny.</span><span class="sxs-lookup"><span data-stu-id="95dda-140">Click Add root.</span></span>
+25. <span data-ttu-id="95dda-141">W polu Nazwa wpisz „LedgerJournal”.</span><span class="sxs-lookup"><span data-stu-id="95dda-141">In the Name field, type 'LedgerJournal'.</span></span>
+26. <span data-ttu-id="95dda-142">W polu Monituj o zapytanie wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="95dda-142">Select Yes in the Ask for query field.</span></span>
+27. <span data-ttu-id="95dda-143">W polu Tabela wpisz „LedgerJournalTable”.</span><span class="sxs-lookup"><span data-stu-id="95dda-143">In the Table field, type 'LedgerJournalTable'.</span></span>
+28. <span data-ttu-id="95dda-144">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="95dda-144">Click OK.</span></span>
 
-## <a name="map-data-model-elements-to-added-data-sources"></a>Mapowanie elementów modelu danych na dodane źródła danych
-1. W drzewie rozwiń węzeł „Arkusz”.
-2. W drzewie rozwiń węzeł „Arkusz\Transakcja”.
-3. W drzewie rozwiń węzeł „Arkusz\Transakcja\Dane wymiarów”.
-4. W drzewie rozwiń węzeł „Ustawienie wymiarów”.
-5. W drzewie rozwiń węzeł „LedgerJournal”.
-6. W drzewie rozwiń węzeł „LedgerJournal\<Relacje”.
-7. W drzewie rozwiń węzeł „LedgerJournal\<Relacje\LedgerJournalTrans”.
-8. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Załącznik”.
-9. W drzewie zaznacz element „Arkusz\Transakcja\Załącznik”.
-10. Kliknij opcję Powiąż.
-11. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)”.
-    * Należy zauważyć, że dla każdego odwołania do wymiarów finansowych, na przykład, LedgerDimension, jest dostępny odpowiadający mu element źródła danych (LedgerDimension.Wymiar). Ten element źródła danych udostępnia wymiary finansowe tego zestawu wymiarów jako listę rekordu.  
-12. W drzewie rozwiń węzeł „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)”.
-13. W drzewie rozwiń węzeł „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary”.
-14. W drzewie rozwiń węzeł „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary\Wartość”.
-15. W drzewie rozwiń węzeł „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary\Definicja”.
-16. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary\Definicja\Nazwa”.
-17. W drzewie zaznacz element „Arkusz\Transakcja\Dane wymiarów\Nazwa”.
-18. Kliknij opcję Powiąż.
-19. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary\Wartość\Opis”.
-20. W drzewie zaznacz element „Arkusz\Transakcja\Dane wymiarów\Opis”.
-21. Kliknij opcję Powiąż.
-22. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary\Wartość\Kod”.
-23. W drzewie zaznacz element „Arkusz\Transakcja\Dane wymiarów\Kod”.
-24. Kliknij opcję Powiąż.
-25. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary”.
-26. W drzewie zaznacz element „Arkusz\Transakcja\Dane wymiarów”.
-27. Kliknij opcję Powiąż.
-28. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Debet(AmountCurDebit)”.
-29. W drzewie zaznacz element „Arkusz\Transakcja\Debet”.
-30. Kliknij opcję Powiąż.
-31. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Data(TransDate)”.
-32. W drzewie zaznacz element „Arkusz\Transakcja\Data”.
-33. Kliknij opcję Powiąż.
-34. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Waluta(CurrencyCode)”.
-35. W drzewie zaznacz element „Arkusz\Transakcja\Waluta”.
-36. Kliknij opcję Powiąż.
-37. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Kredyt(AmountCurCredit)”.
-38. W drzewie zaznacz element „Arkusz\Transakcja\Kredyt”.
-39. Kliknij opcję Powiąż.
-40. W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans”.
-41. W drzewie zaznacz element „Arkusz\Transakcja”.
-42. Kliknij opcję Powiąż.
-43. W drzewie zaznacz element „LedgerJournal\Arkusz z numerem partii(JournalNum)”.
-44. W drzewie zaznacz element „Arkusz\Partia”.
-45. Kliknij opcję Powiąż.
-46. W drzewie zaznacz element „LedgerJournal”.
-47. W drzewie zaznacz element „Arkusz”.
-48. Kliknij opcję Powiąż.
-49. W drzewie rozwiń węzeł „Wymiary”.
-50. W drzewie rozwiń węzeł „Wymiary\Konto główne i wymiary”.
-51. W drzewie rozwiń węzeł „Wymiary\Konto główne i wymiary\Definicja”.
-52. W drzewie zaznacz element „Wymiary\Konto główne i wymiary\Definicja\Nazwa”.
-53. W drzewie zaznacz element „Ustawienie wymiarów\Kod”.
-54. Kliknij opcję Powiąż.
-55. W drzewie zaznacz element „Wymiary\Konto główne i wymiary\Definicja\Nazwa kolumny raportu”.
-56. W drzewie zaznacz element „Ustawienie wymiarów\Nazwa”.
-57. Kliknij opcję Powiąż.
-58. W drzewie zaznacz element „Wymiary\Konto główne i wymiary”.
-59. W drzewie zaznacz element „Ustawienie wymiarów”.
-60. Kliknij opcję Powiąż.
-61. W drzewie zaznacz element „Firma”.
-62. Kliknij przycisk Edytuj.
-63. W polu expressionAsStringText wpisz „Firma.'find()'.'name()'”.
-    * Firma.'find()'.'name()'  
-64. Kliknij przycisk Zapisz.
-65. Zamknij stronę.
-66. Kliknij przycisk Zapisz.
-67. Zamknij stronę.
+## <a name="map-data-model-elements-to-added-data-sources"></a><span data-ttu-id="95dda-145">Mapowanie elementów modelu danych na dodane źródła danych</span><span class="sxs-lookup"><span data-stu-id="95dda-145">Map data model elements to added data sources</span></span>
+1. <span data-ttu-id="95dda-146">W drzewie rozwiń węzeł „Arkusz”.</span><span class="sxs-lookup"><span data-stu-id="95dda-146">In the tree, expand 'Journal'.</span></span>
+2. <span data-ttu-id="95dda-147">W drzewie rozwiń węzeł „Arkusz\Transakcja”.</span><span class="sxs-lookup"><span data-stu-id="95dda-147">In the tree, expand 'Journal\Transaction'.</span></span>
+3. <span data-ttu-id="95dda-148">W drzewie rozwiń węzeł „Arkusz\Transakcja\Dane wymiarów”.</span><span class="sxs-lookup"><span data-stu-id="95dda-148">In the tree, expand 'Journal\Transaction\Dimensions data'.</span></span>
+4. <span data-ttu-id="95dda-149">W drzewie rozwiń węzeł „Ustawienie wymiarów”.</span><span class="sxs-lookup"><span data-stu-id="95dda-149">In the tree, expand 'Dimensions setting'.</span></span>
+5. <span data-ttu-id="95dda-150">W drzewie rozwiń węzeł „LedgerJournal”.</span><span class="sxs-lookup"><span data-stu-id="95dda-150">In the tree, expand 'LedgerJournal'.</span></span>
+6. <span data-ttu-id="95dda-151">W drzewie rozwiń węzeł „LedgerJournal\<Relacje”.</span><span class="sxs-lookup"><span data-stu-id="95dda-151">In the tree, expand 'LedgerJournal\<Relations'.</span></span>
+7. <span data-ttu-id="95dda-152">W drzewie rozwiń węzeł „LedgerJournal\<Relacje\LedgerJournalTrans”.</span><span class="sxs-lookup"><span data-stu-id="95dda-152">In the tree, expand 'LedgerJournal\<Relations\LedgerJournalTrans'.</span></span>
+8. <span data-ttu-id="95dda-153">W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Załącznik”.</span><span class="sxs-lookup"><span data-stu-id="95dda-153">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Voucher'.</span></span>
+9. <span data-ttu-id="95dda-154">W drzewie zaznacz element „Arkusz\Transakcja\Załącznik”.</span><span class="sxs-lookup"><span data-stu-id="95dda-154">In the tree, select 'Journal\Transaction\Voucher'.</span></span>
+10. <span data-ttu-id="95dda-155">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-155">Click Bind.</span></span>
+11. <span data-ttu-id="95dda-156">W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)”.</span><span class="sxs-lookup"><span data-stu-id="95dda-156">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)'.</span></span>
+    * <span data-ttu-id="95dda-157">Należy zauważyć, że dla każdego odwołania do wymiarów finansowych, na przykład, LedgerDimension, jest dostępny odpowiadający mu element źródła danych (LedgerDimension.Wymiar).</span><span class="sxs-lookup"><span data-stu-id="95dda-157">Note that for any reference to financial dimensions that is set to, for instance, LedgerDimension, a corresponding data source item is available (LedgerDimension.Dimension).</span></span> <span data-ttu-id="95dda-158">Ten element źródła danych udostępnia wymiary finansowe tego zestawu wymiarów jako listę rekordu.</span><span class="sxs-lookup"><span data-stu-id="95dda-158">This data source item offers the financial dimensions of that dimensions set as the record’s list.</span></span>  
+12. <span data-ttu-id="95dda-159">W drzewie rozwiń węzeł „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)”.</span><span class="sxs-lookup"><span data-stu-id="95dda-159">In the tree, expand 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)'.</span></span>
+13. <span data-ttu-id="95dda-160">W drzewie rozwiń węzeł „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary”.</span><span class="sxs-lookup"><span data-stu-id="95dda-160">In the tree, expand 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions'.</span></span>
+14. <span data-ttu-id="95dda-161">W drzewie rozwiń węzeł „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary\Wartość”.</span><span class="sxs-lookup"><span data-stu-id="95dda-161">In the tree, expand 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions\Value'.</span></span>
+15. <span data-ttu-id="95dda-162">W drzewie rozwiń węzeł „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary\Definicja”.</span><span class="sxs-lookup"><span data-stu-id="95dda-162">In the tree, expand 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions\Definition'.</span></span>
+16. <span data-ttu-id="95dda-163">W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary\Definicja\Nazwa”.</span><span class="sxs-lookup"><span data-stu-id="95dda-163">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions\Definition\Name'.</span></span>
+17. <span data-ttu-id="95dda-164">W drzewie zaznacz element „Arkusz\Transakcja\Dane wymiarów\Nazwa”.</span><span class="sxs-lookup"><span data-stu-id="95dda-164">In the tree, select 'Journal\Transaction\Dimensions data\Name'.</span></span>
+18. <span data-ttu-id="95dda-165">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-165">Click Bind.</span></span>
+19. <span data-ttu-id="95dda-166">W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary\Wartość\Opis”.</span><span class="sxs-lookup"><span data-stu-id="95dda-166">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions\Value\Description'.</span></span>
+20. <span data-ttu-id="95dda-167">W drzewie zaznacz element „Arkusz\Transakcja\Dane wymiarów\Opis”.</span><span class="sxs-lookup"><span data-stu-id="95dda-167">In the tree, select 'Journal\Transaction\Dimensions data\Description'.</span></span>
+21. <span data-ttu-id="95dda-168">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-168">Click Bind.</span></span>
+22. <span data-ttu-id="95dda-169">W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary\Wartość\Kod”.</span><span class="sxs-lookup"><span data-stu-id="95dda-169">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions\Value\Code'.</span></span>
+23. <span data-ttu-id="95dda-170">W drzewie zaznacz element „Arkusz\Transakcja\Dane wymiarów\Kod”.</span><span class="sxs-lookup"><span data-stu-id="95dda-170">In the tree, select 'Journal\Transaction\Dimensions data\Code'.</span></span>
+24. <span data-ttu-id="95dda-171">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-171">Click Bind.</span></span>
+25. <span data-ttu-id="95dda-172">W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Konto.Wymiar(LedgerDimension.Wymiar)\Konto główne i wymiary”.</span><span class="sxs-lookup"><span data-stu-id="95dda-172">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Main account and dimensions'.</span></span>
+26. <span data-ttu-id="95dda-173">W drzewie zaznacz element „Arkusz\Transakcja\Dane wymiarów”.</span><span class="sxs-lookup"><span data-stu-id="95dda-173">In the tree, select 'Journal\Transaction\Dimensions data'.</span></span>
+27. <span data-ttu-id="95dda-174">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-174">Click Bind.</span></span>
+28. <span data-ttu-id="95dda-175">W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Debet(AmountCurDebit)”.</span><span class="sxs-lookup"><span data-stu-id="95dda-175">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Debit(AmountCurDebit)'.</span></span>
+29. <span data-ttu-id="95dda-176">W drzewie zaznacz element „Arkusz\Transakcja\Debet”.</span><span class="sxs-lookup"><span data-stu-id="95dda-176">In the tree, select 'Journal\Transaction\Debit'.</span></span>
+30. <span data-ttu-id="95dda-177">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-177">Click Bind.</span></span>
+31. <span data-ttu-id="95dda-178">W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Data(TransDate)”.</span><span class="sxs-lookup"><span data-stu-id="95dda-178">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Date(TransDate)'.</span></span>
+32. <span data-ttu-id="95dda-179">W drzewie zaznacz element „Arkusz\Transakcja\Data”.</span><span class="sxs-lookup"><span data-stu-id="95dda-179">In the tree, select 'Journal\Transaction\Date'.</span></span>
+33. <span data-ttu-id="95dda-180">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-180">Click Bind.</span></span>
+34. <span data-ttu-id="95dda-181">W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Waluta(CurrencyCode)”.</span><span class="sxs-lookup"><span data-stu-id="95dda-181">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Currency(CurrencyCode)'.</span></span>
+35. <span data-ttu-id="95dda-182">W drzewie zaznacz element „Arkusz\Transakcja\Waluta”.</span><span class="sxs-lookup"><span data-stu-id="95dda-182">In the tree, select 'Journal\Transaction\Currency'.</span></span>
+36. <span data-ttu-id="95dda-183">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-183">Click Bind.</span></span>
+37. <span data-ttu-id="95dda-184">W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans\Kredyt(AmountCurCredit)”.</span><span class="sxs-lookup"><span data-stu-id="95dda-184">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans\Credit(AmountCurCredit)'.</span></span>
+38. <span data-ttu-id="95dda-185">W drzewie zaznacz element „Arkusz\Transakcja\Kredyt”.</span><span class="sxs-lookup"><span data-stu-id="95dda-185">In the tree, select 'Journal\Transaction\Credit'.</span></span>
+39. <span data-ttu-id="95dda-186">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-186">Click Bind.</span></span>
+40. <span data-ttu-id="95dda-187">W drzewie zaznacz element „LedgerJournal\<Relacje\LedgerJournalTrans”.</span><span class="sxs-lookup"><span data-stu-id="95dda-187">In the tree, select 'LedgerJournal\<Relations\LedgerJournalTrans'.</span></span>
+41. <span data-ttu-id="95dda-188">W drzewie zaznacz element „Arkusz\Transakcja”.</span><span class="sxs-lookup"><span data-stu-id="95dda-188">In the tree, select 'Journal\Transaction'.</span></span>
+42. <span data-ttu-id="95dda-189">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-189">Click Bind.</span></span>
+43. <span data-ttu-id="95dda-190">W drzewie zaznacz element „LedgerJournal\Arkusz z numerem partii(JournalNum)”.</span><span class="sxs-lookup"><span data-stu-id="95dda-190">In the tree, select 'LedgerJournal\Journal batch number(JournalNum)'.</span></span>
+44. <span data-ttu-id="95dda-191">W drzewie zaznacz element „Arkusz\Partia”.</span><span class="sxs-lookup"><span data-stu-id="95dda-191">In the tree, select 'Journal\Batch'.</span></span>
+45. <span data-ttu-id="95dda-192">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-192">Click Bind.</span></span>
+46. <span data-ttu-id="95dda-193">W drzewie zaznacz element „LedgerJournal”.</span><span class="sxs-lookup"><span data-stu-id="95dda-193">In the tree, select 'LedgerJournal'.</span></span>
+47. <span data-ttu-id="95dda-194">W drzewie zaznacz element „Arkusz”.</span><span class="sxs-lookup"><span data-stu-id="95dda-194">In the tree, select 'Journal'.</span></span>
+48. <span data-ttu-id="95dda-195">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-195">Click Bind.</span></span>
+49. <span data-ttu-id="95dda-196">W drzewie rozwiń węzeł „Wymiary”.</span><span class="sxs-lookup"><span data-stu-id="95dda-196">In the tree, expand 'Dimensions'.</span></span>
+50. <span data-ttu-id="95dda-197">W drzewie rozwiń węzeł „Wymiary\Konto główne i wymiary”.</span><span class="sxs-lookup"><span data-stu-id="95dda-197">In the tree, expand 'Dimensions\Main account and dimensions'.</span></span>
+51. <span data-ttu-id="95dda-198">W drzewie rozwiń węzeł „Wymiary\Konto główne i wymiary\Definicja”.</span><span class="sxs-lookup"><span data-stu-id="95dda-198">In the tree, expand 'Dimensions\Main account and dimensions\Definition'.</span></span>
+52. <span data-ttu-id="95dda-199">W drzewie zaznacz element „Wymiary\Konto główne i wymiary\Definicja\Nazwa”.</span><span class="sxs-lookup"><span data-stu-id="95dda-199">In the tree, select 'Dimensions\Main account and dimensions\Definition\Name'.</span></span>
+53. <span data-ttu-id="95dda-200">W drzewie zaznacz element „Ustawienie wymiarów\Kod”.</span><span class="sxs-lookup"><span data-stu-id="95dda-200">In the tree, select 'Dimensions setting\Code'.</span></span>
+54. <span data-ttu-id="95dda-201">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-201">Click Bind.</span></span>
+55. <span data-ttu-id="95dda-202">W drzewie zaznacz element „Wymiary\Konto główne i wymiary\Definicja\Nazwa kolumny raportu”.</span><span class="sxs-lookup"><span data-stu-id="95dda-202">In the tree, select 'Dimensions\Main account and dimensions\Definition\Report column name'.</span></span>
+56. <span data-ttu-id="95dda-203">W drzewie zaznacz element „Ustawienie wymiarów\Nazwa”.</span><span class="sxs-lookup"><span data-stu-id="95dda-203">In the tree, select 'Dimensions setting\Name'.</span></span>
+57. <span data-ttu-id="95dda-204">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-204">Click Bind.</span></span>
+58. <span data-ttu-id="95dda-205">W drzewie zaznacz element „Wymiary\Konto główne i wymiary”.</span><span class="sxs-lookup"><span data-stu-id="95dda-205">In the tree, select 'Dimensions\Main account and dimensions'.</span></span>
+59. <span data-ttu-id="95dda-206">W drzewie zaznacz element „Ustawienie wymiarów”.</span><span class="sxs-lookup"><span data-stu-id="95dda-206">In the tree, select 'Dimensions setting'.</span></span>
+60. <span data-ttu-id="95dda-207">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="95dda-207">Click Bind.</span></span>
+61. <span data-ttu-id="95dda-208">W drzewie zaznacz element „Firma”.</span><span class="sxs-lookup"><span data-stu-id="95dda-208">In the tree, select 'Company'.</span></span>
+62. <span data-ttu-id="95dda-209">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="95dda-209">Click Edit.</span></span>
+63. <span data-ttu-id="95dda-210">W polu expressionAsStringText wpisz „Firma.'find()'.'name()'”.</span><span class="sxs-lookup"><span data-stu-id="95dda-210">In the expressionAsStringText field, enter 'Company.'find()'.'name()''.</span></span>
+    * <span data-ttu-id="95dda-211">Firma.'find()'.'name()'</span><span class="sxs-lookup"><span data-stu-id="95dda-211">Company.'find()'.'name()'</span></span>  
+64. <span data-ttu-id="95dda-212">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="95dda-212">Click Save.</span></span>
+65. <span data-ttu-id="95dda-213">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="95dda-213">Close the page.</span></span>
+66. <span data-ttu-id="95dda-214">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="95dda-214">Click Save.</span></span>
+67. <span data-ttu-id="95dda-215">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="95dda-215">Close the page.</span></span>
 
-## <a name="complete-this-draft-models-version"></a>Finalizowanie tej wersji modelu roboczego
-1. Zamknij stronę.
-2. Zamknij stronę.
-3. Kliknij przycisk Zmień stan.
-4. Kliknij przycisk Wykonaj.
-5. Kliknij przycisk OK.
+## <a name="complete-this-draft-models-version"></a><span data-ttu-id="95dda-216">Finalizowanie tej wersji modelu roboczego</span><span class="sxs-lookup"><span data-stu-id="95dda-216">Complete this draft model’s version</span></span>
+1. <span data-ttu-id="95dda-217">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="95dda-217">Close the page.</span></span>
+2. <span data-ttu-id="95dda-218">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="95dda-218">Close the page.</span></span>
+3. <span data-ttu-id="95dda-219">Kliknij przycisk Zmień stan.</span><span class="sxs-lookup"><span data-stu-id="95dda-219">Click Change status.</span></span>
+4. <span data-ttu-id="95dda-220">Kliknij przycisk Wykonaj.</span><span class="sxs-lookup"><span data-stu-id="95dda-220">Click Complete.</span></span>
+5. <span data-ttu-id="95dda-221">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="95dda-221">Click OK.</span></span>
 
 

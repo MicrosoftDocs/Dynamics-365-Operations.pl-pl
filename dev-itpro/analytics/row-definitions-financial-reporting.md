@@ -19,97 +19,97 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 06a75889e62cbba6e47a8543cf663868df5ae2e3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="row-definitions-in-financial-report-designer"></a>Definicje wierszy w Projektancie raportów finansowych
+# <a name="row-definitions-in-financial-report-designer"></a><span data-ttu-id="dd4b0-104">Definicje wierszy w Projektancie raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="dd4b0-104">Row definitions in financial report designer</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zawartość każdego wiersza w raporcie finansowym. Definicję wiersza można łączyć z definicjami kolumn, drzewa raportowania i raportów, by tworzyć grupy elementów konstrukcyjnych dostępne dla wielu firm.
+<span data-ttu-id="dd4b0-105">Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zawartość każdego wiersza w raporcie finansowym.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-105">A row definition is a report component, or building block, that specifies the contents of each row on a financial report.</span></span> <span data-ttu-id="dd4b0-106">Definicję wiersza można łączyć z definicjami kolumn, drzewa raportowania i raportów, by tworzyć grupy elementów konstrukcyjnych dostępne dla wielu firm.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-106">A row definition can be combined with column definitions, reporting tree definitions, and report definitions to create a building block group that can be used by multiple companies.</span></span>
 
-<a name="create-a-row-definition"></a>Tworzenie definicji wiersza
+<a name="create-a-row-definition"></a><span data-ttu-id="dd4b0-107">Tworzenie definicji wiersza</span><span class="sxs-lookup"><span data-stu-id="dd4b0-107">Create a row definition</span></span>
 -----------------------
 
-1.  W Projektancie raportów w okienku nawigacji kliknij **Definicje wierszy**.
-2.  W menu **Plik** kliknij **Nowy**, a następnie kliknij polecenie **Definicja wiersza**. Aby uzyskać więcej informacji dotyczących zawartości każdej komórki, zobacz [Modyfikowanie komórek definicji wiersza](modify-row-definition-cells-financial-reporting.md).
+1.  <span data-ttu-id="dd4b0-108">W Projektancie raportów w okienku nawigacji kliknij **Definicje wierszy**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-108">In Report Designer, in the navigation pane, click **Row Definitions**.</span></span>
+2.  <span data-ttu-id="dd4b0-109">W menu **Plik** kliknij **Nowy**, a następnie kliknij polecenie **Definicja wiersza**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-109">On the **File** menu, click **New**, and then click **Row Definition**.</span></span> <span data-ttu-id="dd4b0-110">Aby uzyskać więcej informacji dotyczących zawartości każdej komórki, zobacz [Modyfikowanie komórek definicji wiersza](modify-row-definition-cells-financial-reporting.md).</span><span class="sxs-lookup"><span data-stu-id="dd4b0-110">For more information about the content of each cell, see [Modify row definition cells](modify-row-definition-cells-financial-reporting.md).</span></span>
 
-## <a name="open-a-row-definition"></a>Otwieranie definicji wiersza
-1.  W Projektancie raportów w okienku nawigacji kliknij **Definicje wierszy**.
-2.  Kliknij dwukrotnie nazwę definicji wiersza, którą chcesz otworzyć.
-3.  Aby wyświetlić podstawowe elementy skojarzone z definicja wiersza, kliknij definicję wiersz prawym przyciskiem myszy, a następnie wybierz **Skojarzenia**.
+## <a name="open-a-row-definition"></a><span data-ttu-id="dd4b0-111">Otwieranie definicji wiersza</span><span class="sxs-lookup"><span data-stu-id="dd4b0-111">Open a row definition</span></span>
+1.  <span data-ttu-id="dd4b0-112">W Projektancie raportów w okienku nawigacji kliknij **Definicje wierszy**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-112">In Report Designer, in the navigation pane, click **Row Definitions**.</span></span>
+2.  <span data-ttu-id="dd4b0-113">Kliknij dwukrotnie nazwę definicji wiersza, którą chcesz otworzyć.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-113">Double-click the name of the row definition to open.</span></span>
+3.  <span data-ttu-id="dd4b0-114">Aby wyświetlić podstawowe elementy skojarzone z definicja wiersza, kliknij definicję wiersz prawym przyciskiem myszy, a następnie wybierz **Skojarzenia**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-114">To view any building blocks that are associated with the row definition, right-click the row definition, and then select **Associations**.</span></span>
 
-## <a name="contents-of-a-row-definition"></a> Zawartość definicji wiersza
-Definicja wiersza może zawierać maksymalnie 20 000 wierszy wymiarów finansowych i uwzględniać następujące informacje:
+## <a name="contents-of-a-row-definition"></a><span data-ttu-id="dd4b0-115"> Zawartość definicji wiersza</span><span class="sxs-lookup"><span data-stu-id="dd4b0-115">Contents of a row definition</span></span>
+<span data-ttu-id="dd4b0-116">Definicja wiersza może zawierać maksymalnie 20 000 wierszy wymiarów finansowych i uwzględniać następujące informacje:</span><span class="sxs-lookup"><span data-stu-id="dd4b0-116">A row definition can contain up to 20,000 financial dimension rows and can include the following information:</span></span>
 
--   Opisowy tekst, który dodaje znaczenie do raportu przez utworzenie nagłówków, wierszy i obszarów sekcji, np. **Gotówka** lub **Całkowity przychód**.
--   Łącza do danych finansowych, co może obejmować wartości wymiarów z programu Microsoft Dynamics 365 for Finance and Operations **Uwaga:** Można skonfigurować definicję wiersza, aby były pobierane dane z systemu wymiarów finansowych przy każdym generowaniu raportu.
--   Sumy wierszy i formuły oparte na połączonych danych finansowych.
+-   <span data-ttu-id="dd4b0-117">Opisowy tekst, który dodaje znaczenie do raportu przez utworzenie nagłówków, wierszy i obszarów sekcji, np. **Gotówka** lub **Całkowity przychód**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-117">Descriptive text that adds meaning to the report by creating section headings, lines, and spaces, such as **Cash** or **Total Revenue**</span></span>
+-   <span data-ttu-id="dd4b0-118">Łącza do danych finansowych, co może obejmować wartości wymiarów z programu Microsoft Dynamics 365 for Finance and Operations **Uwaga:** Można skonfigurować definicję wiersza, aby były pobierane dane z systemu wymiarów finansowych przy każdym generowaniu raportu.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-118">Links to financial data, which can include dimension values in the Microsoft Dynamics 365 for Finance and Operations **Note:** You can set up a row definition to pull data from the financial dimensions system every time that the report is generated.</span></span>
+-   <span data-ttu-id="dd4b0-119">Sumy wierszy i formuły oparte na połączonych danych finansowych.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-119">Row totals and formulas that are based on the linked financial data</span></span>
 
-Zazwyczaj każdy wiersz w definicji wiersza zawiera jeden z następujących typów informacji:
+<span data-ttu-id="dd4b0-120">Zazwyczaj każdy wiersz w definicji wiersza zawiera jeden z następujących typów informacji:</span><span class="sxs-lookup"><span data-stu-id="dd4b0-120">Usually, each row in a row definition contains one of the following types of information:</span></span>
 
--   Odwołania do systemu wymiarów finansowych.
--   Sumy lub obliczenia oparte na danych.
--   Formatowanie
+-   <span data-ttu-id="dd4b0-121">Odwołania do systemu wymiarów finansowych.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-121">References to the financial dimensions system</span></span>
+-   <span data-ttu-id="dd4b0-122">Sumy lub obliczenia oparte na danych.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-122">Totals or calculations that are based on the data</span></span>
+-   <span data-ttu-id="dd4b0-123">Formatowanie</span><span class="sxs-lookup"><span data-stu-id="dd4b0-123">Formatting</span></span>
 
-Istnieją dwie metody wprowadzania danych w definicji wiersza:
+<span data-ttu-id="dd4b0-124">Istnieją dwie metody wprowadzania danych w definicji wiersza:</span><span class="sxs-lookup"><span data-stu-id="dd4b0-124">There are two methods for entering information in a row definition:</span></span>
 
--   Ręczne wprowadzanie danych wiersza w nowej definicji wiersza. Aby uzyskać więcej informacji, zobacz [Modyfikowanie komórek definicji wiersza](modify-row-definition-cells-financial-reporting.md).
--   Używanie Projektanta raportów do pobierania danych wiersza bezpośrednio z wymiarów finansowych. Aby uzyskać więcej informacji, zobacz sekcję „Powiązane formuły/wiersze/jednostki” w artykule [Modyfikowanie komórek definicji wiersza](modify-row-definition-cells-financial-reporting.md).
+-   <span data-ttu-id="dd4b0-125">Ręczne wprowadzanie danych wiersza w nowej definicji wiersza.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-125">Manually enter row information in a new row definition.</span></span> <span data-ttu-id="dd4b0-126">Aby uzyskać więcej informacji, zobacz [Modyfikowanie komórek definicji wiersza](modify-row-definition-cells-financial-reporting.md).</span><span class="sxs-lookup"><span data-stu-id="dd4b0-126">For more information, see [Modify row definition cells](modify-row-definition-cells-financial-reporting.md).</span></span>
+-   <span data-ttu-id="dd4b0-127">Używanie Projektanta raportów do pobierania danych wiersza bezpośrednio z wymiarów finansowych.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-127">Use report designer to pull row information directly from the financial dimensions.</span></span> <span data-ttu-id="dd4b0-128">Aby uzyskać więcej informacji, zobacz sekcję „Powiązane formuły/wiersze/jednostki” w artykule [Modyfikowanie komórek definicji wiersza](modify-row-definition-cells-financial-reporting.md).</span><span class="sxs-lookup"><span data-stu-id="dd4b0-128">For more information, see the "Related formulas/rows/units" section in [Modify row definition cells](modify-row-definition-cells-financial-reporting.md).</span></span>
 
-## <a name="add-dimensions-in-a-row-definition"></a> Dodawanie wymiarów w definicji wiersza
-Wymiar jest częścią wspólną danych i wartości. W projektancie raportów można grupować dane i wartości. Następnie można klasyfikować i analizować transakcje bardziej szczegółowo. Można użyć okna dialogowego **Wstaw wiersze z wymiarów**, aby dodawać wiersze do definicji wiersza w tym samym czasie. To okno dialogowe wyświetla jedną kolumnę dla każdego wymiaru. W poniższej tabeli opisano informacje, które można podać dla każdego wymiaru.
+## <a name="add-dimensions-in-a-row-definition"></a><span data-ttu-id="dd4b0-129"> Dodawanie wymiarów w definicji wiersza</span><span class="sxs-lookup"><span data-stu-id="dd4b0-129">Add dimensions in a row definition</span></span>
+<span data-ttu-id="dd4b0-130">Wymiar jest częścią wspólną danych i wartości.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-130">A dimension is an intersection of data and values.</span></span> <span data-ttu-id="dd4b0-131">W projektancie raportów można grupować dane i wartości.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-131">You can group data and values in report designer.</span></span> <span data-ttu-id="dd4b0-132">Następnie można klasyfikować i analizować transakcje bardziej szczegółowo.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-132">You can then classify and analyze transactions in more detail.</span></span> <span data-ttu-id="dd4b0-133">Można użyć okna dialogowego **Wstaw wiersze z wymiarów**, aby dodawać wiersze do definicji wiersza w tym samym czasie.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-133">You can use the **Insert Rows from Dimensions** dialog box to add multiple rows to a row definition at the same time.</span></span> <span data-ttu-id="dd4b0-134">To okno dialogowe wyświetla jedną kolumnę dla każdego wymiaru.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-134">The dialog box displays one column for each dimension.</span></span> <span data-ttu-id="dd4b0-135">W poniższej tabeli opisano informacje, które można podać dla każdego wymiaru.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-135">The following table describes the information that you can specify for each dimension.</span></span>
 
-| Opcja                | Opis                                                                                                                                                                                                                                                                      |
+| <span data-ttu-id="dd4b0-136">Opcja</span><span class="sxs-lookup"><span data-stu-id="dd4b0-136">Option</span></span>                | <span data-ttu-id="dd4b0-137">Opis</span><span class="sxs-lookup"><span data-stu-id="dd4b0-137">Description</span></span>                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Wymiar             | Wzorzec określający wymiar, który ma zostać dodany do definicji wiersza. Ten wzorzec zawiera jeden znak & lub znak \# dla każde pozycji w wymiarach. Ogólnie rzecz biorąc używaj wyłącznie znaków & dla wymiaru Konto główne i wyłącznie znaków # dla innych wymiarów. |
-| Początek zakresu wymiaru | Pierwsza wartość tego wymiaru, która ma zostać dodana do definicji wiersza.                                                                                                                                                                                                                 |
-| Koniec zakres wymiaru   | Ostatnia wartość tego wymiaru, która ma zostać dodana do definicji wiersza.                                                                                                                                                                                                                  |
+| <span data-ttu-id="dd4b0-138">Wymiar</span><span class="sxs-lookup"><span data-stu-id="dd4b0-138">Dimension</span></span>             | <span data-ttu-id="dd4b0-139">Wzorzec określający wymiar, który ma zostać dodany do definicji wiersza.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-139">The pattern that identifies the dimension to add to the row definition.</span></span> <span data-ttu-id="dd4b0-140">Ten wzorzec zawiera jeden znak & lub znak \# dla każde pozycji w wymiarach.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-140">This pattern contains one ampersand (&) or number sign (\#) for each position in the dimensions.</span></span> <span data-ttu-id="dd4b0-141">Ogólnie rzecz biorąc używaj wyłącznie znaków & dla wymiaru Konto główne i wyłącznie znaków # dla innych wymiarów.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-141">Generally, use all ampersands for the Main Account dimension and all number signs for other dimensions.</span></span> |
+| <span data-ttu-id="dd4b0-142">Początek zakresu wymiaru</span><span class="sxs-lookup"><span data-stu-id="dd4b0-142">Dimension Range Start</span></span> | <span data-ttu-id="dd4b0-143">Pierwsza wartość tego wymiaru, która ma zostać dodana do definicji wiersza.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-143">The first value for this dimension to add to the row definition.</span></span>                                                                                                                                                                                                                 |
+| <span data-ttu-id="dd4b0-144">Koniec zakres wymiaru</span><span class="sxs-lookup"><span data-stu-id="dd4b0-144">Dimension Range End</span></span>   | <span data-ttu-id="dd4b0-145">Ostatnia wartość tego wymiaru, która ma zostać dodana do definicji wiersza.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-145">The last value for this dimension to add to the row definition.</span></span>                                                                                                                                                                                                                  |
 
-Aby dodać wymiary do definicji wiersza, należy wykonać następujące kroki:
+<span data-ttu-id="dd4b0-146">Aby dodać wymiary do definicji wiersza, należy wykonać następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="dd4b0-146">To add dimensions to a row definition, follow these steps.</span></span>
 
-1.  W Projektancie raportów kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
-2.  W menu **Edycja** kliknij **Wstaw wiersze z wymiarów**.
-3.  W oknie dialogowym **Wstaw wiersze z wymiarów** w wierszu **Wymiary** wybierz komórki dla wymiaru, który ma zostać przeniesiony do definicji wiersza, a następnie kliknij przycisk **Wszystkie &&&**.
-4.  Aby ograniczyć definicję wiersza do określonego zakresu wartości wymiarów, wprowadź początkową wartość wymiaru w komórce **Początek zakresu wymiaru**, a następnie wprowadź końcową wartość wymiaru w komórce **Koniec zakresu wymiaru**. Aby uwzględnić wszystkie wartości dla wybranego wymiaru, pozostaw te komórki puste. **Uwaga:** Symbole wieloznaczne (\* lub ?) w zakresach wymiarów mogą nie zwracać wszystkich żądanych wyników, w zależności od tego, jak baza danych systemu ERP grupuje dane.
-5.  W polu **Początkowy kod wiersza** określ kod wiersza dla pierwszej wartości wymiaru, która ma zostać dodana do definicji wiersza.
-6.  W polu **Przyrost każdego wiersza** określ odstęp między kolejnymi kodami wierszy. Na przykład jeśli kod pierwszego wiersza wynosi 100, a wartość przyrostu wynosi 30, pierwsze nowe wiersze mają kody 100, 130, 160, 190 i 220. Użyj wartość przyrostu, która zapewnia wystarczający odstęp na wstawienie nowych wierszy formatu i formuły.
-7.  Kliknij przycisk **OK** Dla każdej wybranej wartości wymiaru jest dodawany jeden wiersz do definicji wiersza.
+1.  <span data-ttu-id="dd4b0-147">W Projektancie raportów kliknij **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-147">In Report Designer, click **Row Definitions**, and then open the row definition to modify.</span></span>
+2.  <span data-ttu-id="dd4b0-148">W menu **Edycja** kliknij **Wstaw wiersze z wymiarów**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-148">On the **Edit** menu, click **Insert Rows from Dimensions**.</span></span>
+3.  <span data-ttu-id="dd4b0-149">W oknie dialogowym **Wstaw wiersze z wymiarów** w wierszu **Wymiary** wybierz komórki dla wymiaru, który ma zostać przeniesiony do definicji wiersza, a następnie kliknij przycisk **Wszystkie &&&**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-149">In the **Insert Rows from Dimensions** dialog box, in the **Dimensions** row, select the cell for the dimension to transfer to the row definition, and then click **All &&&**.</span></span>
+4.  <span data-ttu-id="dd4b0-150">Aby ograniczyć definicję wiersza do określonego zakresu wartości wymiarów, wprowadź początkową wartość wymiaru w komórce **Początek zakresu wymiaru**, a następnie wprowadź końcową wartość wymiaru w komórce **Koniec zakresu wymiaru**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-150">To limit the row definition to a specific range of dimension values, enter the starting dimension value in the **Dimension Range Start** cell, and then enter the ending dimension value in the **Dimension Range End** cell.</span></span> <span data-ttu-id="dd4b0-151">Aby uwzględnić wszystkie wartości dla wybranego wymiaru, pozostaw te komórki puste.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-151">To include all values for the selected dimension, leave these cells empty.</span></span> <span data-ttu-id="dd4b0-152">**Uwaga:** Symbole wieloznaczne (\* lub ?) w zakresach wymiarów mogą nie zwracać wszystkich żądanych wyników, w zależności od tego, jak baza danych systemu ERP grupuje dane.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-152">**Note:** Wildcard characters (\* or ?) in dimension ranges might not return all the results that you want, depending on how the ERP database collates data.</span></span>
+5.  <span data-ttu-id="dd4b0-153">W polu **Początkowy kod wiersza** określ kod wiersza dla pierwszej wartości wymiaru, która ma zostać dodana do definicji wiersza.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-153">In the **Starting row code** field, specify the row code for the first dimension value to add to the row definition.</span></span>
+6.  <span data-ttu-id="dd4b0-154">W polu **Przyrost każdego wiersza** określ odstęp między kolejnymi kodami wierszy.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-154">In the **Increment each row by** field, specify the gap between consecutive row codes.</span></span> <span data-ttu-id="dd4b0-155">Na przykład jeśli kod pierwszego wiersza wynosi 100, a wartość przyrostu wynosi 30, pierwsze nowe wiersze mają kody 100, 130, 160, 190 i 220.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-155">For example, if the first row code is 100, and the increment value is 30, the first new rows have the codes 100, 130, 160, 190, and 220.</span></span> <span data-ttu-id="dd4b0-156">Użyj wartość przyrostu, która zapewnia wystarczający odstęp na wstawienie nowych wierszy formatu i formuły.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-156">Use an increment value that provides enough space to insert new format and formula rows.</span></span>
+7.  <span data-ttu-id="dd4b0-157">Kliknij przycisk **OK**</span><span class="sxs-lookup"><span data-stu-id="dd4b0-157">Click **OK**.</span></span> <span data-ttu-id="dd4b0-158">Dla każdej wybranej wartości wymiaru jest dodawany jeden wiersz do definicji wiersza.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-158">For each of the selected dimension values, one line is added to the row definition.</span></span>
 
-## <a name="adjust-rounding-in-a-row-definition"></a> Korekta zaokrąglenia w definicji wiersza
-W przypadku bilansu, w którym kwoty są zaokrąglane, sumy mogą się nie bilansować. Ten problem może wystąpić, jeśli na przykład używasz opcji zaokrąglania w raporcie o bilansie, a definicja raportu również określa zaokrąglanie. Aby bilansować kwoty w bilansach, można w definicji wiersza użyć opcji **Korygowanie zaokrągleń**. W definicji raportu na karcie **Ustawienia** można wyłączyć zaokrąglanie lub je zmodyfikować. W poniższej tabeli przedstawiono sposób zaokrąglania kwot: W tej tabeli sumy wierszy 100 i 200 różnią się, gdy zaokrąglanie jest włączone.
+## <a name="adjust-rounding-in-a-row-definition"></a><span data-ttu-id="dd4b0-159"> Korekta zaokrąglenia w definicji wiersza</span><span class="sxs-lookup"><span data-stu-id="dd4b0-159">Adjust rounding in a row definition</span></span>
+<span data-ttu-id="dd4b0-160">W przypadku bilansu, w którym kwoty są zaokrąglane, sumy mogą się nie bilansować.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-160">If you have a balance sheet where the amounts are rounded, the totals might not balance.</span></span> <span data-ttu-id="dd4b0-161">Ten problem może wystąpić, jeśli na przykład używasz opcji zaokrąglania w raporcie o bilansie, a definicja raportu również określa zaokrąglanie.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-161">This issue can occur if, for example, you use the rounding option on a balance sheet report and the report definition also specifies rounding.</span></span> <span data-ttu-id="dd4b0-162">Aby bilansować kwoty w bilansach, można w definicji wiersza użyć opcji **Korygowanie zaokrągleń**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-162">You can use the **Rounding adjustment** option in the row definition to balance the amounts in the balance sheets.</span></span> <span data-ttu-id="dd4b0-163">W definicji raportu na karcie **Ustawienia** można wyłączyć zaokrąglanie lub je zmodyfikować.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-163">You can turn rounding off or modify it on the **Settings** tab of the report definition.</span></span> <span data-ttu-id="dd4b0-164">W poniższej tabeli przedstawiono sposób zaokrąglania kwot:</span><span class="sxs-lookup"><span data-stu-id="dd4b0-164">The following table shows how amounts are rounded.</span></span> <span data-ttu-id="dd4b0-165">W tej tabeli sumy wierszy 100 i 200 różnią się, gdy zaokrąglanie jest włączone.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-165">In this table, the totals of rows 100 and 200 differ when rounding is turned on.</span></span>
 
-| Kod wiersza | Kwoty bez zaokrąglania | Kwota z zaokrąglaniem do całych tysięcy |
+| <span data-ttu-id="dd4b0-166">Kod wiersza</span><span class="sxs-lookup"><span data-stu-id="dd4b0-166">Row code</span></span> | <span data-ttu-id="dd4b0-167">Kwoty bez zaokrąglania</span><span class="sxs-lookup"><span data-stu-id="dd4b0-167">Amounts without rounding</span></span> | <span data-ttu-id="dd4b0-168">Kwota z zaokrąglaniem do całych tysięcy</span><span class="sxs-lookup"><span data-stu-id="dd4b0-168">Amount with rounding to whole thousands</span></span> |
 |----------|--------------------------|-----------------------------------------|
-| 100      | 3600                    | 4                                       |
-| 200      | 3700                    | 4                                       |
-| Suma    | 7300                    | 8                                       |
+| <span data-ttu-id="dd4b0-169">100</span><span class="sxs-lookup"><span data-stu-id="dd4b0-169">100</span></span>      | <span data-ttu-id="dd4b0-170">3600</span><span class="sxs-lookup"><span data-stu-id="dd4b0-170">3,600</span></span>                    | <span data-ttu-id="dd4b0-171">4</span><span class="sxs-lookup"><span data-stu-id="dd4b0-171">4</span></span>                                       |
+| <span data-ttu-id="dd4b0-172">200</span><span class="sxs-lookup"><span data-stu-id="dd4b0-172">200</span></span>      | <span data-ttu-id="dd4b0-173">3700</span><span class="sxs-lookup"><span data-stu-id="dd4b0-173">3,700</span></span>                    | <span data-ttu-id="dd4b0-174">4</span><span class="sxs-lookup"><span data-stu-id="dd4b0-174">4</span></span>                                       |
+| <span data-ttu-id="dd4b0-175">Suma</span><span class="sxs-lookup"><span data-stu-id="dd4b0-175">Total</span></span>    | <span data-ttu-id="dd4b0-176">7300</span><span class="sxs-lookup"><span data-stu-id="dd4b0-176">7,300</span></span>                    | <span data-ttu-id="dd4b0-177">8</span><span class="sxs-lookup"><span data-stu-id="dd4b0-177">8</span></span>                                       |
 
-Aby dostosować zaokrąglenie w bilansie, należy wykonać następujące kroki:
+<span data-ttu-id="dd4b0-178">Aby dostosować zaokrąglenie w bilansie, należy wykonać następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="dd4b0-178">To adjust rounding in a balance sheet, follow these steps.</span></span>
 
-1.  W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
-2.  W menu **Edycja** kliknij **Korekta zaokrąglania**.
-3.  W oknie dialogowym **Korygowanie zaokrągleń** wpisz następujące wartości:
-    -   **Wiersz korekty zaokrąglania** — kod wiersza, który powinien być korygowany w celu zbilansowania bilansu.
-    -   **Wiersz sumy aktywów** — kod wiersza dla wierszy w bilansie, który zawiera sumy aktywów.
-    -   **Wiersz sumy zobowiązań i kapitału własnego** — kod wiersza dla wierszy w bilansie, który zawiera sumy zobowiązań i kapitału własnego.
-    -   **Limit kwoty korekty** — dodatnia liczba całkowita określająca limit dla automatycznych korekt. Ta kwota jest porównywana z wartością bezwzględną rzeczywistej różnicy zaokrągleń.
+1.  <span data-ttu-id="dd4b0-179">W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-179">In Report Designer, click **Row Definitions**, and then open the row definition to modify.</span></span>
+2.  <span data-ttu-id="dd4b0-180">W menu **Edycja** kliknij **Korekta zaokrąglania**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-180">On the **Edit** menu, click **Rounding Adjustment**.</span></span>
+3.  <span data-ttu-id="dd4b0-181">W oknie dialogowym **Korygowanie zaokrągleń** wpisz następujące wartości:</span><span class="sxs-lookup"><span data-stu-id="dd4b0-181">In the **Rounding Adjustments** dialog box, enter the following values:</span></span>
+    -   <span data-ttu-id="dd4b0-182">**Wiersz korekty zaokrąglania** — kod wiersza, który powinien być korygowany w celu zbilansowania bilansu.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-182">**Rounding adjustment row** – The row code for the row that should be adjusted to balance the balance sheet.</span></span>
+    -   <span data-ttu-id="dd4b0-183">**Wiersz sumy aktywów** — kod wiersza dla wierszy w bilansie, który zawiera sumy aktywów.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-183">**Total assets row** – The row code for the row in the balance sheet that contains the total assets.</span></span>
+    -   <span data-ttu-id="dd4b0-184">**Wiersz sumy zobowiązań i kapitału własnego** — kod wiersza dla wierszy w bilansie, który zawiera sumy zobowiązań i kapitału własnego.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-184">**Total liabilities and equity row** – The row code for the row in the balance sheet that contains the total liabilities and equity.</span></span>
+    -   <span data-ttu-id="dd4b0-185">**Limit kwoty korekty** — dodatnia liczba całkowita określająca limit dla automatycznych korekt.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-185">**Adjustment amount limit** – A positive whole number that specifies the limit on automatic adjustments.</span></span> <span data-ttu-id="dd4b0-186">Ta kwota jest porównywana z wartością bezwzględną rzeczywistej różnicy zaokrągleń.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-186">This amount is compared with the absolute value of the actual rounding difference.</span></span>
 
-    **Uwaga:** te kody wiersza muszą być połączone z danymi finansowymi. Innymi słowy, wiersz musi mieć wartość wymiaru w jego komórce **Łącze do wymiarów finansowych**. **Nie** należy używać odwołania do wiersza opisu (**DESC**), obliczenia (**CALC**) ani sumy (**TOT**).
+    <span data-ttu-id="dd4b0-187">**Uwaga:** te kody wiersza muszą być połączone z danymi finansowymi.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-187">**Note:** These row codes must be linked to your financial data.</span></span> <span data-ttu-id="dd4b0-188">Innymi słowy, wiersz musi mieć wartość wymiaru w jego komórce **Łącze do wymiarów finansowych**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-188">In other words, the row must have a dimension value in its **Link to Financial Dimensions** cell.</span></span> <span data-ttu-id="dd4b0-189">**Nie** należy używać odwołania do wiersza opisu (**DESC**), obliczenia (**CALC**) ani sumy (**TOT**).</span><span class="sxs-lookup"><span data-stu-id="dd4b0-189">Do **not** reference a description (**DESC**), calculated (**CALC**), or totaled (**TOT**) row.</span></span>
 
-Kwoty w bilansie będą teraz bilansowane równomiernie, gdy jest włączone zaokrąglanie. **Uwaga:** limit korekty jest stosowany na podstawie opcji **Dokładność zaokrąglania** określonej dla definicji raportu. Na przykład zaokrąglanie raportu do tysięcy i wprowadzenie wartości **2** w polu **Limit kwoty korekty** spowoduje wyświetlanie komunikatu ostrzegawczego, gdy wartość określona w polu **Wiersz korekty zaokrąglania** zwiększy się lub zmniejszy o ponad 2000.
+<span data-ttu-id="dd4b0-190">Kwoty w bilansie będą teraz bilansowane równomiernie, gdy jest włączone zaokrąglanie.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-190">The amounts in your balance sheet will now balance evenly when rounding is turned on.</span></span> <span data-ttu-id="dd4b0-191">**Uwaga:** limit korekty jest stosowany na podstawie opcji **Dokładność zaokrąglania** określonej dla definicji raportu.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-191">**Note:** The adjustment limit is applied based on the **Rounding precision** option that is specified for the report definition.</span></span> <span data-ttu-id="dd4b0-192">Na przykład zaokrąglanie raportu do tysięcy i wprowadzenie wartości **2** w polu **Limit kwoty korekty** spowoduje wyświetlanie komunikatu ostrzegawczego, gdy wartość określona w polu **Wiersz korekty zaokrąglania** zwiększy się lub zmniejszy o ponad 2000.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-192">For example, if you round your report to thousands and enter **2** in the **Adjustment amount limit** field, you receive a warning message when the value in the **Rounding adjustment row** field increases or decreases by more than 2,000.</span></span>
 
-## <a name="format-row-and-column-text"></a>Formatowanie tekstu wiersza i kolumny
-Można dostosować wygląd raportów, zmieniając czcionki i formatując tekst. Poniższe sekcje zawierają wyjaśnienia dotyczące formatowania wyglądu wierszy i kolumn w raportach.
+## <a name="format-row-and-column-text"></a><span data-ttu-id="dd4b0-193">Formatowanie tekstu wiersza i kolumny</span><span class="sxs-lookup"><span data-stu-id="dd4b0-193">Format row and column text</span></span>
+<span data-ttu-id="dd4b0-194">Można dostosować wygląd raportów, zmieniając czcionki i formatując tekst.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-194">You can customize the appearance of your reports by changing fonts and formatting text.</span></span> <span data-ttu-id="dd4b0-195">Poniższe sekcje zawierają wyjaśnienia dotyczące formatowania wyglądu wierszy i kolumn w raportach.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-195">The following sections explain how to format the appearance of rows and columns on reports.</span></span>
 
-### <a name="manage-font-styles"></a>Zarządzanie stylami czcionek
+### <a name="manage-font-styles"></a><span data-ttu-id="dd4b0-196">Zarządzanie stylami czcionek</span><span class="sxs-lookup"><span data-stu-id="dd4b0-196">Manage font styles</span></span>
 
-Można tworzyć i modyfikować style czcionek dla raportu. Następnie można zastosować te style do dokumentu albo do określonego wiersza lub kolumny w raporcie.
+<span data-ttu-id="dd4b0-197">Można tworzyć i modyfikować style czcionek dla raportu.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-197">You can create and modify font styles for your report.</span></span> <span data-ttu-id="dd4b0-198">Następnie można zastosować te style do dokumentu albo do określonego wiersza lub kolumny w raporcie.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-198">You can then apply those styles to the document, or to a specific row or column on a report.</span></span>
 
 <table>
 <colgroup>
@@ -118,65 +118,65 @@ Można tworzyć i modyfikować style czcionek dla raportu. Następnie można zas
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>Tworzenie stylu czcionki</td>
+<td><span data-ttu-id="dd4b0-199">Tworzenie stylu czcionki</span><span class="sxs-lookup"><span data-stu-id="dd4b0-199">Create a font style</span></span></td>
 <td><ol>
-<li>W Projektancie raportów w menu <strong>Format</strong> kliknij <strong>Style i formatowanie</strong>.</li>
-<li>W oknie dialogowym <strong>Style i formatowanie</strong> kliknij przycisk <strong>Nowy</strong>, a następnie nadaj unikatową nazwę nowemu stylowi.</li>
-<li>Wybierz czcionki i kliknij <strong>OK</strong>.</li>
+<li><span data-ttu-id="dd4b0-200">W Projektancie raportów w menu <strong>Format</strong> kliknij <strong>Style i formatowanie</strong>.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-200">In Report Designer, on the <strong>Format</strong> menu, click <strong>Styles and Formatting</strong>.</span></span></li>
+<li><span data-ttu-id="dd4b0-201">W oknie dialogowym <strong>Style i formatowanie</strong> kliknij przycisk <strong>Nowy</strong>, a następnie nadaj unikatową nazwę nowemu stylowi.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-201">In the <strong>Styles and Formatting</strong> dialog box, click <strong>New</strong>, and then enter a unique name for the new style.</span></span></li>
+<li><span data-ttu-id="dd4b0-202">Wybierz czcionki i kliknij <strong>OK</strong>.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-202">Make your font selections, and then click <strong>OK</strong>.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Modyfikowanie stylu czcionki</td>
+<td><span data-ttu-id="dd4b0-203">Modyfikowanie stylu czcionki</span><span class="sxs-lookup"><span data-stu-id="dd4b0-203">Modify a font style</span></span></td>
 <td><ol>
-<li>W Projektancie raportów w menu <strong>Format</strong> kliknij <strong>Style i formatowanie</strong>.</li>
-<li>W oknie dialogowym <strong>Style i formatowanie</strong> wybierz styl, który chcesz zmodyfikować, a następnie kliknij przycisk <strong>Modyfikuj</strong>.</li>
-<li>Wybierz czcionki i kliknij <strong>OK</strong>.</li>
+<li><span data-ttu-id="dd4b0-204">W Projektancie raportów w menu <strong>Format</strong> kliknij <strong>Style i formatowanie</strong>.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-204">In Report Designer, on the <strong>Format</strong> menu, click <strong>Styles and Formatting</strong>.</span></span></li>
+<li><span data-ttu-id="dd4b0-205">W oknie dialogowym <strong>Style i formatowanie</strong> wybierz styl, który chcesz zmodyfikować, a następnie kliknij przycisk <strong>Modyfikuj</strong>.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-205">In the <strong>Styles and Formatting</strong> dialog box, select a style to modify, and then click <strong>Modify</strong>.</span></span></li>
+<li><span data-ttu-id="dd4b0-206">Wybierz czcionki i kliknij <strong>OK</strong>.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-206">Make your font selections, and then click <strong>OK</strong>.</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Stosowanie stylu czcionki</td>
+<td><span data-ttu-id="dd4b0-207">Stosowanie stylu czcionki</span><span class="sxs-lookup"><span data-stu-id="dd4b0-207">Apply a font style</span></span></td>
 <td><ol>
-<li>W Projektancie raportów, w definicji lub definicji kolumny albo w nagłówkach i stopkach, wybierz jedną lub więcej komórek.</li>
-<li>Na liście <strong>Styl</strong> na pasku narzędzi, wybierz styl czcionki.</li>
+<li><span data-ttu-id="dd4b0-208">W Projektancie raportów, w definicji lub definicji kolumny albo w nagłówkach i stopkach, wybierz jedną lub więcej komórek.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-208">In Report Designer, in a definition or column definition, or in headers and footers, select one or more cells.</span></span></li>
+<li><span data-ttu-id="dd4b0-209">Na liście <strong>Styl</strong> na pasku narzędzi, wybierz styl czcionki.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-209">In the <strong>Style</strong> list on the toolbar, select a font style.</span></span></li>
 </ol></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="format-row-text"></a>Formatowanie tekstu wiersza
+### <a name="format-row-text"></a><span data-ttu-id="dd4b0-210">Formatowanie tekstu wiersza</span><span class="sxs-lookup"><span data-stu-id="dd4b0-210">Format row text</span></span>
 
-Formatowanie określone w definicji wiersza zastępuje wszelkie formatowanie określone w definicji kolumny oraz w definicji raportu. Format tekstu można zmodyfikować za pomocą formantów na pasku narzędzi formatowania. Te opcje są standardowymi opcjami systemu Microsoft Windows.
+<span data-ttu-id="dd4b0-211">Formatowanie określone w definicji wiersza zastępuje wszelkie formatowanie określone w definicji kolumny oraz w definicji raportu.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-211">The formatting that is specified in the row definition overrides any formatting that is specified in the column definition and the report definition.</span></span> <span data-ttu-id="dd4b0-212">Format tekstu można zmodyfikować za pomocą formantów na pasku narzędzi formatowania.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-212">You can modify the text format by using the controls on the formatting toolbar.</span></span> <span data-ttu-id="dd4b0-213">Te opcje są standardowymi opcjami systemu Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-213">These controls are standard Microsoft Windows controls.</span></span>
 
-1.  W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
-2.  Zaznacz komórki do formatowania. Aby wybrać wiele komórek, przytrzymaj klawisz Ctrl i zaznaczaj kolejne komórki.
-3.  Kliknij przycisk na pasku narzędzi dla formatu, który chcesz zastosować. Na przykład aby zwiększyć wcięcie wiersza, zaznacz wiersz, a następnie na pasku narzędzi kliknij przycisk **Zwiększ wcięcie** ![Zwiększ wcięcie](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Zwiększ wcięcie").
+1.  <span data-ttu-id="dd4b0-214">W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-214">In Report Designer, open the row definition to modify.</span></span>
+2.  <span data-ttu-id="dd4b0-215">Zaznacz komórki do formatowania.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-215">Select the cells to format.</span></span> <span data-ttu-id="dd4b0-216">Aby wybrać wiele komórek, przytrzymaj klawisz Ctrl i zaznaczaj kolejne komórki.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-216">To select multiple cells, hold down the Ctrl key while you select the cell.</span></span>
+3.  <span data-ttu-id="dd4b0-217">Kliknij przycisk na pasku narzędzi dla formatu, który chcesz zastosować.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-217">Click the toolbar button of the format to apply.</span></span> <span data-ttu-id="dd4b0-218">Na przykład aby zwiększyć wcięcie wiersza, zaznacz wiersz, a następnie na pasku narzędzi kliknij przycisk **Zwiększ wcięcie** ![Zwiększ wcięcie](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Zwiększ wcięcie").</span><span class="sxs-lookup"><span data-stu-id="dd4b0-218">For example, to indent a row, select the row, and then click **Increase Indent** ![Increase Indent](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Increase Indent") on the toolbar.</span></span>
 
-### <a name="adjust-columns-while-you-design-reports"></a>Dostosowywanie kolumn podczas projektowania raportów
+### <a name="adjust-columns-while-you-design-reports"></a><span data-ttu-id="dd4b0-219">Dostosowywanie kolumn podczas projektowania raportów</span><span class="sxs-lookup"><span data-stu-id="dd4b0-219">Adjust columns while you design reports</span></span>
 
-Aby ułatwić wyświetlanie kolumn, nad którymi pracujesz w definicji wiersza, można dopasować szerokość kolumny oraz ukryć (zminimalizować) lub pokazać kolumny w okienku widoku. Wprowadzane modyfikacje wpływają tylko na wygląd kolumn na ekranie. Nie wpływają na formatowanie kolumn w raportach.
+<span data-ttu-id="dd4b0-220">Aby ułatwić wyświetlanie kolumn, nad którymi pracujesz w definicji wiersza, można dopasować szerokość kolumny oraz ukryć (zminimalizować) lub pokazać kolumny w okienku widoku.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-220">To make it easier to view the columns that you're working on in the row definition, you can adjust the width of a column, and can also hide (minimize) or show columns in the view pane.</span></span> <span data-ttu-id="dd4b0-221">Wprowadzane modyfikacje wpływają tylko na wygląd kolumn na ekranie.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-221">The modifications that you make affect only the on-screen appearance of the columns.</span></span> <span data-ttu-id="dd4b0-222">Nie wpływają na formatowanie kolumn w raportach.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-222">They don't affect the column formatting on reports.</span></span>
 
-### <a name="change-the-width-of-a-column-in-the-view-pane"></a>Zmienianie szerokości kolumny w okienku widoku
+### <a name="change-the-width-of-a-column-in-the-view-pane"></a><span data-ttu-id="dd4b0-223">Zmienianie szerokości kolumny w okienku widoku</span><span class="sxs-lookup"><span data-stu-id="dd4b0-223">Change the width of a column in the view pane</span></span>
 
-1.  W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
-2.  W menu **Format** wybierz **Szerokość kolumny**.
-3.  W oknie dialogowym **Szerokość kolumny** wprowadź wartość, a następnie kliknij przycisk **OK**. Alternatywnie można przeciągać prawą granicę komórki nagłówka kolumny, aby zmienić szerokość kolumny.
+1.  <span data-ttu-id="dd4b0-224">W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-224">In Report Designer, open the row definition to modify.</span></span>
+2.  <span data-ttu-id="dd4b0-225">W menu **Format** wybierz **Szerokość kolumny**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-225">On the **Format** menu, select **Column Width**.</span></span>
+3.  <span data-ttu-id="dd4b0-226">W oknie dialogowym **Szerokość kolumny** wprowadź wartość, a następnie kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-226">In the **Column Width** dialog box, enter a value, and then click **OK**.</span></span> <span data-ttu-id="dd4b0-227">Alternatywnie można przeciągać prawą granicę komórki nagłówka kolumny, aby zmienić szerokość kolumny.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-227">Alternatively, you can drag the right boundary of a column heading cell to change the width of the column.</span></span>
 
-### <a name="hide-columns-in-the-view-pane"></a>Ukrywanie kolumn w okienku widoku
+### <a name="hide-columns-in-the-view-pane"></a><span data-ttu-id="dd4b0-228">Ukrywanie kolumn w okienku widoku</span><span class="sxs-lookup"><span data-stu-id="dd4b0-228">Hide columns in the view pane</span></span>
 
-1.  W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
-2.  Zaznacz kolumnę lub kolumny, które chcesz zminimalizować.
-3.  Kliknij prawym przyciskiem myszy, a następnie kliknij **Ukryj**.
+1.  <span data-ttu-id="dd4b0-229">W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-229">In Report Designer, open the row definition to modify.</span></span>
+2.  <span data-ttu-id="dd4b0-230">Zaznacz kolumnę lub kolumny, które chcesz zminimalizować.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-230">Select the column or columns to minimize.</span></span>
+3.  <span data-ttu-id="dd4b0-231">Kliknij prawym przyciskiem myszy, a następnie kliknij **Ukryj**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-231">Right-click, and then click **Hide**.</span></span>
 
-### <a name="show-all-hidden-columns-in-the-view-pane"></a>Pokazywanie wszystkich ukrytych kolumn w okienku widoku
+### <a name="show-all-hidden-columns-in-the-view-pane"></a><span data-ttu-id="dd4b0-232">Pokazywanie wszystkich ukrytych kolumn w okienku widoku</span><span class="sxs-lookup"><span data-stu-id="dd4b0-232">Show all hidden columns in the view pane</span></span>
 
-1.  W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
-2.  Kliknij prawym przyciskiem myszy zminimalizowaną kolumnę, którą chcesz wyświetlać, a następnie kliknij **Odkryj**.
+1.  <span data-ttu-id="dd4b0-233">W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-233">In Report Designer, open the row definition to modify.</span></span>
+2.  <span data-ttu-id="dd4b0-234">Kliknij prawym przyciskiem myszy zminimalizowaną kolumnę, którą chcesz wyświetlać, a następnie kliknij **Odkryj**.</span><span class="sxs-lookup"><span data-stu-id="dd4b0-234">Right-click the minimized column to display, and then click **Unhide**.</span></span>
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="see-also"></a><span data-ttu-id="dd4b0-235">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="dd4b0-235">See also</span></span>
 --------
 
-[Raporty finansowe](financial-reporting-intro.md)
+[<span data-ttu-id="dd4b0-236">Raporty finansowe</span><span class="sxs-lookup"><span data-stu-id="dd4b0-236">Financial reporting</span></span>](financial-reporting-intro.md)
 
 
 

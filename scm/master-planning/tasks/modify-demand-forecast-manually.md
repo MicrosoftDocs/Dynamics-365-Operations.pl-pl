@@ -16,34 +16,34 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 26f667f51efd30bcc86242fce79226d356d99847
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2e269ef7b33b4d7e171d284d68d28c825c2fe86c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="modify-a-demand-forecast-manually"></a>Ręczne modyfikowanie prognozy popytu
+# <a name="modify-a-demand-forecast-manually"></a><span data-ttu-id="3b3aa-103">Ręczne modyfikowanie prognozy popytu</span><span class="sxs-lookup"><span data-stu-id="3b3aa-103">Modify a demand forecast manually</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób modyfikowania prognozy dla towaru. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. To nagranie jest przeznaczone dla planisty produkcji. 
+<span data-ttu-id="3b3aa-104">W tej procedurze pokazano sposób modyfikowania prognozy dla towaru.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-104">This procedure shows how to modify the forecast for an item.</span></span> <span data-ttu-id="3b3aa-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="3b3aa-106">To nagranie jest przeznaczone dla planisty produkcji.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-106">This recording is intended for the production planner.</span></span> 
 
 
-## <a name="modify-the-forecast-for-an-item"></a>Modyfikowanie prognozy na towar
-1. Przejdź do Zarządzanie informacjami o produktach > Produkty > Zwolnione produkty.
-2. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Wybierz towar, dla którego chcesz zmodyfikować prognozę. Można na przykład wybrać towar D0001.  
-3. W okienku akcji kliknij opcję Plan.
-4. Kliknij opcję Prognoza popytu.
-5. Na liście oznacz wybrany wiersz.
-    * Jeśli nie ma żadnych wierszy prognozy, należy utworzyć nowy wiersz przez kliknięcie przycisku Nowy na pasku aplikacji.  
-6. W polu Ilość sprzedaży wprowadź liczbę.
-    * Ta liczba reprezentuje prognozowaną ilość towaru.  
-7. Kliknij przycisk Zapisz.
+## <a name="modify-the-forecast-for-an-item"></a><span data-ttu-id="3b3aa-107">Modyfikowanie prognozy na towar</span><span class="sxs-lookup"><span data-stu-id="3b3aa-107">Modify the forecast for an item</span></span>
+1. <span data-ttu-id="3b3aa-108">Przejdź do Zarządzanie informacjami o produktach > Produkty > Zwolnione produkty.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-108">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="3b3aa-109">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-109">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="3b3aa-110">Wybierz towar, dla którego chcesz zmodyfikować prognozę.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-110">Select the item for which you want to modify the forecast.</span></span> <span data-ttu-id="3b3aa-111">Można na przykład wybrać towar D0001.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-111">For example, you can select item D0001.</span></span>  
+3. <span data-ttu-id="3b3aa-112">W okienku akcji kliknij opcję Plan.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-112">On the Action Pane, click Plan.</span></span>
+4. <span data-ttu-id="3b3aa-113">Kliknij opcję Prognoza popytu.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-113">Click Demand forecast.</span></span>
+5. <span data-ttu-id="3b3aa-114">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-114">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="3b3aa-115">Jeśli nie ma żadnych wierszy prognozy, należy utworzyć nowy wiersz przez</span><span class="sxs-lookup"><span data-stu-id="3b3aa-115">If there are no forecast lines, create a new line by  .</span></span> <span data-ttu-id="3b3aa-116">kliknięcie przycisku Nowy na pasku aplikacji.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-116">clicking New on the app bar.</span></span>  
+6. <span data-ttu-id="3b3aa-117">W polu Ilość sprzedaży wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-117">In the Sales quantity field, enter a number.</span></span>
+    * <span data-ttu-id="3b3aa-118">Ta liczba reprezentuje prognozowaną ilość towaru.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-118">This number represents the forecasted quantity for the item.</span></span>  
+7. <span data-ttu-id="3b3aa-119">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-119">Click Save.</span></span>
 
-## <a name="modify-the-forecast-in-excel"></a>Modyfikowanie prognozy w programie Excel
-1. Kliknij opcję Otwórz w pakiecie Microsoft Office.
-2. Kliknij opcję Edytuj prognozę popytu w programie Excel.
-    * W programie Excel można dodawać, usuwać i edytować wiersze prognozy popytu. Jeśli nie widzisz danych w programie Excel, musisz się zalogować do programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z włączoną opcją „Nie wylogowuj mnie” i zaufać aplikacji połączenia danych.  
+## <a name="modify-the-forecast-in-excel"></a><span data-ttu-id="3b3aa-120">Modyfikowanie prognozy w programie Excel</span><span class="sxs-lookup"><span data-stu-id="3b3aa-120">Modify the forecast in Excel</span></span>
+1. <span data-ttu-id="3b3aa-121">Kliknij opcję Otwórz w pakiecie Microsoft Office.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-121">Click Open in Microsoft Office.</span></span>
+2. <span data-ttu-id="3b3aa-122">Kliknij opcję Edytuj prognozę popytu w programie Excel.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-122">Click Edit Demand forecast in Excel.</span></span>
+    * <span data-ttu-id="3b3aa-123">W programie Excel można dodawać, usuwać i edytować wiersze prognozy popytu.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-123">In Excel, you can add, delete and edit demand forecast lines.</span></span> <span data-ttu-id="3b3aa-124">Jeśli nie widzisz danych w programie Excel, musisz się zalogować do programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z włączoną opcją „Nie wylogowuj mnie” i zaufać aplikacji połączenia danych.</span><span class="sxs-lookup"><span data-stu-id="3b3aa-124">If you are not able to see the data in Excel, you need to sign in to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with the "Keep me signed in" option enabled and you need to trust the data connection app.</span></span>  
 
 

@@ -17,44 +17,44 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 2f85c124957d2f47355544442ad8085e8b3719a1
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2705008908699bda9479eb54a4827c71f402b603
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-associate-a-hardware-station"></a>Tworzenie i kojarzenie stacji sprzętowej
+# <a name="create-and-associate-a-hardware-station"></a><span data-ttu-id="1d4a8-103">Tworzenie i kojarzenie stacji sprzętowej</span><span class="sxs-lookup"><span data-stu-id="1d4a8-103">Create and associate a hardware station</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ta procedura zawiera instruktaż tworzenia nowej stacji sprzętowej. Nowy profil sprzętu zostanie utworzony i użyty w celu dodania nowych stacji sprzętowych do wstępnie zdefiniowanego sklepu (kanału). Procedura wykorzystuje dane firmy demonstracyjnej USRT.
+<span data-ttu-id="1d4a8-104">Ta procedura zawiera instruktaż tworzenia nowej stacji sprzętowej.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-104">This procedure walks through how to create a new hardware station.</span></span> <span data-ttu-id="1d4a8-105">Nowy profil sprzętu zostanie utworzony i użyty w celu dodania nowych stacji sprzętowych do wstępnie zdefiniowanego sklepu (kanału).</span><span class="sxs-lookup"><span data-stu-id="1d4a8-105">A new hardware profile will be created and used to add new hardware stations to a pre-defined store (channel).</span></span> <span data-ttu-id="1d4a8-106">Procedura wykorzystuje dane firmy demonstracyjnej USRT.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-106">This procedure uses the USRT company in demo data.</span></span>
 
-1. Wybierz kolejno opcje Podstawowe funkcje handlowe > Kanały > .. > .. > .. > Profile stacji sprzętowych.
-2. Kliknij przycisk Nowy.
-3. W polu Identyfikator stacji sprzętowej wpisz „TestHWProfile”.
-4. W polu Nazwa wpisz wartość.
-5. W polu Numer portu wprowadź liczbę.
-6. W polu Profil sprzętu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-7. Na liście znajdź i zaznacz odpowiedni rekord.
-8. Na liście kliknij łącze w wybranym wierszu.
-9. W polu Nazwa pakietu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-10. Na liście kliknij łącze w wybranym wierszu.
-    * Jest to standardowy pakiet towarzyszący nowemu środowisku. Numer wersji może się różnić.  
-11. Kliknij przycisk Zapisz.
-12. Zamknij stronę.
-13. Wybierz kolejno opcje Handel detaliczny i inny > Kanały > Wszystkie sklepy sieci sprzedaży.
-14. Na liście zaznacz wiersz 17.
-    * Jeśli używasz danych firmy demonstracyjnej USRT, jest to sklep w Houston.  
-15. Na liście kliknij łącze w wybranym wierszu.
-16. Przełącz rozwinięcie sekcji Stacje sprzętowe.
-17. Kliknij przycisk Dodaj.
-18. Na liście oznacz wybrany wiersz.
-19. W polu Identyfikator profilu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-20. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Musi to być nowy profil stacji sprzętowej, który został utworzony w poprzednich krokach.  
-21. Na liście kliknij łącze w wybranym wierszu.
-22. W polu Nazwa hosta wpisz wartość.
-23. W polu Identyfikator terminalu EFT wpisz wartość.
-24. Kliknij przycisk Zapisz.
+1. <span data-ttu-id="1d4a8-107">Wybierz kolejno opcje Podstawowe funkcje handlowe > Kanały > ..</span><span class="sxs-lookup"><span data-stu-id="1d4a8-107">Go to Commerce essentials > Channels > ..</span></span> <span data-ttu-id="1d4a8-108">> ..</span><span class="sxs-lookup"><span data-stu-id="1d4a8-108">> ..</span></span> <span data-ttu-id="1d4a8-109">> ..</span><span class="sxs-lookup"><span data-stu-id="1d4a8-109">> ..</span></span> <span data-ttu-id="1d4a8-110">> Profile stacji sprzętowych.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-110">> Hardware station profiles.</span></span>
+2. <span data-ttu-id="1d4a8-111">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-111">Click New.</span></span>
+3. <span data-ttu-id="1d4a8-112">W polu Identyfikator stacji sprzętowej wpisz „TestHWProfile”.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-112">In the Hardware station ID field, type 'TestHWProfile'.</span></span>
+4. <span data-ttu-id="1d4a8-113">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="1d4a8-114">W polu Numer portu wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-114">In the Port number field, enter a number.</span></span>
+6. <span data-ttu-id="1d4a8-115">W polu Profil sprzętu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-115">In the Hardware profile field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="1d4a8-116">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-116">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="1d4a8-117">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="1d4a8-118">W polu Nazwa pakietu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-118">In the Package name field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="1d4a8-119">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-119">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="1d4a8-120">Jest to standardowy pakiet towarzyszący nowemu środowisku.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-120">This is the standard package that comes with a new environment.</span></span> <span data-ttu-id="1d4a8-121">Numer wersji może się różnić.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-121">The version number may vary.</span></span>  
+11. <span data-ttu-id="1d4a8-122">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-122">Click Save.</span></span>
+12. <span data-ttu-id="1d4a8-123">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-123">Close the page.</span></span>
+13. <span data-ttu-id="1d4a8-124">Wybierz kolejno opcje Handel detaliczny i inny > Kanały > Wszystkie sklepy sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-124">Go to Retail and commerce > Channels > All retail stores.</span></span>
+14. <span data-ttu-id="1d4a8-125">Na liście zaznacz wiersz 17.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-125">In the list, select row 17.</span></span>
+    * <span data-ttu-id="1d4a8-126">Jeśli używasz danych firmy demonstracyjnej USRT, jest to sklep w Houston.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-126">If you are using the USRT demo data company, this is the Houston store.</span></span>  
+15. <span data-ttu-id="1d4a8-127">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-127">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="1d4a8-128">Przełącz rozwinięcie sekcji Stacje sprzętowe.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-128">Toggle the expansion of the Hardware stations section.</span></span>
+17. <span data-ttu-id="1d4a8-129">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-129">Click Add.</span></span>
+18. <span data-ttu-id="1d4a8-130">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-130">In the list, mark the selected row.</span></span>
+19. <span data-ttu-id="1d4a8-131">W polu Identyfikator profilu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-131">In the Profile ID field, click the drop-down button to open the lookup.</span></span>
+20. <span data-ttu-id="1d4a8-132">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-132">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="1d4a8-133">Musi to być nowy profil stacji sprzętowej, który został utworzony w poprzednich krokach.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-133">This must be the new hardware station profile that was created in the previous steps.</span></span>  
+21. <span data-ttu-id="1d4a8-134">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-134">In the list, click the link in the selected row.</span></span>
+22. <span data-ttu-id="1d4a8-135">W polu Nazwa hosta wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-135">In the Host name field, type a value.</span></span>
+23. <span data-ttu-id="1d4a8-136">W polu Identyfikator terminalu EFT wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-136">In the EFT terminal ID field, type a value.</span></span>
+24. <span data-ttu-id="1d4a8-137">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-137">Click Save.</span></span>
 
 

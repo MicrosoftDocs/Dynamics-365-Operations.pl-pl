@@ -16,63 +16,63 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 6250fb309417c938d829e08b73343ece9de7b1a1
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b9897b1184e8159b20a45d4cedbba56baef31a3c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-procurement-category-hierarchy"></a>Ustawianie hierarchii kategorii zaopatrzenia
+# <a name="set-up-a-procurement-category-hierarchy"></a><span data-ttu-id="e7915-103">Ustawianie hierarchii kategorii zaopatrzenia</span><span class="sxs-lookup"><span data-stu-id="e7915-103">Set up a procurement category hierarchy</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano, jak utworzyć nowe węzły w hierarchii kategorii zaopatrzenia oraz jak skonfigurować kategorię zaopatrzenia, która ma być używana w procesie zaopatrzenia. Te zadania zazwyczaj wykonuje menedżer ds. zakupów. Przed rozpoczęciem tej procedury musi istnieć hierarchia kategorii typu Zaopatrzenie. Jeśli używasz danych firmy demonstracyjnej, procedurę można wykonać w firmie USMF.
+<span data-ttu-id="e7915-104">W tej procedurze pokazano, jak utworzyć nowe węzły w hierarchii kategorii zaopatrzenia oraz jak skonfigurować kategorię zaopatrzenia, która ma być używana w procesie zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="e7915-104">This procedure shows you how to create new nodes in a procurement category hierarchy and how to configure a procurement category to be used in a procurement process.</span></span> <span data-ttu-id="e7915-105">Te zadania zazwyczaj wykonuje menedżer ds. zakupów.</span><span class="sxs-lookup"><span data-stu-id="e7915-105">These tasks would typically be carried out by a Purchasing manager.</span></span> <span data-ttu-id="e7915-106">Przed rozpoczęciem tej procedury musi istnieć hierarchia kategorii typu Zaopatrzenie.</span><span class="sxs-lookup"><span data-stu-id="e7915-106">Before you can start this procedure, there must be a category hierarchy of type Procurement.</span></span> <span data-ttu-id="e7915-107">Jeśli używasz danych firmy demonstracyjnej, procedurę można wykonać w firmie USMF.</span><span class="sxs-lookup"><span data-stu-id="e7915-107">If you're using a demo data company, you can run this procedure in the USMF company.</span></span>
 
 
-## <a name="add-a-new-procurement-category"></a>Dodawanie nowej kategorii zaopatrzenia
-1. Wybierz kolejno opcje Zaopatrzenie i sourcing > .. > Kategorie zaopatrzenia.
-2. Kliknij opcję Edytuj hierarchię kategorii.
-    * Bieżąca hierarchia kategorii zaopatrzenia zostanie wyświetlona przy lewej krawędzi strony. Zmodyfikujesz tę hierarchię.  
-3. Kliknij opcję Nowy węzeł kategorii.
-    * Domyślnie system wybiera węzeł najwyższego poziomu. Jeśli wykonujesz tę procedurę w przewodniku po zadaniach, możesz kliknąć przycisk Odblokuj i wybrać inny węzeł nadrzędny, aby wstawić tam swój nowy węzeł. Po wykonaniu tej operacji ponownie zablokuj przewodnik po zadaniach, a następnie kliknij przycisk Nowy węzeł kategorii.  
-4. W polu Nazwa wpisz wartość.
-5. Wypełnij pole Opis.
-6. W polu Przyjazna nazwa wpisz wartość.
-    * Przyjazna nazwa jest opcjonalna. Będzie wyświetlany w wyszukiwaniach kategorii wraz z nazwą kategorii.  
-7. Kliknij przycisk Zapisz.
+## <a name="add-a-new-procurement-category"></a><span data-ttu-id="e7915-108">Dodawanie nowej kategorii zaopatrzenia</span><span class="sxs-lookup"><span data-stu-id="e7915-108">Add a new procurement category</span></span>
+1. <span data-ttu-id="e7915-109">Wybierz kolejno opcje Zaopatrzenie i sourcing > ..</span><span class="sxs-lookup"><span data-stu-id="e7915-109">Go to Procurement and sourcing > ..</span></span> <span data-ttu-id="e7915-110">> Kategorie zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="e7915-110">> Procurement categories.</span></span>
+2. <span data-ttu-id="e7915-111">Kliknij opcję Edytuj hierarchię kategorii.</span><span class="sxs-lookup"><span data-stu-id="e7915-111">Click Edit category hierarchy.</span></span>
+    * <span data-ttu-id="e7915-112">Bieżąca hierarchia kategorii zaopatrzenia zostanie wyświetlona przy lewej krawędzi strony.</span><span class="sxs-lookup"><span data-stu-id="e7915-112">The current procurement category hierarchy is displayed in the left side of the page.</span></span> <span data-ttu-id="e7915-113">Zmodyfikujesz tę hierarchię.</span><span class="sxs-lookup"><span data-stu-id="e7915-113">You  are about to modify the hierarchy.</span></span>  
+3. <span data-ttu-id="e7915-114">Kliknij opcję Nowy węzeł kategorii.</span><span class="sxs-lookup"><span data-stu-id="e7915-114">Click New category node.</span></span>
+    * <span data-ttu-id="e7915-115">Domyślnie system wybiera węzeł najwyższego poziomu.</span><span class="sxs-lookup"><span data-stu-id="e7915-115">The system selects the top node by default.</span></span> <span data-ttu-id="e7915-116">Jeśli wykonujesz tę procedurę w przewodniku po zadaniach, możesz kliknąć przycisk Odblokuj i wybrać inny węzeł nadrzędny, aby wstawić tam swój nowy węzeł.</span><span class="sxs-lookup"><span data-stu-id="e7915-116">If you are running this procedure as a task guide, you can click the Unlock button and select another parent node to insert your new node into.</span></span> <span data-ttu-id="e7915-117">Po wykonaniu tej operacji ponownie zablokuj przewodnik po zadaniach, a następnie kliknij przycisk Nowy węzeł kategorii.</span><span class="sxs-lookup"><span data-stu-id="e7915-117">Once that is done, lock the task guide again and then click New category node.</span></span>  
+4. <span data-ttu-id="e7915-118">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="e7915-118">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="e7915-119">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="e7915-119">In the Description field, type a value.</span></span>
+6. <span data-ttu-id="e7915-120">W polu Przyjazna nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="e7915-120">In the Friendly name field, type a value.</span></span>
+    * <span data-ttu-id="e7915-121">Przyjazna nazwa jest opcjonalna.</span><span class="sxs-lookup"><span data-stu-id="e7915-121">The friendly name is optional.</span></span> <span data-ttu-id="e7915-122">Będzie wyświetlany w wyszukiwaniach kategorii wraz z nazwą kategorii.</span><span class="sxs-lookup"><span data-stu-id="e7915-122">It will be displayed in category lookups together with the category name.</span></span>  
+7. <span data-ttu-id="e7915-123">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="e7915-123">Click Save.</span></span>
 
-## <a name="add-products-to-your-new-procurement-category"></a>Dodawanie produktów do nowej kategorii zaopatrzenia
-1. Wybierz kolejno opcje Zaopatrzenie i sourcing > .. > Kategorie zaopatrzenia.
-    * Zaznacz dodany właśnie węzeł. Jeśli wykonujesz tę procedurę w przewodniku po zadaniach, może być konieczne odblokowanie przewodnika po zadaniach w celu wybrania węzła.  
-2. Przełącz rozwinięcie sekcji Produkty.
-3. Kliknij przycisk Dodaj, aby skojarzyć produkty z kategorią zaopatrzenia.
-4. Zaznacz produkt, który ma zostać dodany do kategorii zaopatrzenia.
-5. Kliknij strzałkę, aby wybrać produkt.
-6. Zaznacz kolejny produkt, który ma zostać dodany do kategorii zaopatrzenia.
-7. Kliknij strzałkę, aby wybrać produkt.
-8. Kliknij przycisk OK.
+## <a name="add-products-to-your-new-procurement-category"></a><span data-ttu-id="e7915-124">Dodawanie produktów do nowej kategorii zaopatrzenia</span><span class="sxs-lookup"><span data-stu-id="e7915-124">Add products to your new procurement category</span></span>
+1. <span data-ttu-id="e7915-125">Wybierz kolejno opcje Zaopatrzenie i sourcing > ..</span><span class="sxs-lookup"><span data-stu-id="e7915-125">Go to Procurement and sourcing > ..</span></span> <span data-ttu-id="e7915-126">> Kategorie zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="e7915-126">> Procurement categories.</span></span>
+    * <span data-ttu-id="e7915-127">Zaznacz dodany właśnie węzeł.</span><span class="sxs-lookup"><span data-stu-id="e7915-127">Select the node you just added.</span></span> <span data-ttu-id="e7915-128">Jeśli wykonujesz tę procedurę w przewodniku po zadaniach, może być konieczne odblokowanie przewodnika po zadaniach w celu wybrania węzła.</span><span class="sxs-lookup"><span data-stu-id="e7915-128">If you’re running this procedure as a task guide you might need to unlock the task guide to select the node.</span></span>  
+2. <span data-ttu-id="e7915-129">Przełącz rozwinięcie sekcji Produkty.</span><span class="sxs-lookup"><span data-stu-id="e7915-129">Toggle the expansion of the Products section.</span></span>
+3. <span data-ttu-id="e7915-130">Kliknij przycisk Dodaj, aby skojarzyć produkty z kategorią zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="e7915-130">Click Add to associate products with the procurement category.</span></span>
+4. <span data-ttu-id="e7915-131">Zaznacz produkt, który ma zostać dodany do kategorii zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="e7915-131">Select the product you want to add to the procurement category.</span></span>
+5. <span data-ttu-id="e7915-132">Kliknij strzałkę, aby wybrać produkt.</span><span class="sxs-lookup"><span data-stu-id="e7915-132">Click the arrow to select the product.</span></span>
+6. <span data-ttu-id="e7915-133">Zaznacz kolejny produkt, który ma zostać dodany do kategorii zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="e7915-133">Select another product to add to the procurement category.</span></span>
+7. <span data-ttu-id="e7915-134">Kliknij strzałkę, aby wybrać produkt.</span><span class="sxs-lookup"><span data-stu-id="e7915-134">Click the arrow to select the product.</span></span>
+8. <span data-ttu-id="e7915-135">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="e7915-135">Click OK.</span></span>
 
-## <a name="add-approved-and-preferred-vendors"></a>Dodawanie zatwierdzonych i preferowanych dostawców
-1. Przełącz rozwinięcie sekcji Dostawcy.
-2. Kliknij przycisk Dodaj.
-    * Można dodać dostawcę do kategorii zaopatrzenia i określić, czy jest on preferowany czy tylko zatwierdzony dla kategorii. Usunięcie dostawcy z kategorii nie powoduje usunięcia historycznych transakcji z dostawcą w danej kategorii.   
-3. Znajdź dostawcę, który ma zostać dodany do kategorii zaopatrzenia.
-4. Kliknij strzałkę, aby wybrać dostawcę.
-5. Kliknij przycisk OK.
-6. Wybierz wiersz dostawcy, którego chcesz zmodyfikować.
-7. W polu Stan dostawcy wybierz opcję.
-    * Ustawienie wyboru dostawcy w reguły kategorii decyduje, czy w zapotrzebowaniach na zakup są dostępni dostawcy preferowani, zatwierdzeni czy wszyscy.   
+## <a name="add-approved-and-preferred-vendors"></a><span data-ttu-id="e7915-136">Dodawanie zatwierdzonych i preferowanych dostawców</span><span class="sxs-lookup"><span data-stu-id="e7915-136">Add approved and preferred vendors</span></span>
+1. <span data-ttu-id="e7915-137">Przełącz rozwinięcie sekcji Dostawcy.</span><span class="sxs-lookup"><span data-stu-id="e7915-137">Toggle the expansion of the Vendors section.</span></span>
+2. <span data-ttu-id="e7915-138">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="e7915-138">Click Add.</span></span>
+    * <span data-ttu-id="e7915-139">Można dodać dostawcę do kategorii zaopatrzenia i określić, czy jest on preferowany czy tylko zatwierdzony dla kategorii.</span><span class="sxs-lookup"><span data-stu-id="e7915-139">You can add a vendor to a procurement category and specify whether a vendor is preferred or just approved for the category.</span></span> <span data-ttu-id="e7915-140">Usunięcie dostawcy z kategorii nie powoduje usunięcia historycznych transakcji z dostawcą w danej kategorii.</span><span class="sxs-lookup"><span data-stu-id="e7915-140">When you delete a vendor from a category, the historical transactions with the vendor in the category are not deleted.</span></span>   
+3. <span data-ttu-id="e7915-141">Znajdź dostawcę, który ma zostać dodany do kategorii zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="e7915-141">Find the vendor you want to add to the category.</span></span>
+4. <span data-ttu-id="e7915-142">Kliknij strzałkę, aby wybrać dostawcę.</span><span class="sxs-lookup"><span data-stu-id="e7915-142">Click the arrow to select the vendor.</span></span>
+5. <span data-ttu-id="e7915-143">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="e7915-143">Click OK.</span></span>
+6. <span data-ttu-id="e7915-144">Wybierz wiersz dostawcy, którego chcesz zmodyfikować.</span><span class="sxs-lookup"><span data-stu-id="e7915-144">Select the vendor row that you want to modify.</span></span>
+7. <span data-ttu-id="e7915-145">W polu Stan dostawcy wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="e7915-145">In the Vendor status field, select an option.</span></span>
+    * <span data-ttu-id="e7915-146">Ustawienie wyboru dostawcy w reguły kategorii decyduje, czy w zapotrzebowaniach na zakup są dostępni dostawcy preferowani, zatwierdzeni czy wszyscy.</span><span class="sxs-lookup"><span data-stu-id="e7915-146">The vendor selection setting in the Category policy rule governs whether preferred, approved, or all vendors are available on purchase requisitions.</span></span>   
 
-## <a name="add-additional-information-to-the-category"></a>Dodawanie uzupełniających informacji do kategorii
-1. Przełącz rozwinięcie sekcji Grupy kryteriów oceny dostawców.
-    * Ta karta umożliwia określenie kryteriów, według których należy oceniać dostawców w kategorii zaopatrzenia. W tym celu kliknij przycisk Dodaj, a następnie wybierz grupę oceny dostawców zawierającą żądane kryteria.  
-2. Przełącz rozwinięcie sekcji Kwestionariusze.
-    * Ta karta umożliwia dodawanie kwestionariuszy, które będą wyświetlane w zapotrzebowaniu, o ile w polu Typu działania zaznaczysz wartość „Zapotrzebowanie”. Wtedy zleceniodawca musi wypełnić kwestionariusz, zanim wyśle zapotrzebowanie na określony produkt lub produkty z kategorii zaopatrzenia.  
-3. Przełącz rozwinięcie sekcji Grupy podatków dla towaru.
-4. W polu Grupa podatków dla towaru: kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-5. Umożliwia wybranie grupy podatków.
-6. Przełącz rozwinięcie sekcji Strona kategorii.
-    * Strony kategorii tworzy się na stronie Hierarchia kategorii. Zawierają one informacje o kategorii zaopatrzenia, takie jak typy produktów w kategorii, zdjęcia produktów w kategorii lub ogłoszenia np. o rabatach dostępnych w danej kategorii. Informacje na stronie kategorii są wyświetlane w zapotrzebowaniach na zakup.  
-7. Zamknij stronę.
+## <a name="add-additional-information-to-the-category"></a><span data-ttu-id="e7915-147">Dodawanie uzupełniających informacji do kategorii</span><span class="sxs-lookup"><span data-stu-id="e7915-147">Add additional information to the category</span></span>
+1. <span data-ttu-id="e7915-148">Przełącz rozwinięcie sekcji Grupy kryteriów oceny dostawców.</span><span class="sxs-lookup"><span data-stu-id="e7915-148">Toggle the expansion of the Vendor evaluation criterion groups section.</span></span>
+    * <span data-ttu-id="e7915-149">Ta karta umożliwia określenie kryteriów, według których należy oceniać dostawców w kategorii zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="e7915-149">This tab allows you to define which criteria the vendors in the procurement category should be rated against.</span></span> <span data-ttu-id="e7915-150">W tym celu kliknij przycisk Dodaj, a następnie wybierz grupę oceny dostawców zawierającą żądane kryteria.</span><span class="sxs-lookup"><span data-stu-id="e7915-150">To do this you would click Add and then select a vendor evaluation group that contains the criteria you want.</span></span>  
+2. <span data-ttu-id="e7915-151">Przełącz rozwinięcie sekcji Kwestionariusze.</span><span class="sxs-lookup"><span data-stu-id="e7915-151">Toggle the expansion of the Questionnaires section.</span></span>
+    * <span data-ttu-id="e7915-152">Ta karta umożliwia dodawanie kwestionariuszy, które będą wyświetlane w zapotrzebowaniu, o ile w polu Typu działania zaznaczysz wartość „Zapotrzebowanie”.</span><span class="sxs-lookup"><span data-stu-id="e7915-152">This tab allows you to add questionnaires that will appear on the requisition, as long as you set the Activity type to "Requisition".</span></span> <span data-ttu-id="e7915-153">Wtedy zleceniodawca musi wypełnić kwestionariusz, zanim wyśle zapotrzebowanie na określony produkt lub produkty z kategorii zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="e7915-153">The requester then has to fill out a questionnaire before they submit a requisition for the specific product or products in the procurement category.</span></span>  
+3. <span data-ttu-id="e7915-154">Przełącz rozwinięcie sekcji Grupy podatków dla towaru.</span><span class="sxs-lookup"><span data-stu-id="e7915-154">Toggle the expansion of the Item sales tax groups section.</span></span>
+4. <span data-ttu-id="e7915-155">W polu Grupa podatków dla towaru: kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="e7915-155">In the Item sales tax group: field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="e7915-156">Umożliwia wybranie grupy podatków.</span><span class="sxs-lookup"><span data-stu-id="e7915-156">Select a sales tax group.</span></span>
+6. <span data-ttu-id="e7915-157">Przełącz rozwinięcie sekcji Strona kategorii.</span><span class="sxs-lookup"><span data-stu-id="e7915-157">Toggle the expansion of the Category page section.</span></span>
+    * <span data-ttu-id="e7915-158">Strony kategorii tworzy się na stronie Hierarchia kategorii.</span><span class="sxs-lookup"><span data-stu-id="e7915-158">Category pages are created in the Category hierarchy page.</span></span> <span data-ttu-id="e7915-159">Zawierają one informacje o kategorii zaopatrzenia, takie jak typy produktów w kategorii, zdjęcia produktów w kategorii lub ogłoszenia np. o rabatach dostępnych w danej kategorii.</span><span class="sxs-lookup"><span data-stu-id="e7915-159">They contain information about the procurement category such as information about the type of products in a category, images of products in a category, or announcements such as the discounts that are available in a category.</span></span> <span data-ttu-id="e7915-160">Informacje na stronie kategorii są wyświetlane w zapotrzebowaniach na zakup.</span><span class="sxs-lookup"><span data-stu-id="e7915-160">The information in a category page is displayed on purchase requisitions.</span></span>  
+7. <span data-ttu-id="e7915-161">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="e7915-161">Close the page.</span></span>
 
 

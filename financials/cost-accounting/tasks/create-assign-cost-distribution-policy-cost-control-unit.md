@@ -16,60 +16,60 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 492e4a94ec0caef8c51a691043a1ffb9e6a04758
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fbd44816fc2f2569dd477fc21f59418a575bb835
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-assign-a-cost-distribution-policy-to-a-cost-control-unit"></a>Tworzenie i przypisywanie zasady dystrybucji kosztów do jednostki kontroli kosztów
+# <a name="create-and-assign-a-cost-distribution-policy-to-a-cost-control-unit"></a><span data-ttu-id="25cf1-103">Tworzenie i przypisywanie zasady dystrybucji kosztów do jednostki kontroli kosztów</span><span class="sxs-lookup"><span data-stu-id="25cf1-103">Create and assign a cost distribution policy to a cost control unit</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Reguły dystrybucji kosztów są używane do rozdzielania kosztów, które zostały finansowo policzone w zbiorczym centrum kosztów. Księgowy kosztów pilnuje, aby koszty zostały rozdzielone między centra kosztów na podstawie wybranej podstawy alokacji. Zasada i odnośne reguły są przypisywane do jednostki kontroli kosztów. W tym przewodniku po zadaniu jest wykorzystywany przykład do pokazania, jak utworzyć zasadę dystrybucji kosztów i odpowiednie reguły.
+<span data-ttu-id="25cf1-104">Reguły dystrybucji kosztów są używane do rozdzielania kosztów, które zostały finansowo policzone w zbiorczym centrum kosztów.</span><span class="sxs-lookup"><span data-stu-id="25cf1-104">Cost distribution rules are used to distribute costs that have been financially counted on a collective cost center.</span></span> <span data-ttu-id="25cf1-105">Księgowy kosztów pilnuje, aby koszty zostały rozdzielone między centra kosztów na podstawie wybranej podstawy alokacji.</span><span class="sxs-lookup"><span data-stu-id="25cf1-105">The cost accountant makes sure that the cost is distributed to the cost centers, based on the selected allocation base.</span></span> <span data-ttu-id="25cf1-106">Zasada i odnośne reguły są przypisywane do jednostki kontroli kosztów.</span><span class="sxs-lookup"><span data-stu-id="25cf1-106">A policy and the corresponding rules are assigned to a cost control unit.</span></span> <span data-ttu-id="25cf1-107">W tym przewodniku po zadaniu jest wykorzystywany przykład do pokazania, jak utworzyć zasadę dystrybucji kosztów i odpowiednie reguły.</span><span class="sxs-lookup"><span data-stu-id="25cf1-107">This task guide uses an example to show how to create a cost distribution policy and the corresponding rules.</span></span>
 
 
-## <a name="create-a-policy"></a>Tworzenie zasady
-1. Wybierz kolejno opcje Rachunek kosztów > Zasady > Zasady dystrybucji kosztów.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa zasad wpisz wartość.
-4. Wypełnij pole Opis.
-5. W polu Hierarchia wymiarów obiektów kosztów wprowadź lub wybierz wartość.
-    * Wybierz opcję Organizacja.  
-6. W polu Hierarchia wymiarów składników kosztów wprowadź lub wybierz wartość.
-    * Wybierz opcję CDS P/L.  
-7. W polu Wymiar statystyczny wprowadź lub wybierz wartość.
-    * Wybierz opcję Elementy statystyczne.  
-8. Kliknij przycisk Zapisz.
+## <a name="create-a-policy"></a><span data-ttu-id="25cf1-108">Tworzenie zasady</span><span class="sxs-lookup"><span data-stu-id="25cf1-108">Create a policy</span></span>
+1. <span data-ttu-id="25cf1-109">Wybierz kolejno opcje Rachunek kosztów > Zasady > Zasady dystrybucji kosztów.</span><span class="sxs-lookup"><span data-stu-id="25cf1-109">Go to Cost accounting > Policies > Cost distribution policies.</span></span>
+2. <span data-ttu-id="25cf1-110">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="25cf1-110">Click New.</span></span>
+3. <span data-ttu-id="25cf1-111">W polu Nazwa zasad wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="25cf1-111">In the Policy name field, type a value.</span></span>
+4. <span data-ttu-id="25cf1-112">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="25cf1-112">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="25cf1-113">W polu Hierarchia wymiarów obiektów kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="25cf1-113">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="25cf1-114">Wybierz opcję Organizacja.</span><span class="sxs-lookup"><span data-stu-id="25cf1-114">Select Organization.</span></span>  
+6. <span data-ttu-id="25cf1-115">W polu Hierarchia wymiarów składników kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="25cf1-115">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="25cf1-116">Wybierz opcję CDS P/L.</span><span class="sxs-lookup"><span data-stu-id="25cf1-116">Select CDS P/L.</span></span>  
+7. <span data-ttu-id="25cf1-117">W polu Wymiar statystyczny wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="25cf1-117">In the Statistical dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="25cf1-118">Wybierz opcję Elementy statystyczne.</span><span class="sxs-lookup"><span data-stu-id="25cf1-118">Select Statistical elements.</span></span>  
+8. <span data-ttu-id="25cf1-119">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="25cf1-119">Click Save.</span></span>
 
-## <a name="create-rules-for-the-policy"></a>Tworzenie reguł dla zasad
-1. Kliknij przycisk Nowy.
-2. Na liście oznacz wybrany wiersz.
-3. W polu Węzeł hierarchii wymiarów obiektów kosztów wprowadź lub wybierz wartość.
-    * Rozwiń hierarchię i wybierz pozycję 094.  
-4. W polu Węzeł hierarchii wymiarów składników kosztów wprowadź lub wybierz wartość.
-    * Wybierz opcję Inne wydatki operacyjne, a następnie zaznacz pozycję 605110 Sprzątanie.  
-5. W polu Zachowanie kosztów wybierz opcję.
-    * Wybierz opcję Koszt stały.  
-6. W polu Podstawa alokacji wprowadź lub wybierz wartość.
-7. Kliknij przycisk Nowy.
-8. Na liście oznacz wybrany wiersz.
-9. W polu Węzeł hierarchii wymiarów obiektów kosztów wprowadź lub wybierz wartość.
-    * Rozwiń hierarchię i wybierz pozycję 094.  
-10. W polu Węzeł hierarchii wymiarów składników kosztów wprowadź lub wybierz wartość.
-    * Wybierz opcję Inne wydatki operacyjne, a następnie zaznacz pozycję 605150 Najem.  
-11. W polu Zachowanie kosztów wybierz opcję.
-    * Wybierz opcję Koszt stały.  
-12. W polu Podstawa alokacji wprowadź lub wybierz wartość.
-13. Kliknij przycisk Zapisz.
+## <a name="create-rules-for-the-policy"></a><span data-ttu-id="25cf1-120">Tworzenie reguł dla zasad</span><span class="sxs-lookup"><span data-stu-id="25cf1-120">Create rules for the policy</span></span>
+1. <span data-ttu-id="25cf1-121">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="25cf1-121">Click New.</span></span>
+2. <span data-ttu-id="25cf1-122">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="25cf1-122">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="25cf1-123">W polu Węzeł hierarchii wymiarów obiektów kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="25cf1-123">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="25cf1-124">Rozwiń hierarchię i wybierz pozycję 094.</span><span class="sxs-lookup"><span data-stu-id="25cf1-124">Expand the hierarchy to select 094.</span></span>  
+4. <span data-ttu-id="25cf1-125">W polu Węzeł hierarchii wymiarów składników kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="25cf1-125">In the Cost element dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="25cf1-126">Wybierz opcję Inne wydatki operacyjne, a następnie zaznacz pozycję 605110 Sprzątanie.</span><span class="sxs-lookup"><span data-stu-id="25cf1-126">Select Other operating expenses and then select 605110 Cleaning.</span></span>  
+5. <span data-ttu-id="25cf1-127">W polu Zachowanie kosztów wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="25cf1-127">In the Cost behavior field, select an option.</span></span>
+    * <span data-ttu-id="25cf1-128">Wybierz opcję Koszt stały.</span><span class="sxs-lookup"><span data-stu-id="25cf1-128">Select Fixed cost.</span></span>  
+6. <span data-ttu-id="25cf1-129">W polu Podstawa alokacji wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="25cf1-129">In the Allocation base field, enter or select a value.</span></span>
+7. <span data-ttu-id="25cf1-130">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="25cf1-130">Click New.</span></span>
+8. <span data-ttu-id="25cf1-131">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="25cf1-131">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="25cf1-132">W polu Węzeł hierarchii wymiarów obiektów kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="25cf1-132">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="25cf1-133">Rozwiń hierarchię i wybierz pozycję 094.</span><span class="sxs-lookup"><span data-stu-id="25cf1-133">Expand the hierarchy to select 094.</span></span>  
+10. <span data-ttu-id="25cf1-134">W polu Węzeł hierarchii wymiarów składników kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="25cf1-134">In the Cost element dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="25cf1-135">Wybierz opcję Inne wydatki operacyjne, a następnie zaznacz pozycję 605150 Najem.</span><span class="sxs-lookup"><span data-stu-id="25cf1-135">Select Other operating expenses and then select 605150 Rent.</span></span>  
+11. <span data-ttu-id="25cf1-136">W polu Zachowanie kosztów wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="25cf1-136">In the Cost behavior field, select an option.</span></span>
+    * <span data-ttu-id="25cf1-137">Wybierz opcję Koszt stały.</span><span class="sxs-lookup"><span data-stu-id="25cf1-137">Select Fixed cost.</span></span>  
+12. <span data-ttu-id="25cf1-138">W polu Podstawa alokacji wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="25cf1-138">In the Allocation base field, enter or select a value.</span></span>
+13. <span data-ttu-id="25cf1-139">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="25cf1-139">Click Save.</span></span>
 
-## <a name="assign-rules-to-a-cost-control-unit"></a>Przypisywanie reguł do jednostki kontroli kosztów
-1. Kliknij opcję Przypisania zasad dla jednostki kontroli kosztów.
-2. Kliknij przycisk Nowy.
-3. Na liście oznacz wybrany wiersz.
-4. W polu Ważne od daty księgowania wpisz datę.
-    * Zaznacz dzień 1 września w odpowiednim roku obrachunkowym.  
-5. W polu Jednostka kontroli kosztów wprowadź lub wybierz wartość.
-6. Kliknij przycisk Zapisz.
+## <a name="assign-rules-to-a-cost-control-unit"></a><span data-ttu-id="25cf1-140">Przypisywanie reguł do jednostki kontroli kosztów</span><span class="sxs-lookup"><span data-stu-id="25cf1-140">Assign rules to a cost control unit</span></span>
+1. <span data-ttu-id="25cf1-141">Kliknij opcję Przypisania zasad dla jednostki kontroli kosztów.</span><span class="sxs-lookup"><span data-stu-id="25cf1-141">Click Policy assignments for cost control unit.</span></span>
+2. <span data-ttu-id="25cf1-142">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="25cf1-142">Click New.</span></span>
+3. <span data-ttu-id="25cf1-143">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="25cf1-143">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="25cf1-144">W polu Ważne od daty księgowania wpisz datę.</span><span class="sxs-lookup"><span data-stu-id="25cf1-144">In the Valid from accounting date field, enter a date.</span></span>
+    * <span data-ttu-id="25cf1-145">Zaznacz dzień 1 września w odpowiednim roku obrachunkowym.</span><span class="sxs-lookup"><span data-stu-id="25cf1-145">Select September 1 in the valid fiscal year.</span></span>  
+5. <span data-ttu-id="25cf1-146">W polu Jednostka kontroli kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="25cf1-146">In the Cost control unit field, enter or select a value.</span></span>
+6. <span data-ttu-id="25cf1-147">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="25cf1-147">Click Save.</span></span>
 
 

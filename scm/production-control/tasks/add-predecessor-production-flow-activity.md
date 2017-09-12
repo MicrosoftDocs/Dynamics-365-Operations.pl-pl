@@ -17,38 +17,38 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: c1afd6a5c2eb5235a42fc9aeea0c8aed6d33e0c9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 352c601e9de00d08bf994807d445fe91c8278557
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="add-a-predecessor-to-a-production-flow-activity"></a>Dodawanie działania poprzedzającego do działania przepływu produkcji
+# <a name="add-a-predecessor-to-a-production-flow-activity"></a><span data-ttu-id="f441c-103">Dodawanie działania poprzedzającego do działania przepływu produkcji</span><span class="sxs-lookup"><span data-stu-id="f441c-103">Add a predecessor to a production flow activity</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W wersji przepływu produkcji wszystkie działania muszą być ustawione kolejno. Działanie może mieć jeden lub wiele zdarzeń poprzedzających lub następujących. 
+<span data-ttu-id="f441c-104">W wersji przepływu produkcji wszystkie działania muszą być ustawione kolejno.</span><span class="sxs-lookup"><span data-stu-id="f441c-104">In a production flow version, all activities must be sequenced.</span></span> <span data-ttu-id="f441c-105">Działanie może mieć jeden lub wiele zdarzeń poprzedzających lub następujących.</span><span class="sxs-lookup"><span data-stu-id="f441c-105">An activity can have one or multiple predecessors or successors.</span></span> 
 
-Ta procedura pokazuje, jak skojarzyć zdarzenie poprzedzające z działaniem. 
+<span data-ttu-id="f441c-106">Ta procedura pokazuje, jak skojarzyć zdarzenie poprzedzające z działaniem.</span><span class="sxs-lookup"><span data-stu-id="f441c-106">This procedure shows how to associate a predecessor to an activity.</span></span> 
 
-Do wykonania zadania potrzebujesz przepływ produkcji, który ma wersję roboczą z co najmniej dwoma działaniami, które mogą być połączone. 
+<span data-ttu-id="f441c-107">Do wykonania zadania potrzebujesz przepływ produkcji, który ma wersję roboczą z co najmniej dwoma działaniami, które mogą być połączone.</span><span class="sxs-lookup"><span data-stu-id="f441c-107">To perform this task, you need a production flow that has the Draft version with at least two activities that can be connected.</span></span> 
 
-Aby uzyskać więcej informacji, zobacz oficjalny dokument „Przepływy produkcji i działania w produkcji oszczędnej”.
+<span data-ttu-id="f441c-108">Aby uzyskać więcej informacji, zobacz oficjalny dokument „Przepływy produkcji i działania w produkcji oszczędnej”.</span><span class="sxs-lookup"><span data-stu-id="f441c-108">To learn more, read the white paper "Production flows and activities in lean manufacturing."</span></span>
 
 
-## <a name="find-the-production-flow-and-version"></a>Znajdowanie przepływu produkcji i wersji
-1. Wybierz kolejno opcje Kontrola produkcji > Ustawienia > Przepływ produkcji oszczędnej > Przepływy produkcji.
-2. Na liście znajdź i zaznacz odpowiedni rekord.
-3. Na liście kliknij łącze w wybranym wierszu.
-4. Na liście znajdź i zaznacz odpowiedni rekord.
-5. Kliknij opcję Działania.
+## <a name="find-the-production-flow-and-version"></a><span data-ttu-id="f441c-109">Znajdowanie przepływu produkcji i wersji</span><span class="sxs-lookup"><span data-stu-id="f441c-109">Find the production flow and version</span></span>
+1. <span data-ttu-id="f441c-110">Wybierz kolejno opcje Kontrola produkcji > Ustawienia > Przepływ produkcji oszczędnej > Przepływy produkcji.</span><span class="sxs-lookup"><span data-stu-id="f441c-110">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="f441c-111">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="f441c-111">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="f441c-112">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="f441c-112">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="f441c-113">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="f441c-113">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="f441c-114">Kliknij opcję Działania.</span><span class="sxs-lookup"><span data-stu-id="f441c-114">Click Activities.</span></span>
 
-## <a name="select-an-activity-and-add-a-predecessor"></a>Wybór działania i dodawanie zdarzenia poprzedzającego
-1. Na liście znajdź i zaznacz odpowiedni rekord.
-2. Kliknij opcję Dodaj zdarzenie poprzedzające.
-3. Wprowadź lub wybierz wartość w polu Działanie.
-4. W polu Wskaźnik czasu cyklu wpisz liczbę.
-    * Domyślny współczynnik czasu cyklu dla relacji działań wynosi 1. Zakłada on, że oba działania są wykonywane w tym samym tempie lub czasie taktu. Jeżeli zdarzenie poprzedzające jest wykonywane w szybszym tempie (niższym czasie taktu), współczynnik powinien być niższe niż 1. Jeżeli zdarzenie poprzedzające odbywa się w wolniejszym tempie (wyższy czas taktu), współczynnik czasu cyklu jest większy niż 1.  
-5. Kliknij przycisk OK.
+## <a name="select-an-activity-and-add-a-predecessor"></a><span data-ttu-id="f441c-115">Wybór działania i dodawanie zdarzenia poprzedzającego</span><span class="sxs-lookup"><span data-stu-id="f441c-115">Select an activity and add a predecessor</span></span>
+1. <span data-ttu-id="f441c-116">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="f441c-116">In the list, find and select the desired record.</span></span>
+2. <span data-ttu-id="f441c-117">Kliknij opcję Dodaj zdarzenie poprzedzające.</span><span class="sxs-lookup"><span data-stu-id="f441c-117">Click Add predecessor.</span></span>
+3. <span data-ttu-id="f441c-118">Wprowadź lub wybierz wartość w polu Działanie.</span><span class="sxs-lookup"><span data-stu-id="f441c-118">In the Activity field, enter or select a value.</span></span>
+4. <span data-ttu-id="f441c-119">W polu Wskaźnik czasu cyklu wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="f441c-119">In the Cycle time ratio field, enter a number.</span></span>
+    * <span data-ttu-id="f441c-120">Domyślny współczynnik czasu cyklu dla relacji działań wynosi 1.</span><span class="sxs-lookup"><span data-stu-id="f441c-120">The default cycle time ratio of an activity relation is 1.</span></span> <span data-ttu-id="f441c-121">Zakłada on, że oba działania są wykonywane w tym samym tempie lub czasie taktu.</span><span class="sxs-lookup"><span data-stu-id="f441c-121">This assumes that both activities run at the same pace or takt time.</span></span> <span data-ttu-id="f441c-122">Jeżeli zdarzenie poprzedzające jest wykonywane w szybszym tempie (niższym czasie taktu), współczynnik powinien być niższe niż 1. Jeżeli zdarzenie poprzedzające odbywa się w wolniejszym tempie (wyższy czas taktu), współczynnik czasu cyklu jest większy niż 1.</span><span class="sxs-lookup"><span data-stu-id="f441c-122">If the predecessor runs at a higher pace (lower takt time), the ratio should be lower than 1, if the predecessor runs at a slower pace (higher takt time) the cycle time ratio is greater than 1.</span></span>  
+5. <span data-ttu-id="f441c-123">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="f441c-123">Click OK.</span></span>
 
 

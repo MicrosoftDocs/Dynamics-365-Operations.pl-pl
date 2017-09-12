@@ -19,124 +19,124 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f5d75794146eada9b9f439d99ad272f5af8db53b
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 5604f806eed81c60dfcae7cb7b1a22bba25aa454
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="handling-cash-discounts-for-overpayments"></a>Obsługa rabatów gotówkowych w przypadku nadpłat
+# <a name="handling-cash-discounts-for-overpayments"></a><span data-ttu-id="e65c1-103">Obsługa rabatów gotówkowych w przypadku nadpłat</span><span class="sxs-lookup"><span data-stu-id="e65c1-103">Handling cash discounts for overpayments</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera scenariusze pokazujące sposób obsługi płatności, gdy odbiorca ma rabat gotówkowy, a mimo to nawet nadpłaca. 
+<span data-ttu-id="e65c1-104">Ten artykuł zawiera scenariusze pokazujące sposób obsługi płatności, gdy odbiorca ma rabat gotówkowy, a mimo to nawet nadpłaca.</span><span class="sxs-lookup"><span data-stu-id="e65c1-104">This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays.</span></span> 
 
-Faktura jest uznawana za nadpłaconą, gdy kwota płatności jest większa niż kwota faktury pomniejszona o rabat gotówkowy. Aby określić sposób obsługi różnicy możliwego do uzyskania rabatu gotówkowego, jeśli faktura jest nadpłacona, użyj pól **Zarządzanie rabatami gotówkowymi** i **Maksymalna nadpłata lub niedopłata** na stronie **Parametry modułu rozrachunków z odbiorcami**. W poniższym przykładzie odbiorca nadpłacił fakturę o 0,50.
+<span data-ttu-id="e65c1-105">Faktura jest uznawana za nadpłaconą, gdy kwota płatności jest większa niż kwota faktury pomniejszona o rabat gotówkowy.</span><span class="sxs-lookup"><span data-stu-id="e65c1-105">An invoice is considered overpaid when the payment amount is more than the invoice amount minus the cash discount.</span></span> <span data-ttu-id="e65c1-106">Aby określić sposób obsługi różnicy możliwego do uzyskania rabatu gotówkowego, jeśli faktura jest nadpłacona, użyj pól **Zarządzanie rabatami gotówkowymi** i **Maksymalna nadpłata lub niedopłata** na stronie **Parametry modułu rozrachunków z odbiorcami**.</span><span class="sxs-lookup"><span data-stu-id="e65c1-106">To specify how an obtainable cash discount difference is handled when an invoice is overpaid, use the **Cash discount administration** and **Maximum overpayment or underpayment** fields on the **Accounts receivable parameters** page.</span></span> <span data-ttu-id="e65c1-107">W poniższym przykładzie odbiorca nadpłacił fakturę o 0,50.</span><span class="sxs-lookup"><span data-stu-id="e65c1-107">In the following example, the customer has overpaid the invoice by 0.50.</span></span>
 
-| Suma faktury | Dostępny rabat gotówkowy | Kwota do zapłaty po uwzględnieniu rabatu gotówkowego | Kwota rzeczywiście płacona przez odbiorcę |
+| <span data-ttu-id="e65c1-108">Suma faktury</span><span class="sxs-lookup"><span data-stu-id="e65c1-108">Invoice total</span></span> | <span data-ttu-id="e65c1-109">Dostępny rabat gotówkowy</span><span class="sxs-lookup"><span data-stu-id="e65c1-109">Cash discount available</span></span> | <span data-ttu-id="e65c1-110">Kwota do zapłaty po uwzględnieniu rabatu gotówkowego</span><span class="sxs-lookup"><span data-stu-id="e65c1-110">Amount to be paid, which includes the cash discount</span></span> | <span data-ttu-id="e65c1-111">Kwota rzeczywiście płacona przez odbiorcę</span><span class="sxs-lookup"><span data-stu-id="e65c1-111">Amount the customer actually pays</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|-----------------------------------|
-| 105,00 zł        | 10,50 zł                   | 94,50 zł                                               | 95,00 zł                             |
+| <span data-ttu-id="e65c1-112">105,00 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-112">105.00</span></span>        | <span data-ttu-id="e65c1-113">10,50 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-113">10.50</span></span>                   | <span data-ttu-id="e65c1-114">94,50 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-114">94.50</span></span>                                               | <span data-ttu-id="e65c1-115">95,00 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-115">95.00</span></span>                             |
 
-## <a name="cash-discount-administration--specific"></a>Zarządzanie rabatem gotówkowym = Określone
-Po wybraniu opcji **Określone** w polu **Zarządzanie rabatami gotówkowymi** na stronie **Konta dla transakcji automatycznych** pobierana jest pełna kwota rabatu gotówkowego. Kwota nadpłaty jest księgowana na koncie księgowym jako różnica rabatu gotówkowego lub pozostaje jako saldo na koncie odbiorcy. Zachowanie zależy od tego, czy kwota nadpłaty mieści się w przedziale między 0,00, a kwotą wprowadzoną w polu **Maksymalna nadpłata lub niedopłata** lub czy kwota nadpłaty jest wyższa od kwoty **Maksymalna nadpłata lub niedopłata**.
+## <a name="cash-discount-administration--specific"></a><span data-ttu-id="e65c1-116">Zarządzanie rabatem gotówkowym = Określone</span><span class="sxs-lookup"><span data-stu-id="e65c1-116">Cash discount administration = Specific</span></span>
+<span data-ttu-id="e65c1-117">Po wybraniu opcji **Określone** w polu **Zarządzanie rabatami gotówkowymi** na stronie **Konta dla transakcji automatycznych** pobierana jest pełna kwota rabatu gotówkowego.</span><span class="sxs-lookup"><span data-stu-id="e65c1-117">When **Specific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the full cash discount is taken.</span></span> <span data-ttu-id="e65c1-118">Kwota nadpłaty jest księgowana na koncie księgowym jako różnica rabatu gotówkowego lub pozostaje jako saldo na koncie odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="e65c1-118">The overpayment amount either is posted to a cash discount difference ledger account or remains a balance on the customer’s account.</span></span> <span data-ttu-id="e65c1-119">Zachowanie zależy od tego, czy kwota nadpłaty mieści się w przedziale między 0,00, a kwotą wprowadzoną w polu **Maksymalna nadpłata lub niedopłata** lub czy kwota nadpłaty jest wyższa od kwoty **Maksymalna nadpłata lub niedopłata**.</span><span class="sxs-lookup"><span data-stu-id="e65c1-119">The behavior depends on whether the overpayment amount is between 0.00 and the amount that is entered in the **Maximum overpayment or underpayment** field, or whether the overpayment amount is more than the **Maximum overpayment or underpayment** amount.</span></span>
 
-### <a name="scenario-1"></a>Scenariusz 1
+### <a name="scenario-1"></a><span data-ttu-id="e65c1-120">Scenariusz 1</span><span class="sxs-lookup"><span data-stu-id="e65c1-120">Scenario 1</span></span>
 
-W tym scenariuszu kwota nadpłaty mieści się między 0,00 a kwotą maksymalnej nadpłaty lub niedopłaty. Wprowadzana jest faktura na kwotę 105,00 z dostępnym rabatem gotówkowym, jeśli faktura zostanie zapłacona w ciągu 7 dni.
+<span data-ttu-id="e65c1-121">W tym scenariuszu kwota nadpłaty mieści się między 0,00 a kwotą maksymalnej nadpłaty lub niedopłaty.</span><span class="sxs-lookup"><span data-stu-id="e65c1-121">In this scenario, the overpayment amount is between 0.00 and the maximum overpayment or underpayment.</span></span> <span data-ttu-id="e65c1-122">Wprowadzana jest faktura na kwotę 105,00 z dostępnym rabatem gotówkowym, jeśli faktura zostanie zapłacona w ciągu 7 dni.</span><span class="sxs-lookup"><span data-stu-id="e65c1-122">An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Suma faktury | Dostępny rabat gotówkowy | Kwota do zapłaty po uwzględnieniu rabatu gotówkowego |
+| <span data-ttu-id="e65c1-123">Suma faktury</span><span class="sxs-lookup"><span data-stu-id="e65c1-123">Invoice total</span></span> | <span data-ttu-id="e65c1-124">Dostępny rabat gotówkowy</span><span class="sxs-lookup"><span data-stu-id="e65c1-124">Cash discount available</span></span> | <span data-ttu-id="e65c1-125">Kwota do zapłaty po uwzględnieniu rabatu gotówkowego</span><span class="sxs-lookup"><span data-stu-id="e65c1-125">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00 zł        | 10,50 zł                   | 94,50 zł                                               |
+| <span data-ttu-id="e65c1-126">105,00 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-126">105.00</span></span>        | <span data-ttu-id="e65c1-127">10,50 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-127">10.50</span></span>                   | <span data-ttu-id="e65c1-128">94,50 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-128">94.50</span></span>                                               |
 
-Odbiorca dokonuje płatności na kwotę 95,00 w okresie gwarantującym przyznanie rabatu gotówkowego. Płatność jest rozliczana na podstawie faktury na kwotę 105,00. Po rozliczeniu faktury i płatności następne transakcje dla odbiorcy są tworzone dla odbiorcy w module Rozrachunki z odbiorcami.
+<span data-ttu-id="e65c1-129">Odbiorca dokonuje płatności na kwotę 95,00 w okresie gwarantującym przyznanie rabatu gotówkowego.</span><span class="sxs-lookup"><span data-stu-id="e65c1-129">The customer submits a payment for 95.00 within the cash discount period.</span></span> <span data-ttu-id="e65c1-130">Płatność jest rozliczana na podstawie faktury na kwotę 105,00.</span><span class="sxs-lookup"><span data-stu-id="e65c1-130">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="e65c1-131">Po rozliczeniu faktury i płatności następne transakcje dla odbiorcy są tworzone dla odbiorcy w module Rozrachunki z odbiorcami.</span><span class="sxs-lookup"><span data-stu-id="e65c1-131">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Transakcja   | Kwota | Saldo |
+| <span data-ttu-id="e65c1-132">Transakcja</span><span class="sxs-lookup"><span data-stu-id="e65c1-132">Transaction</span></span>   | <span data-ttu-id="e65c1-133">Kwota</span><span class="sxs-lookup"><span data-stu-id="e65c1-133">Amount</span></span> | <span data-ttu-id="e65c1-134">Saldo</span><span class="sxs-lookup"><span data-stu-id="e65c1-134">Balance</span></span> |
 |---------------|--------|---------|
-| Faktura       | 105,00 zł | 0,00    |
-| Płatność       | -95,00 | 0,00    |
-| Rabat gotówkowy | -10,50 | 0,00    |
+| <span data-ttu-id="e65c1-135">Faktura</span><span class="sxs-lookup"><span data-stu-id="e65c1-135">Invoice</span></span>       | <span data-ttu-id="e65c1-136">105,00 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-136">105.00</span></span> | <span data-ttu-id="e65c1-137">0,00</span><span class="sxs-lookup"><span data-stu-id="e65c1-137">0.00</span></span>    |
+| <span data-ttu-id="e65c1-138">Płatność</span><span class="sxs-lookup"><span data-stu-id="e65c1-138">Payment</span></span>       | <span data-ttu-id="e65c1-139">-95,00</span><span class="sxs-lookup"><span data-stu-id="e65c1-139">-95.00</span></span> | <span data-ttu-id="e65c1-140">0,00</span><span class="sxs-lookup"><span data-stu-id="e65c1-140">0.00</span></span>    |
+| <span data-ttu-id="e65c1-141">Rabat gotówkowy</span><span class="sxs-lookup"><span data-stu-id="e65c1-141">Cash discount</span></span> | <span data-ttu-id="e65c1-142">-10,50</span><span class="sxs-lookup"><span data-stu-id="e65c1-142">-10.50</span></span> | <span data-ttu-id="e65c1-143">0,00</span><span class="sxs-lookup"><span data-stu-id="e65c1-143">0.00</span></span>    |
 
-Poniższe zapisy księgowe są generowane dla płatności i rozliczeń. **Płatność**
+<span data-ttu-id="e65c1-144">Poniższe zapisy księgowe są generowane dla płatności i rozliczeń.</span><span class="sxs-lookup"><span data-stu-id="e65c1-144">The following accounting entries are generated for the payment and the settlement.</span></span> <span data-ttu-id="e65c1-145">**Płatność**</span><span class="sxs-lookup"><span data-stu-id="e65c1-145">**Payment**</span></span>
 
-| Konto             | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="e65c1-146">Konto</span><span class="sxs-lookup"><span data-stu-id="e65c1-146">Account</span></span>             | <span data-ttu-id="e65c1-147">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="e65c1-147">Debit amount</span></span> | <span data-ttu-id="e65c1-148">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="e65c1-148">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Kasa                | 95,00 zł        |               |
-| Rozrachunki z odbiorcami |              | 95,00 zł         |
+| <span data-ttu-id="e65c1-149">Kasa</span><span class="sxs-lookup"><span data-stu-id="e65c1-149">Cash</span></span>                | <span data-ttu-id="e65c1-150">95,00 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-150">95.00</span></span>        |               |
+| <span data-ttu-id="e65c1-151">Rozrachunki z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="e65c1-151">Accounts receivable</span></span> |              | <span data-ttu-id="e65c1-152">95,00 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-152">95.00</span></span>         |
 
-**Rozliczenie**
+<span data-ttu-id="e65c1-153">**Rozliczenie**</span><span class="sxs-lookup"><span data-stu-id="e65c1-153">**Settlement**</span></span>
 
-| Konto                                                                                                          | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="e65c1-154">Konto</span><span class="sxs-lookup"><span data-stu-id="e65c1-154">Account</span></span>                                                                                                          | <span data-ttu-id="e65c1-155">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="e65c1-155">Debit amount</span></span> | <span data-ttu-id="e65c1-156">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="e65c1-156">Credit amount</span></span> |
 |------------------------------------------------------------------------------------------------------------------|--------------|---------------|
-| Rabat gotówkowy (pole **Konto główne rabatów odbiorcy** na stronie **Rabat gotówkowy**)                 | 10,50 zł        |               |
-| Rozrachunki z odbiorcami                                                                                              |              | 10,50 zł         |
-| Rabat gotówkowy odbiorcy (pole **Rabat gotówkowy odbiorcy** na stronie **Konto dla transakcji automatycznych**) |              | 0.50          |
-| Rozrachunki z odbiorcami                                                                                              | 0.50         |               |
+| <span data-ttu-id="e65c1-157">Rabat gotówkowy (pole **Konto główne rabatów odbiorcy** na stronie **Rabat gotówkowy**)</span><span class="sxs-lookup"><span data-stu-id="e65c1-157">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span>                 | <span data-ttu-id="e65c1-158">10,50 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-158">10.50</span></span>        |               |
+| <span data-ttu-id="e65c1-159">Rozrachunki z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="e65c1-159">Accounts receivable</span></span>                                                                                              |              | <span data-ttu-id="e65c1-160">10,50 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-160">10.50</span></span>         |
+| <span data-ttu-id="e65c1-161">Rabat gotówkowy odbiorcy (pole **Rabat gotówkowy odbiorcy** na stronie **Konto dla transakcji automatycznych**)</span><span class="sxs-lookup"><span data-stu-id="e65c1-161">Customer cash discount (the **Customer cash discount** field on the **Account for automatic transactions** page)</span></span> |              | <span data-ttu-id="e65c1-162">0.50</span><span class="sxs-lookup"><span data-stu-id="e65c1-162">0.50</span></span>          |
+| <span data-ttu-id="e65c1-163">Rozrachunki z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="e65c1-163">Accounts receivable</span></span>                                                                                              | <span data-ttu-id="e65c1-164">0.50</span><span class="sxs-lookup"><span data-stu-id="e65c1-164">0.50</span></span>         |               |
 
-### <a name="scenario-2"></a>Scenariusz 2
+### <a name="scenario-2"></a><span data-ttu-id="e65c1-165">Scenariusz 2</span><span class="sxs-lookup"><span data-stu-id="e65c1-165">Scenario 2</span></span>
 
-W tym scenariuszu kwota nadpłaty przekracza maksymalną wysokość nadpłaty lub niedopłaty. Wprowadzana jest faktura na kwotę 105,00 z dostępnym rabatem gotówkowym, jeśli faktura zostanie zapłacona w ciągu 7 dni.
+<span data-ttu-id="e65c1-166">W tym scenariuszu kwota nadpłaty przekracza maksymalną wysokość nadpłaty lub niedopłaty.</span><span class="sxs-lookup"><span data-stu-id="e65c1-166">In this scenario, the overpayment amount exceeds the maximum overpayment or underpayment amount.</span></span> <span data-ttu-id="e65c1-167">Wprowadzana jest faktura na kwotę 105,00 z dostępnym rabatem gotówkowym, jeśli faktura zostanie zapłacona w ciągu 7 dni.</span><span class="sxs-lookup"><span data-stu-id="e65c1-167">An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Suma faktury | Dostępny rabat gotówkowy | Kwota do zapłaty po uwzględnieniu rabatu gotówkowego |
+| <span data-ttu-id="e65c1-168">Suma faktury</span><span class="sxs-lookup"><span data-stu-id="e65c1-168">Invoice total</span></span> | <span data-ttu-id="e65c1-169">Dostępny rabat gotówkowy</span><span class="sxs-lookup"><span data-stu-id="e65c1-169">Cash discount available</span></span> | <span data-ttu-id="e65c1-170">Kwota do zapłaty po uwzględnieniu rabatu gotówkowego</span><span class="sxs-lookup"><span data-stu-id="e65c1-170">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00 zł        | 10,50 zł                   | 94,50 zł                                               |
+| <span data-ttu-id="e65c1-171">105,00 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-171">105.00</span></span>        | <span data-ttu-id="e65c1-172">10,50 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-172">10.50</span></span>                   | <span data-ttu-id="e65c1-173">94,50 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-173">94.50</span></span>                                               |
 
-Odbiorca dokonuje płatności na kwotę 95,00 w okresie gwarantującym przyznanie rabatu gotówkowego. Płatność jest rozliczana na podstawie faktury na kwotę 105,00. Po rozliczeniu faktury i płatności następne transakcje dla odbiorcy są tworzone dla odbiorcy w module Rozrachunki z odbiorcami.
+<span data-ttu-id="e65c1-174">Odbiorca dokonuje płatności na kwotę 95,00 w okresie gwarantującym przyznanie rabatu gotówkowego.</span><span class="sxs-lookup"><span data-stu-id="e65c1-174">The customer submits a payment for 95.00 within the cash discount period.</span></span> <span data-ttu-id="e65c1-175">Płatność jest rozliczana na podstawie faktury na kwotę 105,00.</span><span class="sxs-lookup"><span data-stu-id="e65c1-175">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="e65c1-176">Po rozliczeniu faktury i płatności następne transakcje dla odbiorcy są tworzone dla odbiorcy w module Rozrachunki z odbiorcami.</span><span class="sxs-lookup"><span data-stu-id="e65c1-176">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Transakcja   | Kwota | Saldo |
+| <span data-ttu-id="e65c1-177">Transakcja</span><span class="sxs-lookup"><span data-stu-id="e65c1-177">Transaction</span></span>   | <span data-ttu-id="e65c1-178">Kwota</span><span class="sxs-lookup"><span data-stu-id="e65c1-178">Amount</span></span> | <span data-ttu-id="e65c1-179">Saldo</span><span class="sxs-lookup"><span data-stu-id="e65c1-179">Balance</span></span> |
 |---------------|--------|---------|
-| Faktura       | 105,00 zł | 0,00    |
-| Płatność       | -95,00 | -0,50   |
-| Rabat gotówkowy | -10,50 | 0,00    |
+| <span data-ttu-id="e65c1-180">Faktura</span><span class="sxs-lookup"><span data-stu-id="e65c1-180">Invoice</span></span>       | <span data-ttu-id="e65c1-181">105,00 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-181">105.00</span></span> | <span data-ttu-id="e65c1-182">0,00</span><span class="sxs-lookup"><span data-stu-id="e65c1-182">0.00</span></span>    |
+| <span data-ttu-id="e65c1-183">Płatność</span><span class="sxs-lookup"><span data-stu-id="e65c1-183">Payment</span></span>       | <span data-ttu-id="e65c1-184">-95,00</span><span class="sxs-lookup"><span data-stu-id="e65c1-184">-95.00</span></span> | <span data-ttu-id="e65c1-185">-0,50</span><span class="sxs-lookup"><span data-stu-id="e65c1-185">-0.50</span></span>   |
+| <span data-ttu-id="e65c1-186">Rabat gotówkowy</span><span class="sxs-lookup"><span data-stu-id="e65c1-186">Cash discount</span></span> | <span data-ttu-id="e65c1-187">-10,50</span><span class="sxs-lookup"><span data-stu-id="e65c1-187">-10.50</span></span> | <span data-ttu-id="e65c1-188">0,00</span><span class="sxs-lookup"><span data-stu-id="e65c1-188">0.00</span></span>    |
 
-Kwota nadpłaty w wysokości 0,50 pozostanie jako otwarte saldo płatności i można ją rozliczyć według innej faktury. Poniższe zapisy księgowe są generowane dla płatności i rozliczeń. **Płatność**
+<span data-ttu-id="e65c1-189">Kwota nadpłaty w wysokości 0,50 pozostanie jako otwarte saldo płatności i można ją rozliczyć według innej faktury.</span><span class="sxs-lookup"><span data-stu-id="e65c1-189">The overpayment amount of 0.50 will remain as an open balance on the payment and can be settled against another invoice.</span></span> <span data-ttu-id="e65c1-190">Poniższe zapisy księgowe są generowane dla płatności i rozliczeń.</span><span class="sxs-lookup"><span data-stu-id="e65c1-190">The following accounting entries are generated for the payment and the settlement.</span></span> <span data-ttu-id="e65c1-191">**Płatność**</span><span class="sxs-lookup"><span data-stu-id="e65c1-191">**Payment**</span></span>
 
-| Konto             | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="e65c1-192">Konto</span><span class="sxs-lookup"><span data-stu-id="e65c1-192">Account</span></span>             | <span data-ttu-id="e65c1-193">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="e65c1-193">Debit amount</span></span> | <span data-ttu-id="e65c1-194">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="e65c1-194">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Kasa                | 95,00 zł        |               |
-| Rozrachunki z odbiorcami |              | 95,00 zł         |
+| <span data-ttu-id="e65c1-195">Kasa</span><span class="sxs-lookup"><span data-stu-id="e65c1-195">Cash</span></span>                | <span data-ttu-id="e65c1-196">95,00 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-196">95.00</span></span>        |               |
+| <span data-ttu-id="e65c1-197">Rozrachunki z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="e65c1-197">Accounts receivable</span></span> |              | <span data-ttu-id="e65c1-198">95,00 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-198">95.00</span></span>         |
 
-**Rozliczenie**
+<span data-ttu-id="e65c1-199">**Rozliczenie**</span><span class="sxs-lookup"><span data-stu-id="e65c1-199">**Settlement**</span></span>
 
-| Konto                                                                                          | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="e65c1-200">Konto</span><span class="sxs-lookup"><span data-stu-id="e65c1-200">Account</span></span>                                                                                          | <span data-ttu-id="e65c1-201">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="e65c1-201">Debit amount</span></span> | <span data-ttu-id="e65c1-202">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="e65c1-202">Credit amount</span></span> |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Rabat gotówkowy (pole **Konto główne rabatów odbiorcy** na stronie **Rabat gotówkowy**) | 10,50 zł        |               |
-| Rozrachunki z odbiorcami                                                                              |              | 10,50 zł         |
+| <span data-ttu-id="e65c1-203">Rabat gotówkowy (pole **Konto główne rabatów odbiorcy** na stronie **Rabat gotówkowy**)</span><span class="sxs-lookup"><span data-stu-id="e65c1-203">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span> | <span data-ttu-id="e65c1-204">10,50 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-204">10.50</span></span>        |               |
+| <span data-ttu-id="e65c1-205">Rozrachunki z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="e65c1-205">Accounts receivable</span></span>                                                                              |              | <span data-ttu-id="e65c1-206">10,50 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-206">10.50</span></span>         |
 
-## <a name="cash-discount-administration--unspecific"></a>Zarządzanie rabatem gotówkowym = Nieokreślone
-Po wybraniu opcji **Nieokreślone** w polu **Zarządzanie rabatami gotówkowymi** na stronie **Konta dla transakcji automatycznych** kwota rabatu gotówkowego jest redukowana przez kwotę nadpłaty. Zachowanie to stosowane jest zawsze, niezależnie od tego, czy kwota nadpłaty jest większa czy mniejsza od ilości wprowadzonej w polu **Maksymalna nadpłata lub niedopłata**.
+## <a name="cash-discount-administration--unspecific"></a><span data-ttu-id="e65c1-207">Zarządzanie rabatem gotówkowym = Nieokreślone</span><span class="sxs-lookup"><span data-stu-id="e65c1-207">Cash discount administration = Unspecific</span></span>
+<span data-ttu-id="e65c1-208">Po wybraniu opcji **Nieokreślone** w polu **Zarządzanie rabatami gotówkowymi** na stronie **Konta dla transakcji automatycznych** kwota rabatu gotówkowego jest redukowana przez kwotę nadpłaty.</span><span class="sxs-lookup"><span data-stu-id="e65c1-208">When **Unspecific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the cash discount amount is reduced by the overpayment amount.</span></span> <span data-ttu-id="e65c1-209">Zachowanie to stosowane jest zawsze, niezależnie od tego, czy kwota nadpłaty jest większa czy mniejsza od ilości wprowadzonej w polu **Maksymalna nadpłata lub niedopłata**.</span><span class="sxs-lookup"><span data-stu-id="e65c1-209">This behavior always applies, regardless of whether the overpayment amount is over or under the amount that is entered in the **Maximum overpayment or underpayment** field.</span></span>
 
-### <a name="scenario-3"></a>Scenariusz 3
+### <a name="scenario-3"></a><span data-ttu-id="e65c1-210">Scenariusz 3</span><span class="sxs-lookup"><span data-stu-id="e65c1-210">Scenario 3</span></span>
 
-W tym scenariuszu wprowadzana jest faktura na kwotę 105,00 z dostępnym rabatem gotówkowym, jeśli faktura zostanie zapłacona w ciągu 7 dni.
+<span data-ttu-id="e65c1-211">W tym scenariuszu wprowadzana jest faktura na kwotę 105,00 z dostępnym rabatem gotówkowym, jeśli faktura zostanie zapłacona w ciągu 7 dni.</span><span class="sxs-lookup"><span data-stu-id="e65c1-211">In this scenario, an invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.</span></span>
 
-| Suma faktury | Dostępny rabat gotówkowy | Kwota do zapłaty po uwzględnieniu rabatu gotówkowego |
+| <span data-ttu-id="e65c1-212">Suma faktury</span><span class="sxs-lookup"><span data-stu-id="e65c1-212">Invoice total</span></span> | <span data-ttu-id="e65c1-213">Dostępny rabat gotówkowy</span><span class="sxs-lookup"><span data-stu-id="e65c1-213">Cash discount available</span></span> | <span data-ttu-id="e65c1-214">Kwota do zapłaty po uwzględnieniu rabatu gotówkowego</span><span class="sxs-lookup"><span data-stu-id="e65c1-214">Amount to be paid, which includes the cash discount</span></span> |
 |---------------|-------------------------|-----------------------------------------------------|
-| 105,00 zł        | 10,50 zł                   | 94,50 zł                                               |
+| <span data-ttu-id="e65c1-215">105,00 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-215">105.00</span></span>        | <span data-ttu-id="e65c1-216">10,50 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-216">10.50</span></span>                   | <span data-ttu-id="e65c1-217">94,50 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-217">94.50</span></span>                                               |
 
-Odbiorca dokonuje płatności na kwotę 95,00 w dniu gwarantującym przyznanie rabatu gotówkowego. Płatność jest rozliczana na podstawie faktury na kwotę 105,00. Po rozliczeniu faktury i płatności następne transakcje dla odbiorcy są tworzone dla odbiorcy w module Rozrachunki z odbiorcami.
+<span data-ttu-id="e65c1-218">Odbiorca dokonuje płatności na kwotę 95,00 w dniu gwarantującym przyznanie rabatu gotówkowego.</span><span class="sxs-lookup"><span data-stu-id="e65c1-218">The customer submits a payment for 95.00 within the cash discount date.</span></span> <span data-ttu-id="e65c1-219">Płatność jest rozliczana na podstawie faktury na kwotę 105,00.</span><span class="sxs-lookup"><span data-stu-id="e65c1-219">The payment is settled against the invoice for 105.00.</span></span> <span data-ttu-id="e65c1-220">Po rozliczeniu faktury i płatności następne transakcje dla odbiorcy są tworzone dla odbiorcy w module Rozrachunki z odbiorcami.</span><span class="sxs-lookup"><span data-stu-id="e65c1-220">After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.</span></span>
 
-| Transakcja   | Kwota | Saldo |
+| <span data-ttu-id="e65c1-221">Transakcja</span><span class="sxs-lookup"><span data-stu-id="e65c1-221">Transaction</span></span>   | <span data-ttu-id="e65c1-222">Kwota</span><span class="sxs-lookup"><span data-stu-id="e65c1-222">Amount</span></span> | <span data-ttu-id="e65c1-223">Saldo</span><span class="sxs-lookup"><span data-stu-id="e65c1-223">Balance</span></span> |
 |---------------|--------|---------|
-| Faktura       | 105,00 zł | 0,00    |
-| Płatność       | -95,00 | -0,00   |
-| Rabat gotówkowy | -10,00 | 0,00    |
+| <span data-ttu-id="e65c1-224">Faktura</span><span class="sxs-lookup"><span data-stu-id="e65c1-224">Invoice</span></span>       | <span data-ttu-id="e65c1-225">105,00 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-225">105.00</span></span> | <span data-ttu-id="e65c1-226">0,00</span><span class="sxs-lookup"><span data-stu-id="e65c1-226">0.00</span></span>    |
+| <span data-ttu-id="e65c1-227">Płatność</span><span class="sxs-lookup"><span data-stu-id="e65c1-227">Payment</span></span>       | <span data-ttu-id="e65c1-228">-95,00</span><span class="sxs-lookup"><span data-stu-id="e65c1-228">-95.00</span></span> | <span data-ttu-id="e65c1-229">-0,00</span><span class="sxs-lookup"><span data-stu-id="e65c1-229">-0.00</span></span>   |
+| <span data-ttu-id="e65c1-230">Rabat gotówkowy</span><span class="sxs-lookup"><span data-stu-id="e65c1-230">Cash discount</span></span> | <span data-ttu-id="e65c1-231">-10,00</span><span class="sxs-lookup"><span data-stu-id="e65c1-231">-10.00</span></span> | <span data-ttu-id="e65c1-232">0,00</span><span class="sxs-lookup"><span data-stu-id="e65c1-232">0.00</span></span>    |
 
-Kwota rabatu gotówkowego zostanie zmniejszona z 10,50 do 10,00. Płatność i faktura są uznawane za rozliczone. **Płatność**
+<span data-ttu-id="e65c1-233">Kwota rabatu gotówkowego zostanie zmniejszona z 10,50 do 10,00.</span><span class="sxs-lookup"><span data-stu-id="e65c1-233">The cash discount amount is reduced from 10.50 to 10.00.</span></span> <span data-ttu-id="e65c1-234">Płatność i faktura są uznawane za rozliczone.</span><span class="sxs-lookup"><span data-stu-id="e65c1-234">The payment and invoice are considered settled.</span></span> <span data-ttu-id="e65c1-235">**Płatność**</span><span class="sxs-lookup"><span data-stu-id="e65c1-235">**Payment**</span></span>
 
-| Konto             | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="e65c1-236">Konto</span><span class="sxs-lookup"><span data-stu-id="e65c1-236">Account</span></span>             | <span data-ttu-id="e65c1-237">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="e65c1-237">Debit amount</span></span> | <span data-ttu-id="e65c1-238">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="e65c1-238">Credit amount</span></span> |
 |---------------------|--------------|---------------|
-| Kasa                | 95,00 zł        |               |
-| Rozrachunki z odbiorcami |              | 95,00 zł         |
+| <span data-ttu-id="e65c1-239">Kasa</span><span class="sxs-lookup"><span data-stu-id="e65c1-239">Cash</span></span>                | <span data-ttu-id="e65c1-240">95,00 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-240">95.00</span></span>        |               |
+| <span data-ttu-id="e65c1-241">Rozrachunki z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="e65c1-241">Accounts receivable</span></span> |              | <span data-ttu-id="e65c1-242">95,00 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-242">95.00</span></span>         |
 
-**Rozliczenie**
+<span data-ttu-id="e65c1-243">**Rozliczenie**</span><span class="sxs-lookup"><span data-stu-id="e65c1-243">**Settlement**</span></span>
 
-| Konto                                                                                          | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="e65c1-244">Konto</span><span class="sxs-lookup"><span data-stu-id="e65c1-244">Account</span></span>                                                                                          | <span data-ttu-id="e65c1-245">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="e65c1-245">Debit amount</span></span> | <span data-ttu-id="e65c1-246">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="e65c1-246">Credit amount</span></span> |
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Rabat gotówkowy (pole **Konto główne rabatów odbiorcy** na stronie **Rabat gotówkowy**) | 10,50 zł        |               |
-| Rozrachunki z odbiorcami                                                                              |              | 10,50 zł         |
+| <span data-ttu-id="e65c1-247">Rabat gotówkowy (pole **Konto główne rabatów odbiorcy** na stronie **Rabat gotówkowy**)</span><span class="sxs-lookup"><span data-stu-id="e65c1-247">Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)</span></span> | <span data-ttu-id="e65c1-248">10,50 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-248">10.50</span></span>        |               |
+| <span data-ttu-id="e65c1-249">Rozrachunki z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="e65c1-249">Accounts receivable</span></span>                                                                              |              | <span data-ttu-id="e65c1-250">10,50 zł</span><span class="sxs-lookup"><span data-stu-id="e65c1-250">10.50</span></span>         |
 
 
 

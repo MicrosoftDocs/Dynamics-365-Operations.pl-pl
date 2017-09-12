@@ -16,61 +16,61 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: db6babb4cc679d8f3c6346e72013157a34ea3216
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2f10f627f33108b8750a1d71d24a99763178e2ef
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-the-transfer-documents-for-goods-movement-inside-a-company"></a>Konfigurowanie dokumentów przesunięcia towarów wewnątrz firmy
+# <a name="set-up-the-transfer-documents-for-goods-movement-inside-a-company"></a><span data-ttu-id="5dd82-103">Konfigurowanie dokumentów przesunięcia towarów wewnątrz firmy</span><span class="sxs-lookup"><span data-stu-id="5dd82-103">Set up the transfer documents for goods movement inside a company</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ta procedura pokazuje, jak utworzyć dokumenty przeniesienia w celu przesunięcia towarów wewnątrz firmy. Procedura jest dostępna tylko dla firm z główną siedzibą na Litwie. Procedurę utworzono przy użyciu danych firmy demonstracyjnej DEMF, której podstawowy adres mieści się na Litwie. Zanim będzie można wykonać tę procedurę, należy wykonać procedurę „Konfigurowanie dokumentów przesunięcia towarów wewnątrz firmy”. Procedura jest przeznaczona dla pracowników księgujących zapasy. Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.
+<span data-ttu-id="5dd82-104">Ta procedura pokazuje, jak utworzyć dokumenty przeniesienia w celu przesunięcia towarów wewnątrz firmy.</span><span class="sxs-lookup"><span data-stu-id="5dd82-104">This procedure shows how to create transfer documents for goods movement inside a company.</span></span> <span data-ttu-id="5dd82-105">Procedura jest dostępna tylko dla firm z główną siedzibą na Litwie.</span><span class="sxs-lookup"><span data-stu-id="5dd82-105">This procedure is only available for legal entities with a primary address in Lithuania.</span></span> <span data-ttu-id="5dd82-106">Procedurę utworzono przy użyciu danych firmy demonstracyjnej DEMF, której podstawowy adres mieści się na Litwie.</span><span class="sxs-lookup"><span data-stu-id="5dd82-106">The procedure was created using the demo data company DEMF with a primary address in Lithuania.</span></span> <span data-ttu-id="5dd82-107">Zanim będzie można wykonać tę procedurę, należy wykonać procedurę „Konfigurowanie dokumentów przesunięcia towarów wewnątrz firmy”.</span><span class="sxs-lookup"><span data-stu-id="5dd82-107">Before you can complete this procedure, you must complete the “Set up transfer documents for goods movement inside a company” procedure.</span></span> <span data-ttu-id="5dd82-108">Procedura jest przeznaczona dla pracowników księgujących zapasy.</span><span class="sxs-lookup"><span data-stu-id="5dd82-108">This procedure is intended for inventory accountants.</span></span> <span data-ttu-id="5dd82-109">Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.</span><span class="sxs-lookup"><span data-stu-id="5dd82-109">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-transfer-order"></a>Tworzenie zamówienia przeniesienia
-1. Wybierz kolejno opcje Zarządzanie zapasami > Zamówienia przychodzące > Zamówienie przeniesienia.
-2. Kliknij przycisk Nowy.
-3. W polu Z magazynu wprowadź lub wybierz wartość.
-4. W polu Do magazynu wprowadź lub wybierz wartość.
-5. Kliknij przycisk Dodaj.
-6. Na liście oznacz wybrany wiersz.
-7. W polu Numer towaru wprowadź lub wybierz wartość.
+## <a name="create-a-transfer-order"></a><span data-ttu-id="5dd82-110">Tworzenie zamówienia przeniesienia</span><span class="sxs-lookup"><span data-stu-id="5dd82-110">Create a transfer order</span></span>
+1. <span data-ttu-id="5dd82-111">Wybierz kolejno opcje Zarządzanie zapasami > Zamówienia przychodzące > Zamówienie przeniesienia.</span><span class="sxs-lookup"><span data-stu-id="5dd82-111">Go to Inventory management > Inbound orders > Transfer order.</span></span>
+2. <span data-ttu-id="5dd82-112">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="5dd82-112">Click New.</span></span>
+3. <span data-ttu-id="5dd82-113">W polu Z magazynu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="5dd82-113">In the From warehouse field, enter or select a value.</span></span>
+4. <span data-ttu-id="5dd82-114">W polu Do magazynu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="5dd82-114">In the To warehouse field, enter or select a value.</span></span>
+5. <span data-ttu-id="5dd82-115">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="5dd82-115">Click Add.</span></span>
+6. <span data-ttu-id="5dd82-116">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="5dd82-116">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="5dd82-117">W polu Numer towaru wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="5dd82-117">In the Item number field, enter or select a value.</span></span>
 
-## <a name="enter-transportation-details-for-the-transfer-order"></a>Wprowadzanie szczegółów transportu dla zamówienia przeniesienia
-1. Kliknij przycisk Zapisz.
-2. W okienku akcji kliknij pozycję Wysyłka.
-3. Kliknij opcję Szczegóły transportu.
-4. W polu Drukuj szczegóły transportu zaznacz opcję Tak.
-5. W polu Towary wydane przez wprowadź lub wybierz wartość.
-6. W polu Opakowanie wpisz wartość.
-7. W polu Poziom zagrożenia ładunku wpisz wartość.
-8. Wprowadź lub wybierz wartość w polu Przewoźnik.
-9. Wprowadź lub wybierz wartość w polu Model.
-10. W polu Numer rejestracji wpisz wartość.
-11. W polu Numer rejestracyjny przyczepy wpisz wartość.
-12. Wprowadź lub wybierz wartość w polu Kierowca.
-13. W polu Nazwisko kierowcy wpisz wartość.
-14. Kliknij przycisk Zapisz.
-15. Zamknij stronę.
+## <a name="enter-transportation-details-for-the-transfer-order"></a><span data-ttu-id="5dd82-118">Wprowadzanie szczegółów transportu dla zamówienia przeniesienia</span><span class="sxs-lookup"><span data-stu-id="5dd82-118">Enter transportation details for the transfer order</span></span>
+1. <span data-ttu-id="5dd82-119">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="5dd82-119">Click Save.</span></span>
+2. <span data-ttu-id="5dd82-120">W okienku akcji kliknij pozycję Wysyłka.</span><span class="sxs-lookup"><span data-stu-id="5dd82-120">On the Action Pane, click Ship.</span></span>
+3. <span data-ttu-id="5dd82-121">Kliknij opcję Szczegóły transportu.</span><span class="sxs-lookup"><span data-stu-id="5dd82-121">Click Transportation details.</span></span>
+4. <span data-ttu-id="5dd82-122">W polu Drukuj szczegóły transportu zaznacz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="5dd82-122">Select Yes in the Print transportation details field.</span></span>
+5. <span data-ttu-id="5dd82-123">W polu Towary wydane przez wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="5dd82-123">In the Goods issued by field, enter or select a value.</span></span>
+6. <span data-ttu-id="5dd82-124">W polu Opakowanie wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="5dd82-124">In the Package field, type a value.</span></span>
+7. <span data-ttu-id="5dd82-125">W polu Poziom zagrożenia ładunku wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="5dd82-125">In the Risk level of the load field, type a value.</span></span>
+8. <span data-ttu-id="5dd82-126">Wprowadź lub wybierz wartość w polu Przewoźnik.</span><span class="sxs-lookup"><span data-stu-id="5dd82-126">In the Carrier field, enter or select a value.</span></span>
+9. <span data-ttu-id="5dd82-127">Wprowadź lub wybierz wartość w polu Model.</span><span class="sxs-lookup"><span data-stu-id="5dd82-127">In the Model field, enter or select a value.</span></span>
+10. <span data-ttu-id="5dd82-128">W polu Numer rejestracji wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="5dd82-128">In the Registration number field, type a value.</span></span>
+11. <span data-ttu-id="5dd82-129">W polu Numer rejestracyjny przyczepy wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="5dd82-129">In the Trailer registration number field, type a value.</span></span>
+12. <span data-ttu-id="5dd82-130">Wprowadź lub wybierz wartość w polu Kierowca.</span><span class="sxs-lookup"><span data-stu-id="5dd82-130">In the Driver field, enter or select a value.</span></span>
+13. <span data-ttu-id="5dd82-131">W polu Nazwisko kierowcy wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="5dd82-131">In the Driver name field, type a value.</span></span>
+14. <span data-ttu-id="5dd82-132">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="5dd82-132">Click Save.</span></span>
+15. <span data-ttu-id="5dd82-133">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="5dd82-133">Close the page.</span></span>
 
-## <a name="view-the-packing-slip-for-the-unposted-transfer-order"></a>Wyświetlanie dokumentu dostawy dla niezaksięgowanego zamówienia przeniesienia
-1. Kliknij opcję Dokument dostawy.
-2. Kliknij przycisk OK.
-3. Zamknij stronę.
+## <a name="view-the-packing-slip-for-the-unposted-transfer-order"></a><span data-ttu-id="5dd82-134">Wyświetlanie dokumentu dostawy dla niezaksięgowanego zamówienia przeniesienia</span><span class="sxs-lookup"><span data-stu-id="5dd82-134">View the packing slip for the unposted transfer order</span></span>
+1. <span data-ttu-id="5dd82-135">Kliknij opcję Dokument dostawy.</span><span class="sxs-lookup"><span data-stu-id="5dd82-135">Click Packing slip.</span></span>
+2. <span data-ttu-id="5dd82-136">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5dd82-136">Click OK.</span></span>
+3. <span data-ttu-id="5dd82-137">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="5dd82-137">Close the page.</span></span>
 
-## <a name="view-the-packing-slip-for-the-posted-transfer-order"></a>Wyświetlanie dokumentu dostawy dla zaksięgowanego zamówienia przeniesienia
-1. W okienku akcji kliknij pozycję Zamówienie przeniesienia.
-2. W okienku akcji kliknij pozycję Wysyłka.
-3. Kliknij opcję Wyślij zamówienie przeniesienia.
-4. Kliknij kartę Ogólne.
-5. W polu Aktualizuj wybierz opcję.
-6. Kliknij kartę Przegląd.
-7. W polu Dokument dostawy wpisz wartość.
-8. Kliknij przycisk OK.
-9. W okienku akcji kliknij pozycję Wysyłka.
-10. Kliknij opcję Dokument dostawy.
-11. Kliknij przycisk OK.
+## <a name="view-the-packing-slip-for-the-posted-transfer-order"></a><span data-ttu-id="5dd82-138">Wyświetlanie dokumentu dostawy dla zaksięgowanego zamówienia przeniesienia</span><span class="sxs-lookup"><span data-stu-id="5dd82-138">View the packing slip for the posted transfer order</span></span>
+1. <span data-ttu-id="5dd82-139">W okienku akcji kliknij pozycję Zamówienie przeniesienia.</span><span class="sxs-lookup"><span data-stu-id="5dd82-139">On the Action Pane, click Transfer order.</span></span>
+2. <span data-ttu-id="5dd82-140">W okienku akcji kliknij pozycję Wysyłka.</span><span class="sxs-lookup"><span data-stu-id="5dd82-140">On the Action Pane, click Ship.</span></span>
+3. <span data-ttu-id="5dd82-141">Kliknij opcję Wyślij zamówienie przeniesienia.</span><span class="sxs-lookup"><span data-stu-id="5dd82-141">Click Ship transfer order.</span></span>
+4. <span data-ttu-id="5dd82-142">Kliknij kartę Ogólne.</span><span class="sxs-lookup"><span data-stu-id="5dd82-142">Click the General tab.</span></span>
+5. <span data-ttu-id="5dd82-143">W polu Aktualizuj wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="5dd82-143">In the Update field, select an option.</span></span>
+6. <span data-ttu-id="5dd82-144">Kliknij kartę Przegląd.</span><span class="sxs-lookup"><span data-stu-id="5dd82-144">Click the Overview tab.</span></span>
+7. <span data-ttu-id="5dd82-145">W polu Dokument dostawy wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="5dd82-145">In the Packing slip field, type a value.</span></span>
+8. <span data-ttu-id="5dd82-146">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5dd82-146">Click OK.</span></span>
+9. <span data-ttu-id="5dd82-147">W okienku akcji kliknij pozycję Wysyłka.</span><span class="sxs-lookup"><span data-stu-id="5dd82-147">On the Action Pane, click Ship.</span></span>
+10. <span data-ttu-id="5dd82-148">Kliknij opcję Dokument dostawy.</span><span class="sxs-lookup"><span data-stu-id="5dd82-148">Click Packing slip.</span></span>
+11. <span data-ttu-id="5dd82-149">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5dd82-149">Click OK.</span></span>
 
 

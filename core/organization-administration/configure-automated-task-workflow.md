@@ -15,56 +15,56 @@ ms.custom: 192061
 ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 66f1b8e03cc0da5d21fea9b3c795d8f4097c8cfc
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 56e29bd2e875b8bb729e5dfe0c5ac03fc997ecbe
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="configure-an-automated-task-in-a-workflow"></a>Konfigurowanie zadania wykonywanego automatycznie w przepływie pracy
+# <a name="configure-an-automated-task-in-a-workflow"></a><span data-ttu-id="26cc0-103">Konfigurowanie zadania wykonywanego automatycznie w przepływie pracy</span><span class="sxs-lookup"><span data-stu-id="26cc0-103">Configure an automated task in a workflow</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym temacie wyjaśniono sposób konfigurowania właściwości zadania wykonywanego automatycznie.
+<span data-ttu-id="26cc0-104">W tym temacie wyjaśniono sposób konfigurowania właściwości zadania wykonywanego automatycznie.</span><span class="sxs-lookup"><span data-stu-id="26cc0-104">This topic explains how to configure the properties for an automated task.</span></span>
 
-Aby skonfigurować zadanie wykonywane automatycznie, w edytorze przepływu pracy kliknij zadanie prawym przyciskiem myszy i wybierz polecenie **Właściwości**, a zostanie otwarta strona **Właściwości**. Następnie za pomocą procedur zamieszczonych niżej skonfiguruj właściwości zadania wykonywanego automatycznie.
+<span data-ttu-id="26cc0-105">Aby skonfigurować zadanie wykonywane automatycznie, w edytorze przepływu pracy kliknij zadanie prawym przyciskiem myszy i wybierz polecenie **Właściwości**, a zostanie otwarta strona **Właściwości**.</span><span class="sxs-lookup"><span data-stu-id="26cc0-105">To configure an automated task in the workflow editor, right-click the task, and then click **Properties** to open the **Properties** page.</span></span> <span data-ttu-id="26cc0-106">Następnie za pomocą procedur zamieszczonych niżej skonfiguruj właściwości zadania wykonywanego automatycznie.</span><span class="sxs-lookup"><span data-stu-id="26cc0-106">Then use the following procedures to configure the properties for the automated task.</span></span>
 
-## <a name="name-the-task"></a>Nadawanie nazwy zadaniu
-Wykonaj następujące kroki, aby wprowadzić nazwę zadania wykonywanego automatycznie.
+## <a name="name-the-task"></a><span data-ttu-id="26cc0-107">Nadawanie nazwy zadaniu</span><span class="sxs-lookup"><span data-stu-id="26cc0-107">Name the task</span></span>
+<span data-ttu-id="26cc0-108">Wykonaj następujące kroki, aby wprowadzić nazwę zadania wykonywanego automatycznie.</span><span class="sxs-lookup"><span data-stu-id="26cc0-108">Follow these steps to enter a name for the automated task.</span></span>
 
-1.  W lewym okienku kliknij przycisk **Ustawienia podstawowe**.
-2.  W polu **Nazwa** wprowadź unikatową nazwę zadania.
+1.  <span data-ttu-id="26cc0-109">W lewym okienku kliknij przycisk **Ustawienia podstawowe**.</span><span class="sxs-lookup"><span data-stu-id="26cc0-109">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="26cc0-110">W polu **Nazwa** wprowadź unikatową nazwę zadania.</span><span class="sxs-lookup"><span data-stu-id="26cc0-110">In the **Name** field, enter a unique name for the task.</span></span>
 
-## <a name="specify-when-notifications-are-sent"></a>Określanie, kiedy są wysyłane powiadomienia
-Można wysyłać powiadomienia do odpowiednich osób po ponownym uruchomieniu lub anulowaniu zadania wykonywanego automatycznie. Wykonaj następujące kroki, aby określić, kiedy i do kogo są one wysyłane.
+## <a name="specify-when-notifications-are-sent"></a><span data-ttu-id="26cc0-111">Określanie, kiedy są wysyłane powiadomienia</span><span class="sxs-lookup"><span data-stu-id="26cc0-111">Specify when notifications are sent</span></span>
+<span data-ttu-id="26cc0-112">Można wysyłać powiadomienia do odpowiednich osób po ponownym uruchomieniu lub anulowaniu zadania wykonywanego automatycznie.</span><span class="sxs-lookup"><span data-stu-id="26cc0-112">You can send notifications to people when an automated task has been run or canceled.</span></span> <span data-ttu-id="26cc0-113">Wykonaj następujące kroki, aby określić, kiedy i do kogo są one wysyłane.</span><span class="sxs-lookup"><span data-stu-id="26cc0-113">Follow these steps to specify when notifications are sent, and who they are sent to.</span></span>
 
-1.  W lewym okienku kliknij opcję **Powiadomienia**.
-2.  Zaznacz pola wyboru obok zdarzeń, o których mają być wysyłane powiadomienia:
-    -   **Wykonanie** — powiadomienia są wysyłane po wykonaniu zadania.
-    -   **Anulowano** — powiadomienia są wysyłane po anulowaniu zadania.
+1.  <span data-ttu-id="26cc0-114">W lewym okienku kliknij opcję **Powiadomienia**.</span><span class="sxs-lookup"><span data-stu-id="26cc0-114">In the left pane, click **Notifications**.</span></span>
+2.  <span data-ttu-id="26cc0-115">Zaznacz pola wyboru obok zdarzeń, o których mają być wysyłane powiadomienia:</span><span class="sxs-lookup"><span data-stu-id="26cc0-115">Select the check box next to the events to send notifications for:</span></span>
+    -   <span data-ttu-id="26cc0-116">**Wykonanie** — powiadomienia są wysyłane po wykonaniu zadania.</span><span class="sxs-lookup"><span data-stu-id="26cc0-116">**Execution** – Notifications are sent when the task has been run.</span></span>
+    -   <span data-ttu-id="26cc0-117">**Anulowano** — powiadomienia są wysyłane po anulowaniu zadania.</span><span class="sxs-lookup"><span data-stu-id="26cc0-117">**Canceled** – Notifications are sent when the task has been canceled.</span></span>
 
-3.  Zaznacz wiersz zdarzenia wybranego w kroku 2.
-4.  Na karcie **Tekst powiadomienia** w polu tekstowym wprowadź tekst powiadomienia.
-5.  Aby spersonalizować powiadomienie, możesz wstawić symbole zastępcze. Podczas wyświetlania powiadomienia użytkownikom symbole zastępcze są zastępowane odpowiednimi danymi. Wykonaj następujące czynności, aby wstawić symbol zastępczy:
-    1.  W polu tekstowym kliknij miejsce, gdzie symbol zastępczy ma być wyświetlany.
-    2.  Kliknij opcję **Wstaw symbol zastępczy**.
-    3.  Na wyświetlonej liście wybierz symbol zastępczy, który chcesz wstawić.
-    4.  Kliknij przycisk **Wstaw**.
+3.  <span data-ttu-id="26cc0-118">Zaznacz wiersz zdarzenia wybranego w kroku 2.</span><span class="sxs-lookup"><span data-stu-id="26cc0-118">Select the row for an event that you selected in step 2.</span></span>
+4.  <span data-ttu-id="26cc0-119">Na karcie **Tekst powiadomienia** w polu tekstowym wprowadź tekst powiadomienia.</span><span class="sxs-lookup"><span data-stu-id="26cc0-119">On the **Notification text** tab, in the text box, enter the text of the notification.</span></span>
+5.  <span data-ttu-id="26cc0-120">Aby spersonalizować powiadomienie, możesz wstawić symbole zastępcze.</span><span class="sxs-lookup"><span data-stu-id="26cc0-120">To personalize the notification, you can insert placeholders.</span></span> <span data-ttu-id="26cc0-121">Podczas wyświetlania powiadomienia użytkownikom symbole zastępcze są zastępowane odpowiednimi danymi.</span><span class="sxs-lookup"><span data-stu-id="26cc0-121">Placeholders are replaced with appropriate data when the notification is shown to users.</span></span> <span data-ttu-id="26cc0-122">Wykonaj następujące czynności, aby wstawić symbol zastępczy:</span><span class="sxs-lookup"><span data-stu-id="26cc0-122">Follow these steps to insert a placeholder:</span></span>
+    1.  <span data-ttu-id="26cc0-123">W polu tekstowym kliknij miejsce, gdzie symbol zastępczy ma być wyświetlany.</span><span class="sxs-lookup"><span data-stu-id="26cc0-123">In the text box, click where the placeholder should appear.</span></span>
+    2.  <span data-ttu-id="26cc0-124">Kliknij opcję **Wstaw symbol zastępczy**.</span><span class="sxs-lookup"><span data-stu-id="26cc0-124">Click **Insert placeholder**.</span></span>
+    3.  <span data-ttu-id="26cc0-125">Na wyświetlonej liście wybierz symbol zastępczy, który chcesz wstawić.</span><span class="sxs-lookup"><span data-stu-id="26cc0-125">In the list that appears, select the placeholder to insert.</span></span>
+    4.  <span data-ttu-id="26cc0-126">Kliknij przycisk **Wstaw**.</span><span class="sxs-lookup"><span data-stu-id="26cc0-126">Click **Insert**.</span></span>
 
-6.  Aby dodać tłumaczenia powiadomienia, wykonaj następujące kroki:
-    1.  Kliknij opcję **Tłumaczenia**.
-    2.  Na wyświetlonej stronie kliknij przycisk **Dodaj**.
-    3.  Z wyświetlonej listy wybierz język, w którym wprowadzasz tekst.
-    4.  W polu **Przetłumaczony tekst** wprowadź tekst.
-    5.  Aby spersonalizować tekst, możesz wstawić symbole zastępcze, jak opisano w kroku 5.
-    6.  Kliknij przycisk **Zamknij**.
+6.  <span data-ttu-id="26cc0-127">Aby dodać tłumaczenia powiadomienia, wykonaj następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="26cc0-127">To add translations of the notification, follow these steps:</span></span>
+    1.  <span data-ttu-id="26cc0-128">Kliknij opcję **Tłumaczenia**.</span><span class="sxs-lookup"><span data-stu-id="26cc0-128">Click **Translations**.</span></span>
+    2.  <span data-ttu-id="26cc0-129">Na wyświetlonej stronie kliknij przycisk **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="26cc0-129">On the page that appears, click **Add**.</span></span>
+    3.  <span data-ttu-id="26cc0-130">Z wyświetlonej listy wybierz język, w którym wprowadzasz tekst.</span><span class="sxs-lookup"><span data-stu-id="26cc0-130">In the list that appears, select the language that you're entering the text in.</span></span>
+    4.  <span data-ttu-id="26cc0-131">W polu **Przetłumaczony tekst** wprowadź tekst.</span><span class="sxs-lookup"><span data-stu-id="26cc0-131">In the **Translated text** field, enter the text.</span></span>
+    5.  <span data-ttu-id="26cc0-132">Aby spersonalizować tekst, możesz wstawić symbole zastępcze, jak opisano w kroku 5.</span><span class="sxs-lookup"><span data-stu-id="26cc0-132">To personalize the text, you can insert placeholders as described in step 5.</span></span>
+    6.  <span data-ttu-id="26cc0-133">Kliknij przycisk **Zamknij**.</span><span class="sxs-lookup"><span data-stu-id="26cc0-133">Click **Close**.</span></span>
 
-7.  Na karcie **Odbiorcy** określ, komu będą wysyłane powiadomienia. Wybierz jedną z opcji w tabeli poniżej, a następnie wykonaj dodatkowe kroki dla tej opcji, zanim przejdziesz do kroku 8.
+7.  <span data-ttu-id="26cc0-134">Na karcie **Odbiorcy** określ, komu będą wysyłane powiadomienia.</span><span class="sxs-lookup"><span data-stu-id="26cc0-134">On the **Recipient** tab, specify who the notifications are sent to.</span></span> <span data-ttu-id="26cc0-135">Wybierz jedną z opcji w tabeli poniżej, a następnie wykonaj dodatkowe kroki dla tej opcji, zanim przejdziesz do kroku 8.</span><span class="sxs-lookup"><span data-stu-id="26cc0-135">Select one of the options in the following table, and then follow the additional steps for that option before you go to step 8.</span></span>
     <table>
     <colgroup>
     <col width="33%" />
@@ -73,39 +73,39 @@ Można wysyłać powiadomienia do odpowiednich osób po ponownym uruchomieniu lu
     </colgroup>
     <thead>
     <tr class="header">
-    <th>Opcja</th>
-    <th>Adresaci powiadomień</th>
-    <th>Dodatkowe kroki</th>
+    <th><span data-ttu-id="26cc0-136">Opcja</span><span class="sxs-lookup"><span data-stu-id="26cc0-136">Option</span></span></th>
+    <th><span data-ttu-id="26cc0-137">Adresaci powiadomień</span><span class="sxs-lookup"><span data-stu-id="26cc0-137">Notification recipients</span></span></th>
+    <th><span data-ttu-id="26cc0-138">Dodatkowe kroki</span><span class="sxs-lookup"><span data-stu-id="26cc0-138">Additional steps</span></span></th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td>Uczestnik</td>
-    <td>Użytkownicy, którzy są przypisani do określonej grupy lub roli</td>
+    <td><span data-ttu-id="26cc0-139">Uczestnik</span><span class="sxs-lookup"><span data-stu-id="26cc0-139">Participant</span></span></td>
+    <td><span data-ttu-id="26cc0-140">Użytkownicy, którzy są przypisani do określonej grupy lub roli</span><span class="sxs-lookup"><span data-stu-id="26cc0-140">Users who are assigned to a specific group or role</span></span></td>
     <td><ol>
-    <li>Gdy wybierzesz wartość w polu <strong>Uczestnik</strong>, na karcie <strong>Oparte na roli</strong> na liście <strong>Typ uczestnika</strong> wybierz typ grupy lub roli, do której mają być wysyłane powiadomienia.</li>
-    <li>Na liście <strong>Uczestnik</strong> wybierz grupę lub rolę, do której mają być wysyłane powiadomienia.</li>
+    <li><span data-ttu-id="26cc0-141">Gdy wybierzesz wartość w polu <strong>Uczestnik</strong>, na karcie <strong>Oparte na roli</strong> na liście <strong>Typ uczestnika</strong> wybierz typ grupy lub roli, do której mają być wysyłane powiadomienia.</span><span class="sxs-lookup"><span data-stu-id="26cc0-141">After you select <strong>Participant</strong>, on the <strong>Role based</strong> tab, in the <strong>Type of participant</strong> list, select the type of group or role to send notifications to.</span></span></li>
+    <li><span data-ttu-id="26cc0-142">Na liście <strong>Uczestnik</strong> wybierz grupę lub rolę, do której mają być wysyłane powiadomienia.</span><span class="sxs-lookup"><span data-stu-id="26cc0-142">In the <strong>Participant</strong> list, select the group or role to send notifications to.</span></span></li>
     </ol></td>
     </tr>
     <tr class="even">
-    <td>Użytkownik przepływu pracy</td>
-    <td>Użytkownicy uczestniczący w bieżącym przepływie pracy</td>
+    <td><span data-ttu-id="26cc0-143">Użytkownik przepływu pracy</span><span class="sxs-lookup"><span data-stu-id="26cc0-143">Workflow user</span></span></td>
+    <td><span data-ttu-id="26cc0-144">Użytkownicy uczestniczący w bieżącym przepływie pracy</span><span class="sxs-lookup"><span data-stu-id="26cc0-144">Users who participate in the current workflow</span></span></td>
     <td><ul>
-    <li>Po wybraniu wartości w polu <strong>Użytkownik przepływu pracy</strong> przejdź do karty <strong>Użytkownik przepływu pracy</strong> i na liście <strong>Użytkownik przepływu pracy</strong> wybierz użytkownika, który uczestniczy w przepływie pracy.</li>
+    <li><span data-ttu-id="26cc0-145">Po wybraniu wartości w polu <strong>Użytkownik przepływu pracy</strong> przejdź do karty <strong>Użytkownik przepływu pracy</strong> i na liście <strong>Użytkownik przepływu pracy</strong> wybierz użytkownika, który uczestniczy w przepływie pracy.</span><span class="sxs-lookup"><span data-stu-id="26cc0-145">After you select <strong>Workflow user</strong>, on the <strong>Workflow user</strong> tab, in the <strong>Workflow user</strong> list, select a user who participates in the workflow.</span></span></li>
     </ul></td>
     </tr>
     <tr class="odd">
-    <td>Użytkownik</td>
-    <td>Konkretny użytkownik programu Microsoft Dynamics 365 for Finance and Operations</td>
+    <td><span data-ttu-id="26cc0-146">Użytkownik</span><span class="sxs-lookup"><span data-stu-id="26cc0-146">User</span></span></td>
+    <td><span data-ttu-id="26cc0-147">Konkretny użytkownik programu Microsoft Dynamics 365 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="26cc0-147">Specific Microsoft Dynamics 365 for Finance and Operations users</span></span></td>
     <td><ol>
-    <li>Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</li>
-    <li>Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Finance and Operations. Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</li>
+    <li><span data-ttu-id="26cc0-148">Po wybraniu wartości w polu <strong>Użytkownik</strong> kliknij kartę <strong>Użytkownik</strong>.</span><span class="sxs-lookup"><span data-stu-id="26cc0-148">After you select <strong>User</strong>, click the <strong>User</strong> tab.</span></span></li>
+    <li><span data-ttu-id="26cc0-149">Lista <strong>Dostępni użytkownicy:</strong> zawiera wszystkich użytkowników programu Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="26cc0-149">The <strong>Available users</strong> list includes all Finance and Operations users.</span></span> <span data-ttu-id="26cc0-150">Wybierz użytkowników, którym chcesz wysyłać powiadomienia, a następnie przenieś tych użytkowników do listy <strong>Wybrani użytkownicy</strong>.</span><span class="sxs-lookup"><span data-stu-id="26cc0-150">Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</span></span></li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
-8.  Powtórz kroki od 3 do 7 dla każdego zdarzenia wybranego w kroku 2.
+8.  <span data-ttu-id="26cc0-151">Powtórz kroki od 3 do 7 dla każdego zdarzenia wybranego w kroku 2.</span><span class="sxs-lookup"><span data-stu-id="26cc0-151">Repeat steps 3 through 7 for each event that you selected in step 2.</span></span>
 
 
 

@@ -16,51 +16,51 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 10ccb4ac1088e27f3f5771bcb964bf3cc0a509ab
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d4aac437876862e9f776264fc81f246c820bdf45
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a>Planowanie zlecenia produkcyjnego przy użyciu planowania operacji i zadań
+# <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a><span data-ttu-id="7f6d3-103">Planowanie zlecenia produkcyjnego przy użyciu planowania operacji i zadań</span><span class="sxs-lookup"><span data-stu-id="7f6d3-103">Schedule a production order with operations and job scheduling</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ta procedura skupia się na planowaniu zlecenia produkcyjnego przy użyciu funkcji planowania operacji i planowania zadań. Funkcja planowania operacji nie powoduje utworzenia żadnych zadań, natomiast zadania są tworzone przy użyciu funkcji planowania zadań. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF. Ta procedura jest przeznaczona dla kierownika produkcji, planisty produkcji lub kierownika zakładu produkcyjnego w środowisku wytwarzania dyskretnego.
+<span data-ttu-id="7f6d3-104">Ta procedura skupia się na planowaniu zlecenia produkcyjnego przy użyciu funkcji planowania operacji i planowania zadań.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-104">This procedure focuses on scheduling a production order with operations scheduling and job scheduling.</span></span> <span data-ttu-id="7f6d3-105">Funkcja planowania operacji nie powoduje utworzenia żadnych zadań, natomiast zadania są tworzone przy użyciu funkcji planowania zadań.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-105">No jobs are created with operations scheduling whereas jobs are created with job scheduling.</span></span> <span data-ttu-id="7f6d3-106">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="7f6d3-107">Ta procedura jest przeznaczona dla kierownika produkcji, planisty produkcji lub kierownika zakładu produkcyjnego w środowisku wytwarzania dyskretnego.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-107">This procedure is intended for the production manager, production planner, or shop floor supervisor working in a discrete manufacturing environment.</span></span>
 
 
-## <a name="create-a-production-order"></a>Tworzenie zlecenia produkcyjnego
-1. Wybierz kolejno opcje Kontrola produkcji > Zlecenia produkcyjne > Wszystkie zlecenia produkcyjne.
-2. Kliknij opcję Nowe zlecenie produkcyjne.
-3. W polu Numer towaru wprowadź lub wybierz wartość.
-    * Wybierz towar o numerze D0001.  
-4. Kliknij przycisk Utwórz.
+## <a name="create-a-production-order"></a><span data-ttu-id="7f6d3-108">Tworzenie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="7f6d3-108">Create a production order</span></span>
+1. <span data-ttu-id="7f6d3-109">Wybierz kolejno opcje Kontrola produkcji > Zlecenia produkcyjne > Wszystkie zlecenia produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-109">Go to Production control > Production orders > All production orders.</span></span>
+2. <span data-ttu-id="7f6d3-110">Kliknij opcję Nowe zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-110">Click New production order.</span></span>
+3. <span data-ttu-id="7f6d3-111">W polu Numer towaru wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-111">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="7f6d3-112">Wybierz towar o numerze D0001.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-112">Select Item number D0001.</span></span>  
+4. <span data-ttu-id="7f6d3-113">Kliknij przycisk Utwórz.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-113">Click Create.</span></span>
 
-## <a name="schedule-operations-for-the-production-order"></a>Planowanie operacji dla zlecenia produkcyjnego
-1. Na liście oznacz wybrany wiersz.
-    * Zaznacz zlecenie produkcyjne, która właśnie zostało utworzone. Powinno być u góry listy.      
-2. W okienku akcji kliknij pozycję Harmonogram.
-3. Kliknij opcję Planowanie operacji.
-4. W polu Kierunek planowania wybierz opcję „W przód od daty planowania”.
-5. W polu Data planowania wprowadź datę.
-    * Wybierz przyszłą datę, na przykład dziś plus jeden tydzień. Przy wybranym kierunku planowania zlecenie produkcyjne będzie planowane w przód od tej daty.  
-6. Kliknij przycisk OK.
-7. Na liście oznacz wybrany wiersz.
-    * Zwróć uwagę, że stan zmienił się na Zaplanowane.  
-8. Na liście kliknij łącze w wybranym wierszu.
-9. Kliknij opcję Wszystkie zadania.
-    * Należy zauważyć, że planowanie operacji nie powoduje tworzenia żadnych zadań.  
-10. Zamknij stronę.
+## <a name="schedule-operations-for-the-production-order"></a><span data-ttu-id="7f6d3-114">Planowanie operacji dla zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="7f6d3-114">Schedule operations for the production order</span></span>
+1. <span data-ttu-id="7f6d3-115">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-115">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="7f6d3-116">Zaznacz zlecenie produkcyjne, która właśnie zostało utworzone.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-116">Select the production order that you have just created.</span></span> <span data-ttu-id="7f6d3-117">Powinno być u góry listy.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-117">It should be at the top of the list.</span></span>      
+2. <span data-ttu-id="7f6d3-118">W okienku akcji kliknij pozycję Harmonogram.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-118">On the Action Pane, click Schedule.</span></span>
+3. <span data-ttu-id="7f6d3-119">Kliknij opcję Planowanie operacji.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-119">Click Schedule operations.</span></span>
+4. <span data-ttu-id="7f6d3-120">W polu Kierunek planowania wybierz opcję „W przód od daty planowania”.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-120">In the Scheduling direction field, select 'Forward from scheduling date'.</span></span>
+5. <span data-ttu-id="7f6d3-121">W polu Data planowania wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-121">In the Scheduling date field, enter a date.</span></span>
+    * <span data-ttu-id="7f6d3-122">Wybierz przyszłą datę, na przykład dziś plus jeden tydzień.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-122">Select a future date, for example, today plus one week.</span></span> <span data-ttu-id="7f6d3-123">Przy wybranym kierunku planowania zlecenie produkcyjne będzie planowane w przód od tej daty.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-123">With the selected Scheduling direction, the production order will be scheduled forward from this date.</span></span>  
+6. <span data-ttu-id="7f6d3-124">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-124">Click OK.</span></span>
+7. <span data-ttu-id="7f6d3-125">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-125">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="7f6d3-126">Zwróć uwagę, że stan zmienił się na Zaplanowane.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-126">Note that the status is changed to Scheduled.</span></span>  
+8. <span data-ttu-id="7f6d3-127">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-127">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="7f6d3-128">Kliknij opcję Wszystkie zadania.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-128">Click All jobs.</span></span>
+    * <span data-ttu-id="7f6d3-129">Należy zauważyć, że planowanie operacji nie powoduje tworzenia żadnych zadań.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-129">Note that no jobs are created with operations scheduling.</span></span>  
+10. <span data-ttu-id="7f6d3-130">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-130">Close the page.</span></span>
 
-## <a name="schedule-jobs-for-the-production-order"></a>Planowanie zadań dla zlecenia produkcyjnego
-1. W okienku akcji kliknij pozycję Harmonogram.
-2. Kliknij harmonogram zadań.
-3. W polu Kierunek planowania wybierz opcję „W przód od daty planowania”.
-4. W polu Data planowania wprowadź datę.
-    * Wybierz datę w przyszłości, na przykład dziś plus jeden tydzień. Przy wybranym kierunku planowania zlecenie produkcyjne będzie planowane w przód od tej daty.  
-5. Kliknij przycisk OK.
-6. W okienku akcji kliknij opcję Zlecenie produkcyjne.
-7. Kliknij opcję Wszystkie zadania.
-    * Należy zauważyć, że na podstawie aktywnej marszruty planowanie zadań tworzy 5 zadań.  
+## <a name="schedule-jobs-for-the-production-order"></a><span data-ttu-id="7f6d3-131">Planowanie zadań dla zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="7f6d3-131">Schedule jobs for the production order</span></span>
+1. <span data-ttu-id="7f6d3-132">W okienku akcji kliknij pozycję Harmonogram.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-132">On the Action Pane, click Schedule.</span></span>
+2. <span data-ttu-id="7f6d3-133">Kliknij harmonogram zadań.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-133">Click Schedule jobs.</span></span>
+3. <span data-ttu-id="7f6d3-134">W polu Kierunek planowania wybierz opcję „W przód od daty planowania”.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-134">In the Scheduling direction field, select 'Forward from scheduling date'.</span></span>
+4. <span data-ttu-id="7f6d3-135">W polu Data planowania wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-135">In the Scheduling date field, enter a date.</span></span>
+    * <span data-ttu-id="7f6d3-136">Wybierz datę w przyszłości, na przykład dziś plus jeden tydzień.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-136">Select a date in the future, for example, today plus one week.</span></span> <span data-ttu-id="7f6d3-137">Przy wybranym kierunku planowania zlecenie produkcyjne będzie planowane w przód od tej daty.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-137">With the selected Scheduling direction, the production order will be scheduled forward from this date.</span></span>  
+5. <span data-ttu-id="7f6d3-138">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-138">Click OK.</span></span>
+6. <span data-ttu-id="7f6d3-139">W okienku akcji kliknij opcję Zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-139">On the Action Pane, click Production order.</span></span>
+7. <span data-ttu-id="7f6d3-140">Kliknij opcję Wszystkie zadania.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-140">Click All jobs.</span></span>
+    * <span data-ttu-id="7f6d3-141">Należy zauważyć, że na podstawie aktywnej marszruty planowanie zadań tworzy 5 zadań.</span><span class="sxs-lookup"><span data-stu-id="7f6d3-141">Note that based on the active route, 5 jobs are created with job scheduling.</span></span>  
 
 

@@ -19,125 +19,125 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: edd3d8ca760c1453ae7cf8d5ff2fdfdedbb022c4
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 83cfd2ef15ae3a02eba21bb31f3311e8f5e15b90
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="configure-expense-management"></a>Konfigurowanie zarządzania wydatkami
+# <a name="configure-expense-management"></a><span data-ttu-id="5c45c-104">Konfigurowanie zarządzania wydatkami</span><span class="sxs-lookup"><span data-stu-id="5c45c-104">Configure expense management</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym artykule opisano zagadnienia i decyzje, które należy uwzględnić w procesie planowania przed skonfigurowaniem modułu Zarządzanie wydatkami w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. W obszarze Zarządzanie wydatkami można przechowywać m.in. informacje o metodach płatności, wnioski wyjazdowe, raporty z wydatków oraz zasady. 
+<span data-ttu-id="5c45c-105">W tym artykule opisano zagadnienia i decyzje, które należy uwzględnić w procesie planowania przed skonfigurowaniem modułu Zarządzanie wydatkami w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="5c45c-105">This article describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="5c45c-106">W obszarze Zarządzanie wydatkami można przechowywać m.in. informacje o metodach płatności, wnioski wyjazdowe, raporty z wydatków oraz zasady.</span><span class="sxs-lookup"><span data-stu-id="5c45c-106">In the Expense management area, you can store information about payment methods, travel requisitions, expense reports, and policies, among other things.</span></span> 
 
-Ponieważ wiele decyzji podjętych podczas planowania konfiguracji zarządzania wydatkami jest opartych na hierarchii i strukturze finansowej organizacji, musisz konsultować się z dokumentami planowania dla tych dokumentów.
+<span data-ttu-id="5c45c-107">Ponieważ wiele decyzji podjętych podczas planowania konfiguracji zarządzania wydatkami jest opartych na hierarchii i strukturze finansowej organizacji, musisz konsultować się z dokumentami planowania dla tych dokumentów.</span><span class="sxs-lookup"><span data-stu-id="5c45c-107">Because many of the decisions that you make when you plan your configuration for Expense management are based on your organization’s hierarchy and financial structure, you must refer to the planning documents for those areas.</span></span>
 
-## <a name="intercompany-expenses"></a>Wydatki międzyfirmowe
-Jeśli włączysz wydatki międzyfirmowe, zezwalasz firmom i pracownikom na tworzenie wydatków lub pobieranie opłat w imieniu lub od innych firm w obrębie organizacji. Na przykład pracownik w firmie A kończy projektu dla firmy B. Jeżeli wydatki międzyfirmowe są włączone, pracownik może przesłać kartę czasu pracy do firmy B lub otrzymać płatność od firmy B. Jeśli Twoja organizacja nie ma wielu podmiotów prawnych, nie musisz włączać wydatków międzyfirmowych. **Decyzja:** Czy chcesz włączyć wydatki międzyfirmowe?
+## <a name="intercompany-expenses"></a><span data-ttu-id="5c45c-108">Wydatki międzyfirmowe</span><span class="sxs-lookup"><span data-stu-id="5c45c-108">Intercompany expenses</span></span>
+<span data-ttu-id="5c45c-109">Jeśli włączysz wydatki międzyfirmowe, zezwalasz firmom i pracownikom na tworzenie wydatków lub pobieranie opłat w imieniu lub od innych firm w obrębie organizacji.</span><span class="sxs-lookup"><span data-stu-id="5c45c-109">When you enable intercompany expenses, you allow legal entities and employees to incur expenses on behalf of, and collect payment from, another legal entity within your organization.</span></span> <span data-ttu-id="5c45c-110">Na przykład pracownik w firmie A kończy projektu dla firmy B. Jeżeli wydatki międzyfirmowe są włączone, pracownik może przesłać kartę czasu pracy do firmy B lub otrzymać płatność od firmy B. Jeśli Twoja organizacja nie ma wielu podmiotów prawnych, nie musisz włączać wydatków międzyfirmowych.</span><span class="sxs-lookup"><span data-stu-id="5c45c-110">For example, an employee in legal entity A completes a project for legal entity B. If intercompany expenses are enabled, the employee can then file a timesheet to, and be paid by, legal entity B. If your organization doesn’t have multiple legal entities, you won’t need to enable intercompany expenses.</span></span> <span data-ttu-id="5c45c-111">**Decyzja:** Czy chcesz włączyć wydatki międzyfirmowe?</span><span class="sxs-lookup"><span data-stu-id="5c45c-111">**Decision:** Do you want to enable intercompany expenses?</span></span>
 
-## <a name="financial-management"></a>Zarządzanie finansami
-Zarządzanie wydatkami jest ściśle zintegrowane z zarządzaniem finansami organizacji. Wiele konfiguracji zarządzania wydatkami będzie opierać się na decyzjach dotyczących finansów organizacji. W poniższych sekcjach opisano różne obszary, które wymagają planowania i decyzji opartych na decyzjach finansowych i wskazówkach organizacji pochodzących od zespołu kierowniczego.
+## <a name="financial-management"></a><span data-ttu-id="5c45c-112">Zarządzanie finansami</span><span class="sxs-lookup"><span data-stu-id="5c45c-112">Financial management</span></span>
+<span data-ttu-id="5c45c-113">Zarządzanie wydatkami jest ściśle zintegrowane z zarządzaniem finansami organizacji.</span><span class="sxs-lookup"><span data-stu-id="5c45c-113">Expense management is tightly integrated with the financial management of your organization.</span></span> <span data-ttu-id="5c45c-114">Wiele konfiguracji zarządzania wydatkami będzie opierać się na decyzjach dotyczących finansów organizacji.</span><span class="sxs-lookup"><span data-stu-id="5c45c-114">A lot of your configuration for Expense management will be based on the decisions that you’ve made about your organization’s finances.</span></span> <span data-ttu-id="5c45c-115">W poniższych sekcjach opisano różne obszary, które wymagają planowania i decyzji opartych na decyzjach finansowych i wskazówkach organizacji pochodzących od zespołu kierowniczego.</span><span class="sxs-lookup"><span data-stu-id="5c45c-115">The following sections describe the different areas that require planning and decisions based on your organization’s financial decisions and guidance from your leadership team.</span></span>
 
-### <a name="per-diems"></a>Diety
+### <a name="per-diems"></a><span data-ttu-id="5c45c-116">Diety</span><span class="sxs-lookup"><span data-stu-id="5c45c-116">Per diems</span></span>
 
-Musisz zdefiniować pracownika dla diet oferowanych przez organizację. Ponieważ diety są zazwyczaj używane w celu pokrycia wydatków, takich jak wyżywienie, zakwaterowanie i inne koszty dodatkowe, można utworzyć reguły dla odpisów diet oferowanych przez organizację. Stawki diet można określić na podstawie sezonu roku lub lokalizacji podróży albo ich obu. Podczas definiowania reguły obliczania diety można określić, że pewien procent stawki diety zostanie wstrzymany, jeśli pracownik otrzymuje bezpłatne posiłki lub usługi. Można także zdefiniować poziom stawek diet, aby wyznaczyć minimalną i maksymalną liczbę godzin, dla których można zastosować stawkę diety dla wyjazdu pracownika. **Decyzje:**
+<span data-ttu-id="5c45c-117">Musisz zdefiniować pracownika dla diet oferowanych przez organizację.</span><span class="sxs-lookup"><span data-stu-id="5c45c-117">You must define the employee per diems that your organization provides.</span></span> <span data-ttu-id="5c45c-118">Ponieważ diety są zazwyczaj używane w celu pokrycia wydatków, takich jak wyżywienie, zakwaterowanie i inne koszty dodatkowe, można utworzyć reguły dla odpisów diet oferowanych przez organizację.</span><span class="sxs-lookup"><span data-stu-id="5c45c-118">Because per diems are typically used to cover expenses such as meals, lodging, and other incidental expenses, you can create rules for the per diem allowances that your organization offers.</span></span> <span data-ttu-id="5c45c-119">Stawki diet można określić na podstawie sezonu roku lub lokalizacji podróży albo ich obu.</span><span class="sxs-lookup"><span data-stu-id="5c45c-119">Per diem rates can be based on the time of year, the travel location, or both.</span></span> <span data-ttu-id="5c45c-120">Podczas definiowania reguły obliczania diety można określić, że pewien procent stawki diety zostanie wstrzymany, jeśli pracownik otrzymuje bezpłatne posiłki lub usługi.</span><span class="sxs-lookup"><span data-stu-id="5c45c-120">When you define a per diem rule, you can specify that a percentage of the per diem rate will be withheld if a worker receives complimentary meals or services.</span></span> <span data-ttu-id="5c45c-121">Można także zdefiniować poziom stawek diet, aby wyznaczyć minimalną i maksymalną liczbę godzin, dla których można zastosować stawkę diety dla wyjazdu pracownika.</span><span class="sxs-lookup"><span data-stu-id="5c45c-121">You can also define per diem rate tiers to set the minimum and maximum number of hours that the per diem rate can be applied to a worker’s travel.</span></span> <span data-ttu-id="5c45c-122">**Decyzje:**</span><span class="sxs-lookup"><span data-stu-id="5c45c-122">**Decisions:**</span></span>
 
--   Domyślne reguły obliczania diet dla pierwszego i ostatniego dnia:
-    -   Jaka jest minimalna liczba godzin, co to której pracownik może zgłosić roszczenie z dzień, i mimo to otrzymać dietę?
-    -   Czy obowiązuje zmniejszenie kwoty, jaka jest oferowana za posiłki w pierwszym i ostatnim dniu? Jeśli tak, jaki jest procent takiego zmniejszenia?
-    -   Czy obowiązuje zmniejszenie kwoty, jaka jest oferowana za hotele w pierwszym i ostatnim dniu? Jeśli tak, jaki jest procent takiego zmniejszenia?
-    -   Czy obowiązuje zmniejszenie kwoty, jaka jest oferowana za inne wydatki poniesione w pierwszym i ostatnim dniu? Jeśli tak, jaki jest procent takiego zmniejszenia?
--   Domyślne reguły obliczania diet:
-    -   Czy obowiązuje procentowe zmniejszenie przydziału diety za każdy posiłek, jeśli na przykład posiłek jest bezpłatny? Jeśli tak, jaki jest procent takiego zmniejszenia dla każdego posiłku?
-    -   Obniżka za posiłek jest obliczana za dzień, za wyjazd lub według liczby posiłków dziennie?
-    -   Czy kwoty diety powinny być zaokrąglane zwyczajnie czy w górę?
-    -   Czy diety są obliczane według cykli 24-godzinnych czy według dni kalendarzowych?
--   Reguły obliczania diet na podstawie lokalizacji:
-    -   Czy stawki diet różnią się w zależności od lokalizacji jakie lokalizacje są uwzględniane?
-    -   Jeśli stawka diety różni się według lokalizacji, jaki procent kwoty jest zapewniany w odniesieniu do każdej lokalizacji:
-        -   posiłki
-        -   hotel
-        -   inne wydatki
+-   <span data-ttu-id="5c45c-123">Domyślne reguły obliczania diet dla pierwszego i ostatniego dnia:</span><span class="sxs-lookup"><span data-stu-id="5c45c-123">Default per diem rules for the first and last days:</span></span>
+    -   <span data-ttu-id="5c45c-124">Jaka jest minimalna liczba godzin, co to której pracownik może zgłosić roszczenie z dzień, i mimo to otrzymać dietę?</span><span class="sxs-lookup"><span data-stu-id="5c45c-124">What is the minimum number of hours that an employee can claim for a day and still receive a per diem?</span></span>
+    -   <span data-ttu-id="5c45c-125">Czy obowiązuje zmniejszenie kwoty, jaka jest oferowana za posiłki w pierwszym i ostatnim dniu?</span><span class="sxs-lookup"><span data-stu-id="5c45c-125">Is there a reduction in the amount that is offered for meals for the first and last day?</span></span> <span data-ttu-id="5c45c-126">Jeśli tak, jaki jest procent takiego zmniejszenia?</span><span class="sxs-lookup"><span data-stu-id="5c45c-126">If so, what is the percentage of the reduction?</span></span>
+    -   <span data-ttu-id="5c45c-127">Czy obowiązuje zmniejszenie kwoty, jaka jest oferowana za hotele w pierwszym i ostatnim dniu?</span><span class="sxs-lookup"><span data-stu-id="5c45c-127">Is there a reduction in the amount that is offered for a hotel for the first and last day?</span></span> <span data-ttu-id="5c45c-128">Jeśli tak, jaki jest procent takiego zmniejszenia?</span><span class="sxs-lookup"><span data-stu-id="5c45c-128">If so, what is the percentage of the reduction?</span></span>
+    -   <span data-ttu-id="5c45c-129">Czy obowiązuje zmniejszenie kwoty, jaka jest oferowana za inne wydatki poniesione w pierwszym i ostatnim dniu?</span><span class="sxs-lookup"><span data-stu-id="5c45c-129">Is there a reduction in the amount that is offered for other expenses incurred on the first and last day?</span></span> <span data-ttu-id="5c45c-130">Jeśli tak, jaki jest procent takiego zmniejszenia?</span><span class="sxs-lookup"><span data-stu-id="5c45c-130">If so, what is the percentage of the reduction?</span></span>
+-   <span data-ttu-id="5c45c-131">Domyślne reguły obliczania diet:</span><span class="sxs-lookup"><span data-stu-id="5c45c-131">Default per diem rules:</span></span>
+    -   <span data-ttu-id="5c45c-132">Czy obowiązuje procentowe zmniejszenie przydziału diety za każdy posiłek, jeśli na przykład posiłek jest bezpłatny?</span><span class="sxs-lookup"><span data-stu-id="5c45c-132">Is there a percentage reduction in the per diem allowance for each meal if, for example, the meal is complimentary?</span></span> <span data-ttu-id="5c45c-133">Jeśli tak, jaki jest procent takiego zmniejszenia dla każdego posiłku?</span><span class="sxs-lookup"><span data-stu-id="5c45c-133">If so, what is the reduction percentage for each meal?</span></span>
+    -   <span data-ttu-id="5c45c-134">Obniżka za posiłek jest obliczana za dzień, za wyjazd lub według liczby posiłków dziennie?</span><span class="sxs-lookup"><span data-stu-id="5c45c-134">Is the meal reduction calculated per day, per trip, or by the number of meals per day?</span></span>
+    -   <span data-ttu-id="5c45c-135">Czy kwoty diety powinny być zaokrąglane zwyczajnie czy w górę?</span><span class="sxs-lookup"><span data-stu-id="5c45c-135">Should per diem amounts be rounded normally or rounded up?</span></span>
+    -   <span data-ttu-id="5c45c-136">Czy diety są obliczane według cykli 24-godzinnych czy według dni kalendarzowych?</span><span class="sxs-lookup"><span data-stu-id="5c45c-136">Are per diems calculated on a 24-hour period or on a calendar day?</span></span>
+-   <span data-ttu-id="5c45c-137">Reguły obliczania diet na podstawie lokalizacji:</span><span class="sxs-lookup"><span data-stu-id="5c45c-137">Per diem rules based on location:</span></span>
+    -   <span data-ttu-id="5c45c-138">Czy stawki diet różnią się w zależności od lokalizacji jakie lokalizacje są uwzględniane?</span><span class="sxs-lookup"><span data-stu-id="5c45c-138">Do per diem rates vary based on location and what locations are included?</span></span>
+    -   <span data-ttu-id="5c45c-139">Jeśli stawka diety różni się według lokalizacji, jaki procent kwoty jest zapewniany w odniesieniu do każdej lokalizacji:</span><span class="sxs-lookup"><span data-stu-id="5c45c-139">If per diem rate do vary based on location, for each location, what percentage amount is provided for:</span></span>
+        -   <span data-ttu-id="5c45c-140">posiłki</span><span class="sxs-lookup"><span data-stu-id="5c45c-140">meals</span></span>
+        -   <span data-ttu-id="5c45c-141">hotel</span><span class="sxs-lookup"><span data-stu-id="5c45c-141">hotel</span></span>
+        -   <span data-ttu-id="5c45c-142">inne wydatki</span><span class="sxs-lookup"><span data-stu-id="5c45c-142">other expenses</span></span>
 
-### <a name="expense-management-journals-and-accounts"></a>Konta i arkusze zarządzania wydatkami
+### <a name="expense-management-journals-and-accounts"></a><span data-ttu-id="5c45c-143">Konta i arkusze zarządzania wydatkami</span><span class="sxs-lookup"><span data-stu-id="5c45c-143">Expense management journals and accounts</span></span>
 
-Zarządzanie wydatkami wymaga użycia wielu arkuszy i kont. Trzeba zdecydować, na przykład, czy to samo konto jest używane dla zaliczek gotówkowych i spory dotyczących kart kredytowych. **Decyzje:**
+<span data-ttu-id="5c45c-144">Zarządzanie wydatkami wymaga użycia wielu arkuszy i kont.</span><span class="sxs-lookup"><span data-stu-id="5c45c-144">Expense management requires that you use multiple journals and accounts.</span></span> <span data-ttu-id="5c45c-145">Trzeba zdecydować, na przykład, czy to samo konto jest używane dla zaliczek gotówkowych i spory dotyczących kart kredytowych.</span><span class="sxs-lookup"><span data-stu-id="5c45c-145">You must decide, for example, whether the same account is used for cash advances and credit card disputes.</span></span> <span data-ttu-id="5c45c-146">**Decyzje:**</span><span class="sxs-lookup"><span data-stu-id="5c45c-146">**Decisions:**</span></span>
 
--   Do którego arkusza księgi księgowane są zatwierdzone raporty wydatków?
--   Które konto jest używane dla zaliczek gotówkowych?
--   Czy zaliczki gotówkowe powinny być księgowane natychmiast?
+-   <span data-ttu-id="5c45c-147">Do którego arkusza księgi księgowane są zatwierdzone raporty wydatków?</span><span class="sxs-lookup"><span data-stu-id="5c45c-147">Which ledger journal are approved expense reports posted to?</span></span>
+-   <span data-ttu-id="5c45c-148">Które konto jest używane dla zaliczek gotówkowych?</span><span class="sxs-lookup"><span data-stu-id="5c45c-148">Which account is used for cash advances?</span></span>
+-   <span data-ttu-id="5c45c-149">Czy zaliczki gotówkowe powinny być księgowane natychmiast?</span><span class="sxs-lookup"><span data-stu-id="5c45c-149">Should cash advances be posted immediately?</span></span>
 
-### <a name="payment-methods"></a>Metody płatności
+### <a name="payment-methods"></a><span data-ttu-id="5c45c-150">Metody płatności</span><span class="sxs-lookup"><span data-stu-id="5c45c-150">Payment methods</span></span>
 
-Jeśli zezwalasz pracownikom na ponoszenie wydatków w imieniu Twojej firmy, musisz określić metody płatności, których pracownicy mogą używać. Na przykład możesz zezwolić pracownikom na używanie gotówki lub firmowej karty kredytowej. Możesz też zezwolić pracownikom na używanie osobistych kart kredytowych, a następnie zwracać im pieniądze. Należy podjąć następujące decyzje dla każdej dozwolonej metody płatności. **Decyzje:**
+<span data-ttu-id="5c45c-151">Jeśli zezwalasz pracownikom na ponoszenie wydatków w imieniu Twojej firmy, musisz określić metody płatności, których pracownicy mogą używać.</span><span class="sxs-lookup"><span data-stu-id="5c45c-151">When you allow employees to incur expenses on behalf of your business, you must define the payment methods that employees are allowed to use.</span></span> <span data-ttu-id="5c45c-152">Na przykład możesz zezwolić pracownikom na używanie gotówki lub firmowej karty kredytowej.</span><span class="sxs-lookup"><span data-stu-id="5c45c-152">For example, you might allow employees to use cash or a corporate credit card.</span></span> <span data-ttu-id="5c45c-153">Możesz też zezwolić pracownikom na używanie osobistych kart kredytowych, a następnie zwracać im pieniądze.</span><span class="sxs-lookup"><span data-stu-id="5c45c-153">You might also allow employees to use personal credit cards, and then reimburse the employees.</span></span> <span data-ttu-id="5c45c-154">Należy podjąć następujące decyzje dla każdej dozwolonej metody płatności.</span><span class="sxs-lookup"><span data-stu-id="5c45c-154">You must make the following decisions for each payment method that you allow.</span></span> <span data-ttu-id="5c45c-155">**Decyzje:**</span><span class="sxs-lookup"><span data-stu-id="5c45c-155">**Decisions:**</span></span>
 
--   Jakie metody płatności są dozwolone?
--   Kto jest właścicielem wydatków poniesionych przy użyciu metody płatności?
--   Czy jest dostępny typ konta przeciwstawnego? Jeśli tak, jaki to typ?
--   Jeśli dostępne jest konto przeciwstawne, co nim jest?
--   Jeśli metodą płatności jest karta kredytowa, czy metoda płatności powinna być używana tylko do obsługi zaimportowanych transakcji?
+-   <span data-ttu-id="5c45c-156">Jakie metody płatności są dozwolone?</span><span class="sxs-lookup"><span data-stu-id="5c45c-156">What payment methods are allowed?</span></span>
+-   <span data-ttu-id="5c45c-157">Kto jest właścicielem wydatków poniesionych przy użyciu metody płatności?</span><span class="sxs-lookup"><span data-stu-id="5c45c-157">Who owns the payment method expenses?</span></span>
+-   <span data-ttu-id="5c45c-158">Czy jest dostępny typ konta przeciwstawnego?</span><span class="sxs-lookup"><span data-stu-id="5c45c-158">Is there an offset account type?</span></span> <span data-ttu-id="5c45c-159">Jeśli tak, jaki to typ?</span><span class="sxs-lookup"><span data-stu-id="5c45c-159">If so, what is it?</span></span>
+-   <span data-ttu-id="5c45c-160">Jeśli dostępne jest konto przeciwstawne, co nim jest?</span><span class="sxs-lookup"><span data-stu-id="5c45c-160">If there is an offset account, what is the account?</span></span>
+-   <span data-ttu-id="5c45c-161">Jeśli metodą płatności jest karta kredytowa, czy metoda płatności powinna być używana tylko do obsługi zaimportowanych transakcji?</span><span class="sxs-lookup"><span data-stu-id="5c45c-161">If the payment method is a credit card, should the payment method be used only with imported transactions?</span></span>
 
-### <a name="expense-categories-and-shared-categories"></a>Kategorie wydatków i udostępniane kategorie
+### <a name="expense-categories-and-shared-categories"></a><span data-ttu-id="5c45c-162">Kategorie wydatków i udostępniane kategorie</span><span class="sxs-lookup"><span data-stu-id="5c45c-162">Expense categories and shared categories</span></span>
 
-Gdy pracownicy tworzą raport wydatków, każdy zarejestrowany wydatek musi być skojarzony z kategorią wydatków. Kategorie wydatków pochodzą z kategorii udostępnionych, które mogą być udostępniane dla podmiotów prawnych w obrębie organizacji. Kategorie te również mogą być współużytkowane w zarządzaniu projektami i księgowaniu, w zależności od sposobu zdefiniowania danej organizacji. Na podstawie definicji organizacji i wskazówek zespołu implementacji określ, czy kategorie używane w zarządzaniu wydatkami mają być stosowane tylko dla wydatków czy też powinny być współużytkowane między projektami i wydatkami. Pamiętaj, że te kategorie mogą być współużytkowane między projektami i wydatkami lub projektami i produkcją, ale nie między wydatkami i produkcją. Należy wybrać następujące decyzje dla każdej kategorii wydatków. **Decyzje:**
+<span data-ttu-id="5c45c-163">Gdy pracownicy tworzą raport wydatków, każdy zarejestrowany wydatek musi być skojarzony z kategorią wydatków.</span><span class="sxs-lookup"><span data-stu-id="5c45c-163">When employees create an expense report, each expense that they record must be associated with an expense category.</span></span> <span data-ttu-id="5c45c-164">Kategorie wydatków pochodzą z kategorii udostępnionych, które mogą być udostępniane dla podmiotów prawnych w obrębie organizacji.</span><span class="sxs-lookup"><span data-stu-id="5c45c-164">Expense categories are derived from Shared categories that can be shared across the legal entities within your organization.</span></span> <span data-ttu-id="5c45c-165">Kategorie te również mogą być współużytkowane w zarządzaniu projektami i księgowaniu, w zależności od sposobu zdefiniowania danej organizacji.</span><span class="sxs-lookup"><span data-stu-id="5c45c-165">These categories can also be shared in Project management and accounting, depending on how your organization is defined.</span></span> <span data-ttu-id="5c45c-166">Na podstawie definicji organizacji i wskazówek zespołu implementacji określ, czy kategorie używane w zarządzaniu wydatkami mają być stosowane tylko dla wydatków czy też powinny być współużytkowane między projektami i wydatkami.</span><span class="sxs-lookup"><span data-stu-id="5c45c-166">Based on the definition of your organization and guidance from the implementation team, determine whether the categories used in expense management are to be used in only expense or if they should be shared between Project and Expense.</span></span> <span data-ttu-id="5c45c-167">Pamiętaj, że te kategorie mogą być współużytkowane między projektami i wydatkami lub projektami i produkcją, ale nie między wydatkami i produkcją.</span><span class="sxs-lookup"><span data-stu-id="5c45c-167">Note that these categories can be shared between Project and Expense or Project and Production, but not between Expense and Production.</span></span> <span data-ttu-id="5c45c-168">Należy wybrać następujące decyzje dla każdej kategorii wydatków.</span><span class="sxs-lookup"><span data-stu-id="5c45c-168">You must make the following decisions for each expense category.</span></span> <span data-ttu-id="5c45c-169">**Decyzje:**</span><span class="sxs-lookup"><span data-stu-id="5c45c-169">**Decisions:**</span></span>
 
--   Jaka jest kategoria wydatków? Na przykład przeloty, hotele lub kilometraż.
--   Czy ta kategoria wydatków jest również używana w zarządzaniu projektami i księgowaniu?
--   Jaki jest typ wydatków?
--   Jaka jest domyśla metoda płatności dla kategorii wydatków?
--   Czy wydatki w tej kategorii muszą być wyszczególnione?
--   Jaka jest główne konto domyślna dla kategorii wydatków?
--   Jaka jest domyślna grupa podatków dla towaru w kategorii wydatków?
--   Czy dozwolone są dodatkowe metody płatności dla kategorii wydatków? Jeśli tak, jakie to metody?
--   Czy istnieją podkategorie w ramach tej kategorii wydatków? Jeżeli tak:
-    -   Czy jakakolwiek podkategorie są wykluczone ze zwrotu podatku?
-    -   Jaka jest grupa podatków dla towaru dotycząca podkategorii?
+-   <span data-ttu-id="5c45c-170">Jaka jest kategoria wydatków?</span><span class="sxs-lookup"><span data-stu-id="5c45c-170">What is the expense category?</span></span> <span data-ttu-id="5c45c-171">Na przykład przeloty, hotele lub kilometraż.</span><span class="sxs-lookup"><span data-stu-id="5c45c-171">For example, flights, hotel, or mileage.</span></span>
+-   <span data-ttu-id="5c45c-172">Czy ta kategoria wydatków jest również używana w zarządzaniu projektami i księgowaniu?</span><span class="sxs-lookup"><span data-stu-id="5c45c-172">Can this expense category also be used in Project management and accounting?</span></span>
+-   <span data-ttu-id="5c45c-173">Jaki jest typ wydatków?</span><span class="sxs-lookup"><span data-stu-id="5c45c-173">What is the expense type?</span></span>
+-   <span data-ttu-id="5c45c-174">Jaka jest domyśla metoda płatności dla kategorii wydatków?</span><span class="sxs-lookup"><span data-stu-id="5c45c-174">What is the default payment method for the expense category?</span></span>
+-   <span data-ttu-id="5c45c-175">Czy wydatki w tej kategorii muszą być wyszczególnione?</span><span class="sxs-lookup"><span data-stu-id="5c45c-175">Are expenses in this category required to be itemized?</span></span>
+-   <span data-ttu-id="5c45c-176">Jaka jest główne konto domyślna dla kategorii wydatków?</span><span class="sxs-lookup"><span data-stu-id="5c45c-176">What is the main default account for the expense category?</span></span>
+-   <span data-ttu-id="5c45c-177">Jaka jest domyślna grupa podatków dla towaru w kategorii wydatków?</span><span class="sxs-lookup"><span data-stu-id="5c45c-177">What is the default item sales tax group for the expense category?</span></span>
+-   <span data-ttu-id="5c45c-178">Czy dozwolone są dodatkowe metody płatności dla kategorii wydatków?</span><span class="sxs-lookup"><span data-stu-id="5c45c-178">Are additional payment methods allowed for the expense category?</span></span> <span data-ttu-id="5c45c-179">Jeśli tak, jakie to metody?</span><span class="sxs-lookup"><span data-stu-id="5c45c-179">If so, what are they?</span></span>
+-   <span data-ttu-id="5c45c-180">Czy istnieją podkategorie w ramach tej kategorii wydatków?</span><span class="sxs-lookup"><span data-stu-id="5c45c-180">Are there subcategories within this expense category?</span></span> <span data-ttu-id="5c45c-181">Jeżeli tak:</span><span class="sxs-lookup"><span data-stu-id="5c45c-181">If so:</span></span>
+    -   <span data-ttu-id="5c45c-182">Czy jakakolwiek podkategorie są wykluczone ze zwrotu podatku?</span><span class="sxs-lookup"><span data-stu-id="5c45c-182">Are any of the subcategories excluded from tax recovery?</span></span>
+    -   <span data-ttu-id="5c45c-183">Jaka jest grupa podatków dla towaru dotycząca podkategorii?</span><span class="sxs-lookup"><span data-stu-id="5c45c-183">What is the item sales tax group of the subcategories?</span></span>
 
-    Jeśli ta kategoria wydatków jest również używana w zarządzaniu projektami i ich księgowaniu, odpowiedz na następujące pytania. Jeśli nie, to koniec zadań w tej sesji.
--   Jakie konta kosztów będą używane dla następujących elementów?
-    -   Koszt
-    -   Alokacja listy płac
-    -   PWT — Wartość kosztu
-    -   Element kosztu
-    -   PWT — Wartość kosztu — Pozycja
-    -   Naliczona strata
-    -   PWT — Naliczona strata
--   Jakie konta przychodów będą używane dla następujących elementów?
-    -   Zafakturowany przychód
-    -   Naliczony przychód — Wartość sprzedaży
-    -   PWT — Wartość sprzedaży
-    -   Naliczony przychód — Produkcja
-    -   PWT — produkcja
-    -   Naliczony przychód — Zysk
-    -   PWT — zysk
-    -   Naliczony przychód — Subskrypcja
-    -   PWT — subskrypcja
+    <span data-ttu-id="5c45c-184">Jeśli ta kategoria wydatków jest również używana w zarządzaniu projektami i ich księgowaniu, odpowiedz na następujące pytania.</span><span class="sxs-lookup"><span data-stu-id="5c45c-184">If this expense category is also used in Project management and accounting, answer the remaining questions.</span></span> <span data-ttu-id="5c45c-185">Jeśli nie, to koniec zadań w tej sesji.</span><span class="sxs-lookup"><span data-stu-id="5c45c-185">Otherwise, you are finished with this section.</span></span>
+-   <span data-ttu-id="5c45c-186">Jakie konta kosztów będą używane dla następujących elementów?</span><span class="sxs-lookup"><span data-stu-id="5c45c-186">Which cost accounts will be used for the following?</span></span>
+    -   <span data-ttu-id="5c45c-187">Koszt</span><span class="sxs-lookup"><span data-stu-id="5c45c-187">Cost</span></span>
+    -   <span data-ttu-id="5c45c-188">Alokacja listy płac</span><span class="sxs-lookup"><span data-stu-id="5c45c-188">Payroll allocation</span></span>
+    -   <span data-ttu-id="5c45c-189">PWT — Wartość kosztu</span><span class="sxs-lookup"><span data-stu-id="5c45c-189">WIP-cost value</span></span>
+    -   <span data-ttu-id="5c45c-190">Element kosztu</span><span class="sxs-lookup"><span data-stu-id="5c45c-190">Cost-item</span></span>
+    -   <span data-ttu-id="5c45c-191">PWT — Wartość kosztu — Pozycja</span><span class="sxs-lookup"><span data-stu-id="5c45c-191">WIP-cost value-item</span></span>
+    -   <span data-ttu-id="5c45c-192">Naliczona strata</span><span class="sxs-lookup"><span data-stu-id="5c45c-192">Accrued loss</span></span>
+    -   <span data-ttu-id="5c45c-193">PWT — Naliczona strata</span><span class="sxs-lookup"><span data-stu-id="5c45c-193">WIP-accrued loss</span></span>
+-   <span data-ttu-id="5c45c-194">Jakie konta przychodów będą używane dla następujących elementów?</span><span class="sxs-lookup"><span data-stu-id="5c45c-194">Which revenue accounts will be used for the following?</span></span>
+    -   <span data-ttu-id="5c45c-195">Zafakturowany przychód</span><span class="sxs-lookup"><span data-stu-id="5c45c-195">Invoiced revenue</span></span>
+    -   <span data-ttu-id="5c45c-196">Naliczony przychód — Wartość sprzedaży</span><span class="sxs-lookup"><span data-stu-id="5c45c-196">Accrued revenue-sales value</span></span>
+    -   <span data-ttu-id="5c45c-197">PWT — Wartość sprzedaży</span><span class="sxs-lookup"><span data-stu-id="5c45c-197">WIP-sales value</span></span>
+    -   <span data-ttu-id="5c45c-198">Naliczony przychód — Produkcja</span><span class="sxs-lookup"><span data-stu-id="5c45c-198">Accrued revenue-production</span></span>
+    -   <span data-ttu-id="5c45c-199">PWT — produkcja</span><span class="sxs-lookup"><span data-stu-id="5c45c-199">WIP-production</span></span>
+    -   <span data-ttu-id="5c45c-200">Naliczony przychód — Zysk</span><span class="sxs-lookup"><span data-stu-id="5c45c-200">Accrued revenue-profit</span></span>
+    -   <span data-ttu-id="5c45c-201">PWT — zysk</span><span class="sxs-lookup"><span data-stu-id="5c45c-201">WIP-profit</span></span>
+    -   <span data-ttu-id="5c45c-202">Naliczony przychód — Subskrypcja</span><span class="sxs-lookup"><span data-stu-id="5c45c-202">Accrued revenue-subscription</span></span>
+    -   <span data-ttu-id="5c45c-203">PWT — subskrypcja</span><span class="sxs-lookup"><span data-stu-id="5c45c-203">WIP-subscription</span></span>
 
  
 
-### <a name="taxes"></a>Podatki
+### <a name="taxes"></a><span data-ttu-id="5c45c-204">Podatki</span><span class="sxs-lookup"><span data-stu-id="5c45c-204">Taxes</span></span>
 
-W przypadku podatków związanych z podatkami trzeba określić, co jest uwzględnione lub dozwolone w raportach wydatków. **Decyzje:**
+<span data-ttu-id="5c45c-205">W przypadku podatków związanych z podatkami trzeba określić, co jest uwzględnione lub dozwolone w raportach wydatków.</span><span class="sxs-lookup"><span data-stu-id="5c45c-205">For expense-related taxes, you must determine what is included or enabled on expense reports.</span></span> <span data-ttu-id="5c45c-206">**Decyzje:**</span><span class="sxs-lookup"><span data-stu-id="5c45c-206">**Decisions:**</span></span>
 
--   Czy podatek jest uwzględniony w kwotach wydatków?
--   Czy zwrot z podatku powinien być dostępny dla wydatków?
+-   <span data-ttu-id="5c45c-207">Czy podatek jest uwzględniony w kwotach wydatków?</span><span class="sxs-lookup"><span data-stu-id="5c45c-207">Is sales tax included in the expense amounts?</span></span>
+-   <span data-ttu-id="5c45c-208">Czy zwrot z podatku powinien być dostępny dla wydatków?</span><span class="sxs-lookup"><span data-stu-id="5c45c-208">Should tax recovery be enabled on expenses?</span></span>
 
-Warto pamiętać, że jeśli przy planowaniu księgi głównej podjęto decyzję o zastosowaniu podatku amerykańskiego i użyciu reguł podatkowych, co można zrobić, ustawiając w polu **Zastosuj zasady opodatkowania dla podatku** wartość Tak, nie można włączyć zwrotu z podatku w wydatkach.
+<span data-ttu-id="5c45c-209">Warto pamiętać, że jeśli przy planowaniu księgi głównej podjęto decyzję o zastosowaniu podatku amerykańskiego i użyciu reguł podatkowych, co można zrobić, ustawiając w polu **Zastosuj zasady opodatkowania dla podatku** wartość Tak, nie można włączyć zwrotu z podatku w wydatkach.</span><span class="sxs-lookup"><span data-stu-id="5c45c-209">Note that if, during your planning of the general ledger, you have decided to apply U.S. sales tax and use tax rules, which is done by toggling the **Apply sales tax taxations rules** field to Yes, you can’t enable tax recovery on expenses.</span></span>
 
-## <a name="policies"></a>Zasady
-Można utworzyć zasady raportu wydatków tak, aby organizacja mogła oszczędzić czas i pieniądze, gdy pracownicy ponoszą koszty w jej imieniu. Zasady zapewniają, że pracownicy mieszczą się w budżecie, podają wszystkie wymagane informacje i wydają pieniądze tylko wtedy, gdy jest to konieczne. Należy wybrać następujące decyzje dla każdej zasady raportu wydatków i każdej zasady zatwierdzenia raportu wydatków. **Decyzje:**
+## <a name="policies"></a><span data-ttu-id="5c45c-210">Zasady</span><span class="sxs-lookup"><span data-stu-id="5c45c-210">Policies</span></span>
+<span data-ttu-id="5c45c-211">Można utworzyć zasady raportu wydatków tak, aby organizacja mogła oszczędzić czas i pieniądze, gdy pracownicy ponoszą koszty w jej imieniu.</span><span class="sxs-lookup"><span data-stu-id="5c45c-211">You can create expense report policies so that your organization can save time and money when employees incur expenses on its behalf.</span></span> <span data-ttu-id="5c45c-212">Zasady zapewniają, że pracownicy mieszczą się w budżecie, podają wszystkie wymagane informacje i wydają pieniądze tylko wtedy, gdy jest to konieczne.</span><span class="sxs-lookup"><span data-stu-id="5c45c-212">Policies ensure that employees stay within budget, provide all required information, and spend money only as necessary.</span></span> <span data-ttu-id="5c45c-213">Należy wybrać następujące decyzje dla każdej zasady raportu wydatków i każdej zasady zatwierdzenia raportu wydatków.</span><span class="sxs-lookup"><span data-stu-id="5c45c-213">You must make the following decisions for each expense report policy and each expense report approval policy that you create.</span></span> <span data-ttu-id="5c45c-214">**Decyzje:**</span><span class="sxs-lookup"><span data-stu-id="5c45c-214">**Decisions:**</span></span>
 
--   Jak nazywa się zasada?
--   Do czego ma służyć zasada wydatków?
--   Jeśli wcześniej zdecydowano o włączeniu wydatków międzyfirmowych, do jakich firm w organizacji odnosi się zasada?
--   Kiedy zasad zaczyna obowiązywać?
--   Kiedy zasad wygasa?
--   Jaka jest reguła?
--   Jaki jest wynik reguły?
+-   <span data-ttu-id="5c45c-215">Jak nazywa się zasada?</span><span class="sxs-lookup"><span data-stu-id="5c45c-215">What is the name of the policy?</span></span>
+-   <span data-ttu-id="5c45c-216">Do czego ma służyć zasada wydatków?</span><span class="sxs-lookup"><span data-stu-id="5c45c-216">What is the expense policy for?</span></span>
+-   <span data-ttu-id="5c45c-217">Jeśli wcześniej zdecydowano o włączeniu wydatków międzyfirmowych, do jakich firm w organizacji odnosi się zasada?</span><span class="sxs-lookup"><span data-stu-id="5c45c-217">If you previously decided to enable intercompany expenses, to which companies in your organization will this policy apply?</span></span>
+-   <span data-ttu-id="5c45c-218">Kiedy zasad zaczyna obowiązywać?</span><span class="sxs-lookup"><span data-stu-id="5c45c-218">When does the policy become effective?</span></span>
+-   <span data-ttu-id="5c45c-219">Kiedy zasad wygasa?</span><span class="sxs-lookup"><span data-stu-id="5c45c-219">When does the policy expire?</span></span>
+-   <span data-ttu-id="5c45c-220">Jaka jest reguła?</span><span class="sxs-lookup"><span data-stu-id="5c45c-220">What is the policy rule?</span></span>
+-   <span data-ttu-id="5c45c-221">Jaki jest wynik reguły?</span><span class="sxs-lookup"><span data-stu-id="5c45c-221">What is the outcome of the policy rule?</span></span>
 
 
 

@@ -18,28 +18,28 @@ ms.author: margoc
 ms.search.validFrom: 
 ms.dyn365.ops.version: AX 2012 R3 CU8
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 11cf53af2db453471175cec5de63d38f8b680c9b
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 121d8f757e2d5453308d8846bd299f3db339db67
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Uruchamianie testowego narzędzia do przenoszenia danych (wersja beta) dla systemu Dynamics AX (AX 2012)
+# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a><span data-ttu-id="11991-103">Uruchamianie testowego narzędzia do przenoszenia danych (wersja beta) dla systemu Dynamics AX (AX 2012)</span><span class="sxs-lookup"><span data-stu-id="11991-103">Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)</span></span>
 
 [!include[banner](../../includes/banner.md)]
 
 
-Celem funkcji szybkiego importowania/eksportowania jest umożliwienie użytkownikom importowania i eksportowania przy użyciu mniejszej liczby kroków.
+<span data-ttu-id="11991-104">Celem funkcji szybkiego importowania/eksportowania jest umożliwienie użytkownikom importowania i eksportowania przy użyciu mniejszej liczby kroków.</span><span class="sxs-lookup"><span data-stu-id="11991-104">The purpose of Quick import export is to let you import and export with fewer steps.</span></span>
 
-Dodaliśmy funkcję Szybkie importowanie/eksportowanie, aby umożliwić użytkownikom importowanie lub eksportowanie prostych zadań, które chcą szybko wykonać. W idealnej sytuacji ta funkcja jest używana w scenariuszach, w których plik jest automatycznie mapowany do systemu, a użytkownik nie musi przechodzić przez zaawansowane mapowanie ani tworzyć powtarzających się zadań importu lub eksportu.
+<span data-ttu-id="11991-105">Dodaliśmy funkcję Szybkie importowanie/eksportowanie, aby umożliwić użytkownikom importowanie lub eksportowanie prostych zadań, które chcą szybko wykonać.</span><span class="sxs-lookup"><span data-stu-id="11991-105">We added the Quick Import Export feature to let users import or export simple jobs that they want to execute quickly.</span></span> <span data-ttu-id="11991-106">W idealnej sytuacji ta funkcja jest używana w scenariuszach, w których plik jest automatycznie mapowany do systemu, a użytkownik nie musi przechodzić przez zaawansowane mapowanie ani tworzyć powtarzających się zadań importu lub eksportu.</span><span class="sxs-lookup"><span data-stu-id="11991-106">Ideally this feature is used in scenarios in which a file automatically maps to the system and user does not need to go through advanced mapping or create repeated import or export jobs.</span></span>
 
--   Ta funkcja obsługuje pracę z jednostkami gotowymi (standardowymi) i niestandardowymi.
--   Można importować z plików, a jeśli jest używane źródło danych ODBC, można wybrać zapytanie, które ma zostać użyte do zdefiniowania importu.
--   Muszą być wcześniej zdefiniowane formaty danych źródłowych dla systemu AX lub pliku i trzeba wiedzieć, gdzie się one znajdują.
--   Aby używać funkcji szybkiego importowania/eksportowania, nie trzeba tworzyć grupy przetwarzania. Zostanie ona utworzona automatycznie przez system podczas wykonywania zadania importu lub eksportu. Można także określić opcję przechowywania historii danych importowanych przez funkcję szybkiego importowania/eksportowania.
+-   <span data-ttu-id="11991-107">Ta funkcja obsługuje pracę z jednostkami gotowymi (standardowymi) i niestandardowymi.</span><span class="sxs-lookup"><span data-stu-id="11991-107">This feature supports working with both out-of-the-box and custom entities.</span></span>
+-   <span data-ttu-id="11991-108">Można importować z plików, a jeśli jest używane źródło danych ODBC, można wybrać zapytanie, które ma zostać użyte do zdefiniowania importu.</span><span class="sxs-lookup"><span data-stu-id="11991-108">You can import from files, and if you are using an ODBC data source, you can select a query to use to define your import.</span></span>
+-   <span data-ttu-id="11991-109">Muszą być wcześniej zdefiniowane formaty danych źródłowych dla systemu AX lub pliku i trzeba wiedzieć, gdzie się one znajdują.</span><span class="sxs-lookup"><span data-stu-id="11991-109">You must have previously defined source data formats for either AX or File, and know where they are located.</span></span>
+-   <span data-ttu-id="11991-110">Aby używać funkcji szybkiego importowania/eksportowania, nie trzeba tworzyć grupy przetwarzania. Zostanie ona utworzona automatycznie przez system podczas wykonywania zadania importu lub eksportu.</span><span class="sxs-lookup"><span data-stu-id="11991-110">You do not need to create a processing group to use quick import/export, one will be automatically created by the system when executing the import or export job.</span></span> <span data-ttu-id="11991-111">Można także określić opcję przechowywania historii danych importowanych przez funkcję szybkiego importowania/eksportowania.</span><span class="sxs-lookup"><span data-stu-id="11991-111">You can also choose keep the history of the data imported by the quick import/export.</span></span>
 
-  Należy zauważyć, że funkcja szybkiego importowania/eksportowania zakłada, że użytkownik jest obeznany z koncepcją struktury DIXF.
+  <span data-ttu-id="11991-112">Należy zauważyć, że funkcja szybkiego importowania/eksportowania zakłada, że użytkownik jest obeznany z koncepcją struktury DIXF.</span><span class="sxs-lookup"><span data-stu-id="11991-112">Note that Quick import export assumes that you are familiar with the concepts of DIXF.</span></span>
 
 
 

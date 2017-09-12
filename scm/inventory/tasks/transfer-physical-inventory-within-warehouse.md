@@ -1,4 +1,4 @@
---- 
+---
 title: "Przenoszenie zapasów fizycznych w magazynie"
 description: "Ta procedura poprowadzi Cię przez proces tworzenia i księgowania arkusza przeniesienia zapasów w celu zarejestrowania przesunięcia towaru z jednej lokalizacji w magazynie do innej."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,55 +17,54 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: fedb209ab111ed1fb6281fda2f4dea345e0905ef
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: bfba69731a4897906d08ff9fb9ce69e79121efeb
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="transfer-physical-inventory-within-the-warehouse"></a>Przenoszenie zapasów fizycznych w magazynie
+# <a name="transfer-physical-inventory-within-the-warehouse"></a><span data-ttu-id="0303e-103">Przenoszenie zapasów fizycznych w magazynie</span><span class="sxs-lookup"><span data-stu-id="0303e-103">Transfer physical inventory within the warehouse</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ta procedura poprowadzi Cię przez proces tworzenia i księgowania arkusza przeniesienia zapasów w celu zarejestrowania przesunięcia towaru z jednej lokalizacji w magazynie do innej. Przed rozpoczęciem tego zadania trzeba mieć skonfigurowany arkusz zapasów dla przeniesień zapasów. Procedurę można wykonać przy użyciu firmy demonstracyjnej USMF z przykładowymi wartościami, które są wyświetlane, lub za pomocą własnych danych, jeśli masz skonfigurowane produkty i lokalizacje. Te zadania zazwyczaj wykonuje pracownik magazynu.
+<span data-ttu-id="0303e-104">Ta procedura poprowadzi Cię przez proces tworzenia i księgowania arkusza przeniesienia zapasów w celu zarejestrowania przesunięcia towaru z jednej lokalizacji w magazynie do innej.</span><span class="sxs-lookup"><span data-stu-id="0303e-104">This procedure walks you through the process of creating and posting an inventory transfer journal in order to register movement of an item from one location in a warehouse to another.</span></span> <span data-ttu-id="0303e-105">Przed rozpoczęciem tego zadania trzeba mieć skonfigurowany arkusz zapasów dla przeniesień zapasów.</span><span class="sxs-lookup"><span data-stu-id="0303e-105">You need to have an inventory journal name set up for inventory transfers before you start this.</span></span> <span data-ttu-id="0303e-106">Procedurę można wykonać przy użyciu firmy demonstracyjnej USMF z przykładowymi wartościami, które są wyświetlane, lub za pomocą własnych danych, jeśli masz skonfigurowane produkty i lokalizacje.</span><span class="sxs-lookup"><span data-stu-id="0303e-106">You can walk through this procedure in demo data company USMF using the example values that are shown, or using you can use your own data if you have products and locations set up.</span></span> <span data-ttu-id="0303e-107">Te zadania zazwyczaj wykonuje pracownik magazynu.</span><span class="sxs-lookup"><span data-stu-id="0303e-107">These tasks would normally be carried out by a warehouse employee.</span></span>
 
 
-## <a name="create-an-inventory-transfer-journal"></a>Tworzenie arkusza przeniesienia zapasów
-1. Przejdź do okna Przeniesienie.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa wprowadź lub wybierz wartość.
-4. Kliknij przycisk OK.
-    * Istnieje opcja umożliwiająca określenie wymiarów „Z” i „Do” dla każdego wiersza arkusza. Są one niezbędne dla tego typu arkusza. Towary można przenosić do lokalizacji za pomocą różnych reguł. W tym przykładzie przeniesiemy towar w ramach tego samego magazynu z lokalizacji kontrolowanej przez numer identyfikacyjny do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny.   
+## <a name="create-an-inventory-transfer-journal"></a><span data-ttu-id="0303e-108">Tworzenie arkusza przeniesienia zapasów</span><span class="sxs-lookup"><span data-stu-id="0303e-108">Create an inventory transfer journal</span></span>
+1. <span data-ttu-id="0303e-109">Przejdź do okna Przeniesienie.</span><span class="sxs-lookup"><span data-stu-id="0303e-109">Go to Transfer.</span></span>
+2. <span data-ttu-id="0303e-110">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0303e-110">Click New.</span></span>
+3. <span data-ttu-id="0303e-111">W polu Nazwa wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0303e-111">In the Name field, enter or select a value.</span></span>
+4. <span data-ttu-id="0303e-112">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="0303e-112">Click OK.</span></span>
+    * <span data-ttu-id="0303e-113">Istnieje opcja umożliwiająca określenie wymiarów „Z” i „Do” dla każdego wiersza arkusza.</span><span class="sxs-lookup"><span data-stu-id="0303e-113">There is the option to specify 'From' and 'To' dimensions for each journal line.</span></span> <span data-ttu-id="0303e-114">Są one niezbędne dla tego typu arkusza.</span><span class="sxs-lookup"><span data-stu-id="0303e-114">These are essential for this journal type.</span></span> <span data-ttu-id="0303e-115">Towary można przenosić do lokalizacji za pomocą różnych reguł.</span><span class="sxs-lookup"><span data-stu-id="0303e-115">You can transfer items to locations using different rules.</span></span> <span data-ttu-id="0303e-116">W tym przykładzie przeniesiemy towar w ramach tego samego magazynu z lokalizacji kontrolowanej przez numer identyfikacyjny do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny.</span><span class="sxs-lookup"><span data-stu-id="0303e-116">In this example we’ll transfer an item within the same warehouse, from a license plate controlled location to a location that is not license plate controlled.</span></span>   
 
-## <a name="create-journal-lines"></a>Tworzenie wierszy arkusza
-1. Kliknij przycisk Nowy.
-2. W polu Numer towaru wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „A0001”.  
-3. W polu Z oddziału wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „2”.  
-4. W polu Do oddziału wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „2”.  
-5. W polu Z magazynu wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „24”.  
-6. W polu Do magazynu wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „24”.  
-7. W polu Z lokalizacji wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „FL-001”.  
-8. W polu Do lokalizacji wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „BULK-001”.  
-9. Wprowadź liczbę w polu Ilość.
-10. Kliknij kartę Wymiary magazynowe.
-11. W polu Numer identyfikacyjny wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, możesz wybrać opcję „24”.  
-12. Kliknij przycisk Zapisz.
+## <a name="create-journal-lines"></a><span data-ttu-id="0303e-117">Tworzenie wierszy arkusza</span><span class="sxs-lookup"><span data-stu-id="0303e-117">Create journal lines</span></span>
+1. <span data-ttu-id="0303e-118">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0303e-118">Click New.</span></span>
+2. <span data-ttu-id="0303e-119">W polu Numer towaru wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0303e-119">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="0303e-120">Jeśli używasz firmy USMF, możesz wybrać opcję „A0001”.</span><span class="sxs-lookup"><span data-stu-id="0303e-120">If you are using USMF, you can select 'A0001'.</span></span>  
+3. <span data-ttu-id="0303e-121">W polu Z oddziału wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0303e-121">In the From site field, enter or select a value.</span></span>
+    * <span data-ttu-id="0303e-122">Jeśli używasz firmy USMF, możesz wybrać opcję „2”.</span><span class="sxs-lookup"><span data-stu-id="0303e-122">If you are using USMF, you can select '2'.</span></span>  
+4. <span data-ttu-id="0303e-123">W polu Do oddziału wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0303e-123">In the To site field, enter or select a value.</span></span>
+    * <span data-ttu-id="0303e-124">Jeśli używasz firmy USMF, możesz wybrać opcję „2”.</span><span class="sxs-lookup"><span data-stu-id="0303e-124">If you are using USMF, you can select '2'.</span></span>  
+5. <span data-ttu-id="0303e-125">W polu Z magazynu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0303e-125">In the From warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="0303e-126">Jeśli używasz firmy USMF, możesz wybrać opcję „24”.</span><span class="sxs-lookup"><span data-stu-id="0303e-126">If you are using USMF, you can select '24'.</span></span>  
+6. <span data-ttu-id="0303e-127">W polu Do magazynu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0303e-127">In the To warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="0303e-128">Jeśli używasz firmy USMF, możesz wybrać opcję „24”.</span><span class="sxs-lookup"><span data-stu-id="0303e-128">If you are using USMF, you can select '24'.</span></span>  
+7. <span data-ttu-id="0303e-129">W polu Z lokalizacji wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0303e-129">In the From location field, enter or select a value.</span></span>
+    * <span data-ttu-id="0303e-130">Jeśli używasz firmy USMF, możesz wybrać opcję „FL-001”.</span><span class="sxs-lookup"><span data-stu-id="0303e-130">If you are using USMF, you can select 'FL-001'.</span></span>  
+8. <span data-ttu-id="0303e-131">W polu Do lokalizacji wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0303e-131">In the To location field, enter or select a value.</span></span>
+    * <span data-ttu-id="0303e-132">Jeśli używasz firmy USMF, możesz wybrać opcję „BULK-001”.</span><span class="sxs-lookup"><span data-stu-id="0303e-132">If you are using USMF, you can select 'BULK-001'.</span></span>  
+9. <span data-ttu-id="0303e-133">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="0303e-133">In the Quantity field, enter a number.</span></span>
+10. <span data-ttu-id="0303e-134">Kliknij kartę Wymiary magazynowe.</span><span class="sxs-lookup"><span data-stu-id="0303e-134">Click the Inventory dimensions tab.</span></span>
+11. <span data-ttu-id="0303e-135">W polu Numer identyfikacyjny wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0303e-135">In the License plate field, enter or select a value.</span></span>
+    * <span data-ttu-id="0303e-136">Jeśli używasz firmy USMF, możesz wybrać opcję „24”.</span><span class="sxs-lookup"><span data-stu-id="0303e-136">If you are using USMF, you can select '24'.</span></span>  
+12. <span data-ttu-id="0303e-137">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="0303e-137">Click Save.</span></span>
 
-## <a name="post-the-inventory-transfer-journal"></a>Księgowanie arkusza przeniesienia zapasów
-1. Kliknij przycisk Księguj.
-2. Kliknij przycisk OK.
+## <a name="post-the-inventory-transfer-journal"></a><span data-ttu-id="0303e-138">Księgowanie arkusza przeniesienia zapasów</span><span class="sxs-lookup"><span data-stu-id="0303e-138">Post the inventory transfer journal</span></span>
+1. <span data-ttu-id="0303e-139">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="0303e-139">Click Post.</span></span>
+2. <span data-ttu-id="0303e-140">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="0303e-140">Click OK.</span></span>
 
-## <a name="view-inventory-transactions"></a>Wyświetlanie transakcji magazynowych
-1. Kliknij opcję Zapasy.
-2. Kliknij opcję Transakcje.
-    * W tym miejscu widać transakcje, które zostały utworzone podczas księgowania arkusza.  
-
+## <a name="view-inventory-transactions"></a><span data-ttu-id="0303e-141">Wyświetlanie transakcji magazynowych</span><span class="sxs-lookup"><span data-stu-id="0303e-141">View inventory transactions</span></span>
+1. <span data-ttu-id="0303e-142">Kliknij opcję Zapasy.</span><span class="sxs-lookup"><span data-stu-id="0303e-142">Click Inventory.</span></span>
+2. <span data-ttu-id="0303e-143">Kliknij opcję Transakcje.</span><span class="sxs-lookup"><span data-stu-id="0303e-143">Click Transactions.</span></span>
+    * <span data-ttu-id="0303e-144">W tym miejscu widać transakcje, które zostały utworzone podczas księgowania arkusza.</span><span class="sxs-lookup"><span data-stu-id="0303e-144">Here you can see the transactions that were created when you posted your journal.</span></span>  
 

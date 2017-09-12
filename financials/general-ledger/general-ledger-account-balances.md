@@ -19,37 +19,37 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1dbdb732acdedb15554d242f076cd2e11d4fc226
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 05db6bc373b69a623939eb0e39876332b64cd64b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="general-ledger-account-balances"></a>Salda głównego konta księgowego
+# <a name="general-ledger-account-balances"></a><span data-ttu-id="0f638-104">Salda głównego konta księgowego</span><span class="sxs-lookup"><span data-stu-id="0f638-104">General ledger account balances</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym artykule opisano dwa sposoby wyświetlania sald kont księgi głównej — ze strony listy Bilans próbny i za pomocą raportów finansowych. Omówiono także sposoby aktualizacji sald zestawów wymiarów.
+<span data-ttu-id="0f638-105">W tym artykule opisano dwa sposoby wyświetlania sald kont księgi głównej — ze strony listy Bilans próbny i za pomocą raportów finansowych.</span><span class="sxs-lookup"><span data-stu-id="0f638-105">This article explains two ways to view general ledger account balances -  the Trial balance list page and financial reports.</span></span> <span data-ttu-id="0f638-106">Omówiono także sposoby aktualizacji sald zestawów wymiarów.</span><span class="sxs-lookup"><span data-stu-id="0f638-106">It also discusses how to update dimension set balances.</span></span>
 
-Użytkownik może wyświetlić salda w księdze głównej na wiele różnych sposobów. To najchętniej używanych należą:
+<span data-ttu-id="0f638-107">Użytkownik może wyświetlić salda w księdze głównej na wiele różnych sposobów.</span><span class="sxs-lookup"><span data-stu-id="0f638-107">There are a variety of ways users can view balances in the general ledger.</span></span> <span data-ttu-id="0f638-108">To najchętniej używanych należą:</span><span class="sxs-lookup"><span data-stu-id="0f638-108">Some of the most common options are:</span></span>
 
--   Bilans próbny
--   Raporty finansowe
--   Transakcje na załączniku
--   Raporty księgi
+-   <span data-ttu-id="0f638-109">Bilans próbny</span><span class="sxs-lookup"><span data-stu-id="0f638-109">Trial balance</span></span>
+-   <span data-ttu-id="0f638-110">Raporty finansowe</span><span class="sxs-lookup"><span data-stu-id="0f638-110">Financial reports</span></span>
+-   <span data-ttu-id="0f638-111">Transakcje na załączniku</span><span class="sxs-lookup"><span data-stu-id="0f638-111">Voucher transactions</span></span>
+-   <span data-ttu-id="0f638-112">Raporty księgi</span><span class="sxs-lookup"><span data-stu-id="0f638-112">Ledger reports</span></span>
 
-Najczęściej używana jest strona listy bilansu próbnego oraz raporty finansowe.
+<span data-ttu-id="0f638-113">Najczęściej używana jest strona listy bilansu próbnego oraz raporty finansowe.</span><span class="sxs-lookup"><span data-stu-id="0f638-113">The most common ways are the trial balance list page and financial reports.</span></span>
 
-## <a name="trial-balance"></a>Bilans próbny
-Bilans próbny to strona listy, która pokazuje wszystkie salda konta i/lub wymiary w danym okresie czasu. Kiedy bilans próbny jest otwierany, odświeża się według sald dla dat i właściwości, które są ustawione w Parametrach. Właściwości, które mogą być zmieniane w Parametrach, to daty, warstwy księgowania, sposób wyświetlania sald otwarcia oraz jakie typy transakcji zamknięcia mają być wyświetlane. 
+## <a name="trial-balance"></a><span data-ttu-id="0f638-114">Bilans próbny</span><span class="sxs-lookup"><span data-stu-id="0f638-114">Trial balance</span></span>
+<span data-ttu-id="0f638-115">Bilans próbny to strona listy, która pokazuje wszystkie salda konta i/lub wymiary w danym okresie czasu.</span><span class="sxs-lookup"><span data-stu-id="0f638-115">The trial balance is a list page that shows all of the balances of an account and/or dimensions for a given period of time.</span></span> <span data-ttu-id="0f638-116">Kiedy bilans próbny jest otwierany, odświeża się według sald dla dat i właściwości, które są ustawione w Parametrach.</span><span class="sxs-lookup"><span data-stu-id="0f638-116">When the trial balance is first opened it refreshes with the balances for the dates and properties that are set in the Parameters.</span></span> <span data-ttu-id="0f638-117">Właściwości, które mogą być zmieniane w Parametrach, to daty, warstwy księgowania, sposób wyświetlania sald otwarcia oraz jakie typy transakcji zamknięcia mają być wyświetlane.</span><span class="sxs-lookup"><span data-stu-id="0f638-117">Properties that can be changed in Parameters are the dates, posting layer, how they want opening balances to appear, and what closing transaction types to show.</span></span> 
 
-Gdy użytkownik zmienia parametry, salda są odświeżane. Użytkownik może również wybrać zestaw wymiarów, dla których salda mają być wyświetlane, oraz czy poszczególne wymiary mają być wyświetlane w oddzielnych kolumnach. 
+<span data-ttu-id="0f638-118">Gdy użytkownik zmienia parametry, salda są odświeżane.</span><span class="sxs-lookup"><span data-stu-id="0f638-118">When a user changes the parameters the balances are refreshed.</span></span> <span data-ttu-id="0f638-119">Użytkownik może również wybrać zestaw wymiarów, dla których salda mają być wyświetlane, oraz czy poszczególne wymiary mają być wyświetlane w oddzielnych kolumnach.</span><span class="sxs-lookup"><span data-stu-id="0f638-119">The user can also pick what dimension set they want to view balances for and whether each of the dimensions show in separate columns.</span></span> 
 
-Użytkownicy mogą wyświetlać bardziej szczegółowe dane transakcji składowych salda.    
+<span data-ttu-id="0f638-120">Użytkownicy mogą wyświetlać bardziej szczegółowe dane transakcji składowych salda.</span><span class="sxs-lookup"><span data-stu-id="0f638-120">Users can drill down on the balances to view the transactions that make up the balance.</span></span>    
 
-Aby uzyskać więcej informacji, zobacz [Wyświetlanie raportów finansowych](view-financial-reports.md).
+<span data-ttu-id="0f638-121">Aby uzyskać więcej informacji, zobacz [Wyświetlanie raportów finansowych](view-financial-reports.md).</span><span class="sxs-lookup"><span data-stu-id="0f638-121">For more information, see [View financial reports](view-financial-reports.md).</span></span>
 
 
 

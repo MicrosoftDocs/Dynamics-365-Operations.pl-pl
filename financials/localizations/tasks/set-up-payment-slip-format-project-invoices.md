@@ -16,53 +16,53 @@ ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 8afbcf781e917f48136e06692234d49302b077fb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f2dab127a40a1a48b49077d4b2395f5b8c58116b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-payment-slip-format-for-project-invoices"></a>Konfigurowanie formatu dokumentu płatności dla faktur projektu
+# <a name="set-up-payment-slip-format-for-project-invoices"></a><span data-ttu-id="6d6f0-103">Konfigurowanie formatu dokumentu płatności dla faktur projektu</span><span class="sxs-lookup"><span data-stu-id="6d6f0-103">Set up payment slip format for project invoices</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Firmy zazwyczaj dołączają drukowane dokumenty płatności do faktur, aby pomóc klientom i dostarczyć referencyjne informacje płatnicze na potrzeby księgowania i rozliczania. Dokument płatności mogą towarzyszyć nie tylko fakturom sprzedaży i fakturom niezależnym, ale także fakturom za projekty i usługi, ponagleniom, notom odsetkowym i wyciągom z konta. Aby przetwarzać dokumenty płatności, należy najpierw skonfigurować numer identyfikacyjny wierzyciela oraz formaty załączanych dokumentów płatności.
+<span data-ttu-id="6d6f0-104">Firmy zazwyczaj dołączają drukowane dokumenty płatności do faktur, aby pomóc klientom i dostarczyć referencyjne informacje płatnicze na potrzeby księgowania i rozliczania.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-104">Businesses commonly attach printed payment slips to invoices to assist customers and provide a payment reference for posting and settlement.</span></span> <span data-ttu-id="6d6f0-105">Dokument płatności mogą towarzyszyć nie tylko fakturom sprzedaży i fakturom niezależnym, ale także fakturom za projekty i usługi, ponagleniom, notom odsetkowym i wyciągom z konta.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-105">The payment slip can be used for project or service invoices, collection letters, interest notes, and account statements, in addition to sales invoices and free text invoices.</span></span> <span data-ttu-id="6d6f0-106">Aby przetwarzać dokumenty płatności, należy najpierw skonfigurować numer identyfikacyjny wierzyciela oraz formaty załączanych dokumentów płatności.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-106">To process payment slips, first set up your creditor identification number and payment slip attachment formats.</span></span>
 
-Ta procedura wykorzystuje firmę demonstracyjną DEMF. 
+<span data-ttu-id="6d6f0-107">Ta procedura wykorzystuje firmę demonstracyjną DEMF.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-107">This procedure uses the DEMF demo company.</span></span> 
 
-Ta funkcja jest dostępna w firmach, których adresem podstawowym jest Dania.
+<span data-ttu-id="6d6f0-108">Ta funkcja jest dostępna w firmach, których adresem podstawowym jest Dania.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-108">This functionality is available for legal entities whose primary address is in Denmark.</span></span>
 
 
-## <a name="set-up-a-creditor-id-number"></a>Konfigurowanie numeru identyfikacyjnego wierzyciela
-1. Wybierz kolejno opcje Administrowanie organizacją > Organizacje > Firmy.
-2. Rozwiń lub zwiń sekcję Informacje o koncie bankowym.
-3. Kliknij przycisk Edytuj.
-4. W polu Identyfikator wierzyciela FI wpisz wartość.
-5. Kliknij przycisk Zapisz.
-6. Zamknij stronę.
+## <a name="set-up-a-creditor-id-number"></a><span data-ttu-id="6d6f0-109">Konfigurowanie numeru identyfikacyjnego wierzyciela</span><span class="sxs-lookup"><span data-stu-id="6d6f0-109">Set up a creditor ID number</span></span>
+1. <span data-ttu-id="6d6f0-110">Wybierz kolejno opcje Administrowanie organizacją > Organizacje > Firmy.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-110">Go to Organization administration > Organizations > Legal entities.</span></span>
+2. <span data-ttu-id="6d6f0-111">Rozwiń lub zwiń sekcję Informacje o koncie bankowym.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-111">Expand or collapse the Bank account information section.</span></span>
+3. <span data-ttu-id="6d6f0-112">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-112">Click Edit.</span></span>
+4. <span data-ttu-id="6d6f0-113">W polu Identyfikator wierzyciela FI wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-113">In the FI-Creditor ID field, type a value.</span></span>
+5. <span data-ttu-id="6d6f0-114">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-114">Click Save.</span></span>
+6. <span data-ttu-id="6d6f0-115">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-115">Close the page.</span></span>
 
-## <a name="set-up-a-payment-slip-format-for-invoices-notes-letters-and-statements"></a>Konfigurowanie formatu dokumentu płatności dla faktur, not, pism i wyciągów
-1. Wybierz kolejno opcje Rozrachunki z odbiorcami > Ustawienia > Formularze > Ustawienia formularza.
-2. Kliknij kartę Faktura.
-3. W polu Załącznik powiązanych płatności faktury dla odbiorcy wybierz opcję.
-    * Brak — Dokument płatności nie jest drukowany. Zaznacz tę opcję, jeśli kwota płatności jest w walucie innej niż duńska korona (DKK).   FIK 751 — Drukowanie dokumentu płatności FIK 751, gdy kwota płatności i termin płatności mają być wpisane ręcznie do dokumentu płatności.   FIK 752 — Zostanie wydrukowany dokument płatności FIK 752, jeśli ma być używany generowany komputerowo dokument z nadrukiem terminu i kwoty płatności.  
-4. Kliknij przycisk Zapisz.
-5. Kliknij kartę Faktura niezależna.
-6. W polu Załącznik powiązanych płatności faktury niezależnej wybierz opcję.
-    * Brak — Dokument płatności nie jest drukowany. Zaznacz tę opcję, jeśli kwota płatności jest w walucie innej niż duńska korona (DKK).   FIK 751 — Drukowanie dokumentu płatności FIK 751, gdy kwota płatności i termin płatności mają być wpisane ręcznie do dokumentu płatności.   FIK 752 — Zostanie wydrukowany dokument płatności FIK 752, jeśli ma być używany generowany komputerowo dokument z nadrukiem terminu i kwoty płatności.  
-7. Kliknij przycisk Zapisz.
-8. Kliknij kartę Nota odsetkowa.
-9. W polu Załącznik powiązanych płatności noty odsetkowej wybierz opcję.
-    * Brak — Dokument płatności nie jest drukowany. Zaznacz tę opcję, jeśli kwota płatności jest w walucie innej niż duńska korona (DKK).   FIK 751 — Drukowanie dokumentu płatności FIK 751, gdy kwota płatności i termin płatności mają być wpisane ręcznie do dokumentu płatności.   FIK 752 — Zostanie wydrukowany dokument płatności FIK 752, jeśli ma być używany generowany komputerowo dokument z nadrukiem terminu i kwoty płatności.  
-10. Kliknij przycisk Zapisz.
-11. Kliknij kartę Ponaglenie.
-12. W polu Załącznik powiązanych płatności dla ponaglenia wybierz opcję.
-    * Brak — Dokument płatności nie jest drukowany. Zaznacz tę opcję, jeśli kwota płatności jest w walucie innej niż duńska korona (DKK).   FIK 751 — Drukowanie dokumentu płatności FIK 751, gdy kwota płatności i termin płatności mają być wpisane ręcznie do dokumentu płatności.   FIK 752 — Zostanie wydrukowany dokument płatności FIK 752, jeśli ma być używany generowany komputerowo dokument z nadrukiem terminu i kwoty płatności.  
-13. Kliknij przycisk Zapisz.
-14. Kliknij kartę Wyciąg z konta.
-15. W polu Załącznik powiązanych płatności na wyciągu z konta wybierz opcję.
-    * Brak — Dokument płatności nie jest drukowany. Zaznacz tę opcję, jeśli kwota płatności jest w walucie innej niż duńska korona (DKK).   FIK 751 — Drukowanie dokumentu płatności FIK 751, gdy kwota płatności i termin płatności mają być wpisane ręcznie do dokumentu płatności.   FIK 752 — Zostanie wydrukowany dokument płatności FIK 752, jeśli ma być używany generowany komputerowo dokument z nadrukiem terminu i kwoty płatności.  
-16. Kliknij przycisk Zapisz.
-17. Zamknij stronę.
+## <a name="set-up-a-payment-slip-format-for-invoices-notes-letters-and-statements"></a><span data-ttu-id="6d6f0-116">Konfigurowanie formatu dokumentu płatności dla faktur, not, pism i wyciągów</span><span class="sxs-lookup"><span data-stu-id="6d6f0-116">Set up a payment slip format for invoices, notes, letters, and statements</span></span>
+1. <span data-ttu-id="6d6f0-117">Wybierz kolejno opcje Rozrachunki z odbiorcami > Ustawienia > Formularze > Ustawienia formularza.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-117">Go to Accounts receivable > Setup > Forms > Form setup.</span></span>
+2. <span data-ttu-id="6d6f0-118">Kliknij kartę Faktura.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-118">Click the Invoice tab.</span></span>
+3. <span data-ttu-id="6d6f0-119">W polu Załącznik powiązanych płatności faktury dla odbiorcy wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-119">In the Associated payment attachment on customer invoice field, select an option.</span></span>
+    * <span data-ttu-id="6d6f0-120">Brak — Dokument płatności nie jest drukowany.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-120">None – Do not print a payment slip.</span></span> <span data-ttu-id="6d6f0-121">Zaznacz tę opcję, jeśli kwota płatności jest w walucie innej niż duńska korona (DKK).</span><span class="sxs-lookup"><span data-stu-id="6d6f0-121">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="6d6f0-122">FIK 751 — Drukowanie dokumentu płatności FIK 751, gdy kwota płatności i termin płatności mają być wpisane ręcznie do dokumentu płatności.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-122">FIK 751 – Print an FIK 751 payment slip if you intend to manually write the payment amount and due date on the payment slip.</span></span>   <span data-ttu-id="6d6f0-123">FIK 752 — Zostanie wydrukowany dokument płatności FIK 752, jeśli ma być używany generowany komputerowo dokument z nadrukiem terminu i kwoty płatności.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-123">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+4. <span data-ttu-id="6d6f0-124">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-124">Click Save.</span></span>
+5. <span data-ttu-id="6d6f0-125">Kliknij kartę Faktura niezależna.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-125">Click the Free text invoice tab.</span></span>
+6. <span data-ttu-id="6d6f0-126">W polu Załącznik powiązanych płatności faktury niezależnej wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-126">In the Associated payment attachment on free text invoice field, select an option.</span></span>
+    * <span data-ttu-id="6d6f0-127">Brak — Dokument płatności nie jest drukowany.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-127">None – Do not print a payment slip.</span></span> <span data-ttu-id="6d6f0-128">Zaznacz tę opcję, jeśli kwota płatności jest w walucie innej niż duńska korona (DKK).</span><span class="sxs-lookup"><span data-stu-id="6d6f0-128">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="6d6f0-129">FIK 751 — Drukowanie dokumentu płatności FIK 751, gdy kwota płatności i termin płatności mają być wpisane ręcznie do dokumentu płatności.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-129">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="6d6f0-130">FIK 752 — Zostanie wydrukowany dokument płatności FIK 752, jeśli ma być używany generowany komputerowo dokument z nadrukiem terminu i kwoty płatności.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-130">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+7. <span data-ttu-id="6d6f0-131">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-131">Click Save.</span></span>
+8. <span data-ttu-id="6d6f0-132">Kliknij kartę Nota odsetkowa.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-132">Click the Interest note tab.</span></span>
+9. <span data-ttu-id="6d6f0-133">W polu Załącznik powiązanych płatności noty odsetkowej wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-133">In the Associated payment attachment on interest note field, select an option.</span></span>
+    * <span data-ttu-id="6d6f0-134">Brak — Dokument płatności nie jest drukowany.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-134">None – Do not print a payment slip.</span></span> <span data-ttu-id="6d6f0-135">Zaznacz tę opcję, jeśli kwota płatności jest w walucie innej niż duńska korona (DKK).</span><span class="sxs-lookup"><span data-stu-id="6d6f0-135">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="6d6f0-136">FIK 751 — Drukowanie dokumentu płatności FIK 751, gdy kwota płatności i termin płatności mają być wpisane ręcznie do dokumentu płatności.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-136">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="6d6f0-137">FIK 752 — Zostanie wydrukowany dokument płatności FIK 752, jeśli ma być używany generowany komputerowo dokument z nadrukiem terminu i kwoty płatności.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-137">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+10. <span data-ttu-id="6d6f0-138">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-138">Click Save.</span></span>
+11. <span data-ttu-id="6d6f0-139">Kliknij kartę Ponaglenie.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-139">Click the Collection letter tab.</span></span>
+12. <span data-ttu-id="6d6f0-140">W polu Załącznik powiązanych płatności dla ponaglenia wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-140">In the Associated payment attachment on collection letter field, select an option.</span></span>
+    * <span data-ttu-id="6d6f0-141">Brak — Dokument płatności nie jest drukowany.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-141">None – Do not print a payment slip.</span></span> <span data-ttu-id="6d6f0-142">Zaznacz tę opcję, jeśli kwota płatności jest w walucie innej niż duńska korona (DKK).</span><span class="sxs-lookup"><span data-stu-id="6d6f0-142">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="6d6f0-143">FIK 751 — Drukowanie dokumentu płatności FIK 751, gdy kwota płatności i termin płatności mają być wpisane ręcznie do dokumentu płatności.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-143">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="6d6f0-144">FIK 752 — Zostanie wydrukowany dokument płatności FIK 752, jeśli ma być używany generowany komputerowo dokument z nadrukiem terminu i kwoty płatności.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-144">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+13. <span data-ttu-id="6d6f0-145">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-145">Click Save.</span></span>
+14. <span data-ttu-id="6d6f0-146">Kliknij kartę Wyciąg z konta.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-146">Click the Account statement tab.</span></span>
+15. <span data-ttu-id="6d6f0-147">W polu Załącznik powiązanych płatności na wyciągu z konta wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-147">In the Associated payment attachment on account statement field, select an option.</span></span>
+    * <span data-ttu-id="6d6f0-148">Brak — Dokument płatności nie jest drukowany.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-148">None – Do not print a payment slip.</span></span> <span data-ttu-id="6d6f0-149">Zaznacz tę opcję, jeśli kwota płatności jest w walucie innej niż duńska korona (DKK).</span><span class="sxs-lookup"><span data-stu-id="6d6f0-149">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="6d6f0-150">FIK 751 — Drukowanie dokumentu płatności FIK 751, gdy kwota płatności i termin płatności mają być wpisane ręcznie do dokumentu płatności.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-150">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="6d6f0-151">FIK 752 — Zostanie wydrukowany dokument płatności FIK 752, jeśli ma być używany generowany komputerowo dokument z nadrukiem terminu i kwoty płatności.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-151">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+16. <span data-ttu-id="6d6f0-152">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-152">Click Save.</span></span>
+17. <span data-ttu-id="6d6f0-153">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="6d6f0-153">Close the page.</span></span>
 
 

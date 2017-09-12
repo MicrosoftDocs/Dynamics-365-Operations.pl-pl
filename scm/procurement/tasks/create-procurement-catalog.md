@@ -16,64 +16,64 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 19d053a0bdbdcc764b3361fe5a326e8c68cdc682
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: df844ba3834972441daa61899294b3e95cac96c1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-procurement-catalog"></a>Tworzenie katalogu zaopatrzenia
+# <a name="create-a-procurement-catalog"></a><span data-ttu-id="14681-103">Tworzenie katalogu zaopatrzenia</span><span class="sxs-lookup"><span data-stu-id="14681-103">Create a procurement catalog</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tym przewodniku pokazano sposób tworzenia katalogu zaopatrzenia. To zadanie jest zazwyczaj wykonywane przez pracownika działu zaopatrzenia. Dowiedz się także, jak pracownicy mogą używać katalogu podczas tworzenia zapotrzebowania. Aby można było utworzyć katalogu, w systemie musi istnieć hierarchia kategorii zaopatrzenia. Hierarchia, wraz ze wszystkimi znajdującymi się w niej produktami, jest dziedziczona przez nowy katalog. Można użyć tego przewodnika z danymi firmy demonstracyjne USMF, gdzie hierarchia kategorii zaopatrzenia jest już dostępna, oraz wobec przykładów opisanych w krokach procedury.
+<span data-ttu-id="14681-104">W tym przewodniku pokazano sposób tworzenia katalogu zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="14681-104">This guide shows you how to create a procurement catalog.</span></span> <span data-ttu-id="14681-105">To zadanie jest zazwyczaj wykonywane przez pracownika działu zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="14681-105">This task would typically be carried out by a procurement professional.</span></span> <span data-ttu-id="14681-106">Dowiedz się także, jak pracownicy mogą używać katalogu podczas tworzenia zapotrzebowania.</span><span class="sxs-lookup"><span data-stu-id="14681-106">You will also learn how employees can use the catalog when they create a requisition.</span></span> <span data-ttu-id="14681-107">Aby można było utworzyć katalogu, w systemie musi istnieć hierarchia kategorii zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="14681-107">Before you can create a catalog, there must be a procurement category hierarchy in your system.</span></span> <span data-ttu-id="14681-108">Hierarchia, wraz ze wszystkimi znajdującymi się w niej produktami, jest dziedziczona przez nowy katalog.</span><span class="sxs-lookup"><span data-stu-id="14681-108">The hierarchy is inherited by the new catalog, along with all the products that are in the hierarchy.</span></span> <span data-ttu-id="14681-109">Można użyć tego przewodnika z danymi firmy demonstracyjne USMF, gdzie hierarchia kategorii zaopatrzenia jest już dostępna, oraz wobec przykładów opisanych w krokach procedury.</span><span class="sxs-lookup"><span data-stu-id="14681-109">You can use this guide in demo data company USMF where the procurement category hierarchy is available, as well as the examples used in the procedure steps.</span></span>
 
 
-## <a name="ensure-that-a-procurement-category-hierarchy-exists"></a>Sprawdzanie, czy istnieje hierarchia kategorii zaopatrzenia
-1. Wybierz kolejno opcje Zaopatrzenie i sourcing > Kategorie zaopatrzenia.
-    * W danych firmy demonstracyjnej USMF jest dostępna hierarchia kategorii zaopatrzenia, a produkty zostały dodane do kategorii Urządzenia biurowe/Komputery. Jeśli wykonujesz tę procedurę jako przewodnik po zadaniu, musisz odblokować przewodnik, aby móc przeglądać kategorię. Jeśli hierarchia nie była dostępna, należało ją utworzyć kliknięciem przycisku Nowy. Można to zrobić tylko raz.  
-2. Zamknij stronę.
+## <a name="ensure-that-a-procurement-category-hierarchy-exists"></a><span data-ttu-id="14681-110">Sprawdzanie, czy istnieje hierarchia kategorii zaopatrzenia</span><span class="sxs-lookup"><span data-stu-id="14681-110">Ensure that a procurement category hierarchy exists</span></span>
+1. <span data-ttu-id="14681-111">Wybierz kolejno opcje Zaopatrzenie i sourcing > Kategorie zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="14681-111">Go to Procurement and sourcing > Procurement categories.</span></span>
+    * <span data-ttu-id="14681-112">W danych firmy demonstracyjnej USMF jest dostępna hierarchia kategorii zaopatrzenia, a produkty zostały dodane do kategorii Urządzenia biurowe/Komputery.</span><span class="sxs-lookup"><span data-stu-id="14681-112">A procurement category hierarchy is available in the USMF demo data company and products have been added to the Office machines/Computers category.</span></span> <span data-ttu-id="14681-113">Jeśli wykonujesz tę procedurę jako przewodnik po zadaniu, musisz odblokować przewodnik, aby móc przeglądać kategorię.</span><span class="sxs-lookup"><span data-stu-id="14681-113">If you’re running this procedure as a task guide, you’ll need to unlock the guide if you want to browse through the category.</span></span> <span data-ttu-id="14681-114">Jeśli hierarchia nie była dostępna, należało ją utworzyć kliknięciem przycisku Nowy.</span><span class="sxs-lookup"><span data-stu-id="14681-114">If a hierarchy was not available, you’d create it by clicking New.</span></span> <span data-ttu-id="14681-115">Można to zrobić tylko raz.</span><span class="sxs-lookup"><span data-stu-id="14681-115">This can only be done once.</span></span>  
+2. <span data-ttu-id="14681-116">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="14681-116">Close the page.</span></span>
 
-## <a name="create-a-catalog"></a>Tworzenie katalogu
-1. Wybierz kolejno opcje Zaopatrzenie i sourcing > Katalogi > Katalogi zaopatrzenia.
-2. Kliknij przycisk Nowy katalog zaopatrzenia, aby otworzyć rozwijane okno dialogowe.
-3. W polu Nazwa wpisz wartość.
-4. Kliknij przycisk OK.
-5. W drzewie rozwiń węzeł „KATEGORIE ZAOPATRZENIA W FIRMIE”.
-6. W drzewie rozwiń węzeł „URZĄDZENIA BIUROWE”.
-7. W drzewie zaznacz pozycję „Komputery”.
-    * Produkty z kategorii zaopatrzenia są wyświetlane na liście. Jeśli chcesz dodać produkt do kategorii, trzeba to zrobić na stronie Hierarchia kategorii zaopatrzenia lub na stronie Szczegóły pozycji.  
-    * Domyślny typ aktualizacji określa, czy nowe produkty dodawane do hierarchii kategorii zaopatrzenia są natychmiast widoczne w katalogu. Jeśli jako typ aktualizacji ustawiono wartość Dynamiczne, zmiany są widoczne natychmiast. Jeśli typem aktualizacji jest Statyczne, nowe produkty są widoczne tylko dla osób używających katalogu po jego ponownym opublikowaniu. Akcja Publikuj jest dostępna w okienku akcji u góry strony. Jeśli produkty zostaną usunięte z hierarchii kategorii zaopatrzenia, zmiana jest natychmiast widoczna, niezależnie od wartości w polu Domyślny typ aktualizacji.  
-8. Na liście znajdź i zaznacz odpowiedni rekord.
-9. Kliknij przycisk Ukryj.
-10. W okienku akcji kliknij pozycję Kategoria nawigacji.
-11. Kliknij przycisk Wyłącz.
-12. W okienku akcji kliknij pozycję Kategoria nawigacji.
-13. Kliknij przycisk Włącz.
-14. Kliknij opcję Uaktywnij katalog.
-15. Zamknij stronę.
+## <a name="create-a-catalog"></a><span data-ttu-id="14681-117">Tworzenie katalogu</span><span class="sxs-lookup"><span data-stu-id="14681-117">Create a catalog</span></span>
+1. <span data-ttu-id="14681-118">Wybierz kolejno opcje Zaopatrzenie i sourcing > Katalogi > Katalogi zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="14681-118">Go to Procurement and sourcing > Catalogs > Procurement catalogs.</span></span>
+2. <span data-ttu-id="14681-119">Kliknij przycisk Nowy katalog zaopatrzenia, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="14681-119">Click New procurement catalog to open the drop dialog.</span></span>
+3. <span data-ttu-id="14681-120">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="14681-120">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="14681-121">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="14681-121">Click OK.</span></span>
+5. <span data-ttu-id="14681-122">W drzewie rozwiń węzeł „KATEGORIE ZAOPATRZENIA W FIRMIE”.</span><span class="sxs-lookup"><span data-stu-id="14681-122">In the tree, expand 'CORP PROCUREMENT CATEGORIES'.</span></span>
+6. <span data-ttu-id="14681-123">W drzewie rozwiń węzeł „URZĄDZENIA BIUROWE”.</span><span class="sxs-lookup"><span data-stu-id="14681-123">In the tree, expand 'OFFICE MACHINES'.</span></span>
+7. <span data-ttu-id="14681-124">W drzewie zaznacz pozycję „Komputery”.</span><span class="sxs-lookup"><span data-stu-id="14681-124">In the tree, select 'Computers'.</span></span>
+    * <span data-ttu-id="14681-125">Produkty z kategorii zaopatrzenia są wyświetlane na liście.</span><span class="sxs-lookup"><span data-stu-id="14681-125">The products from the procurement category are displayed in the list.</span></span> <span data-ttu-id="14681-126">Jeśli chcesz dodać produkt do kategorii, trzeba to zrobić na stronie Hierarchia kategorii zaopatrzenia lub na stronie Szczegóły pozycji.</span><span class="sxs-lookup"><span data-stu-id="14681-126">If you want to add a product to the category you need to do this on the Procurement category hierarchy page or on the Item details page.</span></span>  
+    * <span data-ttu-id="14681-127">Domyślny typ aktualizacji określa, czy nowe produkty dodawane do hierarchii kategorii zaopatrzenia są natychmiast widoczne w katalogu.</span><span class="sxs-lookup"><span data-stu-id="14681-127">The Default update type determines whether new products that have been added to the procurement category hierarchy are immediately visible in the catalog.</span></span> <span data-ttu-id="14681-128">Jeśli jako typ aktualizacji ustawiono wartość Dynamiczne, zmiany są widoczne natychmiast.</span><span class="sxs-lookup"><span data-stu-id="14681-128">If the update type is set to Dynamic, changes are visible immediately.</span></span> <span data-ttu-id="14681-129">Jeśli typem aktualizacji jest Statyczne, nowe produkty są widoczne tylko dla osób używających katalogu po jego ponownym opublikowaniu.</span><span class="sxs-lookup"><span data-stu-id="14681-129">If the update type is Static, new products are only visible to people using the catalog after the catalog has been re-published.</span></span> <span data-ttu-id="14681-130">Akcja Publikuj jest dostępna w okienku akcji u góry strony.</span><span class="sxs-lookup"><span data-stu-id="14681-130">The Publish action is available on the Action Pane at the top of the page.</span></span> <span data-ttu-id="14681-131">Jeśli produkty zostaną usunięte z hierarchii kategorii zaopatrzenia, zmiana jest natychmiast widoczna, niezależnie od wartości w polu Domyślny typ aktualizacji.</span><span class="sxs-lookup"><span data-stu-id="14681-131">If products are removed from the procurement category hierarchy, the change is immediately visible, regardless of the value in the Default update type field.</span></span>  
+8. <span data-ttu-id="14681-132">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="14681-132">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="14681-133">Kliknij przycisk Ukryj.</span><span class="sxs-lookup"><span data-stu-id="14681-133">Click Hide.</span></span>
+10. <span data-ttu-id="14681-134">W okienku akcji kliknij pozycję Kategoria nawigacji.</span><span class="sxs-lookup"><span data-stu-id="14681-134">On the Action Pane, click Category navigation.</span></span>
+11. <span data-ttu-id="14681-135">Kliknij przycisk Wyłącz.</span><span class="sxs-lookup"><span data-stu-id="14681-135">Click Disable.</span></span>
+12. <span data-ttu-id="14681-136">W okienku akcji kliknij pozycję Kategoria nawigacji.</span><span class="sxs-lookup"><span data-stu-id="14681-136">On the Action Pane, click Category navigation.</span></span>
+13. <span data-ttu-id="14681-137">Kliknij przycisk Włącz.</span><span class="sxs-lookup"><span data-stu-id="14681-137">Click Enable.</span></span>
+14. <span data-ttu-id="14681-138">Kliknij opcję Uaktywnij katalog.</span><span class="sxs-lookup"><span data-stu-id="14681-138">Click Activate catalog.</span></span>
+15. <span data-ttu-id="14681-139">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="14681-139">Close the page.</span></span>
 
-## <a name="make-the-catalog-visible"></a>Ustawianie widoczności katalogu
-1. Wybierz kolejno opcje Zaopatrzenie i sourcing > Ustawienia > Zasady > Zasady zakupów.
-2. Wybierz zasadę Procurement Policy USMF.
-    * Należy wybrać zasady zakupów dla firmy, w której pracownik połączony z Twoim profilem użytkownika może zamawiać produkty. W danych firmy demonstracyjnej USMF administrator jest połączony z pracownikiem Julia Funderburk. Julia domyślnie zamawia produkty w USMF.  
-3. Na liście kliknij łącze w wybranym wierszu.
-4. Zaznacz nowo utworzony katalog.
-5. Kliknij przycisk OK.
-6. Zamknij stronę.
-7. Zamknij stronę.
+## <a name="make-the-catalog-visible"></a><span data-ttu-id="14681-140">Ustawianie widoczności katalogu</span><span class="sxs-lookup"><span data-stu-id="14681-140">Make the catalog visible</span></span>
+1. <span data-ttu-id="14681-141">Wybierz kolejno opcje Zaopatrzenie i sourcing > Ustawienia > Zasady > Zasady zakupów.</span><span class="sxs-lookup"><span data-stu-id="14681-141">Go to Procurement and sourcing > Setup > Policies > Purchasing policies.</span></span>
+2. <span data-ttu-id="14681-142">Wybierz zasadę Procurement Policy USMF.</span><span class="sxs-lookup"><span data-stu-id="14681-142">Select Procurement Policy USMF.</span></span>
+    * <span data-ttu-id="14681-143">Należy wybrać zasady zakupów dla firmy, w której pracownik połączony z Twoim profilem użytkownika może zamawiać produkty.</span><span class="sxs-lookup"><span data-stu-id="14681-143">You need to select the purchasing policy for the legal entity that the worker connected to your user profile is allowed to order products in.</span></span> <span data-ttu-id="14681-144">W danych firmy demonstracyjnej USMF administrator jest połączony z pracownikiem Julia Funderburk. Julia domyślnie zamawia produkty w USMF.</span><span class="sxs-lookup"><span data-stu-id="14681-144">In the USMF demo data, the Admin user is connected to the worker called Julia Funderburk, and she orders products in USMF by default.</span></span>  
+3. <span data-ttu-id="14681-145">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="14681-145">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="14681-146">Zaznacz nowo utworzony katalog.</span><span class="sxs-lookup"><span data-stu-id="14681-146">Select the catalog that you’ve just created.</span></span>
+5. <span data-ttu-id="14681-147">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="14681-147">Click OK.</span></span>
+6. <span data-ttu-id="14681-148">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="14681-148">Close the page.</span></span>
+7. <span data-ttu-id="14681-149">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="14681-149">Close the page.</span></span>
 
-## <a name="use-the-catalog"></a>Używanie katalogu
-1. Wybierz kolejno opcje Zaopatrzenie i sourcing > Zapotrzebowania na zakup > Wszystkie zapotrzebowania na zakup.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa wpisz wartość.
-4. Kliknij przycisk OK.
-5. Kliknij przycisk Dodaj produkty.
-6. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Do filtrowania produktów można używać hierarchii kategorii po lewej stronie lub filtru u góry listy.  
-7. Kliknij opcję Dodaj do wierszy.
-8. Na liście znajdź i zaznacz odpowiedni rekord.
-9. Kliknij opcję Dodaj do wierszy.
-10. Kliknij przycisk OK.
+## <a name="use-the-catalog"></a><span data-ttu-id="14681-150">Używanie katalogu</span><span class="sxs-lookup"><span data-stu-id="14681-150">Use the catalog</span></span>
+1. <span data-ttu-id="14681-151">Wybierz kolejno opcje Zaopatrzenie i sourcing > Zapotrzebowania na zakup > Wszystkie zapotrzebowania na zakup.</span><span class="sxs-lookup"><span data-stu-id="14681-151">Go to Procurement and sourcing > Purchase requisitions > All purchase requisitions.</span></span>
+2. <span data-ttu-id="14681-152">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="14681-152">Click New.</span></span>
+3. <span data-ttu-id="14681-153">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="14681-153">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="14681-154">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="14681-154">Click OK.</span></span>
+5. <span data-ttu-id="14681-155">Kliknij przycisk Dodaj produkty.</span><span class="sxs-lookup"><span data-stu-id="14681-155">Click Add products.</span></span>
+6. <span data-ttu-id="14681-156">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="14681-156">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="14681-157">Do filtrowania produktów można używać hierarchii kategorii po lewej stronie lub filtru u góry listy.</span><span class="sxs-lookup"><span data-stu-id="14681-157">You can use the category hierarchy on the left or the filter at the top of the list to filter the products.</span></span>  
+7. <span data-ttu-id="14681-158">Kliknij opcję Dodaj do wierszy.</span><span class="sxs-lookup"><span data-stu-id="14681-158">Click Add to lines.</span></span>
+8. <span data-ttu-id="14681-159">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="14681-159">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="14681-160">Kliknij opcję Dodaj do wierszy.</span><span class="sxs-lookup"><span data-stu-id="14681-160">Click Add to lines.</span></span>
+10. <span data-ttu-id="14681-161">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="14681-161">Click OK.</span></span>
 
 

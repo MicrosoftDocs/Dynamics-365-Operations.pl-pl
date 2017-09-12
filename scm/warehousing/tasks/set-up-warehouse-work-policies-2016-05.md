@@ -17,38 +17,38 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 5db1c99833276a92467ed57b7be51b0ebaa74d83
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b7d579ca7e2b9ca8cbead74b2c2ababfd142f171
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-warehouse-work-policies"></a>Konfigurowanie zasad pracy magazynowej 
+# <a name="set-up-warehouse-work-policies"></a><span data-ttu-id="5cf66-103">Konfigurowanie zasad pracy magazynowej</span><span class="sxs-lookup"><span data-stu-id="5cf66-103">Set up warehouse work policies</span></span> 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Procesy magazynowe nie zawsze obejmują pracę magazynową. Poprzez zdefiniowanie pracy magazynowej można zablokować tworzenie pracy pobierania surowców i odkładania wyrobów gotowych dla zbioru produktów w określonych lokalizacjach. Dane wykorzystane do stworzenia tego nagrania pochodzą z firmy demonstracyjnej USMF. Ten przewodnik po zadaniach wymaga aplikacji Dynamics AX w wersji 7.0.1 lub nowszej.
+<span data-ttu-id="5cf66-104">Procesy magazynowe nie zawsze obejmują pracę magazynową.</span><span class="sxs-lookup"><span data-stu-id="5cf66-104">Warehouse processes don’t always include warehouse work.</span></span> <span data-ttu-id="5cf66-105">Poprzez zdefiniowanie pracy magazynowej można zablokować tworzenie pracy pobierania surowców i odkładania wyrobów gotowych dla zbioru produktów w określonych lokalizacjach.</span><span class="sxs-lookup"><span data-stu-id="5cf66-105">By defining a work policy, you can prevent the creation of work for raw material picking and put-away of finished goods for a set of products at specific locations.</span></span> <span data-ttu-id="5cf66-106">Dane wykorzystane do stworzenia tego nagrania pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="5cf66-106">The USMF demo data company was used to create this recording.</span></span> <span data-ttu-id="5cf66-107">Ten przewodnik po zadaniach wymaga aplikacji Dynamics AX w wersji 7.0.1 lub nowszej.</span><span class="sxs-lookup"><span data-stu-id="5cf66-107">This task guide requires Dynamics AX application 7.0.1 or later.</span></span>
 
-1. Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Praca > Zasady pracy.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa zasady pracy wpisz „Bez pracy odłożenia”.
-4. Kliknij przycisk Zapisz.
-5. Kliknij przycisk Dodaj.
-6. Na liście oznacz wybrany wiersz.
-7. W polu Typ zlecenia wybierz wartość „Ukończono odkładanie wyrobów”.
-8. Kliknij przycisk Dodaj.
-9. Na liście oznacz wybrany wiersz.
-10. W polu Typ zlecenia wybierz opcję „Odłożenie produktu ubocznego i produktu towarzyszącego”.
-11. Rozwiń sekcję Magazyny.
-12. Kliknij przycisk Dodaj.
-13. Na liście oznacz wybrany wiersz.
-14. Na liście magazynów wpisz „51”.
-15. W polu Lokalizacja wprowadź lub wybierz wartość „001”.
-16. Rozwiń sekcję Produkty.
-17. W polu Wybór produktu wybierz opcję „Wybrane”.
-18. Kliknij przycisk Dodaj.
-19. Na liście oznacz wybrany wiersz.
-20. W polu Numer pozycji wprowadź lub wybierz wartość „L0101”.
-21. Kliknij przycisk Zapisz.
+1. <span data-ttu-id="5cf66-108">Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Praca > Zasady pracy.</span><span class="sxs-lookup"><span data-stu-id="5cf66-108">Go to Warehouse management > Setup > Work > Work policies.</span></span>
+2. <span data-ttu-id="5cf66-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="5cf66-109">Click New.</span></span>
+3. <span data-ttu-id="5cf66-110">W polu Nazwa zasady pracy wpisz „Bez pracy odłożenia”.</span><span class="sxs-lookup"><span data-stu-id="5cf66-110">In the Work policy name field, type 'No put-away work'.</span></span>
+4. <span data-ttu-id="5cf66-111">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="5cf66-111">Click Save.</span></span>
+5. <span data-ttu-id="5cf66-112">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="5cf66-112">Click Add.</span></span>
+6. <span data-ttu-id="5cf66-113">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="5cf66-113">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="5cf66-114">W polu Typ zlecenia wybierz wartość „Ukończono odkładanie wyrobów”.</span><span class="sxs-lookup"><span data-stu-id="5cf66-114">In the Work order type field, select 'Finished goods put away'.</span></span>
+8. <span data-ttu-id="5cf66-115">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="5cf66-115">Click Add.</span></span>
+9. <span data-ttu-id="5cf66-116">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="5cf66-116">In the list, mark the selected row.</span></span>
+10. <span data-ttu-id="5cf66-117">W polu Typ zlecenia wybierz opcję „Odłożenie produktu ubocznego i produktu towarzyszącego”.</span><span class="sxs-lookup"><span data-stu-id="5cf66-117">In the Work order type field, select 'Co-product and by-product put away'.</span></span>
+11. <span data-ttu-id="5cf66-118">Rozwiń sekcję Magazyny.</span><span class="sxs-lookup"><span data-stu-id="5cf66-118">Expand the Inventory locations section.</span></span>
+12. <span data-ttu-id="5cf66-119">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="5cf66-119">Click Add.</span></span>
+13. <span data-ttu-id="5cf66-120">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="5cf66-120">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="5cf66-121">Na liście magazynów wpisz „51”.</span><span class="sxs-lookup"><span data-stu-id="5cf66-121">In the Warehouse list, enter '51'.</span></span>
+15. <span data-ttu-id="5cf66-122">W polu Lokalizacja wprowadź lub wybierz wartość „001”.</span><span class="sxs-lookup"><span data-stu-id="5cf66-122">In the Location field, enter or select '001'.</span></span>
+16. <span data-ttu-id="5cf66-123">Rozwiń sekcję Produkty.</span><span class="sxs-lookup"><span data-stu-id="5cf66-123">Expand the Products section.</span></span>
+17. <span data-ttu-id="5cf66-124">W polu Wybór produktu wybierz opcję „Wybrane”.</span><span class="sxs-lookup"><span data-stu-id="5cf66-124">In the Product selection field, select 'Selected'.</span></span>
+18. <span data-ttu-id="5cf66-125">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="5cf66-125">Click Add.</span></span>
+19. <span data-ttu-id="5cf66-126">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="5cf66-126">In the list, mark the selected row.</span></span>
+20. <span data-ttu-id="5cf66-127">W polu Numer pozycji wprowadź lub wybierz wartość „L0101”.</span><span class="sxs-lookup"><span data-stu-id="5cf66-127">In the Item number field, enter or select 'L0101'.</span></span>
+21. <span data-ttu-id="5cf66-128">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="5cf66-128">Click Save.</span></span>
 
 

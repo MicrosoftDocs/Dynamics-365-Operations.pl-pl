@@ -16,7 +16,7 @@ ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: b2b1b99fd4c7c439ad89440827ad78173d371855
@@ -26,242 +26,242 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="distribute-and-complete-a-questionnaire"></a>Dystrybucja i wypełnianie kwestionariusza
+# <a name="distribute-and-complete-a-questionnaire"></a><span data-ttu-id="b9b1d-103">Dystrybucja i wypełnianie kwestionariusza</span><span class="sxs-lookup"><span data-stu-id="b9b1d-103">Distribute and complete a questionnaire</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać. 
+<span data-ttu-id="b9b1d-104">W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-104">This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> 
 
-Istnieje wiele sposobów dystrybucji kwestionariusza:
+<span data-ttu-id="b9b1d-105">Istnieje wiele sposobów dystrybucji kwestionariusza:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-105">There are multiple ways to distribute a questionnaire:</span></span>
 
--   Oznacz kwestionariusz jako aktywny. Kwestionariusz będzie dostępny dla wszystkich pracowników, chyba że ustawiono grupę kwestionariusza, która nie ma do niego dostępu.
--   Przypisz prawa grupie kwestionariusza. Kwestionariusz będzie dostępny dla wszystkich członków wybranej grupy.
--   Utwórz zaplanowane sesje odpowiedzi. Kwestionariusz będzie dostępny wyłącznie dla konkretnej osoby.
--   Utwórz harmonogram. Kwestionariusz można być dostępny dla wielu osób.
+-   <span data-ttu-id="b9b1d-106">Oznacz kwestionariusz jako aktywny.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-106">Mark the questionnaire as active.</span></span> <span data-ttu-id="b9b1d-107">Kwestionariusz będzie dostępny dla wszystkich pracowników, chyba że ustawiono grupę kwestionariusza, która nie ma do niego dostępu.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-107">The questionnaire is then available to all employees, unless a questionnaire group is set up to restrict access to it.</span></span>
+-   <span data-ttu-id="b9b1d-108">Przypisz prawa grupie kwestionariusza.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-108">Assign rights to a questionnaire group.</span></span> <span data-ttu-id="b9b1d-109">Kwestionariusz będzie dostępny dla wszystkich członków wybranej grupy.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-109">The questionnaire is then available to all members of the selected group.</span></span>
+-   <span data-ttu-id="b9b1d-110">Utwórz zaplanowane sesje odpowiedzi.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-110">Create planned answer sessions.</span></span> <span data-ttu-id="b9b1d-111">Kwestionariusz będzie dostępny wyłącznie dla konkretnej osoby.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-111">The questionnaire is then available only to a particular person.</span></span>
+-   <span data-ttu-id="b9b1d-112">Utwórz harmonogram.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-112">Create a schedule.</span></span> <span data-ttu-id="b9b1d-113">Kwestionariusz można być dostępny dla wielu osób.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-113">The questionnaire can then be available to multiple people.</span></span>
 
-## <a name="marking-a-questionnaire-as-active"></a>Oznaczanie kwestionariusza jako aktywnego
-Ustawiając pole **Aktywne** jako **Tak** na stronie **Kwestionariusze**, można udostępnić kwestionariusz wszystkim pracownikom do wypełnienia. Respondenci mogą wypełnić kwestionariusz wiele razy. Ta funkcja jest przydatna do cyklicznego zbierania opinii przez cały rok. Na przykład można przygotować kwestionariusz dla pracowników, aby wyrazili opinię na temat jakości posiłków w stołówce zakładowej.
+## <a name="marking-a-questionnaire-as-active"></a><span data-ttu-id="b9b1d-114">Oznaczanie kwestionariusza jako aktywnego</span><span class="sxs-lookup"><span data-stu-id="b9b1d-114">Marking a questionnaire as active</span></span>
+<span data-ttu-id="b9b1d-115">Ustawiając pole **Aktywne** jako **Tak** na stronie **Kwestionariusze**, można udostępnić kwestionariusz wszystkim pracownikom do wypełnienia.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-115">By setting the **Active** field to **Yes** on the **Questionnaires** page, you make the questionnaire available for all employees to complete.</span></span> <span data-ttu-id="b9b1d-116">Respondenci mogą wypełnić kwestionariusz wiele razy.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-116">Respondents can complete the questionnaire multiple times.</span></span> <span data-ttu-id="b9b1d-117">Ta funkcja jest przydatna do cyklicznego zbierania opinii przez cały rok.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-117">This functionality is useful if you want to gather continual feedback throughout the year.</span></span> <span data-ttu-id="b9b1d-118">Na przykład można przygotować kwestionariusz dla pracowników, aby wyrazili opinię na temat jakości posiłków w stołówce zakładowej.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-118">For example, you can make a questionnaire that employees use to give feedback about the lunch service in the cafeteria.</span></span>
 
-## <a name="questionnaire-groups"></a>Grupy kwestionariuszy
-Można ustawić grupy kwestionariusza i uwzględnić respondentów, do których należy przesłać kwestionariusz. 
+## <a name="questionnaire-groups"></a><span data-ttu-id="b9b1d-119">Grupy kwestionariuszy</span><span class="sxs-lookup"><span data-stu-id="b9b1d-119">Questionnaire groups</span></span>
+<span data-ttu-id="b9b1d-120">Można ustawić grupy kwestionariusza i uwzględnić respondentów, do których należy przesłać kwestionariusz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-120">You can set up questionnaire groups and then include the respondents that a questionnaire should be distributed to.</span></span> 
 
-Grupy kwestionariusza można utworzyć na następujących stronach:
+<span data-ttu-id="b9b1d-121">Grupy kwestionariusza można utworzyć na następujących stronach:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-121">You can create questionnaire groups from the following pages:</span></span>
 
--   **Grupy kwestionariuszy**— tylko osoby w grupie kwestionariusza mogą wypełnić wybrany kwestionariusz. Na przykład grupą docelową są kontrahenci, więc możesz utworzyć grupę kwestionariusza dla tych respondentów.
--   **Członkowie grupy kwestionariuszy** — do grup kwestionariuszy można dodawać osoby.
+-   <span data-ttu-id="b9b1d-122">**Grupy kwestionariuszy**— tylko osoby w grupie kwestionariusza mogą wypełnić wybrany kwestionariusz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-122">**Questionnaire groups** – Only individuals in a questionnaire group can complete a selected questionnaire.</span></span> <span data-ttu-id="b9b1d-123">Na przykład grupą docelową są kontrahenci, więc możesz utworzyć grupę kwestionariusza dla tych respondentów.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-123">For example, your intended audience is contractors, so you create a questionnaire group that is specific to those respondents.</span></span>
+-   <span data-ttu-id="b9b1d-124">**Członkowie grupy kwestionariuszy** — do grup kwestionariuszy można dodawać osoby.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-124">**Questionnaire group members** – You can add people to the questionnaire groups.</span></span>
 
-Aby przypisać grupę kwestionariusza do kwestionariusza, na stronie **Kwestionariusze** kliknij opcję **Prawa użytkownika**. Po zapisaniu kwestionariusza jako aktywny członkowie grupy kwestionariusza mogą wypełnić kwestionariusz. Ta funkcja jest przydatna do testowania kwestionariusza na wybranej grupie osób przed udostępnieniem go szerszej grupie respondentów lub kiedy chcesz skierować kwestionariusz do bardzo określonej grupy odbiorców.
+<span data-ttu-id="b9b1d-125">Aby przypisać grupę kwestionariusza do kwestionariusza, na stronie **Kwestionariusze** kliknij opcję **Prawa użytkownika**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-125">To assign a questionnaire group to a questionnaire, on the **Questionnaires** page, click **User rights**.</span></span> <span data-ttu-id="b9b1d-126">Po zapisaniu kwestionariusza jako aktywny członkowie grupy kwestionariusza mogą wypełnić kwestionariusz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-126">After the questionnaire is saved as active, the members of the questionnaire group can complete the questionnaire.</span></span> <span data-ttu-id="b9b1d-127">Ta funkcja jest przydatna do testowania kwestionariusza na wybranej grupie osób przed udostępnieniem go szerszej grupie respondentów lub kiedy chcesz skierować kwestionariusz do bardzo określonej grupy odbiorców.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-127">This functionality is helpful if you want to test a questionnaire on a select group of people before you roll it out to a larger group, or if you want to target a questionnaire to a very specific audience.</span></span>
 
-## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planowane sesje odpowiedzi w kwestionariuszu
-Zaplanowane sesje odpowiedzi to kwestionariusze, które zostały opracowane i wybrane dla respondentów. 
+## <a name="planned-answer-sessions-in-a-questionnaire"></a><span data-ttu-id="b9b1d-128">Planowane sesje odpowiedzi w kwestionariuszu</span><span class="sxs-lookup"><span data-stu-id="b9b1d-128">Planned answer sessions in a questionnaire</span></span>
+<span data-ttu-id="b9b1d-129">Zaplanowane sesje odpowiedzi to kwestionariusze, które zostały opracowane i wybrane dla respondentów.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-129">Planned answer sessions are questionnaires that you've designed and selected the respondents for.</span></span> 
 
-> **Uwaga:** Przed skonfigurowaniem zaplanowanych sesji odpowiedzi należy zaprojektować kwestionariusz. 
+> <span data-ttu-id="b9b1d-130">**Uwaga:** Przed skonfigurowaniem zaplanowanych sesji odpowiedzi należy zaprojektować kwestionariusz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-130">**Note** Before you can set up planned answer sessions, you must design a questionnaire.</span></span> 
 
-Na stronie **Planowana sesja odpowiedzi** można utworzyć planowaną sesję odpowiedzi dla pojedynczego pracownika. Lista na tej stronie zawiera wszystkie zaplanowane kwestionariusze. 
+<span data-ttu-id="b9b1d-131">Na stronie **Planowana sesja odpowiedzi** można utworzyć planowaną sesję odpowiedzi dla pojedynczego pracownika.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-131">On the **Planned answer session** page, you can create a planned answer session for an individual employee.</span></span> <span data-ttu-id="b9b1d-132">Lista na tej stronie zawiera wszystkie zaplanowane kwestionariusze.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-132">The list on the page displays all planned questionnaires.</span></span> 
 
-Planowane sesje odpowiedzi są również używane na stronie **Harmonogramy kwestionariuszy**, gdzie można zaplanować kwestionariusze dla grup osób takich jak:
+<span data-ttu-id="b9b1d-133">Planowane sesje odpowiedzi są również używane na stronie **Harmonogramy kwestionariuszy**, gdzie można zaplanować kwestionariusze dla grup osób takich jak:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-133">Planned answer sessions are also used on the **Questionnaire schedules** page, where you can plan questionnaires for multiple people:</span></span>
 
--   Pracownicy
--   Uczestnicy kursu
--   Jednostki organizacyjne
+-   <span data-ttu-id="b9b1d-134">Pracownicy</span><span class="sxs-lookup"><span data-stu-id="b9b1d-134">Employees</span></span>
+-   <span data-ttu-id="b9b1d-135">Uczestnicy kursu</span><span class="sxs-lookup"><span data-stu-id="b9b1d-135">Course participants</span></span>
+-   <span data-ttu-id="b9b1d-136">Jednostki organizacyjne</span><span class="sxs-lookup"><span data-stu-id="b9b1d-136">Organizational units</span></span>
 
-Każda osoba może wypełnić kwestionariusz tylko raz.
+<span data-ttu-id="b9b1d-137">Każda osoba może wypełnić kwestionariusz tylko raz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-137">Each person can answer the questionnaire only one time.</span></span>
 
-## <a name="scheduling-a-questionnaire"></a>Planowanie kwestionariusza
-Można opcjonalnie zaplanować kwestionariusz dla wielu respondentów.
+## <a name="scheduling-a-questionnaire"></a><span data-ttu-id="b9b1d-138">Planowanie kwestionariusza</span><span class="sxs-lookup"><span data-stu-id="b9b1d-138">Scheduling a questionnaire</span></span>
+<span data-ttu-id="b9b1d-139">Można opcjonalnie zaplanować kwestionariusz dla wielu respondentów.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-139">You can optionally schedule a questionnaire for multiple respondents.</span></span>
 
-### <a name="planning-types"></a>Typy planowania
+### <a name="planning-types"></a><span data-ttu-id="b9b1d-140">Typy planowania</span><span class="sxs-lookup"><span data-stu-id="b9b1d-140">Planning types</span></span>
 
-Typy planowania są wymagane, aby zaplanować zaplanowane sesje odpowiedzi dla wielu respondentów. Typy planowania są używane do klasyfikowania harmonogramów kwestionariuszy. Na przykład można ustalić harmonogram kwestionariuszy do następujących celów:
+<span data-ttu-id="b9b1d-141">Typy planowania są wymagane, aby zaplanować zaplanowane sesje odpowiedzi dla wielu respondentów.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-141">Planning types are required if you want to schedule planned answer sessions for multiple respondents.</span></span> <span data-ttu-id="b9b1d-142">Typy planowania są używane do klasyfikowania harmonogramów kwestionariuszy.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-142">Planning types are used to classify questionnaire schedules.</span></span> <span data-ttu-id="b9b1d-143">Na przykład można ustalić harmonogram kwestionariuszy do następujących celów:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-143">For example, you can schedule questionnaires for the following purposes:</span></span>
 
--   Ocena
--   Przegląd
--   Testowanie
+-   <span data-ttu-id="b9b1d-144">Ocena</span><span class="sxs-lookup"><span data-stu-id="b9b1d-144">Evaluation</span></span>
+-   <span data-ttu-id="b9b1d-145">Przegląd</span><span class="sxs-lookup"><span data-stu-id="b9b1d-145">Survey</span></span>
+-   <span data-ttu-id="b9b1d-146">Testowanie</span><span class="sxs-lookup"><span data-stu-id="b9b1d-146">Testing</span></span>
 
-Na stronie **harmonogramów kwestionariuszy** można określić typy planowania dla harmonogramu kwestionariusza.
+<span data-ttu-id="b9b1d-147">Na stronie **harmonogramów kwestionariuszy** można określić typy planowania dla harmonogramu kwestionariusza.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-147">You can specify planning types for a questionnaire schedule on the **Questionnaire schedules** page.</span></span>
 
-### <a name="reference-types-for-questionnaire"></a>Typy odwołań do kwestionariusza
+### <a name="reference-types-for-questionnaire"></a><span data-ttu-id="b9b1d-148">Typy odwołań do kwestionariusza</span><span class="sxs-lookup"><span data-stu-id="b9b1d-148">Reference types for questionnaire</span></span>
 
-Typy odwołań służą do wprowadzania kryteriów dla respondentów, które można wybrać podczas planowania kwestionariusza. 
+<span data-ttu-id="b9b1d-149">Typy odwołań służą do wprowadzania kryteriów dla respondentów, które można wybrać podczas planowania kwestionariusza.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-149">You can use reference types to enter criteria for the respondents that you might select when you schedule a questionnaire.</span></span> 
 
-Użyj strony **typy odwołań** do skonfigurowania odwołań do kwestionariusza. Każdy typ odwołania odpowiada tabeli w programie Microsoft Dynamics 365 for Finance and Operations. Podczas tworzenia harmonogramów kwestionariuszy można określić poszczególne rekordy w tabeli lub zakres rekordów, które będzie można skojarzyć z kwestionariuszem. 
+<span data-ttu-id="b9b1d-150">Użyj strony **typy odwołań** do skonfigurowania odwołań do kwestionariusza.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-150">Use the **Reference types** page to set up reference types for a questionnaire.</span></span> <span data-ttu-id="b9b1d-151">Każdy typ odwołania odpowiada tabeli w programie Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-151">Each reference type corresponds to a table in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="b9b1d-152">Podczas tworzenia harmonogramów kwestionariuszy można określić poszczególne rekordy w tabeli lub zakres rekordów, które będzie można skojarzyć z kwestionariuszem.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-152">When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with.</span></span> 
 
-Na przykład zaznaczenie w tabeli kursów pozwala określić, do których kursów będzie się odnosić kwestionariusz. Po skonfigurowaniu odwołanie do tabeli kursów, niektóre pola i przyciski na stronie **kursów** stają się dostępne.
+<span data-ttu-id="b9b1d-153">Na przykład zaznaczenie w tabeli kursów pozwala określić, do których kursów będzie się odnosić kwestionariusz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-153">For example, if you select the Courses table, you can decide which specific course the questionnaire will be for.</span></span> <span data-ttu-id="b9b1d-154">Po skonfigurowaniu odwołanie do tabeli kursów, niektóre pola i przyciski na stronie **kursów** stają się dostępne.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-154">When you set up a reference for the Courses table, some fields and buttons on the **Courses** page become available.</span></span>
 
-### <a name="questionnaire-schedules"></a>Harmonogramy kwestionariuszy
+### <a name="questionnaire-schedules"></a><span data-ttu-id="b9b1d-155">Harmonogramy kwestionariuszy</span><span class="sxs-lookup"><span data-stu-id="b9b1d-155">Questionnaire schedules</span></span>
 
-Harmonogramy kwestionariuszy służą do generowania wielu planowanych sesji odpowiedzi dla grupy użytkowników, na podstawie typu odwołania. Utwórz harmonogram na stronie **Harmonogramy kwestionariuszy**. Wybierz typ planowania, aby skategoryzować harmonogram, a także wybierz typ odwołania, które powinno być używane do zapytań o konkretnych użytkowników systemu. Na przykład jeśli wybierzesz typ odwołania do tabeli kursów, możesz wybrać określony kurs w polu **Odwołanie**. 
+<span data-ttu-id="b9b1d-156">Harmonogramy kwestionariuszy służą do generowania wielu planowanych sesji odpowiedzi dla grupy użytkowników, na podstawie typu odwołania.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-156">You can use questionnaire schedules to generate multiple planned answer sessions for a group of users, based on a reference type.</span></span> <span data-ttu-id="b9b1d-157">Utwórz harmonogram na stronie **Harmonogramy kwestionariuszy**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-157">Create a schedule on the **Questionnaire schedules** page.</span></span> <span data-ttu-id="b9b1d-158">Wybierz typ planowania, aby skategoryzować harmonogram, a także wybierz typ odwołania, które powinno być używane do zapytań o konkretnych użytkowników systemu.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-158">Select the planning type to categorize the schedule, and also select the reference type that should be used to query the system for specific users.</span></span> <span data-ttu-id="b9b1d-159">Na przykład jeśli wybierzesz typ odwołania do tabeli kursów, możesz wybrać określony kurs w polu **Odwołanie**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-159">For example, if you set the reference type to the Courses table, you can select a specific course in the **Reference** field.</span></span> 
 
-Kliknij **Szczegóły ustawień**, aby wybrać kwestionariusz i inne kryteria. Na przykład można określić imię i nazwisko instruktora jako kryterium, jeśli kwestionariusz służy do oceny instruktora. Po zakończeniu wprowadzania szczegółów konfiguracji system generuje zaplanowane sesje odpowiedzi dla użytkowników, którzy są uwzględnieni w zapytaniu. 
+<span data-ttu-id="b9b1d-160">Kliknij **Szczegóły ustawień**, aby wybrać kwestionariusz i inne kryteria.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-160">Click **Setup details** to select the questionnaire and other criteria.</span></span> <span data-ttu-id="b9b1d-161">Na przykład można określić imię i nazwisko instruktora jako kryterium, jeśli kwestionariusz służy do oceny instruktora.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-161">For example, specify the instructor's name as a criterion if the questionnaire is an evaluation of the instructor.</span></span> <span data-ttu-id="b9b1d-162">Po zakończeniu wprowadzania szczegółów konfiguracji system generuje zaplanowane sesje odpowiedzi dla użytkowników, którzy są uwzględnieni w zapytaniu.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-162">After you've finished entering the setup details, the system generates planned answer sessions for the users that are included in the query.</span></span> 
 
-Kliknij **Zaplanowane sesje odpowiedzi** w celu wyświetlania sesji odpowiedzi dla harmonogramu. Można ręcznie utworzyć dodatkowe planowane sesje odpowiedzi lub usunąć planowane sesje odpowiedzi, które nie otrzymały odpowiedzi. 
+<span data-ttu-id="b9b1d-163">Kliknij **Zaplanowane sesje odpowiedzi** w celu wyświetlania sesji odpowiedzi dla harmonogramu.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-163">Click **Planned answer sessions** to view the answer sessions for the schedule.</span></span> <span data-ttu-id="b9b1d-164">Można ręcznie utworzyć dodatkowe planowane sesje odpowiedzi lub usunąć planowane sesje odpowiedzi, które nie otrzymały odpowiedzi.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-164">You can then manually create additional planned answer sessions or delete planned answer sessions that haven't been answered.</span></span> 
 
-Kliknij kolejno opcje **Funkcje** &gt; **Start**, aby udostępnić kwestionariusz użytkownikom w powiązanych zaplanowanych sesjach odpowiedzi. Kliknij **Odpowiedzi** w celu wyświetlania odpowiedzi z wypełnionych kwestionariuszy. Opcjonalnie można skopiować ustawienia harmonogramu kwestionariusza, zaplanowanych sesji odpowiedzi i odpowiedzi do nowego harmonogramu kwestionariusza.
+<span data-ttu-id="b9b1d-165">Kliknij kolejno opcje **Funkcje** &gt; **Start**, aby udostępnić kwestionariusz użytkownikom w powiązanych zaplanowanych sesjach odpowiedzi.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-165">Click **Functions** &gt; **Start** to make the questionnaire available to the users in related planned answer sessions.</span></span> <span data-ttu-id="b9b1d-166">Kliknij **Odpowiedzi** w celu wyświetlania odpowiedzi z wypełnionych kwestionariuszy.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-166">Click **Answers** to view the completed responses to the questionnaire.</span></span> <span data-ttu-id="b9b1d-167">Opcjonalnie można skopiować ustawienia harmonogramu kwestionariusza, zaplanowanych sesji odpowiedzi i odpowiedzi do nowego harmonogramu kwestionariusza.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-167">You can optionally copy the questionnaire schedule settings, planned answer sessions, and answers to a new questionnaire schedule.</span></span>
 
-## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Powiadamianie respondentów o kwestionariuszach, które są dla nich dostępne
-Gdy rozprowadzasz kwestionariusz, musisz powiadomić respondentów, że kwestionariusze są dla nich dostępne. 
+## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a><span data-ttu-id="b9b1d-168">Powiadamianie respondentów o kwestionariuszach, które są dla nich dostępne</span><span class="sxs-lookup"><span data-stu-id="b9b1d-168">Notifying respondents about questionnaires that are available to them</span></span>
+<span data-ttu-id="b9b1d-169">Gdy rozprowadzasz kwestionariusz, musisz powiadomić respondentów, że kwestionariusze są dla nich dostępne.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-169">When you distribute a questionnaire, you must notify respondents that questionnaires are available to them.</span></span> 
 
-### <a name="notifying-respondents-about-a-planned-answer-session"></a>Powiadamianie respondentów o planowanej sesji odpowiedzi
+### <a name="notifying-respondents-about-a-planned-answer-session"></a><span data-ttu-id="b9b1d-170">Powiadamianie respondentów o planowanej sesji odpowiedzi</span><span class="sxs-lookup"><span data-stu-id="b9b1d-170">Notifying respondents about a planned answer session</span></span>
 
-Jeśli używasz planowanej sesji odpowiedzi, należy powiadomić wybraną osobę bezpośrednio, np. telefoniczne lub e-mailem.
+<span data-ttu-id="b9b1d-171">Jeśli używasz planowanej sesji odpowiedzi, należy powiadomić wybraną osobę bezpośrednio, np. telefoniczne lub e-mailem.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-171">If you use a planned answer session, you must notify the person directly, such as by telephone or email.</span></span>
 
-### <a name="notifying-respondents-about-a-scheduling"></a>Powiadamianie respondentów o planowaniu
+### <a name="notifying-respondents-about-a-scheduling"></a><span data-ttu-id="b9b1d-172">Powiadamianie respondentów o planowaniu</span><span class="sxs-lookup"><span data-stu-id="b9b1d-172">Notifying respondents about a scheduling</span></span>
 
-Na stronie **Harmonogramy kwestionariuszy** można przygotować i wysłać wiadomość e-mail do wszystkich respondentów przypisanych do danego kwestionariusza. Wpisz tekst e-maila na karcie **Wiadomość e-mail samoobsługi pracownika**. Po rozpoczęciu harmonogramu kliknij kolejno opcje **Funkcje** &gt; **Wyślij wiadomość e-mail**, aby wygenerować i wysłać wiadomość e-mail do respondentów. Respondenci mogą następnie zalogować się w witrynie i wypełnić kwestionariusz. 
+<span data-ttu-id="b9b1d-173">Na stronie **Harmonogramy kwestionariuszy** można przygotować i wysłać wiadomość e-mail do wszystkich respondentów przypisanych do danego kwestionariusza.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-173">Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire.</span></span> <span data-ttu-id="b9b1d-174">Wpisz tekst e-maila na karcie **Wiadomość e-mail samoobsługi pracownika**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-174">Enter the email text on the **E-mail for employee self service** tab.</span></span> <span data-ttu-id="b9b1d-175">Po rozpoczęciu harmonogramu kliknij kolejno opcje **Funkcje** &gt; **Wyślij wiadomość e-mail**, aby wygenerować i wysłać wiadomość e-mail do respondentów.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-175">After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents.</span></span> <span data-ttu-id="b9b1d-176">Respondenci mogą następnie zalogować się w witrynie i wypełnić kwestionariusz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-176">Respondents can then sign in to the website and complete the questionnaire.</span></span> 
 
-> **Uwaga:** Zanim będzie można skorzystać z funkcji poczty e-mail, administrator IT musi wprowadzić ustawienia poczty e-mail na stronie **Parametry poczty e-mail**.
+> <span data-ttu-id="b9b1d-177">**Uwaga:** Zanim będzie można skorzystać z funkcji poczty e-mail, administrator IT musi wprowadzić ustawienia poczty e-mail na stronie **Parametry poczty e-mail**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-177">**Note** Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.</span></span>
 
-## <a name="ending-a-scheduled-questionnaire"></a>Kończenie planowanego arkusza
-Można zakończyć zaplanowany kwestionariusz po ukończeniu przez wszystkich respondentów przypisanych do nich sesji odpowiedzi. Po zakończeniu zaplanowanego kwestionariusza, nie można skopiować jego ustawień do nowego harmonogramu. 
+## <a name="ending-a-scheduled-questionnaire"></a><span data-ttu-id="b9b1d-178">Kończenie planowanego arkusza</span><span class="sxs-lookup"><span data-stu-id="b9b1d-178">Ending a scheduled questionnaire</span></span>
+<span data-ttu-id="b9b1d-179">Można zakończyć zaplanowany kwestionariusz po ukończeniu przez wszystkich respondentów przypisanych do nich sesji odpowiedzi.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-179">You can end a scheduled questionnaire after all respondents have completed their assigned answer sessions.</span></span> <span data-ttu-id="b9b1d-180">Po zakończeniu zaplanowanego kwestionariusza, nie można skopiować jego ustawień do nowego harmonogramu.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-180">After a scheduled questionnaire is ended, you can't copy its settings to a new schedule.</span></span> 
 
-> **Uwaga:** Jeśli co najmniej jeden respondent nie wypełnił kwestionariusza, a mimo to planowanie ma zostać zakończone, najpierw usuń odpowiednich respondentów z listy na stronie **Planowana sesja odpowiedzi**. Po wykonaniu tej czynności będzie można zakończyć planowanie.
+> <span data-ttu-id="b9b1d-181">**Uwaga:** Jeśli co najmniej jeden respondent nie wypełnił kwestionariusza, a mimo to planowanie ma zostać zakończone, najpierw usuń odpowiednich respondentów z listy na stronie **Planowana sesja odpowiedzi**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-181">**Note** If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page.</span></span> <span data-ttu-id="b9b1d-182">Po wykonaniu tej czynności będzie można zakończyć planowanie.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-182">You can then end the schedule.</span></span>
 
-## <a name="completing-questionnaires"></a>Wypełnianie kwestionariusza
-Po zaprojektowaniu i rozesłaniu kwestionariusza, kwestionariusz może zostać wypełniony przez wybranych respondentów. Kwestionariusze można wypełniać w dwóch lokalizacjach:
+## <a name="completing-questionnaires"></a><span data-ttu-id="b9b1d-183">Wypełnianie kwestionariusza</span><span class="sxs-lookup"><span data-stu-id="b9b1d-183">Completing questionnaires</span></span>
+<span data-ttu-id="b9b1d-184">Po zaprojektowaniu i rozesłaniu kwestionariusza, kwestionariusz może zostać wypełniony przez wybranych respondentów.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-184">After you've designed and distributed a questionnaire, the questionnaire can be completed by selected respondents.</span></span> <span data-ttu-id="b9b1d-185">Kwestionariusze można wypełniać w dwóch lokalizacjach:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-185">You can complete the questionnaires that are available to you from two locations:</span></span>
 
--   W okienku nawigacji kliknij kolejno opcje **Kwestionariusze** &gt; **Dystrybuuj** &gt; **Wypełnianie kwestionariusza**.
--   W obszarze Samoobsługa pracownika etatowego kliknij **Kwestionariusze do wypełnienia**.
+-   <span data-ttu-id="b9b1d-186">W okienku nawigacji kliknij kolejno opcje **Kwestionariusze** &gt; **Dystrybuuj** &gt; **Wypełnianie kwestionariusza**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-186">In the navigation pane, click **Questionnaires** &gt; **Distribute** &gt; **Complete a questionnaire**.</span></span>
+-   <span data-ttu-id="b9b1d-187">W obszarze Samoobsługa pracownika etatowego kliknij **Kwestionariusze do wypełnienia**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-187">In Employee self-service, click **Questionnaires to complete**.</span></span>
 
-Kwestionariusze można udostępnić wszystkich osobom w sieci, określonym użytkownikom lub grupom użytkowników.
+<span data-ttu-id="b9b1d-188">Kwestionariusze można udostępnić wszystkich osobom w sieci, określonym użytkownikom lub grupom użytkowników.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-188">Questionnaires can made be available to specific users or groups of users, or to all users in a network.</span></span>
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="see-also"></a><span data-ttu-id="b9b1d-189">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="b9b1d-189">See also</span></span>
 --------
 
-[Projektowanie kwestionariuszy](design-questionnaires.md)
+[<span data-ttu-id="b9b1d-190">Projektowanie kwestionariuszy</span><span class="sxs-lookup"><span data-stu-id="b9b1d-190">Designing questionnaires</span></span>](design-questionnaires.md)
 
-[Używanie kwestionariuszy](questionnaires.md)
+[<span data-ttu-id="b9b1d-191">Używanie kwestionariuszy</span><span class="sxs-lookup"><span data-stu-id="b9b1d-191">Using questionnaires</span></span>](questionnaires.md)
 
-[Wyświetlanie i ocena wyników kwestionariuszy](evaluate-questionnaire-results.md)
+[<span data-ttu-id="b9b1d-192">Wyświetlanie i ocena wyników kwestionariuszy</span><span class="sxs-lookup"><span data-stu-id="b9b1d-192">Viewing and evaluating the results of questionnaires</span></span>](evaluate-questionnaire-results.md)
 
 
 
 <a name=""></a>=======
 ---
-# <a name="required-metadata"></a>wymagane metadane
+# <a name="required-metadata"></a><span data-ttu-id="b9b1d-193">wymagane metadane</span><span class="sxs-lookup"><span data-stu-id="b9b1d-193">required metadata</span></span>
 
-title: Rozsyłanie i wypełnianie kwestionariusza description: W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać. author: twheeloc manager: AnnBe ms.date: 06/20/2017 ms.topic: artykuł ms.prod: ms.service: Dynamics365Operations ms.technology: 
+<span data-ttu-id="b9b1d-194">title: Rozsyłanie i wypełnianie kwestionariusza description: W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-194">title: Distribute and complete a questionnaire description: This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> <span data-ttu-id="b9b1d-195">author: twheeloc manager: AnnBe ms.date: 06/20/2017 ms.topic: artykuł ms.prod: ms.service: Dynamics365Operations ms.technology:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-195">author: twheeloc manager: AnnBe ms.date: 06/20/2017 ms.topic: article ms.prod: ms.service: Dynamics365Operations ms.technology:</span></span> 
 
-# <a name="optional-metadata"></a>opcjonalne metadane
+# <a name="optional-metadata"></a><span data-ttu-id="b9b1d-196">opcjonalne metadane</span><span class="sxs-lookup"><span data-stu-id="b9b1d-196">optional metadata</span></span>
 
-ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters
-# <a name="robots"></a>ROBOTS: 
-audience: Użytkownik aplikacji
-# <a name="msdevlang"></a>ms.devlang: 
-ms.reviewer: twheeloc ms.search.scope: Aplikacja podstawowa, AX 7.0.0, Operations, UnifiedOperations
-# <a name="mstgtpltfrm"></a>ms.tgt_pltfrm: 
-ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Globalnie
-# <a name="mssearchindustry"></a>ms.search.industry: 
-ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Aktualizacja modułu Talent z lipca 2017 r.
+<span data-ttu-id="b9b1d-197">ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters</span><span class="sxs-lookup"><span data-stu-id="b9b1d-197">ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters</span></span>
+# <a name="robots"></a><span data-ttu-id="b9b1d-198">ROBOTS:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-198">ROBOTS:</span></span> 
+<span data-ttu-id="b9b1d-199">audience: Użytkownik aplikacji</span><span class="sxs-lookup"><span data-stu-id="b9b1d-199">audience: Application User</span></span>
+# <a name="msdevlang"></a><span data-ttu-id="b9b1d-200">ms.devlang:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-200">ms.devlang:</span></span> 
+<span data-ttu-id="b9b1d-201">ms.reviewer: twheeloc ms.search.scope: Aplikacja podstawowa, AX 7.0.0, Operations, UnifiedOperations</span><span class="sxs-lookup"><span data-stu-id="b9b1d-201">ms.reviewer: twheeloc ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations</span></span>
+# <a name="mstgtpltfrm"></a><span data-ttu-id="b9b1d-202">ms.tgt_pltfrm:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-202">ms.tgt_pltfrm:</span></span> 
+<span data-ttu-id="b9b1d-203">ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Globalnie</span><span class="sxs-lookup"><span data-stu-id="b9b1d-203">ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Global</span></span>
+# <a name="mssearchindustry"></a><span data-ttu-id="b9b1d-204">ms.search.industry:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-204">ms.search.industry:</span></span> 
+<span data-ttu-id="b9b1d-205">ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Aktualizacja modułu Talent z lipca 2017 r.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-205">ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update</span></span>
 
 ---
 
-# <a name="distribute-and-complete-a-questionnaire"></a>Rozsyłanie i wypełnianie kwestionariusza
+# <a name="distribute-and-complete-a-questionnaire"></a><span data-ttu-id="b9b1d-206">Rozsyłanie i wypełnianie kwestionariusza</span><span class="sxs-lookup"><span data-stu-id="b9b1d-206">Distribute and complete a questionnaire</span></span>
 
-W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać. 
+<span data-ttu-id="b9b1d-207">W tym temacie opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-207">This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> 
 
-Istnieje wiele sposobów dystrybucji kwestionariusza:
+<span data-ttu-id="b9b1d-208">Istnieje wiele sposobów dystrybucji kwestionariusza:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-208">There are multiple ways to distribute a questionnaire:</span></span>
 
--   Oznacz kwestionariusz jako aktywny. Kwestionariusz będzie dostępny dla wszystkich pracowników, chyba że ustawiono grupę kwestionariusza, która nie ma do niego dostępu.
--   Przypisz prawa grupie kwestionariusza. Kwestionariusz będzie dostępny dla wszystkich członków wybranej grupy.
--   Utwórz zaplanowane sesje odpowiedzi. Kwestionariusz będzie dostępny wyłącznie dla konkretnej osoby.
--   Utwórz harmonogram. Kwestionariusz można być dostępny dla wielu osób.
+-   <span data-ttu-id="b9b1d-209">Oznacz kwestionariusz jako aktywny.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-209">Mark the questionnaire as active.</span></span> <span data-ttu-id="b9b1d-210">Kwestionariusz będzie dostępny dla wszystkich pracowników, chyba że ustawiono grupę kwestionariusza, która nie ma do niego dostępu.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-210">The questionnaire is then available to all employees, unless a questionnaire group is set up to restrict access to it.</span></span>
+-   <span data-ttu-id="b9b1d-211">Przypisz prawa grupie kwestionariusza.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-211">Assign rights to a questionnaire group.</span></span> <span data-ttu-id="b9b1d-212">Kwestionariusz będzie dostępny dla wszystkich członków wybranej grupy.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-212">The questionnaire is then available to all members of the selected group.</span></span>
+-   <span data-ttu-id="b9b1d-213">Utwórz zaplanowane sesje odpowiedzi.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-213">Create planned answer sessions.</span></span> <span data-ttu-id="b9b1d-214">Kwestionariusz będzie dostępny wyłącznie dla konkretnej osoby.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-214">The questionnaire is then available only to a particular person.</span></span>
+-   <span data-ttu-id="b9b1d-215">Utwórz harmonogram.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-215">Create a schedule.</span></span> <span data-ttu-id="b9b1d-216">Kwestionariusz można być dostępny dla wielu osób.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-216">The questionnaire can then be available to multiple people.</span></span>
 
-## <a name="marking-a-questionnaire-as-active"></a>Oznaczanie kwestionariusza jako aktywnego
-Ustawiając pole **Aktywne** jako **Tak** na stronie **Kwestionariusze**, można udostępnić kwestionariusz wszystkim pracownikom do wypełnienia. Respondenci mogą wypełnić kwestionariusz wiele razy. Ta funkcja jest przydatna do cyklicznego zbierania opinii przez cały rok. Na przykład można przygotować kwestionariusz dla pracowników, aby wyrazili opinię na temat jakości posiłków w stołówce zakładowej.
+## <a name="marking-a-questionnaire-as-active"></a><span data-ttu-id="b9b1d-217">Oznaczanie kwestionariusza jako aktywnego</span><span class="sxs-lookup"><span data-stu-id="b9b1d-217">Marking a questionnaire as active</span></span>
+<span data-ttu-id="b9b1d-218">Ustawiając pole **Aktywne** jako **Tak** na stronie **Kwestionariusze**, można udostępnić kwestionariusz wszystkim pracownikom do wypełnienia.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-218">By setting the **Active** field to **Yes** on the **Questionnaires** page, you make the questionnaire available for all employees to complete.</span></span> <span data-ttu-id="b9b1d-219">Respondenci mogą wypełnić kwestionariusz wiele razy.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-219">Respondents can complete the questionnaire multiple times.</span></span> <span data-ttu-id="b9b1d-220">Ta funkcja jest przydatna do cyklicznego zbierania opinii przez cały rok.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-220">This functionality is useful if you want to gather continual feedback throughout the year.</span></span> <span data-ttu-id="b9b1d-221">Na przykład można przygotować kwestionariusz dla pracowników, aby wyrazili opinię na temat jakości posiłków w stołówce zakładowej.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-221">For example, you can make a questionnaire that employees use to give feedback about the lunch service in the cafeteria.</span></span>
 
-## <a name="questionnaire-groups"></a>Grupy kwestionariuszy
-Można ustawić grupy kwestionariusza i uwzględnić respondentów, do których należy przesłać kwestionariusz. 
+## <a name="questionnaire-groups"></a><span data-ttu-id="b9b1d-222">Grupy kwestionariuszy</span><span class="sxs-lookup"><span data-stu-id="b9b1d-222">Questionnaire groups</span></span>
+<span data-ttu-id="b9b1d-223">Można ustawić grupy kwestionariusza i uwzględnić respondentów, do których należy przesłać kwestionariusz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-223">You can set up questionnaire groups and then include the respondents that a questionnaire should be distributed to.</span></span> 
 
-Grupy kwestionariusza można utworzyć na następujących stronach:
+<span data-ttu-id="b9b1d-224">Grupy kwestionariusza można utworzyć na następujących stronach:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-224">You can create questionnaire groups from the following pages:</span></span>
 
--   **Grupy kwestionariuszy**— tylko osoby w grupie kwestionariusza mogą wypełnić wybrany kwestionariusz. Na przykład grupą docelową są kontrahenci, więc możesz utworzyć grupę kwestionariusza dla tych respondentów.
--   **Członkowie grupy kwestionariuszy** — do grup kwestionariuszy można dodawać osoby.
+-   <span data-ttu-id="b9b1d-225">**Grupy kwestionariuszy**— tylko osoby w grupie kwestionariusza mogą wypełnić wybrany kwestionariusz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-225">**Questionnaire groups** – Only individuals in a questionnaire group can complete a selected questionnaire.</span></span> <span data-ttu-id="b9b1d-226">Na przykład grupą docelową są kontrahenci, więc możesz utworzyć grupę kwestionariusza dla tych respondentów.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-226">For example, your intended audience is contractors, so you create a questionnaire group that is specific to those respondents.</span></span>
+-   <span data-ttu-id="b9b1d-227">**Członkowie grupy kwestionariuszy** — do grup kwestionariuszy można dodawać osoby.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-227">**Questionnaire group members** – You can add people to the questionnaire groups.</span></span>
 
-Aby przypisać grupę kwestionariusza do kwestionariusza, na stronie **Kwestionariusze** kliknij opcję **Prawa użytkownika**. Po zapisaniu kwestionariusza jako aktywny członkowie grupy kwestionariusza mogą wypełnić kwestionariusz. Ta funkcja jest przydatna do testowania kwestionariusza na wybranej grupie osób przed udostępnieniem go szerszej grupie respondentów lub kiedy chcesz skierować kwestionariusz do bardzo określonej grupy odbiorców.
+<span data-ttu-id="b9b1d-228">Aby przypisać grupę kwestionariusza do kwestionariusza, na stronie **Kwestionariusze** kliknij opcję **Prawa użytkownika**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-228">To assign a questionnaire group to a questionnaire, on the **Questionnaires** page, click **User rights**.</span></span> <span data-ttu-id="b9b1d-229">Po zapisaniu kwestionariusza jako aktywny członkowie grupy kwestionariusza mogą wypełnić kwestionariusz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-229">After the questionnaire is saved as active, the members of the questionnaire group can complete the questionnaire.</span></span> <span data-ttu-id="b9b1d-230">Ta funkcja jest przydatna do testowania kwestionariusza na wybranej grupie osób przed udostępnieniem go szerszej grupie respondentów lub kiedy chcesz skierować kwestionariusz do bardzo określonej grupy odbiorców.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-230">This functionality is helpful if you want to test a questionnaire on a select group of people before you roll it out to a larger group, or if you want to target a questionnaire to a very specific audience.</span></span>
 
-## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planowane sesje odpowiedzi w kwestionariuszu
-Zaplanowane sesje odpowiedzi to kwestionariusze, które zostały opracowane i wybrane dla respondentów. 
+## <a name="planned-answer-sessions-in-a-questionnaire"></a><span data-ttu-id="b9b1d-231">Planowane sesje odpowiedzi w kwestionariuszu</span><span class="sxs-lookup"><span data-stu-id="b9b1d-231">Planned answer sessions in a questionnaire</span></span>
+<span data-ttu-id="b9b1d-232">Zaplanowane sesje odpowiedzi to kwestionariusze, które zostały opracowane i wybrane dla respondentów.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-232">Planned answer sessions are questionnaires that you've designed and selected the respondents for.</span></span> 
 
-**Uwaga:** przed skonfigurowaniem zaplanowanych sesji odpowiedzi, należy zaprojektować kwestionariusz. 
+<span data-ttu-id="b9b1d-233">**Uwaga:** przed skonfigurowaniem zaplanowanych sesji odpowiedzi, należy zaprojektować kwestionariusz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-233">**Note:** Before you can set up planned answer sessions, you must design a questionnaire.</span></span> 
 
-Na stronie **Planowana sesja odpowiedzi** można utworzyć planowaną sesję odpowiedzi dla pojedynczego pracownika. Lista na tej stronie zawiera wszystkie zaplanowane kwestionariusze. 
+<span data-ttu-id="b9b1d-234">Na stronie **Planowana sesja odpowiedzi** można utworzyć planowaną sesję odpowiedzi dla pojedynczego pracownika.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-234">On the **Planned answer session** page, you can create a planned answer session for an individual employee.</span></span> <span data-ttu-id="b9b1d-235">Lista na tej stronie zawiera wszystkie zaplanowane kwestionariusze.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-235">The list on the page displays all planned questionnaires.</span></span> 
 
-Planowane sesje odpowiedzi są również używane na stronie **Harmonogramy kwestionariuszy**, gdzie można zaplanować kwestionariusze dla grup osób takich jak:
+<span data-ttu-id="b9b1d-236">Planowane sesje odpowiedzi są również używane na stronie **Harmonogramy kwestionariuszy**, gdzie można zaplanować kwestionariusze dla grup osób takich jak:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-236">Planned answer sessions are also used on the **Questionnaire schedules** page, where you can plan questionnaires for multiple people:</span></span>
 
--   Pracownicy
--   Uczestnicy kursu
--   Jednostki organizacyjne
+-   <span data-ttu-id="b9b1d-237">Pracownicy</span><span class="sxs-lookup"><span data-stu-id="b9b1d-237">Employees</span></span>
+-   <span data-ttu-id="b9b1d-238">Uczestnicy kursu</span><span class="sxs-lookup"><span data-stu-id="b9b1d-238">Course participants</span></span>
+-   <span data-ttu-id="b9b1d-239">Jednostki organizacyjne</span><span class="sxs-lookup"><span data-stu-id="b9b1d-239">Organizational units</span></span>
 
-Każda osoba może wypełnić kwestionariusz tylko raz.
+<span data-ttu-id="b9b1d-240">Każda osoba może wypełnić kwestionariusz tylko raz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-240">Each person can answer the questionnaire only one time.</span></span>
 
-## <a name="scheduling-a-questionnaire"></a>Planowanie kwestionariusza
-Można opcjonalnie zaplanować kwestionariusz dla wielu respondentów.
+## <a name="scheduling-a-questionnaire"></a><span data-ttu-id="b9b1d-241">Planowanie kwestionariusza</span><span class="sxs-lookup"><span data-stu-id="b9b1d-241">Scheduling a questionnaire</span></span>
+<span data-ttu-id="b9b1d-242">Można opcjonalnie zaplanować kwestionariusz dla wielu respondentów.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-242">You can optionally schedule a questionnaire for multiple respondents.</span></span>
 
-### <a name="planning-types"></a>Typy planowania
+### <a name="planning-types"></a><span data-ttu-id="b9b1d-243">Typy planowania</span><span class="sxs-lookup"><span data-stu-id="b9b1d-243">Planning types</span></span>
 
-Typy planowania są wymagane, aby zaplanować zaplanowane sesje odpowiedzi dla wielu respondentów. Typy planowania są używane do klasyfikowania harmonogramów kwestionariuszy. Na przykład można ustalić harmonogram kwestionariuszy do następujących celów:
+<span data-ttu-id="b9b1d-244">Typy planowania są wymagane, aby zaplanować zaplanowane sesje odpowiedzi dla wielu respondentów.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-244">Planning types are required if you want to schedule planned answer sessions for multiple respondents.</span></span> <span data-ttu-id="b9b1d-245">Typy planowania są używane do klasyfikowania harmonogramów kwestionariuszy.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-245">Planning types are used to classify questionnaire schedules.</span></span> <span data-ttu-id="b9b1d-246">Na przykład można ustalić harmonogram kwestionariuszy do następujących celów:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-246">For example, you can schedule questionnaires for the following purposes:</span></span>
 
--   Ocena
--   Przegląd
--   Testowanie
+-   <span data-ttu-id="b9b1d-247">Ocena</span><span class="sxs-lookup"><span data-stu-id="b9b1d-247">Evaluation</span></span>
+-   <span data-ttu-id="b9b1d-248">Przegląd</span><span class="sxs-lookup"><span data-stu-id="b9b1d-248">Survey</span></span>
+-   <span data-ttu-id="b9b1d-249">Testowanie</span><span class="sxs-lookup"><span data-stu-id="b9b1d-249">Testing</span></span>
 
-Na stronie **harmonogramów kwestionariuszy** można określić typy planowania dla harmonogramu kwestionariusza.
+<span data-ttu-id="b9b1d-250">Na stronie **harmonogramów kwestionariuszy** można określić typy planowania dla harmonogramu kwestionariusza.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-250">You can specify planning types for a questionnaire schedule on the **Questionnaire schedules** page.</span></span>
 
-### <a name="reference-types-for-questionnaire"></a>Typy odwołań do kwestionariusza
+### <a name="reference-types-for-questionnaire"></a><span data-ttu-id="b9b1d-251">Typy odwołań do kwestionariusza</span><span class="sxs-lookup"><span data-stu-id="b9b1d-251">Reference types for questionnaire</span></span>
 
-Typy odwołań służą do wprowadzania kryteriów dla respondentów, które można wybrać podczas planowania kwestionariusza. 
+<span data-ttu-id="b9b1d-252">Typy odwołań służą do wprowadzania kryteriów dla respondentów, które można wybrać podczas planowania kwestionariusza.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-252">You can use reference types to enter criteria for the respondents that you might select when you schedule a questionnaire.</span></span> 
 
-Użyj strony **typy odwołań** do skonfigurowania odwołań do kwestionariusza. Każdy typ odwołania odpowiada tabeli w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Podczas tworzenia harmonogramów kwestionariuszy można określić poszczególne rekordy w tabeli lub zakres rekordów, które będzie można skojarzyć z kwestionariuszem. 
+<span data-ttu-id="b9b1d-253">Użyj strony **typy odwołań** do skonfigurowania odwołań do kwestionariusza.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-253">Use the **Reference types** page to set up reference types for a questionnaire.</span></span> <span data-ttu-id="b9b1d-254">Każdy typ odwołania odpowiada tabeli w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-254">Each reference type corresponds to a table in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span></span> <span data-ttu-id="b9b1d-255">Podczas tworzenia harmonogramów kwestionariuszy można określić poszczególne rekordy w tabeli lub zakres rekordów, które będzie można skojarzyć z kwestionariuszem.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-255">When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with.</span></span> 
 
-Na przykład zaznaczenie w tabeli kursów pozwala określić, do których kursów będzie się odnosić kwestionariusz. Po skonfigurowaniu odwołanie do tabeli kursów, niektóre pola i przyciski na stronie **kursów** stają się dostępne.
+<span data-ttu-id="b9b1d-256">Na przykład zaznaczenie w tabeli kursów pozwala określić, do których kursów będzie się odnosić kwestionariusz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-256">For example, if you select the Courses table, you can decide which specific course the questionnaire will be for.</span></span> <span data-ttu-id="b9b1d-257">Po skonfigurowaniu odwołanie do tabeli kursów, niektóre pola i przyciski na stronie **kursów** stają się dostępne.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-257">When you set up a reference for the Courses table, some fields and buttons on the **Courses** page become available.</span></span>
 
-### <a name="questionnaire-schedules"></a>Harmonogramy kwestionariuszy
+### <a name="questionnaire-schedules"></a><span data-ttu-id="b9b1d-258">Harmonogramy kwestionariuszy</span><span class="sxs-lookup"><span data-stu-id="b9b1d-258">Questionnaire schedules</span></span>
 
-Harmonogramy kwestionariuszy służą do generowania wielu planowanych sesji odpowiedzi dla grupy użytkowników, na podstawie typu odwołania. Utwórz harmonogram na stronie **Harmonogramy kwestionariuszy**. Wybierz typ planowania, aby skategoryzować harmonogram, a także wybierz typ odwołania, które powinno być używane do zapytań o konkretnych użytkowników systemu. Na przykład jeśli wybierzesz typ odwołania do tabeli kursów, możesz wybrać określony kurs w polu **Odwołanie**. 
+<span data-ttu-id="b9b1d-259">Harmonogramy kwestionariuszy służą do generowania wielu planowanych sesji odpowiedzi dla grupy użytkowników, na podstawie typu odwołania.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-259">You can use questionnaire schedules to generate multiple planned answer sessions for a group of users, based on a reference type.</span></span> <span data-ttu-id="b9b1d-260">Utwórz harmonogram na stronie **Harmonogramy kwestionariuszy**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-260">Create a schedule on the **Questionnaire schedules** page.</span></span> <span data-ttu-id="b9b1d-261">Wybierz typ planowania, aby skategoryzować harmonogram, a także wybierz typ odwołania, które powinno być używane do zapytań o konkretnych użytkowników systemu.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-261">Select the planning type to categorize the schedule, and also select the reference type that should be used to query the system for specific users.</span></span> <span data-ttu-id="b9b1d-262">Na przykład jeśli wybierzesz typ odwołania do tabeli kursów, możesz wybrać określony kurs w polu **Odwołanie**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-262">For example, if you set the reference type to the Courses table, you can select a specific course in the **Reference** field.</span></span> 
 
-Kliknij **Szczegóły ustawień**, aby wybrać kwestionariusz i inne kryteria. Na przykład można określić imię i nazwisko instruktora jako kryterium, jeśli kwestionariusz służy do oceny instruktora. Po zakończeniu wprowadzania szczegółów konfiguracji system generuje zaplanowane sesje odpowiedzi dla użytkowników, którzy są uwzględnieni w zapytaniu. 
+<span data-ttu-id="b9b1d-263">Kliknij **Szczegóły ustawień**, aby wybrać kwestionariusz i inne kryteria.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-263">Click **Setup details** to select the questionnaire and other criteria.</span></span> <span data-ttu-id="b9b1d-264">Na przykład można określić imię i nazwisko instruktora jako kryterium, jeśli kwestionariusz służy do oceny instruktora.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-264">For example, specify the instructor's name as a criterion if the questionnaire is an evaluation of the instructor.</span></span> <span data-ttu-id="b9b1d-265">Po zakończeniu wprowadzania szczegółów konfiguracji system generuje zaplanowane sesje odpowiedzi dla użytkowników, którzy są uwzględnieni w zapytaniu.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-265">After you've finished entering the setup details, the system generates planned answer sessions for the users that are included in the query.</span></span> 
 
-Kliknij **Zaplanowane sesje odpowiedzi** w celu wyświetlania sesji odpowiedzi dla harmonogramu. Można ręcznie utworzyć dodatkowe planowane sesje odpowiedzi lub usunąć planowane sesje odpowiedzi, które nie otrzymały odpowiedzi. 
+<span data-ttu-id="b9b1d-266">Kliknij **Zaplanowane sesje odpowiedzi** w celu wyświetlania sesji odpowiedzi dla harmonogramu.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-266">Click **Planned answer sessions** to view the answer sessions for the schedule.</span></span> <span data-ttu-id="b9b1d-267">Można ręcznie utworzyć dodatkowe planowane sesje odpowiedzi lub usunąć planowane sesje odpowiedzi, które nie otrzymały odpowiedzi.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-267">You can then manually create additional planned answer sessions or delete planned answer sessions that haven't been answered.</span></span> 
 
-Kliknij kolejno opcje **Funkcje** &gt; **Start**, aby udostępnić kwestionariusz użytkownikom w powiązanych zaplanowanych sesjach odpowiedzi. Kliknij **Odpowiedzi** w celu wyświetlania odpowiedzi z wypełnionych kwestionariuszy. Opcjonalnie można skopiować ustawienia harmonogramu kwestionariusza, zaplanowanych sesji odpowiedzi i odpowiedzi do nowego harmonogramu kwestionariusza.
+<span data-ttu-id="b9b1d-268">Kliknij kolejno opcje **Funkcje** &gt; **Start**, aby udostępnić kwestionariusz użytkownikom w powiązanych zaplanowanych sesjach odpowiedzi.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-268">Click **Functions** &gt; **Start** to make the questionnaire available to the users in related planned answer sessions.</span></span> <span data-ttu-id="b9b1d-269">Kliknij **Odpowiedzi** w celu wyświetlania odpowiedzi z wypełnionych kwestionariuszy.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-269">Click **Answers** to view the completed responses to the questionnaire.</span></span> <span data-ttu-id="b9b1d-270">Opcjonalnie można skopiować ustawienia harmonogramu kwestionariusza, zaplanowanych sesji odpowiedzi i odpowiedzi do nowego harmonogramu kwestionariusza.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-270">You can optionally copy the questionnaire schedule settings, planned answer sessions, and answers to a new questionnaire schedule.</span></span>
 
-## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Powiadamianie respondentów o kwestionariuszach, które są dla nich dostępne
-Gdy rozprowadzasz kwestionariusz, musisz powiadomić respondentów, że kwestionariusze są dla nich dostępne. 
+## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a><span data-ttu-id="b9b1d-271">Powiadamianie respondentów o kwestionariuszach, które są dla nich dostępne</span><span class="sxs-lookup"><span data-stu-id="b9b1d-271">Notifying respondents about questionnaires that are available to them</span></span>
+<span data-ttu-id="b9b1d-272">Gdy rozprowadzasz kwestionariusz, musisz powiadomić respondentów, że kwestionariusze są dla nich dostępne.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-272">When you distribute a questionnaire, you must notify respondents that questionnaires are available to them.</span></span> 
 
-**Uwaga:** Respondenci muszą być użytkownikami programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, aby mogli wypełnić kwestionariusz.
+<span data-ttu-id="b9b1d-273">**Uwaga:** Respondenci muszą być użytkownikami programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, aby mogli wypełnić kwestionariusz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-273">**Note:** Respondents must be users in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition to complete a questionnaire.</span></span>
 
-### <a name="notifying-respondents-about-a-planned-answer-session"></a>Powiadamianie respondentów o planowanej sesji odpowiedzi
+### <a name="notifying-respondents-about-a-planned-answer-session"></a><span data-ttu-id="b9b1d-274">Powiadamianie respondentów o planowanej sesji odpowiedzi</span><span class="sxs-lookup"><span data-stu-id="b9b1d-274">Notifying respondents about a planned answer session</span></span>
 
-Jeśli używasz planowanej sesji odpowiedzi, należy powiadomić wybraną osobę bezpośrednio, np. telefoniczne lub e-mailem.
+<span data-ttu-id="b9b1d-275">Jeśli używasz planowanej sesji odpowiedzi, należy powiadomić wybraną osobę bezpośrednio, np. telefoniczne lub e-mailem.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-275">If you use a planned answer session, you must notify the person directly, such as by telephone or email.</span></span>
 
-### <a name="notifying-respondents-about-a-scheduling"></a>Powiadamianie respondentów o planowaniu
+### <a name="notifying-respondents-about-a-scheduling"></a><span data-ttu-id="b9b1d-276">Powiadamianie respondentów o planowaniu</span><span class="sxs-lookup"><span data-stu-id="b9b1d-276">Notifying respondents about a scheduling</span></span>
 
-Na stronie **Harmonogramy kwestionariuszy** można przygotować i wysłać wiadomość e-mail do wszystkich respondentów przypisanych do danego kwestionariusza. Wpisz tekst e-maila na karcie **Wiadomość e-mail samoobsługi pracownika**. Po rozpoczęciu harmonogramu kliknij kolejno opcje **Funkcje** &gt; **Wyślij wiadomość e-mail**, aby wygenerować i wysłać wiadomość e-mail do respondentów. Respondenci mogą następnie zalogować się w witrynie i wypełnić kwestionariusz. 
+<span data-ttu-id="b9b1d-277">Na stronie **Harmonogramy kwestionariuszy** można przygotować i wysłać wiadomość e-mail do wszystkich respondentów przypisanych do danego kwestionariusza.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-277">Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire.</span></span> <span data-ttu-id="b9b1d-278">Wpisz tekst e-maila na karcie **Wiadomość e-mail samoobsługi pracownika**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-278">Enter the email text on the **E-mail for employee self service** tab.</span></span> <span data-ttu-id="b9b1d-279">Po rozpoczęciu harmonogramu kliknij kolejno opcje **Funkcje** &gt; **Wyślij wiadomość e-mail**, aby wygenerować i wysłać wiadomość e-mail do respondentów.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-279">After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents.</span></span> <span data-ttu-id="b9b1d-280">Respondenci mogą następnie zalogować się w witrynie i wypełnić kwestionariusz.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-280">Respondents can then sign in to the website and complete the questionnaire.</span></span> 
 
-**Uwaga:** zanim będzie można skorzystać z funkcji poczty e-mail, administrator IT musi wprowadzić ustawienia poczty e-mail na stronie **Parametry poczty e-mail**.
+<span data-ttu-id="b9b1d-281">**Uwaga:** zanim będzie można skorzystać z funkcji poczty e-mail, administrator IT musi wprowadzić ustawienia poczty e-mail na stronie **Parametry poczty e-mail**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-281">**Note:** Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.</span></span>
 
-## <a name="ending-a-scheduled-questionnaire"></a>Kończenie planowanego arkusza
-Można zakończyć zaplanowany kwestionariusz po ukończeniu przez wszystkich respondentów przypisanych do nich sesji odpowiedzi. Po zakończeniu zaplanowanego kwestionariusza, nie można skopiować jego ustawień do nowego harmonogramu. 
+## <a name="ending-a-scheduled-questionnaire"></a><span data-ttu-id="b9b1d-282">Kończenie planowanego arkusza</span><span class="sxs-lookup"><span data-stu-id="b9b1d-282">Ending a scheduled questionnaire</span></span>
+<span data-ttu-id="b9b1d-283">Można zakończyć zaplanowany kwestionariusz po ukończeniu przez wszystkich respondentów przypisanych do nich sesji odpowiedzi.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-283">You can end a scheduled questionnaire after all respondents have completed their assigned answer sessions.</span></span> <span data-ttu-id="b9b1d-284">Po zakończeniu zaplanowanego kwestionariusza, nie można skopiować jego ustawień do nowego harmonogramu.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-284">After a scheduled questionnaire is ended, you can't copy its settings to a new schedule.</span></span> 
 
-**Uwaga:** Jeśli co najmniej jeden respondent nie wypełnił kwestionariusza, a mimo to planowanie ma zostać zakończone, najpierw usuń odpowiednich respondentów z listy na stronie **Planowana sesja odpowiedzi**. Po wykonaniu tej czynności będzie można zakończyć planowanie.
+<span data-ttu-id="b9b1d-285">**Uwaga:** Jeśli co najmniej jeden respondent nie wypełnił kwestionariusza, a mimo to planowanie ma zostać zakończone, najpierw usuń odpowiednich respondentów z listy na stronie **Planowana sesja odpowiedzi**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-285">**Note:** If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page.</span></span> <span data-ttu-id="b9b1d-286">Po wykonaniu tej czynności będzie można zakończyć planowanie.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-286">You can then end the schedule.</span></span>
 
-## <a name="completing-questionnaires"></a>Wypełnianie kwestionariusza
-Po zaprojektowaniu i rozesłaniu kwestionariusza, kwestionariusz może zostać wypełniony przez wybranych respondentów. Kwestionariusze można wypełniać w dwóch lokalizacjach:
+## <a name="completing-questionnaires"></a><span data-ttu-id="b9b1d-287">Wypełnianie kwestionariusza</span><span class="sxs-lookup"><span data-stu-id="b9b1d-287">Completing questionnaires</span></span>
+<span data-ttu-id="b9b1d-288">Po zaprojektowaniu i rozesłaniu kwestionariusza, kwestionariusz może zostać wypełniony przez wybranych respondentów.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-288">After you've designed and distributed a questionnaire, the questionnaire can be completed by selected respondents.</span></span> <span data-ttu-id="b9b1d-289">Kwestionariusze można wypełniać w dwóch lokalizacjach:</span><span class="sxs-lookup"><span data-stu-id="b9b1d-289">You can complete the questionnaires that are available to you from two locations:</span></span>
 
--   W okienku nawigacji kliknij kolejno opcje **Kwestionariusze** &gt; **Dystrybuuj** &gt; **Wypełnianie kwestionariusza**.
--   W obszarze Samoobsługa pracownika etatowego kliknij **Kwestionariusze do wypełnienia**.
+-   <span data-ttu-id="b9b1d-290">W okienku nawigacji kliknij kolejno opcje **Kwestionariusze** &gt; **Dystrybuuj** &gt; **Wypełnianie kwestionariusza**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-290">In the navigation pane, click **Questionnaires** &gt; **Distribute** &gt; **Complete a questionnaire**.</span></span>
+-   <span data-ttu-id="b9b1d-291">W obszarze Samoobsługa pracownika etatowego kliknij **Kwestionariusze do wypełnienia**.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-291">In Employee self-service, click **Questionnaires to complete**.</span></span>
 
-Kwestionariusze można udostępnić wszystkich osobom w sieci, określonym użytkownikom lub grupom użytkowników.
+<span data-ttu-id="b9b1d-292">Kwestionariusze można udostępnić wszystkich osobom w sieci, określonym użytkownikom lub grupom użytkowników.</span><span class="sxs-lookup"><span data-stu-id="b9b1d-292">Questionnaires can made be available to specific users or groups of users, or to all users in a network.</span></span>
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="see-also"></a><span data-ttu-id="b9b1d-293">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="b9b1d-293">See also</span></span>
 --------
 
-[Projektowanie kwestionariuszy](design-questionnaires.md)
+[<span data-ttu-id="b9b1d-294">Projektowanie kwestionariuszy</span><span class="sxs-lookup"><span data-stu-id="b9b1d-294">Designing questionnaires</span></span>](design-questionnaires.md)
 
-[Używanie kwestionariuszy](questionnaires.md)
+[<span data-ttu-id="b9b1d-295">Używanie kwestionariuszy</span><span class="sxs-lookup"><span data-stu-id="b9b1d-295">Using questionnaires</span></span>](questionnaires.md)
 
-[Wyświetlanie i ocena wyników kwestionariuszy](evaluate-questionnaire-results.md)
+[<span data-ttu-id="b9b1d-296">Wyświetlanie i ocena wyników kwestionariuszy</span><span class="sxs-lookup"><span data-stu-id="b9b1d-296">Viewing and evaluating the results of questionnaires</span></span>](evaluate-questionnaire-results.md)
 
-master
+<span data-ttu-id="b9b1d-297">master</span><span class="sxs-lookup"><span data-stu-id="b9b1d-297">master</span></span>
 

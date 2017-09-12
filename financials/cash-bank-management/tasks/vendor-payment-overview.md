@@ -16,65 +16,65 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 44b7c02e7c238dcea83c5900620731a7befbbb42
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 020d147744df24b2065e66e5fc68ed5d5479127b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="vendor-payment-overview"></a>Przegląd płatności dla dostawcy
+# <a name="vendor-payment-overview"></a><span data-ttu-id="5fb94-103">Przegląd płatności dla dostawcy</span><span class="sxs-lookup"><span data-stu-id="5fb94-103">Vendor payment overview</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ten przewodnik po zadaniach zawiera instruktaż różnych metod służących do tworzenia płatności dla dostawców, w tym dotyczących korzystania z propozycji płatności lub ręcznego wprowadzania jednorazowej płatności. Ta procedura wykorzystuje firmę demonstracyjną USMF.
+<span data-ttu-id="5fb94-104">Ten przewodnik po zadaniach zawiera instruktaż różnych metod służących do tworzenia płatności dla dostawców, w tym dotyczących korzystania z propozycji płatności lub ręcznego wprowadzania jednorazowej płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-104">This task guide will walk you through various methods used to create vendor payments, including how to use a payment proposal or manually entering a one-off payment.</span></span> <span data-ttu-id="5fb94-105">Ta procedura wykorzystuje firmę demonstracyjną USMF.</span><span class="sxs-lookup"><span data-stu-id="5fb94-105">This procedure uses the USMF demo company.</span></span>
 
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Płatności > Arkusz płatności.
-2. Kliknij przycisk Nowy.
-3. Wybierz arkusz płatności, w którym mają być zapisywane płatności dla dostawcy. 
-4. Wybierz arkusz lub wprowadź go ręcznie.
-5. Kliknij przycisk Wiersze.
-6. Kliknij opcję Propozycja płatności.
-7. Kliknij opcję Utwórz propozycję płatności.
-    * Propozycja płatności jest zapytaniem umożliwiającym wybieranie faktur do zapłaty. Można edytować listę faktur do zapłaty przed utworzeniem lub wygenerowaniem płatności dla dostawców.  
-8. Wybierz faktury do zapłaty według terminów płatności i/lub rabatów gotówkowych. 
-9. Wprowadź datę do porównania z terminem płatności lub rabatem gotówkowym. 
-10. Opcjonalnie: Wprowadź datę płatności używaną w przypadku wszystkich płatności.
-    * Data wprowadzona w tym polu będzie datą zapłaty wszystkich utworzonych płatności, niezależnie od ich terminów płatności ani dat rabatów gotówkowych.  
-11. Opcjonalnie: Wprowadź minimalną datę płatności, która może być używana jako data płatności.
-    * Minimalna data płatności będzie najwcześniejszą datą używaną podczas tworzenia płatności. Na przykład jeśli faktura ma termin płatności po minimalnej dacie płatności, datą płatności stanie się termin płatności zamiast minimalna data płatności, tak aby zapłacić kwotę na fakturze z najpóźniejszą możliwą datą.  
-12. W obszarze Rekordy do uwzględnienia wprowadź dodatkowe ograniczenia zapytań.
-    * Filtr jest często używany do ograniczenia zbioru faktur wybieranych do zapłaty według grupy dostawców lub metodą płatności. Na przykład można dodać filtr, aby zapłacić czekiem tylko faktury w bieżącej sesji płatności.  
-13. Wprowadź dodatkowe ograniczenia zapytań lub domyślne ustawienia płatności. 
-    * Dodatkowych parametrów można użyć w celu zdefiniowania waluty płatności lub włączenia scentralizowanych płatności dla tej sesji płatności.  
-14. Kliknij przycisk OK.
-    * Po kliknięciu przycisku OK pojawią się wyniki zapytania. Jeśli nie chcesz przejrzeć listy faktur zaznaczonych do zapłaty, można wrócić do skróconej karty Parametry i zmienić ustawienie Utwórz płatności bez przeglądania faktury na wartość Tak.  
-15. Kliknij przycisk Pokaż przegląd płatności, aby wyświetlić płatności, które zostaną utworzone dla dostawcy na wybranej fakturze.
-16. Kliknij przycisk Ukryj przegląd płatności, aby ukryć płatności. 
-17. Kliknij opcję Utwórz płatności.
-    * Przed wybraniem opcji Utwórz płatności można kliknąć siatkę prawym przyciskiem myszy i wyeksportować listę faktur do programu Excel. Przycisk Utwórz płatności spowoduje utworzenie płatności dla dostawcy w arkuszu płatności.  
-18. Zeskanuj płatności i upewnij się, że metoda płatności jest określona dla wszystkich płatności. 
-    * Jeśli generujesz płatności, np. drukujesz czek lub tworzysz płatność elektroniczną, metoda płatności musi być zdefiniowana. Metoda płatności ustawia także domyślne konto bankowe na podstawie planowanej płatności.  
-19. Kliknij przycisk Nowy, aby utworzyć jednorazową płatność.
-    * Jednorazową płatność można dodać do arkusza płatności w dowolnym momencie przed zaksięgowaniem. Odbywa się to przez kliknięcie przycisku Nowy i dodanie informacji o płatności ręcznie, a nie za pomocą propozycji płatności.  
-20. Wybierz dostawcę, do którego zostanie dokonana płatność.
-21. Jeśli istnieje faktura do zapłaty, wybierz opcję Rozlicz transakcje, aby wybrać tę fakturę.
-    * Jeśli płatność jest zaliczką, ten krok jest opcjonalny. Płatność można utworzyć bez zaznaczania żadnej faktury.  
-22. Oznacz wszystkie faktury, które zostaną opłacone.
-    * Jeśli używasz opcji Rozlicz transakcje, aby wybrać faktury do zapłaty, kwota płatności będzie obliczana automatycznie na podstawie faktur oznaczanych do zapłaty i kwoty wprowadzonej w polu Kwota do rozliczenia.  
-23. Kliknij przycisk OK.
-24. Jeśli chcesz usunąć płatność, zaznacz wiersz.
-25. Kliknij przycisk Usuń.
-    * Usunięcie płatności spowoduje tylko usunięcie tej płatności. Wszelkie faktury oznaczone do zapłaty będą nadal dostępne do zapłaty za pomocą innej płatności.  
-26. Kliknij przycisk Tak.
-27. Wybierz opcję polecenie Generuj płatność, aby wydrukować czeki lub utworzyć plik płatności elektronicznej.
-28. Wybierz metodę płatności, którą chcesz wygenerować.
-    * Arkusz płatności może zawierać płatności zarówno czekami, jak i elektroniczne, ale można wygenerować tylko jeden typ płatności na raz.  
-29. Wybierz konto bankowe, z którego chcesz wygenerować płatności.
-30. Kliknij przycisk OK.
-    * Płatności będą generowane tylko wtedy, gdy pasują do metody płatności i wybranego konta bankowego.  
-31. Jeśli generujesz czeki, zaznacz opcję Dokument, aby zapewnić prawidłowe miejsce docelowe drukowania dla czeków.
-32. Kliknij przycisk OK.
-33. Kliknij przycisk OK, aby wygenerować płatności.
-34. Kliknij przycisk Księguj, jeśli wszystkie płatności są zatwierdzone i wygenerowane. 
+1. <span data-ttu-id="5fb94-106">Wybierz kolejno opcje Rozrachunki z dostawcami > Płatności > Arkusz płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-106">Go to Accounts payable > Payments > Payment journal.</span></span>
+2. <span data-ttu-id="5fb94-107">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="5fb94-107">Click New.</span></span>
+3. <span data-ttu-id="5fb94-108">Wybierz arkusz płatności, w którym mają być zapisywane płatności dla dostawcy.</span><span class="sxs-lookup"><span data-stu-id="5fb94-108">Select the payment journal in which to save the vendor payments.</span></span> 
+4. <span data-ttu-id="5fb94-109">Wybierz arkusz lub wprowadź go ręcznie.</span><span class="sxs-lookup"><span data-stu-id="5fb94-109">Select the journal or manually enter it.</span></span>
+5. <span data-ttu-id="5fb94-110">Kliknij przycisk Wiersze.</span><span class="sxs-lookup"><span data-stu-id="5fb94-110">Click Lines.</span></span>
+6. <span data-ttu-id="5fb94-111">Kliknij opcję Propozycja płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-111">Click Payment proposal.</span></span>
+7. <span data-ttu-id="5fb94-112">Kliknij opcję Utwórz propozycję płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-112">Click Create payment proposal.</span></span>
+    * <span data-ttu-id="5fb94-113">Propozycja płatności jest zapytaniem umożliwiającym wybieranie faktur do zapłaty.</span><span class="sxs-lookup"><span data-stu-id="5fb94-113">The payment proposal is a query used to select invoices for payment.</span></span> <span data-ttu-id="5fb94-114">Można edytować listę faktur do zapłaty przed utworzeniem lub wygenerowaniem płatności dla dostawców.</span><span class="sxs-lookup"><span data-stu-id="5fb94-114">You can edit the list of invoices to pay before creating or generating the vendor payments.</span></span>  
+8. <span data-ttu-id="5fb94-115">Wybierz faktury do zapłaty według terminów płatności i/lub rabatów gotówkowych.</span><span class="sxs-lookup"><span data-stu-id="5fb94-115">Select invoices for payment by due date, cash discount, or both.</span></span> 
+9. <span data-ttu-id="5fb94-116">Wprowadź datę do porównania z terminem płatności lub rabatem gotówkowym.</span><span class="sxs-lookup"><span data-stu-id="5fb94-116">Enter the date for comparing to the due date or cash discount.</span></span> 
+10. <span data-ttu-id="5fb94-117">Opcjonalnie: Wprowadź datę płatności używaną w przypadku wszystkich płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-117">Optional: Enter a payment date used for all payments.</span></span>
+    * <span data-ttu-id="5fb94-118">Data wprowadzona w tym polu będzie datą zapłaty wszystkich utworzonych płatności, niezależnie od ich terminów płatności ani dat rabatów gotówkowych.</span><span class="sxs-lookup"><span data-stu-id="5fb94-118">The date entered here will be the payment date for all payments created, regardless of the due date or cash discount date.</span></span>  
+11. <span data-ttu-id="5fb94-119">Opcjonalnie: Wprowadź minimalną datę płatności, która może być używana jako data płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-119">Optional: Enter a minimum payment date which may be used as the payment date.</span></span>
+    * <span data-ttu-id="5fb94-120">Minimalna data płatności będzie najwcześniejszą datą używaną podczas tworzenia płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-120">The minimum payment date will be the earliest date used when creating payments.</span></span> <span data-ttu-id="5fb94-121">Na przykład jeśli faktura ma termin płatności po minimalnej dacie płatności, datą płatności stanie się termin płatności zamiast minimalna data płatności, tak aby zapłacić kwotę na fakturze z najpóźniejszą możliwą datą.</span><span class="sxs-lookup"><span data-stu-id="5fb94-121">For example, if an invoice has a due date after the minimum payment date, the due date will become the payment date instead of the minimum payment date in order to pay the invoice on the latest possible date.</span></span>  
+12. <span data-ttu-id="5fb94-122">W obszarze Rekordy do uwzględnienia wprowadź dodatkowe ograniczenia zapytań.</span><span class="sxs-lookup"><span data-stu-id="5fb94-122">Enter additional query restrictions under Records to include.</span></span>
+    * <span data-ttu-id="5fb94-123">Filtr jest często używany do ograniczenia zbioru faktur wybieranych do zapłaty według grupy dostawców lub metodą płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-123">The filter is often used to restrict the invoices selected for payment by vendor group or method of payment.</span></span> <span data-ttu-id="5fb94-124">Na przykład można dodać filtr, aby zapłacić czekiem tylko faktury w bieżącej sesji płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-124">For example, you may add a filter to only pay invoices by cheque in this pay run.</span></span>  
+13. <span data-ttu-id="5fb94-125">Wprowadź dodatkowe ograniczenia zapytań lub domyślne ustawienia płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-125">Enter additional query restriction or payment defaults.</span></span> 
+    * <span data-ttu-id="5fb94-126">Dodatkowych parametrów można użyć w celu zdefiniowania waluty płatności lub włączenia scentralizowanych płatności dla tej sesji płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-126">The additional parameters can be used to define the payment currency or to enable centralized payments for this pay run.</span></span>  
+14. <span data-ttu-id="5fb94-127">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5fb94-127">Click OK.</span></span>
+    * <span data-ttu-id="5fb94-128">Po kliknięciu przycisku OK pojawią się wyniki zapytania.</span><span class="sxs-lookup"><span data-stu-id="5fb94-128">After clicking OK, the results of the query will appear.</span></span> <span data-ttu-id="5fb94-129">Jeśli nie chcesz przejrzeć listy faktur zaznaczonych do zapłaty, można wrócić do skróconej karty Parametry i zmienić ustawienie Utwórz płatności bez przeglądania faktury na wartość Tak.</span><span class="sxs-lookup"><span data-stu-id="5fb94-129">If you don't want to preview the list of invoices selected to pay, you can go back to the Parameters fast tab and change the setting Create payments without invoice preview = Yes.</span></span>  
+15. <span data-ttu-id="5fb94-130">Kliknij przycisk Pokaż przegląd płatności, aby wyświetlić płatności, które zostaną utworzone dla dostawcy na wybranej fakturze.</span><span class="sxs-lookup"><span data-stu-id="5fb94-130">Choose the Show payment overview button to view the payments that will be created for the vendor on the invoice selected.</span></span>
+16. <span data-ttu-id="5fb94-131">Kliknij przycisk Ukryj przegląd płatności, aby ukryć płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-131">Choose the Hide payment overview button to hide the payments.</span></span> 
+17. <span data-ttu-id="5fb94-132">Kliknij opcję Utwórz płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-132">Click Create payments.</span></span>
+    * <span data-ttu-id="5fb94-133">Przed wybraniem opcji Utwórz płatności można kliknąć siatkę prawym przyciskiem myszy i wyeksportować listę faktur do programu Excel.</span><span class="sxs-lookup"><span data-stu-id="5fb94-133">Before choosing Create payments, you can right click on the grid and export the list of invoices to Excel.</span></span> <span data-ttu-id="5fb94-134">Przycisk Utwórz płatności spowoduje utworzenie płatności dla dostawcy w arkuszu płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-134">The Create payments button will create the vendor payments in the payment journal.</span></span>  
+18. <span data-ttu-id="5fb94-135">Zeskanuj płatności i upewnij się, że metoda płatności jest określona dla wszystkich płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-135">Scan your payments and make sure the method of payment is defined for all payments.</span></span> 
+    * <span data-ttu-id="5fb94-136">Jeśli generujesz płatności, np. drukujesz czek lub tworzysz płatność elektroniczną, metoda płatności musi być zdefiniowana.</span><span class="sxs-lookup"><span data-stu-id="5fb94-136">If you generate the payments, such as printing a cheque or creating an electronic payment, the method of payment must be defined.</span></span> <span data-ttu-id="5fb94-137">Metoda płatności ustawia także domyślne konto bankowe na podstawie planowanej płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-137">The method of payment will also default the bank account from the payment will be made.</span></span>  
+19. <span data-ttu-id="5fb94-138">Kliknij przycisk Nowy, aby utworzyć jednorazową płatność.</span><span class="sxs-lookup"><span data-stu-id="5fb94-138">Click New to create a one-off payment.</span></span>
+    * <span data-ttu-id="5fb94-139">Jednorazową płatność można dodać do arkusza płatności w dowolnym momencie przed zaksięgowaniem.</span><span class="sxs-lookup"><span data-stu-id="5fb94-139">A one-off payment can be added to a payment journal at any time prior to posting.</span></span> <span data-ttu-id="5fb94-140">Odbywa się to przez kliknięcie przycisku Nowy i dodanie informacji o płatności ręcznie, a nie za pomocą propozycji płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-140">This is done by clicking the New button and adding the payment information manually, rather then using the Payment proposal.</span></span>  
+20. <span data-ttu-id="5fb94-141">Wybierz dostawcę, do którego zostanie dokonana płatność.</span><span class="sxs-lookup"><span data-stu-id="5fb94-141">Select the vendor to whom the payment will be made.</span></span>
+21. <span data-ttu-id="5fb94-142">Jeśli istnieje faktura do zapłaty, wybierz opcję Rozlicz transakcje, aby wybrać tę fakturę.</span><span class="sxs-lookup"><span data-stu-id="5fb94-142">If an invoice exists to pay, select Settle transactions to select the invoice for payment.</span></span>
+    * <span data-ttu-id="5fb94-143">Jeśli płatność jest zaliczką, ten krok jest opcjonalny.</span><span class="sxs-lookup"><span data-stu-id="5fb94-143">If this is a prepayment, this step is optional.</span></span> <span data-ttu-id="5fb94-144">Płatność można utworzyć bez zaznaczania żadnej faktury.</span><span class="sxs-lookup"><span data-stu-id="5fb94-144">You can create the payment without selecting any invoice.</span></span>  
+22. <span data-ttu-id="5fb94-145">Oznacz wszystkie faktury, które zostaną opłacone.</span><span class="sxs-lookup"><span data-stu-id="5fb94-145">Mark any invoices that will be paid.</span></span>
+    * <span data-ttu-id="5fb94-146">Jeśli używasz opcji Rozlicz transakcje, aby wybrać faktury do zapłaty, kwota płatności będzie obliczana automatycznie na podstawie faktur oznaczanych do zapłaty i kwoty wprowadzonej w polu Kwota do rozliczenia.</span><span class="sxs-lookup"><span data-stu-id="5fb94-146">If you use the Settle transactions to select the invoices for payment, the payment amount will automatically be calculated based on what invoices you mark for payment, and what amount you enter in the Amount to settle.</span></span>  
+23. <span data-ttu-id="5fb94-147">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5fb94-147">Click OK.</span></span>
+24. <span data-ttu-id="5fb94-148">Jeśli chcesz usunąć płatność, zaznacz wiersz.</span><span class="sxs-lookup"><span data-stu-id="5fb94-148">If you want to delete a payment, mark the row.</span></span>
+25. <span data-ttu-id="5fb94-149">Kliknij przycisk Usuń.</span><span class="sxs-lookup"><span data-stu-id="5fb94-149">Click Delete.</span></span>
+    * <span data-ttu-id="5fb94-150">Usunięcie płatności spowoduje tylko usunięcie tej płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-150">Deleting a payment will only delete the payment.</span></span> <span data-ttu-id="5fb94-151">Wszelkie faktury oznaczone do zapłaty będą nadal dostępne do zapłaty za pomocą innej płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-151">Any invoices marked for payment will still be available to be paid by another payment.</span></span>  
+26. <span data-ttu-id="5fb94-152">Kliknij przycisk Tak.</span><span class="sxs-lookup"><span data-stu-id="5fb94-152">Click Yes.</span></span>
+27. <span data-ttu-id="5fb94-153">Wybierz opcję polecenie Generuj płatność, aby wydrukować czeki lub utworzyć plik płatności elektronicznej.</span><span class="sxs-lookup"><span data-stu-id="5fb94-153">Choose Generate payment to print Cheques or create the electronic payment file.</span></span>
+28. <span data-ttu-id="5fb94-154">Wybierz metodę płatności, którą chcesz wygenerować.</span><span class="sxs-lookup"><span data-stu-id="5fb94-154">Select the method of payment that you want to generate.</span></span>
+    * <span data-ttu-id="5fb94-155">Arkusz płatności może zawierać płatności zarówno czekami, jak i elektroniczne, ale można wygenerować tylko jeden typ płatności na raz.</span><span class="sxs-lookup"><span data-stu-id="5fb94-155">The payment journal can contains payments for both Cheques and electronic payments, but you can only generate one payment type at a time.</span></span>  
+29. <span data-ttu-id="5fb94-156">Wybierz konto bankowe, z którego chcesz wygenerować płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-156">Select the bank account from which to generate the payments.</span></span>
+30. <span data-ttu-id="5fb94-157">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5fb94-157">Click OK.</span></span>
+    * <span data-ttu-id="5fb94-158">Płatności będą generowane tylko wtedy, gdy pasują do metody płatności i wybranego konta bankowego.</span><span class="sxs-lookup"><span data-stu-id="5fb94-158">Payments will only be generated for payments that match the Method of payment and Bank account you selected.</span></span>  
+31. <span data-ttu-id="5fb94-159">Jeśli generujesz czeki, zaznacz opcję Dokument, aby zapewnić prawidłowe miejsce docelowe drukowania dla czeków.</span><span class="sxs-lookup"><span data-stu-id="5fb94-159">If you are generating Cheques, choose Document to ensure the correct print destination for the Cheques.</span></span>
+32. <span data-ttu-id="5fb94-160">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5fb94-160">Click OK.</span></span>
+33. <span data-ttu-id="5fb94-161">Kliknij przycisk OK, aby wygenerować płatności.</span><span class="sxs-lookup"><span data-stu-id="5fb94-161">Click OK to generate the payments.</span></span>
+34. <span data-ttu-id="5fb94-162">Kliknij przycisk Księguj, jeśli wszystkie płatności są zatwierdzone i wygenerowane.</span><span class="sxs-lookup"><span data-stu-id="5fb94-162">Click Post if all the payments are approved and generated.</span></span> 
 
 

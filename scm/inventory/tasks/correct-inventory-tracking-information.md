@@ -1,4 +1,4 @@
---- 
+---
 title: "Poprawianie informacji o śledzeniu zapasów"
 description: "Ta procedura poprowadzi Cię przez proces tworzenia i księgowania arkusza przeniesienia zapasów w celu skorygowania informacji o śledzeniu zapasów."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,50 +17,49 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: caf8c67d315666edfffe86e459bc7a4478697f07
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: e28d10646f01604098de8cedc30c8c7a7c89866b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="correct-inventory-tracking-information"></a>Poprawianie informacji o śledzeniu zapasów
+# <a name="correct-inventory-tracking-information"></a><span data-ttu-id="5c7be-103">Poprawianie informacji o śledzeniu zapasów</span><span class="sxs-lookup"><span data-stu-id="5c7be-103">Correct inventory tracking information</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ta procedura poprowadzi Cię przez proces tworzenia i księgowania arkusza przeniesienia zapasów w celu skorygowania informacji o śledzeniu zapasów. W tym przykładzie zaktualizujemy informacje o towarze wchodzącym skład partii, zmieniając niepoprawnie zarejestrowaną partię na inną partię. Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej USPI lub własnych danych. W przypadku korzystania z własnych danych musi istnieć towar, który może wchodzić w skład partii, ale nie jest kontrolowany przez lokalizację. Trzeba mieć również skonfigurowany arkusz zapasów dla przeniesień zapasów. Te zadania zazwyczaj wykonuje pracownik magazynu.
+<span data-ttu-id="5c7be-104">Ta procedura poprowadzi Cię przez proces tworzenia i księgowania arkusza przeniesienia zapasów w celu skorygowania informacji o śledzeniu zapasów.</span><span class="sxs-lookup"><span data-stu-id="5c7be-104">This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information.</span></span> <span data-ttu-id="5c7be-105">W tym przykładzie zaktualizujemy informacje o towarze wchodzącym skład partii, zmieniając niepoprawnie zarejestrowaną partię na inną partię.</span><span class="sxs-lookup"><span data-stu-id="5c7be-105">In this example, we’ll update the information of a batch controlled item by changing an incorrectly registered batch to another batch.</span></span> <span data-ttu-id="5c7be-106">Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej USPI lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="5c7be-106">You can walk through this procedure in demo data company USPI, or using your own data.</span></span> <span data-ttu-id="5c7be-107">W przypadku korzystania z własnych danych musi istnieć towar, który może wchodzić w skład partii, ale nie jest kontrolowany przez lokalizację.</span><span class="sxs-lookup"><span data-stu-id="5c7be-107">If you use your own data, you need to have an item that’s batch-enabled, and it must not be location-controlled.</span></span> <span data-ttu-id="5c7be-108">Trzeba mieć również skonfigurowany arkusz zapasów dla przeniesień zapasów.</span><span class="sxs-lookup"><span data-stu-id="5c7be-108">You also need to have an inventory journal name set up for inventory transfers.</span></span> <span data-ttu-id="5c7be-109">Te zadania zazwyczaj wykonuje pracownik magazynu.</span><span class="sxs-lookup"><span data-stu-id="5c7be-109">These tasks would normally be carried out by a warehouse employee.</span></span>
 
 
-## <a name="create-an-inventory-transfer-journal"></a>Tworzenie arkusza przeniesienia zapasów
-1. Przejdź do okna Przeniesienie.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa wprowadź lub wybierz wartość.
-4. Kliknij przycisk OK.
+## <a name="create-an-inventory-transfer-journal"></a><span data-ttu-id="5c7be-110">Tworzenie arkusza przeniesienia zapasów</span><span class="sxs-lookup"><span data-stu-id="5c7be-110">Create an inventory transfer journal</span></span>
+1. <span data-ttu-id="5c7be-111">Przejdź do okna Przeniesienie.</span><span class="sxs-lookup"><span data-stu-id="5c7be-111">Go to Transfer.</span></span>
+2. <span data-ttu-id="5c7be-112">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="5c7be-112">Click New.</span></span>
+3. <span data-ttu-id="5c7be-113">W polu Nazwa wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="5c7be-113">In the Name field, enter or select a value.</span></span>
+4. <span data-ttu-id="5c7be-114">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5c7be-114">Click OK.</span></span>
 
-## <a name="create-journal-lines"></a>Tworzenie wierszy arkusza
-1. Kliknij przycisk Nowy.
-2. W polu Numer towaru wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USPI, wybierz opcję M5003.  
-3. Wprowadź liczbę w polu Ilość.
-4. Kliknij kartę Wymiary magazynowe.
-5. W polu Numer partii wprowadź lub wybierz wartość.
-6. W polu Oddział wprowadź lub wybierz wartość.
-7. W polu Magazyn wprowadź lub wybierz wartość.
-8. W polu Numer partii wprowadź lub wybierz wartość.
+## <a name="create-journal-lines"></a><span data-ttu-id="5c7be-115">Tworzenie wierszy arkusza</span><span class="sxs-lookup"><span data-stu-id="5c7be-115">Create journal lines</span></span>
+1. <span data-ttu-id="5c7be-116">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="5c7be-116">Click New.</span></span>
+2. <span data-ttu-id="5c7be-117">W polu Numer towaru wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="5c7be-117">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="5c7be-118">Jeśli używasz firmy USPI, wybierz opcję M5003.</span><span class="sxs-lookup"><span data-stu-id="5c7be-118">If you are using USPI, select item M5003.</span></span>  
+3. <span data-ttu-id="5c7be-119">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="5c7be-119">In the Quantity field, enter a number.</span></span>
+4. <span data-ttu-id="5c7be-120">Kliknij kartę Wymiary magazynowe.</span><span class="sxs-lookup"><span data-stu-id="5c7be-120">Click the Inventory dimensions tab.</span></span>
+5. <span data-ttu-id="5c7be-121">W polu Numer partii wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="5c7be-121">In the Batch number field, enter or select a value.</span></span>
+6. <span data-ttu-id="5c7be-122">W polu Oddział wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="5c7be-122">In the Site field, enter or select a value.</span></span>
+7. <span data-ttu-id="5c7be-123">W polu Magazyn wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="5c7be-123">In the Warehouse field, enter or select a value.</span></span>
+8. <span data-ttu-id="5c7be-124">W polu Numer partii wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="5c7be-124">In the Batch number field, enter or select a value.</span></span>
 
-## <a name="post-the-journal"></a>Księguj arkusz
-1. Kliknij przycisk Księguj.
-2. Kliknij przycisk OK.
+## <a name="post-the-journal"></a><span data-ttu-id="5c7be-125">Księguj arkusz</span><span class="sxs-lookup"><span data-stu-id="5c7be-125">Post the journal</span></span>
+1. <span data-ttu-id="5c7be-126">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="5c7be-126">Click Post.</span></span>
+2. <span data-ttu-id="5c7be-127">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5c7be-127">Click OK.</span></span>
 
-## <a name="check-tracing-information"></a>Sprawdzanie informacji o śledzeniu
-1. Kliknij opcję Zapasy.
-2. Kliknij przycisk Śledzenie.
-3. Kliknij przycisk OK.
-    * Przy użyciu tych informacji śledzenia można prześledzić wstecz, z której partii dokonano korekty zapasów.  Wyświetlanie tych informacji umożliwia także strona Śledzenie towaru.  
-4. Zamknij stronę.
+## <a name="check-tracing-information"></a><span data-ttu-id="5c7be-128">Sprawdzanie informacji o śledzeniu</span><span class="sxs-lookup"><span data-stu-id="5c7be-128">Check tracing information</span></span>
+1. <span data-ttu-id="5c7be-129">Kliknij opcję Zapasy.</span><span class="sxs-lookup"><span data-stu-id="5c7be-129">Click Inventory.</span></span>
+2. <span data-ttu-id="5c7be-130">Kliknij przycisk Śledzenie.</span><span class="sxs-lookup"><span data-stu-id="5c7be-130">Click Trace.</span></span>
+3. <span data-ttu-id="5c7be-131">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5c7be-131">Click OK.</span></span>
+    * <span data-ttu-id="5c7be-132">Przy użyciu tych informacji śledzenia można prześledzić wstecz, z której partii dokonano korekty zapasów.</span><span class="sxs-lookup"><span data-stu-id="5c7be-132">Using this tracing information you can back trace which batch you corrected inventory from.</span></span>  <span data-ttu-id="5c7be-133">Wyświetlanie tych informacji umożliwia także strona Śledzenie towaru.</span><span class="sxs-lookup"><span data-stu-id="5c7be-133">You can also use the Item tracing page to see this information.</span></span>  
+4. <span data-ttu-id="5c7be-134">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="5c7be-134">Close the page.</span></span>
 
-## <a name="check-inventory-transactions"></a>Sprawdzanie transakcji magazynowych
-1. Kliknij opcję Zapasy.
-2. Kliknij opcję Transakcje.
-    * W tym miejscu widać transakcje, które zostały utworzone podczas księgowania arkusza.   
-
+## <a name="check-inventory-transactions"></a><span data-ttu-id="5c7be-135">Sprawdzanie transakcji magazynowych</span><span class="sxs-lookup"><span data-stu-id="5c7be-135">Check inventory transactions</span></span>
+1. <span data-ttu-id="5c7be-136">Kliknij opcję Zapasy.</span><span class="sxs-lookup"><span data-stu-id="5c7be-136">Click Inventory.</span></span>
+2. <span data-ttu-id="5c7be-137">Kliknij opcję Transakcje.</span><span class="sxs-lookup"><span data-stu-id="5c7be-137">Click Transactions.</span></span>
+    * <span data-ttu-id="5c7be-138">W tym miejscu widać transakcje, które zostały utworzone podczas księgowania arkusza.</span><span class="sxs-lookup"><span data-stu-id="5c7be-138">Here you can see the transactions that were created when you posted your journal.</span></span>   
 

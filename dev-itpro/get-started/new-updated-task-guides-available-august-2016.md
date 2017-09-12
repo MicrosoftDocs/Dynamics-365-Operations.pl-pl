@@ -15,97 +15,97 @@ ms.custom: 252754
 ms.assetid: 11a72e4a-7899-42be-b180-a0f4b86d88f1
 ms.search.region: global
 ms.author: josaw
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1645d3a749128a92a4a54ad309c99d69b221f5a2
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 5648d38050f843aea77a2b1c8f129f47733884b6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-august-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)
+# <a name="new-or-updated-task-guides-august-2016"></a><span data-ttu-id="39ec8-104">Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)</span><span class="sxs-lookup"><span data-stu-id="39ec8-104">New or updated task guides (August 2016)</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z sierpnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
+<span data-ttu-id="39ec8-105">Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z sierpnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX.</span><span class="sxs-lookup"><span data-stu-id="39ec8-105">This topic lists the new or updated Task guides that were released to the Microsoft (August 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX.</span></span> <span data-ttu-id="39ec8-106">Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.</span><span class="sxs-lookup"><span data-stu-id="39ec8-106">No new Getting Started Library was released.</span></span>
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z sierpnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX
+<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a><span data-ttu-id="39ec8-107">[]()Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z sierpnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX</span><span class="sxs-lookup"><span data-stu-id="39ec8-107">[]()Task guides in the (August 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX</span></span>
 ---------------------------------------------------------------------------------------------------
 
-Ujednolicona biblioteka APQC (z sierpnia 2016 r. — wszystkie języki) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji 2 platformy Microsoft Dynamics AX (z sierpnia 2016 r.), aktualizacji aplikacji Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. Aby uzyskać więcej informacji o tych wersjach, zobacz [Co nowego, jakie zmiany](whats-new-changed.md). W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md).
+<span data-ttu-id="39ec8-108">Ujednolicona biblioteka APQC (z sierpnia 2016 r. — wszystkie języki) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji 2 platformy Microsoft Dynamics AX (z sierpnia 2016 r.), aktualizacji aplikacji Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r.</span><span class="sxs-lookup"><span data-stu-id="39ec8-108">The (August 2016 - all languages) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX platform update 2 (August 2016), the Dynamics AX May 2016 application update, and the Microsoft Dynamics AX February 2016 release.</span></span> <span data-ttu-id="39ec8-109">Aby uzyskać więcej informacji o tych wersjach, zobacz [Co nowego, jakie zmiany](whats-new-changed.md).</span><span class="sxs-lookup"><span data-stu-id="39ec8-109">For more information about these releases, see [What’s new or changed](whats-new-changed.md).</span></span> <span data-ttu-id="39ec8-110">W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach.</span><span class="sxs-lookup"><span data-stu-id="39ec8-110">Localized versions of the Task guides are available in this library.</span></span> <span data-ttu-id="39ec8-111">Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md).</span><span class="sxs-lookup"><span data-stu-id="39ec8-111">For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md).</span></span>
 
-### <a name="data-access"></a>Dostęp do danych
+### <a name="data-access"></a><span data-ttu-id="39ec8-112">Dostęp do danych</span><span class="sxs-lookup"><span data-stu-id="39ec8-112">Data access</span></span>
 
-| Wiersz BPM           | Kraj/region |
+| <span data-ttu-id="39ec8-113">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="39ec8-113">BPM line</span></span>           | <span data-ttu-id="39ec8-114">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="39ec8-114">Country/region</span></span> |
 |--------------------|----------------|
-| Tworzenie zadania wsadowego | Globalna         |
+| <span data-ttu-id="39ec8-115">Tworzenie zadania wsadowego</span><span class="sxs-lookup"><span data-stu-id="39ec8-115">Create a batch job</span></span> | <span data-ttu-id="39ec8-116">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-116">Global</span></span>         |
 
-### <a name="inventory"></a>Zapasy
+### <a name="inventory"></a><span data-ttu-id="39ec8-117">Zapasy</span><span class="sxs-lookup"><span data-stu-id="39ec8-117">Inventory</span></span>
 
-| Wiersz BPM                                | Kraj/region |
+| <span data-ttu-id="39ec8-118">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="39ec8-118">BPM line</span></span>                                | <span data-ttu-id="39ec8-119">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="39ec8-119">Country/region</span></span> |
 |-----------------------------------------|----------------|
-| Sprawdzanie dostępności zapasów w magazynie         | Globalna         |
-| Konfigurowanie profilu przeglądu przyjęć pozycji | Globalna         |
+| <span data-ttu-id="39ec8-120">Sprawdzanie dostępności zapasów w magazynie</span><span class="sxs-lookup"><span data-stu-id="39ec8-120">Check the availability of stock</span></span>         | <span data-ttu-id="39ec8-121">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-121">Global</span></span>         |
+| <span data-ttu-id="39ec8-122">Konfigurowanie profilu przeglądu przyjęć pozycji</span><span class="sxs-lookup"><span data-stu-id="39ec8-122">Set up an item arrival overview profile</span></span> | <span data-ttu-id="39ec8-123">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-123">Global</span></span>         |
 
-### <a name="inventory-management"></a>Zarządzanie zapasami
+### <a name="inventory-management"></a><span data-ttu-id="39ec8-124">Zarządzanie zapasami</span><span class="sxs-lookup"><span data-stu-id="39ec8-124">Inventory management</span></span>
 
-| Wiersz BPM              | Kraj/region |
+| <span data-ttu-id="39ec8-125">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="39ec8-125">BPM line</span></span>              | <span data-ttu-id="39ec8-126">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="39ec8-126">Country/region</span></span> |
 |-----------------------|----------------|
-| Konfigurowanie zleceń kontroli jakości | Globalna         |
+| <span data-ttu-id="39ec8-127">Konfigurowanie zleceń kontroli jakości</span><span class="sxs-lookup"><span data-stu-id="39ec8-127">Set up quality orders</span></span> | <span data-ttu-id="39ec8-128">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-128">Global</span></span>         |
 
-### <a name="procurement"></a>Zaopatrzenie
+### <a name="procurement"></a><span data-ttu-id="39ec8-129">Zaopatrzenie</span><span class="sxs-lookup"><span data-stu-id="39ec8-129">Procurement</span></span>
 
-| Wiersz BPM                                          | Kraj/region |
+| <span data-ttu-id="39ec8-130">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="39ec8-130">BPM line</span></span>                                          | <span data-ttu-id="39ec8-131">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="39ec8-131">Country/region</span></span> |
 |---------------------------------------------------|----------------|
-| Tworzenie zamówienia zakupu dla dostawcy jednorazowego   | Globalna         |
-| Tworzenie zamówienia zakupu z harmonogramem dostaw  | Globalna         |
-| Tworzenie zamówienia zwrotu zakupu                    | Globalna         |
-| Tworzenie powtarzalnego zamówienia zakupu                    | Globalna         |
-| Rejestrowanie przyjęcia towarów w zamówieniu zakupu | Globalna         |
+| <span data-ttu-id="39ec8-132">Tworzenie zamówienia zakupu dla dostawcy jednorazowego</span><span class="sxs-lookup"><span data-stu-id="39ec8-132">Create a purchase order for a one-time supplier</span></span>   | <span data-ttu-id="39ec8-133">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-133">Global</span></span>         |
+| <span data-ttu-id="39ec8-134">Tworzenie zamówienia zakupu z harmonogramem dostaw</span><span class="sxs-lookup"><span data-stu-id="39ec8-134">Create a purchase order with a delivery schedule</span></span>  | <span data-ttu-id="39ec8-135">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-135">Global</span></span>         |
+| <span data-ttu-id="39ec8-136">Tworzenie zamówienia zwrotu zakupu</span><span class="sxs-lookup"><span data-stu-id="39ec8-136">Create a purchase return order</span></span>                    | <span data-ttu-id="39ec8-137">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-137">Global</span></span>         |
+| <span data-ttu-id="39ec8-138">Tworzenie powtarzalnego zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="39ec8-138">Create a repeat purchase order</span></span>                    | <span data-ttu-id="39ec8-139">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-139">Global</span></span>         |
+| <span data-ttu-id="39ec8-140">Rejestrowanie przyjęcia towarów w zamówieniu zakupu</span><span class="sxs-lookup"><span data-stu-id="39ec8-140">Record the receipt of goods on the purchase order</span></span> | <span data-ttu-id="39ec8-141">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-141">Global</span></span>         |
 
-### <a name="resource-and-activities"></a>Zasoby i działania
+### <a name="resource-and-activities"></a><span data-ttu-id="39ec8-142">Zasoby i działania</span><span class="sxs-lookup"><span data-stu-id="39ec8-142">Resource and activities</span></span>
 
-| Wiersz BPM                                                | Kraj/region |
+| <span data-ttu-id="39ec8-143">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="39ec8-143">BPM line</span></span>                                                | <span data-ttu-id="39ec8-144">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="39ec8-144">Country/region</span></span> |
 |---------------------------------------------------------|----------------|
-| Aktywacja wersji przepływu produkcji                      | Globalna         |
-| Tworzenie reguły Kanban dla wielu działań            | Globalna         |
-| Tworzenie reguły Kanban przy użyciu zdarzenia wiersza karty Kanban          | Globalna         |
-| Tworzenie reguły Kanban przy użyciu zdarzenia minimalnych zapasów        | Globalna         |
-| Używanie arkusza zapasu bezpieczeństwa do aktualizowania minimalnego zapotrzebowania | Globalna         |
+| <span data-ttu-id="39ec8-145">Aktywacja wersji przepływu produkcji</span><span class="sxs-lookup"><span data-stu-id="39ec8-145">Activate a production flow version</span></span>                      | <span data-ttu-id="39ec8-146">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-146">Global</span></span>         |
+| <span data-ttu-id="39ec8-147">Tworzenie reguły Kanban dla wielu działań</span><span class="sxs-lookup"><span data-stu-id="39ec8-147">Create a kanban rule for multiple activities</span></span>            | <span data-ttu-id="39ec8-148">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-148">Global</span></span>         |
+| <span data-ttu-id="39ec8-149">Tworzenie reguły Kanban przy użyciu zdarzenia wiersza karty Kanban</span><span class="sxs-lookup"><span data-stu-id="39ec8-149">Create a kanban rule using a kanban line event</span></span>          | <span data-ttu-id="39ec8-150">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-150">Global</span></span>         |
+| <span data-ttu-id="39ec8-151">Tworzenie reguły Kanban przy użyciu zdarzenia minimalnych zapasów</span><span class="sxs-lookup"><span data-stu-id="39ec8-151">Create a kanban rule using a minimum stock event</span></span>        | <span data-ttu-id="39ec8-152">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-152">Global</span></span>         |
+| <span data-ttu-id="39ec8-153">Używanie arkusza zapasu bezpieczeństwa do aktualizowania minimalnego zapotrzebowania</span><span class="sxs-lookup"><span data-stu-id="39ec8-153">Use the safety stock journal to update minimum coverage</span></span> | <span data-ttu-id="39ec8-154">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-154">Global</span></span>         |
 
-### <a name="supplier-relationship-management"></a>Zarządzanie relacjami z dostawcami
+### <a name="supplier-relationship-management"></a><span data-ttu-id="39ec8-155">Zarządzanie relacjami z dostawcami</span><span class="sxs-lookup"><span data-stu-id="39ec8-155">Supplier relationship management</span></span>
 
-| Wiersz BPM                                                           | Kraj/region |
+| <span data-ttu-id="39ec8-156">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="39ec8-156">BPM line</span></span>                                                           | <span data-ttu-id="39ec8-157">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="39ec8-157">Country/region</span></span> |
 |--------------------------------------------------------------------|----------------|
-| Zatwierdzanie dostawców dla konkretnych kategorii zaopatrzenia                | Globalna         |
-| Tworzenie katalogu zaopatrzenia                                       | Globalna         |
-| Tworzenie zapotrzebowania wykorzystującego ZO                              | Globalna         |
-| Tworzenie metody punktowania dla ZO                                   | Globalna         |
-| Tworzenie konta bankowego dostawcy                                       | Globalna         |
-| Tworzenie zasad zakupów                                         | Globalna         |
-| Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO            | Globalna         |
-| Tworzenie uprawnień do zamawiania produktów w imieniu innej osoby | Globalna         |
-| Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia               | Globalna         |
+| <span data-ttu-id="39ec8-158">Zatwierdzanie dostawców dla konkretnych kategorii zaopatrzenia</span><span class="sxs-lookup"><span data-stu-id="39ec8-158">Approve vendors for specific procurement categories</span></span>                | <span data-ttu-id="39ec8-159">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-159">Global</span></span>         |
+| <span data-ttu-id="39ec8-160">Tworzenie katalogu zaopatrzenia</span><span class="sxs-lookup"><span data-stu-id="39ec8-160">Create a procurement catalog</span></span>                                       | <span data-ttu-id="39ec8-161">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-161">Global</span></span>         |
+| <span data-ttu-id="39ec8-162">Tworzenie zapotrzebowania wykorzystującego ZO</span><span class="sxs-lookup"><span data-stu-id="39ec8-162">Create a requisition that uses an RFQ</span></span>                              | <span data-ttu-id="39ec8-163">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-163">Global</span></span>         |
+| <span data-ttu-id="39ec8-164">Tworzenie metody punktowania dla ZO</span><span class="sxs-lookup"><span data-stu-id="39ec8-164">Create a scoring method for RFQs</span></span>                                   | <span data-ttu-id="39ec8-165">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-165">Global</span></span>         |
+| <span data-ttu-id="39ec8-166">Tworzenie konta bankowego dostawcy</span><span class="sxs-lookup"><span data-stu-id="39ec8-166">Create a vendor bank account</span></span>                                       | <span data-ttu-id="39ec8-167">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-167">Global</span></span>         |
+| <span data-ttu-id="39ec8-168">Tworzenie zasad zakupów</span><span class="sxs-lookup"><span data-stu-id="39ec8-168">Create purchasing policies</span></span>                                         | <span data-ttu-id="39ec8-169">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-169">Global</span></span>         |
+| <span data-ttu-id="39ec8-170">Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO</span><span class="sxs-lookup"><span data-stu-id="39ec8-170">Create solicitation types and scoring criteria for RFQs</span></span>            | <span data-ttu-id="39ec8-171">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-171">Global</span></span>         |
+| <span data-ttu-id="39ec8-172">Tworzenie uprawnień do zamawiania produktów w imieniu innej osoby</span><span class="sxs-lookup"><span data-stu-id="39ec8-172">Set up permissions for ordering products on behalf of someone else</span></span> | <span data-ttu-id="39ec8-173">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-173">Global</span></span>         |
+| <span data-ttu-id="39ec8-174">Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia</span><span class="sxs-lookup"><span data-stu-id="39ec8-174">Set up policies for procurement category hierarchies</span></span>               | <span data-ttu-id="39ec8-175">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-175">Global</span></span>         |
 
-### <a name="warehouse-and-transportation"></a>Magazyn i transport
+### <a name="warehouse-and-transportation"></a><span data-ttu-id="39ec8-176">Magazyn i transport</span><span class="sxs-lookup"><span data-stu-id="39ec8-176">Warehouse and transportation</span></span>
 
-| Wiersz BPM                                                                    | Kraj/region |
+| <span data-ttu-id="39ec8-177">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="39ec8-177">BPM line</span></span>                                                                    | <span data-ttu-id="39ec8-178">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="39ec8-178">Country/region</span></span> |
 |-----------------------------------------------------------------------------|----------------|
-| Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy typu Zamówienie zakupu | Globalna         |
+| <span data-ttu-id="39ec8-179">Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy typu Zamówienie zakupu</span><span class="sxs-lookup"><span data-stu-id="39ec8-179">Set up a mobile device menu item for completing work of type Purchase order</span></span> | <span data-ttu-id="39ec8-180">Globalna</span><span class="sxs-lookup"><span data-stu-id="39ec8-180">Global</span></span>         |
 
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="see-also"></a><span data-ttu-id="39ec8-181">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="39ec8-181">See also</span></span>
 --------
 
-[Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)
+[<span data-ttu-id="39ec8-182">Nowe przewodniki po zadaniach (luty 2016 r.)</span><span class="sxs-lookup"><span data-stu-id="39ec8-182">New Task guides (February 2016)</span></span>](new-task-guides-available-february-2016.md)
 
-[Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)](new-updated-task-guides-available-may-2016.md)
+[<span data-ttu-id="39ec8-183">Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)</span><span class="sxs-lookup"><span data-stu-id="39ec8-183">New or updated Task guides (May 2016)</span></span>](new-updated-task-guides-available-may-2016.md)
 
-[Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)](new-task-guides-november-2016.md)
+[<span data-ttu-id="39ec8-184">Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)</span><span class="sxs-lookup"><span data-stu-id="39ec8-184">New or updated Task guides (November 2016)</span></span>](new-task-guides-november-2016.md)
 
 
 

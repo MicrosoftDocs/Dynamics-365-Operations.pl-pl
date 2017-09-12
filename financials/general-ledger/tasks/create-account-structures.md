@@ -16,69 +16,69 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: f831288866af0fbe731c40a7a25c871d4313f8b5
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 210bf36f0e989ce0e6ceda046f02d1091592a3c1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-account-structures"></a>Tworzenie struktur kont
+# <a name="create-account-structures"></a><span data-ttu-id="51e7f-103">Tworzenie struktur kont</span><span class="sxs-lookup"><span data-stu-id="51e7f-103">Create account structures</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ten przewodnik po zadaniach prowadzi przez proces tworzenia struktury konta. W krokach użyto danych firmy demonstracyjnej USMF.
+<span data-ttu-id="51e7f-104">Ten przewodnik po zadaniach prowadzi przez proces tworzenia struktury konta.</span><span class="sxs-lookup"><span data-stu-id="51e7f-104">This task guide steps through creating an account structure.</span></span> <span data-ttu-id="51e7f-105">W krokach użyto danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="51e7f-105">The steps use demo data company USMF.</span></span>
 
-1. Wybierz kolejno opcje Księga główna > Plan kont > Struktury > Skonfiguruj strukturę konta.
-2. Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.
-3. W polu Struktura konta wpisz nazwę opisującą przeznaczenie struktury konta.
-4. W polu Opis wprowadź opis określający przeznaczenie struktury konta.
-5. Kliknij Utwórz.
-6. Kliknij przycisk Dodaj segment.
-7. Na liście Wymiary wybierz wymiar, który chcesz dodać do struktury konta.
-8. Kliknij przycisk Dodaj segment.
-9. Kliknij przycisk Dodaj segment.
-10. Na liście Wymiary wybierz wymiar, który chcesz dodać do struktury konta.
-11. Kliknij przycisk Dodaj segment.
-12. Kliknij przycisk Dodaj segment.
-13. Na liście Wymiary wybierz wymiar, który chcesz dodać do struktury konta.
-14. Kliknij przycisk Dodaj segment.
-15. W siatce wybierz segment w celu edytowania dozwolonych wartości.
-    * Na przykład kliknij pole Konto główne.  
-16. W polu Operator wybierz opcję, taką jak „zawiera się między” lub „zawiera”.
-17. W polu Wartość wpisz wartość.
-    * Na przykład 600000.  
-18. W polu „za pomocą” wpisz wartość.
-    * Na przykład 699999.  
-19. Kliknij polecenie Zastosuj.
-20. W siatce wybierz segment w celu edytowania dozwolonych wartości.
-    * Na przykład Dział.  
-21. W polu Operator wybierz opcję, taką jak „zawiera się między” lub „zawiera”.
-22. W polu Wartość wpisz wartość.
-    * Na przykład 022.  
-23. W polu „za pomocą” wpisz wartość.
-    * Na przykład 031.  
-24. Kliknij opcję Dodaj nowe kryteria.
-25. W polu Operator wybierz opcję, taką jak „zawiera się między” lub „zawiera”.
-26. W polu Wartość wpisz wartość.
-    * Na przykład 033.  
-27. W polu „za pomocą” wpisz wartość.
-    * Na przykład 034.  
-28. Kliknij polecenie Zastosuj.
-29. W siatce wybierz segment w celu edytowania dozwolonych wartości.
-    * Na przykład MPK.  
-30. W polu CostCenter wpisz wartość.
-    * Na przykład 007..021.  
-31. Kliknij przycisk Dodaj.
-32. W polu MainAccount wpisz wartość.
-    * Na przykład 600000..699999.  
-33. W siatce wybierz segment w celu edytowania dozwolonych wartości.
-    * Na przykład Dział.  
-34. W polu Dział wpisz wartość.
-    * Na przykład 032.  
-35. W polu CostCenter wpisz wartość.
-    * Na przykład 086.  
-36. Kliknij przycisk Sprawdź poprawność.
-37. Kliknij Aktywacja.
-38. Kliknij Aktywacja.
+1. <span data-ttu-id="51e7f-106">Wybierz kolejno opcje Księga główna > Plan kont > Struktury > Skonfiguruj strukturę konta.</span><span class="sxs-lookup"><span data-stu-id="51e7f-106">Go to General ledger > Chart of accounts > Structures > Configure account structures.</span></span>
+2. <span data-ttu-id="51e7f-107">Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="51e7f-107">Click New to open the drop dialog.</span></span>
+3. <span data-ttu-id="51e7f-108">W polu Struktura konta wpisz nazwę opisującą przeznaczenie struktury konta.</span><span class="sxs-lookup"><span data-stu-id="51e7f-108">In the Account structure field, type a name to describe the purpose of the account structure.</span></span>
+4. <span data-ttu-id="51e7f-109">W polu Opis wprowadź opis określający przeznaczenie struktury konta.</span><span class="sxs-lookup"><span data-stu-id="51e7f-109">In the Description field, type a description to specify the purpose of the account structure.</span></span>
+5. <span data-ttu-id="51e7f-110">Kliknij Utwórz.</span><span class="sxs-lookup"><span data-stu-id="51e7f-110">Click Create.</span></span>
+6. <span data-ttu-id="51e7f-111">Kliknij przycisk Dodaj segment.</span><span class="sxs-lookup"><span data-stu-id="51e7f-111">Click Add segment.</span></span>
+7. <span data-ttu-id="51e7f-112">Na liście Wymiary wybierz wymiar, który chcesz dodać do struktury konta.</span><span class="sxs-lookup"><span data-stu-id="51e7f-112">In the Dimensions list, select the dimension to add to the account structure.</span></span>
+8. <span data-ttu-id="51e7f-113">Kliknij przycisk Dodaj segment.</span><span class="sxs-lookup"><span data-stu-id="51e7f-113">Click Add segment.</span></span>
+9. <span data-ttu-id="51e7f-114">Kliknij przycisk Dodaj segment.</span><span class="sxs-lookup"><span data-stu-id="51e7f-114">Click Add segment.</span></span>
+10. <span data-ttu-id="51e7f-115">Na liście Wymiary wybierz wymiar, który chcesz dodać do struktury konta.</span><span class="sxs-lookup"><span data-stu-id="51e7f-115">In the Dimensions list, select the dimension to add to the account structure.</span></span>
+11. <span data-ttu-id="51e7f-116">Kliknij przycisk Dodaj segment.</span><span class="sxs-lookup"><span data-stu-id="51e7f-116">Click Add segment.</span></span>
+12. <span data-ttu-id="51e7f-117">Kliknij przycisk Dodaj segment.</span><span class="sxs-lookup"><span data-stu-id="51e7f-117">Click Add segment.</span></span>
+13. <span data-ttu-id="51e7f-118">Na liście Wymiary wybierz wymiar, który chcesz dodać do struktury konta.</span><span class="sxs-lookup"><span data-stu-id="51e7f-118">In the Dimensions list, select the dimension to add to the account structure.</span></span>
+14. <span data-ttu-id="51e7f-119">Kliknij przycisk Dodaj segment.</span><span class="sxs-lookup"><span data-stu-id="51e7f-119">Click Add segment.</span></span>
+15. <span data-ttu-id="51e7f-120">W siatce wybierz segment w celu edytowania dozwolonych wartości.</span><span class="sxs-lookup"><span data-stu-id="51e7f-120">In the grid, select the segment to edit the allowed values.</span></span>
+    * <span data-ttu-id="51e7f-121">Na przykład kliknij pole Konto główne.</span><span class="sxs-lookup"><span data-stu-id="51e7f-121">For example, click in Main Account.</span></span>  
+16. <span data-ttu-id="51e7f-122">W polu Operator wybierz opcję, taką jak „zawiera się między” lub „zawiera”.</span><span class="sxs-lookup"><span data-stu-id="51e7f-122">In the Operator field, select an option, such as is between and includes.</span></span>
+17. <span data-ttu-id="51e7f-123">W polu Wartość wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="51e7f-123">In the Value field, type a value.</span></span>
+    * <span data-ttu-id="51e7f-124">Na przykład 600000.</span><span class="sxs-lookup"><span data-stu-id="51e7f-124">For example, 600000.</span></span>  
+18. <span data-ttu-id="51e7f-125">W polu „za pomocą” wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="51e7f-125">In the through field, type a value.</span></span>
+    * <span data-ttu-id="51e7f-126">Na przykład 699999.</span><span class="sxs-lookup"><span data-stu-id="51e7f-126">For example, 699999.</span></span>  
+19. <span data-ttu-id="51e7f-127">Kliknij polecenie Zastosuj.</span><span class="sxs-lookup"><span data-stu-id="51e7f-127">Click Apply.</span></span>
+20. <span data-ttu-id="51e7f-128">W siatce wybierz segment w celu edytowania dozwolonych wartości.</span><span class="sxs-lookup"><span data-stu-id="51e7f-128">In the grid, select the segment to edit the allowed values.</span></span>
+    * <span data-ttu-id="51e7f-129">Na przykład Dział.</span><span class="sxs-lookup"><span data-stu-id="51e7f-129">For example, Department.</span></span>  
+21. <span data-ttu-id="51e7f-130">W polu Operator wybierz opcję, taką jak „zawiera się między” lub „zawiera”.</span><span class="sxs-lookup"><span data-stu-id="51e7f-130">In the Operator field, select an option, such as is between and includes.</span></span>
+22. <span data-ttu-id="51e7f-131">W polu Wartość wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="51e7f-131">In the Value field, type a value.</span></span>
+    * <span data-ttu-id="51e7f-132">Na przykład 022.</span><span class="sxs-lookup"><span data-stu-id="51e7f-132">For example, 022.</span></span>  
+23. <span data-ttu-id="51e7f-133">W polu „za pomocą” wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="51e7f-133">In the through field, type a value.</span></span>
+    * <span data-ttu-id="51e7f-134">Na przykład 031.</span><span class="sxs-lookup"><span data-stu-id="51e7f-134">For example, 031.</span></span>  
+24. <span data-ttu-id="51e7f-135">Kliknij opcję Dodaj nowe kryteria.</span><span class="sxs-lookup"><span data-stu-id="51e7f-135">Click Add new criteria.</span></span>
+25. <span data-ttu-id="51e7f-136">W polu Operator wybierz opcję, taką jak „zawiera się między” lub „zawiera”.</span><span class="sxs-lookup"><span data-stu-id="51e7f-136">In the Operator field, select an option, such as is between and includes.</span></span>
+26. <span data-ttu-id="51e7f-137">W polu Wartość wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="51e7f-137">In the Value field, type a value.</span></span>
+    * <span data-ttu-id="51e7f-138">Na przykład 033.</span><span class="sxs-lookup"><span data-stu-id="51e7f-138">For example, 033.</span></span>  
+27. <span data-ttu-id="51e7f-139">W polu „za pomocą” wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="51e7f-139">In the through field, type a value.</span></span>
+    * <span data-ttu-id="51e7f-140">Na przykład 034.</span><span class="sxs-lookup"><span data-stu-id="51e7f-140">For example, 034.</span></span>  
+28. <span data-ttu-id="51e7f-141">Kliknij polecenie Zastosuj.</span><span class="sxs-lookup"><span data-stu-id="51e7f-141">Click Apply.</span></span>
+29. <span data-ttu-id="51e7f-142">W siatce wybierz segment w celu edytowania dozwolonych wartości.</span><span class="sxs-lookup"><span data-stu-id="51e7f-142">In the grid, select the segment to edit the allowed values.</span></span>
+    * <span data-ttu-id="51e7f-143">Na przykład MPK.</span><span class="sxs-lookup"><span data-stu-id="51e7f-143">For example, Cost Center.</span></span>  
+30. <span data-ttu-id="51e7f-144">W polu CostCenter wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="51e7f-144">In the CostCenter field, type a value.</span></span>
+    * <span data-ttu-id="51e7f-145">Na przykład 007..021.</span><span class="sxs-lookup"><span data-stu-id="51e7f-145">For example, 007..021.</span></span>  
+31. <span data-ttu-id="51e7f-146">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="51e7f-146">Click Add.</span></span>
+32. <span data-ttu-id="51e7f-147">W polu MainAccount wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="51e7f-147">In the MainAccount field, type a value.</span></span>
+    * <span data-ttu-id="51e7f-148">Na przykład 600000..699999.</span><span class="sxs-lookup"><span data-stu-id="51e7f-148">For example, 600000..699999</span></span>  
+33. <span data-ttu-id="51e7f-149">W siatce wybierz segment w celu edytowania dozwolonych wartości.</span><span class="sxs-lookup"><span data-stu-id="51e7f-149">In the grid, select the segment to edit the allowed values.</span></span>
+    * <span data-ttu-id="51e7f-150">Na przykład Dział.</span><span class="sxs-lookup"><span data-stu-id="51e7f-150">For example, Department.</span></span>  
+34. <span data-ttu-id="51e7f-151">W polu Dział wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="51e7f-151">In the Department field, type a value.</span></span>
+    * <span data-ttu-id="51e7f-152">Na przykład 032.</span><span class="sxs-lookup"><span data-stu-id="51e7f-152">For example, 032.</span></span>  
+35. <span data-ttu-id="51e7f-153">W polu CostCenter wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="51e7f-153">In the CostCenter field, type a value.</span></span>
+    * <span data-ttu-id="51e7f-154">Na przykład 086.</span><span class="sxs-lookup"><span data-stu-id="51e7f-154">For example, 086.</span></span>  
+36. <span data-ttu-id="51e7f-155">Kliknij przycisk Sprawdź poprawność.</span><span class="sxs-lookup"><span data-stu-id="51e7f-155">Click Validate.</span></span>
+37. <span data-ttu-id="51e7f-156">Kliknij Aktywacja.</span><span class="sxs-lookup"><span data-stu-id="51e7f-156">Click Activate.</span></span>
+38. <span data-ttu-id="51e7f-157">Kliknij Aktywacja.</span><span class="sxs-lookup"><span data-stu-id="51e7f-157">Click Activate.</span></span>
 
 

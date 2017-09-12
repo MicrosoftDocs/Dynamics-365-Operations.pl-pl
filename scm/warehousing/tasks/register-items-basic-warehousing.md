@@ -17,44 +17,44 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 1c367ebcd57fc2dd534587aa96349e48756c1bb6
+ms.sourcegitcommit: a5fa86bace459d694ab0a2ec289e11b0e4420932
+ms.openlocfilehash: 184f38347e2525f3efef9b0d55003a94a75380d4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-arrival-journal"></a>Rejestrowanie elementów dla podstawowego magazynowania za pomocą arkusza przyjęć towarów
+# <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-arrival-journal"></a><span data-ttu-id="c442b-103">Rejestrowanie elementów dla podstawowego magazynowania za pomocą arkusza przyjęć towarów</span><span class="sxs-lookup"><span data-stu-id="c442b-103">Register items for a basic warehousing enabled item using an item arrival journal</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób rejestrowania towarów za pomocą arkusza przyjęcia towaru, gdy jest używana funkcja „podstawowego magazynowania” w module Zarządzanie zapasami. Zazwyczaj wykonuje to pracownik przyjmujący. Tę procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF z przykładowymi wartościami, które są wyświetlane.  Jeśli nie używasz firmy USMF, przed rozpoczęciem wykonywania zadań z przewodnika musisz mieć potwierdzone zamówienie zakupu z otwartym wierszem zamówienia zakupu. Towar w wierszu musi być magazynowy, nie może używać wariantów produktu i nie może mieć wymiarów śledzenia. Towar musi być także skojarzony z grupą wymiarów magazynowania, gdzie oddział i magazyn są aktywne.
+<span data-ttu-id="c442b-104">W tej procedurze pokazano sposób rejestrowania towarów za pomocą arkusza przyjęcia towaru, gdy jest używana funkcja „podstawowego magazynowania” w module Zarządzanie zapasami.</span><span class="sxs-lookup"><span data-stu-id="c442b-104">This procedure shows you how to register items using the item arrival journal when you are using “basic warehousing” in the Inventory management module.</span></span> <span data-ttu-id="c442b-105">Zazwyczaj wykonuje to pracownik przyjmujący.</span><span class="sxs-lookup"><span data-stu-id="c442b-105">This would usually be done by a receiving clerk.</span></span> <span data-ttu-id="c442b-106">Tę procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF z przykładowymi wartościami, które są wyświetlane.</span><span class="sxs-lookup"><span data-stu-id="c442b-106">You can run this procedure in demo data company USMF with the example values that are shown.</span></span>  <span data-ttu-id="c442b-107">Jeśli nie używasz firmy USMF, przed rozpoczęciem wykonywania zadań z przewodnika musisz mieć potwierdzone zamówienie zakupu z otwartym wierszem zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="c442b-107">If you are not using USMF, you need to have a confirmed purchase order with an open purchase order line before you start this guide.</span></span> <span data-ttu-id="c442b-108">Towar w wierszu musi być magazynowy, nie może używać wariantów produktu i nie może mieć wymiarów śledzenia.</span><span class="sxs-lookup"><span data-stu-id="c442b-108">The item on the line must be stocked, and it must not use product variants, and must not have tracking dimensions.</span></span> <span data-ttu-id="c442b-109">Towar musi być także skojarzony z grupą wymiarów magazynowania, gdzie oddział i magazyn są aktywne.</span><span class="sxs-lookup"><span data-stu-id="c442b-109">And the item needs to be associated with a storage dimension group, where site and warehouse are active.</span></span>
 
 
-## <a name="create-item-arrival-journal-header"></a>Tworzenie nagłówka arkusza przyjęcia towaru
-1. Wybierz kolejno opcje Zarządzanie zapasami > Wpisy w arkuszu > Przyjęcie towaru > Przyjęcie towaru.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa wpisz wartość.
-    * Jeśli używasz firmy USMF, możesz wpisać WHS. Jeśli korzystasz z innych danych, to arkusz, którego nazwę wybierzesz, musi mieć następujące właściwości: w polu Sprawdzanie lokalizacji pobrania ustawiona wartość Nie oraz w polu Zarządzanie kwarantanną ustawiona wartość Nie.  
-4. W polu Dokument dostawy wpisz wartość.
-    * Jest to identyfikator dokumentu dostawy wystawionego przez dostawcę. Dodaj unikatowy numer.  
-5. W polu Numer wybierz zamówienie zakupu.
-6. Kliknij przycisk OK.
+## <a name="create-item-arrival-journal-header"></a><span data-ttu-id="c442b-110">Tworzenie nagłówka arkusza przyjęcia towaru</span><span class="sxs-lookup"><span data-stu-id="c442b-110">Create item arrival journal header</span></span>
+1. <span data-ttu-id="c442b-111">Wybierz kolejno opcje Zarządzanie zapasami > Wpisy w arkuszu > Przyjęcie towaru > Przyjęcie towaru.</span><span class="sxs-lookup"><span data-stu-id="c442b-111">Go to Inventory management > Journal entries > Item arrival > Item arrival.</span></span>
+2. <span data-ttu-id="c442b-112">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c442b-112">Click New.</span></span>
+3. <span data-ttu-id="c442b-113">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c442b-113">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="c442b-114">Jeśli używasz firmy USMF, możesz wpisać WHS.</span><span class="sxs-lookup"><span data-stu-id="c442b-114">If you are using USMF, you can type WHS.</span></span> <span data-ttu-id="c442b-115">Jeśli korzystasz z innych danych, to arkusz, którego nazwę wybierzesz, musi mieć następujące właściwości: w polu Sprawdzanie lokalizacji pobrania ustawiona wartość Nie oraz w polu Zarządzanie kwarantanną ustawiona wartość Nie.</span><span class="sxs-lookup"><span data-stu-id="c442b-115">If you’re using other data, the journal whose name you choose has to have the following properties: cheque picking location must be set to No, and Quarantine management must be set to No.</span></span>  
+4. <span data-ttu-id="c442b-116">W polu Dokument dostawy wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c442b-116">In the Packing slip field, type a value.</span></span>
+    * <span data-ttu-id="c442b-117">Jest to identyfikator dokumentu dostawy wystawionego przez dostawcę.</span><span class="sxs-lookup"><span data-stu-id="c442b-117">This is the packing slip ID from the packing slip issued by the vendor.</span></span> <span data-ttu-id="c442b-118">Dodaj unikatowy numer.</span><span class="sxs-lookup"><span data-stu-id="c442b-118">Add a unique number.</span></span>  
+5. <span data-ttu-id="c442b-119">W polu Numer wybierz zamówienie zakupu.</span><span class="sxs-lookup"><span data-stu-id="c442b-119">In the Number field, In the Number field, select the purchase order..</span></span>
+6. <span data-ttu-id="c442b-120">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c442b-120">Click OK.</span></span>
 
-## <a name="add-lines-to-item-arrival-journal"></a>Dodawanie wierszy do arkusza przyjęcia towaru
-1. Kliknij przycisk Funkcje.
-2. Kliknij opcję Utwórz wiersze.
-    * Wiersze można wprowadzić ręcznie w tym arkuszu lub mogą być tworzone automatycznie. Tutaj pokażemy, jak będą tworzone automatycznie.  
-3. Zaznacz pole wyboru Inicjuj ilość lub usuń jego zaznaczenie.
-    * Spowoduje to zainicjowanie ilości w wierszach arkusza przy użyciu ilości niezarejestrowanej z wiersza zamówienia zakupu.  
-4. Kliknij przycisk OK.
+## <a name="add-lines-to-item-arrival-journal"></a><span data-ttu-id="c442b-121">Dodawanie wierszy do arkusza przyjęcia towaru</span><span class="sxs-lookup"><span data-stu-id="c442b-121">Add lines to item arrival journal</span></span>
+1. <span data-ttu-id="c442b-122">Kliknij przycisk Funkcje.</span><span class="sxs-lookup"><span data-stu-id="c442b-122">Click Functions.</span></span>
+2. <span data-ttu-id="c442b-123">Kliknij opcję Utwórz wiersze.</span><span class="sxs-lookup"><span data-stu-id="c442b-123">Click Create lines.</span></span>
+    * <span data-ttu-id="c442b-124">Wiersze można wprowadzić ręcznie w tym arkuszu lub mogą być tworzone automatycznie.</span><span class="sxs-lookup"><span data-stu-id="c442b-124">The lines can be entered manually into this journal or created automatically.</span></span> <span data-ttu-id="c442b-125">Tutaj pokażemy, jak będą tworzone automatycznie.</span><span class="sxs-lookup"><span data-stu-id="c442b-125">This will show you how to create this automatically.</span></span>  
+3. <span data-ttu-id="c442b-126">Zaznacz pole wyboru Inicjuj ilość lub usuń jego zaznaczenie.</span><span class="sxs-lookup"><span data-stu-id="c442b-126">Check or uncheck the Initialize quantity checkbox.</span></span>
+    * <span data-ttu-id="c442b-127">Spowoduje to zainicjowanie ilości w wierszach arkusza przy użyciu ilości niezarejestrowanej z wiersza zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="c442b-127">This will initialize the quantity on the journal lines with the quantity not registered from the purchase order line.</span></span>  
+4. <span data-ttu-id="c442b-128">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c442b-128">Click OK.</span></span>
 
-## <a name="post-the-journal"></a>Księguj arkusz
-1. Kliknij przycisk Księguj.
-2. Kliknij przycisk OK.
+## <a name="post-the-journal"></a><span data-ttu-id="c442b-129">Księguj arkusz</span><span class="sxs-lookup"><span data-stu-id="c442b-129">Post the journal</span></span>
+1. <span data-ttu-id="c442b-130">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="c442b-130">Click Post.</span></span>
+2. <span data-ttu-id="c442b-131">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c442b-131">Click OK.</span></span>
 
-## <a name="generate-the-product-receipt"></a>Generowanie dokumentu przyjęcia produktów
-1. Kliknij przycisk Funkcje.
-2. Kliknij opcję Dokument przyjęcia produktów.
-3. Kliknij przycisk OK.
+## <a name="generate-the-product-receipt"></a><span data-ttu-id="c442b-132">Generowanie dokumentu przyjęcia produktów</span><span class="sxs-lookup"><span data-stu-id="c442b-132">Generate the product receipt</span></span>
+1. <span data-ttu-id="c442b-133">Kliknij przycisk Funkcje.</span><span class="sxs-lookup"><span data-stu-id="c442b-133">Click Functions.</span></span>
+2. <span data-ttu-id="c442b-134">Kliknij opcję Dokument przyjęcia produktów.</span><span class="sxs-lookup"><span data-stu-id="c442b-134">Click Product receipt.</span></span>
+3. <span data-ttu-id="c442b-135">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c442b-135">Click OK.</span></span>
 
 

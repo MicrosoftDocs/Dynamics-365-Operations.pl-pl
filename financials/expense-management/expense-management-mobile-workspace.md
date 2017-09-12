@@ -25,222 +25,222 @@ ms.lasthandoff: 08/10/2017
 
 ---
 
-# <a name="expense-management-mobile-workspace"></a>Mobilny obszar roboczy Zarządzanie wydatkami
+# <a name="expense-management-mobile-workspace"></a><span data-ttu-id="898e7-105">Mobilny obszar roboczy Zarządzanie wydatkami</span><span class="sxs-lookup"><span data-stu-id="898e7-105">Expense management mobile workspace</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Ten temat zawiera informacje o komórkowym obszarze roboczym **Zarządzanie wydatkami**. Ten obszar roboczy pozwala użytkownikom rejestrować i przekazywać paragony, dzięki czemu można je później dołączać do raportów z wydatków. Użytkownicy szybko utworzyć wiersz wydatku za pomocą dołączonego paragonu oraz tworzyć raporty z wydatków i nimi zarządzać. Osoby zatwierdzające mogą w mobilnym obszarze roboczym **Zarządzanie wydatkami** wyświetlać raporty z wydatków, które im przypisano, oraz zatwierdzać lub odrzucać te raporty.
+<span data-ttu-id="898e7-106">Ten temat zawiera informacje o komórkowym obszarze roboczym **Zarządzanie wydatkami**.</span><span class="sxs-lookup"><span data-stu-id="898e7-106">This topic provides information about the **Expense management** mobile workspace.</span></span> <span data-ttu-id="898e7-107">Ten obszar roboczy pozwala użytkownikom rejestrować i przekazywać paragony, dzięki czemu można je później dołączać do raportów z wydatków.</span><span class="sxs-lookup"><span data-stu-id="898e7-107">This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later.</span></span> <span data-ttu-id="898e7-108">Użytkownicy szybko utworzyć wiersz wydatku za pomocą dołączonego paragonu oraz tworzyć raporty z wydatków i nimi zarządzać.</span><span class="sxs-lookup"><span data-stu-id="898e7-108">Users can also quickly create an expense line by using an attached receipt, and create and manage their expense reports.</span></span> <span data-ttu-id="898e7-109">Osoby zatwierdzające mogą w mobilnym obszarze roboczym **Zarządzanie wydatkami** wyświetlać raporty z wydatków, które im przypisano, oraz zatwierdzać lub odrzucać te raporty.</span><span class="sxs-lookup"><span data-stu-id="898e7-109">Additionally, approvers can use the **Expense management** mobile workspace to view expense reports that are assigned to them, and either approve or reject those expense reports.</span></span>
 
 
-Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji komórkowej Microsoft Dynamics 365 for Unified Operations.
+<span data-ttu-id="898e7-110">Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji komórkowej Microsoft Dynamics 365 for Unified Operations.</span><span class="sxs-lookup"><span data-stu-id="898e7-110">This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.</span></span>
 
 
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a><span data-ttu-id="898e7-111">Przegląd</span><span class="sxs-lookup"><span data-stu-id="898e7-111">Overview</span></span>
 
-Wiele organizacji wymaga, aby kopie paragonów były dołączane do raportów o wydatkach z podróży lub wydatkach biznesowych, które pracownicy składają w celu uzyskania zwrotu pieniędzy. Mobilny obszar roboczy **Zarządzanie wydatkami** pozwala użytkownikom szybko tworzyć nowe wiersze wydatków na dowolnych urządzeniach komórkowych za pomocą dołączonej fotografii paragonu. Alternatywnie użytkownicy mogą zarejestrować zdjęcie paragonu i później dołączyć je do raportu z wydatków. Pracownicy mogą również na swoich urządzeniach komórkowych tworzyć wydatki z raportów i nimi zarządzać, a następnie przesyłać je do zatwierdzenia i zwrotu.
+<span data-ttu-id="898e7-112">Wiele organizacji wymaga, aby kopie paragonów były dołączane do raportów o wydatkach z podróży lub wydatkach biznesowych, które pracownicy składają w celu uzyskania zwrotu pieniędzy.</span><span class="sxs-lookup"><span data-stu-id="898e7-112">Many organizations require that a copy of a receipt be attached to a travel-related or business-related expense report that an employee submits for reimbursement.</span></span> <span data-ttu-id="898e7-113">Mobilny obszar roboczy **Zarządzanie wydatkami** pozwala użytkownikom szybko tworzyć nowe wiersze wydatków na dowolnych urządzeniach komórkowych za pomocą dołączonej fotografii paragonu.</span><span class="sxs-lookup"><span data-stu-id="898e7-113">The **Expense management** mobile workspace lets users quickly create new expense lines on the mobile device of their choice by using an attached photo of a receipt.</span></span> <span data-ttu-id="898e7-114">Alternatywnie użytkownicy mogą zarejestrować zdjęcie paragonu i później dołączyć je do raportu z wydatków.</span><span class="sxs-lookup"><span data-stu-id="898e7-114">Alternatively, users can capture a photo of a receipt and then attach it to an expense report later.</span></span> <span data-ttu-id="898e7-115">Pracownicy mogą również na swoich urządzeniach komórkowych tworzyć wydatki z raportów i nimi zarządzać, a następnie przesyłać je do zatwierdzenia i zwrotu.</span><span class="sxs-lookup"><span data-stu-id="898e7-115">Employees can also create and manage their expense reports, and then submit them for approval and reimbursement by using their mobile device.</span></span>
 
 
-W szczególności mobilny obszar roboczy **Zarządzanie wydatkami** pozwala użytkownikom wykonywać następujące zadania:
+<span data-ttu-id="898e7-116">W szczególności mobilny obszar roboczy **Zarządzanie wydatkami** pozwala użytkownikom wykonywać następujące zadania:</span><span class="sxs-lookup"><span data-stu-id="898e7-116">Specifically, the **Expense management** mobile workspace lets users perform these tasks:</span></span>
 
-- Wykonanie zdjęcia paragonu i przekazanie go do programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Następnie można załączyć to zdjęcie do raportu z wydatków.
-- Przekazanie pliku jako zarejestrowanego paragonu. Następnie można załączyć ten plik do raportu z wydatków.
-- Utworzenie nowego wiersza wydatku za pomocą dołączonego paragonu. Można później dodać pozycję wiersza do raportu z wydatków i przesłać raport do zatwierdzenia w celu otrzymania zwrotu pieniędzy.
+- <span data-ttu-id="898e7-117">Wykonanie zdjęcia paragonu i przekazanie go do programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="898e7-117">Take a photo of a receipt, and upload it to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="898e7-118">Następnie można załączyć to zdjęcie do raportu z wydatków.</span><span class="sxs-lookup"><span data-stu-id="898e7-118">You can then attach that photo to an expense report later.</span></span>
+- <span data-ttu-id="898e7-119">Przekazanie pliku jako zarejestrowanego paragonu.</span><span class="sxs-lookup"><span data-stu-id="898e7-119">Upload a file as a captured receipt.</span></span> <span data-ttu-id="898e7-120">Następnie można załączyć ten plik do raportu z wydatków.</span><span class="sxs-lookup"><span data-stu-id="898e7-120">You can then attach that file to an expense report later.</span></span>
+- <span data-ttu-id="898e7-121">Utworzenie nowego wiersza wydatku za pomocą dołączonego paragonu.</span><span class="sxs-lookup"><span data-stu-id="898e7-121">Create a new expense line by using an attached receipt.</span></span> <span data-ttu-id="898e7-122">Można później dodać pozycję wiersza do raportu z wydatków i przesłać raport do zatwierdzenia w celu otrzymania zwrotu pieniędzy.</span><span class="sxs-lookup"><span data-stu-id="898e7-122">You can then add the line item to an expense report later, and submit it for approval and reimbursement.</span></span>
 
-Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r., masz dostęp również do następujących funkcji:
+<span data-ttu-id="898e7-123">Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r., masz dostęp również do następujących funkcji:</span><span class="sxs-lookup"><span data-stu-id="898e7-123">If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can also use these features:</span></span>
 
-- Tworzenie nowego raportu z wydatków.
-- Dołączanie transakcji kartami kredytowymi i innych utworzonych wcześniej wydatków do raportu z wydatków.
-- Tworzenie nowych wydatków do raportu z wydatków.
-- Dołączanie paragonu do dowolnego wydatku w raporcie z wydatków poprzez zrobienie zdjęcia paragonu lub przekazanie pliku jako zrzutu ekranu z paragonem.
-- W zależności od firmowych zasad dotyczących wydatków w firmie — dodawanie listy gości do wydatku.
-- W zależności od firmowych zasad dotyczących wydatków — wyszczególnianie pozycji wydatków.
-- Przesyłanie raportu z wydatków do zatwierdzenia i zwrotu pieniędzy.
-- Zatwierdzanie lub odrzucanie raportów z wydatków, dla których użytkownik jest przypisany jako osoba zatwierdzająca.
+- <span data-ttu-id="898e7-124">Tworzenie nowego raportu z wydatków.</span><span class="sxs-lookup"><span data-stu-id="898e7-124">Create a new expense report.</span></span>
+- <span data-ttu-id="898e7-125">Dołączanie transakcji kartami kredytowymi i innych utworzonych wcześniej wydatków do raportu z wydatków.</span><span class="sxs-lookup"><span data-stu-id="898e7-125">Attach credit card transactions and other previously created expenses to an expense report.</span></span>
+- <span data-ttu-id="898e7-126">Tworzenie nowych wydatków do raportu z wydatków.</span><span class="sxs-lookup"><span data-stu-id="898e7-126">Create new expenses for an expense report.</span></span>
+- <span data-ttu-id="898e7-127">Dołączanie paragonu do dowolnego wydatku w raporcie z wydatków poprzez zrobienie zdjęcia paragonu lub przekazanie pliku jako zrzutu ekranu z paragonem.</span><span class="sxs-lookup"><span data-stu-id="898e7-127">Attach a receipt to any expense for an expense report, either by taking a photo of the receipt or by uploading a file as a captured receipt.</span></span>
+- <span data-ttu-id="898e7-128">W zależności od firmowych zasad dotyczących wydatków w firmie — dodawanie listy gości do wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-128">Depending on the company's expense policy, add the list of guests to an expense.</span></span>
+- <span data-ttu-id="898e7-129">W zależności od firmowych zasad dotyczących wydatków — wyszczególnianie pozycji wydatków.</span><span class="sxs-lookup"><span data-stu-id="898e7-129">Depending on the company's expense policy, itemize expenses.</span></span>
+- <span data-ttu-id="898e7-130">Przesyłanie raportu z wydatków do zatwierdzenia i zwrotu pieniędzy.</span><span class="sxs-lookup"><span data-stu-id="898e7-130">Submit an expense report for approval and reimbursement.</span></span>
+- <span data-ttu-id="898e7-131">Zatwierdzanie lub odrzucanie raportów z wydatków, dla których użytkownik jest przypisany jako osoba zatwierdzająca.</span><span class="sxs-lookup"><span data-stu-id="898e7-131">Approve or reject expense reports that you're an assigned approver for.</span></span>
 
-## <a name="prerequisites"></a>Wymagania wstępne
-Wymagania wstępne różnią się w zależności od wersji programu Microsoft Dynamics 365 wdrożonej w organizacji.
+## <a name="prerequisites"></a><span data-ttu-id="898e7-132">Wymagania wstępne</span><span class="sxs-lookup"><span data-stu-id="898e7-132">Prerequisites</span></span>
+<span data-ttu-id="898e7-133">Wymagania wstępne różnią się w zależności od wersji programu Microsoft Dynamics 365 wdrożonej w organizacji.</span><span class="sxs-lookup"><span data-stu-id="898e7-133">The prerequisites vary, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.</span></span>
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r. 
-Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r., administrator systemu musi opublikować mobilny obszar roboczy **Zarządzanie wydatkami**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a><span data-ttu-id="898e7-134">Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r.</span><span class="sxs-lookup"><span data-stu-id="898e7-134">Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</span></span> 
+<span data-ttu-id="898e7-135">Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją z lipca 2017 r., administrator systemu musi opublikować mobilny obszar roboczy **Zarządzanie wydatkami**.</span><span class="sxs-lookup"><span data-stu-id="898e7-135">If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update has been deployed for your organization, the system administrator must publish the **Expense management** mobile workspace.</span></span> <span data-ttu-id="898e7-136">Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).</span><span class="sxs-lookup"><span data-stu-id="898e7-136">For instructions, see [Publish a mobile workspace](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).</span></span>
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą
-Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą, administrator systemu musi wykonać następujące zadania wstępne. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a><span data-ttu-id="898e7-137">Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą</span><span class="sxs-lookup"><span data-stu-id="898e7-137">Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later</span></span>
+<span data-ttu-id="898e7-138">Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą, administrator systemu musi wykonać następujące zadania wstępne.</span><span class="sxs-lookup"><span data-stu-id="898e7-138">If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites.</span></span> 
 
 <table>
 <thead>
 <tr class="header">
-<th>Wymaganie wstępne</th>
-<th>Rola</th>
-<th>opis</th>
+<th><span data-ttu-id="898e7-139">Wymaganie wstępne</span><span class="sxs-lookup"><span data-stu-id="898e7-139">Prerequisite</span></span></th>
+<th><span data-ttu-id="898e7-140">Rola</span><span class="sxs-lookup"><span data-stu-id="898e7-140">Role</span></span></th>
+<th><span data-ttu-id="898e7-141">opis</span><span class="sxs-lookup"><span data-stu-id="898e7-141">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Zainstalowanie poprawki KB 4019015.</td>
-<td>Administrator systemu</td>
-<td>KB 4019015 jest aktualizacją platformy języka X++ lub poprawką metadanych, która zawiera mobilny obszar roboczy <strong>Zarządzanie wydatkami</strong>. W celu zainstalowania poprawki KB 4019015 administrator systemu musi wykonać następującą procedurę:
+<td><span data-ttu-id="898e7-142">Zainstalowanie poprawki KB 4019015.</span><span class="sxs-lookup"><span data-stu-id="898e7-142">Implement KB 4019015.</span></span></td>
+<td><span data-ttu-id="898e7-143">Administrator systemu</span><span class="sxs-lookup"><span data-stu-id="898e7-143">System administrator</span></span></td>
+<td><span data-ttu-id="898e7-144">KB 4019015 jest aktualizacją platformy języka X++ lub poprawką metadanych, która zawiera mobilny obszar roboczy <strong>Zarządzanie wydatkami</strong>.</span><span class="sxs-lookup"><span data-stu-id="898e7-144">KB 4019015 is an X++ update or metadata hotfix that contains the <strong>Expense management</strong> mobile workspace.</span></span> <span data-ttu-id="898e7-145">W celu zainstalowania poprawki KB 4019015 administrator systemu musi wykonać następującą procedurę:</span><span class="sxs-lookup"><span data-stu-id="898e7-145">To implement KB 4019015, your system administrator must follow these steps.</span></span>
 <ol>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Pobierz poprawkę metadanych z usługi Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Zainstaluj poprawkę metadanych</a>.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Utwórz wdrażalny pakiet</a> zawierający modele <strong>ApplicationSuite</strong> i <strong>ExpenseMobile</strong>, a następnie przekaż ten wdrażalny pakiet do usługi LCS.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Zastosuj wdrażalny pakiet</a></li>
+<li><span data-ttu-id="898e7-146"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Pobierz poprawkę metadanych z usługi Microsoft Dynamics Lifecycle Services (LCS)</a>.</span><span class="sxs-lookup"><span data-stu-id="898e7-146"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Microsoft Dynamics Lifecycle Services (LCS)</a>.</span></span></li>
+<li><span data-ttu-id="898e7-147"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Zainstaluj poprawkę metadanych</a>.</span><span class="sxs-lookup"><span data-stu-id="898e7-147"><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</span></span></li>
+<li><span data-ttu-id="898e7-148"><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Utwórz wdrażalny pakiet</a> zawierający modele <strong>ApplicationSuite</strong> i <strong>ExpenseMobile</strong>, a następnie przekaż ten wdrażalny pakiet do usługi LCS.</span><span class="sxs-lookup"><span data-stu-id="898e7-148"><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>ApplicationSuite</strong> and <strong>ExpenseMobile</strong> models, and then upload the deployable package to LCS.</span></span></li>
+<li><span data-ttu-id="898e7-149"><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Zastosuj wdrażalny pakiet</a></span><span class="sxs-lookup"><span data-stu-id="898e7-149"><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Opublikowanie mobilnego obszaru roboczego <strong>Zarządzanie wydatkami</strong>.</td>
-<td>Administrator systemu</td>
-<td>Zobacz <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publikowanie mobilnego obszaru roboczego</a>.</td>
+<td><span data-ttu-id="898e7-150">Opublikowanie mobilnego obszaru roboczego <strong>Zarządzanie wydatkami</strong>.</span><span class="sxs-lookup"><span data-stu-id="898e7-150">Publish the <strong>Expense management</strong> mobile workspace.</span></span></td>
+<td><span data-ttu-id="898e7-151">Administrator systemu</span><span class="sxs-lookup"><span data-stu-id="898e7-151">System administrator</span></span></td>
+<td><span data-ttu-id="898e7-152">Zobacz <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publikowanie mobilnego obszaru roboczego</a>.</span><span class="sxs-lookup"><span data-stu-id="898e7-152">See <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Pobieranie i instalowanie aplikacji komórkowej Dynamics 365 for Operations
-Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
+## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a><span data-ttu-id="898e7-153">Pobieranie i instalowanie aplikacji komórkowej Dynamics 365 for Operations</span><span class="sxs-lookup"><span data-stu-id="898e7-153">Download and install the Dynamics 365 for Operations mobile app</span></span>
+<span data-ttu-id="898e7-154">Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:</span><span class="sxs-lookup"><span data-stu-id="898e7-154">Download and install the Dynamics 365 for Unified Operations mobile app:</span></span>
 
-- [Telefony z systemem Android](https://go.microsoft.com/fwlink/?linkid=850662)
-- [Telefony iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
+- [<span data-ttu-id="898e7-155">Telefony z systemem Android</span><span class="sxs-lookup"><span data-stu-id="898e7-155">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
+- [<span data-ttu-id="898e7-156">Telefony iPhone</span><span class="sxs-lookup"><span data-stu-id="898e7-156">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## <a name="sign-in-to-the-mobile-app"></a>Logowanie do aplikacji mobilnej
-1. Uruchom aplikację na urządzeniu komórkowym.
-2. Wprowadź adres URL usługi Dynamics 365.
-4. Podczas pierwszego logowania pojawi się monit o podanie nazwy użytkownika i hasła. Wprowadź swoje poświadczenia.
-5. Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy. Należy zauważyć, że jeśli administrator systemu później opublikuje nowy obszar roboczy, trzeba odświeżyć listę komórkowych obszarów roboczych.
+## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="898e7-157">Logowanie do aplikacji mobilnej</span><span class="sxs-lookup"><span data-stu-id="898e7-157">Sign in to the mobile app</span></span>
+1. <span data-ttu-id="898e7-158">Uruchom aplikację na urządzeniu komórkowym.</span><span class="sxs-lookup"><span data-stu-id="898e7-158">Start the app on your mobile device.</span></span>
+2. <span data-ttu-id="898e7-159">Wprowadź adres URL usługi Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="898e7-159">Enter your Dynamics 365 URL.</span></span>
+4. <span data-ttu-id="898e7-160">Podczas pierwszego logowania pojawi się monit o podanie nazwy użytkownika i hasła.</span><span class="sxs-lookup"><span data-stu-id="898e7-160">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="898e7-161">Wprowadź swoje poświadczenia.</span><span class="sxs-lookup"><span data-stu-id="898e7-161">Enter your credentials.</span></span>
+5. <span data-ttu-id="898e7-162">Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy.</span><span class="sxs-lookup"><span data-stu-id="898e7-162">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="898e7-163">Należy zauważyć, że jeśli administrator systemu później opublikuje nowy obszar roboczy, trzeba odświeżyć listę komórkowych obszarów roboczych.</span><span class="sxs-lookup"><span data-stu-id="898e7-163">Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.</span></span>
 
 
-[![Ściąganie w celu odświeżenia](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+<span data-ttu-id="898e7-164">[![Ściąganie w celu odświeżenia](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="898e7-164">[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span></span>
 
-## <a name="capture-a-receipt-by-using-the-expense-management-mobile-workspace"></a>Rejestrowanie paragonu za pomocą komórkowego obszaru roboczego Zarządzanie wydatkami
+## <a name="capture-a-receipt-by-using-the-expense-management-mobile-workspace"></a><span data-ttu-id="898e7-165">Rejestrowanie paragonu za pomocą komórkowego obszaru roboczego Zarządzanie wydatkami</span><span class="sxs-lookup"><span data-stu-id="898e7-165">Capture a receipt by using the Expense management mobile workspace</span></span>
 
-1. Na urządzeniu przenośnym otwórz obszar roboczy **Zarządzanie wydatkami**.
-2. Wybierz opcję **Zarejestruj paragon**.
-3. Wybierz opcję **Zrób zdjęcie** lub **Wybierz obraz**.
-4. Wykonaj jeden z następujących kroków:
+1. <span data-ttu-id="898e7-166">Na urządzeniu przenośnym otwórz obszar roboczy **Zarządzanie wydatkami**.</span><span class="sxs-lookup"><span data-stu-id="898e7-166">On your mobile device, open the **Expense management** workspace.</span></span>
+2. <span data-ttu-id="898e7-167">Wybierz opcję **Zarejestruj paragon**.</span><span class="sxs-lookup"><span data-stu-id="898e7-167">Select **Capture receipt**.</span></span>
+3. <span data-ttu-id="898e7-168">Wybierz opcję **Zrób zdjęcie** lub **Wybierz obraz**.</span><span class="sxs-lookup"><span data-stu-id="898e7-168">Select **Take photo** or **Choose image**.</span></span>
+4. <span data-ttu-id="898e7-169">Wykonaj jeden z następujących kroków:</span><span class="sxs-lookup"><span data-stu-id="898e7-169">Follow one of these steps:</span></span>
 
-    - Jeśli wybrano opcję **Zrób zdjęcie**, wykonaj następujące kroki:
+    - <span data-ttu-id="898e7-170">Jeśli wybrano opcję **Zrób zdjęcie**, wykonaj następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="898e7-170">If you selected **Take photo**, follow these steps:</span></span>
 
-        1. Uruchamiasz aparat w swoim urządzeniu komórkowym, aby można było sfotografować paragon. Po zakończeniu robienia zdjęcia kliknij przycisk **OK**, aby zaakceptować zdjęcie.
-        2. Opcjonalnie: Nadaj fotografii nazwę i ewentualnie wprowadź notatki.
+        1. <span data-ttu-id="898e7-171">Uruchamiasz aparat w swoim urządzeniu komórkowym, aby można było sfotografować paragon.</span><span class="sxs-lookup"><span data-stu-id="898e7-171">You're taken to the camera on your mobile device, so that you can take a photo of the receipt.</span></span> <span data-ttu-id="898e7-172">Po zakończeniu robienia zdjęcia kliknij przycisk **OK**, aby zaakceptować zdjęcie.</span><span class="sxs-lookup"><span data-stu-id="898e7-172">When you've finished taking a photo, select **OK** to accept the photo.</span></span>
+        2. <span data-ttu-id="898e7-173">Opcjonalnie: Nadaj fotografii nazwę i ewentualnie wprowadź notatki.</span><span class="sxs-lookup"><span data-stu-id="898e7-173">Optional: Enter a name for the photo, and enter any notes.</span></span>
 
-    - W przypadku wybrania opcji **Wybierz obraz** wykonaj następujące kroki:
+    - <span data-ttu-id="898e7-174">W przypadku wybrania opcji **Wybierz obraz** wykonaj następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="898e7-174">If you selected **Choose image**, follow these steps:</span></span>
 
-        1. Wybierz zdjęcie z listy.
-        2. Opcjonalnie: Nadaj zdjęciu nazwę i ewentualnie wprowadź notatki.
+        1. <span data-ttu-id="898e7-175">Wybierz zdjęcie z listy.</span><span class="sxs-lookup"><span data-stu-id="898e7-175">Select an image in the list.</span></span>
+        2. <span data-ttu-id="898e7-176">Opcjonalnie: Nadaj zdjęciu nazwę i ewentualnie wprowadź notatki.</span><span class="sxs-lookup"><span data-stu-id="898e7-176">Optional: Enter a name for the image, and enter any notes.</span></span>
 
-5. Wybierz opcję **Gotowe**.
+5. <span data-ttu-id="898e7-177">Wybierz opcję **Gotowe**.</span><span class="sxs-lookup"><span data-stu-id="898e7-177">Select **Done**.</span></span>
 
-## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a>Szybkie wprowadzanie wydatków za pomocą komórkowego obszaru roboczego Zarządzanie wydatkami
-1. Na urządzeniu przenośnym otwórz obszar roboczy **Zarządzanie wydatkami**.
-2. Wybierz opcję **Szybkie wprowadzanie wydatku**.
-3. Wybierz kategorię wydatku. Zobaczysz listę kategorii wydatków załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jeśli Twojej kategorii nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według kategorii wydatków lub przejdź do wyszukiwania według typu wydatku.
-4. Wprowadź datę transakcji wydatkowej.
-5. Opcjonalnie: Wprowadź handlowca dla wydatku.
-6. Wprowadź kwotę wydatku.
-7. Wybierz walutę wydatku. Zobaczysz listę kodów walut załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 400 walut, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jeśli Twojej waluty nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Wyszukaj według waluty lub przełącz się do wyszukiwania według nazwy.
-8. Wybierz opcję **Zrób zdjęcie** lub **Wybierz obraz**.
-9. Wykonaj jeden z następujących kroków:
+## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a><span data-ttu-id="898e7-178">Szybkie wprowadzanie wydatków za pomocą komórkowego obszaru roboczego Zarządzanie wydatkami</span><span class="sxs-lookup"><span data-stu-id="898e7-178">Quickly enter expenses by using the Expense management mobile workspace</span></span>
+1. <span data-ttu-id="898e7-179">Na urządzeniu przenośnym otwórz obszar roboczy **Zarządzanie wydatkami**.</span><span class="sxs-lookup"><span data-stu-id="898e7-179">On your mobile device, open the **Expense management** workspace.</span></span>
+2. <span data-ttu-id="898e7-180">Wybierz opcję **Szybkie wprowadzanie wydatku**.</span><span class="sxs-lookup"><span data-stu-id="898e7-180">Select **Quick expense entry**.</span></span>
+3. <span data-ttu-id="898e7-181">Wybierz kategorię wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-181">Select the category for the expense.</span></span> <span data-ttu-id="898e7-182">Zobaczysz listę kategorii wydatków załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline.</span><span class="sxs-lookup"><span data-stu-id="898e7-182">You see a list of expense categories that are loaded into your app for offline use.</span></span> <span data-ttu-id="898e7-183">Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę.</span><span class="sxs-lookup"><span data-stu-id="898e7-183">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="898e7-184">Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span><span class="sxs-lookup"><span data-stu-id="898e7-184">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span> <span data-ttu-id="898e7-185">Jeśli Twojej kategorii nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online.</span><span class="sxs-lookup"><span data-stu-id="898e7-185">If your category isn't in the list, select **Search** to do an online search.</span></span> <span data-ttu-id="898e7-186">Poszukaj według kategorii wydatków lub przejdź do wyszukiwania według typu wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-186">Search by expense category, or switch to search by expense type.</span></span>
+4. <span data-ttu-id="898e7-187">Wprowadź datę transakcji wydatkowej.</span><span class="sxs-lookup"><span data-stu-id="898e7-187">Enter the transaction date of the expense.</span></span>
+5. <span data-ttu-id="898e7-188">Opcjonalnie: Wprowadź handlowca dla wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-188">Optional: Enter the merchant for the expense.</span></span>
+6. <span data-ttu-id="898e7-189">Wprowadź kwotę wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-189">Enter the amount of the expense.</span></span>
+7. <span data-ttu-id="898e7-190">Wybierz walutę wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-190">Select the currency of the expense.</span></span> <span data-ttu-id="898e7-191">Zobaczysz listę kodów walut załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline.</span><span class="sxs-lookup"><span data-stu-id="898e7-191">You see a list of the currency codes that are loaded into your app for offline use.</span></span> <span data-ttu-id="898e7-192">Domyślnie jest ładowanych 400 walut, ale programista może zmienić tę liczbę.</span><span class="sxs-lookup"><span data-stu-id="898e7-192">By default, 400 currencies are loaded, but a developer can change this number.</span></span> <span data-ttu-id="898e7-193">Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span><span class="sxs-lookup"><span data-stu-id="898e7-193">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span> <span data-ttu-id="898e7-194">Jeśli Twojej waluty nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online.</span><span class="sxs-lookup"><span data-stu-id="898e7-194">If your currency isn't in the list, select **Search** to do an online search.</span></span> <span data-ttu-id="898e7-195">Wyszukaj według waluty lub przełącz się do wyszukiwania według nazwy.</span><span class="sxs-lookup"><span data-stu-id="898e7-195">Search by currency, or switch to search by name.</span></span>
+8. <span data-ttu-id="898e7-196">Wybierz opcję **Zrób zdjęcie** lub **Wybierz obraz**.</span><span class="sxs-lookup"><span data-stu-id="898e7-196">Select **Take photo** or **Choose image**.</span></span>
+9. <span data-ttu-id="898e7-197">Wykonaj jeden z następujących kroków:</span><span class="sxs-lookup"><span data-stu-id="898e7-197">Follow one of these steps:</span></span>
 
-    - Jeśli wybrano opcję **Zrób zdjęcie**, zostanie uruchomiony aparat w swoim urządzeniu komórkowym, aby można było sfotografować paragon. Po zakończeniu robienia zdjęcia kliknij przycisk **OK**, aby zaakceptować zdjęcie.
-    - W przypadku wybrania opcji **Wybierz obraz** wybierz obraz z listy.
+    - <span data-ttu-id="898e7-198">Jeśli wybrano opcję **Zrób zdjęcie**, zostanie uruchomiony aparat w swoim urządzeniu komórkowym, aby można było sfotografować paragon.</span><span class="sxs-lookup"><span data-stu-id="898e7-198">If you selected **Take photo**, you're taken to the camera on your mobile device, so that you can take a photo of the receipt.</span></span> <span data-ttu-id="898e7-199">Po zakończeniu robienia zdjęcia kliknij przycisk **OK**, aby zaakceptować zdjęcie.</span><span class="sxs-lookup"><span data-stu-id="898e7-199">When you've finished taking a photo, select **OK** to accept the photo.</span></span>
+    - <span data-ttu-id="898e7-200">W przypadku wybrania opcji **Wybierz obraz** wybierz obraz z listy.</span><span class="sxs-lookup"><span data-stu-id="898e7-200">If you selected **Choose image**, select an image in the list.</span></span>
 
-10. Wybierz opcję **Gotowe**.
+10. <span data-ttu-id="898e7-201">Wybierz opcję **Gotowe**.</span><span class="sxs-lookup"><span data-stu-id="898e7-201">Select **Done**.</span></span>
 
-## <a name="approve-an-expense-report-by-using-the-expense-management-mobile-workspace-if-you-use-the-july-2017-update"></a>Zatwierdzanie raportu z wydatków za pomocą komórkowego obszaru roboczego Zarządzanie wydatkami (jeśli używasz aktualizacji z lipca 2017 r.)
-1. Na urządzeniu przenośnym otwórz obszar roboczy **Zarządzanie wydatkami**.
-2. Obszar **Zatwierdzenia wydatków** pokazuje liczbę raportów z wydatków przypisanych Ci do zatwierdzenia. Ta liczba jest aktualizowana co około 30 minut. Wybierz opcję **Zatwierdzenia wydatków**.
+## <a name="approve-an-expense-report-by-using-the-expense-management-mobile-workspace-if-you-use-the-july-2017-update"></a><span data-ttu-id="898e7-202">Zatwierdzanie raportu z wydatków za pomocą komórkowego obszaru roboczego Zarządzanie wydatkami (jeśli używasz aktualizacji z lipca 2017 r.)</span><span class="sxs-lookup"><span data-stu-id="898e7-202">Approve an expense report by using the Expense management mobile workspace (if you use the July 2017 update)</span></span>
+1. <span data-ttu-id="898e7-203">Na urządzeniu przenośnym otwórz obszar roboczy **Zarządzanie wydatkami**.</span><span class="sxs-lookup"><span data-stu-id="898e7-203">On your mobile device, open the **Expense management** workspace.</span></span>
+2. <span data-ttu-id="898e7-204">Obszar **Zatwierdzenia wydatków** pokazuje liczbę raportów z wydatków przypisanych Ci do zatwierdzenia.</span><span class="sxs-lookup"><span data-stu-id="898e7-204">**Expense approvals** shows the number of expense reports that are assigned to you for approval.</span></span> <span data-ttu-id="898e7-205">Ta liczba jest aktualizowana co około 30 minut.</span><span class="sxs-lookup"><span data-stu-id="898e7-205">The number is updated approximately every 30 minutes.</span></span> <span data-ttu-id="898e7-206">Wybierz opcję **Zatwierdzenia wydatków**.</span><span class="sxs-lookup"><span data-stu-id="898e7-206">Select **Expense approvals**.</span></span>
 
-    Zostanie wyświetlona liczba raportów z wydatków przypisanych Ci do zatwierdzenia.
+    <span data-ttu-id="898e7-207">Zostanie wyświetlona liczba raportów z wydatków przypisanych Ci do zatwierdzenia.</span><span class="sxs-lookup"><span data-stu-id="898e7-207">The list of expense reports that are assigned to you for approval is shown.</span></span>
     
-3. Wybierz raport wydatków, aby wyświetlić szczegóły zawartych w nim wydatków.
-4. Wybierz wydatek, aby wyświetlić jego szczegóły. Informacje wyświetlane dla wydatku obejmują wszystkie szczegóły paragonu, gości i pozycji wydatkowych.
-5. Z powrotem na stronie **Raport o wydatkach** wybierz opcję zatwierdzenia lub odrzucenia raportu z wydatków.
-6. Wprowadź wszelkie komentarze dotyczące czynności zatwierdzania.
-7. Wybierz opcję **Gotowe**.
+3. <span data-ttu-id="898e7-208">Wybierz raport wydatków, aby wyświetlić szczegóły zawartych w nim wydatków.</span><span class="sxs-lookup"><span data-stu-id="898e7-208">Select an expense report to view the expense details for it.</span></span>
+4. <span data-ttu-id="898e7-209">Wybierz wydatek, aby wyświetlić jego szczegóły.</span><span class="sxs-lookup"><span data-stu-id="898e7-209">Select an expense to view the details for it.</span></span> <span data-ttu-id="898e7-210">Informacje wyświetlane dla wydatku obejmują wszystkie szczegóły paragonu, gości i pozycji wydatkowych.</span><span class="sxs-lookup"><span data-stu-id="898e7-210">The information that is shown for an expense includes any receipt, guest, and itemization details.</span></span>
+5. <span data-ttu-id="898e7-211">Z powrotem na stronie **Raport o wydatkach** wybierz opcję zatwierdzenia lub odrzucenia raportu z wydatków.</span><span class="sxs-lookup"><span data-stu-id="898e7-211">Back on the **Expense report** page, select to approve or reject the expense report.</span></span>
+6. <span data-ttu-id="898e7-212">Wprowadź wszelkie komentarze dotyczące czynności zatwierdzania.</span><span class="sxs-lookup"><span data-stu-id="898e7-212">Enter any comments for the approval action.</span></span>
+7. <span data-ttu-id="898e7-213">Wybierz opcję **Gotowe**.</span><span class="sxs-lookup"><span data-stu-id="898e7-213">Select **Done**.</span></span>
 
-## <a name="create-a-new-expense-report-and-submit-it-for-approval-by-using-the-expense-management-mobile-workspace-if-you-use-the-july-2017-update"></a>Tworzenie nowego raportu z wydatków i przesyłanie go do zatwierdzenia za pomocą komórkowego obszaru roboczego Zarządzanie wydatkami (jeśli używasz aktualizacji z lipca 2017 r.)
-1. Na urządzeniu przenośnym otwórz obszar roboczy **Zarządzanie wydatkami**.
-2. Wybierz opcję **Wpis wydatku**.
-3. Wybierz opcję **Nowy raport** lub zaznacz istniejący raport z wydatków na liście.
-4. Dla nowego raportu z wydatków wprowadź cel oraz wszelkie dodatkowe informacje, które są dostępne. Te informacje różnią się w zależności od konfiguracji modułu Zarządzanie wydatkami w firmie.
-5. Wybierz opcję **Gotowe**.
-6. Aby do raportu z wydatków dodać istniejące wydatki, takie jak transakcje kartami kredytowymi, wybierz opcję **Dołącz**.
-7. Zaznacz jeden lub więcej wydatków na liście.
-8. Wybierz opcję **Gotowe**.
-9. Aby dodać nowy wydatek do raportu z wydatków, wybierz opcję **Nowy wydatek**.
-10. Wybierz kategorię wydatku. Zobaczysz listę kategorii wydatków załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jeśli Twojej kategorii nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według kategorii wydatków lub przejdź do wyszukiwania według typu wydatku.
-11. Opcjonalnie: Wprowadź handlowca dla wydatku.
-12. Wprowadź datę transakcji wydatkowej.
-13. Wprowadź kwotę wydatku.
-14. Wybierz walutę wydatku. Zobaczysz listę kodów walut załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 400 walut, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jeśli Twojej waluty nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Wyszukaj według waluty lub przełącz się do wyszukiwania według nazwy.
-15. Wybierz opcję **Gotowe**.
-16. Aby dodać więcej szczegółów do wydatku, wybierz opcję **Dodaj więcej szczegółów**. Dostępne pola zależą od konfiguracji modułu Zarządzanie wydatkami w firmie.
-17. Jeśli zasady obowiązujące w firmie wymagają wskazania paragonu dla wydatku, wybierz opcję **Paragony**, a następnie wykonaj poniższe czynności:
+## <a name="create-a-new-expense-report-and-submit-it-for-approval-by-using-the-expense-management-mobile-workspace-if-you-use-the-july-2017-update"></a><span data-ttu-id="898e7-214">Tworzenie nowego raportu z wydatków i przesyłanie go do zatwierdzenia za pomocą komórkowego obszaru roboczego Zarządzanie wydatkami (jeśli używasz aktualizacji z lipca 2017 r.)</span><span class="sxs-lookup"><span data-stu-id="898e7-214">Create a new expense report and submit it for approval by using the Expense management mobile workspace (if you use the July 2017 update)</span></span>
+1. <span data-ttu-id="898e7-215">Na urządzeniu przenośnym otwórz obszar roboczy **Zarządzanie wydatkami**.</span><span class="sxs-lookup"><span data-stu-id="898e7-215">On your mobile device, open the **Expense management** workspace.</span></span>
+2. <span data-ttu-id="898e7-216">Wybierz opcję **Wpis wydatku**.</span><span class="sxs-lookup"><span data-stu-id="898e7-216">Select **Expense entry**.</span></span>
+3. <span data-ttu-id="898e7-217">Wybierz opcję **Nowy raport** lub zaznacz istniejący raport z wydatków na liście.</span><span class="sxs-lookup"><span data-stu-id="898e7-217">Select **New report**, or select an existing expense report in the list.</span></span>
+4. <span data-ttu-id="898e7-218">Dla nowego raportu z wydatków wprowadź cel oraz wszelkie dodatkowe informacje, które są dostępne.</span><span class="sxs-lookup"><span data-stu-id="898e7-218">For new expense reports, enter the purpose and any additional information that is available.</span></span> <span data-ttu-id="898e7-219">Te informacje różnią się w zależności od konfiguracji modułu Zarządzanie wydatkami w firmie.</span><span class="sxs-lookup"><span data-stu-id="898e7-219">This information varies, depending on that way that expense management is configured for your company.</span></span>
+5. <span data-ttu-id="898e7-220">Wybierz opcję **Gotowe**.</span><span class="sxs-lookup"><span data-stu-id="898e7-220">Select **Done**.</span></span>
+6. <span data-ttu-id="898e7-221">Aby do raportu z wydatków dodać istniejące wydatki, takie jak transakcje kartami kredytowymi, wybierz opcję **Dołącz**.</span><span class="sxs-lookup"><span data-stu-id="898e7-221">To add existing expenses, such as credit card transactions, to the expense report, select **Attach**.</span></span>
+7. <span data-ttu-id="898e7-222">Zaznacz jeden lub więcej wydatków na liście.</span><span class="sxs-lookup"><span data-stu-id="898e7-222">Select one or more expenses in the list.</span></span>
+8. <span data-ttu-id="898e7-223">Wybierz opcję **Gotowe**.</span><span class="sxs-lookup"><span data-stu-id="898e7-223">Select **Done**.</span></span>
+9. <span data-ttu-id="898e7-224">Aby dodać nowy wydatek do raportu z wydatków, wybierz opcję **Nowy wydatek**.</span><span class="sxs-lookup"><span data-stu-id="898e7-224">To add a new expense to the expense report, select **New expense**.</span></span>
+10. <span data-ttu-id="898e7-225">Wybierz kategorię wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-225">Select the category for the expense.</span></span> <span data-ttu-id="898e7-226">Zobaczysz listę kategorii wydatków załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline.</span><span class="sxs-lookup"><span data-stu-id="898e7-226">You see a list of expense categories that are loaded into your app for offline use.</span></span> <span data-ttu-id="898e7-227">Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę.</span><span class="sxs-lookup"><span data-stu-id="898e7-227">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="898e7-228">Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span><span class="sxs-lookup"><span data-stu-id="898e7-228">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span> <span data-ttu-id="898e7-229">Jeśli Twojej kategorii nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online.</span><span class="sxs-lookup"><span data-stu-id="898e7-229">If your category isn't in the list, select **Search** to do an online search.</span></span> <span data-ttu-id="898e7-230">Poszukaj według kategorii wydatków lub przejdź do wyszukiwania według typu wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-230">Search by expense category, or switch to search by expense type.</span></span>
+11. <span data-ttu-id="898e7-231">Opcjonalnie: Wprowadź handlowca dla wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-231">Optional: Enter the merchant for the expense.</span></span>
+12. <span data-ttu-id="898e7-232">Wprowadź datę transakcji wydatkowej.</span><span class="sxs-lookup"><span data-stu-id="898e7-232">Enter the transaction date of the expense.</span></span>
+13. <span data-ttu-id="898e7-233">Wprowadź kwotę wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-233">Enter the amount of the expense.</span></span>
+14. <span data-ttu-id="898e7-234">Wybierz walutę wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-234">Select the currency of the expense.</span></span> <span data-ttu-id="898e7-235">Zobaczysz listę kodów walut załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline.</span><span class="sxs-lookup"><span data-stu-id="898e7-235">You see a list of the currency codes that are loaded into your app for offline use.</span></span> <span data-ttu-id="898e7-236">Domyślnie jest ładowanych 400 walut, ale programista może zmienić tę liczbę.</span><span class="sxs-lookup"><span data-stu-id="898e7-236">By default, 400 currencies are loaded, but a developer can change this number.</span></span> <span data-ttu-id="898e7-237">Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span><span class="sxs-lookup"><span data-stu-id="898e7-237">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span> <span data-ttu-id="898e7-238">Jeśli Twojej waluty nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online.</span><span class="sxs-lookup"><span data-stu-id="898e7-238">If your currency isn't in the list, select **Search** to do an online search.</span></span> <span data-ttu-id="898e7-239">Wyszukaj według waluty lub przełącz się do wyszukiwania według nazwy.</span><span class="sxs-lookup"><span data-stu-id="898e7-239">Search by currency, or switch to search by name.</span></span>
+15. <span data-ttu-id="898e7-240">Wybierz opcję **Gotowe**.</span><span class="sxs-lookup"><span data-stu-id="898e7-240">Select **Done**.</span></span>
+16. <span data-ttu-id="898e7-241">Aby dodać więcej szczegółów do wydatku, wybierz opcję **Dodaj więcej szczegółów**.</span><span class="sxs-lookup"><span data-stu-id="898e7-241">To add more details to the expense, select **Add more details**.</span></span> <span data-ttu-id="898e7-242">Dostępne pola zależą od konfiguracji modułu Zarządzanie wydatkami w firmie.</span><span class="sxs-lookup"><span data-stu-id="898e7-242">The fields that are available depend on the configuration of expense management for your company.</span></span>
+17. <span data-ttu-id="898e7-243">Jeśli zasady obowiązujące w firmie wymagają wskazania paragonu dla wydatku, wybierz opcję **Paragony**, a następnie wykonaj poniższe czynności:</span><span class="sxs-lookup"><span data-stu-id="898e7-243">If company policy requires a receipt for the expense, select **Receipts**, and then follow these steps:</span></span>
 
-    1. Wybierz opcję **Przechwyć paragon** lub **Dołącz paragon**.
-    2. Wykonaj jeden z następujących kroków:
+    1. <span data-ttu-id="898e7-244">Wybierz opcję **Przechwyć paragon** lub **Dołącz paragon**.</span><span class="sxs-lookup"><span data-stu-id="898e7-244">Select **Capture receipt** or **Attach receipt**.</span></span>
+    2. <span data-ttu-id="898e7-245">Wykonaj jeden z następujących kroków:</span><span class="sxs-lookup"><span data-stu-id="898e7-245">Follow one of these steps:</span></span>
 
-        - W przypadku wybrania opcji **Przechwyć paragon** wykonaj następujące kroki:
+        - <span data-ttu-id="898e7-246">W przypadku wybrania opcji **Przechwyć paragon** wykonaj następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="898e7-246">If you selected **Capture receipt**, follow these steps:</span></span>
 
-            1. Wybierz opcję **Zrób zdjęcie** lub **Wybierz obraz**.
-            2. Wykonaj jeden z następujących kroków:
+            1. <span data-ttu-id="898e7-247">Wybierz opcję **Zrób zdjęcie** lub **Wybierz obraz**.</span><span class="sxs-lookup"><span data-stu-id="898e7-247">Select **Take photo** or **Choose image**.</span></span>
+            2. <span data-ttu-id="898e7-248">Wykonaj jeden z następujących kroków:</span><span class="sxs-lookup"><span data-stu-id="898e7-248">Follow one of these steps:</span></span>
 
-                - Jeśli wybrano opcję **Zrób zdjęcie**, wykonaj następujące kroki:
+                - <span data-ttu-id="898e7-249">Jeśli wybrano opcję **Zrób zdjęcie**, wykonaj następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="898e7-249">If you selected **Take photo**, follow these steps:</span></span>
 
-                    1. Uruchamiasz aparat w swoim urządzeniu komórkowym, aby można było sfotografować paragon. Po zakończeniu robienia zdjęcia kliknij przycisk **OK**, aby zaakceptować zdjęcie.
-                    2. Opcjonalnie: Nadaj fotografii nazwę i ewentualnie wprowadź notatki.
+                    1. <span data-ttu-id="898e7-250">Uruchamiasz aparat w swoim urządzeniu komórkowym, aby można było sfotografować paragon.</span><span class="sxs-lookup"><span data-stu-id="898e7-250">You're taken to the camera on your mobile device, so that you can take a photo of the receipt.</span></span> <span data-ttu-id="898e7-251">Po zakończeniu robienia zdjęcia kliknij przycisk **OK**, aby zaakceptować zdjęcie.</span><span class="sxs-lookup"><span data-stu-id="898e7-251">When you've finished taking a photo, select **OK** to accept the photo.</span></span>
+                    2. <span data-ttu-id="898e7-252">Opcjonalnie: Nadaj fotografii nazwę i ewentualnie wprowadź notatki.</span><span class="sxs-lookup"><span data-stu-id="898e7-252">Optional: Enter a name for the photo, and enter any notes.</span></span>
 
-                - W przypadku wybrania opcji **Wybierz obraz** wykonaj następujące kroki:
+                - <span data-ttu-id="898e7-253">W przypadku wybrania opcji **Wybierz obraz** wykonaj następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="898e7-253">If you selected **Choose image**, follow these steps:</span></span>
 
-                    1. Wybierz zdjęcie z listy.
-                    2. Opcjonalnie: Nadaj zdjęciu nazwę i ewentualnie wprowadź notatki.
+                    1. <span data-ttu-id="898e7-254">Wybierz zdjęcie z listy.</span><span class="sxs-lookup"><span data-stu-id="898e7-254">Select an image in the list.</span></span>
+                    2. <span data-ttu-id="898e7-255">Opcjonalnie: Nadaj zdjęciu nazwę i ewentualnie wprowadź notatki.</span><span class="sxs-lookup"><span data-stu-id="898e7-255">Optional: Enter a name for the image, and enter any notes.</span></span>
 
-            3.  Wybierz opcję **Gotowe**.
+            3.  <span data-ttu-id="898e7-256">Wybierz opcję **Gotowe**.</span><span class="sxs-lookup"><span data-stu-id="898e7-256">Select **Done**.</span></span>
 
-        - W przypadku wybrania opcji **Dołącz paragon** wykonaj następujące kroki:
+        - <span data-ttu-id="898e7-257">W przypadku wybrania opcji **Dołącz paragon** wykonaj następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="898e7-257">If you selected **Attach receipt**, follow these steps:</span></span>
 
-            1.  Zaznacz jeden lub więcej obrazów na liście.
-            2.  Wybierz opcję **Gotowe**.
+            1.  <span data-ttu-id="898e7-258">Zaznacz jeden lub więcej obrazów na liście.</span><span class="sxs-lookup"><span data-stu-id="898e7-258">Select one or more images in the list.</span></span>
+            2.  <span data-ttu-id="898e7-259">Wybierz opcję **Gotowe**.</span><span class="sxs-lookup"><span data-stu-id="898e7-259">Select **Done**.</span></span>
 
-    3. Kliknij przycisk **Wstecz**, aby wrócić do szczegółów wydatku.
+    3. <span data-ttu-id="898e7-260">Kliknij przycisk **Wstecz**, aby wrócić do szczegółów wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-260">Select the **Back** button to return to the expense details.</span></span>
 
-18. Jeśli zasady obowiązujące w firmie wymagają wskazania gości dla wydatku, wybierz opcję **Goście**, a następnie wykonaj poniższe czynności:
+18. <span data-ttu-id="898e7-261">Jeśli zasady obowiązujące w firmie wymagają wskazania gości dla wydatku, wybierz opcję **Goście**, a następnie wykonaj poniższe czynności:</span><span class="sxs-lookup"><span data-stu-id="898e7-261">If company policy requires guests for the expense, select **Guests**, and then follow these steps:</span></span>
 
-    1. Wybierz opcję **Gość**, **Poprzedni goście** lub **Współpracownicy**.
-    2. Wykonaj jeden z następujących kroków:
+    1. <span data-ttu-id="898e7-262">Wybierz opcję **Gość**, **Poprzedni goście** lub **Współpracownicy**.</span><span class="sxs-lookup"><span data-stu-id="898e7-262">Select **Guest**, **Previous guests**, or **Coworkers**.</span></span>
+    2. <span data-ttu-id="898e7-263">Wykonaj jeden z następujących kroków:</span><span class="sxs-lookup"><span data-stu-id="898e7-263">Follow one of these steps:</span></span>
 
-        - Jeśli wybrano opcję **Gość**, wykonaj następujące kroki:
+        - <span data-ttu-id="898e7-264">Jeśli wybrano opcję **Gość**, wykonaj następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="898e7-264">If you selected **Guest**, follow these steps:</span></span>
 
-            1. Wprowadź imię i nazwisko gościa.
-            2. Opcjonalnie: Wprowadź organizację i/lub kraj gościa.
-            3. Opcjonalnie: Wprowadź tytuł gościa.
-            4. Wybierz opcję **Gotowe**.
+            1. <span data-ttu-id="898e7-265">Wprowadź imię i nazwisko gościa.</span><span class="sxs-lookup"><span data-stu-id="898e7-265">Enter the name of the guest.</span></span>
+            2. <span data-ttu-id="898e7-266">Opcjonalnie: Wprowadź organizację i/lub kraj gościa.</span><span class="sxs-lookup"><span data-stu-id="898e7-266">Optional: Enter the organization and/or country of the guest.</span></span>
+            3. <span data-ttu-id="898e7-267">Opcjonalnie: Wprowadź tytuł gościa.</span><span class="sxs-lookup"><span data-stu-id="898e7-267">Optional: Enter the title of the guest.</span></span>
+            4. <span data-ttu-id="898e7-268">Wybierz opcję **Gotowe**.</span><span class="sxs-lookup"><span data-stu-id="898e7-268">Select **Done**.</span></span>
 
-        - W przypadku wybrania opcji **Poprzedni goście** wykonaj następujące kroki:
+        - <span data-ttu-id="898e7-269">W przypadku wybrania opcji **Poprzedni goście** wykonaj następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="898e7-269">If you selected **Previous guests**, follow these steps:</span></span>
 
-            1. Zaznacz jednego lub więcej poprzednich gości na liście. Zobaczysz listę poprzednich gości dodanych do poprzednich raportów z wydatków, które są załadowane do aplikacji do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jeśli Twojego poprzedniego gościa nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według nazwy lub przejdź do wyszukiwania według organizacji, kraju albo tytułu.
-            2. Wybierz opcję **Gotowe**.
+            1. <span data-ttu-id="898e7-270">Zaznacz jednego lub więcej poprzednich gości na liście.</span><span class="sxs-lookup"><span data-stu-id="898e7-270">Select one or more previous guests in the list.</span></span> <span data-ttu-id="898e7-271">Zobaczysz listę poprzednich gości dodanych do poprzednich raportów z wydatków, które są załadowane do aplikacji do używania w trybie offline.</span><span class="sxs-lookup"><span data-stu-id="898e7-271">You see a list of previous guests that you've added to previous expense reports that are loaded into your app for offline use.</span></span> <span data-ttu-id="898e7-272">Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę.</span><span class="sxs-lookup"><span data-stu-id="898e7-272">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="898e7-273">Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span><span class="sxs-lookup"><span data-stu-id="898e7-273">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span> <span data-ttu-id="898e7-274">Jeśli Twojego poprzedniego gościa nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online.</span><span class="sxs-lookup"><span data-stu-id="898e7-274">If your previous guest isn't in the list, select **Search** to do an online search.</span></span> <span data-ttu-id="898e7-275">Poszukaj według nazwy lub przejdź do wyszukiwania według organizacji, kraju albo tytułu.</span><span class="sxs-lookup"><span data-stu-id="898e7-275">Search by name, or switch to search by organization, country, or title.</span></span>
+            2. <span data-ttu-id="898e7-276">Wybierz opcję **Gotowe**.</span><span class="sxs-lookup"><span data-stu-id="898e7-276">Select **Done**.</span></span>
 
-        - Jeśli wybrano opcję **Współpracownicy**, wykonaj następujące kroki:
+        - <span data-ttu-id="898e7-277">Jeśli wybrano opcję **Współpracownicy**, wykonaj następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="898e7-277">If you selected **Coworkers**, follow these steps:</span></span>
 
-            1. Zaznacz jednego lub więcej współpracowników na liście. Zobaczysz listę współpracowników załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jeśli Twojego współpracownika nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według nazwy lub przejdź do wyszukiwania według firmy albo tytułu.
-            2. Wybierz opcję **Gotowe**.
+            1. <span data-ttu-id="898e7-278">Zaznacz jednego lub więcej współpracowników na liście.</span><span class="sxs-lookup"><span data-stu-id="898e7-278">Select one or more coworkers in the list.</span></span> <span data-ttu-id="898e7-279">Zobaczysz listę współpracowników załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline.</span><span class="sxs-lookup"><span data-stu-id="898e7-279">You see a list of coworkers that are loaded into your app for offline use.</span></span> <span data-ttu-id="898e7-280">Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę.</span><span class="sxs-lookup"><span data-stu-id="898e7-280">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="898e7-281">Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span><span class="sxs-lookup"><span data-stu-id="898e7-281">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span> <span data-ttu-id="898e7-282">Jeśli Twojego współpracownika nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online.</span><span class="sxs-lookup"><span data-stu-id="898e7-282">If your coworker isn't in the list, select **Search** to do an online search.</span></span> <span data-ttu-id="898e7-283">Poszukaj według nazwy lub przejdź do wyszukiwania według firmy albo tytułu.</span><span class="sxs-lookup"><span data-stu-id="898e7-283">Search by name, or switch to search by company or title.</span></span>
+            2. <span data-ttu-id="898e7-284">Wybierz opcję **Gotowe**.</span><span class="sxs-lookup"><span data-stu-id="898e7-284">Select **Done**.</span></span>
 
-    3. Kliknij przycisk **Wstecz**, aby wrócić do szczegółów wydatku.
+    3. <span data-ttu-id="898e7-285">Kliknij przycisk **Wstecz**, aby wrócić do szczegółów wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-285">Select the **Back** button to return to the expense details.</span></span>
 
-19. Jeśli zasady obowiązujące w firmie wymagają wyszczególnienia pozycji wydatku, wybierz opcję **Podziel na pozycje**, a następnie wykonaj poniższe czynności:
+19. <span data-ttu-id="898e7-286">Jeśli zasady obowiązujące w firmie wymagają wyszczególnienia pozycji wydatku, wybierz opcję **Podziel na pozycje**, a następnie wykonaj poniższe czynności:</span><span class="sxs-lookup"><span data-stu-id="898e7-286">If company policy requires that the expense be itemized, select **Itemize**, and then follow these steps:</span></span>
 
-    1. Zaznacz pierwszą datę, dla której chcesz wyszczególnić pozycje wydatkowe.
-    2. Wybierz opcję **Dodaj podział na pozycje**.
-    3. Wybierz podkategorię wyszczególnienia pozycji wydatku. Zobaczysz listę podkategorii wydatków załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline. Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę. Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Jeśli Twojej podkategorii nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online. Poszukaj według nazwy podkategorii wydatków.
-    4. Wprowadź kwotę transakcji dla wyszczególnienia.
-    5. W razie potrzeby edytuj datę transakcji.
-    6. Wybierz opcję **Gotowe**.
-    7. Powtarzaj powyższe czynności, aż dodasz wszystkie wyszczególnienia dla wybranej daty.
-    8. Dla kolejnych dni możesz wybrać opcję **Kopiuj do następnego dnia** i skopiować wyszczególnienia do następnego dnia. Alternatywnie możesz wybrać datę do wyszczególnienia, a następnie dodać wyszczególnienia tak samo, jak dla pierwszej daty.
-    9. Po zakończeniu wyszczególniania wydatku kliknij przycisk **Wstecz**, aby wrócić do szczegółów wydatku.
+    1. <span data-ttu-id="898e7-287">Zaznacz pierwszą datę, dla której chcesz wyszczególnić pozycje wydatkowe.</span><span class="sxs-lookup"><span data-stu-id="898e7-287">Select the first date to itemize.</span></span>
+    2. <span data-ttu-id="898e7-288">Wybierz opcję **Dodaj podział na pozycje**.</span><span class="sxs-lookup"><span data-stu-id="898e7-288">Select **Add itemization**.</span></span>
+    3. <span data-ttu-id="898e7-289">Wybierz podkategorię wyszczególnienia pozycji wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-289">Select the subcategory for the expense itemization.</span></span> <span data-ttu-id="898e7-290">Zobaczysz listę podkategorii wydatków załadowanych do Twojej aplikacji z przeznaczeniem do używania w trybie offline.</span><span class="sxs-lookup"><span data-stu-id="898e7-290">You see a list of expense subcategories that are loaded into your app for offline use.</span></span> <span data-ttu-id="898e7-291">Domyślnie jest ładowanych 50 pozycji, ale programista może zmienić tę liczbę.</span><span class="sxs-lookup"><span data-stu-id="898e7-291">By default, 50 items are loaded, but a developer can change this number.</span></span> <span data-ttu-id="898e7-292">Aby uzyskać więcej informacji, programiści powinni zapoznać się z tematem [Platforma mobilna](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span><span class="sxs-lookup"><span data-stu-id="898e7-292">For more information, developers should see [Mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).</span></span> <span data-ttu-id="898e7-293">Jeśli Twojej podkategorii nie ma na liście, kliknij przycisk **Szukaj**, aby przeprowadzić wyszukiwanie online.</span><span class="sxs-lookup"><span data-stu-id="898e7-293">If your subcategory isn't in the list, select **Search** to do an online search.</span></span> <span data-ttu-id="898e7-294">Poszukaj według nazwy podkategorii wydatków.</span><span class="sxs-lookup"><span data-stu-id="898e7-294">Search by expense subcategory name.</span></span>
+    4. <span data-ttu-id="898e7-295">Wprowadź kwotę transakcji dla wyszczególnienia.</span><span class="sxs-lookup"><span data-stu-id="898e7-295">Enter the transaction amount for the itemization.</span></span>
+    5. <span data-ttu-id="898e7-296">W razie potrzeby edytuj datę transakcji.</span><span class="sxs-lookup"><span data-stu-id="898e7-296">Edit the transaction date if it's required.</span></span>
+    6. <span data-ttu-id="898e7-297">Wybierz opcję **Gotowe**.</span><span class="sxs-lookup"><span data-stu-id="898e7-297">Select **Done**.</span></span>
+    7. <span data-ttu-id="898e7-298">Powtarzaj powyższe czynności, aż dodasz wszystkie wyszczególnienia dla wybranej daty.</span><span class="sxs-lookup"><span data-stu-id="898e7-298">Repeat the preceding steps until you've finished adding all itemizations for the selected date.</span></span>
+    8. <span data-ttu-id="898e7-299">Dla kolejnych dni możesz wybrać opcję **Kopiuj do następnego dnia** i skopiować wyszczególnienia do następnego dnia.</span><span class="sxs-lookup"><span data-stu-id="898e7-299">For additional days, you can select **Copy to next day** to copy the itemizations to the next day.</span></span> <span data-ttu-id="898e7-300">Alternatywnie możesz wybrać datę do wyszczególnienia, a następnie dodać wyszczególnienia tak samo, jak dla pierwszej daty.</span><span class="sxs-lookup"><span data-stu-id="898e7-300">Alternatively, you can select the date to itemize and then add itemizations as you did for the first date.</span></span>
+    9. <span data-ttu-id="898e7-301">Po zakończeniu wyszczególniania wydatku kliknij przycisk **Wstecz**, aby wrócić do szczegółów wydatku.</span><span class="sxs-lookup"><span data-stu-id="898e7-301">After you've finished itemizing the expense, select the **Back** button to return to the expense details.</span></span>
 
-20. Kliknij przycisk **Wstecz**, aby wrócić do strony **Raport o wydatkach**.
-21. Powtarzaj powyższe czynności, aż dodasz wszystkie wydatki.
-22. Wybierz opcję **Prześlij**.
-23. Wprowadź wszelkie komentarze dla osoby zatwierdzającej.
-24. Wybierz opcję **Gotowe**.
+20. <span data-ttu-id="898e7-302">Kliknij przycisk **Wstecz**, aby wrócić do strony **Raport o wydatkach**.</span><span class="sxs-lookup"><span data-stu-id="898e7-302">Select the **Back** button to return to the **Expense report** page.</span></span>
+21. <span data-ttu-id="898e7-303">Powtarzaj powyższe czynności, aż dodasz wszystkie wydatki.</span><span class="sxs-lookup"><span data-stu-id="898e7-303">Repeat the preceding steps until you've finished adding all expenses.</span></span>
+22. <span data-ttu-id="898e7-304">Wybierz opcję **Prześlij**.</span><span class="sxs-lookup"><span data-stu-id="898e7-304">Select **Submit**.</span></span>
+23. <span data-ttu-id="898e7-305">Wprowadź wszelkie komentarze dla osoby zatwierdzającej.</span><span class="sxs-lookup"><span data-stu-id="898e7-305">Enter any comments for the approver.</span></span>
+24. <span data-ttu-id="898e7-306">Wybierz opcję **Gotowe**.</span><span class="sxs-lookup"><span data-stu-id="898e7-306">Select **Done**.</span></span>
 

@@ -16,73 +16,73 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 4190fde8c587475f34e5e3fdf6e2d32d59a26022
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 392cb83ceb8612a2e73cc54bb2d8d40c62a6b7b6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a>Tworzenie i przypisywanie zasady zachowania kosztów do jednostki kontroli kosztów
+# <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a><span data-ttu-id="73d94-103">Tworzenie i przypisywanie zasady zachowania kosztów do jednostki kontroli kosztów</span><span class="sxs-lookup"><span data-stu-id="73d94-103">Create and assign a cost behavior policy to a cost control unit</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Zachowanie kosztów to sklasyfikowanie kosztów jako stałe lub zmienne. Aby zasada weszła w życie, sama zasada i odpowiednie reguły muszą być przypisane do jednostki kontroli kosztów. Ta procedura służy do tworzenia zasady, a następnie jej przypisywania do jednostki kontroli kosztów.
+<span data-ttu-id="73d94-104">Zachowanie kosztów to sklasyfikowanie kosztów jako stałe lub zmienne.</span><span class="sxs-lookup"><span data-stu-id="73d94-104">Cost behavior is the classification of costs as either fixed or variable.</span></span> <span data-ttu-id="73d94-105">Aby zasada weszła w życie, sama zasada i odpowiednie reguły muszą być przypisane do jednostki kontroli kosztów.</span><span class="sxs-lookup"><span data-stu-id="73d94-105">A policy and the corresponding rules have to be assigned to a cost control unit for the policy to become effective.</span></span> <span data-ttu-id="73d94-106">Ta procedura służy do tworzenia zasady, a następnie jej przypisywania do jednostki kontroli kosztów.</span><span class="sxs-lookup"><span data-stu-id="73d94-106">Use this procedure to create a policy and then assign the policy to a cost control unit.</span></span>
 
 
-## <a name="create-a-cost-behavior-hierarchy"></a>Tworzenie hierarchii zachowania kosztów
-1. Wybierz kolejno opcje Rachunek kosztów > Wymiary > Hierarchie wymiarów.
-2. Kliknij przycisk Nowy.
-3. Kliknij przycisk Utwórz.
-4. W polu Nazwa hierarchii wymiarów wpisz „Hierarchia zachowania kosztów”.
-5. W polu Wymiar wprowadź lub wybierz wartość.
-    * Wybierz opcję Składniki kosztów.  
-6. Kliknij przycisk Zapisz.
-7. Kliknij opcję Wyświetl hierarchię.
-8. Kliknij przycisk Nowy.
-9. W polu Nazwa węzła wpisz wartość.
-    * Wypełnij pole Koszt stały.  
-10. W drzewie zaznacz pozycję „Hierarchia zachowania kosztów”.
-11. Kliknij przycisk Nowy.
-12. W polu Nazwa węzła wpisz wartość.
-    * Wypełnij pole Koszt zmienny.  
-13. Kliknij przycisk Zapisz.
-14. W drzewie zaznacz pozycję „Hierarchia zachowania kosztów\Koszt stały”.
-15. Kliknij przycisk Nowy.
-16. Na liście oznacz wybrany wiersz.
-17. W polu Element członkowskiego wymiaru źródłowego wprowadź lub wybierz wartość.
-    * Zakres elementów członkowskich wymiaru może zawierać przerwy, ale elementy członkowskie nie mogą na siebie zachodzić.  
-18. W polu Element członkowski wymiaru docelowego wprowadź lub wybierz wartość.
-    * Zakres elementów członkowskich wymiaru może zawierać przerwy, ale elementy członkowskie nie mogą na siebie zachodzić.  
-19. W drzewie zaznacz pozycję „Hierarchia zachowania kosztów\Koszt zmienny”.
-20. Kliknij przycisk Nowy.
-21. Na liście oznacz wybrany wiersz.
-22. W polu Element członkowskiego wymiaru źródłowego wprowadź lub wybierz wartość.
-    * Zakres elementów członkowskich wymiaru może zawierać przerwy, ale elementy członkowskie nie mogą na siebie zachodzić.  
-23. W polu Element członkowski wymiaru docelowego wprowadź lub wybierz wartość.
-    * Zakres elementów członkowskich wymiaru może zawierać przerwy, ale elementy członkowskie nie mogą na siebie zachodzić.  
-24. Kliknij przycisk Zapisz.
+## <a name="create-a-cost-behavior-hierarchy"></a><span data-ttu-id="73d94-107">Tworzenie hierarchii zachowania kosztów</span><span class="sxs-lookup"><span data-stu-id="73d94-107">Create a cost behavior hierarchy</span></span>
+1. <span data-ttu-id="73d94-108">Wybierz kolejno opcje Rachunek kosztów > Wymiary > Hierarchie wymiarów.</span><span class="sxs-lookup"><span data-stu-id="73d94-108">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
+2. <span data-ttu-id="73d94-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="73d94-109">Click New.</span></span>
+3. <span data-ttu-id="73d94-110">Kliknij przycisk Utwórz.</span><span class="sxs-lookup"><span data-stu-id="73d94-110">Click Create.</span></span>
+4. <span data-ttu-id="73d94-111">W polu Nazwa hierarchii wymiarów wpisz „Hierarchia zachowania kosztów”.</span><span class="sxs-lookup"><span data-stu-id="73d94-111">In the Dimension hierarchy name field, type 'Cost behavior hierarchy'.</span></span>
+5. <span data-ttu-id="73d94-112">W polu Wymiar wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="73d94-112">In the Dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="73d94-113">Wybierz opcję Składniki kosztów.</span><span class="sxs-lookup"><span data-stu-id="73d94-113">Select Cost elements.</span></span>  
+6. <span data-ttu-id="73d94-114">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="73d94-114">Click Save.</span></span>
+7. <span data-ttu-id="73d94-115">Kliknij opcję Wyświetl hierarchię.</span><span class="sxs-lookup"><span data-stu-id="73d94-115">Click View hierarchy.</span></span>
+8. <span data-ttu-id="73d94-116">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="73d94-116">Click New.</span></span>
+9. <span data-ttu-id="73d94-117">W polu Nazwa węzła wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="73d94-117">In the Node name field, type a value.</span></span>
+    * <span data-ttu-id="73d94-118">Wypełnij pole Koszt stały.</span><span class="sxs-lookup"><span data-stu-id="73d94-118">Enter Fixed cost.</span></span>  
+10. <span data-ttu-id="73d94-119">W drzewie zaznacz pozycję „Hierarchia zachowania kosztów”.</span><span class="sxs-lookup"><span data-stu-id="73d94-119">In the tree, select 'Cost behavior hierarchy'.</span></span>
+11. <span data-ttu-id="73d94-120">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="73d94-120">Click New.</span></span>
+12. <span data-ttu-id="73d94-121">W polu Nazwa węzła wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="73d94-121">In the Node name field, type a value.</span></span>
+    * <span data-ttu-id="73d94-122">Wypełnij pole Koszt zmienny.</span><span class="sxs-lookup"><span data-stu-id="73d94-122">Enter Variable cost.</span></span>  
+13. <span data-ttu-id="73d94-123">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="73d94-123">Click Save.</span></span>
+14. <span data-ttu-id="73d94-124">W drzewie zaznacz pozycję „Hierarchia zachowania kosztów\Koszt stały”.</span><span class="sxs-lookup"><span data-stu-id="73d94-124">In the tree, select 'Cost behavior hierarchy\Fixed cost'.</span></span>
+15. <span data-ttu-id="73d94-125">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="73d94-125">Click New.</span></span>
+16. <span data-ttu-id="73d94-126">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="73d94-126">In the list, mark the selected row.</span></span>
+17. <span data-ttu-id="73d94-127">W polu Element członkowskiego wymiaru źródłowego wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="73d94-127">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="73d94-128">Zakres elementów członkowskich wymiaru może zawierać przerwy, ale elementy członkowskie nie mogą na siebie zachodzić.</span><span class="sxs-lookup"><span data-stu-id="73d94-128">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+18. <span data-ttu-id="73d94-129">W polu Element członkowski wymiaru docelowego wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="73d94-129">In the To dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="73d94-130">Zakres elementów członkowskich wymiaru może zawierać przerwy, ale elementy członkowskie nie mogą na siebie zachodzić.</span><span class="sxs-lookup"><span data-stu-id="73d94-130">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+19. <span data-ttu-id="73d94-131">W drzewie zaznacz pozycję „Hierarchia zachowania kosztów\Koszt zmienny”.</span><span class="sxs-lookup"><span data-stu-id="73d94-131">In the tree, select 'Cost behavior hierarchy\Variable cost'.</span></span>
+20. <span data-ttu-id="73d94-132">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="73d94-132">Click New.</span></span>
+21. <span data-ttu-id="73d94-133">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="73d94-133">In the list, mark the selected row.</span></span>
+22. <span data-ttu-id="73d94-134">W polu Element członkowskiego wymiaru źródłowego wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="73d94-134">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="73d94-135">Zakres elementów członkowskich wymiaru może zawierać przerwy, ale elementy członkowskie nie mogą na siebie zachodzić.</span><span class="sxs-lookup"><span data-stu-id="73d94-135">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+23. <span data-ttu-id="73d94-136">W polu Element członkowski wymiaru docelowego wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="73d94-136">In the To dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="73d94-137">Zakres elementów członkowskich wymiaru może zawierać przerwy, ale elementy członkowskie nie mogą na siebie zachodzić.</span><span class="sxs-lookup"><span data-stu-id="73d94-137">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+24. <span data-ttu-id="73d94-138">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="73d94-138">Click Save.</span></span>
 
-## <a name="create-the-policy-and-rules"></a>Tworzenie zasady i reguł
-1. Wybierz kolejno opcje Rachunek kosztów > Zasady > Zasady zachowania kosztów.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa zasad wpisz wartość.
-4. W polu Hierarchia wymiarów składników kosztów wprowadź lub wybierz wartość.
-    * Zaznacz utworzoną właśnie hierarchię zasad.  
-5. W polu Hierarchia wymiarów obiektów kosztów wprowadź lub wybierz wartość.
-    * Wybierz opcję Organizacja.  
-6. Kliknij przycisk Zapisz.
-7. Kliknij przycisk Nowy.
-8. Na liście oznacz wybrany wiersz.
-9. W polu Węzeł hierarchii wymiarów składników kosztów wprowadź lub wybierz wartość.
-    * Rozwiń hierarchię i wybierz pozycję Koszt zmienny.  
-10. W polu Węzeł hierarchii wymiarów obiektów kosztów wprowadź lub wybierz wartość.
-    * Domyślnie zmienny procent wynosi 100 procent.  
-11. Kliknij opcję Przypisania zasad dla jednostki kontroli kosztów.
-12. Kliknij przycisk Nowy.
-13. Na liście oznacz wybrany wiersz.
-14. W polu Ważne od daty księgowania wpisz datę.
-    * Reguły mają daty obowiązywania, tzn. użytkownik lub system mogą wygasić regułę, jeśli zostanie utworzona nowsza wersja.  
-15. W polu Jednostka kontroli kosztów wprowadź lub wybierz wartość.
-16. Kliknij przycisk Zapisz.
+## <a name="create-the-policy-and-rules"></a><span data-ttu-id="73d94-139">Tworzenie zasady i reguł</span><span class="sxs-lookup"><span data-stu-id="73d94-139">Create the policy and rules</span></span>
+1. <span data-ttu-id="73d94-140">Wybierz kolejno opcje Rachunek kosztów > Zasady > Zasady zachowania kosztów.</span><span class="sxs-lookup"><span data-stu-id="73d94-140">Go to Cost accounting > Policies > Cost behavior policies.</span></span>
+2. <span data-ttu-id="73d94-141">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="73d94-141">Click New.</span></span>
+3. <span data-ttu-id="73d94-142">W polu Nazwa zasad wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="73d94-142">In the Policy name field, type a value.</span></span>
+4. <span data-ttu-id="73d94-143">W polu Hierarchia wymiarów składników kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="73d94-143">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="73d94-144">Zaznacz utworzoną właśnie hierarchię zasad.</span><span class="sxs-lookup"><span data-stu-id="73d94-144">Select the policy hierarchy that you just created.</span></span>  
+5. <span data-ttu-id="73d94-145">W polu Hierarchia wymiarów obiektów kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="73d94-145">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="73d94-146">Wybierz opcję Organizacja.</span><span class="sxs-lookup"><span data-stu-id="73d94-146">Select Organization.</span></span>  
+6. <span data-ttu-id="73d94-147">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="73d94-147">Click Save.</span></span>
+7. <span data-ttu-id="73d94-148">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="73d94-148">Click New.</span></span>
+8. <span data-ttu-id="73d94-149">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="73d94-149">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="73d94-150">W polu Węzeł hierarchii wymiarów składników kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="73d94-150">In the Cost element dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="73d94-151">Rozwiń hierarchię i wybierz pozycję Koszt zmienny.</span><span class="sxs-lookup"><span data-stu-id="73d94-151">Expand the hierarchy to select Variable cost.</span></span>  
+10. <span data-ttu-id="73d94-152">W polu Węzeł hierarchii wymiarów obiektów kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="73d94-152">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="73d94-153">Domyślnie zmienny procent wynosi 100 procent.</span><span class="sxs-lookup"><span data-stu-id="73d94-153">By default, the variable percentage is 100 percent.</span></span>  
+11. <span data-ttu-id="73d94-154">Kliknij opcję Przypisania zasad dla jednostki kontroli kosztów.</span><span class="sxs-lookup"><span data-stu-id="73d94-154">Click Policy assignments for cost control unit.</span></span>
+12. <span data-ttu-id="73d94-155">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="73d94-155">Click New.</span></span>
+13. <span data-ttu-id="73d94-156">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="73d94-156">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="73d94-157">W polu Ważne od daty księgowania wpisz datę.</span><span class="sxs-lookup"><span data-stu-id="73d94-157">In the Valid from accounting date field, enter a date.</span></span>
+    * <span data-ttu-id="73d94-158">Reguły mają daty obowiązywania, tzn. użytkownik lub system mogą wygasić regułę, jeśli zostanie utworzona nowsza wersja.</span><span class="sxs-lookup"><span data-stu-id="73d94-158">The rules are date-effective, and a user or the system can expire a rule if a newer version is created.</span></span>  
+15. <span data-ttu-id="73d94-159">W polu Jednostka kontroli kosztów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="73d94-159">In the Cost control unit field, enter or select a value.</span></span>
+16. <span data-ttu-id="73d94-160">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="73d94-160">Click Save.</span></span>
 
 

@@ -16,150 +16,150 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 65db27e59ce5f9234eeb486efeb9bb6e9dad40f7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 473cad588253b0eb42eb927834e186ccfa4c4f1e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="manage-model-mapping-configurations-for-electronic-reporting-er"></a>Zarządzanie konfiguracjami mapowania modeli na potrzeby raportowania elektronicznego (ER)
+# <a name="manage-model-mapping-configurations-for-electronic-reporting-er"></a><span data-ttu-id="f2869-103">Zarządzanie konfiguracjami mapowania modeli na potrzeby raportowania elektronicznego (ER)</span><span class="sxs-lookup"><span data-stu-id="f2869-103">Manage model mapping configurations for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może zarządzać mapowaniami modelu raportowania elektronicznego (ER) w osobnych konfiguracjach ER. W tym przewodniku po zadaniu utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Aby wykonać kroki podane w tym przewodniku, należy najpierw wykonać czynności z przewodnika po zadaniu „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”. 
+<span data-ttu-id="f2869-104">W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może zarządzać mapowaniami modelu raportowania elektronicznego (ER) w osobnych konfiguracjach ER.</span><span class="sxs-lookup"><span data-stu-id="f2869-104">The following steps explain how a user assigned to the System administrator or Electronic reporting developer role can manage Electronic reporting (ER) model mappings in separate ER configurations.</span></span> <span data-ttu-id="f2869-105">W tym przewodniku po zadaniu utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Aby wykonać kroki podane w tym przewodniku, należy najpierw wykonać czynności z przewodnika po zadaniu „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”.</span><span class="sxs-lookup"><span data-stu-id="f2869-105">In this task guide, you will create required ER configurations for the sample company, Litware, Inc. To complete this task guide, you must first complete the steps in the task guide, “ER Create a configuration provider” and mark it as active.</span></span> 
 
-Ponieważ konfiguracje raportowania elektronicznego są współużytkowane przez firmy, można wykonać ten przewodnik po zadaniu przy użyciu zestawu danych firmowych wybranego przez użytkownika. Funkcjonalność tego przewodnika po zadaniu jest dostępna po zainstalowaniu jednej z następujących poprawek: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 dla wersji Dynamics AX 7.0 lub https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 dla wersji Dynamics 365 for Operations.
+<span data-ttu-id="f2869-106">Ponieważ konfiguracje raportowania elektronicznego są współużytkowane przez firmy, można wykonać ten przewodnik po zadaniu przy użyciu zestawu danych firmowych wybranego przez użytkownika.</span><span class="sxs-lookup"><span data-stu-id="f2869-106">Because ER configurations are shared among companies, you can complete this task guide using the company data set of your choice.</span></span> <span data-ttu-id="f2869-107">Funkcjonalność tego przewodnika po zadaniu jest dostępna po zainstalowaniu jednej z następujących poprawek: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 dla wersji Dynamics AX 7.0 lub https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 dla wersji Dynamics 365 for Operations.</span><span class="sxs-lookup"><span data-stu-id="f2869-107">The functionality for this task guide is available if you have installed one of the following hotfixes: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 for the Dynamics AX 7.0 version or https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 for the Dynamics 365 for Operations version.</span></span>
 
-1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.
-    * Sprawdź, czy dostawca konfiguracji przykładowej firmy „Litware, Inc.” jest dostępny i oznaczony jako aktywny. Jeśli ten dostawca konfiguracji nie jest widoczny, należy najpierw wykonać czynności z przewodnika po zadaniu „Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”.   
+1. <span data-ttu-id="f2869-108">Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.</span><span class="sxs-lookup"><span data-stu-id="f2869-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="f2869-109">Sprawdź, czy dostawca konfiguracji przykładowej firmy „Litware, Inc.” jest dostępny i oznaczony jako aktywny.</span><span class="sxs-lookup"><span data-stu-id="f2869-109">Verify that the configuration provider for the sample company Litware, Inc. is available and marked as active.</span></span> <span data-ttu-id="f2869-110">Jeśli ten dostawca konfiguracji nie jest widoczny, należy najpierw wykonać czynności z przewodnika po zadaniu „Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”.</span><span class="sxs-lookup"><span data-stu-id="f2869-110">If you don’t see this configuration provider, you must first complete the steps in the task guide, Create a configuration provider and mark it as active.</span></span>   
 
-## <a name="add-a-new-er-model-configuration"></a>Dodawanie nowej konfiguracji modelu ER
-1. Kliknij opcję Konfiguracje raportowania.
-    * Dodaj nową konfigurację modelu. Nazwa musi być unikatowa w drzewie konfiguracji.  
-2. Kliknij przycisk Utwórz konfigurację, aby otworzyć rozwijane okno dialogowe.
-3. W polu Nazwa wpisz „Przykładowy model danych”.
-    * Przykładowy model danych  
-4. Kliknij przycisk Utwórz konfigurację.
-5. Kliknij przycisk Konstruktor.
-6. Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.
-7. W polu Nazwa wpisz „Element główny”.
-    * Element główny  
-8. Kliknij przycisk Dodaj.
-9. Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.
-10. W polu Nazwa wpisz „Firma”.
-    * Firma  
-11. Kliknij przycisk Dodaj.
-12. W polu Opis wprowadź tekst opisujący podmiot prawny lub firmę, do której użytkownik jest zalogowany w czasie wykonywania. 
-    * Opis podmiotu prawnego lub firmy, w której użytkownik był zalogowany w czasie wykonywania.  
-13. Kliknij opcję Odwołanie główne.
-14. Kliknij przycisk OK.
-15. Kliknij przycisk Zapisz.
-16. Zamknij stronę.
-17. Kliknij przycisk Zmień stan.
-18. Kliknij przycisk Wykonaj.
-19. Kliknij przycisk OK.
+## <a name="add-a-new-er-model-configuration"></a><span data-ttu-id="f2869-111">Dodawanie nowej konfiguracji modelu ER</span><span class="sxs-lookup"><span data-stu-id="f2869-111">Add a new ER model configuration</span></span>
+1. <span data-ttu-id="f2869-112">Kliknij opcję Konfiguracje raportowania.</span><span class="sxs-lookup"><span data-stu-id="f2869-112">Click Reporting configurations.</span></span>
+    * <span data-ttu-id="f2869-113">Dodaj nową konfigurację modelu.</span><span class="sxs-lookup"><span data-stu-id="f2869-113">Add a new model configuration.</span></span> <span data-ttu-id="f2869-114">Nazwa musi być unikatowa w drzewie konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="f2869-114">The name must be unique in the configurations tree.</span></span>  
+2. <span data-ttu-id="f2869-115">Kliknij przycisk Utwórz konfigurację, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="f2869-115">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="f2869-116">W polu Nazwa wpisz „Przykładowy model danych”.</span><span class="sxs-lookup"><span data-stu-id="f2869-116">In the Name field, type 'Sample data model'.</span></span>
+    * <span data-ttu-id="f2869-117">Przykładowy model danych</span><span class="sxs-lookup"><span data-stu-id="f2869-117">Sample data model</span></span>  
+4. <span data-ttu-id="f2869-118">Kliknij przycisk Utwórz konfigurację.</span><span class="sxs-lookup"><span data-stu-id="f2869-118">Click Create configuration.</span></span>
+5. <span data-ttu-id="f2869-119">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="f2869-119">Click Designer.</span></span>
+6. <span data-ttu-id="f2869-120">Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="f2869-120">Click New to open the drop dialog.</span></span>
+7. <span data-ttu-id="f2869-121">W polu Nazwa wpisz „Element główny”.</span><span class="sxs-lookup"><span data-stu-id="f2869-121">In the Name field, type 'Root'.</span></span>
+    * <span data-ttu-id="f2869-122">Element główny</span><span class="sxs-lookup"><span data-stu-id="f2869-122">Root</span></span>  
+8. <span data-ttu-id="f2869-123">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="f2869-123">Click Add.</span></span>
+9. <span data-ttu-id="f2869-124">Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="f2869-124">Click New to open the drop dialog.</span></span>
+10. <span data-ttu-id="f2869-125">W polu Nazwa wpisz „Firma”.</span><span class="sxs-lookup"><span data-stu-id="f2869-125">In the Name field, type 'Company'.</span></span>
+    * <span data-ttu-id="f2869-126">Firma</span><span class="sxs-lookup"><span data-stu-id="f2869-126">Company</span></span>  
+11. <span data-ttu-id="f2869-127">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="f2869-127">Click Add.</span></span>
+12. <span data-ttu-id="f2869-128">W polu Opis wprowadź tekst opisujący podmiot prawny lub firmę, do której użytkownik jest zalogowany w czasie wykonywania.</span><span class="sxs-lookup"><span data-stu-id="f2869-128">In the Description field, enter the text, Description of the legal entity or company in which a user logged at run-time.</span></span> 
+    * <span data-ttu-id="f2869-129">Opis podmiotu prawnego lub firmy, w której użytkownik był zalogowany w czasie wykonywania.</span><span class="sxs-lookup"><span data-stu-id="f2869-129">Description of the legal entity or company in which a user logged at run-time.</span></span>  
+13. <span data-ttu-id="f2869-130">Kliknij opcję Odwołanie główne.</span><span class="sxs-lookup"><span data-stu-id="f2869-130">Click Root reference.</span></span>
+14. <span data-ttu-id="f2869-131">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="f2869-131">Click OK.</span></span>
+15. <span data-ttu-id="f2869-132">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="f2869-132">Click Save.</span></span>
+16. <span data-ttu-id="f2869-133">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="f2869-133">Close the page.</span></span>
+17. <span data-ttu-id="f2869-134">Kliknij przycisk Zmień stan.</span><span class="sxs-lookup"><span data-stu-id="f2869-134">Click Change status.</span></span>
+18. <span data-ttu-id="f2869-135">Kliknij przycisk Wykonaj.</span><span class="sxs-lookup"><span data-stu-id="f2869-135">Click Complete.</span></span>
+19. <span data-ttu-id="f2869-136">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="f2869-136">Click OK.</span></span>
 
-## <a name="add-a-new-er-model-mapping-configuration"></a>Dodawanie nowej konfiguracji mapowania modelu ER
-1. Kliknij przycisk Utwórz konfigurację, aby otworzyć rozwijane okno dialogowe.
-2. W polu Nowy wpisz „Mapowanie modelu oparte na modelu danych Przykładowy model danych”.
-3. W polu Nazwa wpisz „Przykładowe mapowanie”.
-    * Przykładowe mapowanie  
-4. Kliknij przycisk Utwórz konfigurację.
-5. Rozwiń sekcję Wymagania wstępne.
-    * Należy zauważyć, że grupa wymagań wstępnych Implementacje została dodana automatycznie. Grupa zawiera wstępnie wymagany składnik, który odwołuje się do nadrzędnej konfiguracji modelu danych i jest oznaczona jako Implementacja. Oznacza to, że ta konfiguracja mapowania modelu Przykładowe mapowanie jest uważana za implementację modelu danych Przykładowy model danych. W związku z tym ten składnik zmusi moduł ER do pobrania konfiguracji mapowania modelu Przykładowe mapowanie z repozytorium ER podczas pobierania konfiguracji modelu Przykładowy model danych.   
-6. Kliknij przycisk Konstruktor.
-    * Należy zauważyć, że utworzona konfiguracja mapowania modelu zawiera nowe puste mapowanie o takiej samej nazwie, jak utworzona konfiguracja. Należy pamiętać, że jeśli wybrana nadrzędna konfiguracja modelu zawiera mapowania modelu, zostaną one skopiowane do nowej konfiguracji mapowania modelu.   
-7. Kliknij przycisk Konstruktor.
-8. W drzewie zaznacz element „Dynamics 365 for Operations\Tabela”.
-9. Kliknij opcję Dodaj element główny.
-10. W polu Nazwa wpisz „Firma”.
-    * Firma  
-11. W polu Tabela wpisz „CompanyInfo”.
-    * CompanyInfo  
-12. Kliknij przycisk OK.
-13. W drzewie rozwiń węzeł „Firma”.
-14. W drzewie rozwiń węzeł „Firma\find()”.
-15. W drzewie zaznacz element „Firma\find()\Nazwa”.
-16. Kliknij opcję Powiąż.
-17. Kliknij przycisk Zapisz.
-18. Zamknij stronę.
-19. Zamknij stronę.
-20. W okienku akcji kliknij pozycję Konfiguracje.
-21. Kliknij opcję Parametry użytkownika.
-22. W polu Ustawienia uruchamiania wybierz opcję Tak.
-23. Kliknij przycisk OK.
-24. Kliknij przycisk Edytuj.
-25. W polu Uruchom wersję roboczą wybierz opcję Tak.
+## <a name="add-a-new-er-model-mapping-configuration"></a><span data-ttu-id="f2869-137">Dodawanie nowej konfiguracji mapowania modelu ER</span><span class="sxs-lookup"><span data-stu-id="f2869-137">Add a new ER model mapping configuration</span></span>
+1. <span data-ttu-id="f2869-138">Kliknij przycisk Utwórz konfigurację, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="f2869-138">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="f2869-139">W polu Nowy wpisz „Mapowanie modelu oparte na modelu danych Przykładowy model danych”.</span><span class="sxs-lookup"><span data-stu-id="f2869-139">In the New field, enter 'Model Mapping based on data model Sample data model'.</span></span>
+3. <span data-ttu-id="f2869-140">W polu Nazwa wpisz „Przykładowe mapowanie”.</span><span class="sxs-lookup"><span data-stu-id="f2869-140">In the Name field, type 'Sample mapping'.</span></span>
+    * <span data-ttu-id="f2869-141">Przykładowe mapowanie</span><span class="sxs-lookup"><span data-stu-id="f2869-141">Sample mapping</span></span>  
+4. <span data-ttu-id="f2869-142">Kliknij przycisk Utwórz konfigurację.</span><span class="sxs-lookup"><span data-stu-id="f2869-142">Click Create configuration.</span></span>
+5. <span data-ttu-id="f2869-143">Rozwiń sekcję Wymagania wstępne.</span><span class="sxs-lookup"><span data-stu-id="f2869-143">Expand the Prerequisites section.</span></span>
+    * <span data-ttu-id="f2869-144">Należy zauważyć, że grupa wymagań wstępnych Implementacje została dodana automatycznie.</span><span class="sxs-lookup"><span data-stu-id="f2869-144">Note that the Implementations prerequisites group has been added automatically.</span></span> <span data-ttu-id="f2869-145">Grupa zawiera wstępnie wymagany składnik, który odwołuje się do nadrzędnej konfiguracji modelu danych i jest oznaczona jako Implementacja.</span><span class="sxs-lookup"><span data-stu-id="f2869-145">The group contains the prerequisite component that refers to the parent data model configuration and is marked as Implementation.</span></span> <span data-ttu-id="f2869-146">Oznacza to, że ta konfiguracja mapowania modelu Przykładowe mapowanie jest uważana za implementację modelu danych Przykładowy model danych.</span><span class="sxs-lookup"><span data-stu-id="f2869-146">This means that this Sample mapping model mapping configuration is considered the implementation of the data model, Sample data model.</span></span> <span data-ttu-id="f2869-147">W związku z tym ten składnik zmusi moduł ER do pobrania konfiguracji mapowania modelu Przykładowe mapowanie z repozytorium ER podczas pobierania konfiguracji modelu Przykładowy model danych.</span><span class="sxs-lookup"><span data-stu-id="f2869-147">Therefore, this component will force ER to download the model mapping configuration, Sample mapping from an ER repository when the model configuration, Sample data model, is downloaded.</span></span>   
+6. <span data-ttu-id="f2869-148">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="f2869-148">Click Designer.</span></span>
+    * <span data-ttu-id="f2869-149">Należy zauważyć, że utworzona konfiguracja mapowania modelu zawiera nowe puste mapowanie o takiej samej nazwie, jak utworzona konfiguracja.</span><span class="sxs-lookup"><span data-stu-id="f2869-149">Note that the created model mapping configuration contains a new blank mapping with the same name as the created configuration.</span></span> <span data-ttu-id="f2869-150">Należy pamiętać, że jeśli wybrana nadrzędna konfiguracja modelu zawiera mapowania modelu, zostaną one skopiowane do nowej konfiguracji mapowania modelu.</span><span class="sxs-lookup"><span data-stu-id="f2869-150">Be aware that when a selected parent model configuration contains model mappings, they will be copied to a new model mapping configuration.</span></span>   
+7. <span data-ttu-id="f2869-151">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="f2869-151">Click Designer.</span></span>
+8. <span data-ttu-id="f2869-152">W drzewie zaznacz element „Dynamics 365 for Operations\Tabela”.</span><span class="sxs-lookup"><span data-stu-id="f2869-152">In the tree, select 'Dynamics 365 for Operations\Table'.</span></span>
+9. <span data-ttu-id="f2869-153">Kliknij opcję Dodaj element główny.</span><span class="sxs-lookup"><span data-stu-id="f2869-153">Click Add root.</span></span>
+10. <span data-ttu-id="f2869-154">W polu Nazwa wpisz „Firma”.</span><span class="sxs-lookup"><span data-stu-id="f2869-154">In the Name field, type 'Company'.</span></span>
+    * <span data-ttu-id="f2869-155">Firma</span><span class="sxs-lookup"><span data-stu-id="f2869-155">Company</span></span>  
+11. <span data-ttu-id="f2869-156">W polu Tabela wpisz „CompanyInfo”.</span><span class="sxs-lookup"><span data-stu-id="f2869-156">In the Table field, type 'CompanyInfo'.</span></span>
+    * <span data-ttu-id="f2869-157">CompanyInfo</span><span class="sxs-lookup"><span data-stu-id="f2869-157">CompanyInfo</span></span>  
+12. <span data-ttu-id="f2869-158">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="f2869-158">Click OK.</span></span>
+13. <span data-ttu-id="f2869-159">W drzewie rozwiń węzeł „Firma”.</span><span class="sxs-lookup"><span data-stu-id="f2869-159">In the tree, expand 'Company'.</span></span>
+14. <span data-ttu-id="f2869-160">W drzewie rozwiń węzeł „Firma\find()”.</span><span class="sxs-lookup"><span data-stu-id="f2869-160">In the tree, expand 'Company\find()'.</span></span>
+15. <span data-ttu-id="f2869-161">W drzewie zaznacz element „Firma\find()\Nazwa”.</span><span class="sxs-lookup"><span data-stu-id="f2869-161">In the tree, select 'Company\find()\Name'.</span></span>
+16. <span data-ttu-id="f2869-162">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="f2869-162">Click Bind.</span></span>
+17. <span data-ttu-id="f2869-163">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="f2869-163">Click Save.</span></span>
+18. <span data-ttu-id="f2869-164">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="f2869-164">Close the page.</span></span>
+19. <span data-ttu-id="f2869-165">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="f2869-165">Close the page.</span></span>
+20. <span data-ttu-id="f2869-166">W okienku akcji kliknij pozycję Konfiguracje.</span><span class="sxs-lookup"><span data-stu-id="f2869-166">On the Action Pane, click Configurations.</span></span>
+21. <span data-ttu-id="f2869-167">Kliknij opcję Parametry użytkownika.</span><span class="sxs-lookup"><span data-stu-id="f2869-167">Click User parameters.</span></span>
+22. <span data-ttu-id="f2869-168">W polu Ustawienia uruchamiania wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="f2869-168">Select Yes in the Run settings field.</span></span>
+23. <span data-ttu-id="f2869-169">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="f2869-169">Click OK.</span></span>
+24. <span data-ttu-id="f2869-170">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="f2869-170">Click Edit.</span></span>
+25. <span data-ttu-id="f2869-171">W polu Uruchom wersję roboczą wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="f2869-171">Select Yes in the Run Draft field.</span></span>
 
-## <a name="add-a-new-er-format-configuration"></a>Dodawanie nowej konfiguracji formatu ER
-1. W drzewie zaznacz element „Przykładowy model danych”.
-2. Kliknij przycisk Utwórz konfigurację, aby otworzyć rozwijane okno dialogowe.
-3. W polu Nowy wpisz „Format oparty na modelu danych Przykładowy model danych”.
-4. W polu Nazwa wpisz „Przykładowy format”.
-    * Przykładowy format  
-5. Kliknij przycisk Utwórz konfigurację.
-6. Kliknij przycisk Konstruktor.
-7. Kliknij przycisk Dodaj element główny, aby otworzyć rozwijane okno dialogowe.
-8. W drzewie zaznacz element „Tekst\Ciąg”.
-9. Kliknij przycisk OK.
-10. Kliknij kartę Mapowanie.
-11. W drzewie rozwiń model„”
-12. W drzewie zaznacz element „model\Firma”.
-13. Kliknij opcję Powiąż.
-14. Kliknij przycisk Zapisz.
-15. Zamknij stronę.
-    * Uruchom wersję roboczą utworzonego formatu do celów testowych.  
-16. Kliknij przycisk Uruchom.
-    * Na skróconej karcie Wersja kliknij przycisk Uruchom.  
-17. Kliknij przycisk OK.
-    * Obejrzyj wyniki dla firmy, w której jest zalogowany użytkownik uruchamiający tę konfigurację formatu. Należy zwrócić uwagę, że ta konfiguracja formatu korzysta z utworzonej konfiguracji mapowania modelu, ponieważ jest dostępna tylko jedna konfiguracja zawierająca wymagane mapowania modelu.   
+## <a name="add-a-new-er-format-configuration"></a><span data-ttu-id="f2869-172">Dodawanie nowej konfiguracji formatu ER</span><span class="sxs-lookup"><span data-stu-id="f2869-172">Add a new ER format configuration</span></span>
+1. <span data-ttu-id="f2869-173">W drzewie zaznacz element „Przykładowy model danych”.</span><span class="sxs-lookup"><span data-stu-id="f2869-173">In the tree, select 'Sample data model'.</span></span>
+2. <span data-ttu-id="f2869-174">Kliknij przycisk Utwórz konfigurację, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="f2869-174">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="f2869-175">W polu Nowy wpisz „Format oparty na modelu danych Przykładowy model danych”.</span><span class="sxs-lookup"><span data-stu-id="f2869-175">In the New field, enter 'Format based on data model Sample data model'.</span></span>
+4. <span data-ttu-id="f2869-176">W polu Nazwa wpisz „Przykładowy format”.</span><span class="sxs-lookup"><span data-stu-id="f2869-176">In the Name field, type 'Sample format'.</span></span>
+    * <span data-ttu-id="f2869-177">Przykładowy format</span><span class="sxs-lookup"><span data-stu-id="f2869-177">Sample format</span></span>  
+5. <span data-ttu-id="f2869-178">Kliknij przycisk Utwórz konfigurację.</span><span class="sxs-lookup"><span data-stu-id="f2869-178">Click Create configuration.</span></span>
+6. <span data-ttu-id="f2869-179">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="f2869-179">Click Designer.</span></span>
+7. <span data-ttu-id="f2869-180">Kliknij przycisk Dodaj element główny, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="f2869-180">Click Add root to open the drop dialog.</span></span>
+8. <span data-ttu-id="f2869-181">W drzewie zaznacz element „Tekst\Ciąg”.</span><span class="sxs-lookup"><span data-stu-id="f2869-181">In the tree, select 'Text\String'.</span></span>
+9. <span data-ttu-id="f2869-182">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="f2869-182">Click OK.</span></span>
+10. <span data-ttu-id="f2869-183">Kliknij kartę Mapowanie.</span><span class="sxs-lookup"><span data-stu-id="f2869-183">Click the Mapping tab.</span></span>
+11. <span data-ttu-id="f2869-184">W drzewie rozwiń model„”</span><span class="sxs-lookup"><span data-stu-id="f2869-184">In the tree, expand 'model'.</span></span>
+12. <span data-ttu-id="f2869-185">W drzewie zaznacz element „model\Firma”.</span><span class="sxs-lookup"><span data-stu-id="f2869-185">In the tree, select 'model\Company'.</span></span>
+13. <span data-ttu-id="f2869-186">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="f2869-186">Click Bind.</span></span>
+14. <span data-ttu-id="f2869-187">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="f2869-187">Click Save.</span></span>
+15. <span data-ttu-id="f2869-188">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="f2869-188">Close the page.</span></span>
+    * <span data-ttu-id="f2869-189">Uruchom wersję roboczą utworzonego formatu do celów testowych.</span><span class="sxs-lookup"><span data-stu-id="f2869-189">Run the draft version of the created format for testing purposes.</span></span>  
+16. <span data-ttu-id="f2869-190">Kliknij przycisk Uruchom.</span><span class="sxs-lookup"><span data-stu-id="f2869-190">Click Run.</span></span>
+    * <span data-ttu-id="f2869-191">Na skróconej karcie Wersja kliknij przycisk Uruchom.</span><span class="sxs-lookup"><span data-stu-id="f2869-191">On the Versions FastTab, click Run.</span></span>  
+17. <span data-ttu-id="f2869-192">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="f2869-192">Click OK.</span></span>
+    * <span data-ttu-id="f2869-193">Obejrzyj wyniki dla firmy, w której jest zalogowany użytkownik uruchamiający tę konfigurację formatu.</span><span class="sxs-lookup"><span data-stu-id="f2869-193">Review the output that contains the name of the company in which the user who is running this format configuration is logged into.</span></span> <span data-ttu-id="f2869-194">Należy zwrócić uwagę, że ta konfiguracja formatu korzysta z utworzonej konfiguracji mapowania modelu, ponieważ jest dostępna tylko jedna konfiguracja zawierająca wymagane mapowania modelu.</span><span class="sxs-lookup"><span data-stu-id="f2869-194">Note that the created model mapping configuration is used by this format configuration because there is only one configuration available that contains required model mappings.</span></span>   
 
-## <a name="add-alternative-er-model-mapping-configuration"></a>Dodawanie alternatywnej konfiguracji mapowania modelu ER
-1. W drzewie zaznacz element „Przykładowy model danych”.
-2. Kliknij przycisk Utwórz konfigurację, aby otworzyć rozwijane okno dialogowe.
-3. W polu Nowy wpisz „Mapowanie modelu oparte na modelu danych Przykładowy model danych”.
-4. W polu Nazwa wpisz „Przykładowe mapowanie (alternatywne)”.
-    * Przykładowe mapowanie (alternatywne)  
-5. Kliknij przycisk Utwórz konfigurację.
-6. Kliknij przycisk Konstruktor.
-7. Kliknij przycisk Konstruktor.
-8. W drzewie zaznacz element „Dynamics 365 for Operations\Tabela”.
-9. Kliknij opcję Dodaj element główny.
-10. W polu Nazwa wpisz „Firma”.
-    * Firma  
-11. W polu Tabela wpisz „CompanyInfo”.
-    * CompanyInfo  
-12. Kliknij przycisk OK.
-13. Kliknij przycisk Edytuj.
-14. W drzewie zaznacz element „Ciąg\ZŁĄCZ”.
-15. Kliknij opcję Dodaj funkcję.
-16. W drzewie rozwiń węzeł „Firma”.
-17. W drzewie rozwiń węzeł „Firma\find()”.
-18. W drzewie zaznacz element „Firma\find()\Nazwa”.
-19. Kliknij opcję Dodaj źródło danych.
-20. W polu Formuła wpisz wartość.
-    * CONCATENATE(Firma.'find()'.Nazwa, ";",  
-21. W drzewie zaznacz element „Firma\find()\Firma(DataArea)”.
-22. Kliknij opcję Dodaj źródło danych.
-23. W polu Formuła wpisz wartość.
-    * CONCATENATE(Firma.'find()'.Nazwa, ";", Firma.'find()'.DataArea)  
-24. Kliknij przycisk Zapisz.
-25. Zamknij stronę.
-26. Kliknij przycisk Zapisz.
-27. Zamknij stronę.
-28. Zamknij stronę.
-29. W polu Uruchom wersję roboczą wybierz opcję Tak.
+## <a name="add-alternative-er-model-mapping-configuration"></a><span data-ttu-id="f2869-195">Dodawanie alternatywnej konfiguracji mapowania modelu ER</span><span class="sxs-lookup"><span data-stu-id="f2869-195">Add alternative ER model mapping configuration</span></span>
+1. <span data-ttu-id="f2869-196">W drzewie zaznacz element „Przykładowy model danych”.</span><span class="sxs-lookup"><span data-stu-id="f2869-196">In the tree, select 'Sample data model'.</span></span>
+2. <span data-ttu-id="f2869-197">Kliknij przycisk Utwórz konfigurację, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="f2869-197">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="f2869-198">W polu Nowy wpisz „Mapowanie modelu oparte na modelu danych Przykładowy model danych”.</span><span class="sxs-lookup"><span data-stu-id="f2869-198">In the New field, enter 'Model Mapping based on data model Sample data model'.</span></span>
+4. <span data-ttu-id="f2869-199">W polu Nazwa wpisz „Przykładowe mapowanie (alternatywne)”.</span><span class="sxs-lookup"><span data-stu-id="f2869-199">In the Name field, type 'Sample mapping (alternative)'.</span></span>
+    * <span data-ttu-id="f2869-200">Przykładowe mapowanie (alternatywne)</span><span class="sxs-lookup"><span data-stu-id="f2869-200">Sample mapping (alternative)</span></span>  
+5. <span data-ttu-id="f2869-201">Kliknij przycisk Utwórz konfigurację.</span><span class="sxs-lookup"><span data-stu-id="f2869-201">Click Create configuration.</span></span>
+6. <span data-ttu-id="f2869-202">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="f2869-202">Click Designer.</span></span>
+7. <span data-ttu-id="f2869-203">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="f2869-203">Click Designer.</span></span>
+8. <span data-ttu-id="f2869-204">W drzewie zaznacz element „Dynamics 365 for Operations\Tabela”.</span><span class="sxs-lookup"><span data-stu-id="f2869-204">In the tree, select 'Dynamics 365 for Operations\Table'.</span></span>
+9. <span data-ttu-id="f2869-205">Kliknij opcję Dodaj element główny.</span><span class="sxs-lookup"><span data-stu-id="f2869-205">Click Add root.</span></span>
+10. <span data-ttu-id="f2869-206">W polu Nazwa wpisz „Firma”.</span><span class="sxs-lookup"><span data-stu-id="f2869-206">In the Name field, type 'Company'.</span></span>
+    * <span data-ttu-id="f2869-207">Firma</span><span class="sxs-lookup"><span data-stu-id="f2869-207">Company</span></span>  
+11. <span data-ttu-id="f2869-208">W polu Tabela wpisz „CompanyInfo”.</span><span class="sxs-lookup"><span data-stu-id="f2869-208">In the Table field, type 'CompanyInfo'.</span></span>
+    * <span data-ttu-id="f2869-209">CompanyInfo</span><span class="sxs-lookup"><span data-stu-id="f2869-209">CompanyInfo</span></span>  
+12. <span data-ttu-id="f2869-210">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="f2869-210">Click OK.</span></span>
+13. <span data-ttu-id="f2869-211">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="f2869-211">Click Edit.</span></span>
+14. <span data-ttu-id="f2869-212">W drzewie zaznacz element „Ciąg\ZŁĄCZ”.</span><span class="sxs-lookup"><span data-stu-id="f2869-212">In the tree, select 'String\CONCATENATE'.</span></span>
+15. <span data-ttu-id="f2869-213">Kliknij opcję Dodaj funkcję.</span><span class="sxs-lookup"><span data-stu-id="f2869-213">Click Add function.</span></span>
+16. <span data-ttu-id="f2869-214">W drzewie rozwiń węzeł „Firma”.</span><span class="sxs-lookup"><span data-stu-id="f2869-214">In the tree, expand 'Company'.</span></span>
+17. <span data-ttu-id="f2869-215">W drzewie rozwiń węzeł „Firma\find()”.</span><span class="sxs-lookup"><span data-stu-id="f2869-215">In the tree, expand 'Company\find()'.</span></span>
+18. <span data-ttu-id="f2869-216">W drzewie zaznacz element „Firma\find()\Nazwa”.</span><span class="sxs-lookup"><span data-stu-id="f2869-216">In the tree, select 'Company\find()\Name'.</span></span>
+19. <span data-ttu-id="f2869-217">Kliknij opcję Dodaj źródło danych.</span><span class="sxs-lookup"><span data-stu-id="f2869-217">Click Add data source.</span></span>
+20. <span data-ttu-id="f2869-218">W polu Formuła wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="f2869-218">In the Formula field, type a value.</span></span>
+    * <span data-ttu-id="f2869-219">CONCATENATE(Firma.'find()'.Nazwa, ";",</span><span class="sxs-lookup"><span data-stu-id="f2869-219">CONCATENATE(Company.'find()'.Name, ";",</span></span>  
+21. <span data-ttu-id="f2869-220">W drzewie zaznacz element „Firma\find()\Firma(DataArea)”.</span><span class="sxs-lookup"><span data-stu-id="f2869-220">In the tree, select 'Company\find()\Company(DataArea)'.</span></span>
+22. <span data-ttu-id="f2869-221">Kliknij opcję Dodaj źródło danych.</span><span class="sxs-lookup"><span data-stu-id="f2869-221">Click Add data source.</span></span>
+23. <span data-ttu-id="f2869-222">W polu Formuła wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="f2869-222">In the Formula field, type a value.</span></span>
+    * <span data-ttu-id="f2869-223">CONCATENATE(Firma.'find()'.Nazwa, ";", Firma.'find()'.DataArea)</span><span class="sxs-lookup"><span data-stu-id="f2869-223">CONCATENATE(Company.'find()'.Name, ";", Company.'find()'.DataArea)</span></span>  
+24. <span data-ttu-id="f2869-224">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="f2869-224">Click Save.</span></span>
+25. <span data-ttu-id="f2869-225">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="f2869-225">Close the page.</span></span>
+26. <span data-ttu-id="f2869-226">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="f2869-226">Click Save.</span></span>
+27. <span data-ttu-id="f2869-227">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="f2869-227">Close the page.</span></span>
+28. <span data-ttu-id="f2869-228">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="f2869-228">Close the page.</span></span>
+29. <span data-ttu-id="f2869-229">W polu Uruchom wersję roboczą wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="f2869-229">Select Yes in the Run Draft field.</span></span>
 
-## <a name="use-an-existing-er-model-mapping-configuration"></a>Używanie istniejącej konfiguracji mapowania modelu ER
-1. W drzewie zaznacz element „Przykładowy model danych\Przykładowy format”.
-2. Kliknij przycisk Uruchom.
-    * Należy pamiętać, że wybrana wersja robocza konfiguracji formatu ER nie może zostać wykonana, ponieważ więcej niż jedna konfiguracja mapowania modelu jest dostępna dla zdefiniowanego modelu danych wybranego jako źródło danych przy uruchamianiu formatu raportowania elektronicznego.   
-    * Następnie zdefiniujesz alternatywną konfigurację mapowania modelu jako tę, z której mapowania modelu będą wykorzystywane jako źródła danych dla uruchamiania formatu ER.   
-3. W drzewie zaznacz element „Przykładowy model danych\Przykładowe mapowanie (alternatywne)”.
-4. Wybierz opcję Tak w polu Domyślne dla mapowania modelu.
-5. W drzewie zaznacz element „Przykładowy model danych\Przykładowy format”.
-6. Kliknij przycisk Uruchom.
-7. Kliknij przycisk OK.
-    * Należy zwrócić uwagę, że domyślna konfiguracja mapowania modelu jest używana przez tę konfigurację formatu do generowania dokumentu elektronicznego (utworzony produkt wyjściowy zawiera kod firmy).  
+## <a name="use-an-existing-er-model-mapping-configuration"></a><span data-ttu-id="f2869-230">Używanie istniejącej konfiguracji mapowania modelu ER</span><span class="sxs-lookup"><span data-stu-id="f2869-230">Use an existing ER model mapping configuration</span></span>
+1. <span data-ttu-id="f2869-231">W drzewie zaznacz element „Przykładowy model danych\Przykładowy format”.</span><span class="sxs-lookup"><span data-stu-id="f2869-231">In the tree, select 'Sample data model\Sample format'.</span></span>
+2. <span data-ttu-id="f2869-232">Kliknij przycisk Uruchom.</span><span class="sxs-lookup"><span data-stu-id="f2869-232">Click Run.</span></span>
+    * <span data-ttu-id="f2869-233">Należy pamiętać, że wybrana wersja robocza konfiguracji formatu ER nie może zostać wykonana, ponieważ więcej niż jedna konfiguracja mapowania modelu jest dostępna dla zdefiniowanego modelu danych wybranego jako źródło danych przy uruchamianiu formatu raportowania elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="f2869-233">Note that the selected draft version of the ER format configuration can’t be executed because there is more than one model mapping configuration available for the undefined data model that has been selected as the data source of the running ER format.</span></span>   
+    * <span data-ttu-id="f2869-234">Następnie zdefiniujesz alternatywną konfigurację mapowania modelu jako tę, z której mapowania modelu będą wykorzystywane jako źródła danych dla uruchamiania formatu ER.</span><span class="sxs-lookup"><span data-stu-id="f2869-234">Next, you will define the alternative model mapping configuration as the one from which model mappings will be used as data sources for running ER format.</span></span>   
+3. <span data-ttu-id="f2869-235">W drzewie zaznacz element „Przykładowy model danych\Przykładowe mapowanie (alternatywne)”.</span><span class="sxs-lookup"><span data-stu-id="f2869-235">In the tree, select 'Sample data model\Sample mapping (alternative)'.</span></span>
+4. <span data-ttu-id="f2869-236">Wybierz opcję Tak w polu Domyślne dla mapowania modelu.</span><span class="sxs-lookup"><span data-stu-id="f2869-236">Select Yes in the Default for model mapping field.</span></span>
+5. <span data-ttu-id="f2869-237">W drzewie zaznacz element „Przykładowy model danych\Przykładowy format”.</span><span class="sxs-lookup"><span data-stu-id="f2869-237">In the tree, select 'Sample data model\Sample format'.</span></span>
+6. <span data-ttu-id="f2869-238">Kliknij przycisk Uruchom.</span><span class="sxs-lookup"><span data-stu-id="f2869-238">Click Run.</span></span>
+7. <span data-ttu-id="f2869-239">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="f2869-239">Click OK.</span></span>
+    * <span data-ttu-id="f2869-240">Należy zwrócić uwagę, że domyślna konfiguracja mapowania modelu jest używana przez tę konfigurację formatu do generowania dokumentu elektronicznego (utworzony produkt wyjściowy zawiera kod firmy).</span><span class="sxs-lookup"><span data-stu-id="f2869-240">Note that the default model mapping configuration is used by this format configuration for generating the electronic document (the created output contains the company code).</span></span>  
 
 

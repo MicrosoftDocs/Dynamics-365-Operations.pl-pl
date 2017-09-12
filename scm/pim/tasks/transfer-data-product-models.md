@@ -16,24 +16,24 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 0599c6e8af6c5c38bf0883e35d908757ddee05b2
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e64563703ed2fa7d1f1f3ca325ab275aa8420d01
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="transfer-data-for-product-models"></a>Przesyłanie danych dla modeli produktu
+# <a name="transfer-data-for-product-models"></a><span data-ttu-id="a9661-103">Przesyłanie danych dla modeli produktu</span><span class="sxs-lookup"><span data-stu-id="a9661-103">Transfer data for product models</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Eksportowanie danych modelu konfiguracji produktu wymaga dostępności co najmniej jednego modelu produktu. Ta procedura wykorzystuje model Głośnik o wysokiej jakości z firmy demonstracyjnej USMF, aby pokazać, jak mają być eksportowane dane dla tego modelu.
+<span data-ttu-id="a9661-104">Eksportowanie danych modelu konfiguracji produktu wymaga dostępności co najmniej jednego modelu produktu.</span><span class="sxs-lookup"><span data-stu-id="a9661-104">Exporting data for a product configuration model requires that you have at least one product model available.</span></span> <span data-ttu-id="a9661-105">Ta procedura wykorzystuje model Głośnik o wysokiej jakości z firmy demonstracyjnej USMF, aby pokazać, jak mają być eksportowane dane dla tego modelu.</span><span class="sxs-lookup"><span data-stu-id="a9661-105">This procedure uses the High end speaker model in the demo company USMF to show you how to export data for this model.</span></span>
 
-1. Kliknij opcję Definicja modelu wariantu produktu.
-2. Kliknij opcję Modele konfiguracji produktu.
-3. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Do tej procedury wybierz model Głośnik o wysokiej jakości.  
-4. W okienku akcji kliknij pozycję Model.
-5. Kliknij opcję Eksportuj model produktu.
-    * Zachowanie pobierania różni się między przeglądarkami i zależy od sposobu skonfigurowania ustawień zabezpieczeń.  
+1. <span data-ttu-id="a9661-106">Kliknij opcję Definicja modelu wariantu produktu.</span><span class="sxs-lookup"><span data-stu-id="a9661-106">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="a9661-107">Kliknij opcję Modele konfiguracji produktu.</span><span class="sxs-lookup"><span data-stu-id="a9661-107">Click Product configuration models.</span></span>
+3. <span data-ttu-id="a9661-108">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="a9661-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="a9661-109">Do tej procedury wybierz model Głośnik o wysokiej jakości.</span><span class="sxs-lookup"><span data-stu-id="a9661-109">Select the High end speaker model for this procedure.</span></span>  
+4. <span data-ttu-id="a9661-110">W okienku akcji kliknij pozycję Model.</span><span class="sxs-lookup"><span data-stu-id="a9661-110">On the Action Pane, click Model.</span></span>
+5. <span data-ttu-id="a9661-111">Kliknij opcję Eksportuj model produktu.</span><span class="sxs-lookup"><span data-stu-id="a9661-111">Click Export product model.</span></span>
+    * <span data-ttu-id="a9661-112">Zachowanie pobierania różni się między przeglądarkami i zależy od sposobu skonfigurowania ustawień zabezpieczeń.</span><span class="sxs-lookup"><span data-stu-id="a9661-112">The download behavior varies from browser to browser depending on how the security settings are set up.</span></span>  
 
 

@@ -16,30 +16,30 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: c34ddb48cb5acc4c9d7023f2eeefaac5790f9bcc
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 183bbba80351c19d2218c577020b1e852ab45ac4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="view-outbound-planned-intercompany-demand"></a>Wyświetlanie wychodzących danych o zaplanowanym popycie międzyfirmowym
+# <a name="view-outbound-planned-intercompany-demand"></a><span data-ttu-id="ef685-103">Wyświetlanie wychodzących danych o zaplanowanym popycie międzyfirmowym</span><span class="sxs-lookup"><span data-stu-id="ef685-103">View outbound planned intercompany demand</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób wyświetlania wszystkich zamówień planowanych, które zostaną zrealizowane przez dostawcę międzyfirmowego. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej DEMF.
+<span data-ttu-id="ef685-104">W tej procedurze pokazano sposób wyświetlania wszystkich zamówień planowanych, które zostaną zrealizowane przez dostawcę międzyfirmowego.</span><span class="sxs-lookup"><span data-stu-id="ef685-104">This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor.</span></span> <span data-ttu-id="ef685-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej DEMF.</span><span class="sxs-lookup"><span data-stu-id="ef685-105">The demo data company used to create this procedure is DEMF.</span></span>
 
-1. Kliknij opcję Planowanie główne.
-2. W polu Plan wprowadź lub wybierz wartość.
-    * W polu Plan zaznacz plan 10.  
-3. Kliknij przycisk Uruchom.
-4. W polu Liczba wątków wprowadź liczbę.
-    * Reprezentuje liczbę równoległych wątków, które mają być używane do planowania głównego.  
-5. Kliknij przycisk OK.
-    * Może to trochę potrwać.  
-6. Kliknij opcję Zaplanowany popyt międzyfirmowy.
-7. Kliknij opcję Wychodzące dane o zaplanowanym popycie międzyfirmowym.
-    * Ta strona zawiera przegląd całego zaplanowanego zapotrzebowanie, które zostanie zaspokojone przez dostawcę w wewnętrznym łańcuchu dostaw.  
-8. Rozwiń sekcję Szczegóły dotyczące popytu przesyłane od odbiorcy do dostawcy.
-    * W tej sekcji można zobaczyć szczegóły dotyczące sposobu zaspokojenia popytu. Zanim zobaczysz tutaj dodatkowe informacje, należy poczekać na wykonanie planowania głównego w firmie dostarczającej.  
+1. <span data-ttu-id="ef685-106">Kliknij opcję Planowanie główne.</span><span class="sxs-lookup"><span data-stu-id="ef685-106">Click Master planning.</span></span>
+2. <span data-ttu-id="ef685-107">W polu Plan wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="ef685-107">In the Plan field, enter or select a value.</span></span>
+    * <span data-ttu-id="ef685-108">W polu Plan zaznacz plan 10.</span><span class="sxs-lookup"><span data-stu-id="ef685-108">In the Plan field, select plan 10.</span></span>  
+3. <span data-ttu-id="ef685-109">Kliknij przycisk Uruchom.</span><span class="sxs-lookup"><span data-stu-id="ef685-109">Click Run.</span></span>
+4. <span data-ttu-id="ef685-110">W polu Liczba wątków wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="ef685-110">In the Number of threads field, enter a number.</span></span>
+    * <span data-ttu-id="ef685-111">Reprezentuje liczbę równoległych wątków, które mają być używane do planowania głównego.</span><span class="sxs-lookup"><span data-stu-id="ef685-111">This represents the number of parallel threads to be used for master planning.</span></span>  
+5. <span data-ttu-id="ef685-112">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="ef685-112">Click OK.</span></span>
+    * <span data-ttu-id="ef685-113">Może to trochę potrwać.</span><span class="sxs-lookup"><span data-stu-id="ef685-113">This may take a while.</span></span>  
+6. <span data-ttu-id="ef685-114">Kliknij opcję Zaplanowany popyt międzyfirmowy.</span><span class="sxs-lookup"><span data-stu-id="ef685-114">Click Planned intercompany demand.</span></span>
+7. <span data-ttu-id="ef685-115">Kliknij opcję Wychodzące dane o zaplanowanym popycie międzyfirmowym.</span><span class="sxs-lookup"><span data-stu-id="ef685-115">Click Outbound planned intercompany demand.</span></span>
+    * <span data-ttu-id="ef685-116">Ta strona zawiera przegląd całego zaplanowanego zapotrzebowanie, które zostanie zaspokojone przez dostawcę w wewnętrznym łańcuchu dostaw.</span><span class="sxs-lookup"><span data-stu-id="ef685-116">This page provides an overview of all the planned demand that will be fulfilled by an internal supply chain vendor.</span></span>  
+8. <span data-ttu-id="ef685-117">Rozwiń sekcję Szczegóły dotyczące popytu przesyłane od odbiorcy do dostawcy.</span><span class="sxs-lookup"><span data-stu-id="ef685-117">Expand the Upstream demand details section.</span></span>
+    * <span data-ttu-id="ef685-118">W tej sekcji można zobaczyć szczegóły dotyczące sposobu zaspokojenia popytu.</span><span class="sxs-lookup"><span data-stu-id="ef685-118">In this section, you can see the details about how the demand will be fulfilled.</span></span> <span data-ttu-id="ef685-119">Zanim zobaczysz tutaj dodatkowe informacje, należy poczekać na wykonanie planowania głównego w firmie dostarczającej.</span><span class="sxs-lookup"><span data-stu-id="ef685-119">You may need to wait for master planning to be run in the supply company before you can see additional information here.</span></span>  
 
 

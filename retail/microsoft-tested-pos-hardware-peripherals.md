@@ -19,54 +19,54 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f5f090eb406488ecfcd502c2cc6e3a63ca16111a
+ms.sourcegitcommit: 97d374230cc6e833b9f585de000e1252f2a78b9d
+ms.openlocfilehash: 17738e794f18fddc7320b1b40ef55376fba0de24
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 
-# <a name="pos-hardware-peripherals"></a>Urządzenia peryferyjne punktu sprzedaży
+# <a name="pos-hardware-peripherals"></a><span data-ttu-id="41f6f-103">Urządzenia peryferyjne punktu sprzedaży</span><span class="sxs-lookup"><span data-stu-id="41f6f-103">POS hardware peripherals</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Aplikacje Retail Modern Point of Sale (POS) i Cloud POS mogą wykorzystywać różnorodne urządzenia peryferyjne dla punktów sprzedaży. Obsługa wielu interfejsów i opcji wdrażania pozwala realizować różne scenariusze biznesowe wymagane przez sprzedawców detalicznych. 
+<span data-ttu-id="41f6f-104">Aplikacje Retail Modern Point of Sale (POS) i Cloud POS mogą wykorzystywać różnorodne urządzenia peryferyjne dla punktów sprzedaży. Obsługa wielu interfejsów i opcji wdrażania pozwala realizować różne scenariusze biznesowe wymagane przez sprzedawców detalicznych.</span><span class="sxs-lookup"><span data-stu-id="41f6f-104">Retail Modern point of sale (POS) and Cloud POS can utilize a wide range of POS hardware peripherals, with multiple interfaces and deployment options to achieve a retailer’s various business scenarios.</span></span> 
 
-Aby zapewnić obsługę jak najszerszej gamy i modeli urządzeń różnych producentów, moduł punktu sprzedaży wykorzystuje standardowe interfejsy, takie jak OLE dla programu Retail POS (OPOS), sterowniki urządzeń systemu Windows oraz interfejsy programowania aplikacji (API) dla punktów usług systemu Windows. Ogólnie rzecz biorąc moduł punktu sprzedaży będzie działał na tych urządzeniach pod warunkiem zapewnienia odpowiedniego sterownika. Jednak ponieważ implementacja tych standardów może być nieco inna u każdego producenta sprzętu i twórcy oprogramowania, często występują różnice w obsługiwanych funkcjach lub zachowaniach.
+<span data-ttu-id="41f6f-105">Aby zapewnić obsługę jak najszerszej gamy i modeli urządzeń różnych producentów, moduł punktu sprzedaży wykorzystuje standardowe interfejsy, takie jak OLE dla programu Retail POS (OPOS), sterowniki urządzeń systemu Windows oraz interfejsy programowania aplikacji (API) dla punktów usług systemu Windows.</span><span class="sxs-lookup"><span data-stu-id="41f6f-105">To support the widest selection of devices across manufactures and models, POS utilizes standard interfaces such as OLE for Retail POS (OPOS), Windows device drivers, and Windows point of service application program interfaces (APIs).</span></span> <span data-ttu-id="41f6f-106">Ogólnie rzecz biorąc moduł punktu sprzedaży będzie działał na tych urządzeniach pod warunkiem zapewnienia odpowiedniego sterownika.</span><span class="sxs-lookup"><span data-stu-id="41f6f-106">Generally, POS will work on these devices provided that the appropriate driver is supplied.</span></span> <span data-ttu-id="41f6f-107">Jednak ponieważ implementacja tych standardów może być nieco inna u każdego producenta sprzętu i twórcy oprogramowania, często występują różnice w obsługiwanych funkcjach lub zachowaniach.</span><span class="sxs-lookup"><span data-stu-id="41f6f-107">However, because each manufacturer and software developer’s implementation of these standards can vary, there are often differences in supported capabilities or behaviors.</span></span>
 
-Poniższa lista zawiera modele urządzeń w każdej klasie, które zostały wewnętrznie sprawdzone przez Microsoft.
+<span data-ttu-id="41f6f-108">Poniższa lista zawiera modele urządzeń w każdej klasie, które zostały wewnętrznie sprawdzone przez Microsoft.</span><span class="sxs-lookup"><span data-stu-id="41f6f-108">The following list includes device models, in each class, that have been tested internally by Microsoft.</span></span>
 
-**Urządzenia OPOS**
+<span data-ttu-id="41f6f-109">**Urządzenia OPOS**</span><span class="sxs-lookup"><span data-stu-id="41f6f-109">**OPOS devices**</span></span>
 
--   Czytnik kodów kreskowych — Motorola DS9208
--   Czytnik kart magnetycznych — HP IDRA-334133, SD Magtek - 21073062
--   Wyświetlacz wierszowy — Epson M58DC
--   Konsola PIN — Verifone 1000SE
--   Konsola do podpisu elektronicznego — Scriptel ST1550
--   Drukarka — EPSON TM-T88IV, TMT88V
--   Szuflada kasowa — Star SMD2-1317BK44
--   Waga — Datalogic Magellan 8400
+-   <span data-ttu-id="41f6f-110">Czytnik kodów kreskowych — Motorola DS9208</span><span class="sxs-lookup"><span data-stu-id="41f6f-110">Barcode – Motorola DS9208</span></span>
+-   <span data-ttu-id="41f6f-111">Czytnik kart magnetycznych — HP IDRA-334133, SD Magtek - 21073062</span><span class="sxs-lookup"><span data-stu-id="41f6f-111">MSR – HP IDRA-334133, Magtek PN - 21073062</span></span>
+-   <span data-ttu-id="41f6f-112">Wyświetlacz wierszowy — Epson M58DC</span><span class="sxs-lookup"><span data-stu-id="41f6f-112">LineDisplay – Epson M58DC</span></span>
+-   <span data-ttu-id="41f6f-113">Konsola PIN — Verifone 1000SE</span><span class="sxs-lookup"><span data-stu-id="41f6f-113">Pinpad – Verifone 1000SE</span></span>
+-   <span data-ttu-id="41f6f-114">Konsola do podpisu elektronicznego — Scriptel ST1550</span><span class="sxs-lookup"><span data-stu-id="41f6f-114">Signature pad – Scriptel ST1550</span></span>
+-   <span data-ttu-id="41f6f-115">Drukarka — EPSON TM-T88IV, TMT88V</span><span class="sxs-lookup"><span data-stu-id="41f6f-115">Printer – EPSON TM-T88IV, TMT88V</span></span>
+-   <span data-ttu-id="41f6f-116">Szuflada kasowa — Star SMD2-1317BK44</span><span class="sxs-lookup"><span data-stu-id="41f6f-116">Cash drawer – Star SMD2-1317BK44</span></span>
+-   <span data-ttu-id="41f6f-117">Waga — Datalogic Magellan 8400</span><span class="sxs-lookup"><span data-stu-id="41f6f-117">Scale – Datalogic Magellan 8400</span></span>
 
-**Czytnik kart magnetycznych podłączany do klawiatury**
+<span data-ttu-id="41f6f-118">**Czytnik kart magnetycznych podłączany do klawiatury**</span><span class="sxs-lookup"><span data-stu-id="41f6f-118">**Keyboard wedge MSR**</span></span>
 
--   Magtek USB
+-   <span data-ttu-id="41f6f-119">Magtek USB</span><span class="sxs-lookup"><span data-stu-id="41f6f-119">Magtek USB</span></span>
 
-**Terminal płatniczy**
+<span data-ttu-id="41f6f-120">**Terminal płatniczy**</span><span class="sxs-lookup"><span data-stu-id="41f6f-120">**Payment terminal**</span></span>
 
--   Equinox L3500
--   Verifone MX925
+-   <span data-ttu-id="41f6f-121">Equinox L3500</span><span class="sxs-lookup"><span data-stu-id="41f6f-121">Equinox L3500</span></span>
+-   <span data-ttu-id="41f6f-122">Verifone MX925</span><span class="sxs-lookup"><span data-stu-id="41f6f-122">Verifone MX925</span></span>
 
-**Urządzenia sieciowe**
+<span data-ttu-id="41f6f-123">**Urządzenia sieciowe**</span><span class="sxs-lookup"><span data-stu-id="41f6f-123">**Network devices**</span></span>
 
--   Drukarka — Star TSP650II
--   Szuflada kasowa — APG Atwood
--   Terminal płatniczy — MX915, MX925
+-   <span data-ttu-id="41f6f-124">Drukarka — Star TSP650II</span><span class="sxs-lookup"><span data-stu-id="41f6f-124">Printer – Star TSP650II</span></span>
+-   <span data-ttu-id="41f6f-125">Szuflada kasowa — APG Atwood</span><span class="sxs-lookup"><span data-stu-id="41f6f-125">Cash drawer – APG Atwood</span></span>
+-   <span data-ttu-id="41f6f-126">Terminal płatniczy — MX915, MX925</span><span class="sxs-lookup"><span data-stu-id="41f6f-126">Payment terminal – MX915, MX925</span></span>
 
-**Bezpośrednio do MPOS, tylko IPC**
+<span data-ttu-id="41f6f-127">**Bezpośrednio do MPOS, tylko IPC**</span><span class="sxs-lookup"><span data-stu-id="41f6f-127">**MPOS direct IPC only**</span></span>
 
--   Czytnik kodów kreskowych — Honeywell 1900, HP LS2208
--   Czytnik kart magnetycznych — SD Magtek - 21073075
+-   <span data-ttu-id="41f6f-128">Czytnik kodów kreskowych — Honeywell 1900, HP LS2208</span><span class="sxs-lookup"><span data-stu-id="41f6f-128">Barcode – Honeywell 1900, HP LS2208</span></span>
+-   <span data-ttu-id="41f6f-129">Czytnik kart magnetycznych — SD Magtek - 21073075</span><span class="sxs-lookup"><span data-stu-id="41f6f-129">MSR – Magtek PN - 21073075</span></span>
 
 
 

@@ -20,33 +20,33 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c548a2abcda261cb2bdf9d22425227e857df9c07
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 4e7f765f31ba34481cca78155e77eca61b106d50
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="use-tracing-for-explosion"></a>Korzystanie z funkcji śledzenia rozłożenia
+# <a name="use-tracing-for-explosion"></a><span data-ttu-id="a57ab-103">Korzystanie z funkcji śledzenia rozłożenia</span><span class="sxs-lookup"><span data-stu-id="a57ab-103">Use tracing for explosion</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym artykule wyjaśniono, jak za pomocą funkcji śledzenia można badać przyczyny stojące za wynikiem rozłożenia zamówienia.
+<span data-ttu-id="a57ab-104">W tym artykule wyjaśniono, jak za pomocą funkcji śledzenia można badać przyczyny stojące za wynikiem rozłożenia zamówienia.</span><span class="sxs-lookup"><span data-stu-id="a57ab-104">This article explains how you can use tracing to explore the causes behind the outcome of an order explosion.</span></span>
 
-Po włączeniu śledzenia można wyświetlać informacje o czynnikach, które wpływają na wynik rozbicia danego zamówienia. W przykładach poniżej pokazano, jak używać informacji uzyskiwanych w drodze śledzenia:
+<span data-ttu-id="a57ab-105">Po włączeniu śledzenia można wyświetlać informacje o czynnikach, które wpływają na wynik rozbicia danego zamówienia.</span><span class="sxs-lookup"><span data-stu-id="a57ab-105">By enabling tracing, you can view information about the factors that contributed to the outcome of the explosion of a particular order.</span></span> <span data-ttu-id="a57ab-106">W przykładach poniżej pokazano, jak używać informacji uzyskiwanych w drodze śledzenia:</span><span class="sxs-lookup"><span data-stu-id="a57ab-106">The following examples show how you can use the tracing information:</span></span>
 
--   Wyświetlanie relacji między działaniami na zamówieniach planowanych w celu zoptymalizowania rezerwacji zapasów i łańcucha dostaw.
--   Wyświetlanie relacji do zamówień, które zostały już zatwierdzone. Można też skoncentrować się na automatycznym ustalaniu pochodnych zapotrzebowań i dokładnym określaniu priorytetu zleceń.
--   Symulowanie wyników planowania pod kątem optymalizacji parametrów planowania.
--   Identyfikacja źródła informacji, takich jak daty produkcji, oferty i priorytety dla zamówienia.
+-   <span data-ttu-id="a57ab-107">Wyświetlanie relacji między działaniami na zamówieniach planowanych w celu zoptymalizowania rezerwacji zapasów i łańcucha dostaw.</span><span class="sxs-lookup"><span data-stu-id="a57ab-107">View relations between the actions on planned orders to optimize the supply chain and inventory reservations.</span></span>
+-   <span data-ttu-id="a57ab-108">Wyświetlanie relacji do zamówień, które zostały już zatwierdzone.</span><span class="sxs-lookup"><span data-stu-id="a57ab-108">View relations to orders that are already approved.</span></span> <span data-ttu-id="a57ab-109">Można też skoncentrować się na automatycznym ustalaniu pochodnych zapotrzebowań i dokładnym określaniu priorytetu zleceń.</span><span class="sxs-lookup"><span data-stu-id="a57ab-109">You can focus on automatically firming derived requirements and then prioritize orders more accurately.</span></span>
+-   <span data-ttu-id="a57ab-110">Symulowanie wyników planowania pod kątem optymalizacji parametrów planowania.</span><span class="sxs-lookup"><span data-stu-id="a57ab-110">Simulate planning results to determine whether the planning parameters are optimal.</span></span>
+-   <span data-ttu-id="a57ab-111">Identyfikacja źródła informacji, takich jak daty produkcji, oferty i priorytety dla zamówienia.</span><span class="sxs-lookup"><span data-stu-id="a57ab-111">Identify how information such as production dates, quantities, and priorities for an order were determined.</span></span>
 
-Można wyświetlić szczegółowe informacje o prognozach i działaniach dla wybranego zamówienia. Na stronie **Rozłożenie** dane śledzenia są dostępne na karcie **Wyjaśnienie** w górnym panelu. Śledzenie włącza się w chwili rozłożenia zamówienia. Aby uruchomić śledzenie zamówienia, kliknij **Aktualizacja**, a następnie zaznacz pole wyboru **Włącz śledzenie**. Za pomocą **Znajdź tekst** możesz szukać w dzienniku konkretnych informacji. Wyniki wyszukiwania zostaną wyróżnione w drzewie.
+<span data-ttu-id="a57ab-112">Można wyświetlić szczegółowe informacje o prognozach i działaniach dla wybranego zamówienia.</span><span class="sxs-lookup"><span data-stu-id="a57ab-112">You can view details about futures and actions for a selected order.</span></span> <span data-ttu-id="a57ab-113">Na stronie **Rozłożenie** dane śledzenia są dostępne na karcie **Wyjaśnienie** w górnym panelu.</span><span class="sxs-lookup"><span data-stu-id="a57ab-113">On the **Explosion** page, tracing information is available on the **Explanation** tab in the upper pane.</span></span> <span data-ttu-id="a57ab-114">Śledzenie włącza się w chwili rozłożenia zamówienia.</span><span class="sxs-lookup"><span data-stu-id="a57ab-114">Tracing occurs when you explode an order.</span></span> <span data-ttu-id="a57ab-115">Aby uruchomić śledzenie zamówienia, kliknij **Aktualizacja**, a następnie zaznacz pole wyboru **Włącz śledzenie**.</span><span class="sxs-lookup"><span data-stu-id="a57ab-115">To start tracing for the order, click **Update**, and then select the **Enable trace** check box.</span></span> <span data-ttu-id="a57ab-116">Za pomocą **Znajdź tekst** możesz szukać w dzienniku konkretnych informacji.</span><span class="sxs-lookup"><span data-stu-id="a57ab-116">You can use the **Find text** field to search the log for specific information.</span></span> <span data-ttu-id="a57ab-117">Wyniki wyszukiwania zostaną wyróżnione w drzewie.</span><span class="sxs-lookup"><span data-stu-id="a57ab-117">Search results are highlighted in the tree.</span></span>
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="see-also"></a><span data-ttu-id="a57ab-118">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="a57ab-118">See also</span></span>
 --------
 
-[Plany główne](master-plans.md)
+[<span data-ttu-id="a57ab-119">Plany główne</span><span class="sxs-lookup"><span data-stu-id="a57ab-119">Master plans</span></span>](master-plans.md)
 
 
 

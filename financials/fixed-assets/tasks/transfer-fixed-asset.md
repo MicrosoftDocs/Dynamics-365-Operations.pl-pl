@@ -16,34 +16,34 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ebde1e8bd8a87b44dd77b9050d05d6c2f4774ef2
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b193cf6fbed810f0d5234514573d0f5c23c7b2c8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="transfer-a-fixed-asset"></a>Przenoszenie środka trwałego
+# <a name="transfer-a-fixed-asset"></a><span data-ttu-id="c3272-103">Przenoszenie środka trwałego</span><span class="sxs-lookup"><span data-stu-id="c3272-103">Transfer a fixed asset</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tym przewodniku po zadaniach zostaną przeniesienie informacje finansowe księgi środków trwałych z jednego zestawu wymiarów finansowych do nowego zestawu wymiarów finansowych.  Przewodnik korzysta z roli Księgowy i danych firmy demonstracyjnej USMF.
+<span data-ttu-id="c3272-104">W tym przewodniku po zadaniach zostaną przeniesienie informacje finansowe księgi środków trwałych z jednego zestawu wymiarów finansowych do nowego zestawu wymiarów finansowych.</span><span class="sxs-lookup"><span data-stu-id="c3272-104">This task guide will transfer the financial information for a fixed asset book from one financial dimension set to a new financial dimension set.</span></span>  <span data-ttu-id="c3272-105">Przewodnik korzysta z roli Księgowy i danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="c3272-105">It uses the Accountant role and demo data for the USMF legal entity.</span></span>
 
-1. Przejdź do Środki trwałe > Środki trwałe > Środki trwałe.
-2. Na liście odszukaj i zaznacz środek trwały, który ma zostać przeniesiony.
-3. W okienku akcji kliknij pozycję Środek trwały.
-4. Kliknij opcję Przenieś środki trwałe.
-5. W polu Data przeniesienia wprowadź datę.
-6. Wprowadź komentarze opisujące przeniesienie.
-    * Ta lista przedstawia wszystkie księgi dla środka trwałego.  
-7. Oznacz księgi, które mają zostać przeniesione do nowego zestawu wymiarów finansowych.
-    * Ta lista przedstawia istniejące wartości wymiarów finansowych dla wybranej księgi.  
-    * Zaznacz wymiar finansowy, który chcesz zaktualizować dla wybranej księgi środków trwałych.  
-8. W polu Wymiar finansowy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-    * Ustaw wartości odpowiednich innych wymiarów finansowych.  
-    * Po przeniesieniu zmieniają się wszystkie wartości wymiarów finansowych, niezależnie od tego, czy wartość została wprowadzona czy też pole było puste. Na przykład mogła być wprowadzono wartość wymiaru Jednostka biznesowa, a niewypełnione wymiary Centrum kosztów i Dział. Jeśli struktura konta pozwala na puste wartości wymiarów Centrum kosztu i Dział, przeniesienie spowoduje, że każdy model ewidencji otrzyma nową wartość wymiaru Jednostka biznesowa, a puste wartości wymiarów Centrum kosztów i Dział.  
-9. Kliknij przycisk Aktualizuj.
-    * Przed sfinalizowaniem przeniesienia masz możliwość podglądu efektów zmian.  
-    * Przejrzyj wyniki przed przeniesieniem ksiąg środków trwałych.  
-10. Kliknij przycisk Przeniesienie.
+1. <span data-ttu-id="c3272-106">Przejdź do Środki trwałe > Środki trwałe > Środki trwałe.</span><span class="sxs-lookup"><span data-stu-id="c3272-106">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
+2. <span data-ttu-id="c3272-107">Na liście odszukaj i zaznacz środek trwały, który ma zostać przeniesiony.</span><span class="sxs-lookup"><span data-stu-id="c3272-107">In the list, find and select the fixed asset to transfer.</span></span>
+3. <span data-ttu-id="c3272-108">W okienku akcji kliknij pozycję Środek trwały.</span><span class="sxs-lookup"><span data-stu-id="c3272-108">On the Action Pane, click Fixed asset.</span></span>
+4. <span data-ttu-id="c3272-109">Kliknij opcję Przenieś środki trwałe.</span><span class="sxs-lookup"><span data-stu-id="c3272-109">Click Transfer fixed assets.</span></span>
+5. <span data-ttu-id="c3272-110">W polu Data przeniesienia wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="c3272-110">In the Transfer date field, enter a date.</span></span>
+6. <span data-ttu-id="c3272-111">Wprowadź komentarze opisujące przeniesienie.</span><span class="sxs-lookup"><span data-stu-id="c3272-111">Enter comments to describe the transfer.</span></span>
+    * <span data-ttu-id="c3272-112">Ta lista przedstawia wszystkie księgi dla środka trwałego.</span><span class="sxs-lookup"><span data-stu-id="c3272-112">This list shows all books for the fixed asset.</span></span>  
+7. <span data-ttu-id="c3272-113">Oznacz księgi, które mają zostać przeniesione do nowego zestawu wymiarów finansowych.</span><span class="sxs-lookup"><span data-stu-id="c3272-113">Mark the books you want to transfer to a new financial dimension set.</span></span>
+    * <span data-ttu-id="c3272-114">Ta lista przedstawia istniejące wartości wymiarów finansowych dla wybranej księgi.</span><span class="sxs-lookup"><span data-stu-id="c3272-114">This list shows the existing financial dimension values for the selected book.</span></span>  
+    * <span data-ttu-id="c3272-115">Zaznacz wymiar finansowy, który chcesz zaktualizować dla wybranej księgi środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="c3272-115">Select the financial dimension you want to update for the selected fixed asset book.</span></span>  
+8. <span data-ttu-id="c3272-116">W polu Wymiar finansowy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="c3272-116">In the Financial dimension field, click the drop down button to open the lookup.</span></span>
+    * <span data-ttu-id="c3272-117">Ustaw wartości odpowiednich innych wymiarów finansowych.</span><span class="sxs-lookup"><span data-stu-id="c3272-117">Set other financial dimension values as appropriate.</span></span>  
+    * <span data-ttu-id="c3272-118">Po przeniesieniu zmieniają się wszystkie wartości wymiarów finansowych, niezależnie od tego, czy wartość została wprowadzona czy też pole było puste.</span><span class="sxs-lookup"><span data-stu-id="c3272-118">All financial dimension values change when a transfer occurs, whether a value has been entered or left blank.</span></span> <span data-ttu-id="c3272-119">Na przykład mogła być wprowadzono wartość wymiaru Jednostka biznesowa, a niewypełnione wymiary Centrum kosztów i Dział.</span><span class="sxs-lookup"><span data-stu-id="c3272-119">For example, if you entered a value for the BusinessUnit and left the CostCenter and Department financial dimensions blank.</span></span> <span data-ttu-id="c3272-120">Jeśli struktura konta pozwala na puste wartości wymiarów Centrum kosztu i Dział, przeniesienie spowoduje, że każdy model ewidencji otrzyma nową wartość wymiaru Jednostka biznesowa, a puste wartości wymiarów Centrum kosztów i Dział.</span><span class="sxs-lookup"><span data-stu-id="c3272-120">If your account structure allows blank values for CostCenter and Department, the transfer would result in each value model having the new value for BusinessUnit and a blank value for CostCenter and Department.</span></span>  
+9. <span data-ttu-id="c3272-121">Kliknij przycisk Aktualizuj.</span><span class="sxs-lookup"><span data-stu-id="c3272-121">Click Update.</span></span>
+    * <span data-ttu-id="c3272-122">Przed sfinalizowaniem przeniesienia masz możliwość podglądu efektów zmian.</span><span class="sxs-lookup"><span data-stu-id="c3272-122">You have the opportunity to preview the changes before finalizing the transfer.</span></span>  
+    * <span data-ttu-id="c3272-123">Przejrzyj wyniki przed przeniesieniem ksiąg środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="c3272-123">Review results before transferring the fixed asset books.</span></span>  
+10. <span data-ttu-id="c3272-124">Kliknij przycisk Przeniesienie.</span><span class="sxs-lookup"><span data-stu-id="c3272-124">Click Transfer.</span></span>
 
 

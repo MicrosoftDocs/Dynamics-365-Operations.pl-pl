@@ -16,29 +16,29 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 6abe6bf4227f8de3c81e03820c2349b6f0c0a5e0
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 3c98d9119b0bb8280591ef39dcfa1052d847b581
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-dimension-based-product-master"></a>Tworzenie produktu głównego opartego na wymiarach
+# <a name="create-a-dimension-based-product-master"></a><span data-ttu-id="9581d-103">Tworzenie produktu głównego opartego na wymiarach</span><span class="sxs-lookup"><span data-stu-id="9581d-103">Create a dimension-based product master</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób tworzenia nowego produktu głównego przy użyciu technologii konfiguracji opartej na wymiarach. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Jest to pierwsza z ośmiu procedur opisujących sposób tworzenia kombinacji dla konfiguracji opartej na wymiarach.
+<span data-ttu-id="9581d-104">W tej procedurze pokazano sposób tworzenia nowego produktu głównego przy użyciu technologii konfiguracji opartej na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="9581d-104">This procedure shows how to create a new product master with dimension-based configuration technology.</span></span> <span data-ttu-id="9581d-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="9581d-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="9581d-106">Jest to pierwsza z ośmiu procedur opisujących sposób tworzenia kombinacji dla konfiguracji opartej na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="9581d-106">This is the first procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
 
-1. Wybierz kolejno opcje Zarządzanie informacjami o produktach > Produkty > Produkty główne.
-2. Kliknij przycisk Nowy.
-3. W polu Numer produktu wpisz wartość.
-    * Wprowadzenie numeru produktu jest wymagane, jeśli dla pola numeru produktu nie skonfigurowano sekwencji numeracji.  
-4. W polu Nazwa produktu wpisz wartość.
-5. W polu Grupa wymiarów produktu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-6. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Wybierz wymiary konfiguracji dla tej procedury.  
-7. Na liście kliknij łącze w wybranym wierszu.
-8. W polu Technologia konfiguracji wybierz opcję.
-    * Wybierz technologię Konfiguracja oparta na wymiarach.  
-9. Kliknij przycisk OK.
+1. <span data-ttu-id="9581d-107">Wybierz kolejno opcje Zarządzanie informacjami o produktach > Produkty > Produkty główne.</span><span class="sxs-lookup"><span data-stu-id="9581d-107">Go to Product information management > Products > Product masters.</span></span>
+2. <span data-ttu-id="9581d-108">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="9581d-108">Click New.</span></span>
+3. <span data-ttu-id="9581d-109">W polu Numer produktu wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="9581d-109">In the Product number field, type a value.</span></span>
+    * <span data-ttu-id="9581d-110">Wprowadzenie numeru produktu jest wymagane, jeśli dla pola numeru produktu nie skonfigurowano sekwencji numeracji.</span><span class="sxs-lookup"><span data-stu-id="9581d-110">Entering a product number is mandatory if no number sequence has been set up for the product number field.</span></span>  
+4. <span data-ttu-id="9581d-111">W polu Nazwa produktu wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="9581d-111">In the Product name field, type a value.</span></span>
+5. <span data-ttu-id="9581d-112">W polu Grupa wymiarów produktu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="9581d-112">In the Product dimension group field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="9581d-113">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="9581d-113">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="9581d-114">Wybierz wymiary konfiguracji dla tej procedury.</span><span class="sxs-lookup"><span data-stu-id="9581d-114">Select the configuration dimension for this procedure.</span></span>  
+7. <span data-ttu-id="9581d-115">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="9581d-115">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="9581d-116">W polu Technologia konfiguracji wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="9581d-116">In the Configuration technology field, select an option.</span></span>
+    * <span data-ttu-id="9581d-117">Wybierz technologię Konfiguracja oparta na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="9581d-117">Select the Dimension-based configuration technology.</span></span>  
+9. <span data-ttu-id="9581d-118">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="9581d-118">Click OK.</span></span>
 
 

@@ -16,32 +16,32 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 557ef6ddc1918d95a05c53579b1a02865eebf501
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 07a89782498fe47879a36cc9379e5af1a6f5ddce
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="view-journal-entries-or-transactions"></a>Wyświetlanie wpisów w arkuszu lub transakcji
+# <a name="view-journal-entries-or-transactions"></a><span data-ttu-id="6bdd0-103">Wyświetlanie wpisów w arkuszu lub transakcji</span><span class="sxs-lookup"><span data-stu-id="6bdd0-103">View journal entries or transactions</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób używania zapytań o transakcje w załącznikach w celu wyszukiwania wpisów w arkuszu lub transakcji.
+<span data-ttu-id="6bdd0-104">W tej procedurze pokazano sposób używania zapytań o transakcje w załącznikach w celu wyszukiwania wpisów w arkuszu lub transakcji.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-104">This procedure shows how to use the Voucher transactions inquiry to search for journal entries or transactions.</span></span>
 
-1. Wybierz kolejno opcje Księga główna > Zapytania i raporty > Transakcje na załączniku.
-2. Zaznacz pole, dla którego chcesz zdefiniować kryteria filtrowania.
-3. Wprowadź kryteria filtrowania zaznaczonego pola.
-    * Można filtrować według jednej wartości lub zakresu. Podczas definiowania zakresu upewnij się, że jest używana poprawna składnia. Wartości powinny być rozdzielone dwoma kropkami (..).  
-4. Kliknij kartę Sprzężenia, aby dodać więcej tabel, z których można filtrować.
-5. W drzewie zaznacz pozycję „Tabele\Wpis w arkuszu finansowym”.
-6. Kliknij opcję Dodaj sprzężenie tabeli.
-7. Kliknij przycisk Anuluj, jeśli nie chcesz dodawać kolejnej tabeli.
-8. Kliknij kartę Zakres.
-9. Aby uaktywnić kwerendę, kliknij przycisk OK.
-10. Kliknij opcję Podstawa transakcji.
-    * Różne przyciski wokół siatki mogą służyć do szukania dodatkowych informacji o wybranym rekordzie załącznika. Niektóre przyciski mogą być niedostępne, w zależności od typu i cech transakcji.  
-11. Zamknij stronę.
-12. Kliknij opcję Oryginalny dokument.
-13. Zamknij stronę.
+1. <span data-ttu-id="6bdd0-105">Wybierz kolejno opcje Księga główna > Zapytania i raporty > Transakcje na załączniku.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-105">Go to General ledger > Inquiries and reports > Voucher transactions.</span></span>
+2. <span data-ttu-id="6bdd0-106">Zaznacz pole, dla którego chcesz zdefiniować kryteria filtrowania.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-106">Select the field for which you want to define a filter criteria.</span></span>
+3. <span data-ttu-id="6bdd0-107">Wprowadź kryteria filtrowania zaznaczonego pola.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-107">Enter your filter critieria for the selected field.</span></span>
+    * <span data-ttu-id="6bdd0-108">Można filtrować według jednej wartości lub zakresu.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-108">You could filter on a single value or a range.</span></span> <span data-ttu-id="6bdd0-109">Podczas definiowania zakresu upewnij się, że jest używana poprawna składnia.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-109">When defining a range, make sure the correct syntax is used.</span></span> <span data-ttu-id="6bdd0-110">Wartości powinny być rozdzielone dwoma kropkami (..).</span><span class="sxs-lookup"><span data-stu-id="6bdd0-110">The values should be separated by a double period (..).</span></span>  
+4. <span data-ttu-id="6bdd0-111">Kliknij kartę Sprzężenia, aby dodać więcej tabel, z których można filtrować.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-111">Click the Joins tab to add additional tables from which to filter.</span></span>
+5. <span data-ttu-id="6bdd0-112">W drzewie zaznacz pozycję „Tabele\Wpis w arkuszu finansowym”.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-112">In the tree, select 'Tables\General journal entry'.</span></span>
+6. <span data-ttu-id="6bdd0-113">Kliknij opcję Dodaj sprzężenie tabeli.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-113">Click Add table join.</span></span>
+7. <span data-ttu-id="6bdd0-114">Kliknij przycisk Anuluj, jeśli nie chcesz dodawać kolejnej tabeli.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-114">Click Cancel if you decide not to add an additional table.</span></span>
+8. <span data-ttu-id="6bdd0-115">Kliknij kartę Zakres.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-115">Click the Range tab.</span></span>
+9. <span data-ttu-id="6bdd0-116">Aby uaktywnić kwerendę, kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-116">Click OK to run the query.</span></span>
+10. <span data-ttu-id="6bdd0-117">Kliknij opcję Podstawa transakcji.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-117">Click Transaction origin.</span></span>
+    * <span data-ttu-id="6bdd0-118">Różne przyciski wokół siatki mogą służyć do szukania dodatkowych informacji o wybranym rekordzie załącznika.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-118">Various buttons about the grid can be used to research additional information about the selected record of the voucher.</span></span> <span data-ttu-id="6bdd0-119">Niektóre przyciski mogą być niedostępne, w zależności od typu i cech transakcji.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-119">Some buttons may not be available, depending on the type of transaction and characteristics of the transaction.</span></span>  
+11. <span data-ttu-id="6bdd0-120">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-120">Close the page.</span></span>
+12. <span data-ttu-id="6bdd0-121">Kliknij opcję Oryginalny dokument.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-121">Click Original document.</span></span>
+13. <span data-ttu-id="6bdd0-122">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="6bdd0-122">Close the page.</span></span>
 
 

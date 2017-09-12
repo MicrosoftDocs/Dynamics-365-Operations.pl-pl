@@ -17,40 +17,40 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 752a9a9a755ae7e4f2793fc712cc0c37c614ae71
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6381416640ffacf0a9d96d7da96bc33612ca7137
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-hub-accessorial-charges-and-accessorial-masters"></a>Konfigurowanie opłat za usługi dodatkowe centrum i danych głównych usług dodatkowych
+# <a name="set-up-hub-accessorial-charges-and-accessorial-masters"></a><span data-ttu-id="7de82-103">Konfigurowanie opłat za usługi dodatkowe centrum i danych głównych usług dodatkowych</span><span class="sxs-lookup"><span data-stu-id="7de82-103">Set up hub accessorial charges and accessorial masters</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób tworzenia danych głównych usług dodatkowych dla centrum oraz użycia tych danych do utworzenie opłaty za usługi dodatkowe centrum. Procedura wykorzystuje zestaw danych firmy USMF. Konfiguracji zazwyczaj dokonuje koordynator transportu.
+<span data-ttu-id="7de82-104">W tej procedurze pokazano sposób tworzenia danych głównych usług dodatkowych dla centrum oraz użycia tych danych do utworzenie opłaty za usługi dodatkowe centrum.</span><span class="sxs-lookup"><span data-stu-id="7de82-104">This procedure shows how to create an accessorial master for a hub and use that master to create a hub accessorial charge.</span></span> <span data-ttu-id="7de82-105">Procedura wykorzystuje zestaw danych firmy USMF.</span><span class="sxs-lookup"><span data-stu-id="7de82-105">The procedure uses the USMF dataset.</span></span> <span data-ttu-id="7de82-106">Konfiguracji zazwyczaj dokonuje koordynator transportu.</span><span class="sxs-lookup"><span data-stu-id="7de82-106">This set up will typically be done by a transportation coordinator.</span></span>
 
 
-## <a name="set-up-a-hub-master"></a>Ustawianie głównego centrum
-1. Wybierz kolejno opcje Zarządzanie transportem > Ustawienia > Ocena > Główne usługi dodatkowe.
-2. Kliknij przycisk Nowy.
-3. W polu Główne dodatkowe usługi wpisz wartość.
-4. W polu Nazwa wpisz wartość.
-5. W polu Typ dodatkowych usług wybierz opcję „Centrum”.
-6. Kliknij przycisk Zapisz.
-7. Zamknij stronę.
+## <a name="set-up-a-hub-master"></a><span data-ttu-id="7de82-107">Ustawianie głównego centrum</span><span class="sxs-lookup"><span data-stu-id="7de82-107">Set up a hub master</span></span>
+1. <span data-ttu-id="7de82-108">Wybierz kolejno opcje Zarządzanie transportem > Ustawienia > Ocena > Główne usługi dodatkowe.</span><span class="sxs-lookup"><span data-stu-id="7de82-108">Go to Transportation management > Setup > Rating > Accessorial masters.</span></span>
+2. <span data-ttu-id="7de82-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="7de82-109">Click New.</span></span>
+3. <span data-ttu-id="7de82-110">W polu Główne dodatkowe usługi wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="7de82-110">In the Accessorial master field, type a value.</span></span>
+4. <span data-ttu-id="7de82-111">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="7de82-111">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="7de82-112">W polu Typ dodatkowych usług wybierz opcję „Centrum”.</span><span class="sxs-lookup"><span data-stu-id="7de82-112">In the Accessorial type field, select 'Hub'.</span></span>
+6. <span data-ttu-id="7de82-113">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="7de82-113">Click Save.</span></span>
+7. <span data-ttu-id="7de82-114">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="7de82-114">Close the page.</span></span>
 
-## <a name="set-up-a-hub-accessorial-charge"></a>Konfigurowanie opłaty za usługi dodatkowe centrum
-1. Wybierz kolejno opcje Zarządzanie transportem > Ustawienia > Ocena > Opłaty współpracownika centrum.
-2. Kliknij przycisk Nowy.
-3. W polu Identyfikator współpracownika centrum wpisz wartość.
-4. W polu Centrum kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-5. Na liście znajdź i zaznacz odpowiedni rekord.
-6. W polu Pozycja centrum wybierz opcję.
-    * Opłatę można utworzyć za odbiór lub dostawę. W zależności od wybranej opcji opłata będzie stosowana do odpowiedniego segmentu transportu na trasie.  
-7. W polu Główne dodatkowe usługi kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-8. Na liście kliknij łącze w wybranym wierszu.
-    * Wybierz utworzone właśnie dane główne.  
-9. Kliknij przycisk Zapisz.
-10. Zamknij stronę.
+## <a name="set-up-a-hub-accessorial-charge"></a><span data-ttu-id="7de82-115">Konfigurowanie opłaty za usługi dodatkowe centrum</span><span class="sxs-lookup"><span data-stu-id="7de82-115">Set up a hub accessorial charge</span></span>
+1. <span data-ttu-id="7de82-116">Wybierz kolejno opcje Zarządzanie transportem > Ustawienia > Ocena > Opłaty współpracownika centrum.</span><span class="sxs-lookup"><span data-stu-id="7de82-116">Go to Transportation management > Setup > Rating > Hub accessorial charges.</span></span>
+2. <span data-ttu-id="7de82-117">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="7de82-117">Click New.</span></span>
+3. <span data-ttu-id="7de82-118">W polu Identyfikator współpracownika centrum wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="7de82-118">In the Hub accessorial ID field, type a value.</span></span>
+4. <span data-ttu-id="7de82-119">W polu Centrum kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="7de82-119">In the Hub field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="7de82-120">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="7de82-120">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="7de82-121">W polu Pozycja centrum wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="7de82-121">In the Hub position field, select an option.</span></span>
+    * <span data-ttu-id="7de82-122">Opłatę można utworzyć za odbiór lub dostawę.</span><span class="sxs-lookup"><span data-stu-id="7de82-122">You can either create the charge as a pickup or drop-off.</span></span> <span data-ttu-id="7de82-123">W zależności od wybranej opcji opłata będzie stosowana do odpowiedniego segmentu transportu na trasie.</span><span class="sxs-lookup"><span data-stu-id="7de82-123">Depending on your selection the charge will be applied to the corresponding transportation segment on your route.</span></span>  
+7. <span data-ttu-id="7de82-124">W polu Główne dodatkowe usługi kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="7de82-124">In the Accessorial master field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="7de82-125">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="7de82-125">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="7de82-126">Wybierz utworzone właśnie dane główne.</span><span class="sxs-lookup"><span data-stu-id="7de82-126">Select the master you just created.</span></span>  
+9. <span data-ttu-id="7de82-127">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="7de82-127">Click Save.</span></span>
+10. <span data-ttu-id="7de82-128">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="7de82-128">Close the page.</span></span>
 
 

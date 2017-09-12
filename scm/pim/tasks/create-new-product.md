@@ -16,34 +16,34 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 856ad74ce30bb58975f78aeb3fafc6e2e2805c79
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d9307abf5e9543c8a2c880330c4430f5e4c5b340
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-new-product"></a>Tworzenie nowego produktu
+# <a name="create-a-new-product"></a><span data-ttu-id="f0f2d-103">Tworzenie nowego produktu</span><span class="sxs-lookup"><span data-stu-id="f0f2d-103">Create a new product</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-To zadanie pokazuje sposób tworzenia nowego produktu udostępnionego. Zwykle robi to projektant produktów. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF.
+<span data-ttu-id="f0f2d-104">To zadanie pokazuje sposób tworzenia nowego produktu udostępnionego.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-104">This task shows how to create a new shared product.</span></span> <span data-ttu-id="f0f2d-105">Zwykle robi to projektant produktów.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-105">It is usually carried out by a product designer.</span></span> <span data-ttu-id="f0f2d-106">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-106">The demo data company used to create this task is USMF.</span></span>
 
-1. Wybierz kolejno opcje Zarządzanie informacjami o produktach > Produkty > Produkty.
+1. <span data-ttu-id="f0f2d-107">Wybierz kolejno opcje Zarządzanie informacjami o produktach > Produkty > Produkty.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-107">Go to Product information management > Products > Products.</span></span>
 
-## <a name="create-a-product"></a>Tworzenie produktu
-1. Kliknij przycisk Nowy.
-2. W polu Numer produktu wpisz wartość.
-    * Jeśli dla numeru produktu nie skonfigurowano sekwencji identyfikatorów, należy ją wprowadzić ręcznie.  
-3. W polu Nazwa produktu wpisz wartość.
-    * Nazwa produktu jest domyślnie aliasem. W razie potrzeby można to zmienić.  
-4. Kliknij przycisk OK.
+## <a name="create-a-product"></a><span data-ttu-id="f0f2d-108">Tworzenie produktu</span><span class="sxs-lookup"><span data-stu-id="f0f2d-108">Create a product</span></span>
+1. <span data-ttu-id="f0f2d-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-109">Click New.</span></span>
+2. <span data-ttu-id="f0f2d-110">W polu Numer produktu wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-110">In the Product number field, type a value.</span></span>
+    * <span data-ttu-id="f0f2d-111">Jeśli dla numeru produktu nie skonfigurowano sekwencji identyfikatorów, należy ją wprowadzić ręcznie.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-111">If a number sequence has not been set up for the product number, it must be entered manually.</span></span>  
+3. <span data-ttu-id="f0f2d-112">W polu Nazwa produktu wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-112">In the Product name field, type a value.</span></span>
+    * <span data-ttu-id="f0f2d-113">Nazwa produktu jest domyślnie aliasem.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-113">The product name defaults to the search name.</span></span> <span data-ttu-id="f0f2d-114">W razie potrzeby można to zmienić.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-114">You can change this if needed.</span></span>  
+4. <span data-ttu-id="f0f2d-115">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-115">Click OK.</span></span>
 
-## <a name="set-up-dimension-groups"></a>Konfigurowanie grup wymiarów
-1. Kliknij przycisk Grupy wymiarów, aby otworzyć rozwijane okno dialogowe.
-2. W polu grupa wymiaru magazynowania wpisz lub wprowadź wartość.
-    * Grupa wymiarów magazynowania określa, które wymiary magazynowania należy wprowadzić w każdej transakcji produktu i jak będą one śledzone w zapasach.  
-3. W polu grupa wymiaru śledzenia wpisz lub wprowadź wartość.
-    * Grupa wymiarów śledzenia określa, które wymiary śledzenia należy wprowadzić dla każdej transakcji produktu i jak będą one obsługiwane w zapasach.  
-4. Kliknij przycisk OK.
+## <a name="set-up-dimension-groups"></a><span data-ttu-id="f0f2d-116">Konfigurowanie grup wymiarów</span><span class="sxs-lookup"><span data-stu-id="f0f2d-116">Set up dimension groups</span></span>
+1. <span data-ttu-id="f0f2d-117">Kliknij przycisk Grupy wymiarów, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-117">Click Dimension groups to open the drop dialog.</span></span>
+2. <span data-ttu-id="f0f2d-118">W polu grupa wymiaru magazynowania wpisz lub wprowadź wartość.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-118">In the Storage dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="f0f2d-119">Grupa wymiarów magazynowania określa, które wymiary magazynowania należy wprowadzić w każdej transakcji produktu i jak będą one śledzone w zapasach.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-119">The storage dimension group determines which storage dimensions you must enter on each transaction for the product and how it will be tracked in inventory.</span></span>  
+3. <span data-ttu-id="f0f2d-120">W polu grupa wymiaru śledzenia wpisz lub wprowadź wartość.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-120">In the Tracking dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="f0f2d-121">Grupa wymiarów śledzenia określa, które wymiary śledzenia należy wprowadzić dla każdej transakcji produktu i jak będą one obsługiwane w zapasach.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-121">The tracking dimension group determines which tracking dimensions you must enter for each transaction for the product, and how it will be handled in inventory.</span></span>  
+4. <span data-ttu-id="f0f2d-122">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="f0f2d-122">Click OK.</span></span>
 
 

@@ -15,192 +15,192 @@ ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 8daf9d0c5b83e3bca66c0229a328737adeeb2951
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 45582c5378fb2b3d6c9e26632accf37197a671bb
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
+# <a name="keyboard-shortcuts"></a><span data-ttu-id="7d870-103">Skróty klawiaturowe</span><span class="sxs-lookup"><span data-stu-id="7d870-103">Keyboard shortcuts</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Następujące skróty klawiaturowe mają zastosowanie w całym programie Microsoft Dynamics 365 for Finance and Operations. 
+<span data-ttu-id="7d870-104">Następujące skróty klawiaturowe mają zastosowanie w całym programie Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="7d870-104">The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance and Operations.</span></span> 
 
-**Uwaga:** skróty klawiaturowe opisane w tym miejscu odnoszą się do amerykańskiego układu klawiatury. Klawisze w innych układach mogą nie odpowiadać dokładnie klawiszom na klawiaturze w układzie amerykańskim.
+<span data-ttu-id="7d870-105">**Uwaga:** skróty klawiaturowe opisane w tym miejscu odnoszą się do amerykańskiego układu klawiatury.</span><span class="sxs-lookup"><span data-stu-id="7d870-105">**Note:** The keyboard shortcuts described here refer to the United States keyboard layout.</span></span> <span data-ttu-id="7d870-106">Klawisze w innych układach mogą nie odpowiadać dokładnie klawiszom na klawiaturze w układzie amerykańskim.</span><span class="sxs-lookup"><span data-stu-id="7d870-106">Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.</span></span>
 
-## <a name="action-shortcuts"></a>Skróty akcji
+## <a name="action-shortcuts"></a><span data-ttu-id="7d870-107">Skróty akcji</span><span class="sxs-lookup"><span data-stu-id="7d870-107">Action shortcuts</span></span>
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
-| **Funkcja**                                    | **Naciśnij**                        |
-| Otwórz wyszukiwanie akcji                                | Ctrl+’ lub Alt+Q                  |
-| Przejdź do standardowego okienka akcji                  | Ctrl+F6                          |
-| Otwórz kartę w okienku akcji lub menu           | Enter lub Spacja lub Alt+strzałka w dół |
-| Przejdź do następnej/poprzedniej opcji w menu            | Strzałka w dół / strzałka w górę            |
-| Zamknij kartę w okienku akcji lub menu          | Esc                              |
-| Symulacja kliknięcia prawym przyciskiem myszy                            | Shift+F10                        |
-| Otwieranie menu kontekstowego programu Finance and Operations | Ctrl+F10                         |
-| Naciśnij domyślny przycisk formularza/okna dialogowego       | Alt+Enter                        |
-| Kliknij przycisk lub kafelek                            | Enter lub Spacja                   |
-| Wyświetl odświeżone informacje dla kafelka liczenia         | Alt+strzałka w górę                     |
+| <span data-ttu-id="7d870-108">**Funkcja**</span><span class="sxs-lookup"><span data-stu-id="7d870-108">**To do this**</span></span>                                    | <span data-ttu-id="7d870-109">**Naciśnij**</span><span class="sxs-lookup"><span data-stu-id="7d870-109">**Press**</span></span>                        |
+| <span data-ttu-id="7d870-110">Otwórz wyszukiwanie akcji</span><span class="sxs-lookup"><span data-stu-id="7d870-110">Open action search</span></span>                                | <span data-ttu-id="7d870-111">Ctrl+’ lub Alt+Q</span><span class="sxs-lookup"><span data-stu-id="7d870-111">Ctrl+’ or Alt+Q</span></span>                  |
+| <span data-ttu-id="7d870-112">Przejdź do standardowego okienka akcji</span><span class="sxs-lookup"><span data-stu-id="7d870-112">Move to the standard action pane</span></span>                  | <span data-ttu-id="7d870-113">Ctrl+F6</span><span class="sxs-lookup"><span data-stu-id="7d870-113">Ctrl+F6</span></span>                          |
+| <span data-ttu-id="7d870-114">Otwórz kartę w okienku akcji lub menu</span><span class="sxs-lookup"><span data-stu-id="7d870-114">Open a tab in the action pane or a menu</span></span>           | <span data-ttu-id="7d870-115">Enter lub Spacja lub Alt+strzałka w dół</span><span class="sxs-lookup"><span data-stu-id="7d870-115">Enter or Space or Alt+Down Arrow</span></span> |
+| <span data-ttu-id="7d870-116">Przejdź do następnej/poprzedniej opcji w menu</span><span class="sxs-lookup"><span data-stu-id="7d870-116">Move to next/previous option in a menu</span></span>            | <span data-ttu-id="7d870-117">Strzałka w dół / strzałka w górę</span><span class="sxs-lookup"><span data-stu-id="7d870-117">Down Arrow / Up Arrow</span></span>            |
+| <span data-ttu-id="7d870-118">Zamknij kartę w okienku akcji lub menu</span><span class="sxs-lookup"><span data-stu-id="7d870-118">Close a tab in the action pane or a menu</span></span>          | <span data-ttu-id="7d870-119">Esc</span><span class="sxs-lookup"><span data-stu-id="7d870-119">Esc</span></span>                              |
+| <span data-ttu-id="7d870-120">Symulacja kliknięcia prawym przyciskiem myszy</span><span class="sxs-lookup"><span data-stu-id="7d870-120">Simulate a right-click</span></span>                            | <span data-ttu-id="7d870-121">Shift+F10</span><span class="sxs-lookup"><span data-stu-id="7d870-121">Shift+F10</span></span>                        |
+| <span data-ttu-id="7d870-122">Otwieranie menu kontekstowego programu Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="7d870-122">Open the Finance and Operations context menu</span></span> | <span data-ttu-id="7d870-123">Ctrl+F10</span><span class="sxs-lookup"><span data-stu-id="7d870-123">Ctrl+F10</span></span>                         |
+| <span data-ttu-id="7d870-124">Naciśnij domyślny przycisk formularza/okna dialogowego</span><span class="sxs-lookup"><span data-stu-id="7d870-124">Execute the default button on a form/dialog</span></span>       | <span data-ttu-id="7d870-125">Alt+Enter</span><span class="sxs-lookup"><span data-stu-id="7d870-125">Alt+Enter</span></span>                        |
+| <span data-ttu-id="7d870-126">Kliknij przycisk lub kafelek</span><span class="sxs-lookup"><span data-stu-id="7d870-126">Click a button or tile</span></span>                            | <span data-ttu-id="7d870-127">Enter lub Spacja</span><span class="sxs-lookup"><span data-stu-id="7d870-127">Enter or Space</span></span>                   |
+| <span data-ttu-id="7d870-128">Wyświetl odświeżone informacje dla kafelka liczenia</span><span class="sxs-lookup"><span data-stu-id="7d870-128">View refresh information for a count tile</span></span>         | <span data-ttu-id="7d870-129">Alt+strzałka w górę</span><span class="sxs-lookup"><span data-stu-id="7d870-129">Alt+Up Arrow</span></span>                     |
 
  
 
-## <a name="date-picker-shortcuts"></a>Skróty selektora dat
+## <a name="date-picker-shortcuts"></a><span data-ttu-id="7d870-130">Skróty selektora dat</span><span class="sxs-lookup"><span data-stu-id="7d870-130">Date picker shortcuts</span></span>
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
-| **Funkcja**                        | **Naciśnij**                                 |
-| Otwórz selektor dat                  | Alt+strzałka w dół                            |
-| Przejdź między datami w selektorze dat | Ctrl+strzałki                               |
-| Przejdź do następnego/poprzedniego miesiąca       | Page Down / Page Up                       |
-| Przejdź do następnego/poprzedniego roku        | Ctrl+Shift+Page Down / Ctrl+Shift+Page Up |
+| <span data-ttu-id="7d870-131">**Funkcja**</span><span class="sxs-lookup"><span data-stu-id="7d870-131">**To do this**</span></span>                        | <span data-ttu-id="7d870-132">**Naciśnij**</span><span class="sxs-lookup"><span data-stu-id="7d870-132">**Press**</span></span>                                 |
+| <span data-ttu-id="7d870-133">Otwórz selektor dat</span><span class="sxs-lookup"><span data-stu-id="7d870-133">Open the date picker</span></span>                  | <span data-ttu-id="7d870-134">Alt+strzałka w dół</span><span class="sxs-lookup"><span data-stu-id="7d870-134">Alt+Down Arrow</span></span>                            |
+| <span data-ttu-id="7d870-135">Przejdź między datami w selektorze dat</span><span class="sxs-lookup"><span data-stu-id="7d870-135">Move between dates in the date picker</span></span> | <span data-ttu-id="7d870-136">Ctrl+strzałki</span><span class="sxs-lookup"><span data-stu-id="7d870-136">Ctrl+Arrows</span></span>                               |
+| <span data-ttu-id="7d870-137">Przejdź do następnego/poprzedniego miesiąca</span><span class="sxs-lookup"><span data-stu-id="7d870-137">Move to the next/previous month</span></span>       | <span data-ttu-id="7d870-138">Page Down / Page Up</span><span class="sxs-lookup"><span data-stu-id="7d870-138">Page Down / Page Up</span></span>                       |
+| <span data-ttu-id="7d870-139">Przejdź do następnego/poprzedniego roku</span><span class="sxs-lookup"><span data-stu-id="7d870-139">Move to the next/previous year</span></span>        | <span data-ttu-id="7d870-140">Ctrl+Shift+Page Down / Ctrl+Shift+Page Up</span><span class="sxs-lookup"><span data-stu-id="7d870-140">Ctrl+Shift+Page Down / Ctrl+Shift+Page Up</span></span> |
 
  
 
-## <a name="factbox-shortcuts"></a>Skróty pola informacji
+## <a name="factbox-shortcuts"></a><span data-ttu-id="7d870-141">Skróty pola informacji</span><span class="sxs-lookup"><span data-stu-id="7d870-141">FactBox shortcuts</span></span>
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
-| Otwórz okienko pola informacji (lub przenieś zaznaczenie na okienko pola informacji, jeśli jest już otwarte) | Ctrl+F2                                   |
-| Zamknij okienko pola informacji (z wyróżnieniem na polu informacji)                         | Esc                                       |
-| Przejdź do następnego/poprzedniego pola informacji (z wyróżnieniem na okienku pola informacji)              | Alt+Shift+strzałka w dół / Alt+Shift+strzałka w górę |
-| Przejdź do pola informacji nr &lt;n&gt; (z wyróżnieniem na okienku pola informacji)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
-| Rozwiń pole informacji (z wyróżnieniem na nagłówku pola informacji)                             | Spacja lub Enter                            |
-| Zwiń bieżące pole informacji                                                    | Alt+0                                     |
+| <span data-ttu-id="7d870-142">Otwórz okienko pola informacji (lub przenieś zaznaczenie na okienko pola informacji, jeśli jest już otwarte)</span><span class="sxs-lookup"><span data-stu-id="7d870-142">Open the FactBox pane (or move focus to the FactBox pane if it is already open)</span></span> | <span data-ttu-id="7d870-143">Ctrl+F2</span><span class="sxs-lookup"><span data-stu-id="7d870-143">Ctrl+F2</span></span>                                   |
+| <span data-ttu-id="7d870-144">Zamknij okienko pola informacji (z wyróżnieniem na polu informacji)</span><span class="sxs-lookup"><span data-stu-id="7d870-144">Close the FactBox pane (with focus in the FactBox pane)</span></span>                         | <span data-ttu-id="7d870-145">Esc</span><span class="sxs-lookup"><span data-stu-id="7d870-145">Esc</span></span>                                       |
+| <span data-ttu-id="7d870-146">Przejdź do następnego/poprzedniego pola informacji (z wyróżnieniem na okienku pola informacji)</span><span class="sxs-lookup"><span data-stu-id="7d870-146">Move to the next/previous FactBox (with focus in the FactBox pane)</span></span>              | <span data-ttu-id="7d870-147">Alt+Shift+strzałka w dół / Alt+Shift+strzałka w górę</span><span class="sxs-lookup"><span data-stu-id="7d870-147">Alt+Shift+Down Arrow / Alt+Shift+Up Arrow</span></span> |
+| <span data-ttu-id="7d870-148">Przejdź do pola informacji nr &lt;n&gt; (z wyróżnieniem na okienku pola informacji)</span><span class="sxs-lookup"><span data-stu-id="7d870-148">Move to the &lt;n&gt;th FactBox (with focus in the FactBox pane)</span></span>                | <span data-ttu-id="7d870-149">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span><span class="sxs-lookup"><span data-stu-id="7d870-149">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span></span>           |
+| <span data-ttu-id="7d870-150">Rozwiń pole informacji (z wyróżnieniem na nagłówku pola informacji)</span><span class="sxs-lookup"><span data-stu-id="7d870-150">Expand a FactBox (with focus on the FactBox header)</span></span>                             | <span data-ttu-id="7d870-151">Spacja lub Enter</span><span class="sxs-lookup"><span data-stu-id="7d870-151">Space or Enter</span></span>                            |
+| <span data-ttu-id="7d870-152">Zwiń bieżące pole informacji</span><span class="sxs-lookup"><span data-stu-id="7d870-152">Collapse the current FactBox</span></span>                                                    | <span data-ttu-id="7d870-153">Alt+0</span><span class="sxs-lookup"><span data-stu-id="7d870-153">Alt+0</span></span>                                     |
 
  
 
-## <a name="filtering-shortcuts"></a>Filtrowanie skrótów
+## <a name="filtering-shortcuts"></a><span data-ttu-id="7d870-154">Filtrowanie skrótów</span><span class="sxs-lookup"><span data-stu-id="7d870-154">Filtering shortcuts</span></span>
 |                                                                                                                     |               |
 |---------------------------------------------------------------------------------------------------------------------|---------------|
-| **Funkcja**                                                                                                      | **Naciśnij**     |
-| Otwórz filtrowanie siatki dla bieżącej kolumny                                                                          | Ctrl+G        |
-| Zamknij filtrowanie siatki dla bieżącej kolumny                                                                         | Esc           |
-| Otwórz okienko filtru (lub przełącz wyróżnienie między okienkiem Filtr i formularzem głównym, jeśli okienku Filtr jest już otwarte) | Ctrl+F3       |
-| Zamknij okienko Filtr (z wyróżnieniem na okienku Filtr)                                                               | Esc           |
-| Otwórz filtrowanie/sortowanie zaawansowane                                                                                        | Ctrl+Shift+F3 |
+| <span data-ttu-id="7d870-155">**Funkcja**</span><span class="sxs-lookup"><span data-stu-id="7d870-155">**To do this**</span></span>                                                                                                      | <span data-ttu-id="7d870-156">**Naciśnij**</span><span class="sxs-lookup"><span data-stu-id="7d870-156">**Press**</span></span>     |
+| <span data-ttu-id="7d870-157">Otwórz filtrowanie siatki dla bieżącej kolumny</span><span class="sxs-lookup"><span data-stu-id="7d870-157">Open grid filtering for the current column</span></span>                                                                          | <span data-ttu-id="7d870-158">Ctrl+G</span><span class="sxs-lookup"><span data-stu-id="7d870-158">Ctrl+G</span></span>        |
+| <span data-ttu-id="7d870-159">Zamknij filtrowanie siatki dla bieżącej kolumny</span><span class="sxs-lookup"><span data-stu-id="7d870-159">Close grid filtering for the current column</span></span>                                                                         | <span data-ttu-id="7d870-160">Esc</span><span class="sxs-lookup"><span data-stu-id="7d870-160">Esc</span></span>           |
+| <span data-ttu-id="7d870-161">Otwórz okienko filtru (lub przełącz wyróżnienie między okienkiem Filtr i formularzem głównym, jeśli okienku Filtr jest już otwarte)</span><span class="sxs-lookup"><span data-stu-id="7d870-161">Open the Filter pane (or switch focus between the Filter pane and the main form if the Filter pane is already open)</span></span> | <span data-ttu-id="7d870-162">Ctrl+F3</span><span class="sxs-lookup"><span data-stu-id="7d870-162">Ctrl+F3</span></span>       |
+| <span data-ttu-id="7d870-163">Zamknij okienko Filtr (z wyróżnieniem na okienku Filtr)</span><span class="sxs-lookup"><span data-stu-id="7d870-163">Close the Filter pane (with focus in the Filter pane)</span></span>                                                               | <span data-ttu-id="7d870-164">Esc</span><span class="sxs-lookup"><span data-stu-id="7d870-164">Esc</span></span>           |
+| <span data-ttu-id="7d870-165">Otwórz filtrowanie/sortowanie zaawansowane</span><span class="sxs-lookup"><span data-stu-id="7d870-165">Open advanced filtering/sort</span></span>                                                                                        | <span data-ttu-id="7d870-166">Ctrl+Shift+F3</span><span class="sxs-lookup"><span data-stu-id="7d870-166">Ctrl+Shift+F3</span></span> |
 
  
 
-## <a name="form-shortcuts"></a>Skróty formularza
+## <a name="form-shortcuts"></a><span data-ttu-id="7d870-167">Skróty formularza</span><span class="sxs-lookup"><span data-stu-id="7d870-167">Form shortcuts</span></span>
 |                                                                                                                                 |                   |
 |---------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| **Funkcja**                                                                                                                  | **Naciśnij**         |
-| Utwórz nowy rekord                                                                                                             | Alt+N             |
-| Usuwanie rekordu                                                                                                                 | Alt+Del lub Alt+F9 |
-| Zapisz rekord                                                                                                                     | Alt+S lub Ctrl+S   |
-| Przywróć (przywracanie)                                                                                                                | Ctrl+Shift+F5     |
-| Odśwież dane                                                                                                                    | Shift+F5          |
-| Przejdź do widocznego pierwszego pola na formularzu                                                                                     | Alt+Shift+F       |
-| Przełącz tryb edycji                                                                                                                | F2                |
-| Dołączanie dokumentu                                                                                                               | Ctrl+Shift+A      |
-| Eksportuj do programu Excel                                                                                                                 | Ctrl+Shift+E      |
-| Przejdź do poprzedniego rekordu (poza siatką)                                                                                    | Ctrl+strzałka w górę     |
-| Przejdź do następnego rekordu (poza siatką)                                                                                        | Ctrl+strzałka w dół   |
-| Przejdź do pierwszego rekordu (poza siatką)                                                                                       | Ctrl+Home         |
-| Przejdź do ostatniego rekordu (poza siatką)                                                                                        | Ctrl+End          |
-| Otwórz listę nawigacji w formularzach Szczegóły (lub przełącz wyróżnienie między listą nawigacji a głównym formularzem, jeśli jest już otwarty) | Ctrl+F8           |
-| Zamknij listę nawigacji w formularzu Szczegóły (z wyróżnieniem na liście nawigacji)                                                   | Esc               |
+| <span data-ttu-id="7d870-168">**Funkcja**</span><span class="sxs-lookup"><span data-stu-id="7d870-168">**To do this**</span></span>                                                                                                                  | <span data-ttu-id="7d870-169">**Naciśnij**</span><span class="sxs-lookup"><span data-stu-id="7d870-169">**Press**</span></span>         |
+| <span data-ttu-id="7d870-170">Utwórz nowy rekord</span><span class="sxs-lookup"><span data-stu-id="7d870-170">Create a new record</span></span>                                                                                                             | <span data-ttu-id="7d870-171">Alt+N</span><span class="sxs-lookup"><span data-stu-id="7d870-171">Alt+N</span></span>             |
+| <span data-ttu-id="7d870-172">Usuwanie rekordu</span><span class="sxs-lookup"><span data-stu-id="7d870-172">Delete a record</span></span>                                                                                                                 | <span data-ttu-id="7d870-173">Alt+Del lub Alt+F9</span><span class="sxs-lookup"><span data-stu-id="7d870-173">Alt+Del or Alt+F9</span></span> |
+| <span data-ttu-id="7d870-174">Zapisz rekord</span><span class="sxs-lookup"><span data-stu-id="7d870-174">Save record</span></span>                                                                                                                     | <span data-ttu-id="7d870-175">Alt+S lub Ctrl+S</span><span class="sxs-lookup"><span data-stu-id="7d870-175">Alt+S or Ctrl+S</span></span>   |
+| <span data-ttu-id="7d870-176">Przywróć (przywracanie)</span><span class="sxs-lookup"><span data-stu-id="7d870-176">Revert (restore)</span></span>                                                                                                                | <span data-ttu-id="7d870-177">Ctrl+Shift+F5</span><span class="sxs-lookup"><span data-stu-id="7d870-177">Ctrl+Shift+F5</span></span>     |
+| <span data-ttu-id="7d870-178">Odśwież dane</span><span class="sxs-lookup"><span data-stu-id="7d870-178">Data refresh</span></span>                                                                                                                    | <span data-ttu-id="7d870-179">Shift+F5</span><span class="sxs-lookup"><span data-stu-id="7d870-179">Shift+F5</span></span>          |
+| <span data-ttu-id="7d870-180">Przejdź do widocznego pierwszego pola na formularzu</span><span class="sxs-lookup"><span data-stu-id="7d870-180">Move to the visible first field on the form</span></span>                                                                                     | <span data-ttu-id="7d870-181">Alt+Shift+F</span><span class="sxs-lookup"><span data-stu-id="7d870-181">Alt+Shift+F</span></span>       |
+| <span data-ttu-id="7d870-182">Przełącz tryb edycji</span><span class="sxs-lookup"><span data-stu-id="7d870-182">Toggle edit mode</span></span>                                                                                                                | <span data-ttu-id="7d870-183">F2</span><span class="sxs-lookup"><span data-stu-id="7d870-183">F2</span></span>                |
+| <span data-ttu-id="7d870-184">Dołączanie dokumentu</span><span class="sxs-lookup"><span data-stu-id="7d870-184">Attach a document</span></span>                                                                                                               | <span data-ttu-id="7d870-185">Ctrl+Shift+A</span><span class="sxs-lookup"><span data-stu-id="7d870-185">Ctrl+Shift+A</span></span>      |
+| <span data-ttu-id="7d870-186">Eksportuj do programu Excel</span><span class="sxs-lookup"><span data-stu-id="7d870-186">Export to Excel</span></span>                                                                                                                 | <span data-ttu-id="7d870-187">Ctrl+Shift+E</span><span class="sxs-lookup"><span data-stu-id="7d870-187">Ctrl+Shift+E</span></span>      |
+| <span data-ttu-id="7d870-188">Przejdź do poprzedniego rekordu (poza siatką)</span><span class="sxs-lookup"><span data-stu-id="7d870-188">Move to the previous record (outside a grid)</span></span>                                                                                    | <span data-ttu-id="7d870-189">Ctrl+strzałka w górę</span><span class="sxs-lookup"><span data-stu-id="7d870-189">Ctrl+Up Arrow</span></span>     |
+| <span data-ttu-id="7d870-190">Przejdź do następnego rekordu (poza siatką)</span><span class="sxs-lookup"><span data-stu-id="7d870-190">Move to the next record (outside a grid)</span></span>                                                                                        | <span data-ttu-id="7d870-191">Ctrl+strzałka w dół</span><span class="sxs-lookup"><span data-stu-id="7d870-191">Ctrl+Down Arrow</span></span>   |
+| <span data-ttu-id="7d870-192">Przejdź do pierwszego rekordu (poza siatką)</span><span class="sxs-lookup"><span data-stu-id="7d870-192">Move to the first record (outside a grid)</span></span>                                                                                       | <span data-ttu-id="7d870-193">Ctrl+Home</span><span class="sxs-lookup"><span data-stu-id="7d870-193">Ctrl+Home</span></span>         |
+| <span data-ttu-id="7d870-194">Przejdź do ostatniego rekordu (poza siatką)</span><span class="sxs-lookup"><span data-stu-id="7d870-194">Move to the last record (outside a grid)</span></span>                                                                                        | <span data-ttu-id="7d870-195">Ctrl+End</span><span class="sxs-lookup"><span data-stu-id="7d870-195">Ctrl+End</span></span>          |
+| <span data-ttu-id="7d870-196">Otwórz listę nawigacji w formularzach Szczegóły (lub przełącz wyróżnienie między listą nawigacji a głównym formularzem, jeśli jest już otwarty)</span><span class="sxs-lookup"><span data-stu-id="7d870-196">Open the navigation list on Details forms (or switch focus between the navigation list and the main form if it is already open)</span></span> | <span data-ttu-id="7d870-197">Ctrl+F8</span><span class="sxs-lookup"><span data-stu-id="7d870-197">Ctrl+F8</span></span>           |
+| <span data-ttu-id="7d870-198">Zamknij listę nawigacji w formularzu Szczegóły (z wyróżnieniem na liście nawigacji)</span><span class="sxs-lookup"><span data-stu-id="7d870-198">Close the navigation list on Details form (with focus in the navigation list)</span></span>                                                   | <span data-ttu-id="7d870-199">Esc</span><span class="sxs-lookup"><span data-stu-id="7d870-199">Esc</span></span>               |
 
  
 
-## <a name="form-navigation-shortcuts"></a>Skróty nawigacji formularza
+## <a name="form-navigation-shortcuts"></a><span data-ttu-id="7d870-200">Skróty nawigacji formularza</span><span class="sxs-lookup"><span data-stu-id="7d870-200">Form navigation shortcuts</span></span>
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
-| **Funkcja**                                      | **Naciśnij**                                    |
-| Przejdź do następnego/poprzedniego pola                     | Tab / Shift+Tab                              |
-| Przejdź do następnej/poprzedniej karty                       | Alt+Shift+strzałka w prawo / Alt+Shift+strzałka w lewo |
-| Przejdź do następnej/poprzedniej skróconej karty                   | Alt+Shift+strzałka w dół / Alt+Shift+strzałka w górę    |
-| Przejdź do skróconej karty nr &lt;n&gt;                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Przejdź do karty nr &lt;n&gt;                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
-| Rozwiń skróconą kartę (z wyróżnieniem na nagłówku skróconej karty) | Spacja lub Enter                               |
-| Zwiń bieżącą skróconą kartę                        | Alt+0                                        |
-| Przełącz na widok siatki                                 | Ctrl+Shift+G                                 |
-| Przełącz na widok szczegółów                              | Ctrl+Shift+D                                 |
-| Przełącz na widok nagłówka                               | Ctrl+Shift+H                                 |
-| Przełącz na widok wierszy                                | Ctrl+Shift+L                                 |
-| Zamknij formularz (kliknij Wstecz)                         | Esc                                          |
-| Zamknij formularz z zapisaniem                   | Shift+Esc                                    |
-| Zamknij formularz bez zapisywania zmian       | Alt+Shift+Q                                  |
+| <span data-ttu-id="7d870-201">**Funkcja**</span><span class="sxs-lookup"><span data-stu-id="7d870-201">**To do this**</span></span>                                      | <span data-ttu-id="7d870-202">**Naciśnij**</span><span class="sxs-lookup"><span data-stu-id="7d870-202">**Press**</span></span>                                    |
+| <span data-ttu-id="7d870-203">Przejdź do następnego/poprzedniego pola</span><span class="sxs-lookup"><span data-stu-id="7d870-203">Move to the next/previous field</span></span>                     | <span data-ttu-id="7d870-204">Tab / Shift+Tab</span><span class="sxs-lookup"><span data-stu-id="7d870-204">Tab / Shift+Tab</span></span>                              |
+| <span data-ttu-id="7d870-205">Przejdź do następnej/poprzedniej karty</span><span class="sxs-lookup"><span data-stu-id="7d870-205">Move to the next/previous tab</span></span>                       | <span data-ttu-id="7d870-206">Alt+Shift+strzałka w prawo / Alt+Shift+strzałka w lewo</span><span class="sxs-lookup"><span data-stu-id="7d870-206">Alt+Shift+Right Arrow / Alt+Shift+Left Arrow</span></span> |
+| <span data-ttu-id="7d870-207">Przejdź do następnej/poprzedniej skróconej karty</span><span class="sxs-lookup"><span data-stu-id="7d870-207">Move to the next/previous FastTab</span></span>                   | <span data-ttu-id="7d870-208">Alt+Shift+strzałka w dół / Alt+Shift+strzałka w górę</span><span class="sxs-lookup"><span data-stu-id="7d870-208">Alt+Shift+Down Arrow / Alt+Shift+Up Arrow</span></span>    |
+| <span data-ttu-id="7d870-209">Przejdź do skróconej karty nr &lt;n&gt;</span><span class="sxs-lookup"><span data-stu-id="7d870-209">Move to the &lt;n&gt;th FastTab</span></span>                     | <span data-ttu-id="7d870-210">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span><span class="sxs-lookup"><span data-stu-id="7d870-210">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span></span>              |
+| <span data-ttu-id="7d870-211">Przejdź do karty nr &lt;n&gt;</span><span class="sxs-lookup"><span data-stu-id="7d870-211">Move to the &lt;n&gt;th tab</span></span>                         | <span data-ttu-id="7d870-212">Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)</span><span class="sxs-lookup"><span data-stu-id="7d870-212">Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)</span></span>        |
+| <span data-ttu-id="7d870-213">Rozwiń skróconą kartę (z wyróżnieniem na nagłówku skróconej karty)</span><span class="sxs-lookup"><span data-stu-id="7d870-213">Expand a FastTab (with focus on the FastTab header)</span></span> | <span data-ttu-id="7d870-214">Spacja lub Enter</span><span class="sxs-lookup"><span data-stu-id="7d870-214">Space or Enter</span></span>                               |
+| <span data-ttu-id="7d870-215">Zwiń bieżącą skróconą kartę</span><span class="sxs-lookup"><span data-stu-id="7d870-215">Collapse the current FastTab</span></span>                        | <span data-ttu-id="7d870-216">Alt+0</span><span class="sxs-lookup"><span data-stu-id="7d870-216">Alt+0</span></span>                                        |
+| <span data-ttu-id="7d870-217">Przełącz na widok siatki</span><span class="sxs-lookup"><span data-stu-id="7d870-217">Switch to grid view</span></span>                                 | <span data-ttu-id="7d870-218">Ctrl+Shift+G</span><span class="sxs-lookup"><span data-stu-id="7d870-218">Ctrl+Shift+G</span></span>                                 |
+| <span data-ttu-id="7d870-219">Przełącz na widok szczegółów</span><span class="sxs-lookup"><span data-stu-id="7d870-219">Switch to details view</span></span>                              | <span data-ttu-id="7d870-220">Ctrl+Shift+D</span><span class="sxs-lookup"><span data-stu-id="7d870-220">Ctrl+Shift+D</span></span>                                 |
+| <span data-ttu-id="7d870-221">Przełącz na widok nagłówka</span><span class="sxs-lookup"><span data-stu-id="7d870-221">Switch to header view</span></span>                               | <span data-ttu-id="7d870-222">Ctrl+Shift+H</span><span class="sxs-lookup"><span data-stu-id="7d870-222">Ctrl+Shift+H</span></span>                                 |
+| <span data-ttu-id="7d870-223">Przełącz na widok wierszy</span><span class="sxs-lookup"><span data-stu-id="7d870-223">Switch to lines view</span></span>                                | <span data-ttu-id="7d870-224">Ctrl+Shift+L</span><span class="sxs-lookup"><span data-stu-id="7d870-224">Ctrl+Shift+L</span></span>                                 |
+| <span data-ttu-id="7d870-225">Zamknij formularz (kliknij Wstecz)</span><span class="sxs-lookup"><span data-stu-id="7d870-225">Close the form (click Back)</span></span>                         | <span data-ttu-id="7d870-226">Esc</span><span class="sxs-lookup"><span data-stu-id="7d870-226">Esc</span></span>                                          |
+| <span data-ttu-id="7d870-227">Zamknij formularz z zapisaniem</span><span class="sxs-lookup"><span data-stu-id="7d870-227">Close the form with explicit save</span></span>                   | <span data-ttu-id="7d870-228">Shift+Esc</span><span class="sxs-lookup"><span data-stu-id="7d870-228">Shift+Esc</span></span>                                    |
+| <span data-ttu-id="7d870-229">Zamknij formularz bez zapisywania zmian</span><span class="sxs-lookup"><span data-stu-id="7d870-229">Close the form discarding any unsaved changes</span></span>       | <span data-ttu-id="7d870-230">Alt+Shift+Q</span><span class="sxs-lookup"><span data-stu-id="7d870-230">Alt+Shift+Q</span></span>                                  |
 
  
 
-## <a name="grid-shortcuts"></a>Skróty siatki
+## <a name="grid-shortcuts"></a><span data-ttu-id="7d870-231">Skróty siatki</span><span class="sxs-lookup"><span data-stu-id="7d870-231">Grid shortcuts</span></span>
 |                                                                                                               |                                 |
 |---------------------------------------------------------------------------------------------------------------|---------------------------------|
-| **Funkcja**                                                                                                | **Naciśnij**                       |
-| Przejdź do następnej/poprzedniej kolumny                                                                              | Tab / Shift+Tab                 |
-| Przejdź do następnego/poprzedniego wiersza                                                                                 | Strzałka w dół / strzałka w górę           |
-| Przejdź do następnego/poprzedniego wiersza bez zaznaczania. (Uwaga: ten skrót dotyczy tylko scenariuszy wielokrotnego wyboru). | Ctrl+strzałka w górę / Ctrl+strzałka w dół |
-| Zaznacz/wyczyść bieżący wiersz. (Uwaga: ten skrót dotyczy tylko scenariuszy wielokrotnego wyboru).                    | Ctrl+Spacja / Ctrl+kliknięcie         |
-| Dodaj następny/poprzedni wiersz do wybranego zestawu. (Uwaga: ten skrót dotyczy tylko scenariuszy wielokrotnego wyboru).   | Shift+Spacja                     |
-| Dodaj zakres wierszy do wybranego zestawu. (Uwaga: ten skrót dotyczy tylko scenariuszy wielokrotnego wyboru).         | Shift+kliknięcie                     |
-| Przejdź do następnej/poprzedniej strony danych                                                                          | Page Up / Page Down             |
-| Utwórz nowy wiersz u dołu siatki                                                                    | Strzałka w dół (od ostatniego wiersza)  |
-| Zaznacz lub odznacz wszystkie wiersze                                                                                      | Ctrl+Shift+M                    |
-| Przejdź do pierwszego rekordu                                                                                      | Ctrl+Home                       |
-| Przejdź do ostatniego rekordu                                                                                       | Ctrl+End                        |
+| <span data-ttu-id="7d870-232">**Funkcja**</span><span class="sxs-lookup"><span data-stu-id="7d870-232">**To do this**</span></span>                                                                                                | <span data-ttu-id="7d870-233">**Naciśnij**</span><span class="sxs-lookup"><span data-stu-id="7d870-233">**Press**</span></span>                       |
+| <span data-ttu-id="7d870-234">Przejdź do następnej/poprzedniej kolumny</span><span class="sxs-lookup"><span data-stu-id="7d870-234">Move to the next/previous column</span></span>                                                                              | <span data-ttu-id="7d870-235">Tab / Shift+Tab</span><span class="sxs-lookup"><span data-stu-id="7d870-235">Tab / Shift+Tab</span></span>                 |
+| <span data-ttu-id="7d870-236">Przejdź do następnego/poprzedniego wiersza</span><span class="sxs-lookup"><span data-stu-id="7d870-236">Move to the next/previous row</span></span>                                                                                 | <span data-ttu-id="7d870-237">Strzałka w dół / strzałka w górę</span><span class="sxs-lookup"><span data-stu-id="7d870-237">Down Arrow / Up Arrow</span></span>           |
+| <span data-ttu-id="7d870-238">Przejdź do następnego/poprzedniego wiersza bez zaznaczania. (Uwaga: ten skrót dotyczy tylko scenariuszy wielokrotnego wyboru).</span><span class="sxs-lookup"><span data-stu-id="7d870-238">Move to the next/previous row without selecting (Note: This shortcut applies to multi-select scenarios only.)</span></span> | <span data-ttu-id="7d870-239">Ctrl+strzałka w górę / Ctrl+strzałka w dół</span><span class="sxs-lookup"><span data-stu-id="7d870-239">Ctrl+Up Arrow / Ctrl+Down Arrow</span></span> |
+| <span data-ttu-id="7d870-240">Zaznacz/wyczyść bieżący wiersz. (Uwaga: ten skrót dotyczy tylko scenariuszy wielokrotnego wyboru).</span><span class="sxs-lookup"><span data-stu-id="7d870-240">Select/clear the current row (Note: This shortcut applies to multi-select scenarios only.)</span></span>                    | <span data-ttu-id="7d870-241">Ctrl+Spacja / Ctrl+kliknięcie</span><span class="sxs-lookup"><span data-stu-id="7d870-241">Ctrl+Space / Ctrl+Click</span></span>         |
+| <span data-ttu-id="7d870-242">Dodaj następny/poprzedni wiersz do wybranego zestawu. (Uwaga: ten skrót dotyczy tylko scenariuszy wielokrotnego wyboru).</span><span class="sxs-lookup"><span data-stu-id="7d870-242">Add the next/previous row to the selected set (Note: This shortcut applies to multi-select scenarios only.)</span></span>   | <span data-ttu-id="7d870-243">Shift+Spacja</span><span class="sxs-lookup"><span data-stu-id="7d870-243">Shift+Space</span></span>                     |
+| <span data-ttu-id="7d870-244">Dodaj zakres wierszy do wybranego zestawu. (Uwaga: ten skrót dotyczy tylko scenariuszy wielokrotnego wyboru).</span><span class="sxs-lookup"><span data-stu-id="7d870-244">Add a range of rows to the selected set (Note: This shortcut applies to multi-select scenarios only.)</span></span>         | <span data-ttu-id="7d870-245">Shift+kliknięcie</span><span class="sxs-lookup"><span data-stu-id="7d870-245">Shift+Click</span></span>                     |
+| <span data-ttu-id="7d870-246">Przejdź do następnej/poprzedniej strony danych</span><span class="sxs-lookup"><span data-stu-id="7d870-246">Go to the next/previous page of data</span></span>                                                                          | <span data-ttu-id="7d870-247">Page Up / Page Down</span><span class="sxs-lookup"><span data-stu-id="7d870-247">Page Up / Page Down</span></span>             |
+| <span data-ttu-id="7d870-248">Utwórz nowy wiersz u dołu siatki</span><span class="sxs-lookup"><span data-stu-id="7d870-248">Create a new row at the bottom of the grid</span></span>                                                                    | <span data-ttu-id="7d870-249">Strzałka w dół (od ostatniego wiersza)</span><span class="sxs-lookup"><span data-stu-id="7d870-249">Down Arrow (from the last row)</span></span>  |
+| <span data-ttu-id="7d870-250">Zaznacz lub odznacz wszystkie wiersze</span><span class="sxs-lookup"><span data-stu-id="7d870-250">Select or clear all rows</span></span>                                                                                      | <span data-ttu-id="7d870-251">Ctrl+Shift+M</span><span class="sxs-lookup"><span data-stu-id="7d870-251">Ctrl+Shift+M</span></span>                    |
+| <span data-ttu-id="7d870-252">Przejdź do pierwszego rekordu</span><span class="sxs-lookup"><span data-stu-id="7d870-252">Move to the first record</span></span>                                                                                      | <span data-ttu-id="7d870-253">Ctrl+Home</span><span class="sxs-lookup"><span data-stu-id="7d870-253">Ctrl+Home</span></span>                       |
+| <span data-ttu-id="7d870-254">Przejdź do ostatniego rekordu</span><span class="sxs-lookup"><span data-stu-id="7d870-254">Move to the last record</span></span>                                                                                       | <span data-ttu-id="7d870-255">Ctrl+End</span><span class="sxs-lookup"><span data-stu-id="7d870-255">Ctrl+End</span></span>                        |
 
  
 
-## <a name="input-control-shortcuts"></a>Skróty wpisywania danych
+## <a name="input-control-shortcuts"></a><span data-ttu-id="7d870-256">Skróty wpisywania danych</span><span class="sxs-lookup"><span data-stu-id="7d870-256">Input control shortcuts</span></span>
 |                                                            |                               |
 |------------------------------------------------------------|-------------------------------|
-| **Funkcja**                                             | **Naciśnij**                     |
-| Wpisz datę sesji w polu daty                     | D+Tab                         |
-| Wpisz bieżącą datę w polu daty                     | T+Tab                         |
-| Otwórz wyszukiwanie, pole kombi, wybór daty, okno dialogowe przerywania           | Alt+strzałka w dół                |
-| Zamknij wyszukiwanie, pole kombi, wybór daty, okno dialogowego przerywania          | Esc                           |
-| Przenieś wyróżnienie do wyszukiwania (jeśli wyszukiwanie jest otwarte) | Alt+strzałka w dół                |
-| Otwórz rozszerzony podgląd formantu                        | Alt+strzałka w górę                  |
-| Zaznacz tekst w bieżącym polu                           | Ctrl+A                        |
-| Przejdź do lub wyjdź z pola tekstowego w formancie edytora HTML        | Alt+strzałka w dół / Alt+strzałka w górę |
+| <span data-ttu-id="7d870-257">**Funkcja**</span><span class="sxs-lookup"><span data-stu-id="7d870-257">**To do this**</span></span>                                             | <span data-ttu-id="7d870-258">**Naciśnij**</span><span class="sxs-lookup"><span data-stu-id="7d870-258">**Press**</span></span>                     |
+| <span data-ttu-id="7d870-259">Wpisz datę sesji w polu daty</span><span class="sxs-lookup"><span data-stu-id="7d870-259">Enter the session date in a date field</span></span>                     | <span data-ttu-id="7d870-260">D+Tab</span><span class="sxs-lookup"><span data-stu-id="7d870-260">D+Tab</span></span>                         |
+| <span data-ttu-id="7d870-261">Wpisz bieżącą datę w polu daty</span><span class="sxs-lookup"><span data-stu-id="7d870-261">Enter the current date in a date field</span></span>                     | <span data-ttu-id="7d870-262">T+Tab</span><span class="sxs-lookup"><span data-stu-id="7d870-262">T+Tab</span></span>                         |
+| <span data-ttu-id="7d870-263">Otwórz wyszukiwanie, pole kombi, wybór daty, okno dialogowe przerywania</span><span class="sxs-lookup"><span data-stu-id="7d870-263">Open lookup, combo box, date picker, drop dialog</span></span>           | <span data-ttu-id="7d870-264">Alt+strzałka w dół</span><span class="sxs-lookup"><span data-stu-id="7d870-264">Alt+Down Arrow</span></span>                |
+| <span data-ttu-id="7d870-265">Zamknij wyszukiwanie, pole kombi, wybór daty, okno dialogowego przerywania</span><span class="sxs-lookup"><span data-stu-id="7d870-265">Close lookup, combo box, date picker, drop dialog</span></span>          | <span data-ttu-id="7d870-266">Esc</span><span class="sxs-lookup"><span data-stu-id="7d870-266">Esc</span></span>                           |
+| <span data-ttu-id="7d870-267">Przenieś wyróżnienie do wyszukiwania (jeśli wyszukiwanie jest otwarte)</span><span class="sxs-lookup"><span data-stu-id="7d870-267">Move focus into a lookup (when the lookup is already open)</span></span> | <span data-ttu-id="7d870-268">Alt+strzałka w dół</span><span class="sxs-lookup"><span data-stu-id="7d870-268">Alt+Down Arrow</span></span>                |
+| <span data-ttu-id="7d870-269">Otwórz rozszerzony podgląd formantu</span><span class="sxs-lookup"><span data-stu-id="7d870-269">Open the control's enhanced preview</span></span>                        | <span data-ttu-id="7d870-270">Alt+strzałka w górę</span><span class="sxs-lookup"><span data-stu-id="7d870-270">Alt+Up Arrow</span></span>                  |
+| <span data-ttu-id="7d870-271">Zaznacz tekst w bieżącym polu</span><span class="sxs-lookup"><span data-stu-id="7d870-271">Select text in the current field</span></span>                           | <span data-ttu-id="7d870-272">Ctrl+A</span><span class="sxs-lookup"><span data-stu-id="7d870-272">Ctrl+A</span></span>                        |
+| <span data-ttu-id="7d870-273">Przejdź do lub wyjdź z pola tekstowego w formancie edytora HTML</span><span class="sxs-lookup"><span data-stu-id="7d870-273">Enter/leave the text area in an HTML editor control</span></span>        | <span data-ttu-id="7d870-274">Alt+strzałka w dół / Alt+strzałka w górę</span><span class="sxs-lookup"><span data-stu-id="7d870-274">Alt+Down Arrow / Alt+Up Arrow</span></span> |
 
  
 
-## <a name="messaging-shortcuts"></a>Skróty wiadomości
+## <a name="messaging-shortcuts"></a><span data-ttu-id="7d870-275">Skróty wiadomości</span><span class="sxs-lookup"><span data-stu-id="7d870-275">Messaging shortcuts</span></span>
 |                          |               |
 |--------------------------|---------------|
-| **Funkcja**           | **Naciśnij**     |
-| Przejdź do Centrum wiadomości | Ctrl+Shift+F7 |
-| Przejdź do Paska wiadomości    | Ctrl+F7       |
+| <span data-ttu-id="7d870-276">**Funkcja**</span><span class="sxs-lookup"><span data-stu-id="7d870-276">**To do this**</span></span>           | <span data-ttu-id="7d870-277">**Naciśnij**</span><span class="sxs-lookup"><span data-stu-id="7d870-277">**Press**</span></span>     |
+| <span data-ttu-id="7d870-278">Przejdź do Centrum wiadomości</span><span class="sxs-lookup"><span data-stu-id="7d870-278">Go to the Message Center</span></span> | <span data-ttu-id="7d870-279">Ctrl+Shift+F7</span><span class="sxs-lookup"><span data-stu-id="7d870-279">Ctrl+Shift+F7</span></span> |
+| <span data-ttu-id="7d870-280">Przejdź do Paska wiadomości</span><span class="sxs-lookup"><span data-stu-id="7d870-280">Go to the Message Bar</span></span>    | <span data-ttu-id="7d870-281">Ctrl+F7</span><span class="sxs-lookup"><span data-stu-id="7d870-281">Ctrl+F7</span></span>       |
 
  
 
-## <a name="navigation-shortcuts"></a>Skróty nawigacji
+## <a name="navigation-shortcuts"></a><span data-ttu-id="7d870-282">Skróty nawigacji</span><span class="sxs-lookup"><span data-stu-id="7d870-282">Navigation shortcuts</span></span>
 |                                                                           |                 |
 |---------------------------------------------------------------------------|-----------------|
-| **Funkcja**                                                            | **Naciśnij**       |
-| Przejdź do pulpitu nawigacyjnego                                                       | Alt+Shift+Home  |
-| Przejdź do paska nawigacji                                                  | Alt+Shift+F1    |
-| Przejdź do okienka nawigacji                                                 | Alt + F1          |
-| Dodawanie formularza do ulubionych/usuwanie formularza z ulubionych (z fokusem ustawionym na formularz w okienku nawigacji) | Shift+F         |
-| Przejdź do selektora firm                                                  | Ctrl+Shift+O    |
-| Przejdź do wyszukiwania nawigacji                                                   | Ctrl+/ lub Alt+G |
-| Otwórz okienko pomocy                                                        | Ctrl+?          |
-| Otwórz analizator śledzenia                                                     | Alt+Shift+T     |
+| <span data-ttu-id="7d870-283">**Funkcja**</span><span class="sxs-lookup"><span data-stu-id="7d870-283">**To do this**</span></span>                                                            | <span data-ttu-id="7d870-284">**Naciśnij**</span><span class="sxs-lookup"><span data-stu-id="7d870-284">**Press**</span></span>       |
+| <span data-ttu-id="7d870-285">Przejdź do pulpitu nawigacyjnego</span><span class="sxs-lookup"><span data-stu-id="7d870-285">Go to the dashboard</span></span>                                                       | <span data-ttu-id="7d870-286">Alt+Shift+Home</span><span class="sxs-lookup"><span data-stu-id="7d870-286">Alt+Shift+Home</span></span>  |
+| <span data-ttu-id="7d870-287">Przejdź do paska nawigacji</span><span class="sxs-lookup"><span data-stu-id="7d870-287">Go to the navigation bar</span></span>                                                  | <span data-ttu-id="7d870-288">Alt+Shift+F1</span><span class="sxs-lookup"><span data-stu-id="7d870-288">Alt+Shift+F1</span></span>    |
+| <span data-ttu-id="7d870-289">Przejdź do okienka nawigacji</span><span class="sxs-lookup"><span data-stu-id="7d870-289">Go to the navigation pane</span></span>                                                 | <span data-ttu-id="7d870-290">Alt + F1</span><span class="sxs-lookup"><span data-stu-id="7d870-290">Alt+F1</span></span>          |
+| <span data-ttu-id="7d870-291">Dodawanie formularza do ulubionych/usuwanie formularza z ulubionych (z fokusem ustawionym na formularz w okienku nawigacji)</span><span class="sxs-lookup"><span data-stu-id="7d870-291">Favorite/un-favorite a form (with focus on a form in the navigation pane)</span></span> | <span data-ttu-id="7d870-292">Shift+F</span><span class="sxs-lookup"><span data-stu-id="7d870-292">Shift+F</span></span>         |
+| <span data-ttu-id="7d870-293">Przejdź do selektora firm</span><span class="sxs-lookup"><span data-stu-id="7d870-293">Go to the company picker</span></span>                                                  | <span data-ttu-id="7d870-294">Ctrl+Shift+O</span><span class="sxs-lookup"><span data-stu-id="7d870-294">Ctrl+Shift+O</span></span>    |
+| <span data-ttu-id="7d870-295">Przejdź do wyszukiwania nawigacji</span><span class="sxs-lookup"><span data-stu-id="7d870-295">Go to navigation search</span></span>                                                   | <span data-ttu-id="7d870-296">Ctrl+/ lub Alt+G</span><span class="sxs-lookup"><span data-stu-id="7d870-296">Ctrl+/ or Alt+G</span></span> |
+| <span data-ttu-id="7d870-297">Otwórz okienko pomocy</span><span class="sxs-lookup"><span data-stu-id="7d870-297">Open the help pane</span></span>                                                        | <span data-ttu-id="7d870-298">Ctrl+?</span><span class="sxs-lookup"><span data-stu-id="7d870-298">Ctrl+?</span></span>          |
+| <span data-ttu-id="7d870-299">Otwórz analizator śledzenia</span><span class="sxs-lookup"><span data-stu-id="7d870-299">Open the trace parser</span></span>                                                     | <span data-ttu-id="7d870-300">Alt+Shift+T</span><span class="sxs-lookup"><span data-stu-id="7d870-300">Alt+Shift+T</span></span>     |
 
  
 
-## <a name="segmented-entry-shortcuts"></a>Skróty wpis podzielonego na segmenty
+## <a name="segmented-entry-shortcuts"></a><span data-ttu-id="7d870-301">Skróty wpis podzielonego na segmenty</span><span class="sxs-lookup"><span data-stu-id="7d870-301">Segmented entry shortcuts</span></span>
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **Funkcja**                                                                                                          | **Klawisze**                        |
-| Otwórz listę rozwijaną (gdy lista rozwijana jest zamknięta)                                                             | Alt+strzałka w dół                   |
-| Przenieś wyróżnienie na pole wprowadzania danych dla bieżącego segmentu na liście rozwijanej (gdy lista rozwijana jest otwarta) | Alt+strzałka w dół                   |
-| Zamknij listę rozwijaną                                                                                                | Alt+strzałka w górę                     |
-| Zamknij/otwórz prawą część listy rozwijanej                                                                      | Alt+strzałka w lewo / Alt+strzałka w prawo |
-| Przejdź między trybami „Pokaż prawidłowe” i „Pokaż wszystko”                                                                        | Alt+W                            |
-| Wybierz wartość z listy rozwijanej i przejdź do następnego segmentu                                                       | Wprowadź                            |
-| Przejdź do następnego/poprzedniego formantu na stronie (jeśli wyróżnienie jest na formancie wejścia)                                          | Tab / Shift+Tab                  |
-| Przejdź do następnego/poprzedniego pola wejściowego w menu wysuwanym (jeśli wyróżnienie jest na liście rozwijanej)                               | Tab / Shift+Tab                  |
-| Przejdź do wiersza wyżej/niżej w wyszukiwaniu                                                                                        | Strzałka w górę / strzałka w dół            |
-| Przejdź do okienka wyżej/niżej w wyszukiwaniu                                                                                       | Page Up / Page Down              |
-| Przejdź do góry/na dół wyszukiwania                                                                                    | Home / End                       |
+| <span data-ttu-id="7d870-302">**Funkcja**</span><span class="sxs-lookup"><span data-stu-id="7d870-302">**To do this**</span></span>                                                                                                          | <span data-ttu-id="7d870-303">**Klawisze**</span><span class="sxs-lookup"><span data-stu-id="7d870-303">**Press**</span></span>                        |
+| <span data-ttu-id="7d870-304">Otwórz listę rozwijaną (gdy lista rozwijana jest zamknięta)</span><span class="sxs-lookup"><span data-stu-id="7d870-304">Open the drop-down list (when the drop-down list is closed)</span></span>                                                             | <span data-ttu-id="7d870-305">Alt+strzałka w dół</span><span class="sxs-lookup"><span data-stu-id="7d870-305">Alt+Down Arrow</span></span>                   |
+| <span data-ttu-id="7d870-306">Przenieś wyróżnienie na pole wprowadzania danych dla bieżącego segmentu na liście rozwijanej (gdy lista rozwijana jest otwarta)</span><span class="sxs-lookup"><span data-stu-id="7d870-306">Move focus into the input field for the current segment in the drop-down list (when the drop-down list is already open)</span></span> | <span data-ttu-id="7d870-307">Alt+strzałka w dół</span><span class="sxs-lookup"><span data-stu-id="7d870-307">Alt+Down Arrow</span></span>                   |
+| <span data-ttu-id="7d870-308">Zamknij listę rozwijaną</span><span class="sxs-lookup"><span data-stu-id="7d870-308">Close the drop-down list</span></span>                                                                                                | <span data-ttu-id="7d870-309">Alt+strzałka w górę</span><span class="sxs-lookup"><span data-stu-id="7d870-309">Alt+Up Arrow</span></span>                     |
+| <span data-ttu-id="7d870-310">Zamknij/otwórz prawą część listy rozwijanej</span><span class="sxs-lookup"><span data-stu-id="7d870-310">Close/open the right portion of the drop-down list</span></span>                                                                      | <span data-ttu-id="7d870-311">Alt+strzałka w lewo / Alt+strzałka w prawo</span><span class="sxs-lookup"><span data-stu-id="7d870-311">Alt+Left Arrow / Alt+Right Arrow</span></span> |
+| <span data-ttu-id="7d870-312">Przejdź między trybami „Pokaż prawidłowe” i „Pokaż wszystko”</span><span class="sxs-lookup"><span data-stu-id="7d870-312">Toggle between “Show valid” and “Show all” modes</span></span>                                                                        | <span data-ttu-id="7d870-313">Alt+W</span><span class="sxs-lookup"><span data-stu-id="7d870-313">Alt+W</span></span>                            |
+| <span data-ttu-id="7d870-314">Wybierz wartość z listy rozwijanej i przejdź do następnego segmentu</span><span class="sxs-lookup"><span data-stu-id="7d870-314">Select the value from drop-down list and move to the next segment</span></span>                                                       | <span data-ttu-id="7d870-315">Wprowadź</span><span class="sxs-lookup"><span data-stu-id="7d870-315">Enter</span></span>                            |
+| <span data-ttu-id="7d870-316">Przejdź do następnego/poprzedniego formantu na stronie (jeśli wyróżnienie jest na formancie wejścia)</span><span class="sxs-lookup"><span data-stu-id="7d870-316">Move to the next/previous control on the page (when focus is in input control)</span></span>                                          | <span data-ttu-id="7d870-317">Tab / Shift+Tab</span><span class="sxs-lookup"><span data-stu-id="7d870-317">Tab / Shift+Tab</span></span>                  |
+| <span data-ttu-id="7d870-318">Przejdź do następnego/poprzedniego pola wejściowego w menu wysuwanym (jeśli wyróżnienie jest na liście rozwijanej)</span><span class="sxs-lookup"><span data-stu-id="7d870-318">Move to the next/previous input field in the flyout (when focus is in the drop-down list)</span></span>                               | <span data-ttu-id="7d870-319">Tab / Shift+Tab</span><span class="sxs-lookup"><span data-stu-id="7d870-319">Tab / Shift+Tab</span></span>                  |
+| <span data-ttu-id="7d870-320">Przejdź do wiersza wyżej/niżej w wyszukiwaniu</span><span class="sxs-lookup"><span data-stu-id="7d870-320">Move up/down a row in the lookup</span></span>                                                                                        | <span data-ttu-id="7d870-321">Strzałka w górę / strzałka w dół</span><span class="sxs-lookup"><span data-stu-id="7d870-321">Up Arrow / Down Arrow</span></span>            |
+| <span data-ttu-id="7d870-322">Przejdź do okienka wyżej/niżej w wyszukiwaniu</span><span class="sxs-lookup"><span data-stu-id="7d870-322">Move up/down a page in the lookup</span></span>                                                                                       | <span data-ttu-id="7d870-323">Page Up / Page Down</span><span class="sxs-lookup"><span data-stu-id="7d870-323">Page Up / Page Down</span></span>              |
+| <span data-ttu-id="7d870-324">Przejdź do góry/na dół wyszukiwania</span><span class="sxs-lookup"><span data-stu-id="7d870-324">Move to the top/bottom of the lookup</span></span>                                                                                    | <span data-ttu-id="7d870-325">Home / End</span><span class="sxs-lookup"><span data-stu-id="7d870-325">Home / End</span></span>                       |
 
  
 

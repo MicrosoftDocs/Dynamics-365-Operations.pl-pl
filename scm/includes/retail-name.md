@@ -1,2 +1,2 @@
 > [!NOTE]
-> Ten temat dotyczy rozwiązań Dynamics 365 for Finance and Operations Enterprise Edition oraz Dynamics 365 for Retail. 
+> <span data-ttu-id="203b2-101">Ten temat dotyczy rozwiązań Dynamics 365 for Finance and Operations Enterprise Edition oraz Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="203b2-101">This topic applies to both Dynamics 365 for Finance and Operations, Enterprise edition and to Dynamics 365 for Retail.</span></span> 

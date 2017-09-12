@@ -15,90 +15,90 @@ ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 33b7a499caf9292e44c155a0e1bd6a8929558be5
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 51cd32217b2f753f606e3060b4872a8274f16549
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="bank-statement-file-import-troubleshooting"></a>Rozwiązywanie problemów z importowaniem pliku wyciągu bankowego
+# <a name="bank-statement-file-import-troubleshooting"></a><span data-ttu-id="edbcb-107">Rozwiązywanie problemów z importowaniem pliku wyciągu bankowego</span><span class="sxs-lookup"><span data-stu-id="edbcb-107">Bank statement file import troubleshooting</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ważne jest, aby plik wyciągu bankowego z banku pasował do układu obsługiwanego przez program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Ze względu na ścisłe normy dotyczące wyciągów bankowych większość integracji będzie działać poprawnie. Jednak czasami pliku wyciągu nie można zaimportować lub ma on nieprawidłowe wyniki. Zazwyczaj te problemy są powodowane przez małe różnice w pliku wyciągu bankowego. W tym artykule wyjaśniono, jak skorygować te różnice i rozwiązać problemy.
+<span data-ttu-id="edbcb-108">Ważne jest, aby plik wyciągu bankowego z banku pasował do układu obsługiwanego przez program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="edbcb-108">It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports.</span></span> <span data-ttu-id="edbcb-109">Ze względu na ścisłe normy dotyczące wyciągów bankowych większość integracji będzie działać poprawnie.</span><span class="sxs-lookup"><span data-stu-id="edbcb-109">Because of strict standards for bank statements, most integrations will work correctly.</span></span> <span data-ttu-id="edbcb-110">Jednak czasami pliku wyciągu nie można zaimportować lub ma on nieprawidłowe wyniki.</span><span class="sxs-lookup"><span data-stu-id="edbcb-110">However, sometimes the statement file can't be imported or has incorrect results.</span></span> <span data-ttu-id="edbcb-111">Zazwyczaj te problemy są powodowane przez małe różnice w pliku wyciągu bankowego.</span><span class="sxs-lookup"><span data-stu-id="edbcb-111">Typically, these issues are caused by small differences in the bank statement file.</span></span> <span data-ttu-id="edbcb-112">W tym artykule wyjaśniono, jak skorygować te różnice i rozwiązać problemy.</span><span class="sxs-lookup"><span data-stu-id="edbcb-112">This article explains how to fix these differences and resolve the issues.</span></span>
 
-<a name="what-is-the-error"></a>Na czym polega błąd?
+<a name="what-is-the-error"></a><span data-ttu-id="edbcb-113">Na czym polega błąd?</span><span class="sxs-lookup"><span data-stu-id="edbcb-113">What is the error?</span></span>
 ------------------
 
-Po próbie zaimportowania pliku wyciągu bankowego przejdź do historii zadania zarządzania danymi i szczegółów wykonania operacji, aby znaleźć błąd. Błąd może pomóc poprzez wskazane wyciągu, salda lub wiersza wyciągu. Jednak prawdopodobnie dostarczy za mało informacji, aby pomóc w zidentyfikowaniu pola lub elementu, który jest przyczyną problemu.
+<span data-ttu-id="edbcb-114">Po próbie zaimportowania pliku wyciągu bankowego przejdź do historii zadania zarządzania danymi i szczegółów wykonania operacji, aby znaleźć błąd.</span><span class="sxs-lookup"><span data-stu-id="edbcb-114">After you try to import a bank statement file, go to the Data management job history and its execution details to find the error.</span></span> <span data-ttu-id="edbcb-115">Błąd może pomóc poprzez wskazane wyciągu, salda lub wiersza wyciągu.</span><span class="sxs-lookup"><span data-stu-id="edbcb-115">The error can help by pointing to the statement, balance, or statement line.</span></span> <span data-ttu-id="edbcb-116">Jednak prawdopodobnie dostarczy za mało informacji, aby pomóc w zidentyfikowaniu pola lub elementu, który jest przyczyną problemu.</span><span class="sxs-lookup"><span data-stu-id="edbcb-116">However, it's unlikely to provide enough information to help you identify the field or element that is causing the issue.</span></span>
 
-## <a name="what-are-the-differences"></a>Jakie są różnice?
-Porównaj definicję układu pliku bankowego z definicją importu w programie Finance and Operations i zapisz wszelkie różnice w polach i elementach. Porównaj plik wyciągu bankowego z powiązanym przykładowym plikiem programu Finance and Operations. W plikach ISO20022 wszelkie różnice powinny być dobrze widoczne.
+## <a name="what-are-the-differences"></a><span data-ttu-id="edbcb-117">Jakie są różnice?</span><span class="sxs-lookup"><span data-stu-id="edbcb-117">What are the differences?</span></span>
+<span data-ttu-id="edbcb-118">Porównaj definicję układu pliku bankowego z definicją importu w programie Finance and Operations i zapisz wszelkie różnice w polach i elementach.</span><span class="sxs-lookup"><span data-stu-id="edbcb-118">Compare the bank file layout definition to the Finance and Operations import definition, and note any differences in the fields and elements.</span></span> <span data-ttu-id="edbcb-119">Porównaj plik wyciągu bankowego z powiązanym przykładowym plikiem programu Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="edbcb-119">Compare the bank statement file to the related sample Finance and Operations file.</span></span> <span data-ttu-id="edbcb-120">W plikach ISO20022 wszelkie różnice powinny być dobrze widoczne.</span><span class="sxs-lookup"><span data-stu-id="edbcb-120">In the ISO20022 files, any differences should be easy to see.</span></span>
 
-## <a name="transformations"></a>Przekształcenia
-Zazwyczaj zmiany należy dokonać w jednym z trzech przekształceń. Każde przekształcenie jest zapisywane dla określonego standardu.
+## <a name="transformations"></a><span data-ttu-id="edbcb-121">Przekształcenia</span><span class="sxs-lookup"><span data-stu-id="edbcb-121">Transformations</span></span>
+<span data-ttu-id="edbcb-122">Zazwyczaj zmiany należy dokonać w jednym z trzech przekształceń.</span><span class="sxs-lookup"><span data-stu-id="edbcb-122">Typically, the change must be made in one of three transformations.</span></span> <span data-ttu-id="edbcb-123">Każde przekształcenie jest zapisywane dla określonego standardu.</span><span class="sxs-lookup"><span data-stu-id="edbcb-123">Each transformation is written for a specific standard.</span></span>
 
-| Nazwa zasobu                                         | Nazwa pliku                          |
+| <span data-ttu-id="edbcb-124">Nazwa zasobu</span><span class="sxs-lookup"><span data-stu-id="edbcb-124">Resource name</span></span>                                         | <span data-ttu-id="edbcb-125">Nazwa pliku</span><span class="sxs-lookup"><span data-stu-id="edbcb-125">File name</span></span>                          |
 |-------------------------------------------------------|------------------------------------|
-| BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt            | BAI2CSV-to-BAI2XML.xslt            |
-| BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt | ISO20022XML-to-Reconciliation.xslt |
-| BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt          | MT940TXT-to-MT940XML.xslt          |
+| <span data-ttu-id="edbcb-126">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="edbcb-126">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span></span>            | <span data-ttu-id="edbcb-127">BAI2CSV-to-BAI2XML.xslt</span><span class="sxs-lookup"><span data-stu-id="edbcb-127">BAI2CSV-to-BAI2XML.xslt</span></span>            |
+| <span data-ttu-id="edbcb-128">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="edbcb-128">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span></span> | <span data-ttu-id="edbcb-129">ISO20022XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="edbcb-129">ISO20022XML-to-Reconciliation.xslt</span></span> |
+| <span data-ttu-id="edbcb-130">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="edbcb-130">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span></span>          | <span data-ttu-id="edbcb-131">MT940TXT-to-MT940XML.xslt</span><span class="sxs-lookup"><span data-stu-id="edbcb-131">MT940TXT-to-MT940XML.xslt</span></span>          |
 
-## <a name="debugging-transformations"></a>Debugowanie przekształceń
-### <a name="adjust-the-bai2-and-mt940-files"></a>Korygowanie plików BAI2 i MT940
+## <a name="debugging-transformations"></a><span data-ttu-id="edbcb-132">Debugowanie przekształceń</span><span class="sxs-lookup"><span data-stu-id="edbcb-132">Debugging transformations</span></span>
+### <a name="adjust-the-bai2-and-mt940-files"></a><span data-ttu-id="edbcb-133">Korygowanie plików BAI2 i MT940</span><span class="sxs-lookup"><span data-stu-id="edbcb-133">Adjust the BAI2 and MT940 files</span></span>
 
-Pliki BAI2 i MT940 są plikami tekstowymi i wymagają skorygowania, aby umożliwić debugowanie przekształceń Extensible Stylesheet Language Transformation (XSLT). Program dokonuje tej korekty podczas importowania pliku.
+<span data-ttu-id="edbcb-134">Pliki BAI2 i MT940 są plikami tekstowymi i wymagają skorygowania, aby umożliwić debugowanie przekształceń Extensible Stylesheet Language Transformation (XSLT).</span><span class="sxs-lookup"><span data-stu-id="edbcb-134">The BAI2 and MT940 files are text-based files and require an adjustment to enable Extensible Stylesheet Language Transformations (XSLT) debugging.</span></span> <span data-ttu-id="edbcb-135">Program dokonuje tej korekty podczas importowania pliku.</span><span class="sxs-lookup"><span data-stu-id="edbcb-135">The program makes this adjustment when a file is imported.</span></span>
 
-1.  Utwórz plik XML i skopiuj do niego następujący tekst:
+1.  <span data-ttu-id="edbcb-136">Utwórz plik XML i skopiuj do niego następujący tekst:</span><span class="sxs-lookup"><span data-stu-id="edbcb-136">Create an XML file, and copy the following text into it.</span></span>
 
         <Batch><![CDATA[PASTESTATEMENTFILEHERE
         ]]></Batch>
 
-2.  Skopiuj zawartość pliku wyciągu bankowego i wkleić ją do pliku XML, tak aby zastąpiła fragment **TUWKLEJPLIKINSTRUKCJI**.
+2.  <span data-ttu-id="edbcb-137">Skopiuj zawartość pliku wyciągu bankowego i wkleić ją do pliku XML, tak aby zastąpiła fragment **TUWKLEJPLIKINSTRUKCJI**.</span><span class="sxs-lookup"><span data-stu-id="edbcb-137">Copy the contents of the bank statement file, and paste them into the XML file so that they replace **PASTESTATEMENTFILEHERE**.</span></span>
 
-### <a name="debug-the-xslt"></a>Debugowanie przekształcenia XSLT
+### <a name="debug-the-xslt"></a><span data-ttu-id="edbcb-138">Debugowanie przekształcenia XSLT</span><span class="sxs-lookup"><span data-stu-id="edbcb-138">Debug the XSLT</span></span>
 
-Aby uzyskać więcej informacji, zobacz <https://msdn.microsoft.com/en-us/library/ms255605.aspx>.
+<span data-ttu-id="edbcb-139">Aby uzyskać więcej informacji, zobacz <https://msdn.microsoft.com/en-us/library/ms255605.aspx>.</span><span class="sxs-lookup"><span data-stu-id="edbcb-139">For more information, see <https://msdn.microsoft.com/en-us/library/ms255605.aspx>.</span></span>
 
-1.  Uruchom program Microsoft Visual Studio.
-2.  Utwórz aplikację konsoli.
-3.  Otwórz odpowiednie przekształcenie XSLT.
-4.  Kliknij przekształcenie XLST i jego stronę właściwości.
-5.  Jako źródło danych wejściowych ustaw lokalizację pliku wyciągu bankowego.
-6.  Określ lokalizację i nazwę dla danych wyjściowych.
-7.  Ustaw wymagane punkty przerwania.
-8.  W menu kliknij kolejno opcje **XML** &gt; **Rozpocznij debugowanie XSLT**.
+1.  <span data-ttu-id="edbcb-140">Uruchom program Microsoft Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="edbcb-140">Start Microsoft Visual Studio.</span></span>
+2.  <span data-ttu-id="edbcb-141">Utwórz aplikację konsoli.</span><span class="sxs-lookup"><span data-stu-id="edbcb-141">Create a console application.</span></span>
+3.  <span data-ttu-id="edbcb-142">Otwórz odpowiednie przekształcenie XSLT.</span><span class="sxs-lookup"><span data-stu-id="edbcb-142">Open the appropriate XSLT.</span></span>
+4.  <span data-ttu-id="edbcb-143">Kliknij przekształcenie XLST i jego stronę właściwości.</span><span class="sxs-lookup"><span data-stu-id="edbcb-143">Click the XLST and its properties page.</span></span>
+5.  <span data-ttu-id="edbcb-144">Jako źródło danych wejściowych ustaw lokalizację pliku wyciągu bankowego.</span><span class="sxs-lookup"><span data-stu-id="edbcb-144">Set the input to the location of the bank statement file.</span></span>
+6.  <span data-ttu-id="edbcb-145">Określ lokalizację i nazwę dla danych wyjściowych.</span><span class="sxs-lookup"><span data-stu-id="edbcb-145">Define a location and file name for the output.</span></span>
+7.  <span data-ttu-id="edbcb-146">Ustaw wymagane punkty przerwania.</span><span class="sxs-lookup"><span data-stu-id="edbcb-146">Set the required break points.</span></span>
+8.  <span data-ttu-id="edbcb-147">W menu kliknij kolejno opcje **XML** &gt; **Rozpocznij debugowanie XSLT**.</span><span class="sxs-lookup"><span data-stu-id="edbcb-147">On the menu, click **XML** &gt; **Start XSLT Debugging**.</span></span>
 
-### <a name="format-the-xslt-output"></a>Formatowanie danych wyjściowych XSLT
+### <a name="format-the-xslt-output"></a><span data-ttu-id="edbcb-148">Formatowanie danych wyjściowych XSLT</span><span class="sxs-lookup"><span data-stu-id="edbcb-148">Format the XSLT output</span></span>
 
-Podczas wykonywania przekształcenia jest tworzony plik wyjściowy, który można wyświetlić w programie Visual Studio. Za pomocą kombinacji klawiszy Ctrl+K, Ctrl+D i Ctrl+K można szybko sformatować plik wyjściowy.
+<span data-ttu-id="edbcb-149">Podczas wykonywania przekształcenia jest tworzony plik wyjściowy, który można wyświetlić w programie Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="edbcb-149">When the transformation runs, it creates an output file that you can view in Visual Studio.</span></span> <span data-ttu-id="edbcb-150">Za pomocą kombinacji klawiszy Ctrl+K, Ctrl+D i Ctrl+K można szybko sformatować plik wyjściowy.</span><span class="sxs-lookup"><span data-stu-id="edbcb-150">Use Ctrl+A, Ctrl+K, and Ctrl+D to quickly format the output file.</span></span>
 
-### <a name="adjust-the-transformation"></a>Korygowanie przekształcenia
+### <a name="adjust-the-transformation"></a><span data-ttu-id="edbcb-151">Korygowanie przekształcenia</span><span class="sxs-lookup"><span data-stu-id="edbcb-151">Adjust the transformation</span></span>
 
-Skoryguj przekształcenie, aby uzyskać odpowiednie pole lub element w pliku wyciągu bankowego. Następnie zamapuj to pole lub element do odpowiedniego elementu programu Finance and Operations.
+<span data-ttu-id="edbcb-152">Skoryguj przekształcenie, aby uzyskać odpowiednie pole lub element w pliku wyciągu bankowego.</span><span class="sxs-lookup"><span data-stu-id="edbcb-152">Adjust the transformation to get the appropriate field or element in the bank statement file.</span></span> <span data-ttu-id="edbcb-153">Następnie zamapuj to pole lub element do odpowiedniego elementu programu Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="edbcb-153">Then map that field or element to the appropriate Finance and Operations element.</span></span>
 
-### <a name="debitcredit-indicator"></a>Wskaźnik debetu/kredytu
+### <a name="debitcredit-indicator"></a><span data-ttu-id="edbcb-154">Wskaźnik debetu/kredytu</span><span class="sxs-lookup"><span data-stu-id="edbcb-154">Debit/credit indicator</span></span>
 
-Czasami pozycje debetowe mogą być importowane jako kredytowe, i odwrotnie. Aby rozwiązać ten problem, należy zmienić odpowiednie przekształcenie XSLT. Jeśli wyciągi bankowe pochodzą z wielu banków, upewnij się, że używają takich samych zasad ustalania strony debetowej/kredytowej, albo utwórz oddzielne przekształcenia.
+<span data-ttu-id="edbcb-155">Czasami pozycje debetowe mogą być importowane jako kredytowe, i odwrotnie.</span><span class="sxs-lookup"><span data-stu-id="edbcb-155">Sometimes, debits might be imported as credits, and credits might be imported as debits.</span></span> <span data-ttu-id="edbcb-156">Aby rozwiązać ten problem, należy zmienić odpowiednie przekształcenie XSLT.</span><span class="sxs-lookup"><span data-stu-id="edbcb-156">To resolve this issue, you must change the appropriate XSLT.</span></span> <span data-ttu-id="edbcb-157">Jeśli wyciągi bankowe pochodzą z wielu banków, upewnij się, że używają takich samych zasad ustalania strony debetowej/kredytowej, albo utwórz oddzielne przekształcenia.</span><span class="sxs-lookup"><span data-stu-id="edbcb-157">If bank statements come from multiple banks, make sure that they all use the same debit/credit approach, or create separate transformations.</span></span>
 
--   Szablon GetAmountCreditDebitIndicator BAI2XML-to-Reconciliation.xlst
--   Szablon GetCreditDebit ISO20022XML-to-Reconcilation.xslt
--   Szablon operacji GetCreditDebitIndicator MT940XML-to-Reconcilation.xslt
+-   <span data-ttu-id="edbcb-158">Szablon GetAmountCreditDebitIndicator BAI2XML-to-Reconciliation.xlst</span><span class="sxs-lookup"><span data-stu-id="edbcb-158">BAI2XML-to-Reconciliation.xlst GetAmountCreditDebitIndicator template</span></span>
+-   <span data-ttu-id="edbcb-159">Szablon GetCreditDebit ISO20022XML-to-Reconcilation.xslt</span><span class="sxs-lookup"><span data-stu-id="edbcb-159">ISO20022XML-to-Reconcilation.xslt GetCreditDebit template</span></span>
+-   <span data-ttu-id="edbcb-160">Szablon operacji GetCreditDebitIndicator MT940XML-to-Reconcilation.xslt</span><span class="sxs-lookup"><span data-stu-id="edbcb-160">MT940XML-to-Reconcilation.xslt GetCreditDebitIndicator template</span></span>
 
-## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Przykłady formatów i układów technicznych i wyciągów bankowych
-W tabeli poniżej przedstawiono przykłady definicji układów technicznych plików importu zaawansowanego uzgadniania konta bankowego i trzy powiązane przykładowe pliki wyciągów bankowych. Przykładowe pliki i układy techniczne można pobrać stąd: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a><span data-ttu-id="edbcb-161">Przykłady formatów i układów technicznych i wyciągów bankowych</span><span class="sxs-lookup"><span data-stu-id="edbcb-161">Examples of bank statement formats and technical layouts</span></span>
+<span data-ttu-id="edbcb-162">W tabeli poniżej przedstawiono przykłady definicji układów technicznych plików importu zaawansowanego uzgadniania konta bankowego i trzy powiązane przykładowe pliki wyciągów bankowych.</span><span class="sxs-lookup"><span data-stu-id="edbcb-162">The following table lists examples of the technical layout definitions for advanced bank reconciliation import files and three related bank statement example files.</span></span> <span data-ttu-id="edbcb-163">Przykładowe pliki i układy techniczne można pobrać stąd: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span><span class="sxs-lookup"><span data-stu-id="edbcb-163">You can download the example files and technical layouts here: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span></span>  
 
 
-| Definicja układu technicznego                             | Przykładowy plik wyciągu bankowego          |
+| <span data-ttu-id="edbcb-164">Definicja układu technicznego</span><span class="sxs-lookup"><span data-stu-id="edbcb-164">Technical layout definition</span></span>                             | <span data-ttu-id="edbcb-165">Przykładowy plik wyciągu bankowego</span><span class="sxs-lookup"><span data-stu-id="edbcb-165">Bank statement example file</span></span>          |
 |---------------------------------------------------------|--------------------------------------|
-| DynamicsAXMT940Layout                                   | MT940StatementExample                |
-| DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
-| DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+| <span data-ttu-id="edbcb-166">DynamicsAXMT940Layout</span><span class="sxs-lookup"><span data-stu-id="edbcb-166">DynamicsAXMT940Layout</span></span>                                   | <span data-ttu-id="edbcb-167">MT940StatementExample</span><span class="sxs-lookup"><span data-stu-id="edbcb-167">MT940StatementExample</span></span>                |
+| <span data-ttu-id="edbcb-168">DynamicsAXISO20022Layout</span><span class="sxs-lookup"><span data-stu-id="edbcb-168">DynamicsAXISO20022Layout</span></span>                                | <span data-ttu-id="edbcb-169">ISO20022StatementExample</span><span class="sxs-lookup"><span data-stu-id="edbcb-169">ISO20022StatementExample</span></span>             |
+| <span data-ttu-id="edbcb-170">DynamicsAXBAI2Layout</span><span class="sxs-lookup"><span data-stu-id="edbcb-170">DynamicsAXBAI2Layout</span></span>                                    | <span data-ttu-id="edbcb-171">BAI2StatementExample</span><span class="sxs-lookup"><span data-stu-id="edbcb-171">BAI2StatementExample</span></span>                 |
 
 
 

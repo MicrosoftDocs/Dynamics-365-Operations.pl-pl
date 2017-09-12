@@ -17,82 +17,82 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: eec121859b7135741ccf204fd507ef0790f1c8d4
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e27be049bebd63c9266029b8981874417a9f0a8c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-shipping-carriers"></a>Konfigurowanie firm przewozowych
+# <a name="set-up-shipping-carriers"></a><span data-ttu-id="55ecd-103">Konfigurowanie firm przewozowych</span><span class="sxs-lookup"><span data-stu-id="55ecd-103">Set up shipping carriers</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze opisano sposób konfigurowania firmy przewozowej i definiowania szczegółów, takich jak usługi, tryb wysyłki, metoda płatności za transport, ograniczenia transportu i stawka kosztów wysyłki. Koordynator transportu może następnie przypisać firmę przewozową do ładunku przychodzącego i wychodzącego.
+<span data-ttu-id="55ecd-104">W tej procedurze opisano sposób konfigurowania firmy przewozowej i definiowania szczegółów, takich jak usługi, tryb wysyłki, metoda płatności za transport, ograniczenia transportu i stawka kosztów wysyłki.</span><span class="sxs-lookup"><span data-stu-id="55ecd-104">This procedure shows how to set up a shipping carrier and define details such as service, shipment mode, transportation tender, transportation constraints, and shipping rate.</span></span> <span data-ttu-id="55ecd-105">Koordynator transportu może następnie przypisać firmę przewozową do ładunku przychodzącego i wychodzącego.</span><span class="sxs-lookup"><span data-stu-id="55ecd-105">A transportation coordinator can then assign a shipping carrier to an inbound or outbound load.</span></span>
 
 
-## <a name="create-a-new-shipping-carrier"></a>Tworzenie nowej firmy przewozowej
-1. Wybierz kolejno opcje Zarządzanie transportem > Ustawienia > Przewoźnicy > Firmy przewozowe.
-2. Kliknij przycisk Nowy.
-3. W polu Firma przewozowa wpisz wartość.
-4. W polu Nazwa wpisz wartość.
-5. W polu Tryb kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-6. Na liście znajdź i zaznacz odpowiedni rekord.
-7. Na liście kliknij łącze w wybranym wierszu.
+## <a name="create-a-new-shipping-carrier"></a><span data-ttu-id="55ecd-106">Tworzenie nowej firmy przewozowej</span><span class="sxs-lookup"><span data-stu-id="55ecd-106">Create a new shipping carrier</span></span>
+1. <span data-ttu-id="55ecd-107">Wybierz kolejno opcje Zarządzanie transportem > Ustawienia > Przewoźnicy > Firmy przewozowe.</span><span class="sxs-lookup"><span data-stu-id="55ecd-107">Go to Transportation management > Setup > Carriers > Shipping carriers.</span></span>
+2. <span data-ttu-id="55ecd-108">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="55ecd-108">Click New.</span></span>
+3. <span data-ttu-id="55ecd-109">W polu Firma przewozowa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="55ecd-109">In the Shipping carrier field, type a value.</span></span>
+4. <span data-ttu-id="55ecd-110">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="55ecd-110">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="55ecd-111">W polu Tryb kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="55ecd-111">In the Mode field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="55ecd-112">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="55ecd-112">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="55ecd-113">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="55ecd-113">In the list, click the link in the selected row.</span></span>
 
-## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a>Wprowadzanie ogólnych informacji o firmie przewozowej
-1. Przełącz rozwinięcie sekcji Przegląd.
-2. Zaznacz lub usuń zaznaczenie pola wyboru Aktywuj firmę przewozową.
-3. W polu Dostawca kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-    * Wybierz konto dostawcy, do którego chcesz przypisać firmę przewozową.  
-4. Na liście znajdź i zaznacz odpowiedni rekord.
-5. Na liście kliknij łącze w wybranym wierszu.
-6. W polu Typ metody płatności za transport wybierz opcję.
-    * Wybierz opcję Ręczne, aby użyć strony Metoda płatności za transport, lub opcję EDI, aby zaktualizować metodę płatności na elektroniczną wymianę danych (EDI).  
-7. Zaznacz lub usuń zaznaczenie pola wyboru Aktywuj oceny przewoźników.
+## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a><span data-ttu-id="55ecd-114">Wprowadzanie ogólnych informacji o firmie przewozowej</span><span class="sxs-lookup"><span data-stu-id="55ecd-114">Fill in the general information for the shipping carrier</span></span>
+1. <span data-ttu-id="55ecd-115">Przełącz rozwinięcie sekcji Przegląd.</span><span class="sxs-lookup"><span data-stu-id="55ecd-115">Toggle the expansion of the Overview section.</span></span>
+2. <span data-ttu-id="55ecd-116">Zaznacz lub usuń zaznaczenie pola wyboru Aktywuj firmę przewozową.</span><span class="sxs-lookup"><span data-stu-id="55ecd-116">Check or uncheck the Activate shipping carrier checkbox.</span></span>
+3. <span data-ttu-id="55ecd-117">W polu Dostawca kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="55ecd-117">In the Vendor field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="55ecd-118">Wybierz konto dostawcy, do którego chcesz przypisać firmę przewozową.</span><span class="sxs-lookup"><span data-stu-id="55ecd-118">Select the vendor account to assign the shipping carrier to.</span></span>  
+4. <span data-ttu-id="55ecd-119">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="55ecd-119">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="55ecd-120">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="55ecd-120">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="55ecd-121">W polu Typ metody płatności za transport wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="55ecd-121">In the Transportation tender type field, select an option.</span></span>
+    * <span data-ttu-id="55ecd-122">Wybierz opcję Ręczne, aby użyć strony Metoda płatności za transport, lub opcję EDI, aby zaktualizować metodę płatności na elektroniczną wymianę danych (EDI).</span><span class="sxs-lookup"><span data-stu-id="55ecd-122">Select Manual to use the Transportation Tender page, or select EDI to update the tender by using Electronic Data Interchange (EDI).</span></span>  
+7. <span data-ttu-id="55ecd-123">Zaznacz lub usuń zaznaczenie pola wyboru Aktywuj oceny przewoźników.</span><span class="sxs-lookup"><span data-stu-id="55ecd-123">Check or uncheck the Activate carrier rating checkbox.</span></span>
 
-## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>Tworzenie niezbędnych usług dla firmy przewozowej
-1. Przełącz rozwinięcie sekcji Usługi.
-2. Kliknij przycisk Nowy.
-3. Na liście oznacz wybrany wiersz.
-4. W polu Usługa przewozowa wpisz wartość.
-5. W polu Nazwa wpisz wartość.
-6. W polu Metoda transportu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-7. Na liście znajdź i zaznacz odpowiedni rekord.
-8. Na liście kliknij łącze w wybranym wierszu.
+## <a name="create-the-necessary-services-for-the-shipping-carrier"></a><span data-ttu-id="55ecd-124">Tworzenie niezbędnych usług dla firmy przewozowej</span><span class="sxs-lookup"><span data-stu-id="55ecd-124">Create the necessary services for the shipping carrier</span></span>
+1. <span data-ttu-id="55ecd-125">Przełącz rozwinięcie sekcji Usługi.</span><span class="sxs-lookup"><span data-stu-id="55ecd-125">Toggle the expansion of the Services section.</span></span>
+2. <span data-ttu-id="55ecd-126">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="55ecd-126">Click New.</span></span>
+3. <span data-ttu-id="55ecd-127">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="55ecd-127">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="55ecd-128">W polu Usługa przewozowa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="55ecd-128">In the Carrier service field, type a value.</span></span>
+5. <span data-ttu-id="55ecd-129">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="55ecd-129">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="55ecd-130">W polu Metoda transportu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="55ecd-130">In the Transportation method field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="55ecd-131">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="55ecd-131">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="55ecd-132">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="55ecd-132">In the list, click the link in the selected row.</span></span>
 
-## <a name="set-up-the-address-for-the-carrier-optional"></a>Konfigurowanie adresu przewoźnika (opcjonalnie)
-1. Przełącz rozwinięcie sekcji Adresy.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa lub opis wpisz wartość.
-4. W polu Kraj/region kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-5. Na liście kliknij łącze w wybranym wierszu.
-6. W polu Kod pocztowy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-7. Na liście znajdź i zaznacz odpowiedni rekord.
-8. Na liście kliknij łącze w wybranym wierszu.
-9. W polu Ulica wpisz wartość.
-10. Kliknij przycisk OK.
+## <a name="set-up-the-address-for-the-carrier-optional"></a><span data-ttu-id="55ecd-133">Konfigurowanie adresu przewoźnika (opcjonalnie)</span><span class="sxs-lookup"><span data-stu-id="55ecd-133">Set up the address for the carrier (optional)</span></span>
+1. <span data-ttu-id="55ecd-134">Przełącz rozwinięcie sekcji Adresy.</span><span class="sxs-lookup"><span data-stu-id="55ecd-134">Toggle the expansion of the Addresses section.</span></span>
+2. <span data-ttu-id="55ecd-135">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="55ecd-135">Click New.</span></span>
+3. <span data-ttu-id="55ecd-136">W polu Nazwa lub opis wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="55ecd-136">In the Name or description field, type a value.</span></span>
+4. <span data-ttu-id="55ecd-137">W polu Kraj/region kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="55ecd-137">In the Country/region field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="55ecd-138">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="55ecd-138">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="55ecd-139">W polu Kod pocztowy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="55ecd-139">In the ZIP/postal code field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="55ecd-140">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="55ecd-140">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="55ecd-141">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="55ecd-141">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="55ecd-142">W polu Ulica wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="55ecd-142">In the Street field, type a value.</span></span>
+10. <span data-ttu-id="55ecd-143">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="55ecd-143">Click OK.</span></span>
 
-## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a>Konfigurowanie profilu wyznaczania stawek dla przewoźnika
-1. Przełącz rozwinięcie sekcji Profile oceny.
-2. Kliknij przycisk Nowy.
-3. Na liście oznacz wybrany wiersz.
-4. W polu Profil oceny wpisz wartość.
-5. W polu Nazwa wpisz wartość.
-6. W polu Oddział kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-7. Na liście znajdź i zaznacz odpowiedni rekord.
-8. Na liście kliknij łącze w wybranym wierszu.
-9. W polu Magazyn kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-10. Na liście znajdź i zaznacz odpowiedni rekord.
-11. Na liście kliknij łącze w wybranym wierszu.
-12. W polu Aparat wyznaczania stawki kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-    * Wybierz aparat wyznaczania stawki zgodny z umową zawartą z przewoźnikiem.  
-13. Na liście znajdź i zaznacz odpowiedni rekord.
-14. Na liście kliknij łącze w wybranym wierszu.
-15. W polu Główna stawka kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-16. Na liście znajdź i zaznacz odpowiedni rekord.
-17. Na liście kliknij łącze w wybranym wierszu.
-18. W polu Aparat czasu tranzytu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-19. Na liście kliknij łącze w wybranym wierszu.
-20. Kliknij przycisk Zapisz.
+## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a><span data-ttu-id="55ecd-144">Konfigurowanie profilu wyznaczania stawek dla przewoźnika</span><span class="sxs-lookup"><span data-stu-id="55ecd-144">Set up the rating profile for the shipping carrier</span></span>
+1. <span data-ttu-id="55ecd-145">Przełącz rozwinięcie sekcji Profile oceny.</span><span class="sxs-lookup"><span data-stu-id="55ecd-145">Toggle the expansion of the Rating profiles section.</span></span>
+2. <span data-ttu-id="55ecd-146">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="55ecd-146">Click New.</span></span>
+3. <span data-ttu-id="55ecd-147">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="55ecd-147">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="55ecd-148">W polu Profil oceny wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="55ecd-148">In the Rating profile field, type a value.</span></span>
+5. <span data-ttu-id="55ecd-149">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="55ecd-149">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="55ecd-150">W polu Oddział kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="55ecd-150">In the Site field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="55ecd-151">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="55ecd-151">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="55ecd-152">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="55ecd-152">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="55ecd-153">W polu Magazyn kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="55ecd-153">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="55ecd-154">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="55ecd-154">In the list, find and select the desired record.</span></span>
+11. <span data-ttu-id="55ecd-155">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="55ecd-155">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="55ecd-156">W polu Aparat wyznaczania stawki kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="55ecd-156">In the Rate engine field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="55ecd-157">Wybierz aparat wyznaczania stawki zgodny z umową zawartą z przewoźnikiem.</span><span class="sxs-lookup"><span data-stu-id="55ecd-157">Select the Rate engine that is in accordance with the contract that you have with the carrier.</span></span>  
+13. <span data-ttu-id="55ecd-158">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="55ecd-158">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="55ecd-159">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="55ecd-159">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="55ecd-160">W polu Główna stawka kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="55ecd-160">In the Rate master field, click the drop-down button to open the lookup.</span></span>
+16. <span data-ttu-id="55ecd-161">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="55ecd-161">In the list, find and select the desired record.</span></span>
+17. <span data-ttu-id="55ecd-162">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="55ecd-162">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="55ecd-163">W polu Aparat czasu tranzytu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="55ecd-163">In the Transit time engine field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="55ecd-164">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="55ecd-164">In the list, click the link in the selected row.</span></span>
+20. <span data-ttu-id="55ecd-165">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="55ecd-165">Click Save.</span></span>
 
 

@@ -19,40 +19,40 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0909b64a77024d551af0dad2de985887cf6ff06d
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: f45d180dc8dcafb0579e76b890dd5d516df5b8c0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="balanced-journals-for-interunit-accounting"></a>Zbilansowane arkusze dla księgowania międzyjednostkowego
+# <a name="balanced-journals-for-interunit-accounting"></a><span data-ttu-id="8c50e-103">Zbilansowane arkusze dla księgowania międzyjednostkowego</span><span class="sxs-lookup"><span data-stu-id="8c50e-103">Balanced journals for interunit accounting</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym artykule przedstawiono sposób automatycznego bilansowania arkusza po wybraniu wymiaru finansowego na stronie Księga. 
+<span data-ttu-id="8c50e-104">W tym artykule przedstawiono sposób automatycznego bilansowania arkusza po wybraniu wymiaru finansowego na stronie Księga.</span><span class="sxs-lookup"><span data-stu-id="8c50e-104">This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page.</span></span> 
 
-Jeśli zapisy na koncie nie bilansują się na poziomie wartości wymiaru finansowego, zapisy dodatkowe konta są tworzone automatycznie do zrównoważenia arkusza. Te zapisy na kontach używają typów księgowania **Międzyjednostkowe — debet** i**Międzyjednostkowe — kredyt** na stronie **kont dla transakcji automatycznych** w celu określenia konta głównego. Na przykład: oddział, czyli drugi segment konta księgowego, jest wybrany jako wymiar finansowy bilansowania i trzeba utworzyć następujące wpisy księgowe.
+<span data-ttu-id="8c50e-105">Jeśli zapisy na koncie nie bilansują się na poziomie wartości wymiaru finansowego, zapisy dodatkowe konta są tworzone automatycznie do zrównoważenia arkusza.</span><span class="sxs-lookup"><span data-stu-id="8c50e-105">If account entries don't balance at the level of the financial dimension values, additional account entries are created automatically to balance the journal.</span></span> <span data-ttu-id="8c50e-106">Te zapisy na kontach używają typów księgowania **Międzyjednostkowe — debet** i**Międzyjednostkowe — kredyt** na stronie **kont dla transakcji automatycznych** w celu określenia konta głównego.</span><span class="sxs-lookup"><span data-stu-id="8c50e-106">These account entries use the **Interunit - debit** and **Interunit - credit** posting types on the **Accounts for automatic transactions** page to determine the main account.</span></span> <span data-ttu-id="8c50e-107">Na przykład: oddział, czyli drugi segment konta księgowego, jest wybrany jako wymiar finansowy bilansowania i trzeba utworzyć następujące wpisy księgowe.</span><span class="sxs-lookup"><span data-stu-id="8c50e-107">For example, Branch, which is the second segment of the ledger account, is selected as the balancing financial dimension, and the following accounting entries are about to be created.</span></span>
 
 |                      |           |
 |----------------------|-----------|
-| 6100 – MSP – OU\_256 | 100,00 DR |
-| 6100 – NY – OU\_249  | 100,00 DR |
-| 2100 – MSP – OU\_256 | 200,00 CR |
+| <span data-ttu-id="8c50e-108">6100 – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="8c50e-108">6100 – MSP – OU\_256</span></span> | <span data-ttu-id="8c50e-109">100,00 DR</span><span class="sxs-lookup"><span data-stu-id="8c50e-109">100.00 DR</span></span> |
+| <span data-ttu-id="8c50e-110">6100 – NY – OU\_249</span><span class="sxs-lookup"><span data-stu-id="8c50e-110">6100 – NY – OU\_249</span></span>  | <span data-ttu-id="8c50e-111">100,00 DR</span><span class="sxs-lookup"><span data-stu-id="8c50e-111">100.00 DR</span></span> |
+| <span data-ttu-id="8c50e-112">2100 – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="8c50e-112">2100 – MSP – OU\_256</span></span> | <span data-ttu-id="8c50e-113">200,00 CR</span><span class="sxs-lookup"><span data-stu-id="8c50e-113">200.00 CR</span></span> |
 
-W tym przypadku określane są następujące salda:
+<span data-ttu-id="8c50e-114">W tym przypadku określane są następujące salda:</span><span class="sxs-lookup"><span data-stu-id="8c50e-114">In this case, the following balances are determined:</span></span>
 
--   Dla oddziału MSP = 100,00 CR
--   Dla oddziału NY = 100,00 DR
+-   <span data-ttu-id="8c50e-115">Dla oddziału MSP = 100,00 CR</span><span class="sxs-lookup"><span data-stu-id="8c50e-115">For Branch MSP = 100.00 CR</span></span>
+-   <span data-ttu-id="8c50e-116">Dla oddziału NY = 100,00 DR</span><span class="sxs-lookup"><span data-stu-id="8c50e-116">For Branch NY = 100.00 DR</span></span>
 
-Dlatego następujące wpisy księgowe są tworzone automatycznie w celu zbilansowania arkusza na poziomie wartości wymiaru finansowego.
+<span data-ttu-id="8c50e-117">Dlatego następujące wpisy księgowe są tworzone automatycznie w celu zbilansowania arkusza na poziomie wartości wymiaru finansowego.</span><span class="sxs-lookup"><span data-stu-id="8c50e-117">Therefore, the following accounting entries are created automatically to balance the  journal at the level of the financial dimension values.</span></span>
 
 |                                   |           |
 |-----------------------------------|-----------|
-| (Międzyjednostkowe — debet) – MSP – OU\_256 | 100,00 DR |
-| (Międzyjednostkowe — kredyt) – NY – OU\_249 | 100,00 CR |
+| <span data-ttu-id="8c50e-118">(Międzyjednostkowe — debet) – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="8c50e-118">(Interunit Debit) – MSP – OU\_256</span></span> | <span data-ttu-id="8c50e-119">100,00 DR</span><span class="sxs-lookup"><span data-stu-id="8c50e-119">100.00 DR</span></span> |
+| <span data-ttu-id="8c50e-120">(Międzyjednostkowe — kredyt) – NY – OU\_249</span><span class="sxs-lookup"><span data-stu-id="8c50e-120">(Interunit Credit) – NY – OU\_249</span></span> | <span data-ttu-id="8c50e-121">100,00 CR</span><span class="sxs-lookup"><span data-stu-id="8c50e-121">100.00 CR</span></span> |
 
 
 

@@ -16,37 +16,37 @@ ms.custom: 3401
 ms.assetid: 862d6450-187b-497f-9822-cce45f2c65a9
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3cf2f1143837a35a41b12ef566743aefd90fc462
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 5afdabf93128bc52cb223d0c35c6bcdae5f5ca2a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="derived-books"></a>Księgi pochodne
+# <a name="derived-books"></a><span data-ttu-id="ed050-103">Księgi pochodne</span><span class="sxs-lookup"><span data-stu-id="ed050-103">Derived books</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera omówienie funkcji ksiąg pochodnych.
+<span data-ttu-id="ed050-104">Ten artykuł zawiera omówienie funkcji ksiąg pochodnych.</span><span class="sxs-lookup"><span data-stu-id="ed050-104">This article provides an overview of derived book functionality.</span></span>
 
-Księgi pochodne upraszczają księgowanie transakcji księgi środków trwałych, które są planowane w regularnych interwałach.  Jedną księgę wskazuje się jako podstawową. Jest to zazwyczaj księga używana do amortyzacji księgowej. Następnie dołączasz tę księgę do innych ksiąg, które służą do księgowania transakcji w takich samych interwałach, jak w księdze podstawowej. Księgi amortyzacji podatkowej są często konfigurowane jako księgi pochodne. 
+<span data-ttu-id="ed050-105">Księgi pochodne upraszczają księgowanie transakcji księgi środków trwałych, które są planowane w regularnych interwałach.</span><span class="sxs-lookup"><span data-stu-id="ed050-105">The purpose of derived books is to simplify the posting of fixed asset book transactions that are planned for regular intervals.</span></span>  <span data-ttu-id="ed050-106">Jedną księgę wskazuje się jako podstawową.</span><span class="sxs-lookup"><span data-stu-id="ed050-106">You choose one book as the primary book.</span></span> <span data-ttu-id="ed050-107">Jest to zazwyczaj księga używana do amortyzacji księgowej.</span><span class="sxs-lookup"><span data-stu-id="ed050-107">This usually is the book that is used for accounting depreciation.</span></span> <span data-ttu-id="ed050-108">Następnie dołączasz tę księgę do innych ksiąg, które służą do księgowania transakcji w takich samych interwałach, jak w księdze podstawowej.</span><span class="sxs-lookup"><span data-stu-id="ed050-108">You then attach to it other books that are set up to post transactions in the same intervals as the primary book.</span></span> <span data-ttu-id="ed050-109">Księgi amortyzacji podatkowej są często konfigurowane jako księgi pochodne.</span><span class="sxs-lookup"><span data-stu-id="ed050-109">Tax depreciation books are often set up as derived books.</span></span> 
 
-Najczęstszymi transakcjami księgowanymi w księgach pochodnych są transakcje nabycia, korekty wartości początkowej i likwidacje. 
+<span data-ttu-id="ed050-110">Najczęstszymi transakcjami księgowanymi w księgach pochodnych są transakcje nabycia, korekty wartości początkowej i likwidacje.</span><span class="sxs-lookup"><span data-stu-id="ed050-110">The most common transactions to set up to post to derived books are acquisitions, acquisition adjustments, and disposals.</span></span> 
 
-## <a name="example"></a>Przykład
+## <a name="example"></a><span data-ttu-id="ed050-111">Przykład</span><span class="sxs-lookup"><span data-stu-id="ed050-111">Example</span></span>
 
-Księgi B i C są skonfigurowane jako księgi pochodne księgi A dla typu transakcji Nabycie. W księdze A wprowadzasz transakcję nabycia środka 123 o wartości 1500,00. 
+<span data-ttu-id="ed050-112">Księgi B i C są skonfigurowane jako księgi pochodne księgi A dla typu transakcji Nabycie.</span><span class="sxs-lookup"><span data-stu-id="ed050-112">Book B and book C are set up as derived books for book A for the Acquisition transaction type.</span></span> <span data-ttu-id="ed050-113">W księdze A wprowadzasz transakcję nabycia środka 123 o wartości 1500,00.</span><span class="sxs-lookup"><span data-stu-id="ed050-113">In book A, you enter an acquisition transaction for asset 123 for 1,500.00.</span></span> 
 
-Podczas księgowania transakcji jest generowana i księgowana transakcja nabycia o wartości 1500,00 dla składnika aktywów 123 w księdze B i składnika aktywów 123 w księdze C. W czasie przygotowywania transakcji księgi podstawowej do zaksięgowania w arkuszu środków trwałych możliwe jest również przeglądanie i modyfikowanie transakcji ksiąg pochodnych. W czasie przygotowywania transakcji księgi podstawowej w innym arkuszu nie są wyświetlane transakcje ksiąg pochodnych. Jednak są one księgowane na odpowiednich kontach i w warstwach księgowania podczas księgowania transakcji w księdze podstawowej.
+<span data-ttu-id="ed050-114">Podczas księgowania transakcji jest generowana i księgowana transakcja nabycia o wartości 1500,00 dla składnika aktywów 123 w księdze B i składnika aktywów 123 w księdze C.</span><span class="sxs-lookup"><span data-stu-id="ed050-114">When the transaction is posted, an acquisition transaction is generated and posted in asset 123 for book B and in asset 123 for book C for 1,500.00.</span></span> <span data-ttu-id="ed050-115">W czasie przygotowywania transakcji księgi podstawowej do zaksięgowania w arkuszu środków trwałych możliwe jest również przeglądanie i modyfikowanie transakcji ksiąg pochodnych.</span><span class="sxs-lookup"><span data-stu-id="ed050-115">When you prepare the transactions of the primary book for posting in the fixed asset journal, you can also view and modify the transactions of the derived books.</span></span> <span data-ttu-id="ed050-116">W czasie przygotowywania transakcji księgi podstawowej w innym arkuszu nie są wyświetlane transakcje ksiąg pochodnych.</span><span class="sxs-lookup"><span data-stu-id="ed050-116">If you prepare the primary book transactions in another journal, the transactions of the derived value are not displayed.</span></span> <span data-ttu-id="ed050-117">Jednak są one księgowane na odpowiednich kontach i w warstwach księgowania podczas księgowania transakcji w księdze podstawowej.</span><span class="sxs-lookup"><span data-stu-id="ed050-117">However, they are posted to the appropriate accounts and posting layers when you post the primary book transactions.</span></span>
 
 > [!NOTE]                                                                                                                               
-> Księgi skonfigurowane tak, aby transakcje były księgowane w interwałach innych niż interwały księgi podstawowej, należy dołączyć do środka trwałego jako oddzielne księgi, a nie jako księgi pochodne.  
+> <span data-ttu-id="ed050-118">Księgi skonfigurowane tak, aby transakcje były księgowane w interwałach innych niż interwały księgi podstawowej, należy dołączyć do środka trwałego jako oddzielne księgi, a nie jako księgi pochodne.</span><span class="sxs-lookup"><span data-stu-id="ed050-118">Books that are set up to post transactions at intervals other than the primary book intervals must be attached to the fixed asset as separate books and not as derived books.</span></span>  
 
-Aby uzyskać więcej informacji, zobacz [Księgowanie za pomocą ksiąg pochodnych](post-derived-value-models.md).
+<span data-ttu-id="ed050-119">Aby uzyskać więcej informacji, zobacz [Księgowanie za pomocą ksiąg pochodnych](post-derived-value-models.md).</span><span class="sxs-lookup"><span data-stu-id="ed050-119">For more information, see [Posting with derived books](post-derived-value-models.md).</span></span>
 
 
 

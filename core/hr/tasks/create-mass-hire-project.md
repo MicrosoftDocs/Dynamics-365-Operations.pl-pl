@@ -16,35 +16,35 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 76ce1a73e4042d2dad1ce17b1de228e2f33bc847
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a8789d7c5b06e83d0d1799b249b48a00e7c0ae34
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-mass-hire-project"></a>Tworzenie projektu zatrudnienia grupowego
+# <a name="create-a-mass-hire-project"></a><span data-ttu-id="ac6ca-103">Tworzenie projektu zatrudnienia grupowego</span><span class="sxs-lookup"><span data-stu-id="ac6ca-103">Create a mass hire project</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ta procedura prowadzi przez proces konfigurowania projektu zatrudnienia grupowego. Osoba rekrutująca może używać projektów zatrudnienia grupowego, aby łatwo tworzyć wiele stanowisk i zatrudniać na nie wielu pracowników. Aby rozpocząć tę procedurę, wybierz kolejno opcje Zasoby ludzkie > Rekrutacja > Projekty zatrudnienia grupowego. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
+<span data-ttu-id="ac6ca-104">Ta procedura prowadzi przez proces konfigurowania projektu zatrudnienia grupowego.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-104">This procedure walks through the process of setting up a mass hire project.</span></span> <span data-ttu-id="ac6ca-105">Osoba rekrutująca może używać projektów zatrudnienia grupowego, aby łatwo tworzyć wiele stanowisk i zatrudniać na nie wielu pracowników.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-105">A recruiter can use mass hire projects to easily create multiple positions and hire a number of workers into those positions.</span></span> <span data-ttu-id="ac6ca-106">Aby rozpocząć tę procedurę, wybierz kolejno opcje Zasoby ludzkie > Rekrutacja > Projekty zatrudnienia grupowego.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-106">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span> <span data-ttu-id="ac6ca-107">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Kliknij przycisk Nowy.
-2. W polu Projekt zatrudnienia grupowego wpisz wartość.
-3. Wypełnij pole Opis.
-4. W polu Początek projektu wprowadź datę.
-5. W polu Koniec projektu wprowadź datę.
-6. Kliknij przycisk Otwórz projekt.
-7. Kliknij przycisk Tak.
-8. Kliknij przycisk Utwórz stanowiska.
-9. W polu Ilość wprowadź liczbę stanowisk, jaką chcesz utworzyć.
-    * Data początkowa będzie datą zatrudnienia dla nowych pracowników.  
-    * Data końcowa będzie datą zakończenia zatrudnienia dla nowych pracowników.  
-    * Określ, czy nowi pracownicy będą pracownikami czy zleceniobiorcami.  
-10. W polu Zadanie kliknij przycisk rozwijany i wybierz zadanie, dla którego chcesz utworzyć stanowiska.
-11. Na liście znajdź i zaznacz odpowiedni rekord.
-12. Na liście kliknij łącze w wybranym wierszu.
-    * Domyślna wartość równoważnika pełnego etatu będzie pochodziła z wybranego zadania. W razie potrzeby można to zmienić.  
-    * Opcjonalnie wybierz dział dla nowych stanowisk.  
-13. Kliknij przycisk OK.
+1. <span data-ttu-id="ac6ca-108">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-108">Click New.</span></span>
+2. <span data-ttu-id="ac6ca-109">W polu Projekt zatrudnienia grupowego wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-109">In the Mass hire project field, type a value.</span></span>
+3. <span data-ttu-id="ac6ca-110">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-110">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="ac6ca-111">W polu Początek projektu wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-111">In the Project start field, enter a date.</span></span>
+5. <span data-ttu-id="ac6ca-112">W polu Koniec projektu wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-112">In the Project end field, enter a date.</span></span>
+6. <span data-ttu-id="ac6ca-113">Kliknij przycisk Otwórz projekt.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-113">Click Open project.</span></span>
+7. <span data-ttu-id="ac6ca-114">Kliknij przycisk Tak.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-114">Click Yes.</span></span>
+8. <span data-ttu-id="ac6ca-115">Kliknij przycisk Utwórz stanowiska.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-115">Click Create positions.</span></span>
+9. <span data-ttu-id="ac6ca-116">W polu Ilość wprowadź liczbę stanowisk, jaką chcesz utworzyć.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-116">In the Quantity field, enter the number of positions that you want to create</span></span>
+    * <span data-ttu-id="ac6ca-117">Data początkowa będzie datą zatrudnienia dla nowych pracowników.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-117">The Start date will become the Hire date for the new workers.</span></span>  
+    * <span data-ttu-id="ac6ca-118">Data końcowa będzie datą zakończenia zatrudnienia dla nowych pracowników.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-118">The End date will be the Termination date for the new workers.</span></span>  
+    * <span data-ttu-id="ac6ca-119">Określ, czy nowi pracownicy będą pracownikami czy zleceniobiorcami.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-119">Specify whether the new workers will be Employees or Contractors.</span></span>  
+10. <span data-ttu-id="ac6ca-120">W polu Zadanie kliknij przycisk rozwijany i wybierz zadanie, dla którego chcesz utworzyć stanowiska.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-120">In the Job field, click the drop-down button to select the job to create the positions for.</span></span>
+11. <span data-ttu-id="ac6ca-121">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-121">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="ac6ca-122">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-122">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="ac6ca-123">Domyślna wartość równoważnika pełnego etatu będzie pochodziła z wybranego zadania.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-123">The default full-time equivalent value will come from the selected job.</span></span> <span data-ttu-id="ac6ca-124">W razie potrzeby można to zmienić.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-124">You can change this if needed.</span></span>  
+    * <span data-ttu-id="ac6ca-125">Opcjonalnie wybierz dział dla nowych stanowisk.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-125">Optionally, select the Department for the new positions.</span></span>  
+13. <span data-ttu-id="ac6ca-126">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="ac6ca-126">Click OK.</span></span>
 
 

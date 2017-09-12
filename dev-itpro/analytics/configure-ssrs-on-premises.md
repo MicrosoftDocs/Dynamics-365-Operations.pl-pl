@@ -15,7 +15,7 @@ ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 ms.author: sarvanisathish
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
 ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
@@ -24,64 +24,64 @@ ms.contentlocale: pl-pl
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a>Konfigurowanie usług SQL Server Reporting Services dla wdrożenia lokalnego
+# <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a><span data-ttu-id="7e740-103">Konfigurowanie usług SQL Server Reporting Services dla wdrożenia lokalnego</span><span class="sxs-lookup"><span data-stu-id="7e740-103">Configure SQL Server Reporting Services for an on-premises deployment</span></span>
 
-Kroki opisane w tym temacie umożliwiają skonfigurowanie usługi SQL Server Reporting Services (SSRS) dla lokalnego wdrożenia programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.
+<span data-ttu-id="7e740-104">Kroki opisane w tym temacie umożliwiają skonfigurowanie usługi SQL Server Reporting Services (SSRS) dla lokalnego wdrożenia programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="7e740-104">Use the steps in this topic to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) deployment.</span></span>
 
-1. Otwórz aplikację Menedżer konfiguracji usługi Reporting Services.
-2. Pozostaw domyślną wartość **Nazwa serwera**, która powinna być nazwa bieżącego komputera, oraz ustawienie **Wystąpienie serwera raportów** o wartości **MSSQLSERVER**. 
-3. Kliknij przycisk **Połącz**.
+1. <span data-ttu-id="7e740-105">Otwórz aplikację Menedżer konfiguracji usługi Reporting Services.</span><span class="sxs-lookup"><span data-stu-id="7e740-105">Open the Reporting Services Configuration Manager application.</span></span>
+2. <span data-ttu-id="7e740-106">Pozostaw domyślną wartość **Nazwa serwera**, która powinna być nazwa bieżącego komputera, oraz ustawienie **Wystąpienie serwera raportów** o wartości **MSSQLSERVER**.</span><span class="sxs-lookup"><span data-stu-id="7e740-106">Leave the default **Server name**, which should be the name of the current machine, and the **Report Server Instance**, **MSSQLSERVER**.</span></span> 
+3. <span data-ttu-id="7e740-107">Kliknij przycisk **Połącz**.</span><span class="sxs-lookup"><span data-stu-id="7e740-107">Click **Connect**.</span></span>
    
-   [![Połączenie konfigurowania usługi Reporting Services](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)
+   <span data-ttu-id="7e740-108">[![Połączenie konfigurowania usługi Reporting Services](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)</span><span class="sxs-lookup"><span data-stu-id="7e740-108">[![Reporting services configuration connection](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)</span></span>
    
-4. Kliknij kartę **Konto usługi** i sprawdź, czy ustawienia odpowiadają poniższej ilustracji.
+4. <span data-ttu-id="7e740-109">Kliknij kartę **Konto usługi** i sprawdź, czy ustawienia odpowiadają poniższej ilustracji.</span><span class="sxs-lookup"><span data-stu-id="7e740-109">Click the **Service Account** tab and verify that the settings match the following graphic.</span></span>
 
-    [![Karta Konto usługi](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)
+    <span data-ttu-id="7e740-110">[![Karta Konto usługi](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)</span><span class="sxs-lookup"><span data-stu-id="7e740-110">[![Service account tab](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)</span></span>
     
-5. Kliknij kartę **Adres URL usługi sieci Web** i sprawdź, czy ustawienia odpowiadają poniższej ilustracji. 
+5. <span data-ttu-id="7e740-111">Kliknij kartę **Adres URL usługi sieci Web** i sprawdź, czy ustawienia odpowiadają poniższej ilustracji.</span><span class="sxs-lookup"><span data-stu-id="7e740-111">Click the **Web Service URL** tab and verify that the settings match the following graphic.</span></span> 
 
-    [![Karta Adres URL usługi sieci Web](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png) 
+    <span data-ttu-id="7e740-112">[![Karta Adres URL usługi sieci Web](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)</span><span class="sxs-lookup"><span data-stu-id="7e740-112">[![Web service URL tab](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)</span></span> 
     
-6. Kliknij kartę **Baza danych** sprawdź, czy wartości w polach **Nazwa bazy danych** i **Ustawienia poświadczeń** odpowiadają poniższej ilustracji. **Uwaga:** Należy utworzyć nową bazę danych. Aby to zrobić, kliknij przycisk **Zmień bazę danych zmian**, a następnie sprawdź, czy nowa baza danych ma nazwę **DynamicsAxReportServer**.
+6. <span data-ttu-id="7e740-113">Kliknij kartę **Baza danych** sprawdź, czy wartości w polach **Nazwa bazy danych** i **Ustawienia poświadczeń** odpowiadają poniższej ilustracji.</span><span class="sxs-lookup"><span data-stu-id="7e740-113">Click the **Database** tab and verify that the **Database Name** and **Credential settings** match the following graphic.</span></span> <span data-ttu-id="7e740-114">**Uwaga:** Należy utworzyć nową bazę danych.</span><span class="sxs-lookup"><span data-stu-id="7e740-114">**Note:** You will need to create a new database.</span></span> <span data-ttu-id="7e740-115">Aby to zrobić, kliknij przycisk **Zmień bazę danych zmian**, a następnie sprawdź, czy nowa baza danych ma nazwę **DynamicsAxReportServer**.</span><span class="sxs-lookup"><span data-stu-id="7e740-115">To do this, click **Change Database**, and then verify that the new database name is: **DynamicsAxReportServer**.</span></span>
 
-    [![Karta Baza danych](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)
+    <span data-ttu-id="7e740-116">[![Karta Baza danych](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)</span><span class="sxs-lookup"><span data-stu-id="7e740-116">[![database tab](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)</span></span>
     
-7. Kliknij kartę **Adres URL portalu sieci Web** i sprawdź, czy ustawienia odpowiadają poniższej ilustracji. **Uwaga:** Należy kliknąć opcję **Zastosuj**, aby utworzyć i poprawnie skonfigurować portal.
+7. <span data-ttu-id="7e740-117">Kliknij kartę **Adres URL portalu sieci Web** i sprawdź, czy ustawienia odpowiadają poniższej ilustracji.</span><span class="sxs-lookup"><span data-stu-id="7e740-117">Click the **Web Portal URL** tab and verify that the settings match the following graphic.</span></span> <span data-ttu-id="7e740-118">**Uwaga:** Należy kliknąć opcję **Zastosuj**, aby utworzyć i poprawnie skonfigurować portal.</span><span class="sxs-lookup"><span data-stu-id="7e740-118">**Note:** You must click **Apply** to create and properly configure the Portal.</span></span>
 
-    [![Karta Adres URL portalu sieci Web](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
+    <span data-ttu-id="7e740-119">[![Karta Adres URL portalu sieci Web](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)</span><span class="sxs-lookup"><span data-stu-id="7e740-119">[![web portal url tab](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)</span></span>
     
-  Po skonfigurowaniu portalu karta **Portal sieci Web** powinna wyglądać jak na poniższej ilustracji.
-    [![Karta Portal sieci Web](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
+  <span data-ttu-id="7e740-120">Po skonfigurowaniu portalu karta **Portal sieci Web** powinna wyglądać jak na poniższej ilustracji.</span><span class="sxs-lookup"><span data-stu-id="7e740-120">After the Portal is configured, the **Web Portal** tab will match the following graphic.</span></span>
+    <span data-ttu-id="7e740-121">[![Karta Portal sieci Web](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)</span><span class="sxs-lookup"><span data-stu-id="7e740-121">[![web portal tab](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)</span></span>
     
-8. Kliknij adres URL raportów, aby wyświetlania portalu sieci Web usługi SQL Server Reporting Services. 
-9.  Po przejściu do portalu utwórz nowy folder o nazwie **Dynamics**.
+8. <span data-ttu-id="7e740-122">Kliknij adres URL raportów, aby wyświetlania portalu sieci Web usługi SQL Server Reporting Services.</span><span class="sxs-lookup"><span data-stu-id="7e740-122">Click the reports URL to view the SQL Server Reporting Services web portal.</span></span> 
+9.  <span data-ttu-id="7e740-123">Po przejściu do portalu utwórz nowy folder o nazwie **Dynamics**.</span><span class="sxs-lookup"><span data-stu-id="7e740-123">When you are in the portal, create a new folder named **Dynamics**.</span></span>
 
-    [![Folder Dynamics](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
+    <span data-ttu-id="7e740-124">[![Folder Dynamics](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span><span class="sxs-lookup"><span data-stu-id="7e740-124">[![dynamics folder](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)</span></span>
     
-10. W **Menedżerze konfiguracji usługi SQL Reporting Services** kliknij kartę **Ustawienia poczty e-mail** i sprawdź, czy ustawienia odpowiadają poniższej ilustracji.
+10. <span data-ttu-id="7e740-125">W **Menedżerze konfiguracji usługi SQL Reporting Services** kliknij kartę **Ustawienia poczty e-mail** i sprawdź, czy ustawienia odpowiadają poniższej ilustracji.</span><span class="sxs-lookup"><span data-stu-id="7e740-125">In the **Reporting Services Configuration Manager**, click the **E-mail Settings** tab and verify that the settings match the following graphic.</span></span>
 
-    [![Karta Ustawienia poczty e-mail](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)
+    <span data-ttu-id="7e740-126">[![Karta Ustawienia poczty e-mail](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)</span><span class="sxs-lookup"><span data-stu-id="7e740-126">[![email settings tab](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)</span></span>
     
-11. Kliknij kartę **Konto wykonywania** i sprawdź, czy ustawienia odpowiadają poniższej ilustracji.
+11. <span data-ttu-id="7e740-127">Kliknij kartę **Konto wykonywania** i sprawdź, czy ustawienia odpowiadają poniższej ilustracji.</span><span class="sxs-lookup"><span data-stu-id="7e740-127">Click the **Execution Account** tab and verify that the settings match the following graphic.</span></span>
 
-    [![Karta Konto wykonywania](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
+    <span data-ttu-id="7e740-128">[![Karta Konto wykonywania](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)</span><span class="sxs-lookup"><span data-stu-id="7e740-128">[![execution account tab](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)</span></span>
     
-  Nie należy zmieniać ustawień domyślnych na karcie **Klucze szyfrowania**.
-    [![Karta Klucze szyfrowania](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
+  <span data-ttu-id="7e740-129">Nie należy zmieniać ustawień domyślnych na karcie **Klucze szyfrowania**.</span><span class="sxs-lookup"><span data-stu-id="7e740-129">Don’t change the default settings on the **Encryption Keys** tab.</span></span>
+    <span data-ttu-id="7e740-130">[![Karta Klucze szyfrowania](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span><span class="sxs-lookup"><span data-stu-id="7e740-130">[![encryption keys tab](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)</span></span>
     
-12. Kliknij kartę **Ustawienia subskrypcji** i sprawdź, czy ustawienia odpowiadają poniższej ilustracji.
+12. <span data-ttu-id="7e740-131">Kliknij kartę **Ustawienia subskrypcji** i sprawdź, czy ustawienia odpowiadają poniższej ilustracji.</span><span class="sxs-lookup"><span data-stu-id="7e740-131">Click the **Subscription Settings** tab, and verify that the settings match the following graphic.</span></span>
 
-    [![Karta Ustawienia subskrypcji](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
+    <span data-ttu-id="7e740-132">[![Karta Ustawienia subskrypcji](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)</span><span class="sxs-lookup"><span data-stu-id="7e740-132">[![subscription settings tab](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)</span></span>
     
-  Nie należy zmieniać ustawień domyślnych na karcie **Wdrożenie skalowalne w poziomie**.
-    [![Karta Wdrożenie skalowalne w poziomie](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
+  <span data-ttu-id="7e740-133">Nie należy zmieniać ustawień domyślnych na karcie **Wdrożenie skalowalne w poziomie**.</span><span class="sxs-lookup"><span data-stu-id="7e740-133">Don’t change the default settings on the **Scale-out Deployment** tab.</span></span>
+    <span data-ttu-id="7e740-134">[![Karta Wdrożenie skalowalne w poziomie](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span><span class="sxs-lookup"><span data-stu-id="7e740-134">[![scale-out deployment tab](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)</span></span>
     
-  Nie należy zmieniać ustawień domyślnych na karcie **Integracja usługi Power BI**.
-    [![Karta Integracja usługi Power BI](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
+  <span data-ttu-id="7e740-135">Nie należy zmieniać ustawień domyślnych na karcie **Integracja usługi Power BI**.</span><span class="sxs-lookup"><span data-stu-id="7e740-135">Don’t change the default settings on the **Power BI Integration** tab.</span></span>
+    <span data-ttu-id="7e740-136">[![Karta Integracja usługi Power BI](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span><span class="sxs-lookup"><span data-stu-id="7e740-136">[![power bi integration tab](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)</span></span> 
     
-13. Kliknij przycisk **Zakończ**, aby zamknąć **Menedżera konfiguracji usługi Reporting Services**.
+13. <span data-ttu-id="7e740-137">Kliknij przycisk **Zakończ**, aby zamknąć **Menedżera konfiguracji usługi Reporting Services**.</span><span class="sxs-lookup"><span data-stu-id="7e740-137">Click **Exit** to close the **Reporting Services Configuration Manager**.</span></span>
 
-    [![Zamykanie Menedżera konfiguracji usługi Reporting Services](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
+    <span data-ttu-id="7e740-138">[![Zamykanie Menedżera konfiguracji usługi Reporting Services](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)</span><span class="sxs-lookup"><span data-stu-id="7e740-138">[![close reporting services configuration manager](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)</span></span>
     
 
 

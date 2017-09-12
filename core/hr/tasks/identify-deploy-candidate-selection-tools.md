@@ -16,45 +16,45 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: b8cd90385a6dda6ab1e9086c040783b99b9623f4
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1eb6e6121d39f9fc089afe38354b96eb88e5501d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="identify-and-deploy-candidate-selection-tools"></a>Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów
+# <a name="identify-and-deploy-candidate-selection-tools"></a><span data-ttu-id="40e2f-103">Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów</span><span class="sxs-lookup"><span data-stu-id="40e2f-103">Identify and deploy candidate selection tools</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Znajdowanie puli wykwalifikowanych kandydatów do zapełnienia wakatów może być trudne, zwłaszcza gdy stanowisko wymaga unikatowego zestawu umiejętności.  Z drugiej strony kandydaci mający niezbędne kwalifikacje mogą już być pracownikami Twojej organizacji. Można wyszukiwać określone zbiory umiejętności wśród istniejących pracowników lub nowych kandydatów. Dzięki temu osoba rekrutująca może szybko zebrać i przejrzeć dane kandydatów ubiegających się o wolne stanowisko teraz lub w przeszłości albo znaleźć potencjalnych kandydatów wśród istniejących pracowników. Z tego nagrania zadania można się dowiedzieć, jak funkcje mapowania umiejętności pomogą znaleźć właściwą osobę na wolne stanowisko. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
+<span data-ttu-id="40e2f-104">Znajdowanie puli wykwalifikowanych kandydatów do zapełnienia wakatów może być trudne, zwłaszcza gdy stanowisko wymaga unikatowego zestawu umiejętności.</span><span class="sxs-lookup"><span data-stu-id="40e2f-104">Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills.</span></span>  <span data-ttu-id="40e2f-105">Z drugiej strony kandydaci mający niezbędne kwalifikacje mogą już być pracownikami Twojej organizacji.</span><span class="sxs-lookup"><span data-stu-id="40e2f-105">However, candidates with the skills you need might already be employed in your organization.</span></span> <span data-ttu-id="40e2f-106">Można wyszukiwać określone zbiory umiejętności wśród istniejących pracowników lub nowych kandydatów.</span><span class="sxs-lookup"><span data-stu-id="40e2f-106">You can search for a specific skill set among existing employees, or new applicants.</span></span> <span data-ttu-id="40e2f-107">Dzięki temu osoba rekrutująca może szybko zebrać i przejrzeć dane kandydatów ubiegających się o wolne stanowisko teraz lub w przeszłości albo znaleźć potencjalnych kandydatów wśród istniejących pracowników.</span><span class="sxs-lookup"><span data-stu-id="40e2f-107">This allows a recruiter to quickly gather and screen applicants who have applied for open position now or in the past, or to find potential candidates from their existing pool of employees.</span></span> <span data-ttu-id="40e2f-108">Z tego nagrania zadania można się dowiedzieć, jak funkcje mapowania umiejętności pomogą znaleźć właściwą osobę na wolne stanowisko.</span><span class="sxs-lookup"><span data-stu-id="40e2f-108">Use this task recording to learn how the skill mapping functionality can help you find the right person for an open position.</span></span> <span data-ttu-id="40e2f-109">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="40e2f-109">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Wybierz kolejno opcje Zasoby ludzkie > Kompetencje > Analiza kwalifikacji > Profile mapowania kwalifikacji.
-2. Kliknij przycisk Nowy.
-3. W polu Mapowanie kwalifikacji nadaj nazwę mapowaniu umiejętności.  Przykład: Księgowy.
-4. W polu Opis wprowadź opis mapowania umiejętności.
-5. W polu Data wprowadź datę.
-6. Kliknij przycisk Odtwórz profil.
-    * Opcja Odtwórz profil służy do pobierania informacji o certyfikatach, umiejętnościach i wykształceniu z danych wybranej osoby, zadania lub kursu w celu użycia jako podstawy wyszukiwania.   Następnie można dodać lub usunąć kryteria, określić, czy kryteria są opcjonalne, i określić ważność kryteriów.  
-7. Kliknij przycisk Zadanie.
-8. W polu Zadanie wprowadź lub wybierz wartość.
-9. Kliknij przycisk OK.
-10. Rozwiń skróconą kartę zakresu i dodaj wszelkie informacje dodatkowe, takie jak dział.
-11. Rozwiń skróconą kartę certyfikatów, aby obejrzeć lub edytować certyfikaty.
-12. Rozwiń skróconą kartę Umiejętności, aby obejrzeć lub edytować kompetencje.
-13. Rozwiń skróconą kartę Wykształcenie, aby wyświetlić lub edytować kryteria wykształcenia.
-14. Kliknij przycisk Wykonaj.
-15. Kliknij przycisk OK.
-16. Kliknij przycisk Wynik.
-17. Kliknij przycisk Wynik.
-18. Kliknij przycisk Wznów.
-19. Kliknij przycisk Certyfikaty.
-    * Można przechodzić do kolejnych poziomów szczegółów każdej osoby na liście i obejrzeć informacje dotyczące jej wykształcenia, umiejętności, doświadczenia zawodowego itp.  
-20. Zamknij stronę.
-21. Zamknij stronę.
-22. Zaznacz ponownie wynik.
-23. Kliknij przycisk Raport.
-    * W raporcie najlepiej pasujące pozycje znajdą się u góry listy.  Widać element luki.  Jest to różnica między poziomem, który został podany w mapowaniu umiejętności, a poziomem umiejętności przypisanym do osoby.  
-24. Zamknij stronę.
-25. Kliknij przycisk Zapisz.
+1. <span data-ttu-id="40e2f-110">Wybierz kolejno opcje Zasoby ludzkie > Kompetencje > Analiza kwalifikacji > Profile mapowania kwalifikacji.</span><span class="sxs-lookup"><span data-stu-id="40e2f-110">Go to Human resources > Competencies > Skill analysis > Skill mapping profiles.</span></span>
+2. <span data-ttu-id="40e2f-111">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="40e2f-111">Click New.</span></span>
+3. <span data-ttu-id="40e2f-112">W polu Mapowanie kwalifikacji nadaj nazwę mapowaniu umiejętności.</span><span class="sxs-lookup"><span data-stu-id="40e2f-112">In the Skill mapping field, enter a name for your skill mapping.</span></span>  <span data-ttu-id="40e2f-113">Przykład: Księgowy.</span><span class="sxs-lookup"><span data-stu-id="40e2f-113">Example: Accountant.</span></span>
+4. <span data-ttu-id="40e2f-114">W polu Opis wprowadź opis mapowania umiejętności.</span><span class="sxs-lookup"><span data-stu-id="40e2f-114">In the Description field, enter a description of the skill mapping..</span></span>
+5. <span data-ttu-id="40e2f-115">W polu Data wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="40e2f-115">In the Date field, enter a date.</span></span>
+6. <span data-ttu-id="40e2f-116">Kliknij przycisk Odtwórz profil.</span><span class="sxs-lookup"><span data-stu-id="40e2f-116">Click Retrieve profile.</span></span>
+    * <span data-ttu-id="40e2f-117">Opcja Odtwórz profil służy do pobierania informacji o certyfikatach, umiejętnościach i wykształceniu z danych wybranej osoby, zadania lub kursu w celu użycia jako podstawy wyszukiwania.</span><span class="sxs-lookup"><span data-stu-id="40e2f-117">Use Retrieve profile to pull in the Certificate, Skill, and Education data from a selected Person, Job or Course as the basis for your search.</span></span>   <span data-ttu-id="40e2f-118">Następnie można dodać lub usunąć kryteria, określić, czy kryteria są opcjonalne, i określić ważność kryteriów.</span><span class="sxs-lookup"><span data-stu-id="40e2f-118">You can then add or remove criteria, state if the criteria is optional and rank the importance of the criteria.</span></span>  
+7. <span data-ttu-id="40e2f-119">Kliknij przycisk Zadanie.</span><span class="sxs-lookup"><span data-stu-id="40e2f-119">Click Job.</span></span>
+8. <span data-ttu-id="40e2f-120">W polu Zadanie wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="40e2f-120">In the Job field, enter or select a value.</span></span>
+9. <span data-ttu-id="40e2f-121">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="40e2f-121">Click OK.</span></span>
+10. <span data-ttu-id="40e2f-122">Rozwiń skróconą kartę zakresu i dodaj wszelkie informacje dodatkowe, takie jak dział.</span><span class="sxs-lookup"><span data-stu-id="40e2f-122">Expand the range fast tab, and add any additional information, such as department.</span></span>
+11. <span data-ttu-id="40e2f-123">Rozwiń skróconą kartę certyfikatów, aby obejrzeć lub edytować certyfikaty.</span><span class="sxs-lookup"><span data-stu-id="40e2f-123">Expand the certificates fast tab to view or edit the certificates.</span></span>
+12. <span data-ttu-id="40e2f-124">Rozwiń skróconą kartę Umiejętności, aby obejrzeć lub edytować kompetencje.</span><span class="sxs-lookup"><span data-stu-id="40e2f-124">Expand the Skills fast tab to view or edit the skills.</span></span>
+13. <span data-ttu-id="40e2f-125">Rozwiń skróconą kartę Wykształcenie, aby wyświetlić lub edytować kryteria wykształcenia.</span><span class="sxs-lookup"><span data-stu-id="40e2f-125">Expand the Education fast tab to view or edit the education criteria.</span></span>
+14. <span data-ttu-id="40e2f-126">Kliknij przycisk Wykonaj.</span><span class="sxs-lookup"><span data-stu-id="40e2f-126">Click Execute.</span></span>
+15. <span data-ttu-id="40e2f-127">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="40e2f-127">Click OK.</span></span>
+16. <span data-ttu-id="40e2f-128">Kliknij przycisk Wynik.</span><span class="sxs-lookup"><span data-stu-id="40e2f-128">Click Result.</span></span>
+17. <span data-ttu-id="40e2f-129">Kliknij przycisk Wynik.</span><span class="sxs-lookup"><span data-stu-id="40e2f-129">Click Result.</span></span>
+18. <span data-ttu-id="40e2f-130">Kliknij przycisk Wznów.</span><span class="sxs-lookup"><span data-stu-id="40e2f-130">Click Resume.</span></span>
+19. <span data-ttu-id="40e2f-131">Kliknij przycisk Certyfikaty.</span><span class="sxs-lookup"><span data-stu-id="40e2f-131">Click Certificates.</span></span>
+    * <span data-ttu-id="40e2f-132">Można przechodzić do kolejnych poziomów szczegółów każdej osoby na liście i obejrzeć informacje dotyczące jej wykształcenia, umiejętności, doświadczenia zawodowego itp.</span><span class="sxs-lookup"><span data-stu-id="40e2f-132">You can drill further into each person listed and see details regarding their education, skills, professional experience etc.</span></span>  
+20. <span data-ttu-id="40e2f-133">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="40e2f-133">Close the page.</span></span>
+21. <span data-ttu-id="40e2f-134">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="40e2f-134">Close the page.</span></span>
+22. <span data-ttu-id="40e2f-135">Zaznacz ponownie wynik.</span><span class="sxs-lookup"><span data-stu-id="40e2f-135">Select result again.</span></span>
+23. <span data-ttu-id="40e2f-136">Kliknij przycisk Raport.</span><span class="sxs-lookup"><span data-stu-id="40e2f-136">Click Report.</span></span>
+    * <span data-ttu-id="40e2f-137">W raporcie najlepiej pasujące pozycje znajdą się u góry listy.</span><span class="sxs-lookup"><span data-stu-id="40e2f-137">The report will list the best matches at the top of the report.</span></span>  <span data-ttu-id="40e2f-138">Widać element luki.</span><span class="sxs-lookup"><span data-stu-id="40e2f-138">You can see that there is a gap element listed.</span></span>  <span data-ttu-id="40e2f-139">Jest to różnica między poziomem, który został podany w mapowaniu umiejętności, a poziomem umiejętności przypisanym do osoby.</span><span class="sxs-lookup"><span data-stu-id="40e2f-139">This is the difference between the level that was listed on the skill mapping, and the level of the skill that is assigned to the person.</span></span>  
+24. <span data-ttu-id="40e2f-140">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="40e2f-140">Close the page.</span></span>
+25. <span data-ttu-id="40e2f-141">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="40e2f-141">Click Save.</span></span>
 
 

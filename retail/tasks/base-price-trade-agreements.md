@@ -17,61 +17,61 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 6fe49a5c871a175612223e0354e7880f17108044
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d9692ce9ad282b76504588d8f796560c00773a8c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="base-price-and-trade-agreements"></a>Podstawa ceny i umowy handlowe
+# <a name="base-price-and-trade-agreements"></a><span data-ttu-id="d5a7a-103">Podstawa ceny i umowy handlowe</span><span class="sxs-lookup"><span data-stu-id="d5a7a-103">Base price and trade agreements</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ta procedura poprowadzi przez proces tworzenia umów handlowych na cenę sprzedaży specyficznych dla kanału. Procedura wykorzystuje dane firmy demonstracyjnej USRT.
+<span data-ttu-id="d5a7a-104">Ta procedura poprowadzi przez proces tworzenia umów handlowych na cenę sprzedaży specyficznych dla kanału.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-104">This procedure walks through creating channel-specific sales price trade agreements.</span></span> <span data-ttu-id="d5a7a-105">Procedura wykorzystuje dane firmy demonstracyjnej USRT.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-105">This procedure uses the USRT demo data company.</span></span>
 
-1. Wybierz kolejno opcje Handel detaliczny i inny > Ceny i rabaty > Grupy cenowe > Wszystkie grupy cenowe.
-    * Grupy cenowe służą przypisywaniu umów handlowych do określonych kanałów. Używanie grup cenowych, aby przypisać umowy handlowe do kanału, pozwala stosować ceny specyficzne dla kanałów.  
-2. Kliknij przycisk Nowy.
-3. W polu Grupy cenowe wpisz wartość.
-4. W polu Nazwa wpisz wartość.
-5. Kliknij przycisk Zapisz.
-6. Zamknij stronę.
-7. Wybierz kolejno opcje Handel detaliczny i inny > Kanały > Sklepy sieci sprzedaży > Wszystkie sklepy sieci sprzedaży.
-8. Na liście wybierz opcję „Nowy Jork”.
-9. W okienku akcji kliknij pozycję Sklep.
-10. Kliknij opcję Grupy cenowe.
-11. Kliknij przycisk Nowy.
-12. W polu Grupy cenowe kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-13. Na liście znajdź i zaznacz odpowiedni rekord.
-14. Kliknij przycisk Zapisz.
-15. Zamknij stronę.
-16. Zamknij stronę.
-17. Wybierz kolejno opcje Handel detaliczny i inny > Produkty i kategorie > Zwolnione produkty według kategorii.
-18. Na liście kliknij łącze w wybranym wierszu.
-19. Kliknij przycisk Edytuj.
-20. Przełącz rozwinięcie sekcji Sprzedaż.
-21. W polu Cena wpisz liczbę.
-    * Ta cena jest używana, gdy nie znaleziono żadnych umów handlowych mających zastosowanie.  
-22. Kliknij przycisk Zapisz.
-23. W okienku akcji kliknij pozycję Sprzedaż.
-24. Kliknij opcję Utwórz umowy handlowe.
-25. Kliknij przycisk Nowy.
-26. W polu Nazwa kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-27. Z listy wybierz pozycję „Handel detaliczny”.
-    * W danych demonstracyjnych arkusz o nazwie „Handel detaliczny” ma domyślną relację „Cena (sprzedaż)”. Oznacza to, że wszystkie nowo tworzone wiersze domyślnie są dla umów handlowych na cenę sprzedaży.  
-28. Kliknij przycisk Wiersze.
-29. W polu Kod konta wybierz opcję „Grupa”.
-30. W polu Wybór konta kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-31. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Zakończy to operację łączenia kanału z grupą cenową, a następnie grupy z umową handlową.  
-32. W polu Relacja towaru wpisz wartość.
-33. W polu Kwota w walucie wpisz liczbę.
-34. Zaznacz pole wyboru Znajdź następny lub usuń jego zaznaczenie.
-    * Jeśli opcja Znajdź następny jest ustawiona na wartość „Tak”, aparat kalkulacji cen będzie wyszukiwał odnośne umowy handlowe z niższą ceną sprzedaży. Jeśli opcja Znajdź następny jest ustawiony na „Nie”, aparat kalkulacji cen przestanie szukać i użyje bieżącej umowy handlowej.  
-35. Kliknij przycisk Księguj.
-36. Kliknij przycisk OK.
-37. Zamknij stronę.
-38. W okienku akcji kliknij pozycję Sprzedaż.
-39. Kliknij opcję Cena sprzedaży.
+1. <span data-ttu-id="d5a7a-106">Wybierz kolejno opcje Handel detaliczny i inny > Ceny i rabaty > Grupy cenowe > Wszystkie grupy cenowe.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-106">Go to Retail and commerce > Pricing and discounts > Price groups > All price groups.</span></span>
+    * <span data-ttu-id="d5a7a-107">Grupy cenowe służą przypisywaniu umów handlowych do określonych kanałów.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-107">Price groups are how trade agreements are assigned to specific channels.</span></span> <span data-ttu-id="d5a7a-108">Używanie grup cenowych, aby przypisać umowy handlowe do kanału, pozwala stosować ceny specyficzne dla kanałów.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-108">Using price groups to assign trade agreements to a channel enables channel-specific pricing.</span></span>  
+2. <span data-ttu-id="d5a7a-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-109">Click New.</span></span>
+3. <span data-ttu-id="d5a7a-110">W polu Grupy cenowe wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-110">In the Price groups field, type a value.</span></span>
+4. <span data-ttu-id="d5a7a-111">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-111">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="d5a7a-112">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-112">Click Save.</span></span>
+6. <span data-ttu-id="d5a7a-113">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-113">Close the page.</span></span>
+7. <span data-ttu-id="d5a7a-114">Wybierz kolejno opcje Handel detaliczny i inny > Kanały > Sklepy sieci sprzedaży > Wszystkie sklepy sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-114">Go to Retail and commerce > Channels > Retail stores > All retail stores.</span></span>
+8. <span data-ttu-id="d5a7a-115">Na liście wybierz opcję „Nowy Jork”.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-115">In the list, select 'New York'</span></span>
+9. <span data-ttu-id="d5a7a-116">W okienku akcji kliknij pozycję Sklep.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-116">On the Action Pane, click Store.</span></span>
+10. <span data-ttu-id="d5a7a-117">Kliknij opcję Grupy cenowe.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-117">Click Price groups.</span></span>
+11. <span data-ttu-id="d5a7a-118">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-118">Click New.</span></span>
+12. <span data-ttu-id="d5a7a-119">W polu Grupy cenowe kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-119">In the Price groups field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="d5a7a-120">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-120">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="d5a7a-121">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-121">Click Save.</span></span>
+15. <span data-ttu-id="d5a7a-122">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-122">Close the page.</span></span>
+16. <span data-ttu-id="d5a7a-123">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-123">Close the page.</span></span>
+17. <span data-ttu-id="d5a7a-124">Wybierz kolejno opcje Handel detaliczny i inny > Produkty i kategorie > Zwolnione produkty według kategorii.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-124">Go to Retail and commerce > Products and categories > Released products by category.</span></span>
+18. <span data-ttu-id="d5a7a-125">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-125">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="d5a7a-126">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-126">Click Edit.</span></span>
+20. <span data-ttu-id="d5a7a-127">Przełącz rozwinięcie sekcji Sprzedaż.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-127">Toggle the expansion of the Sell section.</span></span>
+21. <span data-ttu-id="d5a7a-128">W polu Cena wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-128">In the Price field, enter a number.</span></span>
+    * <span data-ttu-id="d5a7a-129">Ta cena jest używana, gdy nie znaleziono żadnych umów handlowych mających zastosowanie.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-129">This price is used if no applicable trade agreements are found.</span></span>  
+22. <span data-ttu-id="d5a7a-130">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-130">Click Save.</span></span>
+23. <span data-ttu-id="d5a7a-131">W okienku akcji kliknij pozycję Sprzedaż.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-131">On the Action Pane, click Sell.</span></span>
+24. <span data-ttu-id="d5a7a-132">Kliknij opcję Utwórz umowy handlowe.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-132">Click Create trade agreements.</span></span>
+25. <span data-ttu-id="d5a7a-133">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-133">Click New.</span></span>
+26. <span data-ttu-id="d5a7a-134">W polu Nazwa kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-134">In the Name field, click the drop-down button to open the lookup.</span></span>
+27. <span data-ttu-id="d5a7a-135">Z listy wybierz pozycję „Handel detaliczny”.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-135">In the list, select 'Retail'.</span></span>
+    * <span data-ttu-id="d5a7a-136">W danych demonstracyjnych arkusz o nazwie „Handel detaliczny” ma domyślną relację „Cena (sprzedaż)”.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-136">In the demo data, the 'Retail' journal name has the default relation of 'Price (sales)'.</span></span> <span data-ttu-id="d5a7a-137">Oznacza to, że wszystkie nowo tworzone wiersze domyślnie są dla umów handlowych na cenę sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-137">That means all new lines created will default to sales price trade agreements.</span></span>  
+28. <span data-ttu-id="d5a7a-138">Kliknij przycisk Wiersze.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-138">Click Lines.</span></span>
+29. <span data-ttu-id="d5a7a-139">W polu Kod konta wybierz opcję „Grupa”.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-139">In the Account code field, select 'Group'.</span></span>
+30. <span data-ttu-id="d5a7a-140">W polu Wybór konta kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-140">In the Account selection field, click the drop-down button to open the lookup.</span></span>
+31. <span data-ttu-id="d5a7a-141">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-141">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="d5a7a-142">Zakończy to operację łączenia kanału z grupą cenową, a następnie grupy z umową handlową.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-142">This will complete the link from Channel to Price group to Trade agreement.</span></span>  
+32. <span data-ttu-id="d5a7a-143">W polu Relacja towaru wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-143">In the Item relation field, type a value.</span></span>
+33. <span data-ttu-id="d5a7a-144">W polu Kwota w walucie wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-144">In the Amount in currency field, enter a number.</span></span>
+34. <span data-ttu-id="d5a7a-145">Zaznacz pole wyboru Znajdź następny lub usuń jego zaznaczenie.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-145">Check or uncheck the Find next checkbox.</span></span>
+    * <span data-ttu-id="d5a7a-146">Jeśli opcja Znajdź następny jest ustawiona na wartość „Tak”, aparat kalkulacji cen będzie wyszukiwał odnośne umowy handlowe z niższą ceną sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-146">When Find next is set to 'Yes', the pricing engine will continue to search for applicable trade agreements with a lower sale price.</span></span> <span data-ttu-id="d5a7a-147">Jeśli opcja Znajdź następny jest ustawiony na „Nie”, aparat kalkulacji cen przestanie szukać i użyje bieżącej umowy handlowej.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-147">When Find next is set to 'No', the price engine stops searching and uses the trade agreement.</span></span>  
+35. <span data-ttu-id="d5a7a-148">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-148">Click Post.</span></span>
+36. <span data-ttu-id="d5a7a-149">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-149">Click OK.</span></span>
+37. <span data-ttu-id="d5a7a-150">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-150">Close the page.</span></span>
+38. <span data-ttu-id="d5a7a-151">W okienku akcji kliknij pozycję Sprzedaż.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-151">On the Action Pane, click Sell.</span></span>
+39. <span data-ttu-id="d5a7a-152">Kliknij opcję Cena sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="d5a7a-152">Click Sales price.</span></span>
 
 

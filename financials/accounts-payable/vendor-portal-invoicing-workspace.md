@@ -18,50 +18,50 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
-ms.openlocfilehash: 2171a454c763abab82f6555950994237b4de7b8b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 3f9b8cc1ee7f8c8bed79bac3ca6a6856d9101aad
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/14/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="vendor-collaboration-invoicing-workspace"></a>Obszar roboczy fakturowania w portalu współpracy z dostawcami
+# <a name="vendor-collaboration-invoicing-workspace"></a><span data-ttu-id="0be13-103">Obszar roboczy fakturowania w portalu współpracy z dostawcami</span><span class="sxs-lookup"><span data-stu-id="0be13-103">Vendor collaboration invoicing workspace</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym temacie wyjaśniono, jak wyświetlić faktury od dostawców i przesyłać faktury z obszaru roboczego Fakturowanie w portalu współpracy z dostawcami.
+<span data-ttu-id="0be13-104">W tym temacie wyjaśniono, jak wyświetlić faktury od dostawców i przesyłać faktury z obszaru roboczego Fakturowanie w portalu współpracy z dostawcami.</span><span class="sxs-lookup"><span data-stu-id="0be13-104">This topic explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.</span></span>
 
-Obszar roboczy **Fakturowanie w portalu współpracy dostawcy** może służyć do przeglądania informacji o fakturach od dostawców i przesyłania faktur do programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition za pomocą funkcji przepływu pracy.
+<span data-ttu-id="0be13-105">Obszar roboczy **Fakturowanie w portalu współpracy dostawcy** może służyć do przeglądania informacji o fakturach od dostawców i przesyłania faktur do programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition za pomocą funkcji przepływu pracy.</span><span class="sxs-lookup"><span data-stu-id="0be13-105">The **Vendor collaboration invoicing** workspace can be used to view vendor invoice information and to submit invoices to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition using workflow capabilities.</span></span>
 
 
-<a name="vendor-collaboration-invoicing-workspace"></a>Obszar roboczy fakturowania w portalu współpracy z dostawcami
+<a name="vendor-collaboration-invoicing-workspace"></a><span data-ttu-id="0be13-106">Obszar roboczy fakturowania w portalu współpracy z dostawcami</span><span class="sxs-lookup"><span data-stu-id="0be13-106">Vendor collaboration invoicing workspace</span></span>
 ----------------------------------------
 
-### <a name="summary-tiles"></a>Kafelki podsumowania
+### <a name="summary-tiles"></a><span data-ttu-id="0be13-107">Kafelki podsumowania</span><span class="sxs-lookup"><span data-stu-id="0be13-107">Summary tiles</span></span>
 
-Kafelki **Podsumowanie** prezentują przegląd faktur od wybranego dostawcy. Istnieje możliwość wyświetlania faktur według ich stanu.
--   Wersje robocze faktur nie zostały przesłane do przepływu pracy.
--   Przesłane niezatwierdzone faktury to takie faktury, które dostawca przesłał, ale nie zostały one jeszcze zaksięgowane w programie Finance and Operations.
--   Zatwierdzone niezapłacone faktury to takie faktury, które zostały zaksięgowane w programie Finance and Operations, ale ich jeszcze w całości nie opłacono.
--   Zapłacone faktury to takie faktury, które zostały w całości zapłacone w programie Finance and Operations.
+<span data-ttu-id="0be13-108">Kafelki **Podsumowanie** prezentują przegląd faktur od wybranego dostawcy.</span><span class="sxs-lookup"><span data-stu-id="0be13-108">The **Summary** tiles give an overview of the invoices for the selected vendor.</span></span> <span data-ttu-id="0be13-109">Istnieje możliwość wyświetlania faktur według ich stanu.</span><span class="sxs-lookup"><span data-stu-id="0be13-109">You can view invoices by their state.</span></span>
+-   <span data-ttu-id="0be13-110">Wersje robocze faktur nie zostały przesłane do przepływu pracy.</span><span class="sxs-lookup"><span data-stu-id="0be13-110">Draft invoices have not been submitted to workflow.</span></span>
+-   <span data-ttu-id="0be13-111">Przesłane niezatwierdzone faktury to takie faktury, które dostawca przesłał, ale nie zostały one jeszcze zaksięgowane w programie Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="0be13-111">Submitted, not approved invoices are those invoices that the vendor has submitted, but they have not been posted in Finance and Operations.</span></span>
+-   <span data-ttu-id="0be13-112">Zatwierdzone niezapłacone faktury to takie faktury, które zostały zaksięgowane w programie Finance and Operations, ale ich jeszcze w całości nie opłacono.</span><span class="sxs-lookup"><span data-stu-id="0be13-112">Approved, not paid invoices are those that have been posted in Finance and Operations, but they have not yet been fully paid.</span></span>
+-   <span data-ttu-id="0be13-113">Zapłacone faktury to takie faktury, które zostały w całości zapłacone w programie Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="0be13-113">Paid invoices are those that have been fully paid in Finance and Operations.</span></span>
 
-Kliknięcie kafelka otwiera przefiltrowany widok strony **Lista faktur**.
-### <a name="tabular-lists"></a>Listy tabelaryczne
+<span data-ttu-id="0be13-114">Kliknięcie kafelka otwiera przefiltrowany widok strony **Lista faktur**.</span><span class="sxs-lookup"><span data-stu-id="0be13-114">Clicking on a tile will open a filtered view of the **Invoices list** page.</span></span>
+### <a name="tabular-lists"></a><span data-ttu-id="0be13-115">Listy tabelaryczne</span><span class="sxs-lookup"><span data-stu-id="0be13-115">Tabular lists</span></span>
 
-W sekcji **Listy tabelaryczne** stan fakturowania dzieli się w podobny sposób, jak w kafelkach podsumowania: listy wersji roboczych i przesłanych niezatwierdzonych. W stanie Wersja robocza fakturę można przesłać do przepływu pracy lub usunąć. Ostatnia lista tabelaryczna to opcja pozwalająca odnaleźć faktury. Można filtrować podczas wyszukiwania, aby przyspieszyć wyszukiwanie.
-Strona listy Wszystkie faktury od dostawcy
+<span data-ttu-id="0be13-116">W sekcji **Listy tabelaryczne** stan fakturowania dzieli się w podobny sposób, jak w kafelkach podsumowania: listy wersji roboczych i przesłanych niezatwierdzonych.</span><span class="sxs-lookup"><span data-stu-id="0be13-116">In the **Tabular lists** section, the status of the invoicing is broken down in similar ways as the summary tiles: Draft and Submitted, not approved lists.</span></span> <span data-ttu-id="0be13-117">W stanie Wersja robocza fakturę można przesłać do przepływu pracy lub usunąć.</span><span class="sxs-lookup"><span data-stu-id="0be13-117">While in the Draft state, an invoice can be submitted to workflow or deleted.</span></span> <span data-ttu-id="0be13-118">Ostatnia lista tabelaryczna to opcja pozwalająca odnaleźć faktury.</span><span class="sxs-lookup"><span data-stu-id="0be13-118">The last tabular list is an option to find invoices.</span></span> <span data-ttu-id="0be13-119">Można filtrować podczas wyszukiwania, aby przyspieszyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="0be13-119">You can filter as you search, to allow for faster searches.</span></span>
+<span data-ttu-id="0be13-120">Strona listy Wszystkie faktury od dostawcy</span><span class="sxs-lookup"><span data-stu-id="0be13-120">All vendor invoices list page</span></span>
 -----------------------------
 
-Na stronie listy **Faktury w portalu współpracy z dostawcami** można wyświetlić wszystkie zaksięgowane i niezaksięgowane faktury od dostawcy. Ta strona listy służy do wyświetlania stanu płatności faktur. Istnieją następujące stany płatności: niezaksięgowane, niezapłacone, częściowo zapłacone i w pełni zapłacone.
-Tworzenie nowej faktury na podstawie zamówienia zakupu
+<span data-ttu-id="0be13-121">Na stronie listy **Faktury w portalu współpracy z dostawcami** można wyświetlić wszystkie zaksięgowane i niezaksięgowane faktury od dostawcy.</span><span class="sxs-lookup"><span data-stu-id="0be13-121">You can view all posted and unposted vendor invoices on the **Vendor collaboration invoices** list page.</span></span> <span data-ttu-id="0be13-122">Ta strona listy służy do wyświetlania stanu płatności faktur.</span><span class="sxs-lookup"><span data-stu-id="0be13-122">You can use this list page to view the payment status of the invoices.</span></span> <span data-ttu-id="0be13-123">Istnieją następujące stany płatności: niezaksięgowane, niezapłacone, częściowo zapłacone i w pełni zapłacone.</span><span class="sxs-lookup"><span data-stu-id="0be13-123">The payment statuses include Unposted, Unpaid, Partially paid, and Fully paid.</span></span>
+<span data-ttu-id="0be13-124">Tworzenie nowej faktury na podstawie zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="0be13-124">Creating a new invoice from a purchase order</span></span>
 --------------------------------------------
 
-Nową fakturę od dostawcy można utworzyć, wybierając akcję **Nowy** w obszarze roboczym **Fakturowanie w portalu współpracy z dostawcami**. Dostawca musi podać numer zamówienia zakupu i numer faktury. Domyślnie wszystkie wiersze z zamówienia zakupu dostawcy będą widoczne w nowej fakturze. Informacje dotyczące ilości i kosztu można edytować przed przesłaniem faktury dostawcy do przepływu pracy. Przed przesłaniem faktury można do niej dołączyć pliki, obrazy, notatki i adresy URL.
+<span data-ttu-id="0be13-125">Nową fakturę od dostawcy można utworzyć, wybierając akcję **Nowy** w obszarze roboczym **Fakturowanie w portalu współpracy z dostawcami**.</span><span class="sxs-lookup"><span data-stu-id="0be13-125">You can create a new vendor invoice by selecting the **New** action on the **Vendor collaboration invoicing** workspace.</span></span> <span data-ttu-id="0be13-126">Dostawca musi podać numer zamówienia zakupu i numer faktury.</span><span class="sxs-lookup"><span data-stu-id="0be13-126">The purchase order number and invoice number must be provided by the vendor.</span></span> <span data-ttu-id="0be13-127">Domyślnie wszystkie wiersze z zamówienia zakupu dostawcy będą widoczne w nowej fakturze.</span><span class="sxs-lookup"><span data-stu-id="0be13-127">By default, all of the lines from the vendor's purchase order will appear on the new invoice.</span></span> <span data-ttu-id="0be13-128">Informacje dotyczące ilości i kosztu można edytować przed przesłaniem faktury dostawcy do przepływu pracy.</span><span class="sxs-lookup"><span data-stu-id="0be13-128">The quantity and cost information can be edited prior to submitting the vendor invoice to workflow.</span></span> <span data-ttu-id="0be13-129">Przed przesłaniem faktury można do niej dołączyć pliki, obrazy, notatki i adresy URL.</span><span class="sxs-lookup"><span data-stu-id="0be13-129">You can attach files, notes, images, and URLs to an invoice before submitting it.</span></span>
 
 
 
-Aby uzyskać więcej informacji, zobacz [Współpraca z dostawcami za pomocą portalu dostawców](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
+<span data-ttu-id="0be13-130">Aby uzyskać więcej informacji, zobacz [Współpraca z dostawcami za pomocą portalu dostawców](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal)</span><span class="sxs-lookup"><span data-stu-id="0be13-130">For more information, see [Collaborating with vendors by using the Vendor portal](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal)</span></span>
 
 
 

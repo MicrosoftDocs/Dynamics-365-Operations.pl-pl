@@ -17,81 +17,81 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 4c2456fffd9a010728154749b35c58db13f142bb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 45e1e54c807597d4d5ff7370748012cbf28c1c6b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu
+# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a><span data-ttu-id="9f818-103">Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="9f818-103">Set up a location directive for purchase order put-away</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób konfigurowania prostej dyrektywy lokalizacji. W pokazanym przykładzie jest tworzona dyrektywa lokalizacji, która będzie używana do określenia, gdzie mają zostać odłożone towary przyjęte na podstawie zamówienia zakupu. Ten przewodnik po zadaniach można odtworzyć przy użyciu danych firmy demonstracyjnych USMF. Warunki wstępne: Należy utworzyć kod dyspozycji. W tej procedurze stosujemy kod dyspozycji o nazwie Ponowne etykietowanie. Jeśli tworzysz dyrektywę lokalizacji z własnymi danymi, musisz skonfigurować funkcje zaawansowanego zarządzania magazynem dla magazynu i towarów.  Ta procedura jest przeznaczona dla kierownika magazynu.
+<span data-ttu-id="9f818-104">W tej procedurze pokazano sposób konfigurowania prostej dyrektywy lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="9f818-104">This procedure shows you how to set up a simple location directive.</span></span> <span data-ttu-id="9f818-105">W pokazanym przykładzie jest tworzona dyrektywa lokalizacji, która będzie używana do określenia, gdzie mają zostać odłożone towary przyjęte na podstawie zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="9f818-105">The example that’s shown creates a location directive to be used to determine where to put items that have been received for a purchase order.</span></span> <span data-ttu-id="9f818-106">Ten przewodnik po zadaniach można odtworzyć przy użyciu danych firmy demonstracyjnych USMF.</span><span class="sxs-lookup"><span data-stu-id="9f818-106">You can play this task guide with the data mentioned using demo data company USMF.</span></span> <span data-ttu-id="9f818-107">Warunki wstępne: Należy utworzyć kod dyspozycji.</span><span class="sxs-lookup"><span data-stu-id="9f818-107">Pre-conditions: You need to create a disposition code.</span></span> <span data-ttu-id="9f818-108">W tej procedurze stosujemy kod dyspozycji o nazwie Ponowne etykietowanie.</span><span class="sxs-lookup"><span data-stu-id="9f818-108">In this procedure we use a disposition code called Relabel.</span></span> <span data-ttu-id="9f818-109">Jeśli tworzysz dyrektywę lokalizacji z własnymi danymi, musisz skonfigurować funkcje zaawansowanego zarządzania magazynem dla magazynu i towarów.</span><span class="sxs-lookup"><span data-stu-id="9f818-109">If you’re creating a location directive in your own data, you need to have set up advanced warehouse management for your warehouse and items.</span></span>  <span data-ttu-id="9f818-110">Ta procedura jest przeznaczona dla kierownika magazynu.</span><span class="sxs-lookup"><span data-stu-id="9f818-110">This procedure is intended for the warehouse manager.</span></span>
 
-1. Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Dyrektywy lokalizacji.
-2. W polu Typ zlecenia zaznacz opcję „Zamówienia zakupu”.
+1. <span data-ttu-id="9f818-111">Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Dyrektywy lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="9f818-111">Go to Warehouse management > Setup > Location directives.</span></span>
+2. <span data-ttu-id="9f818-112">W polu Typ zlecenia zaznacz opcję „Zamówienia zakupu”.</span><span class="sxs-lookup"><span data-stu-id="9f818-112">In the Work order type field, select 'Purchase orders'.</span></span>
 
-## <a name="create-a-location-directive-header"></a>Tworzenie nagłówka dyrektywy lokalizacji
-1. Kliknij przycisk Nowy.
-2. W polu Numer sekwencyjny wpisz liczbę.
-    * Jest to sekwencja przetwarzania dyrektywy lokalizacji dla wybranego typu pracy. Można również zmienić taką sekwencję, jeśli trzeba.  
-3. W polu Nazwa wpisz wartość.
-    * Jest to unikatowy identyfikator tej dyrektywy.  
-4. W polu Typ pracy zaznacz opcję „Odłożenie”.
-    * Wybierz typ pracy do wykonania. W przypadku dyrektywy o typie zlecenia Zamówienie zakupu jedyną obsługiwaną wartością jest Odłożenie.  
-5. W polu Oddział wpisz wartość.
-6. W polu Magazyn wpisz wartość.
-    * Pole Kod dyrektywy należy pozostawić puste.  Kody dyrektyw są używane do kojarzenia wiersza zlecenia typu Odłożenie z określonymi dyrektywami. Dla zamówień zakupu lokalizacja ostatniego wiersza zlecenia typu Odłożenie jest rozpoznawana przed ustaleniem szablonu pracy. Z tego względu nie można powiązać ostatniego wiersza szablonu pracy z konkretną dyrektywą.   
-7. W polu Kod dyspozycji wpisz wartość.
-    * Kod dyspozycji ogranicza użycie dyrektywy lokalizacji, tak że jest ona używana tylko wtedy, gdy pracownik magazynu wprowadza tę konkretną wartość podczas rejestrowania towaru za pomocą urządzenia przenośnego.  
-8. Kliknij przycisk Zapisz.
+## <a name="create-a-location-directive-header"></a><span data-ttu-id="9f818-113">Tworzenie nagłówka dyrektywy lokalizacji</span><span class="sxs-lookup"><span data-stu-id="9f818-113">Create a location directive header</span></span>
+1. <span data-ttu-id="9f818-114">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="9f818-114">Click New.</span></span>
+2. <span data-ttu-id="9f818-115">W polu Numer sekwencyjny wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="9f818-115">In the Sequence number field, enter a number.</span></span>
+    * <span data-ttu-id="9f818-116">Jest to sekwencja przetwarzania dyrektywy lokalizacji dla wybranego typu pracy.</span><span class="sxs-lookup"><span data-stu-id="9f818-116">This is the sequence in which the location directive is processed for the selected work type.</span></span> <span data-ttu-id="9f818-117">Można również zmienić taką sekwencję, jeśli trzeba.</span><span class="sxs-lookup"><span data-stu-id="9f818-117">You can also modify the sequence, if needed.</span></span>  
+3. <span data-ttu-id="9f818-118">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="9f818-118">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="9f818-119">Jest to unikatowy identyfikator tej dyrektywy.</span><span class="sxs-lookup"><span data-stu-id="9f818-119">This is the unique identifier for this directive.</span></span>  
+4. <span data-ttu-id="9f818-120">W polu Typ pracy zaznacz opcję „Odłożenie”.</span><span class="sxs-lookup"><span data-stu-id="9f818-120">In the Work type field, select 'Put'.</span></span>
+    * <span data-ttu-id="9f818-121">Wybierz typ pracy do wykonania.</span><span class="sxs-lookup"><span data-stu-id="9f818-121">Select the type of work to be performed.</span></span> <span data-ttu-id="9f818-122">W przypadku dyrektywy o typie zlecenia Zamówienie zakupu jedyną obsługiwaną wartością jest Odłożenie.</span><span class="sxs-lookup"><span data-stu-id="9f818-122">For directive with work order type Purchase order, Put is the only supported value.</span></span>  
+5. <span data-ttu-id="9f818-123">W polu Oddział wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="9f818-123">In the Site field, type a value.</span></span>
+6. <span data-ttu-id="9f818-124">W polu Magazyn wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="9f818-124">In the Warehouse field, type a value.</span></span>
+    * <span data-ttu-id="9f818-125">Pole Kod dyrektywy należy pozostawić puste.</span><span class="sxs-lookup"><span data-stu-id="9f818-125">Leave the Directive code blank.</span></span>  <span data-ttu-id="9f818-126">Kody dyrektyw są używane do kojarzenia wiersza zlecenia typu Odłożenie z określonymi dyrektywami.</span><span class="sxs-lookup"><span data-stu-id="9f818-126">Directive codes are used to link a work order line of type Put to a specific directive.</span></span> <span data-ttu-id="9f818-127">Dla zamówień zakupu lokalizacja ostatniego wiersza zlecenia typu Odłożenie jest rozpoznawana przed ustaleniem szablonu pracy.</span><span class="sxs-lookup"><span data-stu-id="9f818-127">For purchase orders, the location of the last work order line of type Put is resolved before the work template is determined.</span></span> <span data-ttu-id="9f818-128">Z tego względu nie można powiązać ostatniego wiersza szablonu pracy z konkretną dyrektywą.</span><span class="sxs-lookup"><span data-stu-id="9f818-128">Therefore it is not possible to connect the last line of a work template to a specific directive.</span></span>   
+7. <span data-ttu-id="9f818-129">W polu Kod dyspozycji wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="9f818-129">In the Disposition code field, type a value.</span></span>
+    * <span data-ttu-id="9f818-130">Kod dyspozycji ogranicza użycie dyrektywy lokalizacji, tak że jest ona używana tylko wtedy, gdy pracownik magazynu wprowadza tę konkretną wartość podczas rejestrowania towaru za pomocą urządzenia przenośnego.</span><span class="sxs-lookup"><span data-stu-id="9f818-130">The Disposition code limits the use of the location directive, so the location directive is only used if the warehouse worker enters this specific value during registration of the item using a mobile device.</span></span>  
+8. <span data-ttu-id="9f818-131">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="9f818-131">Click Save.</span></span>
 
-## <a name="edit-the-query-for-directive"></a>Edytowanie zapytania dyrektywy
-1. Kliknij opcję Edytuj kwerendę.
-    * Stosowanie tej dyrektywy jest już ograniczone do towarów zarejestrowanych w określonym magazynie i z określonym kodem dyspozycji. Można dodać inne ograniczenia za pomocą zapytania.  
-2. Kliknij przycisk OK.
+## <a name="edit-the-query-for-directive"></a><span data-ttu-id="9f818-132">Edytowanie zapytania dyrektywy</span><span class="sxs-lookup"><span data-stu-id="9f818-132">Edit the query for directive</span></span>
+1. <span data-ttu-id="9f818-133">Kliknij opcję Edytuj kwerendę.</span><span class="sxs-lookup"><span data-stu-id="9f818-133">Click Edit query.</span></span>
+    * <span data-ttu-id="9f818-134">Stosowanie tej dyrektywy jest już ograniczone do towarów zarejestrowanych w określonym magazynie i z określonym kodem dyspozycji.</span><span class="sxs-lookup"><span data-stu-id="9f818-134">The use of this directive is already limited to be used for items registered in the warehouse that you specified, and with the disposition code that you specified.</span></span> <span data-ttu-id="9f818-135">Można dodać inne ograniczenia za pomocą zapytania.</span><span class="sxs-lookup"><span data-stu-id="9f818-135">You can add other constraints using the query.</span></span>  
+2. <span data-ttu-id="9f818-136">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="9f818-136">Click OK.</span></span>
 
-## <a name="add-directive-lines"></a>Dodawanie wierszy dyrektywy
-1. Kliknij przycisk Nowy.
-    * Jest to sekwencja przetwarzania wierszy dyrektywy lokalizacji dla wybranego typu pracy. Można również zmienić taką sekwencję, jeśli trzeba.  
-2. W polu Od ilości wprowadź liczbę.
-    * Jest to najmniejsza ilość, dla jakiej ten wiersz dyrektywy jest prawidłowy.  
-3. W polu Do ilości wprowadź liczbę.
-4. W polu Jednostka wpisz wartość.
-    * Jednostka, w jakiej są wyrażone wartości Od ilości i Do ilości. Jeśli to pole pozostanie puste, stosowana jest jednostka magazynowa z towaru.  
-5. W polu Zlokalizuj ilość wybierz opcję.
-    * Brak lub Liczba numerów identyfikacyjnych: Ilość zarejestrowana na każdym numerze identyfikacyjnym. Ilość w jednostkach: Cała ilość, jaka została zarejestrowana. Pozostała ilość: Ilość, jaka pozostała jeszcze do zarejestrowania z wiersza zamówienia zakupu. Oczekiwana ilość: Całkowita ilość, która jest określona w wierszu zamówienia zakupu.  
-6. Zaznacz pole wyboru Ogranicz według jednostki lub usuń jego zaznaczenie.
-    * Jeśli wybierzesz tę opcję i określisz jednostkę na stronie Ogranicz według jednostki, w lokalizacji można umieścić tylko towary o tej jednostce miary. Na przykład jeśli jednostką miary jest PL (paleta), w podanej lokalizacji można umieścić tylko towary na paletach.  
-7. Zaznacz pole wyboru Zezwalaj na podział lub usuń jego zaznaczenie.
-    * Umożliwia to dyrektywie dzielenie ilości na wiele lokalizacji.  
-8. Kliknij przycisk Zapisz.
+## <a name="add-directive-lines"></a><span data-ttu-id="9f818-137">Dodawanie wierszy dyrektywy</span><span class="sxs-lookup"><span data-stu-id="9f818-137">Add directive lines</span></span>
+1. <span data-ttu-id="9f818-138">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="9f818-138">Click New.</span></span>
+    * <span data-ttu-id="9f818-139">Jest to sekwencja przetwarzania wierszy dyrektywy lokalizacji dla wybranego typu pracy.</span><span class="sxs-lookup"><span data-stu-id="9f818-139">This is the sequence in which the location directive lines are processed for the selected work type.</span></span> <span data-ttu-id="9f818-140">Można również zmienić taką sekwencję, jeśli trzeba.</span><span class="sxs-lookup"><span data-stu-id="9f818-140">You can also modify the sequence, if needed.</span></span>  
+2. <span data-ttu-id="9f818-141">W polu Od ilości wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="9f818-141">In the From quantity field, enter a number.</span></span>
+    * <span data-ttu-id="9f818-142">Jest to najmniejsza ilość, dla jakiej ten wiersz dyrektywy jest prawidłowy.</span><span class="sxs-lookup"><span data-stu-id="9f818-142">This is the lowest quantity that this directive line is valid for.</span></span>  
+3. <span data-ttu-id="9f818-143">W polu Do ilości wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="9f818-143">In the To quantity field, enter a number.</span></span>
+4. <span data-ttu-id="9f818-144">W polu Jednostka wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="9f818-144">In the Unit field, type a value.</span></span>
+    * <span data-ttu-id="9f818-145">Jednostka, w jakiej są wyrażone wartości Od ilości i Do ilości.</span><span class="sxs-lookup"><span data-stu-id="9f818-145">The unit the From quantity and To quantity is expressed in.</span></span> <span data-ttu-id="9f818-146">Jeśli to pole pozostanie puste, stosowana jest jednostka magazynowa z towaru.</span><span class="sxs-lookup"><span data-stu-id="9f818-146">If you leave this field blank the inventory unit from the item is used.</span></span>  
+5. <span data-ttu-id="9f818-147">W polu Zlokalizuj ilość wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="9f818-147">In the Locate quantity field, select an option.</span></span>
+    * <span data-ttu-id="9f818-148">Brak lub Liczba numerów identyfikacyjnych: Ilość zarejestrowana na każdym numerze identyfikacyjnym.</span><span class="sxs-lookup"><span data-stu-id="9f818-148">None, or licence plate quantity: The quantity registered on each licence plate.</span></span> <span data-ttu-id="9f818-149">Ilość w jednostkach: Cała ilość, jaka została zarejestrowana.</span><span class="sxs-lookup"><span data-stu-id="9f818-149">Unitized quantity: The entire quantity that’s been registered.</span></span> <span data-ttu-id="9f818-150">Pozostała ilość: Ilość, jaka pozostała jeszcze do zarejestrowania z wiersza zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="9f818-150">Remaining quantity: The quantity that is yet to be registered from the purchase order line.</span></span> <span data-ttu-id="9f818-151">Oczekiwana ilość: Całkowita ilość, która jest określona w wierszu zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="9f818-151">Expected quantity: The total quantity that is specified on the purchase order line.</span></span>  
+6. <span data-ttu-id="9f818-152">Zaznacz pole wyboru Ogranicz według jednostki lub usuń jego zaznaczenie.</span><span class="sxs-lookup"><span data-stu-id="9f818-152">Check or uncheck the Restrict by unit checkbox.</span></span>
+    * <span data-ttu-id="9f818-153">Jeśli wybierzesz tę opcję i określisz jednostkę na stronie Ogranicz według jednostki, w lokalizacji można umieścić tylko towary o tej jednostce miary.</span><span class="sxs-lookup"><span data-stu-id="9f818-153">If you select this option, and specify the unit on the Restrict by unit page, only items with that unit of measurement can be put into the location.</span></span> <span data-ttu-id="9f818-154">Na przykład jeśli jednostką miary jest PL (paleta), w podanej lokalizacji można umieścić tylko towary na paletach.</span><span class="sxs-lookup"><span data-stu-id="9f818-154">For example, if the unit of measurement is PL (pallets), only items in pallets can be put into the specified location.</span></span>  
+7. <span data-ttu-id="9f818-155">Zaznacz pole wyboru Zezwalaj na podział lub usuń jego zaznaczenie.</span><span class="sxs-lookup"><span data-stu-id="9f818-155">Check or uncheck the Allow split checkbox.</span></span>
+    * <span data-ttu-id="9f818-156">Umożliwia to dyrektywie dzielenie ilości na wiele lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="9f818-156">This allows the directive to split the quantity across multiple locations.</span></span>  
+8. <span data-ttu-id="9f818-157">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="9f818-157">Click Save.</span></span>
 
-## <a name="restrict-the-directive-line-to-a-specific-unit"></a>Ograniczanie wiersza dyrektywy do określonej jednostki
-1. Kliknij opcję Ogranicz według jednostki.
-    * Ten przycisk jest dostępny tylko po naciśnięciu przycisku Zapisz po zaznaczeniu pola wyboru Ogranicz według jednostki.  
-2. W polu Jednostka wpisz wartość.
-3. Zamknij stronę.
+## <a name="restrict-the-directive-line-to-a-specific-unit"></a><span data-ttu-id="9f818-158">Ograniczanie wiersza dyrektywy do określonej jednostki</span><span class="sxs-lookup"><span data-stu-id="9f818-158">Restrict the directive line to a specific unit</span></span>
+1. <span data-ttu-id="9f818-159">Kliknij opcję Ogranicz według jednostki.</span><span class="sxs-lookup"><span data-stu-id="9f818-159">Click Restrict by unit.</span></span>
+    * <span data-ttu-id="9f818-160">Ten przycisk jest dostępny tylko po naciśnięciu przycisku Zapisz po zaznaczeniu pola wyboru Ogranicz według jednostki.</span><span class="sxs-lookup"><span data-stu-id="9f818-160">This button is only available when you press Save after you have selected the Restrict by unit check box.</span></span>  
+2. <span data-ttu-id="9f818-161">W polu Jednostka wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="9f818-161">In the Unit field, type a value.</span></span>
+3. <span data-ttu-id="9f818-162">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9f818-162">Close the page.</span></span>
 
-## <a name="add-a-location-directive-action-line"></a>Dodawanie wiersza działania dyrektywy lokalizacji
-1. Kliknij przycisk Nowy.
-    * Jest to sekwencja przetwarzania wierszy działań dyrektywy lokalizacji dla wybranego typu pracy. Można również zmienić taką sekwencję, jeśli trzeba.  
-2. W polu Nazwa wpisz wartość.
-    * Jest to unikatowy identyfikator tego działania dyrektywy.  
-3. W polu Użycie stałej lokalizacji wybierz opcję.
-    * Lokalizacje stałe i niestałe: dozwolone są wszystkie lokalizacje niestałe, a także własna stała lokalizacja produktu, w zakresie określonym w zapytaniu.  Tylko stała lokalizacja dla produktu: dozwolone są stałe lokalizacje dla produktu, a wszystkie warianty produktu mają ten sam zbiór stałych lokalizacji. Tylko stałe lokalizacje dla wariantów produktu: dozwolone są tylko stałe lokalizacje określone dla każdego wariantu produktu.  
-4. W polu Strategia wybierz opcję.
-    * Dla zleceń typu Zamówienie zakupu są obsługiwane następujące strategie: Brak: towar jest umieszczany w pierwszej znalezionej lokalizacji. Konsolidacja: towar jest umieszczany w lokalizacji, gdzie są już dostępne podobne towary. Pusta lokalizacja bez przychodzącej pracy: towar jest umieszczany w pierwszej pustej lokalizacji, jaka zostanie znaleziona. Lokalizacja jest uważana za pustą, jeśli nie ma w niej fizycznych zapasów i nie ma żadnych oczekiwanych prac przychodzących.  
-5. Kliknij przycisk Zapisz.
+## <a name="add-a-location-directive-action-line"></a><span data-ttu-id="9f818-163">Dodawanie wiersza działania dyrektywy lokalizacji</span><span class="sxs-lookup"><span data-stu-id="9f818-163">Add a location directive action line</span></span>
+1. <span data-ttu-id="9f818-164">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="9f818-164">Click New.</span></span>
+    * <span data-ttu-id="9f818-165">Jest to sekwencja przetwarzania wierszy działań dyrektywy lokalizacji dla wybranego typu pracy.</span><span class="sxs-lookup"><span data-stu-id="9f818-165">This is the sequence in which the location directive action lines are processed for the selected work type.</span></span> <span data-ttu-id="9f818-166">Można również zmienić taką sekwencję, jeśli trzeba.</span><span class="sxs-lookup"><span data-stu-id="9f818-166">You can also modify the sequence, if needed.</span></span>  
+2. <span data-ttu-id="9f818-167">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="9f818-167">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="9f818-168">Jest to unikatowy identyfikator tego działania dyrektywy.</span><span class="sxs-lookup"><span data-stu-id="9f818-168">This is the unique identifier for this directive action.</span></span>  
+3. <span data-ttu-id="9f818-169">W polu Użycie stałej lokalizacji wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="9f818-169">In the Fixed location usage field, select an option.</span></span>
+    * <span data-ttu-id="9f818-170">Lokalizacje stałe i niestałe: dozwolone są wszystkie lokalizacje niestałe, a także własna stała lokalizacja produktu, w zakresie określonym w zapytaniu.</span><span class="sxs-lookup"><span data-stu-id="9f818-170">Fixed and non-fixed locations: All non-fixed locations are valid as well as the product’s own fixed location, within the range specified in the query.</span></span>  <span data-ttu-id="9f818-171">Tylko stała lokalizacja dla produktu: dozwolone są stałe lokalizacje dla produktu, a wszystkie warianty produktu mają ten sam zbiór stałych lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="9f818-171">Only fixed location for the product: Fixed locations for the product are valid, and all product variants share the same set of fixed locations.</span></span> <span data-ttu-id="9f818-172">Tylko stałe lokalizacje dla wariantów produktu: dozwolone są tylko stałe lokalizacje określone dla każdego wariantu produktu.</span><span class="sxs-lookup"><span data-stu-id="9f818-172">Only fixed location for the product variants: Only fixed locations specified for each product variant are valid.</span></span>  
+4. <span data-ttu-id="9f818-173">W polu Strategia wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="9f818-173">In the Strategy field, select an option.</span></span>
+    * <span data-ttu-id="9f818-174">Dla zleceń typu Zamówienie zakupu są obsługiwane następujące strategie: Brak: towar jest umieszczany w pierwszej znalezionej lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="9f818-174">Work orders of type Purchase order support the following strategies: None: the item is placed at the first location that’s found.</span></span> <span data-ttu-id="9f818-175">Konsolidacja: towar jest umieszczany w lokalizacji, gdzie są już dostępne podobne towary.</span><span class="sxs-lookup"><span data-stu-id="9f818-175">Consolidate: The item is placed in a location where similar items are already available.</span></span> <span data-ttu-id="9f818-176">Pusta lokalizacja bez przychodzącej pracy: towar jest umieszczany w pierwszej pustej lokalizacji, jaka zostanie znaleziona.</span><span class="sxs-lookup"><span data-stu-id="9f818-176">Empty location with no incoming work: the item is placed in the first empty location that’s found.</span></span> <span data-ttu-id="9f818-177">Lokalizacja jest uważana za pustą, jeśli nie ma w niej fizycznych zapasów i nie ma żadnych oczekiwanych prac przychodzących.</span><span class="sxs-lookup"><span data-stu-id="9f818-177">A location is considered to be empty if it has no physical inventory and no expected incoming work.</span></span>  
+5. <span data-ttu-id="9f818-178">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="9f818-178">Click Save.</span></span>
 
-## <a name="edit-the-query-for-directive-action-line"></a>Edytowanie wiersza działania zapytania dyrektywy
-1. Kliknij opcję Edytuj kwerendę.
-2. Kliknij przycisk Dodaj.
-3. W polu Pole wpisz „Identyfikator profilu lokalizacji”.
-    * W tym przykładzie ograniczymy możliwe lokalizacje przy użyciu identyfikatora profilu lokalizacji.  
-4. W polu Kryteria wpisz wartość.
-5. Kliknij przycisk OK.
-    * Można kontynuować dodawanie wierszy dyrektywy i działań dyrektywy, aż zostaną objęte wszystkie możliwe scenariusze w magazynie.  
+## <a name="edit-the-query-for-directive-action-line"></a><span data-ttu-id="9f818-179">Edytowanie wiersza działania zapytania dyrektywy</span><span class="sxs-lookup"><span data-stu-id="9f818-179">Edit the query for directive action line</span></span>
+1. <span data-ttu-id="9f818-180">Kliknij opcję Edytuj kwerendę.</span><span class="sxs-lookup"><span data-stu-id="9f818-180">Click Edit query.</span></span>
+2. <span data-ttu-id="9f818-181">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="9f818-181">Click Add.</span></span>
+3. <span data-ttu-id="9f818-182">W polu Pole wpisz „Identyfikator profilu lokalizacji”.</span><span class="sxs-lookup"><span data-stu-id="9f818-182">In the Field field, type 'location profile ID'.</span></span>
+    * <span data-ttu-id="9f818-183">W tym przykładzie ograniczymy możliwe lokalizacje przy użyciu identyfikatora profilu lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="9f818-183">In this example, we’ll restrict the possible locations using a location profile ID.</span></span>  
+4. <span data-ttu-id="9f818-184">W polu Kryteria wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="9f818-184">In the Criteria field, type a value.</span></span>
+5. <span data-ttu-id="9f818-185">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="9f818-185">Click OK.</span></span>
+    * <span data-ttu-id="9f818-186">Można kontynuować dodawanie wierszy dyrektywy i działań dyrektywy, aż zostaną objęte wszystkie możliwe scenariusze w magazynie.</span><span class="sxs-lookup"><span data-stu-id="9f818-186">You can continue to add directive lines and directive actions until you have covered all the possible scenarios in your warehouse.</span></span>  
 
 

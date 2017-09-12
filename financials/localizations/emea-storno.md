@@ -17,156 +17,156 @@ ms.author: v-semaz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: cd234755bbe92e8f1c78a2dd6e7d05e5372c4692
+ms.sourcegitcommit: 97d374230cc6e833b9f585de000e1252f2a78b9d
+ms.openlocfilehash: e042435dacb9ab4c5390ee1fb758e1cc4aeb3b70
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 
-# <a name="storno-accounting"></a>Stornowanie
+# <a name="storno-accounting"></a><span data-ttu-id="bbfa8-103">Stornowanie</span><span class="sxs-lookup"><span data-stu-id="bbfa8-103">Storno accounting</span></span>
 
-Stornowanie to praktyka używania liczb ujemnych, aby odwrócić oryginalne zapisy na koncie arkusza.
+<span data-ttu-id="bbfa8-104">Stornowanie to praktyka używania liczb ujemnych, aby odwrócić oryginalne zapisy na koncie arkusza.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-104">Storno accounting is the practice of using negative numbers to reverse original journal account entries.</span></span>
 
-*Stornowanie* to praktyka używania ujemnych liczb po stronie winien lub ma, aby odwrócić oryginalne zapisy na koncie arkusza. Ponieważ księgowi zazwyczaj zapisują pozycje storna czerwonym atramentem, ta praktyka księgowa jest również znana jako *storno czerwone*. Za pomocą stornowania można anulować dokument z niepoprawnymi kwotami, ale po anulowaniu należy zawsze wprowadzić poprawne kwoty dokumentu.
+<span data-ttu-id="bbfa8-105">*Stornowanie* to praktyka używania ujemnych liczb po stronie winien lub ma, aby odwrócić oryginalne zapisy na koncie arkusza.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-105">*Storno accounting* is a practice of using negative debit or credit amounts to reverse original journal account entries.</span></span> <span data-ttu-id="bbfa8-106">Ponieważ księgowi zazwyczaj zapisują pozycje storna czerwonym atramentem, ta praktyka księgowa jest również znana jako *storno czerwone*.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-106">Because bookkeepers typically write Storno entries in red ink, this accounting practice is also known as *Red Storno*.</span></span> <span data-ttu-id="bbfa8-107">Za pomocą stornowania można anulować dokument z niepoprawnymi kwotami, ale po anulowaniu należy zawsze wprowadzić poprawne kwoty dokumentu.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-107">Using Storno accounting you can cancel a document with incorrect amounts, however you should always enter the correct document amount after the cancellation.</span></span>
 
-## <a name="example"></a>Przykład
-Księgowy księguje fakturę od dostawcy na 120 USD. W procesie realizacji płatności okazało się, że księgowy wprowadził przez pomyłkę kwotę 120 USD zamiast 102 USD. Teraz księgowy musi utworzyć storno dla oryginalnego dokumentu, a następnie utworzyć poprawną fakturę na 102 USD. Aby uzyskać więcej informacji, zobacz [Faktura od dostawcy](../accounts-payable/vendor-invoices-overview.md). W poniższej tabeli przedstawiono ogólny wpis storna.
+## <a name="example"></a><span data-ttu-id="bbfa8-108">Przykład</span><span class="sxs-lookup"><span data-stu-id="bbfa8-108">Example</span></span>
+<span data-ttu-id="bbfa8-109">Księgowy księguje fakturę od dostawcy na 120 USD.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-109">A bookkeeper posts an invoice from a vendor for 120 USD.</span></span> <span data-ttu-id="bbfa8-110">W procesie realizacji płatności okazało się, że księgowy wprowadził przez pomyłkę kwotę 120 USD zamiast 102 USD.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-110">During the payment process, it's discovered that the bookkeeper mistakenly entered 120 USD instead of 102 USD.</span></span> <span data-ttu-id="bbfa8-111">Teraz księgowy musi utworzyć storno dla oryginalnego dokumentu, a następnie utworzyć poprawną fakturę na 102 USD.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-111">Now, the bookkeeper needs to create Storno for the original document, and then create the correct invoice for 102 USD.</span></span> <span data-ttu-id="bbfa8-112">Aby uzyskać więcej informacji, zobacz [Faktura od dostawcy](../accounts-payable/vendor-invoices-overview.md).</span><span class="sxs-lookup"><span data-stu-id="bbfa8-112">For more information, see [Invoice from Vendor](../accounts-payable/vendor-invoices-overview.md).</span></span> <span data-ttu-id="bbfa8-113">W poniższej tabeli przedstawiono ogólny wpis storna.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-113">The following table shows the general entry for Storno.</span></span>
 
-| **Identyfikator dokumentu** | **Konto** | **Strona debetowa** | **Strona kredytowa** | **Komentarz**                  |
+| <span data-ttu-id="bbfa8-114">**Identyfikator dokumentu**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-114">**Document ID**</span></span> | <span data-ttu-id="bbfa8-115">**Konto**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-115">**Account**</span></span> | <span data-ttu-id="bbfa8-116">**Strona debetowa**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-116">**Debit**</span></span> | <span data-ttu-id="bbfa8-117">**Strona kredytowa**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-117">**Credit**</span></span> | <span data-ttu-id="bbfa8-118">**Komentarz**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-118">**Comment**</span></span>                  |
 |-----------------|-------------|-----------|------------|------------------------------|
-| Faktura0001     | Konto zakupu   | 120       |            | Oryginalna faktura (błędna) |
-| Faktura0001     | Konto dostawcy  |           | 120        | Oryginalna faktura (błędna) |
+| <span data-ttu-id="bbfa8-119">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="bbfa8-119">Invoice0001</span></span>     | <span data-ttu-id="bbfa8-120">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="bbfa8-120">Purch acc</span></span>   | <span data-ttu-id="bbfa8-121">120</span><span class="sxs-lookup"><span data-stu-id="bbfa8-121">120</span></span>       |            | <span data-ttu-id="bbfa8-122">Oryginalna faktura (błędna)</span><span class="sxs-lookup"><span data-stu-id="bbfa8-122">Original Invoice (incorrect)</span></span> |
+| <span data-ttu-id="bbfa8-123">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="bbfa8-123">Invoice0001</span></span>     | <span data-ttu-id="bbfa8-124">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="bbfa8-124">Vendor acc</span></span>  |           | <span data-ttu-id="bbfa8-125">120</span><span class="sxs-lookup"><span data-stu-id="bbfa8-125">120</span></span>        | <span data-ttu-id="bbfa8-126">Oryginalna faktura (błędna)</span><span class="sxs-lookup"><span data-stu-id="bbfa8-126">Original Invoice (incorrect)</span></span> |
 |                 |             |           |            |                              |
-| Storno0001      | Konto zakupu   | -120     |            | Storno                       |
-| Storno0001      | Konto dostawcy  |           | -120      | Storno                       |
+| <span data-ttu-id="bbfa8-127">Storno0001</span><span class="sxs-lookup"><span data-stu-id="bbfa8-127">Storno0001</span></span>      | <span data-ttu-id="bbfa8-128">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="bbfa8-128">Purch acc</span></span>   | <span data-ttu-id="bbfa8-129">-120</span><span class="sxs-lookup"><span data-stu-id="bbfa8-129">-120</span></span>     |            | <span data-ttu-id="bbfa8-130">Storno</span><span class="sxs-lookup"><span data-stu-id="bbfa8-130">Storno</span></span>                       |
+| <span data-ttu-id="bbfa8-131">Storno0001</span><span class="sxs-lookup"><span data-stu-id="bbfa8-131">Storno0001</span></span>      | <span data-ttu-id="bbfa8-132">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="bbfa8-132">Vendor acc</span></span>  |           | <span data-ttu-id="bbfa8-133">-120</span><span class="sxs-lookup"><span data-stu-id="bbfa8-133">-120</span></span>      | <span data-ttu-id="bbfa8-134">Storno</span><span class="sxs-lookup"><span data-stu-id="bbfa8-134">Storno</span></span>                       |
 |                 |             |           |            |                              |
-| Faktura0002     | Konto zakupu   | 102       |            | Poprawna faktura              |
-| Faktura0002     | Konto dostawcy  |           | 102        | Poprawna faktura              |
+| <span data-ttu-id="bbfa8-135">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="bbfa8-135">Invoice0002</span></span>     | <span data-ttu-id="bbfa8-136">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="bbfa8-136">Purch acc</span></span>   | <span data-ttu-id="bbfa8-137">102</span><span class="sxs-lookup"><span data-stu-id="bbfa8-137">102</span></span>       |            | <span data-ttu-id="bbfa8-138">Poprawna faktura</span><span class="sxs-lookup"><span data-stu-id="bbfa8-138">Correct Invoice</span></span>              |
+| <span data-ttu-id="bbfa8-139">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="bbfa8-139">Invoice0002</span></span>     | <span data-ttu-id="bbfa8-140">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="bbfa8-140">Vendor acc</span></span>  |           | <span data-ttu-id="bbfa8-141">102</span><span class="sxs-lookup"><span data-stu-id="bbfa8-141">102</span></span>        | <span data-ttu-id="bbfa8-142">Poprawna faktura</span><span class="sxs-lookup"><span data-stu-id="bbfa8-142">Correct Invoice</span></span>              |
 
-W tym przykładzie saldo wyciągu pokazuje następujące dane.
+<span data-ttu-id="bbfa8-143">W tym przykładzie saldo wyciągu pokazuje następujące dane.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-143">In this example, the balance statement shows the following.</span></span>
 
-| Konto    | Strona debetowa | Strona kredytowa | Bilansowe |
+| <span data-ttu-id="bbfa8-144">Konto</span><span class="sxs-lookup"><span data-stu-id="bbfa8-144">Account</span></span>    | <span data-ttu-id="bbfa8-145">Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="bbfa8-145">Debit</span></span> | <span data-ttu-id="bbfa8-146">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="bbfa8-146">Credit</span></span> | <span data-ttu-id="bbfa8-147">Bilansowe</span><span class="sxs-lookup"><span data-stu-id="bbfa8-147">Balance</span></span> |
 |------------|-------|--------|---------|
-| Konto zakupu  | 102   | 0      | 102     |
-| Konto dostawcy | 0     | 102    | -102    |
+| <span data-ttu-id="bbfa8-148">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="bbfa8-148">Purch acc</span></span>  | <span data-ttu-id="bbfa8-149">102</span><span class="sxs-lookup"><span data-stu-id="bbfa8-149">102</span></span>   | <span data-ttu-id="bbfa8-150">0</span><span class="sxs-lookup"><span data-stu-id="bbfa8-150">0</span></span>      | <span data-ttu-id="bbfa8-151">102</span><span class="sxs-lookup"><span data-stu-id="bbfa8-151">102</span></span>     |
+| <span data-ttu-id="bbfa8-152">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="bbfa8-152">Vendor acc</span></span> | <span data-ttu-id="bbfa8-153">0</span><span class="sxs-lookup"><span data-stu-id="bbfa8-153">0</span></span>     | <span data-ttu-id="bbfa8-154">102</span><span class="sxs-lookup"><span data-stu-id="bbfa8-154">102</span></span>    | <span data-ttu-id="bbfa8-155">-102</span><span class="sxs-lookup"><span data-stu-id="bbfa8-155">-102</span></span>    |
 
-## <a name="differences-between-storno-and-reverse-entries"></a>Różnica między zapisami stornującymi a korygującymi
-Istnieją dwa sposoby poprawiania wpisów księgowania — wycofanie i storno. Podczas używania wpisu korygującego jest generowana kopia oryginalnego wpisu ogólnego na odwrotnych kontach debetowych i kredytowych, a kwoty zachowują pierwotny znak. Jeśli używasz storna, system tworzy kopię oryginalnego wpisu ogólnego, ale kwoty są rejestrowane ze znakiem minusa. W poniższej tabeli przedstawiono ogólny wpis storna.
+## <a name="differences-between-storno-and-reverse-entries"></a><span data-ttu-id="bbfa8-156">Różnica między zapisami stornującymi a korygującymi</span><span class="sxs-lookup"><span data-stu-id="bbfa8-156">Differences between Storno and reverse entries</span></span>
+<span data-ttu-id="bbfa8-157">Istnieją dwa sposoby poprawiania wpisów księgowania — wycofanie i storno.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-157">There are two ways in which to correct posting entries – reverse and storno.</span></span> <span data-ttu-id="bbfa8-158">Podczas używania wpisu korygującego jest generowana kopia oryginalnego wpisu ogólnego na odwrotnych kontach debetowych i kredytowych, a kwoty zachowują pierwotny znak.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-158">If you use a reverse entry, a copy of the original general entry is created with reverse debit and credit accounts, and the amounts remain with the same sign.</span></span> <span data-ttu-id="bbfa8-159">Jeśli używasz storna, system tworzy kopię oryginalnego wpisu ogólnego, ale kwoty są rejestrowane ze znakiem minusa.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-159">If you use Storno, the system creates a copy of the original general entry, but the amounts are recorded with a negative sign.</span></span> <span data-ttu-id="bbfa8-160">W poniższej tabeli przedstawiono ogólny wpis storna.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-160">The following table shows the general entry for Storno.</span></span>
 
-| **Identyfikator dokumentu** | **Konto** | **Strona debetowa** | **Strona kredytowa** | **Komentarz**                  |
+| <span data-ttu-id="bbfa8-161">**Identyfikator dokumentu**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-161">**Document ID**</span></span> | <span data-ttu-id="bbfa8-162">**Konto**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-162">**Account**</span></span> | <span data-ttu-id="bbfa8-163">**Strona debetowa**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-163">**Debit**</span></span> | <span data-ttu-id="bbfa8-164">**Strona kredytowa**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-164">**Credit**</span></span> | <span data-ttu-id="bbfa8-165">**Komentarz**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-165">**Comment**</span></span>                  |
 |-----------------|-------------|-----------|------------|------------------------------|
-| Faktura0001     | Konto zakupu   | 120       |            | Oryginalna faktura (błędna) |
-| Faktura0001     | Konto dostawcy  |           | 120        | Oryginalna faktura (błędna) |
+| <span data-ttu-id="bbfa8-166">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="bbfa8-166">Invoice0001</span></span>     | <span data-ttu-id="bbfa8-167">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="bbfa8-167">Purch acc</span></span>   | <span data-ttu-id="bbfa8-168">120</span><span class="sxs-lookup"><span data-stu-id="bbfa8-168">120</span></span>       |            | <span data-ttu-id="bbfa8-169">Oryginalna faktura (błędna)</span><span class="sxs-lookup"><span data-stu-id="bbfa8-169">Original Invoice (incorrect)</span></span> |
+| <span data-ttu-id="bbfa8-170">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="bbfa8-170">Invoice0001</span></span>     | <span data-ttu-id="bbfa8-171">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="bbfa8-171">Vendor acc</span></span>  |           | <span data-ttu-id="bbfa8-172">120</span><span class="sxs-lookup"><span data-stu-id="bbfa8-172">120</span></span>        | <span data-ttu-id="bbfa8-173">Oryginalna faktura (błędna)</span><span class="sxs-lookup"><span data-stu-id="bbfa8-173">Original Invoice (incorrect)</span></span> |
 |                 |             |           |            |                              |
-| Wycofanie0001     | Konto zakupu   |           | 120        | Wycofaj                      |
-| Wycofanie0001     | Konto dostawcy  | 120       |            | Wycofaj                      |
+| <span data-ttu-id="bbfa8-174">Wycofanie0001</span><span class="sxs-lookup"><span data-stu-id="bbfa8-174">Reverse0001</span></span>     | <span data-ttu-id="bbfa8-175">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="bbfa8-175">Purch acc</span></span>   |           | <span data-ttu-id="bbfa8-176">120</span><span class="sxs-lookup"><span data-stu-id="bbfa8-176">120</span></span>        | <span data-ttu-id="bbfa8-177">Wycofaj</span><span class="sxs-lookup"><span data-stu-id="bbfa8-177">Reverse</span></span>                      |
+| <span data-ttu-id="bbfa8-178">Wycofanie0001</span><span class="sxs-lookup"><span data-stu-id="bbfa8-178">Reverse0001</span></span>     | <span data-ttu-id="bbfa8-179">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="bbfa8-179">Vendor acc</span></span>  | <span data-ttu-id="bbfa8-180">120</span><span class="sxs-lookup"><span data-stu-id="bbfa8-180">120</span></span>       |            | <span data-ttu-id="bbfa8-181">Wycofaj</span><span class="sxs-lookup"><span data-stu-id="bbfa8-181">Reverse</span></span>                      |
 |                 |             |           |            |                              |
-| Faktura0002     | Konto zakupu   | 102       |            | Poprawna faktura              |
-| Faktura0002     | Konto dostawcy  |           | 102        | Poprawna faktura              |
+| <span data-ttu-id="bbfa8-182">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="bbfa8-182">Invoice0002</span></span>     | <span data-ttu-id="bbfa8-183">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="bbfa8-183">Purch acc</span></span>   | <span data-ttu-id="bbfa8-184">102</span><span class="sxs-lookup"><span data-stu-id="bbfa8-184">102</span></span>       |            | <span data-ttu-id="bbfa8-185">Poprawna faktura</span><span class="sxs-lookup"><span data-stu-id="bbfa8-185">Correct Invoice</span></span>              |
+| <span data-ttu-id="bbfa8-186">Faktura0002</span><span class="sxs-lookup"><span data-stu-id="bbfa8-186">Invoice0002</span></span>     | <span data-ttu-id="bbfa8-187">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="bbfa8-187">Vendor acc</span></span>  |           | <span data-ttu-id="bbfa8-188">102</span><span class="sxs-lookup"><span data-stu-id="bbfa8-188">102</span></span>        | <span data-ttu-id="bbfa8-189">Poprawna faktura</span><span class="sxs-lookup"><span data-stu-id="bbfa8-189">Correct Invoice</span></span>              |
 
-W tym przykładzie saldo wyciągu pokazuje następujące dane.
+<span data-ttu-id="bbfa8-190">W tym przykładzie saldo wyciągu pokazuje następujące dane.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-190">In this example, the balance statement shows the following.</span></span>
 
-| Konto    | Strona debetowa | Strona kredytowa | Bilansowe |
+| <span data-ttu-id="bbfa8-191">Konto</span><span class="sxs-lookup"><span data-stu-id="bbfa8-191">Account</span></span>    | <span data-ttu-id="bbfa8-192">Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="bbfa8-192">Debit</span></span> | <span data-ttu-id="bbfa8-193">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="bbfa8-193">Credit</span></span> | <span data-ttu-id="bbfa8-194">Bilansowe</span><span class="sxs-lookup"><span data-stu-id="bbfa8-194">Balance</span></span> |
 |------------|-------|--------|---------|
-| Konto zakupu  | 222   | 120    | 102     |
-| Konto dostawcy | 120   | 222    | -102    |
+| <span data-ttu-id="bbfa8-195">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="bbfa8-195">Purch acc</span></span>  | <span data-ttu-id="bbfa8-196">222</span><span class="sxs-lookup"><span data-stu-id="bbfa8-196">222</span></span>   | <span data-ttu-id="bbfa8-197">120</span><span class="sxs-lookup"><span data-stu-id="bbfa8-197">120</span></span>    | <span data-ttu-id="bbfa8-198">102</span><span class="sxs-lookup"><span data-stu-id="bbfa8-198">102</span></span>     |
+| <span data-ttu-id="bbfa8-199">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="bbfa8-199">Vendor acc</span></span> | <span data-ttu-id="bbfa8-200">120</span><span class="sxs-lookup"><span data-stu-id="bbfa8-200">120</span></span>   | <span data-ttu-id="bbfa8-201">222</span><span class="sxs-lookup"><span data-stu-id="bbfa8-201">222</span></span>    | <span data-ttu-id="bbfa8-202">-102</span><span class="sxs-lookup"><span data-stu-id="bbfa8-202">-102</span></span>    |
 
-Należy zauważyć, że salda są takie same dla wycofania i storna. Różnią się obroty po stronach winien i ma, ponieważ wpis korygujący tworzy nadmiarowy obrót po obu stronach. Wpis korygujący jest używany w krajach/regionach, gdzie rzadko używa się obrotu. W pozostałych krajach/regionach stosuje się stornowanie.
+<span data-ttu-id="bbfa8-203">Należy zauważyć, że salda są takie same dla wycofania i storna.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-203">Note that the balances are equal for the reverse and the storno.</span></span> <span data-ttu-id="bbfa8-204">Różnią się obroty po stronach winien i ma, ponieważ wpis korygujący tworzy nadmiarowy obrót po obu stronach.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-204">There is a difference between debit turnover and credit turnover, because the reverse entry makes redundant debit and credit turnover.</span></span> <span data-ttu-id="bbfa8-205">Wpis korygujący jest używany w krajach/regionach, gdzie rzadko używa się obrotu.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-205">The reverse entry is used in countries/regions where turnover is rarely use.</span></span> <span data-ttu-id="bbfa8-206">W pozostałych krajach/regionach stosuje się stornowanie.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-206">Other countries/regions use Storno accounting.</span></span>
 
-## <a name="partial-storno"></a>Storno częściowe
-*Storno częściowe* to praktyka księgowa używania ujemnych liczb po stronie winien lub ma, aby odwrócić część oryginalnych zapisów na koncie arkusza. Niektóre kraje/regiony pozwalają na używanie storna częściowego. Na przykład księgowy księguje fakturę od dostawcy na 120 USD. W procesie realizacji płatności okazało się, że księgowy przez pomyłkę wpisał błędny numer kolejny. Oryginalna fakturą na 102 USD ma błąd w numeracji. Używając funkcji storna częściowego, księgowy powinien utworzyć storno na 18 USD. W poniższej tabeli przedstawiono ogólny wpis storna częściowego.
+## <a name="partial-storno"></a><span data-ttu-id="bbfa8-207">Storno częściowe</span><span class="sxs-lookup"><span data-stu-id="bbfa8-207">Partial Storno</span></span>
+<span data-ttu-id="bbfa8-208">*Storno częściowe* to praktyka księgowa używania ujemnych liczb po stronie winien lub ma, aby odwrócić część oryginalnych zapisów na koncie arkusza.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-208">*Partial Storno* is an accounting practice of using negative debit or credit amounts to reverse part of the original journal account entries.</span></span> <span data-ttu-id="bbfa8-209">Niektóre kraje/regiony pozwalają na używanie storna częściowego.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-209">Some countries/regions allow the use the partial Storno.</span></span> <span data-ttu-id="bbfa8-210">Na przykład księgowy księguje fakturę od dostawcy na 120 USD.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-210">For example, a bookkeeper posts an invoice from a vendor for 120 USD.</span></span> <span data-ttu-id="bbfa8-211">W procesie realizacji płatności okazało się, że księgowy przez pomyłkę wpisał błędny numer kolejny.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-211">During the payment process, it's discovered that the bookkeeper mistakenly entered an incorrect number sequence.</span></span> <span data-ttu-id="bbfa8-212">Oryginalna fakturą na 102 USD ma błąd w numeracji.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-212">The original invoice for 102 USD had a mistake in the number sequence.</span></span> <span data-ttu-id="bbfa8-213">Używając funkcji storna częściowego, księgowy powinien utworzyć storno na 18 USD.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-213">Using partial Storno, the bookkeeper should create Storno for 18 USD.</span></span> <span data-ttu-id="bbfa8-214">W poniższej tabeli przedstawiono ogólny wpis storna częściowego.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-214">The following table shows the general entry for partial Storno.</span></span>
 
-| **Identyfikator dokumentu** | **Konto** | **Strona debetowa** | **Strona kredytowa** | **Komentarz**                  |
+| <span data-ttu-id="bbfa8-215">**Identyfikator dokumentu**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-215">**Document ID**</span></span> | <span data-ttu-id="bbfa8-216">**Konto**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-216">**Account**</span></span> | <span data-ttu-id="bbfa8-217">**Strona debetowa**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-217">**Debit**</span></span> | <span data-ttu-id="bbfa8-218">**Strona kredytowa**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-218">**Credit**</span></span> | <span data-ttu-id="bbfa8-219">**Komentarz**</span><span class="sxs-lookup"><span data-stu-id="bbfa8-219">**Comment**</span></span>                  |
 |-----------------|-------------|-----------|------------|------------------------------|
-| Faktura0001     | Konto zakupu   | 120       |            | Oryginalna faktura (błędna) |
-| Faktura0001     | Konto dostawcy  |           | 120        | Oryginalna faktura (błędna) |
+| <span data-ttu-id="bbfa8-220">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="bbfa8-220">Invoice0001</span></span>     | <span data-ttu-id="bbfa8-221">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="bbfa8-221">Purch acc</span></span>   | <span data-ttu-id="bbfa8-222">120</span><span class="sxs-lookup"><span data-stu-id="bbfa8-222">120</span></span>       |            | <span data-ttu-id="bbfa8-223">Oryginalna faktura (błędna)</span><span class="sxs-lookup"><span data-stu-id="bbfa8-223">Original Invoice (incorrect)</span></span> |
+| <span data-ttu-id="bbfa8-224">Faktura0001</span><span class="sxs-lookup"><span data-stu-id="bbfa8-224">Invoice0001</span></span>     | <span data-ttu-id="bbfa8-225">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="bbfa8-225">Vendor acc</span></span>  |           | <span data-ttu-id="bbfa8-226">120</span><span class="sxs-lookup"><span data-stu-id="bbfa8-226">120</span></span>        | <span data-ttu-id="bbfa8-227">Oryginalna faktura (błędna)</span><span class="sxs-lookup"><span data-stu-id="bbfa8-227">Original Invoice (incorrect)</span></span> |
 |                 |             |           |            |                              |
-| Storno0001      | Konto zakupu   | 18\-      |            | Storno częściowe               |
-| Storno0001      | Konto dostawcy  |           | 18\-       | Storno częściowe               |
+| <span data-ttu-id="bbfa8-228">Storno0001</span><span class="sxs-lookup"><span data-stu-id="bbfa8-228">Storno0001</span></span>      | <span data-ttu-id="bbfa8-229">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="bbfa8-229">Purch acc</span></span>   | <span data-ttu-id="bbfa8-230">18\-</span><span class="sxs-lookup"><span data-stu-id="bbfa8-230">\-18</span></span>      |            | <span data-ttu-id="bbfa8-231">Storno częściowe</span><span class="sxs-lookup"><span data-stu-id="bbfa8-231">Partial Storno</span></span>               |
+| <span data-ttu-id="bbfa8-232">Storno0001</span><span class="sxs-lookup"><span data-stu-id="bbfa8-232">Storno0001</span></span>      | <span data-ttu-id="bbfa8-233">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="bbfa8-233">Vendor acc</span></span>  |           | <span data-ttu-id="bbfa8-234">18\-</span><span class="sxs-lookup"><span data-stu-id="bbfa8-234">\-18</span></span>       | <span data-ttu-id="bbfa8-235">Storno częściowe</span><span class="sxs-lookup"><span data-stu-id="bbfa8-235">Partial Storno</span></span>               |
 
-W tym przykładzie saldo wyciągu pokazuje następujące dane.
+<span data-ttu-id="bbfa8-236">W tym przykładzie saldo wyciągu pokazuje następujące dane.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-236">In this example, the balance statement shows the following.</span></span>
 
-| Konto    | Strona debetowa | Strona kredytowa | Bilansowe |
+| <span data-ttu-id="bbfa8-237">Konto</span><span class="sxs-lookup"><span data-stu-id="bbfa8-237">Account</span></span>    | <span data-ttu-id="bbfa8-238">Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="bbfa8-238">Debit</span></span> | <span data-ttu-id="bbfa8-239">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="bbfa8-239">Credit</span></span> | <span data-ttu-id="bbfa8-240">Bilansowe</span><span class="sxs-lookup"><span data-stu-id="bbfa8-240">Balance</span></span> |
 |------------|-------|--------|---------|
-| Konto zakupu  | 102   | 0      | 102     |
-| Konto dostawcy | 0     | 102    | -102    |
+| <span data-ttu-id="bbfa8-241">Konto zakupu</span><span class="sxs-lookup"><span data-stu-id="bbfa8-241">Purch acc</span></span>  | <span data-ttu-id="bbfa8-242">102</span><span class="sxs-lookup"><span data-stu-id="bbfa8-242">102</span></span>   | <span data-ttu-id="bbfa8-243">0</span><span class="sxs-lookup"><span data-stu-id="bbfa8-243">0</span></span>      | <span data-ttu-id="bbfa8-244">102</span><span class="sxs-lookup"><span data-stu-id="bbfa8-244">102</span></span>     |
+| <span data-ttu-id="bbfa8-245">Konto dostawcy</span><span class="sxs-lookup"><span data-stu-id="bbfa8-245">Vendor acc</span></span> | <span data-ttu-id="bbfa8-246">0</span><span class="sxs-lookup"><span data-stu-id="bbfa8-246">0</span></span>     | <span data-ttu-id="bbfa8-247">102</span><span class="sxs-lookup"><span data-stu-id="bbfa8-247">102</span></span>    | <span data-ttu-id="bbfa8-248">-102</span><span class="sxs-lookup"><span data-stu-id="bbfa8-248">-102</span></span>    |
 
-Storno częściowe może powodować problem na oryginalnie drukowanym formularzu. Jeśli istnieje różnica między datą oryginalnego dokumentu a datą storna, może być trudne ustalenie dokładnej kwoty w walucie. W efekcie storno częściowe jest dozwolone tylko w niektórych dokumentach. Program Microsoft Dynamics 365 for Operations zawiera funkcjonalność storna częściowego dla dokumentów i krajów/regionów, gdzie jest ona dozwolona.
+<span data-ttu-id="bbfa8-249">Storno częściowe może powodować problem na oryginalnie drukowanym formularzu.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-249">Partial Storno can create an issue on the Original Print form.</span></span> <span data-ttu-id="bbfa8-250">Jeśli istnieje różnica między datą oryginalnego dokumentu a datą storna, może być trudne ustalenie dokładnej kwoty w walucie.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-250">If there is a difference between the date of the original document and the date of Storno, it can make it difficult to get an accurate currency amount.</span></span> <span data-ttu-id="bbfa8-251">W efekcie storno częściowe jest dozwolone tylko w niektórych dokumentach.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-251">As a result, partial Storno is only allowed for certain documents.</span></span> <span data-ttu-id="bbfa8-252">Program Microsoft Dynamics 365 for Operations zawiera funkcjonalność storna częściowego dla dokumentów i krajów/regionów, gdzie jest ona dozwolona.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-252">Microsoft Dynamics 365 for Operations provides partial Storno functionality for documents and countries/regions where it is allowed.</span></span>
 
-## <a name="how-to-enter-storno-on-journal-lines"></a>Jak wprowadzić storno w wierszach arkusza
-Aby wprowadzić zapis stornujący, wpisz kwotę po stronie winien lub ma ze znakiem minusa w wierszu arkusza. Wartość w polu **Korekta** jest ustawiana w trakcie procesu księgowania. 
+## <a name="how-to-enter-storno-on-journal-lines"></a><span data-ttu-id="bbfa8-253">Jak wprowadzić storno w wierszach arkusza</span><span class="sxs-lookup"><span data-stu-id="bbfa8-253">How to enter Storno on journal lines</span></span>
+<span data-ttu-id="bbfa8-254">Aby wprowadzić zapis stornujący, wpisz kwotę po stronie winien lub ma ze znakiem minusa w wierszu arkusza.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-254">Enter the debit or credit amount with a negative sign on the journal line to make a Storno entry.</span></span> <span data-ttu-id="bbfa8-255">Wartość w polu **Korekta** jest ustawiana w trakcie procesu księgowania.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-255">The **Correction** field is set during the posting process.</span></span> 
 
-## <a name="how-storno-is-displayed"></a>Sposób wyświetlania storna
-Program Dynamics 365 for Operations traktuje ujemne kwoty arkuszy w szczególny sposób. Wpis arkusza finansowego, transakcja odbiorcy, transakcja dostawcy i inne typy transakcji zawierają funkcję storna, jak pokazano poniżej.
+## <a name="how-storno-is-displayed"></a><span data-ttu-id="bbfa8-256">Sposób wyświetlania storna</span><span class="sxs-lookup"><span data-stu-id="bbfa8-256">How Storno is displayed</span></span>
+<span data-ttu-id="bbfa8-257">Program Dynamics 365 for Operations traktuje ujemne kwoty arkuszy w szczególny sposób.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-257">Dynamics 365 for Operations handles negative journal amounts in a special way.</span></span> <span data-ttu-id="bbfa8-258">Wpis arkusza finansowego, transakcja odbiorcy, transakcja dostawcy i inne typy transakcji zawierają funkcję storna, jak pokazano poniżej.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-258">The general journal entry, customer transaction, vendor transaction, and other transactions provide a Storno function, as shown below.</span></span>
 
 <table>
 <thead>
 <tr class="row-1">
-<th class="column-1" rowspan="2">Dane wprowadzone przez użytkownika w wierszu arkusza</th>
-<th class="column-2" colspan="2">Zasada przechowywania</th>
-<th class="column-4" colspan="2">Reguła wyświetlania</th>
-<th class="column-6" colspan="3">Wpływ na sprawozdanie</th>
+<th class="column-1" rowspan="2"><span data-ttu-id="bbfa8-259">Dane wprowadzone przez użytkownika w wierszu arkusza</span><span class="sxs-lookup"><span data-stu-id="bbfa8-259">User input at journal line</span></span></th>
+<th class="column-2" colspan="2"><span data-ttu-id="bbfa8-260">Zasada przechowywania</span><span class="sxs-lookup"><span data-stu-id="bbfa8-260">Storage principle</span></span></th>
+<th class="column-4" colspan="2"><span data-ttu-id="bbfa8-261">Reguła wyświetlania</span><span class="sxs-lookup"><span data-stu-id="bbfa8-261">Display principle</span></span></th>
+<th class="column-6" colspan="3"><span data-ttu-id="bbfa8-262">Wpływ na sprawozdanie</span><span class="sxs-lookup"><span data-stu-id="bbfa8-262">Impact to the Statement report</span></span></th>
 </tr>
 <tr class="row-1">
-<th class="column-2">Pole korekty</th>
-<th class="column-3">Pole kwoty</th>
-<th class="column-4">Kwota w walucie transakcji</th>
-<th class="column-5">Ilość</th>
-<th class="column-6">Kolumna Winien</th>
-<th class="column-7">Kolumna Ma</th>
-<th class="column-8">Kolumna salda</th>
+<th class="column-2"><span data-ttu-id="bbfa8-263">Pole korekty</span><span class="sxs-lookup"><span data-stu-id="bbfa8-263">Correction field</span></span></th>
+<th class="column-3"><span data-ttu-id="bbfa8-264">Pole kwoty</span><span class="sxs-lookup"><span data-stu-id="bbfa8-264">Amount field</span></span></th>
+<th class="column-4"><span data-ttu-id="bbfa8-265">Kwota w walucie transakcji</span><span class="sxs-lookup"><span data-stu-id="bbfa8-265">Amount in transaction currency</span></span></th>
+<th class="column-5"><span data-ttu-id="bbfa8-266">Ilość</span><span class="sxs-lookup"><span data-stu-id="bbfa8-266">Amount</span></span></th>
+<th class="column-6"><span data-ttu-id="bbfa8-267">Kolumna Winien</span><span class="sxs-lookup"><span data-stu-id="bbfa8-267">Debit column</span></span></th>
+<th class="column-7"><span data-ttu-id="bbfa8-268">Kolumna Ma</span><span class="sxs-lookup"><span data-stu-id="bbfa8-268">Credit column</span></span></th>
+<th class="column-8"><span data-ttu-id="bbfa8-269">Kolumna salda</span><span class="sxs-lookup"><span data-stu-id="bbfa8-269">Balance column</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-2">
-<td class="column-1"> Strona debetowa</td>
-<td class="column-2">Nr</td>
-<td class="column-3">0&gt;</td>
-<td class="column-4" align="right">Ilość</td>
-<td class="column-5" align="right">Ilość</td>
-<td class="column-6">Zwiększa</td>
+<td class="column-1"> <span data-ttu-id="bbfa8-270">Strona debetowa</span><span class="sxs-lookup"><span data-stu-id="bbfa8-270">Debit</span></span></td>
+<td class="column-2"><span data-ttu-id="bbfa8-271">Nr</span><span class="sxs-lookup"><span data-stu-id="bbfa8-271">No</span></span></td>
+<td class="column-3"><span data-ttu-id="bbfa8-272">0&gt;</span><span class="sxs-lookup"><span data-stu-id="bbfa8-272">&gt;0</span></span></td>
+<td class="column-4" align="right"><span data-ttu-id="bbfa8-273">Ilość</span><span class="sxs-lookup"><span data-stu-id="bbfa8-273">Amount</span></span></td>
+<td class="column-5" align="right"><span data-ttu-id="bbfa8-274">Ilość</span><span class="sxs-lookup"><span data-stu-id="bbfa8-274">Amount</span></span></td>
+<td class="column-6"><span data-ttu-id="bbfa8-275">Zwiększa</span><span class="sxs-lookup"><span data-stu-id="bbfa8-275">Increases</span></span></td>
 <td class="column-7"></td>
-<td class="column-8">Zwiększa</td>
+<td class="column-8"><span data-ttu-id="bbfa8-276">Zwiększa</span><span class="sxs-lookup"><span data-stu-id="bbfa8-276">Increases</span></span></td>
 </tr>
 <tr class="row-3">
-<td class="column-1"> Strona kredytowa</td>
-<td class="column-2">Nr</td>
-<td class="column-3">0&lt;</td>
-<td class="column-4" align="right">-Kwota</td>
-<td class="column-5" align="right">Ilość</td>
+<td class="column-1"> <span data-ttu-id="bbfa8-277">Strona kredytowa</span><span class="sxs-lookup"><span data-stu-id="bbfa8-277">Credit</span></span></td>
+<td class="column-2"><span data-ttu-id="bbfa8-278">Nr</span><span class="sxs-lookup"><span data-stu-id="bbfa8-278">No</span></span></td>
+<td class="column-3"><span data-ttu-id="bbfa8-279">0&lt;</span><span class="sxs-lookup"><span data-stu-id="bbfa8-279">&lt;0</span></span></td>
+<td class="column-4" align="right"><span data-ttu-id="bbfa8-280">-Kwota</span><span class="sxs-lookup"><span data-stu-id="bbfa8-280">-Amount</span></span></td>
+<td class="column-5" align="right"><span data-ttu-id="bbfa8-281">Ilość</span><span class="sxs-lookup"><span data-stu-id="bbfa8-281">Amount</span></span></td>
 <td class="column-6"></td>
-<td class="column-7">Zwiększa</td>
-<td class="column-8">Zmniejsza</td>
+<td class="column-7"><span data-ttu-id="bbfa8-282">Zwiększa</span><span class="sxs-lookup"><span data-stu-id="bbfa8-282">Increases</span></span></td>
+<td class="column-8"><span data-ttu-id="bbfa8-283">Zmniejsza</span><span class="sxs-lookup"><span data-stu-id="bbfa8-283">Decreases</span></span></td>
 </tr>
 <tr class="row-4">
-<td class="column-1">-Winien</td>
-<td class="column-2">Tak</td>
-<td class="column-3">0&gt;</td>
-<td class="column-4" align="right">+Kwota</td>
-<td class="column-5" align="right">-Kwota</td>
-<td class="column-6">Zmniejsza</td>
+<td class="column-1"><span data-ttu-id="bbfa8-284">-Winien</span><span class="sxs-lookup"><span data-stu-id="bbfa8-284">-Debit</span></span></td>
+<td class="column-2"><span data-ttu-id="bbfa8-285">Tak</span><span class="sxs-lookup"><span data-stu-id="bbfa8-285">Yes</span></span></td>
+<td class="column-3"><span data-ttu-id="bbfa8-286">0&gt;</span><span class="sxs-lookup"><span data-stu-id="bbfa8-286">&gt;0</span></span></td>
+<td class="column-4" align="right"><span data-ttu-id="bbfa8-287">+Kwota</span><span class="sxs-lookup"><span data-stu-id="bbfa8-287">+Amount</span></span></td>
+<td class="column-5" align="right"><span data-ttu-id="bbfa8-288">-Kwota</span><span class="sxs-lookup"><span data-stu-id="bbfa8-288">-Amount</span></span></td>
+<td class="column-6"><span data-ttu-id="bbfa8-289">Zmniejsza</span><span class="sxs-lookup"><span data-stu-id="bbfa8-289">Decreases</span></span></td>
 <td class="column-7"></td>
-<td class="column-8">Zwiększa</td>
+<td class="column-8"><span data-ttu-id="bbfa8-290">Zwiększa</span><span class="sxs-lookup"><span data-stu-id="bbfa8-290">Increases</span></span></td>
 </tr>
 <tr class="row-5">
-<td class="column-1">-Ma</td>
-<td class="column-2">Tak</td>
-<td class="column-3">0&lt;</td>
-<td class="column-4" align="right">-Kwota</td>
-<td class="column-5" align="right">-Kwota</td>
+<td class="column-1"><span data-ttu-id="bbfa8-291">-Ma</span><span class="sxs-lookup"><span data-stu-id="bbfa8-291">-Credit</span></span></td>
+<td class="column-2"><span data-ttu-id="bbfa8-292">Tak</span><span class="sxs-lookup"><span data-stu-id="bbfa8-292">Yes</span></span></td>
+<td class="column-3"><span data-ttu-id="bbfa8-293">0&lt;</span><span class="sxs-lookup"><span data-stu-id="bbfa8-293">&lt;0</span></span></td>
+<td class="column-4" align="right"><span data-ttu-id="bbfa8-294">-Kwota</span><span class="sxs-lookup"><span data-stu-id="bbfa8-294">-Amount</span></span></td>
+<td class="column-5" align="right"><span data-ttu-id="bbfa8-295">-Kwota</span><span class="sxs-lookup"><span data-stu-id="bbfa8-295">-Amount</span></span></td>
 <td class="column-6"></td>
-<td class="column-7">Zmniejsza</td>
-<td class="column-8">Zmniejsza</td>
+<td class="column-7"><span data-ttu-id="bbfa8-296">Zmniejsza</span><span class="sxs-lookup"><span data-stu-id="bbfa8-296">Decreases</span></span></td>
+<td class="column-8"><span data-ttu-id="bbfa8-297">Zmniejsza</span><span class="sxs-lookup"><span data-stu-id="bbfa8-297">Decreases</span></span></td>
 </tr>
 </tbody>
 </table>
 
-Można dostosować wyświetlanie storna w formularzach, siatkach, kolumnach i polach. Na przykład można wyłączyć wyświetlanie znaku lub zmienić dopełnianie dla kwot ujemnych. Można również używać pola **Korekta** ze wszystkimi ustawieniami wyświetlania. Jeśli pole **Korekta** ma ustawioną wartość „tak”, jest zapisem stornującym.
+<span data-ttu-id="bbfa8-298">Można dostosować wyświetlanie storna w formularzach, siatkach, kolumnach i polach.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-298">You can customize the display of Storno in forms, grids, columns, and fields.</span></span> <span data-ttu-id="bbfa8-299">Na przykład można wyłączyć wyświetlanie znaku lub zmienić dopełnianie dla kwot ujemnych.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-299">For example, you can turn off sign display or change padding for negative amounts.</span></span> <span data-ttu-id="bbfa8-300">Można również używać pola **Korekta** ze wszystkimi ustawieniami wyświetlania. Jeśli pole **Korekta** ma ustawioną wartość „tak”, jest zapisem stornującym.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-300">You can also use the **Correction** field with all display settings, if the **Correction** field has ‘Yes’, then it is a Storno entry.</span></span>
 
 ![Kwoty storna we wpisach w arkuszu](./media/journal-storno.png)
 
-## <a name="how-documents-create-storno"></a>Jak dokumenty tworzą storna
-Niektóre dokumenty powodują tworzenie transakcji anulowania. Na przykład przeszacowania w walucie obcej dla dokumentów księgi głównej, rozrachunków z dostawcami i rozrachunków z odbiorcami powodują anulowanie niezrealizowanych dodatnich i ujemnych różnic kursowych. Aby uzyskać więcej informacji, zobacz [Przeszacowanie w walucie obcej dla księgi głównej](../general-ledger/foreign-currency-revaluation-general-ledger.md) lub [Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Po utworzeniu transakcji anulowania zostaną utworzone nowe transakcje z niezrealizowanymi dodatnimi i ujemnymi różnicami kursowymi. Transakcje anulowania są również tworzone dla zapasów. Aby uzyskać więcej informacji, zobacz [Zamknięcie zapasów](/dynamics365/unified-operations/supply-chain/cost-management/inventory-close). Istnieją dokumenty pozwalające anulować uprzednio zaksięgowany dokument. Na przykład użytkownik może utworzyć fakturę korygującą w celu anulowania uprzednio utworzonej faktury. Do tworzenia transakcji storna lub wycofania dokumenty wykorzystują określone parametry. Na przykład przeszacowanie w walucie obcej tworzy transakcje wycofania lub storna przy użyciu parametru korekty księgi głównej. Faktura korygująca dla odbiorcy tworzy transakcję wycofania lub storna przy użyciu parametru korekty na fakturze korygującej dostępnego w module rozrachunków z odbiorcami.
+## <a name="how-documents-create-storno"></a><span data-ttu-id="bbfa8-302">Jak dokumenty tworzą storna</span><span class="sxs-lookup"><span data-stu-id="bbfa8-302">How documents create Storno</span></span>
+<span data-ttu-id="bbfa8-303">Niektóre dokumenty powodują tworzenie transakcji anulowania.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-303">Certain documents create cancellation transactions.</span></span> <span data-ttu-id="bbfa8-304">Na przykład przeszacowania w walucie obcej dla dokumentów księgi głównej, rozrachunków z dostawcami i rozrachunków z odbiorcami powodują anulowanie niezrealizowanych dodatnich i ujemnych różnic kursowych.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-304">For example, the foreign currency revaluation for general ledger, accounts payable, and accounts receivable documents cancel unrealized gain and loss.</span></span> <span data-ttu-id="bbfa8-305">Aby uzyskać więcej informacji, zobacz [Przeszacowanie w walucie obcej dla księgi głównej](../general-ledger/foreign-currency-revaluation-general-ledger.md) lub [Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md).</span><span class="sxs-lookup"><span data-stu-id="bbfa8-305">For more details, see [Foreign currency revaluation for General Ledger](../general-ledger/foreign-currency-revaluation-general-ledger.md) or [Accounts payable and Accounts receivable](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md).</span></span> <span data-ttu-id="bbfa8-306">Po utworzeniu transakcji anulowania zostaną utworzone nowe transakcje z niezrealizowanymi dodatnimi i ujemnymi różnicami kursowymi.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-306">After a cancellation transaction is created, new transactions will be created with unrealized gain and loss.</span></span> <span data-ttu-id="bbfa8-307">Transakcje anulowania są również tworzone dla zapasów.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-307">Cancellation transactions are also created for inventory.</span></span> <span data-ttu-id="bbfa8-308">Aby uzyskać więcej informacji, zobacz [Zamknięcie zapasów](/dynamics365/unified-operations/supply-chain/cost-management/inventory-close).</span><span class="sxs-lookup"><span data-stu-id="bbfa8-308">For more information, see [Inventory close](/dynamics365/unified-operations/supply-chain/cost-management/inventory-close).</span></span> <span data-ttu-id="bbfa8-309">Istnieją dokumenty pozwalające anulować uprzednio zaksięgowany dokument.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-309">There are documents that allow you to cancel the previously posted document.</span></span> <span data-ttu-id="bbfa8-310">Na przykład użytkownik może utworzyć fakturę korygującą w celu anulowania uprzednio utworzonej faktury.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-310">For example, the User can create a Credit Note to cancel a previously created Invoice.</span></span> <span data-ttu-id="bbfa8-311">Do tworzenia transakcji storna lub wycofania dokumenty wykorzystują określone parametry.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-311">Documents use specific parameters to create reverse or Storno transactions.</span></span> <span data-ttu-id="bbfa8-312">Na przykład przeszacowanie w walucie obcej tworzy transakcje wycofania lub storna przy użyciu parametru korekty księgi głównej.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-312">For example, the foreign currency revaluation creates reverse or Storno transactions based on the general ledger correction parameter.</span></span> <span data-ttu-id="bbfa8-313">Faktura korygująca dla odbiorcy tworzy transakcję wycofania lub storna przy użyciu parametru korekty na fakturze korygującej dostępnego w module rozrachunków z odbiorcami.</span><span class="sxs-lookup"><span data-stu-id="bbfa8-313">The customer credit note creates reverse or Storno transactions based on the accounts receivable credit note correction parameter.</span></span>
 
 

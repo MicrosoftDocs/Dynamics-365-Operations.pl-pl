@@ -16,34 +16,34 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: f07e640d4b2a7f67d48df4c081819a55e7e68cda
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e319c9d11ccc4311437ce1e74d4f6c8be0e0de35
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="run-a-report-that-uses-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>Uruchamianie raportu, w którym wymiary finansowe są używane jako źródła danych na potrzeby raportowania elektronicznego (ER)
+# <a name="run-a-report-that-uses-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a><span data-ttu-id="df983-103">Uruchamianie raportu, w którym wymiary finansowe są używane jako źródła danych na potrzeby raportowania elektronicznego (ER)</span><span class="sxs-lookup"><span data-stu-id="df983-103">Run a report that uses financial dimensions as a data source for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować model raportowania elektronicznego (ER), aby używał on wymiarów finansowych jako źródła danych w raportach ER. Kroki można wykonać na danych firmy DEMF.
+<span data-ttu-id="df983-104">W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować model raportowania elektronicznego (ER), aby używał on wymiarów finansowych jako źródła danych w raportach ER.</span><span class="sxs-lookup"><span data-stu-id="df983-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports.</span></span> <span data-ttu-id="df983-105">Kroki można wykonać na danych firmy DEMF.</span><span class="sxs-lookup"><span data-stu-id="df983-105">These steps can be performed in the DEMF company.</span></span>
 
-Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używanie wymiarów finansowych jako źródła danych (Część 3: Projektowanie raportu)”. Należy także skonfigurować domyślne typy dokumentów na stronie Parametry raportowania elektronicznego. Domyślne typy dokumentów również są ustawiane podczas pobierania i importowania każdej konfiguracji raportowania elektronicznego. 
+<span data-ttu-id="df983-106">Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używanie wymiarów finansowych jako źródła danych (Część 3: Projektowanie raportu)”.</span><span class="sxs-lookup"><span data-stu-id="df983-106">To complete these steps, you must first complete the steps in the “ER Use financial dimensions as a data source (Part 3: Design the report)” procedure.</span></span> <span data-ttu-id="df983-107">Należy także skonfigurować domyślne typy dokumentów na stronie Parametry raportowania elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="df983-107">You must also configure default document types on the Electronic reporting parameters page.</span></span> <span data-ttu-id="df983-108">Domyślne typy dokumentów również są ustawiane podczas pobierania i importowania każdej konfiguracji raportowania elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="df983-108">Default document types are also set when you download and import any ER configuration.</span></span> 
 
 
-## <a name="run-report"></a>Generowanie raportu
-1. Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Konfiguracje.
-2. W drzewie rozwiń węzeł „Wymiany finansowe przykładowego modelu”.
-3. W drzewie zaznacz element „Wymiany finansowe przykładowego modelu\Raport arkusza księgi”.
-4. Kliknij przycisk Uruchom.
-5. W polu Nazwa wymiaru wprowadź lub wybierz wartość.
-    * Aby zaznaczyć wszystkie wymiary w bieżącej firmie, wprowadź następujące wyrażenie: BusinessUnit;CostCenter;Dział;ItemGroup;MainAccount;Projekt  
-6. Rozwiń sekcję Rekordy do uwzględnienia.
-7. Kliknij przycisk Filtr.
-8. Zaznacz wiersz z tabelą Arkusz księgi i polem Arkusz z numerem partii.
-9. W polu Kryteria wpisz wartość „00057”.
-10. Kliknij przycisk OK.
-11. Kliknij przycisk OK.
-    * Przejrzyj wygenerowane dane wyjściowe. Należy zauważyć, że dla każdej transakcji wybranej partii są przedstawiane wymiary finansowe z odpowiedniego zestawu wymiarów. Uruchom ten raport i wybierz inne wymiary, a zobaczysz, że raport nie jest zależny od liczby wybranych wymiarów ani liczby wymiarów skonfigurowanych dla tego wystąpienia programu Dynamics 365 for Finance and Operations Enterprise Edition.  
+## <a name="run-report"></a><span data-ttu-id="df983-109">Generowanie raportu</span><span class="sxs-lookup"><span data-stu-id="df983-109">Run report</span></span>
+1. <span data-ttu-id="df983-110">Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Konfiguracje.</span><span class="sxs-lookup"><span data-stu-id="df983-110">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="df983-111">W drzewie rozwiń węzeł „Wymiany finansowe przykładowego modelu”.</span><span class="sxs-lookup"><span data-stu-id="df983-111">In the tree, expand 'Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="df983-112">W drzewie zaznacz element „Wymiany finansowe przykładowego modelu\Raport arkusza księgi”.</span><span class="sxs-lookup"><span data-stu-id="df983-112">In the tree, select 'Financial dimensions sample model\Ledger journal report'.</span></span>
+4. <span data-ttu-id="df983-113">Kliknij przycisk Uruchom.</span><span class="sxs-lookup"><span data-stu-id="df983-113">Click Run.</span></span>
+5. <span data-ttu-id="df983-114">W polu Nazwa wymiaru wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="df983-114">In the Dimension name field, In the Dimension name field, enter or select a value..</span></span>
+    * <span data-ttu-id="df983-115">Aby zaznaczyć wszystkie wymiary w bieżącej firmie, wprowadź następujące wyrażenie: BusinessUnit;CostCenter;Dział;ItemGroup;MainAccount;Projekt</span><span class="sxs-lookup"><span data-stu-id="df983-115">To select all dimensions in the current company, enter the following:  BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project</span></span>  
+6. <span data-ttu-id="df983-116">Rozwiń sekcję Rekordy do uwzględnienia.</span><span class="sxs-lookup"><span data-stu-id="df983-116">Expand the Records to include section.</span></span>
+7. <span data-ttu-id="df983-117">Kliknij przycisk Filtr.</span><span class="sxs-lookup"><span data-stu-id="df983-117">Click Filter.</span></span>
+8. <span data-ttu-id="df983-118">Zaznacz wiersz z tabelą Arkusz księgi i polem Arkusz z numerem partii.</span><span class="sxs-lookup"><span data-stu-id="df983-118">Select the row for the Ledger journal table and the Journal batch number field.</span></span>
+9. <span data-ttu-id="df983-119">W polu Kryteria wpisz wartość „00057”.</span><span class="sxs-lookup"><span data-stu-id="df983-119">In the Criteria field, type '00057'.</span></span>
+10. <span data-ttu-id="df983-120">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="df983-120">Click OK.</span></span>
+11. <span data-ttu-id="df983-121">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="df983-121">Click OK.</span></span>
+    * <span data-ttu-id="df983-122">Przejrzyj wygenerowane dane wyjściowe.</span><span class="sxs-lookup"><span data-stu-id="df983-122">Review the generated output.</span></span> <span data-ttu-id="df983-123">Należy zauważyć, że dla każdej transakcji wybranej partii są przedstawiane wymiary finansowe z odpowiedniego zestawu wymiarów.</span><span class="sxs-lookup"><span data-stu-id="df983-123">Note that for each transaction of the selected batch, the financial dimensions from the corresponding dimensions set are presented.</span></span> <span data-ttu-id="df983-124">Uruchom ten raport i wybierz inne wymiary, a zobaczysz, że raport nie jest zależny od liczby wybranych wymiarów ani liczby wymiarów skonfigurowanych dla tego wystąpienia programu Dynamics 365 for Finance and Operations Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="df983-124">Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this Dynamics 365 for Finance and Operations, Enterprise edition instance.</span></span>  
 
 

@@ -16,32 +16,32 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 52d502a53deb6defa619af4ca8cdc3158e086bae
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 71c0175178203006e297466c4a37cd3e6319b6ea
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="import-iso20022-credit-transfer-configuration"></a>Importowanie konfiguracji polecenia przelewu ISO20022
+# <a name="import-iso20022-credit-transfer-configuration"></a><span data-ttu-id="106c0-103">Importowanie konfiguracji polecenia przelewu ISO20022</span><span class="sxs-lookup"><span data-stu-id="106c0-103">Import ISO20022 credit transfer configuration</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób importowania konfiguracji raportowania elektronicznego płatności dla dostawcy. Jako przykładu użyto niemieckiego formatu poleceń przelewu zgodnego z normą ISO 20022. Procedura może być używana do innych dostępnych formatów raportowania elektronicznego. 
+<span data-ttu-id="106c0-104">W tej procedurze pokazano sposób importowania konfiguracji raportowania elektronicznego płatności dla dostawcy.</span><span class="sxs-lookup"><span data-stu-id="106c0-104">This procedure shows how to import a vendor payment electronic reporting configuration.</span></span> <span data-ttu-id="106c0-105">Jako przykładu użyto niemieckiego formatu poleceń przelewu zgodnego z normą ISO 20022.</span><span class="sxs-lookup"><span data-stu-id="106c0-105">The German ISO 20022 credit transfer format is used as an example.</span></span> <span data-ttu-id="106c0-106">Procedura może być używana do innych dostępnych formatów raportowania elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="106c0-106">This procedure can be used for other available electronic reporting format.</span></span> 
 
-Zadanie zostało utworzone przy użyciu danych firmy demonstracyjnej DEMF, ale do wykonania zadania można użyć danych dowolnej firmy demonstracyjnej.
+<span data-ttu-id="106c0-107">Zadanie zostało utworzone przy użyciu danych firmy demonstracyjnej DEMF, ale do wykonania zadania można użyć danych dowolnej firmy demonstracyjnej.</span><span class="sxs-lookup"><span data-stu-id="106c0-107">This task was created using the demo data company DEMF but you can use any demo data company to complete this task.</span></span>
 
-Jest to pierwsze z pięciu zadań, które razem ilustrują proces płatności dostawcom przy użyciu konfiguracji raportowania elektronicznego. Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.
+<span data-ttu-id="106c0-108">Jest to pierwsze z pięciu zadań, które razem ilustrują proces płatności dostawcom przy użyciu konfiguracji raportowania elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="106c0-108">This is the first of five tasks, that together illustrate the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="106c0-109">Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.</span><span class="sxs-lookup"><span data-stu-id="106c0-109">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
-1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.
-2. Na liście dostępnych dostawców konfiguracji zaznacz pozycję Microsoft.
-3. Kliknij opcję Ustaw jako aktywny.
-4. Kliknij Repozytoria.
-5. Kliknij przycisk Otwórz.
-6. Kliknij przycisk Pokaż filtry.
-7. Zastosuj następujące filtry: w polu „Nazwa konfiguracji” wprowadź wartość filtru „Polecenie przelewu ISO20022 (Niemcy)”, używając operatora filtru „zaczyna się od”.
-    * Alternatywnie można poszukać konfiguracji na liście, zaznaczyć ją, a następnie przenieść do zadania importu.  
-8. Kliknij przycisk Importuj.
-    * Jeśli przycisk Importuj nie jest dostępny, oznacza to, że konfiguracja została już zaimportowana.  
-9. Kliknij przycisk Tak.
+1. <span data-ttu-id="106c0-110">Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.</span><span class="sxs-lookup"><span data-stu-id="106c0-110">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="106c0-111">Na liście dostępnych dostawców konfiguracji zaznacz pozycję Microsoft.</span><span class="sxs-lookup"><span data-stu-id="106c0-111">In the list of available configuration providers, select Microsoft.</span></span>
+3. <span data-ttu-id="106c0-112">Kliknij opcję Ustaw jako aktywny.</span><span class="sxs-lookup"><span data-stu-id="106c0-112">Click Set active.</span></span>
+4. <span data-ttu-id="106c0-113">Kliknij Repozytoria.</span><span class="sxs-lookup"><span data-stu-id="106c0-113">Click Repositories.</span></span>
+5. <span data-ttu-id="106c0-114">Kliknij przycisk Otwórz.</span><span class="sxs-lookup"><span data-stu-id="106c0-114">Click Open.</span></span>
+6. <span data-ttu-id="106c0-115">Kliknij przycisk Pokaż filtry.</span><span class="sxs-lookup"><span data-stu-id="106c0-115">Click Show filters.</span></span>
+7. <span data-ttu-id="106c0-116">Zastosuj następujące filtry: w polu „Nazwa konfiguracji” wprowadź wartość filtru „Polecenie przelewu ISO20022 (Niemcy)”, używając operatora filtru „zaczyna się od”.</span><span class="sxs-lookup"><span data-stu-id="106c0-116">Apply the following filters: Enter a filter value of "ISO20022 Credit transfer (DE)" on the "Configuration name" field using the "begins with" filter operator</span></span>
+    * <span data-ttu-id="106c0-117">Alternatywnie można poszukać konfiguracji na liście, zaznaczyć ją, a następnie przenieść do zadania importu.</span><span class="sxs-lookup"><span data-stu-id="106c0-117">Alternatively, you can find the configuration in the list, select it, and then move it to the Import task.</span></span>  
+8. <span data-ttu-id="106c0-118">Kliknij przycisk Importuj.</span><span class="sxs-lookup"><span data-stu-id="106c0-118">Click Import.</span></span>
+    * <span data-ttu-id="106c0-119">Jeśli przycisk Importuj nie jest dostępny, oznacza to, że konfiguracja została już zaimportowana.</span><span class="sxs-lookup"><span data-stu-id="106c0-119">If the Import button is not available, it means that the configuration has  already been imported.</span></span>  
+9. <span data-ttu-id="106c0-120">Kliknij przycisk Tak.</span><span class="sxs-lookup"><span data-stu-id="106c0-120">Click Yes.</span></span>
 
 

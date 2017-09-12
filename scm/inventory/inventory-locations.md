@@ -1,7 +1,7 @@
 ---
 title: Magazyny
 description: "Lokalizacje w magazynach są używane w podstawowym module zarządzania magazynem (WMS I) do ustalania, gdzie towary będą przechowywane i skąd będą pobierane w magazynie zarządzanym w ramach WMS I."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,66 +10,62 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WMSLocation
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2134
 ms.assetid: 69bf6922-4151-447f-b678-4ba95637f54c
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 95d93c9d471cc86877f35340693c171958db71df
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 22f4d0c93b0fccdb5439998a68add7b7e0e7750b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
-# <a name="inventory-locations"></a>Magazyny
+# <a name="inventory-locations"></a><span data-ttu-id="735f1-103">Magazyny</span><span class="sxs-lookup"><span data-stu-id="735f1-103">Inventory locations</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Lokalizacje w magazynach są używane w podstawowym module zarządzania magazynem (WMS I) do ustalania, gdzie towary będą przechowywane i skąd będą pobierane w magazynie zarządzanym w ramach WMS I.
+<span data-ttu-id="735f1-104">Lokalizacje w magazynach są używane w podstawowym module zarządzania magazynem (WMS I) do ustalania, gdzie towary będą przechowywane i skąd będą pobierane w magazynie zarządzanym w ramach WMS I.</span><span class="sxs-lookup"><span data-stu-id="735f1-104">Inventory locations are used with basic warehousing (WMS I) to determine where items are stored and where items are picked from in a WMS I warehouse.</span></span>
 
-Ten temat dotyczy funkcji w module Zarządzanie zapasami. Nie ma zastosowania do funkcji w module Zarządzanie magazynem.
+<span data-ttu-id="735f1-105">Ten temat dotyczy funkcji w module Zarządzanie zapasami.</span><span class="sxs-lookup"><span data-stu-id="735f1-105">This topic applies to features in the Inventory management module.</span></span> <span data-ttu-id="735f1-106">Nie ma zastosowania do funkcji w module Zarządzanie magazynem.</span><span class="sxs-lookup"><span data-stu-id="735f1-106">It does not apply to features in the Warehouse management module.</span></span>
 
-Termin lokalizacja dotyczy miejsca, w którym towary są przechowywane i z którego są wyjmowane.
+<span data-ttu-id="735f1-107">Termin lokalizacja dotyczy miejsca, w którym towary są przechowywane i z którego są wyjmowane.</span><span class="sxs-lookup"><span data-stu-id="735f1-107">The term location refers to the place that items are stored and drawn from.</span></span>
 
-Dla każdej lokalizacji można także określić miejsce, w którym jest wkładany towar. Domyślnie te miejsca są identyczne. Zazwyczaj towary są wkładane i wyjmowane po tej samej stronie lokalizacji, jednak ta zasada nie zawsze obowiązuje. Na przykład towary przechowywane na ruchomych regałach są wkładane z jednego korytarza, a wyjmowane z drugiego. Głównego wprowadzenia dokonuje się przez nazwę lokalizacji, która jest zwykle określana na podstawie jej współrzędnych: magazyn, korytarz, regał, półka i pojemnik. Tę nazwę lub identyfikator można wprowadzać ręcznie lub generować na podstawie współrzędnych lokalizacji — na przykład 01-02-03-4 oznacza korytarz 1, regał 2, półkę 3 i pojemnik 4 na stronie Magazyny.
-Właściwości lokalizacji
--------------------
+<span data-ttu-id="735f1-108">Dla każdej lokalizacji można także określić miejsce, w którym jest wkładany towar.</span><span class="sxs-lookup"><span data-stu-id="735f1-108">For each location, the place where the item is inserted can also be specified.</span></span> <span data-ttu-id="735f1-109">Domyślnie te miejsca są identyczne.</span><span class="sxs-lookup"><span data-stu-id="735f1-109">By default, they are the same.</span></span> <span data-ttu-id="735f1-110">Zazwyczaj towary są wkładane i wyjmowane po tej samej stronie lokalizacji, jednak ta zasada nie zawsze obowiązuje.</span><span class="sxs-lookup"><span data-stu-id="735f1-110">Items are usually inserted and drawn from the same side of a location, but not always.</span></span> <span data-ttu-id="735f1-111">Na przykład towary przechowywane na ruchomych regałach są wkładane z jednego korytarza, a wyjmowane z drugiego.</span><span class="sxs-lookup"><span data-stu-id="735f1-111">For example, items that are stored in live storage racks are inserted from one aisle and drawn from another.</span></span> <span data-ttu-id="735f1-112">Głównego wprowadzenia dokonuje się przez nazwę lokalizacji, która jest zwykle określana na podstawie jej współrzędnych: magazyn, korytarz, regał, półka i pojemnik.</span><span class="sxs-lookup"><span data-stu-id="735f1-112">The main input is given by a location name, which is usually determined by its coordinates: warehouse, aisle, rack, shelf, and bin.</span></span> <span data-ttu-id="735f1-113">Tę nazwę lub identyfikator można wprowadzać ręcznie lub generować na podstawie współrzędnych lokalizacji — na przykład 01-02-03-4 oznacza korytarz 1, regał 2, półkę 3 i pojemnik 4 na stronie Magazyny.</span><span class="sxs-lookup"><span data-stu-id="735f1-113">This name or ID can be entered manually or generated from the location coordinates—for example, 01-02-03-4 for aisle 1, rack 2, shelf 3, bin 4 in the Inventory locations page.</span></span>
+<span data-ttu-id="735f1-114">Właściwości lokalizacji</span><span class="sxs-lookup"><span data-stu-id="735f1-114">Location properties</span></span>
 
-Lokalizacja ma następujące właściwości:
--   Rozmiar (wysokość, szerokość, głębokość, a przez to objętość)
--   Magazyn, korytarz, regał, półka oraz pojemnik.
--   Typ lokalizacji (lokalizacja zbiorcza, lokalizacji pobrania, dok rozładunkowy, dok załadunkowy, lokalizacja przyjęcia z produkcji, lokalizacja inspekcji lub supermarket kanban)
+<span data-ttu-id="735f1-115">Lokalizacja ma następujące właściwości:</span><span class="sxs-lookup"><span data-stu-id="735f1-115">A location has the following characteristics:</span></span>
+-   <span data-ttu-id="735f1-116">Rozmiar (wysokość, szerokość, głębokość, a przez to objętość)</span><span class="sxs-lookup"><span data-stu-id="735f1-116">Size (height, width, depth, and thereby volume)</span></span>
+-   <span data-ttu-id="735f1-117">Magazyn, korytarz, regał, półka oraz pojemnik.</span><span class="sxs-lookup"><span data-stu-id="735f1-117">Warehouse, aisle, rack, shelf, and bin position</span></span>
+-   <span data-ttu-id="735f1-118">Typ lokalizacji (lokalizacja zbiorcza, lokalizacji pobrania, dok rozładunkowy, dok załadunkowy, lokalizacja przyjęcia z produkcji, lokalizacja inspekcji lub supermarket kanban)</span><span class="sxs-lookup"><span data-stu-id="735f1-118">Location type (bulk location, picking location, inbound dock, outbound dock, production input location, inspection location, or kanban supermarket)</span></span>
 
-W systemach online w celu sprawdzenia, czy operator wybrał prawidłową lokalizację dla określonego towaru, można użyć funkcji Tekst sprawdzania. Ten tekst sprawdzania można utworzyć ręcznie lub użyć domyślnego.
+<span data-ttu-id="735f1-119">W systemach online w celu sprawdzenia, czy operator wybrał prawidłową lokalizację dla określonego towaru, można użyć funkcji Tekst sprawdzania.</span><span class="sxs-lookup"><span data-stu-id="735f1-119">Check text can be used in online systems to verify that the operator has selected the correct location for a specific item.</span></span> <span data-ttu-id="735f1-120">Ten tekst sprawdzania można utworzyć ręcznie lub użyć domyślnego.</span><span class="sxs-lookup"><span data-stu-id="735f1-120">This check text can be created manually or by default.</span></span>
 
-## <a name="sort-codes"></a>Kody sortowania
-Kody sortowania umożliwiają optymalizację obsługi wierszy pobrań, które pozwalają uzyskać szczegółowe informacje wymagane do pobierania towarów z magazynu, w tym kolejność pobierania. Kody sortowania mogą być określane na podstawie korytarza lub innych współrzędnych, można je także przypisywać ręcznie do konkretnej lokalizacji.
+## <a name="sort-codes"></a><span data-ttu-id="735f1-121">Kody sortowania</span><span class="sxs-lookup"><span data-stu-id="735f1-121">Sort codes</span></span>
+<span data-ttu-id="735f1-122">Kody sortowania umożliwiają optymalizację obsługi wierszy pobrań, które pozwalają uzyskać szczegółowe informacje wymagane do pobierania towarów z magazynu, w tym kolejność pobierania.</span><span class="sxs-lookup"><span data-stu-id="735f1-122">Use sort codes to optimize the handling of picking lines, which describe the information that is required for picking items from inventory, including the picking order.</span></span> <span data-ttu-id="735f1-123">Kody sortowania mogą być określane na podstawie korytarza lub innych współrzędnych, można je także przypisywać ręcznie do konkretnej lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="735f1-123">Sort codes can be specified by the aisle and other coordinates, or assigned manually for the location.</span></span>
 
-## <a name="blocked-locations"></a>Lokalizacje zablokowane
-Sporadycznie konieczne może być wskazanie lokalizacji, która jest przez jakiś czas zablokowana, na przykład w celu dokonania napraw. Innym razem może zaistnieć potrzeba zablokowania tylko wejścia lub tylko wyjścia.
-Struktura drzewa
---------------
+## <a name="blocked-locations"></a><span data-ttu-id="735f1-124">Lokalizacje zablokowane</span><span class="sxs-lookup"><span data-stu-id="735f1-124">Blocked locations</span></span>
+<span data-ttu-id="735f1-125">Sporadycznie konieczne może być wskazanie lokalizacji, która jest przez jakiś czas zablokowana, na przykład w celu dokonania napraw.</span><span class="sxs-lookup"><span data-stu-id="735f1-125">Occasionally, you might want to indicate that a location is blocked for a period of time, for example, to allow for repairs.</span></span> <span data-ttu-id="735f1-126">Innym razem może zaistnieć potrzeba zablokowania tylko wejścia lub tylko wyjścia.</span><span class="sxs-lookup"><span data-stu-id="735f1-126">At other times, you may want to indicate blocking of only the input or only output.</span></span>
 
-Na stronie Magazyny można wyświetlić układ magazynu w postaci struktury drzewa na podstawie współrzędnych lokalizacji magazynu, w zdefiniowanym formacie wyświetlania.
-Obsługa magazynów za pomocą formularza magazynu
----------------------------------------------------
+## <a name="tree-structure"></a><span data-ttu-id="735f1-127">Struktura drzewa</span><span class="sxs-lookup"><span data-stu-id="735f1-127">Tree structure</span></span>
 
-Można skopiować lokalizacje z jednego magazynu do innego i tworzyć lokalizacje za pomocą kreatora. Przed uruchomieniem kreatora należy upewnić się, że masz zdefiniowane domyślne nazwy lokalizacji na stronie Magazyn.
+<span data-ttu-id="735f1-128">Na stronie Magazyny można wyświetlić układ magazynu w postaci struktury drzewa na podstawie współrzędnych lokalizacji magazynu, w zdefiniowanym formacie wyświetlania.</span><span class="sxs-lookup"><span data-stu-id="735f1-128">In the Inventory locations page, you can view the warehouse layout in a tree structure based on the coordinates of inventory locations, in a defined display format.</span></span>
 
+## <a name="maintain-inventory-locations-via-the-warehouse-form"></a><span data-ttu-id="735f1-129">Obsługa magazynów za pomocą formularza magazynu</span><span class="sxs-lookup"><span data-stu-id="735f1-129">Maintain inventory locations via the warehouse form</span></span>
+
+<span data-ttu-id="735f1-130">Można skopiować lokalizacje z jednego magazynu do innego i tworzyć lokalizacje za pomocą kreatora.</span><span class="sxs-lookup"><span data-stu-id="735f1-130">It is possible to copy locations from one warehouse to another and to create locations via a wizard.</span></span> <span data-ttu-id="735f1-131">Przed uruchomieniem kreatora należy upewnić się, że masz zdefiniowane domyślne nazwy lokalizacji na stronie Magazyn.</span><span class="sxs-lookup"><span data-stu-id="735f1-131">Before you run the wizard you should make sure that you have defined the default location names on the Warehouse page.</span></span>
 
 
-<a name="see-also"></a>Informacje dodatkowe
+
+<a name="see-also"></a><span data-ttu-id="735f1-132">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="735f1-132">See also</span></span>
 --------
 
-[Tworzenie nowego układu magazynu (przewodnik po zadaniu)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-new-warehouse-layout)
-
-
-
+[<span data-ttu-id="735f1-133">Tworzenie nowego układu magazynu (przewodnik po zadaniu)</span><span class="sxs-lookup"><span data-stu-id="735f1-133">Create a new warehouse layout (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-new-warehouse-layout)
 

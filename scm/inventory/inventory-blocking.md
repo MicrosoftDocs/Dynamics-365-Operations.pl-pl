@@ -1,7 +1,7 @@
 ---
 title: "Blokowanie zapasów"
 description: "Ten artykuł zawiera omówienie mechanizmu blokowania zapasów, który jest częścią procesu kontroli jakości w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Używając blokowania, można zapobiec przetwarzaniu i zużywaniu zapasów."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,66 +10,63 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBlocking, InventQualityOrderTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2094
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7d00aaa272de32d4ef2082bf1822125800ca8a1e
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: eed2f3e203808f378ce954b6cc308859fea89e60
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
-# <a name="inventory-blocking"></a>Blokowanie zapasów
+# <a name="inventory-blocking"></a><span data-ttu-id="a4083-104">Blokowanie zapasów</span><span class="sxs-lookup"><span data-stu-id="a4083-104">Inventory blocking</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera omówienie mechanizmu blokowania zapasów, który jest częścią procesu kontroli jakości w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Używając blokowania, można zapobiec przetwarzaniu i zużywaniu zapasów.
+<span data-ttu-id="a4083-105">Ten artykuł zawiera omówienie mechanizmu blokowania zapasów, który jest częścią procesu kontroli jakości w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="a4083-105">This article provides an overview of inventory blocking, which is part of the quality inspection process in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="a4083-106">Używając blokowania, można zapobiec przetwarzaniu i zużywaniu zapasów.</span><span class="sxs-lookup"><span data-stu-id="a4083-106">You can use inventory blocking to prevent items from being processed or consumed.</span></span>
 
-Pozycje magazynowe można blokować w następujący sposób:
--   Ręcznie
--   Tworząc zlecenie kontroli jakości
--   Za pomocą procesu, który generuje zlecenia kontroli jakości
--   przez blokowanie stanu zapasów
+<span data-ttu-id="a4083-107">Pozycje magazynowe można blokować w następujący sposób:</span><span class="sxs-lookup"><span data-stu-id="a4083-107">You can block inventory items in the following ways:</span></span>
+-   <span data-ttu-id="a4083-108">Ręcznie</span><span class="sxs-lookup"><span data-stu-id="a4083-108">Manually</span></span>
+-   <span data-ttu-id="a4083-109">Tworząc zlecenie kontroli jakości</span><span class="sxs-lookup"><span data-stu-id="a4083-109">By creating a quality order</span></span>
+-   <span data-ttu-id="a4083-110">Za pomocą procesu, który generuje zlecenia kontroli jakości</span><span class="sxs-lookup"><span data-stu-id="a4083-110">By using a process that generates a quality order</span></span>
+-   <span data-ttu-id="a4083-111">przez blokowanie stanu zapasów</span><span class="sxs-lookup"><span data-stu-id="a4083-111">By using inventory status blocking</span></span>
 
-## <a name="blocking-items-manually"></a>ręczne blokując towary
-Ilość towaru można zablokować przez utworzenie transakcji na stronie **Blokowanie zapasów**. Ręcznie można zablokować jedynie pozycje dostępne na stanie w magazynie. Dla ilości zablokowanych ręcznie należy rozważyć, czy oczekiwane przychody powinny znajdować się w działaniach planowania jako oczekiwana ilość zapasów na stanie. Oczekiwane przyjęcia to zablokowane towary, które według przewidywań po inspekcji będą dostępne jako zapasy na stanie. Można zachować oczekiwaną datę. Domyślnie opcja **Oczekiwane przyjęcia** jest zaznaczona dla towarów, które są zablokowane za pomocą zlecenia kontroli jakości. Można anulować blokowanie ilości ręcznie blokowanych przez usunięcie transakcji na stronie **Blokowanie zapasów**.
+## <a name="blocking-items-manually"></a><span data-ttu-id="a4083-112">ręczne blokując towary</span><span class="sxs-lookup"><span data-stu-id="a4083-112">Blocking items manually</span></span>
+<span data-ttu-id="a4083-113">Ilość towaru można zablokować przez utworzenie transakcji na stronie **Blokowanie zapasów**.</span><span class="sxs-lookup"><span data-stu-id="a4083-113">You can block a quantity of an item by creating a transaction on the **Inventory blocking** page.</span></span> <span data-ttu-id="a4083-114">Ręcznie można zablokować jedynie pozycje dostępne na stanie w magazynie.</span><span class="sxs-lookup"><span data-stu-id="a4083-114">Only items that are available as on-hand inventory can be blocked manually.</span></span> <span data-ttu-id="a4083-115">Dla ilości zablokowanych ręcznie należy rozważyć, czy oczekiwane przychody powinny znajdować się w działaniach planowania jako oczekiwana ilość zapasów na stanie.</span><span class="sxs-lookup"><span data-stu-id="a4083-115">For manually blocked quantities, you must decide whether planning activities include expected receipts as an expected on-hand quantity.</span></span> <span data-ttu-id="a4083-116">Oczekiwane przyjęcia to zablokowane towary, które według przewidywań po inspekcji będą dostępne jako zapasy na stanie.</span><span class="sxs-lookup"><span data-stu-id="a4083-116">Expected receipts are blocked items that you expect to be available as on-hand inventory after inspection is completed.</span></span> <span data-ttu-id="a4083-117">Można zachować oczekiwaną datę.</span><span class="sxs-lookup"><span data-stu-id="a4083-117">You can maintain the expected date.</span></span> <span data-ttu-id="a4083-118">Domyślnie opcja **Oczekiwane przyjęcia** jest zaznaczona dla towarów, które są zablokowane za pomocą zlecenia kontroli jakości.</span><span class="sxs-lookup"><span data-stu-id="a4083-118">By default, the **Expected receipts** option is selected for items that are blocked through a quality order.</span></span> <span data-ttu-id="a4083-119">Można anulować blokowanie ilości ręcznie blokowanych przez usunięcie transakcji na stronie **Blokowanie zapasów**.</span><span class="sxs-lookup"><span data-stu-id="a4083-119">You can cancel a manual block on a quantity by deleting the transaction on the **Inventory blocking** page.</span></span>
 
-## <a name="blocking-items-by-creating-a-quality-order"></a>Blokując towary poprzez tworzenie zlecenia kontroli jakości
-Można określić elementy, które muszą być skontrolowane, przez utworzenie zlecenia kontroli jakości na stronie **zleceń kontroli jakości**. Po utworzeniu zlecenia kontroli jakości, określona ilość towaru jest zablokowana. Plan pobierania próbek skojarzony ze zleceniem kontroli jakości kontroluje ilość towaru, który ma być sprawdzany, nie ilość, która jest zablokowana. Niezależnie od ilości, która zostanie wysłana do inspekcji, jak określono w planie pobierania próbek, ilość towaru wprowadzona w zleceniu kontroli jakości jest ilością, która zostaje zablokowana.
+## <a name="blocking-items-by-creating-a-quality-order"></a><span data-ttu-id="a4083-120">Blokując towary poprzez tworzenie zlecenia kontroli jakości</span><span class="sxs-lookup"><span data-stu-id="a4083-120">Blocking items by creating a quality order</span></span>
+<span data-ttu-id="a4083-121">Można określić elementy, które muszą być skontrolowane, przez utworzenie zlecenia kontroli jakości na stronie **zleceń kontroli jakości**.</span><span class="sxs-lookup"><span data-stu-id="a4083-121">You can specify items that must be inspected by creating a quality order on the **Quality orders** page.</span></span> <span data-ttu-id="a4083-122">Po utworzeniu zlecenia kontroli jakości, określona ilość towaru jest zablokowana.</span><span class="sxs-lookup"><span data-stu-id="a4083-122">When you create a quality order, the quantity that you specify for an item is blocked.</span></span> <span data-ttu-id="a4083-123">Plan pobierania próbek skojarzony ze zleceniem kontroli jakości kontroluje ilość towaru, który ma być sprawdzany, nie ilość, która jest zablokowana.</span><span class="sxs-lookup"><span data-stu-id="a4083-123">The sampling plan that is associated with a quality order controls only the quantity of items that must be inspected, not the quantity that is blocked.</span></span> <span data-ttu-id="a4083-124">Niezależnie od ilości, która zostanie wysłana do inspekcji, jak określono w planie pobierania próbek, ilość towaru wprowadzona w zleceniu kontroli jakości jest ilością, która zostaje zablokowana.</span><span class="sxs-lookup"><span data-stu-id="a4083-124">The quantity that is entered on the quality order is the quantity that is blocked, regardless of the quantity that the sampling plan specifies should be sent for inspection.</span></span>
 
-## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a>Blokując towary za pomocą procesu, który generuje zlecenia kontroli jakości.
-Jeśli w procesie kontroli jakości określono konieczność kontroli pozycji, ilość towaru zostanie automatycznie zablokowana. Tak więc podczas automatycznego generowania zlecenia kontroli jakości plan próbkowania towaru skojarzony z zamówieniem kontroli jakości określa ilość towarów, która jest zablokowana i ilość towarów, które mają zostać sprawdzone. W przypadku zaznaczenia opcji **Pełne blokowanie** na stronie **Kontrola wyrywkowa towarów**, całkowita ilość, na przykład, w wierszu zamówienia zakupu jest zablokowana podczas inspekcji, niezależnie od ilości kontroli wyrywkowej towarów.
-### <a name="example"></a>Przykład
+## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a><span data-ttu-id="a4083-125">Blokując towary za pomocą procesu, który generuje zlecenia kontroli jakości.</span><span class="sxs-lookup"><span data-stu-id="a4083-125">Blocking items by using a process that generates a quality order</span></span>
+<span data-ttu-id="a4083-126">Jeśli w procesie kontroli jakości określono konieczność kontroli pozycji, ilość towaru zostanie automatycznie zablokowana.</span><span class="sxs-lookup"><span data-stu-id="a4083-126">If a quality process specifies that an item must be inspected, a quantity of the item is blocked automatically.</span></span> <span data-ttu-id="a4083-127">Tak więc podczas automatycznego generowania zlecenia kontroli jakości plan próbkowania towaru skojarzony z zamówieniem kontroli jakości określa ilość towarów, która jest zablokowana i ilość towarów, które mają zostać sprawdzone.</span><span class="sxs-lookup"><span data-stu-id="a4083-127">Therefore, when a quality order is generated automatically, the item sampling plan that is associated with the quality order controls the both quantity of items that is blocked and the quantity that must be inspected.</span></span> <span data-ttu-id="a4083-128">W przypadku zaznaczenia opcji **Pełne blokowanie** na stronie **Kontrola wyrywkowa towarów**, całkowita ilość, na przykład, w wierszu zamówienia zakupu jest zablokowana podczas inspekcji, niezależnie od ilości kontroli wyrywkowej towarów.</span><span class="sxs-lookup"><span data-stu-id="a4083-128">If the **Full blocking** option on the **Item sampling** page is selected, the full quantity of, for example, a purchase order line is blocked during inspection, regardless of the item sampling quantity.</span></span>
+### <a name="example"></a><span data-ttu-id="a4083-129">Przykład</span><span class="sxs-lookup"><span data-stu-id="a4083-129">Example</span></span>
 
-W poniższym przykładzie generowane jest zlecenie kontroli jakości podczas księgowania dokumentu dostawy zamówienia zakupu. Na stronie **Powiązania jakości** określono, że księgowanie dokumentu dostawy zamówienia zakupu jest określone jako proces, który aktywuje zlecenia kontroli jakości.
+<span data-ttu-id="a4083-130">W poniższym przykładzie generowane jest zlecenie kontroli jakości podczas księgowania dokumentu dostawy zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="a4083-130">In the following example, a quality order is generated when a purchase order packing slip is posted.</span></span> <span data-ttu-id="a4083-131">Na stronie **Powiązania jakości** określono, że księgowanie dokumentu dostawy zamówienia zakupu jest określone jako proces, który aktywuje zlecenia kontroli jakości.</span><span class="sxs-lookup"><span data-stu-id="a4083-131">On the **Quality associations** page, you specified that posting of a purchase order packing slip is the process that activates a quality order.</span></span>
 
-|Ustawienia                                                                     |Akcja użytkownika                 |Wynik             |
+|<span data-ttu-id="a4083-132">Ustawienia</span><span class="sxs-lookup"><span data-stu-id="a4083-132">Setup</span></span>                                                                     |<span data-ttu-id="a4083-133">Akcja użytkownika</span><span class="sxs-lookup"><span data-stu-id="a4083-133">User action</span></span>                 |<span data-ttu-id="a4083-134">Wynik</span><span class="sxs-lookup"><span data-stu-id="a4083-134">Result</span></span>             |
 |--------------------------------------------------------------------------|----------------------------|-------------------|
-| Skojarzenie jakości określa, że przy księgowaniu dokumentu dostawy zamówienia zakupu musi zostać wygenerowane zlecenie kontroli jakości. Ustawienia kontroli wyrywkowej towarów zlecenia kontroli jakości określa, że musi zostać skontrolowane 10% ilości w wierszu zamówienia zakupu. Co więcej, przy zaznaczonym polu wyboru **Pełne blokowanie** ustawienie pobierania próbek wskazuje, że podczas inspekcji, niezależnie od ilości, która zostanie wysłana do inspekcji, należy zablokować pełną ilość w wierszu zamówienia zakupu. | Dokumentu dostawy zostaje zaksięgowany. | Zlecenie kontroli jakości zostało wygenerowane. 10% ilości towaru w zamówieniu zakupu jest wysyłane do inspekcji. Całkowita ilość wiersza zamówienia zakupu jest zablokowana. |
+| <span data-ttu-id="a4083-135">Skojarzenie jakości określa, że przy księgowaniu dokumentu dostawy zamówienia zakupu musi zostać wygenerowane zlecenie kontroli jakości.</span><span class="sxs-lookup"><span data-stu-id="a4083-135">A quality association specifies that a quality order must be generated when a purchase order packing slip is posted.</span></span> <span data-ttu-id="a4083-136">Ustawienia kontroli wyrywkowej towarów zlecenia kontroli jakości określa, że musi zostać skontrolowane 10% ilości w wierszu zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="a4083-136">The item sampling setup of the quality order specifies that 10 percent of the quantity on the purchase order line must be inspected.</span></span> <span data-ttu-id="a4083-137">Co więcej, przy zaznaczonym polu wyboru **Pełne blokowanie** ustawienie pobierania próbek wskazuje, że podczas inspekcji, niezależnie od ilości, która zostanie wysłana do inspekcji, należy zablokować pełną ilość w wierszu zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="a4083-137">Furthermore, because the **Full blocking** option selected in the item sampling setup, the full quantity of the purchase order line must be blocked during inspection, regardless of the quantity that is sent for inspection.</span></span> | <span data-ttu-id="a4083-138">Dokumentu dostawy zostaje zaksięgowany.</span><span class="sxs-lookup"><span data-stu-id="a4083-138">The packing slip is posted.</span></span> | <span data-ttu-id="a4083-139">Zlecenie kontroli jakości zostało wygenerowane.</span><span class="sxs-lookup"><span data-stu-id="a4083-139">A quality order is generated.</span></span> <span data-ttu-id="a4083-140">10% ilości towaru w zamówieniu zakupu jest wysyłane do inspekcji.</span><span class="sxs-lookup"><span data-stu-id="a4083-140">Ten percent of the purchase order quantity for the item is sent to inspection.</span></span> <span data-ttu-id="a4083-141">Całkowita ilość wiersza zamówienia zakupu jest zablokowana.</span><span class="sxs-lookup"><span data-stu-id="a4083-141">The full quantity of the purchase order line is blocked.</span></span> |
 
-## <a name="blocking-items-by-using-inventory-status-blocking"></a>przez blokowanie towarów za pomocą blokowania stanu magazynu
-Można określić, które stany zapasów powodują blokowanie, za pomocą parametru **Blokowania zapasów** na stronie **Stany zapasów**. Stanów zapasów nie można używać jako stanów blokowania dla zleceń produkcyjnych, zamówień sprzedaży, zamówień przeniesienia, transakcji wychodzących i integracji projektu. W przypadku pracy wychodzącej należy użyć towarów z dostępnym stanem zapasów. Jeśli masz towary o stanie **uszkodzone** i zostało dla nich uruchomione planowanie główne, pozycje te zostaną uznane za brakujące, a zapasy są uzupełniane automatycznie.
+## <a name="blocking-items-by-using-inventory-status-blocking"></a><span data-ttu-id="a4083-142">przez blokowanie towarów za pomocą blokowania stanu magazynu</span><span class="sxs-lookup"><span data-stu-id="a4083-142">Blocking items by using inventory status blocking</span></span>
+<span data-ttu-id="a4083-143">Można określić, które stany zapasów powodują blokowanie, za pomocą parametru **Blokowania zapasów** na stronie **Stany zapasów**.</span><span class="sxs-lookup"><span data-stu-id="a4083-143">You can specify which inventory statuses are blocking statuses by using the **Inventory blocking** parameter on the **Inventory statuses** page.</span></span> <span data-ttu-id="a4083-144">Stanów zapasów nie można używać jako stanów blokowania dla zleceń produkcyjnych, zamówień sprzedaży, zamówień przeniesienia, transakcji wychodzących i integracji projektu.</span><span class="sxs-lookup"><span data-stu-id="a4083-144">You can't use inventory statuses as blocking statuses for production orders, sales orders, transfer orders, outbound transactions, or project integrations.</span></span> <span data-ttu-id="a4083-145">W przypadku pracy wychodzącej należy użyć towarów z dostępnym stanem zapasów.</span><span class="sxs-lookup"><span data-stu-id="a4083-145">For outbound work, use items that have an available inventory status.</span></span> <span data-ttu-id="a4083-146">Jeśli masz towary o stanie **uszkodzone** i zostało dla nich uruchomione planowanie główne, pozycje te zostaną uznane za brakujące, a zapasy są uzupełniane automatycznie.</span><span class="sxs-lookup"><span data-stu-id="a4083-146">If items have a status of **Broken**, and master planning is run on those items, the items are considered missing, and inventory is automatically replenished.</span></span>
 
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="see-also"></a><span data-ttu-id="a4083-147">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="a4083-147">See also</span></span>
 --------
 
-[Tworzenie i obsługa blokowania zapasów (przewodnik po zadaniu)](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking)
+[<span data-ttu-id="a4083-148">Tworzenie i obsługa blokowania zapasów (przewodnik po zadaniu)</span><span class="sxs-lookup"><span data-stu-id="a4083-148">Create and maintain an inventory blocking (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/create-maintain-inventory-blocking)
 
-[Procesy zarządzania jakością](quality-management-processes.md)
+[<span data-ttu-id="a4083-149">Procesy zarządzania jakością</span><span class="sxs-lookup"><span data-stu-id="a4083-149">Quality management processes</span></span>](quality-management-processes.md)
 
-[Sprawdzenie jakości towarów (przewodnik po zadaniu)](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
-
-
-
+[<span data-ttu-id="a4083-150">Sprawdzenie jakości towarów (przewodnik po zadaniu)</span><span class="sxs-lookup"><span data-stu-id="a4083-150">Inspect the quality of goods (Task guide)</span></span>](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
 

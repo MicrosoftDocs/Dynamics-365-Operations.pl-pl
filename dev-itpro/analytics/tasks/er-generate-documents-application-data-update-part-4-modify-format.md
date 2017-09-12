@@ -22,132 +22,132 @@ ms.contentlocale: pl-pl
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="modify-format-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a>Modyfikowanie formatu w celu generowania dokumentów z aktualizacjami danych aplikacji na potrzeby raportowania elektronicznego (ER)
+# <a name="modify-format-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a><span data-ttu-id="0888a-103">Modyfikowanie formatu w celu generowania dokumentów z aktualizacjami danych aplikacji na potrzeby raportowania elektronicznego (ER)</span><span class="sxs-lookup"><span data-stu-id="0888a-103">Modify format to generate documents with application data update for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Aby wykonać kroki opisane w tej procedurze, należy najpierw wykonać procedurę „ER Generowanie dokumentów z aktualizacją danych aplikacji (Część 3: Modyfikowanie modelu i mapowania)”.
+<span data-ttu-id="0888a-104">Aby wykonać kroki opisane w tej procedurze, należy najpierw wykonać procedurę „ER Generowanie dokumentów z aktualizacją danych aplikacji (Część 3: Modyfikowanie modelu i mapowania)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-104">To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 3: Modify model and mapping)".</span></span>
 
-Etapy w tej procedurze wyjaśniają sposób projektowania konfiguracji raportowania elektronicznego (ER) do generowania dokumentu elektronicznego i aktualizowania danych aplikacji. W tej procedurze zmodyfikujesz konfiguracje ER, aby były używane nie tylko do generowania dokumentów elektronicznych, ale również do aktualizowania danych aplikacji. Ta procedura została utworzona dla użytkowników z przypisaną rola administratora systemu lub dewelopera raportowania elektronicznego. Kroki można wykonać przy użyciu zestawu danych firmy DEMF.
+<span data-ttu-id="0888a-105">Etapy w tej procedurze wyjaśniają sposób projektowania konfiguracji raportowania elektronicznego (ER) do generowania dokumentu elektronicznego i aktualizowania danych aplikacji.</span><span class="sxs-lookup"><span data-stu-id="0888a-105">The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document and update application data.</span></span> <span data-ttu-id="0888a-106">W tej procedurze zmodyfikujesz konfiguracje ER, aby były używane nie tylko do generowania dokumentów elektronicznych, ale również do aktualizowania danych aplikacji.</span><span class="sxs-lookup"><span data-stu-id="0888a-106">In this procedure, you will modify the ER configurations to not just use them to generate electronic documents, but also to update application data.</span></span> <span data-ttu-id="0888a-107">Ta procedura została utworzona dla użytkowników z przypisaną rola administratora systemu lub dewelopera raportowania elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="0888a-107">This procedure is created for users with the assigned role of system administrator or electronic reporting developer.</span></span> <span data-ttu-id="0888a-108">Kroki można wykonać przy użyciu zestawu danych firmy DEMF.</span><span class="sxs-lookup"><span data-stu-id="0888a-108">These steps can be completed using the DEMF dataset.</span></span>
 
 
-## <a name="modify-format-to-collect-details-of-reporting"></a>Modyfikowanie formatu w celu zbierania danych raportowania
-1. Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Konfiguracje.
-2. W drzewie rozwiń węzeł „Intrastat (model)”.
-3. W drzewie zaznacz element „Intrastat (model)\Intrastat (format)”.
-4. Kliknij przycisk Konstruktor.
-5. W drzewie rozwiń węzeł „Plik”.
-6. W drzewie rozwiń węzeł „Plik\Deklaracja”.
-7. W drzewie zaznacz element „Plik\Deklaracja\Dane”.
-8. W polu Liczebność zaznacz opcję „Jeden wiele”.
-    * Skonfiguruj ten element formatu, aby archiwizować szczegóły procesu raportowania Intrastat. Ten element reprezentuje rekord nagłówka archiwum.  
-9. W drzewie rozwiń węzeł „Plik\Deklaracja\Dane”.
-10. W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja”.
-11. W polu Liczebność zaznacz opcję „Zero wiele”.
-    * Skonfiguruj ten element formatu, aby archiwizować szczegóły procesu raportowania Intrastat. Ten element będzie reprezentował listę zarchiwizowanych wierszy.  
-12. W drzewie rozwiń węzeł „Plik\Deklaracja\Dane\Pozycja”.
-13. W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym1”.
-14. W polu Wykluczone wybierz opcję Tak.
-    * Te dane nie będą archiwizowane, więc można wykluczyć ten element formatu ze źródła danych szczegółów raportowania Intrastat.  
-15. W drzewie rozwiń węzeł „Plik\Deklaracja\Dane\Pozycja\Wym1”.
-16. W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym1\właściwość”.
-17. W polu Wykluczone wybierz opcję Tak.
-18. W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym1\data”.
-19. W polu Wykluczone wybierz opcję Tak.
-20. W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym2”.
-21. W polu Wykluczone wybierz opcję Tak.
-22. W drzewie rozwiń węzeł „Plik\Deklaracja\Dane\Pozycja\Wym2”.
-23. W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym2\właściwość”.
-24. W polu Wykluczone wybierz opcję Tak.
-25. W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym2\kod”.
-26. W polu Wykluczone wybierz opcję Tak.
-27. W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym3”.
-    * Kilka elementów formatu może mieć taką samą nazwę. Na przykład Wym. Nie można ich jawnie rozpoznać podczas używania tego formatu jako źródła danych dla archiwizacji szczegółów raportowania Intrastat, dlatego należy zdefiniować alternatywne nazwy tych elementów formatu.   
-28. W polu Nazwa wpisz „Kwota”.
-    * Ilość  
-29. W polu Liczebność zaznacz opcję „Dokładnie jeden”.
-30. W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym4”.
-31. W polu Nazwa wpisz „Towar”.
-    * Element  
-32. W polu Liczebność zaznacz opcję „Dokładnie jeden”.
-    * Oprócz elementów formatu projektu muszą być archiwizowane również następujące szczegóły raportowania Intrastat: unikatowy identyfikator rekordu każdej zgłoszonej pozycji asortymentu i nazwa wygenerowanego pliku. Ponieważ te dane nie będą wypełniane w raporcie Intrastat, należy dodać format powiązany z tymi elementami szczegółów jako elementy źródła danych.  
-33. W drzewie zaznacz element „Plik\Deklaracja\Dane”.
-34. Kliknij przycisk Dodaj, aby otworzyć rozwijane okno dialogowe.
-35. W drzewie zaznacz element „Źródło danych\Pozycja”.
-36. W polu Nazwa wpisz „Nazwa pliku”.
-    * Nazwa pliku  
-37. W polu Typ danych wybierz opcję „Ciąg”.
-38. Kliknij przycisk OK.
-39. W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja”.
-40. Kliknij opcję Dodaj pozycję.
-41. W polu Nazwa wpisz „Identyfikator rekordu asortymentu”.
-    * Identyfikator rekordu asortymentu  
-42. W polu Typ danych wybierz opcję „Int64”.
-43. Kliknij przycisk OK.
-44. Kliknij kartę Mapowanie.
-45. W drzewie zaznacz element „Plik\Deklaracja\Dane\Nazwa pliku”.
-46. Kliknij opcję Powiąż.
-47. W drzewie rozwiń model„”
-48. W drzewie rozwiń węzeł „model\Transakcje”.
-49. W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja = model.Transakcje\Identyfikator rekordu asortymentu”.
-50. W drzewie zaznacz element „model\Transakcje\Identyfikator rekordu asortymentu”.
-51. Kliknij opcję Powiąż.
-52. Kliknij przycisk Zapisz.
+## <a name="modify-format-to-collect-details-of-reporting"></a><span data-ttu-id="0888a-109">Modyfikowanie formatu w celu zbierania danych raportowania</span><span class="sxs-lookup"><span data-stu-id="0888a-109">Modify format to collect details of reporting</span></span>
+1. <span data-ttu-id="0888a-110">Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Konfiguracje.</span><span class="sxs-lookup"><span data-stu-id="0888a-110">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="0888a-111">W drzewie rozwiń węzeł „Intrastat (model)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-111">In the tree, expand 'Intrastat (model)'.</span></span>
+3. <span data-ttu-id="0888a-112">W drzewie zaznacz element „Intrastat (model)\Intrastat (format)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-112">In the tree, select 'Intrastat (model)\Intrastat (format)'.</span></span>
+4. <span data-ttu-id="0888a-113">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="0888a-113">Click Designer.</span></span>
+5. <span data-ttu-id="0888a-114">W drzewie rozwiń węzeł „Plik”.</span><span class="sxs-lookup"><span data-stu-id="0888a-114">In the tree, expand 'File'.</span></span>
+6. <span data-ttu-id="0888a-115">W drzewie rozwiń węzeł „Plik\Deklaracja”.</span><span class="sxs-lookup"><span data-stu-id="0888a-115">In the tree, expand 'File\Declaration'.</span></span>
+7. <span data-ttu-id="0888a-116">W drzewie zaznacz element „Plik\Deklaracja\Dane”.</span><span class="sxs-lookup"><span data-stu-id="0888a-116">In the tree, select 'File\Declaration\Data'.</span></span>
+8. <span data-ttu-id="0888a-117">W polu Liczebność zaznacz opcję „Jeden wiele”.</span><span class="sxs-lookup"><span data-stu-id="0888a-117">In the Multiplicity field, select 'One many'.</span></span>
+    * <span data-ttu-id="0888a-118">Skonfiguruj ten element formatu, aby archiwizować szczegóły procesu raportowania Intrastat.</span><span class="sxs-lookup"><span data-stu-id="0888a-118">Configure this format element to archive details of the Intrastat reporting process.</span></span> <span data-ttu-id="0888a-119">Ten element reprezentuje rekord nagłówka archiwum.</span><span class="sxs-lookup"><span data-stu-id="0888a-119">This item represents the archive’s header record.</span></span>  
+9. <span data-ttu-id="0888a-120">W drzewie rozwiń węzeł „Plik\Deklaracja\Dane”.</span><span class="sxs-lookup"><span data-stu-id="0888a-120">In the tree, expand 'File\Declaration\Data'.</span></span>
+10. <span data-ttu-id="0888a-121">W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja”.</span><span class="sxs-lookup"><span data-stu-id="0888a-121">In the tree, select 'File\Declaration\Data\Item'.</span></span>
+11. <span data-ttu-id="0888a-122">W polu Liczebność zaznacz opcję „Zero wiele”.</span><span class="sxs-lookup"><span data-stu-id="0888a-122">In the Multiplicity field, select 'Zero many'.</span></span>
+    * <span data-ttu-id="0888a-123">Skonfiguruj ten element formatu, aby archiwizować szczegóły procesu raportowania Intrastat.</span><span class="sxs-lookup"><span data-stu-id="0888a-123">Configure this format element to archive details of the Intrastat reporting process.</span></span> <span data-ttu-id="0888a-124">Ten element będzie reprezentował listę zarchiwizowanych wierszy.</span><span class="sxs-lookup"><span data-stu-id="0888a-124">This item will represent the list of archived lines.</span></span>  
+12. <span data-ttu-id="0888a-125">W drzewie rozwiń węzeł „Plik\Deklaracja\Dane\Pozycja”.</span><span class="sxs-lookup"><span data-stu-id="0888a-125">In the tree, expand 'File\Declaration\Data\Item'.</span></span>
+13. <span data-ttu-id="0888a-126">W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym1”.</span><span class="sxs-lookup"><span data-stu-id="0888a-126">In the tree, select 'File\Declaration\Data\Item\Dim1'.</span></span>
+14. <span data-ttu-id="0888a-127">W polu Wykluczone wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="0888a-127">Select Yes in the Excluded field.</span></span>
+    * <span data-ttu-id="0888a-128">Te dane nie będą archiwizowane, więc można wykluczyć ten element formatu ze źródła danych szczegółów raportowania Intrastat.</span><span class="sxs-lookup"><span data-stu-id="0888a-128">You will not archive this data, so you can exclude this format element from the data source of Intrastat reporting details.</span></span>  
+15. <span data-ttu-id="0888a-129">W drzewie rozwiń węzeł „Plik\Deklaracja\Dane\Pozycja\Wym1”.</span><span class="sxs-lookup"><span data-stu-id="0888a-129">In the tree, expand 'File\Declaration\Data\Item\Dim1'.</span></span>
+16. <span data-ttu-id="0888a-130">W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym1\właściwość”.</span><span class="sxs-lookup"><span data-stu-id="0888a-130">In the tree, select 'File\Declaration\Data\Item\Dim1\property'.</span></span>
+17. <span data-ttu-id="0888a-131">W polu Wykluczone wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="0888a-131">Select Yes in the Excluded field.</span></span>
+18. <span data-ttu-id="0888a-132">W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym1\data”.</span><span class="sxs-lookup"><span data-stu-id="0888a-132">In the tree, select 'File\Declaration\Data\Item\Dim1\date'.</span></span>
+19. <span data-ttu-id="0888a-133">W polu Wykluczone wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="0888a-133">Select Yes in the Excluded field.</span></span>
+20. <span data-ttu-id="0888a-134">W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym2”.</span><span class="sxs-lookup"><span data-stu-id="0888a-134">In the tree, select 'File\Declaration\Data\Item\Dim2'.</span></span>
+21. <span data-ttu-id="0888a-135">W polu Wykluczone wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="0888a-135">Select Yes in the Excluded field.</span></span>
+22. <span data-ttu-id="0888a-136">W drzewie rozwiń węzeł „Plik\Deklaracja\Dane\Pozycja\Wym2”.</span><span class="sxs-lookup"><span data-stu-id="0888a-136">In the tree, expand 'File\Declaration\Data\Item\Dim2'.</span></span>
+23. <span data-ttu-id="0888a-137">W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym2\właściwość”.</span><span class="sxs-lookup"><span data-stu-id="0888a-137">In the tree, select 'File\Declaration\Data\Item\Dim2\property'.</span></span>
+24. <span data-ttu-id="0888a-138">W polu Wykluczone wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="0888a-138">Select Yes in the Excluded field.</span></span>
+25. <span data-ttu-id="0888a-139">W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym2\kod”.</span><span class="sxs-lookup"><span data-stu-id="0888a-139">In the tree, select 'File\Declaration\Data\Item\Dim2\code'.</span></span>
+26. <span data-ttu-id="0888a-140">W polu Wykluczone wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="0888a-140">Select Yes in the Excluded field.</span></span>
+27. <span data-ttu-id="0888a-141">W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym3”.</span><span class="sxs-lookup"><span data-stu-id="0888a-141">In the tree, select 'File\Declaration\Data\Item\Dim3'.</span></span>
+    * <span data-ttu-id="0888a-142">Kilka elementów formatu może mieć taką samą nazwę.</span><span class="sxs-lookup"><span data-stu-id="0888a-142">Several format elements can have the same name.</span></span> <span data-ttu-id="0888a-143">Na przykład Wym.</span><span class="sxs-lookup"><span data-stu-id="0888a-143">For example, Dim.</span></span> <span data-ttu-id="0888a-144">Nie można ich jawnie rozpoznać podczas używania tego formatu jako źródła danych dla archiwizacji szczegółów raportowania Intrastat, dlatego należy zdefiniować alternatywne nazwy tych elementów formatu.</span><span class="sxs-lookup"><span data-stu-id="0888a-144">You cannot explicitly recognize them when you use this format as a data source for archiving Intrastat reporting details, so you need to define the alternative names for these format elements.</span></span>   
+28. <span data-ttu-id="0888a-145">W polu Nazwa wpisz „Kwota”.</span><span class="sxs-lookup"><span data-stu-id="0888a-145">In the Name field, type 'Amount'.</span></span>
+    * <span data-ttu-id="0888a-146">Ilość</span><span class="sxs-lookup"><span data-stu-id="0888a-146">Amount</span></span>  
+29. <span data-ttu-id="0888a-147">W polu Liczebność zaznacz opcję „Dokładnie jeden”.</span><span class="sxs-lookup"><span data-stu-id="0888a-147">In the Multiplicity field, select 'Exactly one'.</span></span>
+30. <span data-ttu-id="0888a-148">W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja\Wym4”.</span><span class="sxs-lookup"><span data-stu-id="0888a-148">In the tree, select 'File\Declaration\Data\Item\Dim4'.</span></span>
+31. <span data-ttu-id="0888a-149">W polu Nazwa wpisz „Towar”.</span><span class="sxs-lookup"><span data-stu-id="0888a-149">In the Name field, type 'Item'.</span></span>
+    * <span data-ttu-id="0888a-150">Element</span><span class="sxs-lookup"><span data-stu-id="0888a-150">Item</span></span>  
+32. <span data-ttu-id="0888a-151">W polu Liczebność zaznacz opcję „Dokładnie jeden”.</span><span class="sxs-lookup"><span data-stu-id="0888a-151">In the Multiplicity field, select 'Exactly one'.</span></span>
+    * <span data-ttu-id="0888a-152">Oprócz elementów formatu projektu muszą być archiwizowane również następujące szczegóły raportowania Intrastat: unikatowy identyfikator rekordu każdej zgłoszonej pozycji asortymentu i nazwa wygenerowanego pliku.</span><span class="sxs-lookup"><span data-stu-id="0888a-152">In addition to the design format elements, the following Intrastat reporting details must be archived: unique record identification of each reported commodity item and name of the generated file.</span></span> <span data-ttu-id="0888a-153">Ponieważ te dane nie będą wypełniane w raporcie Intrastat, należy dodać format powiązany z tymi elementami szczegółów jako elementy źródła danych.</span><span class="sxs-lookup"><span data-stu-id="0888a-153">Because this data will not be populated in the Intrastat report, you need to add the format that is related to these detail elements as data source items.</span></span>  
+33. <span data-ttu-id="0888a-154">W drzewie zaznacz element „Plik\Deklaracja\Dane”.</span><span class="sxs-lookup"><span data-stu-id="0888a-154">In the tree, select 'File\Declaration\Data'.</span></span>
+34. <span data-ttu-id="0888a-155">Kliknij przycisk Dodaj, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="0888a-155">Click Add to open the drop dialog.</span></span>
+35. <span data-ttu-id="0888a-156">W drzewie zaznacz element „Źródło danych\Pozycja”.</span><span class="sxs-lookup"><span data-stu-id="0888a-156">In the tree, select 'Data source\Item'.</span></span>
+36. <span data-ttu-id="0888a-157">W polu Nazwa wpisz „Nazwa pliku”.</span><span class="sxs-lookup"><span data-stu-id="0888a-157">In the Name field, type 'File name'.</span></span>
+    * <span data-ttu-id="0888a-158">Nazwa pliku</span><span class="sxs-lookup"><span data-stu-id="0888a-158">File name</span></span>  
+37. <span data-ttu-id="0888a-159">W polu Typ danych wybierz opcję „Ciąg”.</span><span class="sxs-lookup"><span data-stu-id="0888a-159">In the Data type field, select 'String'.</span></span>
+38. <span data-ttu-id="0888a-160">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="0888a-160">Click OK.</span></span>
+39. <span data-ttu-id="0888a-161">W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja”.</span><span class="sxs-lookup"><span data-stu-id="0888a-161">In the tree, select 'File\Declaration\Data\Item'.</span></span>
+40. <span data-ttu-id="0888a-162">Kliknij opcję Dodaj pozycję.</span><span class="sxs-lookup"><span data-stu-id="0888a-162">Click Add Item.</span></span>
+41. <span data-ttu-id="0888a-163">W polu Nazwa wpisz „Identyfikator rekordu asortymentu”.</span><span class="sxs-lookup"><span data-stu-id="0888a-163">In the Name field, type 'Commodity rec id'.</span></span>
+    * <span data-ttu-id="0888a-164">Identyfikator rekordu asortymentu</span><span class="sxs-lookup"><span data-stu-id="0888a-164">Commodity rec id</span></span>  
+42. <span data-ttu-id="0888a-165">W polu Typ danych wybierz opcję „Int64”.</span><span class="sxs-lookup"><span data-stu-id="0888a-165">In the Data type field, select 'Int64'.</span></span>
+43. <span data-ttu-id="0888a-166">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="0888a-166">Click OK.</span></span>
+44. <span data-ttu-id="0888a-167">Kliknij kartę Mapowanie.</span><span class="sxs-lookup"><span data-stu-id="0888a-167">Click the Mapping tab.</span></span>
+45. <span data-ttu-id="0888a-168">W drzewie zaznacz element „Plik\Deklaracja\Dane\Nazwa pliku”.</span><span class="sxs-lookup"><span data-stu-id="0888a-168">In the tree, select 'File\Declaration\Data\File name'.</span></span>
+46. <span data-ttu-id="0888a-169">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="0888a-169">Click Bind.</span></span>
+47. <span data-ttu-id="0888a-170">W drzewie rozwiń model„”</span><span class="sxs-lookup"><span data-stu-id="0888a-170">In the tree, expand 'model'.</span></span>
+48. <span data-ttu-id="0888a-171">W drzewie rozwiń węzeł „model\Transakcje”.</span><span class="sxs-lookup"><span data-stu-id="0888a-171">In the tree, expand 'model\Transactions'.</span></span>
+49. <span data-ttu-id="0888a-172">W drzewie zaznacz element „Plik\Deklaracja\Dane\Pozycja = model.Transakcje\Identyfikator rekordu asortymentu”.</span><span class="sxs-lookup"><span data-stu-id="0888a-172">In the tree, select 'File\Declaration\Data\Item =  model.Transactions\Commodity rec id'.</span></span>
+50. <span data-ttu-id="0888a-173">W drzewie zaznacz element „model\Transakcje\Identyfikator rekordu asortymentu”.</span><span class="sxs-lookup"><span data-stu-id="0888a-173">In the tree, select 'model\Transactions\Commodity rec id'.</span></span>
+51. <span data-ttu-id="0888a-174">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="0888a-174">Click Bind.</span></span>
+52. <span data-ttu-id="0888a-175">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="0888a-175">Click Save.</span></span>
 
-## <a name="modify-format-to-memorize-details-of-reporting"></a>Modyfikowanie formatu w celu zapamiętywania danych raportowania
-1. Kliknij opcję Mapuj format na model.
-2. Kliknij przycisk Nowy.
-3. W polu Definicja wprowadź lub wybierz pozycję główną „W celu aktualizacji danych aplikacji”.
-    * W celu aktualizacji danych aplikacji  
-4. W polu Nazwa wpisz „Mapowanie na dane aktualizacyjne”.
-    * Mapowanie na dane aktualizacyjne  
-5. Kliknij przycisk Zapisz.
-    * To mapowanie określa, jak szczegóły raportu Intrastat są gromadzone w modelu danych, którego struktura jest określana przez wybraną pozycję główną „W celu aktualizacji danych aplikacji”. Te szczegóły, mapowanie modelu z tą samą pozycją główną „W celu aktualizacji danych aplikacji” i kierunek „Do lokalizacji docelowej” zostaną użyte do zaktualizowania danych aplikacji. Aktualizacja danych aplikacji rozpoczyna się natychmiast po wygenerowaniu wychodzącego raportu Intrastat. Należy zauważyć, że można pominąć aktualizację danych aplikacji w czasie wykonywania, ale model danych musi być pusty (tzn. musi zawierać pustą listę rekordów).   
-6. Kliknij przycisk Konstruktor.
-    * Należy zauważyć, że format wychodzącego raportu Intrastat jest dodawany domyślnie jako źródło danych dla tego mapowania modelu.  
-    * Powiąż elementy projektowanego raportu (przedstawiane jako źródło danych) z elementami modelu danych wyfiltrowanymi na podstawie pozycji głównej wybranego modelu.  
-7. W drzewie rozwiń węzeł „Nagłówek archiwum”.
-8. W drzewie rozwiń węzeł „Nagłówek archiwum\Wiersze archiwum”.
-9. W drzewie rozwiń węzeł „format”.
-10. W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)”.
-11. W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)”.
-12. W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)”.
-13. W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)\Wym3: Element XML 1..1 (Kwota)”.
-14. W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)\Wym4: Element XML 1..1 (Pozycja)”.
-15. W drzewie zaznacz element „Nagłówek archiwum\Liczba wierszy”.
-16. Kliknij przycisk Edytuj.
-17. W drzewie zaznacz element „Lista\COUNT”.
-18. Kliknij opcję Dodaj funkcję.
-19. W drzewie rozwiń węzeł „format”.
-20. W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)”.
-21. W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)”.
-22. W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)”.
-23. Kliknij opcję Dodaj źródło danych.
-24. W polu Formuła wpisz „COUNT(format.Deklaracja.Dane.Pozycja)”.
-    * COUNT(format.Deklaracja.Dane.Pozycja)  
-25. Kliknij przycisk Zapisz.
-26. Zamknij stronę.
-27. W drzewie zaznacz element „Nagłówek archiwum\Nazwa pliku”.
-28. W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Nazwa pliku: Ciąg pozycji(Nazwa pliku)”.
-29. Kliknij opcję Powiąż.
-30. W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)\Wym4: Element XML 1..1 (Pozycja)\numer: Ciąg(numer)”.
-31. W drzewie zaznacz element „Nagłówek archiwum\Wiersze archiwum\Numer pozycji”.
-32. Kliknij opcję Powiąż.
-33. W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)\Wym3: Element XML 1..1 (Kwota)\wartość: Liczbowa rzeczywista(wartość)”.
-34. W drzewie zaznacz element „Nagłówek archiwum\Wiersze archiwum\Kwota”.
-35. Kliknij opcję Powiąż.
-36. W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)\Identyfikator rekordu asortymentu: Pozycja Int64(Identyfikator rekordu asortymentu)”.
-37. W drzewie zaznacz element „Nagłówek archiwum\Wiersze archiwum\Identyfikator rekordu asortymentu”.
-38. Kliknij opcję Powiąż.
-39. W drzewie zaznacz element „Nagłówek archiwum\Wiersze archiwum”.
-40. W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)”.
-41. Kliknij opcję Powiąż.
-42. W drzewie zaznacz element „Nagłówek archiwum”.
-43. W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)”.
-44. Kliknij opcję Powiąż.
-45. Kliknij przycisk Zapisz.
-46. Zamknij stronę.
-47. Zamknij stronę.
-48. Zamknij stronę.
+## <a name="modify-format-to-memorize-details-of-reporting"></a><span data-ttu-id="0888a-176">Modyfikowanie formatu w celu zapamiętywania danych raportowania</span><span class="sxs-lookup"><span data-stu-id="0888a-176">Modify format to memorize details of reporting</span></span>
+1. <span data-ttu-id="0888a-177">Kliknij opcję Mapuj format na model.</span><span class="sxs-lookup"><span data-stu-id="0888a-177">Click Map format to model.</span></span>
+2. <span data-ttu-id="0888a-178">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0888a-178">Click New.</span></span>
+3. <span data-ttu-id="0888a-179">W polu Definicja wprowadź lub wybierz pozycję główną „W celu aktualizacji danych aplikacji”.</span><span class="sxs-lookup"><span data-stu-id="0888a-179">In the Definition field, enter or select the ‘For application data update’ root item.</span></span>
+    * <span data-ttu-id="0888a-180">W celu aktualizacji danych aplikacji</span><span class="sxs-lookup"><span data-stu-id="0888a-180">For application data update</span></span>  
+4. <span data-ttu-id="0888a-181">W polu Nazwa wpisz „Mapowanie na dane aktualizacyjne”.</span><span class="sxs-lookup"><span data-stu-id="0888a-181">In the Name field, type 'Mapping to update data'.</span></span>
+    * <span data-ttu-id="0888a-182">Mapowanie na dane aktualizacyjne</span><span class="sxs-lookup"><span data-stu-id="0888a-182">Mapping to update data</span></span>  
+5. <span data-ttu-id="0888a-183">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="0888a-183">Click Save.</span></span>
+    * <span data-ttu-id="0888a-184">To mapowanie określa, jak szczegóły raportu Intrastat są gromadzone w modelu danych, którego struktura jest określana przez wybraną pozycję główną „W celu aktualizacji danych aplikacji”.</span><span class="sxs-lookup"><span data-stu-id="0888a-184">This mapping defines how the details of the Intrastat report are collected in the data model, the structure of which is specified by the selected root item ‘For application data update’.</span></span> <span data-ttu-id="0888a-185">Te szczegóły, mapowanie modelu z tą samą pozycją główną „W celu aktualizacji danych aplikacji” i kierunek „Do lokalizacji docelowej” zostaną użyte do zaktualizowania danych aplikacji.</span><span class="sxs-lookup"><span data-stu-id="0888a-185">These details, the model mapping with same root item ‘For application data update’, and the direction ‘To destination’ will be used for the application data update.</span></span> <span data-ttu-id="0888a-186">Aktualizacja danych aplikacji rozpoczyna się natychmiast po wygenerowaniu wychodzącego raportu Intrastat.</span><span class="sxs-lookup"><span data-stu-id="0888a-186">The application data update starts immediately after the outgoing Intrastat report is generated.</span></span> <span data-ttu-id="0888a-187">Należy zauważyć, że można pominąć aktualizację danych aplikacji w czasie wykonywania, ale model danych musi być pusty (tzn. musi zawierać pustą listę rekordów).</span><span class="sxs-lookup"><span data-stu-id="0888a-187">Note that the application data update can be skipped at run-time, but the data model must be empty (containing empty record list).</span></span>   
+6. <span data-ttu-id="0888a-188">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="0888a-188">Click Designer.</span></span>
+    * <span data-ttu-id="0888a-189">Należy zauważyć, że format wychodzącego raportu Intrastat jest dodawany domyślnie jako źródło danych dla tego mapowania modelu.</span><span class="sxs-lookup"><span data-stu-id="0888a-189">Note that the outgoing Intrastat report format is added by default as a data source for this model mapping.</span></span>  
+    * <span data-ttu-id="0888a-190">Powiąż elementy projektowanego raportu (przedstawiane jako źródło danych) z elementami modelu danych wyfiltrowanymi na podstawie pozycji głównej wybranego modelu.</span><span class="sxs-lookup"><span data-stu-id="0888a-190">Bind elements of the designed report (presented as data source) to elements of the data model, which is filtered based on the selected model’s root item.</span></span>  
+7. <span data-ttu-id="0888a-191">W drzewie rozwiń węzeł „Nagłówek archiwum”.</span><span class="sxs-lookup"><span data-stu-id="0888a-191">In the tree, expand 'Archive header'.</span></span>
+8. <span data-ttu-id="0888a-192">W drzewie rozwiń węzeł „Nagłówek archiwum\Wiersze archiwum”.</span><span class="sxs-lookup"><span data-stu-id="0888a-192">In the tree, expand 'Archive header\Archive lines'.</span></span>
+9. <span data-ttu-id="0888a-193">W drzewie rozwiń węzeł „format”.</span><span class="sxs-lookup"><span data-stu-id="0888a-193">In the tree, expand 'format'.</span></span>
+10. <span data-ttu-id="0888a-194">W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-194">In the tree, expand 'format\Declaration: XML Element(Declaration)'.</span></span>
+11. <span data-ttu-id="0888a-195">W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-195">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)'.</span></span>
+12. <span data-ttu-id="0888a-196">W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-196">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)'.</span></span>
+13. <span data-ttu-id="0888a-197">W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)\Wym3: Element XML 1..1 (Kwota)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-197">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)'.</span></span>
+14. <span data-ttu-id="0888a-198">W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)\Wym4: Element XML 1..1 (Pozycja)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-198">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)'.</span></span>
+15. <span data-ttu-id="0888a-199">W drzewie zaznacz element „Nagłówek archiwum\Liczba wierszy”.</span><span class="sxs-lookup"><span data-stu-id="0888a-199">In the tree, select 'Archive header\Number of lines'.</span></span>
+16. <span data-ttu-id="0888a-200">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="0888a-200">Click Edit.</span></span>
+17. <span data-ttu-id="0888a-201">W drzewie zaznacz element „Lista\COUNT”.</span><span class="sxs-lookup"><span data-stu-id="0888a-201">In the tree, select 'List\COUNT'.</span></span>
+18. <span data-ttu-id="0888a-202">Kliknij opcję Dodaj funkcję.</span><span class="sxs-lookup"><span data-stu-id="0888a-202">Click Add function.</span></span>
+19. <span data-ttu-id="0888a-203">W drzewie rozwiń węzeł „format”.</span><span class="sxs-lookup"><span data-stu-id="0888a-203">In the tree, expand 'format'.</span></span>
+20. <span data-ttu-id="0888a-204">W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-204">In the tree, expand 'format\Declaration: XML Element(Declaration)'.</span></span>
+21. <span data-ttu-id="0888a-205">W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-205">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)'.</span></span>
+22. <span data-ttu-id="0888a-206">W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-206">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)'.</span></span>
+23. <span data-ttu-id="0888a-207">Kliknij opcję Dodaj źródło danych.</span><span class="sxs-lookup"><span data-stu-id="0888a-207">Click Add data source.</span></span>
+24. <span data-ttu-id="0888a-208">W polu Formuła wpisz „COUNT(format.Deklaracja.Dane.Pozycja)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-208">In the Formula field, enter 'COUNT(format.Declaration.Data.Item)'.</span></span>
+    * <span data-ttu-id="0888a-209">COUNT(format.Deklaracja.Dane.Pozycja)</span><span class="sxs-lookup"><span data-stu-id="0888a-209">COUNT(format.Declaration.Data.Item)</span></span>  
+25. <span data-ttu-id="0888a-210">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="0888a-210">Click Save.</span></span>
+26. <span data-ttu-id="0888a-211">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="0888a-211">Close the page.</span></span>
+27. <span data-ttu-id="0888a-212">W drzewie zaznacz element „Nagłówek archiwum\Nazwa pliku”.</span><span class="sxs-lookup"><span data-stu-id="0888a-212">In the tree, select 'Archive header\File name'.</span></span>
+28. <span data-ttu-id="0888a-213">W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Nazwa pliku: Ciąg pozycji(Nazwa pliku)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-213">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\File name: Item String(File name)'.</span></span>
+29. <span data-ttu-id="0888a-214">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="0888a-214">Click Bind.</span></span>
+30. <span data-ttu-id="0888a-215">W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)\Wym4: Element XML 1..1 (Pozycja)\numer: Ciąg(numer)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-215">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)'.</span></span>
+31. <span data-ttu-id="0888a-216">W drzewie zaznacz element „Nagłówek archiwum\Wiersze archiwum\Numer pozycji”.</span><span class="sxs-lookup"><span data-stu-id="0888a-216">In the tree, select 'Archive header\Archive lines\Item number'.</span></span>
+32. <span data-ttu-id="0888a-217">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="0888a-217">Click Bind.</span></span>
+33. <span data-ttu-id="0888a-218">W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)\Wym3: Element XML 1..1 (Kwota)\wartość: Liczbowa rzeczywista(wartość)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-218">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)'.</span></span>
+34. <span data-ttu-id="0888a-219">W drzewie zaznacz element „Nagłówek archiwum\Wiersze archiwum\Kwota”.</span><span class="sxs-lookup"><span data-stu-id="0888a-219">In the tree, select 'Archive header\Archive lines\Amount'.</span></span>
+35. <span data-ttu-id="0888a-220">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="0888a-220">Click Bind.</span></span>
+36. <span data-ttu-id="0888a-221">W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)\Identyfikator rekordu asortymentu: Pozycja Int64(Identyfikator rekordu asortymentu)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-221">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec id: Item Int64(Commodity rec id)'.</span></span>
+37. <span data-ttu-id="0888a-222">W drzewie zaznacz element „Nagłówek archiwum\Wiersze archiwum\Identyfikator rekordu asortymentu”.</span><span class="sxs-lookup"><span data-stu-id="0888a-222">In the tree, select 'Archive header\Archive lines\Commodity rec id'.</span></span>
+38. <span data-ttu-id="0888a-223">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="0888a-223">Click Bind.</span></span>
+39. <span data-ttu-id="0888a-224">W drzewie zaznacz element „Nagłówek archiwum\Wiersze archiwum”.</span><span class="sxs-lookup"><span data-stu-id="0888a-224">In the tree, select 'Archive header\Archive lines'.</span></span>
+40. <span data-ttu-id="0888a-225">W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-225">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)'.</span></span>
+41. <span data-ttu-id="0888a-226">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="0888a-226">Click Bind.</span></span>
+42. <span data-ttu-id="0888a-227">W drzewie zaznacz element „Nagłówek archiwum”.</span><span class="sxs-lookup"><span data-stu-id="0888a-227">In the tree, select 'Archive header'.</span></span>
+43. <span data-ttu-id="0888a-228">W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)”.</span><span class="sxs-lookup"><span data-stu-id="0888a-228">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)'.</span></span>
+44. <span data-ttu-id="0888a-229">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="0888a-229">Click Bind.</span></span>
+45. <span data-ttu-id="0888a-230">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="0888a-230">Click Save.</span></span>
+46. <span data-ttu-id="0888a-231">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="0888a-231">Close the page.</span></span>
+47. <span data-ttu-id="0888a-232">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="0888a-232">Close the page.</span></span>
+48. <span data-ttu-id="0888a-233">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="0888a-233">Close the page.</span></span>
 
 

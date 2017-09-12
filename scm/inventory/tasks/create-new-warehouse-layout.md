@@ -1,4 +1,4 @@
---- 
+---
 title: "Tworzenie nowego układu magazynu"
 description: "W tej procedurze pokazano sposób konfigurowania informacji o lokalizacjach w magazynie."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,62 +17,61 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 15610bc797cf7e7abdec433d0a5cead60da7a555
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 253440d81edd6f71b52ae349398e3c6a895bf05c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="create-a-new-warehouse-layout"></a>Tworzenie nowego układu magazynu
+# <a name="create-a-new-warehouse-layout"></a><span data-ttu-id="57d12-103">Tworzenie nowego układu magazynu</span><span class="sxs-lookup"><span data-stu-id="57d12-103">Create a new warehouse layout</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób konfigurowania informacji o lokalizacjach w magazynie. Dotyczy to tylko magazynów utworzonych przy użyciu funkcji „podstawowego magazynowania” dostępnych w module Zarządzanie zapasami, a nie magazynów utworzonych w module Zarządzanie magazynem. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
+<span data-ttu-id="57d12-104">W tej procedurze pokazano sposób konfigurowania informacji o lokalizacjach w magazynie.</span><span class="sxs-lookup"><span data-stu-id="57d12-104">This procedure shows you how to set up information about the locations in a warehouse.</span></span> <span data-ttu-id="57d12-105">Dotyczy to tylko magazynów utworzonych przy użyciu funkcji „podstawowego magazynowania” dostępnych w module Zarządzanie zapasami, a nie magazynów utworzonych w module Zarządzanie magazynem.</span><span class="sxs-lookup"><span data-stu-id="57d12-105">This applies only to warehouses created using "basic warehousing" in the Inventory management module, not to warehouses created in the Warehouse management module.</span></span> <span data-ttu-id="57d12-106">Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="57d12-106">You can use this procedure in demo data company USMF, or on your own data.</span></span>
 
 
-## <a name="set-the-default-location-capacity"></a>Ustawianie domyślnej pojemności lokalizacji
-1. Wybierz kolejno opcje Zarządzanie zapasami > Ustawienia > Parametry modułu Zarządzanie zapasami i magazynem.
-2. Kliknij kartę Lokalizacje.
-3. W polu Standardowa szerokość wprowadź liczbę.
-4. W polu Standardowa długość wprowadź liczbę.
-5. W polu Standardowa wysokość wprowadź liczbę.
-6. Kliknij przycisk Zapisz.
-7. Zamknij stronę.
+## <a name="set-the-default-location-capacity"></a><span data-ttu-id="57d12-107">Ustawianie domyślnej pojemności lokalizacji</span><span class="sxs-lookup"><span data-stu-id="57d12-107">Set the default location capacity</span></span>
+1. <span data-ttu-id="57d12-108">Wybierz kolejno opcje Zarządzanie zapasami > Ustawienia > Parametry modułu Zarządzanie zapasami i magazynem.</span><span class="sxs-lookup"><span data-stu-id="57d12-108">Go to Inventory management > Setup > Inventory and warehouse management parameters.</span></span>
+2. <span data-ttu-id="57d12-109">Kliknij kartę Lokalizacje.</span><span class="sxs-lookup"><span data-stu-id="57d12-109">Click the Locations tab.</span></span>
+3. <span data-ttu-id="57d12-110">W polu Standardowa szerokość wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="57d12-110">In the Standard width field, enter a number.</span></span>
+4. <span data-ttu-id="57d12-111">W polu Standardowa długość wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="57d12-111">In the Standard depth field, enter a number.</span></span>
+5. <span data-ttu-id="57d12-112">W polu Standardowa wysokość wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="57d12-112">In the Standard height field, enter a number.</span></span>
+6. <span data-ttu-id="57d12-113">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="57d12-113">Click Save.</span></span>
+7. <span data-ttu-id="57d12-114">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="57d12-114">Close the page.</span></span>
 
-## <a name="define-the-location-name-format"></a>Określanie formatu nazwy lokalizacji
-1. Przejdź do Zarządzanie zapasami > Konfiguracja > Podział magazynu > Magazyny.
-2. Kliknij przycisk Nowy.
-3. W polu Magazyn wpisz wartość.
-4. W polu Nazwa wpisz wartość.
-5. W polu Oddział kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-6. Na liście znajdź i zaznacz odpowiedni rekord.
-7. Przełącz rozwinięcie sekcji Nazwy lokalizacji.
-    * Opcje w tej sekcji definiują domyślny format nazw lokalizacji. W naszym przykładzie uwzględnimy numery alei, regału i półki.  
-8. W opcji Uwzględnij korytarz zaznacz wartość Tak.
-9. W opcji Uwzględnij regał zaznacz wartość Tak. 
-10. W polu Format dla regału wpisz wartość.
-    * Na przykład: -##  
-11. W opcji Uwzględnij półkę zaznacz wartość Tak.
-12. W polu Format dla półki wpisz wartość.
-    * Na przykład: -##  
+## <a name="define-the-location-name-format"></a><span data-ttu-id="57d12-115">Określanie formatu nazwy lokalizacji</span><span class="sxs-lookup"><span data-stu-id="57d12-115">Define the location name format</span></span>
+1. <span data-ttu-id="57d12-116">Przejdź do Zarządzanie zapasami > Konfiguracja > Podział magazynu > Magazyny.</span><span class="sxs-lookup"><span data-stu-id="57d12-116">Go to Inventory management > Setup > Inventory breakdown > Warehouses.</span></span>
+2. <span data-ttu-id="57d12-117">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="57d12-117">Click New.</span></span>
+3. <span data-ttu-id="57d12-118">W polu Magazyn wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="57d12-118">In the Warehouse field, type a value.</span></span>
+4. <span data-ttu-id="57d12-119">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="57d12-119">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="57d12-120">W polu Oddział kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="57d12-120">In the Site field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="57d12-121">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="57d12-121">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="57d12-122">Przełącz rozwinięcie sekcji Nazwy lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="57d12-122">Toggle the expansion of the Location names section.</span></span>
+    * <span data-ttu-id="57d12-123">Opcje w tej sekcji definiują domyślny format nazw lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="57d12-123">The options in this section define the default format for location names.</span></span> <span data-ttu-id="57d12-124">W naszym przykładzie uwzględnimy numery alei, regału i półki.</span><span class="sxs-lookup"><span data-stu-id="57d12-124">In our example, we'll include the aisle number, rack number and shelf number.</span></span>  
+8. <span data-ttu-id="57d12-125">W opcji Uwzględnij korytarz zaznacz wartość Tak.</span><span class="sxs-lookup"><span data-stu-id="57d12-125">Set the Include aisle option to Yes.</span></span>
+9. <span data-ttu-id="57d12-126">W opcji Uwzględnij regał zaznacz wartość Tak.</span><span class="sxs-lookup"><span data-stu-id="57d12-126">Set the Include rack option to Yes.</span></span>
+10. <span data-ttu-id="57d12-127">W polu Format dla regału wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="57d12-127">In the Format field, for the rack, type a value.</span></span>
+    * <span data-ttu-id="57d12-128">Na przykład: -##</span><span class="sxs-lookup"><span data-stu-id="57d12-128">For example: -##</span></span>  
+11. <span data-ttu-id="57d12-129">W opcji Uwzględnij półkę zaznacz wartość Tak.</span><span class="sxs-lookup"><span data-stu-id="57d12-129">Set the Include shelf option to Yes.</span></span>
+12. <span data-ttu-id="57d12-130">W polu Format dla półki wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="57d12-130">In the Format field, for the shelf, type a value.</span></span>
+    * <span data-ttu-id="57d12-131">Na przykład: -##</span><span class="sxs-lookup"><span data-stu-id="57d12-131">For example: -##</span></span>  
 
-## <a name="define-warehouse-locations"></a>Określanie lokalizacji w magazynach
-1. W okienku akcji kliknij pozycję Magazyn.
-2. Kliknij przycisk Kreator lokalizacji.
-3. Kliknij przycisk Dalej.
-4. Usuń zaznaczenie opcji Doki załadunkowe
-5. Usuń zaznaczenie opcji Lokalizacje zbiorcze
-6. Kliknij przycisk Dalej.
-7. Kliknij przycisk Dalej.
-8. Kliknij przycisk Dalej.
-9. Kliknij przycisk Dalej.
-10. Kliknij przycisk Dalej.
-11. Kliknij przycisk Dalej.
-12. Kliknij przycisk Dalej.
-    * Należy zwrócić uwagę, że wymiary fizyczne wyświetlane na tej stronie ustawiono na początku tej procedury.  
-13. Kliknij przycisk Dalej.
-14. Kliknij przycisk Zakończ.
-15. Zamknij stronę.
-16. Odśwież stronę.
-
+## <a name="define-warehouse-locations"></a><span data-ttu-id="57d12-132">Określanie lokalizacji w magazynach</span><span class="sxs-lookup"><span data-stu-id="57d12-132">Define warehouse locations</span></span>
+1. <span data-ttu-id="57d12-133">W okienku akcji kliknij pozycję Magazyn.</span><span class="sxs-lookup"><span data-stu-id="57d12-133">On the Action Pane, click Warehouse.</span></span>
+2. <span data-ttu-id="57d12-134">Kliknij przycisk Kreator lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="57d12-134">Click Location Wizard.</span></span>
+3. <span data-ttu-id="57d12-135">Kliknij przycisk Dalej.</span><span class="sxs-lookup"><span data-stu-id="57d12-135">Click Next.</span></span>
+4. <span data-ttu-id="57d12-136">Usuń zaznaczenie opcji Doki załadunkowe</span><span class="sxs-lookup"><span data-stu-id="57d12-136">De-select the Outbound docks option</span></span>
+5. <span data-ttu-id="57d12-137">Usuń zaznaczenie opcji Lokalizacje zbiorcze</span><span class="sxs-lookup"><span data-stu-id="57d12-137">De-select the Bulk locations option</span></span>
+6. <span data-ttu-id="57d12-138">Kliknij przycisk Dalej.</span><span class="sxs-lookup"><span data-stu-id="57d12-138">Click Next.</span></span>
+7. <span data-ttu-id="57d12-139">Kliknij przycisk Dalej.</span><span class="sxs-lookup"><span data-stu-id="57d12-139">Click Next.</span></span>
+8. <span data-ttu-id="57d12-140">Kliknij przycisk Dalej.</span><span class="sxs-lookup"><span data-stu-id="57d12-140">Click Next.</span></span>
+9. <span data-ttu-id="57d12-141">Kliknij przycisk Dalej.</span><span class="sxs-lookup"><span data-stu-id="57d12-141">Click Next.</span></span>
+10. <span data-ttu-id="57d12-142">Kliknij przycisk Dalej.</span><span class="sxs-lookup"><span data-stu-id="57d12-142">Click Next.</span></span>
+11. <span data-ttu-id="57d12-143">Kliknij przycisk Dalej.</span><span class="sxs-lookup"><span data-stu-id="57d12-143">Click Next.</span></span>
+12. <span data-ttu-id="57d12-144">Kliknij przycisk Dalej.</span><span class="sxs-lookup"><span data-stu-id="57d12-144">Click Next.</span></span>
+    * <span data-ttu-id="57d12-145">Należy zwrócić uwagę, że wymiary fizyczne wyświetlane na tej stronie ustawiono na początku tej procedury.</span><span class="sxs-lookup"><span data-stu-id="57d12-145">Note that the physical dimensions shown on this page are the ones that you set at the start of this procedure.</span></span>  
+13. <span data-ttu-id="57d12-146">Kliknij przycisk Dalej.</span><span class="sxs-lookup"><span data-stu-id="57d12-146">Click Next.</span></span>
+14. <span data-ttu-id="57d12-147">Kliknij przycisk Zakończ.</span><span class="sxs-lookup"><span data-stu-id="57d12-147">Click Finish.</span></span>
+15. <span data-ttu-id="57d12-148">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="57d12-148">Close the page.</span></span>
+16. <span data-ttu-id="57d12-149">Odśwież stronę.</span><span class="sxs-lookup"><span data-stu-id="57d12-149">Refresh the page.</span></span>
 

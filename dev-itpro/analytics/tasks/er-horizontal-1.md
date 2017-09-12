@@ -16,136 +16,136 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 94898674f02de72111e131f563b33926dda8ac8e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fdba6a68cd98b0ccbc4072f5c1124088ed9d814b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a>Projektowanie formatu w celu używania poziomo rozszerzalnych zakresów do dynamicznego dodawania kolumn w raportach programu Excel na potrzeby raportowania elektronicznego (ER)
+# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-for-electronic-reporting-er"></a><span data-ttu-id="bbf28-103">Projektowanie formatu w celu używania poziomo rozszerzalnych zakresów do dynamicznego dodawania kolumn w raportach programu Excel na potrzeby raportowania elektronicznego (ER)</span><span class="sxs-lookup"><span data-stu-id="bbf28-103">Design a format to use horizontally-expandable ranges to dynamically add columns in Excel reports for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może skonfigurować format raportowania elektronicznego (ER) do generowania raportów jako plików arkuszy OPENXML(Excel), w których wymagane kolumny mogą być tworzone dynamicznie jako poziomo rozszerzalne zakresy. Kroki można wykonać na danych dowolnej firmy.
+<span data-ttu-id="bbf28-104">W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może skonfigurować format raportowania elektronicznego (ER) do generowania raportów jako plików arkuszy OPENXML(Excel), w których wymagane kolumny mogą być tworzone dynamicznie jako poziomo rozszerzalne zakresy.</span><span class="sxs-lookup"><span data-stu-id="bbf28-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files in which the required columns can be created dynamically as horizontally expandable ranges.</span></span> <span data-ttu-id="bbf28-105">Kroki można wykonać na danych dowolnej firmy.</span><span class="sxs-lookup"><span data-stu-id="bbf28-105">These steps can be performed in any company.</span></span>
 
-W ceku wykonania tych kroków najpierw należy wykonać następujące trzy przewodniki po zadaniach: 
+<span data-ttu-id="bbf28-106">W ceku wykonania tych kroków najpierw należy wykonać następujące trzy przewodniki po zadaniach:</span><span class="sxs-lookup"><span data-stu-id="bbf28-106">To complete these steps, you must first complete these three task guides:</span></span> 
 
-„ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”
+<span data-ttu-id="bbf28-107">„ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”</span><span class="sxs-lookup"><span data-stu-id="bbf28-107">“ER Create a configuration provider and mark it as active”</span></span>
 
-„ER Używanie wymiarów finansowych jako źródła danych (Część 1: Projektowanie modelu danych)”
+<span data-ttu-id="bbf28-108">„ER Używanie wymiarów finansowych jako źródła danych (Część 1: Projektowanie modelu danych)”</span><span class="sxs-lookup"><span data-stu-id="bbf28-108">“ER Use financial dimensions as a data source (Part 1: Design data model)”</span></span>
 
-„ER Używanie wymiarów finansowych jako źródła danych (Część 2: Mapowanie modelu)”
+<span data-ttu-id="bbf28-109">„ER Używanie wymiarów finansowych jako źródła danych (Część 2: Mapowanie modelu)”</span><span class="sxs-lookup"><span data-stu-id="bbf28-109">“ER Use financial dimensions as a data source (Part 2: Model mapping)”</span></span>
 
-Należy również pobrać i zapisać lokalną kopię następującego szablonu z przykładowym raportem: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx
+<span data-ttu-id="bbf28-110">Należy również pobrać i zapisać lokalną kopię następującego szablonu z przykładowym raportem: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx</span><span class="sxs-lookup"><span data-stu-id="bbf28-110">You must also download and save a local copy of the template with a sample report found here: http://msdynamics.blob.core.windows.net/media/2016/09/SampleFinDimWsReport.xlsx</span></span>
 
-Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.
+<span data-ttu-id="bbf28-111">Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.</span><span class="sxs-lookup"><span data-stu-id="bbf28-111">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-new-report-configuration"></a>Tworzenie nowej konfiguracji raportu
-1. Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Konfiguracje.
-2. W drzewie zaznacz element „Wymiany finansowe przykładowego modelu”.
-3. Kliknij przycisk Utwórz konfigurację, aby otworzyć rozwijane okno dialogowe.
-4. W polu Nowy wpisz „Format oparty na modelu danych Wymiany finansowe przykładowego modelu”.
-    * Użyj utworzonego wcześniej modelu jako źródła danych dla nowego raportu.  
-5. W polu nazwa wpisz „Przykładowy raport z poziomo rozszerzalnymi zakresami”.
-    * Przykładowy raport z poziomo rozszerzalnymi zakresami  
-6. W polu Opis wpisz „Generowanie danych wyjściowych programu Excel z dynamicznym dodawaniem kolumn”.
-    * Generowanie danych wyjściowych programu Excel z dynamicznym dodawaniem kolumn  
-7. W polu Definicja modelu danych zaznacz wartość Wpis.
-8. Kliknij przycisk Utwórz konfigurację.
+## <a name="create-a-new-report-configuration"></a><span data-ttu-id="bbf28-112">Tworzenie nowej konfiguracji raportu</span><span class="sxs-lookup"><span data-stu-id="bbf28-112">Create a new report configuration</span></span>
+1. <span data-ttu-id="bbf28-113">Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Konfiguracje.</span><span class="sxs-lookup"><span data-stu-id="bbf28-113">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="bbf28-114">W drzewie zaznacz element „Wymiany finansowe przykładowego modelu”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-114">In the tree, select 'Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="bbf28-115">Kliknij przycisk Utwórz konfigurację, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="bbf28-115">Click Create configuration to open the drop dialog.</span></span>
+4. <span data-ttu-id="bbf28-116">W polu Nowy wpisz „Format oparty na modelu danych Wymiany finansowe przykładowego modelu”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-116">In the New field, enter 'Format based on data model Financial dimensions sample model'.</span></span>
+    * <span data-ttu-id="bbf28-117">Użyj utworzonego wcześniej modelu jako źródła danych dla nowego raportu.</span><span class="sxs-lookup"><span data-stu-id="bbf28-117">Use the model created in advance as the data source for your new report.</span></span>  
+5. <span data-ttu-id="bbf28-118">W polu nazwa wpisz „Przykładowy raport z poziomo rozszerzalnymi zakresami”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-118">In the Name field, type 'Sample report with horizontally expandable ranges'.</span></span>
+    * <span data-ttu-id="bbf28-119">Przykładowy raport z poziomo rozszerzalnymi zakresami</span><span class="sxs-lookup"><span data-stu-id="bbf28-119">Sample report with horizontally expandable ranges</span></span>  
+6. <span data-ttu-id="bbf28-120">W polu Opis wpisz „Generowanie danych wyjściowych programu Excel z dynamicznym dodawaniem kolumn”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-120">In the Description field, type 'To make Excel output with dynamically adding columns'.</span></span>
+    * <span data-ttu-id="bbf28-121">Generowanie danych wyjściowych programu Excel z dynamicznym dodawaniem kolumn</span><span class="sxs-lookup"><span data-stu-id="bbf28-121">To make Excel output with dynamically adding columns</span></span>  
+7. <span data-ttu-id="bbf28-122">W polu Definicja modelu danych zaznacz wartość Wpis.</span><span class="sxs-lookup"><span data-stu-id="bbf28-122">In the Data model definition field, select Entry.</span></span>
+8. <span data-ttu-id="bbf28-123">Kliknij przycisk Utwórz konfigurację.</span><span class="sxs-lookup"><span data-stu-id="bbf28-123">Click Create configuration.</span></span>
 
-## <a name="design-the-report-format"></a>Projektowanie formatu raportu
-1. Kliknij przycisk Konstruktor.
-2. Włącz przełączany przycisk „Pokaż szczegóły”.
-3. W okienku akcji kliknij pozycję Importuj.
-4. Kliknij opcję Importuj z programu Excel.
-5. Kliknij opcję Załączniki.
-    * Zaimportuj szablon raportu. Użyj do tego pobranego pliku programu Excel.  
-6. Kliknij przycisk Nowy.
-7. Kliknij opcję Plik.
-8. Zamknij stronę.
-9. W polu Szablon wprowadź lub wybierz wartość.
-    * Zaznacz pobrany szablon.  
-10. Kliknij przycisk OK.
-    * Dodaj nowy zakres w celu dynamicznego utworzenia pliku wyjściowego programu Excel ze wszystkimi wybranymi kolumnami (w formularzu okna dialogowego użytkownika) dla wymiarów finansowych. Każda komórka w każdej kolumnie będą reprezentować nazwę jednego wymiaru finansowego.  
-11. Kliknij przycisk Dodaj, aby otworzyć rozwijane okno dialogowe.
-12. W drzewie zaznacz element „Excel\Zakres”.
-13. W polu Zakres programu Excel wpisz „DimNames”.
-    * DimNames  
-14. W polu Kierunek replikacji wybierz opcję „Poziomo”.
-15. Kliknij przycisk OK.
-16. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<DimNames>: Poziomo”.
-17. Kliknij przycisk W górę.
-18. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Komórka<DimNames>”.
-19. Kliknij opcję Wytnij.
-20. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<DimNames>: Poziomo”.
-21. Kliknij opcję Wklej.
-22. W drzewie rozwiń węzeł „Excel = "SampleFinDimWsReport"\Zakres<DimNames>: Poziomo”.
-23. W drzewie rozwiń węzeł „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo”.
-24. W drzewie rozwiń węzeł „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Vertical\Range<TransactionLine>: Pionowo”.
-25. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Vertical\Range<TransactionLine>: Pionowo”.
-    * Dodaj nowy zakres w celu dynamicznego utworzenia pliku wyjściowego programu Excel ze wszystkimi wybranymi kolumnami (w formularzu okna dialogowego użytkownika) dla wymiarów finansowych. Każda komórka w każdej kolumnie będą reprezentować wartość jednego wymiaru finansowego dla każdej raportowanej transakcji.  
-26. Kliknij opcję Dodaj zakres.
-27. W polu Zakres programu Excel wpisz „DimValues”.
-    * DimValues  
-28. W polu Kierunek replikacji wybierz opcję „Poziomo”.
-29. Kliknij przycisk OK.
-30. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Komórka<DimValues>”.
-31. Kliknij opcję Wytnij.
-32. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Zakres<DimValues>: Poziomo”.
-33. Kliknij opcję Wklej.
-34. W drzewie rozwiń węzeł „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Zakres<DimValues>: Poziomo”.
+## <a name="design-the-report-format"></a><span data-ttu-id="bbf28-124">Projektowanie formatu raportu</span><span class="sxs-lookup"><span data-stu-id="bbf28-124">Design the report format</span></span>
+1. <span data-ttu-id="bbf28-125">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="bbf28-125">Click Designer.</span></span>
+2. <span data-ttu-id="bbf28-126">Włącz przełączany przycisk „Pokaż szczegóły”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-126">Turn on the ‘Show details’ toggle button.</span></span>
+3. <span data-ttu-id="bbf28-127">W okienku akcji kliknij pozycję Importuj.</span><span class="sxs-lookup"><span data-stu-id="bbf28-127">On the Action Pane, click Import.</span></span>
+4. <span data-ttu-id="bbf28-128">Kliknij opcję Importuj z programu Excel.</span><span class="sxs-lookup"><span data-stu-id="bbf28-128">Click Import from Excel.</span></span>
+5. <span data-ttu-id="bbf28-129">Kliknij opcję Załączniki.</span><span class="sxs-lookup"><span data-stu-id="bbf28-129">Click Attachments.</span></span>
+    * <span data-ttu-id="bbf28-130">Zaimportuj szablon raportu.</span><span class="sxs-lookup"><span data-stu-id="bbf28-130">Import the report’s template.</span></span> <span data-ttu-id="bbf28-131">Użyj do tego pobranego pliku programu Excel.</span><span class="sxs-lookup"><span data-stu-id="bbf28-131">Use Excel file that you downloaded for that.</span></span>  
+6. <span data-ttu-id="bbf28-132">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="bbf28-132">Click New.</span></span>
+7. <span data-ttu-id="bbf28-133">Kliknij opcję Plik.</span><span class="sxs-lookup"><span data-stu-id="bbf28-133">Click File.</span></span>
+8. <span data-ttu-id="bbf28-134">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="bbf28-134">Close the page.</span></span>
+9. <span data-ttu-id="bbf28-135">W polu Szablon wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="bbf28-135">In the Template field, enter or select a value.</span></span>
+    * <span data-ttu-id="bbf28-136">Zaznacz pobrany szablon.</span><span class="sxs-lookup"><span data-stu-id="bbf28-136">Select the downloaded template.</span></span>  
+10. <span data-ttu-id="bbf28-137">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="bbf28-137">Click OK.</span></span>
+    * <span data-ttu-id="bbf28-138">Dodaj nowy zakres w celu dynamicznego utworzenia pliku wyjściowego programu Excel ze wszystkimi wybranymi kolumnami (w formularzu okna dialogowego użytkownika) dla wymiarów finansowych.</span><span class="sxs-lookup"><span data-stu-id="bbf28-138">Add a new range to dynamically create Excel output with as many columns as you selected (in the user dialog form) for financial dimensions.</span></span> <span data-ttu-id="bbf28-139">Każda komórka w każdej kolumnie będą reprezentować nazwę jednego wymiaru finansowego.</span><span class="sxs-lookup"><span data-stu-id="bbf28-139">Each cell for every column will represent a single financial dimension’s name.</span></span>  
+11. <span data-ttu-id="bbf28-140">Kliknij przycisk Dodaj, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="bbf28-140">Click Add to open the drop dialog.</span></span>
+12. <span data-ttu-id="bbf28-141">W drzewie zaznacz element „Excel\Zakres”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-141">In the tree, select 'Excel\Range'.</span></span>
+13. <span data-ttu-id="bbf28-142">W polu Zakres programu Excel wpisz „DimNames”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-142">In the Excel range field, type 'DimNames'.</span></span>
+    * <span data-ttu-id="bbf28-143">DimNames</span><span class="sxs-lookup"><span data-stu-id="bbf28-143">DimNames</span></span>  
+14. <span data-ttu-id="bbf28-144">W polu Kierunek replikacji wybierz opcję „Poziomo”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-144">In the Replication direction field, select 'Horizontal'.</span></span>
+15. <span data-ttu-id="bbf28-145">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="bbf28-145">Click OK.</span></span>
+16. <span data-ttu-id="bbf28-146">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<DimNames>: Poziomo”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-146">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+17. <span data-ttu-id="bbf28-147">Kliknij przycisk W górę.</span><span class="sxs-lookup"><span data-stu-id="bbf28-147">Click Move up.</span></span>
+18. <span data-ttu-id="bbf28-148">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Komórka<DimNames>”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-148">In the tree, select 'Excel = "SampleFinDimWsReport"\Cell<DimNames>'.</span></span>
+19. <span data-ttu-id="bbf28-149">Kliknij opcję Wytnij.</span><span class="sxs-lookup"><span data-stu-id="bbf28-149">Click Cut.</span></span>
+20. <span data-ttu-id="bbf28-150">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<DimNames>: Poziomo”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-150">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+21. <span data-ttu-id="bbf28-151">Kliknij opcję Wklej.</span><span class="sxs-lookup"><span data-stu-id="bbf28-151">Click Paste.</span></span>
+22. <span data-ttu-id="bbf28-152">W drzewie rozwiń węzeł „Excel = "SampleFinDimWsReport"\Zakres<DimNames>: Poziomo”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-152">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+23. <span data-ttu-id="bbf28-153">W drzewie rozwiń węzeł „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-153">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical'.</span></span>
+24. <span data-ttu-id="bbf28-154">W drzewie rozwiń węzeł „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Vertical\Range<TransactionLine>: Pionowo”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-154">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical'.</span></span>
+25. <span data-ttu-id="bbf28-155">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Vertical\Range<TransactionLine>: Pionowo”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-155">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical'.</span></span>
+    * <span data-ttu-id="bbf28-156">Dodaj nowy zakres w celu dynamicznego utworzenia pliku wyjściowego programu Excel ze wszystkimi wybranymi kolumnami (w formularzu okna dialogowego użytkownika) dla wymiarów finansowych.</span><span class="sxs-lookup"><span data-stu-id="bbf28-156">Add a new range to dynamically create Excel output with as many columns as you selected (in the user dialog form) for financial dimensions.</span></span> <span data-ttu-id="bbf28-157">Każda komórka w każdej kolumnie będą reprezentować wartość jednego wymiaru finansowego dla każdej raportowanej transakcji.</span><span class="sxs-lookup"><span data-stu-id="bbf28-157">Each cell for every column will represent a single financial dimension’s value for each reporting transaction.</span></span>  
+26. <span data-ttu-id="bbf28-158">Kliknij opcję Dodaj zakres.</span><span class="sxs-lookup"><span data-stu-id="bbf28-158">Click Add Range.</span></span>
+27. <span data-ttu-id="bbf28-159">W polu Zakres programu Excel wpisz „DimValues”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-159">In the Excel range field, type 'DimValues'.</span></span>
+    * <span data-ttu-id="bbf28-160">DimValues</span><span class="sxs-lookup"><span data-stu-id="bbf28-160">DimValues</span></span>  
+28. <span data-ttu-id="bbf28-161">W polu Kierunek replikacji wybierz opcję „Poziomo”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-161">In the Replication direction field, select 'Horizontal'.</span></span>
+29. <span data-ttu-id="bbf28-162">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="bbf28-162">Click OK.</span></span>
+30. <span data-ttu-id="bbf28-163">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Komórka<DimValues>”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-163">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<DimValues>'.</span></span>
+31. <span data-ttu-id="bbf28-164">Kliknij opcję Wytnij.</span><span class="sxs-lookup"><span data-stu-id="bbf28-164">Click Cut.</span></span>
+32. <span data-ttu-id="bbf28-165">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Zakres<DimValues>: Poziomo”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-165">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal'.</span></span>
+33. <span data-ttu-id="bbf28-166">Kliknij opcję Wklej.</span><span class="sxs-lookup"><span data-stu-id="bbf28-166">Click Paste.</span></span>
+34. <span data-ttu-id="bbf28-167">W drzewie rozwiń węzeł „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Zakres<DimValues>: Poziomo”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-167">In the tree, expand 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal'.</span></span>
 
-## <a name="map-format-elements-to-data-sources"></a>Mapowanie elementów formatu na źródła danych
-1. Kliknij kartę Mapowanie.
-2. W drzewie rozwiń węzeł „model: Model danych Wymiany finansowe przykładowego modelu”.
-3. W drzewie rozwiń węzeł „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów”.
-4. W drzewie rozwiń węzeł „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów”.
-5. W drzewie rozwiń węzeł „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Dane wymiarów: Lista rekordów”.
-6. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Zakres<DimValues>: Poziomo\Komórka<DimValues>”.
-7. W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Dane wymiarów: Lista rekordów\Kod: Ciąg”.
-8. Kliknij opcję Powiąż.
-9. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Zakres<DimValues>: Poziomo”.
-10. W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Dane wymiarów: Lista rekordów”.
-11. Kliknij opcję Powiąż.
-12. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Komórka<Credit>”.
-13. W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Kredyt: Liczba rzeczywista”.
-14. Kliknij opcję Powiąż.
-15. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Komórka<Debit>”.
-16. W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Debet: Liczba rzeczywista”.
-17. Kliknij opcję Powiąż.
-18. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Komórka<Currency>”.
-19. W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Waluta: Ciąg”.
-20. Kliknij opcję Powiąż.
-21. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Komórka<TransDate>”.
-22. W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Data: Data”.
-23. Kliknij opcję Powiąż.
-24. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Komórka<TransVoucher>”.
-25. W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Załącznik: Ciąg”.
-26. Kliknij opcję Powiąż.
-27. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Komórka<TransBatch>”.
-28. W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Partia: Ciąg”.
-29. Kliknij opcję Powiąż.
-30. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Vertical\Range<TransactionLine>: Pionowo”.
-31. W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów”.
-32. Kliknij opcję Powiąż.
-33. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Komórka<Batch>”.
-34. W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Partia: Ciąg”.
-35. Kliknij opcję Powiąż.
-36. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo”.
-37. W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów”.
-38. Kliknij opcję Powiąż.
-39. W drzewie rozwiń węzeł „model: Model danych Wymiany finansowe przykładowego modelu\Ustawienie wymiarów: Lista rekordów”.
-40. W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Ustawienie wymiarów: Lista rekordów\Kod: Ciąg”.
-41. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<DimNames>: Poziomo\Komórka<DimNames>”.
-42. Kliknij opcję Powiąż.
-43. W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Ustawienie wymiarów: Lista rekordów”.
-44. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<DimNames>: Poziomo”.
-45. Kliknij opcję Powiąż.
-46. W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Komórka<CompanyName>”.
-47. W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Firma: Ciąg”.
-48. Kliknij opcję Powiąż.
-49. Kliknij przycisk Zapisz.
-50. Zamknij stronę.
+## <a name="map-format-elements-to-data-sources"></a><span data-ttu-id="bbf28-168">Mapowanie elementów formatu na źródła danych</span><span class="sxs-lookup"><span data-stu-id="bbf28-168">Map format elements to data sources</span></span>
+1. <span data-ttu-id="bbf28-169">Kliknij kartę Mapowanie.</span><span class="sxs-lookup"><span data-stu-id="bbf28-169">Click the Mapping tab.</span></span>
+2. <span data-ttu-id="bbf28-170">W drzewie rozwiń węzeł „model: Model danych Wymiany finansowe przykładowego modelu”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-170">In the tree, expand 'model: Data model Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="bbf28-171">W drzewie rozwiń węzeł „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-171">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list'.</span></span>
+4. <span data-ttu-id="bbf28-172">W drzewie rozwiń węzeł „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-172">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list'.</span></span>
+5. <span data-ttu-id="bbf28-173">W drzewie rozwiń węzeł „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Dane wymiarów: Lista rekordów”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-173">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list'.</span></span>
+6. <span data-ttu-id="bbf28-174">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Zakres<DimValues>: Poziomo\Komórka<DimValues>”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-174">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal\Cell<DimValues>'.</span></span>
+7. <span data-ttu-id="bbf28-175">W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Dane wymiarów: Lista rekordów\Kod: Ciąg”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-175">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Code: String'.</span></span>
+8. <span data-ttu-id="bbf28-176">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="bbf28-176">Click Bind.</span></span>
+9. <span data-ttu-id="bbf28-177">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Zakres<DimValues>: Poziomo”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-177">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Range<DimValues>: Horizontal'.</span></span>
+10. <span data-ttu-id="bbf28-178">W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Dane wymiarów: Lista rekordów”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-178">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list'.</span></span>
+11. <span data-ttu-id="bbf28-179">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="bbf28-179">Click Bind.</span></span>
+12. <span data-ttu-id="bbf28-180">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Komórka<Credit>”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-180">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Credit>'.</span></span>
+13. <span data-ttu-id="bbf28-181">W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Kredyt: Liczba rzeczywista”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-181">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Credit: Real'.</span></span>
+14. <span data-ttu-id="bbf28-182">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="bbf28-182">Click Bind.</span></span>
+15. <span data-ttu-id="bbf28-183">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Komórka<Debit>”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-183">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Debit>'.</span></span>
+16. <span data-ttu-id="bbf28-184">W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Debet: Liczba rzeczywista”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-184">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Debit: Real'.</span></span>
+17. <span data-ttu-id="bbf28-185">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="bbf28-185">Click Bind.</span></span>
+18. <span data-ttu-id="bbf28-186">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Komórka<Currency>”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-186">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<Currency>'.</span></span>
+19. <span data-ttu-id="bbf28-187">W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Waluta: Ciąg”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-187">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Currency: String'.</span></span>
+20. <span data-ttu-id="bbf28-188">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="bbf28-188">Click Bind.</span></span>
+21. <span data-ttu-id="bbf28-189">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Komórka<TransDate>”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-189">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransDate>'.</span></span>
+22. <span data-ttu-id="bbf28-190">W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Data: Data”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-190">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Date: Date'.</span></span>
+23. <span data-ttu-id="bbf28-191">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="bbf28-191">Click Bind.</span></span>
+24. <span data-ttu-id="bbf28-192">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Komórka<TransVoucher>”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-192">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransVoucher>'.</span></span>
+25. <span data-ttu-id="bbf28-193">W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów\Załącznik: Ciąg”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-193">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Voucher: String'.</span></span>
+26. <span data-ttu-id="bbf28-194">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="bbf28-194">Click Bind.</span></span>
+27. <span data-ttu-id="bbf28-195">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Zakres<TransactionLine>: Pionowo\Komórka<TransBatch>”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-195">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical\Cell<TransBatch>'.</span></span>
+28. <span data-ttu-id="bbf28-196">W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Partia: Ciąg”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-196">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Batch: String'.</span></span>
+29. <span data-ttu-id="bbf28-197">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="bbf28-197">Click Bind.</span></span>
+30. <span data-ttu-id="bbf28-198">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Vertical\Range<TransactionLine>: Pionowo”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-198">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Range<TransactionLine>: Vertical'.</span></span>
+31. <span data-ttu-id="bbf28-199">W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Transakcja: Lista rekordów”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-199">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list'.</span></span>
+32. <span data-ttu-id="bbf28-200">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="bbf28-200">Click Bind.</span></span>
+33. <span data-ttu-id="bbf28-201">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo\Komórka<Batch>”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-201">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical\Cell<Batch>'.</span></span>
+34. <span data-ttu-id="bbf28-202">W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów\Partia: Ciąg”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-202">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Batch: String'.</span></span>
+35. <span data-ttu-id="bbf28-203">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="bbf28-203">Click Bind.</span></span>
+36. <span data-ttu-id="bbf28-204">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<JournalLine>: Pionowo”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-204">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<JournalLine>: Vertical'.</span></span>
+37. <span data-ttu-id="bbf28-205">W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Arkusz: Lista rekordów”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-205">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list'.</span></span>
+38. <span data-ttu-id="bbf28-206">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="bbf28-206">Click Bind.</span></span>
+39. <span data-ttu-id="bbf28-207">W drzewie rozwiń węzeł „model: Model danych Wymiany finansowe przykładowego modelu\Ustawienie wymiarów: Lista rekordów”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-207">In the tree, expand 'model: Data model Financial dimensions sample model\Dimensions setting: Record list'.</span></span>
+40. <span data-ttu-id="bbf28-208">W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Ustawienie wymiarów: Lista rekordów\Kod: Ciąg”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-208">In the tree, select 'model: Data model Financial dimensions sample model\Dimensions setting: Record list\Code: String'.</span></span>
+41. <span data-ttu-id="bbf28-209">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<DimNames>: Poziomo\Komórka<DimNames>”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-209">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal\Cell<DimNames>'.</span></span>
+42. <span data-ttu-id="bbf28-210">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="bbf28-210">Click Bind.</span></span>
+43. <span data-ttu-id="bbf28-211">W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Ustawienie wymiarów: Lista rekordów”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-211">In the tree, select 'model: Data model Financial dimensions sample model\Dimensions setting: Record list'.</span></span>
+44. <span data-ttu-id="bbf28-212">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Zakres<DimNames>: Poziomo”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-212">In the tree, select 'Excel = "SampleFinDimWsReport"\Range<DimNames>: Horizontal'.</span></span>
+45. <span data-ttu-id="bbf28-213">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="bbf28-213">Click Bind.</span></span>
+46. <span data-ttu-id="bbf28-214">W drzewie zaznacz element „Excel = "SampleFinDimWsReport"\Komórka<CompanyName>”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-214">In the tree, select 'Excel = "SampleFinDimWsReport"\Cell<CompanyName>'.</span></span>
+47. <span data-ttu-id="bbf28-215">W drzewie zaznacz element „model: Model danych Wymiany finansowe przykładowego modelu\Firma: Ciąg”.</span><span class="sxs-lookup"><span data-stu-id="bbf28-215">In the tree, select 'model: Data model Financial dimensions sample model\Company: String'.</span></span>
+48. <span data-ttu-id="bbf28-216">Kliknij opcję Powiąż.</span><span class="sxs-lookup"><span data-stu-id="bbf28-216">Click Bind.</span></span>
+49. <span data-ttu-id="bbf28-217">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="bbf28-217">Click Save.</span></span>
+50. <span data-ttu-id="bbf28-218">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="bbf28-218">Close the page.</span></span>
 
 

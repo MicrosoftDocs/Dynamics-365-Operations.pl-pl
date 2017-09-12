@@ -17,62 +17,62 @@ ms.assetid: 128340e1-c573-48e6-b835-6c350d8dd0fb
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a0eeb5a57f9b82150150752c64e89c2c91856889
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 07ed503b7c441cb594e8e96ddcd9a81c0745a963
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="physical-and-financial-updates"></a>Aktualizacje fizyczne i finansowe
+# <a name="physical-and-financial-updates"></a><span data-ttu-id="78af5-103">Aktualizacje fizyczne i finansowe</span><span class="sxs-lookup"><span data-stu-id="78af5-103">Physical and financial updates</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym temacie przedstawiono typy transakcji, które przekładają się na zwiększanie lub zmniejszanie ilości zapasów. 
+<span data-ttu-id="78af5-104">W tym temacie przedstawiono typy transakcji, które przekładają się na zwiększanie lub zmniejszanie ilości zapasów.</span><span class="sxs-lookup"><span data-stu-id="78af5-104">This topic provides an overview of which types of transactions increase or decrease inventory quantities.</span></span> 
 
-W programie Microsoft Dynamics 365 for Finance and Operations transakcje magazynowe można zaktualizowane fizycznie i finansowo. Niektóre typy transakcji fizycznych i finansowych zwiększają ilości zapasów, podczas gdy inne je zmniejszają.
+<span data-ttu-id="78af5-105">W programie Microsoft Dynamics 365 for Finance and Operations transakcje magazynowe można zaktualizowane fizycznie i finansowo.</span><span class="sxs-lookup"><span data-stu-id="78af5-105">Inventory transactions can be physically updated and financially updated in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="78af5-106">Niektóre typy transakcji fizycznych i finansowych zwiększają ilości zapasów, podczas gdy inne je zmniejszają.</span><span class="sxs-lookup"><span data-stu-id="78af5-106">Some types of physical and financial transactions increase inventory quantities, whereas others decrease the quantity.</span></span>
 
-## <a name="physical-increases"></a>Wzrost fizyczny
-Po zaksięgowaniu transakcji fizycznej stan tej transakcji przyjmuje wartość **Otrzymano**. Oto transakcje, które stanowią wzrost fizyczny:
+## <a name="physical-increases"></a><span data-ttu-id="78af5-107">Wzrost fizyczny</span><span class="sxs-lookup"><span data-stu-id="78af5-107">Physical increases</span></span>
+<span data-ttu-id="78af5-108">Po zaksięgowaniu transakcji fizycznej stan tej transakcji przyjmuje wartość **Otrzymano**.</span><span class="sxs-lookup"><span data-stu-id="78af5-108">When a physical transaction is posted, the status of the transaction record is **Received**.</span></span> <span data-ttu-id="78af5-109">Oto transakcje, które stanowią wzrost fizyczny:</span><span class="sxs-lookup"><span data-stu-id="78af5-109">The following transactions are considered physical increases:</span></span>
 
--   zamówienie zakupu — przychód,
--   zwrot dokumentu dostawy zamówienia sprzedaży,
--   Zgłaszanie zlecenia produkcyjnego jako zakończonego
--   według produktów na liście pobrania zlecenia produkcyjnego.
+-   <span data-ttu-id="78af5-110">zamówienie zakupu — przychód,</span><span class="sxs-lookup"><span data-stu-id="78af5-110">Purchase order receipt</span></span>
+-   <span data-ttu-id="78af5-111">zwrot dokumentu dostawy zamówienia sprzedaży,</span><span class="sxs-lookup"><span data-stu-id="78af5-111">Sales order packing slip return</span></span>
+-   <span data-ttu-id="78af5-112">Zgłaszanie zlecenia produkcyjnego jako zakończonego</span><span class="sxs-lookup"><span data-stu-id="78af5-112">Reporting a production order as finished</span></span>
+-   <span data-ttu-id="78af5-113">według produktów na liście pobrania zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="78af5-113">By-product on a production order picking list</span></span>
 
-## <a name="financial-increases"></a>Wzrost finansowy
-Po zaksięgowaniu finansowej transakcji przychodu stan rekordu tej transakcji powodującej zwiększenie ilości przyjmuje wartość **Zakupiono**. Oto transakcje, które stanowią wzrost finansowy:
+## <a name="financial-increases"></a><span data-ttu-id="78af5-114">Wzrost finansowy</span><span class="sxs-lookup"><span data-stu-id="78af5-114">Financial increases</span></span>
+<span data-ttu-id="78af5-115">Po zaksięgowaniu finansowej transakcji przychodu stan rekordu tej transakcji powodującej zwiększenie ilości przyjmuje wartość **Zakupiono**.</span><span class="sxs-lookup"><span data-stu-id="78af5-115">When a financial receipt transaction is posted, the status of the transaction record that increases the quantity is **Purchased**.</span></span> <span data-ttu-id="78af5-116">Oto transakcje, które stanowią wzrost finansowy:</span><span class="sxs-lookup"><span data-stu-id="78af5-116">The following transactions are considered financial increases:</span></span>
 
--   Faktura dostawcy
--   faktura zamówienia zakupu do zwrotu,
--   wycena zlecenia produkcyjnego,
--   Arkusze magazynowe z ilością dodatnią, takie jak przeniesienie, zyski i straty, zliczanie, BOM i przeniesienie.
+-   <span data-ttu-id="78af5-117">Faktura dostawcy</span><span class="sxs-lookup"><span data-stu-id="78af5-117">Vendor invoice</span></span>
+-   <span data-ttu-id="78af5-118">faktura zamówienia zakupu do zwrotu,</span><span class="sxs-lookup"><span data-stu-id="78af5-118">Sales order invoice for a return</span></span>
+-   <span data-ttu-id="78af5-119">wycena zlecenia produkcyjnego,</span><span class="sxs-lookup"><span data-stu-id="78af5-119">Production order costing</span></span>
+-   <span data-ttu-id="78af5-120">Arkusze magazynowe z ilością dodatnią, takie jak przeniesienie, zyski i straty, zliczanie, BOM i przeniesienie.</span><span class="sxs-lookup"><span data-stu-id="78af5-120">Positive quantity inventory journals, such as movement, profit and loss, counting, bill of materials, and transfer</span></span>
 
-## <a name="transactions-that-increase-quantity"></a>Transakcje, które zwiększają ilość
-Transakcje zwiększające ilość są księgowane według dynamicznych średnich kosztów własnych. Po zaksięgowaniu transakcji zwiększających ilość program Finance and Operations oblicza średnią kroczącą kosztu własnego na podstawie tych wszystkich transakcji dla każdego wymiaru zapasów podlegającego śledzeniu finansowemu. Aby uzyskać informacje o uruchamianiu średnich kosztów własnych, zobacz [Dynamiczne średnie koszty własne](running-average-cost-price.md).
+## <a name="transactions-that-increase-quantity"></a><span data-ttu-id="78af5-121">Transakcje, które zwiększają ilość</span><span class="sxs-lookup"><span data-stu-id="78af5-121">Transactions that increase quantity</span></span>
+<span data-ttu-id="78af5-122">Transakcje zwiększające ilość są księgowane według dynamicznych średnich kosztów własnych.</span><span class="sxs-lookup"><span data-stu-id="78af5-122">Transactions that increase quantity are posted at the running average cost price.</span></span> <span data-ttu-id="78af5-123">Po zaksięgowaniu transakcji zwiększających ilość program Finance and Operations oblicza średnią kroczącą kosztu własnego na podstawie tych wszystkich transakcji dla każdego wymiaru zapasów podlegającego śledzeniu finansowemu.</span><span class="sxs-lookup"><span data-stu-id="78af5-123">Finance and Operations calculates a running average cost price that is based on the cost of each of these transactions for each inventory dimension that is being tracked financially.</span></span> <span data-ttu-id="78af5-124">Aby uzyskać informacje o uruchamianiu średnich kosztów własnych, zobacz [Dynamiczne średnie koszty własne](running-average-cost-price.md).</span><span class="sxs-lookup"><span data-stu-id="78af5-124">For information about running average cost prices, see [Running average cost price](running-average-cost-price.md).</span></span>
 
-## <a name="transactions-that-decrease-quantity"></a>Transakcje, które zmniejszają ilość
-Finance and Operations używa obliczonej średniej kroczącej kosztu własnego podczas księgowania transakcji, która zmniejsza ilość, niezależnie od tego, który model zapasów jest powiązany z danymi zapasami. Wymaga to, aby transakcja, która zmniejsza ilość nie została wcześniej oznaczona dla innej transakcji przed zaksięgowaniem. Jeśli fizycznie dostępne zapasy osiągną ilość ujemną, w programie Finance and Operations jest używany koszt zapasów zdefiniowany dla towaru na stronie **Pozycja**. **Uwaga:** Jeśli włączono funkcję wielooddziałowości, to koszt ten będzie zastępczo używany jako koszt magazynowy, zdefiniowany dla oddziału na stronie **Ustawienia domyślne zamówień**.
+## <a name="transactions-that-decrease-quantity"></a><span data-ttu-id="78af5-125">Transakcje, które zmniejszają ilość</span><span class="sxs-lookup"><span data-stu-id="78af5-125">Transactions that decrease quantity</span></span>
+<span data-ttu-id="78af5-126">Finance and Operations używa obliczonej średniej kroczącej kosztu własnego podczas księgowania transakcji, która zmniejsza ilość, niezależnie od tego, który model zapasów jest powiązany z danymi zapasami.</span><span class="sxs-lookup"><span data-stu-id="78af5-126">Finance and Operations uses the calculated running average cost price when a transaction that decreases quantity is posted, regardless of the inventory model that is associated with that inventory.</span></span> <span data-ttu-id="78af5-127">Wymaga to, aby transakcja, która zmniejsza ilość nie została wcześniej oznaczona dla innej transakcji przed zaksięgowaniem.</span><span class="sxs-lookup"><span data-stu-id="78af5-127">The transaction that decreases quantity must not have been marked to another transaction before it was posted.</span></span> <span data-ttu-id="78af5-128">Jeśli fizycznie dostępne zapasy osiągną ilość ujemną, w programie Finance and Operations jest używany koszt zapasów zdefiniowany dla towaru na stronie **Pozycja**.</span><span class="sxs-lookup"><span data-stu-id="78af5-128">If the physical on-hand inventory becomes negative, Finance and Operations uses the inventory cost that is defined for the item on the **Item** page.</span></span> <span data-ttu-id="78af5-129">**Uwaga:** Jeśli włączono funkcję wielooddziałowości, to koszt ten będzie zastępczo używany jako koszt magazynowy, zdefiniowany dla oddziału na stronie **Ustawienia domyślne zamówień**.</span><span class="sxs-lookup"><span data-stu-id="78af5-129">**Note:** If multisite functionality is enabled, this cost will instead be the inventory cost that is defined for a site on the **Default order settings** page.</span></span>
 
-## <a name="physical-issues-vs-financial-issues"></a>Rozchody fizyczne a finansowe
-Po zaksięgowaniu transakcji fizycznego rozchodu stan rekordu transakcji przyjmuje wartość **Zmniejszono**. Oto transakcje stanowiące fizyczne rozchody:
+## <a name="physical-issues-vs-financial-issues"></a><span data-ttu-id="78af5-130">Rozchody fizyczne a finansowe</span><span class="sxs-lookup"><span data-stu-id="78af5-130">Physical issues vs. financial issues</span></span>
+<span data-ttu-id="78af5-131">Po zaksięgowaniu transakcji fizycznego rozchodu stan rekordu transakcji przyjmuje wartość **Zmniejszono**.</span><span class="sxs-lookup"><span data-stu-id="78af5-131">When a physical issue transaction is posted, the status of the transaction record is **Deducted**.</span></span> <span data-ttu-id="78af5-132">Oto transakcje stanowiące fizyczne rozchody:</span><span class="sxs-lookup"><span data-stu-id="78af5-132">The following transactions are considered physical issues:</span></span>
 
--   arkusz listy pobrań zlecenia produkcyjnego,
--   dokument dostawy zamówienia sprzedaży,
--   zwrot dokumentu dostawy zamówienia zakupu.
+-   <span data-ttu-id="78af5-133">arkusz listy pobrań zlecenia produkcyjnego,</span><span class="sxs-lookup"><span data-stu-id="78af5-133">Production order picking list journal</span></span>
+-   <span data-ttu-id="78af5-134">dokument dostawy zamówienia sprzedaży,</span><span class="sxs-lookup"><span data-stu-id="78af5-134">Sales order packing slip</span></span>
+-   <span data-ttu-id="78af5-135">zwrot dokumentu dostawy zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="78af5-135">Purchase order packing slip return</span></span>
 
-Po zaksięgowaniu transakcji finansowej stan rekordu tej transakcji przyjmuje wartość **Sprzedano**. Oto transakcje stanowiące finansowe rozchody:
+<span data-ttu-id="78af5-136">Po zaksięgowaniu transakcji finansowej stan rekordu tej transakcji przyjmuje wartość **Sprzedano**.</span><span class="sxs-lookup"><span data-stu-id="78af5-136">When a financial transaction is posted, the status of the transaction record is **Sold**.</span></span> <span data-ttu-id="78af5-137">Oto transakcje stanowiące finansowe rozchody:</span><span class="sxs-lookup"><span data-stu-id="78af5-137">The following transactions are considered financial issues:</span></span>
 
--   Kończenie zlecenia produkcyjnego
--   Faktura dla zamówienia sprzedaży
--   Zwrot z faktury od dostawcy
--   Arkusze magazynowe z ilością ujemną, takie jak przeniesienie, zyski i straty, zliczanie, BOM i przeniesienie.
+-   <span data-ttu-id="78af5-138">Kończenie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="78af5-138">Ending a production order</span></span>
+-   <span data-ttu-id="78af5-139">Faktura dla zamówienia sprzedaży</span><span class="sxs-lookup"><span data-stu-id="78af5-139">Sales order invoice</span></span>
+-   <span data-ttu-id="78af5-140">Zwrot z faktury od dostawcy</span><span class="sxs-lookup"><span data-stu-id="78af5-140">Vendor invoice return</span></span>
+-   <span data-ttu-id="78af5-141">Arkusze magazynowe z ilością ujemną, takie jak przeniesienie, zyski i straty, zliczanie, BOM i przeniesienie.</span><span class="sxs-lookup"><span data-stu-id="78af5-141">Negative quantity inventory journals, such as movement, profit and loss, counting, bill of materials, and transfer</span></span>
 
-Transakcje zmniejszające ilość są księgowane według dynamicznych średnich kosztów własnych. Z tego powodu proces zamknięcia magazynu jest wymagany w celu rozliczenia transakcji rozchodu z transakcjami przychodu, według modelu magazynu przypisanego dla danego towaru.
+<span data-ttu-id="78af5-142">Transakcje zmniejszające ilość są księgowane według dynamicznych średnich kosztów własnych.</span><span class="sxs-lookup"><span data-stu-id="78af5-142">Transactions that decrease quantity are posted at the running average cost price.</span></span> <span data-ttu-id="78af5-143">Z tego powodu proces zamknięcia magazynu jest wymagany w celu rozliczenia transakcji rozchodu z transakcjami przychodu, według modelu magazynu przypisanego dla danego towaru.</span><span class="sxs-lookup"><span data-stu-id="78af5-143">Therefore, the inventory close procedure is required in order to settle issue transactions to receipt transactions, based on the inventory model that is assigned to each item.</span></span>
 
 
 

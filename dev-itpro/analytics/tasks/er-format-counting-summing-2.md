@@ -16,127 +16,127 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: d787cc951f8389fb07a265c99635fedeca132170
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 000cfe484865ff5c1003c2a68eac710491f6c536
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-computations-to-do-counting-and-summing-for-electronic-reporting-er"></a>Konfigurowanie obliczeń służących do zliczania i sumowania na potrzeby raportowania elektronicznego (ER)
+# <a name="configure-computations-to-do-counting-and-summing-for-electronic-reporting-er"></a><span data-ttu-id="a002c-103">Konfigurowanie obliczeń służących do zliczania i sumowania na potrzeby raportowania elektronicznego (ER)</span><span class="sxs-lookup"><span data-stu-id="a002c-103">Configure computations to do counting and summing for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować format raportowania elektronicznego (ER), aby wykonywał inwentaryzację i sumowanie na podstawie danych już wygenerowanych tekstów wyjściowych. Kroki można wykonać na danych dowolnej firmy.
+<span data-ttu-id="a002c-104">W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować format raportowania elektronicznego (ER), aby wykonywał inwentaryzację i sumowanie na podstawie danych już wygenerowanych tekstów wyjściowych.</span><span class="sxs-lookup"><span data-stu-id="a002c-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output.</span></span> <span data-ttu-id="a002c-105">Kroki można wykonać na danych dowolnej firmy.</span><span class="sxs-lookup"><span data-stu-id="a002c-105">These steps can be performed in any company.</span></span>
 
-Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Konfigurowanie formatu do inwentaryzacji i sumowania (Część 1: Tworzenie formatu)”.
+<span data-ttu-id="a002c-106">Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Konfigurowanie formatu do inwentaryzacji i sumowania (Część 1: Tworzenie formatu)”.</span><span class="sxs-lookup"><span data-stu-id="a002c-106">To complete these steps, you must first complete the steps in the “ER Configure format to do counting and summing (Part 1: Create format)” procedure.</span></span>
 
-Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.
+<span data-ttu-id="a002c-107">Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.</span><span class="sxs-lookup"><span data-stu-id="a002c-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-format-configuration-to-add-counting-and-summing-details"></a>Tworzenie konfiguracji formatu w celu dodania szczegółów inwentaryzacji i sumowania
-1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.
-2. Kliknij opcję Konfiguracje raportowania.
-3. W drzewie rozwiń węzeł „Model Intrastat”.
-4. W drzewie zaznacz element „Model Intrastat\Intrastat (Niemcy)”.
-    * Załóżmy, że trzeba dostosować format dostarczony przez firmę Microsoft, dodając wiersze zawierające szczegóły podsumowania na końcu raportu Intrastat. Należy to zrobić poprzez utworzenie własnej pochodnej konfiguracji Intrastat na podstawie wystąpienia otrzymanego od Microsoft i w niej wprowadzić modyfikacje.  
-5. Kliknij przycisk Utwórz konfigurację, aby otworzyć rozwijane okno dialogowe.
-6. W polu Nowy wprowadź wyrażenie „Pochodzi od nazwy: Intrastat (Niemcy), Microsoft”.
-7. W polu Nazwa wpisz wyrażenie „Intrastat (Niemcy) z inwentaryzacją i sumowaniem”.
-8. Kliknij przycisk Utwórz konfigurację.
+## <a name="create-a-format-configuration-to-add-counting-and-summing-details"></a><span data-ttu-id="a002c-108">Tworzenie konfiguracji formatu w celu dodania szczegółów inwentaryzacji i sumowania</span><span class="sxs-lookup"><span data-stu-id="a002c-108">Create a format configuration to add counting and summing details</span></span>
+1. <span data-ttu-id="a002c-109">Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.</span><span class="sxs-lookup"><span data-stu-id="a002c-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="a002c-110">Kliknij opcję Konfiguracje raportowania.</span><span class="sxs-lookup"><span data-stu-id="a002c-110">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="a002c-111">W drzewie rozwiń węzeł „Model Intrastat”.</span><span class="sxs-lookup"><span data-stu-id="a002c-111">In the tree, expand 'Intrastat model'.</span></span>
+4. <span data-ttu-id="a002c-112">W drzewie zaznacz element „Model Intrastat\Intrastat (Niemcy)”.</span><span class="sxs-lookup"><span data-stu-id="a002c-112">In the tree, select 'Intrastat model\Intrastat (DE)'.</span></span>
+    * <span data-ttu-id="a002c-113">Załóżmy, że trzeba dostosować format dostarczony przez firmę Microsoft, dodając wiersze zawierające szczegóły podsumowania na końcu raportu Intrastat.</span><span class="sxs-lookup"><span data-stu-id="a002c-113">Assume that you need to customize the format provided by Microsoft by adding lines with summary details at the end of the Intrastat report.</span></span> <span data-ttu-id="a002c-114">Należy to zrobić poprzez utworzenie własnej pochodnej konfiguracji Intrastat na podstawie wystąpienia otrzymanego od Microsoft i w niej wprowadzić modyfikacje.</span><span class="sxs-lookup"><span data-stu-id="a002c-114">You need to do that by deriving our own instance of the Intrastat configuration from the Microsoft instance to make modifications.</span></span>  
+5. <span data-ttu-id="a002c-115">Kliknij przycisk Utwórz konfigurację, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="a002c-115">Click Create configuration to open the drop dialog.</span></span>
+6. <span data-ttu-id="a002c-116">W polu Nowy wprowadź wyrażenie „Pochodzi od nazwy: Intrastat (Niemcy), Microsoft”.</span><span class="sxs-lookup"><span data-stu-id="a002c-116">In the New field, enter 'Derive from Name: Intrastat (DE), Microsoft'.</span></span>
+7. <span data-ttu-id="a002c-117">W polu Nazwa wpisz wyrażenie „Intrastat (Niemcy) z inwentaryzacją i sumowaniem”.</span><span class="sxs-lookup"><span data-stu-id="a002c-117">In the Name field, type 'Intrastat (DE) with counting & summing'.</span></span>
+8. <span data-ttu-id="a002c-118">Kliknij przycisk Utwórz konfigurację.</span><span class="sxs-lookup"><span data-stu-id="a002c-118">Click Create configuration.</span></span>
 
-## <a name="configure-this-report-to-do-counting-and-summation-based-on-output-details"></a>Konfigurowanie tego raportu w celu wykonania inwentaryzacji i sumowania na podstawie szczegółów danych wyjściowych
-1. Kliknij przycisk Konstruktor.
-2. W polu Pobierz szczegóły rezultatu zaznacz opcję Tak.
-    * Ta flaga będzie w czasie wykonywania uaktywniać proces gromadzenia szczegółów wyjściowych w celu wygenerowania pliku Intrastat.  
-    * Musisz wykonać inwentaryzację dla różnych kierunków Intrastat, dlatego dodasz dedykowane wyliczenie modelu do tej konfiguracji formatu używanej przez listę źródeł danych.  
-3. Kliknij kartę Mapowanie.
-4. Kliknij przycisk Dodaj element główny, aby otworzyć rozwijane okno dialogowe.
-5. W drzewie zaznacz element „Model danych\Wyliczenie”.
-6. W polu Nazwa wpisz „Kierunek”.
-7. W polu Wyliczenie modeli wpisz lub wprowadź wartość.
-    * Wybierz wartość Kierunek.  
-8. Kliknij przycisk OK.
-9. Kliknij przycisk Dodaj element główny, aby otworzyć rozwijane okno dialogowe.
-10. W drzewie zaznacz element „Funkcje\Pole obliczeniowe”.
-11. W polu Nazwa wpisz „$BlockName”.
-12. Kliknij opcję Edytuj formułę.
-13. W polu Formuła wpisz „blok”.
-14. Kliknij przycisk Zapisz.
-15. Zamknij stronę.
-16. Kliknij przycisk OK.
-17. Kliknij przycisk Dodaj element główny, aby otworzyć rozwijane okno dialogowe.
-18. W drzewie zaznacz element „Funkcje\Pole obliczeniowe”.
-19. W polu Nazwa wpisz „$RecName”.
-20. Kliknij opcję Edytuj formułę.
-21. W polu Formuła wpisz „rekord”.
-22. Kliknij przycisk Zapisz.
-23. Zamknij stronę.
-24. Kliknij przycisk OK.
-25. Kliknij przycisk Dodaj element główny, aby otworzyć rozwijane okno dialogowe.
-26. W drzewie zaznacz element „Funkcje\Pole obliczeniowe”.
-27. W polu Nazwa wpisz „$InvName”.
-28. Kliknij opcję Edytuj formułę.
-29. W polu Formuła wpisz „InvoicedAmountEUR”.
-30. Kliknij przycisk Zapisz.
-31. Zamknij stronę.
-32. Kliknij przycisk OK.
-33. W drzewie zaznacz element „Intrastat\Dane”.
-34. Kliknij przycisk Edytuj obok pola „Nazwa pobranego klucza danych”.
-35. Kliknij opcję Dodaj źródło danych.
-    * $BlockName  
-36. Kliknij przycisk Zapisz.
-37. Zamknij stronę.
-38. Kliknij przycisk Edytuj obok pola Wartość pobranego klucza danych.
-39. W polu Formuła wpisz wyrażenie „IF(Intrastat.CommodityRecord.Direction=Kierunek.Import, "Import", "Eksport")”.
-    * IF(Intrastat.CommodityRecord.Direction=Kierunek.Import, "Import", "Eksport")  
-40. Kliknij przycisk Zapisz.
-41. Zamknij stronę.
-    * Liczenie wierszy tej kolejnej sesji. Wyniki zostaną użyte z nazwą „blok” oddzielnie dla różnych kierunków. Wartość „Import” będzie używana dla wszelkich transakcji Intrastat przyjęcia. Wartość „Eksport” będzie używana dla wszelkich transakcji Intrastat wysyłki. Potraktuj to jako wirtualny arkusz kalkulacyjny programu Excel. Dla każdej transakcji będzie tworzony wiersz, gdzie pierwsza kolumna „blok” jest wypełniana odpowiednio wartościami „Import” i „Eksport”.  
-42. W drzewie rozwiń węzeł „Intrastat\Dane: Sekwencja”.
-43. W drzewie zaznacz element „Intrastat\Dane: Sekwencja\Przyjęcia?”.
-44. Kliknij przycisk Edytuj obok pola „Nazwa pobranego klucza danych”.
-    * Liczenie wierszy tej kolejnej sesji. Wyniki zostaną zapamiętane pod nazwą „rekord”.  
-45. W drzewie zaznacz element „$RecName”.
-46. Kliknij opcję Dodaj źródło danych.
-47. Kliknij przycisk Zapisz.
-48. Zamknij stronę.
-49. Kliknij przycisk Edytuj obok pola „Wartość pobranego klucza danych”.
-50. W polu Formuła wprowadź wyrażenie „Intrastat.CommodityRecord.CommodityCode”.
-51. Kliknij przycisk Zapisz.
-52. Zamknij stronę.
-    * Liczenie wierszy tej kolejnej sesji. Wyniki zostaną użyte z nazwą „rekord” oddzielnie dla różnych kodów asortymentu. Potraktuj to jako wirtualny arkusz kalkulacyjny programu Excel. Dla każdej transakcji jest tworzony wiersz, gdzie pierwsza kolumna „blok” jest wypełniana odpowiednio wartościami „Import” i „Eksport”, a drugi blok „rekord” jest wypełniany wartością kodu asortymentu.  
-53. W drzewie zaznacz element „Intrastat\Dane: Sekwencja\Wysyłki?”.
-54. Kliknij przycisk Edytuj obok pola „Nazwa pobranego klucza danych”.
-55. W drzewie zaznacz element „$RecName”.
-56. Kliknij opcję Dodaj źródło danych.
-57. Kliknij przycisk Zapisz.
-58. Zamknij stronę.
-59. Kliknij przycisk Edytuj obok pola „Wartość pobranego klucza danych”.
-60. W polu Formuła wprowadź wyrażenie „Intrastat.CommodityRecord.CommodityCode”.
-61. Kliknij przycisk Zapisz.
-62. Zamknij stronę.
-63. W drzewie rozwiń węzeł „Intrastat\Dane: Sekwencja\Wysyłki: Sekwencja?”.
-64. W drzewie rozwiń węzeł „Intrastat\Dane: Sekwencja\Wysyłki: Sekwencja?\Rekord = Intrastat.CommodityRecord”.
-65. Kliknij kartę Format.
-66. W drzewie zaznacz element „Intrastat\Dane\Wysyłki\Rekord\Kwota faktury w EUR”.
-67. Kliknij kartę Mapowanie.
-68. Kliknij przycisk Edytuj obok pola „Nazwa pobranego klucza danych”.
-69. W drzewie zaznacz element „$InvName”.
-70. Kliknij opcję Dodaj źródło danych.
-71. Kliknij przycisk Zapisz.
-72. Zamknij stronę.
-    * Podsumowanie wartości kwot zafakturowanych dla wierszy tej kolejnej sesji. Wyniki zostaną użyte z nazwą „InvoicedAmountEUR” oddzielnie dla różnych kierunków Intrastat kodów asortymentu. Potraktuj to jak tworzenie wirtualnego arkusza kalkulacyjnego w programie Excel. Dla każdej transakcji będzie tworzony wiersz, gdzie pierwsza kolumna „blok” jest wypełniana odpowiednio wartościami „Import” i „Eksport”. Drugi blok „rekord” jest wypełniony wartością kodu asortymentu, a trzecia kolumna „InvoicedAmountEUR” jest wypełniona wartością kwoty faktury.  
-73. W drzewie rozwiń węzeł „Intrastat\Dane\Przyjęcia?”.
-74. W drzewie rozwiń węzeł „Intrastat\Dane\Przyjęcia?\Rekord = Intrastat.CommodityRecord”.
-75. Kliknij kartę Format.
-76. W drzewie zaznacz element „Intrastat\Dane\Przyjęcia\Rekord\Kwota faktury w EUR”.
-77. Kliknij kartę Mapowanie.
-78. Kliknij przycisk Edytuj obok pola „Nazwa pobranego klucza danych”.
-79. W drzewie zaznacz element „$InvName”.
-80. Kliknij opcję Dodaj źródło danych.
-81. Kliknij przycisk Zapisz.
-82. Zamknij stronę.
-83. Kliknij przycisk Zapisz.
-84. Zamknij stronę.
+## <a name="configure-this-report-to-do-counting-and-summation-based-on-output-details"></a><span data-ttu-id="a002c-119">Konfigurowanie tego raportu w celu wykonania inwentaryzacji i sumowania na podstawie szczegółów danych wyjściowych</span><span class="sxs-lookup"><span data-stu-id="a002c-119">Configure this report to do counting and summation based on output details</span></span>
+1. <span data-ttu-id="a002c-120">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="a002c-120">Click Designer.</span></span>
+2. <span data-ttu-id="a002c-121">W polu Pobierz szczegóły rezultatu zaznacz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="a002c-121">Select Yes in the Collect output details field.</span></span>
+    * <span data-ttu-id="a002c-122">Ta flaga będzie w czasie wykonywania uaktywniać proces gromadzenia szczegółów wyjściowych w celu wygenerowania pliku Intrastat.</span><span class="sxs-lookup"><span data-stu-id="a002c-122">This flag will activate at run-time the process of collecting output details for generating the Intrastat file.</span></span>  
+    * <span data-ttu-id="a002c-123">Musisz wykonać inwentaryzację dla różnych kierunków Intrastat, dlatego dodasz dedykowane wyliczenie modelu do tej konfiguracji formatu używanej przez listę źródeł danych.</span><span class="sxs-lookup"><span data-stu-id="a002c-123">You need to do counting for different Intrastat directions, so add a dedicated model enumeration to the data sources’ list of this format configuration.</span></span>  
+3. <span data-ttu-id="a002c-124">Kliknij kartę Mapowanie.</span><span class="sxs-lookup"><span data-stu-id="a002c-124">Click the Mapping tab.</span></span>
+4. <span data-ttu-id="a002c-125">Kliknij przycisk Dodaj element główny, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="a002c-125">Click Add root to open the drop dialog.</span></span>
+5. <span data-ttu-id="a002c-126">W drzewie zaznacz element „Model danych\Wyliczenie”.</span><span class="sxs-lookup"><span data-stu-id="a002c-126">In the tree, select 'Data model\Enumeration '.</span></span>
+6. <span data-ttu-id="a002c-127">W polu Nazwa wpisz „Kierunek”.</span><span class="sxs-lookup"><span data-stu-id="a002c-127">In the Name field, type 'Direction'.</span></span>
+7. <span data-ttu-id="a002c-128">W polu Wyliczenie modeli wpisz lub wprowadź wartość.</span><span class="sxs-lookup"><span data-stu-id="a002c-128">In the Model enumeration field, enter or select a value.</span></span>
+    * <span data-ttu-id="a002c-129">Wybierz wartość Kierunek.</span><span class="sxs-lookup"><span data-stu-id="a002c-129">Select the value Direction.</span></span>  
+8. <span data-ttu-id="a002c-130">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="a002c-130">Click OK.</span></span>
+9. <span data-ttu-id="a002c-131">Kliknij przycisk Dodaj element główny, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="a002c-131">Click Add root to open the drop dialog.</span></span>
+10. <span data-ttu-id="a002c-132">W drzewie zaznacz element „Funkcje\Pole obliczeniowe”.</span><span class="sxs-lookup"><span data-stu-id="a002c-132">In the tree, select 'Functions\Calculated field'.</span></span>
+11. <span data-ttu-id="a002c-133">W polu Nazwa wpisz „$BlockName”.</span><span class="sxs-lookup"><span data-stu-id="a002c-133">In the Name field, type '$BlockName'.</span></span>
+12. <span data-ttu-id="a002c-134">Kliknij opcję Edytuj formułę.</span><span class="sxs-lookup"><span data-stu-id="a002c-134">Click Edit formula.</span></span>
+13. <span data-ttu-id="a002c-135">W polu Formuła wpisz „blok”.</span><span class="sxs-lookup"><span data-stu-id="a002c-135">In the Formula field, enter '"block"'.</span></span>
+14. <span data-ttu-id="a002c-136">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="a002c-136">Click Save.</span></span>
+15. <span data-ttu-id="a002c-137">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="a002c-137">Close the page.</span></span>
+16. <span data-ttu-id="a002c-138">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="a002c-138">Click OK.</span></span>
+17. <span data-ttu-id="a002c-139">Kliknij przycisk Dodaj element główny, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="a002c-139">Click Add root to open the drop dialog.</span></span>
+18. <span data-ttu-id="a002c-140">W drzewie zaznacz element „Funkcje\Pole obliczeniowe”.</span><span class="sxs-lookup"><span data-stu-id="a002c-140">In the tree, select 'Functions\Calculated field'.</span></span>
+19. <span data-ttu-id="a002c-141">W polu Nazwa wpisz „$RecName”.</span><span class="sxs-lookup"><span data-stu-id="a002c-141">In the Name field, type '$RecName'.</span></span>
+20. <span data-ttu-id="a002c-142">Kliknij opcję Edytuj formułę.</span><span class="sxs-lookup"><span data-stu-id="a002c-142">Click Edit formula.</span></span>
+21. <span data-ttu-id="a002c-143">W polu Formuła wpisz „rekord”.</span><span class="sxs-lookup"><span data-stu-id="a002c-143">In the Formula field, enter '"record"'.</span></span>
+22. <span data-ttu-id="a002c-144">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="a002c-144">Click Save.</span></span>
+23. <span data-ttu-id="a002c-145">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="a002c-145">Close the page.</span></span>
+24. <span data-ttu-id="a002c-146">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="a002c-146">Click OK.</span></span>
+25. <span data-ttu-id="a002c-147">Kliknij przycisk Dodaj element główny, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="a002c-147">Click Add root to open the drop dialog.</span></span>
+26. <span data-ttu-id="a002c-148">W drzewie zaznacz element „Funkcje\Pole obliczeniowe”.</span><span class="sxs-lookup"><span data-stu-id="a002c-148">In the tree, select 'Functions\Calculated field'.</span></span>
+27. <span data-ttu-id="a002c-149">W polu Nazwa wpisz „$InvName”.</span><span class="sxs-lookup"><span data-stu-id="a002c-149">In the Name field, type '$InvName'.</span></span>
+28. <span data-ttu-id="a002c-150">Kliknij opcję Edytuj formułę.</span><span class="sxs-lookup"><span data-stu-id="a002c-150">Click Edit formula.</span></span>
+29. <span data-ttu-id="a002c-151">W polu Formuła wpisz „InvoicedAmountEUR”.</span><span class="sxs-lookup"><span data-stu-id="a002c-151">In the Formula field, enter '"InvoicedAmountEUR"'.</span></span>
+30. <span data-ttu-id="a002c-152">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="a002c-152">Click Save.</span></span>
+31. <span data-ttu-id="a002c-153">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="a002c-153">Close the page.</span></span>
+32. <span data-ttu-id="a002c-154">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="a002c-154">Click OK.</span></span>
+33. <span data-ttu-id="a002c-155">W drzewie zaznacz element „Intrastat\Dane”.</span><span class="sxs-lookup"><span data-stu-id="a002c-155">In the tree, select 'Intrastat\Data'.</span></span>
+34. <span data-ttu-id="a002c-156">Kliknij przycisk Edytuj obok pola „Nazwa pobranego klucza danych”.</span><span class="sxs-lookup"><span data-stu-id="a002c-156">Click Edit button for the ‘Collected data key name’ field</span></span>
+35. <span data-ttu-id="a002c-157">Kliknij opcję Dodaj źródło danych.</span><span class="sxs-lookup"><span data-stu-id="a002c-157">Click Add data source.</span></span>
+    * <span data-ttu-id="a002c-158">$BlockName</span><span class="sxs-lookup"><span data-stu-id="a002c-158">$BlockName</span></span>  
+36. <span data-ttu-id="a002c-159">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="a002c-159">Click Save.</span></span>
+37. <span data-ttu-id="a002c-160">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="a002c-160">Close the page.</span></span>
+38. <span data-ttu-id="a002c-161">Kliknij przycisk Edytuj obok pola Wartość pobranego klucza danych.</span><span class="sxs-lookup"><span data-stu-id="a002c-161">Click the Edit button for the Collected data key value field.</span></span>
+39. <span data-ttu-id="a002c-162">W polu Formuła wpisz wyrażenie „IF(Intrastat.CommodityRecord.Direction=Kierunek.Import, "Import", "Eksport")”.</span><span class="sxs-lookup"><span data-stu-id="a002c-162">In the Formula field, enter 'IF(Intrastat.CommodityRecord.Direction=Direction.Import, "Import", "Export")'.</span></span>
+    * <span data-ttu-id="a002c-163">IF(Intrastat.CommodityRecord.Direction=Kierunek.Import, "Import", "Eksport")</span><span class="sxs-lookup"><span data-stu-id="a002c-163">IF(Intrastat.CommodityRecord.Direction=Direction.Import, "Import", "Export")</span></span>  
+40. <span data-ttu-id="a002c-164">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="a002c-164">Click Save.</span></span>
+41. <span data-ttu-id="a002c-165">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="a002c-165">Close the page.</span></span>
+    * <span data-ttu-id="a002c-166">Liczenie wierszy tej kolejnej sesji.</span><span class="sxs-lookup"><span data-stu-id="a002c-166">Count the lines of this sequence.</span></span> <span data-ttu-id="a002c-167">Wyniki zostaną użyte z nazwą „blok” oddzielnie dla różnych kierunków.</span><span class="sxs-lookup"><span data-stu-id="a002c-167">The results will be used with the name “block” separately for different directions.</span></span> <span data-ttu-id="a002c-168">Wartość „Import” będzie używana dla wszelkich transakcji Intrastat przyjęcia.</span><span class="sxs-lookup"><span data-stu-id="a002c-168">Value “Import” will be used for any arrivals Intrastat transactions.</span></span> <span data-ttu-id="a002c-169">Wartość „Eksport” będzie używana dla wszelkich transakcji Intrastat wysyłki.</span><span class="sxs-lookup"><span data-stu-id="a002c-169">The value “Export” will be used for any Intrastat dispatches transactions.</span></span> <span data-ttu-id="a002c-170">Potraktuj to jako wirtualny arkusz kalkulacyjny programu Excel.</span><span class="sxs-lookup"><span data-stu-id="a002c-170">Consider this to be a virtual Excel spreadsheet.</span></span> <span data-ttu-id="a002c-171">Dla każdej transakcji będzie tworzony wiersz, gdzie pierwsza kolumna „blok” jest wypełniana odpowiednio wartościami „Import” i „Eksport”.</span><span class="sxs-lookup"><span data-stu-id="a002c-171">For each transaction a row where the first column “block” is filled with the values “Import” and “Export” accordingly.</span></span>  
+42. <span data-ttu-id="a002c-172">W drzewie rozwiń węzeł „Intrastat\Dane: Sekwencja”.</span><span class="sxs-lookup"><span data-stu-id="a002c-172">In the tree, expand 'Intrastat\Data: Sequence'.</span></span>
+43. <span data-ttu-id="a002c-173">W drzewie zaznacz element „Intrastat\Dane: Sekwencja\Przyjęcia?”.</span><span class="sxs-lookup"><span data-stu-id="a002c-173">In the tree, select 'Intrastat\Data: Sequence\Arrivals?'.</span></span>
+44. <span data-ttu-id="a002c-174">Kliknij przycisk Edytuj obok pola „Nazwa pobranego klucza danych”.</span><span class="sxs-lookup"><span data-stu-id="a002c-174">Click Edit button for the ‘Collected data key name’ field.</span></span>
+    * <span data-ttu-id="a002c-175">Liczenie wierszy tej kolejnej sesji.</span><span class="sxs-lookup"><span data-stu-id="a002c-175">Count the lines of this sequence.</span></span> <span data-ttu-id="a002c-176">Wyniki zostaną zapamiętane pod nazwą „rekord”.</span><span class="sxs-lookup"><span data-stu-id="a002c-176">The results will be memorized using the name “record”.</span></span>  
+45. <span data-ttu-id="a002c-177">W drzewie zaznacz element „$RecName”.</span><span class="sxs-lookup"><span data-stu-id="a002c-177">In the tree, select '$RecName'.</span></span>
+46. <span data-ttu-id="a002c-178">Kliknij opcję Dodaj źródło danych.</span><span class="sxs-lookup"><span data-stu-id="a002c-178">Click Add data source.</span></span>
+47. <span data-ttu-id="a002c-179">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="a002c-179">Click Save.</span></span>
+48. <span data-ttu-id="a002c-180">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="a002c-180">Close the page.</span></span>
+49. <span data-ttu-id="a002c-181">Kliknij przycisk Edytuj obok pola „Wartość pobranego klucza danych”.</span><span class="sxs-lookup"><span data-stu-id="a002c-181">Click Edit button for the ‘Collected data key value’ field</span></span>
+50. <span data-ttu-id="a002c-182">W polu Formuła wprowadź wyrażenie „Intrastat.CommodityRecord.CommodityCode”.</span><span class="sxs-lookup"><span data-stu-id="a002c-182">In the Formula field, enter 'Intrastat.CommodityRecord.CommodityCode'.</span></span>
+51. <span data-ttu-id="a002c-183">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="a002c-183">Click Save.</span></span>
+52. <span data-ttu-id="a002c-184">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="a002c-184">Close the page.</span></span>
+    * <span data-ttu-id="a002c-185">Liczenie wierszy tej kolejnej sesji.</span><span class="sxs-lookup"><span data-stu-id="a002c-185">Count the lines of this sequence.</span></span> <span data-ttu-id="a002c-186">Wyniki zostaną użyte z nazwą „rekord” oddzielnie dla różnych kodów asortymentu.</span><span class="sxs-lookup"><span data-stu-id="a002c-186">The results will be used with the name “record” separately for different commodity codes.</span></span> <span data-ttu-id="a002c-187">Potraktuj to jako wirtualny arkusz kalkulacyjny programu Excel.</span><span class="sxs-lookup"><span data-stu-id="a002c-187">Consider this to be a virtual Excel spreadsheet.</span></span> <span data-ttu-id="a002c-188">Dla każdej transakcji jest tworzony wiersz, gdzie pierwsza kolumna „blok” jest wypełniana odpowiednio wartościami „Import” i „Eksport”, a drugi blok „rekord” jest wypełniany wartością kodu asortymentu.</span><span class="sxs-lookup"><span data-stu-id="a002c-188">For each transaction a row where the first column “block” is filled with the values “Import” and “Export” accordingly and the second block “record” is filled with the commodity code value.</span></span>  
+53. <span data-ttu-id="a002c-189">W drzewie zaznacz element „Intrastat\Dane: Sekwencja\Wysyłki?”.</span><span class="sxs-lookup"><span data-stu-id="a002c-189">In the tree, select 'Intrastat\Data: Sequence\Dispatches?'.</span></span>
+54. <span data-ttu-id="a002c-190">Kliknij przycisk Edytuj obok pola „Nazwa pobranego klucza danych”.</span><span class="sxs-lookup"><span data-stu-id="a002c-190">Click Edit button for the ‘Collected data key name’ field</span></span>
+55. <span data-ttu-id="a002c-191">W drzewie zaznacz element „$RecName”.</span><span class="sxs-lookup"><span data-stu-id="a002c-191">In the tree, select '$RecName'.</span></span>
+56. <span data-ttu-id="a002c-192">Kliknij opcję Dodaj źródło danych.</span><span class="sxs-lookup"><span data-stu-id="a002c-192">Click Add data source.</span></span>
+57. <span data-ttu-id="a002c-193">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="a002c-193">Click Save.</span></span>
+58. <span data-ttu-id="a002c-194">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="a002c-194">Close the page.</span></span>
+59. <span data-ttu-id="a002c-195">Kliknij przycisk Edytuj obok pola „Wartość pobranego klucza danych”.</span><span class="sxs-lookup"><span data-stu-id="a002c-195">Click the Edit button for the ‘Collected data key value’ field.</span></span>
+60. <span data-ttu-id="a002c-196">W polu Formuła wprowadź wyrażenie „Intrastat.CommodityRecord.CommodityCode”.</span><span class="sxs-lookup"><span data-stu-id="a002c-196">In the Formula field, enter 'Intrastat.CommodityRecord.CommodityCode'.</span></span>
+61. <span data-ttu-id="a002c-197">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="a002c-197">Click Save.</span></span>
+62. <span data-ttu-id="a002c-198">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="a002c-198">Close the page.</span></span>
+63. <span data-ttu-id="a002c-199">W drzewie rozwiń węzeł „Intrastat\Dane: Sekwencja\Wysyłki: Sekwencja?”.</span><span class="sxs-lookup"><span data-stu-id="a002c-199">In the tree, expand 'Intrastat\Data: Sequence\Dispatches: Sequence?'.</span></span>
+64. <span data-ttu-id="a002c-200">W drzewie rozwiń węzeł „Intrastat\Dane: Sekwencja\Wysyłki: Sekwencja?\Rekord = Intrastat.CommodityRecord”.</span><span class="sxs-lookup"><span data-stu-id="a002c-200">In the tree, expand 'Intrastat\Data: Sequence\Dispatches: Sequence?\Record =  Intrastat.CommodityRecord'.</span></span>
+65. <span data-ttu-id="a002c-201">Kliknij kartę Format.</span><span class="sxs-lookup"><span data-stu-id="a002c-201">Click the Format tab.</span></span>
+66. <span data-ttu-id="a002c-202">W drzewie zaznacz element „Intrastat\Dane\Wysyłki\Rekord\Kwota faktury w EUR”.</span><span class="sxs-lookup"><span data-stu-id="a002c-202">In the tree, select 'Intrastat\Data\Dispatches\Record\Invoice amount EUR'.</span></span>
+67. <span data-ttu-id="a002c-203">Kliknij kartę Mapowanie.</span><span class="sxs-lookup"><span data-stu-id="a002c-203">Click the Mapping tab.</span></span>
+68. <span data-ttu-id="a002c-204">Kliknij przycisk Edytuj obok pola „Nazwa pobranego klucza danych”.</span><span class="sxs-lookup"><span data-stu-id="a002c-204">Click the Edit button for the ‘Collected data key name’ field.</span></span>
+69. <span data-ttu-id="a002c-205">W drzewie zaznacz element „$InvName”.</span><span class="sxs-lookup"><span data-stu-id="a002c-205">In the tree, select '$InvName'.</span></span>
+70. <span data-ttu-id="a002c-206">Kliknij opcję Dodaj źródło danych.</span><span class="sxs-lookup"><span data-stu-id="a002c-206">Click Add data source.</span></span>
+71. <span data-ttu-id="a002c-207">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="a002c-207">Click Save.</span></span>
+72. <span data-ttu-id="a002c-208">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="a002c-208">Close the page.</span></span>
+    * <span data-ttu-id="a002c-209">Podsumowanie wartości kwot zafakturowanych dla wierszy tej kolejnej sesji.</span><span class="sxs-lookup"><span data-stu-id="a002c-209">Summarize the invoiced amount values for lines of this sequence.</span></span> <span data-ttu-id="a002c-210">Wyniki zostaną użyte z nazwą „InvoicedAmountEUR” oddzielnie dla różnych kierunków Intrastat kodów asortymentu.</span><span class="sxs-lookup"><span data-stu-id="a002c-210">The results will be used with the name “InvoicedAmountEUR” separately for different Intrastat directions and commodity codes.</span></span> <span data-ttu-id="a002c-211">Potraktuj to jak tworzenie wirtualnego arkusza kalkulacyjnego w programie Excel.</span><span class="sxs-lookup"><span data-stu-id="a002c-211">Consider this to be a virtual creation in Excel spreadsheet.</span></span> <span data-ttu-id="a002c-212">Dla każdej transakcji będzie tworzony wiersz, gdzie pierwsza kolumna „blok” jest wypełniana odpowiednio wartościami „Import” i „Eksport”.</span><span class="sxs-lookup"><span data-stu-id="a002c-212">For each transaction a row where the first column “block” is filled with the values “Import” and “Export” accordingly.</span></span> <span data-ttu-id="a002c-213">Drugi blok „rekord” jest wypełniony wartością kodu asortymentu, a trzecia kolumna „InvoicedAmountEUR” jest wypełniona wartością kwoty faktury.</span><span class="sxs-lookup"><span data-stu-id="a002c-213">The second block “record” is filled with the commodity code value, and the third column “InvoicedAmountEUR” is filled with the invoice amount value.</span></span>  
+73. <span data-ttu-id="a002c-214">W drzewie rozwiń węzeł „Intrastat\Dane\Przyjęcia?”.</span><span class="sxs-lookup"><span data-stu-id="a002c-214">In the tree, expand 'Intrastat\Data\Arrivals?'.</span></span>
+74. <span data-ttu-id="a002c-215">W drzewie rozwiń węzeł „Intrastat\Dane\Przyjęcia?\Rekord = Intrastat.CommodityRecord”.</span><span class="sxs-lookup"><span data-stu-id="a002c-215">In the tree, expand 'Intrastat\Data\Arrivals?\Record =  Intrastat.CommodityRecord'.</span></span>
+75. <span data-ttu-id="a002c-216">Kliknij kartę Format.</span><span class="sxs-lookup"><span data-stu-id="a002c-216">Click the Format tab.</span></span>
+76. <span data-ttu-id="a002c-217">W drzewie zaznacz element „Intrastat\Dane\Przyjęcia\Rekord\Kwota faktury w EUR”.</span><span class="sxs-lookup"><span data-stu-id="a002c-217">In the tree, select 'Intrastat\Data\Arrivals\Record\Invoice amount EUR'.</span></span>
+77. <span data-ttu-id="a002c-218">Kliknij kartę Mapowanie.</span><span class="sxs-lookup"><span data-stu-id="a002c-218">Click the Mapping tab.</span></span>
+78. <span data-ttu-id="a002c-219">Kliknij przycisk Edytuj obok pola „Nazwa pobranego klucza danych”.</span><span class="sxs-lookup"><span data-stu-id="a002c-219">Click the Edit button for the ‘Collected data key name’ field.</span></span>
+79. <span data-ttu-id="a002c-220">W drzewie zaznacz element „$InvName”.</span><span class="sxs-lookup"><span data-stu-id="a002c-220">In the tree, select '$InvName'.</span></span>
+80. <span data-ttu-id="a002c-221">Kliknij opcję Dodaj źródło danych.</span><span class="sxs-lookup"><span data-stu-id="a002c-221">Click Add data source.</span></span>
+81. <span data-ttu-id="a002c-222">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="a002c-222">Click Save.</span></span>
+82. <span data-ttu-id="a002c-223">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="a002c-223">Close the page.</span></span>
+83. <span data-ttu-id="a002c-224">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="a002c-224">Click Save.</span></span>
+84. <span data-ttu-id="a002c-225">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="a002c-225">Close the page.</span></span>
 
 

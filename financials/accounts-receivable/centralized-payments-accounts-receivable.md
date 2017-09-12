@@ -19,285 +19,285 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c5a09eedd1dd12b7f5343953b16f9f0b210213d7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6327d9cab1651d22cd411f718f6e3a2f8733e13e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="centralized-payments-for-accounts-receivable"></a>Scentralizowane płatności dla rozrachunków z odbiorcami
+# <a name="centralized-payments-for-accounts-receivable"></a><span data-ttu-id="d5562-105">Scentralizowane płatności dla rozrachunków z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="d5562-105">Centralized payments for Accounts receivable</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą jednej firmy, która obsługuje wszystkie płatności. Dlatego tych samych transakcji nie trzeba wpisywać w wielu firmach. Ten artykuł zawiera przykłady pokazujące sposób księgowania scentralizowanych płatności w różnych scenariuszach.
+<span data-ttu-id="d5562-106">Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą jednej firmy, która obsługuje wszystkie płatności.</span><span class="sxs-lookup"><span data-stu-id="d5562-106">Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments.</span></span> <span data-ttu-id="d5562-107">Dlatego tych samych transakcji nie trzeba wpisywać w wielu firmach.</span><span class="sxs-lookup"><span data-stu-id="d5562-107">Therefore, the same transaction doesn't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="d5562-108">Ten artykuł zawiera przykłady pokazujące sposób księgowania scentralizowanych płatności w różnych scenariuszach.</span><span class="sxs-lookup"><span data-stu-id="d5562-108">This article provides examples that show how posting for centralized payments is handled in various scenarios.</span></span>
 
-Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą firmy, która obsługuje wszystkie płatności. Dlatego tych samych transakcji nie trzeba wpisywać w wielu firmach. Ponadto organizacja oszczędza czas, bo procesy dla propozycji płatności, rozliczeń i edytowania otwartych i zamkniętych transakcji na potrzeby płatności scentralizowanych przebiegają sprawniej. 
+<span data-ttu-id="d5562-109">Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą firmy, która obsługuje wszystkie płatności.</span><span class="sxs-lookup"><span data-stu-id="d5562-109">Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments.</span></span> <span data-ttu-id="d5562-110">Dlatego tych samych transakcji nie trzeba wpisywać w wielu firmach.</span><span class="sxs-lookup"><span data-stu-id="d5562-110">Therefore, the same transaction doesn't have to be entered in multiple legal entities.</span></span> <span data-ttu-id="d5562-111">Ponadto organizacja oszczędza czas, bo procesy dla propozycji płatności, rozliczeń i edytowania otwartych i zamkniętych transakcji na potrzeby płatności scentralizowanych przebiegają sprawniej.</span><span class="sxs-lookup"><span data-stu-id="d5562-111">Additionally, the organization saves time, because the processes for payment proposals, settlements, and editing open and closed transactions for centralized payments are streamlined.</span></span> 
 
-W organizacji stosującej scentralizowane płatności występuje wiele firm dla operacji i każda firma operacyjna zarządza własnymi informacjami o należnościach za faktury. Płatności dla wszystkich operacyjnych firm są zbierane przez jedną firmę nazywaną firmą płatności. W trakcie procesu rozrachunku tworzone są odpowiednie transakcje „należne dla” i „należne od”. Użytkownik może określić, która firma w organizacji ma odbierać transakcje zrealizowanych dodatnich oraz ujemnych różnic kursowych i w jaki sposób mają być obsługiwane transakcje rabatów gotówkowych związane z płatnościami scentralizowanymi. 
+<span data-ttu-id="d5562-112">W organizacji stosującej scentralizowane płatności występuje wiele firm dla operacji i każda firma operacyjna zarządza własnymi informacjami o należnościach za faktury.</span><span class="sxs-lookup"><span data-stu-id="d5562-112">In a centralized payment organization, there are many legal entities for operations, and each operating legal entity manages its own invoices receivable information.</span></span> <span data-ttu-id="d5562-113">Płatności dla wszystkich operacyjnych firm są zbierane przez jedną firmę nazywaną firmą płatności.</span><span class="sxs-lookup"><span data-stu-id="d5562-113">Payments for all the operating legal entities are received by a single legal entity, which is known as the legal entity of the payment.</span></span> <span data-ttu-id="d5562-114">W trakcie procesu rozrachunku tworzone są odpowiednie transakcje „należne dla” i „należne od”.</span><span class="sxs-lookup"><span data-stu-id="d5562-114">During the settlement process, the applicable due-to and due-from transactions are generated.</span></span> <span data-ttu-id="d5562-115">Użytkownik może określić, która firma w organizacji ma odbierać transakcje zrealizowanych dodatnich oraz ujemnych różnic kursowych i w jaki sposób mają być obsługiwane transakcje rabatów gotówkowych związane z płatnościami scentralizowanymi.</span><span class="sxs-lookup"><span data-stu-id="d5562-115">You can specify which legal entity in the organization receives the realized gain or realized loss transactions, and how cash discount transactions that are related to a centralized payment are handled.</span></span> 
 
-Poniższe przykłady ilustrują sposób księgowania w przypadku różnych scenariuszy. Wszystkie przykłady dotyczą następującej konfiguracji:
+<span data-ttu-id="d5562-116">Poniższe przykłady ilustrują sposób księgowania w przypadku różnych scenariuszy.</span><span class="sxs-lookup"><span data-stu-id="d5562-116">The following examples illustrate how posting is handled in various scenarios.</span></span> <span data-ttu-id="d5562-117">Wszystkie przykłady dotyczą następującej konfiguracji:</span><span class="sxs-lookup"><span data-stu-id="d5562-117">The following configuration is assumed for all these examples:</span></span>
 
--   Firmami są Fabrikam, Fabrikam Wschód i Fabrikam West. Płatności odbiorcy są wprowadzane do firmy Fabrikam.
--   Pole **Zaksięguj rabat gotówkowy** na stronie **Księgowanie międzyfirmowe** ma wartość **Firma wystawiająca fakturę**.
--   Pole **Zaksięguj zyski lub straty związane z wymianą walut** na stronie **Księgowanie międzyfirmowe** ma wartość **Firma dokonująca płatności**.
--   Customer Northwind Traders jest ustawiona jako odbiorca w każdej z firm. Odbiorcy z różnych firm są identyfikowani jako ten sam odbiorca, ponieważ używają tego samego identyfikatora globalnej książki adresowej.
+-   <span data-ttu-id="d5562-118">Firmami są Fabrikam, Fabrikam Wschód i Fabrikam West.</span><span class="sxs-lookup"><span data-stu-id="d5562-118">The legal entities are Fabrikam, Fabrikam East, and Fabrikam West.</span></span> <span data-ttu-id="d5562-119">Płatności odbiorcy są wprowadzane do firmy Fabrikam.</span><span class="sxs-lookup"><span data-stu-id="d5562-119">Customer payments are entered into Fabrikam.</span></span>
+-   <span data-ttu-id="d5562-120">Pole **Zaksięguj rabat gotówkowy** na stronie **Księgowanie międzyfirmowe** ma wartość **Firma wystawiająca fakturę**.</span><span class="sxs-lookup"><span data-stu-id="d5562-120">The **Post cash discount** field on the **Intercompany accounting** page is set to **Legal entity of the invoice**.</span></span>
+-   <span data-ttu-id="d5562-121">Pole **Zaksięguj zyski lub straty związane z wymianą walut** na stronie **Księgowanie międzyfirmowe** ma wartość **Firma dokonująca płatności**.</span><span class="sxs-lookup"><span data-stu-id="d5562-121">The **Post currency exchange gain or loss** field on the **Intercompany accounting** page is set to **Legal entity of the payment**.</span></span>
+-   <span data-ttu-id="d5562-122">Customer Northwind Traders jest ustawiona jako odbiorca w każdej z firm.</span><span class="sxs-lookup"><span data-stu-id="d5562-122">Customer Northwind Traders is set up as a customer in each legal entity.</span></span> <span data-ttu-id="d5562-123">Odbiorcy z różnych firm są identyfikowani jako ten sam odbiorca, ponieważ używają tego samego identyfikatora globalnej książki adresowej.</span><span class="sxs-lookup"><span data-stu-id="d5562-123">The customers from the various legal entities are identified as the same customer because they share the same global address book ID.</span></span>
 
-| Identyfikator książki adresowej | Konto odbiorcy | Imię i nazwisko              | Firma  |
+| <span data-ttu-id="d5562-124">Identyfikator książki adresowej</span><span class="sxs-lookup"><span data-stu-id="d5562-124">Address book ID</span></span> | <span data-ttu-id="d5562-125">Konto odbiorcy</span><span class="sxs-lookup"><span data-stu-id="d5562-125">Customer account</span></span> | <span data-ttu-id="d5562-126">Imię i nazwisko</span><span class="sxs-lookup"><span data-stu-id="d5562-126">Name</span></span>              | <span data-ttu-id="d5562-127">Firma</span><span class="sxs-lookup"><span data-stu-id="d5562-127">Legal entity</span></span>  |
 |-----------------|------------------|-------------------|---------------|
-| 4050            | 4000             | Northwind Traders | Fabrikam      |
-| 4050            | 4000             | Northwind Traders | Fabrikam Wschód |
-| 4050            | 10000            | Northwind Traders | Fabrikam Zachód |
+| <span data-ttu-id="d5562-128">4050</span><span class="sxs-lookup"><span data-stu-id="d5562-128">4050</span></span>            | <span data-ttu-id="d5562-129">4000</span><span class="sxs-lookup"><span data-stu-id="d5562-129">4000</span></span>             | <span data-ttu-id="d5562-130">Northwind Traders</span><span class="sxs-lookup"><span data-stu-id="d5562-130">Northwind Traders</span></span> | <span data-ttu-id="d5562-131">Fabrikam</span><span class="sxs-lookup"><span data-stu-id="d5562-131">Fabrikam</span></span>      |
+| <span data-ttu-id="d5562-132">4050</span><span class="sxs-lookup"><span data-stu-id="d5562-132">4050</span></span>            | <span data-ttu-id="d5562-133">4000</span><span class="sxs-lookup"><span data-stu-id="d5562-133">4000</span></span>             | <span data-ttu-id="d5562-134">Northwind Traders</span><span class="sxs-lookup"><span data-stu-id="d5562-134">Northwind Traders</span></span> | <span data-ttu-id="d5562-135">Fabrikam Wschód</span><span class="sxs-lookup"><span data-stu-id="d5562-135">Fabrikam East</span></span> |
+| <span data-ttu-id="d5562-136">4050</span><span class="sxs-lookup"><span data-stu-id="d5562-136">4050</span></span>            | <span data-ttu-id="d5562-137">10000</span><span class="sxs-lookup"><span data-stu-id="d5562-137">10000</span></span>            | <span data-ttu-id="d5562-138">Northwind Traders</span><span class="sxs-lookup"><span data-stu-id="d5562-138">Northwind Traders</span></span> | <span data-ttu-id="d5562-139">Fabrikam Zachód</span><span class="sxs-lookup"><span data-stu-id="d5562-139">Fabrikam West</span></span> |
 
-## <a name="example-1-customer-payment-of-invoice-from-another-legal-entity"></a>Przykład 1: Płatność za fakturę dla odbiorcy od innej firmy
-Firma Fabrikam odbiera płatność 600,00 dla konta odbiorcy firmy Fabrikam o numerze 4000, Northwind Traders. Płatność jest rozliczana za pomocą otwartej faktury dla konta odbiorcy 4000 w firmie Fabrikam East.
+## <a name="example-1-customer-payment-of-invoice-from-another-legal-entity"></a><span data-ttu-id="d5562-140">Przykład 1: Płatność za fakturę dla odbiorcy od innej firmy</span><span class="sxs-lookup"><span data-stu-id="d5562-140">Example 1: Customer payment of invoice from another legal entity</span></span>
+<span data-ttu-id="d5562-141">Firma Fabrikam odbiera płatność 600,00 dla konta odbiorcy firmy Fabrikam o numerze 4000, Northwind Traders.</span><span class="sxs-lookup"><span data-stu-id="d5562-141">Fabrikam receives a payment of 600.00 for Fabrikam customer account 4000, Northwind Traders.</span></span> <span data-ttu-id="d5562-142">Płatność jest rozliczana za pomocą otwartej faktury dla konta odbiorcy 4000 w firmie Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="d5562-142">The payment is settled with an open invoice for customer account 4000 in Fabrikam East.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-customer-4000"></a>Faktura zostaje zaksięgowana w firmie Fabrikam East dla odbiorcy 4000
+### <a name="invoice-is-posted-in-fabrikam-east-for-customer-4000"></a><span data-ttu-id="d5562-143">Faktura zostaje zaksięgowana w firmie Fabrikam East dla odbiorcy 4000</span><span class="sxs-lookup"><span data-stu-id="d5562-143">Invoice is posted in Fabrikam East for customer 4000</span></span>
 
-| Konto                             | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-144">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-144">Account</span></span>                             | <span data-ttu-id="d5562-145">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-145">Debit amount</span></span> | <span data-ttu-id="d5562-146">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-146">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Rozrachunki z odbiorcami (Fabrikam East) | 600,00       |               |
-| Sprzedaż (Fabrikam East)               |              | 600,00        |
+| <span data-ttu-id="d5562-147">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-147">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="d5562-148">600,00</span><span class="sxs-lookup"><span data-stu-id="d5562-148">600.00</span></span>       |               |
+| <span data-ttu-id="d5562-149">Sprzedaż (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-149">Sales (Fabrikam East)</span></span>               |              | <span data-ttu-id="d5562-150">600,00</span><span class="sxs-lookup"><span data-stu-id="d5562-150">600.00</span></span>        |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a>Płatność zostaje odebrana i zaksięgowana w firmie Fabrikam dla odbiorcy 4000
+### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a><span data-ttu-id="d5562-151">Płatność zostaje odebrana i zaksięgowana w firmie Fabrikam dla odbiorcy 4000</span><span class="sxs-lookup"><span data-stu-id="d5562-151">Payment is received and posted in Fabrikam for customer 4000</span></span>
 
-| Konto                        | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-152">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-152">Account</span></span>                        | <span data-ttu-id="d5562-153">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-153">Debit amount</span></span> | <span data-ttu-id="d5562-154">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-154">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Gotówka (Fabrikam)                | 600,00       |               |
-| Rozrachunki z odbiorcami (Fabrikam) |              | 600,00        |
+| <span data-ttu-id="d5562-155">Gotówka (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-155">Cash (Fabrikam)</span></span>                | <span data-ttu-id="d5562-156">600,00</span><span class="sxs-lookup"><span data-stu-id="d5562-156">600.00</span></span>       |               |
+| <span data-ttu-id="d5562-157">Rozrachunki z odbiorcami (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-157">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="d5562-158">600,00</span><span class="sxs-lookup"><span data-stu-id="d5562-158">600.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="d5562-159">Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="d5562-159">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Księgowanie w firmie Fabrikam**
+<span data-ttu-id="d5562-160">**Księgowanie w firmie Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="d5562-160">**Fabrikam posting**</span></span>
 
-| Konto                         | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-161">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-161">Account</span></span>                         | <span data-ttu-id="d5562-162">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-162">Debit amount</span></span> | <span data-ttu-id="d5562-163">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-163">Credit amount</span></span> |
 |---------------------------------|--------------|---------------|
-| Rozrachunki z odbiorcami (Fabrikam)  | 600,00       |               |
-| Należne dla Fabrikam East (Fabrikam) |              | 600,00        |
+| <span data-ttu-id="d5562-164">Rozrachunki z odbiorcami (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-164">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="d5562-165">600,00</span><span class="sxs-lookup"><span data-stu-id="d5562-165">600.00</span></span>       |               |
+| <span data-ttu-id="d5562-166">Należne dla Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-166">Due to Fabrikam East (Fabrikam)</span></span> |              | <span data-ttu-id="d5562-167">600,00</span><span class="sxs-lookup"><span data-stu-id="d5562-167">600.00</span></span>        |
 
-**Księgowanie w firmie Fabrikam East**
+<span data-ttu-id="d5562-168">**Księgowanie w firmie Fabrikam East**</span><span class="sxs-lookup"><span data-stu-id="d5562-168">**Fabrikam East posting**</span></span>
 
-| Konto                             | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-169">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-169">Account</span></span>                             | <span data-ttu-id="d5562-170">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-170">Debit amount</span></span> | <span data-ttu-id="d5562-171">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-171">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Należne od Fabrikam (Fabrikam East)   | 600,00       |               |
-| Rozrachunki z odbiorcami (Fabrikam East) |              | 600,00        |
+| <span data-ttu-id="d5562-172">Należne od Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-172">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="d5562-173">600,00</span><span class="sxs-lookup"><span data-stu-id="d5562-173">600.00</span></span>       |               |
+| <span data-ttu-id="d5562-174">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-174">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="d5562-175">600,00</span><span class="sxs-lookup"><span data-stu-id="d5562-175">600.00</span></span>        |
 
-## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>Przykład 2: Płatność odbiorcy za fakturę innej firmy z rabatem gotówkowym
-Firma Fabrikam odbiera płatność 580,00 od odbiorcy 4000 firmy Fabrikam, Northwind Traders. Firma Fabrikam East ma otwartą fakturę dla odbiorcy 4000. Faktura ma dostępny rabat gotówkowy 20,00. Płatność jest rozliczana za pomocą otwartych faktur firmy Fabrikam East. Rabat gotówkowy jest księgowany w firmie obsługującej fakturowanie, Fabrikam East.
+## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a><span data-ttu-id="d5562-176">Przykład 2: Płatność odbiorcy za fakturę innej firmy z rabatem gotówkowym</span><span class="sxs-lookup"><span data-stu-id="d5562-176">Example 2: Customer payment of invoice from another legal entity with cash discount</span></span>
+<span data-ttu-id="d5562-177">Firma Fabrikam odbiera płatność 580,00 od odbiorcy 4000 firmy Fabrikam, Northwind Traders.</span><span class="sxs-lookup"><span data-stu-id="d5562-177">Fabrikam receives a payment of 580.00 for Fabrikam customer 4000, Northwind Traders.</span></span> <span data-ttu-id="d5562-178">Firma Fabrikam East ma otwartą fakturę dla odbiorcy 4000.</span><span class="sxs-lookup"><span data-stu-id="d5562-178">Fabrikam East has an open invoice for customer 4000.</span></span> <span data-ttu-id="d5562-179">Faktura ma dostępny rabat gotówkowy 20,00.</span><span class="sxs-lookup"><span data-stu-id="d5562-179">The invoice has a 20.00 cash discount available.</span></span> <span data-ttu-id="d5562-180">Płatność jest rozliczana za pomocą otwartych faktur firmy Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="d5562-180">The payment is settled with the open Fabrikam East invoices.</span></span> <span data-ttu-id="d5562-181">Rabat gotówkowy jest księgowany w firmie obsługującej fakturowanie, Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="d5562-181">The cash discount is posted to the legal entity of the invoice, Fabrikam East.</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Faktura zostaje zaksięgowana w firmie Fabrikam East dla odbiorcy 4000 firmy Fabrikam East
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a><span data-ttu-id="d5562-182">Faktura zostaje zaksięgowana w firmie Fabrikam East dla odbiorcy 4000 firmy Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="d5562-182">Invoice is posted in Fabrikam East for Fabrikam East customer 4000</span></span>
 
-| Konto                             | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-183">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-183">Account</span></span>                             | <span data-ttu-id="d5562-184">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-184">Debit amount</span></span> | <span data-ttu-id="d5562-185">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-185">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Rozrachunki z odbiorcami (Fabrikam East) | 600,00       |               |
-| Sprzedaż (Fabrikam East)               |              | 600,00        |
+| <span data-ttu-id="d5562-186">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-186">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="d5562-187">600,00</span><span class="sxs-lookup"><span data-stu-id="d5562-187">600.00</span></span>       |               |
+| <span data-ttu-id="d5562-188">Sprzedaż (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-188">Sales (Fabrikam East)</span></span>               |              | <span data-ttu-id="d5562-189">600,00</span><span class="sxs-lookup"><span data-stu-id="d5562-189">600.00</span></span>        |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a>Płatność zostaje odebrana i zaksięgowana w firmie Fabrikam dla odbiorcy 4000 firmy Fabrikam
+### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a><span data-ttu-id="d5562-190">Płatność zostaje odebrana i zaksięgowana w firmie Fabrikam dla odbiorcy 4000 firmy Fabrikam</span><span class="sxs-lookup"><span data-stu-id="d5562-190">Payment is received and posted in Fabrikam for Fabrikam customer 4000</span></span>
 
-| Konto                        | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-191">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-191">Account</span></span>                        | <span data-ttu-id="d5562-192">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-192">Debit amount</span></span> | <span data-ttu-id="d5562-193">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-193">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Gotówka (Fabrikam)                | 600,00       |               |
-| Rozrachunki z odbiorcami (Fabrikam) |              | 600,00        |
+| <span data-ttu-id="d5562-194">Gotówka (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-194">Cash (Fabrikam)</span></span>                | <span data-ttu-id="d5562-195">600,00</span><span class="sxs-lookup"><span data-stu-id="d5562-195">600.00</span></span>       |               |
+| <span data-ttu-id="d5562-196">Rozrachunki z odbiorcami (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-196">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="d5562-197">600,00</span><span class="sxs-lookup"><span data-stu-id="d5562-197">600.00</span></span>        |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="d5562-198">Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="d5562-198">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Księgowanie w firmie Fabrikam**
+<span data-ttu-id="d5562-199">**Księgowanie w firmie Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="d5562-199">**Fabrikam posting**</span></span>
 
-| Konto                         | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-200">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-200">Account</span></span>                         | <span data-ttu-id="d5562-201">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-201">Debit amount</span></span> | <span data-ttu-id="d5562-202">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-202">Credit amount</span></span> |
 |---------------------------------|--------------|---------------|
-| Rozrachunki z odbiorcami (Fabrikam)  | 580,00       |               |
-| Należne dla Fabrikam East (Fabrikam) |              | 580,00        |
+| <span data-ttu-id="d5562-203">Rozrachunki z odbiorcami (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-203">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="d5562-204">580,00</span><span class="sxs-lookup"><span data-stu-id="d5562-204">580.00</span></span>       |               |
+| <span data-ttu-id="d5562-205">Należne dla Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-205">Due to Fabrikam East (Fabrikam)</span></span> |              | <span data-ttu-id="d5562-206">580,00</span><span class="sxs-lookup"><span data-stu-id="d5562-206">580.00</span></span>        |
 
-**Księgowanie w firmie Fabrikam East**
+<span data-ttu-id="d5562-207">**Księgowanie w firmie Fabrikam East**</span><span class="sxs-lookup"><span data-stu-id="d5562-207">**Fabrikam East posting**</span></span>
 
-| Konto                             | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-208">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-208">Account</span></span>                             | <span data-ttu-id="d5562-209">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-209">Debit amount</span></span> | <span data-ttu-id="d5562-210">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-210">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Należne od Fabrikam (Fabrikam East)   | 580,00       |               |
-| Rozrachunki z odbiorcami (Fabrikam East) |              | 580,00        |
-| Rabat gotówkowy (Fabrikam East)       | 20,00        |               |
-| Rozrachunki z odbiorcami (Fabrikam East) |              | 20,00         |
+| <span data-ttu-id="d5562-211">Należne od Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-211">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="d5562-212">580,00</span><span class="sxs-lookup"><span data-stu-id="d5562-212">580.00</span></span>       |               |
+| <span data-ttu-id="d5562-213">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-213">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="d5562-214">580,00</span><span class="sxs-lookup"><span data-stu-id="d5562-214">580.00</span></span>        |
+| <span data-ttu-id="d5562-215">Rabat gotówkowy (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-215">Cash discount (Fabrikam East)</span></span>       | <span data-ttu-id="d5562-216">20,00</span><span class="sxs-lookup"><span data-stu-id="d5562-216">20.00</span></span>        |               |
+| <span data-ttu-id="d5562-217">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-217">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="d5562-218">20,00</span><span class="sxs-lookup"><span data-stu-id="d5562-218">20.00</span></span>         |
 
-## <a name="example-3-customer-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-gain"></a>Przykład 3: Płatność odbiorcy za fakturę innej firmy ze zrealizowaną dodatnią różnicą kursową
-Firma Fabrikam odbiera płatność 600,00 euro (EUR) od odbiorcy 4000 firmy Fabrikam, Northwind Traders. Płatność jest rozliczana za pomocą otwartej faktury dla odbiorcy 4000 w firmie Fabrikam East. W trakcie procesu rozrachunku jest generowana transakcja dodatniej różnicy kursowej.
+## <a name="example-3-customer-payment-of-invoice-from-another-legal-entity-with-realized-exchange-rate-gain"></a><span data-ttu-id="d5562-219">Przykład 3: Płatność odbiorcy za fakturę innej firmy ze zrealizowaną dodatnią różnicą kursową</span><span class="sxs-lookup"><span data-stu-id="d5562-219">Example 3: Customer payment of invoice from another legal entity with realized exchange rate gain</span></span>
+<span data-ttu-id="d5562-220">Firma Fabrikam odbiera płatność 600,00 euro (EUR) od odbiorcy 4000 firmy Fabrikam, Northwind Traders.</span><span class="sxs-lookup"><span data-stu-id="d5562-220">Fabrikam receives a payment of 600.00 euros (EUR) for Fabrikam customer 4000, Northwind Traders.</span></span> <span data-ttu-id="d5562-221">Płatność jest rozliczana za pomocą otwartej faktury dla odbiorcy 4000 w firmie Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="d5562-221">The payment is settled with an open invoice for customer 4000 in Fabrikam East.</span></span> <span data-ttu-id="d5562-222">W trakcie procesu rozrachunku jest generowana transakcja dodatniej różnicy kursowej.</span><span class="sxs-lookup"><span data-stu-id="d5562-222">A currency exchange gain transaction is generated during the settlement process.</span></span>
 
--   Kurs wymiany EUR do USD w dniu wystawienia faktury: 1,2062
--   Kurs wymiany EUR do USD w dniu płatności: 1,2277
+-   <span data-ttu-id="d5562-223">Kurs wymiany EUR do USD w dniu wystawienia faktury: 1,2062</span><span class="sxs-lookup"><span data-stu-id="d5562-223">Exchange rate for EUR to U.S. dollars (USD) as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="d5562-224">Kurs wymiany EUR do USD w dniu płatności: 1,2277</span><span class="sxs-lookup"><span data-stu-id="d5562-224">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Faktura zostaje zaksięgowana w firmie Fabrikam East dla odbiorcy 4000 firmy Fabrikam East
+### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a><span data-ttu-id="d5562-225">Faktura zostaje zaksięgowana w firmie Fabrikam East dla odbiorcy 4000 firmy Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="d5562-225">Invoice is posted in Fabrikam East for Fabrikam East customer 4000</span></span>
 
-| Konto                             | Kwota debetu            | Kwota kredytu           |
+| <span data-ttu-id="d5562-226">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-226">Account</span></span>                             | <span data-ttu-id="d5562-227">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-227">Debit amount</span></span>            | <span data-ttu-id="d5562-228">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-228">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Rozrachunki z odbiorcami (Fabrikam East) | 600,00 EUR / 723,72 USD |                         |
-| Sprzedaż (Fabrikam East)               |                         | 600,00 EUR / 723,72 USD |
+| <span data-ttu-id="d5562-229">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-229">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="d5562-230">600,00 EUR / 723,72 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-230">600.00 EUR / 723.72 USD</span></span> |                         |
+| <span data-ttu-id="d5562-231">Sprzedaż (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-231">Sales (Fabrikam East)</span></span>               |                         | <span data-ttu-id="d5562-232">600,00 EUR / 723,72 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-232">600.00 EUR / 723.72 USD</span></span> |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a>Płatność zostaje odebrana i zaksięgowana w firmie Fabrikam dla odbiorcy 4000 firmy Fabrikam
+### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a><span data-ttu-id="d5562-233">Płatność zostaje odebrana i zaksięgowana w firmie Fabrikam dla odbiorcy 4000 firmy Fabrikam</span><span class="sxs-lookup"><span data-stu-id="d5562-233">Payment is received and posted in Fabrikam for Fabrikam customer 4000</span></span>
 
-| Konto                        | Kwota debetu            | Kwota kredytu           |
+| <span data-ttu-id="d5562-234">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-234">Account</span></span>                        | <span data-ttu-id="d5562-235">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-235">Debit amount</span></span>            | <span data-ttu-id="d5562-236">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-236">Credit amount</span></span>           |
 |--------------------------------|-------------------------|-------------------------|
-| Gotówka (Fabrikam)                | 600,00 EUR / 736,62 USD |                         |
-| Rozrachunki z odbiorcami (Fabrikam) |                         | 600,00 EUR / 736,62 USD |
+| <span data-ttu-id="d5562-237">Gotówka (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-237">Cash (Fabrikam)</span></span>                | <span data-ttu-id="d5562-238">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-238">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="d5562-239">Rozrachunki z odbiorcami (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-239">Accounts receivable (Fabrikam)</span></span> |                         | <span data-ttu-id="d5562-240">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-240">600.00 EUR / 736.62 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="d5562-241">Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="d5562-241">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Księgowanie w firmie Fabrikam**
+<span data-ttu-id="d5562-242">**Księgowanie w firmie Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="d5562-242">**Fabrikam posting**</span></span>
 
-| Konto                         | Kwota debetu            | Kwota kredytu           |
+| <span data-ttu-id="d5562-243">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-243">Account</span></span>                         | <span data-ttu-id="d5562-244">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-244">Debit amount</span></span>            | <span data-ttu-id="d5562-245">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-245">Credit amount</span></span>           |
 |---------------------------------|-------------------------|-------------------------|
-| Rozrachunki z odbiorcami (Fabrikam)  | 600,00 EUR / 736,62 USD |                         |
-| Należne dla Fabrikam East (Fabrikam) |                         | 600,00 EUR / 736,62 USD |
-| Należne dla Fabrikam East (Fabrikam) | 0,00 EUR / 12,90 USD    |                         |
-| Zrealizowana dodatnia różnica kursowa (Fabrikam)        |                         | 0,00 EUR / 12,90 USD    |
+| <span data-ttu-id="d5562-246">Rozrachunki z odbiorcami (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-246">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="d5562-247">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-247">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="d5562-248">Należne dla Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-248">Due to Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="d5562-249">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-249">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="d5562-250">Należne dla Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-250">Due to Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="d5562-251">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-251">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="d5562-252">Zrealizowana dodatnia różnica kursowa (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-252">Realized gain (Fabrikam)</span></span>        |                         | <span data-ttu-id="d5562-253">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-253">0.00 EUR / 12.90 USD</span></span>    |
 
-**Księgowanie w firmie Fabrikam East**
+<span data-ttu-id="d5562-254">**Księgowanie w firmie Fabrikam East**</span><span class="sxs-lookup"><span data-stu-id="d5562-254">**Fabrikam East posting**</span></span>
 
-| Konto                             | Kwota debetu            | Kwota kredytu           |
+| <span data-ttu-id="d5562-255">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-255">Account</span></span>                             | <span data-ttu-id="d5562-256">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-256">Debit amount</span></span>            | <span data-ttu-id="d5562-257">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-257">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Należne od Fabrikam (Fabrikam East)   | 600,00 EUR / 736,62 USD |                         |
-| Rozrachunki z odbiorcami (Fabrikam East) |                         | 600,00 EUR / 736,62 USD |
-| Rozrachunki z odbiorcami (Fabrikam East) | 0,00 EUR / 12,90 USD    |                         |
-| Należne od Fabrikam (Fabrikam East)   |                         | 0,00 EUR / 12,90 USD    |
+| <span data-ttu-id="d5562-258">Należne od Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-258">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="d5562-259">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-259">600.00 EUR / 736.62 USD</span></span> |                         |
+| <span data-ttu-id="d5562-260">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-260">Accounts receivable (Fabrikam East)</span></span> |                         | <span data-ttu-id="d5562-261">600,00 EUR / 736,62 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-261">600.00 EUR / 736.62 USD</span></span> |
+| <span data-ttu-id="d5562-262">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-262">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="d5562-263">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-263">0.00 EUR / 12.90 USD</span></span>    |                         |
+| <span data-ttu-id="d5562-264">Należne od Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-264">Due from Fabrikam (Fabrikam East)</span></span>   |                         | <span data-ttu-id="d5562-265">0,00 EUR / 12,90 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-265">0.00 EUR / 12.90 USD</span></span>    |
 
-## <a name="example-4-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-gain"></a>Przykład 4: Płatność odbiorcy za fakturę innej firmy z rabatem gotówkowym i zrealizowaną dodatnią różnicą kursową
-Firma Fabrikam księguje płatność odbiorcy 4000 firmy Fabrikam, Northwind Traders, dla otwartej faktury w firmie Fabrikam East. Faktura ma dostępny rabat gotówkowy i wygenerowaną transakcję podatku. Płatność jest rozliczana za pomocą otwartej faktury firmy Fabrikam East. W trakcie procesu rozrachunku jest generowana transakcja dodatniej różnicy kursowej. Rabat gotówkowy jest księgowany dla firmy obsługującej fakturę (Fabrikam East), a różnica kursowa jest księgowana dla firmy obsługującej płatność (Fabrikam).
+## <a name="example-4-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount-and-realized-exchange-rate-gain"></a><span data-ttu-id="d5562-266">Przykład 4: Płatność odbiorcy za fakturę innej firmy z rabatem gotówkowym i zrealizowaną dodatnią różnicą kursową</span><span class="sxs-lookup"><span data-stu-id="d5562-266">Example 4: Customer payment of invoice from another legal entity with cash discount and realized exchange rate gain</span></span>
+<span data-ttu-id="d5562-267">Firma Fabrikam księguje płatność odbiorcy 4000 firmy Fabrikam, Northwind Traders, dla otwartej faktury w firmie Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="d5562-267">Fabrikam posts a payment for Fabrikam customer 4000, Northwind Traders, for an open invoice in Fabrikam East.</span></span> <span data-ttu-id="d5562-268">Faktura ma dostępny rabat gotówkowy i wygenerowaną transakcję podatku.</span><span class="sxs-lookup"><span data-stu-id="d5562-268">The invoice has a cash discount available, and a sales tax transaction is generated.</span></span> <span data-ttu-id="d5562-269">Płatność jest rozliczana za pomocą otwartej faktury firmy Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="d5562-269">The payment is settled with the open Fabrikam East invoice.</span></span> <span data-ttu-id="d5562-270">W trakcie procesu rozrachunku jest generowana transakcja dodatniej różnicy kursowej.</span><span class="sxs-lookup"><span data-stu-id="d5562-270">A currency exchange gain transaction is generated during the settlement process.</span></span> <span data-ttu-id="d5562-271">Rabat gotówkowy jest księgowany dla firmy obsługującej fakturę (Fabrikam East), a różnica kursowa jest księgowana dla firmy obsługującej płatność (Fabrikam).</span><span class="sxs-lookup"><span data-stu-id="d5562-271">The cash discount is posted to the legal entity of the invoice (Fabrikam East), and the currency exchange gain is posted to the legal entity of the payment (Fabrikam).</span></span>
 
--   Kurs wymiany EUR do USD w dniu wystawienia faktury: 1,2062
--   Kurs wymiany EUR do USD w dniu płatności: 1,2277
+-   <span data-ttu-id="d5562-272">Kurs wymiany EUR do USD w dniu wystawienia faktury: 1,2062</span><span class="sxs-lookup"><span data-stu-id="d5562-272">Exchange rate for EUR to USD as of the invoice date: 1.2062</span></span>
+-   <span data-ttu-id="d5562-273">Kurs wymiany EUR do USD w dniu płatności: 1,2277</span><span class="sxs-lookup"><span data-stu-id="d5562-273">Exchange rate for EUR to USD as of the payment date: 1.2277</span></span>
 
-### <a name="free-text-invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-customer-4000"></a>Zostaje zaksięgowana faktura niezależna i wygenerowana transakcja podatku w firmie Fabrikam East dla odbiorcy 4000
+### <a name="free-text-invoice-is-posted-and-a-tax-transaction-is-generated-in-fabrikam-east-for-customer-4000"></a><span data-ttu-id="d5562-274">Zostaje zaksięgowana faktura niezależna i wygenerowana transakcja podatku w firmie Fabrikam East dla odbiorcy 4000</span><span class="sxs-lookup"><span data-stu-id="d5562-274">Free text invoice is posted and a tax transaction is generated in Fabrikam East for customer 4000</span></span>
 
-| Konto                             | Kwota debetu            | Kwota kredytu           |
+| <span data-ttu-id="d5562-275">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-275">Account</span></span>                             | <span data-ttu-id="d5562-276">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-276">Debit amount</span></span>            | <span data-ttu-id="d5562-277">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-277">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Rozrachunki z odbiorcami (Fabrikam East) | 638,22 EUR / 769,82 USD |                         |
-| Sprzedaż (Fabrikam East)               |                         | 600,00 EUR / 723,72 USD |
-| Podatek (Fabrikam East)           |                         | 38,22 EUR / 46,10 USD   |
+| <span data-ttu-id="d5562-278">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-278">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="d5562-279">638,22 EUR / 769,82 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-279">638.22 EUR / 769.82 USD</span></span> |                         |
+| <span data-ttu-id="d5562-280">Sprzedaż (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-280">Sales (Fabrikam East)</span></span>               |                         | <span data-ttu-id="d5562-281">600,00 EUR / 723,72 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-281">600.00 EUR / 723.72 USD</span></span> |
+| <span data-ttu-id="d5562-282">Podatek (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-282">Sales tax (Fabrikam East)</span></span>           |                         | <span data-ttu-id="d5562-283">38,22 EUR / 46,10 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-283">38.22 EUR / 46.10 USD</span></span>   |
 
-### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a>Płatność zostaje odebrana i zaksięgowana w firmie Fabrikam dla odbiorcy 4000
+### <a name="payment-is-received-and-posted-in-fabrikam-for-customer-4000"></a><span data-ttu-id="d5562-284">Płatność zostaje odebrana i zaksięgowana w firmie Fabrikam dla odbiorcy 4000</span><span class="sxs-lookup"><span data-stu-id="d5562-284">Payment is received and posted in Fabrikam for customer 4000</span></span>
 
-| Konto                        | Kwota debetu            | Kwota kredytu           |
+| <span data-ttu-id="d5562-285">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-285">Account</span></span>                        | <span data-ttu-id="d5562-286">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-286">Debit amount</span></span>            | <span data-ttu-id="d5562-287">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-287">Credit amount</span></span>           |
 |--------------------------------|-------------------------|-------------------------|
-| Gotówka (Fabrikam)                | 626,22 EUR / 768,81 USD |                         |
-| Rozrachunki z odbiorcami (Fabrikam) |                         | 626,22 EUR / 768,81 USD |
+| <span data-ttu-id="d5562-288">Gotówka (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-288">Cash (Fabrikam)</span></span>                | <span data-ttu-id="d5562-289">626,22 EUR / 768,81 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-289">626.22 EUR / 768.81 USD</span></span> |                         |
+| <span data-ttu-id="d5562-290">Rozrachunki z odbiorcami (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-290">Accounts receivable (Fabrikam)</span></span> |                         | <span data-ttu-id="d5562-291">626,22 EUR / 768,81 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-291">626.22 EUR / 768.81 USD</span></span> |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a><span data-ttu-id="d5562-292">Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="d5562-292">Fabrikam payment is settled with Fabrikam East invoice</span></span>
 
-**Księgowanie w firmie Fabrikam**
+<span data-ttu-id="d5562-293">**Księgowanie w firmie Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="d5562-293">**Fabrikam posting**</span></span>
 
-| Konto                         | Kwota debetu            | Kwota kredytu           |
+| <span data-ttu-id="d5562-294">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-294">Account</span></span>                         | <span data-ttu-id="d5562-295">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-295">Debit amount</span></span>            | <span data-ttu-id="d5562-296">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-296">Credit amount</span></span>           |
 |---------------------------------|-------------------------|-------------------------|
-| Rozrachunki z odbiorcami (Fabrikam)  | 626,22 EUR / 768,81 USD |                         |
-| Należne dla Fabrikam East (Fabrikam) |                         | 626,22 EUR / 768,81 USD |
-| Należne dla Fabrikam East (Fabrikam) | 0,00 EUR / 13,46 USD    |                         |
-| Zrealizowana dodatnia różnica kursowa (Fabrikam)        |                         | 0,00 EUR / 13,46 USD    |
+| <span data-ttu-id="d5562-297">Rozrachunki z odbiorcami (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-297">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="d5562-298">626,22 EUR / 768,81 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-298">626.22 EUR / 768.81 USD</span></span> |                         |
+| <span data-ttu-id="d5562-299">Należne dla Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-299">Due to Fabrikam East (Fabrikam)</span></span> |                         | <span data-ttu-id="d5562-300">626,22 EUR / 768,81 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-300">626.22 EUR / 768.81 USD</span></span> |
+| <span data-ttu-id="d5562-301">Należne dla Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-301">Due to Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="d5562-302">0,00 EUR / 13,46 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-302">0.00 EUR / 13.46 USD</span></span>    |                         |
+| <span data-ttu-id="d5562-303">Zrealizowana dodatnia różnica kursowa (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-303">Realized gain (Fabrikam)</span></span>        |                         | <span data-ttu-id="d5562-304">0,00 EUR / 13,46 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-304">0.00 EUR / 13.46 USD</span></span>    |
 
-**Księgowanie w firmie Fabrikam East**
+<span data-ttu-id="d5562-305">**Księgowanie w firmie Fabrikam East**</span><span class="sxs-lookup"><span data-stu-id="d5562-305">**Fabrikam East posting**</span></span>
 
-| Konto                             | Kwota debetu            | Kwota kredytu           |
+| <span data-ttu-id="d5562-306">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-306">Account</span></span>                             | <span data-ttu-id="d5562-307">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-307">Debit amount</span></span>            | <span data-ttu-id="d5562-308">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-308">Credit amount</span></span>           |
 |-------------------------------------|-------------------------|-------------------------|
-| Należne od Fabrikam (Fabrikam East)   | 626,22 EUR / 768,81 USD |                         |
-| Rozrachunki z odbiorcami (Fabrikam East) |                         | 626,22 EUR / 768,81 USD |
-| Rozrachunki z odbiorcami (Fabrikam East)  | 0,00 EUR / 13,46 USD    |                         |
-| Należne od Fabrikam (Fabrikam East)   |                         | 0,00 EUR / 13,46 USD    |
-| Rabat gotówkowy (Fabrikam East)       | 12,00 EUR / 14,47 USD   |                         |
-| Rozrachunki z odbiorcami (Fabrikam East) |                         | 12,00 EUR / 14,47 USD   |
+| <span data-ttu-id="d5562-309">Należne od Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-309">Due from Fabrikam (Fabrikam East)</span></span>   | <span data-ttu-id="d5562-310">626,22 EUR / 768,81 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-310">626.22 EUR / 768.81 USD</span></span> |                         |
+| <span data-ttu-id="d5562-311">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-311">Accounts receivable (Fabrikam East)</span></span> |                         | <span data-ttu-id="d5562-312">626,22 EUR / 768,81 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-312">626.22 EUR / 768.81 USD</span></span> |
+| <span data-ttu-id="d5562-313">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-313">Accounts receivable (Fabrikam East</span></span>  | <span data-ttu-id="d5562-314">0,00 EUR / 13,46 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-314">0.00 EUR / 13.46 USD</span></span>    |                         |
+| <span data-ttu-id="d5562-315">Należne od Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-315">Due from Fabrikam (Fabrikam East)</span></span>   |                         | <span data-ttu-id="d5562-316">0,00 EUR / 13,46 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-316">0.00 EUR / 13.46 USD</span></span>    |
+| <span data-ttu-id="d5562-317">Rabat gotówkowy (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-317">Cash discount (Fabrikam East)</span></span>       | <span data-ttu-id="d5562-318">12,00 EUR / 14,47 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-318">12.00 EUR / 14.47 USD</span></span>   |                         |
+| <span data-ttu-id="d5562-319">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-319">Accounts receivable (Fabrikam East)</span></span> |                         | <span data-ttu-id="d5562-320">12,00 EUR / 14,47 USD</span><span class="sxs-lookup"><span data-stu-id="d5562-320">12.00 EUR / 14.47 USD</span></span>   |
 
-## <a name="example-5-customer-credit-note-with-primary-payment"></a>Przykład 5: Faktura korygująca odbiorcy z płatnością główną
-Firma Fabrikam odbiera płatność 75,00 od odbiorcy 4000, Northwind Traders. Płatność jest rozliczana za pomocą otwartej faktury dla odbiorcy 10000 firmy Fabrikam West i otwartej faktury korygującej dla odbiorcy 4000 firmy Fabrikam East. Płatność jest wybrana jako płatność główna na stronie **Rozlicz transakcje**.
+## <a name="example-5-customer-credit-note-with-primary-payment"></a><span data-ttu-id="d5562-321">Przykład 5: Faktura korygująca odbiorcy z płatnością główną</span><span class="sxs-lookup"><span data-stu-id="d5562-321">Example 5: Customer credit note with primary payment</span></span>
+<span data-ttu-id="d5562-322">Firma Fabrikam odbiera płatność 75,00 od odbiorcy 4000, Northwind Traders.</span><span class="sxs-lookup"><span data-stu-id="d5562-322">Fabrikam receives a payment of 75.00 from customer 4000, Northwind Traders.</span></span> <span data-ttu-id="d5562-323">Płatność jest rozliczana za pomocą otwartej faktury dla odbiorcy 10000 firmy Fabrikam West i otwartej faktury korygującej dla odbiorcy 4000 firmy Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="d5562-323">The payment is settled with an open invoice for Fabrikam West customer 10000 and an open credit note for Fabrikam East customer 4000.</span></span> <span data-ttu-id="d5562-324">Płatność jest wybrana jako płatność główna na stronie **Rozlicz transakcje**.</span><span class="sxs-lookup"><span data-stu-id="d5562-324">The payment is selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Faktura zostaje zaksięgowana w firmie Fabrikam West dla odbiorcy 10000
+### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a><span data-ttu-id="d5562-325">Faktura zostaje zaksięgowana w firmie Fabrikam West dla odbiorcy 10000</span><span class="sxs-lookup"><span data-stu-id="d5562-325">Invoice is posted to Fabrikam West for customer 10000</span></span>
 
-| Konto                             | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-326">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-326">Account</span></span>                             | <span data-ttu-id="d5562-327">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-327">Debit amount</span></span> | <span data-ttu-id="d5562-328">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-328">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Rozrachunki z odbiorcami (Fabrikam West) | 100,00       |               |
-| Sprzedaż (Fabrikam West)               |              | 100,00        |
+| <span data-ttu-id="d5562-329">Rozrachunki z odbiorcami (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="d5562-329">Accounts receivable (Fabrikam West)</span></span> | <span data-ttu-id="d5562-330">100,00</span><span class="sxs-lookup"><span data-stu-id="d5562-330">100.00</span></span>       |               |
+| <span data-ttu-id="d5562-331">Sprzedaż (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="d5562-331">Sales (Fabrikam West)</span></span>               |              | <span data-ttu-id="d5562-332">100,00</span><span class="sxs-lookup"><span data-stu-id="d5562-332">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a>Faktura korygująca zostaje zaksięgowana w firmie Fabrikam East dla odbiorcy 4000
+### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a><span data-ttu-id="d5562-333">Faktura korygująca zostaje zaksięgowana w firmie Fabrikam East dla odbiorcy 4000</span><span class="sxs-lookup"><span data-stu-id="d5562-333">Credit note is posted to Fabrikam East for customer 4000</span></span>
 
-| Konto                             | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-334">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-334">Account</span></span>                             | <span data-ttu-id="d5562-335">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-335">Debit amount</span></span> | <span data-ttu-id="d5562-336">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-336">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Zwroty sprzedaży (Fabrikam East)       | 25,00        |               |
-| Rozrachunki z odbiorcami (Fabrikam East) |              | 25,00         |
+| <span data-ttu-id="d5562-337">Zwroty sprzedaży (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-337">Sales returns (Fabrikam East)</span></span>       | <span data-ttu-id="d5562-338">25,00</span><span class="sxs-lookup"><span data-stu-id="d5562-338">25.00</span></span>        |               |
+| <span data-ttu-id="d5562-339">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-339">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="d5562-340">25,00</span><span class="sxs-lookup"><span data-stu-id="d5562-340">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a>Płatność zostaje zaksięgowana w firmie Fabrikam dla odbiorcy 4000
+### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a><span data-ttu-id="d5562-341">Płatność zostaje zaksięgowana w firmie Fabrikam dla odbiorcy 4000</span><span class="sxs-lookup"><span data-stu-id="d5562-341">Payment is posted to Fabrikam for customer 4000</span></span>
 
-| Konto                        | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-342">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-342">Account</span></span>                        | <span data-ttu-id="d5562-343">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-343">Debit amount</span></span> | <span data-ttu-id="d5562-344">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-344">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Gotówka (Fabrikam)                | 75,00        |               |
-| Rozrachunki z odbiorcami (Fabrikam) |              | 75,00         |
+| <span data-ttu-id="d5562-345">Gotówka (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-345">Cash (Fabrikam)</span></span>                | <span data-ttu-id="d5562-346">75,00</span><span class="sxs-lookup"><span data-stu-id="d5562-346">75.00</span></span>        |               |
+| <span data-ttu-id="d5562-347">Rozrachunki z odbiorcami (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-347">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="d5562-348">75,00</span><span class="sxs-lookup"><span data-stu-id="d5562-348">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam West i faktury korygującej firmy Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="d5562-349">Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam West i faktury korygującej firmy Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="d5562-349">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Księgowanie w firmie Fabrikam**
+<span data-ttu-id="d5562-350">**Księgowanie w firmie Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="d5562-350">**Fabrikam posting**</span></span>
 
-| Konto                           | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-351">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-351">Account</span></span>                           | <span data-ttu-id="d5562-352">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-352">Debit amount</span></span> | <span data-ttu-id="d5562-353">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-353">Credit amount</span></span> |
 |-----------------------------------|--------------|---------------|
-| Należne od Fabrikam East (Fabrikam) | 25,00        |               |
-| Rozrachunki z odbiorcami (Fabrikam)    |              | 25,00         |
-| Rozrachunki z odbiorcami (Fabrikam)    | 100,00       |               |
-| Należne dla Fabrikam West (Fabrikam)   |              | 100,00        |
+| <span data-ttu-id="d5562-354">Należne od Fabrikam East (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-354">Due from Fabrikam East (Fabrikam)</span></span> | <span data-ttu-id="d5562-355">25,00</span><span class="sxs-lookup"><span data-stu-id="d5562-355">25.00</span></span>        |               |
+| <span data-ttu-id="d5562-356">Rozrachunki z odbiorcami (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-356">Accounts receivable (Fabrikam)</span></span>    |              | <span data-ttu-id="d5562-357">25,00</span><span class="sxs-lookup"><span data-stu-id="d5562-357">25.00</span></span>         |
+| <span data-ttu-id="d5562-358">Rozrachunki z odbiorcami (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-358">Accounts receivable (Fabrikam)</span></span>    | <span data-ttu-id="d5562-359">100,00</span><span class="sxs-lookup"><span data-stu-id="d5562-359">100.00</span></span>       |               |
+| <span data-ttu-id="d5562-360">Należne dla Fabrikam West (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-360">Due to Fabrikam West (Fabrikam)</span></span>   |              | <span data-ttu-id="d5562-361">100,00</span><span class="sxs-lookup"><span data-stu-id="d5562-361">100.00</span></span>        |
 
-**Księgowanie w firmie Fabrikam East**
+<span data-ttu-id="d5562-362">**Księgowanie w firmie Fabrikam East**</span><span class="sxs-lookup"><span data-stu-id="d5562-362">**Fabrikam East posting**</span></span>
 
-| Konto                             | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-363">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-363">Account</span></span>                             | <span data-ttu-id="d5562-364">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-364">Debit amount</span></span> | <span data-ttu-id="d5562-365">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-365">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Rozrachunki z odbiorcami (Fabrikam East) | 25,00        |               |
-| Należne dla Fabrikam (Fabrikam East)     |              | 25,00         |
+| <span data-ttu-id="d5562-366">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-366">Accounts receivable (Fabrikam East)</span></span> | <span data-ttu-id="d5562-367">25,00</span><span class="sxs-lookup"><span data-stu-id="d5562-367">25.00</span></span>        |               |
+| <span data-ttu-id="d5562-368">Należne dla Fabrikam (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-368">Due to Fabrikam (Fabrikam East)</span></span>     |              | <span data-ttu-id="d5562-369">25,00</span><span class="sxs-lookup"><span data-stu-id="d5562-369">25.00</span></span>         |
 
-**Księgowanie w firmie Fabrikam West**
+<span data-ttu-id="d5562-370">**Księgowanie w firmie Fabrikam West**</span><span class="sxs-lookup"><span data-stu-id="d5562-370">**Fabrikam West posting**</span></span>
 
-| Konto                             | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-371">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-371">Account</span></span>                             | <span data-ttu-id="d5562-372">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-372">Debit amount</span></span> | <span data-ttu-id="d5562-373">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-373">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Należne od Fabrikam (Fabrikam West)   | 100,00       |               |
-| Rozrachunki z odbiorcami (Fabrikam West) |              | 100,00        |
+| <span data-ttu-id="d5562-374">Należne od Fabrikam (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="d5562-374">Due from Fabrikam (Fabrikam West)</span></span>   | <span data-ttu-id="d5562-375">100,00</span><span class="sxs-lookup"><span data-stu-id="d5562-375">100.00</span></span>       |               |
+| <span data-ttu-id="d5562-376">Rozrachunki z odbiorcami (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="d5562-376">Accounts receivable (Fabrikam West)</span></span> |              | <span data-ttu-id="d5562-377">100,00</span><span class="sxs-lookup"><span data-stu-id="d5562-377">100.00</span></span>        |
 
-## <a name="example-6-customer-credit-note-without-primary-payment"></a>Przykład 6: Faktura korygująca odbiorcy bez płatności głównej
-Firma Fabrikam odbiera płatność 75,00 od odbiorcy 4000, Northwind Traders. Płatność jest rozliczana za pomocą otwartej faktury dla odbiorcy 10000 firmy Fabrikam West i otwartej faktury korygującej dla odbiorcy 4000 firmy Fabrikam East. Płatność nie jest wybrana jako płatność główna na stronie **Rozlicz transakcje**.
+## <a name="example-6-customer-credit-note-without-primary-payment"></a><span data-ttu-id="d5562-378">Przykład 6: Faktura korygująca odbiorcy bez płatności głównej</span><span class="sxs-lookup"><span data-stu-id="d5562-378">Example 6: Customer credit note without primary payment</span></span>
+<span data-ttu-id="d5562-379">Firma Fabrikam odbiera płatność 75,00 od odbiorcy 4000, Northwind Traders.</span><span class="sxs-lookup"><span data-stu-id="d5562-379">Fabrikam receives a payment of 75.00 from customer 4000, Northwind Traders.</span></span> <span data-ttu-id="d5562-380">Płatność jest rozliczana za pomocą otwartej faktury dla odbiorcy 10000 firmy Fabrikam West i otwartej faktury korygującej dla odbiorcy 4000 firmy Fabrikam East.</span><span class="sxs-lookup"><span data-stu-id="d5562-380">The payment is settled with an open invoice for Fabrikam West customer 10000 and an open credit note for Fabrikam East customer 4000.</span></span> <span data-ttu-id="d5562-381">Płatność nie jest wybrana jako płatność główna na stronie **Rozlicz transakcje**.</span><span class="sxs-lookup"><span data-stu-id="d5562-381">The payment isn't selected as the primary payment on the **Settle transactions** page.</span></span>
 
-### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Faktura zostaje zaksięgowana w firmie Fabrikam West dla odbiorcy 10000
+### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a><span data-ttu-id="d5562-382">Faktura zostaje zaksięgowana w firmie Fabrikam West dla odbiorcy 10000</span><span class="sxs-lookup"><span data-stu-id="d5562-382">Invoice is posted to Fabrikam West for customer 10000</span></span>
 
-| Konto                             | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-383">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-383">Account</span></span>                             | <span data-ttu-id="d5562-384">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-384">Debit amount</span></span> | <span data-ttu-id="d5562-385">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-385">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Rozrachunki z odbiorcami (Fabrikam West) | 100,00       |               |
-| Sprzedaż (Fabrikam West)               |              | 100,00        |
+| <span data-ttu-id="d5562-386">Rozrachunki z odbiorcami (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="d5562-386">Accounts receivable (Fabrikam West)</span></span> | <span data-ttu-id="d5562-387">100,00</span><span class="sxs-lookup"><span data-stu-id="d5562-387">100.00</span></span>       |               |
+| <span data-ttu-id="d5562-388">Sprzedaż (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="d5562-388">Sales (Fabrikam West)</span></span>               |              | <span data-ttu-id="d5562-389">100,00</span><span class="sxs-lookup"><span data-stu-id="d5562-389">100.00</span></span>        |
 
-### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a>Faktura korygująca zostaje zaksięgowana w firmie Fabrikam East dla odbiorcy 4000
+### <a name="credit-note-is-posted-to-fabrikam-east-for-customer-4000"></a><span data-ttu-id="d5562-390">Faktura korygująca zostaje zaksięgowana w firmie Fabrikam East dla odbiorcy 4000</span><span class="sxs-lookup"><span data-stu-id="d5562-390">Credit note is posted to Fabrikam East for customer 4000</span></span>
 
-| Konto                             | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-391">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-391">Account</span></span>                             | <span data-ttu-id="d5562-392">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-392">Debit amount</span></span> | <span data-ttu-id="d5562-393">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-393">Credit amount</span></span> |
 |-------------------------------------|--------------|---------------|
-| Zwroty sprzedaży (Fabrikam East)       | 25,00        |               |
-| Rozrachunki z odbiorcami (Fabrikam East) |              | 25,00         |
+| <span data-ttu-id="d5562-394">Zwroty sprzedaży (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-394">Sales returns (Fabrikam East)</span></span>       | <span data-ttu-id="d5562-395">25,00</span><span class="sxs-lookup"><span data-stu-id="d5562-395">25.00</span></span>        |               |
+| <span data-ttu-id="d5562-396">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-396">Accounts receivable (Fabrikam East)</span></span> |              | <span data-ttu-id="d5562-397">25,00</span><span class="sxs-lookup"><span data-stu-id="d5562-397">25.00</span></span>         |
 
-### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a>Płatność zostaje zaksięgowana w firmie Fabrikam dla odbiorcy 4000
+### <a name="payment-is-posted-to-fabrikam-for-customer-4000"></a><span data-ttu-id="d5562-398">Płatność zostaje zaksięgowana w firmie Fabrikam dla odbiorcy 4000</span><span class="sxs-lookup"><span data-stu-id="d5562-398">Payment is posted to Fabrikam for customer 4000</span></span>
 
-| Konto                        | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-399">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-399">Account</span></span>                        | <span data-ttu-id="d5562-400">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-400">Debit amount</span></span> | <span data-ttu-id="d5562-401">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-401">Credit amount</span></span> |
 |--------------------------------|--------------|---------------|
-| Gotówka (Fabrikam)                | 75,00        |               |
-| Rozrachunki z odbiorcami (Fabrikam) |              | 75,00         |
+| <span data-ttu-id="d5562-402">Gotówka (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-402">Cash (Fabrikam)</span></span>                | <span data-ttu-id="d5562-403">75,00</span><span class="sxs-lookup"><span data-stu-id="d5562-403">75.00</span></span>        |               |
+| <span data-ttu-id="d5562-404">Rozrachunki z odbiorcami (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-404">Accounts receivable (Fabrikam)</span></span> |              | <span data-ttu-id="d5562-405">75,00</span><span class="sxs-lookup"><span data-stu-id="d5562-405">75.00</span></span>         |
 
-### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam West i faktury korygującej firmy Fabrikam East
+### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a><span data-ttu-id="d5562-406">Płatność dla firmy Fabrikam zostaje rozliczona za pomocą faktury firmy Fabrikam West i faktury korygującej firmy Fabrikam East</span><span class="sxs-lookup"><span data-stu-id="d5562-406">Fabrikam payment is settled with Fabrikam West invoice and Fabrikam East credit note</span></span>
 
-**Księgowanie w firmie Fabrikam**
+<span data-ttu-id="d5562-407">**Księgowanie w firmie Fabrikam**</span><span class="sxs-lookup"><span data-stu-id="d5562-407">**Fabrikam posting**</span></span>
 
-| Konto                         | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-408">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-408">Account</span></span>                         | <span data-ttu-id="d5562-409">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-409">Debit amount</span></span> | <span data-ttu-id="d5562-410">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-410">Credit amount</span></span> |
 |---------------------------------|--------------|---------------|
-| Rozrachunki z odbiorcami (Fabrikam)  | 75,00        |               |
-| Należne dla Fabrikam West (Fabrikam) |              | 75,00         |
+| <span data-ttu-id="d5562-411">Rozrachunki z odbiorcami (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-411">Accounts receivable (Fabrikam)</span></span>  | <span data-ttu-id="d5562-412">75,00</span><span class="sxs-lookup"><span data-stu-id="d5562-412">75.00</span></span>        |               |
+| <span data-ttu-id="d5562-413">Należne dla Fabrikam West (Fabrikam)</span><span class="sxs-lookup"><span data-stu-id="d5562-413">Due to Fabrikam West (Fabrikam)</span></span> |              | <span data-ttu-id="d5562-414">75,00</span><span class="sxs-lookup"><span data-stu-id="d5562-414">75.00</span></span>         |
 
-**Księgowanie w firmie Fabrikam East**
+<span data-ttu-id="d5562-415">**Księgowanie w firmie Fabrikam East**</span><span class="sxs-lookup"><span data-stu-id="d5562-415">**Fabrikam East posting**</span></span>
 
-| Konto                              | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-416">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-416">Account</span></span>                              | <span data-ttu-id="d5562-417">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-417">Debit amount</span></span> | <span data-ttu-id="d5562-418">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-418">Credit amount</span></span> |
 |--------------------------------------|--------------|---------------|
-| Rozrachunki z odbiorcami (Fabrikam East)  | 25,00        |               |
-| Należne dla Fabrikam West (Fabrikam East) |              | 25,00         |
+| <span data-ttu-id="d5562-419">Rozrachunki z odbiorcami (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-419">Accounts receivable (Fabrikam East)</span></span>  | <span data-ttu-id="d5562-420">25,00</span><span class="sxs-lookup"><span data-stu-id="d5562-420">25.00</span></span>        |               |
+| <span data-ttu-id="d5562-421">Należne dla Fabrikam West (Fabrikam East)</span><span class="sxs-lookup"><span data-stu-id="d5562-421">Due to Fabrikam West (Fabrikam East)</span></span> |              | <span data-ttu-id="d5562-422">25,00</span><span class="sxs-lookup"><span data-stu-id="d5562-422">25.00</span></span>         |
 
-**Księgowanie w firmie Fabrikam West**
+<span data-ttu-id="d5562-423">**Księgowanie w firmie Fabrikam West**</span><span class="sxs-lookup"><span data-stu-id="d5562-423">**Fabrikam West posting**</span></span>
 
-| Konto                                | Kwota debetu | Kwota kredytu |
+| <span data-ttu-id="d5562-424">Konto</span><span class="sxs-lookup"><span data-stu-id="d5562-424">Account</span></span>                                | <span data-ttu-id="d5562-425">Kwota debetu</span><span class="sxs-lookup"><span data-stu-id="d5562-425">Debit amount</span></span> | <span data-ttu-id="d5562-426">Kwota kredytu</span><span class="sxs-lookup"><span data-stu-id="d5562-426">Credit amount</span></span> |
 |----------------------------------------|--------------|---------------|
-| Należne od Fabrikam (Fabrikam West)      | 75,00        |               |
-| Rozrachunki z odbiorcami (Fabrikam West)    |              | 75,00         |
-| Należne od Fabrikam East (Fabrikam West) | 25,00        |               |
-| Rozrachunki z odbiorcami (Fabrikam West)    |              | 25,00         |
+| <span data-ttu-id="d5562-427">Należne od Fabrikam (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="d5562-427">Due from Fabrikam (Fabrikam West)</span></span>      | <span data-ttu-id="d5562-428">75,00</span><span class="sxs-lookup"><span data-stu-id="d5562-428">75.00</span></span>        |               |
+| <span data-ttu-id="d5562-429">Rozrachunki z odbiorcami (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="d5562-429">Accounts receivable (Fabrikam West)</span></span>    |              | <span data-ttu-id="d5562-430">75,00</span><span class="sxs-lookup"><span data-stu-id="d5562-430">75.00</span></span>         |
+| <span data-ttu-id="d5562-431">Należne od Fabrikam East (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="d5562-431">Due from Fabrikam East (Fabrikam West)</span></span> | <span data-ttu-id="d5562-432">25,00</span><span class="sxs-lookup"><span data-stu-id="d5562-432">25.00</span></span>        |               |
+| <span data-ttu-id="d5562-433">Rozrachunki z odbiorcami (Fabrikam West)</span><span class="sxs-lookup"><span data-stu-id="d5562-433">Accounts receivable (Fabrikam West)</span></span>    |              | <span data-ttu-id="d5562-434">25,00</span><span class="sxs-lookup"><span data-stu-id="d5562-434">25.00</span></span>         |
 
 
 

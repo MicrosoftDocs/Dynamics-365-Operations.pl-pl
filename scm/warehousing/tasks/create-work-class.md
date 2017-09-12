@@ -17,26 +17,26 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 50b8ee1825391d7e5977f758628b559d006a334e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 9a775366bdaecb59a375f245f7a4d17a659cab11
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-work-class"></a>Tworzenie klasy roboczej
+# <a name="create-a-work-class"></a><span data-ttu-id="6f033-103">Tworzenie klasy roboczej</span><span class="sxs-lookup"><span data-stu-id="6f033-103">Create a work class</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób konfigurowania klasy pracy. Klas pracy są używane do kierowania i/lub ograniczania typów wierszy zlecenia, które pracownik magazynu może przetwarzać na urządzeniu przenośnym. Wiersze, które pracownik może przetwarzać, zależą od klas pracy w elementach menu urządzenia przenośnego, do których pracownik magazynu ma dostęp, oraz od klasy pracy określonej w wierszach pracy. Klas pracy mogą służyć także do sprawdzania poprawności lokalizacji odłożenia dla wiersza zlecenia. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Ta procedura jest przeznaczona dla kierownika magazynu.
+<span data-ttu-id="6f033-104">W tej procedurze pokazano sposób konfigurowania klasy pracy.</span><span class="sxs-lookup"><span data-stu-id="6f033-104">This procedure shows you how to set up a work class.</span></span> <span data-ttu-id="6f033-105">Klas pracy są używane do kierowania i/lub ograniczania typów wierszy zlecenia, które pracownik magazynu może przetwarzać na urządzeniu przenośnym.</span><span class="sxs-lookup"><span data-stu-id="6f033-105">Work classes are used to direct and/or limit the type of work order lines that a warehouse worker can process on a mobile device.</span></span> <span data-ttu-id="6f033-106">Wiersze, które pracownik może przetwarzać, zależą od klas pracy w elementach menu urządzenia przenośnego, do których pracownik magazynu ma dostęp, oraz od klasy pracy określonej w wierszach pracy.</span><span class="sxs-lookup"><span data-stu-id="6f033-106">The lines that a worker can process are determined from the work classes on the mobile device menu items that the warehouse worker has access to and the work class that’s specified on the work lines.</span></span> <span data-ttu-id="6f033-107">Klas pracy mogą służyć także do sprawdzania poprawności lokalizacji odłożenia dla wiersza zlecenia.</span><span class="sxs-lookup"><span data-stu-id="6f033-107">Work classes can also be used to validate the put location for a work order line.</span></span> <span data-ttu-id="6f033-108">Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="6f033-108">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="6f033-109">Ta procedura jest przeznaczona dla kierownika magazynu.</span><span class="sxs-lookup"><span data-stu-id="6f033-109">This procedure is intended for the warehouse manager.</span></span>
 
-1. Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Praca > Klasy robocze.
-2. Kliknij przycisk Nowy.
-3. W polu Identyfikator klasy roboczej wpisz wartość.
-4. Wypełnij pole Opis.
-5. W polu Typ zlecenia wybierz opcję.
-6. Kliknij przycisk Nowy.
-7. W polu Typ lokalizacji wpisz wartość.
-    * Jeśli wybrano typ lokalizacji, tworzy to ograniczenie dotyczące tego, gdzie można odkładać towary po pobraniu. To ustawienie jest używane, gdy dyrektywa lokalizacji próbuje rozpoznać lokalizację lub gdy pracownik magazynu ręcznie podaje lokalizację w elemencie menu urządzenia przenośnego.  
-8. Zamknij stronę.
+1. <span data-ttu-id="6f033-110">Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Praca > Klasy robocze.</span><span class="sxs-lookup"><span data-stu-id="6f033-110">Go to Warehouse management > Setup > Work > Work classes.</span></span>
+2. <span data-ttu-id="6f033-111">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="6f033-111">Click New.</span></span>
+3. <span data-ttu-id="6f033-112">W polu Identyfikator klasy roboczej wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="6f033-112">In the Work class ID field, type a value.</span></span>
+4. <span data-ttu-id="6f033-113">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="6f033-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="6f033-114">W polu Typ zlecenia wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="6f033-114">In the Work order type field, select an option.</span></span>
+6. <span data-ttu-id="6f033-115">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="6f033-115">Click New.</span></span>
+7. <span data-ttu-id="6f033-116">W polu Typ lokalizacji wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="6f033-116">In the Location type field, type a value.</span></span>
+    * <span data-ttu-id="6f033-117">Jeśli wybrano typ lokalizacji, tworzy to ograniczenie dotyczące tego, gdzie można odkładać towary po pobraniu.</span><span class="sxs-lookup"><span data-stu-id="6f033-117">If you select a location type, this sets a restriction on where items can be put after they’ve been picked.</span></span> <span data-ttu-id="6f033-118">To ustawienie jest używane, gdy dyrektywa lokalizacji próbuje rozpoznać lokalizację lub gdy pracownik magazynu ręcznie podaje lokalizację w elemencie menu urządzenia przenośnego.</span><span class="sxs-lookup"><span data-stu-id="6f033-118">This setting is used when a location directive tries to resolve the location, or if a warehouse worker manually provides the location for the mobile device menu item.</span></span>  
+8. <span data-ttu-id="6f033-119">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="6f033-119">Close the page.</span></span>
 
 

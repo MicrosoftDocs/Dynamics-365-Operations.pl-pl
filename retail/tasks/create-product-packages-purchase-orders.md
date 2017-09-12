@@ -17,60 +17,60 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 695460415f81d65ec35eeee60209358b722c9244
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: a3be1e7aca7f0382aea55fa8a371c33c8b53df95
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-product-packages-for-purchase-orders"></a>Tworzenie pakietów produktów dla zamówień zakupu
+# <a name="create-product-packages-for-purchase-orders"></a><span data-ttu-id="ddae6-103">Tworzenie pakietów produktów dla zamówień zakupu</span><span class="sxs-lookup"><span data-stu-id="ddae6-103">Create product packages for purchase orders</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ta procedura zawiera instruktaż tworzenia pakietu produktów i użycia go w zamówieniu zakupu. Zamówienie zakupu zostanie użyte do utworzenia zamówienia na wstępnie zdefiniowany zestaw produktów. Procedura wykorzystuje dane firmy demonstracyjnej USRT.
+<span data-ttu-id="ddae6-104">Ta procedura zawiera instruktaż tworzenia pakietu produktów i użycia go w zamówieniu zakupu.</span><span class="sxs-lookup"><span data-stu-id="ddae6-104">This procedure walks through creating a product package and using it on a purchase order.</span></span> <span data-ttu-id="ddae6-105">Zamówienie zakupu zostanie użyte do utworzenia zamówienia na wstępnie zdefiniowany zestaw produktów.</span><span class="sxs-lookup"><span data-stu-id="ddae6-105">The purchase order will be used to create an order for a pre-defined set of products.</span></span> <span data-ttu-id="ddae6-106">Procedura wykorzystuje dane firmy demonstracyjnej USRT.</span><span class="sxs-lookup"><span data-stu-id="ddae6-106">This procedure uses the USRT demo data company.</span></span>
 
 
-## <a name="create-a-product-package"></a>Tworzenie pakietu produktów
-1. Wybierz kolejno opcje Handel detaliczny i inny > Zarządzanie zapasami > Uzupełnienie > Pakiety produktów.
-2. Kliknij przycisk Nowy.
-3. W polu Numer paczki wpisz wartość.
-4. Wypełnij pole Opis.
-5. W polu Konto dostawcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-6. Na liście kliknij łącze w wybranym wierszu.
-7. Kliknij przycisk Dodaj.
-8. W polu Numer towaru wpisz wartość „0160”.
-9. W polu Rozmiar kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-10. Na liście kliknij łącze w wybranym wierszu.
-11. Wprowadź liczbę w polu Ilość.
-12. Kliknij przycisk Dodaj.
-13. W polu Numer towaru wpisz wartość „0160”.
-14. W polu Numer wariantu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-15. Na liście kliknij łącze w wybranym wierszu.
-16. Wprowadź liczbę w polu Ilość.
-17. Kliknij przycisk Dodaj.
-18. W polu Numer towaru wpisz wartość „0175”.
-19. Wprowadź liczbę w polu Ilość.
-20. Kliknij przycisk Zapisz.
-21. Zamknij stronę.
+## <a name="create-a-product-package"></a><span data-ttu-id="ddae6-107">Tworzenie pakietu produktów</span><span class="sxs-lookup"><span data-stu-id="ddae6-107">Create a product package</span></span>
+1. <span data-ttu-id="ddae6-108">Wybierz kolejno opcje Handel detaliczny i inny > Zarządzanie zapasami > Uzupełnienie > Pakiety produktów.</span><span class="sxs-lookup"><span data-stu-id="ddae6-108">Go to Retail and commerce > Inventory management > Replenishment > Product packages.</span></span>
+2. <span data-ttu-id="ddae6-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="ddae6-109">Click New.</span></span>
+3. <span data-ttu-id="ddae6-110">W polu Numer paczki wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="ddae6-110">In the Package number field, type a value.</span></span>
+4. <span data-ttu-id="ddae6-111">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="ddae6-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="ddae6-112">W polu Konto dostawcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="ddae6-112">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="ddae6-113">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="ddae6-113">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="ddae6-114">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="ddae6-114">Click Add.</span></span>
+8. <span data-ttu-id="ddae6-115">W polu Numer towaru wpisz wartość „0160”.</span><span class="sxs-lookup"><span data-stu-id="ddae6-115">In the Item number field, type '0160'.</span></span>
+9. <span data-ttu-id="ddae6-116">W polu Rozmiar kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="ddae6-116">In the Size field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="ddae6-117">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="ddae6-117">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="ddae6-118">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="ddae6-118">In the Quantity field, enter a number.</span></span>
+12. <span data-ttu-id="ddae6-119">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="ddae6-119">Click Add.</span></span>
+13. <span data-ttu-id="ddae6-120">W polu Numer towaru wpisz wartość „0160”.</span><span class="sxs-lookup"><span data-stu-id="ddae6-120">In the Item number field, type '0160'.</span></span>
+14. <span data-ttu-id="ddae6-121">W polu Numer wariantu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="ddae6-121">In the Variant number field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="ddae6-122">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="ddae6-122">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="ddae6-123">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="ddae6-123">In the Quantity field, enter a number.</span></span>
+17. <span data-ttu-id="ddae6-124">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="ddae6-124">Click Add.</span></span>
+18. <span data-ttu-id="ddae6-125">W polu Numer towaru wpisz wartość „0175”.</span><span class="sxs-lookup"><span data-stu-id="ddae6-125">In the Item number field, type '0175'.</span></span>
+19. <span data-ttu-id="ddae6-126">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="ddae6-126">In the Quantity field, enter a number.</span></span>
+20. <span data-ttu-id="ddae6-127">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="ddae6-127">Click Save.</span></span>
+21. <span data-ttu-id="ddae6-128">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="ddae6-128">Close the page.</span></span>
 
-## <a name="add-package-to-puchase-order"></a>Dodawanie pakietu do zamówienia zakupu
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Zamówienia zakupu > Wszystkie zamówienia zakupu.
-2. Kliknij przycisk Nowy.
-3. W polu Konto dostawcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-4. Na liście zaznacz tego samego dostawcę, dla którego wcześniej utworzono pakiet produktów, jeśli dostawca był wybrany.
-5. Przełącz rozwinięcie sekcji Ogólne.
-6. W polu Oddział kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-7. Na liście kliknij łącze w wybranym wierszu.
-8. W polu Magazyn kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-9. Na liście kliknij łącze w wybranym wierszu.
-10. Kliknij przycisk OK.
-11. Przełącz rozwinięcie sekcji Szczegóły wiersza.
-12. Kliknij kartę Pakiety produktów.
-13. Kliknij opcję Wiersz zamówienia zakupu.
-14. Kliknij opcję Utwórz wiersze na podstawie paczki.
-15. Na liście znajdź i zaznacz pakiet produktów utworzony w poprzednim kroku.
-16. W polu Ilość wprowadź liczbę.
-17. Kliknij przycisk Utwórz.
-18. Kliknij przycisk Zapisz.
+## <a name="add-package-to-puchase-order"></a><span data-ttu-id="ddae6-129">Dodawanie pakietu do zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="ddae6-129">Add package to puchase order</span></span>
+1. <span data-ttu-id="ddae6-130">Wybierz kolejno opcje Rozrachunki z dostawcami > Zamówienia zakupu > Wszystkie zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="ddae6-130">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="ddae6-131">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="ddae6-131">Click New.</span></span>
+3. <span data-ttu-id="ddae6-132">W polu Konto dostawcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="ddae6-132">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="ddae6-133">Na liście zaznacz tego samego dostawcę, dla którego wcześniej utworzono pakiet produktów, jeśli dostawca był wybrany.</span><span class="sxs-lookup"><span data-stu-id="ddae6-133">In the list, select the same vendor that the product package was previously created for, if a vendor was selected.</span></span>
+5. <span data-ttu-id="ddae6-134">Przełącz rozwinięcie sekcji Ogólne.</span><span class="sxs-lookup"><span data-stu-id="ddae6-134">Toggle the expansion of the General section.</span></span>
+6. <span data-ttu-id="ddae6-135">W polu Oddział kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="ddae6-135">In the Site field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="ddae6-136">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="ddae6-136">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="ddae6-137">W polu Magazyn kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="ddae6-137">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="ddae6-138">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="ddae6-138">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="ddae6-139">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="ddae6-139">Click OK.</span></span>
+11. <span data-ttu-id="ddae6-140">Przełącz rozwinięcie sekcji Szczegóły wiersza.</span><span class="sxs-lookup"><span data-stu-id="ddae6-140">Toggle the expansion of the Line details section.</span></span>
+12. <span data-ttu-id="ddae6-141">Kliknij kartę Pakiety produktów.</span><span class="sxs-lookup"><span data-stu-id="ddae6-141">Click the Product packages tab.</span></span>
+13. <span data-ttu-id="ddae6-142">Kliknij opcję Wiersz zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="ddae6-142">Click Purchase order line.</span></span>
+14. <span data-ttu-id="ddae6-143">Kliknij opcję Utwórz wiersze na podstawie paczki.</span><span class="sxs-lookup"><span data-stu-id="ddae6-143">Click Create lines from package.</span></span>
+15. <span data-ttu-id="ddae6-144">Na liście znajdź i zaznacz pakiet produktów utworzony w poprzednim kroku.</span><span class="sxs-lookup"><span data-stu-id="ddae6-144">In the list, find and select the product package created in previous step.</span></span>
+16. <span data-ttu-id="ddae6-145">W polu Ilość wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="ddae6-145">In the Quantity field, enter a number.</span></span>
+17. <span data-ttu-id="ddae6-146">Kliknij przycisk Utwórz.</span><span class="sxs-lookup"><span data-stu-id="ddae6-146">Click Create.</span></span>
+18. <span data-ttu-id="ddae6-147">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="ddae6-147">Click Save.</span></span>
 
 

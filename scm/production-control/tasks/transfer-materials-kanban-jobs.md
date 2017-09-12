@@ -17,52 +17,52 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 72403aa502cadf2a727bdd67ad8cd612dafd502b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c79480d844627a7eed8129515924f1f70ad04f95
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="transfer-materials-with-kanban-jobs-february-2016-only"></a>Przenoszenie materiałów z zadań Kanban (tylko luty 2016)
+# <a name="transfer-materials-with-kanban-jobs-february-2016-only"></a><span data-ttu-id="c97d0-103">Przenoszenie materiałów z zadań Kanban (tylko luty 2016)</span><span class="sxs-lookup"><span data-stu-id="c97d0-103">Transfer materials with kanban jobs (February 2016 only)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ta procedura skupia się na wycofywaniu zadania przeniesienia materiałów w systemie Kanban. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Ta procedura jest przeznaczona dla pracownika magazynu.
+<span data-ttu-id="c97d0-104">Ta procedura skupia się na wycofywaniu zadania przeniesienia materiałów w systemie Kanban.</span><span class="sxs-lookup"><span data-stu-id="c97d0-104">This procedure focuses on executing a withdrawal kanban job to transfer materials.</span></span> <span data-ttu-id="c97d0-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="c97d0-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="c97d0-106">Ta procedura jest przeznaczona dla pracownika magazynu.</span><span class="sxs-lookup"><span data-stu-id="c97d0-106">This procedure is intended for the warehouse worker.</span></span>
 
 
-## <a name="display-transfer-jobs"></a>Wyświetlanie zadań przeniesienia
-1. Wybierz kolejno opcje Kontrola produkcji > Kanban > Tablica Kanban zadań przeniesienia.
-2. Rozwiń lub zwiń sekcję Filtry.
-    * W sekcji Filtry można określić, które zadania mają być widoczne, filtrując według przepływu produkcji, nazwy działania, magazynu i lokalizacji źródłowej oraz magazynu i lokalizacji docelowej.  
-3. W polu Z magazynu wpisz „11”.
-4. W polu Do lokalizacji wpisz „12”.
+## <a name="display-transfer-jobs"></a><span data-ttu-id="c97d0-107">Wyświetlanie zadań przeniesienia</span><span class="sxs-lookup"><span data-stu-id="c97d0-107">Display transfer jobs</span></span>
+1. <span data-ttu-id="c97d0-108">Wybierz kolejno opcje Kontrola produkcji > Kanban > Tablica Kanban zadań przeniesienia.</span><span class="sxs-lookup"><span data-stu-id="c97d0-108">Go to Production control > Kanban > Kanban board for transfer jobs.</span></span>
+2. <span data-ttu-id="c97d0-109">Rozwiń lub zwiń sekcję Filtry.</span><span class="sxs-lookup"><span data-stu-id="c97d0-109">Expand or collapse the Filters section.</span></span>
+    * <span data-ttu-id="c97d0-110">W sekcji Filtry można określić, które zadania mają być widoczne, filtrując według przepływu produkcji, nazwy działania, magazynu i lokalizacji źródłowej oraz magazynu i lokalizacji docelowej.</span><span class="sxs-lookup"><span data-stu-id="c97d0-110">In the Filters section, you can specify what jobs you want to see by filtering on Production flow, Activity name, From warehouse and location, and To warehouse and location.</span></span>  
+3. <span data-ttu-id="c97d0-111">W polu Z magazynu wpisz „11”.</span><span class="sxs-lookup"><span data-stu-id="c97d0-111">In the From warehouse field, type '11'.</span></span>
+4. <span data-ttu-id="c97d0-112">W polu Do lokalizacji wpisz „12”.</span><span class="sxs-lookup"><span data-stu-id="c97d0-112">In the To location field, type '12'.</span></span>
 
-## <a name="start-a-transfer-job"></a>Rozpocznij zadanie przeniesienia
-1. Na liście usuń zaznaczenie wybranego wiersza, jeśli takie istnieje.
-2. Na liście zaznacz wiersz 4.
-    * Zaznacz pierwsze zadanie o stanie Niezaplanowane. Upewnij się, że jest to jedyne zaznaczone zadanie.  
-3. Kliknij przycisk Rozpocznij.
-    * Należy zauważyć, że ikona wskazuje rozpoczęcie zadania.  
+## <a name="start-a-transfer-job"></a><span data-ttu-id="c97d0-113">Rozpocznij zadanie przeniesienia</span><span class="sxs-lookup"><span data-stu-id="c97d0-113">Start a transfer job</span></span>
+1. <span data-ttu-id="c97d0-114">Na liście usuń zaznaczenie wybranego wiersza, jeśli takie istnieje.</span><span class="sxs-lookup"><span data-stu-id="c97d0-114">In the list, deselect the selected row - if any.</span></span>
+2. <span data-ttu-id="c97d0-115">Na liście zaznacz wiersz 4.</span><span class="sxs-lookup"><span data-stu-id="c97d0-115">In the list, select row 4.</span></span>
+    * <span data-ttu-id="c97d0-116">Zaznacz pierwsze zadanie o stanie Niezaplanowane.</span><span class="sxs-lookup"><span data-stu-id="c97d0-116">Select the first job with status Not planned.</span></span> <span data-ttu-id="c97d0-117">Upewnij się, że jest to jedyne zaznaczone zadanie.</span><span class="sxs-lookup"><span data-stu-id="c97d0-117">Make sure this is the only job selected.</span></span>  
+3. <span data-ttu-id="c97d0-118">Kliknij przycisk Rozpocznij.</span><span class="sxs-lookup"><span data-stu-id="c97d0-118">Click Start.</span></span>
+    * <span data-ttu-id="c97d0-119">Należy zauważyć, że ikona wskazuje rozpoczęcie zadania.</span><span class="sxs-lookup"><span data-stu-id="c97d0-119">Notice that an icon indicates that the job is started.</span></span>  
 
-## <a name="select-a-second-transfer-job-and-change-quantity"></a>Wybór drugiego zadania przeniesienia i zmiana ilości
-1. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Można mieć zaznaczonych wiele zadań, ale na razie zaznacz tylko wiersz 5.  
-2. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Upewnij się, że zadanie w poprzednim kroku jest jednym zaznaczonym zadaniem. Anuluj zaznaczenie wszystkich innych zadań.  
-3. Zanotuj wartość z pola Ilość zadania w celu późniejszego wykorzystania
-4. W polu Ilość zadania ustaw wartość „30”.
-    * Zwróć uwagę na ostrzeżenie! Nie możesz przenieść 30. Zgodnie z ustawieniami reguły Kanban możesz przenieść tylko oryginalną ilość.  
-5. Użyj wartości zanotowanej uprzednio z pola Ilość zadania.
-    * W polu Ilość zadania ustaw poprzednią wartość.  
+## <a name="select-a-second-transfer-job-and-change-quantity"></a><span data-ttu-id="c97d0-120">Wybór drugiego zadania przeniesienia i zmiana ilości</span><span class="sxs-lookup"><span data-stu-id="c97d0-120">Select a second transfer job and change quantity</span></span>
+1. <span data-ttu-id="c97d0-121">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="c97d0-121">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="c97d0-122">Można mieć zaznaczonych wiele zadań, ale na razie zaznacz tylko wiersz 5.</span><span class="sxs-lookup"><span data-stu-id="c97d0-122">You can have multiple jobs selected, but for now select row 5.</span></span>  
+2. <span data-ttu-id="c97d0-123">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="c97d0-123">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="c97d0-124">Upewnij się, że zadanie w poprzednim kroku jest jednym zaznaczonym zadaniem.</span><span class="sxs-lookup"><span data-stu-id="c97d0-124">Make sure the job in the previous step is the only one selected.</span></span> <span data-ttu-id="c97d0-125">Anuluj zaznaczenie wszystkich innych zadań.</span><span class="sxs-lookup"><span data-stu-id="c97d0-125">Deselect all other jobs.</span></span>  
+3. <span data-ttu-id="c97d0-126">Zanotuj wartość z pola Ilość zadania w celu późniejszego wykorzystania</span><span class="sxs-lookup"><span data-stu-id="c97d0-126">Note the value in the Job quantity field to reference later</span></span>
+4. <span data-ttu-id="c97d0-127">W polu Ilość zadania ustaw wartość „30”.</span><span class="sxs-lookup"><span data-stu-id="c97d0-127">Set Job quantity to '30'.</span></span>
+    * <span data-ttu-id="c97d0-128">Zwróć uwagę na ostrzeżenie!</span><span class="sxs-lookup"><span data-stu-id="c97d0-128">Notice the warning!</span></span> <span data-ttu-id="c97d0-129">Nie możesz przenieść 30.</span><span class="sxs-lookup"><span data-stu-id="c97d0-129">You are not allowed to transfer 30.</span></span> <span data-ttu-id="c97d0-130">Zgodnie z ustawieniami reguły Kanban możesz przenieść tylko oryginalną ilość.</span><span class="sxs-lookup"><span data-stu-id="c97d0-130">According to the setup of the kanban rule, you can only transfer the original quantity.</span></span>  
+5. <span data-ttu-id="c97d0-131">Użyj wartości zanotowanej uprzednio z pola Ilość zadania.</span><span class="sxs-lookup"><span data-stu-id="c97d0-131">Use the value noted previously in the Job quantity field</span></span>
+    * <span data-ttu-id="c97d0-132">W polu Ilość zadania ustaw poprzednią wartość.</span><span class="sxs-lookup"><span data-stu-id="c97d0-132">Set the Job quantity to the previous value.</span></span>  
 
-## <a name="start-the-second-transfer-job"></a>Rozpoczynanie drugiego zadania przeniesienia
-1. Kliknij przycisk Rozpocznij.
-    * Spowoduje to rozpoczęcie przeniesienia określonego w zadaniu w wierszu 5.  
+## <a name="start-the-second-transfer-job"></a><span data-ttu-id="c97d0-133">Rozpoczynanie drugiego zadania przeniesienia</span><span class="sxs-lookup"><span data-stu-id="c97d0-133">Start the second transfer job</span></span>
+1. <span data-ttu-id="c97d0-134">Kliknij przycisk Rozpocznij.</span><span class="sxs-lookup"><span data-stu-id="c97d0-134">Click Start.</span></span>
+    * <span data-ttu-id="c97d0-135">Spowoduje to rozpoczęcie przeniesienia określonego w zadaniu w wierszu 5.</span><span class="sxs-lookup"><span data-stu-id="c97d0-135">This will start the transfer of the job in row 5.</span></span>  
 
-## <a name="complete-both-transfer-jobs"></a>Kończenie obu zadań przeniesienia
-1. Na liście zaznacz wiersz 4.
-    * Teraz są wybrane dwa zadania przeniesienia, w wierszach 4 i 5.  
-2. Kliknij przycisk Wykonaj.
-    * Spowoduje to zakończenie przeniesienia w obu zadaniach.  
+## <a name="complete-both-transfer-jobs"></a><span data-ttu-id="c97d0-136">Kończenie obu zadań przeniesienia</span><span class="sxs-lookup"><span data-stu-id="c97d0-136">Complete both transfer jobs</span></span>
+1. <span data-ttu-id="c97d0-137">Na liście zaznacz wiersz 4.</span><span class="sxs-lookup"><span data-stu-id="c97d0-137">In the list, select row 4.</span></span>
+    * <span data-ttu-id="c97d0-138">Teraz są wybrane dwa zadania przeniesienia, w wierszach 4 i 5.</span><span class="sxs-lookup"><span data-stu-id="c97d0-138">Now two transfer jobs are selected on row 4 and row 5.</span></span>  
+2. <span data-ttu-id="c97d0-139">Kliknij przycisk Wykonaj.</span><span class="sxs-lookup"><span data-stu-id="c97d0-139">Click Complete.</span></span>
+    * <span data-ttu-id="c97d0-140">Spowoduje to zakończenie przeniesienia w obu zadaniach.</span><span class="sxs-lookup"><span data-stu-id="c97d0-140">This will complete the transfer of both jobs.</span></span>  
 
 

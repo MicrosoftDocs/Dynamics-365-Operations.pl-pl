@@ -18,165 +18,165 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a4d1c81386c0ef03391f3127fa51a6b09a5142b3
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 785da18a851c4d040843f49ca9f1b9ae12d701d3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Konfigurowanie procesu importu zaawansowanego uzgadniania konta bankowego
+# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a><span data-ttu-id="d2e02-104">Konfigurowanie procesu importu zaawansowanego uzgadniania konta bankowego</span><span class="sxs-lookup"><span data-stu-id="d2e02-104">Set up the advanced bank reconciliation import process</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych oraz ich automatyczne uzgadnianie z transakcjami bankowymi w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. W tym artykule wyjaśniono, jak skonfigurować funkcję importu wyciągów bankowych. 
+<span data-ttu-id="d2e02-105">Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych oraz ich automatyczne uzgadnianie z transakcjami bankowymi w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="d2e02-105">The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> <span data-ttu-id="d2e02-106">W tym artykule wyjaśniono, jak skonfigurować funkcję importu wyciągów bankowych.</span><span class="sxs-lookup"><span data-stu-id="d2e02-106">This article explains how to set up the import functionality for your bank statements.</span></span> 
 
-Konfiguracja importu wyciągów bankowych różni się i zależy od formatu elektronicznych wyciągów bankowych. Program Finance and Operations obsługuje standardowo trzy formaty wyciągów bankowych: ISO20022, MT940 i BAI2.
+<span data-ttu-id="d2e02-107">Konfiguracja importu wyciągów bankowych różni się i zależy od formatu elektronicznych wyciągów bankowych.</span><span class="sxs-lookup"><span data-stu-id="d2e02-107">The setup for bank statement import varies, depending on the format of your electronic bank statement.</span></span> <span data-ttu-id="d2e02-108">Program Finance and Operations obsługuje standardowo trzy formaty wyciągów bankowych: ISO20022, MT940 i BAI2.</span><span class="sxs-lookup"><span data-stu-id="d2e02-108">Finance and Operations supports three bank statement formats out of the box: ISO20022, MT940, and BAI2.</span></span>
 
-## <a name="sample-files"></a>Przykładowe pliki
-We wszystkich trzech formatach są niezbędne pliki, które dokonują translacji wyciągu elektronicznego z oryginalnego formatu na format, którego można używać w programie Finance and Operations. Konieczne pliki zasobów znajdują się w węźle **Zasoby** w Eksploratorze aplikacji w programie Microsoft Visual Studio. Po znalezieniu plików skopiuj je do jednej znanej lokalizacji, co ułatwi ich przekazywanie na serwer w trakcie procesu konfigurowania.
+## <a name="sample-files"></a><span data-ttu-id="d2e02-109">Przykładowe pliki</span><span class="sxs-lookup"><span data-stu-id="d2e02-109">Sample files</span></span>
+<span data-ttu-id="d2e02-110">We wszystkich trzech formatach są niezbędne pliki, które dokonują translacji wyciągu elektronicznego z oryginalnego formatu na format, którego można używać w programie Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="d2e02-110">For all three formats, you must have files that translate the electronic bank statement from the original format to a format that Finance and Operations can use.</span></span> <span data-ttu-id="d2e02-111">Konieczne pliki zasobów znajdują się w węźle **Zasoby** w Eksploratorze aplikacji w programie Microsoft Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="d2e02-111">You can find the required resource files under the **Resources** node in Application Explorer in Microsoft Visual Studio.</span></span> <span data-ttu-id="d2e02-112">Po znalezieniu plików skopiuj je do jednej znanej lokalizacji, co ułatwi ich przekazywanie na serwer w trakcie procesu konfigurowania.</span><span class="sxs-lookup"><span data-stu-id="d2e02-112">After you find the files, copy them to a single known location, so that you can more easily upload them during the setup process.</span></span>
 
-| Nazwa zasobu                                           | Nazwa pliku                            |
+| <span data-ttu-id="d2e02-113">Nazwa zasobu</span><span class="sxs-lookup"><span data-stu-id="d2e02-113">Resource name</span></span>                                           | <span data-ttu-id="d2e02-114">Nazwa pliku</span><span class="sxs-lookup"><span data-stu-id="d2e02-114">File name</span></span>                            |
 |---------------------------------------------------------|--------------------------------------|
-| BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt              | BAI2CSV-to-BAI2XML.xslt              |
-| BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt       | BAI2XML-to-Reconciliation.xslt       |
-| BankStmtImport\_BankReconciliation\_to\_Composite\_xslt | BankReconciliation-to-Composite.xslt |
-| BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt   | ISO20022XML-to-Reconciliation.xslt   |
-| BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt            | MT940TXT-to-MT940XML.xslt            |
-| BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt      | MT940XML-to-Reconciliation.xslt      |
-| BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
+| <span data-ttu-id="d2e02-115">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="d2e02-115">BankStmtImport\_BAI2CSV\_to\_BAI2XML\_xslt</span></span>              | <span data-ttu-id="d2e02-116">BAI2CSV-to-BAI2XML.xslt</span><span class="sxs-lookup"><span data-stu-id="d2e02-116">BAI2CSV-to-BAI2XML.xslt</span></span>              |
+| <span data-ttu-id="d2e02-117">BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="d2e02-117">BankStmtImport\_BAI2XML\_to\_Reconciliation\_xslt</span></span>       | <span data-ttu-id="d2e02-118">BAI2XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="d2e02-118">BAI2XML-to-Reconciliation.xslt</span></span>       |
+| <span data-ttu-id="d2e02-119">BankStmtImport\_BankReconciliation\_to\_Composite\_xslt</span><span class="sxs-lookup"><span data-stu-id="d2e02-119">BankStmtImport\_BankReconciliation\_to\_Composite\_xslt</span></span> | <span data-ttu-id="d2e02-120">BankReconciliation-to-Composite.xslt</span><span class="sxs-lookup"><span data-stu-id="d2e02-120">BankReconciliation-to-Composite.xslt</span></span> |
+| <span data-ttu-id="d2e02-121">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="d2e02-121">BankStmtImport\_ISO20022XML\_to\_Reconciliation\_xslt</span></span>   | <span data-ttu-id="d2e02-122">ISO20022XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="d2e02-122">ISO20022XML-to-Reconciliation.xslt</span></span>   |
+| <span data-ttu-id="d2e02-123">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span><span class="sxs-lookup"><span data-stu-id="d2e02-123">BankStmtImport\_MT940TXT\_to\_MT940XML\_xslt</span></span>            | <span data-ttu-id="d2e02-124">MT940TXT-to-MT940XML.xslt</span><span class="sxs-lookup"><span data-stu-id="d2e02-124">MT940TXT-to-MT940XML.xslt</span></span>            |
+| <span data-ttu-id="d2e02-125">BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt</span><span class="sxs-lookup"><span data-stu-id="d2e02-125">BankStmtImport\_MT940XML\_to\_Reconciliation\_xslt</span></span>      | <span data-ttu-id="d2e02-126">MT940XML-to-Reconciliation.xslt</span><span class="sxs-lookup"><span data-stu-id="d2e02-126">MT940XML-to-Reconciliation.xslt</span></span>      |
+| <span data-ttu-id="d2e02-127">BankStmtImport\_SampleBankCompositeEntity\_xml</span><span class="sxs-lookup"><span data-stu-id="d2e02-127">BankStmtImport\_SampleBankCompositeEntity\_xml</span></span>          | <span data-ttu-id="d2e02-128">SampleBankCompositeEntity.xml</span><span class="sxs-lookup"><span data-stu-id="d2e02-128">SampleBankCompositeEntity.xml</span></span>        |
 
-## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Przykłady formatów i układów technicznych i wyciągów bankowych
-Poniżej przedstawiono przykłady definicji układów technicznych plików importu zaawansowanego uzgadniania konta bankowego i trzy powiązane przykładowe pliki wyciągów bankowych: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a><span data-ttu-id="d2e02-129">Przykłady formatów i układów technicznych i wyciągów bankowych</span><span class="sxs-lookup"><span data-stu-id="d2e02-129">Examples of bank statement formats and technical layouts</span></span>
+<span data-ttu-id="d2e02-130">Poniżej przedstawiono przykłady definicji układów technicznych plików importu zaawansowanego uzgadniania konta bankowego i trzy powiązane przykładowe pliki wyciągów bankowych: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span><span class="sxs-lookup"><span data-stu-id="d2e02-130">Below are examples of the advanced bank reconciliation import file technical layout definitions and three related bank statement example files: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts</span></span>  
 
-| Definicja układu technicznego                             | Przykładowy plik wyciągu bankowego          |
+| <span data-ttu-id="d2e02-131">Definicja układu technicznego</span><span class="sxs-lookup"><span data-stu-id="d2e02-131">Technical layout definition</span></span>                             | <span data-ttu-id="d2e02-132">Przykładowy plik wyciągu bankowego</span><span class="sxs-lookup"><span data-stu-id="d2e02-132">Bank statement example file</span></span>          |
 |---------------------------------------------------------|--------------------------------------|
-| DynamicsAXMT940Layout                                   | MT940StatementExample                |
-| DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
-| DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+| <span data-ttu-id="d2e02-133">DynamicsAXMT940Layout</span><span class="sxs-lookup"><span data-stu-id="d2e02-133">DynamicsAXMT940Layout</span></span>                                   | <span data-ttu-id="d2e02-134">MT940StatementExample</span><span class="sxs-lookup"><span data-stu-id="d2e02-134">MT940StatementExample</span></span>                |
+| <span data-ttu-id="d2e02-135">DynamicsAXISO20022Layout</span><span class="sxs-lookup"><span data-stu-id="d2e02-135">DynamicsAXISO20022Layout</span></span>                                | <span data-ttu-id="d2e02-136">ISO20022StatementExample</span><span class="sxs-lookup"><span data-stu-id="d2e02-136">ISO20022StatementExample</span></span>             |
+| <span data-ttu-id="d2e02-137">DynamicsAXBAI2Layout</span><span class="sxs-lookup"><span data-stu-id="d2e02-137">DynamicsAXBAI2Layout</span></span>                                    | <span data-ttu-id="d2e02-138">BAI2StatementExample</span><span class="sxs-lookup"><span data-stu-id="d2e02-138">BAI2StatementExample</span></span>                 |
 
  
 
-## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Konfigurowanie importowanie wyciągów bankowych w formacie ISO20022
-Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych ISO20022, używając do tego struktury jednostek danych.
+## <a name="set-up-the-import-of-iso20022-bank-statements"></a><span data-ttu-id="d2e02-139">Konfigurowanie importowanie wyciągów bankowych w formacie ISO20022</span><span class="sxs-lookup"><span data-stu-id="d2e02-139">Set up the import of ISO20022 bank statements</span></span>
+<span data-ttu-id="d2e02-140">Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych ISO20022, używając do tego struktury jednostek danych.</span><span class="sxs-lookup"><span data-stu-id="d2e02-140">First, you must define the bank statement format processing group for ISO20022 bank statements by using the data entity framework.</span></span>
 
-1.  Kliknij kolejno opcje **Obszary robocze** &gt; **Zarządzanie danymi**.
-2.  Kliknij przycisk **Importuj**.
-3.  Nadaj formatowi nazwę, np. **ISO20022**.
-4.  W polu **Format danych źródłowych** ustaw wartość **Element XML**.
-5.  W polu **Nazwa jednostki** ustaw wartość **Wyciągi bankowe**.
-6.  Aby przekazać pliki importu, kliknij przycisk **Przekaż** i przejdź do pliku **SampleBankCompositeEntity.xml**, który został wcześniej zapisany.
-7.  Po przekazaniu jednostki Wyciągi bankowe i utworzeniu mapowania kliknij operację **Wyświetl mapę** dla tej jednostki.
-8.  Jednostka Wyciągi bankowe jest jednostką złożoną, który składa się z czterech odrębnych jednostek. Na liście zaznacz pozycję **BankStatementDocumentEntity** i kliknij operację **Wyświetl mapę**.
-9.  Na karcie **Przekształcenia** kliknij przycisk **Nowy**.
-10. Dla numeru kolejnego 1 kliknij przycisk **Przekaż plik** i wybierz plik **ISO20022XML-to-Reconciliation.xslt**, który został wcześniej zapisany. **Uwaga:** Pliki przekształceń w programie Finance and Operations są skonstruowane dla standardowego formatu. Ponieważ banki często odbiegają od tego formatu, może być konieczne zaktualizowanie pliku przekształcenia, aby był dokładnie zmapowany na formatu wyciągów bankowych używany przez firmę. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
-11. Kliknij przycisk **Nowy**.
-12. Dla numeru kolejnego 2 kliknij przycisk **Przekaż plik** i wybierz plik **BankReconciliation-to-Composite.xslt**, który został wcześniej zapisany.
-13. Kliknij przycisk **Zastosuj przekształcenia**.
+1.  <span data-ttu-id="d2e02-141">Kliknij kolejno opcje **Obszary robocze** &gt; **Zarządzanie danymi**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-141">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="d2e02-142">Kliknij przycisk **Importuj**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-142">Click **Import**.</span></span>
+3.  <span data-ttu-id="d2e02-143">Nadaj formatowi nazwę, np. **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-143">Enter a name for the format, such as **ISO20022**.</span></span>
+4.  <span data-ttu-id="d2e02-144">W polu **Format danych źródłowych** ustaw wartość **Element XML**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-144">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="d2e02-145">W polu **Nazwa jednostki** ustaw wartość **Wyciągi bankowe**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-145">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="d2e02-146">Aby przekazać pliki importu, kliknij przycisk **Przekaż** i przejdź do pliku **SampleBankCompositeEntity.xml**, który został wcześniej zapisany.</span><span class="sxs-lookup"><span data-stu-id="d2e02-146">To upload the import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="d2e02-147">Po przekazaniu jednostki Wyciągi bankowe i utworzeniu mapowania kliknij operację **Wyświetl mapę** dla tej jednostki.</span><span class="sxs-lookup"><span data-stu-id="d2e02-147">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="d2e02-148">Jednostka Wyciągi bankowe jest jednostką złożoną, który składa się z czterech odrębnych jednostek.</span><span class="sxs-lookup"><span data-stu-id="d2e02-148">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="d2e02-149">Na liście zaznacz pozycję **BankStatementDocumentEntity** i kliknij operację **Wyświetl mapę**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-149">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="d2e02-150">Na karcie **Przekształcenia** kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-150">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="d2e02-151">Dla numeru kolejnego 1 kliknij przycisk **Przekaż plik** i wybierz plik **ISO20022XML-to-Reconciliation.xslt**, który został wcześniej zapisany.</span><span class="sxs-lookup"><span data-stu-id="d2e02-151">For sequence number 1, click **Upload file**, and select the **ISO20022XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="d2e02-152">**Uwaga:** Pliki przekształceń w programie Finance and Operations są skonstruowane dla standardowego formatu.</span><span class="sxs-lookup"><span data-stu-id="d2e02-152">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="d2e02-153">Ponieważ banki często odbiegają od tego formatu, może być konieczne zaktualizowanie pliku przekształcenia, aby był dokładnie zmapowany na formatu wyciągów bankowych używany przez firmę.</span><span class="sxs-lookup"><span data-stu-id="d2e02-153">Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format.</span></span> <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+11. <span data-ttu-id="d2e02-154">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-154">Click **New**.</span></span>
+12. <span data-ttu-id="d2e02-155">Dla numeru kolejnego 2 kliknij przycisk **Przekaż plik** i wybierz plik **BankReconciliation-to-Composite.xslt**, który został wcześniej zapisany.</span><span class="sxs-lookup"><span data-stu-id="d2e02-155">For sequence number 2, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+13. <span data-ttu-id="d2e02-156">Kliknij przycisk **Zastosuj przekształcenia**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-156">Click **Apply transforms**.</span></span>
 
-Po skonfigurowaniu grupy przetwarzania formatu następnym krokiem jest zdefiniowanie reguł formatu wyciągów bankowych ISO20022.
+<span data-ttu-id="d2e02-157">Po skonfigurowaniu grupy przetwarzania formatu następnym krokiem jest zdefiniowanie reguł formatu wyciągów bankowych ISO20022.</span><span class="sxs-lookup"><span data-stu-id="d2e02-157">After the format processing group is set up, the next step is to define the bank statement format rules for ISO20022 bank statements.</span></span>
 
-1.  Kliknij kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Ustawienia** &gt; **Ustawienia zaawansowanego uzgodnienia konta bankowego** &gt; **Format wyciągu bankowego**.
-2.  Kliknij przycisk **Nowy**.
-3.  Określ format wyciągu, np. **ISO20022**.
-4.  Nadaj formatowi nazwę.
-5.  W polu **Grupa przetwarzania** ustaw grupę, która została zdefiniowana wcześniej, np. **ISO20022**.
-6.  Grupa przetwarzania **Plik XML**.
+1.  <span data-ttu-id="d2e02-158">Kliknij kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Ustawienia** &gt; **Ustawienia zaawansowanego uzgodnienia konta bankowego** &gt; **Format wyciągu bankowego**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-158">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="d2e02-159">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-159">Click **New**.</span></span>
+3.  <span data-ttu-id="d2e02-160">Określ format wyciągu, np. **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-160">Specify a statement format, such as **ISO20022**.</span></span>
+4.  <span data-ttu-id="d2e02-161">Nadaj formatowi nazwę.</span><span class="sxs-lookup"><span data-stu-id="d2e02-161">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="d2e02-162">W polu **Grupa przetwarzania** ustaw grupę, która została zdefiniowana wcześniej, np. **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-162">Set the **Processing group** field to the group that you defined earlier, such as **ISO20022**.</span></span>
+6.  <span data-ttu-id="d2e02-163">Grupa przetwarzania **Plik XML**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-163">Select the **XML file** check box.</span></span>
 
-Ostatnim krokiem jest włączenie funkcji Zaawansowane uzgadnianie konta bankowego i ustawienie formatu wyciągów dla konta bankowego.
+<span data-ttu-id="d2e02-164">Ostatnim krokiem jest włączenie funkcji Zaawansowane uzgadnianie konta bankowego i ustawienie formatu wyciągów dla konta bankowego.</span><span class="sxs-lookup"><span data-stu-id="d2e02-164">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Konta bankowe**.
-2.  Zaznacz konto bankowe i otwórz je, aby wyświetlić szczegóły.
-3.  Na karcie **Uzgodnienie** w opcji **Zaawansowane uzgadnianie konta bankowego** zaznacz wartość **Tak**.
-4.  W polu **Format wyciągu** ustaw format, który został utworzony wcześniej, np. **ISO20022**.
+1.  <span data-ttu-id="d2e02-165">Wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Konta bankowe**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-165">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="d2e02-166">Zaznacz konto bankowe i otwórz je, aby wyświetlić szczegóły.</span><span class="sxs-lookup"><span data-stu-id="d2e02-166">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="d2e02-167">Na karcie **Uzgodnienie** w opcji **Zaawansowane uzgadnianie konta bankowego** zaznacz wartość **Tak**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-167">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="d2e02-168">W polu **Format wyciągu** ustaw format, który został utworzony wcześniej, np. **ISO20022**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-168">Set the **Statement format** field to the format that you created earlier, such as **ISO20022**.</span></span>
 
-## <a name="set-up-the-import-of-mt940-bank-statements"></a>Konfigurowanie importowanie wyciągów bankowych w formacie MT940
-Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych MT940, używając do tego struktury jednostek danych.
+## <a name="set-up-the-import-of-mt940-bank-statements"></a><span data-ttu-id="d2e02-169">Konfigurowanie importowanie wyciągów bankowych w formacie MT940</span><span class="sxs-lookup"><span data-stu-id="d2e02-169">Set up the import of MT940 bank statements</span></span>
+<span data-ttu-id="d2e02-170">Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych MT940, używając do tego struktury jednostek danych.</span><span class="sxs-lookup"><span data-stu-id="d2e02-170">First, you must define the bank statement format processing group for MT940 bank statements by using the data entity framework.</span></span>
 
-1.  Kliknij kolejno opcje **Obszary robocze** &gt; **Zarządzanie danymi**.
-2.  Kliknij przycisk **Importuj**.
-3.  Nadaj formatowi nazwę, np. **MT940**.
-4.  W polu **Format danych źródłowych** ustaw wartość **Element XML**.
-5.  W polu **Nazwa jednostki** ustaw wartość **Wyciągi bankowe**.
-6.  Aby przekazać pliki importu, kliknij przycisk **Przekaż** i przejdź do pliku **SampleBankCompositeEntity.xml**, który został wcześniej zapisany.
-7.  Po przekazaniu jednostki Wyciągi bankowe i utworzeniu mapowania kliknij operację **Wyświetl mapę** dla tej jednostki.
-8.  Jednostka Wyciągi bankowe jest jednostką złożoną, który składa się z czterech odrębnych jednostek. Na liście zaznacz pozycję **BankStatementDocumentEntity** i kliknij operację **Wyświetl mapę**.
-9.  Na karcie **Przekształcenia** kliknij przycisk **Nowy**.
-10. Dla numeru kolejnego 1 kliknij przycisk **Przekaż plik** i wybierz plik **MT940TXT-to-MT940XML.xslt**, który został wcześniej zapisany.
-11. Kliknij przycisk **Nowy**.
-12. Dla numeru kolejnego 2 kliknij przycisk **Przekaż plik** i wybierz plik **MT940XML-to-Reconciliation.xslt**, który został wcześniej zapisany. **Uwaga:** Pliki przekształceń w programie Finance and Operations są skonstruowane dla standardowego formatu. Ponieważ banki często odbiegają od tego formatu, może być konieczne zaktualizowanie pliku przekształcenia, aby był dokładnie zmapowany na formatu wyciągów bankowych używany przez firmę. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
-13. Kliknij przycisk **Nowy**.
-14. Dla numeru kolejnego 3 kliknij przycisk **Przekaż plik** i wybierz plik **BankReconciliation-to-Composite.xslt**, który został wcześniej zapisany.
-15. Kliknij przycisk **Zastosuj przekształcenia**.
+1.  <span data-ttu-id="d2e02-171">Kliknij kolejno opcje **Obszary robocze** &gt; **Zarządzanie danymi**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-171">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="d2e02-172">Kliknij przycisk **Importuj**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-172">Click **Import**.</span></span>
+3.  <span data-ttu-id="d2e02-173">Nadaj formatowi nazwę, np. **MT940**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-173">Enter a name for the format, such as **MT940**.</span></span>
+4.  <span data-ttu-id="d2e02-174">W polu **Format danych źródłowych** ustaw wartość **Element XML**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-174">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="d2e02-175">W polu **Nazwa jednostki** ustaw wartość **Wyciągi bankowe**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-175">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="d2e02-176">Aby przekazać pliki importu, kliknij przycisk **Przekaż** i przejdź do pliku **SampleBankCompositeEntity.xml**, który został wcześniej zapisany.</span><span class="sxs-lookup"><span data-stu-id="d2e02-176">To upload import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="d2e02-177">Po przekazaniu jednostki Wyciągi bankowe i utworzeniu mapowania kliknij operację **Wyświetl mapę** dla tej jednostki.</span><span class="sxs-lookup"><span data-stu-id="d2e02-177">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="d2e02-178">Jednostka Wyciągi bankowe jest jednostką złożoną, który składa się z czterech odrębnych jednostek.</span><span class="sxs-lookup"><span data-stu-id="d2e02-178">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="d2e02-179">Na liście zaznacz pozycję **BankStatementDocumentEntity** i kliknij operację **Wyświetl mapę**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-179">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="d2e02-180">Na karcie **Przekształcenia** kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-180">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="d2e02-181">Dla numeru kolejnego 1 kliknij przycisk **Przekaż plik** i wybierz plik **MT940TXT-to-MT940XML.xslt**, który został wcześniej zapisany.</span><span class="sxs-lookup"><span data-stu-id="d2e02-181">For sequence number 1, click **Upload file**, and select the **MT940TXT-to-MT940XML.xslt** file that you saved earlier.</span></span>
+11. <span data-ttu-id="d2e02-182">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-182">Click **New**.</span></span>
+12. <span data-ttu-id="d2e02-183">Dla numeru kolejnego 2 kliknij przycisk **Przekaż plik** i wybierz plik **MT940XML-to-Reconciliation.xslt**, który został wcześniej zapisany.</span><span class="sxs-lookup"><span data-stu-id="d2e02-183">For sequence number 2, click **Upload file**, and select the **MT940XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="d2e02-184">**Uwaga:** Pliki przekształceń w programie Finance and Operations są skonstruowane dla standardowego formatu.</span><span class="sxs-lookup"><span data-stu-id="d2e02-184">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="d2e02-185">Ponieważ banki często odbiegają od tego formatu, może być konieczne zaktualizowanie pliku przekształcenia, aby był dokładnie zmapowany na formatu wyciągów bankowych używany przez firmę.</span><span class="sxs-lookup"><span data-stu-id="d2e02-185">Because banks often diverge from this format, you may have to update the transformation file to map to your bank statement format.</span></span> <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+13. <span data-ttu-id="d2e02-186">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-186">Click **New**.</span></span>
+14. <span data-ttu-id="d2e02-187">Dla numeru kolejnego 3 kliknij przycisk **Przekaż plik** i wybierz plik **BankReconciliation-to-Composite.xslt**, który został wcześniej zapisany.</span><span class="sxs-lookup"><span data-stu-id="d2e02-187">For sequence number 3, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+15. <span data-ttu-id="d2e02-188">Kliknij przycisk **Zastosuj przekształcenia**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-188">Click **Apply transforms**.</span></span>
 
-Po skonfigurowaniu grupy przetwarzania formatu następnym krokiem jest zdefiniowanie reguł formatu wyciągów bankowych MT940.
+<span data-ttu-id="d2e02-189">Po skonfigurowaniu grupy przetwarzania formatu następnym krokiem jest zdefiniowanie reguł formatu wyciągów bankowych MT940.</span><span class="sxs-lookup"><span data-stu-id="d2e02-189">After the format processing group is set up, the next step is to define the bank statement format rules for MT940 bank statements.</span></span>
 
-1.  Kliknij kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Ustawienia** &gt; **Ustawienia zaawansowanego uzgodnienia konta bankowego** &gt; **Format wyciągu bankowego**.
-2.  Kliknij przycisk **Nowy**.
-3.  Określ format wyciągu, np. **MT940**.
-4.  Nadaj formatowi nazwę.
-5.  W polu **Grupa przetwarzania** ustaw grupę, która została zdefiniowana wcześniej, np. **MT940**.
-6.  W polu **Typ pliku** ustaw wartość **txt**.
+1.  <span data-ttu-id="d2e02-190">Kliknij kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Ustawienia** &gt; **Ustawienia zaawansowanego uzgodnienia konta bankowego** &gt; **Format wyciągu bankowego**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-190">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="d2e02-191">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-191">Click **New**.</span></span>
+3.  <span data-ttu-id="d2e02-192">Określ format wyciągu, np. **MT940**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-192">Specify a statement format, such as **MT940**.</span></span>
+4.  <span data-ttu-id="d2e02-193">Nadaj formatowi nazwę.</span><span class="sxs-lookup"><span data-stu-id="d2e02-193">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="d2e02-194">W polu **Grupa przetwarzania** ustaw grupę, która została zdefiniowana wcześniej, np. **MT940**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-194">Set the **Processing group** field to the group that you defined earlier, such as **MT940**.</span></span>
+6.  <span data-ttu-id="d2e02-195">W polu **Typ pliku** ustaw wartość **txt**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-195">Set the **File type** field to **txt**.</span></span>
 
-Ostatnim krokiem jest włączenie funkcji Zaawansowane uzgadnianie konta bankowego i ustawienie formatu wyciągów dla konta bankowego.
+<span data-ttu-id="d2e02-196">Ostatnim krokiem jest włączenie funkcji Zaawansowane uzgadnianie konta bankowego i ustawienie formatu wyciągów dla konta bankowego.</span><span class="sxs-lookup"><span data-stu-id="d2e02-196">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Konta bankowe**.
-2.  Zaznacz konto bankowe i otwórz je, aby wyświetlić szczegóły.
-3.  Na karcie **Uzgodnienie** w opcji **Zaawansowane uzgadnianie konta bankowego** zaznacz wartość **Tak**.
-4.  Kiedy zostanie wyświetlony monit o potwierdzenie wyboru i włączenie funkcji Zaawansowane uzgadnianie konta bankowego, kliknij przycisk **OK**.
-5.  W polu **Format wyciągu** ustaw format, który został utworzony wcześniej, np. **MT940**.
+1.  <span data-ttu-id="d2e02-197">Wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Konta bankowe**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-197">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="d2e02-198">Zaznacz konto bankowe i otwórz je, aby wyświetlić szczegóły.</span><span class="sxs-lookup"><span data-stu-id="d2e02-198">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="d2e02-199">Na karcie **Uzgodnienie** w opcji **Zaawansowane uzgadnianie konta bankowego** zaznacz wartość **Tak**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-199">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="d2e02-200">Kiedy zostanie wyświetlony monit o potwierdzenie wyboru i włączenie funkcji Zaawansowane uzgadnianie konta bankowego, kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-200">When you're prompted to confirm your selection and enable Advanced bank reconciliation, click **OK**.</span></span>
+5.  <span data-ttu-id="d2e02-201">W polu **Format wyciągu** ustaw format, który został utworzony wcześniej, np. **MT940**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-201">Set the **Statement format** field to the format that you created earlier, such as **MT940**.</span></span>
 
-## <a name="set-up-the-import-of-bai2-bank-statements"></a>Konfigurowanie importowanie wyciągów bankowych w formacie BAI2
-Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych BAI2, używając do tego struktury jednostek danych.
+## <a name="set-up-the-import-of-bai2-bank-statements"></a><span data-ttu-id="d2e02-202">Konfigurowanie importowanie wyciągów bankowych w formacie BAI2</span><span class="sxs-lookup"><span data-stu-id="d2e02-202">Set up the import of BAI2 bank statements</span></span>
+<span data-ttu-id="d2e02-203">Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych BAI2, używając do tego struktury jednostek danych.</span><span class="sxs-lookup"><span data-stu-id="d2e02-203">First, you must define the bank statement format processing group for BAI2 bank statements by using the data entity framework.</span></span>
 
-1.  Kliknij kolejno opcje **Obszary robocze** &gt; **Zarządzanie danymi**.
-2.  Kliknij przycisk **Importuj**.
-3.  Nadaj formatowi nazwę, np. **BAI2**.
-4.  W polu **Format danych źródłowych** ustaw wartość **Element XML**.
-5.  W polu **Nazwa jednostki** ustaw wartość **Wyciągi bankowe**.
-6.  Aby przekazać pliki importu, kliknij przycisk **Przekaż** i przejdź do pliku **SampleBankCompositeEntity.xml**, który został wcześniej zapisany.
-7.  Po przekazaniu jednostki Wyciągi bankowe i utworzeniu mapowania kliknij operację **Wyświetl mapę** dla tej jednostki.
-8.  Jednostka Wyciągi bankowe jest jednostką złożoną, który składa się z czterech odrębnych jednostek. Na liście zaznacz pozycję **BankStatementDocumentEntity** i kliknij operację **Wyświetl mapę**.
-9.  Na karcie **Przekształcenia** kliknij przycisk **Nowy**.
-10. Dla numeru kolejnego 1 kliknij przycisk **Przekaż plik** i wybierz plik **BAI2CSV-to-BAI2XML.xslt**, który został wcześniej zapisany.
-11. Kliknij przycisk **Nowy**.
-12. Dla numeru kolejnego 2 kliknij przycisk **Przekaż plik** i wybierz plik **BAI2XML-to-Reconciliation.xslt**, który został wcześniej zapisany. **Uwaga:** Pliki przekształceń w programie Finance and Operations są skonstruowane dla standardowego formatu. Ponieważ banki często odbiegają od tego formatu, może być konieczne zaktualizowanie pliku przekształcenia, aby był dokładnie zmapowany na formatu wyciągów bankowych używany przez firmę. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
-13. Kliknij przycisk **Nowy**.
-14. Dla numeru kolejnego 3 kliknij przycisk **Przekaż plik** i wybierz plik **BankReconciliation-to-Composite.xslt**, który został wcześniej zapisany.
-15. Kliknij przycisk **Zastosuj przekształcenia**.
+1.  <span data-ttu-id="d2e02-204">Kliknij kolejno opcje **Obszary robocze** &gt; **Zarządzanie danymi**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-204">Go to **Workspaces** &gt; **Data management**.</span></span>
+2.  <span data-ttu-id="d2e02-205">Kliknij przycisk **Importuj**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-205">Click **Import**.</span></span>
+3.  <span data-ttu-id="d2e02-206">Nadaj formatowi nazwę, np. **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-206">Enter a name for the format, such as **BAI2**.</span></span>
+4.  <span data-ttu-id="d2e02-207">W polu **Format danych źródłowych** ustaw wartość **Element XML**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-207">Set the **Source data format** field to **XML-Element**.</span></span>
+5.  <span data-ttu-id="d2e02-208">W polu **Nazwa jednostki** ustaw wartość **Wyciągi bankowe**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-208">Set the **Entity name** field to **Bank statements**.</span></span>
+6.  <span data-ttu-id="d2e02-209">Aby przekazać pliki importu, kliknij przycisk **Przekaż** i przejdź do pliku **SampleBankCompositeEntity.xml**, który został wcześniej zapisany.</span><span class="sxs-lookup"><span data-stu-id="d2e02-209">To upload import files, click **Upload**, and then browse to select the **SampleBankCompositeEntity.xml** file that you saved earlier.</span></span>
+7.  <span data-ttu-id="d2e02-210">Po przekazaniu jednostki Wyciągi bankowe i utworzeniu mapowania kliknij operację **Wyświetl mapę** dla tej jednostki.</span><span class="sxs-lookup"><span data-stu-id="d2e02-210">After the Bank statements entity is uploaded and the mapping is completed, click the **View map** action for the entity.</span></span>
+8.  <span data-ttu-id="d2e02-211">Jednostka Wyciągi bankowe jest jednostką złożoną, który składa się z czterech odrębnych jednostek.</span><span class="sxs-lookup"><span data-stu-id="d2e02-211">The Bank statements entity is a composite entity that consists of four separate entities.</span></span> <span data-ttu-id="d2e02-212">Na liście zaznacz pozycję **BankStatementDocumentEntity** i kliknij operację **Wyświetl mapę**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-212">In the list, select **BankStatementDocumentEntity**, and then click the **View map** action.</span></span>
+9.  <span data-ttu-id="d2e02-213">Na karcie **Przekształcenia** kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-213">On the **Transformations** tab, click **New**.</span></span>
+10. <span data-ttu-id="d2e02-214">Dla numeru kolejnego 1 kliknij przycisk **Przekaż plik** i wybierz plik **BAI2CSV-to-BAI2XML.xslt**, który został wcześniej zapisany.</span><span class="sxs-lookup"><span data-stu-id="d2e02-214">For sequence number 1, click **Upload file**, and select the **BAI2CSV-to-BAI2XML.xslt** file that you saved earlier.</span></span>
+11. <span data-ttu-id="d2e02-215">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-215">Click **New**.</span></span>
+12. <span data-ttu-id="d2e02-216">Dla numeru kolejnego 2 kliknij przycisk **Przekaż plik** i wybierz plik **BAI2XML-to-Reconciliation.xslt**, który został wcześniej zapisany.</span><span class="sxs-lookup"><span data-stu-id="d2e02-216">For sequence number 2, click **Upload file**, and select the **BAI2XML-to-Reconciliation.xslt** file that you saved earlier.</span></span> <span data-ttu-id="d2e02-217">**Uwaga:** Pliki przekształceń w programie Finance and Operations są skonstruowane dla standardowego formatu.</span><span class="sxs-lookup"><span data-stu-id="d2e02-217">**Note:** Finance and Operations transformation files are built for the standard format.</span></span> <span data-ttu-id="d2e02-218">Ponieważ banki często odbiegają od tego formatu, może być konieczne zaktualizowanie pliku przekształcenia, aby był dokładnie zmapowany na formatu wyciągów bankowych używany przez firmę.</span><span class="sxs-lookup"><span data-stu-id="d2e02-218">Because banks often diverge from this format, and you may have to update the transformation file to map to your bank statement format.</span></span> <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+13. <span data-ttu-id="d2e02-219">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-219">Click **New**.</span></span>
+14. <span data-ttu-id="d2e02-220">Dla numeru kolejnego 3 kliknij przycisk **Przekaż plik** i wybierz plik **BankReconciliation-to-Composite.xslt**, który został wcześniej zapisany.</span><span class="sxs-lookup"><span data-stu-id="d2e02-220">For sequence number 3, click **Upload file**, and select the **BankReconciliation-to-Composite.xslt** file that you saved earlier.</span></span>
+15. <span data-ttu-id="d2e02-221">Kliknij przycisk **Zastosuj przekształcenia**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-221">Click **Apply transforms**.</span></span>
 
-Po skonfigurowaniu grupy przetwarzania formatu następnym krokiem jest zdefiniowanie reguł formatu wyciągów bankowych BAI2.
+<span data-ttu-id="d2e02-222">Po skonfigurowaniu grupy przetwarzania formatu następnym krokiem jest zdefiniowanie reguł formatu wyciągów bankowych BAI2.</span><span class="sxs-lookup"><span data-stu-id="d2e02-222">After the format processing group is set up, the next step is to define the bank statement format rules for BAI2 bank statements.</span></span>
 
-1.  Kliknij kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Ustawienia** &gt; **Ustawienia zaawansowanego uzgodnienia konta bankowego** &gt; **Format wyciągu bankowego**.
-2.  Kliknij przycisk **Nowy**.
-3.  Określ format wyciągu, np. **BAI2**.
-4.  Nadaj formatowi nazwę.
-5.  W polu **Grupa przetwarzania** ustaw grupę, która została zdefiniowana wcześniej, np. **BAI2**.
-6.  W polu **Typ pliku** ustaw wartość **txt**.
+1.  <span data-ttu-id="d2e02-223">Kliknij kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Ustawienia** &gt; **Ustawienia zaawansowanego uzgodnienia konta bankowego** &gt; **Format wyciągu bankowego**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-223">Go to **Cash and bank management** &gt; **Setup** &gt; **Advanced bank reconciliation setup** &gt; **Bank statement format**.</span></span>
+2.  <span data-ttu-id="d2e02-224">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-224">Click **New**.</span></span>
+3.  <span data-ttu-id="d2e02-225">Określ format wyciągu, np. **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-225">Specify a statement format, such as **BAI2**.</span></span>
+4.  <span data-ttu-id="d2e02-226">Nadaj formatowi nazwę.</span><span class="sxs-lookup"><span data-stu-id="d2e02-226">Enter a name for the format.</span></span>
+5.  <span data-ttu-id="d2e02-227">W polu **Grupa przetwarzania** ustaw grupę, która została zdefiniowana wcześniej, np. **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-227">Set the **Processing group** field to the group that you defined earlier, such as **BAI2**.</span></span>
+6.  <span data-ttu-id="d2e02-228">W polu **Typ pliku** ustaw wartość **txt**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-228">Set the **File type** field to **txt**.</span></span>
 
-Ostatnim krokiem jest włączenie funkcji Zaawansowane uzgadnianie konta bankowego i ustawienie formatu wyciągów dla konta bankowego.
+<span data-ttu-id="d2e02-229">Ostatnim krokiem jest włączenie funkcji Zaawansowane uzgadnianie konta bankowego i ustawienie formatu wyciągów dla konta bankowego.</span><span class="sxs-lookup"><span data-stu-id="d2e02-229">The last step is to enable Advanced bank reconciliation and set the statement format on the bank account.</span></span>
 
-1.  Wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Konta bankowe**.
-2.  Zaznacz konto bankowe i otwórz je, aby wyświetlić szczegóły.
-3.  Na karcie **Uzgodnienie** w opcji **Zaawansowane uzgadnianie konta bankowego** zaznacz wartość **Tak**.
-4.  Kiedy zostanie wyświetlony monit o potwierdzenie wyboru i włączenie funkcji Zaawansowane uzgadnianie konta bankowego, kliknij przycisk **OK**.
-5.  W polu **Format wyciągu** ustaw format, który został utworzony wcześniej, np. **BAI2**.
+1.  <span data-ttu-id="d2e02-230">Wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Konta bankowe**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-230">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="d2e02-231">Zaznacz konto bankowe i otwórz je, aby wyświetlić szczegóły.</span><span class="sxs-lookup"><span data-stu-id="d2e02-231">Select the bank account, and open it to view the details.</span></span>
+3.  <span data-ttu-id="d2e02-232">Na karcie **Uzgodnienie** w opcji **Zaawansowane uzgadnianie konta bankowego** zaznacz wartość **Tak**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-232">On the **Reconciliation** tab, set the **Advanced bank reconciliation** option to **Yes**.</span></span>
+4.  <span data-ttu-id="d2e02-233">Kiedy zostanie wyświetlony monit o potwierdzenie wyboru i włączenie funkcji Zaawansowane uzgadnianie konta bankowego, kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-233">When you're prompted to confirm your selection and enable Advanced bank reconciliation, click **OK**.</span></span>
+5.  <span data-ttu-id="d2e02-234">W polu **Format wyciągu** ustaw format, który został utworzony wcześniej, np. **BAI2**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-234">Set the **Statement format** field to the format that you created earlier, such as **BAI2**.</span></span>
 
-## <a name="test-the-bank-statement-import"></a>Test działania importu wyciągu z konta
-Ostatnim krokiem jest sprawdzenie, czy faktycznie jest możliwe zaimportowanie wyciągu bankowego.
+## <a name="test-the-bank-statement-import"></a><span data-ttu-id="d2e02-235">Test działania importu wyciągu z konta</span><span class="sxs-lookup"><span data-stu-id="d2e02-235">Test the bank statement import</span></span>
+<span data-ttu-id="d2e02-236">Ostatnim krokiem jest sprawdzenie, czy faktycznie jest możliwe zaimportowanie wyciągu bankowego.</span><span class="sxs-lookup"><span data-stu-id="d2e02-236">The final step is to test that you can import your bank statement.</span></span>
 
-1.  Wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Konta bankowe**.
-2.  Zaznacz konto bankowe, dla którego jest włączona funkcja Zaawansowane uzgadnianie konta bankowego.
-3.  Na karcie **Uzgodnij** kliknij opcję **Wyciągi bankowe**.
-4.  Na stronie **Wyciąg bankowy** kliknij opcję **Importowanie wyciągu**.
-5.  W polu **Konto bankowe** ustaw żądane konto bankowe. Pole **Formatu wyciągu** zostanie ustawione automatycznie na podstawie ustawienia konta bankowego.
-6.  Kliknij przycisk **Przeglądaj** i wybierz plik elektronicznych wyciągów bankowych.
-7.  Kliknij przycisk **Przekaż**.
-8.  Kliknij przycisk **OK**
+1.  <span data-ttu-id="d2e02-237">Wybierz kolejno opcje **Zarządzanie gotówką i bankami** &gt; **Konta bankowe**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-237">Go to **Cash and bank management** &gt; **Bank accounts**.</span></span>
+2.  <span data-ttu-id="d2e02-238">Zaznacz konto bankowe, dla którego jest włączona funkcja Zaawansowane uzgadnianie konta bankowego.</span><span class="sxs-lookup"><span data-stu-id="d2e02-238">Select the bank account that Advanced bank reconciliation functionality is enabled for.</span></span>
+3.  <span data-ttu-id="d2e02-239">Na karcie **Uzgodnij** kliknij opcję **Wyciągi bankowe**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-239">On the **Reconcile** tab, click **Bank statements**.</span></span>
+4.  <span data-ttu-id="d2e02-240">Na stronie **Wyciąg bankowy** kliknij opcję **Importowanie wyciągu**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-240">On the **Bank statement** page, click **Import statement**.</span></span>
+5.  <span data-ttu-id="d2e02-241">W polu **Konto bankowe** ustaw żądane konto bankowe.</span><span class="sxs-lookup"><span data-stu-id="d2e02-241">Set the **Bank account** field to the selected bank account.</span></span> <span data-ttu-id="d2e02-242">Pole **Formatu wyciągu** zostanie ustawione automatycznie na podstawie ustawienia konta bankowego.</span><span class="sxs-lookup"><span data-stu-id="d2e02-242">The **Statement format** field will be set automatically, based on the setting on the bank account.</span></span>
+6.  <span data-ttu-id="d2e02-243">Kliknij przycisk **Przeglądaj** i wybierz plik elektronicznych wyciągów bankowych.</span><span class="sxs-lookup"><span data-stu-id="d2e02-243">Click **Browse**, and select your electronic bank statement file.</span></span>
+7.  <span data-ttu-id="d2e02-244">Kliknij przycisk **Przekaż**.</span><span class="sxs-lookup"><span data-stu-id="d2e02-244">Click **Upload**.</span></span>
+8.  <span data-ttu-id="d2e02-245">Kliknij przycisk **OK**</span><span class="sxs-lookup"><span data-stu-id="d2e02-245">Click **OK**.</span></span>
 
-Jeśli import się powiedzie, otrzymasz komunikat z potwierdzeniem. Jeżeli import się nie powiedzie, w obszarze roboczym **Zarządzanie danymi** w sekcji **Historia zadań** odszukaj zadanie. Kliknij przycisk **Szczegóły wykonania** dotyczący zadania, aby otworzyć stronę **Podsumowanie wykonania**, a następnie kliknij przycisk **Wyświetl dziennik wykonywania**, aby wyświetlić błędy importu.
+<span data-ttu-id="d2e02-246">Jeśli import się powiedzie, otrzymasz komunikat z potwierdzeniem.</span><span class="sxs-lookup"><span data-stu-id="d2e02-246">If the import is successful, you will receive a message that states that your statement was imported.</span></span> <span data-ttu-id="d2e02-247">Jeżeli import się nie powiedzie, w obszarze roboczym **Zarządzanie danymi** w sekcji **Historia zadań** odszukaj zadanie.</span><span class="sxs-lookup"><span data-stu-id="d2e02-247">If the import wasn't successful, in the **Data management** workspace, in the **Job history** section, find the job.</span></span> <span data-ttu-id="d2e02-248">Kliknij przycisk **Szczegóły wykonania** dotyczący zadania, aby otworzyć stronę **Podsumowanie wykonania**, a następnie kliknij przycisk **Wyświetl dziennik wykonywania**, aby wyświetlić błędy importu.</span><span class="sxs-lookup"><span data-stu-id="d2e02-248">Click **Execution details** for the job to open the **Execution summary** page, and then click **View execution log** to view the import errors.</span></span>
 
 
 

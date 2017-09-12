@@ -16,37 +16,37 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: bfc25580448bde8d29b0f392283057e010f180b6
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 367772604bf6a3e1e0825144135da7dc12680619
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a>Obliczanie i korygowanie podatku na fakturze od dostawcy
+# <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a><span data-ttu-id="b63d6-103">Obliczanie i korygowanie podatku na fakturze od dostawcy</span><span class="sxs-lookup"><span data-stu-id="b63d6-103">Calculate and adjust sales tax on a vendor invoice</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Jeśli oryginalny dokument źródłowy zawiera kwoty podatku inne niż obliczone, można skorygować te kwoty przed zaksięgowaniem. W zadaniu wykorzystano firmę demonstracyjną DEMF.
+<span data-ttu-id="b63d6-104">Jeśli oryginalny dokument źródłowy zawiera kwoty podatku inne niż obliczone, można skorygować te kwoty przed zaksięgowaniem.</span><span class="sxs-lookup"><span data-stu-id="b63d6-104">If the original source document displays different tax amounts as calculated, you can adjust those amounts before posting.</span></span> <span data-ttu-id="b63d6-105">W zadaniu wykorzystano firmę demonstracyjną DEMF.</span><span class="sxs-lookup"><span data-stu-id="b63d6-105">This task uses the DEMF demo company.</span></span>
 
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Faktury > Arkusz faktur.
-2. Kliknij przycisk Nowy.
-3. Na liście oznacz wybrany wiersz.
-4. W polu Nazwa kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-5. Na liście kliknij łącze w wybranym wierszu.
-6. Kliknij przycisk Wiersze.
-7. Na liście oznacz wybrany wiersz.
-8. W polu Konto podaj żądane wartości.
-9. W polu Faktura wpisz wartość.
-10. W polu Kredyt wpisz liczbę.
-11. W polu Konto przeciwstawne podaj żądane wartości.
-12. Kliknij opcję Podatek.
-13. W polu Całkowita rzeczywista kwota podatku wpisz liczbę.
-14. Kliknij przycisk OK.
-15. Kliknij przycisk Zapisz.
-16. Kliknij opcję Podatek.
-17. Na karcie Korekta można skorygować kwoty podatku według kodów podatków.
-18. Kliknij opcję Resetuj aktualne kwoty na podstawie obliczonych.
-19. Kliknij przycisk OK.
-20. Kliknij przycisk Zapisz.
+1. <span data-ttu-id="b63d6-106">Wybierz kolejno opcje Rozrachunki z dostawcami > Faktury > Arkusz faktur.</span><span class="sxs-lookup"><span data-stu-id="b63d6-106">Go to Accounts payable > Invoices > Invoice journal.</span></span>
+2. <span data-ttu-id="b63d6-107">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="b63d6-107">Click New.</span></span>
+3. <span data-ttu-id="b63d6-108">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="b63d6-108">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="b63d6-109">W polu Nazwa kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="b63d6-109">In the Name field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="b63d6-110">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="b63d6-110">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="b63d6-111">Kliknij przycisk Wiersze.</span><span class="sxs-lookup"><span data-stu-id="b63d6-111">Click Lines.</span></span>
+7. <span data-ttu-id="b63d6-112">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="b63d6-112">In the list, mark the selected row.</span></span>
+8. <span data-ttu-id="b63d6-113">W polu Konto podaj żądane wartości.</span><span class="sxs-lookup"><span data-stu-id="b63d6-113">In the Account field, specify the desired values.</span></span>
+9. <span data-ttu-id="b63d6-114">W polu Faktura wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="b63d6-114">In the Invoice field, type a value.</span></span>
+10. <span data-ttu-id="b63d6-115">W polu Kredyt wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="b63d6-115">In the Credit field, enter a number.</span></span>
+11. <span data-ttu-id="b63d6-116">W polu Konto przeciwstawne podaj żądane wartości.</span><span class="sxs-lookup"><span data-stu-id="b63d6-116">In the Offset account field, specify the desired values.</span></span>
+12. <span data-ttu-id="b63d6-117">Kliknij opcję Podatek.</span><span class="sxs-lookup"><span data-stu-id="b63d6-117">Click Sales tax.</span></span>
+13. <span data-ttu-id="b63d6-118">W polu Całkowita rzeczywista kwota podatku wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="b63d6-118">In the Total actual sales tax amount field, enter a number.</span></span>
+14. <span data-ttu-id="b63d6-119">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="b63d6-119">Click OK.</span></span>
+15. <span data-ttu-id="b63d6-120">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="b63d6-120">Click Save.</span></span>
+16. <span data-ttu-id="b63d6-121">Kliknij opcję Podatek.</span><span class="sxs-lookup"><span data-stu-id="b63d6-121">Click Sales tax.</span></span>
+17. <span data-ttu-id="b63d6-122">Na karcie Korekta można skorygować kwoty podatku według kodów podatków.</span><span class="sxs-lookup"><span data-stu-id="b63d6-122">On the Adjustment tab, the sales tax amounts can be adjusted per sales tax code.</span></span>
+18. <span data-ttu-id="b63d6-123">Kliknij opcję Resetuj aktualne kwoty na podstawie obliczonych.</span><span class="sxs-lookup"><span data-stu-id="b63d6-123">Click Reset actual from calculated amounts.</span></span>
+19. <span data-ttu-id="b63d6-124">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="b63d6-124">Click OK.</span></span>
+20. <span data-ttu-id="b63d6-125">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="b63d6-125">Click Save.</span></span>
 
 

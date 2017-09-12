@@ -17,67 +17,67 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 12e4a93f908c348a848e056df00115bf2dc50635
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e05eb5df2d29e90ed24fb13ed16543ad470dfe6b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-an-operations-resource"></a>Tworzenie zasobu operacyjnego
+# <a name="create-an-operations-resource"></a><span data-ttu-id="652be-103">Tworzenie zasobu operacyjnego</span><span class="sxs-lookup"><span data-stu-id="652be-103">Create an operations resource</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Zasób operacyjny wykonuje działania projektu lub procesu produkcji. Ta procedura przedstawia sposób definiowania zasobu operacyjnego. Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
+<span data-ttu-id="652be-104">Zasób operacyjny wykonuje działania projektu lub procesu produkcji.</span><span class="sxs-lookup"><span data-stu-id="652be-104">An operations resource performs the activities of a project or a production process.</span></span> <span data-ttu-id="652be-105">Ta procedura przedstawia sposób definiowania zasobu operacyjnego.</span><span class="sxs-lookup"><span data-stu-id="652be-105">This procedures shows you how to define an operations resource.</span></span> <span data-ttu-id="652be-106">Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="652be-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
 
-1. Przejdź do okna Zasoby.
-2. Kliknij przycisk Nowy.
-3. W polu Zasób wpisz wartość.
-4. Wypełnij pole Opis.
+1. <span data-ttu-id="652be-107">Przejdź do okna Zasoby.</span><span class="sxs-lookup"><span data-stu-id="652be-107">Go to Resources.</span></span>
+2. <span data-ttu-id="652be-108">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="652be-108">Click New.</span></span>
+3. <span data-ttu-id="652be-109">W polu Zasób wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="652be-109">In the Resource field, type a value.</span></span>
+4. <span data-ttu-id="652be-110">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="652be-110">In the Description field, type a value.</span></span>
 
-## <a name="define-capacity-and-consumption-parameters"></a>Definiowanie parametrów zdolności produkcyjnych i zużycia
-1. Rozwiń sekcję Operacja.
-2. W polu Procent odpadków wprowadź liczbę.
-3. W polu Kategoria czasu przezbrajania wprowadź lub wybierz wartość.
-    * Umożliwia określenie kategorii kosztów, która definiuje sposób rozliczania kosztów przezbrajania.  
-4. W polu Kategoria czasu procesu wprowadź lub wybierz wartość.
-    * Umożliwia określenie kategorii kosztów, która definiuje sposób rozliczania kosztów wykonywania procesu.  
-5. W polu Kategoria ilości wprowadź lub wybierz wartość.
-    * Umożliwia określenie kategorii kosztów, która definiuje sposób rozliczania kosztu zasobu na podstawie ilości wyprodukowanych towarów.  
-6. W polu Jednostka zdolności produkcyjnych wybierz opcję.
-    * Umożliwia określenie jednostki, w której będą wyrażane zdolności produkcyjne zasobu operacyjnego.  
-7. W polu Zdolności produkcyjne wpisz liczbę.
-8. W polu Procent wydajności wpisz liczbę.
-    * Umożliwia określenie wydajności oczekiwanej od zasobu operacyjnego. Procent wydajności dostosowuje produktywność zasobu operacyjnego i wpływa na czas zarezerwowany dla zasobu.  
-9. W polu Planowanie operacji — procent wprowadź liczbę.
-    * Określ maksymalny procent zdolności produkcyjnych zasobu operacyjnego, jaki ma być wykorzystywany w planowaniu operacji.  
-10. W polu Ograniczone zdolności produkcyjne wybierz opcję Tak.
-    * Ustaw w tej opcji wartość Tak, jeśli zasób operacyjny ma być planowany na podstawie rzeczywistych dostępnych zdolności produkcyjnych, a istniejące rezerwacje zdolności produkcyjnych mają zostać uwzględnione. Jeśli w opcji zostanie ustawiona wartość Nie, zakłada się, że zasób operacyjny ma nieograniczone zdolności produkcyjne i może być rezerwowany ponad możliwości.  
-11. W polu Zasób w wąskim gardle zaznacz opcję Tak.
+## <a name="define-capacity-and-consumption-parameters"></a><span data-ttu-id="652be-111">Definiowanie parametrów zdolności produkcyjnych i zużycia</span><span class="sxs-lookup"><span data-stu-id="652be-111">Define capacity and consumption parameters</span></span>
+1. <span data-ttu-id="652be-112">Rozwiń sekcję Operacja.</span><span class="sxs-lookup"><span data-stu-id="652be-112">Expand the Operation section.</span></span>
+2. <span data-ttu-id="652be-113">W polu Procent odpadków wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="652be-113">In the Scrap percentage field, enter a number.</span></span>
+3. <span data-ttu-id="652be-114">W polu Kategoria czasu przezbrajania wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="652be-114">In the Setup category field, enter or select a value.</span></span>
+    * <span data-ttu-id="652be-115">Umożliwia określenie kategorii kosztów, która definiuje sposób rozliczania kosztów przezbrajania.</span><span class="sxs-lookup"><span data-stu-id="652be-115">Specify the cost category that defines how to account for the cost of setup.</span></span>  
+4. <span data-ttu-id="652be-116">W polu Kategoria czasu procesu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="652be-116">In the Run time category field, enter or select a value.</span></span>
+    * <span data-ttu-id="652be-117">Umożliwia określenie kategorii kosztów, która definiuje sposób rozliczania kosztów wykonywania procesu.</span><span class="sxs-lookup"><span data-stu-id="652be-117">Specify the cost category that defines how to account for the cost of run time.</span></span>  
+5. <span data-ttu-id="652be-118">W polu Kategoria ilości wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="652be-118">In the Quantity category field, enter or select a value.</span></span>
+    * <span data-ttu-id="652be-119">Umożliwia określenie kategorii kosztów, która definiuje sposób rozliczania kosztu zasobu na podstawie ilości wyprodukowanych towarów.</span><span class="sxs-lookup"><span data-stu-id="652be-119">Specify the cost category that defines how to account for the resource cost based on the output quantity.</span></span>  
+6. <span data-ttu-id="652be-120">W polu Jednostka zdolności produkcyjnych wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="652be-120">In the Capacity unit field, select an option.</span></span>
+    * <span data-ttu-id="652be-121">Umożliwia określenie jednostki, w której będą wyrażane zdolności produkcyjne zasobu operacyjnego.</span><span class="sxs-lookup"><span data-stu-id="652be-121">Specify the unit in which to express the capacity of the operations resource.</span></span>  
+7. <span data-ttu-id="652be-122">W polu Zdolności produkcyjne wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="652be-122">In the Capacity field, enter a number.</span></span>
+8. <span data-ttu-id="652be-123">W polu Procent wydajności wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="652be-123">In the Efficiency percentage field, enter a number.</span></span>
+    * <span data-ttu-id="652be-124">Umożliwia określenie wydajności oczekiwanej od zasobu operacyjnego.</span><span class="sxs-lookup"><span data-stu-id="652be-124">Specify the efficiency that you expect from the operations resource.</span></span> <span data-ttu-id="652be-125">Procent wydajności dostosowuje produktywność zasobu operacyjnego i wpływa na czas zarezerwowany dla zasobu.</span><span class="sxs-lookup"><span data-stu-id="652be-125">The efficiency percentage adjusts the throughput of the operations resource and affects the time that is reserved for the resource.</span></span>  
+9. <span data-ttu-id="652be-126">W polu Planowanie operacji — procent wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="652be-126">In the Operations scheduling percentage field, enter a number.</span></span>
+    * <span data-ttu-id="652be-127">Określ maksymalny procent zdolności produkcyjnych zasobu operacyjnego, jaki ma być wykorzystywany w planowaniu operacji.</span><span class="sxs-lookup"><span data-stu-id="652be-127">Specify the maximum percentage of capacity of the operations resource that you want to use in operations scheduling.</span></span>  
+10. <span data-ttu-id="652be-128">W polu Ograniczone zdolności produkcyjne wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="652be-128">Select Yes in the Finite capacity field.</span></span>
+    * <span data-ttu-id="652be-129">Ustaw w tej opcji wartość Tak, jeśli zasób operacyjny ma być planowany na podstawie rzeczywistych dostępnych zdolności produkcyjnych, a istniejące rezerwacje zdolności produkcyjnych mają zostać uwzględnione.</span><span class="sxs-lookup"><span data-stu-id="652be-129">Set this option to Yes if the operations resource should be scheduled based on the actual capacity that is available, and if existing capacity reservations should be considered.</span></span> <span data-ttu-id="652be-130">Jeśli w opcji zostanie ustawiona wartość Nie, zakłada się, że zasób operacyjny ma nieograniczone zdolności produkcyjne i może być rezerwowany ponad możliwości.</span><span class="sxs-lookup"><span data-stu-id="652be-130">If this option is set to No, the operations resource is assumed to have infinite capacity, and the resource might be overbooked.</span></span>  
+11. <span data-ttu-id="652be-131">W polu Zasób w wąskim gardle zaznacz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="652be-131">Select Yes in the Bottleneck resource field.</span></span>
 
-## <a name="define-working-times"></a>Definiowanie czasów pracy
-1. Rozwiń sekcję Kalendarze.
-2. Kliknij przycisk Dodaj.
-3. W polu Kalendarz wprowadź lub wybierz wartość.
-    * Umożliwia określenie kalendarza czasu pracy definiującego zdolności produkcyjne zasobu (w godzinach).  
-4. Na liście znajdź i zaznacz odpowiedni rekord.
-5. Na liście kliknij łącze w wybranym wierszu.
+## <a name="define-working-times"></a><span data-ttu-id="652be-132">Definiowanie czasów pracy</span><span class="sxs-lookup"><span data-stu-id="652be-132">Define working times</span></span>
+1. <span data-ttu-id="652be-133">Rozwiń sekcję Kalendarze.</span><span class="sxs-lookup"><span data-stu-id="652be-133">Expand the Calendars section.</span></span>
+2. <span data-ttu-id="652be-134">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="652be-134">Click Add.</span></span>
+3. <span data-ttu-id="652be-135">W polu Kalendarz wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="652be-135">In the Calendar field, enter or select a value.</span></span>
+    * <span data-ttu-id="652be-136">Umożliwia określenie kalendarza czasu pracy definiującego zdolności produkcyjne zasobu (w godzinach).</span><span class="sxs-lookup"><span data-stu-id="652be-136">Specify the working time calendar that defines the capacity (in hours) of the resource.</span></span>  
+4. <span data-ttu-id="652be-137">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="652be-137">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="652be-138">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="652be-138">In the list, click the link in the selected row.</span></span>
 
-## <a name="define-resource-capabilities"></a>Definiowanie możliwości zasobu
-1. Rozwiń sekcję Możliwości.
-2. Kliknij przycisk Dodaj.
-    * Możliwość to zdolność zasobu operacyjnego do wykonania określonego działania. Aparat planowania przydziela zasoby przez dopasowanie zapotrzebowań na zasoby w każdym działaniu do możliwości dostępnych zasobów operacyjnych.  
-3. W polu Możliwość wprowadź lub wybierz wartość.
-4. W polu Poziom wprowadź liczbę.
-    * Umożliwia określenie poziomu biegłości, z jaką zasób używa swoich możliwości.  
-5. W polu Priorytet wprowadź liczbę.
-    * Służy do określania priorytetu zasobu operacyjnego w odniesieniu do możliwości. Podczas planowania według priorytetu najpierw jest wybierany zasób operacyjny o najwyższym priorytecie (najmniejszej wartości liczbowej).  
+## <a name="define-resource-capabilities"></a><span data-ttu-id="652be-139">Definiowanie możliwości zasobu</span><span class="sxs-lookup"><span data-stu-id="652be-139">Define resource capabilities</span></span>
+1. <span data-ttu-id="652be-140">Rozwiń sekcję Możliwości.</span><span class="sxs-lookup"><span data-stu-id="652be-140">Expand the Capabilities section.</span></span>
+2. <span data-ttu-id="652be-141">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="652be-141">Click Add.</span></span>
+    * <span data-ttu-id="652be-142">Możliwość to zdolność zasobu operacyjnego do wykonania określonego działania.</span><span class="sxs-lookup"><span data-stu-id="652be-142">A capability is the ability of an operations resource to perform a particular activity.</span></span> <span data-ttu-id="652be-143">Aparat planowania przydziela zasoby przez dopasowanie zapotrzebowań na zasoby w każdym działaniu do możliwości dostępnych zasobów operacyjnych.</span><span class="sxs-lookup"><span data-stu-id="652be-143">The scheduling engine allocates resources by matching the resource requirements of each activity to the capabilities of the available operations resources.</span></span>  
+3. <span data-ttu-id="652be-144">W polu Możliwość wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="652be-144">In the Capability field, enter or select a value.</span></span>
+4. <span data-ttu-id="652be-145">W polu Poziom wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="652be-145">In the Level field, enter a number.</span></span>
+    * <span data-ttu-id="652be-146">Umożliwia określenie poziomu biegłości, z jaką zasób używa swoich możliwości.</span><span class="sxs-lookup"><span data-stu-id="652be-146">Specify the level of proficiency by which the resource processes the capability.</span></span>  
+5. <span data-ttu-id="652be-147">W polu Priorytet wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="652be-147">In the Priority field, enter a number.</span></span>
+    * <span data-ttu-id="652be-148">Służy do określania priorytetu zasobu operacyjnego w odniesieniu do możliwości.</span><span class="sxs-lookup"><span data-stu-id="652be-148">Specify the priority of the operations resource with respect to the capability.</span></span> <span data-ttu-id="652be-149">Podczas planowania według priorytetu najpierw jest wybierany zasób operacyjny o najwyższym priorytecie (najmniejszej wartości liczbowej).</span><span class="sxs-lookup"><span data-stu-id="652be-149">When scheduling by priority, the operations resource with the highest priority (lowest numeric value) is selected first.</span></span>  
 
-## <a name="assign-resource-to-resource-group"></a>Przypisywanie zasobu do grupy zasobów
-1. Rozwiń sekcję Grupy zasobów.
-2. Kliknij przycisk Dodaj.
-    * Grupa zasobów definiuje oddział, jednostkę produkcyjną i kontekst magazynu dla zasobów operacyjnych. Zasób operacyjny można zaplanować tylko wtedy, gdy jest przypisany do grupy zasobów i tylko w oddziale, w którym znajduje się grupa zasobów.  
-3. W polu Grupa zasobów wprowadź lub wybierz wartość.
-4. W polu Lokalizacja wejściowa wprowadź lub wybierz wartość.
-    * Umożliwia określenie lokalizacji w magazynie, z której zasób operacyjny zużywa materiały.  
+## <a name="assign-resource-to-resource-group"></a><span data-ttu-id="652be-150">Przypisywanie zasobu do grupy zasobów</span><span class="sxs-lookup"><span data-stu-id="652be-150">Assign resource to resource group</span></span>
+1. <span data-ttu-id="652be-151">Rozwiń sekcję Grupy zasobów.</span><span class="sxs-lookup"><span data-stu-id="652be-151">Expand the Resource groups section.</span></span>
+2. <span data-ttu-id="652be-152">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="652be-152">Click Add.</span></span>
+    * <span data-ttu-id="652be-153">Grupa zasobów definiuje oddział, jednostkę produkcyjną i kontekst magazynu dla zasobów operacyjnych.</span><span class="sxs-lookup"><span data-stu-id="652be-153">The resource group defines the site, production unit, and warehouse context for operations resources.</span></span> <span data-ttu-id="652be-154">Zasób operacyjny można zaplanować tylko wtedy, gdy jest przypisany do grupy zasobów i tylko w oddziale, w którym znajduje się grupa zasobów.</span><span class="sxs-lookup"><span data-stu-id="652be-154">The operations resource can only be scheduled when assigned to a resource group, and only on the site where the resource group is located.</span></span>  
+3. <span data-ttu-id="652be-155">W polu Grupa zasobów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="652be-155">In the Resource group field, enter or select a value.</span></span>
+4. <span data-ttu-id="652be-156">W polu Lokalizacja wejściowa wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="652be-156">In the Input location field, enter or select a value.</span></span>
+    * <span data-ttu-id="652be-157">Umożliwia określenie lokalizacji w magazynie, z której zasób operacyjny zużywa materiały.</span><span class="sxs-lookup"><span data-stu-id="652be-157">Specify the warehouse location from where the operations resource is consuming materials.</span></span>  
 
 

@@ -17,34 +17,34 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: caf7dead2da14e1ff76e205e7477b1eb11a2ca52
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 3c2b5a5fbfc5bd83cc68ffafaa243dac9244c003
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="update-kanban-status"></a>Aktualizacja stanu w systemie Kanban
+# <a name="update-kanban-status"></a><span data-ttu-id="192c7-103">Aktualizacja stanu w systemie Kanban</span><span class="sxs-lookup"><span data-stu-id="192c7-103">Update kanban status</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Gdy karta Kanban zostanie opróżniona przez pomyłkę lub otrzymana karta Kanban musi zostać opróżniona, należy zaktualizować stan karty Kanban. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Ta procedura jest przeznaczona dla kierownika produkcji.
+<span data-ttu-id="192c7-104">Gdy karta Kanban zostanie opróżniona przez pomyłkę lub otrzymana karta Kanban musi zostać opróżniona, należy zaktualizować stan karty Kanban.</span><span class="sxs-lookup"><span data-stu-id="192c7-104">When a kanban is emptied by mistake or a received kanban needs to be emptied, you need to update kanban status.</span></span> <span data-ttu-id="192c7-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="192c7-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="192c7-106">Ta procedura jest przeznaczona dla kierownika produkcji.</span><span class="sxs-lookup"><span data-stu-id="192c7-106">This procedure is intended for the shop supervisor.</span></span>
 
 
-## <a name="find-the-kanban"></a>Znajdź kartę Kanban.
-1. Wybierz kolejno opcje Kontrola produkcji > Kanban > Karty Kanban.
-2. Otwórz filtr kolumny Stan magazynowej jednostki obsługi.
-3. Kliknij przycisk Wyczyść.
-    * Spowoduje to zresetowanie filtrów.  
-4. Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy. Na przykład wyfiltruj według pola Numer karty z wartością „000149”.
+## <a name="find-the-kanban"></a><span data-ttu-id="192c7-107">Znajdź kartę Kanban.</span><span class="sxs-lookup"><span data-stu-id="192c7-107">Find the kanban.</span></span>
+1. <span data-ttu-id="192c7-108">Wybierz kolejno opcje Kontrola produkcji > Kanban > Karty Kanban.</span><span class="sxs-lookup"><span data-stu-id="192c7-108">Go to Production control > Kanban > Kanbans.</span></span>
+2. <span data-ttu-id="192c7-109">Otwórz filtr kolumny Stan magazynowej jednostki obsługi.</span><span class="sxs-lookup"><span data-stu-id="192c7-109">Open Handling unit status column filter.</span></span>
+3. <span data-ttu-id="192c7-110">Kliknij przycisk Wyczyść.</span><span class="sxs-lookup"><span data-stu-id="192c7-110">Click Clear.</span></span>
+    * <span data-ttu-id="192c7-111">Spowoduje to zresetowanie filtrów.</span><span class="sxs-lookup"><span data-stu-id="192c7-111">This resets the filters.</span></span>  
+4. <span data-ttu-id="192c7-112">Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy.</span><span class="sxs-lookup"><span data-stu-id="192c7-112">Use the Quick Filter to find records.</span></span> <span data-ttu-id="192c7-113">Na przykład wyfiltruj według pola Numer karty z wartością „000149”.</span><span class="sxs-lookup"><span data-stu-id="192c7-113">For example, filter on the Card number field with a value of '000149'.</span></span>
 
-## <a name="change-emptied-status-to-received-status"></a>Zmiana stanu Opróżniono na Otrzymano
-1. Kliknij opcję Wycofaj pustą magazynową jednostkę obsługi.
-2. Kliknij przycisk OK.
-    * Zwróć uwagę, że pole Stan magazynowej jednostki obsługi ma wartość Otrzymano.  
+## <a name="change-emptied-status-to-received-status"></a><span data-ttu-id="192c7-114">Zmiana stanu Opróżniono na Otrzymano</span><span class="sxs-lookup"><span data-stu-id="192c7-114">Change emptied status to received status</span></span>
+1. <span data-ttu-id="192c7-115">Kliknij opcję Wycofaj pustą magazynową jednostkę obsługi.</span><span class="sxs-lookup"><span data-stu-id="192c7-115">Click Reverse empty handling unit.</span></span>
+2. <span data-ttu-id="192c7-116">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="192c7-116">Click OK.</span></span>
+    * <span data-ttu-id="192c7-117">Zwróć uwagę, że pole Stan magazynowej jednostki obsługi ma wartość Otrzymano.</span><span class="sxs-lookup"><span data-stu-id="192c7-117">Notice that the Handling unit status is Received.</span></span>  
 
-## <a name="change-received-status-to-emptied-status"></a>Zmiana stanu Otrzymano na Opróżniono
-1. Kliknij opcję Pusta karta Kanban.
-2. Na liście oznacz wybrany wiersz.
-    * Zwróć uwagę, że pole Stan magazynowej jednostki obsługi ma wartość Opróżniono.  
+## <a name="change-received-status-to-emptied-status"></a><span data-ttu-id="192c7-118">Zmiana stanu Otrzymano na Opróżniono</span><span class="sxs-lookup"><span data-stu-id="192c7-118">Change received status to emptied status</span></span>
+1. <span data-ttu-id="192c7-119">Kliknij opcję Pusta karta Kanban.</span><span class="sxs-lookup"><span data-stu-id="192c7-119">Click Empty kanban.</span></span>
+2. <span data-ttu-id="192c7-120">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="192c7-120">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="192c7-121">Zwróć uwagę, że pole Stan magazynowej jednostki obsługi ma wartość Opróżniono.</span><span class="sxs-lookup"><span data-stu-id="192c7-121">Notice that the Handling unit status is Emptied.</span></span>  
 
 

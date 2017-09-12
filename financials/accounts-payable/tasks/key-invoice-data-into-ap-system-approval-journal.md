@@ -16,50 +16,50 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: d7cf810f1d8eabb9989fdd858585afcdf2e9574b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 604345d357e5019e334017b2b6d0413f40818acc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="key-invoice-data-into-accounts-payable-using-an-approval-journal"></a>Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą arkusza zatwierdzania
+# <a name="key-invoice-data-into-accounts-payable-using-an-approval-journal"></a><span data-ttu-id="730ec-103">Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą arkusza zatwierdzania</span><span class="sxs-lookup"><span data-stu-id="730ec-103">Key invoice data into accounts payable using an approval journal</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tym przewodniku po zadaniach pokazano sposób używania rejestru faktur do tworzenia faktur, a następnie używania arkusza zatwierdzania do aktualizowania kont wydatków.
+<span data-ttu-id="730ec-104">W tym przewodniku po zadaniach pokazano sposób używania rejestru faktur do tworzenia faktur, a następnie używania arkusza zatwierdzania do aktualizowania kont wydatków.</span><span class="sxs-lookup"><span data-stu-id="730ec-104">This task guide will show you how to use the invoice register to create invoices and then use the approval journal to update the expense accounts.</span></span>
 
 
-## <a name="create-and-post-and-invoice"></a>Tworzenie i księgowanie faktury
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Faktury > Rejestr faktur.
-2. Kliknij przycisk Nowy.
-3. Wybierz nazwę rejestru faktur, którego chcesz używać.
-4. Na liście kliknij łącze w wybranym wierszu.
-5. Kliknij przycisk Wiersze, aby otworzyć rejestr i wprowadzić wiersze wydatków.
-6. Wybierz dostawcę. Na przykład wprowadź lub wybierz dostawcę US-104.
-7. W polu Faktura wpisz wartość.
-8. W polu Opis wpisz wartość.
-9. W polu Kredyt wpisz liczbę.
-10. W polu Zatwierdzone przez kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-11. Zaznacz osobę zatwierdzającą i kliknij przycisk Wybierz, aby ją wybrać.
-12. Kliknij przycisk Księguj.
-13. Zamknij stronę.
-14. Zamknij stronę.
+## <a name="create-and-post-and-invoice"></a><span data-ttu-id="730ec-105">Tworzenie i księgowanie faktury</span><span class="sxs-lookup"><span data-stu-id="730ec-105">Create and post and invoice</span></span>
+1. <span data-ttu-id="730ec-106">Wybierz kolejno opcje Rozrachunki z dostawcami > Faktury > Rejestr faktur.</span><span class="sxs-lookup"><span data-stu-id="730ec-106">Go to Accounts payable > Invoices > Invoice register.</span></span>
+2. <span data-ttu-id="730ec-107">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="730ec-107">Click New.</span></span>
+3. <span data-ttu-id="730ec-108">Wybierz nazwę rejestru faktur, którego chcesz używać.</span><span class="sxs-lookup"><span data-stu-id="730ec-108">Select the name of the invoice register that you want to use.</span></span>
+4. <span data-ttu-id="730ec-109">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="730ec-109">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="730ec-110">Kliknij przycisk Wiersze, aby otworzyć rejestr i wprowadzić wiersze wydatków.</span><span class="sxs-lookup"><span data-stu-id="730ec-110">Click on Lines to open the register and enter expense lines.</span></span>
+6. <span data-ttu-id="730ec-111">Wybierz dostawcę.</span><span class="sxs-lookup"><span data-stu-id="730ec-111">Select a vendor.</span></span> <span data-ttu-id="730ec-112">Na przykład wprowadź lub wybierz dostawcę US-104.</span><span class="sxs-lookup"><span data-stu-id="730ec-112">For example, enter or select US-104</span></span>
+7. <span data-ttu-id="730ec-113">W polu Faktura wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="730ec-113">In the Invoice field, type a value.</span></span>
+8. <span data-ttu-id="730ec-114">W polu Opis wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="730ec-114">In the Description field, type a value.</span></span>
+9. <span data-ttu-id="730ec-115">W polu Kredyt wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="730ec-115">In the Credit field, enter a number.</span></span>
+10. <span data-ttu-id="730ec-116">W polu Zatwierdzone przez kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="730ec-116">In the Approved by field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="730ec-117">Zaznacz osobę zatwierdzającą i kliknij przycisk Wybierz, aby ją wybrać.</span><span class="sxs-lookup"><span data-stu-id="730ec-117">Highlight an approver and click Select to select that approver.</span></span>
+12. <span data-ttu-id="730ec-118">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="730ec-118">Click Post.</span></span>
+13. <span data-ttu-id="730ec-119">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="730ec-119">Close the page.</span></span>
+14. <span data-ttu-id="730ec-120">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="730ec-120">Close the page.</span></span>
 
-## <a name="approve-an-invoice"></a>Zatwierdzanie faktury
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Faktury > Zatwierdzenie faktury.
-2. Kliknij przycisk Nowy.
-3. Wybierz nazwę arkusza zatwierdzania faktur, którego chcesz używać.
-4. Na liście kliknij łącze w wybranym wierszu.
-5. Kliknij przycisk Wiersze, a zostanie wyświetlona strona, gdzie będzie można wybrać faktury do zatwierdzenia.
-6. Kliknij przycisk Znajdź załączniki, aby wyświetlić wszystkie faktury gotowe do zatwierdzenia.
-7. Oznacz utworzoną przez siebie fakturę.
-8. Kliknij opcję Wybierz.
-    * Załączniki wybrane powyżej zostaną po zaznaczeniu przeniesione do tej listy.  
-9. Kliknij przycisk OK.
-10. Kliknij pole Numer konta, aby dodać konto wydatków do faktury.
-11. Wprowadź numer konta i opuść to pole. Na przykład wpisz 600120.
-12. Kliknij przycisk Księguj.
-13. Kliknij opcję Załącznik, aby wyświetlić zapisy, które zostały zaksięgowane.
-    * Konto faktur oczekujących na zatwierdzenie zostanie wycofane i zastąpione kontem wydatków rzeczywistych.  
+## <a name="approve-an-invoice"></a><span data-ttu-id="730ec-121">Zatwierdzanie faktury</span><span class="sxs-lookup"><span data-stu-id="730ec-121">Approve an invoice</span></span>
+1. <span data-ttu-id="730ec-122">Wybierz kolejno opcje Rozrachunki z dostawcami > Faktury > Zatwierdzenie faktury.</span><span class="sxs-lookup"><span data-stu-id="730ec-122">Go to Accounts payable > Invoices > Invoice approval.</span></span>
+2. <span data-ttu-id="730ec-123">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="730ec-123">Click New.</span></span>
+3. <span data-ttu-id="730ec-124">Wybierz nazwę arkusza zatwierdzania faktur, którego chcesz używać.</span><span class="sxs-lookup"><span data-stu-id="730ec-124">Select the name of the invoice approval journal that you want to use.</span></span>
+4. <span data-ttu-id="730ec-125">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="730ec-125">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="730ec-126">Kliknij przycisk Wiersze, a zostanie wyświetlona strona, gdzie będzie można wybrać faktury do zatwierdzenia.</span><span class="sxs-lookup"><span data-stu-id="730ec-126">Click lines to display a page where you will be able to select the invoices that you want to approve.</span></span>
+6. <span data-ttu-id="730ec-127">Kliknij przycisk Znajdź załączniki, aby wyświetlić wszystkie faktury gotowe do zatwierdzenia.</span><span class="sxs-lookup"><span data-stu-id="730ec-127">Select Find Vouchers to display all of the invoices that are ready for approval.</span></span>
+7. <span data-ttu-id="730ec-128">Oznacz utworzoną przez siebie fakturę.</span><span class="sxs-lookup"><span data-stu-id="730ec-128">Mark the invoice that you created.</span></span>
+8. <span data-ttu-id="730ec-129">Kliknij opcję Wybierz.</span><span class="sxs-lookup"><span data-stu-id="730ec-129">Click Select.</span></span>
+    * <span data-ttu-id="730ec-130">Załączniki wybrane powyżej zostaną po zaznaczeniu przeniesione do tej listy.</span><span class="sxs-lookup"><span data-stu-id="730ec-130">The vouchers that you selected above are moved to this list after you select them.</span></span>  
+9. <span data-ttu-id="730ec-131">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="730ec-131">Click OK.</span></span>
+10. <span data-ttu-id="730ec-132">Kliknij pole Numer konta, aby dodać konto wydatków do faktury.</span><span class="sxs-lookup"><span data-stu-id="730ec-132">Click on the account number field to add an expense account to the invoice.</span></span>
+11. <span data-ttu-id="730ec-133">Wprowadź numer konta i opuść to pole.</span><span class="sxs-lookup"><span data-stu-id="730ec-133">Enter an account number and tab off of the field.</span></span> <span data-ttu-id="730ec-134">Na przykład wpisz 600120.</span><span class="sxs-lookup"><span data-stu-id="730ec-134">For example, enter 600120.</span></span>
+12. <span data-ttu-id="730ec-135">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="730ec-135">Click Post.</span></span>
+13. <span data-ttu-id="730ec-136">Kliknij opcję Załącznik, aby wyświetlić zapisy, które zostały zaksięgowane.</span><span class="sxs-lookup"><span data-stu-id="730ec-136">Click Voucher to view the entries that were posted.</span></span>
+    * <span data-ttu-id="730ec-137">Konto faktur oczekujących na zatwierdzenie zostanie wycofane i zastąpione kontem wydatków rzeczywistych.</span><span class="sxs-lookup"><span data-stu-id="730ec-137">The Invoice Pending Approval account is reversed and replaced with the actual expense account.</span></span>  
 
 

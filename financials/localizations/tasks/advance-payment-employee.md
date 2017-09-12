@@ -16,158 +16,158 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 0f0aed4dd530f7ec06d717e51b084d14e0816e43
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 4cc3ba589204f87b844ab4302e03105d2aa1de8d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="advance-payment-to-an-employee-eastern-europe"></a>Zaliczki na rzecz pracownika (Europa Wschodnia)
+# <a name="advance-payment-to-an-employee-eastern-europe"></a><span data-ttu-id="c7cde-103">Zaliczki na rzecz pracownika (Europa Wschodnia)</span><span class="sxs-lookup"><span data-stu-id="c7cde-103">Advance payment to an employee (Eastern Europe)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ta procedura pokazuje, jak skonfigurować i zarejestrować transakcje dla posiadacza zaliczki. Procedurę utworzono przy użyciu danych firmy demonstracyjnej DEMF, której podstawowy adres mieści się na Litwie. To zadanie działa tylko dla firm, których adres podstawowy znajduje się w Polsce, na Litwie, na Łotwie, w Estonii, w Czechach lub na Węgrzech. Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.
+<span data-ttu-id="c7cde-104">Ta procedura pokazuje, jak skonfigurować i zarejestrować transakcje dla posiadacza zaliczki.</span><span class="sxs-lookup"><span data-stu-id="c7cde-104">This procedure demonstrates how to set up and register transactions for an advance holder.</span></span> <span data-ttu-id="c7cde-105">Procedurę utworzono przy użyciu danych firmy demonstracyjnej DEMF, której podstawowy adres mieści się na Litwie.</span><span class="sxs-lookup"><span data-stu-id="c7cde-105">This procedure was created using the demo data company DEMF with a primary address in Lithuania.</span></span> <span data-ttu-id="c7cde-106">To zadanie działa tylko dla firm, których adres podstawowy znajduje się w Polsce, na Litwie, na Łotwie, w Estonii, w Czechach lub na Węgrzech.</span><span class="sxs-lookup"><span data-stu-id="c7cde-106">This task only works for legal entities with a primary address in Poland, Lithuania, Latvia, Estonia, Czech Republic, or Hungary.</span></span> <span data-ttu-id="c7cde-107">Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.</span><span class="sxs-lookup"><span data-stu-id="c7cde-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="create-a-new-cash-account"></a>Tworzenie nowego konta kasowego
-1. Kliknij kolejno opcje Zarządzanie gotówką i bankami > Konta bankowe > Konta kasowe.
-2. Kliknij przycisk Nowy.
-3. W polu Kasa wpisz wartość.
-4. W polu Nazwa wpisz wartość.
-5. W polu Grupa sekwencji numerów wprowadź lub wybierz wartość.
-6. Rozwiń sekcję Weryfikacja.
-7. W polu Waluta wprowadź lub wybierz wartość.
-8. W polu Ujemne saldo kasowe wybierz opcję Tak.
-9. Kliknij przycisk Zapisz.
+## <a name="create-a-new-cash-account"></a><span data-ttu-id="c7cde-108">Tworzenie nowego konta kasowego</span><span class="sxs-lookup"><span data-stu-id="c7cde-108">Create a new cash account</span></span>
+1. <span data-ttu-id="c7cde-109">Kliknij kolejno opcje Zarządzanie gotówką i bankami > Konta bankowe > Konta kasowe.</span><span class="sxs-lookup"><span data-stu-id="c7cde-109">Go to Cash and bank management > Bank accounts > Cash accounts.</span></span>
+2. <span data-ttu-id="c7cde-110">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c7cde-110">Click New.</span></span>
+3. <span data-ttu-id="c7cde-111">W polu Kasa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-111">In the Cash field, type a value.</span></span>
+4. <span data-ttu-id="c7cde-112">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-112">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="c7cde-113">W polu Grupa sekwencji numerów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-113">In the Number sequence group field, enter or select a value.</span></span>
+6. <span data-ttu-id="c7cde-114">Rozwiń sekcję Weryfikacja.</span><span class="sxs-lookup"><span data-stu-id="c7cde-114">Expand the Validation section.</span></span>
+7. <span data-ttu-id="c7cde-115">W polu Waluta wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-115">In the Currency field, enter or select a value.</span></span>
+8. <span data-ttu-id="c7cde-116">W polu Ujemne saldo kasowe wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="c7cde-116">Select Yes in the Negative cash field.</span></span>
+9. <span data-ttu-id="c7cde-117">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-117">Click Save.</span></span>
 
-## <a name="create-a-new-journal"></a>Tworzenie nowego arkusza
-1. Wybierz kolejno opcje Księga główna > Konfiguracja arkusza > Nazwy arkuszy.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa wpisz wartość.
-4. W polu Seria załączników wprowadź lub wybierz wartość.
-5. Kliknij przycisk Zapisz.
-6. Kliknij przycisk Nowy.
-7. W polu Nazwa wpisz wartość.
-8. W polu Typ arkusza wybierz opcję.
-9. W polu Seria załączników wprowadź lub wybierz wartość.
-10. Kliknij przycisk Zapisz.
+## <a name="create-a-new-journal"></a><span data-ttu-id="c7cde-118">Tworzenie nowego arkusza</span><span class="sxs-lookup"><span data-stu-id="c7cde-118">Create a new journal</span></span>
+1. <span data-ttu-id="c7cde-119">Wybierz kolejno opcje Księga główna > Konfiguracja arkusza > Nazwy arkuszy.</span><span class="sxs-lookup"><span data-stu-id="c7cde-119">Go to General ledger > Journal setup > Journal names.</span></span>
+2. <span data-ttu-id="c7cde-120">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c7cde-120">Click New.</span></span>
+3. <span data-ttu-id="c7cde-121">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-121">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="c7cde-122">W polu Seria załączników wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-122">In the Voucher series field, enter or select a value.</span></span>
+5. <span data-ttu-id="c7cde-123">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-123">Click Save.</span></span>
+6. <span data-ttu-id="c7cde-124">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c7cde-124">Click New.</span></span>
+7. <span data-ttu-id="c7cde-125">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-125">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="c7cde-126">W polu Typ arkusza wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="c7cde-126">In the Journal type field, select an option.</span></span>
+9. <span data-ttu-id="c7cde-127">W polu Seria załączników wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-127">In the Voucher series field, enter or select a value.</span></span>
+10. <span data-ttu-id="c7cde-128">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-128">Click Save.</span></span>
 
-## <a name="create-an-advance-holder-group"></a>Tworzenie grupy posiadaczy zaliczek
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Ustawienia > Posiadacze zaliczek > Grupy posiadaczy zaliczek.
-2. Kliknij przycisk Nowy.
-3. W polu Grupa wpisz wartość.
-4. Wypełnij pole Opis.
-5. Kliknij przycisk Zapisz.
+## <a name="create-an-advance-holder-group"></a><span data-ttu-id="c7cde-129">Tworzenie grupy posiadaczy zaliczek</span><span class="sxs-lookup"><span data-stu-id="c7cde-129">Create an advance holder group</span></span>
+1. <span data-ttu-id="c7cde-130">Wybierz kolejno opcje Rozrachunki z dostawcami > Ustawienia > Posiadacze zaliczek > Grupy posiadaczy zaliczek.</span><span class="sxs-lookup"><span data-stu-id="c7cde-130">Go to Accounts payable > Setup > Advance holders > Advance holder groups.</span></span>
+2. <span data-ttu-id="c7cde-131">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c7cde-131">Click New.</span></span>
+3. <span data-ttu-id="c7cde-132">W polu Grupa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-132">In the Group field, type a value.</span></span>
+4. <span data-ttu-id="c7cde-133">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="c7cde-133">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="c7cde-134">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-134">Click Save.</span></span>
 
-## <a name="create-an-employee-posting-profile"></a>Tworzenie profilu księgowania pracownika etatowego
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Ustawienia > Posiadacze zaliczek > Profile księgowania pracowników.
-2. Kliknij przycisk Nowy.
-3. W polu Profil księgowania wpisz wartość.
-4. Wypełnij pole Opis.
-5. Na liście oznacz wybrany wiersz.
-6. W polu Ważny dla wybierz opcję.
-7. W polu Konto rozrachunkowe podaj żądane wartości.
-8. Kliknij przycisk Zapisz.
+## <a name="create-an-employee-posting-profile"></a><span data-ttu-id="c7cde-135">Tworzenie profilu księgowania pracownika etatowego</span><span class="sxs-lookup"><span data-stu-id="c7cde-135">Create an employee posting profile</span></span>
+1. <span data-ttu-id="c7cde-136">Wybierz kolejno opcje Rozrachunki z dostawcami > Ustawienia > Posiadacze zaliczek > Profile księgowania pracowników.</span><span class="sxs-lookup"><span data-stu-id="c7cde-136">Go to Accounts payable > Setup > Advance holders > Employee posting profiles.</span></span>
+2. <span data-ttu-id="c7cde-137">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c7cde-137">Click New.</span></span>
+3. <span data-ttu-id="c7cde-138">W polu Profil księgowania wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-138">In the Posting profile field, type a value.</span></span>
+4. <span data-ttu-id="c7cde-139">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="c7cde-139">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="c7cde-140">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-140">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="c7cde-141">W polu Ważny dla wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="c7cde-141">In the Valid for field, select an option.</span></span>
+7. <span data-ttu-id="c7cde-142">W polu Konto rozrachunkowe podaj żądane wartości.</span><span class="sxs-lookup"><span data-stu-id="c7cde-142">In the Summary account field, specify the desired values.</span></span>
+8. <span data-ttu-id="c7cde-143">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-143">Click Save.</span></span>
 
-## <a name="set-up-advance-holder-parameters"></a>Konfigurowanie parametrów posiadaczy zaliczek
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Ustawienia > Parametry modułu rozrachunków z dostawcami.
-2. Kliknij kartę Posiadacze zaliczek.
-3. W polu Profil księgowania wprowadź lub wybierz wartość.
-4. W polu Nazwa wprowadź lub wybierz wartość.
-5. Wprowadź lub wybierz wartość w polu Kasa.
-6. W polu Nazwa wprowadź lub wybierz wartość.
-7. W polu Typ konta zaznacz opcję.
-8. W polu Konto główne podaj żądane wartości.
-9. Kliknij kartę Sekwencje numerów.
-10. Kliknij przycisk Zapisz.
+## <a name="set-up-advance-holder-parameters"></a><span data-ttu-id="c7cde-144">Konfigurowanie parametrów posiadaczy zaliczek</span><span class="sxs-lookup"><span data-stu-id="c7cde-144">Set up advance holder parameters</span></span>
+1. <span data-ttu-id="c7cde-145">Wybierz kolejno opcje Rozrachunki z dostawcami > Ustawienia > Parametry modułu rozrachunków z dostawcami.</span><span class="sxs-lookup"><span data-stu-id="c7cde-145">Go to Accounts payable > Setup > Accounts payable parameters.</span></span>
+2. <span data-ttu-id="c7cde-146">Kliknij kartę Posiadacze zaliczek.</span><span class="sxs-lookup"><span data-stu-id="c7cde-146">Click the Advance holders tab.</span></span>
+3. <span data-ttu-id="c7cde-147">W polu Profil księgowania wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-147">In the Posting profile field, enter or select a value.</span></span>
+4. <span data-ttu-id="c7cde-148">W polu Nazwa wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-148">In the Name field, enter or select a value.</span></span>
+5. <span data-ttu-id="c7cde-149">Wprowadź lub wybierz wartość w polu Kasa.</span><span class="sxs-lookup"><span data-stu-id="c7cde-149">In the Cash field, enter or select a value.</span></span>
+6. <span data-ttu-id="c7cde-150">W polu Nazwa wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-150">In the Name field, enter or select a value.</span></span>
+7. <span data-ttu-id="c7cde-151">W polu Typ konta zaznacz opcję.</span><span class="sxs-lookup"><span data-stu-id="c7cde-151">In the Account type field, select an option.</span></span>
+8. <span data-ttu-id="c7cde-152">W polu Konto główne podaj żądane wartości.</span><span class="sxs-lookup"><span data-stu-id="c7cde-152">In the Main account field, specify the desired values.</span></span>
+9. <span data-ttu-id="c7cde-153">Kliknij kartę Sekwencje numerów.</span><span class="sxs-lookup"><span data-stu-id="c7cde-153">Click the Number sequences tab.</span></span>
+10. <span data-ttu-id="c7cde-154">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-154">Click Save.</span></span>
 
-## <a name="set-up-a-cash-posting-profile"></a>Konfigurowanie profilu księgowania kasy
-1. Wybierz kolejno opcje Zarządzanie gotówką i bankami > Ustawienia > Profile księgowania kasy.
-2. Kliknij przycisk Nowy.
-3. W polu Księgowanie kasy wpisz wartość.
-4. Wypełnij pole Opis.
-5. Na liście oznacz wybrany wiersz.
-6. W polu Ważny dla wybierz opcję.
-7. W polu Konto główne podaj żądane wartości.
-8. Kliknij przycisk Zapisz.
+## <a name="set-up-a-cash-posting-profile"></a><span data-ttu-id="c7cde-155">Konfigurowanie profilu księgowania kasy</span><span class="sxs-lookup"><span data-stu-id="c7cde-155">Set up a cash posting profile</span></span>
+1. <span data-ttu-id="c7cde-156">Wybierz kolejno opcje Zarządzanie gotówką i bankami > Ustawienia > Profile księgowania kasy.</span><span class="sxs-lookup"><span data-stu-id="c7cde-156">Go to Cash and bank management > Setup > Cash posting profiles.</span></span>
+2. <span data-ttu-id="c7cde-157">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c7cde-157">Click New.</span></span>
+3. <span data-ttu-id="c7cde-158">W polu Księgowanie kasy wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-158">In the Cash posting field, type a value.</span></span>
+4. <span data-ttu-id="c7cde-159">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="c7cde-159">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="c7cde-160">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-160">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="c7cde-161">W polu Ważny dla wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="c7cde-161">In the Valid for field, select an option.</span></span>
+7. <span data-ttu-id="c7cde-162">W polu Konto główne podaj żądane wartości.</span><span class="sxs-lookup"><span data-stu-id="c7cde-162">In the Main account field, specify the desired values.</span></span>
+8. <span data-ttu-id="c7cde-163">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-163">Click Save.</span></span>
 
-## <a name="set-up-cash-and-bank-parameters"></a>Konfigurowanie parametrów kasy i banku
-1. Wybierz kolejno opcje Zarządzanie gotówką i bankami > Ustawienia > Parametry modułu Zarządzanie gotówką i bankami.
-2. Kliknij kartę Kasa.
-3. Wprowadź lub wybierz wartość w polu Kasa.
-4. Wprowadź lub wybierz wartość w polu Księgowanie kasy.
-5. Kliknij przycisk Zapisz.
-6. Kliknij kartę Sekwencje numerów.
-7. Na liście znajdź i zaznacz odpowiedni rekord.
-8. W polu Kod sekwencji numerów wprowadź lub wybierz wartość.
-9. Na liście znajdź i zaznacz odpowiedni rekord.
-10. W polu Kod sekwencji numerów wprowadź lub wybierz wartość.
-11. Kliknij przycisk Zapisz.
+## <a name="set-up-cash-and-bank-parameters"></a><span data-ttu-id="c7cde-164">Konfigurowanie parametrów kasy i banku</span><span class="sxs-lookup"><span data-stu-id="c7cde-164">Set up cash and bank parameters</span></span>
+1. <span data-ttu-id="c7cde-165">Wybierz kolejno opcje Zarządzanie gotówką i bankami > Ustawienia > Parametry modułu Zarządzanie gotówką i bankami.</span><span class="sxs-lookup"><span data-stu-id="c7cde-165">Go to Cash and bank management > Setup > Cash and bank management parameters.</span></span>
+2. <span data-ttu-id="c7cde-166">Kliknij kartę Kasa.</span><span class="sxs-lookup"><span data-stu-id="c7cde-166">Click the Cash tab.</span></span>
+3. <span data-ttu-id="c7cde-167">Wprowadź lub wybierz wartość w polu Kasa.</span><span class="sxs-lookup"><span data-stu-id="c7cde-167">In the Cash field, enter or select a value.</span></span>
+4. <span data-ttu-id="c7cde-168">Wprowadź lub wybierz wartość w polu Księgowanie kasy.</span><span class="sxs-lookup"><span data-stu-id="c7cde-168">In the Cash posting field, enter or select a value.</span></span>
+5. <span data-ttu-id="c7cde-169">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-169">Click Save.</span></span>
+6. <span data-ttu-id="c7cde-170">Kliknij kartę Sekwencje numerów.</span><span class="sxs-lookup"><span data-stu-id="c7cde-170">Click the Number sequences tab.</span></span>
+7. <span data-ttu-id="c7cde-171">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="c7cde-171">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="c7cde-172">W polu Kod sekwencji numerów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-172">In the Number sequence code field, enter or select a value.</span></span>
+9. <span data-ttu-id="c7cde-173">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="c7cde-173">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="c7cde-174">W polu Kod sekwencji numerów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-174">In the Number sequence code field, enter or select a value.</span></span>
+11. <span data-ttu-id="c7cde-175">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-175">Click Save.</span></span>
 
-## <a name="set-up-terms-of-payment"></a>Ustaw warunki płatności
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Ustawienia płatności > Warunki płatności.
-2. Kliknij przycisk Edytuj.
-3. W polu Od posiadacza zaliczki wybierz opcję Tak.
-4. Kliknij przycisk Zapisz.
+## <a name="set-up-terms-of-payment"></a><span data-ttu-id="c7cde-176">Ustaw warunki płatności</span><span class="sxs-lookup"><span data-stu-id="c7cde-176">Set up terms of payment</span></span>
+1. <span data-ttu-id="c7cde-177">Wybierz kolejno opcje Rozrachunki z dostawcami > Ustawienia płatności > Warunki płatności.</span><span class="sxs-lookup"><span data-stu-id="c7cde-177">Go to Accounts payable > Payment setup > Terms of payment.</span></span>
+2. <span data-ttu-id="c7cde-178">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="c7cde-178">Click Edit.</span></span>
+3. <span data-ttu-id="c7cde-179">W polu Od posiadacza zaliczki wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="c7cde-179">Select Yes in the From advance holder field.</span></span>
+4. <span data-ttu-id="c7cde-180">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-180">Click Save.</span></span>
 
-## <a name="create-a-new-worker"></a>Tworzenie nowego pracownika
-1. Wybierz kolejno opcje Zasoby ludzkie > Pracownicy > Pracownicy.
-2. Kliknij przycisk Nowy.
-3. W polu Imię wpisz wartość.
-4. W polu Nazwisko wpisz wartość.
-5. W polu Identyfikator pracownika wpisz wartość.
-6. Kliknij przycisk Zatrudnij nowego pracownika.
-7. Kliknij przycisk Zapisz.
+## <a name="create-a-new-worker"></a><span data-ttu-id="c7cde-181">Tworzenie nowego pracownika</span><span class="sxs-lookup"><span data-stu-id="c7cde-181">Create a new worker</span></span>
+1. <span data-ttu-id="c7cde-182">Wybierz kolejno opcje Zasoby ludzkie > Pracownicy > Pracownicy.</span><span class="sxs-lookup"><span data-stu-id="c7cde-182">Go to Human resources > Workers > Workers.</span></span>
+2. <span data-ttu-id="c7cde-183">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c7cde-183">Click New.</span></span>
+3. <span data-ttu-id="c7cde-184">W polu Imię wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-184">In the First name field, type a value.</span></span>
+4. <span data-ttu-id="c7cde-185">W polu Nazwisko wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-185">In the Last name field, type a value.</span></span>
+5. <span data-ttu-id="c7cde-186">W polu Identyfikator pracownika wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-186">In the Worker ID field, type a value.</span></span>
+6. <span data-ttu-id="c7cde-187">Kliknij przycisk Zatrudnij nowego pracownika.</span><span class="sxs-lookup"><span data-stu-id="c7cde-187">Click Hire new worker.</span></span>
+7. <span data-ttu-id="c7cde-188">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-188">Click Save.</span></span>
 
-## <a name="set-up-a-worker-as-an-advance-holder"></a>Konfigurowanie pracownika jako posiadacza zaliczki
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Posiadacze zaliczek > Posiadacze zaliczek.
-2. Kliknij przycisk Edytuj.
-3. W polu Grupa wprowadź lub wybierz wartość.
-4. W polu Posiadacz zaliczki wybierz opcję Tak.
-5. Kliknij przycisk Zapisz.
+## <a name="set-up-a-worker-as-an-advance-holder"></a><span data-ttu-id="c7cde-189">Konfigurowanie pracownika jako posiadacza zaliczki</span><span class="sxs-lookup"><span data-stu-id="c7cde-189">Set up a worker as an advance holder</span></span>
+1. <span data-ttu-id="c7cde-190">Wybierz kolejno opcje Rozrachunki z dostawcami > Posiadacze zaliczek > Posiadacze zaliczek.</span><span class="sxs-lookup"><span data-stu-id="c7cde-190">Go to Accounts payable > Advance holders > Advance holders.</span></span>
+2. <span data-ttu-id="c7cde-191">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="c7cde-191">Click Edit.</span></span>
+3. <span data-ttu-id="c7cde-192">W polu Grupa wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-192">In the Group field, enter or select a value.</span></span>
+4. <span data-ttu-id="c7cde-193">W polu Posiadacz zaliczki wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="c7cde-193">Select Yes in the Advance holder field.</span></span>
+5. <span data-ttu-id="c7cde-194">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-194">Click Save.</span></span>
 
-## <a name="create-and-post-a-purchase-order-invoice"></a>Tworzenie i księgowanie faktury zamówienia zakupu
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Zamówienia zakupu > Wszystkie zamówienia zakupu.
-2. Kliknij przycisk Nowy.
-3. W polu Konto dostawcy wprowadź lub wybierz wartość.
-4. Kliknij przycisk OK.
-5. W polu Wiersze lub nagłówek wybierz opcję.
-6. Rozwiń sekcję Cena i rabat.
-7. W polu Warunki płatności wprowadź lub wybierz wartość.
-8. Wprowadź lub wybierz wartość w polu Posiadacz zaliczki.
-9. W polu Wiersze lub nagłówek wybierz opcję.
-10. Na liście oznacz wybrany wiersz.
-11. W polu Numer towaru wprowadź lub wybierz wartość.
-12. Wprowadź liczbę w polu Ilość.
-13. Wprowadź liczbę w polu Cena jednostkowa.
-14. Kliknij przycisk Zapisz.
-15. W okienku akcji kliknij pozycję Zakup.
-16. Kliknij przycisk Potwierdź.
-17. W okienku akcji kliknij pozycję Faktura.
-18. Kliknij opcję Faktura.
-19. Na liście Domyślnie z zaznacz opcję Ilość z dokumentu przyjęcia produktów, aby otworzyć rozwijane okno dialogowe.
-20. W polu Domyślna ilość dla wierszy zaznacz opcję.
-21. Kliknij przycisk OK.
-22. W polu Numer wpisz wartość.
-23. Wypełnij pole Opis faktury.
-24. W polu Data faktury wprowadź datę.
-25. W polu Data rejestru VAT wpisz datę.
-26. W polu Data otrzymania dokumentu wprowadź datę.
-27. Kliknij przycisk Księguj.
+## <a name="create-and-post-a-purchase-order-invoice"></a><span data-ttu-id="c7cde-195">Tworzenie i księgowanie faktury zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="c7cde-195">Create and post a purchase order invoice</span></span>
+1. <span data-ttu-id="c7cde-196">Wybierz kolejno opcje Rozrachunki z dostawcami > Zamówienia zakupu > Wszystkie zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="c7cde-196">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="c7cde-197">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c7cde-197">Click New.</span></span>
+3. <span data-ttu-id="c7cde-198">W polu Konto dostawcy wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-198">In the Vendor account field, enter or select a value.</span></span>
+4. <span data-ttu-id="c7cde-199">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c7cde-199">Click OK.</span></span>
+5. <span data-ttu-id="c7cde-200">W polu Wiersze lub nagłówek wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="c7cde-200">In the Lines or header field, select an option.</span></span>
+6. <span data-ttu-id="c7cde-201">Rozwiń sekcję Cena i rabat.</span><span class="sxs-lookup"><span data-stu-id="c7cde-201">Expand the Price and discount section.</span></span>
+7. <span data-ttu-id="c7cde-202">W polu Warunki płatności wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-202">In the Terms of payment field, enter or select a value.</span></span>
+8. <span data-ttu-id="c7cde-203">Wprowadź lub wybierz wartość w polu Posiadacz zaliczki.</span><span class="sxs-lookup"><span data-stu-id="c7cde-203">In the Advance holder field, enter or select a value.</span></span>
+9. <span data-ttu-id="c7cde-204">W polu Wiersze lub nagłówek wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="c7cde-204">In the Lines or header field, select an option.</span></span>
+10. <span data-ttu-id="c7cde-205">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-205">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="c7cde-206">W polu Numer towaru wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-206">In the Item number field, enter or select a value.</span></span>
+12. <span data-ttu-id="c7cde-207">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-207">In the Quantity field, enter a number.</span></span>
+13. <span data-ttu-id="c7cde-208">Wprowadź liczbę w polu Cena jednostkowa.</span><span class="sxs-lookup"><span data-stu-id="c7cde-208">In the Unit price field, enter a number.</span></span>
+14. <span data-ttu-id="c7cde-209">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c7cde-209">Click Save.</span></span>
+15. <span data-ttu-id="c7cde-210">W okienku akcji kliknij pozycję Zakup.</span><span class="sxs-lookup"><span data-stu-id="c7cde-210">On the Action Pane, click Purchase.</span></span>
+16. <span data-ttu-id="c7cde-211">Kliknij przycisk Potwierdź.</span><span class="sxs-lookup"><span data-stu-id="c7cde-211">Click Confirm.</span></span>
+17. <span data-ttu-id="c7cde-212">W okienku akcji kliknij pozycję Faktura.</span><span class="sxs-lookup"><span data-stu-id="c7cde-212">On the Action Pane, click Invoice.</span></span>
+18. <span data-ttu-id="c7cde-213">Kliknij opcję Faktura.</span><span class="sxs-lookup"><span data-stu-id="c7cde-213">Click Invoice.</span></span>
+19. <span data-ttu-id="c7cde-214">Na liście Domyślnie z zaznacz opcję Ilość z dokumentu przyjęcia produktów, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="c7cde-214">Click Default from: Product receipt quantity to open the drop dialog.</span></span>
+20. <span data-ttu-id="c7cde-215">W polu Domyślna ilość dla wierszy zaznacz opcję.</span><span class="sxs-lookup"><span data-stu-id="c7cde-215">In the Default quantity for lines field, select an option.</span></span>
+21. <span data-ttu-id="c7cde-216">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c7cde-216">Click OK.</span></span>
+22. <span data-ttu-id="c7cde-217">W polu Numer wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c7cde-217">In the Number field, type a value.</span></span>
+23. <span data-ttu-id="c7cde-218">Wypełnij pole Opis faktury.</span><span class="sxs-lookup"><span data-stu-id="c7cde-218">In the Invoice description field, type a value.</span></span>
+24. <span data-ttu-id="c7cde-219">W polu Data faktury wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="c7cde-219">In the Invoice date field, enter a date.</span></span>
+25. <span data-ttu-id="c7cde-220">W polu Data rejestru VAT wpisz datę.</span><span class="sxs-lookup"><span data-stu-id="c7cde-220">In the Date of VAT register field, enter a date.</span></span>
+26. <span data-ttu-id="c7cde-221">W polu Data otrzymania dokumentu wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="c7cde-221">In the Receive document date field, enter a date.</span></span>
+27. <span data-ttu-id="c7cde-222">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="c7cde-222">Click Post.</span></span>
 
-## <a name="balance-and-close-advance-holders-transactions"></a>Bilansowanie i zamykanie transakcji posiadaczy zaliczek
-1. Wybierz kolejno opcje Rozrachunki z dostawcami > Posiadacze zaliczek > Posiadacze zaliczek.
-2. Kliknij opcję Transakcje.
-3. Zamknij stronę.
-4. Kliknij opcję Saldo.
-5. Kliknij opcję Zamknij — bank.
-6. W polu Automatycznie wybierz opcję Tak.
-7. W polu Kwota do przeniesienia wpisz liczbę.
-8. Kliknij przycisk OK.
-9. Kliknij opcję Zamknij — kasa.
-10. W polu Automatycznie wybierz opcję Tak.
-11. Kliknij przycisk OK.
-12. Zamknij stronę.
-13. Kliknij opcję Transakcje.
+## <a name="balance-and-close-advance-holders-transactions"></a><span data-ttu-id="c7cde-223">Bilansowanie i zamykanie transakcji posiadaczy zaliczek</span><span class="sxs-lookup"><span data-stu-id="c7cde-223">Balance and close advance holders transactions</span></span>
+1. <span data-ttu-id="c7cde-224">Wybierz kolejno opcje Rozrachunki z dostawcami > Posiadacze zaliczek > Posiadacze zaliczek.</span><span class="sxs-lookup"><span data-stu-id="c7cde-224">Go to Accounts payable > Advance holders > Advance holders.</span></span>
+2. <span data-ttu-id="c7cde-225">Kliknij opcję Transakcje.</span><span class="sxs-lookup"><span data-stu-id="c7cde-225">Click Transactions.</span></span>
+3. <span data-ttu-id="c7cde-226">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="c7cde-226">Close the page.</span></span>
+4. <span data-ttu-id="c7cde-227">Kliknij opcję Saldo.</span><span class="sxs-lookup"><span data-stu-id="c7cde-227">Click Balance.</span></span>
+5. <span data-ttu-id="c7cde-228">Kliknij opcję Zamknij — bank.</span><span class="sxs-lookup"><span data-stu-id="c7cde-228">Click Close via bank.</span></span>
+6. <span data-ttu-id="c7cde-229">W polu Automatycznie wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="c7cde-229">Select Yes in the Automatic field.</span></span>
+7. <span data-ttu-id="c7cde-230">W polu Kwota do przeniesienia</span><span class="sxs-lookup"><span data-stu-id="c7cde-230">In the Amount to be transferred.</span></span> <span data-ttu-id="c7cde-231">wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="c7cde-231">field, enter a number.</span></span>
+8. <span data-ttu-id="c7cde-232">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c7cde-232">Click OK.</span></span>
+9. <span data-ttu-id="c7cde-233">Kliknij opcję Zamknij — kasa.</span><span class="sxs-lookup"><span data-stu-id="c7cde-233">Click Close via cash.</span></span>
+10. <span data-ttu-id="c7cde-234">W polu Automatycznie wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="c7cde-234">Select Yes in the Automatic field.</span></span>
+11. <span data-ttu-id="c7cde-235">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c7cde-235">Click OK.</span></span>
+12. <span data-ttu-id="c7cde-236">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="c7cde-236">Close the page.</span></span>
+13. <span data-ttu-id="c7cde-237">Kliknij opcję Transakcje.</span><span class="sxs-lookup"><span data-stu-id="c7cde-237">Click Transactions.</span></span>
 
 

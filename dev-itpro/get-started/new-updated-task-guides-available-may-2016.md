@@ -15,188 +15,188 @@ ms.custom: 104233
 ms.assetid: 2a2ffa1e-5a15-4e2a-b18c-c4d890d38a50
 ms.search.region: global
 ms.author: josaw
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a613f5a84a7c72da3cc76eac147d4754f6259e4c
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 8b5437e5652ca5111ded89cb3417db46ab4b45af
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-may-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)
+# <a name="new-or-updated-task-guides-may-2016"></a><span data-ttu-id="c199d-104">Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)</span><span class="sxs-lookup"><span data-stu-id="c199d-104">New or updated task guides (May 2016)</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy. 
+<span data-ttu-id="c199d-105">Ten artykuł zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX.</span><span class="sxs-lookup"><span data-stu-id="c199d-105">This article lists the new or updated Task guides that were released to the Microsoft (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX.</span></span> <span data-ttu-id="c199d-106">Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.</span><span class="sxs-lookup"><span data-stu-id="c199d-106">No new Getting Started Library was released.</span></span> 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a><span data-ttu-id="c199d-107">[]()Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX</span><span class="sxs-lookup"><span data-stu-id="c199d-107">[]()Task guides in the (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX</span></span>
 ------------------------------------------------------------------------------------------------
 
-Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji systemu Microsoft Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach zamieszczone w ujednoliconej bibliotece APQC z lutego 2016 r. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md). **Uwaga:** Znak gwiazdki (**\***) obok tytułu wiersza narzędzia do modelowania procesów biznesowych (BPM) wskazuje, że przewodnik po zadaniach dla tego procesu biznesowego został utworzony dla aktualizacji systemu Dynamics AX z maja 2016 r. i nie jest obsługiwany we wcześniejszych wersjach systemu Microsoft Dynamics AX.
+<span data-ttu-id="c199d-108">Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji systemu Microsoft Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r.</span><span class="sxs-lookup"><span data-stu-id="c199d-108">The (May 2016) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX May 2016 update and the Microsoft Dynamics AX February 2016 release.</span></span> <span data-ttu-id="c199d-109">W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach zamieszczone w ujednoliconej bibliotece APQC z lutego 2016 r.</span><span class="sxs-lookup"><span data-stu-id="c199d-109">Localized versions of the Task guides that were released in the (February 2016) APQC Unified Library are available in this library.</span></span> <span data-ttu-id="c199d-110">Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md).</span><span class="sxs-lookup"><span data-stu-id="c199d-110">For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md).</span></span> <span data-ttu-id="c199d-111">**Uwaga:** Znak gwiazdki (**\***) obok tytułu wiersza narzędzia do modelowania procesów biznesowych (BPM) wskazuje, że przewodnik po zadaniach dla tego procesu biznesowego został utworzony dla aktualizacji systemu Dynamics AX z maja 2016 r. i nie jest obsługiwany we wcześniejszych wersjach systemu Microsoft Dynamics AX.</span><span class="sxs-lookup"><span data-stu-id="c199d-111">**Note:** An asterisk (**\***) next to the title of a Business process modeler (BPM) line indicates that the task guide for that business process was created for Dynamics AX May 2016 update and isn't supported in earlier versions of Microsoft Dynamics AX.</span></span>
 
-### <a name="countryregion-functionality"></a>Funkcje specyficzne dla kraju/regionu
+### <a name="countryregion-functionality"></a><span data-ttu-id="c199d-112">Funkcje specyficzne dla kraju/regionu</span><span class="sxs-lookup"><span data-stu-id="c199d-112">Country/region functionality</span></span>
 
-| Wiersz BPM                                                                 | Kraj/region                    |
+| <span data-ttu-id="c199d-113">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-113">BPM line</span></span>                                                                 | <span data-ttu-id="c199d-114">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-114">Country/region</span></span>                    |
 |--------------------------------------------------------------------------|-----------------------------------|
-| Konfigurowanie fakturowania elektronicznego OIOXML                                       | Dania                           |
-| EUR-00002 Generowanie unijnej deklaracji Intrastat                           | Europa                            |
-| EUR-00002 Przesyłanie transakcji do systemu Intrastat                         | Europa                            |
-| FR-00004 Aktualizacja metody płatności dla odbiorcy                            | Europa                            |
-| Ustanawianie metod płatności odbiorcy                                    | Francja                            |
-| FR-00003 Kody NAF i numery Siret                                     | Francja                            |
-| FR-00004 Zatwierdzanie i księgowanie weksla                          | Francja                            |
-| Konfigurowanie parametrów przyspieszonej amortyzacji i profilów księgowania       | Japonia                             |
-| Konfigurowanie parametrów faktury skonsolidowanej i ustawień dla rozrachunków z dostawcami | Japonia                             |
-| Tworzenie dokumentu przyspieszonej amortyzacji i wprowadzanie danych dotyczących użycia         | Japonia                             |
-| Tworzenie grupy ośrodków wypracowujących korzyści ekonomiczne i ośrodków wypracowujących środki pieniężne                               | Japonia                             |
-| Likwidacja środka trwałego z wykorzystaniem wpisu redukcji                            | Japonia                             |
-| MY-00004 Zarządzanie notami obciążeniowymi i notami uznaniowymi dla dostawcy na potrzeby podatku GST                | Singapur, Malezja i Tajlandia |
+| <span data-ttu-id="c199d-115">Konfigurowanie fakturowania elektronicznego OIOXML</span><span class="sxs-lookup"><span data-stu-id="c199d-115">Set up OIOUBL electronic invoicing</span></span>                                       | <span data-ttu-id="c199d-116">Dania</span><span class="sxs-lookup"><span data-stu-id="c199d-116">Denmark</span></span>                           |
+| <span data-ttu-id="c199d-117">EUR-00002 Generowanie unijnej deklaracji Intrastat</span><span class="sxs-lookup"><span data-stu-id="c199d-117">EUR-00002 Generate an EU Intrastat declaration</span></span>                           | <span data-ttu-id="c199d-118">Europa</span><span class="sxs-lookup"><span data-stu-id="c199d-118">Europe</span></span>                            |
+| <span data-ttu-id="c199d-119">EUR-00002 Przesyłanie transakcji do systemu Intrastat</span><span class="sxs-lookup"><span data-stu-id="c199d-119">EUR-00002 Transfer transactions to the Intrastat</span></span>                         | <span data-ttu-id="c199d-120">Europa</span><span class="sxs-lookup"><span data-stu-id="c199d-120">Europe</span></span>                            |
+| <span data-ttu-id="c199d-121">FR-00004 Aktualizacja metody płatności dla odbiorcy</span><span class="sxs-lookup"><span data-stu-id="c199d-121">FR-00004 Update method of payment on customer</span></span>                            | <span data-ttu-id="c199d-122">Europa</span><span class="sxs-lookup"><span data-stu-id="c199d-122">Europe</span></span>                            |
+| <span data-ttu-id="c199d-123">Ustanawianie metod płatności odbiorcy</span><span class="sxs-lookup"><span data-stu-id="c199d-123">Establish customer methods of payment</span></span>                                    | <span data-ttu-id="c199d-124">Francja</span><span class="sxs-lookup"><span data-stu-id="c199d-124">France</span></span>                            |
+| <span data-ttu-id="c199d-125">FR-00003 Kody NAF i numery Siret</span><span class="sxs-lookup"><span data-stu-id="c199d-125">FR-00003 NAF codes and Siret numbers</span></span>                                     | <span data-ttu-id="c199d-126">Francja</span><span class="sxs-lookup"><span data-stu-id="c199d-126">France</span></span>                            |
+| <span data-ttu-id="c199d-127">FR-00004 Zatwierdzanie i księgowanie weksla</span><span class="sxs-lookup"><span data-stu-id="c199d-127">FR-00004 Approve and post draw bill of exchange</span></span>                          | <span data-ttu-id="c199d-128">Francja</span><span class="sxs-lookup"><span data-stu-id="c199d-128">France</span></span>                            |
+| <span data-ttu-id="c199d-129">Konfigurowanie parametrów przyspieszonej amortyzacji i profilów księgowania</span><span class="sxs-lookup"><span data-stu-id="c199d-129">Configure accelerated depreciation parameters and posting profiles</span></span>       | <span data-ttu-id="c199d-130">Japonia</span><span class="sxs-lookup"><span data-stu-id="c199d-130">Japan</span></span>                             |
+| <span data-ttu-id="c199d-131">Konfigurowanie parametrów faktury skonsolidowanej i ustawień dla rozrachunków z dostawcami</span><span class="sxs-lookup"><span data-stu-id="c199d-131">Configure consolidated invoice parameters and setup for accounts payable</span></span> | <span data-ttu-id="c199d-132">Japonia</span><span class="sxs-lookup"><span data-stu-id="c199d-132">Japan</span></span>                             |
+| <span data-ttu-id="c199d-133">Tworzenie dokumentu przyspieszonej amortyzacji i wprowadzanie danych dotyczących użycia</span><span class="sxs-lookup"><span data-stu-id="c199d-133">Create an accelerated depreciation document and enter usage data</span></span>         | <span data-ttu-id="c199d-134">Japonia</span><span class="sxs-lookup"><span data-stu-id="c199d-134">Japan</span></span>                             |
+| <span data-ttu-id="c199d-135">Tworzenie grupy ośrodków wypracowujących korzyści ekonomiczne i ośrodków wypracowujących środki pieniężne</span><span class="sxs-lookup"><span data-stu-id="c199d-135">Create CGU group and cash generating units</span></span>                               | <span data-ttu-id="c199d-136">Japonia</span><span class="sxs-lookup"><span data-stu-id="c199d-136">Japan</span></span>                             |
+| <span data-ttu-id="c199d-137">Likwidacja środka trwałego z wykorzystaniem wpisu redukcji</span><span class="sxs-lookup"><span data-stu-id="c199d-137">Dispose of a fixed asset with reduction entry</span></span>                            | <span data-ttu-id="c199d-138">Japonia</span><span class="sxs-lookup"><span data-stu-id="c199d-138">Japan</span></span>                             |
+| <span data-ttu-id="c199d-139">MY-00004 Zarządzanie notami obciążeniowymi i notami uznaniowymi dla dostawcy na potrzeby podatku GST</span><span class="sxs-lookup"><span data-stu-id="c199d-139">MY-00004 Manage vendor Debit note and Credit note for GST</span></span>                | <span data-ttu-id="c199d-140">Singapur, Malezja i Tajlandia</span><span class="sxs-lookup"><span data-stu-id="c199d-140">Singapore, Malaysia, and Thailand</span></span> |
 
-### <a name="data-access"></a>Dostęp do danych
+### <a name="data-access"></a><span data-ttu-id="c199d-141">Dostęp do danych</span><span class="sxs-lookup"><span data-stu-id="c199d-141">Data access</span></span>
 
-| Wiersz BPM                                       | Kraj/region |
+| <span data-ttu-id="c199d-142">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-142">BPM line</span></span>                                       | <span data-ttu-id="c199d-143">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-143">Country/region</span></span> |
 |------------------------------------------------|----------------|
-| Konfigurowanie udostępnianie danych finansowych między firmami | Globalna         |
+| <span data-ttu-id="c199d-144">Konfigurowanie udostępnianie danych finansowych między firmami</span><span class="sxs-lookup"><span data-stu-id="c199d-144">Configure financial cross-company data sharing</span></span> | <span data-ttu-id="c199d-145">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-145">Global</span></span>         |
 
-### <a name="electronic-reporting"></a>Raportowanie elektroniczne
+### <a name="electronic-reporting"></a><span data-ttu-id="c199d-146">Raportowanie elektroniczne</span><span class="sxs-lookup"><span data-stu-id="c199d-146">Electronic reporting</span></span>
 
-| Wiersz BPM                                                                   | Kraj/region |
+| <span data-ttu-id="c199d-147">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-147">BPM line</span></span>                                                                   | <span data-ttu-id="c199d-148">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-148">Country/region</span></span> |
 |----------------------------------------------------------------------------|----------------|
-| ER Konfigurowanie miejsc docelowych                                                  | Globalna         |
-| ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML         | Globalna         |
-| ER Generowanie dokumentów elektronicznych dla płatności przy użyciu konfiguracji formatu | Globalna         |
-| ER Importowanie konfiguracji z usługi Lifecycle Services                          | Globalna         |
-| **\***ER Wybór dostawcy usług                                           | Globalna         |
-| ER Uaktualnianie formatu poprzez przyjęcie jego nowej wersji bazowej      | Globalna         |
-| ER Przekazywanie konfiguracji do usługi Lifecycle Services                          | Globalna         |
+| <span data-ttu-id="c199d-149">ER Konfigurowanie miejsc docelowych</span><span class="sxs-lookup"><span data-stu-id="c199d-149">ER Configure destinations</span></span>                                                  | <span data-ttu-id="c199d-150">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-150">Global</span></span>         |
+| <span data-ttu-id="c199d-151">ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML</span><span class="sxs-lookup"><span data-stu-id="c199d-151">ER Design a configuration for generating reports in OPENXML format</span></span>         | <span data-ttu-id="c199d-152">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-152">Global</span></span>         |
+| <span data-ttu-id="c199d-153">ER Generowanie dokumentów elektronicznych dla płatności przy użyciu konfiguracji formatu</span><span class="sxs-lookup"><span data-stu-id="c199d-153">ER Generate electronic documents for payments using a format configuration</span></span> | <span data-ttu-id="c199d-154">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-154">Global</span></span>         |
+| <span data-ttu-id="c199d-155">ER Importowanie konfiguracji z usługi Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="c199d-155">ER Import a configuration from Lifecycle Services</span></span>                          | <span data-ttu-id="c199d-156">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-156">Global</span></span>         |
+| <span data-ttu-id="c199d-157">**\***ER Wybór dostawcy usług</span><span class="sxs-lookup"><span data-stu-id="c199d-157">**\***ER Select service provider</span></span>                                           | <span data-ttu-id="c199d-158">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-158">Global</span></span>         |
+| <span data-ttu-id="c199d-159">ER Uaktualnianie formatu poprzez przyjęcie jego nowej wersji bazowej</span><span class="sxs-lookup"><span data-stu-id="c199d-159">ER Upgrade your format by adopting of new base version of that format</span></span>      | <span data-ttu-id="c199d-160">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-160">Global</span></span>         |
+| <span data-ttu-id="c199d-161">ER Przekazywanie konfiguracji do usługi Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="c199d-161">ER Upload a configuration into Lifecycle Services</span></span>                          | <span data-ttu-id="c199d-162">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-162">Global</span></span>         |
 
-### <a name="human-capital-management"></a>Zarządzanie kapitałem ludzkim
+### <a name="human-capital-management"></a><span data-ttu-id="c199d-163">Zarządzanie kapitałem ludzkim</span><span class="sxs-lookup"><span data-stu-id="c199d-163">Human capital management</span></span>
 
-| Wiersz BPM                                    | Kraj/region |
+| <span data-ttu-id="c199d-164">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-164">BPM line</span></span>                                    | <span data-ttu-id="c199d-165">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-165">Country/region</span></span> |
 |---------------------------------------------|----------------|
-| Dystrybucja kwestionariusza z wykorzystaniem harmonogramu | Globalna         |
-| Konfigurowanie stanowisk                            | Globalna         |
+| <span data-ttu-id="c199d-166">Dystrybucja kwestionariusza z wykorzystaniem harmonogramu</span><span class="sxs-lookup"><span data-stu-id="c199d-166">Distribute a questionnaire using scheduling</span></span> | <span data-ttu-id="c199d-167">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-167">Global</span></span>         |
+| <span data-ttu-id="c199d-168">Konfigurowanie stanowisk</span><span class="sxs-lookup"><span data-stu-id="c199d-168">Set up positions</span></span>                            | <span data-ttu-id="c199d-169">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-169">Global</span></span>         |
 
-### <a name="inventory-management"></a>Zarządzanie zapasami
+### <a name="inventory-management"></a><span data-ttu-id="c199d-170">Zarządzanie zapasami</span><span class="sxs-lookup"><span data-stu-id="c199d-170">Inventory management</span></span>
 
-| Wiersz BPM                                           | Kraj/region |
+| <span data-ttu-id="c199d-171">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-171">BPM line</span></span>                                           | <span data-ttu-id="c199d-172">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-172">Country/region</span></span> |
 |----------------------------------------------------|----------------|
-| Definiowanie domyślnych ustawień zamówień na towary            | Globalna         |
-| Konfigurowanie warunków wstępnych zarządzania brakiem zgodności | Globalna         |
+| <span data-ttu-id="c199d-173">Definiowanie domyślnych ustawień zamówień na towary</span><span class="sxs-lookup"><span data-stu-id="c199d-173">Define default order settings for items</span></span>            | <span data-ttu-id="c199d-174">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-174">Global</span></span>         |
+| <span data-ttu-id="c199d-175">Konfigurowanie warunków wstępnych zarządzania brakiem zgodności</span><span class="sxs-lookup"><span data-stu-id="c199d-175">Set up prerequisites for nonconformance management</span></span> | <span data-ttu-id="c199d-176">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-176">Global</span></span>         |
 
-### <a name="manufacturing"></a>Wytwarzanie
+### <a name="manufacturing"></a><span data-ttu-id="c199d-177">Wytwarzanie</span><span class="sxs-lookup"><span data-stu-id="c199d-177">Manufacturing</span></span>
 
-| Wiersz BPM                                           | Kraj/region |
+| <span data-ttu-id="c199d-178">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-178">BPM line</span></span>                                           | <span data-ttu-id="c199d-179">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-179">Country/region</span></span> |
 |----------------------------------------------------|----------------|
-| Kopiowanie produktów towarzyszących z istniejącej formuły          | Globalna         |
-| Tworzenie reguły Kanban dla zdarzenia wiersza BOM                | Globalna         |
-| Tworzenie zastępczej reguły Kanban                   | Globalna         |
-| Tworzenie reguły Kanban dla wypłat                    | Globalna         |
-| Wykonywanie zadań procesu w systemie Kanban                        | Globalna         |
-| Planowanie zlecenia produkcyjnego                        | Globalna         |
-| Określanie sekwencji zadań produkcji procesowej | Globalna         |
-| Aktualizacja stanu w systemie Kanban                               | Globalna         |
+| <span data-ttu-id="c199d-180">Kopiowanie produktów towarzyszących z istniejącej formuły</span><span class="sxs-lookup"><span data-stu-id="c199d-180">Copy co-products from an existing formula</span></span>          | <span data-ttu-id="c199d-181">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-181">Global</span></span>         |
+| <span data-ttu-id="c199d-182">Tworzenie reguły Kanban dla zdarzenia wiersza BOM</span><span class="sxs-lookup"><span data-stu-id="c199d-182">Create a BOM line event kanban rule</span></span>                | <span data-ttu-id="c199d-183">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-183">Global</span></span>         |
+| <span data-ttu-id="c199d-184">Tworzenie zastępczej reguły Kanban</span><span class="sxs-lookup"><span data-stu-id="c199d-184">Create a replacement kanban rule</span></span>                   | <span data-ttu-id="c199d-185">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-185">Global</span></span>         |
+| <span data-ttu-id="c199d-186">Tworzenie reguły Kanban dla wypłat</span><span class="sxs-lookup"><span data-stu-id="c199d-186">Create a withdrawal kanban rule</span></span>                    | <span data-ttu-id="c199d-187">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-187">Global</span></span>         |
+| <span data-ttu-id="c199d-188">Wykonywanie zadań procesu w systemie Kanban</span><span class="sxs-lookup"><span data-stu-id="c199d-188">Execute kanban process jobs</span></span>                        | <span data-ttu-id="c199d-189">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-189">Global</span></span>         |
+| <span data-ttu-id="c199d-190">Planowanie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="c199d-190">Schedule a production order</span></span>                        | <span data-ttu-id="c199d-191">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-191">Global</span></span>         |
+| <span data-ttu-id="c199d-192">Określanie sekwencji zadań produkcji procesowej</span><span class="sxs-lookup"><span data-stu-id="c199d-192">Sequence production jobs for process manufacturing</span></span> | <span data-ttu-id="c199d-193">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-193">Global</span></span>         |
+| <span data-ttu-id="c199d-194">Aktualizacja stanu w systemie Kanban</span><span class="sxs-lookup"><span data-stu-id="c199d-194">Update kanban status</span></span>                               | <span data-ttu-id="c199d-195">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-195">Global</span></span>         |
 
-### <a name="master-planning"></a>Planowanie główne
+### <a name="master-planning"></a><span data-ttu-id="c199d-196">Planowanie główne</span><span class="sxs-lookup"><span data-stu-id="c199d-196">Master planning</span></span>
 
-| Wiersz BPM                      | Kraj/region |
+| <span data-ttu-id="c199d-197">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-197">BPM line</span></span>                      | <span data-ttu-id="c199d-198">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-198">Country/region</span></span> |
 |-------------------------------|----------------|
-| Tworzenie planu dla oddziału      | Globalna         |
-| Tworzenie harmonogramu dla oddziału        | Globalna         |
-| Monitorowanie przebiegu planowania głównego | Globalna         |
+| <span data-ttu-id="c199d-199">Tworzenie planu dla oddziału</span><span class="sxs-lookup"><span data-stu-id="c199d-199">Create a plan for a site</span></span>      | <span data-ttu-id="c199d-200">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-200">Global</span></span>         |
+| <span data-ttu-id="c199d-201">Tworzenie harmonogramu dla oddziału</span><span class="sxs-lookup"><span data-stu-id="c199d-201">Create a site schedule</span></span>        | <span data-ttu-id="c199d-202">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-202">Global</span></span>         |
+| <span data-ttu-id="c199d-203">Monitorowanie przebiegu planowania głównego</span><span class="sxs-lookup"><span data-stu-id="c199d-203">Monitor a master planning run</span></span> | <span data-ttu-id="c199d-204">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-204">Global</span></span>         |
 
-### <a name="organization-administration"></a>Administrowanie organizacją
+### <a name="organization-administration"></a><span data-ttu-id="c199d-205">Administrowanie organizacją</span><span class="sxs-lookup"><span data-stu-id="c199d-205">Organization administration</span></span>
 
-| Wiersz BPM                                       | Kraj/region |
+| <span data-ttu-id="c199d-206">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-206">BPM line</span></span>                                       | <span data-ttu-id="c199d-207">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-207">Country/region</span></span> |
 |------------------------------------------------|----------------|
-| Tworzenie firmy                          | Globalna         |
-| Tworzenie hierarchii organizacyjnej             | Globalna         |
-| Konfigurowanie indywidualnych sekwencji identyfikatorów | Globalna         |
+| <span data-ttu-id="c199d-208">Tworzenie firmy</span><span class="sxs-lookup"><span data-stu-id="c199d-208">Create a legal entity</span></span>                          | <span data-ttu-id="c199d-209">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-209">Global</span></span>         |
+| <span data-ttu-id="c199d-210">Tworzenie hierarchii organizacyjnej</span><span class="sxs-lookup"><span data-stu-id="c199d-210">Create an organizational hierarchy</span></span>             | <span data-ttu-id="c199d-211">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-211">Global</span></span>         |
+| <span data-ttu-id="c199d-212">Konfigurowanie indywidualnych sekwencji identyfikatorów</span><span class="sxs-lookup"><span data-stu-id="c199d-212">Set up number sequences on an individual basis</span></span> | <span data-ttu-id="c199d-213">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-213">Global</span></span>         |
 
-### <a name="procurement-and-sourcing"></a>Zaopatrzenie i sourcing
+### <a name="procurement-and-sourcing"></a><span data-ttu-id="c199d-214">Zaopatrzenie i sourcing</span><span class="sxs-lookup"><span data-stu-id="c199d-214">Procurement and sourcing</span></span>
 
-| Wiersz BPM                                        | Kraj/region |
+| <span data-ttu-id="c199d-215">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-215">BPM line</span></span>                                        | <span data-ttu-id="c199d-216">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-216">Country/region</span></span> |
 |-------------------------------------------------|----------------|
-| Zatwierdzanie dostawców określonych produktów           | Globalna         |
-| Tworzenie zamówienia zakupu                         | Globalna         |
-| Tworzenie zapytania ofertowego                  | Globalna         |
-| Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień | Globalna         |
+| <span data-ttu-id="c199d-217">Zatwierdzanie dostawców określonych produktów</span><span class="sxs-lookup"><span data-stu-id="c199d-217">Approve vendors for specific products</span></span>           | <span data-ttu-id="c199d-218">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-218">Global</span></span>         |
+| <span data-ttu-id="c199d-219">Tworzenie zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="c199d-219">Create a purchase order</span></span>                         | <span data-ttu-id="c199d-220">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-220">Global</span></span>         |
+| <span data-ttu-id="c199d-221">Tworzenie zapytania ofertowego</span><span class="sxs-lookup"><span data-stu-id="c199d-221">Create a request for quotation</span></span>                  | <span data-ttu-id="c199d-222">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-222">Global</span></span>         |
+| <span data-ttu-id="c199d-223">Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień</span><span class="sxs-lookup"><span data-stu-id="c199d-223">Enter and compare RFQ bids, and award contracts</span></span> | <span data-ttu-id="c199d-224">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-224">Global</span></span>         |
 
-### <a name="product-information-and-configuration"></a>Dane i konfiguracja produktu
+### <a name="product-information-and-configuration"></a><span data-ttu-id="c199d-225">Dane i konfiguracja produktu</span><span class="sxs-lookup"><span data-stu-id="c199d-225">Product information and configuration</span></span>
 
-| Wiersz BPM                                                 | Kraj/region |
+| <span data-ttu-id="c199d-226">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-226">BPM line</span></span>                                                 | <span data-ttu-id="c199d-227">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-227">Country/region</span></span> |
 |----------------------------------------------------------|----------------|
-| Tworzenie nowego produktu                                     | Globalna         |
-| Tworzenie konfiguracji opartych na wymiarach                    | Globalna         |
-| Tworzenie wstępnie zdefiniowanych wariantów produktu                       | Globalna         |
-| Tworzenie kryteriów wyboru ceny sprzedaży                    | Globalna         |
-| Wpisywanie zamówień dla produktów, które można konfigurować                   | Globalna         |
-| Konfigurowanie wyceny konfigurowalnych produktów opartej na atrybutach | Globalna         |
+| <span data-ttu-id="c199d-228">Tworzenie nowego produktu</span><span class="sxs-lookup"><span data-stu-id="c199d-228">Create a new product</span></span>                                     | <span data-ttu-id="c199d-229">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-229">Global</span></span>         |
+| <span data-ttu-id="c199d-230">Tworzenie konfiguracji opartych na wymiarach</span><span class="sxs-lookup"><span data-stu-id="c199d-230">Create dimension-based configurations</span></span>                    | <span data-ttu-id="c199d-231">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-231">Global</span></span>         |
+| <span data-ttu-id="c199d-232">Tworzenie wstępnie zdefiniowanych wariantów produktu</span><span class="sxs-lookup"><span data-stu-id="c199d-232">Create predefined product variants</span></span>                       | <span data-ttu-id="c199d-233">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-233">Global</span></span>         |
+| <span data-ttu-id="c199d-234">Tworzenie kryteriów wyboru ceny sprzedaży</span><span class="sxs-lookup"><span data-stu-id="c199d-234">Create sales price selection criteria</span></span>                    | <span data-ttu-id="c199d-235">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-235">Global</span></span>         |
+| <span data-ttu-id="c199d-236">Wpisywanie zamówień dla produktów, które można konfigurować</span><span class="sxs-lookup"><span data-stu-id="c199d-236">Enter orders for configurable products</span></span>                   | <span data-ttu-id="c199d-237">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-237">Global</span></span>         |
+| <span data-ttu-id="c199d-238">Konfigurowanie wyceny konfigurowalnych produktów opartej na atrybutach</span><span class="sxs-lookup"><span data-stu-id="c199d-238">Set up attribute-based pricing for configurable products</span></span> | <span data-ttu-id="c199d-239">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-239">Global</span></span>         |
 
-### <a name="retail-and-commerce"></a>Handel detaliczny i inny
+### <a name="retail-and-commerce"></a><span data-ttu-id="c199d-240">Handel detaliczny i inny</span><span class="sxs-lookup"><span data-stu-id="c199d-240">Retail and commerce</span></span>
 
-| Wiersz BPM                                                           | Kraj/region |
+| <span data-ttu-id="c199d-241">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-241">BPM line</span></span>                                                           | <span data-ttu-id="c199d-242">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-242">Country/region</span></span> |
 |--------------------------------------------------------------------|----------------|
-| Przypisywanie zadań                                                       | Globalna         |
-| Konfigurowanie i realizowanie zadań aktualizacji zapasów                | Globalna         |
-| Produkty po przeładunku kompletacyjnym z magazynu odbierającego do sklepu              | Globalna         |
-| Dystrybucja produktów z centrum dystrybucji do sklepu za pomocą dystrybucji na zamówienie | Globalna         |
+| <span data-ttu-id="c199d-243">Przypisywanie zadań</span><span class="sxs-lookup"><span data-stu-id="c199d-243">Assign tasks</span></span>                                                       | <span data-ttu-id="c199d-244">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-244">Global</span></span>         |
+| <span data-ttu-id="c199d-245">Konfigurowanie i realizowanie zadań aktualizacji zapasów</span><span class="sxs-lookup"><span data-stu-id="c199d-245">Configure and run recurrent job to update inventory</span></span>                | <span data-ttu-id="c199d-246">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-246">Global</span></span>         |
+| <span data-ttu-id="c199d-247">Produkty po przeładunku kompletacyjnym z magazynu odbierającego do sklepu</span><span class="sxs-lookup"><span data-stu-id="c199d-247">Cross dock products from receiving warehouse to store</span></span>              | <span data-ttu-id="c199d-248">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-248">Global</span></span>         |
+| <span data-ttu-id="c199d-249">Dystrybucja produktów z centrum dystrybucji do sklepu za pomocą dystrybucji na zamówienie</span><span class="sxs-lookup"><span data-stu-id="c199d-249">Push products from distribution center to store using buyer's push</span></span> | <span data-ttu-id="c199d-250">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-250">Global</span></span>         |
 
-### <a name="security"></a>Zabezpieczenia
+### <a name="security"></a><span data-ttu-id="c199d-251">Zabezpieczenia</span><span class="sxs-lookup"><span data-stu-id="c199d-251">Security</span></span>
 
-| Wiersz BPM                       | Kraj/region |
+| <span data-ttu-id="c199d-252">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-252">BPM line</span></span>                       | <span data-ttu-id="c199d-253">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-253">Country/region</span></span> |
 |--------------------------------|----------------|
-| Przypisywanie użytkowników do ról zabezpieczeń | Globalna         |
+| <span data-ttu-id="c199d-254">Przypisywanie użytkowników do ról zabezpieczeń</span><span class="sxs-lookup"><span data-stu-id="c199d-254">Assign users to security roles</span></span> | <span data-ttu-id="c199d-255">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-255">Global</span></span>         |
 
-### <a name="sales-tax"></a>Podatek
+### <a name="sales-tax"></a><span data-ttu-id="c199d-256">Podatek</span><span class="sxs-lookup"><span data-stu-id="c199d-256">Sales tax</span></span>
 
-| Wiersz BPM                                           | Kraj/region |
+| <span data-ttu-id="c199d-257">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-257">BPM line</span></span>                                           | <span data-ttu-id="c199d-258">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-258">Country/region</span></span> |
 |----------------------------------------------------|----------------|
-| Obliczanie i korygowanie podatku na fakturze od dostawcy | Globalna         |
-| Tworzenie płatności podatku                         | Globalna         |
-| Tworzenie transakcji podatku w dokumentach         | Globalna         |
-| Konfigurowanie grupy księgowania w księdze da podatku         | Globalna         |
-| Konfigurowanie urzędów skarbowych                       | Globalna         |
-| Ustawianie kodów podatków                             | Globalna         |
-| Konfigurowanie grup podatków i grup podatków dla towarów  | Globalna         |
-| Ustawianie kodów raportowania podatku                   | Globalna         |
-| Ustawianie okresów rozliczania podatku                | Globalna         |
-| Konfigurowanie potrąconej zaliczki na podatek                             | Globalna         |
-| Wyświetl zaksięgowane transakcje podatkowe                 | Globalna         |
+| <span data-ttu-id="c199d-259">Obliczanie i korygowanie podatku na fakturze od dostawcy</span><span class="sxs-lookup"><span data-stu-id="c199d-259">Calculate and adjust sales tax on a vendor invoice</span></span> | <span data-ttu-id="c199d-260">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-260">Global</span></span>         |
+| <span data-ttu-id="c199d-261">Tworzenie płatności podatku</span><span class="sxs-lookup"><span data-stu-id="c199d-261">Create a sales tax payment</span></span>                         | <span data-ttu-id="c199d-262">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-262">Global</span></span>         |
+| <span data-ttu-id="c199d-263">Tworzenie transakcji podatku w dokumentach</span><span class="sxs-lookup"><span data-stu-id="c199d-263">Create sales tax transactions on documents</span></span>         | <span data-ttu-id="c199d-264">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-264">Global</span></span>         |
+| <span data-ttu-id="c199d-265">Konfigurowanie grupy księgowania w księdze da podatku</span><span class="sxs-lookup"><span data-stu-id="c199d-265">Set up ledger posting groups for sales tax</span></span>         | <span data-ttu-id="c199d-266">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-266">Global</span></span>         |
+| <span data-ttu-id="c199d-267">Konfigurowanie urzędów skarbowych</span><span class="sxs-lookup"><span data-stu-id="c199d-267">Set up sales tax authorities</span></span>                       | <span data-ttu-id="c199d-268">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-268">Global</span></span>         |
+| <span data-ttu-id="c199d-269">Ustawianie kodów podatków</span><span class="sxs-lookup"><span data-stu-id="c199d-269">Set up sales tax codes</span></span>                             | <span data-ttu-id="c199d-270">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-270">Global</span></span>         |
+| <span data-ttu-id="c199d-271">Konfigurowanie grup podatków i grup podatków dla towarów</span><span class="sxs-lookup"><span data-stu-id="c199d-271">Set up sales tax groups and item sales tax groups</span></span>  | <span data-ttu-id="c199d-272">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-272">Global</span></span>         |
+| <span data-ttu-id="c199d-273">Ustawianie kodów raportowania podatku</span><span class="sxs-lookup"><span data-stu-id="c199d-273">Set up sales tax reporting codes</span></span>                   | <span data-ttu-id="c199d-274">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-274">Global</span></span>         |
+| <span data-ttu-id="c199d-275">Ustawianie okresów rozliczania podatku</span><span class="sxs-lookup"><span data-stu-id="c199d-275">Set up sales tax settlement periods</span></span>                | <span data-ttu-id="c199d-276">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-276">Global</span></span>         |
+| <span data-ttu-id="c199d-277">Konfigurowanie potrąconej zaliczki na podatek</span><span class="sxs-lookup"><span data-stu-id="c199d-277">Set up withholding tax</span></span>                             | <span data-ttu-id="c199d-278">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-278">Global</span></span>         |
+| <span data-ttu-id="c199d-279">Wyświetl zaksięgowane transakcje podatkowe</span><span class="sxs-lookup"><span data-stu-id="c199d-279">View posted sales tax transactions</span></span>                 | <span data-ttu-id="c199d-280">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-280">Global</span></span>         |
 
-### <a name="security"></a>Zabezpieczenia
+### <a name="security"></a><span data-ttu-id="c199d-281">Zabezpieczenia</span><span class="sxs-lookup"><span data-stu-id="c199d-281">Security</span></span>
 
-| Wiersz BPM                                                | Kraj/region |
+| <span data-ttu-id="c199d-282">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-282">BPM line</span></span>                                                | <span data-ttu-id="c199d-283">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-283">Country/region</span></span> |
 |---------------------------------------------------------|----------------|
-| Tworzenie nowych użytkowników                                        | Globalna         |
-| Identyfikowanie i rozwiązywanie konfliktów w podziale obowiązków | Globalna         |
-| Konfigurowanie podziału obowiązków                            | Globalna         |
+| <span data-ttu-id="c199d-284">Tworzenie nowych użytkowników</span><span class="sxs-lookup"><span data-stu-id="c199d-284">Create new users</span></span>                                        | <span data-ttu-id="c199d-285">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-285">Global</span></span>         |
+| <span data-ttu-id="c199d-286">Identyfikowanie i rozwiązywanie konfliktów w podziale obowiązków</span><span class="sxs-lookup"><span data-stu-id="c199d-286">Identify and resolve conflicts in segregation of duties</span></span> | <span data-ttu-id="c199d-287">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-287">Global</span></span>         |
+| <span data-ttu-id="c199d-288">Konfigurowanie podziału obowiązków</span><span class="sxs-lookup"><span data-stu-id="c199d-288">Set up segregation of duties</span></span>                            | <span data-ttu-id="c199d-289">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-289">Global</span></span>         |
 
-### <a name="warehouse-and-transportation"></a>Magazyn i transport
+### <a name="warehouse-and-transportation"></a><span data-ttu-id="c199d-290">Magazyn i transport</span><span class="sxs-lookup"><span data-stu-id="c199d-290">Warehouse and transportation</span></span>
 
-| Wiersz BPM                                                            | Kraj/region |
+| <span data-ttu-id="c199d-291">Wiersz BPM</span><span class="sxs-lookup"><span data-stu-id="c199d-291">BPM line</span></span>                                                            | <span data-ttu-id="c199d-292">Kraj/region</span><span class="sxs-lookup"><span data-stu-id="c199d-292">Country/region</span></span> |
 |---------------------------------------------------------------------|----------------|
-| Konfigurowanie przetwarzania grupy czynności                                           | Globalna         |
-| **\***Zgłaszanie wyrobów gotowych do lokalizacji niekontrolowanej przez numer identyfikacyjny | Globalna         |
-| Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości                              | Globalna         |
-| Ustawianie konteneryzacji                                             | Globalna         |
-| Konfigurowanie pakowania ręcznego                                               | Globalna         |
-| Konfigurowanie ograniczeń transportu towaru                       | Globalna         |
-| **\***Konfigurowanie zasad pracy magazynowej                                | Globalna         |
+| <span data-ttu-id="c199d-293">Konfigurowanie przetwarzania grupy czynności</span><span class="sxs-lookup"><span data-stu-id="c199d-293">Configure wave processing</span></span>                                           | <span data-ttu-id="c199d-294">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-294">Global</span></span>         |
+| <span data-ttu-id="c199d-295">**\***Zgłaszanie wyrobów gotowych do lokalizacji niekontrolowanej przez numer identyfikacyjny</span><span class="sxs-lookup"><span data-stu-id="c199d-295">**\***Report as finished to a non-license plate controlled location</span></span> | <span data-ttu-id="c199d-296">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-296">Global</span></span>         |
+| <span data-ttu-id="c199d-297">Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości</span><span class="sxs-lookup"><span data-stu-id="c199d-297">Set up a min-max replenishment process</span></span>                              | <span data-ttu-id="c199d-298">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-298">Global</span></span>         |
+| <span data-ttu-id="c199d-299">Ustawianie konteneryzacji</span><span class="sxs-lookup"><span data-stu-id="c199d-299">Set up containerization</span></span>                                             | <span data-ttu-id="c199d-300">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-300">Global</span></span>         |
+| <span data-ttu-id="c199d-301">Konfigurowanie pakowania ręcznego</span><span class="sxs-lookup"><span data-stu-id="c199d-301">Set up manual packing</span></span>                                               | <span data-ttu-id="c199d-302">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-302">Global</span></span>         |
+| <span data-ttu-id="c199d-303">Konfigurowanie ograniczeń transportu towaru</span><span class="sxs-lookup"><span data-stu-id="c199d-303">Set up transportation constraints for an item</span></span>                       | <span data-ttu-id="c199d-304">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-304">Global</span></span>         |
+| <span data-ttu-id="c199d-305">**\***Konfigurowanie zasad pracy magazynowej</span><span class="sxs-lookup"><span data-stu-id="c199d-305">**\***Set up warehouse work policies</span></span>                                | <span data-ttu-id="c199d-306">Globalna</span><span class="sxs-lookup"><span data-stu-id="c199d-306">Global</span></span>         |
 
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="see-also"></a><span data-ttu-id="c199d-307">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="c199d-307">See also</span></span>
 --------
 
-[Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)
+[<span data-ttu-id="c199d-308">Nowe przewodniki po zadaniach (luty 2016 r.)</span><span class="sxs-lookup"><span data-stu-id="c199d-308">New Task guides (February 2016)</span></span>](new-task-guides-available-february-2016.md)
 
-[Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)](new-updated-task-guides-available-august-2016.md)
+[<span data-ttu-id="c199d-309">Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)</span><span class="sxs-lookup"><span data-stu-id="c199d-309">New or updated Task guides (August 2016)</span></span>](new-updated-task-guides-available-august-2016.md)
 
-[Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)](new-task-guides-november-2016.md)
+[<span data-ttu-id="c199d-310">Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)</span><span class="sxs-lookup"><span data-stu-id="c199d-310">New or updated Task guides (November 2016)</span></span>](new-task-guides-november-2016.md)
 
 
 

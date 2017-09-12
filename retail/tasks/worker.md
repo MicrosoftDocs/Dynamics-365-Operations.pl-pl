@@ -17,43 +17,43 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: f241899df89377e3c08c94663b90ee9d0ce750dc
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 09c5d263f3ad0bade6b7dd8f099dd3f62a1ddf5d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-a-worker"></a>Konfigurowanie pracownika
+# <a name="configure-a-worker"></a><span data-ttu-id="ba86f-103">Konfigurowanie pracownika</span><span class="sxs-lookup"><span data-stu-id="ba86f-103">Configure a worker</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ta procedura ilustruje sposób konfigurowania pracownika sieci sprzedaży jako przedstawiciela handlowego, który jest uprawniony do prowizji od sprzedaży w punkcie sprzedaży. Procedura wykorzystuje dane firmy demonstracyjnej USRT.
+<span data-ttu-id="ba86f-104">Ta procedura ilustruje sposób konfigurowania pracownika sieci sprzedaży jako przedstawiciela handlowego, który jest uprawniony do prowizji od sprzedaży w punkcie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="ba86f-104">This procedure demonstrates how to configure a retail worker as a sales representative who is eligible for commission on sales in POS.</span></span> <span data-ttu-id="ba86f-105">Procedura wykorzystuje dane firmy demonstracyjnej USRT.</span><span class="sxs-lookup"><span data-stu-id="ba86f-105">This procedure uses the USRT demo data company.</span></span>
 
 
-## <a name="create-a-commission-sales-group-for-the-worker"></a>Tworzenie grupy sprzedaży prowizyjnej dla pracownika
-1. Wybierz kolejno opcje Sprzedaż i marketing > Prowizje > Grupy sprzedaży.
-    * Pracowników można przypisać do jednej lub więcej grup sprzedaży. W punkcie sprzedaży można wybierać dowolne grupy sprzedaży zawierające pracowników z książki adresowej sklepu.  
-2. Kliknij przycisk Nowy.
-3. W polu Grupa wpisz wartość.
-4. W polu Nazwa wpisz wartość.
-5. Kliknij przycisk Zapisz.
-6. W okienku akcji kliknij pozycję Ogólne.
-7. Kliknij opcję Przedstawiciel handlowy.
-    * Grupa sprzedaży może zawierać więcej niż jednego pracownika. Prowizje można dzielić między pracowników na podstawie tego, jak zdefiniowano udział w prowizji.  
-8. W polu Nazwa wprowadź lub wybierz wartość.
-9. W polu Wielkość prowizji wprowadź liczbę.
-10. Kliknij przycisk Zapisz.
-11. Zamknij stronę.
-12. Zamknij stronę.
+## <a name="create-a-commission-sales-group-for-the-worker"></a><span data-ttu-id="ba86f-106">Tworzenie grupy sprzedaży prowizyjnej dla pracownika</span><span class="sxs-lookup"><span data-stu-id="ba86f-106">Create a commission sales group for the worker</span></span>
+1. <span data-ttu-id="ba86f-107">Wybierz kolejno opcje Sprzedaż i marketing > Prowizje > Grupy sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="ba86f-107">Go to Sales and marketing > Commissions > Sales groups.</span></span>
+    * <span data-ttu-id="ba86f-108">Pracowników można przypisać do jednej lub więcej grup sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="ba86f-108">Workers can be assigned to one or more sales groups.</span></span> <span data-ttu-id="ba86f-109">W punkcie sprzedaży można wybierać dowolne grupy sprzedaży zawierające pracowników z książki adresowej sklepu.</span><span class="sxs-lookup"><span data-stu-id="ba86f-109">In POS, you can choose any sales group that contains workers from the store's address book.</span></span>  
+2. <span data-ttu-id="ba86f-110">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="ba86f-110">Click New.</span></span>
+3. <span data-ttu-id="ba86f-111">W polu Grupa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="ba86f-111">In the Group field, type a value.</span></span>
+4. <span data-ttu-id="ba86f-112">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="ba86f-112">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="ba86f-113">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="ba86f-113">Click Save.</span></span>
+6. <span data-ttu-id="ba86f-114">W okienku akcji kliknij pozycję Ogólne.</span><span class="sxs-lookup"><span data-stu-id="ba86f-114">On the Action Pane, click General.</span></span>
+7. <span data-ttu-id="ba86f-115">Kliknij opcję Przedstawiciel handlowy.</span><span class="sxs-lookup"><span data-stu-id="ba86f-115">Click Sales rep.</span></span>
+    * <span data-ttu-id="ba86f-116">Grupa sprzedaży może zawierać więcej niż jednego pracownika.</span><span class="sxs-lookup"><span data-stu-id="ba86f-116">A sales group can contain more than one worker.</span></span> <span data-ttu-id="ba86f-117">Prowizje można dzielić między pracowników na podstawie tego, jak zdefiniowano udział w prowizji.</span><span class="sxs-lookup"><span data-stu-id="ba86f-117">Commissions can be split between workers based on how you define the commission share.</span></span>  
+8. <span data-ttu-id="ba86f-118">W polu Nazwa wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="ba86f-118">In the Name field, enter or select a value.</span></span>
+9. <span data-ttu-id="ba86f-119">W polu Wielkość prowizji wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="ba86f-119">In the Commission share field, enter a number.</span></span>
+10. <span data-ttu-id="ba86f-120">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="ba86f-120">Click Save.</span></span>
+11. <span data-ttu-id="ba86f-121">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="ba86f-121">Close the page.</span></span>
+12. <span data-ttu-id="ba86f-122">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="ba86f-122">Close the page.</span></span>
 
-## <a name="assign-the-workers-default-sales-group"></a>Przypisywanie pracowników do domyślnej grupy sprzedaży
-1. Wybierz kolejno opcje Handel detaliczny i inny > Pracownicy > Wszyscy pracownicy.
-2. Na liście znajdź i zaznacz odpowiedni rekord.
-3. Na liście kliknij łącze w wybranym wierszu.
-4. Kliknij kartę Detal.
-    * Pracownika można przypisać do domyślnej grupy sprzedaży. Domyślna grupa sprzedaży zostanie automatycznie dodana do wierszy sprzedaży w punkcie sprzedaży, jeśli ta opcja jest włączona w profilu funkcji sklepu.  
-5. Kliknij przycisk Edytuj.
-6. W polu Grupa domyślna wprowadź lub wybierz wartość.
-7. Kliknij przycisk Zapisz.
+## <a name="assign-the-workers-default-sales-group"></a><span data-ttu-id="ba86f-123">Przypisywanie pracowników do domyślnej grupy sprzedaży</span><span class="sxs-lookup"><span data-stu-id="ba86f-123">Assign the workers default sales group</span></span>
+1. <span data-ttu-id="ba86f-124">Wybierz kolejno opcje Handel detaliczny i inny > Pracownicy > Wszyscy pracownicy.</span><span class="sxs-lookup"><span data-stu-id="ba86f-124">Go to Retail and commerce > Employees > Workers.</span></span>
+2. <span data-ttu-id="ba86f-125">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="ba86f-125">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="ba86f-126">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="ba86f-126">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="ba86f-127">Kliknij kartę Detal.</span><span class="sxs-lookup"><span data-stu-id="ba86f-127">Click the Retail tab.</span></span>
+    * <span data-ttu-id="ba86f-128">Pracownika można przypisać do domyślnej grupy sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="ba86f-128">A worker can be assigned to a default sales group.</span></span> <span data-ttu-id="ba86f-129">Domyślna grupa sprzedaży zostanie automatycznie dodana do wierszy sprzedaży w punkcie sprzedaży, jeśli ta opcja jest włączona w profilu funkcji sklepu.</span><span class="sxs-lookup"><span data-stu-id="ba86f-129">The default sales group will be automatically added to sales lines in POS if the option is enabled in the functionality profile for the store.</span></span>  
+5. <span data-ttu-id="ba86f-130">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="ba86f-130">Click Edit.</span></span>
+6. <span data-ttu-id="ba86f-131">W polu Grupa domyślna wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="ba86f-131">In the Default group field, enter or select a value.</span></span>
+7. <span data-ttu-id="ba86f-132">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="ba86f-132">Click Save.</span></span>
 
 

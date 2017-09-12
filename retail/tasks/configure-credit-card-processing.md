@@ -17,49 +17,49 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 10fc776641d0c7bc2576be13a4116281ac3a3768
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c8e7bfbf6b51aca9cf8a7f800ac7db22c0330d00
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-credit-card-processing"></a>Konfigurowanie przetwarzania karty kredytowej
+# <a name="configure-credit-card-processing"></a><span data-ttu-id="1419d-103">Konfigurowanie przetwarzania karty kredytowej</span><span class="sxs-lookup"><span data-stu-id="1419d-103">Configure credit card processing</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ta procedura zawiera instruktaż wyświetlania listy dostawców płatności i konfigurowania konta płatności dla rozrachunków z odbiorcami. Procedura używa danych firmy demonstracyjnej USRT i jest przeznaczona dla administratorów oraz specjalistów IT.
+<span data-ttu-id="1419d-104">Ta procedura zawiera instruktaż wyświetlania listy dostawców płatności i konfigurowania konta płatności dla rozrachunków z odbiorcami.</span><span class="sxs-lookup"><span data-stu-id="1419d-104">This procedure walks through how to view the list of payment providers and how to configure a payment account for accounts receivable.</span></span> <span data-ttu-id="1419d-105">Procedura używa danych firmy demonstracyjnej USRT i jest przeznaczona dla administratorów oraz specjalistów IT.</span><span class="sxs-lookup"><span data-stu-id="1419d-105">This procedure uses the USRT company in demo data and is intended for Administrators and IT Professionals.</span></span>
 
 
-## <a name="view-a-list-of-payment-providers"></a>Wyświetlanie listy dostawców płatności
-1. Wybierz kolejno opcje Rozrachunki z odbiorcami > Ustawienia płatności > Usługi płatności.
-2. Kliknij opcję Wyświetl dostępnych dostawców.
+## <a name="view-a-list-of-payment-providers"></a><span data-ttu-id="1419d-106">Wyświetlanie listy dostawców płatności</span><span class="sxs-lookup"><span data-stu-id="1419d-106">View a list of payment providers</span></span>
+1. <span data-ttu-id="1419d-107">Wybierz kolejno opcje Rozrachunki z odbiorcami > Ustawienia płatności > Usługi płatności.</span><span class="sxs-lookup"><span data-stu-id="1419d-107">Go to Accounts receivable > Payments setup > Payment services.</span></span>
+2. <span data-ttu-id="1419d-108">Kliknij opcję Wyświetl dostępnych dostawców.</span><span class="sxs-lookup"><span data-stu-id="1419d-108">Click View available providers.</span></span>
 
-## <a name="configure-payment-account"></a>Konfigurowanie konta płatności
-1. Kliknij przycisk Nowy.
-2. W polu Usługa płatności wpisz wartość.
-3. W polu Łącznik płatności wybierz opcję.
-4. Przełącz rozwinięcie sekcji Konto usługi płatności.
-5. W polu Środowisko: wpisz „PROD”.
-6. Kliknij opcję Typy kart kredytowych.
-7. W polu Arkusz płatności kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-8. Na liście kliknij łącze w wybranym wierszu.
-9. Kliknij przycisk Dodaj.
-10. W polu Waluta wpisz wartość.
-11. Na liście znajdź i zaznacz odpowiedni rekord.
-12. W polu Arkusz płatności kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-13. Na liście kliknij łącze w wybranym wierszu.
-14. Kliknij przycisk Dodaj.
-15. W polu Waluta wpisz wartość.
-16. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Te kroki można powtórzyć dla typu typów kart, ile jest potrzebnych.  
-17. W polu Arkusz płatności kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-18. Na liście kliknij łącze w wybranym wierszu.
-19. Kliknij przycisk Dodaj.
-20. W polu Waluta wpisz wartość.
-21. Kliknij przycisk Zapisz.
-22. Zamknij stronę.
-23. Kliknij przycisk Sprawdź poprawność.
-24. Zaznacz pole wyboru Domyślny agent rozliczeniowy dla nowych kart kredytowych.
-25. Kliknij przycisk Zapisz.
+## <a name="configure-payment-account"></a><span data-ttu-id="1419d-109">Konfigurowanie konta płatności</span><span class="sxs-lookup"><span data-stu-id="1419d-109">Configure payment account</span></span>
+1. <span data-ttu-id="1419d-110">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="1419d-110">Click New.</span></span>
+2. <span data-ttu-id="1419d-111">W polu Usługa płatności wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="1419d-111">In the Payment service field, type a value.</span></span>
+3. <span data-ttu-id="1419d-112">W polu Łącznik płatności wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="1419d-112">In the Payment connector field, select an option.</span></span>
+4. <span data-ttu-id="1419d-113">Przełącz rozwinięcie sekcji Konto usługi płatności.</span><span class="sxs-lookup"><span data-stu-id="1419d-113">Toggle the expansion of the Payment service account section.</span></span>
+5. <span data-ttu-id="1419d-114">W polu Środowisko: wpisz „PROD”.</span><span class="sxs-lookup"><span data-stu-id="1419d-114">In the Environment: field, type 'PROD'.</span></span>
+6. <span data-ttu-id="1419d-115">Kliknij opcję Typy kart kredytowych.</span><span class="sxs-lookup"><span data-stu-id="1419d-115">Click Credit card types.</span></span>
+7. <span data-ttu-id="1419d-116">W polu Arkusz płatności kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="1419d-116">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="1419d-117">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="1419d-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="1419d-118">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="1419d-118">Click Add.</span></span>
+10. <span data-ttu-id="1419d-119">W polu Waluta wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="1419d-119">In the Currency field, type a value.</span></span>
+11. <span data-ttu-id="1419d-120">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="1419d-120">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="1419d-121">W polu Arkusz płatności kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="1419d-121">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="1419d-122">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="1419d-122">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="1419d-123">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="1419d-123">Click Add.</span></span>
+15. <span data-ttu-id="1419d-124">W polu Waluta wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="1419d-124">In the Currency field, type a value.</span></span>
+16. <span data-ttu-id="1419d-125">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="1419d-125">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="1419d-126">Te kroki można powtórzyć dla typu typów kart, ile jest potrzebnych.</span><span class="sxs-lookup"><span data-stu-id="1419d-126">You can repeat these steps for as many card types as you need.</span></span>  
+17. <span data-ttu-id="1419d-127">W polu Arkusz płatności kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="1419d-127">In the Payment journal field, click the drop-down button to open the lookup.</span></span>
+18. <span data-ttu-id="1419d-128">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="1419d-128">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="1419d-129">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="1419d-129">Click Add.</span></span>
+20. <span data-ttu-id="1419d-130">W polu Waluta wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="1419d-130">In the Currency field, type a value.</span></span>
+21. <span data-ttu-id="1419d-131">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="1419d-131">Click Save.</span></span>
+22. <span data-ttu-id="1419d-132">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1419d-132">Close the page.</span></span>
+23. <span data-ttu-id="1419d-133">Kliknij przycisk Sprawdź poprawność.</span><span class="sxs-lookup"><span data-stu-id="1419d-133">Click Validate.</span></span>
+24. <span data-ttu-id="1419d-134">Zaznacz pole wyboru Domyślny agent rozliczeniowy dla nowych kart kredytowych.</span><span class="sxs-lookup"><span data-stu-id="1419d-134">Click the Default processor for new credit cards checkbox.</span></span>
+25. <span data-ttu-id="1419d-135">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="1419d-135">Click Save.</span></span>
 
 

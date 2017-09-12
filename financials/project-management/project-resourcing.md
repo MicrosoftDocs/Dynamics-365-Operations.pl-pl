@@ -18,246 +18,246 @@ ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a7275e9ad8d655d0d2ee5ba90a792775dec0cf05
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: fc36d399759b6321995f9bd827849c8a0bced090
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="project-resourcing"></a>Organizowanie zasobów projektu
+# <a name="project-resourcing"></a><span data-ttu-id="bad62-103">Organizowanie zasobów projektu</span><span class="sxs-lookup"><span data-stu-id="bad62-103">Project resourcing</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten temat zawiera informacje o organizowaniu zasobów projektu.
+<span data-ttu-id="bad62-104">Ten temat zawiera informacje o organizowaniu zasobów projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-104">This topic provides information about project resourcing.</span></span>
 
-Jednym z problemów kierowników projektów i menedżerów zasobów podczas etapu planowania projektu jest alokacja zasobów, gdzie muszą ustalić i zarezerwować właściwe zasoby do pracy nad projektem. W programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition funkcje organizowania zasobów projektów umożliwiają zdefiniowanie ról traktowanych jako zasoby tymczasowe, które można zarezerwować dla określonego projektu lub części projektu. Ten rodzaj organizowania zasobów pozwala kierownikom projektów i menedżerom zasobów wykonywać następujące zadania:
+<span data-ttu-id="bad62-105">Jednym z problemów kierowników projektów i menedżerów zasobów podczas etapu planowania projektu jest alokacja zasobów, gdzie muszą ustalić i zarezerwować właściwe zasoby do pracy nad projektem.</span><span class="sxs-lookup"><span data-stu-id="bad62-105">One challenge for project managers and resource managers during the project planning stage is resource allocation, where they must determine and reserve the correct resource to work on a project.</span></span> <span data-ttu-id="bad62-106">W programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition funkcje organizowania zasobów projektów umożliwiają zdefiniowanie ról traktowanych jako zasoby tymczasowe, które można zarezerwować dla określonego projektu lub części projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-106">In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, resourcing capabilities for projects let you define roles that are treated as temporary resources that can be reserved for a specific engagement, or part of an engagement.</span></span> <span data-ttu-id="bad62-107">Ten rodzaj organizowania zasobów pozwala kierownikom projektów i menedżerom zasobów wykonywać następujące zadania:</span><span class="sxs-lookup"><span data-stu-id="bad62-107">This type of resourcing lets project managers and resource managers complete the following tasks:</span></span>
 
--   Definiowanie roli posiadającej wymagane kompetencje, aby ułatwić dopasowywanie zasobów.
--   Używanie ról do definiowania początkowego harmonogramu projektu opartego na zarezerwowanych zasobach.
--   Szacowanie kosztów i określanie początkowego budżetu na podstawie ról i zasobów przypisanych do projektu.
--   Używanie ról do szacowania liczby rezerwacji zasobów, które są wymagane dla każdego projektu.
--   Szacowanie liczby zasobów, które są wymagane dla całego cyklu życia projektu.
--   Projektowanie struktury podziału pracy (SPP) przy użyciu początkowych przypisań zasobów.
+-   <span data-ttu-id="bad62-108">Definiowanie roli posiadającej wymagane kompetencje, aby ułatwić dopasowywanie zasobów.</span><span class="sxs-lookup"><span data-stu-id="bad62-108">Define a role that has the required competencies to make it easy to match resources.</span></span>
+-   <span data-ttu-id="bad62-109">Używanie ról do definiowania początkowego harmonogramu projektu opartego na zarezerwowanych zasobach.</span><span class="sxs-lookup"><span data-stu-id="bad62-109">Use roles to define an initial engagement schedule that is based on reserved resources.</span></span>
+-   <span data-ttu-id="bad62-110">Szacowanie kosztów i określanie początkowego budżetu na podstawie ról i zasobów przypisanych do projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-110">Estimate costs and determine an initial budget, based on assigned roles and resources for a project.</span></span>
+-   <span data-ttu-id="bad62-111">Używanie ról do szacowania liczby rezerwacji zasobów, które są wymagane dla każdego projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-111">Use roles to estimate the number of resource reservations that are required for each engagement.</span></span>
+-   <span data-ttu-id="bad62-112">Szacowanie liczby zasobów, które są wymagane dla całego cyklu życia projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-112">Estimate the number of resources that are required for the entire life cycle of a project.</span></span>
+-   <span data-ttu-id="bad62-113">Projektowanie struktury podziału pracy (SPP) przy użyciu początkowych przypisań zasobów.</span><span class="sxs-lookup"><span data-stu-id="bad62-113">Draft a work breakdown structure (WBS) by using the initial resource assignments.</span></span>
 
-[![Cykl życia projektu](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg) 
+<span data-ttu-id="bad62-114">[![Cykl życia projektu](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg)</span><span class="sxs-lookup"><span data-stu-id="bad62-114">[![Project life cycle](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg)</span></span> 
 
-Wraz z postępami planowania projektu zaplanowane zasoby można zastępować zasobami pracowników. Kierownik projektu może również wrócić i zaktualizować rezerwacje zasobów podczas dowolnego etapu projektu.
+<span data-ttu-id="bad62-115">Wraz z postępami planowania projektu zaplanowane zasoby można zastępować zasobami pracowników.</span><span class="sxs-lookup"><span data-stu-id="bad62-115">As project planning proceeds, planned resources can be replaced with staffed resources.</span></span> <span data-ttu-id="bad62-116">Kierownik projektu może również wrócić i zaktualizować rezerwacje zasobów podczas dowolnego etapu projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-116">The project manager can also go back and update the resourcing reservations during any of the project stages.</span></span>
 
-## <a name="set-up-project-resources"></a>Konfigurowanie zasobów projektu
-Należy utworzyć kalendarz i skojarzyć go z pracownikiem. Kalendarz jest używany do planowania projektu i czasu pracy zasobów, które są zarezerwowane dla projektu. Podczas konfigurowania kalendarza kierownicy projektu mogą wykonywać bilansowanie zasobów jako część procesu optymalizacji zasobów. Na podstawie harmonogramu w kalendarzu można nakładać ograniczenia na zasoby. Kalendarz można zdefiniować na stronie **Kalendarze**. 
+## <a name="set-up-project-resources"></a><span data-ttu-id="bad62-117">Konfigurowanie zasobów projektu</span><span class="sxs-lookup"><span data-stu-id="bad62-117">Set up project resources</span></span>
+<span data-ttu-id="bad62-118">Należy utworzyć kalendarz i skojarzyć go z pracownikiem.</span><span class="sxs-lookup"><span data-stu-id="bad62-118">You must set up a calendar and associate it with an employee or a worker.</span></span> <span data-ttu-id="bad62-119">Kalendarz jest używany do planowania projektu i czasu pracy zasobów, które są zarezerwowane dla projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-119">The calendar is used to schedule the project and the working time of the resources that are reserved for the project.</span></span> <span data-ttu-id="bad62-120">Podczas konfigurowania kalendarza kierownicy projektu mogą wykonywać bilansowanie zasobów jako część procesu optymalizacji zasobów.</span><span class="sxs-lookup"><span data-stu-id="bad62-120">During calendar setup, project managers can perform resource leveling as part of resource optimization.</span></span> <span data-ttu-id="bad62-121">Na podstawie harmonogramu w kalendarzu można nakładać ograniczenia na zasoby.</span><span class="sxs-lookup"><span data-stu-id="bad62-121">Based on the calendar schedule, restrictions can be placed on resources.</span></span> <span data-ttu-id="bad62-122">Kalendarz można zdefiniować na stronie **Kalendarze**.</span><span class="sxs-lookup"><span data-stu-id="bad62-122">You can set up a calendar on the **Calendars** page.</span></span> 
 
-Podczas konfigurowania pracownika jako zasobu projektu można wybierać spośród pracowników pracujących w firmie, dla której konfigurujesz zasoby, lub spośród pracowników w innych firmach w organizacji. Są to zasoby międzyfirmowe. W poniższych procedurach opisano, jak skonfigurować pracownika jako zasób projektu w swojej firmie i jak skonfigurować międzyfirmowy zasób projektu.
+<span data-ttu-id="bad62-123">Podczas konfigurowania pracownika jako zasobu projektu można wybierać spośród pracowników pracujących w firmie, dla której konfigurujesz zasoby, lub spośród pracowników w innych firmach w organizacji.</span><span class="sxs-lookup"><span data-stu-id="bad62-123">When you set up a worker as a project resource, you can select from workers that work in the company for which you are setting up resources or, you can select workers from other companies within your organization.</span></span> <span data-ttu-id="bad62-124">Są to zasoby międzyfirmowe.</span><span class="sxs-lookup"><span data-stu-id="bad62-124">These are intercompany resources.</span></span> <span data-ttu-id="bad62-125">W poniższych procedurach opisano, jak skonfigurować pracownika jako zasób projektu w swojej firmie i jak skonfigurować międzyfirmowy zasób projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-125">The following procedures explain how to set up a worker as a project resource within your company and how to set up an intercompany project resource.</span></span>
 
-### <a name="set-up-a-worker-as-a-project-resource"></a>Konfigurowanie pracownika jako zasobu projektu
+### <a name="set-up-a-worker-as-a-project-resource"></a><span data-ttu-id="bad62-126">Konfigurowanie pracownika jako zasobu projektu</span><span class="sxs-lookup"><span data-stu-id="bad62-126">Set up a worker as a project resource</span></span>
 
-1.  Na stronie **Pracownicy** na liście **Pracownicy** wybierz pracownika, którego chcesz dodać jako zasób projektu, i otwórz rekord tego pracownika.
-2.  W okienku akcji kliknij kolejno opcje **Projekt** &gt; **Ustawienia** &gt; **Ustawienia projektu**.
-3.  Wybierz kalendarz, a następnie zamknij stronę.
+1.  <span data-ttu-id="bad62-127">Na stronie **Pracownicy** na liście **Pracownicy** wybierz pracownika, którego chcesz dodać jako zasób projektu, i otwórz rekord tego pracownika.</span><span class="sxs-lookup"><span data-stu-id="bad62-127">On the **Workers** page, in the **Workers** list, select the worker that you're adding as a project resource, and open the worker record.</span></span>
+2.  <span data-ttu-id="bad62-128">W okienku akcji kliknij kolejno opcje **Projekt** &gt; **Ustawienia** &gt; **Ustawienia projektu**.</span><span class="sxs-lookup"><span data-stu-id="bad62-128">On the Action Pane, click **Project** &gt; **Setup** &gt; **Project setup**.</span></span>
+3.  <span data-ttu-id="bad62-129">Wybierz kalendarz, a następnie zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="bad62-129">Select a calendar, and then close the page.</span></span>
 
-Można również określić domyślne projekty dla zasobu jako rodzaj wstępnego przypisania. Wstępnych przypisań można używać, gdy menedżer zasobów lub kierownik projektu wie z wyprzedzeniem, w których projektach zasób będzie pracował. Wstępne przypisania mogą być również oparte na wniosku inwestora projektu lub klienta. Aby wstępnie przypisać projekt, na stronie **Przypisz projekty** na karcie **Projekty** na liście **Pozostałe projekty** wybierz odpowiedni projekt.
+<span data-ttu-id="bad62-130">Można również określić domyślne projekty dla zasobu jako rodzaj wstępnego przypisania.</span><span class="sxs-lookup"><span data-stu-id="bad62-130">You can also specify default projects for a resource as a type of pre-assignment.</span></span> <span data-ttu-id="bad62-131">Wstępnych przypisań można używać, gdy menedżer zasobów lub kierownik projektu wie z wyprzedzeniem, w których projektach zasób będzie pracował.</span><span class="sxs-lookup"><span data-stu-id="bad62-131">Pre-assignments can be used when the resource manager or project manager knows which projects the resource will be working on in advance.</span></span> <span data-ttu-id="bad62-132">Wstępne przypisania mogą być również oparte na wniosku inwestora projektu lub klienta.</span><span class="sxs-lookup"><span data-stu-id="bad62-132">Pre-assignments can also be based on the request of a project sponsor or customer.</span></span> <span data-ttu-id="bad62-133">Aby wstępnie przypisać projekt, na stronie **Przypisz projekty** na karcie **Projekty** na liście **Pozostałe projekty** wybierz odpowiedni projekt.</span><span class="sxs-lookup"><span data-stu-id="bad62-133">To pre-assign a project, on the **Assign projects** page, on the **Projects** tab, in the **Remaining projects** list, select the appropriate project.</span></span>
 
-### <a name="set-up-an-intercompany-resource"></a>Konfigurowanie zasobu międzyfirmowego
+### <a name="set-up-an-intercompany-resource"></a><span data-ttu-id="bad62-134">Konfigurowanie zasobu międzyfirmowego</span><span class="sxs-lookup"><span data-stu-id="bad62-134">Set up an intercompany resource</span></span>
 
-Podczas konfigurowania pracownika jako zasobu międzyfirmowego należy wypełnić pola konfiguracji w firmach wypożyczającej i pożyczającej. 
+<span data-ttu-id="bad62-135">Podczas konfigurowania pracownika jako zasobu międzyfirmowego należy wypełnić pola konfiguracji w firmach wypożyczającej i pożyczającej.</span><span class="sxs-lookup"><span data-stu-id="bad62-135">When you set up a worker as an intercompany resource, you must complete the setup in the lending company and the borrowing company.</span></span> 
 
-**W firmie wypożyczającej:**
+<span data-ttu-id="bad62-136">**W firmie wypożyczającej:**</span><span class="sxs-lookup"><span data-stu-id="bad62-136">**In the lending company:**</span></span>
 
-1.  W usłudze Finance and Operations upewnij się, że firma wypożyczająca jest wybrana, a następnie wykonaj opisaną wyżej procedurę „Konfigurowanie pracownika jako zasobu projektu”.
-2.  Wybierz kolejno opcje **Księga główna** &gt; **Ustawienia księgowania** &gt; **Księgowanie międzyfirmowe**. Kliknij przycisk **Nowy**.
-3.  W polu **Identyfikator firmy** wybierz firmę wypożyczającą. Wypełnij pozostałe pola, a następnie kliknij przycisk **Zapisz**.
-4.  Wybierz kolejno opcje **Zarządzanie projektami i ich księgowanie **&gt; **Ustawienia **&gt; **Ceny ** &gt; **Cena transferowa**.** **
-5.  W formularzu **Cena transferowa** kliknij przycisk **Nowy**, a następnie w polu **Firma pożyczająca** wybierz odpowiednią firmę.
-6.  Jeśli chcesz firmie pożyczającej wypożyczyć tylko zasób utworzony na początku niniejszej sekcji, w polu **Zasób** zaznacz nazwę utworzonego zasobu. Jeśli chcesz udostępnić firmie pożyczającej wszystkie zasoby istniejące w firmie, zostaw pole **Zasób** puste.
-7.  Wybierz kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Parametry modułu Zarządzanie projektami i ich księgowanie** i na karcie **Międzyfirmowe** ustaw w polu **Włącz międzyfirmowe planowanie zasobów i kart czasu pracy** wartość **Tak**.
+1.  <span data-ttu-id="bad62-137">W usłudze Finance and Operations upewnij się, że firma wypożyczająca jest wybrana, a następnie wykonaj opisaną wyżej procedurę „Konfigurowanie pracownika jako zasobu projektu”.</span><span class="sxs-lookup"><span data-stu-id="bad62-137">In Finance and Operations, verify that the lending company is selected, and then complete the procedure above, "Set up a worker as a project resource."</span></span>
+2.  <span data-ttu-id="bad62-138">Wybierz kolejno opcje **Księga główna** &gt; **Ustawienia księgowania** &gt; **Księgowanie międzyfirmowe**.</span><span class="sxs-lookup"><span data-stu-id="bad62-138">Go to **General ledger **&gt; **Posting setup **&gt; **Intercompany accounting**.</span></span> <span data-ttu-id="bad62-139">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="bad62-139">Click **New**.</span></span>
+3.  <span data-ttu-id="bad62-140">W polu **Identyfikator firmy** wybierz firmę wypożyczającą.</span><span class="sxs-lookup"><span data-stu-id="bad62-140">In the **Legal entity ID **field, select the lending company.</span></span> <span data-ttu-id="bad62-141">Wypełnij pozostałe pola, a następnie kliknij przycisk **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="bad62-141">Fill in the remaining fields as appropriate, and then click **Save**.</span></span>
+4.  <span data-ttu-id="bad62-142">Wybierz kolejno opcje **Zarządzanie projektami i ich księgowanie **&gt; **Ustawienia **&gt; **Ceny ** &gt; **Cena transferowa**.**</span><span class="sxs-lookup"><span data-stu-id="bad62-142">Go the **Project management and accounting **&gt; **Setup **&gt; **Prices ** &gt; **Transfer price**.**</span></span> **
+5.  <span data-ttu-id="bad62-143">W formularzu **Cena transferowa** kliknij przycisk **Nowy**, a następnie w polu **Firma pożyczająca** wybierz odpowiednią firmę.</span><span class="sxs-lookup"><span data-stu-id="bad62-143">On the **Transfer price **form, click **New**, and in the **Borrowing legal entity **field, select the appropriate company.</span></span>
+6.  <span data-ttu-id="bad62-144">Jeśli chcesz firmie pożyczającej wypożyczyć tylko zasób utworzony na początku niniejszej sekcji, w polu **Zasób** zaznacz nazwę utworzonego zasobu.</span><span class="sxs-lookup"><span data-stu-id="bad62-144">If you want to only loan the borrowing company the resource that you created at the beginning of this section, in the **Resource** field, select the name of the resource that you created.</span></span> <span data-ttu-id="bad62-145">Jeśli chcesz udostępnić firmie pożyczającej wszystkie zasoby istniejące w firmie, zostaw pole **Zasób** puste.</span><span class="sxs-lookup"><span data-stu-id="bad62-145">If you want to make all resources in the company available to the borrowing company, leave the **Resource **field blank.</span></span>
+7.  <span data-ttu-id="bad62-146">Wybierz kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Parametry modułu Zarządzanie projektami i ich księgowanie** i na karcie **Międzyfirmowe** ustaw w polu **Włącz międzyfirmowe planowanie zasobów i kart czasu pracy** wartość **Tak**.</span><span class="sxs-lookup"><span data-stu-id="bad62-146">Go to **Project management and accounting **&gt; **Setup **&gt; **Project management and accounting parameters**, and on the **Intercompany **tab, set the **Enable intercompany resource scheduling and timesheets **field to **Yes**.</span></span>
 
-**W firmie pożyczającej:**
+<span data-ttu-id="bad62-147">**W firmie pożyczającej:**</span><span class="sxs-lookup"><span data-stu-id="bad62-147">**In the borrowing company:**</span></span>
 
-1.  Wybierz kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Zasoby projektu** &gt; **Lista zasobów**.
-2.  W filtrze wyszukiwania wprowadź nazwę zasobu, który został utworzony w poprzedniej procedurze dla firmy wypożyczającej, aby sprawdzić, czy nazwa znajduje się na liście zasobów dla firmy pożyczającej.
+1.  <span data-ttu-id="bad62-148">Wybierz kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Zasoby projektu** &gt; **Lista zasobów**.</span><span class="sxs-lookup"><span data-stu-id="bad62-148">Go to **Project management and accounting** &gt; **Project resources** &gt; **Resources list**.</span></span>
+2.  <span data-ttu-id="bad62-149">W filtrze wyszukiwania wprowadź nazwę zasobu, który został utworzony w poprzedniej procedurze dla firmy wypożyczającej, aby sprawdzić, czy nazwa znajduje się na liście zasobów dla firmy pożyczającej.</span><span class="sxs-lookup"><span data-stu-id="bad62-149">In the search filter, enter the name of the resource that you created in the previous procedure for the lending company to verify that the name is included in the resource list for the borrowing company.</span></span>
 
-## <a name="manage-resource-competencies"></a>Zarządzanie kompetencjami zasobów
-Kompetencje zasobów są podstawowym elementem procesu zarządzania zasobami. Kompetencje mogą służyć jako podstawa do identyfikowania zasobów, które mają odpowiednią kombinację umiejętności, wykształcenia, certyfikacji i doświadczenia w projektach. Należy skonfigurować te informacje dla każdego zasobu i aktualizować je na bieżąco. W ten sposób można zmaksymalizować możliwości działania, gdy konkretne kompetencje zasobów są dopasowywane podczas przypisywania zasobów projektu. [![Przykłady umiejętności, certyfikacji, wykształcenia i doświadczenia w projektach](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) 
+## <a name="manage-resource-competencies"></a><span data-ttu-id="bad62-150">Zarządzanie kompetencjami zasobów</span><span class="sxs-lookup"><span data-stu-id="bad62-150">Manage resource competencies</span></span>
+<span data-ttu-id="bad62-151">Kompetencje zasobów są podstawowym elementem procesu zarządzania zasobami.</span><span class="sxs-lookup"><span data-stu-id="bad62-151">Resource competencies are an essential part of resource management.</span></span> <span data-ttu-id="bad62-152">Kompetencje mogą służyć jako podstawa do identyfikowania zasobów, które mają odpowiednią kombinację umiejętności, wykształcenia, certyfikacji i doświadczenia w projektach.</span><span class="sxs-lookup"><span data-stu-id="bad62-152">Competencies can be used as a baseline to determine resources that have the correct balance of skills, education, certification, and project experience.</span></span> <span data-ttu-id="bad62-153">Należy skonfigurować te informacje dla każdego zasobu i aktualizować je na bieżąco.</span><span class="sxs-lookup"><span data-stu-id="bad62-153">You should set up this information for each resource and update it on a regular basis.</span></span> <span data-ttu-id="bad62-154">W ten sposób można zmaksymalizować możliwości działania, gdy konkretne kompetencje zasobów są dopasowywane podczas przypisywania zasobów projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-154">In this way, you can maximize capabilities when specific resource competencies are matched during project resource assignment.</span></span> <span data-ttu-id="bad62-155">[![Przykłady umiejętności, certyfikacji, wykształcenia i doświadczenia w projektach](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg)</span><span class="sxs-lookup"><span data-stu-id="bad62-155">[![Examples of skills, certifications, education, and project experience](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg)</span></span> 
 
-W poniższych procedurach opisano sposób konfigurowania niektórych kompetencji zasobu. 
+<span data-ttu-id="bad62-156">W poniższych procedurach opisano sposób konfigurowania niektórych kompetencji zasobu.</span><span class="sxs-lookup"><span data-stu-id="bad62-156">The following procedures explain how to set up some of the competencies for a resource.</span></span> 
 
-Aby skonfigurować kompetencje pracownika, można użyć strony listy **Pracownicy** w module Zasoby ludzkie lub strony listy **Zasoby** w module Zarządzanie projektami i ich księgowanie. W poniższych procedurach jest używana strona listy **Pracownicy** w module Zasoby ludzkie.
+<span data-ttu-id="bad62-157">Aby skonfigurować kompetencje pracownika, można użyć strony listy **Pracownicy** w module Zasoby ludzkie lub strony listy **Zasoby** w module Zarządzanie projektami i ich księgowanie.</span><span class="sxs-lookup"><span data-stu-id="bad62-157">To set up competencies for a worker, you can use either the **Workers** list page in Human resources or the **Resources** list page in Project management and accounting.</span></span> <span data-ttu-id="bad62-158">W poniższych procedurach jest używana strona listy **Pracownicy** w module Zasoby ludzkie.</span><span class="sxs-lookup"><span data-stu-id="bad62-158">For the following procedures, the **Workers** list page in Human resources is used.</span></span>
 
-### <a name="set-up-competencies-certificates"></a>Konfigurowanie kompetencji: Certyfikaty
+### <a name="set-up-competencies-certificates"></a><span data-ttu-id="bad62-159">Konfigurowanie kompetencji: Certyfikaty</span><span class="sxs-lookup"><span data-stu-id="bad62-159">Set up competencies: Certificates</span></span>
 
-1.  Na stronie listy **Pracownicy** wybierz wiersz pracownika, dla którego dodajesz informacje o zaświadczeniach.
-2.  W okienku akcji na karcie **Pracownik** w grupie **Kompetencje** kliknij opcję **Certyfikaty**.
-3.  Kliknij przycisk **Nowy**.
-4.  W polu **Typ certyfikatu** zaznacz opcję **PMP**.
-5.  W polu **Data rozpoczęcia** zaznacz wartość **1.10.2015**.
-6.  Kliknij przycisk **Zapisz** i zamknij stronę.
+1.  <span data-ttu-id="bad62-160">Na stronie listy **Pracownicy** wybierz wiersz pracownika, dla którego dodajesz informacje o zaświadczeniach.</span><span class="sxs-lookup"><span data-stu-id="bad62-160">On the **Workers** list page, select the line of the worker that you're adding certificate information for.</span></span>
+2.  <span data-ttu-id="bad62-161">W okienku akcji na karcie **Pracownik** w grupie **Kompetencje** kliknij opcję **Certyfikaty**.</span><span class="sxs-lookup"><span data-stu-id="bad62-161">On the Action Pane, on the **Worker** tab, in the **Competencies** group, click **Certificates**.</span></span>
+3.  <span data-ttu-id="bad62-162">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="bad62-162">Click **New**.</span></span>
+4.  <span data-ttu-id="bad62-163">W polu **Typ certyfikatu** zaznacz opcję **PMP**.</span><span class="sxs-lookup"><span data-stu-id="bad62-163">In the **Certificate type** field, select **PMP**.</span></span>
+5.  <span data-ttu-id="bad62-164">W polu **Data rozpoczęcia** zaznacz wartość **1.10.2015**.</span><span class="sxs-lookup"><span data-stu-id="bad62-164">In the **Start date** field, select **10/1/2015**.</span></span>
+6.  <span data-ttu-id="bad62-165">Kliknij przycisk **Zapisz** i zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="bad62-165">Click **Save**, and then close the page.</span></span>
 
-### <a name="set-up-competencies-skills"></a>Konfigurowanie kompetencji: Umiejętności
+### <a name="set-up-competencies-skills"></a><span data-ttu-id="bad62-166">Konfigurowanie kompetencji: Umiejętności</span><span class="sxs-lookup"><span data-stu-id="bad62-166">Set up competencies: Skills</span></span>
 
-1.  Na stronie listy **Pracownicy** upewnij się, że pracownik użyty w poprzedniej procedurze nadal pozostaje zaznaczony. Następnie w okienku akcji na karcie **Pracownik** w grupie **Kompetencje** kliknij opcję **Umiejętności**.
-2.  Kliknij przycisk **Nowy**.
-3.  W polu **Umiejętności** zaznacz opcję **Zarządzanie projektami**.
-4.  W polu **Poziom** zaznacz opcję **5 Ekspert**.
-5.  W polu **Data poziomu** zaznacz wartość **14.1.2014**.
-6.  W polu **Lata doświadczenia** wprowadź wartość **10**.
-7.  Kliknij przycisk **Zapisz** i zamknij stronę.
+1.  <span data-ttu-id="bad62-167">Na stronie listy **Pracownicy** upewnij się, że pracownik użyty w poprzedniej procedurze nadal pozostaje zaznaczony.</span><span class="sxs-lookup"><span data-stu-id="bad62-167">On the **Workers** list page, make sure that the worker that you used in the previous procedure is still selected.</span></span> <span data-ttu-id="bad62-168">Następnie w okienku akcji na karcie **Pracownik** w grupie **Kompetencje** kliknij opcję **Umiejętności**.</span><span class="sxs-lookup"><span data-stu-id="bad62-168">Then, on the Action Pane, on the **Worker** tab, in the **Competencies** group, click **Skills**.</span></span>
+2.  <span data-ttu-id="bad62-169">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="bad62-169">Click **New**.</span></span>
+3.  <span data-ttu-id="bad62-170">W polu **Umiejętności** zaznacz opcję **Zarządzanie projektami**.</span><span class="sxs-lookup"><span data-stu-id="bad62-170">In the **Skill** field, select **Project management**.</span></span>
+4.  <span data-ttu-id="bad62-171">W polu **Poziom** zaznacz opcję **5 Ekspert**.</span><span class="sxs-lookup"><span data-stu-id="bad62-171">In the **Level** field, select **5 Expert**.</span></span>
+5.  <span data-ttu-id="bad62-172">W polu **Data poziomu** zaznacz wartość **14.1.2014**.</span><span class="sxs-lookup"><span data-stu-id="bad62-172">In the **Level date** field, select **1-/14/2014**.</span></span>
+6.  <span data-ttu-id="bad62-173">W polu **Lata doświadczenia** wprowadź wartość **10**.</span><span class="sxs-lookup"><span data-stu-id="bad62-173">In the **Years of experience** field, enter **10**.</span></span>
+7.  <span data-ttu-id="bad62-174">Kliknij przycisk **Zapisz** i zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="bad62-174">Click **Save**, and then close the page.</span></span>
 
-## <a name="create-a-new-project"></a>Utwórz nowy projekt
-1.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Obszary robocze** &gt; **Zarządzanie projektami**.
-2.  Kliknij przycisk **Nowy projekt** i wprowadź następujące wartości:
-    -   **Typ projektu** — Czas i materiały
-    -   **Nazwa projektu** — Uaktualnianie XYZ faza 2
-    -   **Grupa projektów** — CM\_PWT
-    -   **Identyfikator umowy dotyczącej projektu** — 00000002
-3.  Kliknij opcję **Utwórz projekt**.
+## <a name="create-a-new-project"></a><span data-ttu-id="bad62-175">Utwórz nowy projekt</span><span class="sxs-lookup"><span data-stu-id="bad62-175">Create a new project</span></span>
+1.  <span data-ttu-id="bad62-176">Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Obszary robocze** &gt; **Zarządzanie projektami**.</span><span class="sxs-lookup"><span data-stu-id="bad62-176">Click **Project management and accounting** &gt; **Workspaces** &gt; **Project management**.</span></span>
+2.  <span data-ttu-id="bad62-177">Kliknij przycisk **Nowy projekt** i wprowadź następujące wartości:</span><span class="sxs-lookup"><span data-stu-id="bad62-177">Click **New project**, and enter the following values:</span></span>
+    -   <span data-ttu-id="bad62-178">**Typ projektu** — Czas i materiały</span><span class="sxs-lookup"><span data-stu-id="bad62-178">**Project type** - Time and material</span></span>
+    -   <span data-ttu-id="bad62-179">**Nazwa projektu** — Uaktualnianie XYZ faza 2</span><span class="sxs-lookup"><span data-stu-id="bad62-179">**Project name** - XYZ Upgrade Phase 2</span></span>
+    -   <span data-ttu-id="bad62-180">**Grupa projektów** — CM\_PWT</span><span class="sxs-lookup"><span data-stu-id="bad62-180">**Project group** - TM\_WIP</span></span>
+    -   <span data-ttu-id="bad62-181">**Identyfikator umowy dotyczącej projektu** — 00000002</span><span class="sxs-lookup"><span data-stu-id="bad62-181">**Project contract ID**  - 00000002</span></span>
+3.  <span data-ttu-id="bad62-182">Kliknij opcję **Utwórz projekt**.</span><span class="sxs-lookup"><span data-stu-id="bad62-182">Click **Create project**.</span></span>
 
-### <a name="assign-a-resource-to-a-project"></a>Przypisywanie zasobu do projektu
+### <a name="assign-a-resource-to-a-project"></a><span data-ttu-id="bad62-183">Przypisywanie zasobu do projektu</span><span class="sxs-lookup"><span data-stu-id="bad62-183">Assign a resource to a project</span></span>
 
-1.  Kliknij kolejno opcje **Zasoby ludzkie** &gt; **Pracownicy** &gt; **Pracownicy**.
-2.  Na liście **Pracownicy** wybierz rekord pracownika, dla którego skonfigurowano wcześniej kompetencje, i otwórz ten rekord.
-3.  W okienku akcji na karcie **Projekt** w grupie **Ustawienia** kliknij opcję **Przypisz projekty**.
-4.  Na stronie **Przypisania projektu weryfikacji zasobów** kliknij kartę **Projekty**.
-5.  W oknie **Dodaj projekt do wybranych projektów** wyfiltruj według projektu Uaktualnianie XYZ faza 2.
-6.  W okienku **Pozostałe projekty** wybierz projekt, a następnie kliknij strzałkę, aby dodać go do okienka **Wybrane projekty**.
-7.  Zamknij stronę.
+1.  <span data-ttu-id="bad62-184">Kliknij kolejno opcje **Zasoby ludzkie** &gt; **Pracownicy** &gt; **Pracownicy**.</span><span class="sxs-lookup"><span data-stu-id="bad62-184">Click **Human resources** &gt; **Workers** &gt; **Workers**.</span></span>
+2.  <span data-ttu-id="bad62-185">Na liście **Pracownicy** wybierz rekord pracownika, dla którego skonfigurowano wcześniej kompetencje, i otwórz ten rekord.</span><span class="sxs-lookup"><span data-stu-id="bad62-185">In the **Workers** list, select the record for the worker that you previously set up competencies for, and open the worker record.</span></span>
+3.  <span data-ttu-id="bad62-186">W okienku akcji na karcie **Projekt** w grupie **Ustawienia** kliknij opcję **Przypisz projekty**.</span><span class="sxs-lookup"><span data-stu-id="bad62-186">On the Action Pane, on the **Project** tab, in the **Setup** group, click **Assign projects**.</span></span>
+4.  <span data-ttu-id="bad62-187">Na stronie **Przypisania projektu weryfikacji zasobów** kliknij kartę **Projekty**.</span><span class="sxs-lookup"><span data-stu-id="bad62-187">On the **Resource validation project assignments** page, click the **Projects** tab.</span></span>
+5.  <span data-ttu-id="bad62-188">W oknie **Dodaj projekt do wybranych projektów** wyfiltruj według projektu Uaktualnianie XYZ faza 2.</span><span class="sxs-lookup"><span data-stu-id="bad62-188">In the **Add the project to selected projects**, filter on the project, XYZ Upgrade Phase 2</span></span>
+6.  <span data-ttu-id="bad62-189">W okienku **Pozostałe projekty** wybierz projekt, a następnie kliknij strzałkę, aby dodać go do okienka **Wybrane projekty**.</span><span class="sxs-lookup"><span data-stu-id="bad62-189">In the **Remaining projects** pane, select a project, and then click the arrow to add it to the **Selected projects** pane.</span></span>
+7.  <span data-ttu-id="bad62-190">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="bad62-190">Close the page.</span></span>
 
-W razie potrzeby można również przypisać kategorie do zasobu. Typem kategorii jest Koszt lub Przychód. To jest określane przez organizację. Jeśli zasób nie ma przypisanych żadnych kategorii, program Finance and Operations będzie szukał domyślnej kategorii cen godzinowych dla kosztów i przychodów.
+<span data-ttu-id="bad62-191">W razie potrzeby można również przypisać kategorie do zasobu.</span><span class="sxs-lookup"><span data-stu-id="bad62-191">If needed, you can also assign categories for a resource.</span></span> <span data-ttu-id="bad62-192">Typem kategorii jest Koszt lub Przychód.</span><span class="sxs-lookup"><span data-stu-id="bad62-192">The category type is either Cost or Revenue.</span></span> <span data-ttu-id="bad62-193">To jest określane przez organizację.</span><span class="sxs-lookup"><span data-stu-id="bad62-193">This is determined by your organization.</span></span> <span data-ttu-id="bad62-194">Jeśli zasób nie ma przypisanych żadnych kategorii, program Finance and Operations będzie szukał domyślnej kategorii cen godzinowych dla kosztów i przychodów.</span><span class="sxs-lookup"><span data-stu-id="bad62-194">If there are no assigned categories for the resource, Finance and Operations will look up the default category on hour prices for cost and revenue.</span></span>
 
-### <a name="set-up-project-resource-and-role-characteristics"></a>Konfigurowanie cech zasobów i ról w projekcie
+### <a name="set-up-project-resource-and-role-characteristics"></a><span data-ttu-id="bad62-195">Konfigurowanie cech zasobów i ról w projekcie</span><span class="sxs-lookup"><span data-stu-id="bad62-195">Set up project resource and role characteristics</span></span>
 
-Kierownik projektu może za pomocą funkcji organizowania zasobów projektu utworzyć role wymagane w projekcie. Ról można używać, gdy potwierdzone zasoby są nadal nieznane podczas rezerwowania zasobów. Role mogą służyć do tymczasowego rezerwowania planowanych zasobów, tak aby można było kontynuować etapy planowania projektu. 
+<span data-ttu-id="bad62-196">Kierownik projektu może za pomocą funkcji organizowania zasobów projektu utworzyć role wymagane w projekcie.</span><span class="sxs-lookup"><span data-stu-id="bad62-196">A project manager can use the project resourcing functionality to create the roles that are required for the project.</span></span> <span data-ttu-id="bad62-197">Ról można używać, gdy potwierdzone zasoby są nadal nieznane podczas rezerwowania zasobów.</span><span class="sxs-lookup"><span data-stu-id="bad62-197">Roles can be used when confirmed resources are still unknown when reserving resources.</span></span> <span data-ttu-id="bad62-198">Role mogą służyć do tymczasowego rezerwowania planowanych zasobów, tak aby można było kontynuować etapy planowania projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-198">Roles can be temporarily reserved as planned resources, so that you can continue the project planning stages.</span></span> 
 
-[![Przykład roli](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg) 
+<span data-ttu-id="bad62-199">[![Przykład roli](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg)</span><span class="sxs-lookup"><span data-stu-id="bad62-199">[![Example of a role](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg)</span></span> 
 
-**Scenariusz:** Firma Contoso została wynajęta do wykonania projektu rozliczanego według czasu i materiałów mającego zatwierdzony statut projektu. Młodszy kierownik projektu nadal opracowuje zakres projektu. Menedżer zasobów obecnie identyfikuje konkretne zasoby, które zostaną zarezerwowane do pracy nad nowym projektem. Jedną z ról wnioskowanych przez inwestora projektu ze względu na krytyczny charakter projektu jest starszy kierownik projektu. Menedżer zasobów musi pozyskać nowy zasób oraz zdefiniować rolę w systemie na wypadek, gdyby młodszy kierownik projektu potrzebował informacji o zasobie podczas planowania projektu. 
+<span data-ttu-id="bad62-200">**Scenariusz:** Firma Contoso została wynajęta do wykonania projektu rozliczanego według czasu i materiałów mającego zatwierdzony statut projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-200">**Scenario:** Contoso was hired to complete a Time and material project that has an approved project charter.</span></span> <span data-ttu-id="bad62-201">Młodszy kierownik projektu nadal opracowuje zakres projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-201">The junior project manager is still completing the scope of the project.</span></span> <span data-ttu-id="bad62-202">Menedżer zasobów obecnie identyfikuje konkretne zasoby, które zostaną zarezerwowane do pracy nad nowym projektem.</span><span class="sxs-lookup"><span data-stu-id="bad62-202">The resource manager is currently identifying specific resources that will be reserved to work on the new project.</span></span> <span data-ttu-id="bad62-203">Jedną z ról wnioskowanych przez inwestora projektu ze względu na krytyczny charakter projektu jest starszy kierownik projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-203">One of the roles that the project sponsor requested, because of the critical nature of the project, is the Senior project manager.</span></span> <span data-ttu-id="bad62-204">Menedżer zasobów musi pozyskać nowy zasób oraz zdefiniować rolę w systemie na wypadek, gdyby młodszy kierownik projektu potrzebował informacji o zasobie podczas planowania projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-204">The resource manager must acquire the new resource and define the role in the system in case the junior project manager requires the resource information during the project planning.</span></span> 
 
-Poniższe kroki pokazują, jak menedżer zasobów może skonfigurować rolę starszego kierownika projektu i skojarzyć z nią cechy zasobu. Później rola może służyć do wyszukiwania dostępnych zasobów posiadających wymagane kompetencje.
+<span data-ttu-id="bad62-205">Poniższe kroki pokazują, jak menedżer zasobów może skonfigurować rolę starszego kierownika projektu i skojarzyć z nią cechy zasobu.</span><span class="sxs-lookup"><span data-stu-id="bad62-205">The following steps show how the resource manager can set up the Senior project manager role and associate resource characteristics with it.</span></span> <span data-ttu-id="bad62-206">Później rola może służyć do wyszukiwania dostępnych zasobów posiadających wymagane kompetencje.</span><span class="sxs-lookup"><span data-stu-id="bad62-206">Later, the role can be used to search for available resources that match the required resource competencies.</span></span>
 
-1.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Zasoby** &gt; **Konfiguruj role**.
-2.  Kliknij przycisk **Nowy** i wprowadź następujące wartości:
-    -   **Identyfikator roli** — Starszy kierownik projektu
-    -   **Opis** — Starszy kierownik projektu
-3.  Kliknij **Utwórz**.
-4.  Wybierz rolę **Starszy kierownik projektu** i kliknij przycisk **Konfiguruj charakterystyki**.
-5.  W polu **Typ charakterystyki** zaznacz opcję **Umiejętności**.
-6.  W polu **Dostępne charakterystyki** wprowadź umiejętność, której szukasz.
-7.  W polu **Typ charakterystyki** zaznacz opcję **Certyfikat**.
-8.  W polu **Dostępne charakterystyki** wprowadź typ zaświadczenia, którego chcesz poszukać.
-9.  Kliknij przycisk **OK** i zamknij stronę.
+1.  <span data-ttu-id="bad62-207">Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Zasoby** &gt; **Konfiguruj role**.</span><span class="sxs-lookup"><span data-stu-id="bad62-207">Click **Project management and accounting** &gt; **Setup** &gt; **Resources** &gt; **Setup roles**.</span></span>
+2.  <span data-ttu-id="bad62-208">Kliknij przycisk **Nowy** i wprowadź następujące wartości:</span><span class="sxs-lookup"><span data-stu-id="bad62-208">Click **New**, and enter the following values:</span></span>
+    -   <span data-ttu-id="bad62-209">**Identyfikator roli** — Starszy kierownik projektu</span><span class="sxs-lookup"><span data-stu-id="bad62-209">**Role ID** - Senior Project Manager</span></span>
+    -   <span data-ttu-id="bad62-210">**Opis** — Starszy kierownik projektu</span><span class="sxs-lookup"><span data-stu-id="bad62-210">**Description** - Senior Project Manager</span></span>
+3.  <span data-ttu-id="bad62-211">Kliknij **Utwórz**.</span><span class="sxs-lookup"><span data-stu-id="bad62-211">Click **Create**.</span></span>
+4.  <span data-ttu-id="bad62-212">Wybierz rolę **Starszy kierownik projektu** i kliknij przycisk **Konfiguruj charakterystyki**.</span><span class="sxs-lookup"><span data-stu-id="bad62-212">Select the **Senior Project Manager** role, and then click **Configure characteristics**.</span></span>
+5.  <span data-ttu-id="bad62-213">W polu **Typ charakterystyki** zaznacz opcję **Umiejętności**.</span><span class="sxs-lookup"><span data-stu-id="bad62-213">In the **Characteristics type** field, select **Skill**.</span></span>
+6.  <span data-ttu-id="bad62-214">W polu **Dostępne charakterystyki** wprowadź umiejętność, której szukasz.</span><span class="sxs-lookup"><span data-stu-id="bad62-214">In the **Available characteristics** field, enter the skill that you're searching for.</span></span>
+7.  <span data-ttu-id="bad62-215">W polu **Typ charakterystyki** zaznacz opcję **Certyfikat**.</span><span class="sxs-lookup"><span data-stu-id="bad62-215">In the **Characteristic type** field, select **Certificate**.</span></span>
+8.  <span data-ttu-id="bad62-216">W polu **Dostępne charakterystyki** wprowadź typ zaświadczenia, którego chcesz poszukać.</span><span class="sxs-lookup"><span data-stu-id="bad62-216">In the **Available characteristics** field, enter the certificate type to search for.</span></span>
+9.  <span data-ttu-id="bad62-217">Kliknij przycisk **OK** i zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="bad62-217">Click **OK**, and close the page.</span></span>
 
-### <a name="assign-a-project-resource-to-a-project"></a>Przypisywanie zasobu projektu do projektu
+### <a name="assign-a-project-resource-to-a-project"></a><span data-ttu-id="bad62-218">Przypisywanie zasobu projektu do projektu</span><span class="sxs-lookup"><span data-stu-id="bad62-218">Assign a project resource to a project</span></span>
 
-1.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Wspólne** &gt; **Projekty** &gt; **Wszystkie projekty** i otwórz projekt **Uaktualnianie XYZ faza 2**.
-2.  Na karcie **Zespół projektu i planowanie** kliknij przycisk **Dodaj**.
-3.  W polu **Rola** zaznacz opcję **Członek zespołu**.
-4.  Kliknij opcję **Rezerwuj z kalendarza**.
-5.  Na stronie **Dostępność zasobów** kliknij opcję **Ustawienia widoku**.
-6.  Na stronie **Dostosuj ustawienia widoku** wprowadź następujące wartości:
-    -   **Format widoku zakresu dat** — Dzień
-    -   **Wyświetl opisy dostępności** — Tak
-    -   **Wyświetlanie pozostałych zdolności produkcyjnych** — Tak
-7.  Na liście zasobów zaznacz zasób.
-8.  Kliknij kolejno opcje **Rezerwacje ostateczne** &gt; **Pełne zdolności produkcyjne**.
-9.  Zamknij stronę.
+1.  <span data-ttu-id="bad62-219">Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Wspólne** &gt; **Projekty** &gt; **Wszystkie projekty** i otwórz projekt **Uaktualnianie XYZ faza 2**.</span><span class="sxs-lookup"><span data-stu-id="bad62-219">Click **Project management and accounting** &gt; **Common** &gt; **Projects** &gt; **All projects**, and open the **XYZ Upgrade Phase 2** project.</span></span>
+2.  <span data-ttu-id="bad62-220">Na karcie **Zespół projektu i planowanie** kliknij przycisk **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="bad62-220">On the **Project team and scheduling** tab, click **Add**.</span></span>
+3.  <span data-ttu-id="bad62-221">W polu **Rola** zaznacz opcję **Członek zespołu**.</span><span class="sxs-lookup"><span data-stu-id="bad62-221">In the **Role** field, select **Team member**.</span></span>
+4.  <span data-ttu-id="bad62-222">Kliknij opcję **Rezerwuj z kalendarza**.</span><span class="sxs-lookup"><span data-stu-id="bad62-222">Click **Book from calendar**.</span></span>
+5.  <span data-ttu-id="bad62-223">Na stronie **Dostępność zasobów** kliknij opcję **Ustawienia widoku**.</span><span class="sxs-lookup"><span data-stu-id="bad62-223">On the **Resource availability** page, click **View settings**.</span></span>
+6.  <span data-ttu-id="bad62-224">Na stronie **Dostosuj ustawienia widoku** wprowadź następujące wartości:</span><span class="sxs-lookup"><span data-stu-id="bad62-224">On the **Adjust view settings** page, enter the following values:</span></span>
+    -   <span data-ttu-id="bad62-225">**Format widoku zakresu dat** — Dzień</span><span class="sxs-lookup"><span data-stu-id="bad62-225">**Format for date range view** - Day</span></span>
+    -   <span data-ttu-id="bad62-226">**Wyświetl opisy dostępności** — Tak</span><span class="sxs-lookup"><span data-stu-id="bad62-226">**Display availability descriptions** - Yes</span></span>
+    -   <span data-ttu-id="bad62-227">**Wyświetlanie pozostałych zdolności produkcyjnych** — Tak</span><span class="sxs-lookup"><span data-stu-id="bad62-227">**Display remaining capacity** - Yes</span></span>
+7.  <span data-ttu-id="bad62-228">Na liście zasobów zaznacz zasób.</span><span class="sxs-lookup"><span data-stu-id="bad62-228">In the list of resources, select a resource.</span></span>
+8.  <span data-ttu-id="bad62-229">Kliknij kolejno opcje **Rezerwacje ostateczne** &gt; **Pełne zdolności produkcyjne**.</span><span class="sxs-lookup"><span data-stu-id="bad62-229">Click **Hard book** &gt; **Full capacity**.</span></span>
+9.  <span data-ttu-id="bad62-230">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="bad62-230">Close the page.</span></span>
 
-### <a name="assign-a-resource-to-a-default-role"></a>Przypisywanie zasobu do roli domyślnej
+### <a name="assign-a-resource-to-a-default-role"></a><span data-ttu-id="bad62-231">Przypisywanie zasobu do roli domyślnej</span><span class="sxs-lookup"><span data-stu-id="bad62-231">Assign a resource to a default role</span></span>
 
-Aby ułatwić pracę kierownikom projektów lub menedżerom zasobów, można przejść do dokładniejszych ustawień zasobów rezerwowanych dla projektu. Można skojarzyć domyślną rolę z istniejącym zasobem lub nowo pozyskanym zasobem. Na przykład kiedy Daniel był zatrudniany, miał doświadczenie i umiejętności niezbędne do roli analityka biznesowego. Menedżer zasobów przypisał tę rolę jako domyślną rolę Daniela. W związku z tym menedżer zasobów dodał Daniela do puli analityków biznesowych, którzy są dostępni do pracy w projektach. 
+<span data-ttu-id="bad62-232">Aby ułatwić pracę kierownikom projektów lub menedżerom zasobów, można przejść do dokładniejszych ustawień zasobów rezerwowanych dla projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-232">To help project or resource managers, you can drill down further on the resources that can be reserved for a project.</span></span> <span data-ttu-id="bad62-233">Można skojarzyć domyślną rolę z istniejącym zasobem lub nowo pozyskanym zasobem.</span><span class="sxs-lookup"><span data-stu-id="bad62-233">You can associate a default role with an existing resource or a newly acquired resource.</span></span> <span data-ttu-id="bad62-234">Na przykład kiedy Daniel był zatrudniany, miał doświadczenie i umiejętności niezbędne do roli analityka biznesowego.</span><span class="sxs-lookup"><span data-stu-id="bad62-234">For example, when Daniel was hired, he had the experience and skills to fill the Business analyst role.</span></span> <span data-ttu-id="bad62-235">Menedżer zasobów przypisał tę rolę jako domyślną rolę Daniela.</span><span class="sxs-lookup"><span data-stu-id="bad62-235">The resource manager assigned this role as Daniel's default role.</span></span> <span data-ttu-id="bad62-236">W związku z tym menedżer zasobów dodał Daniela do puli analityków biznesowych, którzy są dostępni do pracy w projektach.</span><span class="sxs-lookup"><span data-stu-id="bad62-236">Therefore, the resource manager added Daniel to a pool of business analysts who are available to work on projects.</span></span> 
 
-Podczas rezerwowania zasobów kierownicy projektów mogą filtrować zasoby z rolami dostępne do pracy w projektach. Mogą wykorzystywać te informacje jako jedno z kryteriów wielowątkowej analizy decyzyjnej podczas rozdzielania zasobów. Mogą również dodać inne cechy zasobów do filtra w celu wyszukiwania zasobów, które mają określone umiejętności, wykształcenie i doświadczenie dla danego projektu. 
+<span data-ttu-id="bad62-237">Podczas rezerwowania zasobów kierownicy projektów mogą filtrować zasoby z rolami dostępne do pracy w projektach.</span><span class="sxs-lookup"><span data-stu-id="bad62-237">During resource reservation, project managers can filter the role resources that are available to work on projects.</span></span> <span data-ttu-id="bad62-238">Mogą wykorzystywać te informacje jako jedno z kryteriów wielowątkowej analizy decyzyjnej podczas rozdzielania zasobów.</span><span class="sxs-lookup"><span data-stu-id="bad62-238">They can use this information as one criterion when they perform multi-criteria decision analysis during resource fulfillment.</span></span> <span data-ttu-id="bad62-239">Mogą również dodać inne cechy zasobów do filtra w celu wyszukiwania zasobów, które mają określone umiejętności, wykształcenie i doświadczenie dla danego projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-239">They can also add other resource characteristics to the filter to search for resources that have specific skills, education, and experience for a given project.</span></span> 
 
-**Scenariusz:** Rozpoczął się zatwierdzony projekt, a na etapie planowania projektu rola starszego kierownika projektu została zarezerwowana jako planowany zasób. Menedżer zasobów pozyskał zasób mogący wypełniać rolę starszego kierownika projektu.
+<span data-ttu-id="bad62-240">**Scenariusz:** Rozpoczął się zatwierdzony projekt, a na etapie planowania projektu rola starszego kierownika projektu została zarezerwowana jako planowany zasób.</span><span class="sxs-lookup"><span data-stu-id="bad62-240">**Scenario:** An approved project has started, and the Senior project manager role was reserved as a planned resource during the project planning stage.</span></span> <span data-ttu-id="bad62-241">Menedżer zasobów pozyskał zasób mogący wypełniać rolę starszego kierownika projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-241">The resource manager has now acquired a resource to fulfill the Senior project manager role.</span></span>
 
-1.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Zasoby projektu** &gt; **Lista zasobów**.
-2.  Na liście **Zasób** zaznacz pozycję **Daniel Goldschmidt**.
-3.  Kliknij kolejno opcje **Zasób projektu** &gt; **Obsługa** &gt; **Rola zasobu**.
-4.  Kliknij przycisk **Nowy** i wprowadź następujące wartości:
-    -   **Data wprowadzenia** — (bieżąca data)
-    -   **Data wygaśnięcia** — Nigdy
-    -   **Rola** — Starszy kierownik projektu
-5.  Kliknij przycisk **Zapisz** i zamknij stronę.
-6.  Na karcie **Kompetencje** dodaj umiejętność **ProjectMgmt** i certyfikat **PMP**.
+1.  <span data-ttu-id="bad62-242">Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Zasoby projektu** &gt; **Lista zasobów**.</span><span class="sxs-lookup"><span data-stu-id="bad62-242">Click **Project management and accounting** &gt; **Project resources** &gt; **Resources list**.</span></span>
+2.  <span data-ttu-id="bad62-243">Na liście **Zasób** zaznacz pozycję **Daniel Goldschmidt**.</span><span class="sxs-lookup"><span data-stu-id="bad62-243">In the **Resource** list, select **Daniel Goldschmidt**.</span></span>
+3.  <span data-ttu-id="bad62-244">Kliknij kolejno opcje **Zasób projektu** &gt; **Obsługa** &gt; **Rola zasobu**.</span><span class="sxs-lookup"><span data-stu-id="bad62-244">Click **Project resource** &gt; **Maintain** &gt; **Resource role**.</span></span>
+4.  <span data-ttu-id="bad62-245">Kliknij przycisk **Nowy** i wprowadź następujące wartości:</span><span class="sxs-lookup"><span data-stu-id="bad62-245">Click **New**, and enter the following values:</span></span>
+    -   <span data-ttu-id="bad62-246">**Data wprowadzenia** — (bieżąca data)</span><span class="sxs-lookup"><span data-stu-id="bad62-246">**Effective** - (The current date)</span></span>
+    -   <span data-ttu-id="bad62-247">**Data wygaśnięcia** — Nigdy</span><span class="sxs-lookup"><span data-stu-id="bad62-247">**Expiration** - Never</span></span>
+    -   <span data-ttu-id="bad62-248">**Rola** — Starszy kierownik projektu</span><span class="sxs-lookup"><span data-stu-id="bad62-248">**Role** - Senior Project Manager</span></span>
+5.  <span data-ttu-id="bad62-249">Kliknij przycisk **Zapisz** i zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="bad62-249">Click **Save**, and then close the page.</span></span>
+6.  <span data-ttu-id="bad62-250">Na karcie **Kompetencje** dodaj umiejętność **ProjectMgmt** i certyfikat **PMP**.</span><span class="sxs-lookup"><span data-stu-id="bad62-250">On the **Competencies** tab, add the **ProjectMgmt** skill and the **PMP** certificate.</span></span>
 
-## <a name="set-up-role-based-pricing"></a>Konfigurowanie cen opartych na rolach
-Wszystkie koszty, ceny sprzedaży i ceny transferowe można skonfigurować dla ról.
+## <a name="set-up-role-based-pricing"></a><span data-ttu-id="bad62-251">Konfigurowanie cen opartych na rolach</span><span class="sxs-lookup"><span data-stu-id="bad62-251">Set up role-based pricing</span></span>
+<span data-ttu-id="bad62-252">Wszystkie koszty, ceny sprzedaży i ceny transferowe można skonfigurować dla ról.</span><span class="sxs-lookup"><span data-stu-id="bad62-252">All cost, sales, and transfer prices can be set up for roles.</span></span>
 
-1.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Ceny** &gt; **Cena sprzedaży (godzina)**.
-2.  Kliknij przycisk **Nowy**.
-3.  Wprowadź datę wejścia w życie.
-4.  W kolumnie **Rola** zaznacz rolę.
-5.  W kolumnie **Ceny** wprowadź cenę dla wybranej roli zasobu.
+1.  <span data-ttu-id="bad62-253">Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Ceny** &gt; **Cena sprzedaży (godzina)**.</span><span class="sxs-lookup"><span data-stu-id="bad62-253">Click **Project management and accounting** &gt; **Setup** &gt; **Prices** &gt; **Sales price (hour)**.</span></span>
+2.  <span data-ttu-id="bad62-254">Kliknij przycisk **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="bad62-254">Click **New**.</span></span>
+3.  <span data-ttu-id="bad62-255">Wprowadź datę wejścia w życie.</span><span class="sxs-lookup"><span data-stu-id="bad62-255">Enter an effective date.</span></span>
+4.  <span data-ttu-id="bad62-256">W kolumnie **Rola** zaznacz rolę.</span><span class="sxs-lookup"><span data-stu-id="bad62-256">In the **Role** column, select a role.</span></span>
+5.  <span data-ttu-id="bad62-257">W kolumnie **Ceny** wprowadź cenę dla wybranej roli zasobu.</span><span class="sxs-lookup"><span data-stu-id="bad62-257">In the **Pricing** column, enter a price for the selected resource role.</span></span>
 
-## <a name="form-a-project-team"></a>Tworzenie zespołu projektu
-Aby korzystać z ról, które zostały wcześniej skonfigurowane w projekcie, kierownik projektu musi skojarzyć role z projektem. Można przypisać wiele ról w projekcie, a program Finance and Operations automatycznie znakuje te role podczas rezerwowania w celu uniknięcia nieporozumień. Na przykład jeśli kierownik projektu potrzebuje trzech inżynierów oprogramowania, następuje automatyczne wygenerowanie trzech ról inżyniera oprogramowania z etykietami Inżynier oprogramowania 1, Inżynier oprogramowania 2 i Inżynier oprogramowania 3. Jeśli wcześniej skonfigurowano cechy roli, są one stosowane jako filtr podczas wyszukiwania zasobu. W razie potrzeby mogą być dodawane dodatkowe charakterystyki, aby bardziej zawęzić wyszukiwanie. 
+## <a name="form-a-project-team"></a><span data-ttu-id="bad62-258">Tworzenie zespołu projektu</span><span class="sxs-lookup"><span data-stu-id="bad62-258">Form a project team</span></span>
+<span data-ttu-id="bad62-259">Aby korzystać z ról, które zostały wcześniej skonfigurowane w projekcie, kierownik projektu musi skojarzyć role z projektem.</span><span class="sxs-lookup"><span data-stu-id="bad62-259">To use the roles that were previously set up in a project, a project manager must associate the roles with the project.</span></span> <span data-ttu-id="bad62-260">Można przypisać wiele ról w projekcie, a program Finance and Operations automatycznie znakuje te role podczas rezerwowania w celu uniknięcia nieporozumień.</span><span class="sxs-lookup"><span data-stu-id="bad62-260">Multiple roles can be assigned for a project, and Finance and Operations automatically labels these roles during reservation to prevent confusion.</span></span> <span data-ttu-id="bad62-261">Na przykład jeśli kierownik projektu potrzebuje trzech inżynierów oprogramowania, następuje automatyczne wygenerowanie trzech ról inżyniera oprogramowania z etykietami Inżynier oprogramowania 1, Inżynier oprogramowania 2 i Inżynier oprogramowania 3.</span><span class="sxs-lookup"><span data-stu-id="bad62-261">For example, if the project manager requires three software engineers, three Software engineer roles that have software engineer 1, software engineer 2, and software engineer 3 as their labels are automatically generated.</span></span> <span data-ttu-id="bad62-262">Jeśli wcześniej skonfigurowano cechy roli, są one stosowane jako filtr podczas wyszukiwania zasobu.</span><span class="sxs-lookup"><span data-stu-id="bad62-262">If role characteristics were previously set for the role, they are applied as a filter during searches for a resource.</span></span> <span data-ttu-id="bad62-263">W razie potrzeby mogą być dodawane dodatkowe charakterystyki, aby bardziej zawęzić wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="bad62-263">Additional characteristics can be added as required to further refine the search.</span></span> 
 
-Można również dostosować ustawienia widoku, aby lepiej widzieć dostępność zasobów. Istnieją opcje pokazywania dostępności w ujęciu godzinowym, dziennym, tygodniowym, miesięcznym, kwartalnym i rocznym. Dostępna jest także opcja pokazywania dostępnych i pozostałych zdolności produkcyjnych zasobów. Ta opcja jest przydatna dla zarządzania czasem podczas szacowania czasu dostępnego na działania lub czasu dostępności zasobów. 
+<span data-ttu-id="bad62-264">Można również dostosować ustawienia widoku, aby lepiej widzieć dostępność zasobów.</span><span class="sxs-lookup"><span data-stu-id="bad62-264">View settings can also be customized to give a better view of resource availability.</span></span> <span data-ttu-id="bad62-265">Istnieją opcje pokazywania dostępności w ujęciu godzinowym, dziennym, tygodniowym, miesięcznym, kwartalnym i rocznym.</span><span class="sxs-lookup"><span data-stu-id="bad62-265">There are options to show hourly, daily, weekly, monthly, quarterly, and annual availability.</span></span> <span data-ttu-id="bad62-266">Dostępna jest także opcja pokazywania dostępnych i pozostałych zdolności produkcyjnych zasobów.</span><span class="sxs-lookup"><span data-stu-id="bad62-266">There is also an option to show available and remaining capacity on resources.</span></span> <span data-ttu-id="bad62-267">Ta opcja jest przydatna dla zarządzania czasem podczas szacowania czasu dostępnego na działania lub czasu dostępności zasobów.</span><span class="sxs-lookup"><span data-stu-id="bad62-267">This option is useful for time management when you're estimating available time for activities or resource availability.</span></span> 
 
-Kierownik projektu może wybrać rolę na stronie, a następnie — jeśli jest dostępny zasób spełniający zapotrzebowanie — zarezerwować zasób w celu wypełnienia roli. Należy zwrócić uwagę, że zasoby nie muszą być rezerwowane w tym momencie na etapie planowania. Podczas tworzenia SPP można zastąpić role zasobami pracowników dla projektu. Jeśli role zostaną zastąpione zasobami pracowników w SPP, konfiguracja zasobów automatycznie aktualizuje schemat i harmonogram zespołu projektu. 
+<span data-ttu-id="bad62-268">Kierownik projektu może wybrać rolę na stronie, a następnie — jeśli jest dostępny zasób spełniający zapotrzebowanie — zarezerwować zasób w celu wypełnienia roli.</span><span class="sxs-lookup"><span data-stu-id="bad62-268">The project manager can select a role on the page and then, if there is an available resource that fits the requirement, select to reserve a resource to fill the role.</span></span> <span data-ttu-id="bad62-269">Należy zwrócić uwagę, że zasoby nie muszą być rezerwowane w tym momencie na etapie planowania.</span><span class="sxs-lookup"><span data-stu-id="bad62-269">Note that the resources don't have to be reserved at this point during the planning stage.</span></span> <span data-ttu-id="bad62-270">Podczas tworzenia SPP można zastąpić role zasobami pracowników dla projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-270">When you create a WBS, you can replace roles with staffed resources for the project.</span></span> <span data-ttu-id="bad62-271">Jeśli role zostaną zastąpione zasobami pracowników w SPP, konfiguracja zasobów automatycznie aktualizuje schemat i harmonogram zespołu projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-271">If roles are replaced with staffed resources in the WBS, the resource setup automatically updates the project team listing and scheduling.</span></span> 
 
-[![Schemat zespołu projektu zawierający role i rzeczywiste zasoby](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg) 
+<span data-ttu-id="bad62-272">[![Schemat zespołu projektu zawierający role i rzeczywiste zasoby](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg)</span><span class="sxs-lookup"><span data-stu-id="bad62-272">[![Project team listing that includes both roles and actual resources](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg)</span></span> 
 
-Kierownik projektu ma różne opcje rezerwowania zasobu dla projektu, takie jak **Pozostałe zdolności produkcyjne**, **Pełne zdolności produkcyjne**, **Procent zdolności produkcyjnych** i **Określ godziny**. Te opcje rezerwacji można anulować w dowolnym momencie w razie zmiany przydziałów zasobów. Obsługiwane są dwa rodzaje rezerwacji:
+<span data-ttu-id="bad62-273">Kierownik projektu ma różne opcje rezerwowania zasobu dla projektu, takie jak **Pozostałe zdolności produkcyjne**, **Pełne zdolności produkcyjne**, **Procent zdolności produkcyjnych** i **Określ godziny**.</span><span class="sxs-lookup"><span data-stu-id="bad62-273">The project manager has various options for booking a resource for a project, such as **Remaining capacity**, **Full capacity**, **Capacity percentage**, and **Specify hours**.</span></span> <span data-ttu-id="bad62-274">Te opcje rezerwacji można anulować w dowolnym momencie w razie zmiany przydziałów zasobów.</span><span class="sxs-lookup"><span data-stu-id="bad62-274">These booking options can be canceled at any time if resource assignments change.</span></span> <span data-ttu-id="bad62-275">Obsługiwane są dwa rodzaje rezerwacji:</span><span class="sxs-lookup"><span data-stu-id="bad62-275">Two types of booking are supported:</span></span>
 
--   **Rezerwacje ostateczne** — rezerwacja zasobu została zatwierdzona i potwierdzona do pracy nad projektem przez określony czas.
--   **Rezerwacje wstępne** — rezerwacja zasobu została wstępnie ustawiona do pracy nad projektem przez określony czas.
+-   <span data-ttu-id="bad62-276">**Rezerwacje ostateczne** — rezerwacja zasobu została zatwierdzona i potwierdzona do pracy nad projektem przez określony czas.</span><span class="sxs-lookup"><span data-stu-id="bad62-276">**Hard Book** – The resource reservation was approved and confirmed to work on the engagement for the specified duration.</span></span>
+-   <span data-ttu-id="bad62-277">**Rezerwacje wstępne** — rezerwacja zasobu została wstępnie ustawiona do pracy nad projektem przez określony czas.</span><span class="sxs-lookup"><span data-stu-id="bad62-277">**Soft book** – The resource reservations was tentatively set to work on the engagement for the specified duration.</span></span>
 
-Poniżej znajduje się procedura wyjaśniająca tworzenie zespołu projektu.
+<span data-ttu-id="bad62-278">Poniżej znajduje się procedura wyjaśniająca tworzenie zespołu projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-278">The following procedure explains how to create a project team.</span></span>
 
-### <a name="create-a-project-team"></a>Tworzenie zespołu projektu
+### <a name="create-a-project-team"></a><span data-ttu-id="bad62-279">Tworzenie zespołu projektu</span><span class="sxs-lookup"><span data-stu-id="bad62-279">Create a project team</span></span>
 
-1.  Na stronie listy **Wszystkie projekty** zaznacz projekt, a następnie kliknij przycisk **Edytuj**.
-2.  Na karcie **Zespół projektu i planowanie** w polu **Zaplanuj datę rozpoczęcia** wprowadź datę rozpoczęcia harmonogramu plus jeden miesiąc. Na przykład jeśli datą początkową harmonogramu jest 24 czerwca 2017 r. (24.06.2017), wprowadź **24.07.2017**.
-3.  Kliknij przycisk **Dodaj**.
-4.  W okienku **Dodaj role do projektu** w polu **Role** wybierz opcję **Starszy kierownik projektu**.
-5.  Kliknij opcję **Wymagane kompetencje**.
-6.  Na stronie **Wybierz charakterystyki** są domyślnie zaznaczone cechy, które zostały wcześniej ustawione dla roli Starszy kierownik projektu. Kliknij przycisk **OK**
-7.  Na stronie **Dodaj role do projektu** w polu **Liczba zasobów** wprowadź **1**.
-8.  W polu **Zasób** w wynikach wyszukiwania będą widoczne wszystkie zasoby posiadające wymagane kompetencje. Zaznacz pozycję **Daniel Goldschmidt**, a następnie kliknij przycisk **Utwórz**.
-9.  Na stronie **Projekt** kliknij przycisk **Dodaj**.
-10. W okienku **Dodaj role do projektu** w polu **Role** wybierz opcję **Członek zespołu**. W polu **Liczba zasobów** wpisz **5**.
-11. Kliknij **Utwórz**.
-12. Na stronie **Projekty** kliknij opcję **Wykorzystaj zasób**.
+1.  <span data-ttu-id="bad62-280">Na stronie listy **Wszystkie projekty** zaznacz projekt, a następnie kliknij przycisk **Edytuj**.</span><span class="sxs-lookup"><span data-stu-id="bad62-280">On the **All projects** list page, select a project, and then click **Edit**.</span></span>
+2.  <span data-ttu-id="bad62-281">Na karcie **Zespół projektu i planowanie** w polu **Zaplanuj datę rozpoczęcia** wprowadź datę rozpoczęcia harmonogramu plus jeden miesiąc.</span><span class="sxs-lookup"><span data-stu-id="bad62-281">On the **Project team and scheduling** tab, in the **Schedule end date** field, enter the schedule start date plus one month.</span></span> <span data-ttu-id="bad62-282">Na przykład jeśli datą początkową harmonogramu jest 24 czerwca 2017 r. (24.06.2017), wprowadź **24.07.2017**.</span><span class="sxs-lookup"><span data-stu-id="bad62-282">For example, if the schedule start date is June 24, 2017 (24/06/2017), enter **24/07/2017**.</span></span>
+3.  <span data-ttu-id="bad62-283">Kliknij przycisk **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="bad62-283">Click **Add**.</span></span>
+4.  <span data-ttu-id="bad62-284">W okienku **Dodaj role do projektu** w polu **Role** wybierz opcję **Starszy kierownik projektu**.</span><span class="sxs-lookup"><span data-stu-id="bad62-284">In the **Add roles to the project** pane, in the **Role** field, select **Senior Project Manager**.</span></span>
+5.  <span data-ttu-id="bad62-285">Kliknij opcję **Wymagane kompetencje**.</span><span class="sxs-lookup"><span data-stu-id="bad62-285">Click **Required competencies**.</span></span>
+6.  <span data-ttu-id="bad62-286">Na stronie **Wybierz charakterystyki** są domyślnie zaznaczone cechy, które zostały wcześniej ustawione dla roli Starszy kierownik projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-286">On the **Choose characteristics** page, the characteristics that you previously set for the Senior project manager role are selected by default.</span></span> <span data-ttu-id="bad62-287">Kliknij przycisk **OK**</span><span class="sxs-lookup"><span data-stu-id="bad62-287">Click **OK**.</span></span>
+7.  <span data-ttu-id="bad62-288">Na stronie **Dodaj role do projektu** w polu **Liczba zasobów** wprowadź **1**.</span><span class="sxs-lookup"><span data-stu-id="bad62-288">On the **Add roles to project** page, in the **Number of resources** field, enter **1**.</span></span>
+8.  <span data-ttu-id="bad62-289">W polu **Zasób** w wynikach wyszukiwania będą widoczne wszystkie zasoby posiadające wymagane kompetencje.</span><span class="sxs-lookup"><span data-stu-id="bad62-289">In the **Resource** field, the lookup shows all resources that have the required competencies.</span></span> <span data-ttu-id="bad62-290">Zaznacz pozycję **Daniel Goldschmidt**, a następnie kliknij przycisk **Utwórz**.</span><span class="sxs-lookup"><span data-stu-id="bad62-290">Select **Daniel Goldschmidt**, and then click **Create**.</span></span>
+9.  <span data-ttu-id="bad62-291">Na stronie **Projekt** kliknij przycisk **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="bad62-291">On the **Project** page, click **Add**.</span></span>
+10. <span data-ttu-id="bad62-292">W okienku **Dodaj role do projektu** w polu **Role** wybierz opcję **Członek zespołu**.</span><span class="sxs-lookup"><span data-stu-id="bad62-292">In the **Add roles to the project** pane, in the **Role** field, select **Team member**.</span></span> <span data-ttu-id="bad62-293">W polu **Liczba zasobów** wpisz **5**.</span><span class="sxs-lookup"><span data-stu-id="bad62-293">In the **Number of resources** field, enter **5**.</span></span>
+11. <span data-ttu-id="bad62-294">Kliknij **Utwórz**.</span><span class="sxs-lookup"><span data-stu-id="bad62-294">Click **Create**.</span></span>
+12. <span data-ttu-id="bad62-295">Na stronie **Projekty** kliknij opcję **Wykorzystaj zasób**.</span><span class="sxs-lookup"><span data-stu-id="bad62-295">On the **Projects** page, click **Fulfill resource**.</span></span>
 
-## <a name="resource-capacity-synchronization"></a>Synchronizacja zdolności produkcyjnych zasobu
-Procesy synchronizacji zasobów pomagają zagwarantować, że informacje kalendarza i kalendarza podstawowego są przekazywane do czynności planowania zasobów projektu. Jeśli kalendarz zostanie zmieniony, procesy dokonują wymaganych aktualizacji harmonogramów zasobów projektu. Procesy pomagają również zwiększyć wydajność, ponieważ informacje zasobach zawarte w kalendarzach są synchronizowane z wyprzedzeniem, tak aby aktualizacje informacji o zaplanowaniu zasobów były wykonywane szybciej. Zaleca się planowanie procesów jako zadanie wsadowe, a nie jednostkowe. W przeciwnym razie istnieje ryzyko, że ktoś może zapomnieć włącznych dat ostatniej synchronizacji. Jeśli nie są używane daty włączne, mogą występować przerwy podczas synchronizacji dat.
+## <a name="resource-capacity-synchronization"></a><span data-ttu-id="bad62-296">Synchronizacja zdolności produkcyjnych zasobu</span><span class="sxs-lookup"><span data-stu-id="bad62-296">Resource capacity synchronization</span></span>
+<span data-ttu-id="bad62-297">Procesy synchronizacji zasobów pomagają zagwarantować, że informacje kalendarza i kalendarza podstawowego są przekazywane do czynności planowania zasobów projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-297">The processes for resource synchronization helps guarantee that the calendar and base calendar information trickles down into project resource scheduling.</span></span> <span data-ttu-id="bad62-298">Jeśli kalendarz zostanie zmieniony, procesy dokonują wymaganych aktualizacji harmonogramów zasobów projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-298">If the calendar is changed, the processes make the required updates to the scheduling of project resources.</span></span> <span data-ttu-id="bad62-299">Procesy pomagają również zwiększyć wydajność, ponieważ informacje zasobach zawarte w kalendarzach są synchronizowane z wyprzedzeniem, tak aby aktualizacje informacji o zaplanowaniu zasobów były wykonywane szybciej.</span><span class="sxs-lookup"><span data-stu-id="bad62-299">The processes also help improve performance, because the calendar’s resource information is synchronized in advance, so that updates to resource scheduling information occur more quickly.</span></span> <span data-ttu-id="bad62-300">Zaleca się planowanie procesów jako zadanie wsadowe, a nie jednostkowe.</span><span class="sxs-lookup"><span data-stu-id="bad62-300">We recommend that you schedule the processes as a batch instead of one at a time.</span></span> <span data-ttu-id="bad62-301">W przeciwnym razie istnieje ryzyko, że ktoś może zapomnieć włącznych dat ostatniej synchronizacji.</span><span class="sxs-lookup"><span data-stu-id="bad62-301">Otherwise, there is a risk that someone will forget the inclusive dates when the information was last synchronized.</span></span> <span data-ttu-id="bad62-302">Jeśli nie są używane daty włączne, mogą występować przerwy podczas synchronizacji dat.</span><span class="sxs-lookup"><span data-stu-id="bad62-302">If inclusive dates aren't used, gaps can occur during date synchronization.</span></span>
 
 ### <a name="calendar-synchronizationmediaprojectresourcing04-1024x471jpg"></a>![Synchronizacja kalendarza](./media/projectresourcing04-1024x471.jpg)
 
-**Synchronizuj zestawienia zdolności produkcyjnych zasobów**
+<span data-ttu-id="bad62-304">**Synchronizuj zestawienia zdolności produkcyjnych zasobów**</span><span class="sxs-lookup"><span data-stu-id="bad62-304">**Synchronize resource capacity roll-ups**</span></span>
 
-Proces synchronizacji jest zaprojektowany do synchronizowania wszystkich informacji w kalendarzu zasobów. Informacje te obejmują dane kalendarza podstawowego o wszelkich zmianach w tabeli zdolności produkcyjnych kalendarza zasobów projektu. Jeśli w projekcie są dodawane nowe zasoby, synchronizacja pomaga zapewnić dostępność zaktualizowanych informacji kalendarza. Tę synchronizację można wykonać w dowolnym czasie. 
+<span data-ttu-id="bad62-305">Proces synchronizacji jest zaprojektowany do synchronizowania wszystkich informacji w kalendarzu zasobów.</span><span class="sxs-lookup"><span data-stu-id="bad62-305">The synchronization process is designed to synchronize all resource calendar information.</span></span> <span data-ttu-id="bad62-306">Informacje te obejmują dane kalendarza podstawowego o wszelkich zmianach w tabeli zdolności produkcyjnych kalendarza zasobów projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-306">This information includes base calendar information about any changes to the project’s Resource calendar capacity table.</span></span> <span data-ttu-id="bad62-307">Jeśli w projekcie są dodawane nowe zasoby, synchronizacja pomaga zapewnić dostępność zaktualizowanych informacji kalendarza.</span><span class="sxs-lookup"><span data-stu-id="bad62-307">If new resources are added in the project, synchronization helps ensure that the updated calendar information is available.</span></span> <span data-ttu-id="bad62-308">Tę synchronizację można wykonać w dowolnym czasie.</span><span class="sxs-lookup"><span data-stu-id="bad62-308">This synchronization can be done at any time.</span></span> 
 
-Zaleca się używanie procesu wsadowego. Odpowiednie opcje są dostępne podczas synchronizowania rezerwacji zdolności produkcyjnych.
+<span data-ttu-id="bad62-309">Zaleca się używanie procesu wsadowego.</span><span class="sxs-lookup"><span data-stu-id="bad62-309">We recommend that you use a batch.</span></span> <span data-ttu-id="bad62-310">Odpowiednie opcje są dostępne podczas synchronizowania rezerwacji zdolności produkcyjnych.</span><span class="sxs-lookup"><span data-stu-id="bad62-310">The options are available in synchronizing capacity reservations.</span></span>
 
--   Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Okresowe** &gt; **Synchronizacja zdolności produkcyjnych** &gt; **Synchronizuj zestawienia zdolności produkcyjnych zasobów**.
+-   <span data-ttu-id="bad62-311">Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Okresowe** &gt; **Synchronizacja zdolności produkcyjnych** &gt; **Synchronizuj zestawienia zdolności produkcyjnych zasobów**.</span><span class="sxs-lookup"><span data-stu-id="bad62-311">Click **Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resources capacity roll-ups**.</span></span>
 
-| Opcja | opis                                                                                                                                                                                          |
+| <span data-ttu-id="bad62-312">Opcja</span><span class="sxs-lookup"><span data-stu-id="bad62-312">Option</span></span> | <span data-ttu-id="bad62-313">opis</span><span class="sxs-lookup"><span data-stu-id="bad62-313">Description</span></span>                                                                                                                                                                                          |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tak    | Synchronizowanie wszystkich danych zasobów z informacjami w kalendarzu i kalendarzu podstawowym oraz zastępowanie wszystkich informacji w kalendarzu zdolności produkcyjnych zasobów w projekcie.                                                  |
-| Nie     | Synchronizowanie danych zasobów na podstawie kodu przedziału dat oraz określonych dat rozpoczęcia i zakończenia. Ta opcja nie usuwa istniejących danych, a informacje aktualizuje tylko dla nowo dodanych zasobów. |
+| <span data-ttu-id="bad62-314">Tak</span><span class="sxs-lookup"><span data-stu-id="bad62-314">Yes</span></span>    | <span data-ttu-id="bad62-315">Synchronizowanie wszystkich danych zasobów z informacjami w kalendarzu i kalendarzu podstawowym oraz zastępowanie wszystkich informacji w kalendarzu zdolności produkcyjnych zasobów w projekcie.</span><span class="sxs-lookup"><span data-stu-id="bad62-315">Synchronize all resource data with calendar and base calendar information, and replace all information in the project's resource capacity calendar.</span></span>                                                  |
+| <span data-ttu-id="bad62-316">Nie</span><span class="sxs-lookup"><span data-stu-id="bad62-316">No</span></span>     | <span data-ttu-id="bad62-317">Synchronizowanie danych zasobów na podstawie kodu przedziału dat oraz określonych dat rozpoczęcia i zakończenia.</span><span class="sxs-lookup"><span data-stu-id="bad62-317">Synchronize resource data, based on the date interval code, and the specified start and end dates.</span></span> <span data-ttu-id="bad62-318">Ta opcja nie usuwa istniejących danych, a informacje aktualizuje tylko dla nowo dodanych zasobów.</span><span class="sxs-lookup"><span data-stu-id="bad62-318">This option doesn't remove existing data, and updates information only for newly added resources.</span></span> |
 
-[![Proces synchronizacji](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)
+<span data-ttu-id="bad62-319">[![Proces synchronizacji](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)</span><span class="sxs-lookup"><span data-stu-id="bad62-319">[![Synchronization process](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)</span></span>
 
-## <a name="set-up-roles-on-wbs-templates"></a>Konfigurowanie ról w szablonach SPP
-Kierownicy projektów mogą skonfigurować szablony SPP, które będą stosować podczas tworzenia SPP dla nowych projektów. Kierownicy projektów mogą dodawać role podczas tworzenia szablonów. Poniższa procedura umożliwia przypisanie roli do szablonu struktury podziału pracy.** **
+## <a name="set-up-roles-on-wbs-templates"></a><span data-ttu-id="bad62-320">Konfigurowanie ról w szablonach SPP</span><span class="sxs-lookup"><span data-stu-id="bad62-320">Set up roles on WBS templates</span></span>
+<span data-ttu-id="bad62-321">Kierownicy projektów mogą skonfigurować szablony SPP, które będą stosować podczas tworzenia SPP dla nowych projektów.</span><span class="sxs-lookup"><span data-stu-id="bad62-321">Project managers can set up WBS templates that they can apply when they create a WBS for new projects.</span></span> <span data-ttu-id="bad62-322">Kierownicy projektów mogą dodawać role podczas tworzenia szablonów.</span><span class="sxs-lookup"><span data-stu-id="bad62-322">Project managers can add roles when they create a template.</span></span> <span data-ttu-id="bad62-323">Poniższa procedura umożliwia przypisanie roli do szablonu struktury podziału pracy.** **</span><span class="sxs-lookup"><span data-stu-id="bad62-323">Use the following procedure to assign a role to a WBS template.** **</span></span>
 
-1.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Projekty** &gt; **Szablony struktury podziału pracy**.
-2.  Kliknij przycisk **Szczegóły** obok wybranego szablonu struktury podziału pracy.
-3.  Wybierz zadanie na liście, a następnie w polu **Rola** wybierz rolę, którą chcesz przypisać do zadania.
+1.  <span data-ttu-id="bad62-324">Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Projekty** &gt; **Szablony struktury podziału pracy**.</span><span class="sxs-lookup"><span data-stu-id="bad62-324">Click **Project management and accounting** &gt; **Setup** &gt; **Projects** &gt; **Work breakdown structure templates**.</span></span>
+2.  <span data-ttu-id="bad62-325">Kliknij przycisk **Szczegóły** obok wybranego szablonu struktury podziału pracy.</span><span class="sxs-lookup"><span data-stu-id="bad62-325">Click **Details** for a selected WBS template.</span></span>
+3.  <span data-ttu-id="bad62-326">Wybierz zadanie na liście, a następnie w polu **Rola** wybierz rolę, którą chcesz przypisać do zadania.</span><span class="sxs-lookup"><span data-stu-id="bad62-326">Select a task in the list, and then, in the **Role** field, select a role to assign to the task.</span></span>
 
-### <a name="work-with-a-wbs"></a>Praca z SPP
+### <a name="work-with-a-wbs"></a><span data-ttu-id="bad62-327">Praca z SPP</span><span class="sxs-lookup"><span data-stu-id="bad62-327">Work with a WBS</span></span>
 
-Można utworzyć nową SPP albo skopiować SPP z istniejącego szablonu struktury podziału pracy. Kierownik projektu może łatwo zarządzać zasobami poprzez przypisywanie ról do nowych zadań w SPP. Role mogą być zastępowane po pozyskaniu zasobu lub po zidentyfikowaniu potwierdzonego zasobu do pracy nad zadaniem. Ta elastyczność umożliwia kierownikom projektów wykonywanie następujących zadań:
+<span data-ttu-id="bad62-328">Można utworzyć nową SPP albo skopiować SPP z istniejącego szablonu struktury podziału pracy.</span><span class="sxs-lookup"><span data-stu-id="bad62-328">You can create a new WBS, or you can copy a WBS from an existing WBS template.</span></span> <span data-ttu-id="bad62-329">Kierownik projektu może łatwo zarządzać zasobami poprzez przypisywanie ról do nowych zadań w SPP.</span><span class="sxs-lookup"><span data-stu-id="bad62-329">A project manager can easily manage the resources by assigning roles to new tasks on the WBS.</span></span> <span data-ttu-id="bad62-330">Role mogą być zastępowane po pozyskaniu zasobu lub po zidentyfikowaniu potwierdzonego zasobu do pracy nad zadaniem.</span><span class="sxs-lookup"><span data-stu-id="bad62-330">Roles can be replaced after a resource is acquired, or after a confirmed resource to work on the task is identified.</span></span> <span data-ttu-id="bad62-331">Ta elastyczność umożliwia kierownikom projektów wykonywanie następujących zadań:</span><span class="sxs-lookup"><span data-stu-id="bad62-331">This flexibility lets project managers perform the following tasks:</span></span>
 
--   Identyfikacja liczby zasobów wymaganych dla pakietów prac w SPP.
--   Szacowanie kosztów projektów.
--   Określanie budżetu wstępnego.
--   Szacowanie czasu trwania działań na podstawie ról i zasobów.
--   Opracowanie pewnych planów zarządzania projektami na podstawie dostępnych informacji o projektach.
+-   <span data-ttu-id="bad62-332">Identyfikacja liczby zasobów wymaganych dla pakietów prac w SPP.</span><span class="sxs-lookup"><span data-stu-id="bad62-332">Identify the number of resources that are required for WBS work packages.</span></span>
+-   <span data-ttu-id="bad62-333">Szacowanie kosztów projektów.</span><span class="sxs-lookup"><span data-stu-id="bad62-333">Estimate project costs.</span></span>
+-   <span data-ttu-id="bad62-334">Określanie budżetu wstępnego.</span><span class="sxs-lookup"><span data-stu-id="bad62-334">Determine a preliminary budget.</span></span>
+-   <span data-ttu-id="bad62-335">Szacowanie czasu trwania działań na podstawie ról i zasobów.</span><span class="sxs-lookup"><span data-stu-id="bad62-335">Estimate activity duration, based on roles and resources.</span></span>
+-   <span data-ttu-id="bad62-336">Opracowanie pewnych planów zarządzania projektami na podstawie dostępnych informacji o projektach.</span><span class="sxs-lookup"><span data-stu-id="bad62-336">Develop some project management plans, based on the available project information.</span></span>
 
-W SPP zostały dodane nowe opcje pomagające lepiej wykorzystywać funkcje organizowania zasobów.
+<span data-ttu-id="bad62-337">W SPP zostały dodane nowe opcje pomagające lepiej wykorzystywać funkcje organizowania zasobów.</span><span class="sxs-lookup"><span data-stu-id="bad62-337">Additional options have been added in the WBS to better use the resourcing functionality.</span></span>
 
 <table>
 <colgroup>
@@ -266,95 +266,95 @@ W SPP zostały dodane nowe opcje pomagające lepiej wykorzystywać funkcje organ
 </colgroup>
 <thead>
 <tr class="header">
-<th>Opcja</th>
-<th>Opis</th>
+<th><span data-ttu-id="bad62-338">Opcja</span><span class="sxs-lookup"><span data-stu-id="bad62-338">Option</span></span></th>
+<th><span data-ttu-id="bad62-339">Opis</span><span class="sxs-lookup"><span data-stu-id="bad62-339">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Przypisania zasobów</td>
-<td>Wyświetlanie przydzielonych zasobów, dat, liczby godzin i typu rezerwacji dla zadań w SPP.</td>
+<td><span data-ttu-id="bad62-340">Przypisania zasobów</span><span class="sxs-lookup"><span data-stu-id="bad62-340">Resource assignments</span></span></td>
+<td><span data-ttu-id="bad62-341">Wyświetlanie przydzielonych zasobów, dat, liczby godzin i typu rezerwacji dla zadań w SPP.</span><span class="sxs-lookup"><span data-stu-id="bad62-341">View the assigned resources, dates, number of hours, and booking type for tasks on the WBS.</span></span></td>
 </tr>
 <tr class="even">
-<td>Automatycznie generuj zespół</td>
-<td>Automatyczne dodawanie zaplanowanych zasobów przy użyciu ról skojarzonych z zadaniem. Program Finance and Operations automatycznie sugeruje zaplanowane zasoby na podstawie wyników wielowątkowej analizy decyzyjnej opartej na rolach. Po skonfigurowaniu ról i nakładu pracy (w godzinach) dla zadań w SPP i zwolnieniu struktury kliknij przycisk <strong>Automatycznie generuj zespół</strong>. Wymagana liczba zaplanowanych zasobów zostanie dodana do SPP i karty <strong>Zespół projektu i planowanie</strong>.</td>
+<td><span data-ttu-id="bad62-342">Automatycznie generuj zespół</span><span class="sxs-lookup"><span data-stu-id="bad62-342">Auto generate team</span></span></td>
+<td><span data-ttu-id="bad62-343">Automatyczne dodawanie zaplanowanych zasobów przy użyciu ról skojarzonych z zadaniem.</span><span class="sxs-lookup"><span data-stu-id="bad62-343">Automatically add planned resources by using roles that are associated with a task.</span></span> <span data-ttu-id="bad62-344">Program Finance and Operations automatycznie sugeruje zaplanowane zasoby na podstawie wyników wielowątkowej analizy decyzyjnej opartej na rolach.</span><span class="sxs-lookup"><span data-stu-id="bad62-344">Finance and Operations automatically suggests planned resources by using multi-criteria decision analysis that is based on roles.</span></span> <span data-ttu-id="bad62-345">Po skonfigurowaniu ról i nakładu pracy (w godzinach) dla zadań w SPP i zwolnieniu struktury kliknij przycisk <strong>Automatycznie generuj zespół</strong>.</span><span class="sxs-lookup"><span data-stu-id="bad62-345">After the roles and effort (hours) have been set for the tasks in a WBS, and the structure has been released, click <strong>Auto generate team</strong>.</span></span> <span data-ttu-id="bad62-346">Wymagana liczba zaplanowanych zasobów zostanie dodana do SPP i karty <strong>Zespół projektu i planowanie</strong>.</span><span class="sxs-lookup"><span data-stu-id="bad62-346">The required number of planned resources is added to the WBS and the <strong>Project and team scheduling</strong> tab.</span></span></td>
 </tr>
 <tr class="odd">
-<td>Zasób (lista rozwijana)</td>
-<td>Na stronie <strong>Uruchom formularz przypisania zasobu</strong> można wybrać zasoby do rezerwacji ostatecznych lub wstępnych na podstawie określonego czasu trwania. Można dostosować ustawienia widoku, aby zobaczyć i ustawić czas trwania działań zasobu. Można wybierać i przypisywać zasoby na poziomie pakietu prac za pomocą następujących opcji:
+<td><span data-ttu-id="bad62-347">Zasób (lista rozwijana)</span><span class="sxs-lookup"><span data-stu-id="bad62-347">Resource (drop-down list)</span></span></td>
+<td><span data-ttu-id="bad62-348">Na stronie <strong>Uruchom formularz przypisania zasobu</strong> można wybrać zasoby do rezerwacji ostatecznych lub wstępnych na podstawie określonego czasu trwania.</span><span class="sxs-lookup"><span data-stu-id="bad62-348">On the <strong>Launch resource assignment </strong>page, you can select resources to hard-book or soft-book, based on the specified duration.</span></span> <span data-ttu-id="bad62-349">Można dostosować ustawienia widoku, aby zobaczyć i ustawić czas trwania działań zasobu.</span><span class="sxs-lookup"><span data-stu-id="bad62-349">You can adjust the view settings to see and set the duration of resource activities.</span></span> <span data-ttu-id="bad62-350">Można wybierać i przypisywać zasoby na poziomie pakietu prac za pomocą następujących opcji:</span><span class="sxs-lookup"><span data-stu-id="bad62-350">You can select and assign resources at the work package level by using the following options:</span></span>
 <ul>
-<li><strong>Akceptuj</strong> — potwierdzenie modyfikacji zasobu przypisanego do zadania.</li>
-<li><strong>Anuluj</strong> — anulowanie modyfikacji zasobu przypisanego do zadania.</li>
-<li><strong>Przypisz automatycznie</strong> — ta opcji powoduje wybranie dostępnego zasobu pracownika z rolą pasującą do zaznaczonego zadania.</li>
+<li><span data-ttu-id="bad62-351"><strong>Akceptuj</strong> — potwierdzenie modyfikacji zasobu przypisanego do zadania.</span><span class="sxs-lookup"><span data-stu-id="bad62-351"><strong>Accept</strong> – Confirm changes to the resource that is assigned to a task.</span></span></li>
+<li><span data-ttu-id="bad62-352"><strong>Anuluj</strong> — anulowanie modyfikacji zasobu przypisanego do zadania.</span><span class="sxs-lookup"><span data-stu-id="bad62-352"><strong>Cancel</strong> – Cancel changes to the resource that is assigned to a task.</span></span></li>
+<li><span data-ttu-id="bad62-353"><strong>Przypisz automatycznie</strong> — ta opcji powoduje wybranie dostępnego zasobu pracownika z rolą pasującą do zaznaczonego zadania.</span><span class="sxs-lookup"><span data-stu-id="bad62-353"><strong>Assign automatically</strong> – This option selects an available staffed resource with a matching role to the selected task.</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-1.  Kliknij kolejno **Zarządzanie projektami i ich księgowanie** &gt; **Projekty** &gt; **Wszystkie projekty**.
-2.  Z listy wybierz projekt **Uaktualnianie XYZ faza 2**.
-3.  Kliknij kolejno opcje **Plan** &gt; **Działania** &gt; **Struktura podziału pracy**.
-4.  Kliknij przycisk **Nowy**, aby dodać następujące działania pierwszego poziomu do struktury podziału pracy:
-    -   Inicjowanie
-    -   Planowanie
-    -   W trakcie
-    -   Monitorowanie i kontrola
-    -   Zamknij
+1.  <span data-ttu-id="bad62-354">Kliknij kolejno **Zarządzanie projektami i ich księgowanie** &gt; **Projekty** &gt; **Wszystkie projekty**.</span><span class="sxs-lookup"><span data-stu-id="bad62-354">Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.</span></span>
+2.  <span data-ttu-id="bad62-355">Z listy wybierz projekt **Uaktualnianie XYZ faza 2**.</span><span class="sxs-lookup"><span data-stu-id="bad62-355">In the list, select the **XYZ Upgrade Phase 2** project.</span></span>
+3.  <span data-ttu-id="bad62-356">Kliknij kolejno opcje **Plan** &gt; **Działania** &gt; **Struktura podziału pracy**.</span><span class="sxs-lookup"><span data-stu-id="bad62-356">Click **Plan** &gt; **Activities** &gt; **Work breakdown structure**.</span></span>
+4.  <span data-ttu-id="bad62-357">Kliknij przycisk **Nowy**, aby dodać następujące działania pierwszego poziomu do struktury podziału pracy:</span><span class="sxs-lookup"><span data-stu-id="bad62-357">Click **New** to add the following level-one activities to the WBS:</span></span>
+    -   <span data-ttu-id="bad62-358">Inicjowanie</span><span class="sxs-lookup"><span data-stu-id="bad62-358">Initiating</span></span>
+    -   <span data-ttu-id="bad62-359">Planowanie</span><span class="sxs-lookup"><span data-stu-id="bad62-359">Planning</span></span>
+    -   <span data-ttu-id="bad62-360">W trakcie</span><span class="sxs-lookup"><span data-stu-id="bad62-360">Executing</span></span>
+    -   <span data-ttu-id="bad62-361">Monitorowanie i kontrola</span><span class="sxs-lookup"><span data-stu-id="bad62-361">Monitoring and Control</span></span>
+    -   <span data-ttu-id="bad62-362">Zamknij</span><span class="sxs-lookup"><span data-stu-id="bad62-362">Close</span></span>
 
-5.  Ustaw daty i nakład pracy (w godzinach), jak to przedstawiono w poniższym zrzucie ekranu.[![Ustawienie dat i nakładu pracy](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)
-6.  Wybierz wiersz zadania **Inicjowanie**, a następnie w polu **Rola** wybierz opcję **Starszy kierownik projektu**.
-7.  Kliknij przycisk **Publikuj**.
-8.  W tym samym wierszu w polu **Zasoby** zaznacz element **Danielowi Goldschmidt**.
-9.  Kliknij przycisk **Akceptuj**.
-10. Wybierz wiersz zadania **Planowanie**, a następnie w polu **Rola** wybierz opcję **Analityk biznesowy**.
-11. Kliknij kolejno opcje **Publikuj** i **Automatycznie generuj zespół**.
-12. W wyświetlonym oknie dialogowym kliknij przycisk **Tak**.
-13. W polu **Zasoby** sprawdź, czy wartość to **Analityk biznesowy 1**.
-14. Dla zasobu **Analityk biznesowy 1** otwórz wyszukiwanie i kliknij przycisk **Uruchom formularz przypisania zasobów**.
-15. Wybierz pracownika dla zadania.
-16. Kliknij kolejno opcje **Przypisz wstępnie** &gt; **Pełne zdolności produkcyjne**.
-17. Kliknij przycisk **Zapisz** i zamknij stronę. 
+5.  <span data-ttu-id="bad62-363">Ustaw daty i nakład pracy (w godzinach), jak to przedstawiono w poniższym zrzucie ekranu.[![Ustawienie dat i nakładu pracy](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)</span><span class="sxs-lookup"><span data-stu-id="bad62-363">Set the dates and effort (hours), as shown in the following screenshot.[![Setting the dates and effort](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)</span></span>
+6.  <span data-ttu-id="bad62-364">Wybierz wiersz zadania **Inicjowanie**, a następnie w polu **Rola** wybierz opcję **Starszy kierownik projektu**.</span><span class="sxs-lookup"><span data-stu-id="bad62-364">Select the **Initiating** task line, and then, in the **Role** field, select **Senior Project Manager**.</span></span>
+7.  <span data-ttu-id="bad62-365">Kliknij przycisk **Publikuj**.</span><span class="sxs-lookup"><span data-stu-id="bad62-365">Click **Publish**.</span></span>
+8.  <span data-ttu-id="bad62-366">W tym samym wierszu w polu **Zasoby** zaznacz element **Danielowi Goldschmidt**.</span><span class="sxs-lookup"><span data-stu-id="bad62-366">On the same line, in the **Resource** field, select **Daniel Goldschmidt**.</span></span>
+9.  <span data-ttu-id="bad62-367">Kliknij przycisk **Akceptuj**.</span><span class="sxs-lookup"><span data-stu-id="bad62-367">Click **Accept**.</span></span>
+10. <span data-ttu-id="bad62-368">Wybierz wiersz zadania **Planowanie**, a następnie w polu **Rola** wybierz opcję **Analityk biznesowy**.</span><span class="sxs-lookup"><span data-stu-id="bad62-368">Select the **Planning** task line, and then, in the **Role** field, select **Business analyst**.</span></span>
+11. <span data-ttu-id="bad62-369">Kliknij kolejno opcje **Publikuj** i **Automatycznie generuj zespół**.</span><span class="sxs-lookup"><span data-stu-id="bad62-369">Click **Publish**, and then click **Auto generate team**.</span></span>
+12. <span data-ttu-id="bad62-370">W wyświetlonym oknie dialogowym kliknij przycisk **Tak**.</span><span class="sxs-lookup"><span data-stu-id="bad62-370">In the dialog box that appears, click **Yes**.</span></span>
+13. <span data-ttu-id="bad62-371">W polu **Zasoby** sprawdź, czy wartość to **Analityk biznesowy 1**.</span><span class="sxs-lookup"><span data-stu-id="bad62-371">In the **Resource** field, verify that the value is **Business analyst 1**.</span></span>
+14. <span data-ttu-id="bad62-372">Dla zasobu **Analityk biznesowy 1** otwórz wyszukiwanie i kliknij przycisk **Uruchom formularz przypisania zasobów**.</span><span class="sxs-lookup"><span data-stu-id="bad62-372">For the **Business analyst 1** resource, open the lookup, and click **Launch resource assignments form**.</span></span>
+15. <span data-ttu-id="bad62-373">Wybierz pracownika dla zadania.</span><span class="sxs-lookup"><span data-stu-id="bad62-373">Select a worker for the task.</span></span>
+16. <span data-ttu-id="bad62-374">Kliknij kolejno opcje **Przypisz wstępnie** &gt; **Pełne zdolności produkcyjne**.</span><span class="sxs-lookup"><span data-stu-id="bad62-374">Click **Soft assign** &gt; **Full capacity**.</span></span>
+17. <span data-ttu-id="bad62-375">Kliknij przycisk **Zapisz** i zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="bad62-375">Click **Save**, and close the page.</span></span> 
 
 > [!NOTE] 
-> Nie pojawi się ostrzeżenie, że określonym zasobem jest teraz 2, ponieważ liczba zasobów nadal wynosi 1.
-18. Na stronie **Struktury podziału pracy** sprawdź poprawność przypisania zasobów w SPP, a następnie kliknij przycisk **Zapisz**.
+> <span data-ttu-id="bad62-376">Nie pojawi się ostrzeżenie, że określonym zasobem jest teraz 2, ponieważ liczba zasobów nadal wynosi 1.</span><span class="sxs-lookup"><span data-stu-id="bad62-376">You don't receive a warning that the specified resource is now 2, because the number of resources remains at 1.</span></span>
+18. <span data-ttu-id="bad62-377">Na stronie **Struktury podziału pracy** sprawdź poprawność przypisania zasobów w SPP, a następnie kliknij przycisk **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="bad62-377">On the **Work breakdown structure** page, validate the resource assignment on the WBS, and then click **Save**.</span></span>
 
-## <a name="resource-fulfillment-for-planned-resources"></a>Wykorzystanie planowanych zasobów
-Kierownik projektu może zaplanować role wymaganych zasobów w projekcie. Menedżer zasobów będzie widział te zaplanowane zasoby jako żądania na stronie **Wykorzystanie zasobu** i może wtedy przypisywać faktyczne zasoby.
+## <a name="resource-fulfillment-for-planned-resources"></a><span data-ttu-id="bad62-378">Wykorzystanie planowanych zasobów</span><span class="sxs-lookup"><span data-stu-id="bad62-378">Resource fulfillment for planned resources</span></span>
+<span data-ttu-id="bad62-379">Kierownik projektu może zaplanować role wymaganych zasobów w projekcie.</span><span class="sxs-lookup"><span data-stu-id="bad62-379">A project manager can plan required resource roles for a project.</span></span> <span data-ttu-id="bad62-380">Menedżer zasobów będzie widział te zaplanowane zasoby jako żądania na stronie **Wykorzystanie zasobu** i może wtedy przypisywać faktyczne zasoby.</span><span class="sxs-lookup"><span data-stu-id="bad62-380">The resource manager will see these planned resources as requests on the **Resource fulfillment** page and can assign actual resources.</span></span>
 
-1.  Kliknij kolejno **Zarządzanie projektami i ich księgowanie** &gt; **Projekty** &gt; **Wszystkie projekty**.
-2.  Z listy wybierz projekt **Uaktualnianie XYZ faza 2**.
-3.  Kliknij opcję **Projekt**.
-4.  Kliknij przycisk **Edytuj**.
-5.  Na karcie **Zespół projektu i planowanie** kliknij** **przycisk **Dodaj**.
-6.  W oknie dialogowym **Dodaj role** wybierz rolę **Programista**.
-7.  Kliknij **Utwórz**.
-8.  Zamknij stronę projektu.
-9.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Zasoby projektu** &gt; **Wykorzystanie zasobu**.
-10. Dla projektu **Uaktualnianie XYZ faza 2** wybierz zasób **Programista 1**.
-11. Wybierz pracownika, a następnie kliknij przycisk **Przypisz**.
-12. Upewnij się, że wiersz **Programista 1** został usunięte dla projektu **Uaktualnianie XYZ faza 2**.
-13. Na karcie **Zespół projektu i planowanie** w projekcie **Uaktualnianie XYZ faza 2** upewnij się, że pracownik wybrany w kroku 11 został dodany jako **Programista**.
+1.  <span data-ttu-id="bad62-381">Kliknij kolejno **Zarządzanie projektami i ich księgowanie** &gt; **Projekty** &gt; **Wszystkie projekty**.</span><span class="sxs-lookup"><span data-stu-id="bad62-381">Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.</span></span>
+2.  <span data-ttu-id="bad62-382">Z listy wybierz projekt **Uaktualnianie XYZ faza 2**.</span><span class="sxs-lookup"><span data-stu-id="bad62-382">In the list, select the **XYZ Upgrade Phase 2** project.</span></span>
+3.  <span data-ttu-id="bad62-383">Kliknij opcję **Projekt**.</span><span class="sxs-lookup"><span data-stu-id="bad62-383">Click **Project**.</span></span>
+4.  <span data-ttu-id="bad62-384">Kliknij przycisk **Edytuj**.</span><span class="sxs-lookup"><span data-stu-id="bad62-384">Click **Edit**.</span></span>
+5.  <span data-ttu-id="bad62-385">Na karcie **Zespół projektu i planowanie** kliknij** **przycisk **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="bad62-385">On the **Project team and scheduling** tab,** **click **Add**.</span></span>
+6.  <span data-ttu-id="bad62-386">W oknie dialogowym **Dodaj role** wybierz rolę **Programista**.</span><span class="sxs-lookup"><span data-stu-id="bad62-386">In the **Add roles** dialog box, select the **Software developer** role.</span></span>
+7.  <span data-ttu-id="bad62-387">Kliknij **Utwórz**.</span><span class="sxs-lookup"><span data-stu-id="bad62-387">Click **Create**.</span></span>
+8.  <span data-ttu-id="bad62-388">Zamknij stronę projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-388">Close the project page.</span></span>
+9.  <span data-ttu-id="bad62-389">Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Zasoby projektu** &gt; **Wykorzystanie zasobu**.</span><span class="sxs-lookup"><span data-stu-id="bad62-389">Click **Project management and accounting** &gt; **Project resources** &gt; **Resource fulfillment**.</span></span>
+10. <span data-ttu-id="bad62-390">Dla projektu **Uaktualnianie XYZ faza 2** wybierz zasób **Programista 1**.</span><span class="sxs-lookup"><span data-stu-id="bad62-390">Select **Software developer 1** for the **XYZ Upgrade project Phase 2** project.</span></span>
+11. <span data-ttu-id="bad62-391">Wybierz pracownika, a następnie kliknij przycisk **Przypisz**.</span><span class="sxs-lookup"><span data-stu-id="bad62-391">Select a worker, and then click **Assign**.</span></span>
+12. <span data-ttu-id="bad62-392">Upewnij się, że wiersz **Programista 1** został usunięte dla projektu **Uaktualnianie XYZ faza 2**.</span><span class="sxs-lookup"><span data-stu-id="bad62-392">Verify that the line for **Software developer 1** has been removed for the **XYZ Upgrade project Phase 2** project.</span></span>
+13. <span data-ttu-id="bad62-393">Na karcie **Zespół projektu i planowanie** w projekcie **Uaktualnianie XYZ faza 2** upewnij się, że pracownik wybrany w kroku 11 został dodany jako **Programista**.</span><span class="sxs-lookup"><span data-stu-id="bad62-393">On the **Project team and scheduling** tab, for the **XYZ Upgrade Phase 2** project, verify that the worker that you selected in step 11 has been added as **Software developer**.</span></span>
 
-## <a name="requests-for-project-resources"></a>Wnioski o zasoby projektu
-Funkcja planowania zasobów projektu tylko pomaga menedżerom zasobów rozdzielać zasoby pracowników w projektach. Aby włączyć tę funkcję, należy wykonać następujące zadania lub upewnić się, że zostały one wykonane.
+## <a name="requests-for-project-resources"></a><span data-ttu-id="bad62-394">Wnioski o zasoby projektu</span><span class="sxs-lookup"><span data-stu-id="bad62-394">Requests for project resources</span></span>
+<span data-ttu-id="bad62-395">Funkcja planowania zasobów projektu tylko pomaga menedżerom zasobów rozdzielać zasoby pracowników w projektach.</span><span class="sxs-lookup"><span data-stu-id="bad62-395">The project resource scheduling functionality only supports resource managers to distribute staffed resources on engagements or projects.</span></span> <span data-ttu-id="bad62-396">Aby włączyć tę funkcję, należy wykonać następujące zadania lub upewnić się, że zostały one wykonane.</span><span class="sxs-lookup"><span data-stu-id="bad62-396">To enable this functionality, complete the following tasks, or verify that they have been completed.</span></span>
 
--   Ustaw sekwencje numerów.
--   Ustawianie przepływów pracy dla zarządzania projektami i ich księgowania.
--   Włączanie przepływu pracy żądań zasobów.
+-   <span data-ttu-id="bad62-397">Ustaw sekwencje numerów.</span><span class="sxs-lookup"><span data-stu-id="bad62-397">Set up number sequences.</span></span>
+-   <span data-ttu-id="bad62-398">Ustawianie przepływów pracy dla zarządzania projektami i ich księgowania.</span><span class="sxs-lookup"><span data-stu-id="bad62-398">Set up project management and accounting workflows.</span></span>
+-   <span data-ttu-id="bad62-399">Włączanie przepływu pracy żądań zasobów.</span><span class="sxs-lookup"><span data-stu-id="bad62-399">Enable resource request workflow.</span></span>
 
-Po zweryfikowaniu wykonania lub wykonaniu powyższych zadań można stosownie do potrzeb wykonać następujące zadania.
+<span data-ttu-id="bad62-400">Po zweryfikowaniu wykonania lub wykonaniu powyższych zadań można stosownie do potrzeb wykonać następujące zadania.</span><span class="sxs-lookup"><span data-stu-id="bad62-400">After you have either verified or completed the tasks above, you can complete the following tasks as needed.</span></span>
 
--   Tworzenie wniosku o zasób w odniesieniu do zasobu pracownika z rezerwacją wstępną.
--   Monitorowanie wniosków o zasoby.
--   Realizacja wniosków o zasoby.
--   Wnioskowanie o zasób pracownika z SPP.
--   Rezerwowanie zasobów do projektu bez wnioskowania o zasób pracownika.
+-   <span data-ttu-id="bad62-401">Tworzenie wniosku o zasób w odniesieniu do zasobu pracownika z rezerwacją wstępną.</span><span class="sxs-lookup"><span data-stu-id="bad62-401">Create a resource request from a soft-booked staffed resource.</span></span>
+-   <span data-ttu-id="bad62-402">Monitorowanie wniosków o zasoby.</span><span class="sxs-lookup"><span data-stu-id="bad62-402">Monitor resource requests.</span></span>
+-   <span data-ttu-id="bad62-403">Realizacja wniosków o zasoby.</span><span class="sxs-lookup"><span data-stu-id="bad62-403">Fulfill resource requests.</span></span>
+-   <span data-ttu-id="bad62-404">Wnioskowanie o zasób pracownika z SPP.</span><span class="sxs-lookup"><span data-stu-id="bad62-404">Request a staffed resource from WBS.</span></span>
+-   <span data-ttu-id="bad62-405">Rezerwowanie zasobów do projektu bez wnioskowania o zasób pracownika.</span><span class="sxs-lookup"><span data-stu-id="bad62-405">Book resources to a project without a request for a staffed resource.</span></span>
 
-## <a name="monitor-project-teams"></a>Monitorowanie zespołów projektu
-1.  Kliknij kolejno **Zarządzanie projektami i ich księgowanie** &gt; **Projekty** &gt; **Wszystkie projekty**.
-2.  Kliknij na liście projektów kliknij łącze **Identyfikator projektu** dla projektu **Uaktualnianie XYZ faza 2**.
-3.  Na skróconej karcie **Zespół projektu i planowanie** sprawdź poprawność wyświetlanych zasobów projektu.
+## <a name="monitor-project-teams"></a><span data-ttu-id="bad62-406">Monitorowanie zespołów projektu</span><span class="sxs-lookup"><span data-stu-id="bad62-406">Monitor project teams</span></span>
+1.  <span data-ttu-id="bad62-407">Kliknij kolejno **Zarządzanie projektami i ich księgowanie** &gt; **Projekty** &gt; **Wszystkie projekty**.</span><span class="sxs-lookup"><span data-stu-id="bad62-407">Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.</span></span>
+2.  <span data-ttu-id="bad62-408">Kliknij na liście projektów kliknij łącze **Identyfikator projektu** dla projektu **Uaktualnianie XYZ faza 2**.</span><span class="sxs-lookup"><span data-stu-id="bad62-408">In the list of projects, click the **Project ID** link for the **XYZ Upgrade Phase 2** project.</span></span>
+3.  <span data-ttu-id="bad62-409">Na skróconej karcie **Zespół projektu i planowanie** sprawdź poprawność wyświetlanych zasobów projektu.</span><span class="sxs-lookup"><span data-stu-id="bad62-409">On the **Project team and scheduling** FastTab, verify that the project resources that are listed are correct.</span></span>
 
 
 

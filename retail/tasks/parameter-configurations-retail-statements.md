@@ -17,29 +17,29 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: ba3b528f8739e4e84ffdbeea5d0af5817f2d9c10
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 731a3ec06efa103ba663df83240c77dfe78bb7cd
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="parameter-configurations-for-retail-statements"></a>Konfiguracje parametrów dla zestawień sieci sprzedaży
+# <a name="parameter-configurations-for-retail-statements"></a><span data-ttu-id="d8a02-103">Konfiguracje parametrów dla zestawień sieci sprzedaży</span><span class="sxs-lookup"><span data-stu-id="d8a02-103">Parameter configurations for Retail statements</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ta procedura pokazuje konfiguracje parametrów sprzedaży detalicznej, które mają wpływ na sposób tworzenia i księgowana zestawień sieci sprzedaży. Ta procedura wykorzystuje firmę demonstracyjną USRT.
+<span data-ttu-id="d8a02-104">Ta procedura pokazuje konfiguracje parametrów sprzedaży detalicznej, które mają wpływ na sposób tworzenia i księgowana zestawień sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="d8a02-104">This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted.</span></span> <span data-ttu-id="d8a02-105">Ta procedura wykorzystuje firmę demonstracyjną USRT.</span><span class="sxs-lookup"><span data-stu-id="d8a02-105">This procedure uses the USRT demo company.</span></span>
 
-1. Wybierz kolejno opcje Handel detaliczny i inny > Ustawienia centrali > Parametry > Parametry sieci sprzedaży.
-2. Kliknij kartę Księgowanie.
-    * Wybierz opcję „Tak”, aby księgować kwoty rabatów okresowych.  
-    * Wybierz opcję „Standardowe”, aby używać domyślnych kont, lub opcję „Okresowe”, jeśli chcesz zdefiniować, które konta mają być używane dla każdego rabatu okresowego.  
-    * Wybierz opcję „Podsumowanie”, jeśli wiersze zapasów powinny być agregowane zawsze, gdy jest to możliwe.  
-    * Wybierz opcję „Tak”, jeśli faktury i płatności powinny być automatycznie rozliczane w ramach procesu księgowania zestawień.  
-    * Wybierz opcję „Tak”, jeśli transakcje przekazania pieniędzy do sejfu powinny być agregowane.  
-    * Wybierz opcję „Tak”, jeśli transakcje przekazania pieniędzy do banku powinny być agregowane.  
-    * Wybierz opcję „Tak”, aby włączyć agregowanie przy księgowaniu zestawień.  
-    * Wybierz opcję „Tak”, aby tworzyć i przetwarzać zamówienia równoległe podczas księgowania zestawień.  
-    * Wprowadź maksymalną liczba zamówień, które mają być przetwarzane w każdym zadaniu wsadowym.  
-3. Kliknij przycisk Zapisz.
+1. <span data-ttu-id="d8a02-106">Wybierz kolejno opcje Handel detaliczny i inny > Ustawienia centrali > Parametry > Parametry sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="d8a02-106">Go to Retail and commerce > Headquarters setup  > Parameters > Retail parameters.</span></span>
+2. <span data-ttu-id="d8a02-107">Kliknij kartę Księgowanie.</span><span class="sxs-lookup"><span data-stu-id="d8a02-107">Click the Posting tab.</span></span>
+    * <span data-ttu-id="d8a02-108">Wybierz opcję „Tak”, aby księgować kwoty rabatów okresowych.</span><span class="sxs-lookup"><span data-stu-id="d8a02-108">Select "Yes" if you want to post the periodic discount amounts specifically.</span></span>  
+    * <span data-ttu-id="d8a02-109">Wybierz opcję „Standardowe”, aby używać domyślnych kont, lub opcję „Okresowe”, jeśli chcesz zdefiniować, które konta mają być używane dla każdego rabatu okresowego.</span><span class="sxs-lookup"><span data-stu-id="d8a02-109">Select "Standard" to use default accounts, or select "Periodic" if you want to define which account to use for each periodic discount.</span></span>  
+    * <span data-ttu-id="d8a02-110">Wybierz opcję „Podsumowanie”, jeśli wiersze zapasów powinny być agregowane zawsze, gdy jest to możliwe.</span><span class="sxs-lookup"><span data-stu-id="d8a02-110">Select "Summary" if inventory lines should get aggregated whenever possible.</span></span>  
+    * <span data-ttu-id="d8a02-111">Wybierz opcję „Tak”, jeśli faktury i płatności powinny być automatycznie rozliczane w ramach procesu księgowania zestawień.</span><span class="sxs-lookup"><span data-stu-id="d8a02-111">Select "Yes" if Invoices and Payments should get automatically settled as part of the Statement posting process.</span></span>  
+    * <span data-ttu-id="d8a02-112">Wybierz opcję „Tak”, jeśli transakcje przekazania pieniędzy do sejfu powinny być agregowane.</span><span class="sxs-lookup"><span data-stu-id="d8a02-112">Select "Yes" if Safe drop transactions should get aggregated.</span></span>  
+    * <span data-ttu-id="d8a02-113">Wybierz opcję „Tak”, jeśli transakcje przekazania pieniędzy do banku powinny być agregowane.</span><span class="sxs-lookup"><span data-stu-id="d8a02-113">Select "Yes" if Bank drop transactions should get aggregated.</span></span>  
+    * <span data-ttu-id="d8a02-114">Wybierz opcję „Tak”, aby włączyć agregowanie przy księgowaniu zestawień.</span><span class="sxs-lookup"><span data-stu-id="d8a02-114">Select "Yes" to turn aggregation on for Statement posting.</span></span>  
+    * <span data-ttu-id="d8a02-115">Wybierz opcję „Tak”, aby tworzyć i przetwarzać zamówienia równoległe podczas księgowania zestawień.</span><span class="sxs-lookup"><span data-stu-id="d8a02-115">Select "Yes" to create and process orders in parallel when statements are posted.</span></span>  
+    * <span data-ttu-id="d8a02-116">Wprowadź maksymalną liczba zamówień, które mają być przetwarzane w każdym zadaniu wsadowym.</span><span class="sxs-lookup"><span data-stu-id="d8a02-116">Enter the maximum orders to be processed in each batch job task.</span></span>  
+3. <span data-ttu-id="d8a02-117">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="d8a02-117">Click Save.</span></span>
 
 

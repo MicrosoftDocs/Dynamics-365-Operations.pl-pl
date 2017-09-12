@@ -16,28 +16,28 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 43031eaf737c75dec28a9d7c5c002c93911289c5
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 134d7249abe7c97ee0e9604a86de4f1c98c0e9e1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-ledger-account-alias"></a>Konfigurowanie aliasu konta księgowego
+# <a name="set-up-a-ledger-account-alias"></a><span data-ttu-id="46f9c-103">Konfigurowanie aliasu konta księgowego</span><span class="sxs-lookup"><span data-stu-id="46f9c-103">Set up a ledger account alias</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano, jak utworzyć alias konta, który zawiera skrót do wprowadzania numeru konta. Procedura wykorzystuje dane firmy demonstracyjnej USMF.
+<span data-ttu-id="46f9c-104">W tej procedurze pokazano, jak utworzyć alias konta, który zawiera skrót do wprowadzania numeru konta.</span><span class="sxs-lookup"><span data-stu-id="46f9c-104">This procedure shows how to create an account alias that provides a shortcut for entering an account number.</span></span> <span data-ttu-id="46f9c-105">Procedura wykorzystuje dane firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="46f9c-105">This procedure users demo data company USMF.</span></span>
 
-1. Wybierz kolejno opcje Księga główna > Plan kont > Konta > Alias konta księgowego.
-2. Kliknij przycisk Nowy.
-3. W polu Alias konta księgowego wpisz wartość.
-4. W polu Struktura konta wybierz strukturę, do której należy konto i wymiary.
-5. W polu Firma kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-6. Na liście odszukaj i zaznacz firmę, do której stosuje się alias.
-7. Na liście kliknij łącze w wybranym wierszu.
-8. W polu Definicja aliasu konta księgowego określ konto i wymiary.
-    * Użycie skrótu spowoduje wypełnienie pól danych konta i wymiarów.  
-9. W polu Początkowy fokus wybierz wymiar, który otrzyma fokus, jeśli jest używany alias.
-    * Po wpisaniu skrótu oraz wypełnieniu pól danych konta i wymiarów kursor znajdzie się w polu Początkowy fokus.  
+1. <span data-ttu-id="46f9c-106">Wybierz kolejno opcje Księga główna > Plan kont > Konta > Alias konta księgowego.</span><span class="sxs-lookup"><span data-stu-id="46f9c-106">Go to General ledger > Chart of accounts > Accounts > Ledger account alias.</span></span>
+2. <span data-ttu-id="46f9c-107">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="46f9c-107">Click New.</span></span>
+3. <span data-ttu-id="46f9c-108">W polu Alias konta księgowego wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="46f9c-108">In the Ledger account alias field, type a value.</span></span>
+4. <span data-ttu-id="46f9c-109">W polu Struktura konta wybierz strukturę, do której należy konto i wymiary.</span><span class="sxs-lookup"><span data-stu-id="46f9c-109">In the Account structure field, select the structure the account and dimensions belong to.</span></span>
+5. <span data-ttu-id="46f9c-110">W polu Firma kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="46f9c-110">In the Company field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="46f9c-111">Na liście odszukaj i zaznacz firmę, do której stosuje się alias.</span><span class="sxs-lookup"><span data-stu-id="46f9c-111">In the list, find and select the company that the alias applies to.</span></span>
+7. <span data-ttu-id="46f9c-112">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="46f9c-112">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="46f9c-113">W polu Definicja aliasu konta księgowego określ konto i wymiary.</span><span class="sxs-lookup"><span data-stu-id="46f9c-113">In the Ledger account alias definition field, specify the account and dimensions.</span></span>
+    * <span data-ttu-id="46f9c-114">Użycie skrótu spowoduje wypełnienie pól danych konta i wymiarów.</span><span class="sxs-lookup"><span data-stu-id="46f9c-114">The account and dimensions will be populated when using the shortcut.</span></span>  
+9. <span data-ttu-id="46f9c-115">W polu Początkowy fokus wybierz wymiar, który otrzyma fokus, jeśli jest używany alias.</span><span class="sxs-lookup"><span data-stu-id="46f9c-115">In the Initial focus field, select the dimension that will have focus when the alias is used.</span></span>
+    * <span data-ttu-id="46f9c-116">Po wpisaniu skrótu oraz wypełnieniu pól danych konta i wymiarów kursor znajdzie się w polu Początkowy fokus.</span><span class="sxs-lookup"><span data-stu-id="46f9c-116">After you type the shortcut, and the account and dimensions are populated, the Initial focus field is where the cursor or focus will move to.</span></span>  
 
 

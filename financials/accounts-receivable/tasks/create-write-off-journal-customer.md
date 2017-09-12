@@ -16,74 +16,74 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 1c7ecd07c294b7357e4bda9f4183deb346b3e6ee
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 19a816f04283ce4f200de7396617313e45e057db
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-write-off-journal-for-a-customer"></a>Tworzenie arkusza odpisów dla odbiorcy
+# <a name="create-a-write-off-journal-for-a-customer"></a><span data-ttu-id="9e913-103">Tworzenie arkusza odpisów dla odbiorcy</span><span class="sxs-lookup"><span data-stu-id="9e913-103">Create a write-off journal for a customer</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tym przewodniku po zadaniach zostanie pokazany sposób konfigurowania parametrów odpisów i następnie transakcji odpisu ze stron Windykacja, Otwarte faktury odbiorcy i Odbiorca. W zadaniu wykorzystano firmę demonstracyjną USMF.
+<span data-ttu-id="9e913-104">W tym przewodniku po zadaniach zostanie pokazany sposób konfigurowania parametrów odpisów i następnie transakcji odpisu ze stron Windykacja, Otwarte faktury odbiorcy i Odbiorca.</span><span class="sxs-lookup"><span data-stu-id="9e913-104">This task guide will show you how to set up the parameters for write-offs and then write off transactions from the Collections page, the Open customer invoices page, and the Customer page.</span></span> <span data-ttu-id="9e913-105">W zadaniu wykorzystano firmę demonstracyjną USMF.</span><span class="sxs-lookup"><span data-stu-id="9e913-105">This task uses the USMF demo company.</span></span>
 
 
-## <a name="set-up-the-write-off-parameters"></a>Konfigurowanie parametrów odpisów
-1. Wybierz kolejno opcje Kredyty i windykacja > Ustawienia > Parametry modułu rozrachunków z odbiorcami.
-2. Kliknij kartę Windykacja.
-3. Rozwiń lub zwiń sekcję Odpisz.
-    * Arkusz odpisów jest arkuszem finansowym, który będzie zawierał transakcje odpisu utworzone przez Ciebie.  
-    * Do każdego odpisu można dołączyć kod przyczyny. To domyślne ustawienie można zastąpić podczas dokonywania odpisu.  
-    * Ustaw wartość Tak, aby w odpisie oddzielić podatek od oryginalnej transakcji.  
-4. Zamknij stronę.
-5. Wybierz kolejno opcje Kredyty i windykacja > Ustawienia > Profile księgowania odbiorców.
-    * Konto odpisu będzie używane jako konto wydatków lub rezerwacji korekt w arkuszu finansowym   
-6. Zamknij stronę.
+## <a name="set-up-the-write-off-parameters"></a><span data-ttu-id="9e913-106">Konfigurowanie parametrów odpisów</span><span class="sxs-lookup"><span data-stu-id="9e913-106">Set up the write off parameters</span></span>
+1. <span data-ttu-id="9e913-107">Wybierz kolejno opcje Kredyty i windykacja > Ustawienia > Parametry modułu rozrachunków z odbiorcami.</span><span class="sxs-lookup"><span data-stu-id="9e913-107">Go to Credit and collections > Setup > Accounts receivable parameters.</span></span>
+2. <span data-ttu-id="9e913-108">Kliknij kartę Windykacja.</span><span class="sxs-lookup"><span data-stu-id="9e913-108">Click the Collections tab.</span></span>
+3. <span data-ttu-id="9e913-109">Rozwiń lub zwiń sekcję Odpisz.</span><span class="sxs-lookup"><span data-stu-id="9e913-109">Expand or collapse the Write-off section.</span></span>
+    * <span data-ttu-id="9e913-110">Arkusz odpisów jest arkuszem finansowym, który będzie zawierał transakcje odpisu utworzone przez Ciebie.</span><span class="sxs-lookup"><span data-stu-id="9e913-110">The Write-off journal is the general journal that will hold the write-off transactions that you create.</span></span>  
+    * <span data-ttu-id="9e913-111">Do każdego odpisu można dołączyć kod przyczyny.</span><span class="sxs-lookup"><span data-stu-id="9e913-111">You can attach a reason code to every write-off.</span></span> <span data-ttu-id="9e913-112">To domyślne ustawienie można zastąpić podczas dokonywania odpisu.</span><span class="sxs-lookup"><span data-stu-id="9e913-112">You can override this default at the time of the write-off.</span></span>  
+    * <span data-ttu-id="9e913-113">Ustaw wartość Tak, aby w odpisie oddzielić podatek od oryginalnej transakcji.</span><span class="sxs-lookup"><span data-stu-id="9e913-113">Set this to Yes if you want to separate the sales tax from the original transaction in the write-off.</span></span>  
+4. <span data-ttu-id="9e913-114">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9e913-114">Close the page.</span></span>
+5. <span data-ttu-id="9e913-115">Wybierz kolejno opcje Kredyty i windykacja > Ustawienia > Profile księgowania odbiorców.</span><span class="sxs-lookup"><span data-stu-id="9e913-115">Go to Credit and collections > Setup > Customer posting profiles.</span></span>
+    * <span data-ttu-id="9e913-116">Konto odpisu będzie używane jako konto wydatków lub rezerwacji korekt w arkuszu finansowym</span><span class="sxs-lookup"><span data-stu-id="9e913-116">The write-off account will be used as the expense account or reserve adjustment in the general journal</span></span>   
+6. <span data-ttu-id="9e913-117">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9e913-117">Close the page.</span></span>
 
-## <a name="write-off-a-customer-balance-from-the-aged-balances-page"></a>Odpisywanie salda odbiorcy ze strony wiekowanych sald
-1. Wybierz kolejno opcje Kredyty i windykacja > Windykacja > Wiekowane salda.
-2. Zaznacz wiersz odbiorcy, dla którego ma zostać dokonany odpis. Na przykład zaznacz wiersz z firmą Birch Company.
-3. W okienku akcji kliknij pozycję Windykacja.
-4. Kliknij opcję Odpisz.
-5. Kliknij przycisk OK.
-6. Zamknij stronę.
-7. Wybierz kolejno opcje Księga główna > Wpisy w arkuszu > Arkusze finansowe.
-8. Wybierz numer partii arkuszy z arkuszem, który zawiera odpis.
-    * Jest tworzony jeden wiersz w celu wystornowania salda odbiorcy. Jeden lub więcej wierszy jest tworzonych w celu zaksięgowania odpisu na koncie odpisów.  
-9. Zamknij stronę.
-10. Zamknij stronę.
+## <a name="write-off-a-customer-balance-from-the-aged-balances-page"></a><span data-ttu-id="9e913-118">Odpisywanie salda odbiorcy ze strony wiekowanych sald</span><span class="sxs-lookup"><span data-stu-id="9e913-118">Write off a customer balance from the aged balances page</span></span>
+1. <span data-ttu-id="9e913-119">Wybierz kolejno opcje Kredyty i windykacja > Windykacja > Wiekowane salda.</span><span class="sxs-lookup"><span data-stu-id="9e913-119">Go to Credit and collections > Collections > Aged balances.</span></span>
+2. <span data-ttu-id="9e913-120">Zaznacz wiersz odbiorcy, dla którego ma zostać dokonany odpis.</span><span class="sxs-lookup"><span data-stu-id="9e913-120">Mark the row for the customer that you want to write off.</span></span> <span data-ttu-id="9e913-121">Na przykład zaznacz wiersz z firmą Birch Company.</span><span class="sxs-lookup"><span data-stu-id="9e913-121">For example, mark the line with Birch Company on it.</span></span>
+3. <span data-ttu-id="9e913-122">W okienku akcji kliknij pozycję Windykacja.</span><span class="sxs-lookup"><span data-stu-id="9e913-122">On the Action Pane, click Collect.</span></span>
+4. <span data-ttu-id="9e913-123">Kliknij opcję Odpisz.</span><span class="sxs-lookup"><span data-stu-id="9e913-123">Click Write off.</span></span>
+5. <span data-ttu-id="9e913-124">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="9e913-124">Click OK.</span></span>
+6. <span data-ttu-id="9e913-125">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9e913-125">Close the page.</span></span>
+7. <span data-ttu-id="9e913-126">Wybierz kolejno opcje Księga główna > Wpisy w arkuszu > Arkusze finansowe.</span><span class="sxs-lookup"><span data-stu-id="9e913-126">Go to General ledger > Journal entries > General journals.</span></span>
+8. <span data-ttu-id="9e913-127">Wybierz numer partii arkuszy z arkuszem, który zawiera odpis.</span><span class="sxs-lookup"><span data-stu-id="9e913-127">Select the journal batch number for the journal that contains your write-off.</span></span>
+    * <span data-ttu-id="9e913-128">Jest tworzony jeden wiersz w celu wystornowania salda odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="9e913-128">One line is created to reverse the customer balance.</span></span> <span data-ttu-id="9e913-129">Jeden lub więcej wierszy jest tworzonych w celu zaksięgowania odpisu na koncie odpisów.</span><span class="sxs-lookup"><span data-stu-id="9e913-129">One or more lines are created to post the write-off to the write-off account.</span></span>  
+9. <span data-ttu-id="9e913-130">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9e913-130">Close the page.</span></span>
+10. <span data-ttu-id="9e913-131">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9e913-131">Close the page.</span></span>
 
-## <a name="write-off-transactions-from-the-collections-form"></a>Odpisywanie transakcji z formularza windykacji
-1. Wybierz kolejno opcje Kredyty i windykacja > Windykacja > Wiekowane salda.
-2. Zaznacz nazwę odbiorcy mającego transakcje, które chcesz odpisać. Na przykład wybierz Cave Wholesales (US-004).
-3. Zaznacz wiersz pierwszej transakcji.
-4. Zaznacz wiersz drugiej transakcji.
-5. Kliknij opcję Odpisz.
-6. W polu Komentarz dotyczący przyczyny wpisz „Prawdopodobnie nieściągalne długi”.
-7. Kliknij przycisk OK.
-8. Zamknij stronę.
-9. Zamknij stronę.
-10. Wybierz kolejno opcje Księga główna > Wpisy w arkuszu > Arkusze finansowe.
-11. Wybierz numer partii arkuszy z arkuszem, który zawiera odpis.
-    * Jest tworzony jeden wiersz w celu wystornowania salda odbiorcy. Jeden lub więcej wierszy jest tworzonych w celu zaksięgowania odpisu na koncie odpisów.  
-12. Zamknij stronę.
-13. Zamknij stronę.
+## <a name="write-off-transactions-from-the-collections-form"></a><span data-ttu-id="9e913-132">Odpisywanie transakcji z formularza windykacji</span><span class="sxs-lookup"><span data-stu-id="9e913-132">Write off transactions from the collections form.</span></span>
+1. <span data-ttu-id="9e913-133">Wybierz kolejno opcje Kredyty i windykacja > Windykacja > Wiekowane salda.</span><span class="sxs-lookup"><span data-stu-id="9e913-133">Go to Credit and collections > Collections > Aged balances.</span></span>
+2. <span data-ttu-id="9e913-134">Zaznacz nazwę odbiorcy mającego transakcje, które chcesz odpisać.</span><span class="sxs-lookup"><span data-stu-id="9e913-134">Select the name of the customer that has the transactions that you want to write off.</span></span> <span data-ttu-id="9e913-135">Na przykład wybierz Cave Wholesales (US-004).</span><span class="sxs-lookup"><span data-stu-id="9e913-135">For example, select Cave Wholesales (US-004).</span></span>
+3. <span data-ttu-id="9e913-136">Zaznacz wiersz pierwszej transakcji.</span><span class="sxs-lookup"><span data-stu-id="9e913-136">Mark the row for the first transaction.</span></span>
+4. <span data-ttu-id="9e913-137">Zaznacz wiersz drugiej transakcji.</span><span class="sxs-lookup"><span data-stu-id="9e913-137">Mark the row for the second transaction.</span></span>
+5. <span data-ttu-id="9e913-138">Kliknij opcję Odpisz.</span><span class="sxs-lookup"><span data-stu-id="9e913-138">Click Write off.</span></span>
+6. <span data-ttu-id="9e913-139">W polu Komentarz dotyczący przyczyny wpisz „Prawdopodobnie nieściągalne długi”.</span><span class="sxs-lookup"><span data-stu-id="9e913-139">In the Reason comment field, type 'Bad debts'.</span></span>
+7. <span data-ttu-id="9e913-140">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="9e913-140">Click OK.</span></span>
+8. <span data-ttu-id="9e913-141">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9e913-141">Close the page.</span></span>
+9. <span data-ttu-id="9e913-142">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9e913-142">Close the page.</span></span>
+10. <span data-ttu-id="9e913-143">Wybierz kolejno opcje Księga główna > Wpisy w arkuszu > Arkusze finansowe.</span><span class="sxs-lookup"><span data-stu-id="9e913-143">Go to General ledger > Journal entries > General journals.</span></span>
+11. <span data-ttu-id="9e913-144">Wybierz numer partii arkuszy z arkuszem, który zawiera odpis.</span><span class="sxs-lookup"><span data-stu-id="9e913-144">Select the journal batch number for the journal that contains your write-off.</span></span>
+    * <span data-ttu-id="9e913-145">Jest tworzony jeden wiersz w celu wystornowania salda odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="9e913-145">One line is created to reverse the customer balance.</span></span> <span data-ttu-id="9e913-146">Jeden lub więcej wierszy jest tworzonych w celu zaksięgowania odpisu na koncie odpisów.</span><span class="sxs-lookup"><span data-stu-id="9e913-146">One or more lines are created to post the write-off to the write-off account.</span></span>  
+12. <span data-ttu-id="9e913-147">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9e913-147">Close the page.</span></span>
+13. <span data-ttu-id="9e913-148">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9e913-148">Close the page.</span></span>
 
-## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a>Odpisywanie faktury ze strony Otwarte faktury odbiorców
-1. Wybierz kolejno opcje Rozrachunki z odbiorcami > Faktury > Otwarte faktury odbiorcy.
-2. Zaznacz wiersz faktury. Na przykład zaznacz wiersz faktury CIV-000667.
-3. W okienku akcji kliknij pozycję Faktura.
-4. Kliknij opcję Odpisz.
-5. Kliknij przycisk OK.
-6. Zamknij stronę.
+## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a><span data-ttu-id="9e913-149">Odpisywanie faktury ze strony Otwarte faktury odbiorców</span><span class="sxs-lookup"><span data-stu-id="9e913-149">Write off an invoice from the Open customers invoices page</span></span>
+1. <span data-ttu-id="9e913-150">Wybierz kolejno opcje Rozrachunki z odbiorcami > Faktury > Otwarte faktury odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="9e913-150">Go to Accounts receivable > Invoices > Open customer invoices.</span></span>
+2. <span data-ttu-id="9e913-151">Zaznacz wiersz faktury.</span><span class="sxs-lookup"><span data-stu-id="9e913-151">Mark the line for an invoice.</span></span> <span data-ttu-id="9e913-152">Na przykład zaznacz wiersz faktury CIV-000667.</span><span class="sxs-lookup"><span data-stu-id="9e913-152">For example, mark the line for CIV-000667.</span></span>
+3. <span data-ttu-id="9e913-153">W okienku akcji kliknij pozycję Faktura.</span><span class="sxs-lookup"><span data-stu-id="9e913-153">On the Action Pane, click Invoice.</span></span>
+4. <span data-ttu-id="9e913-154">Kliknij opcję Odpisz.</span><span class="sxs-lookup"><span data-stu-id="9e913-154">Click Write off.</span></span>
+5. <span data-ttu-id="9e913-155">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="9e913-155">Click OK.</span></span>
+6. <span data-ttu-id="9e913-156">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9e913-156">Close the page.</span></span>
 
-## <a name="write-off-a-customer-balance-from-the-customer-page"></a>Odpisywanie salda odbiorcy ze strony odbiorcy
-1. Wybierz kolejno opcje Rozrachunki z odbiorcami > Odbiorcy > Wszyscy odbiorcy.
-2. Umożliwia wybór konta odbiorcy. Wybierz na przykład US-001 (Contoso Retail San Diego).
-3. W okienku akcji kliknij pozycję Windykacja.
-4. Kliknij opcję Odpisz.
-5. Kliknij przycisk OK.
-6. Zamknij stronę.
+## <a name="write-off-a-customer-balance-from-the-customer-page"></a><span data-ttu-id="9e913-157">Odpisywanie salda odbiorcy ze strony odbiorcy</span><span class="sxs-lookup"><span data-stu-id="9e913-157">Write off a customer balance from the customer page</span></span>
+1. <span data-ttu-id="9e913-158">Wybierz kolejno opcje Rozrachunki z odbiorcami > Odbiorcy > Wszyscy odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="9e913-158">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="9e913-159">Umożliwia wybór konta odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="9e913-159">Select a customer account.</span></span> <span data-ttu-id="9e913-160">Wybierz na przykład US-001 (Contoso Retail San Diego).</span><span class="sxs-lookup"><span data-stu-id="9e913-160">For example, select US-001 (Contoso Retail San Diego).</span></span>
+3. <span data-ttu-id="9e913-161">W okienku akcji kliknij pozycję Windykacja.</span><span class="sxs-lookup"><span data-stu-id="9e913-161">On the Action Pane, click Collect.</span></span>
+4. <span data-ttu-id="9e913-162">Kliknij opcję Odpisz.</span><span class="sxs-lookup"><span data-stu-id="9e913-162">Click Write off.</span></span>
+5. <span data-ttu-id="9e913-163">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="9e913-163">Click OK.</span></span>
+6. <span data-ttu-id="9e913-164">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9e913-164">Close the page.</span></span>
 
 

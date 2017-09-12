@@ -17,30 +17,30 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 36096c9a0c8dde1028728ec257dfa63e7fb669af
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0e6829238b244cc01b070fde6acdf37bdaeb9670
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016-only"></a>Obliczanie BOM przy użyciu struktury jednopoziomowej (tylko luty 2016)
+# <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016-only"></a><span data-ttu-id="c365d-103">Obliczanie BOM przy użyciu struktury jednopoziomowej (tylko luty 2016)</span><span class="sxs-lookup"><span data-stu-id="c365d-103">Calculate a BOM by using a single level structure (February 2016 only)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano, jak obliczyć koszt wyrobu gotowego przy użyciu jednopoziomowego rozłożenia opartego na arkuszu wyceny. Jest to szóste zadanie w serii zadań obliczania BOM. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF.
+<span data-ttu-id="c365d-104">W tej procedurze pokazano, jak obliczyć koszt wyrobu gotowego przy użyciu jednopoziomowego rozłożenia opartego na arkuszu wyceny.</span><span class="sxs-lookup"><span data-stu-id="c365d-104">This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet.</span></span> <span data-ttu-id="c365d-105">Jest to szóste zadanie w serii zadań obliczania BOM.</span><span class="sxs-lookup"><span data-stu-id="c365d-105">This is the sixth task in the BOM calculation series.</span></span> <span data-ttu-id="c365d-106">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="c365d-106">The demo data company used to create this task is USMF.</span></span>
 
-1. Przejdź do okna Zwolnione produkty.
-2. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Wybierz produkt BOM_1.  
-3. W okienku akcji kliknij pozycję Zarządzanie kosztami.
-4. Kliknij opcję Cena pozycji.
-5. Kliknij opcję Oblicz koszt pozycji.
-    * Może być konieczne kliknięcie przycisku wielokropka (...), aby wyświetlić tę opcję w górnym menu.  
-6. W polu Wersja wyceny kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-    * W tej demonstracji wybierz opcję 10. Jest to ta sama wersja wyceny, jak używana w celu dodania kosztu własnego do składników.  
-7. Kliknij przycisk OK.
-8. Kliknij opcję Wyświetl szczegóły obliczeń.
-    * Może być konieczne kliknięcie przycisku wielokropka (...), aby wyświetlić tę opcję w górnym menu.    Oto elementy składowe kosztu:  •    10 pochodzi z opcji ITEM_A, 10 z opcji ITEM_B i 10 z opcji BOM_2. W tym przypadku opcja BOM_2 nie ma żadnych szczegółów, ponieważ tę wartość ręcznie wpisano jako koszt standardowy 10, tzn. nie jest to wynik obliczenia.  •  Wartość 7 została ustalona na podstawie czasu przezbrajania i jest kosztem stałym, a dodatkowa wartość 7 została ustalona na podstawie czasu procesu (wykonywania operacji).  •   Istnieją również inne kwoty, które odpowiadają kosztom pośrednim.  
+1. <span data-ttu-id="c365d-107">Przejdź do okna Zwolnione produkty.</span><span class="sxs-lookup"><span data-stu-id="c365d-107">Go to Released products.</span></span>
+2. <span data-ttu-id="c365d-108">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="c365d-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="c365d-109">Wybierz produkt BOM_1.</span><span class="sxs-lookup"><span data-stu-id="c365d-109">Select product BOM_1.</span></span>  
+3. <span data-ttu-id="c365d-110">W okienku akcji kliknij pozycję Zarządzanie kosztami.</span><span class="sxs-lookup"><span data-stu-id="c365d-110">On the Action Pane, click Manage costs.</span></span>
+4. <span data-ttu-id="c365d-111">Kliknij opcję Cena pozycji.</span><span class="sxs-lookup"><span data-stu-id="c365d-111">Click Item price.</span></span>
+5. <span data-ttu-id="c365d-112">Kliknij opcję Oblicz koszt pozycji.</span><span class="sxs-lookup"><span data-stu-id="c365d-112">Click Calculate item cost.</span></span>
+    * <span data-ttu-id="c365d-113">Może być konieczne kliknięcie przycisku wielokropka (...), aby wyświetlić tę opcję w górnym menu.</span><span class="sxs-lookup"><span data-stu-id="c365d-113">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>  
+6. <span data-ttu-id="c365d-114">W polu Wersja wyceny kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="c365d-114">In the Costing version field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="c365d-115">W tej demonstracji wybierz opcję 10.</span><span class="sxs-lookup"><span data-stu-id="c365d-115">For this demo, select 10.</span></span> <span data-ttu-id="c365d-116">Jest to ta sama wersja wyceny, jak używana w celu dodania kosztu własnego do składników.</span><span class="sxs-lookup"><span data-stu-id="c365d-116">This is the same costing version used for adding the cost price to the components.</span></span>  
+7. <span data-ttu-id="c365d-117">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c365d-117">Click OK.</span></span>
+8. <span data-ttu-id="c365d-118">Kliknij opcję Wyświetl szczegóły obliczeń.</span><span class="sxs-lookup"><span data-stu-id="c365d-118">Click View calculation details.</span></span>
+    * <span data-ttu-id="c365d-119">Może być konieczne kliknięcie przycisku wielokropka (...), aby wyświetlić tę opcję w górnym menu.</span><span class="sxs-lookup"><span data-stu-id="c365d-119">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>    <span data-ttu-id="c365d-120">Oto elementy składowe kosztu:  •    10 pochodzi z opcji ITEM_A, 10 z opcji ITEM_B i 10 z opcji BOM_2.</span><span class="sxs-lookup"><span data-stu-id="c365d-120">Here's the composition of the cost:  •    10 is derived from ITEM_A, 10 from ITEM_B, 10 from BOM_2.</span></span> <span data-ttu-id="c365d-121">W tym przypadku opcja BOM_2 nie ma żadnych szczegółów, ponieważ tę wartość ręcznie wpisano jako koszt standardowy 10, tzn. nie jest to wynik obliczenia.</span><span class="sxs-lookup"><span data-stu-id="c365d-121">In this case there are no details for BOM_2 because it was entered as a standard cost of 10 but not done through calculation.</span></span>  <span data-ttu-id="c365d-122">•  Wartość 7 została ustalona na podstawie czasu przezbrajania i jest kosztem stałym, a dodatkowa wartość 7 została ustalona na podstawie czasu procesu (wykonywania operacji).</span><span class="sxs-lookup"><span data-stu-id="c365d-122">•  7 is derived from the setup time, which is a constant cost, and additional 7 is derived from the run-time operation (Process).</span></span>  <span data-ttu-id="c365d-123">•   Istnieją również inne kwoty, które odpowiadają kosztom pośrednim.</span><span class="sxs-lookup"><span data-stu-id="c365d-123">•   There are also other amounts that correspond to indirect costs.</span></span>  
 9. @SysTaskRecorder:_RequestClose
 
 

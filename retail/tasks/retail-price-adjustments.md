@@ -17,39 +17,39 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: ab13aced30f90c4d7c8b96f30340fff6e3eee927
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: dab14468713f9f23d20e7ca648711e2a4337cf7c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="retail-price-adjustments"></a>Korekty ceny detalicznej
+# <a name="retail-price-adjustments"></a><span data-ttu-id="c3aa1-103">Korekty ceny detalicznej</span><span class="sxs-lookup"><span data-stu-id="c3aa1-103">Retail price adjustments</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ta procedura prowadzi przez proces tworzenia korekty ceny detalicznej. Korekta ceny sprzedaży detalicznej może ustawiać cenę sprzedaży bezpośrednio lub modyfikować jej bazową cenę sprzedaży albo cenę sprzedaży z umowy handlowej. Procedura wykorzystuje dane firmy demonstracyjnej USRT.
+<span data-ttu-id="c3aa1-104">Ta procedura prowadzi przez proces tworzenia korekty ceny detalicznej.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-104">This procedure will walk through creating a retail price adjustment.</span></span> <span data-ttu-id="c3aa1-105">Korekta ceny sprzedaży detalicznej może ustawiać cenę sprzedaży bezpośrednio lub modyfikować jej bazową cenę sprzedaży albo cenę sprzedaży z umowy handlowej.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-105">A retail price adjustment can set an item's sale price directly, or modify its base sale price or trade agreement sale price.</span></span> <span data-ttu-id="c3aa1-106">Procedura wykorzystuje dane firmy demonstracyjnej USRT.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-106">This procedure uses the USRT demo data company.</span></span>
 
-1. Kliknij opcję Zarządzanie cenami i rabatami.
-2. Kliknij kartę Korekta ceny.
-3. Kliknij przycisk Nowy.
-    * W tym miejscu można tworzyć wszystkie najczęściej używane reguły cen i rabatów, w tym rabaty detaliczne, korekty cen, arkusze umów handlowych i reguły cen dla kategorii.  
-4. Kliknij opcję Korekta ceny.
-5. W polu Nazwa wpisz wartość.
-6. Rozwiń sekcję Wiersze.
-7. Kliknij przycisk Dodaj.
-    * W tym przykładzie w polu Produkt wpisz „81126”.    Następnie w polu Procent rabatu wpisz „10,0”.  
-    * Korekta ceny typu „procent rabatu” zmniejsza bazową cenę sprzedaży lub cenę sprzedaży z umowy handlowej.  
-8. Kliknij przycisk Dodaj.
-    * W tym przykładzie w polu Produkt wpisz „81125”.    Następnie w polu Metoda rabatowania wybierz opcję „Kwota rabatu gotówkowego”.    Na koniec w polu Kwota rabatu gotówkowego wpisz „5,0”.  
-    * Typ rabatu Kwota rabatu gotówkowego jest kwotą odjętą od ceny bazowej lub ceny w umowie handlowej.  
-9. Kliknij opcję Grupy cenowe.
-    * W polu Grupa cenowa wybierz opcję „RP-Houston”.  
-    * Spowoduje to skojarzenie korekty ceny ze sklepem w Houston.  
-10. Kliknij przycisk Zapisz.
-11. Zamknij stronę.
-12. W polu Stan wybierz wartość „Włączone”.
-13. Kliknij przycisk Zapisz.
-14. Zamknij stronę.
-15. Odśwież stronę.
+1. <span data-ttu-id="c3aa1-107">Kliknij opcję Zarządzanie cenami i rabatami.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-107">Click Pricing and discount management.</span></span>
+2. <span data-ttu-id="c3aa1-108">Kliknij kartę Korekta ceny.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-108">Click the Price adjustments tab.</span></span>
+3. <span data-ttu-id="c3aa1-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-109">Click New.</span></span>
+    * <span data-ttu-id="c3aa1-110">W tym miejscu można tworzyć wszystkie najczęściej używane reguły cen i rabatów, w tym rabaty detaliczne, korekty cen, arkusze umów handlowych i reguły cen dla kategorii.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-110">From here you can create all of the most commonly used price and discount rules, including retail discounts, price adjustments, trade agreement journals, and category pricing rules.</span></span>  
+4. <span data-ttu-id="c3aa1-111">Kliknij opcję Korekta ceny.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-111">Click Price adjustment.</span></span>
+5. <span data-ttu-id="c3aa1-112">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-112">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="c3aa1-113">Rozwiń sekcję Wiersze.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-113">Expand the Lines section.</span></span>
+7. <span data-ttu-id="c3aa1-114">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-114">Click Add.</span></span>
+    * <span data-ttu-id="c3aa1-115">W tym przykładzie w polu Produkt wpisz „81126”.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-115">For this example, enter '81126' in the Product field.</span></span>    <span data-ttu-id="c3aa1-116">Następnie w polu Procent rabatu wpisz „10,0”.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-116">Then, enter '10.0' in the Discount percentage field.</span></span>  
+    * <span data-ttu-id="c3aa1-117">Korekta ceny typu „procent rabatu” zmniejsza bazową cenę sprzedaży lub cenę sprzedaży z umowy handlowej.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-117">A discount percentage type price adjustment will reduce a base sales price or trade agreement sales price.</span></span>  
+8. <span data-ttu-id="c3aa1-118">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-118">Click Add.</span></span>
+    * <span data-ttu-id="c3aa1-119">W tym przykładzie w polu Produkt wpisz „81125”.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-119">For this example, enter '81125' in the Product field.</span></span>    <span data-ttu-id="c3aa1-120">Następnie w polu Metoda rabatowania wybierz opcję „Kwota rabatu gotówkowego”.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-120">Then, select 'Cash discount amount' in the Discount method field.</span></span>    <span data-ttu-id="c3aa1-121">Na koniec w polu Kwota rabatu gotówkowego wpisz „5,0”.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-121">Finally, enter '5.0' in the Cash discount amount field.</span></span>  
+    * <span data-ttu-id="c3aa1-122">Typ rabatu Kwota rabatu gotówkowego jest kwotą odjętą od ceny bazowej lub ceny w umowie handlowej.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-122">A Cash discount amount discount type is an amount taken off from a base price or a trade agreement price.</span></span>  
+9. <span data-ttu-id="c3aa1-123">Kliknij opcję Grupy cenowe.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-123">Click Price groups.</span></span>
+    * <span data-ttu-id="c3aa1-124">W polu Grupa cenowa wybierz opcję „RP-Houston”.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-124">Select 'RP-Houston' in the Price group field.</span></span>  
+    * <span data-ttu-id="c3aa1-125">Spowoduje to skojarzenie korekty ceny ze sklepem w Houston.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-125">This will associate the Price adjustment to the Houston store.</span></span>  
+10. <span data-ttu-id="c3aa1-126">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-126">Click Save.</span></span>
+11. <span data-ttu-id="c3aa1-127">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-127">Close the page.</span></span>
+12. <span data-ttu-id="c3aa1-128">W polu Stan wybierz wartość „Włączone”.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-128">In the Status field, select 'Enabled'.</span></span>
+13. <span data-ttu-id="c3aa1-129">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-129">Click Save.</span></span>
+14. <span data-ttu-id="c3aa1-130">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-130">Close the page.</span></span>
+15. <span data-ttu-id="c3aa1-131">Odśwież stronę.</span><span class="sxs-lookup"><span data-stu-id="c3aa1-131">Refresh the page.</span></span>
 
 

@@ -16,44 +16,44 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: a52aade62b0d05a41e22aa9e9a474999af725606
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: cac3748182ba27735264acc947403d7b857f1b6e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-formate-for-counting-and-summing-for-electronic-reporting-er"></a>Tworzenie formatu służącego do zliczania i sumowania na potrzeby raportowania elektronicznego (ER)
+# <a name="create-formate-for-counting-and-summing-for-electronic-reporting-er"></a><span data-ttu-id="97ee5-103">Tworzenie formatu służącego do zliczania i sumowania na potrzeby raportowania elektronicznego (ER)</span><span class="sxs-lookup"><span data-stu-id="97ee5-103">Create formate for counting and summing for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować format raportowania elektronicznego (ER), aby wykonywał inwentaryzację i sumowanie na podstawie danych już wygenerowanych tekstów wyjściowych. Kroki można wykonać na danych dowolnej firmy.
+<span data-ttu-id="97ee5-104">W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować format raportowania elektronicznego (ER), aby wykonywał inwentaryzację i sumowanie na podstawie danych już wygenerowanych tekstów wyjściowych.</span><span class="sxs-lookup"><span data-stu-id="97ee5-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data of the already generated text output.</span></span> <span data-ttu-id="97ee5-105">Kroki można wykonać na danych dowolnej firmy.</span><span class="sxs-lookup"><span data-stu-id="97ee5-105">These steps can be performed in any company.</span></span>
 
-Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”.
+<span data-ttu-id="97ee5-106">Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”.</span><span class="sxs-lookup"><span data-stu-id="97ee5-106">To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.</span></span>
 
-Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.
+<span data-ttu-id="97ee5-107">Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.</span><span class="sxs-lookup"><span data-stu-id="97ee5-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a>Uzyskiwanie dostępu do listy konfiguracji dostarczanej przez firmę Microsoft
-1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.
-    * Upewnij się, że dostawca „Litware, Inc.” jest dostępny i oznaczony jako aktywny.  
-2. Zaznacz dostawcę „Litware, Inc.”.  
-3. Kliknij Repozytoria.
-    * Jeśli repozytorium typu „Zasoby operacyjne” już istnieje, należy pominąć pozostałe kroki bieżącego zadania podrzędnego.  
-4. Kliknij przycisk Dodaj, aby otworzyć rozwijane okno dialogowe.
-5. W polu Typ repozytorium konfiguracji wprowadź wartość „Zasoby operacyjne”.
-6. Kliknij opcję Utwórz repozytorium.
-7. Kliknij przycisk OK.
+## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a><span data-ttu-id="97ee5-108">Uzyskiwanie dostępu do listy konfiguracji dostarczanej przez firmę Microsoft</span><span class="sxs-lookup"><span data-stu-id="97ee5-108">Get access to the list of configurations provided by Microsoft</span></span>
+1. <span data-ttu-id="97ee5-109">Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.</span><span class="sxs-lookup"><span data-stu-id="97ee5-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="97ee5-110">Upewnij się, że dostawca „Litware, Inc.”</span><span class="sxs-lookup"><span data-stu-id="97ee5-110">Make sure that the “Litware, Inc.”</span></span> <span data-ttu-id="97ee5-111">jest dostępny i oznaczony jako aktywny.</span><span class="sxs-lookup"><span data-stu-id="97ee5-111">provider is available and marked as active.</span></span>  
+2. <span data-ttu-id="97ee5-112">Zaznacz dostawcę „Litware, Inc.”.</span><span class="sxs-lookup"><span data-stu-id="97ee5-112">Select the “Litware, Inc.”</span></span> <span data-ttu-id="97ee5-113"> </span><span class="sxs-lookup"><span data-stu-id="97ee5-113">provider.</span></span>
+3. <span data-ttu-id="97ee5-114">Kliknij Repozytoria.</span><span class="sxs-lookup"><span data-stu-id="97ee5-114">Click Repositories.</span></span>
+    * <span data-ttu-id="97ee5-115">Jeśli repozytorium typu „Zasoby operacyjne” już istnieje, należy pominąć pozostałe kroki bieżącego zadania podrzędnego.</span><span class="sxs-lookup"><span data-stu-id="97ee5-115">If a repository of the "Operations resources" type already exists, skip the remaining steps of the current sub-task.</span></span>  
+4. <span data-ttu-id="97ee5-116">Kliknij przycisk Dodaj, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="97ee5-116">Click Add to open the drop dialog.</span></span>
+5. <span data-ttu-id="97ee5-117">W polu Typ repozytorium konfiguracji wprowadź wartość „Zasoby operacyjne”.</span><span class="sxs-lookup"><span data-stu-id="97ee5-117">In the Configuration repository type field, enter 'Operations resources'.</span></span>
+6. <span data-ttu-id="97ee5-118">Kliknij opcję Utwórz repozytorium.</span><span class="sxs-lookup"><span data-stu-id="97ee5-118">Click Create repository.</span></span>
+7. <span data-ttu-id="97ee5-119">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="97ee5-119">Click OK.</span></span>
 
-## <a name="get-the-intrastat-configurations-provided-by-microsoft"></a>Pobieranie konfiguracji Intrastat dostarczanych przez firmę Microsoft
-1. Kliknij przycisk Otwórz.
-2. W drzewie zaznacz element „Model Intrastat\Intrastat (Niemcy)”.
-3. Kliknij przycisk Importuj.
-    * Kliknij przycisk Importuj dla wersji 1.1 wybranej konfiguracji.  
-4. Kliknij przycisk Tak.
-5. Zamknij stronę.
-6. Zamknij stronę.
-7. Kliknij opcję Konfiguracje raportowania.
-8. W drzewie rozwiń węzeł „Model Intrastat”.
-9. W drzewie zaznacz element „Model Intrastat\Intrastat (Niemcy)”.
+## <a name="get-the-intrastat-configurations-provided-by-microsoft"></a><span data-ttu-id="97ee5-120">Pobieranie konfiguracji Intrastat dostarczanych przez firmę Microsoft</span><span class="sxs-lookup"><span data-stu-id="97ee5-120">Get the Intrastat configurations provided by Microsoft</span></span>
+1. <span data-ttu-id="97ee5-121">Kliknij przycisk Otwórz.</span><span class="sxs-lookup"><span data-stu-id="97ee5-121">Click Open.</span></span>
+2. <span data-ttu-id="97ee5-122">W drzewie zaznacz element „Model Intrastat\Intrastat (Niemcy)”.</span><span class="sxs-lookup"><span data-stu-id="97ee5-122">In the tree, select 'Intrastat model\Intrastat (DE)'.</span></span>
+3. <span data-ttu-id="97ee5-123">Kliknij przycisk Importuj.</span><span class="sxs-lookup"><span data-stu-id="97ee5-123">Click Import.</span></span>
+    * <span data-ttu-id="97ee5-124">Kliknij przycisk Importuj dla wersji 1.1 wybranej konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="97ee5-124">Click Import for version 1.1 of the selected configuration.</span></span>  
+4. <span data-ttu-id="97ee5-125">Kliknij przycisk Tak.</span><span class="sxs-lookup"><span data-stu-id="97ee5-125">Click Yes.</span></span>
+5. <span data-ttu-id="97ee5-126">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="97ee5-126">Close the page.</span></span>
+6. <span data-ttu-id="97ee5-127">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="97ee5-127">Close the page.</span></span>
+7. <span data-ttu-id="97ee5-128">Kliknij opcję Konfiguracje raportowania.</span><span class="sxs-lookup"><span data-stu-id="97ee5-128">Click Reporting configurations.</span></span>
+8. <span data-ttu-id="97ee5-129">W drzewie rozwiń węzeł „Model Intrastat”.</span><span class="sxs-lookup"><span data-stu-id="97ee5-129">In the tree, expand 'Intrastat model'.</span></span>
+9. <span data-ttu-id="97ee5-130">W drzewie zaznacz element „Model Intrastat\Intrastat (Niemcy)”.</span><span class="sxs-lookup"><span data-stu-id="97ee5-130">In the tree, select 'Intrastat model\Intrastat (DE)'.</span></span>
 
 

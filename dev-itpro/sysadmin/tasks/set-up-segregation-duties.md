@@ -16,36 +16,36 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 2ab30f4326b627406f9a39d6c3203b181b67d68f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 754f28cd2831d8a9a57c408518d240de460b732b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-segregation-of-duties"></a>Konfigurowanie podziału obowiązków
+# <a name="set-up-segregation-of-duties"></a><span data-ttu-id="5282b-103">Konfigurowanie podziału obowiązków</span><span class="sxs-lookup"><span data-stu-id="5282b-103">Set up segregation of duties</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Można ustawić reguły rozdzielania zadań, które mają być wykonywane przez różnych użytkowników. Ta koncepcja jest nazywana podziałem obowiązków. Na przykład można nie chcieć, aby ta sama osoba potwierdzała przyjęcie towarów i przetwarzała płatność dla dostawcy. Podział obowiązków pomaga zmniejszyć ryzyko oszustwa, a także wykrywać błędy lub nieprawidłowości. Podział obowiązków może także służyć do wymuszania zasad kontroli wewnętrznej. Aby utworzyć regułę, wykonaj procedurę opisaną poniżej. W celu wykonania procedury musisz być administratorem systemu. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej DAT. 
+<span data-ttu-id="5282b-104">Można ustawić reguły rozdzielania zadań, które mają być wykonywane przez różnych użytkowników.</span><span class="sxs-lookup"><span data-stu-id="5282b-104">You can set up rules to separate tasks that must be performed by different users.</span></span> <span data-ttu-id="5282b-105">Ta koncepcja jest nazywana podziałem obowiązków.</span><span class="sxs-lookup"><span data-stu-id="5282b-105">This concept is named segregation of duties.</span></span> <span data-ttu-id="5282b-106">Na przykład można nie chcieć, aby ta sama osoba potwierdzała przyjęcie towarów i przetwarzała płatność dla dostawcy.</span><span class="sxs-lookup"><span data-stu-id="5282b-106">For example, you might not want the same person both to acknowledge the receipt of goods and to process payment to the vendor.</span></span> <span data-ttu-id="5282b-107">Podział obowiązków pomaga zmniejszyć ryzyko oszustwa, a także wykrywać błędy lub nieprawidłowości.</span><span class="sxs-lookup"><span data-stu-id="5282b-107">Segregation of duties helps you reduce the risk of fraud, and it also helps you detect errors or irregularities.</span></span> <span data-ttu-id="5282b-108">Podział obowiązków może także służyć do wymuszania zasad kontroli wewnętrznej.</span><span class="sxs-lookup"><span data-stu-id="5282b-108">You can also use segregation of duties to enforce internal control policies.</span></span> <span data-ttu-id="5282b-109">Aby utworzyć regułę, wykonaj procedurę opisaną poniżej.</span><span class="sxs-lookup"><span data-stu-id="5282b-109">Complete the following procedure to create a rule.</span></span> <span data-ttu-id="5282b-110">W celu wykonania procedury musisz być administratorem systemu.</span><span class="sxs-lookup"><span data-stu-id="5282b-110">You must be a system administrator to complete the procedure.</span></span> <span data-ttu-id="5282b-111">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej DAT.</span><span class="sxs-lookup"><span data-stu-id="5282b-111">The demo data company used to create this procedure is DAT.</span></span> 
 
-1. Wybierz kolejno opcje Administrowanie systemem > Zabezpieczenia > Podział obowiązków > Reguły podziału obowiązków.
-2. Kliknij przycisk Nowy.
-3. W polu Nazwa wpisz wartość.
-    * Nadaj nazwę regule.  
-4. W polu Pierwszy obowiązek kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-5. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Wybierz pierwszy obowiązek, który będzie kontrolowany przez regułę.  
-6. Na liście kliknij łącze w wybranym wierszu.
-7. W polu Drugi obowiązek kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-8. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Wybierz drugi obowiązek, który będzie kontrolowany przez regułę.  
-9. Na liście kliknij łącze w wybranym wierszu.
-10. W polu Ważność wybierz opcję.
-    * Wybierz priorytet ryzyka występującego wtedy, gdy ten sam użytkownik lub posiadacz roli wykonuje oba obowiązki.  
-11. W polu Ryzyko związane z zabezpieczeniami wpisz wartość.
-    * Wprowadź opis ryzyka związanego z zabezpieczeniami.  
-12. W polu Ograniczenie zabezpieczeń wpisz wartość.
-    * Wprowadź opis czynności, które trzeba wykonać, aby zmniejszyć ryzyko związane z zabezpieczeniami. Można na przykład ograniczyć ryzyko poprzez wykonanie bardziej szczegółowych przeglądów procesu, przeprowadzanie co miesiąc przeglądu menedżerskiego lub udostępnienie zasobów innym działom.  
-13. Kliknij przycisk Zapisz.
+1. <span data-ttu-id="5282b-112">Wybierz kolejno opcje Administrowanie systemem > Zabezpieczenia > Podział obowiązków > Reguły podziału obowiązków.</span><span class="sxs-lookup"><span data-stu-id="5282b-112">Go to System administration > Security > Segregation of duties > Segregation of duties rules.</span></span>
+2. <span data-ttu-id="5282b-113">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="5282b-113">Click New.</span></span>
+3. <span data-ttu-id="5282b-114">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="5282b-114">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="5282b-115">Nadaj nazwę regule.</span><span class="sxs-lookup"><span data-stu-id="5282b-115">Enter a name for the rule.</span></span>  
+4. <span data-ttu-id="5282b-116">W polu Pierwszy obowiązek kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="5282b-116">In the First duty field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="5282b-117">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="5282b-117">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="5282b-118">Wybierz pierwszy obowiązek, który będzie kontrolowany przez regułę.</span><span class="sxs-lookup"><span data-stu-id="5282b-118">Select the first duty that is controlled by the rule.</span></span>  
+6. <span data-ttu-id="5282b-119">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="5282b-119">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="5282b-120">W polu Drugi obowiązek kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="5282b-120">In the Second duty field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="5282b-121">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="5282b-121">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="5282b-122">Wybierz drugi obowiązek, który będzie kontrolowany przez regułę.</span><span class="sxs-lookup"><span data-stu-id="5282b-122">Select the second duty that is controlled by the rule.</span></span>  
+9. <span data-ttu-id="5282b-123">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="5282b-123">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="5282b-124">W polu Ważność wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="5282b-124">In the Severity field, select an option.</span></span>
+    * <span data-ttu-id="5282b-125">Wybierz priorytet ryzyka występującego wtedy, gdy ten sam użytkownik lub posiadacz roli wykonuje oba obowiązki.</span><span class="sxs-lookup"><span data-stu-id="5282b-125">Select the severity of the risk that occurs when the same user or role performs both duties.</span></span>  
+11. <span data-ttu-id="5282b-126">W polu Ryzyko związane z zabezpieczeniami wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="5282b-126">In the Security risk field, type a value.</span></span>
+    * <span data-ttu-id="5282b-127">Wprowadź opis ryzyka związanego z zabezpieczeniami.</span><span class="sxs-lookup"><span data-stu-id="5282b-127">Enter a description of the security risk.</span></span>  
+12. <span data-ttu-id="5282b-128">W polu Ograniczenie zabezpieczeń wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="5282b-128">In the Security mitigation field, type a value.</span></span>
+    * <span data-ttu-id="5282b-129">Wprowadź opis czynności, które trzeba wykonać, aby zmniejszyć ryzyko związane z zabezpieczeniami.</span><span class="sxs-lookup"><span data-stu-id="5282b-129">Enter a description of the actions that you take to mitigate the security risk.</span></span> <span data-ttu-id="5282b-130">Można na przykład ograniczyć ryzyko poprzez wykonanie bardziej szczegółowych przeglądów procesu, przeprowadzanie co miesiąc przeglądu menedżerskiego lub udostępnienie zasobów innym działom.</span><span class="sxs-lookup"><span data-stu-id="5282b-130">For example, you can mitigate the risk by conducting more detailed reviews of the process, by conducting a monthly managerial review, or by sharing resources with other departments.</span></span>  
+13. <span data-ttu-id="5282b-131">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="5282b-131">Click Save.</span></span>
 
 

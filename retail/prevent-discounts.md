@@ -26,19 +26,19 @@ ms.lasthandoff: 07/31/2017
 
 ---
 
-# <a name="prevent-discounts-for-retail-products"></a>Blokowanie rabatów na produkty detaliczne
+# <a name="prevent-discounts-for-retail-products"></a><span data-ttu-id="82fa5-103">Blokowanie rabatów na produkty detaliczne</span><span class="sxs-lookup"><span data-stu-id="82fa5-103">Prevent discounts for retail products</span></span>
 
 [!include[banner](includes/banner.md)]
 
-Istnieją różne powody, dla których sprzedawcy detaliczni chcą uniemożliwiać stosowanie rabatów do niektórych produktów — poprzez promocję albo podczas sprzedaży w punkcie sprzedaży.
+<span data-ttu-id="82fa5-104">Istnieją różne powody, dla których sprzedawcy detaliczni chcą uniemożliwiać stosowanie rabatów do niektórych produktów — poprzez promocję albo podczas sprzedaży w punkcie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="82fa5-104">There are various reasons why retailers may want to prevent some products from being discounted, either from a promotion or during the sale at the POS.</span></span>
 
-Następujące opcje, które można znaleźć na karcie **Sprzedaż detaliczna** dla zwolnionych produktów, pozwalają skonfigurować blokadę stosowania wszystkich lub tylko ręcznych rabatów. Te ustawienia można także określić na poziomie kategorii w hierarchii kategorii sieci sprzedaży.
+<span data-ttu-id="82fa5-105">Następujące opcje, które można znaleźć na karcie **Sprzedaż detaliczna** dla zwolnionych produktów, pozwalają skonfigurować blokadę stosowania wszystkich lub tylko ręcznych rabatów.</span><span class="sxs-lookup"><span data-stu-id="82fa5-105">The following options, which can be found on the **Retail** tab of released products, will allow the product to be configured to prevent all or manual discounts.</span></span> <span data-ttu-id="82fa5-106">Te ustawienia można także określić na poziomie kategorii w hierarchii kategorii sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="82fa5-106">The settings can also be specified at the category level from the retail category hierarchy.</span></span>
 
-**Nie zezwalaj na żadne rabaty**: Wybierz tę opcję, aby uniemożliwić stosowanie jakichkolwiek typów rabatów do tego produktu. Obejmuje to promocje takie jak rabat łączony, rabaty ilościowe i progowe, a także ręczne rabaty dla wiersza i transakcji stosowane podczas sprzedaży przez użytkownika punktu sprzedaży.
+<span data-ttu-id="82fa5-107">**Nie zezwalaj na żadne rabaty**: Wybierz tę opcję, aby uniemożliwić stosowanie jakichkolwiek typów rabatów do tego produktu.</span><span class="sxs-lookup"><span data-stu-id="82fa5-107">**Prevent all discounts**: Select this option to prevent all types of discounts from being applied to this product.</span></span> <span data-ttu-id="82fa5-108">Obejmuje to promocje takie jak rabat łączony, rabaty ilościowe i progowe, a także ręczne rabaty dla wiersza i transakcji stosowane podczas sprzedaży przez użytkownika punktu sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="82fa5-108">This includes promotions such as mix and match, quantity and threshold discounts, as well as manual line and transaction discounts that are applied during a sale by a POS user.</span></span>
 
-**Nie zezwalaj na rabaty ręczne**: Wybierz tę opcję, aby zablokować tylko ręczne rabaty dla wierszy lub transakcji stosowane podczas sprzedaży przez użytkownika punktu sprzedaży. Produkty, dla których zaznaczono tę opcję, nadal kwalifikują się do promocji, takich jak rabaty łączone i progowe.
+<span data-ttu-id="82fa5-109">**Nie zezwalaj na rabaty ręczne**: Wybierz tę opcję, aby zablokować tylko ręczne rabaty dla wierszy lub transakcji stosowane podczas sprzedaży przez użytkownika punktu sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="82fa5-109">**Prevent manual discounts**: Select this option to only prevent the manual line or transaction discounts that are applied during a sale by a POS user.</span></span> <span data-ttu-id="82fa5-110">Produkty, dla których zaznaczono tę opcję, nadal kwalifikują się do promocji, takich jak rabaty łączone i progowe.</span><span class="sxs-lookup"><span data-stu-id="82fa5-110">Products with this option selected are still eligible for promotions, such as mix and match and quantity and threshold discounts.</span></span>
 
-**Uwaga**: Te ustawienia nie ograniczają operacji ręcznej zmiany ceny, ponieważ ustawia ona podstawę ceny i nie jest traktowana jako rabat.  
+<span data-ttu-id="82fa5-111">**Uwaga**: Te ustawienia nie ograniczają operacji ręcznej zmiany ceny, ponieważ ustawia ona podstawę ceny i nie jest traktowana jako rabat.</span><span class="sxs-lookup"><span data-stu-id="82fa5-111">**Note**: These settings do not restrict the price override operation, because that sets the base price and is not treated as a discount.</span></span>  
 
 ![pole blokowania rabatów](/media/prevent-discounts.png)
 

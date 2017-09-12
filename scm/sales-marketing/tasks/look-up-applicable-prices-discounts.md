@@ -16,48 +16,48 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ecfe2ad4dbba74cb067628b63abaf780bcf0680e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f372db3d2e358cde6a5e65b01f4dc499c69fe022
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="look-up-applicable-prices-and-discounts"></a>Wyszukiwanie odpowiednich cen i rabatów
+# <a name="look-up-applicable-prices-and-discounts"></a><span data-ttu-id="113fe-103">Wyszukiwanie odpowiednich cen i rabatów</span><span class="sxs-lookup"><span data-stu-id="113fe-103">Look up applicable prices and discounts</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób wyszukiwania ceny i/lub rabatu na produkt, który jest aktualnie dostępny dla określonego odbiorcy, bez tworzenia zamówienia sprzedaży. Procedura prowadzi przez konkretny przykład. W celu wybierania niezbędnych wartości należy wykonać przykład z użyciem danych firmy demonstracyjnej USMF.
+<span data-ttu-id="113fe-104">W tej procedurze pokazano sposób wyszukiwania ceny i/lub rabatu na produkt, który jest aktualnie dostępny dla określonego odbiorcy, bez tworzenia zamówienia sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="113fe-104">This procedure shows how to find the price and/or discount for a product which is currently valid for a specific customer, without creating a sales order.</span></span> <span data-ttu-id="113fe-105">Procedura prowadzi przez konkretny przykład. W celu wybierania niezbędnych wartości należy wykonać przykład z użyciem danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="113fe-105">The procedure walks through a specific example, and you need follow the example using the USMF demo company in order to select the necessary values.</span></span>
 
 
-## <a name="find-the-applicable-price"></a>Wyszukiwanie odpowiedniej ceny
-1. Wybierz kolejno opcje Sprzedaż i marketing > Ceny i rabaty > Znajdź ceny.
-2. W polu Konto odbiorcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-3. Na liście znajdź i zaznacz odbiorcę US-001.
-4. Na liście kliknij łącze w wybranym wierszu.
-5. W polu Numer pozycji wpisz „T0004”.
-    * Domyślnie w polu Ilość jest ustawiona wartość 1. Jednak jeśli jest znany rozmiar zamówienia, jakie odbiorca zamierza złożyć na dany produkt, wprowadź tę wartość. Ta informacja jest istotna, jeśli umowy handlowe z odbiorcą zawierają przedziały ilości, tzn. cena produktu zależy od zakupionej ilości minimalnej.  
-6. W polu Data wprowadź datę, kiedy odbiorca zamierza złożyć zamówienie. 
-    * Data może być datą dzisiejszą lub dowolnym dniem w przyszłości.  
-    * Teraz system zwróci cenę, która jest prawidłowa dla wybranego produktu podczas kupowania przez wybranego odbiorcę w wybranym dniu w określonej ilości. W tym przykładzie jeśli US-001 odbiorca kupi 1 jednostkę produktu T0004 dzisiaj, zostanie obciążony kwotą 350 CAD. Ta cena pochodzi z istniejącej i aktywnej umowy handlowej z odbiorcą.      Inne pola na stronie zawierają szczegółowe informacje o cenie produktu i koszcie produktu (jeżeli je skonfigurowano w produkcie głównym) oraz obliczoną rentowność.  
-    * Jeśli jest zaznaczona Pokaż pokrewne warianty produktu, oznacza to, że istnieją dodatkowe umowy handlowe na warianty produktu.  
-7. Zaznacz pole wyboru Pokaż pokrewne warianty produktu.
-    * Jest wyświetlana lista wariantów produktu wraz z informacjami o ich wymiarach.  
-8. Na liście zaznacz wiersz reprezentujący kolor biały.
-    * Należy zauważyć, że cena produktu jest teraz inna niż wyświetlana poprzednio, gdy nie była określona dla wymiaru.  
-9. Kliknij przycisk Wyświetl ceny sprzedaży.
-    * Na stronie Cena (sprzedaż) są wyświetlane wszystkie umowy handlowe mające zastosowanie do produktu, w tym jego wariantów.  
-10. Zamknij stronę.
+## <a name="find-the-applicable-price"></a><span data-ttu-id="113fe-106">Wyszukiwanie odpowiedniej ceny</span><span class="sxs-lookup"><span data-stu-id="113fe-106">Find the applicable price</span></span>
+1. <span data-ttu-id="113fe-107">Wybierz kolejno opcje Sprzedaż i marketing > Ceny i rabaty > Znajdź ceny.</span><span class="sxs-lookup"><span data-stu-id="113fe-107">Go to Sales and marketing > Prices and discounts > Find prices.</span></span>
+2. <span data-ttu-id="113fe-108">W polu Konto odbiorcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="113fe-108">In the Customer account field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="113fe-109">Na liście znajdź i zaznacz odbiorcę US-001.</span><span class="sxs-lookup"><span data-stu-id="113fe-109">In the list, find and select customer US-001.</span></span>
+4. <span data-ttu-id="113fe-110">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="113fe-110">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="113fe-111">W polu Numer pozycji wpisz „T0004”.</span><span class="sxs-lookup"><span data-stu-id="113fe-111">In the Item number field, type 'T0004'.</span></span>
+    * <span data-ttu-id="113fe-112">Domyślnie w polu Ilość jest ustawiona wartość 1.</span><span class="sxs-lookup"><span data-stu-id="113fe-112">By default, the Quantity field is set to 1.</span></span> <span data-ttu-id="113fe-113">Jednak jeśli jest znany rozmiar zamówienia, jakie odbiorca zamierza złożyć na dany produkt, wprowadź tę wartość.</span><span class="sxs-lookup"><span data-stu-id="113fe-113">However, if you know the size of the order that the customer intends to place for the product in question, then enter this value instead.</span></span> <span data-ttu-id="113fe-114">Ta informacja jest istotna, jeśli umowy handlowe z odbiorcą zawierają przedziały ilości, tzn. cena produktu zależy od zakupionej ilości minimalnej.</span><span class="sxs-lookup"><span data-stu-id="113fe-114">This information is relevant if the trade agreements with the customer have quantity breaks, that is, the product's price depends on the minimum quantity purchased.</span></span>  
+6. <span data-ttu-id="113fe-115">W polu Data wprowadź datę, kiedy odbiorca zamierza złożyć zamówienie.</span><span class="sxs-lookup"><span data-stu-id="113fe-115">In the Date field, enter a date for when the customer expects to place an order.</span></span> 
+    * <span data-ttu-id="113fe-116">Data może być datą dzisiejszą lub dowolnym dniem w przyszłości.</span><span class="sxs-lookup"><span data-stu-id="113fe-116">The date can be today's date or any date in the future.</span></span>  
+    * <span data-ttu-id="113fe-117">Teraz system zwróci cenę, która jest prawidłowa dla wybranego produktu podczas kupowania przez wybranego odbiorcę w wybranym dniu w określonej ilości.</span><span class="sxs-lookup"><span data-stu-id="113fe-117">The system now returns the price that is valid for the selected product when bought by the selected customer on the selected date with a specified quantity.</span></span> <span data-ttu-id="113fe-118">W tym przykładzie jeśli US-001 odbiorca kupi 1 jednostkę produktu T0004 dzisiaj, zostanie obciążony kwotą 350 CAD.</span><span class="sxs-lookup"><span data-stu-id="113fe-118">In this example, if the customer US-001 bought 1 unit of product T0004 today, they would be charged 350 CAD a unit.</span></span> <span data-ttu-id="113fe-119">Ta cena pochodzi z istniejącej i aktywnej umowy handlowej z odbiorcą.</span><span class="sxs-lookup"><span data-stu-id="113fe-119">This price comes from an existing and active trade agreement with the customer.</span></span>      <span data-ttu-id="113fe-120">Inne pola na stronie zawierają szczegółowe informacje o cenie produktu i koszcie produktu (jeżeli je skonfigurowano w produkcie głównym) oraz obliczoną rentowność.</span><span class="sxs-lookup"><span data-stu-id="113fe-120">Other fields on the page provide more details about the product price and product cost (if set up on the product master), and calculated profitability.</span></span>  
+    * <span data-ttu-id="113fe-121">Jeśli jest zaznaczona Pokaż pokrewne warianty produktu, oznacza to, że istnieją dodatkowe umowy handlowe na warianty produktu.</span><span class="sxs-lookup"><span data-stu-id="113fe-121">If the Show related product variants option is selected, it means that there are additional trade agreements for product's variants.</span></span>  
+7. <span data-ttu-id="113fe-122">Zaznacz pole wyboru Pokaż pokrewne warianty produktu.</span><span class="sxs-lookup"><span data-stu-id="113fe-122">Click the Show related product variants checkbox.</span></span>
+    * <span data-ttu-id="113fe-123">Jest wyświetlana lista wariantów produktu wraz z informacjami o ich wymiarach.</span><span class="sxs-lookup"><span data-stu-id="113fe-123">A list of the product variants is shown, with information about their dimensions.</span></span>  
+8. <span data-ttu-id="113fe-124">Na liście zaznacz wiersz reprezentujący kolor biały.</span><span class="sxs-lookup"><span data-stu-id="113fe-124">In the list, mark the line representing colour White.</span></span>
+    * <span data-ttu-id="113fe-125">Należy zauważyć, że cena produktu jest teraz inna niż wyświetlana poprzednio, gdy nie była określona dla wymiaru.</span><span class="sxs-lookup"><span data-stu-id="113fe-125">Notice, that the product price is now different from the one displayed previously when it was not specified per dimension.</span></span>  
+9. <span data-ttu-id="113fe-126">Kliknij przycisk Wyświetl ceny sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="113fe-126">Click View sales prices.</span></span>
+    * <span data-ttu-id="113fe-127">Na stronie Cena (sprzedaż) są wyświetlane wszystkie umowy handlowe mające zastosowanie do produktu, w tym jego wariantów.</span><span class="sxs-lookup"><span data-stu-id="113fe-127">The Price (sales) page displays all the trade agreements applicable to the product, including its variants.</span></span>  
+10. <span data-ttu-id="113fe-128">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="113fe-128">Close the page.</span></span>
 
-## <a name="find-the-applicable-discount"></a>Wyszukiwanie odpowiedniego rabatu
-    * Upewnij się, że pole Konto odbiorcy zawiera numer odbiorcy US-001.    
-1. W polu Numer pozycji wpisz „T0012”.
-    * Upewnij się, że pole Ilość zawiera wartość 1.  
-    * Poniższe szczegóły cen wyświetlane dla produktu T0012 pochodzą z jednej lub kilku umów handlowych: cena jednostkowa wynosi 1000 CAD, a procent rabatu wynosi 5.  
-2. W polu Ilość wpisz wartość 20.
-    * Zwiększona ilość w zamówieniu powoduje, że rabat wiersza, który będzie oferowany odbiorcy, zmienia się z 5 na 7 procent.  
-    * Kwota netto jest obliczana automatycznie na podstawie ceny jednostkowej, rabatu i ilości całkowitej.  
-3. Kliknij opcję Wyświetl rabat wiersza.
-    * Istnieją dwie umowy rabatu wiersza na produkt T0012, określając 5 procent rabatu za ilość wiersza zamówienia od 1 do 10 oraz 7 procent rabatu dla ilości w zamówieniu powyżej 10. Należy zwrócić uwagę, że rabaty są stosowane do grupy produktów, w tym przykładzie grupy o kodzie 01, do której należy produkt T0012.  
-4. Zamknij stronę.
+## <a name="find-the-applicable-discount"></a><span data-ttu-id="113fe-129">Wyszukiwanie odpowiedniego rabatu</span><span class="sxs-lookup"><span data-stu-id="113fe-129">Find the applicable discount</span></span>
+    * <span data-ttu-id="113fe-130">Upewnij się, że pole Konto odbiorcy zawiera numer odbiorcy US-001. </span><span class="sxs-lookup"><span data-stu-id="113fe-130">Make sure the Customer account field contains customer number US-001</span></span>   
+1. <span data-ttu-id="113fe-131">W polu Numer pozycji wpisz „T0012”.</span><span class="sxs-lookup"><span data-stu-id="113fe-131">In the Item number field, type 'T0012'.</span></span>
+    * <span data-ttu-id="113fe-132">Upewnij się, że pole Ilość zawiera wartość 1.</span><span class="sxs-lookup"><span data-stu-id="113fe-132">Make sure the Quantity field is set to 1.</span></span>  
+    * <span data-ttu-id="113fe-133">Poniższe szczegóły cen wyświetlane dla produktu T0012 pochodzą z jednej lub kilku umów handlowych: cena jednostkowa wynosi 1000 CAD, a procent rabatu wynosi 5.</span><span class="sxs-lookup"><span data-stu-id="113fe-133">The following pricing details shown for product T0012 come from one or more trade agreements: The unit price is 1,000 CAD and the discount percentage is 5.</span></span>  
+2. <span data-ttu-id="113fe-134">W polu Ilość wpisz wartość 20.</span><span class="sxs-lookup"><span data-stu-id="113fe-134">Set Quantity to '20'.</span></span>
+    * <span data-ttu-id="113fe-135">Zwiększona ilość w zamówieniu powoduje, że rabat wiersza, który będzie oferowany odbiorcy, zmienia się z 5 na 7 procent.</span><span class="sxs-lookup"><span data-stu-id="113fe-135">The increased order quantity causes the line discount that will be offered to the customer to change from 5 to 7 percent.</span></span>  
+    * <span data-ttu-id="113fe-136">Kwota netto jest obliczana automatycznie na podstawie ceny jednostkowej, rabatu i ilości całkowitej.</span><span class="sxs-lookup"><span data-stu-id="113fe-136">The Net amount is calculated based on the unit price, discount and the total quantity.</span></span>  
+3. <span data-ttu-id="113fe-137">Kliknij opcję Wyświetl rabat wiersza.</span><span class="sxs-lookup"><span data-stu-id="113fe-137">Click View line discount.</span></span>
+    * <span data-ttu-id="113fe-138">Istnieją dwie umowy rabatu wiersza na produkt T0012, określając 5 procent rabatu za ilość wiersza zamówienia od 1 do 10 oraz 7 procent rabatu dla ilości w zamówieniu powyżej 10.</span><span class="sxs-lookup"><span data-stu-id="113fe-138">There are two line discount agreements for product T0012, specifying a 5 percent discount for an order line quantity from 1 to 10, and 7 percent discount for order quantities above 10.</span></span> <span data-ttu-id="113fe-139">Należy zwrócić uwagę, że rabaty są stosowane do grupy produktów, w tym przykładzie grupy o kodzie 01, do której należy produkt T0012.</span><span class="sxs-lookup"><span data-stu-id="113fe-139">Note that the discounts are applied to a group of products, in this example, Group code 01, of which product T0012 is a member.</span></span>  
+4. <span data-ttu-id="113fe-140">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="113fe-140">Close the page.</span></span>
 
 

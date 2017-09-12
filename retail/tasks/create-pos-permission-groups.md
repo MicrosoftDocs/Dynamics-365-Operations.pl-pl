@@ -17,41 +17,41 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: b0c930e3722d1d0b1fff8efad7a785a153436b6d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e924dc59c3e4cb9b6979014852512453dd3d70db
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-pos-permission-groups"></a>Tworzenie grup uprawnień dla punktu sprzedaży
+# <a name="create-pos-permission-groups"></a><span data-ttu-id="6664e-103">Tworzenie grup uprawnień dla punktu sprzedaży</span><span class="sxs-lookup"><span data-stu-id="6664e-103">Create POS permission groups</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Ta procedura pokazuje, jak utworzyć grupę uprawnień dla punktu sprzedaży. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USRT. To zadanie jest przeznaczone dla roli Kierownik ds. operacyjnych sieci sprzedaży.
+<span data-ttu-id="6664e-104">Ta procedura pokazuje, jak utworzyć grupę uprawnień dla punktu sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="6664e-104">This procedure will show how to create a POS permission group.</span></span> <span data-ttu-id="6664e-105">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USRT.</span><span class="sxs-lookup"><span data-stu-id="6664e-105">The demo data company used to create this task is USRT.</span></span> <span data-ttu-id="6664e-106">To zadanie jest przeznaczone dla roli Kierownik ds. operacyjnych sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="6664e-106">This task is intended for the Retail operations manager role.</span></span>
 
-1. Przejdź do okna Grupy uprawnień.
-2. Kliknij przycisk Nowy.
-3. W polu Identyfikator grupy uprawnień dla punktu sprzedaży wpisz wartość.
-4. Wypełnij pole Opis.
-5. W polu Wyświetlanie wpisów zegara wybierz opcję Tak.
-    * Teraz można włączyć lub wyłączyć różne uprawnienia w grupie uprawnień dla punktu sprzedaży. Dla niektórych uprawnień można ustawić wartość, która będzie używana do oceny, czy użytkownik punktu sprzedaży może wykonać czynność.  W tym podręczniku po zadaniach włączono kilka uprawnień, które można przyznać kasjerowi.  
-6. W polu Zezwalaj na tworzenie zamówienia wybierz opcję Tak.
-7. W polu Zezwalaj na edytowanie zamówienia wybierz opcję Tak.
-8. W polu Zezwalaj na pobieranie zamówienia wybierz opcję Tak.
-9. W polu Dopuszczaj zmianę hasła wybierz opcję Tak.
-10. W polu Zezwalaj na ukrycie raportu podczas zamknięcia kasy wybierz opcję Tak.
-11. Kliknij przycisk Zapisz.
-    * Gdy zmiany zostaną zapisane, należy uruchomić harmonogram dystrybucji do pracowników, aby wysłać zmiany do kanałów sprzedaży detalicznej.  
-12. Zamknij stronę.
-13. Przejdź do okna Zadania.
-    * Następnie przypiszemy grupę uprawnień dla punktu sprzedaży do zadania.  
-14. Na liście znajdź i zaznacz odpowiedni rekord.
-15. Na liście kliknij łącze w wybranym wierszu.
-16. Kliknij przycisk Edytuj.
-17. Rozwiń sekcję Klasyfikacja zadania.
-18. W polu Grupa uprawnień dla punktu sprzedaży wprowadź lub wybierz wartość.
-    * Wszyscy pracownicy na stanowiskach dla tego zadania będą używali ustawień tej grupy uprawnień dla punktu sprzedaży, chyba że odnośne uprawnienia zostały zastąpione pracownikom na poziomie ich stanowisk.  
-19. Kliknij przycisk Zapisz.
-    * Gdy zmiany zostaną zapisane, należy uruchomić harmonogram dystrybucji do pracowników, aby wysłać zmiany do kanałów sprzedaży detalicznej.  
+1. <span data-ttu-id="6664e-107">Przejdź do okna Grupy uprawnień.</span><span class="sxs-lookup"><span data-stu-id="6664e-107">Go to Permission groups.</span></span>
+2. <span data-ttu-id="6664e-108">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="6664e-108">Click New.</span></span>
+3. <span data-ttu-id="6664e-109">W polu Identyfikator grupy uprawnień dla punktu sprzedaży wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="6664e-109">In the POS permission group ID field, type a value.</span></span>
+4. <span data-ttu-id="6664e-110">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="6664e-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="6664e-111">W polu Wyświetlanie wpisów zegara wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="6664e-111">Select Yes in the View time clock entries field.</span></span>
+    * <span data-ttu-id="6664e-112">Teraz można włączyć lub wyłączyć różne uprawnienia w grupie uprawnień dla punktu sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="6664e-112">You can now enable or disable various permissions for your POS Permission group.</span></span> <span data-ttu-id="6664e-113">Dla niektórych uprawnień można ustawić wartość, która będzie używana do oceny, czy użytkownik punktu sprzedaży może wykonać czynność.</span><span class="sxs-lookup"><span data-stu-id="6664e-113">For some permission you can set a value that will be used to evaluate if the POS user can perform the action.</span></span>  <span data-ttu-id="6664e-114">W tym podręczniku po zadaniach włączono kilka uprawnień, które można przyznać kasjerowi.</span><span class="sxs-lookup"><span data-stu-id="6664e-114">This task guide enables a few permission that might be given to a cashier.</span></span>  
+6. <span data-ttu-id="6664e-115">W polu Zezwalaj na tworzenie zamówienia wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="6664e-115">Select Yes in the Allow create order field.</span></span>
+7. <span data-ttu-id="6664e-116">W polu Zezwalaj na edytowanie zamówienia wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="6664e-116">Select Yes in the Allow edit order field.</span></span>
+8. <span data-ttu-id="6664e-117">W polu Zezwalaj na pobieranie zamówienia wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="6664e-117">Select Yes in the Allow retrieve order field.</span></span>
+9. <span data-ttu-id="6664e-118">W polu Dopuszczaj zmianę hasła wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="6664e-118">Select Yes in the Allow password change field.</span></span>
+10. <span data-ttu-id="6664e-119">W polu Zezwalaj na ukrycie raportu podczas zamknięcia kasy wybierz opcję Tak.</span><span class="sxs-lookup"><span data-stu-id="6664e-119">Select Yes in the Allow blind close field.</span></span>
+11. <span data-ttu-id="6664e-120">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="6664e-120">Click Save.</span></span>
+    * <span data-ttu-id="6664e-121">Gdy zmiany zostaną zapisane, należy uruchomić harmonogram dystrybucji do pracowników, aby wysłać zmiany do kanałów sprzedaży detalicznej.</span><span class="sxs-lookup"><span data-stu-id="6664e-121">After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.</span></span>  
+12. <span data-ttu-id="6664e-122">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="6664e-122">Close the page.</span></span>
+13. <span data-ttu-id="6664e-123">Przejdź do okna Zadania.</span><span class="sxs-lookup"><span data-stu-id="6664e-123">Go to Jobs.</span></span>
+    * <span data-ttu-id="6664e-124">Następnie przypiszemy grupę uprawnień dla punktu sprzedaży do zadania.</span><span class="sxs-lookup"><span data-stu-id="6664e-124">Next we will assign the POS permission group to a Job.</span></span>  
+14. <span data-ttu-id="6664e-125">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="6664e-125">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="6664e-126">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="6664e-126">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="6664e-127">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="6664e-127">Click Edit.</span></span>
+17. <span data-ttu-id="6664e-128">Rozwiń sekcję Klasyfikacja zadania.</span><span class="sxs-lookup"><span data-stu-id="6664e-128">Expand the Job classification section.</span></span>
+18. <span data-ttu-id="6664e-129">W polu Grupa uprawnień dla punktu sprzedaży wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="6664e-129">In the POS permission group field, enter or select a value.</span></span>
+    * <span data-ttu-id="6664e-130">Wszyscy pracownicy na stanowiskach dla tego zadania będą używali ustawień tej grupy uprawnień dla punktu sprzedaży, chyba że odnośne uprawnienia zostały zastąpione pracownikom na poziomie ich stanowisk.</span><span class="sxs-lookup"><span data-stu-id="6664e-130">All Workers in Positions for this Job will use this POS permission group’s settings unless the workers POS permissions have been overridden at their Position level.</span></span>  
+19. <span data-ttu-id="6664e-131">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="6664e-131">Click Save.</span></span>
+    * <span data-ttu-id="6664e-132">Gdy zmiany zostaną zapisane, należy uruchomić harmonogram dystrybucji do pracowników, aby wysłać zmiany do kanałów sprzedaży detalicznej.</span><span class="sxs-lookup"><span data-stu-id="6664e-132">After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.</span></span>  
 
 

@@ -16,30 +16,30 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: da6b4c54e4c43efc0901c3c9686425d2de546039
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6a4cb15bdfc89081e0dc9d1161670eddc412281d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="maintain-financial-dimension-default-templates"></a>Obsługa domyślnych szablonów wymiaru finansowego
+# <a name="maintain-financial-dimension-default-templates"></a><span data-ttu-id="be94c-103">Obsługa domyślnych szablonów wymiaru finansowego</span><span class="sxs-lookup"><span data-stu-id="be94c-103">Maintain financial dimension default templates</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób konfigurowania domyślnych szablonów wymiarów finansowych. Szablony mogą służyć do szybkiego rozdziału kwot w dokumentach źródłowych.
+<span data-ttu-id="be94c-104">W tej procedurze pokazano sposób konfigurowania domyślnych szablonów wymiarów finansowych.</span><span class="sxs-lookup"><span data-stu-id="be94c-104">This procedure shows how to set up financial dimension default templates.</span></span> <span data-ttu-id="be94c-105">Szablony mogą służyć do szybkiego rozdziału kwot w dokumentach źródłowych.</span><span class="sxs-lookup"><span data-stu-id="be94c-105">The templates can be used to quickly distribute amounts on source documents.</span></span>
 
-1. Wybierz kolejno opcje Księga główna > Plan kont > Wymiary > Domyślne szablony wymiaru finansowego.
-2. Kliknij przycisk Nowy.
-3. W polu Identyfikator szablonu wprowadź identyfikator szablonu.
-4. Wprowadź wartość procentową dla wartości pierwszego wymiaru.
-5. Wprowadź wartości wymiarów finansowych odpowiadające wprowadzonej wartości procentowej.
-6. Kliknij przycisk Dodaj.
-7. Wprowadź kolejną wartość procentową dla wartości następnego wymiaru.
-    * W tym przykładzie wprowadź wartość procentową, tak aby mieć przydzielone niecałe 100%.  
-8. Wprowadź wartości wymiarów finansowych odpowiadające wprowadzonej wartości procentowej.
-9. Kliknij przycisk Dodaj.
-10. Wprowadź inną wartość procentową, która sprawi, że całkowita wartość procentowa będzie równa 100%.
-11. Wprowadź wartości wymiarów finansowych odpowiadające wprowadzonej wartości procentowej.
-12. Kliknij przycisk Zapisz.
+1. <span data-ttu-id="be94c-106">Wybierz kolejno opcje Księga główna > Plan kont > Wymiary > Domyślne szablony wymiaru finansowego.</span><span class="sxs-lookup"><span data-stu-id="be94c-106">Go to General ledger > Chart of accounts > Dimensions > Financial dimension default templates.</span></span>
+2. <span data-ttu-id="be94c-107">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="be94c-107">Click New.</span></span>
+3. <span data-ttu-id="be94c-108">W polu Identyfikator szablonu wprowadź identyfikator szablonu.</span><span class="sxs-lookup"><span data-stu-id="be94c-108">In the Template ID field, enter a Template ID..</span></span>
+4. <span data-ttu-id="be94c-109">Wprowadź wartość procentową dla wartości pierwszego wymiaru.</span><span class="sxs-lookup"><span data-stu-id="be94c-109">Enter the percentage for the first dimension values.</span></span>
+5. <span data-ttu-id="be94c-110">Wprowadź wartości wymiarów finansowych odpowiadające wprowadzonej wartości procentowej.</span><span class="sxs-lookup"><span data-stu-id="be94c-110">Enter the financial dimension values that correspond to the percent entered.</span></span>
+6. <span data-ttu-id="be94c-111">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="be94c-111">Click Add.</span></span>
+7. <span data-ttu-id="be94c-112">Wprowadź kolejną wartość procentową dla wartości następnego wymiaru.</span><span class="sxs-lookup"><span data-stu-id="be94c-112">Enter another percent for the next dimension values.</span></span>
+    * <span data-ttu-id="be94c-113">W tym przykładzie wprowadź wartość procentową, tak aby mieć przydzielone niecałe 100%.</span><span class="sxs-lookup"><span data-stu-id="be94c-113">For this example, enter a percentage so you still have less than 100% allocated.</span></span>  
+8. <span data-ttu-id="be94c-114">Wprowadź wartości wymiarów finansowych odpowiadające wprowadzonej wartości procentowej.</span><span class="sxs-lookup"><span data-stu-id="be94c-114">Enter the financial dimension values that correspond to the percent entered.</span></span>
+9. <span data-ttu-id="be94c-115">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="be94c-115">Click Add.</span></span>
+10. <span data-ttu-id="be94c-116">Wprowadź inną wartość procentową, która sprawi, że całkowita wartość procentowa będzie równa 100%.</span><span class="sxs-lookup"><span data-stu-id="be94c-116">Enter another percent, which will make the total percent equal to 100%.</span></span>
+11. <span data-ttu-id="be94c-117">Wprowadź wartości wymiarów finansowych odpowiadające wprowadzonej wartości procentowej.</span><span class="sxs-lookup"><span data-stu-id="be94c-117">Enter the financial dimension values that correspond to the percent entered.</span></span>
+12. <span data-ttu-id="be94c-118">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="be94c-118">Click Save.</span></span>
 
 

@@ -17,36 +17,36 @@ ms.assetid: 3a7c3d13-8dbc-442d-a281-ac0ebe99ec83
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74ad59504d6bbea0c604e0f0b83e74c915e84019
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 7a5340baad38864388abcfab3235cf459887cba9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="update-standard-costs-in-a-manufacturing-environment"></a>Aktualizacja kosztów standardowych w środowisku produkcyjnym
+# <a name="update-standard-costs-in-a-manufacturing-environment"></a><span data-ttu-id="71fef-103">Aktualizacja kosztów standardowych w środowisku produkcyjnym</span><span class="sxs-lookup"><span data-stu-id="71fef-103">Update standard costs in a manufacturing environment</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera wskazówki dotyczące aktualizowania kosztów standardowych w środowisku produkcyjnym. 
+<span data-ttu-id="71fef-104">Ten artykuł zawiera wskazówki dotyczące aktualizowania kosztów standardowych w środowisku produkcyjnym.</span><span class="sxs-lookup"><span data-stu-id="71fef-104">This article provides guidance about how to update standard costs in a manufacturing environment.</span></span> 
 
-Aktualizacje mogą odzwierciedlać nowe towary, kategorie kosztów lub wzory obliczania kosztów pośrednich. Mogą także wynikać z korekt i zmian kosztów. Typ aktualizacji wpływa na czynności, jakie trzeba wykonać w celu aktualizacji kosztów standardowych, co przedstawiono w poniższych przypadkach:
+<span data-ttu-id="71fef-105">Aktualizacje mogą odzwierciedlać nowe towary, kategorie kosztów lub wzory obliczania kosztów pośrednich.</span><span class="sxs-lookup"><span data-stu-id="71fef-105">Updates can reflect new items, cost categories, or indirect cost calculation formulas.</span></span> <span data-ttu-id="71fef-106">Mogą także wynikać z korekt i zmian kosztów.</span><span class="sxs-lookup"><span data-stu-id="71fef-106">They can also reflect corrections and cost changes.</span></span> <span data-ttu-id="71fef-107">Typ aktualizacji wpływa na czynności, jakie trzeba wykonać w celu aktualizacji kosztów standardowych, co przedstawiono w poniższych przypadkach:</span><span class="sxs-lookup"><span data-stu-id="71fef-107">The type of update affects the steps that you must complete to update standard costs, as illustrated in the following cases:</span></span>
 
--   Wprowadzenie oczekiwanych zmian kosztów standardowych dla kupowanych towarów, a następnie w odpowiednim dniu zmiana stanu rekordów kosztów tych towarów na **Aktywne**. Nie obliczono jednak ponownie kosztów wytwarzanych towarów, które zużywają kupowane towary.
--   Wprowadzenie kosztów standardowych dla nowo kupowanych towarów bez ponownego obliczenia kosztów produkowanych towarów mających wersję listy składowej (BOM), w której nowo kupowane towary są składnikami.
--   Korekta lub zmiana kosztu kupowanego towaru albo zmiana grupy kosztów przypisanej do kupowanego towaru, a następnie obliczenie kosztu wszystkich produkowanych towarów mających wersję BOM, w której kupowany towar jest składnikiem.
--   Zmiana kosztu lub kategorii kosztu, a następnie obliczenie kosztu wszystkich produkowanych towarów mających wersję marszruty z operacjami marszruty wykorzystującymi kategorię kosztów.
--   Zmiana kategorii kosztów przypisanych do operacji marszruty albo grupy kosztów przypisanej do kategorii kosztów. Następnie obliczono koszt wszystkich produkowanych towarów mających wersję marszruty z operacjami marszruty wykorzystującymi kategorię kosztów.
--   Zmiana wzoru obliczania kosztów pośrednich i obliczenie kosztu wszystkich wyprodukowanych towarów, na które wpłynęła zmiana.
--   Zmiana lub dodanie oddziału, w którym wytworzono towar, i obliczenie kosztu wytworzenia dla określonego oddziału.
--   Obliczenie (lub ponowne obliczenie) kosztu produkowanego towaru, a następnie ponowne obliczenie kosztu wszystkich produkowanych towarów mających wersję BOM, w której kupowany towar jest składnikiem.
--   Obliczenie kosztów nowo produkowanego towaru na podstawie zdefiniowanej, zatwierdzonej i aktywnej listy BOM oraz informacji o marszrucie.
+-   <span data-ttu-id="71fef-108">Wprowadzenie oczekiwanych zmian kosztów standardowych dla kupowanych towarów, a następnie w odpowiednim dniu zmiana stanu rekordów kosztów tych towarów na **Aktywne**.</span><span class="sxs-lookup"><span data-stu-id="71fef-108">Enter expected standard cost changes for purchased items, and then change the status of the item cost records to **Active** on the appropriate date.</span></span> <span data-ttu-id="71fef-109">Nie obliczono jednak ponownie kosztów wytwarzanych towarów, które zużywają kupowane towary.</span><span class="sxs-lookup"><span data-stu-id="71fef-109">However, don't recalculate the costs of manufactured items that use the purchased items.</span></span>
+-   <span data-ttu-id="71fef-110">Wprowadzenie kosztów standardowych dla nowo kupowanych towarów bez ponownego obliczenia kosztów produkowanych towarów mających wersję listy składowej (BOM), w której nowo kupowane towary są składnikami.</span><span class="sxs-lookup"><span data-stu-id="71fef-110">Enter standard costs for a new purchased item, but don't recalculate the costs of manufactured items that have a bill of materials (BOM) version that contains the new purchased item as a component.</span></span>
+-   <span data-ttu-id="71fef-111">Korekta lub zmiana kosztu kupowanego towaru albo zmiana grupy kosztów przypisanej do kupowanego towaru, a następnie obliczenie kosztu wszystkich produkowanych towarów mających wersję BOM, w której kupowany towar jest składnikiem.</span><span class="sxs-lookup"><span data-stu-id="71fef-111">Correct or change the cost of a purchased item, or change the cost group that is assigned to a purchased item, and calculate the cost for all manufactured items that have a BOM version that contains the purchased item as a component.</span></span>
+-   <span data-ttu-id="71fef-112">Zmiana kosztu lub kategorii kosztu, a następnie obliczenie kosztu wszystkich produkowanych towarów mających wersję marszruty z operacjami marszruty wykorzystującymi kategorię kosztów.</span><span class="sxs-lookup"><span data-stu-id="71fef-112">Change the cost for a cost category, and calculate the cost for all manufactured items that have a route version that contains routing operations that use the cost category.</span></span>
+-   <span data-ttu-id="71fef-113">Zmiana kategorii kosztów przypisanych do operacji marszruty albo grupy kosztów przypisanej do kategorii kosztów.</span><span class="sxs-lookup"><span data-stu-id="71fef-113">Change the cost categories that are assigned to routing operations or the cost group that is assigned to cost categories.</span></span> <span data-ttu-id="71fef-114">Następnie obliczono koszt wszystkich produkowanych towarów mających wersję marszruty z operacjami marszruty wykorzystującymi kategorię kosztów.</span><span class="sxs-lookup"><span data-stu-id="71fef-114">Then calculate the cost for all manufactured items that have a route version that contains routing operations that use the cost category.</span></span>
+-   <span data-ttu-id="71fef-115">Zmiana wzoru obliczania kosztów pośrednich i obliczenie kosztu wszystkich wyprodukowanych towarów, na które wpłynęła zmiana.</span><span class="sxs-lookup"><span data-stu-id="71fef-115">Change an indirect cost calculation formula, and calculate the cost for all manufactured items that are affected by the change.</span></span>
+-   <span data-ttu-id="71fef-116">Zmiana lub dodanie oddziału, w którym wytworzono towar, i obliczenie kosztu wytworzenia dla określonego oddziału.</span><span class="sxs-lookup"><span data-stu-id="71fef-116">Change or add a manufacturing site for a manufactured item, and calculate the item's manufactured cost for the site.</span></span>
+-   <span data-ttu-id="71fef-117">Obliczenie (lub ponowne obliczenie) kosztu produkowanego towaru, a następnie ponowne obliczenie kosztu wszystkich produkowanych towarów mających wersję BOM, w której kupowany towar jest składnikiem.</span><span class="sxs-lookup"><span data-stu-id="71fef-117">Calculate, or recalculate, the cost for a manufactured item, and recalculate the cost for all manufactured items that have a BOM version that contains the manufactured item as a component.</span></span>
+-   <span data-ttu-id="71fef-118">Obliczenie kosztów nowo produkowanego towaru na podstawie zdefiniowanej, zatwierdzonej i aktywnej listy BOM oraz informacji o marszrucie.</span><span class="sxs-lookup"><span data-stu-id="71fef-118">Calculate costs for a new manufactured item, based on its defined, approved, and active BOM and route information.</span></span>
 
-Każdy przykład wymaga specyficznego sposobu aktualizacji kosztów standardowych.
+<span data-ttu-id="71fef-119">Każdy przykład wymaga specyficznego sposobu aktualizacji kosztów standardowych.</span><span class="sxs-lookup"><span data-stu-id="71fef-119">Each case requires careful consideration about how to update standard costs.</span></span>
 
 
 

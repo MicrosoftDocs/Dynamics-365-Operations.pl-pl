@@ -15,46 +15,46 @@ ms.custom: 12334
 ms.assetid: a9a57f0e-a67c-46b1-83c9-5d6350fb3b86
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b7618f5150b55542d26d10000a644a13a8651e82
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 55d4fa4629d203aa888fe6400126a872d2eee000
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="finance-and-operations-client-faq"></a>Klient rozwiązania Finance and Operations — często zadawane pytania
+# <a name="finance-and-operations-client-faq"></a><span data-ttu-id="836b6-103">Klient rozwiązania Finance and Operations — często zadawane pytania</span><span class="sxs-lookup"><span data-stu-id="836b6-103">Finance and Operations client FAQ</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące klienta programu Microsoft Dynamics 365 for Finance and Operations.
+<span data-ttu-id="836b6-104">Ten artykuł zawiera odpowiedzi na często zadawane pytania dotyczące klienta programu Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="836b6-104">This article provides answers to frequently asked questions about the Microsoft Dynamics 365 for Finance and Operations client.</span></span>
 
-<a name="why-arent-symbols-loaded-when-i-use-finance-and-operations"></a>Dlaczego symbole nie ładują się, gdy używam programu Finance and Operations?
+<a name="why-arent-symbols-loaded-when-i-use-finance-and-operations"></a><span data-ttu-id="836b6-105">Dlaczego symbole nie ładują się, gdy używam programu Finance and Operations?</span><span class="sxs-lookup"><span data-stu-id="836b6-105">Why aren't symbols loaded when I use Finance and Operations?</span></span>
 -----------------------------------------------------------------
 
-Ustawienia zabezpieczeń w Twojej przeglądarce mogą uniemożliwiać prawidłowe ładowanie symboli. Aby rozwiązać ten problem, spróbuj wykonać następujące kroki:
+<span data-ttu-id="836b6-106">Ustawienia zabezpieczeń w Twojej przeglądarce mogą uniemożliwiać prawidłowe ładowanie symboli.</span><span class="sxs-lookup"><span data-stu-id="836b6-106">The security settings on your browser might prevent the symbols from being loaded correctly.</span></span> <span data-ttu-id="836b6-107">Aby rozwiązać ten problem, spróbuj wykonać następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="836b6-107">To resolve this issue, try the following steps:</span></span>
 
--   Jeśli występują problemy w przeglądarce Internet Explorer, kliknij przycisk **Narzędzia** i wybierz polecenie **Opcje internetowe**.  W oknie dialogowym Opcje internetowe na karcie **Prywatności** kliknij przycisk **Poziom niestandardowy** i upewnij się, że jest zaznaczona opcja **Pobieranie czcionek**.
--   Być może trzeba też dodać witrynę systemu Finance and Operations do listy zaufanych witryn.
+-   <span data-ttu-id="836b6-108">Jeśli występują problemy w przeglądarce Internet Explorer, kliknij przycisk **Narzędzia** i wybierz polecenie **Opcje internetowe**.</span><span class="sxs-lookup"><span data-stu-id="836b6-108">If you're experiencing this issue in Internet Explorer, click **Tools**, and then click **Internet Options**.</span></span>  <span data-ttu-id="836b6-109">W oknie dialogowym Opcje internetowe na karcie **Prywatności** kliknij przycisk **Poziom niestandardowy** i upewnij się, że jest zaznaczona opcja **Pobieranie czcionek**.</span><span class="sxs-lookup"><span data-stu-id="836b6-109">In the Internet Options dialog box, on the **Privacy** tab, click **Custom level**, and make sure the **Font download** option is selected.</span></span>
+-   <span data-ttu-id="836b6-110">Być może trzeba też dodać witrynę systemu Finance and Operations do listy zaufanych witryn.</span><span class="sxs-lookup"><span data-stu-id="836b6-110">Otherwise, you might have to add the Finance and Operations site to the list of trusted sites.</span></span>
 
-## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Nie widzę wstążki, która była w systemie Dynamics AX 2012. Czy karty w okienku akcji mogą być cały czas widoczne?
-Ta funkcja powinna niedługo znaleźć się w systemie. Użytkownicy będą mogli określić, że karty okienek akcji mają być otwarte przez cały czas. Karty będą się chowały, gdy nie będą używane, aby zyskać więcej miejsca na ekranie.
+## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a><span data-ttu-id="836b6-111">Nie widzę wstążki, która była w systemie Dynamics AX 2012.</span><span class="sxs-lookup"><span data-stu-id="836b6-111">I miss the ribbon from Dynamics AX 2012.</span></span> <span data-ttu-id="836b6-112">Czy karty w okienku akcji mogą być cały czas widoczne?</span><span class="sxs-lookup"><span data-stu-id="836b6-112">Can I keep Action Pane tabs open all the time?</span></span>
+<span data-ttu-id="836b6-113">Ta funkcja powinna niedługo znaleźć się w systemie.</span><span class="sxs-lookup"><span data-stu-id="836b6-113">We are planning to implement this feature soon.</span></span> <span data-ttu-id="836b6-114">Użytkownicy będą mogli określić, że karty okienek akcji mają być otwarte przez cały czas.</span><span class="sxs-lookup"><span data-stu-id="836b6-114">Users will then be able to choose to keep the tabs on Action Panes open all the time.</span></span> <span data-ttu-id="836b6-115">Karty będą się chowały, gdy nie będą używane, aby zyskać więcej miejsca na ekranie.</span><span class="sxs-lookup"><span data-stu-id="836b6-115">Otherwise, the tabs will be collapsed when they aren't being used, to gain more screen space for the page.</span></span>
 
-## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a>Dlaczego czasami po kliknięciu prawym przyciskiem myszy pojawiają się różne menu skrótów?
-Jeśli klikniesz prawym przyciskiem myszy w edytowalnym polu (lub jeśli zostanie wybrany tekst), zostanie wyświetlone menu skrótów w przeglądarce. To menu umożliwia dostęp do poleceń **Wytnij**, **Kopiuj** i **Wklej**. Nie możemy umieścić tych poleceń w menu skrótów w programie Finance and Operations, ponieważ, ze względów bezpieczeństwa, przeglądarki nie zezwalają dostęp do schowka systemu z poziomu programu.
+## <a name="why-do-i-sometimes-see-different-shortcut-menus-when-i-rightclick"></a><span data-ttu-id="836b6-116">Dlaczego czasami po kliknięciu prawym przyciskiem myszy pojawiają się różne menu skrótów?</span><span class="sxs-lookup"><span data-stu-id="836b6-116">Why do I sometimes see different shortcut menus when I rightclick?</span></span>
+<span data-ttu-id="836b6-117">Jeśli klikniesz prawym przyciskiem myszy w edytowalnym polu (lub jeśli zostanie wybrany tekst), zostanie wyświetlone menu skrótów w przeglądarce.</span><span class="sxs-lookup"><span data-stu-id="836b6-117">If you right-click in an editable field (or if text is selected), the browser's shortcut menu is displayed.</span></span> <span data-ttu-id="836b6-118">To menu umożliwia dostęp do poleceń **Wytnij**, **Kopiuj** i **Wklej**.</span><span class="sxs-lookup"><span data-stu-id="836b6-118">This menu gives you access to the **Cut**, **Copy**, and **Paste** commands.</span></span> <span data-ttu-id="836b6-119">Nie możemy umieścić tych poleceń w menu skrótów w programie Finance and Operations, ponieważ, ze względów bezpieczeństwa, przeglądarki nie zezwalają dostęp do schowka systemu z poziomu programu.</span><span class="sxs-lookup"><span data-stu-id="836b6-119">We can't embed these commands into the Finance and Operations shortcut menus because, for security reasons, browsers don’t allow us to programmatically access the system clipboard.</span></span>
 
-Kliknięcie prawym przyciskiem myszy etykiety pola lub wartości formantu tylko do odczytu powoduje wyświetlenie menu skrótów programu Finance and Operations.
+<span data-ttu-id="836b6-120">Kliknięcie prawym przyciskiem myszy etykiety pola lub wartości formantu tylko do odczytu powoduje wyświetlenie menu skrótów programu Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="836b6-120">If you right-click a field label or the value of a read-only control, you'll see the Finance and Operations shortcut menu.</span></span>
 
-Aby ułatwić dostęp za pomocą klawiatury, planujemy w przyszłości wprowadzić skrót klawiaturowy, który będzie otwierał menu skrótów programu Finance and Operations.
+<span data-ttu-id="836b6-121">Aby ułatwić dostęp za pomocą klawiatury, planujemy w przyszłości wprowadzić skrót klawiaturowy, który będzie otwierał menu skrótów programu Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="836b6-121">To make keyboard access easier, we plan to implement a keyboard shortcut in the future that will open the Finance and Operations shortcut menu.</span></span>
 
-## <a name="where-is-the-view-details-functionality-in-finance-and-operations"></a>Gdzie w programie Finance and Operations znajduje się funkcja Wyświetl szczegóły?
-Opcję **Wyświetl szczegóły** można wyświetlić na kilka sposobów:
+## <a name="where-is-the-view-details-functionality-in-finance-and-operations"></a><span data-ttu-id="836b6-122">Gdzie w programie Finance and Operations znajduje się funkcja Wyświetl szczegóły?</span><span class="sxs-lookup"><span data-stu-id="836b6-122">Where is the View details functionality in Finance and Operations?</span></span>
+<span data-ttu-id="836b6-123">Opcję **Wyświetl szczegóły** można wyświetlić na kilka sposobów:</span><span class="sxs-lookup"><span data-stu-id="836b6-123">The **View details** option is available in a couple of ways:</span></span>
 
--   Jeśli formant ma funkcję **Wyświetl szczegóły** oraz jeśli formant ma wartość, ta wartość jest wyświetlana jako hiperłącze. Można kliknąć hiperłącze, aby otworzyć stronę zawierającą szczegółowe informacje.
--   Funkcja **Wyświetl szczegóły** jest również opcją w menu skrótów programu Finance and Operations. Więcej informacji o tym, kiedy menu skrótów programu Finance and Operations są wyświetlane po kliknięciu prawym przyciskiem myszy, można znaleźć w poprzedniej sekcji.
+-   <span data-ttu-id="836b6-124">Jeśli formant ma funkcję **Wyświetl szczegóły** oraz jeśli formant ma wartość, ta wartość jest wyświetlana jako hiperłącze.</span><span class="sxs-lookup"><span data-stu-id="836b6-124">If a control has **View details** capabilities, and if the control has a value, that value is displayed as a hyperlink.</span></span> <span data-ttu-id="836b6-125">Można kliknąć hiperłącze, aby otworzyć stronę zawierającą szczegółowe informacje.</span><span class="sxs-lookup"><span data-stu-id="836b6-125">You can click the hyperlink to open a page that contains additional details.</span></span>
+-   <span data-ttu-id="836b6-126">Funkcja **Wyświetl szczegóły** jest również opcją w menu skrótów programu Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="836b6-126">**View details** is also an option on Finance and Operations shortcut menus.</span></span> <span data-ttu-id="836b6-127">Więcej informacji o tym, kiedy menu skrótów programu Finance and Operations są wyświetlane po kliknięciu prawym przyciskiem myszy, można znaleźć w poprzedniej sekcji.</span><span class="sxs-lookup"><span data-stu-id="836b6-127">For more information about when Finance and Operations shortcut menus are displayed when you right-click, see the previous section.</span></span>
 
 
 

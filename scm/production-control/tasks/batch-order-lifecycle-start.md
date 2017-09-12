@@ -17,78 +17,78 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: dcb0814ae51f5914654736a957638f7d8be81e3f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 418bf29aff3ff03455b4be150409fc9b55e965c9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="batch-order-lifecycle-from-create-to-start"></a>Cykl zamówienia partii od utworzenia do rozpoczęcia
+# <a name="batch-order-lifecycle-from-create-to-start"></a><span data-ttu-id="19180-103">Cykl zamówienia partii od utworzenia do rozpoczęcia</span><span class="sxs-lookup"><span data-stu-id="19180-103">Batch order lifecycle from create to start</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ta procedura prowadzi Cię przez pierwszą częścią cyklu życia szarży produkcyjnej.
+<span data-ttu-id="19180-104">Ta procedura prowadzi Cię przez pierwszą częścią cyklu życia szarży produkcyjnej.</span><span class="sxs-lookup"><span data-stu-id="19180-104">This procedure takes you through the first part of the life cycle of a batch order.</span></span>
 
-Od utworzenia, oszacowania kosztów i zaplanowania zadań produkcyjnych, aż do rzeczywistego rozpoczęcia szarży.
-
-
-
-Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. 
+<span data-ttu-id="19180-105">Od utworzenia, oszacowania kosztów i zaplanowania zadań produkcyjnych, aż do rzeczywistego rozpoczęcia szarży.</span><span class="sxs-lookup"><span data-stu-id="19180-105">From creation, cost estimation, and over production job scheduling to the actual start of a batch order.</span></span>
 
 
 
-Warunkiem wstępnym wykonania tej procedury przy użyciu innego zestawu danych jest istnienie zwolnionego produktu z aktywną formułą i wersją marszruty.
+<span data-ttu-id="19180-106">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="19180-106">The demo data company used to create this procedure is USMF.</span></span> 
 
 
-## <a name="create-a-batch-order"></a>Tworzenie zamówienia partii
-1. Przejdź do okna Wszystkie zlecenia produkcyjne.
-2. Kliknij opcję Nowe zamówienie partii.
-3. W polu Numer towaru wprowadź lub wybierz wartość.
-4. Kliknij Utwórz.
-5. Użyj szybkiego filtru, aby wyfiltrować pole Produkcja według wartości „b”.
 
-## <a name="view-production-formula-and-expected-co-products"></a>Wyświetlanie formuły produkcji i oczekiwanych produktów towarzyszących
-1. W okienku akcji kliknij opcję Zlecenie produkcyjne.
-2. Kliknij przycisk Formuła.
-3. Zamknij stronę.
-4. Kliknij przycisk Produkty towarzyszące.
-5. Zamknij stronę.
+<span data-ttu-id="19180-107">Warunkiem wstępnym wykonania tej procedury przy użyciu innego zestawu danych jest istnienie zwolnionego produktu z aktywną formułą i wersją marszruty.</span><span class="sxs-lookup"><span data-stu-id="19180-107">The prerequisites for running the procedure with another dataset are a released product with an active formula and route version.</span></span>
 
-## <a name="estimate-the-batch-order"></a>Szacowanie szarży produkcyjnej
-1. Kliknij przycisk Szacuj.
-2. Kliknij przycisk OK.
-3. W okienku akcji kliknij pozycję Zarządzanie kosztami.
-4. Kliknij opcję Wyświetl szczegóły obliczeń.
-5. Zamknij stronę.
 
-## <a name="release-the-batch-order"></a>Zwalnianie szarży produkcyjnej
-1. W okienku akcji kliknij opcję Zlecenie produkcyjne.
-2. Kliknij opcję Zwolnienie.
-3. Kliknij przycisk OK.
+## <a name="create-a-batch-order"></a><span data-ttu-id="19180-108">Tworzenie zamówienia partii</span><span class="sxs-lookup"><span data-stu-id="19180-108">Create a batch order</span></span>
+1. <span data-ttu-id="19180-109">Przejdź do okna Wszystkie zlecenia produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="19180-109">Go to All production orders.</span></span>
+2. <span data-ttu-id="19180-110">Kliknij opcję Nowe zamówienie partii.</span><span class="sxs-lookup"><span data-stu-id="19180-110">Click New batch order.</span></span>
+3. <span data-ttu-id="19180-111">W polu Numer towaru wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="19180-111">In the Item number field, enter or select a value.</span></span>
+4. <span data-ttu-id="19180-112">Kliknij Utwórz.</span><span class="sxs-lookup"><span data-stu-id="19180-112">Click Create.</span></span>
+5. <span data-ttu-id="19180-113">Użyj szybkiego filtru, aby wyfiltrować pole Produkcja według wartości „b”.</span><span class="sxs-lookup"><span data-stu-id="19180-113">Use the Quick Filter to filter on the Production field with a value of 'b'.</span></span>
 
-## <a name="schedule-production-jobs"></a>Planowanie zadań produkcyjnych
-1. W okienku akcji kliknij pozycję Harmonogram.
-2. Kliknij harmonogram zadań.
-3. W polu Ograniczone zdolności produkcyjne wybierz opcję Nie.
-4. W polu Ograniczone materiały wybierz opcję Nie.
-5. Kliknij przycisk OK.
-6. W okienku akcji kliknij opcję Zlecenie produkcyjne.
-7. Kliknij opcję Wszystkie zadania.
-8. Zamknij stronę.
+## <a name="view-production-formula-and-expected-co-products"></a><span data-ttu-id="19180-114">Wyświetlanie formuły produkcji i oczekiwanych produktów towarzyszących</span><span class="sxs-lookup"><span data-stu-id="19180-114">View production formula and expected co-products</span></span>
+1. <span data-ttu-id="19180-115">W okienku akcji kliknij opcję Zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="19180-115">On the Action Pane, click Production order.</span></span>
+2. <span data-ttu-id="19180-116">Kliknij przycisk Formuła.</span><span class="sxs-lookup"><span data-stu-id="19180-116">Click Formula.</span></span>
+3. <span data-ttu-id="19180-117">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="19180-117">Close the page.</span></span>
+4. <span data-ttu-id="19180-118">Kliknij przycisk Produkty towarzyszące.</span><span class="sxs-lookup"><span data-stu-id="19180-118">Click Co-products.</span></span>
+5. <span data-ttu-id="19180-119">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="19180-119">Close the page.</span></span>
 
-## <a name="start-the-batch-order"></a>Uruchamianie szarży produkcyjnej
-1. Kliknij przycisk Rozpocznij.
-2. Kliknij kartę Ogólne.
-3. W polu Księgowanie listy pobrania wybierz wartość Nie.
-4. Kliknij przycisk OK.
-5. W okienku akcji kliknij pozycję Widok.
-6. Kliknij opcję Lista pobrania.
-7. Na liście kliknij łącze w wybranym wierszu.
-8. Zamknij stronę.
-9. Zamknij stronę.
-10. Kliknij opcję Karta marszruty.
-11. Na liście kliknij łącze w wybranym wierszu.
-12. Zamknij stronę.
-13. Zamknij stronę.
+## <a name="estimate-the-batch-order"></a><span data-ttu-id="19180-120">Szacowanie szarży produkcyjnej</span><span class="sxs-lookup"><span data-stu-id="19180-120">Estimate the batch order</span></span>
+1. <span data-ttu-id="19180-121">Kliknij przycisk Szacuj.</span><span class="sxs-lookup"><span data-stu-id="19180-121">Click Estimate.</span></span>
+2. <span data-ttu-id="19180-122">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="19180-122">Click OK.</span></span>
+3. <span data-ttu-id="19180-123">W okienku akcji kliknij pozycję Zarządzanie kosztami.</span><span class="sxs-lookup"><span data-stu-id="19180-123">On the Action Pane, click Manage costs.</span></span>
+4. <span data-ttu-id="19180-124">Kliknij opcję Wyświetl szczegóły obliczeń.</span><span class="sxs-lookup"><span data-stu-id="19180-124">Click View calculation details.</span></span>
+5. <span data-ttu-id="19180-125">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="19180-125">Close the page.</span></span>
+
+## <a name="release-the-batch-order"></a><span data-ttu-id="19180-126">Zwalnianie szarży produkcyjnej</span><span class="sxs-lookup"><span data-stu-id="19180-126">Release the batch order</span></span>
+1. <span data-ttu-id="19180-127">W okienku akcji kliknij opcję Zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="19180-127">On the Action Pane, click Production order.</span></span>
+2. <span data-ttu-id="19180-128">Kliknij opcję Zwolnienie.</span><span class="sxs-lookup"><span data-stu-id="19180-128">Click Release.</span></span>
+3. <span data-ttu-id="19180-129">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="19180-129">Click OK.</span></span>
+
+## <a name="schedule-production-jobs"></a><span data-ttu-id="19180-130">Planowanie zadań produkcyjnych</span><span class="sxs-lookup"><span data-stu-id="19180-130">Schedule production jobs</span></span>
+1. <span data-ttu-id="19180-131">W okienku akcji kliknij pozycję Harmonogram.</span><span class="sxs-lookup"><span data-stu-id="19180-131">On the Action Pane, click Schedule.</span></span>
+2. <span data-ttu-id="19180-132">Kliknij harmonogram zadań.</span><span class="sxs-lookup"><span data-stu-id="19180-132">Click Schedule jobs.</span></span>
+3. <span data-ttu-id="19180-133">W polu Ograniczone zdolności produkcyjne wybierz opcję Nie.</span><span class="sxs-lookup"><span data-stu-id="19180-133">Select No in the Finite capacity field.</span></span>
+4. <span data-ttu-id="19180-134">W polu Ograniczone materiały wybierz opcję Nie.</span><span class="sxs-lookup"><span data-stu-id="19180-134">Select No in the Finite material field.</span></span>
+5. <span data-ttu-id="19180-135">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="19180-135">Click OK.</span></span>
+6. <span data-ttu-id="19180-136">W okienku akcji kliknij opcję Zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="19180-136">On the Action Pane, click Production order.</span></span>
+7. <span data-ttu-id="19180-137">Kliknij opcję Wszystkie zadania.</span><span class="sxs-lookup"><span data-stu-id="19180-137">Click All jobs.</span></span>
+8. <span data-ttu-id="19180-138">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="19180-138">Close the page.</span></span>
+
+## <a name="start-the-batch-order"></a><span data-ttu-id="19180-139">Uruchamianie szarży produkcyjnej</span><span class="sxs-lookup"><span data-stu-id="19180-139">Start the batch order</span></span>
+1. <span data-ttu-id="19180-140">Kliknij przycisk Rozpocznij.</span><span class="sxs-lookup"><span data-stu-id="19180-140">Click Start.</span></span>
+2. <span data-ttu-id="19180-141">Kliknij kartę Ogólne.</span><span class="sxs-lookup"><span data-stu-id="19180-141">Click the General tab.</span></span>
+3. <span data-ttu-id="19180-142">W polu Księgowanie listy pobrania wybierz wartość Nie.</span><span class="sxs-lookup"><span data-stu-id="19180-142">Select No in the Post picking list now field.</span></span>
+4. <span data-ttu-id="19180-143">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="19180-143">Click OK.</span></span>
+5. <span data-ttu-id="19180-144">W okienku akcji kliknij pozycję Widok.</span><span class="sxs-lookup"><span data-stu-id="19180-144">On the Action Pane, click View.</span></span>
+6. <span data-ttu-id="19180-145">Kliknij opcję Lista pobrania.</span><span class="sxs-lookup"><span data-stu-id="19180-145">Click Picking list.</span></span>
+7. <span data-ttu-id="19180-146">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="19180-146">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="19180-147">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="19180-147">Close the page.</span></span>
+9. <span data-ttu-id="19180-148">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="19180-148">Close the page.</span></span>
+10. <span data-ttu-id="19180-149">Kliknij opcję Karta marszruty.</span><span class="sxs-lookup"><span data-stu-id="19180-149">Click Route card.</span></span>
+11. <span data-ttu-id="19180-150">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="19180-150">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="19180-151">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="19180-151">Close the page.</span></span>
+13. <span data-ttu-id="19180-152">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="19180-152">Close the page.</span></span>
 
 

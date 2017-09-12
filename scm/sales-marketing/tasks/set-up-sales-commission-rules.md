@@ -22,79 +22,79 @@ ms.contentlocale: pl-pl
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="set-up-sales-commission-rules"></a>Konfigurowanie reguł dla prowizji od sprzedaży
+# <a name="set-up-sales-commission-rules"></a><span data-ttu-id="69133-103">Konfigurowanie reguł dla prowizji od sprzedaży</span><span class="sxs-lookup"><span data-stu-id="69133-103">Set up sales commission rules</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano, jak skonfigurować oraz włączyć obliczanie i śledzenie prowizji od sprzedaży. W procedurze pokazano, jak utworzyć grupy odbiorców i prowizji za towary, a następnie jak połączyć wybranego odbiorcę i produkt z odpowiednimi grupami. Te grupy są następnie używane w konfiguracji obliczania prowizji do tworzenia kombinacji odbiorcy, towaru i przedstawicieli handlowych, które muszą pasować do zamówienia sprzedaży, aby uprawniać sprzedawców do prowizji. Tworzenie grup odbiorców i prowizji za towary jest opcjonalne, ponieważ można obliczenia prowizji można również wykonywać dla poszczególnych odbiorców i/lub towarów. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
+<span data-ttu-id="69133-104">W tej procedurze pokazano, jak skonfigurować oraz włączyć obliczanie i śledzenie prowizji od sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="69133-104">This procedure shows you how to set up and enable sales commission calculation and tracking.</span></span> <span data-ttu-id="69133-105">W procedurze pokazano, jak utworzyć grupy odbiorców i prowizji za towary, a następnie jak połączyć wybranego odbiorcę i produkt z odpowiednimi grupami.</span><span class="sxs-lookup"><span data-stu-id="69133-105">The procedure shows how to create both customer and item commission groups, and then how to link a selected customer and product to the respective groups.</span></span> <span data-ttu-id="69133-106">Te grupy są następnie używane w konfiguracji obliczania prowizji do tworzenia kombinacji odbiorcy, towaru i przedstawicieli handlowych, które muszą pasować do zamówienia sprzedaży, aby uprawniać sprzedawców do prowizji.</span><span class="sxs-lookup"><span data-stu-id="69133-106">Those groups are then used in the commission calculation setup to create a customer, item, and sales representatives combination that must be matched by the sales order to entitle the sales people to a commission.</span></span> <span data-ttu-id="69133-107">Tworzenie grup odbiorców i prowizji za towary jest opcjonalne, ponieważ można obliczenia prowizji można również wykonywać dla poszczególnych odbiorców i/lub towarów.</span><span class="sxs-lookup"><span data-stu-id="69133-107">Creating customer and item commission groups are optional, as the calculation of commission can also be done for an individual customer and/or item.</span></span> <span data-ttu-id="69133-108">Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="69133-108">You can run this procedure in demo data company USMF or on your own data.</span></span>
 
 
-## <a name="set-up-commission-groups-and-commission-rates"></a>Konfigurowanie grup prowizji i stawek prowizji
-1. Wybierz kolejno opcje Sprzedaż i marketing > Prowizje > Grupy odbiorców dla prowizji.
-2. Kliknij przycisk Nowy.
-3. W polu Grupa wpisz wartość.
-4. W polu Nazwa wpisz wartość.
-5. Kliknij przycisk Zapisz.
-6. Zamknij stronę.
-7. Wybierz kolejno opcje Sprzedaż i marketing > Prowizje > Grupy towarów.
-8. Kliknij przycisk Nowy.
-9. W polu Grupa wpisz wartość.
-10. W polu Nazwa wpisz wartość.
-11. Zamknij stronę.
-12. Wybierz kolejno opcje Sprzedaż i marketing > Prowizje > Grupy sprzedaży.
-    * Grupa prowizji sprzedaży określa pracowników mających role przedstawicieli handlowych, którzy kwalifikują się do otrzymywania prowizji, gdy odbiorca skojarzony z właściwą grupą sprzedaży kupuje określone towary.  
-    * W danych firmy demonstracyjnej USMF jest grupa sprzedaży o nazwie „Przedstawicieli handlowi w Stanach Zjednoczonych”.  
-13. W okienku akcji kliknij pozycję Ogólne.
-14. Kliknij opcję Przedstawiciel handlowy.
-    * Na stronie Przedstawiciel handlowy jest wyświetlana lista sprzedawców w firmie, którzy są skojarzeni z określoną grupą prowizji. Do tej samej grupy można przypisać wielu przedstawicieli handlowych oraz zdefiniować ich odpowiednie udziały w całkowitej wartości prowizji jako wartości procentowe. Łączny udział wszystkich pracowników w prowizji nie może przekraczać 100.  
-15. Na liście oznacz wybrany wiersz.
-16. Kliknij przycisk Edytuj.
-17. W polu Wielkość prowizji ustaw wartość „50”.
-18. Kliknij przycisk Nowy.
-19. W polu Nazwa kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-20. Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy. Na przykład wyfiltruj według pola Nazwa z wartością „Susan Burk”.
-21. Kliknij opcję Wybierz.
-22. W polu Wielkość prowizji ustaw wartość „50”.
-23. Kliknij przycisk Zapisz.
-24. Wybierz kolejno opcje Sprzedaż i marketing > Prowizje > Naliczanie prowizji.
-    * Na stronie Naliczanie prowizji można zdefiniować stawkę prowizji, którą pracownik będzie otrzymywał za transakcję sprzedaży, jeśli zawiera ona wstępnie zdefiniowaną kombinację odbiorcy i produktu. W ramach konfiguracji stawki prowizji należy określić podstawę obliczania prowizji oraz wskazać, czy uwzględnić lub wykluczyć rabaty. Można również wprowadzić okres ważności wskazujący, kiedy stawka prowizji jest aktywna.  
-25. Kliknij przycisk Nowy.
-26. W polu Kod towaru zaznacz opcję „Grupa”.
-27. W polu Relacja towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-28. Na liście odszukaj i zaznacz utworzoną wcześniej grupę.
-29. Na liście kliknij łącze w wybranym wierszu.
-30. W polu Kod odbiorcy wybierz opcję „Grupa”.
-31. W polu Relacja odbiorcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-32. Na liście zaznacz utworzoną wcześniej grupę.
-33. W polu Relacja przedstawiciela handlowego kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-34. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Zachowaj opcję „Przed rabatem wiersza”.  
-    * Zachowaj opcję „Przychód” jako podstawę obliczania wartości prowizji.    
-35. W polu Procent prowizji wpisz liczbę.
-36. Kliknij przycisk Zapisz.
+## <a name="set-up-commission-groups-and-commission-rates"></a><span data-ttu-id="69133-109">Konfigurowanie grup prowizji i stawek prowizji</span><span class="sxs-lookup"><span data-stu-id="69133-109">Set up commission groups and commission rates</span></span>
+1. <span data-ttu-id="69133-110">Wybierz kolejno opcje Sprzedaż i marketing > Prowizje > Grupy odbiorców dla prowizji.</span><span class="sxs-lookup"><span data-stu-id="69133-110">Go to Sales and marketing > Commissions > Customer groups for commission.</span></span>
+2. <span data-ttu-id="69133-111">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="69133-111">Click New.</span></span>
+3. <span data-ttu-id="69133-112">W polu Grupa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="69133-112">In the Group field, type a value.</span></span>
+4. <span data-ttu-id="69133-113">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="69133-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="69133-114">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="69133-114">Click Save.</span></span>
+6. <span data-ttu-id="69133-115">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="69133-115">Close the page.</span></span>
+7. <span data-ttu-id="69133-116">Wybierz kolejno opcje Sprzedaż i marketing > Prowizje > Grupy towarów.</span><span class="sxs-lookup"><span data-stu-id="69133-116">Go to Sales and marketing > Commissions > Item groups.</span></span>
+8. <span data-ttu-id="69133-117">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="69133-117">Click New.</span></span>
+9. <span data-ttu-id="69133-118">W polu Grupa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="69133-118">In the Group field, type a value.</span></span>
+10. <span data-ttu-id="69133-119">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="69133-119">In the Name field, type a value.</span></span>
+11. <span data-ttu-id="69133-120">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="69133-120">Close the page.</span></span>
+12. <span data-ttu-id="69133-121">Wybierz kolejno opcje Sprzedaż i marketing > Prowizje > Grupy sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="69133-121">Go to Sales and marketing > Commissions > Sales groups.</span></span>
+    * <span data-ttu-id="69133-122">Grupa prowizji sprzedaży określa pracowników mających role przedstawicieli handlowych, którzy kwalifikują się do otrzymywania prowizji, gdy odbiorca skojarzony z właściwą grupą sprzedaży kupuje określone towary.</span><span class="sxs-lookup"><span data-stu-id="69133-122">A Commission sales group specifies the employees in sales representative roles who are eligible to receive a commission when a customer associated with the relevant sales group buys certain items.</span></span>  
+    * <span data-ttu-id="69133-123">W danych firmy demonstracyjnej USMF jest grupa sprzedaży o nazwie „Przedstawicieli handlowi w Stanach Zjednoczonych”.</span><span class="sxs-lookup"><span data-stu-id="69133-123">In the USMF demo data company, there is a sales group called "Sales reps US."</span></span>  
+13. <span data-ttu-id="69133-124">W okienku akcji kliknij pozycję Ogólne.</span><span class="sxs-lookup"><span data-stu-id="69133-124">On the Action Pane, click General.</span></span>
+14. <span data-ttu-id="69133-125">Kliknij opcję Przedstawiciel handlowy.</span><span class="sxs-lookup"><span data-stu-id="69133-125">Click Sales rep..</span></span>
+    * <span data-ttu-id="69133-126">Na stronie Przedstawiciel handlowy</span><span class="sxs-lookup"><span data-stu-id="69133-126">The Sales rep.</span></span> <span data-ttu-id="69133-127">jest wyświetlana lista sprzedawców w firmie, którzy są skojarzeni z określoną grupą prowizji.</span><span class="sxs-lookup"><span data-stu-id="69133-127">page displays a list of the company's sales people who are associated with a specific commission group.</span></span> <span data-ttu-id="69133-128">Do tej samej grupy można przypisać wielu przedstawicieli handlowych oraz zdefiniować ich odpowiednie udziały w całkowitej wartości prowizji jako wartości procentowe.</span><span class="sxs-lookup"><span data-stu-id="69133-128">You can assign multiple sales representatives to the same group and define their respective share of the total commission fee as a percentage value.</span></span> <span data-ttu-id="69133-129">Łączny udział wszystkich pracowników w prowizji nie może przekraczać 100.</span><span class="sxs-lookup"><span data-stu-id="69133-129">The total commission share across all employees must not exceed 100.</span></span>  
+15. <span data-ttu-id="69133-130">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="69133-130">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="69133-131">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="69133-131">Click Edit.</span></span>
+17. <span data-ttu-id="69133-132">W polu Wielkość prowizji ustaw wartość „50”.</span><span class="sxs-lookup"><span data-stu-id="69133-132">Set Commission share to '50'.</span></span>
+18. <span data-ttu-id="69133-133">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="69133-133">Click New.</span></span>
+19. <span data-ttu-id="69133-134">W polu Nazwa kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="69133-134">In the Name field, click the drop-down button to open the lookup.</span></span>
+20. <span data-ttu-id="69133-135">Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy.</span><span class="sxs-lookup"><span data-stu-id="69133-135">Use the Quick Filter to find records.</span></span> <span data-ttu-id="69133-136">Na przykład wyfiltruj według pola Nazwa z wartością „Susan Burk”.</span><span class="sxs-lookup"><span data-stu-id="69133-136">For example, filter on the Name field with a value of 'Susan Burk'.</span></span>
+21. <span data-ttu-id="69133-137">Kliknij opcję Wybierz.</span><span class="sxs-lookup"><span data-stu-id="69133-137">Click Select.</span></span>
+22. <span data-ttu-id="69133-138">W polu Wielkość prowizji ustaw wartość „50”.</span><span class="sxs-lookup"><span data-stu-id="69133-138">Set Commission share to '50'.</span></span>
+23. <span data-ttu-id="69133-139">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="69133-139">Click Save.</span></span>
+24. <span data-ttu-id="69133-140">Wybierz kolejno opcje Sprzedaż i marketing > Prowizje > Naliczanie prowizji.</span><span class="sxs-lookup"><span data-stu-id="69133-140">Go to Sales and marketing > Commissions > Commission calculation.</span></span>
+    * <span data-ttu-id="69133-141">Na stronie Naliczanie prowizji można zdefiniować stawkę prowizji, którą pracownik będzie otrzymywał za transakcję sprzedaży, jeśli zawiera ona wstępnie zdefiniowaną kombinację odbiorcy i produktu.</span><span class="sxs-lookup"><span data-stu-id="69133-141">In the Commission calculation page you define the commission rate that the employee is to receive for a sales transaction when it contains the pre-set combination of customer and product.</span></span> <span data-ttu-id="69133-142">W ramach konfiguracji stawki prowizji należy określić podstawę obliczania prowizji oraz wskazać, czy uwzględnić lub wykluczyć rabaty.</span><span class="sxs-lookup"><span data-stu-id="69133-142">As part of the commission rate setup, you must specify the commission calculation basis and whether it should include or exclude discounts.</span></span> <span data-ttu-id="69133-143">Można również wprowadzić okres ważności wskazujący, kiedy stawka prowizji jest aktywna.</span><span class="sxs-lookup"><span data-stu-id="69133-143">You can also enter a validity period for when the commission rate is active.</span></span>  
+25. <span data-ttu-id="69133-144">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="69133-144">Click New.</span></span>
+26. <span data-ttu-id="69133-145">W polu Kod towaru zaznacz opcję „Grupa”.</span><span class="sxs-lookup"><span data-stu-id="69133-145">In the Item code field, select 'Group'.</span></span>
+27. <span data-ttu-id="69133-146">W polu Relacja towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="69133-146">In the Item relation field, click the drop-down button to open the lookup.</span></span>
+28. <span data-ttu-id="69133-147">Na liście odszukaj i zaznacz utworzoną wcześniej grupę.</span><span class="sxs-lookup"><span data-stu-id="69133-147">In the list, find and select the group that you created earlier.</span></span>
+29. <span data-ttu-id="69133-148">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="69133-148">In the list, click the link in the selected row.</span></span>
+30. <span data-ttu-id="69133-149">W polu Kod odbiorcy wybierz opcję „Grupa”.</span><span class="sxs-lookup"><span data-stu-id="69133-149">In the Customer code field, select 'Group'.</span></span>
+31. <span data-ttu-id="69133-150">W polu Relacja odbiorcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="69133-150">In the Customer relation field, click the drop-down button to open the lookup.</span></span>
+32. <span data-ttu-id="69133-151">Na liście zaznacz utworzoną wcześniej grupę.</span><span class="sxs-lookup"><span data-stu-id="69133-151">In the list, select the group that you set up earlier.</span></span>
+33. <span data-ttu-id="69133-152">W polu Relacja przedstawiciela handlowego</span><span class="sxs-lookup"><span data-stu-id="69133-152">In the Sales rep.</span></span> <span data-ttu-id="69133-153">kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="69133-153">relation field, click the drop-down button to open the lookup.</span></span>
+34. <span data-ttu-id="69133-154">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="69133-154">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="69133-155">Zachowaj opcję „Przed rabatem wiersza”.</span><span class="sxs-lookup"><span data-stu-id="69133-155">Keep the "Before line discount" option.</span></span>  
+    * <span data-ttu-id="69133-156">Zachowaj opcję „Przychód” jako podstawę obliczania wartości prowizji.</span><span class="sxs-lookup"><span data-stu-id="69133-156">Keep the "Revenue" option as the basis for commission value calculation.</span></span>    
+35. <span data-ttu-id="69133-157">W polu Procent prowizji wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="69133-157">In the Commission percentage field, enter a number.</span></span>
+36. <span data-ttu-id="69133-158">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="69133-158">Click Save.</span></span>
 
-## <a name="setting-up-commission-posting"></a>Konfigurowanie księgowania prowizji
-1. Wybierz kolejno opcje Sprzedaż i marketing > Prowizje > Księgowanie prowizji.
-    * Prowizje są płatne na rzecz pracowników i dlatego muszą być tak skonfigurowane, aby zapewniać poprawne księgowanie finansowe na odpowiednich kontach w księdze głównej. Służy do tego strona Księgowanie prowizji. Przejrzyj konfigurację dostępną dla bieżącej firmy. Na ogół kwoty prowizji są księgowane na dedykowanym koncie wydatków i kompensowane na dedykowanym koncie rozrachunków z dostawcami. Jeśli nie masz skonfigurowanych reguł księgowania prowizji, system nie będzie w stanie wykonać fakturowania zamówienia sprzedaży zawierającego uprawnione prowizje.  
-2. Zamknij stronę.
+## <a name="setting-up-commission-posting"></a><span data-ttu-id="69133-159">Konfigurowanie księgowania prowizji</span><span class="sxs-lookup"><span data-stu-id="69133-159">Setting up commission posting</span></span>
+1. <span data-ttu-id="69133-160">Wybierz kolejno opcje Sprzedaż i marketing > Prowizje > Księgowanie prowizji.</span><span class="sxs-lookup"><span data-stu-id="69133-160">Go to Sales and marketing > Commissions > Commission posting.</span></span>
+    * <span data-ttu-id="69133-161">Prowizje są płatne na rzecz pracowników i dlatego muszą być tak skonfigurowane, aby zapewniać poprawne księgowanie finansowe na odpowiednich kontach w księdze głównej.</span><span class="sxs-lookup"><span data-stu-id="69133-161">Commission fees are payable to the employees and must therefore be set up to ensure correct financial posting to the appropriate accounts in the General ledger.</span></span> <span data-ttu-id="69133-162">Służy do tego strona Księgowanie prowizji.</span><span class="sxs-lookup"><span data-stu-id="69133-162">This is done in the Commission posting page.</span></span> <span data-ttu-id="69133-163">Przejrzyj konfigurację dostępną dla bieżącej firmy.</span><span class="sxs-lookup"><span data-stu-id="69133-163">Review the setup that is available for the current company.</span></span> <span data-ttu-id="69133-164">Na ogół kwoty prowizji są księgowane na dedykowanym koncie wydatków i kompensowane na dedykowanym koncie rozrachunków z dostawcami.</span><span class="sxs-lookup"><span data-stu-id="69133-164">Typically, the commission amounts are posted to a dedicated expense account and are offset to a dedicated payable account.</span></span> <span data-ttu-id="69133-165">Jeśli nie masz skonfigurowanych reguł księgowania prowizji, system nie będzie w stanie wykonać fakturowania zamówienia sprzedaży zawierającego uprawnione prowizje.</span><span class="sxs-lookup"><span data-stu-id="69133-165">If you don't have the commission posting rules set up, the system will fail to complete invoicing of a sales order which has eligible commissions.</span></span>  
+2. <span data-ttu-id="69133-166">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="69133-166">Close the page.</span></span>
 
-## <a name="assign-a-commission-group-to-a-customer-and-a-product"></a>Przypisywanie grupy prowizji do odbiorcy i produktu
-1. Wybierz kolejno opcje Sprzedaż i marketing > Odbiorcy > Wszyscy odbiorcy.
-2. Na liście znajdź i zaznacz odpowiedni rekord.
-3. Na liście kliknij łącze w wybranym wierszu.
-4. Kliknij przycisk Edytuj.
-5. Rozwiń sekcję Ustawienia domyślne zamówienia sprzedaży.
-6. W polu Grupa prowizji kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-7. Na liście zaznacz utworzoną wcześniej grupę.
-8. W polu Grupa sprzedaży kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-9. Na liście znajdź i zaznacz odpowiedni rekord.
-10. Kliknij przycisk Zapisz.
-11. Przejdź do Zarządzanie informacjami o produktach > Produkty > Zwolnione produkty.
-12. Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy. Na przykład wyfiltruj według pola Numer towaru z wartością „T0020”.
-13. Na liście kliknij łącze w wybranym wierszu.
-14. Kliknij przycisk Edytuj.
-15. Rozwiń sekcję Sprzedaż.
-16. W polu Grupa prowizji kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-17. Na liście zaznacz utworzoną wcześniej grupa prowizji.
+## <a name="assign-a-commission-group-to-a-customer-and-a-product"></a><span data-ttu-id="69133-167">Przypisywanie grupy prowizji do odbiorcy i produktu</span><span class="sxs-lookup"><span data-stu-id="69133-167">Assign a commission group to a customer and a product</span></span>
+1. <span data-ttu-id="69133-168">Wybierz kolejno opcje Sprzedaż i marketing > Odbiorcy > Wszyscy odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="69133-168">Go to Sales and marketing > Customers > All customers.</span></span>
+2. <span data-ttu-id="69133-169">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="69133-169">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="69133-170">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="69133-170">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="69133-171">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="69133-171">Click Edit.</span></span>
+5. <span data-ttu-id="69133-172">Rozwiń sekcję Ustawienia domyślne zamówienia sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="69133-172">Expand the Sales order defaults section.</span></span>
+6. <span data-ttu-id="69133-173">W polu Grupa prowizji kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="69133-173">In the Commission group field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="69133-174">Na liście zaznacz utworzoną wcześniej grupę.</span><span class="sxs-lookup"><span data-stu-id="69133-174">In the list, select the group that you created earlier.</span></span>
+8. <span data-ttu-id="69133-175">W polu Grupa sprzedaży kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="69133-175">In the Sales group field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="69133-176">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="69133-176">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="69133-177">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="69133-177">Click Save.</span></span>
+11. <span data-ttu-id="69133-178">Przejdź do Zarządzanie informacjami o produktach > Produkty > Zwolnione produkty.</span><span class="sxs-lookup"><span data-stu-id="69133-178">Go to Product information management > Products > Released products.</span></span>
+12. <span data-ttu-id="69133-179">Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy.</span><span class="sxs-lookup"><span data-stu-id="69133-179">Use the Quick Filter to find records.</span></span> <span data-ttu-id="69133-180">Na przykład wyfiltruj według pola Numer towaru z wartością „T0020”.</span><span class="sxs-lookup"><span data-stu-id="69133-180">For example, filter on the Item number field with a value of 'T0020 '.</span></span>
+13. <span data-ttu-id="69133-181">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="69133-181">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="69133-182">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="69133-182">Click Edit.</span></span>
+15. <span data-ttu-id="69133-183">Rozwiń sekcję Sprzedaż.</span><span class="sxs-lookup"><span data-stu-id="69133-183">Expand the Sell section.</span></span>
+16. <span data-ttu-id="69133-184">W polu Grupa prowizji kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="69133-184">In the Commission group field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="69133-185">Na liście zaznacz utworzoną wcześniej grupa prowizji.</span><span class="sxs-lookup"><span data-stu-id="69133-185">In the list, select the commission group that you created earlier.</span></span>
 
 

@@ -16,72 +16,72 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 22a252d98da5415f50a1d6ffb28f57aae19b5d14
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0d0cc6508071bea3f622bc21f06aa55d2b757b6f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-purchase-agreement"></a>Tworzenie umowy zakupu
+# <a name="create-a-purchase-agreement"></a><span data-ttu-id="24907-103">Tworzenie umowy zakupu</span><span class="sxs-lookup"><span data-stu-id="24907-103">Create a purchase agreement</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ta procedura przeprowadzi Cię przez proces tworzenia umowy zakupu. Zazwyczaj robi to kierownik ds. zakupów. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Przed rozpoczęciem trzeba mieć skonfigurowaną klasyfikacji umów zakupu. Po utworzeniu umowy można jej używać podczas tworzenia zamówienia zakupu. Spowoduje to skopiowanie warunków umowy do nagłówka oraz do wszystkich wierszy w zamówieniu, których dotyczy umowa.
+<span data-ttu-id="24907-104">Ta procedura przeprowadzi Cię przez proces tworzenia umowy zakupu.</span><span class="sxs-lookup"><span data-stu-id="24907-104">This procedure guides you through the creation of a purchase agreement.</span></span> <span data-ttu-id="24907-105">Zazwyczaj robi to kierownik ds. zakupów.</span><span class="sxs-lookup"><span data-stu-id="24907-105">This would typically be done by a purchasing manager.</span></span> <span data-ttu-id="24907-106">Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="24907-106">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="24907-107">Przed rozpoczęciem trzeba mieć skonfigurowaną klasyfikacji umów zakupu.</span><span class="sxs-lookup"><span data-stu-id="24907-107">You need to have set up purchase agreement classifications before you start.</span></span> <span data-ttu-id="24907-108">Po utworzeniu umowy można jej używać podczas tworzenia zamówienia zakupu. Spowoduje to skopiowanie warunków umowy do nagłówka oraz do wszystkich wierszy w zamówieniu, których dotyczy umowa.</span><span class="sxs-lookup"><span data-stu-id="24907-108">Once you've created an agreement you can use it when you create a PO, and this will copy the purchase agreement conditions to the header and to any lines in the order that are affected by the agreement.</span></span>
 
 
-## <a name="create-a-new-purchase-agreement"></a>Tworzenie nowej umowy zakupu
-1. Wybierz kolejno opcje Zaopatrzenie i sourcing > Umowy zakupu > Umowy zakupu.
-2. Kliknij przycisk Nowy.
-3. W polu Konto dostawcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-4. Na liście znajdź i zaznacz odpowiedni rekord.
-5. Na liście kliknij łącze w wybranym wierszu.
-6. W polu Klasyfikacja umowy zakupu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-7. Na liście znajdź i zaznacz odpowiedni rekord.
-8. Na liście kliknij łącze w wybranym wierszu.
-9. Rozwiń sekcję Ogólne.
-10. W polu Data wygaśnięcia wprowadź datę.
-    * Ta data ważności będzie domyślna dla wszystkich wierszy zobowiązań i określi, jak długo każde konkretne zobowiązanie jest ważne.  
-11. W polu Tytuł dokumentu nadaj nazwę umowie zakupu.
-    * Pozostaw w polu Domyślne zobowiązanie wartość Zobowiązanie co do ilości produktu (lub ją zmień na tą, jeśli jest ustawiona inna).  
-    * Domyślna wartość zobowiązania określa opcje dostępne w wierszach umowy. Jeśli przy tworzeniu wierszy umowy potrzebujesz nowego typu zobowiązania, należy zmienić domyślne zobowiązanie w nagłówku.  Istnieją 4 rodzaje zobowiązań: Zobowiązanie co do ilości produktu — na określoną ilość produktu; Zobowiązanie co do wartości produktu — na określoną wartość produktu w walucie; Zobowiązanie co do wartości w ramach kategorii produktu — na wartość produktu w określonej walucie w kategorii zaopatrzenia, gdzie kwota może dotyczyć towaru z katalogu lub spoza katalogu; Zobowiązanie co do wartości — na określoną kwocie w walucie, która może być pokryta przez jakikolwiek produkt z dowolnej kategorii zaopatrzenia.  
-12. Kliknij przycisk OK.
+## <a name="create-a-new-purchase-agreement"></a><span data-ttu-id="24907-109">Tworzenie nowej umowy zakupu</span><span class="sxs-lookup"><span data-stu-id="24907-109">Create a new purchase agreement</span></span>
+1. <span data-ttu-id="24907-110">Wybierz kolejno opcje Zaopatrzenie i sourcing > Umowy zakupu > Umowy zakupu.</span><span class="sxs-lookup"><span data-stu-id="24907-110">Go to Procurement and sourcing > Purchase agreements > Purchase agreements.</span></span>
+2. <span data-ttu-id="24907-111">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="24907-111">Click New.</span></span>
+3. <span data-ttu-id="24907-112">W polu Konto dostawcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="24907-112">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="24907-113">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="24907-113">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="24907-114">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="24907-114">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="24907-115">W polu Klasyfikacja umowy zakupu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="24907-115">In the Purchase agreement classification field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="24907-116">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="24907-116">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="24907-117">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="24907-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="24907-118">Rozwiń sekcję Ogólne.</span><span class="sxs-lookup"><span data-stu-id="24907-118">Expand the General section.</span></span>
+10. <span data-ttu-id="24907-119">W polu Data wygaśnięcia wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="24907-119">In the Expiration date field, enter a date.</span></span>
+    * <span data-ttu-id="24907-120">Ta data ważności będzie domyślna dla wszystkich wierszy zobowiązań i określi, jak długo każde konkretne zobowiązanie jest ważne.</span><span class="sxs-lookup"><span data-stu-id="24907-120">This expiration date will be the default for all commitment lines and will determine how long each specific commitment is valid.</span></span>  
+11. <span data-ttu-id="24907-121">W polu Tytuł dokumentu nadaj nazwę umowie zakupu.</span><span class="sxs-lookup"><span data-stu-id="24907-121">In the Document title field, type a name for your purchase agreement.</span></span>
+    * <span data-ttu-id="24907-122">Pozostaw w polu Domyślne zobowiązanie wartość Zobowiązanie co do ilości produktu (lub ją zmień na tą, jeśli jest ustawiona inna).</span><span class="sxs-lookup"><span data-stu-id="24907-122">Leave the Default commitment field set to Product quantity commitment (or change it if it’s not set to this).</span></span>  
+    * <span data-ttu-id="24907-123">Domyślna wartość zobowiązania określa opcje dostępne w wierszach umowy.</span><span class="sxs-lookup"><span data-stu-id="24907-123">The default commitment value determines your options on the agreement lines.</span></span> <span data-ttu-id="24907-124">Jeśli przy tworzeniu wierszy umowy potrzebujesz nowego typu zobowiązania, należy zmienić domyślne zobowiązanie w nagłówku.</span><span class="sxs-lookup"><span data-stu-id="24907-124">If you need a new commitment type when you’re creating the agreement lines, you need to change the default commitment on the header.</span></span>  <span data-ttu-id="24907-125">Istnieją 4 rodzaje zobowiązań: Zobowiązanie co do ilości produktu — na określoną ilość produktu; Zobowiązanie co do wartości produktu — na określoną wartość produktu w walucie; Zobowiązanie co do wartości w ramach kategorii produktu — na wartość produktu w określonej walucie w kategorii zaopatrzenia, gdzie kwota może dotyczyć towaru z katalogu lub spoza katalogu; Zobowiązanie co do wartości — na określoną kwocie w walucie, która może być pokryta przez jakikolwiek produkt z dowolnej kategorii zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="24907-125">There are 4 types of commitments: Product quantity commitment - for a specific quantity of a product; Product value commitment - for a specific currency amount of a product; Product category value commitment - for a specific currency amount in a procurement category where the amount can be for a catalog item or a non-catalog item; Value commitment - for a specific currency amount which can be fulfilled by any product or by any procurement category.</span></span>  
+12. <span data-ttu-id="24907-126">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="24907-126">Click OK.</span></span>
 
-## <a name="add-a-commitment"></a>Dodawanie zobowiązania
-1. Kliknij przycisk Dodaj wiersz.
-2. Na liście oznacz wybrany wiersz.
-3. W polu Numer towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-4. Wybierz produkt, dla którego chcesz dodać zobowiązanie.
-5. Na liście kliknij łącze w wybranym wierszu.
-6. Wprowadź liczbę w polu Ilość.
-    * Jest to ilość całkowita, jaką zgodzono się kupić od dostawcy.  
-7. Wprowadź liczbę w polu Cena jednostkowa.
-8. Rozwiń sekcję Szczegóły wiersza.
-9. W opcji Wymuszono maks. zaznacz wartość Tak.
-    * Opcja Wymuszono maks. ogranicza użycie zobowiązania. Można kupować tylko do ilości określonej w polu Ilość dla wiersza.  
-10. Zwiń sekcję Szczegóły wiersza.
+## <a name="add-a-commitment"></a><span data-ttu-id="24907-127">Dodawanie zobowiązania</span><span class="sxs-lookup"><span data-stu-id="24907-127">Add a commitment</span></span>
+1. <span data-ttu-id="24907-128">Kliknij przycisk Dodaj wiersz.</span><span class="sxs-lookup"><span data-stu-id="24907-128">Click Add line.</span></span>
+2. <span data-ttu-id="24907-129">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="24907-129">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="24907-130">W polu Numer towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="24907-130">In the Item number field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="24907-131">Wybierz produkt, dla którego chcesz dodać zobowiązanie.</span><span class="sxs-lookup"><span data-stu-id="24907-131">Select the product you want to add a commitment for.</span></span>
+5. <span data-ttu-id="24907-132">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="24907-132">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="24907-133">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="24907-133">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="24907-134">Jest to ilość całkowita, jaką zgodzono się kupić od dostawcy.</span><span class="sxs-lookup"><span data-stu-id="24907-134">This is the total quantity that you have agreed to buy from your vendor.</span></span>  
+7. <span data-ttu-id="24907-135">Wprowadź liczbę w polu Cena jednostkowa.</span><span class="sxs-lookup"><span data-stu-id="24907-135">In the Unit price field, enter a number.</span></span>
+8. <span data-ttu-id="24907-136">Rozwiń sekcję Szczegóły wiersza.</span><span class="sxs-lookup"><span data-stu-id="24907-136">Expand the Line details section.</span></span>
+9. <span data-ttu-id="24907-137">W opcji Wymuszono maks. zaznacz wartość Tak.</span><span class="sxs-lookup"><span data-stu-id="24907-137">Set the Max is enforced option to Yes.</span></span>
+    * <span data-ttu-id="24907-138">Opcja Wymuszono maks. ogranicza użycie zobowiązania.</span><span class="sxs-lookup"><span data-stu-id="24907-138">The Max is enforced option limits the use of the commitment.</span></span> <span data-ttu-id="24907-139">Można kupować tylko do ilości określonej w polu Ilość dla wiersza.</span><span class="sxs-lookup"><span data-stu-id="24907-139">You can only purchase up to the quantity that's specified in the Quantity field for the line.</span></span>  
+10. <span data-ttu-id="24907-140">Zwiń sekcję Szczegóły wiersza.</span><span class="sxs-lookup"><span data-stu-id="24907-140">Collapse the Line details section.</span></span>
 
-## <a name="add-header-conditions"></a>Dodawanie warunków nagłówka
-1. W okienku akcji kliknij pozycję Opcje.
-2. Kliknij przycisk Zmień widok.
-3. Kliknij opcję Widok nagłówka.
-4. Rozwiń sekcję Warunki.
-5. W polu Metoda płatności kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-    * W tym miejscu są domyślnie wyświetlane warunki płatności z konta dostawcy.       
-6. Na liście znajdź i zaznacz odpowiedni rekord.
-7. Na liście kliknij łącze w wybranym wierszu.
-8. W polu Metoda dostawy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-9. Na liście kliknij łącze w wybranym wierszu.
-10. W polu Warunki dostawy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-11. Na liście kliknij łącze w wybranym wierszu.
+## <a name="add-header-conditions"></a><span data-ttu-id="24907-141">Dodawanie warunków nagłówka</span><span class="sxs-lookup"><span data-stu-id="24907-141">Add header conditions</span></span>
+1. <span data-ttu-id="24907-142">W okienku akcji kliknij pozycję Opcje.</span><span class="sxs-lookup"><span data-stu-id="24907-142">On the Action Pane, click Options.</span></span>
+2. <span data-ttu-id="24907-143">Kliknij przycisk Zmień widok.</span><span class="sxs-lookup"><span data-stu-id="24907-143">Click Change view.</span></span>
+3. <span data-ttu-id="24907-144">Kliknij opcję Widok nagłówka.</span><span class="sxs-lookup"><span data-stu-id="24907-144">Click Header view.</span></span>
+4. <span data-ttu-id="24907-145">Rozwiń sekcję Warunki.</span><span class="sxs-lookup"><span data-stu-id="24907-145">Expand the Terms section.</span></span>
+5. <span data-ttu-id="24907-146">W polu Metoda płatności kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="24907-146">In the Method of payment field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="24907-147">W tym miejscu są domyślnie wyświetlane warunki płatności z konta dostawcy.</span><span class="sxs-lookup"><span data-stu-id="24907-147">The payment terms from the vendor account are shown here by default.</span></span>       
+6. <span data-ttu-id="24907-148">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="24907-148">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="24907-149">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="24907-149">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="24907-150">W polu Metoda dostawy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="24907-150">In the Mode of delivery field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="24907-151">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="24907-151">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="24907-152">W polu Warunki dostawy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="24907-152">In the Delivery terms field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="24907-153">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="24907-153">In the list, click the link in the selected row.</span></span>
 
-## <a name="confirm-and-activate-the-agreement"></a>Potwierdzanie i aktywacja umowy
-1. W okienku akcji kliknij pozycję Umowa zakupu.
-2. Kliknij opcję Potwierdzenie.
-    * W opcji Oznaczenie umowy jako obowiązującej zaznacz wartość Tak.  
-3. Kliknij przycisk OK.
-4. W okienku akcji kliknij pozycję Umowa zakupu.
-5. Kliknij opcję Potwierdzenia umowy zakupu.
-    * Opcja Podgląd/drukuj umożliwia wygenerowanie dokumentu umowy zakupu, który następnie można wydrukować lub wysłać do dostawcy. Jeśli później zaktualizujesz umowę i ponownie ją potwierdzisz, obie wersje będą wyświetlane w tym miejscu.  
-6. Zamknij stronę.
+## <a name="confirm-and-activate-the-agreement"></a><span data-ttu-id="24907-154">Potwierdzanie i aktywacja umowy</span><span class="sxs-lookup"><span data-stu-id="24907-154">Confirm and activate the agreement</span></span>
+1. <span data-ttu-id="24907-155">W okienku akcji kliknij pozycję Umowa zakupu.</span><span class="sxs-lookup"><span data-stu-id="24907-155">On the Action Pane, click Purchase agreement.</span></span>
+2. <span data-ttu-id="24907-156">Kliknij opcję Potwierdzenie.</span><span class="sxs-lookup"><span data-stu-id="24907-156">Click Confirmation.</span></span>
+    * <span data-ttu-id="24907-157">W opcji Oznaczenie umowy jako obowiązującej zaznacz wartość Tak.</span><span class="sxs-lookup"><span data-stu-id="24907-157">Set the Mark agreement as effective option to Yes.</span></span>  
+3. <span data-ttu-id="24907-158">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="24907-158">Click OK.</span></span>
+4. <span data-ttu-id="24907-159">W okienku akcji kliknij pozycję Umowa zakupu.</span><span class="sxs-lookup"><span data-stu-id="24907-159">On the Action Pane, click Purchase agreement.</span></span>
+5. <span data-ttu-id="24907-160">Kliknij opcję Potwierdzenia umowy zakupu.</span><span class="sxs-lookup"><span data-stu-id="24907-160">Click Purchase agreement confirmations.</span></span>
+    * <span data-ttu-id="24907-161">Opcja Podgląd/drukuj umożliwia wygenerowanie dokumentu umowy zakupu, który następnie można wydrukować lub wysłać do dostawcy.</span><span class="sxs-lookup"><span data-stu-id="24907-161">The Preview/Print option allows you to generate a document for the purchase agreement which you can then print or send to the vendor.</span></span> <span data-ttu-id="24907-162">Jeśli później zaktualizujesz umowę i ponownie ją potwierdzisz, obie wersje będą wyświetlane w tym miejscu.</span><span class="sxs-lookup"><span data-stu-id="24907-162">If you update the agreement later on and re-confirm it, both versions will be shown here.</span></span>  
+6. <span data-ttu-id="24907-163">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="24907-163">Close the page.</span></span>
 
 

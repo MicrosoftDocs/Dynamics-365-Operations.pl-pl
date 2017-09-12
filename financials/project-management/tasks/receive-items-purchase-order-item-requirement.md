@@ -16,45 +16,45 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 1200b18b2109cef2f6d89c0b93ebb3b1d127decb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 7c9093439c4c0c4645d96ad97ba56f31026ec334
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="receive-items-on-purchase-order-from-item-requirement"></a>Przyjmowanie towarów względem zamówienia zakupu z zapotrzebowania na towary
+# <a name="receive-items-on-purchase-order-from-item-requirement"></a><span data-ttu-id="2aa96-103">Przyjmowanie towarów względem zamówienia zakupu z zapotrzebowania na towary</span><span class="sxs-lookup"><span data-stu-id="2aa96-103">Receive items on purchase order from item requirement</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób przyjmowania towarów względem zamówienia zakupu z zapotrzebowania na towary.
+<span data-ttu-id="2aa96-104">W tej procedurze pokazano sposób przyjmowania towarów względem zamówienia zakupu z zapotrzebowania na towary.</span><span class="sxs-lookup"><span data-stu-id="2aa96-104">This procedure shows how to receive items on a purchase order from an item requirement.</span></span>
 
-Dzięki użyciu zapotrzebowań na towary zamiast transakcji towarowych można zaplanować czas dostawy dokładnie w momencie użycia towaru oraz można utworzyć zamówienie zakupu, dołączyć towar do struktury umowy handlowej i dołączyć zapotrzebowanie na towary w planie produkcyjnym. 
+<span data-ttu-id="2aa96-105">Dzięki użyciu zapotrzebowań na towary zamiast transakcji towarowych można zaplanować czas dostawy dokładnie w momencie użycia towaru oraz można utworzyć zamówienie zakupu, dołączyć towar do struktury umowy handlowej i dołączyć zapotrzebowanie na towary w planie produkcyjnym.</span><span class="sxs-lookup"><span data-stu-id="2aa96-105">By using an item requirement instead of an item transaction, you can plan for delivery just before the item is actually used, create a purchase order, include the item in the trade-agreement framework, and include the item requirement in production planning.</span></span> 
 
-W tym zadaniu jest wykorzystywany zestaw danych firmy USSI.
+<span data-ttu-id="2aa96-106">W tym zadaniu jest wykorzystywany zestaw danych firmy USSI.</span><span class="sxs-lookup"><span data-stu-id="2aa96-106">This task uses the USSI data set.</span></span>
 
-1. Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie> Projekty > Wszystkie projekty.
-2. Na liście kliknij łącze w wybranym wierszu.
-3. W okienku akcji kliknij opcję Plan.
-4. Kliknij opcję Zapotrzebowanie na towary.
-5. Kliknij przycisk Nowy.
-6. Na liście oznacz wybrany wiersz.
-7. W polu Numer towaru wprowadź lub wybierz wartość.
-8. Wprowadź liczbę w polu Ilość.
-9. Kliknij przycisk Zapisz.
-10. W okienku akcji kliknij pozycję Zarządzaj.
-11. Kliknij przycisk Funkcje.
-12. Kliknij opcję Tworzenie zamówienia zakupu.
-13. Zaznacz pole wyboru Uwzględnij.
-14. W polu Konto dostawcy wprowadź lub wybierz wartość.
-15. Kliknij przycisk OK.
-16. Wybierz kolejno opcje Rozrachunki z dostawcami > Zamówienia zakupu > Wszystkie zamówienia zakupu.
-17. Na liście kliknij łącze w wybranym wierszu.
-18. W okienku akcji kliknij pozycję Zakup.
-19. Kliknij przycisk Potwierdź.
-20. W okienku akcji kliknij pozycję Odbierz.
-21. Kliknij opcję Dokument przyjęcia produktów.
-22. Na liście oznacz wybrany wiersz.
-23. W polu Dokument przyjęcia produktów wpisz wartość.
-24. Kliknij przycisk OK.
+1. <span data-ttu-id="2aa96-107">Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie> Projekty > Wszystkie projekty.</span><span class="sxs-lookup"><span data-stu-id="2aa96-107">Go to Project management and accounting > Projects > All projects.</span></span>
+2. <span data-ttu-id="2aa96-108">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="2aa96-108">In the list, click the link in the selected row.</span></span>
+3. <span data-ttu-id="2aa96-109">W okienku akcji kliknij opcję Plan.</span><span class="sxs-lookup"><span data-stu-id="2aa96-109">On the Action Pane, click Plan.</span></span>
+4. <span data-ttu-id="2aa96-110">Kliknij opcję Zapotrzebowanie na towary.</span><span class="sxs-lookup"><span data-stu-id="2aa96-110">Click Item requirements.</span></span>
+5. <span data-ttu-id="2aa96-111">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="2aa96-111">Click New.</span></span>
+6. <span data-ttu-id="2aa96-112">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="2aa96-112">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="2aa96-113">W polu Numer towaru wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="2aa96-113">In the Item number field, enter or select a value.</span></span>
+8. <span data-ttu-id="2aa96-114">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="2aa96-114">In the Quantity field, enter a number.</span></span>
+9. <span data-ttu-id="2aa96-115">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="2aa96-115">Click Save.</span></span>
+10. <span data-ttu-id="2aa96-116">W okienku akcji kliknij pozycję Zarządzaj.</span><span class="sxs-lookup"><span data-stu-id="2aa96-116">On the Action Pane, click Manage.</span></span>
+11. <span data-ttu-id="2aa96-117">Kliknij przycisk Funkcje.</span><span class="sxs-lookup"><span data-stu-id="2aa96-117">Click Functions.</span></span>
+12. <span data-ttu-id="2aa96-118">Kliknij opcję Tworzenie zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="2aa96-118">Click Create purchase order.</span></span>
+13. <span data-ttu-id="2aa96-119">Zaznacz pole wyboru Uwzględnij.</span><span class="sxs-lookup"><span data-stu-id="2aa96-119">Select the Include check box.</span></span>
+14. <span data-ttu-id="2aa96-120">W polu Konto dostawcy wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="2aa96-120">In the Vendor account field, enter or select a value.</span></span>
+15. <span data-ttu-id="2aa96-121">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="2aa96-121">Click OK.</span></span>
+16. <span data-ttu-id="2aa96-122">Wybierz kolejno opcje Rozrachunki z dostawcami > Zamówienia zakupu > Wszystkie zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="2aa96-122">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+17. <span data-ttu-id="2aa96-123">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="2aa96-123">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="2aa96-124">W okienku akcji kliknij pozycję Zakup.</span><span class="sxs-lookup"><span data-stu-id="2aa96-124">On the Action Pane, click Purchase.</span></span>
+19. <span data-ttu-id="2aa96-125">Kliknij przycisk Potwierdź.</span><span class="sxs-lookup"><span data-stu-id="2aa96-125">Click Confirm.</span></span>
+20. <span data-ttu-id="2aa96-126">W okienku akcji kliknij pozycję Odbierz.</span><span class="sxs-lookup"><span data-stu-id="2aa96-126">On the Action Pane, click Receive.</span></span>
+21. <span data-ttu-id="2aa96-127">Kliknij opcję Dokument przyjęcia produktów.</span><span class="sxs-lookup"><span data-stu-id="2aa96-127">Click Product receipt.</span></span>
+22. <span data-ttu-id="2aa96-128">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="2aa96-128">In the list, mark the selected row.</span></span>
+23. <span data-ttu-id="2aa96-129">W polu Dokument przyjęcia produktów wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="2aa96-129">In the Product receipt field, type a value.</span></span>
+24. <span data-ttu-id="2aa96-130">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="2aa96-130">Click OK.</span></span>
 
 

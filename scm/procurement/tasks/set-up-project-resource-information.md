@@ -17,38 +17,38 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 1b95b797d5e2b9dbf6e325e71705727b87c5e10e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 9824971eb2a970f6136df9cc2c5feffc038b8f09
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-project-resource-information"></a>Konfigurowanie informacji o zasobach projektu
+# <a name="set-up-project-resource-information"></a><span data-ttu-id="9f495-103">Konfigurowanie informacji o zasobach projektu</span><span class="sxs-lookup"><span data-stu-id="9f495-103">Set up project resource information</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób konfigurowania zasobu projektu. W tym zadaniu jest wykorzystywany zestaw danych firmy USMF.
+<span data-ttu-id="9f495-104">W tej procedurze pokazano sposób konfigurowania zasobu projektu.</span><span class="sxs-lookup"><span data-stu-id="9f495-104">This procedure shows how to set up a project resource.</span></span> <span data-ttu-id="9f495-105">W tym zadaniu jest wykorzystywany zestaw danych firmy USMF.</span><span class="sxs-lookup"><span data-stu-id="9f495-105">This task uses the USMF data set.</span></span>
 
-1. Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie > Zasoby projektu > Lista zasobów.
-2. Kliknij opcję Nowy zasób.
-3. W polu Pracownik wprowadź lub wybierz wartość.
-4. W polu Kalendarz wprowadź lub wybierz wartość.
-5. W polu Kod okresu wprowadź lub wybierz wartość.
-6. Kliknij przycisk Utwórz.
-7. Kliknij opcję Koszty własne.
-8. Kliknij opcję Koszt własny — Godzina.
-9. Kliknij przycisk Nowy.
-10. W polu Data obowiązywania wprowadź datę.
-11. W polu Koszt własny wpisz liczbę.
-12. Kliknij przycisk Zapisz.
-13. Zamknij stronę.
-14. Kliknij opcję Ceny sprzedaży.
-15. Kliknij opcję Cena sprzedaży — Godzina.
-16. Kliknij przycisk Nowy.
-17. W polu Data obowiązywania wprowadź datę.
-18. W polu Ceny wpisz liczbę.
-19. W polu Ważny dla wybierz opcję.
-20. Kliknij przycisk Zapisz.
-21. Zamknij stronę.
+1. <span data-ttu-id="9f495-106">Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie > Zasoby projektu > Lista zasobów.</span><span class="sxs-lookup"><span data-stu-id="9f495-106">Go to Project management and accounting > Project resources > Resources list.</span></span>
+2. <span data-ttu-id="9f495-107">Kliknij opcję Nowy zasób.</span><span class="sxs-lookup"><span data-stu-id="9f495-107">Click New resource.</span></span>
+3. <span data-ttu-id="9f495-108">W polu Pracownik wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="9f495-108">In the Worker field, enter or select a value.</span></span>
+4. <span data-ttu-id="9f495-109">W polu Kalendarz wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="9f495-109">In the Calendar field, enter or select a value.</span></span>
+5. <span data-ttu-id="9f495-110">W polu Kod okresu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="9f495-110">In the Period code field, enter or select a value.</span></span>
+6. <span data-ttu-id="9f495-111">Kliknij przycisk Utwórz.</span><span class="sxs-lookup"><span data-stu-id="9f495-111">Click Create.</span></span>
+7. <span data-ttu-id="9f495-112">Kliknij opcję Koszty własne.</span><span class="sxs-lookup"><span data-stu-id="9f495-112">Click Cost prices.</span></span>
+8. <span data-ttu-id="9f495-113">Kliknij opcję Koszt własny — Godzina.</span><span class="sxs-lookup"><span data-stu-id="9f495-113">Click Cost price - hour.</span></span>
+9. <span data-ttu-id="9f495-114">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="9f495-114">Click New.</span></span>
+10. <span data-ttu-id="9f495-115">W polu Data obowiązywania wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="9f495-115">In the Effective date field, enter a date.</span></span>
+11. <span data-ttu-id="9f495-116">W polu Koszt własny wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="9f495-116">In the Cost price field, enter a number.</span></span>
+12. <span data-ttu-id="9f495-117">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="9f495-117">Click Save.</span></span>
+13. <span data-ttu-id="9f495-118">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9f495-118">Close the page.</span></span>
+14. <span data-ttu-id="9f495-119">Kliknij opcję Ceny sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="9f495-119">Click Sales prices.</span></span>
+15. <span data-ttu-id="9f495-120">Kliknij opcję Cena sprzedaży — Godzina.</span><span class="sxs-lookup"><span data-stu-id="9f495-120">Click Sales price - hour.</span></span>
+16. <span data-ttu-id="9f495-121">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="9f495-121">Click New.</span></span>
+17. <span data-ttu-id="9f495-122">W polu Data obowiązywania wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="9f495-122">In the Effective date field, enter a date.</span></span>
+18. <span data-ttu-id="9f495-123">W polu Ceny wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="9f495-123">In the Pricing field, enter a number.</span></span>
+19. <span data-ttu-id="9f495-124">W polu Ważny dla wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="9f495-124">In the Valid for field, select an option.</span></span>
+20. <span data-ttu-id="9f495-125">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="9f495-125">Click Save.</span></span>
+21. <span data-ttu-id="9f495-126">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9f495-126">Close the page.</span></span>
 
 

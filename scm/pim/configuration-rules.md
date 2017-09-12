@@ -16,35 +16,35 @@ ms.custom: 19761
 ms.assetid: e4c6622d-1e2d-4a4d-8047-c553a25d4f87
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74c8ffe4ab00e7afa1235e24327e18a65061636a
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: bd5b5acd9ae223c78aa28c6e63c1a85cf64e9a26
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="configuration-rules"></a>Reguły konfiguracji
+# <a name="configuration-rules"></a><span data-ttu-id="ea7d7-104">Reguły konfiguracji</span><span class="sxs-lookup"><span data-stu-id="ea7d7-104">Configuration rules</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera ogólne informacje o regułach konfiguracji. Reguły konfiguracji definiują relacje między towarami na liście składowej (BOM) dla produktów wykorzystujących technologię konfiguracji opartej na wymiarach.
+<span data-ttu-id="ea7d7-105">Ten artykuł zawiera ogólne informacje o regułach konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="ea7d7-105">This article provides general information about configuration rules.</span></span> <span data-ttu-id="ea7d7-106">Reguły konfiguracji definiują relacje między towarami na liście składowej (BOM) dla produktów wykorzystujących technologię konfiguracji opartej na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="ea7d7-106">Configuration rules define relationships between items in a bill of materials (BOM) for products that use the dimension-based configuration technology.</span></span>
 
-Reguły konfiguracji są dostępne podczas definiowania modeli konfiguracji opartych na wymiarach. Reguły konfiguracji są używane do wymuszania albo zakazywania kombinacji określonych towarów na liście składowej (BOM). Po utworzeniu BOM i przypisaniu odpowiednich towarów do odpowiednich grup konfiguracji, można zdefiniować jedną lub więcej reguł konfiguracji. Jeżeli dwa towary przynależą do siebie, można je ze sobą połączyć za pomocą operatora **Zaznacz**. Jeśli dwa towary wzajemnie się wykluczają, można je od siebie oddzielić za pomocą operatora **Odznacz**.  
+<span data-ttu-id="ea7d7-107">Reguły konfiguracji są dostępne podczas definiowania modeli konfiguracji opartych na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="ea7d7-107">Configuration rules are available when you define dimension-based configuration models.</span></span> <span data-ttu-id="ea7d7-108">Reguły konfiguracji są używane do wymuszania albo zakazywania kombinacji określonych towarów na liście składowej (BOM).</span><span class="sxs-lookup"><span data-stu-id="ea7d7-108">Configuration rules are used to either enforce or prohibit specific item combinations in a bill of materials (BOM).</span></span> <span data-ttu-id="ea7d7-109">Po utworzeniu BOM i przypisaniu odpowiednich towarów do odpowiednich grup konfiguracji, można zdefiniować jedną lub więcej reguł konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="ea7d7-109">After a BOM has been created and the relevant items have been assigned to their respective configuration groups, one or more configuration rules can be defined.</span></span> <span data-ttu-id="ea7d7-110">Jeżeli dwa towary przynależą do siebie, można je ze sobą połączyć za pomocą operatora **Zaznacz**.</span><span class="sxs-lookup"><span data-stu-id="ea7d7-110">If two items belong together, the **Select** operator is used to ensure inclusion.</span></span> <span data-ttu-id="ea7d7-111">Jeśli dwa towary wzajemnie się wykluczają, można je od siebie oddzielić za pomocą operatora **Odznacz**.</span><span class="sxs-lookup"><span data-stu-id="ea7d7-111">If two items are mutually exclusive, the **Deselect** operator is used to ensure exclusion.</span></span>  
 
-**Uwaga:** ta informacja dotyczy tylko produktów głównych, które używają technologii konfiguracji opartej na wymiarach.  
+<span data-ttu-id="ea7d7-112">**Uwaga:** ta informacja dotyczy tylko produktów głównych, które używają technologii konfiguracji opartej na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="ea7d7-112">**Note:** This information applies only to product masters that use the dimension-based configuration technology.</span></span>  
 
-Istniejące konfiguracje nie są objęte kolejnymi zmianami reguł konfiguracji. Jednak przed zdefiniowaniem nowej konfiguracji konieczne jest określenie reguł lub ich sprawdzenie, jeśli istnieje podejrzenie o zmianie reguł.  
+<span data-ttu-id="ea7d7-113">Istniejące konfiguracje nie są objęte kolejnymi zmianami reguł konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="ea7d7-113">Existing configurations aren't affected by subsequent changes to the configuration rules.</span></span> <span data-ttu-id="ea7d7-114">Jednak przed zdefiniowaniem nowej konfiguracji konieczne jest określenie reguł lub ich sprawdzenie, jeśli istnieje podejrzenie o zmianie reguł.</span><span class="sxs-lookup"><span data-stu-id="ea7d7-114">However, it's important that you set the rules before you define a new configuration, and that you check the rules if you think they have been changed.</span></span>  
 
-**Uwaga:** dla metody **Zaznacz** pochodna grupa konfiguracji, numer towaru i konfiguracja wybierane są automatycznie. Dla metody **Odznacz** pochodna grupa konfiguracji, numer towaru i konfiguracja nie może zostać wybrana.
+<span data-ttu-id="ea7d7-115">**Uwaga:** dla metody **Zaznacz** pochodna grupa konfiguracji, numer towaru i konfiguracja wybierane są automatycznie.</span><span class="sxs-lookup"><span data-stu-id="ea7d7-115">**Note:** For the **Select** method, the derived configuration group, item number, and configuration are automatically selected.</span></span> <span data-ttu-id="ea7d7-116">Dla metody **Odznacz** pochodna grupa konfiguracji, numer towaru i konfiguracja nie może zostać wybrana.</span><span class="sxs-lookup"><span data-stu-id="ea7d7-116">For the **Deselect** method, the derived configuration group, item number, and configuration can't be selected.</span></span>
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="see-also"></a><span data-ttu-id="ea7d7-117">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="ea7d7-117">See also</span></span>
 --------
 
-[Konfiguracja produktu oparta na wymiarach](dimension-based-product-configuration.md)
+[<span data-ttu-id="ea7d7-118">Konfiguracja produktu oparta na wymiarach</span><span class="sxs-lookup"><span data-stu-id="ea7d7-118">Dimension-based product configuration</span></span>](dimension-based-product-configuration.md)
 
 
 

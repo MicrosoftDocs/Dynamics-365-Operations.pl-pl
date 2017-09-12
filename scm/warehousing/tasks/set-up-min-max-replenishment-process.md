@@ -17,133 +17,133 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 01a0c42c43a23234e0e355193f8dd7e8ee116f71
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 02af5d1beb2d4eb6a7162b47c42854725fbdbec2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-min-max-replenishment-process"></a>Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości
+# <a name="set-up-a-min-max-replenishment-process"></a><span data-ttu-id="0b7d9-103">Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości</span><span class="sxs-lookup"><span data-stu-id="0b7d9-103">Set up a min-max replenishment process</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W tej procedurze pokazano sposób konfigurowania nowego procesu uzupełniania zapasów, który wykorzystuje strategię minimalnej/maksymalnej ilości uzupełniania. Jeśli ilość zapasów spadnie poniżej minimalnego poziomu, zostanie utworzona praca uzupełnienia lokalizacji. W procedurze pokazano również, jak używać stałych lokalizacji pobrania, aby pozwolić na uzupełnianie zapasów nawet gdy ilość zapasów spadnie poniżej minimalnego poziomu, oraz jak włączyć regularne wykonywanie procesu uzupełniania przy użyciu zadania wsadowego. Te zadania zazwyczaj wykonuje kierownik magazynu. Tę procedurę można wykonać na danych firmy demonstracyjnych USMF przy użyciu przykładowych wartości z notatek albo na faktycznych danych swojej firmy. Jeśli korzystasz z własnych danych, upewnij się, że masz magazyn, w którym włączono obsługę procesów zarządzania magazynem.
+<span data-ttu-id="0b7d9-104">W tej procedurze pokazano sposób konfigurowania nowego procesu uzupełniania zapasów, który wykorzystuje strategię minimalnej/maksymalnej ilości uzupełniania.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-104">This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy.</span></span> <span data-ttu-id="0b7d9-105">Jeśli ilość zapasów spadnie poniżej minimalnego poziomu, zostanie utworzona praca uzupełnienia lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-105">When inventory falls below the minimum level, work will be created to replenish the location.</span></span> <span data-ttu-id="0b7d9-106">W procedurze pokazano również, jak używać stałych lokalizacji pobrania, aby pozwolić na uzupełnianie zapasów nawet gdy ilość zapasów spadnie poniżej minimalnego poziomu, oraz jak włączyć regularne wykonywanie procesu uzupełniania przy użyciu zadania wsadowego.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-106">The procedure also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job.</span></span> <span data-ttu-id="0b7d9-107">Te zadania zazwyczaj wykonuje kierownik magazynu.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-107">These tasks would typically be carried out by a warehouse manager.</span></span> <span data-ttu-id="0b7d9-108">Tę procedurę można wykonać na danych firmy demonstracyjnych USMF przy użyciu przykładowych wartości z notatek albo na faktycznych danych swojej firmy.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-108">You can run this procedure in the USMF demo data company using the example values in the notes, or can run it on your own data.</span></span> <span data-ttu-id="0b7d9-109">Jeśli korzystasz z własnych danych, upewnij się, że masz magazyn, w którym włączono obsługę procesów zarządzania magazynem.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-109">If you’re using your own data, make sure that you have a warehouse that’s enabled for Warehouse management processes.</span></span>
 
 
-## <a name="create-a-fixed-picking-location"></a>Tworzenie stałej lokalizacji pobrania
-1. Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Magazyn > Stałe lokalizacje.
-    * Jest to opcjonalne zadanie minimalnego i maksymalnego uzupełniania zapasów, ale jeśli używasz stałej lokalizacji pobrania, pozwoli ono uzupełniać zapasy nawet jeśli spadną poniżej poziomu minimalnego, ponieważ system może określić, które towary należy uzupełnić, nawet jeśli żadnych nie zostało.  
-2. Kliknij przycisk Nowy.
-3. W polu Numer towaru wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy demonstracyjnej USMF, można wybrać towar A0001.  
-4. W polu Oddział wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy demonstracyjnej USMF, można wybrać oddział 2.  
-5. W polu Magazyn wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, można wybrać magazyn 24.  
-6. W polu Lokalizacja wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy demonstracyjnej USMF, można wybrać opcję CP-003.  
-7. Zamknij stronę.
+## <a name="create-a-fixed-picking-location"></a><span data-ttu-id="0b7d9-110">Tworzenie stałej lokalizacji pobrania</span><span class="sxs-lookup"><span data-stu-id="0b7d9-110">Create a fixed picking location</span></span>
+1. <span data-ttu-id="0b7d9-111">Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Magazyn > Stałe lokalizacje.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-111">Go to Warehouse management > Setup > Warehouse > Fixed locations.</span></span>
+    * <span data-ttu-id="0b7d9-112">Jest to opcjonalne zadanie minimalnego i maksymalnego uzupełniania zapasów, ale jeśli używasz stałej lokalizacji pobrania, pozwoli ono uzupełniać zapasy nawet jeśli spadną poniżej poziomu minimalnego, ponieważ system może określić, które towary należy uzupełnić, nawet jeśli żadnych nie zostało.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-112">This is an optional task for min-max replenishment, but if you use fixed picking location, this allows stock to be replenished even if it falls below the minimum level, because the system can determine which items need to be replenished, even if there aren't any left.</span></span>  
+2. <span data-ttu-id="0b7d9-113">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-113">Click New.</span></span>
+3. <span data-ttu-id="0b7d9-114">W polu Numer towaru wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-114">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b7d9-115">Jeśli używasz firmy demonstracyjnej USMF, można wybrać towar A0001.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-115">If you’re using USMF, you can select item A0001.</span></span>  
+4. <span data-ttu-id="0b7d9-116">W polu Oddział wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-116">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b7d9-117">Jeśli używasz firmy demonstracyjnej USMF, można wybrać oddział 2.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-117">If you’re using USMF, you can select site 2.</span></span>  
+5. <span data-ttu-id="0b7d9-118">W polu Magazyn wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-118">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b7d9-119">Jeśli używasz firmy USMF, można wybrać magazyn 24.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-119">If you’re using USMF, you can select warehouse 24.</span></span>  
+6. <span data-ttu-id="0b7d9-120">W polu Lokalizacja wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-120">In the Location field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b7d9-121">Jeśli używasz firmy demonstracyjnej USMF, można wybrać opcję CP-003.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-121">If you’re using USMF, you can select CP-003.</span></span>  
+7. <span data-ttu-id="0b7d9-122">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-122">Close the page.</span></span>
 
-## <a name="create-a-replenishment-location-directive"></a>Tworzenie dyrektywy lokalizacji uzupełniania zapasów
-1. Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Dyrektywy lokalizacji.
-    * Dyrektywy lokalizacji służą do określania, skąd towary mają być pobierane w procesie uzupełnienia zapasów.  
-2. W polu Typ zlecenia wybierz opcję „Uzupełnienie”.
-3. Kliknij przycisk Nowy.
-4. W polu Nazwa wpisz wartość.
-5. W polu Typ pracy zaznacz opcję „Pobranie”.
-6. W polu Oddział wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy demonstracyjnej USMF, można wybrać oddział 2.  
-7. W polu Magazyn wprowadź lub wybierz wartość.
-    * Jeśli używasz firmy USMF, można wybrać magazyn 24.  
-8. Kliknij przycisk Zapisz.
-9. Kliknij przycisk Nowy.
-10. Na liście oznacz wybrany wiersz.
-11. W polu Do ilości wprowadź liczbę.
-    * Na przykład można ustawić wartość 9999.  
-12. Zaznacz pole wyboru Zezwalaj na podział.
-    * Jeśli zostanie wybrana ta opcja, proces tworzenia pracy umożliwi podzielenie ilości wierszy pracy między wiele lokalizacji.  
-13. Kliknij przycisk Zapisz.
-14. Kliknij przycisk Nowy.
-15. Na liście oznacz wybrany wiersz.
-16. W polu Nazwa wpisz wartość.
-17. Kliknij przycisk Zapisz.
-18. Kliknij opcję Edytuj kwerendę.
-    * Można edytować to zapytanie, aby dodać ograniczenia mówiące o tym, skąd można wybierać zapasy w procesie uzupełnienia zapasów. Na przykład można określić, że zapasów można używać tylko z obszaru materiałów luzem.  
-19. Kliknij przycisk OK.
-20. Zamknij stronę.
+## <a name="create-a-replenishment-location-directive"></a><span data-ttu-id="0b7d9-123">Tworzenie dyrektywy lokalizacji uzupełniania zapasów</span><span class="sxs-lookup"><span data-stu-id="0b7d9-123">Create a replenishment location directive</span></span>
+1. <span data-ttu-id="0b7d9-124">Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Dyrektywy lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-124">Go to Warehouse management > Setup > Location directives.</span></span>
+    * <span data-ttu-id="0b7d9-125">Dyrektywy lokalizacji służą do określania, skąd towary mają być pobierane w procesie uzupełnienia zapasów.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-125">Location directives are used to determine where items should be picked from in the replenishment process.</span></span>  
+2. <span data-ttu-id="0b7d9-126">W polu Typ zlecenia wybierz opcję „Uzupełnienie”.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-126">In the Work order type field, select 'Replenishment'.</span></span>
+3. <span data-ttu-id="0b7d9-127">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-127">Click New.</span></span>
+4. <span data-ttu-id="0b7d9-128">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-128">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="0b7d9-129">W polu Typ pracy zaznacz opcję „Pobranie”.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-129">In the Work type field, select 'Pick'.</span></span>
+6. <span data-ttu-id="0b7d9-130">W polu Oddział wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-130">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b7d9-131">Jeśli używasz firmy demonstracyjnej USMF, można wybrać oddział 2.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-131">If you’re using USMF, you can select site 2.</span></span>  
+7. <span data-ttu-id="0b7d9-132">W polu Magazyn wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-132">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b7d9-133">Jeśli używasz firmy USMF, można wybrać magazyn 24.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-133">If you’re using USMF, you can select warehouse 24.</span></span>  
+8. <span data-ttu-id="0b7d9-134">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-134">Click Save.</span></span>
+9. <span data-ttu-id="0b7d9-135">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-135">Click New.</span></span>
+10. <span data-ttu-id="0b7d9-136">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-136">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="0b7d9-137">W polu Do ilości wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-137">In the To quantity field, enter a number.</span></span>
+    * <span data-ttu-id="0b7d9-138">Na przykład można ustawić wartość 9999.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-138">For example, you can set it to 9999.</span></span>  
+12. <span data-ttu-id="0b7d9-139">Zaznacz pole wyboru Zezwalaj na podział.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-139">Select the Allow split check box.</span></span>
+    * <span data-ttu-id="0b7d9-140">Jeśli zostanie wybrana ta opcja, proces tworzenia pracy umożliwi podzielenie ilości wierszy pracy między wiele lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-140">If you select this option, the work creation process will allow work line quantities to be split across multiple locations.</span></span>  
+13. <span data-ttu-id="0b7d9-141">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-141">Click Save.</span></span>
+14. <span data-ttu-id="0b7d9-142">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-142">Click New.</span></span>
+15. <span data-ttu-id="0b7d9-143">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-143">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="0b7d9-144">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-144">In the Name field, type a value.</span></span>
+17. <span data-ttu-id="0b7d9-145">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-145">Click Save.</span></span>
+18. <span data-ttu-id="0b7d9-146">Kliknij opcję Edytuj kwerendę.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-146">Click Edit query.</span></span>
+    * <span data-ttu-id="0b7d9-147">Można edytować to zapytanie, aby dodać ograniczenia mówiące o tym, skąd można wybierać zapasy w procesie uzupełnienia zapasów.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-147">You can edit this query to add restrictions where inventory can be selected from in the replenishment process.</span></span> <span data-ttu-id="0b7d9-148">Na przykład można określić, że zapasów można używać tylko z obszaru materiałów luzem.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-148">For example, it could be that inventory should only be used from the Bulk area of the warehouse.</span></span>  
+19. <span data-ttu-id="0b7d9-149">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-149">Click OK.</span></span>
+20. <span data-ttu-id="0b7d9-150">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-150">Close the page.</span></span>
 
-## <a name="create-a-replenishment-work-template"></a>Tworzenie szablonu roboczego uzupełniania zapasów
-1. Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Praca > Szablony pracy.
-    * Szablon pracy służy do instruowania systemu, jak należy utworzyć pracę minimalnego/maksymalnego uzupełniania zapasów. Jako minimum musi istnieć wiersz szablonu pracy dotyczący pobrania i odłożenia. Szablon pracy będzie wyświetlany jako nieprawidłowy do momentu, aż zostaną w nim wprowadzone wszystkie wymagane informacje.  
-2. W polu Typ zlecenia wybierz opcję „Uzupełnienie”.
-3. Kliknij przycisk Nowy.
-4. W polu Szablon pracy wpisz wartość.
-5. Kliknij przycisk Zapisz.
-6. Kliknij przycisk Nowy.
-7. W polu Typ pracy zaznacz opcję „Pobranie”.
-8. W polu Identyfikator klasy roboczej wprowadź lub wybierz wartość.
-    * Powinna to być klasa pracy związana z uzupełnianiem zapasów. Jeśli używasz firmy USMF, zaznacz opcję Uzupełnianie zapasów.  
-9. Kliknij przycisk Nowy.
-10. Na liście oznacz wybrany wiersz.
-11. W polu Typ pracy zaznacz opcję „Odłożenie”.
-12. W polu Identyfikator klasy roboczej wprowadź lub wybierz wartość.
-13. Kliknij przycisk Zapisz.
-14. Zamknij stronę.
+## <a name="create-a-replenishment-work-template"></a><span data-ttu-id="0b7d9-151">Tworzenie szablonu roboczego uzupełniania zapasów</span><span class="sxs-lookup"><span data-stu-id="0b7d9-151">Create a replenishment work template</span></span>
+1. <span data-ttu-id="0b7d9-152">Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Praca > Szablony pracy.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-152">Go to Warehouse management > Setup > Work > Work templates.</span></span>
+    * <span data-ttu-id="0b7d9-153">Szablon pracy służy do instruowania systemu, jak należy utworzyć pracę minimalnego/maksymalnego uzupełniania zapasów.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-153">The work template is use to guide the system as to how the min/max replenishment work must be created.</span></span> <span data-ttu-id="0b7d9-154">Jako minimum musi istnieć wiersz szablonu pracy dotyczący pobrania i odłożenia.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-154">As a minimum, there must be a work template line for a pick and a put.</span></span> <span data-ttu-id="0b7d9-155">Szablon pracy będzie wyświetlany jako nieprawidłowy do momentu, aż zostaną w nim wprowadzone wszystkie wymagane informacje.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-155">The work template will say that it’s Invalid until all the necessary information has been filled in.</span></span>  
+2. <span data-ttu-id="0b7d9-156">W polu Typ zlecenia wybierz opcję „Uzupełnienie”.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-156">In the Work order type field, select 'Replenishment'.</span></span>
+3. <span data-ttu-id="0b7d9-157">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-157">Click New.</span></span>
+4. <span data-ttu-id="0b7d9-158">W polu Szablon pracy wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-158">In the Work template field, type a value.</span></span>
+5. <span data-ttu-id="0b7d9-159">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-159">Click Save.</span></span>
+6. <span data-ttu-id="0b7d9-160">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-160">Click New.</span></span>
+7. <span data-ttu-id="0b7d9-161">W polu Typ pracy zaznacz opcję „Pobranie”.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-161">In the Work type field, select 'Pick'.</span></span>
+8. <span data-ttu-id="0b7d9-162">W polu Identyfikator klasy roboczej wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-162">In the Work class ID field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b7d9-163">Powinna to być klasa pracy związana z uzupełnianiem zapasów.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-163">This should be a work class related to replenishment.</span></span> <span data-ttu-id="0b7d9-164">Jeśli używasz firmy USMF, zaznacz opcję Uzupełnianie zapasów.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-164">If you’re using USMF, select Replenish.</span></span>  
+9. <span data-ttu-id="0b7d9-165">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-165">Click New.</span></span>
+10. <span data-ttu-id="0b7d9-166">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-166">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="0b7d9-167">W polu Typ pracy zaznacz opcję „Odłożenie”.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-167">In the Work type field, select 'Put'.</span></span>
+12. <span data-ttu-id="0b7d9-168">W polu Identyfikator klasy roboczej wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-168">In the Work class ID field, enter or select a value.</span></span>
+13. <span data-ttu-id="0b7d9-169">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-169">Click Save.</span></span>
+14. <span data-ttu-id="0b7d9-170">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-170">Close the page.</span></span>
 
-## <a name="create-a-new-replenishment-template"></a>Tworzenie nowego szablonu uzupełniania zapasów
-1. Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Uzupełnianie zapasów > Szablony uzupełniania zapasów.
-    * Szablon uzupełnienia zapasów służy do definiowania towarów i ilości oraz lokalizacji, która ma być uzupełniana.  
-2. Kliknij przycisk Nowy.
-3. W polu Szablon uzupełniania zapasów wpisz wartość.
-    * Nadaj szablonowi nazwę wskazującą, że dotyczy on uzupełnienia minimalnej/maksymalnej ilości.  
-4. Wypełnij pole Opis.
-5. Zaznacz pole wyboru Zezwalaj na używanie niezarezerwowanych ilości z powodu popytu grupy czynności.
-    * Zaznaczenie tej opcji spowoduje, że uzupełnianie popytu grupy czynności będzie mogło zużywać ilości związane minimalnym/maksymalnym uzupełnieniem. Może to być na przykład przydatne, jeśli praca minimalnego/maksymalnego uzupełniania ilości nie jest przetwarzana natychmiast, ponieważ pozwoli to uniknąć tworzenia niepotrzebnej pracy uzupełnienia zapasów dla popytu.  
-6. Kliknij przycisk Nowy.
-7. W polu Numer sekwencyjny wpisz liczbę.
-8. Wypełnij pole Opis.
-9. Na liście oznacz wybrany wiersz.
-10. W polu Jednostka uzupełnienia zapasów wprowadź lub wybierz wartość.
-    * Na przykład zaznacz opcję „szt.”. To ustawienie jest obowiązkowe. Umożliwia określenie innej jednostki miary dla pracy uzupełniania zapasów w porównaniu z jednostką określoną dla minimalnych i maksymalnych poziomów zapasów w tym szablonie.  
-11. W polu Szablon pracy wprowadź lub wybierz wartość.
-    * Zaznacz utworzony wcześniej szablon pracy.  
-12. W polu Ilość minimalna wprowadź liczbę.
-    * Wybierz minimalną ilość, która powinna uruchamiać uzupełnianie zapasów. Na przykład ustaw wartość 50. Istnieje możliwość pozostawienia wartości zero, jeśli jest uzupełniania stała lokalizacja, a w opcji Uzupełnij zapasy w pustych stałych lokalizacjach zaznaczono wartość Tak. Ponadto zaleca się zaznaczenie opcji Uzupełniaj tylko stałe lokalizacje ze względu na wydajność.  
-13. W polu Ilość maksymalna wprowadź liczbę.
-    * Na przykład ustaw wartość 100.  
-14. W polu Jednostka wprowadź lub wybierz wartość.
-    * Przypisz jednostkę dla ilości minimalnej i maksymalnej. Na przykład ustaw wartość „szt.”.  
-15. Zaznacz pole wyboru Uzupełnij zapasy w pustych stałych lokalizacjach.
-    * Zaznacz to pole wyboru, aby uzupełniać stałe lokalizacje, gdy są puste. W przeciwnym razie tylko lokalizacje z tą ilością będą uzupełniane.  
-16. Zaznacz pole wyboru Uzupełniaj tylko stałe lokalizacje.
-17. Kliknij opcję Wybierz produkty.
-    * W tym miejscu należy zdefiniować, które produkty powinny być uzupełniane. Jeśli jest zaznaczona opcja stałych lokalizacji pobrania, należy zdefiniować lokalizacje również w tym zapytaniu. Dostępne są zapytania specyficzne dla wariantów i dla produktów.  
-18. Zaznacz wiersz Pozycje.
-19. W polu Kryteria wpisz wartość.
-    * Wybierz towary, które mają być uzupełniane w stałych lokalizacjach. Na przykład wpisz A *, aby wybrać wszystkie numery towarów rozpoczynające się literą A.  
-20. Kliknij przycisk Dodaj.
-    * Dodaj jednostkę lokalizacji (chyba że już istnieje), aby móc ograniczyć pracę uzupełniania zapasów do stałych lokalizacji pobrania w określonym obszarze magazynu.  
-21. Na liście oznacz wybrany wiersz.
-22. W polu Tabela ustaw wartość Lokalizacje.
-23. W polu Pole wybierz wartość Identyfikator profilu lokalizacji.
-24. W polu Kryteria wprowadź lub wybierz wartość.
-25. Kliknij przycisk OK.
-26. Zamknij stronę.
+## <a name="create-a-new-replenishment-template"></a><span data-ttu-id="0b7d9-171">Tworzenie nowego szablonu uzupełniania zapasów</span><span class="sxs-lookup"><span data-stu-id="0b7d9-171">Create a new replenishment template</span></span>
+1. <span data-ttu-id="0b7d9-172">Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Uzupełnianie zapasów > Szablony uzupełniania zapasów.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-172">Go to Warehouse management > Setup > Replenishment > Replenishment templates.</span></span>
+    * <span data-ttu-id="0b7d9-173">Szablon uzupełnienia zapasów służy do definiowania towarów i ilości oraz lokalizacji, która ma być uzupełniana.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-173">The replenishment template is used to define the items and quantities, and the location to replenish.</span></span>  
+2. <span data-ttu-id="0b7d9-174">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-174">Click New.</span></span>
+3. <span data-ttu-id="0b7d9-175">W polu Szablon uzupełniania zapasów wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-175">In the Replenish template field, type a value.</span></span>
+    * <span data-ttu-id="0b7d9-176">Nadaj szablonowi nazwę wskazującą, że dotyczy on uzupełnienia minimalnej/maksymalnej ilości.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-176">Give the template a name to indicate that it’s for min/max replenishment.</span></span>  
+4. <span data-ttu-id="0b7d9-177">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-177">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="0b7d9-178">Zaznacz pole wyboru Zezwalaj na używanie niezarezerwowanych ilości z powodu popytu grupy czynności.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-178">Select the Allow wave demand to use unreserved quantities check box.</span></span>
+    * <span data-ttu-id="0b7d9-179">Zaznaczenie tej opcji spowoduje, że uzupełnianie popytu grupy czynności będzie mogło zużywać ilości związane minimalnym/maksymalnym uzupełnieniem.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-179">If you select this option, it enables wave demand replenishment to consume quantities that are related to min/max replenishment.</span></span> <span data-ttu-id="0b7d9-180">Może to być na przykład przydatne, jeśli praca minimalnego/maksymalnego uzupełniania ilości nie jest przetwarzana natychmiast, ponieważ pozwoli to uniknąć tworzenia niepotrzebnej pracy uzupełnienia zapasów dla popytu.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-180">For example, this might be useful if the min/max replenishment work isn’t processed immediately, to avoid unnecessary demand replenishment work from being created.</span></span>  
+6. <span data-ttu-id="0b7d9-181">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-181">Click New.</span></span>
+7. <span data-ttu-id="0b7d9-182">W polu Numer sekwencyjny wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-182">In the Sequence number field, enter a number.</span></span>
+8. <span data-ttu-id="0b7d9-183">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-183">In the Description field, type a value.</span></span>
+9. <span data-ttu-id="0b7d9-184">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-184">In the list, mark the selected row.</span></span>
+10. <span data-ttu-id="0b7d9-185">W polu Jednostka uzupełnienia zapasów wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-185">In the Replenishment unit field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b7d9-186">Na przykład zaznacz opcję „szt.”.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-186">For example, select pcs.</span></span> <span data-ttu-id="0b7d9-187">To ustawienie jest obowiązkowe.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-187">This setting is mandatory.</span></span> <span data-ttu-id="0b7d9-188">Umożliwia określenie innej jednostki miary dla pracy uzupełniania zapasów w porównaniu z jednostką określoną dla minimalnych i maksymalnych poziomów zapasów w tym szablonie.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-188">It allows you to specify a different unit of measurement for replenishment work compared to the unit specified for the minimum and maximum stock levels in this template.</span></span>  
+11. <span data-ttu-id="0b7d9-189">W polu Szablon pracy wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-189">In the Work template field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b7d9-190">Zaznacz utworzony wcześniej szablon pracy.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-190">Choose the work template that you created earlier.</span></span>  
+12. <span data-ttu-id="0b7d9-191">W polu Ilość minimalna wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-191">In the Minimum quantity field, enter a number.</span></span>
+    * <span data-ttu-id="0b7d9-192">Wybierz minimalną ilość, która powinna uruchamiać uzupełnianie zapasów.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-192">Select the minimum quantity that should trigger the replenishment.</span></span> <span data-ttu-id="0b7d9-193">Na przykład ustaw wartość 50.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-193">For example, set this to 50.</span></span> <span data-ttu-id="0b7d9-194">Istnieje możliwość pozostawienia wartości zero, jeśli jest uzupełniania stała lokalizacja, a w opcji Uzupełnij zapasy w pustych stałych lokalizacjach zaznaczono wartość Tak.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-194">It is possible to leave this set to zero, if you’re replenishing a fixed location and the Replenish empty fixed locations option is set to Yes.</span></span> <span data-ttu-id="0b7d9-195">Ponadto zaleca się zaznaczenie opcji Uzupełniaj tylko stałe lokalizacje ze względu na wydajność.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-195">We also recommend that you select the Replenish only fixed locations option for performance reasons.</span></span>  
+13. <span data-ttu-id="0b7d9-196">W polu Ilość maksymalna wprowadź liczbę.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-196">In the Maximum quantity field, enter a number.</span></span>
+    * <span data-ttu-id="0b7d9-197">Na przykład ustaw wartość 100.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-197">For example, set this to 100.</span></span>  
+14. <span data-ttu-id="0b7d9-198">W polu Jednostka wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-198">In the Unit field, enter or select a value.</span></span>
+    * <span data-ttu-id="0b7d9-199">Przypisz jednostkę dla ilości minimalnej i maksymalnej.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-199">Assign the unit for the minimum and maximum quantities.</span></span> <span data-ttu-id="0b7d9-200">Na przykład ustaw wartość „szt.”.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-200">For example, set this to pcs.</span></span>  
+15. <span data-ttu-id="0b7d9-201">Zaznacz pole wyboru Uzupełnij zapasy w pustych stałych lokalizacjach.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-201">Select the Replenish empty fixed locations check box.</span></span>
+    * <span data-ttu-id="0b7d9-202">Zaznacz to pole wyboru, aby uzupełniać stałe lokalizacje, gdy są puste.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-202">Select this check box to replenish fixed locations when they are empty.</span></span> <span data-ttu-id="0b7d9-203">W przeciwnym razie tylko lokalizacje z tą ilością będą uzupełniane.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-203">Otherwise, only the locations where there is a quantity on hand will be replenished.</span></span>  
+16. <span data-ttu-id="0b7d9-204">Zaznacz pole wyboru Uzupełniaj tylko stałe lokalizacje.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-204">Select the Replenish only fixed locations check box.</span></span>
+17. <span data-ttu-id="0b7d9-205">Kliknij opcję Wybierz produkty.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-205">Click Select products.</span></span>
+    * <span data-ttu-id="0b7d9-206">W tym miejscu należy zdefiniować, które produkty powinny być uzupełniane.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-206">This is the place to define which products should be replenished.</span></span> <span data-ttu-id="0b7d9-207">Jeśli jest zaznaczona opcja stałych lokalizacji pobrania, należy zdefiniować lokalizacje również w tym zapytaniu.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-207">If the Fixed picking locations option is selected, you also need to define the locations in this query.</span></span> <span data-ttu-id="0b7d9-208">Dostępne są zapytania specyficzne dla wariantów i dla produktów.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-208">Variant-specific queries are available as well product-specific queries.</span></span>  
+18. <span data-ttu-id="0b7d9-209">Zaznacz wiersz Pozycje.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-209">Select the Items row.</span></span>
+19. <span data-ttu-id="0b7d9-210">W polu Kryteria wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-210">In the Criteria field, type a value.</span></span>
+    * <span data-ttu-id="0b7d9-211">Wybierz towary, które mają być uzupełniane w stałych lokalizacjach.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-211">Select the items that should be replenished at the fixed locations.</span></span> <span data-ttu-id="0b7d9-212">Na przykład wpisz A *, aby wybrać wszystkie numery towarów rozpoczynające się literą A.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-212">For example, type A* to select all item numbers beginning with A.</span></span>  
+20. <span data-ttu-id="0b7d9-213">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-213">Click Add.</span></span>
+    * <span data-ttu-id="0b7d9-214">Dodaj jednostkę lokalizacji (chyba że już istnieje), aby móc ograniczyć pracę uzupełniania zapasów do stałych lokalizacji pobrania w określonym obszarze magazynu.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-214">Add the Location entity (unless it already exists) to be able to restrict the replenishment work to the fixed picking locations within a specific area of the warehouse.</span></span>  
+21. <span data-ttu-id="0b7d9-215">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-215">In the list, mark the selected row.</span></span>
+22. <span data-ttu-id="0b7d9-216">W polu Tabela ustaw wartość Lokalizacje.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-216">Set the Table field to Locations.</span></span>
+23. <span data-ttu-id="0b7d9-217">W polu Pole wybierz wartość Identyfikator profilu lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-217">In the Field field, select Location profile ID.</span></span>
+24. <span data-ttu-id="0b7d9-218">W polu Kryteria wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-218">In the Criteria field, enter or select a value.</span></span>
+25. <span data-ttu-id="0b7d9-219">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-219">Click OK.</span></span>
+26. <span data-ttu-id="0b7d9-220">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-220">Close the page.</span></span>
 
-## <a name="set-the-replenishment-process-to-run-as-a-batch-job"></a>Ustawianie wykonywanie procesu uzupełniania zapasów jako zadania wsadowego
-1. Wybierz kolejno opcje Zarządzanie magazynem > Uzupełnianie zapasów > Uzupełnienia zapasów.
-    * Strona Uzupełnienia zapasów umożliwia skonfigurowanie wykonywania uzupełnienia jako zadania wsadowego lub określenie, że ma ono być uruchamiane ręcznie.  
-2. Kliknij przycisk Filtr.
-3. Na liście oznacz wybrany wiersz.
-4. W polu Kryteria wprowadź lub wybierz wartość.
-5. Kliknij przycisk OK.
-6. Rozwiń sekcję Uruchom w tle.
-7. W opcji Przetwarzanie wsadowe ustaw wartość Tak.
-8. Kliknij przycisk Cykl.
-9. Wybierz opcję Brak daty zakończenia.
-10. Ustaw wzorzec cyklu.
-    * Na przykład zaznacz opcję „Dni”.  
-11. Kliknij przycisk OK.
-12. Kliknij przycisk OK.
+## <a name="set-the-replenishment-process-to-run-as-a-batch-job"></a><span data-ttu-id="0b7d9-221">Ustawianie wykonywanie procesu uzupełniania zapasów jako zadania wsadowego</span><span class="sxs-lookup"><span data-stu-id="0b7d9-221">Set the replenishment process to run as a batch job</span></span>
+1. <span data-ttu-id="0b7d9-222">Wybierz kolejno opcje Zarządzanie magazynem > Uzupełnianie zapasów > Uzupełnienia zapasów.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-222">Go to Warehouse management > Replenishment > Replenishments.</span></span>
+    * <span data-ttu-id="0b7d9-223">Strona Uzupełnienia zapasów umożliwia skonfigurowanie wykonywania uzupełnienia jako zadania wsadowego lub określenie, że ma ono być uruchamiane ręcznie.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-223">The Replenishments page allows you to set up replenishment to run as a batch job, or to require that it’s started manually.</span></span>  
+2. <span data-ttu-id="0b7d9-224">Kliknij przycisk Filtr.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-224">Click Filter.</span></span>
+3. <span data-ttu-id="0b7d9-225">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-225">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="0b7d9-226">W polu Kryteria wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-226">In the Criteria field, enter or select a value.</span></span>
+5. <span data-ttu-id="0b7d9-227">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-227">Click OK.</span></span>
+6. <span data-ttu-id="0b7d9-228">Rozwiń sekcję Uruchom w tle.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-228">Expand the Run in the background section.</span></span>
+7. <span data-ttu-id="0b7d9-229">W opcji Przetwarzanie wsadowe ustaw wartość Tak.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-229">Set the Batch processing option to Yes.</span></span>
+8. <span data-ttu-id="0b7d9-230">Kliknij przycisk Cykl.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-230">Click Recurrence.</span></span>
+9. <span data-ttu-id="0b7d9-231">Wybierz opcję Brak daty zakończenia.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-231">Select the No end date option.</span></span>
+10. <span data-ttu-id="0b7d9-232">Ustaw wzorzec cyklu.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-232">Set the Recurrance pattern.</span></span>
+    * <span data-ttu-id="0b7d9-233">Na przykład zaznacz opcję „Dni”.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-233">For example, select Days.</span></span>  
+11. <span data-ttu-id="0b7d9-234">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-234">Click OK.</span></span>
+12. <span data-ttu-id="0b7d9-235">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="0b7d9-235">Click OK.</span></span>
 
 
