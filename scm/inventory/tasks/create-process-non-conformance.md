@@ -1,4 +1,4 @@
---- 
+---
 title: "Tworzenie i przetwarzanie zgodności"
 description: "Ta procedura służy do zarządzania niezgodnościami na podstawie istniejącego zlecenia kontroli jakości."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -27,7 +27,7 @@ ms.lasthandoff: 07/27/2017
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ta procedura służy do zarządzania niezgodnościami na podstawie istniejącego zlecenia kontroli jakości. To nagranie można uruchomić w kontekście firmy demonstracyjnej USMF i użyć sugerowanych wartości. Zazwyczaj ta procedura jest wykonywana przez pracownika ds. kontroli jakości.  Warunkiem wstępnym jest przejście nagrania zadania „Sprawdzenie jakości towarów”. Aby wykonać zatwierdzenie niezgodności, użytkownik, który uruchomił nagranie zadania, musi mieć przypisaną wartość „Nazwa” na stronie Użytkownicy. Aby korzystać z notatek do dokumentu, użytkownik musi mieć również włączoną funkcję Obsługa dokumentu w opcjach użytkownika. 
+Ta procedura służy do zarządzania niezgodnościami na podstawie istniejącego zlecenia kontroli jakości. To nagranie można uruchomić w kontekście firmy demonstracyjnej USMF i użyć sugerowanych wartości. Zazwyczaj ta procedura jest wykonywana przez pracownika ds. kontroli jakości.  Warunkiem wstępnym jest przejście nagrania zadania „Sprawdzenie jakości towarów”. Aby wykonać zatwierdzenie niezgodności, użytkownik, który uruchomił nagranie zadania, musi mieć przypisaną wartość „Nazwa” na stronie Użytkownicy. Aby korzystać z notatek do dokumentu, użytkownik musi mieć również włączoną funkcję Obsługa dokumentu w opcjach użytkownika.
 
 
 ## <a name="select-a-quality-order"></a>Wybieranie zlecenia kontroli jakości
@@ -78,5 +78,4 @@ Ta procedura służy do zarządzania niezgodnościami na podstawie istniejącego
 3. Kliknij przycisk Tak.
 4. Zamknij stronę.
 5. Zamknij stronę.
-
 

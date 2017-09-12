@@ -1,4 +1,4 @@
---- 
+---
 title: "Inicjowanie poziomów zapasów w magazynie"
 description: "W tej procedurze pokazano, jak ręcznie zaktualizować dostępne zapasy przy użyciu arkusza przesunięć zapasów (można również aktualizować dostępne zapasy przez importowanie transakcji w jednostkach danych)."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ W tej procedurze pokazano, jak ręcznie zaktualizować dostępne zapasy przy uż
 24. Kliknij przycisk OK.
 25. Zamknij stronę.
 26. Zamknij stronę.
-
 

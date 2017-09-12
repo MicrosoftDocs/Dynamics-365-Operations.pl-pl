@@ -1,4 +1,4 @@
---- 
+---
 title: "Zmiana własności zapasów konsygnacyjnych w oparciu o zapotrzebowanie produkcyjne"
 description: "Ta procedura pokazuje, jak zmienić właściciela zapasów konsygnacyjnych z dostawcy na firmę, gdy istnieje zapotrzebowanie na zapasy w produkcji."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -51,5 +51,4 @@ Ta procedura pokazuje, jak zmienić właściciela zapasów konsygnacyjnych z dos
     * Podczas księgowania arkusza zapasy będące własnością dostawcy są zwalniane przy użyciu odwołania „Zmiana własności”. Zapasy są następnie przyjmowane jako dostępne przy użyciu transakcji magazynowej, która jest aktualizowana za pomocą przyjęcia produktów z zamówienia zakupu. Należy zauważyć, że są tworzone tylko transakcje związane z zaksięgowanym arkuszem. Nie są tworzone transakcje dla oczekiwanych zapasów.  
 2. Kliknij przycisk OK.
 3. Zamknij stronę.
-
 

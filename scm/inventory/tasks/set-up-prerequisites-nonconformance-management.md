@@ -1,4 +1,4 @@
---- 
+---
 title: "Konfigurowanie wymagań wstępnych zarządzania"
 description: "Ta procedura umożliwia aktywowanie procesów zarządzania brakiem zgodności."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -101,5 +101,4 @@ Ta procedura umożliwia aktywowanie procesów zarządzania brakiem zgodności. B
 3. W polu Strefa kwarantanny wpisz wartość.
 4. Wypełnij pole Opis.
 5. Zamknij stronę.
-
 

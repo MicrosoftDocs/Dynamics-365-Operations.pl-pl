@@ -1,7 +1,7 @@
 ---
 title: "Rezerwowanie ilości zapasów"
 description: "W tym temacie opisano różne dostępne opcje rezerwowania zapasów."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventModelGroup
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 207264
 ms.assetid: 47537e4f-cdf6-4813-96fd-c945b2dfe9d4
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
@@ -83,7 +83,4 @@ Na stronie **Parametry modułu Zarządzanie zapasami i magazynem** są dwie opcj
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Zasady rezerwacji zapasów na stronie Parametry produkcji
 
 Wartość pola **Rezerwacja** na karcie **Ogólne** na stronie **Parametry produkcji** określa domyślny punkt w procesie produkcji, gdzie powinny być rezerwowane zapasy. Na przykład zapasy mogą być rezerwowane podczas planowania lub rozpoczynania pracy.
-
-
-
 

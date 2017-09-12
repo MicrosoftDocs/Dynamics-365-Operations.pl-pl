@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
@@ -33,7 +33,7 @@ ms.lasthandoff: 07/27/2017
 [!include[retail name](../includes/retail-name.md)]
 
 
-W tym artykule opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych. 
+W tym artykule opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych.
 
 Arkusze magazynowe w programie Microsoft Dynamics 365 for Finance and Operations są używane do księgowania różnych typów transakcji na fizycznych zapasach, np. do księgowania wydań i przyjęć, przesunięć magazynowych, tworzenia list składowych BOM i uzgadniania zapasów fizycznych. Wszystkie arkusze magazynowe są używane w sposób podobny, ale są one podzielone na różne typy.
 
@@ -95,7 +95,4 @@ Tylko jeden użytkownik może mieć w danej chwili dostęp do określonego arkus
 
 ## <a name="posting-journal-lines"></a>Wiersze arkusza księgowania
 Można księgować wiersze arkusza, które można utworzyć w dowolnym momencie, dopóki towar nie zostanie zablokowany z innych transakcji. Wpisane w arkuszu dane pozostają w arkuszu nawet po zamknięciu go bez księgowania wierszy arkusza.
-
-
-
 

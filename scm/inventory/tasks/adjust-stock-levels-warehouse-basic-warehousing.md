@@ -1,4 +1,4 @@
---- 
+---
 title: "Korygowanie poziomów zapasów w magazynie (podstawowe magazynowanie)"
 description: "Ta procedura prowadzi przez proces tworzenia i księgowania arkusza korekt zapasów w celu skorygowania poziomów zapasów produktów w magazynie."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ Ta procedura prowadzi przez proces tworzenia i księgowania arkusza korekt zapas
 4. Kliknij przycisk OK.
 5. Zamknij formularz.
 6. Zamknij stronę.
-
 

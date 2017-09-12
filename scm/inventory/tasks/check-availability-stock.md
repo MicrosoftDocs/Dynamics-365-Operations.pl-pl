@@ -1,4 +1,4 @@
---- 
+---
 title: "Sprawdzanie dostępności zapasów w magazynie"
 description: "Ta procedura pokazuje, jak sprawdzić ilość dostępnych i fizycznie dostępnych zapasów towaru o określonym numerze."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -67,5 +67,4 @@ Ta procedura pokazuje, jak sprawdzić ilość dostępnych i fizycznie dostępnyc
 4. Kliknij opcję Wyświetl wymiary.
 5. Kliknij przycisk OK.
 6. Zamknij stronę.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Definiowanie procesów inwentaryzacji zapasów"
 description: "Ta procedura poprowadzi Cię przez konfigurację podstawowych procesów inwentaryzacji poprzez utworzenie grupy inwentaryzacji i arkusza inwentaryzacji."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -84,5 +84,4 @@ Ta procedura poprowadzi Cię przez konfigurację podstawowych procesów inwentar
 7. Na liście zaznacz grupę inwentaryzacji.
     * W tym miejscu można wybrać określoną grupę inwentaryzacji, która ma być stosowana do towaru w wybranym magazynie. Podczas inwentaryzowania w tym magazynie ta zasada inwentaryzacji zastąpi ogólną zasadę inwentaryzacji towaru.  
 8. Kliknij przycisk Zapisz.
-
 

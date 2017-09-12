@@ -1,4 +1,4 @@
---- 
+---
 title: "Konfigurowanie zleceń kontroli jakości"
 description: "W tej procedurze pokazano sposób włączania procesu zarządzania jakością, gdzie zapasy przychodzące muszą być kontrolowane bezpośrednio po rejestracji przyjęcia."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -142,5 +142,4 @@ W tej procedurze pokazano sposób włączania procesu zarządzania jakością, g
 15. Na liście znajdź i zaznacz odpowiedni rekord.
 16. Kliknij przycisk Zapisz.
 17. Zamknij stronę.
-
 

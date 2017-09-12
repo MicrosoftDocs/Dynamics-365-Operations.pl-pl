@@ -1,7 +1,7 @@
 ---
 title: "Przegląd przyjęć"
 description: "Ten temat zawiera informacje dotyczące funkcji przeglądu przyjęć. Strona Przegląd przyjęć jest częścią tej funkcji i zawiera przegląd wszystkich towarów, których przybycia oczekuje się jako towary przychodzące."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
@@ -37,9 +37,9 @@ Ten temat zawiera informacje dotyczące funkcji przeglądu przyjęć. Strona Prz
 Strona **Przegląd przyjęć** strona zawiera przegląd wszystkich oczekiwanych towarów przychodzących. Pokazuje również przybycia, które można inicjować w oparciu o przegląd. Ten temat koncentruje się na procesie przyjęcia.
 
 ## <a name="business-scenario"></a>Scenariusz biznesowy
-Rozważmy następujący scenariusz w procesach przychodzących. 
+Rozważmy następujący scenariusz w procesach przychodzących.
 
-[![Scenariusz biznesowy](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png) 
+[![Scenariusz biznesowy](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 Zbyszek, pracownik przyjmujący, chce wiedzieć, jakie towary mają zostać dzisiaj przyjęte. Na stronie **Przegląd przyjęć** Zbyszek może uzyskać obraz bieżących zadań oraz oszacowanie ilości, objętości i masy, obejrzeć różne typy zamówień itd. Później do jednego z doków rozładunkowych dociera dostawa i Zbyszek otrzymuje spis zawartości dostawy. Na stronie **Przegląd przyjęć** Zbyszek wykonać następujące zadania:
 
@@ -69,7 +69,7 @@ W tym przykładzie pole **Nazwa profilu przeglądu przyjęć** na skróconej kar
 
 Aby automatycznie tworzyć arkusze przyjęć ze strony **Przegląd przyjęć**, należy zdefiniować odpowiednie informacje w grupie pól **Arkusz** na skróconej karcie **Opcje przyjęcia**.
 
--   Aby utworzyć arkusz, należy określić nazwę arkusza. 
+-   Aby utworzyć arkusz, należy określić nazwę arkusza.
 
 [![Określanie nazwy arkusza](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
@@ -123,7 +123,4 @@ Gdy wszystkie towary są zarejestrowane, kierownik magazynu lub kierownik ds. za
 
 ## <a name="summary"></a>Sumarycznie
 Strona **Przegląd przyjęć** może pomóc kierownikowi magazynu i pracownikom magazynu uzyskać obraz oczekiwanej pracy, którą należy wykonać w ramach procesu przychodzącego. Strona może również służyć do rozpoczęcia procesu przybycia towaru, ponieważ można wtedy śledzić towary od chwili ich pierwszego wejścia do magazynu.
-
-
-
 

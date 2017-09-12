@@ -1,4 +1,4 @@
---- 
+---
 title: "Tworzenie nowego układu magazynu"
 description: "W tej procedurze pokazano sposób konfigurowania informacji o lokalizacjach w magazynie."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -49,7 +49,7 @@ W tej procedurze pokazano sposób konfigurowania informacji o lokalizacjach w ma
 7. Przełącz rozwinięcie sekcji Nazwy lokalizacji.
     * Opcje w tej sekcji definiują domyślny format nazw lokalizacji. W naszym przykładzie uwzględnimy numery alei, regału i półki.  
 8. W opcji Uwzględnij korytarz zaznacz wartość Tak.
-9. W opcji Uwzględnij regał zaznacz wartość Tak. 
+9. W opcji Uwzględnij regał zaznacz wartość Tak.
 10. W polu Format dla regału wpisz wartość.
     * Na przykład: -##  
 11. W opcji Uwzględnij półkę zaznacz wartość Tak.
@@ -74,5 +74,4 @@ W tej procedurze pokazano sposób konfigurowania informacji o lokalizacjach w ma
 14. Kliknij przycisk Zakończ.
 15. Zamknij stronę.
 16. Odśwież stronę.
-
 

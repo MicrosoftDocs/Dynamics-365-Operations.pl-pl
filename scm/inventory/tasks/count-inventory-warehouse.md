@@ -1,4 +1,4 @@
---- 
+---
 title: "Liczenie zapasów w magazynie"
 description: "Ta procedura prowadzi przez proces tworzenia i księgowania arkusza inwentaryzacji zapasów w celu policzenia określonego towaru w lokalizacji w magazynie."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -68,5 +68,4 @@ Ta procedura prowadzi przez proces tworzenia i księgowania arkusza inwentaryzac
 1. Kliknij opcję Zapasy.
 2. Kliknij opcję Transakcje.
     * Tutaj można zobaczyć wszystkie powiązane transakcje, które zostaną utworzone podczas księgowania arkusza inwentaryzacji zapasów.   
-
 

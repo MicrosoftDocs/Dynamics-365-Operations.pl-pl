@@ -1,4 +1,4 @@
---- 
+---
 title: "Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych"
 description: "Ta procedura pokazuje, jak utworzyć zamówienie uzupełnienia zapasów konsygnacyjnych, gdzie można śledzić oczekiwaną dostawę od dostawcy do swoich zapasów konsygnacyjnych."
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -60,7 +60,7 @@ Ta procedura pokazuje, jak utworzyć zamówienie uzupełnienia zapasów konsygna
 ## <a name="receive-items"></a>Odbierz pozycje
 1. Kliknij opcję Dokument przyjęcia produktów.
 2. W polu Zewnętrzny dokument przyjęcia produktów wpisz wartość.
-3. W polu Ilość wprowadź liczbę, która jest niższa niż liczba wyświetlana w tym miejscu. 
+3. W polu Ilość wprowadź liczbę, która jest niższa niż liczba wyświetlana w tym miejscu.
 4. Kliknij przycisk OK.
 
 ## <a name="check-the-on-hand-inventory"></a>Sprawdzanie dostępnych zapasów
@@ -70,5 +70,4 @@ Ta procedura pokazuje, jak utworzyć zamówienie uzupełnienia zapasów konsygna
     * Towary, które zostały przyjęte jako zapasy konsygnacyjne będące własnością dostawcy, są dostępne. Pozostała ilość w zamówieniu uzupełnienia zapasów konsygnacyjnych jest wyświetlana w polu Zamówione w sumie.  
 4. Zamknij stronę.
 5. Kliknij przycisk Zamknij.
-
 

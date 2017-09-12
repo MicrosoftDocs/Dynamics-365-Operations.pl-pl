@@ -1,7 +1,7 @@
 ---
 title: "Procesy zarządzania jakością"
 description: "Ten artykuł zawiera informacje o procesie zarządzania jakością produktów niespełniającymi norm. Opisano w nim, jak korzystać z funkcji kontroli jakości, jak definiować i obsługiwać braki zgodności oraz jak obsługiwać korekty."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConformanceTable, InventQualityOrderLineResults, InventQualityOrderTable, InventTestCorrection, InventTestDiagnosticType, InventTestInstrument, InventTestReportSetup, InventTestTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 11574
 ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
@@ -56,7 +56,7 @@ Testowanie produktu jest zazwyczaj nazywane kontrolą jakości i wymaga zastosow
 -   Rejestrowanie wyników testów w ramach zlecenia kontroli jakości, sprawdzanie poprawności wyników testów na podstawie akceptowanego poziomu jakości i drukowanie certyfikatu analizy zawierającego wyniki testów.
 
 ## <a name="nonconformance"></a>Niezgodność
-Niezgodność dotyczy towaru, odnośnie do którego wykryto problem związany z jakością. W procesie niezgodności można utworzyć zlecenie kontroli niezgodności opisujące ilość materiału niespełniającego norm, źródło problemu, typu problemu i informacje wyjaśniające. Można definiować klasyfikację typów problemów w celu ułatwienia analizy materiału niespełniającego norm. Można również wydrukować znacznik niezgodności i raport o niezgodności do dyspozycji materiału niespełniającego norm. Na przykład, znacznik i raport może wskazywać warunek **nienadający się do użytku** lub **ograniczone użycie**. 
+Niezgodność dotyczy towaru, odnośnie do którego wykryto problem związany z jakością. W procesie niezgodności można utworzyć zlecenie kontroli niezgodności opisujące ilość materiału niespełniającego norm, źródło problemu, typu problemu i informacje wyjaśniające. Można definiować klasyfikację typów problemów w celu ułatwienia analizy materiału niespełniającego norm. Można również wydrukować znacznik niezgodności i raport o niezgodności do dyspozycji materiału niespełniającego norm. Na przykład, znacznik i raport może wskazywać warunek **nienadający się do użytku** lub **ograniczone użycie**.
 
 W poniższej tabeli wymieniono sześć domyślnych typów niezgodności i opisano informacje, które muszą być rejestrowane dla każdego typu.
 
@@ -69,23 +69,23 @@ W poniższej tabeli wymieniono sześć domyślnych typów niezgodności i opisan
 | Wewnętrzne              | Numer zlecenia kontroli jakości lub numer transakcji zlecenia kontroli jakości. Niezgodność może dotyczyć na przykład testów przeprowadzanych w ramach zlecenia kontroli jakości lub obaw pracownika odnośnie do jakości produktu.     |
 | Wytwarzanie produktu towarzyszącego | Niezgodność produktu towarzyszącego zleceniu produkcyjnemu, związana z zadaniem wsadowym zleceń produkcyjnych.                                                                                                                                                    |
 
-Niezgodności są skojarzone z typem problemu. Typy problemów są definiowane na stronie **typów problemów**, gdzie można określić typy problemów, które mogą być skojarzone z poszczególnymi typami niezgodności. Na przykład typy problemów związanych z niezgodnością **Zlecenia usługi** mogą odzwierciedlać klasyfikację skarg odbiorców, a typy problemów związanych z niezgodnością typu **Wewnętrzna** — klasyfikację kodów wad. 
+Niezgodności są skojarzone z typem problemu. Typy problemów są definiowane na stronie **typów problemów**, gdzie można określić typy problemów, które mogą być skojarzone z poszczególnymi typami niezgodności. Na przykład typy problemów związanych z niezgodnością **Zlecenia usługi** mogą odzwierciedlać klasyfikację skarg odbiorców, a typy problemów związanych z niezgodnością typu **Wewnętrzna** — klasyfikację kodów wad.
 
-Na etapie tworzenia nowej niezgodności można wybrać jej typ oraz typ problemu. Początkowy stan zatwierdzenia ma wartość **Nowe**, co oznacza żądanie akcji. Kolejnym krokiem jest zmiana stanu zatwierdzenia na **Zatwierdzono** lub **Odrzucono**, co oznacza odpowiednio zamiar podjęcia działania dotyczącego niezgodności lub brak takiego zamiaru. Możliwe jest również zamknięcie niezgodności (za pomocą oddzielnego pola wyboru), co oznacza zakończenie prac nad nią, a także ponowne jej otwarcie — sygnalizujące, że wymagana jest dalsza analiza. 
+Na etapie tworzenia nowej niezgodności można wybrać jej typ oraz typ problemu. Początkowy stan zatwierdzenia ma wartość **Nowe**, co oznacza żądanie akcji. Kolejnym krokiem jest zmiana stanu zatwierdzenia na **Zatwierdzono** lub **Odrzucono**, co oznacza odpowiednio zamiar podjęcia działania dotyczącego niezgodności lub brak takiego zamiaru. Możliwe jest również zamknięcie niezgodności (za pomocą oddzielnego pola wyboru), co oznacza zakończenie prac nad nią, a także ponowne jej otwarcie — sygnalizujące, że wymagana jest dalsza analiza.
 
-Można wprowadzić komentarze dotyczące niezgodności przez dołączanie dokumentu. Warto określić niepowtarzalny typ dokumentu dla niezgodności na stronie **Typ dokumentu**. Następnie można użyć strony **Konfiguracja raportu**, aby określić, czy komentarze dla tego typu dokumentu mają być drukowane w raporcie niezgodności, a także znacznik niezgodności. Wydrukowanie raportu dotyczącego zgodności i znacznika niezgodności ułatwia proces dyspozycji materiałów. Raporty i znaczniki można generować wybiórczo na podstawie powiązanych z daną niezgodnością kryteriów wyboru. Te kryteria obejmują numer niezgodności, towar, odbiorcę, dostawcę i stan. 
+Można wprowadzić komentarze dotyczące niezgodności przez dołączanie dokumentu. Warto określić niepowtarzalny typ dokumentu dla niezgodności na stronie **Typ dokumentu**. Następnie można użyć strony **Konfiguracja raportu**, aby określić, czy komentarze dla tego typu dokumentu mają być drukowane w raporcie niezgodności, a także znacznik niezgodności. Wydrukowanie raportu dotyczącego zgodności i znacznika niezgodności ułatwia proces dyspozycji materiałów. Raporty i znaczniki można generować wybiórczo na podstawie powiązanych z daną niezgodnością kryteriów wyboru. Te kryteria obejmują numer niezgodności, towar, odbiorcę, dostawcę i stan.
 
 Raport dotyczący niezgodności zawiera numer niezgodności, towar i typ problemu. W zależności od ustawienia zasad raportu raport może być również pokazywać powiązane notatki dotyczące niezgodności. Znacznik niezgodności pokazuje podobne informacje i zawiera dane o strefie i typie kwarantanny (na przykład **Ograniczone użycie** albo **Nienadający się do użytku**), które pomagają w rozdysponowaniu wadliwych materiałów.
 
 ## <a name="approved-nonconformance"></a>Zatwierdzanie braku zgodności
-Opcjonalnie można zdefiniować jedną lub więcej powiązanych operacji dla zatwierdzonej niezgodności. Operacja powiązana opisuje pracę, która powinna być wykonywana, i zawiera listę operacji kontroli jakości, które zostały zdefiniowane, a także tekst opisujący przyczynę pracy. Po zdefiniowaniu operacji można opcjonalnie zdefiniować towary, opłaty dodatkowe oraz godziny w grafiku wymagane do wykonania operacji. Wyświetlane są obliczone koszty operacji pokrewnej oraz łączne obliczone koszty braku zgodności. Obliczone koszty i związane z tym szczegóły (o towarach, godzinach pracy i opłatach dodatkowych) pokazują informacje dodatkowe, i są używane tylko w przypadku funkcji zarządzania jakością. 
+Opcjonalnie można zdefiniować jedną lub więcej powiązanych operacji dla zatwierdzonej niezgodności. Operacja powiązana opisuje pracę, która powinna być wykonywana, i zawiera listę operacji kontroli jakości, które zostały zdefiniowane, a także tekst opisujący przyczynę pracy. Po zdefiniowaniu operacji można opcjonalnie zdefiniować towary, opłaty dodatkowe oraz godziny w grafiku wymagane do wykonania operacji. Wyświetlane są obliczone koszty operacji pokrewnej oraz łączne obliczone koszty braku zgodności. Obliczone koszty i związane z tym szczegóły (o towarach, godzinach pracy i opłatach dodatkowych) pokazują informacje dodatkowe, i są używane tylko w przypadku funkcji zarządzania jakością.
 
-Opcjonalnie można utworzyć zlecenia kontroli jakości z braku zgodności poprzez utworzenie zapytania dla zlecenia kontroli jakości, a następnie utworzenie nowego zlecenia kontroli jakości. Zlecenie kontroli jakości może na przykład wskazywać potrzebę testowania (lub ponownego przetestowania) wadliwych materiałów. Nowo utworzone zlecenie kontroli jakości zawiera łącze do źródłowego braku zgodności. 
+Opcjonalnie można utworzyć zlecenia kontroli jakości z braku zgodności poprzez utworzenie zapytania dla zlecenia kontroli jakości, a następnie utworzenie nowego zlecenia kontroli jakości. Zlecenie kontroli jakości może na przykład wskazywać potrzebę testowania (lub ponownego przetestowania) wadliwych materiałów. Nowo utworzone zlecenie kontroli jakości zawiera łącze do źródłowego braku zgodności.
 
 Opcjonalnie można połączyć wybraną niezgodność z inną i utworzyć nową niezgodność na podstawie istniejącej. Na przykład łącze może odzwierciedlać powiązania między problemami dotyczącymi jakości.
 
 ## <a name="correction-handling"></a>Obsługa korekty
-Strona **Korekty** pozwala utworzyć listę niezgodności, które muszą zostać poprawione. Każdy element korekty jest skojarzony z typem diagnostyki, który spowodował wykrycie problemu. Strona **Korekty** zawiera również informacje, kto ma podjąć działania naprawcze i kiedy. Można opisać szczegóły problemu oraz wymagane działania naprawcze poprzez dołączenie dokumentu do korekty. Po skierowaniu lub korekcie niezgodności można ją zamknąć, wybierając opcję **zakończone**. Można także wskazać, że rozwiązanie jest rozwiązaniem krótkoterminowym. 
+Strona **Korekty** pozwala utworzyć listę niezgodności, które muszą zostać poprawione. Każdy element korekty jest skojarzony z typem diagnostyki, który spowodował wykrycie problemu. Strona **Korekty** zawiera również informacje, kto ma podjąć działania naprawcze i kiedy. Można opisać szczegóły problemu oraz wymagane działania naprawcze poprzez dołączenie dokumentu do korekty. Po skierowaniu lub korekcie niezgodności można ją zamknąć, wybierając opcję **zakończone**. Można także wskazać, że rozwiązanie jest rozwiązaniem krótkoterminowym.
 
 Warto określić niepowtarzalny typ dokumentu dla korekty na stronie **Typ dokumentu**. Następnie można użyć strony **Konfiguracja raportu**, aby określić, czy komentarze dla tego typu dokumentu mają być drukowane w raporcie korekty. Wydrukowany raport korekty zawiera informacje o braku zgodności i pokrewne notatki. Raport zawiera także informacje dotyczące korekty, takie jak typ diagnostyki i notatki dotyczące korekty.
 
@@ -103,7 +103,4 @@ Warto określić niepowtarzalny typ dokumentu dla korekty na stronie **Typ dokum
 [Konfigurowanie zleceń kontroli jakości (przewodnik po zadaniu)](/dynamics365/unified-operations/supply-chain/inventory/tasks/set-up-quality-orders)
 
 [Sprawdzenie jakości towarów (przewodnik po zadaniu)](/dynamics365/unified-operations/supply-chain/inventory/tasks/inspect-quality-goods)
-
-
-
 

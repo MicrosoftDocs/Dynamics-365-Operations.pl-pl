@@ -1,4 +1,4 @@
---- 
+---
 title: "Tworzenie i obsługa blokowania zapasów"
 description: "W tej procedurze pokazano, jak za pomocą funkcji blokowania zapasów zapobiec rezerwowaniu fizycznie dostępnych zapasów przez inne dokumenty źródłowe dotyczące towarów wychodzących."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -34,7 +34,7 @@ W tej procedurze pokazano, jak za pomocą funkcji blokowania zapasów zapobiec r
 1. Kliknij kolejno opcje Zarządzanie zapasami > Zadania okresowe > Blokowanie zapasów.
 2. Kliknij przycisk Nowy.
 3. W polu Numer towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-4. Na liście zaznacz towar, który chcesz wybrać. 
+4. Na liście zaznacz towar, który chcesz wybrać.
     * Wybierz numer towaru fizycznie dostępnych zapasów, które chcesz zablokować. Jeśli używasz firmy demonstracyjnej USMF, można wybrać towar M9201.  
 5. Wprowadź liczbę w polu Ilość.
     * Jeśli używasz towaru M9201, wybierz mniej niż 200.  
@@ -55,5 +55,4 @@ W tej procedurze pokazano, jak za pomocą funkcji blokowania zapasów zapobiec r
 1. Kliknij przycisk Usuń.
 2. Kliknij przycisk Tak.
 3. Zamknij stronę.
-
 

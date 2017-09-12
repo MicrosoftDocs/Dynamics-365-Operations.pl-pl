@@ -1,4 +1,4 @@
---- 
+---
 title: "Poprawianie informacji o śledzeniu zapasów"
 description: "Ta procedura poprowadzi Cię przez proces tworzenia i księgowania arkusza przeniesienia zapasów w celu skorygowania informacji o śledzeniu zapasów."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -62,5 +62,4 @@ Ta procedura poprowadzi Cię przez proces tworzenia i księgowania arkusza przen
 1. Kliknij opcję Zapasy.
 2. Kliknij opcję Transakcje.
     * W tym miejscu widać transakcje, które zostały utworzone podczas księgowania arkusza.   
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Sprawdzanie jakości towarów"
 description: "W tej procedurze pokazano sposób realizacji zlecenia kontroli jakości."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -55,5 +55,4 @@ W tej procedurze pokazano sposób realizacji zlecenia kontroli jakości. Zadania
 4. Kliknij opcję Wybierz.
 5. Kliknij przycisk OK.
 6. Zamknij stronę.
-
 

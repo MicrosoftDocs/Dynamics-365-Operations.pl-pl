@@ -1,4 +1,4 @@
---- 
+---
 title: "Śledzenie elementu lub surowca"
 description: "Ta procedura przedstawia wykorzystanie funkcji śledzenia towarów w celu identyfikacji miejsc, gdzie towary lub surowce zostały użyte albo są używane."
 author: pjacobse
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -54,5 +54,4 @@ Ta procedura przedstawia wykorzystanie funkcji śledzenia towarów w celu identy
 8. W okienku akcji kliknij pozycję Śledzenie.
 9. Kliknij opcję Zamówienia sprzedaży, towary wysłane.
 10. Zamknij stronę.
-
 
