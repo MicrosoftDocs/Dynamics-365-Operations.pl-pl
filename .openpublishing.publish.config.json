@@ -1,6 +1,5 @@
 {
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
+  "need_generate_pdf": true,
   "docsets_to_publish": [
     {
       "docset_name": "d365Ops-Core",
@@ -15,7 +14,8 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     },
     {
       "docset_name": "d365Ops-DevITPro",
@@ -30,7 +30,8 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     },
     {
       "docset_name": "d365Ops-Talent",
@@ -45,7 +46,8 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     },
     {
       "docset_name": "d365Ops-Retail",
@@ -60,7 +62,8 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     },
     {
       "docset_name": "d365Ops-SCM",
@@ -75,7 +78,8 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     },
     {
       "docset_name": "d365Ops-Financials",
@@ -90,7 +94,8 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     }
   ],
   "notification_subscribers": [],
@@ -108,6 +113,11 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master"
+    },
+    {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/MicrosoftDocs/Dynamics-365-Operations",
       "branch": "live",
@@ -117,5 +127,12 @@
       }
     }
   ],
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": false,
+  "need_generate_intellisense": false,
+  "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
+  "need_generate_pdf": false
 }
