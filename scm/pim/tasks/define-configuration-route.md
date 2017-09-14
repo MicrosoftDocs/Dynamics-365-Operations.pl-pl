@@ -1,7 +1,7 @@
 --- 
 title: Definiowanie marszrut konfiguracji
 description: "Ta procedura skupia się na definiowaniu marszruty konfiguracji, która decyduje o kolejności, w jakiej grupy konfiguracji będą prezentowane."
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
