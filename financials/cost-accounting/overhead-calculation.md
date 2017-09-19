@@ -1,7 +1,7 @@
 ---
 title: Obliczenie narzutu
 description: "W tym temacie opisano typowe procesy służące obliczaniu i podzielaniu kosztów ogólnych."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
@@ -20,11 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 1eb5560ba795ab6df61b5af889049810dd00d79e
+ms.sourcegitcommit: 9e13fc9fa7e51a1299ca8698f581de979b680a7b
+ms.openlocfilehash: a8c867ba49b95af2816fe8294059307e974c0a81
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/29/2017
-
+ms.lasthandoff: 09/18/2017
 
 ---
 
