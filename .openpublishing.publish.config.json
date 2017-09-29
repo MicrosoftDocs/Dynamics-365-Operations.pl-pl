@@ -2,17 +2,23 @@
   "need_generate_pdf": true,
   "docsets_to_publish": [
     {
+      "docset_name": "d365F-O",
+      "build_source_folder": "articles",
+      "build_output_subfolder": "d365F-O",
+      "locale": "pl-pl",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "d365Ops-Core",
       "build_source_folder": "core",
       "build_output_subfolder": "d365Ops-Core",
       "locale": "pl-pl",
       "monikers": [],
       "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0
@@ -24,59 +30,6 @@
       "locale": "pl-pl",
       "monikers": [],
       "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "d365Ops-Talent",
-      "build_source_folder": "hr",
-      "build_output_subfolder": "d365Ops-Talent",
-      "locale": "pl-pl",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "d365Ops-Retail",
-      "build_source_folder": "retail",
-      "build_output_subfolder": "d365Ops-Retail",
-      "locale": "pl-pl",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "d365Ops-SCM",
-      "build_source_folder": "scm",
-      "build_output_subfolder": "d365Ops-SCM",
-      "locale": "pl-pl",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0
@@ -88,11 +41,39 @@
       "locale": "pl-pl",
       "monikers": [],
       "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "d365Ops-Retail",
+      "build_source_folder": "retail",
+      "build_output_subfolder": "d365Ops-Retail",
+      "locale": "pl-pl",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "d365Ops-SCM",
+      "build_source_folder": "scm",
+      "build_output_subfolder": "d365Ops-SCM",
+      "locale": "pl-pl",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "d365Ops-Talent",
+      "build_source_folder": "hr",
+      "build_output_subfolder": "d365Ops-Talent",
+      "locale": "pl-pl",
+      "monikers": [],
+      "open_to_public_contributors": false,
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0
@@ -127,7 +108,13 @@
       }
     }
   ],
-  "need_generate_pdf_url_template": false,
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf"
+    ]
+  },
+  "need_generate_pdf_url_template": true,
   "need_generate_intellisense": false,
   "Targets": {
     "Pdf": {
