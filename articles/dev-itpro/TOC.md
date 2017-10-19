@@ -451,6 +451,7 @@
 ### [Dzielenie modeli](dev-tools/model-split.md)
 ### [Używanie metod obiektów delegowanych do rozpoznawania zależności między modelami](migration-upgrade/delegates-migration.md)
 
+
 ## Uaktualnianie do ostatniej aktualizacji
 ### [Proces migracji do najnowszej aktualizacji](migration-upgrade/upgrade-latest-update.md)
 ### [Zasady świadczenia pomocy technicznej](migration-upgrade/versions-update-policy.md)
@@ -511,6 +512,8 @@
 ## [Przekazywanie niestandardowych procesów biznesowych](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Monitorowanie i diagnostyka ](lifecycle-services/monitoring-diagnostics.md)
 ## [Biblioteka elementów zawartości](lifecycle-services/asset-library.md)
+## [Omówienie usługi tłumaczenia w usłudze Microsoft Dynamics 365](lifecycle-services/translation-service-overview.md)
+### [Przewodnik użytkownika usługi tłumaczenia w usłudze Microsoft Dynamics 365](lifecycle-services/use-translation-service.md)
 
 ## Funkcje usługi Dynamics AX 2012 Lifecycle Services
 ### Wdrażanie
