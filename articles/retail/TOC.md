@@ -1,5 +1,8 @@
 # [Zapraszamy do korzystania z rozwiązania Dynamics 365 for Retail](index.md)
 
+# Rozpoczynanie pracy
+## [Nowości i zmiany](get-started/whats-new.md)
+
 # Płatności
 ## [Metody płatności](payment-methods.md)
 ## [Konfiguracja, autoryzacja i przechwytywanie karty kredytowej](../financials/accounts-receivable/credit-card-authorizations.md)
@@ -173,8 +176,9 @@
 ### [Konfigurowanie i instalowanie aplikacji Retail Modern POS](retail-modern-pos-device-activation.md)
 #### [Zarządzanie kontami i urządzeniami handlu detalicznego z centrali](set-up-activation-accounts-validate-devices-hq.md)
 #### [Aktywacja urządzenia w aplikacji Retail POS](dev-itpro/retail-device-activation.md)
-#### [Zabezpieczanie aplikacji Cloud POS w sklepie detalicznym](dev-itpro/secure-retail-cloud-pos.md)
+#### [Zabezpieczanie aplikacji Cloud POS w rozwiązaniu Retail](dev-itpro/secure-retail-cloud-pos.md)
 ### [Konfigurowanie i instalowanie modułu Retail Hardware Station](retail-hardware-station-configuration-installation.md)
+### [Masowe wdrażanie składników samoobsługi rozwiązania Retail](dev-itpro/retail-mass-deployment.md)
 ### [Zdarzenia składników rozwiązania Retail używane na potrzeby diagnostyki i rozwiązywania problemów](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
 ### [Stosowanie wdrażalnego pakietu](../dev-itpro/deployment/apply-deployable-package-system.md)
 
