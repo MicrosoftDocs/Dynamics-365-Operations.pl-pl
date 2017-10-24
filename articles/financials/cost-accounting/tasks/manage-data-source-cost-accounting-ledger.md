@@ -16,35 +16,35 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 5735cabd5a1eab23fbe2b92cf1395110cb33a93c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a><span data-ttu-id="0cc98-103">Zarządzanie źródłem danych księgi rachunku kosztów</span><span class="sxs-lookup"><span data-stu-id="0cc98-103">Manage a data source for the cost accounting ledger</span></span>
+# <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a><span data-ttu-id="7d5b1-103">Zarządzanie źródłem danych księgi rachunku kosztów</span><span class="sxs-lookup"><span data-stu-id="7d5b1-103">Manage a data source for the cost accounting ledger</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="0cc98-104">Ta procedura służy do zarządzania źródłem danych księgi głównej dla księgi rachunku kosztów.</span><span class="sxs-lookup"><span data-stu-id="0cc98-104">Use this procedure to manage the general ledger data source for a cost accounting ledger.</span></span> <span data-ttu-id="0cc98-105">Przed wykonaniem tego zadania koniecznie odtwórz przewodniki po zadaniach „Tworzenie księgi rachunku kosztów” i „Definiowanie jednostek kontroli kosztów”.</span><span class="sxs-lookup"><span data-stu-id="0cc98-105">Before you complete this task, make sure that you play the "Create a cost accounting ledger" and "Define cost control units" task guides.</span></span> <span data-ttu-id="0cc98-106">Nagranie wykorzystuje dane firmy demonstracyjnej USP2.</span><span class="sxs-lookup"><span data-stu-id="0cc98-106">This recording uses the USP2 demo data company.</span></span>
+<span data-ttu-id="7d5b1-104">Ta procedura służy do zarządzania źródłem danych księgi głównej dla księgi rachunku kosztów.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-104">Use this procedure to manage the general ledger data source for a cost accounting ledger.</span></span> <span data-ttu-id="7d5b1-105">Przed wykonaniem tego zadania koniecznie odtwórz przewodniki po zadaniach „Tworzenie księgi rachunku kosztów” i „Definiowanie jednostek kontroli kosztów”.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-105">Before you complete this task, make sure that you play the "Create a cost accounting ledger" and "Define cost control units" task guides.</span></span> <span data-ttu-id="7d5b1-106">Nagranie wykorzystuje dane firmy demonstracyjnej USP2.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-106">This recording uses the USP2 demo data company.</span></span>
 
-1. <span data-ttu-id="0cc98-107">Wybierz kolejno opcje Rachunek kosztów > Ustawienia księgi > Księgi rachunku kosztów.</span><span class="sxs-lookup"><span data-stu-id="0cc98-107">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
-2. <span data-ttu-id="0cc98-108">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="0cc98-108">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="0cc98-109">Kliknij opcję Wersje rzeczywiste.</span><span class="sxs-lookup"><span data-stu-id="0cc98-109">Click Actual versions.</span></span>
-4. <span data-ttu-id="0cc98-110">W okienku akcji kliknij pozycję Zarządzaj.</span><span class="sxs-lookup"><span data-stu-id="0cc98-110">On the Action Pane, click Manage.</span></span>
-5. <span data-ttu-id="0cc98-111">Kliknij opcję Księga główna.</span><span class="sxs-lookup"><span data-stu-id="0cc98-111">Click General ledger.</span></span>
-6. <span data-ttu-id="0cc98-112">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0cc98-112">Click New.</span></span>
-7. <span data-ttu-id="0cc98-113">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="0cc98-113">In the Name field, type a value.</span></span>
-8. <span data-ttu-id="0cc98-114">W polu Dostawca danych wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0cc98-114">In the Data provider field, enter or select a value.</span></span>
-    * <span data-ttu-id="0cc98-115">W tym przykładzie wybierz opcję Dynamics 365 for Finance and Operations — zapisy księgi głównej.</span><span class="sxs-lookup"><span data-stu-id="0cc98-115">For this example, select Dynamics 365 for Finance and Operations - General ledger entries.</span></span>  
-9. <span data-ttu-id="0cc98-116">W polu Wymiar składnika kosztu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0cc98-116">In the Cost element dimension field, enter or select a value.</span></span>
-    * <span data-ttu-id="0cc98-117">W tym przykładzie wybierz opcję Składniki kosztów.</span><span class="sxs-lookup"><span data-stu-id="0cc98-117">For this example, select Cost elements.</span></span>  
-10. <span data-ttu-id="0cc98-118">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="0cc98-118">Click Save.</span></span>
-11. <span data-ttu-id="0cc98-119">Kliknij opcję Konfiguruj dostawcę danych.</span><span class="sxs-lookup"><span data-stu-id="0cc98-119">Click Configure data provider.</span></span>
-12. <span data-ttu-id="0cc98-120">W polu Firma wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="0cc98-120">In the Legal entity field, enter or select a value.</span></span>
-    * <span data-ttu-id="0cc98-121">W tym przykładzie wybierz USP2.</span><span class="sxs-lookup"><span data-stu-id="0cc98-121">For this example, select USP2.</span></span>  
-13. <span data-ttu-id="0cc98-122">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="0cc98-122">Click New.</span></span>
-14. <span data-ttu-id="0cc98-123">W polu Warstwa księgowania zaznacz opcję Bieżąca.</span><span class="sxs-lookup"><span data-stu-id="0cc98-123">In the Posting layer field, select Current.</span></span>
-15. <span data-ttu-id="0cc98-124">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="0cc98-124">Click OK.</span></span>
+1. <span data-ttu-id="7d5b1-107">Wybierz kolejno opcje Rachunek kosztów > Ustawienia księgi > Księgi rachunku kosztów.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-107">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="7d5b1-108">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="7d5b1-109">Kliknij opcję Wersje rzeczywiste.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-109">Click Actual versions.</span></span>
+4. <span data-ttu-id="7d5b1-110">W okienku akcji kliknij pozycję Zarządzaj.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-110">On the Action Pane, click Manage.</span></span>
+5. <span data-ttu-id="7d5b1-111">Kliknij opcję Księga główna.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-111">Click General ledger.</span></span>
+6. <span data-ttu-id="7d5b1-112">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-112">Click New.</span></span>
+7. <span data-ttu-id="7d5b1-113">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-113">In the Name field, type a value.</span></span>
+8. <span data-ttu-id="7d5b1-114">W polu Dostawca danych wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-114">In the Data provider field, enter or select a value.</span></span>
+    * <span data-ttu-id="7d5b1-115">W tym przykładzie wybierz opcję Dynamics 365 for Finance and Operations — zapisy księgi głównej.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-115">For this example, select Dynamics 365 for Finance and Operations - General ledger entries.</span></span>  
+9. <span data-ttu-id="7d5b1-116">W polu Wymiar składnika kosztu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-116">In the Cost element dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="7d5b1-117">W tym przykładzie wybierz opcję Składniki kosztów.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-117">For this example, select Cost elements.</span></span>  
+10. <span data-ttu-id="7d5b1-118">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-118">Click Save.</span></span>
+11. <span data-ttu-id="7d5b1-119">Kliknij opcję Konfiguruj dostawcę danych.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-119">Click Configure data provider.</span></span>
+12. <span data-ttu-id="7d5b1-120">W polu Firma wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-120">In the Legal entity field, enter or select a value.</span></span>
+    * <span data-ttu-id="7d5b1-121">W tym przykładzie wybierz USP2.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-121">For this example, select USP2.</span></span>  
+13. <span data-ttu-id="7d5b1-122">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-122">Click New.</span></span>
+14. <span data-ttu-id="7d5b1-123">W polu Warstwa księgowania zaznacz opcję Bieżąca.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-123">In the Posting layer field, select Current.</span></span>
+15. <span data-ttu-id="7d5b1-124">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="7d5b1-124">Click OK.</span></span>
 
 

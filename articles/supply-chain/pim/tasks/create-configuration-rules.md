@@ -16,42 +16,42 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6dd2aa1ebc713287120106a9d1ec7dc15c24def9
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 71f429d3aba1b5c51b35b0d08337f69094d0b135
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="create-configuration-rules"></a><span data-ttu-id="ca83f-103">Tworzenie reguł konfiguracji</span><span class="sxs-lookup"><span data-stu-id="ca83f-103">Create configuration rules</span></span>
+# <a name="create-configuration-rules"></a><span data-ttu-id="555b8-103">Tworzenie reguł konfiguracji</span><span class="sxs-lookup"><span data-stu-id="555b8-103">Create configuration rules</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="ca83f-104">W tej procedurze zostaną utworzone reguły konfiguracji, które mogą być używane w konfiguracjach opartych na wymiarach do wymuszania lub blokowania niektórych kombinacji wierszy BOM.</span><span class="sxs-lookup"><span data-stu-id="ca83f-104">This procedure creates configuration rules that can be used for dimension-based configuration to enforce or prevent certain combinations of BOM lines.</span></span> <span data-ttu-id="ca83f-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="ca83f-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="ca83f-106">Jest to siódma z ośmiu procedur opisujących sposób tworzenia kombinacji dla konfiguracji opartej na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="ca83f-106">This is the seventh procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
+<span data-ttu-id="555b8-104">W tej procedurze zostaną utworzone reguły konfiguracji, które mogą być używane w konfiguracjach opartych na wymiarach do wymuszania lub blokowania niektórych kombinacji wierszy BOM.</span><span class="sxs-lookup"><span data-stu-id="555b8-104">This procedure creates configuration rules that can be used for dimension-based configuration to enforce or prevent certain combinations of BOM lines.</span></span> <span data-ttu-id="555b8-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="555b8-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="555b8-106">Jest to siódma z ośmiu procedur opisujących sposób tworzenia kombinacji dla konfiguracji opartej na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="555b8-106">This is the seventh procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
 
-1. <span data-ttu-id="ca83f-107">Wybierz kolejno opcje Zarządzanie informacjami o produktach > Listy składowe (BOM) i formuły > BOM.</span><span class="sxs-lookup"><span data-stu-id="ca83f-107">Go to Product information management > Bills of materials and formulas > Bills of materials.</span></span>
-2. <span data-ttu-id="ca83f-108">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="ca83f-108">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="ca83f-109">Znajdź i zaznacz listę składową konfiguracji opartej na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="ca83f-109">Find and select the BOM for the dimension-based configuration.</span></span>  
-3. <span data-ttu-id="ca83f-110">W okienku akcji kliknij pozycję Opcje.</span><span class="sxs-lookup"><span data-stu-id="ca83f-110">On the Action Pane, click Options.</span></span>
-4. <span data-ttu-id="ca83f-111">Kliknij przycisk Zmień widok.</span><span class="sxs-lookup"><span data-stu-id="ca83f-111">Click Change view.</span></span>
-5. <span data-ttu-id="ca83f-112">Kliknij opcję Widok nagłówka.</span><span class="sxs-lookup"><span data-stu-id="ca83f-112">Click Header view.</span></span>
-    * <span data-ttu-id="ca83f-113">Otwórz widok nagłówka, aby przejść do skróconej karty Marszruta konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="ca83f-113">Open the header view to access the Configuration route FastTab.</span></span>  
-6. <span data-ttu-id="ca83f-114">Rozwiń lub zwiń sekcję Marszruta konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="ca83f-114">Expand or collapse the Configuration route section.</span></span>
-    * <span data-ttu-id="ca83f-115">Skrócona karta Marszruta konfiguracji musi być w trybie rozwiniętym.</span><span class="sxs-lookup"><span data-stu-id="ca83f-115">The Configuration route FastTab must be in the expanded mode.</span></span>  
-7. <span data-ttu-id="ca83f-116">Kliknij opcję Reguły konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="ca83f-116">Click Configuration rules.</span></span>
-8. <span data-ttu-id="ca83f-117">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="ca83f-117">Click New.</span></span>
-9. <span data-ttu-id="ca83f-118">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="ca83f-118">In the list, mark the selected row.</span></span>
-10. <span data-ttu-id="ca83f-119">W polu Numer towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="ca83f-119">In the Item number field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="ca83f-120">Są wyświetlane towary należące do bieżącej grupy konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="ca83f-120">The items in the current configuration group are displayed.</span></span> <span data-ttu-id="ca83f-121">Wybierz ten, który reprezentuje warunek w regule.</span><span class="sxs-lookup"><span data-stu-id="ca83f-121">Select the one that represents the condition in the rule.</span></span>  
-11. <span data-ttu-id="ca83f-122">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="ca83f-122">In the list, click the link in the selected row.</span></span>
-12. <span data-ttu-id="ca83f-123">W polu Metoda wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="ca83f-123">In the Method field, select an option.</span></span>
-    * <span data-ttu-id="ca83f-124">Istnieje możliwość wymuszenia wyboru lub anulowania wyboru towaru z innej grupy konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="ca83f-124">It is possible to enforce either a selection or a deselection of an item from another configuration group.</span></span>  
-13. <span data-ttu-id="ca83f-125">W polu Grupa pochodna kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="ca83f-125">In the Derived group field, click the drop-down button to open the lookup.</span></span>
-14. <span data-ttu-id="ca83f-126">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="ca83f-126">In the list, find and select the desired record.</span></span>
-15. <span data-ttu-id="ca83f-127">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="ca83f-127">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="ca83f-128">Zaznacz żądaną grupę konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="ca83f-128">Select the desired configuration group.</span></span>  
-16. <span data-ttu-id="ca83f-129">W polu Pochodny kod towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="ca83f-129">In the Derived item number field, click the drop-down button to open the lookup.</span></span>
-17. <span data-ttu-id="ca83f-130">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="ca83f-130">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="ca83f-131">Zaznacz numer towaru, który zostanie zaznaczony lub którego zaznaczenie zostanie anulowane, zależnie od wybranej metody.</span><span class="sxs-lookup"><span data-stu-id="ca83f-131">Select the item number that will be either selected or deselected depending on the chosen method.</span></span>  
-18. <span data-ttu-id="ca83f-132">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="ca83f-132">Close the page.</span></span>
+1. <span data-ttu-id="555b8-107">Wybierz kolejno opcje Zarządzanie informacjami o produktach > Listy składowe (BOM) i formuły > BOM.</span><span class="sxs-lookup"><span data-stu-id="555b8-107">Go to Product information management > Bills of materials and formulas > Bills of materials.</span></span>
+2. <span data-ttu-id="555b8-108">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="555b8-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="555b8-109">Znajdź i zaznacz listę składową konfiguracji opartej na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="555b8-109">Find and select the BOM for the dimension-based configuration.</span></span>  
+3. <span data-ttu-id="555b8-110">W okienku akcji kliknij pozycję Opcje.</span><span class="sxs-lookup"><span data-stu-id="555b8-110">On the Action Pane, click Options.</span></span>
+4. <span data-ttu-id="555b8-111">Kliknij przycisk Zmień widok.</span><span class="sxs-lookup"><span data-stu-id="555b8-111">Click Change view.</span></span>
+5. <span data-ttu-id="555b8-112">Kliknij opcję Widok nagłówka.</span><span class="sxs-lookup"><span data-stu-id="555b8-112">Click Header view.</span></span>
+    * <span data-ttu-id="555b8-113">Otwórz widok nagłówka, aby przejść do skróconej karty Marszruta konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="555b8-113">Open the header view to access the Configuration route FastTab.</span></span>  
+6. <span data-ttu-id="555b8-114">Rozwiń lub zwiń sekcję Marszruta konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="555b8-114">Expand or collapse the Configuration route section.</span></span>
+    * <span data-ttu-id="555b8-115">Skrócona karta Marszruta konfiguracji musi być w trybie rozwiniętym.</span><span class="sxs-lookup"><span data-stu-id="555b8-115">The Configuration route FastTab must be in the expanded mode.</span></span>  
+7. <span data-ttu-id="555b8-116">Kliknij opcję Reguły konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="555b8-116">Click Configuration rules.</span></span>
+8. <span data-ttu-id="555b8-117">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="555b8-117">Click New.</span></span>
+9. <span data-ttu-id="555b8-118">Na liście oznacz wybrany wiersz.</span><span class="sxs-lookup"><span data-stu-id="555b8-118">In the list, mark the selected row.</span></span>
+10. <span data-ttu-id="555b8-119">W polu Numer towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="555b8-119">In the Item number field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="555b8-120">Są wyświetlane towary należące do bieżącej grupy konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="555b8-120">The items in the current configuration group are displayed.</span></span> <span data-ttu-id="555b8-121">Wybierz ten, który reprezentuje warunek w regule.</span><span class="sxs-lookup"><span data-stu-id="555b8-121">Select the one that represents the condition in the rule.</span></span>  
+11. <span data-ttu-id="555b8-122">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="555b8-122">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="555b8-123">W polu Metoda wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="555b8-123">In the Method field, select an option.</span></span>
+    * <span data-ttu-id="555b8-124">Istnieje możliwość wymuszenia wyboru lub anulowania wyboru towaru z innej grupy konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="555b8-124">It is possible to enforce either a selection or a deselection of an item from another configuration group.</span></span>  
+13. <span data-ttu-id="555b8-125">W polu Grupa pochodna kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="555b8-125">In the Derived group field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="555b8-126">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="555b8-126">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="555b8-127">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="555b8-127">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="555b8-128">Zaznacz żądaną grupę konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="555b8-128">Select the desired configuration group.</span></span>  
+16. <span data-ttu-id="555b8-129">W polu Pochodny kod towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="555b8-129">In the Derived item number field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="555b8-130">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="555b8-130">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="555b8-131">Zaznacz numer towaru, który zostanie zaznaczony lub którego zaznaczenie zostanie anulowane, zależnie od wybranej metody.</span><span class="sxs-lookup"><span data-stu-id="555b8-131">Select the item number that will be either selected or deselected depending on the chosen method.</span></span>  
+18. <span data-ttu-id="555b8-132">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="555b8-132">Close the page.</span></span>
 
 

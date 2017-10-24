@@ -17,39 +17,39 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: e9d5c8add546cad0446e863f64cac8f9cb603cbb
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
-# <a name="configure-a-conditional-decision-in-a-workflow"></a><span data-ttu-id="c7a71-103">Konfigurowanie decyzji warunkowej w przepływie pracy</span><span class="sxs-lookup"><span data-stu-id="c7a71-103">Configure a conditional decision in a workflow</span></span>
+# <a name="configure-a-conditional-decision-in-a-workflow"></a><span data-ttu-id="29fc3-103">Konfigurowanie decyzji warunkowej w przepływie pracy</span><span class="sxs-lookup"><span data-stu-id="29fc3-103">Configure a conditional decision in a workflow</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-<span data-ttu-id="c7a71-104">Procedura zamieszczona poniżej umożliwia skonfigurowanie właściwości decyzji warunkowej.</span><span class="sxs-lookup"><span data-stu-id="c7a71-104">Use the following procedure to configure the properties of a conditional decision.</span></span>
+<span data-ttu-id="29fc3-104">Procedura zamieszczona poniżej umożliwia skonfigurowanie właściwości decyzji warunkowej.</span><span class="sxs-lookup"><span data-stu-id="29fc3-104">Use the following procedure to configure the properties of a conditional decision.</span></span>
 
-<span data-ttu-id="c7a71-105">Decyzja warunkowa to punkt, w którym przepływ pracy rozdziela się na dwie gałęzie.</span><span class="sxs-lookup"><span data-stu-id="c7a71-105">A conditional decision is a point at which a workflow divides into two branches.</span></span> <span data-ttu-id="c7a71-106">Aby skonfigurować decyzję warunkową, w edytorze przepływu pracy kliknij decyzję warunkową prawym przyciskiem myszy i wybierz polecenie **Właściwości**, a zostanie otwarta formularz **Właściwości**.</span><span class="sxs-lookup"><span data-stu-id="c7a71-106">To configure a conditional decision, in the workflow editor, right-click the conditional decision, and then click **Properties** to open the **Properties** form.</span></span>
+<span data-ttu-id="29fc3-105">Decyzja warunkowa to punkt, w którym przepływ pracy rozdziela się na dwie gałęzie.</span><span class="sxs-lookup"><span data-stu-id="29fc3-105">A conditional decision is a point at which a workflow divides into two branches.</span></span> <span data-ttu-id="29fc3-106">Aby skonfigurować decyzję warunkową, w edytorze przepływu pracy kliknij decyzję warunkową prawym przyciskiem myszy i wybierz polecenie **Właściwości**, a zostanie otwarta formularz **Właściwości**.</span><span class="sxs-lookup"><span data-stu-id="29fc3-106">To configure a conditional decision, in the workflow editor, right-click the conditional decision, and then click **Properties** to open the **Properties** form.</span></span>
 
-## <a name="name-a-decision"></a><span data-ttu-id="c7a71-107">Nazywanie decyzji</span><span class="sxs-lookup"><span data-stu-id="c7a71-107">Name a decision</span></span>
-<span data-ttu-id="c7a71-108">Wykonaj następujące kroki, aby nazwać decyzję warunkową.</span><span class="sxs-lookup"><span data-stu-id="c7a71-108">Follow these steps to enter a name for a conditional decision.</span></span>
-1.  <span data-ttu-id="c7a71-109">W lewym okienku kliknij przycisk **Ustawienia podstawowe**.</span><span class="sxs-lookup"><span data-stu-id="c7a71-109">In the left pane, click **Basic Settings**.</span></span>
-2.  <span data-ttu-id="c7a71-110">W polu **Nazwa** wprowadź unikatową nazwę decyzji warunkowej.</span><span class="sxs-lookup"><span data-stu-id="c7a71-110">In the **Name** field, enter a unique name for the conditional decision.</span></span>
+## <a name="name-a-decision"></a><span data-ttu-id="29fc3-107">Nazywanie decyzji</span><span class="sxs-lookup"><span data-stu-id="29fc3-107">Name a decision</span></span>
+<span data-ttu-id="29fc3-108">Wykonaj następujące kroki, aby nazwać decyzję warunkową.</span><span class="sxs-lookup"><span data-stu-id="29fc3-108">Follow these steps to enter a name for a conditional decision.</span></span>
+1.  <span data-ttu-id="29fc3-109">W lewym okienku kliknij przycisk **Ustawienia podstawowe**.</span><span class="sxs-lookup"><span data-stu-id="29fc3-109">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="29fc3-110">W polu **Nazwa** wprowadź unikatową nazwę decyzji warunkowej.</span><span class="sxs-lookup"><span data-stu-id="29fc3-110">In the **Name** field, enter a unique name for the conditional decision.</span></span>
 
-## <a name="set-conditions"></a><span data-ttu-id="c7a71-111"> Konfigurowanie warunków</span><span class="sxs-lookup"><span data-stu-id="c7a71-111">Set conditions</span></span>
-<span data-ttu-id="c7a71-112">System decyduje, której gałęzi użyć, oceniając przesłany dokument, aby ustalić, czy spełnia określone warunki.</span><span class="sxs-lookup"><span data-stu-id="c7a71-112">The system determines which branch is used by evaluating the submitted document to determine whether it meets specific conditions.</span></span>
-1.  <span data-ttu-id="c7a71-113">W lewym okienku kliknij przycisk **Ustawienia podstawowe**.</span><span class="sxs-lookup"><span data-stu-id="c7a71-113">In the left pane, click **Basic Settings**.</span></span>
-2.  <span data-ttu-id="c7a71-114">Kliknij opcję **Dodaj warunek**.</span><span class="sxs-lookup"><span data-stu-id="c7a71-114">Click **Add condition**.</span></span>
-3.  <span data-ttu-id="c7a71-115">Służy do wprowadzania warunku.</span><span class="sxs-lookup"><span data-stu-id="c7a71-115">Enter a condition.</span></span>
-4.  <span data-ttu-id="c7a71-116">Wprowadź dodatkowe warunki, jeśli są wymagane.</span><span class="sxs-lookup"><span data-stu-id="c7a71-116">Enter additional conditions, if they are required.</span></span>
-5.  <span data-ttu-id="c7a71-117">Aby sprawdzić, czy wprowadzone warunki są poprawnie skonfigurowane, wykonaj następujące czynności:</span><span class="sxs-lookup"><span data-stu-id="c7a71-117">To verify that the conditions that you entered are configured correctly, complete the following steps:</span></span>
-    1.  <span data-ttu-id="c7a71-118">Kliknij opcję **Testuj**, a zostanie otwarty formularz **Warunek testowy przepływu pracy**.</span><span class="sxs-lookup"><span data-stu-id="c7a71-118">Click **Test** to open the **Test workflow condition** form.</span></span>
-    2.  <span data-ttu-id="c7a71-119">Wybierz rekord w obszarze **Sprawdź poprawność warunku** formularza.</span><span class="sxs-lookup"><span data-stu-id="c7a71-119">Select a record in the **Validate condition** area of the form.</span></span>
-    3.  <span data-ttu-id="c7a71-120">Kliknij przycisk **Test**.</span><span class="sxs-lookup"><span data-stu-id="c7a71-120">Click **Test**.</span></span> <span data-ttu-id="c7a71-121">System oszacuje rekord i określi, czy rekord spełnia określone warunki.</span><span class="sxs-lookup"><span data-stu-id="c7a71-121">The system evaluates the record to determine whether it meets the conditions that you defined.</span></span>
-    4.  <span data-ttu-id="c7a71-122">Kliknij przycisk **OK** lub **Anuluj**, aby powrócić do formularza **Właściwości**.</span><span class="sxs-lookup"><span data-stu-id="c7a71-122">Click **OK** or **Cancel** to return to the **Properties** form.</span></span>
+## <a name="set-conditions"></a><span data-ttu-id="29fc3-111"> Konfigurowanie warunków</span><span class="sxs-lookup"><span data-stu-id="29fc3-111">Set conditions</span></span>
+<span data-ttu-id="29fc3-112">System decyduje, której gałęzi użyć, oceniając przesłany dokument, aby ustalić, czy spełnia określone warunki.</span><span class="sxs-lookup"><span data-stu-id="29fc3-112">The system determines which branch is used by evaluating the submitted document to determine whether it meets specific conditions.</span></span>
+1.  <span data-ttu-id="29fc3-113">W lewym okienku kliknij przycisk **Ustawienia podstawowe**.</span><span class="sxs-lookup"><span data-stu-id="29fc3-113">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="29fc3-114">Kliknij opcję **Dodaj warunek**.</span><span class="sxs-lookup"><span data-stu-id="29fc3-114">Click **Add condition**.</span></span>
+3.  <span data-ttu-id="29fc3-115">Służy do wprowadzania warunku.</span><span class="sxs-lookup"><span data-stu-id="29fc3-115">Enter a condition.</span></span>
+4.  <span data-ttu-id="29fc3-116">Wprowadź dodatkowe warunki, jeśli są wymagane.</span><span class="sxs-lookup"><span data-stu-id="29fc3-116">Enter additional conditions, if they are required.</span></span>
+5.  <span data-ttu-id="29fc3-117">Aby sprawdzić, czy wprowadzone warunki są poprawnie skonfigurowane, wykonaj następujące czynności:</span><span class="sxs-lookup"><span data-stu-id="29fc3-117">To verify that the conditions that you entered are configured correctly, complete the following steps:</span></span>
+    1.  <span data-ttu-id="29fc3-118">Kliknij opcję **Testuj**, a zostanie otwarty formularz **Warunek testowy przepływu pracy**.</span><span class="sxs-lookup"><span data-stu-id="29fc3-118">Click **Test** to open the **Test workflow condition** form.</span></span>
+    2.  <span data-ttu-id="29fc3-119">Wybierz rekord w obszarze **Sprawdź poprawność warunku** formularza.</span><span class="sxs-lookup"><span data-stu-id="29fc3-119">Select a record in the **Validate condition** area of the form.</span></span>
+    3.  <span data-ttu-id="29fc3-120">Kliknij przycisk **Test**.</span><span class="sxs-lookup"><span data-stu-id="29fc3-120">Click **Test**.</span></span> <span data-ttu-id="29fc3-121">System oszacuje rekord i określi, czy rekord spełnia określone warunki.</span><span class="sxs-lookup"><span data-stu-id="29fc3-121">The system evaluates the record to determine whether it meets the conditions that you defined.</span></span>
+    4.  <span data-ttu-id="29fc3-122">Kliknij przycisk **OK** lub **Anuluj**, aby powrócić do formularza **Właściwości**.</span><span class="sxs-lookup"><span data-stu-id="29fc3-122">Click **OK** or **Cancel** to return to the **Properties** form.</span></span>
 
 
 
