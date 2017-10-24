@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 721c5851cd399398a8dcec5ae110b97a4f17ae0a
+ms.sourcegitcommit: 25a6f326c57e84d6a7c356ac5407be7ed3095f83
+ms.openlocfilehash: 5edc6f0b2240e9dd2d3b72a13f35e96f016aa013
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/04/2017
 
 ---
 
@@ -87,7 +87,7 @@ Faktyczne wymagania sprzętowe różnią się w zależności od konfiguracji sys
 - Liczba równocześnie aktywnych użytkowników
 
 ## <a name="minimum-infrastructure-requirements"></a>Minimalne wymagania w zakresie infrastruktury
-Program Finance and Operations (lokalne wdrożenie) wykorzystuje platformę Service Fabric do obsługi usług serwera AOS, zadań wsadowych, zarządzania danymi, Management Reporter i Environment Orchestrator. W klastrze platformy Service Fabric nie ma usługi Microsoft SQL Server Reporting Services (SSRS).
+Program Finance and Operations (lokalne wdrożenie) wykorzystuje platformę Service Fabric do obsługi usług serwera AOS, zadań wsadowych, zarządzania danymi, Management Reporter i Environment Orchestrator. 
 
 Program SQL Server musi być w konfiguracji wysokiej dostępności HADRON, która ma co najmniej dwa węzły z przeznaczeniem produkcyjnym.
 
@@ -225,6 +225,12 @@ W poniższej tabeli wymieniono wersje programu SQL Server, które są obsługiwa
 |------------------------------------------------------------------|-------|
 | Microsoft SQL Server 2016 Standard Edition lub Enterprise Edition | Aby zapoznać się z wymaganiami sprzętowymi programu SQL Server 2016, zobacz [Wymagania sprzętowe i programowe dla instalacji programu SQL Server 2016](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). |
 
+## <a name="software-requirements-for-application-object-server-aos"></a>Wymagania dotyczące oprogramowania dla serwera obiektów aplikacji (AOS) 
+- SQL Server Integation Services (SSIS)
+
+## <a name="software-requirements-for-reporting-server-bi"></a>Wymagania dotyczące oprogramowania serwera raportowania (BI)
+- SQL Server Reporting Services (SSRS)
+
 ## <a name="software-requirements-for-client-computers"></a>Wymagania programowe dla komputerów klienckich
 Aplikacja sieci web Finance and Operations może być uruchamiana na dowolnym urządzeniu z przeglądarką sieci web zgodną ze standardem HTML 5.0. Oto kilka konkretnych kombinacji urządzeń/przeglądarek potwierdzonych przez Microsoft:
 
@@ -244,7 +250,7 @@ Kontroler domeny musi zawierać system Windows Server 2012 R2 lub nowszy, a pozi
 ## <a name="supported-microsoft-office-applications"></a>Obsługiwane aplikacje pakietu Microsoft Office
 Następujące aplikacje pakietu Microsoft Office są obsługiwane we wdrożeniach chmurowych i lokalnych programu Finance and Operations:
 
--   Aby można było uruchamiać dodatki programów Microsoft Excel i Word, musi być zainstalowany pakiet Microsoft Office 2016 dla systemu Windows lub Mac. Aby uzyskać więcej informacji na temat wymagań dotyczących wersji, zobacz [Rozwiązywanie problemów z integracją pakietu Office](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   Aby można było uruchamiać dodatki programów Microsoft Excel i Word, musi być zainstalowany pakiet Microsoft Office 2016 dla systemu Windows lub Mac. Aby uzyskać więcej informacji na temat wymagań dotyczących wersji, zobacz [Rozwiązywanie problemów z integracją pakietu Office](../../dev-itpro/office-integration/office-integration-troubleshooting.md).
 -   Aby wyświetlać dokumenty generowane przez funkcję Eksportuj do programu Excel lub Eksportuj do programu Word, należy mieć zainstalowany pakiet Microsoft Office 2007 lub nowszy.
  
 ## <a name="hardware-and-software-requirements-for-retail-components"></a>Wymagania sprzętowe i programowe dla składników sprzedaży detalicznej

@@ -16,13 +16,13 @@ ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 40ae4e0774c5752d697baba6c8add8aaf44fbb6d
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: eb09c0bb28c2ba8e7b890854c444cec80fe8277c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,11 +35,11 @@ W tym artykule opisano informacje, które są wymagane dla każdej komórki w de
 
 # <a name="specify-a-row-code-in-a-row-definition"></a>Określanie kodu wiersza w definicji wiersza
 
-W definicjach wierszy numery lub etykiety w komórce **Kod wiersza** identyfikują poszczególne wiersze w definicji wiersza. Można określić, aby kod wiersza odwoływał się do danych w obliczeniach i sumach.
+W definicjach wierszy numery lub etykiety w komórce **Kod wiersza** identyfikują poszczególne wiersze w definicji wiersza. Kod wiersza można umieszczać w obliczeniach i sumach w roli odnośnika do danych.
 
 ### <a name="row-code-requirements"></a>Wymagania dotyczące kodu wiersza
 
-Kod wiersza jest wymagany dla wszystkich wierszy. W jednej definicji wiersza można łączyć ze sobą numeryczne, alfanumeryczne i nieustawione (puste) kody wiersza. Kod wiersza może być dowolną dodatnią liczbą całkowitą (mniejszą niż 100 000 000) lub etykietą opisową identyfikującą dany wiersz. Etykieta opisowa musi być zgodna z następującymi regułami:
+Każdy wiersz musi mieć swój kod wiersza. W jednej definicji wiersza można łączyć ze sobą numeryczne, alfanumeryczne i nieustawione (puste) kody wiersza. Kod wiersza może być dowolną dodatnią liczbą całkowitą (mniejszą niż 100 000 000) lub etykietą opisową identyfikującą dany wiersz. Etykieta opisowa musi być zgodna z następującymi regułami:
 
 -   Etykieta musi zaczynać od litery (a-z lub A-Z) i może być dowolną kombinacją maksymalnie 16 cyfr i liter. 
     > [!NOTE]
@@ -68,7 +68,7 @@ Oto przykłady prawidłowych kodów wiersza:
 ## <a name="add-a-description"></a>Dodawanie opisu
 Komórka opisu zawiera opis danych finansowych w wierszu raportu, na przykład „Przychód” lub „Dochód netto”. Tekst w komórce **Opis** pojawia się w raporcie dokładnie tak, jak został wprowadzony w definicji wiersza. 
 > [!NOTE]
-> Szerokość kolumny opisu w raporcie jest ustawiona w definicji kolumny. Jeśli tekst w kolumnie **Opis** w definicji wiersza jest długi, sprawdź szerokość kolumny **DESC**. Gdy okna dialogowego **Wstawianie wierszy z**, wartości w kolumnie **Opis** są wartościami segmentu lub wartościami wymiaru z danych finansowych. Można wstawić wiersze, aby dodać tekst opisowy, np. nagłówek sekcji lub sumę sekcji, a następnie dodać formatowanie, np. wiersz przed wierszem sumy. Jeśli raport zawiera drzewo raportowania, można dołączyć dodatkowy tekst, który jest zdefiniowany dla jednostek raportowania w drzewie raportowania. Istnieje również możliwość ograniczenia dodatkowego tekstu do określonej jednostki raportowania.
+> Szerokość kolumny opisu w raporcie jest ustawiona w definicji kolumny. Jeśli tekst w kolumnie **Opis** w definicji wiersza jest długi, sprawdź szerokość kolumny **DESC**. Gdy okna dialogowego **Wstawianie wierszy z**, wartości w kolumnie **Opis** są wartościami segmentu lub wartościami wymiaru z danych finansowych. Można wstawić wiersze w celu dodania tekstu opisowego, np. nagłówka sekcji albo sumy sekcji, oraz dodać formatowanie, np. wiersz przed wierszem podsumowania. Jeśli raport zawiera drzewo raportowania, można dołączyć dodatkowy tekst, który jest zdefiniowany dla jednostek raportowania w drzewie raportowania. Istnieje również możliwość ograniczenia dodatkowego tekstu do określonej jednostki raportowania.
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Dodawanie opisu dla wiersza w raporcie
 
@@ -112,12 +112,12 @@ Komórka **Kod formatu** pozwala wybrać wstępnie sformatowane elementy zawarto
     | ---                           | Pojedyncze podkreślenie                   | Podkreśla wszystkie kolumny kwoty w raporcie pojedynczą linią.                                                                                                                                                     |
     | ===                           | Podwójne podkreślenie                   | Podkreśla wszystkie kolumny kwoty w raporcie podwójną linią.                                                                                                                                                     |
     | LINE1                         | Cienka linia                          | Rysuje pojedynczą cienką linię w poprzek strony.                                                                                                                                                                      |
-    | LINE2                         | Pogrubiona linia                         | Rysuje pojedynczą pogrubioną linię w poprzek strony.                                                                                                                                                                     |
-    | LINE3                         | Linia przerywana                        | Rysuje pojedynczą przerywaną linię w poprzek strony.                                                                                                                                                                    |
+    | LINE2                         | Gruba linia                         | Rysuje pojedynczą grubą linię na stronie.                                                                                                                                                                     |
+    | LINE3                         | Linia kropkowana                        | Rysuje pojedynczą przerywaną linię w poprzek strony.                                                                                                                                                                    |
     | LINE4                         | Pogrubiona linia i cienka linia           | Rysuje podwójną cienką linię w poprzek strony. Górna linia jest pogrubiona, a dolna linia jest cienka.                                                                                                                       |
     | LINE5                         | Cienka linia i pogrubiona linia           | Rysuje podwójną cienką linię w poprzek strony. Górna linia jest cienka, a dolna linia jest pogrubiona.                                                                                                                       |
     | BXB BXC                       | Wiersz obrysowany                          | Rysuje pole wokół wiersza raportu, które zaczyna się wierszem **BXB**, a kończy wierszem **BXC**.                                                                                                               |
-    | REM                           | Uwaga                             | Określa wiersz komentarza, który nie powinien być drukowany w raporcie. Na przykład wiersz wyjaśniający metodę formatowania.                                                            |
+    | REM                           | Uwaga                             | Identyfikuje wiersz będący komentarzem, który nie powinien być drukowany w raporcie. Na przykład, w wierszu uwagi można opisać techniki formatowania.                                                            |
     | SORT ASORT SORTDESC ASORTDESC | Sortuj                               | Sortuje przychody lub wydatki, sortuje raport odchyleń rzeczywistych lub budżetowych według największej wartości lub sortuje opisy wierszy alfabetycznie.                                                                   |
 
 ## <a name="specify-related-formulasrowsunits"></a>Określanie powiązanych formuł/wierszy/jednostek
@@ -133,7 +133,7 @@ Komórka **Powiązane formuły/wiersze/jednostki** ma wiele zastosowań. W zale�
 
 Formuła sumy wiersza pozwala dodawać lub odejmować kwoty w innych wierszach. Formuła tworzenia sumy wiersza może zawierać operatory + i -, umożliwiające łączenie pojedynczych kodów i zakresów wiersza. Zakresy są oznaczone dwukropkiem (:). Kod może zawierać maksymalnie 1024 znaki. Oto przykładowa standardowa formuła: 400+420+430+450+460ZOBOWIĄZANIA+KAPITAŁWŁASNY520:546520:546-ZOBOWIĄZANIA
 
-### <a name="components-of-a-row-total-formula"></a>Składniki formuły sumy wiersza
+### <a name="components-of-a-row-total-formula"></a>Składniki formuły sumy wierszy
 
 Podczas tworzenia formuły sumy wiersza trzeba używać kodów wiersza do określenia, które wiersze mają być dodane lub odjęte w definicji bieżącego wiersza, i trzeba używać operatorów, aby określić, jak wiersze są łączone. Wiersze sumy i wiersze kwoty mogą być dowolnie łączone. **Uwaga:** wszystkie wiersze sumy będące w zakresie są wykluczone. Aby utworzyć sumę końcową, można określić wiele zakresów wierszy. Jeśli pierwszy wiersz zakresu jest wierszem sumy, ten wiersz jest uwzględniany w nowej sumie. Poniższa tabela opisuje sposób używania operatorów w formułach sumy wierszy.
 
@@ -143,9 +143,9 @@ Podczas tworzenia formuły sumy wiersza trzeba używać kodów wiersza do okreś
 | :        | 100:330         | Dodaje sumy wszystkich wierszy od wiersza 100 do wiersza 330.    |
 | -        | 100-330         | Odejmuje kwotę w wierszu 100 od kwoty w wierszu 330. |
 
-### <a name="create-a-row-total"></a>Tworzenie sumy wiersza
+### <a name="create-a-row-total"></a>Tworzenie sumy wierszy
 
-1.  W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
+1.  W Projektancie raportów kliknij pozycję **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
 2.  Kliknij dwukrotnie komórkę **Kod formatu** w definicji wiersza, a następnie wybierz opcję **TOT**.
 3.  W komórce **Powiązane formuły/wiersze/jednostki** wpisz formułę sumy.
 
@@ -177,7 +177,7 @@ W definicji wiersza określany jest co najmniej jeden wiersz podstawowy, a nast�
 -   Wiersze **CBR** nie są drukowane na gotowym raporcie.
 -   Kod formatu **CBR** i kod powiązanego z nim wiersza są umieszczone powyżej wiersza lub sekcji, w których są wyświetlane powiązane obliczenia.
 
-W definicji kolumny **CALC** typ kolumny oznacza kolumnę określającą formułę w wierszu **Formuła**. Ta formuła działa tylko w odniesieniu do danych w tej kolumnie raportu i używa słowa kluczowego Baserow, aby oprzeć obliczenia na kodach formatu **CBR** w wierszu. W definicji wiersza kod formatu **CBR** definiuje podstawowy wiersz dla kolumn, które obliczają wartość procentową lub są mnożone przez wiersz podstawowy dla każdego wiersza w raporcie. W formacie wiersza może być wiele kodów formatu **CBR**, np. jeden dla sprzedaży netto, jeden dla sprzedaży brutto i jeden dla łącznych wydatków. Zazwyczaj kod formatu **CBR** służy do tworzenia wartości procentowej dla kont, które są porównywane z wierszem sumy. Wiersz podstawowy jest używany dla wszystkich obliczeń, dopóki nie zostanie zdefiniowany inny wiersz podstawowy. Należy określić początkowy kod formatu **CBR** i końcowy kod formatu **CBR**. Na przykład aby określić wydatki jako procent sprzedaży netto, można podzielić wartości w każdym wierszu wydatków przez wartość w wierszu sprzedaży netto. W takim przypadku wiersz sprzedaży netto jest wierszem podstawowym. Można określić definicję kolumny, która raportuje wyniki bieżące i od początku roku, razem z procentem podstawowym dla każdego wyniku, ja, pokazano w poniższym przykładzie. Zacznij od szczegółowego rachunku wyników.
+W definicji kolumn typ kolumny **CALC** wskazuje kolumnę określającą formułę w wierszu **Formuła**. Ta formuła działa tylko w odniesieniu do danych w tej kolumnie raportu i używa słowa kluczowego Baserow, aby oprzeć obliczenia na kodach formatu **CBR** w wierszu. W definicji wiersza kod formatu **CBR** definiuje podstawowy wiersz dla kolumn, które obliczają wartość procentową lub są mnożone przez wiersz podstawowy dla każdego wiersza w raporcie. W formacie wiersza może być wiele kodów formatu **CBR**, np. jeden dla sprzedaży netto, jeden dla sprzedaży brutto i jeden dla łącznych wydatków. Zazwyczaj kod formatu **CBR** służy do tworzenia wartości procentowej dla kont, które są porównywane z wierszem sumy. Wiersz podstawowy jest używany dla wszystkich obliczeń, dopóki nie zostanie zdefiniowany inny wiersz podstawowy. Należy określić początkowy kod formatu **CBR** i końcowy kod formatu **CBR**. Na przykład aby określić wydatki jako procent sprzedaży netto, można podzielić wartości w każdym wierszu wydatków przez wartość w wierszu sprzedaży netto. W takim przypadku wiersz sprzedaży netto jest wierszem podstawowym. Można określić definicję kolumny, która raportuje wyniki bieżące i od początku roku, razem z procentem podstawowym dla każdego wyniku, ja, pokazano w poniższym przykładzie. Zacznij od szczegółowego rachunku wyników.
 
 ### <a name="select-the-base-row-in-a-row-definition-for-a-column-calculation"></a>Wybieranie wiersza podstawowego w definicji wiersza dla obliczenia kolumny
 
@@ -217,7 +217,7 @@ Kody sortowania sortują konta lub wartości, sortują raport odchyleń rzeczywi
 
 W poniższym przykładzie wartości w kolumnie D raportu zostaną posortowane rosnąco dla wierszy od 160 do 490. Ponadto wartości bezwzględne w kolumnie G raportu zostaną posortowane w kolejności malejącej od wiersza 610 do 940.
 
-| Kod wiersza | Opis                                         | Kod formatu | Powiązane formuły/wiersze/jednostki | Saldo zwykłe | Ograniczenie kolumny | Łącze do wymiarów finansowych |
+| Kod wiersza | Opis                                         | Kod formatu | Powiązane formuły/wiersze/jednostki | Saldo zwykłe | Ograniczenie kolumny | Łącze do Wymiary finansowe |
 |----------|-----------------------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
 | 100      | Posortowane według miesięcznego odchylenia w kolejności rosnącej       | DES         |                             |                |                    |                              |
 | 130      |                                                     | SORT        | 160:490                     |                | D                  |                              |
@@ -303,7 +303,7 @@ Formatowanie procentowe zawiera znak procentów (%). Dostępne są następujące
 
 Za pomocą formatowania niestandardowego można tworzyć własne formaty nadrzędne. Dostępne są następujące opcje:
 
--   **Typ** – format niestandardowy.
+-   **Typ** — format niestandardowy.
 -   **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. 
     > [!NOTE]
     >  Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
@@ -365,7 +365,7 @@ Możesz ograniczyć wiersz do istniejącego kodu księgi. Definicja kolumny musi
 > [!NOTE]
 > Ograniczenie kodu księgi dla wiersza zastępuje ograniczenia kodu księgi w definicji kolumny dla tego wiersza.
 
-### <a name="account-and-transaction-attributes"></a>Atrybuty konta i transakcji
+### <a name="account-and-transaction-attributes"></a>Atrybuty kont i transakcji
 
 Niektóre systemy księgowe obsługują atrybuty konta i atrybuty transakcji w danych finansowych. Te atrybuty działają na zasadzie podobnie jak wirtualne segmenty kont i mogą zawierać dodatkowe informacje dotyczące konta lub transakcji. Te dodatkowe informacje mogą być identyfikatorami konta, identyfikatorami partii, kodami pocztowymi lub innymi atrybutami. Jeśli system księgowy obsługuje atrybuty, możesz używać atrybutów konta lub transakcji jako modyfikatorów wierszy w definicji wiersza. Aby uzyskać informacje dotyczące sposobu zastępowania informacji wiersza, zobacz sekcję „Zastępowanie definicji kolumny” we wcześniejszej części tego artykułu.
 
@@ -378,13 +378,13 @@ Komórka **Łącze do wymiarów finansowych** zawiera łącza do danych finansow
 |----------------------------------|----------------------------------------------------|
 | Wymiary finansowe             | Łącze do wymiarów finansowych                       |
 | Zewnętrzny arkusz               | Łącze do arkusza                                  |
-| Wymiary finansowe + Arkusz | Łącze do wymiarów finansowych + Arkusz           |
+| Wymiary finansowe + Arkusz | Łącze do Wymiary finansowe + Arkusz           |
 | Raport programu Management Reporter       | Raport programu Management Reporter                         |
 
 ### <a name="specify-a-dimension-or-range"></a>Określanie wymiaru lub zakresu
 
-1.  W Projektancie raportu otwórz definicję wiersza do zmodyfikowania.
-2.  Kliknij dwukrotnie komórkę w kolumnie **Łącze do wymiarów finansowych**.
+1.  W Projektancie raportów otwórz definicję wierszy, którą chcesz zmodyfikować.
+2.  Kliknij dwukrotnie komórkę w kolumnie **Łącze do Wymiary finansowe**.
 3.  W oknie dialogowym **Wymiary** kliknij dwukrotnie komórkę pod nazwą wymiaru.
 4.  W oknie dialogowym wymiaru wybierz **Pojedynczy lub zakres**.
 5.  W polu **Z** wpisz wymiar początkowy lub kliknij przycisk ![Przeglądaj](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Przeglądaj"), aby wyszukać dostępne wymiary. Aby wprowadzić zakres wymiarów, należy wprowadzić wymiar końcowy w polu **Do**.
@@ -464,7 +464,7 @@ W poniższej tabeli opisano pola w tym oknie dialogowym **Wymiary**.
 | Konta sumujące   | W polu **Nazwa** wprowadź lub przeglądaj, aby wybrać wymiar kont sumujących. Pole **Formuła** jest wypełniane przy użyciu formuły w komórce **Łącze do wymiarów finansowych** dla tego konta sumującego w definicji raportowania.                                                                       |
 
 ## <a name="add-dimension-value-sets-in-a-row-definition"></a>Dodawanie zestawów wartości wymiarów w definicji wiersza
-Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wartości wymiarów może zawierać wartości tylko w jednym wymiarze, ale można używać wartości wymiaru w wielu definicjach wierszy, kolumn, drzewa raportowania i definicjach raportów. Można również połączyć zestawy wartości wymiarów w definicji raportu. Jeśli modyfikacja danych finansowych wymaga zmiany zestawu wartości wymiarów, można zaktualizować definicję zestawu wartości wymiarów i ta aktualizacja ma zastosowanie do wszystkich obszarów, które używają zestawu wartości wymiarów. Na przykład jeśli często wskazujesz zakres wartości do połączenia z danymi finansowymi, np. wartości od 5100 do 5600, możesz przypisać ten zakres do zestawu kont o nazwie Sprzedaż. Po utworzeniu zestawu wartości wymiarów można wybrać zestaw jako łącze danych finansowych. Inny przykład: jeśli zakres wartości od 5100 do 5600 jest przypisany do zestawu kont Sprzedaż, a wartość 4175 jest przypisana do zestawu kont Rabaty, można określić łączną sprzedaż, odejmując wartości Rabaty od Sprzedaż. Taka operacja jest wyrażana jako **(5100:5600)-4175**.
+Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wartości wymiarów może zawierać wartości tylko w jednym wymiarze, ale można używać wartości wymiaru w wielu definicjach wierszy, kolumn, drzewa raportowania i definicjach raportów. Można również połączyć zestawy wartości wymiarów w definicji raportu. Jeśli modyfikacja danych finansowych wymaga zmiany zestawu wartości wymiarów, można zaktualizować definicję zestawu wartości wymiarów i ta aktualizacja ma zastosowanie do wszystkich obszarów, które używają zestawu wartości wymiarów. Na przykład jeśli często wskazujesz zakres wartości do połączenia z danymi finansowymi, np. wartości od 5100 do 5600, możesz przypisać ten zakres do zestawu kont o nazwie Sprzedaż. Po utworzeniu zestawu wartości wymiaru można wybrać ten zestaw jako łącze danych finansowych. Inny przykład: jeśli zakres wartości od 5100 do 5600 jest przypisany do wartości Sprzedaż, a wartość 4175 jest przypisana do wartości Rabaty, można wyznaczyć łączną wartość sprzedaży, odejmując wartość Rabaty od wartości Sprzedaż. Taka operacja jest wyrażana jako **(5100:5600)-4175**.
 
 ### <a name="create-a-set-of-dimension-values"></a>Tworzenie zestawu wartości wymiarów
 
@@ -476,11 +476,11 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 6.  W oknie dialogowym **Konto** wybierz nazwę z listy lub wyszukaj wpisu w polu **Szukaj**. Następnie kliknij **OK**.
 7.  Powtórz kroki od 5 do 6 w kolumnie **Do**, aby zaprojektować formułę dla operatora.
 8.  Po zakończeniu formuły kliknij przycisk **OK**.
-9.  W oknie dialogowym **Zarządzanie zestawami wymiarów** kliknij **Zamknij**.
+9.  W oknie dialogowym **Zarządzaj zestawami wymiarów** kliknij przycisk **Zamknij**.
 
-### <a name="update-a-set-of-dimension-values"></a>Aktualizowanie zestawu wartości wymiarów
+### <a name="update-a-set-of-dimension-values"></a>Aktualizowanie zestawu wartości wymiaru
 
-1.  W Projektancie raportów otwórz definicję wiersza, kolumny lub drzewa raportowania do zmodyfikowania.
+1.  W Projektancie raportów otwórz definicję wierszy, kolumn lub drzewa, którą chcesz zmodyfikować.
 2.  W menu **Edycja** kliknij **Zarządzaj zestawami wartości wymiarów**.
 3.  W oknie dialogowym **Zarządzanie zestawami wartości wymiarów** w polu **Wymiar** wybierz typ wymiaru.
 4.  Na liście wymierz zestaw wartości wymiarów do aktualizacji, a następnie kliknij **Modyfikuj**.
@@ -500,7 +500,7 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 
 ### <a name="delete-a-dimension-set"></a>Usuwanie zestawu wymiarów
 
-1.  W Projektancie raportów otwórz definicję wiersza, kolumny lub drzewa raportowania do zmodyfikowania.
+1.  W Projektancie raportów otwórz definicję wierszy, kolumn lub drzewa, którą chcesz zmodyfikować.
 2.  W menu **Edycja** kliknij **Zarządzaj zestawami wartości wymiarów**.
 3.  W oknie dialogowym **Zarządzanie zestawami wartości wymiarów** w polu **Wymiar** wybierz typ wymiaru.
 4.  Wybierz zestaw do usunięcia, a następnie kliknij **Usuń**. Kliknij **Tak**, aby trwale usunąć zestaw wartości wymiaru.

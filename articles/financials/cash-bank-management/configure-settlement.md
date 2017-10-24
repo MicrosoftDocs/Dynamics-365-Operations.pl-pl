@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 059513de66827aa3a839b9eb06973ec4c1549f73
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: ade348540a6d3e9210321d3661e97ac716efaf58
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -48,7 +48,7 @@ Następujące parametry mają wpływ na sposób przetwarzania rozliczeń w progr
     -   Jeśli ta opcja jest ustawiona jako **Tak**, a użytkownik zmieni wartość w polu **Kwota do rozliczenia** na stronie **Rozliczanie transakcji**, rabat jest obliczany automatycznie i wyświetlany jako domyślny wpis w polu **Kwota rabatu gotówkowego do pobrania**.
     -   Jeśli ta opcja jest ustawiona jako **Nie**, a użytkownik zmieni wartość w polu **Kwota do rozliczenia** na stronie **Rozliczanie transakcji**, domyślny wpis w polu **Kwota rabatu gotówkowego do pobrania** wynosi **zero** (0).
 -   **Oblicz rabaty gotówkowe dla faktur korygujących** — ustaw tę opcję jako **Tak**, aby automatycznie obliczać rabat gotówkowy dla faktur korygujących. Na stronie Rozrachunki z odbiorcami transakcja faktury korygującej jest ujemną transakcją, która ma wartość w polu **Faktura** na stronie **Faktura niezależna** lub zwrot na stronie **Zamówienie sprzedaży**.
-    -   Działanie tej opcji zależy od wartości w polu **Użyj rabatu gotówkowego** na stronie **rozliczenia transakcji**. Jeśli ta opcja jest ustawiona jako **Tak**, rabat jest pobierany, gdy w polu *****Użyj rabatu gotówkowego**** ustawiono opcję **Normalny**. Jeśli w polu ****Użyj rabatu gotówkowego**** ustawiono opcję **Zawsze**, rabat gotówkowy jest zawsze pobierany, niezależnie od ustawienia tego pola. Jeśli w polu ****Użyj rabatu gotówkowego**** ustawiono opcję **Nigdy**, rabat gotówkowy nigdy nie jest pobierany, niezależnie od ustawienia tego pola.
+    -   Działanie tej opcji zależy od wartości w polu **Użyj rabatu gotówkowego** na stronie **rozliczenia transakcji**. Jeśli ta opcja jest ustawiona jako **Tak**, rabat jest pobierany, gdy w polu ****Użyj rabatu gotówkowego**** ustawiono opcję **Normalny**. Jeśli w polu ****Użyj rabatu gotówkowego**** ustawiono opcję **Zawsze**, rabat gotówkowy jest zawsze pobierany, niezależnie od ustawienia tego pola. Jeśli w polu ****Użyj rabatu gotówkowego**** ustawiono opcję **Nigdy**, rabat gotówkowy nigdy nie jest pobierany, niezależnie od ustawienia tego pola.
     -   Jeśli ta opcja ma wartość **Tak**, a faktura korygująca jest oznaczona na stronie **Rozliczanie transakcji**, rabat jest obliczany automatycznie i wyświetlany jako domyślny wpis w polu **Kwota rabatu gotówkowego do pobrania**.
     -   Jeśli ta opcja jest ustawiona jako **Nie**, a faktura korygująca jest oznaczone na stronie **Rozliczanie transakcji**, domyślnym wpisem w polu **Kwota rabatu gotówkowego** jest **0** (zero).
 -   **Konta przeciwstawne rabatów (tylko AP)** — umożliwia zdefiniowanie domyślnego konta księgi rabatu gotówkowego, które ma być używane dla wpisu księgowania dla rabatów gotówkowych.

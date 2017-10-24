@@ -16,13 +16,13 @@ ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 331f3480b8454dac7da12be169ba017f36cefa06
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 4708ff4427fe507fee7e1ce1ca226289ddf648cc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,13 +33,13 @@ ms.lasthandoff: 05/25/2017
 
 Ten artykuł zawiera informacje o definicjach drzew raportowania. Definicja drzewa raportowania to składnik (blok konstrukcyjny) raportu, który pomaga określić strukturę i hierarchię organizacji.
 
-Aplikacja Raportowanie finansowe obsługuje elastyczne raportowanie, dzięki czemu można łatwo wprowadzać zmiany wraz z rozwojem struktury firmy. Raporty są kompilowane z różnych składników, lub bloków konstrukcyjnych. Jednym z tych bloków konstrukcyjnych jest drzewo definicji raportowania. Drzewo definicji raportowania pomaga zdefiniować strukturę i hierarchię organizacji. To międzywymiarowa hierarchiczna struktura oparta na powiązaniach wymiarów w danych finansowych. Dostarcza informacji na poziomie jednostki raportowania oraz na poziomie podsumowania dla wszystkich jednostek w drzewie. Definicje drzewa raportowania można łączyć z definicjami kolumn i raportów, by tworzyć grupy elementów konstrukcyjnych dostępne dla wielu firm. Jednostka raportowania jest używana dla każdego pola w schemacie organizacyjnym. Jednostka raportowania może być pojedynczym działem z danych finansowych lub może być jednostką podsumowań wyższego poziomu, która łączy informacje z innych jednostek raportowania. Dla definicji raportu zawierającej drzewo raportowania dla każdej jednostki raportowania i poziomu podsumowania generowany jest jeden raport. Wszystkie te raporty korzystają z definicji wierszy i kolumn określonych w definicji raportu, chyba że definicja raportu wymusza stosowanie drzewa raportowania z definicji wiersza. Definicje wierszy i kolumn są ważnymi składnikami projektu i funkcji raportów finansowych. Drzewa raportowania zwiększają siłę składników i obsługują elastyczne raportowanie wraz z rozwoje struktury firmy. Raporty finansowe, które nie są oparte na drzewie raportowania, wykorzystują tylko niektóre funkcje raportowania finansowego. Z tymi samymi definicjami wierszy i kolumn można łączyć wiele definicji drzewa raportowania, umożliwiając wyświetlanie danych organizacji na różne sposoby.
+Aplikacja Raportowanie finansowe obsługuje elastyczne raportowanie, dzięki czemu można łatwo wprowadzać zmiany wraz z rozwojem struktury firmy. Raporty są kompilowane z różnych składników, lub bloków konstrukcyjnych. Jednym z tych bloków konstrukcyjnych jest drzewo definicji raportowania. Drzewo definicji raportowania pomaga zdefiniować strukturę i hierarchię organizacji. To międzywymiarowa hierarchiczna struktura oparta na powiązaniach wymiarów w danych finansowych. Dostarcza informacji na poziomie jednostki raportowania oraz na poziomie podsumowania dla wszystkich jednostek w drzewie. Definicje drzewa raportowania można łączyć z definicjami kolumn i raportów, by tworzyć grupy elementów konstrukcyjnych dostępne dla wielu firm. Jednostka raportowania jest używana dla każdego pola w schemacie organizacyjnym. Jednostką raportowania może być indywidualny dział z danych finansowych albo jednostka zbiorcza na wyższym poziomie, która łączy w sobie informacje z innych jednostek raportowania. Dla definicji raportu zawierającej drzewo raportowania dla każdej jednostki raportowania i poziomu podsumowania generowany jest jeden raport. Wszystkie te raporty korzystają z definicji wierszy i kolumn określonych w definicji raportu, chyba że definicja raportu wymusza stosowanie drzewa raportowania z definicji wiersza. Definicje wierszy i kolumn są ważnymi składnikami projektu i funkcji raportów finansowych. Drzewa raportowania zwiększają siłę składników i obsługują elastyczne raportowanie wraz z rozwoje struktury firmy. Raporty finansowe, które nie są oparte na drzewie raportowania, wykorzystują tylko niektóre funkcje raportowania finansowego. Z tymi samymi definicjami wierszy i kolumn można łączyć wiele definicji drzewa raportowania, umożliwiając wyświetlanie danych organizacji na różne sposoby.
 
 ## <a name="reporting-tree-best-practices"></a>Sprawdzone metody korzystania z drzewa raportowania
 Przed utworzeniem drzewa raportowania należy wziąć pod uwagę następujące wskazówki:
 
 -   Najpierw ustalić, które wymiary raportowania są wymagane w danej firmie lub instytucji.
--   Rozważyć, jak jest skonfigurowana obecna struktura, a następnie narysować schemat organizacyjny firmy. Schemat organizacyjny ułatwia wizualizację sposobu grupowania jednostek raportowania w jednym lub wielu drzewach raportowania.
+-   Rozważyć, jak jest skonfigurowana obecna struktura, a następnie narysować schemat organizacyjny firmy. Schemat organizacyjny pomoże zwizualizować sposób grupowania jednostek raportowania w co najmniej jednym drzewie raportowania.
 -   Zacząć od najniższego poziomu szczegółowości, np. od działów i projektów zdefiniowanych w danych finansowych. Dodać dowolną liczbę pól do poziomu szczegółowości, by wyświetlić działy i regiony wyższego poziomu. Każde pole odpowiada potencjalnej jednostce raportowania w dowolnym tworzonym drzewie raportowania.
 -   Należy też zastanowić się, jak najlepiej tworzyć drzewa. Drzewa raportowania można tworzyć automatycznie lub ręcznie. Przed przystąpieniem do planowania drzew należy dobrze zapoznać się z obiema tymi metodami.
 -   Można używać jednostek raportowania, które są zdefiniowane w systemie danych finansowych, aby dodawać jednostki raportowania do definicji drzewa raportowania.
@@ -52,13 +52,13 @@ Definicja drzewa raportowania zawiera kolumny opisane w poniższej tabeli.
 
 | Kolumna drzewa raportowania | opis|
 |---|---|
-| Firma               | Nazwa firmy dla jednostki raportowania. Wartość **@ANY**, która jest zazwyczaj przypisywana tylko na poziomie podsumowania, pozwala używać drzewa raportowania dla wszystkich firm. Wszystkie gałęzie podrzędne mają przypisaną do siebie firmę.|
+| Firma               | Nazwa firmy dla jednostki raportowania. Wartość **@ANY**, która jest zazwyczaj przypisywana tylko na poziomie podsumowania, pozwala używać drzewa raportowania dla wszystkich firm. Firma jest przypisywana również do wszystkich gałęzi podrzędnych.|
 | Nazwa jednostki             | Kod identyfikujący tę jednostkę raportowania w graficznym drzewie raportowania. Pamiętaj, aby ustanowić unikatowy system kodowania, który będzie spójny i łatwy do zrozumienia dla użytkowników. |
 | Opis jednostki      | Tytuł jednostki raportowania jest wyświetlany w nagłówku lub stopce raportu po wprowadzeniu **UnitDesc** jako kodu na karcie **Nagłówki i stopki** w definicji raportu. Tytuł jest wyświetlany w opisie wiersza raportu po wprowadzeniu **UnitDesc** w komórce **Opis** w definicji wiersza.|
 | Wymiary            | Jednostka raportowania, która pobiera dane bezpośrednio z danych finansowych. Definiuje ona logiczne pozycjonowanie i długości dla konta i powiązanych segmentów. Każdy wiersz jednostki raportowania musi mieć wymiar w tej kolumnie. Wymiar można również umieścić w wierszu jednostki podsumowania (np. dla wydatków bezpośrednio związanych z tą jednostką). Jeśli wymiar zostanie wprowadzony w wierszu jednostki podsumowania, konta używane w jednostkach nadrzędnych nie powinny być używane w jednostkach podrzędnych. W przeciwnym razie może dojść do zduplikowania kwot.|
-| Definicje wierszy       | Nazwa definicji wiersza dla jednostki raportowania. Ta sama definicja wiersza jest używana dla każdej jednostki w drzewie raportowania. Podczas generowania raportu ta definicja wiersza jest używana dla każdej jednostki raportowania. Definicja wiersza może zawierać wiele łączy do wymiarów finansowych. Jeśli definicja wiersza jest określona w drzewie raportowania, w definicji raportu na karcie **Raport** zaznacz pole wyboru **Użyj definicji wiersza z drzewa raportowania**.|
-| Łącze wiersza              | Łącze wiersza na potrzeby jednostki raportowania. Łącza wierszy są definiowane dla definicji wiersza w celu identyfikacji docelowych wymiarów finansowych.|
-| Łącze zewnętrzne         | Łącze wiersza na potrzeby tej jednostki raportowania. Łącza wiersza są tworzone dla definicji wiersza w celu identyfikacji raportu, z którym ma nastąpić powiązanie.|
+| Definicje wierszy       | Nazwa definicji wiersza dla jednostki raportowania. Ta sama definicja wiersza jest używana do każdej jednostki w drzewie raportowania. Podczas generowania raportu definicja jest używana w każdej jednostce raportowania. Definicja wiersza może zawierać wiele łączy do wymiarów finansowych. Jeśli w drzewie raportowania określono definicję wiersza, w oknie definicji raportu na karcie **Raport** zaznacz pole wyboru **Użyj definicji wierszy z drzewa raportowania**.|
+| Łącze wiersza              | Łącze wiersza powiązane z jednostką raportowania. Celem tworzenia łączy wierszy w definicjach wierszy jest określenie wymiarów finansowych, z którymi mają zostać nawiązane połączenia.|
+| Łącze zewnętrzne         | Łącze wiersza powiązane z tą jednostką raportowania. Łącza wiersza są tworzone dla definicji wiersza w celu identyfikacji raportu, z którym ma nastąpić powiązanie.|
 | Plik zewnętrzny         | Ścieżka do pliku arkusza raportowania finansowego, z którego mają być pobierane dane.|
 | Opcje strony          | Ta kolumna kontroluje, czy szczegóły jednostki raportowania są pomijane podczas wyświetlania lub drukowania raportu.|
 | Procent akumulacji              | Wartość procentowa jednostki raportowania, która powinna być przydzielona do jednostki nadrzędnej. Wartość procentowa wprowadzona w tej kolumnie ma zastosowanie do każdego wiersza w definicji wiersza przed dodaniem wartość w wierszu do raportu nadrzędnego. Na przykład jeśli jednostka podrzędna musi być równo podzielona między dwa działy, kwoty w każdym wierszu zostaną pomnożone przez 50 procent i dopiero wtedy wartości zostaną dodane do raportów poszczególnych działów. Jedna jednostka raportowania nie może mieć dwóch jednostek nadrzędnych. Aby przydzielić kwoty z jednostki raportowania do dwóch jednostek nadrzędnych, należy utworzyć inną jednostkę raportowania z tym samym wymiarem w celu akumulacji dodatkowych 50 procent. Całe procenty należy wpisywać bez separatora dziesiętnego. Na przykład **25** reprezentuje alokację 25 procent do obiektu nadrzędnego. Jeśli dołączysz separator dziesiętny (**,25**), do obiektu nadrzędnego zostanie przydzielone 0,25%. Aby zastosować wartość procentową mniejsza niż 1%, należy w definicji raportu użyć opcji **Zezwalaj na akumulację &lt;1%**. Ta opcja jest dostępna na karcie **Opcje dodatkowe** w oknie dialogowym **Ustawienia raportu**. W celu wyświetlenia tego okna dialogowego należy użyć przycisku **Inne** na karcie **Ustawienia** w definicji raportu. |
@@ -138,8 +138,8 @@ Dodatkowy wpis tekstowy jest statycznym ciągiem tekstowym maksymalnie 255 znak�
 
 ### <a name="remove-additional-text-from-a-reporting-unit"></a>Usuwanie dodatkowego tekstu z jednostki raportowania
 
-1.  W Projektancie raportów otwórz definicję drzewa raportowania do zmodyfikowania.
-2.  Kliknij dwukrotnie komórkę **Dodatkowy tekst** dla jednostki raportowania.
+1.  W Projektancie raportów otwórz definicję drzewa raportowania, którą chcesz zmodyfikować.
+2.  W wierszu jednostki raportowania kliknij dwukrotnie komórkę **Dodatkowy tekst**.
 3.  W oknie dialogowym **Dodatkowy tekst** zaznacz wpis do usunięcia, a następnie kliknij przycisk **Wyczyść**. Alternatywnie kliknij wpis prawym przyciskiem myszy i wybierz polecenie **Wytnij**.
 4.  Kliknij przycisk **OK**
 
@@ -148,7 +148,7 @@ Dodatkowy wpis tekstowy jest statycznym ciągiem tekstowym maksymalnie 255 znak�
 Aby uniemożliwić wybranym użytkownikom i grupom dostęp do jednostki raportowania. Można także zdefiniować ograniczenia, tak aby odnosiły się do podrzędnych jednostek raportowania wybranej jednostki raportowania.
 
 1.  W Projektancie raportów otwórz definicję drzewa raportowania do zmodyfikowania.
-2.  Kliknij dwukrotnie komórkę **Jednostka zabezpieczeń** dla jednostki raportowania, aby ograniczyć dostęp do niej.
+2.  Kliknij dwukrotnie komórkę **Zabezpieczenia jednostki** dotyczącą wiersza jednostki raportowania, do której chcesz ograniczyć dostęp.
 3.  W oknie dialogowym **Jednostka zabezpieczeń** kliknij przycisk **Użytkownicy i grupy**.
 4.  Wybierz użytkowników lub grupy, które powinny mieć dostęp do jednostki raportowania, a następnie kliknij przycisk **OK**.
 5.  Aby ograniczyć dostęp do podrzędnych jednostek raportowania, zaznacz pole wyboru **Dodaj zabezpieczenia do podrzędnych jednostek raportowania**.

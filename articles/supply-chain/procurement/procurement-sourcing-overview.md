@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d3669de6314e65c78ce5d401dae2e7481ec38b68
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 03af609a9d21fc11247f247aad1ca26e3719755e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,16 +37,16 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 ## <a name="identifying-a-need-for-product-and-services"></a>Identyfikowanie popytu na produkty i usługi
 Popyt na produkty i usługi może wynika z *zapotrzebowania* — na przykład jeśli pracownik potrzebuje produktu. *Katalogi produktów* można skonfigurować w taki sposób, by wyświetlały podpowiedzi przy wyborze dostępnych produktów lub umożliwiały tworzenie żądań dla produktów, które nie są jeszcze dostępne w katalogu, dając działowi zaopatrzenia możliwość znalezienia sposobu, w jaki ten produkt może zostać dostarczony.  
 
-*Limity wydatków *mogą służyć do ograniczania zapotrzebowania wydatków, a *przepływ pracy zaopatrzenia* pozwala dodać opcję żądania zatwierdzenia przed złożeniem zamówienia. Można też określić alokację środków budżetu, jeśli jest to wymagane.  
+*Limity wydatków* mogą służyć do ograniczania zapotrzebowania wydatków, a *przepływ pracy zaopatrzenia* pozwala dodać opcję żądania zatwierdzenia przed złożeniem zamówienia. Można też określić alokację środków budżetu, jeśli jest to wymagane.  
   
 Dział zaopatrzenia identyfikuje dostawców dla wymaganych produktów i usług, i może to być związane z wysłaniem *zapytania ofertowego* do wielu potencjalnych dostawców. Istnieje możliwość udostępniania specyfikacji żądanego produktu i potencjalni dostawcy można je wyświetlić, jeśli są w stanie dostarczyć produkt, który jest z nimi zgodny. Dostawcy odsyłają oferty, a dział zaopatrzenia przegląda je i dokonuje ostatecznego wyboru dostawcy.  
 
 Zamiast złożonego zapytania ofertowego w ramach zamówienia zakupu można wysłać do dostawcy *zapytanie dotyczące zakupu*. Pomaga ono w ustalaniu różnego rodzaju warunków, takich jak ceny, rabaty i data dostawcy dla zamówienia. Jeśli dostawcy mogą korzystać z portalu **Dostawca**, funkcja zapytań o zakupy jest wyłączona. Zamiast tego zamówienie jest udostępniane w portalu **Dostawca** i gdy *prośba o potwierdzenie* jest wysyłana, dostawca może bezpośrednio potwierdzić zamówienie.  
 
-*Katalogi dostawcy *mogą być używane do zbierania informacji o asortymencie produktów, który dostawca może dostarczyć. Dostawcy mogą publikować własne katalogi, co ułatwia aktualizowanie oferty. Do produktu można dołączyć *listę zatwierdzonych dostawców* i może ona ułatwić w wyborze dostawcy podczas otwierania nowych zamówień zakupu i zapobiegać korzystaniu z usług niepożądanych dostawców.
+*Katalogi dostawcy* mogą być używane do zbierania informacji o asortymencie produktów, który dostawca może dostarczyć. Dostawcy mogą publikować własne katalogi, co ułatwia aktualizowanie oferty. Do produktu można dołączyć *listę zatwierdzonych dostawców* i może ona ułatwić w wyborze dostawcy podczas otwierania nowych zamówień zakupu i zapobiegać korzystaniu z usług niepożądanych dostawców.
 
 ## <a name="procurement"></a>Zaopatrzenie
-*Zamówienia zakupu *można tworzyć na wiele różnych sposobów, w tym:
+*Zamówienia zakupu* można tworzyć na wiele różnych sposobów, w tym:
 
 -   Jako wynik planowania głównego, które zostało zidentyfikowane jako popyt wymagający zakupu. Ten proces generuje planowane zamówienia zakupu, a kiedy te są zwalniane, generowane są zamówienia zakupu.
 -   Przez przetworzenie zapotrzebowania na zakup, którego efektem jest zakup.
@@ -61,7 +61,7 @@ Podczas tworzenia zamówienia zakupu wiele pól jest wstępnie uzupełnianych wa
 
 ### <a name="prices-and-discounts"></a>Ceny i rabaty
 
-Ceny i rabaty zawierają informacje o cenach, rabatach i warunkach rabatów. Ceny i rabaty mogą być takie jak w *umowie* *handlowej*. Umowy handlowe reprezentują cenniki dostawcy z cenami lub rabatami i mają określony zakres dat obowiązywania umowy. Ceny i rabaty można negocjować i zapisywać w *umowach zakupu *z warunkami, takimi jak zobowiązanie do zakupu określonej ilości towaru lub kwoty będące podstawą do negocjacji. Można utworzyć *Umowy rabatowe *z dostawcami i skonfigurować je tak, aby zamówienie określonych produktów lub grup produktów powodowało przyznanie rabatu zależnego od kwoty lub wielkości zamówienia.
+Ceny i rabaty zawierają informacje o cenach, rabatach i warunkach rabatów. Ceny i rabaty mogą być takie jak w *umowie* *handlowej*. Umowy handlowe reprezentują cenniki dostawcy z cenami lub rabatami i mają określony zakres dat obowiązywania umowy. Ceny i rabaty można negocjować i zapisywać w *umowach zakupu* z warunkami, takimi jak zobowiązanie do zakupu określonej ilości towaru lub kwoty będące podstawą do negocjacji. Można utworzyć *Umowy rabatowe* z dostawcami i skonfigurować je tak, aby zamówienie określonych produktów lub grup produktów powodowało przyznanie rabatu zależnego od kwoty lub wielkości zamówienia.
 
 ### <a name="delivery-options"></a>Opcje dostawy
 
@@ -82,7 +82,7 @@ Niektóre zamówienia zakupu zawierają produkty, które są usługami lub innym
 
 Przyjęcie produktów może spowodować automatyczne zużycie w określonym celu. Dotyczy to też domniemanego zużycia z bezpośrednią dostawą, zużycia w ramach projektu lub księgowania produktu jako środka trwałego.  
 
-*Faktury od dostawcy* można najpierw zarejestrować w *rejestrze faktur *niezależnie od zamówienia zakupu, a następnie zatwierdzać je jako rekord względem zamówienia zakupu. Rejestrowanie faktur od dostawcy z zamówieniem zakupu obejmuje uzgadnianie dokumentu przyjęcia produktów z fakturą.  
+*Faktury od dostawcy* można najpierw zarejestrować w *rejestrze faktur* niezależnie od zamówienia zakupu, a następnie zatwierdzać je jako rekord względem zamówienia zakupu. Rejestrowanie faktur od dostawcy z zamówieniem zakupu obejmuje uzgadnianie dokumentu przyjęcia produktów z fakturą.  
 
 Dla zamówienia zakupu można określić *Zasady podziału księgowań*, aby opisać sposób księgowania. Można także określić sposób uzyskiwania alokacji środków budżetu, o ile jest on uwzględniony w konfiguracji.  
 

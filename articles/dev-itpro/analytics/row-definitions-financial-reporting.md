@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 06a75889e62cbba6e47a8543cf663868df5ae2e3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 06/13/2017
 
 Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zawartość każdego wiersza w raporcie finansowym. Definicję wiersza można łączyć z definicjami kolumn, drzewa raportowania i raportów, by tworzyć grupy elementów konstrukcyjnych dostępne dla wielu firm.
 
-<a name="create-a-row-definition"></a>Tworzenie definicji wiersza
+<a name="create-a-row-definition"></a>Tworzenie definicji wierszy
 -----------------------
 
 1.  W Projektancie raportów w okienku nawigacji kliknij **Definicje wierszy**.
@@ -68,8 +68,8 @@ Wymiar jest częścią wspólną danych i wartości. W projektancie raportów mo
 | Opcja                | Opis                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Wymiar             | Wzorzec określający wymiar, który ma zostać dodany do definicji wiersza. Ten wzorzec zawiera jeden znak & lub znak \# dla każde pozycji w wymiarach. Ogólnie rzecz biorąc używaj wyłącznie znaków & dla wymiaru Konto główne i wyłącznie znaków # dla innych wymiarów. |
-| Początek zakresu wymiaru | Pierwsza wartość tego wymiaru, która ma zostać dodana do definicji wiersza.                                                                                                                                                                                                                 |
-| Koniec zakres wymiaru   | Ostatnia wartość tego wymiaru, która ma zostać dodana do definicji wiersza.                                                                                                                                                                                                                  |
+| Początek zakresu wymiarów | Pierwsza wartość dla tego wymiaru, która ma zostać dodana do definicji wierszy.                                                                                                                                                                                                                 |
+| Koniec zakresu wymiarów   | Ostatnia wartość tego wymiaru, która ma zostać dodana do definicji wiersza.                                                                                                                                                                                                                  |
 
 Aby dodać wymiary do definicji wiersza, należy wykonać następujące kroki:
 
@@ -93,7 +93,7 @@ W przypadku bilansu, w którym kwoty są zaokrąglane, sumy mogą się nie bilan
 Aby dostosować zaokrąglenie w bilansie, należy wykonać następujące kroki:
 
 1.  W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
-2.  W menu **Edycja** kliknij **Korekta zaokrąglania**.
+2.  W menu **Edycja** kliknij polecenie **Doksięgowanie zaokrągleń**.
 3.  W oknie dialogowym **Korygowanie zaokrągleń** wpisz następujące wartości:
     -   **Wiersz korekty zaokrąglania** — kod wiersza, który powinien być korygowany w celu zbilansowania bilansu.
     -   **Wiersz sumy aktywów** — kod wiersza dla wierszy w bilansie, który zawiera sumy aktywów.
@@ -121,23 +121,23 @@ Można tworzyć i modyfikować style czcionek dla raportu. Następnie można zas
 <td>Tworzenie stylu czcionki</td>
 <td><ol>
 <li>W Projektancie raportów w menu <strong>Format</strong> kliknij <strong>Style i formatowanie</strong>.</li>
-<li>W oknie dialogowym <strong>Style i formatowanie</strong> kliknij przycisk <strong>Nowy</strong>, a następnie nadaj unikatową nazwę nowemu stylowi.</li>
-<li>Wybierz czcionki i kliknij <strong>OK</strong>.</li>
+<li>W oknie dialogowym <strong>Style i formatowanie</strong> kliknij przycisk <strong>Nowy</strong>, po czym nadaj nowemu stylowi unikatową nazwę.</li>
+<li>Zaznacz parametry czcionki i kliknij przycisk <strong>OK</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Modyfikowanie stylu czcionki</td>
 <td><ol>
 <li>W Projektancie raportów w menu <strong>Format</strong> kliknij <strong>Style i formatowanie</strong>.</li>
-<li>W oknie dialogowym <strong>Style i formatowanie</strong> wybierz styl, który chcesz zmodyfikować, a następnie kliknij przycisk <strong>Modyfikuj</strong>.</li>
-<li>Wybierz czcionki i kliknij <strong>OK</strong>.</li>
+<li>W oknie dialogowym <strong>Style i formatowanie</strong> zaznacz styl, który chcesz zmodyfikować, i kliknij przycisk <strong>Modyfikuj</strong>.</li>
+<li>Zaznacz parametry czcionki i kliknij przycisk <strong>OK</strong>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Stosowanie stylu czcionki</td>
 <td><ol>
 <li>W Projektancie raportów, w definicji lub definicji kolumny albo w nagłówkach i stopkach, wybierz jedną lub więcej komórek.</li>
-<li>Na liście <strong>Styl</strong> na pasku narzędzi, wybierz styl czcionki.</li>
+<li>Na pasku narzędzi na liście <strong>Styl</strong> zaznacz styl czcionki.</li>
 </ol></td>
 </tr>
 </tbody>

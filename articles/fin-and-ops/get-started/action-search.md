@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: cd024f2bc06fca9c21ea41fbed44efbc519cee94
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 9b9bb0acc6f0dc1722c916f133eed766ffdd4cc8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -62,7 +61,7 @@ Często w programie Finance and Operations trzeba znać zarówno lokalizację, j
 -   Separator menu (jeśli przycisk jest w nazwanej grupie wewnątrz przycisku menu)
 -   Grupa lub karta na stronie (na przykład nazwa skróconej karty)
 
-Na przykład w polu **wyszukiwania akcji** wpisujesz **tot** i sprawdzasz listę wyników. Wyróżniony jest pierwszy wpis, dla przycisku o nazwie **Sumy** (ang. Totals). Widoczna jest również ścieżka przycisku **Zamówienie sprzedaży** &gt; **Widok**. Część **Zamówienie sprzedaży** ścieżki odpowiada karcie **Zamówienie sprzedaży** w okienku akcji, a część **Widok** ścieżki odpowiada grupie **Widok** na tej karcie. Podobnie ścieżka przycisku **Rabat końcowy** (ang. Total discount) (**Sprzedaż** &gt; **Oblicz**) informuje, że ten przycisk znajduje się w grupie **Oblicz** na karcie **Sprzedaż** w okienku akcji. Te dane pomagają zrozumieć funkcje przycisków, które będą wywoływane przez wyszukiwanie akcji (jeśli dany zostanie wybrany na liście wyników). 
+Na przykład w polu **wyszukiwania akcji** wpisujesz **tot** i sprawdzasz listę wyników. Wyróżniony jest pierwszy wpis, dla przycisku o nazwie **Sumy** (ang. Totals). Widoczna jest również ścieżka przycisku **Zamówienie sprzedaży** &gt; **Widok**. Część **Zamówienie sprzedaży** w ścieżce odpowiada karcie **Zamówienie sprzedaży** w okienku akcji, a część **Widok** ścieżki odpowiada grupie **Widok** na tej karcie. Podobnie ścieżka przycisku **Rabat końcowy**(**Sprzedaj** &gt; **Oblicz**) informuje, że ten przycisk znajduje się w grupie **Oblicz** na karcie **Sprzedaj** okienka akcji. Te dane pomagają zrozumieć funkcje przycisków, które będą wywoływane przez wyszukiwanie akcji (jeśli dany zostanie wybrany na liście wyników). 
 
 [![action-search-field-with-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png) 
 

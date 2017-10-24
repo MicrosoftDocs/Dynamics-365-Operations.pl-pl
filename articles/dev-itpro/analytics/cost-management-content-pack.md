@@ -16,13 +16,13 @@ ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fb5c39a65ea59acda05b0828f84bfaea4ad75062
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -52,7 +52,7 @@ Pakiet zawartości **Zarządzanie kosztami** dostępny w usłudze Microsoft Powe
 Głównym źródłem danych jednostki CostAggregatedCostStatementEntryEntity jest tabela CostStatementCache. Ta tabela jest zarządzana przez strukturę pamięci podręcznej zestawów danych. Domyślnie tabela jest aktualizowana co 24 godziny, ale można włączyć ręczne aktualizacje w konfiguracji pamięci podręcznej danych. Następnie można wykonywać ręczną aktualizację w obszarze roboczym **Zarządzanie kosztami** lub **Analiza kosztów**. Po zaktualizowaniu pamięci podręcznej zarządzania kosztami trzeba zaktualizować połączenie OData na stronie BI.com, aby zobaczyć zaktualizowane dane w witrynie. Miary odchyleń (zakup, produkcja) w tym pakiecie zawartości usługi Power BI odnoszą się tylko do elementów, które są wyceniane metodą inwentaryzacji Koszt standardowy. Odchylenie produkcji jest obliczane jako różnica między kosztami aktywnym i zrealizowanym. Odchylenie produkcji jest obliczane w momencie, gdy zlecenie produkcyjne uzyskuje stan **Zakończone**. Aby uzyskać więcej informacji o typach odchyleń produkcji i sposobach ich obliczania, zobacz [Analiza odchyleń dla zrealizowanego zlecenia produkcyjnego](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Pakiet zawartości usługi Power BI **Zarządzanie kosztami** jest dostępny w witrynie PowerBI.com. Aby uzyskać więcej informacji o tworzeniu połączenia z danymi programu Microsoft Dynamics 365 for Finance and Operations i ich ładowaniu, zobacz [Dostęp do pakietu zawartości usługi Power BI z witryny Microsoft Dynamics 365 for Operations](power-bi-home-page.md).
+Zawartość **Zarządzanie kosztami** usługi Power BI jest dostępna w witrynie PowerBI.com. Aby uzyskać więcej informacji o tworzeniu połączenia z danymi programu Microsoft Dynamics 365 for Finance and Operations i ich ładowaniu, zobacz [Przechodzenie do pakietów zawartości usługi Power BI z witryny PowerBI.com](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
 Pakiet zawartości zawiera zestaw stron raportów. Każda strona zawiera zestaw wskaźników, które są wizualizowane jako wykresy, kafelki i tabele. Poniższa tabela zawiera omówienie wizualizacji dostępnych w pakiecie zawartości usługi Power BI **Zarządzanie kosztami**.

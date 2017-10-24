@@ -16,13 +16,13 @@ ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a8739f426c401aacbab56179bad429a231060f57
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fade9e2acdb94daa6a908d949c578fd7ed439882
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -106,7 +106,7 @@ W poniższej tabeli opisano formanty istniejące na karcie **Grupa raportów**.
 <td>Poziom podsumowania</td>
 <td>Określ poziom szczegółowości raportów.
 <ul>
-<li><strong>Finanse</strong> — raport wysokiego poziomu. Nie można wyświetlić szczegółów kont i wymiarów, z wyjątkiem tych, które zostały dodane przy użyciu drzewa raportowania.</li>
+<li><strong>Finanse</strong> — Raport sumaryczny wysokiego poziomu. Nie można wyświetlić szczegółów kont i wymiarów, z wyjątkiem tych, które zostały dodane przy użyciu drzewa raportowania.</li>
 <li><strong>Finanse i konto</strong> — raport zawierający ogólne podsumowanie i szczegóły konta.</li>
 <li><strong>Finanse, konto i transakcja</strong> — raport zawierający ogólne podsumowanie i szczegóły transakcji.</li>
 </ul></td>
@@ -115,14 +115,14 @@ W poniższej tabeli opisano formanty istniejące na karcie **Grupa raportów**.
 <td>Tymczasowe</td>
 <td>Określ typy działań objętych raportami.
 <ul>
-<li><strong>Tylko zaksięgowane działania</strong> — obejmują tylko transakcje i salda, które są zaksięgowane w danych finansowych.</li>
-<li><strong>Działania zaksięgowane i niezaksięgowane</strong> — obejmują wszystkie transakcje i salda, które zostały wprowadzone i zaksięgowane w danych finansowych.</li>
-<li><strong>Tylko niezaksięgowane działania</strong> — obejmują tylko transakcje i salda, które zostały wprowadzone, ale nie są jeszcze zaksięgowane w danych finansowych.</li>
+<li><strong>Tylko zaksięgowane działania</strong> — Raport będzie zawierał tylko transakcje i salda zaksięgowane w danych finansowych.</li>
+<li><strong>Zaksięgowane i niezaksięgowane działania</strong> — Raport będzie zawierał wszystkie transakcje i salda wprowadzone oraz zaksięgowane w danych finansowych.</li>
+<li><strong>Tylko niezaksięgowane działania</strong> — Raport będzie zawierał tylko transakcje, które zostały wprowadzone do danych finansowych, ale nie są jeszcze zaksięgowane.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Uwzględnij wszystkie waluty raportowania</td>
-<td>W tym miejscu są wyświetlone wszelkie dodatkowe waluty raportowania skonfigurowane w systemie Microsoft Dynamics ERP. Zaznacz to pole wyboru, aby generować dodatkowe raporty we wskazanych walutach. Aby wyświetlić te raporty w przeglądarce sieci web, kliknij przycisk <strong>Waluta</strong> i wybierając walutę.</td>
+<td>W tym miejscu są wyświetlone wszelkie dodatkowe waluty raportowania skonfigurowane w systemie Microsoft Dynamics ERP. Zaznacz to pole wyboru, aby generować dodatkowe raporty we wskazanych walutach. Aby wyświetlić te raporty w Podglądzie sieci Web, kliknij przycisk <strong>Waluta</strong> i wybierz walutę.</td>
 </tr>
 <tr class="even">
 <td>Informacje o dacie niezapisane w definicji raportu</td>
@@ -144,8 +144,8 @@ W definicji raportu są zapisywane tylko ustawienia domyślnego okresu podstawow
 <td>Raporty w grupie</td>
 <td>Dodawanie, usuwanie i zmienianie kolejności raportów w grupie raportów.
 <ul>
-<li>Aby dodać definicje raportów do grupy raportów, kliknij dwukrotnie grupę raportów, aby ją otworzyć, a następnie kliknij <strong>Dodaj</strong>. Wybierz raporty, które mają znaleźć się w grupie raportów, a następnie kliknij <strong>OK</strong>.</li>
-<li>Aby usunąć raport z grupy raportów, wybierz go, a następnie kliknij <strong>Usuń</strong>.</li>
+<li>Aby dodać definicje raportów do grupy raportów, kliknij dwukrotnie grupę raportów, aby ją otworzyć, a następnie kliknij przycisk <strong>Dodaj</strong>. Zaznacz raporty, które chcesz umieścić w grupie raportów, a następnie kliknij przycisk <strong>OK</strong>.</li>
+<li>Aby usunąć raport z grupy raportów, zaznacz go, a następnie kliknij przycisk <strong>Usuń</strong>.</li>
 <li>Aby zmodyfikować kolejność, w jakiej raporty są generowane, wybierz raport na liście, a następnie kliknij przycisk <strong>Przenieś w górę</strong> lub <strong>Przenieś w dół</strong>.</li>
 </ul></td>
 </tr>

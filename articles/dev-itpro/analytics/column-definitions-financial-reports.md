@@ -16,13 +16,13 @@ ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: d976988a599f65de9957c53a2d149576a1a11d83
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 924177f4974358d2283dfd46306d663c27ccd87b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -53,13 +53,13 @@ Definicja kolumny może zawierać do dwóch do 255 kolumn.
 
 1.  W Projektancie raportów kliknij **Definicje kolumn**, a następnie otwórz definicje kolumny do zmodyfikowania.
 2.  Wybierz kolumnę, w której chcesz wstawić nową kolumnę.
-3.  W menu **Edycja** kliknij **Wstaw kolumnę**. Nowa kolumna pojawi się z lewej strony wybranej kolumny.
+3.  W menu **Edycja** kliknij **Wstaw kolumnę**. Nowa kolumna pojawi się na lewo od zaznaczonej kolumny.
 
 ### <a name="delete-a-column-from-a-column-definition"></a>Usuwanie kolumny z definicji kolumny
 
-1.  W Projektancie raportów kliknij **Definicje kolumn**, a następnie otwórz definicje kolumny do zmodyfikowania.
-2.  Wybierz kolumnę do usunięcia.
-3.  W menu **Edycja** kliknij **Usuń kolumnę**.
+1.  W Projektancie raportów kliknij pozycję **Definicje kolumn**, a następnie otwórz definicję kolumny, którą chcesz zmodyfikować.
+2.  Zaznacz kolumnę, którą chcesz usunąć.
+3.  W menu **Edycja** kliknij polecenie **Usuń kolumnę**.
 
 ## <a name="contents-of-a-column-definition"></a>Zawartość definicji kolumny
 Definicja kolumny zawiera następujące informacje:
@@ -71,7 +71,7 @@ Definicja kolumny zawiera następujące informacje:
 
 Te informacje są wyświetlane w następujących obszarach w definicji kolumny:
 
--   Obszar nagłówka definicji kolumn zawiera tekst nagłówka i formatowanie, które pojawia się w raporcie. Nagłówek może dotyczyć pojedynczej kolumny danych, może obejmować wiele kolumn lub może dotyczyć kolumn na zasadach warunkowych. Definicja kolumny może zawierać dowolną liczbę wierszy nagłówka kolumny. **Uwaga:** nagłówki kolumn dotyczą każdej kolumny danych w raporcie. Nagłówki raportu dotyczą całego raportu. Nagłówki raportu definiuje się na karcie **Nagłówki i stopki** w definicji raportu.
+-   Obszar nagłówka definicji kolumn zawiera tekst nagłówka i formatowanie, które pojawia się w raporcie. Nagłówek może obowiązywać do jednej kolumny danych, obejmować wiele kolumn albo dotyczyć określonych kolumn warunkowo. Definicja kolumny może zawierać dowolną liczbę wierszy nagłówków. **Uwaga:** nagłówki kolumn dotyczą każdej kolumny danych w raporcie. Nagłówki raportu dotyczą całego raportu. Nagłówki raportu definiuje się na karcie **Nagłówki i stopki** w definicji raportu.
 -   Wiersze szczegółów kolumny to wiersze w obszarze wierszy nagłówka w definicji kolumny. Wiersze szczegółów kolumny definiują informacje uwzględniona w raporcie. W poniższej tabeli wymieniono i opisano wiersze szczegółów kolumny.
 
     | Nazwa wiersza szczegółów kolumny                                                | Opis                                                                                            |
@@ -102,7 +102,7 @@ Komórka **Ograniczenia kolumny** może zawierać kody, które ograniczają lub 
 2.  Kliknij dwukrotnie komórkę **Ograniczenia kolumny** dla kolumny, którą chcesz ograniczyć.
 3.  W oknie dialogowym **Ograniczenia kolumny** wybierz jeden lub więcej kodów z listy, a następnie kliknij **OK**.
 
-### <a name="column-restriction-codes"></a>Kody ograniczenia kolumny
+### <a name="column-restriction-codes"></a>Kody ograniczeń kolumny
 
 W poniższej tabeli opisano kody ograniczeń dotyczących kolumn.
 
@@ -182,7 +182,7 @@ Projektant raportów może automatycznie wygenerować nagłówki kolumn na podst
 
 ### <a name="create-a-conditional-spanning-header"></a>Tworzenie warunkowego nagłówka rozszerzonego
 
-Nagłówki rozszerzone mogą obejmować kilka kolumn opartych na danych określonego okresu. Na przykład jeśli masz raport budżetu dla roku obrachunkowego i chcesz wyświetlać rzeczywiste budżety z poprzednich miesięcy razem z prognozowanymi budżetami przyszłych miesięcy, możesz użyć nagłówka rozszerzonego, aby automatycznie aktualizować nagłówek raportu. Podczas tworzenia warunkowych nagłówków rozszerzonych należy pamiętać o następujących sytuacjach:
+Nagłówki rozszerzone mogą obejmować kilka kolumn opartych na danych określonego okresu. Na przykład jeśli masz raport budżetu dla roku obrachunkowego i chcesz wyświetlać rzeczywiste budżety z poprzednich miesięcy razem z prognozowanymi budżetami przyszłych miesięcy, możesz użyć nagłówka rozszerzonego, aby automatycznie aktualizować nagłówek raportu. Przy tworzeniu nagłówka warunkowego łączenia należy pamiętać o następujących przypadkach:
 
 -   Każdy warunek zatrzymania (pole **Rozszerz do**) dopasowany przed warunkiem rozpoczęcia (pole **Rozszerz od**) jest ignorowany. Na przykład kolumna B ma warunek rozszerzenia zdefiniowany jako BASE+1 do BASE, BASE jest w kolumnie C, a BASE+1 jest w kolumnie D. W takim przypadku warunek zatrzymania w kolumnie C jest ignorowany i drukowanie nagłówka zaczyna się w kolumnie D.
 -   W przypadku określenia nagłówków kolumn, które nakładają się na siebie, zachodzą one na siebie po wydrukowaniu raportu. Raport jest generowany, ale następujące ostrzeżenie jest wyświetlane w polu **Stan kolejki raportu**: „Nagłówki kolumny BASE zachodzą na inne nagłówki kolumny mogą powodować nakładanie się tekstu”. Na przykład definicja nagłówka w kolumnie B to B do BASE +1, a definicja nagłówka w kolumnie D to BASE+1 do F. W takim przypadku nagłówki są drukowane jeden na drugim i są nieczytelne. Zawsze gdy w definicji **Rozszerz od/Rozszerz do** używana jest wartość BASE, należy wyświetlić wygenerowany raport, aby sprawdzić, czy nagłówki nie nakładają się.
@@ -209,10 +209,10 @@ Phyllis tworzy raport dla dynamicznej prognozy sześciu miesięcy. Chce, aby sł
 | Nagłówek 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
 | Nagłówek 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
 | Typ kolumny         | DESC | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
-| Kod/atrybut księgi |      | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    | ACTUAL        | BUDGET2012    |
+| Kod/atrybut księgi |      | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    | RZECZYWISTA        | BUDGET2012    |
 | Rok obrachunkowy         |      | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          |
 | Okres              |      | 1             | 1             | 2             | 2             | 3             | 3             | 4             | 4             | 5             | 5             | 6             | 6             |
-| Objęte okresy     |      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      |
+| Uwzględnione okresy     |      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      |
 | Szerokość kolumna        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Sterowanie wydrukiem       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
@@ -282,10 +282,10 @@ Komórka **Dodatkowe odstępy przed kolumną** określa szerokość separatora p
 
 Komórka **Zmiana formatu/waluty** określa formatowanie wartości dziesiętnych, waluty i kwot procentowych w kolumnie. To formatowanie zastępuje wszelkie formatowanie określone w definicji raportu lub domyślnych ustawieniach systemu.
 
-#### <a name="assign-a-format-currency-override-to-a-report-column"></a>Przypisywanie zastąpienia waluty/formatu do kolumny raportu
+#### <a name="assign-a-format-currency-override-to-a-report-column"></a>Przypisywanie formatu/waluty zastępczej do kolumny raportu
 
-1.  W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
-2.  Kliknij dwukrotnie komórkę **Zmiana formatu/waluty** w kolumnie kwoty.
+1.  W Projektancie raportów otwórz definicję kolumn, którą chcesz zmodyfikować.
+2.  Kliknij dwukrotnie komórkę **Format/waluta zastępcza** w kolumnie kwoty.
 3.  W oknie dialogowym **Zmiana formatu** wybierz opcje formatowania.
 
 ### <a name="add-a-print-control-code"></a>Dodawanie kodu sterowania wydrukiem
@@ -317,10 +317,10 @@ Komórka **Sterowanie wydrukiem** może zawierać kody zmieniające widok lub us
 
 #### <a name="add-print-control-codes-to-a-report-column"></a>Dodawanie kodów sterowania wydrukiem do kolumny raportu
 
-1.  W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1.  W Projektancie raportów otwórz definicję kolumn, którą chcesz zmodyfikować.
 2.  Kliknij dwukrotnie komórkę **Sterowanie wydrukiem**.
 3.  W oknie dialogowym **Sterowanie wydrukiem** wybierz kod na liście **Wybierz opcje sterowania wydrukiem**. Aby wybrać więcej niż jeden kod, przytrzymaj klawisz Ctrl i zaznaczaj kolejne kody.
-4.  Wybierz opcję w polu **Opcje drukowania warunkowego**. Domyślnie wybrane jest ustawienie **(brak)**. W tym samym czasie może być wybrany tylko jeden kod drukowania warunkowego.
+4.  Wybierz opcję w polu **Opcje drukowania warunkowego**. Domyślnie zaznaczona jest opcja **(brak)**. W tym samym czasie może być wybrany tylko jeden kod drukowania warunkowego.
 5.  Kliknij przycisk **OK**
 
 > [!TIP]
@@ -349,12 +349,12 @@ Typy danych zawartych w każdej kolumnie w raporcie określa wartość w wierszu
     <tbody>
     <tr class="odd">
     <td>FD</td>
-    <td>Wyświetl dane finansowe lub dane z arkusza programu Excel podczas korzystania z kolumny <strong>Łącze do wymiarów finansowych</strong> lub kolumny <strong>Łącze do arkusza roboczego</strong> w definicji wiersza. Po wybraniu typu kolumny <strong>FD</strong>, domyślne ustawienia są automatycznie określane dla następujących wierszy: <ul>
-    <li><strong>Kategoria kodu/atrybutu księgi:</strong> ACTUAL</li>
-    <li><strong>Kategoria kodu/atrybutu księgi:</strong> ACTUAL</li>
-    <li><strong>Rok obrachunkowy:</strong> BASE</li>
-    <li><strong>Okres:</strong> BASE</li>
-    <li><strong>Objęte okresy:</strong> PERIODIC</li>
+    <td>Wyświetlanie danych finansowych lub danych z arkusza programu Excel, jeśli w definicji wiersza zostanie określona kolumna <strong>Łącze do wymiarów finansowych</strong> lub <strong>Łącze do arkusza</strong>. W przypadku zaznaczenia typu kolumny <strong>WF</strong> następuje automatyczne wprowadzenie ustawień w następujących wierszach: <ul>
+    <li><strong>Kod księgi/kategoria atrybutu:</strong> RZECZYWISTE</li>
+    <li><strong>Kod księgi/kategoria atrybutu:</strong> RZECZYWISTE</li>
+    <li><strong>Rok obrachunkowy:</strong> PODSTAWOWE</li>
+    <li><strong>Okres:</strong> PODSTAWOWE</li>
+    <li><strong>Uwzględnione okresy:</strong> OKRESOWE</li>
     <li><strong>Szerokość kolumny:</strong> 14</li>
     </ul>
 Można zmieniać takie ustawienia domyślne.</td>
@@ -373,7 +373,7 @@ Można zmieniać takie ustawienia domyślne.</td>
     </tr>
     <tr class="odd">
     <td>ACCT (kody kont)</td>
-    <td>Umożliwia wyświetlenie wartości segmentów danych finansowych lub wartości wymiaru, które mają zastosowanie do każdego wiersza. W przypadku raportów szczegółów transakcji, drukowane jest konto w pełni kwalifikowane (na przykład <strong>110140-070-0101</strong>). Jeśli zakresy zostały określone w kolumnie <strong>Łącze do wymiarów finansowych</strong> w powiązanej definicji wiersza, zakres jest ujęty w nawiasy kwadratowe i jest traktowany jako pojedyncza wartość (na przykład <strong>[110140:110700]-070-[0101:0200]</strong>). Dla sprawozdań finansowych i raportów wysokiego poziomu, które są kombinacją kilku kont, drukowane jest łącze danych finansowych z definicji wiersza (na przykład <strong>1100:1200</strong>).</td>
+    <td>Umożliwia wyświetlenie wartości segmentów danych finansowych lub wartości wymiaru, które mają zastosowanie do każdego wiersza. W przypadku raportów szczegółów kont i transakcji drukowane jest w pełni kwalifikowane konto (np. <strong>110140-070-0101</strong>). Jeśli w kolumnie <strong>Łącze do Wymiary finansowe</strong> w powiązanej definicji wiersza określono zakresy, każdy zakres jest ujęty w nawiasy kwadratowe i traktowany jak jedna wartość (np. <strong>[110140:110700]-070-[0101:0200]</strong>). W raportach finansowych oraz ogólnych raportach obejmujących kilka kont drukowane jest łącze danych finansowych pochodzące z definicji wiersza (np. <strong>1100:1200</strong>).</td>
     </tr>
     <tr class="even">
     <td>FILL</td>
@@ -381,19 +381,19 @@ Można zmieniać takie ustawienia domyślne.</td>
     </tr>
     <tr class="odd">
     <td>PAGE</td>
-    <td>Umożliwia wstawienie pionowego podziału strony w raporcie. Kolumny będące na prawo od kolumny <strong>PAGE</strong> pojawiają się na innej stronie.</td>
+    <td>Umożliwia wstawienie pionowego podziału strony w raporcie. Kolumny znajdujące się na prawo od kolumny <strong>STRONA</strong> trafiają na następną stronę.</td>
     </tr>
     <tr class="even">
     <td>WKS</td>
-    <td>Umożliwia wyświetlanie danych pobieranych z arkusza programu Excel. Po wybraniu typu kolumny <strong>WKS</strong>, domyślne ustawienia są automatycznie określane dla następujących wierszy: <ul>
-    <li><strong>Rok obrachunkowy:</strong> PERIODIC</li>
-    <li><strong>Okres:</strong> BASE</li>
+    <td>Umożliwia wyświetlanie danych pobieranych z arkusza programu Excel. W przypadku zaznaczenia typu kolumny <strong>ARK</strong> następuje automatyczne wprowadzenie ustawień w następujących wierszach: <ul>
+    <li><strong>Rok obrachunkowy:</strong> OKRESOWE</li>
+    <li><strong>Okres:</strong> PODSTAWOWE</li>
     </ul>
 Można zmieniać takie ustawienia domyślne.</td>
     </tr>
     <tr class="odd">
     <td>ATTR</td>
-    <td>Umożliwia wyświetlanie atrybutu konta lub transakcji w tej kolumnie, jeśli system księgowy obsługuje atrybuty. Atrybut, który musi mieć zastosowanie do jednego pełnego konta, pobiera podrzędne informacje o koncie lub transakcji z danych finansowych. Atrybuty na poziomie konta wyświetlają dane z konta, a atrybuty na poziomie transakcji wyświetlają dane, które były prawdziwe w chwili zaksięgowania transakcji. Wybranie opcji <strong>ATTR</strong> jako typu kolumny pozwala określić kategorię w wierszu szczegółów <strong>Kod księgi/Kategoria atrybutu</strong> w definicji kolumny.</td>
+    <td>Umożliwia wyświetlanie atrybutu konta lub transakcji w tej kolumnie, jeśli system księgowy obsługuje atrybuty. Atrybut, który musi mieć zastosowanie do jednego pełnego konta, pobiera podrzędne informacje o koncie lub transakcji z danych finansowych. Atrybuty na poziomie konta przedstawiają dane pochodzące z danych wyświetlanych atrybutów na poziomie kont i transakcji, które zaistniały w momencie księgowania transakcji. Jeśli jako typ kolumny zostanie wybrana opcja <strong>ATR</strong>, w definicji kolumny w wierszu szczegółów <strong>Kod księgi/kategoria atrybutu</strong> należy określić kategorię atrybutu.</td>
     </tr>
     </tbody>
     </table>
@@ -435,9 +435,9 @@ Komórka **Okres** określa okres obrachunkowy, który kolumna powinna uwzględn
 
 W każdej specyfikacji okresu można wyjść poza zakres roku obrachunkowego i można łączyć ze sobą lata i zakresy okresów. Na przykład można określić okresy jako **BASE-5** (co odpowiada sześciu okresom wstecz) i uruchomić raport z okresem podstawowym 2. W takim przypadku raport wyświetla dane dla pierwszych dwóch okresów określonego roku obrachunkowego i ostatnie cztery okresy poprzedniego roku obrachunkowego.
 
-### <a name="specify-the-periods-for-an-fd-column"></a>Określanie okresów dla kolumny FD
+### <a name="specify-the-periods-for-an-fd-column"></a>Określanie okresów dla kolumny WF
 
-1.  W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
+1.  W Projektancie raportów otwórz definicję kolumn, którą chcesz zmodyfikować.
 2.  W kolumnie **FD** kliknij dwukrotnie komórkę w wierszu **Okres**, a następnie wybierz odpowiednią opcję z listy.
 3.  Na pasku formuły powyżej okienka nawigacji lub w komórce **Okres** uzupełnij formułę. Zamień wszystkie znaki numeru (\#) na odpowiednią wartość.
 
@@ -464,8 +464,8 @@ Atrybuty są wartościami danych finansowych, które pomogą dokładniej określ
 #### <a name="apply-an-attribute-filter-for-an-fd-column-on-a-report"></a>Stosowanie filtra atrybutu dla kolumny FD w raporcie
 
 1.  W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
-2.  Kliknij dwukrotnie komórkę **Filtr atrybutu** dla kolumny **FD**.
-3.  W oknie dialogowym **Filtr atrybutu** kliknij dwukrotnie komórkę w kolumnie **Atrybut**, a następnie wybierz typ filtra.
+2.  Kliknij dwukrotnie komórkę **Filtr atrybutów** dla kolumny **WF**.
+3.  W oknie dialogowym **Filtr atrybutów** kliknij dwukrotnie komórkę w kolumnie **Atrybut**, a następnie wybierz typ filtru.
 4.  Aby jeszcze bardziej ograniczyć liczbę wyników, należy wprowadzić zakres w kolumnach **Od** i **Do**. Komórka **Od** musi zawierać wartość.
 5.  Kliknij przycisk **OK**
 
@@ -473,13 +473,13 @@ Atrybuty są wartościami danych finansowych, które pomogą dokładniej określ
 
 W poniższym przykładzie przedstawiono część opisu kolumny zawierającą atrybut konta w wierszu **Kod księgi/Kategoria atrybutu**. Filtr atrybutu dla tej kolumny określa zakres wartości, które mają być ujęte w raporcie.
 
-|                              | I    | mld                    |
+|                              | I    | B                    |
 |------------------------------|------|----------------------|
-| Typ kolumny                  | DESC | FD                   |
-| Kod księgi/Atrybut kategorii |      | ACTUAL               |
+| Typ kolumny                  | OPIS | WF                   |
+| Kod księgi/kategoria atrybutu |      | RZECZYWISTA               |
 | Rok obrachunkowy                  |      | BASE                 |
 | Okres                       |      | 1:BASE               |
-| Objęte okresy              |      | PERIODIC             |
+| Uwzględnione okresy              |      | PERIODIC             |
 | ...                          |      |                      |
 | Szerokość kolumna                 | 30   |                      |
 | ...                          |      |                      |
@@ -487,7 +487,7 @@ W poniższym przykładzie przedstawiono część opisu kolumny zawierającą atr
 
 ### <a name="dimension-filter-in-a-column-definition"></a>Filtr wymiaru w definicji kolumny
 
-Filtr wymiaru służy do ograniczania kolumny **FD** do określonych wartości wymiaru. Filtr może zawierać jeden wymiar, zakres wymiarów lub grupę wymiarów. Filtr może również uwzględniać zestawy wartości wymiarów. Ponieważ wartości wymiarów mogą być różne, system oparty na wymiarach nie musi odpowiadać dokładnej długości. Filtr jest stosowane niezależnie od tego, czy raport obejmuje drzewo raportowania. Można użyć symbolu wieloznacznego (\* lub ?) w dowolnym miejscu. W przypadku określenia wielu kont, należy rozdzielić je przecinkami, np.: +Konto =\[1200\], + Konto=\[1100\], Dział=\[01?\] Aby otrzymywać informacje o wszystkich działach dla wybranego konta, można wykluczyć wymiar Dział z filtra wymiaru. Na przykład oba z poniższych filtrów wymiarów są obsługiwane w taki sam sposób:
+Filtr wymiaru służy do ograniczania kolumny **FD** do określonych wartości wymiaru. Filtr może uwzględniać jeden wymiar, zakres wymiarów lub grupę wymiarów. Filtr może również uwzględniać zestawy wartości wymiarów. Ponieważ wartości wymiarów mogą być różne, system oparty na wymiarach nie musi odpowiadać dokładnej długości. Filtr jest stosowane niezależnie od tego, czy raport obejmuje drzewo raportowania. Można użyć symbolu wieloznacznego (\* lub ?) w dowolnym miejscu. W przypadku określenia wielu kont, należy rozdzielić je przecinkami, np.: +Konto =\[1200\], + Konto=\[1100\], Dział=\[01?\] Aby otrzymywać informacje o wszystkich działach dla wybranego konta, można wykluczyć wymiar Dział z filtra wymiaru. Na przykład oba z poniższych filtrów wymiarów są obsługiwane w taki sam sposób:
 
 -   +Konto=\[1100\],Dział
 -   +Konto=\[1100\]

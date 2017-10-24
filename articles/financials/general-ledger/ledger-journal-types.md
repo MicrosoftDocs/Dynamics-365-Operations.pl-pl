@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 624f38a7348ede3cc9e6fb7ce0b78a61b1452b61
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 6f665f34055e36775c8bb41be4aae9c4577639d7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -59,7 +58,7 @@ W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze f
 | Przelew bankowy dostawcy            | Utwórz plik przekazu skryptu dłużnego, który może zostać przesłany do banku Twojej organizacji.                                                                                                                                                                                                                                                                      | Arkusz przekazów                                             |
 | Wypłaty dla dostawców               | Utwórz transakcje rozchodów dostawcy.                                                                                                                                                                                                                                                                                                                    | Arkusz płatności                                                |
 | Skrypt dłużny wystawiony dostawcy       | Pobieranie skryptów dłużnych dostawcy jako metoda płatności. Aby użyć tego typu arkusza, wyczyść opcję **Automatyczne tworzenie i księgowanie arkusza wystawiania podczas księgowania faktur** na stronie **Metody płatności — Dostawcy**.                                                                                                                                          | Arkusz wystawiania skryptów dłużnych                                   |
-| Pula faktur od dostawcy z wyłączeniem księgowanie | Utwórz transakcje faktur dostawcy, które nie zostały jeszcze zaksięgowane na tymczasowym koncie przybycia.                                                                                                                                                                                                                                                             | Szczegóły puli faktur od dostawcy bez księgowania                  |
+| Pula faktur od dostawcy z wyłączeniem księgowań | Utwórz transakcje faktur dostawcy, które nie zostały jeszcze zaksięgowane na tymczasowym koncie przybycia.                                                                                                                                                                                                                                                             | Szczegóły puli faktur od dostawcy bez księgowania                  |
 | Pula faktur dostawcy               | Utwórz transakcje puli faktur dostawcy.                                                                                                                                                                                                                                                                                                                    |                                                                |
 | Rejestracja faktury dostawcy          | Zaksięguj faktury od dostawcy znajdujące się w arkuszu.                                                                                                                                                                                                                                                                                                                 | Arkusz faktur                                                |
 | Skrypt dłużny ponownie wystawiony dostawcy     | Ponownie wystaw skrypt dłużny, który wcześniej został uznany przez bank Twojej organizacji.                                                                                                                                                                                                                                                                      | Arkusz ponownego wystawiania skryptów dłużnych                                 |
