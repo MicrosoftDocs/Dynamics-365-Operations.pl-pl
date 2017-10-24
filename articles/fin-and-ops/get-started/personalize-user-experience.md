@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -63,7 +63,7 @@ Personalizacje bezpośrednie to te, które wykonujesz bezpośrednio z zamiarem z
 
 Na stronie w ten sposób będziesz personalizować element, jeśli chcesz zmienić etykietę elementu, ukryć go, tak aby nie był widoczny na stronie (to nie powoduje zmiany żadnych danych, po prostu informacje nie będą pokazywane), uwzględnić informacje w sekcji podsumowania skróconej karty (jeśli element jest na skróconej karcie), pominąć pole podczas naciskania klawisza Tab lub zablokować możliwość zmiany danych poprzez oznaczenie ich jako „Nie edytuj”. 
 
-Jeśli chcesz przenieść lub ukryć elementy lub wprowadzić kilka zmian, możesz skorzystać z paska narzędzi Personalizacja, który jest dostępny na stronie właściwości elementów po wybraniu opcji **Personalizuj ten formularz**. Pasek narzędzi personalizacji jest również dostępny w okienku akcji formularza, w obszarze grupy Personalizacja na karcie **Opcje**. Wybierz **Personalizuj ten formularz**, aby wyświetlić pasek narzędzi do personalizacji. 
+Jeśli chcesz przenieść lub ukryć elementy lub wprowadzić kilka zmian, możesz skorzystać z paska narzędzi Personalizacja, który jest dostępny na stronie właściwości elementów po wybraniu opcji **Personalizuj ten formularz**. Pasek narzędzi Personalizacja jest także dostępny w okienku akcji formularza w grupie Personalizuj karty **Opcje**. Wybierz opcję **Personalizuj ten formularz**, a zobaczysz pasek narzędzi Personalizacja. 
 
 [![Pasek narzędzi do personalizacji](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
@@ -90,7 +90,7 @@ Wybierz przycisk **Zamknij**, aby zamknąć pasek narzędzi i przywrócić stron
 Zmiany wprowadzane przy użyciu paska narzędzi Personalizacja są domyślne. Ustawienia personalizacji są aktywne natychmiast po ich wprowadzeniu i nie trzeba klikać przycisku **Zapisz**. W niektórych przypadkach po wybraniu narzędzia pojawi się obok ikona kłódki. Oznacza to, że w celu zapewnienia prawidłowego działania strony nie można zmieniać właściwości związanych z wybranym narzędziem. Po otwarciu paska narzędzi personalizacji stronę przestaje być interaktywna. Nie można wprowadzać danych, ani zwijać lub rozwijać sekcji.
 
 ## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Personalizacja bezpośrednia: dodawanie kafelka lub listy do obszaru roboczego
-Niektóre strony z listami będą miały dodatkową funkcję personalizacji dostępną w okienku akcji w grupie personalizacji na karcie opcji. Wybierz **Dodaj do obszaru roboczego**, aby wyświetlić listę rozwijaną, która umożliwia pokazywanie informacji na bieżącej liście (filtrowanych, sortowanych lub domyślnie) w obszarze roboczym w formie listy lub kafelka podsumowania (kafelek może pokazywać liczbę elementów na liście). 
+Niektóre strony z listami będą zawierały dodatkową funkcję personalizacji dostępną w okienku akcji, w grupie Personalizuj karty Opcje. Wybierz opcję **Dodaj do obszaru roboczego**, aby otworzyć listę rozwijaną umożliwiającą wyświetlenie informacji na bieżącej liście (odfiltrowanej i posortowanej lub domyślnej) w obszarze roboczym w formie listy lub kafelka (można ich użyć do wyświetlenia liczby pozycji na liście). 
 
 [![Dodaj do obszaru roboczego](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
 

@@ -18,13 +18,15 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 4399dc7374ae11f2eca3add37b60c50574dfad9d
+ms.sourcegitcommit: 61395e0e57eb02aaa1c95a7dbd9c15082b822701
+ms.openlocfilehash: 15992b1666caea21cdcf440fefcf65ff18111801
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/05/2017
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>Strona początkowa wdrożenia lokalnego
+
+[!include[banner](../includes/banner.md)]
 
 Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition można wdrożyć lokalnie. Po wybraniu typu wdrożenia lokalnego wymagania systemowe, zapotrzebowanie na sprzęt i funkcje różnią się w stosunku do wdrożenia w chmurze. Ten temat zawiera łącza do zasobów z informacjami specyficznymi dla wdrożeń lokalnych.
 
@@ -32,10 +34,10 @@ Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition mo�
 
 ## <a name="get-started"></a>Rozpocznij
 - [Omówienie rozwiązania Dynamics 365 for Finance and Operations, Enterprise Edition (lokalnego)](on-premises-overview.md)
-- [Wymagania systemowe dla wdrożeń lokalnych](../get-started/system-requirements-on-prem.md)
-- [Szacowanie zapotrzebowania na sprzęt dla środowisk lokalnych](../get-started/hardware-sizing-on-premises-environments.md)
+- [Wymagania systemowe dla wdrożeń lokalnych](../../fin-and-ops/get-started/system-requirements-on-prem.md)
+- [Szacowanie zapotrzebowania na sprzęt dla środowisk lokalnych](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [Zasad cyklu pomocy technicznej dotyczące usług online i oprogramowania lokalnego](../migration-upgrade/versions-update-policy.md)
-- [Zakup rozwiązania Dynamics 365 for Finance and Operations, Enterprise Edition (lokalnego)](../get-started/purchase-on-premises.md)
+- [Zakup rozwiązania Dynamics 365 for Finance and Operations, Enterprise Edition (lokalnego)](../../fin-and-ops/get-started/purchase-on-premises.md)
 
 ## <a name="onboard"></a>Wprowadzenie do pracy
 - [Tworzenie projektu lokalnego w usłudze Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
@@ -44,14 +46,14 @@ Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition mo�
 - [Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>Praca w lokalnym wdrożeniu
-- [Konfigurowanie zarządzania dokumentami](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management)
+- [Konfigurowanie zarządzania dokumentami](../../fin-and-ops/organization-administration/configure-document-management.md)
 - [Importowanie konfiguracji raportowania elektronicznego](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Generowanie dokumentu, publikacji i drukowanie możliwości we wdrożeniach lokalnych](../analytics/printing-capabilities-on-premises.md)
 - [Konfigurowanie pomocy technicznej](../lifecycle-services/support-experience.md)
 - [Rozwiązywanie problemów z połączeniem internetowym klienta](../user-interface/client-disconnected.md)
 
 ## <a name="other-resources"></a>Inne zasoby
-- [Funkcje niezaimplementowane we wdrożeniach lokalnych](../get-started/features-not-implemented-on-prem.md)
+- [Funkcje niezaimplementowane we wdrożeniach lokalnych](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Przestarzałe funkcje](../migration-upgrade/deprecated-features.md)
  
 

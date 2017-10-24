@@ -16,13 +16,13 @@ ms.custom: 3421
 ms.assetid: f5187c21-eec5-4148-b178-b8a5feff7f23
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: aaacf596f2ea1107a53647d779e9d2b6c37ab530
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -48,7 +48,7 @@ Na podstawie poniższych informacji prześledźmy sposób konfigurowania transak
     -   Księga do celów księgowych: VM 1, warstwa księgowania Bieżący
     -   Księga do celów podatkowych: VM 2, warstwa księgowania Podatek
 
-2.  W księdze VM 1 kliknij kartę Księgi pochodne. Wybierz wartość VM 2 w polu Księga i wartość Nabycie w polu Typ transakcji.
+2.  W obszarze VM 1 kliknij kartę Księgi pochodne. Wybierz opcję VM 2 w polu Księga i opcję Nabycie w polu Typ transakcji.
 
 Księgi można dołączać do określonych środków trwałych. 
 

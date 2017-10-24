@@ -1,7 +1,7 @@
 ---
 title: "Średnia ruchoma"
 description: 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0018f5df3d0d2882c300b6458bfb8adfba84e2ad
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/25/2017
 Poniżej przedstawiono wymagania wstępne stosowania ruchomego kosztu średniego jako metody wyceny.
 1.  Na stronie **Grupy modeli pozycji** ustaw grupę modeli pozycji z ruchomym kosztem średnim wybranym w polu **model magazynu**. **Uwaga:** Domyślnie po wybraniu opcji Średnia ruchoma zaznaczane są także pola **Księguj magazyn fizyczny** i **Księguj magazyn finansowy**. 
 
-2.  Na stronie **księgowania** przypisz konta do kont **ceny różnica dla średniej ruchomej** i **Przeszacowanie kosztu dla średniej ruchomej** na karcie **zapasów**. Można użyć konta **Różnica cen dla średniej ruchomej**, jeżeli koszt ma być proporcjonalnie wydatkowany. Dzieje się tak z powodu różnic w kosztach między paragonem zakupu a fakturą zakupu oraz z powodu różnic między pierwotną ilością zapasów i bieżącą dostępną ilością zapasów. Użyj konta **Przeszacowanie kosztu dla średniej ruchomej**, aby dostosować ruchomy średni koszt produktu dla nowej ceny jednostkowej.
+2.  Na stronie **Księgowanie** przypisz konta do kont **Różnica cen dla średniej ruchomej** i **Przeszacowanie kosztu dla średniej ruchomej** na karcie **Zapasy**. Konta **Przeszacowanie kosztu dla średniej ruchomej** należy użyć, gdy koszt ma być zaliczony proporcjonalnie. Dzieje się tak z powodu różnic w kosztach między paragonem zakupu a fakturą zakupu oraz z powodu różnic między pierwotną ilością zapasów i bieżącą dostępną ilością zapasów. Użyj konta **Przeszacowanie kosztu dla średniej ruchomej**, aby dostosować ruchomy średni koszt produktu dla nowej ceny jednostkowej.
 3.  Na stronie **zwolnionych produktów** należy przypisać grupę modeli pozycji z ruchomym kosztem średnim do produktu. **Uwaga:** Proces zamknięcia zapasów powoduje zamknięcie tylko okresu obrachunkowego. Nie wpływa na produkty, które mają przypisany ruchomy kosz średni w grupie modeli pozycji.
 
 ## <a name="convert-to-the-moving-average-costing-method"></a>Metoda konwertowania na ruchomy koszt średni

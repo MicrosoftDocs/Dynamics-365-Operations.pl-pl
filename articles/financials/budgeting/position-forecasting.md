@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2dffb2634701210852b4b146a762434cf6df07e3
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 9c0ae4ed27578301573bead17ff2175bb9042036
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -131,7 +130,7 @@ Tę funkcję oferuje opcja **Kopii do scenariusza**. Zwróć uwagę, że każde 
 
 ### <a name="modifying-forecast-positions"></a>Modyfikowanie podlegających prognozie
 
-Zmiany wprowadzone do stanowisk podlegających prognozie są ograniczone do tych stanowisk. Zmiany nie wpływają na rekordy stanowisk w module Zasoby ludzkie. Większość zmian jest też ograniczona do stanowiska podlegającego prognozie, które jest akurat edytowane. Innymi słowy zmiany są właściwe dla przypisanych procesu planowania budżetu i scenariusza planu budżetu. Wyjątkami są zmiany pól wspólnych dla stanowisk we wszystkich procesach i scenariuszach. Są to m.in. pola na karcie **Ogólne** i na karcie **Wymiary finansowe**. Gdy te pole są zmieniane, nowe wartości mają zastosowanie do pozycji we wszystkich scenariuszach planu budżetu. Dzięki temu za pomocą tych pól można szybko zaktualizować wszystkie wersje.
+Zmiany wprowadzone do stanowisk podlegających prognozie są ograniczone do tych stanowisk. Zmiany nie wpływają na rekordy stanowisk w module Zasoby ludzkie. Większość zmian jest też ograniczona do stanowiska podlegającego prognozie, które jest akurat edytowane. Innymi słowy zmiany są właściwe dla przypisanych procesu planowania budżetu i scenariusza planu budżetu. Wyjątkami są zmiany pól wspólnych dla stanowisk we wszystkich procesach i scenariuszach. Te pola obejmują pola dostępne na karcie **Ogólne** i karcie **Wymiary finansowe**. Gdy te pola zostaną zmienione, do pozycji we wszystkich scenariuszach planowania budżetu stosowane są nowe wartości. Dzięki temu za pomocą tych pól można szybko zaktualizować wszystkie wersje.
 
 #### <a name="budget-cost-elements"></a>Składniki kosztu budżetowego
 

@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 0bbf8f979aeb8b861164e345f9e46bb396f370ce
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +41,7 @@ Należy najpierw wybrać harmonogram zamknięcia w górnej części obszaru robo
 
 ### <a name="summary-tiles"></a>Kafelki podsumowania
 
-Kafelki **Podsumowanie** oferują podgląd procesu, a wskaźniki pomagają zachować proces zamknięcia w odpowiednich torach. Można wyświetlić zadania, które są zaległe, pozostałe zadania na dziś, zadania, które mają zostać wykonane dzisiaj, ale są zablokowane ze względu na zależności, oraz wszystkie pozostałe zadania procesu. Te informacje dotyczą wszystkich firm, które są uwzględniane w wybranym harmonogramie zamknięcia.
+Kafelki **Podsumowanie** zawierają przegląd procesu, a pomoc dotycząca wskaźników ułatwia realizację procesu zamykania. Można zobaczyć zadania zaległe, pozostałe zadania na dziś, zadania na dziś zablokowane z powodu zależności i wszystkie pozostałe zadania dla procesu. Te informacje dotyczą wszystkich firm, które są uwzględniane w wybranym harmonogramie zamknięcia.
 
 ### <a name="tasks-and-status-section"></a>Sekcja Zadania i stan
 
@@ -82,7 +81,7 @@ Za pomocą obszarów zadań można grupować zadania zamknięcia w logiczne obsz
 
 ### <a name="calendars"></a>Kalendarze
 
-Można tworzyć i edytować kalendarze zamknięcia finansowego za pomocą karty Kalendarze.  W tym miejscu definiuje się dni robocze procesów zamknięcia, które będą używane do planowania zadań związanych z zamknięciem.  Można utworzyć nowy kalendarz i wskazać dni robocze, które będą używane do planowania zadań.  Najlepiej utworzyć kalendarz obejmujący dłuższy czas, np. rok lub kilka lat, ponieważ po utworzeniu można go edytować.  Po utworzeniu kalendarza kliknij przycisk Edytuj, aby zaktualizować kalendarz dla określonych dni, np. wolnych od pracy.  Zadania zamknięcia będą planowane według dni, dla których opcja Kontrola ma wartość Otwarte.  Jeśli zadania zamknięcia nie powinny być zaplanowane na określony dzień, ten dzień powinien mieć w opcji Kontrola wartość Zamknięte.
+Umożliwia tworzenie i edycję kalendarzy zamknięcia finansowego na karcie Kalendarze. W tym miejscu można zdefiniować dni robocze procesów zamknięcia, które będą używane dl planowania zadań zamknięcia.  Można utworzyć nowy kalendarz i wskazać dni robocze, które będą używane do planowania zadań.  Najlepiej utworzyć kalendarz obejmujący dłuższy czas, np. rok lub kilka lat, ponieważ po utworzeniu można go edytować.  Po utworzeniu kalendarza kliknij przycisk Edytuj, aby zaktualizować kalendarz dla określonych dni, np. wolnych od pracy.  Zadania zamknięcia będą planowane według dni, dla których opcja Kontrola ma wartość Otwarte.  Jeśli zadania zamknięcia nie powinny być zaplanowane na określony dzień, ten dzień powinien mieć w opcji Kontrola wartość Zamknięte.
 
 ### <a name="templates"></a>Szablony
 

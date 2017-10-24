@@ -16,10 +16,10 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 0f0aed4dd530f7ec06d717e51b084d14e0816e43
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 4cc3ba589204f87b844ab4302e03105d2aa1de8d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="advance-payment-to-an-employee-eastern-europe"></a>Zaliczki na rzecz pracownika (Europa Wschodnia)

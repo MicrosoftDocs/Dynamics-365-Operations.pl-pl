@@ -17,12 +17,11 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7acabdec9133b4b4cc8fc8861ee097aa2a00e191
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 3ed41a57e40e8d90ebfd996f855a8dc8dc16de13
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -284,7 +283,7 @@ Aby utworzyć dokument kasowy za pośrednictwem arkusza kasowego, wybierz kolejn
 <td>Pierwszym stanem transakcji jest <strong>Brak</strong>. Szczegółowe informacje o tym, jak ustawić stan transakcji, zawiera sekcja &quot;Zatwierdzanie i księgowanie transakcji kasowych&quot;.</td>
 </tr>
 <tr class="even">
-<td>Typ dokumentu </td>
+<td>Typ dokumentu</td>
 <td>To pole na karcie <strong>Zamówienie gotówkowe</strong> jest wypełniane automatycznie na podstawie kwoty wprowadzonej w dokumencie kasowym:
 <ul>
 <li><strong>Dokument KP</strong> — ta wartość jest używana, jeśli wprowadzono wartość w polu <strong>Debet</strong> dla konta kasowego.</li>
@@ -413,7 +412,7 @@ Aby utworzyć transakcję kasową za pomocą arkusza finansowego, wybierz kolejn
 </tbody>
 </table>
 
-Na karcie **Faktura** można określić profile księgowania dla wybranego konta i konta przeciwstawnego. Jeśli zarejestrowana transakcja jest przedpłatą, zaznacz pole wyboru **Przedpłata** na karcie **Płatność**. W grupie pól **Przedstawiciel** wypełnij pola tak jak dla wierszy arkusza kasowego w celu wydrukowania raportu **Kasa**. Aby sprawdzić zapisy w arkuszu, w okienku akcji kliknij przycisk **Weryfikuj**.
+Na karcie **Faktura** można określić profile księgowania dla wybranego konta i konta przeciwstawnego. Jeżeli zarejestrowana transakcja to przedpłata, zaznacz pole wyboru **Przedpłata** na karcie **Płatność**. W grupie pola **Przedstawiciel** uzupełnij pola tak jak w wierszach arkusza kasowego w celu wydrukowania w raporcie **Kasa**. Aby sprawdzić zapisy w arkuszu, w okienku akcji kliknij przycisk **Weryfikuj**.
 
 ## <a name="cash-transaction-approval-and-posting"></a>Zatwierdzanie i księgowanie transakcji kasowych
 Do transakcji kasowych mogą być stosowane następujące stany: **Brak**, **Potwierdzone**, **Zatwierdzone** i **Odrzucone**. Parametr **Użyj stanu potwierdzenia** na skróconej karcie **Zatwierdzenie** dostępnej na karcie **Kasa** w oknie **Zarządzanie gotówką i bankami** &gt; **Ustawienia** &gt; **Parametry modułu Zarządzanie gotówką i bankami** pozwala włączyć dwa dodatkowe stany: **Potwierdzone** i **Odrzucone**. Potwierdzenie należy zastosować, gdy są wydawane dokumenty kasowe, a przychody i rozchody gotówkowe są realizowanie wspólne przez dwóch pracowników: księgowego i kasjera. Funkcja **Resetuj stan** zmienia bieżący stan transakcji. Stan **Zatwierdzone** staje się stanem **Potwierdzone**, a stan **Potwierdzone** zmienia się na **Brak**. Zapisy w arkuszu kasowym można edytować tylko wtedy, gdy stanem jest **Brak**. Transakcje kasowe można odrzucać tylko wtedy, gdy stanem transakcji jest **Potwierdzone**. Odrzucone dokumenty kasowe znajdują się w raporcie **Arkusz rejestracji dokumentów kasowych**, ale nie są uwzględniane w raporcie **Księga kasowa**. Aby potwierdzić transakcję, wybierz odpowiedni wiersz arkusza kasowego, a następnie kliknij kolejno opcje **Zatwierdzenie dokumentów** &gt; **Potwierdź**. Zostanie wygenerowany numer zamówienia na podstawie ustawionej numeracji. Stan transakcji zmieni się na **Potwierdzone** i nie będzie można już edytować wiersza arkusza. Salda konta kasowego pozostaje bez zmian. Aby odrzucić dokument kasowy, kliknij kolejno opcje **Zatwierdzenie dokumentów** &gt; **Odrzuć**. Ta opcja jest dostępna tylko dla dokumentów o stanie **Potwierdzone**. Aby zatwierdzić transakcję, wybierz odpowiedni wiersz arkusza kasowego, a następnie kliknij kolejno opcje **Zatwierdzenie dokumentów** &gt; **Zatwierdź**. Stan **Zatwierdzone** wskazuje, że środki pieniężne zostały otrzymane lub wydatkowane. Saldo kasowe się zmienia. Transakcję kasową można zaksięgować. Aby anulować stan **Zatwierdzone** i zresetować stan do wartości **Brak**, kliknij kolejno opcje **Zatwierdzenie dokumentów** &gt; **Resetuj stan**. Można zaksięgować tylko zatwierdzone transakcje kasowe. Aby zaksięgować arkusz, kliknij kolejno opcje **Księguj** &gt; **Księguj**.

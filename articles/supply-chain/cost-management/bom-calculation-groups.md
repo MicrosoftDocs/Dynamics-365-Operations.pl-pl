@@ -1,7 +1,7 @@
 ---
 title: "Grupy obliczeń BOM"
 description: "Ten artykuł zawiera informacje o grupach obliczania dla list składowych (BOM) oraz ich konfigurowaniu. Aby uruchomić obliczanie BOM, należy utworzyć grupy obliczania i przypisać je do poszczególnych towarów albo utworzyć domyślną grupę obliczania. Ustawienia obliczania z grupy obliczania są następnie używane jako wartości domyślne na stronie Obliczanie BOM podczas obliczania listy składowej."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3372c22d6ed90e7669f1335fdd3366b8e167ad27
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: c91f7ac3ded942afd5e359b59cee2ff58256622f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -72,13 +72,21 @@ Pole wyboru **Zatrzymanie rozłożenia** służy do wskazywania, kiedy wyproduko
 
 ### <a name="warnings"></a>Ostrzeżenia
 
-Na skróconej karcie **Ostrzeżenia** wybierasz opcje wszelkich komunikatów ostrzegawczych, które użytkownicy powinni otrzymywać podczas obliczania BOM. Na przykład jeśli zaznaczysz pole wyboru **Brak BOM**, użytkownik otrzymuje ostrzeżenie, jeśli nie zostanie znaleziona aktywna wersja BOM dla jednego ze składników lub pozycji nadrzędnej, dla której jest wykonywane obliczanie BOM. Po zaznaczeniu pola wyboru **Brak marszruty** użytkownik zobaczy ostrzeżenie w przypadku, gdy nie zostanie odnaleziona żadna aktywna wersja marszruty. Jeśli w marszrutach i operacjach używasz zasobów, można poinstruować system, aby sprawdzał obecność tych zasobów. Wtedy jeśli zasób nie zostanie odnaleziony w każdym wierszu w aktywnej trasie, użytkownik otrzyma ostrzeżenie. Można również sprawdzać występowanie zużycia i je weryfikować. Zużycie to ilość w konkretnej trasie. Zazwyczaj reprezentuje ona ilość czasu wymaganą w celu wykonania określonej operacji w procesie produkcji. Można sprawdzić, czy dany towar nie ma kosztu własnego. Jeśli nie istnieje aktywny koszt własny dla pozycji, nie będzie dodawany żaden koszt do obliczania BOM. Można również sprawdzać występowanie i weryfikować wiek kosztu własnego. Na przykład wpisz **60**, aby wskazać, że jednostkowy koszt własny musi zostać ponownie oceniony po upływie 60 dni. Po osiągnięciu tego limitu system generuje ostrzeżenie. Na przykład koszt własny wprowadzono dla towaru w styczniu tego roku. Jeśli teraz jest sierpień, czyli więcej niż 60 dni po wprowadzeniu kosztu własnego, użytkownik otrzyma ostrzeżenie podczas obliczania BOM. W polu **Minimalna marża** można wprowadzić wartość procentową. Ta wartość wskazuje punkt, w którym minimalna marża pokrycia nie została osiągnięta. Jeśli marża pokrycia określonego składnika nie jest osiągnięta, użytkownik otrzyma ostrzeżenie. W związku z tym to pole pomaga zagwarantować, że cena sprzedaży nie będzie niższa niż koszty własne oraz dodatkowe koszty magazynowania, które mogą być wymagane dla towarów.
-Domyślne ustawienia w oknie Parametry modułu Zarządzanie zapasami i magazynem
---------------------------------------------------------------
+Na skróconej karcie **Ostrzeżenia** wybierasz opcje wszelkich komunikatów ostrzegawczych, które użytkownicy powinni otrzymywać podczas obliczania BOM. 
 
-Ponieważ grupy obliczania są wymagane do wykonywania obliczeń, należy skonfigurować domyślną grupę obliczania w parametrach modułu Zarządzanie zapasami. Ta konfiguracja umożliwi firmom posiadanie standardowych ustawień grupy kosztów i zysków dla wszystkich towarów. Następnie jeśli określony towar ma specjalne wymagania dotyczące obliczania, użytkownik może przypisać inną grupę obliczania do tej pozycji. Zazwyczaj można ustawić grupy obliczania dla pozycji składowych BOM zamiast bezpośrednio dla pozycji BOM. Jednakże gdy pojawiają się komunikaty ostrzegawcze, można zastosować grupy obliczania. Grupa obliczania przypisana do towarów zastępuje domyślną wartość skonfigurowaną w parametrach modułu Zarządzanie zapasami. Parametr domyślny można zdefiniować w oknie **Zarządzanie kosztami** &gt; **Ustawienia zasad księgowania zapasów** &gt; **Parametry** &gt; **Księgowanie zapasów** &gt; **Grupa obliczania**. Konfigurując domyślną grupę konfiguracji, można również skonfigurować warunki ostrzegawcze powodujące wyświetlanie użytkownikom monitów w trakcie procesu obliczania BOM, jeśli wybrane składniki mogły powodować błędy w obliczeniach.
-Wyświetlanie komunikatów ostrzegawczych na stronie Zakończono
-------------------------------------------
+Na przykład jeśli zaznaczysz pole wyboru **Brak BOM**, użytkownik otrzymuje ostrzeżenie, jeśli nie zostanie znaleziona aktywna wersja BOM dla jednego ze składników lub pozycji nadrzędnej, dla której jest wykonywane obliczanie BOM. Po zaznaczeniu pola wyboru **Brak marszruty** użytkownik zobaczy ostrzeżenie w przypadku, gdy nie zostanie odnaleziona żadna aktywna wersja marszruty. Jeśli w marszrutach i operacjach używasz zasobów, można poinstruować system, aby sprawdzał obecność tych zasobów. Wtedy jeśli zasób nie zostanie odnaleziony w każdym wierszu w aktywnej trasie, użytkownik otrzyma ostrzeżenie. 
+
+Można również sprawdzać występowanie zużycia i je weryfikować. Zużycie to ilość w konkretnej trasie. Zazwyczaj reprezentuje ona ilość czasu wymaganą w celu wykonania określonej operacji w procesie produkcji. Można sprawdzić, czy dany towar nie ma kosztu własnego. Jeśli nie istnieje aktywny koszt własny dla pozycji, nie będzie dodawany żaden koszt do obliczania BOM. 
+
+Można również sprawdzać występowanie i weryfikować wiek kosztu własnego. Na przykład wpisz **60**, aby wskazać, że jednostkowy koszt własny musi zostać ponownie oceniony po upływie 60 dni. Po osiągnięciu tego limitu system generuje ostrzeżenie. Na przykład koszt własny wprowadzono dla towaru w styczniu tego roku. Jeśli teraz jest sierpień, czyli więcej niż 60 dni po wprowadzeniu kosztu własnego, użytkownik otrzyma ostrzeżenie podczas obliczania BOM. W polu **Minimalna marża** można wprowadzić wartość procentową. Ta wartość wskazuje punkt, w którym minimalna marża pokrycia nie została osiągnięta. Jeśli marża pokrycia określonego składnika nie jest osiągnięta, użytkownik otrzyma ostrzeżenie. W związku z tym to pole pomaga zagwarantować, że cena sprzedaży nie będzie niższa niż koszty własne oraz dodatkowe koszty magazynowania, które mogą być wymagane dla towarów.
+
+### <a name="default-setup-in-inventory-and-warehouse-management-parameters"></a>Domyślne ustawienia w oknie Parametry modułu Zarządzanie zapasami i magazynem
+
+Ponieważ grupy obliczania są wymagane do wykonywania obliczeń, należy skonfigurować domyślną grupę obliczania w parametrach modułu Zarządzanie zapasami. Ta konfiguracja umożliwi firmom posiadanie standardowych ustawień grupy kosztów i zysków dla wszystkich towarów. Następnie jeśli określony towar ma specjalne wymagania dotyczące obliczania, użytkownik może przypisać inną grupę obliczania do tej pozycji. Zazwyczaj można ustawić grupy obliczania dla pozycji składowych BOM zamiast bezpośrednio dla pozycji BOM. Jednakże gdy pojawiają się komunikaty ostrzegawcze, można zastosować grupy obliczania. Grupa obliczania przypisana do towarów zastępuje domyślną wartość skonfigurowaną w parametrach modułu Zarządzanie zapasami. 
+
+Parametr domyślny można zdefiniować w oknie **Zarządzanie kosztami** &gt; **Ustawienia zasad księgowania zapasów** &gt; **Parametry** &gt; **Księgowanie zapasów** &gt; **Grupa obliczania**. Konfigurując domyślną grupę konfiguracji, można również skonfigurować warunki ostrzegawcze powodujące wyświetlanie użytkownikom monitów w trakcie procesu obliczania BOM, jeśli wybrane składniki mogły powodować błędy w obliczeniach.
+
+### <a name="view-warning-messages-on-the-complete-page"></a>Wyświetlanie komunikatów ostrzegawczych na stronie Zakończono
 
 Podczas obliczania BOM są generowane komunikaty ostrzegawcze. Można obejrzeć ostrzeżenia o wybranym towarze. Na przykład w module Sprzedaż i marketing utworzono nowe zamówienie sprzedaży na towar D0001. Następnie w wierszu zamówienia sprzedaży w menu **Aktualizuj wiersz** kliknij polecenie **Oblicz na podstawie BOM/formuły**, aby wyświetlić szczegóły obliczania i ostrzeżenia. Wyniki obliczania można też obejrzeć na stronie **Zakończono**. W przypadku komunikatów ostrzegawczych tylko dwa warunki ostrzegawcze mają zastosowanie do towarów wytwarzanych, a cztery do każdego towaru:
 -   Ostrzegaj, jeśli wytwarzany towar nie ma aktywnego BOM.
