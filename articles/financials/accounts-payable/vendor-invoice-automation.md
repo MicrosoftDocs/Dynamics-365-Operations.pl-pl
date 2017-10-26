@@ -15,10 +15,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 172d952c79347e7dd563cfda70729750fa0ddde9
-ms.openlocfilehash: c47ca406e2c8be98f26f1c78d6f5e0a3f66690a5
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 75865ece49837e2a8758c4d739d3e29ce9128945
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="vendor-invoice-automation"></a>Automatyzacja obsługi faktur od dostawców
@@ -57,7 +57,7 @@ Pakiet danych jest jednostką pracy, która musi zostać wysłana do programu Fi
 
 Załącznik dokumentu faktury od dostawcy jest nową jednostką danych wprowadzoną w ramach tej funkcji. Jednostka Nagłówek faktury od dostawcy została zmodyfikowana, tak aby obsługiwała załączniki. Jednostka Wiersz faktury od dostawcy nie zmodyfikowana dla tej funkcji.
 
-W tym temacie nie ma szczegółowej definicji pakietu danych. Nie wyjaśniono również, jak tworzyć pakiety danych. Aby uzyskać te informacje, zobacz [Jednostki danych i struktura pakietów](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages).
+W tym temacie nie ma szczegółowej definicji pakietu danych. Nie wyjaśniono również, jak tworzyć pakiety danych. Aby uzyskać te informacje, zobacz [Jednostki danych i struktura pakietów](../../dev-itpro/data-entities/data-entities-data-packages.md).
 
 Aby szybko wygenerować dane testowe zawierające faktury i załączniki, wykonaj następujące czynności.
 

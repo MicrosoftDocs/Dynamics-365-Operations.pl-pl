@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ebcae0e323203a98a9b8ed1113db945fceaaa4af
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: e1c29f597b190bd36b6fc64b16913ecdd02daf75
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -68,7 +68,7 @@ Gdy jest używana ta konfiguracja, jest tworzone zamówienie zakupu na odnośny 
 Zlecenie produkcyjne może mieć wiele operacji, a każda operacja może być przydzielona do innego dostawcy. W związku z tym całościowe zlecenie produkcyjne może inicjować wiele zamówień zakupu.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Podwykonawstwo działań przepływu produkcji
-W rozwiązaniu [produkcji oszczędnej](lean-manufacturing-overview.md)praca podwykonawcza jest modelowana jako usługa powiązana z działaniem w [przepływie produkcji](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-production-flow-version) (temat przewodnika po zadaniu). W związku z tym ten rodzaj podwykonawstwa jest również zwany [podwykonawstwem działań.](activity-based-subcontracting.md) Wprowadzono specjalny typ grupy kosztów **Outsourcing bezpośredni**, a usługi podwykonawcze nie są częścią listy składowej (BOM) wyrobów gotowych. Podczas korzystania z produkcji oszczędnej wszystkie działania są definiowane przez karty Kanban, które mogą być powiązane z jednym lub wieloma działaniami przepływu produkcji. Na razie to wyjaśnienie brzmi jak wyjaśnienie koncepcji zleceń produkcyjnych. Jednak o ile zlecenia produkcyjne zawsze muszą się kończyć wyrobem gotowym, można utworzyć karty Kanban służące dostarczaniu półproduktów. Nie trzeba dodawać nowego produktu ani poziomu BOM.  
+W rozwiązaniu [produkcji oszczędnej](lean-manufacturing-overview.md)praca podwykonawcza jest modelowana jako usługa powiązana z działaniem w [przepływie produkcji](tasks/create-production-flow-version.md) (temat przewodnika po zadaniu). W związku z tym ten rodzaj podwykonawstwa jest również zwany [podwykonawstwem działań.](activity-based-subcontracting.md) Wprowadzono specjalny typ grupy kosztów **Outsourcing bezpośredni**, a usługi podwykonawcze nie są częścią listy składowej (BOM) wyrobów gotowych. Podczas korzystania z produkcji oszczędnej wszystkie działania są definiowane przez karty Kanban, które mogą być powiązane z jednym lub wieloma działaniami przepływu produkcji. Na razie to wyjaśnienie brzmi jak wyjaśnienie koncepcji zleceń produkcyjnych. Jednak o ile zlecenia produkcyjne zawsze muszą się kończyć wyrobem gotowym, można utworzyć karty Kanban służące dostarczaniu półproduktów. Nie trzeba dodawać nowego produktu ani poziomu BOM.  
 
 Ponieważ reguły Kanban mogą być bardzo dynamiczne, można modelować różne warianty dostarczania tego samego produktu w przepływie produkcji. Podczas korzystania z podwykonawstwa w produkcji oszczędnej przepływ materiałów jest ściśle oddzielony od przepływu finansowego. Cały przepływ materiałów jest reprezentowany przez działania Kanban. Zamówienia zakupu na produkty usług oraz księgowanie przyjęć tych usług można zautomatyzować na podstawie stanu zadań Kanban w przepływie produkcji. Zadania Kanban można uruchamiać i kończyć nawet przed utworzeniem zamówień zakupu. Dokumenty podwykonawstwa (zamówienia zakupu i dowody zakupu usług) mogą być agregowane według okresów i usług. Dzięki temu można zminimalizować liczbę dokumentów i wierszy zakupu, nawet dla operacji z dużą liczbą powtórzeń, gdzie dostawcy dostarczają usługi podwykonawcze w jednoelementowym przepływie.
 

@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0ec91bcf0ab334585eefae2fe54750c45419682e
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 325807509601d02bad079e5ac60576e1f708e5cd
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -84,7 +84,7 @@ Po potwierdzeniu zamówienia nie można go usunąć. Jednakże można anulować 
 
 [Przyjęcie produktów względem zamówień zakupu](product-receipt-against-purchase-orders.md)
 
-[Omówienie faktur od dostawców](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
+[Omówienie faktur od dostawców](../../financials/accounts-payable/vendor-invoices-overview.md)
 
 
 

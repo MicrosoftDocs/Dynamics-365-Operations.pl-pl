@@ -16,13 +16,13 @@ ms.custom: 11124
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: bc14ab554a298d09bb852e96503b4cd3f4b36d3c
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 49dfae79fe3914bcac9447d4fe3959128ff434ec
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ Ten artykuł zawiera ogólne informacje o poleceniach przelewu ISO 20022, co obe
 
 ## <a name="what-is-a-credit-transfer-message"></a>Co to jest komunikat polecenia przelewu?
 Komunikat polecenia przelewu to żądanie wysyłane przez stronę inicjującą (Twoją firmę) nakazujące przelania funduszy z jej własnego konta do wierzyciela. Istnieje wiele implementacji komunikatów polecenia przelewu specyficznych dla krajów/regionów i banków. Niektóre z nich są używane wewnątrz jednego kraju/regionu, a niektóre stają się standardami. Jednym z ugruntowanych globalnych standardów jest ISO 20022 i jego komunikaty inicjujące, takie jak polecenie przelewu. Poniższa ilustracja przedstawia powiązania i zasięg wybranych komunikatów poleceń przelewu. 
-![Polecenie przelewu](./media/credit-transfer.jpg) Komunikaty poleceń przelewu\[/caption\] 
+![Polecenie przelewu](./media/credit-transfer.jpg) Komunikaty poleceń przelewu 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Co to są płatności ISO 20022 i SEPA?
 Jednolity Obszar Płatniczy w Euro (SEPA) został ustanowiony przez Komisję Europejską i decyduje o tym, że wszystkie płatności elektroniczne są uważane za krajowe, niezależnie od kraju/regionu, w którym znajdują się osoby, przedsiębiorstwa, organizacje oraz właściwy bank. Nie istnieje różnica między płatnościami krajowymi i międzynarodowymi. SEPA obejmuje 28 państw członkowskich Unii Europejskiej (UE), plus Islandię, Liechtenstein, Norwegię, Szwajcarię, Monako i San Marino. SEPA tworzy jeden rynek dla transakcji płatności w ramach europejskiego obszaru gospodarczego (EOG). Ostatecznie SEPA umożliwia zmniejszenie liczby formatów płatności, którymi operują banki, firmy i osoby prywatne. Komisja Europejska określiła podstawę prawną dla płatności SEPA w postaci dyrektywy w sprawie usług płatniczych (PSD). Europejska Rada ds. Płatności (EPC) wspiera SEPA za pomocą następujących działań:
@@ -59,7 +59,7 @@ Format płatności polecenia przelewu dla krajów europejskich jest implementowa
 Należy zawsze przejść do biblioteki zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) i wyświetlić najbardziej aktualną listę dostępnych plików, które mają typ składnika aktywów **Konfiguracja GER**. Następna sekcja — „Co trzeba skonfigurować?” — zawiera łącze do tematu, który wyjaśnia sposób tworzenia repozytorium usługi LCS na potrzeby przeglądania dostępnych konfiguracji i importowania wybranych konfiguracji.
 
 ## <a name="what-do-i-have-to-set-up"></a>Co trzeba skonfigurować?
--   Zanim będzie można tworzyć pliki poleceń przelewu, należy zaimportować co najmniej jedną aktywną konfigurację polecenia przelewu do konfiguracji raportowania elektronicznego. Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+-   Zanim będzie można tworzyć pliki poleceń przelewu, należy zaimportować co najmniej jedną aktywną konfigurację polecenia przelewu do konfiguracji raportowania elektronicznego. Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 -   W przypadku konfigurowania metod płatności do rozrachunków z dostawcami należy zaznaczyć pole wyboru **Ogólne raportowanie elektroniczne** i wybrać odpowiedni format polecenia przelewu ISO (np. **Polecenie przelewu ISO 20022 (AT)**) jako konfigurację formatu eksportu.
 -   Należy także skonfigurować informacje firmy i konta bankowego w programie Finance and Operations.
 -   Do tworzenia prawidłowych płatności poleceniami przelewu są potrzebne numery kont bankowych, numery IBAN i czasami kody SWIFT (BIC) lub inne identyfikatory. W związku z tym należy je skonfigurować dla konta bankowego dostawcy i konta bankowego organizacji wnioskującej o przelew.

@@ -16,13 +16,13 @@ ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 7898ff427ede4447a5798d4989ffd3088a776d9c
+ms.translationtype: HT
+ms.sourcegitcommit: 908f854e5ca50f4298110c08c87fefd9427b5cc9
+ms.openlocfilehash: 841c18630a59c3f5a7b51cd005962fa8a7f7163f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Program Microsoft Dynamics 365 for Finance and Operations zawiera opisy niektór
 
 Nie wszystkie strony mają opisy pól. Chcemy podać opisy jedynie dla bardziej złożonych pól, a nie tych, których funkcja jest oczywista. Dlatego niektóre strony nie mają żadnych opisów pól, niektóre mają kilka opisów, za to te bardziej złożone strony, np. wiele stron parametrów, zawierają wiele opisów. 
 
-Jeśli masz dostęp do środowiska programistycznego programu Finance and Operations, istnieje możliwość dodawania nowych opisów pól i modyfikowania istniejących opisów. Na przykład do opisu pola można dodać informacje specyficzne dla firmy. Aby uzyskać więcej informacji, zobacz [Dostosowywanie pomocy pól](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help).
+Jeśli masz dostęp do środowiska programistycznego programu Finance and Operations, istnieje możliwość dodawania nowych opisów pól i modyfikowania istniejących opisów. Na przykład do opisu pola można dodać informacje specyficzne dla firmy. Aby uzyskać więcej informacji, zobacz [Dostosowywanie pomocy pól](../../dev-itpro/user-interface/customize-field-help.md).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Wyświetlanie opisów pól w interfejsie użytkownika
 Opisy pól można wyświetlić, umieszczając kursor myszy nad polem. Jeśli opis nie jest dostępny, po umieszczeniu wskaźnika myszy na polu zobaczysz nazwę pola. (Uwaga: w wersji Dynamics AX 7.0 (z lutego 2016 r.) opisy pól można wyświetlać tylko na stronie **Opisy pól**). Na poniższej ilustracji przedstawiono opis pola, który pojawia się po umieszczeniu wskaźnika myszy nad polem **Zablokuj pozycje podczas inwentaryzacji**. 
@@ -101,7 +101,7 @@ Aby uzyskać informacje o różnych sposobach znajdowania stron, zobacz sekcję 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Dostosowywanie pomocy pól](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)
+[Dostosowywanie pomocy pól](../../dev-itpro/user-interface/customize-field-help.md)
 
 
 

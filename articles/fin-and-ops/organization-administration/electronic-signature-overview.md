@@ -19,10 +19,10 @@ ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 9bc4dba3c31e82da2285ef5e339ace634fbd6fde
+ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
+ms.openlocfilehash: 069af29012f75aa1a15ba9df86fe1fc9e04eaf41
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -45,7 +45,7 @@ Podpisy elektroniczne są wymagane przepisami w przypadku kilku branż regulowan
 ## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Podpisy elektroniczne w programie Dynamics 365 for Finance and Operations
 W programie Finance and Operations można używać podpisów elektronicznych w przypadku procesów biznesowych o podstawowym znaczeniu. Niektóre procesy mają wbudowane możliwości podpisu elektronicznego. Można również tworzyć niestandardowe wymagania dotyczące podpisu cyfrowego dla dowolnej tabeli lub pola bazy danych. 
 
-Podpisy elektroniczne mają wbudowaną funkcjonalność podpisu cyfrowego. Każdy użytkownik, który podpisuje dokumenty, musi uzyskać prawidłowy certyfikat kryptograficzny. Podczas podpisywania dokumentu sprawdzana jest poprawność klucza prywatnego skojarzonego z tym certyfikatem. Program Finance and Operations rejestruje informacje dotyczące podpisów elektronicznych w dzienniku inspekcji. Aby skonfigurować podpisy elektroniczne, zobacz [Konfigurowanie podpisów elektronicznych (przewodnik po zadaniach)](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures).
+Podpisy elektroniczne mają wbudowaną funkcjonalność podpisu cyfrowego. Każdy użytkownik, który podpisuje dokumenty, musi uzyskać prawidłowy certyfikat kryptograficzny. Podczas podpisywania dokumentu sprawdzana jest poprawność klucza prywatnego skojarzonego z tym certyfikatem. Program Finance and Operations rejestruje informacje dotyczące podpisów elektronicznych w dzienniku inspekcji. Aby skonfigurować podpisy elektroniczne, zobacz [Konfigurowanie podpisów elektronicznych (przewodnik po zadaniach)](tasks/set-up-electronic-signatures.md).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Użytkownicy, którzy potrzebują dostępu do podpisów elektronicznych
 Trzy rodzaje użytkowników zwykle wymagają dostępu zabezpieczeń do podpisów elektronicznych: administratorzy podpisów elektronicznych, osoby podpisujące i audytorzy podpisów elektronicznych.
