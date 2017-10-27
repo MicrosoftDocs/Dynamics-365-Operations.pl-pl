@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 41436dab710a5fee0fe0800dff1ebefefa841afc
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 6119f1c85b68e6ed5dce01a266c4e681dfc4cd30
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 06/13/2017
 
 W tym temacie opisano używanie portalu współpracy z dostawcami w programie Finance and Operations do pracy z zamówieniami zakupu i monitorowania zapasów konsygnacyjnych.
 
-W tym temacie opisano używanie portalu współpracy z dostawcami do zarządzania współpracą z odbiorcami w programie Microsoft Finance and Operations. Są tu informacje dotyczące sposobów monitorowania i odpowiadania na zamówienia zakupu oraz monitorowanie zapasów konsygnacyjnych. Można również używać portalu współpracy z dostawcami do pracy z fakturami. Aby uzyskać więcej informacji, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
+W tym temacie opisano używanie portalu współpracy z dostawcami do zarządzania współpracą z odbiorcami w programie Microsoft Finance and Operations. Są tu informacje dotyczące sposobów monitorowania i odpowiadania na zamówienia zakupu oraz monitorowanie zapasów konsygnacyjnych. Można również używać portalu współpracy z dostawcami do pracy z fakturami. Aby uzyskać więcej informacji, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 ## <a name="working-with-purchase-orders"></a>Praca z zamówieniami zakupu
 Obszar roboczy **Potwierdzenie zamówienia zakupu** pozwala odpowiadać na zamówienia zakupu wysłane Ci do przeglądu. Umożliwia także wyświetlanie informacji o zamówieniach oczekujących na interwencję odbiorcy oraz zamówień zakupu, które zostały potwierdzone, ale są nadal otwarte. W obszarze roboczym **Potwierdzenie zamówienia zakupu** istnieją trzy listy:

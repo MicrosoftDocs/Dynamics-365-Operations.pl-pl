@@ -17,10 +17,10 @@ ms.author: v-semaz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: cd234755bbe92e8f1c78a2dd6e7d05e5372c4692
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: a0d5aa114564e000a2d2b2780996a14d5a41015e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -167,6 +167,6 @@ Można dostosować wyświetlanie storna w formularzach, siatkach, kolumnach i po
 ![Kwoty storna we wpisach w arkuszu](./media/journal-storno.png)
 
 ## <a name="how-documents-create-storno"></a>Jak dokumenty tworzą storna
-Niektóre dokumenty powodują tworzenie transakcji anulowania. Na przykład przeszacowania w walucie obcej dla dokumentów księgi głównej, rozrachunków z dostawcami i rozrachunków z odbiorcami powodują anulowanie niezrealizowanych dodatnich i ujemnych różnic kursowych. Aby uzyskać więcej informacji, zobacz [Przeszacowanie w walucie obcej dla księgi głównej](../general-ledger/foreign-currency-revaluation-general-ledger.md) lub [Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Po utworzeniu transakcji anulowania zostaną utworzone nowe transakcje z niezrealizowanymi dodatnimi i ujemnymi różnicami kursowymi. Transakcje anulowania są również tworzone dla zapasów. Aby uzyskać więcej informacji, zobacz [Zamknięcie zapasów](/dynamics365/unified-operations/supply-chain/cost-management/inventory-close). Istnieją dokumenty pozwalające anulować uprzednio zaksięgowany dokument. Na przykład użytkownik może utworzyć fakturę korygującą w celu anulowania uprzednio utworzonej faktury. Do tworzenia transakcji storna lub wycofania dokumenty wykorzystują określone parametry. Na przykład przeszacowanie w walucie obcej tworzy transakcje wycofania lub storna przy użyciu parametru korekty księgi głównej. Faktura korygująca dla odbiorcy tworzy transakcję wycofania lub storna przy użyciu parametru korekty na fakturze korygującej dostępnego w module rozrachunków z odbiorcami.
+Niektóre dokumenty powodują tworzenie transakcji anulowania. Na przykład przeszacowania w walucie obcej dla dokumentów księgi głównej, rozrachunków z dostawcami i rozrachunków z odbiorcami powodują anulowanie niezrealizowanych dodatnich i ujemnych różnic kursowych. Aby uzyskać więcej informacji, zobacz [Przeszacowanie w walucie obcej dla księgi głównej](../general-ledger/foreign-currency-revaluation-general-ledger.md) lub [Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Po utworzeniu transakcji anulowania zostaną utworzone nowe transakcje z niezrealizowanymi dodatnimi i ujemnymi różnicami kursowymi. Transakcje anulowania są również tworzone dla zapasów. Aby uzyskać więcej informacji, zobacz [Zamknięcie zapasów](../../supply-chain/cost-management/inventory-close.md). Istnieją dokumenty pozwalające anulować uprzednio zaksięgowany dokument. Na przykład użytkownik może utworzyć fakturę korygującą w celu anulowania uprzednio utworzonej faktury. Do tworzenia transakcji storna lub wycofania dokumenty wykorzystują określone parametry. Na przykład przeszacowanie w walucie obcej tworzy transakcje wycofania lub storna przy użyciu parametru korekty księgi głównej. Faktura korygująca dla odbiorcy tworzy transakcję wycofania lub storna przy użyciu parametru korekty na fakturze korygującej dostępnego w module rozrachunków z odbiorcami.
 
 

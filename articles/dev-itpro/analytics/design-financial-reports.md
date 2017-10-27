@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
+ms.translationtype: HT
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: d1fbcefd80f1c48fafbbcb6315406856eaae68a0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -50,7 +49,7 @@ W tym ćwiczeniu wygenerujemy i przejrzymy istniejący raport domyślny. Ten rap
 4.  Przejdź do opcji **Raporty finansowe** w sekcji **Zapytania i raporty** w księdze głównej.
 5.  Wybierz wiersz dla raportu o nazwie **Szczegóły KG — domyślne.**
 6.  Wybierz opcję **Edycja.** Uwaga: Pojawi się monit o pobranie i kliknięcie projektanta raportów w celu zalogowania się. Zaloguj się za pomocą swoich poświadczeń.
-7.  Zmień rok bazowy 2012 i wybierz **Generuj**. Wygenerowany raport otworzy się w nowej karcie przeglądarki. Raport można przeglądać w nowej karcie przeglądarki, albo przejść do wyjściowej karty przeglądarki i otworzyć go tam, wybierając z listy **Raporty finansowe**.
+7.  Zmień rok bazowy 2012 i wybierz **Generuj**. Jeżeli raport jest generowany z projektanta raportów, zostanie otwarty na nowej karcie przeglądarki. Raport można przejrzeć na nowej karcie przeglądarki lub przejść do oryginalnej karty przeglądarki i otworzyć tam raport, wybierając go z listy **Raporty finansowe**.
 8.  W otwartym raporcie wybierz jedną z kwot, aby wyświetlić szczegóły konta dla raportu.
 9.  Po wyświetleniu szczegółów konta wybierz konto z danymi i **przejdź niżej do poziomu transakcji raportu**. Na poziomie transakcji raportu widać właściwości (atrybuty), które zostały dołączone do projektu tego raportu. W zależności od transakcji i konta mogą być wyświetlane niektóre lub wszystkie atrybuty.
 10. Zamknij poziom transakcji raportu.
@@ -183,8 +182,8 @@ W tym ćwiczeniu utworzymy nowy raport. Raport jest rachunkiem wyników działu 
 18. **Zapisz** zmiany i **wygeneruj**. Po otarciu wygenerowanego raportu możesz sprawdzić jego zawartość.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-[Raportowanie finansowe](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
-[Wyświetlanie raportów finansowych](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
+[Raportowanie finansowe](../../financials/general-ledger/financial-reporting-getting-started.md) 
+[Wyświetlanie raportów finansowych](../../financials/general-ledger/view-financial-reports.md) 
 [Blog o sprawozdawczości finansowej w systemie Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

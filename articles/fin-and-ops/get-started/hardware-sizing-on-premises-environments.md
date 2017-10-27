@@ -15,18 +15,18 @@ ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 ms.author: chwolf
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 4a1cab8c126ad063a52827421d2ea1104d0c7287
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: 5be9b195754d6c8315342c83451128092f64a241
 ms.contentlocale: pl-pl
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>Szacowanie zapotrzebowania na sprzęt dla środowisk lokalnych
-Przed rozpoczęciem procesu szacowania zapotrzebowania na sprzęt i infrastrukturę w środowisku lokalnym, zapoznaj się z tematami [Wymagania systemowe](../get-started/system-requirements.md) oraz [Instrukcje konfigurowania i wdrażania](../deployment/setup-deploy-on-premises-environments.md), aby dobrze poznać cechy bazowej infrastruktury. 
+Przed rozpoczęciem procesu szacowania zapotrzebowania na sprzęt i infrastrukturę w środowisku lokalnym, zapoznaj się z tematami [Wymagania systemowe](system-requirements.md) oraz [Instrukcje konfigurowania i wdrażania](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md), aby dobrze poznać cechy bazowej infrastruktury. 
 
   **Uwaga:** Przestrzegaj najważniejszych wskazówek dotyczących konfigurowania systemu, aby uzyskać optymalną wydajność. 
 
@@ -89,7 +89,7 @@ Aby poznać zapotrzebowanie na elementy infrastruktury, konieczne jest ustalenie
 Zalecamy, aby zawsze używać programu SQL Server w konfiguracji z klastrem lub dublowaniem. Drugi węzeł serwera SQL powinien mieć taką samą liczbę rdzeni, jak węzeł główny. 
 
 ### <a name="active-directory-federation-services-ad-fs"></a>Active Directory Federation Services (AD FS)
-W kwestii szacowania zapotrzebowania na elementy infrastruktury dla usługi AD FS zobacz [Dokumentacja parametrów serwera usługi AD FS](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
+W kwestii szacowania zapotrzebowania na elementy infrastruktury dla usługi AD FS zobacz [Dokumentacja parametrów serwera usługi AD FS](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
 
 Jest dostępny [arkusz kalkulacyjny szacowania zapotrzebowania na elementy infrastruktury](http://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) pomagający zaplanować liczbę wystąpień we wdrożeniu.
 

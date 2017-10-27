@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
-ms.openlocfilehash: d5e4857081134808b194d3248dd8739f83b57d6e
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: 297fe730a432e05e1ab490be4802c37f9402b0a7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -116,14 +116,14 @@ Można pobrać i edytować nagrania firmy Microsoft i używać ich do tworzenia 
 11. Wybierz, jak chcesz zapisać nagranie zadania.
 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>Umieszczanie nagrań zadań w okienku Pomocy
-Aby wyświetlić własne niestandardowe nagrania zadań w okienku Pomocy, by mogły być odtwarzane jako przewodniki po zadaniach lub wyświetlane jako tekst, należy zapisać nagrania zadań w bibliotece BPM, a następnie zaktualizować parametry systemu Pomocy, aby wskazywał bibliotekę BPM. Aby uzyskać więcej informacji, zobacz [Łączenie z systemem Pomocy](../get-started/help-connect.md).
+Aby wyświetlić własne niestandardowe nagrania zadań w okienku Pomocy, by mogły być odtwarzane jako przewodniki po zadaniach lub wyświetlane jako tekst, należy zapisać nagrania zadań w bibliotece BPM, a następnie zaktualizować parametry systemu Pomocy, aby wskazywał bibliotekę BPM. Aby uzyskać więcej informacji, zobacz [Łączenie z systemem Pomocy](../../fin-and-ops/get-started/help-connect.md).
 
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Omówienie Pomocy](..\get-started\help-overview.md)
+[Omówienie Pomocy](../../fin-and-ops/get-started/help-overview.md)
 
-[Nawiązywanie połączenia z Pomocą](..\get-started\help-connect.md)
+[Nawiązywanie połączenia z Pomocą](../../fin-and-ops/get-started/help-connect.md)
 
 [Rejestrator zadań](task-recorder.md)
 
