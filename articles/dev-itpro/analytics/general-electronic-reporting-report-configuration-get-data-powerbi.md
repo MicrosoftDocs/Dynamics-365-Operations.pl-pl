@@ -1,7 +1,7 @@
 ---
 title: "Konfigurowanie raportowania elektronicznego do ściągania danych do usługi Power BI"
 description: "W tym temacie wyjaśniono sposób wykorzystania konfiguracji raportowania elektronicznego (ER) do organizowania przesyłania danych z wystąpienia programu Finance and Operations do usług Power BI. Na potrzeby przykładu użyto transakcji Intrastat jako danych biznesowych, które muszą zostać przesłane. Funkcja wizualizacja mapy w programie Power BI wykorzystuje te dane transakcji Intrastat do przedstawienia widoku umożliwiającego analizę działań importowych/eksportowych firmy w raporcie programu Power BI."
-author: kfend
+author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global

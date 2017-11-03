@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 274193
 ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 ms.search.region: Poland
