@@ -1,7 +1,7 @@
 --- 
 title: "Tworzenie składników modelu produktu"
 description: "Modele konfiguracji produktów opartych na ograniczeniach wykorzystują składniki jako elementy konstrukcyjne do zbudowania struktury modelu produktu."
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 03/02/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
