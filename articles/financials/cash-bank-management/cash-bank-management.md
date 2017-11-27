@@ -3,14 +3,14 @@ title: "Zarządzanie gotówką i bankami — strona główna"
 description: "Moduł Zarządzanie gotówką i bankami służy do obsługi kont bankowych firmy i instrumentów finansowych skojarzonych z tym kontami bankowymi."
 author: twheeloc
 manager: AnnBe
-ms.date: 08/21/2017
+ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 82a2be9d6058a1c3394bb8269774772793333541
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 8b060d8ef5bd7e7358df666c5e17cc5d9aac944a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -90,7 +90,7 @@ Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadma
 
 #### <a name="blogs"></a>Blogi
 
-Opinie, aktualności i inne informacje na temat modułu Zarządzanie gotówką i bankami i innych rozwiązań można znaleźć w [blogu Microsoft Dynamics 365] (https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
+Opinie, aktualności i inne informacje dotyczące modułu Zarządzanie gotówką i bankami oraz innych rozwiązań można znaleźć w [blogu poświęconym usłudze Microsoft Dynamics 365] (https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
 Wiele wpisów dotyczących modułu Zarządzanie gotówką i bankami jest dostępnych w [blogu zespołu produktu Microsoft Dynamics AX](https://blogs.msdn.microsoft.com/dax/). Mimo że część z tych wpisów została napisana dla poprzedniej wersji modułu Zarządzanie gotówką i bankami, to w obecnej wersji są również używane te same pojęcia i podobne procedury.
 

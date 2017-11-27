@@ -3,7 +3,7 @@ title: "Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operati
 description: "Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: margoc
 manager: AnnBe
-ms.date: 09/29/2017
+ms.date: 11/13/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cb040b28078e5072fdb695e7b39e82557219addc
-ms.openlocfilehash: ca1658a9dc7594168476298132274b2c5910b012
+ms.sourcegitcommit: bb258999e072dc280bccfe64fb0dbd41d6577a0e
+ms.openlocfilehash: dbcbd7f7b0c23545eec74de538f1d7ec96ac98b6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/13/2017
 
 ---
 
@@ -67,7 +67,7 @@ Wiele z nich dotyczy również produktów pokrewnych: Microsoft Dynamics 365 for
 
 <h3><a href="../supply-chain/index.md">Zarządzanie łańcuchem dostaw</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Zarządzanie kosztami</a></p>
-<p><a href="../supply-chain/inventory/inventory-locations.md">Zarządzanie zapasami</a></p>
+<p><a href="../supply-chain/inventory/inventory-home-page.md">Zarządzanie zapasami</a></p>
 <p><a href="../supply-chain/master-planning/master-plans.md">Planowanie główne</a></p>
 <p><a href="../supply-chain/procurement/procurement-sourcing-overview.md">Zaopatrzenie i sourcing</a></p>
 <p><a href="../supply-chain/pim/product-information.md">Zarządzanie informacjami o produktach</a></p>
@@ -88,7 +88,10 @@ Wiele z nich dotyczy również produktów pokrewnych: Microsoft Dynamics 365 for
 
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Programowanie</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Możliwości rozszerzania</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Integracja danych i zarządzanie nimi</a></p>
+
+<p><a href="../dev-itpro/data-entities/integration-overview.md">Integracja danych</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Zarządzanie danymi</a></p>
+
 <p><a href="../dev-itpro/office-integration/office-integration.md">Integracja z pakietem Office</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Ciągłe dostarczanie</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Platforma mobilna</a></p>
@@ -97,8 +100,8 @@ Wiele z nich dotyczy również produktów pokrewnych: Microsoft Dynamics 365 for
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Administracja</h3>
 <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Wdrażanie</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Uaktualnianie</a></p>
-<p><a href="../dev-itpro/dev-tools/developer-home-page.md#service-environments">Obsługa</a></p>
-<p><a href="../dev-itpro/data-entities/data-management-integration-data-entity.md">Zarządzanie danymi</a></p>
+<p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Obsługa</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Struktura zarządzania danymi</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Administrowanie organizacją</a></p>
 </td>

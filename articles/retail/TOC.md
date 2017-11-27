@@ -2,6 +2,11 @@
 
 # Rozpoczynanie pracy
 ## [Nowości i zmiany](get-started/whats-new.md)
+## [Przed zakupem rozwiązania Dynamics 365 for Retail](get-started/before-you-buy.md)
+## [Rejestracja w celu uzyskania subskrypcji w wersji Preview](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
+## [Wdrażanie środowiska demonstracyjnego](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Opcje wdrażania](dev-itpro/choose-deployment.md)
+
 
 # Płatności
 ## [Metody płatności](payment-methods.md)
@@ -39,9 +44,11 @@
 ## [Czas i frekwencja w handlu detalicznym](retail-time-attendance.md)
 
 # Aplikacje Modern Point of Sale (MPOS) i Cloud POS
+## [Operacje aplikacji POS](POS-operations.md)
+## [Układy ekranu danych demonstracyjnych w aplikacji MPOS/CPOS](demo-data.md)
 ## Sprzęt i urządzenia peryferyjne
 ### [Omówienie sklepowych urządzeń peryferyjnych](retail-peripherals-overview.md)
-### [Urządzenia peryferyjne punktu sprzedaży przetestowane przez firmę Microsoft](microsoft-tested-pos-hardware-peripherals.md)
+### [Urządzenia peryferyjne dla punktów sprzedaży przetestowane przez firmę Microsoft](microsoft-tested-pos-hardware-peripherals.md)
 ### [Symulator sklepowych urządzeń peryferyjnych](dev-itpro/retail-peripheral-simulator.md)
 ### [Definiowanie klientów, rejestrów i stacji sprzętowych w kanale oraz zarządzanie nimi](define-maintain-channel-clients-registers-hw-stations.md)
 ## Układ ekranu
@@ -60,10 +67,11 @@
 ### [Hybrydowe zamówienia odbiorców](hybrid-customer-orders.md)
 ## Sprzedaż skojarzona
 ### [Śledzenie prowizji w punkcie sprzedaży przy użyciu grup sprzedaży](pos-sales-groups-track-commissions.md)
+## [Wysyłanie zamówienia z innego sklepu](charge-send.md)
 ## Aktywacja urządzenia
 ### [Konfigurowanie i instalowanie aplikacji MPOS](retail-modern-pos-device-activation.md)
 ### [Konfigurowanie logowania rozszerzonego w aplikacjach Cloud POS i MPOS](extended-logon.md)
-### [Zarządzanie kontami i urządzeniami handlu detalicznego z centrali](set-up-activation-accounts-validate-devices-hq.md)
+### [Zarządzanie kontami i urządzeniami rozwiązania Retail z centrali](set-up-activation-accounts-validate-devices-hq.md)
 ## Paragony
 ### [Konfigurowanie szablonów paragonów](receipt-templates-printing.md) 
 ### [Wysyłanie paragonów pocztą e-mail z aplikacji MPOS](email-receipts.md)
@@ -171,10 +179,10 @@
 ### [Zawartość usługi Power BI dotycząca wydajności kanału sprzedaży detalicznej](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Wdrażanie i poprawki
-### [Konfigurowanie i instalowanie jednostki skalowania sklepów detalicznych](dev-itpro/retail-store-scale-unit-configuration-installation.md)
-#### [System sklepu detalicznego — przed rozpoczęciem](dev-itpro/retail-store-system-begin.md)
+### [Omówienie jednostki skalowania sklepów rozwiązania Retail](dev-itpro/retail-store-system-begin.md)
+#### [Konfigurowanie i instalowanie jednostki skalowania sklepów rozwiązania Retail](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Konfigurowanie i instalowanie aplikacji Retail Modern POS](retail-modern-pos-device-activation.md)
-#### [Zarządzanie kontami i urządzeniami handlu detalicznego z centrali](set-up-activation-accounts-validate-devices-hq.md)
+#### [Zarządzanie kontami i urządzeniami rozwiązania Retail z centrali](set-up-activation-accounts-validate-devices-hq.md)
 #### [Aktywacja urządzenia w aplikacji Retail POS](dev-itpro/retail-device-activation.md)
 #### [Zabezpieczanie aplikacji Cloud POS w rozwiązaniu Retail](dev-itpro/secure-retail-cloud-pos.md)
 ### [Konfigurowanie i instalowanie modułu Retail Hardware Station](retail-hardware-station-configuration-installation.md)
@@ -187,6 +195,7 @@
 ### [Instalowanie składników wersji N-1](dev-itpro/n-1-installation-configuration.md)
 
 ## Konfiguracja środowiska
+### [Dodawanie linków do postanowień prawnych i zasad zachowania poufności informacji organizacji](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [Zarządzanie Mapami Bing](dev-itpro/manage-bing-maps.md)
 
 ## Możliwości rozszerzania
@@ -195,8 +204,9 @@
 ##### [Instalowanie projektanta układów punktu sprzedaży](install-pos-layout-designer.md)
 #### [Konfigurowanie aplikacji MPOS do działania w trybie offline](dev-itpro/retail-modern-pos-offline.md)
 #### [Możliwości rozszerzania wyzwalacza aplikacji MPOS i Cloud POS](dev-itpro/modern-pos-trigger-extensibility.md)
-#### [Dodawanie niestandardowego formantu do widoku punktu sprzedaży](dev-itpro/pos-custom-control.md)
-#### [Rozszerzenie płatności w punkcie sprzedaży](dev-itpro/pos-payment-extension.md)
+#### [Dodawanie kontrolki niestandardowej do widoku aplikacji POS](dev-itpro/pos-custom-control.md)
+#### [Rozszerzenie płatności aplikacji POS](dev-itpro/pos-payment-extension.md)
+#### [Obsługa zewnętrznych kart upominkowych](dev-itpro/gift-card.md)
 ### [Tworzenie aplikacji Środowisko handlu detalicznego](dev-itpro/create-retail-experience-app.md)
 ### [Omówienie i możliwości rozszerzania stacji sprzętowej](dev-itpro/hardware-station-extensibility.md)
 
@@ -229,11 +239,17 @@
 ### [Integrowanie zestawu Retail SDK z systemem ciągłej kompilacji](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Przykłady możliwości rozszerzania zestawu Retail SDK](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Kasy w Szwecji](localizations/emea-swe-cash-registers.md)
-### [Próbki dla integracji programu Retail POS z jednostkami kontrolnymi dla Szwecji](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
-### [Pakiety zestawu Retail SDK](dev-itpro/retail-sdk/retail-sdk-packaging.md)
-### [Przykłady zestawu Retail SDK ](dev-itpro/retail-sdk/retail-sdk-samples.md)
-### [Rozszerzenia baza danych kanału](dev-itpro/channel-db-extensions.md)
+### [Przykład integracji aplikacji Retail POS za pomocą jednostek kontrolnych dla Szwecji](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+### [Kasy w Norwegii](localizations/emea-nor-cash-registers.md)
+### [Przewodniki wdrażania kas w Norwegii](localizations/emea-nor-loc-deployment-guidelines.md)
+### [Pakiety zestawu SDK do Retail](dev-itpro/retail-sdk/retail-sdk-packaging.md)
+### [Przykłady zestawu SDK do Retail ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+### [Rozszerzenia bazy danych kanału](dev-itpro/channel-db-extensions.md)
 ### [Możliwości rozszerzania CDX](dev-itpro/cdx-extensibility.md)
+### [Atrybuty zamówienia](dev-itpro/order-attributes.md)
+### [Atrybuty odbiorcy](dev-itpro/customer-attributes.md)
+### [Serwery proxy Typescript i C# rozwiązania Retail](dev-itpro/typescript-proxy-retail-pos.md)
+
 
 ## Środowisko uruchomieniowe Commerce runtime
 ### [Rozszerzenie lojalnościowe](dev-itpro/retail-sdk/loyalty-extension-sample.md)

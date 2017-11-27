@@ -1,10 +1,9 @@
 # [Zapraszamy do korzystania z rozwiązania Dynamics 365 for Talent](index.md)
 
-# Rozpoczęcie pracy
+# [Rozpoczęcie pracy](talent-get-started.md)
 ## [Wymagania systemowe i zasady aktualizacji](talent-versions-update-policy.md)
 
-# Opracowywanie strategii dotyczącej zasobów ludzkich
-## [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](departments-jobs-positions.md)
+# [Opracowywanie strategii dotyczącej zasobów ludzkich](departments-jobs-positions.md)
 ## [Konfigurowanie składników funkcji](create-job.md)
 ## [Tworzenie działu i kojarzenie go z hierarchią działów](create-department-add-department-hierarchy.md)
 ## [Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach](set-up-hr-parameters-across-legal-entities.md)
@@ -28,13 +27,11 @@
 ## [Dopasowywanie umiejętności pracowników do potrzeb biznesowych](skills.md)
 ## [Konfigurowanie kursów szkoleniowych](courses.md)
 
-# Tworzenie i obsługa świadczeń
-## [Zarządzanie programem świadczeń](manage-benefit-program.md)
-## [Zasady uprawnień do świadczeń](benefit-eligibility-policies.md)
+# [Tworzenie i obsługa świadczeń](manage-benefit-program.md)
+# [Zasady uprawnień do świadczeń](benefit-eligibility-policies.md)
 ## [Zarządzanie przedmiotami wypożyczanymi pracownikom](loan-items.md)
 
-# Zbieranie informacji za pomocą kwestionariuszy
-## [Kwestionariusze](questionnaires.md)
+# [Zbieranie informacji za pomocą kwestionariuszy](questionnaires.md)
 ## [Projektowanie kwestionariusza](design-questionnaires.md)
 ## [Rozsyłanie i wypełnianie kwestionariusza](distribute-questionnaires.md)
 ## [Ocenianie wyników kwestionariusza](evaluate-questionnaire-results.md)
