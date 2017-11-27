@@ -26,25 +26,25 @@ ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="assess-sales-performance-by-product"></a><span data-ttu-id="2098e-103">Ocenianie wydajności sprzedaży według produktów</span><span class="sxs-lookup"><span data-stu-id="2098e-103">Assess sales performance by product</span></span>
+# <a name="assess-sales-performance-by-product"></a><span data-ttu-id="38a72-103">Ocenianie wydajności sprzedaży według produktów</span><span class="sxs-lookup"><span data-stu-id="38a72-103">Assess sales performance by product</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-<span data-ttu-id="2098e-104">W programie Microsoft Dynamics 365 for Retail można badać rentowności 10 najlepszych produktów.</span><span class="sxs-lookup"><span data-stu-id="2098e-104">You can study profitability for the top 10 products using Microsoft Dynamics 365 for Retail.</span></span> 
+<span data-ttu-id="38a72-104">W programie Microsoft Dynamics 365 for Retail można badać rentowności 10 najlepszych produktów.</span><span class="sxs-lookup"><span data-stu-id="38a72-104">You can study profitability for the top 10 products using Microsoft Dynamics 365 for Retail.</span></span> 
 
-<span data-ttu-id="2098e-105">W programie Dynamics 365 for Retail użytkownicy mogą także analizować rentowność najlepszych produktów (10-100) na różnych poziomach hierarchii organizacyjnej na podstawie następujących kryteriów:</span><span class="sxs-lookup"><span data-stu-id="2098e-105">As part of Dynamics 365 for Retail, users can also study profitability for the top products (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:</span></span>
+<span data-ttu-id="38a72-105">W programie Dynamics 365 for Retail użytkownicy mogą także analizować rentowność najlepszych produktów (10-100) na różnych poziomach hierarchii organizacyjnej na podstawie następujących kryteriów:</span><span class="sxs-lookup"><span data-stu-id="38a72-105">As part of Dynamics 365 for Retail, users can also study profitability for the top products (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:</span></span>
 
--   <span data-ttu-id="2098e-106">Kwota sprzedaży</span><span class="sxs-lookup"><span data-stu-id="2098e-106">Sales amount</span></span>
--   <span data-ttu-id="2098e-107">Ilość</span><span class="sxs-lookup"><span data-stu-id="2098e-107">Quantity</span></span>
--   <span data-ttu-id="2098e-108">Marża zysku brutto</span><span class="sxs-lookup"><span data-stu-id="2098e-108">Gross profit margin</span></span>
--   <span data-ttu-id="2098e-109">Wartość procentowa marży</span><span class="sxs-lookup"><span data-stu-id="2098e-109">Margin percentage</span></span>
+-   <span data-ttu-id="38a72-106">Kwota sprzedaży</span><span class="sxs-lookup"><span data-stu-id="38a72-106">Sales amount</span></span>
+-   <span data-ttu-id="38a72-107">Ilość</span><span class="sxs-lookup"><span data-stu-id="38a72-107">Quantity</span></span>
+-   <span data-ttu-id="38a72-108">Marża zysku brutto</span><span class="sxs-lookup"><span data-stu-id="38a72-108">Gross profit margin</span></span>
+-   <span data-ttu-id="38a72-109">Wartość procentowa marży</span><span class="sxs-lookup"><span data-stu-id="38a72-109">Margin percentage</span></span>
 
-<span data-ttu-id="2098e-110">Na potrzeby tej analizy można używać gotowych raportów **Najlepsze produkty**, które można otworzyć z następujących lokalizacji:</span><span class="sxs-lookup"><span data-stu-id="2098e-110">For this assessment, you can use the out-of-box **Top products** report, which you can open from any of the following locations:</span></span>
+<span data-ttu-id="38a72-110">Na potrzeby tej analizy można używać gotowych raportów **Najlepsze produkty**, które można otworzyć z następujących lokalizacji:</span><span class="sxs-lookup"><span data-stu-id="38a72-110">For this assessment, you can use the out-of-box **Top products** report, which you can open from any of the following locations:</span></span>
 
--   <span data-ttu-id="2098e-111">Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="2098e-111">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
--   <span data-ttu-id="2098e-112">Obszar roboczy **Zarządzanie kategoriami i produktami** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="2098e-112">**Category and product management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
--   <span data-ttu-id="2098e-113">Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="2098e-113">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**</span></span>
+-   <span data-ttu-id="38a72-111">Obszar roboczy **Zarządzanie sklepem sieciowym** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="38a72-111">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
+-   <span data-ttu-id="38a72-112">Obszar roboczy **Zarządzanie kategoriami i produktami** &gt; **Handel detaliczny** &gt; **Kanały** &gt; **Zarządzanie sklepem sieciowym** &gt; **Raporty** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="38a72-112">**Category and product management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**</span></span>
+-   <span data-ttu-id="38a72-113">Sekcja **Zapytania i raporty** &gt; **Handel detaliczny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="38a72-113">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**</span></span>
 
 
 
