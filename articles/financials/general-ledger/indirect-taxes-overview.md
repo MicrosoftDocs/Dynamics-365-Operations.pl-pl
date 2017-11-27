@@ -1,9 +1,9 @@
 ---
 title: "Omówienie podatku"
-description: "Ten artykuł zawiera omówienie systemu podatków. Objaśniono w nim elementy konfiguracji podatku od sprzedaży oraz ich współdziałanie."
+description: "Ten temat zawiera omówienie systemu podatków. Objaśniono w nim elementy konfiguracji podatku od sprzedaży oraz ich współdziałanie."
 author: twheeloc
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f4838dade6b2694a11f4b9775fe53560b1332f18
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1eb30ccbaa51bf794c7b3ea2be3fe749fb8ff88d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/29/2017
 [!include[retail name](../includes/retail-name.md)]
 
 
-Ten artykuł zawiera omówienie systemu podatków. Objaśniono w nim elementy konfiguracji podatku od sprzedaży oraz ich współdziałanie.
+Ten temat zawiera omówienie systemu podatków. Objaśniono w nim elementy konfiguracji podatku od sprzedaży oraz ich współdziałanie.
 
 <a name="overview"></a>Przegląd
 --------
@@ -59,7 +59,7 @@ W poniższej tabeli opisano jednostki i kolejność konfiguracji podatku.
 | Działanie konfiguracyjne                                                  | Wskaźnik wymagane/opcjonalne oraz opis                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tworzenie kont głównych.                                           | Wymagane. Przed rozpoczęciem konfigurowania funkcji podatku należy utworzyć konta główne używane w firmie do płacenia i rejestrowania podatków.                                                                                                                                                                             |
-| Skonfiguruj grupy księgowania w księdze dla podatku.                     | Wymagane. Grupy księgowania definiują konta główne do rejestrowania i płacenia podatków.   Aby uzyskać więcej informacji, zobacz [Konfigurowanie grupy księgowania podatku](tasks/set-up-ledger-posting-groups-sales-tax.md)                                                                                 |
+| Skonfiguruj grupy księgowania w księdze dla podatku.                     | Wymagane. Grupy księgowania definiują konta główne do rejestrowania i płacenia podatków.   Aby uzyskać więcej informacji, zobacz [Konfigurowanie grup księgowania podatku](tasks/set-up-ledger-posting-groups-sales-tax.md)                                                                                 |
 | Skonfiguruj urzędy skarbowe.                                   | Wymagane. Urzędy skarbowe są jednostkami, w których podatek musi zostać zgłoszony i zapłacony.    Aby uzyskać więcej informacji, zobacz [Konfigurowanie urzędów skarbowych](tasks/set-up-sales-tax-authorities.md).                                                                                                                                          |
 | Ustawianie okresów rozliczania podatku.                            | Wymagane. Okresy rozliczenia podatku informują kiedy i jak często podatek musi być zgłaszany i opłacany. Odnoszą się one do urzędu skarbowego.                                                                                                                                                       |
 | Konfigurowanie kodów raportowania podatku.                               | Opcjonalne. Kody raportowania podatku można przypisać do kodów podatku w celu raportowania kwoty dla wielu kodów podatku w jednym kodzie raportowania podatku. Aby uzyskać więcej informacji, zobacz [Ustawianie kodów raportowania podatku](tasks/set-up-sales-tax-reporting-codes.md).                                         |

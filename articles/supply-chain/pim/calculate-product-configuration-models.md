@@ -1,9 +1,9 @@
 ---
 title: "Obliczenia dla modeli produktu w konfiguracji — często zadawane pytania"
-description: "W tym artykule opisano obliczenia dla modeli konfiguracji produktu i wyjaśniono sposób korzystania z obliczeń wraz z ograniczeniami."
+description: "W tym temacie opisano obliczenia dla modeli konfiguracji produktu i wyjaśniono sposób korzystania z obliczeń wraz z ograniczeniami."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fea4e139d32c780769bafe08d603b828d366550c
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 0763e5a02e7a14b6ef369103aa25e435559abe19
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-W tym artykule opisano obliczenia dla modeli konfiguracji produktu i wyjaśniono sposób korzystania z obliczeń wraz z ograniczeniami.
+W tym temacie opisano obliczenia dla modeli konfiguracji produktu i wyjaśniono sposób korzystania z obliczeń wraz z ograniczeniami.
 
 Obliczenia mogą służyć do operacji arytmetycznych lub logicznych. Uzupełniają one ograniczenia wyrażenia w modelach konfiguracji produktu. Można zdefiniować obliczenia na stronie **Szczegóły modelu konfiguracji produktu**, a następnie utworzyć wyrażenia w obliczeniach w edytorze wyrażenia. Aby uzyskać więcej informacji, zobacz Utwórz obliczenia.
 
@@ -75,7 +75,7 @@ Obliczenia są wykonywane po dostarczeniu wartości dla wszystkich atrybutów we
 ## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a>Czy można zastąpić wartość, która jest obliczana dla atrybutu docelowego?
 Można zastąpić wartość, która jest obliczana dla atrybutu docelowego, o ile dla atrybutu docelowego nie wybrano ustawienia ukryty lub tylko do odczytu.
 
-## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Jak ustawić atrybut docelowy jako ukryty lub tylko do odczytu?
+## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>Jak ustawić atrybut docelowy jako ukryty lub tylko do odczytu?
 Aby ustawić atrybut jako ukryty lub tylko do odczytu, należy wykonać następujące czynności:
 
 1.  Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Wspólne** &gt; **Modele konfiguracji produktu**.

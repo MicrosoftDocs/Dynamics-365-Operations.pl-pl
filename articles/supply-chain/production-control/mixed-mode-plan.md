@@ -1,9 +1,9 @@
 ---
 title: "Planowanie w trybie mieszanym — łączenie sourcingu dyskretnego, procesowego i produkcji oszczędnej"
-description: "Ten artykuł zawiera informacje o mieszanym trybie planowania. W planowaniu w trybie mieszanym można modelować łańcuch dostaw na podstawie przepływu materiałów. Program Microsoft Dynamics 365 for Finance and Operations zapewnia, że przepływ materiałów następuje zgodnie z modelami, bez względu na wybrane zasady dostawy (karty Kanban, zlecenia produkcyjne, zamówienia zakupu, szarże produkcyjne lub zamówienia przeniesienia)."
+description: Ten temat zawiera informacje o mieszanym trybie planowania.
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 52931
 ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 09ced68ffe8ff300a04beb65fdf8527e63456f04
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: bb8fa816d48ee808b92a5bf80c2c39c51f33a195
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera informacje o mieszanym trybie planowania. W planowaniu w trybie mieszanym można modelować łańcuch dostaw na podstawie przepływu materiałów. Program Microsoft Dynamics 365 for Finance and Operations zapewnia, że przepływ materiałów następuje zgodnie z modelami, bez względu na wybrane zasady dostawy (karty Kanban, zlecenia produkcyjne, zamówienia zakupu, szarże produkcyjne lub zamówienia przeniesienia). 
+Ten temat zawiera informacje o mieszanym trybie planowania. W planowaniu w trybie mieszanym można modelować łańcuch dostaw na podstawie przepływu materiałów. Program Microsoft Dynamics 365 for Finance and Operations zapewnia, że przepływ materiałów następuje zgodnie z modelami, bez względu na wybrane zasady dostawy (karty Kanban, zlecenia produkcyjne, zamówienia zakupu, szarże produkcyjne lub zamówienia przeniesienia). 
 
 Można wybrać ogólną strategię dostarczania produktów, niezależnie od struktury produktów.  
 
@@ -59,7 +59,7 @@ Zazwyczaj karty Kanban nie są tworzone dla przyszłych dat, ponieważ karty kan
 
 Ta sama logika obowiązuje dla wszystkich innych typów zasad dostaw. Dlatego długoterminowe planowanie opiera się na tej samej logice, która ma być stosowana w odniesieniu do rzeczywistych zamówień po zatwierdzeniu produkcji i dostaw.
 
-## <a name="materials-allocation-crosssupply-policy--resource-consumption-on-boms"></a>Zasady alokacji materiałów w całym łańcuchu dostaw — zużycie zasobów na listach BOM
+## <a name="materials-allocation-cross-supply-policy--resource-consumption-on-boms"></a>Zasady alokacji materiałów w całym łańcuchu dostaw — zużycie zasobów na listach BOM
 Zużycie zasobów jest ważną funkcją. Zużycie zasobów umożliwia dynamiczny wybór magazynu pobrania materiałów na podstawie zasad dostaw (typ zamówienia), a także ułatwia obsługę danych bazowych.  
 
 Zużycie zasobów wymaga, aby magazyn, z którego materiały są pobierane, był przypisywany na podstawie sposobu dostarczania produktu. Innymi słowy w czasie wykonywania system znajduje zasoby, które powinny być używane do produkcji. W oparciu o te zasoby system znajduje magazyn pobrania.  

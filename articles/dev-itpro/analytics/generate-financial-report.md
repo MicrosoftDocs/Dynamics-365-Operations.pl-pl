@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 01bb8999e5d9c0e16f133a621ebfe1d102565f2f
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 2986d218318951b7e46cb5dfafcbd17f2d513755
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -33,10 +33,10 @@ ms.lasthandoff: 09/29/2017
 
 Ten temat zawiera informacje o generowaniu sprawozdania finansowego. 
 
-Aby wygenerować raport, otwórz definicję raportu, a następnie kliknij przycisk Generuj na pasku narzędzi. Okno Stan kolejki raportów otworzy się i wskaże lokalizację raportu w kolejce. Domyślnie wygenerowany raport zostanie otwarty w przeglądarce sieci web.
-| ![Uwaga](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Uwaga")**Uwaga**        |
-|------------------------------------------------------------------------------------------------|
-| Można generować raporty tylko do folderów i lokalizacji, do których masz uprawnienia dostępu. |
+Aby wygenerować raport, otwórz definicję raportu, a następnie kliknij przycisk Generuj na pasku narzędzi. Okno Stan kolejki raportów otworzy się i wskaże lokalizację raportu w kolejce. Domyślnie wygenerowane raporty otwierają się za pomocą Podglądu w sieci Web.
+
+> [!NOTE]
+> Można generować raporty tylko do folderów i lokalizacji, do których masz uprawnienia dostępu.
 
 W poniższej tabeli wyjaśniono opcje dostępne do generowania raportów.
 
@@ -50,10 +50,11 @@ Podczas generowania raportu są używane opcje, które określono na kartach Def
 ## <a name="schedule-report-generation"></a> Generowanie raportu planu
 Wiele firm ma podstawowy zbiór raportów, które są uruchamiane w zaplanowanych okresach, w celu dostosowania ich procesów biznesowych. Można zaplanować raport do generowania regularnego, np. codziennie, co tydzień, co miesiąc lub co roku. Sesja może obejmować jeden raport albo grupę raportów dla kilku przedsiębiorstw. Dla każdej uwzględnionej firmy, na przykład wpisanej w definicji drzewa raportowania, trzeba wprowadzić poświadczenia dostępu. Jeśli poświadczenia nie są prawidłowe, raport wyświetli tylko informacje, że masz uprawnienia dostępu, takie jak firma w której jesteś zalogowany w danej chwili. Informacje o danych wyjściowych są odczytywane najpierw z grupy raportów, a następnie z poszczególnych raportów.
 
-Tworzone i zapisywane raporty są wyświetlane w okienku nawigacji w obszarze Harmonogramy raportów. W celu uporządkowania raportów można tworzyć foldery. Jeśli nie działa jeden raport w harmonogramie, wszystkie pozostałe raporty będą dalej działały.
-| ![Ważne](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Ważne")**Ważne**                                                                                                           |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Do tworzenia, modyfikowania i usuwania harmonogramów raportów wymagana jest rola projektanta lub administratora. Po uruchomieniu raportu poświadczenia użytkownika, który utworzył harmonogram, są używane do generowania raportu. |
+Tworzone i zapisywane raporty są wyświetlane w okienku nawigacji w obszarze Harmonogramy raportów. W celu uporządkowania raportów można tworzyć foldery. Pominięcie generowania określonego raportu w harmonogramie nie wpływa w żaden sposób na pozostałe raporty.
+
+> [!IMPORTANT]
+> Aby móc tworzyć, modyfikować i usuwać harmonogramy raportów, trzeba pełnić rolę projektanta lub administratora. Po uruchomieniu raportu poświadczenia użytkownika, który utworzył harmonogram, są używane do generowania raportu.
+
 
 ### <a name="create-a-report-schedule"></a>Tworzenie harmonogramu raportu
 
@@ -99,15 +100,16 @@ Aby kontynuować, kliknij przycisk Uprawnienia w oknie dialogowym Planowanie rap
 ## <a name="missing-account-analysis-feature"></a>Funkcja analizy brakujących kont
 Można wyszukiwać konta finansowe i wymiary, których może brakować we wszystkich definicjach wierszy, definicjach drzew raportowania i definicjach raportów w grupie bloków konstrukcyjnych. Jest to przydatne, jeśli tworzysz lub aktualizujesz kilka kont lub bloków konstrukcyjnych w krótkim okresie, a chcesz zweryfikować, że wszystkie nowe informacje są uwzględnione w raportach.
 
-Brakujące konta są określane przy użyciu najniższej i najwyższej wartości z definicji wiersza lub definicji drzewa raportowania. Następnie program wyświetla listę kont, których nie ma w definicji wiersza lub definicji drzewa raportowania, ale które występują w danych finansowych. Jeśli brakujące konto jest większe lub mniejsze od wartości w definicji wiersza, to konto nie jest uwzględniane na liście brakujących kont.
-| ![Porada](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Porada")**Porada**                                             |
-|----------------------------------------------------------------------------------------------------------------------------------|
-| Na potrzeby sprawdzania ten proces powinien być uruchomiony przed wygenerowaniem miesięcznych raportów i podczas tworzenia bloków konstrukcyjnych. |
+Brakujące konta są określane przy użyciu najniższej i najwyższej wartości z definicji wiersza lub definicji drzewa raportowania. Następnie program wyświetla listę kont, których nie ma w definicji wiersza lub definicji drzewa raportowania, ale które występują w danych finansowych. Jeśli numer brakującego konta jest większy lub mniejszy od wartości określonych w definicji wiersza, konto nie jest uwzględniane na liście brakujących kont.
+
+> [!TIP]
+> Zalecane jest, aby w ramach sprawdzania poprawności uruchamiać tę procedurę przed generowaniem raportów miesięcznych oraz podczas tworzenia nowych modułów konstrukcyjnych.
 
 W raportach, które mają zakresy wartości, jest mniejsze prawdopodobieństwo brakujących kont. Jeśli to możliwe, używaj zakresów w blokach konstrukcyjnych, aby dodawać nowe konta podczas ich tworzenia. Jeśli jakikolwiek raport jest ustawiony na firmę @ANY, możesz zalogować się do określonej firmy i uruchomić analizę brakujących kont dla tej firmy.
-| ![Uwaga](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Uwaga")**Uwaga**                                                                                           |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Po dodaniu nowej firmy należy ją dodać do drzew raportowania we wszelkich istniejących raportach. W przeciwnym razie firma nie zostanie uwzględniona w analizie brakujących kont. |
+
+> [!NOTE]
+> Po dodaniu nowej firmy należy ją dodać do drzew raportowania we wszelkich istniejących raportach. W przeciwnym razie firma nie zostanie uwzględniona w analizie brakujących kont.
+
 
 ### <a name="run-missing-account-analysis"></a>Uruchamianie analizy brakujących kont
 
@@ -117,11 +119,11 @@ W raportach, które mają zakresy wartości, jest mniejsze prawdopodobieństwo b
 4.  W polu Grupuj wg zaznacz opcję sortowania wyników. Wyniki można sortować zgodnie z modułem konstrukcyjnym, którego to dotyczy, lub według zestawów wymiarów i wartości.
 5.  Przegląd wyświetlanych wyników. Gdy w górnym okienku zostanie zaznaczony element, w dolnym okienku pojawią się dodatkowe informacje o wyjątku. Obejmują one powiązane wymiary, wartości i raporty.
 6.  Aby otworzyć element, którego dotyczy problem, kliknij skojarzoną ikonę widoczną w okienku listy, lub kliknij element prawym przyciskiem myszy i wybierz Otwórz. Aby zaznaczyć wiele elementów, przytrzymaj klawisz Ctrl podczas zaznaczania elementów w dolnym okienku.
-7.  Jeśli analiza zwróci wartości, bloki konstrukcyjne lub raporty, których nie powinno w niej być, kliknij element prawym przyciskiem myszy i wybierz Wyklucz lub zaznacz pole wyboru Wykluczyć obok elementu, aby usunąć go z listy. Wykluczone elementy nie są uwzględniane podczas odświeżania listy. Aby zaznaczyć wiele elementów, przytrzymaj klawisz Ctrl podczas zaznaczania elementów w dolnym okienku. Aby wyświetlić wszystkie elementy, w tym wszystkie wyniki, które wcześniej zostały wykluczone z analizy, zaznacz pole wyboru Pokaż wykluczone bloki konstrukcyjne i wartości, a następnie kliknij Odśwież.
-8.  Kliknij przycisk Odśwież, aby odświeżyć określone wyjątki. Kliknij Tak, aby wykonać pełne odświeżenie wszystkich wyników, lub kliknij przycisk Nie, aby wykonać częściowe odświeżenie wskazanych elementów.
-    | ![Uwaga](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Uwaga")**Uwaga**                    |
-    |------------------------------------------------------------------------------------------------------------|
-    | Formularz jest automatycznie odświeżany po jego otwarciu, chyba że formularz został otwarty w ciągu ostatnich 15 minut. |
+7.  Jeśli analiza zwróci wartości, bloki konstrukcyjne lub raporty, których nie powinno w niej być, kliknij element prawym przyciskiem myszy i wybierz Wyklucz lub zaznacz pole wyboru Wykluczyć obok elementu, aby usunąć go z listy. Wykluczone elementy nie są uwzględniane podczas odświeżania listy. Aby wybrać wiele elementów, przytrzymaj wciśnięty klawisz Ctrl podczas zaznaczania elementów w dolnym okienku. Aby wyświetlić wszystkie elementy, w tym wcześniej wykluczone z analizy, zaznacz pole wyboru Pokaż wykluczone moduły konstrukcyjne i wartości, a następnie kliknij przycisk Odśwież.
+8.  Kliknij przycisk Odśwież, aby odświeżyć określone wyjątki. Kliknij przycisk Tak, aby wykonać pełne odświeżanie wszystkich wyników, lub kliknij przycisk Nie, aby wykonać częściowe odświeżenie określonych elementów.
+
+    > [!NOTE]
+    > Formularz jest automatycznie odświeżany przy otwieraniu, chyba że był otwarty w ciągu ostatnich 15 minut.
 
 9.  Gdy problem zostanie rozwiązany, kliknij OK, aby zamknąć okno dialogowe.
 

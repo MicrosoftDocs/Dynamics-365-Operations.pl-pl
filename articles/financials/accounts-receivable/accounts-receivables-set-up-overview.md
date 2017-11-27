@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fbe32e248727912073631f1dfb8ee0a49cbf0a5e
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -36,11 +36,10 @@ Odpowiednie skonfigurowanie modułów Rozrachunki z odbiorcami oraz Kredyty i wi
 Możliwe jest tworzenie odbiorców, grup odbiorców, profilów księgowania, różnych opcji płatności, not odsetkowych, ponagleń, prowizji, parametrów dotyczących odbiorców, opłat, dostaw i miejsc docelowych, weksli oraz innych informacji dotyczących rozrachunków z odbiorcami oraz kredytów i windykacji.
 Poniższa tabela zawiera listę stron, które umożliwiają konfigurację i obsługę modułów Rozrachunki z odbiorcami oraz Kredyty i windykacja. Pozycje tabeli zostały uporządkowane według zadania, a następnie alfabetycznie według nazwy strony.
 
-| ![Uwaga](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Uwaga")**Uwaga**          |
-|--------------------------------------------------------------------------------------------------|
-| Nawigacja do niektórych stron wymienionych w poniższej tabeli wymaga wprowadzenia informacji lub ustawienia parametrów. |
+> [!NOTE]
+> Nie można przejść do niektórych stron w poniższej tabeli, o ile nie wprowadzono danych lub ustawień parametrów na innych stronach.
 
-| Zadanie                                                 | Nazwa strony                            | Wykorzystanie                                                                                                                                                                                                                                                                             |
+| Zadanie                                                 | Nazwa strony                            | Użycie                                                                                                                                                                                                                                                                             |
 |------------------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurowanie wymaganych informacji dotyczących modułu Rozrachunki z odbiorcami | Parametry modułu rozrachunków z odbiorcami       | Konfiguracja parametrów dla modułu rozrachunków z odbiorcami.                                                                                                                                                                                                                             |
 |                                                      | Przepływy pracy dla rozrachunków z odbiorcami        | Umożliwia tworzenie przepływu pracy lub modyfikowanie istniejącego.                                                                                                                                                                                                                                      |

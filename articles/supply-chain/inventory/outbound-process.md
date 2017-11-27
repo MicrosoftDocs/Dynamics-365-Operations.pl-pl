@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 9c09a7bd314bb9005eb0b6c69d7cccad1c30cfdb
-ms.openlocfilehash: 7b395cab2184f8f9f3f50a7a595c6ed782645323
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1b8b17b719713097d77a117cca53eff6886ff1c7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -63,7 +63,7 @@ Przejdź do okna **Zarządzanie zapasami** \> **Konfiguracja** \> **Parametry mo
 
 [![Opcja Koniec zamówienia magazynowego wyjścia](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
-Czasami niektóre towary w zapasach nie mogą zostać pobrane w ramach przetwarzania listy pobierania. Taka sytuacja może mieć miejsce na przykład, jeżeli pracownik magazynu zmniejszy ilości w wierszach pobrania i przetworzy listy pobrania. Jeżeli opcja **Koniec zamówienia magazynowego wyjścia** jest ustawiona na **Tak**, pozostałe niepobrane ilości są zgłaszane z powrotem na poziom zamówienia. Jeżeli opcja jest ustawiona na **Nie**, pozostałe niepobrane ilości są zachowywane jako otwarta ilość zamówienia wyjścia. W takim przypadku ilości pozostają zwolnione do magazynu i muszą zostać dodane do nowej listy pobrania w ramach funkcji **Otwórz zamówienia wyjścia**.
+Gdy pracownik magazynu zmniejszy ilości na listach pobrania, odpowiednie ilości w zamówieniu magazynowym zostaną usunięte z wysyłki. Gdy lista pobrania zostanie zaktualizowana w określonym czasie, pozostałe ilości są zgłaszane z powrotem do zamówienia, jeżeli opcja **Koniec zamówienia magazynowego wyjścia** jest ustawiona na **Tak**. Jeżeli opcja **Koniec zamówienia magazynowego wyjścia** jest ustawiona na **Nie**, pozostała ilość jest zachowywana jako otwarta ilość zamówienia wyjścia i musi zostać dodana do nowej listy pobrania jako część funkcji **Otwórz zamówienia wyjścia**. 
 
 [![Polecenie Otwórz zamówienia wyjścia w menu Funkcje](./media/open-output-order.png)](./media/open-output-order.png)
 

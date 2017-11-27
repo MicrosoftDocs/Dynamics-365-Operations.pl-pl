@@ -1,9 +1,9 @@
 ---
 title: "Średnia ruchoma"
-description: 
+description: "Średnia ruchoma to metoda kosztów ciągłych oparta na zasadzie średniej, a w której koszty wydań z magazynu nie zmieniają się po zmianie kosztu zakupu. Różnica jest kapitalizowana i oparta na obliczeniu proporcjonalnym. Pozostała kwota jest zaliczana w koszty."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c1f8a8cf4a58177d423709f245760a5ba9ca7e4e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,8 +31,12 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](../includes/banner.md)]
 
+Średnia ruchoma to metoda kosztów ciągłych oparta na zasadzie średniej, a w której koszty wydań z magazynu nie zmieniają się po zmianie kosztu zakupu. Różnica jest kapitalizowana i oparta na obliczeniu proporcjonalnym. Pozostała kwota jest zaliczana w koszty. 
+
+Jeżeli używasz średniej ruchomej, rozliczenia zapasów i oznaczanie zapasów nie jest obsługiwane. Zamknięcie magazynu nie wpływa na produkty, które mają średnią ruchomą jako grupę modeli magazynu i nie generuje żadnych uzgodnień między transakcjami.
 
 Poniżej przedstawiono wymagania wstępne stosowania ruchomego kosztu średniego jako metody wyceny.
+
 1.  Na stronie **Grupy modeli pozycji** ustaw grupę modeli pozycji z ruchomym kosztem średnim wybranym w polu **model magazynu**. **Uwaga:** Domyślnie po wybraniu opcji Średnia ruchoma zaznaczane są także pola **Księguj magazyn fizyczny** i **Księguj magazyn finansowy**. 
 
 2.  Na stronie **Księgowanie** przypisz konta do kont **Różnica cen dla średniej ruchomej** i **Przeszacowanie kosztu dla średniej ruchomej** na karcie **Zapasy**. Konta **Przeszacowanie kosztu dla średniej ruchomej** należy użyć, gdy koszt ma być zaliczony proporcjonalnie. Dzieje się tak z powodu różnic w kosztach między paragonem zakupu a fakturą zakupu oraz z powodu różnic między pierwotną ilością zapasów i bieżącą dostępną ilością zapasów. Użyj konta **Przeszacowanie kosztu dla średniej ruchomej**, aby dostosować ruchomy średni koszt produktu dla nowej ceny jednostkowej.
@@ -83,7 +87,7 @@ W tym przykładzie ruchomy średni koszt jest korygowany dla produktu.
 Na stronie **Rozliczenia załącznika** widać korektę 4,00 zaksięgowaną dla konta Przeszacowanie kosztu dla średniej ruchomej.
 
 ## <a name="moving-average-with-production"></a>Średnia ruchoma z produkcją
-Ruchoma średnia obsługuje produkowane towary. Jeśli planujesz używać ruchomej średniej w środowisku produkcyjnym, suwak **Użyj szacowanego kosztu własnego** na stronie **Parametry kontroli produkcji**musi być zaznaczony. To znaczy, że używana jest cena kosztu obliczona podczas oszacowania zamiast ceny kosztu z rzeczywistymi obliczeniami BOM.
+Ruchoma średnia obsługuje produkowane towary. Jeśli planujesz używać ruchomej średniej w środowisku produkcyjnym, suwak **Użyj szacowanego kosztu własnego** na stronie **Parametry kontroli produkcji** musi być zaznaczony. To znaczy, że używana jest cena kosztu obliczona podczas oszacowania zamiast ceny kosztu z rzeczywistymi obliczeniami BOM.
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>Średnia ruchoma z transakcją przesunięcia
 Do postdatowanych transakcji przypisywany jest bieżący ruchomy średni koszt, fizyczna ilość produktu jest aktualizowana, ale ruchomy średni koszt produktu nie zmienia się. W tym przykładzie ruchomej średniej księgowana jest postdatowana transakcja dla średniego ruchomego produktu.

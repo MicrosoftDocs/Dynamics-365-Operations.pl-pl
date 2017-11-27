@@ -3,7 +3,7 @@ title: Tworzenie prognozy bazowej
 description: "Planista produkcji można utworzyć bazową prognozę przy użyciu modeli prognozowania serii czasowych lub przez skopiowanie historycznego popytu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 10/27/2016
+ms.date: 111/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e6363ee48c0d13c79a6c623205dfa10f50d6070f
+ms.sourcegitcommit: 76334f7ee4efe33df4a86aaa11a59748387cec89
+ms.openlocfilehash: 6a712077fed4a94ae6ae6ce7ea2cfba8848e5fa5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="create-a-baseline-forecast"></a>Tworzenie prognozy bazowej
@@ -42,7 +42,7 @@ Planista produkcji można utworzyć bazową prognozę przy użyciu modeli progno
 7. Zamknij stronę.
 8. Zamknij stronę.
 
-## <a name="set-up-the-demand-forecasting-paramters"></a>Konfigurowanie parametrów prognozowania popytu
+## <a name="set-up-the-demand-forecasting-parameters"></a>Konfigurowanie parametrów prognozowania popytu
 1. Wybierz kolejno opcje Planowanie główne > Ustawienia > Prognozowanie popytu > Parametry prognozowania popytu.
 2. Rozwiń sekcję Parametry algorytmu prognozy.
 3. W polu Strategia generowania prognozy wybierz opcję „Kopiuj na popycie historycznym”.

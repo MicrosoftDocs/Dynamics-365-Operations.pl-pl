@@ -16,10 +16,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 07fe007005fcbbac1beecadb14dbd752376a0bd4
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 55ef4b1757a6f3c28c8575412d66488fda8608a5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="create-a-requisition-for-consumption"></a>Tworzenie zapotrzebowania na zużycie
@@ -51,12 +51,12 @@ Ta procedura poprowadzi Cię przez proces tworzenia zapotrzebowania. Pokazuje r�
     * Zleceniodawcą jest pracownik, który zgłosił zapotrzebowanie.   
     * Domyślnie osobą przygotowującą zapotrzebowanie jest pracownik, który je złożył. Musisz otrzymać pozwolenie na przygotowanie wiersza zapotrzebowania w imieniu innego pracownika. Jeśli masz takie pozwolenie, drugi pracownik będzie widoczny w tym wyszukiwaniu.  
 3. W polu Numer towaru wpisz wartość.
-    * Towary dostępne do wyboru są ograniczone przez zasady dostępu do kategorii oraz przez katalog zaopatrzenia ustawiony dla firmy dokonującej zakupu.    
+    * Towary dostępne do wyboru są ograniczone przez zasady dostępu do kategorii oraz przez katalog zaopatrzenia ustawiony dla firmy dokonującej zakupu.   
 4. Wprowadź liczbę w polu Ilość.
 
 ## <a name="add-more-products-to-the-requisition"></a>Dodawanie kolejnych produktów do zapotrzebowania
 1. Kliknij przycisk Dodaj produkty.
-    * Jest to opcja, która umożliwia wyszukiwanie produktów w katalogu produktów.      
+    * Jest to opcja, która umożliwia wyszukiwanie produktów w katalogu produktów.    
 2. W polu Znajdź węzeł kategorii zaopatrzenia wpisz pierwszą częścią nazwy kategorii, której szukasz, a następnie kliknij przycisk Wprowadź.
     * Na przykład wpisz komput.  
 3. Użyj skrótu InvokeDefaultButton.

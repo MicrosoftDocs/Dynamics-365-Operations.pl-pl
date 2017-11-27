@@ -1,9 +1,9 @@
 ---
-title: "Obliczenia BOM przy użyciu kosztów standardowych"
-description: 
+title: "Informacje wykorzystywane w obliczeniach na potrzeby BOM z użyciem kosztów standardowych"
+description: "W obliczeniach listy składowej (BOM) są wykorzystywane dane z różnych źródeł w celu obliczenia kosztów standardowych wytwarzanego towaru. Źródła zawierają informacje o towarach, marszrutach, formułach obliczania kosztów pośrednich i wersjach wyceny."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMCalcDialog, BOMCalcGroup, BOMCalcTable, ProdParmBOMCalc
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 65571
 ms.assetid: ca17e6dd-b16a-4bbc-8682-b16345ab9906
 ms.search.region: Global
@@ -20,19 +20,19 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 60a84eaaf1f8aa4dbf4e1de10172a728a855e62b
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 187482f29e6982220b844777ef31997f0d5ef0d3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="bom-calculations-with-standard-costs"></a>Obliczenia BOM przy użyciu kosztów standardowych
+# <a name="information-used-in-bom-calculations-with-standard-costs"></a>Informacje wykorzystywane w obliczeniach na potrzeby BOM z użyciem kosztów standardowych
 
 [!include[banner](../includes/banner.md)]
 
 
-
+W obliczeniach listy składowej (BOM) są wykorzystywane dane z różnych źródeł w celu obliczenia kosztów standardowych wytwarzanego towaru. Źródła zawierają informacje o towarach, marszrutach, formułach obliczania kosztów pośrednich i wersjach wyceny.
 
 Informacje o nabytych towarach używane w przypadku obliczeń kosztu standardowego na potrzeby BOM to m.in.:
 -   Koszty − Koszty nabytych towarów są aktualizowane we właściwych dla oddziału rekordach kosztów standardowych w ramach wersji ceny. W każdym takim rekordzie określona jest data obowiązywania, natomiast data obliczania BOM określa, które rekordy kosztów zostaną użyte. Na przykład w przypadku obliczania BOM, dla którego określono datę obliczania w przyszłości, może zostać użyty rekord kosztów ze statusem Oczekujący i przyszłą datą obowiązywania.

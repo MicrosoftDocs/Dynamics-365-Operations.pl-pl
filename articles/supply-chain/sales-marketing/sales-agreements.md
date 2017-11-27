@@ -1,9 +1,9 @@
 ---
 title: "Umowy sprzedaży"
-description: "Ten artykuł zawiera informacje o umowach sprzedaży. Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktów w określonej ilości lub za określoną kwotę w ustalonym czasie w zamian za specjalne ceny i rabaty."
+description: "Ten temat zawiera informacje dotyczące umów sprzedaży. Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktów w określonej ilości lub za określoną kwotę w ustalonym czasie w zamian za specjalne ceny i rabaty."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 9554
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 15e3f872e4ded027734ee73081ba7af68be5107d
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 21e9c53f39b0f4def0052bf7f04c77279bfc610b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera informacje o umowach sprzedaży. Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktów w określonej ilości lub za określoną kwotę w ustalonym czasie w zamian za specjalne ceny i rabaty.
+Ten temat zawiera informacje dotyczące umów sprzedaży. Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktów w określonej ilości lub za określoną kwotę w ustalonym czasie w zamian za specjalne ceny i rabaty.
 
 Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktu w pewnej ilości lub kwocie w pewnym okresie czasu w zamian za specjalne ceny i rabaty, oraz z zachowaniem wszelki warunków specjalnych, takich jak warunki płatności i dostawy. Ceny i rabaty dla umowy zakupu zastępują ceny i rabaty, które są określone w jakichkolwiek istniejących umowach handlowych.  
 
@@ -88,7 +88,7 @@ Jeśli nie potwierdzi się umowy sprzedaży, można nadal użyć jej do tworzeni
 Można wyświetlić podgląd lub wydrukować wszystkie poprawki potwierdzeń. Następnie można udostępnić zmiany odbiorcy w celu uzyskania zatwierdzenia.
 
 ## <a name="applying-sales-agreements-during-the-ordering-process"></a>Stosowanie umów sprzedaży w trakcie procesu zamawiania
-Jeśli nie zwolnisz zamówień sprzedaży bezpośrednio dla umów sprzedaży, można połączyć umowę sprzedaży z zamówieniem w trakcie wprowadzania zamówienia. Podczas tworzenia nowego zamówienia sprzedaży i wybierz umowę sprzedaży, warunki umowy, np. warunki płatności, dostawy i adres dostawy, są stosowane do nagłówka zamówienia, i tworzone jest połączenie między umową i zamówieniem. Następnie w wierszach zamówienia, kiedy można wybrać produkty i kategorie określone w umowie sprzedaży, ceny i rabaty są kopiowane z tej umowy. To samo zamówienie sprzedaży może zawierać zarówno wiersze, które nie są powiązane z umową sprzedaży, jak i wiersze, które mają zobowiązania dla umowy sprzedaży.
+Jeśli nie zwolnisz zamówień sprzedaży bezpośrednio dla umowy sprzedaży, można połączyć umowę sprzedaży z zamówieniem w trakcie wprowadzania zamówienia. Podczas tworzenia nowego zamówienia sprzedaży i wybierz umowę sprzedaży, warunki umowy, np. warunki płatności, dostawy i adres dostawy, są stosowane do nagłówka zamówienia, i tworzone jest połączenie między umową i zamówieniem. Następnie w wierszach zamówienia, kiedy można wybrać produkty i kategorie określone w umowie sprzedaży, ceny i rabaty są kopiowane z tej umowy. To samo zamówienie sprzedaży może zawierać zarówno wiersze, które nie są powiązane z umową sprzedaży, jak i wiersze, które mają zobowiązania dla umowy sprzedaży.
 
 ## <a name="modifying-sales-orders-that-are-linked-to-sales-agreements"></a>Modyfikowanie zamówień sprzedaży, które są połączone z umowami sprzedaży
 Po utworzeniu (zwolnieniu) zamówienia sprzedaży z umowy sprzedaży niektóre pola w wierszach tego zamówienia sprzedaży można modyfikować tylko po usunięciu łącza do skojarzonych wierszy umowy sprzedaży. W poniższej tabeli wymieniono niektóre z tych pól.

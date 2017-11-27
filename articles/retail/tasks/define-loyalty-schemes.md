@@ -3,7 +3,7 @@ title: "Definiowanie schematów lojalnościowych"
 description: "Ta procedura zawiera instruktaż definiowania schematu lojalnościowego."
 author: jashanno
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/14/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 23c8876b1983d6bc20b68f24fa7cd5b042cfd488
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 1fc193e113961705f18488a4341652b3576fb275
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -50,7 +50,7 @@ Ta procedura zawiera instruktaż definiowania schematu lojalnościowego. Schemat
 13. W polu Identyfikator punktów lojalnościowych kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 14. Na liście kliknij łącze w wybranym wierszu.
 15. W polu Punkty lojalnościowe wpisz liczbę.
-    * Dla punktów lojalnościowych typu Kwota uzyskane kwoty są rejestrowane z miejscami dziesiętnymi. Na przykład jeśli reguła zdobywania punktów określa uzyskanie 1 punktu lojalnościowego za każdego wydanego dolara kanadyjskiego, a odbiorca wyda 1,25 dolara kanadyjskiego, odbiorca uzyskuje 1,25 punktu lojalnościowego. Dla punktów lojalnościowych typu Ilość uzyskane kwoty są rejestrowane jako liczby całkowite. Na przykład jeśli reguła zdobywania punktów określa uzyskanie 1 punktu lojalnościowego za każdego wydanego dolara kanadyjskiego, a odbiorca wyda 1,25 dolara kanadyjskiego, odbiorca uzyskuje 1,0 punktu lojalnościowego.  
+    * Dla punktów lojalnościowych typu Kwota uzyskane kwoty są rejestrowane z miejscami dziesiętnymi. Na przykład jeśli reguła zdobywania punktów określa uzyskanie 1 punktu lojalnościowego za każdego wydanego dolara kanadyjskiego, a odbiorca wyda 1,25 dolara kanadyjskiego, odbiorca uzyskuje 1,25 punktu lojalnościowego. Dla punktów lojalnościowych typu Ilość uzyskane kwoty są rejestrowane jako liczby całkowite. Na przykład jeśli reguła zdobywania punktów określa uzyskanie 1 punktu lojalnościowego za każdego wydanego dolara kanadyjskiego, a odbiorca wyda 1,25 dolara kanadyjskiego, odbiorca uzyskuje 1 punkt lojalnościowy.  
 16. Kliknij przycisk Zapisz.
 17. Kliknij przycisk Dodaj wiersz.
     * Reguły realizacji są używane, gdy jest używana metoda płatności w ramach programu lojalnościowego.  

@@ -1,5 +1,5 @@
 ---
-title: Partia towaru
+title: Konfigurowanie konsygnacji
 description: "W tym temacie wyjaśniono sposób korzystania z procesów konsygnacji przychodzącej dla zapasów."
 author: perlynne
 manager: AnnBe
@@ -8,10 +8,10 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders
+ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 220834
 ms.assetid: 3c9d6de4-45d4-459a-aef7-0d9ad2c22b3a
 ms.search.region: Global
@@ -19,21 +19,21 @@ ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b5f2f6d24537a6e28a820b298a88525553e1cd18
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: df5862a75646976d315fa77531d7c4fe9b1ec499
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="consignment"></a>Partia towaru
+# <a name="set-up-consignment"></a>Konfigurowanie konsygnacji
 
 [!include[banner](../includes/banner.md)]
 
 
 W tym temacie wyjaśniono sposób korzystania z procesów konsygnacji przychodzącej dla zapasów.
 
-Zapasy konsygnacyjne to zapasy, których właścicielem jest dostawca, ale są one przechowywane Twojej siedzibie. Gdy masz wszystko przygotowane do zużycia lub wykorzystania zapasów, przejmujesz ich własność. Ten temat zawiera informacje o tym, jak fizycznie przyjąć zapasy należące do dostawcy na stan bez tworzenia transakcji księgi głównej, jak uruchomić proces produkcji w sytuacji, gdy zapasy należące do dostawcy można fizycznie zarezerwować, i jak zmienić własność surowca w celu umożliwienia przetwarzania zużycia w ramach przetwarzania zlecenia produkcyjnego. Są tu także pewne informacje o tym, jak dostawcy mogą monitorować zużycie ich zapasów przy użyciu interfejsu współpracy z dostawcami. Aby uzyskać informacje o włączaniu i konfigurowaniu procesów konsygnacji przychodzącej, zobacz [Konfigurowanie konsygnacji](set-up-consignment.md).
+Zapasy konsygnacyjne to zapasy, których właścicielem jest dostawca, ale są one przechowywane Twojej siedzibie. Gdy masz wszystko przygotowane do zużycia lub wykorzystania zapasów, przejmujesz ich własność. Ten temat zawiera informacje o tym, jak fizycznie przyjąć zapasy należące do dostawcy na stan bez tworzenia transakcji księgi głównej, jak uruchomić proces produkcji w sytuacji, gdy zapasy należące do dostawcy można fizycznie zarezerwować, i jak zmienić własność surowca w celu umożliwienia przetwarzania zużycia w ramach przetwarzania zlecenia produkcyjnego. Są tu także pewne informacje o tym, jak dostawcy mogą monitorować zużycie ich zapasów przy użyciu interfejsu współpracy z dostawcami. 
 
 ## <a name="overview-of-the-consignment-process"></a>Omówienie procesu konsygnacji
 W tym przykładowym scenariuszu firma USMF ma umowę konsygnacyjną z dostawcą US-104 na surowiec M9211CI.
@@ -43,7 +43,6 @@ W tym przykładowym scenariuszu firma USMF ma umowę konsygnacyjną z dostawcą 
     -   Osoba pracująca w USMF wysyła informacje o zamówieniu do dostawcy.
     -   Dostawca może monitorować obecność oczekiwanych zapasów na stanie, używając do tego interfejsu współpracy z dostawcami.
     -   Osoba pracująca w USMF filtruje dane na stronie **Dostępne zapasy**, aby wyświetlić tylko te rekordy dostawcy US-104, które mają stan przyjęcia **Zamówione**, a następnie wysyła te informacje do dostawcy.
-
 3.  Zapasy są dostarczane od dostawcy US-104 do firmy USMF.
 4.  Po przybyciu materiału do USMF zamówienie uzupełnienia zapasów konsygnacyjnych jest aktualizowane o dokument przyjęcia produktów. Rejestrowane są tylko fizycznej ilości zapasów należących do dostawcy. Nie są tworzone żadne transakcje księgi głównej, ponieważ zapasy wciąż są własnością dostawcy.
 5.  Dostawca śledzi aktualizacje fizycznie dostępnych zapasów za pośrednictwem strony **Dostępne zapasy konsygnacyjne**.
@@ -61,7 +60,9 @@ USMF wykonuje dodatkowe procesy okresowe:
 Dostawca US-104 może monitorować aktualizacje za pomocą strony **Dostępne zapasy konsygnacyjne**.
 
 ## <a name="consignment-replenishment-orders"></a>Zamówienia uzupełnienia zapasów konsygnacyjnych
-Zamówienie uzupełnienia zapasów konsygnacyjnych to dokument używany do wnioskowania o ilości zapasów produktów, które dostawca zamierza dostarczyć w określonym przedziale dat poprzez tworzenie transakcji na zamówione zapasy, oraz do monitorowania tych ilości. Na ogół te ilości opierają się na prognozie i rzeczywistym popycie na wskazane produkty. Zapasy, które mają być przyjmowane na podstawie zamówienia uzupełnienia zapasów konsygnacyjnych, pozostają własnością dostawcy. Rejestrowane jest tylko posiadanie produktów związanych z aktualizacją fizycznego przyjęcia, dlatego nie występują żadne aktualizacje transakcji księgi głównej. Wymiar **Właściciel** jest używany do oddzielania informacji o tym, które zapasy są własnością dostawcy, a które własnością przyjmującej firmy. Wiersze zamówienia uzupełnienia zapasów konsygnacyjnych mają stan **Otwarte zamówienie** dotąd, aż zostanie przyjęta lub anulowana pełna ilość określona w wierszach. Gdy pełna ilość zostanie przyjęta lub anulowana, stan zmienia się na **Ukończono**. Fizycznie dostępne zapasy powiązane z zamówieniem uzupełnienia zapasów konsygnacyjnych mogą być rejestrowane za pomocą procesu rejestracji, a także procesu aktualizacji przyjęcia produktów. Rejestracja może się odbywać w ramach procesu przyjęcia towaru lub poprzez ręczną aktualizację wierszy zamówienia. Gdy jest używany proces aktualizacji przyjęcia produktów, w arkuszu przyjęcia produktów jest tworzony rekord, który może służyć do potwierdzania dostawcy, że otrzymano towary.
+Zamówienie uzupełnienia zapasów konsygnacyjnych to dokument używany do wnioskowania o ilości zapasów produktów, które dostawca zamierza dostarczyć w określonym przedziale dat poprzez tworzenie transakcji na zamówione zapasy, oraz do monitorowania tych ilości. Na ogół te ilości opierają się na prognozie i rzeczywistym popycie na wskazane produkty. Zapasy, które mają być przyjmowane na podstawie zamówienia uzupełnienia zapasów konsygnacyjnych, pozostają własnością dostawcy. Rejestrowane jest tylko posiadanie produktów związanych z aktualizacją fizycznego przyjęcia, dlatego nie występują żadne aktualizacje transakcji księgi głównej. 
+
+Wymiar **Właściciel** jest używany do oddzielania informacji o tym, które zapasy są własnością dostawcy, a które własnością przyjmującej firmy. Wiersze zamówienia uzupełnienia zapasów konsygnacyjnych mają stan **Otwarte zamówienie** dotąd, aż zostanie przyjęta lub anulowana pełna ilość określona w wierszach. Gdy pełna ilość zostanie przyjęta lub anulowana, stan zmienia się na **Ukończono**. Fizycznie dostępne zapasy powiązane z zamówieniem uzupełnienia zapasów konsygnacyjnych mogą być rejestrowane za pomocą procesu rejestracji, a także procesu aktualizacji przyjęcia produktów. Rejestracja może się odbywać w ramach procesu przyjęcia towaru lub poprzez ręczną aktualizację wierszy zamówienia. Gdy jest używany proces aktualizacji przyjęcia produktów, w arkuszu przyjęcia produktów jest tworzony rekord, który może służyć do potwierdzania dostawcy, że otrzymano towary.
 
 [![consignment-replenishment-order](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
@@ -81,4 +82,27 @@ Interfejs współpracy z dostawcami ma trzy strony związane z procesem konsygna
 -   **Zamówienia zakupu** **zużywające zapasy konsygnacyjne** — pokazuje szczegółowe informacje zamówienia zakupu związane ze zmianą własności wskutek procesu konsygnacji.
 -   **Produkty odebrane z zapasów konsygnacyjnych** — pokazuje informacje o towarach i ilościach, dla których zaktualizowano przyjęcia produktów w trakcie procesu zmiany własności.
 -   **Dostępne zapasy konsygnacyjne** — pokazuje informacje o towarach konsygnacyjnych, których dostarczenia oczekuje się od dostawcy, oraz o towarach, które są już fizycznie dostępne w siedzibie odbiorcy.
+
+## <a name="inventory-owners"></a>Właściciele zapasów
+Aby zarejestrować fizyczne przychodzące zapasy konsygnacyjne, należy zdefiniować właściciela będącego dostawcą. Służy do tego strona **Właściciel zapasów**. Wybranie opcji **Konto dostawcy** spowoduje wygenerowanie wartości domyślnych dla pól **Nazwa** i **Właściciel**. Wartość w polu **Właściciel** będzie widoczna dla dostawcy, więc warto ją zmienić, jeśli nazwy kont dostawców przechowywane w firmowych systemach są trudne do rozpoznania przez osoby zewnętrzne. Istnieje możliwość edytowania pola **Właściciel**, ale tylko do momentu zapisania rekordu **Właściciel zapasów**. W polu **Nazwa** jest wprowadzana nazwa strony, z którą jest skojarzone konto dostawcy, i nie można jej zmienić.
+
+[![inventory-owners](./media/inventory-owners.png)](./media/inventory-owners.png)
+
+## <a name="tracking-dimension-group"></a>Grupa wymiarów śledzenia
+Towary, które mają być używane w procesach konsygnacji, muszą być powiązane z **grupą wymiarów śledzenia**, która w wymiarze **Właściciel** ma ustawioną wartość **Aktywny**. Wymiar Właściciel zawsze ma zaznaczone opcje **Magazyn fizyczny** i **Magazyn finansowy**. Opcja **Plan zapotrzebowania wg wymiaru** nigdy nie jest zaznaczona.
+
+[![tracking-dimension-group](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+
+## <a name="inventory-ownership-change-journal"></a>Arkusz zmian własności zapasów
+Arkusz **Zmiana własności zapasów** służy do rejestrowania przeniesienia własności zapasów konsygnacyjnych z dostawcy na firmę, która je zużyje. Podobnie jak każdy arkusz magazynowy, musi być identyfikowany za pomocą nazwy arkusza magazynowego. Nazwy te są tworzone na stronie **Nazwy arkuszy magazynowych**, a w ustawieniu **Typ arkusza** trzeba zaznaczyć wartość **Zmiana własności**.
+
+[![inventory-ownership-change-journal](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+
+## <a name="vendor-collaboration-in-consignment-processes"></a>Współpraca z dostawcami w procesach konsygnacji
+Jeśli dostawcy używają interfejsu współpracy z dostawcami, mogą w nim monitorować zużywanie zapasów w oddziale Twojej firmy. Aby uzyskać więcej informacji o konfigurowaniu dostawców do używania portalu współpracy z dostawcami, zobacz [Konfiguracja zabezpieczeń dla użytkowników portalu współpracy z dostawcami](../procurement/configure-security-vendor-portal-users.md).
+
+
+
+
+
 

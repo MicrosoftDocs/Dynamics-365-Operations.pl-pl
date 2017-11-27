@@ -3,7 +3,7 @@ title: "Przegląd przyjęć"
 description: "Ten temat zawiera informacje dotyczące funkcji przeglądu przyjęć. Strona Przegląd przyjęć jest częścią tej funkcji i zawiera przegląd wszystkich towarów, których przybycia oczekuje się jako towary przychodzące."
 author: perlynne
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d9ebc0ea12de0c97718b565b77d99c3a1fcd6f21
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 9c174dc7bf61ffab0d20c7685a29007e0b6e2e7e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -104,7 +104,7 @@ Zbyszek może wyświetlić następujące informacje:
 
 ### <a name="update-journals"></a>Aktualizowanie arkuszy
 
-Aby zarejestrować jeden lub więcej wierszy zamówienia, które mają być przetwarzane, Zbyszek może zaznaczyć wiersze w siatce przeglądu lub w siatce wierszy, a następnie kliknąć kolejno opcje **Arkusze** &gt; **Pokaż arkusze przyjęcia**. Zostaną wyświetlone nagłówki przybycia towarów pasujące do wierszy. Aby zarejestrowane towary aktualizowały przyjęcie produktów określonych w zamówieniu zakupu, Zbyszek może przejść do nagłówków arkuszy przyjęcia towaru, które są gotowe do aktualizacji. W celu przejścia do tych nagłówków arkuszy przyjęcia towaru klika kolejno opcje **Arkusze** &gt; **Gotowe arkusze dokumentów przyjęcia produktów**. Zostaną wyświetlone wszystkie wiersze nagłówków gotowe na aktualizację przyjęcia produktów w podanym zakresie magazynów. (Wyświetlane wiersze nagłówków nie są związane z zakresem dni).
+Aby zarejestrować jeden lub więcej wierszy zamówienia, które mają być przetwarzane, Zbyszek może zaznaczyć wiersze w siatce przeglądu lub w siatce wierszy, a następnie kliknąć kolejno opcje **Arkusze** &gt; **Pokaż arkusze przyjęcia**. Zostaną wyświetlone nagłówki przybycia towarów pasujące do wierszy. Aby zaktualizować przyjęcie produktu określonego w zamówieniu zakupu dla zarejestrowanych pozycji, Zbyszek może przejść do nagłówków arkuszy przyjęcia towaru, które są gotowe do aktualizacji. W celu przejścia do tych nagłówków arkuszy przyjęcia towaru klika kolejno opcje **Arkusze** &gt; **Gotowe arkusze dokumentów przyjęcia produktów**. Zostaną wyświetlone wszystkie wiersze nagłówków gotowe na aktualizację przyjęcia produktów w podanym zakresie magazynów. (Wyświetlane wiersze nagłówków nie są związane z zakresem dni).
 
 ### <a name="start-an-arrival-registration"></a>Rozpoczynanie rejestracji przybycia
 

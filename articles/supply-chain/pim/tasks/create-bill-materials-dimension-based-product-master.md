@@ -3,7 +3,7 @@ title: "Tworzenie listy składowej (BOM) dla produktu głównego opartego na wym
 description: "Przed wykonaniem tej procedury należy wykonać 4 poprzednie przewodniki z tej sekwencji ośmiu nagrań."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/21/2016
+ms.date: 11/03/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4f9f9473d0872d68571b87409b93e0cf5455364c
+ms.sourcegitcommit: 8b5432addd1dd79a64dcbb751a59cf3084a63ab1
+ms.openlocfilehash: 05837c2b21957133729074f614a6d3d7b7c08dad
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/04/2017
 
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a>Tworzenie listy składowej (BOM) dla produktu głównego opartego na wymiarach

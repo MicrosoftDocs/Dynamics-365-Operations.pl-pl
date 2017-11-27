@@ -3,7 +3,7 @@ title: "Przegląd płatności dla dostawcy"
 description: "Ten przewodnik po zadaniach zawiera instruktaż różnych metod służących do tworzenia płatności dla dostawców, w tym dotyczących korzystania z propozycji płatności lub ręcznego wprowadzania jednorazowej płatności."
 author: kweekley
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 10/30/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 020d147744df24b2065e66e5fc68ed5d5479127b
+ms.sourcegitcommit: cafd499e849570cae7b7f58bf2d487a7ac0093e6
+ms.openlocfilehash: e9a94231f755ff23bb442d62e90daff8f2d1f4fb
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/30/2017
 
 ---
 # <a name="vendor-payment-overview"></a>Przegląd płatności dla dostawcy
@@ -66,7 +66,7 @@ Ten przewodnik po zadaniach zawiera instruktaż różnych metod służących do 
 25. Kliknij przycisk Usuń.
     * Usunięcie płatności spowoduje tylko usunięcie tej płatności. Wszelkie faktury oznaczone do zapłaty będą nadal dostępne do zapłaty za pomocą innej płatności.  
 26. Kliknij przycisk Tak.
-27. Wybierz opcję polecenie Generuj płatność, aby wydrukować czeki lub utworzyć plik płatności elektronicznej.
+27. Wybierz polecenie Generuj płatność, aby wydrukować czeki lub utworzyć plik płatności elektronicznej.
 28. Wybierz metodę płatności, którą chcesz wygenerować.
     * Arkusz płatności może zawierać płatności zarówno czekami, jak i elektroniczne, ale można wygenerować tylko jeden typ płatności na raz.  
 29. Wybierz konto bankowe, z którego chcesz wygenerować płatności.

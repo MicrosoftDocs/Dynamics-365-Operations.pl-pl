@@ -1,9 +1,9 @@
 ---
-title: "Nabywania środków trwałych za pomocą zaopatrzenia"
-description: "W tym artykule opisano, jak skonfigurować integrację między modułami Środki trwałe i Rozrachunki z dostawcami, aby automatycznie były tworzone środki trwałe na podstawie zamówień zakupu lub faktur od dostawców albo automatycznie były księgowane transakcje nabycia i korekty wartości początkowej dla środków trwałych."
+title: "Nabywanie środków trwałych za pomocą zaopatrzenia"
+description: "W tym temacie opisano, jak skonfigurować integrację między modułami Środki trwałe i Rozrachunki z dostawcami, aby automatycznie były tworzone środki trwałe na podstawie zamówień zakupu lub faktur od dostawców albo automatycznie były księgowane transakcje nabycia i korekty wartości początkowej dla środków trwałych."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3481
 ms.assetid: d4e73a3f-633b-48b2-b8db-7a4a59a4d7ec
 ms.search.region: Global
@@ -19,19 +19,19 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 84e7e6eb17e5741a2984c570786a495864ffbc74
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1e9b1dc6297f33ea25ca498895740596ebd020b8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="acquire-assets-through-procurement"></a>Nabywania środków trwałych za pomocą zaopatrzenia
+# <a name="acquire-assets-through-procurement"></a>Nabywanie środków trwałych za pomocą zaopatrzenia
 
 [!include[banner](../includes/banner.md)]
 
 
-W tym artykule opisano, jak skonfigurować integrację między modułami Środki trwałe i Rozrachunki z dostawcami, aby automatycznie były tworzone środki trwałe na podstawie zamówień zakupu lub faktur od dostawców albo automatycznie były księgowane transakcje nabycia i korekty wartości początkowej dla środków trwałych.
+W tym temacie opisano, jak skonfigurować integrację między modułami Środki trwałe i Rozrachunki z dostawcami, aby automatycznie były tworzone środki trwałe na podstawie zamówień zakupu lub faktur od dostawców albo automatycznie były księgowane transakcje nabycia i korekty wartości początkowej dla środków trwałych.
 
  Poniżej przedstawiono metody do integracji Środków trwałych i Rozrachunków z dostawcami. W odniesieniu do wszystkich środków trwałych trzeba użyć tej samej metody:
 -   Środek trwały jest tworzony ręcznie zanim numer środka trwałego zostanie dodany do wiersza zamówienia zakupu lub faktury od dostawcy. Dla tego środka jest automatycznie księgowana transakcja nabycia po zaksięgowaniu faktury od dostawcy. To jest metoda domyślna.
@@ -92,7 +92,7 @@ Nastąpiły poniższe transakcje.
 | Opis                               | Konto             | Debet    | Kredyt   |
 |-------------------------------------------|---------------------|----------|----------|
 | Zakup, dokument przyjęcia produktów — konto przeciwstawne zakupu | Naliczone zakupy   | 1600,00 |          |
-| Saldo dostawcy                            | Rozrachunki z dostawcami    |          | 3200,00 |
+| Saldo dostawcy                            | Rozrachunki z dostawcami    |          | 1600,00 |
 | Zakup, przychód środków trwałych             | Wydatek komputerowy    | 1600,00 |          |
 | Zakup, dokument przyjęcia produktów — zakup        | Przychody niezafakturowane |          | 1600,00 |
 

@@ -1,9 +1,9 @@
 ---
 title: "Umowy dotyczące projektu"
-description: "Ten artykuł zawiera opisy i przykłady umów dotyczących projektów, które można tworzyć dla różnych typów projektów i źródeł finansowania, oraz opis metod zarządzania umowami i fakturowania klientów projektów w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
+description: "Ten temat zawiera przykłady umów dotyczących projektów, które można tworzyć dla różnych typów projektów i źródeł finansowania, oraz opis metod zarządzania umowami i fakturowania klientów projektów w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0d7d3b64b0d6a662246074b12e3a3fe105dfae47
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: c8328bd2d93bbe763e629248edc1b7b4576005ae
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera opisy i przykłady umów dotyczących projektów, które można tworzyć dla różnych typów projektów i źródeł finansowania, oraz opis metod zarządzania umowami i fakturowania klientów projektów w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.
+Ten artykuł zawiera przykłady umów dotyczących projektów, które można tworzyć dla różnych typów projektów i źródeł finansowania, oraz opis metod zarządzania umowami i fakturowania klientów projektów w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
 
 Typ projektu tworzonego dla umowy dotyczącej projektu określa metodę wystawiania faktur dla klientów projektu. Umowę dotyczącą projektu i powiązany projekt można zmienić, ale nie można zmienić typu projektu. 
 
@@ -224,7 +224,7 @@ Poniższa tabela przedstawia ten scenariusz w bardziej szczegółowy sposób.
 </tr>
 <tr class="odd">
 <td>Transakcja 2</td>
-<td><strong>Kwota transakcji:</strong> 5000,00<strong>Finansowanie:</strong> Transakcja jest opłacana zgodnie ze wszystkimi trzema regułami.<strong>Reguła 1</strong>
+<td><strong>Kwota transakcji:</strong> 5000,00<strong>Finansowanie:</strong> Transakcja jest opłacana zgodnie ze wszystkimi trzema regułami. <strong>Reguła 1</strong>
 <ul>
 <li>Źródło finansowania 2: 450,00</li>
 <li>Źródło finansowania 3: 450,00</li>

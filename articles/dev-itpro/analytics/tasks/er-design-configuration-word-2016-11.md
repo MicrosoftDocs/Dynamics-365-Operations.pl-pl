@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d602e07548d22bcdee3f375c3c327c0e8963c3b4
+ms.sourcegitcommit: 7f80dc8411d38d051b01d77e35635a920d8803a6
+ms.openlocfilehash: 300cf6ed1a5a7098e71b812d682c1b51c2cf786c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>Projektowanie konfiguracji do generowania raportów w formacie programu Microsoft Word na potrzeby raportowania elektronicznego (ER)
@@ -30,9 +30,9 @@ W poniższych krokach wyjaśniono, jak użytkownik posiadający rolę Administra
 
 W celu wykonania tych kroków należy najpierw wykonać kroki opisane w przewodniku po zadaniu „Tworzenie konfiguracji ER do generowania raportów w formacie OPENXML”. Należy również wcześniej pobrać i zapisać następujące szablony lokalnie dla przykładowego raportu:
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReport.docx
+[Szablon raportu o płatnościach](https://go.microsoft.com/fwlink/?linkid=862266)
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReportBounded.docx
+[Ograniczony szablon raportu o płatnościach](https://go.microsoft.com/fwlink/?linkid=862266)
 
 Ta procedura dotyczy funkcji, która została dodana w programie Microsoft Dynamics 365 for Operations w wersji 1611.
 
@@ -49,7 +49,7 @@ Ta procedura dotyczy funkcji, która została dodana w programie Microsoft Dynam
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Zastąpienie szablonu programu Excel szablonem programu Word
     * Obecnie dokument programu Excel jest używany jako szablon do generowania danych wyjściowych w formacie OPENXML. Zaimportujemy szablon raportu w formacie programu Word.  
 1. Kliknij opcję Załączniki.
-    * Zastąp istniejący szablon programu Excel szablonem programu Word, który został pobrany wcześniej (SampleVendPaymDocReport.docx). Zwróć uwagę, że ten szablon zawiera tylko układ dokumentu, który chcemy wygenerować jako dane wyjściowe raportowania elektronicznego.  
+    * Zastąp istniejący szablon programu Excel szablonem programu Word, który został pobrany wcześniej, Szablon raportu o płatnościach. Zwróć uwagę, że ten szablon zawiera tylko układ dokumentu, który chcemy wygenerować jako dane wyjściowe raportowania elektronicznego.  
 2. Kliknij przycisk Usuń.
 3. Kliknij przycisk Tak.
 4. Kliknij przycisk Nowy.

@@ -3,14 +3,14 @@ title: "Integracja modułu Planowanie budżetu z innymi modułami"
 description: "Plany budżetu mogą być generowane z kilku różnych zasobów: Podstawowe elementy przetwarzania okresowego są takie same dla wszystkich zasobów."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 64443
 ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 311a5cbd3768d8ecc7e7430717369193e60c3e57
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7663453ddf87bcb43d2f19ebec3c9bda90eda884
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -59,7 +59,7 @@ Dla każdego procesu generowania dostępne są trzy operacje:
 
 Dla wszystkich procesów karta **Źródło** umożliwia filtrowanie danych za pomocą przycisku **Filtr**. Domyślnie konkretne pola są dodawane do filtra dla każdego procesu. Na przykład dla procesu **Generowanie planu budżetu na podstawie księgi głównej** dostępne są kategorie **Konto księgowe** i **Konto główne** i są widoczne na stronie generowania. Wszelkie pola dodane do filtra są również dodawane do strony razem z wszelkimi dodanymi kryteriami.
 
-### <a name="target"></a>Grupa docelowa
+### <a name="target"></a>Wartość docelowa
 
 Opcja **Historyczny** na karcie **Cel** umożliwia używanie dat z danych źródłowych jako dat wejścia w życie w planie budżetu. Zwykle data wejścia w życie musi się mieścić w cyklu budżetu dla planu. Jeśli opcja **Historyczne** jest ustawiona na **Tak**, używana jest data źródła (nawet jeśli jest to tylko rok), umożliwiając użycie danych przeszłości jako podstawy do porównania. Nie można modyfikować danych historycznych w planie budżetu i plan jest ustawiony przepływ pracy ze stanem zatwierdzonym. Można jednak zresetować stan, jeśli inne scenariusze w planie wymagają zmiany.
 
