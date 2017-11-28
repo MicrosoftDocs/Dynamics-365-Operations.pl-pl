@@ -3,24 +3,24 @@ title: Zasoby ludzkie
 description: "Moduł Zasoby ludzkie upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Ponadto dla pracowników działu zasobów ludzkich stanowi platformę zarządzania odnośnymi obszarami. Te obszary obejmują rekrutację i utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami."
 author: rschloma
 manager: AnnBe
-ms.date: 07/06/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Operations, Core
 ms.custom: 20931
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
-ms.openlocfilehash: e074426f4b863e692b91ce1ebf3b428435dadd94
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 217eef722383cf0ad9dfdfbe5ca2973eb1337fe1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -66,7 +66,7 @@ Po zatrudnieniu personelu można skonfigurować plany umożliwiające skuteczne 
 
 ## <a name="develop-and-train-employees"></a>Wspomagania rozwoju i szkolenie pracowników etatowych
 
-Aby pomóc pracownikom etatowym w osiągnięciu celów związanych z karierą przy jednoczesnym spełnianiu wymagań, jakie stawie im firma, możesz skonfigurować cele, tworzyć przeglądy wydajności oraz śledzić opinie. Aby pomóc pracownikom w rozwijaniu wymaganych umiejętności, możesz też skonfigurować instruktorów, typy kursów, opisy kursów, terminarze, ścieżki i sesje, zanim przypiszesz instruktora do kursu lub zarejestrujesz kogoś do udziału w kursie. Instruktorzy muszą być istniejącymi pracownikami, kandydatami lub kontaktami.
+Aby ułatwić pracowników realizację ich celów zawodowych i spełnienie krytycznych wymagań biznesowych, można określić cele, tworzyć przeglądy wydajności i śledzić opinie. Aby ułatwić pracownikom rozwój umiejętności, przed przypisaniem instruktora do kursu lub zarejestrowaniem osoby na kurs można także skonfigurować instruktorów, typy kursów, kursy, opisy kursu, terminarze, ścieżki i sesje. Instruktorzy muszą być istniejącymi pracownikami, kandydatami lub kontaktami.
 
 -   [Zarządzanie wydajnością](../../talent/performance-management-overview.md)
 -   [Dopasowywanie umiejętności pracowników do potrzeb biznesowych](../../talent/skills.md)

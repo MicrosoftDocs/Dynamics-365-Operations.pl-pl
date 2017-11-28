@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c222f0d17be6eea0f776f5460c793b82d8b3e0ab
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 6b896c28f475a8f827a1db1b6dd684b6ec64e872
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -138,7 +138,7 @@ Można wyświetlić, czy zwolniony produkt może być używany jako składnik lu
 </tr>
 <tr class="odd">
 <td>Wymagania użytkownika</td>
-<td>Wymagania użytkownika reprezentują abstrakcję między wymaganiami użytkownika i określonymi składnikami oraz atrybutami. Nie można mapować wymagania użytkownika na towar. Na przykład odbiorca dokonuje zakupu systemu kina domowego. Przedstawiciel handlowy może zadawać pytania o wielkość pokoju, w którym odbiorca planuje zainstalować system, aby określić, ile watów będzie potrzebował. W tym przykładzie wielkość pomieszczenia może być wymaganiem użytkownika, które ułatwia analizowanie wartości atrybutu właściwej dla określonego składnika. Wymagania użytkownika można ukryć, aby nie były wyświetlane w trakcie sesji konfiguracji. Atrybuty, podskładniki i wymagania użytkowników, które są związane z wymaganiem użytkownika, również będą ukryte. Można zapisać warunek, aby sterować tym, czy wymaganie użytkownika może być ukryte. Trzeba zapisać warunek za pomocą składni Optimization Modeling Language (OML).</td>
+<td>Wymagania użytkownika reprezentują abstrakcję między wymaganiami użytkownika i określonymi składnikami oraz atrybutami. Nie można mapować wymagania użytkownika na towar. Na przykład odbiorca dokonuje zakupu systemu kina domowego. Przedstawiciel handlowy może zadawać pytania o wielkość pokoju, w którym odbiorca planuje zainstalować system, aby określić, ile watów będzie potrzebował. W tym przykładzie wielkość pomieszczenia może być wymaganiem użytkownika, które pomoże określić odpowiednią wartość atrybutu dla określonego składnika. Można ukryć wymagania użytkownika, tak że nie są one wyświetlane użytkownikowi podczas sesji konfiguracji. Atrybuty, podskładniki i wymagania użytkowników, które są związane z wymaganiem użytkownika, również będą ukryte. Można zapisać warunek, aby sterować tym, czy wymaganie użytkownika może być ukryte. Trzeba zapisać warunek za pomocą składni Optimization Modeling Language (OML).</td>
 </tr>
 <tr class="even">
 <td>Wiersze BOM</td>

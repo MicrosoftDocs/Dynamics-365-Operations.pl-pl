@@ -3,7 +3,7 @@ title: "Uzgadnianie faktur i międzyfirmowe zamówienia zakupu"
 description: "Firmę kupującą, która uczestniczy w transakcjach handlu międzyfirmowego, można skonfigurować tak, aby używała uzgadniania faktur w rozrachunkach z dostawcami. W takim przypadku muszą być spełnione równocześnie wymagania dotyczące księgowania dla handlu międzyfirmowego i uzgadniania faktur w rozrachunkach z dostawcami, aby było można zaksięgować faktury od dostawcy międzyfirmowego."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3101
 ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: affdffd5e73958788ed2a5a4959eea71024140ab
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -52,7 +52,7 @@ Kwoty netto dla faktury z międzyfirmowej faktury od dostawcy i międzyfirmowej 
 2.  W Fabrikam-Sprzedaż zarejestruj, że towary zostały otrzymane i zaksięguj dokument dostawy. Stan dokumentu MZS888 zostaje zmieniony na Dostarczone. Stan dokumentu MZZ222 zostaje zmieniony na Otrzymane.
 3.  W Fabrikam-Sprzedaż wykonaj aktualizację faktury dla MZS888. Cena jednostkowa wynosi 0,45 i aktualizowanych jest 100 jednostek.
 4.  W firmie Fabrikam-Zakup utwórz fakturę dla MZZ222. Przypadkowo zmieniasz cenę netto z 45,00 na 54,00. Pojawia się ikona wskazująca, że cena przekracza dozwoloną wartość procentową rozbieżności cen (dozwolona rozbieżność to 2%).
-5.  Na stronie Szczegóły uzgadniania faktur zaznacz opcję zatwierdzania księgowania z rozbieżnościami w uzgadnianiu. Na stronie Faktura od dostawcy kliknij OK. Jeśli faktura od dostawcy nie była międzyfirmową fakturą od dostawcy, księgowanie powiedzie się. Ponieważ jednak chodzi o międzyfirmową fakturę od dostawcy księgowanie kończy się niepowodzeniem. W handlu międzyfirmowym sumy faktur międzyfirmowych na międzyfirmowym zamówieniu sprzedaży muszą być równe z sumami na odpowiednim międzyfirmowym zamówieniu zakupu. Aby rozwiązać ten problem, popraw cenę netto na fakturze z powrotem na wartość domyślną 45,00.
+5.  Na stronie Szczegóły uzgadniania faktur zaznacz opcję zatwierdzania księgowania z rozbieżnościami w uzgadnianiu. Na stronie Faktura dostawcy kliknij przycisk OK. Jeśli faktura od dostawcy nie była międzyfirmową fakturą od dostawcy, księgowanie powiedzie się. Ponieważ jednak chodzi o międzyfirmową fakturę od dostawcy księgowanie kończy się niepowodzeniem. W handlu międzyfirmowym sumy faktur międzyfirmowych na międzyfirmowym zamówieniu sprzedaży muszą być równe z sumami na odpowiednim międzyfirmowym zamówieniu zakupu. Aby rozwiązać ten problem, popraw cenę netto na fakturze z powrotem na wartość domyślną 45,00.
 
 ## <a name="example-quantity-matching-with-intercompany-trade"></a> Przykład: Uzgadnianie ilości w handlu międzyfirmowym.
 Ilości na międzyfirmowym zamówieniu zakupu i międzyfirmowym zamówieniu sprzedaży muszą być równe. Wymaganie to ma charakter nadrzędny wobec wszelkich dozwolonych możliwości dokonywania akceptacji. W poniższym przykładzie zastosowano następującą konfigurację dla handlu międzyfirmowego:

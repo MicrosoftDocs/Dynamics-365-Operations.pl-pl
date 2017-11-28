@@ -1,9 +1,9 @@
 ---
 title: "Omówienie procesu produkcji"
-description: "Ten artykuł zawiera omówienie procesów produkcji. Opisuje różne etapy zleceń produkcyjnych, szarż produkcji i zadań Kanban — od utworzenia zamówienia aż do zamknięcia okresu finansowego."
+description: "Ten temat zawiera omówienie procesów produkcji. Opisuje różne etapy zleceń produkcyjnych, szarż produkcji i zadań Kanban — od utworzenia zamówienia aż do zamknięcia okresu finansowego."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e50e64057d19d0e1fbf5645c2abc31fbd19ea43a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera omówienie procesów produkcji. Opisuje różne etapy zleceń produkcyjnych, szarż produkcji i zadań Kanban — od utworzenia zamówienia aż do zamknięcia okresu finansowego. 
+Ten temat zawiera omówienie procesów produkcji. Opisuje różne etapy zleceń produkcyjnych, szarż produkcji i zadań Kanban — od utworzenia zamówienia aż do zamknięcia okresu finansowego. 
 
 Produkcja towarów, nazywana też cyklem produkcyjnym, następuje zgodnie z określonymi krokami potrzebnymi do ukończenia produkcji towaru. Cykl życia rozpoczyna się od utworzenia zlecenia produkcyjnego, zamówienia partii lub kanban. Kończy się, gdy wyprodukowany towar jest gotowy do dostarczenia odbiorcy lub przekazania do kolejnej fazy produkcji. Na każdym etapie cyklu produkcyjnego do jego ukończenia są potrzebne inne rodzaje informacji. Gdy etap zostaje ukończony, jest to odzwierciedlane w zleceniu produkcyjnym, zamówieniu partii lub kanban przez zmianę jego stanu produkcji. Różne rodzaje produktów wymagają różnych procesów produkcji.  
 

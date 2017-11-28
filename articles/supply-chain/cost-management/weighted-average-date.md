@@ -1,9 +1,9 @@
 ---
 title: "Średnia ważona z datą"
-description: 
+description: "Średnia ważona z datą jest modelem magazynu opartym na zasadzie średniej ważonej, w którym towary magazynowe są szacowane na podstawie średniej wartości towarów przyjętych na magazyn dla każdego dnia osobno w okresie zamknięcia magazynu."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 95cc937a97596e4f6ce28636fb30b86e9b328220
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,8 +33,9 @@ ms.lasthandoff: 09/29/2017
 
 [!include[retail name](../includes/retail-name.md)]
 
+Średnia ważona z datą to model zapasów oparty na zasadzie średniej ważonej. W tej metodzie wydania z zapasów są wyceniane na podstawie średniej wartości towarów przyjętych do zapasów w każdym dniu w okresie zamknięcia zapasów. 
 
-Średnia ważona z datą to model zapasów oparty na zasadzie średniej ważonej. W tej metodzie wydania z zapasów są wyceniane na podstawie średniej wartości towarów przyjętych do zapasów w każdym dniu w okresie zamknięcia zapasów. Podczas zamknięcia zapasów przy użyciu średniej ważonej z datą wszystkie dzienne przyjęcia są rozliczane względem wirtualnego wydania. To wirtualne wydanie zawiera łączną przyjętą ilość i wartość w danym dniu. Dla wirtualnego rozchodu istnieje odpowiadający mu wirtualny przychód, z którego zostanie rozliczony. W ten sposób wszystkie wydania mają ten sam średni koszt. Wirtualny rozchód i przychód mogą być postrzegane jako wirtualne przeniesienie na podstawie *średniej ważonej zamknięcia magazynu*. 
+Podczas zamknięcia zapasów przy użyciu średniej ważonej z datą wszystkie dzienne przyjęcia są rozliczane względem wirtualnego wydania. To wirtualne wydanie zawiera łączną przyjętą ilość i wartość w danym dniu. Dla wirtualnego rozchodu istnieje odpowiadający mu wirtualny przychód, z którego zostanie rozliczony. W ten sposób wszystkie wydania mają ten sam średni koszt. Wirtualny rozchód i przychód mogą być postrzegane jako wirtualne przeniesienie na podstawie *średniej ważonej zamknięcia magazynu*. 
 
 Jeśli do tego dnia miało miejsce tylko jedno przyjęcie, nie trzeba obliczać średniej. Ponieważ wszystkie wydania są rozliczane względem tego przyjęcia, nie zostanie utworzone wirtualne przeniesienie. Podobnie, jeśli nastąpił tylko rozchód, nie ma przychodów do obliczania średniej i wirtualne przeniesienie nie zostanie utworzone. W przypadku używania średniej ważonej z datą można oznaczać transakcje magazynowe, tak aby określone przyjęcia towarów były rozliczone względem określonych wydań. W takim przypadku nie używaj reguły średniej ważonej z datą. W przypadku używania modelu magazynowego średniej ważonej z datą zaleca się comiesięczne zamykanie magazynu. 
 

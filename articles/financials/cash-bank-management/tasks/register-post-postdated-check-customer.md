@@ -3,7 +3,7 @@ title: "Rejestrowanie i księgowanie czeku postdatowanego dla odbiorcy"
 description: "Można rejestrować szczegóły czeku postdatowanego otrzymanego od odbiorcy."
 author: kweekley
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 10/26/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,17 +16,17 @@ ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1610036815349f625a67d5dd67260114d42fff97
+ms.sourcegitcommit: 621ad64c06a6cebff90e888ac89bba922052cf35
+ms.openlocfilehash: f75dea40d0cc77c851569608f18229339ed30af9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/26/2017
 
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Rejestrowanie i księgowanie czeku postdatowanego dla odbiorcy
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Można rejestrować szczegóły czeku postdatowanego otrzymanego od odbiorcy. Można także zaksięgować postdatowany czek i wygenerować transakcje finansowe.   Przed zarejestrowaniem i zaksięgowaniem postdatowanego czeku otrzymanego od odbiorcy należy wykonać następujące zadania:  • Konfigurowanie czeków postdatowanych na stronie Zarządzanie gotówką i bankami • Konfigurowanie metody płatności dla czeków postdatowanych   Rolą w tej procedurze jest Skarbnik. Ta procedura wykorzystuje firmę demonstracyjną USMF.
+Można rejestrować szczegóły czeku postdatowanego otrzymanego od odbiorcy. Można także zaksięgować postdatowany czek i wygenerować transakcje finansowe.   Przed zarejestrowaniem i zaksięgowaniem postdatowanego czeku otrzymanego od odbiorcy należy wykonać następujące zadania:   • Konfigurowanie czeku postdatowanego na stronie Zarządzanie gotówką i bankami • Konfigurowanie metody płatności dla czeków postdatowanych   Rolą w tej procedurze jest Skarbnik. Ta procedura wykorzystuje firmę demonstracyjną USMF.
 
 1. Wybierz kolejno opcje Rozrachunki z odbiorcami > Płatności > Arkusz płatności.
 2. Kliknij przycisk Nowy.

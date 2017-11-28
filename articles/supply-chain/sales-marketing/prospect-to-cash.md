@@ -3,7 +3,7 @@ title: "Prospekt na gotówkę"
 description: "Temat zawiera omówienie rozwiązania Prospekt na gotówkę działającego między programami Dynamics 365 for Finance and Operations, Enterprise Edition a Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 47e70cb1291e390b42b7feff844b2aca141f09b7
-ms.openlocfilehash: a5f1ecd5f8b46287839439a963e571531ae161a7
+ms.sourcegitcommit: 674d2e1f2c5cdbccf43618a9083ca01abed0735a
+ms.openlocfilehash: 2accf77c5241adff7ad1648737dde451153fde46
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -42,25 +42,39 @@ To rozwiązanie zapewnia integrację w następujących obszarach:
 -   [Tworzenie zamówień sprzedaży w programie Finance and Operations i ich synchronizacja z programem Sales](sales-order-template-mapping.md)
 -   [Tworzenie faktur sprzedaży w programie Finance and Operations i ich synchronizacja z programem Sales](sales-invoice-template-mapping.md)
 
+To rozwiązanie zapewnia bezpośrednią synchronizację w następujących obszarach:
+
+-   [Obsługa kont klientów w programie Sales i synchronizowanie ich bezpośrednio między programem Sales a programem Finance and Operations](accounts-template-mapping-direct.md)
+-   [Obsługa produktów w programie Finance and Operations i synchronizowanie ich bezpośrednio z programem Sales](products-template-mapping-direct.md)
+-   [Obsługa kontaktów w programie Sales i synchronizowanie ich bezpośrednio z kontaktami lub odbiorcami w programie Finance and Operations](contacts-template-mapping-direct.md)
+-   [Synchronizowanie nagłówków i wierszy ofert sprzedaży bezpośrednio w rozwiązaniu Sales do elementów w rozwiązaniu Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
+-   [Tworzenie zamówień sprzedaży w programie Finance and Operations i ich synchronizacja bezpośrednio z programem Sales](sales-order-template-mapping-direct.md)
+-  [Synchronizowanie nagłówków i wierszy zamówień sprzedaży bezpośrednio między rozwiązaniami Sales a Finance and Operations](sales-order-template-mapping-between-sales-fin.md)
+-   [Synchronizowanie zamówień sprzedaży bezpośrednio między rozwiązaniami Sales a Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
+-   [Tworzenie faktur sprzedaży w programie Finance and Operations i ich synchronizacja bezpośrednio z programem Sales](sales-invoice-template-mapping-direct.md)
+
+
 ## <a name="system-requirements-for-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Wymagania systemowe dla rozwiązania Dynamics 365 for Finance and Operations, Enterprise Edition
 
 Aby użyć rozwiązania Prospekt na gotówkę, należy zainstalować następujące programy:
 
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (lipiec 2017) z aktualizacją platformy 8 (aplikacja 7.2.11792.56024 z platformą 7.0.4565.16212)
 
-- Dwie poprawki rozwiązania Dynamics 365 for Finance and Operations, Enterprise Edition (lipiec 2017).
+- Poprawki rozwiązania Dynamics 365 for Finance and Operations, Enterprise Edition (lipiec 2017).
+        
+    -  [KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160) — Ta poprawka umożliwia obsługę synchronizacji zamówień sprzedaży z funkcją Integracja danych z programu Sales do programu Finance and Operations oraz zawiera szereg innych poprawek.
 
     -  [KB4036524](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036524&bugId=3847504&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2) — ta poprawka umożliwia synchronizację wiersza zamówienia sprzedaży z funkcją Integracja danych z rozwiązania Finance and Operations do programu Sales.
         
     -  [KB4036461](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4036461&bugId=3847029&qc=e2fcfae08b1a5d5ce9f53f330e8c212b0636c375368ff7d8d9b5ec6701523ad2) — ta poprawka umożliwia synchronizację zamówienia sprzedaży z funkcją Integracja danych z rozwiązania Finance and Operations do programu Sales.
-    
-**Uwaga**: Należy zainstalować tylko poprawkę KB4036524, ponieważ instalacja obejmuje zmiany z poprawki KB4036461.
+
+**Uwaga**: Należy zainstalować tylko poprawkę KB4045570, ponieważ instalacja obejmuje zmiany z innych poprawek.
  
 ## <a name="system-requirements-for-dynamics-365-for-sales"></a>Wymagania systemowe rozwiązania Dynamics 365 for Sales
 
 Aby użyć rozwiązania Prospekt na gotówkę, należy zainstalować następujące programy:
 
-- Dynamics 365 for Sales wersja 1612 (8.2.1.207) (DB 8.2.1.207) online lub nowsza.
+- Dynamics 365 for Sales wersja 1612 (8.2.1.207) (DB 8.2.1.207) online.
 - Rozwiązanie Prospekt na gotówkę dla programu Dynamics 365 for Sales, wersja 1.14.0.0 (v14) lub nowsza.
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Instalacja rozwiązania Prospekt na gotówkę dla programu Sales

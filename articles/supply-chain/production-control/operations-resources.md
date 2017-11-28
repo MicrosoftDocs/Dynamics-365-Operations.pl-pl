@@ -3,7 +3,7 @@ title: "Zasoby rozwiązania Operations"
 description: "Zasoby operacyjne wykonują działania projektu lub procesu produkcji. Zasoby mogą być różnego typu i mieć różne możliwości."
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WrkCtrCapability
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 61943
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7a333c4d9c0e614c513bf3e1a02b943b186fb1e5
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -63,7 +63,7 @@ Zasoby operacyjne są przypisywane do działań na etapie planowania projektu lu
 
 -   **Zdolności produkcyjne** — umożliwia określenie zdolności produkcyjnych zasobu operacyjnego na godzinę w jednostce miary.
 -   **Zdolności produkcyjne partii** — umożliwia określenie maksymalnej liczby sztuk do przetworzenia przez zasób operacyjny na przebieg.
--   **Procent wydajności** — umożliwia określenie wydajności oczekiwanej od zasobu operacyjnego. Procent wydajności dostosowuje produktywność zasobu operacyjnego i wpływa na czas zarezerwowany dla zasobu. Czasy realizacji dla operacji, które korzystają z zasobu operacyjnego, również są odpowiednio korygowane. Do obliczania używana jest następująca formuła: czas planowania = czas × 100 ÷ procent wydajności. W tej formule *czas* obejmuje zarówno czas procesu, jak czasu konfigurowania.
+-   **Procent wydajności** — umożliwia określenie wydajności oczekiwanej od zasobu operacyjnego. Procent wydajności dostosowuje produktywność zasobu operacyjnego i wpływa na czas zarezerwowany dla zasobu. Czasy realizacji dla operacji, które korzystają z zasobu operacyjnego, również są odpowiednio korygowane. Poniżej przedstawiono formułę, która służy do obliczania: Godzina planowania = Czas × 100 ÷ Procent wydajności. *Czas* obejmuje zarówno czas procesu, jak i czas przezbrajania.
 -   **Planowanie operacji — procent** — umożliwia określenie maksymalnego procentu zdolności produkcyjnych zasobu operacyjnego, jaki ma być wykorzystywany w planowaniu operacji. Wartość powinna być niższa niż 100 procent, aby możliwa była zmiana wydajności podczas planowania zadań.
 -   **Ograniczone zdolności produkcyjne** — Ustaw w tej opcji wartość **Tak**, jeśli zasób operacyjny ma być planowany na podstawie rzeczywistych dostępnych zdolności produkcyjnych, a istniejące rezerwacje zdolności produkcyjnych mają zostać uwzględnione. Jeśli w opcji zostanie ustawiona wartość **Nie**, zakłada się, że zasób operacyjny ma nieograniczone zdolności produkcyjne i może być rezerwowany ponad możliwości.
 -   **Ograniczone właściwości** — Ustaw w tej opcji wartość **Tak**, jeśli zasób operacyjny ma być planowany na podstawie rzeczywistej dostępnej zdolności produkcyjnej z uwzględnieniem właściwości planowania czasu pracy.

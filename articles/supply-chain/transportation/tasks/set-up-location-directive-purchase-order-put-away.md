@@ -3,7 +3,7 @@ title: "Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu"
 description: "W tej procedurze pokazano sposób konfigurowania prostej dyrektywy lokalizacji."
 author: BibiSp
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 45e1e54c807597d4d5ff7370748012cbf28c1c6b
+ms.sourcegitcommit: 4bb4af7cb7aff101a8b9e6162823515f63b12886
+ms.openlocfilehash: 98ce3ad38dddda33be5466490fcd39d81251679c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu
@@ -61,7 +61,7 @@ W tej procedurze pokazano sposób konfigurowania prostej dyrektywy lokalizacji. 
 4. W polu Jednostka wpisz wartość.
     * Jednostka, w jakiej są wyrażone wartości Od ilości i Do ilości. Jeśli to pole pozostanie puste, stosowana jest jednostka magazynowa z towaru.  
 5. W polu Zlokalizuj ilość wybierz opcję.
-    * Brak lub Liczba numerów identyfikacyjnych: Ilość zarejestrowana na każdym numerze identyfikacyjnym. Ilość w jednostkach: Cała ilość, jaka została zarejestrowana. Pozostała ilość: Ilość, jaka pozostała jeszcze do zarejestrowania z wiersza zamówienia zakupu. Oczekiwana ilość: Całkowita ilość, która jest określona w wierszu zamówienia zakupu.  
+    * Brak lub liczba numerów identyfikacyjnych: liczba zarejestrowana na każdym numerze identyfikacyjnym. Ilość w jednostkach: Cała ilość, jaka została zarejestrowana. Pozostała ilość: Ilość, jaka pozostała jeszcze do zarejestrowania z wiersza zamówienia zakupu. Oczekiwana ilość: Całkowita ilość, która jest określona w wierszu zamówienia zakupu.  
 6. Zaznacz pole wyboru Ogranicz według jednostki lub usuń jego zaznaczenie.
     * Jeśli wybierzesz tę opcję i określisz jednostkę na stronie Ogranicz według jednostki, w lokalizacji można umieścić tylko towary o tej jednostce miary. Na przykład jeśli jednostką miary jest PL (paleta), w podanej lokalizacji można umieścić tylko towary na paletach.  
 7. Zaznacz pole wyboru Zezwalaj na podział lub usuń jego zaznaczenie.

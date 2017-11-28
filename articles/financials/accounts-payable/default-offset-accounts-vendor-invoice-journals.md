@@ -1,16 +1,16 @@
 ---
-title: "Domyślne konta przeciwstawne dla arkuszy faktur od dostawcy i arkuszy zatwierdzania faktur"
-description: 
+title: "Domyślne konta przeciwstawne dla arkuszy faktur od dostawców i arkuszy zatwierdzania faktur"
+description: "Ten temat pomoże określić miejsce przypisania domyślnych kont i transakcji przeciwstawnej dla arkuszy faktur."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 62093
 ms.assetid: 553933ca-928d-4031-bb8c-f9cff458320b
 ms.search.region: global
@@ -18,14 +18,14 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c2b62eafc71b5d1ad4eaaf252efd1dcbb97b86f3
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: bf7af869e44a60d07d66e83bfb55bd0cc7edfb91
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Domyślne konta przeciwstawne dla arkuszy faktur od dostawcy i arkuszy zatwierdzania faktur
+# <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Domyślne konta przeciwstawne dla arkuszy faktur od dostawców i arkuszy zatwierdzania faktur
 
 [!include[banner](../includes/banner.md)]
 

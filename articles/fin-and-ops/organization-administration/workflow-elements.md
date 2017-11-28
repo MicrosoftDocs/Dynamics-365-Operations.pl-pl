@@ -1,27 +1,27 @@
 ---
 title: "Elementy przepływu pracy"
-description: "Ten artykuł zawiera opis różnych elementów składających się na przepływ pracy."
+description: "Ten temat zawiera opis różnych elementów składających się na przepływ pracy."
 author: sericks007
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 56441
 ms.assetid: de740262-6ffd-42b9-a325-540eae5cec94
 ms.search.region: Global
-ms.author: tjvass
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 255777651a45b899850fc870c9da288f65df702c
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 15cac09a97305c1b467cbb97da2d4b8a864ccbc7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera opis różnych elementów składających się na przepływ pracy.
+Ten temat zawiera opis różnych elementów składających się na przepływ pracy.
 
 Przepływ pracy składa się z elementów. Sekcje poniżej opisują poszczególne typy elementów.
 
@@ -59,7 +59,7 @@ Przepływ pracy składa się z elementów. Sekcje poniżej opisują poszczególn
 -   zażądać wprowadzenia zmian w dokumencie;
 -   przypisać dokument innemu użytkownikowi w celu zatwierdzenia.
 
-## <a name="lineitem-workflow-elements"></a>Elementy przepływu pracy dla wiersza
+## <a name="line-item-workflow-elements"></a>Elementy przepływu pracy dla wiersza
 Przepływ pracy można tworzyć w celu przetwarzania dokumentów lub pozycji w dokumencie. Na przykład utworzono przepływ pracy zatwierdzania dla kart czasu pracy. (Nazwiemy go *przepływem pracy dokumentu*). Do tego przepływu pracy dokumentu można dodać element *przepływu pracy dla wiersza*. Po uruchomieniu tego element wszystkie pozycje wiersza w dokumencie są przesyłane do przetworzenia. Czasami wszystkie elementy wiersza muszą być przetworzone przez ten sam przepływ pracy lub każdy element musi być przetwarzany przez różne przepływy pracy dla wierszy. Załóżmy, że pracownik przesłał kartę czasu pracy podobną do tej na obrazku poniżej.
 
 ![Przepływ pracy z pozycjami w wierszu](./media/workflow_lineitemworkflow.gif) 
@@ -70,7 +70,7 @@ W tym scenariuszu można utworzyć następujące przepływy pracy dla towarów w
 -   **Przepływ pracy utworzony dla pozycji w wierszu 2** — ten przepływ pracy jest używany do przetwarzania pozycji w wierszu z identyfikatorem projektu 2222.
 -   **Przepływ pracy utworzony dla pozycji w wierszu 3** — ten przepływ pracy jest używany do przetwarzania pozycji w wierszu z identyfikatorem projektu 3333.
 
-## <a name="flowcontrol-elements"></a>Elementy kontroli przepływu
+## <a name="flow-control-elements"></a>Elementy kontroli przepływu
 Poniższe elementy pozwalają projektować przepływy pracy z alternatywnymi oddziałami lub oddziałami działającymi jednocześnie.
 
 ### <a name="manual-decision"></a>Decyzja ręczna

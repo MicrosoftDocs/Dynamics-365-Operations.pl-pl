@@ -1,9 +1,9 @@
 ---
 title: "Nazewnictwo numerów i nazw wariantów produktu"
-description: "W tym temacie opisano sposób ustawiania nazewnictwa numerów produktów w celu zastąpienia stałego formatu [numer produktu głównego — konfiguracja — rozmiar — kolor — styl numeracji] format. Nowe nazewnictwo ma format docelowy zawierający numer produktu głównego, aktywne wymiary produktu i separatory tekstu wybrane przez użytkownika. Można też ustalić zasady nazewnictwa dla nazw produktów. Można ponadto skonstruować konwencję nazewnictwa do identyfikowania konfiguracji, które są tworzone przez konfigurator produktów oparty na ograniczeniach. Te konwencje nazewnictwa mogą zawierać atrybuty wybrane przez użytkownika."
+description: "W tym temacie opisano sposób ustawiania nazewnictwa numerów produktów w celu zastąpienia stałego formatu [numer produktu głównego — konfiguracja — rozmiar — kolor — styl numeracji] format."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 4ebebc1d287908dbe8ac7557c34fc6693c88bfae
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 067e14d8a0ab9cb5b703c1d2596dab3e20487336
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -68,7 +68,7 @@ Koszulka (TS1234) jest wytwarzana w 3 rozmiarach (S, M, L), czterech kolorach (c
 
 W tym przypadku numer wariantu produktu czerwonej, małej koszulki polo będzie następujący: TS1234-czerwony-mały-polo.
 
-## <a name="nomenclature-of-constraintbased-configurations"></a>Nazewnictwo konfiguracji opartych na ograniczeniach
+## <a name="nomenclature-of-constraint-based-configurations"></a>Nazewnictwo konfiguracji opartych na ograniczeniach
 W konfiguracjach opartych na ograniczeniach można utworzyć dedykowaną konwencję nazewnictwa dla wymiaru konfiguracji produktu. Można wybrać następujące segmenty na stronie **Nazewnictwo produktów**:
 
 -   Wartość sekwencji numerów
@@ -92,7 +92,7 @@ Można utworzyć nazewnictwo konfiguracji, która zawiera następujące segmenty
 
 W tym przypadku identyfikator konfiguracji dla materiału „drewno” o długości 78 będzie DrewnoAAA78.
 
-## <a name="nomenclature-of-dimensionbased-configurations"></a>Nazewnictwo konfiguracji opartych na wymiarach
+## <a name="nomenclature-of-dimension-based-configurations"></a>Nazewnictwo konfiguracji opartych na wymiarach
 W konfiguracjach opartych na wymiarach można utworzyć dedykowaną konwencję nazewnictwa dla wymiaru konfiguracji produktu. Można wybrać następujące segmenty na stronie **Nazewnictwo produktów**:
 
 -   Wartość sekwencji numerów

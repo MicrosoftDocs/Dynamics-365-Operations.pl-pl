@@ -1,7 +1,7 @@
 ---
 title: "Projektant formuł w raportowaniu elektronicznym"
-description: "W tym temacie wyjaśniono, jak używać projektanta formuł w raportowaniu elektronicznym (ER). Podczas projektowania formatu dla określonego dokumentu elektronicznego w module raportowania elektronicznego można używać formuł podobnych do znanych z programu Microsoft Excel w celu przekształcania danych w sposób spełniający wymagania dotyczące realizacji i formatowania tego dokumentu. Obsługiwane są różne typy funkcji: tekstu, daty i godziny, matematyczne, logiczne, informacyjne, konwersji typów danych i inne (specyficzne dla domeny biznesowej)."
-author: kfend
+description: "W tym temacie wyjaśniono, jak używać projektanta formuł w raportowaniu elektronicznym (ER)."
+author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
@@ -19,14 +19,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 37c860599ad555846d11711e9f3cfb29c599131e
-ms.openlocfilehash: 7704b0545f4264be1f844ed6ad9e4b44df0c4ef8
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 58bef33642d83def841eaa8334ea6f942063e0b3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="formula-designer-in-electronic-reporting"></a>Projektant formuł w raportowaniu elektronicznym
+# <a name="formula-designer-in-electronic-reporting"></a>Projektant formuł w Raportowaniu elektronicznym
 
 [!include[banner](../includes/banner.md)]
 
@@ -593,11 +593,12 @@ Poniżej przedstawiono formułę, którą można zaprojektować: FORMAT (CONCATE
 <td>GETENUMVALUEBYNAME (ścieżka źródła danych wartości stałotekstowej, tekst etykiety wartości stałotekstowej)</td>
 <td>Zwraca wartość źródła danych wartości stałotekstowej określonego przez tekst w tej etykiecie wartości stałotekstowej.</td>
 <td>W poniższym przykładzie pokazano wartość stałotekstową ReportDirection wprowadzoną w modelu danych. Należy zauważyć, że etykiety są zdefiniowane dla wartości stałotekstowych.
-<a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> Przykłady poniżej pokazują:
+<a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>  
+<p>Przykłady poniżej pokazują:</p>
 <ul><li>Wartość stałotekstową <strong>ReportDirection</strong> modelu wstawioną do raportu jako źródło danych <strong>$Direction</strong>.</li>
 <li>Wyrażenie ER <strong>$IsArrivals</strong> zaprojektowane tak, aby używało wartości stałotekstowej modelu jako parametru tej funkcji. Wartością tego wyrażenia jest <strong>TRUE</strong>.
-
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></li></ul></td>
+</li></ul>
+<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
 </tr>
 </tbody>
 </table>

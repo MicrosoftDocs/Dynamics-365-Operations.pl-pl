@@ -3,7 +3,7 @@ title: Ustawianie hierarchii kategorii zaopatrzenia
 description: "W tej procedurze pokazano, jak utworzyć nowe węzły w hierarchii kategorii zaopatrzenia oraz jak skonfigurować kategorię zaopatrzenia, która ma być używana w procesie zaopatrzenia."
 author: mkirknel
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 11/06/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b9897b1184e8159b20a45d4cedbba56baef31a3c
+ms.sourcegitcommit: 6ad5c8552a6989e9093d0b1325754bc0f6d19372
+ms.openlocfilehash: 4541d029c9c3be3ee42332e5d8ff183dd503f13e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Ustawianie hierarchii kategorii zaopatrzenia
@@ -30,7 +30,7 @@ W tej procedurze pokazano, jak utworzyć nowe węzły w hierarchii kategorii zao
 
 
 ## <a name="add-a-new-procurement-category"></a>Dodawanie nowej kategorii zaopatrzenia
-1. Wybierz kolejno opcje Zaopatrzenie i sourcing > .. > Kategorie zaopatrzenia.
+1. Wybierz kolejno opcje Zaopatrzenie i sourcing > Kategorie zaopatrzenia.
 2. Kliknij opcję Edytuj hierarchię kategorii.
     * Bieżąca hierarchia kategorii zaopatrzenia zostanie wyświetlona przy lewej krawędzi strony. Zmodyfikujesz tę hierarchię.  
 3. Kliknij opcję Nowy węzeł kategorii.
@@ -42,7 +42,7 @@ W tej procedurze pokazano, jak utworzyć nowe węzły w hierarchii kategorii zao
 7. Kliknij przycisk Zapisz.
 
 ## <a name="add-products-to-your-new-procurement-category"></a>Dodawanie produktów do nowej kategorii zaopatrzenia
-1. Wybierz kolejno opcje Zaopatrzenie i sourcing > .. > Kategorie zaopatrzenia.
+1. Wybierz kolejno opcje Zaopatrzenie i sourcing > Kategorie zaopatrzenia.
     * Zaznacz dodany właśnie węzeł. Jeśli wykonujesz tę procedurę w przewodniku po zadaniach, może być konieczne odblokowanie przewodnika po zadaniach w celu wybrania węzła.  
 2. Przełącz rozwinięcie sekcji Produkty.
 3. Kliknij przycisk Dodaj, aby skojarzyć produkty z kategorią zaopatrzenia.

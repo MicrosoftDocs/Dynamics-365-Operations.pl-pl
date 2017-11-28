@@ -3,7 +3,7 @@ title: "Wykres Gantta do planowania zadań"
 description: "Planiści produkcji mogą kontrolować i optymalizować plany produkcji, używając wykresów Gantta."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: cc7543305ac634dfed3779bb83806ee4fd97d7fa
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 5a4b0450cc76c8d9307b9b21b78a170afcc298e4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -39,7 +39,7 @@ Wykres Gantta jest graficzną reprezentacją zaplanowanych działań w określon
 -   Zadania z planowanych zleceń produkcyjnych.
 -   Działania projektu o typie Prognozy dla godzin w zaplanowanych zadaniach.
 
-Wykres Gantta można otwierać w dwóch różnych widokach — **Widok zamówień** i **Widok zasobów**[.](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true)W **widoku zamówień** działania są zgrupowane w zleceniach produkcyjnych. Może to być użyteczne na przykład w sytuacji, gdy chcesz zachować podgląd wszystkich zadań należących do tych samych zleceń. W **widoku zasobów** wszystkie zadania są zgrupowane w poszczególnych zasobach. Ten widok może być przydatny podczas optymalizowania planu na poziomie zasobów, na przykład maszyny lub grupy maszyn. Wykresy Gantta pokazane na ilustracjach poniżej znajdują się w **widoku zamówień** i **widoku zasobów** z następującymi podstawowymi elementami:
+Na wykresie Gantta można otworzyć dwa różne widoki, **Widok zamówień** i **Widok zasobów**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true). W **widoku zamówień** działania są zgrupowane w zleceniach produkcyjnych. Może to być użyteczne na przykład w sytuacji, gdy chcesz zachować podgląd wszystkich zadań należących do tych samych zleceń. W **widoku zasobów** wszystkie zadania są zgrupowane w poszczególnych zasobach. Ten widok może być przydatny podczas optymalizowania planu na poziomie zasobów, na przykład maszyny lub grupy maszyn. Wykresy Gantta pokazane na ilustracjach poniżej znajdują się w **widoku zamówień** i **widoku zasobów** z następującymi podstawowymi elementami:
 
 1.  Działanie na wykresie Gantta
 2.  Ikona niedoboru materiału
@@ -156,5 +156,7 @@ Wykres Gantta można otworzyć z następujących stron.
 | **Zlecenia produkcyjne do zwolnienia** (otwierana z obszaru roboczego **Zarządzanie halą produkcyjną**) | Strona Zlecenia produkcyjne do zwolnienia jest otwierana z obszaru roboczego **Zarządzanie halą produkcyjną**. Ta strona pokazuje zaplanowane zlecenia i szarże produkcyjne oczekującej na zwolnienie. Na tej stronie można otworzyć wykres Gantta dla wybranych zleceń produkcyjnych.                                                                                                                                                                                                                                                        |
 ## <a name="see-also"></a>Informacje dodatkowe  
 [Planowanie wizualne za pomocą wykresu Gantta dla zleceń produkcyjnych i zamówień partii (film)](https://youtu.be/BtbuShkGj4I)
+
+[Wizualne planowanie produkcji (skrypt demonstracyjny)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
 
 

@@ -3,7 +3,7 @@ title: "Tworzenie pakietów produktów dla zamówień zakupu"
 description: "Ta procedura zawiera instruktaż tworzenia pakietu produktów i użycia go w zamówieniu zakupu."
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/14/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a3be1e7aca7f0382aea55fa8a371c33c8b53df95
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 9d3ea8702c79d8aa6bb7cf7caa922277697610fa
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 # <a name="create-product-packages-for-purchase-orders"></a>Tworzenie pakietów produktów dla zamówień zakupu
@@ -53,7 +53,7 @@ Ta procedura zawiera instruktaż tworzenia pakietu produktów i użycia go w zam
 20. Kliknij przycisk Zapisz.
 21. Zamknij stronę.
 
-## <a name="add-package-to-puchase-order"></a>Dodawanie pakietu do zamówienia zakupu
+## <a name="add-package-to-purchase-order"></a>Dodawanie pakietu do zamówienia zakupu
 1. Wybierz kolejno opcje Rozrachunki z dostawcami > Zamówienia zakupu > Wszystkie zamówienia zakupu.
 2. Kliknij przycisk Nowy.
 3. W polu Konto dostawcy kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.

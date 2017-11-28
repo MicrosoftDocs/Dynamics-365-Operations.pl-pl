@@ -1,9 +1,8 @@
 ---
 title: "Przegląd urządzeń peryferyjnych sieci sprzedaży"
-description: "W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi sieci sprzedaży. Opisano różne sposoby podłączania urządzeń peryferyjnych do punktu sprzedaży (POS) oraz składniki, które są odpowiedzialne za zarządzanie połączeniem z punktem sprzedaży."
-author: rubencdelgado
+description: "W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi sieci sprzedaży."
 manager: AnnBe
-ms.date: 06/19/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,14 +17,14 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e886411421fda17bb67f8ecedc1f7f3420e1fa72
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: 347100651302bb97806783d00559f2396d031fcc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
-# <a name="retail-peripherals-overview"></a>Przegląd urządzeń peryferyjnych sieci sprzedaży
+# <a name="retail-peripherals-overview"></a>Omówienie sklepowych urządzeń peryferyjnych
 
 [!include[banner](includes/banner.md)]
 
@@ -575,7 +574,7 @@ Zgodnie z obowiązującymi standardami zabezpieczeń w środowisku produkcyjnym 
 ## <a name="peripheral-simulator"></a>Symulator urządzeń peryferyjnych
 Aby uzyskać więcej informacji, zobacz [Symulator urządzeń peryferyjnych sieci sprzedaży](dev-itpro/retail-peripheral-simulator.md).
 
-## <a name="microsofttested-peripheral-devices"></a>Urządzenia peryferyjne przetestowane przez Microsoft
+## <a name="microsoft-tested-peripheral-devices"></a>Urządzenia peryferyjne przetestowane przez Microsoft
 ### <a name="ipc-built-in-hardware-station"></a>Stacja sprzętowa z funkcją IPC (wbudowana)
 
 Następujące urządzenia peryferyjne zostały przetestowane przy użyciu stacji sprzętowej z funkcją IPC, która jest wbudowana w programie Modern POS for Windows.

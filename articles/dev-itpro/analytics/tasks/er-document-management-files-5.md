@@ -3,7 +3,7 @@ title: "Modyfikowanie i uruchamianie formatu w celu używania plików zarządzan
 description: "W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować format raportowania elektronicznego (ER), aby w danych wyjściowych raportowania elektronicznego używać plików zarządzania danymi (załączników)."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/31/2016
+ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 76915a7294e078d76ed3ca9c41755e12b0791f3c
+ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
+ms.openlocfilehash: e145c4c7a1f3fd88481ad32d0af05511437e21dc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="modify-and-run-format-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a>Modyfikowanie i uruchamianie formatu w celu używania plików zarządzania dokumentami w danych wyjściowych formatu na potrzeby raportowania elektronicznego (ER)
@@ -94,6 +94,6 @@ Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 fo
     * 000148  
 6. Kliknij przycisk OK.
 7. Kliknij przycisk OK.
-    * Przejrzyj wygenerowane dane wyjściowe. Należy zauważyć, że oprócz komunikat faktury w formacie XML dla każdego załącznika utworzono również jeden plik. Pliki załączników są umieszczane w spakowanych danych wyjściowych w formacie binarnym.  
+    * Przejrzyj wygenerowane dane wyjściowe. Należy zauważyć, że oprócz komunikatu faktury w formacie XML dla każdego załącznika utworzono również jeden plik. Pliki załączników są umieszczane w spakowanych danych wyjściowych w formacie binarnym.  
 
 

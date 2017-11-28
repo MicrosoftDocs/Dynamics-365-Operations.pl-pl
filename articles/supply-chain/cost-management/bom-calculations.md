@@ -1,7 +1,7 @@
 ---
 title: Obliczenia BOM
 description: "Obliczenia łącznego kosztu i ceny sprzedaży są nazywane obliczeniami listy składowej BOM i inicjuje się je ze strony Obliczenia. Ten temat zawiera informacje dotyczące obliczeń BOM."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, SalesQuotationTable, SalesTable, SMAServiceOrderTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 273763
 ms.assetid: c6fa3348-eafa-4847-9132-e65c5f55cbf4
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: b1bcf11a8f6fc4921e8659fe1d00c093e3ad5b74
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ad00a3b5e41892aaa705fd8eafa52cc199e1d806
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -87,7 +87,7 @@ W przypadku stosowania metody „koszt plus narzut” obliczona cena sprzedaży 
 -   **Obliczanie BOM dla towaru i określonej wersji wyceny** — Obliczanie BOM generuje rekord oczekującej ceny sprzedaży w wersji wyceny. Ten rekord ceny sprzedaży stanowi punkt wyjściowy do wyświetlania szczegółów obliczenia (na przykład na stronie **Oblicz koszt pozycji**). Rekord ceny sprzedaży dostarcza przede wszystkim informacji referencyjnych i nie jest używany jako podstawa ceny sprzedaży w zamówieniach sprzedaży.
 -   **Obliczanie BOM dla konkretnego zamówienia** — Odmiana strony **Obliczanie BOM** jest używana w kontekście pozycji w wierszu zamówienia sprzedaży, oferty sprzedaży lub zlecenia serwisowego. Podczas obliczania BOM dla konkretnego zamówienia nie jest generowany rekord w wersji wyceny. Zamiast tego aparat generuje rekord obliczania wyświetlany następnie na stronie **Wyniki obliczenia BOM**. Ten rekord obliczania stanowi punkt wyjściowy do wyświetlania szczegółów obliczenia (na przykład na stronie **Oblicz koszt pozycji**). Informacje o wybranym rekordzie obliczania można przenieść do pierwotnego wiersza towaru. Na przykład obliczoną cenę sprzedaży można przenieść do pozycji w wierszu zamówienia sprzedaży.
 
-## <a name="orderspecific-bom-calculations"></a>Obliczenia BOM dla konkretnych zamówień
+## <a name="order-specific-bom-calculations"></a>Obliczenia na potrzeby BOM właściwe dla zamówienia
 Obliczanie BOM dla konkretnego zamówienia jest odmianą obliczania BOM dla wytwarzanego towaru. Obliczanie BOM dla konkretnego zamówienia jest wykonywane w kontekście pozycji w wierszu zamówienia sprzedaży, oferty sprzedaży lub zlecenia serwisowego. Obliczanie BOM dla konkretnego zamówienia generuje rekord obliczania wyświetlany na stronie **Wyniki obliczenia BOM**. Rekord obliczania zawiera obliczoną masę, obliczony koszt oparty na rekordach aktywnych kosztów i obliczoną cenę sprzedaży. Rekord obliczania generowany przez każde obliczenie BOM dla konkretnego zamówienia na stronie **Wyniki obliczenia BOM** jest oznaczony unikatowym numerem obliczenia. Wynik rekordu obliczania można opcjonalnie przenieść do pierwotnego wiersza towaru. Obliczanie BOM dla konkretnego zamówienia różni się od obliczania BOM dla wytwarzanego towaru pod dwoma względami:
 
 -   Podczas obliczania BOM dla konkretnego zamówienia nie jest generowany rekord kosztu towaru w wersji wyceny. Z tego względu zasady obliczania BOM nie są stosowane, gdy jest tworzony rekord kosztu towaru lub gdy jest zastępowany rekord kosztu.

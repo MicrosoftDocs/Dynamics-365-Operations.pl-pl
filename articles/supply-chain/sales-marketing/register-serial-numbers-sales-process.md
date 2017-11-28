@@ -1,9 +1,9 @@
 ---
 title: "Rejestrowanie numerów seryjnych w procesie sprzedaży"
-description: "Ten artykuł wyjaśnia sposób rejestrowania numerów seryjnych na dokumentach dostawy i fakturach w procesie sprzedaży. Ta funkcja jest przydatna, gdy firma chce zapisywać numery seryjne na potrzeby serwisu i gwarancji, ale nie chce nimi zarządzać w zapasach na etapach od przyjęcia do wydania."
+description: "Ten temat wyjaśnia sposób rejestrowania numerów seryjnych na dokumentach dostawy i fakturach w procesie sprzedaży. Ta funkcja jest przydatna, gdy firma chce zapisywać numery seryjne na potrzeby serwisu i gwarancji, ale nie chce nimi zarządzać w zapasach na etapach od przyjęcia do wydania."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.search.scope: Core, Operations, Retail
 ms.custom: 28931
 ms.assetid: 5d39630f-607e-492b-8c1e-790ca53effa0
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 9b8f66d4b62b43b3a62af8d39631e7cd7f688a11
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 23683ff3b232d485d0e4386963b3dcf37cd96c6f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 09/29/2017
 
 [!include[retail name](../includes/retail-name.md)]
 
-Ten artykuł wyjaśnia sposób rejestrowania numerów seryjnych na dokumentach dostawy i fakturach w procesie sprzedaży. Ta funkcja jest przydatna, gdy firma chce zapisywać numery seryjne na potrzeby serwisu i gwarancji, ale nie chce nimi zarządzać w zapasach na etapach od przyjęcia do wydania.
+Ten temat wyjaśnia sposób rejestrowania numerów seryjnych na dokumentach dostawy i fakturach w procesie sprzedaży. Ta funkcja jest przydatna, gdy firma chce zapisywać numery seryjne na potrzeby serwisu i gwarancji, ale nie chce nimi zarządzać w zapasach na etapach od przyjęcia do wydania.
 
 Wiele firm po prostu chce gromadzić numery seryjne na potrzeby serwisu i gwarancji, i nie musi przechowywać numerów seryjnych w magazynie od przyjęcia do wydania. W tych scenariuszach program Microsoft Dynamics 365 for Finance and Operations umożliwia rejestrowanie numerów seryjnych na dokumentach dostawy i fakturach, gdy produkty są sprzedawane. Jeśli produkty są potem zwracane, można śledzić każdy produkt do faktury w celu ustalenia, czy produkt został sprzedany przez organizację oraz określenia, czy zobowiązania wynikające z usługi lub gwarancji są prawidłowe.
 Czy istnieją wymagania wstępne?

@@ -3,7 +3,7 @@ title: "Amortyzacja środków trwałych dla Polski"
 description: "Ten temat zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosting
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 264274
 ms.search.region: Poland
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e61e88031b27c8f3ac157aeefee9f2dd3304be63
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: eadb2d8e8292a2d205ccf3f32128afd116fd394d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -39,7 +39,7 @@ Funkcje amortyzacji środków trwałych oparte na wymaganiach prawnych w Polsce 
 -   Grupy amortyzacji
 -   Ta sama data, co jest opcją w propozycji amortyzacji. Powoduje ona wypełnianie pola **Data** we wszystkich wierszach arkusza wartością z pola **Do dnia** zdefiniowanego w propozycji amortyzacji.
 
-## <a name="polandspecific-depreciation-methods"></a>Metody amortyzacji specyficzne dla Polski
+## <a name="poland-specific-depreciation-methods"></a>Metody amortyzacji specyficzne dla Polski
 Dla firm w Polsce istnieją dodatkowe metody, reguły i ustawienia amortyzacji, które są używane do spełnienia określonych wymogów rachunkowości środków trwałych. Zgodnie z polskimi przepisami amortyzacja jest obliczana przy użyciu rocznej stawki amortyzacji. Aby uzyskać więcej informacji na temat metod amortyzacji, zobacz [Amortyzacja środka trwałego](../fixed-assets/fixed-asset-depreciation.md). Dla firm w Polsce są dostępne następujące metody amortyzacji:
 
 -   **Degresywna (Polska)** — Ta metoda amortyzacji uwzględnia lokalne specjalne wymogi prawne dotyczące zmiany wartości środków trwałych w trakcie roku obrachunkowego i rozpoznawania części kosztowej. Podstawa dla tej metody amortyzacji uwzględnia następujące typy transakcji:

@@ -3,24 +3,24 @@ title: "Obszar roboczy Zarządzanie środkami trwałymi"
 description: "Ten temat zawiera informacje o obszarze roboczym Zarządzanie środkami trwałymi. Ten obszar roboczy pokazuje informacje związane z środkami trwałymi wprowadzonymi w systemie. Zawiera widoki podsumowania i analizy."
 author: saraschi
 manager: AnnBe
-ms.date: 06/06/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.assetid: 
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: c87cd29f46acb44faddaf5552de21fb8f4c5c71d
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c544ae60433dd14d061bc1a78d5cad6577cf579d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -58,7 +58,7 @@ Można przejść bezpośrednio do strony **Konfiguracja księgi**, **Zapytanie o
 
 ### <a name="analytics--all-companies"></a>Analizy — wszystkie firmy
 
-Strona **Analizy** zawiera ważne mierniki o środkach trwałych we wszystkich firmach w systemie. Dostęp do tej karty jest kontrolowany przez uprawnienie zabezpieczeń Wyświetlanie analiz środków trwałych dla wszystkich firm.
+Strona **Analizy** zawiera ważne mierniki o środkach trwałych we wszystkich firmach w systemie. Dostęp do tej karty jest kontrolowany przez uprawnienia zabezpieczeń Wyświetlanie analiz środków trwałych dla całej firmy.
 
 W poniższej tabeli pokazano wizualizacje dostępne na każdej stronie raportu.
 

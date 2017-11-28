@@ -1,16 +1,16 @@
 ---
 title: "Omówienie Pomocy"
-description: "Ten artykuł zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations. Wyjaśniono tu również, jak można dostarczać niestandardową dokumentację i szkolenia dla swojej organizacji."
+description: "Ten temat zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations. Wyjaśniono tu również, jak można dostarczać niestandardową dokumentację i szkolenia dla swojej organizacji."
 author: margoc
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
@@ -18,18 +18,18 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
-ms.openlocfilehash: 2df27a23d31ecde99bb31b4f8a19295c331cae09
+ms.sourcegitcommit: d2063cd0ae592357d57fb3c787450c604fb9be58
+ms.openlocfilehash: 549d059e549ba470eb299753fd7b87920e6dd43d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/11/2017
 
 ---
 
-# <a name="help-overview"></a>Omówienie Pomocy
+# <a name="help-system-overview"></a>Omówienie systemu Pomocy
 
 [!include[banner](../includes/banner.md)]
 
-Ten artykuł zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations. Wyjaśniono tu również, jak można dostarczać niestandardową dokumentację i szkolenia dla swojej organizacji. 
+Ten temat zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations. Wyjaśniono tu również, jak można dostarczać niestandardową dokumentację i szkolenia dla swojej organizacji. 
 
 > [!NOTE] 
 > Następujące produkty są ściśle związane ze sobą: Dynamics 365 for Finance and Operations Enterprise Edition, Dynamics 365 for Retail i Dynamics 365 for Talent. Te same funkcje mogą być dostępne we wszystkich 3 produktach. W związku z tym w tematach związanych głównie z modułem Retail nazwą produktu będzie Dynamics 365 for Retail, w tematach dotyczących przede wszystkim modułu Talent nazwą produktu będzie Dynamics 365 for Talent, a w tematach związanych z produktem podstawowym nazwą produktu będzie Dynamics 365 for Finance and Operations. Tematów, które zostały napisane dla jednego produktu, można używać w odniesieniu do tych samych funkcji w powiązanym produkcie.
@@ -69,16 +69,17 @@ Otrzymujemy wiele pytań dotyczących sposobu przeszukiwania naszej zawartości.
 
 Można również znaleźć naszą zawartość przy użyciu dowolnego aparatu wyszukiwania. W celu uzyskania najlepszych wyników zalecamy korzystanie z przeszukiwania witryny, takiego jak site:docs.microsoft.com dynamics 365 „szukany termin”.  
 
-![Przeszukiwanie witryny](./media/site-search-1.png)
-
-![Wyniki przeszukiwania witryny](./media/site-search-results-2.png)
-
 ### <a name="the-docsmicrosoftcom-table-of-contents"></a>Spis treści na stronie docs.microsoft.com
-Wszystkie produkty mają jeden wspólny spis treści w witrynie dokumentów, dzięki czemu użytkownicy widzą kontekst aktualnie wyświetlonego tematu. Pozwala to również używać formantu Filtr do znajdowania szukanych tematów.
+Rozwiązania Finance and Operations, Retail i Talent mają jeden wspólny spis treści w witrynie dokumentów, dzięki czemu użytkownicy widzą kontekst aktualnie wyświetlonego tematu. Pozwala to również używać formantu Filtr nad spisem treści do znajdowania szukanych tematów.
 
-### <a name="how-can-i-contribute"></a>Jak mogę wnieść swój wkład? 
+### <a name="follow-a-topic"></a>Przejście do tematu
+Aby przejść do tematu, kliknij przycisk +Śledzenie pod polem komentarza. Aby przejść do tematu należy się zalogować. Szczegółowe informacje zawiera sekcja [Pozostaw komentarz](#leave-us-a-comment).  
 
-Pozostaw komentarz! 
+### <a name="give-feedback"></a>Przekazywanie opinii 
+Cenimy opinie klientów. Możesz komentować lub sugerować zmiany zawartości za pośrednictwem serwisu GitHub.
+
+##### <a name="leave-us-a-comment"></a>Pozostaw komentarz 
+Jeśli masz opinię lub pytania dotyczące tematu, pozostaw komentarz na dole strony.  
 
 1 Kliknij **Komentarze** w celu przejścia do komentarzy w dolnej części strony.
 
@@ -96,6 +97,19 @@ lub
 Po prawej stronie wprowadź adres e-mail i nowe hasło, aby utworzyć nowe konto dla witryny. 
 
 ![Opcje logowania](./media/signin-options.png)
+
+
+##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Sugerowanie zmiany lub współtworzenie zawartości za pośrednictwem serwisu GitHub
+Aby zasugerować zmiany, musisz mieć konto w serwisie GitHub i podpisać Umowę licencyjną współautora.  Po przesłaniu żądania pobierania przejrzymy proponowane zmiany. W razie potrzeby omówimy je i skontaktujemy się z Tobą.  
+
+Aby rozpocząć, kliknij przycisk **Edytuj** (ołówek) w tym temacie lub przejdź do naszego repozytorium pod adresem https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
+
+Więcej informacji zawiera podręcznik dla współautorów: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
+
+
+> [!NOTE]
+> Obecnie akceptujemy współtworzenie tylko naszych repozytoriów w języku angielskim.  
+> Nie akceptujemy problemów zgłoszonych za pomocą serwisu GitHub — należy pobrać żądanie sugestii dotyczącej zawartości. Opinie dotyczące produktu i funkcji najlepiej przekazywać za pomocą portalu pomysłów rozwiązania Dynamics 365: https://ideas.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Przewodniki zadań
@@ -196,9 +210,4 @@ W poniższej tabeli wymieniono nasze witryny internetowe. Nasze strony z zawarto
 [Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)](new-updated-task-guides-available-august-2016.md)
 [Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)](new-updated-task-guides-available-may-2016.md)
 [Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)
-
-
-
-
-
 

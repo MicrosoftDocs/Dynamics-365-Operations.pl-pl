@@ -1,9 +1,9 @@
 ---
-title: "Funkcja Biuro obsługi"
-description: "Ten artykuł zawiera omówienie funkcji biura obsługi dostępnych w programie Microsoft Dynamics 365 for Retail."
+title: "Funkcje biura obsługi"
+description: "Ten temat zawiera omówienie funkcji biura obsługi dostępnych w programie Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 00d24e9933d087f150ec5270da94ad911423824d
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: 75dc09ffc84ef8ec48f50ea410974c99aabc212e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -40,7 +40,7 @@ Program Dynamics 365 for Retail obsługuje też biura obsługi jako typ kanału 
 
 Jeśli włączysz te funkcje w ustawieniach biura obsługi, są one dostępne na stronie **Zamówienie sprzedaży** dla użytkowników, którzy są skojarzeni z biurem obsługi. Większość tych funkcji wymaga dodatkowych ustawień przed użyciem. Aby użytkownicy mogli tworzyć biura obsługi, trzeba ich dodać do biura obsługi jako użytkowników biura obsługi. Ten krok umożliwia obsługę konfiguracji i funkcji właściwych dla kanału biura obsługi. Oto kilka przykładów funkcji, które stają się dostępne:
 
--   Sprzedaż sterowana oferuje opcje konfiguracji dla skryptów telesprzedaży i obrazów produktów, ułatwiających pracę i wyświetlających wskazówki pracownikom sprzedaży przyjmujących zamówienia.
+-   Sprzedaż sterowana oferuje opcje konfiguracji dla skryptów telesprzedaży i obrazów produktów, ułatwiających pracę i wyświetlających wskazówki pracownikom sprzedaży przyjmującym zamówienia.
 -   Nie można ukończyć zamówień dopóki pracownik sprzedaży nie zarejestruje co najmniej jednej metody płatności.
 -   Można skonfigurować reguły sprzedaży dodatkowej i wiązanej, aby sprzedawcy widzieli monity dotyczące promocji określonych produktów.
 -   Pracownicy sprzedaży mogą rejestrować kod źródłowy dla katalogu, z którego odbiorca zamawia.
