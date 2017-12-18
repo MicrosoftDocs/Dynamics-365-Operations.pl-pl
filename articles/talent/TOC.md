@@ -2,6 +2,8 @@
 
 # [Rozpoczęcie pracy](talent-get-started.md)
 ## [Wymagania systemowe i zasady aktualizacji](talent-versions-update-policy.md)
+## [Inicjowanie obsługi rozwiązania Microsoft Dynamics 365 for Talent](provisioning-talent.md)
+## [Rozszerzanie funkcjonalności rozwiązania Talent](extend-talent-functionality.md)
 
 # [Opracowywanie strategii dotyczącej zasobów ludzkich](departments-jobs-positions.md)
 ## [Konfigurowanie składników funkcji](create-job.md)
