@@ -122,8 +122,9 @@
 #### [Dodawanie wartości wyliczenia](extensibility/add-enum-value.md)
 #### [Modyfikowanie rozszerzonego typu danych](extensibility/modify-edt.md) 
 #### [Rejestrowanie podklasy metod tworzących](extensibility/register-subclass-factory-methods.md)
-#### [Odpowiedzi za pomocą klasy EventHandlerResult](extensibility/respond-event-handler-result.md)
+#### [Odpowiadanie za pomocą klasy EventHandlerResult](extensibility/respond-event-handler-result.md)
 #### [Rozszerzanie klasy RunBase](extensibility/extend-runbase-class.md)
+#### [Używanie delegatów do dostosowywania uruchamiania aplikacji](extensibility/startup-customizations.md)
 #### [Modyfikowanie istniejącego pola w tabeli](extensibility/modify-existing-field.md)
 #### [Dodawanie nowego pola do istniejącej tabeli](extensibility/add-field-extension.md)
 #### [Dodawanie indeksu do istniejącej tabeli](extensibility/add-index.md)
@@ -505,10 +506,12 @@
 ### [Konfigurowanie i wdrażanie środowisk lokalnych](deployment/setup-deploy-on-premises-environments.md)
 ### [Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Stosowanie aktualizacji do wdrożenia lokalnego](deployment/apply-updates-on-premises.md)
+### [Ponowne wdrażanie wdrożenia lokalnego](deployment/redeploy-on-prem.md)
+### [Rozwiązywanie problemów z lokalnym rozwiązaniem Dynamics 365 for Finance and Operations Enterprise Edition](deployment/troubleshoot-on-prem.md)
 
 ## Wdrażanie kodu niestandardowego
 ### [Tworzenie wdrażalnego pakietu](deployment/create-apply-deployable-package.md)
-### [Stosowanie wdrażalnego pakietu](deployment/apply-deployable-package-system.md)
+### [Stosowanie aktualizacji do środowiska w chmurze](deployment/apply-deployable-package-system.md)
 ### [Instalowanie wdrażalnego pakietu](deployment/install-deployable-package.md)
 ### [Rozwiązywanie problemów z aplikacją pakietu](deployment/deployable-package-troubleshooting.md)
 
@@ -541,14 +544,16 @@
 ### [Używanie metod obiektów delegowanych do rozpoznawania zależności między modelami](migration-upgrade/delegates-migration.md)
 
 
-## Uaktualnianie do ostatniej aktualizacji
-### [Proces migracji do najnowszej aktualizacji](migration-upgrade/upgrade-latest-update.md)
+## Uaktualnianie do najnowszej aktualizacji
+### [Proces przechodzenia do najnowszej aktualizacji](migration-upgrade/upgrade-latest-update.md)
 ### [Zasady świadczenia pomocy technicznej](migration-upgrade/versions-update-policy.md)
-### [Uaktualnianie do najnowszej aktualizacji platformy](migration-upgrade/upgrade-latest-platform-update.md)
+### [Stosowanie najnowszej aktualizacji platformy do swojego środowiska](migration-upgrade/upgrade-latest-platform-update.md)
 ### [Uaktualnianie platformy Dynamics do wydania z sierpnia 2016](migration-upgrade/update-platform-each-release.md)
 ### [Uaktualnianie środowiska piaskownicy](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Uaktualnianie danych w środowisku projektowym lub demonstracyjnym](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Aktualizowanie narzędzi programistycznych](dev-tools/update-development-tools.md)
+### [Stosowanie aktualizacji do wdrożenia lokalnego](deployment/apply-updates-on-premises.md)
+### [Ponowne wdrażanie wdrożenia lokalnego](deployment/redeploy-on-prem.md)
 
 ## Poprawki i obsługa
 ### [Pobieranie poprawek z usługi Lifecycle Services](migration-upgrade/download-hotfix-lcs.md)
@@ -566,6 +571,7 @@
 ## [Udostępnianie danych między firmami](sysadmin/cross-company-data-sharing.md)
 ## [Tryb konserwacji](sysadmin/maintenance-mode.md)
 ## [Wstępnie skonfigurowane konta systemowe](sysadmin/pre-configured-system-accounts.md)
+## [Eksportowanie użytkowników B2B do usługi Azure AD](sysadmin/implement-b2b.md)
 ## [Zabezpieczenia oparte na rolach](sysadmin/role-based-security.md)
 ### [Architektura zabezpieczeń](sysadmin/security-architecture.md)
 ### [Raporty dotyczące zabezpieczeń](sysadmin/security-reports.md)

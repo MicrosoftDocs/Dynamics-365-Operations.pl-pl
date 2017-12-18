@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0ca879fc4b0a43cd3af1e45c78a48f1c942a9a6a
+ms.sourcegitcommit: 98008b494f675209949afd961e3cd06dfdc9ec9a
+ms.openlocfilehash: 81a5d21233f12e7c26f0cce6a6c05fefde2ca7dd
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 - [Rachunek kosztów](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Zarządzanie kosztami](cost-management/costing-sheets.md)  
 - [Zarządzanie zapasami](inventory/inventory-home-page.md)
-- [Planowanie główne](master-planning/introduction-demand-forecasting.md)
+- [Planowanie główne](master-planning/master-planning-home-page.md)
 - [Zaopatrzenie i sourcing](procurement/procurement-sourcing-overview.md)
 - [Zarządzanie informacjami o produktach](pim/product-information.md)
 - [Kontrola produkcji](production-control/production-process-overview.md)
