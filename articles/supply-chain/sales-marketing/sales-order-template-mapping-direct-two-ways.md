@@ -1,6 +1,6 @@
 ---
 title: "Synchronizacja zamówień sprzedaży bezpośrednio między rozwiązaniami Sales a Finance and Operations"
-description: "Temat zawiera omówienie szablonów i podstawowych zadań, które są używane uruchamiania dwukierunkowej synchronizacji nagłówków i wierszy zamówień sprzedaży między rozwiązaniami Microsoft Dynamics 365 for Sales a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
+description: "Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do rozpoczynania synchronizacji zamówień sprzedaży między programami Microsoft Dynamics 365 for Sales i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/31/2017
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 568c33a63efdc58a179dadcb617634dcf533fd4b
-ms.openlocfilehash: c31d65328250539fbe172f220272eec9d8b59bbf
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 9aa8c78f5aea5a818d517c2baa9051750b132fc6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 11/13/2017
 
 [!include[banner](../includes/banner.md)]
 
-Temat zawiera omówienie szablonów i podstawowych zadań, które są używane uruchamiania dwukierunkowej synchronizacji nagłówków i wierszy zamówień sprzedaży między rozwiązaniami Microsoft Dynamics 365 for Sales a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
+Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do rozpoczynania synchronizacji zamówień sprzedaży między programami Microsoft Dynamics 365 for Sales i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
 
 ## <a name="templates-and-tasks"></a>Szablony i zadania
 
 Aby wyświetlić dostępne szablony, otwórz [Centrum administracyjne usługi PowerApps](https://preview.admin.powerapps.com/dataintegration). Wybierz opcję **Projekty**, a następnie w prawym górnym rogu wybierz opcję **Nowy projekt**, aby wybrać szablony publiczne.
 
-Następujące szablony i podstawowe zadania są używane do dwukierunkowej synchronizacji nagłówków i wierszy zamówień sprzedaży bezpośrednio między rozwiązaniami Sales a Finance and Operations:
+Następujące szablony i podstawowe zadania są używane do rozpoczynania synchronizacji zamówień sprzedaży bezpośrednio między programami Sales oraz Finance and Operations:
 
 - **Nazwy szablonów w integracji danych:** 
 

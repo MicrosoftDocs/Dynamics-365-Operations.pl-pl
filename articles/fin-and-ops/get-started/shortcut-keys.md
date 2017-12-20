@@ -3,7 +3,7 @@ title: "Skróty klawiaturowe"
 description: "Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: jasongre
 manager: AnnBe
-ms.date: 09/12/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 39ffbe81c0cc9ecb3f91f791442bfd27231a0516
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -33,6 +33,10 @@ ms.lasthandoff: 11/03/2017
 Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamics 365 for Finance and Operations, Enterprise Edition. 
 
 **Uwaga:** skróty klawiaturowe opisane w tym miejscu odnoszą się do amerykańskiego układu klawiatury. Klawisze w innych układach mogą nie odpowiadać dokładnie klawiszom na klawiaturze w układzie amerykańskim.
+
+## <a name="finding-a-shorcut"></a>Znajdowanie skrótu
+Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z aktualnie dostępnymi skrótami bezpośrednio z poziomu interfejsu użytkownika. Wystarczy kliknąć kontrolkę prawym przyciskiem myszy i wybrać opcję **Wyświetl skróty**. Zostanie otwarte okno dialogowe zawierające skróty jakich można użyć. Są one zależne od strony, na której znajduje się użytkownik. 
+
 
 ## <a name="action-shortcuts"></a>Skróty akcji
 |                                                   |                                  |
@@ -48,13 +52,14 @@ Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamic
 | Naciśnij domyślny przycisk formularza/okna dialogowego   | Alt+Enter                        |
 | Kliknij przycisk lub kafelek                            | Enter lub Spacja                   |
 | Wyświetl odświeżone informacje dla kafelka liczenia         | Alt+strzałka w górę                     |
+| Wyświetl aktualnie dostępne skróty                | Alt+Shift+K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Skróty selektora dat
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Funkcja**                        | **Klawisze**                                 |
 | Otwórz selektor dat                  | Alt+strzałka w dół                            |
-| Przejdź między datami w selektorze dat | Ctrl+klawisze strzałek                               |
+| Przejdź między datami w selektorze dat | Ctrl+klawisze strzałek                           |
 | Przejdź do następnego/poprzedniego miesiąca       | Page down / Page up                       |
 | Przejdź do następnego/poprzedniego roku        | Ctrl+Shift+Page down / Ctrl+Shift+Page up |
 | Przenieś do dnia dzisiejszego                         | CTRL+Home                                 |
@@ -65,6 +70,7 @@ Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamic
 ## <a name="factbox-shortcuts"></a>Skróty pola informacji
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
+| **Funkcja**                                                                  | **Klawisze**                                 |
 | Otwórz okienko pola informacji (lub przenieś zaznaczenie na okienko pola informacji, jeśli jest już otwarte) | Alt+M, B lub Ctrl+F2                        |
 | Zamknij okienko pola informacji (z wyróżnieniem na polu informacji)                         | Esc                                       |
 | Przejdź do następnego/poprzedniego pola informacji (z wyróżnieniem na okienku pola informacji)              | Alt+Shift+strzałka w dół / Alt+Shift+strzałka w górę |

@@ -3,7 +3,7 @@ title: "Pakiet zawartości usługi Power BI Zarządzanie kredytami i windykacją
 description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Zarządzanie kredytami i windykacją. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5f08df6cb8549e87e123b10c5a771ae1c60ff39c
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 536ebae3ec44954aba314a966c9b0d2dabef45d1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -41,7 +41,7 @@ Wszystkie kwoty są wyświetlane w walucie systemowej. Można ustawiać walutę 
 Domyślnie są wyświetlane dane kredytów i windykacji dla bieżącej firmy. Aby wyświetlić dane dla wszystkich firm, należy przypisać obowiązek **CustCollectionsBICrossCompany** do roli.
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z aktualizacją (lipiec 2017 r.), pakiet zawartości usługi Power BI **Zarządzanie kredytami i windykacją** jest wyświetlany w obszarze roboczym **Kredyty i windykacja odbiorcy** .
+Zawartość usługi Power BI **Zarządzanie kredytami i windykację** jest wyświetlana w obszarze roboczym **Kredyty i windykacja odbiorcy**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
 

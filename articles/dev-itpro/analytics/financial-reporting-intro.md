@@ -1,15 +1,15 @@
 ---
 title: Raportowanie finansowe w programie Finance and Operations
 description: "Funkcjonalność raportowania finansowego w programie Finance and Operations pozwala specjalistom finansowym i biznesowym tworzyć, obsługiwać, wdrażać i wyświetlać sprawozdania finansowe. Wychodzi poza tradycyjne ograniczenia sprawozdawczości, pomagając efektywne projektować różne rodzaje raportów."
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Operations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d1e1ec9fff9f1a41fd8a219c9fbbf8a26ad3d7b6
+ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
+ms.openlocfilehash: b23883c1f66cda8a719db64a2f50e00605f6bfe9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -33,6 +33,17 @@ ms.lasthandoff: 11/03/2017
 Funkcjonalność raportowania finansowego w programie Finance and Operations pozwala specjalistom finansowym i biznesowym tworzyć, obsługiwać, wdrażać i wyświetlać sprawozdania finansowe. Wychodzi poza tradycyjne ograniczenia sprawozdawczości, pomagając efektywne projektować różne rodzaje raportów.
 
 Funkcjonalność sprawozdawczości finansowej obejmuje obsługę wymiarów. W związku z tym segmenty i wymiary kont są od razu dostępne. Nie są wymagane żadne dodatkowe narzędzia ani czynności konfiguracyjnych.
+
+## <a name="financial-reporting-setup"></a>Ustawienia raportowania finansowego
+Strona **Ustawienia raportowania finansowego** zawiera listę wszystkich wymiarów finansowych w systemie. **Księga główna** > **Ustawienia księgi** > **Ustawienia raportowania finansowego**. 
+
+Strona **Ustawienia raportowania finansowego** zawiera dwie sekcje, które określają dane uwzględniane w raportowaniu finansowym:
+
+•   **Karta Wymiary** — różne firmy korzystają z różnych wymiarów i struktur kont, dlatego nie da się określić, w jakiej kolejności użytkownicy będą chwili wyświetlać wszystkie wymiary finansowe w raportach. Na tej stronie można ustawić kolejność wyświetlania wymiarów finansowych podczas tworzenia i wyświetlania raportu w module Raportowanie finansowe.
+
+•   **Karta Atrybuty** pozwala wybrać, czy kategorie **Dostawcy** i **Odbiorcy** mają być dostępne podczas filtrowania i projektowania raportów. Raportowanie według dostawcy i odbiorcy będzie przydatne tylko wówczas, jeśli podczas księgowania transakcji nie doda się wielu dostawców lub odbiorców. Wybranie atrybutu Dostawca i/lub Odbiorca wydłuży czas integracji.
+
+
 
 ## <a name="financial-reporting-components"></a>Składniki raportowania finansowego
 Następujące składniki aparatu sprawozdawczości finansowej zapewniają łatwe tworzenie, wyświetlanie i planowanie raportów.

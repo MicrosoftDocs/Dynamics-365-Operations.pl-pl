@@ -3,7 +3,7 @@ title: "Przestarzałe funkcje"
 description: "W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia."
 author: sericks007
 manager: AnnBe
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee051bbf50a6124fe1700a244b36b5f9c599e714
+ms.sourcegitcommit: 408854737847590841814ed74209618bbf22ec23
+ms.openlocfilehash: b0eb041ee1a4309b010e510e1f7428d6c930e4a0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/27/2017
 
 ---
 
@@ -490,9 +490,9 @@ Partycje danych zapewniają logiczne oddzielenie danych w bazie danych systemu M
 
 |   |   |
 |---|---|
-| **Przyczyna amortyzacji**       | Partycje danych zostały wprowadzone w systemie Microsoft Dynamics AX 2012 R2, aby umożliwić izolowanie danych. W typowym scenariuszu firma ma oddziały. Dane z jednego oddziału firmy nie powinny być widoczne w innym oddziale, mimo że oba oddziały są zarządzane przez ten sam dział IT. Jednak były wymagane dodatkowe skrypty i towarzyszące zarządzanie programem w celu utworzenia nowych partycji i wypełnienia ich danymi oraz utworzenia kopii zapasowych danych partycji. W chmurze, gdzie mamy dostęp do usług bazy danych (baza danych SQL Microsoft Azure) w postaci platformy jako usługi (PaaS), znacznie bardziej efektywne jest używanie bazy danych jako kontenera izolacji niż konfigurowanie izolacji w programie. Niezależnie od tego, czy partycjonowanie danych jest wymagane dla oddziałów, wielu dzierżawców czy tylko ze względu na skalę, jesteśmy przekonani, że wszystkie scenariusze można lepiej obsługiwać za pomocą wielu baz danych lub wielu wystąpień systemu Dynamics AX. |
-| **Zamieniona przez inną funkcję?** | W przyszłym wydaniu partycje danych zostaną zastąpione przez obsługę wielu baz danych lub wystąpień systemu Dynamics AX.    |
-| **Moduły, których dotyczą zmiany**             | Wszystko  |
+| **Przyczyna amortyzacji**       | Partycje danych zostały wprowadzone w systemie Microsoft Dynamics AX 2012 R2, aby umożliwić izolowanie danych. W typowym scenariuszu firma ma oddziały. Dane z jednego oddziału firmy nie powinny być widoczne w innym oddziale, mimo że oba oddziały są zarządzane przez ten sam dział IT. Jednak były wymagane dodatkowe skrypty i towarzyszące zarządzanie programem w celu utworzenia nowych partycji i wypełnienia ich danymi oraz utworzenia kopii zapasowych danych partycji. W chmurze, gdzie mamy dostęp do usług bazy danych (baza danych SQL Microsoft Azure) w postaci platformy jako usługi (PaaS), znacznie bardziej efektywne jest używanie bazy danych jako kontenera izolacji niż konfigurowanie izolacji w programie. Niezależnie od tego, czy partycjonowanie danych jest wymagane dla oddziałów, wielu dzierżawców czy tylko ze względu na skalę, jesteśmy przekonani, że wszystkie scenariusze można lepiej obsługiwać za pomocą wielu wystąpień systemu Finance and Operations. |
+| **Zamieniona przez inną funkcję?** | Jeśli separacja poziomów bazy danych ma krytyczne znaczenie, klienci korzystający z partycji danych muszą używać wielu wystąpień systemu Finance and Operations.    |
+| **Moduły, których dotyczą zmiany**             | Wszyscy  |
 
 ### <a name="database-and-file-share-storage-for-attachments"></a>Przechowywanie załączników w bazach danych i udziałach plików
 System Microsoft Dynamics AX 2012 pozwalał na przechowywania załączników w bazach danych i udziałach plików. Obie te opcje nie są już obsługiwane.

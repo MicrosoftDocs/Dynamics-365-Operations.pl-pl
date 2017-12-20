@@ -3,7 +3,7 @@ title: "Pakiet zawartości usługi Power BI Przegląd dla dyrektora finansowego"
 description: "W tym temacie opisano pakiet zawartość Przegląd dla dyrektora finansowego dostępny dla usługi Microsoft Power BI."
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e08277850d36804e3d4508b87547d2c819e2faf3
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: fcc93daf96f65cd340d6be766c6ef83a74d62cc5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ W tym temacie opisano pakiet zawartość **Przegląd dla dyrektora finansowego**
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 
-Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017 r.), raporty z pakietu zawartości usługi Power BI **Przegląd dla dyrektora finansowego** są wyświetlane w obszarze roboczym **Przegląd dla dyrektora finansowego** .
+Raporty z zawartości usługi Power BI **Omówienie funkcji Dyrektor finansowy** są wyświetlane w obszarze roboczym **Omówienie funkcji Dyrektor finansowy**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
 Pakiet zawartości usługi Power BI **Przegląd dla dyrektora finansowego** jest zbiorem raportów z różnych innych pakietów zawartości usługi Power BI, a także zawiera niektóre salda wartości rzeczywistych i zabudżetowanych z księgi głównej. W efekcie ten pakiet zawartości usługi Power BI oferuje dyrektorowi finansowemu (CFO) podgląd na całą organizację.

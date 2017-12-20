@@ -1,16 +1,16 @@
 ---
 title: Generowanie raportu finansowego
 description: Ten temat zawiera informacje o generowaniu sprawozdania finansowego.
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
-ms.openlocfilehash: 2986d218318951b7e46cb5dfafcbd17f2d513755
+ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
+ms.openlocfilehash: 95669d83fdf69a6d55dd7ee1e4e33a67108e0371
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -40,15 +40,31 @@ Aby wygenerować raport, otwórz definicję raportu, a następnie kliknij przyci
 
 W poniższej tabeli wyjaśniono opcje dostępne do generowania raportów.
 
-| Opcja                                                                                | Więcej informacji |
-|---------------------------------------------------------------------------------------|----------------------|
-| Konfigurowanie harmonogramu w celu automatycznego generowania raportu lub grupy raportów              |                      |
-| Sprawdzanie brakujących kont lub danych w raporcie i sprawdzanie poprawności raportu |                      |
+| Opcja                                                                                | 
+|---------------------------------------------------------------------------------------|
+| Konfigurowanie harmonogramu w celu automatycznego generowania raportu lub grupy raportów              |   
+| Sprawdzanie brakujących kont lub danych w raporcie i sprawdzanie poprawności raportu |   
 
 Podczas generowania raportu są używane opcje, które określono na kartach Definicja raportu. Karta Produkcja i dystrybucja pozwala określić lokalizację biblioteki raportów, która zapewnia prosty sposób udostępniania raportu.
 
-## <a name="schedule-report-generation"></a> Generowanie raportu planu
-Wiele firm ma podstawowy zbiór raportów, które są uruchamiane w zaplanowanych okresach, w celu dostosowania ich procesów biznesowych. Można zaplanować raport do generowania regularnego, np. codziennie, co tydzień, co miesiąc lub co roku. Sesja może obejmować jeden raport albo grupę raportów dla kilku przedsiębiorstw. Dla każdej uwzględnionej firmy, na przykład wpisanej w definicji drzewa raportowania, trzeba wprowadzić poświadczenia dostępu. Jeśli poświadczenia nie są prawidłowe, raport wyświetli tylko informacje, że masz uprawnienia dostępu, takie jak firma w której jesteś zalogowany w danej chwili. Informacje o danych wyjściowych są odczytywane najpierw z grupy raportów, a następnie z poszczególnych raportów.
+## <a name="generate-a-financial-report"></a>Generowanie raportu finansowego
+
+Aby wygenerować raport finansowy za pomocą oprogramowania Microsoft Dynamics 365 for Finance and Operations, wybierz kolejno opcje **Księga główna** > **Zapytania i raporty** > **Raporty finansowe**. 
+ - Wybierz raport do wygenerowania i kliknij opcję **Generuj**. 
+ - Wypełnij pole **Data raportu** i kliknij przycisk **OK**.
+ 
+ Po wygenerowaniu raportu, raport będzie dostępny do wyświetlenia w sekcji **Raporty**.
+ Można wybrać dla raportu opcję **Wyświetl** lub **Usuń**.
+ 
+ 
+Aby wygenerować raport za pomocą **Projektanta raportów**, otwórz definicję raportu, a następnie kliknij przycisk Generuj na pasku narzędzi. Okno Stan kolejki raportów otworzy się i wskaże lokalizację raportu w kolejce. Domyślnie wygenerowane raporty otwierają się za pomocą Podglądu w sieci Web.
+
+> [!NOTE]
+> Można generować raporty tylko do folderów i lokalizacji, do których masz uprawnienia dostępu.
+
+
+## <a name="schedule-report-generation"></a>Planowanie generowania raportów
+W wielu przedsiębiorstwach istnieje pewien podstawowy zbiór raportów, które są tworzone według określonego harmonogramu dopasowanego do potrzeb procesów biznesowych. Można zaplanować raport do generowania regularnego, np. codziennie, co tydzień, co miesiąc lub co roku. Sesja może obejmować jeden raport albo grupę raportów dla kilku przedsiębiorstw. Dla każdej uwzględnionej firmy, na przykład wpisanej w definicji drzewa raportowania, trzeba wprowadzić poświadczenia dostępu. Jeśli poświadczenia nie są prawidłowe, raport wyświetli tylko informacje, że masz uprawnienia dostępu, takie jak firma w której jesteś zalogowany w danej chwili. Informacje o danych wyjściowych są odczytywane najpierw z grupy raportów, a następnie z poszczególnych raportów.
 
 Tworzone i zapisywane raporty są wyświetlane w okienku nawigacji w obszarze Harmonogramy raportów. W celu uporządkowania raportów można tworzyć foldery. Pominięcie generowania określonego raportu w harmonogramie nie wpływa w żaden sposób na pozostałe raporty.
 

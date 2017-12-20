@@ -3,7 +3,7 @@ title: Mobilny obszar roboczy Wprowadzanie czasu projektu
 description: "Ten temat zawiera informacje o komórkowym obszarze roboczym Wprowadzanie czasu projektu. Ten obszar roboczy umożliwia użytkownikom wprowadzanie i zapisywanie czasu względem projektu za pomocą ich urządzeń przenośnych."
 author: KimANelson
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8185be069a552105073958d5144ad402ddae6b9f
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: c04ffccdcbf104b1d5db30a41116663fcedd4e1d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -48,8 +48,8 @@ W szczególności w mobilnym obszarze roboczym **Wprowadzanie czasu projektu** u
 ## <a name="prerequisites"></a>Wymagania wstępne
 Wymagania wstępne różnią się w zależności od wersji systemu Microsoft Dynamics 365 wdrożonej w organizacji.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017 r.) 
-Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017 r.), administrator systemu musi opublikować mobilny obszar roboczy **Wprowadzanie czasu projektu**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Warunki wstępne w przypadku korzystania z programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition
+Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, administrator systemu musi opublikować mobilny obszar roboczy **Wprowadzanie czasu projektu**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą
 Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą, administrator systemu musi wykonać następujące zadania wstępne. 

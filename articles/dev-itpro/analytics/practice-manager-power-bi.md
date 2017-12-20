@@ -3,7 +3,7 @@ title: "Zawartość usługi Power BI dla kierownika praktyk"
 description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI dla kierownika praktyk. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
 author: KimANelson
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3462ef1bbde9a98ac6a7bc9a5c54e58ff98559c8
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 836997f9f5b146ff48252c3f06153791ec1aabed
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -39,7 +39,7 @@ Pakiet zawartości Power BI **Kierownik praktyk** zawiera pięć stron raportu: 
 Wszystkie kwoty w zawartości są wyświetlane w walucie systemu. Można ustawiać walutę systemową na stronie **Parametry systemowe**.
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017 r.), pakiet zawartości usługi Power BI **Kierownik praktyk** jest wyświetlany w obszarze roboczym **Zarządzanie projektami** .
+Zawartość usługi Power BI **Kierownik praktyk** jest wyświetlana w obszarze roboczym **Zarządzanie projektem**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
 

@@ -3,7 +3,7 @@ title: "Pakiet zawartości usługi Power BI Wynagrodzenia"
 description: "W tym temacie opisano pakiet zawartość Wynagrodzenia dostępny dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
 author: jcart1106
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f97b1323e739196ae58369a3d66de6a65df94f83
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 7143a2750d284080609c884ce15bc2b2e8943394
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ W tym temacie opisano pakiet zawartość **Wynagrodzenia** dostępny dla usługi
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 Pakiet zawartości usługi Power BI zatytułowany **Wynagrodzenia** jest wyświetlany w obszarze roboczym **Zarządzanie wynagrodzeniami**, jeśli używasz jednego z następujących produktów:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (lipiec 2017)
+- Microsoft Dynamics 365 for Finance and Operations Enterprise Edition
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
