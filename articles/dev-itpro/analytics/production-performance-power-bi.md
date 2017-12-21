@@ -3,7 +3,7 @@ title: "Pakiet zawartości usługi Power BI Wydajność produkcji"
 description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Wydajność produkcji. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: baa0343713e8f75e1c9637a903b9008db0968fd4
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ Ten pakiet zawartości usługi Power BI umożliwia także analizowanie odchyleń
 Pakiet zawartości usługi Power BI **Wydajność produkcji** zawiera dane, które pochodzą ze zleceń produkcyjnych i szarż produkcyjnych. Raporty nie obejmują danych związanych z produkcją Kanban.
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017 r.), pakiet zawartości usługi Power BI **Wydajność produkcji** jest wyświetlany na stronie **Wydajność produkcji** (**Kontrola produkcji** > **Zapytania i raporty** > **Analizy wydajności produkcji** > **Wydajność produkcji**). 
+Zawartość usługi Power BI **Wydajność produkcji** jest wyświetlana na stronie **Wydajność produkcji** (**Kontrola produkcji** > **Zapytania i raporty** > **Analiza wydajności produkcji** > **Wydajność produkcji**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
 

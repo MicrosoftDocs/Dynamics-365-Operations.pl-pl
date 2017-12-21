@@ -3,7 +3,7 @@ title: "Porównanie funkcji w chmurze i lokalnych"
 description: "Ten temat przedstawia funkcje obsługiwane w chmurze i lokalnie."
 author: robinarh
 manager: AnnBe
-ms.date: 07/13/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,13 +15,13 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 ms.author: robinr
-ms.search.validFrom: 2017-07-13
+ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: efe06929db414475f6457dfe49ff1791a3d609d5
+ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
+ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -59,6 +59,9 @@ W poniższej tabeli wymieniono zakresy produktów. Obsługa w chmurze i lokalnie
 | | Integracja z PowerBI.com| Tak | Nr |
 | | Analityczne obszary robocze | Tak | Nr |
 | | Inteligentny proces biznesowy: zalecenia| Tak | Nr |
+| | Tworzenie raportów dla usługi Power BI za pomocą interfejsu OData z wykorzystaniem aplikacji Power BI Desktop lub narzędzi PowerQuery dla programu Excel | Tak | Nr |
+| | Usługi SQL Server Reporting Services (SSRS) obsługują skalowanie  | Tak | Nr |
+| | Dane telemetryczne są przesyłane do chmury | Tak | Nr |
 | Zarządzanie zapasami| | Tak | Tak |
 | Usługi Lifecycle Services| | Tak | Tak |
 | | Konfigurowalne procesy biznesowe | Tak | Nr |
@@ -86,7 +89,7 @@ W poniższej tabeli wymieniono zakresy produktów. Obsługa w chmurze i lokalnie
 | Zarządzanie transportem| | Tak | Tak |
 | Portal współpracy z dostawcami| | Tak | Tak|
 | Zarządzanie magazynem| | Tak | Tak |
-| | Mobilna aplikacja magazynu| Tak | Nr |
+| | Mobilna aplikacja magazynu| Tak | Tak |
 | | Raporty usługi Power BI dotyczące magazynowania| Tak | Nr |
 | Klient sieci Web | | Tak | Tak |
 | | Rejestrator zadań — zapisywanie i ładowanie rejestracji zadań z biblioteki BPM| Tak | Nr |
@@ -103,6 +106,7 @@ W poniższej tabeli wymieniono zakresy produktów. Obsługa w chmurze i lokalnie
 | Zgodność z platformą  || Tak | Tak |
 | Obsługa | | Tak | Tak |
 | | Obsługiwanie środowisk | Tak | Nr |
+| Trace Parser i PerfTimer | | Tak | Nr |
 | Uaktualnienie | | Tak | Tak |
 | | Uaktualnienie | Tak | Nr |
 | | Uaktualnienie i obsługa wcześniejszych wersji | Tak | Nr |
@@ -121,6 +125,8 @@ W poniższej tabeli wymieniono zakresy produktów. Obsługa w chmurze i lokalnie
 |---|---|---|---|
 | Wszystkie obszary rozwiązania Talent | Wszystkie funkcje rozwiązania Talent | Tak | Nr |
 
+## <a name="see-also"></a>Informacje dodatkowe
 
+- [Funkcje niezaimplementowane we wdrożeniach lokalnych](features-not-implemented-on-prem.md)
 
 

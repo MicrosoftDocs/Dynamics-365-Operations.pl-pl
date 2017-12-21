@@ -3,7 +3,7 @@ title: "Zawartość usługi Power BI dotycząca wyników sprzedaży i rentownoś
 description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Wyniki sprzedaży i rentowności. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3692b9be0fb93e0e2de743775a54bb9c9dbf5809
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: c065eb2f19bbbd553e070f06c29f73114e3efad5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -49,7 +49,7 @@ Rentowność można analizować w następujące sposoby:
 -   Rentowność odbiorców (przychody względem marży brutto)
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017 r.), pakiet zawartości usługi Power BI **Wyniki sprzedaży i rentowności** jest wyświetlany na stronie **Wyniki sprzedaży i rentowności** (**Sprzedaż i marketing** > **Zapytania i raporty** > **Analiza wydajności sprzedaży** > **Wyniki sprzedaży i rentowności**). 
+Pakiet zawartości Power BI **Wyniki w zakresie sprzedaży i rentowności** jest wyświetlany na stronie **Wyniki w zakresie sprzedaży i rentowności**  (**Sprzedaż i marketing** > **Zapytania i raporty** > **Analiza wydajności sprzedaży** > **Wyniki w zakresie sprzedaży i rentowności**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
 Pakiet zawartości usługi Power BI **Wyniki sprzedaży i rentowności** zawiera raport obejmujący zbiór miar. Te wskaźniki są wizualizowane jako wykresy, kafelki i tabele. Następująca tabela zawiera przegląd wizualizacji dostępnych w pakiecie zawartości.

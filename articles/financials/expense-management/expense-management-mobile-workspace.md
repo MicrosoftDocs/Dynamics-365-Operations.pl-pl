@@ -3,7 +3,7 @@ title: "Mobilny obszar roboczy Zarządzanie wydatkami"
 description: "Ten temat zawiera informacje o komórkowym obszarze roboczym Zarządzanie wydatkami. Ten obszar roboczy pozwala użytkownikom rejestrować i przekazywać paragony, dzięki czemu można je później dołączać do raportów z wydatków. Użytkownicy szybko utworzyć wiersz wydatku za pomocą dołączonego paragonu oraz tworzyć raporty z wydatków i nimi zarządzać."
 author: KimANelson
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4880c74047f53704f5f4d8efb19b6f8c6b04d479
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: bbbe37330e16a079b817dfe04f4a47f046263e88
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -46,7 +46,7 @@ W szczególności mobilny obszar roboczy **Zarządzanie wydatkami** pozwala uży
 - Przekazanie pliku jako zarejestrowanego paragonu. Następnie można załączyć ten plik do raportu z wydatków.
 - Utworzenie nowego wiersza wydatku za pomocą dołączonego paragonu. Można później dodać pozycję wiersza do raportu z wydatków i przesłać raport do zatwierdzenia w celu otrzymania zwrotu pieniędzy.
 
-Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017 r.), masz dostęp również do następujących funkcji:
+Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, masz również dostęp do następujących funkcji:
 
 - Tworzenie nowego raportu z wydatków.
 - Dołączanie transakcji kartami kredytowymi i innych utworzonych wcześniej wydatków do raportu z wydatków.
@@ -60,8 +60,8 @@ Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enter
 ## <a name="prerequisites"></a>Wymagania wstępne
 Wymagania wstępne różnią się w zależności od wersji programu Microsoft Dynamics 365 wdrożonej w organizacji.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017 r.) 
-Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017 r.), administrator systemu musi opublikować mobilny obszar roboczy **Zarządzanie wydatkami**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Warunki wstępne w przypadku korzystania z programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 
+Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, administrator systemu musi opublikować mobilny obszar roboczy **Zarządzanie wydatkami**. Instrukcje znajdziesz w temacie [Publikowanie mobilnego obszaru roboczego](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Warunki wstępne, jeśli jest używany program Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą
 Jeśli w organizacji wdrożono oprogramowanie Microsoft Dynamics 365 for Operations w wersji 1611 z aktualizacją platformy 3 lub nowszą, administrator systemu musi wykonać następujące zadania wstępne. 

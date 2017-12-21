@@ -3,7 +3,7 @@ title: "Mobilny obszar roboczy Mój zespół"
 description: "Ten temat zawiera informacje o komórkowym obszarze roboczym Mój zespół, który umożliwia kierownikom wyświetlanie informacji o bezpośrednich podwładnych i pracownikach na dalszych szczeblach podwładności. Użytkownicy mogą również wysyłać pochwały osobom w swoich łańcuchach relacji służbowych."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a49e7ba9c1cbc525f388b345b7c6b2102bc81f54
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 30a5b88b5f4a0b107b39742770587eeb4bcb87cf
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -53,7 +53,7 @@ Aby można było używać tego mobilnego obszaru roboczego, muszą być spełnio
 <tbody>
 <tr class="odd">
 <td>W organizacji musi być wdrożony jeden z następujących produktów:
-<ul><li>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (lipiec 2017)</li>
+<ul><li>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition</li>
 <li>Microsoft Dynamics 365 for Talent</li>
 </ul>
 </td>

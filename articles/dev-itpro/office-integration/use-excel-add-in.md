@@ -3,7 +3,7 @@ title: "Używanie dodatku programu Excel"
 description: "W tym temacie wyjaśniono, jak otwierać dane jednostek w programie Microsoft Excel, a następnie wyświetlać, aktualizować i edytować te dane przy użyciu dodatku pakietu Office dla usługi Microsoft Dynamics dla programu Excel."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/06/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b1f25f3630ad5126edd20c5508b83a9811a65f8
-ms.openlocfilehash: dd986d8f82c42c4e229e6e60bdfe8d15a273e149
+ms.sourcegitcommit: bf2607596993d01abaf5e8a66f14f8c091791d4a
+ms.openlocfilehash: b4151ca929d0dbe073c1a8444cf63a90ac74e20c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/27/2017
 
 ---
 
@@ -104,17 +104,6 @@ Można użyć projektanta, aby dostosować kolumny dodawane automatycznie do ark
 
 4. Aby zastosować zmiany do źródła danych, wybierz opcję **Aktualizuj**. Następnie wybierz opcję **Gotowe**, aby zamknąć projektanta.
 5. Jeśli dodano pole (kolumnę), wybierz opcję **Odśwież**, aby pobrać zaktualizowany zbiór danych.
-
-## <a name="copy-environment-data"></a>Kopiuj dane środowiska
-Dane wczytane do arkusza z jednego środowiska można skopiować do innego środowiska. Nie wystarczy jedna zmienić adresu URL połączenia, ponieważ pamięć podręczna danych w skoroszycie będzie nadal traktować dane jako istniejące. Zamiast tego należy użyć funkcji Kopiuj dane środowiska, aby opublikować dane w nowych środowisku jako nowe dane.
-
-1. Wybierz przycisk **Opcje** (symbol koła zębatego), a następnie na skróconej karcie **Łącznik danych** wybierz opcję **Kopiuj dane środowiska**.
-2. Wprowadź adres URL serwera dla nowego środowiska.
-3. Wybierz przycisk **OK**, a następnie przycisk **Tak**, aby potwierdzić akcję. Dodatek programu Excel zostanie uruchomiony ponownie i połączy się z nowym środowiskiem. Wszystkie dane istniejące w skoroszycie są traktowane jak nowe dane.
-
-    Po ponownym uruchomieniu dodatku programu Excel zostanie wyświetlony komunikat z informacją, że skoroszyt działa w trybie kopiowania środowiska.
-
-4. Aby skopiować dane do nowego środowiska jako nowe dane, wybierz opcję **Opublikuj**. Aby anulować operację kopiowania środowiska i przejrzeć istniejące dane w nowym środowisku, wybierz opcję **Odśwież**.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 Istnieje kilka problemów, które można rozwiązać poprzez wykonanie kilku prostych kroków.

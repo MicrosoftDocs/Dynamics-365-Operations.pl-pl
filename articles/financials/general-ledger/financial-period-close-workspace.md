@@ -3,7 +3,7 @@ title: "Obszar roboczy zamknięcia okresu obrachunkowego"
 description: "Ten artykuł zawiera omówienie obszaru roboczego Zamknięcie okresu obrachunkowego oraz pokrewnej konfiguracji."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5dbefc953c0f1608b6f5b5676850a0e9aba36cc
+ms.sourcegitcommit: 6a03274da9b81bf71b32a62f4ebba2a374688ae5
+ms.openlocfilehash: 8b6c14d41cac13e7c1fb5a580759514d46d776ee
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/29/2017
 
 ---
 
@@ -91,7 +91,8 @@ Zadanie w szablonie można przypisać do jednego lub kilku firm, do których sto
 
 Element menu **Łącze do zadania** jest skojarzone z nakładem pracy i pozwala przejść bezpośrednio do skojarzonej strony z łącza zadania w obszarze roboczym. Na przykład zadanie zamknięcia służące do realizacji procesu przeszacowania waluty w module Rozrachunki z dostawcami może być połączone ze stroną **Przeszacowanie w walucie obcej** w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Można również utworzyć łącze do zewnętrznego adresu URL. 
 
-> [Wskazówka[ Aby utworzyć łącze pomiędzy raportem programu Management Reporter a zadaniem zamknięcia okresu obrachunkowego, można użyć adresu URL raportu. Aby uzyskać dostęp do adresu URL raportu, otwórz raport w projektancie raportów i kliknij kolejno opcje **Plik** &gt; **Wyświetl raport**, a raport zostanie otwarty w przeglądarce internetowej. Można następnie skopiować adres URL w pasku adresu przeglądarki i wkleić go w polu **URL** **łącza zadania**. 
+> [!TIP]
+> Aby utworzyć łącze pomiędzy raportem programu Management Reporter a zadaniem zamknięcia okresu obrachunkowego, można użyć adresu URL raportu. Aby uzyskać dostęp do adresu URL raportu, otwórz raport w projektancie raportów i kliknij kolejno opcje **Plik** &gt; **Wyświetl raport**, a raport zostanie otwarty w przeglądarce internetowej. Można następnie skopiować adres URL w pasku adresu przeglądarki i wkleić go w polu **URL** **łącza zadania**. 
 
 W szablonie można zdefiniować współzależności zadań. Jeśli zadanie zostało skonfigurowane jako zależne od jednego lub kilku zadań, to zadanie nie można być oznaczone jako zakończone do momentu zakończenia wszystkich zależności. 
 

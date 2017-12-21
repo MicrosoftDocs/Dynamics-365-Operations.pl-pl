@@ -3,7 +3,7 @@ title: "Pakiet zawartości usługi Power BI Wyniki finansowe"
 description: "W tym temacie opisano pakiet zawartość Wyniki finansowe dostępny dla usługi Power BI. Omówiono dostępny pulpit nawigacyjny i raporty oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f111698315cd42c0c1c0d470b94688b548375bee
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -38,7 +38,7 @@ Dostęp do pakietu zawartości usługi Power BI **Wyniki finansowe** można uzys
 ### <a name="available-from-lcs"></a>Dostępny z usługi LCS
 Pakiet zawartości usługi Power BI **Wyniki finansowe** dostępny w usłudze LCS obsługuje poniższe wersje:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (lipiec 2017)
+- Wersje oprogramowania Microsoft Dynamics 365 for Finance and Operations Enterprise Edition
 - Microsoft Dynamics 365 for Operations w wersji 1611 
 
 Ten pakiet zawartości usługi Power BI znajduje się w bibliotece zasobów wspólnych w usłudze LCS. Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).

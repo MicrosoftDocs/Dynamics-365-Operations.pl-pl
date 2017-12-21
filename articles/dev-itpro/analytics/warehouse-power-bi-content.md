@@ -3,7 +3,7 @@ title: "Pakiet zawartości usługi Power BI Wydajność magazynu"
 description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Wydajność magazynu. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
 author: Mirzaab
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d30a14e78e35c94b9f8945d2fcc973f921698953
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: ea53e2bcd01cd06ccdd836ead1671b54aa9e9750
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ Pakiet zawartości usługi Power **Wydajność magazynu** umożliwia kierownikom
 -   **Dokładność zapasów w lokalizacji** — Dokładność zapasów jest ważnym wewnętrznym parametrem analizy biznesowej (BI) w magazynie. Jest bardzo ważne, aby określić, na ile dokładnie liczysz (inwentaryzujesz) towary. Jednak ważne jest także określenie, na ile dokładnie przechowujesz towary w prawidłowych lokalizacjach, oraz wyróżnianie danych o rozbieżnościach, dzięki czemu można znaleźć lepsze miejsca dla towarów lub inicjować całkowitą inwentaryzację określonych towarów. (Obecnie nowa funkcja inwentaryzacji opartej na towarach jest dostępna jako poprawka). Jeśli używasz tego pakietu zawartości usługi Power BI do weryfikowania poprawności danych o dostępnych zapasach w poszczególnych lokalizacjach, możesz także identyfikować kradzieże w sklepach swojej sieci. Można też określić, czy w którejkolwiek lokalizacji istnieją ilości dostępnych zapasów, które różnią się od danych w systemie planowania zasobów przedsiębiorstwa (ERP). Być może te lokalizacje są zbyt duże albo nie da się w nich przeprowadzić inwentaryzacji. Ewentualnie niektóre fizyczne umiejscowienia mogą być błędne, wskutek czego trudno jest synchronizować określone rodzaje towarów z danymi o dostępności.
 
 ## <a name="accessing-the-power-bi-content-pack"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017 r.), pakiet zawartości usługi Power BI **Wydajność magazynu** jest wyświetlany na stronie **Wydajność magazynu** (**Zarządzanie magazynem** > **Zapytania i raporty** > **Analizy wydajności magazynu** > **Wydajność magazynu**). 
+Zawartość usługi Power BI **Wydajność magazynu** jest wyświetlana na stronie **Wydajność magazynu** (**Zarządzanie magazynem** > **Zapytania i raporty** > **Analiza wydajności magazynu** > **Wydajność magazynu**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
 Pakiet zawartości **Wydajność magazynu** dla usługi Power BI obejmuje raport. Raport zawiera zestaw wskaźników, które są wizualizowane jako wykresy, kafelki i tabele. Poniższa tabela zawiera omówienie wizualizacji dostępnych w pakiecie zawartości usługi Power BI **Wydajność magazynu**.

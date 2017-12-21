@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ef58898a6822224e44873afdd7c55800215c37a0
+ms.sourcegitcommit: ff0d19a2d712ccb17762803e2fe4ab2ed5aa024e
+ms.openlocfilehash: bd5f055ef816f050ed99390c455a613d46dd6323
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/06/2017
 
 ---
 
@@ -74,7 +74,7 @@ W **zasadzie przeładunku kompletacyjnego** określasz, które typy dokumentów 
 ### <a name="cross-docking-policy-name-transfer-order"></a>Nazwa zasady przeładunku kompletacyjnego: Zamówienie przeniesienia
 
 -   Numer kolejny: 10
--   Typ zlecenia pracy: Wydanie przeniesienia
+ -   Typ zlecenia pracy: Wydanie przeniesienia
 -   Zapotrzebowanie na przeładunek kompletacyjny wymaga lokalizacji: Fałsz
 -   Strategia przeładunku kompletacyjnego: Data i godzina
 
@@ -102,10 +102,9 @@ Po zgłoszeniu produktu jako gotowego na linii produkcyjnej jest on przenoszony 
 6.  Tworzenie zamówienia przeniesienia. Utwórz zamówienie przeniesienia towaru o numerze L0101. Ilość = 20.
 7.  Zwalnianie zamówienia przeniesienia z pulpitu planowania wysyłki ładunku. Na karcie **Wysyłka** wybierz element menu dotyczący pulpitu planowania wysyłki ładunku, a następnie w menu **Zwolnienie** dla wiersza ładunku wybierz opcję **Zwolnij do magazynu**. Teraz dla zamówienia przeniesienia pojawi się wiersz otwartej grupy czynności typu **Wydanie przeniesienia**.
 8.  Utwórz zlecenie produkcyjne. Przejdź do strony listy **Zlecenie produkcyjne** i utwórz zlecenie produkcyjne dla produktu L0101. Ilość = 20. Oszacuj i uruchom zlecenie produkcyjne. Należy zauważyć, że pole **Księgowanie listy pobrania** pozostaje ustawione na **Nie**.
-9.  Zgłaszanie jako gotowych z urządzenia komórkowego. Przejdź do portalu urządzeń przenośnych i wybierz pozycję menu **Zgłoszenie i odłożenie wyrobów gotowych**. Teraz z urządzenia przenośnego zgłoś produkt L0101 jako gotowy. Zauważ, że lokalizacją odłożenia jest **BAYDOOR**. Ta lokalizacja jest pobierana z dyrektywy lokalizacji **Wydanie przeniesienia** dla typu zlecenia pracy **Odłożenie**. Zwróć również uwagę, że praca typu **Wydanie przeniesienia** została utworzona i wykonana. Przejdź do szczegółów pracy zamówienia przeniesienia i zweryfikuj pracę.
-10. Teraz spróbuj uruchomić produkcję kolejnych 20 sztuk w zleceniu produkcyjnym, a następnie zgłosić 20 sztuk jako wyroby gotowe z urządzenia przenośnego. Tym razem jako lokalizacja odłożenia będzie sugerowana lokalizacja **LP-001**. Ta lokalizacja jest pobierana z dyrektywy lokalizacji dla typu zlecenia **Odłożenie wyrobów gotowych**. Jest używana ta dyrektywa lokalizacji, ponieważ nie istnieje żadna możliwość przeładunku kompletacyjnego. Zamówienie przeniesienia dla lokalizacji LP-001 zostało całkowicie wypełnione przez pierwsze działanie przeładunku kompletacyjnego.
-
-Praca typu **Odłożenie wyrobów gotowych** została utworzona i przetworzona.
+9.  Zgłaszanie jako gotowych z urządzenia komórkowego. Przejdź do portalu urządzeń przenośnych i wybierz pozycję menu **Zgłoszenie i odłożenie wyrobów gotowych**. Teraz z urządzenia przenośnego zgłoś produkt L0101 jako gotowy. Ilość = 10. Zauważ, że lokalizacją odłożenia jest **BAYDOOR**. Ta lokalizacja jest pobierana z dyrektywy lokalizacji **Wydanie przeniesienia** dla typu zlecenia pracy **Odłożenie**. Zwróć również uwagę, że praca typu **Wydanie przeniesienia** została utworzona i wykonana. Przejdź do szczegółów pracy zamówienia przeniesienia i zweryfikuj pracę.
+10. Teraz utwórz raporty dla dodatkowych 10 sztuk za pomocą urządzenia przenośnego. Zauważ, że lokalizacją odłożenia ponownie jest **BAYDOOR**. Zwróć również uwagę, że nowa praca typu **Wydanie przeniesienia** została utworzona dla 10 sztuk.
+11. Teraz spróbuj uruchomić produkcję kolejnych 20 sztuk w zleceniu produkcyjnym, a następnie zgłosić 20 sztuk jako wyroby gotowe z urządzenia przenośnego. Tym razem jako lokalizacja odłożenia będzie sugerowana lokalizacja **LP-001**. Ta lokalizacja jest pobierana z dyrektywy lokalizacji dla typu zlecenia **Odłożenie wyrobów gotowych**. Jest używana ta dyrektywa lokalizacji, ponieważ nie istnieje żadna możliwość przeładunku kompletacyjnego. Zamówienie przeniesienia dla lokalizacji LP-001 zostało całkowicie wypełnione przez dwa działania przeładunku kompletacyjnego w krokach 9 i 10. Zwróć uwagę, że praca typu **Odłożenie wyrobów gotowych** została utworzona i przetworzona.
 
 #### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>Scenariusz 2 — Przeładunek kompletacyjny z produkcji do zamówień przeniesienia z harmonogramem terminów
 
@@ -123,7 +122,7 @@ Po zgłoszeniu produktu jako gotowego na linii produkcyjnej jest on przenoszony 
 
 ### <a name="additional-information"></a>Informacje dodatkowe
 
--   Scenariusz przeładunku kompletacyjnego jest obsługiwany dla towarów wchodzących w skład partii i serii, gdzie wymiary partii i numeru seryjnego są zdefiniowane powyżej i poniżej lokalizacji w hierarchii rezerwacji.
+-   Scenariusz przeładunku kompletacyjnego jest obsługiwany dla towarów wchodzących w skład partii i serii, gdzie wymiary partii i numeru seryjnego są zdefiniowane powyżej i poniżej lokalizacji w hierarchii rezerwacji. 
 
 
 
