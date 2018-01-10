@@ -3,7 +3,7 @@ title: "Zarządzanie projektami i ich księgowanie"
 description: "Funkcji zarządzanie projektami i ich księgowania można używać w wielu branżach w celu świadczenia usług, wytwarzania produktów lub uzyskiwania rezultatów."
 author: KimANelson
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
