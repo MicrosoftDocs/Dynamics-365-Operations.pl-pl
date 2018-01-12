@@ -3,7 +3,7 @@ title: Tworzenie faktury dla odbiorcy
 description: "**Faktura dla odbiorcy do zamówienia sprzedaży** jest wekslem związanym ze sprzedażą i który organizacja wystawia odbiorcy."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
