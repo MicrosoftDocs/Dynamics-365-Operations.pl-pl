@@ -3,7 +3,7 @@ title: "Wydatki międzyfirmowe"
 description: "Pracownik zatrudniony przez jedną firmę w organizacji może wykonywać pracę dla innej firmy w tej samej organizacji. W takiej sytuacji można użyć funkcji wydatków międzyfirmowych w celu przypisania wydatków pracownika do firmy, dla której wykonano pracę."
 author: saraschi2
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

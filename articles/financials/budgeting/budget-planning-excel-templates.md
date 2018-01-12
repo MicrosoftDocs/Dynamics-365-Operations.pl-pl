@@ -3,7 +3,7 @@ title: "Szablony planowania budżetu dla programu Excel"
 description: "W tym temacie opisano sposób tworzenia szablonów programu Microsoft Excel, które mogą być używane w planach budżetu."
 author: ryansandness
 manager: AnnBe
-ms.date: 07/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
