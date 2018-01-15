@@ -1,7 +1,7 @@
 ---
 title: "Planowanie ładunków przy użyciu konsolidacji w centrum"
 description: "W tym artykule opisano funkcjonalność konsolidowania wysyłek w centrum, gdy towary są dostarczane z różnych magazynów do tego samego odbiorcy albo od wielu dostawców do tego samego magazynu."
-author: YuyuScheller
+author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSLoadPlanningWorkbench
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: bis
 ms.search.scope: Core, Operations
 ms.custom: 92273
 ms.assetid: d27b0926-a534-4caf-a2a3-acbc7c440bca
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yuyus
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 475fa9b73deeddd0f9118b0062e834a053fcb919
+ms.sourcegitcommit: 577204b49355a470769237eb46ad74e7f319a55e
+ms.openlocfilehash: 3920bf73c51e8310c8b44bd42a4b185f6dc8ed3e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/15/2018
 
 ---
 
