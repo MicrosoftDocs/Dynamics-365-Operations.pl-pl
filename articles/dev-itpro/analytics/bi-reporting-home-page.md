@@ -3,7 +3,7 @@ title: Analizy
 description: "Ten temat odsyła do materiałów zawierających informacje na temat narzędzi BI i raportowania dostępnych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
 author: sericks007
 manager: AnnBe
-ms.date: 09/07/2017
+ms.date: 12/18/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 335d38e0fb5e47136b87bac5bfa9d2fd2923def6
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: 2477062ad324f91ff07f1c79cfccd4389b37badf
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -47,9 +47,8 @@ Użytkownicy mogą obsługiwać dane myszką lub dotykając elementów na stroni
 
  - [Osadzona usługa Power BI w obszarach roboczych](embed-power-bi-workspaces.md)
  - [Integracja usługi Power BI Embedded](power-bi-embedded-integration.md)
- - [Dodawanie analizy do obszarów roboczych za pomocą usługi Power BI Embedded](add-analytics-tab-workspaces.md)
- - [Publikowanie aplikacji analitycznych w usłudze Power BI](publish-apps-powerbi.md)
- - [Pomoc w zabezpieczeniu analitycznych obszarów roboczych i raportów za pomocą usługi Power BI Embedded](secure-analytical-workspaces.md)
+ - [Dodawanie funkcji analizy do obszarów roboczych za pomocą usługi Power BI Embedded](add-analytics-tab-workspaces.md)
+ - [Pomoc w zabezpieczeniu analitycznych obszarów roboczych i raportów przy użyciu usługi Power BI Embedded](secure-analytical-workspaces.md)
  - [Materiały na temat Power BI dla rozwiązania Finance and Operations](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Dokumenty biznesowe i drukowanie
@@ -59,7 +58,7 @@ Rozwiązań raportowania są często używane do zapisywania i przekazywania inf
 
 Aby uzyskać więcej informacji, zobacz następujące tematy:
 
-- [Omówienie usług raportowania dokumentów](document-reporting-services.md)
+- [Omówienie usług Document Reporting Services](document-reporting-services.md)
 - [Drukowanie w aplikacjach rozwiązania Finance and Operations](print-documents.md)
 - [Instalowanie agenta rozsyłania dokumentów w celu obsługi drukarek sieciowych](install-document-routing-agent.md)
 
@@ -88,10 +87,7 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 ## <a name="technical-reference-reports"></a>Raporty dotyczące odwołań technicznych
 Następujące raporty zawierają informacje na temat obiektów w rozwiązaniu Finance and Operations:
 
-- [Raport zagregowanych jednostek danych](aggregate-data-entities-report.md)
-- [Raport miar agregacji](aggregate-measurements-report.md)
 - [Raport jednostek danych](../data-entities/data-entities-report.md)
-- [Raport kluczowych wskaźników wydajności (KPI)](key-performance-indicators-report.md)
 - [Raport kodów licencji i kluczy konfiguracji](../sysadmin/license-codes-configuration-keys-report.md)
 - [Raport usług SQL Server Reporting Services](SSRS-report.md)
 - [Raport typów przepływów pracy](../../fin-and-ops/organization-administration/workflow-types-report.md)
