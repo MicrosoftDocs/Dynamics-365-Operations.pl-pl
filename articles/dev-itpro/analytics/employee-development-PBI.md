@@ -1,9 +1,9 @@
 ---
 title: "Pakiet zawartości usługi Power BI Rozwój pracownika etatowego"
-description: "W tym temacie opisano pakiet zawartość Rozwój pracownika etatowego dostępny dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
+description: "W tym temacie opisano pakiet zawartość Rozwój pracownika etatowego dostępny dla usługi Power BI."
 author: jcart1106
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: f8ba7a968a1a5b376bac52106671607247f061d9
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 99ae772f3a7fe9ad274a46398a577ad96f18e251
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -27,11 +27,7 @@ ms.lasthandoff: 12/01/2017
 
 [!include[banner](../includes/banner.md)]
 
-W tym temacie opisano pakiet zawartość **Rozwój pracownika etatowego** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
-
-## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-
-Pakiet zawartości **Rozwój pracownika etatowego** znajduje się w bibliotece aktywów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego łączeniu z firmowymi danymi, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md).
+W tym temacie opisano pakiet zawartość **Rozwój pracownika etatowego** dostępny dla usługi Microsoft Power BI.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
 Raporty dostępne w pakiecie zawartości usługi Power BI **Rozwój pracownika etatowego** mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
@@ -74,5 +70,4 @@ Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu 
 | Wydajność              | Ocena, opis i model oceniania                                                                      | Bieżący pracownik, Bieżące stanowisko, Trend pracowników, Umiejętności preferowane w zadaniu, Przeszłe przypisania stanowisk, Trend stanowisk, Pracownik z rozwiązanym stosunkiem pracy |
 |  Kwalifikacje                   | Umiejętności, typ umiejętności i klasyfikacja                                                                              | Analiza kwalifikacji pracowników, Umiejętności preferowane w zadaniu |                                                                                                                        
 
-Te jednostki zostały użyte do utworzenia obliczanych miar w modelu danych. Następnie obliczane miary są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości usługi Power BI. Jeśli chcesz umieścić dodatkowe obliczenia w raportach i na pulpicie nawigacyjnym, możesz z usługi LCS pobrać plik .pbix i go zmodyfikować. Ten plik jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości usługi Power BI. Po wprowadzeniu wszystkich modyfikacji można utworzyć organizacyjny pakiet zawartości i pulpit nawigacyjny, który zawiera dodane informacje.
 

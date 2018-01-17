@@ -19,10 +19,10 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a527136f77b65ef5a43576291e38cb168dbbd322
+ms.sourcegitcommit: e66208ccceb4c248c2704bb7358d77447e032205
+ms.openlocfilehash: 43360ea18ccc0fc4622f6da70ff10f2aca8b56c8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -98,10 +98,10 @@ Aby wznowić sesję rejestrowania po wstrzymaniu jej, kliknij przycisk **Kontynu
 
 ### <a name="capture-screenshots"></a>Przechwyć zrzuty ekranu
 
-Rejestrator zadań może przechwycić zrzuty ekranu interfejsu użytkownika Retail Modern POS podczas nagrywania procesu biznesowego. Rejestrator zadań wykorzystuje zrzuty ekranu w przypadku pobierania nagrania jako dokumentu programu Word. Aby włączyć funkcję przechwytywania zrzutów ekranu, należy dla opcji **Przechwyć zrzuty ekranu** wybrać ustawienie **Tak**. 
+Rejestrator zadań może przechwycić zrzuty ekranu interfejsu użytkownika Retail Modern POS podczas nagrywania procesu biznesowego. Aby włączyć funkcję przechwytywania zrzutów ekranu, należy dla opcji **Przechwyć zrzuty ekranu** wybrać ustawienie **Tak**, a następnie wykonać nagranie. Po zakończeniu nagrywania kliknij przycisk **Zatrzymaj** i pobierz dokument programu Word. Dokument będzie zawierał czynności w odpowiednimi zrzutami ekranu.
 
 #### <a name="note"></a>Uwaga
-> Funkcja przechwytywania zrzutów ekranu nie jest obsługiwana w programie Cloud POS.
+> Funkcja przechwytywania zrzutów ekranu nie jest obsługiwana w programie Modern POS.
 
 ### <a name="start-task-and-end-task"></a>Rozpoczęcie i zakończenie zadania
 

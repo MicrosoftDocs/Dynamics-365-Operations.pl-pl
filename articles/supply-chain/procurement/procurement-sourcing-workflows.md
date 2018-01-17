@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3bf244786e308ebcaee27a16fae378f41086f963
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ce9bc42751cf0f537a0ddb5069aca7c9779a6bb1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -44,10 +44,11 @@ Następujące typy przepływu pracy są dostępne w module Zaopatrzenie i sourci
 |                                  |                                                               |
 |----------------------------------|---------------------------------------------------------------|
 | **Typ**                         | **Ten typ służy do następujących zadań**                                          |
-| Przegląd zapotrzebowań na zakup      | Tworzenie przepływów pracy przeglądu zatwierdzania zapotrzebowań zakupu.            |
-| Przegląd wiersza zapotrzebowania na zakup | Tworzenie przepływów pracy przeglądu wierszy zapotrzebowania zakupu.       |
+| Przegląd zapotrzebowań na zakup      | Tworzenie przepływów pracy przeglądania i zatwierdzania zapotrzebowań zakupu.            |
+| Przegląd wiersza zapotrzebowania na zakup | Tworzenie przepływów pracy przeglądania i zatwierdzania wierszy zapotrzebowań zakupu.       |
 | Przepływ pracy zamówienia zakupu          | Tworzenie przepływów pracy przeglądania i zatwierdzania dla zamówień zakupu.     |
 | Przepływ pracy wiersza zamówienia zakupu     | Tworzenie przepływów pracy przeglądania i zatwierdzania dla wierszy zamówień zakupu. |
+| Przepływ pracy zgłaszania dodania dostawcy  | Służy do tworzenia przepływów pracy przeglądania i zatwierdzania w celu dodawania nowych dostawców za pomocą wniosków o nowych dostawców. |
 
 ## <a name="creating-a-workflow"></a>Tworzenie przepływu pracy
 Aby utworzyć przepływ pracy, kliknij kolejno opcje Zaopatrzenie i sourcing &gt; Ustawienia &gt; Przepływy pracy dla zaopatrzenia i sourcingu i utwórz nowy przepływ pracy poprzez wybranie typu przepływu pracy, który chcesz utworzyć.  
@@ -75,6 +76,6 @@ Można przypisać krok zatwierdzania do następujących grup uczestników.
 
 [Przepływ pracy zapotrzebowania na zakup](purchase-requisitions-workflow.md)
 
-
+[Wdrażanie dostawców](vendor-onboarding.md)
 
 

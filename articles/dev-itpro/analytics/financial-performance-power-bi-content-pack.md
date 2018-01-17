@@ -1,9 +1,9 @@
 ---
 title: "Pakiet zawartości usługi Power BI Wyniki finansowe"
-description: "W tym temacie opisano pakiet zawartość Wyniki finansowe dostępny dla usługi Power BI. Omówiono dostępny pulpit nawigacyjny i raporty oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
+description: "W tym temacie opisano pakiet zawartość Wyniki finansowe dostępny dla usługi Power BI."
 author: kweekley
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 83ea868e7612f30afa1b99f374878f4ba415113f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -30,21 +30,6 @@ ms.lasthandoff: 12/01/2017
 [!include[banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartość **Wyniki finansowe** dostępny dla usługi Microsoft Power BI. Omówiono dostępny pulpit nawigacyjny i raporty oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
-
-## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-
-Dostęp do pakietu zawartości usługi Power BI **Wyniki finansowe** można uzyskać z usługi Microsoft Dynamics Lifecycle Services (LCS) i z witryny PowerBI.com.
-
-### <a name="available-from-lcs"></a>Dostępny z usługi LCS
-Pakiet zawartości usługi Power BI **Wyniki finansowe** dostępny w usłudze LCS obsługuje poniższe wersje:
-
-- Wersje oprogramowania Microsoft Dynamics 365 for Finance and Operations Enterprise Edition
-- Microsoft Dynamics 365 for Operations w wersji 1611 
-
-Ten pakiet zawartości usługi Power BI znajduje się w bibliotece zasobów wspólnych w usłudze LCS. Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).
-
-### <a name="available-from-powerbicom"></a>Dostępny z witryny z PowerBI.com
-Pakiet zawartości usługi Power BI **Wyniki finansowe** dostępny w witrynie PowerBI.com współpracuje z oprogramowaniem Microsoft Dynamics AX w wersjach 7.0 i 7.0.1. Aby uzyskać więcej informacji o tworzeniu połączenia z danymi programu Dynamics AX i ich ładowaniu, zobacz [Dostęp do pakietu zawartości usługi Power BI z witryny Microsoft Dynamics 365 for Operations](power-bi-home-page.md).
 
 ## <a name="main-account-setup"></a>Konfiguracja konta głównego
 Ponieważ organizacje chcą, aby kwoty zobowiązań i przychodów były wyświetlane jako kwoty dodatnie w raportach, ważne jest odpowiednie skonfigurowanie kont głównych. Aby kwoty na tych kontach głównych były wyświetlane jako dodatnie, typ konta głównego musi być ustawiony jako **Pasywa** lub **Przychód**. Gdy są używane te typy kont, sprawozdawczość za pośrednictwem usługi Power BI będzie powodowała odwracanie znaków i wyświetlanie kwot jako dodatnich.
@@ -101,5 +86,5 @@ Następujące jednostki zostały użyte jako podstawa w pakiecie zawartości us�
 - Księgi
 - ChartofAccounts
 
-Te jednostki zostały użyte do utworzenia obliczanych miar w modelu danych. Obliczane miary są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości. Domyślnie pakiet zawartości grupuje dane z trzech ostatnich lat i jednego roku przyszłego. Aby uwzględnić dodatkowe obliczenia w raportach i pulpicie nawigacyjnym, można zmodyfikować [skoroszyt programu Microsoft Excel](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Ten skoroszyt jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości. Po wprowadzeniu wszystkich modyfikacji można utworzyć organizacyjny pakiet zawartości i pulpit nawigacyjny, który zawiera dodane informacje.
+Te jednostki zostały użyte do utworzenia obliczanych miar w modelu danych. Obliczane miary są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości. Domyślnie pakiet zawartości grupuje dane z trzech ostatnich lat i jednego roku przyszłego. Aby uwzględnić dodatkowe obliczenia w raportach i pulpicie nawigacyjnym, można zmodyfikować [skoroszyt programu Microsoft Excel](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Ten skoroszyt jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości. 
 

@@ -1,9 +1,9 @@
 ---
 title: "Pakiet zawartości usługi Power BI Szkolenia"
-description: "W tym temacie opisano pakiet zawartość Szkolenia dostępny dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
+description: "W tym temacie opisano pakiet zawartość Szkolenia dostępny dla usługi Power BI."
 author: jcart1106
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: bb4a2d6d725f79fe3f095a37b8a37d47339a7966
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: e5a78812aabaa5c835fe23787a9cbb57d1a7770e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -27,11 +27,7 @@ ms.lasthandoff: 12/01/2017
 
 [!include[banner](../includes/banner.md)]
 
-W tym temacie opisano pakiet zawartość **Szkolenia** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do pakietu zawartości, oraz opisano model danych i jednostki użyte do zbudowania pakietu.
-
-## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-
-Pakiet zawartości Power BI **Szkolenia** można znaleźć w bibliotece aktywów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).
+W tym temacie opisano pakiet zawartość **Szkolenia** dostępny dla usługi Microsoft Power BI.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
 
@@ -69,5 +65,5 @@ Następujące dane są używane do wypełniania raportów w pakiecie zawartości
 | Nazwisko pracownika etatowego    | Imię, drugie imię i nazwisko                             | Uczestnicy kursu |
 | Tytuł pracownika   | Tytuł i data ustalenia stażu pracy                                         | Uczestnicy kursu |
 
-Te jednostki zostały użyte do utworzenia obliczanych miar w modelu danych. Następnie obliczone mierniki są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości. Jeśli chcesz umieścić dodatkowe obliczenia w raportach i na pulpicie nawigacyjnym, możesz z usługi LCS pobrać plik .pbix i go zmodyfikować. Ten plik jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości. Po wprowadzeniu wszystkich modyfikacji można utworzyć organizacyjny pakiet zawartości i pulpit nawigacyjny, który zawiera dodane informacje.
+
 

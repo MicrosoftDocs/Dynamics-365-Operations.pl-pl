@@ -3,7 +3,7 @@ title: "Skróty klawiaturowe"
 description: "Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: jasongre
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamic
 
 **Uwaga:** skróty klawiaturowe opisane w tym miejscu odnoszą się do amerykańskiego układu klawiatury. Klawisze w innych układach mogą nie odpowiadać dokładnie klawiszom na klawiaturze w układzie amerykańskim.
 
-## <a name="finding-a-shorcut"></a>Znajdowanie skrótu
+## <a name="finding-a-shortcut"></a>Znajdowanie skrótu
 Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z aktualnie dostępnymi skrótami bezpośrednio z poziomu interfejsu użytkownika. Wystarczy kliknąć kontrolkę prawym przyciskiem myszy i wybrać opcję **Wyświetl skróty**. Zostanie otwarte okno dialogowe zawierające skróty jakich można użyć. Są one zależne od strony, na której znajduje się użytkownik. 
 
 
@@ -143,6 +143,9 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Przejdź do pierwszego rekordu                                                                                               | CTRL+Home                       |
 | Przejdź do ostatniego rekordu                                                                                                | CTRL+End                        |
 | Wykonaj akcję domyślną w tabeli<br><br>**Uwaga:** Ten skrót jest włączony, gdy fokus znajduje się w komórce zawierającej hiperłącze, a wszystkie komórki w tej kolumnie zawierają hiperłącza.                 | Enter                           |
+| Przełączanie fokusa między wybranym wierszem a wierszem nagłówka                                                               | Alt+Shift+H                     |
+| Powiększenie/pomniejszenie bieżącej kolumny (z fokusem w wierszu nagłówka)                                                  | Strzałka w prawo / Strzałka w lewo        |
+| Otwarcie filtrowania siatki dla bieżącej kolumny (z fokusem w wierszu nagłówka)                                              | Enter                           |
 
 ## <a name="input-control-shortcuts"></a>Skróty wpisywania danych
 |                                                                              |                               |
