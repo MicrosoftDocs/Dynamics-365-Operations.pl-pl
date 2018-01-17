@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -23,14 +23,14 @@ ms.contentlocale: pl-pl
 ms.lasthandoff: 09/29/2017
 
 ---
-# Korygowanie poziomów zapasów w magazynie (podstawowe magazynowanie)
+# <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a>Korygowanie poziomów zapasów w magazynie (podstawowe magazynowanie)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura prowadzi przez proces tworzenia i księgowania arkusza korekt zapasów w celu skorygowania poziomów zapasów produktów w magazynie. Przed rozpoczęciem tego zadania trzeba mieć skonfigurowany arkusz zapasów dla korekt zapasów. Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Te zadania zazwyczaj wykonuje pracownik magazynu.
 
 
-## Tworzenie arkusza korekt zapasów
+## <a name="create-an-inventory-adjustment-journal"></a>Tworzenie arkusza korekt zapasów
 1. Kliknij kolejno opcje Zarządzanie zapasami > Wpisy w arkuszu > Pozycje > Korekta zapasów.
 2. Kliknij przycisk Nowy.
 3. W polu Nazwa kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
@@ -38,7 +38,7 @@ Ta procedura prowadzi przez proces tworzenia i księgowania arkusza korekt zapas
     * Niektóre inne pola zostaną wypełnione zgodnie z ustawieniami wybranego arkusza korekty zapasów.  
 5. Kliknij przycisk OK.
 
-## Tworzenie wierszy arkusza
+## <a name="create-journal-lines"></a>Tworzenie wierszy arkusza
 1. Kliknij przycisk Nowy.
 2. Na liście zaznacz pole numeru towaru.
 3. W polu Numer towaru zaznacz towar. Jeśli używasz danych firmy demonstracyjnej USMF, wpisz „D0001”.
@@ -50,7 +50,7 @@ Ta procedura prowadzi przez proces tworzenia i księgowania arkusza korekt zapas
 8. Wprowadź liczbę w polu Ilość.
     * Pole kosztu własnego określa koszt jednostkowy dla przyjęć na magazyn. Jeśli koszt nie został określony dla danego numeru towaru lub musi zostać ręcznie zmodyfikowany, należy to zrobić w tym miejscu.  
 
-## Sprawdzanie poprawności i księgowanie arkusza korekt zapasów
+## <a name="validate-and-post-the-inventory-adjustment-journal"></a>Sprawdzanie poprawności i księgowanie arkusza korekt zapasów
 1. Kliknij przycisk Sprawdź poprawność.
 2. Kliknij przycisk OK.
 3. Kliknij przycisk Księguj.
