@@ -1,0 +1,100 @@
+---
+title: "Konfigurowanie magazynu przy użyciu szablonu konfiguracji magazynu"
+description: "W tym temacie wyjaśniono sposób konfigurowania magazynu przy użyciu szablonu konfiguracji magazynu."
+author: perlynne
+manager: AnnBe
+ms.date: 11/16/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
+audience: Application User
+ms.reviewer: YuyuScheller
+ms.search.scope: Core, Operations
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+ms.search.industry: Distribution
+ms.author: perlynne
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: AX 7.3
+ms.translationtype: HT
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 87ade03ec2ba78c4d7f5832bfa6dc1b7eabd8d94
+ms.contentlocale: pl-pl
+ms.lasthandoff: 12/14/2017
+
+---
+
+# <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a><span data-ttu-id="b6064-103">Konfigurowanie magazynu przy użyciu szablonu konfiguracji magazynu</span><span class="sxs-lookup"><span data-stu-id="b6064-103">Set up a warehouse by using a warehouse configuration template</span></span>
+
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="b6064-104">W tym temacie wyjaśniono sposób konfigurowania magazynu przy użyciu szablonu konfiguracji magazynu.</span><span class="sxs-lookup"><span data-stu-id="b6064-104">This topic explains how to set up a warehouse by using a warehouse configuration template.</span></span> <span data-ttu-id="b6064-105">Dostępnych jest kilka wstępnie zdefiniowanych szablonów konfiguracji, których można użyć.</span><span class="sxs-lookup"><span data-stu-id="b6064-105">There are several predefined configuration templates that you can use.</span></span> <span data-ttu-id="b6064-106">Aby uzyskać informacje na temat korzystania z tych szablonów, zobacz [Szablony danych konfiguracji](../../dev-itpro/data-entities/configuration-data-templates.md).</span><span class="sxs-lookup"><span data-stu-id="b6064-106">For information about how to use these templates, see [Configuration data templates](../../dev-itpro/data-entities/configuration-data-templates.md).</span></span>
+
+## <a name="scenarios-where-configuration-templates-can-be-helpful"></a><span data-ttu-id="b6064-107">Scenariusze, w których przydatne są szablony konfiguracji</span><span class="sxs-lookup"><span data-stu-id="b6064-107">Scenarios where configuration templates can be helpful</span></span>
+
+<span data-ttu-id="b6064-108">Szablony konfiguracji przydają się w wielu scenariuszach.</span><span class="sxs-lookup"><span data-stu-id="b6064-108">Configuration templates can be helpful in many scenarios.</span></span> <span data-ttu-id="b6064-109">Oto kilka przykładów:</span><span class="sxs-lookup"><span data-stu-id="b6064-109">Here are some examples:</span></span>
+
+- <span data-ttu-id="b6064-110">Ukończono i przetestowano ustawienia konfiguracji w środowisku testowym i chcesz teraz skopiować konfigurację w środowisku produkcyjnym.</span><span class="sxs-lookup"><span data-stu-id="b6064-110">You've completed and tested a configuration setup in a test environment, and you now want to copy the setup to a production environment.</span></span>
+- <span data-ttu-id="b6064-111">Chcesz wdrożyć konfigurację magazynu w kilku firmach lub utworzyć nowy magazyn w tej samej firmie.</span><span class="sxs-lookup"><span data-stu-id="b6064-111">You want to roll the warehouse setup out to several legal entities or create a new warehouse in the same legal entity.</span></span>
+- <span data-ttu-id="b6064-112">Chcesz szybko przygotować demonstrację funkcji magazynu.</span><span class="sxs-lookup"><span data-stu-id="b6064-112">You want to quickly prepare for a demo of the warehouse functionality.</span></span>
+- <span data-ttu-id="b6064-113">Chcesz, aby istniejące towary i magazyny używały funkcji w module Zarządzanie magazynem zamiast funkcji w module Zarządzanie zapasami.</span><span class="sxs-lookup"><span data-stu-id="b6064-113">You want existing items and warehouses to use the functionality in Warehouse management instead of the functionality in Inventory management.</span></span>
+
+<span data-ttu-id="b6064-114">Ten temat dotyczy pierwszego z tych scenariuszy.</span><span class="sxs-lookup"><span data-stu-id="b6064-114">This topic focuses on the first of these scenarios.</span></span> <span data-ttu-id="b6064-115">Pokazuje, jak można użyć szablonu konfiguracji do skopiowania ustawień konfiguracji ze środowiska testowego do środowiska produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="b6064-115">It shows how you can use a configuration template to copy a configuration setup from a test environment to a production environment.</span></span>
+
+## <a name="copy-a-configuration-setup-from-a-test-environment-to-a-production-environment"></a><span data-ttu-id="b6064-116">Kopiowanie ustawień konfiguracji ze środowiska testowego do środowiska produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="b6064-116">Copy a configuration setup from a test environment to a production environment</span></span>
+
+<span data-ttu-id="b6064-117">W tym scenariuszu ustawienia konfiguracji dla magazynu i niektórych procesów transakcji już istnieją w środowisku testowym.</span><span class="sxs-lookup"><span data-stu-id="b6064-117">For this scenario, the configuration setup for a warehouse and some transaction processes already exist in a test environment.</span></span> <span data-ttu-id="b6064-118">Chcesz skopiować ustawienia konfiguracji magazynu ze środowiska testowego do środowiska produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="b6064-118">You now want to copy the configuration setup for the warehouse from the test environment to a production environment.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="b6064-119">W przypadku kopiowania ustawień konfiguracji należy pamiętać o uwzględnieniu innych powiązanych danych konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="b6064-119">It's important that you include other related setup data when you copy a configuration setup.</span></span> <span data-ttu-id="b6064-120">Przykładowo, chcesz skonfigurować produkty, kopiując konfigurację ze środowiska testowego.</span><span class="sxs-lookup"><span data-stu-id="b6064-120">For example, you want to set up products by copying the setup from a test environment.</span></span> <span data-ttu-id="b6064-121">Jednakże nie możesz skonfigurować stałej lokalizacji pobrania dla produktu przed jego utworzeniem.</span><span class="sxs-lookup"><span data-stu-id="b6064-121">However, you can't set up a fixed picking location for a product before that product is created.</span></span> <span data-ttu-id="b6064-122">Mimo że poszczególne szczegóły konfiguracji nie obsługują tego typu zależności, istnieją domyślne szablony danych, które umożliwiają taką obsługę.</span><span class="sxs-lookup"><span data-stu-id="b6064-122">Although individual configuration templates don't support this type of dependency, there are default data templates that support it.</span></span> <span data-ttu-id="b6064-123">Można łatwo dodać te domyślne szablony danych do procesu konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="b6064-123">You can easily include these default data templates in a configuration process.</span></span>
+
+### <a name="export-a-default-warehouse-template"></a><span data-ttu-id="b6064-124">Eksportowanie domyślnego szablonu magazynu</span><span class="sxs-lookup"><span data-stu-id="b6064-124">Export a default warehouse template</span></span> 
+
+1. <span data-ttu-id="b6064-125">Otwórz obszar roboczy **Zarządzanie danymi**.</span><span class="sxs-lookup"><span data-stu-id="b6064-125">Open the **Data management** workspace.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="b6064-126">Jeżeli korzystasz z tego obszaru roboczego po raz pierwszy, przed kontynuacją musisz załadować wszystkie jednostki danych.</span><span class="sxs-lookup"><span data-stu-id="b6064-126">If you're using this workspace for the first time, you must load all the data entities before you continue.</span></span>
+
+2. <span data-ttu-id="b6064-127">Wybierz kafelek **Szablony**, a następnie wybierz opcję **Załaduj szablony domyślne**, aby załadować szablony domyślne.</span><span class="sxs-lookup"><span data-stu-id="b6064-127">Select the **Templates** tile, and then select **Load default templates** to load the default templates.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="b6064-128">Opcja **Załaduj szablony domyślne** jest dostępna tylko w widoku **Rozszerzony**.</span><span class="sxs-lookup"><span data-stu-id="b6064-128">**Load default templates** is available only in the **Enhanced** view.</span></span> <span data-ttu-id="b6064-129">Wybierz opcję **Parametry struktury**, a następnie w polu **Wyświetl ustawienia domyślne** wybierz opcję **Widok rozszerzony**.</span><span class="sxs-lookup"><span data-stu-id="b6064-129">Select **Framework parameters**, and then, in the **View defaults** field, select **Enhanced view**.</span></span>
+
+3. <span data-ttu-id="b6064-130">Po załadowaniu szablonów domyślnych można je zmienić tak, aby spełniały wymagania firmy.</span><span class="sxs-lookup"><span data-stu-id="b6064-130">After the default templates are loaded, you can change them so that they meet your business requirements.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="b6064-131">Aby załadować szablony domyślne i zaimportować je, wymagany jest dostęp na poziomie administratora systemu.</span><span class="sxs-lookup"><span data-stu-id="b6064-131">To load default templates and import templates, you must have system administrator access.</span></span> <span data-ttu-id="b6064-132">To wymagania pozwala zapewnić prawidłowe załadowanie wszystkich jednostek do szablonu.</span><span class="sxs-lookup"><span data-stu-id="b6064-132">This requirement helps guarantee that all entities are correctly loaded into the template.</span></span>
+
+4. <span data-ttu-id="b6064-133">Sprawdź, czy wybrano firmę, z której chcesz wyeksportować dane specyficzne dla firmy.</span><span class="sxs-lookup"><span data-stu-id="b6064-133">Make sure that you're in the legal entity that you want to export the company-specific data from.</span></span>
+5. <span data-ttu-id="b6064-134">W obszarze roboczym wybierz opcję **Eksportuj**.</span><span class="sxs-lookup"><span data-stu-id="b6064-134">In the workspace, select **Export**.</span></span>
+6. <span data-ttu-id="b6064-135">Utwórz nowy projekt eksportu.</span><span class="sxs-lookup"><span data-stu-id="b6064-135">Create a new export project.</span></span>
+7. <span data-ttu-id="b6064-136">Wybierz opcję **+ Dodaj szablon** i znajdź szablon domyślny magazynu**400 - WMS**.</span><span class="sxs-lookup"><span data-stu-id="b6064-136">Select **+ Add template**, and find the **400 - WMS** default warehouse template.</span></span> <span data-ttu-id="b6064-137">Ten szablon umożliwia dodanie jednostek danych dla konfiguracji magazynu.</span><span class="sxs-lookup"><span data-stu-id="b6064-137">This template adds data entities for warehouse configuration.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="b6064-138">Jeżeli eksportowane dane muszą zostać odfiltrowane (przykładowo, chcesz wyeksportować tylko dane związane z określonym magazynem), należy ocenić każdą jednostkę danych i dodać filtrowanie za pomocą kwerendy.</span><span class="sxs-lookup"><span data-stu-id="b6064-138">If the data that you're exporting must be filtered (for example, you want to export only the data that is related to a specific warehouse), you must evaluate each data entity and add filtering via a query.</span></span> <span data-ttu-id="b6064-139">Można też wyeksportować wszystkie dane, a następnie usunąć niepotrzebne rekordy w plikach docelowych.</span><span class="sxs-lookup"><span data-stu-id="b6064-139">Alternatively, you can export all data and then delete the records that aren't required in the destination files.</span></span>
+
+8. <span data-ttu-id="b6064-140">Wybierz opcję **Eksportuj**.</span><span class="sxs-lookup"><span data-stu-id="b6064-140">Select **Export**.</span></span> <span data-ttu-id="b6064-141">Zostaną wyeksportowane dane dotyczące wszystkich jednostek danych w projekcie.</span><span class="sxs-lookup"><span data-stu-id="b6064-141">Data that is related to all the data entities in the project is exported.</span></span>
+
+<span data-ttu-id="b6064-142">Można pobrać plik zip pakietu danych.</span><span class="sxs-lookup"><span data-stu-id="b6064-142">You can download a zip file for the data package.</span></span> <span data-ttu-id="b6064-143">Ten plik zawiera wszystkie dane w wybranym formacie (na przykład w formacie programu Excel).</span><span class="sxs-lookup"><span data-stu-id="b6064-143">This file contains all the data in the selected format (for example, Excel format).</span></span> <span data-ttu-id="b6064-144">Jak wspomniano wcześniej, niektóre rekordy w plikach pakietu danych mogą wymagać aktualizacji przed zaimportowaniem ich do środowiska produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="b6064-144">As has been mentioned, some records in the data package files might have to be updated before you can import them into the production environment.</span></span> <span data-ttu-id="b6064-145">Jeżeli aktualizujesz rekord, nie zmieniaj nazwy pliku.</span><span class="sxs-lookup"><span data-stu-id="b6064-145">If you update a record, make sure that you don't change the file name.</span></span>
+
+### <a name="import-a-warehouse-configuration-setup"></a><span data-ttu-id="b6064-146">Importowanie ustawień konfiguracji magazynu</span><span class="sxs-lookup"><span data-stu-id="b6064-146">Import a warehouse configuration setup</span></span>
+
+1. <span data-ttu-id="b6064-147">W środowisku docelowym upewnij się, że wybrano firmę, do której chcesz zaimportować dane magazynu.</span><span class="sxs-lookup"><span data-stu-id="b6064-147">In the destination environment, make sure that you're in the company that you want to import the warehouse data into.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="b6064-148">Przed rozpoczęciem importu należy zidentyfikować wszystkie zależności danych.</span><span class="sxs-lookup"><span data-stu-id="b6064-148">Before you do the import, you should identify any data dependencies.</span></span> <span data-ttu-id="b6064-149">Przykładowo, szablon **Zarządzanie magazynem** zawiera jednostkę danych o nazwie **Kody dyspozycji z magazynu**.</span><span class="sxs-lookup"><span data-stu-id="b6064-149">For example, the **Warehouse management** template includes a data entity that is named **Warehouse disposition codes**.</span></span> <span data-ttu-id="b6064-150">Ta jednostka zawiera dane dotyczące strony konfiguracji **Kody dyspozycji** (**Zarządzanie magazynem** > **Konfiguracja** > **Urządzenie przenośne** > **Kody dyspozycji**).</span><span class="sxs-lookup"><span data-stu-id="b6064-150">This entity contains data that is related to the **Disposition codes** setup page (**Warehouse management** > **Setup** > **Mobile device** > **Disposition codes**).</span></span> <span data-ttu-id="b6064-151">Jeżeli istniejąca konfiguracja obsługuje już proces zwrotu zamówień sprzedaży pole **Zwróć kod dyspozycji** zawiera wartość.</span><span class="sxs-lookup"><span data-stu-id="b6064-151">If an existing setup already handles the return process for sales orders, the **Return disposition code** field contains a value.</span></span> <span data-ttu-id="b6064-152">Kod dyspozycji w tym polu dotyczy jednostki danych **Kod dyspozycji**, która jest częścią szablonu **Sprzedaż i marketing**.</span><span class="sxs-lookup"><span data-stu-id="b6064-152">The disposition code in this field is related to the **Disposition code** data entity, which is part of the **Sales and marketing** template.</span></span> <span data-ttu-id="b6064-153">Jeżeli dane z jednostki danych **Kod dyspozycji** nie zostaną zaimportowane przed danymi z pola **Kody dyspozycji z magazynu**, import nie powiedzie się.</span><span class="sxs-lookup"><span data-stu-id="b6064-153">If the data from the **Disposition code** data entity isn't imported before the data from the **Warehouse disposition codes** field, the import will fail.</span></span>
+
+2. <span data-ttu-id="b6064-154">W obszarze roboczym **Zarządzanie danymi** wybierz opcję **Importuj**.</span><span class="sxs-lookup"><span data-stu-id="b6064-154">In the **Data management** workspace, select **Import**.</span></span>
+3. <span data-ttu-id="b6064-155">Utwórz nowy projekt importu.</span><span class="sxs-lookup"><span data-stu-id="b6064-155">Create a new import project.</span></span>
+4. <span data-ttu-id="b6064-156">Wybierz opcję **+ Dodaj plik** i przekaż plik zip pakietu danych.</span><span class="sxs-lookup"><span data-stu-id="b6064-156">Select **+ Add file**, and upload the zip file for the data package.</span></span>
+5. <span data-ttu-id="b6064-157">Wybierz opcję **Importuj**.</span><span class="sxs-lookup"><span data-stu-id="b6064-157">Select **Import**.</span></span> <span data-ttu-id="b6064-158">W widoku **Rozszerzony** można użyć opcji **Filtr**, aby szybko uzyskać przegląd problemów, które mogą wystąpić podczas importu.</span><span class="sxs-lookup"><span data-stu-id="b6064-158">In the **Enhanced** view, you can use the **Filter** option to quickly get an overview of issues that might occur during the import.</span></span>
+
+<span data-ttu-id="b6064-159">Opcja **Wyświetl dziennik wykonywania** umożliwia uzyskanie szczegółowych informacji o każdej importowanej jednostce danych.</span><span class="sxs-lookup"><span data-stu-id="b6064-159">The **View execution** log provides detailed information about each data entity that is imported.</span></span> <span data-ttu-id="b6064-160">Aby szybko pobrać dane docelowe, można użyć widoku danych pośrednich.</span><span class="sxs-lookup"><span data-stu-id="b6064-160">You can use the staging data view to quickly get to the target data.</span></span> <span data-ttu-id="b6064-161">Umożliwia to sprawdzenie wyglądu zaimportowanych danych na powiązanych stronach w aplikacji.</span><span class="sxs-lookup"><span data-stu-id="b6064-161">In this way, you can see what the imported data looks like on the related pages in the application.</span></span> <span data-ttu-id="b6064-162">Jeżeli używane są szablony danych domyślnych, sekwencja importu dla każdej jednostki danych działa we wstępnie zdefiniowany sposób, aby zapewnić, że najpierw zostaną zaimportowane wszystkie dane zależne.</span><span class="sxs-lookup"><span data-stu-id="b6064-162">When you use the default data templates, the import sequence for each data entity works in the predefined manner, to help guarantee that all dependent data is imported first.</span></span> <span data-ttu-id="b6064-163">Jeżeli częścią projektu są niestandardowe jednostki danych, należy zdefiniować prawidłową sekwencję.</span><span class="sxs-lookup"><span data-stu-id="b6064-163">If custom data entities are part of the project, you must make sure that the correct sequence is defined.</span></span> <span data-ttu-id="b6064-164">Aby uzyskać więcej informacji, zobacz temat [Szablony danych konfiguracji](../../dev-itpro/data-entities/configuration-data-templates.md).</span><span class="sxs-lookup"><span data-stu-id="b6064-164">For more information, see [Configuration data templates](../../dev-itpro/data-entities/configuration-data-templates.md).</span></span>
+
+## <a name="related-topic"></a><span data-ttu-id="b6064-165">Powiązany temat</span><span class="sxs-lookup"><span data-stu-id="b6064-165">Related topic</span></span>
+
+[<span data-ttu-id="b6064-166">Szablony danych konfiguracji</span><span class="sxs-lookup"><span data-stu-id="b6064-166">Configuration data templates</span></span>](../../dev-itpro/data-entities/configuration-data-templates.md)
+
