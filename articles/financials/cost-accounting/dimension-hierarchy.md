@@ -16,14 +16,14 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: YuyuScheller
+ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d183654ada9cdca23cf906f250988a967ffcf1f6
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: d55e9a520b1f895d130f24834626429e19b4b939
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -255,10 +255,10 @@ ms.lasthandoff: 11/03/2017
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|----------|
 | <span data-ttu-id="8fc71-340">Koszt stały</span><span class="sxs-lookup"><span data-stu-id="8fc71-340">Fixed cost</span></span>                            | <span data-ttu-id="8fc71-341">Organizacja</span><span class="sxs-lookup"><span data-stu-id="8fc71-341">Organization</span></span>                         | <span data-ttu-id="8fc71-342">100,00</span><span class="sxs-lookup"><span data-stu-id="8fc71-342">100.00</span></span>           | <span data-ttu-id="8fc71-343">0,00</span><span class="sxs-lookup"><span data-stu-id="8fc71-343">0.00</span></span>         | <span data-ttu-id="8fc71-344">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="8fc71-344">1/1/2017</span></span>   | <span data-ttu-id="8fc71-345">Nigdy</span><span class="sxs-lookup"><span data-stu-id="8fc71-345">Never</span></span>    |
 | <span data-ttu-id="8fc71-346">10001</span><span class="sxs-lookup"><span data-stu-id="8fc71-346">10001</span></span>                                 | <span data-ttu-id="8fc71-347">Organizacja</span><span class="sxs-lookup"><span data-stu-id="8fc71-347">Organization</span></span>                         | <span data-ttu-id="8fc71-348">0,00</span><span class="sxs-lookup"><span data-stu-id="8fc71-348">0.00</span></span>             | <span data-ttu-id="8fc71-349">150,00</span><span class="sxs-lookup"><span data-stu-id="8fc71-349">150.00</span></span>       | <span data-ttu-id="8fc71-350">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="8fc71-350">1/1/2017</span></span>   | <span data-ttu-id="8fc71-351">Nigdy</span><span class="sxs-lookup"><span data-stu-id="8fc71-351">Never</span></span>    |
-| <span data-ttu-id="8fc71-352">10001 (\*)</span><span class="sxs-lookup"><span data-stu-id="8fc71-352">10001 (\*)</span></span>                             | <span data-ttu-id="8fc71-353">Finanse</span><span class="sxs-lookup"><span data-stu-id="8fc71-353">Finance</span></span>                              |                  | <span data-ttu-id="8fc71-354">50,00</span><span class="sxs-lookup"><span data-stu-id="8fc71-354">50.00</span></span>        | <span data-ttu-id="8fc71-355">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="8fc71-355">1/1/2017</span></span>   | <span data-ttu-id="8fc71-356">Nigdy</span><span class="sxs-lookup"><span data-stu-id="8fc71-356">Never</span></span>    |
+| <span data-ttu-id="8fc71-352">10001 (\\*)</span><span class="sxs-lookup"><span data-stu-id="8fc71-352">10001 (\\*)</span></span>                             | <span data-ttu-id="8fc71-353">Finanse</span><span class="sxs-lookup"><span data-stu-id="8fc71-353">Finance</span></span>                              |                  | <span data-ttu-id="8fc71-354">50,00</span><span class="sxs-lookup"><span data-stu-id="8fc71-354">50.00</span></span>        | <span data-ttu-id="8fc71-355">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="8fc71-355">1/1/2017</span></span>   | <span data-ttu-id="8fc71-356">Nigdy</span><span class="sxs-lookup"><span data-stu-id="8fc71-356">Never</span></span>    |
 | <span data-ttu-id="8fc71-357">Zachowanie kosztów lub koszt zmienny (\*\*)</span><span class="sxs-lookup"><span data-stu-id="8fc71-357">Cost behavior or Variable cost (\*\*)</span></span>   | <span data-ttu-id="8fc71-358">Organizacja</span><span class="sxs-lookup"><span data-stu-id="8fc71-358">Organization</span></span>                         | <span data-ttu-id="8fc71-359">0,00</span><span class="sxs-lookup"><span data-stu-id="8fc71-359">0.00</span></span>             | <span data-ttu-id="8fc71-360">0,00</span><span class="sxs-lookup"><span data-stu-id="8fc71-360">0.00</span></span>         | <span data-ttu-id="8fc71-361">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="8fc71-361">1/1/2017</span></span>   | <span data-ttu-id="8fc71-362">Nigdy</span><span class="sxs-lookup"><span data-stu-id="8fc71-362">Never</span></span>    |
 
-<span data-ttu-id="8fc71-363">\* Węzeł kosztu zmiennego nie jest wymagany.</span><span class="sxs-lookup"><span data-stu-id="8fc71-363">\* The variable cost node isn't required.</span></span> <span data-ttu-id="8fc71-364">Jeśli koszt nie jest sklasyfikowany jako koszt stały, musi być kosztem zmiennym.</span><span class="sxs-lookup"><span data-stu-id="8fc71-364">If a cost isn't classified as a fixed cost, it must be a variable cost.</span></span>
+<span data-ttu-id="8fc71-363">\\* Węzeł kosztu zmiennego nie jest wymagany.</span><span class="sxs-lookup"><span data-stu-id="8fc71-363">\\* The variable cost node isn't required.</span></span> <span data-ttu-id="8fc71-364">Jeśli koszt nie jest sklasyfikowany jako koszt stały, musi być kosztem zmiennym.</span><span class="sxs-lookup"><span data-stu-id="8fc71-364">If a cost isn't classified as a fixed cost, it must be a variable cost.</span></span>
 
 <span data-ttu-id="8fc71-365">\*\* Jest tworzona szczegółowa reguła dla kombinacji elementu członkowskiego składnika kosztu 10001 i wszystkich elementów członkowskich obiektów kosztów, które są zagregowane na poziomie hierarchii Finanse (CC002, CC003, CC007).</span><span class="sxs-lookup"><span data-stu-id="8fc71-365">\*\* A detailed rule is created for the combination of cost element member 10001 and all cost object members that are aggregated under the Finance hierarchy level (CC002, CC003, CC007).</span></span>
 

@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ProjTable
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 83d325b6511cb17156d3ef40d08cf09258d3f285
-ms.openlocfilehash: bdf020ac90856778a18a0a8b83f5cad395165e77
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: 8495b08887bbdf5eff975c973d1be982c85ca459
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -345,8 +346,8 @@ ms.lasthandoff: 01/10/2018
 -   <span data-ttu-id="6da33-443">**Budżet pierwotny** — kwota, która została pierwotnie uwzględniona w budżecie dla wybranego wiersza kosztu.</span><span class="sxs-lookup"><span data-stu-id="6da33-443">**Original budget** – The amount that was originally budgeted for the selected cost line.</span></span> <span data-ttu-id="6da33-444">Kwota pierwotnego budżetu jest obliczana na stronie **podglądu księgi głównej**.</span><span class="sxs-lookup"><span data-stu-id="6da33-444">The original budget amount is calculated on the **General ledger preview** page.</span></span>
 -   <span data-ttu-id="6da33-445">**Łączny koszt**– suma kosztów rzeczywistych, ustalonych i pozostałych określonych na karcie **Ogólne**.</span><span class="sxs-lookup"><span data-stu-id="6da33-445">**Total cost** – The sum of the actual cost, committed cost, and remaining budget, as reported on the **General** tab.</span></span>
 -   <span data-ttu-id="6da33-446">**Odchylenie** — różnica między kosztem łącznym a pierwotną wysokością budżetu.</span><span class="sxs-lookup"><span data-stu-id="6da33-446">**Deviation** – The difference between the total cost and the original budget.</span></span>
--   <span data-ttu-id="6da33-447">**Odchylenie na podstawie ilości** — łączna różnica w kwocie między prognozą pierwotną i prognozą całkowitą.</span><span class="sxs-lookup"><span data-stu-id="6da33-447">**Variance based on quantity** – The total difference between the original forecast and the total forecast.</span></span> <span data-ttu-id="6da33-448">Ta różnica może być wyrażona matematycznie jako [(całkowita prognozowana ilość) * (pierwotna średnia cena - całkowita średnia cena)]</span><span class="sxs-lookup"><span data-stu-id="6da33-448">This difference can be expressed mathematically as (Total forecast quantity) × (Original average price – Total average price).</span></span> <span data-ttu-id="6da33-449">To obliczenie dotyczy tylko godzin w projekcie.</span><span class="sxs-lookup"><span data-stu-id="6da33-449">This calculation applies only to project hours.</span></span>
--   <span data-ttu-id="6da33-450">**Odchylenie na podstawie ceny** — łączna różnica w kwocie między prognozą pierwotną i prognozą całkowitą.</span><span class="sxs-lookup"><span data-stu-id="6da33-450">**Variance based on price** – The total difference between the original forecast and the total forecast.</span></span> <span data-ttu-id="6da33-451">Ta różnica może być wyrażona matematycznie jako [(pierwotna prognozowana cena) * (pierwotna prognozowana ilość - całkowita prognozowana ilość)].</span><span class="sxs-lookup"><span data-stu-id="6da33-451">This difference can be expressed mathematically as (Original forecast price) × (Original forecast quantity – Total forecast quantity).</span></span> <span data-ttu-id="6da33-452">To obliczenie dotyczy tylko godzin w projekcie.</span><span class="sxs-lookup"><span data-stu-id="6da33-452">This calculation applies only to project hours.</span></span>
+-   <span data-ttu-id="6da33-447">**Odchylenie na podstawie ilości** — łączna różnica w kwocie między prognozą pierwotną i prognozą całkowitą.</span><span class="sxs-lookup"><span data-stu-id="6da33-447">**Variance based on quantity** – The total difference between the original forecast and the total forecast.</span></span> <span data-ttu-id="6da33-448">Ta różnica może być wyrażona matematycznie jako [(całkowita prognozowana ilość) \* (pierwotna średnia cena - całkowita średnia cena)]</span><span class="sxs-lookup"><span data-stu-id="6da33-448">This difference can be expressed mathematically as (Total forecast quantity) × (Original average price – Total average price).</span></span> <span data-ttu-id="6da33-449">To obliczenie dotyczy tylko godzin w projekcie.</span><span class="sxs-lookup"><span data-stu-id="6da33-449">This calculation applies only to project hours.</span></span>
+-   <span data-ttu-id="6da33-450">**Odchylenie na podstawie ceny** — łączna różnica w kwocie między prognozą pierwotną i prognozą całkowitą.</span><span class="sxs-lookup"><span data-stu-id="6da33-450">**Variance based on price** – The total difference between the original forecast and the total forecast.</span></span> <span data-ttu-id="6da33-451">Ta różnica może być wyrażona matematycznie jako [(pierwotna prognozowana cena) \* (pierwotna prognozowana ilość - całkowita prognozowana ilość)].</span><span class="sxs-lookup"><span data-stu-id="6da33-451">This difference can be expressed mathematically as (Original forecast price) × (Original forecast quantity – Total forecast quantity).</span></span> <span data-ttu-id="6da33-452">To obliczenie dotyczy tylko godzin w projekcie.</span><span class="sxs-lookup"><span data-stu-id="6da33-452">This calculation applies only to project hours.</span></span>
 
 #### <a name="viewing-the-total-budgeted-amounts"></a><span data-ttu-id="6da33-453">Wyświetlanie łącznych zaplanowanych kosztów</span><span class="sxs-lookup"><span data-stu-id="6da33-453">Viewing the total budgeted amounts</span></span>
 

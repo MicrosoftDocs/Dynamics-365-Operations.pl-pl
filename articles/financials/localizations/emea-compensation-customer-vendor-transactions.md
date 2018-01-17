@@ -11,16 +11,17 @@ ms.technology:
 ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 audience: Application User
 ms.reviewer: shylaw
+ms.search.scope: Operations, Core
 ms.custom: 1691503
 ms.search.region: Hungary, Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4530f62ee25f4ac70005d11885762192d6baae11
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: c6d7269da4d0a3a0b7de213077a9380e833224d3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
