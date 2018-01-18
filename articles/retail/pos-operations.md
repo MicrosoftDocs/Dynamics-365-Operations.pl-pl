@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 02d777da3b97706f9e63478a1978ac9b230a591e
+ms.sourcegitcommit: 8e294f71355219890ac6f807094a930ac2acc279
+ms.openlocfilehash: 41dc188138436947c4bf7eaf074ef704c201e0cf
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -104,6 +104,7 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 521 | Saldo punktów na karcie lojalnościowej | Pokaż saldo punktów dla określonej karty lojalnościowej. | Tak | Tak | Nr | Nr | Nr |
 | 914 | Zminimalizuj okno punktu sprzedaży | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nr |
 | 1000 | Otwieranie szuflady | Wykonaj operację „brak sprzedaży” i otwórz aktualnie wybraną szufladę kasy. | Tak | Tak | Tak | Tak | Nr |
+| 928 | Realizacja zamówienia | Ta operacja umożliwia użytkownikom pobranie, spakowanie, wysłanie lub odwołanie zamówień pobranych przez sklep. | Tak | Tak | Tak | Nr | Nr |
 | 129 | Zastąpienie podatku dla produktu w wierszu | Zmień podatek w wierszu wybranego towaru na inny określony podatek. | Tak | Tak | Nr | Tak | Nr |
 | 1.3.0 | Zastąpienie z listy podatku dla produktu w wierszu | Zmień podatek w wierszu wybranego towaru na podatek wybrany z listy przez użytkownika. | Tak | Tak | Nr | Tak | Nr |
 | 127 | Zastąp podatek dla transakcji | Zmień podatek w transakcji na inny określony podatek. | Tak | Tak | Nr | Tak | Nr |

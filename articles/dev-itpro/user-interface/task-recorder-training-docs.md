@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: robinr
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b744a895bbd494212c4c388362dd7290207af938
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ed3f8260cace494170bf1d4db80c3bcb9a1a086e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 W tym temacie wyjaśniono, czym jest Rejestrator zadań i przewodniki po zadaniach, jak tworzyć nagrania zadań oraz jak dostosowywać przewodniki po zadaniach firmy Microsoft i umieszczać je w Pomocy.
 
 > [!IMPORTANT]
-> Nie można tworzyć niestandardowych przewodników po zadaniach dla modułu Dynamics 365 for Talent. System Pomocy programu Talent jest automatycznie łączony z przewodnikami po zadaniach dla tego produktu. 
+> Można zarejestrować własne przewodniki zadania dla programu Dynamics 365 for Talent, ale nie będzie można zapisać ich w bibliotece Narzędzia do modelowania procesów biznesowych (BPM) ani otworzyć ich w okienku Pomoc. Można zapisać je lokalnie lub w lokalizacji sieciowej, a następnie odtworzyć za pomocą Rejestratora zadań. 
 
 <a name="learn-about-task-recorder"></a>Więcej informacji o Rejestratorze zadań
 -------------------------
@@ -42,7 +42,7 @@ Rejestrator zadań to narzędzie systemu umożliwiające nagrywanie czynności w
 
 -   **Nagrania zadań mogą być odtwarzane jako przewodniki po zadaniach.** Przewodniki po zadaniach są integralną częścią systemu Pomocy. Przewodniki po zadaniach oferują interaktywne prezentacje poszczególnych kroków w procesach biznesowych. Użytkownik otrzymuje polecenia wykonania kolejnych kroków w wyskakujących okienkach (lub „dymkach”), które są animowane w interfejsie użytkownika i wskazywać elementy, których użytkownik powinien użyć. „Dymek” zawiera informacje o sposobach obsługi elementu, na przykład „Kliknij tutaj” lub „W tym polu należy wprowadzić wartość”. Przewodnik po zadaniu działa w odniesieniu do bieżącego zestawu danych użytkownika, które są wprowadzane i zapisywane w środowisku użytkownika.
 -   **Nagrania zadań mogą być wyświetlane jako kroki procedury w okienku Pomocy.** Okienko Pomocy może być używane do wyszukiwania i wyświetlania nagrań zadań. Okienko Pomocy można wyświetlić, klikając ikonę **?** na górnym pasku nawigacyjnym, albo można użyć skrótu **Ctrl+Shift+?**. Można czytać kroki nagrania zadania w okienku Pomocy lub można wybrać opcję odtwarzania nagrań jako przewodnika po zadaniu, który przeprowadzi Cię przez interfejs użytkownika.
--   **Nagrania zadań można zapisać w BPM.** Nagrania zadań można zapisać w wierszu hierarchii w bibliotece narzędzia do modelowania procesów biznesowych (BPM) w usługach cyklu życia (LCS). Listę czynności i schemat blokowy procesu biznesowego będą generowane z nagrania. Nagrania zadań, które zostały zapisane w bibliotece BPM, mogą być wyświetlane jako Pomoc.
+-   **Nagrania zadań można zapisać w BPM.** Nagrania zadań można zapisać w wierszu hierarchii w bibliotece narzędzia BPM w Lifecycle Services (LCS). Listę czynności i schemat blokowy procesu biznesowego będą generowane z nagrania. Nagrania zadań, które zostały zapisane w bibliotece BPM, mogą być wyświetlane jako Pomoc.
 -   **Nagrania zadań mogą być zapisywane jako dokumenty programu Word.** To pozwala łatwo tworzyć przewodniki szkoleniowe nadające się drukowania.
 
 Można tworzyć własne nagrania zadań, odtwarzać nagrania zadań udostępnione przez firmę Microsoft lub modyfikować te nagrania zgodnie z własną konfiguracją. Aby uzyskać więcej informacji na temat Rejestratora zadań, zobacz [Rejestrator zadań](task-recorder.md).

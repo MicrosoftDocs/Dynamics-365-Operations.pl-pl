@@ -3,7 +3,7 @@ title: "Resetowanie składników danych aplikacji Raportowanie finansowe"
 description: "W tym temacie opisano sposób resetowania składnicy danych modułu Raporty finansowe."
 author: aolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: aloson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 0786d3377b914791106ef30455d676e5ab2ae03d
-ms.openlocfilehash: c708fa18b8676d8ff57c26b3176a36d86df29387
+ms.sourcegitcommit: 5b956dcc5a4a93033396ae0ffcf8b7aeba2cf3f2
+ms.openlocfilehash: a07e8b5bae2c4f71e9212cd2f8080d2481769818
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ W tym temacie objaśniono, w jaki sposób zresetować składnicę danych modułu
 - Microsoft Dynamics 365 for Finance and Operations — Raporty finansowe, wersja 7.0.10000.4 lub nowsza
 - Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (wersja lokalna)
 
-Wersję 7.2.6.0 modułu Raporty finansowe oprogramowania Finance and Operations można uzyskać, pobierając plik KB 4052514 ze strony <https://support.microsoft.com/en-us/help/4052514>.
+Wersję 7.2.6.0 modułu Raporty finansowe oprogramowania Finance and Operations można uzyskać, pobierając plik KB 4052514 ze strony <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514>.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-7260-and-later"></a>Resetowanie składnicy danych modułu Raporty finansowe w wersji 7.2.6.0 oprogramowania Finance and Operations lub nowszej
 
@@ -55,7 +55,7 @@ Składnicę danych należy resetować wyłącznie w okresach, gdy ilość przetw
 
 Aby zresetować składnicę danych, wybierz z menu **Narzędzia** w projektancie raportów opcję **Resetuj składnicę danych**. Pojawi się okno dialogowe składające się z dwóch części: **Statystyki** i **Reset**.
 
-[![Okno dialogowe Resetowanie składnicy danych](./media/Statistics.png)](./media/Statistics.png)
+[![Okno dialogowe Resetowanie składnicy danych](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### <a name="integration-attempts"></a>Próby integracji
 
@@ -83,8 +83,10 @@ W razie stwierdzenia konieczności zresetowania składnicy danych zaznacz pole w
 - **Przywróć bazę danych** — baza danych oprogramowania Finance and Operations została przywrócona, ale baza danych składnicy danych modułu Raporty finansowe – nie.
 - **Inne** — resetowanie składnicy danych z innego powodu. Jeśli istnieje podejrzenie, że występuje problem, skontaktuj się z obsługą techniczną, aby go zidentyfikować.
 
+[![Resetuj składnicę danych](./media/Integration.png)](./media/Integration.png)
+
 > [!NOTE]
-> Przed wykonaniem tych kroków sprawdź, czy wszystkie zadania ukończyły integrację. Stan integracji można wyświetlić, wybierając kolejno opcje **Narzędzia** &gt; **Stan integracji**.
+> Przed rozpoczęciem resetowania sprawdź, czy wszystkie zadania resetowania składnicy danych ukończyły początkowe ładowanie. Można to sprawdzić, patrząc na wartość w kolumnie Godzina ostatniego uruchomienia, wybierając opcję **Narzędzia** &gt; **Stan integracji**.
 
 #### <a name="clear-users-and-companies"></a>Usuń użytkowników i firmy
 
@@ -94,7 +96,10 @@ Aby rozpocząć proces resetowania, naciśnij przycisk **OK**. Zostanie wyświet
 
 Aby sprawdzić stan integracji, wybierz kolejno opcje **Narzędzia** &gt; **Stan integracji** w celu wyświetlenia czasu ostatniej integracji oraz jej stanu.
 
-[![Wyświetlanie stanu integracji](./media/Integration.png)](./media/Integration.png)
+[![Wyświetlanie stanu integracji](./media/New-integration.PNG)](./media/New-integration.PNG)
+
+> [!NOTE]
+> Resetowanie jest zakończone, gdy wszystkie mapowania pokazują stan RanToCompletion, a w lewym dolnym rogu okna Stan integracji widoczny jest komunikat „Integracja zakończona”.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-70100004-and-later"></a>Resetowanie składnicy danych modułu Raporty finansowe w wersji 7.0.10000.4 lub nowszej oprogramowania Finance and Operations
 
@@ -142,7 +147,9 @@ Następujące usługi Microsoft Windows będą mieć otwarte połączenia z baz�
 
 #### <a name="download-the-latest-minorversiondataupgradezip-package"></a>Pobieranie najnowszego pakietu MinorVersionDataUpgrade.zip
 
-Pobierz najnowszy pakiet MinorVersionDataUpgrade.zip. Aby dowiedzieć się, jak odnaleźć i pobrać odpowiednią wersję pakietu uaktualnienia danych, zobacz [Pobieranie najnowszego wdrażalnego pakietu uaktualniania danych](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-packages). Uaktualnienie nie jest wymagane w celu pobrania pakietu MinorVersionDataUpgrade.zip. W związku z tym wystarczy wykonać kroki opisane w części „Pobieranie najnowszego wdrażalnego pakietu uaktualniania danych” tego tematu. Można pominąć wszystkie inne kroki opisane w tym temacie.
+Pobierz najnowszy pakiet MinorVersionDataUpgrade.zip. Aby dowiedzieć się, jak odnaleźć i pobrać odpowiednią wersję pakietu uaktualnienia danych, zobacz [Pobieranie najnowszego wdrażalnego pakietu uaktualniania danych](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). 
+
+Uaktualnienie nie jest wymagane w celu pobrania pakietu MinorVersionDataUpgrade.zip. W związku z tym wystarczy wykonać kroki opisane w części „Pobieranie najnowszego wdrażalnego pakietu uaktualniania danych” tego tematu. Można pominąć wszystkie inne kroki opisane w tym temacie.
 
 #### <a name="run-scripts-against-the-finance-and-operations-database"></a>Uruchamianie skryptów w bazie danych programu Finance and Operations
 

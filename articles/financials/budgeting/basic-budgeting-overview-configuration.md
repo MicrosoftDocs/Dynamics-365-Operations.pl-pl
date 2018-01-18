@@ -3,11 +3,12 @@ title: "Przegląd budżetu"
 description: "Prawie każda firma, która używa funkcji finansowych w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations Enterprise Edition lub ich wczytywania z innych programów."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetParameters
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

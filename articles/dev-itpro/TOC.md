@@ -2,6 +2,7 @@
 # [Wymagania systemowe dotyczące wdrożeń w chmurze](../fin-and-ops/get-started/system-requirements.md)
 # [Wymagania systemowe dotyczące wdrożeń lokalnych](../fin-and-ops/get-started/system-requirements-on-prem.md)
 # [Dane demonstracyjne](../fin-and-ops/get-started/demo-data.md)
+## [Generowanie danych demonstracyjnych za pomocą pakietów](data-entities/generate-demo-data-packages.md)
 
 
 # [Programowanie i dostosowywanie przy użyciu programu Visual Studio](dev-tools/developer-home-page.md)
@@ -362,6 +363,7 @@
 ### [OData](data-entities/odata.md)
 ### [Usługi niestandardowe](data-entities/custom-services.md)
 ### [Integracje cykliczne](data-entities/recurring-integrations.md)
+### [Używanie narzędzi do testowania innych firm z usługami](data-entities/third-party-service-test.md)
 
 ## Programowanie na potrzeby integracji
 ### [Integracja danych za pomocą jednostek danych](data-entities/data-management-integration-data-entity.md)
@@ -396,6 +398,7 @@
 ### [Pakiety danych konfiguracji](data-entities/configuration-data-packages.md)
 ### [Kopiowanie danych konfiguracji między firmami](data-entities/copy-configuration.md)
 ### [Szablony danych konfiguracji](data-entities/configuration-data-templates.md)
+### [Szablony danych z wieloma arkuszami](data-entities/excel-template-multiple.md)
 ### [Śledzenie zmian w jednostce](data-entities/entity-change-track.md)
 
 ## Standardowe jednostki danych
@@ -501,12 +504,15 @@
 
 ## [Wdrożenie lokalne](deployment/on-premises-deployment-landing-page.md)
 ### [Omówienie wdrożenia lokalnego](deployment/on-premises-overview.md)
+### [Planowanie wdrożenia lokalnego](deployment/plan-onprem-deployment.md)
 ### [Określanie zapotrzebowania na sprzęt](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
 ### [Tworzenie projektu wdrożenia lokalnego](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Konfigurowanie i wdrażanie środowisk lokalnych](deployment/setup-deploy-on-premises-environments.md)
 ### [Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Stosowanie aktualizacji do wdrożenia lokalnego](deployment/apply-updates-on-premises.md)
 ### [Ponowne wdrażanie wdrożenia lokalnego](deployment/redeploy-on-prem.md)
+### [Aktualizowanie agenta lokalnego](lifecycle-services/update-local-agent.md)
+### [Ponowne konfigurowanie środowiska](lifecycle-services/reconfigure-environment.md)
 ### [Rozwiązywanie problemów z lokalnym rozwiązaniem Dynamics 365 for Finance and Operations Enterprise Edition](deployment/troubleshoot-on-prem.md)
 
 ## Wdrażanie kodu niestandardowego

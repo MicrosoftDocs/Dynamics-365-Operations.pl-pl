@@ -41,9 +41,10 @@
 ## [Definiowanie kanałów sprzedaży detalicznej](define-maintain-retail-channels.md)
 ## [Omówienie sklepu internetowego](online-stores.md)
 ## [Konfigurowanie i instalowanie stacji sprzętowej handlu detalicznego](retail-hardware-station-configuration-installation.md)
-## [Czas i frekwencja w handlu detalicznym](retail-time-attendance.md)
+## [Czas i frekwencja w rozwiązaniu Retail](retail-time-attendance.md)
 
 # Aplikacje Modern Point of Sale (MPOS) i Cloud POS
+## [Wybór między aplikacjami Modern POS i Cloud POS](MPOS-or-CPOS.md)
 ## [Operacje aplikacji POS](POS-operations.md)
 ## [Układy ekranu danych demonstracyjnych w aplikacji MPOS/CPOS](demo-data.md)
 ## Sprzęt i urządzenia peryferyjne
@@ -75,7 +76,12 @@
 ## Paragony
 ### [Konfigurowanie szablonów paragonów](receipt-templates-printing.md) 
 ### [Wysyłanie paragonów pocztą e-mail z aplikacji MPOS](email-receipts.md)
-## [Rejestrator zadań i Pomoc dla punktu sprzedaży](task-recorder-retail-pos.md)
+## [Rejestrator zadań i Pomoc dla aplikacji POS](task-recorder-retail-pos.md)
+
+# Realizacja zamówienia
+## [Omówienie realizacji zamówienia w sklepie](Order-fulfillment-overview.md)
+## [Konfigurowanie realizacji w sklepie](Order-fulfillment-POS-setup.md)
+## [Włączanie powiadomień w punkcie sprzedaży](Notifications-POS.md)
 
 # Monitorowanie i analizy
 ## [Monitorowanie wydajności sprzedaży i marży](monitor-sales-margin-performance.md)
@@ -258,8 +264,10 @@
 ### [Dodawanie kontrolek niestandardowych do stron transakcji aplikacji Retail Modern POS](dev-itpro/pos-custom-transaction.md)
 ### [Dodawanie kolumn niestandardowych do siatki transakcji aplikacji POS](dev-itpro/pos-custom-transaction-column.md)
 ### [Wywoływanie interfejsu API lub operacji aplikacji POS z poziomu rozszerzenia aplikacji POS](dev-itpro/pos-api-extension.md)
-### [Rozszerzanie istniejących widoków aplikacji POS w celu dodania niestandardowych kolumn i przycisków paska aplikacji](dev-itpro/pos-view-extension.md)
 ### [Wyzwalacze aplikacji Retail Modern POS i drukowanie](dev-itpro/pos-trigger-printing.md)
+### [Dodawanie kontrolki niestandardowej do nieekranowego, opartego na projektancie widoku aplikacji Retail Modern POS](dev-itpro/pos-control-non-screen.md)
+### [Generowanie serwera proxy rozwiązania Retail dla aplikacji POS i e-Commerce](dev-itpro/pos-generate-retail-proxy.md)
+### [Kroki konfiguracji dla deweloperów rozwiązania Retail pracujących we wdrożeniach obsługiwanych w chmurze](dev-itpro/cloud-dev-box.md)
 
 ## Środowisko uruchomieniowe Commerce runtime
 ### [Rozszerzenie lojalnościowe](dev-itpro/retail-sdk/loyalty-extension-sample.md)

@@ -3,11 +3,12 @@ title: "Domyślne konta przeciwstawne dla arkuszy faktur od dostawców i arkuszy
 description: "Ten temat pomoże określić miejsce przypisania domyślnych kont i transakcji przeciwstawnej dla arkuszy faktur."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

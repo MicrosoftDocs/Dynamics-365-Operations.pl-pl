@@ -3,11 +3,12 @@ title: "Przegląd kontroli budżetu"
 description: "Ten artykuł zawiera wprowadzenie do mechanizmu kontroli budżetu oraz informacje pomagające konfigurować kontrolę budżetu w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition na potrzeby zarządzania środkami finansowymi."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetControlConfiguration
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

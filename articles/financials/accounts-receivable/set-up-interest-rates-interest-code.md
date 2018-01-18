@@ -3,11 +3,12 @@ title: Konfigurowanie stopy procentowej dla kodu odsetek
 description: "Kody odsetek zawierają ustawienia określające, kiedy i jak i odsetki obciążają i jak są obliczane na kontach zaległych."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: Interest
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

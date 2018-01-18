@@ -3,7 +3,7 @@ title: "Pakiet zawartości usługi Power BI Wydajność produkcji"
 description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Wydajność produkcji. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
 author: AndersGirke
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 592514e9ef8b0ec1e3bacda0f26d5991da88449e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -59,15 +59,6 @@ W poniższej tabeli znajduje się omówienie dostępnych wizualizacji.
 | Trend wad wg zasobów                  | Wskaźnik wadliwości (części na milion) wg przetworzonej ilości | |
 | Odchylenia produkcji w kalkulacji doliczeniowej zleceniowej | <ul><li>Odchylenie produkcji wg daty i typu grupy kosztów</li><li>Odchylenie produkcji wg oddziału i typu grupy kosztów</li><li>10 najlepszych produktów z niekorzystnymi odchyleniami produkcji</li><li>10 najbardziej niekorzystnych odchyleń produkcji wg zasobów</li></ul> | <ul><li>Zrealizowany koszt</li><li>Odchylenia produkcji</li><li>% odchylenia produkcji</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Rozszerzanie funkcjonalności pakietu zawartości usługi Power BI
-Za pomocą pakietów zawartości dostępnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) można dostarczać zaawansowane funkcje analityczne osobom, które się nie logują w programie Microsoft Dynamics 365. Te pakiety zawartości można modyfikować, tak aby zawierały inne raporty lub wizualizacje, a następnie publikować je w swojej dzierżawie usługi Power BI.com na potrzeby wykonywania analiz.
-
-Pakiet zawartości usługi Power BI **Wydajność produkcji** znajduje się w bibliotece zasobów wspólnych w usłudze LCS. Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](power-bi-content-microsoft-partners.md). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).
-
-Uważaj, aby pobrać pakiet zawartości **Wydajność produkcji** mający zastosowanie do używanej wersji systemu Dynamics 365.
-
-> [!NOTE]
-> Jeśli używasz programu Microsoft Dynamics 365 for Operations w wersji 1611, ten pakiet zawartości usługi Power BI wymaga poprawki KB 4011327. Po zalogowaniu się w usłudze LCS można uzyskać dostęp do tej poprawki KB tutaj: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 
@@ -139,12 +130,5 @@ Następująca tabela przedstawia najważniejsze wymiary używane jako filtry do 
 | Zasoby                 | Identyfikator zasobu, Nazwa zasobu, Typ zasobu i Grupa zasobów |
 | Produkty                  | Numer produktu, Nazwa produktu, Identyfikator towaru i Grupa towarów         |
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
 
-Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworzenia zawartości w narzędziu Power BI:
-
-- [Jednostki danych](../data-entities/data-entities.md)
-- [Tworzenie organizacyjnych pakietów zawartości](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
-- [Modelowanie danych przy użyciu narzędzia Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
-- [Dodawanie kafelków narzędzia Power BI do obszarów roboczych](configure-power-bi-integration.md)
 

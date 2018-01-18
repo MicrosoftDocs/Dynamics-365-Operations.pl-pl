@@ -1,9 +1,9 @@
 ---
 title: "Pakiet zawartości usługi Power BI Zarządzanie kosztami"
-description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Zarządzanie kosztami. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu."
+description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Zarządzanie kosztami."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f509852f15b9518d0a01be1f89d4f07c76caf341
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: e0f9042b2647a484a70670d1d29e8036401b39f1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Zarządzanie kosztami. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Zarządzanie kosztami. 
 
 # <a name="overview"></a>Przegląd
 
@@ -51,8 +51,6 @@ Pakiet zawartości **Zarządzanie kosztami** dostępny w usłudze Microsoft Powe
 
 Głównym źródłem danych jednostki CostAggregatedCostStatementEntryEntity jest tabela CostStatementCache. Ta tabela jest zarządzana przez strukturę pamięci podręcznej zestawów danych. Domyślnie tabela jest aktualizowana co 24 godziny, ale można włączyć ręczne aktualizacje w konfiguracji pamięci podręcznej danych. Następnie można wykonywać ręczną aktualizację w obszarze roboczym **Zarządzanie kosztami** lub **Analiza kosztów**. Po zaktualizowaniu pamięci podręcznej zarządzania kosztami trzeba zaktualizować połączenie OData na stronie BI.com, aby zobaczyć zaktualizowane dane w witrynie. Miary odchyleń (zakup, produkcja) w tym pakiecie zawartości usługi Power BI odnoszą się tylko do elementów, które są wyceniane metodą inwentaryzacji Koszt standardowy. Odchylenie produkcji jest obliczane jako różnica między kosztami aktywnym i zrealizowanym. Odchylenie produkcji jest obliczane w momencie, gdy zlecenie produkcyjne uzyskuje stan **Zakończone**. Aby uzyskać więcej informacji o typach odchyleń produkcji i sposobach ich obliczania, zobacz [Analiza odchyleń dla zrealizowanego zlecenia produkcyjnego](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
-## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Zawartość **Zarządzanie kosztami** usługi Power BI jest dostępna w witrynie PowerBI.com. Aby uzyskać więcej informacji o tworzeniu połączenia z danymi programu Microsoft Dynamics 365 for Finance and Operations i ich ładowaniu, zobacz [Przechodzenie do pakietów zawartości usługi Power BI z witryny PowerBI.com](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
 Pakiet zawartości zawiera zestaw stron raportów. Każda strona zawiera zestaw wskaźników, które są wizualizowane jako wykresy, kafelki i tabele. Poniższa tabela zawiera omówienie wizualizacji dostępnych w pakiecie zawartości usługi Power BI **Zarządzanie kosztami**.
@@ -136,13 +134,6 @@ Następujące najważniejsze wymiary są używane jako filtry do dzielenia zagre
 | Księgi          | Waluta, Nazwa, Opis                  |
 | Oddziały            | Identyfikator, Nazwa, Kraj, Miejscowość                      |
 
-## <a name="additional-resources"></a>Dodatkowe zasoby
-Poniżej przedstawiono niektóre przydatne łącza dotyczące jednostek i tworzenia zawartości w narzędziu Power BI:
-
--   [Jednostki danych](..\data-entities\data-entities.md)
--   [Tworzenie organizacyjnych pakietów zawartości](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Modelowanie danych przy użyciu narzędzia Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Dodawanie kafelków narzędzia Power BI do obszarów roboczych](configure-power-bi-integration.md)
 
 
 
