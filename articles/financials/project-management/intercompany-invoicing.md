@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -59,9 +60,9 @@ W tym przykładzie FRSI musi być odbiorcą w firmie USSI, a USSI musi być dost
 
 1.  Skonfiguruj FRSI jako odbiorcę w firmie USSI, a USSI jako dostawcę w firmie FRSI. Istnieją trzy punkty wejścia dla etapów wymaganych w tym zadaniu.
     | Krok | Punkt wejścia                                                                       | opis   |
-    |------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | A    | W firmie USSI kliknij kolejno opcje **Rozrachunki z odbiorcami** &gt; **Odbiorcy** &gt; **Wszyscy odbiorcy**. | Utwórz nowy rekord odbiorcy dla firmy FRSI i wybierz grupę odbiorców.                                                                                                                                                                                                                           |
-    | mld    | W firmie FRSI kliknij kolejno opcje **Rozrachunki z dostawcami** &gt; **Dostawcy** &gt; **Wszyscy dostawcy**.        | Utwórz nowy rekord dostawcy dla firmy USSI i wybierz grupę dostawców.                                                                                                                                                                                                                               |
+    |------|-----------------------------------------------------------------------------------|------------------|
+    | A    | W firmie USSI kliknij kolejno opcje **Rozrachunki z odbiorcami** &gt; **Odbiorcy** &gt; **Wszyscy odbiorcy**. | Utwórz nowy rekord odbiorcy dla firmy FRSI i wybierz grupę odbiorców.                                                                                  |
+    | mld    | W firmie FRSI kliknij kolejno opcje **Rozrachunki z dostawcami** &gt; **Dostawcy** &gt; **Wszyscy dostawcy**.        | Utwórz nowy rekord dostawcy dla firmy USSI i wybierz grupę dostawców.                                                                                    |
     | C    | W firmie FRSI otwórz rekord dostawcy, który właśnie został utworzony.                            | W okienku akcji na karcie **Ogólne** w grupie **Konfiguracja** kliknij opcję **Międzyfirmowe**. Na stronie **Międzyfirmowe** na karcie **Relacja handlowa** ustaw suwak **Aktywna** w pozycji **Tak**. W polu **Firma odbiorcy** wybierz rekord klienta, który został utworzony w kroku A. |
 
 2.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Parametry modułu Zarządzanie projektami i ich księgowanie**, a następnie kliknij kartę **Międzyfirmowe**. Sposób ustawienia parametrów zależy od tego, czy jest to firma wypożyczająca czy pożyczająca.

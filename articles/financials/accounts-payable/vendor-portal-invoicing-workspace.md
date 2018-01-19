@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -47,10 +48,12 @@ Kafelki **Podsumowanie** prezentują przegląd faktur od wybranego dostawcy. Ist
 -   Zapłacone faktury to takie faktury, które zostały w całości zapłacone w programie Finance and Operations.
 
 Kliknięcie kafelka otwiera przefiltrowany widok strony **Lista faktur**.
+
 ### <a name="tabular-lists"></a>Listy tabelaryczne
 
 W sekcji **Listy tabelaryczne** stan fakturowania dzieli się w podobny sposób, jak w kafelkach podsumowania: listy wersji roboczych i przesłanych niezatwierdzonych. W stanie Wersja robocza fakturę można przesłać do przepływu pracy lub usunąć. Ostatnia lista tabelaryczna to opcja pozwalająca odnaleźć faktury. Można filtrować podczas wyszukiwania, aby przyspieszyć wyszukiwanie.
-Strona listy Wszystkie faktury od dostawcy
+
+<a name="all-vendor-invoices-list-page"></a>Strona listy Wszystkie faktury od dostawcy
 -----------------------------
 
 Na stronie listy **Faktury w portalu współpracy z dostawcami** można wyświetlić wszystkie zaksięgowane i niezaksięgowane faktury od dostawcy. Ta strona listy służy do wyświetlania stanu płatności faktur. Istnieją następujące stany płatności: niezaksięgowane, niezapłacone, częściowo zapłacone i w pełni zapłacone.
