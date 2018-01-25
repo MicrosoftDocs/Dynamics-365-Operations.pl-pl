@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 49b63216cc306553b2d3b7141f57f3c0581e1d5a
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: f3ed894445c44da6de9062da5c9399e867952d43
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 01/19/2018
 
 <span data-ttu-id="74dc3-104">W tym artykule opisano informacje, które są wymagane dla każdej komórki w definicji wiersza w raporcie finansowym, oraz wyjaśniono, jak wprowadzić te informacje.</span><span class="sxs-lookup"><span data-stu-id="74dc3-104">This article describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information.</span></span> 
 
-# <a name="specify-a-row-code-in-a-row-definition"></a><span data-ttu-id="74dc3-105">Określanie kodu wiersza w definicji wiersza</span><span class="sxs-lookup"><span data-stu-id="74dc3-105">Specify a row code in a row definition</span></span>
+## <a name="specify-a-row-code-in-a-row-definition"></a><span data-ttu-id="74dc3-105">Określanie kodu wiersza w definicji wiersza</span><span class="sxs-lookup"><span data-stu-id="74dc3-105">Specify a row code in a row definition</span></span>
 
 <span data-ttu-id="74dc3-106">W definicjach wierszy numery lub etykiety w komórce **Kod wiersza** identyfikują poszczególne wiersze w definicji wiersza.</span><span class="sxs-lookup"><span data-stu-id="74dc3-106">In row definitions, the numbers or labels in the **Row Code** cell identify each line in the row definition.</span></span> <span data-ttu-id="74dc3-107">Kod wiersza można umieszczać w obliczeniach i sumach w roli odnośnika do danych.</span><span class="sxs-lookup"><span data-stu-id="74dc3-107">You can specify the row code to refer to data in calculations and totals.</span></span>
 
@@ -506,8 +506,7 @@ ms.lasthandoff: 01/19/2018
 4.  <span data-ttu-id="74dc3-709">Wybierz zestaw do usunięcia, a następnie kliknij **Usuń**.</span><span class="sxs-lookup"><span data-stu-id="74dc3-709">Select the set to delete, and then click **Delete**.</span></span> <span data-ttu-id="74dc3-710">Kliknij **Tak**, aby trwale usunąć zestaw wartości wymiaru.</span><span class="sxs-lookup"><span data-stu-id="74dc3-710">Click **Yes** to permanently delete the dimension value set.</span></span>
 
 
-<a name="see-also"></a><span data-ttu-id="74dc3-711">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="74dc3-711">See also</span></span>
---------
+## <a name="see-also"></a><span data-ttu-id="74dc3-711">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="74dc3-711">See also</span></span>
 
 [<span data-ttu-id="74dc3-712">Raporty finansowe</span><span class="sxs-lookup"><span data-stu-id="74dc3-712">Financial reporting</span></span>](financial-reporting-intro.md)
 

@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f6a1bd580de0a2c40ce3a407c0fd056cae98bfee
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: 606f61814bcfc80dc1ef2f88f15fbd0d4a5cbb61
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -44,8 +44,7 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="9ec4e-118">Po zaksięgowaniu dokumentu w walucie obcej wszelkie występujące różnice kursowe są księgowane na określonych kontach księgowych.</span><span class="sxs-lookup"><span data-stu-id="9ec4e-118">When you post a document that uses a foreign currency, any exchange rate differences that occur are posted to specific ledger accounts.</span></span>
 
-<a name="prerequisites"></a><span data-ttu-id="9ec4e-119">Wymagania wstępne</span><span class="sxs-lookup"><span data-stu-id="9ec4e-119">Prerequisites</span></span>
-=============
+## <a name="prerequisites"></a><span data-ttu-id="9ec4e-119">Wymagania wstępne</span><span class="sxs-lookup"><span data-stu-id="9ec4e-119">Prerequisites</span></span>
 
 <span data-ttu-id="9ec4e-120">Aby korzystać z ten funkcjonalności, należy odpowiednio skonfigurować system.</span><span class="sxs-lookup"><span data-stu-id="9ec4e-120">Before you can use this functionality, you must configure the system.</span></span>
 
@@ -55,8 +54,7 @@ ms.lasthandoff: 11/03/2017
 4.  <span data-ttu-id="9ec4e-125">Skonfiguruj konta różnic podatków naliczonego i należnego oraz konta przeciwstawne tych różnic w grupach księgowania w księdze w oknie **Podatek** &gt; **Ustawienia** &gt; **Podatek** &gt; **Grupy księgowania**.</span><span class="sxs-lookup"><span data-stu-id="9ec4e-125">Set up sales tax receivable and sales tax payable difference and difference offset accounts in the ledger posting groups at **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Ledger posting groups**.</span></span>
 5.  <span data-ttu-id="9ec4e-126">Opcjonalnie: Skonfiguruj regułę obliczania kursu wymiany dla pary walut w oknie **Księga główna** &gt; **Waluty** &gt; **Zasady obliczania kursu wymiany dla par walut**.</span><span class="sxs-lookup"><span data-stu-id="9ec4e-126">Optional: Set up an exchange rate calculation rule for a currency pair at **General ledger** &gt; **Currencies** &gt; **Exchange rate calculation rules for currency pairs**.</span></span> <span data-ttu-id="9ec4e-127">Zasady obliczania kursu wymiany są używane do przeliczania kwot podatku VAT na fakturach sprzedaży w walucie obcej na kwoty podatku VAT w walucie docelowej.</span><span class="sxs-lookup"><span data-stu-id="9ec4e-127">The exchange rate calculation rules are used to convert VAT amounts for foreign currency sales invoices to VAT amounts in a destination currency.</span></span>
 
-<a name="overview"></a><span data-ttu-id="9ec4e-128">Przegląd</span><span class="sxs-lookup"><span data-stu-id="9ec4e-128">Overview</span></span>
-========
+## <a name="overview"></a><span data-ttu-id="9ec4e-128">Przegląd</span><span class="sxs-lookup"><span data-stu-id="9ec4e-128">Overview</span></span>
 
 <span data-ttu-id="9ec4e-129">Jeśli po skonfigurowaniu w systemie używania kursów wymiany dla podatku VAT trzeba wprowadzić dokument lub utworzyć zamówienie wykorzystujące walutę obcą, można użyć strony **Transakcje podatkowe**, aby ustawić wartość **Data rejestru VAT**, która będzie powodowała pobieranie i ustawianie domyślnej wartości **Kurs wymiany podatku**.</span><span class="sxs-lookup"><span data-stu-id="9ec4e-129">After you've configured the system to use VAT exchange rates, if you must enter a document or create an order that uses a foreign currency, you can use **Sales tax transactions** page to set the **Date of VAT register** value to pick up and set the default **Sales tax exchange rate** value.</span></span> <span data-ttu-id="9ec4e-130">Oba pola można edytować.</span><span class="sxs-lookup"><span data-stu-id="9ec4e-130">You can edit both fields.</span></span> <span data-ttu-id="9ec4e-131">Można również użyć pola **Podstawa po korekcie (kurs wymiany dla podatku VAT)** lub **Skorygowana kwota podatku (kurs wymiany dla podatku VAT)**, aby wprowadzić rzeczywiste kwoty podatku VAT w walucie lokalnej określonej w dokumencie zewnętrznym.</span><span class="sxs-lookup"><span data-stu-id="9ec4e-131">You can also use the **Adjusted amount origin (VAT exchange rate)** or **Adjusted sales tax amount (VAT exchange rate)** field to enter actual VAT amounts in the local currency that is stated in an external document.</span></span> <span data-ttu-id="9ec4e-132">Przeglądając zapisy rachunkowe, można wyświetlać różnice kwot podatku na stronie **Arkusz księgi podrzędnej**.</span><span class="sxs-lookup"><span data-stu-id="9ec4e-132">When you review the accounting, you can view sales tax difference amounts on the **Subledger journal** page.</span></span> <span data-ttu-id="9ec4e-133">Gdy dokument jest księgowany, dla transakcji księgowanych na skonfigurowanych przez Ciebie kontach księgi głównej możesz przeglądać wszelkie różnice w kwotach podatku spowodowane różnicami między kursem wymiany waluty dla podatku VAT a kursem wymiany waluty rozliczeniowej używanej w organizacji.</span><span class="sxs-lookup"><span data-stu-id="9ec4e-133">When a document is posted, for transactions that are posted to the general ledger accounts that you've configured, you can view any differences in sales tax amounts that are caused by the difference between the VAT currency exchange rate and the accounting currency exchange rate for your organization.</span></span>
 

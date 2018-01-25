@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7b283b8550bd7e5eff969d45c761d0a54d93a33e
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: 85431f12f8870d6133388ae4706b3b0c8c48be62
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -112,7 +112,7 @@ ms.lasthandoff: 11/03/2017
 3.  <span data-ttu-id="55da2-213">Wybierz blok konstrukcyjny, a następnie kliknij przycisk **Cofnij wyewidencjonowanie**.</span><span class="sxs-lookup"><span data-stu-id="55da2-213">Select a building block, and then click **Undo Checkout**.</span></span>
 4.  <span data-ttu-id="55da2-214">Kliknij **Tak**, aby zaewidencjonować blok konstrukcyjny.</span><span class="sxs-lookup"><span data-stu-id="55da2-214">Click **Yes** to check in the building block.</span></span>
 
-# <a name="see-also"></a><span data-ttu-id="55da2-215">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="55da2-215">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="55da2-215">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="55da2-215">See also</span></span>
 
 [<span data-ttu-id="55da2-216">Raporty finansowe</span><span class="sxs-lookup"><span data-stu-id="55da2-216">Financial reporting</span></span>](financial-reporting-intro.md)
 

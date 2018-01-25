@@ -20,10 +20,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 7547ff6dcea546100a11f20e8e8f7f7fcab82cee
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: d369b760047a18c82dd89f3452d94b9c62ba8841
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -34,8 +34,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="edfaf-104">Ten temat omawia opcje konfigurowania rozszerzonego logowania do aplikacji Cloud POS i Retail Modern POS (MPOS).</span><span class="sxs-lookup"><span data-stu-id="edfaf-104">This topic covers your options for setting up extended logon for Cloud POS and Retail Modern POS (MPOS).</span></span>
 
-<a name="setting-up-extended-logon"></a><span data-ttu-id="edfaf-105">Konfigurowanie logowania rozszerzonego</span><span class="sxs-lookup"><span data-stu-id="edfaf-105">Setting up extended logon</span></span>
-=========================
+## <a name="setting-up-extended-logon"></a><span data-ttu-id="edfaf-105">Konfigurowanie logowania rozszerzonego</span><span class="sxs-lookup"><span data-stu-id="edfaf-105">Setting up extended logon</span></span>
 
 <span data-ttu-id="edfaf-106">Konfiguracje masek kodów kreskowych można znaleźć w oknie **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktu sprzedaży** &gt; **Profile funkcji**.</span><span class="sxs-lookup"><span data-stu-id="edfaf-106">You can find the setup for bar code masks at **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Functionality profiles**.</span></span> <span data-ttu-id="edfaf-107">Na skróconej karcie **Funkcje** znajdują się następujące opcje, które są związane z logowaniem rozszerzonym.</span><span class="sxs-lookup"><span data-stu-id="edfaf-107">The **Functions** FastTab includes the following options that are related to extended logon.</span></span>
 
@@ -55,23 +54,19 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="edfaf-116">Jeśli włączona jest opcja **Logowanie się pracowników za pomocą karty wymaga hasła**, logowanie się pracowników za pomocą karty wybiera tylko tego pracownika, który jest przypisany do przedstawionego logowania rozszerzonego.</span><span class="sxs-lookup"><span data-stu-id="edfaf-116">When the **Staff card logon requires password** option is enabled, the staff card logon selects only the worker who is assigned to the extended logon that is presented.</span></span> <span data-ttu-id="edfaf-117">Pracownicy muszą nadal podać hasło, nawet gdy ta opcja jest wybrana.</span><span class="sxs-lookup"><span data-stu-id="edfaf-117">Workers must still enter their password when this option is enabled.</span></span>
 
-<a name="assigning-an-extended-logon"></a><span data-ttu-id="edfaf-118">Przypisywanie logowania rozszerzonego</span><span class="sxs-lookup"><span data-stu-id="edfaf-118">Assigning an extended logon</span></span>
-===========================
+## <a name="assigning-an-extended-logon"></a><span data-ttu-id="edfaf-118">Przypisywanie logowania rozszerzonego</span><span class="sxs-lookup"><span data-stu-id="edfaf-118">Assigning an extended logon</span></span>
 
 <span data-ttu-id="edfaf-119">Domyślnie tylko menedżerowie mogą przypisywać pracownikom logowanie rozszerzone.</span><span class="sxs-lookup"><span data-stu-id="edfaf-119">By default, only managers can assign extended logon to workers.</span></span> <span data-ttu-id="edfaf-120">Aby przypisać logowanie rozszerzone, przejdź do opcji **Logowanie rozszerzone** w aplikacji punktu sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="edfaf-120">To assign extended logon, go to **Extended log on** in POS.</span></span> <span data-ttu-id="edfaf-121">Następnie wyszukaj pracownika, wpisując w polu wyszukiwania jego identyfikator operatora.</span><span class="sxs-lookup"><span data-stu-id="edfaf-121">Then search for a worker by entering his or her operator ID in the search field.</span></span> <span data-ttu-id="edfaf-122">Wybierz pracownika, a następnie kliknij przycisk **Przypisz**.</span><span class="sxs-lookup"><span data-stu-id="edfaf-122">Select the worker, and then click **Assign**.</span></span> <span data-ttu-id="edfaf-123">Na następnej stronie przeciągnij lub zeskanuj kartę lub kod kreskowy do logowania rozszerzonego, aby przypisać pracownika.</span><span class="sxs-lookup"><span data-stu-id="edfaf-123">On the next page, swipe or scan the extended logon to assign to the worker.</span></span> <span data-ttu-id="edfaf-124">Jeśli odczyt danych się powiedzie, przycisk **OK** stanie się aktywny.</span><span class="sxs-lookup"><span data-stu-id="edfaf-124">If the swipe or scan is successfully read, the **OK** button becomes available.</span></span> <span data-ttu-id="edfaf-125">Kliknij **OK**, aby zapisać logowanie rozszerzone dla tego pracownika.</span><span class="sxs-lookup"><span data-stu-id="edfaf-125">Click **OK** to save the extended logon for that worker.</span></span>
 
-<a name="deleting-an-extended-logon"></a><span data-ttu-id="edfaf-126">Anulowanie przypisania logowania rozszerzonego</span><span class="sxs-lookup"><span data-stu-id="edfaf-126">Deleting an extended logon</span></span>
-==========================
+## <a name="deleting-an-extended-logon"></a><span data-ttu-id="edfaf-126">Anulowanie przypisania logowania rozszerzonego</span><span class="sxs-lookup"><span data-stu-id="edfaf-126">Deleting an extended logon</span></span>
 
 <span data-ttu-id="edfaf-127">Aby anulować przypisanie logowania rozszerzonego do pracownika, znajdź pracownika za pomocą operacji **Logowanie rozszerzone**.</span><span class="sxs-lookup"><span data-stu-id="edfaf-127">To delete the extended logon that is assigned to a worker, search for the worker by using the **Extended log on** operation.</span></span> <span data-ttu-id="edfaf-128">Wybierz pracownika, a następnie kliknij przycisk **Anuluj przypisanie**.</span><span class="sxs-lookup"><span data-stu-id="edfaf-128">Select the worker, and then click **Unassign**.</span></span> <span data-ttu-id="edfaf-129">Wszystkie poświadczenia logowania rozszerzonego przypisane do tego pracownika są usuwane.</span><span class="sxs-lookup"><span data-stu-id="edfaf-129">All extended logon credentials that are associated with that worker are removed.</span></span>
 
-<a name="extending-extended-logon"></a><span data-ttu-id="edfaf-130">Rozszerzanie logowania rozszerzonego</span><span class="sxs-lookup"><span data-stu-id="edfaf-130">Extending extended logon</span></span>
-========================
+## <a name="extending-extended-logon"></a><span data-ttu-id="edfaf-130">Rozszerzanie logowania rozszerzonego</span><span class="sxs-lookup"><span data-stu-id="edfaf-130">Extending extended logon</span></span>
 
 <span data-ttu-id="edfaf-131">Usługę logowania można rozszerzyć o obsługę dodatkowych urządzeń do logowania rozszerzonego, takich jak skanery ręczne.</span><span class="sxs-lookup"><span data-stu-id="edfaf-131">The logon service can be extended to support additional extended logon devices, such as palm scanners.</span></span> <span data-ttu-id="edfaf-132">Aby uzyskać więcej informacji, zapoznaj się z dokumentacją rozszerzania punktu sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="edfaf-132">For more information, see the POS extensibility documentation.</span></span>
 
-<a name="using-extended-logon"></a><span data-ttu-id="edfaf-133">Używanie logowania rozszerzonego</span><span class="sxs-lookup"><span data-stu-id="edfaf-133">Using extended logon</span></span>
-====================
+## <a name="using-extended-logon"></a><span data-ttu-id="edfaf-133">Używanie logowania rozszerzonego</span><span class="sxs-lookup"><span data-stu-id="edfaf-133">Using extended logon</span></span>
 
 <span data-ttu-id="edfaf-134">Jeśli logowanie rozszerzone jest skonfigurowane i pracownik ma przypisany kod kreskowy lub pasek magnetyczny, pracownik musi tylko przeciągnąć kartę magnetyczną w czytniku lub zeskanować kod kreskowy, gdy na ekranie wyświetlana jest strona logowania punktu sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="edfaf-134">When extended logon is configured, and a worker has been assigned a bar code or magnetic stripe, the worker just has to swipe or scan his or her card while the POS logon page is displayed.</span></span> <span data-ttu-id="edfaf-135">Jeśli logowanie wymaga podania hasła, wyświetla się również monit o podanie hasła.</span><span class="sxs-lookup"><span data-stu-id="edfaf-135">If a password is also required before logon can proceed, the worker is prompted to enter his or her password.</span></span>
 

@@ -17,10 +17,10 @@ ms.author: ryansand
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: a351418583ee29ad57bd2586121bb92d24635fb8
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: 13f7cfa8776436ed2c73fc588948ce88fee93326
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -31,14 +31,14 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="970d7-105">W tym temacie opisano pakiet zawartość **Wartości rzeczywiste a budżet** dostępny dla usługi Microsoft Power BI.</span><span class="sxs-lookup"><span data-stu-id="970d7-105">This topic describes the **Actual vs budget** Microsoft Power BI content.</span></span> <span data-ttu-id="970d7-106">Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.</span><span class="sxs-lookup"><span data-stu-id="970d7-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span> 
 
-# <a name="overview"></a><span data-ttu-id="970d7-107">Przegląd</span><span class="sxs-lookup"><span data-stu-id="970d7-107">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="970d7-107">Przegląd</span><span class="sxs-lookup"><span data-stu-id="970d7-107">Overview</span></span>
 
 <span data-ttu-id="970d7-108">Pakiet zawartości usługi Power BI **Wartości rzeczywiste a budżet** jest przeznaczony dla osób odpowiedzialnych za monitorowanie wartości rzeczywistych w porównaniu z zabudżetowanymi w swoich organizacjach.</span><span class="sxs-lookup"><span data-stu-id="970d7-108">The **Actual vs budget** Power BI content was created for individuals who are responsible for monitoring actual versus budget performance in their organization.</span></span> <span data-ttu-id="970d7-109">Pakiet zawartość usługi Power BI **Wartości rzeczywiste a budżet** zapewnia wgląd w odchylenia budżetu.</span><span class="sxs-lookup"><span data-stu-id="970d7-109">The **Actual vs budget** Power BI content provides visibility into your budget variances.</span></span> <span data-ttu-id="970d7-110">Można analizować budżet dla bieżącego roku według kategorii kont, kodów budżetu, kont głównych, opisów konta głównego lub okresów obrachunkowych, aby lepiej zrozumieć przyczyny wszelkich odchyleń .</span><span class="sxs-lookup"><span data-stu-id="970d7-110">You can analyze budget for the current year by account category, budget code, main account, main account descriptions, or fiscal period to get a better understanding of the cause of any variances.</span></span> 
 
-# <a name="accessing-the-power-bi-content"></a><span data-ttu-id="970d7-111">Przechodzenie do pakietu zawartości usługi Power BI</span><span class="sxs-lookup"><span data-stu-id="970d7-111">Accessing the Power BI content</span></span>
+## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="970d7-111">Przechodzenie do pakietu zawartości usługi Power BI</span><span class="sxs-lookup"><span data-stu-id="970d7-111">Accessing the Power BI content</span></span>
 <span data-ttu-id="970d7-112">Raporty z pakietów zawartości usługi Power BI **Wartości rzeczywiste a budżet** są wyświetlane w obszarach roboczych **Budżet księgi i prognozy** i **Dyrektor finansowy**.</span><span class="sxs-lookup"><span data-stu-id="970d7-112">Reports from the **Actual vs budget** Power BI content are shown in the **Ledger budget and forecasts** and **CFO** workspaces.</span></span>
 
-# <a name="reports-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="970d7-113">Raporty umieszczone w pakiecie zawartości usługi Power BI</span><span class="sxs-lookup"><span data-stu-id="970d7-113">Reports that are included in the Power BI content</span></span>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="970d7-113">Raporty umieszczone w pakiecie zawartości usługi Power BI</span><span class="sxs-lookup"><span data-stu-id="970d7-113">Reports that are included in the Power BI content</span></span>
 <span data-ttu-id="970d7-114">W poniższej tabeli przedstawiono szczegóły dotyczące mierników, które znajdują się na każdej stronie raportu w pakiecie zawartości dla usługi Power BI **Wartości rzeczywiste a budżet** .</span><span class="sxs-lookup"><span data-stu-id="970d7-114">The following table provides details about the metrics that are found on each report page in the **Actual vs budget** Power BI content.</span></span>
 
 | <span data-ttu-id="970d7-115">Raport</span><span class="sxs-lookup"><span data-stu-id="970d7-115">Report</span></span>                      | <span data-ttu-id="970d7-116">Metryki</span><span class="sxs-lookup"><span data-stu-id="970d7-116">Metrics</span></span> |
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/17/2018
 | <span data-ttu-id="970d7-129">Dochód netto</span><span class="sxs-lookup"><span data-stu-id="970d7-129">Net income</span></span>                  | <ul><li><span data-ttu-id="970d7-130">Dochód netto w roku</span><span class="sxs-lookup"><span data-stu-id="970d7-130">Net income this year</span></span></li><li><span data-ttu-id="970d7-131">Cel dochodu netto założony w budżecie</span><span class="sxs-lookup"><span data-stu-id="970d7-131">Goal for net income based on budget</span></span> </li><ul> |
 
 
-# <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="970d7-132">Opis modelu danych i jednostek</span><span class="sxs-lookup"><span data-stu-id="970d7-132">Understanding the data model and entities</span></span>
+## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="970d7-132">Opis modelu danych i jednostek</span><span class="sxs-lookup"><span data-stu-id="970d7-132">Understanding the data model and entities</span></span>
 
 | <span data-ttu-id="970d7-133">Jednostka</span><span class="sxs-lookup"><span data-stu-id="970d7-133">Entity</span></span>                    | <span data-ttu-id="970d7-134">Zawartość</span><span class="sxs-lookup"><span data-stu-id="970d7-134">Contents</span></span> |
 |---------------------------|----------|
