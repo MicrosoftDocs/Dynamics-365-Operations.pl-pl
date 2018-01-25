@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 W tym artykule opisano informacje, które są wymagane dla każdej komórki w definicji wiersza w raporcie finansowym, oraz wyjaśniono, jak wprowadzić te informacje. 
 
-# <a name="specify-a-row-code-in-a-row-definition"></a>Określanie kodu wiersza w definicji wiersza
+## <a name="specify-a-row-code-in-a-row-definition"></a>Określanie kodu wiersza w definicji wiersza
 
 W definicjach wierszy numery lub etykiety w komórce **Kod wiersza** identyfikują poszczególne wiersze w definicji wiersza. Kod wiersza można umieszczać w obliczeniach i sumach w roli odnośnika do danych.
 
@@ -506,8 +506,7 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 4.  Wybierz zestaw do usunięcia, a następnie kliknij **Usuń**. Kliknij **Tak**, aby trwale usunąć zestaw wartości wymiaru.
 
 
-<a name="see-also"></a>Informacje dodatkowe
---------
+## <a name="see-also"></a>Informacje dodatkowe
 
 [Raporty finansowe](financial-reporting-intro.md)
 

@@ -98,7 +98,7 @@ Następujące składniki aparatu sprawozdawczości finansowej zapewniają łatwe
 </tbody>
 </table>
 
-#<a name="see-also"></a>Informacje dodatkowe
+## <a name="see-also"></a>Informacje dodatkowe
 [Generowanie raportu finansowego](generate-financial-report.md)
 
 

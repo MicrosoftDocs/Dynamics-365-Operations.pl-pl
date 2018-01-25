@@ -31,14 +31,14 @@ ms.lasthandoff: 12/18/2017
 
 W tym temacie opisano pakiet zawartość **Wartości rzeczywiste a budżet** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu. 
 
-# <a name="overview"></a>Przegląd
+## <a name="overview"></a>Przegląd
 
 Pakiet zawartości usługi Power BI **Wartości rzeczywiste a budżet** jest przeznaczony dla osób odpowiedzialnych za monitorowanie wartości rzeczywistych w porównaniu z zabudżetowanymi w swoich organizacjach. Pakiet zawartość usługi Power BI **Wartości rzeczywiste a budżet** zapewnia wgląd w odchylenia budżetu. Można analizować budżet dla bieżącego roku według kategorii kont, kodów budżetu, kont głównych, opisów konta głównego lub okresów obrachunkowych, aby lepiej zrozumieć przyczyny wszelkich odchyleń . 
 
-# <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
+## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 Raporty z pakietów zawartości usługi Power BI **Wartości rzeczywiste a budżet** są wyświetlane w obszarach roboczych **Budżet księgi i prognozy** i **Dyrektor finansowy**.
 
-# <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
 W poniższej tabeli przedstawiono szczegóły dotyczące mierników, które znajdują się na każdej stronie raportu w pakiecie zawartości dla usługi Power BI **Wartości rzeczywiste a budżet** .
 
 | Raport                      | Metryki |
@@ -50,7 +50,7 @@ W poniższej tabeli przedstawiono szczegóły dotyczące mierników, które znaj
 | Dochód netto                  | <ul><li>Dochód netto w roku</li><li>Cel dochodu netto założony w budżecie </li><ul> |
 
 
-# <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
+## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 
 | Jednostka                    | Zawartość |
 |---------------------------|----------|

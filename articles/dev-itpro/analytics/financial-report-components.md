@@ -112,7 +112,7 @@ Po otwarciu bloku konstrukcyjnego inni użytkownicy mają do niego dostęp tylko
 3.  Wybierz blok konstrukcyjny, a następnie kliknij przycisk **Cofnij wyewidencjonowanie**.
 4.  Kliknij **Tak**, aby zaewidencjonować blok konstrukcyjny.
 
-# <a name="see-also"></a>Informacje dodatkowe
+## <a name="see-also"></a>Informacje dodatkowe
 
 [Raporty finansowe](financial-reporting-intro.md)
 

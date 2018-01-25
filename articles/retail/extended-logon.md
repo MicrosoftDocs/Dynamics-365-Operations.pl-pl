@@ -34,8 +34,7 @@ ms.lasthandoff: 11/03/2017
 
 Ten temat omawia opcje konfigurowania rozszerzonego logowania do aplikacji Cloud POS i Retail Modern POS (MPOS).
 
-<a name="setting-up-extended-logon"></a>Konfigurowanie logowania rozszerzonego
-=========================
+## <a name="setting-up-extended-logon"></a>Konfigurowanie logowania rozszerzonego
 
 Konfiguracje masek kodów kreskowych można znaleźć w oknie **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktu sprzedaży** &gt; **Profile funkcji**. Na skróconej karcie **Funkcje** znajdują się następujące opcje, które są związane z logowaniem rozszerzonym.
 
@@ -55,23 +54,19 @@ Gdy wybrana jest opcja **Logowanie się pracowników za pomocą karty**, pracown
 
 Jeśli włączona jest opcja **Logowanie się pracowników za pomocą karty wymaga hasła**, logowanie się pracowników za pomocą karty wybiera tylko tego pracownika, który jest przypisany do przedstawionego logowania rozszerzonego. Pracownicy muszą nadal podać hasło, nawet gdy ta opcja jest wybrana.
 
-<a name="assigning-an-extended-logon"></a>Przypisywanie logowania rozszerzonego
-===========================
+## <a name="assigning-an-extended-logon"></a>Przypisywanie logowania rozszerzonego
 
 Domyślnie tylko menedżerowie mogą przypisywać pracownikom logowanie rozszerzone. Aby przypisać logowanie rozszerzone, przejdź do opcji **Logowanie rozszerzone** w aplikacji punktu sprzedaży. Następnie wyszukaj pracownika, wpisując w polu wyszukiwania jego identyfikator operatora. Wybierz pracownika, a następnie kliknij przycisk **Przypisz**. Na następnej stronie przeciągnij lub zeskanuj kartę lub kod kreskowy do logowania rozszerzonego, aby przypisać pracownika. Jeśli odczyt danych się powiedzie, przycisk **OK** stanie się aktywny. Kliknij **OK**, aby zapisać logowanie rozszerzone dla tego pracownika.
 
-<a name="deleting-an-extended-logon"></a>Anulowanie przypisania logowania rozszerzonego
-==========================
+## <a name="deleting-an-extended-logon"></a>Anulowanie przypisania logowania rozszerzonego
 
 Aby anulować przypisanie logowania rozszerzonego do pracownika, znajdź pracownika za pomocą operacji **Logowanie rozszerzone**. Wybierz pracownika, a następnie kliknij przycisk **Anuluj przypisanie**. Wszystkie poświadczenia logowania rozszerzonego przypisane do tego pracownika są usuwane.
 
-<a name="extending-extended-logon"></a>Rozszerzanie logowania rozszerzonego
-========================
+## <a name="extending-extended-logon"></a>Rozszerzanie logowania rozszerzonego
 
 Usługę logowania można rozszerzyć o obsługę dodatkowych urządzeń do logowania rozszerzonego, takich jak skanery ręczne. Aby uzyskać więcej informacji, zapoznaj się z dokumentacją rozszerzania punktu sprzedaży.
 
-<a name="using-extended-logon"></a>Używanie logowania rozszerzonego
-====================
+## <a name="using-extended-logon"></a>Używanie logowania rozszerzonego
 
 Jeśli logowanie rozszerzone jest skonfigurowane i pracownik ma przypisany kod kreskowy lub pasek magnetyczny, pracownik musi tylko przeciągnąć kartę magnetyczną w czytniku lub zeskanować kod kreskowy, gdy na ekranie wyświetlana jest strona logowania punktu sprzedaży. Jeśli logowanie wymaga podania hasła, wyświetla się również monit o podanie hasła.
 

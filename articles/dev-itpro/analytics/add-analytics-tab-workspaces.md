@@ -30,14 +30,14 @@ ms.lasthandoff: 11/06/2017
 > [!NOTE]
 > Ta funkcja jest obsługiwana w programie Dynamics 365 for Finance and Operations (w wersji 7.2 i nowszych).
 
-# <a name="introduction"></a>Wprowadzenie
+## <a name="introduction"></a>Wprowadzenie
 W tym temacie przedstawiono sposób osadzenia raportu programu Microsoft Power BI na karcie **Analizy** w obszarze roboczym. W przedstawionym tutaj przykładzie rozszerzymy obszar roboczy **Zarządzanie rezerwacjami** w aplikacji Zarządzanie flotą w celu osadzenia analitycznego obszaru roboczego na karcie **Analizy**.
 
-# <a name="prerequisites"></a>Wymagania wstępne
+## <a name="prerequisites"></a>Wymagania wstępne
 + Dostęp do środowiska deweloperskiego, w którym działa aktualizacja platformy 8 lub nowsza.
 + Raport analityczny (plik .pbix), który został utworzony przy użyciu aplikacji Microsoft Power BI Desktop i ma model danych pochodzący z bazy danych magazynu jednostek.
 
-# <a name="overview"></a>Przegląd
+## <a name="overview"></a>Przegląd
 Niezależnie od tego, czy rozszerzasz istniejący obszar roboczy aplikacji, czy wprowadzasz nowy własny obszar roboczy, możesz za pomocą osadzonych widoków analitycznych przekazywać wnikliwy i interaktywny obraz danych biznesowych. Proces dodawania karty analitycznego obszaru roboczego składa się z czterech etapów.
 
 1. Dodanie pliku .pbix jako zasobu usługi Dynamics 365.
@@ -48,7 +48,7 @@ Niezależnie od tego, czy rozszerzasz istniejący obszar roboczy aplikacji, czy 
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat tworzenia raportów analitycznych, zobacz [Wprowadzenie do programu Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Ta strona jest świetnym źródłem informacji, które mogą pomóc tworzyć zaawansowane rozwiązania do sprawozdawczości analitycznej.
 
-# <a name="add-a-pbix-file-as-a-resource"></a>Dodanie pliku .pbix jako zasobu
+## <a name="add-a-pbix-file-as-a-resource"></a>Dodanie pliku .pbix jako zasobu
 Przed rozpoczęciem należy utworzyć lub pozyskać raport programu Power BI, który zostanie osadzony w obszarze roboczym. Aby uzyskać więcej informacji na temat tworzenia raportów analitycznych, zobacz [Wprowadzenie do programu Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
  
 Wykonaj poniższe kroki, aby dodać plik .pbix jako artefakt projektu programu Visual Studio.
@@ -66,7 +66,7 @@ Wykonaj poniższe kroki, aby dodać plik .pbix jako artefakt projektu programu V
   
 Teraz gdy masz dodany plik .pbix jako zasób usługi Dynamics 365, można osadzać raporty w obszarach roboczych i dodawać bezpośrednie łącza do nich przy użyciu elementów menu.
 
-# <a name="add-a-tab-control-to-an-application-workspace"></a>Dodawanie formantu karty do obszaru roboczego aplikacji
+## <a name="add-a-tab-control-to-an-application-workspace"></a>Dodawanie formantu karty do obszaru roboczego aplikacji
 W tym przykładzie rozszerzymy obszar roboczy **Zarządzanie rezerwacjami** w modelu Zarządzanie flotą poprzez dodanie karty **Analizy** do definicji formularza **FMClerkWorkspace**.
  
 Na poniższej ilustracji widać, jak formularz **FMClerkWorkspace** wygląda w projektancie w programie Microsoft Visual Studio.
@@ -105,7 +105,7 @@ Teraz gdy masz dodane formanty formularza, które będą używany do osadzania r
  
 Zadanie rozszerzania definicji formularza raportu zostało zakończone. Aby uzyskać więcej informacji o używaniu rozszerzeń do wprowadzania dostosowań, zobacz [Dostosowywanie: Nakładanie i rozszerzenia](../extensibility/customization-overlayering-extensions.md).
 
-# <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Dodawanie logiki biznesowej języka X++ w celu osadzenia formantu podglądu
+## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Dodawanie logiki biznesowej języka X++ w celu osadzenia formantu podglądu
 Wykonaj następujące kroki, aby dodać logikę biznesową, która inicjuje formant podglądu raportów znajdujący się w obszarze roboczym **Zarządzanie rezerwacjami**.
 
 1. Otwórz projektanta formularza **FMClerkWorkspace** w celu rozszerzenia definicji projektu.
@@ -151,12 +151,12 @@ Zadanie dodawania logiki biznesowej inicjującej formant podglądu osadzonego ra
 > [!NOTE]
 > Korzystając z kart obszaru roboczego pod tytułem strony, można przejść do istniejącego widoku operacyjnego.
 
-# <a name="reference"></a>Odwołanie
+## <a name="reference"></a>Odwołanie
 
-## <a name="pbireporthelperinitializereportcontrol-method"></a>Metoda PBIReportHelper.initializeReportControl
+### <a name="pbireporthelperinitializereportcontrol-method"></a>Metoda PBIReportHelper.initializeReportControl
 Ten rozdział zawiera informacje o klasie pomocy służącej do osadzania raportu programu Power BI (zasobu .pbix) w formancie grupy formularzy.
 
-### <a name="syntax"></a>Składnia
+#### <a name="syntax"></a>Składnia
 ```
 public static void initializeReportControl(
      str                 _resourceName,
@@ -167,7 +167,7 @@ public static void initializeReportControl(
      List                _defaultFilters = new List(Types::Class))
 ```
 
-### <a name="parameters"></a>Parametry
+#### <a name="parameters"></a>Parametry
 
 | Nazwisko | opis |
 |---|---|
