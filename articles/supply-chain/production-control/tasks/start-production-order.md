@@ -1,4 +1,4 @@
---- 
+---
 title: Rozpoczynanie zlecenia produkcyjnego
 description: "Ta procedura pokazuje sposób rozpoczynania zlecenia produkcyjnego na wydziale produkcji."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -17,10 +17,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 33558053d33d9fe4a2ecb3576da569b2c441db80
+ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
+ms.openlocfilehash: 3b5657e5eb2719702eae3a3c5178b3a04f7545e3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 # <a name="start-a-production-order"></a><span data-ttu-id="c1e0c-103">Rozpoczynanie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="c1e0c-103">Start a production order</span></span>
@@ -70,5 +70,4 @@ ms.lasthandoff: 09/29/2017
 7. <span data-ttu-id="c1e0c-146">Kliknij przycisk Księguj.</span><span class="sxs-lookup"><span data-stu-id="c1e0c-146">Click Post.</span></span>
 8. <span data-ttu-id="c1e0c-147">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c1e0c-147">Click OK.</span></span>
     * <span data-ttu-id="c1e0c-148">W arkuszu karty marszruty jest rejestrowany czas spędzony na poszczególnych operacjach.</span><span class="sxs-lookup"><span data-stu-id="c1e0c-148">In the Route card journal, the time spent on the individual operations is recorded.</span></span> <span data-ttu-id="c1e0c-149">Mogą być również podawane ilości towarów prawidłowych i błędnych.</span><span class="sxs-lookup"><span data-stu-id="c1e0c-149">Good and error quantity can also be reported.</span></span>  
-
 

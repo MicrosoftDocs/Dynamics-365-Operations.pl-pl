@@ -17,10 +17,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d56f861dbbf579e44fcd3fc4d8b45c24029acecc
+ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
+ms.openlocfilehash: f9de2f79c68fead5ede714ff05bba97118874aad
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 # <a name="configure-a-worker-using-the-mobile-job-device"></a><span data-ttu-id="6d68c-103">Konfigurowanie pracownika za pomocą urządzenia przenośnego zadania</span><span class="sxs-lookup"><span data-stu-id="6d68c-103">Configure a worker using the mobile job device</span></span>
@@ -68,5 +68,4 @@ ms.lasthandoff: 09/29/2017
 5. <span data-ttu-id="6d68c-140">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="6d68c-140">Click Edit.</span></span>
 6. <span data-ttu-id="6d68c-141">W polu Jednostka produkcyjna można ustawić domyślny filtr dla pracownika.</span><span class="sxs-lookup"><span data-stu-id="6d68c-141">In the Production unit field, you can set the default filter for the worker.</span></span> <span data-ttu-id="6d68c-142">Daje to pewność, że gdy pracownik loguje się do urządzenia, wyświetlane są tylko zadania produkcyjne dla wybranej jednostki produkcyjnej.</span><span class="sxs-lookup"><span data-stu-id="6d68c-142">This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device.</span></span>
 7. <span data-ttu-id="6d68c-143">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="6d68c-143">Close the page.</span></span>
-
 
