@@ -1,4 +1,4 @@
---- 
+---
 title: "Włączanie procesu listy płac obliczanej na podstawie czasu i frekwencji"
 description: "W tej procedurze pokazano sposób włączania procesu listy płac dla modułu Czas i frekwencja."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -68,5 +68,4 @@ W tej procedurze pokazano sposób włączania procesu listy płac dla modułu Cz
 6. Rozwiń sekcję Rejestracja czasu.
 7. Kliknij przycisk Edytuj.
 8. W polu Umowa płacowa wprowadź lub wybierz wartość.
-
 

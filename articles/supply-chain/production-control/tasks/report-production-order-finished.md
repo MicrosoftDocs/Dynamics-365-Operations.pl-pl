@@ -1,4 +1,4 @@
---- 
+---
 title: "Zgłaszanie zlecenia produkcyjnego jako zakończonego"
 description: "W tej procedurze pokazano sposób raportowania zlecenia produkcyjnego jako ukończonego."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -50,5 +50,4 @@ W tej procedurze pokazano sposób raportowania zlecenia produkcyjnego jako ukoń
 3. Na liście oznacz wybrany wiersz.
 4. Na liście kliknij łącze w wybranym wierszu.
     * Arkusz zgłoszonych wyrobów gotowych jest księgowany. Jeśli chcesz dokonać korekt w arkuszu, można ręcznie utworzyć nowy arkusz, gdzie można dokonać zmian.  
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: Planowanie zlecenia produkcyjnego
 description: "W tej procedurze pokazano sposób planowania zlecenia produkcyjnego."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -53,5 +53,4 @@ W tej procedurze pokazano sposób planowania zlecenia produkcyjnego. Dane wykorz
     * Strony Obciążenie zdolności produkcyjnych pokazuje zdolności produkcyjne zarezerwowane wskutek planowania zadań, aktualną łączną liczbę godzin rezerwacji zasobu oraz liczbę godzin, które są dostępne na potrzeby zaplanowania zasobu dla zadań.  
 6. Zamknij stronę.
 7. Zamknij stronę.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: Wydawanie zlecenia produkcyjnego
 description: "W tej procedurze pokazano sposób zwalniania zlecenia produkcyjnego."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: johanho
@@ -39,5 +39,4 @@ W tej procedurze pokazano sposób zwalniania zlecenia produkcyjnego. Dane wykorz
 5. Zaznacz pole wyboru Drukowanie karty marszruty.
 6. Kliknij przycisk OK.
 7. Zamknij stronę.
-
 

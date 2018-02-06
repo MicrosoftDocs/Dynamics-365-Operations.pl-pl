@@ -1,4 +1,4 @@
---- 
+---
 title: Rozpoczynanie zlecenia produkcyjnego
 description: "Ta procedura pokazuje sposób rozpoczynania zlecenia produkcyjnego na wydziale produkcji."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -70,5 +70,4 @@ Ta procedura pokazuje sposób rozpoczynania zlecenia produkcyjnego na wydziale p
 7. Kliknij przycisk Księguj.
 8. Kliknij przycisk OK.
     * W arkuszu karty marszruty jest rejestrowany czas spędzony na poszczególnych operacjach. Mogą być również podawane ilości towarów prawidłowych i błędnych.  
-
 
