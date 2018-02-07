@@ -1,6 +1,7 @@
 ---
 title: "Przegląd urządzeń peryferyjnych sieci sprzedaży"
 description: "W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi sieci sprzedaży."
+author: rubencdelgado
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article

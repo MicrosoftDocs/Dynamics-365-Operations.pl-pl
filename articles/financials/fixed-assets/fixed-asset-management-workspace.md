@@ -1,7 +1,7 @@
 ---
 title: "Obszar roboczy Zarządzanie środkami trwałymi"
 description: "Ten temat zawiera informacje o obszarze roboczym Zarządzanie środkami trwałymi. Ten obszar roboczy pokazuje informacje związane z środkami trwałymi wprowadzonymi w systemie. Zawiera widoki podsumowania i analizy."
-author: saraschi
+author: saraschi2
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
@@ -14,7 +14,7 @@ ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.assetid: 
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT

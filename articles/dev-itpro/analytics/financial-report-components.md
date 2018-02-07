@@ -1,7 +1,7 @@
 ---
 title: "Składniki raportu finansowego"
 description: "W tym artykule opisano, jak składniki (bloki konstrukcyjne) definicji raportów są wykorzystywane w sprawozdawczości finansowej. Tymi blokami konstrukcyjnymi mogą być definicje wierszy, kolumn i drzewa raportowania. Artykuł wyjaśnia, jak organizować i blokować bloki konstrukcyjne oraz jak pracować z grupami bloków konstrukcyjnych."
-author: aolson
+author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
