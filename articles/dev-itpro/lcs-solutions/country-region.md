@@ -8,6 +8,7 @@ ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3d3ad89f80c3e3f42e117109f4a76232795b7d64
-ms.openlocfilehash: 9322b970eea9ab5ac01ae8461285b4dbcc1624a3
+ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
+ms.openlocfilehash: 1cb4305b3ef425ec19ae63c8186bffef212b9890
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/23/2018
 
 ---
 
@@ -163,7 +164,7 @@ W poniższych sekcjach wymieniono zasoby według kraju/regionu.
 - [Świadectwa wywozowe UE](../../financials/localizations/emea-entry-certificates.md)
 - [Raportowanie listy sprzedaży do UE](../../financials/localizations/emea-eu-sales-list.md)
 - [Korekty kursów wymiany](../../financials/localizations/emea-exchange-rate-adjustments.md)
-- [Formaty plików metod płatności](../../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
+- [Formaty plików dla metod płatności](../../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
 - [Likwidacja środków trwałych w Estonii i na Litwie](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
 - [Importowanie plików ISO20022](../../financials/localizations/emea-ISO20022-file-formats.md)
 - [Intrastat](../../financials/localizations/emea-intrastat.md)
@@ -275,6 +276,8 @@ W poniższych sekcjach wymieniono zasoby według kraju/regionu.
 
 ### <a name="norway"></a>Norwegia
 
+-   [Kasy w Norwegii](../../retail/localizations/emea-nor-cash-registers.md)
+-   [Przewodniki wdrażania kas w Norwegii](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
 -   [Format importu Nets](../../financials/localizations/emea-nor-nets-import-format.md)
 -   [Deklaracja VAT](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
 

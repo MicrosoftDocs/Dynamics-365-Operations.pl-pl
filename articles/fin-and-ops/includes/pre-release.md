@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Ta funkcja stanowi część wydania kierowanego i jest dostępna tylko dla użytkowników, którzy uczestniczą w Programie korzystania z ciągłych automatycznych aktualizacji (PKCAA). Ta funkcja zostanie umieszczona w innym przyszłym wydaniu, które będzie ogólnie dostępne. Aby uzyskać więcej informacji dotyczących wydań standardowych i kierowanych, zobacz [Standardowe i kierowane wydania platformy](../get-started/public-preview-releases.md).

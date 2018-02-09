@@ -113,7 +113,8 @@
 #### [Dostosowywanie elementów modelu przy użyciu rozszerzeń (samouczek)](extensibility/customize-model-elements-extensions.md)
 #### [Dostosowywanie za pomocą nakładania warstw i rozszerzeń](extensibility/customization-overlayering-extensions.md)
 ### Co nowego
-#### [Zamiany dotyczące rozszerzeń — lipiec 2017](extensibility/changes-july-2017.md)
+#### [Zmiany w zakresie możliwości rozszerzania — lipiec 2017](extensibility/changes-july-2017.md)
+#### [Zmiany w zakresie możliwości rozszerzania w rozwiązaniu Dynamics 365 for Finance and Operations Enterprise Edition 7.3](extensibility/extensibility-changes-73.md)
 ### Informacje podstawowe
 #### [Narzucane dostosowania](extensibility/intrusive-customizations.md)
 #### [Rozszerzenia klas](extensibility/class-extensions.md)
@@ -138,14 +139,19 @@
 #### [Modyfikowanie właściwości kontrolki formularza](extensibility/modify-control-properties.md)
 #### [Zmienianie etykiety](extensibility/change-label.md)
 #### [Rozszerzanie zakresu sekwencji numerów](extensibility/extend-number-sequence-scope.md)
+#### [Dodawanie nowego wymiaru magazynowego](extensibility/inventory-dimensions.md)
+#### [Zmiany dotyczące możliwości rozszerzania związanych z cenami i rabatami](extensibility/pricing-app73.md)
+#### [Rozszerzenie mapowania tabel](extensibility/map-extensions.md)
+#### [Rozszerzanie mapowań tabel używanych jako interfejsy](extensibility/maps-as-interfaces.md)
+#### [Rozszerzanie mapowań tabel używanych na potrzeby przechowywania wersji](extensibility/maps-with-versioning.md)
 
 
 
 
 ## Wydajność
-### [Śledzenie danych za pomocą Analizatora śledzenia](perf-test/trace-trace-tutorial.md)
+### [Śledzenie danych za pomocą narzędzia Trace parser](perf-test/trace-trace-tutorial.md)
 ### [Testowanie z użyciem zestawu PerfSDK i wielu użytkowników za pomocą usługi Visual Studio Team Services](perf-test/perfsdk-tutorial.md)
-### [Diagnozowanie problemów i analizowanie problemów z wydajnością za pomocą Analizatora śledzenia](perf-test/trace-parser.md)
+### [Diagnozowanie problemów i analizowanie problemów z wydajnością za pomocą narzędzia Trace parser](perf-test/trace-parser.md)
 ### [Czasomierz wydajności](perf-test/performance-timer.md)
 ## Obsługa testowania w programie Visual Studio
 ### [Testowanie i weryfikacje](perf-test/testing-validation.md)
@@ -523,16 +529,16 @@
 
 # [Uaktualnianie i migracja](migration-upgrade/upgrade-home-page.md)
 ## [Uaktualnianie z systemu AX 2012 do rozwiązania Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
-### [Analizowanie — używanie narzędzia Analizator uaktualnienia w celu zaplanowania uaktualnienia](migration-upgrade/upgrade-analyzer-tool.md)
-### [Analizowanie — używanie usługi uaktualniania kodu w celu oszacowania nakładu pracy potrzebnego do uaktualnienia kodu](migration-upgrade/analyze-code-upgrade.md)
-### [Analizowanie — wdrażanie w środowisku piaskownicy](migration-upgrade/analysis-sandbox.md)
-### [Uaktualnianie — uaktualnianie danych w środowisku projektowym](migration-upgrade/data-upgrade-2012.md)
-### [Uaktualnianie — zadania uaktualniania danych systemu AX 2012](migration-upgrade/prepare-data-upgrade.md)
-### [Uaktualnianie — uaktualnianie danych w środowisku piaskownicy](migration-upgrade/upgrade-data-sandbox.md)
-### [Weryfikowanie — testowanie przełączenia](migration-upgrade/upgrade-cutover-testing.md)
-### [Weryfikowanie — zadania do wykonania po uaktualnieniu](migration-upgrade/app-validation-process.md)
-### [Weryfikowanie — testowanie funkcjonalne](migration-upgrade/upgrade-functional-validation.md)
-### [Weryfikowanie — przygotowanie do rozpoczęcia eksploatacji](migration-upgrade/upgrade-go-live-prep.md)
+### [Uaktualnianie systemu AX 2012 — używanie narzędzia Analizator możliwości uaktualnienia na potrzeby planowania](migration-upgrade/upgrade-analyzer-tool.md)
+### [Uaktualnianie systemu AX 2012 — używanie usługi uaktualniania kodu w celu oszacowania nakładu pracy](migration-upgrade/analyze-code-upgrade.md)
+### [Uaktualnianie systemu AX 2012 — wdrażanie w środowisku piaskownicy](migration-upgrade/analysis-sandbox.md)
+### [Uaktualnianie systemu AX 2012 — uaktualnianie danych w środowisku projektowym](migration-upgrade/data-upgrade-2012.md)
+### [Uaktualnianie systemu AX 2012 — zadania uaktualniania danych systemu AX 2012](migration-upgrade/prepare-data-upgrade.md)
+### [Uaktualnianie systemu AX 2012 — uaktualnianie danych w środowisku piaskownicy](migration-upgrade/upgrade-data-sandbox.md)
+### [Uaktualnianie systemu AX 2012 — testowanie przełączenia](migration-upgrade/upgrade-cutover-testing.md)
+### [Uaktualnianie systemu AX 2012 — zadania do wykonania po uaktualnieniu](migration-upgrade/app-validation-process.md)
+### [Uaktualnianie systemu AX 2012 — wykonanie testów funkcjonalnych](migration-upgrade/upgrade-functional-validation.md)
+### [Uaktualnianie systemu AX 2012 — przygotowanie do rozpoczęcia eksploatacji](migration-upgrade/upgrade-go-live-prep.md)
 
 
 ### Zmiany mające wpływ na uaktualnianie z systemu AX 2012
@@ -590,6 +596,8 @@
 ## [Przetwarzanie wsadowe](sysadmin/batch-processing-overview.md)
 ### [Omówienie serwera przetwarzania wsadowego](sysadmin/batch-server-overview.md)
 ### [Tworzenie zadania wsadowego](sysadmin/tasks/create-batch-job.md)
+
+## [Tworzenie reguł dla Doradcy optymalizacji](sysadmin/optimization-advisor.md)
 
 # Lifecycle Services
 ## [Omówienie usługi Lifecycle Services](lifecycle-services/lcs.md)
