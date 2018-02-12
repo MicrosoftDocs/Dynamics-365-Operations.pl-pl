@@ -44,8 +44,7 @@ Organizacja może wybrać kurs wymiany, który służy do obliczania podatku od 
 
 Po zaksięgowaniu dokumentu w walucie obcej wszelkie występujące różnice kursowe są księgowane na określonych kontach księgowych.
 
-<a name="prerequisites"></a>Wymagania wstępne
-=============
+## <a name="prerequisites"></a>Wymagania wstępne
 
 Aby korzystać z ten funkcjonalności, należy odpowiednio skonfigurować system.
 
@@ -55,8 +54,7 @@ Aby korzystać z ten funkcjonalności, należy odpowiednio skonfigurować system
 4.  Skonfiguruj konta różnic podatków naliczonego i należnego oraz konta przeciwstawne tych różnic w grupach księgowania w księdze w oknie **Podatek** &gt; **Ustawienia** &gt; **Podatek** &gt; **Grupy księgowania**.
 5.  Opcjonalnie: Skonfiguruj regułę obliczania kursu wymiany dla pary walut w oknie **Księga główna** &gt; **Waluty** &gt; **Zasady obliczania kursu wymiany dla par walut**. Zasady obliczania kursu wymiany są używane do przeliczania kwot podatku VAT na fakturach sprzedaży w walucie obcej na kwoty podatku VAT w walucie docelowej.
 
-<a name="overview"></a>Przegląd
-========
+## <a name="overview"></a>Przegląd
 
 Jeśli po skonfigurowaniu w systemie używania kursów wymiany dla podatku VAT trzeba wprowadzić dokument lub utworzyć zamówienie wykorzystujące walutę obcą, można użyć strony **Transakcje podatkowe**, aby ustawić wartość **Data rejestru VAT**, która będzie powodowała pobieranie i ustawianie domyślnej wartości **Kurs wymiany podatku**. Oba pola można edytować. Można również użyć pola **Podstawa po korekcie (kurs wymiany dla podatku VAT)** lub **Skorygowana kwota podatku (kurs wymiany dla podatku VAT)**, aby wprowadzić rzeczywiste kwoty podatku VAT w walucie lokalnej określonej w dokumencie zewnętrznym. Przeglądając zapisy rachunkowe, można wyświetlać różnice kwot podatku na stronie **Arkusz księgi podrzędnej**. Gdy dokument jest księgowany, dla transakcji księgowanych na skonfigurowanych przez Ciebie kontach księgi głównej możesz przeglądać wszelkie różnice w kwotach podatku spowodowane różnicami między kursem wymiany waluty dla podatku VAT a kursem wymiany waluty rozliczeniowej używanej w organizacji.
 

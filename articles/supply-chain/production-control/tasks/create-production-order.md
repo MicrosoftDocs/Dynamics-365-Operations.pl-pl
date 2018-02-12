@@ -1,4 +1,4 @@
---- 
+---
 title: Tworzenie zlecenia produkcyjnego
 description: "W tej procedurze pokazano sposób tworzenia zlecenia produkcyjnego."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -69,5 +69,4 @@ W tej procedurze pokazano sposób tworzenia zlecenia produkcyjnego. Dane wykorzy
     * Zmiana czasu procesu wpływa na szacowane zużycie w marszrucie i koszt zlecenia produkcyjnego.  
 6. Kliknij przycisk Zapisz.
 7. Zamknij stronę.
-
 

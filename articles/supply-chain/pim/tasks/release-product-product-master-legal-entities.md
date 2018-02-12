@@ -1,7 +1,7 @@
 --- 
 title: "Zwalnianie produktu/produktu głównego do firm"
 description: "Ta procedura zawiera instruktaż sposobu zwalniania produkt lub produktu głównego do jednej lub więcej firm."
-author: josaw1
+author: BibiSp
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process

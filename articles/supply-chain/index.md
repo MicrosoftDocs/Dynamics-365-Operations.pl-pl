@@ -3,7 +3,7 @@ title: "Zarządzanie łańcuchem dostaw — strona główna"
 description: "Ten temat zawiera listę tematów Pomocy i innych zasobów dotyczących funkcji zarządzania łańcuchem dostaw w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 01/10/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 98008b494f675209949afd961e3cd06dfdc9ec9a
-ms.openlocfilehash: 81a5d21233f12e7c26f0cce6a6c05fefde2ca7dd
+ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
+ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/22/2018
 
 ---
 
@@ -52,18 +52,20 @@ Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 
 ## <a name="videos"></a>Filmy
 
-### <a name="get-started"></a>Rozpoczynanie pracy  
+Te krótkie filmy ułatwiają poznanie nowych funkcji rozwiązania Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 7.3 (grudzień 2017).
 
-Te krótkie filmy ułatwiają rozpoczęcie pracy z nowymi funkcjami rozwiązania Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z lipca 2017.
+-  [Integracja scenariusza Od potencjalnego klienta do środków pieniężnych](https://youtu.be/AVV9x5x-XCg) 
+-  [Doradca optymalizacji](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+
+Te krótkie filmy ułatwiają poznanie nowych funkcji rozwiązania Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017).
 
 -  [Rozpoczęcie korzystania z modułu Rachunek kosztów](https://youtu.be/1pUDtJQZ8FU)
 -  [Obszar roboczy kontroli kosztów na urządzeniach przenośnych](https://youtu.be/imsuTg8rUVk)
 -  [Korzystanie z programu Excel podczas analizy kosztów](https://youtu.be/-HKHYdClvx8)
 -  [Zatwierdzanie zamówień zakupu na urządzeniu przenośnym](https://youtu.be/gZ-gOlJe7H8)
--  [Planowanie wizualne za pomocą wykresu Gantta w zleceniach i szarżach produkcyjnych](https://youtu.be/BtbuShkGj4I)
+-  [Planowanie wizualne za pomocą wykresu Gantta w zleceniach produkcyjnych i zamówieniach partii](https://youtu.be/BtbuShkGj4I)
 
-### <a name="tech-conference-recordings"></a>Nagrania z konferencji technologicznej
-Większość z nich dotyczy funkcji poprzedniej wersji rozwiązania Finance and Operations, ale w obecnej wersji są używane te same pojęcia i podobne procedury. 
+Te nagrania konferencji technicznych dotyczą funkcji poprzedniej wersji rozwiązania Finance and Operations, ale w obecnej wersji są używane te same pojęcia i podobne procedury. 
 
 -  <a href="https://youtu.be/zotrj3SbCl4">Konfigurator produktów w rozwiązaniu Microsoft Dynamics AX</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Planowanie główne — porady i wskazówki dotyczące rozwiązywania problemów z wydajnością</a>

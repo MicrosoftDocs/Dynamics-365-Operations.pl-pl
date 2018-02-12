@@ -137,7 +137,7 @@ Różnice w inwentaryzacji ciągłej występują w następujących scenariuszach
 
 Na stronie **Inwentaryzacja cykliczna oczekuje na przegląd** można uzgodnić różnice zliczonej wartości, a następnie zaakceptować zliczoną wartość. Na stronie **Dostępne zapasy według lokalizacji** można zweryfikować zmodyfikowane obliczenie ilości towaru. Zliczona wartość jest odrzucana, jeśli różnicy nie można zatwierdzić.
 
-# <a name="see-also"></a>Informacje dodatkowe
+## <a name="see-also"></a>Informacje dodatkowe
 [Konfigurowanie urządzeń przenośnych do pracy w magazynie](configure-mobile-devices-warehouse.md)
 
 

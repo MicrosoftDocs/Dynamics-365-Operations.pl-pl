@@ -1,4 +1,4 @@
---- 
+---
 title: "Kończenie zlecenia produkcyjnego"
 description: "W tej procedurze pokazano sposób kończenia zlecenia produkcyjnego."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -46,5 +46,4 @@ W tej procedurze pokazano sposób kończenia zlecenia produkcyjnego. Dane wykorz
 1. W okienku akcji kliknij pozycję Zarządzanie kosztami.
 2. Kliknij przycisk Wyświetl porównanie kosztów.
     * Po zakończeniu zlecenia produkcyjnego można porównywać szacowany koszt własny ze zrealizowanym kosztem własnym w celu uzyskania obrazu odchyleń względem kosztów produkcji.  
-
 

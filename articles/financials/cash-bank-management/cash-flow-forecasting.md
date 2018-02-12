@@ -1,7 +1,7 @@
 ---
 title: "Prognozowanie przepływów pieniężnych"
 description: "Ten temat zawiera omówienie procesu prognozowania przepływów pieniężnych. Wyjaśniono również, jak prognozowanie przepływów pieniężnych jest zintegrowane z innych modułami w systemie."
-author: saraschi
+author: saraschi2
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -13,7 +13,7 @@ audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: sarasch
+ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT

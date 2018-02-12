@@ -1,4 +1,4 @@
---- 
+---
 title: "Przygotowanie zadania procesu w systemie Kanban, gdy materiały są dostępne dla komórki roboczej"
 description: "To zadanie koncentruje się na przygotowaniu zadania przetwarzania w systemie Kanban, gdy wszystkie materiały są dostępne dla komórki roboczej."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -40,5 +40,4 @@ To zadanie koncentruje się na przygotowaniu zadania przetwarzania w systemie Ka
     * W przypadku wybrania wielu zadań na liście pobrania będzie widoczna suma wszystkich towarów potrzebnych dla wybranych zadań.  
 6. Kliknij przycisk Przygotuj.
     * Proces przygotowywania jest teraz zakończony. Zaznaczone pole wyboru dla wszystkich wierszy na liście pobrania wskazuje, że dostawa jest pobrana.  
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: Szacowanie zlecenia produkcyjnego
 description: "Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnego zestawu danych."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -42,5 +42,4 @@ Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lu
 1. W okienku akcji kliknij pozycję Zarządzanie kosztami.
 2. Kliknij opcję Wyświetl szczegóły obliczeń.
     * Na tej stronie jest wyświetlany podział kosztów. Na przykład można wyświetlić całkowity koszt własny na jednostkę wyrobu gotowego w pierwszym wierszu. Kolejne wiersze zawierają koszty według listy składowej, marszruty produkcji i kosztów pośrednich.  
-
 

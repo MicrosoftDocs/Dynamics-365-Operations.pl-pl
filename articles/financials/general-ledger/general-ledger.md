@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -43,7 +44,7 @@ Można przeprowadzić alokację lub dystrybucję kwot pieniężnych do jednego l
 
 [![Proces biznesowy](./media/GL-process.PNG)](./media/GL-process.PNG)
 
-# <a name="sales-tax"></a>Podatek
+## <a name="sales-tax"></a>Podatek
 Każda firma zbiera i płaci podatki w różnych urzędach. Przepisy i stawki różnią się w zależności od kraju/regionu, województwa, powiatu i miasta.
 Ponadto reguły muszą być aktualizowane okresowo, jeśli zmieniają się wymagania urzędów skarbowych. Kody podatków zawierają podstawowe informacje o wysokości podatków pobranych i odprowadzonych do urzędu skarbowego. Podczas konfigurowania kodów podatków można zdefiniować kwoty lub wartości procentowe, które muszą zostać pobrane. Można również zdefiniować różne metody, za pomocą których te kwoty lub wartości procentowe są stosowane do kwoty transakcji. Tematy w tej sekcji zawierają informacje o sposobie ustawiania kodów podatków dla metod i stawek wymaganych przez urzędy skarbowe.
 
@@ -52,13 +53,13 @@ Ponadto reguły muszą być aktualizowane okresowo, jeśli zmieniają się wymag
  - [Reguły płatności podatku i zaokrąglania](round-sales-tax-payments.md)
 
 
-### <a name="additional-resources"></a>Dodatkowe zasoby
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
-#### <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
+### <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
 
 Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadmap.dynamics.com/), aby zobaczyć, jakie nowe funkcje zostały wydane, a jakie są jeszcze opracowywane. 
 
-#### <a name="blogs"></a>Blogi
+### <a name="blogs"></a>Blogi
 
 Opinie, wiadomości i inne informacje dotyczące modułu Rozrachunki z dostawcami możesz znaleźć w [blogu usługi Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
@@ -66,10 +67,10 @@ Wiele wpisów dotyczących modułu Księga główna jest dostępnych w [blogu ze
 
 Blog [społeczności partnerów zajmujących się oprogramowaniem Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
 
-#### <a name="task-guides"></a>Przewodniki zadań
+### <a name="task-guides"></a>Przewodniki zadań
 Dodatkowa pomoc jest dostępna w formie przewodników po zadaniach wewnątrz rozwiązania Finance and Operations. Aby uzyskać dostęp do przewodników po zadaniach, kliknij przycisk Pomoc na dowolnej stronie.
 
-#### <a name="videos"></a>Filmy
+### <a name="videos"></a>Filmy
 
 Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 

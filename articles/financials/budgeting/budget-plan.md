@@ -53,10 +53,9 @@ Julia używa następującego szablonu programu Excel do przygotowania budżetu:
 
 [![Szablon programu Excel](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
 
-<a name="exercise-1-configuration"></a>Ćwiczenie 1: Konfiguracja
-=========================
+## <a name="exercise-1-configuration"></a>Ćwiczenie 1: Konfiguracja
 
-## <a name="task-1-create-organizational-hierarchy"></a>**Zadanie 1: Tworzenie hierarchii organizacyjnej**
+### <a name="task-1-create-organizational-hierarchy"></a>**Zadanie 1: Tworzenie hierarchii organizacyjnej**
 Cały proces budżetowania odbywa się w dziale finansów, dlatego Julia musi utworzyć bardzo prostą hierarchię organizacji, składającą się tylko z działu finansów. 1.1. Przejdź do okna Hierarchie organizacyjne (Administrowanie organizacją &gt; Organizacje &gt; Hierarchie organizacyjne) i kliknij przycisk Nowy.
 
 ![Hierarchia organizacyjna](./media/screenshot3.png) 
@@ -85,7 +84,7 @@ Cały proces budżetowania odbywa się w dziale finansów, dlatego Julia musi ut
 
 [![Data obowiązywania](./media/screenshot9.png)](./media/screenshot9.png)
 
-## <a name="task-2-configure-user-security"></a>Zadanie 2: Konfigurowanie zabezpieczeń użytkownika
+### <a name="task-2-configure-user-security"></a>Zadanie 2: Konfigurowanie zabezpieczeń użytkownika
 Planowanie budżetu używa specjalnych zasad zabezpieczeń do konfigurowania dostępu do danych planów budżetu. Julia musi przyznać sobie dostęp do planów budżetu działu finansowego. 
 
 2.1. Przełącz się do kontekstu firmy DEMF. 
@@ -109,7 +108,7 @@ Planowanie budżetu używa specjalnych zasad zabezpieczeń do konfigurowania dos
 
 [![Udzielanie dostępu](./media/screenshot14.png)](./media/screenshot14.png)
 
-## <a name="task-3-create-scenarios"></a>Zadanie 3: Tworzenie scenariuszy
+### <a name="task-3-create-scenarios"></a>Zadanie 3: Tworzenie scenariuszy
 3.1. Wybierz kolejno opcje Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu. Na stronie scenariuszy zwróć uwagę na scenariusze, które wykorzystasz w dalszej części ćwiczenia: Wartości rzeczywiste w poprzednim roku i Zabudżetowane. 
 
 *Uwaga: możesz utworzyć nowe scenariusze i użyć ich zamiast proponowanych.* 
@@ -118,7 +117,7 @@ Planowanie budżetu używa specjalnych zasad zabezpieczeń do konfigurowania dos
 
 *Uwaga: Ze względu na to, że do przygotowania budżetu Julia nie używa procesu formalnego zatwierdzenia, w tym ćwiczeniu pominiemy konfigurację przepływów pracy, etapów i etapów przepływów pracy, a użyjemy istniejącej konfiguracji przepływu pracy automatycznego zatwierdzania. Ta konfiguracja przepływu pracy jest omówiona w dodatku.*
 
-## <a name="task-4-create-budget-plan-columns"></a>Zadanie 4: Tworzenie kolumn planu budżetu
+### <a name="task-4-create-budget-plan-columns"></a>Zadanie 4: Tworzenie kolumn planu budżetu
 Kolumny planu budżetu zawierają wartości pieniężne lub ilości i można je umieścić w układzie dokumentu planu budżetu. W naszym przykładzie musimy utworzyć kolumnę dla Wartości rzeczywistych w poprzednim roku oraz 12 kolumn dla wszystkich miesięcy w budżetowanym roku. Można utworzyć kolumny albo po prostu klikając przycisk Dodaj i wypełniając wartości lub z pomocą jednostki danych. W tym ćwiczeniu użyjemy jednostki danych do wstawienia wartości. 
 
 4.1. W oknie Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu otwórz stronę Kolumny. Kliknij przycisk Office w prawym górnym rogu formularza i wskaż opcję Kolumny (niefiltrowane). 
@@ -151,7 +150,7 @@ Kolumny planu budżetu zawierają wartości pieniężne lub ilości i można je 
 
 [![Odśwież](./media/screenshot23.png)](./media/screenshot23.png)
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Zadanie 5: Utwórz szablony i układy dokumentów planu budżetu
+### <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Zadanie 5: Utwórz szablony i układy dokumentów planu budżetu
 Układ określa, jak siatka wierszy dokumentu planu budżetu będzie wyglądać, gdy użytkownik otworzy dokument planu budżetu. Istnieje również możliwość przełączenia układu dokumentu planu budżetu, żeby zobaczyć te same dane pod różnymi kątami. Teraz, kiedy Julia ma już zdefiniowane kolumny, które zostaną wykorzystane w dokumencie planu budżetu, musi utworzyć układ dokumentu planu budżetu, który będzie wyglądał podobnie do tabeli programu Excel wykorzystywanej do utworzenia danych budżetu (zobacz sekcję Omówienie scenariusza w tym ćwiczeniu). 
 
 5.1. W oknie Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu otwórz stronę Układy. Utwórz nowy układ dla wpisu miesięcznego budżetu:
@@ -171,7 +170,7 @@ Na podstawie definicji układu planu budżetu możemy utworzyć szablon programu
 
 5.3. &lt; Opcjonalny krok&gt; Zmodyfikuj szablon programu Excel, tak aby był bardziej przyjazny użytkownikowi — dodaj formuły sumy, pola nagłówków, formatowanie itd. Zapisz zmiany i załaduj plik do układu planu budżetu, klikając kolejno opcje Układ &gt; Przekaż. [![Przekazywanie](./media/screenshot26.png)](./media/screenshot26.png)
 
-## <a name="task-6-create-a-budget-planning-process"></a>Zadanie 6: Utwórz proces planowania budżetu
+### <a name="task-6-create-a-budget-planning-process"></a>Zadanie 6: Utwórz proces planowania budżetu
 Julia musi utworzyć i aktywować nowy proces planowania budżetu, uwzględniając całą powyższą konfigurację, aby rozpocząć wprowadzanie planów budżetu. Proces planowania budżetu określa, jakie organizacje budżetowania, przepływ pracy, układy i szablony będą używane do tworzenia planów budżetu. 
 
 6.1. Przejdź do okna Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Proces planowania budżetu i utwórz nowy rekord.
@@ -192,10 +191,9 @@ Julia musi utworzyć i aktywować nowy proces planowania budżetu, uwzględniaj�
 
 [![Aktywowanie](./media/screenshot28.png)](./media/screenshot28.png)
 
-<a name="exercise-2-process-simulation"></a>Ćwiczenie 2: Symulacja procesu
-==============================
+## <a name="exercise-2-process-simulation"></a>Ćwiczenie 2: Symulacja procesu
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Zadanie 7: Generowanie danych początkowych dla planu budżetu z księgi głównej
+### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Zadanie 7: Generowanie danych początkowych dla planu budżetu z księgi głównej
 7.1. Przejdź do okna Budżetowanie &gt; Okresowo &gt; Generowanie planu budżetu z księgi głównej. Wprowadź parametry przetwarzania okresowego i kliknij przycisk Generuj. 
 
 [![Generowanie](./media/screenshot29.png)](./media/screenshot29.png) 
@@ -208,7 +206,7 @@ Julia musi utworzyć i aktywować nowy proces planowania budżetu, uwzględniaj�
 
 [![Wyświetlanie planu budżetu](./media/screenshot31.png)](./media/screenshot31.png)
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Zadanie 8: Utwórz budżet bieżącego roku w oparciu o wartości rzeczywiste w poprzednim roku
+### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Zadanie 8: Utwórz budżet bieżącego roku w oparciu o wartości rzeczywiste w poprzednim roku
 W planie budżetu można użyć metody alokacji, aby łatwo skopiować informacje o planie budżetu z jednego scenariusza do drugiego, podzielić je na okresy i alokować do wymiarów. Użyjemy alokacji do utworzenia budżetu na bieżący rok na podstawie wartości rzeczywistych z poprzedniego roku. 
 
 8.1. Pobierz wszystkie wiersze siatki dokumentu planu budżetu, a następnie kliknij przycisk alokowania budżetu. 
@@ -223,7 +221,7 @@ Kwoty rzeczywiste poprzedniego roku zostaną skopiowane do budżetu bieżącego 
 
 [![Krzywa sprzedaży](./media/screenshot34.png)](./media/screenshot34.png)
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Zadanie 9: Korygowanie planu budżetu przy użyciu programu Excel i kończenie pracy nad dokumentem
+### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Zadanie 9: Korygowanie planu budżetu przy użyciu programu Excel i kończenie pracy nad dokumentem
 9.1. Kliknij przycisk Arkusz, aby otworzyć zawartość dokumentu w programie Excel.
 
 [![Program Excel](./media/screenshot35.png)](./media/screenshot35.png)
@@ -238,8 +236,7 @@ Kwoty rzeczywiste poprzedniego roku zostaną skopiowane do budżetu bieżącego 
 
 Po zakończeniu przepływu pracy etap dokumentu planu budżetu zmieni się na Zatwierdzony. [![Zatwierdzone](./media/screenshot38.png)](./media/screenshot38.png)
 
-<a name="appendix"></a>Dodatek
-========
+## <a name="appendix"></a>Dodatek
 
 ### <a name="auto-approve-workflow-configuration"></a>Konfiguracja przepływu pracy automatycznego zatwierdzania
 

@@ -36,8 +36,7 @@ W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów 
 
 **Uwaga:** Ten temat dotyczy funkcji w module Zarządzanie magazynem. Nie ma zastosowania do funkcji w module Zarządzanie zapasami. Finance and Operations — Magazynowanie to aplikacja umożliwiająca wykonywanie zadań magazynowych. Można zdefiniować i skonfigurować nazwy pól używanych w aplikacji, a także skonfigurować priorytety, do których te nazwy pól powinny być przypisane. W tym temacie wyjaśniono sposób definiowania i konfigurowania nazw i priorytetów tych pól aplikacji magazynowej oraz ich używanie w programie Finance and Operations — Magazynowanie. Aby uzyskać szczegółowe informacje dotyczące konfigurowania połączenia z programem Finance and Operations — Magazynowanie, skorzystaj z samouczka [Instalowanie i konfigurowanie aplikacji Finance and Operations — Magazynowanie](install-configure-warehousing-app.md).
 
-<a name="configure-warehouse-app-field-names"></a>Konfigurowanie nazw pól w aplikacji magazynowej
-===================================
+## <a name="configure-warehouse-app-field-names"></a>Konfigurowanie nazw pól w aplikacji magazynowej
 
 Gdy używasz programu Finance and Operations — Magazynowanie na urządzeniu komórkowym, można na stronie **Nazwy pól w aplikacji magazynowej** skonfigurować sposób wyświetlania metadanych na urządzeniu. W nowej firmie w programie Finance and Operations wybierz opcję **Utwórz konfigurację domyślną**, aby wygenerować wszystkie nazwy pól, które będą używane w przepływach pracy magazynu na urządzeniu, a następnie przypisz do nich preferowany tryb wprowadzania i typ danych wejściowych. Po wygenerowaniu wszystkich nazw pól można wybrać następujące opcje wprowadzania danych:
 
@@ -70,8 +69,7 @@ Gdy używasz programu Finance and Operations — Magazynowanie na urządzeniu ko
 </tbody>
 </table>
 
-<a name="configure-warehouse-app-field-priority"></a>Konfigurowanie priorytetu pól w aplikacji magazynowej
-======================================
+## <a name="configure-warehouse-app-field-priority"></a>Konfigurowanie priorytetu pól w aplikacji magazynowej
 
 Na stronie **Priorytet pola w aplikacji magazynowej** można umieścić nazwy pól w różnych grupach priorytetu. Dzięki temu można zdecydować, które informacje mają być wyświetlane na głównej stronie zadań, gdy pracownicy magazynu wykonują zadania za pomocą aplikacji. Jeśli klikniesz opcję **Utwórz konfigurację domyślną**, zostanie wygenerowany domyślny zestaw grup priorytetu. Można utworzyć dowolną potrzebną liczbę grup priorytetu, ale tylko trzy będą wyświetlane na stronie zadania. Gdy program Finance and Operations wysyła metadane do aplikacji, przypisuje każdemu polu względny priorytet w zależności od jego grupy priorytetu, a aplikacja wyświetla na stronie zadania pierwsze trzy grupy priorytetu zawarte w metadanych. Pozostała zawartość metadanych będzie wyświetlana na pomocniczej stronie szczegółów. Poniższa tabela pokazuje przykład pięciu grup priorytetu.
 

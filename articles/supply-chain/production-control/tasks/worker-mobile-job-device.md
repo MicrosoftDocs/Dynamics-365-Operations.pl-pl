@@ -69,4 +69,3 @@ W tej procedurze pokazano, jak przypisać poprawne role do konta użytkownika pr
 6. W polu Jednostka produkcyjna można ustawić domyślny filtr dla pracownika. Daje to pewność, że gdy pracownik loguje się do urządzenia, wyświetlane są tylko zadania produkcyjne dla wybranej jednostki produkcyjnej.
 7. Zamknij stronę.
 
-
