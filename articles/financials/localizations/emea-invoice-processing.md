@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustParameters, VendParameters
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -24,6 +25,8 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="invoice-processing"></a>Przetwarzanie faktur
+
+[!include[banner](../includes/banner.md)]
 
 Ten temat zawiera krótki opis scenariuszy dla określonych krajów, takich jak wewnątrzwspólnotowy podatek VAT i podatek odroczony. Wymagania prawne dla niektórych krajów europejskich wpływają na proces fakturowania. Ten temat zawiera także informacje o sposobie przetwarzania faktur odbiorców i dostawców dla tych krajów. 
 <table>
