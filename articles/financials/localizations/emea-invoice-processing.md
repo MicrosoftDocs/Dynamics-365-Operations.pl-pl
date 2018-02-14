@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustParameters, VendParameters
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,14 +17,16 @@ ms.author: v-kikozl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 25732cf27f91f9a6edf7aae41f7159aadd06b1e2
+ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
+ms.openlocfilehash: d1fca30eb6de22c2d2fb2c4d6bfdfd21fd4bbd6e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/14/2018
 
 ---
 
 # <a name="invoice-processing"></a><span data-ttu-id="0a6d1-103">Przetwarzanie faktur</span><span class="sxs-lookup"><span data-stu-id="0a6d1-103">Invoice processing</span></span>
+
+[!include[banner](../includes/banner.md)]
 
 <span data-ttu-id="0a6d1-104">Ten temat zawiera krótki opis scenariuszy dla określonych krajów, takich jak wewnątrzwspólnotowy podatek VAT i podatek odroczony.</span><span class="sxs-lookup"><span data-stu-id="0a6d1-104">This topic briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax.</span></span> <span data-ttu-id="0a6d1-105">Wymagania prawne dla niektórych krajów europejskich wpływają na proces fakturowania.</span><span class="sxs-lookup"><span data-stu-id="0a6d1-105">Legal requirements for some European countries affect the invoicing process.</span></span> <span data-ttu-id="0a6d1-106">Ten temat zawiera także informacje o sposobie przetwarzania faktur odbiorców i dostawców dla tych krajów.</span><span class="sxs-lookup"><span data-stu-id="0a6d1-106">This topic provides also an information about how customer and vendor invoices are processed for these countries.</span></span> 
 <table>
