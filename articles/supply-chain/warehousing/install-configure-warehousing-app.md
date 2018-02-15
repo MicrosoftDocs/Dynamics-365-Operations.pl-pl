@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4b3d068ddbf6f0b28c97618f5fa10fa486f3af51
+ms.sourcegitcommit: 5737d9c52727077d34c6f5553c9788bf07032914
+ms.openlocfilehash: 0521f0b443efb761e7d3f63182728dd836dbf8a0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/15/2018
 
 ---
 
@@ -31,6 +31,9 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
+
+> [!NOTE]
+> W tym temacie opisano sposób konfigurowania modułu zarządzania magazynem dla wdrożeń w chmurze. Jeśli szukasz opisu sposobu konfigurowania modułu zarządzania magazynem dla wdrożeń lokalnych, zapoznaj się z tematem [Magazynowanie we wdrożeniach lokalnych](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/warehousing-for-on-premise-deployments).
 
 W tym temacie opisano sposób instalowania i konfigurowania programu Microsoft Dynamics 365 for Finance and Operations — Magazynowanie.
 
@@ -43,32 +46,29 @@ Aplikacja jest dostępna w systemach operacyjnych Windows i Android. Aby można 
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
 | Windows (UWP)               | Windows 10 (wszystkie wersje)                                                                                                                                                   |
-| Finance and Operations | Microsoft Finance and Operations wersja 1611 <br>— lub — <br>Microsoft Dynamics AX wersja 7.0/7.0.1 i aktualizacja nr 2 platformy Microsoft Dynamics AX z poprawką KB 3210014 |
+| Finance and Operations | Microsoft Dynamics 365 for Operations w wersji 1611 <br>— lub — <br>Microsoft Dynamics AX wersja 7.0/7.0.1 i aktualizacja nr 2 platformy Microsoft Dynamics AX z poprawką KB 3210014 |
 
 ## <a name="get-the-app"></a>Pobieranie aplikacji
--   Windows (UWP): [Finance and Operations — Magazynowanie w Sklepie Windows](https://www.microsoft.com/store/apps/9p1bffd5tstm)
--   Android:
+-   Windows (UWP)
+     - [Finance and Operations — Magazynowanie w Sklepie Windows](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+-   Android
     - [Finance and Operations — Magazynowanie w sklepie Google Play](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
     - [Finance and Operations — Magazynowanie w galerii aplikacji Zebra](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
 
-## <a name="create-a-web-service-application-in-active-directory"></a>Tworzenie aplikacji usługi internetowej w usłudze Active Directory
+## <a name="create-a-web-service-application-in-azure-active-directory"></a>Tworzenie aplikacji usługi internetowej w usłudze Azure Active Directory
 Aby umożliwić aplikacji interakcje z konkretnym serwerem programu Finance and Operations, należy zarejestrować aplikację usługi internetowej w usłudze Azure Active Directory dla dzierżawy programu Finance and Operations. Ze względów bezpieczeństwa zaleca się utworzenie aplikacji usługi internetowej dla każdego używanego urządzenia. Aby utworzyć aplikację usługi internetowej w usłudze Active Directory Azure (Azure AD), wykonaj następujące kroki:
 
-1.  W przeglądarce internetowej przejdź do strony <https://manage.windowsazure.com>.
+1.  W przeglądarce internetowej przejdź do strony <https://portal.azure.com>.
 2.  Wprowadź nazwę i hasło użytkownika mającego dostęp do subskrypcji usługi Azure.
-3.  W portalu Azure w okienku nawigacyjnym z lewej strony kliknij przycisk **Active Directory**.[](./media/wh-01-active-directory-example.png)[![wh-01-active-directory-example](./media/wh-01-active-directory-example.png)](./media/wh-01-active-directory-example.png)
-4.  W siatce zaznacz wystąpienie usługi Active Directory, które jest używane przez usługę Finance and Operations.
-5.  Na górnym pasku narzędzi kliknij przycisk **Aplikacje**. [![wh-02-active-directory-applications](./media/wh-02-active-directory-applications-1024x197.png)](./media/wh-02-active-directory-applications.png)
-6.  W dolnym okienku kliknij przycisk **Dodaj**. Zostanie uruchomiony kreator **Dodawanie aplikacji**.
-7.  Nadaj aplikacji nazwę, a następnie wybierz opcję **Aplikacji sieci Web i/lub interfejs API sieci Web**. [![wh-03-active-directory-add-application](./media/wh-03-active-directory-add-application.png)](./media/wh-03-active-directory-add-application.png)
-8.  Wprowadź adres URL logowania, który jest adres URL Twojej aplikacji internetowej. Ten adres URL jest taki sam, jak adres URL wdrożenia, ale na końcu jest dodany przyrostek oauth. Wprowadź identyfikator URI aplikacji. Ta wartość jest wymagana, ale nie jest potrzeba do uwierzytelniania. Upewnij się, że ten identyfikator URI aplikacji nie jest symulowanym identyfikatorem URI takim jak https://contosooperations/wmapp, ponieważ użycie adresu URL wdrożenia może spowodować problemy z logowaniem w innych aplikacjach usługi AAD, takich jak dodatek programu Excel. [![WH-04-AD-add-properties3](./media/WH-04-AD-add-properties3.png)](./media/WH-04-AD-add-properties3.png)
-9.  Przejdź do karty **Konfiguruj**. [![wh-05-ad-configure-app](./media/wh-05-ad-configure-app.png)](./media/wh-05-ad-configure-app.png)
-10. Przewiń w dół, aż zobaczysz sekcję **Uprawnienia do innych aplikacji**. Kliknij przycisk **Dodaj aplikację**. [![wh-06-ad-app-add-permissions](./media/wh-06-ad-app-add-permissions.png)](./media/wh-06-ad-app-add-permissions.png)
-11. Na liście zaznacz pozycję **Microsoft Dynamics ERP**. W prawym górnym rogu strony kliknij przycisk **Sprawdź kompletność**. [![wh-07-ad-select-permissions](./media/wh-07-ad-select-permissions.png)](./media/wh-07-ad-select-permissions.png)
-12. Na liście **Uprawnienia pełnomocnika** zaznacz wszystkie pola wyboru. Kliknij przycisk **Zapisz**. [![wh-08-ad-delegate-permissions](./media/wh-08-ad-delegate-permissions.png)](./media/wh-08-ad-delegate-permissions.png)
-13. Zanotuj następujące informacje:
-    -   **Identyfikator klienta** — Podczas przewijania w górę strony zobaczysz pole **Identyfikator klienta**.
-    -   **Klucz** — W sekcji **Klucze** utwórz klucz poprzez wybranie czasu trwania, a następnie skopiuj ten klucz. Ten klucz będzie później określany jako **klucz tajny klienta**.
+3.  W portalu Azure w okienku nawigacyjnym z lewej strony kliknij przycisk **Azure Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+4.  Upewnij się, że program Finance and Operations używa wystąpienia usługi Active Directory.
+5.  Na liście kliknij opcję **Rejestracje aplikacji**. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+6.  W górnym okienku kliknij opcję **Nowa rejestracja aplikacji**. Zostanie uruchomiony kreator **Dodawanie aplikacji**.
+7.  Nadaj aplikacji nazwę, a następnie wybierz opcję **Aplikacji sieci Web/interfejs API sieci Web**. Wprowadź adres URL logowania, który jest adres URL Twojej aplikacji internetowej. Ten adres URL jest taki sam, jak adres URL wdrożenia, ale na końcu jest dodany przyrostek oauth. Kliknij **Utwórz**. [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+8.  Zaznacz nową aplikację na liście. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+9.  Należy pamiętać wartość pola **Identyfikator aplikacji**, będzie potrzebna później. W dalszej części pole **Identyfikator aplikacji** będzie nazywane **Identyfikator klienta**.
+10. W okienku **Ustawienia** kliknij opcję **Klucze**. Utwórz klucz poprzez wprowadzenie opisu klucza i czasu trwania w sekcji **Hasła**. 
+11. Kliknij przycisk **Zapisz** i skopiuj klucz. Ten klucz będzie później określany jako **klucz tajny klienta**. [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
 
 ## <a name="create-and-configure-a-user-account-in-finance-and-operations"></a>Tworzenie i konfigurowanie konta użytkownika w programie Finance and Operations
 Aby umożliwić programowi Finance and Operations używanie aplikacji Azure AD, należy wykonać następujące czynności konfiguracyjne:
@@ -90,8 +90,8 @@ Aplikację w urządzeniu należy skonfigurować do łączenia się z serwerem pr
 1.  W aplikacji przejdź do okna **Ustawienia połączenia**.
 2.  Wyczyść pole **Tryb demonstracyjny**. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
 3.  Podaj poniższe informacje: 
-    + **Identyfikator klienta usługi Azure Active Directory** — identyfikator klienta uzyskuje się w kroku 13 procedury „Tworzenie aplikacji usługi internetowej w usłudze Active Directory”. 
-    + **Klucz tajny klienta usługi Azure Active Directory** — klucz tajny klienta uzyskuje się w kroku 13 procedury „Tworzenie aplikacji usługi internetowej w usłudze Active Directory”. 
+    + **Identyfikator klienta usługi Azure Active Directory** — identyfikator klienta uzyskuje się w kroku 9 procedury „Tworzenie aplikacji usługi internetowej w usłudze Active Directory”. 
+    + **Klucz tajny klienta usługi Azure Active Directory** — klucz tajny klienta uzyskuje się w kroku 11 procedury „Tworzenie aplikacji usługi internetowej w usłudze Active Directory”. 
     + **Zasób usługi Azure Active Directory** — zasób katalogowy usługi Azure AD opisuje adres URL głównego katalogu programu Finance and Operations. **Uwaga:**: Na końcu pola nie należy umieszczać znaku kreski ułamkowej (/). 
     + **Dzierżawca usługi Azure Active Directory** — Dzierżawa katalogu usługi Azure AD używana na serwerze programu Finance and Operations: https://login.windows.net/identyfikator-Twojej-dzierżawy-w-usłudze-AD. Na przykład: https://login.windows.net/contosooperations.onmicrosoft.com.
     <br>**Uwaga:**: Na końcu pola nie należy umieszczać znaku kreski ułamkowej (/). 
@@ -102,15 +102,11 @@ Aplikację w urządzeniu należy skonfigurować do łączenia się z serwerem pr
 Jeśli urządzenie zostanie zgubione lub dostanie się w niepowołane ręce, należy usunąć temu urządzeniu dostęp do programu Finance and Operations. Następujące kroki opisują zalecany proces usuwania dostępu.
 
 1.  W programie Finance and Operations wybierz kolejno opcje **Administrowanie systemem** &gt; **Ustawienia** &gt; **Aplikacje usługi Azure Active Directory**.
-2.  Usuń wiersz odpowiadający urządzeniu, któremu chcesz cofnąć dostęp. Zanotuj wartość atrybutu **Identyfikator klienta** używany przez usuwane urządzenie.
-3.  Zaloguj się w klasycznym portalu Azure pod adresem <https://manage.windowsazure.com>.
-4.  Kliknij ikonę **Active Directory** w menu po lewej stronie, a następnie kliknij żądany katalog.
-5.  W górnym menu kliknij przycisk **Aplikacje**, a następnie kliknij aplikację, którą chcesz skonfigurować. Zostanie wyświetlona strona **Szybki start** z funkcją rejestracji jednokrotnej i innymi informacjami konfiguracyjnymi.
-6.  Kliknij kartę **Konfigurowanie**, przewiń w dół i upewnij się, że wartość **Identyfikator klienta** aplikacji jest taka sama, jak w kroku 2 w tej sekcji.
-7.  Na pasku poleceń kliknij przycisk **Usuń**.
+2.  Usuń wiersz odpowiadający urządzeniu, któremu chcesz cofnąć dostęp. Należy zapamiętać wartość pola **Identyfikator klienta** używany dla usuniętego urządzenia. Będzie ona potrzebna później.
+3.  Zaloguj się w portalu Azure pod adresem <https://portal.azure.com>.
+4.  W lewym menu kliknij ikonę **Active Directory** i upewnij się, że jesteś w poprawnym katalogu.
+5.  Na liście kliknij opcję **Rejestracje aplikacji**, a następnie kliknij aplikację, którą chcesz skonfigurować. Zostanie wyświetlona strona **Ustawienia** z informacjami o konfiguracji.
+6.  Upewnij się, że wartość **Identyfikator klienta** dla aplikacji jest taka sama, jak w kroku 2 w tej sekcji.
+7.  W górnym okienku kliknij przycisk **Usuń**.
 8.  W komunikacie potwierdzenia kliknij przycisk **Tak**.
-
-
-
-
 

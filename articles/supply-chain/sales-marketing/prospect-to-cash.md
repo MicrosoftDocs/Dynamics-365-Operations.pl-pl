@@ -3,12 +3,12 @@ title: "Prospekt na gotówkę"
 description: "Ten temat zawiera omówienie rozwiązania Prospekt na gotówkę działającego między programami Dynamics 365 for Finance and Operations, Enterprise Edition a Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: 
+ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -17,13 +17,13 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: 
 ms.author: crytt
-ms.dyn365.ops.intro: July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: f169b0ee20a7ca0c8d05c8bdcf2c04d411722f01
-ms.openlocfilehash: ff166f89d13acbc3aefcbdb39f485881c81cb42c
+ms.sourcegitcommit: 602873e8af976c57f27ce53b76391516351755e3
+ms.openlocfilehash: 29d33d3ecf97c15fed0247d172ff6fb3bbdaa018
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -31,16 +31,20 @@ ms.lasthandoff: 12/21/2017
 
 [!include[banner](../includes/banner.md)]
 
-Rozwiązanie Prospekt na gotówkę umożliwia bezpośrednią synchronizację między programami Dynamics 365 for Finance and Operations, Enterprise edition i Dynamics 365 for Sales. Szablony Prospekt na gotówkę, które są dostępne w funkcji integracji danych umożliwiają przepływ danych o kontach, kontaktach, produktach, ofertach sprzedaży, zamówieniach sprzedaży i fakturach sprzedaży między programami Finance and Operations a Sales. Gdy dane przepływają między programami Finance and Operations i Sales, można wykonywać działania sprzedażowe i marketingowe w programie Sales oraz i realizować zamówienia z funkcjami zarządzania zapasami w programie Finance and Operations.
+Rozwiązanie Prospekt na gotówkę umożliwia bezpośrednią synchronizację między programami Dynamics 365 for Finance and Operations, Enterprise edition i Dynamics 365 for Sales. Szablony Prospekt na gotówkę, które są dostępne w funkcji integracji danych umożliwiają przepływ danych o kontach, kontaktach, produktach, ofertach sprzedaży, zamówieniach sprzedaży i fakturach sprzedaży między programami Finance and Operations a Sales. Gdy dane przepływają między programami Finance and Operations i Sales, można wykonywać działania sprzedażowe i marketingowe w programie Sales oraz i realizować zamówienia z funkcjami zarządzania zapasami w programie Finance and Operations. 
+
+Aby uzyskać więcej informacji o integracji w procesie Prospekt na gotówkę, obejrzyj krótki film na YouTube:
+
+> [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
 
 W bieżącej wersji rozwiązania Prospekt na gotówkę udostępniono następujące typy synchronizacji bezpośredniej:
 
 - [Obsługa kont klientów w programie Sales i synchronizowanie ich bezpośrednio między programem Sales a programem Finance and Operations](accounts-template-mapping-direct.md)
 - [Obsługa produktów w rozwiązaniu Finance and Operations i synchronizowanie ich bezpośrednio z rozwiązaniem Sales](products-template-mapping-direct.md)
 - [Obsługa kontaktów w rozwiązaniu Sales i synchronizowanie ich bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Finance and Operations](contacts-template-mapping-direct.md)
-- [Synchronizowanie ofert sprzedaży bezpośrednio z rozwiązania Sales do rozwiązania Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
+- [Synchronizowanie ofert sprzedaży bezpośrednio między rozwiązaniem Sales a rozwiązaniem Finance and Operations (wkrótce zostanie udostępniony szablon)](sales-quotation-template-mapping-sales-fin.md)
 - [Synchronizowanie zamówień sprzedaży bezpośrednio z rozwiązania Finance and Operations do rozwiązania Sales](sales-order-template-mapping-direct.md)
-- [Synchronizowanie zamówień sprzedaży bezpośrednio między rozwiązaniem Sales a rozwiązaniem Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
+- [Synchronizowanie zamówień sprzedaży bezpośrednio między rozwiązaniem Sales a rozwiązaniem Finance and Operations (wkrótce zostanie udostępniony szablon)](sales-order-template-mapping-direct-two-ways.md)
 - [Synchronizowanie faktur sprzedaży bezpośrednio z rozwiązania Finance and Operations do rozwiązania Sales](sales-invoice-template-mapping-direct.md)
 
 W starszych wersjach rozwiązania Prospekt na gotówkę funkcjonowały następujące typy synchronizacji niebezpośredniej:
@@ -50,15 +54,19 @@ W starszych wersjach rozwiązania Prospekt na gotówkę funkcjonowały następuj
 - [Obsługa produktów w rozwiązaniu Finance and Operations i synchronizowanie ich z rozwiązaniem Sales](products-template-mapping.md)
 - [Tworzenie ofert sprzedaży w rozwiązaniu Sales i synchronizowanie ich z rozwiązaniem Finance and Operations](sales-quotation-template-mapping.md)
 - [Tworzenie zamówień sprzedaży w rozwiązaniu Finance and Operations i synchronizowanie ich z rozwiązaniem Sales](sales-order-template-mapping.md)
-- [Tworzenie faktur sprzedaży w programie Finance and Operations i ich synchronizacja z programem Sales](sales-invoice-template-mapping.md)
+- [Tworzenie faktur sprzedaży w rozwiązaniu Finance and Operations i synchronizowanie ich z rozwiązaniem Sales](sales-invoice-template-mapping.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Wymagania systemowe dla rozwiązania Finance and Operations
 
-Aby skorzystać z rozwiązania Prospekt na gotówkę, należy zainstalować następujące składniki:
+Integracja w procesie Prospekt na gotówkę jest obsługiwana w następujących wersjach:
+
+### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations Enterprise Edition wer. 7.3 (grudzień 2017)
+
+- Dynamics 365 for Finance and Operations Enterprise Edition (grudzień 2017) — kompilacja aplikacji 7.3.11971.56116 z aktualizacją platformy 12 (7.0.4709.41129)
 
 ### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Układ w rozwiązaniu Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (lipiec 2017) z aktualizacją platformy 8 (aplikacja w wersji 7.2.11792.56024 z platformą w wersji 7.0.4565.16212)
+- Dynamics 365 for Finance and Operations, Enterprise Edition (lipiec 2017) — z aktualizacją platformy 8 (aplikacja w wersji 7.2.11792.56024 z platformą w wersji 7.0.4565.16212).
 - Poniżej znajduje się lista wymaganych poprawek:
 
     - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** — ta poprawka umożliwia synchronizację zamówienia sprzedaży między modułem Sales a modułem Finance and Operations za pomocą funkcji integracji danych. Zapewnia również kilka innych ulepszeń.
@@ -68,7 +76,7 @@ Aby skorzystać z rozwiązania Prospekt na gotówkę, należy zainstalować nast
     > [!NOTE]
     > Należy zainstalować tylko poprawkę KB4045570, ponieważ instalacja obejmuje zmiany z innych poprawek. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Wprowadzenie do rozwiązania Dynamics 365 for Finance and Operations w wersji 1611 (listopad 2016) 
+### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Wprowadzenie do rozwiązania Dynamics 365 for Finance and Operations w wersji 1611 (listopad 2016)
 
 - Dynamics 365 for Finance and Operations w wersji 1611 (listopad 2016) z aktualizacją platformy 8 lub nowszą
 
@@ -106,4 +114,6 @@ Aby skorzystać z rozwiązania Prospekt na gotówkę, należy zainstalować nast
     2. Wybierz opcję **Pokaż zaawansowane**.
     3. W celu szybkiej instalacji wybierz region. Jeżeli wybierzesz opcję **Nie wiem**, system przeszuka wszystkie regiony i instalacja potrwa dłużej.
     4. Wprowadź nazwę użytkownika i hasło administratora z uprawnieniami do instalacji.
+
+
 

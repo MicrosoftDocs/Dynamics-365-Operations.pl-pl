@@ -6,19 +6,22 @@ manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
-ms.search.scope: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
+ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
-ms.openlocfilehash: bb4d8fae432eca7fe9163dcb0763fff5c8d465f0
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: 2fa843aee8927a1cb4f642c31d6f5683098d3c74
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -49,7 +52,7 @@ Na poziomie sklepu dostępne jest ustawienie konfiguracji określające, czy wie
 
 Domyślnie wiersze zamówienia przypisane do sklepu są oznaczone jako **Zaakceptowane**. Oznacza to przyjęcie założenie, że zostaną zrealizowane z przypisanego magazynu i nie zostaną przypisane po raz kolejny. W niektórych przypadkach może być konieczne ręczne zaakceptowanie zamówień przez sprzedawców przed ich realizacją. Jeżeli na przykład w sklepie brakuje pracowników i nie mogą zrealizować zamówienia, menedżer sklepu zaakceptuje tylko taką liczbę zamówień, jaką jego zdaniem można prawidłowo przetworzyć w danym dniu. Do momentu zaakceptowania zamówienia może zostać przypisane przez zaplecze do innego sklepu. Dzięki temu akceptowanie zamówienie umożliwia także określenie, że zamówienie zostało potwierdzone przez sklep i zostanie zrealizowane. 
 
-Wiersze zamówienia do odbioru w sklepie są zawsze oznaczone jako **Oczekujące** i nie podlegają akceptacji.
+Wiersze zamówienia do odbioru w sklepie są oznaczone jako **Oczekujące** i nie podlegają akceptacji.
 
 Aby włączyć ręczne akceptowanie wierszy zamówienia, przejdź do okna **Handel detaliczny** > **Kanały** > **Sklepy sieci sprzedaży** > **Wszystkie sklepy sieci sprzedaży**. Wybierz sklep i kliknij jego identyfikator, aby wyświetlić szczegóły. Kliknij przycisk **Edytuj**. Na karcie skróconej **Ogólne** znajdź nagłówek podrzędny **Realizacja zamówienia** i zmień ustawienie opcji **Akceptuj ręcznie** z **Nie** na **Tak**. 
 
@@ -114,7 +117,7 @@ Domyślnie zamówienia będą miały stan **Zaakceptowane**. Stan zamówienia mo
 
 **Pakowanie** — opcja pakowania obsługuje dwie akcje: **Drukuj dokument dostawy** umożliwia wydrukowanie dokumentu dostawy dla wybranych wierszy, a akcja **Oznacz jako spakowane** umożliwia oznaczenie wierszy jako spakowanych oraz oznaczenie jako dostarczonych w zapleczu. Jednocześnie można pakować tylko wiersze zamówienia należące do tego samego zamówienia i o tym samym sposobie dostawy. Formaty dokumentów dostawy są kontrolowane w ramach formatów paragonów. Aby uzyskać więcej informacji o sposobie konfigurowania formatów paragonów, zobacz [Szablony paragonów i drukowanie](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing).
 
-**Wyślij** — wykonanie akcji wysyłania spowoduje oznaczenie wybranych wierszy jako**Dostarczone** w zapleczu. Po całkowitym wysłaniu wiersza nie będzie on już wyświetlany w widoku realizacji w sklepie.
+**Wyślij** — wykonanie akcji wysyłania spowoduje oznaczenie wybranych wierszy jako**Dostarczone** w zapleczu. Po całkowitym wysłaniu wiersza nie będzie on już wyświetlany w widoku realizacji zamówienia.
 
 **Pobranie** — wykonanie akcji pobrania powoduje dodanie wierszy do widoku transakcji w celu pobrania. Jeżeli w zamówieniu istnieją inne wiersze, które nie są aktualnie pobierane, zostaną dodane do widoku transakcji z ilością równą zero. Po całkowitym pobraniu wiersza nie będzie on już wyświetlany w widoku realizacji zamówienia. 
 

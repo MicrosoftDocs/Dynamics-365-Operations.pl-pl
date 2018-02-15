@@ -1,7 +1,7 @@
 ---
 title: Zanim kupisz
 description: "Wytyczne krok po kroku, które warto uwzględnić przy rozważaniu zakupu programu Dynamics 365 for Finance and Operations Enterprise Edition."
-author: margoc
+author: kfend
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
@@ -13,14 +13,14 @@ ms.reviewer: margoc
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: margoc
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4bd67b15e893613bed14d2bdc1d9a07da81dc26
+ms.sourcegitcommit: 98740e5b992283b924adab34f291b9c1f2703457
+ms.openlocfilehash: d6c4e475925cdc94be614822ffb242eb7ac8cfa7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/31/2018
 
 ---
 
@@ -35,7 +35,17 @@ Możesz wypróbować program Dynamics 365 for Finance and Operations przez 30 dn
 
 ## <a name="step-two-choose-a-deployment-option"></a>Krok 2: Wybieranie opcji wdrożenia
 Teraz możesz wdrożyć program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition w chmurze lub lokalnie. Wdrożenia chmurowe oferują usługę ERP, która jest w pełni zarządzana przez firmę Microsoft, natomiast wdrożenia lokalne są dokonywane lokalnie we własnym centrum danych klienta.
-Aby uzyskać więcej informacji, zobacz: [Opcje wdrażania](../../dev-itpro/deployment/choose-deployment-type.md) 
+
+Przy wybieraniu opcji wdrożenia lokalnego należy wziąć pod uwagę następujące kwestie:
+- Potrzeby w zakresie regulacji i zgodności z przepisami, które nie są zaspokajane przez [certyfikacje usług chmurowych](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities)
+- Izolowany proces biznesowy okresowo łączący się z Internetem, wymagany w celu uzyskiwania dostępu do usługi Microsoft Dynamics Lifecycle Services (LCS) na potrzeby zarządzania cyklem życia aplikacji
+- [Funkcje obecnie niezaimplementowane we wdrożeniach lokalnych](features-not-implemented-on-prem.md)
+- [Minimalne wymagania w zakresie infrastruktury](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+
+> [!IMPORTANT]
+> Lokalne wdrożenia programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition nie są obsługiwane w żadnych infrastrukturach chmur publicznych, w tym Azure. 
+
+Aby uzyskać więcej informacji, zobacz [Opcje wdrażania](../../dev-itpro/deployment/choose-deployment-type.md).
 
 ## <a name="step-three-buy-and-manage-a-subscription"></a>Krok 3: Zakup subskrypcji i zarządzanie nią
 Aby poznać dostępne opcje subskrypcji, przejdź do strony z cenami usługi [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing). Ta strona zawiera kilka planów spełniających różne potrzeby organizacji.

@@ -1,6 +1,6 @@
 ---
 title: "Typy arkuszy księgi"
-description: "W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona Nazwy arkuszy służy do konfigurowania arkuszy, których można używać w całym programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
+description: "W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona **Nazwy arkuszy** służy do konfigurowania arkuszy, których można używać w całym programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalSetup
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c05b199104af2c367266e3cd15937425e6457397
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: ccd1b9056f8c18de1b2ef706f70f53bac6cc43a1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -30,23 +31,23 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona Nazwy arkuszy służy do konfigurowania arkuszy, których można używać w całym programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.
+W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona **Nazwy arkuszy** służy do konfigurowania arkuszy, których można używać w całym programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.
 
-| Typ arkusza                      | Cel                                                                                                                                                                                                                                                                                                                                                     | Ta strona służy do wprowadzania transakcji                                |
-|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| Alokacja                        | Utwórz transakcje alokacji w arkuszu alokacji. Zanim będzie można utworzyć arkusz alokacji, trzeba utworzyć regułę alokacji na stronie **Reguła alokacji księgi**.                                                                                                                                                                           | Przetwarzanie żądania alokacji                                     |
-| Zatwierdzenie                          | Zaksięguj zatwierdzone faktury dostawcy na odpowiednich kontach księgowych.                                                                                                                                                                                                                                                                            | Arkusz zatwierdzania faktur                                       |
-| Cofnięcie czeku bankowego               | Wycofywanie zaksięgowanego czeku. Aby używać tego typu arkusza, wybierz opcję **Cofnij płatność w ramach procesu przeglądu** na stronie **Parametry modułu Zarządzanie gotówką i bankami**.                                                                                                                                                                                       | Cofnięcia czeków, Cofnięcie płatności                              |
-| Anulowanie dokumentu wpłaty bankowej    | Anuluj dokument wpłaty. Aby używać tego typu arkusza, wybierz opcję **Anuluj dokumenty wpłaty w ramach procesu przeglądu** na stronie **Parametry modułu Zarządzanie gotówką i bankami**.                                                                                                                                                                       | Anulaty bankowych dowodów wpłaty                             |
+| Typ arkusza                      | Cel                       | Ta strona służy do wprowadzania transakcji                                |
+|-----------------------------------|-------------------------------|----------------------------------------------------------------|
+| Alokacja                        | Utwórz transakcje alokacji w arkuszu alokacji. Zanim będzie można utworzyć arkusz alokacji, trzeba utworzyć regułę alokacji na stronie **Reguła alokacji księgi**.      | Przetwarzanie żądania alokacji             |
+| Zatwierdzenie                          | Zaksięguj zatwierdzone faktury dostawcy na odpowiednich kontach księgowych.  | Arkusz zatwierdzania faktur                                       |
+| Cofnięcie czeku bankowego               | Wycofywanie zaksięgowanego czeku. Aby używać tego typu arkusza, wybierz opcję **Cofnij płatność w ramach procesu przeglądu** na stronie **Parametry modułu Zarządzanie gotówką i bankami**.   | Cofnięcia czeków, Cofnięcie płatności                   |
+| Anulowanie dokumentu wpłaty bankowej    | Anuluj dokument wpłaty. Aby używać tego typu arkusza, wybierz opcję **Anuluj dokumenty wpłaty w ramach procesu przeglądu** na stronie **Parametry modułu Zarządzanie gotówką i bankami**.   | Anulaty bankowych dowodów wpłaty            |
 | Budżet                            | Przetwarzaj asygnaty budżetu. Aby używać tego typu arkusza, zaznacz opcję **Włączanie asygnaty budżetu** na stronie **Parametry księgi głównej**. Zapisy arkusza budżetu będą zawierać informację oparte na kontach księgowych, które są zdefiniowane na stronie **Definicje księgowania**.                                                        |                                                                |
-| Akceptacja weksla przez odbiorcę  | Utwórz transakcje przyjęcia odbiorców dla weksli.                                                                                                                                                                                                                                                                                              | Arkusz wystawiania weksli, Arkusz ponownego wystawiania weksli |
-| Przelew bankowy odbiorcy          | Utwórz pliku przekazu weksla, który może zostać przesłany do banku w Twojej organizacji. Aby użyć tego typu arkusza, wyczyść opcję **Automatyczne rozliczanie** dla na stronie **Parametry modułu Rozrachunki** **z dostawcami**.                                                                                                                                             | Przekaz                                                     |
-| Weksel wystawiony odbiorcy    | Utwórz transakcje weksli wystawionych odbiorcy. Aby użyć tego typu arkusza, wyczyść opcję **Automatyczne tworzenie i księgowanie arkusza wystawiania podczas księgowania faktur** na stronie **Metody płatności — Odbiorcy**.                                                                                                                                         | Arkusz wystawiania weksli                                  |
-| Płatność od odbiorcy                  | Utwórz transakcje płatności odbiorcy.                                                                                                                                                                                                                                                                                                                       | Arkusz płatności                                                |
-| Oprotestowany weksel odbiorcy | Utwórz transakcje oprotestowanego weksla odbiorcy.                                                                                                                                                                                                                                                                                                      | Arkusz protestowania weksli                               |
-| Ponownie wystawiony weksel odbiorcy  | Utwórz transakcje weksli wystawionych ponownego odbiorcy.                                                                                                                                                                                                                                                                                                       | Arkusz ponownego wystawiania weksli                                |
-| Rozliczony weksel odbiorcy  | Utwórz transakcje rozliczonego weksla odbiorcy.                                                                                                                                                                                                                                                                                                       | Arkusz rozliczania weksli                                |
-| Dziennie                             | Utwórz transakcje dzienne w arkuszu finansowym.                                                                                                                                                                                                                                                                                                             | Arkusze finansowe                                                |
+| Akceptacja weksla przez odbiorcę  | Utwórz transakcje przyjęcia odbiorców dla weksli.             | Arkusz wystawiania weksli, Arkusz ponownego wystawiania weksli |
+| Przelew bankowy odbiorcy          | Utwórz pliku przekazu weksla, który może zostać przesłany do banku w Twojej organizacji. Aby użyć tego typu arkusza, wyczyść opcję **Automatyczne rozliczanie** dla na stronie **Parametry modułu Rozrachunki** **z dostawcami**.            | Przekaz                                                     |
+| Weksel wystawiony odbiorcy    | Utwórz transakcje weksli wystawionych odbiorcy. Aby użyć tego typu arkusza, wyczyść opcję **Automatyczne tworzenie i księgowanie arkusza wystawiania podczas księgowania faktur** na stronie **Metody płatności — Odbiorcy**.   | Arkusz wystawiania weksli                                  |
+| Płatność od odbiorcy                  | Utwórz transakcje płatności odbiorcy.                             | Arkusz płatności             |
+| Oprotestowany weksel odbiorcy | Utwórz transakcje oprotestowanego weksla odbiorcy.                    | Arkusz protestowania weksli                               |
+| Ponownie wystawiony weksel odbiorcy  | Utwórz transakcje weksli wystawionych ponownego odbiorcy.                     | Arkusz ponownego wystawiania weksli                                |
+| Rozliczony weksel odbiorcy  | Utwórz transakcje rozliczonego weksla odbiorcy.                       | Arkusz rozliczania weksli                                |
+| Dziennie                             | Utwórz transakcje dzienne w arkuszu finansowym.                          | Arkusze finansowe                                                |
 | Eliminacja                       | Utwórz transakcje eliminacji w arkuszu eliminacji. Aby użyć tego typu arkusza, zaznacz opcje **Użyj na potrzeby procesu eliminacji finansowej** i **Użyj na potrzeby procesu konsolidacji finansowej** na stronie **Firmy**. Zanim będzie można użyć tego typu arkusza, trzeba utworzyć regułę eliminacji księgi na stronie **Reguła eliminacji księgi**. | Eliminacja                                                    |
 | Budżet środków trwałych                | Utwórz wpisy do rejestru budżetu środków trwałych.                                                                                                                                                                                                                                                                                                                 | Budżet środków trwałych                                             |
 | Rejestr faktur                  | Zarejestruj podstawowe informacje dotyczące faktur dostawcy.                                                                                                                                                                                                                                                                                                           | Rejestr faktur                                               |
