@@ -3,11 +3,12 @@ title: "Częściowa płatność odbiorcy"
 description: "Czasami odbiorcy dokonują płatności na kwoty niższe niż kwota faktury. W tym artykule opisano różne opcje postępowania w takiej sytuacji. Faktycznie dostępne opcje zależą od konkretnych wymagań biznesowych i istniejącej konfiguracji."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustPaymEntry
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c2ba17b97bf7a00ff111e72314e98f5af7aaed80
+ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
+ms.openlocfilehash: 6b7494a05392cbee70e6d5883bae0295e8b55ac9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -41,7 +42,7 @@ Odbiorca może dokonać częściowej płatności, ponieważ nie posiada wystarcz
 Można oferować odbiorcy rabat za rozliczenie faktury przed datą należności. Załóżmy, że wprowadzasz fakturę na kwotę 100,00, na którą odbiorca może uzyskać 2-procentowy rabat gotówkowy, jeśli zapłaci ją w ciągu 10 dni. Okres płatności wynosi 30 dni. Jeśli w ciągu 10 dni otrzymasz płatność w wysokości 98,00, wpisujesz płatność kwoty 98,00. Następnie gdy faktura zostanie oznaczona do rozliczenia, rabat gotówkowy jest pobierany automatycznie.
 
 ## <a name="partial-payments-with-cash-discounts"></a>Płatności częściowe z rabatem gotówkowym
-Kiedy odbiorca dokonuje płatności częściowej, może zaplanować dokonanie dodatkowej zapłaty częściowej, by rozliczyć fakturę w całości. Aby zastosować rabat gotówkowy dla płatności częściowej, musisz ustawić w opcji **Oblicz rabaty gotówkowe dla częściowych zapłat** wartość **Tak** na stronie **Parametry modułu rozrachunków z odbiorcami**. 
+Kiedy odbiorca dokonuje płatności częściowej, może zaplanować dokonanie dodatkowej zapłaty częściowej, by rozliczyć fakturę w całości. Aby podjąć rabat gotówkowy dla płatności częściowej, musisz ustawić w opcji **Oblicz rabaty gotówkowe dla częściowych zapłat** wartość **Tak** na stronie **Parametry modułu rozrachunków z odbiorcami**. 
 
 Na przykład możesz zaoferować 2-procentowy rabat gotówkowy, jeśli faktura zostanie zapłacona w ciągu 10 dni po wystawieniu. Faktura jest księgowana na wartość 100,00. Jeśli w ciągu 10 dni otrzymasz płatność w wysokości 49,00, wpisujesz kredyt w wysokości 49,00 w arkuszu płatności. Po rozliczeniu płatności częściowej na stronie **Rozliczanie transakcji**, w polu **Kwota rabatu gotówkowego do pobrania** pojawia się wartość **1,00**. Kwota rabatu jest księgowana na koncie rabatu gotówkowego. 
 

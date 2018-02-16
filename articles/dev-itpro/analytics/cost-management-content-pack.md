@@ -3,7 +3,7 @@ title: "Pakiet zawartości usługi Power BI Zarządzanie kosztami"
 description: "W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Zarządzanie kosztami."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: e0f9042b2647a484a70670d1d29e8036401b39f1
+ms.sourcegitcommit: b167d7577823bbc88d8e64952333110f9a652b64
+ms.openlocfilehash: 1f552e1ee0286326e3a2a8bb6a7bfb84df53b45d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 02/02/2018
 
 ---
 
@@ -30,10 +30,10 @@ ms.lasthandoff: 12/19/2017
 
 [!include[banner](../includes/banner.md)]
 
+> [Uwaga] Ten pakiet zawartości został wycofany, zgodnie z opisem w temacie [Pakiety zawartości usługi Power BI opublikowane w witrynie PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+
 
 W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Power BI Zarządzanie kosztami. 
-
-# <a name="overview"></a>Przegląd
 
 Pakiet zawartości **Zarządzanie kosztami** dostępny w usłudze Microsoft Power BI jest przeznaczony dla pracowników księgujących zapasy lub osób w organizacji, które są odpowiedzialne za zapasy. Pakiet zawartości **Zarządzanie kosztami** w usłudze Power BI zapewnia zaawansowany wgląd w zapasy i zapasy pracy w toku (PWT) oraz przepływy kosztów między tymi zapasami z podziałem na kategorie w ujęciu czasowym. Informacje mogą być również wykorzystywane jako szczegółowe uzupełnienie sprawozdania finansowego.
 

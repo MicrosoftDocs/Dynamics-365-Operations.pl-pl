@@ -3,14 +3,14 @@ title: Planowanie planu kont
 description: "Ten artykuł zawiera informacje, które pomogą zaprojektować plan kont w organizacji."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 038886f0a6e1c133a33ee34725eb20352e64341a
+ms.sourcegitcommit: ad55dd57483de4351c8501c5e226180fc73606aa
+ms.openlocfilehash: 3d2cdeaf2fdeb2f587f82c97249886fb8db49154
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/11/2018
 
 ---
 
@@ -45,12 +45,12 @@ Oto kilka czynników, które należy uwzględnić podczas planowania struktury p
 -   Wymagania dotyczące raportowania firmy
 -   Poziom wymaganej specyfikacji zarówno dla zewnętrznych organizacji, jak i dla Twojej organizacji
 
-Plan kont tworzy się na stronie **Plan kont**. Konta główne można tworzyć na stronie **Plan kont** lub na stronie **Konta główne**. Na kontach głównych nie należy używać żadnych znaków specjalnych, które są używane jako separatory planów kont. Jeśli masz znak specjalny, który jest taki sam jak separator planu kont, może wystąpić niestabilność systemu, albo do wprowadzania konta w połączeniu z wymiarem będzie trzeba zawsze używać wyszukiwania lub okna wysuwanego. Aby uzyskać więcej informacji, zobacz [Tworzenie konta głównego](tasks/create-account-structures.md).
+Plan kont tworzy się na stronie **Plan kont**. Konta główne można tworzyć na stronie **Plan kont** lub na stronie **Konta główne**. Na kontach głównych nie należy używać żadnych znaków specjalnych, które są używane jako separatory planów kont. Jeśli masz znak specjalny, który jest taki sam jak separator planu kont, może wystąpić niestabilność systemu, albo do wprowadzania konta w połączeniu z wymiarem będzie trzeba zawsze używać wyszukiwania lub okna wysuwanego. Aby uzyskać więcej informacji, zobacz [Tworzenie konta głównego](tasks/create-main-account.md).
 
 
 Dobrze jest połączyć konta główne z kategoriami konta głównego, by móc korzystać z domyślnych raportów finansowych bez konieczności wprowadzania żadnych zmian. Dzięki temu tworzenie i obsługa raportów staje się łatwiejsza. 
 
-Strona **Skonfiguruj strukturę konta** służy do tworzenia struktur kont. Struktury kont definiują prawidłowe kombinacje. Kombinacje, łącznie z kontami głównymi, tworzą plan kont.  Aby uzyskać więcej informacji, zobacz [Tworzenie struktur kont](tasks/create-main-account.md).
+Strona **Skonfiguruj strukturę konta** służy do tworzenia struktur kont. Struktury kont definiują prawidłowe kombinacje. Kombinacje, łącznie z kontami głównymi, tworzą plan kont.  Aby uzyskać więcej informacji, zobacz [Tworzenie struktur kont](tasks/create-account-structures.md).
 
 **Firma zastępuje** 
 

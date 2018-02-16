@@ -1,9 +1,9 @@
 --- 
-title: "Tworzenie raportów w formacie pakietu Microsoft Office z osadzonymi obrazami na potrzeby raportowania elektronicznego (ER) (część 1)"
-description: "W poniższych krokach wyjaśniono, jak użytkownik odtwarzający rolę „Administrator systemu” lub „Deweloper raportowania elektronicznego” może projektować konfiguracje raportowania elektronicznego (ER) w celu generowania dokumentów elektronicznych w formatach dokumentów pakietu MS Office (Excel i Word) zawierających osadzone obrazy."
+title: "Projektowanie konfiguracji służących do generowania raportów w formatach pakietu Microsoft Office z osadzonymi obrazami na potrzeby raportowania elektronicznego (ER) (część 1)"
+description: "Etapy w tym temacie zawierają informacje o sposobie projektowania konfiguracji raportowania elektronicznego (ER) do generowania dokumentów elektronicznych w formatach pakietu Microsoft Office (Excel i Word) zawierających osadzone obrazy."
 author: NickSelin
 manager: AnnBe
-ms.date: 06/13/2017
+ms.date: 01/23/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,108 +16,79 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: f610fe4b7f265c4fc38db89938d5c208b4f7661a
+ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
+ms.openlocfilehash: 844d8de1d5a1958457eaab1d434bef015f92e33c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/23/2018
 
 ---
-# <a name="make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er--part-1"></a>Tworzenie raportów w formacie pakietu Microsoft Office z osadzonymi obrazami na potrzeby raportowania elektronicznego (ER) (część 1) 
+# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er-part-1"></a>Projektowanie konfiguracji służących do generowania raportów w formatach pakietu Microsoft Office z osadzonymi obrazami na potrzeby raportowania elektronicznego (ER) (część 1) 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W poniższych krokach wyjaśniono, jak użytkownik odtwarzający rolę „Administrator systemu” lub „Deweloper raportowania elektronicznego” może projektować konfiguracje raportowania elektronicznego (ER) w celu generowania dokumentów elektronicznych w formatach dokumentów pakietu MS Office (Excel i Word) zawierających osadzone obrazy.
+Aby wykonać kroki podane w tej procedurze, należy najpierw wykonać procedurę „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”. W tej procedurze wyjaśniono sposób projektowania konfiguracji raportowania elektronicznego (ER) do generowania dokumentów programów Microsoft Excel i Microsoft Word zawierających osadzone obrazy. W tej procedurze utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Kroki można wykonać przy użyciu zestawu danych firmy USMF. Ta procedura została utworzona dla użytkowników z przypisaną rola administratora systemu lub dewelopera raportowania elektronicznego. Zanim rozpoczniesz, pobierz i zapisz pliki wymienione w temacie pomocy [Osadzanie obrazów i kształtów w dokumentach biznesowych generowanych przy użyciu narzędzia Raportowanie elektroniczne](../electronic-reporting-embed-images-shapes.md). Pliki to: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png i Cheque template Word.docx.
 
-W tym przykładzie użyjesz utworzonych konfiguracji ER dla przykładowej firmy „Litware, Inc.”.  Aby wykonać te kroki, należy najpierw wykonać kroki z przewodnika po zadaniu „ER Tworzenie raportów w formatach programu MS Office z osadzonymi obrazami (Część 2: Przegląd konfiguracji)”. Kroki można wykonać na danych firmy „USMF”.
+## <a name="verify-prerequisites"></a>Sprawdzanie wymagań  
+ 1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.  
+ 2. Upewnij się, że dostawca konfiguracji przykładowej firmy Litware, Inc. jest dostępny i oznaczony jako Aktywny. Jeśli ten dostawca konfiguracji nie jest widoczny, wykonaj procedurę „Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”.   
+ 3. Kliknij opcję Konfiguracje raportowania.  
+ 
+## <a name="add-a-new-er-model-configuration"></a>Dodawanie nowej konfiguracji modelu ER  
+ 1. Zamiast tworzyć nowy model, można załadować plik konfiguracji modelu ER (Model for cheques.xml), który został wcześniej zapisany. Plik ten zawiera przykładowy model danych dla czeków płatniczych i mapowanie modelu danych do składników danych aplikacji Dynamics 365 for Operations.   
+ 2. Na skróconej karcie Wersje kliknij przycisk Import/eksport.   
+ 3. Kliknij opcję Załaduj z pliku XML.  
+ 4. Kliknij przycisk Przeglądaj, a następnie wybierz plik Model for cheques.xml.   
+ 5. Kliknij przycisk OK.  
+ 6. Załadowany model zostanie użyty jako źródło danych informacji do generowania dokumentów, które zawierają obrazy w programie Excel i Word.  
 
+## <a name="add-a-new-er-format-configuration"></a>Dodawanie nowej konfiguracji formatu ER  
+ 1. Zamiast tworzyć nowy format można załadować plik konfiguracji formatu ER (Cheques printing format.xml), który został wcześniej zapisany. Ten plik zawiera przykładowy układ formatu do drukowania czeków przy użyciu wstępnie zadrukowanego formularza i mapowanie tego formatu do modelu danych „Model for cheques”.   
+ 2. Kliknij opcję Import/eksport.  
+ 3. Kliknij opcję Załaduj z pliku XML.  
+ 4. Kliknij przycisk Przeglądaj i wybierz plik Cheques printing format.xml.   
+ 5. Kliknij przycisk OK.  
+ 6. W drzewie rozwiń węzeł „Model czeków”.  
+ 7. W drzewie zaznacz element „Model czeków\Format drukowania czeków”.  
+ 8. Załadowany format zostanie użyty do generowania dokumentów, które zawierają obrazy w programie Excel i Word.   
 
-## <a name="run-format-with-initial-model-mapping"></a>Uruchamianie formatu z początkowym mapowaniem modelu
-1. Kliknij kolejno opcje Zarządzanie gotówką i bankami > Konta bankowe > Konta bankowe.
-2. Użyj szybkiego filtru, aby wyfiltrować pole Konto bankowe według wartości „USMF OPER”.
-3. W okienku akcji kliknij pozycję Konfiguracja.
-4. Kliknij przycisk Sprawdź.
-5. Kliknij opcję Drukowanie testu.
-    * Uruchom format do celów testowych.  
-6. W polu Format czeku zbywalnego wybierz opcję Tak.
-7. Kliknij przycisk OK.
-    * Przejrzyj produkt wyjściowy. Należy zauważyć, że w raporcie jest przedstawiane logo firmy oraz podpis osoby upoważnionej. Obraz podpisu jest pobierany z pola danych typu „Kontener” w rekordzie układu czeku skojarzonym z wybranym kontem bankowym.  
-8. Rozwiń sekcję Kopie.
-9. Kliknij przycisk Edytuj.
-10. W polu Znak wodny wprowadź tekst „Drukuj znak wodny jako unieważniony”.
-    * Zmień ustawienie znaku wodnego, aby był pokazywany tekst znaku wodnego podczas generowania dokumentu w elemencie kształtu programu Excel.  
-11. Kliknij opcję Drukowanie testu.
-12. Kliknij przycisk OK.
-    * Przejrzyj produkt wyjściowy. Należy zauważyć, że znak wodny jest widoczny w utworzonym raporcie zgodnie z wybraną opcją.  
-13. Zamknij stronę.
-14. W okienku akcji kliknij pozycję Zarządzanie płatnościami.
-15. Kliknij przycisk Czeki.
-16. Kliknij przycisk Pokaż filtry.
-17. Zastosuj następujące filtry: wprowadź wartość filtru „381”,„385”,„389” w polu „Numer czeku”, stosując operator filtru „jest jednym z”.
-18. Na liście zaznacz wszystkie wiersze.
-19. Kliknij opcję Drukuj kopię czeku.
-    * Uruchom format, aby ponownie wydrukować wybrane czeki.  
-    * Przejrzyj produkt wyjściowy. Należy zauważyć, że wybrane czeki zostały ponownie wydrukowane. Logo firmy i etykiety nie są drukowane, ponieważ znajdują się na formularzu z nadrukiem.  
+## <a name="configure-er-user-parameters"></a>Konfigurowanie parametrów użytkownika modułu ER  
+ 1. W okienku akcji kliknij pozycję Konfiguracje.  
+ 2. Kliknij opcję Parametry użytkownika.  
+ 3. W polu Ustawienia uruchamiania wybierz opcję Tak.  
+  Włącz flagę „Uruchom projekt”, aby uruchomić wersję roboczą wybranego formatu zamiast wersji ukończonej.  
+ 4. Kliknij przycisk OK.  
 
-## <a name="modify-the-mapping-of-the-imported-data-model"></a>Modyfikowanie mapowania zaimportowanego modelu danych
-1. Zamknij stronę.
-2. Zamknij stronę.
-3. Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Konfiguracje.
-4. W drzewie zaznacz element „Model czeków”.
-5. Kliknij przycisk Konstruktor.
-6. Kliknij opcję Mapuj model na źródło danych.
-7. Kliknij przycisk Konstruktor.
-    * Zmienimy powiązanie elementu podpisu modelu danych, tak aby obraz podpisu był pobierany z pliku dołączonego do rekordu układu czeku skojarzonego z wybranym kontem bankowym.  
-8. Wyłącz opcję Pokaż szczegóły.
-9. W drzewie rozwiń węzeł „układ”.
-10. W drzewie rozwiń węzeł „układ\podpis”.
-11. W drzewie zaznacz element „układ\podpis\obraz = chequesaccount.'<Relacje'.BankChequeLayout.Signature1Bmp”.
-12. W drzewie rozwiń węzeł „chequesaccount”.
-13. W drzewie rozwiń węzeł „chequesaccount\<Relacje”.
-14. W drzewie rozwiń węzeł „chequesaccount\<Relacje\BankChequeLayout”.
-15. W drzewie rozwiń węzeł „chequesaccount\<Relacje\BankChequeLayout\<Relacje”.
-16. W drzewie rozwiń węzeł „chequesaccount\<Relacje\BankChequeLayout\<Relacje\<Dokumenty”.
-17. W drzewie zaznacz element „chequesaccount\<Relacje\BankChequeLayout\<Relacje\<Dokumenty\getFileContentAsContainer()”.
-18. Kliknij opcję Powiąż.
-19. Kliknij przycisk Zapisz.
-20. Zamknij stronę.
-21. Zamknij stronę.
-22. Zamknij stronę.
-23. Zamknij stronę.
-
-## <a name="run-format-using-the-adjusted-model-mapping"></a>Uruchamianie formatu przy użyciu skorygowanego mapowania modelu
-1. Kliknij kolejno opcje Zarządzanie gotówką i bankami > Konta bankowe > Konta bankowe.
-2. Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy. Na przykład wyfiltruj według pola Konto bankowe z wartością „USMF OPER”.
-3. W okienku akcji kliknij pozycję Konfiguracja.
-4. Kliknij przycisk Sprawdź.
-5. Kliknij opcję Drukowanie testu.
-6. Kliknij przycisk OK.
-    * Przejrzyj produkt wyjściowy. Należy zauważyć, że obraz z załącznika funkcji zarządzania dokumentami jest wyświetlany jako podpis osoby upoważnionej.  
-
-## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Używanie dokumentu programu Microsoft Word jako szablonu w zaimportowanym formacie
-1. Zamknij stronę.
-2. Zamknij stronę.
-3. Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Konfiguracje.
-4. W drzewie rozwiń węzeł „Model czeków”.
-5. W drzewie zaznacz element „Model czeków\Format drukowania czeków”.
-6. Kliknij przycisk Konstruktor.
-7. Kliknij opcję Załączniki.
-8. Kliknij przycisk Usuń.
-9. Kliknij przycisk Tak.
-10. Kliknij przycisk Nowy.
-11. Kliknij opcję Plik.
-    * Kliknij przycisk Przeglądaj i zaznacz pobrany wcześniej plik „Cheque template Word.docx”.  
-12. Zamknij stronę.
-13. W polu Szablon wprowadź lub wybierz wartość.
-14. Kliknij przycisk Zapisz.
-15. Zamknij stronę.
-16. Kliknij przycisk Edytuj.
-17. W polu Uruchom wersję roboczą wybierz opcję Tak.
-18. Zamknij stronę.
-19. Kliknij kolejno opcje Zarządzanie gotówką i bankami > Konta bankowe > Konta bankowe.
-20. Użyj szybkiego filtru, aby wyfiltrować pole Konto bankowe według wartości „USMF OPER”.
-21. Kliknij przycisk Sprawdź.
-22. Kliknij opcję Drukowanie testu.
-23. Kliknij przycisk OK.
-    * Przejrzyj produkt wyjściowy. Należy zwrócić uwagę, że dane wyjściowe zostały wygenerowane jako dokument programu Microsoft Word z osadzonymi obrazami prezentującymi logo firmy, podpis osoby upoważnionej i wybrany tekst znaku wodnego.  
-
+## <a name="configure-cash--bank-management-parameters"></a>Konfigurowanie parametrów modułu Zarządzanie gotówką i bankami  
+ 1. Kliknij kolejno opcje Zarządzanie gotówką i bankami > Konta bankowe > Konta bankowe.  
+ 2. Użyj szybkiego filtru, aby wyfiltrować pole Konto bankowe według wartości „USMF OPER”.  
+ 3. W okienku akcji kliknij pozycję Konfiguracja.  
+ 4. Kliknij przycisk Sprawdź.  
+ 5. Rozwiń sekcję Ustawienia.  
+ 6. Kliknij przycisk Edytuj.  
+ 7. W polu Logo firmy wybierz opcję Tak.  
+ 8. Kliknij Logo firmy.  
+ 9. Kliknij przycisk Zmień.  
+ 10. Kliknij przycisk Przeglądaj i wybierz pobrany wcześniej plik Company logo.png.   
+ 11. Kliknij przycisk Zapisz.  
+ 12. Zamknij stronę.  
+ 13. Rozwiń sekcję Podpis.  
+ 14. W polu Drukuj pierwszy podpis zaznacz opcję Tak.  
+ 15. Kliknij przycisk Zmień.  
+ 16. Kliknij przycisk Przeglądaj i wybierz pobrany wcześniej plik Signature image.png.   
+ 17. Rozwiń sekcję Kopie.  
+ 18. W polu Znak wodny wybierz opcję.  
+ 19. W polu Ogólny elektroniczny format eksportu wybierz opcję Tak.  
+ 20. Wybierz konfigurację „Cheques printing form”.  
+ 21. Teraz wybrany format ER zostanie użyty do drukowania czeków.  
+ 22. Kliknij opcję Dołącz.  
+ 23. Kliknij przycisk Nowy.  
+ 24. Kliknij opcję Plik.  
+ 25. Kliknij przycisk Przeglądaj i wybierz pobrany wcześniej plik Signature image 2.png.   
+ 26. Zamknij stronę.  
+ 27. Zamknij stronę.  
+ 28. Zamknij stronę.  
+ 29. Wybierz kolejno opcje Zarządzanie gotówką i bankami > Ustawienia > Parametry modułu Zarządzanie gotówką i bankami.  
+ 30. W polu Zezwalaj na tworzenie przelewu testowego dla nieaktywnych kont bankowych zaznacz opcję Tak.  
+ 31. Kliknij przycisk Zapisz.  
+ 32. Zamknij stronę.  
 
