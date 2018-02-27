@@ -26,6 +26,9 @@ ms.lasthandoff: 01/19/2018
 ---
 
 # <a name="configuration-keys-and-data-entities"></a>Klucze konfiguracji a jednostki danych
+
+[!include[banner](../includes/banner.md)]
+
 Zanim zaczniesz używać jednostek danych do importowania lub eksportowania danych, zalecamy ustalenie wpływu kluczy konfiguracji na jednostki danych, których zamierzasz używać. 
 
 Aby dowiedzieć się więcej o kluczach konfiguracji w programie Finance and Operations, zobacz [Raport kodów licencji i kluczy konfiguracji](../sysadmin/license-codes-configuration-keys-report.md).
