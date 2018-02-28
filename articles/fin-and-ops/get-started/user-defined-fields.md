@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: 5c66f893b0dc26b01e7c4eb024ef543f915bfe9f
-ms.openlocfilehash: e272b846fba16445d3a48f9e6c33805d7b4f4d38
+ms.sourcegitcommit: ad59346f88b7a5984e16418e2aade7ccaedf180b
+ms.openlocfilehash: 142c66c189d6401cfb3db128e45fea6c071e99bf
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/28/2018
 
 ---
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/19/2018
 10.   <span data-ttu-id="effcf-136">Kliknij przycisk **Wstaw**, aby wstawić oznaczone pola do wybranego regionu formularza.</span><span class="sxs-lookup"><span data-stu-id="effcf-136">Click **Insert** to insert the marked fields into the selected region of the form.</span></span> 
 11.   <span data-ttu-id="effcf-137">**Opcjonalnie:** Na pasku narzędzi personalizacji włącz tryb **Przenieś**, aby przenieść nowe pola w żądane miejsce w wybranym regionie.</span><span class="sxs-lookup"><span data-stu-id="effcf-137">**Optional:** Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region.</span></span> <span data-ttu-id="effcf-138">Zobacz temat [Dostosowanie do użytkownika](personalize-user-experience.md), aby uzyskać więcej informacji na temat używania różnych funkcji personalizacji w celu dostosowania formularza do własnych potrzeb.</span><span class="sxs-lookup"><span data-stu-id="effcf-138">See [Personalize the user experience](personalize-user-experience.md) for more information about how to use the various personalization capabilities to optimize a form for your personal usage.</span></span>  
 
-### <a name="sharing-custom-fields-with-other-users"></a><span data-ttu-id="effcf-139">Udostępnianie niestandardowych pól innym użytkownikom</span><span class="sxs-lookup"><span data-stu-id="effcf-139">Sharing custom fields with other users</span></span>
+## <a name="sharing-custom-fields-with-other-users"></a><span data-ttu-id="effcf-139">Udostępnianie niestandardowych pól innym użytkownikom</span><span class="sxs-lookup"><span data-stu-id="effcf-139">Sharing custom fields with other users</span></span>
 <span data-ttu-id="effcf-140">Po utworzeniu niestandardowego pola i jego uwidocznieniu w formularzu można innym użytkownikom w systemie udostępnić zaktualizowany widok strony zawierający nowe pole.</span><span class="sxs-lookup"><span data-stu-id="effcf-140">After you have created a custom field and exposed it on a form, you might want to provide this updated page view that includes the new field to other users in the system.</span></span> <span data-ttu-id="effcf-141">Można to zrobić na dwa różne sposoby przy użyciu funkcji personalizacji produktu:</span><span class="sxs-lookup"><span data-stu-id="effcf-141">This can be accomplished in two different ways using the personalization capabilities of the product:</span></span>
 
 -   <span data-ttu-id="effcf-142">Zalecanym sposobem jest skorzystanie z pośrednictwa administratora systemu, który może rozesłać personalizację do wszystkich użytkowników lub tylko do grupy użytkowników.</span><span class="sxs-lookup"><span data-stu-id="effcf-142">The recommended route is through the system administrator, who can push a personalization to all users or a subset of users.</span></span> <span data-ttu-id="effcf-143">Aby uzyskać więcej informacji, zobacz [Dostosowanie do użytkownika](personalize-user-experience.md).</span><span class="sxs-lookup"><span data-stu-id="effcf-143">See [Personalize the user experience](personalize-user-experience.md) for more details.</span></span> 
