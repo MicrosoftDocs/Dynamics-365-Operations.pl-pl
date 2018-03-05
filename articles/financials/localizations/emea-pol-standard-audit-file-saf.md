@@ -19,14 +19,16 @@ ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: df7d889b0787e01428c02d81d1f9347bf7d42345
+ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
+ms.openlocfilehash: ef7a8ace1f79ba1dccae8a6febe94b16866dc7c2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 
 # <a name="standard-audit-file-saf-for-poland"></a><span data-ttu-id="c0be6-104">Standardowy plik audytu (SAF) dla Polski</span><span class="sxs-lookup"><span data-stu-id="c0be6-104">Standard audit file (SAF) for Poland</span></span>
+
+[!include[banner](../includes/banner.md)]
 
 <span data-ttu-id="c0be6-105">Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML.</span><span class="sxs-lookup"><span data-stu-id="c0be6-105">Users in legal entities in Poland can generate a Standard Audit File for Tax (SAF-T) in XML format.</span></span> <span data-ttu-id="c0be6-106">Ten temat zawiera informacje o formatach dla Polski.</span><span class="sxs-lookup"><span data-stu-id="c0be6-106">This topic provides information about the formats for Poland.</span></span> 
 

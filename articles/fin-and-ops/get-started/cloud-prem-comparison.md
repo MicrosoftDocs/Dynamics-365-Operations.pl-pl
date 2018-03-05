@@ -18,14 +18,16 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
-ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
+ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
+ms.openlocfilehash: e45ecc3aec7b2b3c78b18751b81b7b588bebf1b9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 
 # <a name="cloud-and-on-premises-feature-comparison"></a><span data-ttu-id="60d3f-103">Porównanie funkcji w chmurze i lokalnych</span><span class="sxs-lookup"><span data-stu-id="60d3f-103">Cloud and on-premises feature comparison</span></span>
+
+[!include[banner](../includes/banner.md)]
 
 <span data-ttu-id="60d3f-104">W tym temacie określono, czy dana funkcja jest dostępna w tych produktach:</span><span class="sxs-lookup"><span data-stu-id="60d3f-104">This topic shows whether each feature is available in these products:</span></span>
 
