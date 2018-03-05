@@ -26,6 +26,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="storno-accounting"></a>Stornowanie
 
+[!include[banner](../includes/banner.md)]
+
 Stornowanie to praktyka używania liczb ujemnych, aby odwrócić oryginalne zapisy na koncie arkusza.
 
 *Stornowanie* to praktyka używania ujemnych liczb po stronie winien lub ma, aby odwrócić oryginalne zapisy na koncie arkusza. Ponieważ księgowi zazwyczaj zapisują pozycje storna czerwonym atramentem, ta praktyka księgowa jest również znana jako *storno czerwone*. Za pomocą stornowania można anulować dokument z niepoprawnymi kwotami, ale po anulowaniu należy zawsze wprowadzić poprawne kwoty dokumentu.

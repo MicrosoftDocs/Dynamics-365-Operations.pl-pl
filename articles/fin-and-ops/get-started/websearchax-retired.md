@@ -27,6 +27,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="websearchax-retired"></a>Strona WebSearchAX zamknięta
 
+[!include[banner](../includes/banner.md)]
+
 Musieliśmy zamknąć stronę WebSearchAX. Zalecamy, aby zamiast niej używać do przeszukiwania witryny ulubionej wyszukiwarki.  Na przykład: 
 
 site:technet.microsoft.com dynamics ax 2012 „wyszukiwany termin”

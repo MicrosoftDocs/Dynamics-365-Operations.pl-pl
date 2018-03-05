@@ -25,6 +25,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="bank-management-workspace"></a>Obszar roboczy zarządzania rachunkami bankowymi
 
+[!include[banner](../includes/banner.md)]
+
 Obszar roboczy **Zarządzanie rachunkami bankowymi** zawiera informacje dotyczące firmowych kont bankowych. Ten obszar roboczy zawiera widok **Podsumowanie** i stronę **Analizy**. Widok **Podsumowanie** zawiera kafelki podsumowań, informacje o rachunkach bankowych, wykres salda i pokrewne informacje. Strona **Analizy** wykorzystuje funkcje programu Microsoft Power BI, aby pokazywać wizualizacje dotyczące sald na rachunkach bankowych.
 
 ## <a name="summary-view"></a>Widok Podsumowanie

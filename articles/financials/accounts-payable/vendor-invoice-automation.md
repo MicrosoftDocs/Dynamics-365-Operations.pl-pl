@@ -25,6 +25,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="vendor-invoice-automation"></a>Automatyzacja obsługi faktur od dostawców
 
+[!include[banner](../includes/banner.md)]
+
 W tym temacie opisano dostępne funkcje kompleksowej automatyzacji obsługi faktur od dostawców, w tym nawet faktur zawierających załączniki.
 
 Organizacje, które chcą usprawnić swoje procesy rozrachunków z dostawcami (AP), często wskazują na przetwarzanie faktur jako na jeden z głównych obszarów przetwarzania, który powinien być bardziej efektywny. W wielu przypadkach takie organizacje przekazują przetwarzanie papierowych faktur zewnętrznym dostawcom usług optycznego rozpoznawania znaków (OCR). Następnie otrzymują metadane faktur nadające się do odczytu maszynowego razem z zeskanowanego obrazem każdej faktury. Aby pomóc w automatyzacji, jest następnie budowane rozwiązanie „ostatniej mili”, które umożliwia wykorzystywanie tych artefaktów w systemie fakturowania. Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition teraz umożliwia tę automatyzację „ostatniej mili” w standardzie, za pomocą rozwiązania do automatyzacji obsługi faktur.
