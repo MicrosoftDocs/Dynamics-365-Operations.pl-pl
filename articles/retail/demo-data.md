@@ -29,6 +29,8 @@ ms.lasthandoff: 10/17/2017
 
 # <a name="demo-data-screen-layouts-in-mposcpos"></a>Układy ekranu danych demonstracyjnych w programie MPOS/CPOS
 
+[!include[banner](includes/banner.md)]
+
 Ten temat zawiera informacje o układach ekranu zawartych w zestawie danych demonstracyjnych dla doświadczeń punktu sprzedaży w rozwiązaniu Microsoft Dynamics 365 for Retail.
 
 ## <a name="overview"></a>Przegląd
