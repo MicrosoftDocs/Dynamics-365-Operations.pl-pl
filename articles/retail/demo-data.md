@@ -20,14 +20,16 @@ ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 747c0cfa36e1220342307ae665e69e02eabd3cce
+ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
+ms.openlocfilehash: e812bb13c903e72e31e62effd0c70f9b9d62de55
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/06/2018
 
 ---
 
 # <a name="demo-data-screen-layouts-in-mposcpos"></a><span data-ttu-id="65357-103">Układy ekranu danych demonstracyjnych w programie MPOS/CPOS</span><span class="sxs-lookup"><span data-stu-id="65357-103">Demo data screen layouts in MPOS/CPOS</span></span>
+
+[!include[banner](includes/banner.md)]
 
 <span data-ttu-id="65357-104">Ten temat zawiera informacje o układach ekranu zawartych w zestawie danych demonstracyjnych dla doświadczeń punktu sprzedaży w rozwiązaniu Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="65357-104">This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Microsoft Dynamics 365 for Retail.</span></span>
 
