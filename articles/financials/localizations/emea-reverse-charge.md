@@ -16,14 +16,17 @@ ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1019b0f60673e158de1257ba7f5efe77e3a4aaa5
+ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
+ms.openlocfilehash: 64a9381224ebe9dfeac8a3fab0211937a8df733c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/07/2018
 
 ---
 
 # <a name="reverse-charge-vat"></a><span data-ttu-id="2ddda-103">Opłata zwrotna VAT</span><span class="sxs-lookup"><span data-stu-id="2ddda-103">Reverse charge VAT</span></span>
+
+[!include[banner](../includes/banner.md)]
+
 <span data-ttu-id="2ddda-104">W tym temacie opisano standardową metodę konfigurowania odwróconego podatku od towarów i usług (VAT) dla krajów europejskich.</span><span class="sxs-lookup"><span data-stu-id="2ddda-104">This topic describes a generic approach for setting up the reverse charge value-added tax (VAT) for European countries.</span></span>
 
 <span data-ttu-id="2ddda-105">Podatek odwrócony to schemat podatkowy, w którym odpowiedzialność za rozliczenie i sprawozdawczość podatku VAT jest przenoszona ze sprzedawcy na nabywcę towarów i/lub usług.</span><span class="sxs-lookup"><span data-stu-id="2ddda-105">Reverse Charge is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services.</span></span> <span data-ttu-id="2ddda-106">W związku z tym odbiorcy towarów i/lub usług raportują w swoich deklaracjach VAT zarówno należny podatek VAT (w roli sprzedawcy), jak i naliczony podatek VAT (w roli nabywcy).</span><span class="sxs-lookup"><span data-stu-id="2ddda-106">Therefore, recipients of goods and/or services report both the output VAT (in the role of a seller) and the input VAT (in the role of a purchaser) in their VAT statement.</span></span>

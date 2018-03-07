@@ -18,14 +18,17 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 1ae934a1157a2105ff2d32655b982e9946669276
+ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
+ms.openlocfilehash: d249d64040a6fb2ae645c651ffaf367ddbfca944
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/07/2018
 
 ---
 
 # <a name="set-up-customer-and-vendor-compensation"></a><span data-ttu-id="f6784-103">Konfiguracja kompensacji odbiorców oraz dostawców</span><span class="sxs-lookup"><span data-stu-id="f6784-103">Set up customer and vendor compensation</span></span>
+
+[!include[banner](../includes/banner.md)]
+
 <span data-ttu-id="f6784-104">Ten temat zawiera informacje, które pomogą wykonywać proces kompensat na kontach dostawców i odbiorców dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce.</span><span class="sxs-lookup"><span data-stu-id="f6784-104">This topic provides information that will help you run the compensation process for vendor and customer accounts, for legal entities that have their primary address in Hungary or Poland.</span></span>
 
 <span data-ttu-id="f6784-105">Często użytkownicy w Europie Wschodniej muszą rozliczać kwoty należności i zobowiązań dla firmy, która jest zarejestrowana w systemie równocześnie jako odbiorca i dostawca.</span><span class="sxs-lookup"><span data-stu-id="f6784-105">Often, users in Eastern Europe must settle receivable and payable amounts for a company that is registered as both a customer and a vendor in the system.</span></span> <span data-ttu-id="f6784-106">Ten proces rozliczania wykorzystuje prawną procedurę znaną jako *kompensata* lub *netowanie* (netting).</span><span class="sxs-lookup"><span data-stu-id="f6784-106">This settlement process uses a legal procedure that is known as *compensation* or *netting*.</span></span> 
