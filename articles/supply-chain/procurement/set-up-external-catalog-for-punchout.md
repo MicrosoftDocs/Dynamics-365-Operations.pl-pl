@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut eProcurement
 
+[!include[banner](../includes/banner.md)]
+
 Używając zewnętrznego katalogu, można mieć pewność, że informacje o produktach i cenach, które następnie będą przetwarzane w programie Dynamics 365 for Finance and Operations Enterprise Edition w wersji z lipca 2017 roku, są dokładne i aktualne. Zapotrzebowanie można następnie zatwierdzić i przekonwertować na zamówienie zakupu, które zostanie złożone u dostawcy.
 
 Po skonfigurowaniu zewnętrznego katalogu pracownik przygotowujący zapotrzebowanie będzie miał możliwość przejścia do zewnętrznej witryny (zewnętrznego katalogu), a następnie zwrócenia z niej koszyka zakupów do swojej macierzystej witryny. Ta komunikacja opiera się na protokole cXML i musi być skonfigurowana między systemami organizacji kupującej i sprzedającej.

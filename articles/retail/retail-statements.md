@@ -28,6 +28,9 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="retail-statements"></a>Zestawienia sieci sprzedaży
+
+[!include[banner](includes/banner.md)]
+
 W programie Microsoft Dynamics 365 for Retail proces księgowania zestawień jest używany do wykazywania transakcji następujących w aplikacjach Cloud POS lub Modern POS (MPOS). Proces księgowania zestawień używa harmonogramu dystrybucji, aby pobierać zbiór transakcji z punktu sprzedaży do aplikacji klienckiej w centrali (HQ). Parametry definiowane na stronach **Parametry sieci sprzedaży** i **Sklepy** są używane do wybierania transakcji pobieranych do poszczególnych zestawień.  
 
 Poniższa ilustracja przedstawia proces księgowania zestawień: W tym procesie transakcje rejestrowane w punkcie sprzedaży są przesyłane do klienta za pomocą modułu Transfer danych w sieci sprzedaży. Gdy klient otrzyma transakcje, użytkownik może tworzyć, obliczać i księgować zestawienia transakcji dla sklepu. 

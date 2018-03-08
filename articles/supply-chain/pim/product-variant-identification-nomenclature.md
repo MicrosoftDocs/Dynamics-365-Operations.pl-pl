@@ -29,6 +29,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Nazewnictwo numerów i nazw wariantów produktu
 
+[!include[banner](../includes/banner.md)]
+
 W tym temacie opisano sposób ustawiania nazewnictwa numerów produktów w celu zastąpienia stałego formatu [numer produktu głównego — konfiguracja — rozmiar — kolor — styl numeracji] format. Nowe nazewnictwo ma format docelowy zawierający numer produktu głównego, aktywne wymiary produktu i separatory tekstu wybrane przez użytkownika. Można też ustalić zasady nazewnictwa dla nazw produktów. Można ponadto skonstruować konwencję nazewnictwa do identyfikowania konfiguracji, które są tworzone przez konfigurator produktów oparty na ograniczeniach. Te konwencje nazewnictwa mogą zawierać atrybuty wybrane przez użytkownika.
 
 Nowe nazewnictwa numerów wariantu produktu i nazw wariantów produktu pozwalają na uwzględnienie segmentów w identyfikatorach wariantów produktu. Segmenty te mogą zawierać numer i nazwę produktu głównego, identyfikator i nazwy wymiarów produktu, sekwencje numerów, stałe tekstowe i atrybuty. Ta funkcja umożliwia szybkie znalezienie konkretnego wariantu produktu podczas tworzenia zamówienia sprzedaży lub zamówienia zakupu. Zarówno nazewnictwo numerów wariantu produktu i jak i nazewnictwo nazw wariantu produktu tworzy się przy użyciu strony **Nazewnictwo produktów**. Aby otworzyć tę stronę, kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Ustawienia**.

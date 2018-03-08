@@ -25,6 +25,9 @@ ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="attract-overview"></a>Omówienie aplikacji Attract
+
+[!include[banner](includes/banner.md)]
+
 Aplikacja Attract udostępnia funkcje zarządzania procesem zatrudniania nowych talentów. Kandydatów można dodać do otwartych stanowisk i przesuwać między etapami aż do przedłużenia oferty lub odrzucenia podania. Na każdym etapie kandydaci przechodzą przez takie etapy jak rozmowa telefoniczna umożliwiająca wstępną selekcję, oceny lub planowanie rozmów. Po złożeniu podania kandydaci otrzymują wiadomość e-mail z zaproszeniem do zarejestrowania w aplikacji Attract, gdzie mogą śledzić stan oferty pracy, podania i reagować na przypisane do nich zadania.
 
 Funkcje aplikacji Attract wymieniono poniżej.

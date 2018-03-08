@@ -30,6 +30,8 @@ ms.lasthandoff: 01/19/2018
 
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Przygotowanie do zarządzania kosztami standardowymi wyprodukowanych towarów
 
+[!include[banner](../includes/banner.md)]
+
 W tym temacie opisano etapy przygotowywania się do zarządzania kosztami wytwarzanych towarów. Kroki dla towarów wytwarzanych różnią się nieco od kroków dla towarów zakupionych.
 
 Zasady przypisane do towarów wytwarzanych mogą wpływać na obliczanie kosztów nadrzędnych towarów wytwarzanych. Aby się przygotować do zarządzania kosztami towarów wytwarzanych, wykonaj następujące czynności:

@@ -27,6 +27,8 @@ ms.lasthandoff: 12/20/2017
 
 # <a name="display-notifications-in-point-of-sale"></a>Wyświetlanie powiadomień w punkcie sprzedaży
 
+[!include[banner](includes/banner.md)]
+
 We współczesnym środowisku sprzedaży detalicznej do pracowników sklepu są przypisane różne zadania, takie jak pomoc klientom, wprowadzanie transakcji, przeprowadzanie inwentaryzacji i odbieranie zamówień w sklepie. Klient Punkt sprzedaży (POS) umożliwia pracownikom wykonywanie tych i innych zadań w jednej aplikacji. Mając do wykonania różne zadania w ciągu dnia, pracownicy mogą potrzebować powiadomień, jeżeli coś wymaga ich uwagi. Struktura powiadomień w punkcie sprzedaży rozwiązuje ten problem, umożliwiając pracownikom skonfigurowanie powiadomień opartych na rolach. W rozwiązaniu Dynamics 365 for Retail z aktualizacją aplikacji 5 te powiadomienia można skonfigurować tylko dla operacji punktu sprzedaży.
 
 Obecnie system umożliwia wyświetlenie powiadomień dla operacji realizacji zamówienia, jednakże strukturę opracowano pod kątem możliwości rozszerzenia, aby w przyszłości programiści mogli opracować program obsługi powiadomień dla dowolnej operacji i umożliwić wyświetlanie powiadomień w punkcie sprzedaży.  

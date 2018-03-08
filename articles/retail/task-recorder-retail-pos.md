@@ -29,6 +29,8 @@ ms.lasthandoff: 02/01/2018
 
 # <a name="task-recorder-and-help-for-pos"></a>Rejestrator zadań i Pomoc dla punktu sprzedaży
 
+[!include[banner](includes/banner.md)]
+
 W tym temacie opisano, jak korzystać z Rejestratora zadań w programach Retail Modern POS (MPOS) i Cloud POS.
 
 <a name="overview"></a>Przegląd

@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="process-compensation"></a>Przetwarzanie wynagrodzenia
+
+[!include[banner](includes/banner.md)]
+
 Funkcjonalność przetwarzania wynagrodzeń pozwala obliczyć nowe kwoty podstawy wynagrodzenia dla pracowników w oparciu o korektę wyrównawczą, cele podwyżki uznaniowej i wydajność. Ten temat omawia podstawowy przepływ przetwarzania wynagrodzeń w systemach stałych wynagrodzeń bez uwzględniania wydajności pracownika.
 
 ## <a name="plan-the-new-compensation-amounts-and-budgets"></a>Planowanie nowych kwot wynagrodzeń i budżetów
