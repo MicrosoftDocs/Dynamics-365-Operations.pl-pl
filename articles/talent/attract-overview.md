@@ -18,13 +18,16 @@ ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: e84449475ce73b4a6a88ab9975e2572178cf0dab
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: b64a97897a1ea75eb2a9681bc9357433a570dd74
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 # <a name="attract-overview"></a><span data-ttu-id="d17f4-104">Omówienie aplikacji Attract</span><span class="sxs-lookup"><span data-stu-id="d17f4-104">Attract overview</span></span>
+
+[!include[banner](includes/banner.md)]
+
 <span data-ttu-id="d17f4-105">Aplikacja Attract udostępnia funkcje zarządzania procesem zatrudniania nowych talentów.</span><span class="sxs-lookup"><span data-stu-id="d17f4-105">Attract provides capabilities to manage the process of hiring new talent.</span></span> <span data-ttu-id="d17f4-106">Kandydatów można dodać do otwartych stanowisk i przesuwać między etapami aż do przedłużenia oferty lub odrzucenia podania.</span><span class="sxs-lookup"><span data-stu-id="d17f4-106">Candidates can be added to open jobs and advanced from stage to stage until an offer is extended or the application is rejected.</span></span> <span data-ttu-id="d17f4-107">Na każdym etapie kandydaci przechodzą przez takie etapy jak rozmowa telefoniczna umożliwiająca wstępną selekcję, oceny lub planowanie rozmów.</span><span class="sxs-lookup"><span data-stu-id="d17f4-107">In each stage, candidates move through activities like screening calls, assessments, or the scheduling of interviews.</span></span> <span data-ttu-id="d17f4-108">Po złożeniu podania kandydaci otrzymują wiadomość e-mail z zaproszeniem do zarejestrowania w aplikacji Attract, gdzie mogą śledzić stan oferty pracy, podania i reagować na przypisane do nich zadania.</span><span class="sxs-lookup"><span data-stu-id="d17f4-108">After they apply, candidates get an email inviting them to sign in to Attract, where they can follow the status of the job, their application, and respond to any tasks that are assigned to them.</span></span>
 
 <span data-ttu-id="d17f4-109">Funkcje aplikacji Attract wymieniono poniżej.</span><span class="sxs-lookup"><span data-stu-id="d17f4-109">Attract provides the following features.</span></span>
