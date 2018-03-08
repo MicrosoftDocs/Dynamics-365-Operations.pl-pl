@@ -25,6 +25,9 @@ ms.lasthandoff: 12/01/2017
 
 ---
 # <a name="extend-the-functionality-of-microsoft-dynamics-365-for-talent"></a>Rozszerzanie funkcji programu Microsoft Dynamics 365 for Talent
+
+[!include[banner](includes/banner.md)]
+
 Po utworzeniu dowolnej aplikacji w środowisku Microsoft PowerApps można uruchomić takie aplikacje za pomocą łączy w programie Microsoft Dynamics 365 for Talent. Aby skonfigurować dostęp do aplikacji, należy ustawić niektóre informacje w aplikacji Talent na stronie konfiguracji, którą można otworzyć z poziomu obszaru roboczego **Administrowanie systemem**.
 
 ## <a name="configuring-embedded-powerapps-within-talent"></a>Konfiguracja osadzonych usług PowerApps w środowisku Talent

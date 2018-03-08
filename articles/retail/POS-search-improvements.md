@@ -28,6 +28,8 @@ ms.lasthandoff: 01/19/2018
 
 # <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Przegląd produktu i wyszukiwania klientów w punkcie sprzedaży
 
+[!include[banner](includes/banner.md)]
+
 Aplikacje Modern Point of Sale (MPOS) i Cloud Point of Sale (CPOS) udostępniają funkcję łatwego wyszukiwania, która umożliwia pracownikom sklepu szybkie wyszukiwanie produktów i klientów. Pasek wyszukiwania znajduje się zawsze w górnej części aplikacji MPOS i CPOS, aby umożliwić pracownikom szybkie znalezienie produktów i klientów.
 
 Pracownicy mogą wyszukiwać produkty w asortymencie i katalogach skojarzonych z bieżącym sklepem oraz asortymencie i katalogach skojarzonych z innymi sklepami w firmie. Dlatego kasjerzy mogą sprzedawać i zwracać produkty spoza asortymentu sklepu. Podobnie pracownicy mogą wyszukiwać klientów skojarzonych z bieżącym sklepem lub dowolnym innym sklepem w firmie. Ponadto pracownicy mogą wyszukiwać klientów skojarzonych z inną firmą w organizacji nadrzędnej.

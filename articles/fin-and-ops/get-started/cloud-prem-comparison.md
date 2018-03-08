@@ -27,6 +27,8 @@ ms.lasthandoff: 12/01/2017
 
 # <a name="cloud-and-on-premises-feature-comparison"></a>Porównanie funkcji w chmurze i lokalnych
 
+[!include[banner](../includes/banner.md)]
+
 W tym temacie określono, czy dana funkcja jest dostępna w tych produktach:
 
 + Dynamics 365 for Finance and Operations, Enterprise Edition (chmura)

@@ -26,6 +26,8 @@ ms.lasthandoff: 12/14/2017
 ---
 # <a name="visibility-into-material-exceptions"></a>Uzyskiwanie wglądu w wyjątki dotyczące materiałów
 
+[!include[banner](../includes/banner.md)]
+
 W obszarze roboczym **Zarządzanie halą produkcyjną** trzy kafelki zapewniają lepszy wgląd w wyjątki dotyczące surowców dla zleceń produkcyjnych i zamówień partii:
 
 - Niezwolnione wiersze dla materiałów wymagające uwagi

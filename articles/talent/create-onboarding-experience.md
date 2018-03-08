@@ -26,6 +26,8 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="create-an-engaging-onboarding-experience"></a>Tworzenie atrakcyjnych materiałów związanych z wdrażaniem do pracy
 
+[!include[banner](includes/banner.md)]
+
 Efektywnie przeprowadzone wdrażanie do pracy ułatwia pracownikom skuteczne wykonywanie obowiązków, a także zyskanie poczucia przynależności do nowego stanowiska. Wdrażanie do pracy pomaga nowym pracownikom szybciej i dokładniej zrozumieć nową rolę niż w inny sposób i przyspiesza nawiązanie relacji ułatwiających odniesienie sukcesu. Natomiast nieefektywne wdrażanie do pracy może spowodować, że pracownicy będą kwestionować swoją decyzję o dołączeniu do organizacji. Badanie przeprowadzone przez firmę Gartner w 2014 roku wykazało, że niemal jedna trzecia z 1005 ankietowanych, którzy zrezygnowali z pracy w ciągu pierwszych sześciu miesięcy zrobiło to z powodu niejasnych wskazówek kierownictwa, nieskutecznego szkolenia lub ponieważ nie nawiązali efektywnych relacji w nowym środowisku.
 
 ## <a name="have-an-onboarding-program-in-place"></a>Dostępność programu wdrażania do pracy

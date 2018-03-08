@@ -62,7 +62,7 @@ Kroki poniżej opisują proces tworzenia niestandardowego pola i umieszczania go
 10.   Kliknij przycisk **Wstaw**, aby wstawić oznaczone pola do wybranego regionu formularza. 
 11.   **Opcjonalnie:** Na pasku narzędzi personalizacji włącz tryb **Przenieś**, aby przenieść nowe pola w żądane miejsce w wybranym regionie. Zobacz temat [Dostosowanie do użytkownika](personalize-user-experience.md), aby uzyskać więcej informacji na temat używania różnych funkcji personalizacji w celu dostosowania formularza do własnych potrzeb.  
 
-### <a name="sharing-custom-fields-with-other-users"></a>Udostępnianie niestandardowych pól innym użytkownikom
+## <a name="sharing-custom-fields-with-other-users"></a>Udostępnianie niestandardowych pól innym użytkownikom
 Po utworzeniu niestandardowego pola i jego uwidocznieniu w formularzu można innym użytkownikom w systemie udostępnić zaktualizowany widok strony zawierający nowe pole. Można to zrobić na dwa różne sposoby przy użyciu funkcji personalizacji produktu:
 
 -   Zalecanym sposobem jest skorzystanie z pośrednictwa administratora systemu, który może rozesłać personalizację do wszystkich użytkowników lub tylko do grupy użytkowników. Aby uzyskać więcej informacji, zobacz [Dostosowanie do użytkownika](personalize-user-experience.md). 

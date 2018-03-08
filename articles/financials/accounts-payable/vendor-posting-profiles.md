@@ -54,10 +54,6 @@ Służy do określania kont księgowych używanych podczas księgowania transakc
 Jeśli wszystkie transakcje dostawcy mają mieć ten sam profil księgowania, należy ustawić tylko jeden profil księgowania o wartości Wszystko polu Kod konta. Określ następujące wartości do konfigurowania profilu księgowania:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Pole</th>

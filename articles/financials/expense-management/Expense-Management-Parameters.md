@@ -25,6 +25,9 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="expense-management-parameters"></a>Parametry zarządzania wydatkami
+
+[!include[banner](../includes/banner.md)]
+
 -----------------------------
 
 Parametry kontrolują ogólne zachowanie w module Zarządzanie wydatkami.

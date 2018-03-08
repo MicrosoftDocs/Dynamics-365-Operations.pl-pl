@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="migrate-products-and-warehouse-management-from-ax-2012-to-finance-and-operations"></a>Migracja produktów i zarządzanie magazynem z systemu AX 2012 do rozwiązania Finance and Operations
 
+[!include[banner](../includes/banner.md)]
+
 W tym temacie omówiono opcje migracji funkcji zarządzania produktami i magazynami dostępne w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.
 
 <a name="introduction"></a>Wprowadzenie
