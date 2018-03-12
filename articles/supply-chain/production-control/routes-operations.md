@@ -1,7 +1,7 @@
 ---
 title: Marszruty i operacje
 description: Ten temat zawiera informacje o marszrutach i operacjach.
-author: YuyuScheller
+author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

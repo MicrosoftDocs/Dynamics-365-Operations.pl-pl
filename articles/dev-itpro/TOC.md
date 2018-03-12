@@ -9,7 +9,7 @@
 ## [Stos aplikacji i architektura serwera](dev-tools/application-stack-server-architecture.md)
 ## [Pobieranie kopii ewaluacyjnej](dev-tools/get-evaluation-copy.md)
 ## [Tworzenie konta na potrzeby subskrypcji](dev-tools/sign-up-preview-subscription.md)
-## [Uzyskiwanie dostępu do wystąpień](dev-tools/access-instances.md)
+## [Wdrażanie środowiska projektowego i uzyskiwanie do niego dostępu](dev-tools/access-instances.md)
 ## [Wymagania systemowe dotyczące programowania](dev-tools/development-system-requirements.md)
 ## Przykładowa aplikacja Zarządzanie flotą
 ### [Przykładowa aplikacja Zarządzanie flotą](dev-tools/fleet-management-sample.md)
@@ -360,7 +360,7 @@
 #### [Typ ValueMetadata](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
 # Integracja danych
-## [Wzorce integracji](data-entities/integration-overview.md)
+## [Wybieranie strategii integracji danych (import/eksport)](data-entities/integration-overview.md)
 
 ## Interfejsy API integracji danych
 ### [Interfejs API pakietu zarządzania danymi](data-entities/data-management-api.md)
@@ -381,12 +381,12 @@
 
 ### [Integracja danych za pomocą usługi Common Data Service](data-entities/data-integration-cds.md) 
 #### [Konfigurowanie scenariusza Od potencjalnego klienta do środków pieniężnych](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [Synchronizowanie produktów w rozwiązaniu Finance and Operations do produktów w rozwiązaniu Sales](../supply-chain/sales-marketing/products-template-mapping.md)
-##### [Synchronizowanie kont w rozwiązaniu Sales do odbiorców w rozwiązaniu Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
-##### [Synchronizowanie kontaktów w rozwiązaniu Sales do kontaktów lub odbiorców w rozwiązaniu Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
-##### [Synchronizowanie nagłówków i wierszy ofert sprzedaży w rozwiązaniu Sales do elementów w rozwiązaniu Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-##### [Synchronizowanie nagłówków i wierszy zamówień sprzedaży w rozwiązaniu Finance and Operations z elementami w rozwiązaniu Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-##### [Synchronizowanie nagłówków i wierszy faktur sprzedaży w rozwiązaniu Finance and Operations z elementami w rozwiązaniu Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [Synchronizowanie produktów w rozwiązaniu Finance and Operations do produktów w rozwiązaniu Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [Synchronizowanie kont w rozwiązaniu Sales do odbiorców w rozwiązaniu Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [Synchronizowanie kontaktów w rozwiązaniu Sales do kontaktów lub odbiorców w rozwiązaniu Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [Synchronizowanie nagłówków i wierszy ofert sprzedaży w rozwiązaniu Sales do elementów w rozwiązaniu Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [Synchronizowanie nagłówków i wierszy zamówień sprzedaży w rozwiązaniu Finance and Operations z elementami w rozwiązaniu Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [Synchronizowanie nagłówków i wierszy faktur sprzedaży w rozwiązaniu Finance and Operations z elementami w rozwiązaniu Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Synchronizowanie kont w rozwiązaniu Sales bezpośrednio z odbiorcami w rozwiązaniu Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [Synchronizowanie produktów w rozwiązaniu Finance and Operations bezpośrednio z produktami w rozwiązaniu Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [Synchronizowanie kontaktów w rozwiązaniu Sales bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
@@ -452,6 +452,8 @@
 
 ## [Używanie własnej bazy danych](analytics/export-entities-to-your-own-database.md)
 
+## [Zasoby do odpowiadania na żądanie danych RODO](gdpr/gdpr-home-page.md)
+
 # [Ciągłe dostarczanie — strona główna](dev-tools/continuous-delivery-home-page.md)
 ## [Rozwój i ciągłe dostarczanie — często zadawane pytania](dev-tools/continuous-delivery-faq.md)
 ## [Wykluczenie pakietów testowych z wyników kompilacji](dev-tools/exclude-test-packages.md)
@@ -504,7 +506,7 @@
 # Wdrażanie
 ## [Wdrażanie środowiska demonstracyjnego](deployment/deploy-demo-environment.md)
 
-## Wdrożenia w chmurze
+## Wdrożenie w chmurze
 ### [Wprowadzanie usługi Azure Resource Manager](deployment/arm-onboarding.md)
 ### [Usługa Azure ExpressRoute i rozwiązanie Dynamics 365 for Finance and Operations Enterprise Edition](deployment/expressroute.md)
 
@@ -515,6 +517,7 @@
 ### [Tworzenie projektu wdrożenia lokalnego](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Konfigurowanie i wdrażanie środowisk lokalnych](deployment/setup-deploy-on-premises-environments.md)
 ### [Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych](deployment/develop-deploy-custom-models-on-premises.md)
+### [Konfigurowanie zwrotnego serwera proxy dla środowiska dla lokalnego](deployment/onprem-reverseproxy.md)
 ### [Stosowanie aktualizacji do wdrożenia lokalnego](deployment/apply-updates-on-premises.md)
 ### [Ponowne wdrażanie wdrożenia lokalnego](deployment/redeploy-on-prem.md)
 ### [Aktualizowanie agenta lokalnego](lifecycle-services/update-local-agent.md)
@@ -525,9 +528,9 @@
 ### [Tworzenie wdrażalnego pakietu](deployment/create-apply-deployable-package.md)
 ### [Stosowanie aktualizacji do środowiska w chmurze](deployment/apply-deployable-package-system.md)
 ### [Instalowanie wdrażalnego pakietu](deployment/install-deployable-package.md)
-### [Rozwiązywanie problemów z aplikacją pakietu](deployment/deployable-package-troubleshooting.md)
+### [Rozwiązywanie problemów z aplikacją w pakiecie](deployment/deployable-package-troubleshooting.md)
 
-# [Uaktualnianie i migracja](migration-upgrade/upgrade-home-page.md)
+# [Uaktualnienia, aktualizacje i poprawki](migration-upgrade/upgrade-home-page.md)
 ## [Uaktualnianie z systemu AX 2012 do rozwiązania Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
 ### [Uaktualnianie systemu AX 2012 — używanie narzędzia Analizator możliwości uaktualnienia na potrzeby planowania](migration-upgrade/upgrade-analyzer-tool.md)
 ### [Uaktualnianie systemu AX 2012 — używanie usługi uaktualniania kodu w celu oszacowania nakładu pracy](migration-upgrade/analyze-code-upgrade.md)
@@ -553,10 +556,9 @@
 ### [Przygotowania do migracji kodu](migration-upgrade/prepare-migration.md)
 ### [Konfigurowanie mapowania usługi Visual Studio Team Services podczas migracji kodu](migration-upgrade/configure-vso-solution.md)
 ### [Dzielenie modeli](dev-tools/model-split.md)
-### [Używanie metod obiektów delegowanych do rozpoznawania zależności między modelami](migration-upgrade/delegates-migration.md)
+### [Używanie obiektów delegowanych do rozpoznawania zależności między modelami](migration-upgrade/delegates-migration.md)
 
-
-## Uaktualnianie do najnowszej aktualizacji
+## Uaktualnianie do najnowszej aktualizacji (chmura)
 ### [Proces przechodzenia do najnowszej aktualizacji](migration-upgrade/upgrade-latest-update.md)
 ### [Zasady świadczenia pomocy technicznej](migration-upgrade/versions-update-policy.md)
 ### [Stosowanie najnowszej aktualizacji platformy do swojego środowiska](migration-upgrade/upgrade-latest-platform-update.md)
@@ -564,13 +566,17 @@
 ### [Uaktualnianie środowiska piaskownicy](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Uaktualnianie danych w środowisku projektowym lub demonstracyjnym](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Aktualizowanie narzędzi programistycznych](dev-tools/update-development-tools.md)
+
+## Uaktualnianie do najnowszej aktualizacji (lokalne)
 ### [Stosowanie aktualizacji do wdrożenia lokalnego](deployment/apply-updates-on-premises.md)
 ### [Ponowne wdrażanie wdrożenia lokalnego](deployment/redeploy-on-prem.md)
 
-## Poprawki i obsługa
+## Poprawki
 ### [Pobieranie poprawek z usługi Lifecycle Services](migration-upgrade/download-hotfix-lcs.md)
+### [Stosowanie aktualizacji do środowiska w chmurze](deployment/apply-deployable-package-system.md)
 ### [Instalowanie poprawki metadanych](migration-upgrade/install-metadata-hotfix-package.md)
 ### [Poprawianie usług Reporting Services w środowisku jednoczęściowym](migration-upgrade/patch-reporting-service-environment.md)
+### [Aktualizowanie narzędzi programistycznych programu Visual Studio](dev-tools/update-development-tools.md)
 
 ## Przestarzałe elementy
 ### [Przestarzałe interfejsy API](migration-upgrade/deprecated-apis.md)

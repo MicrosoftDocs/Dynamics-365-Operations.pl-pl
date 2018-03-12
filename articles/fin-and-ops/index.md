@@ -3,7 +3,7 @@ title: "Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operati
 description: "Dokumentacja rozwiązania Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: margoc
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 03/02/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: bb258999e072dc280bccfe64fb0dbd41d6577a0e
-ms.openlocfilehash: dbcbd7f7b0c23545eec74de538f1d7ec96ac98b6
+ms.sourcegitcommit: 7142c6bcb6e98929afdb8bb982a17efc7223ab12
+ms.openlocfilehash: 0d12082a2b10ae8e83217c5451627239e6ec640b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 
@@ -43,9 +43,13 @@ Wiele z nich dotyczy również produktów pokrewnych: Microsoft Dynamics 365 for
 <h3><a href="get-started/before-you-buy.md">Zanim kupisz</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Rejestracja w celu uzyskania subskrypcji w wersji Preview</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Wybieranie opcji wdrożenia</a></p>
-  <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
-  <p><a href="get-started/purchase-on-premises.md">Kup rozwiązanie Finance and Operations (lokalne)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Kup rozwiązanie Finance and Operations (lokalne)</a></p>
 
+<h3><a href="imp-lifecycle/implementation-lifecycle.md">Cykl życia implementacji</a></h3>
+<p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
+<p><a href="imp-lifecycle/onboard.md">Rozpoczynanie korzystania z projektu</a></p>
+<p><a href="imp-lifecycle/prepare-go-live.md">Przygotowywanie do rozpoczęcia eksploatacji</a></p>
+  
 <h3><a href="../financials/index.md">Zarządzanie finansami</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Rozrachunki z dostawcami</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Rozrachunki z odbiorcami</a></p>
@@ -99,7 +103,8 @@ Wiele z nich dotyczy również produktów pokrewnych: Microsoft Dynamics 365 for
 <p><a href="get-started/demo-data.md">Dane demonstracyjne</a></p>
 
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Administracja</h3>
-<p><a href="../dev-itpro/deployment/choose-deployment-type.md">Wdrażanie</a></p>
+<p><a href="../dev-itpro/deployment/cloud-deployment-overview.md">Wdrożenie w chmurze</a></p>
+<p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">Wdrożenie lokalne</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Uaktualnianie</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Obsługa</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Struktura zarządzania danymi</a></p>
