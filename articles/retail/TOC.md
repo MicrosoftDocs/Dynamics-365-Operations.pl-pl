@@ -183,10 +183,11 @@
 ### [Architektura aplikacji MPOS](dev-itpro/retail-modern-pos-architecture.md)
 ### [Architektura publikowania detalicznego sklepu internetowego](dev-itpro/retail-online-store-publishing-architecture.md)
 ### [Zawartość usługi Power BI dotycząca wydajności kanału sprzedaży detalicznej](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Certyfikacja PA-DSS (Payment Application Data Security Standards)](dev-itpro/PA-DSS-Certification.md)
 
 ## Wdrażanie i poprawki
-### [Omówienie jednostki skalowania sklepów rozwiązania Retail](dev-itpro/retail-store-system-begin.md)
-### [Konfigurowanie i instalowanie jednostki skalowania sklepów rozwiązania Retail](dev-itpro/retail-store-scale-unit-configuration-installation.md)
+### [Omówienie jednostki Retail Store Scale Unit](dev-itpro/retail-store-system-begin.md)
+### [Konfigurowanie i instalowanie jednostki Retail Store Scale Unit](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Konfigurowanie i instalowanie aplikacji Retail Modern POS](retail-modern-pos-device-activation.md)
 ### [Zarządzanie kontami i urządzeniami rozwiązania Retail z centrali](set-up-activation-accounts-validate-devices-hq.md)
 ### [Aktywacja urządzenia w aplikacji Retail POS](dev-itpro/retail-device-activation.md)
