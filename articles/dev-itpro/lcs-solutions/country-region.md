@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
-ms.openlocfilehash: 1cb4305b3ef425ec19ae63c8186bffef212b9890
+ms.sourcegitcommit: 1f76359878d162e93d8f8b7c11be529c43c94455
+ms.openlocfilehash: c1c180432e014c69b43612693790a1cac6e54c34
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -217,6 +217,21 @@ W poniższych sekcjach wymieniono zasoby według kraju/regionu.
 -   [Metody amortyzacji środków trwałych](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
 -   [Przenoszenie środka trwałego do zapasów](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
 -   [Niskokosztowe środki trwałe](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
+
+### <a name="india"></a>Indie
+
+- [Środki trwałe](../../financials/localizations/apac-ind-fixed-assets.md)
+    - [Przenoszenie pozycji kapitałowych do środka trwałego](../../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
+    - [Dołączanie dziennego kalendarza do księgi środków trwałych](../../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md)
+    - [Konfigurowanie parametrów w celu obliczania amortyzacji](../../financials/localizations/tasks/apac-ind-set-up-depreciation.md)
+    - [Konfigurowanie amortyzacji grupy środków trwałych w księgach amortyzacji](../../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md)
+    - [Tworzenie grupy modeli magazynu dla pozycji kapitałowych](../../financials/localizations/tasks/apac-ind-create-inventory-model-group.md)
+    - [Obliczanie amortyzacji zmiany dla środków trwałych w Indiach](../../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md)
+    - [Definiowanie typu zmiany i branży dla ksiąg oraz dołączanie do środka trwałego](../../financials/localizations/tasks/apac-ind-books-shift-industry-types.md)
+- [Omówienie aparatu podatków](../../financials/general-ledger/tax-engine.md)
+    - [Integracja aparatu podatków](../../financials/general-ledger/tax-engine-integration.md)
+    - [Progi podatkowe — często zadawane pytania](../../financials/localizations/apac-ind-tax-thresholds.md)
+    - [Rozszerzanie aparatu podatków](../../financials/general-ledger/extend-tax-engine-configurations.md)
 
 ### <a name="italy"></a>Włochy
 

@@ -1,9 +1,9 @@
 ---
 title: "Zarządzanie łańcuchem dostaw — strona główna"
-description: "Ten temat zawiera listę tematów Pomocy i innych zasobów dotyczących funkcji zarządzania łańcuchem dostaw w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
+description: "Ta strona zawiera listę tematów Pomocy i innych zasobów dotyczących funkcji zarządzania łańcuchem dostaw w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 02/15/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
-ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
+ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
+ms.openlocfilehash: bf3192a5189a3b18ad28f3c5cb0dd6d402824ed5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/21/2018
 
 ---
 
@@ -40,7 +40,7 @@ Przejdź na stronę <a href="https://roadmap.dynamics.com/">Plan rozwoju usługi
 Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 
 - [Rachunek kosztów](../financials/cost-accounting/cost-accounting-home-page.md)
-- [Zarządzanie kosztami](cost-management/costing-sheets.md)  
+- [Zarządzanie kosztami](cost-management/cost-management-home-page.md)  
 - [Zarządzanie zapasami](inventory/inventory-home-page.md)
 - [Planowanie główne](master-planning/master-planning-home-page.md)
 - [Zaopatrzenie i sourcing](procurement/procurement-sourcing-overview.md)
@@ -56,6 +56,7 @@ Te krótkie filmy ułatwiają poznanie nowych funkcji rozwiązania Microsoft Dyn
 
 -  [Integracja scenariusza Od potencjalnego klienta do środków pieniężnych](https://youtu.be/AVV9x5x-XCg) 
 -  [Doradca optymalizacji](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [Używanie szablonu magazynu w celu kopiowania konfiguracji](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
 Te krótkie filmy ułatwiają poznanie nowych funkcji rozwiązania Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017).
 
@@ -67,17 +68,36 @@ Te krótkie filmy ułatwiają poznanie nowych funkcji rozwiązania Microsoft Dyn
 
 Te nagrania konferencji technicznych dotyczą funkcji poprzedniej wersji rozwiązania Finance and Operations, ale w obecnej wersji są używane te same pojęcia i podobne procedury. 
 
--  <a href="https://youtu.be/zotrj3SbCl4">Konfigurator produktów w rozwiązaniu Microsoft Dynamics AX</a>
--  <a href="https://youtu.be/7v8BPmEs9Dg">Planowanie główne — porady i wskazówki dotyczące rozwiązywania problemów z wydajnością</a>
--  <a href="https://youtu.be/RLXybx20B5o">Pomocy! Zadania MRP działają zbyt wolno!</a>
--  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Przetwarzanie przychodzących dokumentów WPW w module Zarządzanie magazynem</a> 
--  <a href="https://www.youtube.com/watch?v=--_didmZKHo&t=10s">Wykorzystywanie pełni możliwości systemu zarządzania magazynem</a>
--  <a href="https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s">Zaawansowane zarządzanie magazynem w wersji R3 — przetwarzanie przychodzące i minimalne/maksymalne uzupełnianie zapasów</a>
--  <a href="https://youtu.be/Og0gLlVp7jA">Zaawansowane zarządzanie magazynem w wersji R3 — codzienne procedury, przetwarzanie wychodzące i uzupełnianie zapasów na podstawie popytu</a>
--  <a href="https://youtu.be/5w1MngVchBA">Etykiety w nowym module zarządzania magazynem w rozwiązaniu Microsoft Dynamics AX 2012 R3</a>
--  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: zaawansowane zarządzanie magazynem — codzienne procedury w zakresie produkcji procesowej</a>
--  <a href="https://youtu.be/y1jrd3A_k70">Podwykonawstwo operacji i działania w zakresie produkcji</a>
--  <a href="https://youtu.be/jgmTgJIgEFQ">Zarządzanie transportem (TMS) w nowym rozwiązaniu Microsoft Dynamics AX</a>
+**Zarządzanie kosztami**
+
+-  [Omówienie zarządzania kosztami](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+
+**Planowanie główne**
+
+-  [Rozszerzanie funkcji prognozowania popytu](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [Planowanie główne — porady i wskazówki dotyczące rozwiązywania problemów z wydajnością](https://youtu.be/7v8BPmEs9Dg)
+-  [Pomocy! Zadania MRP działają zbyt wolno!](https://youtu.be/RLXybx20B5o)
+
+**Zarządzanie informacjami o produktach**
+
+-  [Konfigurator produktów w systemie Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
+
+**Zarządzanie magazynem** 
+
+-  [Przetwarzanie przychodzących dokumentów WPW w module Zarządzanie magazynem](https://mix.office.com/watch/wpf78tr7rjuh)  
+-  [Wykorzystywanie pełni możliwości systemu zarządzania magazynem](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+-  [Zaawansowane zarządzanie magazynem w wersji R3 — przetwarzanie przychodzące i minimalne/maksymalne uzupełnianie zapasów](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+-  [Zaawansowane zarządzanie magazynem w wersji R3 — codzienne procedury, przetwarzanie wychodzące i uzupełnianie zapasów na podstawie popytu](https://youtu.be/Og0gLlVp7jA)
+-  [Etykiety w nowym module zarządzania magazynem w systemie Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
+-  [Dynamics AX 2012 R3: zaawansowane zarządzanie magazynem — codzienne procedury w zakresie produkcji procesowej](https://www.youtube.com/embed/QUxXUrN-7n4)
+
+**Kontrola produkcji**
+
+-  [Podwykonawstwo operacji i działania w zakresie produkcji](https://youtu.be/y1jrd3A_k70)
+
+**Zarządzanie transportem**
+
+-  [Zarządzanie transportem (TMS) w nowym systemie Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogi
 Wiele tematów dotyczących zarządzania wytwarzaniem i łańcuchem dostaw można znaleźć w <a href="https://blogs.msdn.microsoft.com/axmfg/">blogu zespołu ds. badań i rozwoju modułu Wytwarzanie systemu Dynamics AX</a> oraz <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">blogu zespołu ds. badań i rozwoju modułu Zarządzanie łańcuchem dostaw systemu Dynamics AX </a>. Większość z nich została napisana dla poprzedniej wersji rozwiązania Finance and Operations, ale w obecnej wersji są używane te same pojęcia i podobne procedury. 
