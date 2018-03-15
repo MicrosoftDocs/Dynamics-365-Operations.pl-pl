@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: e1558fd70453dfb9f521187259d9a1241bf36767
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: db9e66a67f20ca24de3a020c1871cdda0cf2f9be
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 02/23/2018
 
 ---
 # <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>Uaktualnianie formatu przez adaptację nowej wersji podstawowej na potrzeby raportowania elektronicznego (ER)
@@ -35,7 +35,7 @@ Przed wykonaniem tych kroków należy najpierw wykonać procedury „Tworzenie d
 
 ## <a name="select-format-configuration-for-customization"></a>Wybór konfiguracji formatu do dostosowania
 1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.
-    * W tym przykładzie przykładowa firma Litware, Inc. (http://www.litware.com) będzie pełniła rolę dostawcy konfiguracji, który obsługuje konfiguracje formatów płatności elektronicznych dla określonego kraju.    Przykładowa firma Proseware, Inc. (http://www.proseware.com) będzie pełniła rolę użytkownika konfiguracji formatu dostarczonej przez firmę Litware, Inc. Firma Proseware, Inc. będzie używać tych formatów w niektórych regionach tego kraju.  
+    * W tym przykładzie przykładowa firma Litware, Inc. (`http://www.litware.com`) będzie pełniła rolę dostawcy konfiguracji, który obsługuje konfiguracje formatów płatności elektronicznych dla określonego kraju.  Przykładowa firma Proseware, Inc. (`http://www.proseware.com`) będzie pełniła rolę użytkownika konfiguracji formatu dostarczonej przez firmę Litware, Inc. Firma Proseware, Inc. będzie używać tych formatów w niektórych regionach tego kraju.  
 2. Kliknij opcję Konfiguracje raportowania.
 3. Kliknij przycisk Pokaż filtry.
 4. Zastosuj następujące filtry: w polu „Nazwa” wprowadź wartość filtru „BACS (fikcyjny brytyjski)”, używając operatora filtru „zaczyna się od”.
@@ -46,7 +46,7 @@ Przed wykonaniem tych kroków należy najpierw wykonać procedury „Tworzenie d
     * Wersja formatu o stanie Zakończono będzie używana przez firmę Proseware, Inc. w celu dostosowania.  
 
 ## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a>Tworzenie nowej konfiguracji niestandardowego formatu dokumentów elektronicznych
-    * Firma Proseware, Inc. otrzymała wersję 1.1 konfiguracji BACS (fikcyjnej brytyjskiej), która zawiera początkowy format do generowania dokumentów płatności elektronicznych, od firmy Litware, Inc. zgodnie z wykupioną subskrypcją usług. Firma Proseware, Inc. chce rozpocząć używanie tego formatu jako standardowego w swoim kraju, ale jest potrzebne pewne dostosowanie w celu obsługi specjalnych wymagań regionalnych. Firma Proseware, Inc. chce także zachować możliwość uaktualniania niestandardowego formatu natychmiast, gdy jego nowa wersja (ze zmianami uwzględniającymi nowe wymagania specyficzne dla kraju) zostanie pobrana z firmy Litware, Inc., oraz wykonywać to uaktualnienie jak najtaniej.  W tym celu firma Proseware, Inc. musi utworzyć konfigurację, używając jako bazy konfiguracji BACS (fikcyjnej brytyjskiej) otrzymanej od firmy Litware, Inc.  
+Firma Proseware, Inc. otrzymała wersję 1.1 konfiguracji BACS (fikcyjnej brytyjskiej), która zawiera początkowy format do generowania dokumentów płatności elektronicznych, od firmy Litware, Inc. zgodnie z wykupioną subskrypcją usług. Firma Proseware, Inc. chce rozpocząć używanie tego formatu jako standardowego w swoim kraju, ale jest potrzebne pewne dostosowanie w celu obsługi specjalnych wymagań regionalnych. Firma Proseware, Inc. chce także zachować możliwość uaktualniania niestandardowego formatu natychmiast, gdy jego nowa wersja (ze zmianami uwzględniającymi nowe wymagania specyficzne dla kraju) zostanie pobrana z firmy Litware, Inc., oraz wykonywać to uaktualnienie jak najtaniej.  W tym celu firma Proseware, Inc. musi utworzyć konfigurację, używając jako bazy konfiguracji BACS (fikcyjnej brytyjskiej) otrzymanej od firmy Litware, Inc.  
 1. Zamknij stronę.
 2. Wybierz firmę Proseware, Inc., aby ustawić ją jako aktywnego dostawcę.
 3. Kliknij opcję Ustaw jako aktywny.
@@ -107,11 +107,13 @@ Przed wykonaniem tych kroków należy najpierw wykonać procedury „Tworzenie d
     * Należy zauważyć, że utworzona konfiguracja została zapisana jako ukończona wersja 1.1.1. Oznacza to, że jest to wersja 1 niestandardowego formatu BACS (niestandardowego fikcyjnego brytyjskiego), która bazuje na wersji 1 formatu BACS (fikcyjnego brytyjskiego), który z kolei jest oparty na wersji 1 modelu danych Płatności (modelu uproszczonego).  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>Testowanie niestandardowego formatu generowania plików płatności
-    * W równoległej sesji programu Dynamics 365 for Finance and Operations Enterprise Edition wykonaj procedurę „Używanie utworzonego formatu do generowania elektronicznych dokumentów płatności”. W parametrach metody płatności elektronicznych wybierz format BACS (niestandardowy fikcyjny brytyjski). Upewnij się, że utworzony plik płatności zawiera ostatnio wprowadzony węzeł XML przedstawiający kod IBAN zgodnie wymogami regionalnymi.  
+W równoległej sesji programu Dynamics 365 for Finance and Operations Enterprise Edition wykonaj procedurę „Używanie utworzonego formatu do generowania elektronicznych dokumentów płatności”. W parametrach metody płatności elektronicznych wybierz format BACS (niestandardowy fikcyjny brytyjski). Upewnij się, że utworzony plik płatności zawiera ostatnio wprowadzony węzeł XML przedstawiający kod IBAN zgodnie wymogami regionalnymi.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Aktualizowanie istniejącej konfiguracji specyficznej dla kraju
-    * Firma Litware, Inc. musi zaktualizować konfigurację BACS (niestandardową fikcyjną brytyjską) i dostosować ją do nowych wymagań krajowych dotyczących zarządzania formatem dokumentów elektronicznych. Później zmiany te zostaną zawarte w nowej wersji tej konfiguracji, który będzie oferowana subskrybentom usług, w tym firmie Proseware, Inc.  
-    * W faktycznych procesach związanych ze świadczeniem usług każda nowa wersja konfiguracji BACS (fikcyjnej brytyjskiej) może być importowana przez firmę Proseware, Inc. z repozytorium konfiguracji firmy Litware, Inc. w usłudze LCS. W tej procedurze zasymulujemy to poprzez aktualizację konfiguracji BACS (fikcyjnej brytyjskiej) w imieniu usługodawcy.  
+Firma Litware, Inc. musi zaktualizować konfigurację BACS (niestandardową fikcyjną brytyjską) i dostosować ją do nowych wymagań krajowych dotyczących zarządzania formatem dokumentów elektronicznych. Później zmiany te zostaną zawarte w nowej wersji tej konfiguracji, który będzie oferowana subskrybentom usług, w tym firmie Proseware, Inc.  
+
+W faktycznych procesach związanych ze świadczeniem usług każda nowa wersja konfiguracji BACS (fikcyjnej brytyjskiej) może być importowana przez firmę Proseware, Inc. z repozytorium konfiguracji firmy Litware, Inc. w usłudze LCS. W tej procedurze zasymulujemy to poprzez aktualizację konfiguracji BACS (fikcyjnej brytyjskiej) w imieniu usługodawcy.
+
 1. Zamknij stronę.
 2. Zaznacz dostawcę Litware, Inc.  
 3. Kliknij opcję Ustaw jako aktywny.
@@ -121,9 +123,12 @@ Przed wykonaniem tych kroków należy najpierw wykonać procedury „Tworzenie d
     * Wersja robocza konfiguracji BACS (fikcyjnej brytyjskiej) należąca do dostawcy Litware, Inc. została wybrana, aby wprowadzić zmiany uwzględniające nowe wymagania specyficzne dla kraju.  
 
 ## <a name="localize-the-base-format-of-the-electronic-document"></a>Lokalizowanie bazowego formatu dokumentów elektronicznych
-    * Załóżmy, że istnieją nowe wymagania specyficzne dla kraju, których obsługę musi zapewnić firma Litware, Inc.: - Wypełnienie kodu SWIFT banku wierzyciela w każdej transakcji płatności.  - Limit 100 znaków długości tekstu nazwy dostawcy w generowanym pliku.  
-    * Nowe wymagania specyficzne dla kraju  
-    * Zaznacz wersję roboczą żądanej konfiguracji, aby wprowadzić w niej wymagane zmiany.  
+Załóżmy, że istnieją nowe wymagania specyficzne dla kraju, których obsługę musi zapewnić firma Litware:  
+- Wypełnienie kodu SWIFT banku wierzyciela w każdej transakcji płatności.  
+- Limit 100 znaków długości tekstu nazwy dostawcy w generowanym pliku.  
+ 
+Zaznacz wersję roboczą żądanej konfiguracji, aby wprowadzić w niej wymagane zmiany.  
+
 1. Kliknij przycisk Konstruktor.
 2. Kliknij przycisk Rozwiń/zwiń.
 3. Kliknij przycisk Rozwiń/zwiń.
@@ -154,7 +159,7 @@ Przed wykonaniem tych kroków należy najpierw wykonać procedury „Tworzenie d
 2. Zamknij stronę.
 
 ## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a>Zmiana stanu bieżącej wersji konfiguracji formatu bazowego
-    * Zmień stan zaktualizowanej konfiguracji formatu bazowego z Wersja robocza na Zakończono, aby ją udostępnić na potrzeby generowania dokumentów płatności oraz aktualizowania opartych na niej konfiguracji formatów.  
+Zmień stan zaktualizowanej konfiguracji formatu bazowego z Wersja robocza na Zakończono, aby ją udostępnić na potrzeby generowania dokumentów płatności oraz aktualizowania opartych na niej konfiguracji formatów.  
 1. Kliknij przycisk Zmień stan.
     * Należy zauważyć, że bieżąca wersja wybranej konfiguracji ma stan Wersja robocza.  
 2. Kliknij przycisk Wykonaj.
@@ -163,7 +168,8 @@ Przed wykonaniem tych kroków należy najpierw wykonać procedury „Tworzenie d
 5. Na liście znajdź i zaznacz odpowiedni rekord.
 
 ## <a name="change-the-base-version-for-the-custom-format-configuration"></a>Zmiana bazowej wersji niestandardowej konfiguracji formatu
-    * Firma Proseware, Inc. została poinformowana, że nowa wersja 1.2 konfiguracji BACS (fikcyjnej brytyjskiej) jest dostępna na potrzeby generowania elektronicznych dokumentów płatności zgodnie z niedawno ogłoszonymi wymaganiami specyficznymi dla kraju. Firma Proseware, Inc. chce zacząć używać tego formatu jako standardowego dla kraju.  W tym celu firma Proseware, Inc. musi zmienić wersję konfiguracji stanowiącą bazę dla niestandardowej konfiguracji BACS (niestandardowej fikcyjnej brytyjskiej). Zamiast wersji 1.1 konfiguracji BACS (fikcyjnej brytyjskiej) należy używać nowej wersji 1.2.  
+Firma Proseware, Inc. została poinformowana, że nowa wersja 1.2 konfiguracji BACS (fikcyjnej brytyjskiej) jest dostępna na potrzeby generowania elektronicznych dokumentów płatności zgodnie z niedawno ogłoszonymi wymaganiami specyficznymi dla kraju. Firma Proseware, Inc. chce zacząć używać tego formatu jako standardowego dla kraju.  W tym celu firma Proseware, Inc. musi zmienić wersję konfiguracji stanowiącą bazę dla niestandardowej konfiguracji BACS (niestandardowej fikcyjnej brytyjskiej). Zamiast wersji 1.1 konfiguracji BACS (fikcyjnej brytyjskiej) należy używać nowej wersji 1.2.  
+
 1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.
 2. Wybierz dostawcę Proseware, Inc., aby oznaczyć go jako aktywnego.
 3. Kliknij opcję Ustaw jako aktywny.
@@ -197,6 +203,6 @@ Przed wykonaniem tych kroków należy najpierw wykonać procedury „Tworzenie d
     * Należy zauważyć, że utworzona konfiguracji została zapisana jako ukończona wersja 1.2.2: wersja 2 bazowego formatu BACS (niestandardowego fikcyjnego brytyjskiego), która bazuje na wersji 2 formatu BACS (fikcyjnego brytyjskiego), który z kolei jest oparty na wersji 1 modelu danych Płatności (modelu uproszczonego).  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Testowanie niestandardowego formatu generowania plików płatności
-    * W równoległej sesji programu Dynamics 365 for Finance and Operations Enterprise Edition wykonaj procedurę „Używanie utworzonego formatu do generowania elektronicznych dokumentów płatności”. W parametrach metody płatności elektronicznych wybierz utworzony format „BACS (niestandardowy fikcyjny brytyjski)”. Upewnij się, że utworzony plik płatności zawiera ostatnio wprowadzony przez firmę Proseware, Inc. węzeł XML przedstawiający kod konta IBAN zgodnie wymogami regionalnymi. Plik powinien również zawierać ostatnio wprowadzony przez firmę Litware, Inc. węzeł XML przedstawiający kod banku SWIFT zgodnie wymogami krajowymi.  
+W równoległej sesji programu Dynamics 365 for Finance and Operations Enterprise Edition wykonaj procedurę „Używanie utworzonego formatu do generowania elektronicznych dokumentów płatności”. W parametrach metody płatności elektronicznych wybierz utworzony format „BACS (niestandardowy fikcyjny brytyjski)”. Upewnij się, że utworzony plik płatności zawiera ostatnio wprowadzony przez firmę Proseware, Inc. węzeł XML przedstawiający kod konta IBAN zgodnie wymogami regionalnymi. Plik powinien również zawierać ostatnio wprowadzony przez firmę Litware, Inc. węzeł XML przedstawiający kod banku SWIFT zgodnie wymogami krajowymi.  
 
 

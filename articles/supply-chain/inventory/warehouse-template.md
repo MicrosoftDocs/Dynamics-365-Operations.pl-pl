@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 87ade03ec2ba78c4d7f5832bfa6dc1b7eabd8d94
+ms.sourcegitcommit: a05fec7b79003d5b98470d85644d70bd1dbac285
+ms.openlocfilehash: 9e0c61505a8af864d7ff38655e7e896c4f6ccb65
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 
@@ -93,6 +93,11 @@ Można pobrać plik zip pakietu danych. Ten plik zawiera wszystkie dane w wybran
 5. Wybierz opcję **Importuj**. W widoku **Rozszerzony** można użyć opcji **Filtr**, aby szybko uzyskać przegląd problemów, które mogą wystąpić podczas importu.
 
 Opcja **Wyświetl dziennik wykonywania** umożliwia uzyskanie szczegółowych informacji o każdej importowanej jednostce danych. Aby szybko pobrać dane docelowe, można użyć widoku danych pośrednich. Umożliwia to sprawdzenie wyglądu zaimportowanych danych na powiązanych stronach w aplikacji. Jeżeli używane są szablony danych domyślnych, sekwencja importu dla każdej jednostki danych działa we wstępnie zdefiniowany sposób, aby zapewnić, że najpierw zostaną zaimportowane wszystkie dane zależne. Jeżeli częścią projektu są niestandardowe jednostki danych, należy zdefiniować prawidłową sekwencję. Aby uzyskać więcej informacji, zobacz temat [Szablony danych konfiguracji](../../dev-itpro/data-entities/configuration-data-templates.md).
+
+Aby dowiedzieć się więcej o używaniu szablonu magazynu do kopiowania konfiguracji magazynu z jednej firmy do nowej firmy w tym samym wystąpieniu, obejrzyj ten 3-minutowy film na YouTube.
+
+> [!Video https://www.youtube.com/embed/K2WIfFlqJYs]
+
 
 ## <a name="related-topic"></a>Powiązany temat
 

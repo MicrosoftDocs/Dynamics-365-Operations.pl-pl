@@ -18,14 +18,16 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 6aec3532a36a2c1e67ee0c189e45a352ad7670f6
+ms.sourcegitcommit: a1e539c283800035327196520f6438904c94126d
+ms.openlocfilehash: 0affc07293c886c4c65f99259eb19f1998f277f6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/04/2018
 
 ---
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Zwalnianie wierszy BOM i wierszy formuły do magazynu
+
+[!include[banner](../includes/banner.md)]
 
 W tym temacie opisano proces zwalniania surowca dla wierszy listy składowej (BOM) i formuły do magazynu. Przy zwalnianiu wiersza BOM lub formuły do magazynu system najpierw określa, czy materiał jest już dostępny w lokalizacji wejściowej produkcji w zakładzie, gdzie materiał zostanie wykorzystany w procesie produkcji.
 
@@ -40,6 +42,9 @@ Metoda używana do zwalniania wierszy BOM i formuły jest kontrolowana przez par
 
 - **Zwolnienie wierszy BOM i formuły w ramach zwalniania zlecenia produkcyjnego lub zamówienia partii** — w tej metodzie wiersze BOM i formuły dla produkcji lub zamówienia partii są zwalniane w ramach procesu zwalniania zamówienia. Zwykle podczas zwalniania zlecenia produkcyjnego lub zamówienia partii zadania produkcyjne są zwalniane do zakładu i drukowane są dokumenty produkcji. W tym procesie stan zamówienia zmienia się także na **Zwolnione**.
 - **Zwolnienie wierszy BOM i formuły za pomocą zadania wsadowego lub jako interakcja ręczna** — w tej metodzie wiersze BOM i formuły można zwolnić tylko za pomocą zadania wsadowego **Automatyczne zwalnianie wierszy BOM i formuły** lub za pomocą interakcji ręcznej. Aby ręcznie zwolnić wiersze BOM i formuły, na stronie listy zlecenia produkcyjnego lub stronie szczegółów zlecenia produkcyjnego, w okienku akcji, wybierz opcję **Zwolnij do magazynu**.
+
+Aby zapoznać się z szybką demonstracją zwalniania wierszy BOM i formuły do produkcji przy użyciu zadania wsadowego, obejrzyj ten krótki film na YouTube:
+[!Video https://www.youtube.com/embed/8urAJn50dQ8]
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Zwalnianie wierszy BOM i formuły za pomocą zadania wsadowego
 
@@ -79,6 +84,9 @@ Aby kontrolować operacje, do których ma być zwalniany materiał, użyj strony
 Poniższa operacja przedstawia zlecenie produkcyjne zawierające dwie operacje, 10 i 20. W tym przykładzie, po ograniczeniu zwolnienia do operacji 10, zostanie zwolniony tylko materiał M9203.
 
 ![Przykład zwalniania materiału według numeru operacji](media/two-operations.PNG)
+
+Aby zapoznać się z szybką demonstracją zwalniania materiału proporcjonalnie do ilości wyrobów gotowych, obejrzyj ten krótki film na YouTube:
+[!Video https://www.youtube.com/embed/Rm3ojAz6Zu0]
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Zwalnianie materiału proporcjonalnie do ilości wyrobów gotowych
 

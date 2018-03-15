@@ -18,10 +18,10 @@ ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b55d64dba11f3bf0e0cb549752af44a487dcb348
+ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
+ms.openlocfilehash: fe24eb79cbda0aea09ab7de5e4c02189ef3c8ff0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/14/2018
 
 ---
 

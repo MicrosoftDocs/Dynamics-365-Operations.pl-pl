@@ -3,7 +3,7 @@ title: "Pakiet zawartości usługi Power BI Przegląd dla dyrektora finansowego"
 description: "W tym temacie opisano pakiet zawartość Przegląd dla dyrektora finansowego dostępny dla usługi Microsoft Power BI."
 author: kweekley
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: b0a7adb684850a0f0b914ea89ce3af1636b3084c
-ms.openlocfilehash: fd3696321598267a2acd3ad61f533641c2cc2e77
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 01233890603f6f199b7a815eb91d1d5a7f2ae53e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -28,7 +28,8 @@ ms.lasthandoff: 02/02/2018
 [!include[banner](../includes/banner.md)]
 
 
-W tym temacie opisano pakiet zawartość **Przegląd dla dyrektora finansowego** dostępny dla usługi Microsoft Power BI. 
+W tym temacie opisano pakiet zawartość **Przegląd dla dyrektora finansowego** dostępny dla usługi Microsoft Power BI. Ten pakiet zawartości usługi Power BI ma zastosowanie do klientów używających programu Microsoft Dynamics 365 for Finance and Operations w wersji 7.2. Jeśli używasz wersji 7.3 lub nowszej, zobacz [Szczegółowe dane finansowe](financial-insights.md).
+
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 

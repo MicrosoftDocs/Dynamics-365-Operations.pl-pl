@@ -3,7 +3,7 @@ title: "Szczegółowe dane finansowe"
 description: "Wykorzystując usługę Microsoft Power BI, obszar roboczy Szczegółowe dane finansowe zbiera w jednym miejscu kluczowe wskaźniki wydajności (KPI) dotyczące finansów, wykresy i sprawozdania finansowe."
 author: kweekley
 manager: AnnBe
-ms.date: 01/09/2018
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: 3da5344ec6edec0af28aa21d45af962307231e67
+ms.sourcegitcommit: d527df21e791978b41527c01c2e6b68b393861ac
+ms.openlocfilehash: 90dc6214f1eb31440a3ec78a58c6a07394245cd2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/28/2018
 
 ---
 
@@ -102,10 +102,15 @@ Obecnie dane w osadzonych raportach usługi Power BI nie mogą się ograniczać 
 | Wyświetlanie międzyfirmowych szczegółowych danych finansowych   | •   W rozwiązaniu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition wer. 7.3 ten obowiązek nie jest przypisany do roli. • W następnej wersji ten obowiązek będzie przypisany do roli Dyrektor finansowy. | •    Ten obowiązek umożliwia dostęp do menu obszaru roboczego Przegląd dla dyrektora finansowego. •    Domyślnie jako filtr jest używana aktywna firma. Można jednak dodać wszystkie firmy, niezależnie od tego, czy użytkownik ma dostęp do innych firm.             |
 
 
-## <a name="how-financial-statements-work"></a>Zasada działania sprawozdań finansowych
+## <a name="financial-reporting-vs-finanical-insights"></a>Raporty finansowe a Szczegółowe dane finansowe
 Mimo iż obszar roboczy **Szczegółowe dane finansowe** zawiera sprawozdania finansowe, nie zastępuje modułu Raporty finansowe w programie Finance and Operations. Domyślne sprawozdania finansowe w obszarze roboczym **Szczegółowe dane finansowe** mają ograniczony zakres i nie obejmują wszystkich typów sprawozdań finansowych. Raporty finansowe to nadal podstawowe narzędzie do projektowania, tworzenia i generowania ustawowych sprawozdań finansowych.
 
-Oprócz elementów wizualnych z oryginalnego obszaru roboczego **Przegląd dla dyrektora finansowego** są teraz dostępne nowe kluczowe wskaźniki wydajności, wykresy i sprawozdania finansowe. Dostępne są następujące sprawozdania finansowe:
+Poniższy wykres porównawczy pomoże zidentyfikować różnice między oboma opcjami:
+
+|                                         | **Raporty finansowe**                            | **Szczegółowe dane finansowe**             | |-----------------------------------------|----------------------------------------------------|---------- -------------------------| | **Edytowanie domyślnych raportów**                | Tak                                                | Nie                                 | | **Tworzenie nowych raportów**                  | Tak                                                | Nie                                 | | **Drukowanie raportów**                       | Tak                                                | Nie                                 | | **Eksportowanie do programu Excel**                     | Tak          | Ograniczone Eksportowanie nieprzetworzonych danych do programu Excel — nie jest to sformatowany raport       | | **Obsługa hierarchii raportowania/hierarchii organizacyjnej**   | Tak                               | Nie                                 | | **Sprawozdawczość z danych księgi podrzędnej**       | Tak Ograniczenie do jednego dostawcy i odbiorcy    | Tak Dostawca, odbiorca, grupy dostawców/odbiorców, adresy dostawców/odbiorców itd.  | | **Waluta raportowania**      | Tak Waluta rozliczeniowa i przeliczanie na walutę raportowania       | Nie Tylko waluta raportowania      | | **Zabezpieczenia**                | Tak Zgodność z zabezpieczeniami programu Finance and Operations i drzewa raportowanie | Ograniczone Wyświetlanie raportów dla wszystkich firm (niezależnie od poziomu zabezpieczeń ustawionego w programie Finance and Operations) lub tylko dla aktywnej firmy | | **Obsługa różnych planów kont i lat obrachunkowych** | Tak                   | Nie                   | | **Sprawozdawczość z danych zewnętrznych**                              | Nie                   | Nie                                   | | **Obsługa konsolidacji**                               | Tak                          | Ograniczone Można generować raporty obejmujące wiele firm, ale tylko w walucie rozliczeniowej                                     |
+
+
+Oprócz interfejsu użytkownika znanego z pierwotnej wersji obszaru roboczego **Przegląd dla dyrektora finansowego** są teraz dostępne nowe kluczowe wskaźniki wydajności, wykresy i sprawozdania finansowe. Dostępne są następujące sprawozdania finansowe:
 
 •   Bilans próbny
 
@@ -113,7 +118,7 @@ Oprócz elementów wizualnych z oryginalnego obszaru roboczego **Przegląd dla d
 
 •   Rachunku zysków i strat według regionów
 
-•   Rachunek strat i zysków — wartości rzeczywiste a budżet
+•   Rachunek zysków i strat — wartości rzeczywiste a budżet
 
 •   Rachunek zysków i strat z odchyleniami
 

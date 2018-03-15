@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,16 +17,17 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 599440449f1e8c8dcc3762ce9f6da7a37beb358f
+ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
+ms.openlocfilehash: 1492e4d8220a3d515145d97ef8dad048727d97c8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/14/2018
 
 ---
 
 # <a name="import-iso20022-files"></a>Importowanie plików ISO20022
 
-## <a name="overview"></a>Przegląd
+[!include[banner](../includes/banner.md)]
+
 Można importować pliki płatności mające następujące formaty:
 
  - **Zawiadomienie kredytowe ISO20022 camt.054** — importowanie płatności przychodzących z pliku w tym formacie do arkusza płatności odbiorców.
@@ -40,7 +42,7 @@ Należy wykonać poniższe wymagania wstępne, aby importować komunikaty powiad
 4. Na stronie **Konta bankowe** skonfiguruj konta bankowe firmy przez wprowadzenie następujących informacji: numer IBAN lub numer konta bankowego, kod SWIFT lub kod banku, waluta i adres.
 
     > [!NOTE]
-    > Jeśli zamierzasz używać funkcji Zaawansowane uzgadnianie konta bankowego, na skróconej karcie **Uzgodnienie** w opcji **Zaawansowane uzgadnianie konta bankowego** ustaw wartość **Tak**. Jeśli zamierzasz uzgadniać niezaksięgowane importowane płatności, w opcji **Uznaj wyciągi bankowe jako potwierdzenia płatności elektronicznych** ustaw wartość **Tak**.
+        > Jeśli zamierzasz używać funkcji Zaawansowane uzgadnianie konta bankowego, na skróconej karcie **Uzgodnienie** w opcji **Zaawansowane uzgadnianie konta bankowego** ustaw wartość **Tak**. Jeśli zamierzasz uzgadniać niezaksięgowane importowane płatności, w opcji **Uznaj wyciągi bankowe jako potwierdzenia płatności elektronicznych** ustaw wartość **Tak**.
 
 5. Opcjonalnie: Na stronie **Mapowanie kodu transakcji** skonfiguruj mapowanie między kodami transakcji bankowych w pliku a typami transakcji bankowych.
 6. Jeżeli plik zawiera opłaty za transakcje, które chcesz zaksięgować razem z przychodzącą płatnością, otwórz opłatę od płatności na stronie **Opłata od płatności odbiorcy**. Następnie na stronie **Metody płatności** skojarz opłatę od płatności z kontem bankowym w ustawieniach opłat od płatności.
@@ -53,9 +55,7 @@ Należy wykonać poniższe wymagania wstępne, aby importować komunikaty powiad
 ## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a>Importowanie pliku zawiadomienia kredytowego camt.054 do arkusza płatności odbiorców
 1. Na stronie **Wiersze arkusza płatności odbiorców** kliknij kolejno opcje **Funkcje** > **Import płatności**.
 2. Wybierz metodę płatności, która ma wymagane ustawienia formatu camt.054 ISO20022.
-3. Określ wymagane parametry i ścieżkę pliku, a następnie kliknij przycisk **OK**.
-
-Plik zostanie zaimportowany.
+3. Określ wymagane parametry i ścieżkę pliku, a następnie kliknij przycisk **OK**. Plik zostanie zaimportowany.
 
 ## <a name="prerequisites-for-importing-files-in-the-pain002-status-return-and-camt054-debit-advice-formats-into-the-ap-payment-transfer-journal"></a>Warunki wstępne importowania plików informacji zwrotnej o stanie w formacie ISO20022 pain.002 i zawiadomienia debetowego w formacie ISO20022 camt.054 do arkusza przelewów w module Rozrachunki z dostawcami
 Należy spełnić poniższe warunki wstępne, aby importować komunikaty bankowe w następujących formatach ISO20022 do strony **Przelew do dostawcy**: komunikaty zwrotne o stanie pain.002.001.003 i zawiadomienia debetowe camt.054.001.002.

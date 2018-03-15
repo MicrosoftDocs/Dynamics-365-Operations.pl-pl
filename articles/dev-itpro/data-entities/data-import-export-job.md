@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 40bfc3f1f7c5fe1eec788d252cbe7be7d1c7536f
-ms.openlocfilehash: 3bd6eaa0518bd4752704836c04457dccd486d692
+ms.sourcegitcommit: e444168f249e798fa68b9b082556aa8e5e7d8113
+ms.openlocfilehash: 0e1c5120bf8558b955b66e059a8be8bbec2c2ce1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/13/2018
 
 ---
 
@@ -50,6 +50,9 @@ Poniżej przedstawiono kroki importowania lub eksportowania danych.
 6. Wyczyść tabele przemieszczania.
 
 Pozostałe sekcje tego tematu zawierają szczegółowe informacje o każdym kroku procesu.
+
+> [!NOTE]
+> Aby odświeżyć formularz importu/eksportu danych i zobaczyć aktualny postęp, użyj ikony odświeżania formularza. Nie zalecamy odświeżania na poziomie przeglądarki, ponieważ spowoduje to przerwanie wszystkich zadań importu/eksportu, które nie są wykonywane wsadowo.
 
 ## <a name="create-an-import-or-export-job"></a>Tworzenie zadania importu lub eksportu
 Zadanie importu lub eksportu danych może zostać uruchomione raz lub wiele razy.

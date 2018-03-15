@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ff26974951dc75ee0c6a81b10d296b8c16b329af
+ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
+ms.openlocfilehash: 6a0455c5d86f953e270501a7f1648f7700f717d0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/13/2018
 
 ---
 
@@ -87,6 +87,8 @@ Prognozowanie popytu w programie Finance and Operations to narzędzie, które po
 [Monitorowanie dokładności prognozy](monitor-forecast-accuracy.md)
 
 [Usuwanie wartości odstających z danych transakcji historycznych podczas obliczania prognozy popytu](remove-historical-outliers-calculating-demand-forecast.md)
+
+[Rozszerzanie funkcji prognozowania popytu](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 
 
 

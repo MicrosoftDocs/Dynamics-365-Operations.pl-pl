@@ -19,10 +19,10 @@ ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: df7d889b0787e01428c02d81d1f9347bf7d42345
+ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
+ms.openlocfilehash: ef7a8ace1f79ba1dccae8a6febe94b16866dc7c2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 

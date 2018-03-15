@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 5737d9c52727077d34c6f5553c9788bf07032914
-ms.openlocfilehash: 0521f0b443efb761e7d3f63182728dd836dbf8a0
+ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
+ms.openlocfilehash: 0f83735ec42e945c5e0abf8d72b83936e076e60e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 02/27/2018
 
 ---
 
@@ -33,7 +33,9 @@ ms.lasthandoff: 01/15/2018
 
 
 > [!NOTE]
-> W tym temacie opisano sposób konfigurowania modułu zarządzania magazynem dla wdrożeń w chmurze. Jeśli szukasz opisu sposobu konfigurowania modułu zarządzania magazynem dla wdrożeń lokalnych, zapoznaj się z tematem [Magazynowanie we wdrożeniach lokalnych](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/warehousing-for-on-premise-deployments).
+
+> W tym temacie opisano sposób konfigurowania modułu zarządzania magazynem dla wdrożeń w chmurze. Jeśli szukasz opisu sposobu konfigurowania modułu zarządzania magazynem dla wdrożeń lokalnych, zapoznaj się z tematem [Magazynowanie we wdrożeniach lokalnych](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+
 
 W tym temacie opisano sposób instalowania i konfigurowania programu Microsoft Dynamics 365 for Finance and Operations — Magazynowanie.
 
@@ -44,7 +46,7 @@ Aplikacja jest dostępna w systemach operacyjnych Windows i Android. Aby można 
 
 | Platforma                    | Wersja                                                                                                                                                                     |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
+| Android                     | 4.4, 5.0, 6.0, 7.0, 8.0                                                                                                                                                     |
 | Windows (UWP)               | Windows 10 (wszystkie wersje)                                                                                                                                                   |
 | Finance and Operations | Microsoft Dynamics 365 for Operations w wersji 1611 <br>— lub — <br>Microsoft Dynamics AX wersja 7.0/7.0.1 i aktualizacja nr 2 platformy Microsoft Dynamics AX z poprawką KB 3210014 |
 
@@ -58,7 +60,7 @@ Aplikacja jest dostępna w systemach operacyjnych Windows i Android. Aby można 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a>Tworzenie aplikacji usługi internetowej w usłudze Azure Active Directory
 Aby umożliwić aplikacji interakcje z konkretnym serwerem programu Finance and Operations, należy zarejestrować aplikację usługi internetowej w usłudze Azure Active Directory dla dzierżawy programu Finance and Operations. Ze względów bezpieczeństwa zaleca się utworzenie aplikacji usługi internetowej dla każdego używanego urządzenia. Aby utworzyć aplikację usługi internetowej w usłudze Active Directory Azure (Azure AD), wykonaj następujące kroki:
 
-1.  W przeglądarce internetowej przejdź do strony <https://portal.azure.com>.
+1.  W przeglądarce sieci web przejdź do strony <https://portal.azure.com>.
 2.  Wprowadź nazwę i hasło użytkownika mającego dostęp do subskrypcji usługi Azure.
 3.  W portalu Azure w okienku nawigacyjnym z lewej strony kliknij przycisk **Azure Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
 4.  Upewnij się, że program Finance and Operations używa wystąpienia usługi Active Directory.
@@ -93,7 +95,7 @@ Aplikację w urządzeniu należy skonfigurować do łączenia się z serwerem pr
     + **Identyfikator klienta usługi Azure Active Directory** — identyfikator klienta uzyskuje się w kroku 9 procedury „Tworzenie aplikacji usługi internetowej w usłudze Active Directory”. 
     + **Klucz tajny klienta usługi Azure Active Directory** — klucz tajny klienta uzyskuje się w kroku 11 procedury „Tworzenie aplikacji usługi internetowej w usłudze Active Directory”. 
     + **Zasób usługi Azure Active Directory** — zasób katalogowy usługi Azure AD opisuje adres URL głównego katalogu programu Finance and Operations. **Uwaga:**: Na końcu pola nie należy umieszczać znaku kreski ułamkowej (/). 
-    + **Dzierżawca usługi Azure Active Directory** — Dzierżawa katalogu usługi Azure AD używana na serwerze programu Finance and Operations: https://login.windows.net/identyfikator-Twojej-dzierżawy-w-usłudze-AD. Na przykład: https://login.windows.net/contosooperations.onmicrosoft.com.
+    + **Dzierżawca usługi Azure Active Directory** — Dzierżawa katalogu usługi Azure AD używana na serwerze programu Finance and Operations: `https://login.windows.net/your-AD-tenant-ID`. Na przykład: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
     <br>**Uwaga:**: Na końcu pola nie należy umieszczać znaku kreski ułamkowej (/). 
     + **Firma** — wpisz firmę zdefiniowaną w programie Finance and Operations, z którą ma się łączyć aplikacja. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Kliknij przycisk **Wstecz** w lewym górnym rogu aplikacji. Aplikacja połączy się teraz z serwerem programu Finance and Operations i zostanie wyświetlony ekran logowania dla pracownika magazynu. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
@@ -103,7 +105,7 @@ Jeśli urządzenie zostanie zgubione lub dostanie się w niepowołane ręce, nal
 
 1.  W programie Finance and Operations wybierz kolejno opcje **Administrowanie systemem** &gt; **Ustawienia** &gt; **Aplikacje usługi Azure Active Directory**.
 2.  Usuń wiersz odpowiadający urządzeniu, któremu chcesz cofnąć dostęp. Należy zapamiętać wartość pola **Identyfikator klienta** używany dla usuniętego urządzenia. Będzie ona potrzebna później.
-3.  Zaloguj się w portalu Azure pod adresem <https://portal.azure.com>.
+3.  Zaloguj się do portalu Azure pod adresem <https://portal.azure.com>.
 4.  W lewym menu kliknij ikonę **Active Directory** i upewnij się, że jesteś w poprawnym katalogu.
 5.  Na liście kliknij opcję **Rejestracje aplikacji**, a następnie kliknij aplikację, którą chcesz skonfigurować. Zostanie wyświetlona strona **Ustawienia** z informacjami o konfiguracji.
 6.  Upewnij się, że wartość **Identyfikator klienta** dla aplikacji jest taka sama, jak w kroku 2 w tej sekcji.
