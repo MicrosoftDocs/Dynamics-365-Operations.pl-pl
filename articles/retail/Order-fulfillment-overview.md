@@ -18,14 +18,16 @@ ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ec6cb212766dd90fa9db7719a2119419ecb935c7
-ms.openlocfilehash: e0aa0e576f88fd497472aa4141704a66d51605c3
+ms.sourcegitcommit: 997b6843fb729ed204e4e8ec5369c5a380efc25e
+ms.openlocfilehash: fb36f6ce81c5e781e3c98132f18ecbd84d0d4089
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/12/2018
 
 ---
 
 # <a name="store-order-fulfillment"></a>Realizacja zamówienia w sklepie
+
+[!include[banner](includes/banner.md)]
 
 Wielu sprzedawców chciałoby zoptymalizować realizację zamówień, umożliwiając to sklepom. Realizacja zamówienia na poziomie sklepu może ułatwić ograniczenie powstania zbyt dużych zapasów w określonym sklepie lub może być wymagana z logistycznego punktu widzenia w przypadkach, gdy sklep dysponuje dodatkowym miejscem lub znajduje się z mniejszej odległości wysyłki do klienta. Aby spełnić to wymaganie w punkcie sprzedaży dostępna jest ujednolicona operacja realizacji zamówienia.
 
@@ -56,7 +58,7 @@ Wiersze można wybrać za pomocą funkcji **Wybierz** w okienku akcji. Gdy funkc
 
 ## <a name="line-details"></a>Szczegóły wiersza
 
-Szczegóły wiersza można wyświetlić, używając menu wysuwanego szczegółów wiersza. Gdy to menu jest używane, dostępne są dwie karty zawierające dodatkowe informacje o wybranym wierszu. Pierwsza karta, **Szczegóły wiersza** przedstawia szczegółowe informacje dotyczące wiersza, takie jak zamówiona i pozostała ilość. Dostępne są dodatkowe szczegółowe informacje, takie jak odebrana, spakowana i zafakturowana ilość, a także sposób i adres dostawy. Karta **Szczegóły zamówienia** zawiera informacje o nagłówku zamówienia, w tym nazwisko klienta, identyfikator klienta, numer zamówienia, sumę zamówienia i saldo.
+Szczegóły wiersza można wyświetlić, używając menu wysuwanego szczegółów wiersza. Gdy to menu jest używane, dostępne są trzy karty zawierające dodatkowe informacje o wybranym wierszu. Pierwsza karta, **Szczegóły wiersza** przedstawia szczegółowe informacje dotyczące wiersza, takie jak zamówiona i pozostała ilość. Dostępne są dodatkowe szczegółowe informacje, takie jak odebrana, spakowana i zafakturowana ilość, a także sposób i adres dostawy. Karta **Szczegóły zamówienia** zawiera informacje o nagłówku zamówienia, w tym nazwisko klienta, identyfikator klienta, numer zamówienia, sumę zamówienia i saldo. Na karcie **Zapasy** są wyświetlane informacje dla wybranego wiersza: fizycznie dostępne zapasy, zarezerwowane zapasy i zamówione zapasy.
 
 Jeżeli zaznaczono kilka wierszy menu wysuwane szczegółów wiersza zamówienia będzie wskazywać tylko, że zaznaczono kilka wierszy. Aby wyświetlić szczegóły dotyczące jednego wiersza, usuwaj zaznaczenie wierszy, dopóki nie pozostanie tylko jeden wiersz. 
 

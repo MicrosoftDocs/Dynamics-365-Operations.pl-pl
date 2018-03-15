@@ -20,10 +20,10 @@ ms.author: conradv
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: 33130a4061f22335aeeffa69c478b693604393a9
-ms.openlocfilehash: a57f306ba02c5758c39c4bd29d9a4fa0d7efbcd3
+ms.sourcegitcommit: 236b0253f20330f09f07dbcfa19257350fb5d37f
+ms.openlocfilehash: 8ef72de3f226a3270ac0145a20e4da7dfe64f4ba
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -109,10 +109,10 @@ W celu wybrania i aktualizacji zwolnionych produktów i wariantów produktów na
 
 ## <a name="related-topics"></a>Powiązane tematy
 
--  Tworzenie nowego stanu cyklu życia produktu
--  Tworzenie domyślnego stanu cyklu życia nowego produktu
--  Przypisywanie cyklu życia produktu do zwolnionego produktu głównego
--  Przypisywanie cyklu życia produktu do zwolnionego produktu
--  Znajdowanie wariantów przestarzałych produktów i przypisywanie stanu cyklu życia produktu
--  Tworzenie stanu cyklu życia produktu w celu wykluczania produktów z planowania głównego
+-  [Tworzenie nowego stanu cyklu życia produktu (przewodnik zadania)](tasks/new-product-lifecycle-state.md)
+-  [Tworzenie domyślnego stanu cyklu życia produktu (przewodnik zadania)](tasks/default-product-lifecycle-state.md)
+-  [Przypisywanie stanu cyklu życia produktu do zwolnionego produktu głównego (przewodnik zadania)](tasks/product-lifecycle-state-released-product-master.md)
+-  [Przypisywanie stanu cyklu życia produktu do zwolnionego produktu (przewodnik zadania)](tasks/product-lifecycle-state-released-product.md)
+-  [Znajdowanie wariantów przestarzałych produktów i przypisywanie stanu cyklu życia produktu (przewodnik po zadaniu)](tasks/obsolete-product-variants.md)
+-  [Tworzenie stanu cyklu życia produktu w celu wykluczania produktów z planowania głównego (przewodnik po zadaniu)](tasks/exclude-products-master-planning.md)
 

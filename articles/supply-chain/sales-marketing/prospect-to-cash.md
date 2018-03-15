@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 602873e8af976c57f27ce53b76391516351755e3
-ms.openlocfilehash: 29d33d3ecf97c15fed0247d172ff6fb3bbdaa018
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -46,15 +46,6 @@ W bieżącej wersji rozwiązania Prospekt na gotówkę udostępniono następują
 - [Synchronizowanie zamówień sprzedaży bezpośrednio z rozwiązania Finance and Operations do rozwiązania Sales](sales-order-template-mapping-direct.md)
 - [Synchronizowanie zamówień sprzedaży bezpośrednio między rozwiązaniem Sales a rozwiązaniem Finance and Operations (wkrótce zostanie udostępniony szablon)](sales-order-template-mapping-direct-two-ways.md)
 - [Synchronizowanie faktur sprzedaży bezpośrednio z rozwiązania Finance and Operations do rozwiązania Sales](sales-invoice-template-mapping-direct.md)
-
-W starszych wersjach rozwiązania Prospekt na gotówkę funkcjonowały następujące typy synchronizacji niebezpośredniej:
-
-- [Obsługa kont klientów w programie Sales i synchronizowanie ich z usługą Finance and Operations](accounts-template-mapping.md)
-- [Obsługa kontaktów w rozwiązaniu Sales i synchronizowanie ich z rozwiązaniem Finance and Operations](contacts-template-mapping.md)
-- [Obsługa produktów w rozwiązaniu Finance and Operations i synchronizowanie ich z rozwiązaniem Sales](products-template-mapping.md)
-- [Tworzenie ofert sprzedaży w rozwiązaniu Sales i synchronizowanie ich z rozwiązaniem Finance and Operations](sales-quotation-template-mapping.md)
-- [Tworzenie zamówień sprzedaży w rozwiązaniu Finance and Operations i synchronizowanie ich z rozwiązaniem Sales](sales-order-template-mapping.md)
-- [Tworzenie faktur sprzedaży w rozwiązaniu Finance and Operations i synchronizowanie ich z rozwiązaniem Sales](sales-invoice-template-mapping.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Wymagania systemowe dla rozwiązania Finance and Operations
 
@@ -87,7 +78,7 @@ Integracja w procesie Prospekt na gotówkę jest obsługiwana w następujących 
     - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** — wymagana jest obsługa integracji rozwiązania Prospekt na gotówkę poprzez jednostki danych.
     
     > [!NOTE]
-    > Po zainstalowaniu poprawek należy uruchomić następujące zadanie wsadowe z formularza **SalesPopulateProspectToCash**. Formularz ten jest ukryty, ponieważ jest on potrzebny tylko raz. Aby uzyskać dostęp do formularza, zaloguj się do środowiska i dodaj następujący tekst do adresu URL w przeglądarce: &mi=action:SalesPopulateProspectToCash, na przykład, https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash. Po otwarciu formularza kliknij przycisk OK. Spowoduje to uzupełnienie nowego pola **LineCreationSequnceNumber** w tabelach **SalesLine**, **SalesQuotationLine** i **CustInvoiceTrans** unikatowymi wartościami i odświeżenie listy produktów. Jest to wymagane do działania rozwiązania Prospekt na gotówkę.
+    > Po zainstalowaniu poprawek należy uruchomić następujące zadanie wsadowe z formularza **SalesPopulateProspectToCash**. Formularz ten jest ukryty, ponieważ jest on potrzebny tylko raz. Aby przejść do formularza, zaloguj się w środowisku i dodaj następujący fragment do adresu URL na pasku adresu przeglądarce: &mi=action:SalesPopulateProspectToCash, na przykład `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. Po otwarciu formularza kliknij przycisk OK. Spowoduje to uzupełnienie nowego pola **LineCreationSequnceNumber** w tabelach **SalesLine**, **SalesQuotationLine** i **CustInvoiceTrans** unikatowymi wartościami i odświeżenie listy produktów. Jest to wymagane do działania rozwiązania Prospekt na gotówkę.
 
 
 ## <a name="system-requirements-for-sales"></a>Wymagania systemowe dla rozwiązania Sales
@@ -96,12 +87,6 @@ Aby skorzystać z rozwiązania Prospekt na gotówkę, należy zainstalować nast
 
 - Dynamics 365 for Sales w wersji 1612 (8.2.1.207) (DB 8.2.1.207) online
 - Rozwiązanie Prospekt na gotówkę dla programu Dynamics 365 for Sales, wersja 1.15.0.0 (v15) 
-
-   > [!NOTE]
-   >
-   > Szablony w wersji 1.0.0.0 i 1.0.0.1 są obsługiwane rozwiązaniu Prospekt na gotówkę dla oprogramowania Dynamics 365 for Sales, wersja 1.14.1.0
-   >
-   > Szablony w wersji 2.0.0.0 i 2.1.0.0 są obsługiwane rozwiązaniu Prospekt na gotówkę dla oprogramowania Dynamics 365 for Sales, wersja 1.15.0.0
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Instalacja rozwiązania Prospekt na gotówkę dla programu Sales
 

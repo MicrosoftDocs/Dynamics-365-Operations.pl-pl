@@ -1,5 +1,5 @@
 ---
-title: Operacje aplikacji POS
+title: "Operacje w punkcie sprzedaży — online i offline"
 description: "Ten temat zawiera szczegółowe informacje na temat operacji dotyczących punktu sprzedaży (POS) w rozwiązaniu Microsoft Dynamics 365 for Retail. Określa, gdzie w aplikacji można wywołać operacje oraz czy są dostępne w trybie offline.."
 author: jblucher
 manager: AnnBe
@@ -19,14 +19,17 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 8e294f71355219890ac6f807094a930ac2acc279
-ms.openlocfilehash: 41dc188138436947c4bf7eaf074ef704c201e0cf
+ms.sourcegitcommit: edfed83d4703c081d857faad0771dc1010be41b4
+ms.openlocfilehash: edd6dd23066eca782b8fd510dabab612241e480a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 02/13/2018
 
 ---
 
-# <a name="pos-operations"></a>Operacje aplikacji POS
+# <a name="pos-operations-online-and-offline"></a>Operacje w punkcie sprzedaży — online i offline
+
+[!include[banner](includes/banner.md)]
+
 Większość akcji wykonywanych przez użytkowników punktu sprzedaży (POS) jest uznawanych za operacje. Do konfigurowania i zarządzania operacjami służy zaplecze rozwiązania Microsoft Dynamics 365 for Retail. Do siatki przycisków punktu sprzedaży można dodać wiele operacji. Użytkownicy mogą następnie wybrać przyciski w celu wywołania operacji i wykonania przypisanych do nich funkcji. Inne operacje są częścią głównej aplikacji POS i są wywoływane za pomocą przycisków ekranowych lub jako część innych przepływów pracy lub procesów.
 
 Poniższa tabela zawiera szczegóły dotyczące operacji dostępnych w nowoczesnym punkcie sprzedaży detalicznej i punkcie sprzedaży w chmurze dla rozwiązania Dynamics 365 for Retail. Tabela umożliwia także określenie, gdzie w aplikacji można wywołać operacje oraz czy są dostępne, gdy punkt sprzedaży działa w trybie offline..

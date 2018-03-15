@@ -3,7 +3,7 @@ title: "Porównanie funkcji w chmurze i lokalnych"
 description: "Ten temat przedstawia funkcje obsługiwane w chmurze i lokalnie."
 author: robinarh
 manager: AnnBe
-ms.date: 11/29/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
-ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
+ms.sourcegitcommit: 4ffdc5dd54f8a069676f62c8b43f2892764dc046
+ms.openlocfilehash: 88640007ec54ed0c566e163e3dd701faeebc50ce
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 
@@ -49,8 +49,9 @@ W poniższej tabeli wymieniono zakresy produktów. Obsługa w chmurze i lokalnie
 | | Zestaw zawartości zarządzania kosztami dla usługi Power BI | Tak | Nr |
 | Integracja danych i zarządzanie nimi| | Tak | Tak |
 | | Rozszerzenie oparte na konfiguracji| Tak | Nr |
-| | Eksport danych do własnego magazynu danych| Tak | Nr |
+| | Eksport danych do własnego magazynu danych| Tak | Tak |
 | | Włączenie eksportu aktualizacji przyrostowych do jednostki danych | Tak | Nr |
+| | Integracje cykliczne                 |Tak | Nr|
 | Zarządzanie dokumentami| | Tak| Tak |
 | Zarządzanie finansami|  | Tak | Tak |
 | Pomoc| | Tak | Nr |

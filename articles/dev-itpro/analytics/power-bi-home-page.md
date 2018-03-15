@@ -3,7 +3,7 @@ title: "Pakiet zawartości usługi Power BI"
 description: "W tym temacie wymieniono dostępne pakiety zawartości usługi Power BI oraz wskazano zasoby, gdzie można uzyskać więcej informacji o tych pakietach."
 author: sericks007
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: b0a7adb684850a0f0b914ea89ce3af1636b3084c
-ms.openlocfilehash: 0969f9f30e50a36b667765fbe375e6c14d3412da
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: d5b1bb5f25710b7d4feea55414d68d5390c87308
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -42,6 +42,7 @@ Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enter
 - [Zawartość usługi Power BI dotycząca analiz rachunku kosztów](cost-accounting-analysis-content-pack.md) 
 - [Pakiet zawartości usługi Power BI Zarządzanie kredytami i windykacją](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Pakiet zawartości usługi Power BI Rozwój pracownika etatowego](employee-development-PBI.md) 
+- [Pakiet zawartości usługi Power BI Szczegółowe dane finansowe](financial-insights.md)
 - [Pakiet zawartości usługi Power BI Wyniki finansowe](financial-performance-power-bi-content-pack.md)
 - [Pakiet zawartości usługi Power BI Zarządzanie środkami trwałymi](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
 - [Pakiet zawartości usługi Power BI Szkolenia](learning-power-bi.md)
@@ -73,6 +74,9 @@ Jeśli używasz programu Microsoft Dynamics 365 for Operations w wersji 1611, s�
 
 ## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Pakiety zawartości usługi Power BI dla systemu Microsoft Dynamics AX
 Jeśli używasz programu Microsoft Dynamics AX 7.0 lub Microsoft Dynamics AX 7.0.1, są dostępne następujące pakiety zawartości usługi Power BI:
+
+> [!Note]
+> Te pakiety zawartości zostały wycofane, zgodnie z opisem w temacie [Pakiety zawartości usługi Power BI opublikowane w witrynie PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
 
 - [Pakiet zawartości usługi Power BI Zarządzanie kosztami](cost-management-content-pack.md)    
 - [Pakiet zawartości usługi Power BI Wyniki finansowe](financial-performance-power-bi-content-pack.md)

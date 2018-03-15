@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0692518afc5c8b385773dad3c44dc4e3c978362b
+ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
+ms.openlocfilehash: 91881ca3999b4937d20161b8beab8e80c2675eb6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -87,7 +87,7 @@ Przyjęcie produktów może spowodować automatyczne zużycie w określonym celu
 
 Dla zamówienia zakupu można określić *Zasady podziału księgowań*, aby opisać sposób księgowania. Można także określić sposób uzyskiwania alokacji środków budżetu, o ile jest on uwzględniony w konfiguracji.  
 
-Zafakturowane zamówienia zakupu zarejestruje zobowiązanie na koncie dostawcy w ramach rozrachunków z dostawcami i z tego miejsca będzie można przetworzyć ***płatność dostawcy*.
+Zafakturowane zamówienia zakupu zarejestruje zobowiązanie na koncie dostawcy w ramach rozrachunków z dostawcami i z tego miejsca będzie można przetworzyć *płatność dostawcy*.
 
 ## <a name="vendor-performance"></a>Wydajność dostawcy
 Wydajność i przegląd zakupów obsługują *raporty zaopatrzenia i rozrachunków z dostawcami,* które obejmują analizy wydatków i analizy wydajności dostawcy.
