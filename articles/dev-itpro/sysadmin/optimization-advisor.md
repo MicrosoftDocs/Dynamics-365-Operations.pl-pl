@@ -3,7 +3,7 @@ title: "Tworzenie reguł dla Doradcy optymalizacji"
 description: "W tym temacie omówiono sposób dodawania nowych reguł do obszaru roboczego Doradca optymalizacji."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 01/23/2018
+ms.date: 02/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core (Operations, Core)
+ms.search.scope: Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,22 +20,22 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
-ms.openlocfilehash: 88739298405343a36ae5bc11f51c666c414e7157
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: e64d4fc1a7425d38d728b11e503d3e7289312495
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/07/2018
 
 ---
 
-# <a name="create-rules-for-optimization-advisor"></a><span data-ttu-id="302be-103">Tworzenie reguł dla Doradcy optymalizacji</span><span class="sxs-lookup"><span data-stu-id="302be-103">Create rules for Optimization advisor</span></span>
+# <a name="create-rules-for-optimization-advisor"></a><span data-ttu-id="40bb5-103">Tworzenie reguł dla Doradcy optymalizacji</span><span class="sxs-lookup"><span data-stu-id="40bb5-103">Create rules for Optimization advisor</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="302be-104">W tym temacie wyjaśniono sposób tworzenia nowych reguł dla obszaru roboczego **Doradca optymalizacji**.</span><span class="sxs-lookup"><span data-stu-id="302be-104">This topic explains how to create new rules for **Optimization advisor**.</span></span> <span data-ttu-id="302be-105">Na przykład można utworzyć nową regułę określającą, które sprawy dotyczące zapytań ofertowych (ZO) mają puste tytuły.</span><span class="sxs-lookup"><span data-stu-id="302be-105">For example, you can create a new rule that identifies which Request for Quotations (RFQ) cases have an empty title.</span></span> <span data-ttu-id="302be-106">Stosowanie tytułów do spraw ułatwia ich rozpoznawanie i wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="302be-106">Using titles on cases makes them easily identifiable and searchable.</span></span> <span data-ttu-id="302be-107">Choć poniższy przykład jest dość prosty, pokazuje, co można osiągnąć za pomocą reguł optymalizacji.</span><span class="sxs-lookup"><span data-stu-id="302be-107">While quite simple, this example shows what can be achieved with optimization rules.</span></span> 
+<span data-ttu-id="40bb5-104">W tym temacie wyjaśniono sposób tworzenia nowych reguł dla obszaru roboczego **Doradca optymalizacji**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-104">This topic explains how to create new rules for **Optimization advisor**.</span></span> <span data-ttu-id="40bb5-105">Na przykład można utworzyć nową regułę określającą, które sprawy dotyczące zapytań ofertowych (ZO) mają puste tytuły.</span><span class="sxs-lookup"><span data-stu-id="40bb5-105">For example, you can create a new rule that identifies which Request for Quotations (RFQ) cases have an empty title.</span></span> <span data-ttu-id="40bb5-106">Stosowanie tytułów do spraw ułatwia ich rozpoznawanie i wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="40bb5-106">Using titles on cases makes them easily identifiable and searchable.</span></span> <span data-ttu-id="40bb5-107">Choć poniższy przykład jest dość prosty, pokazuje, co można osiągnąć za pomocą reguł optymalizacji.</span><span class="sxs-lookup"><span data-stu-id="40bb5-107">While quite simple, this example shows what can be achieved with optimization rules.</span></span> 
 
-<span data-ttu-id="302be-108">*Reguła* sprawdza dane aplikacji.</span><span class="sxs-lookup"><span data-stu-id="302be-108">A *rule* is a check on application data.</span></span> <span data-ttu-id="302be-109">Jeśli warunek reguły jest spełniony, są tworzone możliwości optymalizowania procesów lub poprawiania danych.</span><span class="sxs-lookup"><span data-stu-id="302be-109">If the condition that the rule evaluates is met, opportunities to optimize processes or improve data are created.</span></span> <span data-ttu-id="302be-110">Wobec możliwości można podjąć działania, a opcjonalnie również mierzyć skutki tych działań.</span><span class="sxs-lookup"><span data-stu-id="302be-110">The opportunities can be acted upon and, optionally, the impact of the actions can be measured.</span></span> 
+<span data-ttu-id="40bb5-108">*Reguła* sprawdza dane aplikacji.</span><span class="sxs-lookup"><span data-stu-id="40bb5-108">A *rule* is a check on application data.</span></span> <span data-ttu-id="40bb5-109">Jeśli warunek reguły jest spełniony, są tworzone możliwości optymalizowania procesów lub poprawiania danych.</span><span class="sxs-lookup"><span data-stu-id="40bb5-109">If the condition that the rule evaluates is met, opportunities to optimize processes or improve data are created.</span></span> <span data-ttu-id="40bb5-110">Wobec możliwości można podjąć działania, a opcjonalnie również mierzyć skutki tych działań.</span><span class="sxs-lookup"><span data-stu-id="40bb5-110">The opportunities can be acted upon and, optionally, the impact of the actions can be measured.</span></span> 
 
-<span data-ttu-id="302be-111">Aby utworzyć nową regułę dla obszaru roboczego **Doradca optymalizacji**, dodaj nową klasę, która rozszerza klasę abstrakcyjną **SelfHealingRule**, implementuje interfejs **IDiagnosticsRule** i jest uzupełniona przez atrybut **DiagnosticRule**.</span><span class="sxs-lookup"><span data-stu-id="302be-111">To create a new rule for the **Optimization advisor**, add a new class that extends the **SelfHealingRule** abstract class, implements the **IDiagnosticsRule** interface, and is decorated by the **DiagnosticRule** attribute.</span></span> <span data-ttu-id="302be-112">Klasa musi również zawierać metodę z atrybutem **DiagnosticsRuleSubscription**.</span><span class="sxs-lookup"><span data-stu-id="302be-112">The class must also have a method decorated with the **DiagnosticsRuleSubscription** attribute.</span></span> <span data-ttu-id="302be-113">Zgodnie z konwencją dokonuje się tego w metodzie **opportunityTitle**, która zostanie omówiona później.</span><span class="sxs-lookup"><span data-stu-id="302be-113">By convention, that is done on the **opportunityTitle** method, which will be discussed later.</span></span> <span data-ttu-id="302be-114">Tę nową klasę można dodać do niestandardowego modelu zależnego od modelu **SelfHealingRules**.</span><span class="sxs-lookup"><span data-stu-id="302be-114">This new class can be added to a custom model with a dependency on the **SelfHealingRules** model.</span></span> <span data-ttu-id="302be-115">W poniższym przykładzie implementowana reguła jest zatytułowana **RFQTitleSelfHealingRule**.</span><span class="sxs-lookup"><span data-stu-id="302be-115">In the following example, the rule being implemented is called **RFQTitleSelfHealingRule**.</span></span>
+<span data-ttu-id="40bb5-111">Aby utworzyć nową regułę dla obszaru roboczego **Doradca optymalizacji**, dodaj nową klasę, która rozszerza klasę abstrakcyjną **SelfHealingRule**, implementuje interfejs **IDiagnosticsRule** i jest uzupełniona przez atrybut **DiagnosticRule**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-111">To create a new rule for the **Optimization advisor**, add a new class that extends the **SelfHealingRule** abstract class, implements the **IDiagnosticsRule** interface, and is decorated by the **DiagnosticRule** attribute.</span></span> <span data-ttu-id="40bb5-112">Klasa musi również zawierać metodę z atrybutem **DiagnosticsRuleSubscription**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-112">The class must also have a method decorated with the **DiagnosticsRuleSubscription** attribute.</span></span> <span data-ttu-id="40bb5-113">Zgodnie z konwencją dokonuje się tego w metodzie **opportunityTitle**, która zostanie omówiona później.</span><span class="sxs-lookup"><span data-stu-id="40bb5-113">By convention, that is done on the **opportunityTitle** method, which will be discussed later.</span></span> <span data-ttu-id="40bb5-114">Tę nową klasę można dodać do niestandardowego modelu zależnego od modelu **SelfHealingRules**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-114">This new class can be added to a custom model with a dependency on the **SelfHealingRules** model.</span></span> <span data-ttu-id="40bb5-115">W poniższym przykładzie implementowana reguła jest zatytułowana **RFQTitleSelfHealingRule**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-115">In the following example, the rule being implemented is called **RFQTitleSelfHealingRule**.</span></span>
 
 ```
 [DiagnosticsRule] 
@@ -45,7 +45,7 @@ public final class RFQTitleSelfHealingRule extends SelfHealingRule implements ID
 } 
 ```
 
-<span data-ttu-id="302be-116">Klasa abstrakcyjna **SelfHealingRule** zawiera metody abstrakcyjne, które należy zaimplementować w klasach dziedziczenia.</span><span class="sxs-lookup"><span data-stu-id="302be-116">The **SelfHealingRule** abstract class has abstract methods that must be implemented in inheriting classes.</span></span> <span data-ttu-id="302be-117">Rdzeniem jest metoda **evaluate**, która zwraca listę możliwości zidentyfikowanych przez regułę.</span><span class="sxs-lookup"><span data-stu-id="302be-117">The core is the **evaluate** method, which returns a list of the opportunities identified by the rule.</span></span> <span data-ttu-id="302be-118">Możliwości mogą dotyczyć konkretnych firm lub mieć zastosowanie do całego systemu.</span><span class="sxs-lookup"><span data-stu-id="302be-118">Opportunities can be per legal entity or can apply to the whole system.</span></span>
+<span data-ttu-id="40bb5-116">Klasa abstrakcyjna **SelfHealingRule** zawiera metody abstrakcyjne, które należy zaimplementować w klasach dziedziczenia.</span><span class="sxs-lookup"><span data-stu-id="40bb5-116">The **SelfHealingRule** abstract class has abstract methods that must be implemented in inheriting classes.</span></span> <span data-ttu-id="40bb5-117">Rdzeniem jest metoda **evaluate**, która zwraca listę możliwości zidentyfikowanych przez regułę.</span><span class="sxs-lookup"><span data-stu-id="40bb5-117">The core is the **evaluate** method, which returns a list of the opportunities identified by the rule.</span></span> <span data-ttu-id="40bb5-118">Możliwości mogą dotyczyć konkretnych firm lub mieć zastosowanie do całego systemu.</span><span class="sxs-lookup"><span data-stu-id="40bb5-118">Opportunities can be per legal entity or can apply to the whole system.</span></span>
 
 ```
 protected List evaluate() 
@@ -77,11 +77,11 @@ protected List evaluate()
 } 
 ```
 
-<span data-ttu-id="302be-119">Metoda opisana powyżej powoduje analizowanie firm w układzie pętli i wybieranie spraw ZO z pustymi tytułami w metodzie **findRFQCasesWithEmptyTitle**.</span><span class="sxs-lookup"><span data-stu-id="302be-119">The method shown above loops over companies and selects RFQ cases with empty titles in the **findRFQCasesWithEmptyTitle** method.</span></span> <span data-ttu-id="302be-120">Jeśli zostanie znaleziony co najmniej jeden taki przypadek, za pomocą metody **getOpportunityForCompany** jest tworzona możliwość związana z konkretną firmą.</span><span class="sxs-lookup"><span data-stu-id="302be-120">If at least one such case is found, then a company-specific opportunity is created with the **getOpportunityForCompany** method.</span></span> <span data-ttu-id="302be-121">Należy zauważyć, że pole **Dane** w tabeli **SelfHealingOpportunity** jest typu **Kontener** i z tego względu może zawierać dowolne dane pasujące do logiki właściwej dla tej reguły.</span><span class="sxs-lookup"><span data-stu-id="302be-121">Notice that the field **Data** in the **SelfHealingOpportunity** table is of type **Container**, and can therefore contain any data relevant to the logic specific to this rule.</span></span> <span data-ttu-id="302be-122">Jeśli w atrybucie **OpportunityDate** zostanie ustawiona bieżąca sygnatura czasowa, system będzie rejestrował czas ostatniego sprawdzania możliwości.</span><span class="sxs-lookup"><span data-stu-id="302be-122">Setting **OpportunityDate** with the current timestamp registers the time of the latest evaluation of the opportunity.</span></span>  
+<span data-ttu-id="40bb5-119">Metoda opisana powyżej powoduje analizowanie firm w układzie pętli i wybieranie spraw ZO z pustymi tytułami w metodzie **findRFQCasesWithEmptyTitle**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-119">The method shown above loops over companies and selects RFQ cases with empty titles in the **findRFQCasesWithEmptyTitle** method.</span></span> <span data-ttu-id="40bb5-120">Jeśli zostanie znaleziony co najmniej jeden taki przypadek, za pomocą metody **getOpportunityForCompany** jest tworzona możliwość związana z konkretną firmą.</span><span class="sxs-lookup"><span data-stu-id="40bb5-120">If at least one such case is found, then a company-specific opportunity is created with the **getOpportunityForCompany** method.</span></span> <span data-ttu-id="40bb5-121">Należy zauważyć, że pole **Dane** w tabeli **SelfHealingOpportunity** jest typu **Kontener** i z tego względu może zawierać dowolne dane pasujące do logiki właściwej dla tej reguły.</span><span class="sxs-lookup"><span data-stu-id="40bb5-121">Notice that the field **Data** in the **SelfHealingOpportunity** table is of type **Container**, and can therefore contain any data relevant to the logic specific to this rule.</span></span> <span data-ttu-id="40bb5-122">Jeśli w atrybucie **OpportunityDate** zostanie ustawiona bieżąca sygnatura czasowa, system będzie rejestrował czas ostatniego sprawdzania możliwości.</span><span class="sxs-lookup"><span data-stu-id="40bb5-122">Setting **OpportunityDate** with the current timestamp registers the time of the latest evaluation of the opportunity.</span></span>  
 
-<span data-ttu-id="302be-123">Możliwości mogą mieć także charakter międzyfirmowy.</span><span class="sxs-lookup"><span data-stu-id="302be-123">Opportunities can also be cross-company.</span></span> <span data-ttu-id="302be-124">W takim przypadku pętla analizy firmy nie jest konieczna i możliwość należy utworzyć za pomocą metody **getOpportunityAcrossCompanies**.</span><span class="sxs-lookup"><span data-stu-id="302be-124">In this case, the loop over companies is not necessary and the opportunity must be created with the **getOpportunityAcrossCompanies** method.</span></span> 
+<span data-ttu-id="40bb5-123">Możliwości mogą mieć także charakter międzyfirmowy.</span><span class="sxs-lookup"><span data-stu-id="40bb5-123">Opportunities can also be cross-company.</span></span> <span data-ttu-id="40bb5-124">W takim przypadku pętla analizy firmy nie jest konieczna i możliwość należy utworzyć za pomocą metody **getOpportunityAcrossCompanies**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-124">In this case, the loop over companies is not necessary and the opportunity must be created with the **getOpportunityAcrossCompanies** method.</span></span> 
 
-<span data-ttu-id="302be-125">Poniższy kod przedstawia metodę **findRFQCasesWithEmptyTitle**, która zwraca identyfikatory spraw ZO mających puste tytuły.</span><span class="sxs-lookup"><span data-stu-id="302be-125">The following code shows the **findRFQCasesWithEmptyTitle** method, which returns the IDs of the RFQ cases that have empty titles.</span></span>
+<span data-ttu-id="40bb5-125">Poniższy kod przedstawia metodę **findRFQCasesWithEmptyTitle**, która zwraca identyfikatory spraw ZO mających puste tytuły.</span><span class="sxs-lookup"><span data-stu-id="40bb5-125">The following code shows the **findRFQCasesWithEmptyTitle** method, which returns the IDs of the RFQ cases that have empty titles.</span></span>
 
 ```
 private container findRFQCasesWithEmptyTitle() 
@@ -99,22 +99,22 @@ private container findRFQCasesWithEmptyTitle()
 } 
 ```
 
-<span data-ttu-id="302be-126">Dwie inne metody, które należy zaimplementować, to **opportunityTitle** i **opportunityDetails**.</span><span class="sxs-lookup"><span data-stu-id="302be-126">Two more methods that must be implemented are **opportunityTitle** and **opportunityDetails**.</span></span> <span data-ttu-id="302be-127">Pierwsza zwraca krótki tytuł możliwości, a druga szczegółowy opis możliwości, mogący także zawierać dane.</span><span class="sxs-lookup"><span data-stu-id="302be-127">The former returns a short title for the opportunity, the latter returns a detailed description of the opportunity, which can also include data.</span></span>
+<span data-ttu-id="40bb5-126">Dwie inne metody, które należy zaimplementować, to **opportunityTitle** i **opportunityDetails**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-126">Two more methods that must be implemented are **opportunityTitle** and **opportunityDetails**.</span></span> <span data-ttu-id="40bb5-127">Pierwsza zwraca krótki tytuł możliwości, a druga szczegółowy opis możliwości, mogący także zawierać dane.</span><span class="sxs-lookup"><span data-stu-id="40bb5-127">The former returns a short title for the opportunity, the latter returns a detailed description of the opportunity, which can also include data.</span></span>
 
-<span data-ttu-id="302be-128">Tytuł zwracany przez metodę **opportunityTitle** jest wyświetlany w kolumnie **Możliwość optymalizacji** w obszarze roboczym **Doradca optymalizacji**.</span><span class="sxs-lookup"><span data-stu-id="302be-128">The title returned by **opportunityTitle** appears under the **Optimization opportunity** column in the **Optimization advisor** workspace.</span></span> <span data-ttu-id="302be-129">Pojawia się również jako nagłówek bocznego okienka zawierającego więcej informacji na temat możliwości.</span><span class="sxs-lookup"><span data-stu-id="302be-129">It also appears as the header of the side pane showing more information about the opportunity.</span></span> <span data-ttu-id="302be-130">Zgodnie z konwencją ta metoda jest uzupełniana o atrybut **DiagnosticRuleSubscription**, który ma następujące argumenty:</span><span class="sxs-lookup"><span data-stu-id="302be-130">By convention, this method is decorated with the **DiagnosticRuleSubscription** attribute, which takes the following arguments:</span></span> 
+<span data-ttu-id="40bb5-128">Tytuł zwracany przez metodę **opportunityTitle** jest wyświetlany w kolumnie **Możliwość optymalizacji** w obszarze roboczym **Doradca optymalizacji**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-128">The title returned by **opportunityTitle** appears under the **Optimization opportunity** column in the **Optimization advisor** workspace.</span></span> <span data-ttu-id="40bb5-129">Pojawia się również jako nagłówek bocznego okienka zawierającego więcej informacji na temat możliwości.</span><span class="sxs-lookup"><span data-stu-id="40bb5-129">It also appears as the header of the side pane showing more information about the opportunity.</span></span> <span data-ttu-id="40bb5-130">Zgodnie z konwencją ta metoda jest uzupełniana o atrybut **DiagnosticRuleSubscription**, który ma następujące argumenty:</span><span class="sxs-lookup"><span data-stu-id="40bb5-130">By convention, this method is decorated with the **DiagnosticRuleSubscription** attribute, which takes the following arguments:</span></span> 
 
-* <span data-ttu-id="302be-131">**Obszar diagnostyczni** — wartość stałotekstowa typu **DiagnosticArea**, która opisuje, do którego obszaru aplikacji należy reguła, np. **DiagnosticArea::SCM**.</span><span class="sxs-lookup"><span data-stu-id="302be-131">**Diagnostic area** – An enum of type **DiagnosticArea** that describes what area of the application the rule belongs to, such as **DiagnosticArea::SCM**.</span></span> 
+* <span data-ttu-id="40bb5-131">**Obszar diagnostyczni** — wartość stałotekstowa typu **DiagnosticArea**, która opisuje, do którego obszaru aplikacji należy reguła, np. **DiagnosticArea::SCM**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-131">**Diagnostic area** – An enum of type **DiagnosticArea** that describes what area of the application the rule belongs to, such as **DiagnosticArea::SCM**.</span></span> 
 
-* <span data-ttu-id="302be-132">**Nazwa reguły** — ciąg z nazwą reguły.</span><span class="sxs-lookup"><span data-stu-id="302be-132">**Rule name** – A string with the rule name.</span></span> <span data-ttu-id="302be-133">Ta wartość będzie wyświetlana w kolumnie **Nazwa reguły** w formularzu **Reguła weryfikacji diagnostyki** (**DiagnosticsValidationRuleMaintain**).</span><span class="sxs-lookup"><span data-stu-id="302be-133">This will appear under the **Rule name** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**).</span></span> 
+* <span data-ttu-id="40bb5-132">**Nazwa reguły** — ciąg z nazwą reguły.</span><span class="sxs-lookup"><span data-stu-id="40bb5-132">**Rule name** – A string with the rule name.</span></span> <span data-ttu-id="40bb5-133">Ta wartość będzie wyświetlana w kolumnie **Nazwa reguły** w formularzu **Reguła weryfikacji diagnostyki** (**DiagnosticsValidationRuleMaintain**).</span><span class="sxs-lookup"><span data-stu-id="40bb5-133">This will appear under the **Rule name** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**).</span></span> 
 
-* <span data-ttu-id="302be-134">**Częstotliwość uruchamiania** — wartość stałotekstowa typu **DiagnosticRunFrequency**, który opisuje, jak często reguła powinna być wykonywane, np. **DiagnosticRunFrequency::Codziennie**.</span><span class="sxs-lookup"><span data-stu-id="302be-134">**Run frequency** – An enum of type **DiagnosticRunFrequency** that describes how often the rule should be run, such as **DiagnosticRunFrequency::Daily**.</span></span> 
+* <span data-ttu-id="40bb5-134">**Częstotliwość uruchamiania** — wartość stałotekstowa typu **DiagnosticRunFrequency**, który opisuje, jak często reguła powinna być wykonywane, np. **DiagnosticRunFrequency::Codziennie**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-134">**Run frequency** – An enum of type **DiagnosticRunFrequency** that describes how often the rule should be run, such as **DiagnosticRunFrequency::Daily**.</span></span> 
 
-* <span data-ttu-id="302be-135">**Opis reguły** — ciąg znaków z bardziej szczegółowym opisem reguły.</span><span class="sxs-lookup"><span data-stu-id="302be-135">**Rule description** – A string with a more detailed description of the rule.</span></span> <span data-ttu-id="302be-136">Ta wartość będzie wyświetlana w kolumnie **Opis reguły** w formularzu **Reguła weryfikacji diagnostyki** (**DiagnosticsValidationRuleMaintain**).</span><span class="sxs-lookup"><span data-stu-id="302be-136">This will appear under the **Rule description** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**).</span></span> 
+* <span data-ttu-id="40bb5-135">**Opis reguły** — ciąg znaków z bardziej szczegółowym opisem reguły.</span><span class="sxs-lookup"><span data-stu-id="40bb5-135">**Rule description** – A string with a more detailed description of the rule.</span></span> <span data-ttu-id="40bb5-136">Ta wartość będzie wyświetlana w kolumnie **Opis reguły** w formularzu **Reguła weryfikacji diagnostyki** (**DiagnosticsValidationRuleMaintain**).</span><span class="sxs-lookup"><span data-stu-id="40bb5-136">This will appear under the **Rule description** column in the **Dianostics validation rule** form (**DiagnosticsValidationRuleMaintain**).</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="302be-137">Atrybut **DiagnosticRuleSubscription** jest wymagany, aby reguła mogła działać.</span><span class="sxs-lookup"><span data-stu-id="302be-137">The **DiagnosticRuleSubscription** attribute is required for the rule to work.</span></span> <span data-ttu-id="302be-138">Zazwyczaj jest używany w metodzie **opportunityTitle**, ale można go stosować w dowolnej metodzie tej klasy.</span><span class="sxs-lookup"><span data-stu-id="302be-138">Typically, it is used on **opportunityTitle**, but it can decorate any method of the class.</span></span>
+> <span data-ttu-id="40bb5-137">Atrybut **DiagnosticRuleSubscription** jest wymagany, aby reguła mogła działać.</span><span class="sxs-lookup"><span data-stu-id="40bb5-137">The **DiagnosticRuleSubscription** attribute is required for the rule to work.</span></span> <span data-ttu-id="40bb5-138">Zazwyczaj jest używany w metodzie **opportunityTitle**, ale można go stosować w dowolnej metodzie tej klasy.</span><span class="sxs-lookup"><span data-stu-id="40bb5-138">Typically, it is used on **opportunityTitle**, but it can decorate any method of the class.</span></span>
 
-<span data-ttu-id="302be-139">Poniżej przedstawiono przykład implementacji.</span><span class="sxs-lookup"><span data-stu-id="302be-139">The following is an example implementation.</span></span> <span data-ttu-id="302be-140">Dla uproszczenia są wykorzystywane wstępne ciągi , ale poprawna implementacja wymaga etykiet.</span><span class="sxs-lookup"><span data-stu-id="302be-140">Raw strings are used for simplicity, but a correct implementation requires labels.</span></span> 
+<span data-ttu-id="40bb5-139">Poniżej przedstawiono przykład implementacji.</span><span class="sxs-lookup"><span data-stu-id="40bb5-139">The following is an example implementation.</span></span> <span data-ttu-id="40bb5-140">Dla uproszczenia są wykorzystywane wstępne ciągi , ale poprawna implementacja wymaga etykiet.</span><span class="sxs-lookup"><span data-stu-id="40bb5-140">Raw strings are used for simplicity, but a correct implementation requires labels.</span></span> 
 
 ```
 [DiagnosticsRuleSubscription(DiagnosticsArea::SCM, 
@@ -127,7 +127,7 @@ public str opportunityTitle()
 } 
 ```
 
-<span data-ttu-id="302be-141">Opis zwracany przez metodę **opportunityDetails** pojawia się w okienku bocznym, pokazując więcej informacji na temat możliwości.</span><span class="sxs-lookup"><span data-stu-id="302be-141">The description returned by **opportunityDetails** appears on the side pane showing more information about the opportunity.</span></span> <span data-ttu-id="302be-142">Wykorzystuje on argument **SelfHealingOpportunity**, który odpowiada polu **Dane** mogącemu dostarczać bardziej szczegółowych informacji o możliwości.</span><span class="sxs-lookup"><span data-stu-id="302be-142">This takes the **SelfHealingOpportunity** argument, which is **Data** field that can be used to provide more details about the opportunity.</span></span> <span data-ttu-id="302be-143">W tym przykładzie metoda zwraca identyfikatory spraw ZO z pustymi tytułami.</span><span class="sxs-lookup"><span data-stu-id="302be-143">In the example, the method returns the IDs of the RFQ cases with an empty title.</span></span> 
+<span data-ttu-id="40bb5-141">Opis zwracany przez metodę **opportunityDetails** pojawia się w okienku bocznym, pokazując więcej informacji na temat możliwości.</span><span class="sxs-lookup"><span data-stu-id="40bb5-141">The description returned by **opportunityDetails** appears on the side pane showing more information about the opportunity.</span></span> <span data-ttu-id="40bb5-142">Wykorzystuje on argument **SelfHealingOpportunity**, który odpowiada polu **Dane** mogącemu dostarczać bardziej szczegółowych informacji o możliwości.</span><span class="sxs-lookup"><span data-stu-id="40bb5-142">This takes the **SelfHealingOpportunity** argument, which is **Data** field that can be used to provide more details about the opportunity.</span></span> <span data-ttu-id="40bb5-143">W tym przykładzie metoda zwraca identyfikatory spraw ZO z pustymi tytułami.</span><span class="sxs-lookup"><span data-stu-id="40bb5-143">In the example, the method returns the IDs of the RFQ cases with an empty title.</span></span> 
 
 ```
 public str opportunityDetails(SelfHealingOpportunity _opportunity) 
@@ -150,9 +150,9 @@ public str opportunityDetails(SelfHealingOpportunity _opportunity)
 }
 ```
 
-<span data-ttu-id="302be-144">Dwie pozostałe metody abstrakcyjne, które trzeba zaimplementować, to **provideHealingAction** i **securityMenuItem**.</span><span class="sxs-lookup"><span data-stu-id="302be-144">The two remaining abstract methods to implement are **provideHealingAction** and **securityMenuItem**.</span></span> 
+<span data-ttu-id="40bb5-144">Dwie pozostałe metody abstrakcyjne, które trzeba zaimplementować, to **provideHealingAction** i **securityMenuItem**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-144">The two remaining abstract methods to implement are **provideHealingAction** and **securityMenuItem**.</span></span> 
 
-<span data-ttu-id="302be-145">**provideHealingAction** zwraca wartość true, jeśli określono akcję naprawiania. W przeciwnym razie zwraca wartość false.</span><span class="sxs-lookup"><span data-stu-id="302be-145">**provideHealingAction** returns true if a healing action is provided, otherwise, it returns false.</span></span> <span data-ttu-id="302be-146">Jeśli jest zwracana wartość true, metoda **performAction** musi być zaimplementowana. W przeciwnym razie będzie zgłaszany błąd.</span><span class="sxs-lookup"><span data-stu-id="302be-146">If true is returned, the method **performAction** must be implemented, or an error will be thrown.</span></span> <span data-ttu-id="302be-147">Metoda **PerformAction** wykorzystuje argument **SelfHealingOpportunity**, w którym dla akcji można użyć danych.</span><span class="sxs-lookup"><span data-stu-id="302be-147">The **performAction** method takes a **SelfHealingOpportunity** argument, in which the data can be used for the action.</span></span> <span data-ttu-id="302be-148">W przykładzie akcja powoduje otwarcie strony **PurchRFQCaseTableListPage** w celu wprowadzenia ręcznej korekty.</span><span class="sxs-lookup"><span data-stu-id="302be-148">In the example, the action opens the **PurchRFQCaseTableListPage**, for manual correction.</span></span> 
+<span data-ttu-id="40bb5-145">**provideHealingAction** zwraca wartość true, jeśli określono akcję naprawiania. W przeciwnym razie zwraca wartość false.</span><span class="sxs-lookup"><span data-stu-id="40bb5-145">**provideHealingAction** returns true if a healing action is provided, otherwise, it returns false.</span></span> <span data-ttu-id="40bb5-146">Jeśli jest zwracana wartość true, metoda **performAction** musi być zaimplementowana. W przeciwnym razie będzie zgłaszany błąd.</span><span class="sxs-lookup"><span data-stu-id="40bb5-146">If true is returned, the method **performAction** must be implemented, or an error will be thrown.</span></span> <span data-ttu-id="40bb5-147">Metoda **PerformAction** wykorzystuje argument **SelfHealingOpportunity**, w którym dla akcji można użyć danych.</span><span class="sxs-lookup"><span data-stu-id="40bb5-147">The **performAction** method takes a **SelfHealingOpportunity** argument, in which the data can be used for the action.</span></span> <span data-ttu-id="40bb5-148">W przykładzie akcja powoduje otwarcie strony **PurchRFQCaseTableListPage** w celu wprowadzenia ręcznej korekty.</span><span class="sxs-lookup"><span data-stu-id="40bb5-148">In the example, the action opens the **PurchRFQCaseTableListPage**, for manual correction.</span></span> 
 
 ```
 public boolean providesHealingAction() 
@@ -166,9 +166,12 @@ protected void performAction(SelfHealingOpportunity _opportunity)
 } 
 ```
 
-<span data-ttu-id="302be-149">W zależności od szczegółów reguły może istnieć możliwość wykonywania automatycznej akcji przy użyciu danych możliwości.</span><span class="sxs-lookup"><span data-stu-id="302be-149">Depending on the specifics of the rule, it might be possible to take an automatic action using the opportunity data.</span></span> <span data-ttu-id="302be-150">W tym przykładzie system może automatycznie generować tytuły spraw ZO.</span><span class="sxs-lookup"><span data-stu-id="302be-150">In this example, the system could generate titles for RFQ cases automatically.</span></span> 
+<span data-ttu-id="40bb5-149">W zależności od szczegółów reguły może istnieć możliwość wykonywania automatycznej akcji przy użyciu danych możliwości.</span><span class="sxs-lookup"><span data-stu-id="40bb5-149">Depending on the specifics of the rule, it might be possible to take an automatic action using the opportunity data.</span></span> <span data-ttu-id="40bb5-150">W tym przykładzie system może automatycznie generować tytuły spraw ZO.</span><span class="sxs-lookup"><span data-stu-id="40bb5-150">In this example, the system could generate titles for RFQ cases automatically.</span></span> 
 
-<span data-ttu-id="302be-151">Metoda **securityMenuItem** zwraca nazwę elementu menu akcji, tak aby reguła była widoczna tylko dla użytkowników mających dostęp do elementu menu akcji.</span><span class="sxs-lookup"><span data-stu-id="302be-151">**securityMenuItem** returns the name of an action menu item such that the rule is only visible to users who can access the action menu item.</span></span> <span data-ttu-id="302be-152">Bezpieczeństwo może wymagać, aby określone reguły i możliwości były dostępne tylko dla autoryzowanych użytkowników.</span><span class="sxs-lookup"><span data-stu-id="302be-152">Security might require that specific rules and opportunities are accessible only to authorized users.</span></span> <span data-ttu-id="302be-153">W przykładzie tylko użytkownicy mający dostęp do atrybutu **PurchRFQCaseTitleAction** mogą wyświetlać możliwość.</span><span class="sxs-lookup"><span data-stu-id="302be-153">In the example, only users with access to **PurchRFQCaseTitleAction** can view the opportunity.</span></span> <span data-ttu-id="302be-154">Należy zauważyć, że ten element menu akcji został utworzony dla tego przykładu oraz dodany jako punkt wejścia dla uprawnienia zabezpieczeń **PurchRFQCaseTableMaintain**.</span><span class="sxs-lookup"><span data-stu-id="302be-154">Notice that this action menu item was created for this example, and was added as an entry point for the **PurchRFQCaseTableMaintain** security privilege.</span></span> 
+<span data-ttu-id="40bb5-151">Metoda **securityMenuItem** zwraca nazwę elementu menu akcji, tak aby reguła była widoczna tylko dla użytkowników mających dostęp do elementu menu akcji.</span><span class="sxs-lookup"><span data-stu-id="40bb5-151">**securityMenuItem** returns the name of an action menu item such that the rule is only visible to users who can access the action menu item.</span></span> <span data-ttu-id="40bb5-152">Bezpieczeństwo może wymagać, aby określone reguły i możliwości były dostępne tylko dla autoryzowanych użytkowników.</span><span class="sxs-lookup"><span data-stu-id="40bb5-152">Security might require that specific rules and opportunities are accessible only to authorized users.</span></span> <span data-ttu-id="40bb5-153">W przykładzie tylko użytkownicy mający dostęp do atrybutu **PurchRFQCaseTitleAction** mogą wyświetlać możliwość.</span><span class="sxs-lookup"><span data-stu-id="40bb5-153">In the example, only users with access to **PurchRFQCaseTitleAction** can view the opportunity.</span></span> <span data-ttu-id="40bb5-154">Należy zauważyć, że ten element menu akcji został utworzony dla tego przykładu oraz dodany jako punkt wejścia dla uprawnienia zabezpieczeń **PurchRFQCaseTableMaintain**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-154">Notice that this action menu item was created for this example, and was added as an entry point for the **PurchRFQCaseTableMaintain** security privilege.</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="40bb5-155">Aby zabezpieczenia działały poprawnie, element menu musi być elementem menu akcji.</span><span class="sxs-lookup"><span data-stu-id="40bb5-155">The menu item must be an action menu item for security to work correctly.</span></span> <span data-ttu-id="40bb5-156">Inne typy elementów menu, takie jak **Elementy menu wyświetlania**, nie będą działać poprawnie.</span><span class="sxs-lookup"><span data-stu-id="40bb5-156">Other menu item types, such as **Display menu items** will not work correctly.</span></span>
 
 ```
 public MenuName securityMenuItem() 
@@ -177,7 +180,7 @@ public MenuName securityMenuItem()
 }
 ```
 
-<span data-ttu-id="302be-155">Po skompilowaniu reguły należy wykonać następujące zadania, aby reguła była wyświetlana w interfejsie użytkownika (UI).</span><span class="sxs-lookup"><span data-stu-id="302be-155">After the rule has compiled, execute the following job to have it display in the user interface (UI).</span></span>
+<span data-ttu-id="40bb5-157">Po skompilowaniu reguły należy wykonać następujące zadania, aby reguła była wyświetlana w interfejsie użytkownika (UI).</span><span class="sxs-lookup"><span data-stu-id="40bb5-157">After the rule has compiled, execute the following job to have it display in the user interface (UI).</span></span>
 
 ```
 class ScanNewRulesJob 
@@ -191,9 +194,68 @@ class ScanNewRulesJob
 } 
 ```
 
-<span data-ttu-id="302be-156">Reguła będzie wyświetlana w formularzu **Reguła weryfikacji diagnostyki**, do którego można przejść po wybraniu kolejno opcji **Administrowanie systemem** > **Zadania okresowe** > **Obsługa reguły weryfikacji diagnostyki**.</span><span class="sxs-lookup"><span data-stu-id="302be-156">The rule will display in the **Diagnostics validation rule** form, available from **System administration** > **Periodic tasks** > **Maintain diagnostics validation rule**.</span></span> <span data-ttu-id="302be-157">Aby włączyć egzekwowanie reguły, wybierz kolejno opcje **Administrowanie systemem** > **Zadania okresowe** > **Planowanie reguły weryfikacji diagnostyki** wybierz częstotliwość, z jaką ma być sprawdzane przestrzeganie reguły, np. **Codziennie**.</span><span class="sxs-lookup"><span data-stu-id="302be-157">To have it evaluated, go to **System administration** > **Periodic tasks** > **Schedule diagnostics validation rule**, select the frequency of the rule, such as **Daily**.</span></span> <span data-ttu-id="302be-158">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="302be-158">Click **OK**.</span></span> <span data-ttu-id="302be-159">Wybierz kolejno opcje **Administrowanie systemem** > **Doradca optymalizacji** i przeczytaj nową możliwość.</span><span class="sxs-lookup"><span data-stu-id="302be-159">Go to **System administration** > **Optimization advisor** to view the new opportunity.</span></span> 
+<span data-ttu-id="40bb5-158">Reguła będzie wyświetlana w formularzu **Reguła weryfikacji diagnostyki**, do którego można przejść po wybraniu kolejno opcji **Administrowanie systemem** > **Zadania okresowe** > **Obsługa reguły weryfikacji diagnostyki**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-158">The rule will display in the **Diagnostics validation rule** form, available from **System administration** > **Periodic tasks** > **Maintain diagnostics validation rule**.</span></span> <span data-ttu-id="40bb5-159">Aby włączyć egzekwowanie reguły, wybierz kolejno opcje **Administrowanie systemem** > **Zadania okresowe** > **Planowanie reguły weryfikacji diagnostyki** wybierz częstotliwość, z jaką ma być sprawdzane przestrzeganie reguły, np. **Codziennie**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-159">To have it evaluated, go to **System administration** > **Periodic tasks** > **Schedule diagnostics validation rule**, select the frequency of the rule, such as **Daily**.</span></span> <span data-ttu-id="40bb5-160">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="40bb5-160">Click **OK**.</span></span> <span data-ttu-id="40bb5-161">Wybierz kolejno opcje **Administrowanie systemem** > **Doradca optymalizacji** i przeczytaj nową możliwość.</span><span class="sxs-lookup"><span data-stu-id="40bb5-161">Go to **System administration** > **Optimization advisor** to view the new opportunity.</span></span> 
 
-<span data-ttu-id="302be-160">Aby uzyskać więcej informacji, obejrzyj krótki film na YouTube:</span><span class="sxs-lookup"><span data-stu-id="302be-160">For more information, watch the short YouTube video:</span></span>
+<span data-ttu-id="40bb5-162">Poniższy przykład zawiera fragment kodu źródłowego ze szkieletem reguły, w tym ze wszystkimi wymaganymi metodami i atrybutami.</span><span class="sxs-lookup"><span data-stu-id="40bb5-162">The following example is a code snippet with the skeleton of a rule including all the required methods and attributes.</span></span> <span data-ttu-id="40bb5-163">Pomoże on rozpocząć pisanie nowych reguł.</span><span class="sxs-lookup"><span data-stu-id="40bb5-163">It helps you get started with writing new rules.</span></span> <span data-ttu-id="40bb5-164">Etykiety i elementy menu akcji używane w przykładzie służą wyłącznie celom demonstracyjnych.</span><span class="sxs-lookup"><span data-stu-id="40bb5-164">The labels and action menu items that are used in the example are only used for demonstration purpose.</span></span>
+
+```
+[DiagnosticsRuleAttribute]
+public final class SkeletonSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule
+{
+    [DiagnosticsRuleSubscription(DiagnosticsArea::SCM,
+                                 "@SkeletonRuleLabels:SkeletonRuleTitle", // Label with the title of the rule
+                                 DiagnosticsRunFrequency::Monthly,
+                                 "@SkeletonRuleLabels:SkeletonRuleDescription")] // Label with a description of the rule
+    public str opportunityTitle()
+    {
+        // Return a label with the title of the opportunity
+        return "@SkeletonRuleLabels:SkeletonOpportunityTitle";
+    }
+
+    public str opportunityDetails(SelfHealingOpportunity _opportunity)
+    {
+        str details = "";
+
+        // Use _opportunity.data to provide details on the opportunity
+
+        return details;
+    }
+
+    protected List evaluate()
+    {
+        List results = new List(Types::Record);
+
+        // Write here the core logic of the rule
+
+        // When creating an opportunity, use:
+        //     * this.getOpportunityForCompany() for company specific opportunities
+        //     * this.getOpportunityAcrossCompanies() for cross-company opportunities
+
+        return results;
+    }
+
+    public boolean providesHealingAction()
+    {
+        return true;
+    }
+
+    protected void performAction(SelfHealingOpportunity _opportunity)
+    {
+        // Place here the code that performs the healing action
+
+        // To open a form, use the following:
+        // new MenuFunction(menuItemDisplayStr(SkeletonRuleDisplayMenuItem), MenuItemType::Display).run();
+    }
+
+    public MenuName securityMenuItem()
+    {
+        return menuItemActionStr(SkeletonRuleActionMenuItem);
+    }
+
+}
+```
+
+<span data-ttu-id="40bb5-165">Aby uzyskać więcej informacji, obejrzyj krótki film na YouTube:</span><span class="sxs-lookup"><span data-stu-id="40bb5-165">For more information, watch the short YouTube video:</span></span>
 
 > [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
 
