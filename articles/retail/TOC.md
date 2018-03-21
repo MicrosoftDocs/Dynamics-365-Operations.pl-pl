@@ -37,10 +37,11 @@
 ## [Opcje płatności](work-with-payments.md)
 
 # Konfigurowanie kanałów i zarządzanie nimi
-## [Inicjowanie danych początkowych w środowisku modułu Handel detaliczny](enable-configure-retail-functionality.md)
+## [Inicjowanie danych początkowych w środowisku rozwiązania Retail](enable-configure-retail-functionality.md)
 ## [Definiowanie kanałów sprzedaży detalicznej](define-maintain-retail-channels.md)
+## [Zarządzanie asortymentem](assortments.md)
 ## [Omówienie sklepu internetowego](online-stores.md)
-## [Konfigurowanie i instalowanie stacji sprzętowej handlu detalicznego](retail-hardware-station-configuration-installation.md)
+## [Konfigurowanie i instalowanie modułu Retail hardware station](retail-hardware-station-configuration-installation.md)
 ## [Czas i frekwencja w rozwiązaniu Retail](retail-time-attendance.md)
 
 # Aplikacje Modern Point of Sale (MPOS) i Cloud POS
@@ -53,9 +54,10 @@
 ### [Symulator sklepowych urządzeń peryferyjnych](dev-itpro/retail-peripheral-simulator.md)
 ### [Definiowanie klientów, rejestrów i stacji sprzętowych w kanale oraz zarządzanie nimi](define-maintain-channel-clients-registers-hw-stations.md)
 ## Układ ekranu
-### [Konfigurowanie układów ekranu dla punktu sprzedaży](pos-screen-layouts.md)
+### [Konfigurowanie układów ekranu dla aplikacji POS](pos-screen-layouts.md)
 ### [Instalowanie projektanta układów aplikacji Retail POS](install-pos-layout-designer.md)
-### [Ustawienia języka użytkownika i aplikacji punktu sprzedaży](pos-application-user-language-settings.md)
+### [Wybieranie ustawień powiadomień](Notifications-POS.md)
+### [Ustawienia języka użytkownika i aplikacji POS](pos-application-user-language-settings.md)
 ### [Konfigurowanie obrazów dla aplikacji MPOS](set-up-manage-images-retail-mpos.md)
 ## [Omówienie kodów informacji](info-codes-retail.md) 
 ## Rekomendacje produktów
@@ -100,6 +102,7 @@
 # Produkty i merchandising
 ## [Omówienie informacji o produktach](../supply-chain/pim/product-information.md)
 ## [Hierarchie handlu detalicznego](retail-hierarchies.md)
+## [Omówienie atrybutów i grup atrybutów](attribute-attributegroups-lifecycle.md)
 ## [Tworzenie atrybutów i zarządzanie nimi](create-manage-attributes.md)
 ## [Konfigurowanie produktów detalicznych](set-up-retail-products.md)
 ## [Wymiary produktu](../supply-chain/pim/product-dimensions.md)
@@ -129,7 +132,17 @@
 
 # Zasoby ludzkie
 ## [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](../talent/departments-jobs-positions.md)
-## [Konfigurowanie składników zadania](../talent/create-job.md)
+## [Konfigurowanie składników funkcji](../talent/create-job.md)
+
+# Funkcje związane z lokalizacją i wymagane przepisami prawa
+## Indie
+### [Integracja podatku GST w kasach (Indie)](localizations/apac-ind-cash-registers.md)
+### [Przewodniki wdrażania kas (Indie)](localizations/apac-ind-loc-deployment-guidelines.md)
+## Norwegia
+### [Kasy w Norwegii](localizations/emea-nor-cash-registers.md)
+### [Przewodniki wdrażania kas (Norwegia)](localizations/emea-nor-loc-deployment-guidelines.md)
+## Szwecja
+### [Kasy w Szwecji](localizations/emea-swe-cash-registers.md)
 
 # Zadania dotyczące rozwiązania Retail
 ## [Tworzenie produktu](../supply-chain/pim/tasks/create-product.md)
@@ -249,12 +262,8 @@
 ## [Zestaw Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Integrowanie zestawu Retail SDK z systemem ciągłej kompilacji](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Przykłady rozszerzalności zestawu Retail SDK](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
-### [Kasy w Szwecji](localizations/emea-swe-cash-registers.md)
-### [Przykład integracji aplikacji Retail POS za pomocą jednostek kontrolnych dla Szwecji](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
-### [Kasy w Norwegii](localizations/emea-nor-cash-registers.md)
-### [Przewodniki wdrażania kas w Norwegii](localizations/emea-nor-loc-deployment-guidelines.md)
-### [Pakiety zestawu SDK do Retail](dev-itpro/retail-sdk/retail-sdk-packaging.md)
-### [Przykłady zestawu SDK do Retail ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+### [Pakiety zestawu Retail SDK](dev-itpro/retail-sdk/retail-sdk-packaging.md)
+### [Przykłady zestawu Retail SDK ](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Rozszerzenia bazy danych kanału](dev-itpro/channel-db-extensions.md)
 ### [Możliwości rozszerzania CDX](dev-itpro/cdx-extensibility.md)
 ### [Atrybuty zamówienia](dev-itpro/order-attributes.md)
