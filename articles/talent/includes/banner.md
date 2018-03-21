@@ -1,2 +1,1 @@
-> [!IMPORTANT]
-> <span data-ttu-id="fa66a-101">Ten temat dotyczy rozwiązań Dynamics 365 for Talent, Dynamics 365 for Finance and Operations Enterprise Edition oraz Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="fa66a-101">This topic applies to Dynamics 365 for Talent, Dynamics 365 for Finance and Operations, Enterprise edition, and Dynamics 365 for Retail.</span></span> 
+
