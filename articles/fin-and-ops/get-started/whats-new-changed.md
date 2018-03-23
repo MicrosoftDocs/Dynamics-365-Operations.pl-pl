@@ -3,7 +3,7 @@ title: Co nowego, jakie zmiany
 description: "Ta strona wskazuje tematy, które mogą pomóc dowiedzieć się o nowych funkcjach w najnowszych wersjach programu Microsoft Dynamics 365 for Finance and Operations."
 author: josaw1
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: ff73fdb3e6ce97e01838228c45795ca64e888add
-ms.openlocfilehash: e00dece6a6f917028379d879ec81a5c7ab210253
+ms.sourcegitcommit: 9c974041c614c67335bb40f4f461bc1999bf3eb0
+ms.openlocfilehash: 610d8c8972df92b42333e22a4827008bc7c2b27e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -34,6 +34,8 @@ ms.lasthandoff: 01/23/2018
 
 <span data-ttu-id="922d8-105">Aby dowiedzieć się, jak uaktualnić do najnowszej wersji, zobacz [Proces uaktualniania do najnowszej aktualizacji](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).</span><span class="sxs-lookup"><span data-stu-id="922d8-105">For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).</span></span>
 
+
+[!include[release notes](../includes/release-notes.md)]
 
 ## <a name="application-releases"></a><span data-ttu-id="922d8-106">Wydania aplikacji</span><span class="sxs-lookup"><span data-stu-id="922d8-106">Application releases</span></span>
 
