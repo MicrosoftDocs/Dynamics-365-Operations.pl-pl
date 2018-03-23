@@ -1,9 +1,9 @@
 ---
-title: "Wyświetlanie powiadomień o zamówieniu w punkcie sprzedaży"
-description: "W tym temacie opisano, w jaki sposób włączyć powiadomienia o zamówieniu w punkcie sprzedaży oraz strukturę powiadomień, którą można rozszerzyć na inne operacje."
+title: "Wyświetlanie powiadomień o zamówieniach w aplikacji POS"
+description: "W tym temacie opisano, w jaki sposób włączyć powiadomienia o zamówieniach w aplikacji POS i strukturze powiadomień. Docelowo programiści będą mogli rozszerzyć te powiadomienia na operacje wykraczające poza realizację zamówień."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 03/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,49 +18,58 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: a1206aea3f78246951581c1dc6338e39a0942ea2
+ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
+ms.openlocfilehash: a55af4c26d74cc392d3c53aacb66e0a8bc97abf2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
-# <a name="display-notifications-in-point-of-sale"></a>Wyświetlanie powiadomień w punkcie sprzedaży
+# <a name="show-order-notifications-in-the-point-of-sale"></a>Wyświetlanie powiadomień o zamówieniach w aplikacji POS
 
 [!include[banner](includes/banner.md)]
 
-We współczesnym środowisku sprzedaży detalicznej do pracowników sklepu są przypisane różne zadania, takie jak pomoc klientom, wprowadzanie transakcji, przeprowadzanie inwentaryzacji i odbieranie zamówień w sklepie. Klient Punkt sprzedaży (POS) umożliwia pracownikom wykonywanie tych i innych zadań w jednej aplikacji. Mając do wykonania różne zadania w ciągu dnia, pracownicy mogą potrzebować powiadomień, jeżeli coś wymaga ich uwagi. Struktura powiadomień w punkcie sprzedaży rozwiązuje ten problem, umożliwiając pracownikom skonfigurowanie powiadomień opartych na rolach. W rozwiązaniu Dynamics 365 for Retail z aktualizacją aplikacji 5 te powiadomienia można skonfigurować tylko dla operacji punktu sprzedaży.
+We współczesnym środowisku sprzedaży detalicznej do pracowników sklepu są przypisane różne zadania, takie jak pomoc klientom, wprowadzanie transakcji, przeprowadzanie inwentaryzacji i odbieranie zamówień w sklepie. Klient punktu sprzedaży (POS) do jedna zintegrowana aplikacja, w której pracownicy mogą wykonywać te i wiele innych zadań. Ponieważ w ciągu dnia trzeba wykonywać różne zadania, pracownicy mogą potrzebować powiadomień, jeżeli coś wymaga ich uwagi. Struktura powiadomień w aplikacji POS rozwiązuje ten problem, umożliwiając pracownikom skonfigurowanie powiadomień opartych na rolach. W rozwiązaniu Microsoft Dynamics 365 for Retail z aktualizacją aplikacji 5 te powiadomienia można skonfigurować tylko dla operacji w aplikacji POS.
 
-Obecnie system umożliwia wyświetlenie powiadomień dla operacji realizacji zamówienia, jednakże strukturę opracowano pod kątem możliwości rozszerzenia, aby w przyszłości programiści mogli opracować program obsługi powiadomień dla dowolnej operacji i umożliwić wyświetlanie powiadomień w punkcie sprzedaży.  
+Obecnie system może być pokazywać powiadomienia tylko dla operacji realizacji zamówień. Jednak ponieważ struktura została zaprojektowana jako rozszerzalna, programiści docelowo będą mogli napisać programy obsługi powiadomień dla każdej operacji oraz powodować wyświetlanie tych powiadomień w aplikacji POS.
 
 ## <a name="enable-notifications-for-order-fulfillment-operations"></a>Włączanie powiadomień dla operacji realizacji zamówień
 
-Aby włączyć powiadomienia dla operacji realizacji zamówień, należy wykonać opisane poniżej czynności:
+Aby włączyć powiadomienia dla operacji realizacji zamówień, wykonaj poniższe czynności.
 
- - Przejdź do strony **Operacje** (**Sprzedaż detaliczna** > **Ustawienia kanału** > **Ustawienia punktu sprzedaży** > **Punkt sprzedaży** > **Operacje**).
- - Wyszukaj operację Realizacja zamówienia i zaznacz pole wyboru **Włącz powiadomienia** dla tej operacji. Powoduje to, że struktura powiadomień nasłuchuje programu obsługi operacji realizacji zamówienia. Jeżeli program obsługi jest wdrożony, powiadomienia będą wyświetlane w punkcie sprzedaży, w przeciwnym wypadku powiadomienia nie będą wyświetlane dla tej operacji.
-- Przejdź do uprawnień punktu sprzedaży POS związanych z pracownikami i na skróconej karcie **Powiadomienia** dodaj operację Realizacja zamówienia, ustawiając parametr „Kolejność wyświetlania” na 1. Jeżeli skonfigurowano więcej niż jedno powiadomienie, kolejność wyświetlania służy do rozmieszczenia powiadomień od góry do dołu, gdzie 1 znajduje się na górze. Można dodać tylko te operacje, dla których zaznaczono pole wyboru **Włącz powiadomienia**. Ponadto powiadomienia będą wyświetlane tylko dla operacji, które zostały dodane tutaj i tylko dla pracowników, dla których operacje zostały dodane do odpowiednich uprawnień punktu sprzedaży. 
+1. Wybierz kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Punkt sprzedaży** &gt; **Operacje**.
+2. Wyszukaj operację **Realizacja zamówienia**, a następnie zaznacz pole wyboru **Włącz powiadomienia**, aby określić, że struktura powiadomień ma nasłuchiwać zdarzeń programu obsługi tej operacji. Jeśli program obsługi jest zaimplementowany, powiadomienia o tej operacji będą wyświetlane w aplikacji POS.
+3. Wybierz kolejno opcje **Handel detaliczny** &gt; **Pracownicy etatowi** &gt; **Pracownicy**&gt; i na karcie Handel detaliczny otwórz uprawnienia wobec aplikacji POS związane z pracownikiem. Rozwiń skróconą kartę **Powiadomienia**, dodaj operację **Realizacja zamówienia**, a następnie w polu **Kolejność wyświetlania** ustaw wartość **1**. Jeżeli skonfigurowano więcej niż jedno powiadomienie, to pole służy do określenia ich kolejności. Powiadomienia o niższej wartości w polu **Kolejność wyświetlania** są wyświetlane nad powiadomieniami mającymi wyższą wartość. Powiadomienia, które w polu **Kolejność wyświetlania** mają wartość **1**, znajdują się na samej górze.
+
+    Powiadomienia są wyświetlane tylko dla operacji dodanych na skróconej karcie **Powiadomienia**, a operacje można tam dodawać tylko wtedy, gdy zaznaczono dla nich pole wyboru **Włącz powiadomienia** na stronie **Operacje aplikacji POS**. Ponadto powiadomienia o operacji są wyświetlane pracownikom tylko wtedy, gdy operacja została dodana do uprawnień wobec aplikacji POD dla tych pracowników.
+
+    > [!NOTE]
+    > Powiadomienia można zastępować na poziomie użytkownika. Otwórz rekord pracownika, wybierz opcję **Uprawnienia punktu sprzedaży**, a następnie zmodyfikuj subskrypcję powiadomień dla użytkownika.
+
+4. Wybierz kolejno opcje **Handel detaliczny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktów sprzedaży** &gt; **Profile funkcji**. W polu **Interwał powiadomień** określ żądaną częstotliwość pobierania powiadomień. W przypadku niektórych powiadomień aplikacja POS musi wykonywać wywołania w czasie rzeczywistym do aplikacji zaplecza. Te wywołania zużywają moc obliczeniową aplikacji zaplecza. W związku z tym podczas ustawiania interwału między powiadomieniami należy wziąć pod uwagę zarówno swoje potrzeby biznesowe, jak i wpływ obsługi wywołań w czasie rzeczywistym na aplikację zaplecza. Wartość **0** (zero) powoduje wyłączenie powiadomień.
+5. Wybierz kolejno opcje **Handel detaliczny** &gt; **Dane IT sieci sprzedaży** &gt; **Harmonogram dystrybucji**. Wybierz harmonogram **1060** (**Personel**), aby zsynchronizować ustawienia subskrypcji powiadomień, a następnie kliknij przycisk **Uruchom teraz**. Następnie wybierz harmonogram **1070** (**Konfiguracja kanału**), aby zsynchronizować interwał uprawnień, i kliknij przycisk **Uruchom teraz**.
+
+## <a name="view-notifications-in-the-pos"></a>Wyświetlanie powiadomień w aplikacji POS
+
+Po wykonaniu powyższych kroków pracownicy będą widzieć powiadomienia w aplikacji POS. Aby wyświetlić powiadomienia, naciśnij ikonę powiadomień w prawym górnym rogu aplikacji POS. Zostanie wyświetlone centrum powiadomień z powiadomieniami o operacji realizacji zamówień. Centrum powiadomień powinno przedstawiać następujące grupy w operacji realizacji zamówień:
+
+- **Odbiór w sklepie** — ta grupa pokazuje liczbę zamówień, których sposób dostawy to **Odbiór**, a odbiór jest zaplanowany z bieżącego sklepu. Naciśnięcie liczby na grupie spowoduje otwarcie strony **Realizacja zamówienia**. W tym przypadku strona będzie wyfiltrowana, tak aby pokazywała tylko aktywne zamówienia skonfigurowane do odbioru z bieżącego sklepu.
+- **Wyślij z magazynu** — ta grupa pokazuje liczbę zamówień, których sposób dostawy to **Wysyłka**, a wysyłka jest zaplanowana z bieżącego sklepu. Naciśnięcie liczby na grupie spowoduje otwarcie strony **Realizacja zamówienia**. W tym przypadku strona będzie wyfiltrowana, tak aby pokazywała tylko aktywne zamówienia skonfigurowane do wysyłki z bieżącego sklepu.
+
+Gdy do sklepu zostaną przypisane nowe zamówienia do realizacji, ikona powiadomień zmieni się, informując o nowych powiadomieniach, a liczby odpowiednich grup zostaną zaktualizowane. Grupy są odświeżane w regularnych odstępach czasu, ale użytkownicy aplikacji POS mogą również odświeżać je ręcznie w dowolnym momencie, naciskając przycisk **Odśwież** znajdujący się obok grupy. Ponadto jeśli w grupie znajdzie się nowa pozycja, której pracownik jeszcze nie oglądał, obok grupy pojawi się symbol serii.
+
+## <a name="enable-live-content-on-pos-buttons"></a>Włączanie przekazywania zawartości na żywo na przyciskach aplikacji POS
+
+Przyciski aplikacji POS mogą teraz pokazywać liczbę, aby ułatwić pracownikom identyfikowanie, które zadania wymagają ich natychmiastowej uwagi. Aby ta liczba była wyświetlana na przycisku aplikacji POS, należy dokonać konfiguracji powiadomień opisanej we wcześniejszej części tego tematu (tzn. trzeba włączyć powiadomienia dla operacji, ustawić interwał powiadamiania oraz zaktualizować grupę uprawnień pracownika wobec aplikacji POS). Ponadto należy otworzyć projektanta siatki przycisków, wyświetlić właściwości przycisku i zaznaczyć pole wyboru **Włącz zawartości na żywo**. W polu **Wyrównanie zawartości** można określić, gdzie liczba ma być wyświetlana: w prawym górnym rogu (**Do góry, do prawej**) czy na środku (**Środek**) przycisku.
 
 > [!NOTE]
-> Powiadomienia można pominąć na poziomie użytkownika, przechodząc do rekordu pracownika, wybierając opcję **Uprawnienia punktu sprzedaży**, a następnie edytując subskrypcję powiadomień użytkownika.
+> Zawartości na żywo można włączyć dla operacji tylko wtedy, gdy na stronie **Operacje aplikacji POS** zaznaczono dla nich pole wyboru **Włącz powiadomienia**, jak opisano we wcześniejszej części tego tematu.
 
- - Przejdź do strony **Profil funkcji** (**Sprzedaż detaliczna** > **Ustawienia kanału** > **Ustawienia punktu sprzedaży** > **Profile punktów sprzedaży** > **Profile funkcji**). Zaktualizuj właściwość **Interwał powiadomień**, aby ustawić w minutach interwał pobierania powiadomień. Zalecamy ustawienie tej wartości na 10 minut, aby uniknąć niepotrzebnej komunikacji z centralą. Ustawienie interwału powiadomień na „0” spowoduje ich wyłączenie.  
+Poniższa ilustracja przedstawia ustawienia przekazywania zawartości na żywo w konstruktorze siatki przycisków.
 
- - Wybierz kolejno opcje **Handel detaliczny** > **Składniki IT w handlu detalicznym** > **Harmonogram dystrybucji**. Wybierz harmonogram „1060-Personel”, aby zsynchronizować ustawienia subskrypcji powiadomień, a następnie kliknij przycisk **Uruchom teraz**. Następnie zsynchronizuje interwał uprawnień, wybierając opcję „1070-Konfiguracja kanału”, a następnie kliknij przycisk **Uruchom teraz**. 
+![Ustawienia zawartości na żywo w konstruktorze siatki przycisków](./media/ButtonGridDesigner.png "Ustawienia zawartości na żywo w konstruktorze siatki przycisków")
 
-## <a name="view-notifications-in-pos"></a>Wyświetlanie powiadomień w punkcie sprzedaży
+Na poniższej ilustracji przedstawiono efekt wybrania opcji **Do góry, do prawej** i **Środek** w polu **Wyrównanie zawartości** dla przycisków o różnej wielkości.
 
-Po wykonaniu powyższych czynności pracownicy, dla których skonfigurowano powiadomienia, mogą wyświetlać je w punkcie sprzedaży. Aby wyświetlić powiadomienia, kliknij ikonę powiadomień na pasku tytułu punktu sprzedaży. Spowoduje to wyświetlenie centrum powiadomień zawierającego powiadomienia dla operacji realizacji zamówień. Centrum powiadomień powinno wyświetlić następujące grupy w operacji realizacji zamówień: 
-
-- **Zamówienia oczekujące** — ta grupa zawiera liczbę zamówień, które są w stanie oczekiwania, na przykład wymagające zaakceptowania przez pracownika punktu sprzedaży, który ma wymagane uprawnienia do realizacji w sklepie. Kliknięcie numeru grupy spowoduje otwarcie strony **Realizacja zamówienia** odfiltrowanej w celu wyświetlenia tylko zamówień oczekujących przypisanych do sklepu w celu realizacji. Jeżeli zamówienia są automatycznie akceptowane przez sklep, liczba w tej grupie będzie wynosić zero.
-
-- **Odbiór w sklepie** — ta grupa zawiera liczbę zamówień, których sposób dostawy to **Odbiór**, a odbiór jest zaplanowany z bieżącego sklepu. Kliknięcie numeru grupy spowoduje otwarcie strony **Realizacja zamówienia** odfiltrowanej w celu wyświetlenia tylko aktywnych zamówień ustawionych do odbioru w bieżącym sklepie.
-
-- **Wyślij z magazynu** — ta grupa zawiera liczbę zamówień, których sposób dostawy to **Wysyłka**, a wysyłka jest zaplanowana z bieżącego sklepu. Kliknięcie numeru grupy spowoduje otwarcie strony **Realizacja zamówienia** odfiltrowanej w celu wyświetlenia tylko aktywnych zamówień ustawionych do wysyłki z bieżącego sklepu.
-
-Po przypisaniu do sklepu nowych zamówień do realizacji ikona powiadomień zmieni się, informując o nowych powiadomieniach, a liczba odpowiednich grup zostanie zaktualizowana. Użytkownik może także kliknąć ikonę odświeżania obok nazwy operacji, aby natychmiast zaktualizować liczbę grup. Liczba zostanie także zaktualizowana z zastosowaniem wstępnie zdefiniowanego interwału. Każda grupa zawierająca nowy element niewidziany przez bieżącego pracownika będzie zawierać ikonę wybuchu informującą, że grupa zawiera nowy element. Kliknięcie kafelków w powiadomieniach spowoduje otwarcie określonej operacji, dla której skonfigurowano to powiadomienie. W powyższych scenariuszach kliknięcie powiadomień spowoduje otwarcie strony **Realizacja zamówienia** i przekazanie odpowiednich parametrów: zamówienia oczekujące, odbiór w sklepie i wysyłka ze sklepu. 
-
-> [!NOTE]
-> Powiadomienia o zamówieniach oczekujących zostaną włączone w najbliższej aktualizacji programu Dynamics 365 for Retail. 
-
+![Zawartość na żywo na przyciskach aplikacji POS](./media/ButtonsWithLiveContent.png "Zawartość na żywo na przyciskach aplikacji POS")
 

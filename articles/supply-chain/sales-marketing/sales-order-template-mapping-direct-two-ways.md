@@ -3,7 +3,7 @@ title: "Synchronizacja zamówień sprzedaży bezpośrednio między rozwiązaniam
 description: "Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do rozpoczynania synchronizacji zamówień sprzedaży między programami Microsoft Dynamics 365 for Sales i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 03/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 9aa8c78f5aea5a818d517c2baa9051750b132fc6
+ms.sourcegitcommit: 0928f9c0af52c2e19f0669841e433423ae9db467
+ms.openlocfilehash: 09c5cd14c5948818878d3f830639abc166d7072e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -132,6 +132,7 @@ Przed zsynchronizowaniem zamówień sprzedaży należy zaktualizować poniższe 
 
     Przejdź do okna **Ustawienia** &gt; **Zabezpieczenia** &gt; **Zespoły** wybierz odpowiedni zespół, wybierz opcję **Zarządzaj rolami** i wybierz rolę o odpowiednich uprawnieniach, na przykład **Administrator systemu**.
 
+- Aby zapewnić poprawne obliczanie rabatów w aplikacjach Sales i Finance and Operations, w ustawieniu **Metoda kalkulacji rabatów** należy zaznaczyć wartość **Pozycja w wierszu**.
 - Przejdź do okna **Ustawienia** &gt; **Administracja** &gt; **Ustawienia systemu** &gt; **Sprzedaż** i sprawdź, czy używane są następujące ustawienia:
 
     - Opcja **Użyj systemowego obliczania cen** jest ustawiona na **Tak**.
