@@ -1,47 +1,63 @@
 ---
-title: "Tworzenie kategorii produktu i zarządzanie nimi"
-description: "W tym temacie opisano ulepszenia wprowadzone w zarządzaniu dla kategorii produktów detalicznych. Te ulepszenia umożliwiają menedżerom ds. merchandisingu powiązanie hierarchii produktów detalicznych i informacji o zwolnionych produktach."
+title: "Zarządzanie kategoriami produktów"
+description: "W tym temacie opisano, jak kierownicy ds. merchadisingu mogą używać kategorii produktów sieci sprzedaży do zarządzania relacjami między hierarchiami produktów sieci sprzedaży a szczegółami zwolnionych produktów."
 author: ashishmsft
 manager: AnnBe
-ms.date: 09/01/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
-ms.search.form: RetailCategoryAndProductWorkspace, RetailCategory
+ms.search.form: 
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.search.region: Global
-ms.search.industry: retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.custom: 
+ms.assetid: c7ed2ba5-87c6-4d99-9728-2a83e6d95ca9
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 74a8fa863736177bcf8cb4b3d90911c78122252b
+ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
+ms.openlocfilehash: 4b7ef962b777a31e1da238a8ec1be9a42ec5bb5f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
-# <a name="product-category-management-and-creation"></a><span data-ttu-id="a29da-104">Tworzenie kategorii produktu i zarządzanie nimi</span><span class="sxs-lookup"><span data-stu-id="a29da-104">Product category management and creation</span></span>
+
+# <a name="enhanced-product-and-category-management"></a><span data-ttu-id="79827-103">Ulepszone zarządzanie kategoriami i produktami</span><span class="sxs-lookup"><span data-stu-id="79827-103">Enhanced product and category management</span></span>
 
 [!include[banner](./includes/banner.md)]
 
-<span data-ttu-id="a29da-105">Ulepszenia wprowadzone w zarządzaniu dla kategorii produktów detalicznych umożliwiają menedżerom ds. merchandisingu powiązanie hierarchii produktów detalicznych i informacji o zwolnionych produktach.</span><span class="sxs-lookup"><span data-stu-id="a29da-105">Enhancements that have been made to the management experience for Retail product categories let merchandising managers have a correlation between Retail product hierarchy and released product details.</span></span> <span data-ttu-id="a29da-106">Aby wyświetlić te ulepszenia, w obszarze roboczym **Zarządzanie kategoriami i produktami** wybierz opcję **Hierarchia produktów sieci sprzedaży**, aby otworzyć stronę **Nowa struktura kategorii produktów sieci sprzedaży**.</span><span class="sxs-lookup"><span data-stu-id="a29da-106">To view these enhancements, in the **Category & product management**  workspace, select **Retail product hierarchy** to open the **New structure of Retail product category** page.</span></span> 
+<span data-ttu-id="79827-104">W tym temacie opisano poszerzony sposób zarządzania kategoriami produktów sieci sprzedaży i produktami w programie Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="79827-104">This topic describes an enhanced way to manage Retail product categories and products in Dynamics 365 for Retail.</span></span> <span data-ttu-id="79827-105">Te ulepszenia umożliwiają menedżerom ds. merchadisingu wyświetlanie wspólnej struktury właściwości produktów między hierarchiami produktów detalicznych a informacjami o zwolnionych produktach.</span><span class="sxs-lookup"><span data-stu-id="79827-105">These enhancements let merchandising managers view a common structure of product properties between Retail product hierarchy and released product details.</span></span>
 
-<span data-ttu-id="a29da-107">W poprzednich wersjach właściwości produktów były podzielone na podstawowe właściwości produktów i właściwości produktów sieci sprzedaży na podstawie zakresu ich zastosowania.</span><span class="sxs-lookup"><span data-stu-id="a29da-107">In previous releases, product properties were divided into Basic product properties and Retail product properties, based on the scope of their applicability.</span></span> <span data-ttu-id="a29da-108">Właściwości produktów sieci sprzedaży były *globalne*.</span><span class="sxs-lookup"><span data-stu-id="a29da-108">Retail product properties were *global*.</span></span> <span data-ttu-id="a29da-109">Inaczej mówią, dla właściwości danego produktu ta sama wartość jest współdzielona we wszystkich firmach.</span><span class="sxs-lookup"><span data-stu-id="a29da-109">In other words, for a given product property, the same value is shared across all legal entities.</span></span> <span data-ttu-id="a29da-110">Podstawowe właściwości produktów były *specyficzne dla firmy*.</span><span class="sxs-lookup"><span data-stu-id="a29da-110">Basic product properties were *legal entity–specific*.</span></span> <span data-ttu-id="a29da-111">Inaczej mówiąc, dana właściwość produktu może różnić się w zależności od firmy w zależności od wymagań biznesowych.</span><span class="sxs-lookup"><span data-stu-id="a29da-111">In other words, a given product property might differ across legal entities, based on individual business requirements.</span></span>
+<span data-ttu-id="79827-106">Aby dowiedzieć się więcej o zarządzaniu kategoriami produktów sieci sprzedaży, w obszarze roboczym **Zarządzanie kategoriami i produktami** przejdź do sekcji **Hierarchia produktów sieci sprzedaży** i zwróć uwagę na ulepszoną strukturę znajdującą się na stronie **Kategoria produktów sieci sprzedaży**.</span><span class="sxs-lookup"><span data-stu-id="79827-106">To learn more about managing Retail product categories, go to **Retail product hierarchy** from the **Category and product management** workspace, and note the enhanced structure of the **Retail product category** page.</span></span>
 
-<span data-ttu-id="a29da-112">Dzięki tym ulepszeniom, w przypadku właściwości produktu w kategorii produktów sieci sprzedaży, będziemy nadal rozdzielać pola na podstawie ich zastosowania w grupie, aby uwzględnić strukturę szczegółów zwolnionych produktów.</span><span class="sxs-lookup"><span data-stu-id="a29da-112">With these enhancements, for product properties in the Retail product category, we continue to separate the fields, based on their applicability within a group, to reflect the released product details form structure.</span></span>
+![Obszar roboczy Zarządzanie kategoriami i produktami](media/LaunchRetailProductHierarchy.png)
 
-<span data-ttu-id="a29da-113">Można przełączyć się między zarządzaniem właściwościami specyficznymi dla firmy we wszystkich firmach i zarządzaniem nimi dla określonej firmy.</span><span class="sxs-lookup"><span data-stu-id="a29da-113">You can switch between managing legal-entity specific properties across all legal entities and managing them for a specific legal entity.</span></span> <span data-ttu-id="a29da-114">Wybierz opcję **Wyświetl/edytuj dla wszystkich firm** lub **Wyświetl/edytuj dla określonej firmy** według potrzeb.</span><span class="sxs-lookup"><span data-stu-id="a29da-114">Just select **View/Edit for all legal entities** or **View/Edit for a specific legal entity** as you require.</span></span>
+<span data-ttu-id="79827-108">W poprzednich wersjach właściwości produktów były podzielone na **podstawowe właściwości produktów** i **właściwości produktów sieci sprzedaży** na podstawie zakresu ich zastosowania.</span><span class="sxs-lookup"><span data-stu-id="79827-108">In previous versions, product properties were divided into **Basic product properties** and **Retail product properties**, based on the scope of their applicability.</span></span> <span data-ttu-id="79827-109">**Właściwości produktów sieci sprzedaży** były *globalne* ze względu na zakres zastosowania, co oznacza, że dla danej **właściwości produktu sieci sprzedaży** ta sama wartość jest wspólna we wszystkich firmach.</span><span class="sxs-lookup"><span data-stu-id="79827-109">**Retail product properties** were *global* by scope of applicability, which means that for a given **Retail product property**, the same value is shared across all legal entities.</span></span> <span data-ttu-id="79827-110">**Podstawowe właściwości produktów** były *specyficzne dla firmy*.</span><span class="sxs-lookup"><span data-stu-id="79827-110">**Basic product properties** are *legal entity specific*.</span></span> <span data-ttu-id="79827-111">Inaczej mówiąc, dana **podstawowa właściwość produktu** może mieć różne wartości dla różnych firm w zależności od wymagań biznesowych.</span><span class="sxs-lookup"><span data-stu-id="79827-111">In other words, for a given **Basic product property** the value can differ across legal entities, based on individual business requirements.</span></span>
 
-<span data-ttu-id="a29da-115">Menedżerowie ds. merchandisingu mogą także zdefiniować wartości domyślne dla dodatkowego zestawu właściwości produktu na poziomie danej kategorii.</span><span class="sxs-lookup"><span data-stu-id="a29da-115">Merchandising managers can also define default values for an additional set of product properties at the level of an individual category.</span></span> <span data-ttu-id="a29da-116">Te wartości właściwości są dziedziczone przez produkt na podstawie ich skojarzenia z kategorią w momencie tworzenia produktu.</span><span class="sxs-lookup"><span data-stu-id="a29da-116">These property values are inherited by a product, based on their association with a category at the time of product creation.</span></span>
+<span data-ttu-id="79827-112">W ulepszonej strukturze kategorii produktów sieci sprzedaży właściwości produktów są logicznie rozdzielone na podstawie ich zastosowania w grupie, tak aby odzwierciedlić strukturę formularza szczegółów zwolnionych produktów.</span><span class="sxs-lookup"><span data-stu-id="79827-112">In the enhanced Retail product category structure, product properties are logically separated based on their applicability within a group, to reflect the released product details form structure.</span></span>
 
-## <a name="select-properties-to-update-products-from-the-retail-product-category-form"></a><span data-ttu-id="a29da-117">Wybieranie właściwości do aktualizacji produktu z formularza kategorii produktów sieci sprzedaży</span><span class="sxs-lookup"><span data-stu-id="a29da-117">Select properties to update products from the Retail product category form</span></span>
+![Grupowanie pól w oparciu o ich zakres stosowania](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
-<span data-ttu-id="a29da-118">Można użyć właściwości grupowania logicznego, aby wybrać, które zaktualizowane właściwości produktu powinny być przesyłane do powiązanych produktów.</span><span class="sxs-lookup"><span data-stu-id="a29da-118">You can use logical grouping properties to select which updated product properties should be pushed to associated products.</span></span>
+<span data-ttu-id="79827-114">Można przełączyć się między zarządzaniem właściwościami specyficznymi dla firmy we wszystkich firmach i zarządzaniem nimi dla określonej firmy.</span><span class="sxs-lookup"><span data-stu-id="79827-114">You can switch between managing legal-entity specific properties across all legal entities and managing them for a specific legal entity.</span></span> <span data-ttu-id="79827-115">W tym celu wybierz opcję **Wyświetl/edytuj dla wszystkich firm** lub **Wyświetl/edytuj dla określonej firmy**.</span><span class="sxs-lookup"><span data-stu-id="79827-115">To do this, select either **View/Edit for all legal entities** or **View/Edit for a specific legal entity**.</span></span>
 
-<span data-ttu-id="a29da-119">Menedżerowie ds. merchandisingu mogą zmodyfikować odziedziczone właściwości produktów dla każdego produktu, aby spełnić indywidualne wymagania biznesowe.</span><span class="sxs-lookup"><span data-stu-id="a29da-119">Merchandising managers can modify these inherited product properties for each product, to meet individual business requirements.</span></span>
+![Przełączanie widoku między jedną a wszystkimi firmami](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+
+![Przełączanie widoku między jedną a wszystkimi firmami](media/ToggleToEditForAllLegalEntities.PNG)  
+
+<span data-ttu-id="79827-118">W porównaniu z poprzednimi wersjami w nowej strukturze kategorii produktów sieci sprzedaży kierownik ds. merchadisingu może zdefiniować domyślne wartości dodatkowego zestawu właściwości produktów na poziomie indywidualnej kategorii.</span><span class="sxs-lookup"><span data-stu-id="79827-118">Compared to previous versions, in the new Retail product category structure a merchandising manager can also define default values for an additional set of product properties at an individual category level.</span></span> <span data-ttu-id="79827-119">Podczas tworzenia produktu te domyślne właściwości produktu są dziedziczone przez produkt w oparciu o jego powiązanie z konkretną kategorią w hierarchii produktów sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="79827-119">At the time of product creation, these default product property values are inherited by a product, based on their association with an individual category from Retail product hierarchy.</span></span> <span data-ttu-id="79827-120">Te dziedziczone właściwości produktów można również modyfikować dla każdego produktu, aby spełnić indywidualne wymagania biznesowe.</span><span class="sxs-lookup"><span data-stu-id="79827-120">These inherited product properties can also be modified for each product, to meet individual business requirements.</span></span>
+
+## <a name="select-properties-to-update-products-from-the-retail-product-category-form"></a><span data-ttu-id="79827-121">Wybieranie właściwości do aktualizacji produktu z formularza kategorii produktów sieci sprzedaży</span><span class="sxs-lookup"><span data-stu-id="79827-121">Select properties to update products from the Retail product category form</span></span> 
+ 
+<span data-ttu-id="79827-122">Tej nowej ulepszonej struktury można używać dla właściwości produktów w celu określania, które zaktualizowane właściwości produktów mają być rozpowszechniane do powiązanych produktów.</span><span class="sxs-lookup"><span data-stu-id="79827-122">You can use this new enhanced structure for product properties to select which updated product properties must be pushed to associated products.</span></span> 
+
+![Nowy, ulepszony widok aktualizacji produktów](media/NewUpdateProductsEnhancedView.PNG) 
+
+<span data-ttu-id="79827-124">Menedżerowie ds. merchandisingu mogą zmodyfikować odziedziczone właściwości produktów dla każdego produktu, aby spełnić indywidualne wymagania biznesowe.</span><span class="sxs-lookup"><span data-stu-id="79827-124">Merchandising managers can modify these inherited product properties for each product, to meet individual business requirements.</span></span>
+
 
