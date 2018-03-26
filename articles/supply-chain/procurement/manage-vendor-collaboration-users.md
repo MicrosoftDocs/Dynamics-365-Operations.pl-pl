@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6e83f46df30d13a8bffa5c2b0bd05f456b67e6ec
+ms.sourcegitcommit: 80374d6dce8aa5d5f2e5afc0656b42236ac974ec
+ms.openlocfilehash: 036e8079bd976087514a074529dd4593c5a2b0a5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -67,7 +67,7 @@ Zanim będzie można wnioskować o zainicjowanie obsługi nowego użytkownika, t
 4.  W sekcji **Przypisz role użytkownika** zaznacz pole wyboru **Przypisz** dla ról zabezpieczeń, które powinien mieć nowy użytkownik.
 5.  Kliknij przycisk **Prześlij**.
 
-Po przesłaniu wniosku o użytkownika dostawcy pole **Dostęp do portalu współpracy z dostawcami jest dozwolony** otrzymuje wartość **Tak** dla wybranego konta dostawcy i rozpoczyna się przepływ pracy wnioskowania o użytkownika. W ramach przepływu pracy nowy użytkownik jest tworzony w programie Finance and Operations i są mu przypisywane role zabezpieczeń. Ponadto jest aktywowana usługa Azure B2B, która inicjuje interakcję z portalem Azure i kojarzy nowe lub istniejące konto w usłudze AAD z kontem użytkownika w programie Finance and Operations.
+Po przesłaniu wniosku o użytkownika dostawcy pole **Dostęp do portalu współpracy z dostawcami jest dozwolony** otrzymuje wartość **Tak** dla wybranego konta dostawcy i rozpoczyna się przepływ pracy wnioskowania o użytkownika. W ramach przepływu pracy nowy użytkownik jest tworzony w programie Finance and Operations i są mu przypisywane role zabezpieczeń. Ponadto jest aktywowana usługa Azure B2B, która inicjuje interakcję z portalem Azure i kojarzy nowe lub istniejące konto w usłudze AAD z kontem użytkownika w programie Finance and Operations. Aby uzyskać więcej informacji, zobacz [Na czym polega współpraca w usłudze Azure AD B2B?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Dezaktywowanie użytkownika
 

@@ -3,7 +3,7 @@ title: "Wdrożenia lokalne"
 description: "Ten temat zawiera informacje i łącza do zasobów o wdrożeniach lokalnych."
 author: kfend
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 03/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,13 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
-ms.openlocfilehash: 12b8a6e8f28501bce76d5a1d58b39e4711b75330
+ms.sourcegitcommit: 0d551818c8d352af96f6e64613cfbbc4aec5bf5b
+ms.openlocfilehash: e35769e45b1017eef2ee5a5b6c2baa35ae13d90c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/06/2018
+ms.lasthandoff: 03/15/2018
 
 ---
-# <a name="on-premises-deployment-landing-page"></a>Strona początkowa wdrożenia lokalnego
+# <a name="on-premises-deployment-home-page"></a>Strona główna wdrożenia lokalnego
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,13 +36,13 @@ Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition mo�
 - [Planowanie wdrożenia lokalnego](plan-onprem-deployment.md)
 - [Wymagania systemowe dotyczące wdrożeń lokalnych](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Szacowanie zapotrzebowania na sprzęt dla środowisk lokalnych](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Zasad cyklu pomocy technicznej dotyczące usług online i oprogramowania lokalnego](../migration-upgrade/versions-update-policy.md)
 - [Zakup rozwiązania Dynamics 365 for Finance and Operations, Enterprise Edition (lokalnego)](../../fin-and-ops/get-started/purchase-on-premises.md)
 - [Porównanie funkcji w chmurze i lokalnych](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Wprowadzenie do pracy
 - [Tworzenie projektu lokalnego w usłudze Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Konfigurowanie i wdrażanie środowisk lokalnych](setup-deploy-on-premises-environments.md)
+- [Konfigurowanie i wdrażanie środowisk lokalnych (aktualizacja Platform update 12)](setup-deploy-on-premises-pu12.md)
+- [Konfigurowanie i wdrażanie środowisk lokalnych (aktualizacje Platform update 8 i 11)](setup-deploy-on-premises-pu8-pu11.md)
 - [Instalowanie urządzeń drukarek sieciowych w środowiskach lokalnych](../analytics/install-network-printer-onprem.md)
 - [Konfigurowanie usług SQL Server Reporting Services dla wdrożenia lokalnego](../analytics/configure-ssrs-on-premises.md)
 - [Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych](develop-deploy-custom-models-on-premises.md)

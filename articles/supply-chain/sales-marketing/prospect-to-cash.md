@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
+ms.sourcegitcommit: e342c67f53828c77f77d99a2c3f909a23ced8989
+ms.openlocfilehash: 5d9bc41c92258f9856088b04ec5af123c8e915e5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -42,9 +42,8 @@ W bieżącej wersji rozwiązania Prospekt na gotówkę udostępniono następują
 - [Obsługa kont klientów w programie Sales i synchronizowanie ich bezpośrednio między programem Sales a programem Finance and Operations](accounts-template-mapping-direct.md)
 - [Obsługa produktów w rozwiązaniu Finance and Operations i synchronizowanie ich bezpośrednio z rozwiązaniem Sales](products-template-mapping-direct.md)
 - [Obsługa kontaktów w rozwiązaniu Sales i synchronizowanie ich bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Finance and Operations](contacts-template-mapping-direct.md)
-- [Synchronizowanie ofert sprzedaży bezpośrednio między rozwiązaniem Sales a rozwiązaniem Finance and Operations (wkrótce zostanie udostępniony szablon)](sales-quotation-template-mapping-sales-fin.md)
-- [Synchronizowanie zamówień sprzedaży bezpośrednio z rozwiązania Finance and Operations do rozwiązania Sales](sales-order-template-mapping-direct.md)
-- [Synchronizowanie zamówień sprzedaży bezpośrednio między rozwiązaniem Sales a rozwiązaniem Finance and Operations (wkrótce zostanie udostępniony szablon)](sales-order-template-mapping-direct-two-ways.md)
+- [Synchronizowanie ofert sprzedaży bezpośrednio z rozwiązania Sales do rozwiązania Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
+- [Synchronizowanie zamówień sprzedaży bezpośrednio między rozwiązaniem Sales a rozwiązaniem Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
 - [Synchronizowanie faktur sprzedaży bezpośrednio z rozwiązania Finance and Operations do rozwiązania Sales](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Wymagania systemowe dla rozwiązania Finance and Operations
@@ -85,7 +84,7 @@ Integracja w procesie Prospekt na gotówkę jest obsługiwana w następujących 
 
 Aby skorzystać z rozwiązania Prospekt na gotówkę, należy zainstalować następujące składniki:
 
-- Dynamics 365 for Sales w wersji 1612 (8.2.1.207) (DB 8.2.1.207) online
+- Dynamics 365 for Sales wersja 1612 (8.2.1.207) (DB 8.2.1.207) online lub nowsza
 - Rozwiązanie Prospekt na gotówkę dla programu Dynamics 365 for Sales, wersja 1.15.0.0 (v15) 
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Instalacja rozwiązania Prospekt na gotówkę dla programu Sales
