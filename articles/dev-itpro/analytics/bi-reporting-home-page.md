@@ -1,6 +1,6 @@
 ---
 title: Analizy
-description: "Ten temat odsyła do materiałów zawierających informacje na temat narzędzi BI i raportowania dostępnych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
+description: "Ten temat odsyła do zasobów zawierających informacje na temat narzędzi do wykonywania analiz biznesowych i raportowania dostępnych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations."
 author: sericks007
 manager: AnnBe
 ms.date: 12/18/2017
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 2477062ad324f91ff07f1c79cfccd4389b37badf
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 14a18681a98a2efbf6e3cfdbe77d282e74374c71
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 12/18/2017
 
 [!include[banner](../includes/banner.md)]
 
-Ten temat odsyła do materiałów zawierających informacje na temat narzędzi BI i raportowania dostępnych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.
+Ten temat odsyła do zasobów zawierających informacje na temat narzędzi do wykonywania analiz biznesowych (BI) i raportowania dostępnych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations.
 
 ## <a name="get-started"></a>Rozpoczynanie pracy
 - [Dostęp do informacji i raportowanie](information-access-reporting.md)
@@ -73,7 +73,7 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 - [Zarządzanie cyklem życia konfiguracji Raportowania elektronicznego](general-electronic-reporting-manage-configuration-lifecycle.md)
 - [Tworzenie konfiguracji Raportowania elektronicznego](electronic-reporting-configuration.md)
 
-## <a name="financial-reporting"></a>Raporty finansowe
+## <a name="financial-reporting"></a>Raportowanie finansowe
 Dostępne są standardowe raporty finansowe wykorzystujące domyślne kategorie konta głównego w rozwiązaniu Finance and Operations. Za pomocą projektanta raportów można tworzyć i modyfikować tradycyjne sprawozdania finansowe, np. rachunki wyników i bilansów. Można następnie udostępniać wyniki innym członkom organizacji. Przykłady sprawozdawczości finansowej obejmują bilanse, przepływy gotówki i sumaryczny bilans próbny rok do roku.
 
 [![Przykład raportowania finansowego](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
