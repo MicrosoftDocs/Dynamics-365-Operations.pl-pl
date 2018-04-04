@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 40d54a9a2920e87caba62c92b5ca6465fa68e3d4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 164932ac3bc701696f5c0b08c5e2d585d9a8ba6a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/08/2018
 Microsoft Dynamics 365 for Retail to kompleksowe rozwiązanie dla handlu detalicznego oferujące ujednolicone możliwości handlowe we wszystkich kanałach. Te możliwości obejmują sprzedaż, mobilność, analizy i produktywność, dzięki czemu pomagają sprzedawcom detalicznych i pracownikom osiągać lepsze wyniki dzięki maksymalnemu wykorzystaniu zalet chmury i mobilności. Rozwiązanie Retail oferuje rozbudowaną obsługę różnych procesów biznesowych, takich jak promowanie produktów, zarządzanie zapasami i zarządzanie kanałami. Oferuje także rozszerzone funkcje i możliwości dla odbiorców we wszystkich miejscach bezpośredniej interakcji.
 
 > [!NOTE] 
-> Rozwiązanie Dynamics 365 for Retail jest blisko związane z rozwiązaniami Dynamics 365 for Finance and Operations Enterprise Edition i Dynamics 365 for Talent. Te same funkcje mogą być dostępne we wszystkich trzech produktach. W związku z tym w tematach, które dotyczą głównie rozwiązania Retail, będzie używana nazwa produktu Microsoft Dynamics 365 for Retail, w tematach dotyczących głównie produktu podstawowego (Finance and Operations) będzie używana nazwa produktu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, a w tematach dotyczących głównie zasobów ludzkich będzie używana nazwa produktu Dynamics 365 for Talent. 
+> Rozwiązanie Dynamics 365 for Retail jest blisko związane z rozwiązaniami Dynamics 365 for Finance and Operations i Dynamics 365 for Talent. Te same funkcje mogą być dostępne we wszystkich trzech produktach. W związku z tym w tematach, które dotyczą głównie rozwiązania Retail, będzie używana nazwa produktu Microsoft Dynamics 365 for Retail, w tematach dotyczących głównie produktu podstawowego (Finance and Operations) będzie używana nazwa produktu Microsoft Dynamics 365 for Finance and Operations, a w tematach dotyczących głównie zasobów ludzkich będzie używana nazwa produktu Dynamics 365 for Talent. 
 
 W lewym okienku wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 

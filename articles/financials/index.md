@@ -1,6 +1,6 @@
 ---
 title: "Zarządzanie finansami — strona główna"
-description: "Ten temat zawiera listę tematów Pomocy i innych zasobów dotyczących funkcji zarządzania finansami w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
+description: "Ten temat zawiera listę tematów Pomocy i innych zasobów dotyczących funkcji zarządzania finansami w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,10 +18,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 02451c702549653ef725b7b5d285a36eabecf3d6
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 881b44f1128e732bc768191088e19efc38552eca
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](includes/banner.md)]
 
-Ten temat zawiera listę tematów Pomocy i innych zasobów dotyczących funkcji zarządzania finansami w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. 
+Ten temat zawiera listę tematów Pomocy i innych zasobów dotyczących funkcji zarządzania finansami w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations. 
 
 Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 - [Rozrachunki z dostawcami](accounts-payable\accounts-payable.md) 
