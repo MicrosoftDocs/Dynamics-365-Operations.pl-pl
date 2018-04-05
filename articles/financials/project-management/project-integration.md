@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-12-04
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: a72963f755f8eddb19b8526d2938eff039ab7df2
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 4a3445417d5ae88e2ff3676962a82921a7ab475d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 01/17/2018
 Planowanie harmonogramu projektu i zarządzanie nim może być skomplikowane, dlatego menedżerowie projektów powinni używać narzędzi, które pomogą wykonywać to zadanie. Integracja z klientem programu Microsoft Project umożliwia otwieranie struktury podziału pracy projektu oraz zarządzanie nią. Menedżer projektu może publikować wszelkie zmiany z powrotem w strukturze podziału pracy projektu w programie Finance and Operations.
 
 > [!NOTE]
-> Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition z lipcową aktualizacją, należy zainstalować poprawki KB 4054797 i 4055884.
+> Jeśli używasz programu Microsoft Dynamics 365 for Finance and Operations z lipcową aktualizacją, należy zainstalować poprawki KB 4054797 i 4055884.
 
 ## <a name="configure-the-microsoft-project-client-add-in"></a>Konfigurowanie dodatku klienta programu Microsoft Project
 Aby umożliwić integrację z klientem programu Microsoft Project, w aplikacji klienckiej Microsoft Project u użytkownika musi być zainstalowany dodatek usługi Microsoft Dynamics 365. W tym celu należy otworzyć **obszar roboczy Zarządzanie projektami**.

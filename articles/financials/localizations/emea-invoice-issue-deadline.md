@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad76f286d16b149affa110aef75874a52b66798f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 34dac634e09a8daa8a22b9f1efbc18ca44444e21
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -54,7 +54,7 @@ Za pomocą strony **Ustaw obliczanie dla terminu wystawienia faktury** ustaw reg
 Można także skonfigurować parametry kontroli daty, aby zapewnić, że faktury dla odbiorców i faktury korygujące za transakcje klientów są generowane w ciągu określonego okresu po dokonaniu dostawy. Można znaleźć te parametry w obszarze **Kontrola daty faktury** na stronie **Parametry rozrachunków z odbiorcami**.
 
 ## <a name="example"></a>Przykład
-Aby skonfigurować program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition do obliczania terminów wystawiania faktur na wysyłki wewnątrz UE na 15. dzień miesiąca po miesiącu, w którym dostawa została zrealizowana, utwórz kod interwału dat i regułę obliczania za pomocą następujących ustawień:
+Aby skonfigurować program Microsoft Dynamics 365 for Finance and Operations do obliczania terminów wystawiania faktur na wysyłki wewnątrz UE na 15. dzień miesiąca po miesiącu, w którym dostawa została zrealizowana, utwórz kod interwału dat i regułę obliczania za pomocą następujących ustawień:
 
 ### <a name="date-interval-code"></a>Kod zakresu dat
 

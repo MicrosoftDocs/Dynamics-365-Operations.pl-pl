@@ -19,10 +19,10 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 84d5f60cdce4cd667c408d17d9892d7079947f58
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fc7194e7f95a6a99587a6f7e8ab8a30957bbbd90
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/08/2018
 
 Ten temat zawiera ogólne informacje o kwestionariuszach oraz łącza do bardziej szczegółowych informacji. Kwestionariusz to zestaw pytań, które służą do gromadzenia informacji do różnych celów. Użytkownik może projektować, tworzyć, dystrybuować i wypełniać kwestionariusze, a następnie analizować wyniki. 
 
-Można dostosować kwestionariusz do określonych potrzeb użytkownika przy użyciu różnych funkcji, które są dostępne w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Kwestionariuszy można używać do:
+Można dostosować kwestionariusz do określonych potrzeb użytkownika przy użyciu różnych funkcji, które są dostępne w programie Microsoft Dynamics 365 for Finance and Operations. Kwestionariuszy można używać do:
 
 -   Testowania umiejętności zawodowych pracowników i kandydatów.
 -   Sprawdzania, czy kursanci przyswoili materiał szkolenia.

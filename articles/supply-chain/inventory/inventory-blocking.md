@@ -1,6 +1,6 @@
 ---
 title: "Blokowanie zapasów"
-description: "Ten artykuł zawiera omówienie mechanizmu blokowania zapasów, który jest częścią procesu kontroli jakości w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Używając blokowania, można zapobiec przetwarzaniu i zużywaniu zapasów."
+description: "Ten artykuł zawiera omówienie mechanizmu blokowania zapasów, który jest częścią procesu kontroli jakości w programie Microsoft Dynamics 365 for Finance and Operations. Używając blokowania, można zapobiec przetwarzaniu i zużywaniu zapasów."
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: eb8040531ec0c2b9c13fc927e5330772ad11ee1d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 0567cdad6f9f27097f534381655e5b468884bed8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera omówienie mechanizmu blokowania zapasów, który jest częścią procesu kontroli jakości w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Używając blokowania, można zapobiec przetwarzaniu i zużywaniu zapasów.
+Ten artykuł zawiera omówienie mechanizmu blokowania zapasów, który jest częścią procesu kontroli jakości w programie Microsoft Dynamics 365 for Finance and Operations. Używając blokowania, można zapobiec przetwarzaniu i zużywaniu zapasów.
 
 Pozycje magazynowe można blokować w następujący sposób:
 -   Ręcznie
@@ -64,7 +64,7 @@ Można określić, które stany zapasów powodują blokowanie, za pomocą parame
 <a name="see-also"></a>Informacje dodatkowe
 --------
 
-[Tworzenie i obsługa blokowania zapasów (przewodnik zadania)](tasks/create-maintain-inventory-blocking.md
+[Tworzenie i obsługa blokowania zapasów](tasks/create-maintain-inventory-blocking.md)
 
 [Procesy zarządzania jakością](quality-management-processes.md)
 

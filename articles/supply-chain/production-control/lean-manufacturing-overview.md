@@ -20,10 +20,10 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2964083ec6cb8792e3c67722c68b038939933cbc
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 99030966587a2784f61cecbfc7f9985f75f6d779
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.
+Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w programie Microsoft Dynamics 365 for Finance and Operations.
 
 Lean manufacturing oferuje narzędzia służące do modelowania produkcji oszczędnej. Te narzędzia obsługują i promują stosowanie następujących pojęć i działań:
 -   Tworzenie podstaw produkcji oszczędnej (lean manufacturing) przez modelowania procesów produkcji i logistyki jako przepływów produkcji.

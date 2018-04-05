@@ -1,6 +1,6 @@
 ---
 title: "Alokacja danych planowania budżetu"
-description: "W tym artykule opisano różne metody alokacji dostępne w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition oraz sposoby ich wykorzystywania."
+description: "W tym artykule opisano różne metody alokacji dostępne w programie Microsoft Dynamics 365 for Finance and Operations oraz sposoby ich wykorzystywania."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c12b46ea68edd3d58c5b9abbc20a6ee6948b44f2
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b5f262318b4defb941f1216d0bfe06961f62bad4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-W tym artykule opisano różne metody alokacji dostępne w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition oraz sposoby ich wykorzystywania.  
+W tym artykule opisano różne metody alokacji dostępne w programie Microsoft Dynamics 365 for Finance and Operations oraz sposoby ich wykorzystywania.  
 
 Dane planu budżetu można dystrybuować na wiele sposobów, by dokładnie odzwierciedlić przewidywane kwoty.
 

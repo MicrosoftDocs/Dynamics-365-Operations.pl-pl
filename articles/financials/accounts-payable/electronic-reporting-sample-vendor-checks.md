@@ -17,10 +17,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c9abea228cdaae84ca2b9aada9f36bbe79c1dc6b
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 6702ac241c41cc99d96bc46a515837235b3ae651
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -34,7 +34,7 @@ Modułu Raportowanie elektroniczne (ER) można używać do formatowania czeków 
 
 Należy zawsze przejść do biblioteki zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) i wyświetlić aktualną listę dostępnych plików, które mają typ składnika aktywów **Konfiguracja GER**. Następna sekcja — „Co trzeba skonfigurować?” — zawiera łącze do tematu, który wyjaśnia sposób tworzenia repozytorium usługi LCS na potrzeby przeglądania dostępnych konfiguracji i importowania wybranych konfiguracji.
 
-Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition zawiera przykładowy format, w którym czek jest na górze, a pod spodem znajdują się dwie sekcje przekazu. Jest również przykładowy formularz, w którym czek znajduje się na środku, między dwoma sekcjami przekazu. Te przykładowe formaty odpowiadają formatowi czeków firmowych Deluxe.
+Program Microsoft Dynamics 365 for Finance and Operations zawiera przykładowy format, w którym czek jest na górze, a pod spodem znajdują się dwie sekcje przekazu. Jest również przykładowy formularz, w którym czek znajduje się na środku, między dwoma sekcjami przekazu. Te przykładowe formaty odpowiadają formatowi czeków firmowych Deluxe.
 
 ## <a name="what-do-i-have-to-set-up"></a>Co trzeba skonfigurować?
 

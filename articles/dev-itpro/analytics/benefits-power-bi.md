@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 2c8570984e44499d8cc5d45ab38da43f461c61e9
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 532834b377cfb8eda4902c387a850314302b22d8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ W tym temacie opisano pakiet zawartość **Świadczenia** dostępny dla usługi 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 Pakiet zawartości usługi Power BI zatytułowany **Świadczenia** jest wyświetlany w obszarze roboczym **Zarządzanie świadczeniami**, jeśli używasz jednego z następujących produktów:
 
-- Microsoft Dynamics 365 for Finance and Operations Enterprise Edition
+- Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI

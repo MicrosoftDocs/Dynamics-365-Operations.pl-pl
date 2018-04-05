@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0069246a60f1db6297df45fa57cd52d90cdb4ab5
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 89a13ad5a1d3cb7f93a469d33530ec99b39160da
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 Sposoby i terminy rozliczania transakcji mogą być złożonymi zagadnieniami, dlatego trzeba dokładnie poznać i poprawnie zdefiniować parametry zgodnie z potrzebami firmy. W tym artykule opisano parametry używane do rozliczeń w modułach dla Rozrachunki z odbiorcami i Rozrachunki z dostawcami. 
 
-Następujące parametry mają wpływ na sposób przetwarzania rozliczeń w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Rozliczenie to proces rozliczania faktury względem płatności lub faktury korygującej. Parametry te znajdują się w obszarze **Rozliczenia** na stronach **Parametry modułu rozrachunków z odbiorcami** i **Parametry modułu rozrachunków z dostawcami**.
+Następujące parametry mają wpływ na sposób przetwarzania rozliczeń w programie Microsoft Dynamics 365 for Finance and Operations. Rozliczenie to proces rozliczania faktury względem płatności lub faktury korygującej. Parametry te znajdują się w obszarze **Rozliczenia** na stronach **Parametry modułu rozrachunków z odbiorcami** i **Parametry modułu rozrachunków z dostawcami**.
 
 -   **Automatyczne rozliczanie** — ustaw tę opcję jako **Tak** , jeśli transakcja ma zostać rozliczona automatycznie dla innych otwartych transakcji podczas księgowania. Jeśli ta opcja jest ustawiona jako **Nie**, użytkownicy mogą ręcznie rozliczać transakcji podczas wprowadzania płatności lub później, przy użyciu strony **Rozlicz transakcje**.
 -   **Zarządzanie rabatami gotówkowymi** — Określ, jak [rabat gotówkowy jest obsługiwany, jeśli faktura jest nadpłacona](cash-discount-handling-overpayments.md). Dla nadpłaty można zmniejszyć rabat gotówkowy, potraktować ją jako różnicę lub potraktować ją jako akonto dla odbiorcy lub dostawcy.

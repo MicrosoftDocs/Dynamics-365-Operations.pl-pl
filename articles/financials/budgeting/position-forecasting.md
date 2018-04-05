@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fa11f1775017dd9bada61340b4bed70ea66a4137
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -96,7 +96,7 @@ Składnik kosztu typu dochodowego, który jest zaznaczony w grupie wynagrodzeń,
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Tworzenie stanowisk podlegających prognozie dla istniejących stanowisk
 
-W celu uzyskania jak najdokładniejszego planu budżetu można utworzyć stanowiska prognozy za pomocą szczegółów z istniejących stanowisk w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, bez względu na to, czy stanowisko w danej chwili zajęte, czy wolne. 
+W celu uzyskania jak najdokładniejszego planu budżetu można utworzyć stanowiska prognozy za pomocą szczegółów z istniejących stanowisk w programie Microsoft Dynamics 365 for Finance and Operations, bez względu na to, czy stanowisko w danej chwili zajęte, czy wolne. 
 
 Funkcja **Dodaj istniejące stanowiska** pokazuje wszystkie pozycje dla organizacji. Wybierając datę **Na dzień**, można zmienić listę stanowisk w taki sposób, aby zawierała stanowiska, które istniały na dzień w przeszłości lub, co zdarza się częściej, w przyszłości (np. na początku następnego cyklu budżetowego). Wybierz proces planowania budżetu i scenariusz planu budżetu, wybierz stanowiska na liście, a następnie kliknij **OK**, aby utworzyć stanowisk podlegające prognozie dla wybranych stanowisk. Pamiętaj, że możesz utworzyć tylko jedno stanowiska podlegające prognozie dla każdego istniejącego stanowiska w procesie planowania budżetu i scenariuszu. Można jednak utworzyć dodatkowe wersje, przypisują różne scenariusze planu budżetu. 
 

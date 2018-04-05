@@ -20,10 +20,10 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d933910faa726ea279a3371f6c8a3eca9bc9dfee
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1b6086f7769086a9cdbb61c03882ea21d908ab4a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -56,7 +56,7 @@ Uzupełnienie zapasów popytu jest obsługiwane w przypadku zamówień sprzedaż
 ## <a name="minmax-replenishment"></a>Uzupełnianie według minimalnej/maksymalnej ilości
 W uzupełnianiu według minimalnej/maksymalnej ilości zapasy są uzupełniane w taki sposób, aby znajdowały się między ustawioną minimalną i maksymalną wartością graniczną. Zazwyczaj ten proces występuje raz każdego dnia, aby pomóc zagwarantować, że wszystkie lokalizacje pobrania są wypełnione do maksymalnego poziomu przed rozpoczęciem pobierania. 
 
-Minimalne i maksymalne kwoty są ustawiane w szablonie uzupełniania zapasów. Wiele innych ustawień w szablonie przypomina ustawienia w szablonach używanych do uzupełniania popytu grupy czynności. Ten szablon powinien zawierać jeden wiersz dla każdego towaru i lokalizacji. Po uruchomieniu uzupełniania zapasów przy użyciu zadania wsadowego rozwiązanie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition ocenia, czy uzupełnianie zapasów jest wymagane, używając kolejności ułożenia wierszy. 
+Minimalne i maksymalne kwoty są ustawiane w szablonie uzupełniania zapasów. Wiele innych ustawień w szablonie przypomina ustawienia w szablonach używanych do uzupełniania popytu grupy czynności. Ten szablon powinien zawierać jeden wiersz dla każdego towaru i lokalizacji. Po uruchomieniu uzupełniania zapasów przy użyciu zadania wsadowego rozwiązanie Microsoft Dynamics 365 for Finance and Operations ocenia, czy uzupełnianie zapasów jest wymagane, używając kolejności ułożenia wierszy. 
 
 Należy zwrócić uwagę, strategia uzupełniania według ilości minimalnej/maksymalnej nie może uzupełniać pustej lokalizacji, chyba że lokalizacja jest ustawiona jako stała lokalizacja dla towaru. Jeśli lokalizacja przeznaczona do uzupełniania nie jest stałą lokalizacją, system nie może ustalić, który towar powinien zostać uzupełniony. W związku z tym przed rozpoczęciem uzupełniania musi istnieć co najmniej pewna ilość dostępna.
 

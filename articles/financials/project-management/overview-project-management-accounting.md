@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: 6a2c51d9ffe288dad2db43ecd0a4c8f717c6379a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3c4720795313180ba7ad784ea39484d6ffb9ac2f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ Projekt to grupa działań mających na celu dostarczenie usługi, wytworzenie p
 ## <a name="projects-across-industries"></a>Projekty różnych branż
 Funkcje zarządzania projektami i księgowania można wykorzystywać w różnych branżach, jak pokazano na poniższej ilustracji. [![Projekty w różnych branżach](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-W biurze obsługi można użyć biletu do opisania zestawu działań wymaganych do rozwiązania zgłoszonego problemu. Firmy konsultingowe, takie jak organizacje zarządzające, reklamowe lub świadczące usługi w zakresie porad technicznych, nazywają swoje działania projektami. W marketingu kampania oznacza pakiet pracy, która musi zostać dostarczona. W produkcji na podstawie projektu, zlecenie produkcyjne dotyczy różnych prac, które muszą być wykonane w celu wyprodukowania gotowego towaru. Niezależnie od nazwy tych projektów, obejmują one zasoby, harmonogramy i koszty, a funkcje zarządzania projektem i księgowania w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition pomagają w planowaniu, wykonaniu i analizie tych projektów.
+W biurze obsługi można użyć biletu do opisania zestawu działań wymaganych do rozwiązania zgłoszonego problemu. Firmy konsultingowe, takie jak organizacje zarządzające, reklamowe lub świadczące usługi w zakresie porad technicznych, nazywają swoje działania projektami. W marketingu kampania oznacza pakiet pracy, która musi zostać dostarczona. W produkcji na podstawie projektu, zlecenie produkcyjne dotyczy różnych prac, które muszą być wykonane w celu wyprodukowania gotowego towaru. Niezależnie od nazwy tych projektów, obejmują one zasoby, harmonogramy i koszty, a funkcje zarządzania projektem i księgowania w programie Microsoft Dynamics 365 for Finance and Operations pomagają w planowaniu, wykonaniu i analizie tych projektów.
 
 ## <a name="project-phases"></a>Fazy projektu
 Mimo że przebieg poniższego procesu jest ukierunkowany na projekty zewnętrzne lub projekty realizowane dla jednego lub kilku odbiorców, funkcja ma także zastosowanie do wewnętrznych projektów dotyczących tylko kosztów. 

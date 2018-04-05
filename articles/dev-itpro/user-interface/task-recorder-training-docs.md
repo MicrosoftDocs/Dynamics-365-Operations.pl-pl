@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: ed3f8260cace494170bf1d4db80c3bcb9a1a086e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9550faec1bbbdc233631e149c09b8e4faf25f5ff
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -85,7 +85,7 @@ Tak wygląda adnotacja uwag w „dymku” w przewodniku po zadaniu.
 
 [![screen4](./media/screen4.png)](./media/screen4.png)
 
--   **Krok informacji**: Te adnotacje są tworzone za pomocą kliknięcia prawym przyciskiem myszy na formancie lub w dowolnym miejscu w formularzu &lt; **Rejestrator zadań** &lt; **Dodaj krok informacji. **Kroki informacji są wyświetlane jako ponumerowane kroki w punkcie, w którym zostały wstawione, nawet jeśli żadna akcja nie została zarejestrowana w interfejsie użytkownika. Można dodać krok informacji na poziomie formularza lub krok informacji skojarzony z formantem. Jeśli krok informacji jest skojarzony z formularzem, „dymek” przewodnika po zadaniu będzie wyświetlany gdzieś w formularzu, bez wskaźnika, podczas odtwarzania podręcznika po zadaniu. Kiedy krok informacji jest skojarzony z formantem, „dymek” podręcznika po zadaniu będzie wskazywał formant podczas podręcznika po zadaniu. W okienku Pomocy adnotacja informacji o kroku będzie wyświetlana jako ponumerowany krok z dowolnym wprowadzonym tekstem. Instrukcje etapowe pozwalają przygotować użytkownika do kolejnych kroków, opisują kroki, które muszą być wykonane poza programem Microsoft Dynamics 365 for Finance and Operations Enterprise Edition lub odwołują się do innych nagrań (jednak nie można utworzyć hiperłącza w adnotacji).
+-   **Krok informacji**: Te adnotacje są tworzone za pomocą kliknięcia prawym przyciskiem myszy na formancie lub w dowolnym miejscu w formularzu &lt; **Rejestrator zadań** &lt; **Dodaj krok informacji. **Kroki informacji są wyświetlane jako ponumerowane kroki w punkcie, w którym zostały wstawione, nawet jeśli żadna akcja nie została zarejestrowana w interfejsie użytkownika. Można dodać krok informacji na poziomie formularza lub krok informacji skojarzony z formantem. Jeśli krok informacji jest skojarzony z formularzem, „dymek” przewodnika po zadaniu będzie wyświetlany gdzieś w formularzu, bez wskaźnika, podczas odtwarzania podręcznika po zadaniu. Kiedy krok informacji jest skojarzony z formantem, „dymek” podręcznika po zadaniu będzie wskazywał formant podczas podręcznika po zadaniu. W okienku Pomocy adnotacja informacji o kroku będzie wyświetlana jako ponumerowany krok z dowolnym wprowadzonym tekstem. Instrukcje etapowe pozwalają przygotować użytkownika do kolejnych kroków, opisują kroki, które muszą być wykonane poza programem Microsoft Dynamics 365 for Finance and Operations lub odwołują się do innych nagrań (jednak nie można utworzyć hiperłącza w adnotacji).
 
 **Określenia, jak długie ma być nagranie**
 

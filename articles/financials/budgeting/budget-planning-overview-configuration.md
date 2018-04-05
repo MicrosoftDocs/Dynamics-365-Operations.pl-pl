@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d904a2fe9411da1fd1a4e5810f7dcea782f1c2f7
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ Ten artykuł zawiera wprowadzenie do koncepcji planowania budżetu oraz informac
 
 Planowanie budżetu to proces przygotowywania budżetów, które zostaną zaimplementowane przez organizację. Organizacja może konfigurować planowanie budżetu, a następnie konfigurować procesy planowania budżetu, zgodnie z zasadami, procedurami i wymaganiami organizacji dotyczącymi przygotowania budżetu. 
 
-Gdy znasz pojęcia i terminologię używaną w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, implementacja planowania budżetu w organizacji jest łatwiejsza.
+Gdy znasz pojęcia i terminologię używaną w programie Microsoft Dynamics 365 for Finance and Operations, implementacja planowania budżetu w organizacji jest łatwiejsza.
 
 ### <a name="key-terms"></a>Kluczowe terminy
 

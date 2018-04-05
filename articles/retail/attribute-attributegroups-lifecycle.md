@@ -19,10 +19,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 6fde46c35d5efbb72ad97628d7d5a3f9eeba7c8e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 53af4335146be6c163a6d84b60155e1a741c0be4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/13/2018
 
 [!include[banner](includes/banner.md)]
 
-*Atrybuty* umożliwiają dokładniejsze opisanie produktu i jego właściwości za pomocą pól zdefiniowanych przez użytkownika (takich jak **Rozmiar pamięci**, **Pojemność dysku twardego**, **Zgodność z normą Energy Star** i tak dalej). W programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition atrybuty można skojarzyć z różnymi jednostkami modułu Retail, takimi jak kategorie produktów i kanały sprzedaży detalicznej, oraz ustawić im wartości domyślne. Wtedy produkty dziedziczą atrybuty i wartości domyślne, gdy zostaną powiązane z kategoriami produktów lub kanałami sprzedaży detalicznej. Wartości domyślne można zastąpić na poziomie poszczególnych produktów, na poziomie kanału sprzedaży detalicznej lub w katalogu sieci sprzedaży.
+*Atrybuty* umożliwiają dokładniejsze opisanie produktu i jego właściwości za pomocą pól zdefiniowanych przez użytkownika (takich jak **Rozmiar pamięci**, **Pojemność dysku twardego**, **Zgodność z normą Energy Star** i tak dalej). W programie Microsoft Dynamics 365 for Finance and Operations atrybuty można skojarzyć z różnymi jednostkami modułu Retail, takimi jak kategorie produktów i kanały sprzedaży detalicznej, oraz ustawić im wartości domyślne. Wtedy produkty dziedziczą atrybuty i wartości domyślne, gdy zostaną powiązane z kategoriami produktów lub kanałami sprzedaży detalicznej. Wartości domyślne można zastąpić na poziomie poszczególnych produktów, na poziomie kanału sprzedaży detalicznej lub w katalogu sieci sprzedaży.
  
 Na przykład typowy produkt w postaci telewizora może mieć następujące atrybuty.
 

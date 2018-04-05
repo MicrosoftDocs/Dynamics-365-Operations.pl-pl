@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1335d95c8bf02d5c571d37d78eca0ee7eae32bad
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3b6ded5e5accbbdba708c8b31119429e72bd58f5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -53,7 +53,7 @@ EPC, w której skład wchodzą europejskie banki, opracowuje ramy handlowe i tec
 Polecenie przelewu SEPA jest formą płatności realizowanej przez jedną firmę lub osobę na rzecz innej firmy lub osoby. Płatności muszą być w euro i muszą zawierać międzynarodowy numer konta bankowego (IBAN) oraz kod identyfikatora banku (BIC) dla obu stron. (Kod BIC jest również znany pod nazwą Society for Worldwide Interbank Financial Telecommunications \[SWIFT\]). Ponadto koszty transakcji muszą być dzielone między stronami. Polecenia przelewów realizowane między stronami powinny używać plików XML zgodnych z normami przetwarzania płatności ISO 20022 oraz formatem XML według wytycznych EPC.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Jak jest implementowane polecenie przelewu?
-Format płatności polecenia przelewu dla krajów europejskich jest implementowany przy użyciu modułu Raportowanie elektroniczne (ER) i funkcji Metody płatności w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Kilka formatów polecenia przelewu stosowanych w innych regionach nadal wykorzystuje starszą architekturę przelewu płatności. Wśród wielu innych formatów jest dwanaście formatów plików polecenia przelewu ISO 20022, które nadal funkcjonują. Te formaty eksportu są zgodne z normą XML ISO 20022 dla płatności SEPA. Służą do generowania przelewów płatności w walutach innych niż euro w krajach/regionach, gdzie takie waluty są używane, oraz płatności w euro zgodnie z treścią wersji 8.2 Zestawu Zasad Systemu Polecenia Przelewu SEPA publikowanego przez EPC. Zanim będzie można zaimplementować polecenia przelewu, należy skontaktować się z bankiem, by uzyskać oprogramowanie, które jest wymagane do przekazywania plików bankowości elektronicznej. Oprogramowanie to służy to przesyłania plików XML zawierających polecenia zapłaty dla banku.
+Format płatności polecenia przelewu dla krajów europejskich jest implementowany przy użyciu modułu Raportowanie elektroniczne (ER) i funkcji Metody płatności w programie Microsoft Dynamics 365 for Finance and Operations. Kilka formatów polecenia przelewu stosowanych w innych regionach nadal wykorzystuje starszą architekturę przelewu płatności. Wśród wielu innych formatów jest dwanaście formatów plików polecenia przelewu ISO 20022, które nadal funkcjonują. Te formaty eksportu są zgodne z normą XML ISO 20022 dla płatności SEPA. Służą do generowania przelewów płatności w walutach innych niż euro w krajach/regionach, gdzie takie waluty są używane, oraz płatności w euro zgodnie z treścią wersji 8.2 Zestawu Zasad Systemu Polecenia Przelewu SEPA publikowanego przez EPC. Zanim będzie można zaimplementować polecenia przelewu, należy skontaktować się z bankiem, by uzyskać oprogramowanie, które jest wymagane do przekazywania plików bankowości elektronicznej. Oprogramowanie to służy to przesyłania plików XML zawierających polecenia zapłaty dla banku.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported-in-finance-and-operations"></a>Które formaty polecenia przelewu są aktualnie obsługiwane w programie Finance and Operations?
 Należy zawsze przejść do biblioteki zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) i wyświetlić najbardziej aktualną listę dostępnych plików, które mają typ składnika aktywów **Konfiguracja GER**. Następna sekcja — „Co trzeba skonfigurować?” — zawiera łącze do tematu, który wyjaśnia sposób tworzenia repozytorium usługi LCS na potrzeby przeglądania dostępnych konfiguracji i importowania wybranych konfiguracji.

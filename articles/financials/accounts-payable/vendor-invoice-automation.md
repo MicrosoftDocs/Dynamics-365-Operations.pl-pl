@@ -17,10 +17,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 34dc8d762db4a4802e52188ebda298db234ee376
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 551f3d5fc52fac725fcc9fedc37dc1c85fac5a26
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="vendor-invoice-automation"></a>Automatyzacja obsługi faktur od dostawców
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/05/2018
 
 W tym temacie opisano dostępne funkcje kompleksowej automatyzacji obsługi faktur od dostawców, w tym nawet faktur zawierających załączniki.
 
-Organizacje, które chcą usprawnić swoje procesy rozrachunków z dostawcami (AP), często wskazują na przetwarzanie faktur jako na jeden z głównych obszarów przetwarzania, który powinien być bardziej efektywny. W wielu przypadkach takie organizacje przekazują przetwarzanie papierowych faktur zewnętrznym dostawcom usług optycznego rozpoznawania znaków (OCR). Następnie otrzymują metadane faktur nadające się do odczytu maszynowego razem z zeskanowanego obrazem każdej faktury. Aby pomóc w automatyzacji, jest następnie budowane rozwiązanie „ostatniej mili”, które umożliwia wykorzystywanie tych artefaktów w systemie fakturowania. Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition teraz umożliwia tę automatyzację „ostatniej mili” w standardzie, za pomocą rozwiązania do automatyzacji obsługi faktur.
+Organizacje, które chcą usprawnić swoje procesy rozrachunków z dostawcami (AP), często wskazują na przetwarzanie faktur jako na jeden z głównych obszarów przetwarzania, który powinien być bardziej efektywny. W wielu przypadkach takie organizacje przekazują przetwarzanie papierowych faktur zewnętrznym dostawcom usług optycznego rozpoznawania znaków (OCR). Następnie otrzymują metadane faktur nadające się do odczytu maszynowego razem z zeskanowanego obrazem każdej faktury. Aby pomóc w automatyzacji, jest następnie budowane rozwiązanie „ostatniej mili”, które umożliwia wykorzystywanie tych artefaktów w systemie fakturowania. Program Microsoft Dynamics 365 for Finance and Operations teraz umożliwia tę automatyzację „ostatniej mili” w standardzie, za pomocą rozwiązania do automatyzacji obsługi faktur.
 
 ## <a name="solution-context"></a>Kontekst rozwiązania
 

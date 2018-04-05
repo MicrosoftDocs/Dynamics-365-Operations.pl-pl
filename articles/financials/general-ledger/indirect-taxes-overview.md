@@ -19,10 +19,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1eb30ccbaa51bf794c7b3ea2be3fe749fb8ff88d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 02d28aef2316d7cfe5ad4eb45272dc1a22c96789
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -74,7 +74,7 @@ Dla każdej transakcji (wierszy dokumentu sprzedaży/zakupu, arkuszy itd) należ
 Dla każdej transakcji można wyszukać obliczony podatek, otwierając stronę **transakcji podatku**. Można wyszukać podatek dla wiersza dokumentu lub całego dokumentu. W przypadku niektórych dokumentów (na przykład faktury od dostawcy i arkuszy finansowych) można skorygować podatek, jeśli oryginalny dokument wskazuje rozbieżne kwoty.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Rozliczanie i raportowanie podatku
-Podatek należy zgłosić i zapłacić w urzędzie skarbowym w ustalonych interwałach (miesięcznie, kwartalnie itd.). Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition zawiera funkcje, które pozwalają rozliczać konto podatku za okres, a następnie ustawić saldo jako przeciwstawne na koncie rozliczania podatku, jak określono w grupach księgowania w księdze. Dostęp do tej funkcji można uzyskać na stronie **Rozlicz i zaksięguj podatek**. Należy określić okres rozliczania podatku, dla którego ma być rozliczony podatek. 
+Podatek należy zgłosić i zapłacić w urzędzie skarbowym w ustalonych interwałach (miesięcznie, kwartalnie itd.). Program Microsoft Dynamics 365 for Finance and Operations zawiera funkcje, które pozwalają rozliczać konto podatku za okres, a następnie ustawić saldo jako przeciwstawne na koncie rozliczania podatku, jak określono w grupach księgowania w księdze. Dostęp do tej funkcji można uzyskać na stronie **Rozlicz i zaksięguj podatek**. Należy określić okres rozliczania podatku, dla którego ma być rozliczony podatek. 
 
 Po zapłaceniu podatku saldo na koncie rozliczania podatku należy skorygować względem konta bankowego. Jeśli urząd skarbowy wskazany dla okresu rozliczania podatku jest związany z kontem dostawcy, saldo podatku jest księgowane jako otwarta faktura od dostawcy i może być uwzględnione w normalnej propozycji płatności.
 

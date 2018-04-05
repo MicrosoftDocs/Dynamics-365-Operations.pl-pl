@@ -18,25 +18,25 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 0d551818c8d352af96f6e64613cfbbc4aec5bf5b
-ms.openlocfilehash: e35769e45b1017eef2ee5a5b6c2baa35ae13d90c
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fa43f6683d43dfb62e8dc2c194ff2b82fe629fe3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="on-premises-deployment-home-page"></a>Strona główna wdrożenia lokalnego
 
 [!include[banner](../includes/banner.md)]
 
-Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition można wdrożyć lokalnie. Po wybraniu typu wdrożenia lokalnego wymagania systemowe, zapotrzebowanie na sprzęt i funkcje różnią się w stosunku do wdrożenia w chmurze. Ten temat zawiera łącza do zasobów z informacjami specyficznymi dla wdrożeń lokalnych.
+Rozwiązanie Microsoft Dynamics 365 for Finance and Operations można wdrożyć lokalnie. Po wybraniu typu wdrożenia lokalnego wymagania systemowe, zapotrzebowanie na sprzęt i funkcje różnią się w stosunku do wdrożenia w chmurze. Ten temat zawiera łącza do zasobów z informacjami specyficznymi dla wdrożeń lokalnych.
 
 ## <a name="get-started"></a>Rozpoczynanie pracy
 - [Nowości i zmiany w lokalnych wdrożeniach systemu Dynamics 365 for Finance and Operations Enterprise Edition 7.2 z aktualizacją platformy 12 (marzec 2018)](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md)
-- [Omówienie rozwiązania Dynamics 365 for Finance and Operations, Enterprise Edition (lokalnego)](on-premises-overview.md)
+- [Omówienie rozwiązania Dynamics 365 for Finance and Operations (lokalnego)](on-premises-overview.md)
 - [Planowanie wdrożenia lokalnego](plan-onprem-deployment.md)
 - [Wymagania systemowe dotyczące wdrożeń lokalnych](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Szacowanie zapotrzebowania na sprzęt dla środowisk lokalnych](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Zakup rozwiązania Dynamics 365 for Finance and Operations, Enterprise Edition (lokalnego)](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [Zakup rozwiązania Dynamics 365 for Finance and Operations (lokalnego)](../../fin-and-ops/get-started/purchase-on-premises.md)
 - [Porównanie funkcji w chmurze i lokalnych](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Wprowadzenie do pracy
@@ -58,7 +58,7 @@ Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition mo�
 - [Ponowne wdrażanie wdrożenia lokalnego](redeploy-on-prem.md)
 
 ## <a name="other-resources"></a>Inne zasoby
-- [Rozwiązywanie problemów z lokalnym rozwiązaniem Dynamics 365 for Finance and Operations Enterprise Edition](troubleshoot-on-prem.md)
+- [Rozwiązywanie problemów z lokalnym rozwiązaniem Dynamics 365 for Finance and Operations](troubleshoot-on-prem.md)
 - [Funkcje niezaimplementowane we wdrożeniach lokalnych](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Przestarzałe funkcje](../migration-upgrade/deprecated-features.md)
 - [Zasady cyklu pomocy technicznej oprogramowania i lista wersji](../migration-upgrade/versions-update-policy.md)

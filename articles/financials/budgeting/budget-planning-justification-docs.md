@@ -19,10 +19,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b033f6197e61a6030e12081a9e4f1d820bac458f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ Menedżera budżetu tworzy szablon planu budżetu w programie Microsoft Word i p
 
 1.  Po zalogowaniu w dodatku pakietu Office dla usługi Microsoft Dynamics kliknij opcję **Projekt**.
 2.  Dla informacji nagłówka użyj przycisku **Dodaj pola**.
-3.  Zaznacz źródło danych jednostki BudgetPlanJustification, a następnie kliknij przycisk **Dalej**. **Uwaga:** Ta jednostka jest wymagana dla każdego dokumentu uzasadnienia. Mogą być używane również inne jednostki , ale w razie braku tej jednostki przekazywanie z powrotem do usługi Microsoft Dynamics 365 for Finance and Operations Enterprise Edition zakończy się niepowodzeniem.
+3.  Zaznacz źródło danych jednostki BudgetPlanJustification, a następnie kliknij przycisk **Dalej**. **Uwaga:** Ta jednostka jest wymagana dla każdego dokumentu uzasadnienia. Mogą być używane również inne jednostki , ale w razie braku tej jednostki przekazywanie z powrotem do usługi Microsoft Dynamics 365 for Finance and Operations zakończy się niepowodzeniem.
 4.  W dokumencie programu Word dodaj etykiety i wartości BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter i DocumentNumber. **Uwaga:** W razie potrzeby można użyć własnych spersonalizowanych etykiet zamiast standardowych etykiet.
 5.  Kliknij przycisk **Gotowe**, aby zakończyć konfigurowanie sekcji nagłówka.
 6.  Dla szczegółów kwot planu budżetu na poziomie wiersza kliknij opcję **Dodaj tabelę**.

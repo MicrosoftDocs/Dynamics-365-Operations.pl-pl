@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e444168f249e798fa68b9b082556aa8e5e7d8113
-ms.openlocfilehash: 0e1c5120bf8558b955b66e059a8be8bbec2c2ce1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/13/2018
 
 [!include[banner](../includes/banner.md)]
 
-Aby tworzyć zadania importu i eksportu w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition i zarządzać nimi, należy korzystać z obszaru roboczego **Zarządzanie danymi**. Domyślne proces importowania i eksportowania danych tworzy tabelę przemieszczania dla każdej jednostki w docelowej bazie danych. Tabele tymczasowe umożliwiają sprawdzenie, czyszczenie lub konwersję danych przed ich przeniesieniem.
+Aby tworzyć zadania importu i eksportu w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations i zarządzać nimi, należy korzystać z obszaru roboczego **Zarządzanie danymi**. Domyślne proces importowania i eksportowania danych tworzy tabelę przemieszczania dla każdej jednostki w docelowej bazie danych. Tabele tymczasowe umożliwiają sprawdzenie, czyszczenie lub konwersję danych przed ich przeniesieniem.
 
 > [!NOTE]
 > W tym temacie założono, że znasz koncepcję [jednostek danych](data-entities.md).
@@ -66,7 +66,7 @@ Do zadania importu lub eksportu można dodać określone jednostki lub wybrać s
 ### <a name="set-the-data-format-for-the-job"></a>Ustawianie formatu danych zadania
 Podczas wybieranie jednostki należy wybrać format eksportowanych lub importowanych danych. Formaty można określić, używając kafelka **Ustawienia źródeł danych**. Wiele organizacji najpierw korzysta z formatów zawartych domyślnie w demonstracyjnym zestawie danych. Oto listy niektórych z tych formatów:
 
-- AX (przeznaczony dla danych, które muszą być importowane lub eksportowane w tym samym formacie, jaki jest używany w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition)
+- AX (przeznaczony dla danych, które muszą być importowane lub eksportowane w tym samym formacie, jaki jest używany w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations)
 - ColonSeparated
 - Plik CSV
 - Excel

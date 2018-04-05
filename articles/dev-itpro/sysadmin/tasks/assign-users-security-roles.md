@@ -1,6 +1,6 @@
 --- 
 title: "Przypisywanie użytkowników do ról zabezpieczeń"
-description: "Aby mieć dostęp do programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, użytkownicy muszą być przypisani do ról zabezpieczeń."
+description: "Aby mieć dostęp do programu Microsoft Dynamics 365 for Finance and Operations, użytkownicy muszą być przypisani do ról zabezpieczeń."
 author: maertenm
 manager: AnnBe
 ms.date: 06/07/2016
@@ -16,17 +16,17 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 551048af26f46d334c562d1968963aed262a5e03
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: da96ec8357ea209fd958e32ab438b13e668735df
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="assign-users-to-security-roles"></a>Przypisywanie użytkowników do ról zabezpieczeń
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Aby mieć dostęp do programu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, użytkownicy muszą być przypisani do ról zabezpieczeń. W tej procedurze pokazano, jak administratorzy systemu mogą przypisywać użytkowników do ról automatycznie, na podstawie danych biznesowych. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
+Aby mieć dostęp do programu Microsoft Dynamics 365 for Finance and Operations, użytkownicy muszą być przypisani do ról zabezpieczeń. W tej procedurze pokazano, jak administratorzy systemu mogą przypisywać użytkowników do ról automatycznie, na podstawie danych biznesowych. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 
 
 ## <a name="automatically-assign-users-to-roles"></a>Automatyczne przypisywanie użytkowników do ról

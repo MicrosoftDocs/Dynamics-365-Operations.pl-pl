@@ -1,6 +1,6 @@
 ---
 title: "Współpraca dostawców z odbiorcami"
-description: "W tym temacie opisano używanie portalu współpracy z dostawcami w programie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition do pracy z zamówieniami zakupu i monitorowania zapasów konsygnacyjnych."
+description: "W tym temacie opisano używanie portalu współpracy z dostawcami w programie Microsoft Dynamics 365 for Finance and Operations do pracy z zamówieniami zakupu i monitorowania zapasów konsygnacyjnych."
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 7646b2e01ea1f9cdca58b9971c3dea21b99525e2
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 4252112272e2f86c2c18dc399a713bf652e4228e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/14/2017
 
 [!include[banner](../includes/banner.md)]
 
-W tym temacie opisano używanie portalu współpracy z dostawcami do zarządzania współpracą z odbiorcami w programie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Dostawcy mogą ukończyć szereg procesów biznesowych z następujących obszarów roboczych:
+W tym temacie opisano używanie portalu współpracy z dostawcami do zarządzania współpracą z odbiorcami w programie Microsoft Dynamics 365 for Finance and Operations. Dostawcy mogą ukończyć szereg procesów biznesowych z następujących obszarów roboczych:
 
 - **Potwierdzenie zamówienia zakupu** — monitorowanie i odpowiadanie na zamówienia zakupu.
 - **Składanie ofert przez dostawców** — wyświetlanie zapytań ofertowych (ZO) i odpowiadanie na nie przez wprowadzanie ofert.

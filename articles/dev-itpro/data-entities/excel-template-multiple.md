@@ -1,6 +1,6 @@
 ---
 title: "Importowanie danych z szablonów jednostek danych programu Excel z wieloma arkuszami"
-description: "W tym temacie opisano, jak przeprowadzić import danych przy użyciu szablonów jednostek danych programu Excel do programu Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
+description: "W tym temacie opisano, jak przeprowadzić import danych przy użyciu szablonów jednostek danych programu Excel do programu Microsoft Dynamics 365 for Finance and Operations."
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: b314a649829dd14a525923802e19b847dc5a115e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2aefea9373df20bd3e99026e30aed096dcea9814
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/27/2018
 
 [!include[banner](../includes/banner.md)]
 
-Moduł Zarządzanie danymi w programie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition obsługuje oparte na programie Microsoft Excel szablony jednostek danych. Szablony te mogą zawierać jeden lub więcej arkuszy. Szablony z wieloma arkuszami są często używane, gdy wygodne jest zarządzanie danymi w jednym pliku i importowanie go do wielu jednostek danych. Przykładem mogą być oddziały i magazyny.
+Moduł Zarządzanie danymi w programie Microsoft Dynamics 365 for Finance and Operations obsługuje oparte na programie Microsoft Excel szablony jednostek danych. Szablony te mogą zawierać jeden lub więcej arkuszy. Szablony z wieloma arkuszami są często używane, gdy wygodne jest zarządzanie danymi w jednym pliku i importowanie go do wielu jednostek danych. Przykładem mogą być oddziały i magazyny.
 
 ## <a name="upload-a-file-once-and-map-it-to-all-entities"></a>Przekazanie pliku raz i mapowanie go do wszystkich jednostek
 Przeanalizujmy przykład, w którym występuje jeden plik programu Excel z arkuszami o nazwie **Oddziały** i **Magazyny**. Aby skonfigurować projekt importu danych, należy dodać pierwszą jednostkę danych, **Oddziały**, a następnie przekazać plik. Będzie można wybrać arkusz **Oddziały** do użycia dla tej jednostki.

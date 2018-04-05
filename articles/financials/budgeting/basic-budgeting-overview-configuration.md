@@ -1,6 +1,6 @@
 ---
 title: "Przegląd budżetu"
-description: "Prawie każda firma, która używa funkcji finansowych w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations Enterprise Edition lub ich wczytywania z innych programów."
+description: "Prawie każda firma, która używa funkcji finansowych w programie Microsoft Dynamics 365 for Finance and Operations, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations lub ich wczytywania z innych programów."
 author: twheeloc
 manager: AnnBe
 ms.date: 01/11/2018
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8e8b3a7e801e98929c4ba1b9fefe341abd91dbd4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1d768ee6d2244a237972f7183f27a60b93eea819
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Prawie każda firma, która używa funkcji finansowych w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations lub ich wczytywania z innych programów.
+Prawie każda firma, która używa funkcji finansowych w programie Microsoft Dynamics 365 for Finance and Operations, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations lub ich wczytywania z innych programów.
 
 <a name="overview"></a>Przegląd
 --------
@@ -54,7 +54,7 @@ Następnie, jeśli są zasady kierujące zatwierdzaniem wpisów do rejestru bud�
 
 Na stronie **wymiary budżetowania** należy wybrać wymiary finansowe, które są będą używane do budżetowania, na podstawie wymiarów wykorzystywanych w planie kont. Można wybrać wszystkie wymiary finansowe lub ich podzbiór dla budżetowania.
 
-Należy określić „model budżetu” odnoszący się do wszystkich lub tylko wybranych budżetów. Można używać jednego modelu budżetu dla wszystkich wpisów do rejestru budżetu. Można również utworzyć oddzielne modele, które są oparte na typie budżetu, lokalizacji geograficznej lub innym sposobie klasyfikacji budżetu. 
+Należy określić *model budżetu* odnoszący się do wszystkich lub tylko wybranych budżetów. Można używać jednego modelu budżetu dla wszystkich wpisów do rejestru budżetu. Można również utworzyć oddzielne modele, które są oparte na typie budżetu, lokalizacji geograficznej lub innym sposobie klasyfikacji budżetu. 
 
 > [!NOTE] 
 > W przypadku korzystania z kontroli budżetu można powiązać tylko jeden model budżetu z jednym okresem cyklu budżetu. 

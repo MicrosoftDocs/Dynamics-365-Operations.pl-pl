@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: db9e66a67f20ca24de3a020c1871cdda0cf2f9be
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: cfc68c1d0810cbc296b35c09176dde2c948a50d0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>Uaktualnianie formatu przez adaptację nowej wersji podstawowej na potrzeby raportowania elektronicznego (ER)
@@ -107,7 +107,7 @@ Firma Proseware, Inc. otrzymała wersję 1.1 konfiguracji BACS (fikcyjnej brytyj
     * Należy zauważyć, że utworzona konfiguracja została zapisana jako ukończona wersja 1.1.1. Oznacza to, że jest to wersja 1 niestandardowego formatu BACS (niestandardowego fikcyjnego brytyjskiego), która bazuje na wersji 1 formatu BACS (fikcyjnego brytyjskiego), który z kolei jest oparty na wersji 1 modelu danych Płatności (modelu uproszczonego).  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>Testowanie niestandardowego formatu generowania plików płatności
-W równoległej sesji programu Dynamics 365 for Finance and Operations Enterprise Edition wykonaj procedurę „Używanie utworzonego formatu do generowania elektronicznych dokumentów płatności”. W parametrach metody płatności elektronicznych wybierz format BACS (niestandardowy fikcyjny brytyjski). Upewnij się, że utworzony plik płatności zawiera ostatnio wprowadzony węzeł XML przedstawiający kod IBAN zgodnie wymogami regionalnymi.  
+W równoległej sesji programu Dynamics 365 for Finance and Operations wykonaj procedurę „Używanie utworzonego formatu do generowania elektronicznych dokumentów płatności”. W parametrach metody płatności elektronicznych wybierz format BACS (niestandardowy fikcyjny brytyjski). Upewnij się, że utworzony plik płatności zawiera ostatnio wprowadzony węzeł XML przedstawiający kod IBAN zgodnie wymogami regionalnymi.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Aktualizowanie istniejącej konfiguracji specyficznej dla kraju
 Firma Litware, Inc. musi zaktualizować konfigurację BACS (niestandardową fikcyjną brytyjską) i dostosować ją do nowych wymagań krajowych dotyczących zarządzania formatem dokumentów elektronicznych. Później zmiany te zostaną zawarte w nowej wersji tej konfiguracji, który będzie oferowana subskrybentom usług, w tym firmie Proseware, Inc.  
@@ -203,6 +203,6 @@ Firma Proseware, Inc. została poinformowana, że nowa wersja 1.2 konfiguracji B
     * Należy zauważyć, że utworzona konfiguracji została zapisana jako ukończona wersja 1.2.2: wersja 2 bazowego formatu BACS (niestandardowego fikcyjnego brytyjskiego), która bazuje na wersji 2 formatu BACS (fikcyjnego brytyjskiego), który z kolei jest oparty na wersji 1 modelu danych Płatności (modelu uproszczonego).  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Testowanie niestandardowego formatu generowania plików płatności
-W równoległej sesji programu Dynamics 365 for Finance and Operations Enterprise Edition wykonaj procedurę „Używanie utworzonego formatu do generowania elektronicznych dokumentów płatności”. W parametrach metody płatności elektronicznych wybierz utworzony format „BACS (niestandardowy fikcyjny brytyjski)”. Upewnij się, że utworzony plik płatności zawiera ostatnio wprowadzony przez firmę Proseware, Inc. węzeł XML przedstawiający kod konta IBAN zgodnie wymogami regionalnymi. Plik powinien również zawierać ostatnio wprowadzony przez firmę Litware, Inc. węzeł XML przedstawiający kod banku SWIFT zgodnie wymogami krajowymi.  
+W równoległej sesji programu Dynamics 365 for Finance and Operations wykonaj procedurę „Używanie utworzonego formatu do generowania elektronicznych dokumentów płatności”. W parametrach metody płatności elektronicznych wybierz utworzony format „BACS (niestandardowy fikcyjny brytyjski)”. Upewnij się, że utworzony plik płatności zawiera ostatnio wprowadzony przez firmę Proseware, Inc. węzeł XML przedstawiający kod konta IBAN zgodnie wymogami regionalnymi. Plik powinien również zawierać ostatnio wprowadzony przez firmę Litware, Inc. węzeł XML przedstawiający kod banku SWIFT zgodnie wymogami krajowymi.  
 
 

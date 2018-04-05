@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: ef108fb7be65b91c531db750018f00f7fdd67da1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -58,7 +58,7 @@ Produkt jest definiowany głównie przez numer produktu, nazwę i opis. Są jedn
 
 ## <a name="distribution-export-and-import-of-product-data"></a>Rozpowszechnianie, eksportowanie i importowanie danych produktów
 
-Definicję produktu można utworzyć w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Można ją także importować z systemów zarządzanie cyklem życia produktów (PLM), zarządzania danymi produktów (PDM) lub zarządzania informacjami o produktach (PIM). Jeśli jest używane więcej niż jedno wystąpienie programu Finance and Operations, jedno wystąpienie zwykle służy jako wzorzec danych produktów dla wszystkich pozostałych wystąpień. To podejście jest wspierane przez duży zbiór jednostek danych, które umożliwiają eksportowanie i importowanie danych definicji produktów z jednego wystąpienia do drugiego.
+Definicję produktu można utworzyć w programie Microsoft Dynamics 365 for Finance and Operations. Można ją także importować z systemów zarządzanie cyklem życia produktów (PLM), zarządzania danymi produktów (PDM) lub zarządzania informacjami o produktach (PIM). Jeśli jest używane więcej niż jedno wystąpienie programu Finance and Operations, jedno wystąpienie zwykle służy jako wzorzec danych produktów dla wszystkich pozostałych wystąpień. To podejście jest wspierane przez duży zbiór jednostek danych, które umożliwiają eksportowanie i importowanie danych definicji produktów z jednego wystąpienia do drugiego.
 
 Aby umożliwić rozprowadzanie danych produktów do wielu wystąpień, program Finance and Operations umożliwia korzystanie z usługi danych wspólnych Common Data Service. Definicje produktów można wyeksportować z wystąpienia programu Finance and Operations do usługi Common Data Service. Definicje produktów mogą następnie służyć do dostarczania danych produktów innym aplikacjom biznesowym, takim jak Microsoft Dynamics 365 for Sales.
 
