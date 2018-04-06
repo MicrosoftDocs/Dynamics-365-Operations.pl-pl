@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 818572a8d1f790aaa7c6e4befc1d2222a1c35c50
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 882b8f21be94b8cbb0c162c965ffc129b47d7edf
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -132,7 +132,7 @@ Twoja firma, czyli firma A, sprzedaje gadżety innej firmie w twojej organizacji
 Wszystkie te transakcje tworzą transakcje międzyfirmowe, księgowane na kontach zobowiązań i należności. Ponadto w tych transakcjach mogą być uwzględniane kwoty podwyżek i obniżek, gdy kwota sprzedaży międzyfirmowej nie jest równa kosztowi sprzedanych towarów.
 
 ## <a name="set-up-elimination-rules"></a>Konfigurowanie reguł eliminacji
-Podczas konfigurowania reguł eliminacji w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition zalecamy utworzenie wymiaru finansowego specjalnie do celów eliminacji. Większość klientów nazywa ten wymiar Partner handlowy lub podobnie. Jeśli postanowisz nie używać wymiaru finansowego, to upewnij się, że masz konta główne przeznaczone tylko do transakcji międzyfirmowych. 
+Podczas konfigurowania reguł eliminacji w programie Microsoft Dynamics 365 for Finance and Operations zalecamy utworzenie wymiaru finansowego specjalnie do celów eliminacji. Większość klientów nazywa ten wymiar Partner handlowy lub podobnie. Jeśli postanowisz nie używać wymiaru finansowego, to upewnij się, że masz konta główne przeznaczone tylko do transakcji międzyfirmowych. 
 
 Ta konfiguracja eliminacji znajduje się w obszarze Ustawienia w module Konsolidacje. Po wprowadzeniu opisu reguły trzeba wybrać firmę, w której arkusza eliminacji będzie księgowany. Powinna to być firma, która ma wybraną opcję **Użyj na potrzeby procesu eliminacji finansowej** w ustawieniach firmy. 
 

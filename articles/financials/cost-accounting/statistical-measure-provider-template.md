@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2c0a00b6a1956f1f22a50951308c434c3f0eefc4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: baefad4efd51661c236459493b7f02747593bbab
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -73,7 +73,7 @@ Oto kilka przykładów typowych elementów członkowskich wymiaru statystycznego
 
 ## <a name="statistical-measure-provider-template"></a>Szablon dostawcy miar statystycznych
 
-Miary statystyczne mogą pochodzić z wielu rodzajów źródeł. Program Microsoft Dynamics 365 for Finance and Operations Enterprise Edition jest świetnym źródłem, z którego można wyodrębniać miary statystyczne. Szablon dostawcy miar statystycznych pozwala w prosty sposób skonfigurować miary statystyczne, które mają zostać wyodrębniane.
+Miary statystyczne mogą pochodzić z wielu rodzajów źródeł. Program Microsoft Dynamics 365 for Finance and Operations jest świetnym źródłem, z którego można wyodrębniać miary statystyczne. Szablon dostawcy miar statystycznych pozwala w prosty sposób skonfigurować miary statystyczne, które mają zostać wyodrębniane.
 
 Definicja szablonu dostawcy miar statystycznych jest standardowa i może być wykorzystywana w wielu różnych elementach członkowskich wymiaru statystycznego.
 
@@ -132,13 +132,13 @@ Zanim będzie można pobrać miary statystyczne do modułu Rachunek kosztów, na
 > [!NOTE]
 > W tym przykładzie zostanie utworzona relacja tylko wersji **Wersja rzeczywista**.
 
-Przejdź do okna **Księga rachunku kosztów** \> **Wersja rzeczywista** \> **Zarządzaj** \> **Miary statystyczne** i ustanów relację. W tym scenariuszu zaznacz łącznik danych **Dynamics 365 for Finance and Operations Enterprise Edition — Miary statystyczne**, ponieważ chcemy wyodrębnić dane z programu Finance and Operations.
+Przejdź do okna **Księga rachunku kosztów** \> **Wersja rzeczywista** \> **Zarządzaj** \> **Miary statystyczne** i ustanów relację. W tym scenariuszu zaznacz łącznik danych **Dynamics 365 for Finance and Operations — Miary statystyczne**, ponieważ chcemy wyodrębnić dane z programu Finance and Operations.
 
 **Źródło danych**
 
 | Nazwisko        | Łącznik danych                                                                     | Element członkowski wymiaru statystycznego |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| Pracownicy pełnoetatowi D365FO | Dynamics 365 for Finance and Operations Enterprise Edition — Miary statystyczne | Pracownicy pełnoetatowi                         |
+| Pracownicy pełnoetatowi D365FO | Dynamics 365 for Finance and Operations — Miary statystyczne | Pracownicy pełnoetatowi                         |
 
 **Konfiguracja dostawcy danych**
 
@@ -220,13 +220,13 @@ Zanim będzie można pobrać miary statystyczne do modułu Rachunek kosztów, na
 > [!NOTE]
 > W tym przykładzie zostanie utworzona relacja tylko wersji **Wersja rzeczywista**.
 
-Przejdź do okna **Księga rachunku kosztów** \> **Wersja rzeczywista** \> **Zarządzaj** \> **Miary statystyczne** i ustanów relację. W tym scenariuszu zaznacz łącznik danych **Dynamics 365 for Finance and Operations Enterprise Edition — Miary statystyczne**, ponieważ chcemy wyodrębnić dane z programu Finance and Operations.
+Przejdź do okna **Księga rachunku kosztów** \> **Wersja rzeczywista** \> **Zarządzaj** \> **Miary statystyczne** i ustanów relację. W tym scenariuszu zaznacz łącznik danych **Dynamics 365 for Finance and Operations — Miary statystyczne**, ponieważ chcemy wyodrębnić dane z programu Finance and Operations.
 
 **Źródło danych**
 
 | Nazwisko           | Łącznik danych                                                                     | Element członkowski wymiaru statystycznego |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Pack CC D365FO | Dynamics 365 for Finance and Operations Enterprise Edition — Miary statystyczne | Pack CC                      |
+| Pack CC D365FO | Dynamics 365 for Finance and Operations — Miary statystyczne | Pack CC                      |
 
 System rozpoznaje, że ProdRouteTrans jest tabelą, w której każdy rekord należy do osobnej firmy. W związku z tym zobaczysz monit o wybór firmy, z której powinny zostać zaimportowane transakcje.
 

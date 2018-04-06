@@ -1,6 +1,6 @@
 ---
 title: "Skróty klawiaturowe"
-description: "Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamics 365 for Finance and Operations, Enterprise Edition."
+description: "Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamics 365 for Finance and Operations."
 author: jasongre
 manager: AnnBe
 ms.date: 12/12/2017
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/14/2017
 [!include[banner](../includes/banner.md)]
 
 
-Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamics 365 for Finance and Operations, Enterprise Edition. 
+Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamics 365 for Finance and Operations. 
 
 **Uwaga:** skróty klawiaturowe opisane w tym miejscu odnoszą się do amerykańskiego układu klawiatury. Klawisze w innych układach mogą nie odpowiadać dokładnie klawiszom na klawiaturze w układzie amerykańskim.
 
@@ -119,7 +119,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Przejdź do następnej/poprzedniej skróconej karty                   | Alt+Shift+strzałka w dół / Alt+Shift+strzałka w górę    |
 | Przejdź do skróconej karty nr &lt;n&gt;                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
 | Przejdź do następnego/poprzedniego bloku (karty pionowej)      | Alt+Shift+strzałka w prawo / Alt+Shift+strzałka w lewo |
-| Przejdź do &lt;n&gt; bloku (karty pionowej)        | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Przejdź do &lt;n&gt;-ego bloku (karty pionowej)        | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Rozwiń skróconą kartę (z wyróżnieniem na nagłówku skróconej karty) | Spacja lub Enter                               |
 | Zwiń bieżącą skróconą kartę                        | Alt+0                                        |
 | Przełącz na widok siatki                                 | Ctrl+Shift+G                                 |

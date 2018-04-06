@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 957acdbbc6bba83b8b2e2b83fdf266524385141d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -40,7 +40,7 @@ Podstawą alokacji służy do mierzenia i kwantyfikowania działań, takich jak 
 
 **Rachunek kosztów**
 
-Moduł Rachunek kosztów pozwala zbierać dane z różnych źródeł, takich jak księga główna, księgi podrzędne, budżety i zasoby informacji statystycznych. Następnie można analizować, sumować i oceniać dane kosztów, dzięki czemu kierownictwo może podejmować najlepsze decyzje w kwestii aktualizacji cen, budżetów, kontroli kosztów i tak dalej. Dane źródłowe używane do analizy kosztów są traktowane niezależnie w rachunku kosztów. Dlatego aktualizacje w rachunku kosztów nie mają wpływu na dane źródłowe. Jednak podczas zbierania danych o kosztach z różnych źródeł, a zwłaszcza w przypadku importowania kont głównych z księgi głównej w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition jako składników kosztów, istnieje redundancja danych, ponieważ te same dane znajduje się w księdze głównej i module Rachunek kosztów. Ta nadmiarowość jest wymagana, ponieważ zarządzanie finansowe jest używane do sprawozdawczości zewnętrznej, a rachunek kosztów do sprawozdawczości wewnętrznej.
+Moduł Rachunek kosztów pozwala zbierać dane z różnych źródeł, takich jak księga główna, księgi podrzędne, budżety i zasoby informacji statystycznych. Następnie można analizować, sumować i oceniać dane kosztów, dzięki czemu kierownictwo może podejmować najlepsze decyzje w kwestii aktualizacji cen, budżetów, kontroli kosztów i tak dalej. Dane źródłowe używane do analizy kosztów są traktowane niezależnie w rachunku kosztów. Dlatego aktualizacje w rachunku kosztów nie mają wpływu na dane źródłowe. Jednak podczas zbierania danych o kosztach z różnych źródeł, a zwłaszcza w przypadku importowania kont głównych z księgi głównej w programie Microsoft Dynamics 365 for Finance and Operations jako składników kosztów, istnieje redundancja danych, ponieważ te same dane znajduje się w księdze głównej i module Rachunek kosztów. Ta nadmiarowość jest wymagana, ponieważ zarządzanie finansowe jest używane do sprawozdawczości zewnętrznej, a rachunek kosztów do sprawozdawczości wewnętrznej.
 
 **Księga rachunku kosztów**
 
@@ -120,7 +120,7 @@ Istnieją dwie hierarchie wymiarów: hierarchia kategoryzacji i hierarchia klasy
 Rachunek kosztów obsługuje integrację danych z systemów źródłowych za pomocą zestawu łączników danych. Dostępne są następujące łączniki danych:
 
 -  Zaimportowane transakcje (wstępnie skonfigurowane)
--  Dynamics 365 for Finance and Operations, Enterprise Edition (wstępnie skonfigurowane)
+-  Dynamics 365 for Finance and Operations (wstępnie skonfigurowane)
 -  Dynamics AX (wymagana konfiguracja)
 
 **Uwaga:** Łącznik danych Zaimportowane transakcje jest oparty na jednostkach danych.
@@ -129,7 +129,7 @@ Rachunek kosztów obsługuje integrację danych z systemów źródłowych za pom
 
 Większość systemów źródłowych może udostępnić dane zgodne z co najmniej jednym źródłem danych w rachunku kosztów. Aby dopasować dane z systemów źródłowych do źródła danych w rachunku kosztów, należy skonfigurować dostawcę danych. Poniższa tabel zawiera listę dostępności dostawców danych według łącznika danych i źródła danych.
 
-|  **Źródła danych** |  **Łącznik danych zaimportowanych transakcji** | **Łącznik danych rozwiązania Dynamics 365 for Finance and Operations Enterprise Edition**  | **Łącznik danych Dynamics AX**  |
+|  **Źródła danych** |  **Łącznik danych zaimportowanych transakcji** | **Łącznik danych rozwiązania Dynamics 365 for Finance and Operations**  | **Łącznik danych Dynamics AX**  |
 |---|---|---|---|
 | Elementy członkowskie wymiaru składnika kosztu  |  Tak | Tak  | Tak  |
 |  Elementy członkowskie wymiaru obiektu kosztów |  Tak | Tak  | Tak  |

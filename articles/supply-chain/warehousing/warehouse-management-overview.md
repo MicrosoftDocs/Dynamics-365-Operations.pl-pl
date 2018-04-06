@@ -17,17 +17,17 @@ ms.author: bis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 43167cc36398d3f7f8d639187f67fad1bae8082f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fc039b3c35c9ff8f40bf671e523104031c598171
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="warehouse-management"></a>Zarządzanie magazynem
 
 [!include[banner](../includes/banner.md)]
 
-Moduł Zarządzanie magazynem dla rozwiązania Dynamics 365 for Finance and Operations, Enterprise Edition umożliwia zarządzanie procesami magazynowymi w firmach produkcyjnych, dystrybucyjnych i sprzedaży detalicznej. Ten moduł oferuje różnorodne funkcje w celu obsługi magazynu na optymalnym poziomie w dowolnej chwili. Zarządzanie magazynem jest w pełni zintegrowane z innymi procesami biznesowymi w rozwiązaniu Finance and Operations, takimi jak transport, produkcja, kontrola jakości, zakupy, przenoszenie, sprzedaż i zwroty.
+Moduł Zarządzanie magazynem dla rozwiązania Dynamics 365 for Finance and Operations umożliwia zarządzanie procesami magazynowymi w firmach produkcyjnych, dystrybucyjnych i sprzedaży detalicznej. Ten moduł oferuje różnorodne funkcje w celu obsługi magazynu na optymalnym poziomie w dowolnej chwili. Zarządzanie magazynem jest w pełni zintegrowane z innymi procesami biznesowymi w rozwiązaniu Finance and Operations, takimi jak transport, produkcja, kontrola jakości, zakupy, przenoszenie, sprzedaż i zwroty.
 
 ## <a name="get-started"></a>Rozpoczynanie pracy
 Aby rozpocząć pracę z modułem Zarządzanie magazynem należy dokończyć konfigurację ogólnych parametrów magazynu w celu obsługi procesów biznesowych dowolnej firmy.

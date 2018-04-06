@@ -1,6 +1,6 @@
 --- 
 title: "Mapowanie modelu danych na wybrane źródła danych na potrzeby raportowania elektronicznego (ER)"
-description: "W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może mapować model danych raportowania elektronicznego (ER) na wybrane źródła danych programu Dynamics 365 for Finance and Operations Enterprise Edition."
+description: "W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może mapować model danych raportowania elektronicznego (ER) na wybrane źródła danych programu Dynamics 365 for Finance and Operations Enterprise Edition (listopad 2016)."
 author: NickSelin
 manager: AnnBe
 ms.date: 01/16/2017
@@ -16,17 +16,17 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 96974d7c1597db4ac31168be40cecbc7e12d6edd
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 13b7fe7f7bfe24bd275428e931993aa46ecb9945
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="map-a-data-model-to-selected-data-sources-for-electronic-reporting-er"></a>Mapowanie modelu danych na wybrane źródła danych na potrzeby raportowania elektronicznego (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może mapować model danych raportowania elektronicznego (ER) na wybrane źródła danych programu Dynamics 365 for Finance and Operations Enterprise Edition. To mapowanie modelu będzie później używane jako źródło danych w konfiguracji formatu używanej do zarządzania dokumentami płatności elektronicznych. W tym przykładzie zmapujesz model danych przykładowej firmy Litware, Inc. na źródła danych. W celu wykonania tych kroków należy najpierw wykonać procedurę „Wybór źródeł danych do mapowania modelu”.
+W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może mapować model danych raportowania elektronicznego (ER) na wybrane źródła danych programu Dynamics 365 for Finance and Operations. To mapowanie modelu będzie później używane jako źródło danych w konfiguracji formatu używanej do zarządzania dokumentami płatności elektronicznych. W tym przykładzie zmapujesz model danych przykładowej firmy Litware, Inc. na źródła danych. W celu wykonania tych kroków należy najpierw wykonać procedurę „Wybór źródeł danych do mapowania modelu”.
 
 
 ## <a name="open-er-configurations-tree"></a>Otwórz drzewo konfiguracje raportowania w przedsiębiorstwie.

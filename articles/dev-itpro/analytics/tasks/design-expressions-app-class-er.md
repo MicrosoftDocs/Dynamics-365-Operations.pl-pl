@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: b0a1dba5afbd7beba45149340f637223f6ecedcf
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 631fa7bae808856efb8b95700fd2a85e6d5f8725
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="design-expressions-to-call-application-class-methods-er"></a>Projektowanie wyrażeń do wywoływania metod klas aplikacji (ER)
@@ -34,7 +34,7 @@ Aby wykonać te kroki, należy najpierw wykonać kroki zawarte w procedurze „E
 
 1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.
     * Sprawdź, czy dostawca konfiguracji przykładowej firmy Litware, Inc. jest dostępny i oznaczony jako aktywny. Jeśli ten dostawca konfiguracji nie jest widoczny, należy najpierw wykonać procedurę „Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”.   
-    * Załóżmy, że chcemy zaprojektować proces przetwarzania przychodzących wyciągów bankowych w celu aktualizacji danych aplikacji. Przychodzące wyciągi bankowe będą plikami w formacie TXT zawierającymi kody IBAN. W ramach przetwarzania zaimportowanych wyciągów bankowych należy sprawdzić poprawność tych kodów IBAN za pomocą logiki dostępnej w aplikacji Dynamics 365 for Finance and Operations Enterprise Edition.   
+    * Załóżmy, że chcemy zaprojektować proces przetwarzania przychodzących wyciągów bankowych w celu aktualizacji danych aplikacji. Przychodzące wyciągi bankowe będą plikami w formacie TXT zawierającymi kody IBAN. W ramach przetwarzania zaimportowanych wyciągów bankowych należy sprawdzić poprawność tych kodów IBAN za pomocą logiki dostępnej w aplikacji Dynamics 365 for Finance and Operations.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Importowanie nowej konfiguracji modelu ER
 1. Na liście znajdź i zaznacz odpowiedni rekord.

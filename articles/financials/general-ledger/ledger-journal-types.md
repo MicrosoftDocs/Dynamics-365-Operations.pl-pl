@@ -1,6 +1,6 @@
 ---
 title: "Typy arkuszy księgi"
-description: "W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona **Nazwy arkuszy** służy do konfigurowania arkuszy, których można używać w całym programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition."
+description: "W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona **Nazwy arkuszy** służy do konfigurowania arkuszy, których można używać w całym programie Microsoft Dynamics 365 for Finance and Operations."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: ccd1b9056f8c18de1b2ef706f70f53bac6cc43a1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9f8fc40f199b83a9e0cb36ce905163c3ed547057
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 01/19/2018
 [!include[banner](../includes/banner.md)]
 
 
-W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona **Nazwy arkuszy** służy do konfigurowania arkuszy, których można używać w całym programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition.
+W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona **Nazwy arkuszy** służy do konfigurowania arkuszy, których można używać w całym programie Microsoft Dynamics 365 for Finance and Operations.
 
 | Typ arkusza                      | Cel                       | Ta strona służy do wprowadzania transakcji                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|

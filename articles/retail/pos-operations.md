@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 82c2fab72923cfec135e207dfe194fda7d16e8e9
+ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
+ms.openlocfilehash: d8cf283321b81c377498cd449b098f8fac1fe01f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 
@@ -41,6 +41,8 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 - **Siatka przycisków** — operacje można przypisać do przycisków na siatce przycisków punktu sprzedaży, która jest częścią układu ekranu punktu sprzedaży.
 - **Ekran transakcji** — operację można wywołać z siatki przycisków punktu sprzedaży skonfigurowanych na ekranie transakcji punktu sprzedaży.
 - **Ekran powitalny** — operację można wywołać z siatki przycisków punktu sprzedaży skonfigurowanych na ekranie powitalnym punktu sprzedaży.
+
+Uwaga: Operacje wymienione poniżej mają zastosowanie do najnowszej wersji programu Dynamics 365 for Retail. Niektóre operacje mogły ulec zmianie lub są niedostępne w poprzednich wersjach.
 
 | Identyfikator | Operacja | opis | Siatka przycisków | Ekran transakcyjny | Ekran powitalny | Dostępne w trybie offline | Specyficzne dla ustawień regionalnych |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -105,6 +107,7 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 703 | Blokowanie rejestru | Zablokuj bieżącą kasę, aby nie można było jej użyć, ale nie wylogowuj bieżącego użytkownika. | Nr | Nr | Nr | Tak | Nr |
 | 701 | Wyloguj się | Wyloguj bieżącego użytkownika z kasy. | Tak | Tak | Tak | Tak | Nr |
 | 521 | Saldo punktów na karcie lojalnościowej | Pokaż saldo punktów dla określonej karty lojalnościowej. | Tak | Tak | Nr | Nr | Nr |
+| 918 | Zarządzaj zmianami | Wyświetlanie listy zmian aktywnych, zawieszonych i z ukryciem raportu. | Tak | Tak | Tak | Nr | Nr |
 | 914 | Zminimalizuj okno punktu sprzedaży | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nr |
 | 1000 | Otwieranie szuflady | Wykonaj operację „brak sprzedaży” i otwórz aktualnie wybraną szufladę kasy. | Tak | Tak | Tak | Tak | Nr |
 | 928 | Realizacja zamówienia | Ta operacja umożliwia użytkownikom pobranie, spakowanie, wysłanie lub odwołanie zamówień pobranych przez sklep. | Tak | Tak | Tak | Nr | Nr |
@@ -162,7 +165,6 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 638 | Ustaw przedstawiciela handlowego w wierszu | Ta operacja umożliwia użytkownikowi wybranie jednej z uprawnionych grup prowizji sprzedaży (przedstawiciele handlowi) dla aktualnie wybranego wiersza. | Tak | Tak | Nr | Tak | Nr |
 | 630 | Wyślij wszystkie produkty | Ustaw tryb dostawy na **Wysyłka** dla wszystkich pozycji w wierszu. | Tak | Tak | Nr | Tak\* | Nr |
 | 629 | Wyślij zaznaczone produkty | Ustaw tryb dostawy na **Wysyłka** dla wybranych wierszy. | Tak | Tak | Nr | Tak\* | Nr |
-| 918 | Pokaż zmiany z ukryciem raportu | Pokaż listę zmian z ukryciem raportu. | Tak | Tak | Tak | Nr | Nr |
 | 115 | Pokaż arkusz | Pokaż arkusz sklepu. Można wyświetlić transakcje, ponownie wydrukować paragony i paragony za upominek i wycofać do zwrotu. | Tak | Tak | Tak | Tak\*\* | Nr |
 | 802 | Inwentaryzacja | Ta operacja umożliwia użytkownikowi utworzenie lub zmodyfikowania arkuszy inwentaryzacji dla magazynu fizycznego lub liczby cykli. | Tak | Tak | Tak | Nr | Nr |
 | 401 | Menu podrzędne | Ta operacja umożliwia wyświetlenie innej połączonej siatki przycisków. | Tak | Tak | Tak | Tak | Nr |

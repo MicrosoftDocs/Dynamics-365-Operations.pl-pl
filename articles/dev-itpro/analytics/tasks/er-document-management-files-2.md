@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: f3d494cc83b273eef071b23d0948b283ba85c17e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: ebbd442c9f69290dc995c05462ca70b554f7d9f2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="extend-data-model-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a>Rozszerzanie modelu danych w celu używania plików zarządzania dokumentami w danych wyjściowych formatu na potrzeby raportowania elektronicznego (ER)
@@ -57,7 +57,7 @@ Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 fo
 17. W polu Typ elementu wybierz opcję „Ciąg”.
 18. Kliknij przycisk Dodaj.
 
-## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-enterprise-edition-data-sources"></a>Mapowanie elementów nowego modelu danych na źródła danych programu Dynamics 365 for Finance and Operations Enterprise Edition
+## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-data-sources"></a>Mapowanie elementów nowego modelu danych na źródła danych programu Dynamics 365 for Finance and Operations
 1. Kliknij opcję Mapuj model na źródło danych.
 2. Użyj szybkiego filtru, aby wyfiltrować pole Definicja według wartości „InvoiceCustomer”.
     * InvoiceCustomer  

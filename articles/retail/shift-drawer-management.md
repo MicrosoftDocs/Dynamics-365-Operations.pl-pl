@@ -3,7 +3,7 @@ title: "Zarządzanie zmianami i szufladami kasowymi"
 description: "W tym artykule wyjaśniono, jak skonfigurować i używać dwóch typów zmian w punkcie sprzedaży detalicznej (POS) — wspólnych i autonomicznych. Zmiany wspólne mogą być wykorzystywane przez wielu użytkowników w wielu miejscach, podczas gdy zmiany autonomiczne mogą być używane tylko przez jednego pracownika na raz."
 author: rubencdelgado
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,10 +20,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b8e12f3f4c2f8f5a596c8994f2a4571d8a907062
+ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
+ms.openlocfilehash: c1483d3240d266845cea7789b70c038cb98fdfcc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/22/2018
 
 ---
 
@@ -99,7 +99,60 @@ Zmiany wspólne są wykorzystywane w środowisku, gdzie wielu kasjerów współu
 9.  Użyj operacji **Deklaracja metody płatności**, aby zadeklarować łączną kwotę gotówki ze wszystkich szuflad kasowych uwzględnionych we wspólnej zmianie.
 10. Użyj operacji **Zamknij zmianę**, aby zamknąć wspólną zmianę.
 
+## <a name="shift-operations"></a>Operacje na zmianach
+Można podejmować różne działania w celu zmiany stanu zmiany albo zwiększenia lub zmniejszenia kwoty pieniędzy w szufladzie kasowej. W sekcji poniżej omówiono te operacje na zmianach dostępne w aplikacjach Dynamics 365 for Retail Modern POS i Cloud POS.
 
+**Otwarta zmiana**
 
+Aplikacja POS wymaga, aby użytkownik chcący wykonywać operacje skutkujące transakcją finansową, takie jak sprzedaż, zwrot lub zamówienie odbiorcy, miał aktywną, otwartą zmianę.  
 
+Podczas logowania do aplikacji POS system najpierw sprawdza, czy użytkownik ma aktywną zmianę dostępną w bieżącej kasie. Jeśli nie, użytkownik może wybrać opcję otwarcia nowej zmiany, wznowienia istniejącej zmiany lub kontynuacji w celu zalogowania się w trybie „bez użycia szuflady”, w zależności od konfiguracji systemu i posiadanych uprawnień.
+
+**Zadeklaruj kwotę początkową**
+
+Ta operacja jest często pierwszym działaniem wykonywanym na nowo otwartej zmianie. Użytkownicy określają początkową kwotę pieniędzy w szufladzie na zmianie. Jest to ważne, ponieważ ta kwota będzie brana pod uwagę przy obliczaniu nadwyżki/niedoboru występującego podczas zamknięcia zmiany.
+
+**Przyjęcie do kasy**
+
+Przyjęcia do kasy są transakcjami niesprzedażowymi wykonywanymi podczas aktywnej zmiany, które zwiększają kwotę gotówki w szufladzie. Typowym przykładem przyjęcia do kasy byłoby wsypanie drobnych do szuflady, gdy zaczyna ich brakować.
+
+**Pobranie środków płatniczych**
+
+Pobrania środków płatniczych są transakcjami niesprzedażowymi wykonywanymi podczas aktywnej zmiany, które zmniejszają kwotę gotówki w szufladzie. Najczęściej stosuje się je w połączeniu z przyjęciem do kasy na innej zmianie. Na przykład w kasie 1 kończą się drobne, więc użytkownik kasy 2 wykonuje pobranie środków płatniczych zmniejszające kwotę w szufladzie. Następnie użytkownik kasy 1 wykonuje przyjęcie do kasy zwiększające dostępną kwotę.
+
+**Zawieszenie zmiany**
+
+Użytkownicy mogą zawieszać swoje aktywne zmiany, aby zwolnić bieżącą kasę dla innego użytkownika, lub przenosić swoje do innych kas (takie zachowanie jest często nazywane „obrotem kasowym”). 
+
+Zawieszenie zmiany uniemożliwia dokonywanie nowych transakcji i modyfikacji na zmianie do czasu, aż zmiana zostanie wznowiona.
+
+**Wznów zmianę**
+
+Ta operacja pozwala użytkownikowi wznowić uprzednio zawieszoną zmianę na kasie, która nie ma jeszcze aktywnej zmiany.
+
+**Deklaracja środków płatniczych**
+
+Deklaracja środków płatniczych to działanie podejmowane przez użytkownika w celu określenia całkowitej kwoty znajdującej się obecnie w szufladzie, najczęściej przed zamknięciem zmiany. Ta wartość jest porównywana z oczekiwanymi wartościami na zmianie w celu obliczenia kwoty nadwyżki/niedoboru.
+
+**Przekazanie pieniędzy do sejfu**
+
+Przekazania pieniędzy do sejfu można wykonywać w dowolnych momentach na aktywnej zmianie. Ta operacja powoduje usunięcie pieniędzy z szuflady w celu ich przeniesienia w bezpieczniejsze miejsce, takie jak sejf na zapleczu. Łączna kwota zarejestrowana dla przekazań pieniędzy do kasy jest uwzględniana w sumach dla zmiany, ale nie musi być włączana do deklaracji środków płatniczych.
+
+**Przekazanie pieniędzy do banku**
+
+Podobnie jak przekazania pieniędzy do sejfu, przekazania pieniędzy do banku wykonuje się na aktywnych zmianach. Ta operacja powoduje usunięcie pieniędzy ze zmiany w celu ich przygotowania do wpłaty do banku.
+
+**Zmiana z ukryciem raportu podczas zamknięcia kasy**
+
+Zmiana z ukryciem raportu podczas zamknięcia kasy to zmiana, która nie jest już aktywna, ale jeszcze nie została całkowicie zamknięta. W odróżnieniu od zmian zawieszonych zmian z ukryciem raportu podczas zamknięcia kasy nie można wznowić, jednak różne procedury, takie jak deklarowanie kwoty początkowej i deklaracje środków płatniczych, można wykonywać w późniejszym czasie lub z innej kasy.
+
+Zmiany z ukryciem raportu podczas zamknięcia kasy są często używane w celu zwolnienia kasy dla nowego użytkownika lub zmiany bez konieczności uprzedniej pełnej inwentaryzacji, uzgadniania ani zamykania obecnej zmiany. 
+
+**Zamknięcie zmiany**
+
+Ta operacja obejmuje obliczenie sum dla zmiany i kwot nadwyżki/niedoboru, a następnie sfinalizowanie zmiany aktywnej lub zmiany z ukryciem raportu podczas zamknięcia kasy. Zamkniętych zmian nie można wznawiać ani modyfikować.  
+
+**Zarządzaj zmianami**
+
+Ta operacja pozwala użytkownikom wyświetlić wszystkie zmiany aktywne, zawieszone i zmiany z ukryciem raportu podczas zamknięcia kasy istniejące w sklepie. W zależności od posiadanych uprawnień użytkownicy mogą wykonywać końcowe procedury zamknięcia, takie jak deklaracje środków płatniczych, oraz zamykać zmiany z ukryciem raportu podczas zamknięcia kasy. Ta operacja pozwala również użytkownikom wyświetlać i usuwać nieprawidłowe zmiany w tych rzadkich przypadkach, gdzie zmiana pozostaje w błędnym stanie po przełączeniu między trybami offline i online. Te nieprawidłowe zmiany nie zawierają żadnych informacji finansowych ani danych transakcyjnych potrzebnych do uzgodnienia. 
 

@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 962b3084c5340813d1697cab680621350510d4b9
+ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
+ms.openlocfilehash: aaa8bdedc31ee03e96a0f7a5e78f25f888913e71
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -91,6 +91,6 @@ Zarządzanie zadaniami zlecenia odbywa się na stronie **Zadania zlecenia**. Na 
 ## <a name="areas-of-responsibility"></a>Zakres odpowiedzialności
 Zakresy odpowiedzialności pozwalają wskazać pełnione w ramach obowiązków służbowych, procesy i produkty, za które jest odpowiedzialny pracownik zajmujący stanowisko obejmujące to zadanie. Na przykład dla zadania o nazwie „Księgowy” jednym z zakresów odpowiedzialności może być „Raporty finansowe dla produktu A”. Zarządzanie zakresami odpowiedzialności odbywa się na stronie **Zakres odpowiedzialności**, do której można przejść za pomocą funkcji wyszukiwania. Na stronie **Zakres odpowiedzialności** wprowadź nazwę i opis zbioru obowiązków. W polu **Notatka** można opcjonalnie wprowadzić dodatkowe informacje. Notatki mogą być aktualizowane dla określonego zadania bez zmiany notatek wprowadzonych w tym miejscu.
 
-
-
+## <a name="steps-for-creating-a-job"></a>Etapy tworzenia zadania
+Zobacz temat [Definiowanie nowych zadań](../fin-and-ops/hr/tasks/define-new-jobs.md) zawierający procedurę krok po kroku dotyczącą tworzenia nowego zadania. 
 

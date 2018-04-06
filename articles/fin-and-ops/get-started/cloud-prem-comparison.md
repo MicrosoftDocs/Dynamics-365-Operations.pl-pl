@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 4ffdc5dd54f8a069676f62c8b43f2892764dc046
-ms.openlocfilehash: 88640007ec54ed0c566e163e3dd701faeebc50ce
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: cd267f6e5623bd83bfbd21a49a72dd216259167a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,8 +31,8 @@ ms.lasthandoff: 03/05/2018
 
 W tym temacie określono, czy dana funkcja jest dostępna w tych produktach:
 
-+ Dynamics 365 for Finance and Operations, Enterprise Edition (chmura)
-+ Dynamics 365 for Finance and Operations, Enterprise Edition (lokalnie)
++ Dynamics 365 for Finance and Operations (chmura)
++ Dynamics 365 for Finance and Operations (lokalne)
 
 W poniższej tabeli wymieniono zakresy produktów. Obsługa w chmurze i lokalnie jest wymieniona dla funkcji jako całości. W przypadku gdy określone funkcje różnią się od ogólnego obszaru, są wymienione w osobnym w wierszu w kolumnie funkcja.
 

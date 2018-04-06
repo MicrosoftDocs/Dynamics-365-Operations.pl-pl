@@ -1,6 +1,6 @@
 ---
 title: "Administrowanie organizacją — strona główna"
-description: "Ten temat zawiera informacje o zasobach, które ułatwią korzystanie z rozwiązania Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition w organizacji."
+description: "W tym temacie wymieniono zasoby, które pomogą korzystać z rozwiązania Microsoft Dynamics 365 for Finance and Operations w organizacji."
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f1cff2388b02ff6dfd52a39b7f3ea90f10807096
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Ten temat zawiera informacje o zawartości, która ułatwi zaawansowanym użytkownikom i administratorom skonfigurowanie rozwiązania Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Ta zawartość ułatwi im skonfigurowanie systemu w celu płynnej i efektywnej pracy w organizacji.
+Ten temat zawiera informacje o zawartości, która ułatwi zaawansowanym użytkownikom i administratorom skonfigurowanie rozwiązania Microsoft Dynamics 365 for Finance and Operations. Ta zawartość ułatwi im skonfigurowanie systemu w celu płynnej i efektywnej pracy w organizacji.
 
 Większość zawartości wymienionej tutaj dotyczy funkcji w module **Administracja organizacyjna**. Istnieje jednak kilka zadań, takich jak tworzenie i używanie szablonu rekordu, które mogą zostać wykonane w dowolnym module, aby ułatwić organizacji bardziej efektywne działanie. 
 

@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c858cc24cbba961024a67a2477d7271f64f9a0d4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c8e24234cfa54dcbbf3638c31ced7fb83881bb9f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -41,7 +41,7 @@ W scenariuszach produkcyjnych opartych na zleceniach produkcyjnych materiały s�
 
 Aby zminimalizować czasy realizacji dostaw i ryzyko wystąpienia nadwyżek zapasów między gniazdami produkcyjnymi, co następuje przy produkcji wsadowej, scenariusz produkcji oszczędnej wprowadza funkcje uzupełniania zapasów Kanban i supermarketów w obszarach produkcji i uzupełniania zapasów w magazynie. Zazwyczaj te funkcje zakłócają produkcję w częściowo niezależnych cyklach Kanban. Uzupełnianie zapasów Kanban dla półproduktów nie jest już inicjowane przez zamówienie na gotowy produkt. 
 
-Aby ponownie umożliwić kontekst produkcji i kosztów w różnych scenariuszach Kanban proponowanych w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition, wprowadzono przepływy produkcji oparte na działaniach jako podstawę dla produkcji oszczędnej. Wszystkie reguły Kanban odnoszą się do tej wstępnie zdefiniowanej struktury. Model oparty na działaniach umożliwia konfigurowanie bardziej różnorodnych scenariuszy niż poprzednie wersje modułu Lean manufacturing dla systemu Dynamics AX. Jednak nie zwiększa on poziomu komplikacji dla pracowników na produkcji, ponieważ wszystkie scenariusze używają tego samego interfejsu użytkownika opartego na działania.
+Aby ponownie umożliwić kontekst produkcji i kosztów w różnych scenariuszach Kanban proponowanych w programie Microsoft Dynamics 365 for Finance and Operations, wprowadzono przepływy produkcji oparte na działaniach jako podstawę dla produkcji oszczędnej. Wszystkie reguły Kanban odnoszą się do tej wstępnie zdefiniowanej struktury. Model oparty na działaniach umożliwia konfigurowanie bardziej różnorodnych scenariuszy niż poprzednie wersje modułu Lean manufacturing dla systemu Dynamics AX. Jednak nie zwiększa on poziomu komplikacji dla pracowników na produkcji, ponieważ wszystkie scenariusze używają tego samego interfejsu użytkownika opartego na działania.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Półprodukty (bez poziomów BOM)
 Moduł Lean Manufacturing dla systemu Microsoft Dynamics AX integruje w jednej strukturze karty Kanban dla produktów i półproduktów umieszczanych w zapasach, oferując w ten sposób ujednolicone środowisko obsługi we wszystkich przypadkach. Dzięki tej architekturze nie trzeba wprowadzać dodatkowych poziomów BOM w celu umożliwienia używania kart Kanban do półproduktów. Ta architektura pozwala także zminimalizować transakcje magazynowe.

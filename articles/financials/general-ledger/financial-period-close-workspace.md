@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6a03274da9b81bf71b32a62f4ebba2a374688ae5
-ms.openlocfilehash: 8b6c14d41cac13e7c1fb5a580759514d46d776ee
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b999fd3c26304b81f24389a83faf73e1658c39b3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -89,7 +89,7 @@ Za pomocą szablonu zamknięcia finansowego można zdefiniować wszystkie zadani
 
 Zadanie w szablonie można przypisać do jednego lub kilku firm, do których stosuje się to zadanie. Jeśli inna osoba jest przypisana do ukończenia tej pracy w każdej firmie, pomocne może być utworzenie wielu zadań dla tej samej pracy. Utwórz jedno zadanie dla każdej firmy. 
 
-Element menu **Łącze do zadania** jest skojarzone z nakładem pracy i pozwala przejść bezpośrednio do skojarzonej strony z łącza zadania w obszarze roboczym. Na przykład zadanie zamknięcia służące do realizacji procesu przeszacowania waluty w module Rozrachunki z dostawcami może być połączone ze stroną **Przeszacowanie w walucie obcej** w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Można również utworzyć łącze do zewnętrznego adresu URL. 
+Element menu **Łącze do zadania** jest skojarzone z nakładem pracy i pozwala przejść bezpośrednio do skojarzonej strony z łącza zadania w obszarze roboczym. Na przykład zadanie zamknięcia służące do realizacji procesu przeszacowania waluty w module Rozrachunki z dostawcami może być połączone ze stroną **Przeszacowanie w walucie obcej** w programie Microsoft Dynamics 365 for Finance and Operations. Można również utworzyć łącze do zewnętrznego adresu URL. 
 
 > [!TIP]
 > Aby utworzyć łącze pomiędzy raportem programu Management Reporter a zadaniem zamknięcia okresu obrachunkowego, można użyć adresu URL raportu. Aby uzyskać dostęp do adresu URL raportu, otwórz raport w projektancie raportów i kliknij kolejno opcje **Plik** &gt; **Wyświetl raport**, a raport zostanie otwarty w przeglądarce internetowej. Można następnie skopiować adres URL w pasku adresu przeglądarki i wkleić go w polu **URL** **łącza zadania**. 

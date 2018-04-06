@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 274a5e696bfde4f5e27bc186fadbab69f5fc655d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3e9f00fdc32feda0a62f71a92e503a677dce35cc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -35,7 +35,7 @@ Strona **Wymiary finansowe** umożliwia tworzenie wymiarów finansowych, które 
 
 Po utworzeniu wymiarów finansowych na stronie **Wartości wymiarów finansowych** przypisz dodatkowe właściwości do każdego wymiaru finansowego. 
 
-Wymiary finansowe mogą służyć do reprezentowania firm. Nie ma obowiązku tworzenia firm w programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition. Jednak wymiary finansowe nie są zaprojektowane do zaspokajania wymagań operacyjnych ani biznesowych firmy. Funkcję księgowania międzyjednostkowego w programie Finance and Operations zaprojektowano tylko z myślą o zapisach księgowych, które są tworzone przy każdej transakcji. 
+Wymiary finansowe mogą służyć do reprezentowania firm. Nie ma obowiązku tworzenia firm w programie Microsoft Dynamics 365 for Finance and Operations. Jednak wymiary finansowe nie są zaprojektowane do zaspokajania wymagań operacyjnych ani biznesowych firmy. Funkcję księgowania międzyjednostkowego w programie Finance and Operations zaprojektowano tylko z myślą o zapisach księgowych, które są tworzone przy każdej transakcji. 
 
 Przed skonfigurowaniem wymiarów finansowych jako firmy oceń swoje procesy biznesowe w następujących obszarach, aby ustalić, czy ta konfiguracja będzie działać w Twojej organizacji:
 
