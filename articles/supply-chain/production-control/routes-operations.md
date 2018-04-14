@@ -20,17 +20,16 @@ ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 4026fa937ddf88f006cdcd13a8eda10c326ada62
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 90a12b501b55bc6406ea13c2e643cd58f8128390
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="routes-and-operations"></a><span data-ttu-id="da2a1-103">Marszruty i operacje</span><span class="sxs-lookup"><span data-stu-id="da2a1-103">Routes and operations</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="da2a1-104">Ten temat zawiera informacje o marszrutach i operacjach.</span><span class="sxs-lookup"><span data-stu-id="da2a1-104">This topic provides information about routes and operations.</span></span> <span data-ttu-id="da2a1-105">Marszruta definiuje proces wytwarzania produktu lub wariantu produktu.</span><span class="sxs-lookup"><span data-stu-id="da2a1-105">A route defines the process for producing a product or product variant.</span></span> <span data-ttu-id="da2a1-106">Opisuje każdy krok (operację) w procesie produkcji oraz kolejność, w jakiej te kroki należy wykonać.</span><span class="sxs-lookup"><span data-stu-id="da2a1-106">It describes each step (operation) in the production process and the order that these steps must be performed in.</span></span> <span data-ttu-id="da2a1-107">Dla każdego kroku marszruta definiuje również wymagane zasoby operacyjne, wymagane czasy przezbrajania i wykonywania oraz sposób obliczania kosztów.</span><span class="sxs-lookup"><span data-stu-id="da2a1-107">For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.</span></span>
 

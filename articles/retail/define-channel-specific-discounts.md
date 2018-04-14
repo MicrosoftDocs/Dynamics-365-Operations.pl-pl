@@ -20,17 +20,16 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f68400bf10b6235decc7ac5cb82e58b369c7c0c7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 34039b298e8994e50a7c06ef034698e8c1264389
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="define-channel-specific-discounts"></a><span data-ttu-id="c43fa-104">Definiowanie rabatów właściwych dla kanału</span><span class="sxs-lookup"><span data-stu-id="c43fa-104">Define channel-specific discounts</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="c43fa-105">Sprzedawcy detaliczni często ustawiają różne rabaty w różnych kanałach.</span><span class="sxs-lookup"><span data-stu-id="c43fa-105">Retailers often set different discounts in different channels.</span></span> <span data-ttu-id="c43fa-106">W tym temacie opisano pojęcia, które należy znać, aby tworzyć rabaty dla konkretnych kanałów.</span><span class="sxs-lookup"><span data-stu-id="c43fa-106">This topic reviews the concepts you need to know to create a discount for a specific channel.</span></span> 
 
@@ -61,7 +60,7 @@ ms.lasthandoff: 11/03/2017
 4.  <span data-ttu-id="c43fa-133">Po utworzeniu nowego rabatu **Powrót-do-szkoły** musisz kliknąć **Grupy cenowe** na górze strony **Rabat**.</span><span class="sxs-lookup"><span data-stu-id="c43fa-133">After you create the new **Back-to-School** discount, you need to click **Price groups** on the top of the **Discount** page.</span></span> <span data-ttu-id="c43fa-134">Otworzy się strona **Grupy cenowe rabatów**.</span><span class="sxs-lookup"><span data-stu-id="c43fa-134">The **Discount price groups** page will open.</span></span> <span data-ttu-id="c43fa-135">Następnie kliknij **Nowa** i wybierz grupę cenową **Houston-GC**.</span><span class="sxs-lookup"><span data-stu-id="c43fa-135">Next, click **New** and select the **Houston-PG** price group.</span></span>
 5.  <span data-ttu-id="c43fa-136">Teraz można włączyć rabatu i przesunąć go do kanału.</span><span class="sxs-lookup"><span data-stu-id="c43fa-136">Now you can enable the discount and push it to the channel.</span></span>
 
- 
+
 
 <a name="see-also"></a><span data-ttu-id="c43fa-137">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="c43fa-137">See also</span></span>
 --------

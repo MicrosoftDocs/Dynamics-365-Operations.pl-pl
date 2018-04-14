@@ -16,15 +16,15 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d804480167414cd038f8229db312dc9c52d131f8
-ms.openlocfilehash: 4c45da124136b7fecb916d2ff9098c8ffeff6cb1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 662554b1b6bed63e5017aad3a292dad7a2f0bcea
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="calculate-fixed-asset-depreciation-across-legal-entities"></a><span data-ttu-id="7a4ac-103">Obliczanie amortyzacji środka trwałego we wszystkich firmach</span><span class="sxs-lookup"><span data-stu-id="7a4ac-103">Calculate fixed asset depreciation across legal entities</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7a4ac-104">Amortyzację środków trwałych można uruchomić w wielu firmach w jednym kroku.</span><span class="sxs-lookup"><span data-stu-id="7a4ac-104">Fixed asset depreciation can be run across legal entities in a single step.</span></span> <span data-ttu-id="7a4ac-105">Ta procedura przedstawia sposób ustawiania i uruchamiania procesu dla wielu firm.</span><span class="sxs-lookup"><span data-stu-id="7a4ac-105">This procedure shows you to how set up and run the process for multiple legal entities.</span></span> <span data-ttu-id="7a4ac-106">Wykorzystuje rolę księgowego.</span><span class="sxs-lookup"><span data-stu-id="7a4ac-106">It uses the accountant role.</span></span>  
 

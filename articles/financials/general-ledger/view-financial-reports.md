@@ -19,17 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 055001c992e70ceacf57cf25a8bf83207d8d7334
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4cdc0b480649bc07d423372651f50d5451ac7675
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-financial-reports"></a><span data-ttu-id="28d96-104">Wyświetlanie raportów finansowych</span><span class="sxs-lookup"><span data-stu-id="28d96-104">View financial reports</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="28d96-105">W tym artykule opisano sposób wyświetlania i eksplorowania sprawozdań finansowych w programie Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="28d96-105">This article describes how to view and explore financial reports in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="28d96-106">Artykuł zawiera informacje dotyczące różnych opcji, które można zastosować do sprawozdań finansowych, aby zmienić ich wygląd i zawarte dane.</span><span class="sxs-lookup"><span data-stu-id="28d96-106">It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.</span></span>
 

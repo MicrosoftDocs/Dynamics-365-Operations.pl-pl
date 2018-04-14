@@ -20,17 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f8eea27edaa97150ceb2c36996177395cba8bdb9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fd01f742ee7a45e9c7d4feee4f3bf58dce4a3bf7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="common-sources-of-production-variances"></a><span data-ttu-id="a5e4f-103">Typowe przyczyny odchyleń produkcji</span><span class="sxs-lookup"><span data-stu-id="a5e4f-103">Common sources of production variances</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a5e4f-104">Ten artykuł wyjaśnia różne typowe przyczyny poszczególnych typów odchyleń produkcji.</span><span class="sxs-lookup"><span data-stu-id="a5e4f-104">This article explains various typical sources of each type of production variance.</span></span> 
 

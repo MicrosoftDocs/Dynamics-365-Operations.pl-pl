@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: fe0be9164a285ce3884d1f35e99bdad80eb8b581
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1a32b49e7589113d518ef17a39eecc4c518b362d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="allocation-bases"></a><span data-ttu-id="68e8a-104">Podstawy alokacji</span><span class="sxs-lookup"><span data-stu-id="68e8a-104">Allocation bases</span></span> 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="68e8a-105">Podstawa alokacji stanowi bazę, w oparciu o którą moduł Rachunek kosztów przydziela koszty ogólne.</span><span class="sxs-lookup"><span data-stu-id="68e8a-105">An allocation base is the basis on which Cost accounting allocates overhead costs.</span></span> <span data-ttu-id="68e8a-106">Podstawą alokacji może być ilość, np. używana liczba roboczogodzin, zużywana liczba kilowatogodzin (kWh) lub zajmowana powierzchnia (w stopach lub metrach kwadratowych).</span><span class="sxs-lookup"><span data-stu-id="68e8a-106">An allocation base can be a quantity, such as machine hours that are used, kilowatt hours (kWh) that are consumed, or square footage that is occupied.</span></span> <span data-ttu-id="68e8a-107">Podstawy alokacji przeważnie są używane do przypisywania kosztów ogólnych do wytwarzanych zapasów.</span><span class="sxs-lookup"><span data-stu-id="68e8a-107">Allocation bases are mostly used to assign overhead costs to inventory that is produced.</span></span> <span data-ttu-id="68e8a-108">Na przykład dział IT alokuje swoje wydatki według liczby komputerów używanej w poszczególnych działach.</span><span class="sxs-lookup"><span data-stu-id="68e8a-108">For example, an IT department allocates its expenses according to the number of computers that each department uses.</span></span>
 
@@ -424,9 +424,11 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="68e8a-775">Oto przykład reguły dystrybucji kosztów, gdy jako podstawę alokacji ma przypisaną podstawę alokacji formuły Opłata stała za prąd.</span><span class="sxs-lookup"><span data-stu-id="68e8a-775">Here is an example of a cost distribution rule if the Electricity fixed formula allocation base is assigned as the allocation base in it.</span></span>
 
-| <span data-ttu-id="68e8a-776">Obiekt kosztów</span><span class="sxs-lookup"><span data-stu-id="68e8a-776">Cost object</span></span> |  <span data-ttu-id="68e8a-777">opis</span><span class="sxs-lookup"><span data-stu-id="68e8a-777">Description</span></span>  | <span data-ttu-id="68e8a-778">Wartość</span><span class="sxs-lookup"><span data-stu-id="68e8a-778">Magnitude</span></span> | <span data-ttu-id="68e8a-779">Współczynnik alokacji</span><span class="sxs-lookup"><span data-stu-id="68e8a-779">Allocation factor</span></span>                |
-|-------------|----|-----------|----------------------------------|
-| <span data-ttu-id="68e8a-780">CC001</span><span class="sxs-lookup"><span data-stu-id="68e8a-780">CC001</span></span>       | <span data-ttu-id="68e8a-781">Zasoby ludzkie</span><span class="sxs-lookup"><span data-stu-id="68e8a-781">HR</span></span> | <span data-ttu-id="68e8a-782">1,837.50</span><span class="sxs-lookup"><span data-stu-id="68e8a-782">1,837.50</span></span>  | <span data-ttu-id="68e8a-783">(1,837.50 ÷ 18,162.50) × kwota</span><span class="sxs-lookup"><span data-stu-id="68e8a-783">(1,837.50 ÷ 18,162.50) × Amount</span></span>  |
-| <span data-ttu-id="68e8a-784">CC002</span><span class="sxs-lookup"><span data-stu-id="68e8a-784">CC002</span></span>       | <span data-ttu-id="68e8a-785">FI</span><span class="sxs-lookup"><span data-stu-id="68e8a-785">FI</span></span> | <span data-ttu-id="68e8a-786">3,075.00</span><span class="sxs-lookup"><span data-stu-id="68e8a-786">3,075.00</span></span>  | <span data-ttu-id="68e8a-787">(3,075.00 ÷ 18,162.50) × kwota</span><span class="sxs-lookup"><span data-stu-id="68e8a-787">(3,075.00 ÷ 18,162.50) × Amount</span></span>  |
-| <span data-ttu-id="68e8a-788">CC003</span><span class="sxs-lookup"><span data-stu-id="68e8a-788">CC003</span></span>       | <span data-ttu-id="68e8a-789">MM</span><span class="sxs-lookup"><span data-stu-id="68e8a-789">IT</span></span> | <span data-ttu-id="68e8a-790">13,250.00</span><span class="sxs-lookup"><span data-stu-id="68e8a-790">13,250.00</span></span> | <span data-ttu-id="68e8a-791">(13 250,00 ÷ 18 162,50) × kwota</span><span class="sxs-lookup"><span data-stu-id="68e8a-791">(13,250.00 ÷ 18,162.50) × Amount</span></span> |
+
+| <span data-ttu-id="68e8a-776">Obiekt kosztów</span><span class="sxs-lookup"><span data-stu-id="68e8a-776">Cost object</span></span> | <span data-ttu-id="68e8a-777">opis</span><span class="sxs-lookup"><span data-stu-id="68e8a-777">Description</span></span> | <span data-ttu-id="68e8a-778">Wartość</span><span class="sxs-lookup"><span data-stu-id="68e8a-778">Magnitude</span></span> |        <span data-ttu-id="68e8a-779">Współczynnik alokacji</span><span class="sxs-lookup"><span data-stu-id="68e8a-779">Allocation factor</span></span>         |
+|-------------|-------------|-----------|----------------------------------|
+|    <span data-ttu-id="68e8a-780">CC001</span><span class="sxs-lookup"><span data-stu-id="68e8a-780">CC001</span></span>    |     <span data-ttu-id="68e8a-781">Zasoby ludzkie</span><span class="sxs-lookup"><span data-stu-id="68e8a-781">HR</span></span>      | <span data-ttu-id="68e8a-782">1,837.50</span><span class="sxs-lookup"><span data-stu-id="68e8a-782">1,837.50</span></span>  | <span data-ttu-id="68e8a-783">(1,837.50 ÷ 18,162.50) × kwota</span><span class="sxs-lookup"><span data-stu-id="68e8a-783">(1,837.50 ÷ 18,162.50) × Amount</span></span>  |
+|    <span data-ttu-id="68e8a-784">CC002</span><span class="sxs-lookup"><span data-stu-id="68e8a-784">CC002</span></span>    |     <span data-ttu-id="68e8a-785">FI</span><span class="sxs-lookup"><span data-stu-id="68e8a-785">FI</span></span>      | <span data-ttu-id="68e8a-786">3,075.00</span><span class="sxs-lookup"><span data-stu-id="68e8a-786">3,075.00</span></span>  | <span data-ttu-id="68e8a-787">(3,075.00 ÷ 18,162.50) × kwota</span><span class="sxs-lookup"><span data-stu-id="68e8a-787">(3,075.00 ÷ 18,162.50) × Amount</span></span>  |
+|    <span data-ttu-id="68e8a-788">CC003</span><span class="sxs-lookup"><span data-stu-id="68e8a-788">CC003</span></span>    |     <span data-ttu-id="68e8a-789">MM</span><span class="sxs-lookup"><span data-stu-id="68e8a-789">IT</span></span>      | <span data-ttu-id="68e8a-790">13,250.00</span><span class="sxs-lookup"><span data-stu-id="68e8a-790">13,250.00</span></span> | <span data-ttu-id="68e8a-791">(13 250,00 ÷ 18 162,50) × kwota</span><span class="sxs-lookup"><span data-stu-id="68e8a-791">(13,250.00 ÷ 18,162.50) × Amount</span></span> |
+
 

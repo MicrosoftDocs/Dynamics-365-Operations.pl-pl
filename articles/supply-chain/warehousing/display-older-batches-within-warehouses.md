@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: fedb9162c81b9fa115b63402fe80cd4c857e8deb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4f2dc9221b72600c928db9fd306038725c7af305
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-display-older-batches-within-warehouse-on-a-mobile-device"></a><span data-ttu-id="1feeb-103">Konfigurowanie wyświetlania starszych partii w magazynie na urządzeniu przenośnym</span><span class="sxs-lookup"><span data-stu-id="1feeb-103">Configure Display older batches within warehouse on a mobile device</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="1feeb-104">Ustawienie **Wyświetl starsze partie w magazynie** pozwala wyświetlić listę lokalizacji zawierających partie starsze niż partie w bieżącej lokalizacji w wierszu pracy.</span><span class="sxs-lookup"><span data-stu-id="1feeb-104">The **Display older batches within warehouse** configuration lets you display a list of locations with batches older than the current location of the work line.</span></span> <span data-ttu-id="1feeb-105">Wyświetlona lista lokalizacji zawiera informacje o starszych partiach w lokalizacji z datami ważności oraz fizycznie zapasy każdej partii.</span><span class="sxs-lookup"><span data-stu-id="1feeb-105">The list of locations that are displayed includes information about the older batches in the location with the expiration date and the physical inventory of each batch.</span></span> <span data-ttu-id="1feeb-106">Można wybrać pobieranie z nowej lokalizacji albo kontynuować pobieranie z bieżącej lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="1feeb-106">You can choose to pick from a new location or to continue picking from the current location.</span></span> 
 - <span data-ttu-id="1feeb-107">Pobieranie z nowej lokalizacji — Po zaznaczeniu nowej lokalizacji, z której ma być wykonywane pobieranie, bieżący wiersz pracy zostanie zaktualizowany, tak aby używał nowej lokalizacji, a praca będzie kontynuowana w zwykły sposób, ale przy użyciu nowej lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="1feeb-107">Pick from a new location - If you select a new location to pick from, the  current work line will be updated to use the new location and work will continue as usual with the new location.</span></span> <span data-ttu-id="1feeb-108">Aby nowa lokalizacja działała, musi mieć dostępną ilość wystarczającą dla całego wiersza pracy.</span><span class="sxs-lookup"><span data-stu-id="1feeb-108">For the new location to be valid, it must have enough available quantity for the whole work line.</span></span> <span data-ttu-id="1feeb-109">Jeśli wymagana ilość nie jest dostępna, wiersz pracy nie zostanie zaktualizowany i pojawi się lista.</span><span class="sxs-lookup"><span data-stu-id="1feeb-109">If the required quantity is not available, the work line will not be updated, and the list will display.</span></span> 

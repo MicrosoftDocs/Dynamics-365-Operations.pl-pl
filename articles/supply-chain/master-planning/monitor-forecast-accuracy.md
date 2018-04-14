@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 83d9b76334c887a92c357eceeffd36e9a1e65b7f
-ms.openlocfilehash: 86b8e5755f5b2591c04ad6f2335d2ed874102a75
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d1025619d799cb94af73571f8ca78eca578782f4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="monitor-forecast-accuracy"></a><span data-ttu-id="7237b-103">Monitorowanie dokładności prognozy</span><span class="sxs-lookup"><span data-stu-id="7237b-103">Monitor forecast accuracy</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7237b-104">W tym artykule opisano typy dokładności prognozy dostępne w programie Microsoft Dynamics 365 for Finance and Operations i wyjaśniono, jak można wyświetlać wartości dokładności.</span><span class="sxs-lookup"><span data-stu-id="7237b-104">This article describes the types of forecast accuracy that Microsoft Dynamics 365 for Finance and Operations calculates, and explains how you can view the accuracy values.</span></span>
 

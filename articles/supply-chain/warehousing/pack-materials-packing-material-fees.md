@@ -20,17 +20,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 46178d9da5464d8cb74b1d52142d6ad08a293349
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="packing-materials-and-fees"></a><span data-ttu-id="973df-105">Materiały opakowaniowe i związane z nimi opłaty</span><span class="sxs-lookup"><span data-stu-id="973df-105">Packing materials and fees</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="973df-106">Opłaty za materiały opakowań są uiszczane firmie recyklingowej w pewnych odstępach czasu.</span><span class="sxs-lookup"><span data-stu-id="973df-106">Packing material fees are paid to a recycling company at certain intervals.</span></span> <span data-ttu-id="973df-107">Płaci się kwotę według jednostki masy za każdy materiał, z którego jest wykonana jednostka opakowania.</span><span class="sxs-lookup"><span data-stu-id="973df-107">An amount is paid, per unit of weight, for each material that a packing unit consists of.</span></span> <span data-ttu-id="973df-108">Opłaty za materiały opakowań są obliczane i zgłaszane, ale transakcje finansowe nie są księgowane, ponieważ opłaty nie są uznawane za podatki należne właściwemu organowi.</span><span class="sxs-lookup"><span data-stu-id="973df-108">Packing material fees are calculated and reported, but no ledger transactions are posted because the fees are not regarded as taxes to be paid to an authority.</span></span>
 
@@ -63,7 +62,7 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="print-packaging-material-weights-on-invoices"></a><span data-ttu-id="973df-147">Drukowanie wag materiałów opakowań na fakturach</span><span class="sxs-lookup"><span data-stu-id="973df-147">Print packaging material weights on invoices</span></span>
 <span data-ttu-id="973df-148">Istnieje możliwość drukowania wag materiałów opakowań na fakturze oraz wskazywania podmiotów uiszczających opłaty materiałowe opakowań.</span><span class="sxs-lookup"><span data-stu-id="973df-148">You can print the packaging material weights on the invoice, and indicate who pays the packaging material fees.</span></span> <span data-ttu-id="973df-149">Wagi zestawione są na podstawie kodu opakowania.</span><span class="sxs-lookup"><span data-stu-id="973df-149">The weights are summarized by packaging code.</span></span>
- 
+
 
 
 

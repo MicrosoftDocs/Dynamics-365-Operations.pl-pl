@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 61c0fde1af125188e1ad1198e00af760256d7cfd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a836ce76f635fd42b0613b2abf131315b19aa5fe
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="safety-stock-fulfillment-for-items"></a><span data-ttu-id="1827d-103">Realizacja zapasów bezpieczeństwa dla towarów</span><span class="sxs-lookup"><span data-stu-id="1827d-103">Safety stock fulfillment for items</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="1827d-104">Zapas bezpieczeństwa oznacza dodatkową ilość towarów przechowywaną w zapasach w celu ograniczenia ryzyka braku dostępu towarów w magazynie.</span><span class="sxs-lookup"><span data-stu-id="1827d-104">Safety stock indicates an additional quantity of an item held in the inventory in order to reduce the risk that the item will be out of stock.</span></span> <span data-ttu-id="1827d-105">Zapas bezpieczeństwa służy jako zapas buforowy w przypadku gdy po otrzymaniu zamówień dostawca nie może dostarczyć dodatkowych towarów w celu dotrzymania wymaganej przez klienta daty wysyłki.</span><span class="sxs-lookup"><span data-stu-id="1827d-105">Safety stock is used as a buffer stock in case sales orders come in and the supplier is unable to deliver the additional items to meet the customer's requested ship date.</span></span> <span data-ttu-id="1827d-106">Jeżeli zapasy bezpieczeństwa są używane do realizacji zamówienia sprzedaży, zapasy bezpieczeństwa zostaną zmniejszone.</span><span class="sxs-lookup"><span data-stu-id="1827d-106">When safety stock is used to fulfill a sales order, the safety stock will be reduced.</span></span> <span data-ttu-id="1827d-107">Można użyć funkcji Planowanie główne w celu automatycznego przywrócenia bezpiecznego poziomu zapasów.</span><span class="sxs-lookup"><span data-stu-id="1827d-107">You can use Master planning to automatically bring the inventory back to the safety level.</span></span>    
 

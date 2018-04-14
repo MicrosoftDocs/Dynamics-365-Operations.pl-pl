@@ -18,19 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8532b778c89c972a833ac9ffe28243f15f01426c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3a79bd3443b5b3441b397f32204756ab6c978e27
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="close-accounts-receivable"></a><span data-ttu-id="0634b-103">Zamykanie rozrachunków z odbiorcami</span><span class="sxs-lookup"><span data-stu-id="0634b-103">Close Accounts receivable</span></span>
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="0634b-104">Poniższa tabela zawiera listę stron obsługujących procesu biznesowy związany z zamykaniem rozrachunków z odbiorcami.</span><span class="sxs-lookup"><span data-stu-id="0634b-104">The following table lists the pages that support the close Accounts receivable business process.</span></span>
 

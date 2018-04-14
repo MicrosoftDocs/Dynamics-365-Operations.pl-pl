@@ -16,15 +16,15 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e9c9811b348d81cd735c5b75ca48e0a56a8d52be
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d785922d1c6775d95ad5697eb6a872434e59c8e4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-free-text-invoice-template"></a><span data-ttu-id="0ee4e-103">Tworzenie szablonu faktury niezależnej</span><span class="sxs-lookup"><span data-stu-id="0ee4e-103">Create a free text invoice template</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0ee4e-104">To nagranie wykorzystuje firmę demonstracyjną USMF.</span><span class="sxs-lookup"><span data-stu-id="0ee4e-104">This recording uses the USMF demo company.</span></span> <span data-ttu-id="0ee4e-105">To nagranie jest przeznaczone dla użytkownika, który odpowiada za zarządzanie i przetwarzanie faktur dla odbiorców.</span><span class="sxs-lookup"><span data-stu-id="0ee4e-105">The recording is intended for the user who is responsible for managing and processing A/R invoices.</span></span>
 

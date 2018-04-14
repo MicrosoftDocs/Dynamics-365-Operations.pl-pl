@@ -19,17 +19,16 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7bc09cbd108949b37ea1b2207fc3e0c6961abf4b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8ca6346183bfa2502c736baff1aaac0db44f067a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="accounts-payable-home-page"></a><span data-ttu-id="70587-103">Rozrachunki z dostawcami — strona główna</span><span class="sxs-lookup"><span data-stu-id="70587-103">Accounts payable home page</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="70587-104">Ten temat zawiera omówienie modułu Rozrachunki z dostawcami.</span><span class="sxs-lookup"><span data-stu-id="70587-104">This topic provides an overview of Accounts payable.</span></span> 
 

@@ -19,17 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 577204b49355a470769237eb46ad74e7f319a55e
-ms.openlocfilehash: db1d517c305644b2157a2cc54b6ccc315fed5969
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 17f18b3cc74867f268101a4e5a1f9053b0f244b3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="purchase-requisition-workflow"></a><span data-ttu-id="0fef9-105">przepływ pracy zapotrzebowań zakupu</span><span class="sxs-lookup"><span data-stu-id="0fef9-105">Purchase requisition workflow</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="0fef9-106">Przepływ pracy prowadzi zapotrzebowanie na zakup przez proces weryfikacji — od początkowego stanu Wersja robocza do końcowego Zatwierdzone.</span><span class="sxs-lookup"><span data-stu-id="0fef9-106">The workflow process moves purchase requisitions through the review process, from an initial status of Draft to a final status of Approved.</span></span> <span data-ttu-id="0fef9-107">Gdy zapotrzebowanie na zakup zostanie przesłane do przeglądu, rozpoczyna się proces przepływu pracy.</span><span class="sxs-lookup"><span data-stu-id="0fef9-107">When a purchase requisition is submitted for review, the workflow process is started.</span></span> <span data-ttu-id="0fef9-108">Po zatwierdzeniu zapotrzebowania na zakup można wygenerować zamówienie zakupu dla wierszy zapotrzebowania na zakup i przesłać do dostawcy w celu realizacji zamówienia.</span><span class="sxs-lookup"><span data-stu-id="0fef9-108">After a purchase requisition is approved, a purchase order can be generated for the purchase requisition lines and submitted to the vendor for order fulfillment.</span></span>
 

@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: 68ae9bad8c15f06689c4660ccad27eff5d01c93c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 75aac23ae8b751b3507e068272fc3764ebc365de
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cycle-counting"></a><span data-ttu-id="bd6f1-104">Inwentaryzacja ciągła</span><span class="sxs-lookup"><span data-stu-id="bd6f1-104">Cycle counting</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="bd6f1-105">W tym artykule opisano sposób używania inwentaryzacji ciągłej w aplikacji magazynowej dostępnej w module zarządzania magazynem.</span><span class="sxs-lookup"><span data-stu-id="bd6f1-105">This article describes how you can use cycle counting with the warehousing solution that is available in Warehouse management.</span></span> <span data-ttu-id="bd6f1-106">Artykuł nie ma zastosowania do aplikacji magazynowej zawartej w module zarządzania zapasami.</span><span class="sxs-lookup"><span data-stu-id="bd6f1-106">This article doesn't apply to the warehousing solution that's available in Inventory management.</span></span>
 

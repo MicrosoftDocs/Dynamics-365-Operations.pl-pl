@@ -19,17 +19,16 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2177110dc16528de7eddedb0667faae553a36b12
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f3defa29581c6c90994a673bd73d96613101a391
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="general-ledger"></a><span data-ttu-id="d3ee1-103">Księga główna</span><span class="sxs-lookup"><span data-stu-id="d3ee1-103">General ledger</span></span> 
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="d3ee1-104">Moduł Księga główna służy do definiowania rekordów finansowych dla firmy i zarządzania nimi.</span><span class="sxs-lookup"><span data-stu-id="d3ee1-104">Use General ledger to define and manage the legal entity’s financial records.</span></span> <span data-ttu-id="d3ee1-105">Księga główna to rejestr zapisów debetowych i kredytowych.</span><span class="sxs-lookup"><span data-stu-id="d3ee1-105">The general ledger is a register of debit and credit entries.</span></span> <span data-ttu-id="d3ee1-106">Te wpisy są sklasyfikowane przy użyciu kont wymienionych w planie kont.</span><span class="sxs-lookup"><span data-stu-id="d3ee1-106">These entries are classified using the accounts that are listed in a chart of accounts.</span></span> 
 

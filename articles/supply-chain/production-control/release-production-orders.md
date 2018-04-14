@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9b9009c714445871c15363c26829da812e56c688
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f45aa9448837ee9588f9f9ba4593bf7c3f2e7954
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="release-production-orders"></a><span data-ttu-id="1b834-104">Zwalnianie zleceń produkcyjnych</span><span class="sxs-lookup"><span data-stu-id="1b834-104">Release production orders</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="1b834-105">Zwolnione zlecenie produkcyjne to zlecenie zatwierdzone do produkcji.</span><span class="sxs-lookup"><span data-stu-id="1b834-105">A released production order is an order that has been authorized for production.</span></span> <span data-ttu-id="1b834-106">Określenie „zwolnione” opisuje stan w cyklu życia zlecenia produkcyjnego, gdzie jest ono dostępne do wykonania na wydziale produkcji i dla procesów magazynowych.</span><span class="sxs-lookup"><span data-stu-id="1b834-106">The term Released is used to describe a state in the production order life cycle, where the production order is available for execution on the production shop floor and for warehouse processes.</span></span> 
 

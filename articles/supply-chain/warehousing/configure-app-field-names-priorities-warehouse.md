@@ -20,17 +20,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: 09aef6e149bdbe8366b0b971212b80bdbfb47a9f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5bb469d48af54ec25174a33a4645e4545cd740f1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-app-field-names-in-warehousing-app"></a><span data-ttu-id="d7409-103">Konfigurowanie nazw pól aplikacji w aplikacji Magazynowanie</span><span class="sxs-lookup"><span data-stu-id="d7409-103">Configure app field names in Warehousing app</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="d7409-104">W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów pól aplikacji magazynowej w programie Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="d7409-104">This topic describes how to define and configure warehouse app field names and priorities in Finance and Operations.</span></span> 
 

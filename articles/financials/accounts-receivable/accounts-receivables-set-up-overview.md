@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
-ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 43c8d0db28fb0a845c4520b279f16d7c20c6da88
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a><span data-ttu-id="0975a-103">Konfiguracja modułów Rozrachunki z odbiorcami i Kredyty i windykacja</span><span class="sxs-lookup"><span data-stu-id="0975a-103">Configure Accounts receivables and Credit and collections</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="0975a-104">Odpowiednie skonfigurowanie modułów Rozrachunki z odbiorcami oraz Kredyty i windykacja umożliwi śledzenie faktur i płatności przychodzących od odbiorców.</span><span class="sxs-lookup"><span data-stu-id="0975a-104">Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.</span></span>
 
@@ -107,7 +106,7 @@ ms.lasthandoff: 11/14/2017
 |                                                      | <span data-ttu-id="0975a-251">Informacja NF.</span><span class="sxs-lookup"><span data-stu-id="0975a-251">NSF information.</span></span>                     | <span data-ttu-id="0975a-252">Ustaw informacje dotyczące niewystarczających funduszy na koncie bankowym, które będą używane, gdy płatność jest oznaczona jako transakcja NF na stronie Windykacje.</span><span class="sxs-lookup"><span data-stu-id="0975a-252">Set up NSF information on the bank account that will be used when a payment is marked as an NSF transaction on the Collections page.</span></span>                                                                                                                                              |
 |                                                      | <span data-ttu-id="0975a-253">Informacje o sprzedawcy</span><span class="sxs-lookup"><span data-stu-id="0975a-253">Salesperson information</span></span>              | <span data-ttu-id="0975a-254">Ustaw adres e-mail dla sprzedawców.</span><span class="sxs-lookup"><span data-stu-id="0975a-254">Set up the email address for salespersons.</span></span> <span data-ttu-id="0975a-255">Te adresy będą widoczne na stronie Windykacje i można ich używać do wysyłania wiadomości e-mail do sprzedawcy z tej strony.</span><span class="sxs-lookup"><span data-stu-id="0975a-255">These addresses will appear on the Collections page and you can use them to send email to a salesperson from that page.</span></span>                                                                                                                |
 
- 
+
 <span data-ttu-id="0975a-256">Aby uzyskać więcej informacji, zobacz temat [Kredyty i windykacja w rozrachunkach z odbiorcami](collections-credit-accounts-receivable.md).</span><span class="sxs-lookup"><span data-stu-id="0975a-256">For more information, see [Credit and collections in Accounts receivable](collections-credit-accounts-receivable.md).</span></span>
 
 

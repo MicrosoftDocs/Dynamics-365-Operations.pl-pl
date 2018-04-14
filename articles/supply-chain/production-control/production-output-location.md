@@ -18,16 +18,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b1d6d1270dcbdf3baff63b2ccf300d6195329b41
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1235fe1db6663018c019322a7850cb428e3935d4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-output-location"></a><span data-ttu-id="36f4f-103">Lokalizacja wyjściowa produkcji</span><span class="sxs-lookup"><span data-stu-id="36f4f-103">Production output location</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="36f4f-104">W tym temacie opisano hierarchię używaną do identyfikowania lokalizacji wyjściowej produkcji.</span><span class="sxs-lookup"><span data-stu-id="36f4f-104">This topic describes the hierarchy that is used to identify the production output location.</span></span>
 

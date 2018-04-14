@@ -20,19 +20,18 @@ ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: d0e8d1ac8b775f9c728d6bfa6ba219dd889bf8a2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 06760d84cf5152f24e374cf3fb1bbea5564bbb42
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a><span data-ttu-id="de815-103">Domyślne ustawienia zamówienia dla wymiarów i wariantów produktu</span><span class="sxs-lookup"><span data-stu-id="de815-103">Default order settings for dimensions and product variants</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="de815-104">Domyślne ustawienia zamówień w programie Microsoft Dynamics 365 for Finance and Operations definiują: oddział i magazyn, skąd towary będą pobierane lub gdzie będą przechowywane; ilości minimalne, maksymalne, wielokrotne i standardowe, które będą używane do handlu lub zarządzania zapasami; czasy realizacji; flagę blokady; metodę tworzenia zobowiązań zamówień.</span><span class="sxs-lookup"><span data-stu-id="de815-104">Default order settings in Microsoft Dynamics 365 for Finance and Operations define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method.</span></span> <span data-ttu-id="de815-105">Domyślne ustawienia zamówień są stosowane przy tworzeniu zamówień zakupu, zamówień sprzedaży, zamówień przeniesienia i arkuszy magazynowych oraz w planowaniu głównym do generowania zamówień planowanych.</span><span class="sxs-lookup"><span data-stu-id="de815-105">Default order settings are used when creating purchase orders, sales orders, transfer orders, inventory journals, and by master planning for generating planned orders.</span></span> <span data-ttu-id="de815-106">Domyślne ustawienia zamówień mogą być specyficzne dla towaru, oddziału, wariantu produktu lub wymiaru produktu.</span><span class="sxs-lookup"><span data-stu-id="de815-106">Default order settings can be item specific, site specific, product variant specific, or product dimension specific.</span></span>
 

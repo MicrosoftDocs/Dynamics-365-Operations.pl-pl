@@ -20,16 +20,16 @@ ms.author: conradv
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
-ms.openlocfilehash: afd542a652abdf6e45c83a6097dc8f0d36efa905
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 28102e9e2f245856a68f92731c49e9c8d248f4e8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="product-identifiers"></a><span data-ttu-id="6c1de-103">Identyfikatory produktów</span><span class="sxs-lookup"><span data-stu-id="6c1de-103">Product identifiers</span></span> 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="6c1de-104">Ten temat zawiera informacje o różnych typach identyfikatorów produktów i wyjaśnia, jak można dodawać identyfikatory produktów w danych produktów.</span><span class="sxs-lookup"><span data-stu-id="6c1de-104">This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.</span></span>
 

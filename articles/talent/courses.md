@@ -19,17 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 27fbc54afca384b804f2b0468206242ff89d4031
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a86709bc222339531a21997510a65c138024256c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-training-courses"></a><span data-ttu-id="76dc7-103">Konfigurowanie kursów szkoleniowych</span><span class="sxs-lookup"><span data-stu-id="76dc7-103">Set up training courses</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="76dc7-104">Administratorzy zasobów ludzkich i menedżerowie mogą korzystać z funkcji kursów do obsługi informacji o szkoleniu oferowanym pracownikom.</span><span class="sxs-lookup"><span data-stu-id="76dc7-104">Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.</span></span>
 
@@ -81,15 +80,15 @@ ms.lasthandoff: 02/23/2018
 
 ## <a name="course-tasks"></a><span data-ttu-id="76dc7-134">Zadania kursu</span><span class="sxs-lookup"><span data-stu-id="76dc7-134">Course tasks</span></span>
 <span data-ttu-id="76dc7-135">Dla każdego kursu można wykonać następujące zadania.</span><span class="sxs-lookup"><span data-stu-id="76dc7-135">For each course, you can complete the following tasks.</span></span>
--   <span data-ttu-id="76dc7-136">Rejestracja uczestników</span><span class="sxs-lookup"><span data-stu-id="76dc7-136">Register participants</span></span>
--   <span data-ttu-id="76dc7-137">Określenie ostatecznego terminu rejestracji</span><span class="sxs-lookup"><span data-stu-id="76dc7-137">Specify a registration deadline</span></span>
--   <span data-ttu-id="76dc7-138">Określenie minimalnej i maksymalnej liczby uczestników</span><span class="sxs-lookup"><span data-stu-id="76dc7-138">Define the minimum and maximum number of participants</span></span>
--   <span data-ttu-id="76dc7-139">Przypisanie lokalizacji i sali</span><span class="sxs-lookup"><span data-stu-id="76dc7-139">Assign a course location and classroom</span></span>
--   <span data-ttu-id="76dc7-140">Hotele rekomendowane uczestnikom kursu</span><span class="sxs-lookup"><span data-stu-id="76dc7-140">Recommend hotels to course participants</span></span>
--   <span data-ttu-id="76dc7-141">Utworzenie opisu kursu, który później może zostać zareklamowany w Samoobsłudze pracownika</span><span class="sxs-lookup"><span data-stu-id="76dc7-141">Create a course description, which you can then advertise on Employee self service</span></span>
+- <span data-ttu-id="76dc7-136">Rejestracja uczestników</span><span class="sxs-lookup"><span data-stu-id="76dc7-136">Register participants</span></span>
+- <span data-ttu-id="76dc7-137">Określenie ostatecznego terminu rejestracji</span><span class="sxs-lookup"><span data-stu-id="76dc7-137">Specify a registration deadline</span></span>
+- <span data-ttu-id="76dc7-138">Określenie minimalnej i maksymalnej liczby uczestników</span><span class="sxs-lookup"><span data-stu-id="76dc7-138">Define the minimum and maximum number of participants</span></span>
+- <span data-ttu-id="76dc7-139">Przypisanie lokalizacji i sali</span><span class="sxs-lookup"><span data-stu-id="76dc7-139">Assign a course location and classroom</span></span>
+- <span data-ttu-id="76dc7-140">Hotele rekomendowane uczestnikom kursu</span><span class="sxs-lookup"><span data-stu-id="76dc7-140">Recommend hotels to course participants</span></span>
+- <span data-ttu-id="76dc7-141">Utworzenie opisu kursu, który później może zostać zareklamowany w Samoobsłudze pracownika</span><span class="sxs-lookup"><span data-stu-id="76dc7-141">Create a course description, which you can then advertise on Employee self service</span></span>
 
   ><span data-ttu-id="76dc7-142">**Uwaga** Kurs można usunąć tylko wtedy, gdy nikt się na niego nie zarejestrował.</span><span class="sxs-lookup"><span data-stu-id="76dc7-142">**Note** You can delete a course only if no one has registered for it.</span></span> 
-    
+
 ## <a name="course-statuses"></a><span data-ttu-id="76dc7-143">Stany kursu</span><span class="sxs-lookup"><span data-stu-id="76dc7-143">Course statuses</span></span>
 <span data-ttu-id="76dc7-144">W poniższej tabeli wymieniono możliwe stany i akcje kursu, które można wykonać, gdy kurs ma określony stan.</span><span class="sxs-lookup"><span data-stu-id="76dc7-144">The following table lists the possible course statuses and the actions that you can complete when the course has a specific status.</span></span>
 

@@ -18,17 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a1c4b7623f3409d4474adcd04fb1331b944b9fbb
-ms.openlocfilehash: 60c8b10af7c77cf8ae566014e2cacd939d01c9e8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1bdc4ce08b5a7b48d1029b075517c14c7aa45069
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="split-periods-in-periodic-journals"></a><span data-ttu-id="7cfb8-103">Okresy podziału w arkuszach okresowych</span><span class="sxs-lookup"><span data-stu-id="7cfb8-103">Split periods in periodic journals</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="7cfb8-104">Arkusze okresowe są czasami nazywane arkuszami cyklicznymi, ponieważ kwota, tekst i inne informacje są powtarzane zawsze podczas księgowania arkusza.</span><span class="sxs-lookup"><span data-stu-id="7cfb8-104">Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the journal is posted.</span></span> <span data-ttu-id="7cfb8-105">Podczas tworzenia arkusza należy określić interwał czasowy dla cyklu, taki jak dni lub miesiące.</span><span class="sxs-lookup"><span data-stu-id="7cfb8-105">When you create the journal, you specify the period interval for the recurrence, such as days or months.</span></span> <span data-ttu-id="7cfb8-106">Można także określić liczbę okresów, dla których arkusz będzie księgowany.</span><span class="sxs-lookup"><span data-stu-id="7cfb8-106">You also specify the number of periods for which the journal will be posted.</span></span>
 

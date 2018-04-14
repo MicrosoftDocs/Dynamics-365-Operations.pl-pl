@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 1ddf2d9cd0b0aabf7cb210613b13bd51ee88f9ff
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9c547dc843f4eb467400fa6f84a1a738462123ce
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-dimension-based-product-master"></a><span data-ttu-id="ca6a5-103">Tworzenie produktu głównego opartego na wymiarach</span><span class="sxs-lookup"><span data-stu-id="ca6a5-103">Create a dimension-based product master</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ca6a5-104">W tej procedurze pokazano sposób tworzenia nowego produktu głównego przy użyciu technologii konfiguracji opartej na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="ca6a5-104">This procedure shows how to create a new product master with dimension-based configuration technology.</span></span> <span data-ttu-id="ca6a5-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="ca6a5-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="ca6a5-106">Jest to pierwsza z ośmiu procedur opisujących sposób tworzenia kombinacji dla konfiguracji opartej na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="ca6a5-106">This is the first procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
 

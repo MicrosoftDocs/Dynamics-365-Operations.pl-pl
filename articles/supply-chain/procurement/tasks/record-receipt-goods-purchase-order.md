@@ -16,15 +16,15 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 9b2300a593c9e153ee598fa72e29907c82f2b79e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d8a47dac61705831b330f7b4939a18c865a8ace7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a><span data-ttu-id="8efff-103">Rejestrowanie przyjęcia towarów w zamówieniu zakupu</span><span class="sxs-lookup"><span data-stu-id="8efff-103">Record the receipt of goods on the purchase order</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="8efff-104">W tej procedurze pokazano sposób rejestrowania przyjęcia towarów bezpośrednio w zamówieniu zakupu.</span><span class="sxs-lookup"><span data-stu-id="8efff-104">This procedure shows you how to record receipt of goods directly on a purchase order.</span></span> <span data-ttu-id="8efff-105">Istnieje również możliwość rejestrowanie przyjęcia produktów w magazynie, a później zarejestrowania go w zamówieniu zakupu.</span><span class="sxs-lookup"><span data-stu-id="8efff-105">It’s also possible to register product receipt in the warehouse, and then later record it on the purchase order.</span></span> <span data-ttu-id="8efff-106">To zadanie jest zwykle wykonywane przez pracownika działu zakupów lub osobę odpowiedzialną za rozrachunki z dostawcami.</span><span class="sxs-lookup"><span data-stu-id="8efff-106">This task is typically done by a purchasing agent or an accounts payable coordinator.</span></span> <span data-ttu-id="8efff-107">Przykład zawarty w tym przewodniku można wykonać na danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="8efff-107">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="8efff-108">W przykładzie uwzględniono kroki utworzenia prostego zamówienie zakupu, dzięki czemu można odtworzyć procedurę jako przewodnik po zadaniu.</span><span class="sxs-lookup"><span data-stu-id="8efff-108">The example includes steps to create a simple purchase order so that you can play the procedure as a task guide.</span></span> <span data-ttu-id="8efff-109">Jeśli wykonujesz procedurę przy użyciu danych swojej firmy, zacznij od podzadania Rejestrowanie przyjęcia towarów.</span><span class="sxs-lookup"><span data-stu-id="8efff-109">If you were using the procedure on your own data, you would start at the Record receipt of goods subtask.</span></span>
 

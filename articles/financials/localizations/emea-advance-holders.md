@@ -18,17 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 84471351555d90c5a297d613abf334a26e896e40
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 647bbbc8555e0aa00b2779d87e63cb4dd31edf96
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advance-holders"></a><span data-ttu-id="eaa6c-103">Posiadacze zaliczek</span><span class="sxs-lookup"><span data-stu-id="eaa6c-103">Advance holders</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="eaa6c-104">Ten temat zawiera więcej informacji o funkcjonalności posiadacza zaliczki w programie Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-104">Learn about advance holder functionality in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
@@ -48,11 +47,13 @@ ms.lasthandoff: 03/26/2018
 ### <a name="employee-posting-profile"></a><span data-ttu-id="eaa6c-121">Profil księgowania pracownika</span><span class="sxs-lookup"><span data-stu-id="eaa6c-121">Employee posting profile</span></span>
 
 <span data-ttu-id="eaa6c-122">Użyj strony **Profile księgowania pracowników**, aby utworzyć profil dla transakcji posiadaczy zaliczek.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-122">Use the **Employee posting profiles** page to create a profile for advance holder transactions.</span></span> <span data-ttu-id="eaa6c-123">W profilu księgowania pracownika można podać następujące informacje:</span><span class="sxs-lookup"><span data-stu-id="eaa6c-123">You can specify the following information for the employee posting profile.</span></span>
-|<span data-ttu-id="eaa6c-124">Pole</span><span class="sxs-lookup"><span data-stu-id="eaa6c-124">Field</span></span> |<span data-ttu-id="eaa6c-125">opis</span><span class="sxs-lookup"><span data-stu-id="eaa6c-125">Description</span></span>|
-|------|-----------|
-|<span data-ttu-id="eaa6c-126">Profil księgowania</span><span class="sxs-lookup"><span data-stu-id="eaa6c-126">Posting profile</span></span>|<span data-ttu-id="eaa6c-127">Wprowadź kod identyfikacyjny profilu księgowania dla posiadacza zaliczki.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-127">Enter the posting profile identification code for the advance holder.</span></span>|
-|<span data-ttu-id="eaa6c-128">opis</span><span class="sxs-lookup"><span data-stu-id="eaa6c-128">Description</span></span>|<span data-ttu-id="eaa6c-129">Wprowadź krótki opis profilu księgowania.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-129">Enter a brief description of the posting profile.</span></span>|
-|<span data-ttu-id="eaa6c-130">Ważny dla</span><span class="sxs-lookup"><span data-stu-id="eaa6c-130">Valid for</span></span>|<span data-ttu-id="eaa6c-131">Wybierz jedną z następujących opcji poziomu grupowania dla konfiguracji profilu księgowania:</span><span class="sxs-lookup"><span data-stu-id="eaa6c-131">Select one of the following options for the level of grouping for setting up the posting profile:</span></span> 
+
+|      <span data-ttu-id="eaa6c-124">Pole</span><span class="sxs-lookup"><span data-stu-id="eaa6c-124">Field</span></span>      |                                            <span data-ttu-id="eaa6c-125">opis</span><span class="sxs-lookup"><span data-stu-id="eaa6c-125">Description</span></span>                                            |
+|-----------------|---------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="eaa6c-126">Profil księgowania</span><span class="sxs-lookup"><span data-stu-id="eaa6c-126">Posting profile</span></span> |               <span data-ttu-id="eaa6c-127">Wprowadź kod identyfikacyjny profilu księgowania dla posiadacza zaliczki.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-127">Enter the posting profile identification code for the advance holder.</span></span>               |
+|   <span data-ttu-id="eaa6c-128">opis</span><span class="sxs-lookup"><span data-stu-id="eaa6c-128">Description</span></span>   |                         <span data-ttu-id="eaa6c-129">Wprowadź krótki opis profilu księgowania.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-129">Enter a brief description of the posting profile.</span></span>                         |
+|    <span data-ttu-id="eaa6c-130">Ważny dla</span><span class="sxs-lookup"><span data-stu-id="eaa6c-130">Valid for</span></span>    | <span data-ttu-id="eaa6c-131">Wybierz jedną z następujących opcji poziomu grupowania dla konfiguracji profilu księgowania:</span><span class="sxs-lookup"><span data-stu-id="eaa6c-131">Select one of the following options for the level of grouping for setting up the posting profile:</span></span> |
+
 <span data-ttu-id="eaa6c-132">**Tabela** — Ta opcja służy do konfigurowania profilu księgowania dla jednego posiadacza zaliczki.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-132">**Table** – This option is used to set up the posting profile for one advance holder.</span></span> <span data-ttu-id="eaa6c-133">Należy podać kod posiadacza zaliczki w polu Odwołanie.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-133">You must indicate the advance holder code in the Reference field.</span></span>
 <span data-ttu-id="eaa6c-134">**Grupa** — Ta opcja służy do konfigurowania profilu księgowania dla grupy posiadaczy zaliczek.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-134">**Group** – This option is used to set up the posting profile for a group of advance holders.</span></span> <span data-ttu-id="eaa6c-135">Należy podać kod grupy w polu Odwołanie.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-135">You must indicate the group code in the Reference field.</span></span>
 <span data-ttu-id="eaa6c-136">**Wszystko** — Ta opcja służy do konfigurowania profilu księgowania dla wszystkich posiadaczy zaliczek. | |Odwołanie| Wybierz kod posiadacza zaliczki, jeśli w polu Ważny dla została wybrana opcja Tabela, lub grupę posiadaczy zaliczek, jeśli w polu Ważny dla zaznaczono opcję Grupa. | |Konto rozrachunkowe| Wybierz konto rozrachunkowe do księgowania transakcji.|</span><span class="sxs-lookup"><span data-stu-id="eaa6c-136">**All** – This option is used to set up the posting profile for all advance holders.| |Reference|Select the advance holder code if Table is selected in the Valid for field, or select the advance holder group if Group is selected in the Valid for field.| |Summary account|Select the summary account for posting the transactions.|</span></span>
@@ -62,6 +63,7 @@ ms.lasthandoff: 03/26/2018
 ### <a name="account-payable-parameters"></a><span data-ttu-id="eaa6c-137">Parametry modułu rozrachunków z dostawcami</span><span class="sxs-lookup"><span data-stu-id="eaa6c-137">Account payable parameters</span></span>
 
 <span data-ttu-id="eaa6c-138">Aby wykazywać transakcje posiadaczy zaliczek, należy skonfigurować następujące informacje na stronie **Parametry modułu rozrachunków z dostawcami** w sekcji **Posiadacze zaliczek**.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-138">To reflect advance holder’s transactions you must set up the following on the **Account payable parameters** page in the **Advance holders** section.</span></span>
+
 |                                                |                   |
 |------------------------------------------------|-------------------|
 |  <span data-ttu-id="eaa6c-139">**Pole**</span><span class="sxs-lookup"><span data-stu-id="eaa6c-139">**Field**</span></span>                                     | <span data-ttu-id="eaa6c-140">**Opis**</span><span class="sxs-lookup"><span data-stu-id="eaa6c-140">**Description**</span></span>                                                                                                                                                                  |
@@ -80,6 +82,7 @@ ms.lasthandoff: 03/26/2018
 ### <a name="create-an-advance-holder-creation"></a><span data-ttu-id="eaa6c-160">Tworzenie posiadacza zaliczki</span><span class="sxs-lookup"><span data-stu-id="eaa6c-160">Create an advance holder creation</span></span>
 
 <span data-ttu-id="eaa6c-161">Przed utworzeniem posiadacza zaliczki muszą już istnieć skonfigurowani pracownicy.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-161">Before you can create an advance holder, you must have already set up workers.</span></span> <span data-ttu-id="eaa6c-162">Aby uzyskać więcej informacji, zobacz [Wprowadzanie informacji o pracowniku (przewodnik po zadaniu).](../../fin-and-ops/hr/tasks/enter-worker-information.md)</span><span class="sxs-lookup"><span data-stu-id="eaa6c-162">For more information, see [Enter worker information (Task guide).](../../fin-and-ops/hr/tasks/enter-worker-information.md)</span></span> <span data-ttu-id="eaa6c-163">Użyj strony **Posiadacze zaliczek**, aby skonfigurować pracownika jako posiadacza zaliczki.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-163">Use the **Advance holders** page to set up a worker as an advance holder.</span></span> <span data-ttu-id="eaa6c-164">Wybierz pracownika, który ma być posiadaczem zaliczki, kliknij przycisk **Edytuj**, a następnie ustaw w opcji **Posiadacz zaliczki** wartość **Prawda**.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-164">Select the worker to use as an advance holder, click **Edit**, and then set the **Advance holder** option to **True**.</span></span> <span data-ttu-id="eaa6c-165">Trzeba również wypełnić następujące pola:</span><span class="sxs-lookup"><span data-stu-id="eaa6c-165">You must also complete the following fields.</span></span>
+
 |                |                                                                                             |
 |----------------|---------------------------------------------------------------------------------------------|
 | <span data-ttu-id="eaa6c-166">**Pole**</span><span class="sxs-lookup"><span data-stu-id="eaa6c-166">**Field**</span></span>      | <span data-ttu-id="eaa6c-167">**Opis**</span><span class="sxs-lookup"><span data-stu-id="eaa6c-167">**Description**</span></span>                                                                             |

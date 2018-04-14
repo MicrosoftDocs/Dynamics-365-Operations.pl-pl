@@ -20,17 +20,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: d3c81aaa675352eb679c1e1540f947c1d1da804b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: af2d01dcfddc11559c6c5b046dcac8cd8dc95e76
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="initialize-seed-data-in-a-new-retail-environment"></a><span data-ttu-id="fce0a-103">Inicjowanie danych początkowych w nowym środowisku sieci sprzedaży</span><span class="sxs-lookup"><span data-stu-id="fce0a-103">Initialize seed data in a new Retail environment</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="fce0a-104">W tym artykule opisano dane, które są tworzone w ramach procesu inicjowania w programie Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="fce0a-104">This article describes the data that's created as part of the initialization process for Microsoft Dynamics 365 for Retail.</span></span>
 

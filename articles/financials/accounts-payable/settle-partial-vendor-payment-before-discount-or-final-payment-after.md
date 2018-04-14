@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 683fb598a62cf993d0db26ffd492b8c3354a92d3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5436aaeadbf2d59324fe6b74a837d4ca85e4baff
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a><span data-ttu-id="54435-103">Rozliczanie płatności częściowej dostawcy przed datą rabatu z ostateczną datą płatności po dacie rabatu</span><span class="sxs-lookup"><span data-stu-id="54435-103">Settle a partial vendor payment before the discount date with a final payment after the discount date</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="54435-104">Ten artykuł prowadzi przez scenariusz, w którym jest dokonywanych wiele płatności częściowych — niektóre w okresie rabatu gotówkowego, a inne poza okresem rabatu gotówkowego.</span><span class="sxs-lookup"><span data-stu-id="54435-104">This article walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.</span></span>
 

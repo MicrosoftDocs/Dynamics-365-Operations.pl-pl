@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 655cc2b67eabac99460c00a2ddab059335fd74f8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2f088e07cb02f1aab3f1dae6d0693705693b24bd
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a><span data-ttu-id="2ac64-103">Rozliczanie płatności częściowej i płatności ostatecznej odbiorcy w całości przed datą rabatu</span><span class="sxs-lookup"><span data-stu-id="2ac64-103">Settle a partial customer payment and the final payment in full before the discount date</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="2ac64-104">Ten artykuł zawiera scenariusze pokazujące metody rejestrowania częściowych płatności od odbiorcy oraz stosowania rabatów gotówkowych w trakcie okresu rabatu gotówkowego.</span><span class="sxs-lookup"><span data-stu-id="2ac64-104">This article provides scenarios that show how to record partial payments for a customer and take cash discounts within the cash discount period.</span></span>
 

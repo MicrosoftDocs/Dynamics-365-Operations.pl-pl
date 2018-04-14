@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5faefe5da8c3a64987a38ebef92eb87049ebe874
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 04643d4d9e3c0a21f2dac3ce27a7398f7be4f775
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a><span data-ttu-id="c6725-103">Dodawanie wymiarów finansowych do obszaru roboczego Dyrektor finansowy</span><span class="sxs-lookup"><span data-stu-id="c6725-103">Add financial dimensions to the CFO workspace</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="c6725-104">W tym temacie wyjaśniono, jak dodawać wymiary finansowe do obszaru roboczego Dyrektor finansowy, dzięki czemu będzie można ich używać w raportach ksiąg i budżetów.</span><span class="sxs-lookup"><span data-stu-id="c6725-104">This topic explains how to add financial dimensions to the Chief Financial Officer (CFO) workspace, so that they can be used for the ledger and budget reports.</span></span> <span data-ttu-id="c6725-105">Obszar roboczy Dyrektor finansowy zawiera kartę **Przegląd** i kartę **Finanse**. Raporty na tych dwóch kartach dodatkowo wykorzystują dwie miary: LedgerActivityMeasure i BudgetActivityMeasure.</span><span class="sxs-lookup"><span data-stu-id="c6725-105">The CFO workspace has an **Overview** tab and a **Financial** tab. The reports on these two tabs are backed by two measures: LedgerActivityMeasure and BudgetActivityMeasure.</span></span> <span data-ttu-id="c6725-106">W programie Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (lipiec 2017 r.) istnieje relacja między tymi dwoma miarami a jednostką DimensionCombinationEntity.</span><span class="sxs-lookup"><span data-stu-id="c6725-106">In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), there is a relation between those two measures and the DimensionCombinationEntity entity.</span></span> <span data-ttu-id="c6725-107">W związku z tym można wybierać wymiary.</span><span class="sxs-lookup"><span data-stu-id="c6725-107">Therefore, you can select dimensions.</span></span>
 

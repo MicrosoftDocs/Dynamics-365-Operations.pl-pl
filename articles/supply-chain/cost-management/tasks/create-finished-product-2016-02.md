@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 19cba700a2c96a09e0444c17323b8b2d4bf43f7d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4e01d45c9f1e2a4ec866f18e18827f6dab2cdbd1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-finished-product-february-2016-only"></a><span data-ttu-id="f132f-103">Tworzenie gotowego produktu (tylko luty 2016)</span><span class="sxs-lookup"><span data-stu-id="f132f-103">Create a finished product (February 2016 only)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f132f-104">To zadanie koncentruje się na tworzeniu wyrobu gotowego.</span><span class="sxs-lookup"><span data-stu-id="f132f-104">This task focuses on creating a finished product.</span></span> <span data-ttu-id="f132f-105">Jest to pierwsze zadanie w serii zadań obliczania BOM.</span><span class="sxs-lookup"><span data-stu-id="f132f-105">It is the first task in the BOM calculation series.</span></span> <span data-ttu-id="f132f-106">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="f132f-106">The demo data company used to create this task is USMF.</span></span>
 

@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 5c0af3d9446b4f8ae80eeb44494f1ef1e6667e55
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 46dba3a61cf96b19b5bc4d2956d028bbbeaaa60e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="benefit-eligibility-policies"></a><span data-ttu-id="4ca3d-103">Zasady uprawnienia do świadczenia</span><span class="sxs-lookup"><span data-stu-id="4ca3d-103">Benefit eligibility policies</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="4ca3d-104">Ten temat zawiera informacje o zasadach uprawnień do świadczeń, które pomagają określić, kto może otrzymywać określone świadczenia.</span><span class="sxs-lookup"><span data-stu-id="4ca3d-104">This topic provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.</span></span>
 

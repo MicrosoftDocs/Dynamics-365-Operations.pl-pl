@@ -17,15 +17,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 80543780c423b5beac3ec57f4fa035e560aaa4ce
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e6ca0de2956e7e2b76f1286b0d01a3a2e3f3d53d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="copy-co-products-from-an-existing-formula-version"></a><span data-ttu-id="8707e-103">Kopiowanie produktów towarzyszących z istniejącej wersji formuły</span><span class="sxs-lookup"><span data-stu-id="8707e-103">Copy co-products from an existing formula version</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="8707e-104">W tej procedurze pokazano sposób kopiowania produktów towarzyszących z istniejącej wersji formuły do innej wersji formuły dla zwolnionego produktu.</span><span class="sxs-lookup"><span data-stu-id="8707e-104">This procedure shows how to copy co-products from an existing formula version to a different formula version for a released product.</span></span> <span data-ttu-id="8707e-105">Warunkiem wstępnym jest istnienie co najmniej jednej wersji formuły skojarzonej z produktami towarzyszącymi.</span><span class="sxs-lookup"><span data-stu-id="8707e-105">It is a prerequisite that there is at least one formula version associated with co-products.</span></span> <span data-ttu-id="8707e-106">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USP2.</span><span class="sxs-lookup"><span data-stu-id="8707e-106">The demo data company USP2 is used to create this procedure.</span></span>
 

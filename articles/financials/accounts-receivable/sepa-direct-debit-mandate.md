@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: b06a5385d7c33ddcfe6bfabbfda6a1f7fa99aada
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 84e4a714b1233a0fb4ebb04757ba12a5d14d6f44
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-sepa-direct-debit-mandate"></a><span data-ttu-id="30e16-103">Konfigurowanie polecenia zapłaty SEPA</span><span class="sxs-lookup"><span data-stu-id="30e16-103">Set up SEPA direct debit mandate</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="30e16-104">Polecenie zapłaty SEPA służy do gromadzenia środków z konta bankowego odbiorcy przez wierzyciela pod warunkiem, że odbiorca udzielił na to pisemnej zgody wierzycielowi.</span><span class="sxs-lookup"><span data-stu-id="30e16-104">A Single Euro Payment Area (SEPA) direct debit lets a creditor collect funds from a customer's bank account, provided that the customer has granted a signed mandate to the creditor.</span></span> <span data-ttu-id="30e16-105">Odbiorca podpisuje zgodę, która upoważnia wierzyciela do pobierania płatności i instruuje bank odbiorcy, że ma on dokonać wypłaty.</span><span class="sxs-lookup"><span data-stu-id="30e16-105">The mandate that the customer signs authorizes the creditor to collect a payment and instructs the customer's bank to pay the collection.</span></span> <span data-ttu-id="30e16-106">Ten temat uporządkowano tak, aby przedstawiał proces konfigurowania zgód na polecenie zapłaty SEPA.</span><span class="sxs-lookup"><span data-stu-id="30e16-106">This topic is organized to show the process for setting up SEPA direct debit mandates.</span></span>
 

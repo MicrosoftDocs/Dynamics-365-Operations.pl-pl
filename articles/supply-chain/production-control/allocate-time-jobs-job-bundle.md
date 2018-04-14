@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a5204288ce3eaabb605f136ea788d235f408f349
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ef7285da57471804f3d8fd1d5b955ce31519e81f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a><span data-ttu-id="a9d26-104">Alokowanie czasu do zadań w pakiecie zadań</span><span class="sxs-lookup"><span data-stu-id="a9d26-104">Allocate time to jobs in a job bundle</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="a9d26-105">W module Uruchomienie produkcji można łączyć zadania w pakiety.</span><span class="sxs-lookup"><span data-stu-id="a9d26-105">In Manufacturing execution, you can bundle jobs.</span></span> <span data-ttu-id="a9d26-106">Następnie można uruchomić wiele zadań jednocześnie na stronie Lista zadań.</span><span class="sxs-lookup"><span data-stu-id="a9d26-106">You can then start multiple jobs at the same time on the Job list page.</span></span>
 

@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dc5e072f23cbb0dcc2d3d1d390070bb11a2d2f06
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 24ef07d3b5c9c433055553118561d753343a0813
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="accounts-payable-invoice-matching"></a><span data-ttu-id="6100a-103">Uzgadnianie faktur rozrachunków z dostawcami</span><span class="sxs-lookup"><span data-stu-id="6100a-103">Accounts payable invoice matching</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="6100a-104">Uzgadnianie faktur rozrachunków z dostawcami jest procesem uzgadniania obejmującym informacje z faktury dostawcy, zamówienia zakupu i przyjęć produktów.</span><span class="sxs-lookup"><span data-stu-id="6100a-104">Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.</span></span>
 

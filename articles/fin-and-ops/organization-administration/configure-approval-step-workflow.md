@@ -18,17 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d2fc157b54401463bbabf1e3f6d5dddc6bda9631
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c142534e9e5b5f154f478889d13540dc3d47ad18
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-an-approval-step-in-a-workflow"></a><span data-ttu-id="87057-103">Konfigurowanie etapu zatwierdzania w przepływie pracy</span><span class="sxs-lookup"><span data-stu-id="87057-103">Configure an approval step in a workflow</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="87057-104">W tym temacie wyjaśniono sposób konfigurowania właściwości kroku zatwierdzania.</span><span class="sxs-lookup"><span data-stu-id="87057-104">This topic explains how to configure the properties of an approval step.</span></span>
 
@@ -145,9 +144,9 @@ ms.lasthandoff: 11/03/2017
     <span data-ttu-id="87057-192">Jeśli użytkownik nie podejmie działania wobec dokumentu w wyznaczonym czasie, dokument staje się zaległy.</span><span class="sxs-lookup"><span data-stu-id="87057-192">If the user doesn't take action on the document in the allotted time, the document is overdue.</span></span> <span data-ttu-id="87057-193">Dokument zaległy można eskalować na podstawie opcji wybranych na stronie w obszarze **Eskalacja**.</span><span class="sxs-lookup"><span data-stu-id="87057-193">A document that is overdue is escalated, based on the options that you select in the **Escalation** area of the page.</span></span>
 4.  <span data-ttu-id="87057-194">Jeśli krok zatwierdzania został przypisany do wielu użytkowników lub do grupy użytkowników, na karcie **Zasady ukończenia** wybierz jedną z następujących opcji:</span><span class="sxs-lookup"><span data-stu-id="87057-194">If you assigned the approval step to multiple users or a group of users, on the **Completion policy** tab, select one of the following options:</span></span>
     -   <span data-ttu-id="87057-195">**Pojedyncza osoba zatwierdzająca** — Akcja stosowana do dokumentu jest określona przez pierwszą osobę, która odpowiada.</span><span class="sxs-lookup"><span data-stu-id="87057-195">**Single approver** – The action that is applied to the document is determined by the first person who responds.</span></span> <span data-ttu-id="87057-196">Na przykład Tomasz przesłał raport z wydatków na 15 000 zł.</span><span class="sxs-lookup"><span data-stu-id="87057-196">For example, Sam has submitted an expense report for USD 15,000.</span></span> <span data-ttu-id="87057-197">Raport z wydatków jest obecnie przypisany do Magdy, Ewy i Bartka.</span><span class="sxs-lookup"><span data-stu-id="87057-197">The expense report is currently assigned to Sue, Jo, and Bill.</span></span> <span data-ttu-id="87057-198">Jeśli pierwszą osobą, która odpowie na dokument, jest Magda, wybrana przez nią akcja zostanie zastosowana do dokumentu.</span><span class="sxs-lookup"><span data-stu-id="87057-198">If Sue is the first person who responds to the document, the action that she takes is applied to the document.</span></span> <span data-ttu-id="87057-199">Jeśli Magda odrzuci dokument, zostanie on odrzucony i wysłany z powrotem do Tomasza.</span><span class="sxs-lookup"><span data-stu-id="87057-199">If Sue rejects the document, it's rejected and sent back to Sam.</span></span> <span data-ttu-id="87057-200">Po zatwierdzeniu przez Magdę dokument zostanie przesłany do Anny w celu zatwierdzenia.</span><span class="sxs-lookup"><span data-stu-id="87057-200">If Sue approves the document, it's sent to Ann for approval.</span></span> 
-    
+
     ![Przepływ pracy z procesem zatwierdzania](./media/workflow_multipleusersinstep.gif)
-    
+
     -   <span data-ttu-id="87057-202">**Większość osób zatwierdzających** — Akcja stosowana do dokumentu jest określana po uzyskaniu odpowiedzi od większości osób zatwierdzających.</span><span class="sxs-lookup"><span data-stu-id="87057-202">**Majority of approvers** – The action that is applied to the document is determined when most of the approvers respond.</span></span> <span data-ttu-id="87057-203">Na przykład Tomasz przesłał raport z wydatków na 15 000 zł.</span><span class="sxs-lookup"><span data-stu-id="87057-203">For example, Sam has submitted an expense report for USD 15,000.</span></span> <span data-ttu-id="87057-204">Raport z wydatków jest obecnie przypisany do Magdy, Ewy i Bartka.</span><span class="sxs-lookup"><span data-stu-id="87057-204">The expense report is currently assigned to Sue, Jo, and Bill.</span></span> <span data-ttu-id="87057-205">Jeżeli dwoma pierwszym osobami zatwierdzającymi, które zareagowały, są Magda i Ewa, ich operacje są stosowane do dokumentu.</span><span class="sxs-lookup"><span data-stu-id="87057-205">If Sue and Jo are the first two approvers who respond, the action that they take is applied to the document.</span></span>
         -   <span data-ttu-id="87057-206">Jeśli Magda zatwierdzi dokument, ale Ewa go odrzuci, dokument zostanie odrzucony i wysłany z powrotem do Tomasza.</span><span class="sxs-lookup"><span data-stu-id="87057-206">If Sue approves the document, but Jo rejects it, the document is rejected and sent back to Sam.</span></span>
         -   <span data-ttu-id="87057-207">Jeśli Magda i Ewa zatwierdzą dokument, zostanie on wysłany do Anny do zatwierdzenia.</span><span class="sxs-lookup"><span data-stu-id="87057-207">If both Sue and Jo approve the document, it's sent to Ann for approval.</span></span>

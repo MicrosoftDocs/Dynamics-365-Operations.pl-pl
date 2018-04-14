@@ -19,17 +19,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: bc8e606cdc0bc5a45321c67ce9b089059f226df2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 87927f5bddbf11c224c77cff7c5355f2cd1317a6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configuration-rules"></a><span data-ttu-id="6c4dc-104">Reguły konfiguracji</span><span class="sxs-lookup"><span data-stu-id="6c4dc-104">Configuration rules</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="6c4dc-105">Ten artykuł zawiera ogólne informacje o regułach konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="6c4dc-105">This article provides general information about configuration rules.</span></span> <span data-ttu-id="6c4dc-106">Reguły konfiguracji definiują relacje między towarami na liście składowej (BOM) dla produktów wykorzystujących technologię konfiguracji opartej na wymiarach.</span><span class="sxs-lookup"><span data-stu-id="6c4dc-106">Configuration rules define relationships between items in a bill of materials (BOM) for products that use the dimension-based configuration technology.</span></span>
 

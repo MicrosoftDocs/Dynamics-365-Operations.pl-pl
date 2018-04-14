@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7850a121ca06f25f6c532e49e18c0b6811bd7455
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 57f11ab8616914c489e0f8a8424355c79b210978
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-production-flow-models"></a><span data-ttu-id="0b89b-103">Definiowanie modeli przepływu produkcji</span><span class="sxs-lookup"><span data-stu-id="0b89b-103">Define production flow models</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0b89b-104">Modele przepływu produkcji opisują sposób obliczania i obsługi zdolności produkcyjnych komórek roboczych w produkcji oszczędnej.</span><span class="sxs-lookup"><span data-stu-id="0b89b-104">Production flow models describe how the capacity of lean manufacturing work cells is calculated and maintained.</span></span> <span data-ttu-id="0b89b-105">Dlatego zdefiniowanie modelu przepływu produkcji jest warunkiem wstępnym zdefiniowania komórek roboczych.</span><span class="sxs-lookup"><span data-stu-id="0b89b-105">Therefore the definition of a production flow model is a prerequisite of the definition of work cells.</span></span> <span data-ttu-id="0b89b-106">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="0b89b-106">The demo data company used to create this procedure is USMF.</span></span>
 

@@ -20,17 +20,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0e0f9d81f4d5943a89d8ac87776e05acb32cb8d9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0e72df11e8fc4a43d74a6fe596a223266ddf5b09
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="partial-location-cycle-counting"></a><span data-ttu-id="c2749-104">Częściowa inwentaryzacja ciągła w lokalizacji</span><span class="sxs-lookup"><span data-stu-id="c2749-104">Partial location cycle counting</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="c2749-105">Plany inwentaryzacji ciągłej decydują o faktycznym przebiegu operacji inwentaryzacji.</span><span class="sxs-lookup"><span data-stu-id="c2749-105">Cycle count plans guide the actual counting operations.</span></span> <span data-ttu-id="c2749-106">Można poprosić, aby były inwentaryzowane tylko określone produkty i warianty produktu, a nie wszystkie zapasy dostępne w lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="c2749-106">You can request that only specific products and product variants be counted instead of all on-hand inventory in a location.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 331f516f3483acd79be4ef7b95b53adcfbef1ae2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d6e7c8884c0fa29b5c6efc053f2ad8171581b946
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-request-for-quotation"></a><span data-ttu-id="6804b-103">Tworzenie zapytania ofertowego</span><span class="sxs-lookup"><span data-stu-id="6804b-103">Create a request for quotation</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="6804b-104">W tej procedurze pokazano sposób tworzenia zapytania ofertowego.</span><span class="sxs-lookup"><span data-stu-id="6804b-104">This procedure shows you how to create a request for quotation.</span></span> <span data-ttu-id="6804b-105">Zazwyczaj robi to pracownik działu zakupów.</span><span class="sxs-lookup"><span data-stu-id="6804b-105">This would typically be done by a purchasing agent.</span></span> <span data-ttu-id="6804b-106">Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="6804b-106">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="6804b-107">Przed rozpoczęciem trzeba mieć skonfigurowane typy zdobywania zamówień.</span><span class="sxs-lookup"><span data-stu-id="6804b-107">You need to have set up solicitation types before you start.</span></span> <span data-ttu-id="6804b-108">Po wykonaniu tego zadania i utworzeniu oraz wysłaniu ZO można wprowadzić odpowiedzi dla poszczególnych dostawców, porównać je, a następnie przyznać zamówienie.</span><span class="sxs-lookup"><span data-stu-id="6804b-108">Once you’ve completed this task and you’ve created and sent an RFQ you can then enter the replies per vendor, compare them, and award the contract.</span></span>
 

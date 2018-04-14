@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 4082facdba02cd69c6679e7f3e68e391d29e4195
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ba1b158908ac2328c29f7efe23756248be5be33c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="manage-items-lent-to-workers"></a><span data-ttu-id="3f3db-103">Zarządzanie elementami wypożyczonymi pracownikom.</span><span class="sxs-lookup"><span data-stu-id="3f3db-103">Manage items lent to workers</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="3f3db-104">Przedmioty pożyczek są rekordami, które pomagają kierownikom śledzić fizyczne przedmioty, które firma pożycza pracownikom.</span><span class="sxs-lookup"><span data-stu-id="3f3db-104">Loan items are records that help managers track the physical items that your company lends to its workers.</span></span> 
 
@@ -51,7 +50,7 @@ ms.lasthandoff: 01/31/2018
 
 <span data-ttu-id="3f3db-120">Jeśli przedmiot został uszkodzony lub przestawiony, należy zarejestrować fikcyjny zwrot.</span><span class="sxs-lookup"><span data-stu-id="3f3db-120">If an item becomes damaged or misplaced, enter a fictitious return record.</span></span> <span data-ttu-id="3f3db-121">Następnie należy usunąć przedmiot lub zachować go w zestawieniu i zmienić opis, aby wskazać, że przedmiot jest niedostępny.</span><span class="sxs-lookup"><span data-stu-id="3f3db-121">Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.</span></span>
 
- 
+
 <a name="see-also"></a><span data-ttu-id="3f3db-122">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="3f3db-122">See also</span></span>
 --------
 

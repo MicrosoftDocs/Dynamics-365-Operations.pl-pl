@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5402aa886d7194c4dcfad329aa30eb19bae3bc84
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 174ac560bf375fe3aacfcb351a3d5b2ce91fba6a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a><span data-ttu-id="9382f-103">Rozliczenie płatności częściowej odbiorcy, do której zastosowano rabaty na fakturach korygujących dostawcy</span><span class="sxs-lookup"><span data-stu-id="9382f-103">Settle a partial customer payment that has discounts on credit notes</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9382f-104">Ten artykuł prowadzi przez scenariusz, w którym rabat gotówkowy jest stosowany do faktury korygującej w sytuacji, gdy również oryginalna faktura miała rabat gotówkowy.</span><span class="sxs-lookup"><span data-stu-id="9382f-104">This article walks you through a scenario where a cash discount is taken on a credit note when the original invoice also had a cash discount.</span></span> 
 

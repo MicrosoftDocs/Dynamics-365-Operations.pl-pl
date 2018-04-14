@@ -20,17 +20,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 577204b49355a470769237eb46ad74e7f319a55e
-ms.openlocfilehash: 1004e493611dd77289d092961793b8bb4fef01fc
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 08b513609306bd4604cc910560324d87105afbf9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="reconcile-freight-in-transportation-management"></a><span data-ttu-id="b9d70-103">Uzgadnianie frachtu w module Zarządzanie transportem</span><span class="sxs-lookup"><span data-stu-id="b9d70-103">Reconcile freight in transportation management</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="b9d70-104">W tym artykule opisano proces uzgadniania frachtu.</span><span class="sxs-lookup"><span data-stu-id="b9d70-104">This article describes the freight reconciliation process.</span></span>
 

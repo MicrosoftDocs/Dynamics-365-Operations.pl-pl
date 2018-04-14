@@ -16,15 +16,15 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cafd499e849570cae7b7f58bf2d487a7ac0093e6
-ms.openlocfilehash: 6bce294329c7ec6dc436c3d3baf6597e0283c9bd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 77497bc8cf50bb33c7e1fe1f9ea72ed0f1f3876e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="reclassify-fixed-assets"></a><span data-ttu-id="fec40-103">Zmień klasyfikację środków trwałych</span><span class="sxs-lookup"><span data-stu-id="fec40-103">Reclassify fixed assets</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="fec40-104">Aby przeklasyfikować środek trwały, należy przenieść go do nowej grupy środków trwałych lub przypisać mu nowy numer środka trwałego w tej samej grupie.</span><span class="sxs-lookup"><span data-stu-id="fec40-104">To reclassify a fixed asset, you must transfer it to a new fixed asset group or assign a new fixed asset number to it in the same group.</span></span> 
 

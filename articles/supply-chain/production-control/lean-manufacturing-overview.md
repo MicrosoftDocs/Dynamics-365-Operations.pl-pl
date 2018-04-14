@@ -20,17 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 99030966587a2784f61cecbfc7f9985f75f6d779
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0feb75e728517d24602025e3ceb12cb6ab1840f4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="lean-manufacturing-overview"></a><span data-ttu-id="08844-103">Omówienie wytwarzania typu lean manufacturing</span><span class="sxs-lookup"><span data-stu-id="08844-103">Lean manufacturing overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="08844-104">Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w programie Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="08844-104">This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
@@ -40,6 +39,7 @@ ms.lasthandoff: 03/26/2018
 -   <span data-ttu-id="08844-109">Monitorowanie i obsługa zadań w systemie Kanban.</span><span class="sxs-lookup"><span data-stu-id="08844-109">Monitor and maintain kanban jobs.</span></span>
 
 <span data-ttu-id="08844-110">Architektura produkcji oszczędnej (lean manufacturing) w programie Finance and Operations składa się z przepływów produkcji, działań i reguł systemu Kanban.</span><span class="sxs-lookup"><span data-stu-id="08844-110">The lean manufacturing architecture in Finance and Operations consists of production flows, activities, and kanban rules.</span></span> <span data-ttu-id="08844-111">Te struktury są pełni zintegrowane z procesami programu Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="08844-111">These structures are fully integrated with Finance and Operations processes.</span></span> <span data-ttu-id="08844-112">W środowisku produkcji oszczędnej (lean manufacturing) trybu mieszanego pozwala to łączyć ze sobą różne strategie dostaw, produkcji i pozyskiwania materiałów.</span><span class="sxs-lookup"><span data-stu-id="08844-112">You can use lean manufacturing in a mixed-mode manufacturing environment that combines various supply, production, and sourcing strategies.</span></span> <span data-ttu-id="08844-113">Te strategie obejmują zamówienia produkcyjne, zamówienia partii w przemyśle procesowym, zamówienia zakupu i zamówienia przeniesienia.</span><span class="sxs-lookup"><span data-stu-id="08844-113">These strategies include production orders, batch orders for process industries, purchase orders, and transfer orders.</span></span>
+
 | <span data-ttu-id="08844-114">**Ważne**</span><span class="sxs-lookup"><span data-stu-id="08844-114">**Important**</span></span>                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="08844-115">Program Finance and Operations umożliwia implementację produkcji oszczędnej (lean manufacturing) z kartami Kanban.</span><span class="sxs-lookup"><span data-stu-id="08844-115">You can use Finance and Operations to support the implementation of lean manufacturing with kanbans.</span></span> <span data-ttu-id="08844-116">Powodzenie wprowadzania w życie zasad produkcji oszczędnej (lean manufacturing) zależy jednak od wewnętrznych procesów biznesowych, jakich używasz, oraz rzeczywistych warunki produkcji i środowiska.</span><span class="sxs-lookup"><span data-stu-id="08844-116">However, a successful implementation of lean principles depends on the internal business processes that you use, and the actual production conditions and environment.</span></span> |

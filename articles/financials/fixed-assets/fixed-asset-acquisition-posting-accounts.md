@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a1a7da48b45566217399bc1d01a9c6e87ad56ec8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1e30d9f8ee4c7d6aea2da33975cd7f353cdc62eb
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="fixed-asset-acquisition-posting-accounts"></a><span data-ttu-id="4fab1-103">Konta księgowania nabycia środków trwałych</span><span class="sxs-lookup"><span data-stu-id="4fab1-103">Fixed asset acquisition posting accounts</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="4fab1-104">W tym artykule wyjaśniono, jak w księdze głównej skonfigurować konta księgowania operacji nabycia środków trwałych.</span><span class="sxs-lookup"><span data-stu-id="4fab1-104">This article explains how to set up general ledger posting accounts for acquiring assets.</span></span>
 

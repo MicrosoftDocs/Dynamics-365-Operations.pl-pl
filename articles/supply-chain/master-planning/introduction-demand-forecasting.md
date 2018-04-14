@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 6a0455c5d86f953e270501a7f1648f7700f717d0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7a4a284c818b68e36baea55eac3d97b8396db993
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="demand-forecasting-overview"></a><span data-ttu-id="5e3e5-104">Podstawowe informacje o prognozowaniu popytu</span><span class="sxs-lookup"><span data-stu-id="5e3e5-104">Demand forecasting overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="5e3e5-105">Prognozowanie popytu jest używane do przewidywania niezależnego popytu z zamówień sprzedaży i zależnego popytu w dowolnym punkcie oddzielenia dla zamówień od odbiorców.</span><span class="sxs-lookup"><span data-stu-id="5e3e5-105">Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders.</span></span> <span data-ttu-id="5e3e5-106">Rozszerzone reguły redukcji prognozy popytu są doskonałym rozwiązaniem do masowego dostosowywania.</span><span class="sxs-lookup"><span data-stu-id="5e3e5-106">The enhanced demand forecast reduction rules provide an ideal solution for mass customization.</span></span>
 

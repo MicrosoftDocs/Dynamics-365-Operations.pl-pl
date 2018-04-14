@@ -19,17 +19,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: e7136c2e13b0e4fd3315e91f281174bdd8a45cb0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3691379ea08ebebdad9e33359140d007d5d899dd
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-a-workflow"></a><span data-ttu-id="1c8e2-103">Tworzenie przepływu pracy</span><span class="sxs-lookup"><span data-stu-id="1c8e2-103">Create a workflow</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="1c8e2-104">W tym temacie wyjaśniono, jak utworzyć przepływ pracy.</span><span class="sxs-lookup"><span data-stu-id="1c8e2-104">This topic explains how to create a workflow.</span></span>
 

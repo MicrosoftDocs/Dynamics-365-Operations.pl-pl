@@ -16,16 +16,16 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 65e6b45b0f2426f126b3f5b27036560cd3685cab
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0ee0cc2e22609d1a87e7d2b6dcd031606191f879
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="learning-power-bi-content"></a><span data-ttu-id="2a96f-103">Pakiet zawartości usługi Power BI Szkolenia</span><span class="sxs-lookup"><span data-stu-id="2a96f-103">Learning Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="2a96f-104">W tym temacie opisano pakiet zawartość **Szkolenia** dostępny dla usługi Microsoft Power BI.</span><span class="sxs-lookup"><span data-stu-id="2a96f-104">This topic describes the **Learning** Microsoft Power BI content.</span></span>
 

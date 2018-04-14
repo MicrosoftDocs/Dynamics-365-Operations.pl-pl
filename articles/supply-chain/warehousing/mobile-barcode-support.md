@@ -18,16 +18,16 @@ ms.author: Mirzaab
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3c43a42822f291607fbc9708dd07ebf99b9d7ec4
-ms.openlocfilehash: 3cae5d4c4680f61b671f63616908bc3b6c463da6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6cf870974b2f772e82fbf828e83f065dc945d377
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="mobile-bar-code-support"></a><span data-ttu-id="ef5d1-103">Mobilna obsługa kodów kreskowych</span><span class="sxs-lookup"><span data-stu-id="ef5d1-103">Mobile bar code support</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ef5d1-104">Ponieważ system Android to projekt typu open source, każdy producent sprzętu do skanerów kodów kreskowych w magazynach może opracować urządzenie działające pod kontrolą systemu Android.</span><span class="sxs-lookup"><span data-stu-id="ef5d1-104">Because Android is an open source project, any manufacturer of hardware for warehouse bar code scanners can build a device to run the Android operating system.</span></span> <span data-ttu-id="ef5d1-105">Urządzenie jest zgodne z systemem Android tylko wtedy, gdy umożliwia uruchamianie aplikacji dla środowiska uruchomieniowego systemu Android.</span><span class="sxs-lookup"><span data-stu-id="ef5d1-105">A device is only Android-compatible if it can run apps that are written for the Android execution environment.</span></span>
 <span data-ttu-id="ef5d1-106">Dostawca sprzętu może jednak modyfikować system i tworzyć nakładki dla wersji systemu Android działającej na jego sprzęcie.</span><span class="sxs-lookup"><span data-stu-id="ef5d1-106">However, a hardware vendor can modify and create overlays for the Android version that runs on their hardware.</span></span> <span data-ttu-id="ef5d1-107">Firma Microsoft nie ponosi odpowiedzialności za zapewnienie zgodności mobilnej aplikacji do skanowania kodów kreskowych dla systemu Android z urządzeniem producenta do skanowania kodów kreskowych i działającą na nim wersją systemu Android.</span><span class="sxs-lookup"><span data-stu-id="ef5d1-107">Microsoft cannot take any responsibility to ensure that a mobile bar code scanning app for Android is compatible with a manufacturer’s bar code scanning hardware and the Android version that runs on it.</span></span> 

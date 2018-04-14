@@ -19,16 +19,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7eb15f9f73f4773d98160e1b0ec5ce74c159cdea
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c8d63ab3dcde9c206f1c0ddd0185109a3298f5a4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a><span data-ttu-id="f06d2-104">Wybór nowoczesnego punktu sprzedaży lub punktu sprzedaży w chmurze</span><span class="sxs-lookup"><span data-stu-id="f06d2-104">Choose between Modern POS and Cloud POS</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="f06d2-105">W temacie tym przedstawiono również dodatkowe tło, wskazówki oraz wytyczne dla osób odpowiedzialnych za wdrożenie w zakresie czynników, jakie powinni wziąć pod uwagę podczas wdrażania oprogramowania Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="f06d2-105">This topic gives implementers additional background, tips, and guidance for factors that they should consider when they deploy Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="f06d2-106">Zapoznanie się z tymi wytycznymi oraz przestrzeganie ich w procesie wdrożenia pozwoli uniknąć osobom odpowiedzialnym za wdrożenie problemów, które mogą wpłynąć na zadowolenie klienta lub wydajność.</span><span class="sxs-lookup"><span data-stu-id="f06d2-106">By reviewing and following this guidance as part of the deployment process, implementers can avoid issues that might affect user satisfaction or performance.</span></span>
 
@@ -92,8 +92,8 @@ ms.lasthandoff: 02/07/2018
 
     <span data-ttu-id="f06d2-178">O ile łączność w przypadku danego urządzenia jest bardzo niezawodna i elastyczna lub o ile sprzedawca detaliczny nie dopuszcza pewnego czasu przestoju, zaleca się zastosowanie jednej z następujących opcji:</span><span class="sxs-lookup"><span data-stu-id="f06d2-178">Unless the connectivity for a given device is very dependable and resilient, or unless a certain amount of downtime is acceptable to the retailer, we recommend one of the following options:</span></span>
 
-    - <span data-ttu-id="f06d2-179">Korzystanie z punktu MPOS dla systemu Windows z aktywnym trybem pracy offline.</span><span class="sxs-lookup"><span data-stu-id="f06d2-179">Use MPOS in Windows, and enable offline mode.</span></span>
-    - <span data-ttu-id="f06d2-180">Wdrożenie lokalnej jednostki RSSU.</span><span class="sxs-lookup"><span data-stu-id="f06d2-180">Deploy an on-premises RSSU.</span></span>
+  - <span data-ttu-id="f06d2-179">Korzystanie z punktu MPOS dla systemu Windows z aktywnym trybem pracy offline.</span><span class="sxs-lookup"><span data-stu-id="f06d2-179">Use MPOS in Windows, and enable offline mode.</span></span>
+  - <span data-ttu-id="f06d2-180">Wdrożenie lokalnej jednostki RSSU.</span><span class="sxs-lookup"><span data-stu-id="f06d2-180">Deploy an on-premises RSSU.</span></span>
 
     <span data-ttu-id="f06d2-181">Te dwie opcje nie wykluczają się wzajemnie.</span><span class="sxs-lookup"><span data-stu-id="f06d2-181">These two options aren't mutually exclusive.</span></span> <span data-ttu-id="f06d2-182">W przypadku większości niezawodnych topologii sprzedawcy detaliczni mogą wdrożyć lokalną jednostkę RSSU w celu ograniczenia zależności od łączności internetowej lub dostępności usługi Azure, a ponadto mogą również wdrożyć rejestry punktu sprzedaży na urządzeniu z włączonym trybem offline na wypadek wystąpienia problemu z serwerem lokalnym lub siecią.</span><span class="sxs-lookup"><span data-stu-id="f06d2-182">For the most reliable topology, retailers can deploy a local RSSU to reduce the dependency on internet connectivity or Azure availability, and they can also deploy POS registers where offline mode is enabled if there is an issue with the local server or network.</span></span>
 

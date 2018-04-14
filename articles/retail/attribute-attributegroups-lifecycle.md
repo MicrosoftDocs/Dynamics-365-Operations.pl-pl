@@ -19,16 +19,16 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 53af4335146be6c163a6d84b60155e1a741c0be4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad524e8d585da2140f3cdae17e3a1a2832ada3f0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a><span data-ttu-id="ddae1-102">Atrybuty i grupy atrybutów oraz ich powiązania z różnymi jednostkami aplikacji Retail w programie Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="ddae1-102">Attributes, attribute groups, and their associations with various Retail entities in Finance and Operations</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="ddae1-103">*Atrybuty* umożliwiają dokładniejsze opisanie produktu i jego właściwości za pomocą pól zdefiniowanych przez użytkownika (takich jak **Rozmiar pamięci**, **Pojemność dysku twardego**, **Zgodność z normą Energy Star** i tak dalej).</span><span class="sxs-lookup"><span data-stu-id="ddae1-103">*Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on).</span></span> <span data-ttu-id="ddae1-104">W programie Microsoft Dynamics 365 for Finance and Operations atrybuty można skojarzyć z różnymi jednostkami modułu Retail, takimi jak kategorie produktów i kanały sprzedaży detalicznej, oraz ustawić im wartości domyślne.</span><span class="sxs-lookup"><span data-stu-id="ddae1-104">In Microsoft Dynamics 365 for Finance and Operations, attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them.</span></span> <span data-ttu-id="ddae1-105">Wtedy produkty dziedziczą atrybuty i wartości domyślne, gdy zostaną powiązane z kategoriami produktów lub kanałami sprzedaży detalicznej.</span><span class="sxs-lookup"><span data-stu-id="ddae1-105">Products then inherit the attributes and the default values when they are associated with the product categories or retail channels.</span></span> <span data-ttu-id="ddae1-106">Wartości domyślne można zastąpić na poziomie poszczególnych produktów, na poziomie kanału sprzedaży detalicznej lub w katalogu sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="ddae1-106">The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.</span></span>
  
@@ -227,13 +227,13 @@ ms.lasthandoff: 03/26/2018
 5. <span data-ttu-id="ddae1-307">Na skróconej karcie **Produkty** wybierz wymagany produkt, a następnie nad siatką produktów wybierz opcję **Atrybuty**.</span><span class="sxs-lookup"><span data-stu-id="ddae1-307">On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.</span></span>
 6. <span data-ttu-id="ddae1-308">Na następnej skróconej karcie zaktualizuj wartości wymaganych atrybutów:</span><span class="sxs-lookup"><span data-stu-id="ddae1-308">On the following FastTabs, update the values of the required attributes:</span></span>
 
-    - <span data-ttu-id="ddae1-309">Udostępnione media produktu</span><span class="sxs-lookup"><span data-stu-id="ddae1-309">Shared product media</span></span>
-    - <span data-ttu-id="ddae1-310">Udostępnione atrybuty produktu</span><span class="sxs-lookup"><span data-stu-id="ddae1-310">Shared product attributes</span></span>
-    - <span data-ttu-id="ddae1-311">Kanał medialny</span><span class="sxs-lookup"><span data-stu-id="ddae1-311">Channel media</span></span>
-    - <span data-ttu-id="ddae1-312">Atrybuty produktu kanału</span><span class="sxs-lookup"><span data-stu-id="ddae1-312">Channel product attributes</span></span>
+   - <span data-ttu-id="ddae1-309">Udostępnione media produktu</span><span class="sxs-lookup"><span data-stu-id="ddae1-309">Shared product media</span></span>
+   - <span data-ttu-id="ddae1-310">Udostępnione atrybuty produktu</span><span class="sxs-lookup"><span data-stu-id="ddae1-310">Shared product attributes</span></span>
+   - <span data-ttu-id="ddae1-311">Kanał medialny</span><span class="sxs-lookup"><span data-stu-id="ddae1-311">Channel media</span></span>
+   - <span data-ttu-id="ddae1-312">Atrybuty produktu kanału</span><span class="sxs-lookup"><span data-stu-id="ddae1-312">Channel product attributes</span></span>
 
-    > [!NOTE]
-    > <span data-ttu-id="ddae1-313">Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="ddae1-313">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
+     > [!NOTE]
+     > <span data-ttu-id="ddae1-313">Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="ddae1-313">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
 
 ![Grupy atrybutów produktów z katalogu](media/CatalogProdAttrValues.png)
 
@@ -249,11 +249,11 @@ ms.lasthandoff: 03/26/2018
 
 5. <span data-ttu-id="ddae1-321">Na następnej skróconej karcie zaktualizuj wartości wymaganych atrybutów:</span><span class="sxs-lookup"><span data-stu-id="ddae1-321">On the following FastTabs, update the values of the required attributes:</span></span>
 
-    - <span data-ttu-id="ddae1-322">Udostępnione media produktu</span><span class="sxs-lookup"><span data-stu-id="ddae1-322">Shared product media</span></span>
-    - <span data-ttu-id="ddae1-323">Udostępnione atrybuty produktu</span><span class="sxs-lookup"><span data-stu-id="ddae1-323">Shared product attributes</span></span>
-    - <span data-ttu-id="ddae1-324">Kanał medialny</span><span class="sxs-lookup"><span data-stu-id="ddae1-324">Channel media</span></span>
-    - <span data-ttu-id="ddae1-325">Atrybuty produktu kanału</span><span class="sxs-lookup"><span data-stu-id="ddae1-325">Channel product attributes</span></span>
+   - <span data-ttu-id="ddae1-322">Udostępnione media produktu</span><span class="sxs-lookup"><span data-stu-id="ddae1-322">Shared product media</span></span>
+   - <span data-ttu-id="ddae1-323">Udostępnione atrybuty produktu</span><span class="sxs-lookup"><span data-stu-id="ddae1-323">Shared product attributes</span></span>
+   - <span data-ttu-id="ddae1-324">Kanał medialny</span><span class="sxs-lookup"><span data-stu-id="ddae1-324">Channel media</span></span>
+   - <span data-ttu-id="ddae1-325">Atrybuty produktu kanału</span><span class="sxs-lookup"><span data-stu-id="ddae1-325">Channel product attributes</span></span>
 
-    > [!NOTE]
-    > <span data-ttu-id="ddae1-326">Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="ddae1-326">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
+     > [!NOTE]
+     > <span data-ttu-id="ddae1-326">Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="ddae1-326">If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.</span></span>
 

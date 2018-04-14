@@ -20,17 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1176ce1fcd406cf363969e60ae388a83d7df210f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b2e9449e4ba1c534bcdb5a05e5da0311b2bb2e3c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="standard-cost-conversion-overview"></a><span data-ttu-id="1b124-104">Omówienie konwersji na koszt standardowy</span><span class="sxs-lookup"><span data-stu-id="1b124-104">Standard cost conversion overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="1b124-105">Ten artykuł zawiera omówienie procesu ułatwiające konfigurowanie i wykonywanie konwersji na koszt standardowy.</span><span class="sxs-lookup"><span data-stu-id="1b124-105">This article provides a process overview to help you set up and run a standard cost conversion.</span></span> <span data-ttu-id="1b124-106">Podane kroki należy wykonać po spełnieniu warunków wstępnych konwersji na koszt standardowy.</span><span class="sxs-lookup"><span data-stu-id="1b124-106">The steps listed are intended to be completed after you've completed the prerequisites for a standard cost conversion.</span></span> 
 

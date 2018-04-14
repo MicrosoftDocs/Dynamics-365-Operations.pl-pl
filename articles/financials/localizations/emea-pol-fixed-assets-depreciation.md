@@ -18,17 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: eadb2d8e8292a2d205ccf3f32128afd116fd394d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5817c813f2247456b0b90a78d4d4adf78b726bec
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="fixed-assets-depreciation-for-poland"></a><span data-ttu-id="55c72-103">Amortyzacja środków trwałych dla Polski</span><span class="sxs-lookup"><span data-stu-id="55c72-103">Fixed assets depreciation for Poland</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="55c72-104">Ten temat zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce.</span><span class="sxs-lookup"><span data-stu-id="55c72-104">This topic provides information about fixed assets depreciation for legal entities in Poland.</span></span>
 
@@ -106,7 +105,7 @@ ms.lasthandoff: 11/03/2017
 </tbody>
 </table>
 
- 
+
 
 
 

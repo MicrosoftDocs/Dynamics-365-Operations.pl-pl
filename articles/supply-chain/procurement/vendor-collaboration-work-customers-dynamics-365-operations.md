@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4252112272e2f86c2c18dc399a713bf652e4228e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fa6adbc4179d7f7599fcb2f89eb88ed3277936bc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-collaboration-with-customers"></a><span data-ttu-id="792da-103">Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami</span><span class="sxs-lookup"><span data-stu-id="792da-103">Vendor collaboration with customers</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="792da-104">W tym temacie opisano używanie portalu współpracy z dostawcami do zarządzania współpracą z odbiorcami w programie Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="792da-104">This topic describes how you can use vendor collaboration to work with customers in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="792da-105">Dostawcy mogą ukończyć szereg procesów biznesowych z następujących obszarów roboczych:</span><span class="sxs-lookup"><span data-stu-id="792da-105">Vendors can complete a series of business processes from the following workspaces:</span></span>
 

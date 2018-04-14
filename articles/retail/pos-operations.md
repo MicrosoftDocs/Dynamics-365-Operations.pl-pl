@@ -19,16 +19,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
-ms.openlocfilehash: d8cf283321b81c377498cd449b098f8fac1fe01f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b85da42e94fe3108bc89d05fc800a9d8a06bfc97
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="pos-operations-online-and-offline"></a><span data-ttu-id="a286d-104">Operacje w punkcie sprzedaży — online i offline</span><span class="sxs-lookup"><span data-stu-id="a286d-104">POS operations, online and offline</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="a286d-105">Większość akcji wykonywanych przez użytkowników punktu sprzedaży (POS) jest uznawanych za operacje.</span><span class="sxs-lookup"><span data-stu-id="a286d-105">Most actions that user take in the point of sale (POS) are considered operations.</span></span> <span data-ttu-id="a286d-106">Do konfigurowania i zarządzania operacjami służy zaplecze rozwiązania Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="a286d-106">Operations are configured and managed in the Microsoft Dynamics 365 for Retail back office.</span></span> <span data-ttu-id="a286d-107">Do siatki przycisków punktu sprzedaży można dodać wiele operacji.</span><span class="sxs-lookup"><span data-stu-id="a286d-107">Many operations can be added to buttons in the POS button grid.</span></span> <span data-ttu-id="a286d-108">Użytkownicy mogą następnie wybrać przyciski w celu wywołania operacji i wykonania przypisanych do nich funkcji.</span><span class="sxs-lookup"><span data-stu-id="a286d-108">Users can then select the buttons to invoke the operations and perform their function.</span></span> <span data-ttu-id="a286d-109">Inne operacje są częścią głównej aplikacji POS i są wywoływane za pomocą przycisków ekranowych lub jako część innych przepływów pracy lub procesów.</span><span class="sxs-lookup"><span data-stu-id="a286d-109">Other operations are part of the main POS application, and are invoked either from on-screen buttons or as part of other workflows or processes.</span></span>
 

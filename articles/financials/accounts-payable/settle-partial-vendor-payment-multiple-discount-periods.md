@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d88630a62cfdebf0daf19d3bb6af7fcc6e877876
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 605f681a21b769189770d85e4ec938b6708c01b1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a><span data-ttu-id="64600-103">Rozliczenie płatności częściowej dostawcy, która ma wiele okresów rabatu</span><span class="sxs-lookup"><span data-stu-id="64600-103">Settle a partial vendor payment that has multiple discount periods</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="64600-104">Ten artykuł prowadzi przez scenariusz, w którym jest dokonywanych wiele częściowych płatności do dostawcy oferującego wiele różnych rabatów gotówkowych.</span><span class="sxs-lookup"><span data-stu-id="64600-104">This article walks you through a scenario where multiple partial payments are made to a vendor that offers multiple cash discounts.</span></span> 
 

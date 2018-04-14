@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 17a7d9c40d07524378a671397fed566b9bd3af6b
-ms.openlocfilehash: 306edb85a202ba750c0e9519e5157b6b06292fde
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 091185b7c3c10fa177a3d0c9338ae7950c2f6f47
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="resolve-discrepancies-during-invoice-totals-matching"></a><span data-ttu-id="318c1-103">Usuwanie rozbieżności podczas uzgadniania sum faktur</span><span class="sxs-lookup"><span data-stu-id="318c1-103">Resolve discrepancies during invoice totals matching</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="318c1-104">Jednym z typów weryfikację uzgadniania faktur jest uzgadnianie sum faktur.</span><span class="sxs-lookup"><span data-stu-id="318c1-104">One type of invoice matching validation is invoice totals matching.</span></span> <span data-ttu-id="318c1-105">Aby określić, czy system powinien wykonywać uzgadnianie sum faktur, na stronie **Parametry rozrachunków z dostawcami** na karcie **Sprawdzanie poprawności faktur** ustaw dla opcji **Dopasuj sumy faktur** wartość **Tak**.</span><span class="sxs-lookup"><span data-stu-id="318c1-105">To specify that the system should perform invoice totals matching, on the **Accounts payable parameters** page, on the **Invoice validation** tab, set the **Match invoice totals** option **Yes**.</span></span> 
 

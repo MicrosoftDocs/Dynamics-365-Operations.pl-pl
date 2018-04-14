@@ -16,16 +16,16 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 4cf60021b96ab492c5d0b2535a117cb33ab13524
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a451a3e936916c6bec750ddfbc2bf71fadb7c222
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="employee-development-power-bi-content"></a><span data-ttu-id="eff4d-103">Pakiet zawartości usługi Power BI Rozwój pracownika etatowego</span><span class="sxs-lookup"><span data-stu-id="eff4d-103">Employee development Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="eff4d-104">W tym temacie opisano pakiet zawartość **Rozwój pracownika etatowego** dostępny dla usługi Microsoft Power BI.</span><span class="sxs-lookup"><span data-stu-id="eff4d-104">This topic describes the **Employee development** Microsoft Power BI content.</span></span>
 
@@ -45,6 +45,7 @@ ms.lasthandoff: 01/31/2018
 <span data-ttu-id="eff4d-124">Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego.</span><span class="sxs-lookup"><span data-stu-id="eff4d-124">You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard.</span></span> <span data-ttu-id="eff4d-125">Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).</span><span class="sxs-lookup"><span data-stu-id="eff4d-125">For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).</span></span>
 
 ## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="eff4d-126">Opis modelu danych i jednostek</span><span class="sxs-lookup"><span data-stu-id="eff4d-126">Understanding the data model and entities</span></span>
+
 | <span data-ttu-id="eff4d-127">Jednostka</span><span class="sxs-lookup"><span data-stu-id="eff4d-127">Entity</span></span>                   | <span data-ttu-id="eff4d-128">Zawartość</span><span class="sxs-lookup"><span data-stu-id="eff4d-128">Contents</span></span>                                                                                                   | <span data-ttu-id="eff4d-129">Powiązania z innymi jednostkami</span><span class="sxs-lookup"><span data-stu-id="eff4d-129">Relationships with other entities</span></span> |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | <span data-ttu-id="eff4d-130">Przesunięcie kalendarza</span><span class="sxs-lookup"><span data-stu-id="eff4d-130">Calendar Offset</span></span>          | <span data-ttu-id="eff4d-131">Przesunięcia kalendarzy dla raportów wycinkowych</span><span class="sxs-lookup"><span data-stu-id="eff4d-131">Calendar offsets to slice reports</span></span>                                                                          | <span data-ttu-id="eff4d-132">Przeszłe przypisania stanowisk, Trend stanowisk, Trend pracowników, Pracownik z rozwiązanym stosunkiem pracy</span><span class="sxs-lookup"><span data-stu-id="eff4d-132">Past Position Assignment, Position Trend, Employee Trend, Terminated Employee</span></span> 

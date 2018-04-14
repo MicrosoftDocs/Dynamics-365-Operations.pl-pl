@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: df844ba3834972441daa61899294b3e95cac96c1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 66c0f41e1c98cf84b6a0afff5ee55e7c15fecd2d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-procurement-catalog"></a><span data-ttu-id="1d38a-103">Tworzenie katalogu zaopatrzenia</span><span class="sxs-lookup"><span data-stu-id="1d38a-103">Create a procurement catalog</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="1d38a-104">W tym przewodniku pokazano sposób tworzenia katalogu zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="1d38a-104">This guide shows you how to create a procurement catalog.</span></span> <span data-ttu-id="1d38a-105">To zadanie jest zazwyczaj wykonywane przez pracownika działu zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="1d38a-105">This task would typically be carried out by a procurement professional.</span></span> <span data-ttu-id="1d38a-106">Dowiedz się także, jak pracownicy mogą używać katalogu podczas tworzenia zapotrzebowania.</span><span class="sxs-lookup"><span data-stu-id="1d38a-106">You will also learn how employees can use the catalog when they create a requisition.</span></span> <span data-ttu-id="1d38a-107">Aby można było utworzyć katalogu, w systemie musi istnieć hierarchia kategorii zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="1d38a-107">Before you can create a catalog, there must be a procurement category hierarchy in your system.</span></span> <span data-ttu-id="1d38a-108">Hierarchia, wraz ze wszystkimi znajdującymi się w niej produktami, jest dziedziczona przez nowy katalog.</span><span class="sxs-lookup"><span data-stu-id="1d38a-108">The hierarchy is inherited by the new catalog, along with all the products that are in the hierarchy.</span></span> <span data-ttu-id="1d38a-109">Można użyć tego przewodnika z danymi firmy demonstracyjne USMF, gdzie hierarchia kategorii zaopatrzenia jest już dostępna, oraz wobec przykładów opisanych w krokach procedury.</span><span class="sxs-lookup"><span data-stu-id="1d38a-109">You can use this guide in demo data company USMF where the procurement category hierarchy is available, as well as the examples used in the procedure steps.</span></span>
 

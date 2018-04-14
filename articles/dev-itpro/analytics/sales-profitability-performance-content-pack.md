@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 6084ddb1c5b8fae9111ea1459f6e94b14930bfc5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9ec77585e259bc759b422b97f4f3b10271a02b02
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a><span data-ttu-id="02058-104">Zawartość usługi Power BI dotycząca wyników sprzedaży i rentowności</span><span class="sxs-lookup"><span data-stu-id="02058-104">Sales and profitability performance Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="02058-105">W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft Power BI **Wyniki sprzedaży i rentowności**.</span><span class="sxs-lookup"><span data-stu-id="02058-105">This topic describes what is included in the **Sales and profitability performance** Microsoft Power BI content.</span></span> <span data-ttu-id="02058-106">Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.</span><span class="sxs-lookup"><span data-stu-id="02058-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 01/17/2018
 | <span data-ttu-id="02058-140">Przychód wg produktu</span><span class="sxs-lookup"><span data-stu-id="02058-140">Revenue by product</span></span>     | <span data-ttu-id="02058-141">Przychód i zysk brutto wg kategorii sprzedaży</span><span class="sxs-lookup"><span data-stu-id="02058-141">Revenue & gross profit by sales category</span></span>   | <span data-ttu-id="02058-142">Łączna liczba produktów: \#</span><span class="sxs-lookup"><span data-stu-id="02058-142">Total \# of products</span></span>                                    |
 |                        | <span data-ttu-id="02058-143">10 najważniejszych produktów wg przychodów</span><span class="sxs-lookup"><span data-stu-id="02058-143">Top 10 products by revenue</span></span>                 | <span data-ttu-id="02058-144">Całkowita liczba aktywnych produktów i procent całości</span><span class="sxs-lookup"><span data-stu-id="02058-144">Total number of active products and percentage of total</span></span> |
 |                        | <span data-ttu-id="02058-145">Całkowity przychód wg kategorii sprzedaży</span><span class="sxs-lookup"><span data-stu-id="02058-145">Total revenue by sales category</span></span>            | <span data-ttu-id="02058-146">Liczba produktów odpowiedzialnych za 80% przychodu</span><span class="sxs-lookup"><span data-stu-id="02058-146">Number of products accounting for 80% revenue</span></span>           |
-| <span data-ttu-id="02058-147">Przychód wg okresu\\*</span><span class="sxs-lookup"><span data-stu-id="02058-147">Revenue by period\\*</span></span>    | <span data-ttu-id="02058-148">Przychód wg miesiąca</span><span class="sxs-lookup"><span data-stu-id="02058-148">Revenue by month</span></span>                           | <span data-ttu-id="02058-149">Wzrost przychodu r/r</span><span class="sxs-lookup"><span data-stu-id="02058-149">YOY revenue growth</span></span>                                      |
+| <span data-ttu-id="02058-147">Przychód wg okresu\*</span><span class="sxs-lookup"><span data-stu-id="02058-147">Revenue by period\*</span></span>    | <span data-ttu-id="02058-148">Przychód wg miesiąca</span><span class="sxs-lookup"><span data-stu-id="02058-148">Revenue by month</span></span>                           | <span data-ttu-id="02058-149">Wzrost przychodu r/r</span><span class="sxs-lookup"><span data-stu-id="02058-149">YOY revenue growth</span></span>                                      |
 |                        | <span data-ttu-id="02058-150">Odchylenie przychodów za ostatni okres r/r</span><span class="sxs-lookup"><span data-stu-id="02058-150">Trailing revenue variance, YOY</span></span>             | <span data-ttu-id="02058-151">% wzrostu przychodu r/r</span><span class="sxs-lookup"><span data-stu-id="02058-151">YOY revenue growth %</span></span>                                    |
 |                        | <span data-ttu-id="02058-152">Odchylenie całkowitej sprzedaży wg regionu odbiorców</span><span class="sxs-lookup"><span data-stu-id="02058-152">Total sales variance by customer region</span></span>    |                                                         |
 | <span data-ttu-id="02058-153">Przychód wg lokalizacji</span><span class="sxs-lookup"><span data-stu-id="02058-153">Revenue by location</span></span>    | <span data-ttu-id="02058-154">Przychód ze sprzedaży wg miejscowości</span><span class="sxs-lookup"><span data-stu-id="02058-154">Sales revenue by city</span></span>                      |                                                         |
@@ -75,7 +75,7 @@ ms.lasthandoff: 01/17/2018
 |                        | <span data-ttu-id="02058-162">15 najważniejszych odbiorców wg marży brutto</span><span class="sxs-lookup"><span data-stu-id="02058-162">Top 15 customers by gross margin</span></span>           |                                                         |
 |                        | <span data-ttu-id="02058-163">Zysk brutto wg miesiąca r/r</span><span class="sxs-lookup"><span data-stu-id="02058-163">Gross profit by month, YOY</span></span>                 |                                                         |
 
-<span data-ttu-id="02058-164">\\* Przychód w tym i ubiegłym roku oraz wzrost według kategorii sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="02058-164">\\* Revenue this and last year, and growth by sales category.</span></span>
+<span data-ttu-id="02058-164">\* Przychód w tym i ubiegłym roku oraz wzrost według kategorii sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="02058-164">\* Revenue this and last year, and growth by sales category.</span></span>
 
 
 ## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="02058-165">Opis modelu danych i jednostek</span><span class="sxs-lookup"><span data-stu-id="02058-165">Understanding the data model and entities</span></span>

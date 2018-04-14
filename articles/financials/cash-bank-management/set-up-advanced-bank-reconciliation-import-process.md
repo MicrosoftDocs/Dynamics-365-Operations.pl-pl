@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7292767f48e94f01c50e12ab02a4483c53046ae9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3806dafa6ca6ea8355db3d6a8c2432ad67cd69c2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a><span data-ttu-id="14958-104">Konfigurowanie procesu importu zaawansowanego uzgadniania konta bankowego</span><span class="sxs-lookup"><span data-stu-id="14958-104">Set up the advanced bank reconciliation import process</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="14958-105">Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych, a następnie ich automatyczne uzgadnianie z transakcjami bankowymi w programie Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="14958-105">The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="14958-106">W tym artykule wyjaśniono, jak skonfigurować funkcję importu wyciągów bankowych.</span><span class="sxs-lookup"><span data-stu-id="14958-106">This article explains how to set up the import functionality for your bank statements.</span></span> 
 
@@ -57,7 +56,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="14958-135">DynamicsAXISO20022Layout</span><span class="sxs-lookup"><span data-stu-id="14958-135">DynamicsAXISO20022Layout</span></span>                                | <span data-ttu-id="14958-136">ISO20022StatementExample</span><span class="sxs-lookup"><span data-stu-id="14958-136">ISO20022StatementExample</span></span>             |
 | <span data-ttu-id="14958-137">DynamicsAXBAI2Layout</span><span class="sxs-lookup"><span data-stu-id="14958-137">DynamicsAXBAI2Layout</span></span>                                    | <span data-ttu-id="14958-138">BAI2StatementExample</span><span class="sxs-lookup"><span data-stu-id="14958-138">BAI2StatementExample</span></span>                 |
 
- 
+
 
 ## <a name="set-up-the-import-of-iso20022-bank-statements"></a><span data-ttu-id="14958-139">Konfigurowanie importowanie wyciągów bankowych w formacie ISO20022</span><span class="sxs-lookup"><span data-stu-id="14958-139">Set up the import of ISO20022 bank statements</span></span>
 <span data-ttu-id="14958-140">Najpierw należy zdefiniować grupę przetwarzania formatu wyciągów bankowych ISO20022, używając do tego struktury jednostek danych.</span><span class="sxs-lookup"><span data-stu-id="14958-140">First, you must define the bank statement format processing group for ISO20022 bank statements by using the data entity framework.</span></span>

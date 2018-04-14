@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: b1868851d22f41d3278cd9574a48bdf062185012
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5109bc180cedfb21dfb8b2920d71d54812e7e6cf
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="piece-picking-confirmation"></a><span data-ttu-id="969fc-103">Potwierdzenie pobrania sztuk</span><span class="sxs-lookup"><span data-stu-id="969fc-103">Piece picking confirmation</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="969fc-104">Funkcja pobrania sztuk umożliwia potwierdzanie każdego artykułu w zapasach za pomocą pracy pobrania lub inwentaryzacji na urządzeniu przenośnym.</span><span class="sxs-lookup"><span data-stu-id="969fc-104">Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device.</span></span> <span data-ttu-id="969fc-105">Dla pobrań można potwierdzić ilość pracy do przetworzenia aż do ilości wymienionej w pracy, która ma zostać pobrana.</span><span class="sxs-lookup"><span data-stu-id="969fc-105">For picks, you can confirm the quantity of work to be processed up to the quantity that is specified on work to be picked.</span></span> <span data-ttu-id="969fc-106">Dla pracy inwentaryzacji pracy można skanować inwentaryzowane zapasy oraz śledzić łączną ilość.</span><span class="sxs-lookup"><span data-stu-id="969fc-106">For counting work, you can scan the inventory that you are counting and track the total amount.</span></span>
 
@@ -46,8 +46,10 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="969fc-122">W przypadku pracy typu Pobranie lub Inwentaryzacja są dostępne następujące opcje do wyboru.</span><span class="sxs-lookup"><span data-stu-id="969fc-122">The following options become available for selection when the work type is pick or counting.</span></span>
 
-| <span data-ttu-id="969fc-123">Opcja</span><span class="sxs-lookup"><span data-stu-id="969fc-123">Option</span></span>        | <span data-ttu-id="969fc-124">opis</span><span class="sxs-lookup"><span data-stu-id="969fc-124">Description</span></span>   | 
-| ------------- | ------------- |
-| <span data-ttu-id="969fc-125">Potwierdzenie pobrania sztuk</span><span class="sxs-lookup"><span data-stu-id="969fc-125">Piece picking confirmation</span></span>   | <span data-ttu-id="969fc-126">Dostępne dla typów prac Pobranie i Inwentaryzacja.</span><span class="sxs-lookup"><span data-stu-id="969fc-126">Available for pick and counting work types.</span></span> <span data-ttu-id="969fc-127">Opcja Potwierdzenie produktu jest automatycznie zaznaczona.</span><span class="sxs-lookup"><span data-stu-id="969fc-127">Product confirmation is automatically selected.</span></span> <span data-ttu-id="969fc-128">Umożliwia potwierdzenie każdego artykułu w zapasach z urządzenia przenośnego.</span><span class="sxs-lookup"><span data-stu-id="969fc-128">Allows you to confirm each piece of inventory from the mobile device.</span></span> | 
-| <span data-ttu-id="969fc-129">Maksymalna liczba sztuk</span><span class="sxs-lookup"><span data-stu-id="969fc-129">Maximum number of pieces</span></span>     | <span data-ttu-id="969fc-130">Dostępne dla pracy pobrania, jeśli włączono funkcję potwierdzania pobrania sztuk.</span><span class="sxs-lookup"><span data-stu-id="969fc-130">Available for pick work if piece picking confirmation is enabled.</span></span> <span data-ttu-id="969fc-131">Ustawia limit liczby sztuk, które należy potwierdzić.</span><span class="sxs-lookup"><span data-stu-id="969fc-131">Sets a limit to the number of pieces that you must confirm.</span></span> |  
+
+|           <span data-ttu-id="969fc-123">Opcja</span><span class="sxs-lookup"><span data-stu-id="969fc-123">Option</span></span>           |                                                                            <span data-ttu-id="969fc-124">opis</span><span class="sxs-lookup"><span data-stu-id="969fc-124">Description</span></span>                                                                            |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="969fc-125">Potwierdzenie pobrania sztuk</span><span class="sxs-lookup"><span data-stu-id="969fc-125">Piece picking confirmation</span></span> | <span data-ttu-id="969fc-126">Dostępne dla typów prac Pobranie i Inwentaryzacja.</span><span class="sxs-lookup"><span data-stu-id="969fc-126">Available for pick and counting work types.</span></span> <span data-ttu-id="969fc-127">Opcja Potwierdzenie produktu jest automatycznie zaznaczona.</span><span class="sxs-lookup"><span data-stu-id="969fc-127">Product confirmation is automatically selected.</span></span> <span data-ttu-id="969fc-128">Umożliwia potwierdzenie każdego artykułu w zapasach z urządzenia przenośnego.</span><span class="sxs-lookup"><span data-stu-id="969fc-128">Allows you to confirm each piece of inventory from the mobile device.</span></span> |
+|  <span data-ttu-id="969fc-129">Maksymalna liczba sztuk</span><span class="sxs-lookup"><span data-stu-id="969fc-129">Maximum number of pieces</span></span>  |                   <span data-ttu-id="969fc-130">Dostępne dla pracy pobrania, jeśli włączono funkcję potwierdzania pobrania sztuk.</span><span class="sxs-lookup"><span data-stu-id="969fc-130">Available for pick work if piece picking confirmation is enabled.</span></span> <span data-ttu-id="969fc-131">Ustawia limit liczby sztuk, które należy potwierdzić.</span><span class="sxs-lookup"><span data-stu-id="969fc-131">Sets a limit to the number of pieces that you must confirm.</span></span>                   |
+
 

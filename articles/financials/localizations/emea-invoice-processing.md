@@ -17,16 +17,16 @@ ms.author: v-kikozl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
-ms.openlocfilehash: d1fca30eb6de22c2d2fb2c4d6bfdfd21fd4bbd6e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e05c73a434ed42eb91d0cf85bcc0bd5f03fd0bff
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="invoice-processing"></a><span data-ttu-id="39dfb-103">Przetwarzanie faktur</span><span class="sxs-lookup"><span data-stu-id="39dfb-103">Invoice processing</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="39dfb-104">Ten temat zawiera krótki opis scenariuszy dla określonych krajów, takich jak wewnątrzwspólnotowy podatek VAT i podatek odroczony.</span><span class="sxs-lookup"><span data-stu-id="39dfb-104">This topic briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax.</span></span> <span data-ttu-id="39dfb-105">Wymagania prawne dla niektórych krajów europejskich wpływają na proces fakturowania.</span><span class="sxs-lookup"><span data-stu-id="39dfb-105">Legal requirements for some European countries affect the invoicing process.</span></span> <span data-ttu-id="39dfb-106">Ten temat zawiera także informacje o sposobie przetwarzania faktur odbiorców i dostawców dla tych krajów.</span><span class="sxs-lookup"><span data-stu-id="39dfb-106">This topic provides also an information about how customer and vendor invoices are processed for these countries.</span></span> 
 <table>

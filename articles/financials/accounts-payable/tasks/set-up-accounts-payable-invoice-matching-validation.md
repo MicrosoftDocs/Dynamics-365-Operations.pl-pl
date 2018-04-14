@@ -16,16 +16,16 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e9bf83269c34133509734691fd018ee703c40626
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6cc5c5b8dc60e3807a535b0d40e68200fb4da165
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a><span data-ttu-id="4fa54-103">Konfigurowanie sprawdzania uzgadniania faktur rozrachunków z dostawcami</span><span class="sxs-lookup"><span data-stu-id="4fa54-103">Set up accounts payable invoice matching validation</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4fa54-104">To nagranie wykorzystuje firmę demonstracyjną USMF.</span><span class="sxs-lookup"><span data-stu-id="4fa54-104">This recording uses the USMF demo company.</span></span> <span data-ttu-id="4fa54-105">Czynności te wykonuje menedżer ds. rozrachunków z dostawcami lub menedżer księgowości.</span><span class="sxs-lookup"><span data-stu-id="4fa54-105">The accounts payable manager or accounting manager role would perform these steps.</span></span> <span data-ttu-id="4fa54-106">Zanim rozpoczniesz, upewnij się, że wybrano klucz konfiguracji Uzgadnianie faktur.</span><span class="sxs-lookup"><span data-stu-id="4fa54-106">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span> <span data-ttu-id="4fa54-107">Jeśli firma śledzi wydatki, na przykład koszty frachtu, przy użyciu opłat, upewnij się, że wybrany został klucz konfiguracji Opłaty.</span><span class="sxs-lookup"><span data-stu-id="4fa54-107">If your legal entity tracks expenses, such as freight, by using charges, make sure that the Charges configuration key is selected.</span></span>  <span data-ttu-id="4fa54-108">Uzgadnianie faktur rozrachunków z dostawcami jest procesem uzgadniania obejmującym informacje z faktury dostawcy, zamówienia zakupu i przyjęć produktów.</span><span class="sxs-lookup"><span data-stu-id="4fa54-108">Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.</span></span> <span data-ttu-id="4fa54-109">Różnice między tymi dokumentami są nazywane rozbieżnościami (w uzgadnianiu/wykrytymi podczas uzgadniania).</span><span class="sxs-lookup"><span data-stu-id="4fa54-109">Differences among these documents are called matching discrepancies.</span></span> <span data-ttu-id="4fa54-110">Rozbieżności w uzgadnianiu są porównywane z ustawionymi wartościami tolerancji.</span><span class="sxs-lookup"><span data-stu-id="4fa54-110">Matching discrepancies are compared with the tolerances that are specified.</span></span> <span data-ttu-id="4fa54-111">Jeśli rozbieżność przekracza wartość procentową lub kwotową, są wyświetlane ikony uzgadniania odchyleń w formularzach Faktura od dostawcy i Szczegóły uzgadniania faktur.</span><span class="sxs-lookup"><span data-stu-id="4fa54-111">If a matching discrepancy exceeds the tolerance percentage or amount, match variance icons are displayed in the Vendor invoice form and in the Invoice matching details form.</span></span>
 

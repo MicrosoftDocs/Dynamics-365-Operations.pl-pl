@@ -16,15 +16,15 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c3a366ea4b558ba4e4af7336992dbb091b0b1414
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 90deb42e8443d6d1ee7edbdfcedf4513c28a3bf1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a><span data-ttu-id="f0e73-103">Identyfikowanie i rozwiązywanie konfliktów w podziale obowiązków</span><span class="sxs-lookup"><span data-stu-id="f0e73-103">Identify and resolve conflicts in segregation of duties</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f0e73-104">Można ustawić reguły rozdzielania zadań, które mają być wykonywane przez różnych użytkowników.</span><span class="sxs-lookup"><span data-stu-id="f0e73-104">You can set up rules to separate tasks that must be performed by different users.</span></span> <span data-ttu-id="f0e73-105">Ta koncepcja jest nazywana podziałem obowiązków.</span><span class="sxs-lookup"><span data-stu-id="f0e73-105">This concept is named segregation of duties.</span></span> <span data-ttu-id="f0e73-106">Gdy definicja roli zabezpieczeń lub przypisanie ról użytkownika naruszają reguły, jest rejestrowany konflikt.</span><span class="sxs-lookup"><span data-stu-id="f0e73-106">When the definition of a security role or the role assignments of a user violate the rules, the conflict is logged.</span></span> <span data-ttu-id="f0e73-107">Wszystkie konflikty muszą być rozwiązane przez administratora.</span><span class="sxs-lookup"><span data-stu-id="f0e73-107">All conflicts must be resolved by the administrator.</span></span> <span data-ttu-id="f0e73-108">Aby zidentyfikować i rozwiązać konflikty, wykonaj procedurę opisaną poniżej.</span><span class="sxs-lookup"><span data-stu-id="f0e73-108">Complete the following procedure to identify and resolve conflicts.</span></span> <span data-ttu-id="f0e73-109">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="f0e73-109">The demo data company used to create this procedure is USMF.</span></span>
 

@@ -16,16 +16,16 @@ ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 1a2d4531e13d158dd8b93d9b9e94a17a8f94c50a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 524bea27aef83b2ae4f721b438a3ccf18f7e6117
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="tax-directives-for-europe"></a><span data-ttu-id="00151-104">Dyrektywy podatkowe dla Europy</span><span class="sxs-lookup"><span data-stu-id="00151-104">Tax directives for Europe</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="00151-105">Dyrektywa UE zawiera przepisy wymagające stosowania przez wszystkie państwa członkowskie w odniesieniu do reguł i informacji, które muszą być uwzględnione przy tworzeniu faktur.</span><span class="sxs-lookup"><span data-stu-id="00151-105">EU Directive provides regulations to be followed by all Member States regarding invoice rules and information that must be included when creating invoices.</span></span> <span data-ttu-id="00151-106">Dyrektywa UE zawiera spis informacji, jakich dostawcy potrzebują o swoich klientach w Unii Europejskiej.</span><span class="sxs-lookup"><span data-stu-id="00151-106">EU Directive lists the information that is required by suppliers for their customers in the EU.</span></span> <span data-ttu-id="00151-107">Na przykład faktura może zawierać odniesienie opisujące podstawę prawną naliczania zerowej stawki podatku VAT lub zwolnienia z VAT.</span><span class="sxs-lookup"><span data-stu-id="00151-107">For example, an invoice could include a reference that describes the legal grounds for a VAT zero-rating or an exemption.</span></span> <span data-ttu-id="00151-108">Jeśli faktura koryguje wcześniej wystawioną fakturę, tzn. na przykład jest fakturą korygującą, musi zawierać jednoznaczne odniesienie do oryginalnej faktury.</span><span class="sxs-lookup"><span data-stu-id="00151-108">If an invoice adjusts an earlier issued invoice, such as a credit note, an unambiguous reference should be made to the original invoice.</span></span>
 

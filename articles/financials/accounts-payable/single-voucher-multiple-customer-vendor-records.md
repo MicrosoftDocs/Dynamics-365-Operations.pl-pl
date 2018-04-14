@@ -18,17 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4c499e31fb42a69dff6ac41faac0c78f7f4d1876
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7348706006dd5baec207ed8ef1d208b032a8e16a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a><span data-ttu-id="ef937-104">Jeden załącznik z wieloma rekordami odbiorców lub dostawców</span><span class="sxs-lookup"><span data-stu-id="ef937-104">Single voucher with multiple customer or vendor records</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ef937-105">Ten temat zawiera omówienie tego, co się dzieje podczas księgowania jednego załącznika z wieloma rekordami odbiorców lub dostawców.</span><span class="sxs-lookup"><span data-stu-id="ef937-105">This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records.</span></span> <span data-ttu-id="ef937-106">Ta funkcja nie będzie już dostępna w kolejnych wersjach programu Microsoft Dynamics 365 for Finance and Operations, w związku z tym nie zalecamy używania tej metody księgowania ze względu na jej wpływ księgowy na przetwarzanie rozliczeń.</span><span class="sxs-lookup"><span data-stu-id="ef937-106">This functionality will be discontinued in future versions of Microsoft Dynamics 365 for Finance and Operations, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing.</span></span> 
 
@@ -251,7 +250,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="ef937-616">001</span><span class="sxs-lookup"><span data-stu-id="ef937-616">001</span></span>         | <span data-ttu-id="ef937-617">Odbiorca</span><span class="sxs-lookup"><span data-stu-id="ef937-617">Customer</span></span>         | <span data-ttu-id="ef937-618">US-008</span><span class="sxs-lookup"><span data-stu-id="ef937-618">US-008</span></span>      |                 |           |  <span data-ttu-id="ef937-619">75,00</span><span class="sxs-lookup"><span data-stu-id="ef937-619">75.00</span></span>     | <span data-ttu-id="ef937-620">Księga</span><span class="sxs-lookup"><span data-stu-id="ef937-620">Ledger</span></span>          | <span data-ttu-id="ef937-621">999999---</span><span class="sxs-lookup"><span data-stu-id="ef937-621">999999---</span></span>          |
 | <span data-ttu-id="ef937-622">002</span><span class="sxs-lookup"><span data-stu-id="ef937-622">002</span></span>         | <span data-ttu-id="ef937-623">Dostawca</span><span class="sxs-lookup"><span data-stu-id="ef937-623">Vendor</span></span>           | <span data-ttu-id="ef937-624">1001</span><span class="sxs-lookup"><span data-stu-id="ef937-624">1001</span></span>        |                 |  <span data-ttu-id="ef937-625">75,00</span><span class="sxs-lookup"><span data-stu-id="ef937-625">75.00</span></span>    |            | <span data-ttu-id="ef937-626">Księga</span><span class="sxs-lookup"><span data-stu-id="ef937-626">Ledger</span></span>          | <span data-ttu-id="ef937-627">999999---</span><span class="sxs-lookup"><span data-stu-id="ef937-627">999999---</span></span>          |
 
- 
+
 
 
 

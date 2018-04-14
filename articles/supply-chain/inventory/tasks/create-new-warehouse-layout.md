@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 7374aec8e3033370453752b9f488d0838008d709
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4a9c75bf84bf2bf8d92be23573cc0477209c2378
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-new-warehouse-layout"></a><span data-ttu-id="a9b7a-103">Tworzenie nowego układu magazynu</span><span class="sxs-lookup"><span data-stu-id="a9b7a-103">Create a new warehouse layout</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a9b7a-104">W tej procedurze pokazano sposób konfigurowania informacji o lokalizacjach w magazynie.</span><span class="sxs-lookup"><span data-stu-id="a9b7a-104">This procedure shows you how to set up information about the locations in a warehouse.</span></span> <span data-ttu-id="a9b7a-105">Dotyczy to tylko magazynów utworzonych przy użyciu funkcji „podstawowego magazynowania” dostępnych w module Zarządzanie zapasami, a nie magazynów utworzonych w module Zarządzanie magazynem.</span><span class="sxs-lookup"><span data-stu-id="a9b7a-105">This applies only to warehouses created using "basic warehousing" in the Inventory management module, not to warehouses created in the Warehouse management module.</span></span> <span data-ttu-id="a9b7a-106">Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="a9b7a-106">You can use this procedure in demo data company USMF, or on your own data.</span></span>
 

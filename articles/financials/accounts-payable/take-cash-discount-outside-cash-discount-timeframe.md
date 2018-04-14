@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3ff83f0ab68f7a87921dc2b6c3dcad43e5d331b7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 351d759650ad0f0047ba8ffb6abf55c6bf354f5b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a><span data-ttu-id="5c414-103">Zastosowanie rabatu gotówkowego poza okresem rabatu gotówkowego</span><span class="sxs-lookup"><span data-stu-id="5c414-103">Take a cash discount outside the cash discount period</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="5c414-104">Ten artykuł zawiera dwa scenariusze pokazujące stosowanie rabatu gotówkowego nawet w przypadku, gdy płatność jest dokonywana poza okresem rabatu gotówkowego.</span><span class="sxs-lookup"><span data-stu-id="5c414-104">This article provides two scenarios that show how a cash discount can be taken even if the payment is made outside the cash discount period.</span></span>
 

@@ -19,21 +19,21 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a2da864254efda2621e1b157413a16d251020786
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 034e25eea8a4db3126f7f33ae0712b6f30606651
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="publish-journal-lines-and-documents-from-excel"></a><span data-ttu-id="d99ee-104">Publikowanie wierszy arkuszy i dokumentów z programu Excel</span><span class="sxs-lookup"><span data-stu-id="d99ee-104">Publish journal lines and documents from Excel</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="d99ee-105">W tym temacie wyjaśniono, jak wprowadzać i publikować wiersze arkuszy finansowych z programu Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="d99ee-105">This topic explains how to enter and publish lines for general journals from Microsoft Excel.</span></span> <span data-ttu-id="d99ee-106">Znajdują się tu informacje dotyczące różnych szablonów, których można używać w zależności od typu wprowadzanych transakcji.</span><span class="sxs-lookup"><span data-stu-id="d99ee-106">It includes information about the various templates that you can use, depending on the type of transactions that you're entering.</span></span>
 
 <span data-ttu-id="d99ee-107">Użytkownicy mogą wprowadzać i publikować wiersze arkuszy finansowych z programu Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="d99ee-107">Users can enter and publish lines for financial journals from Microsoft Excel.</span></span> <span data-ttu-id="d99ee-108">Gdy użytkownik utworzy arkusz, przycisk **Otwórz wiersze w programie Excel** powoduje wyświetlanie dostępnych szablonów.</span><span class="sxs-lookup"><span data-stu-id="d99ee-108">After a user creates a journal, the **Open lines in Excel** button displays the templates that are available.</span></span> <span data-ttu-id="d99ee-109">Szablony są przeznaczone do obsługi określonych scenariuszy, jednak nie każda kombinacja typu konta jest obsługiwana w arkuszu.</span><span class="sxs-lookup"><span data-stu-id="d99ee-109">Templates are designed to support specific scenarios, however not every combination of account type is supported in the journal.</span></span> <span data-ttu-id="d99ee-110">W poniższej tabeli przedstawiono dostępne szablony i obsługiwane przez nie typy kont.</span><span class="sxs-lookup"><span data-stu-id="d99ee-110">The following table shows the templates that are available and the account types which they support.</span></span>
+
 |                          |                                                                                                                         |                                                                                         |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | <span data-ttu-id="d99ee-111">**Szablon**</span><span class="sxs-lookup"><span data-stu-id="d99ee-111">**Template**</span></span>             | <span data-ttu-id="d99ee-112">**Obsługiwane typy kont**</span><span class="sxs-lookup"><span data-stu-id="d99ee-112">**Supported account types**</span></span>                                                                                             | <span data-ttu-id="d99ee-113">**Jak uzyskać dostęp do szablonu**</span><span class="sxs-lookup"><span data-stu-id="d99ee-113">**How to access the template**</span></span>                                                          |

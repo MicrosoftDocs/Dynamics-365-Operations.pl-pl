@@ -17,15 +17,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: e9b22a6f846607e8afc5d4f01c685f1364b1c01d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9089b9ad773890424a6f73107a26a35a32e988ae
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-request-configurations"></a><span data-ttu-id="77897-103">Konfiguracje wniosku o nowego dostawcę</span><span class="sxs-lookup"><span data-stu-id="77897-103">Vendor request configurations</span></span>
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="77897-104">Aby utworzyć wniosek o nowego dostawcę, osoba kontaktowa dostawcy musi ukończyć kreatora rejestracji potencjalnego dostawcy.</span><span class="sxs-lookup"><span data-stu-id="77897-104">To complete a vendor request, a vendor contact person must complete the prospective vendor registration wizard.</span></span>
 
@@ -39,12 +39,12 @@ ms.lasthandoff: 02/08/2018
 
 <span data-ttu-id="77897-111">Wybór kraju/regionów dla konfiguracji domyślnej jest niemożliwy, dlatego nie można wprowadzić zmian w sekcji **Kraje/regiony**.</span><span class="sxs-lookup"><span data-stu-id="77897-111">It is not possible to select country/regions for the default configuration, so the **Countries/regions** section cannot be changed.</span></span>
 
-1.  <span data-ttu-id="77897-112">Kliknij kolejno opcje **Zaopatrzenie i sourcing** > **Konfiguracja** > **Dostawcy**, a następnie kliknij opcję **Konfiguracje wniosku o nowego dostawcę**.</span><span class="sxs-lookup"><span data-stu-id="77897-112">Click **Procurement and sourcing** > **Setup** > **Vendors**, and then click **Vendor request configurations**.</span></span>
-2.  <span data-ttu-id="77897-113">Kliknij kartę **Pola** , aby ustawić stan wymienionych pól.</span><span class="sxs-lookup"><span data-stu-id="77897-113">Click the **Fields** tab to set the status of the listed fields.</span></span>
--   <span data-ttu-id="77897-114">Ukryte (niewidoczne)</span><span class="sxs-lookup"><span data-stu-id="77897-114">Hidden (Not visible)</span></span>
--   <span data-ttu-id="77897-115">Wyświetlane (widoczne, ale nieobowiązkowe)</span><span class="sxs-lookup"><span data-stu-id="77897-115">Displayed (Visible but not mandatory)</span></span>
--   <span data-ttu-id="77897-116">Wymagane (widoczne i obowiązkowe)</span><span class="sxs-lookup"><span data-stu-id="77897-116">Required (Visible and mandatory)</span></span>
-3.  <span data-ttu-id="77897-117">Kliknij kartę **Zawartość**, aby określić, czy tekst ma być widoczny w kreatorze oraz czy ma być dostępne potwierdzenie, które potencjalny dostawca musi zaakceptować przed przejściem do następnego krok w kreatorze.</span><span class="sxs-lookup"><span data-stu-id="77897-117">Click the **Content** tab to specify if text is going to be shown on the wizard and if there should be an acknowledgement that the prospective vendor user must accept this before moving to the next step in the wizard.</span></span> <span data-ttu-id="77897-118">Potwierdzenie będzie wymagane w przypadku wszystkich warunków i zasad, które użytkownik musi zaakceptować w celu kontynuacji.</span><span class="sxs-lookup"><span data-stu-id="77897-118">The acknowledgement will be requested for any terms and conditions that the user must accept to continue.</span></span>
+1. <span data-ttu-id="77897-112">Kliknij kolejno opcje **Zaopatrzenie i sourcing** > **Konfiguracja** > **Dostawcy**, a następnie kliknij opcję **Konfiguracje wniosku o nowego dostawcę**.</span><span class="sxs-lookup"><span data-stu-id="77897-112">Click **Procurement and sourcing** > **Setup** > **Vendors**, and then click **Vendor request configurations**.</span></span>
+2. <span data-ttu-id="77897-113">Kliknij kartę **Pola** , aby ustawić stan wymienionych pól.</span><span class="sxs-lookup"><span data-stu-id="77897-113">Click the **Fields** tab to set the status of the listed fields.</span></span>
+3. <span data-ttu-id="77897-114">Ukryte (niewidoczne)</span><span class="sxs-lookup"><span data-stu-id="77897-114">Hidden (Not visible)</span></span>
+4. <span data-ttu-id="77897-115">Wyświetlane (widoczne, ale nieobowiązkowe)</span><span class="sxs-lookup"><span data-stu-id="77897-115">Displayed (Visible but not mandatory)</span></span>
+5. <span data-ttu-id="77897-116">Wymagane (widoczne i obowiązkowe)</span><span class="sxs-lookup"><span data-stu-id="77897-116">Required (Visible and mandatory)</span></span>
+6. <span data-ttu-id="77897-117">Kliknij kartę **Zawartość**, aby określić, czy tekst ma być widoczny w kreatorze oraz czy ma być dostępne potwierdzenie, które potencjalny dostawca musi zaakceptować przed przejściem do następnego krok w kreatorze.</span><span class="sxs-lookup"><span data-stu-id="77897-117">Click the **Content** tab to specify if text is going to be shown on the wizard and if there should be an acknowledgement that the prospective vendor user must accept this before moving to the next step in the wizard.</span></span> <span data-ttu-id="77897-118">Potwierdzenie będzie wymagane w przypadku wszystkich warunków i zasad, które użytkownik musi zaakceptować w celu kontynuacji.</span><span class="sxs-lookup"><span data-stu-id="77897-118">The acknowledgement will be requested for any terms and conditions that the user must accept to continue.</span></span>
 
 <span data-ttu-id="77897-119">Można także wprowadzić komunikat potwierdzenia, który zostanie wyświetlony po zakończeniu pracy kreatora. Można też dodać co najmniej jeden kwestionariusz.</span><span class="sxs-lookup"><span data-stu-id="77897-119">You can also enter a confirmation message that will be displayed when the wizard is finalized, and you can add one or more questionnaires.</span></span>
 

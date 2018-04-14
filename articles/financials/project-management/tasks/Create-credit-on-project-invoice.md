@@ -17,15 +17,15 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: 5360e5d6f55ac7462bd3b710f5572f33d5436497
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4d93e71408c516a31a978e698a3c6788f8e1ce47
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-credit-note-on-project-invoices"></a><span data-ttu-id="b839d-103">Tworzenie faktury korygującej w fakturach projektu</span><span class="sxs-lookup"><span data-stu-id="b839d-103">Create a credit note on project invoices</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 1. <span data-ttu-id="b839d-104">Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie> Projekty > Wszystkie projekty.</span><span class="sxs-lookup"><span data-stu-id="b839d-104">Go to Project management and accounting > Projects > All projects.</span></span> 
 2. <span data-ttu-id="b839d-105">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="b839d-105">In the list, find and select the desired record.</span></span> 

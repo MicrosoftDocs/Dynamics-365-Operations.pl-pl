@@ -17,15 +17,15 @@ ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 1de4e71fd554ba0486a5d2f65803f0806df37fe4
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c88045f6aeeb1f6c8e9d9f43c04c489a82c2d8c8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-and-associate-registers"></a><span data-ttu-id="cea99-103">Tworzenie i kojarzenie kas</span><span class="sxs-lookup"><span data-stu-id="cea99-103">Create and associate registers</span></span>
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="cea99-104">Ta procedura przedstawia sposób tworzenia kasy w punkcie sprzedaży (POS).</span><span class="sxs-lookup"><span data-stu-id="cea99-104">This procedure demonstrates how to create a point of sale (POS) register.</span></span> <span data-ttu-id="cea99-105">Procedura wykorzystuje dane firmy demonstracyjnej USRT.</span><span class="sxs-lookup"><span data-stu-id="cea99-105">This procedure uses the demo data company USRT.</span></span>
 

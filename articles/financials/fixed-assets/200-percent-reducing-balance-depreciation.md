@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 24f677cd3b416c6301a664629cb73e3cbae9f457
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e6600176cbbcb6e30fc451613acff1fb487e7c76
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="200-percent-reducing-balance-depreciation"></a><span data-ttu-id="2c1f3-103">200% amortyzacja degresywna</span><span class="sxs-lookup"><span data-stu-id="2c1f3-103">200 percent reducing balance depreciation</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="2c1f3-104">Ten artykuł zawiera omówienie metody amortyzacji 200% amortyzacja degresywna.</span><span class="sxs-lookup"><span data-stu-id="2c1f3-104">This article gives an overview of the 200 percent reducing balance method of depreciation.</span></span>
 
@@ -70,6 +69,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="2c1f3-136">**Okres obrachunkowy** księguje łączną kwotę amortyzacji w roku obrachunkowym.</span><span class="sxs-lookup"><span data-stu-id="2c1f3-136">**Fiscal period** posts the total amount of the depreciation that is calculated for the fiscal year.</span></span> <span data-ttu-id="2c1f3-137">Ta kwota jest naliczana w okresach obrachunkowych, które zostały zdefiniowane na stronie **Kalendarze obrachunkowe**.</span><span class="sxs-lookup"><span data-stu-id="2c1f3-137">This amount is accrued into the fiscal periods that are defined on the **Fiscal calendars** page.</span></span>
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a><span data-ttu-id="2c1f3-138">Przykład amortyzacji degresywnej 200%</span><span class="sxs-lookup"><span data-stu-id="2c1f3-138">Example of 200% reducing balance depreciation</span></span>
+
 |                                |        |
 |--------------------------------|--------|
 | <span data-ttu-id="2c1f3-139">Koszt nabycia</span><span class="sxs-lookup"><span data-stu-id="2c1f3-139">Acquisition cost</span></span>               | <span data-ttu-id="2c1f3-140">11 000</span><span class="sxs-lookup"><span data-stu-id="2c1f3-140">11,000</span></span> |

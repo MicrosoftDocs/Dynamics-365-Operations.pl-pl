@@ -18,16 +18,16 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 903eeac732f0c5dc3d94d609ee08988029e33f0c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1285b62130e0c3b0eb30773b3ccaa7a31d844461
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="practice-manager-power-bi-content"></a><span data-ttu-id="766c0-104">Zawartość usługi Power BI dla kierownika praktyk</span><span class="sxs-lookup"><span data-stu-id="766c0-104">Practice manager Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="766c0-105">W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft Power BI **Kierownik praktyk**.</span><span class="sxs-lookup"><span data-stu-id="766c0-105">This topic describes what is included in the **Practice manager** Microsoft Power BI content.</span></span> <span data-ttu-id="766c0-106">Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.</span><span class="sxs-lookup"><span data-stu-id="766c0-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
@@ -118,7 +118,9 @@ ms.lasthandoff: 01/17/2018
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a><span data-ttu-id="766c0-228">Jednostka: ProjectAccountingCube\_TotalEstimatedCosts</span><span class="sxs-lookup"><span data-stu-id="766c0-228">Entity: ProjectAccountingCube\_TotalEstimatedCosts</span></span> 
 <span data-ttu-id="766c0-229">**Źródło danych**: ProjTable</span><span class="sxs-lookup"><span data-stu-id="766c0-229">**Data source:** ProjTable</span></span>
 
-| <span data-ttu-id="766c0-230">Najważniejsza zagregowana miara</span><span class="sxs-lookup"><span data-stu-id="766c0-230">Key aggregate measurement</span></span>       | <span data-ttu-id="766c0-231">Pole</span><span class="sxs-lookup"><span data-stu-id="766c0-231">Field</span></span>               | <span data-ttu-id="766c0-232">opis</span><span class="sxs-lookup"><span data-stu-id="766c0-232">Description</span></span> |
-|---------------------------------|---------------------|-------------|
+
+|    <span data-ttu-id="766c0-230">Najważniejsza zagregowana miara</span><span class="sxs-lookup"><span data-stu-id="766c0-230">Key aggregate measurement</span></span>    |        <span data-ttu-id="766c0-231">Pole</span><span class="sxs-lookup"><span data-stu-id="766c0-231">Field</span></span>        |                                          <span data-ttu-id="766c0-232">opis</span><span class="sxs-lookup"><span data-stu-id="766c0-232">Description</span></span>                                           |
+|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="766c0-233">Planowany koszt ukończonego działania</span><span class="sxs-lookup"><span data-stu-id="766c0-233">Completed activity planned cost</span></span> | <span data-ttu-id="766c0-234">Sum(TotalCostPrice)</span><span class="sxs-lookup"><span data-stu-id="766c0-234">Sum(TotalCostPrice)</span></span> | <span data-ttu-id="766c0-235">Całkowity koszt własny w oszacowaniach dla wszystkich typów transakcji projektu zawierających ukończone zadania.</span><span class="sxs-lookup"><span data-stu-id="766c0-235">The total cost price in estimates for all project transaction types that have completed tasks.</span></span> |
+
 

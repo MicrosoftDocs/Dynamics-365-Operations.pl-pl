@@ -17,18 +17,18 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 5bcd02e08a4ce5b601615b39bf95362cf92d3fec
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93e8f97dbd3f60be72793c04eb729623321016f8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-alerts"></a><span data-ttu-id="58b1a-103">Tworzenie alertów</span><span class="sxs-lookup"><span data-stu-id="58b1a-103">Create alerts</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 ## <a name="getting-started"></a><span data-ttu-id="58b1a-104">Rozpoczęcie pracy</span><span class="sxs-lookup"><span data-stu-id="58b1a-104">Getting started</span></span>
 <span data-ttu-id="58b1a-105">Przed utworzeniem reguły alertu musisz zdecydować, kiedy i w jakich sytuacjach chcesz otrzymywać alerty.</span><span class="sxs-lookup"><span data-stu-id="58b1a-105">Before you set up an alert rule, decide when or in what situations you want to receive alerts.</span></span> <span data-ttu-id="58b1a-106">Gdy już wiesz, o którym zdarzeniu chcesz otrzymywać powiadomienia, w programie Microsoft Dynamics 365 for Finance and Operations odszukaj stronę, na której pojawiają się dane wywołujące zdarzenie.</span><span class="sxs-lookup"><span data-stu-id="58b1a-106">When you know which event you want to be notified about, in Microsoft Dynamics 365 for Finance and Operations find the page where the data that causes that event appears.</span></span> <span data-ttu-id="58b1a-107">Zdarzeniem może być nadejście określonego dnia lub wystąpienie konkretnej zmiany.</span><span class="sxs-lookup"><span data-stu-id="58b1a-107">The event can be a date that arrives or a specific change that occurs.</span></span> <span data-ttu-id="58b1a-108">W związku z tym należy odnaleźć stronę, gdzie jest podana data, znajduje się modyfikowane pole lub widać nowo tworzony rekord.</span><span class="sxs-lookup"><span data-stu-id="58b1a-108">Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears.</span></span> <span data-ttu-id="58b1a-109">Mając te informacje, można utworzyć regułę alertu.</span><span class="sxs-lookup"><span data-stu-id="58b1a-109">After you have this information, you can create the alert rule.</span></span>

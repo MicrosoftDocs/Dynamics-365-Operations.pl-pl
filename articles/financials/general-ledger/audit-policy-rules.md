@@ -19,17 +19,16 @@ ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 04217e162090720d2a48c96aa9356cea2dbfa230
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 273beb0acef51059b40f9842062ed4dbba770160
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="audit-policy-rules"></a><span data-ttu-id="09837-106">Reguły inspekcji</span><span class="sxs-lookup"><span data-stu-id="09837-106">Audit policy rules</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="09837-107">Zasady inspekcji służą do oceniania raportów z wydatków, faktur od dostawcy i zamówień zakupu, aby się upewnić, że spełniają one utworzone przez Ciebie reguły zasad.</span><span class="sxs-lookup"><span data-stu-id="09837-107">You can use audit policies to evaluate expense reports, vendor invoices, and purchase orders to make sure that they comply with policy rules that you create.</span></span> <span data-ttu-id="09837-108">Wszystkie reguły skojarzone z zasadą inspekcji są uruchamiane w trybie wsadowym, zgodnie z harmonogramem określonym przez użytkownika.</span><span class="sxs-lookup"><span data-stu-id="09837-108">All of the rules that are associated with an audit policy are run in batch mode, according to a schedule that you specify.</span></span>  <span data-ttu-id="09837-109">Każda reguła zasad jest wystąpieniem typu reguły zasad.</span><span class="sxs-lookup"><span data-stu-id="09837-109">Each policy rule is an instance of a policy rule type.</span></span> <span data-ttu-id="09837-110">Dla każdego typu reguły zasad w danej chwili może być aktywna tylko jedna reguła.</span><span class="sxs-lookup"><span data-stu-id="09837-110">For each policy rule type, only one policy rule can be active at a time.</span></span> 
 

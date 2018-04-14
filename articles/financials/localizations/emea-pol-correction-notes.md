@@ -17,21 +17,21 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fbe8ee007e3816e3d07fa0e3c6ecc78b5336e710
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a7538e930a2bc33f03f5e3835cc00bffb3acf07d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="correction-notes"></a><span data-ttu-id="cde34-105">Noty korygujące</span><span class="sxs-lookup"><span data-stu-id="cde34-105">Correction notes</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="cde34-106">Ten temat zawiera informacje dotyczące not korygujących.</span><span class="sxs-lookup"><span data-stu-id="cde34-106">This topic provides information about correction notes.</span></span> <span data-ttu-id="cde34-107">Nota korygująca jest dokumentem wymaganym lokalnymi przepisami w Polsce.</span><span class="sxs-lookup"><span data-stu-id="cde34-107">A correction note is a document that is required by local regulations in Poland.</span></span> <span data-ttu-id="cde34-108">Służy do poprawiania błędów na fakturze od dostawcy.</span><span class="sxs-lookup"><span data-stu-id="cde34-108">It's used to correct errors on a vendor invoice.</span></span> 
 
 <span data-ttu-id="cde34-109">Jeśli dostawca wystawia firmie dokument sprzedaży, ale błędnie wpisze adres firmy lub numer identyfikacyjny podatku od wartości dodanej (VAT), lokalne przepisy w Polsce wymagają, aby firma wystawiła dostawcy notę korygującą.</span><span class="sxs-lookup"><span data-stu-id="cde34-109">If a vendor issues a sales document to a company, but makes a mistake about the company’s address or value-added tax (VAT) identification number, local regulations in Poland require that the company issue a correction note to the vendor.</span></span> <span data-ttu-id="cde34-110">Nota korygująca zawiera zarówno oryginalny tekst, jak i poprawiony tekst.</span><span class="sxs-lookup"><span data-stu-id="cde34-110">A correction note contains both the original text and the corrected text.</span></span> <span data-ttu-id="cde34-111">Noty korygujące można tworzyć, księgować i drukować z arkusza not korygujących.</span><span class="sxs-lookup"><span data-stu-id="cde34-111">You can create, post, and print a correction note from the Correction notes journal.</span></span> <span data-ttu-id="cde34-112">Następujące pola są dostępne w arkuszu not korygujących.</span><span class="sxs-lookup"><span data-stu-id="cde34-112">The following fields are available on the Correction notes journal.</span></span>
+
 | <span data-ttu-id="cde34-113">Pole</span><span class="sxs-lookup"><span data-stu-id="cde34-113">Field</span></span>           | <span data-ttu-id="cde34-114">opis</span><span class="sxs-lookup"><span data-stu-id="cde34-114">Description</span></span>                                                                                                                                                                                                                                                              |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="cde34-115">Pokaż</span><span class="sxs-lookup"><span data-stu-id="cde34-115">Show</span></span>            | <span data-ttu-id="cde34-116">Określ, które dokumenty not korygujących mają być pokazywane, zależnie od ich stan księgowania.</span><span class="sxs-lookup"><span data-stu-id="cde34-116">Select which correction note documents to show, based on their posting status.</span></span>                                                                                                                                                                                           |

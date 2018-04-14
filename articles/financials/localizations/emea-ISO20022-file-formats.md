@@ -17,16 +17,16 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f55e8fbc4d13f84686298cb8dbcebb4baf134cf3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f094a5420e34a13ac654b01fb145728c7e9cca1c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="import-iso20022-files"></a><span data-ttu-id="52564-103">Importowanie plików ISO20022</span><span class="sxs-lookup"><span data-stu-id="52564-103">Import ISO20022 files</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="52564-104">Można importować pliki płatności mające następujące formaty:</span><span class="sxs-lookup"><span data-stu-id="52564-104">You can import payment files that have the following formats:</span></span>
 
@@ -41,8 +41,8 @@ ms.lasthandoff: 03/26/2018
 3. <span data-ttu-id="52564-113">Na stronie **Konto bankowe odbiorcy** skonfiguruj rekord konta bankowego odbiorcy przez wprowadzenie następujących informacji: numer IBAN lub numer konta bankowego oraz kod SWIFT lub kod banku.</span><span class="sxs-lookup"><span data-stu-id="52564-113">On the **Customer bank account** page, set up a customer bank account record by entering the following information: IBAN or bank account number, and SWIFT code or routing number.</span></span>
 4. <span data-ttu-id="52564-114">Na stronie **Konta bankowe** skonfiguruj konta bankowe firmy przez wprowadzenie następujących informacji: numer IBAN lub numer konta bankowego, kod SWIFT lub kod banku, waluta i adres.</span><span class="sxs-lookup"><span data-stu-id="52564-114">On the **Bank accounts** page, set up legal entity bank accounts by entering the following information: IBAN or bank account number, SWIFT code or routing number, currency, and address.</span></span>
 
-    > [!NOTE]
-        > <span data-ttu-id="52564-115">Jeśli zamierzasz używać funkcji Zaawansowane uzgadnianie konta bankowego, na skróconej karcie **Uzgodnienie** w opcji **Zaawansowane uzgadnianie konta bankowego** ustaw wartość **Tak**.</span><span class="sxs-lookup"><span data-stu-id="52564-115">If you plan to use Advanced bank reconciliation, on the **Reconciliation** FastTab, set the **Advanced bank reconciliation** option to **Yes**.</span></span> <span data-ttu-id="52564-116">Jeśli zamierzasz uzgadniać niezaksięgowane importowane płatności, w opcji **Uznaj wyciągi bankowe jako potwierdzenia płatności elektronicznych** ustaw wartość **Tak**.</span><span class="sxs-lookup"><span data-stu-id="52564-116">If you plan to reconcile unposted imported payments, set the **Use bank statements as confirmation of electronic payments** option to **Yes**.</span></span>
+   > [!NOTE]
+   > <span data-ttu-id="52564-115">Jeśli zamierzasz używać funkcji Zaawansowane uzgadnianie konta bankowego, na skróconej karcie **Uzgodnienie** w opcji **Zaawansowane uzgadnianie konta bankowego** ustaw wartość **Tak**.</span><span class="sxs-lookup"><span data-stu-id="52564-115">If you plan to use Advanced bank reconciliation, on the **Reconciliation** FastTab, set the **Advanced bank reconciliation** option to **Yes**.</span></span> <span data-ttu-id="52564-116">Jeśli zamierzasz uzgadniać niezaksięgowane importowane płatności, w opcji **Uznaj wyciągi bankowe jako potwierdzenia płatności elektronicznych** ustaw wartość **Tak**.</span><span class="sxs-lookup"><span data-stu-id="52564-116">If you plan to reconcile unposted imported payments, set the **Use bank statements as confirmation of electronic payments** option to **Yes**.</span></span>
 
 5. <span data-ttu-id="52564-117">Opcjonalnie: Na stronie **Mapowanie kodu transakcji** skonfiguruj mapowanie między kodami transakcji bankowych w pliku a typami transakcji bankowych.</span><span class="sxs-lookup"><span data-stu-id="52564-117">Optional: On the **Transaction code mapping** page, set up the mapping between bank transaction codes in the file and bank transaction types.</span></span>
 6. <span data-ttu-id="52564-118">Jeżeli plik zawiera opłaty za transakcje, które chcesz zaksięgować razem z przychodzącą płatnością, otwórz opłatę od płatności na stronie **Opłata od płatności odbiorcy**.</span><span class="sxs-lookup"><span data-stu-id="52564-118">If the file contains transaction charges that you want to post together with the incoming payment, create a payment fee on the **Customer payment fee** page.</span></span> <span data-ttu-id="52564-119">Następnie na stronie **Metody płatności** skojarz opłatę od płatności z kontem bankowym w ustawieniach opłat od płatności.</span><span class="sxs-lookup"><span data-stu-id="52564-119">Then, on the **Methods of payment** page, associate the payment fee with the bank account in the payment fee setup.</span></span>

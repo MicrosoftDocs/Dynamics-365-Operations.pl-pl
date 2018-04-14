@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 16255e812773ed35c0e34ec26a8a689ea09632bd
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 21e66aba073bda6f60a3239264f4b7c520ece861
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a><span data-ttu-id="9f5dc-103">Planowanie tras przewozu frachtu z przystankami</span><span class="sxs-lookup"><span data-stu-id="9f5dc-103">Plan freight transportation routes with multiple stops</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="9f5dc-104">W tym artykule opisano różne elementy używane do planowania tras transportu w programie Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="9f5dc-104">This article describes the various elements that you use to plan transportation routes in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 

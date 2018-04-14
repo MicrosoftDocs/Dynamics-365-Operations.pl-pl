@@ -17,15 +17,15 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: f3610b52fd690b698d50a608c41adfb918930266
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 13df47f7b04f5fc4b6c9a28b0c05a2b1bd0fe6a8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="define-inventory-counting-processes"></a><span data-ttu-id="86a08-103">Definiowanie procesów inwentaryzacji zapasów</span><span class="sxs-lookup"><span data-stu-id="86a08-103">Define inventory counting processes</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="86a08-104">Ta procedura poprowadzi Cię przez konfigurację podstawowych procesów inwentaryzacji poprzez utworzenie grupy inwentaryzacji i arkusza inwentaryzacji.</span><span class="sxs-lookup"><span data-stu-id="86a08-104">This procedure walks you through the configuration of basic inventory counting processes by creating a counting group and a counting journal.</span></span> <span data-ttu-id="86a08-105">Ponadto zobaczysz, jak włączyć zasady inwentaryzacji na poziomie magazynu i towaru.</span><span class="sxs-lookup"><span data-stu-id="86a08-105">It also shows you how to enable counting policies on a warehouse and item level.</span></span> <span data-ttu-id="86a08-106">Te zadania zazwyczaj wykonuje kierownik magazynu.</span><span class="sxs-lookup"><span data-stu-id="86a08-106">These tasks would typically be carried out by a warehouse supervisor.</span></span> <span data-ttu-id="86a08-107">Procedura wymaga, aby istniała pewna ilość zwolnionych produktów i magazyny.</span><span class="sxs-lookup"><span data-stu-id="86a08-107">It is a prerequisite to have some existing released products and warehouses.</span></span> <span data-ttu-id="86a08-108">Jeśli używasz danych firmy demonstracyjnej, procedurę można wykonać w firmie USMF na dowolnym towarze magazynowym.</span><span class="sxs-lookup"><span data-stu-id="86a08-108">If you're using a demo data company, you can run this procedure in the USMF company with any stocked item.</span></span>
 

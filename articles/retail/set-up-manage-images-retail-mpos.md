@@ -20,17 +20,16 @@ ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: b11d8cc534964959662b4e2c67c19e3961295c3a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 16c6603ee6b4ed6cdd002adf516eeaf876ce7bb9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-and-manage-images-for-retail-modern-pos"></a><span data-ttu-id="9ab65-103">Konfigurowanie obrazów i zarządzanie nimi w module Retail Modern POS</span><span class="sxs-lookup"><span data-stu-id="9ab65-103">Set up and manage images for Retail Modern POS</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="9ab65-104">W tym artykule objaśniono etapy konfigurowania obrazów i zarządzania nimi dla różnych jednostek wyświetlanych w module Retail Modern POS (MPOS).</span><span class="sxs-lookup"><span data-stu-id="9ab65-104">This article explains the steps that are involved in setting up and managing images for the various entities that appear in Retail Modern POS (MPOS).</span></span>
 
@@ -142,7 +141,7 @@ kliknij **Definiuj szablon multimediów**.</span><span class="sxs-lookup"><span 
 6.  <span data-ttu-id="9ab65-270">Mimo że MPOS jest w trybie Online, należy uruchomić zadanie katalogu w HQ, aby upewnić się, że dane zostały przesłane co najmniej jeden raz do bazy danych offline.</span><span class="sxs-lookup"><span data-stu-id="9ab65-270">While MPOS is in Online mode, run the Catalog job in HQ, to make sure that the data is sent at least one time to the offline database.</span></span>
 7.  <span data-ttu-id="9ab65-271">Umieść MPOS w trybie Offline.</span><span class="sxs-lookup"><span data-stu-id="9ab65-271">Put MPOS into Offline mode.</span></span> <span data-ttu-id="9ab65-272">Powinien być widoczny obraz przesłany dla określonego produktu w HQ.</span><span class="sxs-lookup"><span data-stu-id="9ab65-272">You should see the image that you uploaded for the specific product in HQ.</span></span> <span data-ttu-id="9ab65-273">[![offline1](./media/offline1.png)](./media/offline1.png)</span><span class="sxs-lookup"><span data-stu-id="9ab65-273">[![offline1](./media/offline1.png)](./media/offline1.png)</span></span>
 
- 
+
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a><span data-ttu-id="9ab65-274">Ustawianie obrazów katalogu, kategorii, pracownika i odbiorcy do wyświetlania w trybie Offline dla MPOS</span><span class="sxs-lookup"><span data-stu-id="9ab65-274">Set up catalog, category, employee, and customer images to appear in Offline mode for MPOS</span></span>
 

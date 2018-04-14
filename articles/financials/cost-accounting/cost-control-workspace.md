@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 861b4eda291dc7b0a5c045a767c860b7e4718404
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: beb110091ea452ec46739c10fa2570eb9b6f656f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-control-overview"></a><span data-ttu-id="36a46-104">Omówienie obszaru roboczego Kontrola kosztów</span><span class="sxs-lookup"><span data-stu-id="36a46-104">Cost control overview</span></span> 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="36a46-105">Obszar roboczy **Kontrola kosztów** jest centralnym miejscem, w którym menedżerowie odpowiedzialni za kontrolę obiektu kosztów lub zbioru obiektów kosztów w granicach wymiaru lub między wymiarami (np. w centrach kosztów i grupach produktów) mają dostęp do raportów.</span><span class="sxs-lookup"><span data-stu-id="36a46-105">The **Cost control** workspace is a central point where managers who are responsible for controlling a cost object or a set of cost objects within a dimension or across dimensions (for example, cost centers and product groups) can access reports.</span></span> <span data-ttu-id="36a46-106">Raporty w obszarze roboczym są w pełni zarządzane przez księgowych kosztów, dzięki czemu układ i dane używane w raportach mogą być spójne w całej organizacji.</span><span class="sxs-lookup"><span data-stu-id="36a46-106">The reports in the workspace are fully managed by cost accountants, so that the layout and data that are used for reporting can be consistent across the whole organization.</span></span>
 

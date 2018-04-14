@@ -17,15 +17,15 @@ ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e80f7f006d29ee6de6953b8c9d47b3beddd42992
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0d6ac0bcd1bc4b8e4395fd6d9d4e00c39d8c8695
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="view-cost-object-balance"></a><span data-ttu-id="5a219-103">Wyświetlanie salda obiektu kosztu</span><span class="sxs-lookup"><span data-stu-id="5a219-103">View cost object balance</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5a219-104">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="5a219-104">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="5a219-105">Ta procedura jest przeznaczona dla kontrolera kosztów.</span><span class="sxs-lookup"><span data-stu-id="5a219-105">This procedure is intended for the cost controller.</span></span>
 

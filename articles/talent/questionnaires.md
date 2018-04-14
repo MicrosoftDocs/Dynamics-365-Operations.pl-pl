@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: fc7194e7f95a6a99587a6f7e8ab8a30957bbbd90
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 200636577ec8b9be9822ef0fa26daa0121e61211
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="questionnaires"></a><span data-ttu-id="c23eb-105">Kwestionariusze</span><span class="sxs-lookup"><span data-stu-id="c23eb-105">Questionnaires</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="c23eb-106">Ten temat zawiera ogólne informacje o kwestionariuszach oraz łącza do bardziej szczegółowych informacji.</span><span class="sxs-lookup"><span data-stu-id="c23eb-106">This topic provides general information about questionnaires, and links to more detailed information.</span></span> <span data-ttu-id="c23eb-107">Kwestionariusz to zestaw pytań, które służą do gromadzenia informacji do różnych celów.</span><span class="sxs-lookup"><span data-stu-id="c23eb-107">A questionnaire is a set of questions that is used to collect information for various purposes.</span></span> <span data-ttu-id="c23eb-108">Użytkownik może projektować, tworzyć, dystrybuować i wypełniać kwestionariusze, a następnie analizować wyniki.</span><span class="sxs-lookup"><span data-stu-id="c23eb-108">You can design, create, distribute, and complete questionnaires, and then analyze the results.</span></span> 
 

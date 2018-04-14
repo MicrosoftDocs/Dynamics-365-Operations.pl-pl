@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4a7eee6617e12d59a3d06207f5f6b58c93e28240
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a7a09c67008582a8ee9703a93751ede525a7d4d3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="deactivate-a-production-flow-version"></a><span data-ttu-id="2f858-103">Dezaktywowanie wersji przepływu produkcji</span><span class="sxs-lookup"><span data-stu-id="2f858-103">Deactivate a production flow version</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2f858-104">Gdy aktywna wersja przepływu produkcji nie jest już potrzebna, można ją dezaktywować.</span><span class="sxs-lookup"><span data-stu-id="2f858-104">When an active production flow version is no longer needed, it can be deactivated.</span></span> <span data-ttu-id="2f858-105">Tej opcji należy używać tylko wtedy, jeśli wszystkie reguły i działania Kanban zakończyły się i nie będą ponownie uaktywniane.</span><span class="sxs-lookup"><span data-stu-id="2f858-105">You should only use this option if all kanban rules and activities have ended and will not be activated again.</span></span> <span data-ttu-id="2f858-106">Należy zauważyć, że data ważności wszystkich reguł Kanban odnoszących się do tej wersji przepływu produkcji będzie aktualizowana o bieżącą datę i godzinę.</span><span class="sxs-lookup"><span data-stu-id="2f858-106">Note that the expiry date of all kanban rules related to this production flow version will be updated with the current date and time.</span></span> 
 

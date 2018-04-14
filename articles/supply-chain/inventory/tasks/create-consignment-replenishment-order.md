@@ -17,15 +17,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: c9d142e50d39f9e98adeef170da93b8137de4131
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a9cb8050d5d2f0945be76be7370a2e49dee52819
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-consignment-replenishment-order"></a><span data-ttu-id="532ff-103">Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych</span><span class="sxs-lookup"><span data-stu-id="532ff-103">Create a consignment replenishment order</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="532ff-104">Ta procedura pokazuje, jak utworzyć zamówienie uzupełnienia zapasów konsygnacyjnych, gdzie można śledzić oczekiwaną dostawę od dostawcy do swoich zapasów konsygnacyjnych.</span><span class="sxs-lookup"><span data-stu-id="532ff-104">This procedure shows how to create a consignment replenishment order where you can track the expected delivery from a vendor into your consignment inventory.</span></span> <span data-ttu-id="532ff-105">Prezentuje także sposób rejestrowania przyjęcia produktów, tak aby zapasy konsygnacyjne zostały zarejestrowane jako zapasy dostępne będące własnością dostawcy.</span><span class="sxs-lookup"><span data-stu-id="532ff-105">It also shows how to record a receipt of products so that the consignment inventory is registered as on-hand inventory owned by the vendor.</span></span> <span data-ttu-id="532ff-106">Zazwyczaj procedurę wykonuje pracownik działu zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="532ff-106">This procedure would typically be done by a procurement professional.</span></span> <span data-ttu-id="532ff-107">Zadania z przewodnika można wykonać przy użyciu danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="532ff-107">You can use this guide in demo data company USMF.</span></span> <span data-ttu-id="532ff-108">Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.</span><span class="sxs-lookup"><span data-stu-id="532ff-108">This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.</span></span>
 
