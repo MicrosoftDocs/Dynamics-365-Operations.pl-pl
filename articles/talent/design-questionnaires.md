@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="design-a-questionnaire"></a>Projektowanie kwestionariusza
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 W tym temacie opisano proces tworzenia kwestionariusza. Pierwszym krokiem jest projektowanie kwestionariusza. Przy projektowaniu kwestionariusza, można nie tylko zapisać pytania i odpowiedzi, ale również utworzyć strukturę, która umożliwia rejestrowanie odpowiedzi i umieszczanie ich w tabelach. 
 

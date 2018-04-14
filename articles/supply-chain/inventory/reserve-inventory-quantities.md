@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reserve-inventory-quantities"></a>Rezerwowanie ilości zapasów
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano różne dostępne opcje rezerwowania zapasów.
 
@@ -50,6 +49,7 @@ Zasady rezerwacji zapasów są ustawiane na stronach **Grupy modeli pozycji**, *
 ### <a name="policies-on-the-item-model-groups-page"></a>Zasady na stronie Grupy modeli pozycji
 
 Sekcja **Zasady zapasów** zawiera następujące zasady rezerwacji.
+
 |                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Zasada rezerwacji**  | **Opis**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -63,6 +63,7 @@ Sekcja **Zasady zapasów** zawiera następujące zasady rezerwacji.
 #### <a name="example-for-fifo-date-controlled-and-backward-from-ship-date"></a>Przykład dla opcji FIFO z kontrolą daty i Wstecz od daty wysyłki
 
 W tym przykładzie dostępne zapasy towaru o numerze A istnieją dla trzech różnych numerów partii.
+
 | Numer towaru | Numer partii | Ilość | Data             |
 |-------------|--------------|----------|------------------|
 | A           | 1000         | 5        | 2 lutego 2016 |

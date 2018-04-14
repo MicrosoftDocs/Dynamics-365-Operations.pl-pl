@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definiowanie procesu związanego z wynagrodzeniem i obliczanie wyników
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Procesy wynagrodzeń służą do określania nowych kwot wynagrodzeń i nagród dla pracowników objętych planami wynagrodzeń stałych i o zmiennej wysokości. Procesy wynagrodzeń można uruchamiać wiele razy w celu przeprowadzenia analizy „co, jeśli” i zweryfikowania, czy wszystkie zmiany i ustawienia są poprawne. Ta procedura spowoduje utworzenie procesu wynagrodzenia, wykonanie go i wyświetlenie wyników. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

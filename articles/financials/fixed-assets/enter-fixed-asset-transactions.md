@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-transaction-options"></a>Opcje transakcji środków trwałych
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule opisano różne dostępne metody tworzenia transakcji na środkach trwałych.
 

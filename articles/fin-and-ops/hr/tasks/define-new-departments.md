@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-new-departments"></a>Definiowanie nowych działów
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Działy to jednostki operacyjne, które reprezentują obszar funkcjonalny przedsiębiorstwa, taki jak sprzedaż lub księgowość. Wiele firm ma hierarchie organizacyjne pokazujące różne działy istniejące w firmie. Ta procedura poprowadzi przez proces tworzenia działów, a następnie ich dodawania do hierarchii działów w organizacji. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

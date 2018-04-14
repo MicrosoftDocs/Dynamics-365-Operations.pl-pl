@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Obsługa informacji dotyczących urazów i chorób pracowników
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Zaleca się najpierw wykonać przewodnik po zadaniach „Ustawienia urazów i chorób”, ponieważ część informacji konfiguracyjnych z niego jest używanych w tym miejscu. 
 

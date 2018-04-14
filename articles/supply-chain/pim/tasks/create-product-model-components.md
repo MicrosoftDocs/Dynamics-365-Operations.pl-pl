@@ -24,7 +24,7 @@ ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-product-model-components"></a>Tworzenie składników modelu produktu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Modele konfiguracji produktów opartych na ograniczeniach wykorzystują składniki jako elementy konstrukcyjne do zbudowania struktury modelu produktu. Składniki muszą być utworzone, zanim będzie można zbudować model produktu. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

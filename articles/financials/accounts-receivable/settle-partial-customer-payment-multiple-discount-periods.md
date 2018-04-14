@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Rozliczenie płatności częściowej odbiorcy, która ma wiele okresów rabatu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule przedstawiono sposób rozliczania częściowych płatności od odbiorców w przypadku istnienia wielu okresów rabatu.
 

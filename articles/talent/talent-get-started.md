@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a>Rozpoczynanie korzystania z rozwiązania Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 W rozwiązaniu Microsoft Dynamics 365 for Talent można bardzo łatwo zmodyfikować interfejs użytkownika i ustawić opcje, które powodują, że oprogramowanie lepiej spełnia potrzeby użytkownika. Ten temat zawiera łącza do tematów z informacjami na temat dostosowywania interfejsu użytkownika do osobistych preferencji. Ten temat zawiera także łącza do informacji ułatwiających skuteczne i dokładne wyszukiwanie informacji w systemie. 
 

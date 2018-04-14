@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="batch-order-lifecycle-from-create-to-start"></a>Cykl zamówienia partii od utworzenia do rozpoczęcia
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura prowadzi Cię przez pierwszą częścią cyklu życia szarży produkcyjnej.
 

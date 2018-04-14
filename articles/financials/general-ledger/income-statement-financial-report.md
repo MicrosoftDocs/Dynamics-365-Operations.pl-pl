@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="income-statement-financial-report"></a>Raport finansowego zestawienia przychodów
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule opisano domyślny raport o rachunkach wyników. Omówiono również bloki konstrukcyjne skojarzone z tym raportem. 
 
@@ -60,7 +59,7 @@ Definicje kolumn zawierają różnego rodzaju kolumny oferujący różne poziomu
     -   **FD** — dane finansowe dla bieżącego okresu
     -   **FD** — dane finansowe od początku roku
 
- 
+
 
 <a name="see-also"></a>Informacje dodatkowe
 --------

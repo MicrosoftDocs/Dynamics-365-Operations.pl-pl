@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="exchange-rate-adjustments"></a>Korekty kursów wymiany
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji.
 
@@ -53,18 +52,21 @@ Oto kursy wymiany dolarów kanadyjskich (CAD) na dolary amerykańskie (USD) dla 
 -   3 stycznia 2013: 420,0000
 
 ### <a name="invoice"></a>Faktura VAT
+
 | Data                             | Strona debetowa/kredytowa | Kwoty               | Konto księgi głównej (KG)    | Typ transakcji             | Typ księgowania       | Strona kredytowa | Korekta |
 |----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
 | 1-gru-12                         | Strona debetowa        | 10 000 CAD/40 000 USD | rozrachunki z odbiorcami                             | Faktura VAT                      | Saldo odbiorcy   |        |            |
 | 1-gru-12                         | Strona kredytowa       | 10 000 CAD/40 000 USD | Kompensaty                         | Faktura VAT                      | Arkusz księgi     | X      |
 
 ### <a name="payment"></a>Płatność
+
 | Data                             | Strona debetowa/kredytowa | Kwoty               | Konto księgi głównej (KG)    | Typ transakcji             | Typ księgowania       | Strona kredytowa | Korekta |
 |----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
 | 3-sty-13                         | Strona debetowa        | 10 000 CAD/42 000 USD | Kompensaty                         | Płatność                      | Arkusz księgi     |        |            |
 | 3-sty-13                         | Strona kredytowa       | 10 000 CAD/42 000 USD | rozrachunki z odbiorcami                             | Płatność                      | Saldo odbiorcy   | X      |            |
 
 ### <a name="settlement"></a>Miejscowość
+
 | Data                             | Strona debetowa/kredytowa | Kwoty               | Konto księgi głównej (KG)    | Typ transakcji             | Typ księgowania       | Strona kredytowa | Korekta |
 |----------------------------------|--------------|-----------------------|--------------------------------|------------------------------|--------------------|--------|------------|
 |3 stycznia 2013 (= data płatności) | Strona debetowa        | 0 CAD/2000 USD       | rozrachunki z odbiorcami                             | Odbiorca                     | Zysk z tytułu dodatnich różnic kursowych |        |            |
@@ -80,7 +82,7 @@ W tym przykładzie przeszacowania zauważ, że wpis z 3 stycznia 2013 r., jest b
 | 31-gru-12           | Strona kredytowa       | 0 CAD/5000 USD       | Niezrealizowana dodatnia różnica kursowa | Przeszacowanie w walucie obcej | Zysk z tytułu dodatnich różnic kursowych | X      |            |
 | 3-sty-13            | Strona debetowa        | 0 CAD/5000 USD       | rozrachunki z odbiorcami                             | Przeszacowanie w walucie obcej | Zysk z tytułu dodatnich różnic kursowych |        | X          |
  3-sty-13            | Strona kredytowa       | 0 CAD/5000 USD       | Niezrealizowana dodatnia różnica kursowa | Przeszacowanie w walucie obcej | Zysk z tytułu dodatnich różnic kursowych | X      | X          |
- 
+
 
 ### <a name="revaluation-invoice-date-method-date--january-1-2013"></a>Przeszacowanie (metoda Data faktury; data = 1 stycznia 2013)
 W tym przeszacowaniu zauważ, że wpis z 1 stycznia 2013 r., jest bezpośrednim cofnięciem wpisu z 3 stycznia 2013 r. Nawet konta KG i typy księgowania są takie same. Ponadto zauważ, że została ustawiona flaga **Korekta**.

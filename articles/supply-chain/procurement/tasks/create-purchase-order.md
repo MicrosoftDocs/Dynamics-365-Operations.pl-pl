@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order"></a>Tworzenie zamówienia zakupu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób ręcznego tworzenia zamówienia sprzedaży. Najczęściej zamówienia zakupu są tworzone automatycznie jako rezultat planowania głównego, dostawy bezpośredniej i innych procesów. W przypadku tworzenia ręcznego najczęściej robi to pracownik działu zakupów. W pokazanym tutaj przykładzie można użyć firmy demonstracyjnych USMF, podstawiając wartości sugerowane w notatkach do poszczególnych kroków.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-output-location"></a>Lokalizacja wyjściowa produkcji
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano hierarchię używaną do identyfikowania lokalizacji wyjściowej produkcji.
 

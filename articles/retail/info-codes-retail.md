@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="info-codes"></a>Kody informacji
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ten artykuł zawiera omówienie kodów informacji i grup kodów informacji oraz sposobów ich używania.
 
@@ -52,7 +51,7 @@ W programie Dynamics 365 for Retail można utworzyć grupy kodów informacji. Gr
 
 **Przykład 2: Podłącz kody informacji do grup kodów informacji** W przypadku sprzedaży niektórych produktów, na przykład przenośnych urządzeń, zawsze chcemy zbierać informacje, takich jak numer telefonu, identyfikator urządzenia przenośnego (MEID) i numer seryjny. Chcemy jednak gromadzić też i inne informacje w przypadku komputera typu tablet niż w przypadku telefonu komórkowego. Można skonfigurować grupę kodów informacji zawierającą monity o numer telefonu, numer seryjny i MEID, a następnie dołączyć grupę kodów informacji do indywidualnego kodu informacji. Po uruchomieniu kodu informacji dla określonego produktu można uruchomić grupę kodów informacji, co ułatwi zbieranie danych wspólnych bez konieczności definiowania wielu zestawów połączonych kodów informacji dla każdego urządzenia.
 
- 
+
 
 
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="on-premises-deployment-home-page"></a>Strona główna wdrożenia lokalnego
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Rozwiązanie Microsoft Dynamics 365 for Finance and Operations można wdrożyć lokalnie. Po wybraniu typu wdrożenia lokalnego wymagania systemowe, zapotrzebowanie na sprzęt i funkcje różnią się w stosunku do wdrożenia w chmurze. Ten temat zawiera łącza do zasobów z informacjami specyficznymi dla wdrożeń lokalnych.
 

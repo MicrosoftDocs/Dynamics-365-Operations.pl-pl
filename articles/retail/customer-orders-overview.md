@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="customer-orders-overview"></a>Omówienie zamówień odbiorców
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ten temat zawiera informacje o funkcjonalności zamówień odbiorców w programie Retail Modern POS (MPOS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Temat przedstawia powiązane parametry i przepływy transakcji.
 

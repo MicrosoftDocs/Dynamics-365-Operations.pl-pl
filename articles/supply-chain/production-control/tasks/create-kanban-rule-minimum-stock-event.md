@@ -23,14 +23,14 @@ ms.contentlocale: pl-pl
 ms.lasthandoff: 09/29/2017
 
 ---
-# Tworzenie reguły Kanban przy użyciu zdarzenia minimalnych zapasów
+# <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a>Tworzenie reguły Kanban przy użyciu zdarzenia minimalnych zapasów
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura skupia się na konfiguracji potrzebnej do utworzenia reguły Kanban za pomocą zdarzenia minimalnych zapasów, aby upewnić się, że określony produkt jest zawsze dostępny w określonej lokalizacji. Reguła kanban jest tworzona w celu przenoszenia materiału do lokalizacji, gdy poziom zapasów spadnie poniżej 200 sztuk. Uruchomienie przetwarzania powiązania zlecenia z popytem źródłowym powoduje utworzenie niezbędnych kart Kanban. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF. To zadanie jest przeznaczone dla inżyniera procesu lub menedżera strumienia wartości, gdy przygotowują oni wytwarzanie nowego lub zmodyfikowanego produktu w środowisku produkcji oszczędnej.
 
 
-## Utwórz nową regułę Kanban
+## <a name="create-a-new-kanban-rule"></a>Utwórz nową regułę Kanban
 1. Wybierz kolejno opcje Zarządzanie informacjami o produktach > Produkcja oszczędna > Reguły Kanban.
 2. Kliknij przycisk Nowy.
 3. W polu Typ zaznacz opcję „Wycofanie”.
@@ -46,7 +46,7 @@ Ta procedura skupia się na konfiguracji potrzebnej do utworzenia reguły Kanban
 9. W polu Zdarzenie uzupełniania zapasów wybierz opcję „Partia”.
     * Spowoduje to utworzenie kart Kanban w celu zaspokojenia potrzeb materiałowych w powiązanej lokalizacji podczas przetwarzania powiązania zlecenia z popytem źródłowym.  
 
-## Ustawianie minimalnej ilości pozycji
+## <a name="set-the-minimum-quantity-for-the-item"></a>Ustawianie minimalnej ilości pozycji
 1. Kliknij, aby śledzić łącze w polu Produkt.
 2. Kliknij, aby otworzyć łącze znajdujące się w polu Numer towaru.
 3. Rozwiń pole informacji Obraz produktu.
@@ -58,7 +58,7 @@ Ta procedura skupia się na konfiguracji potrzebnej do utworzenia reguły Kanban
     * W polu Magazyn ustaw 12.  
 9. W polu Minimum ustaw wartość „200”.
 
-## Wykonywanie zadania tworzenia partii dla zdarzenia
+## <a name="run-the-batch-event-creation-job"></a>Wykonywanie zadania tworzenia partii dla zdarzenia
 1. Wybierz kolejno opcje Kontrola produkcji > Zadania okresowe > Przetwarzanie wsadowe zadań Kanban > Przetwarzanie powiązań zlecenia z popytem źródłowym.
 2. Kliknij przycisk OK.
 3. Wybierz kolejno opcje Zarządzanie informacjami o produktach > Produkcja oszczędna > Reguły Kanban.

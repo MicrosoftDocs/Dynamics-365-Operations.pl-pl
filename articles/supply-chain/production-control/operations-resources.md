@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="operations-resources"></a>Zasoby rozwiązania Operations
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Zasoby operacyjne wykonują działania projektu lub procesu produkcji. Zasoby mogą być różnego typu i mieć różne możliwości. 
 

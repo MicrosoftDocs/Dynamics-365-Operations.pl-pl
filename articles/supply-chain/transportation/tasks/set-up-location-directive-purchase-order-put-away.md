@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób konfigurowania prostej dyrektywy lokalizacji. W pokazanym przykładzie jest tworzona dyrektywa lokalizacji, która będzie używana do określenia, gdzie mają zostać odłożone towary przyjęte na podstawie zamówienia zakupu. Ten przewodnik po zadaniach można odtworzyć przy użyciu danych firmy demonstracyjnych USMF. Warunki wstępne: Należy utworzyć kod dyspozycji. W tej procedurze stosujemy kod dyspozycji o nazwie Ponowne etykietowanie. Jeśli tworzysz dyrektywę lokalizacji z własnymi danymi, musisz skonfigurować funkcje zaawansowanego zarządzania magazynem dla magazynu i towarów.  Ta procedura jest przeznaczona dla kierownika magazynu.
 

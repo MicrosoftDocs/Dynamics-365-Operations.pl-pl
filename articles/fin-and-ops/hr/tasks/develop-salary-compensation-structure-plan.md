@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="develop-salarycompensation-structure-and-plans"></a>Opracowywanie struktury i planu pensji/wynagrodzeń
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tym przewodniku po zadaniu pokazano kolejne etapy procesu tworzenia planu stałych wynagrodzeń oraz włączania pracowników do planu za pomocą reguł uprawnienia. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF, a zadanie jest przeznaczone dla menedżerów ds. wynagrodzenia i świadczeń.
 

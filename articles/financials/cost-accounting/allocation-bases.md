@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Podstawy alokacji 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Podstawa alokacji stanowi bazę, w oparciu o którą moduł Rachunek kosztów przydziela koszty ogólne. Podstawą alokacji może być ilość, np. używana liczba roboczogodzin, zużywana liczba kilowatogodzin (kWh) lub zajmowana powierzchnia (w stopach lub metrach kwadratowych). Podstawy alokacji przeważnie są używane do przypisywania kosztów ogólnych do wytwarzanych zapasów. Na przykład dział IT alokuje swoje wydatki według liczby komputerów używanej w poszczególnych działach.
 
@@ -424,9 +424,11 @@ Oto zbliżenie na formułę obiektu kosztów CC003 (IT):
 
 Oto przykład reguły dystrybucji kosztów, gdy jako podstawę alokacji ma przypisaną podstawę alokacji formuły Opłata stała za prąd.
 
-| Obiekt kosztów |  opis  | Wartość | Współczynnik alokacji                |
-|-------------|----|-----------|----------------------------------|
-| CC001       | Zasoby ludzkie | 1,837.50  | (1,837.50 ÷ 18,162.50) × kwota  |
-| CC002       | FI | 3,075.00  | (3,075.00 ÷ 18,162.50) × kwota  |
-| CC003       | MM | 13,250.00 | (13 250,00 ÷ 18 162,50) × kwota |
+
+| Obiekt kosztów | opis | Wartość |        Współczynnik alokacji         |
+|-------------|-------------|-----------|----------------------------------|
+|    CC001    |     Zasoby ludzkie      | 1,837.50  | (1,837.50 ÷ 18,162.50) × kwota  |
+|    CC002    |     FI      | 3,075.00  | (3,075.00 ÷ 18,162.50) × kwota  |
+|    CC003    |     MM      | 13,250.00 | (13 250,00 ÷ 18 162,50) × kwota |
+
 

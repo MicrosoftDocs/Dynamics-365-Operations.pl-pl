@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-and-manage-attributes"></a>Tworzenie atrybutów i zarządzanie nimi
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ten artykuł opisuje atrybuty dostępne w programie Microsoft Dynamics 365 for Retail. Atrybuty pozwalają opisać produkt i jego charakterystykę w polach definiowanych przez użytkownika.
 
@@ -58,7 +57,7 @@ Atrybuty pozwalają opisać produkt i jego charakterystykę w polach definiowany
 
 ## <a name="attribute-type"></a>Typ atrybutu
   [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
-  
+
 Atrybuty są oparte na typach atrybutów. Typ atrybutu określa typ danych, które można wprowadzić dla określonego atrybutu. Obecnie program Microsoft Dynamics 365 for Retail obsługuje następujące typy atrybutów:
 
 -   **Waluta** — ten typ atrybutu obsługuje wartości waluty. Może być ograniczona (czyli obsługuje zakres wartości), lub może pozostać otwarta.

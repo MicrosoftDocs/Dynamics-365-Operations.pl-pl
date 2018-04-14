@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobilny obszar roboczy Dostępne zapasy
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Dostępne zapasy**. Ten obszar roboczy pomaga uzyskać w każdym miejscu i czasie wgląd w zapasy zarezerwowane i dostępne.
 

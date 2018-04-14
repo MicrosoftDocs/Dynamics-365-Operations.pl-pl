@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Wizualne planowanie zadań na potrzeby lean manufacturing
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o tablicy harmonogramu Kanban, której planista produkcji może używać do kontrolowania i optymalizowanie planu produkcji dla zadań Kanban.
 

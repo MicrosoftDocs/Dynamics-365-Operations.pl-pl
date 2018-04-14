@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Przypisywanie szablonu faktury niezależnej do odbiorcy
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 To zadanie przedstawia sposób przypisywania szablonu faktury niezależnej do odbiorcy. To zadanie wykorzystuje firmę demonstracyjną USMF i jest przeznaczone dla użytkownika, który odpowiada za zarządzanie i przetwarzanie faktur dla odbiorców.
 

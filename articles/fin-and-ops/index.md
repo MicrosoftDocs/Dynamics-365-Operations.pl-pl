@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 ---
 
 # <a name="introduction-to-microsoft-dynamics-365-for-finance-and-operations"></a>Wprowadzenie do rozwiązania Microsoft Dynamics 365 for Finance and Operations
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Dowiedz się, jak wykorzystać rozwiązanie Microsoft Dynamics 365 for Finance and Operations w firmie. Poniżej znajdziesz ciekawe materiały dla użytkowników, deweloperów i specjalistów IT. 
 

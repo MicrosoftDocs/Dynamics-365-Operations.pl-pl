@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a>Atrybuty i grupy atrybutów oraz ich powiązania z różnymi jednostkami aplikacji Retail w programie Finance and Operations
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 *Atrybuty* umożliwiają dokładniejsze opisanie produktu i jego właściwości za pomocą pól zdefiniowanych przez użytkownika (takich jak **Rozmiar pamięci**, **Pojemność dysku twardego**, **Zgodność z normą Energy Star** i tak dalej). W programie Microsoft Dynamics 365 for Finance and Operations atrybuty można skojarzyć z różnymi jednostkami modułu Retail, takimi jak kategorie produktów i kanały sprzedaży detalicznej, oraz ustawić im wartości domyślne. Wtedy produkty dziedziczą atrybuty i wartości domyślne, gdy zostaną powiązane z kategoriami produktów lub kanałami sprzedaży detalicznej. Wartości domyślne można zastąpić na poziomie poszczególnych produktów, na poziomie kanału sprzedaży detalicznej lub w katalogu sieci sprzedaży.
  
@@ -227,13 +227,13 @@ Wartości domyślne atrybutów można zastąpić dla poszczególnych produktów 
 5. Na skróconej karcie **Produkty** wybierz wymagany produkt, a następnie nad siatką produktów wybierz opcję **Atrybuty**.
 6. Na następnej skróconej karcie zaktualizuj wartości wymaganych atrybutów:
 
-    - Udostępnione media produktu
-    - Udostępnione atrybuty produktu
-    - Kanał medialny
-    - Atrybuty produktu kanału
+   - Udostępnione media produktu
+   - Udostępnione atrybuty produktu
+   - Kanał medialny
+   - Atrybuty produktu kanału
 
-    > [!NOTE]
-    > Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.
+     > [!NOTE]
+     > Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.
 
 ![Grupy atrybutów produktów z katalogu](media/CatalogProdAttrValues.png)
 
@@ -249,11 +249,11 @@ Wartości domyślne atrybutów można zastąpić dla poszczególnych produktów 
 
 5. Na następnej skróconej karcie zaktualizuj wartości wymaganych atrybutów:
 
-    - Udostępnione media produktu
-    - Udostępnione atrybuty produktu
-    - Kanał medialny
-    - Atrybuty produktu kanału
+   - Udostępnione media produktu
+   - Udostępnione atrybuty produktu
+   - Kanał medialny
+   - Atrybuty produktu kanału
 
-    > [!NOTE]
-    > Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.
+     > [!NOTE]
+     > Jeśli w programie Finance and Operations utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów sieci sprzedaży.
 

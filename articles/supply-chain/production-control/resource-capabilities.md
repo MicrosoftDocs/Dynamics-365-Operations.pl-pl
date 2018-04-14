@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="resource-capabilities"></a>Możliwości zasobu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o organizowaniu możliwościach zasobów. Możliwość to zdolność zasobu operacyjnego do wykonania określonego działania. Wyjaśniono, jak możliwości i związane z nimi funkcje, takie jak poziom biegłości i priorytet, służą do wybierania zasobów odpowiednich dla działań.
 

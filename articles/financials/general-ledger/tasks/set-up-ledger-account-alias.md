@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Konfigurowanie aliasu konta księgowego
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano, jak utworzyć alias konta, który zawiera skrót do wprowadzania numeru konta. Procedura wykorzystuje dane firmy demonstracyjnej USMF.
 

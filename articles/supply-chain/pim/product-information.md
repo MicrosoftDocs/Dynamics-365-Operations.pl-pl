@@ -29,9 +29,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="product-information-overview"></a>Omówienie informacji o produktach
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Ten temat zawiera informacje dotyczące zarządzania informacjami o produktach. Moduł Zarządzanie informacjami o produktach współpracuje ze wspólnymi definicjami produktów, kategoriami i identyfikatorami we wszystkich firmach, a także z konkretnymi konfiguracjami produktu, tak aby spełnić wszystkie wymagania procesów biznesowych. 
 

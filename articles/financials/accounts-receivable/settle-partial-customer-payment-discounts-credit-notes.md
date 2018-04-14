@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Rozliczenie płatności częściowej odbiorcy, do której zastosowano rabaty na fakturach korygujących dostawcy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł prowadzi przez scenariusz, w którym rabat gotówkowy jest stosowany do faktury korygującej w sytuacji, gdy również oryginalna faktura miała rabat gotówkowy. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Wyświetl zaksięgowane transakcje podatkowe
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Zaksięgowane transakcje podatkowe można wyświetlać z różnych stron, w zależności od tego, co chcesz obejrzeć. W zadaniu wykorzystano firmę demonstracyjną USMF.
 

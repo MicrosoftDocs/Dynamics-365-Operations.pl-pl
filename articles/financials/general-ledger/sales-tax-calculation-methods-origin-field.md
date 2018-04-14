@@ -28,10 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Wybieranie metody obliczeń podatków w polu podstawy
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 W tym artykule opisano opcje dostępne w polu Podstawy opodatkowania na stronie kodów podatków oraz sposób obliczania podatku na podstawie wybranej opcji kodu podatku.
 
@@ -53,11 +52,12 @@ Urząd skarbowy nałożył na dany towar specjalne cła. Kwoty ceł są dodawane
 -   PODATEK = 25%, przy użyciu metody obliczeń Procent od kwoty brutto
 
 Jeśli kwota netto = 10,00, wtedy cło 1 = 1,00 x 10.00%= 10 , a cło 2 = 2,00 x 10.00% = 20. Kwoty będą następujące: Kwota brutto: kwota netto + CŁO 1 + CŁO 2 (10,00 + 1,00 + 2,00) = 13,00 PODATEK = 13,00 x 25% = 3,25 CŁA I PODATEK łącznie: 1,00 + 2,00 + 3,25 = 6,25 Suma: 10,00 + 6,25 = 16,25
+
 | **Uwaga**                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tylko jeden kod z Podstawą = Procent od kwoty brutto może być użyty w transakcji. Jeśli więcej niż jeden taki kod podatku jest określony dla transakcji, zostanie wyświetlony błąd z informacją, że nie można obliczyć podatku. |
 
- 
+
 <a name="percentage-of-sales-tax"></a>Procent od podatku
 -----------------------
 
@@ -70,6 +70,7 @@ Kody podatków:
 -   PODATEK = 25%, przy użyciu metody obliczeń Procent od kwoty brutto
 
 Kwota netto: 10,00 cło 1: 10,00 x 10% = 1,00 cło 2: 1,00 x 20% = 0,20 kwota brutto: 10,00 + 1,00 + 0,20 = 11,20 podatek: 11,20 x 25% = 2.80 Suma ceł i podatek: 1,00 + 0,20 + 2,80 = 4,00 łączna kwota: 10,00 + 4,00 = 14,00
+
 | **Uwaga**                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nie można używać wielu poziomów podatku w obliczeniach podatku. Podatek nie może być obliczany na podstawie podatku, który już jest obliczony na podstawie innego podatku. Można obliczyć wiele jednopoziomowych podatków dla kodu podatku w transakcji. |
@@ -79,6 +80,7 @@ Po wybraniu opcji Kwota na jednostkę w polu Podstawa, podatek jest obliczany ja
 ### <a name="example"></a>Przykład
 
 Kod podatku jest skonfigurowany jako: 1,20 USD na jednostkę = pole W wierszu faktury sprzedaży 25 opakowań towaru jest sprzedanych Podatek jest obliczany jako 25 x 1,20 = 30,00.
+
 | **Uwaga**                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Jeśli transakcja zostanie wprowadzona w jednostce innej niż jednostka określona w kodzie podatku, jest ona automatycznie konwertowana w oparciu o konwersje jednostek ustawiane na stronie Konwersje jednostek. |

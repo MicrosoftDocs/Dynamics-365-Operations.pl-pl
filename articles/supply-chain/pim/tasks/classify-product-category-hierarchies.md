@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>Klasyfikowanie produktu przy użyciu hierarchii kategorii
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Hierarchie kategorii służą do klasyfikowania produktów na potrzeby eksportu, zaopatrzenia, sprzedaży lub innych celów. To zadanie jest zwykle wykonywane przez menedżera produktu. W przykładzie użyto numeru produktu M0009 z danych firmy demonstracyjnej USMF.
 

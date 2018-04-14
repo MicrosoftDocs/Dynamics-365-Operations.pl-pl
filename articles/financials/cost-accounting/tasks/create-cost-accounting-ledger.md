@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-cost-accounting-ledger"></a>Tworzenie księgi rachunku kosztów
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Księga rachunku kosztów reprezentuje całościowo jednostkę raportowania. Jest ona definiowana przez wymiar składnika kosztów, wymiar statystyczny, kalendarz obrachunkowy i walutę. Nie rozpoznaje ona obiektów firm. Firma i jej dane mogą być skojarzone z wieloma księgami rachunku kosztów. Nagranie wykorzystuje dane firmy demonstracyjnej USP2.
 

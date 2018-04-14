@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-vendor-accounts"></a>Konfigurowanie kont odbiorców
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano typy informacji, które należy wprowadzić podczas tworzenia nowego konta dostawcy.
 

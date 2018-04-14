@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Zapraszamy do korzystania z rozwiązania Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Rozwiązanie Microsoft Dynamics 365 for Talent upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Te procesy obejmują utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami. Ponadto dla pracowników działu zasobów ludzkich stanowi platformę zarządzania odnośnymi obszarami.
 

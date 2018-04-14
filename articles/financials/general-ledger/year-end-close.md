@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="year-end-close"></a>Zamknięcie na koniec roku
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano wymaganą konfigurację i kroki wykonywania procesu zamknięcia roku w księdze głównej. 
 

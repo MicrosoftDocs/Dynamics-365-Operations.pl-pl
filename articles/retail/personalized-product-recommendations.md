@@ -29,8 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personalized-product-recommendations-overview"></a>Omówienie spersonalizowanych rekomendacji produktów
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 > [!NOTE]
 > Usuwamy obecną wersję usługi rekomendowania produktów, ponieważ w nowej wersji wprowadzamy lepszy algorytm i nowsze funkcje zorientowane na handel detaliczny. Aby uzyskać więcej informacji, zobacz [Usunięte i przestarzałe funkcje](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). Jeśli masz problemy z już włączoną funkcją rekomendowania produktów, przejdź do dołu strony. 
@@ -86,9 +85,9 @@ Po włączeniu opcji **Włącz rekomendacje** i uruchomieniu zadań konfiguracji
 -   Poświadczenia i identyfikator modelu są udostępniane środowisku CRT, co umożliwia obsługę wywołań o rekomendacje produktów z aplikacji Cloud POS i MPOS w trybie online.
 
 > ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Rozwiązywanie problemów, jeśli już włączono funkcję Rekomendacje produktów 
->- Wybierz kolejno opcje **Parametry sieci sprzedaży** > **Uczenie maszynowe** > **Wyłącz rekomendacje produktów** i uruchom **zadanie konfiguracji globalnej [1110]**. Jeśli nie możesz znaleźć karty **Uczenie maszynowe**, skontaktuj się z działem pomocy technicznej dla systemu Dynamics. 
-
->- Jeśli za pomocą **Projektanta układu ekranu** dodano **kontrolkę rekomendacji** do ekranu transakcji, usuń również ją. 
+> - Wybierz kolejno opcje **Parametry sieci sprzedaży** > **Uczenie maszynowe** > **Wyłącz rekomendacje produktów** i uruchom **zadanie konfiguracji globalnej [1110]**. Jeśli nie możesz znaleźć karty **Uczenie maszynowe**, skontaktuj się z działem pomocy technicznej dla systemu Dynamics. 
+> 
+> - Jeśli za pomocą **Projektanta układu ekranu** dodano **kontrolkę rekomendacji** do ekranu transakcji, usuń również ją. 
 
 
 

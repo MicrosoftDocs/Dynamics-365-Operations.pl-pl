@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="receive-items-on-purchase-order-from-item-requirement"></a>Przyjmowanie towarów względem zamówienia zakupu z zapotrzebowania na towary
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób przyjmowania towarów względem zamówienia zakupu z zapotrzebowania na towary.
 

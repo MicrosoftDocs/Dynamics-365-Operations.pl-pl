@@ -28,7 +28,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Zawartość usługi Power BI dotycząca wyników sprzedaży i rentowności
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft Power BI **Wyniki sprzedaży i rentowności**. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 

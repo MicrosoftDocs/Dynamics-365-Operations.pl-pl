@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="develop-and-open-a-job-requisition"></a>Opracowywanie i otwieranie zapotrzebowania na stanowisko
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Projekty rekrutacji ułatwiają zarządzanie procesem rekrutacji. Dla każdego projektu rekrutacji można skonfigurować informacje takie jak zadanie, do którego odbywa się rekrutacja, imię i nazwisko osoby rekrutującej, stan projektu oraz dział, w którym będzie zlokalizowane zadanie. Po utworzeniu projektu rekrutacji można napisać ogłoszenie o pracę dla projektu, opublikować oferty na stronach w portalu samoobsługi pracowniczej, skojarzyć podania o pracę z projektem oraz śledzić działania w tym projekcie. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Aby rozpocząć procedurę, wybierz kolejno opcje Zasoby ludzkie > Rekrutacja > Projekty rekrutacji > Projekty rekrutacji.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-templates-for-excel"></a>Szablony planowania budżetu dla programu Excel
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano sposób tworzenia szablonów programu Microsoft Excel, które mogą być używane w planach budżetu.
 
@@ -42,11 +41,11 @@ Dokumenty planu budżetu można wyświetlać i edytować za pomocą jednego lub 
 1. Otwórz **listę planów budżetu** (**Budżetowanie** &gt; **Plany budżetu**). 
 2. Kliknij przycisk **Nowy**, aby utworzyć nowy dokument planu budżetu. 
 
-  [![Lista planów budżetu](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+   [![Lista planów budżetu](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 3. Za pomocą opcji wierszy **Dodaj** dodaj wiersze. Kliknij opcję **Układy**, aby wyświetlić konfigurację układu dokumentu planu budżetu. 
 
-  [![Dodawanie planów budżetu](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+   [![Dodawanie planów budżetu](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
 Możesz przejrzeć konfigurację układu i dostosować ją w razie potrzeby. 
 1. Wybierz kolejno opcje **Szablon** &gt; **Generuj**, aby utworzyć plik programu Excel dla tego układu. 

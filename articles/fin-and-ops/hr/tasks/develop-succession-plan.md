@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="develop-a-succession-plan"></a>Opracowywanie planu dziedziczenia
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Wraz z rozwojem organizacji i planowaniem sukcesji często warto znaleźć kogoś, kto ma podobne umiejętności jak inna osoba.  Funkcja mapowania umiejętności umożliwia analizę istniejących pracowników i kandydatów, aby zobaczyć, czy posiadają zbiór umiejętności taki jak określony ceniony pracownik. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

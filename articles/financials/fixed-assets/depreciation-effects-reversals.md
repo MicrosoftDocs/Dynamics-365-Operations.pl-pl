@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="depreciation-effects-with-reversals"></a>Przykłady wyników amortyzacji z cofnięciami
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule opisano potencjalne skutki stornowania transakcji na środkach trwałych. 
 

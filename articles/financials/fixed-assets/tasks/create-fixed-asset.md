@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-fixed-asset"></a>Tworzenie środka trwałego
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tym przewodniku po zadaniach jest wykorzystywana firma demonstracyjna USMF.  Zostanie w nim utworzony nowy środek trwały przy użyciu strony Lista środków trwałych.
 

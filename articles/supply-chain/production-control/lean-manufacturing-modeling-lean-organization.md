@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="modeling-a-lean-organization"></a>Modelowanie organizacji oszczędnej
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o podstawowych pojęciach używanych w modelowaniu organizacji stosującej produkcję oszczędną. 
 

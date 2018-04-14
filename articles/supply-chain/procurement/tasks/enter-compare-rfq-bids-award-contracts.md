@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób wprowadzania odpowiedzi na ZO, oceniania i porównywania ofert, a następnie przyznawania realizacji oferty jednemu z dostawców. Procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF. Przed rozpoczęciem trzeba mieć ZO z dwoma wierszami, które zostało wysłane co najmniej do dwóch dostawców. Można utworzyć takie niezbędne ZO za pomocą procedury „Tworzenie zapytania ofertowego”. Przed wykonaniem tej procedury należy skonfigurować kryteria punktowania.
 

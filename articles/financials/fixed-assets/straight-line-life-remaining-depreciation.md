@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="straight-line-life-remaining-depreciation"></a>Amortyzacja za pozostały liniowy okres użytkowania
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie metody amortyzacji Liniowy pozostały okres użytkowania.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-leave-of-absence"></a>Zarządzanie nieobecnościami
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura prowadzi przez proces tworzenia rekordów urlopów pracowników. Można śledzić czas spędzany na urlopach z powodów medycznych, naukowych, na opiekę rodzicielską itd. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budgeting-home-page"></a>Budżetowanie — strona główna
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera omówienie składników funkcji budżetowania, narzędzi budżetowania oraz funkcji raportowania dostępnych w rozwiązaniu Finance and Operations. 
 

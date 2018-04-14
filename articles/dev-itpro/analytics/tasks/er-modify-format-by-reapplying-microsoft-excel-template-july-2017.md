@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="modify-a-format-by-reapplying-a-microsoft-excel-template-for-electronic-reporting-er"></a>Modyfikowanie formatu przez ponowne zastosowanie szablonu programu Microsoft Excel na potrzeby raportowania elektronicznego (ER)
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W celu wykonania kroków w tej procedurze należy najpierw wykonać procedurę „ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML”.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-release-order-from-a-purchase-agreement"></a>Tworzenie zlecenia wydania zakupu na podstawie umów zakupu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób korzystania z umowy zakupu podczas tworzenia zamówienia zakupu. Umowa zakupu musi być stosowana podczas tworzenia zamówienia zakupu, ponieważ istnieją ogólne warunki, które powinny być skopiowane do nagłówka zamówienia zakupu. To zadanie zazwyczaj wykonuje pracownik działu zakupów. Warunkiem wstępnym wykonania zadań z tego przewodnika jest istnienie ważnej umowy zakupu ze zobowiązaniem co do ilości produktu dla dostawcy i towarów. Tej samej procedury można użyć w przypadku umowy zakupu z innymi typami zobowiązań. Zadania z przewodnika można wykonać przy użyciu danych firmy demonstracyjnej USMF. Jeśli używasz firmy USMF, można najpierw wykonać zadania z przewodnika „Tworzenie umowy zakupu” i skonfigurować warunki wstępne konieczne dla tego przewodnika.
 

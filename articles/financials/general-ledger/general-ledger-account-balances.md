@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="general-ledger-account-balances"></a>Salda głównego konta księgowego
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule opisano dwa sposoby wyświetlania sald kont księgi głównej — ze strony listy Bilans próbny i za pomocą raportów finansowych. Omówiono także sposoby aktualizacji sald zestawów wymiarów.
 

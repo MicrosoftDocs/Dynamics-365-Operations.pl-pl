@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-subscriptions"></a>Subskrypcje serwisowe
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Subskrypcje są tworzone na podstawie projektu typu czas i materiały. Subskrypcje można tworzyć z projektu, ze strony **Subskrypcje serwisowe** lub za pomocą grupy subskrypcji serwisowych.
 

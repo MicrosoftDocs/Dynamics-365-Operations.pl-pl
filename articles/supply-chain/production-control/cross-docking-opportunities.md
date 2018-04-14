@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano sposób zarządzania procesem przeładunku kompletacyjnego materiału, który jest zgłaszany jako gotowy z linii produkcyjnej do doku transportu wychodzącego.
 
@@ -76,10 +76,10 @@ W **zasadzie przeładunku kompletacyjnego** określasz, które typy dokumentów 
 
 ### <a name="cross-docking-policy-name-transfer-order"></a>Nazwa zasady przeładunku kompletacyjnego: Zamówienie przeniesienia
 
--   Numer kolejny: 10
- -   Typ zlecenia pracy: Wydanie przeniesienia
--   Zapotrzebowanie na przeładunek kompletacyjny wymaga lokalizacji: Fałsz
--   Strategia przeładunku kompletacyjnego: Data i godzina
+- Numer kolejny: 10
+  -   Typ zlecenia pracy: Wydanie przeniesienia
+- Zapotrzebowanie na przeładunek kompletacyjny wymaga lokalizacji: Fałsz
+- Strategia przeładunku kompletacyjnego: Data i godzina
 
 ### <a name="sequence-number"></a>Numer sekwencyjny
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Uchylanie, przywracanie lub wycofywanie odsetek lub opłat
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule wyjaśniono, jak uchylać, przywracać i wycofywać opłaty w postaci odsetek i opłat.
 

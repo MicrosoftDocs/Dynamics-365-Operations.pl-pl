@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-bar-code-masks"></a>Ustawianie masek kodów kreskowych
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 W tym temacie opisano, jak konfigurować znaki maski kodów kreskowych i maski kodów kreskowych oraz jak przypisywać maski kodów kreskowych do kodów kreskowych.
 

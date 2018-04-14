@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>Konfigurowanie ograniczeń transportu towaru
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura skonfiguruje ograniczenie transportu uniemożliwiające przewożenie wybranego towaru za pośrednictwem wybranego centrum. To zadanie zazwyczaj wykonuje koordynator transportu. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-accrual-schemes"></a>Tworzenie schematów naliczania
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ten przewodnik po zadaniach prowadzi przez proces tworzenia schematu naliczania. W zadaniu wykorzystano firmę demonstracyjną USMF.
 

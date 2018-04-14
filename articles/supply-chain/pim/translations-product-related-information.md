@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-related-translations-faq"></a>Tłumaczenia informacji dotyczących produktów — często zadawane pytania
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano sposób zarządzania tłumaczeniami produktów, wartości wymiarów produktu i atrybutów produktu. 
 
@@ -95,8 +94,7 @@ Odbiorca chce kupić małe, czerwone koszulki, a nazwa koszulki na fakturze musi
 <tbody>
 <tr class="odd">
 <td>Aby ustawić preferowany język odbiorcy, wykonaj następujące kroki:
-<ol>  
-<li>Kliknij kolejno opcje <strong>Sprzedaż i marketing</strong> &gt; <strong>Wspólne</strong> &gt; <strong>Odbiorcy</strong> &gt;> <strong>Wszyscy</strong> <strong>odbiorcy</strong>.</li>
+<ol><br/><li>Kliknij kolejno opcje <strong>Sprzedaż i marketing</strong> &gt; <strong>Wspólne</strong> &gt; <strong>Odbiorcy</strong> &gt;> <strong>Wszyscy</strong> <strong>odbiorcy</strong>.</li>
 <li>Kliknij dwukrotnie odbiorcę, a zostanie otwarta strona <strong>Odbiorcy</strong>. Na karcie <strong>Ogólne</strong> w polu <strong>Język</strong> wybierz <strong>język</strong>.</li>
 </ol></td>
 </tr>

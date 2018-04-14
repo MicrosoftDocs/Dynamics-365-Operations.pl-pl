@@ -27,10 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="close-accounts-receivable"></a>Zamykanie rozrachunków z odbiorcami
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Poniższa tabela zawiera listę stron obsługujących procesu biznesowy związany z zamykaniem rozrachunków z odbiorcami.
 

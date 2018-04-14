@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="register-material-consumption-using-a-mobile-device"></a>Rejestracja na urządzeniu przenośnym zużycia materiałów
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano przepływ pracy umożliwiający rejestrowanie zużycia surowców w produkcji przy użyciu urządzenia przenośnego (podręcznego).
 

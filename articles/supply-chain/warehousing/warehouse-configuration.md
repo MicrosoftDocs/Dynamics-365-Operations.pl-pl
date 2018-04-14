@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="warehouse-configuration"></a>Konfiguracja magazynu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule wyjaśniono sposób konfigurowania magazynu. Artykuł zawiera informacje o włączaniu układu magazynu i procesów magazynowych.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="price-simulation"></a>Symulacja ceny
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o symulacjach cen dla ofert. Symulacja ceny pomaga ocenić wpływ obniżek na przyszłą cenę sprzedaży w trakcie procesu sporządzania oferty, zanim określona cena zostanie potwierdzona.
 

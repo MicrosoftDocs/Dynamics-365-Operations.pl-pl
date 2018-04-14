@@ -28,7 +28,7 @@ ms.lasthandoff: 02/27/2018
 
 # <a name="copy-service-templates-lines"></a>Kopiowanie wierszy szablonów serwisu 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Informacje szablonu można skopiować do umowy serwisowej lub do zlecenia serwisowego.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-a-continuity-program-for-a-call-center"></a>Konfigurowanie programu sprzedaży ciągłej dla biura obsługi
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 W tym artykule opisano sposób konfigurowania programu sprzedaży ciągłej dla biura obsługi.
 

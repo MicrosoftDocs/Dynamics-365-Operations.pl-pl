@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-company-specific-hr-parameters"></a>Konfigurowanie parametrów Zasobów ludzkich specyficznych dla firmy
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Niektóre parametry modułu Zasoby ludzkie (HR) są wspólne dla wielu firm, podczas gdy inne parametry są specyficzne dla firm. W tym artykule wyjaśniono, jak skonfigurować parametry modułu Zasoby ludzkie specyficzne dla firmy.
 

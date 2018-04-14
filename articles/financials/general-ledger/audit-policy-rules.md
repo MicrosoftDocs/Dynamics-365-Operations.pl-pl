@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="audit-policy-rules"></a>Reguły inspekcji
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Zasady inspekcji służą do oceniania raportów z wydatków, faktur od dostawcy i zamówień zakupu, aby się upewnić, że spełniają one utworzone przez Ciebie reguły zasad. Wszystkie reguły skojarzone z zasadą inspekcji są uruchamiane w trybie wsadowym, zgodnie z harmonogramem określonym przez użytkownika.  Każda reguła zasad jest wystąpieniem typu reguły zasad. Dla każdego typu reguły zasad w danej chwili może być aktywna tylko jedna reguła. 
 

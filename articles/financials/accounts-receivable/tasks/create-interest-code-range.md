@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-interest-code-with-a-range"></a>Tworzenie kodu odsetek z zakresem
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kody odsetek można konfigurować do obliczania różnych kwot odsetek na podstawie zakresu wartości. Ta procedura pokazuje dodawanie kodu odsetek i dodawanie do niego zakresu.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="organizational-training-power-bi-content"></a>Pakiet zawartości usługi Power BI Szkolenie organizacyjne
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartości Finance and Operations — Szkolenie organizacyjne dla usługi Power BI. 
 

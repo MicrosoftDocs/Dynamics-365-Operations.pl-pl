@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mobile-workspaces"></a>Mobilne obszary robocze
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie wymieniono listę mobilnych obszarów roboczych, których można używać w aplikacji komórkowej Dynamics 365 for Unified Operations.
 

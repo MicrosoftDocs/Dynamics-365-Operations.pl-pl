@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduction-keys"></a>Klucze redukcji
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera przykłady pokazujące konfigurowanie klucza redukcji. Zawiera informacje o różnych ustawieniach kluczy redukcji i wynikach ich zastosowania. Za pomocą klucza redukcji można określić sposób zmniejszania prognozowanych zapotrzebowań.
 
@@ -39,17 +38,19 @@ Ten artykuł zawiera przykłady pokazujące konfigurowanie klucza redukcji. Zawi
 
 W tym przykładzie pokazano, jak klucz redukcji zmniejsza wymagania dotyczące prognozy popytu według wartości procentowych i okresów, które są definiowane według klucza redukcji.
 
-1.  Na stronie **Klucz redukcji** ustaw następujące wiersze.
-    | Reszta | Jednostka  | Procent |
-    |--------|-------|---------|
-    | 1 przypada na wpłatę z zysku na rzecz budżetu państwa      | Miesiąc | 100     |
-    | 2      | Miesiąc | 75      |
-    | 3      | Miesiąc | 50      |
-    | 4      | Miesiąc | 25      |
+1. Na stronie **Klucz redukcji** ustaw następujące wiersze.
 
-2.  Połącz klucz redukcji z grupą zapotrzebowania dla towaru.
-3.  Na stronie **Plany główne** w polu **Reguła redukcji** zaznacz **Procent — klucz redukcji**.
-4.  Utwórz prognozę redukcji dla 1000 szt. na miesiąc.
+   | Reszta | Jednostka  | Procent |
+   |--------|-------|---------|
+   |   1 przypada na wpłatę z zysku na rzecz budżetu państwa    | Miesiąc |   100   |
+   |   2    | Miesiąc |   75    |
+   |   3    | Miesiąc |   50    |
+   |   4    | Miesiąc |   25    |
+
+
+2. Połącz klucz redukcji z grupą zapotrzebowania dla towaru.
+3. Na stronie **Plany główne** w polu **Reguła redukcji** zaznacz **Procent — klucz redukcji**.
+4. Utwórz prognozę redukcji dla 1000 szt. na miesiąc.
 
 Uruchomienie planowania w dniu 1 stycznia spowoduje, że wymagania prognozy popytu zostaną zużyte według wartości procentowych ustawionych na stronie **Klucze redukcji**. Następujące ilości wymagania są przenoszone do planu głównego.
 
@@ -88,20 +89,21 @@ Przy tej samej prognozie popytu dla 1000 sztuk na miesiąc do planu głównego p
 ## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Przykład 3: Transakcja — zasada redukcji prognozy okresu dynamicznego
 W większości przypadków systemy są skonfigurowane tak, aby transakcje zmniejszały prognozy popytu w określonych okresach prognozy: tygodnie, miesiąca itd. Te okresy są definiowane w kluczu redukcji. Jednak czas między dwoma wierszami popytu mogą również *implikować* okresu.
 
-1.  Utwórz prognozę popytu dla następujących dat i ilości.
-    | Data       | Prognoza popytu |
-    |------------|-----------------|
-    | 1 stycznia  | 1 000           |
-    | 5 stycznia  | 500             |
-    | 12 stycznia | 1 000           |
+1. Utwórz prognozę popytu dla następujących dat i ilości.
 
-    W tej prognozie wyraźnie widać okres między datami prognozy: między pierwszą i drugą datą są 4 dni, a między drugą i trzecią jest 7 dni. Te różne zakresy to są okresy dynamiczne.
-2.  Utwórz wiersze zamówienia sprzedaży w następujący sposób.
-    | Data                             | Ilość dla zamówienia sprzedaży |
-    |----------------------------------|----------------------|
-    | 15 grudnia w poprzednim roku | 500                  |
-    | 3 stycznia                        | 100                  |
-    | 10 stycznia                       | 200                  |
+   | Data       | Prognoza popytu |
+   |------------|-----------------|
+   | 1 stycznia  | 1 000           |
+   | 5 stycznia  | 500             |
+   | 12 stycznia | 1 000           |
+
+   W tej prognozie wyraźnie widać okres między datami prognozy: między pierwszą i drugą datą są 4 dni, a między drugą i trzecią jest 7 dni. Te różne zakresy to są okresy dynamiczne.
+2. Utwórz wiersze zamówienia sprzedaży w następujący sposób.
+   | Data                             | Ilość dla zamówienia sprzedaży |
+   |----------------------------------|----------------------|
+   | 15 grudnia w poprzednim roku | 500                  |
+   | 3 stycznia                        | 100                  |
+   | 10 stycznia                       | 200                  |
 
 Prognoza będzie ograniczona w następujący sposób:
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-application-inbox-records"></a>Zatwierdzanie rekordów skrzynki odbiorczej zgłoszeń
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób przeglądania podań o pracę otrzymanych za pośrednictwem stron w portalu samoobsługi pracowniczej. Oprócz przeglądania zgłoszeń można zatwierdzać wybrane rekordy skrzynki odbiorczej zgłoszeń. Rekordy skrzynki odbiorczej zgłoszeń przedstawiają podania o pracę przesłane do firmy w celu rozpatrzenia. Po zatwierdzeniu rekordu zostanie utworzony rekord kandydata dla osoby, która przesłała zgłoszenie. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

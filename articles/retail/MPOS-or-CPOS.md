@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a>Wybór nowoczesnego punktu sprzedaży lub punktu sprzedaży w chmurze
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 W temacie tym przedstawiono również dodatkowe tło, wskazówki oraz wytyczne dla osób odpowiedzialnych za wdrożenie w zakresie czynników, jakie powinni wziąć pod uwagę podczas wdrażania oprogramowania Microsoft Dynamics 365 for Retail. Zapoznanie się z tymi wytycznymi oraz przestrzeganie ich w procesie wdrożenia pozwoli uniknąć osobom odpowiedzialnym za wdrożenie problemów, które mogą wpłynąć na zadowolenie klienta lub wydajność.
 
@@ -92,8 +92,8 @@ Podczas planowania wdrożenia punktu sprzedaży w sklepach detalicznych należy 
 
     O ile łączność w przypadku danego urządzenia jest bardzo niezawodna i elastyczna lub o ile sprzedawca detaliczny nie dopuszcza pewnego czasu przestoju, zaleca się zastosowanie jednej z następujących opcji:
 
-    - Korzystanie z punktu MPOS dla systemu Windows z aktywnym trybem pracy offline.
-    - Wdrożenie lokalnej jednostki RSSU.
+  - Korzystanie z punktu MPOS dla systemu Windows z aktywnym trybem pracy offline.
+  - Wdrożenie lokalnej jednostki RSSU.
 
     Te dwie opcje nie wykluczają się wzajemnie. W przypadku większości niezawodnych topologii sprzedawcy detaliczni mogą wdrożyć lokalną jednostkę RSSU w celu ograniczenia zależności od łączności internetowej lub dostępności usługi Azure, a ponadto mogą również wdrożyć rejestry punktu sprzedaży na urządzeniu z włączonym trybem offline na wypadek wystąpienia problemu z serwerem lokalnym lub siecią.
 

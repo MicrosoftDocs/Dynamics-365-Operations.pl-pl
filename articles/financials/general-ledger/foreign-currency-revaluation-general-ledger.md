@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Przeszacowanie w walucie obcej dla księgi głównej
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie omówiono następujące aspekty procesu przeszacowania w walucie obcej dla księgi głównej: konfiguracja, uruchamianie procesu, wykonywanie obliczeń dla procesu oraz wycofywanie transakcji przeszacowania, jeśli okaże się to konieczne. 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Konfigurowanie elementu menu urządzenia przenośnego do rejestrowania towarów przyjętych
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 To zadanie jest zorientowane na konfigurowanie elementu menu urządzenia przenośnego. Ten element menu służy do rejestrowania przyjęć towarów zamówionych za pośrednictwem zamówień zakupu. 
 

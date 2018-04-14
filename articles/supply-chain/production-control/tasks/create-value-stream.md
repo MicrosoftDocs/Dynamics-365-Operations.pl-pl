@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-value-stream"></a>Tworzenie strumienia wartości
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Strumienie wartości są jednostkami operacyjnymi, które grupują jeden lub wiele przepływów produkcji. Aby zdefiniować przepływ produkcji, należy najpierw zdefiniować strumień wartości.
 

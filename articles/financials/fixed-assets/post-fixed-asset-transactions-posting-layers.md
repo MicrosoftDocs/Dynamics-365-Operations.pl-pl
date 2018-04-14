@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a>Księgowanie transakcji środków trwałych w warstwach księgowania
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie funkcji warstwy księgowania dla transakcji na środkach trwałych.
 

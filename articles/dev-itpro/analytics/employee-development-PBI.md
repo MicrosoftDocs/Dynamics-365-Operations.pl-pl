@@ -25,7 +25,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="employee-development-power-bi-content"></a>Pakiet zawartości usługi Power BI Rozwój pracownika etatowego
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartość **Rozwój pracownika etatowego** dostępny dla usługi Microsoft Power BI.
 
@@ -45,6 +45,7 @@ Raporty dostępne w pakiecie zawartości usługi Power BI **Rozwój pracownika e
 Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
+
 | Jednostka                   | Zawartość                                                                                                   | Powiązania z innymi jednostkami |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | Przesunięcie kalendarza          | Przesunięcia kalendarzy dla raportów wycinkowych                                                                          | Przeszłe przypisania stanowisk, Trend stanowisk, Trend pracowników, Pracownik z rozwiązanym stosunkiem pracy 

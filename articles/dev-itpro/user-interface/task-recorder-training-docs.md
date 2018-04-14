@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="create-documentation-or-training-using-task-recordings"></a>Tworzenie dokumentacji lub szkolenia przy użyciu nagrań zadań
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, czym jest Rejestrator zadań i przewodniki po zadaniach, jak tworzyć nagrania zadań oraz jak dostosowywać przewodniki po zadaniach firmy Microsoft i umieszczać je w Pomocy.
 

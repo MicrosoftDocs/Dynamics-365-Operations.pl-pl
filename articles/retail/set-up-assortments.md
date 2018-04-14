@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-assortments"></a>Konfigurowanie asortymentu
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 W tym artykule opisano, co jest asortyment, i wyjaśniono, jak konfigurować asortymenty w programie Microsoft Dynamics 365 for Retail.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="job-scheduling"></a>Planowanie zadań
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o planowaniu zadań, co jest bardziej szczegółową formą planowania niż planowanie operacji. Można używać planowania zadań do tworzenia harmonogramu pojedynczych zadań lub zamówień w sklepie i kontrolowania środowiska produkcyjnego.
 

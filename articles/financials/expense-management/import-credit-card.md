@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="import-and-maintain-credit-card-transactions"></a>Import i obsługa transakcji kartą kredytową
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Transakcje kartą kredytową dotyczące wydatków można skonfigurować tak, aby były automatycznie importowane wg cyklicznego harmonogramu. Alternatywnie transakcje można zaimportować ręcznie w razie potrzeby. Transakcje kartą kredytową są importowane za pośrednictwem jednostki danych Transakcje kartą kredytową.
 

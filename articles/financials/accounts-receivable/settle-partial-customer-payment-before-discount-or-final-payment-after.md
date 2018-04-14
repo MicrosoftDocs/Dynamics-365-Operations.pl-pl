@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Rozliczanie płatności częściowej odbiorcy przed datą rabatu z ostateczną datą płatności po dacie rabatu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule omówiono wpływ rozliczania płatności za faktury dla odbiorców. Scenariusz koncentruje się na skutkach w księdze podrzędnej, a nie w księdze głównej.
 

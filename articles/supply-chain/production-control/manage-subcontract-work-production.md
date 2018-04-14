@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-subcontracting-work-in-production"></a>Zarządzanie pracą podwykonawczą w produkcji
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak operacje podwykonawcze są zarządzane w programie Microsoft Dynamics 365 for Finance and Operations. Innymi słowy przedstawiono, jak operacje produkcyjne przydzielone do zasobu są zarządzane przez dostawcę.
 

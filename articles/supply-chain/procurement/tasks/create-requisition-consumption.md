@@ -24,7 +24,7 @@ ms.lasthandoff: 11/20/2017
 ---
 # <a name="create-a-requisition-for-consumption"></a>Tworzenie zapotrzebowania na zużycie
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura poprowadzi Cię przez proces tworzenia zapotrzebowania. Pokazuje różne sposoby wyszukiwania produktów w katalogu zaopatrzenia oraz sposoby dodawania produktu, którego nie ma w katalogu. Przed rozpoczęciem tej procedury musisz mieć skonfigurowaną zasadę zakupów z domyślnym typem zapotrzebowania Zużycie. Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Procedurę można wykonać tylko przy użyciu profilu użytkownika skonfigurowanego jako pracownik.  To zadanie normalnie wykonuje pracownik. Rola zabezpieczeń Pracownik pozwoli wykonać te zadania. Jeśli używasz firmy USMF, możesz się zalogować jako Alicia.
 

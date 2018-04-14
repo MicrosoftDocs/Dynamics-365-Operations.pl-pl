@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="expense-reports-and-multiple-approvers"></a>Raporty z wydatków i wiele osób zatwierdzających
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W zależności od zasad zatwierdzania wydatków w organizacji kilka osób może być zobowiązanych do zatwierdzania raportu z wydatków przesłanego przez pracownika. Podczas konfigurowania procesu przepływu pracy dla zatwierdzania raportów z wydatków można dodać elementy przepływu pracy, które zawierają zadania lub kroki dla jednej lub więcej osób mających zatwierdzać raporty z wydatków. Na przykład może istnieć wymóg, aby wszystkie raporty z wydatków były najpierw zatwierdzane przez przełożonego pracownika, który złożył raport, a następnie przez koordynatora rozrachunków z dostawcami.
 

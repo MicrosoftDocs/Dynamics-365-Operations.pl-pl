@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Kredyty i windykacja w rozrachunkach z odbiorcami
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Zarządzanie informacjami dotyczącymi windykacji w module Rozrachunki z odbiorcami odbywa się w jednym centralnym widoku przy użyciu strony Windykacja dostępnej w programie Finance and Operations. Kierownicy ds. kredytów i windykacji mogą używać tego centralnego widoku do zarządzania windykacją. Agenci ds. windykacji mogą rozpocząć proces windykacji na podstawie list odbiorców, które są generowane przy użyciu wstępnie zdefiniowanych kryteriów windykacji, lub ze strony Windykacja.
 
@@ -70,9 +69,9 @@ Następujące strony listy pomagają organizować informacje o windykacji.
 
 > [!NOTE]
 > Aby wyświetlić informacje na stronach listy windykacji, należy utworzyć migawkę wiekowania. Informacje są wyświetlane tylko dla odbiorców, dla których została utworzona migawka wiekowania. Rekordy widoczne na stronie listy można dodatkowo filtrować w następujący sposób:
-<li>Domyślnie użytkownik programu Finance and Operations ma dostęp do wszystkich odbiorców, którzy mają migawki wiekowania.</li>
-<li>Jeśli istnieje pula klientów, użytkownik musi być ustawiony jako agent ds. windykacji, aby korzystać z pul do filtrowania informacji na stronach listy windykacji. Informacje są ograniczone do klientów, którzy znajdują się w wybranej puli klientów.</li>
-<li>Jeśli użytkownik jest skonfigurowany jako agent ds., tylko pule, które są wybrane dla tego agenta, są dostępne na stronie listy. W przypadku włączenia dla danego agenta opcji Zezwalaj agentowi na przeglądanie wszystkich pul klientów na stronie Agent ds. windykacji, będzie miał dostęp do wszystkich pul.</li>
+> <li>Domyślnie użytkownik programu Finance and Operations ma dostęp do wszystkich odbiorców, którzy mają migawki wiekowania.</li>
+> <li>Jeśli istnieje pula klientów, użytkownik musi być ustawiony jako agent ds. windykacji, aby korzystać z pul do filtrowania informacji na stronach listy windykacji. Informacje są ograniczone do klientów, którzy znajdują się w wybranej puli klientów.</li>
+> <li>Jeśli użytkownik jest skonfigurowany jako agent ds., tylko pule, które są wybrane dla tego agenta, są dostępne na stronie listy. W przypadku włączenia dla danego agenta opcji Zezwalaj agentowi na przeglądanie wszystkich pul klientów na stronie Agent ds. windykacji, będzie miał dostęp do wszystkich pul.</li>
 
 
 ## <a name="collections-page"></a> strona Windykacja

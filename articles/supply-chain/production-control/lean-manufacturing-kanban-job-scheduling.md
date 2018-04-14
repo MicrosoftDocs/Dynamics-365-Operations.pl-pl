@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Planowanie zadań w systemie Kanban dla produkcji oszczędnej
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o kontroli wizualnej nad planowaniem zadań Kanban oraz o różnych sposobach planowania zadań w systemie Kanban.  
 

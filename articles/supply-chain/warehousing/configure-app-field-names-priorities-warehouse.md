@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurowanie nazw pól aplikacji w aplikacji Magazynowanie
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów pól aplikacji magazynowej w programie Finance and Operations. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-injury-and-illness-information"></a>Ustawianie informacji dotyczących urazów i chorób
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Pracodawcy muszą je znać, kiedy pracownicy doznają urazu lub zachorują z powodu zagrożeń w miejscu pracy. Na stronie określania choroby lub urazu można podać informacje umożliwiające zgłaszanie wypadków i chorób zaistniałych w miejscu pracy. Można skonfigurować typy urazów i chorób, w tym typy leczenia, koszty i wyniki. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

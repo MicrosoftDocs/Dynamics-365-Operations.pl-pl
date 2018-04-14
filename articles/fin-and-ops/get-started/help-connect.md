@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="connect-the-help-system"></a>Łączenie z systemem Pomocy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano składniki systemu Pomocy w programie Microsoft Dynamics 365 for Finance and Operations. Omówiono sposoby podłączania tych składników oraz podstawowe zasady tworzenia pomocy niestandardowej. 
 
@@ -42,7 +41,7 @@ Poniższa ilustracja pokazuje części systemu Pomocy w programie Dynamics 365 f
 ## <a name="connecting-the-help-system"></a>Łączenie z systemem Pomocy
 > [!NOTE]
 > Karta **Przewodniki po zadaniach** jest obecnie niedostępna w programach Microsoft Dynamics 365 for Talent i Microsoft Dynamics 365 for Retail. Obecnie pracujemy nad włączeniem tej funkcjonalności w przyszłym wydaniu. Przewodniki po zadaniach w sekcji Rozpoczęcie pracy w module Talent pozostają dostępne i oferują podstawowe funkcje. Ponadto jest dostępna pomoc dla procedur w witrynie docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) dla aplikacji Retail i Talent.
- 
+
 
 Za pomocą strony **Parametry systemowe** administratorzy łączą elementy systemu Pomocy i je implementują. [![Formularz Parametry systemowe z ustawieniami Pomocy](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) Na stronie **Parametry systemowe** wykonaj następujące czynności:
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-entry-deadlines"></a>Terminy realizacji zamówień
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o terminach wprowadzania zamówień. Termin wprowadzania zamówień to graniczny czas decydujący o tym, czy zamówienie klienta jest traktowane (i realizowane) tak jakby zostało odebrany w dniu bieżącym lub następnym.
 

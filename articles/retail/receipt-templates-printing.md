@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="receipt-templates-and-printing"></a>Szablony paragonów i drukowanie
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 W tym artykule opisano modyfikowanie układów formularzy w celu sterowania sposobem drukowania paragonów, faktur i innych dokumentów. Moduł Microsoft Dynamics 365 for Retail zawiera projektanta układów, który pozwala łatwo tworzyć i modyfikować różne układy formularzy.
 

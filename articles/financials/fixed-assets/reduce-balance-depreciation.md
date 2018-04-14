@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduce-balance-depreciation"></a>Amortyzacja degresywna
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie metody amortyzacji Degresywna.
 
@@ -80,7 +79,7 @@ Jeśli używasz metody Degresywna, 30 procent podstawy amortyzacji (wartość ks
 | Rok 2 | (7000 - 1000) \* 30% = 1800            | (7000 -1800) = 5200                |
 | Rok 3 | (5200 - 1000) \* 30% = 1260            | (5200 - 1260) = 3940               |
 
- 
+
 -
 
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-journal-entries-and-transactions"></a>Wyświetlanie wpisów w arkuszu i transakcji
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule wyjaśniono różne sposoby, za pomocą których można przeglądać zapisy w arkuszu i transakcje. 
 
@@ -55,7 +54,7 @@ Oprócz raportów finansowych można używać następujących raportów księgow
 -   **Podstawa transakcji** — ten raport pokazuje konta według arkusza, transakcji, księgowania i waluty raportowania. Pokazuje także każdy wiersz arkusza, który został użyty jako konto przeciwstawne.
 
 
-##<a name="see-also"></a>Informacje dodatkowe
+## <a name="see-also"></a>Informacje dodatkowe
 - [Salda głównego konta księgowego](general-ledger-account-balances.md) 
 - [Eksplorator źródeł księgowania](..\accounts-payable\accounting-source-explorer.md)
 - [Raporty finansowe](financial-reporting-getting-started.md)

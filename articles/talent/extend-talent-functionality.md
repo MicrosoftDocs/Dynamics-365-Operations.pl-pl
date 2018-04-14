@@ -26,7 +26,7 @@ ms.lasthandoff: 03/08/2018
 ---
 # <a name="extend-the-functionality-of-microsoft-dynamics-365-for-talent"></a>Rozszerzanie funkcji programu Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Po utworzeniu dowolnej aplikacji w środowisku Microsoft PowerApps można uruchomić takie aplikacje za pomocą łączy w programie Microsoft Dynamics 365 for Talent. Aby skonfigurować dostęp do aplikacji, należy ustawić niektóre informacje w aplikacji Talent na stronie konfiguracji, którą można otworzyć z poziomu obszaru roboczego **Administrowanie systemem**.
 
@@ -38,10 +38,10 @@ Na tej stronie można wprowadzić lub ustawić następujące informacje:
 > - Nazwa opisowa lub identyfikator dla każdej aplikacji PowerApps.
 > - Niepowtarzalny identyfikator (GUID) dla każdej aplikacji dodawanej do strony Talent. Identyfikator aplikacji jest dostępny w witrynie usługi PowerApps [powerapps.com](http://powerapps.com/). 
 > - Strona, z której użytkownicy mogą otworzyć aplikację lub raport. Nie wszystkie strony środowiska Talent obsługują osadzone aplikacje PowerApps i raporty Power BI. 
-
- > [!NOTE]
- >  Należy wprowadzić nazwę wewnętrzną strony, a nie nazwę wyświetlaną u góry strony. Aby znaleźć nazwę wewnętrzną, otwórz stronę, której nazwy szukasz, i kliknij w dowolnym miejscu na stronie. Po otwarciu menu, umieść kursor myszy nad pozycją **Informacje o formularzu**. Wewnętrzna nazwa formularza zostanie wyświetlona obok pozycji **Informacje o formularzu** w menu.
- 
+> 
+> [!NOTE]
+>  Należy wprowadzić nazwę wewnętrzną strony, a nie nazwę wyświetlaną u góry strony. Aby znaleźć nazwę wewnętrzną, otwórz stronę, której nazwy szukasz, i kliknij w dowolnym miejscu na stronie. Po otwarciu menu, umieść kursor myszy nad pozycją **Informacje o formularzu**. Wewnętrzna nazwa formularza zostanie wyświetlona obok pozycji **Informacje o formularzu** w menu.
+> 
 > - Określ formant formularza, z którego aplikacja może pobrać dane kontekstowe. Aplikacja może na przykład używać danych na temat pracownika. W przypadku wprowadzenia strony **Pracownik** w polu **Kontekst** przy uruchamianiu aplikacji będzie otwierana strona **Pracownik**. Wpis w **polu Kontekst** jest opcjonalny. 
 > - Ustaw rozmiar okna dialogowego, w którym będzie uruchamiana aplikacja PowerApps. Okna dialogowe są oznaczone jako „małe” lub „duże”, co umożliwia optymalizację interfejsu użytkownika, gdy aplikacja jest otwierana odpowiednio na telefonie lub większym urządzeniu. 
 

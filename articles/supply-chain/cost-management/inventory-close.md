@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-close"></a>Zamknięcie zapasów
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W ramach procesu rozliczania transakcji rozchodu z transakcjami przychodu można również wybrać aktualizowanie księgi głównej, tak aby uwzględniała wprowadzane korekty.
 

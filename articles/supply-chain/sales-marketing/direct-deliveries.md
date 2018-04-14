@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="direct-deliveries"></a>Dostawy bezpośrednie
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje dotyczące dostaw bezpośrednich. Dostawy bezpośrednie to dostawy wysyłane bezpośrednio od dostawcy do odbiorców końcowych.
 

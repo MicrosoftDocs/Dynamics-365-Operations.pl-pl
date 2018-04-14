@@ -28,8 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="procurement-and-sourcing-overview"></a>Omówienie zaopatrzenia i sourcingu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie funkcji dostępnych w module Zaopatrzenie i sourcing.
 
@@ -39,7 +38,7 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 Popyt na produkty i usługi może wynika z *zapotrzebowania* — na przykład jeśli pracownik potrzebuje produktu. *Katalogi produktów* można skonfigurować w taki sposób, by wyświetlały podpowiedzi przy wyborze dostępnych produktów lub umożliwiały tworzenie żądań dla produktów, które nie są jeszcze dostępne w katalogu, dając działowi zaopatrzenia możliwość znalezienia sposobu, w jaki ten produkt może zostać dostarczony.  
 
 *Limity wydatków* mogą służyć do ograniczania zapotrzebowania wydatków, a *przepływ pracy zaopatrzenia* pozwala dodać opcję żądania zatwierdzenia przed złożeniem zamówienia. Można też określić alokację środków budżetu, jeśli jest to wymagane.  
-  
+
 Dział zaopatrzenia identyfikuje dostawców dla wymaganych produktów i usług, i może to być związane z wysłaniem *zapytania ofertowego* do wielu potencjalnych dostawców. Istnieje możliwość udostępniania specyfikacji żądanego produktu i potencjalni dostawcy można je wyświetlić, jeśli są w stanie dostarczyć produkt, który jest z nimi zgodny. Dostawcy odsyłają oferty, a dział zaopatrzenia przegląda je i dokonuje ostatecznego wyboru dostawcy.  
 
 Zamiast złożonego zapytania ofertowego w ramach zamówienia zakupu można wysłać do dostawcy *zapytanie dotyczące zakupu*. Pomaga ono w ustalaniu różnego rodzaju warunków, takich jak ceny, rabaty i data dostawcy dla zamówienia. Jeśli dostawcy mogą korzystać z portalu **Dostawca**, funkcja zapytań o zakupy jest wyłączona. Zamiast tego zamówienie jest udostępniane w portalu **Dostawca** i gdy *prośba o potwierdzenie* jest wysyłana, dostawca może bezpośrednio potwierdzić zamówienie.  

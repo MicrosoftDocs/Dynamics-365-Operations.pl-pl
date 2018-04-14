@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-process-overview"></a>Omówienie procesu produkcji
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera omówienie procesów produkcji. Opisuje różne etapy zleceń produkcyjnych, szarż produkcji i zadań Kanban — od utworzenia zamówienia aż do zamknięcia okresu finansowego. 
 

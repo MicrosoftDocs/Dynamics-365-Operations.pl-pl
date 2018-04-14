@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="vat-exchange-rate-overview"></a>Podstawowe informacje o kursie wymiany dla podatku VAT
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje dotyczące kursów wymiany dla obliczania podatku VAT. Kurs wymiany używany do obliczania podatku VAT może się różnić od kursu wymiany używanego w funkcjach księgowania w firmie. Po zaksięgowaniu dokumentu w walucie obcej wszelkie występujące różnice kursowe są księgowane na określonych kontach księgowych.
 

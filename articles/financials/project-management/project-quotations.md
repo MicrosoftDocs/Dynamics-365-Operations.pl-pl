@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-quotations"></a>Oferty projektu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera wprowadzenie do koncepcji ofert w ramach projektu, których można używać w celu składania odbiorcom atrakcyjnych ofert, co będzie stanowić pierwszy krok fazy projektu. Oferta w ramach projektu może obejmować oferowane towary i usługi, podstawowe informacje kontaktowe, specjalne umowy handlowe i rabaty oraz możliwe podatki i dopłaty. 
 

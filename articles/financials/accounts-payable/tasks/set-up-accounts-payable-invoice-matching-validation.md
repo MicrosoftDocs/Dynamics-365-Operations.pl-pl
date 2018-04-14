@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Konfigurowanie sprawdzania uzgadniania faktur rozrachunków z dostawcami
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 To nagranie wykorzystuje firmę demonstracyjną USMF. Czynności te wykonuje menedżer ds. rozrachunków z dostawcami lub menedżer księgowości. Zanim rozpoczniesz, upewnij się, że wybrano klucz konfiguracji Uzgadnianie faktur. Jeśli firma śledzi wydatki, na przykład koszty frachtu, przy użyciu opłat, upewnij się, że wybrany został klucz konfiguracji Opłaty.  Uzgadnianie faktur rozrachunków z dostawcami jest procesem uzgadniania obejmującym informacje z faktury dostawcy, zamówienia zakupu i przyjęć produktów. Różnice między tymi dokumentami są nazywane rozbieżnościami (w uzgadnianiu/wykrytymi podczas uzgadniania). Rozbieżności w uzgadnianiu są porównywane z ustawionymi wartościami tolerancji. Jeśli rozbieżność przekracza wartość procentową lub kwotową, są wyświetlane ikony uzgadniania odchyleń w formularzach Faktura od dostawcy i Szczegóły uzgadniania faktur.
 

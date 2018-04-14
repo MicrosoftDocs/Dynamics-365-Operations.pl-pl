@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="200-percent-reducing-balance-depreciation"></a>200% amortyzacja degresywna
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie metody amortyzacji 200% amortyzacja degresywna.
 
@@ -70,6 +69,7 @@ W przypadku wybrania opcji **Fiskalny** jako rok amortyzacji, w polu **Częstotl
 -   **Okres obrachunkowy** księguje łączną kwotę amortyzacji w roku obrachunkowym. Ta kwota jest naliczana w okresach obrachunkowych, które zostały zdefiniowane na stronie **Kalendarze obrachunkowe**.
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a>Przykład amortyzacji degresywnej 200%
+
 |                                |        |
 |--------------------------------|--------|
 | Koszt nabycia               | 11 000 |

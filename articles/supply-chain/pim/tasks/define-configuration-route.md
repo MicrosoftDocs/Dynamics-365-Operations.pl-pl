@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-configuration-routes"></a>Definiowanie marszrut konfiguracji
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura skupia się na definiowaniu marszruty konfiguracji, która decyduje o kolejności, w jakiej grupy konfiguracji będą prezentowane. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Jest to szósta z ośmiu procedur opisujących sposób tworzenia kombinacji dla konfiguracji opartej na wymiarach.
 

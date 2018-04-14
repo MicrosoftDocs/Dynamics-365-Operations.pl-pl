@@ -27,7 +27,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="websearchax-retired"></a>Strona WebSearchAX zamknięta
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Musieliśmy zamknąć stronę WebSearchAX. Zalecamy, aby zamiast niej używać do przeszukiwania witryny ulubionej wyszukiwarki.  Na przykład: 
 

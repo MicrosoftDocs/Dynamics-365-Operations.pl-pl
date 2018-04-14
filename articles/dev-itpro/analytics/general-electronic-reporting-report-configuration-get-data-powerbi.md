@@ -27,8 +27,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Konfigurowanie Raportowania elektronicznego do ściągania danych do usługi Power BI
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono sposób wykorzystania konfiguracji raportowania elektronicznego (ER) do organizowania przesyłania danych z wystąpienia programu Finance and Operations do usług Power BI. Na potrzeby przykładu użyto transakcji Intrastat jako danych biznesowych, które muszą zostać przesłane. Funkcja wizualizacja mapy w programie Power BI wykorzystuje te dane transakcji Intrastat do przedstawienia widoku umożliwiającego analizę działań importowych/eksportowych firmy w raporcie programu Power BI.
 
@@ -118,9 +117,9 @@ Kliknij przycisk **Ustawienia** dla nowego rekordu miejsca docelowego. Następni
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Tworzenie raportu programu Power BI przy użyciu nowego zestawu danych
 1. Kliknij utworzony zestaw danych programu Power BI o nazwie **Szczegóły importu i eksportu**. 
 2. Skonfiguruj wizualizację. Na przykład zaznacz wizualizację **Wypełniona mapa** i skonfiguruj ją w następujący sposób:
- -   Przypisz pole **CountryOrigin** zestawu danych do pola **Lokalizacja** w wizualizacji mapy.
- -   Przypisz pole **Kwota** zestawu danych do pola **Nasycenie kolorów** w wizualizacji mapy.
- -   Dodaj pola **Działanie** i **Rok** zestawu danych do kolekcji pól **Filtry** w wizualizacji mapy.
+   -   Przypisz pole **CountryOrigin** zestawu danych do pola **Lokalizacja** w wizualizacji mapy.
+   -   Przypisz pole **Kwota** zestawu danych do pola **Nasycenie kolorów** w wizualizacji mapy.
+   -   Dodaj pola **Działanie** i **Rok** zestawu danych do kolekcji pól **Filtry** w wizualizacji mapy.
 
 3. Zapisz raport programu Power BI pod nazwą **Raport o szczegółach importu i eksportu**. [![Raport o szczegółach importu i eksportu](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Należy zauważyć, że mapa przedstawia kraje/regiony, które są wymienione w pliku programu Excel (w tym przykładzie Austria i Szwajcaria). Te kraje/regiony są pokolorowane w celu pokazania proporcji kwot zafakturowanych dla każdego z nich. 
 4. Zaktualizuj listę transakcji Intrastat. Zostanie dodana transakcja eksportu pochodząca z Włoch. [![Lista transakcji Intrastat](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="calculate-kanban-quantity-suggestions"></a>Obliczanie sugestii liczby kart Kanban
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura skupia się na optymalizowaniu wielkości i liczby kart Kanban dla określonej reguły Kanban poprzez obliczenie liczby kart Kanban. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Procedura jest przeznaczona dla menedżera strumienia wartości. Wcześniej należy wykonać procedurę Dodawanie nowej zasady obliczania liczby kart Kanban do reguły Kanban.
 

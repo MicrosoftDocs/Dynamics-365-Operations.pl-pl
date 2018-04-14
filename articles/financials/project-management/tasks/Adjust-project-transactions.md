@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="adjust-project-transactions"></a>Koryguj transakcje projektu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ten przewodnik zadania przedstawia sposób korygowania transakcji w projekcie. Można jednak korygować transakcje projektu w systemie pojedynczo lub wybierając je z listy wszystkich transakcji projektu. To zadanie kończy zwykle kierownik projektu. W tym przewodniku zadania jest wykorzystywany zestaw danych firmy USSI.
 

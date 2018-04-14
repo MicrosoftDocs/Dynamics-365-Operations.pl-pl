@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurowanie procesu zatwierdzania w przepływie pracy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Procedura zamieszczona poniżej umożliwia skonfigurowanie właściwości procesu zatwierdzania.
 
@@ -136,6 +135,7 @@ Można wyznaczyć osobę ostatecznie zatwierdzającą dla scenariuszy, gdzie oso
 
 ## <a name="set-a-time-limit"></a>Ustawianie limitu czasu
 Jeśli proces zatwierdzania musi zostać ukończony w określonym czasie, wykonaj następujące kroki.
+
 | **Uwaga**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Opcje wybrane w tych krokach zastąpią opcje wybrane w obszarach **Przypisanie** i **Eskalacja** w poszczególnych krokach zatwierdzania. |

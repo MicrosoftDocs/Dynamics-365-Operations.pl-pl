@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-financial-dimension-default-templates"></a>Obsługa domyślnych szablonów wymiaru finansowego
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób konfigurowania domyślnych szablonów wymiarów finansowych. Szablony mogą służyć do szybkiego rozdziału kwot w dokumentach źródłowych.
 

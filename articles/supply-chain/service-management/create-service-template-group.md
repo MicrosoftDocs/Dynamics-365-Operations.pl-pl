@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="create-a-service-template-group"></a>Tworzenie grupy szablonów serwisu  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Grup szablonów serwisu można używać do sortowania i filtrowania szablonów serwisu.
 

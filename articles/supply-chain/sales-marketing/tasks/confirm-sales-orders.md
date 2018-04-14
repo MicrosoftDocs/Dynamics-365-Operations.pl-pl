@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="confirm-sales-orders"></a>Potwierdzanie zamówień sprzedaży
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura przedstawia sposób potwierdzenia zamówień sprzedaży. Zobaczysz, jak potwierdzić pojedyncze zamówienie, a jak wiele zamówień na raz. Te zadania zazwyczaj wykonuje agenta rozliczeniowego zamówień sprzedaży. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Przed rozpoczęciem upewnij się, że istnieje kilka otwartych zamówień sprzedaży dla tego samego odbiorcy. Jeśli używasz firmy USMF, można użyć odbiorcy US-027.
 

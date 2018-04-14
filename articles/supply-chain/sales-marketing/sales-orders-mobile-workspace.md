@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="sales-orders-mobile-workspace"></a>Mobilny obszar roboczy Zamówienia sprzedaży
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Zamówienia sprzedaży**. Ten obszar roboczy pomaga być na bieżąco z zamówieniami sprzedaży w dowolnym miejscu i czasie. 
 

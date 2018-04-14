@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="acquire-assets-through-procurement"></a>Nabywanie środków trwałych za pomocą zaopatrzenia
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano, jak skonfigurować integrację między modułami Środki trwałe i Rozrachunki z dostawcami, aby automatycznie były tworzone środki trwałe na podstawie zamówień zakupu lub faktur od dostawców albo automatycznie były księgowane transakcje nabycia i korekty wartości początkowej dla środków trwałych.
 

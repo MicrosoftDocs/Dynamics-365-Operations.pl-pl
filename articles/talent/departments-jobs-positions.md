@@ -28,10 +28,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organizowanie pracowników za pomocą zadań, działów i stanowisk
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
-[!include[retail name](includes/retail-name.md)]
-
+[!INCLUDE [retail name](includes/retail-name.md)]
 
 Działy, zadania i stanowiska to elementy organizacyjne zarządzane w module Zasoby ludzkie. W tym temacie opisano koncepcję tych elementów. 
 
@@ -48,7 +47,7 @@ Poniższy przykład ilustruje koncepcje opisane w tym temacie.
 |**Kadry**|Menedżer ds. HR (Zachód)|Menedżer ds. HR|
 |**Kadry**|Menedżer ds. HR (Centrala)|Menedżer ds. HR|
 
- 
+
  <a name="departments"></a>Działy
 ------------
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Wymagania wstępne dotyczące konwersji na koszt standardowy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie omówiono zadania do wykonania przed dokonaniem konwersji na koszt standardowy. 
 

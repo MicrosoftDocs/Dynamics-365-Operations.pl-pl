@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Elementy członkowskie wymiaru statystycznego i szablony dostawców miar statystycznych
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Wymiar statystyczny i jego elementy członkowskie są używane do rejestrowania i kontrolowania wpisów niepieniężnych w rachunku kosztów. Elementy członkowskie wymiaru statystycznego mogą służyć do dwóch celów:
 

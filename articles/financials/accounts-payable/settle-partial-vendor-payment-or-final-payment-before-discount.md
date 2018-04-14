@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Rozliczanie płatności częściowej i płatności ostatecznej dostawcy w całości przed datą rabatu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł prowadzi przez scenariusz, w którym są dokonywane częściowe płatności za fakturę od dostawcy z zastosowaniem rabatu gotówkowego.
 

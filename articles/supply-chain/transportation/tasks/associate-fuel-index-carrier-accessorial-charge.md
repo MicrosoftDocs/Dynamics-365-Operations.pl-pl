@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a>Kojarzenie indeksu paliwa z przewoźnikiem jako opłaty za usługi dodatkowe
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tym podręczniku pokazano sposób tworzenia przypisania usług dodatkowych, opłaty za usługi dodatkowe przewoźnika i danych głównych usług dodatkowych dla dopłaty za paliwo, a także kojarzenia indeksu paliwowego przewoźnika z przewoźnikiem. Przed wykonaniem zadań z tego przewodnika należy utworzyć indeks paliwowy przewoźnika. Do tego celu służy przewodnik „Konfigurowanie indeksu paliwowego przewoźnika”. Te zadania konfiguracyjne z reguły są wykonywane przez menedżera logistyki. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/20/2017
 
 # <a name="personalize-the-user-experience"></a>Personalizacja interfejsu użytkownika
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak można spersonalizować program Microsoft Dynamics 365 for Finance and Operations.
 

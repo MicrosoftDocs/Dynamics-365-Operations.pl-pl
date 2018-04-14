@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="retail-peripherals-overview"></a>Omówienie sklepowych urządzeń peryferyjnych
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi sieci sprzedaży. Opisano różne sposoby podłączania urządzeń peryferyjnych do punktu sprzedaży (POS) oraz składniki, które są odpowiedzialne za zarządzanie połączeniem z punktem sprzedaży.
 

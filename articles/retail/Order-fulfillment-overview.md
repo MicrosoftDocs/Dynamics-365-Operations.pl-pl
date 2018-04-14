@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="store-order-fulfillment"></a>Realizacja zamówienia w sklepie
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Wielu sprzedawców chciałoby zoptymalizować realizację zamówień, umożliwiając to sklepom. Realizacja zamówienia na poziomie sklepu może ułatwić ograniczenie powstania zbyt dużych zapasów w określonym sklepie lub może być wymagana z logistycznego punktu widzenia w przypadkach, gdy sklep dysponuje dodatkowym miejscem lub znajduje się z mniejszej odległości wysyłki do klienta. Aby spełnić to wymaganie w punkcie sprzedaży dostępna jest ujednolicona operacja realizacji zamówienia.
 

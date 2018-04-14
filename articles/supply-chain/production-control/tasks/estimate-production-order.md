@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="estimate-a-production-order"></a>Szacowanie zlecenia produkcyjnego
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnego zestawu danych. W obu przypadkach należy mieć otwarte zlecenie produkcyjne o stanie Utworzono. Jest to druga z siedmiu procedur, które wyjaśniają cykl życia zlecenia produkcyjnego.
 

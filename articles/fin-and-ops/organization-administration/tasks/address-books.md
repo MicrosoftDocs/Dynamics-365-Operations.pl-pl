@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-address-books"></a>Konfigurowanie książek adresowych
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Użyj tej procedury oraz decyzji dokonanych w temacie Planowanie konfiguracji globalnej książki adresowej i dodatkowych książek adresowych, aby skonfigurować dodatkowe książki adresowe w swojej organizacji.
 

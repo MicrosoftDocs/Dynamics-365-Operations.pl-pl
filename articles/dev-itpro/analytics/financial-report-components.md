@@ -28,14 +28,14 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="financial-report-components"></a>Składniki raportu finansowego
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule opisano, jak składniki (bloki konstrukcyjne) definicji raportów są wykorzystywane w sprawozdawczości finansowej. Tymi blokami konstrukcyjnymi mogą być definicje wierszy, kolumn i drzewa raportowania. W tym artykule opisano sposób organizowania i blokowania modułów konstrukcyjnych. 
 
 Filozofia projektowania stosowana w Projektancie raportów finansowych przewiduje podział informacji na jak najmniejsze składniki, lub bloki konstrukcyjne, a następnie ich mieszanie i łączenie zgodnie z wymaganiami. W związku z tym formatowania raportu jest oddzielone od danych finansowych i projekt raportu można zmienić bez modyfikowania danych finansowych w systemie Microsoft Dynamics ERP. Dzięki metodzie bloków konstrukcyjnych można łączyć tekst, kwoty i obliczenia, aby tworzyć dokładnie potrzebne raporty. Ponadto ta elastyczność zachęca do kreatywności poprzez ułatwienie wyświetlania operacji na różne sposoby. Poszczególne bloki konstrukcyjne definicji raportu są podobne do trójwymiarowego arkusza kalkulacyjnego, ale oferują więcej możliwości. Definicja raportu określa definicję wiersza, definicję kolumny i opcjonalną definicję drzewa raportowania, które mają być używane w raporcie. Zawiera także informacje dotyczące miejsca przechowywania generowanego raportu i sposobu jego formatowania. 
 
 ## <a name="building-blocks-of-a-report"></a>Moduły konstrukcyjne raportu
+
 | Blok konstrukcyjny            | opis                     | Więcej informacji                                    |
 |---------------------------|---------------------------------|---------------------------------------------------------|
 | Definicja wiersza            | Definicja wiersza określa opisowe wiersze (na przykład wynagrodzeń lub sprzedaży) w raporcie. Ponadto wyszczególnia wartości segmentów lub wymiarów, które zawierają wartości dla każdej pozycji w wierszu, oraz obejmuje formatowanie wierszy i obliczenia.                                                    | [Definicje wierszy](row-definitions-financial-reporting.md)                       |

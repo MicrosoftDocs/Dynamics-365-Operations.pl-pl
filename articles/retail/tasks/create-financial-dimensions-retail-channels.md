@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores"></a>Tworzenie wymiarów finansowych dla kanałów sprzedaży detalicznej i konfigurowanie wartości wymiarów ze sklepów
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ta procedura prowadzi przez proces tworzenia wymiaru finansowego kanału sprzedaży detalicznej z wartościami wymiarów i krokami konfigurowania wartości wymiaru finansowego w sklepach sieci sprzedaży. Temat nie ma innych czynności pokrewnych, takich jak tworzenie zestawów wymiarów i struktur kont. Procedura wykorzystuje dane firmy demonstracyjnej USRT.
 

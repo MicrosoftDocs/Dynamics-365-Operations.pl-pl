@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-consignment"></a>Konfigurowanie konsygnacji
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono sposób konfigurowania operacji konsygnacji przychodzącej dla zapasów.
 

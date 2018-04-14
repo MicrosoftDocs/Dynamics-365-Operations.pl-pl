@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-items-lent-to-workers"></a>Zarządzanie elementami wypożyczonymi pracownikom.
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Przedmioty pożyczek są rekordami, które pomagają kierownikom śledzić fizyczne przedmioty, które firma pożycza pracownikom. 
 
@@ -51,7 +50,7 @@ Menedżerowie mogą wyświetlać towar wypożyczony przez ich bezpośrednich pod
 
 Jeśli przedmiot został uszkodzony lub przestawiony, należy zarejestrować fikcyjny zwrot. Następnie należy usunąć przedmiot lub zachować go w zestawieniu i zmienić opis, aby wskazać, że przedmiot jest niedostępny.
 
- 
+
 <a name="see-also"></a>Informacje dodatkowe
 --------
 

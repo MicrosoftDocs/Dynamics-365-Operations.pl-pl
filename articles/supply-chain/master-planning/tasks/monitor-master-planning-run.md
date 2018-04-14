@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="monitor-a-master-planning-run"></a>Monitorowanie przebiegu planowania głównego
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Planista produkcji chce sprawdzić, czy trwa sesja planowania głównego. Do wykonania tej procedury użyj danych z firmy demonstracyjnej USMF.
 

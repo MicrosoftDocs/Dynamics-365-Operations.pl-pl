@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="upgrade-budget-planning"></a>Uaktualnienie funkcjonalności planowania budżetu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Istnieją znaczne różnice funkcjonalności planowania budżetu między programami Microsoft Dynamics AX 2012 i Microsoft Dynamics 365 for Finance and Operations. Niektóre funkcje nie zostały uaktualnione i dlatego wymagają zmiany konfiguracji. W tym temacie wyjaśniono, co trzeba ponownie skonfigurować, oraz opisano nowe funkcje, które trzeba wziąć pod uwagę po wykonaniu uaktualnienia.  
 
@@ -70,26 +69,27 @@ Aby pomóc użytkownikom dobrać sposób konfigurowania uaktualnionego systemu, 
 
 ### <a name="define-columns-and-layouts"></a>Definiowanie kolumn i układów
 
-1.  Na stronie **Konfiguracja planowania budżetu** kliknij kartę **Kolumny**. W ramach uaktualnienia nowe kolumny są tworzone automatycznie na podstawie Twoich wierszy planu budżetu. Kolumny używają teraz dat dynamicznych, gdzie czas i rok są przesunięte względem roku obrachunkowego zdefiniowanego w procesie planowania budżetu. **Uwaga:** Ze względów wydajnościowych podczas uaktualniania zakłada się, że wszystkie cykle budżetu reprezentują lata kalendarzowe, a nie obrachunkowe. Jeśli używasz lat obrachunkowych, trzeba wprowadzić modyfikacje zapewniające prawidłowe mapowanie kolumn na ich rok obrachunkowy. Na przykład następujące elementy istniały w systemie AX 2012:
-    -   Scenariusze planu budżetu: Wartości rzeczywiste, Podstawa, Żądanie budżetu, Budżet zatwierdzony
-    -   Wiersze planu budżetu dla wszystkich scenariuszy w roku 2017, a wartości rzeczywiste dla lat 2017 i 2016
+1. Na stronie **Konfiguracja planowania budżetu** kliknij kartę **Kolumny**. W ramach uaktualnienia nowe kolumny są tworzone automatycznie na podstawie Twoich wierszy planu budżetu. Kolumny używają teraz dat dynamicznych, gdzie czas i rok są przesunięte względem roku obrachunkowego zdefiniowanego w procesie planowania budżetu. **Uwaga:** Ze względów wydajnościowych podczas uaktualniania zakłada się, że wszystkie cykle budżetu reprezentują lata kalendarzowe, a nie obrachunkowe. Jeśli używasz lat obrachunkowych, trzeba wprowadzić modyfikacje zapewniające prawidłowe mapowanie kolumn na ich rok obrachunkowy. Na przykład następujące elementy istniały w systemie AX 2012:
+   -   Scenariusze planu budżetu: Wartości rzeczywiste, Podstawa, Żądanie budżetu, Budżet zatwierdzony
+   -   Wiersze planu budżetu dla wszystkich scenariuszy w roku 2017, a wartości rzeczywiste dla lat 2017 i 2016
 
-    W programie Finance and Operations zostaną utworzone następujące kolumny:
-    | Nazwa kolumny    | Scenariusz planu budżetu | Okres kolumny | Przesunięcie roku |
-    |----------------|----------------------|--------------------|-------------|
-    | Sty Scenariusz 1 | Wartości rzeczywiste              | 1                  | 0           |
-    | Sty Scenariusz 2 | Podstawa             | 1                  | 0           |
-    | Sty Scenariusz 3 | Żądanie budżetu       | 1                  | 0           |
-    | Sty Scenariusz 4 | Budżet zatwierdzony      | 1                  | 0           |
-    | Sty Scenariusz 5 | Wartości rzeczywiste              | 1                  | -1          |
-    | Lut Scenariusz 1 | Wartości rzeczywiste              | 1                  | 0           |
-    | ...            | ...                  | ...                | ...         |
+   W programie Finance and Operations zostaną utworzone następujące kolumny:
 
-    W tym przykładzie kolumna o nazwie **Sty Scenariusz 1** jest tworzona dla najnowszych znalezionych danych transakcji planu budżetu, gdy istnieją transakcje w styczniu. Podobna kolumna jest tworzona dla każdego scenariusza zawierającego dane. Po utworzeniu kolumn dla wszystkich okresów w danym roku są tworzone kolumny dla poprzednich lat.
-2.  Nazwy i opisy kolumn oraz inne szczegóły można zmienić ręcznie w aplikacji klienckiej lub poprzez wykonanie zbiorczej aktualizacji przy użyciu dodatku programu Excel odwołującego się do jednostki danych kolumn planu budżetu. Wszystkie filtry, które zostały wcześniej ustawione dla pól macierzy, teraz są ustawione w kolumnach.
-3.  Utwórz nowy układ planu budżetu. Układ wskazuje kilka kolumn definiujących widok, który będzie wyświetlany w programie Excel i aplikacji klienckiej. Układ wymaga, aby najpierw określić zestaw wymiarów księgowych w celu wskazania, które wymiary finansowe można wprowadzać. Po określeniu zestawu wymiarów kliknij przycisk **Opisy** i wybierz opisy wymiarów, które mają zostać umieszczone w układzie.
-4.  Na skróconej karcie **Elementy układu** kliknij przycisk **Dodaj** i dla każdego wiersza dodaj metadane, takie jak waluta, komentarz lub klasa budżetu, która przyporządkowuje wiersze przychodów wierszom wydatków. Następnie dodaj kolumny dla przedziału czasu oraz scenariusze, które mają zastosowanie do tego cyklu i etapu budżetu. Te zmiany można wprowadzać ręcznie w aplikacji klienckiej lub przy użyciu dodatku programu Excel odwołującego się do jednostki danych elementów układu planu budżetu.
-5.  Dla każdego elementu układu określ, czy kolumnę można modyfikować oraz czy kolumna ma być wyświetlana także w skoroszycie programu Excel dla tego układu. **Uwaga:** Dla planów historycznych można rozważyć układ, który pokazuje 12 miesięcznych kolumn dla każdego scenariusza planu budżetu w tym procesie.
+   | Nazwa kolumny    | Scenariusz planu budżetu | Okres kolumny | Przesunięcie roku |
+   |----------------|----------------------|--------------------|-------------|
+   | Sty Scenariusz 1 | Wartości rzeczywiste              | 1                  | 0           |
+   | Sty Scenariusz 2 | Podstawa             | 1                  | 0           |
+   | Sty Scenariusz 3 | Żądanie budżetu       | 1                  | 0           |
+   | Sty Scenariusz 4 | Budżet zatwierdzony      | 1                  | 0           |
+   | Sty Scenariusz 5 | Wartości rzeczywiste              | 1                  | -1          |
+   | Lut Scenariusz 1 | Wartości rzeczywiste              | 1                  | 0           |
+   | ...            | ...                  | ...                | ...         |
+
+   W tym przykładzie kolumna o nazwie **Sty Scenariusz 1** jest tworzona dla najnowszych znalezionych danych transakcji planu budżetu, gdy istnieją transakcje w styczniu. Podobna kolumna jest tworzona dla każdego scenariusza zawierającego dane. Po utworzeniu kolumn dla wszystkich okresów w danym roku są tworzone kolumny dla poprzednich lat.
+2. Nazwy i opisy kolumn oraz inne szczegóły można zmienić ręcznie w aplikacji klienckiej lub poprzez wykonanie zbiorczej aktualizacji przy użyciu dodatku programu Excel odwołującego się do jednostki danych kolumn planu budżetu. Wszystkie filtry, które zostały wcześniej ustawione dla pól macierzy, teraz są ustawione w kolumnach.
+3. Utwórz nowy układ planu budżetu. Układ wskazuje kilka kolumn definiujących widok, który będzie wyświetlany w programie Excel i aplikacji klienckiej. Układ wymaga, aby najpierw określić zestaw wymiarów księgowych w celu wskazania, które wymiary finansowe można wprowadzać. Po określeniu zestawu wymiarów kliknij przycisk **Opisy** i wybierz opisy wymiarów, które mają zostać umieszczone w układzie.
+4. Na skróconej karcie **Elementy układu** kliknij przycisk **Dodaj** i dla każdego wiersza dodaj metadane, takie jak waluta, komentarz lub klasa budżetu, która przyporządkowuje wiersze przychodów wierszom wydatków. Następnie dodaj kolumny dla przedziału czasu oraz scenariusze, które mają zastosowanie do tego cyklu i etapu budżetu. Te zmiany można wprowadzać ręcznie w aplikacji klienckiej lub przy użyciu dodatku programu Excel odwołującego się do jednostki danych elementów układu planu budżetu.
+5. Dla każdego elementu układu określ, czy kolumnę można modyfikować oraz czy kolumna ma być wyświetlana także w skoroszycie programu Excel dla tego układu. **Uwaga:** Dla planów historycznych można rozważyć układ, który pokazuje 12 miesięcznych kolumn dla każdego scenariusza planu budżetu w tym procesie.
 
 ### <a name="update-budget-planning-processes-to-use-the-appropriate-layout-for-each-budget-stage"></a>Aktualizacja procesów planowania budżetu pod kątem używania odpowiedniego układu na każdym etapie budżetu
 

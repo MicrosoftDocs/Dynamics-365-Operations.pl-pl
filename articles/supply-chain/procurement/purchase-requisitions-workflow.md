@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-requisition-workflow"></a>przepływ pracy zapotrzebowań zakupu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Przepływ pracy prowadzi zapotrzebowanie na zakup przez proces weryfikacji — od początkowego stanu Wersja robocza do końcowego Zatwierdzone. Gdy zapotrzebowanie na zakup zostanie przesłane do przeglądu, rozpoczyna się proces przepływu pracy. Po zatwierdzeniu zapotrzebowania na zakup można wygenerować zamówienie zakupu dla wierszy zapotrzebowania na zakup i przesłać do dostawcy w celu realizacji zamówienia.
 

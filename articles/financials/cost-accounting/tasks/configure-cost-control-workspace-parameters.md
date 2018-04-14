@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-cost-control-workspace-parameters"></a>Konfigurowanie parametrów obszaru roboczego kontroli kosztów
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura służy do konfigurowania obszaru roboczego Kontrola kosztów, tak aby kierownicy na różnych poziomach w organizacji mogli uzyskać wgląd w podległe im obiekty kosztów, takie jak centra kosztów i grupy produktów. Do utworzenia tego nagrania użyto firmy demonstracyjnej USP2.
 

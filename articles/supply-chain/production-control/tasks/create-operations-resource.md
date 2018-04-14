@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-an-operations-resource"></a>Tworzenie zasobu operacyjnego
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Zasób operacyjny wykonuje działania projektu lub procesu produkcji. Ta procedura przedstawia sposób definiowania zasobu operacyjnego. Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
 

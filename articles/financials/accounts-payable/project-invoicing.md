@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="project-invoicing"></a>Fakturowanie projektu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie zasad fakturowania projektów rozliczanych według czasu i materiałów oraz projektów o stałej cenie. Znajdują się tu informacje dotyczące propozycji faktur (faktur wstępnych), kontroli faktur, fakturowania akonto, wystawiania faktur przed dostawców i faktur korygujących.
 

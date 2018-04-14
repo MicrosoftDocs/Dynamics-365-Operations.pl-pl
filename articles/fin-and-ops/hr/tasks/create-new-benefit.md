@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-new-benefit"></a>Utwórz nowe świadczenie
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 To zadanie pokazuje sposób tworzenia elementów świadczenia, które będą używane podczas tworzenia nowego świadczenia. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF. Zadanie jest przeznaczona dla menedżer ds. wynagrodzeń i świadczeń.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="action-search"></a>Wyszukiwanie akcji
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule opisano funkcję wyszukiwania akcji dostępną w programie Microsoft Dynamics 365 for Finance and Operations. Funkcja pomaga znajdować i wykonywać czynności na stronie.
 

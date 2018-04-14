@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-a-product-configuration-model"></a>Zatwierdzanie modelu konfiguracji produktu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Wykonanie tej procedury wymaga dostępności co najmniej jednego modelu konfiguracji produktu. Do utworzenia tej procedury użyto modelu Głośnik o wysokiej jakości zawartego w danych firmy demonstracyjnej USMF. Należy zauważyć, że ten model został już zatwierdzony, ale procedura prowadzi przez cały proces.
 

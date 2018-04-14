@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="cost-accounting-analysis-power-bi-content"></a>Pakiet zawartości usługi Power BI Analiza rachunku kosztów
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft Power BI **Analiza rachunku kosztów**. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
@@ -111,18 +111,20 @@ W poniższej tabeli przedstawiono, jak najważniejsze zagregowane miary są uży
 
 Następujące najważniejsze wymiary są używane jako filtry do dzielenia zagregowanych miar w celu uzyskania większej szczegółowości i zapewnienia lepszego wglądu analitycznego.
 
-| Jednostka                             | Przykłady atrybutów                                                                                               |
+
+|               Jednostka               |                                                Przykłady atrybutów                                                |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Księgi rachunku kosztów            | Księga rachunku kosztów                                                                                               |
-| Jednostki kontroli kosztów                 | Nazwa jednostki kontroli kosztów                                                                                               |
-| Wymiary składników kosztów            | Nazwa wymiaru składnika kosztu, Nazwa elementu członkowskiego wymiaru składnika kosztu, Opis elementu członkowskiego wymiaru składnika kosztu          |
-| Wymiary obiektów kosztów             | Nazwa wymiaru obiektu kosztów, Nazwa elementu członkowskiego wymiaru obiektu kosztów, Opis elementu członkowskiego wymiaru obiektu kosztów              |
-| Wymiary statystyczne             | Nazwa wymiaru statystycznego, Nazwa elementu członkowskiego wymiaru statystycznego, Opis elementu członkowskiego wymiaru statystycznego              |
-| Hierarchie wymiarów obiektów kosztów  | Nazwa hierarchii wymiarów obiektów kosztów, Poziom hierarchii wymiarów obiektów kosztów, Drzewo hierarchii wymiarów obiektów kosztów    |
+|      Księgi rachunku kosztów       |                                                Księga rachunku kosztów                                                |
+|         Jednostki kontroli kosztów         |                                                Nazwa jednostki kontroli kosztów                                                |
+|      Wymiary składników kosztów       |     Nazwa wymiaru składnika kosztu, Nazwa elementu członkowskiego wymiaru składnika kosztu, Opis elementu członkowskiego wymiaru składnika kosztu      |
+|       Wymiary obiektów kosztów       |       Nazwa wymiaru obiektu kosztów, Nazwa elementu członkowskiego wymiaru obiektu kosztów, Opis elementu członkowskiego wymiaru obiektu kosztów        |
+|       Wymiary statystyczne       |       Nazwa wymiaru statystycznego, Nazwa elementu członkowskiego wymiaru statystycznego, Opis elementu członkowskiego wymiaru statystycznego        |
+| Hierarchie wymiarów obiektów kosztów  |  Nazwa hierarchii wymiarów obiektów kosztów, Poziom hierarchii wymiarów obiektów kosztów, Drzewo hierarchii wymiarów obiektów kosztów   |
 | Hierarchie wymiarów składników kosztów | Nazwa hierarchii wymiarów składników kosztów, Poziom hierarchii wymiarów składników kosztów, Drzewo hierarchii wymiarów składników kosztów |
-| Hierarchie wymiarów statystycznych  | Nazwa hierarchii wymiarów statystycznych, Poziom hierarchii wymiarów statystycznych, Drzewo hierarchii wymiarów statystycznych    |
-| Wersje transakcji               | Nazwa wersji                                                                                                         |
-| Kalendarze obrachunkowe                   | Kalendarz, Opis kalendarza                                                                                       |
-| Lata obrachunkowe                       | Rok kalendarzowy                                                                                                        |
-| Okresy obrachunkowe                     | Okres roku kalendarzowego                                                                                                 |
+| Hierarchie wymiarów statystycznych  |  Nazwa hierarchii wymiarów statystycznych, Poziom hierarchii wymiarów statystycznych, Drzewo hierarchii wymiarów statystycznych   |
+|        Wersje transakcji        |                                                     Nazwa wersji                                                     |
+|          Kalendarze obrachunkowe          |                                            Kalendarz, Opis kalendarza                                            |
+|            Lata obrachunkowe            |                                                    Rok kalendarzowy                                                     |
+|           Okresy obrachunkowe           |                                                 Okres roku kalendarzowego                                                 |
+
 

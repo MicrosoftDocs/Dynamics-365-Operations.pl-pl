@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="export-a-letter-of-credit"></a>Eksportowanie akredytywy
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura poprowadzi przez proces tworzenia akredytywy eksportowej.
 

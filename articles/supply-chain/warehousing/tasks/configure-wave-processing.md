@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-wave-processing"></a>Konfigurowanie przetwarzania grupy czynności
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tym przewodniku opisano sposób konfigurowania kryteriów, które określają, jaka praca jest generowana dla magazynu podczas przetwarzania grupy czynności oraz czy grupy czynności są przetwarzane ręcznie czy automatycznie. Kryteria można określić, definiując szablony grupy czynności i kwerendy, które dopasowują grupy czynności do zwolnionych wierszy w zamówieniach sprzedaży, zleceniach produkcyjnych i zleceniach Kanban. Przetwarzanie grup czynności jest stosowane w magazynach, które używają funkcji modułu Zarządzanie magazynem, a nie tych, które używają funkcji modułu Zarządzanie zapasami. Procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF.
 

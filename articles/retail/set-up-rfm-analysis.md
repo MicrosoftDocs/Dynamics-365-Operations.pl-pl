@@ -29,8 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="set-up-rfm-analysis"></a>Ustaw analizę RFM
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 W tym temacie omówiono konfigurowanie analizy ostatniego zakupu, częstotliwości i wartości pieniężnej (RFM) dla odbiorców.
 
@@ -60,25 +59,25 @@ Jeśli organizacja używa sum liczbowych do określania wyniku, poszczególne wy
     - Jeśli każda sekcja punktacji RFM musi zawierać równe liczby odbiorców, zaznacz pole wyboru **Rozkład równomierny**. 
     - Zaznacz pole wyboru **Dodaj punktacje**, aby otworzyć sumę trzech wyników. W ten sposób, przykładowo, odbiorca uzyska punktację RFM równą 13 zamiast 535. 
     - Zaznacz pole wyboru **Zapisz historię**, aby wymagać od systemu zapisywanie danych statystycznych dla odbiorców, tak aby dane mogły służyć do obliczania punktacji RFM.
-  
+
 5.  Na skróconej karcie **Recency** wykonaj poniższe czynności: 
     - W polu **Oddziały** wprowadź numer dzielenia lub grup, które będą używane do obliczania punktacji recency dla odbiorców. Na przykład, jeśli masz 100 odbiorców, dzielenie 5 oznacza, że nie ma 20 odbiorców dla każdego wyniku. 20 odbiorców, którzy ostatnio dokonali zakupu ma punktację recency wynoszącą 5. Kolejnych 20 odbiorców ma punktację recency wynoszącą 4 itd. Jeśli masz 50 odbiorców, 10 odbiorców otrzyma punktację recency równą 5, 10 otrzyma punktację recency 4 i tak dalej. 
     - W polu **Priorytet** wybierz, jaką wagę można przyznać dla parametru recency w stosunku do innych parametrów przy obliczaniu punktacji RFM dla odbiorcy. Na przykład użytkownikowi może zależeć bardziej na punktacji recency niż na punktacji wg wartości pieniężnej. 
     - W polu **Mnożnik** wprowadź wartość, przez którą ma zostać pomnożona punktacja recency. Jeśli wartość nie zostanie wprowadzona, punktacja nie będzie mnożona. 
     - W polu **Okres** wybierz przedział czasu, w których jest obliczana punktacja recency. Na przykład, według tygodnia lub miesiąca.
-   
+
 6.  Na skróconej karcie **Częstotliwość** wykonaj poniższe czynności: 
     - W polu **Oddziały** wprowadź numer dzielenia lub grup, które będą używane do obliczania punktacji częstotliwości dla odbiorców. 
     - W polu **Priorytet** wybierz, jaką wagę można przyznać dla parametru częstotliwości w stosunku do innych parametrów przy obliczaniu punktacji RFM dla odbiorcy. 
     - W polu **Mnożnik** wprowadź wartość, przez którą ma zostać pomnożona punktacja częstotliwości. Jeśli wartość nie zostanie wprowadzona, punktacja nie będzie mnożona.
-   
+
 7.  Na skróconej karcie **Waluta** wykonaj poniższe czynności: 
     - W polu **Oddziały** wprowadź numer dzielenia lub grup, które będą używane do obliczania punktacji wg wartości pieniężnej dla odbiorców. 
     - W polu **Priorytet** wybierz, jaką wagę można przyznać dla parametru wartości pieniężnej w stosunku do innych parametrów przy obliczaniu punktacji RFM dla odbiorcy. 
     - W polu **Mnożnik** wprowadź wartość, przez którą ma zostać pomnożona punktacja wg wartości pieniężnej. Jeśli wartość nie zostanie wprowadzona, punktacja nie będzie mnożona. 
     - W polu **Brutto/netto** wybierz, czy przy obliczaniu punktacji wg wartości pieniężnej system powinien używać kwoty zafakturowanej brutto czy netto. 
     - Jeśli kwoty zwrotu dla odbiorcy powinny zostać odjęte od łącznej kwoty faktury dla odbiorcy, zaznacz pole wyboru **Odejmij zwroty**. 
- 
+
 ## <a name="view-a-customers-rfm-score"></a>Wyświetlanie wyniku RFM klienta
 Ta procedura umożliwia wyświetlenie wyniku RFM odbiorcy. 
 

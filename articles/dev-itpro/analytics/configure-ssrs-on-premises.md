@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a>Konfigurowanie usług SQL Server Reporting Services dla wdrożenia lokalnego
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kroki opisane w tym temacie umożliwiają skonfigurowanie usługi SQL Server Reporting Services (SSRS) dla lokalnego wdrożenia programu Microsoft Dynamics 365 for Finance and Operations.
 
@@ -52,13 +52,13 @@ Kroki opisane w tym temacie umożliwiają skonfigurowanie usługi SQL Server Rep
 
     [![Karta Adres URL portalu sieci Web](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
     
-  Po skonfigurowaniu portalu karta **Portal sieci Web** powinna wyglądać jak na poniższej ilustracji.
+   Po skonfigurowaniu portalu karta **Portal sieci Web** powinna wyglądać jak na poniższej ilustracji.
     [![Karta Portal sieci Web](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
     
 8. Kliknij adres URL raportów, aby wyświetlania portalu sieci Web usługi SQL Server Reporting Services. 
-9.  Po przejściu do portalu utwórz nowy folder o nazwie **Dynamics**.
+9. Po przejściu do portalu utwórz nowy folder o nazwie **Dynamics**.
 
-    [![Folder Dynamics](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
+   [![Folder Dynamics](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
     
 10. W **Menedżerze konfiguracji usługi SQL Reporting Services** kliknij kartę **Ustawienia poczty e-mail** i sprawdź, czy ustawienia odpowiadają poniższej ilustracji.
 
@@ -68,15 +68,15 @@ Kroki opisane w tym temacie umożliwiają skonfigurowanie usługi SQL Server Rep
 
     [![Karta Konto wykonywania](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
     
-  Nie należy zmieniać ustawień domyślnych na karcie **Klucze szyfrowania**. [![karta klucze szyfrowania](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
+    Nie należy zmieniać ustawień domyślnych na karcie **Klucze szyfrowania**. [![karta klucze szyfrowania](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
     
 12. Kliknij kartę **Ustawienia subskrypcji** i sprawdź, czy ustawienia odpowiadają poniższej ilustracji.
 
     [![Karta Ustawienia subskrypcji](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
     
-  Nie należy zmieniać ustawień domyślnych na karcie **Wdrożenie skalowalne w poziomie**. [![karta wdrożenie skalowalne w poziomie](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
+    Nie należy zmieniać ustawień domyślnych na karcie **Wdrożenie skalowalne w poziomie**. [![karta wdrożenie skalowalne w poziomie](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
     
-  Nie należy zmieniać ustawień domyślnych na karcie **Integracja usługi Power BI**. [![karta integracja usługi power bi](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
+    Nie należy zmieniać ustawień domyślnych na karcie **Integracja usługi Power BI**. [![karta integracja usługi power bi](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
     
 13. Kliknij przycisk **Zakończ**, aby zamknąć **Menedżera konfiguracji usługi Reporting Services**.
 

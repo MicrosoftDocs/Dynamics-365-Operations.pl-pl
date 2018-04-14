@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-cost-control-units"></a>Definiowanie jednostek kontroli kosztów
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób definiowania jednostek kontroli kosztów w księdze rachunku kosztów. Wybierasz wymiar obiektu kosztów, dla którego będziesz kontrolować koszty w księdze. Elementy członkowskie wymiarów obiektów kosztów są przekształcane na obiekty kosztów jednostek kontroli kosztów. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USP2.
 

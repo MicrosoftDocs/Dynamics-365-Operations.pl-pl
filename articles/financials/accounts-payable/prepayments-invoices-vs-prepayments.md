@@ -28,14 +28,14 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prepayment-invoices-vs-prepayments"></a>Faktury zaliczkowe a zaliczki
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera opis i porównanie dwóch metod, których organizacje używają do obsługi zaliczek (przedpłat). W jednej metodzie należy utworzyć fakturę zaliczkową skojarzoną z zamówieniem zakupu. W drugiej metodzie tworzy się załączniki arkusza zaliczki poprzez utworzenie zapisów w arkuszu i oznaczenie ich jako załączników arkusza zaliczki.
 
 Organizacje mogą wystawiać zaliczki (płatności z góry) dla dostawców za towary lub usługi, które nie zostały jeszcze dostarczone lub zrealizowane. Dostępne są dwa sposoby wystawiania zaliczek dla dostawców. Aby zminimalizować ryzyko, można śledzić zaliczki, definiując zaliczkę na zamówieniu zakupu. Dla tej metody należy utworzyć fakturę zaliczkową skojarzoną z zamówieniem zakupu. Ta metoda jest nazywana fakturowaniem zaliczki. Organizacje, które nie chcą muszą śledzić zaliczek z taką dokładnością lub nie otrzymują faktury zaliczkowej od dostawcy, mogą zamiast metody fakturowania zaliczki używać załączników arkusza zaliczki. Załączniki arkusza zaliczki można tworzyć przez tworzenie wpisów w arkuszu i oznaczanie ich jako załączników arkusza zaliczki. Dla tej metody nie można śledzić, które zaliczki dla dostawcy odpowiadają którym zamówieniom zakupu. Można jednak można oznaczyć zaksięgowaną zaliczkę do rozliczenia według zamówienia zakupu.
 
 ## <a name="when-to-use-prepayment-invoicing-vs-prepayments"></a>Kiedy używać faktur zaliczkowych, a kiedy używać zaliczek
+
 | Faktury zaliczkowe                                                                | Zaliczki                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Definiowanie wartości przedpłaty na zamówieniu zakupu.                                    | Na zamówieniu zakupu nie są definiowane żadne wartości przedpłaty.                    |

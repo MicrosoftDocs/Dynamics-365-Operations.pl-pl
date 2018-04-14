@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-new-jobs"></a>Definiowanie nowych zadań
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 To zadanie jest zorientowane na utworzenie nowego zadania (pracy). Jest ona wykonywana ręcznie przez wprowadzanie i kopiowanie danych z szablonu. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF. Zadanie jest przeznaczone dla specjalisty ds. zasobów ludzkich.
 

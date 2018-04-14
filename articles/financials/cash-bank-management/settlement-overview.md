@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview"></a>Przegląd rozliczenia
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera ogólne informacje o procesie rozliczania. Opisano w nim typy transakcji, które można rozliczać, czas i metody rozliczania transakcji oraz wyniki procesu rozliczania.
 

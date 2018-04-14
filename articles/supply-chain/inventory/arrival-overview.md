@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="arrival-overview"></a>Przegląd przyjęć
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje dotyczące funkcji przeglądu przyjęć. Strona Przegląd przyjęć jest częścią tej funkcji i zawiera przegląd wszystkich towarów, których przybycia oczekuje się jako towary przychodzące.
 

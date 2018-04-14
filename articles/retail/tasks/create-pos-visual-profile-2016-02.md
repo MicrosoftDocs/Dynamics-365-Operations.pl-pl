@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-pos-visual-profile"></a>Tworzenie profilu graficznego punktu sprzedaży 
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ta procedura prowadzi przez proces tworzenia profilu graficznego nowego punktu sprzedaży (POS). Profil graficzny zawiera podstawowe informacje określające wygląd interfejsów kas w punkcie sprzedaży. Można skonfigurować kilka profilów graficznych i przypisać określone profile do określonych kas. Procedura wykorzystuje dane firmy demonstracyjnej USRT.
 

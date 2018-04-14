@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-transfer-activities-for-lean-manufacturing"></a>Tworzenie działań przeniesienia produkcji lean manufacturing
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Tworzenie działania przeniesienia dla produkcji oszczędnej. 
 

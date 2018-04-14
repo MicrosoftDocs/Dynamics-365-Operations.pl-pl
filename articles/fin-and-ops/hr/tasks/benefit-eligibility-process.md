@@ -24,7 +24,7 @@ ms.lasthandoff: 02/15/2018
 ---
 # <a name="benefit-eligibility-process"></a>Przetwarzanie uprawnień do świadczeń
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura pokazuje działanie procesu kwalifikowania do świadczeń. Po zakończeniu procesu można wyświetlić wyniki. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

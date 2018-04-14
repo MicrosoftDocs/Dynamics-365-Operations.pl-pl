@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="resolve-discrepancies-during-invoice-totals-matching"></a>Usuwanie rozbieżności podczas uzgadniania sum faktur
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Jednym z typów weryfikację uzgadniania faktur jest uzgadnianie sum faktur. Aby określić, czy system powinien wykonywać uzgadnianie sum faktur, na stronie **Parametry rozrachunków z dostawcami** na karcie **Sprawdzanie poprawności faktur** ustaw dla opcji **Dopasuj sumy faktur** wartość **Tak**. 
 

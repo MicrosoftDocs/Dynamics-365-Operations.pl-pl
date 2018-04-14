@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="online-store-overview"></a>Omówienie sklepu internetowego
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ten artykuł zawiera informacje o internetowych sklepach detalicznych oraz o ich konfigurowaniu w programie Microsoft Dynamics 365 for Retail.
 

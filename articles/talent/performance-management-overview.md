@@ -27,8 +27,7 @@ ms.lasthandoff: 02/15/2018
 
 # <a name="performance-management-overview"></a>Omówienie zarządzania wydajnością
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi. Z kolei menedżerowie mogą dostarczać informacje zwrotne i wskazówki pracownikom.  
 

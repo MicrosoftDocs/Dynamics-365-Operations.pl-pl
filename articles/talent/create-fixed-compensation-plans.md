@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-fixed-compensation-plans"></a>Tworzenie planów stałych wynagrodzeń
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Pojęcie „stałe wynagrodzenie” odnosi się do standardowego wynagrodzenia brutto lub pensji pracownika. Ten temat zawiera opis składników, które muszą zostać skonfigurowane, zanim będzie można utworzyć system stałych wynagrodzeń i zarejestrować pracowników.
 

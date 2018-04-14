@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="replenishment-with-withdrawal-kanbans"></a>Uzupełnianie zapasów za pomocą kart Kanban wypłat
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano, jak zadanie Kanban wycofania służy do uzupełnienia zapasów materiałów dla działań produkcyjnych.
 

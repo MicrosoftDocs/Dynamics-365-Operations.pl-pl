@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a>Dodawanie formantu rekomendacji do strony transakcji na urządzeniu punktu sprzedaży
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 > [!NOTE]
 > Usuwamy obecną wersję usługi rekomendowania produktów, ponieważ w nowej wersji wprowadzamy lepszy algorytm i nowsze funkcje zorientowane na handel detaliczny. Aby uzyskać więcej informacji, zobacz [Usunięte i przestarzałe funkcje](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). 

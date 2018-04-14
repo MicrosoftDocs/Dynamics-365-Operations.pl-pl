@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a>Zasady podziału księgowań i zapisów w arkuszu księgi podrzędnej dla faktur od dostawcy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Zasady podziału księgowań są używane do określania sposobu księgowania kwot, to znaczy sposobu księgowania wydatków, podatków lub opłat na fakturze od dostawcy. Każdy kwota, która musi zostać zaksięgowana w trakcie zapisu w arkuszu dla faktury od dostawcy, będzie posiadać jedną lub więcej zasad podziału księgowań. 
 
@@ -231,7 +230,7 @@ Podczas wprowadzania faktury od dostawcy, każda kwota będzie podzielona w nast
 </tbody>
 </table>
 
- 
+
 <a name="distributing-taxes"></a>Dystrybuowanie podatków
 ------------------
 

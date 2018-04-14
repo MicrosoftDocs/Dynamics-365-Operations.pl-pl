@@ -28,8 +28,7 @@ ms.lasthandoff: 02/05/2018
 
 # <a name="warehouse-mobile-device-display-settings"></a>Ustawienia wyświetlania urządzenia przenośnego używanego w magazynie
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule opisano konfigurowanie wyglądu ekranu urządzenia przenośnego oraz mapowanie skrótów klawiaturowych na formanty takie jak przyciski. 
 

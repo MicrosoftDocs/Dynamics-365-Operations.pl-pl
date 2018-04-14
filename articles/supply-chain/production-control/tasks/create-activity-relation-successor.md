@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-activity-relation-successor"></a>Tworzenie relacji działań: Zdarzenie następujące
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Przepływ działań w przepływie produkcji oszczędnej jest udokumentowany za pomocą relacji między działaniami. W tym nagraniu pokazano, jak utworzyć relację między działaniami.
 

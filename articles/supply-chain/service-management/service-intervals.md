@@ -28,8 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="service-intervals"></a>Zakresy serwisów
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Interwał umowy serwisowej określa częstotliwość, z jaką są tworzone wiersze umowy serwisowej podczas automatycznego tworzenia zleceń serwisowych.
 

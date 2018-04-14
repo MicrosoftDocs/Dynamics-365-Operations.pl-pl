@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-parallel-branch-in-a-workflow"></a>Konfigurowanie odgałęzienia równoległego w przepływie pracy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Aby skonfigurować gałąź równoległą, należy wykonać następujące procedury w edytorze przepływu pracy.
 

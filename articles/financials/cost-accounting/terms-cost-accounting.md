@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="cost-accounting-terminology"></a>Terminologia z dziedziny rachunku kosztów
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano kluczowe pojęcia używane w rachunku kosztów.
 
@@ -150,14 +149,14 @@ Podstawy alokacji formuły umożliwiają definiowanie zaawansowanych formuł w c
 |  + |  Dodanie |
 |  – |  Odejmowanie |
 | *  | Mnożenie  |
-    
+
 Tradycyjne instrukcje IF nie są obsługiwane. Można jednak tworzyć instrukcje i sprawdzać, czy określone w nich warunki są spełnione.
 
 |  **Weryfikacja wyciągu** | **Wynik**  |
 |---|---|
 |  a > b| Prawda  |
 |  a > b |  Fałsz |
-    
+
 **Koszt narzutów**
 
 Koszty ogólne odnoszą się do bieżących wydatków związanych z prowadzeniem przedsiębiorstwa. Nie można ich połączyć bezpośrednio z konkretnymi działaniami biznesowymi. Oto kilka przykładów kosztów ogólnych:

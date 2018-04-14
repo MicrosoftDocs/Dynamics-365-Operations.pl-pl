@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="report-designer-interface"></a>Interfejs Projektanta raportów
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł wyjaśnia, jak się poruszać w Projektancie raportów i jak używać różnych opcji do własnych potrzeb. 
 

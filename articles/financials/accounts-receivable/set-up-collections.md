@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-credit-and-collections"></a>Konfigurowanie kredytów i windykacji
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł przedstawia sposób konfigurowania funkcji windykacji.
 
@@ -97,9 +96,9 @@ Jeśli przedstawiciel handlowy nie jest określony, podstawowy sprzedawca dla or
 Aby uzyskać więcej informacji, zobacz następujące tematy:
 
  - [Tworzenie kolejności ponagleń](tasks/create-collection-letter-sequence.md)
- 
+
  - [Przetwarzanie ponagleń](tasks/process-collection-letters.md)
- 
+
  - [Przeglądanie informacji o windykacji](tasks/review-collections-information.md)
 
 

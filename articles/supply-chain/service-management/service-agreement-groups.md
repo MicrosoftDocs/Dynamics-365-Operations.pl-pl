@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-agreement-groups"></a>Grupy umów serwisowych 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Grupy umów serwisowych są przydatne do sortowania i filtrowania umów serwisowych. Umożliwiają one grupowanie umów serwisowych na przykład według rozmiarów firm, ich lokalizacji geograficznych lub gałęzi przemysłu. Grup umów serwisowych można również używać do grupowania umów serwisowych według poziomów usług oferowanych klientom.
 

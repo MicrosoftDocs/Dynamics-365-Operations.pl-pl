@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Konfigurowanie grupy księgowania w księdze da podatku
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Podatek jest obliczany i księgowany na kontach głównych określonych w grupach księgowania. Grupy księgowania są dołączane do każdego kodu podatku. Można skonfigurować osobne grupy księgowania dla każdego kodu podatku, użyć jednej grupy księgowania dla wszystkich kodów podatku lub przypisać wiele grup księgowania do kodów podatków. To nagranie wykorzystuje firmę demonstracyjną DEMF. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-date-for-the-session"></a>Zmienianie daty sesji
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Domyślnie podczas wprowadzania i księgowania zapisów w arkuszu lub dokumentów źródłowych jest używana bieżąca data. Datę używaną w bieżącej sesji można zmienić. Ta funkcja pozwala w razie potrzeby antydatować zapisy w arkuszu lub dokumenty źródłowe.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-fraud-alerts"></a>Konfigurowanie alertów o oszustwie
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 W tym temacie opisano sposób ustawiania kryteriów i zasad w celu wstrzymania potencjalnie fałszywych zamówień sprzedaży w celu dalszego sprawdzenia. Funkcja wykrywania oszustw służy do określania prawidłowości informacji w zamówieniu sprzedaży. Jeżeli informacje w zamówieniu sprzedaży budzą wątpliwości na podstawie obowiązujących w organizacji kryteriów i zasad dotyczących oszustw, zamówienie może zostać wstrzymane w celu dalszego sprawdzenia przez administratora.
 
