@@ -3,7 +3,7 @@ title: Rozszerzanie funkcji programu Microsoft Dynamics 365 for Talent
 description: "Po utworzeniu dowolnej aplikacji w środowisku Microsoft PowerApps można uruchomić takie aplikacje za pomocą łączy w programie Microsoft Dynamics 365 for Talent."
 author: rschloma
 manager: AnnBe
-ms.date: 11/28/2017
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,15 +35,16 @@ Na stronie **Ustaw osadzone usługi Microsoft PowerApps** można skonfigurować 
 
 Na tej stronie można wprowadzić lub ustawić następujące informacje: 
 
-> - Nazwa opisowa lub identyfikator dla każdej aplikacji PowerApps.
-> - Niepowtarzalny identyfikator (GUID) dla każdej aplikacji dodawanej do strony Talent. Identyfikator aplikacji jest dostępny w witrynie usługi PowerApps [powerapps.com](http://powerapps.com/). 
-> - Strona, z której użytkownicy mogą otworzyć aplikację lub raport. Nie wszystkie strony środowiska Talent obsługują osadzone aplikacje PowerApps i raporty Power BI. 
-> 
-> [!NOTE]
->  Należy wprowadzić nazwę wewnętrzną strony, a nie nazwę wyświetlaną u góry strony. Aby znaleźć nazwę wewnętrzną, otwórz stronę, której nazwy szukasz, i kliknij w dowolnym miejscu na stronie. Po otwarciu menu, umieść kursor myszy nad pozycją **Informacje o formularzu**. Wewnętrzna nazwa formularza zostanie wyświetlona obok pozycji **Informacje o formularzu** w menu.
-> 
-> - Określ formant formularza, z którego aplikacja może pobrać dane kontekstowe. Aplikacja może na przykład używać danych na temat pracownika. W przypadku wprowadzenia strony **Pracownik** w polu **Kontekst** przy uruchamianiu aplikacji będzie otwierana strona **Pracownik**. Wpis w **polu Kontekst** jest opcjonalny. 
-> - Ustaw rozmiar okna dialogowego, w którym będzie uruchamiana aplikacja PowerApps. Okna dialogowe są oznaczone jako „małe” lub „duże”, co umożliwia optymalizację interfejsu użytkownika, gdy aplikacja jest otwierana odpowiednio na telefonie lub większym urządzeniu. 
+ -  Nazwa opisowa lub identyfikator dla każdej aplikacji PowerApps.
+ -  Niepowtarzalny identyfikator (GUID) dla każdej aplikacji dodawanej do strony Talent. Identyfikator aplikacji jest dostępny w witrynie usługi PowerApps [powerapps.com](http://powerapps.com/). 
+ -  Strona, z której użytkownicy mogą otworzyć aplikację lub raport. Nie wszystkie strony środowiska Talent obsługują osadzone aplikacje PowerApps i raporty Power BI. 
+
+ > [!NOTE]
+ >  Należy wprowadzić nazwę wewnętrzną strony, a nie nazwę wyświetlaną u góry strony. Aby znaleźć nazwę wewnętrzną, otwórz stronę, której nazwy szukasz, i kliknij w dowolnym miejscu na stronie. Po otwarciu menu, umieść kursor myszy nad pozycją **Informacje o formularzu**. Wewnętrzna nazwa formularza zostanie wyświetlona obok pozycji **Informacje o formularzu** w menu.
+ 
+-   Określ formant formularza, z którego aplikacja może pobrać dane kontekstowe. Aplikacja może na przykład używać danych na temat pracownika. W przypadku wprowadzenia strony **Pracownik** w polu **Kontekst** przy uruchamianiu aplikacji będzie otwierana strona **Pracownik**. Wpis w **polu Kontekst** jest opcjonalny. 
+-   Ustaw rozmiar okna dialogowego, w którym będzie uruchamiana aplikacja PowerApps. Okna dialogowe są oznaczone jako „małe” lub „duże”, co umożliwia optymalizację interfejsu użytkownika, gdy aplikacja jest otwierana odpowiednio na telefonie lub większym urządzeniu. 
+
 
 Można również określić firmy, dla których aplikacja będzie dostępne, lub udostępnić ją dla wszystkich firm. Domyślnie aplikacje PowerApps są dostępne dla wszystkich firm.
 
