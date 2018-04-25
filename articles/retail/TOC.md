@@ -31,7 +31,7 @@
 ## [Katalogi biura obsługi](call-center-catalogs.md)
 ## [Tworzenie katalogu biura obsługi](create-call-center-catalogs.md)
 ## [Konfigurowanie alertów o oszustwie](set-up-fraud-alerts.md)
-## [Konfigurowanie opcji przetwarzania zamówień](set-up-order-processing-options.md)
+## [Konfigurowanie biura obsługi](set-up-order-processing-options.md)
 ## [Konfigurowanie programu sprzedaży ciągłej dla biura obsługi](set-up-continuity-program.md)
 ## [Wstrzymania zamówień](work-with-order-holds.md)
 ## [Opcje płatności](work-with-payments.md)
@@ -49,6 +49,7 @@
 ## [Operacje w punkcie sprzedaży — online i offline](pos-operations.md)
 ## [Układy ekranu danych demonstracyjnych w aplikacji MPOS/CPOS](demo-data.md)
 ## [Omówienie wyszukiwania produktów i odbiorców w punkcie sprzedaży](POS-search-improvements.md)
+## [Wyszukiwanie w magazynie punktu sprzedaży](product-variants-POS.md)
 ## Sprzęt i urządzenia peryferyjne
 ### [Omówienie sklepowych urządzeń peryferyjnych](retail-peripherals-overview.md)
 ### [Urządzenia peryferyjne dla punktów sprzedaży przetestowane przez firmę Microsoft](microsoft-tested-pos-hardware-peripherals.md)
@@ -96,7 +97,8 @@
 ## [Konfigurowanie analizy RFM](set-up-rfm-analysis.md)
 
 # Rabaty i korekty cen
-## [Korekt ceny i rabaty](price-adjustments-discounts.md)
+## [Zarządzanie cenami sprzedaży detalicznej](price-management.md)
+## [Korekty cen i rabaty](price-adjustments-discounts.md)
 ## [Ustalanie optymalnej kombinacji nakładających się rabatów](optimal-combination-overlapping-discounts.md)
 ## [Definiowanie rabatów specyficznych dla kanału](define-channel-specific-discounts.md)
 ## [Blokowanie rabatów na produkty detaliczne](prevent-discounts.md)
@@ -139,14 +141,18 @@
 ## [Konfigurowanie składników funkcji](../talent/create-job.md)
 
 # Funkcje związane z lokalizacją i wymagane przepisami prawa
+## Francja
+### [Kasy we Francji](localizations/emea-fra-cash-registers.md)
+### [Przewodniki wdrażania kas (Francja)](localizations/emea-fra-deployment.md)
 ## Indie
-### [Integracja podatku GST w kasach (Indie)](localizations/apac-ind-cash-registers.md)
+### [Integracja podatku GST w kasach](localizations/apac-ind-cash-registers.md)
 ### [Przewodniki wdrażania kas (Indie)](localizations/apac-ind-loc-deployment-guidelines.md)
 ## Norwegia
 ### [Kasy w Norwegii](localizations/emea-nor-cash-registers.md)
 ### [Przewodniki wdrażania kas (Norwegia)](localizations/emea-nor-loc-deployment-guidelines.md)
 ## Szwecja
 ### [Kasy w Szwecji](localizations/emea-swe-cash-registers.md)
+### [Przykład do użycia w integracji aplikacji Retail POS z jednostkami kontrolnymi](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
 
 # Zadania dotyczące rozwiązania Retail
 ## [Tworzenie produktu](../supply-chain/pim/tasks/create-product.md)
@@ -260,6 +266,7 @@
 ### [Zestaw SDK platformy handlu elektronicznego](dev-itpro/ecommerce-platform-sdk.md)
 
 ## Rozszerzalność łączników płatności
+### [Integracja płatności z terminalem płatniczym](dev-itpro/end-to-end-payment-extension.md)
 ### [Implementowanie łącznika płatności i urządzenia płatniczego (oficjalny dokument)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 ### [Wdrażanie łącznika płatności](dev-itpro/deploy-payment-connector.md)
 ### [Tworzenie Instalatora Windows dla łącznika płatności](dev-itpro/create-windows-installer-payment-connector.md)
@@ -269,6 +276,7 @@
 ### [Przykłady rozszerzalności zestawu Retail SDK](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Pakiety zestawu Retail SDK](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Przykłady zestawu Retail SDK ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+#### [Punkty rozszerzenia dla dokumentów dostawy](dev-itpro/extensions-shipping-carrier-integration.md)
 ### [Rozszerzenia bazy danych kanału](dev-itpro/channel-db-extensions.md)
 ### [Możliwości rozszerzania CDX](dev-itpro/cdx-extensibility.md)
 ### [Atrybuty zamówienia](dev-itpro/order-attributes.md)
