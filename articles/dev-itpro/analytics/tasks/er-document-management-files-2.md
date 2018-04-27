@@ -1,5 +1,5 @@
 --- 
-title: "Rozszerzanie modelu danych w celu używania plików zarządzania dokumentami w danych wyjściowych formatu na potrzeby raportowania elektronicznego (ER)"
+title: "Rozszerzanie modelu danych w celu używania plików zarządzania dokumentami w danych wyjściowych formatu"
 description: "W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może tak skonfigurować format raportowania elektronicznego (ER), aby w danych wyjściowych raportowania elektronicznego używać plików zarządzania danymi (załączników)."
 author: NickSelin
 manager: AnnBe
@@ -16,79 +16,79 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: ebbd442c9f69290dc995c05462ca70b554f7d9f2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bde8c612af22ba6bf4561732399fcf2cb1b5c9b3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="extend-data-model-to-use-document-management-files-in-format-outputs-for-electronic-reporting-er"></a><span data-ttu-id="1ec9d-103">Rozszerzanie modelu danych w celu używania plików zarządzania dokumentami w danych wyjściowych formatu na potrzeby raportowania elektronicznego (ER)</span><span class="sxs-lookup"><span data-stu-id="1ec9d-103">Extend data model to use Document Management files in format outputs for electronic reporting (ER)</span></span>
+# <a name="extend-data-model-to-use-document-management-files-in-format-outputs"></a><span data-ttu-id="98325-103">Rozszerzanie modelu danych w celu używania plików zarządzania dokumentami w danych wyjściowych formatu</span><span class="sxs-lookup"><span data-stu-id="98325-103">Extend data model to use Document Management files in format outputs</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="1ec9d-104">W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może tak skonfigurować format raportowania elektronicznego (ER), aby w danych wyjściowych raportowania elektronicznego używać plików zarządzania danymi (załączników).</span><span class="sxs-lookup"><span data-stu-id="1ec9d-104">The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="1ec9d-105">Kroki można wykonać na danych dowolnej firmy.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-105">These steps can be performed in any company.</span></span>
+<span data-ttu-id="98325-104">W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może tak skonfigurować format raportowania elektronicznego (ER), aby w danych wyjściowych raportowania elektronicznego używać plików zarządzania danymi (załączników).</span><span class="sxs-lookup"><span data-stu-id="98325-104">The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="98325-105">Kroki można wykonać na danych dowolnej firmy.</span><span class="sxs-lookup"><span data-stu-id="98325-105">These steps can be performed in any company.</span></span>
 
-<span data-ttu-id="1ec9d-106">W celu wykonania tych kroków należy najpierw wykonać kroki opisane w przewodniku po zadaniu „ER Używanie plików zarządzania dokumentami w danych wyjściowych formatu (Część 1: Przygotowanie modelu danych)”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-106">To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 1: Prepare data model)” task guide.</span></span>
+<span data-ttu-id="98325-106">W celu wykonania tych kroków należy najpierw wykonać kroki opisane w przewodniku po zadaniu „ER Używanie plików zarządzania dokumentami w danych wyjściowych formatu (Część 1: Przygotowanie modelu danych)”.</span><span class="sxs-lookup"><span data-stu-id="98325-106">To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 1: Prepare data model)” task guide.</span></span>
 
-<span data-ttu-id="1ec9d-107">Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="98325-107">Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.</span><span class="sxs-lookup"><span data-stu-id="98325-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="extend-data-model-to-present-the-document-management-files-in-it"></a><span data-ttu-id="1ec9d-108">Rozszerzanie modelu danych w celu przedstawienia w nim plików zarządzania dokumentami</span><span class="sxs-lookup"><span data-stu-id="1ec9d-108">Extend data model to present the Document Management files in it</span></span>
-1. <span data-ttu-id="1ec9d-109">Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="1ec9d-110">Kliknij opcję Konfiguracje raportowania.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-110">Click Reporting configurations.</span></span>
-3. <span data-ttu-id="1ec9d-111">W drzewie rozwiń węzeł „Model faktur sprzedaży”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-111">In the tree, expand 'Customer invoice model'.</span></span>
-4. <span data-ttu-id="1ec9d-112">W drzewie zaznacz element „Model faktur sprzedaży\Model faktur sprzedaży (niestandardowy)”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-112">In the tree, select 'Customer invoice model\Customer invoice model (custom)'.</span></span>
-5. <span data-ttu-id="1ec9d-113">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-113">Click Designer.</span></span>
-6. <span data-ttu-id="1ec9d-114">W drzewie zaznacz element „Faktura dla odbiorcy(InvoiceCustomer)”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-114">In the tree, select 'Customer invoice(InvoiceCustomer)'.</span></span>
-    * <span data-ttu-id="1ec9d-115">Rozszerzymy ten model danych w celu udostępnienia w nim wszystkich plików, które zostały dołączone do zamówienia sprzedaży powiązanego z elektronicznie przetworzoną fakturą.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-115">We will extend this data model to expose in it any files that have been attached to a sales order that is related to an electronically processing invoice.</span></span>  
-7. <span data-ttu-id="1ec9d-116">Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-116">Click New to open the drop dialog.</span></span>
-8. <span data-ttu-id="1ec9d-117">W polu Nazwa wpisz „Załączniki faktur”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-117">In the Name field, type 'Invoice attachments'.</span></span>
-    * <span data-ttu-id="1ec9d-118">Załączniki faktur</span><span class="sxs-lookup"><span data-stu-id="1ec9d-118">Invoice attachments</span></span>  
-9. <span data-ttu-id="1ec9d-119">W polu Typ elementu wybierz opcję „Lista rekordów”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-119">In the Item type field, select 'Record list'.</span></span>
-10. <span data-ttu-id="1ec9d-120">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-120">Click Add.</span></span>
-11. <span data-ttu-id="1ec9d-121">Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-121">Click New to open the drop dialog.</span></span>
-12. <span data-ttu-id="1ec9d-122">W polu Nazwa wpisz „Zawartość pliku”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-122">In the Name field, type 'File content'.</span></span>
-    * <span data-ttu-id="1ec9d-123">Zawartość pliku</span><span class="sxs-lookup"><span data-stu-id="1ec9d-123">File content</span></span>  
-13. <span data-ttu-id="1ec9d-124">W polu Typ elementu wybierz opcję „Kontener”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-124">In the Item type field, select 'Container'.</span></span>
-14. <span data-ttu-id="1ec9d-125">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-125">Click Add.</span></span>
-15. <span data-ttu-id="1ec9d-126">Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-126">Click New to open the drop dialog.</span></span>
-16. <span data-ttu-id="1ec9d-127">W polu Nazwa wpisz „Nazwa pliku”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-127">In the Name field, type 'File name'.</span></span>
-    * <span data-ttu-id="1ec9d-128">Nazwa pliku</span><span class="sxs-lookup"><span data-stu-id="1ec9d-128">File name</span></span>  
-17. <span data-ttu-id="1ec9d-129">W polu Typ elementu wybierz opcję „Ciąg”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-129">In the Item type field, select 'String'.</span></span>
-18. <span data-ttu-id="1ec9d-130">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-130">Click Add.</span></span>
+## <a name="extend-data-model-to-present-the-document-management-files-in-it"></a><span data-ttu-id="98325-108">Rozszerzanie modelu danych w celu przedstawienia w nim plików zarządzania dokumentami</span><span class="sxs-lookup"><span data-stu-id="98325-108">Extend data model to present the Document Management files in it</span></span>
+1. <span data-ttu-id="98325-109">Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.</span><span class="sxs-lookup"><span data-stu-id="98325-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="98325-110">Kliknij opcję Konfiguracje raportowania.</span><span class="sxs-lookup"><span data-stu-id="98325-110">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="98325-111">W drzewie rozwiń węzeł „Model faktur sprzedaży”.</span><span class="sxs-lookup"><span data-stu-id="98325-111">In the tree, expand 'Customer invoice model'.</span></span>
+4. <span data-ttu-id="98325-112">W drzewie zaznacz element „Model faktur sprzedaży\Model faktur sprzedaży (niestandardowy)”.</span><span class="sxs-lookup"><span data-stu-id="98325-112">In the tree, select 'Customer invoice model\Customer invoice model (custom)'.</span></span>
+5. <span data-ttu-id="98325-113">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="98325-113">Click Designer.</span></span>
+6. <span data-ttu-id="98325-114">W drzewie zaznacz element „Faktura dla odbiorcy(InvoiceCustomer)”.</span><span class="sxs-lookup"><span data-stu-id="98325-114">In the tree, select 'Customer invoice(InvoiceCustomer)'.</span></span>
+    * <span data-ttu-id="98325-115">Rozszerzymy ten model danych w celu udostępnienia w nim wszystkich plików, które zostały dołączone do zamówienia sprzedaży powiązanego z elektronicznie przetworzoną fakturą.</span><span class="sxs-lookup"><span data-stu-id="98325-115">We will extend this data model to expose in it any files that have been attached to a sales order that is related to an electronically processing invoice.</span></span>  
+7. <span data-ttu-id="98325-116">Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="98325-116">Click New to open the drop dialog.</span></span>
+8. <span data-ttu-id="98325-117">W polu Nazwa wpisz „Załączniki faktur”.</span><span class="sxs-lookup"><span data-stu-id="98325-117">In the Name field, type 'Invoice attachments'.</span></span>
+    * <span data-ttu-id="98325-118">Załączniki faktur</span><span class="sxs-lookup"><span data-stu-id="98325-118">Invoice attachments</span></span>  
+9. <span data-ttu-id="98325-119">W polu Typ elementu wybierz opcję „Lista rekordów”.</span><span class="sxs-lookup"><span data-stu-id="98325-119">In the Item type field, select 'Record list'.</span></span>
+10. <span data-ttu-id="98325-120">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="98325-120">Click Add.</span></span>
+11. <span data-ttu-id="98325-121">Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="98325-121">Click New to open the drop dialog.</span></span>
+12. <span data-ttu-id="98325-122">W polu Nazwa wpisz „Zawartość pliku”.</span><span class="sxs-lookup"><span data-stu-id="98325-122">In the Name field, type 'File content'.</span></span>
+    * <span data-ttu-id="98325-123">Zawartość pliku</span><span class="sxs-lookup"><span data-stu-id="98325-123">File content</span></span>  
+13. <span data-ttu-id="98325-124">W polu Typ elementu wybierz opcję „Kontener”.</span><span class="sxs-lookup"><span data-stu-id="98325-124">In the Item type field, select 'Container'.</span></span>
+14. <span data-ttu-id="98325-125">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="98325-125">Click Add.</span></span>
+15. <span data-ttu-id="98325-126">Kliknij przycisk Nowy, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="98325-126">Click New to open the drop dialog.</span></span>
+16. <span data-ttu-id="98325-127">W polu Nazwa wpisz „Nazwa pliku”.</span><span class="sxs-lookup"><span data-stu-id="98325-127">In the Name field, type 'File name'.</span></span>
+    * <span data-ttu-id="98325-128">Nazwa pliku</span><span class="sxs-lookup"><span data-stu-id="98325-128">File name</span></span>  
+17. <span data-ttu-id="98325-129">W polu Typ elementu wybierz opcję „Ciąg”.</span><span class="sxs-lookup"><span data-stu-id="98325-129">In the Item type field, select 'String'.</span></span>
+18. <span data-ttu-id="98325-130">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="98325-130">Click Add.</span></span>
 
-## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-data-sources"></a><span data-ttu-id="1ec9d-131">Mapowanie elementów nowego modelu danych na źródła danych programu Dynamics 365 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="1ec9d-131">Map new data model elements to Dynamics 365 for Finance and Operations data sources</span></span>
-1. <span data-ttu-id="1ec9d-132">Kliknij opcję Mapuj model na źródło danych.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-132">Click Map model to datasource.</span></span>
-2. <span data-ttu-id="1ec9d-133">Użyj szybkiego filtru, aby wyfiltrować pole Definicja według wartości „InvoiceCustomer”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-133">Use the Quick Filter to filter on the Definition field with a value of 'InvoiceCustomer'.</span></span>
-    * <span data-ttu-id="1ec9d-134">InvoiceCustomer</span><span class="sxs-lookup"><span data-stu-id="1ec9d-134">InvoiceCustomer</span></span>  
-    * <span data-ttu-id="1ec9d-135">Zmapujemy elementy nowego modelu na odpowiednie źródła danych.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-135">We will map new model elements to appropriate data sources.</span></span>  
-3. <span data-ttu-id="1ec9d-136">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-136">Click Designer.</span></span>
-4. <span data-ttu-id="1ec9d-137">W drzewie zaznacz element „Załączniki faktur”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-137">In the tree, select 'Invoice attachments'.</span></span>
-5. <span data-ttu-id="1ec9d-138">W drzewie rozwiń węzeł „Załączniki faktur”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-138">In the tree, expand 'Invoice attachments'.</span></span>
-6. <span data-ttu-id="1ec9d-139">W drzewie zaznacz element „Załączniki faktur\Nazwa pliku”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-139">In the tree, select 'Invoice attachments\File name'.</span></span>
-7. <span data-ttu-id="1ec9d-140">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-140">Click Edit.</span></span>
-8. <span data-ttu-id="1ec9d-141">W polu Formuła wpisz wyrażenie „CustInvoiceJour.'>Relacje'.SalesTable.'<Relacje'.'<Dokumenty'.'originalFileName()'”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-141">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()''.</span></span>
-    * <span data-ttu-id="1ec9d-142">CustInvoiceJour.'>Relacje'.SalesTable.'<Relacje'.'<Dokumenty'.'originalFileName()'</span><span class="sxs-lookup"><span data-stu-id="1ec9d-142">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()'</span></span>  
-9. <span data-ttu-id="1ec9d-143">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-143">Click Save.</span></span>
-10. <span data-ttu-id="1ec9d-144">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-144">Close the page.</span></span>
-11. <span data-ttu-id="1ec9d-145">W drzewie zaznacz element „Załączniki faktur\Zawartość pliku”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-145">In the tree, select 'Invoice attachments\File content'.</span></span>
-12. <span data-ttu-id="1ec9d-146">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-146">Click Edit.</span></span>
-13. <span data-ttu-id="1ec9d-147">W polu Formuła wpisz wyrażenie „CustInvoiceJour.'>Relacje'.SalesTable.'<Relacje'.'<Dokumenty'.'getFileContentAsContainer()'”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-147">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()''.</span></span>
-    * <span data-ttu-id="1ec9d-148">CustInvoiceJour.'>Relacje'.SalesTable.'<Relacje'.'<Dokumenty'.'getFileContentAsContainer()'</span><span class="sxs-lookup"><span data-stu-id="1ec9d-148">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()'</span></span>  
-14. <span data-ttu-id="1ec9d-149">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-149">Click Save.</span></span>
-15. <span data-ttu-id="1ec9d-150">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-150">Close the page.</span></span>
-16. <span data-ttu-id="1ec9d-151">W drzewie zaznacz element „Załączniki faktur”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-151">In the tree, select 'Invoice attachments'.</span></span>
-17. <span data-ttu-id="1ec9d-152">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-152">Click Edit.</span></span>
-18. <span data-ttu-id="1ec9d-153">W polu Formuła wpisz wyrażenie „CustInvoiceJour.'>Relacje'.SalesTable.'<Relacje'.'<Dokumenty'”.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-153">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents''.</span></span>
-    * <span data-ttu-id="1ec9d-154">CustInvoiceJour.'>Relacje'.SalesTable.'<Relacje'.'<Dokumenty'</span><span class="sxs-lookup"><span data-stu-id="1ec9d-154">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'</span></span>  
-19. <span data-ttu-id="1ec9d-155">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-155">Click Save.</span></span>
-20. <span data-ttu-id="1ec9d-156">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-156">Close the page.</span></span>
-21. <span data-ttu-id="1ec9d-157">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-157">Click Save.</span></span>
-22. <span data-ttu-id="1ec9d-158">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-158">Close the page.</span></span>
-23. <span data-ttu-id="1ec9d-159">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-159">Close the page.</span></span>
-24. <span data-ttu-id="1ec9d-160">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-160">Close the page.</span></span>
-25. <span data-ttu-id="1ec9d-161">Kliknij przycisk Zmień stan.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-161">Click Change status.</span></span>
-26. <span data-ttu-id="1ec9d-162">Kliknij przycisk Wykonaj.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-162">Click Complete.</span></span>
-27. <span data-ttu-id="1ec9d-163">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="1ec9d-163">Click OK.</span></span>
+## <a name="map-new-data-model-elements-to-dynamics-365-for-finance-and-operations-data-sources"></a><span data-ttu-id="98325-131">Mapowanie elementów nowego modelu danych na źródła danych programu Dynamics 365 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="98325-131">Map new data model elements to Dynamics 365 for Finance and Operations data sources</span></span>
+1. <span data-ttu-id="98325-132">Kliknij opcję Mapuj model na źródło danych.</span><span class="sxs-lookup"><span data-stu-id="98325-132">Click Map model to datasource.</span></span>
+2. <span data-ttu-id="98325-133">Użyj szybkiego filtru, aby wyfiltrować pole Definicja według wartości „InvoiceCustomer”.</span><span class="sxs-lookup"><span data-stu-id="98325-133">Use the Quick Filter to filter on the Definition field with a value of 'InvoiceCustomer'.</span></span>
+    * <span data-ttu-id="98325-134">InvoiceCustomer</span><span class="sxs-lookup"><span data-stu-id="98325-134">InvoiceCustomer</span></span>  
+    * <span data-ttu-id="98325-135">Zmapujemy elementy nowego modelu na odpowiednie źródła danych.</span><span class="sxs-lookup"><span data-stu-id="98325-135">We will map new model elements to appropriate data sources.</span></span>  
+3. <span data-ttu-id="98325-136">Kliknij przycisk Konstruktor.</span><span class="sxs-lookup"><span data-stu-id="98325-136">Click Designer.</span></span>
+4. <span data-ttu-id="98325-137">W drzewie zaznacz element „Załączniki faktur”.</span><span class="sxs-lookup"><span data-stu-id="98325-137">In the tree, select 'Invoice attachments'.</span></span>
+5. <span data-ttu-id="98325-138">W drzewie rozwiń węzeł „Załączniki faktur”.</span><span class="sxs-lookup"><span data-stu-id="98325-138">In the tree, expand 'Invoice attachments'.</span></span>
+6. <span data-ttu-id="98325-139">W drzewie zaznacz element „Załączniki faktur\Nazwa pliku”.</span><span class="sxs-lookup"><span data-stu-id="98325-139">In the tree, select 'Invoice attachments\File name'.</span></span>
+7. <span data-ttu-id="98325-140">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="98325-140">Click Edit.</span></span>
+8. <span data-ttu-id="98325-141">W polu Formuła wpisz wyrażenie „CustInvoiceJour.'>Relacje'.SalesTable.'<Relacje'.'<Dokumenty'.'originalFileName()'”.</span><span class="sxs-lookup"><span data-stu-id="98325-141">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()''.</span></span>
+    * <span data-ttu-id="98325-142">CustInvoiceJour.'>Relacje'.SalesTable.'<Relacje'.'<Dokumenty'.'originalFileName()'</span><span class="sxs-lookup"><span data-stu-id="98325-142">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()'</span></span>  
+9. <span data-ttu-id="98325-143">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="98325-143">Click Save.</span></span>
+10. <span data-ttu-id="98325-144">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="98325-144">Close the page.</span></span>
+11. <span data-ttu-id="98325-145">W drzewie zaznacz element „Załączniki faktur\Zawartość pliku”.</span><span class="sxs-lookup"><span data-stu-id="98325-145">In the tree, select 'Invoice attachments\File content'.</span></span>
+12. <span data-ttu-id="98325-146">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="98325-146">Click Edit.</span></span>
+13. <span data-ttu-id="98325-147">W polu Formuła wpisz wyrażenie „CustInvoiceJour.'>Relacje'.SalesTable.'<Relacje'.'<Dokumenty'.'getFileContentAsContainer()'”.</span><span class="sxs-lookup"><span data-stu-id="98325-147">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()''.</span></span>
+    * <span data-ttu-id="98325-148">CustInvoiceJour.'>Relacje'.SalesTable.'<Relacje'.'<Dokumenty'.'getFileContentAsContainer()'</span><span class="sxs-lookup"><span data-stu-id="98325-148">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()'</span></span>  
+14. <span data-ttu-id="98325-149">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="98325-149">Click Save.</span></span>
+15. <span data-ttu-id="98325-150">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="98325-150">Close the page.</span></span>
+16. <span data-ttu-id="98325-151">W drzewie zaznacz element „Załączniki faktur”.</span><span class="sxs-lookup"><span data-stu-id="98325-151">In the tree, select 'Invoice attachments'.</span></span>
+17. <span data-ttu-id="98325-152">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="98325-152">Click Edit.</span></span>
+18. <span data-ttu-id="98325-153">W polu Formuła wpisz wyrażenie „CustInvoiceJour.'>Relacje'.SalesTable.'<Relacje'.'<Dokumenty'”.</span><span class="sxs-lookup"><span data-stu-id="98325-153">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents''.</span></span>
+    * <span data-ttu-id="98325-154">CustInvoiceJour.'>Relacje'.SalesTable.'<Relacje'.'<Dokumenty'</span><span class="sxs-lookup"><span data-stu-id="98325-154">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'</span></span>  
+19. <span data-ttu-id="98325-155">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="98325-155">Click Save.</span></span>
+20. <span data-ttu-id="98325-156">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="98325-156">Close the page.</span></span>
+21. <span data-ttu-id="98325-157">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="98325-157">Click Save.</span></span>
+22. <span data-ttu-id="98325-158">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="98325-158">Close the page.</span></span>
+23. <span data-ttu-id="98325-159">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="98325-159">Close the page.</span></span>
+24. <span data-ttu-id="98325-160">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="98325-160">Close the page.</span></span>
+25. <span data-ttu-id="98325-161">Kliknij przycisk Zmień stan.</span><span class="sxs-lookup"><span data-stu-id="98325-161">Click Change status.</span></span>
+26. <span data-ttu-id="98325-162">Kliknij przycisk Wykonaj.</span><span class="sxs-lookup"><span data-stu-id="98325-162">Click Complete.</span></span>
+27. <span data-ttu-id="98325-163">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="98325-163">Click OK.</span></span>
 
 
