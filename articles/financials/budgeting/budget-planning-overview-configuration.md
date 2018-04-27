@@ -19,17 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-overview"></a>Przegląd planowania budżetu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera wprowadzenie do koncepcji planowania budżetu oraz informacje pomocne w konfigurowaniu planowania budżetu i odnośnych procesów.
 
@@ -116,18 +115,18 @@ Podczas planowania budżetu można alokować kwoty lub ilości w wierszach planu
 
 Harmonogramy alokacji automatycznie alokują wiersze planu budżetu podczas przetwarzania przepływu pracy. Alokacje można wykonywać za pomocą dowolnej z metod dostępnych na liście **Metody alokacji**:
 
--   **Alokuj między okresami** — klucz alokacji okresu jest używany do alokacji wierszy planu budżetu ze źródłowego scenariusza planu budżetu między okresami w scenariuszu docelowym. **Uwaga:** Aby możliwa była alokacja między okresami, trzeba ustawić klucze alokacji okresów na stronie ****Kategorie alokacji okresu****.
--   **Alokuj do wymiarów** — przydzielanie wierszy planu budżetu następuje ze źródłowego scenariusza planu budżetu do wymiarów finansowych w scenariuszu docelowym. **Uwaga:** Aby alokacja do wymiarów była możliwa, trzeba ustawić warunki alokacji budżetu na stronie ****Warunki alokacji budżetu****.
--   **Agreguj** — agregowanie wierszy planu budżetu następuje ze źródłowego scenariusza planu budżetu w powiązanych planach budżetu do docelowego scenariusza w nadrzędnym planie budżetu.
--   **Dystrybuuj** — rozdzielanie wierszy planu budżetu następuje ze źródłowego scenariusza planu budżetu w nadrzędnym planie budżetu do docelowego scenariusza w skojarzonych planach budżetu.
--   **Użyj reguł alokacji księgi** — rozdzielanie wierszy planu budżetu następuje ze źródłowego scenariusza planu budżetu do docelowego scenariusza planu budżetu na podstawie wybranej reguły alokacji księgi.
--   **Kopiuj z planu budżetu** — można wybrać inny plan budżetu do użycia jako źródło alokacji.
+- <strong>Alokuj między okresami</strong> — klucz alokacji okresu jest używany do alokacji wierszy planu budżetu ze źródłowego scenariusza planu budżetu między okresami w scenariuszu docelowym. <strong>Uwaga:</strong> Aby możliwa była alokacja między okresami, trzeba ustawić klucze alokacji okresów na stronie *<strong><em>Kategorie alokacji okresu</em></strong>*.
+- <strong>Alokuj do wymiarów</strong> — przydzielanie wierszy planu budżetu następuje ze źródłowego scenariusza planu budżetu do wymiarów finansowych w scenariuszu docelowym. <strong>Uwaga:</strong> Aby alokacja do wymiarów była możliwa, trzeba ustawić warunki alokacji budżetu na stronie *<strong><em>Warunki alokacji budżetu</em></strong>*.
+- **Agreguj** — agregowanie wierszy planu budżetu następuje ze źródłowego scenariusza planu budżetu w powiązanych planach budżetu do docelowego scenariusza w nadrzędnym planie budżetu.
+- **Dystrybuuj** — rozdzielanie wierszy planu budżetu następuje ze źródłowego scenariusza planu budżetu w nadrzędnym planie budżetu do docelowego scenariusza w skojarzonych planach budżetu.
+- **Użyj reguł alokacji księgi** — rozdzielanie wierszy planu budżetu następuje ze źródłowego scenariusza planu budżetu do docelowego scenariusza planu budżetu na podstawie wybranej reguły alokacji księgi.
+- **Kopiuj z planu budżetu** — można wybrać inny plan budżetu do użycia jako źródło alokacji.
 
 ### <a name="stage-allocations"></a>Alokacje etapu
 
 Alokacje etapu umożliwiają automatyczną alokację wierszy planu budżetu podczas przetwarzania przepływu pracy. Gdy używane są alokacje etapów, wiersze planu budżetu w scenariuszu docelowym można tworzyć i modyfikować bez interwencji osoby odpowiedzialnej za przygotowanie planu budżetu lub osoby sprawdzającej.
 
-Podczas konfigurowania alokacji etapu należy skojarzyć przepływ pracy planowania budżetu i etap z harmonogramem alokacji. Przepływ pracy planowania budżetu należy skojarzyć z przepływem pracy budżetowania korzystającym z zadania automatycznie wykonywanego przepływu pracy ****Alokacja etapu planowania budżetu****. Gdy przepływ pracy osiągnie określony etap, alokacja jest wykonywana automatycznie. To wykonywane automatycznie zadanie może służyć do tworzenia wierszy planu budżetu w nowym scenariuszu. 
+Podczas konfigurowania alokacji etapu należy skojarzyć przepływ pracy planowania budżetu i etap z harmonogramem alokacji. Przepływ pracy planowania budżetu należy skojarzyć z przepływem pracy budżetowania korzystającym z zadania automatycznie wykonywanego przepływu pracy *<strong><em>Alokacja etapu planowania budżetu</em></strong>*. Gdy przepływ pracy osiągnie określony etap, alokacja jest wykonywana automatycznie. To wykonywane automatycznie zadanie może służyć do tworzenia wierszy planu budżetu w nowym scenariuszu. 
 
 W przykładowym schemacie, pokazanym wcześniej w tym artykule, alokacja służy do przenoszenia kwot z planu i scenariuszy budżetu na etapie Podstawowy w Centrali do innego planu i scenariuszy budżetu na etapie Szacowanie w Dziale sprzedaży. Poniższa ilustracja pokazuje odpowiednią sekcję przykładowego schematu.
 

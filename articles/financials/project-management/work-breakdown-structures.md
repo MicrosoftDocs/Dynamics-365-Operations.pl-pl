@@ -19,16 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc2fa16a44b6421d56e9cb662cfaa26da5b1c5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8bc3d23fac6112622e722e57b61fdb686f5a98ed
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="work-breakdown-structures"></a>Struktury podziału pracy
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Struktura podziału pracy (SPP) to opis pracy, która zostanie wykonana w ramach projektu. Jest to hierarchia zadań ustalona przez zespół na podstawie koniecznej pracy, zakresu, kosztu i czasu trwania każdego ze składników lub zadań. SPP pełni trzy główne funkcje:
 
@@ -115,7 +115,7 @@ Szacowanie harmonogramu zazwyczaj jest to drugi etap w tworzeniu SPP. Zaleca si�
 
 Data rozpoczęcia zadania węzła liścia, które nie zawiera zadań poprzedzających, jest automatycznie ustawiane jako data rozpoczęcia w harmonogramie projektu. Czas trwania zadania węzła liścia jest zawsze obliczany jako liczba dni roboczych pomiędzy jego datami rozpoczęcia i zakończenia. 
 
-****Reguły planowania**** Po włączeniu asysty automatycznego planowania stosowane są następujące reguły planowania zadań dla zadań węzła liścia:
+*<strong><em>Reguły planowania</em></strong>* Po włączeniu asysty automatycznego planowania stosowane są następujące reguły planowania zadań dla zadań węzła liścia:
 
 -   Daty rozpoczęcia i zakończenia zadania muszą być dniami roboczymi, zgodnie z kalendarzem harmonogramu projektu.
 -   Planowana data rozpoczęcia zadania, które ma zadania poprzedzające, jest ustawiana automatycznie jako najpóźniejsza data zakończenia wszystkich jego zadań poprzedzających.

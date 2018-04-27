@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 76c2b078b583a1f8f2235eef15dbba514e57b0f8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-collaboration-with-external-vendors"></a>Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Moduł **Współpraca z dostawcami** jest przeznaczony dla dostawców, którzy nie ma mają systemów elektronicznej wymiany danych (EDI) zintegrowanych z programem Microsoft Dynamics 365 for Finance and Operations. Umożliwia dostawcom pracę z zamówieniami zakupu (PO), fakturami, zapasami konsygnacyjnymi i zapytaniami ofertowymi (RFQ), a także uzyskanie dostępu do części danych głównych dostawcy. W tym temacie wyjaśniono możliwości współpracy z zewnętrznymi dostawcami, którzy używają interfejsu współpracy z dostawcami do wykonywania operacji na zamówieniach zakupu, zapytaniach ofertowych i zapasach konsygnacyjnych. Wyjaśniono także sposoby konfigurowania określonych dostawców do używania portalu współpracy z dostawcami oraz sposoby definiowania informacji wyświetlanych wszystkim dostawcom podczas odpowiadania na zamówienie zakupu.
 
@@ -116,7 +116,7 @@ Zamówienie zakupu wysłane do dostawcy i mające stan <strong>W trakcie analizy
 <li>Zastąpienie towaru.</li>
 </ul>
 Dostawca nie może zmienić informacji o cenach ani opłat. Dostawca może jednak sugerować te zmiany za pomocą uwag.</td>
-<td>Odpowiedź dostawcy zostanie zarejestrowana jako <strong>Zaakceptowano ze zmianami</strong>, a zamówienie zakupu będzie nadal miało stan <strong>W trakcie analizy zewnętrznej</strong>. Stany pokazują typy zmian zasugerowanych przez dostawcę. Aby uzyskać informacje na temat automatycznego wprowadzania zmian, patrz sekcja „Aktualizowanie zamówienia zakupu o zmiany sugerowane przez dostawcę” w dalszej części tego tematu. </td>
+<td>Odpowiedź dostawcy zostanie zarejestrowana jako <strong>Zaakceptowano ze zmianami</strong>, a zamówienie zakupu będzie nadal miało stan <strong>W trakcie analizy zewnętrznej</strong>. Stany pokazują typy zmian zasugerowanych przez dostawcę. Aby uzyskać informacje na temat automatycznego wprowadzania zmian, patrz sekcja &quot;Aktualizowanie zamówienia zakupu o zmiany sugerowane przez dostawcę&quot; w dalszej części tego tematu. </td>
 </tr>
 </tbody>
 </table>

@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3206e53c4f2659c6d9b9be64b01ac28cdd17bc88
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0235cf112b59ee86f77d26044e47eb9bff8f67db
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Ograniczenia wyrażenia i ograniczenia tabeli w modelach konfiguracji produktu.
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano zastosowanie ograniczeń wyrażenia i ograniczeń tabeli. Ograniczenia służą do kontroli wartości atrybutów, które można wybrać podczas konfigurowania produktów dla zamówienia sprzedaży, oferty sprzedaży, zamówienia zakupu lub zlecenia produkcyjnego. Można użyć ograniczeń wyrażenia lub ograniczeń tabeli, w zależności od preferencji dotyczących tworzenia ograniczeń. 
 
@@ -204,23 +203,24 @@ W poniższych tabelach znajdują się listy operatorów i notacji infix, któryc
 
 W następnej tabeli przedstawiono przykłady jak zapisać notację infix.
 
-| Notacja infix:    | opis                                                                                   |
+
+|  Notacja infix:   |                                          opis                                          |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| x + y + z         | Dodanie                                                                                      |
-| x \* y \* z       | Mnożenie                                                                                |
-| x - y             | Odejmowanie binarne jest tłumaczona tak samo, jak binarnego dodawanie z zanegowaniem drugiego. |
-| x ^ y ^ z         | Potęgowanie z łącznością do prawej                                                   |
-| !x                | Wartość logiczna not                                                                                   |
-| x -: y            | Logiczna implikacja                                                                           |
-| x | y | z         | Wartość logiczna or                                                                                    |
-| x & y & z         | Wartość logiczna and                                                                                   |
-| x == y == z       | Równość                                                                                      |
-| x != y != z       | Określone                                                                                      |
-| x &lt; y &lt; z   | Mniejsze niż                                                                                     |
-| x &gt; y &gt; z   | Większe niż                                                                                  |
-| x &lt;= y &lt;= z | Mniejsze lub równe                                                                         |
-| x &gt;= y &gt;= z | Większe lub równe                                                                      |
-| (x)               | Nawiasy zastępują domyślny priorytet.                                                      |
+|     x + y + z     |                                           Dodanie                                            |
+|    x \* y \* z    |                                        Mnożenie                                         |
+|       x - y       | Odejmowanie binarne jest tłumaczona tak samo, jak binarnego dodawanie z zanegowaniem drugiego. |
+|     x ^ y ^ z     |                          Potęgowanie z łącznością do prawej                          |
+|        !x         |                                          Wartość logiczna not                                          |
+|      x -: y       |                                      Logiczna implikacja                                      |
+|         x         |                                               y                                               |
+|     x & y & z     |                                          Wartość logiczna and                                          |
+|    x == y == z    |                                           Równość                                            |
+|    x != y != z    |                                           Określone                                            |
+|  x &lt; y &lt; z  |                                           Mniejsze niż                                           |
+|  x &gt; y &gt; z  |                                         Większe niż                                          |
+| x &lt;= y &lt;= z |                                     Mniejsze lub równe                                     |
+| x &gt;= y &gt;= z |                                   Większe lub równe                                    |
+|        (x)        |                           Nawiasy zastępują domyślny priorytet.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Dlaczego moje ograniczenia wyrażeń nie przechodzą pomyślnie sprawdzania poprawności?
 Nie można używać zarezerwowanych słów kluczowych jako nazwy zamiennej dla atrybutów, komponentów czy podskładniki w modelu konfiguracji produktu. Oto lista zarezerwowanych słów kluczowych, których nie można używać:

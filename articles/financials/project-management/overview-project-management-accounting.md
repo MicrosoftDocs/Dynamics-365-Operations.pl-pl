@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: ProjTable
+ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3c4720795313180ba7ad784ea39484d6ffb9ac2f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 404f7d2b050aba1532cae0955a9579e1c2f174e3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="project-management-and-accounting"></a>Zarządzanie projektami i ich księgowanie
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Funkcji zarządzanie projektami i ich księgowania można używać w wielu branżach w celu świadczenia usług, wytwarzania produktów lub uzyskiwania rezultatów.  
 
@@ -83,6 +82,7 @@ Korzystaj z prognozowania projektu, jeśli Twoja organizacja ma perspektywę org
 W programie Finance and Operations można utworzyć sześć typów projektów. W każdym z nich inaczej konfiguruje się rozpoznanie kosztów i przychodów. Wybrany typ projektu zależy od przeznaczenia projektu. W poniższej tabeli opisano typowe użycie każdego typu projektu.
 
                                                                                                                                                                          |
+
 | Typ projektu      | Opis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Czas i materiały | W projektach czasowych i materiały odbiorcy wystawiany jest rachunek obejmujący wszystkie koszty poniesione w ramach projektu. Te koszty obejmują godziny, wydatki, towary i opłaty.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -127,10 +127,10 @@ Zlecenie produkcyjne związane z projektem może być połączone z zamówieniem
 
 Na podstawie kombinacji tych czynników, użyj jednej z następujących metod:
 
--   **Towar gotowy/Połączenie z zamówieniem** – powiąż projekt z zamówieniem sprzedaży lub zapotrzebowaniem na towar. W wypadku tej metody rzeczywiste koszty projektu są księgowane po zaksięgowaniu zamówienia sprzedaży lub po zaktualizowaniu dokumentu dostawy, z uwzględnieniem zapotrzebowania na towar. Koszty zostaną zaksięgowane jako towar gotowy.
--   **Towar gotowy/bez połączenia z zamówieniem** — koszty rzeczywiste nie mogą być zaksięgowane, aż cykl produkcyjny towaru będzie miał stan **Zakończono**. Koszty towaru gotowego są księgowane w ramach jednej transakcji.
--   **Towar zużyty/Połączenie z zamówieniem** – powiąż projekt z zapotrzebowaniem na towar. Dzięki tej metodzie można przejrzeć rzeczywiste koszty projektu, gdy produkcja ma stan **Rozpoczęte** lub gdy jest zgłoszona jako gotowa. Koszty zostaną zaksięgowane jako wiele transakcji towarów projektu odnoszących się do surowców i godzin zużytych w ramach produkcji. Po zaktualizowaniu dokumentu dostawy, z uwzględnieniem zapotrzebowanie na towar, koszty projektowe nie są księgowane. Można zdefiniować poziom hierarchii listy składowej (BOM), przy którym powinny być śledzone projekty w ramach produkcji.
--   ****Towar zużyty/brak połączenia z zamówieniem**** — powiąż projekt z zapotrzebowaniem na towar. Dzięki tej metodzie można przejrzeć rzeczywiste koszty projektu, gdy produkcja ma stan **Rozpoczęte** lub gdy jest zgłoszona jako gotowa. Koszty zostaną zaksięgowane jako wiele transakcji towarów projektu odnoszących się do surowców i godzin zużytych w ramach produkcji. Można zdefiniować poziom hierarchii listy składowej (BOM), przy którym powinny być śledzone projekty w ramach produkcji.
+- **Towar gotowy/Połączenie z zamówieniem** – powiąż projekt z zamówieniem sprzedaży lub zapotrzebowaniem na towar. W wypadku tej metody rzeczywiste koszty projektu są księgowane po zaksięgowaniu zamówienia sprzedaży lub po zaktualizowaniu dokumentu dostawy, z uwzględnieniem zapotrzebowania na towar. Koszty zostaną zaksięgowane jako towar gotowy.
+- **Towar gotowy/bez połączenia z zamówieniem** — koszty rzeczywiste nie mogą być zaksięgowane, aż cykl produkcyjny towaru będzie miał stan **Zakończono**. Koszty towaru gotowego są księgowane w ramach jednej transakcji.
+- **Towar zużyty/Połączenie z zamówieniem** – powiąż projekt z zapotrzebowaniem na towar. Dzięki tej metodzie można przejrzeć rzeczywiste koszty projektu, gdy produkcja ma stan **Rozpoczęte** lub gdy jest zgłoszona jako gotowa. Koszty zostaną zaksięgowane jako wiele transakcji towarów projektu odnoszących się do surowców i godzin zużytych w ramach produkcji. Po zaktualizowaniu dokumentu dostawy, z uwzględnieniem zapotrzebowanie na towar, koszty projektowe nie są księgowane. Można zdefiniować poziom hierarchii listy składowej (BOM), przy którym powinny być śledzone projekty w ramach produkcji.
+- *<strong><em>Towar zużyty/brak połączenia z zamówieniem</em></strong>* — powiąż projekt z zapotrzebowaniem na towar. Dzięki tej metodzie można przejrzeć rzeczywiste koszty projektu, gdy produkcja ma stan <strong>Rozpoczęte</strong> lub gdy jest zgłoszona jako gotowa. Koszty zostaną zaksięgowane jako wiele transakcji towarów projektu odnoszących się do surowców i godzin zużytych w ramach produkcji. Można zdefiniować poziom hierarchii listy składowej (BOM), przy którym powinny być śledzone projekty w ramach produkcji.
 
 ### <a name="procure-products-and-services"></a>Zaopatrzenie w produkty i usługi
 
@@ -239,9 +239,8 @@ W poniższej tabeli opisano metody obliczania kosztu zakończenia projektu.
 <li>Porównaj prognozowane transakcje z rzeczywistymi.</li>
 <li>Zachowaj, zmniejsz lub zwiększ oszacowania dla następnego okresu.</li>
 </ol>
-Program Finance and Operations nie zmniejsza automatycznie prognozowanych oszacowań. Dlatego warto zachować pierwotny model prognozy w projekcie o stałej cenie, aby mieć podstawę do porównania, gdy projekt zostanie zakończony. 
-> [!NOTE] Po wybraniu tej metody należy użyć co najmniej dwóch modeli prognoz. Jeden model powinien zawierać pierwotną prognozę. Dla innego modelu należy skopiować transakcje prognozy z innego modelu. Ta metoda dotyczy tylko projektów o stałej cenie i inwestycyjnych.</td>
-> </tr>
+Program Finance and Operations nie zmniejsza automatycznie prognozowanych oszacowań. Dlatego warto zachować pierwotny model prognozy w projekcie o stałej cenie, aby mieć podstawę do porównania, gdy projekt zostanie zakończony. &gt; [!NOTE] &gt; Po wybraniu tej metody należy użyć co najmniej dwóch modeli prognoz. Jeden model powinien zawierać pierwotną prognozę. Dla innego modelu należy skopiować transakcje prognozy z innego modelu. Ta metoda dotyczy tylko projektów o stałej cenie i inwestycyjnych.</td>
+</tr>
 <tr class="odd">
 <td>Pozostały budżet</td>
 <td>Ta metoda wykorzystuje model pozostałego budżetu, aby obliczyć koszt ukończenia projektu. W przypadku korzystania z tej metody koszty rzeczywiste i prognozowane kwoty w modelu pozostałego budżetu są sumowane. Wynikiem jest całkowity koszt. Przed użyciem tej metody model pozostałego budżetu musi mieć możliwość odliczenia transakcji dla rzeczywistych transakcji, które są zarejestrowane w systemie. Na stronie <strong>Modele prognoz</strong> upewnij się, że pola są oznaczone w grupie <strong>Automatyczne zmniejszenie prognozy</strong>. Na ogół pozostały budżet jest kopiowany z pierwotnego budżetu. Ponieważ transakcje zostały wprowadzone, transakcje w pozostałym budżecie są zmniejszane. W miarę realizacji projektu, jeśli określisz, że pozostały budżet musi zostać skorygowany, zmieniasz transakcje prognozy na pozostały budżet. <strong>Uwaga:</strong> Ta metoda może zostać zastosowana tylko, jeśli model prognozy jest dołączony do szacowania.</td>

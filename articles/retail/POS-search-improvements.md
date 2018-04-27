@@ -1,9 +1,9 @@
 ---
 title: "Wyszukiwanie produktów i odbiorców w POS"
-description: "Ten temat zawiera omówienie ulepszeń wprowadzonych w produkcie i funkcji wyszukiwania klientów w rozwiązaniu Dynamics 365 for Retail."
+description: "Ten temat zawiera omówienie ulepszeń wprowadzonych w produkcie i funkcji wyszukiwania odbiorców w rozwiązaniu Microsoft Dynamics 365 for Retail."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 08/16/2017
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,30 +19,30 @@ ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: bd563610616fa72a610e0b134371765cc1edacc6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b055ae09e87434f9e43c558e2a43d0467d70aaed
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
-# <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Przegląd produktu i wyszukiwania klientów w punkcie sprzedaży
+# <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Omówienie wyszukiwania produktów i odbiorców w punkcie sprzedaży
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
-Aplikacje Modern Point of Sale (MPOS) i Cloud Point of Sale (CPOS) udostępniają funkcję łatwego wyszukiwania, która umożliwia pracownikom sklepu szybkie wyszukiwanie produktów i klientów. Pasek wyszukiwania znajduje się zawsze w górnej części aplikacji MPOS i CPOS, aby umożliwić pracownikom szybkie znalezienie produktów i klientów.
+Aplikacje Modern Point of Sale (MPOS) i Cloud Point of Sale (CPOS) udostępniają funkcję łatwego wyszukiwania produktów i odbiorców. Ponieważ pasek wyszukiwania znajduje się zawsze w górnej części okien aplikacji MPOS i CPOS, pracownicy mogą szybko znajdować produkty i odbiorców.
 
-Pracownicy mogą wyszukiwać produkty w asortymencie i katalogach skojarzonych z bieżącym sklepem oraz asortymencie i katalogach skojarzonych z innymi sklepami w firmie. Dlatego kasjerzy mogą sprzedawać i zwracać produkty spoza asortymentu sklepu. Podobnie pracownicy mogą wyszukiwać klientów skojarzonych z bieżącym sklepem lub dowolnym innym sklepem w firmie. Ponadto pracownicy mogą wyszukiwać klientów skojarzonych z inną firmą w organizacji nadrzędnej.
+Pracownicy mogą szukać produktów w asortymentach i katalogach skojarzonych z bieżącym sklepem. Mogą również szukać w asortymentach i katalogach skojarzonych z dowolnym innym sklepem w firmie. Dlatego kasjerzy mogą sprzedawać i zwracać produkty spoza asortymentu sklepu. Podobnie pracownicy mogą wyszukiwać odbiorców skojarzonych z bieżącym sklepem lub dowolnym innym sklepem w firmie. Ponadto pracownicy mogą wyszukiwać odbiorców skojarzonych z inną firmą w organizacji nadrzędnej.
 
-## <a name="product-search"></a>Wyszukiwanie produktu 
+## <a name="product-search"></a>Wyszukiwanie produktu
 
-Domyślnie wyszukiwanie produktu jest przeprowadzane w asortymencie sklepu. Ten typ wyszukiwania jest nazywany *lokalnym wyszukiwaniem produktu*. Pracownicy mogą jednak łatwo przełączyć się na dowolny katalog skojarzony z bieżącym sklepem lub wyszukać w innym sklepie. Ten typ wyszukiwania jest nazywany *zdalnym wyszukiwaniem produktu*. Aby zmienić katalog, wybierz przycisk **Kategorie** w lewej części tej strony. W górnej części wyświetlonego okienka wybierz przycisk **Zmień katalog**, a następnie wybierz jeden z następujących katalogów do przeglądania. System wyszuka produkty w wybranym katalogu.
+Domyślnie wyszukiwania produktów są przeprowadzane w asortymencie sklepu. Ten typ wyszukiwania jest nazywany *lokalnym wyszukiwaniem produktu*. Pracownicy mogą jednak łatwo przełączyć się na dowolny katalog skojarzony z bieżącym sklepem lub wyszukać w innym sklepie. Ten typ wyszukiwania jest nazywany *zdalnym wyszukiwaniem produktu*. Aby zmienić katalog, wybierz przycisk **Kategorie** w lewej części tej strony. W górnej części wyświetlonego okienka wybierz przycisk **Zmień katalog**, a następnie wybierz jeden z następujących katalogów do przeglądania. System wyszuka produkty w wybranym katalogu.
 
 Na stronie **Zmień katalog** pracownicy mogą łatwo wybrać dowolny sklep, lub wyszukać produkty we wszystkich sklepach.
 
 ![Zmiana katalogu](./media/Changecatalog.png "Zmiana katalogu")
  
-Lokalne wyszukiwanie produktów powoduje wyszukiwanie w następujących właściwościach produktu:
+Lokalne wyszukiwanie produktów powoduje wyszukiwanie w następujących właściwościach produktów:
 
 - Numer produktu
 - Nazwa produktu
@@ -53,10 +53,10 @@ Lokalne wyszukiwanie produktów powoduje wyszukiwanie w następujących właści
 
 ### <a name="enhancements-to-local-product-searches"></a>Ulepszenia lokalnych wyszukiwań produktów
 
-Lokalne wyszukiwanie produktów jest bardziej przyjazne dla użytkownika. Wprowadzono również następujące ulepszenia:
+Lokalne wyszukiwanie produktów jest teraz bardziej przyjazne dla użytkownika. Wprowadzono również następujące ulepszenia:
 
 - Do paska wyszukiwania dodano menu rozwijane produktu i klienta, aby pracownicy mogli wybrać opcję **Produkt** lub **Klient** przed rozpoczęciem wyszukiwania. Domyślnie wybrana jest opcja **Produkt**, jak pokazano na poniższej ilustracji.
-- W przypadku wyszukiwania słów kluczowych (tj. wyszukiwań wykorzystujących terminy) sprzedawcy mogą skonfigurować, czy wyniki wyszukiwania obejmują wyniki zgodne z dowolnym wyszukiwanym terminem czy tylko wyniki zgodne ze wszystkimi wyszukiwanymi terminami. To ustawienie jest dostępne w profilu funkcji POS, w nowej grupie o nazwie **Wyszukiwanie produktu**. Ustawienie domyślne to **Dopasuj dowolne szukane terminy**. To ustawienie jest także ustawieniem zalecanym. Gdy używane jest ustawienie **Dopasuj dowolne szukane terminy**, wszystkie produkty całkowicie lub częściowo zgodne z co najmniej jednym szukanym terminem są zwracane jako wyniki, które są automatycznie sortowane w kolejności rosnącej produktów dopasowanych do największej liczby słów kluczowych (całkowicie lub częściowo).
+- W przypadku wyszukiwania słów kluczowych (tj. wyszukiwań wykorzystujących terminy) sprzedawcy mogą skonfigurować, czy wyniki wyszukiwania obejmują wyniki zgodne z *dowolnym* wyszukiwanym terminem czy tylko wyniki zgodne ze *wszystkimi* wyszukiwanymi terminami. To ustawienie jest dostępne w profilu funkcji POS, w nowej grupie o nazwie **Wyszukiwanie produktu**. Ustawienie domyślne to **Dopasuj dowolne szukane terminy**. To ustawienie jest także ustawieniem zalecanym. Gdy używane jest ustawienie **Dopasuj dowolne szukane terminy**, wszystkie produkty całkowicie lub częściowo zgodne z co najmniej jednym szukanym terminem są zwracane jako wyniki. Te wyniki są automatycznie sortowane w kolejności rosnącej produktów dopasowanych do największej liczby słów kluczowych (całkowicie lub częściowo).
 
     Ustawienie **Dopasuj wszystkie szukane terminy** zwraca tylko produkty zgodne ze wszystkimi szukanymi terminami (całkowicie lub częściowo). To ustawienie jest przydatne, gdy nazwy produktów są długie, a pracownicy chcą zobaczyć w wynikach wyszukiwania tylko ograniczoną liczbę produktów. Jednak ten rodzaj wyszukiwania ma dwa ograniczenia:
 
@@ -83,7 +83,23 @@ W zdalnym wyszukiwaniu odbiorców identyfikator odbiorcy nie jest widoczny dla o
 
 ![Globalne wyszukiwanie odbiorcy](./media/Globalcustomersearch.png "Globalne wyszukiwanie odbiorcy")
 
-### <a name="enhancements-to-local-customer-searches"></a>Ulepszenia lokalnych wyszukiwań odbiorców
+### <a name="enhancements-to-local-customer-search"></a>Ulepszenia lokalnego wyszukiwania odbiorców
 
-Lokalne wyszukiwania odbiorców ułatwia pracownikom znalezienie odbiorców według numeru telefonu. Pracownicy nie muszą wpisywać żadnych znaków specjalnych, które zostały dodane do numeru telefonu odbiorcy, na przykład spacji, myślników lub nawiasów. Mimo że kasjerzy mogą zapisać numery telefonu w dowolnym formacje (mogą na przykład dodać nawiasy, myślniki, symbole itd.), mogą także wyszukiwać odbiorców, wpisując częściowy numer telefonu. Jeżeli kasjer dodał znaki specjalne przy wprowadzaniu numeru telefonu, inni kasjerzy mogą znaleźć odbiorcę, wpisując cyfry widoczne po znakach specjalnych. Jeżeli na przykład numer telefonu odbiorcy wprowadzono jako **123-456-7890**, kasjer może wyszukać odbiorcę, wpisując **123**, **456**, **7890** lub **1234567890** albo wpisując kilka pierwszych cyfr numeru telefonu.
+Wyszukiwania oparte na numerze telefonu zostały uproszczone. Te wyszukiwania teraz ignorują znaki specjalne, takie jak spacje, łączniki i nawiasy, które mogły zostać dodane podczas tworzenia odbiorcy. Dzięki temu kasjerzy nie muszą się już martwić o formaty numerów telefonów podczas wyszukiwania. Mogą również szukać odbiorców przez wpisanie częściowego numeru telefonu. Jeśli numer telefonu zawiera znaki specjalne, również można go znaleźć, wyszukując numery występujące po znakach specjalnych. Jeżeli na przykład numer telefonu odbiorcy wprowadzono jako **123-456-7890**, kasjer może wyszukać odbiorcę, wpisując **123**, **456**, **7890** lub **1234567890** albo wpisując kilka pierwszych cyfr numeru telefonu.
+
+Tradycyjne wyszukiwanie odbiorcy może być czasochłonne, ponieważ obejmuje wiele pól. Zamiast tego kasjerzy mogą teraz szukać w jednej niestandardowej właściwości, takiej jak imię i nazwisko, adres e-mail lub numer telefonu. Właściwości używane przez algorytm wyszukiwania odbiorców są zbiorczo nazywane *kryteriami wyszukiwania odbiorców*. Administrator systemu może w prosty sposób skonfigurować jedno lub więcej kryteriów jako skróty, które będą wyświetlane w aplikacji POS. Ponieważ wyszukiwanie jest ograniczone do jednego kryterium, są wyświetlane tylko pasujące wyniki wyszukiwania, a proces działa znacznie szybciej, niż standardowe wyszukiwanie odbiorców. Poniższa ilustracja przedstawia skróty wyszukiwania odbiorców w aplikacji POS.
+
+![Skróty wyszukiwania odbiorców](./media/SearchShortcutsPOS.png "Skróty wyszukiwania odbiorców")
+
+Aby ustawić kryteria wyszukiwania jako skróty, administrator musi otworzyć stronę **Parametry sieci sprzedaży** w aplikacji Microsoft Dynamics 365 for Finance and Operations, a następnie na karcie **Kryteria wyszukiwania w aplikacji POS** zaznaczyć wszystkie kryteria, które powinny być wyświetlane w postaci skrótów.
+
+![Konfigurowanie skrótów wyszukiwania](./media/ConfigureShortcutsAX.png "Konfigurowanie skrótów wyszukiwania")
+
+> [!NOTE]
+> Jeśli dodasz zbyt wiele skrótów, menu rozwijane na pasku wyszukiwania w aplikacji POS będzie bardzo nieczytelne, co utrudni pracownikowi wyszukiwanie. Zalecamy, aby dodać tylko potrzebną liczbę skrótów.
+
+Pole **Kolejność wyświetlania** określa kolejność, w jakiej skróty są wyświetlane w aplikacji POS. Wyświetlane kryteria są standardowymi właściwościami używanymi przez algorytm wyszukiwania odbiorców do znajdowania odbiorców. Jednak partnerzy mogą dodawać niestandardowe właściwości jako skróty wyszukiwania. Aby dodać niestandardowe właściwości jako skróty wyszukiwania, administrator systemu musi poszerzyć rozszerzalny element stałotekstowy (enum) używany w kryteriach wyszukiwania odbiorców, a następnie oznaczyć niestandardowe właściwości dostarczone przez partnera jako skróty. Partnerzy są odpowiedzialni za napisanie kodu zapewniającego znajdowanie wyników, gdy ich niestandardowe skróty są używane do wyszukiwania.
+
+> [!NOTE]
+> Niestandardowa właściwość dodana do elementu stałotekstowego nie wpływa na standardowy algorytm wyszukiwania odbiorców. Innymi słowy algorytm wyszukiwania odbiorców nie wyszukuje w niestandardowej właściwości. Użytkownicy mogą stosować niestandardową właściwość do wyszukiwania tylko wtedy, gdy jest ona dodana jako skrót albo gdy domyślny algorytm wyszukiwania zostanie zastąpiony.
 

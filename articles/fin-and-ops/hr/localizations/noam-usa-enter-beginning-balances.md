@@ -18,29 +18,29 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 27c03f7bd61ee7d4cb1d01f04af2f1821e9988e1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93333757995c874c2cf03514acff28a54ae7f787
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="enter-payroll-beginning-balances"></a>Wprowadzanie sald początkowych listy płac
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 W tym temacie opisano kroki wprowadzania sald początkowych dla kodów zarobków, potrąceń, świadczeń i podatków. Informacje te są przydatne dla partnerów, którzy chcą przenieść dane do nowej implementacji modułu Lista płac z innego systemu. W ramach przygotowania do wprowadzenia sald początkowych listy płac weryfikujemy następujące informacje:
 
 > * Rekordy pracowników etatowych są wprowadzone i dostępne w systemie
 > * Następujące dane są skonfigurowane i przypisane do pracowników:
-
+> 
 > > * Cykle płac i okresy płac
 > > * Kody zarobków
 > > * Podatki
 > > * Świadczenia i potrącenia
-
+> 
 > * Firma powinna mieć wybraną datę, od kiedy można ustawiać salda początkowe listy płac.
-
+> 
 > * Ze starszych systemów zebrano informacje o wszystkich zarobkach, świadczeniach/potrąceniach, wpłatach składek na świadczenia, podatkach pracowników i podatkach pracodawców oraz ich kwotach od początku roku.
 
 Planując wprowadzenie sald początkowych, należy wziąć pod uwagę wymagany stopień szczegółowości danych. Większość firm wprowadza pojedyncze, skonsolidowane wartości od początku roku. Jednak jeśli są potrzebne bardziej szczegółowe informacje, salda można wprowadzić w przyrostach kwartalnych. Decyzja o potrzebnym poziomie szczegółów określi, ile ręcznych sprawozdań o wynagrodzeniach należy utworzyć dla każdego pracownika. Dla jednej kwoty od początku roku jest wymagane tylko jedno ręczne sprawozdanie dla każdego pracownika. W tym celu należy użyć kwot od początku z końcowego sprawozdania o wynagrodzeniach z poprzedniego systemu jako kwoty wprowadzonej w nowym systemie listy płac.
@@ -128,22 +128,22 @@ Po wygenerowaniu sprawozdań o wynagrodzeniach mających salda początkowe nale�
 
 4. Otwórz kartę **Potrącenia dot. świadczenia** i wprowadź następujące informacje:
 
-| Pole                           | Wartość            |
-|---------------------------------|------------------|
-| Świadczenie                         | Kwota potrącenia |
-| 401K | Uczestnictwo              | 3000.00          |
-| Stomatologia | SubSp                  | 495.00           |
-| Wydatki na opiekę szpitalną | Uczestnictwo | 2500.00          |
-| Okulistyka | SupSp                  | 500.00           |
+|       Pole       |      Wartość       |
+|-------------------|------------------|
+|      Świadczenie      | Kwota potrącenia |
+|       401K        |   Uczestnictwo    |
+|      Stomatologia       |      SubSp       |
+| Wydatki na opiekę szpitalną |   Uczestnictwo    |
+|      Okulistyka       |      SupSp       |
 
 5. Na karcie **Udziały w świadczeniu** i wprowadź następujące informacje:
 
-| Pole              | Wartość               |
-|--------------------|---------------------|
-| Świadczenie            | Kwota udziału |
-| 401K | Uczestnictwo | 3000,00             |
-| Stomatologia | SubSp     | 495.00              |
-| Okulistyka | SubSp     | 500.00              |
+|  Pole  |        Wartość        |
+|---------|---------------------|
+| Świadczenie | Kwota udziału |
+|  401K   |     Uczestnictwo     |
+| Stomatologia  |        SubSp        |
+| Okulistyka  |        SubSp        |
 
 6. Na karcie **Potrącenia podatku** wprowadź następujące informacje:
 
@@ -156,8 +156,8 @@ Po wygenerowaniu sprawozdań o wynagrodzeniach mających salda początkowe nale�
 7. Na karcie **Udziały w podatku** wprowadź następujące informacje:
 
 8. Kliknij przycisk **Oblicz**.
-> [!IMPORTANT] 
-> Sprawdź, czy sumy w sprawozdaniu o wynagrodzeniach dla pracownika są zgodne z wartościami od początku roku w starszym systemie. Warto się wstrzymać z finalizowaniem w następnym kroku i przeprowadzić ogólne całościowe sprawdzanie poprawności wszystkich sprawozdań o wynagrodzeniach. Po zakończeniu sprawdzania poprawności przejdź przez wszystkie sprawozdania o wynagrodzeniach i je sfinalizuj.
+   > [!IMPORTANT] 
+   > Sprawdź, czy sumy w sprawozdaniu o wynagrodzeniach dla pracownika są zgodne z wartościami od początku roku w starszym systemie. Warto się wstrzymać z finalizowaniem w następnym kroku i przeprowadzić ogólne całościowe sprawdzanie poprawności wszystkich sprawozdań o wynagrodzeniach. Po zakończeniu sprawdzania poprawności przejdź przez wszystkie sprawozdania o wynagrodzeniach i je sfinalizuj.
 
 W razie potrzeby ten sam proces można wykonać w przyrostach kwartalnych dla wszystkich poprzednich kwartałów w każdym roku. Jest to potrzebne tylko wtedy, gdy odbiorca chce widzieć dane z podziałem na kwartały bez wracania do starego systemu.
 

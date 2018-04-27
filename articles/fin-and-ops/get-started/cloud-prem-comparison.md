@@ -18,16 +18,16 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: cd267f6e5623bd83bfbd21a49a72dd216259167a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 911996f9d1854f027f5085725538bd87ba307c25
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cloud-and-on-premises-feature-comparison"></a>Porównanie funkcji w chmurze i lokalnych
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie określono, czy dana funkcja jest dostępna w tych produktach:
 
@@ -51,7 +51,7 @@ W poniższej tabeli wymieniono zakresy produktów. Obsługa w chmurze i lokalnie
 | | Rozszerzenie oparte na konfiguracji| Tak | Nr |
 | | Eksport danych do własnego magazynu danych| Tak | Tak |
 | | Włączenie eksportu aktualizacji przyrostowych do jednostki danych | Tak | Nr |
-| | Integracje cykliczne                 |Tak | Nr|
+| | Integracje danych                 |Tak | Tak|
 | Zarządzanie dokumentami| | Tak| Tak |
 | Zarządzanie finansami|  | Tak | Tak |
 | Pomoc| | Tak | Nr |

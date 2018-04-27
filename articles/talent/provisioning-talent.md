@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ba1a3a78d59f3aec91473ba9bb20bda4804ec92e
-ms.openlocfilehash: 0a43f5ff0987ede9f0cb80e5b4854f78e19e329b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Inicjowanie oprogramowania Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Ten temat przeprowadzi użytkownika przez proces inicjacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 for Talent. Temat te opiera się na założeniu, że użytkownik dokonał zakupu aplikacji Talent u dostawcy rozwiązań chmurowych (CSP) lub w ramach umowy na architekturę przedsiębiorstwa (EA). Jeśli masz już licencję na oprogramowanie Microsoft Dynamics 365 uwzględniającą plan aplikacji Talent, a nie jesteś w stanie wykonać kroków opisanych w tym temacie, skontaktuj się z pomocą techniczną.
 
@@ -79,12 +79,12 @@ Przy ustalaniu, w którym środowisku usługi PowerApps wdrożyć moduł Talent,
  
     **Środowiska usługi CDS w wersji 2.0** Usługa CDS w wersji 2.0 zostanie udostępniona publicznie 21 marca 2018 roku, jednak aplikacja Talent jeszcze nie obsługuje tej wersji. Chociaż można wyświetlać i tworzyć bazy danych w wersji CDS 2.0 w centrum administracyjnym usługi PowerApps, będą one bezużyteczne w aplikacji Talent. Opcja używania środowisk usługi CDS 2.0 we wdrożeniach modułu Talent będzie dostępna w przyszłości.
    
- > [!Note]
- > Aby rozróżnić między środowiskami usługi CDS w wersjach 1.0 i 2.0 w portalu administracyjnego, zaznacz środowisko i przyjrzyj się sekcji **Szczegóły**. Wszystkie środowiska w wersji CDS 2.0 mają dopisek „Tymi ustawieniami można zarządzać w centrum administracyjnym usługi Dynamics 365”, wskazują wersję wystąpienia i nie mają karty Baza danych. 
+   > [!Note]
+   > Aby rozróżnić między środowiskami usługi CDS w wersjach 1.0 i 2.0 w portalu administracyjnego, zaznacz środowisko i przyjrzyj się sekcji **Szczegóły**. Wszystkie środowiska w wersji CDS 2.0 mają dopisek „Tymi ustawieniami można zarządzać w centrum administracyjnym usługi Dynamics 365”, wskazują wersję wystąpienia i nie mają karty Baza danych. 
  
    **Domyślnie środowiska usługi PowerApps** Mimo że każda dzierżawa ma automatycznie włączoną obsługę w domyślnym środowisku usługi PowerApps, nie zalecamy używania tego środowiska w połączeniu z aplikacją Talent, ponieważ wszyscy użytkownicy dzierżawy mają dostęp do środowiska usługi PowerApps i mogą przypadkowo uszkodzić dane produkcyjne podczas testowania i eksplorowania integracji z usługami PowerApps lub Flow.
    
-   **Środowiska testowe** Środowiska z nazwą taką jak „TestDrive — alias@domain” są tworzone z 60-dniowym okresem ważności. Po tym czasie przestają działać, co powoduje automatycznie usunięcie środowiska.
+   <strong>Środowiska testowe</strong> Środowiska z nazwą taką jak „TestDrive — alias@domain” są tworzone z 60-dniowym okresem ważności. Po tym czasie przestają działać, co powoduje automatycznie usunięcie środowiska.
    
    **Nieobsługiwana regiony** Obecnie aplikacja Talent jest obsługiwana tylko w następujących regionach: Stany Zjednoczone, Europa i Australia.
   
@@ -115,7 +115,7 @@ Wykonaj poniższe instrukcje, aby uruchomić skrypt:
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
-   W miejsce **EnvironmentName** wpisz nazwę swojego środowiska. Ta nazwa będzie wyświetlana w usłudze LCS i widziana przez użytkowników podczas wybierania środowiska, które ma być stosowane dla aplikacji Talent. 
+   W miejsce **MyNewEnvironment** wpisz nazwę swojego środowiska. Ta nazwa będzie wyświetlana w usłudze LCS i widziana przez użytkowników podczas wybierania środowiska, które ma być stosowane dla aplikacji Talent. 
 
    W miejsce **YourLocation** wpisz jeden z obsługiwanych regionów aplikacji Talent: unitedsates, europe, australia. 
 

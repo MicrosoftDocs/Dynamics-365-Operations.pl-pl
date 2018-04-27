@@ -20,18 +20,18 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69876a9d1daec4e6980728527c784a5404239cc2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ec7f1ef643d864a2729642d78d19fc43d5f6a7fb
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Średnia ważona z wartością fizyczną i oznaczeniami
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Średnia ważona jest modelem magazynowym opierającym się na zasadzie średniej ważonej, gdzie rozchody magazynowe są szacowane na podstawie średniej wartości towarów przyjętych do magazynu podczas okresu zamykania magazynu plus dostępnych zapasów z poprzedniego okresu.
 
@@ -74,16 +74,16 @@ Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu 
 ![Średnia ważona — rozrachunek bezpośredni bez uwzględniania wartości fizycznej](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
--   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
--   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
--   Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
--   Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
--   Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
--   Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
--   Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
--   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
--   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą Zamknięcie magazynu.
--   Rozliczenia, które zostały przeprowadzone do zamknięcia magazynu są przedstawione jako czerwone kropkowane strzałki, biegnące po skosie od przychodu do rozchodu.
+- Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
+- Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
+- Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
+- Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
+- Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
+- Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+- Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą Zamknięcie magazynu.
+- Rozliczenia, które zostały przeprowadzone do zamknięcia magazynu są przedstawione jako czerwone kropkowane strzałki, biegnące po skosie od przychodu do rozchodu.
 
 ## <a name="weighted-average-summarized-settlement-without-the-include-physical-value-option"></a>Sumaryczne rozliczenie średniej ważonej bez opcji Włącz wartość fizyczną
 Średnia ważona opiera się na zasadzie, że wszystkie przyjęcia w granicach okresu zamknięcia są sumowane do nowej transakcji zwanej średnią ważoną zamknięcia zapasów. Wszystkie przychody dla danego okresu będą rozliczone z rozchodami nowo utworzonej transakcji transferu magazynowego. Wszystkie rozchody dla danego okresu będą rozliczone z przychodem nowej transakcji transferu magazynowego. Jeśli po zamknięciu magazynu wartość dostępnych zapasów jest dodatnia, poszczególne pozycje zapasów i ich wartość są zestawiane w ramach nowej transakcji przeniesienia magazynowego (przychód). Jeśli po zamknięciu magazynu wartość dostępnych zapasów jest ujemna, wartość zapasów jest sumą poszczególnych rozchodów, które nie zostały w pełni rozliczone. W poniższym scenariuszu zostało zaksięgowanych kilka finansowo zaktualizowanych przychodów i rozchodów. 
@@ -108,18 +108,18 @@ Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu 
 ![Średnia ważona — rozrachunek sumaryczny bez uwzględniania wartości fizycznej](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
--   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
--   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
--   Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
--   Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
--   Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
--   Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
--   Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
--   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
--   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą Zamknięcie magazynu.
--   Rozliczenia, które zostały przeprowadzone do zamknięcia magazynu są przedstawione jako czerwone kropkowane strzałki, biegnące po skosie od przychodu do rozchodu.
--   Czerwone strzałki oznaczają transakcje przychodu rozliczane z transakcji rozchodu utworzoną przez system.
--   Zielona strzałka reprezentuje przesunięcie transakcji przychodu wygenerowanej przez system, z którą rozliczona jest początkowo zaksięgowana transakcja rozchodu.
+- Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
+- Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
+- Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
+- Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
+- Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
+- Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+- Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą Zamknięcie magazynu.
+- Rozliczenia, które zostały przeprowadzone do zamknięcia magazynu są przedstawione jako czerwone kropkowane strzałki, biegnące po skosie od przychodu do rozchodu.
+- Czerwone strzałki oznaczają transakcje przychodu rozliczane z transakcji rozchodu utworzoną przez system.
+- Zielona strzałka reprezentuje przesunięcie transakcji przychodu wygenerowanej przez system, z którą rozliczona jest początkowo zaksięgowana transakcja rozchodu.
 
 ## <a name="weighted-average-direct-settlement-with-the-include-physical-value-option"></a>Bezpośrednie rozliczenie średniej ważonej z opcją Włącz wartość fizyczną
 Parametr Włącz wartość fizyczną działa w inny sposób w modelu magazynowym średniej ważonej niż w poprzednich wersjach systemu. W formularzu Grupa modeli pozycji zaznacz dla towaru pole wyboru Włącz wartość fizyczną. Wtedy system będzie używał fizycznie zaktualizowanych przyjęć podczas obliczania szacowanego kosztu własnego (średniej kroczącej). W danym okresie rozchody będą księgowane według takiego szacowanego kosztu własnego. Podczas zamykania magazynu finansowo zaktualizowane przychody będą uwzględniane tylko w obliczeniach średniej ważonej. Zaleca się comiesięczne zamykanie magazynu w przypadku stosowania modelu magazynowego średniej ważonej. W tym przykładzie rozliczenie bezpośrednie średniej ważonej jest oznaczone i zawiera wartość fizyczną. 
@@ -137,16 +137,16 @@ Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu 
 ![Średnia ważona — rozrachunek bezpośredni z uwzględnianiem wartości fizycznej](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
--   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
--   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
--   Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
--   Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
--   Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
--   Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
--   Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
--   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
--   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą Zamknięcie magazynu.
--   Rozliczenia, które zostały przeprowadzone do zamknięcia magazynu są przedstawione jako czerwone kropkowane strzałki, biegnące po skosie od przychodu do rozchodu.
+- Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
+- Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
+- Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
+- Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
+- Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
+- Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+- Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą Zamknięcie magazynu.
+- Rozliczenia, które zostały przeprowadzone do zamknięcia magazynu są przedstawione jako czerwone kropkowane strzałki, biegnące po skosie od przychodu do rozchodu.
 
 ## <a name="weighted-average-summarized-settlement-with-the-include-physical-value-option"></a>Sumaryczne rozliczenie średniej ważonej z opcją Włącz wartość fizyczną
 Parametr Włącz wartość fizyczną działa w inny sposób dla średniej ważonej niż w starszych wersjach. Zaznacz pole Włącz wartość fizyczną dla towaru na stronie Grupa modeli pozycji. Wtedy system będzie używał fizycznie zaktualizowanych przyjęć podczas obliczania szacowanego kosztu własnego (średniej kroczącej). Rozchody będą księgowane na podstawie szacowanego kosztu własnego podczas tego okresu. Podczas zamykania magazynu finansowo zaktualizowane przychody będąuwzględniane tylko w obliczeniu średniej ważonej. Zaleca się comiesięczne zamykanie magazynu w przypadku stosowania modelu magazynowego średniej ważonej. W tym przykładzie rozliczenia sumarycznego średniej ważonej model magazynowy jest oznaczony i zawiera wartość fizyczną. 
@@ -170,18 +170,18 @@ Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu 
 ![Średnia ważona — rozrachunek sumaryczny z uwzględnianiem wartości fizycznej](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
--   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
--   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
--   Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
--   Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
--   Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
--   Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
--   Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
--   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład 1a. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
--   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą Zamknięcie magazynu.
--   Rozliczenia, które zostały przeprowadzone do zamknięcia magazynu są przedstawione jako czerwone kropkowane strzałki, biegnące po skosie od przychodu do rozchodu.
--   Czerwone strzałki oznaczają transakcje przychodu rozliczane z transakcji rozchodu utworzoną przez system.
--   Zielona strzałka reprezentuje przesunięcie transakcji przychodu wygenerowanej przez system, z którym rozliczona jest początkowo zaksięgowana transakcja rozchodu.
+- Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
+- Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
+- Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
+- Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
+- Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
+- Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład 1a. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+- Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą Zamknięcie magazynu.
+- Rozliczenia, które zostały przeprowadzone do zamknięcia magazynu są przedstawione jako czerwone kropkowane strzałki, biegnące po skosie od przychodu do rozchodu.
+- Czerwone strzałki oznaczają transakcje przychodu rozliczane z transakcji rozchodu utworzoną przez system.
+- Zielona strzałka reprezentuje przesunięcie transakcji przychodu wygenerowanej przez system, z którym rozliczona jest początkowo zaksięgowana transakcja rozchodu.
 
 ## <a name="weighted-average-with-marking"></a>Średnia ważona z oznaczeniem
 Oznaczanie to proces, który pozwala połączyć (oznaczyć) transakcję wydania z transakcją przyjęcia. Może to mieć miejsce zarówno przed, jak i po zaksięgowaniu transakcji. Procesu tego można użyć po to, aby sprawdzić dokładny koszt zapasów w momencie księgowania transakcji lub zamknięcia magazynu. 
@@ -218,16 +218,16 @@ Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu 
 ![Średnia ważona z oznaczaniem](./media/weightedaveragewithmarking.gif) 
 
 **Objaśnienie wykresu**
--   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
--   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
--   Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
--   Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
--   Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
--   Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
--   Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
--   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
--   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą Zamknięcie magazynu.
--   Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci czerwonych linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
+- Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
+- Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
+- Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie ilość@@"Unitprice".
+- Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
+- Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
+- Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
+- Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+- Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą Zamknięcie magazynu.
+- Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci czerwonych linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
 
 
 

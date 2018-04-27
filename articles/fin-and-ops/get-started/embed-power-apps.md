@@ -3,7 +3,7 @@ title: Osadzanie aplikacji PowerApp
 description: "W tym temacie opisano sposób osadzania aplikacji PowerApp na kliencie rozwiązania Finance and Operations w celu rozszerzenia funkcjonalności produktu."
 author: jasongre
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 04/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,20 +16,24 @@ ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 0fd0b1e5f94e39455b3c0799c89eea5a59444ad7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 07224faabcf2b183d4c8da0ba4588c33ec140d03
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="embed-powerapps"></a>Osadzanie aplikacji PowerApp
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
-W aktualizacji platformy 14 program Microsoft Dynamics 365 for Finance and Operations obsługuje integrację z Microsoft PowerApps — usługą dla deweloperów i użytkowników nietechnicznych, która umożliwia tworzenie niestandardowych aplikacji biznesowych dla urządzeń przenośnych, tabletów i sieci web bez pisania kodu. Aplikacje PowerApp opracowane przez użytkownika, organizację lub członków szerszego ekosystemu można następnie osadzać w kliencie rozwiązania Finance and Operations w celu rozszerzenia funkcjonalności produktu. Na przykład można utworzyć aplikację PowerApp w celu uzupełniania programu Finance and Operations o informacje pobrane z innego systemu.  
+W aktualizacji platformy 14 program Microsoft Dynamics 365 for Finance and Operations obsługuje integrację z Microsoft PowerApps — usługą dla deweloperów i użytkowników nietechnicznych, która umożliwia tworzenie niestandardowych aplikacji biznesowych dla urządzeń przenośnych, tabletów i sieci web bez pisania kodu. Aplikacje PowerApp opracowane przez użytkownika, organizację lub członków szerszego ekosystemu można następnie osadzać w kliencie rozwiązania Finance and Operations w celu rozszerzenia funkcjonalności produktu. Na przykład można utworzyć aplikację PowerApp w celu uzupełniania programu Finance and Operations o informacje pobrane z innego systemu. 
+
+Aby uzyskać więcej informacji o osadzaniu aplikacji PowerApp, obejrzyj krótki film [Jak osadzać aplikacje PowerApp w programie Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY).
+
+> [!Video https://www.youtube.com/embed/x3qyA1bH-NY]
 
 ## <a name="adding-an-embedded-powerapp-to-a-page"></a>Dodawanie osadzonej aplikacji PowerApp do strony
 ### <a name="overview"></a>Przegląd

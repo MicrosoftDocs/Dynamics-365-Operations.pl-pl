@@ -17,16 +17,16 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 2b3a384a3b9be686b10ce1f181664b0b9bbe9969
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 22f766b780d10d4fc615660990729f008007787a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expense-management-parameters"></a>Parametry zarządzania wydatkami
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 -----------------------------
 
@@ -87,9 +87,10 @@ Parametry kontrolują ogólne zachowanie w module Zarządzanie wydatkami.
 
 ### <a name="anti-corruption"></a>Zapobieganie korupcji
 
-| **Pole**                             | **Opis**      |
-|---------------------------------------|------------------------------------------------------------------------|
-|**Wyświetl atestację antykorupcyjną**   | Zaznacz tę opcję, aby wyświetlać tekst klauzuli antykorupcyjnej podczas tworzenia nowego raportu z wydatków. Następnie można włączyć określone kategorie kosztów, dla których w raporcie z wydatków trzeba będzie wybrać świadectwo antykorupcyjne. Na przykład kategoria upominków związana z wydatkiem na rzecz urzędnika może wymagać, aby pracownik potwierdził, że wydatek jest zgodny z firmową zasadą dotyczącą urzędników. |
-|**Komunikat dla osoby przesyłającej dotyczący zapobiegania korupcji** | Wprowadź tekst, który będzie wyświetlany pracownikowi podczas tworzenia nowego raportu z wydatków. Kliknij przycisk **Tłumaczenia**, aby wprowadzić konkretny tekst, który będzie wyświetlany na podstawie ustawionego języka użytkownika.         |
-|**Komunikat dla osoby zatwierdzającej dotyczący zapobiegania korupcji**  | Wprowadź tekst, który będzie wyświetlany osobie zatwierdzającej podczas tworzenia nowego raportu z wydatków. Kliknij przycisk **Tłumaczenia**, aby wprowadzić konkretny tekst, który będzie wyświetlany na podstawie ustawionego języka użytkownika.        |
+|                 <strong>Pole</strong>                 |                                                                                                                                                                                            <strong>Opis</strong>                                                                                                                                                                                             |
+|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Wyświetl atestację antykorupcyjną</strong>  | Zaznacz tę opcję, aby wyświetlać tekst klauzuli antykorupcyjnej podczas tworzenia nowego raportu z wydatków. Następnie można włączyć określone kategorie kosztów, dla których w raporcie z wydatków trzeba będzie wybrać świadectwo antykorupcyjne. Na przykład kategoria upominków związana z wydatkiem na rzecz urzędnika może wymagać, aby pracownik potwierdził, że wydatek jest zgodny z firmową zasadą dotyczącą urzędników. |
+| <strong>Komunikat dla osoby przesyłającej dotyczący zapobiegania korupcji</strong> |                                                                                             Wprowadź tekst, który będzie wyświetlany pracownikowi podczas tworzenia nowego raportu z wydatków. Kliknij przycisk <strong>Tłumaczenia</strong>, aby wprowadzić konkretny tekst, który będzie wyświetlany na podstawie ustawionego języka użytkownika.                                                                                             |
+| <strong>Komunikat dla osoby zatwierdzającej dotyczący zapobiegania korupcji</strong>  |                                                                                             Wprowadź tekst, który będzie wyświetlany osobie zatwierdzającej podczas tworzenia nowego raportu z wydatków. Kliknij przycisk <strong>Tłumaczenia</strong>, aby wprowadzić konkretny tekst, który będzie wyświetlany na podstawie ustawionego języka użytkownika.                                                                                             |
+
 

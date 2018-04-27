@@ -19,17 +19,16 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1bbd9230219f11407bc7afbd59670c6287b77c02
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 10015952773ce0ae6ab36912df636919b572704d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="posting-definition-examples"></a>Szablony definicji księgowania
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera przykłady pokazujące, jak definicje księgowania są używane dla przyszłych zobowiązań wiążących w zamówieniach zakupu i dla asygnat budżetu.
 
@@ -53,11 +52,11 @@ Wszystkie transakcje załącznika dla przyszłych zobowiązań wiążących z za
 
 ### <a name="posting-definition--match-criteria"></a>Definicja księgowania — kryteria uzgadniania
 
-| Struktura konta       | Dopasuj numer konta | Priorytet |
+| Struktura konta       | Dopasuj numer konta | Priorytet  |
 |-------------------------|----------------------|----------|
 | Struktura konta — zyski i straty | \*                   | 1        |
 
-*Pusta wartość w polu **Dopasuj numer konta** oznacza, że wszystkie pasujące konta w definiowanej strukturze konta są częścią reguły uzgadniania.
+<em>Pusta wartość w polu **Dopasuj numer konta oznacza</em>*, że wszystkie pasujące konta w definiowanej strukturze konta są częścią reguły uzgadniania.
 
 ### <a name="posting-definition--generated-entries"></a>Definicja księgowania — wygenerowane zapisy
 
@@ -94,11 +93,11 @@ Jeśli asygnaty budżetu i definicje księgowania są włączone, wpisy do rejes
 
 ### <a name="posting-definition--match-criteria"></a>Definicja księgowania — kryteria uzgadniania
 
-| Struktura konta       | Dopasuj numer konta | Priorytet |
+| Struktura konta       | Dopasuj numer konta | Priorytet  |
 |-------------------------|----------------------|----------|
 | Struktura konta — zyski i straty | \*                   | 1        |
 
-*Pusta wartość w polu **Dopasuj numer konta** oznacza, że wszystkie pasujące konta w definiowanej strukturze konta są częścią reguły uzgadniania.
+<em>Pusta wartość w polu **Dopasuj numer konta oznacza</em>*, że wszystkie pasujące konta w definiowanej strukturze konta są częścią reguły uzgadniania.
 
 ### <a name="posting-definition--generated-entries"></a>Definicja księgowania — wygenerowane zapisy
 

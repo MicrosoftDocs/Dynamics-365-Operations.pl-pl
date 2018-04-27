@@ -17,18 +17,18 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 1f0b5ff383c8bb2d1ac892ef771e15f0afec2655
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad9373faa19761cccca2b5d581de05f0ac9dd165
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="alerts-overview"></a>Ogólne informacje o alertach
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a>Alerty — informacje
 Alerty stanowią system powiadamiania o zdarzeniach krytycznych w programie Microsoft Dynamics 365 for Finance and Operations. Alerty pozwalają na bieżąco uzyskiwać informacje o zdarzeniach, które chcesz śledzić podczas dnia pracy. Można łatwo utworzyć własny zbiór reguł alertów dotyczących zaległych dostaw, usuniętych zamówień, zmian cen oraz innych zdarzeń, na które należy reagować.
@@ -71,4 +71,7 @@ Reguła alertu ma pięć składników:
 
     > [!NOTE]
     > Dostęp do tej opcji mają tylko administratorzy organizacji.
+
+## <a name="email-notifications-from-alerts"></a>Powiadomienia pocztą e-mail z alertów
+Funkcja powiadomień pocztą e-mail z alertów nie jest jeszcze obsługiwana. Zostanie wprowadzona w jednej z przyszłych aktualizacji.
 

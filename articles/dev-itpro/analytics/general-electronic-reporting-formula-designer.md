@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: adbbb36da2bc1e9a2211c703823370571105ecab
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer-in-electronic-reporting"></a>Projektant formuł w Raportowaniu elektronicznym
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak używać projektanta formuł w raportowaniu elektronicznym (ER). Podczas projektowania formatu dla określonego dokumentu elektronicznego w module raportowania elektronicznego można używać formuł w celu przekształcania danych, tak aby spełniały one wymagania dotyczące wypełniania i formatowania tego dokumentu. Te formuły przypominają formuły w programie Microsoft Excel. W formułach obsługiwane są różne typy funkcji: tekstu, daty i godziny, matematyczne, logiczne, informacyjne, konwersji typów danych i inne (specyficzne dla domeny biznesowej).
 
@@ -313,12 +313,12 @@ W poniższych tabelach opisano funkcje edycji danych, które mogą służyć do 
 <tr class="odd">
 <td>ORDERBY (lista [, wyrażenie 1, wyrażenie 2, …])</td>
 <td>Zwracanie określonej listy po jej posortowaniu zgodnie z podanymi argumentami. Te argumenty można zdefiniować jako wyrażenia.</td>
-<td>Jeśli <strong>Vendor</strong> jest skonfigurowany jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, funkcja <strong>ORDERBY (Vendors, Vendors.'name()')</strong> zwraca listę dostawców posortowaną według nazw w porządku rosnącym.</td>
+<td>Jeśli <strong>Vendor</strong> jest skonfigurowany jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, funkcja <strong>ORDERBY (Vendors, Vendors.&#39;name()&#39;)</strong> zwraca listę dostawców posortowaną według nazw w porządku rosnącym.</td>
 </tr>
 <tr class="even">
 <td>REVERSE (lista)</td>
 <td>Zwracanie określonej listy w odwrotnym porządku sortowania.</td>
-<td>Jeśli <strong>Vendor</strong> jest skonfigurowane jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, funkcja <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> zwraca listę dostawców posortowaną według nazw w porządku malejącym.</td>
+<td>Jeśli <strong>Vendor</strong> jest skonfigurowane jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, funkcja <strong>REVERSE (ORDERBY (Vendors, Vendors.&#39;name()&#39;)) )</strong> zwraca listę dostawców posortowaną według nazw w porządku malejącym.</td>
 </tr>
 <tr class="odd">
 <td>WHERE (lista, warunek)</td>
@@ -395,7 +395,9 @@ W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykiet�
 <tr class="even">
 <td>STRINGJOIN (lista, nazwa pola, separator)</td>
 <td>Zwracanie ciągu zawierającego połączone wartości z określonego pola na wybranej liście. Wartości są rozdzielone wybranym separatorem.</td>
-<td>Jeśli jako źródło danych (DS) wpiszesz <strong>SPLIT(&quot;abc&quot; , 1)</strong>, wyrażenie <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> zwraca wartość <strong>&quot;a:b:c&quot;</strong>.</td>
+
+<td>Jeśli jako źródło danych (DS) wpiszesz <strong>SPLIT(&quot;abc&quot; , 1)</strong>, wyrażenie <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> zwraca wartość <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong>.</td>
+
 </tr>
 <tr class="odd">
 <td>SPLITLISTBYLIMIT (lista, wartość limitu, źródło limitu)</td>
@@ -416,7 +418,7 @@ Limit nie obowiązuje do ostatniej pozycji oryginalnej listy, ponieważ wartoś�
 <tr class="even">
 <td>FILTER (lista, warunek)</td>
 <td>Zwracanie określonej listy po zmodyfikowaniu zapytania w celu wyfiltrowania według podanego warunku. Ta funkcja różni się od funkcji <strong>WHERE</strong>, ponieważ podany warunek jest stosowany do każdego źródła danych ER o typie <strong>Rekordy tabeli</strong> na poziomie bazy danych. Listę i warunek można zdefiniować przy użyciu tabel i relacji.</td>
-  <td>Jeśli <strong>Vendor</strong> jest skonfigurowane jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, funkcja <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> zwraca listę wyłącznie dostawców należących do grupy dostawców 40. Jeśli <strong>Vendor</strong> jest skonfigurowane jako źródło danych ER odwołujące się do tabeli <strong>VendTable</strong>, a element <strong>parmVendorBankGroup</strong> skonfigurowany jako źródło danych ER zwraca wartość będącą ciągiem tekstowym, to funkcja <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> zwraca listę tylko kont dostawców należących do określonej grupy bankowej.</td>
+  <td>Jeśli <strong>Vendor</strong> jest skonfigurowane jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, funkcja <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> zwraca listę wyłącznie dostawców należących do grupy dostawców 40. Jeśli <strong>Vendor</strong> jest skonfigurowane jako źródło danych ER odwołujące się do tabeli <strong>VendTable</strong>, a element <strong>parmVendorBankGroup</strong> skonfigurowany jako źródło danych ER zwraca wartość będącą ciągiem tekstowym, to funkcja <strong>FILTER (Vendor.&#39;&lt;Relations&#39;.VendBankAccount, Vendor.&#39;&lt;Relations&#39;.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> zwraca listę tylko kont dostawców należących do określonej grupy bankowej.</td>
 </tr>
 </tbody>
 </table>
@@ -553,7 +555,7 @@ Wyrażenie <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> również zwra
 <li>Etykieta SYS18389 programu Finance and Operations, która ma następujący tekst:
 <ul>
 <li><strong>W języku polskim:</strong> &quot;Odbiorca %1 jest zablokowany do %2.&quot;</li>
-<li><strong>W języku niemieckim:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
+<li><strong>W języku niemieckim:</strong> &quot;Debitor &#39;%1&#39; wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Poniżej przedstawiono formułę, którą można zaprojektować:</p>
@@ -561,7 +563,7 @@ Wyrażenie <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> również zwra
 <p>Jeśli raport jest przetwarzany dla odbiorcy <strong>Litware Retail</strong> w dniu 17 grudnia 2015 r. w kulturze <strong>PL</strong> i języku <strong>PL</strong>, formuła zwraca następujący tekst, który może być prezentowany jako komunikat o wyjątku dla użytkownika:</p>
 <p>&quot;Nie ma nic do wydrukowania. Odbiorca Litware Retail jest zablokowany do 17.12.2015.&quot;</p>
 <p>Jeśli ten sam raport będzie przetwarzany dla odbiorcy <strong>Litware Retail</strong> w dniu 17 grudnia 2015 w języku <strong>DE</strong> i kulturze <strong>DE</strong>, formuła zwraca następujący tekst:</p>
-<p>&quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
+<p>&quot;Nichts zu drucken. Debitor &#39;Litware Retail&#39; wird für 17.12.2015 gesperrt.&quot;</p>
 <blockquote>[!NOTE]<br>
 W formułach raportowania elektronicznego dla etykiet jest stosowana następująca składnia:
 <ul>

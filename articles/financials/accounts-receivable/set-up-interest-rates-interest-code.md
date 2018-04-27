@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7ae0bfdc157a7e2e5b9f871dae487a6f85e889b9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c0e80bae4716d2b12f515f38d3b641de24680571
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Konfigurowanie stopy procentowej dla kodu odsetek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kody odsetek zawierają ustawienia określające, kiedy i jak i odsetki obciążają i jak są obliczane na kontach zaległych.
 
@@ -47,17 +46,17 @@ Przy naliczaniu odsetek przy użyciu kodu odsetek jest tworzona oddzielna nota o
 ## <a name="interest-rates-based-on-a-percentage"></a>Stopy odsetkowe oparte na procencie
 Istnieje możliwość konfigurowania stóp odsetek, które są obliczane według określonych odsetek.
 
--   Kwota odsetek ma zastosowanie do wszystkich walut.
--   Można wprowadzić opcjonalne limity kwot odsetek.
--   Opcja **Procent** jest wybrana** **w polu **Podstawa naliczania odsetek** na stronie **Skonfiguruj kody odsetek**.
+- Kwota odsetek ma zastosowanie do wszystkich walut.
+- Można wprowadzić opcjonalne limity kwot odsetek.
+- Opcja <strong>Procent</strong> jest wybrana** <strong>w polu **Podstawa naliczania odsetek</strong> na stronie <strong>Skonfiguruj kody odsetek</strong>.
 
 Na przykład aby ustawić kod odsetek, który ma stosować oprocentowanie 5 co dwa miesiące, gdy transakcja płatności faktury przekroczy termin płatności, wprowadź 2 w polu **Obliczaj odsetki co** i wybierz opcję **Miesiąc**.
 
 ## <a name="interest-rates-based-on-amounts"></a>Stopy odsetek oparte na kwotach
 Można skonfigurować stopy procentowe, które obliczają określoną kwotę w walucie.
--   Kwotę odsetek określa się dla każdej waluty w kodzie odsetek.
--   Można wprowadzić opcjonalne limity kwot odsetek.
--   Opcja **Kwota** jest wybrana w polu **Podstawa naliczania odsetek** na stronie **Skonfiguruj kody odsetek**.
+- Kwotę odsetek określa się dla każdej waluty w kodzie odsetek.
+- Można wprowadzić opcjonalne limity kwot odsetek.
+- Opcja <strong>Kwota** jest wybrana w polu **Podstawa naliczania odsetek</strong> na stronie <strong>Skonfiguruj kody odsetek</strong>.
 
 Na przykład aby ustawić kod odsetek, który ma stosować oprocentowanie 25,00 co 20 dni, gdy transakcja płatności faktury przekroczy termin płatności, wprowadź 20 w polu **Obliczaj odsetki co** oraz wybierz opcję **Dzień**.
 
@@ -84,7 +83,7 @@ Utworzono zakres informacji w następujący sposób.
 | 1,001          | 2                  |
 | 5,001          | 3                  |
 
- 
+
 ## <a name="example-2-interest-by-range--days"></a>Przykład 2: Odsetki według zakupu = dni
 --------------------------------------------------
 
@@ -105,7 +104,7 @@ Utworzono zakres informacji w następujący sposób.
 | 61             | 15                 |
 | 91             | 20                 |
 
- 
+
 ## <a name="example-3-interest-by-range--months"></a>Przykład 3: Odsetki według zakupu = miesiące
 ----------------------------------------------------
 

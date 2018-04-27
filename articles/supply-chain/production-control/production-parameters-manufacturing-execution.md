@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 468227e40165fa37e9ce80d5f52ded8e9094e5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a0a28ba5072d55b8133f5458f75befa752a3dcdf
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-parameters-in-manufacturing-execution"></a>Parametry produkcji w module Wykonywanie produkcji
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o ustawieniach parametrów produkcji w module Wykonywanie produkcji.
 
@@ -69,17 +69,17 @@ Dla każdego etapu w polu **Automatyczne zużycie BOM** można wybrać jedną z 
 
 - **Reguła rozliczania** — ta opcja jest używana w połączeniu z opcją zdefiniowaną dla BOM w module **Produkcja**. Kliknij kolejno opcje **Kontrola produkcji** &gt; **Wspólne** &gt; **Zlecenia produkcyjne** &gt; **Wszystkie zlecenia produkcyjne**. Na stronie **Wszystkie zlecenia produkcyjne** zaznacz zlecenie produkcyjne na liście, a następnie w okienku akcji kliknij opcję **BOM**. Na stronie **BOM** na karcie **Ustawienia** w polu **Reguła rozliczania** wybierz jedną z następujących opcji:
 
-    - **Rozpoczęcie**
-    - **Zakończenie**
-    - **Ręcznie**
-    - Puste (nie jest wybrana żadna opcja)
-    - **Dostępne w lokalizacji**
+  - **Rozpoczęcie**
+  - **Zakończenie**
+  - **Ręcznie**
+  - Puste (nie jest wybrana żadna opcja)
+  - **Dostępne w lokalizacji**
 
     W module Wykonywanie produkcji jeśli opcja **Reguła rozliczania** zostanie wybrana w polu **Automatyczne zużycie BOM** na karcie **Rozpoczęcie**, wszystkie materiały, które w BOM mają ustawioną opcję **Rozpoczęcie**, będą odejmowane z zapasów z chwilą rozpoczęcia operacji. Opcja **Dostępne w lokalizacji** jest używana do produktów, które są włączone dla zaawansowanych procesów magazynowych. Jeśli wybierzesz tę zasadę rozliczania, materiał jest rozliczany po zakończeniu pracy magazynowej pobrania surowca. Materiał jest także rozliczany, gdy wiersz BOM używający tej zasady rozliczania jest zwalniany do magazynu, a materiał jest dostępny w lokalizacji wejściowej produkcji.
-    
+
     > [!NOTE]
     > Jeżeli pole **Reguła rozliczania** jest ustawione na karcie **Początek** w module Uruchomienie produkcji, należy wybrać tę samą zasadę na karcie **Operacje** lub **Zgłoś jako gotowe**. To wymaganie pomaga zagwarantować, że materiały zostaną odjęte z zapasów na listach BOM, które używają opcji **Zakończenie** jako reguły rozliczania w zamówieniu produkcji. Jeśli ta sama reguła rozliczania nie jest zaznaczona na karcie **Operacje** lub **Zgłoszenie wyrobów gotowych**, materiały mogą być odejmowane z zapasów dwa razy.
- 
+
 - **Zawsze** — Po wybraniu tej opcji dla etapu materiały są zawsze odejmowane z zapasów na tym etapie. Na przykład materiały do produkcji są odejmowane po rozpoczęciu zlecenia produkcyjnego. To ustawienie wymaga, aby na kartach **Operacje** i **Zgłoszenie wyrobów gotowych** była zaznaczona opcja **Nigdy**. Wymaganie to zapobiega odejmowaniu towarów z magazynu dwa razy.
 - **Nigdy** — Wybranie tej opcji dla etapu powoduje, że na tym etapie nie występuje żadne zużycie BOM. Na przykład jeśli wybierzesz opcję **Nigdy** na wszystkich trzech kartach (**Rozpoczęcie**, **Operacje** i **Zgłoszenie wyrobów gotowych**), materiały muszą zostać ręcznie odjęte z zapasów.
 
@@ -146,11 +146,13 @@ Zgodnie z opcjami opisanymi wcześniej w tej sekcji arkusze list pobrania są ks
 
 Jeśli materiały zawsze mają być ręcznie odejmowane z zapasów, można użyć następujących ustawień. W takim przypadku arkusze list pobrania nie są księgowane.
 
-| Karta                | Pole                          | Ustawienie    |
-|--------------------|--------------------------------|------------|
-| Rozpocznij              | Aktualizuj start online           | **Stan** |
-| Rozpocznij              | Automatyczne zużycie BOM      | **Nigdy**  |
-| Operations         | Automatyczne zużycie BOM      | **Nigdy**  |
-| Zgłoszenie wyrobów gotowych | Automatyczne zużycie BOM      | **Nigdy**  |
-| Zgłoszenie wyrobów gotowych | Aktualizuj raport zakończonych online | **Stan** |
+
+|        Karta         |             Pole              |         Ustawienie         |
+|--------------------|--------------------------------|-------------------------|
+|       Rozpocznij        |      Aktualizuj start online      | <strong>Stan</strong> |
+|       Rozpocznij        |   Automatyczne zużycie BOM    | <strong>Nigdy</strong>  |
+|     Operations     |   Automatyczne zużycie BOM    | <strong>Nigdy</strong>  |
+| Zgłoszenie wyrobów gotowych |   Automatyczne zużycie BOM    | <strong>Nigdy</strong>  |
+| Zgłoszenie wyrobów gotowych | Aktualizuj raport zakończonych online | <strong>Stan</strong> |
+
 

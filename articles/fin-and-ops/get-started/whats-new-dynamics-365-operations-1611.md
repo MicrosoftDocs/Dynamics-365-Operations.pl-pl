@@ -18,17 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 09addfd9e4a5c601970b5c8c24a3d39b041e07e6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: be69aff98b1a3a8304461af0f38760988ac28d42
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nowości i zmiany w programie Dynamics 365 for Operations w wersji 1611 (listopad 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano nowe oraz zmienione funkcje dostępne w programie Dynamics 365 for Operations w wersji 1611.
 
@@ -113,6 +112,7 @@ W tym temacie opisano nowe oraz zmienione funkcje dostępne w programie Dynamics
 </table>
 
 ## <a name="expense-management"></a>Zarządzanie wydatkami
+
 | Co można zrobić                                                            | Dlaczego to jest ważne                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Zmiana przypisania transakcji dokonanych kartą kredytową przez byłych pracowników.                     | Czasami, gdy pracownik zakończy zatrudnienie, jego konto w usłudze Active Directory Domain Services (AD DS) jest wyłączane podczas importowania aktywnych transakcji kartą kredytową, które muszą zostać zaliczone w koszty. Wcześniej nie można było przypisać pełnomocnika, który wprowadziłby wydatki, ani dołączyć transakcji kartą kredytową do raportu z wydatków. Teraz można użyć strony **Transakcje karty kredytowej**, aby zmienić przypisanie pracownika dla każdej transakcji kartą kredytową, której powiązany pracownik zakończył zatrudnienie. Po zmianie przypisania transakcji kartą kredytową transakcję można wybrać dla raportu o wydatkach i opłacić za pomocą zwykłego procesu uiszczania należności wykazanych w raporcie z wydatków. |
@@ -225,6 +225,7 @@ W tym temacie opisano nowe oraz zmienione funkcje dostępne w programie Dynamics
 </table>
 
 ## <a name="human-capital-management"></a>Zarządzanie kapitałem ludzkim
+
 | Co można zrobić                                                                                | Dlaczego to jest ważne                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tworzenie arkuszy wydajności.                                                                  | Przed rozpoczęciem swojej okresowej oceny często zbierasz informacje na temat działań lub zdarzeń, które przyczyniły się do Twojego sukcesu zawodowego w badanym okresie. Możesz dodać wpis do swojego arkusza wydajności w celu udokumentowania tych działań i zdarzeń. Można też połączyć te działania i zdarzenia z przeglądem wydajności w celu przekazania dodatkowych informacji osobie oceniającej.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -579,6 +580,7 @@ Następujące kraje wymagają również przetłumaczenia modułu Handel detalicz
 </table>
 
 ## <a name="planning-and-scheduling"></a>Planowanie i harmonogram
+
 | Co można zrobić                                                                                                                                                                                                      | Dlaczego to jest ważne                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurowanie domyślnych ustawień zamówień sprzedaży i zakupu w oparciu o dowolny aktywny wymiar produktu w produkcie głównym. W związku z tym można zdefiniować domyślne ustawienia zamówień dla jednostki magazynowej (SKU) lub częściowej SKU. | Można określić domyślne ustawienia zamówień, które będą stosowane do wymiaru produktu lub kombinacji wymiarów produktu. **Przykład** Sprzedajesz produkt o nazwie Koszulka polo. Ten produkt jest dostępny w dwóch kolorach: zielonym i niebieskim. Jest on również dostępny w dwóch rozmiarach: małym i średnim. Kolor i Rozmiar są aktywnymi wymiarami produktu dla koszulki polo. Można zablokować zakupy wszelkich zielonych koszulek polo, niezależnie od ich rozmiaru. |
@@ -624,6 +626,7 @@ Następujące kraje wymagają również przetłumaczenia modułu Handel detalicz
 </table>
 
 ## <a name="project-management-and-accounting"></a>Zarządzanie projektami i ich księgowanie
+
 | Co można zrobić                                                                                                           | Dlaczego to jest ważne                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Używanie opcji wyboru później podczas księgowania propozycji faktur w partii.                                                            | Księgowi projektu mogą skonfigurować zadanie wsadowe, które będzie automatycznie pobierać propozycje faktur do zaksięgowania, jeśli te propozycje spełniają kryteria określone w zadaniu wsadowym. Ta funkcja zwiększa automatyzację księgowania faktur, ponieważ zadanie wsadowe może działać w sposób ciągły i automatycznie pobierać propozycje do zaksięgowania. |

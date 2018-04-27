@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7cd19340c913fcda3fb537162dfbae52b5c8e922
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3d4354316d0c37c6556c0ec3d27a3c62c5afb7b0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="intercompany-invoicing"></a>Fakturowanie międzyfirmowe
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje i przykłady dotyczące międzyfirmowego fakturowania projektów w programie Microsoft Dynamics 365 for Finance and Operations.
 
@@ -58,20 +57,22 @@ W tym przykładzie USSI jest firmą wypożyczającą, a jej pracownicy rozliczaj
 
 W tym przykładzie FRSI musi być odbiorcą w firmie USSI, a USSI musi być dostawcą w firmie FRSI. Następnie można skonfigurować relację międzyfirmową między tymi dwoma firmami. Poniższa procedura pokazuje, jak skonfigurować parametry, aby obie firmy mogły uczestniczyć w fakturowaniu międzyfirmowym.
 
-1.  Skonfiguruj FRSI jako odbiorcę w firmie USSI, a USSI jako dostawcę w firmie FRSI. Istnieją trzy punkty wejścia dla etapów wymaganych w tym zadaniu.
-    | Krok | Punkt wejścia                                                                       | opis   |
-    |------|-----------------------------------------------------------------------------------|------------------|
-    | A    | W firmie USSI kliknij kolejno opcje **Rozrachunki z odbiorcami** &gt; **Odbiorcy** &gt; **Wszyscy odbiorcy**. | Utwórz nowy rekord odbiorcy dla firmy FRSI i wybierz grupę odbiorców.                                                                                  |
-    | mld    | W firmie FRSI kliknij kolejno opcje **Rozrachunki z dostawcami** &gt; **Dostawcy** &gt; **Wszyscy dostawcy**.        | Utwórz nowy rekord dostawcy dla firmy USSI i wybierz grupę dostawców.                                                                                    |
-    | C    | W firmie FRSI otwórz rekord dostawcy, który właśnie został utworzony.                            | W okienku akcji na karcie **Ogólne** w grupie **Konfiguracja** kliknij opcję **Międzyfirmowe**. Na stronie **Międzyfirmowe** na karcie **Relacja handlowa** ustaw suwak **Aktywna** w pozycji **Tak**. W polu **Firma odbiorcy** wybierz rekord klienta, który został utworzony w kroku A. |
+1. Skonfiguruj FRSI jako odbiorcę w firmie USSI, a USSI jako dostawcę w firmie FRSI. Istnieją trzy punkty wejścia dla etapów wymaganych w tym zadaniu.
 
-2.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Parametry modułu Zarządzanie projektami i ich księgowanie**, a następnie kliknij kartę **Międzyfirmowe**. Sposób ustawienia parametrów zależy od tego, czy jest to firma wypożyczająca czy pożyczająca.
-    -   Jeśli firma pożycza, wybierz kategorię zaopatrzenia, która powinna być używana do dopasowywania faktur od dostawców. Faktury te są generowane automatycznie.
-    -   Jeśli firma wypożycza, dla każdej jednostki pożyczającej wybierz domyślną kategorię projektu dla każdego typu transakcji. Kategorie projektów są używane do konfigurowania podatków, jeśli fakturowana kategoria w transakcjach międzyfirmowych istnieje tylko w firmie wypożyczającej. Można wybrać opcję naliczania przychodów w transakcjach międzyfirmowych. To naliczanie odbywa się podczas księgowania transakcji, a następnie jest stornowane podczas księgowania faktury międzyfirmowej.
+   | Krok |                                                       Punkt wejścia                                                        |                                                                                                                                                                                               opis                                                                                                                                                                                               |
+   |------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |  A   | W firmie USSI kliknij kolejno opcje <strong>Rozrachunki z odbiorcami</strong> &gt; <strong>Odbiorcy</strong> &gt; <strong>Wszyscy odbiorcy</strong>. |                                                                                                                                                                  Utwórz nowy rekord odbiorcy dla firmy FRSI i wybierz grupę odbiorców.                                                                                                                                                                  |
+   |  mld   |    W firmie FRSI kliknij kolejno opcje <strong>Rozrachunki z dostawcami</strong> &gt; <strong>Dostawcy</strong> &gt; <strong>Wszyscy dostawcy</strong>.     |                                                                                                                                                                    Utwórz nowy rekord dostawcy dla firmy USSI i wybierz grupę dostawców.                                                                                                                                                                    |
+   |  C   |                                  W firmie FRSI otwórz rekord dostawcy, który właśnie został utworzony.                                  | W okienku akcji na karcie <strong>Ogólne</strong> w grupie <strong>Konfiguracja</strong> kliknij opcję <strong>Międzyfirmowe</strong>. Na stronie <strong>Międzyfirmowe</strong> na karcie <strong>Relacja handlowa</strong> ustaw suwak <strong>Aktywna</strong> w pozycji <strong>Tak</strong>. W polu <strong>Firma odbiorcy</strong> wybierz rekord klienta, który został utworzony w kroku A. |
 
-3.  Kliknij kolejno opcje **Zarządzanie projektami i ich księgowania** &gt; **Ustawienia** &gt; **Ceny** &gt; **Cena transferowa**.
-4.  Wybierz walutę, typ transakcji i model ceny transferowej. Walutą użytą na fakturze jest waluta skonfigurowana w rekordzie odbiorcy dla firmy pożyczającej w firmie wypożyczającej. Ta waluta służy do uzgadniania wpisów w tabeli cen transferowych.
-5.  Kliknij kolejno opcje **Księga główna** &gt; **Ustawienia księgowania** &gt; **Księgowanie międzyfirmowe**, a następnie zdefiniuj relację między firmami USSI i FRSI.
+
+2. Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** &gt; **Ustawienia** &gt; **Parametry modułu Zarządzanie projektami i ich księgowanie**, a następnie kliknij kartę **Międzyfirmowe**. Sposób ustawienia parametrów zależy od tego, czy jest to firma wypożyczająca czy pożyczająca.
+   -   Jeśli firma pożycza, wybierz kategorię zaopatrzenia, która powinna być używana do dopasowywania faktur od dostawców. Faktury te są generowane automatycznie.
+   -   Jeśli firma wypożycza, dla każdej jednostki pożyczającej wybierz domyślną kategorię projektu dla każdego typu transakcji. Kategorie projektów są używane do konfigurowania podatków, jeśli fakturowana kategoria w transakcjach międzyfirmowych istnieje tylko w firmie wypożyczającej. Można wybrać opcję naliczania przychodów w transakcjach międzyfirmowych. To naliczanie odbywa się podczas księgowania transakcji, a następnie jest stornowane podczas księgowania faktury międzyfirmowej.
+
+3. Kliknij kolejno opcje **Zarządzanie projektami i ich księgowania** &gt; **Ustawienia** &gt; **Ceny** &gt; **Cena transferowa**.
+4. Wybierz walutę, typ transakcji i model ceny transferowej. Walutą użytą na fakturze jest waluta skonfigurowana w rekordzie odbiorcy dla firmy pożyczającej w firmie wypożyczającej. Ta waluta służy do uzgadniania wpisów w tabeli cen transferowych.
+5. Kliknij kolejno opcje **Księga główna** &gt; **Ustawienia księgowania** &gt; **Księgowanie międzyfirmowe**, a następnie zdefiniuj relację między firmami USSI i FRSI.
 
 ## <a name="example-2-create-and-post-an-intercompany-timesheet"></a>Przykład 2: Tworzenie i księgowanie międzyfirmowej karty czasu pracy
 USSI — firma wypożyczająca — musi utworzyć i zaksięgować kartę dla projektu realizowanego w FRSI, firmie pożyczającej. Istnieją dwa punkty wejścia dla etapów wymaganych w tym zadaniu.

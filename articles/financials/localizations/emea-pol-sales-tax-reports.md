@@ -17,15 +17,15 @@ ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
 ms.translationtype: HT
-ms.sourcegitcommit: 1588f4e5641fbffdf307d7c0d5be3ca430080dfb
-ms.openlocfilehash: 375fe4103a904f62d395ee2cea91b22506e99f25
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ba3251e71a1d7a32bb7f5ddb771b0e78a963e216
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-tax-reports-for-poland"></a>Sprawozdania podatkowe dla Polski
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o sprawozdawczości podatku od towarów i usług (VAT) w Polsce oraz podaje informacje, które są wymagane przez prawo w rejestrach podatku VAT w Polsce.
 
@@ -333,13 +333,13 @@ Aby skonfigurować funkcję odpisów na pokrycie prawdopodobnie nieściągalnych
 
 3. Dla każdego arkusza ustaw następujące pola:
 
-    - **Minimalna liczba dni:** wprowadź minimalny okres, po którym faktura zostanie uznana za zaległą. Minimalny okres wynosi zazwyczaj 150 dni.
-    - **Maksymalna liczba dni:** wprowadź maksymalny okres, przez który faktura nie będzie uznawana za zaległą. Maksymalny okres wynosi zazwyczaj dwa lata lub 720 dni.
-    - **Typ obliczania:** umożliwia wybranie typu daty dla każdej zaległej faktury do obliczenia. Dostępne wartości to **Termin** i **Data faktury**.
-    - **Sprawdzanie poprawności:** zaznaczenie tego pola wyboru spowoduje sprawdzanie, czy salda transakcji nie uległy zmianie na dzień ostatnio zaksięgowanego arkusza.
+   - **Minimalna liczba dni:** wprowadź minimalny okres, po którym faktura zostanie uznana za zaległą. Minimalny okres wynosi zazwyczaj 150 dni.
+   - **Maksymalna liczba dni:** wprowadź maksymalny okres, przez który faktura nie będzie uznawana za zaległą. Maksymalny okres wynosi zazwyczaj dwa lata lub 720 dni.
+   - **Typ obliczania:** umożliwia wybranie typu daty dla każdej zaległej faktury do obliczenia. Dostępne wartości to **Termin** i **Data faktury**.
+   - **Sprawdzanie poprawności:** zaznaczenie tego pola wyboru spowoduje sprawdzanie, czy salda transakcji nie uległy zmianie na dzień ostatnio zaksięgowanego arkusza.
 
-    > [!NOTE]
-    > Pola **Warunek** i **Terminy płatności** pozostaw puste.
+     > [!NOTE]
+     > Pola **Warunek** i **Terminy płatności** pozostaw puste.
 
 4. Na stronach **Parametry rozrachunków z odbiorcami** i **Parametry rozrachunków z dostawcami** ustaw następujące odwołania sekwencji numerów:
 

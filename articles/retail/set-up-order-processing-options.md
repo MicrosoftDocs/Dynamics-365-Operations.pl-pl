@@ -1,9 +1,9 @@
 ---
-title: "Konfigurowanie opcji przetwarzania zamówień"
+title: "Konfigurowanie kanału biura obsługi"
 description: "Ten temat zawiera informacje dotyczące sposobu przetwarzania zamówień dla biur obsługi przy użyciu modułu Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,33 +20,64 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 144bee2102b8d1901d1b4964f6c92501c1cd573d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0d64a27aa8aed10c210ca3c2956dce67f8d634b8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
-# <a name="set-up-order-processing-options"></a>Konfigurowanie opcji przetwarzania zamówień
+# <a name="set-up-a-call-center-channel"></a>Konfigurowanie kanału biura obsługi
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
+Firma można zdefiniować wiele kanałów biura obsługi w programie Microsoft Dynamics 365 for Retail. Kanały biura obsługi konfiguruje się w oknie **Handel detaliczny** \> **Kanały** \> **Biura obsługi** \> **Wszystkie biura obsługi** i są one specyficzne dla firmy.
 
-Ten temat zawiera informacje dotyczące sposobu przetwarzania zamówień dla biur obsługi przy użyciu modułu Microsoft Dynamics 365 for Retail. 
+Podczas tworzenia nowego kanału biura obsługi jest mu systemowo przypisywany numer jednostki operacyjnej. Ponieważ biura obsługi są tworzone jako jednostki operacyjne, użytkownicy mogą połączyć kanał biura obsługi z różnymi funkcjami aplikacji Retail, takimi jak asortymenty, katalogi i określone metody dostawy.
 
-Moduł Handel detaliczny obsługuje wiele kanałów sieci sprzedaży, takich jak sklepy internetowe, sklepy tradycyjne i biura obsługi. W biurach obsługi, pracownicy zbierają zamówienia odbiorców przez telefon i tworzą zamówienia sprzedaży. W tym temacie opisano sposób tworzenia biura obsługi i konfigurowania opcji biura obsługi. Każde biuro obsługi może mieć własnych użytkowników, metody płatności, grupy cenowe, wymiary finansowe oraz metody dostawy. Opcje te można konfigurować podczas tworzenia biura obsługi. **Ważne:** zanim będzie można używać przepływów pracy biura obsługi podczas tworzenia zamówień sprzedaży przez użytkownika, użytkownik musi być przypisany do centrum obsługi jako jego użytkownik. Na stronie **Biuro obsługi** również można użyć w celu włączenia lub wyłączenia grup funkcji, które są unikatowe dla biur obsługi. Można włączyć następujące grupy funkcji:
+Domyślny magazyn można skonfigurować w kanale biura obsługi. Następnie podczas tworzenia zamówień sprzedaży w tym kanale domyślny magazyn jest automatycznie wprowadzany w nagłówku zamówienia sprzedaży, chyba że inny magazyn został zdefiniowany dla odbiorcy wskazanego w zamówieniu sprzedaży. W takim wypadku domyślnie jest wprowadzany magazyn odbiorcy.
 
--   **Kończenie zamówienia** — Ta grupa zawiera funkcje, które odnoszą się do płatności i kończenia zamówienia na stronie **Zamówienie sprzedaży**.
--   **Sprzedaż sterowana** — Ta grupa zawiera funkcje, które są powiązane z kodami źródłowymi, skryptami i żądaniami katalogu.
+Aby korzystać z funkcji biura obsługi, użytkownicy muszą być połączeni z kanałem biura obsługi. Wszystkie zamówienia sprzedaży, które użytkownik tworzy w aplikacji Retail, są automatycznie łączone z kanałem biura obsługi tego użytkownika. Obecnie jeden użytkownik nie może być połączony równocześnie z wieloma kanałami biura obsługi.
 
-Jeśli włączysz te funkcje w ustawieniach biura obsługi, są one dostępne na stronie **Zamówienie sprzedaży** dla użytkowników, którzy są skojarzeni z biurem obsługi. Większość tych funkcji wymaga dodatkowych ustawień przed użyciem. Obrazy i skrypty są włączane jako część ustawień sprzedaży kierowanej dla określonego biura obsługi. Włączenie tych funkcji powoduje wyświetlanie skryptów i obrazów produktów w okienku pola informacji na stronie **zamówienia sprzedaży**. Zostanie wyświetlony domyślny ustawiony obraz produktu. Skrypty można skonfigurować dla towaru, katalogu, odbiorcy lub towaru w kontekście katalogu. Zamówienia biura obsługi mogą zawierać dodatkowe informacje o pochodzeniu ceny dla określonego wiersza zamówienia. Na przykład zamówienia mogą pokazywać zastosowane rabaty. Tę funkcję można włączyć w oknie **Rozrachunki z odbiorcami** &gt; **Ustawienia** &gt; **Parametry modułu rozrachunków z odbiorcami** &gt; **Ceny** &gt; **Szczegóły ceny**. Stronę **Szczegóły ceny** można otworzyć z listy rozwijanej **wiersza zamówienia sprzedaży**. Śledzenie zdarzeń zamówienia służy do celów inspekcji, dla porównywania podejmowanych akcji z zamówieniem w cyklu życia zamówienia lub do śledzenia akcji danego użytkownika. Na przykład można rejestrować działanie przy każdym tworzeniu zamówienia sprzedaży, wprowadzania blokady na zamówienie, zastąpieniu opłaty lub aktualizacji wiersza zamówienia przez użytkownika. Zdarzenia zamówienia można tak skonfigurować, aby śledzić akcje dla określonych użytkowników, grup użytkowników lub wszystkich użytkownikom w danym okresie czasu. Można wyświetlić czynności wykonane na dokumencie otwierając stronę **Zdarzenia zamówienia** z Okienka akcji na stronie określonego dokumentu. Zdarzenia zamówienia można skonfigurować w oknie **Sprzedaż i marketing** &gt; **Ustawienia** &gt; **Zdarzenia** &gt; **Zdarzenia zamówienia**. Gdy zamówienie odbiorcy nie może zostać wysyłane na czas, firma można automatycznie wysłać wiadomość e-mail z powiadomieniem do odbiorcy, aby wyjaśnić stan zamówienia i dać odbiorcy możliwość anulowania zamówienia. Jeśli opóźnienie wykracza poza określony próg, można automatycznie anulować zamówienia. Maksymalnie trzy wiadomości e-mail można wysłać w określonych odstępach czasu:
+W kanale biura obsługi można również skonfigurować profil powiadamiania pocztą e-mail. Profil określa zestaw szablonów wiadomości e-mail, który jest używany podczas wysyłania wiadomości e-mail do odbiorców składających zamówienia za pośrednictwem kanału biura obsługi. Wyzwalacze wiadomości e-mail można skonfigurować dla zdarzeń systemowych, takich jak przesłanie zamówienia lub wysyła zamówionych towarów.
 
-1.  **Pierwsze powiadomienie o anulowaniu** — odbiorca może zdecydować o anulowaniu zamówienia.
-2.  **Drugie powiadomienie o anulowaniu** — odbiorca może zdecydować o anulowaniu zamówienia.
-3.  **Końcowe powiadomienie o anulowaniu** — system anuluje zamówienie, a odbiorca zostanie poinformowany o anulowaniu.
+Aby można było poprawnie przetwarzać operacje sprzedaży za pośrednictwem kanału biura obsługi, należy zdefiniować dla kanału poprawne [metody płatności](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-payments) i metody dostawy.
 
-Można zwolnić poszczególnych odbiorców i produkty z procesu automatycznego powiadamiania i anulowania. Podczas dodawania towaru do zamówienia wyzwalany jest alert dotyczący marży. Alert zawiera ważne informacje dotyczące towaru z uwzględnieniem rentowności marży cenowej i towarów. Dzięki tym informacjom można zdecydować, czy zastąpienie ceny jest odpowiednie podczas dodawania towaru do zamówienia sprzedaży. Można na przykład skonfigurować progi dla marż handlowych i określić, że progu 40% lub więcej powyżej kosztów można użyć dla danego towaru, ale próg 20 do 39% powyżej kosztów budzi wątpliwości. W takim przypadku każdy towar z progiem od 20 do 39 procent powoduje wyświetlenie ostrzeżenia. Towarów z progiem poniżej 20% powyżej kosztu nie można sprzedać, a cena towaru nie może być korygowana. Alerty dotyczące marży można skonfigurować w oknie **Rozrachunki z odbiorcami** &gt; **Ustawienia** &gt; **Parametry modułu rozrachunków z odbiorcami** &gt; **Alerty dotyczące marży**. Podczas konfigurowania przypisywania podatku na podstawie reguł domyślnych, można określić priorytet uzgadniania elementów adresu. Na przykład można określić, czy uzgadnianie grupy podatków według kodu pocztowego ma wyższy priorytet niż uzgadnianie grupy podatków według województwa. Podczas wprowadzania nowych rekordów adresu odbiorcy, grupa podatku jest automatycznie przypisywana, w zależności od zgodności adresu odbiorcy z domyślnymi regułami i ustawień priorytetu uzgadniania. Tę funkcję można skonfigurować na stronie **Parametry księgi głównej**.
+Na poziomie kanału biura obsługi można określić inne wartości domyślne związane z wymiarami finansowymi, które będą łączone z zamówieniami tworzonymi w tym kanale.
 
+## <a name="options-for-order-processing-behavior"></a>Opcje zachowań przetwarzania zamówień
 
+Trzy ustawienia w konfiguracji biura obsługi mają znaczny wpływ na funkcje i narzędzia dostępne dla zamówień sprzedaży tworzonych przez biuro obsługi: **Włącz kończenie zamówienia**, **Włącz sprzedaż bezpośrednią** i **Włącz kontrolę ceny zamówienia**.
 
+### <a name="enable-order-completion"></a>Włącz kończenie zamówienia
+
+Ustawienie **Włącz kończenie zamówienia** w kanale biura obsługi ma znaczny wpływ na przebieg przetwarzania zamówień sprzedaży wprowadzanych w tym kanale. Gdy to ustawienie jest włączone, wszystkie zamówienia sprzedaży muszą przejść przez zestaw reguł sprawdzania poprawności, zanim będzie można je potwierdzić. Reguły te są uruchamiane poprzez naciśnięcie przycisku **Ukończ**, który jest dodawany w okienku akcji na stronie zamówienia sprzedaży. Wszystkie zamówienia sprzedaży, które są tworzone przy włączonym ustawieniu **Włącz kończenie zamówienia**, muszą przejść przez proces finalizowania zamówienia. Ten proces wymusza odczytanie logiki płatności i weryfikacji płatności. Proces przesyłania zamówień może nie tylko służyć egzekwowaniu płatności, ale również wywoływać [funkcje wykrywania oszustw](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-fraud-alerts) skonfigurowane w systemie. Zamówienia, które nie przeszły weryfikacji płatności lub braku oszustwa, są wstrzymywane i nie mogą zostać zwolnione do dalszego przetwarzania (na przykład do pobrania lub wysyłki), dopóki problem powodujący wstrzymanie nie zostanie rozwiązany.
+
+Gdy kanał biura obsługi ma włączone ustawienie **Włącz kończenie zamówienia**, to w sytuacji, gdy po wprowadzeniu pozycji wierszy w zamówieniu sprzedaży użytkownik kanału spróbuje zamknąć formularz zamówienia sprzedaży lub z niego wyjść bez uprzedniego naciśnięcia przycisku **Ukończ**, system wymusza proces finalizowania zamówienia, otwierając stronę podsumowania zamówienia sprzedaży i wymagając, aby użytkownik poprawnie przesłał zamówienie. Jeżeli zamówienia nie można poprawnie przesłać razem z płatnością, użytkownik może za pomocą funkcji [wstrzymań zamówień](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds) wstrzymać zamówienie. Jeśli użytkownik próbuje anulować zamówienie, musi to zrobić poprawnie, używając funkcji Anuluj lub Usuń, w zależności od tego, na którą funkcję pozwalają ustawienia zabezpieczeń użytkownika.
+
+Jeśli ustawienie **Włącz kończenie zamówienia** jest włączone dla kanału biura obsługi, pole **Stan płatności** będzie śledzone w zamówieniu. System oblicza wartość **Stan płatności** po przesłaniu zamówienia sprzedaży. Tylko zamówienia ze stanem płatności Zatwierdzone mogą przechodzić przez system do kolejnych etapów przetwarzania zamówienia, takich jak pobranie i wysyłka. Jeśli płatności zostaną odrzucone, w szczegółowym stanie zamówienia zostanie włączona flaga **Nie przetwarzaj**. Spowoduje to wstrzymanie zamówienia do czasu rozwiązania problemu z płatnościami.
+
+Ponadto jeśli jest włączone ustawienie **Włącz kończenie zamówienia**, to gdy użytkownicy tworzą zamówienia sprzedaży w trybie wprowadzania pozycji w wierszu, w głównym nagłówku zamówienia sprzedaży będzie dostępne pole **Źródło**. Pole **Źródło** zawiera [kod źródłowy katalogu](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/call-center-catalogs) w scenariuszach sprzedaży w marketingu bezpośrednim. Ten kod może następnie decydować o cenach specjalnych i promocjach.
+
+Nawet jeśli ustawienie **Włącz kończenie zamówienia** jest wyłączone, użytkownicy nadal mogą zastosować kod źródłowy do zamówienia sprzedaży. Jednak najpierw muszą otworzyć szczegóły nagłówka zamówienia sprzedaży, aby uzyskać dostęp do pola **Źródło**. Innymi słowy wymagane są pewne dodatkowe kliknięcia. Takie samo zachowanie dotyczy funkcji takich jak finalizowanie wysyłki i zamówienia przyspieszone. Funkcje te są dostępne dla wszystkich zamówień tworzonych w biurze obsługi. Jednak gdy jest włączone ustawienie **Włącz kończenie zamówienia**, użytkownicy widzą konfigurację tych funkcji w nagłówku sprzedaży podczas pracy w widoku wprowadzania wierszy. Nie muszą przechodzić do szczegółów nagłówka zamówienia sprzedaży, aby znaleźć odpowiednie ustawienia i pola.
+
+### <a name="enable-direct-selling"></a>Włącz sprzedaż bezpośrednią
+
+Jeśli w kanale biura obsługi jest włączone ustawienie **Włącz sprzedaż bezpośrednią**, użytkownicy mogą korzystać z funkcji sprzedaży dodatkowej i wiązanej dostępnych w aplikacji Retail. W takim przypadku podczas wprowadzania zamówień pojawiają się wyskakujące okienka z sugestiami innych produktów, które użytkownik biura obsługi może zaoferować odbiorcy. Propozycje produktów bazują na produkcie, który został właśnie zamówiony w wierszu zamówienia sprzedaży. Obecnie sugestie sprzedaży dodatkowej i wiązanej konfiguruje się na poziomie pozycji w produktach i katalogach. Jeśli ustawienie **Włącz sprzedaż bezpośrednią** jest wyłączone w kanale biura obsługi, wyskakujące okienka nie są wyświetlane podczas wprowadzania zamówień, nawet jeśli dla zamawianego towaru zdefiniowano prawidłowe możliwości sprzedaży dodatkowej lub wiązanej.
+
+Gdy ustawienie **Włącz sprzedaż bezpośrednią** jest włączone, skrypty i funkcje obrazów na stronie wprowadzania zamówienia sprzedaży są również włączone. W takim przypadku podczas wprowadzania zamówień przy prawej krawędzi strony znajduje się panel informacji. Panel może pokazywać skrypty związane ze standardowym procesem wprowadzania zamówień, zastosowany kod źródłowy katalogu lub skrypty odnoszące się do zamawianych towarów. Ponadto panel obrazów może pokazywać obraz produktu dla zamawianych towarów, o ile obraz został zdefiniowany dla towaru w konfiguracji produktu.
+
+### <a name="enable-order-price-control"></a>Włącz kontrolę ceny zamówienia
+
+Gdy ustawienie **Włącz kontrolę ceny zamówienia** jest włączone, tylko autoryzowani użytkownicy mogą zmieniać cenę sprzedaży towaru podczas wprowadzania zamówień. Zmiany muszą być w granicach określonych tolerancji. Użytkownicy, którzy nie mają odpowiedniej autoryzacji, muszą zamiast tego przesłać wniosek o zmianę ceny. Wniosek będzie przetwarzany przy użyciu systemowych przepływów pracy weryfikacji i zatwierdzenia.
+
+## <a name="channel-users"></a>Użytkownicy kanału
+
+Po zdefiniowaniu kanału biura obsługi należy połączyć użytkowników kanału z biurem obsługi. W przeciwnym razie nie będzie można używać biura obsługi w systemie. Gdy użytkownik loguje się do aplikacji Retail i wprowadza zamówienia sprzedaży lub zamówienia zwrotu na stronie związanej z wprowadzaniem zamówień, jego identyfikator użytkownika jest weryfikowany względem konfiguracji kanału biura obsługi. Jeśli użytkownik jest połączony z określonym kanałem biura obsługi, zamówienia tworzone przez tego użytkownika dziedziczą cechy i domyślne wartości tego kanału.
+
+Domyślnie we wszystkich zamówieniach tworzonych przez użytkowników biura obsługi jest włączona flaga **Sprzedaż detaliczna** w nagłówku zamówienia sprzedaży. Wtedy zamówienia mogą korzystać z systemowych funkcji cen i promocji specyficznych dla handlu detalicznego.
+
+Użytkownicy, którzy nie są połączeni z kanałem biura obsługi, używają standardowych funkcji wprowadzania zamówień zawartych w programie Microsoft Dynamics 365 for Finance and Operations. Zamówienia wprowadzane przez tych użytkowników za pośrednictwem formularza wprowadzania zamówień sprzedaży nie będą systemowo identyfikowane jako zamówienia aplikacji Retail. Ponadto te zamówienia wprowadzane przez tych użytkowników nie podlegają żadnym regułom przetwarzania finalizacji zamówień, logice ustalania cen detalicznych ani innym weryfikacjom zamówień, które można definiować w konfiguracji kanału biura obsługi lub parametrach systemu biura obsługi.
+
+Gdy skończysz konfigurować kanał biura obsługi i definiować użytkowników kanału, to w celu zagwarantowania pożądanego zachowania systemu upewnij się, że wszystkie wymagane parametry biura obsługi są zdefiniowane w oknie **Handel detaliczny** \> **Ustawienia kanału** \> **Ustawienia biura obsługi** \> **Parametry biura obsługi**. Ponadto upewnij się, że są zdefiniowane powiązane numeracje.
 

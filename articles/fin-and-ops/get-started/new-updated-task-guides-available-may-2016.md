@@ -18,24 +18,23 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: c42a7e50d6efb6408e480b50b3e520f5812aeb56
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c301f27504f7f1545608bb214a4f1b4d4cecc47f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-may-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy. 
 
 <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX
 ------------------------------------------------------------------------------------------------
 
-Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji systemu Microsoft Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach zamieszczone w ujednoliconej bibliotece APQC z lutego 2016 r. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md). **Uwaga:** Znak gwiazdki (**\***) obok tytułu wiersza narzędzia do modelowania procesów biznesowych (BPM) wskazuje, że przewodnik po zadaniach dla tego procesu biznesowego został utworzony dla aktualizacji systemu Dynamics AX z maja 2016 r. i nie jest obsługiwany we wcześniejszych wersjach systemu Microsoft Dynamics AX.
+Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji systemu Microsoft Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach zamieszczone w ujednoliconej bibliotece APQC z lutego 2016 r. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md). <strong>Uwaga:</strong> Znak gwiazdki (<strong>\</strong>*) obok tytułu wiersza narzędzia do modelowania procesów biznesowych (BPM) wskazuje, że przewodnik po zadaniach dla tego procesu biznesowego został utworzony dla aktualizacji systemu Dynamics AX z maja 2016 r. i nie jest obsługiwany we wcześniejszych wersjach systemu Microsoft Dynamics AX.
 
 ### <a name="countryregion-functionality"></a>Funkcje specyficzne dla kraju/regionu
 
@@ -63,15 +62,15 @@ Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, 
 
 ### <a name="electronic-reporting"></a>Raportowanie elektroniczne
 
-| Wiersz BPM                                                                   | Kraj/region |
+|                                  Wiersz BPM                                  | Kraj/region |
 |----------------------------------------------------------------------------|----------------|
-| ER Konfigurowanie miejsc docelowych                                                  | Globalna         |
-| ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML         | Globalna         |
-| ER Generowanie dokumentów elektronicznych dla płatności przy użyciu konfiguracji formatu | Globalna         |
-| ER Importowanie konfiguracji z usługi Lifecycle Services                          | Globalna         |
-| **\***ER Wybór dostawcy usług                                           | Globalna         |
-| ER Uaktualnianie formatu poprzez przyjęcie jego nowej wersji bazowej      | Globalna         |
-| ER Przekazywanie konfiguracji do usługi Lifecycle Services                          | Globalna         |
+|                         ER Konfigurowanie miejsc docelowych                          |     Globalna     |
+|     ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML     |     Globalna     |
+| ER Generowanie dokumentów elektronicznych dla płatności przy użyciu konfiguracji formatu |     Globalna     |
+|             ER Importowanie konfiguracji z usługi Lifecycle Services              |     Globalna     |
+|               <strong>\</strong>*ER Wybór dostawcy usług                |     Globalna     |
+|   ER Uaktualnianie formatu poprzez przyjęcie jego nowej wersji bazowej    |     Globalna     |
+|             ER Przekazywanie konfiguracji do usługi Lifecycle Services              |     Globalna     |
 
 ### <a name="human-capital-management"></a>Zarządzanie kapitałem ludzkim
 
@@ -177,17 +176,15 @@ Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, 
 
 ### <a name="warehouse-and-transportation"></a>Magazyn i transport
 
-| Wiersz BPM                                                            | Kraj/region |
-|---------------------------------------------------------------------|----------------|
-| Konfigurowanie przetwarzania grupy czynności                                           | Globalna         |
-| **\***Zgłaszanie wyrobów gotowych do lokalizacji niekontrolowanej przez numer identyfikacyjny | Globalna         |
-| Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości                              | Globalna         |
-| Ustawianie konteneryzacji                                             | Globalna         |
-| Konfigurowanie pakowania ręcznego                                               | Globalna         |
-| Konfigurowanie ograniczeń transportu towaru                       | Globalna         |
-| **\***Konfigurowanie zasad pracy magazynowej                                | Globalna         |
-
-
+|                                     Wiersz BPM                                     | Kraj/region |
+|----------------------------------------------------------------------------------|----------------|
+|                            Konfigurowanie przetwarzania grupy czynności                             |     Globalna     |
+| <strong>\</strong>*Zgłaszanie wyrobów gotowych do lokalizacji niekontrolowanej przez numer identyfikacyjny |     Globalna     |
+|                      Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości                      |     Globalna     |
+|                             Ustawianie konteneryzacji                              |     Globalna     |
+|                              Konfigurowanie pakowania ręcznego                               |     Globalna     |
+|                  Konfigurowanie ograniczeń transportu towaru                   |     Globalna     |
+|                <strong>\</strong>*Konfigurowanie zasad pracy magazynowej                 |     Globalna     |
 
 <a name="see-also"></a>Informacje dodatkowe
 --------

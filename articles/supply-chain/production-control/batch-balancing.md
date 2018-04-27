@@ -19,19 +19,20 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 84e00ef62a995d37878de6b2786dbc2ee2277070
-ms.openlocfilehash: 8a1ec5a3b19d1022232527f4960617bd985bc2b3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7d00df6263530ba9fff4c246cb3593cd607f6719
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="batch-balancing"></a>Bilansowanie partii
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
+W tym temacie opisano, jak jest obsługiwany proces równoważenia partii. 
 
-W tym temacie opisano, jak jest obsługiwany proces równoważenia partii.
+Obejrzyj [film o równoważeniu partii w programie Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
 W procesie równoważenia partii ilość substancji, jaka ma zostać użyta w partii produkcji, jest obliczana na podstawie stężenia substancji aktywnych w wybranych partiach produktów.
 
@@ -179,7 +180,7 @@ Po obliczeniu ilości substancji można potwierdzić i zwolnić formułę. Proce
 
 -   Jeśli w ustawieniach produktu włączono obsługę procesów zarządzania magazynem, wiersz formuły jest zwalniany do magazynu zgodnie z zasadami tych procesów. Wiersz formuły jest zwalniany w ilościach odpowiadających zbilansowanym ilościom oraz dla konkretnych partii wybranych dla substancji aktywnych.
 
->   [!NOTE]
+> [!NOTE]
 >   Wiersze formuły mogą być zwalniane do magazynu tylko w ramach procesu równoważenia partii. Mimo że istnieją inne opcje zwalniania materiałów produkcyjnych do magazynu, nie można ich używać dla wierszy formuł.
 
 -   Jeśli w produkcie nie włączono obsługi procesów zarządzania magazynem, dla produktu jest tworzona lista pobrania produkcji podczas potwierdzania i zwalniania formuły.

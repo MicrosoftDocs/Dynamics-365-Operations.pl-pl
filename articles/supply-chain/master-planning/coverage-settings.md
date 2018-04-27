@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bd85f89917659ac9c94590bace765b2123d6e556
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 591b1cd739bb3be61299f33f180ca7c264d21a35
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="coverage-settings"></a>Ustawienia zapotrzebowania
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ustawienia zapotrzebowania są używane przez planowanie główne do obliczania zapotrzebowań na towary. 
 
@@ -46,7 +45,7 @@ Ustawienia zapotrzebowania można określić na kilka sposobów:
 
 <!-- -->
 
--   Określ ustawienia zapotrzebowania dla grupy wymiarów. Kliknij kolejno opcje **Zarządzanie informacjami o produktach &gt; Wspólne &gt; Zwolnione produkty**. Na stronie **Szczegóły zwolnionego produktu** na karcie **Ogólne** w grupie **Administracja** kliknij łącze **Grupa wymiarów magazynowania**. Na stronie **Grupa wymiarów magazynowania** wybierz pole **Plan zapotrzebowania wg wymiaru**, aby utworzyć ustawienia zapotrzebowania dla wymiaru w grupie wymiarów magazynowania. Wszystkie wymiary produktów, takie jak konfiguracja, kolor, rozmiar, styl, muszą mieć zaznaczone pole **Plan zapotrzebowania wg wymiaru**.
+- Określ ustawienia zapotrzebowania dla grupy wymiarów. Kliknij kolejno opcje <strong>Zarządzanie informacjami o produktach &gt; Wspólne &gt; Zwolnione produkty</strong>. Na stronie <strong>Szczegóły zwolnionego produktu** na karcie **Ogólne</strong> w grupie <strong>Administracja</strong> kliknij łącze <strong>Grupa wymiarów magazynowania</strong>. Na stronie <strong>Grupa wymiarów magazynowania</strong> wybierz pole <strong>Plan zapotrzebowania wg wymiaru</strong>, aby utworzyć ustawienia zapotrzebowania dla wymiaru w grupie wymiarów magazynowania. Wszystkie wymiary produktów, takie jak konfiguracja, kolor, rozmiar, styl, muszą mieć zaznaczone pole <strong>Plan zapotrzebowania wg wymiaru</strong>.
 
 
 

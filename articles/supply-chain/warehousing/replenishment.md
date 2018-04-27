@@ -20,16 +20,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1b6086f7769086a9cdbb61c03882ea21d908ab4a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="replenishment"></a>Uzupełnianie zapasów
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano strategie uzupełniania zapasów, które są dostępne dla magazynów używających funkcji dostępnych w module Zarządzanie magazynem. Informacje w tym temacie nie mają zastosowania do aplikacji magazynowej dostępnej w module Zarządzanie zapasami.
 
@@ -67,13 +67,15 @@ Strategia uzupełniania zapasów popytu ładunku sumuje popyt kilku ładunków i
 Zamiast sumować popyt na końcu procesu alokacji i uzupełniać zapasy na podstawie zsumowanej ilości, można zastosować strategię natychmiastowego uzupełniania zapasów. Gdy używana jest ta strategia zapasy mogą zostać uzupełnione natychmiast po błędzie wiersza dyrektywy lokalizacji. Dlatego można skonfigurować uzupełnianie zapasów tak, aby było ograniczone przez określone jednostki i używało ilości ustawione dla określonych lokalizacji.
 
 ## <a name="replenishment-prerequisites"></a>Warunki wstępne uzupełniania zapasów
-| Wymaganie wstępne            | opis |
-|-------------------------|-------------|
-| Pozycja                    | Dla danego towaru musi być możliwa obsługa zarządzania magazynem. |
-| Magazyn               | Musi być możliwe zarządzanie danym magazynem. Aby włączyć magazyn dla procesów zarządzania magazynem, na stronie **Magazyny** wybierz magazyn, a następnie zaznacz opcję **Użyj procesów zarządzania magazynami**. |
-| Szablony uzupełniania zapasów | Musi być skonfigurowany co najmniej jeden szablon uzupełnienia według minimalnej/maksymalnej ilości, uzupełniania popytu grupy czynności lub uzupełniania zapasów popytu ładunku. |
-| Lokalizacje               | Lokalizacje muszą być utworzone i połączone z profilem lokalizacji. |
-| Profile lokalizacji       | Profile lokalizacji są wymagane w celu utworzenia lokalizacji. |
-| Dyrektywy lokalizacji     | Dyrektywy lokalizacji są wymagane w celu skierowania pracy do lokalizacji, w których jest wymagane uzupełnianie zapasów i z których będą pobierane zapasy. |
-| Szablony pracy          | Szablony pracy typu **Uzupełnianie zapasów** są wymagane w celu utworzenia pracy uzupełniania zapasów, która spowoduje przeniesienie zapasów do żądanych lokalizacji. |
+
+|      Wymaganie wstępne       |                                                                                                                                opis                                                                                                                                 |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|          Pozycja           |                                                                                                        Dla danego towaru musi być możliwa obsługa zarządzania magazynem.                                                                                                        |
+|        Magazyn        | Musi być możliwe zarządzanie danym magazynem. Aby włączyć magazyn dla procesów zarządzania magazynem, na stronie <strong>Magazyny</strong> wybierz magazyn, a następnie zaznacz opcję <strong>Użyj procesów zarządzania magazynami</strong>. |
+| Szablony uzupełniania zapasów |                                                                   Musi być skonfigurowany co najmniej jeden szablon uzupełnienia według minimalnej/maksymalnej ilości, uzupełniania popytu grupy czynności lub uzupełniania zapasów popytu ładunku.                                                                   |
+|        Lokalizacje        |                                                                                                       Lokalizacje muszą być utworzone i połączone z profilem lokalizacji.                                                                                                       |
+|    Profile lokalizacji    |                                                                                                        Profile lokalizacji są wymagane w celu utworzenia lokalizacji.                                                                                                        |
+|   Dyrektywy lokalizacji   |                                                       Dyrektywy lokalizacji są wymagane w celu skierowania pracy do lokalizacji, w których jest wymagane uzupełnianie zapasów i z których będą pobierane zapasy.                                                        |
+|     Szablony pracy      |                                                   Szablony pracy typu <strong>Uzupełnianie zapasów</strong> są wymagane w celu utworzenia pracy uzupełniania zapasów, która spowoduje przeniesienie zapasów do żądanych lokalizacji.                                                    |
+
 

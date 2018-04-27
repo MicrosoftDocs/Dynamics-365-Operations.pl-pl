@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 33a8bc78006ae9e7d5ca905a98886fd7af706604
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6679215a664ddf938a204196b00f3bc28bf65f8f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-insights"></a>Szczegółowe dane finansowe
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Wykorzystując usługę Microsoft Power BI, obszar roboczy **Szczegółowe dane finansowe** zbiera w jednym miejscu kluczowe wskaźniki wydajności (KPI) dotyczące finansów, wykresy i sprawozdania finansowe. Usługa Power BI jest wbudowana w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations.
 Obszar roboczy **Szczegółowe dane finansowe** koncentruje się na sprawozdawczości analitycznej. Osoby z całej organizacji mogą wyświetlać, badać i poznawać informacje oraz działać na ich podstawie. 
@@ -107,8 +107,20 @@ Mimo iż obszar roboczy **Szczegółowe dane finansowe** zawiera sprawozdania fi
 
 Poniższy wykres porównawczy pomoże zidentyfikować różnice między oboma opcjami:
 
-|                                         | **Raporty finansowe**                            | **Szczegółowe dane finansowe**             | |-----------------------------------------|----------------------------------------------------|---------- -------------------------| | **Edytowanie domyślnych raportów**                | Tak                                                | Nie                                 | | **Tworzenie nowych raportów**                  | Tak                                                | Nie                                 | | **Drukowanie raportów**                       | Tak                                                | Nie                                 | | **Eksportowanie do programu Excel**                     | Tak          | Ograniczone Eksportowanie nieprzetworzonych danych do programu Excel — nie jest to sformatowany raport       | | **Obsługa hierarchii raportowania/hierarchii organizacyjnej**   | Tak                               | Nie                                 | | **Sprawozdawczość z danych księgi podrzędnej**       | Tak Ograniczenie do jednego dostawcy i odbiorcy    | Tak Dostawca, odbiorca, grupy dostawców/odbiorców, adresy dostawców/odbiorców itd.  | | **Waluta raportowania**      | Tak Waluta rozliczeniowa i przeliczanie na walutę raportowania       | Nie Tylko waluta raportowania      | | **Zabezpieczenia**                | Tak Zgodność z zabezpieczeniami programu Finance and Operations i drzewa raportowanie | Ograniczone Wyświetlanie raportów dla wszystkich firm (niezależnie od poziomu zabezpieczeń ustawionego w programie Finance and Operations) lub tylko dla aktywnej firmy | | **Obsługa różnych planów kont i lat obrachunkowych** | Tak                   | Nie                   | | **Sprawozdawczość z danych zewnętrznych**                              | Nie                   | Nie                                   | | **Obsługa konsolidacji**                               | Tak                          | Ograniczone Można generować raporty obejmujące wiele firm, ale tylko w walucie rozliczeniowej                                     |
 
+|                                                                       |               <strong>Raporty finansowe</strong>                |                                      <strong>Szczegółowe dane finansowe</strong>                                      |
+|-----------------------------------------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+|                 <strong>Edytowanie domyślnych raportów</strong>                 |                                Tak                                |                                                      Nr                                                       |
+|                  <strong>Tworzenie nowych raportów</strong>                  |                                Tak                                |                                                      Nr                                                       |
+|                    <strong>Drukowanie raportów</strong>                     |                                Tak                                |                                                      Nr                                                       |
+|                   <strong>Eksportuj do programu Excel</strong>                    |                                Tak                                |                           Ograniczone Eksportowanie nieprzetworzonych danych do programu Excel — nie jest to sformatowany raport                           |
+|  <strong>Obsługa hierarchii raportowania/hierarchii organizacyjnej</strong>  |                                Tak                                |                                                      Nr                                                       |
+|               <strong>Sprawozdawczość z danych księgi podrzędnej</strong>               |               Tak Ograniczenie do jednego dostawcy i odbiorcy                |                 Tak Dostawca, odbiorca, grupy dostawców/odbiorców, adresy dostawców/odbiorców itd.                 |
+|                  <strong>Waluta raportowania</strong>                  |    Tak Waluta rozliczeniowa i przeliczanie na walutę raportowania    |                                          Nie Tylko waluta raportowania                                          |
+|                       <strong>Zabezpieczenia</strong>                       | Tak Zgodność z zabezpieczeniami programu Finance and Operations i drzewa raportowania | Ograniczone Wyświetlanie raportów dla wszystkich firm (niezależnie od poziomu zabezpieczeń ustawionego w programie Finance and Operations) lub tylko dla aktywnej firmy |
+| <strong>Obsługa różnych planów kont i lat obrachunkowych</strong> |                                Tak                                |                                                      Nr                                                       |
+|               <strong>Sprawozdawczość z danych zewnętrznych</strong>                |                                Nr                                 |                                                      Nr                                                       |
+|                <strong>Obsługa konsolidacji</strong>                |                                Tak                                |                   Ograniczone Można generować raporty obejmujące wiele firm, ale tylko w walucie rozliczeniowej                   |
 
 Oprócz interfejsu użytkownika znanego z pierwotnej wersji obszaru roboczego **Przegląd dla dyrektora finansowego** są teraz dostępne nowe kluczowe wskaźniki wydajności, wykresy i sprawozdania finansowe. Dostępne są następujące sprawozdania finansowe:
 

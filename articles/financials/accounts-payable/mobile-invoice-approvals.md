@@ -18,17 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 98e32298d1c8285437adf3df9820a71e7a0d7f6c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a44e5d04edf327da2b3ba4676c8b823291801abe
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="mobile-invoice-approvals"></a>Zatwierdzanie faktur na urządzeniach przenośnych
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Funkcje komórkowe w programie Microsoft Dynamics 365 for Finance and Operations pozwalają użytkownikom biznesowym projektować mobilne środowiska obsługi. W scenariuszach zaawansowanych platforma umożliwia również deweloperom rozszerzanie funkcjonalności zgodnie z potrzebami. Najbardziej skutecznym sposobem, aby poznać niektóre nowe koncepcje obsługi na telefonach komórkowych, jest przejście przez proces projektowania w kilku scenariuszach. Ten temat przedstawia praktyczne podejście do projektowania scenariuszy komórkowych na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych. Ten temat powinien ułatwić projektowanie w innych wariantach scenariuszy i może być również wykorzystywany w innych scenariuszach, niezwiązanych z fakturami od dostawców.
 
@@ -127,7 +126,7 @@ Jako ogólną wskazówkę należy pamiętać, aby podczas pracy w projektancie �
 ### <a name="create-the-workspace"></a>Tworzenie obszaru roboczego
 
 1.  W przeglądarce otwórz usługę Finance and Operations i się zaloguj.
-2.  Po zalogowaniu dołącz wyrażenie **&mode=mobile** do adresu URL, jak pokazano w przykładzie poniżej, i odśwież stronę: https://&lt;TwójadresURL&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
+2.  Po zalogowaniu dołącz wyrażenie **&mode=mobile** do adresu URL, jak pokazano w przykładzie poniżej, i odśwież stronę: https://&lt;TwójadresURL&gt;/?cmp=usmf&mi=DefaultDashboard **&mode=mobile**
 3.  Kliknij przycisk **Ustawienia** (koło zębate) w prawym górnym rogu strony, a następnie kliknij opcję **Aplikacja mobilna**. Musi zostać wyświetlony projektant aplikacji komórkowych, tak jak się pojawia Rejestrator zadań.
 4.  Kliknij przycisk **Dodaj**, aby utworzyć nowy obszar roboczy. W tym przykładzie nazwij obszar roboczy **Moje zatwierdzenia**.
 5.  Wprowadź opis.
@@ -173,23 +172,23 @@ Pierwszą stroną środowiska mobilnego, jaką należy zaprojektować, jest list
 
 Aby zaprojektować stronę szczegółów faktur dla urządzeń przenośnych, użyj strony **VendMobileInvoiceHeaderDetails** w usłudze Finance and Operations. Należy zauważyć, że w zależności od liczby faktur istniejących w systemie ta strona pokazuje najstarszą fakturę (tzn. tę, która została utworzona jako pierwsza). Aby znaleźć konkretną fakturę, możesz użyć filtru z lewej strony. Jednak w tym przykładzie nie potrzebujemy konkretnej faktury. Potrzebujemy po prostu jakichś danych faktury, aby móc zaprojektować stronę dla urządzeń przenośnych. [![Strona przepływu pracy](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
-1.  W adresie URL usługi Finance and Operations zastąp nazwę elementu menu wyrażeniem **VendMobileInvoiceHeaderDetails**, aby otworzyć formularz.
-2.  Otwórz projektanta środowiska komórkowego za pomocą przycisku **Ustawienia** (koło zębate).
-3.  Kliknij przycisk **Edytuj**, aby uruchomić tryb edycji w obszarze roboczym.
-4.  Zaznacz utworzoną wcześniej stronę **Moje faktury od dostawców** i kliknij przycisk **Edytuj**.
-5.  Na karcie **Pola** kliknij nagłówek kolumny **Siatka**.
-6.  Kliknij kolejno przyciski **Właściwości** &gt; **Dodaj stronę**. **Uwaga:** Po kliknięciu nagłówka **Siatka** i dodaniu strony automatycznie jest ustanawiana relacja ze stroną szczegółów.
-7.  Wprowadź tytuł strony, taki jak **Szczegóły faktury**, oraz opis, taki jak **Wyświetlanie nagłówka i szczegółów wiersza faktury**.
-8.  Kliknij przycisk **Wybierz pola**. Pamiętaj, że kolejność dodawania będzie kolejnością, w jakiej pola będą wyświetlane użytkownikowi końcowemu. Jedynym sposobem zmiany kolejności pól będzie ponowne wybranie wszystkich pól. 
-9.  Zgodnie z wymaganiami tego scenariusza dodaj następujące pola z nagłówka:
-    - Nazwa dostawcy
-    - Suma faktury
-    - Faktura akonto
-    - Numer faktury
-    - Data faktury
-    - Opis faktury
-    - Termin
-    - Waluta faktury
+1. W adresie URL usługi Finance and Operations zastąp nazwę elementu menu wyrażeniem **VendMobileInvoiceHeaderDetails**, aby otworzyć formularz.
+2. Otwórz projektanta środowiska komórkowego za pomocą przycisku **Ustawienia** (koło zębate).
+3. Kliknij przycisk **Edytuj**, aby uruchomić tryb edycji w obszarze roboczym.
+4. Zaznacz utworzoną wcześniej stronę <strong>Moje faktury od dostawców** i kliknij przycisk **Edytuj</strong>.
+5. Na karcie **Pola** kliknij nagłówek kolumny **Siatka**.
+6. Kliknij kolejno przyciski **Właściwości** &gt; **Dodaj stronę**. **Uwaga:** Po kliknięciu nagłówka **Siatka** i dodaniu strony automatycznie jest ustanawiana relacja ze stroną szczegółów.
+7. Wprowadź tytuł strony, taki jak **Szczegóły faktury**, oraz opis, taki jak **Wyświetlanie nagłówka i szczegółów wiersza faktury**.
+8. Kliknij przycisk **Wybierz pola**. Pamiętaj, że kolejność dodawania będzie kolejnością, w jakiej pola będą wyświetlane użytkownikowi końcowemu. Jedynym sposobem zmiany kolejności pól będzie ponowne wybranie wszystkich pól. 
+9. Zgodnie z wymaganiami tego scenariusza dodaj następujące pola z nagłówka:
+   - Nazwa dostawcy
+   - Suma faktury
+   - Faktura akonto
+   - Numer faktury
+   - Data faktury
+   - Opis faktury
+   - Termin
+   - Waluta faktury
 
 10. Dodaj następujące pola z siatki wierszy na stronie:
     - Kategoria zaopatrzenia
@@ -199,7 +198,7 @@ Aby zaprojektować stronę szczegółów faktur dla urządzeń przenośnych, uż
     - Wartość 1099
 
 11. Po dodaniu wszystkich pól z dwóch poprzednich kroków kliknij przycisk **Gotowe**. Strona musi przypominać tę na ilustracji poniżej.
-[![Strona po dodaniu pól](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Strona po dodaniu pól](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 12. Kliknij przycisk **Gotowe**, aby wyjść z trybu edycji.
 13. Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
 14. Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
@@ -296,14 +295,14 @@ Aby dodać akcje przepływu pracy, użyj strony **VendMobileInvoiceHeaderDetails
 
 ### <a name="vendor-invoice-attachments"></a>Załączniki faktur od dostawców
 
-1.  Kliknij przycisk **Ustawienia** (koło zębate) w prawym górnym rogu strony, a następnie kliknij opcję **Aplikacja mobilna**.
-2.  Kliknij przycisk **Edytuj**, aby uruchomić tryb edycji w obszarze roboczym.
-3.  Zaznacz utworzoną wcześniej stronę **Szczegóły faktury** i kliknij przycisk **Edytuj**.
-4.  Ustaw w opcji **Zarządzanie dokumentami** wartość **Tak**, jak pokazano poniżej. **Uwaga:** Jeśli nie ma żadnego wymogu wyświetlania załączników na urządzeniu przenośnym, można pozostawić tę opcję ustawioną na **Nie**, co jest ustawieniem domyślnym.
-![Zarządzanie dokumentami](./media/docmanagement-216x300.png)
-6.  Kliknij przycisk **Gotowe**, aby wyjść z trybu edycji.
-7.  Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
-8.  Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
+1. Kliknij przycisk **Ustawienia** (koło zębate) w prawym górnym rogu strony, a następnie kliknij opcję **Aplikacja mobilna**.
+2. Kliknij przycisk **Edytuj**, aby uruchomić tryb edycji w obszarze roboczym.
+3. Zaznacz utworzoną wcześniej stronę <strong>Szczegóły faktury** i kliknij przycisk **Edytuj</strong>.
+4. Ustaw w opcji **Zarządzanie dokumentami** wartość **Tak**, jak pokazano poniżej. **Uwaga:** Jeśli nie ma żadnego wymogu wyświetlania załączników na urządzeniu przenośnym, można pozostawić tę opcję ustawioną na **Nie**, co jest ustawieniem domyślnym.
+   ![Zarządzanie dokumentami](./media/docmanagement-216x300.png)
+5. Kliknij przycisk **Gotowe**, aby wyjść z trybu edycji.
+6. Kliknij kolejno przyciski **Wstecz** i **Gotowe**, aby wyjść z obszaru roboczego.
+7. Kliknij przycisk **Opublikuj obszar roboczy**, aby zapisać swoją pracę.
 
 ### <a name="vendor-invoice-line-distributions"></a>Dystrybucje wierszy faktury od dostawcy
 

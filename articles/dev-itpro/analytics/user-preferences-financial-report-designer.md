@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1cabaf8a579fcd9722e409630038167afb07ffc6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d0307db3a49bcdb62146b815383f744c5b8e0fde
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="user-preferences-in-financial-report-designer"></a>Preferencje użytkownika w projektancie raportów finansowych
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule wyjaśniono, jak skonfigurować preferencje użytkownika, aby dostosować swoje interakcje w projektancie raportów finansowych i kontrolować zachowanie interfejsu podczas pierwszego logowania. Można też kontrolować sposób wyświetlania indywidualnych raportów, biblioteki raportów i domyślnych lokalizacje plików. 
 
@@ -63,7 +62,7 @@ W tym artykule wyjaśniono, jak skonfigurować preferencje użytkownika, aby dos
 <td>Wybierz, czy chcesz otrzymywać komunikat ostrzegawczy przy zamykaniu aplikacji. Ten komunikat pomaga zagwarantować, że program nie został zamknięty przypadkowo.</td>
 </tr>
 <tr class="odd">
-<td>Automatycznie zastosuj podkreślenie komórki w nagłówkach kolumn</td>
+<td>Automatycznie stosuj podkreślenie komórki w nagłówkach kolumn</td>
 <td>Wybierz, czy ma być wstawiane podkreślenie w komórce nagłówka nowej kolumny.</td>
 </tr>
 <tr class="even">
