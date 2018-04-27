@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Zwalnianie wierszy BOM i wierszy formuły do magazynu
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano proces zwalniania surowca dla wierszy listy składowej (BOM) i formuły do magazynu. Przy zwalnianiu wiersza BOM lub formuły do magazynu system najpierw określa, czy materiał jest już dostępny w lokalizacji wejściowej produkcji w zakładzie, gdzie materiał zostanie wykorzystany w procesie produkcji.
 
@@ -44,7 +44,7 @@ Metoda używana do zwalniania wierszy BOM i formuły jest kontrolowana przez par
 - **Zwolnienie wierszy BOM i formuły za pomocą zadania wsadowego lub jako interakcja ręczna** — w tej metodzie wiersze BOM i formuły można zwolnić tylko za pomocą zadania wsadowego **Automatyczne zwalnianie wierszy BOM i formuły** lub za pomocą interakcji ręcznej. Aby ręcznie zwolnić wiersze BOM i formuły, na stronie listy zlecenia produkcyjnego lub stronie szczegółów zlecenia produkcyjnego, w okienku akcji, wybierz opcję **Zwolnij do magazynu**.
 
 Aby zapoznać się z szybką demonstracją zwalniania wierszy BOM i formuły do produkcji przy użyciu zadania wsadowego, obejrzyj ten krótki film na YouTube:
-[!Video https://www.youtube.com/embed/8urAJn50dQ8]
+[!Video <https://www.youtube.com/embed/8urAJn50dQ8>]
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Zwalnianie wierszy BOM i formuły za pomocą zadania wsadowego
 
@@ -86,7 +86,7 @@ Poniższa operacja przedstawia zlecenie produkcyjne zawierające dwie operacje, 
 ![Przykład zwalniania materiału według numeru operacji](media/two-operations.PNG)
 
 Aby zapoznać się z szybką demonstracją zwalniania materiału proporcjonalnie do ilości wyrobów gotowych, obejrzyj ten krótki film na YouTube:
-[!Video https://www.youtube.com/embed/Rm3ojAz6Zu0]
+[!Video <https://www.youtube.com/embed/Rm3ojAz6Zu0>]
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Zwalnianie materiału proporcjonalnie do ilości wyrobów gotowych
 

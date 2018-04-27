@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchasing-policies"></a>Zasady zakupów
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o zasadach zakupów. Zasady zakupów to zbiór reguł, który steruje procesem zapotrzebowań. Zasady zakupów ułatwiają administratorom zaopatrzenia wdrażanie strategii zaopatrzenia poprzez utworzenie struktury zasad dopasowanej do strategicznych wymagań zakupowych organizacji.
 

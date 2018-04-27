@@ -29,8 +29,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="call-center-functionality"></a>Funkcje biura obsługi
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ten artykuł zawiera omówienie funkcji biura obsługi dostępnych w programie Microsoft Dynamics 365 for Retail.
 

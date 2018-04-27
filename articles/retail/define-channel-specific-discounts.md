@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-channel-specific-discounts"></a>Definiowanie rabatów właściwych dla kanału
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Sprzedawcy detaliczni często ustawiają różne rabaty w różnych kanałach. W tym temacie opisano pojęcia, które należy znać, aby tworzyć rabaty dla konkretnych kanałów. 
 
@@ -61,7 +60,7 @@ Przykład poniżej ilustruje zadania niezbędne do skonfigurowania rabatu kanał
 4.  Po utworzeniu nowego rabatu **Powrót-do-szkoły** musisz kliknąć **Grupy cenowe** na górze strony **Rabat**. Otworzy się strona **Grupy cenowe rabatów**. Następnie kliknij **Nowa** i wybierz grupę cenową **Houston-GC**.
 5.  Teraz można włączyć rabatu i przesunąć go do kanału.
 
- 
+
 
 <a name="see-also"></a>Informacje dodatkowe
 --------

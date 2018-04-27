@@ -25,8 +25,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="cfo-overview-power-bi-content"></a>Pakiet zawartości usługi Power BI Przegląd dla dyrektora finansowego
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)] 
 
 W tym temacie opisano pakiet zawartość **Przegląd dla dyrektora finansowego** dostępny dla usługi Microsoft Power BI. Ten pakiet zawartości usługi Power BI ma zastosowanie do klientów używających programu Microsoft Dynamics 365 for Finance and Operations w wersji 7.2. Jeśli używasz wersji 7.3 lub nowszej, zobacz [Szczegółowe dane finansowe](financial-insights.md).
 

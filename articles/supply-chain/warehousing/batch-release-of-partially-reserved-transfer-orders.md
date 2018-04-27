@@ -27,7 +27,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Wsadowe zwalnianie częściowo zarezerwowanych zamówień przeniesienia
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Funkcja zwalniania wsadowego częściowo zarezerwowanych zamówień przeniesienia umożliwia częściowe zwolnienie zamówień przeniesienia do magazynu za pomocą zadania wsadowego.
 Ponieważ masz możliwość zwolnienia częściowej ilości, nie musisz czekać ze zwolnieniem zamówienia, aż cała ilość z zamówienia będzie dostępne w magazynie.

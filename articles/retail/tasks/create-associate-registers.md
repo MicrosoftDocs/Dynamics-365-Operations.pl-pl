@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-and-associate-registers"></a>Tworzenie i kojarzenie kas
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ta procedura przedstawia sposób tworzenia kasy w punkcie sprzedaży (POS). Procedura wykorzystuje dane firmy demonstracyjnej USRT.
 

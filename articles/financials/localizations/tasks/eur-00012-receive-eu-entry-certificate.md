@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="receive-an-eu-entry-certificate"></a>Odbiór świadectw wywozowych UE
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura prowadzi przez proces rejestrowania świadectwa wywozowego UE wystawionego przez jednostkę zewnętrzną i otrzymanego od odbiorcy.
 

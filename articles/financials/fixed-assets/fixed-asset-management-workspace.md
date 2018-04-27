@@ -27,7 +27,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="fixed-asset-management-workspace"></a>Obszar roboczy Zarządzanie środkami trwałymi
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Obszar roboczy **Zarządzanie środkami trwałymi** pokazuje informacje związane z środkami trwałymi wprowadzonymi w systemie. Zawiera widoki podsumowania i analizy. Karta **Moja praca** zawiera kafelki podsumowań, szczegóły środków trwałych oraz pokrewne informacje o środkach trwałych w bieżącej firmie. Można również dodawać analizy do sekcji analiz w narzędziu Power BI bezpośrednio w obszarze roboczym. Karta **Analizy — wszystkie firmy** wykorzystuje funkcje usługi Microsoft Power BI, aby pokazać wizualizacje dotyczące środków trwałych we wszystkich firmach.
 

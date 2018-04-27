@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Konfigurowanie szablonu pracy dla zamówień zakupu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura skupia się na konfigurowaniu prostego szablonu pracy, który ma być używany podczas odkładania przyjętych towarów. Szablony pracy decydują o zbiorze instrukcji przedstawianych pracownikowi magazynu na urządzeniu przenośnym w trakcie przenoszenia towarów w obszarze przyjęcia. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF. Przed rozpoczęciem tego przewodnika należy utworzyć identyfikator puli pracy. W tym przykładzie jest używany identyfikator puli pracy o nazwie w Przychodzące. Ta procedura jest przeznaczona dla kierownika magazynu.
 

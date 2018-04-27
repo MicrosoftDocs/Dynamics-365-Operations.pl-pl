@@ -19,16 +19,18 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: f50e58d63a9db4d6a8b5390174e2c7b87970717d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6db51f9fa180f0b8ce203fd2812c562b0201afa8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-integration-with-other-modules"></a>Integracja modułu Planowanie budżetu z innymi modułami
 
-[!include[banner](../includes/banner.md)] Plany budżetu mogą być generowane z kilku różnych zasobów. Podstawowe elementy przetwarzania okresowego są takie same dla wszystkich zasobów. 
+[!INCLUDE [banner](../includes/banner.md)]
+
+ Plany budżetu mogą być generowane z kilku różnych zasobów. Podstawowe elementy przetwarzania okresowego są takie same dla wszystkich zasobów. 
 
 
 
@@ -66,7 +68,7 @@ Opcja **Historyczny** na karcie **Cel** umożliwia używanie dat z danych źród
 
 Pole **Agreguj sumę według** u góry strony określa również używaną datę. To pole sumuje kwoty i opcjonalnie ustawia datę obowiązywania na pierwszy dzień roku lub okresu obrachunkowego. 
 
-Wiele pól na karcie **Celu** staje się dostępne do edycji lub tylko do odczytu, w zależności od wybranej akcji. W przypadku zmiany z tworzenia nowego planu budżetu na aktualizację istniejącego planu pole **Nazwa planu budżetu** staje się niedostępne, a dostępne stają się pola związane z wybieraniem istniejącego planu. Zarówno na karcie **Cel**, jak i karcie **Źródło**, pole **Księga** jest zawsze niedostępne, ponieważ wartość zależy od wybranego procesu planowania budżetu. 
+Wiele pól na karcie <strong>Celu</strong> staje się dostępne do edycji lub tylko do odczytu, w zależności od wybranej akcji. W przypadku zmiany z tworzenia nowego planu budżetu na aktualizację istniejącego planu pole <strong>Nazwa planu budżetu</strong> staje się niedostępne, a dostępne stają się pola związane z wybieraniem istniejącego planu. Zarówno na karcie <strong>Cel</strong>, jak i <strong>Źródło**, pole **Księga</strong> jest zawsze niedostępne, ponieważ wartość zależy od wybranego procesu planowania budżetu. 
 
 Pole **Klasa budżetu** pozwala wybrać wiersze planu budżetu jako transakcje wydatkowe lub transakcje przychodu. Zazwyczaj transakcje przychodu stanowią kredyt na koncie księgowym i dlatego są zapisywane jako liczby ujemne. Te transakcje pojawiają się również zwykle jako kwoty ujemne w planie budżetu. Jednak po dodaniu klasy budżetu jako pola w układzie planu można włączyć wyświetlanie przychodu jako wartości dodatnich.
 
@@ -111,7 +113,7 @@ Nie ma pola **Klasa budżetu**, ponieważ klasa budżetu (**Wydatki** lub **Przy
 
 Można używać budżetów projektu jako źródła przez wybraniu modelu prognozy zawierającego kwoty budżetu projektu. Należy pamiętać, że budżety projektu tworzą wpisy prognozy projektu po zatwierdzeniu.
 
-Aby wybrać tylko koszty lub przychody dla wierszy planu budżetu, należy za pomocą filtru wybrać **Aktualizacje budżetu: Typ kwoty = Koszt**. Aby wybrać tylko jeden typ prognozy, należy za pomocą filtru wybrać **Aktualizacje budżetu: Typ transakcji = *xxx***. 
+Aby wybrać tylko koszty lub przychody dla wierszy planu budżetu, należy za pomocą filtru wybrać <strong>Aktualizacje budżetu: Typ kwoty = Koszt</strong>. Aby wybrać tylko jeden typ prognozy, należy za pomocą filtru wybrać <strong>Aktualizacje budżetu: Typ transakcji = *xxx</strong>*. 
 
 Tylko jeden model prognozy może służyć do generowania scenariusza planu budżetu. Jeśli uruchomisz procesu dla jednego modelu prognozy, wykonasz aktualizację i spróbujesz określić inny model, pierwszy model zostanie zastąpiony, jeśli obowiązują te same konta projektu i księgowe. Aby wygenerować scenariusz planu budżetu z więcej niż jednego modelu prognozy, należy wygenerować je do różnych scenariuszy planu budżetu i użyć opcji alokacji, aby dodać je w innym scenariuszu. 
 

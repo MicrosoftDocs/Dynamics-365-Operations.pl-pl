@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-dimensions-and-posting"></a>Wymiary finansowe i księgowanie 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Podczas planowania i konfigurowania planu kont należy wziąć pod uwagę, jak różne składniki będą współpracowały podczas księgowania dokumentu lub arkusza. Te składniki obejmują struktury kont, zaawansowane reguły oraz wymiary bilansowania i stałe. W tym temacie przestawiono poszczególne składniki i opisano sposób ich współdziałania.
 

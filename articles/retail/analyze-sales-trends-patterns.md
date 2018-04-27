@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="analyze-sales-trends-and-patterns"></a>Analizowanie trendów i wzorców sprzedaży
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 W module Microsoft Dynamics 365 for Retail istnieje możliwość badania trendów i wzorców sprzedaży w czasie rzeczywistym.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="intelligence"></a>Analizy
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat odsyła do zasobów zawierających informacje na temat narzędzi do wykonywania analiz biznesowych (BI) i raportowania dostępnych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations.
 

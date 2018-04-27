@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="fixed-assets-home-page"></a>Środki trwałe — strona główna
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Środki trwałe to składniki majątku, takie jak budynki, pojazdy, grunty, maszyny i urządzenia, które należą do osoby fizycznej lub organizacji. 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a>Kontrola zużycia surowców za pomocą zasad usuwania
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Reguły rozliczania odzwierciedlają różne strategie zużycia surowców wykorzystywanych w procesach produkcji. Zużycie to proces obejmujący odejmowanie materiałów z dostępnych zapasów i ustawianie w zużywanych materiałach wartości **Praca w toku** (PWT) dla zleceń produkcyjnych i szarż produkcyjnych. Surowce są zazwyczaj zużywane z lokalizacji skonfigurowanej dla procesu wykorzystującego materiał. Ta lokalizacja jest nazywana lokalizacją wejściową produkcji.
 

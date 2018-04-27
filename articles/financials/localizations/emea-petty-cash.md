@@ -18,17 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9ecc38597123b74c8368ed41d843826d826f90f8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4467987c4bb25ec7c44550c9e941298e459bbf22
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="petty-cash-for-eastern-europe"></a>Gotówka podręczna dla krajów Europy Wschodniej
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o funkcji gotówki podręcznej, która pozwala użytkownikom w Estonii, na Litwie, w Czechach, na Węgrzech, na Łotwie, w Polsce i w Rosji uwzględniać operacje gotówkowe w systemie.
 
@@ -469,6 +468,7 @@ Rozliczona kwota znajduje odzwierciedlenie w polu <strong>Rozliczona waluta</str
 </table>
 
 ## <a name="inquiries-and-reports"></a>Zapytania i raporty
+
 | Zapytanie lub raport                             | opis                                                                                                                                                                                                                     |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Widok transakcji kasowych                        | Dla wiersza arkusza kasowego przycisk **Zapytania** w okienku akcji pozwala wyświetlić transakcje kasowe, saldo kasowe i inne informacje.                                                                                  |

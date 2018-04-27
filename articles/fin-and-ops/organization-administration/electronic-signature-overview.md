@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="electronic-signature-overview"></a>Omówienie podpisów elektronicznych
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie podpisów elektronicznych, a także opis sposobu ich używania w programie Microsoft Dynamics 365 for Finance and Operations.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="manage-warehouse-workers"></a>Zarządzanie pracownikami magazynu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł opisuje sposób korzystania z programu Microsoft Dynamics 365 for Finance and Operations do zwiększania kontroli i monitorowania pracy, która jest wykonywana przez pracowników w magazynach.
 

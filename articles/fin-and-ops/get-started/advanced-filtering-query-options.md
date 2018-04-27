@@ -19,17 +19,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1fe940d2d282a5b4468b3ba572626b5c87839e6d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4361311be0cf5c33c9b2fa4700b084a7b43f5b65
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advanced-filtering-and-query-syntax"></a>Składnia zaawansowanego filtrowania i zapytań
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule opisano opcje filtrowania i kwerend dostępne dla operatora „dopasowania” w oknie dialogowym Zaawansowany filtr/sortowanie.
 
@@ -68,7 +67,7 @@ W tym artykule opisano opcje filtrowania i kwerend dostępne dla operatora „do
 <td><em>Od</em>..<em>Do</em> (dwie kropki)</td>
 <td>Między wartościami rozdzielonymi dwoma kropkami</td>
 <td>Wpisz wartość Od, a po niej dwie kropki i wartość Do.</td>
-<td>Wyrażenie <strong>1..10</strong> pozwala wyszukać wszystkie wartości od 1 do 10. Jednak w polu tekstowym wyrażenie <strong>A..C</strong> pozwala wyszukać wszystkie wartości rozpoczynające się od &quot;A&quot; i &quot;B&quot; oraz dokładnie równe &quot;C&quot;. To zapytanie nie pozwala na przykład znaleźć wyrażenia &quot;Ca&quot;. Aby wyszukać wszystkie wartości od &quot;A*&quot; do &quot;C*&quot; włącznie, wpisz <strong>A..D</strong>.</td>
+<td>Wyrażenie <strong>1..10</strong> pozwala wyszukać wszystkie wartości od 1 do 10. Jednak w polu tekstowym wyrażenie <strong>A..C</strong> pozwala wyszukać wszystkie wartości rozpoczynające się od &quot;A&quot; i &quot;B&quot; oraz dokładnie równe &quot;C&quot;. To zapytanie nie pozwala na przykład znaleźć wyrażenia &quot;Ca&quot;. Aby wyszukać wszystkie wartości od &quot;A<em>&quot; do &quot;C</em>&quot; włącznie, wpisz <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>wartość</em> (dwie kropki)</td>
@@ -97,20 +96,20 @@ W tym artykule opisano opcje filtrowania i kwerend dostępne dla operatora „do
 <tr class="even">
 <td><em>wartość</em>* (gwiazdka)</td>
 <td>Począwszy od wprowadzonej wartości</td>
-<td>Wpisz wartość początkową, a następnie gwiazdkę (<strong>*</strong>).</td>
-<td>Wyrażenie <strong>S*</strong> pozwala wyszukać wszystkie ciągi znaków rozpoczynające się literą &quot;S&quot;, takie jak &quot;Sztokholm&quot;, &quot;Sydney&quot; i &quot;San Francisco&quot;.</td>
+<td>Wpisz wartość początkową, a następnie gwiazdkę (<strong><em></strong>).</td>
+<td>Wyrażenie <strong>S</em></strong> pozwala wyszukać wszystkie ciągi znaków rozpoczynające się literą &quot;S&quot;, takie jak &quot;Sztokholm&quot;, &quot;Sydney&quot; i &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>wartość</em> (gwiazdka)</td>
+<td><em><em>wartość</em> (gwiazdka)</td>
 <td>Kończące się wprowadzoną wartością</td>
 <td>Wpisz gwiazdkę, a następnie wartość końcową.</td>
-<td>Wyrażenie <strong>*chód</strong> pozwala wyszukać wszystkie ciągi znaków kończące się literami &quot;chód&quot;, takie jak &quot;Wschód&quot; i &quot;Zachód&quot;.</td>
+<td>Wyrażenie <strong></em>chód</strong> pozwala wyszukać wszystkie ciągi znaków kończące się literami &quot;chód&quot;, jak &quot;Wschód&quot; i &quot;Zachód&quot;.</td>
 </tr>
 <tr class="even">
-<td>*<em>wartość</em>* (gwiazdka)</td>
+<td><em><em>wartość</em></em> (gwiazdka)</td>
 <td>Zawiera wprowadzoną wartość</td>
 <td>Wpisz gwiazdkę, a po niej wartość i kolejną gwiazdkę.</td>
-<td>Wyrażenie <strong>*ch*</strong> pozwala wyszukać wszystkie ciągi znaków zawierające litery &quot;ch&quot;, takie jak &quot;Wschód&quot; i &quot;Zachód&quot;.</td>
+<td>Wyrażenie <strong><em>ch</em></strong> pozwala wyszukać wszystkie ciągi znaków zawierające litery &quot;ch&quot;, takie jak &quot;Wschód&quot; i &quot;Zachód&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (pytajnik)</td>
@@ -131,7 +130,7 @@ W tym artykule opisano opcje filtrowania i kwerend dostępne dla operatora „do
 <td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
 </tr>
 <tr class="even">
-<td>W</td>
+<td>T</td>
 <td>Data dzisiejsza</td>
 <td>Wpisz <strong>T</strong>.</td>
 <td><strong>T</strong> pasuje do bieżącej daty.</td>

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-channel-attributes"></a>Definiowanie atrybutów kanału
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Wzbogać kanał przez dodanie atrybutów kanału i produktów. Przed zdefiniowaniem atrybutów należy dodać kanał do domyślnej hierarchii organizacyjnej.
 

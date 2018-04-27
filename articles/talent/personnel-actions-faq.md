@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personnel-actions-faq"></a>Akcje dotyczące pracowników (często zadawane pytania)
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Ten temat zawiera odpowiedzi na pytania, które mogą się pojawić, jeśli organizacja używa akcji dotyczących pracowników. Akcje dotyczące pracowników są to dodatkowe kroki, które należy wykonać podczas wykonywania pewnych zadań związanych z pracownikami. Przykłady zadań, które mogą wymagać akcji dotyczących pracowników to zadania podczas tworzenia nowych stanowisk, modyfikowania istniejących wartości stanowisk, zatrudniania nowych pracowników, przenoszenia pracowników, zmiany wynagrodzenia pracownika, zmiany przypisania stanowiska lub zwalniania pracowników.
 
@@ -64,9 +64,9 @@ Otwórz jakiekolwiek strony listy akcji dotyczących pracowników i wybierz akcj
 Jeśli żądanie akcji dotyczących pracowników nie powiedzie się, wykonaj następujące kroki w celu usunięcia błędu i ponownego przesłania żądania:
 
 > 1. W **okienku akcji** kliknij przycisk **Tekst błędu**, aby wyświetlić tekst komunikatu, który opisuje problem.
-
+> 
 > 2. W **okienku akcji** kliknij przycisk **Aktywuj ponownie**, aby załadować najnowsze informacje i ustawić stan akcji dotyczącej pracowników z powrotem na **Wersja robocza**.
-
+> 
 > 3. Usuń błąd, a następnie kliknij przycisk **Zakończ** lub **Prześlij**.
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Co się dzieje z akcją dotyczącą pracowników, używającą przepływu pracy po zakończeniu ostatniego zatwierdzenia?

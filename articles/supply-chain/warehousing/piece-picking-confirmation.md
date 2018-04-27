@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="piece-picking-confirmation"></a>Potwierdzenie pobrania sztuk
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Funkcja pobrania sztuk umożliwia potwierdzanie każdego artykułu w zapasach za pomocą pracy pobrania lub inwentaryzacji na urządzeniu przenośnym. Dla pobrań można potwierdzić ilość pracy do przetworzenia aż do ilości wymienionej w pracy, która ma zostać pobrana. Dla pracy inwentaryzacji pracy można skanować inwentaryzowane zapasy oraz śledzić łączną ilość.
 
@@ -46,8 +46,10 @@ Pobranie sztuk działa dla wszystkich prac inwentaryzacji oraz dla pierwszego po
 
 W przypadku pracy typu Pobranie lub Inwentaryzacja są dostępne następujące opcje do wyboru.
 
-| Opcja        | opis   | 
-| ------------- | ------------- |
-| Potwierdzenie pobrania sztuk   | Dostępne dla typów prac Pobranie i Inwentaryzacja. Opcja Potwierdzenie produktu jest automatycznie zaznaczona. Umożliwia potwierdzenie każdego artykułu w zapasach z urządzenia przenośnego. | 
-| Maksymalna liczba sztuk     | Dostępne dla pracy pobrania, jeśli włączono funkcję potwierdzania pobrania sztuk. Ustawia limit liczby sztuk, które należy potwierdzić. |  
+
+|           Opcja           |                                                                            opis                                                                            |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Potwierdzenie pobrania sztuk | Dostępne dla typów prac Pobranie i Inwentaryzacja. Opcja Potwierdzenie produktu jest automatycznie zaznaczona. Umożliwia potwierdzenie każdego artykułu w zapasach z urządzenia przenośnego. |
+|  Maksymalna liczba sztuk  |                   Dostępne dla pracy pobrania, jeśli włączono funkcję potwierdzania pobrania sztuk. Ustawia limit liczby sztuk, które należy potwierdzić.                   |
+
 

@@ -3,7 +3,7 @@ title: "Przestarzałe funkcje"
 description: "W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia."
 author: sericks007
 manager: AnnBe
-ms.date: 02/05/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 0618d71fdb4b29bfdacd6b9e1a8ed47e03abe00d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e629673c3a923ec74809e276ec39464bfacda124
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="removed-or-deprecated-features"></a>Usunięte lub przestarzałe funkcje
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano funkcje, które zostały usunięte z programu Microsoft Dynamics 365 for Finance and Operations lub są przestarzałe.
 
@@ -37,7 +37,10 @@ W tym temacie opisano funkcje, które zostały usunięte z programu Microsoft Dy
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
 > [!Note]
-> Począwszy od programu Dynamics 365 for Finance and Operations, Enterprise edition w wersji z lipca 2017 z aktualizacją platformy 8, dla każdej usuniętej lub przestarzałej funkcji podano typy wdrożeń. Wszystkie poprzednie wersje podane w tym temacie obsługiwały tylko wdrożenie w chmurze.
+> Począwszy od programu Dynamics 365 for Finance and Operations w wersji z lipca 2017 z aktualizacją platformy 8 dla każdej usuniętej lub przestarzałej funkcji podano typy wdrożeń. Wszystkie poprzednie wersje podane w tym temacie obsługiwały tylko wdrożenie w chmurze.
+
+## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Glosariusz terminów używanych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations 8.0 z aktualizacją platformy 15
+Żadne funkcje nie zostały usunięte ani wycofane w tej wersji. Aktualizacja platformy 15 jest zbiorcza i zawiera nowe oraz zmienione funkcje z aktualizacji platformy 13, 14 i 15.
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Glosariusz terminów używanych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 z aktualizacją platformy
 
@@ -1033,10 +1036,11 @@ Aplikacja na tablety z systemem Windows 8 zawierała funkcje wprowadzania i zatw
 
 ### <a name="x-financial-statements"></a>Sprawozdania finansowe X++
 
-|   |  |
-|------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Ta funkcja została zastąpiona inną funkcją.                                    |
-| **Zamieniona przez inną funkcję?**   | Program Management Reporter (oznaczony jako **Raporty finansowe** w bieżącej wersji systemu Dynamics AX) |
-| **Powiązane obszary produktów**         | Księga główna                                                                              |
-| **Stan**                         | Usunięto w systemie Dynamics AX 2012                                                              |
+|                                                 |                                                                                                          |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| <strong>Przyczyna wycofania/usunięcia</strong> |                         Ta funkcja została zastąpiona inną funkcją.                         |
+|  <strong>Zamieniona przez inną funkcję?</strong>  | Program Management Reporter (oznaczony jako <strong>Raporty finansowe</strong> w bieżącej wersji systemu Dynamics AX) |
+|     <strong>Powiązane obszary produktów</strong>     |                                              Księga główna                                              |
+|             <strong>Stan</strong>             |                                      Usunięto w systemie Dynamics AX 2012                                      |
+
 

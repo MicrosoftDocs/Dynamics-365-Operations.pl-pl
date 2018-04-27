@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="before-you-buy"></a>Zanim kupisz 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To Twój pierwszy kontakt z oprogramowaniem Dynamics 365 for Finance and Operations? Przygotowaliśmy wytyczne krok po kroku, z których można korzystać niezależnie od tego, czy dopiero oceniasz przydatność programu Finance and Operations, czy też wiążąco chcesz dokonać zakupu.
 

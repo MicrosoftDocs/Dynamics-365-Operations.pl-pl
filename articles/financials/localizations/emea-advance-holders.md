@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="advance-holders"></a>Posiadacze zaliczek
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera więcej informacji o funkcjonalności posiadacza zaliczki w programie Microsoft Dynamics 365 for Finance and Operations.
 
@@ -48,11 +47,13 @@ Użyj strony **Grupy posiadaczy zaliczek**, aby utworzyć grupę posiadaczy zali
 ### <a name="employee-posting-profile"></a>Profil księgowania pracownika
 
 Użyj strony **Profile księgowania pracowników**, aby utworzyć profil dla transakcji posiadaczy zaliczek. W profilu księgowania pracownika można podać następujące informacje:
-|Pole |opis|
-|------|-----------|
-|Profil księgowania|Wprowadź kod identyfikacyjny profilu księgowania dla posiadacza zaliczki.|
-|opis|Wprowadź krótki opis profilu księgowania.|
-|Ważny dla|Wybierz jedną z następujących opcji poziomu grupowania dla konfiguracji profilu księgowania: 
+
+|      Pole      |                                            opis                                            |
+|-----------------|---------------------------------------------------------------------------------------------------|
+| Profil księgowania |               Wprowadź kod identyfikacyjny profilu księgowania dla posiadacza zaliczki.               |
+|   opis   |                         Wprowadź krótki opis profilu księgowania.                         |
+|    Ważny dla    | Wybierz jedną z następujących opcji poziomu grupowania dla konfiguracji profilu księgowania: |
+
 **Tabela** — Ta opcja służy do konfigurowania profilu księgowania dla jednego posiadacza zaliczki. Należy podać kod posiadacza zaliczki w polu Odwołanie.
 **Grupa** — Ta opcja służy do konfigurowania profilu księgowania dla grupy posiadaczy zaliczek. Należy podać kod grupy w polu Odwołanie.
 **Wszystko** — Ta opcja służy do konfigurowania profilu księgowania dla wszystkich posiadaczy zaliczek. | |Odwołanie| Wybierz kod posiadacza zaliczki, jeśli w polu Ważny dla została wybrana opcja Tabela, lub grupę posiadaczy zaliczek, jeśli w polu Ważny dla zaznaczono opcję Grupa. | |Konto rozrachunkowe| Wybierz konto rozrachunkowe do księgowania transakcji.|
@@ -62,6 +63,7 @@ Użyj strony **Profile księgowania pracowników**, aby utworzyć profil dla tra
 ### <a name="account-payable-parameters"></a>Parametry modułu rozrachunków z dostawcami
 
 Aby wykazywać transakcje posiadaczy zaliczek, należy skonfigurować następujące informacje na stronie **Parametry modułu rozrachunków z dostawcami** w sekcji **Posiadacze zaliczek**.
+
 |                                                |                   |
 |------------------------------------------------|-------------------|
 |  **Pole**                                     | **Opis**                                                                                                                                                                  |
@@ -80,6 +82,7 @@ Aby poprawnie zarejestrować i zaksięgować zamówienie zakupu w kontekście po
 ### <a name="create-an-advance-holder-creation"></a>Tworzenie posiadacza zaliczki
 
 Przed utworzeniem posiadacza zaliczki muszą już istnieć skonfigurowani pracownicy. Aby uzyskać więcej informacji, zobacz [Wprowadzanie informacji o pracowniku (przewodnik po zadaniu).](../../fin-and-ops/hr/tasks/enter-worker-information.md) Użyj strony **Posiadacze zaliczek**, aby skonfigurować pracownika jako posiadacza zaliczki. Wybierz pracownika, który ma być posiadaczem zaliczki, kliknij przycisk **Edytuj**, a następnie ustaw w opcji **Posiadacz zaliczki** wartość **Prawda**. Trzeba również wypełnić następujące pola:
+
 |                |                                                                                             |
 |----------------|---------------------------------------------------------------------------------------------|
 | **Pole**      | **Opis**                                                                             |

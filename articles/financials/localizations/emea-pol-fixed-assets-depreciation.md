@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-assets-depreciation-for-poland"></a>Amortyzacja środków trwałych dla Polski
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o amortyzowaniu środków trwałych dla firm w Polsce.
 
@@ -106,7 +105,7 @@ Firmy w Polsce mogą łączyć środki trwałe z grupami amortyzacji. Grupy amor
 </tbody>
 </table>
 
- 
+
 
 
 

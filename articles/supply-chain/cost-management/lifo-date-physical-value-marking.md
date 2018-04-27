@@ -29,10 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO wg daty z wartością fizyczną i oznaczeniami
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Ostatnie przyszło, pierwsze wyszło na dzień (LIFO na dzień) to model magazynu oparty na metodzie LIFO. Rozchody zapasów są rozliczane w kolejności odwrotnej do odbierania towarów w magazynie, na podstawie daty transakcji magazynowej. W metodzie LIFO wg daty jeśli nie ma żadnego przyjęcia przed wydaniem, wydanie jest rozliczane względem dowolnego przyjęcia po dacie wydania. Kilka rozchodów tego samego dnia można rozliczyć w kolejności ostatni rozchód, ostatnie przyjęcie. 
 
@@ -66,16 +65,16 @@ Poniższa ilustracja pokazuje efekty modelu magazynu LIFO wg daty, gdy nie jest 
 
 **Objaśnienie wykresu**
 
--   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
--   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
--   Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
--   Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
--   Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
--   Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
--   Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
--   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
--   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
--   Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
+- Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
+- Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
+- Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
+- Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
+- Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
+- Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+- Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
+- Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
 
 ## <a name="lifo-date-with-the-include-physical-value-option"></a>LIFO wg daty z opcją Włącz wartość fizyczną
 Można zaznaczyć pole wyboru **Włącz wartość fizyczną** dla towaru na stronie **Grupy modeli towaru**. W tym przypadku system używa zarówno fizycznej, jak i finansowej transakcji przyjęcia do obliczenia średniej kroczącej kosztu własnego. W razie potrzeby system dokona również korekt w fizycznie zaktualizowanej transakcji dotyczącej rozchodu. Po usunięciu zaznaczenia z pola wyboru **Włącz wartość fizyczną** przy zamknięciu magazynu z zastosowaniem metody LIFO wg daty rozliczone zostaną jedynie transakcje zaktualizowane finansowo. 
@@ -101,16 +100,16 @@ Poniższa ilustracja pokazuje efekty modelu magazynu LIFO, gdy używana jest opc
 
 **Objaśnienie wykresu**
 
--   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
--   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
--   Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
--   Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
--   Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
--   Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
--   Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
--   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
--   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
--   Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
+- Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
+- Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
+- Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
+- Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
+- Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
+- Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+- Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
+- Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
 
 ## <a name="lifo-date-with-marking"></a>LIFO na dzień z przypisaniem
 Oznaczanie to proces, który pozwala połączyć (oznaczyć) transakcję wydania z transakcją przyjęcia. Może to mieć miejsce zarówno przed, jak i po zaksięgowaniu transakcji. Procesu tego można użyć po to, aby sprawdzić dokładny koszt zapasów w momencie księgowania transakcji lub zamknięcia magazynu. 
@@ -147,16 +146,16 @@ Poniższa ilustracja pokazuje efekty modelu magazynu LIFO, gdy używane jest ozn
 
 **Objaśnienie wykresu**
 
--   Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
--   Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
--   Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
--   Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
--   Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
--   Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
--   Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
--   Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
--   Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
--   Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
+- Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
+- Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.
+- Rozchody magazynowe zostały przedstawione w postaci strzałek pionowych pod osią czasu.
+- Nad (lub pod) każdą strzałką pionową została podana wartość transakcji magazynowej w formacie Quantity@Unitprice.
+- Jeśli wartość transakcji magazynowej została podana w nawiasie, transakcja taka została zaksięgowana fizycznie w magazynie.
+- Jeśli wartość transakcji magazynowej nie została podana w nawiasie, transakcja taka została zaksięgowana finansowo w magazynie.
+- Każda nowa transakcja dotycząca przychodu bądź rozchodu została oznaczona nową etykietą.
+- Każda strzałka pionowa jest oznaczona sekwencyjnym identyfikatorem, na przykład *1a*. Identyfikatory te wskazują kolejność księgowań transakcji magazynowych na osi czasu.
+- Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
+- Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
 
 
 

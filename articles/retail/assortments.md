@@ -23,7 +23,7 @@ ms.lasthandoff: 03/12/2018
 ---
 
 # <a name="assortment-management"></a>Zarządzanie asortymentem
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Przegląd
 Program Microsoft Dynamics 365 for Retail zawiera funkcję *asortymentów*, która pozwala zarządzać dostępnością produktów w różnych kanałach. Asortymenty decydują, które produkty są dostępne w konkretnych sklepach i okresach.

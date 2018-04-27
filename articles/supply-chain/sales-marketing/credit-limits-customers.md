@@ -26,7 +26,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="credit-limits-for-customers"></a>Limity kredytu dla odbiorców
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ustawienie limitu kredytu umożliwia określenie maksymalnej kwoty rozszerzenia kredytu dla odbiorców. Jeżeli określono limit kredytu, jest sprawdzany automatycznie, gdy użytkownik spróbuje zaktualizować dokument. W przypadku przekroczenia limitu kredytu wyświetlany jest komunikat dla użytkownika. Ten artykuł zawiera przegląd sposobu działania limitu kredytu i odpowiedzi na następujące pytania:
 

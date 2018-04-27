@@ -19,17 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6426f208a51ffbf72c6faa8cb281aba2984052d7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0164d64b8c37c19a3b8b13970dbda5927073eca8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Wyświetlanie i eksportowanie opisów pól
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule opisano, jak wyświetlać opisy pól i jak używać strony Opisy pól do eksportowania opisów.
 
@@ -77,7 +76,7 @@ Istnieje kilka sposobów, aby wyszukać stronę w polu **Wybór strony**. W wiel
     -   Jeśli istnieje więcej niż jedno dokładne dopasowanie, opisy nie są wyświetlane. Należy otworzyć listę rozwijaną i wybrać żądaną stronę.
     -   Jeśli wpisywana nazwa jest częścią nazwy innej strony, zobaczysz opisy dla swojej strony. Jednak po otwarciu listy rozwijanej zobaczysz dodatkowe strony, których tytuły zawierają w sobie tę nazwę.
 
-Na przykład nie są wyświetlane żadne opisy po wpisaniu **Inwentaryzacja** w polu ****Wybór strony****. Otwierasz listę rozwijaną i widzisz, że istnieją dwie strony o nazwie **Inwentaryzacja**, a także kilka stron, w których wyraz „Inwentaryzacja” jest częścią nazwy. Jeśli wybierzesz stronę o nazwie **InventJournalCount** w drzewie obiektów aplikacji, opisy pól są wyświetlane dla tej strony. Jednakże jeśli lista rozwijana zostanie otwarta ponownie, będzie zawierać wszystkie strony, które w nazwie strony w drzewie obiektów aplikacji mają tekst „InventJournalCount”.
+Na przykład nie są wyświetlane żadne opisy po wpisaniu <strong>Inwentaryzacja</strong> w polu *<strong><em>Wybór strony</em></strong>*. Otwierasz listę rozwijaną i widzisz, że istnieją dwie strony o nazwie <strong>Inwentaryzacja</strong>, a także kilka stron, w których wyraz „Inwentaryzacja” jest częścią nazwy. Jeśli wybierzesz stronę o nazwie <strong>InventJournalCount</strong> w drzewie obiektów aplikacji, opisy pól są wyświetlane dla tej strony. Jednakże jeśli lista rozwijana zostanie otwarta ponownie, będzie zawierać wszystkie strony, które w nazwie strony w drzewie obiektów aplikacji mają tekst „InventJournalCount”.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 Ta sekcja zawiera informacje pomocne w rozwiązywaniu problemów, które mogą wystąpić podczas używania opisów pól.

@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="optimization-advisor-overview"></a>Omówienie Doradcy optymalizacji
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano, jak za pomocą Doradcy optymalizacji uzyskać optymalną konfigurację programu Microsoft Dynamics 365 Finance and Operations.
 

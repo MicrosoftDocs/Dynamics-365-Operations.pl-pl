@@ -28,8 +28,7 @@ ms.lasthandoff: 12/01/2017
 
 # <a name="generate-a-financial-report"></a>Generowanie raportu finansowego
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o generowaniu sprawozdania finansowego. 
 
@@ -50,13 +49,13 @@ Podczas generowania raportu są używane opcje, które określono na kartach Def
 ## <a name="generate-a-financial-report"></a>Generowanie raportu finansowego
 
 Aby wygenerować raport finansowy za pomocą oprogramowania Microsoft Dynamics 365 for Finance and Operations, wybierz kolejno opcje **Księga główna** > **Zapytania i raporty** > **Raporty finansowe**. 
- - Wybierz raport do wygenerowania i kliknij opcję **Generuj**. 
- - Wypełnij pole **Data raportu** i kliknij przycisk **OK**.
- 
- Po wygenerowaniu raportu, raport będzie dostępny do wyświetlenia w sekcji **Raporty**.
- Można wybrać dla raportu opcję **Wyświetl** lub **Usuń**.
- 
- 
+- Wybierz raport do wygenerowania i kliknij opcję **Generuj**. 
+- Wypełnij pole **Data raportu** i kliknij przycisk **OK**.
+
+  Po wygenerowaniu raportu, raport będzie dostępny do wyświetlenia w sekcji **Raporty**.
+  Można wybrać dla raportu opcję **Wyświetl** lub **Usuń**.
+
+
 Aby wygenerować raport za pomocą **Projektanta raportów**, otwórz definicję raportu, a następnie kliknij przycisk Generuj na pasku narzędzi. Okno Stan kolejki raportów otworzy się i wskaże lokalizację raportu w kolejce. Domyślnie wygenerowane raporty otwierają się za pomocą Podglądu w sieci Web.
 
 > [!NOTE]
@@ -159,7 +158,7 @@ Po uruchomieniu analizy brakujących kont dostępne są następujące skróty kl
 | Otwórz wybraną definicję raportu  | Ctrl+R                     |
 | Otwórz wybraną definicję wiersza     | Ctrl+O                     |
 
- 
+
 <a name="see-also"></a>Informacje dodatkowe
 --------
 

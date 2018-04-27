@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="validate-a-production-flow-and-version"></a>Sprawdzanie przepływu i wersji produkcji
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób tworzenia nowego przepływu produkcji oraz pierwszej wersji dla produkcji oszczędnej. Warunki wstępne: Należy wcześniej zdefiniować parametry produkcji dla produkcji oszczędnej oraz jednostki miary dla czasu klasy. Trzeba zdefiniować strumień wartości i grupę produkcji. Przeczytaj oficjalne dokumenty o produkcji oszczędnej, aby zaznajomić się z pojęciami przepływów produkcji i działań. Ta procedura odnosi się do firmy USMF umieszczonej w danych demonstracyjnych. Jednak można też używać innych firm, o ile tylko są skonfigurowane dla produkcji oszczędnej.
 

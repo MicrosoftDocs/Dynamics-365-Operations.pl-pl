@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d7a672b80a0da7ab05acf5b5efe041f0f89c0042
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5081b3ff940167f305a6e17f97e246e5f8000185
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="manual-depreciation"></a>Amortyzacja ręczna
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie metody amortyzacji Amortyzacja ręczna.
 
@@ -67,7 +66,7 @@ Jeśli w polu **Częstotliwość okresu** wybierzesz opcję **Miesięcznie**, us
 | Styczeń  | (11,000 – 1,000) × 10% = 1,000 |
 | Luty | (11,000 – 1,000) × 50% = 5,000 |
 
-Jeśli w polu ****Częstotliwość okresu** wybierzesz** opcję **Półrocznie**, ustawisz 2 interwały harmonogramu ręcznego. W poniższej tabeli przedstawiono kwoty amortyzacji dla tych dwóch interwałów.
+Jeśli w polu *<strong><em>Częstotliwość okresu</em>*</strong> wybierzesz opcję <strong>Półrocznie</strong>, ustawisz 2 interwały harmonogramu ręcznego. W poniższej tabeli przedstawiono kwoty amortyzacji dla tych dwóch interwałów.
 
 | Interwał    | Kwota amortyzacji            |
 |-------------|--------------------------------|

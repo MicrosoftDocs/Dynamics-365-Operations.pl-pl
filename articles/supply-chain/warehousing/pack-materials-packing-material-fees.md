@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="packing-materials-and-fees"></a>Materiały opakowaniowe i związane z nimi opłaty
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Opłaty za materiały opakowań są uiszczane firmie recyklingowej w pewnych odstępach czasu. Płaci się kwotę według jednostki masy za każdy materiał, z którego jest wykonana jednostka opakowania. Opłaty za materiały opakowań są obliczane i zgłaszane, ale transakcje finansowe nie są księgowane, ponieważ opłaty nie są uznawane za podatki należne właściwemu organowi.
 
@@ -63,7 +62,7 @@ Jeśli firma uiszcza opłaty materiałów opakowań, nie należy określać nume
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>Drukowanie wag materiałów opakowań na fakturach
 Istnieje możliwość drukowania wag materiałów opakowań na fakturze oraz wskazywania podmiotów uiszczających opłaty materiałowe opakowań. Wagi zestawione są na podstawie kodu opakowania.
- 
+
 
 
 

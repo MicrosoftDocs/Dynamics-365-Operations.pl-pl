@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4ced76315bb4667f84be532a703e7e9b134b829b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6d11e772cfbcd8ab7a0d4a08ccd71049723f9e32
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-variable-compensation-plans"></a>Tworzenie planów wynagrodzeń o zmiennej wysokości
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Wynagrodzenie o zmiennej wysokości to nieregularne wynagrodzenie pracownika, takie jak premie lub akcje. Ten artykuł zawiera opis składników, które muszą zostać skonfigurowane, zanim będzie można używać wynagrodzenia o zmiennej wysokości i rejestrować pracowników w planie wynagrodzeń o zmiennej wysokości.
 
@@ -78,12 +77,12 @@ Pierwszym krokiem podczas rejestrowania pracowników w planie wynagrodzeń o zmi
 
 **Uwaga:** Reguły uprawnienia są używane do określania uprawnień zarówno dla systemów stałych jak i zmiennych wynagrodzeń. Reguła uprawnienia uwzględnia wartość następujących pól w rekordach Zadanie, Stanowisko i Pracownik, aby określić, czy pracownik jest uprawniony do planu wynagrodzeń.
 
--   Na stronie **Zadanie**:
-    -   Pole **Zadanie**
-    -   Pola **Funkcja** i **Typ stanowiska** na karcie **Klasyfikacja stanowiska**
-    -   Pole **Poziom** na karcie **Wynagrodzenie**
--   Na stronie **Stanowiska**: pola **Dział** i **Region wynagrodzenia**
--   Na stronie **Pracownicy**: Informacje o związkach zawodowych powiązane z pracownikiem w menu **Informacje osobiste** &gt; **Związki zawodowe** na karcie ****Pracownik****
+- Na stronie **Zadanie**:
+  -   Pole **Zadanie**
+  -   Pola **Funkcja** i **Typ stanowiska** na karcie **Klasyfikacja stanowiska**
+  -   Pole **Poziom** na karcie **Wynagrodzenie**
+- Na stronie **Stanowiska**: pola **Dział** i **Region wynagrodzenia**
+- Na stronie <strong>Pracownicy</strong>: informacje o związkach zawodowych powiązane z pracownikiem w menu <strong>Informacje osobiste</strong> &gt; <strong>Związki zawodowe</strong> na karcie *<strong><em>Pracownik</em></strong>*
 
 ### <a name="enable-enrollment-for-the-variable-compensation-plan"></a>Włączanie rejestracji w systemie wynagrodzeń o zmiennej wysokości
 

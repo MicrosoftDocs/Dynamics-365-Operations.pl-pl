@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="balance-sheet-financial-reports"></a>Raporty finansowe bilansu
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule opisano domyślne raporty o bilansach. Omówiono również bloki konstrukcyjne skojarzone z tymi raportami. 
 
@@ -71,7 +70,7 @@ Definicje kolumn zawierają różnego rodzaju kolumny oferujący różne poziomu
     -   **DESC** — opis z definicji wiersza
     -   **FD** — dane finansowe od początku roku dla bieżącego roku
 
- 
+
 
 <a name="see-also"></a>Informacje dodatkowe
 --------

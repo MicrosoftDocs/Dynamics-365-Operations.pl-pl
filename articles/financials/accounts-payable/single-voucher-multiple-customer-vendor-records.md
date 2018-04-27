@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Jeden załącznik z wieloma rekordami odbiorców lub dostawców
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera omówienie tego, co się dzieje podczas księgowania jednego załącznika z wieloma rekordami odbiorców lub dostawców. Ta funkcja nie będzie już dostępna w kolejnych wersjach programu Microsoft Dynamics 365 for Finance and Operations, w związku z tym nie zalecamy używania tej metody księgowania ze względu na jej wpływ księgowy na przetwarzanie rozliczeń. 
 
@@ -251,7 +250,7 @@ Aby uniknąć problemów z przyszłymi rozliczeniami tej transakcji, zamiast uż
 | 001         | Odbiorca         | US-008      |                 |           |  75,00     | Księga          | 999999---          |
 | 002         | Dostawca           | 1001        |                 |  75,00    |            | Księga          | 999999---          |
 
- 
+
 
 
 

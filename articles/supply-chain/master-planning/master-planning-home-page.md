@@ -29,8 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Planowanie główne — strona główna
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Zgodnie z zamysłem planowanie główne umożliwia firmom określanie i bilansowanie przyszłego zapotrzebowania na surowce i zdolności produkcyjne do realizacji celów firmy. Funkcja planowania głównego przeprowadza ocenę następujących elementów: 
 
@@ -58,6 +57,7 @@ Poniższa mapa szkoleniowa przedstawia najważniejsze koncepcje i zadania tworz�
 [![Mapa szkoleniowa planowania głównego](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## <a name="quick-links"></a>Szybkie łącza
+
 |      |   |
 |------|---|
 |        [Plany główne](master-plans.md)       |     [Generowanie planu z ograniczeniami](./tasks/constrained-plan.md)  |

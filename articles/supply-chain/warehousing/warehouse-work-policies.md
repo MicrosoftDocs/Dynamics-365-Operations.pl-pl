@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a0c900dc208736f1823be50e8522061406c9f126
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c2d72509b0dc4d0cea5b4f2478ae7f8fc163e78c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="warehouse-work-policies"></a>Zasady pracy magazynowej
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Zasady kontroli pracy magazynowej w programie Microsoft Dynamics 365 for Finance and Operations określają, czy praca magazynowa jest tworzona przez procesy magazynowe na produkcji w oparciu o typ zlecenia pracy, lokalizację zapasów i produkt.
 
@@ -68,14 +67,15 @@ Planując skonfigurowanie zasady pracy magazynowej dla tego scenariusza, należy
 
 Oto przykład zasady pracy, którą można skonfigurować z uwzględnieniem powyższych informacji.
 
-|                                         |                                                       |
-|-----------------------------------------|-------------------------------------------------------|
-|**Nazwa zasady pracy**<br>                 |**Typy zleceń**<br>                               |
-| Bez odłożenia 01     `                    |- Odłożenie gotowego wyrobu<br>                           |
-|                                         |**Lokalizacje**<br>                                      |
-|                                         |- O1   |                                               |
-|                                         |**Produkty** <br>                                      |
-|                                         |- SC1                                                  |
+
+|                                       |                                       |
+|---------------------------------------|---------------------------------------|
+| <strong>Nazwa zasady pracy</strong><br> | <strong>Typy zleceń</strong><br> |
+|         Bez odłożenia 01     `          |     - Odłożenie gotowego wyrobu<br>      |
+|                                       |    <strong>Lokalizacje</strong><br>     |
+|                                       |                 - O1                  |
+|                                       |    <strong>Produkty</strong> <br>     |
+|                                       |                 - SC1                 |
 
 Poniższe procedury zawierają instrukcje krok po kroku dotyczące konfigurowania zasady pracy magazynowej dla tego scenariusza. Opisano również przykładową konfigurację prezentującą zgłaszanie zlecenia produkcyjnego jako gotowego do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny.
 
@@ -126,7 +126,7 @@ KROKI (25)
 <tr>
 <td></td>
 <td>2.</td>
-<td>Na liście zaznacz grupę zasobów „5102”.</td>
+<td>Na liście zaznacz grupę zasobów &#39;5102&#39;.</td>
 </tr>
 <tr>
 <td></td>
@@ -136,12 +136,12 @@ KROKI (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>W polu Magazyn wyjściowy wpisz „51”.</td>
+<td>W polu Magazyn wyjściowy wpisz &#39;51&#39;.</td>
 </tr>
 <tr>
 <td></td>
 <td>5.</td>
-<td>W polu Lokalizacja wyjściowa wpisz „001”.</td>
+<td>W polu Lokalizacja wyjściowa wpisz &#39;001&#39;.</td>
 </tr>
 <tr>
 <td></td>
@@ -169,12 +169,12 @@ KROKI (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>W polu Numer pozycji wpisz „L0101”.</td>
+<td>W polu Numer pozycji wpisz &#39;L0101&#39;.</td>
 </tr>
 <tr>
 <td></td>
 <td>5.</td>
-<td>Kliknij Utwórz.</td>
+<td>Kliknij przycisk Utwórz.</td>
 </tr>
 <tr>
 <td></td>
@@ -204,7 +204,7 @@ KROKI (25)
 <tr>
 <td></td>
 <td>11.</td>
-<td>W polu Automatyczne zużycie BOM zaznacz opcję „Nigdy”.</td>
+<td>W polu Automatyczne zużycie BOM zaznacz opcję &#39;Nigdy&#39;.</td>
 </tr>
 <tr>
 <td></td>
@@ -214,7 +214,7 @@ KROKI (25)
 <tr>
 <td></td>
 <td>13.</td>
-<td>Kliknij opcję Zgłoś jako gotowe.</td>
+<td>Po zakończeniu kliknij opcję Raport.</td>
 </tr>
 <tr>
 <td></td>

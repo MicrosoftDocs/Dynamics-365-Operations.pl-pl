@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="depreciation-methods-and-conventions"></a>Metody amortyzacji i konwencje
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie konwencji amortyzacji i metod amortyzacji obsługiwanych w programie Microsoft Dynamics 365 for Finance and Operations.
 
@@ -62,7 +61,7 @@ Można wybrać jedną z następujących metod amortyzacji.
 -   Degresywna 150%
 -   Degresywna 125%
 
- 
+
 
 
 

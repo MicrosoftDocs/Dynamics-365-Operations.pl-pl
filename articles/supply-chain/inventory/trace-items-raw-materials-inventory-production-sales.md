@@ -19,17 +19,16 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 98f5696cd6a279bdf0f8d9026a74e5a9bccd2f13
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Śledzenie towarów i surowców w zapasach, produkcji i sprzedaży
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano sposób korzystania ze śledzenia towaru do identyfikowania, gdzie towary lub surowce zostały użyte, są używane lub będą używane w produkcji i procesach sprzedaży.
 
@@ -129,7 +128,7 @@ Po uruchomieniu śledzenia można użyć następujących opcji na przycisku **Ś
 Jeśli chcesz użyć opcji **Nowe śledzenie wstecz** lub **Nowe śledzenie w przód**, należy użyć funkcji **Otwórz w nowym oknie**, aby nowe śledzenie było wyświetlane w nowym oknie.
 
 ## <a name="can-i-save-the-trace-details"></a>Czy mogę zapisać szczegóły śledzenia?
-Informacje można zapisać na karcie **Szczegóły** jako plik XML, klikając przycisk **Eksport** pod akcją ****Śledzenie**** w okienku akcji. Oprócz szczegółów śledzenia plik XML zawiera kryteria śledzenia, węzeł nadrzędny oraz ilość na stanie. Możliwość zapisywania szczegółów śledzenia przydaje się, jeśli na przykład chcesz dołączyć informacje do zlecenia kontroli jakości lub innej dokumentacji zgodności z przepisami. Można określić, gdzie jest zapisany plik. Aby od razu wyświetlić plik, zaznacz opcję **Pokaż dokument**. **Uwaga:** Plik jest zawsze zapisywany, nawet jeśli chcesz go tylko wyświetlić. Domyślnie plik XML zostanie otwarty w oknie przeglądarki. Jednak można to zmienić, klikając prawym przyciskiem myszy plik, wybierając polecenie **Otwórz za pomocą**, a następnie wybierając program, który ma zostać użyty do wyświetlania zawartości.
+Informacje można zapisać na karcie <strong>Szczegóły</strong> jako plik XML, klikając przycisk <strong>Eksport</strong> pod akcją *<strong><em>Śledzenie</em></strong>* w okienku akcji. Oprócz szczegółów śledzenia plik XML zawiera kryteria śledzenia, węzeł nadrzędny oraz ilość na stanie. Możliwość zapisywania szczegółów śledzenia przydaje się, jeśli na przykład chcesz dołączyć informacje do zlecenia kontroli jakości lub innej dokumentacji zgodności z przepisami. Można określić, gdzie jest zapisany plik. Aby od razu wyświetlić plik, zaznacz opcję <strong>Pokaż dokument</strong>. <strong>Uwaga:</strong> Plik jest zawsze zapisywany, nawet jeśli chcesz go tylko wyświetlić. Domyślnie plik XML zostanie otwarty w oknie przeglądarki. Jednak można to zmienić, klikając prawym przyciskiem myszy plik, wybierając polecenie <strong>Otwórz za pomocą</strong>, a następnie wybierając program, który ma zostać użyty do wyświetlania zawartości.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Czy można obliczyć saldo dla określonego towaru lub składnika?
 Można eksportować informacje ze stron podsumowania do programu Microsoft Excel. Otwórz odpowiednią stronę, kliknij ikonę **Otwórz w pakiecie Microsoft Office**, a następnie zaznacz opcję **Eksportuj do programu Microsoft Excel**. Ta funkcja jest szczególnie użyteczna, gdy chcesz obliczyć zbiorcze saldo towaru lub składnika ze strony **Podsumowanie transakcji**. Na stronie **Podsumowanie transakcji** można wyfiltrować według towaru lub składnika, a opcjonalnie również według partii, a następnie wyeksportować informacje do programu Excel. W programie Excel można na przykład wyodrębnić ilość zapasów na stanie, ilość sprzedaną oraz ilość użytą w produkcji.

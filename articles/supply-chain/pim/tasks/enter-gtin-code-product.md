@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a>Wprowadzanie kodu GTIN produktu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Numery GTIN są przypisywane przez organizację GS1. W tym przykładzie wprowadzisz numer dla produktu o numerze M0001 w danych firmy demonstracyjnej USMF.
 

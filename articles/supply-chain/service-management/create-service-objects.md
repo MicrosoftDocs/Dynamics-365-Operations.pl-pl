@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="create-service-objects"></a>Tworzenie przedmiotów serwisu  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
    
 Przedmioty serwisu to aktywa i produkty klienta, dla których można wykonać usługi. 
 

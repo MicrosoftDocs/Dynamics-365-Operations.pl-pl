@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations"></a>Obliczenia BOM
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Obliczenia łącznego kosztu i ceny sprzedaży są nazywane obliczeniami listy składowej BOM i inicjuje się je ze strony Obliczenia. Ten temat zawiera informacje dotyczące obliczeń BOM.
 

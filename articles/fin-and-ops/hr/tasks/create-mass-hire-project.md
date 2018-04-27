@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-mass-hire-project"></a>Tworzenie projektu zatrudnienia grupowego
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura prowadzi przez proces konfigurowania projektu zatrudnienia grupowego. Osoba rekrutująca może używać projektów zatrudnienia grupowego, aby łatwo tworzyć wiele stanowisk i zatrudniać na nie wielu pracowników. Aby rozpocząć tę procedurę, wybierz kolejno opcje Zasoby ludzkie > Rekrutacja > Projekty zatrudnienia grupowego. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-screen-layouts-for-pos"></a>Konfigurowanie układów ekranu dla punktu sprzedaży
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ten temat zawiera informacje dotyczące układów ekranu dla aplikacji Microsoft Dynamics 365 for Retail Point of Sale (POS).
 

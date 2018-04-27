@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-catalogs"></a>Katalogi zaopatrzenia
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule opisano w sposób ogólny, jak specjaliści ds. zakupów mogą konfigurować katalogi zaopatrzenia i nimi zarządzać. Katalogi zaopatrzenia definiują towary i usługi, które pracownicy firmy mogą zamawiać do użytku wewnętrznego.
 

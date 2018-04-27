@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Generowanie i uruchamianie gotowych raportów
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Użyj tego przewodnika po zadaniach, aby generować standardowe raporty w centrali z różnych obszarów roboczych i okna Zapytania i raporty o sprzedaży dostępnego z okna Handel detaliczny i inny.
 

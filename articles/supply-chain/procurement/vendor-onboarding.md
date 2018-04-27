@@ -17,15 +17,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7265e119a8b59399db1fa35373a7b6aba52ba8e0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 325cf12345afcf531181f65a41d0e5262798c14f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="onboard-vendors"></a>Wdrażanie dostawców
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
 ---
 
 Nowych dostawców można wdrożyć i zarejestrować jako dostawców w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations na podstawie informacji zebranych od przedstawiciela dostawcy.
@@ -164,13 +165,15 @@ Różne stany wniosku o rejestrację potencjalnego dostawcy określają stan pos
 
 Wybierając akcję **Usuń** we wniosku o rejestrację potencjalnego dostawcy można wyczyścić i usunąć łańcuch utworzonych rekordów i dezaktywować konto użytkownika. Wynik wykonania akcji **Usuń** zależy od stanu wniosku o rejestrację potencjalnego dostawcy, jak pokazano w poniższej tabeli.
 
-| Stan                   | Opis stanu | Wynik akcji Usuń |
-|--------------------------|--------------------|-----------------------------------|
-| Nowy                      | Nie wykonano żadnych akcji dotyczących wniosku. | Wniosek o rejestrację potencjalnego dostawcy jest usuwany. |
-| Wnioskowane przez użytkownika           | Po wybraniu opcji **Zaproś użytkownika** stan jest zmieniany na **Wnioskowane przez użytkownika** i następuje utworzenie oraz przesłanie wniosku o potencjalnego użytkownika do przepływu pracy wniosku o nowego użytkownika. | Wniosku o rejestrację potencjalnego dostawcy w tym stanie nie można usunąć, ponieważ przepływ pracy wniosku użytkownika nie zakończył się. |
-| Zaproszony użytkownik             | Przepływ pracy wniosku o nowego użytkownika został zatwierdzony, a użytkownik został utworzony. | Został utworzony wniosek o dezaktywowanie użytkownika i wniosek o rejestrację potencjalnego dostawcy został usunięty. |
-| Rejestracja w toku | Nowy użytkownik zalogował się i uruchomił kreatora rejestracji dostawcy. | Wniosek o dezaktywację użytkownika został utworzony, a wniosek o rejestracje potencjalnego dostawcy i dane wprowadzone w kreatorze rejestracji dostawcy zostały usunięte. |
-| Utworzono wniosek o nowego dostawcę   | Praca kreatora rejestracji dostawcy została ukończona. | Wniosek o dezaktywację użytkownika został utworzony, a wniosek o rejestracje potencjalnego dostawcy, dane wprowadzone w kreatorze rejestracji dostawcy i wniosek o nowego dostawcę zostały usunięte.<blockquote>[!NOTE]<br>Akcji **Usuń** nie można użyć, gdy wniosek o nowego dostawce jest w trakcie procesu przeglądu w przepływie pracy.</blockquote> |
-| Zatwierdzona                 | Wniosek o nowego dostawcę został zatwierdzony. | Wniosek o rejestracje potencjalnego dostawcy, dane wprowadzone w kreatorze rejestracji dostawcy i wniosek o nowego dostawcę zostały usunięte. |
-| Odrzucona                 | Wniosek o nowego dostawcę został odrzucony. | Wniosek o rejestracje potencjalnego dostawcy, dane wprowadzone w kreatorze rejestracji dostawcy i wniosek o nowego dostawcę zostały usunięte. |
+
+|          Stan          |                                                                                     Opis stanu                                                                                      |                                                                                                                                                            Wynik akcji Usuń                                                                                                                                                             |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|           Nowy            |                                                                         Nie wykonano żadnych akcji dotyczących wniosku.                                                                          |                                                                                                                                              Wniosek o rejestrację potencjalnego dostawcy jest usuwany.                                                                                                                                               |
+|      Wnioskowane przez użytkownika      | Po wybraniu opcji <strong>Zaproś użytkownika</strong> stan jest zmieniany na <strong>Wnioskowane przez użytkownika</strong> i następuje utworzenie oraz przesłanie wniosku o potencjalnego użytkownika do przepływu pracy wniosku o nowego użytkownika. |                                                                                                          Wniosku o rejestrację potencjalnego dostawcy w tym stanie nie można usunąć, ponieważ przepływ pracy wniosku użytkownika nie zakończył się.                                                                                                          |
+|       Zaproszony użytkownik       |                                                               Przepływ pracy wniosku o nowego użytkownika został zatwierdzony, a użytkownik został utworzony.                                                               |                                                                                                                      Został utworzony wniosek o dezaktywowanie użytkownika i wniosek o rejestrację potencjalnego dostawcy został usunięty.                                                                                                                      |
+| Rejestracja w toku |                                                         Nowy użytkownik zalogował się i uruchomił kreatora rejestracji dostawcy.                                                          |                                                                                     Wniosek o dezaktywację użytkownika został utworzony, a wniosek o rejestracje potencjalnego dostawcy i dane wprowadzone w kreatorze rejestracji dostawcy zostały usunięte.                                                                                      |
+|  Utworzono wniosek o nowego dostawcę  |                                                                     Praca kreatora rejestracji dostawcy została ukończona.                                                                      | Wniosek o dezaktywację użytkownika został utworzony, a wniosek o rejestracje potencjalnego dostawcy, dane wprowadzone w kreatorze rejestracji dostawcy i wniosek o nowego dostawcę zostały usunięte.<blockquote>[!NOTE]<br>Akcji <strong>Usuń</strong> nie można użyć, gdy wniosek o nowego dostawce jest w trakcie procesu przeglądu w przepływie pracy.</blockquote> |
+|         Zatwierdzona         |                                                                               Wniosek o nowego dostawcę został zatwierdzony.                                                                               |                                                                                                   Wniosek o rejestracje potencjalnego dostawcy, dane wprowadzone w kreatorze rejestracji dostawcy i wniosek o nowego dostawcę zostały usunięte.                                                                                                    |
+|         Odrzucona         |                                                                               Wniosek o nowego dostawcę został odrzucony.                                                                               |                                                                                                   Wniosek o rejestracje potencjalnego dostawcy, dane wprowadzone w kreatorze rejestracji dostawcy i wniosek o nowego dostawcę zostały usunięte.                                                                                                    |
+
 

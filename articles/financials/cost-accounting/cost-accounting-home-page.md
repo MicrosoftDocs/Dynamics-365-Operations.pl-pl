@@ -3,12 +3,12 @@ title: "Rachunek kosztów — strona główna"
 description: "Ten temat zawiera listę tematów pomocy oraz innych zasobów dostępnych dla modułu Rachunek kosztów."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
+ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration, CAMCostAccountingLedgerAdminWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-accounting-home-page"></a>Rachunek kosztów — strona główna
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="learning-map"></a>Mapa szkoleń 
 
@@ -37,6 +37,7 @@ Poniższa mapa szkoleń przedstawia najważniejsze koncepcje i zadania tworzące
 [![Mapa szkoleń na temat rachunku kosztów](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## <a name="quick-links"></a>Szybkie łącza
+
 |      |   |
 |------|---|
 |  [Konfigurowanie jednostek podstawowych (eLearning)](https://mbspartner.microsoft.com/Home) (wymaga konta CustomerSource)  |[Utwórz wymiary](cost-elements.md)  |

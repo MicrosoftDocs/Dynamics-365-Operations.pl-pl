@@ -3,7 +3,7 @@
 # [Rozpoczęcie pracy](talent-get-started.md)
 ## [Wymagania systemowe i zasady aktualizacji](talent-versions-update-policy.md)
 ## [Inicjowanie obsługi rozwiązania Microsoft Dynamics 365 for Talent](provisioning-talent.md)
-## [Usuwanie środowiska rozwiązania Talent](remove-test-environment.md)
+## [Usuwanie środowiska rozwiązania Talent](remove-talent-environment.md)
 ## [Inicjowanie obsługi modułowych aplikacji rozwiązania Microsoft Dynamics 365 for Talent](modular-app-tech-faq.md)
 ## [Rozszerzanie funkcjonalności rozwiązania Talent](extend-talent-functionality.md)
 
@@ -13,6 +13,7 @@
 ## [Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach](set-up-hr-parameters-across-legal-entities.md)
 ## [Konfigurowanie specyficznych dla firmy parametrów modułu Zasoby ludzkie](set-up-company-specific-hr-parameters.md)
 ## [Akcje dotyczące pracowników — często zadawane pytania](personnel-actions-faq.md)
+## [Formalizowanie procesów biznesowych](formalize-business-processes.md)
 ## [Używanie przepływu pracy do zarządzania informacjami pracowników etatowych](workflow-manage-employee-information.md)
 ## [Omówienie urlopów i nieobecności](leave-absence-overview.md)
 

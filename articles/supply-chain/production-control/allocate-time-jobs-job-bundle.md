@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Alokowanie czasu do zadań w pakiecie zadań
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W module Uruchomienie produkcji można łączyć zadania w pakiety. Następnie można uruchomić wiele zadań jednocześnie na stronie Lista zadań.
 

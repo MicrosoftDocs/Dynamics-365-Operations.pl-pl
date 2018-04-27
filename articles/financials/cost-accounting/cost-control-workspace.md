@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-control-overview"></a>Omówienie obszaru roboczego Kontrola kosztów 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Obszar roboczy **Kontrola kosztów** jest centralnym miejscem, w którym menedżerowie odpowiedzialni za kontrolę obiektu kosztów lub zbioru obiektów kosztów w granicach wymiaru lub między wymiarami (np. w centrach kosztów i grupach produktów) mają dostęp do raportów. Raporty w obszarze roboczym są w pełni zarządzane przez księgowych kosztów, dzięki czemu układ i dane używane w raportach mogą być spójne w całej organizacji.
 

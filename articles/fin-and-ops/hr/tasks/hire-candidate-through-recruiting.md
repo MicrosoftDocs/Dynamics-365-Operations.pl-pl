@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-a-candidate-through-recruiting"></a>Zatrudnianie kandydata przez rekrutację
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura umożliwia osobie rekrutującej zatrudnienie kandydata, który przesłał zgłoszenie za pośrednictwem określonego projektu rekrutacji. W przypadku zatrudniania kandydata za pośrednictwem projektu rekrutacji zostanie utworzony nowy rekord pracownika, a w rekordzie kandydata zostanie ustawiony stan Zatrudniony. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Aby wykonać tę procedurę, wybierz kolejno opcje Zasoby ludzkie > Rekrutacja > Zgłoszenia > Zgłoszenia. 
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="trial-balance-financial-reports"></a>Raporty finansowe bilansu próbnego
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule opisano domyślne raporty o bilansach próbnych. Omówiono również bloki konstrukcyjne skojarzone z tymi raportami oraz sposoby modyfikowania raportów w celu dostosowania ich do wymagań biznesowych. 
 
@@ -99,7 +98,7 @@ Każdy raport bilansu próbnego używa innej definicji kolumny. Te definicje kol
     -   **FD** — dane finansowe zawierające tylko debety dla ostatniego roku
     -   **FD** — dane finansowe zawierające tylko kredyty dla ostatniego roku
 
- 
+
 
 <a name="see-also"></a>Informacje dodatkowe
 --------

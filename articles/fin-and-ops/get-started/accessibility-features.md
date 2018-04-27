@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="accessibility-features"></a>Funkcje ułatwień dostępu
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano funkcje, które pomagają użytkownikom z różnymi niepełnosprawnościami korzystać z rozwiązań Dynamics 365 for Finance and Operations, Dynamics 365 for Retail i Dynamics 365 for Talent. Dostępne są na przykład funkcje przeznaczone dla osób korzystających z technologii wspomagających dla osób z wadami wzroku, takich jak Narrator w systemie Microsoft Windows.
 

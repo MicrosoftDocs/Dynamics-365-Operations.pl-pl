@@ -19,17 +19,16 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7e05361bf865e44ba6073198fba94d7102b1ed19
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9b4e792cae66e38546b3bdfdfbd59a2e36d891c2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-coupons-for-retail-sales"></a>Tworzenie kuponów dla sieci sprzedaży
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 ## <a name="overview-of-coupons"></a>Ogólne informacje o kuponach
 
@@ -46,9 +45,12 @@ Aby utworzyć kuponu, należy utworzyć oddzielnie rabat i kupon. Następnie trz
 
 ### <a name="limited-use-coupons"></a>Kupony o ograniczonym użyciu
 
-Kupony można skonfigurować jako kupony o ograniczonym użyciu. Limit użycia można zdefiniować dla klienta lub kanału lub jako limit globalny. Ten limit jest wymuszany podczas wprowadzania lub skanowania kodu lub kodu kreskowego w punkcie sprzedaży albo podczas wprowadzania zamówienia sprzedaży. Kupon jest rejestrowany jako użyty po sfinalizowaniu zamówienia, z którym jest skojarzony kupon.
+Kupony można skonfigurować jako kupony o ograniczonym użyciu. Limit użycia można zdefiniować dla klienta lub kanału lub jako limit globalny. Ten limit jest wymuszany podczas wprowadzania lub skanowania kodu lub kodu kreskowego w punkcie sprzedaży albo podczas wprowadzania zamówienia sprzedaży.
 
 Limit jest wymuszany dla kodu kuponu na kuponie. Na przykład kupon jednorazowego użytku, który zawiera dwa kody kuponu, może zostać wykorzystany dwukrotnie, po jednym razie dla każdego kodu kuponu. Każdy kod na kuponie można niezależnie ustawić jako aktywny.
+
+> [!NOTE]
+> Gdy kod kuponu osiągnie limit wykorzystania, system *nie* zmienia automatycznie stanu kod kuponu na „Wykorzystane”. Jednak system nie pozwala na dalsze używanie kodu kuponu, który osiągnął limit wykorzystania. Jeśli stan kodu kuponu zostanie ręcznie ustawiony na wartość inną niż „Aktywne”, to kodu kuponu nie można użyć w żadnym kanale.
 
 ## <a name="managing-coupons"></a>Zarządzanie kuponami
 
@@ -68,8 +70,8 @@ Zanim będzie można utworzyć kupon, należy skonfigurować kod kreskowy kuponu
     > [!NOTE]
     > Dla obu numeracji należy w polu **Zakres** ustawić wartość **Firma**. W większości przypadków numery w obu numeracjach powinny być generowane automatycznie.
 
-5.  Na stronie **Wspólne parametry sieci sprzedaży** na karcie **Kody kreskowe** zaznacz utworzony wcześniej kod kreskowy.
-6.  Na stronie **Parametry sieci sprzedaży** na karcie **Sekwencje identyfikatorów** zaznacz utworzone przez siebie numeracje numeru kuponu i identyfikatora kod kuponu.
+5.  Na stronie **Parametry sieci sprzedaży** na karcie **Kody kreskowe** zaznacz utworzony wcześniej kod kreskowy.
+6.  Na stronie **Wspólne parametry sieci sprzedaży** na karcie **Sekwencje numerów** zaznacz utworzone przez siebie numeracje numeru kuponu i identyfikatora kod kuponu.
 7.  Teraz można otworzyć stronę **Kupony** i utworzyć nowe kupony.
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Wpływ częściowych aktualizacji na kupony

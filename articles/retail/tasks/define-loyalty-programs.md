@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-loyalty-programs"></a>Definiowanie programów lojalnościowych
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób konfigurowania programu lojalnościowego z dwoma warstwami lojalnościowymi. Procedura wykorzystuje dane firmy demonstracyjnej USRT.
 

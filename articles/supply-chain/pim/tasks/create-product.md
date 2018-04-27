@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-product"></a>Tworzenie produktu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura poprowadzi przez proces tworzenia nowego produktu w hierarchii produktów sieci sprzedaży. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USRT, a zadanie jest przeznaczone dla kierownika ds. merchandisingu i projektanta produktów.
 

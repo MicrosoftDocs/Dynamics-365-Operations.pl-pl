@@ -24,7 +24,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Wyszukiwanie odpowiednich cen i rabatów
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób wyszukiwania ceny i/lub rabatu na produkt, który jest aktualnie dostępny dla określonego odbiorcy, bez tworzenia zamówienia sprzedaży. Procedura prowadzi przez konkretny przykład. W celu wybierania niezbędnych wartości należy wykonać przykład z użyciem danych firmy demonstracyjnej USMF.
 

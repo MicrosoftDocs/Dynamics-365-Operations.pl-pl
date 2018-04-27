@@ -1,9 +1,9 @@
 ---
 title: Arkusze magazynowe
-description: "W tym artykule opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych."
-author: MarkusFogelberg
+description: "W tym temacie opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych."
+author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,21 +19,20 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 968bf9a243d0c0cc9f0dfec474cb207ca32f9eeb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7e6ac46cc4d4961cdd76f6127d8900a9b3d13a39
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="inventory-journals"></a>Arkusze magazynowe
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
-
-W tym artykule opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych.
+W tym temacie opisano, jak używać arkuszy magazynowych do księgowania różnych rodzajów transakcji magazynowych.
 
 Arkusze magazynowe w programie Microsoft Dynamics 365 for Finance and Operations są używane do księgowania różnych typów transakcji na fizycznych zapasach, np. do księgowania wydań i przyjęć, przesunięć magazynowych, tworzenia list składowych BOM i uzgadniania zapasów fizycznych. Wszystkie arkusze magazynowe są używane w sposób podobny, ale są one podzielone na różne typy.
 
@@ -51,7 +50,7 @@ Dostępne są następujące typy arkuszy magazynowych:
 
 ### <a name="movement"></a>Przesunięcie
 
-Używając arkusza przesunięcia magazynowego, koszt można dodać do towaru po dodaniu zapasów, jednak można ręcznie przydzielić koszt dodatkowy do konta księgi głównej poprzez określenie konta przeciwstawnego księgi głównej podczas tworzenia arkusza. Ten typ arkusza magazynowego przydaje się do wydatkowania pozycji w innym dziale, jeśli chcesz usunąć pozycję z magazynu na cele wydatków.
+Używając arkusza przesunięcia magazynowego, koszt można dodać do towaru po dodaniu zapasów, jednak można ręcznie przydzielić koszt dodatkowy do konta księgi głównej poprzez określenie konta przeciwstawnego księgi głównej podczas tworzenia arkusza. Ten typ arkusza magazynowego jest przydatny, jeśli chcesz zastąpić domyślne konta księgowania.
 
 ### <a name="inventory-adjustment"></a>Korekta zapasów
 
@@ -61,10 +60,10 @@ W przypadku korzystania z arkusza korekt zapasów koszt można dodać do towaru 
 
 Arkusz przeniesienia służy do przenoszenia towarów między lokalizacjami składowania, partiami lub wariantami produktów bez kojarzenia efektów kosztowych. Na przykład można przenosić elementy z jednego magazynu do innego magazynu w obrębie tej samej firmy. W przypadku korzystania z arkusza przeniesienia, należy określić wymiary magazynowe „od” i „do” (na przykład dla oddziału i magazynu). Dostępne zapasy zdefiniowanego wymiaru magazynowego są odpowiednio zmieniane. Przeniesienia zapasów odzwierciedlają natychmiastowe przeniesienie materiału. Zapasy w tranzycie nie są śledzone. Jeśli konieczne jest śledzenie zapasów w tranzycie, należy skorzystać z zamówienia przeniesienia. Przy księgowaniu arkusza przeniesienia tworzone są dwie transakcje magazynowe dla każdego wiersza arkusza:
 
--   Wydanie z magazynu w lokalizacji "od"
--   Przyjęcie na magazyn w lokalizacji "do"
+-   Wydanie zapasów w lokalizacji „z”.
+-   Przyjęcie zapasów w lokalizacji „do”.
 
-### <a name="bom"></a>lista BOM
+### <a name="bom"></a>BOM
 
 Podczas zgłaszania BOM jako gotowych można utworzyć arkusz BOM. Przy użyciu arkusza BOM, można księgować bezpośrednio BOM. To księgowanie generuje przyjęcie produktu na magazyn wraz z powiązanym BOM i wydaniem z magazynu produktów uwzględnionych w BOM. Ten typ arkusza magazynowego jest przydatny w sytuacjach dużej produkcji, gdzie marszruty nie są wymagane.
 
@@ -78,11 +77,11 @@ Arkusz przyjęcia z produkcji działa jak arkusz przyjęcia towaru, ale jest uż
 
 ### <a name="counting"></a>Inwentaryzacja
 
-Arkusze zliczania pozwalają poprawić bieżącą ilość dostępnych zapasów zarejestrowaną dla towarów lub grup towarów. Następnie można zaksięgować rzeczywistą fizyczna ilość, tak aby wprowadzić korekty wymagane do uzgadniania różnic. Zasady obliczania można skojarzyć z grupami inwentaryzacji, co ułatwia grupowanie towarów o różnych właściwościach, dzięki czemu pozycje można uwzględnić w arkuszu zliczania. Na przykład można ustawić grupy inwentaryzacji, tak aby zliczały pozycje o określonej częstotliwości lub obliczały towar, gdy zapasy spadną do określonego poziomu. Aby uzyskać informacje o definiowaniu grup inwentaryzacji, zobacz [Definiowanie procesów inwentaryzacji zapasów (przewodnik po zadaniu)](tasks/define-inventory-counting-processes.md).
+Arkusze inwentaryzacyjne pozwalają poprawić bieżącą ilość dostępnych zapasów zarejestrowaną dla towarów lub grup towarów. Następnie można zaksięgować rzeczywistą fizyczna ilość, tak aby wprowadzić korekty wymagane do uzgadniania różnic. Zasady obliczania można skojarzyć z grupami inwentaryzacji, co ułatwia grupowanie towarów o różnych właściwościach, dzięki czemu pozycje można uwzględnić w arkuszu zliczania. Na przykład można ustawić grupy inwentaryzacji, tak aby zliczały pozycje o określonej częstotliwości lub obliczały towar, gdy zapasy spadną do określonego poziomu. Aby uzyskać informacje o definiowaniu grup inwentaryzacji, zobacz [Definiowanie procesów inwentaryzacji zapasów (przewodnik po zadaniu)](tasks/define-inventory-counting-processes.md).
 
 ### <a name="tag-counting"></a>Zliczanie znaczników
 
-Arkusze zliczania służą do przypisywania numerowanego znacznika do zliczonej partii. Znacznik powinien zawierać numer, numer pozycji i ilość towaru. Aby zagwarantować, że znacznik jest używany tylko jeden raz i, że wszystkie znaczniki są używane, numer każdego towaru powinien mieć niepowtarzalny zestaw znaczników z własną sekwencją numerów. Dla każdego znacznika można ustawić trzy wartości stanu:
+Arkusze zliczania służą do przypisywania numerowanego znacznika do zliczonej partii. Znacznik powinien zawierać numer, numer pozycji i ilość towaru. Aby zagwarantować, że znacznik jest używany tylko jeden raz, i że wszystkie znaczniki są używane, numer każdego towaru powinien mieć niepowtarzalny zestaw znaczników z własną numeracją. Dla każdego znacznika można ustawić trzy wartości stanu:
 
 -   **Używany** — numer towaru jest zliczany dla znacznika.
 -   **Unieważnione** — numer towaru jest unieważniany dla znacznika.
@@ -95,4 +94,30 @@ Tylko jeden użytkownik może mieć w danej chwili dostęp do określonego arkus
 
 ## <a name="posting-journal-lines"></a>Wiersze arkusza księgowania
 Można księgować wiersze arkusza, które można utworzyć w dowolnym momencie, dopóki towar nie zostanie zablokowany z innych transakcji. Wpisane w arkuszu dane pozostają w arkuszu nawet po zamknięciu go bez księgowania wierszy arkusza.
+
+## <a name="data-entity-support-for-inventory-journals"></a>Obsługa jednostek danych w arkuszach magazynowych
+
+Jednostki danych obsługują następujące typy scenariuszy integracji:
+-    Usługa synchroniczna (OData)
+-  Integracja asynchroniczna
+
+Aby uzyskać więcej informacji, zobacz [Jednostki danych](../../dev-itpro/data-entities/data-entities.md).
+
+> [!NOTE]
+> Nie wszystkie arkusze magazynowe obsługują usługę OData, dlatego nie można używać aplikacji łącznika danych programu Excel do publikowania, aktualizowania i importowania danych z powrotem do programu Dynamics 365 for Finance and Operations. 
+
+Kolejna różnica między jednostkami danych arkusza dotyczy możliwości używania jednostek złożonych, które zawierają zarówno dane nagłówka, jak i dane wiersza. Obecnie jednostek złożonych można używać dla następujących arkuszy:
+-   Arkusz korekt zapasów
+-   Arkusz przesunięcia magazynowego
+
+Te dwa arkusze magazynowe obsługują scenariusz *Inicjowanie zapasów* tylko w ramach projektu importu w zarządzaniu danymi:
+-  Jeśli nie określono numeru nagłówka arkusza, ale określono numerację dla typu arkusza, zadanie importu automatycznie utworzy nagłówki arkuszy na 1000 wierszy. Na przykład zaimportowanie 2020 wierszy spowoduje utworzenie następujących trzech nagłówków arkuszy:
+    -  Nagłówek 1: będzie zawierał 1000 wierszy
+    -  Nagłówek 2: będzie zawierał 1000 wierszy
+    -  Nagłówek 3: będzie zawierał 20 wierszy
+-  Zakłada się istnienie unikatowych danych wierszy dla każdego wymiaru zapasów, którym może być wymiar produktu, magazynowania lub śledzenia. Z tego względu nie jest możliwe zaimportowanie wierszy arkusza, gdzie w tym samym projekcie importu różni się tylko zawartość pola daty w wierszach.
+
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+[Jednostki danych](../../dev-itpro/data-entities/data-entities.md)
 

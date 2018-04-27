@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-online-channels-and-define-channel-attributes"></a>Tworzenie kanałów online i definiowanie atrybutów kanału
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ta procedura zawiera instruktaż tworzenia nowego kanału online i dodawania go do hierarchii organizacyjnej. Aby można było utworzyć nowy kanał online, należy najpierw utworzyć hierarchię organizacyjną. Procedura wykorzystuje dane firmy demonstracyjnej USRT.
 

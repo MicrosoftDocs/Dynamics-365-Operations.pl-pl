@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configuration-keys-and-data-entities"></a>Klucze konfiguracji a jednostki danych
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Zanim zaczniesz używać jednostek danych do importowania lub eksportowania danych, zalecamy ustalenie wpływu kluczy konfiguracji na jednostki danych, których zamierzasz używać. 
 

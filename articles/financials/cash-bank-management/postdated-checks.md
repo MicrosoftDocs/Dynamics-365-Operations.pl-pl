@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="postdated-checks"></a>Czeki postdatowane
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o obsłudze czeków postdatowanych w programie Microsoft Dynamics 365 for Finance and Operations. Czeki postdatowane są wystawiane do celów wykonywania i odbierania płatności w przyszłości. W związku z tym czeki można zrealizować dopiero od określonego dnia.
 
@@ -76,14 +75,14 @@ Jeśli oryginalny czek dla dostawcy lub odbiorcy został zniszczony lub utracony
 <td>Zaksięgowany czek postdatowany można anulować w następujących sytuacjach: - Czek jest zwracany przez bank.
 - Czeku dotyczy błędna faktura.
 - Dokonywana jest płatność gotówką względem czeku.
-</td>
-</tr>
-<tr class="even">
-<td>Zatrzymywanie płatności czeku postdatowanego</td>
-<td>Można zatrzymać zapłatę czeku postdatowanego wystawionego dostawcy, np. z powodu niewystarczających funduszy, zmiany warunków umowy z dostawcą, dostawy wadliwych towarów przez dostawcę lub zwrotu towarów do dostawcy. Zatrzymać można zapłatę tylko czeków nierozliczonych.</td>
-</tr>
-</tbody>
-</table>
+  </td>
+  </tr>
+  <tr class="even">
+  <td>Zatrzymywanie płatności czeku postdatowanego</td>
+  <td>Można zatrzymać zapłatę czeku postdatowanego wystawionego dostawcy, np. z powodu niewystarczających funduszy, zmiany warunków umowy z dostawcą, dostawy wadliwych towarów przez dostawcę lub zwrotu towarów do dostawcy. Zatrzymać można zapłatę tylko czeków nierozliczonych.</td>
+  </tr>
+  </tbody>
+  </table>
 
 
 

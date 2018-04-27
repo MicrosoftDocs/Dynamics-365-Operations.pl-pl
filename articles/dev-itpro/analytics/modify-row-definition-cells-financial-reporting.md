@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: dd34fb71f7a5d31a075c6475c2fe6627193d891f
-ms.openlocfilehash: 6bb405937288b46f49420a1735c32b5b7c16248e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3131173e10ff7eefeaca18285054ce2312d7ab57
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Modyfikowanie komórek definicji wiersza
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule opisano informacje, które są wymagane dla każdej komórki w definicji wiersza w raporcie finansowym, oraz wyjaśniono, jak wprowadzić te informacje. 
 
@@ -104,26 +103,26 @@ Komórka **Kod formatu** pozwala wybrać wstępnie sformatowane elementy zawarto
 2.  Kliknij dwukrotnie komórkę **Kod formatu**.
 3.  Wybierz kod formatu z listy. Poniższa tabela opisuje kody formatów i związane z nimi akcje.
 
-| **Kod formatu**               | **Interpretacja kodu formatu** | **Akcja**                                                                                                                                                                                                     |
-|-------------------------------|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| (Brak)                        |                                       | Usuwa zawartość komórki **Kod formatu**.                                                                                                                                                                               |
-| TOT                           | Suma                                 |  Określa wiersz używający operatorów matematycznych w kolumnie **Powiązane formuły/wiersze/jednostki**. Sumy zawierają proste operatory, takie jak **+** lub **-**.                                                     |
-| CAL                           | Obliczenie                           | Określa wiersz używający operatorów matematycznych w kolumnie **Powiązane formuły/wiersze/jednostki**. Obliczenia zawierają złożone operatory, takie jak instrukcje **+**, **-**, **\***, **/** i **IF/THEN/ELSE**. |
-| DES                           | opis                           | Określa wiersz nagłówka lub pusty wiersz w raporcie.                                                                                                                                                        |
-| LFT RGT CEN                   | Lewo Prawo Środek                     |  Wyrównuje tekst opisu wiersza na stronie raportu, niezależnie od miejsca tego tekstu w definicji kolumny.                                                                                              |
-| CBR                           | Zmiana wiersza podstawowego                       | Identyfikuje wiersz, który ustawia wiersz podstawowy w obliczeniach kolumny.                                                                                                                                               |
-| COLUMN                        | Podział kolumny                          | Rozpoczyna nową kolumnę w raporcie.                                                                                                                                                                             |
-| PAGE                          | Podział strony                            | Rozpoczyna nową stronę w raporcie.                                                                                                                                                                               |
-| \---                          | Pojedyncze podkreślenie                      | Podkreśla wszystkie kolumny kwoty w raporcie pojedynczą linią.                                                                                                                                                     |
-|  ===                          | Podwójne podkreślenie                      | Podkreśla wszystkie kolumny kwoty w raporcie podwójną linią.                                                                                                                                                     |
-| LINE1                         | Cienka linia                             | Rysuje pojedynczą cienką linię w poprzek strony.                                                                                                                                                                      |
-| LINE2                         | Gruba linia                            | Rysuje pojedynczą grubą linię na stronie.                                                                                                                                                                     |
-| LINE3                         | Linia kropkowana                           | Rysuje pojedynczą przerywaną linię w poprzek strony.                                                                                                                                                                    |
-| LINE4                         | Pogrubiona linia i cienka linia              | Rysuje podwójną cienką linię w poprzek strony. Górna linia jest pogrubiona, a dolna linia jest cienka.                                                                                                                       |
-| LINE5                         | Cienka linia i pogrubiona linia              | Rysuje podwójną cienką linię w poprzek strony. Górna linia jest cienka, a dolna linia jest pogrubiona.                                                                                                                       |
-| BXB BXC                       | Wiersz obrysowany                             | Rysuje pole wokół wiersza raportu, które zaczyna się wierszem **BXB**, a kończy wierszem **BXC**.                                                                                                               |
-| REM                           | Uwaga                                | Identyfikuje wiersz będący komentarzem, który nie powinien być drukowany w raporcie. Na przykład, w wierszu uwagi można opisać techniki formatowania.                                                            |
-| SORT ASORT SORTDESC ASORTDESC | Sortuj                                  | Sortuje przychody lub wydatki, sortuje raport odchyleń rzeczywistych lub budżetowych według największej wartości lub sortuje opisy wierszy alfabetycznie.                                                                   |
+| <strong>Kod formatu</strong>  | <strong>Interpretacja kodu formatu</strong> |                                                                                                                             <strong>Akcja</strong>                                                                                                                              |
+|-------------------------------|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|            (Brak)             |                                                    |                                                                                                                  Czyści komórkę <strong>Kod formatu</strong>.                                                                                                                   |
+|              TOT              |                       Suma                        |                                         Określa wiersz używający operatorów matematycznych w kolumnie <strong>Powiązane formuły/wiersze/jednostki</strong>. Sumy zawierają proste operatory, takie jak <strong>+</strong> lub <strong>-</strong>.                                         |
+|              CAL              |                    Obliczenie                     | Identyfikuje wiersz, w którym w kolumnie <strong>Powiązane formuły/wiersze/jednostki</strong> są używane operatory matematyczne. Obliczenia zawierają złożone operatory, takie jak instrukcje <strong>+</strong>, <strong>-</strong>, <strong>\</strong><em>, **/</em><em> i **IF/THEN/ELSE</em>* |
+|              DES              |                    opis                     |                                                                                                             Określa wiersz nagłówka lub pusty wiersz w raporcie.                                                                                                              |
+|          LFT RGT CEN          |                 Lewo Prawo Środek                  |                                                                                 Wyrównuje tekst opisu wiersza na stronie raportu, niezależnie od miejsca tego tekstu w definicji kolumny.                                                                                 |
+|              CBR              |                  Zmiana wiersza podstawowego                   |                                                                                                         Identyfikuje wiersz, który ustawia wiersz podstawowy w obliczeniach kolumny.                                                                                                         |
+|            COLUMN             |                    Podział kolumny                    |                                                                                                                        Rozpoczyna nową kolumnę w raporcie.                                                                                                                        |
+|             PAGE              |                     Podział strony                     |                                                                                                                         Rozpoczyna nową stronę w raporcie.                                                                                                                         |
+|             \---              |                  Pojedyncze podkreślenie                  |                                                                                                            Podkreśla wszystkie kolumny kwoty w raporcie pojedynczą linią.                                                                                                            |
+|              ===              |                  Podwójne podkreślenie                  |                                                                                                            Podkreśla wszystkie kolumny kwoty w raporcie podwójną linią.                                                                                                            |
+|             LINE1             |                     Cienka linia                      |                                                                                                                    Rysuje pojedynczą cienką linię w poprzek strony.                                                                                                                     |
+|             LINE2             |                     Gruba linia                     |                                                                                                                    Rysuje pojedynczą grubą linię na stronie.                                                                                                                    |
+|             LINE3             |                    Linia kropkowana                     |                                                                                                                   Rysuje pojedynczą przerywaną linię w poprzek strony.                                                                                                                    |
+|             LINE4             |              Pogrubiona linia i cienka linia              |                                                                                             Rysuje podwójną cienką linię w poprzek strony. Górna linia jest pogrubiona, a dolna linia jest cienka.                                                                                             |
+|             LINE5             |              Cienka linia i pogrubiona linia              |                                                                                             Rysuje podwójną cienką linię w poprzek strony. Górna linia jest cienka, a dolna linia jest pogrubiona.                                                                                             |
+|            BXB BXC            |                     Wiersz obrysowany                      |                                                                            Rysuje pole wokół wierszy raportu, od wiersza z kodem <strong>BXB</strong> do wiersza z kodem <strong>BXC</strong>.                                                                            |
+|              REM              |                       Uwaga                       |                                                               Identyfikuje wiersz będący komentarzem, który nie powinien być drukowany w raporcie. Na przykład, w wierszu uwagi można opisać techniki formatowania.                                                                |
+| SORT ASORT SORTDESC ASORTDESC |                        Sortuj                        |                                                                   Sortuje przychody lub wydatki, sortuje raport odchyleń rzeczywistych lub budżetowych według największej wartości lub sortuje opisy wierszy alfabetycznie.                                                                   |
 
 ## <a name="specify-related-formulasrowsunits"></a>Określanie powiązanych formuł/wierszy/jednostek
 Komórka **Powiązane formuły/wiersze/jednostki** ma wiele zastosowań. W zależności od typu wiersza komórka **Powiązane formuły/wiersze/jednostki** można wykonywać jedną z następujących funkcji:
@@ -211,12 +210,12 @@ Kody sortowania sortują konta lub wartości, sortują raport odchyleń rzeczywi
 
 ### <a name="select-a-sorting-code"></a>Wybieranie kodu sortowania
 
-1.  W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
-2.  Kliknij dwukrotnie komórkę **Kod formatu**, a następnie wybierz opcję kod sortowania.
-3.  W komórce **Powiązane formuły/wiersze/jednostki** należy określić zakres kodów wiersza do sortowania. Aby określić zakres, należy wprowadzić kod pierwszego wiersza, dwukropek (:) i kod ostatniego wiersza. Na przykład wpisz **160:490**, aby określić, że zakres obejmuje wiersze od 160 do 490.
-4.  W komórce **Ograniczenia kolumny** należy wprowadzić literę kolumny raportu, która ma być użyta do sortowania. 
-> [!Note] 
-> W obliczeniach sortowania należy uwzględniać tylko wiersze kwoty.
+1. W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
+2. Kliknij dwukrotnie komórkę **Kod formatu**, a następnie wybierz opcję kod sortowania.
+3. W komórce **Powiązane formuły/wiersze/jednostki** należy określić zakres kodów wiersza do sortowania. Aby określić zakres, należy wprowadzić kod pierwszego wiersza, dwukropek (:) i kod ostatniego wiersza. Na przykład wpisz **160:490**, aby określić, że zakres obejmuje wiersze od 160 do 490.
+4. W komórce **Ograniczenia kolumny** należy wprowadzić literę kolumny raportu, która ma być użyta do sortowania. 
+   > [!Note] 
+   > W obliczeniach sortowania należy uwzględniać tylko wiersze kwoty.
 
 ### <a name="examples-of-ascending-and-descending-column-values"></a>Przykłady wartości kolumn w porządku rosnącym i malejącym
 
@@ -258,41 +257,41 @@ Komórka **Zmiana formatu** określa format, który jest używany dla wiersza po
 
 Formatowanie walutowe ma zastosowanie do kwoty obrachunkowej i zawiera symbol waluty. Dostępne są następujące opcje:
 
--   **Symbol waluty** — symbol waluty dla raportu. Ta wartość zastępuje ustawienie **Opcje regionalne** dla informacji o firmie.
--   **Liczby ujemne** — liczby ujemne mają znak minus (-), mogą pojawiać się w nawiasach lub mogą być oznaczone trójkątem (∆).
--   **Miejsca dziesiętne** — liczba wyświetlanych miejsc po przecinku.
--   **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. 
-> [!Note] 
-> Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
+- **Symbol waluty** — symbol waluty dla raportu. Ta wartość zastępuje ustawienie **Opcje regionalne** dla informacji o firmie.
+- **Liczby ujemne** — liczby ujemne mają znak minus (-), mogą pojawiać się w nawiasach lub mogą być oznaczone trójkątem (∆).
+- **Miejsca dziesiętne** — liczba wyświetlanych miejsc po przecinku.
+- **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. 
+  > [!Note] 
+  > Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
 
 ### <a name="numeric-formatting"></a>Formatowanie liczbowe
 
 Formatowanie numeryczne jest stosowane do dowolnej kwoty i nie zawiera symbolu waluty. Dostępne są następujące opcje:
 
--   **Liczby ujemne** — liczby ujemne mają znak minus (-), mogą pojawiać się w nawiasach lub mogą być oznaczone trójkątem (∆).
--   **Miejsca dziesiętne** — liczba wyświetlanych miejsc po przecinku.
--   **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. 
-> [!Note] 
-> Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
+- **Liczby ujemne** — liczby ujemne mają znak minus (-), mogą pojawiać się w nawiasach lub mogą być oznaczone trójkątem (∆).
+- **Miejsca dziesiętne** — liczba wyświetlanych miejsc po przecinku.
+- **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. 
+  > [!Note] 
+  > Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
 
 ### <a name="percentage-formatting"></a>Formatowanie procentowe
 
 Formatowanie procentowe zawiera znak procentów (%). Dostępne są następujące opcje:
 
--   **Liczby ujemne** — liczby ujemne mają znak minus (-), mogą pojawiać się w nawiasach lub mogą być oznaczone trójkątem (∆).
--   **Miejsca dziesiętne** — liczba wyświetlanych miejsc po przecinku.
--   **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. 
-> [!Note] 
-> Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
+- **Liczby ujemne** — liczby ujemne mają znak minus (-), mogą pojawiać się w nawiasach lub mogą być oznaczone trójkątem (∆).
+- **Miejsca dziesiętne** — liczba wyświetlanych miejsc po przecinku.
+- **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. 
+  > [!Note] 
+  > Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
 
 ### <a name="custom-formatting"></a>Formatowanie niestandardowe
 
 Za pomocą formatowania niestandardowego można tworzyć własne formaty nadrzędne. Dostępne są następujące opcje:
 
--   **Typ** — format niestandardowy.
--   **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. 
-> [!Note] 
-> Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
+- **Typ** — format niestandardowy.
+- **Zastąp test z wartością zero** — tekst, który trzeba wstawić w raporcie, gdy kwota wynosi 0 (zero). Ten tekst jest widoczny w ostatnim wierszu w **Próbka**. 
+  > [!Note] 
+  > Jeśli drukowanie nie jest pomijane dla wartości zerowych lub braku aktywności w okresie, ten tekst jest pomijany.
 
 Typ powinien być przestawiać wartość dodatnią, a następnie wartość ujemną. Zazwyczaj wprowadza się podobny format, który odróżnia wartości dodatnie od ujemnych. Na przykład aby określić, że ujemne i dodatnie wartości mają dwa miejsca dziesiętne, ale wartości ujemne są wyświetlane w nawiasach, wprowadź **0,00;(0,00)**. W poniższej tabeli przedstawiono formaty niestandardowe, których można używać do kontroli formatów wartości. Wszystkie przykłady zaczynają się od wartości 1234,56.
 
@@ -387,7 +386,7 @@ Domyślnie projektant raportów nie drukuje wierszy, które nie mają odnośnego
 3.  W menu **Plik** kliknij **Zapisz**, aby zapisać zmiany.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Używanie symboli wieloznacznych i zakresów w definicji wiersza
-Po wprowadzeniu wartości segmentu naturalnego w oknie dialogowym **Wymiary** możesz wstawić symbol wieloznaczny (? lub \*) w dowolnym miejscu segmentu. Projektant raportów wyodrębnienia wszystkie wartości dla zdefiniowanych pozycji bez uwzględniania symboli wieloznacznych. Na przykład definicja wiersza zawiera tylko wartości naturalnych segmentów, a naturalne segmenty mają cztery znaki. Wprowadzając w wierszu wartość **6???**, tworzysz instrukcję dla projektanta raportów, aby uwzględniał wszystkie konta, które mają wartość naturalnego segmentu zaczynającą się od cyfry 6. Jeśli wprowadzisz **6\***, zwracane są te same wyniki, ale obejmują one również wartości o różnej szerokości, takie jak **60** i **600000**. Projektant raportów zastępuje poszczególne symbole wieloznaczne (?) pełnym zakresem możliwych wartości, co obejmuje litery i znaki specjalne. Na przykład w zakresie od **12?0** do **12?4**, symbol wieloznaczny w kombinacji **12?0** jest zastępowany najniższą wartością w zestawie znaków, a symbol wieloznaczny w kombinacji **12? 4** jest zastępowany najwyższą wartością w zestawie znaków. 
+Po wprowadzeniu wartości segmentu naturalnego w oknie dialogowym <strong>Wymiary</strong> możesz wstawić symbol wieloznaczny (? lub \*) w dowolnym miejscu segmentu. Projektant raportów wyodrębnienia wszystkie wartości dla zdefiniowanych pozycji bez uwzględniania symboli wieloznacznych. Na przykład definicja wiersza zawiera tylko wartości naturalnych segmentów, a naturalne segmenty mają cztery znaki. Wprowadzając w wierszu wartość <strong>6???</strong>, tworzysz instrukcję dla projektanta raportów, aby uwzględniał wszystkie konta, które mają wartość naturalnego segmentu zaczynającą się od cyfry 6. Jeśli wprowadzisz <strong>6\</strong><em>, zwracane są te same wyniki, ale obejmują one również wartości o różnej szerokości, takie jak **60</em>* i <strong>600000</strong>. Projektant raportów zastępuje poszczególne symbole wieloznaczne (?) pełnym zakresem możliwych wartości, co obejmuje litery i znaki specjalne. Na przykład w zakresie od <strong>12?0</strong> do <strong>12?4</strong>, symbol wieloznaczny w kombinacji <strong>12?0</strong> jest zastępowany najniższą wartością w zestawie znaków, a symbol wieloznaczny w kombinacji <strong>12? 4</strong> jest zastępowany najwyższą wartością w zestawie znaków. 
 > [!Note] 
 > Należy unikać używania symboli wieloznacznych dla kont na początkach i końcach zakresów. Używanie symboli wieloznacznych w konta początkowych lub końcowych może dawać nieoczekiwane wyniki.
 
@@ -466,15 +465,15 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 
 ### <a name="update-a-set-of-dimension-values"></a>Aktualizowanie zestawu wartości wymiaru
 
-1.  W Projektancie raportów otwórz definicję wierszy, kolumn lub drzewa, którą chcesz zmodyfikować.
-2.  W menu **Edycja** kliknij **Zarządzaj zestawami wartości wymiarów**.
-3.  W oknie dialogowym **Zarządzanie zestawami wartości wymiarów** w polu **Wymiar** wybierz typ wymiaru.
-4.  Na liście wymierz zestaw wartości wymiarów do aktualizacji, a następnie kliknij **Modyfikuj**.
-5.  W oknie dialogowym **Modyfikowanie** modyfikuj wartości formuły, które mają znaleźć się w zestawie. 
-> [!Note] 
-> Jeśli dodajesz nowe konta lub wymiary, pamiętaj, aby zmodyfikować istniejące zestawy wartości wymiaru, tak aby uwzględniały zmiany.
-6.  Kliknij dwukrotnie komórkę, a następnie wybierz odpowiedni operator, konto **Z** i konto **Do**.
-7.  Kliknij **OK**, aby zamknąć okno dialogowe **Modyfikowanie** i zapisz zmiany.
+1. W Projektancie raportów otwórz definicję wierszy, kolumn lub drzewa, którą chcesz zmodyfikować.
+2. W menu **Edycja** kliknij **Zarządzaj zestawami wartości wymiarów**.
+3. W oknie dialogowym **Zarządzanie zestawami wartości wymiarów** w polu **Wymiar** wybierz typ wymiaru.
+4. Na liście wymierz zestaw wartości wymiarów do aktualizacji, a następnie kliknij **Modyfikuj**.
+5. W oknie dialogowym **Modyfikowanie** modyfikuj wartości formuły, które mają znaleźć się w zestawie. 
+   > [!Note] 
+   > Jeśli dodajesz nowe konta lub wymiary, pamiętaj, aby zmodyfikować istniejące zestawy wartości wymiaru, tak aby uwzględniały zmiany.
+6. Kliknij dwukrotnie komórkę, a następnie wybierz odpowiedni operator, konto **Z** i konto **Do**.
+7. Kliknij **OK**, aby zamknąć okno dialogowe **Modyfikowanie** i zapisz zmiany.
 
 ### <a name="copy-a-dimension-set"></a>Kopiowanie zestawu wymiarów
 

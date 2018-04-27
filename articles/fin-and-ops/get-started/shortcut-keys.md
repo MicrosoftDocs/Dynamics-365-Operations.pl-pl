@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamics 365 for Finance and Operations. 
 
@@ -39,6 +38,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 
 
 ## <a name="action-shortcuts"></a>Skróty akcji
+
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | **Funkcja**                                    | **Klawisze**                        |
@@ -55,6 +55,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Wyświetl aktualnie dostępne skróty                | Alt+Shift+K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Skróty selektora dat
+
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Funkcja**                        | **Klawisze**                                 |
@@ -68,6 +69,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Wybierz opcję Nigdy (lub datę maksymalną)          | N                                         |
 
 ## <a name="factbox-shortcuts"></a>Skróty pola informacji
+
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | **Funkcja**                                                                  | **Klawisze**                                 |
@@ -79,6 +81,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Zwiń bieżące pole informacji                                                    | Alt+0                                     |
 
 ## <a name="filtering-shortcuts"></a>Filtrowanie skrótów
+
 |                                    |                          |
 |------------------------------------|--------------------------|
 | **Funkcja**                     | **Naciśnij**                |
@@ -89,6 +92,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Otwórz filtrowanie/sortowanie zaawansowane                                      | Ctrl+Shift+F3            | 
 
 ## <a name="form-shortcuts"></a>Skróty formularza
+
 |                                                     |                   |
 |-----------------------------------------------------|-------------------|
 | **Funkcja**                                      | **Naciśnij**         |
@@ -110,6 +114,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Zamknij formularz bez zapisywania zmian       | Alt+Shift+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Skróty nawigacji formularza
+
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | **Funkcja**                                      | **Klawisze**                                    |
@@ -128,6 +133,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Przełącz do widoku wierszy                                | Ctrl+Shift+L                                 |
 
 ## <a name="grid-shortcuts"></a>Skróty siatki
+
 |                                                                                                                        |                                 |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | **Funkcja**                                                                                                         | **Klawisze**                       |
@@ -148,6 +154,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Otwarcie filtrowania siatki dla bieżącej kolumny (z fokusem w wierszu nagłówka)                                              | Enter                           |
 
 ## <a name="input-control-shortcuts"></a>Skróty wpisywania danych
+
 |                                                                              |                               |
 |------------------------------------------------------------------------------|-------------------------------|
 | **Funkcja**                                                               | **Klawisze**                     |
@@ -163,6 +170,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Przełącz fokus między obszarem tekstu a paskiem narzędzi w formancie edytora HTML | F6                            |
 
 ## <a name="messaging-shortcuts"></a>Skróty wiadomości
+
 |                          |               |
 |--------------------------|---------------|
 | **Funkcja**           | **Klawisze**     |
@@ -170,6 +178,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Przejdź do Paska wiadomości    | Ctrl+F7       |
 
 ## <a name="navigation-shortcuts"></a>Skróty nawigacji
+
 |                                                                               |                            |
 |-------------------------------------------------------------------------------|----------------------------|
 | **Funkcja**                                                                | **Klawisze**                  |
@@ -191,6 +200,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Przejdź do okienka pola informacji (może obejmować jego otwarcie)                       | Alt+M, B lub Ctrl+F2         |
 
 ## <a name="personalization-shortcuts"></a>Skróty personalizacji
+
 |                                                                                                                        |                                     |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | **Funkcja**                                                                                                         | **Klawisze**                           |
@@ -219,6 +229,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Wyjdź z trybu personalizacji (w trybie personalizacji)                                                               | Esc                                 |
 
 ## <a name="segmented-entry-shortcuts"></a>Skróty wpis podzielonego na segmenty
+
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | **Funkcja**                                                                                                          | **Klawisze**                        |

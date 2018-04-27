@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="vat-reconciliation-report"></a>Raport uzgodnienia podatku VAT
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób generowania raportu uzgodnienia podatku, który jest dostępny dla firm w Islandii i Norwegii. Zadanie utworzono przy użyciu danych firmy demonstracyjnej DEMF, aktualizując kraj/region podstawowego adresu na Norwegię.
 

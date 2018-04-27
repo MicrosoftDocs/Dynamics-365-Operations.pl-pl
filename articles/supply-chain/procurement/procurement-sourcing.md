@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-and-sourcing-home-page"></a>Zaopatrzenie i sourcing — strona główna
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera listę tematów Pomocy oraz innych zasobów dostępnych dla modułu Zaopatrzenie i sourcing.
 

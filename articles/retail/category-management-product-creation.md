@@ -20,44 +20,43 @@ ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 4b7ef962b777a31e1da238a8ec1be9a42ec5bb5f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2246024d7d70947690173f3d0768292abe43efd7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
+# <a name="manage-retail-product-categories-and-products"></a>Zarządzanie kategoriami produktów i produktami sieci sprzedaży
 
-# <a name="enhanced-product-and-category-management"></a>Ulepszone zarządzanie kategoriami i produktami
+[!INCLUDE [banner](./includes/banner.md)]
 
-[!include[banner](./includes/banner.md)]
+W tym temacie opisano poszerzony sposób zarządzania kategoriami produktów sieci sprzedaży i produktami w programie Microsoft Dynamics 365 for Retail. Ulepszenia umożliwiają menedżerom ds. merchadisingu wyświetlanie struktury właściwości produktów, która jest wspólna dla hierarchii produktów sieci sprzedaży i informacji o zwolnionych produktach.
 
-W tym temacie opisano poszerzony sposób zarządzania kategoriami produktów sieci sprzedaży i produktami w programie Dynamics 365 for Retail. Te ulepszenia umożliwiają menedżerom ds. merchadisingu wyświetlanie wspólnej struktury właściwości produktów między hierarchiami produktów detalicznych a informacjami o zwolnionych produktach.
+Aby dowiedzieć się więcej o zarządzaniu kategoriami produktów sieci sprzedaży, w obszarze roboczym **Zarządzanie kategoriami i produktami** wybierz kafelek **Hierarchia produktów sieci sprzedaży**.
 
-Aby dowiedzieć się więcej o zarządzaniu kategoriami produktów sieci sprzedaży, w obszarze roboczym **Zarządzanie kategoriami i produktami** przejdź do sekcji **Hierarchia produktów sieci sprzedaży** i zwróć uwagę na ulepszoną strukturę znajdującą się na stronie **Kategoria produktów sieci sprzedaży**.
-
-![Obszar roboczy Zarządzanie kategoriami i produktami](media/LaunchRetailProductHierarchy.png)
-
-W poprzednich wersjach właściwości produktów były podzielone na **podstawowe właściwości produktów** i **właściwości produktów sieci sprzedaży** na podstawie zakresu ich zastosowania. **Właściwości produktów sieci sprzedaży** były *globalne* ze względu na zakres zastosowania, co oznacza, że dla danej **właściwości produktu sieci sprzedaży** ta sama wartość jest wspólna we wszystkich firmach. **Podstawowe właściwości produktów** były *specyficzne dla firmy*. Inaczej mówiąc, dana **podstawowa właściwość produktu** może mieć różne wartości dla różnych firm w zależności od wymagań biznesowych.
+Zwróć uwagę na ulepszoną strukturę na stronie **Hierarchia produktów sieci sprzedaży**. W poprzednich wersjach aplikacji Retail właściwości produktów były podzielone na *podstawowe właściwości produktów* i *właściwości produktów sieci sprzedaży* na podstawie zakresu ich zastosowania. Właściwości produktów sieci sprzedaży są *globalne* pod względem zakresu ich zastosowania. Inaczej mówiąc, dla danej właściwości produktu sieci sprzedaży ta sama wartość jest współdzielona we wszystkich firmach. Z kolei podstawowe właściwości produktów są *specyficzne dla firmy*. Inaczej mówiąc, dana podstawowa właściwość produktu może mieć różne wartości dla różnych firm, w zależności od wymagań biznesowych konkretnej firmy.
 
 W ulepszonej strukturze kategorii produktów sieci sprzedaży właściwości produktów są logicznie rozdzielone na podstawie ich zastosowania w grupie, tak aby odzwierciedlić strukturę formularza szczegółów zwolnionych produktów.
 
-![Grupowanie pól w oparciu o ich zakres stosowania](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
+![Pola pogrupowane w oparciu o zakres stosowania właściwości](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
-Można przełączyć się między zarządzaniem właściwościami specyficznymi dla firmy we wszystkich firmach i zarządzaniem nimi dla określonej firmy. W tym celu wybierz opcję **Wyświetl/edytuj dla wszystkich firm** lub **Wyświetl/edytuj dla określonej firmy**.
+Można przełączyć się między zarządzaniem właściwościami specyficznymi dla firmy we wszystkich firmach a zarządzaniem nimi dla określonej firmy.
 
-![Przełączanie widoku między jedną a wszystkimi firmami](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+Aby zarządzać właściwościami we wszystkich firmach, wybierz opcję **Wyświetl dla wszystkich firm** (lub **Edytuj dla wszystkich firm**).
 
-![Przełączanie widoku między jedną a wszystkimi firmami](media/ToggleToEditForAllLegalEntities.PNG)  
+![Wyświetl/edytuj dla wszystkich firm](media/ToggleBackToEditForSpecificLegalEntity.PNG)
 
-W porównaniu z poprzednimi wersjami w nowej strukturze kategorii produktów sieci sprzedaży kierownik ds. merchadisingu może zdefiniować domyślne wartości dodatkowego zestawu właściwości produktów na poziomie indywidualnej kategorii. Podczas tworzenia produktu te domyślne właściwości produktu są dziedziczone przez produkt w oparciu o jego powiązanie z konkretną kategorią w hierarchii produktów sieci sprzedaży. Te dziedziczone właściwości produktów można również modyfikować dla każdego produktu, aby spełnić indywidualne wymagania biznesowe.
+Aby zarządzać właściwościami określonej firmy, wybierz opcję **Wyświetl dla określonej firmy** (lub **Edytuj dla określonej firmy**).
 
-## <a name="select-properties-to-update-products-from-the-retail-product-category-form"></a>Wybieranie właściwości do aktualizacji produktu z formularza kategorii produktów sieci sprzedaży 
- 
-Tej nowej ulepszonej struktury można używać dla właściwości produktów w celu określania, które zaktualizowane właściwości produktów mają być rozpowszechniane do powiązanych produktów. 
+![Wyświetl/edytuj dla określonej firmy](media/ToggleToEditForAllLegalEntities.PNG)
 
-![Nowy, ulepszony widok aktualizacji produktów](media/NewUpdateProductsEnhancedView.PNG) 
+Ponadto w ulepszonej strukturze kategorii produktów sieci sprzedaży kierownik ds. merchadisingu może zdefiniować domyślne wartości dodatkowego zestawu właściwości produktów na poziomie indywidualnej kategorii. Wtedy podczas tworzenia produktów będą one dziedziczyły domyślne wartości w oparciu o ich powiązanie z konkretną kategorią w hierarchii produktów sieci sprzedaży. Te dziedziczone właściwości produktów można również modyfikować dla każdego produktu, aby spełnić indywidualne wymagania biznesowe.
 
-Menedżerowie ds. merchandisingu mogą zmodyfikować odziedziczone właściwości produktów dla każdego produktu, aby spełnić indywidualne wymagania biznesowe.
+## <a name="selecting-properties-to-update-products-on-the-retail-product-hierarchy-page"></a>Wybieranie właściwości w celu aktualizowania produktów na stronie hierarchii produktów sieci sprzedaży
+
+Nowej ulepszonej struktury można używać dla właściwości produktów w celu określania, które zaktualizowane właściwości produktów mają być rozpowszechniane do powiązanych produktów. Na stronie **Hierarchia produktów sieci sprzedaży** w okienku akcji wybierz opcję **Kategoria**, a następnie wybierz opcję **Aktualizuj produkty**, aby otworzyć okno dialogowe **Aktualizuj produkty**.
+
+![Okno dialogowe Aktualizuj produkty](media/NewUpdateProductsEnhancedView.PNG)
 
 

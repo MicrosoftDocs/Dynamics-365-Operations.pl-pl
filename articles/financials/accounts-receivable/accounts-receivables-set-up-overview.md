@@ -28,8 +28,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfiguracja modułów Rozrachunki z odbiorcami i Kredyty i windykacja
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Odpowiednie skonfigurowanie modułów Rozrachunki z odbiorcami oraz Kredyty i windykacja umożliwi śledzenie faktur i płatności przychodzących od odbiorców.
 
@@ -107,7 +106,7 @@ Poniższa tabela zawiera listę stron, które umożliwiają konfigurację i obs�
 |                                                      | Informacja NF.                     | Ustaw informacje dotyczące niewystarczających funduszy na koncie bankowym, które będą używane, gdy płatność jest oznaczona jako transakcja NF na stronie Windykacje.                                                                                                                                              |
 |                                                      | Informacje o sprzedawcy              | Ustaw adres e-mail dla sprzedawców. Te adresy będą widoczne na stronie Windykacje i można ich używać do wysyłania wiadomości e-mail do sprzedawcy z tej strony.                                                                                                                |
 
- 
+
 Aby uzyskać więcej informacji, zobacz temat [Kredyty i windykacja w rozrachunkach z odbiorcami](collections-credit-accounts-receivable.md).
 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="release-a-productproduct-master-to-legal-entities"></a>Zwalnianie produktu/produktu głównego do firm
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura zawiera instruktaż sposobu zwalniania produkt lub produktu głównego do jednej lub więcej firm. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USRT, a zadanie jest przeznaczone dla kierownika ds. merchandisingu i projektanta produktów.
 

@@ -17,17 +17,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: df924487c02ee9c7246ab9f12719382459634e98
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 51449f2f8448a493ebf7e4496cebdb90d902869a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-signers-for-print-forms"></a>Konfigurowanie osób podpisujących drukowane formularze
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dla firm w Czechach, Estonii, na Węgrzech, Litwie, Łotwie, w Polsce i Rosji można skonfigurować osoby podpisujące oraz tytuły dla odbiorców i dostawców, którzy drukują dokumenty, takie jak faktury i zamówienia gotówkowe.
 
@@ -60,19 +59,19 @@ Aby skonfigurować osoby podpisujące dokumenty drukowane przez firmę, należy 
 <li>Raport zaliczek</li>
 <li>Strona księgi kasowej</li>
 <li>Wyciąg kasowy zliczania</li>
-<li>Odroczenia*</li>
+<li>Odroczenia<em></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Zamówienia sprzedaży</td>
 <td>Dodawanie stanowisk i pokrewnych informacji o osobach podpisujących, które mogą podpisywać następujące główne dokumenty wychodzące związane z odbiorcami:
 <ul>
-<li>Faktura do zapłaty*</li>
+<li>Faktura do zapłaty</em></li>
 <li>Faktura VAT</li>
-<li>Dokument faktury*</li>
+<li>Dokument faktury<em></li>
 <li>Faktura — faktura korygująca</li>
-<li>Dokument faktury — faktura korygująca*</li>
-<li>Dokument faktury transakcji podatku (klient)*</li>
+<li>Dokument faktury — faktura korygująca</em></li>
+<li>Dokument faktury transakcji podatku (klient)<em></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -80,18 +79,18 @@ Aby skonfigurować osoby podpisujące dokumenty drukowane przez firmę, należy 
 <td>Dodawanie stanowisk i pokrewnych informacji o osobach podpisujących, które mogą podpisywać następujące główne dokumenty przychodzące związane z dostawcami:
 <ul>
 <li>Faktura VAT</li>
-<li>Dokument faktury*</li>
+<li>Dokument faktury</em></li>
 <li>Faktura — faktura korygująca</li>
-<li>Dokument faktury — faktura korygująca*</li>
-<li>Faktura do zapłaty*</li>
-<li>Dokument faktury transakcji podatku (dostawca)*</li>
+<li>Dokument faktury — faktura korygująca<em></li>
+<li>Faktura do zapłaty</em></li>
+<li>Dokument faktury transakcji podatku (dostawca)<em></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Zarządzanie pozycjami magazynowymi</td>
 <td>Dodawanie stanowisk i pokrewnych informacji o osobach podpisujących, które mogą podpisywać następujące dokumenty magazynowe, gdy materialne środki trwałe są wydawane do odbiorcy lub przyjmowane od dostawcy:
 <ul>
-<li>Potwierdzenie wystawienia zamówienia sprzedaży (M-15)*</li>
+<li>Potwierdzenie wystawienia zamówienia sprzedaży (M-15)</em></li>
 <li>Dokument KP/Zamówienie przyjęcia</li>
 <li>Potwierdzenie wydania towarów dla zamówienia przeniesienia (M-15)*</li>
 </ul></td>
@@ -122,7 +121,7 @@ Aby skonfigurować osoby podpisujące dokumenty drukowane przez firmę, należy 
 <td>Wybór imienia i nazwiska osoby podpisującej. Imiona i nazwiska na liście pochodzą z tabeli Kontakty lub tabeli Pracownicy, w zależności od typu osoby podpisującej (tzn. w zależności od tego, czy jest zaznaczone pole wyboru <strong>Nasz</strong>). Jeśli imienia i nazwiska osoby podpisującej nie ma na liście, należy ręcznie wprowadzić tę informację.</td>
 </tr>
 <tr class="odd">
-<td>Stanowisko</td>
+<td>Nazwa stanowiska</td>
 <td>Wybór stanowiska osoby podpisującej. Jeśli stanowiska osoby podpisującej nie ma na liście, należy ręcznie wprowadzić tę informację.</td>
 </tr>
 <tr class="even">

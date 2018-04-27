@@ -28,8 +28,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="set-up-training-courses"></a>Konfigurowanie kursów szkoleniowych
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Administratorzy zasobów ludzkich i menedżerowie mogą korzystać z funkcji kursów do obsługi informacji o szkoleniu oferowanym pracownikom.
 
@@ -81,15 +80,15 @@ W poniższej tabeli wymieniono trzy rodzaje ustawień kursów. Typy ustawień ok
 
 ## <a name="course-tasks"></a>Zadania kursu
 Dla każdego kursu można wykonać następujące zadania.
--   Rejestracja uczestników
--   Określenie ostatecznego terminu rejestracji
--   Określenie minimalnej i maksymalnej liczby uczestników
--   Przypisanie lokalizacji i sali
--   Hotele rekomendowane uczestnikom kursu
--   Utworzenie opisu kursu, który później może zostać zareklamowany w Samoobsłudze pracownika
+- Rejestracja uczestników
+- Określenie ostatecznego terminu rejestracji
+- Określenie minimalnej i maksymalnej liczby uczestników
+- Przypisanie lokalizacji i sali
+- Hotele rekomendowane uczestnikom kursu
+- Utworzenie opisu kursu, który później może zostać zareklamowany w Samoobsłudze pracownika
 
   >**Uwaga** Kurs można usunąć tylko wtedy, gdy nikt się na niego nie zarejestrował. 
-    
+
 ## <a name="course-statuses"></a>Stany kursu
 W poniższej tabeli wymieniono możliwe stany i akcje kursu, które można wykonać, gdy kurs ma określony stan.
 

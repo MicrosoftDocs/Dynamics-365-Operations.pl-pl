@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="set-up-sales-commission-rules"></a>Konfigurowanie reguł dla prowizji od sprzedaży
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano, jak skonfigurować oraz włączyć obliczanie i śledzenie prowizji od sprzedaży. W procedurze pokazano, jak utworzyć grupy odbiorców i prowizji za towary, a następnie jak połączyć wybranego odbiorcę i produkt z odpowiednimi grupami. Te grupy są następnie używane w konfiguracji obliczania prowizji do tworzenia kombinacji odbiorcy, towaru i przedstawicieli handlowych, które muszą pasować do zamówienia sprzedaży, aby uprawniać sprzedawców do prowizji. Tworzenie grup odbiorców i prowizji za towary jest opcjonalne, ponieważ można obliczenia prowizji można również wykonywać dla poszczególnych odbiorców i/lub towarów. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
 

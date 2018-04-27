@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Kalendarze, lata i okresy obrachunkowe
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym artykule omówiono narzędzia kalendarzy obrachunkowych, lat obrachunkowych i okresów oraz możliwości ich wykorzystywania dla firm, środków trwałych i budżetowania.
 

@@ -16,16 +16,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fc47f6cd9cfe4a850e0959bf89da086ca82f3b69
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="data-import-and-export-jobs"></a>Zadania importowania i eksportowania danych
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Aby tworzyć zadania importu i eksportu w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations i zarządzać nimi, należy korzystać z obszaru roboczego **Zarządzanie danymi**. Domyślne proces importowania i eksportowania danych tworzy tabelę przemieszczania dla każdej jednostki w docelowej bazie danych. Tabele tymczasowe umożliwiają sprawdzenie, czyszczenie lub konwersję danych przed ich przeniesieniem.
 
@@ -64,13 +64,15 @@ Zalecamy, aby poświęcić czas na wybranie odpowiedniej kategorii projektu dla 
 Do zadania importu lub eksportu można dodać określone jednostki lub wybrać szablon do zastosowania. Szablony umożliwiają wypełnienie zadania listą jednostek. Opcja **Zastosuj szablon** jest dostępna po nadaniu zadaniu nazwy i jego zapisaniu.
 
 ### <a name="set-the-data-format-for-the-job"></a>Ustawianie formatu danych zadania
-Podczas wybieranie jednostki należy wybrać format eksportowanych lub importowanych danych. Formaty można określić, używając kafelka **Ustawienia źródeł danych**. Wiele organizacji najpierw korzysta z formatów zawartych domyślnie w demonstracyjnym zestawie danych. Oto listy niektórych z tych formatów:
+Podczas wybieranie jednostki należy wybrać format eksportowanych lub importowanych danych. Formaty można określić, używając kafelka **Ustawienia źródeł danych**. Format danych źródłowych jest kombinacją elementów **Typ**, **Format pliku**, **Separator wiersza** i **Separator kolumny**. Istnieją również inne atrybuty, ale to są główne, które należy znać. Poniższa tabela zawiera listę prawidłowych kombinacji.
 
-- AX (przeznaczony dla danych, które muszą być importowane lub eksportowane w tym samym formacie, jaki jest używany w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations)
-- ColonSeparated
-- Plik CSV
-- Excel
-- Opakowanie
+| **Format pliku**        | **Separator wiersza/kolumny**                   | **Styl XML**             |
+|------------------------|--------------------------------------------|---------------------------|
+| Excel                  | Excel                                      | \-Nie dotyczy-                     |
+| Plik XML                    | \-Nie dotyczy-                                      | Element XML Atrybut XML |
+| Ograniczone, stała szerokość | Przecinek, średnik, tabulator, pionowa kreska, dwukropek | \-Nie dotyczy-                     |
+
+
 
 ### <a name="sequence-the-entities"></a>Określanie kolejności jednostek
 Kolejność jednostek można określić w szablonie danych albo w zadaniach importu lub eksportu. Po uruchomieniu zadania, które zawiera więcej niż jedną jednostkę należy się upewnić, że kolejność jednostek danych jest prawidłowa. Kolejność jednostek określa się głównie po to, aby obsłużyły zależności funkcjonalne między jednostkami. Jeżeli jednostki nie mają żadnych zależności funkcjonalnych, można zaplanować ich import lub eksport równoległy.

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-management-home-page"></a>Zarządzanie finansami — strona główna
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Ten temat zawiera listę tematów Pomocy i innych zasobów dotyczących funkcji zarządzania finansami w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations. 
 

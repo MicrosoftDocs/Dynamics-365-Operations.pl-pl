@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="time-and-attendance-registration"></a>Rejestracja czasu i frekwencji
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pracownicy odpowiedzialni za rejestrację czasu mogą wprowadzać różne zdarzenia, na przykład wejścia, wyjścia, działania pośrednie i nieobecności. W tym temacie opisano rejestracje, ich obliczanie i zatwierdzanie, a także stosowanie przepływu pracy w celu dodania struktury i automatycznego zatwierdzania do procesu zatwierdzania kart czasu pracy. 
 
@@ -95,7 +94,7 @@ Można ustawić proces zatwierdzania przepływu pracy, który automatycznie zatw
 | Suma dni w module Czas i obecność            | Przepływ pracy sprawdza poprawność rejestracji względem na przykład oczekiwanej liczby godzin w dniu. |                                                                                                                                                                                                                                                       |
 | Rejestracja dziennika w module Czas i obecność. | Przepływ pracy sprawdza poprawność każdego typu rejestracji dla daty rejestracji.                           | Czas i obecność • Wejście • Wyjście • Nieobecność • Przerwa • Kod przełączania • Projekt • Działanie projektu • Działanie pośrednie • Zadania produkcyjne • Oczekiwanie przed • Ustawienia • Proces • Nakładanie • Transport • Oczekiwanie po • Rozpocznij asystę • Zakończ asystę |
 
- 
+
 
 ## <a name="transferring-approved-registrations"></a>Przesyłanie zatwierdzonych rejestracji
 Po zatwierdzeniu rejestracji można przenieść je do okresowego zadania listy płac. Przeniesiona rejestracja jest księgowana jako działanie lub zadanie, do którego się odwołuje, zlecenie produkcyjne lub projekt. Transakcje listy płac są generowane dla każdego pracownika na podstawie rejestracji.  

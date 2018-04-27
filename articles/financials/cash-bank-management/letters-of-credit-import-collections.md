@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit-and-import-collections"></a>Akredytywy i inkasa eksportowe
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera ogólne informacje o akredytywach i inkasie importowym. Oba rodzaje dokumentów bankowych są często używane do kupna i sprzedaży towarów między krajami.
 

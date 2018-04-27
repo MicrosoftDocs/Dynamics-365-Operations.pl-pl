@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="configure-the-functionality-profile-for-a-sales-representative"></a>Konfigurowanie profilu funkcji dla przedstawiciela handlowego
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ta procedura pokazuje, jak skonfigurować ustawienia profilu funkcji sklepu, które mają zastosowanie do przedstawicieli handlowych. Procedura wykorzystuje dane firmy demonstracyjnej USRT.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>Tworzenie zwolnionego produktu dla jednej firmy
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura prowadzi przez proces tworzenia jednego zwolnionego produktu w ramach jednej jednostki prawnej. Po utworzeniu zwolnionego produktu jest on natychmiast dostępny tylko w tej jednostce. Instruktaż można wykonać przy użyciu danych firmy demonstracyjnej USMF. To zadanie jest zwykle wykonywane przez konstruktora produktów.
 

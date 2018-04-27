@@ -18,17 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2e7d823c177961e0adaea383aa6b97cd506d44a0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1befa741c5090547cf11b82799486764cd06b7a3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="fixed-assets-disposal-for-poland"></a>Likwidacja środków trwałych dla Polski
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o funkcjonalności likwidacji środków trwałych dla użytkowników w firmach w Polsce. 
 
@@ -42,28 +41,30 @@ Ten temat zawiera informacje o funkcjonalności likwidacji środków trwałych d
 ## <a name="templates-for-fixed-asset-disposal"></a>Szablony likwidacji środków trwałych
 Szablonu likwidacji środków trwałych można używać jako opcji upraszczającej konfigurowanie kont likwidacji środków trwałych dla profili księgowania. Aby utworzyć lub edytować szablon likwidacji środków trwałych, wykonaj następujące kroki:
 
-1.  Wybierz kolejno opcje **Środki trwałe** &gt; **Ustawienia** &gt; **Profile księgowania środków trwałych**.
-2.  W sekcji **Likwidacja** kliknij opcję **Utwórz szablon** i wybierz profil księgowania środków trwałych.
-3.  Wypełnij następujące pola:
-    |                    |                                                                                                                                |
-    |--------------------|--------------------------------------------------------------------------------------------------------------------------------|
-    | **Pole**          | **Opis**                                                                                                                |
-    | **Księga**           | Wybierz księgę, w której chcesz skonfigurować lub aktualizować konta księgowania likwidacji składników aktywów.                                         |
-    | **Konto główne**   | Wybrane konto będzie automatycznie używane jako **Konto główne** podczas tworzenia lub aktualizowania kont na potrzeby księgowania likwidacji.       |
-    | **Konto przeciwstawne** | Wybrane konto będzie automatycznie używane jako **Konto przeciwstawne** podczas tworzenia lub aktualizowania kont na potrzeby księgowania likwidacji. |
-    | **Zastępowanie**      | Jeśli zaznaczysz tę opcję, system zastąpi istniejące konta likwidacji dla wybranej wartości **Księga**.                                     |
+1. Wybierz kolejno opcje **Środki trwałe** &gt; **Ustawienia** &gt; **Profile księgowania środków trwałych**.
+2. W sekcji **Likwidacja** kliknij opcję **Utwórz szablon** i wybierz profil księgowania środków trwałych.
+3. Wypełnij następujące pola:
 
-4.  Kliknij przycisk **OK**. System automatycznie będzie tworzył lub aktualizował reguły księgowania w wybranej księdze dla następujących składników (typów transakcji) likwidacji środków trwałych:
-    -   Amortyzacja (lata ubiegłe)
-    -   Amortyzacja (ten rok)
-    -   Korekta amortyzacji (lata wcześniejsze)
-    -   Korekta amortyzacji (ten rok)
-    -   Amortyzacja dodatkowa (poprzednie lata)
-    -   Amortyzacja dodatkowa (bieżący rok)
-    -   Umorzenie BO (lata ubiegłe)
-    -   Umorzenie BO (ten rok)
-    -   Zmiana wartości umorzenia (lata ubiegłe)
-    -   Zmiana wartości umorzenia (ten rok)
+   |                                 |                                                                                                                                             |
+   |---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+   |     <strong>Pole</strong>      |                                                        <strong>Opis</strong>                                                         |
+   |      <strong>Księga</strong>      |                           Wybierz księgę, w której chcesz skonfigurować lub aktualizować konta księgowania likwidacji składników aktywów.                            |
+   |  <strong>Konto główne</strong>  |    Wybrane konto będzie automatycznie używane jako <strong>Konto główne</strong> podczas tworzenia lub aktualizowania kont na potrzeby księgowania likwidacji.    |
+   | <strong>Konto przeciwstawne</strong> | Wybrane konto będzie automatycznie używane jako <strong>Konto przeciwstawne</strong> podczas tworzenia lub aktualizowania kont na potrzeby księgowania likwidacji. |
+   |   <strong>Zastępowanie</strong>    |                   Jeśli zaznaczysz tę opcję, system zastąpi istniejące konta likwidacji dla wybranej wartości <strong>Księga</strong>.                   |
+
+
+4. Kliknij przycisk **OK**. System automatycznie będzie tworzył lub aktualizował reguły księgowania w wybranej księdze dla następujących składników (typów transakcji) likwidacji środków trwałych:
+   -   Amortyzacja (lata ubiegłe)
+   -   Amortyzacja (ten rok)
+   -   Korekta amortyzacji (lata wcześniejsze)
+   -   Korekta amortyzacji (ten rok)
+   -   Amortyzacja dodatkowa (poprzednie lata)
+   -   Amortyzacja dodatkowa (bieżący rok)
+   -   Umorzenie BO (lata ubiegłe)
+   -   Umorzenie BO (ten rok)
+   -   Zmiana wartości umorzenia (lata ubiegłe)
+   -   Zmiana wartości umorzenia (ten rok)
 
 ## <a name="permission-to-sell"></a>Zezwolenie na sprzedaż
 Funkcja zezwolenia na sprzedaż rozszerza podstawową funkcjonalność likwidacji poprzez sprzedaż dla użytkowników w firmach w Polsce o dwa dodatkowe parametry:

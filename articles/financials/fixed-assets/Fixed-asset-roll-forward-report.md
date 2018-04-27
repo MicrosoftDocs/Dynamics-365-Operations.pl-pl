@@ -19,15 +19,15 @@ ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7a81697a8e90fb6b0695a02db0868f5708fdbddf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 16f7c199fb4c9905c465e5d4596d3eaa90104b83
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Raport przesunięcia środków trwałych do przodu
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Raport **Przesunięcie środków trwałych do przodu** przedstawia, w czytelnym formacie programu Microsoft Excel, szczegółowe dane środków trwałych wymagane do zamknięcia okresu, sprawozdań finansowych i sprawozdawczości podatkowej. Raport zawiera początkowe i końcowe salda środków trwałych, łącznie z przesunięciami w związku z wyceną w okresie, oraz informacje o wszelkich nabyciach i zbyciach/likwidacjach środków trwałych zaistniałych w okresie. Dane są raportowane dla poszczególnych środków trwałych, a dodatkowo wartości są sumowane dla grup środków trwałych i dla firm.
 
@@ -41,28 +41,30 @@ Raport ten jest dostępny w programie Microsoft Dynamics 365 for Finance and Ope
 
 W poniższej tabeli przedstawiono pola dostępne w raporcie.
 
-| Pole                                       | opis |
-|---------------------------------------------|-------------|
-| Salda: Otwarcie                           | Wartość księgowa netto środków trwałych na dzień „od” określony w raporcie. |
-| Salda: Zamknięcie                           | Wartość księgowa netto środków trwałych na dzień „do” określony w raporcie. |
-| Nabycia: Wartość otwarcia                 | Suma wszystkich transakcji typu **Nabycie** i **Korekta wartości początkowej** do dnia „od” określonego w raporcie. |
-| Nabycia: Nabycia w okresie           | Suma wszystkich transakcji typu **Nabycie** i **Korekta wartości początkowej** zaksięgowanych w przedziale dat objętych raportem. |
-| Nabycia: Likwidacje w okresie              | Suma wszystkich wycofań nabycia zawierających transakcje likwidacji, które zostały zaksięgowane w przedziale dat objętych raportem. |
-| Nabycia: Wartość zamknięcia                 | Suma wszystkich transakcji typu **Nabycie** i **Korekta wartości początkowej** do dnia „do” określonego w raporcie. |
-| Amortyzacje: Wartość otwarcia                | Suma wszystkich transakcji typu **Amortyzacja**, **Korekta amortyzacji**, **Specjalny odpis amortyzacyjny** i **Amortyzacja dodatkowa** do dnia „od” określonego w raporcie. |
-| Amortyzacje: Amortyzacje w okresie         | Suma wszystkich transakcji typu **Amortyzacja**, **Korekta amortyzacji** i **Amortyzacja dodatkowa** zaksięgowanych w przedziale dat objętych raportem. |
-| Amortyzacje: Amortyzacje specjalne w okresie | Suma wszystkich transakcji typu **Specjalny odpis amortyzacyjny** zaksięgowanych w przedziale dat objętych raportem. |
-| Amortyzacje: Likwidacje w okresie             | Suma wszystkich wycofań amortyzacji zawierających transakcje likwidacji, które zostały zaksięgowane w przedziale dat objętych raportem. |
-| Amortyzacje: Wartość zamknięcia                | Suma wszystkich transakcji typu **Amortyzacja**, **Korekta amortyzacji**, **Specjalny odpis amortyzacyjny** i **Amortyzacja dodatkowa** do dnia „do” określonego w raporcie. |
-| Zwiększenia/zmniejszenia: Wartość otwarcia        | Suma wszystkich transakcji typu **Zwiększenie wartości**, **Zmniejszenie wartości** i **Przeszacowanie** do dnia „od” określonego w raporcie. |
-| Zwiększenia/zmniejszenia: Zwiększenia w okresie     | Suma wszystkich transakcji typu **Zwiększenie wartości** zaksięgowanych w przedziale dat objętych raportem. |
-| Zwiększenia/zmniejszenia: Zmniejszenia w okresie   | Suma wszystkich transakcji typu **Zmniejszenie wartości** zaksięgowanych w przedziale dat objętych raportem. |
-| Zwiększenia/zmniejszenia: Przeszacowania w okresie  | Suma wszystkich transakcji typu **Przeszacowanie** zaksięgowanych w przedziale dat objętych raportem. |
-| Zwiększenia/zmniejszenia: Likwidacje w okresie     | Suma wszystkich wycofań zwiększenia wartości, zmniejszenia wartości i przeszacowania zawierających transakcje likwidacji, które zostały zaksięgowane w przedziale dat objętych raportem. |
-| Zwiększenia/zmniejszenia: Wartość zamknięcia        | Suma wszystkich transakcji typu **Zwiększenie wartości**, **Zmniejszenie wartości** i **Przeszacowanie** do dnia „do” określonego w raporcie. |
-| Likwidacje: Data likwidacji                    | Data likwidacji w księdze środków trwałych. |
-| Likwidacje: Wartość księgowa netto przy likwidacji       | Wartość księgowa netto księgi środków trwałych w momencie likwidacji. |
-| Likwidacje: Wartość sprzedaży                       | Wartość sprzedaży księgi środków trwałych zawierającej transakcję likwidacji poprzez sprzedaż. |
-| Likwidacje: Wartość złomowania                      | Wartość złomowania księgi środków trwałych zawierającej transakcję likwidacji poprzez złomowanie. |
-| Likwidacje: Zysk/strata                      | Wartość zysku lub straty obliczona w ramach transakcji likwidacji księgi środków trwałych. |
+
+|                    Pole                    |                                                                                                                                opis                                                                                                                                |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|              Salda: Otwarcie              |                                                                                           Wartość księgowa netto środków trwałych na dzień „od” określony w raporcie.                                                                                           |
+|              Salda: Zamknięcie              |                                                                                            Wartość księgowa netto środków trwałych na dzień „do” określony w raporcie.                                                                                            |
+|         Nabycia: Wartość otwarcia         |                                                 Suma wszystkich transakcji typu <strong>Nabycie</strong> i <strong>Korekta wartości początkowej</strong> do dnia „od” określonego w raporcie.                                                  |
+|      Nabycia: Nabycia w okresie      |                                                 Suma wszystkich transakcji typu <strong>Nabycie</strong> i <strong>Korekta wartości początkowej</strong> zaksięgowanych w przedziale dat objętych raportem.                                                  |
+|       Nabycia: Likwidacje w okresie        |                                                                        Suma wszystkich wycofań nabycia zawierających transakcje likwidacji, które zostały zaksięgowane w przedziale dat objętych raportem.                                                                        |
+|         Nabycia: Wartość zamknięcia         |                                                  Suma wszystkich transakcji typu <strong>Nabycie</strong> i <strong>Korekta wartości początkowej</strong> do dnia „do” określonego w raporcie.                                                   |
+|        Amortyzacje: Wartość otwarcia         | Suma wszystkich transakcji typu <strong>Amortyzacja</strong>, <strong>Korekta amortyzacji</strong>, <strong>Specjalny odpis amortyzacyjny</strong> i <strong>Amortyzacja dodatkowa</strong> do dnia „od” określonego w raporcie. |
+|     Amortyzacje: Amortyzacje w okresie     |                         Suma wszystkich transakcji typu <strong>Amortyzacja</strong>, <strong>Korekta amortyzacji</strong> i <strong>Amortyzacja dodatkowa</strong> zaksięgowanych w przedziale dat objętych raportem.                          |
+| Amortyzacje: Amortyzacje specjalne w okresie |                                                              Suma wszystkich transakcji typu <strong>Specjalny odpis amortyzacyjny</strong> zaksięgowanych w przedziale dat objętych raportem.                                                               |
+|       Amortyzacje: Likwidacje w okresie       |                                                                       Suma wszystkich wycofań amortyzacji zawierających transakcje likwidacji, które zostały zaksięgowane w przedziale dat objętych raportem.                                                                        |
+|        Amortyzacje: Wartość zamknięcia         |  Suma wszystkich transakcji typu <strong>Amortyzacja</strong>, <strong>Korekta amortyzacji</strong>, <strong>Specjalny odpis amortyzacyjny</strong> i <strong>Amortyzacja dodatkowa</strong> do dnia „do” określonego w raporcie.  |
+|    Zwiększenia/zmniejszenia: Wartość otwarcia     |                              Suma wszystkich transakcji typu <strong>Zwiększenie wartości</strong>, <strong>Zmniejszenie wartości</strong> i <strong>Przeszacowanie</strong> do dnia „od” określonego w raporcie.                               |
+|   Zwiększenia/zmniejszenia: Zwiększenia w okresie   |                                                                    Suma wszystkich transakcji typu <strong>Zwiększenie wartości</strong> zaksięgowanych w przedziale dat objętych raportem.                                                                    |
+|  Zwiększenia/zmniejszenia: Zmniejszenia w okresie  |                                                                   Suma wszystkich transakcji typu <strong>Zmniejszenie wartości</strong> zaksięgowanych w przedziale dat objętych raportem.                                                                   |
+| Zwiększenia/zmniejszenia: Przeszacowania w okresie  |                                                                        Suma wszystkich transakcji typu <strong>Przeszacowanie</strong> zaksięgowanych w przedziale dat objętych raportem.                                                                        |
+|   Zwiększenia/zmniejszenia: Likwidacje w okresie   |                                                           Suma wszystkich wycofań zwiększenia wartości, zmniejszenia wartości i przeszacowania zawierających transakcje likwidacji, które zostały zaksięgowane w przedziale dat objętych raportem.                                                           |
+|    Zwiększenia/zmniejszenia: Wartość zamknięcia     |                               Suma wszystkich transakcji typu <strong>Zwiększenie wartości</strong>, <strong>Zmniejszenie wartości</strong> i <strong>Przeszacowanie</strong> do dnia „do” określonego w raporcie.                                |
+|          Likwidacje: Data likwidacji           |                                                                                                                Data likwidacji w księdze środków trwałych.                                                                                                                |
+|    Likwidacje: Wartość księgowa netto przy likwidacji    |                                                                                                    Wartość księgowa netto księgi środków trwałych w momencie likwidacji.                                                                                                    |
+|            Likwidacje: Wartość sprzedaży            |                                                                                               Wartość sprzedaży księgi środków trwałych zawierającej transakcję likwidacji poprzez sprzedaż.                                                                                                |
+|           Likwidacje: Wartość złomowania            |                                                                                               Wartość złomowania księgi środków trwałych zawierającej transakcję likwidacji poprzez złomowanie.                                                                                               |
+|           Likwidacje: Zysk/strata            |                                                                                 Wartość zysku lub straty obliczona w ramach transakcji likwidacji księgi środków trwałych.                                                                                 |
+
 

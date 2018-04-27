@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="price-adjustments-and-discounts"></a>Korekty ceny i rabaty
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Ten artykuł zawiera informacje o korektach ceny i rabatach w programie Microsoft Dynamics 365 for Retail.
 

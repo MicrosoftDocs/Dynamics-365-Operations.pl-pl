@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="vendor-collaboration-invoicing-workspace"></a>Obszar roboczy fakturowania w portalu współpracy z dostawcami
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak wyświetlić faktury od dostawców i przesyłać faktury z obszaru roboczego Fakturowanie w portalu współpracy z dostawcami.
 
@@ -53,16 +52,12 @@ Kliknięcie kafelka otwiera przefiltrowany widok strony **Lista faktur**.
 
 W sekcji **Listy tabelaryczne** stan fakturowania dzieli się w podobny sposób, jak w kafelkach podsumowania: listy wersji roboczych i przesłanych niezatwierdzonych. W stanie Wersja robocza fakturę można przesłać do przepływu pracy lub usunąć. Ostatnia lista tabelaryczna to opcja pozwalająca odnaleźć faktury. Można filtrować podczas wyszukiwania, aby przyspieszyć wyszukiwanie.
 
-<a name="all-vendor-invoices-list-page"></a>Strona listy Wszystkie faktury od dostawcy
------------------------------
+### <a name="all-vendor-invoices-list-page"></a>Strona listy Wszystkie faktury od dostawcy
 
 Na stronie listy **Faktury w portalu współpracy z dostawcami** można wyświetlić wszystkie zaksięgowane i niezaksięgowane faktury od dostawcy. Ta strona listy służy do wyświetlania stanu płatności faktur. Istnieją następujące stany płatności: niezaksięgowane, niezapłacone, częściowo zapłacone i w pełni zapłacone.
 Tworzenie nowej faktury na podstawie zamówienia zakupu
---------------------------------------------
 
 Nową fakturę od dostawcy można utworzyć, wybierając akcję **Nowy** w obszarze roboczym **Fakturowanie w portalu współpracy z dostawcami**. Dostawca musi podać numer zamówienia zakupu i numer faktury. Domyślnie wszystkie wiersze z zamówienia zakupu dostawcy będą widoczne w nowej fakturze. Informacje dotyczące ilości i kosztu można edytować przed przesłaniem faktury dostawcy do przepływu pracy. Przed przesłaniem faktury można do niej dołączyć pliki, obrazy, notatki i adresy URL.
-
-
 
 Aby uzyskać więcej informacji, zobacz [Współpraca z zewnętrznymi dostawcami](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 

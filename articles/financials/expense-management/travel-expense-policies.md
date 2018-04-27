@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-policies"></a>Zasady dotyczące wydatków
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Można zdefiniować zasady, których pracownicy muszą przestrzegać podczas wprowadzania i przesyłania raportów z wydatków i wniosków wyjazdowych.         
 Wdrożenie zasad dotyczących wydatków może się przyczynić do efektywniejszego zarządzania wydatkami.         
@@ -39,14 +39,14 @@ jaką otrzyma pracownik.
 Można zdefiniować trzy typy zasad:         
         
 - Ostrzeżenie — umożliwia pracownikowi przesłanie raportu z wydatków lub wniosku wyjazdowego, ale wydatek zostanie oznaczony dla wszystkich osób zatwierdzających i        
-do późniejszego raportowania.        
+  do późniejszego raportowania.        
 
 - Błąd — wymaga, aby pracownik zmienił wydatek na zgodny z zasadami przed przesłaniem raportu z wydatków lub wniosku wyjazdowego.       
  
- - Uzasadnienie — wymaga, aby pracownik lub menedżer wprowadził uzasadnienie przekroczenia kwoty w zasadach przed przesłaniem raportu z wydatków lub wniosku wyjazdowego.        
+  - Uzasadnienie — wymaga, aby pracownik lub menedżer wprowadził uzasadnienie przekroczenia kwoty w zasadach przed przesłaniem raportu z wydatków lub wniosku wyjazdowego.        
  
- Można również skonfigurować zakres dat, dla którego obowiązują zasady dotyczące wydatków. Na przykład bilety na loty między Warszawą a Kopenhagą      
- mogą być drogie w sezonie turystycznym. Można określić regułę dotyczącą wydatków na bilety lotnicze,      
- która ogranicza koszty przelotu do Kopenhagi do 500 zł, i można określić, że ta reguła obowiązuje między 15 marca a      
- 15 września.
+  Można również skonfigurować zakres dat, dla którego obowiązują zasady dotyczące wydatków. Na przykład bilety na loty między Warszawą a Kopenhagą      
+  mogą być drogie w sezonie turystycznym. Można określić regułę dotyczącą wydatków na bilety lotnicze,      
+  która ogranicza koszty przelotu do Kopenhagi do 500 zł, i można określić, że ta reguła obowiązuje między 15 marca a      
+  15 września.
 

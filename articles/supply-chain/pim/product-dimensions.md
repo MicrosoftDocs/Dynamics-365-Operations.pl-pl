@@ -29,10 +29,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-dimensions"></a>Wymiary produktu
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
-
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 Istnieją cztery wymiary produktu — Kolor, Konfiguracja, Rozmiar i Styl. Wymiary produktu łączy się w grupy wymiarów, a następnie przypisuje grupy wymiarów do produktów głównych. Kombinacje wymiarów produktu decydują o definicjach wariantów produktu.
 
@@ -51,6 +50,7 @@ Wartości wymiarów produktu, takie jak Rozmiar, Kolor i Styl, można tworzyć n
 -   Kliknij kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Zwolnione produkty**. Wybierz produkt główny. W **okienku akcji** kliknij pozycję **Produkt**. W grupie **Produkt główny** kliknij **Wymiary produktu**.
 
 Liczba wariantów, które można utworzyć dla towaru jest ograniczona przez liczbę kombinacji wymiarów produktu.
+
 | **Wskazówka**                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Jeśli produkt jest używany, na przykład, w wierszu zamówienia, należy wybrać wymiary produktu do zdefiniowania wariantu produktu, który ma być używany. |

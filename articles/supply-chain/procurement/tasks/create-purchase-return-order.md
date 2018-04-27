@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-return-order"></a>Tworzenie zamówienia zwrotu zakupu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano, jak utworzyć zamówienie zwrotu zakupu przy użyciu akcji Faktura korygująca w celu skopiowania wierszy z dokumentu faktury od dostawcy do nowego zamówienia zakupu. Ponadto pokazano sposób potwierdzania zamówienia i przetwarzania wysyłki towarów z powrotem do dostawcy. Przykład zawarty w tej procedurze można wykonać na danych firmy demonstracyjnej USMF. To zadanie zazwyczaj wykonuje pracownik działu zakupów.
 

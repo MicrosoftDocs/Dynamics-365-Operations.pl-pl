@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 ---
 # <a name="leave-and-absence-management-overview"></a>Omówienie zarządzania urlopami i nieobecnościami
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Moduł **Zarządzanie urlopami i nieobecnościami** oferuje elastyczną architekturę definiowania procesu zarządzania nieobecnościami. Można tworzyć plany urlopów i nieobecności w celu określenia, jak pracownikom jest naliczany lub przyznawany czas wolny. Gdy pracownicy zostaną zarejestrowani w planie, mogą przesyłać wnioski o czas wolny do zatwierdzenia przez menedżerów. Funkcja śledzenia urlopów umożliwia zarówno menedżerom pierwszego szczebla, jak i menedżerom kadr (HR) sprawdzanie, kto korzysta z czasu wolnego i ile ma jeszcze czasu wolnego.  
 

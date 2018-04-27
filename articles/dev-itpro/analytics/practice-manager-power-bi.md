@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="practice-manager-power-bi-content"></a>Zawartość usługi Power BI dla kierownika praktyk
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft Power BI **Kierownik praktyk**. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
@@ -118,7 +118,9 @@ Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Jednostka: ProjectAccountingCube\_TotalEstimatedCosts 
 **Źródło danych**: ProjTable
 
-| Najważniejsza zagregowana miara       | Pole               | opis |
-|---------------------------------|---------------------|-------------|
+
+|    Najważniejsza zagregowana miara    |        Pole        |                                          opis                                           |
+|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
 | Planowany koszt ukończonego działania | Sum(TotalCostPrice) | Całkowity koszt własny w oszacowaniach dla wszystkich typów transakcji projektu zawierających ukończone zadania. |
+
 

@@ -29,15 +29,14 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="product-lifecycle-state"></a>Stan cyklu życia produktu 
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Stan cyklu życia produktu dokumentuje stan cyklu życia zwolnionego produktu lub wariantu produktu. Stany cyklu życia produktu są definiowane przez użytkownika, zwykle menedżera produktu lub menedżera danych głównych produktu. Na określone procesy biznesowe, takie jak planowanie główne, ma wpływ określony stan cykl życia.   
- 
+
 Zwolniony produkt lub wariant produktu można skojarzyć ze stanem cyklu życia produktu, który dokumentuje, w którym stanie cyklu życia jest aktualnie określony produkt lub wariant. Można zdefiniować dowolną liczbę stanów cyklu życia produktu, określając ich nazwę i opis. Jeden stan cyklu życia można wybrać jako stan domyślny nowych zwolnionych produktów. Warianty zwolnionych produktów dziedziczą stan cyklu życia produktu ze zwolnionego produktu głównego podczas tworzenia. Przy zmianie stanu cyklu życia zwolnionego produktu głównego można wybrać aktualizację wszystkich istniejących wariantów, które mają ten sam stan oryginalny.  
 
 ## <a name="create-a-new-product-lifecycle-state"></a>Tworzenie nowego stanu cyklu życia produktu 
- 
+
 - Aby utworzyć nowy stan cyklu życia produktu, odtwórz lub przeczytaj przewodnik zadania **Tworzenie nowego stanu cyklu życia produktu**. 
 
 -  Aby utworzyć domyślny stan cyklu życia produktu, odtwórz lub przeczytaj przewodnik zadania **Tworzenie domyślnego stanu cyklu życia produktu**.   
@@ -73,7 +72,7 @@ Aby uzyskać szczegółowe informacje o sposobie używania stanu cyklu życia pr
 
 > [!NOTE]
 > Z względu na wydajność zdecydowanie zalecane jest skojarzenie wszystkich przestarzałych zwolnionych produktów lub wariantów produktów, szczególnie w przypadku pracy z wariantami konfiguracji produktów, których nie można wykorzystać ponownie, ze stanem cyklu życia produktu nieaktywnym dla planowania głównego.  
- 
+
 ## <a name="default-migration-import-and-export"></a>Domyślna migracja, import i eksport 
 
 Stany cyklu życia produktu nie są obsługiwane przez jednostki danych, a stanu cyklu życia nie można ustawić na zmienny za pomocą jednostek danych zwolnionego produktu.
@@ -81,18 +80,18 @@ Stany cyklu życia produktu nie są obsługiwane przez jednostki danych, a stanu
 -  W przypadki migracji z poprzednich wersji stan cyklu życia wszystkich produktów i wariantów produktów będzie pusty.  
 -  W przypadku importowania zwolnionych produktów za pomocą jednostki danych domyślny stan cyklu życia zostanie zastosowany przy tworzeniu.  
 -  Podczas importowania wariantów zwolnionego produktu za pomocą jednostki danych zostanie zaimportowany stan cyklu życia produktu zwolnionego produktu głównego.   
- 
+
 ## <a name="find-obsolete-products-and-products-variants"></a>Znajdowanie przestarzałych produktów i wariantów produktów 
- 
+
 Aby znaleźć przestarzałe zwolnione produkty lub warianty produktów można uruchomić symulację, a następnie zaktualizować ich stan cyklu życia produktu. Aby znaleźć przestarzałe produkty, odtwórz i przeczytaj przewodnik zadania **Znajdowanie wariantów przestarzałych produktów i przypisywanie stanu cyklu życia produktu**. Ten przewodnik zadania pokazuje, jak znaleźć przestarzałe zwolnione produkty lub warianty produktów i skojarzyć stan cyklu życia produktu z przestarzałymi produktami. Pokazuje także, jak wyświetlić wyniki symulacji i ocenić, ile produktów i wariantów produktów będzie skojarzonych z nowym stanem cyklu życia produktu po uruchomieniu aktualizacji bez symulacji.  
- 
+
 Po uruchomieniu analizy w trybie symulacji produkty i warianty produktów określone jako przestarzałe są wyświetlane w określonej formie, w której można je łatwo przejrzeć. Analiza wyszukuje transakcje i określone dane główne w celu identyfikacji produktów, na które nie ma popytu w zmiennym okresie ani danych głównych, które mogą powodować popyt. Nowe zwolnione produkty w zmiennym okresie można wykluczyć z analizy. Gdy analiza zwróci oczekiwany wynik, użytkownik może uruchomić analizę i ustawić nowy stan cyklu życia produktu dla wszystkich produktów określonych w analizie jako przestarzałe.  
- 
+
 > [!NOTE]
 > Należy pamiętać, że wszystkie analizy i aktualizacje muszą zostać wykonane w tej samej firmie.  
- 
+
 ## <a name="criteria-to-select-and-update-released-products-or-product-variants"></a>Kryteria wyboru i aktualizacji zwolnionych produktów lub wariantów produktów 
- 
+
 W celu wybrania i aktualizacji zwolnionych produktów i wariantów produktów należy użyć następujących kryteriów: 
 
 -    Stan cyklu życia produktu lub wariantu produktu musi różnić się od nowego wymaganego stanu. 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-email-templates"></a>Zarządzanie szablonami wiadomości e-mail
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Można przenieść informacje z bazy danych organizacji do zakładek w nowym dokumencie i używać ich w szablonach, które pomagają efektywnie komunikować się z kandydatami. W tym celu należy utworzyć szablon, który zawiera standardowy tekst i kilka zakładek, gdzie należy wstawić dane systemowe. Na przykład można wstawić informacje adresowe i kontaktowe kandydata do dokumentu programu Microsoft Word, który będzie używany podczas komunikowania się z danym kandydatem. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

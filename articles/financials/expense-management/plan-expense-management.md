@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configure-expense-management"></a>Konfigurowanie zarządzania wydatkami
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie opisano zagadnienia i decyzje, które należy uwzględnić w procesie planowania przed skonfigurowaniem modułu Zarządzanie wydatkami w programie Microsoft Dynamics 365 for Finance and Operations. W funkcji Zarządzanie wydatkami można przechowywać informacje o metodach płatności, wnioski wyjazdowe, raporty z wydatków oraz zasady itp.
 

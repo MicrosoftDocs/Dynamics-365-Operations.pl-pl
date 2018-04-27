@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-a-record-template-to-create-a-new-record"></a>Używanie szablonu rekordu do tworzenia nowego rekordu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób wykorzystania wcześniej zdefiniowanego szablonu rekordu do utworzenia nowego rekordu. Aby wykonać tę procedurę, należy najpierw wykonać procedurę „Tworzenie szablonu rekordu w celu ułatwienia wprowadzania danych”.
 

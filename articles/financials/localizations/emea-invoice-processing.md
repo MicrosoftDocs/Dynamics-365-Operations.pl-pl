@@ -26,7 +26,7 @@ ms.lasthandoff: 02/14/2018
 
 # <a name="invoice-processing"></a>Przetwarzanie faktur
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera krótki opis scenariuszy dla określonych krajów, takich jak wewnątrzwspólnotowy podatek VAT i podatek odroczony. Wymagania prawne dla niektórych krajów europejskich wpływają na proces fakturowania. Ten temat zawiera także informacje o sposobie przetwarzania faktur odbiorców i dostawców dla tych krajów. 
 <table>

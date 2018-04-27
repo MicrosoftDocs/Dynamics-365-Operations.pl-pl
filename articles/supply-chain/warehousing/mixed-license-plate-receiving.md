@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mixed-license-plate-receiving"></a>Przyjęcie mieszanego numeru identyfikacyjnego
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Przyjęcie z mieszanych numerów identyfikacyjnych umożliwia zbudowanie numeru identyfikacyjnego zawierającego wiele towarów, zanim zarejestrujesz i utworzysz pracę odłożenia. 
 

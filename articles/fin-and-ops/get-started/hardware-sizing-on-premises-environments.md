@@ -27,7 +27,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>Szacowanie zapotrzebowania na sprzęt dla środowisk lokalnych
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Przed rozpoczęciem procesu szacowania zapotrzebowania na sprzęt i infrastrukturę w środowisku lokalnym, zapoznaj się z tematami [Wymagania systemowe](system-requirements.md) oraz [Instrukcje konfigurowania i wdrażania](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md), aby dobrze poznać cechy bazowej infrastruktury. 
 

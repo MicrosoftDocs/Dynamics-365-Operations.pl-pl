@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="intercompany-accounting-setup"></a>Konfiguracja księgowania międzyfirmowego
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak skonfigurować księgowanie międzyfirmowe, co pozwoli używać arkuszy międzyfirmowych do alokacji księgi i arkuszy finansowych, takich jak arkusze dzienne, arkusze faktur od dostawców i arkusze płatności.
 

@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0e5605b65b6203a50ef2fef81d032a887da32bf9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f08131e01fddb259d3bb537b1625ea2615a1e958
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-a-customer-invoice"></a>Tworzenie faktury dla odbiorcy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Faktura dla odbiorcy do zamówienia sprzedaży** jest wekslem związanym ze sprzedażą i który organizacja wystawia odbiorcy. Ten typ faktury dla odbiorcy jest tworzony na podstawie zamówienia sprzedaży, które zawiera wiersze zamówienia i numery towarów. Numery towarów są określane i księgowane w księdze. Zapisy w arkuszu księgi podrzędnej nie są dostępne dla faktury dla odbiorcy do zamówienia sprzedaży. Aby uzyskać więcej informacji, zobacz [Tworzenie faktur zamówienia sprzedaży](tasks/create-sales-order-invoices.md).
 

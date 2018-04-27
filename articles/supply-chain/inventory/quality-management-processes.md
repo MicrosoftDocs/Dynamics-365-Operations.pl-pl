@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="quality-management-processes"></a>Procesy zarządzania jakością
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o procesie zarządzania jakością produktów niespełniającymi norm. Opisano w nim, jak korzystać z funkcji kontroli jakości, jak definiować i obsługiwać braki zgodności oraz jak obsługiwać korekty.
 

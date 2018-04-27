@@ -28,10 +28,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-card-setup-authorization-and-capture"></a>Konfiguracja i autoryzacja karty kredytowej
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Ten artykuł zawiera omówienie funkcji autoryzacji kart kredytowych w programie Microsoft Dynamics 365 for Finance and Operations. Znajdują się tu informacje o konfigurowaniu usługi płatności, dodawaniu karty kredytowej do zamówienia sprzedaży oraz o unieważnianiu autoryzacji.
 

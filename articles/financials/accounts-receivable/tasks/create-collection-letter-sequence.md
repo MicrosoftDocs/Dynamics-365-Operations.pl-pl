@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-collection-letter-sequence"></a>Tworzenie kolejności ponagleń
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ten przewodnik po zadaniach umożliwia tworzenie kolejki ponagleń. W zadaniu wykorzystano firmę demonstracyjną USMF.
 

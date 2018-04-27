@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Tworzenie umowy instrumentu bankowego na akredytywę
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 To zadanie poprowadzi przez proces tworzenia umowy instrumentu bankowego do przetwarzania akredytywy. Przed rozpoczęciem tego zadania warto skonfigurować instrumenty bankowe i profile księgowania.  Zadanie wykorzystuje firmę demonstracyjną „USMF”.  
 

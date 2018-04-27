@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Wysyłanie zamówień jako dostaw bezpośrednich
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób tworzenia dostawy bezpośredniej na podstawie zamówienia sprzedaży. Dostawy bezpośredniej można użyć w celu wysłania towarów do odbiorcy bezpośrednio od dostawcy, zamiast wysyłać je najpierw do własnego magazynu. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Aby pomyślnie wykonać drugie podzadanie „Tworzenie dostaw bezpośrednich z pulpitu”, upewnij się, że towar wybrany w zamówieniu sprzedaży ma zdefiniowanego domyślnego dostawcę na skróconej karcie Zakupu w danych podstawowych zwalnianego produktu.
 

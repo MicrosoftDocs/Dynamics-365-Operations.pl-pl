@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Planowanie w trybie mieszanym — łączenie sourcingu dyskretnego, procesowego i produkcji oszczędnej
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o mieszanym trybie planowania. W planowaniu w trybie mieszanym można modelować łańcuch dostaw na podstawie przepływu materiałów. Program Microsoft Dynamics 365 for Finance and Operations zapewnia, że przepływ materiałów następuje zgodnie z modelami, bez względu na wybrane zasady dostawy (karty Kanban, zlecenia produkcyjne, zamówienia zakupu, szarże produkcyjne lub zamówienia przeniesienia). 
 

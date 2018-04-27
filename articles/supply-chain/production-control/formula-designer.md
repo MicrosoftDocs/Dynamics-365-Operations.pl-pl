@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: d9b61e545067db592545d5fbce7b4315c51a8bf8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a4cfd017fe10bbda6eda0e3a9a045e0832b08753
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer"></a>Projektant formuł
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak używać projektanta formuł do analizowania formuł i zarządzania nimi w widoku drzewa.
 
@@ -88,7 +88,7 @@ Filtr stosowany do formuły i marszruty jest wyświetlany w nagłówku projektan
 </tr>
 <tr class="odd">
 <td>Ilość od</td>
-<td>Filtrowanie wersji przez wybranie określonej ilości „od”. Jeśli zostanie ustawiona wartość, będzie można wybrać różne wersje formuły i marszruty.</td>
+<td>Filtrowanie wersji przez wybranie określonej ilości &quot;od&quot;. Jeśli zostanie ustawiona wartość, będzie można wybrać różne wersje formuły i marszruty.</td>
 </tr>
 <tr class="even">
 <td>Pokaż tylko ważne</td>
@@ -116,8 +116,10 @@ Aby zmodyfikować wiersze formuły lub formułę, użyj funkcji **Wiersze BOM** 
 ## <a name="configuring-the-tree-view"></a>Konfigurowanie widoku drzewa
 Kliknij przycisk **Ustawienia**, aby dostosować informacje wyświetlane w widoku drzewa w projektancie formuł.
 
-| Grupa pola | opis |
-|-------------|-------------|
-| lista BOM         | Użyj pól wyboru, aby wybrać kryteria pokazane w strukturze drzewa. W projektancie formuł wybrane kryteria są wyświetlane u dołu obydwu kart. |
-| Marszruta       | Użyj pól wyboru, aby wybrać kryteria pokazane dla marszrut. |
+
+| Grupa pola |                                                                          opis                                                                          |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     lista BOM     | Użyj pól wyboru, aby wybrać kryteria pokazane w strukturze drzewa. W projektancie formuł wybrane kryteria są wyświetlane u dołu obydwu kart. |
+|    Marszruta    |                                           Użyj pól wyboru, aby wybrać kryteria pokazane dla marszrut.                                           |
+
 

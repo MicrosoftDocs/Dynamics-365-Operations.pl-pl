@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zasady akumulacji kosztów i obliczanie narzutu 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Moduł Rachunek kosztów pozwala zobaczyć, jak przepływ kosztów jest powiązany z produktami i usługami dostarczanymi wewnątrz organizacji. Aby czytelnie widzieć koszty, trzeba uzyskać alokację kosztów między obiektami kosztów w oparciu o odpowiednią podstawę alokacji. Domyślnie alokację kosztów uzyskuje się dla podstawowego składnika kosztów, co jest pożądane w niektórych sytuacjach, ale ma kilka konsekwencji, które trzeba wziąć pod uwagę.
 

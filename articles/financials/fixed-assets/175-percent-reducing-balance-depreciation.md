@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="175-percent-reducing-balance-depreciation"></a>Amortyzacja regresywna 175 procent
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat zawiera omówienie metody amortyzacji 175% amortyzacja degresywna.
 
@@ -68,6 +67,7 @@ W przypadku wybrania opcji **Fiskalny** jako rok amortyzacji, w polu **Częstotl
 -   **Okres obrachunkowy** oblicza łączną kwotę amortyzacji w roku obrachunkowym. Ta kwota jest naliczana w okresach obrachunkowych, które zostały zdefiniowane na stronie **Kalendarze obrachunkowe**.
 
 ## <a name="example-of-175-reducing-balance-depreciation"></a>Przykład amortyzacji degresywnej 175%
+
 |                                |        |
 |--------------------------------|--------|
 | Koszt nabycia               | 11 000 |

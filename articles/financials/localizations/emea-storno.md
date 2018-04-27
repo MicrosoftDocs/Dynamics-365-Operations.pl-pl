@@ -26,7 +26,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="storno-accounting"></a>Stornowanie
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Stornowanie to praktyka używania liczb ujemnych, aby odwrócić oryginalne zapisy na koncie arkusza.
 

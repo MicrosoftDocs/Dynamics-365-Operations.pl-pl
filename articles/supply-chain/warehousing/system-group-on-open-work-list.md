@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6403fea54be4036f7a15c05b46f70d258d97c3e2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d9ca6b0d4a9909d419d6241a044336d7a02aea02
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="system-grouping-on-an-open-work-list"></a>Grupowanie systemowe na liście otwartych prac
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Za pomocą pola grup systemowych można wyfiltrować listę otwartych prac bez konieczności edytowania elementu menu w urządzeniu komórkowym.
 Funkcja grupowania systemowego filtruje listę prac według jednego pola nagłówka pracy. Nie można używać grupowania systemowego do filtrowania według pól na poziomie wierszy.
@@ -37,9 +37,10 @@ Wykonaj poniższe kroki, aby skonfigurować grupowanie systemowego listy otwarty
 
 -   Na urządzeniu komórkowym z menu wybierz opcje **Tryb: Pośrednie** i **Kod działania: Wyświetl listę otwartych prac**. Zostaną udostępnione opcje wymienione poniżej. Te opcje są wymagane przy grupowaniu systemowym listy otwartych prac. 
 
-| Opcja        | opis   | 
-| ------------- | ------------- |
-| Zezwalaj na grupowanie systemowe   | Umożliwia grupowanie systemowe dla wybranej pozycji listy prac.| 
-| Pole grup systemowych   | Opcja dostępna tylko wtedy, gdy w polu **Zezwalaj na pracę systemową** zaznaczono wartość **Tak**. Wybierz pole określające, jak praca pobrania będzie grupowana dla pracowników. Na przykład, jeśli wybierzesz pole **ShipmentId**, pracownik będzie skanować identyfikator wysyłki w celu pogrupowania pracy pobrania. Wszystkie prace dla wysyłki są następnie przypisywane do pracownika. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Za pomocą pola **Etykieta grup systemowych** można poinformować pracownika, co ma być skanowane. |
-| Etykieta grup systemowych   | Opcja dostępna tylko wtedy, gdy w polu **Zezwalaj na pracę systemową** zaznaczono wartość **Tak**. Wprowadź informacje dla pracownika o tym, co należy zeskanować podczas grupowania pracy pobrania. Na przykład jeśli używasz pola **ShipmentId** do grupowania pracy pobrania według wysyłki, możesz w polu wpisać Identyfikator wysyłki. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Musisz także wybrać pole, według którego będzie przeprowadzane grupowanie w polu **Grupowanie systemowe**.|
+|        Opcja         |                                                                                                                                                                                                                                                                         opis                                                                                                                                                                                                                                                                         |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Zezwalaj na grupowanie systemowe |                                                                                                                                                                                                                                                 Umożliwia grupowanie systemowe dla wybranej pozycji listy prac.                                                                                                                                                                                                                                                  |
+| Pole grup systemowych | Opcja dostępna tylko wtedy, gdy w polu <strong>Zezwalaj na pracę systemową</strong> zaznaczono wartość <strong>Tak</strong>. Wybierz pole określające, jak praca pobrania będzie grupowana dla pracowników. Na przykład, jeśli wybierzesz pole <strong>ShipmentId</strong>, pracownik będzie skanować identyfikator wysyłki w celu pogrupowania pracy pobrania. Wszystkie prace dla wysyłki są następnie przypisywane do pracownika. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Za pomocą pola <strong>Etykieta grup systemowych</strong> można poinformować pracownika, co ma być skanowane. |
+| Etykieta grup systemowych |                       Opcja dostępna tylko wtedy, gdy w polu <strong>Zezwalaj na pracę systemową</strong> zaznaczono wartość <strong>Tak</strong>. Wprowadź informacje dla pracownika o tym, co należy zeskanować podczas grupowania pracy pobrania. Na przykład jeśli używasz pola <strong>ShipmentId</strong> do grupowania pracy pobrania według wysyłki, możesz w polu wpisać Identyfikator wysyłki. To pole wymaga utworzenia elementu menu, który będzie używał istniejącej pracy pogrupowanej przez system. Musisz także wybrać pole, według którego będzie przeprowadzane grupowanie w polu <strong>Grupowanie systemowe</strong>.                       |
+
 

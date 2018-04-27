@@ -18,17 +18,16 @@ ms.author: epopov
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
-ms.openlocfilehash: 3c284b8c67121b39837bef827dea6f24da2a0f4b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 97be3eee9ebb99af33e3153fe7726ed5b086b03c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advance-invoices-for-eastern-europe"></a>Faktury zaliczkowe dla Europy Wschodniej
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Faktura zaliczkowa jest dokumentem, który można utworzyć dla odbiorcy lub dostawcy. Podaje ona kwotę, która ma zostać opłacona z góry z tytułu zamówienia sprzedaży. Ten temat zawiera informacje dotyczące faktur zaliczkowych dla Europy Wschodniej.
 
@@ -47,19 +46,20 @@ Polskie firmy otrzymujące przedpłatę muszą utworzyć fakturę na przedpłat�
 ## <a name="set-up-accounts-receivable-for-advance-invoices"></a>Konfigurowanie modułu rozrachunków z odbiorcami dla faktur zaliczkowych
 Na stronie **Parametry modułu rozrachunków z odbiorcami** na karcie **Aktualizacje** określ następujące parametry:
 
-|Skrócona karta|Parametr|opis|
-|------|----------|------------|
-|Faktura zaliczkowa  |Profil księgowania|Wybierz profil księgowania, który ma być używany do fakturowania zaliczek (tylko Polska). **Ważne:** W Czechach i na Węgrzech faktury zaliczkowe nie są traktowane jako dokumenty księgowe ani podatkowe i nie są księgowane w księdze głównej. W związku z tym dla tych krajów należy pozostawić to pole puste, aby uniemożliwić księgowanie faktur zaliczkowych w księdze głównej.
-|
-|Faktura zaliczkowa  |Wyłączone|Konto przeciwstawne        |Umożliwia wybór domyślnego konta przeciwstawnego, które ma być używane do fakturowania zaliczek.|
-|Faktura zaliczkowa  |Grupa podatków        |Umożliwia wybór grupy podatków używanej podczas obliczania podatku w fakturowaniu zaliczek.|
-|Faktura zaliczkowa  |Wycofanie jako korekta |To pole wyboru należy zaznaczyć, jeśli wycofanie faktury zaliczkowej powinno być uznawane za korektę.|
-|Faktura zaliczkowa  |Wycofaj w dniu określonym datą faktury|To pole wyboru należy zaznaczyć, aby cofnąć przedpłatę w dniu zaksięgowania faktury.|
-|Płatność          |Wiele dat przedpłaty|Wybierz jedną z następujących opcji: **Akceptacja**, **Ostrzeżenie** lub **Błąd**.|
-|Płatność          |Niezgodność dat          |Wybierz jedną z następujących opcji: **Akceptacja**, **Ostrzeżenie** lub **Błąd**.|
-|Płatność          |Niezgodność kwot        |Wybierz jedną z następujących opcji: **Akceptacja**, **Ostrzeżenie** lub **Błąd**.|
-|Płatność          |Łączenie z zaksięgowaną fakturą zaliczkową|Wybierz jedną z następujących opcji: **Akceptacja**, **Ostrzeżenie** lub **Błąd**.|
-|Płatność          |(CZE), (POL) Obsługa przedpłat|Wybierz opcję **Zaawansowane**.|
+
+|     Skrócona karta     |             Parametr             |                                                                                                                                                                                           opis                                                                                                                                                                                           |
+|-----------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Faktura zaliczkowa |          Profil księgowania          | Wybierz profil księgowania, który ma być używany do fakturowania zaliczek (tylko Polska). <strong>Ważne:</strong> W Czechach i na Węgrzech faktury zaliczkowe nie są traktowane jako dokumenty księgowe ani podatkowe i nie są księgowane w księdze głównej. W związku z tym dla tych krajów należy pozostawić to pole puste, aby uniemożliwić księgowanie faktur zaliczkowych w księdze głównej. |
+|                 |                                   |                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Faktura zaliczkowa |                Wył.                |                                                                                                                                                                                           Konto przeciwstawne                                                                                                                                                                                           |
+| Faktura zaliczkowa |          Grupa podatków          |                                                                                                                                                      Umożliwia wybór grupy podatków używanej podczas obliczania podatku w fakturowaniu zaliczek.                                                                                                                                                      |
+| Faktura zaliczkowa |      Wycofanie jako korekta       |                                                                                                                                                 To pole wyboru należy zaznaczyć, jeśli wycofanie faktury zaliczkowej powinno być uznawane za korektę.                                                                                                                                                  |
+| Faktura zaliczkowa |      Wycofaj w dniu określonym datą faktury      |                                                                                                                                                     To pole wyboru należy zaznaczyć, aby cofnąć przedpłatę w dniu zaksięgowania faktury.                                                                                                                                                     |
+|     Płatność     |     Wiele dat przedpłaty     |                                                                                                                                        Wybierz jedną z następujących opcji: <strong>Akceptacja</strong>, <strong>Ostrzeżenie</strong> lub <strong>Błąd</strong>.                                                                                                                                         |
+|     Płatność     |           Niezgodność dat           |                                                                                                                                        Wybierz jedną z następujących opcji: <strong>Akceptacja</strong>, <strong>Ostrzeżenie</strong> lub <strong>Błąd</strong>.                                                                                                                                         |
+|     Płatność     |          Niezgodność kwot          |                                                                                                                                        Wybierz jedną z następujących opcji: <strong>Akceptacja</strong>, <strong>Ostrzeżenie</strong> lub <strong>Błąd</strong>.                                                                                                                                         |
+|     Płatność     | Łączenie z zaksięgowaną fakturą zaliczkową |                                                                                                                                        Wybierz jedną z następujących opcji: <strong>Akceptacja</strong>, <strong>Ostrzeżenie</strong> lub <strong>Błąd</strong>.                                                                                                                                         |
+|     Płatność     | (CZE), (POL) Obsługa przedpłat  |                                                                                                                                                                                Wybierz opcję <strong>Zaawansowane</strong>.                                                                                                                                                                                |
 
 Na karcie **Sekwencje identyfikatorów** skonfiguruj numeracje dla następujących odwołań:
 

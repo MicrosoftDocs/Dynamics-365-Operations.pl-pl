@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurowanie etapu zatwierdzania w przepływie pracy
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono sposób konfigurowania właściwości kroku zatwierdzania.
 
@@ -145,9 +144,9 @@ Wykonaj poniższe kroki, aby określić, komu ma zostać przypisany ten krok zat
     Jeśli użytkownik nie podejmie działania wobec dokumentu w wyznaczonym czasie, dokument staje się zaległy. Dokument zaległy można eskalować na podstawie opcji wybranych na stronie w obszarze **Eskalacja**.
 4.  Jeśli krok zatwierdzania został przypisany do wielu użytkowników lub do grupy użytkowników, na karcie **Zasady ukończenia** wybierz jedną z następujących opcji:
     -   **Pojedyncza osoba zatwierdzająca** — Akcja stosowana do dokumentu jest określona przez pierwszą osobę, która odpowiada. Na przykład Tomasz przesłał raport z wydatków na 15 000 zł. Raport z wydatków jest obecnie przypisany do Magdy, Ewy i Bartka. Jeśli pierwszą osobą, która odpowie na dokument, jest Magda, wybrana przez nią akcja zostanie zastosowana do dokumentu. Jeśli Magda odrzuci dokument, zostanie on odrzucony i wysłany z powrotem do Tomasza. Po zatwierdzeniu przez Magdę dokument zostanie przesłany do Anny w celu zatwierdzenia. 
-    
+
     ![Przepływ pracy z procesem zatwierdzania](./media/workflow_multipleusersinstep.gif)
-    
+
     -   **Większość osób zatwierdzających** — Akcja stosowana do dokumentu jest określana po uzyskaniu odpowiedzi od większości osób zatwierdzających. Na przykład Tomasz przesłał raport z wydatków na 15 000 zł. Raport z wydatków jest obecnie przypisany do Magdy, Ewy i Bartka. Jeżeli dwoma pierwszym osobami zatwierdzającymi, które zareagowały, są Magda i Ewa, ich operacje są stosowane do dokumentu.
         -   Jeśli Magda zatwierdzi dokument, ale Ewa go odrzuci, dokument zostanie odrzucony i wysłany z powrotem do Tomasza.
         -   Jeśli Magda i Ewa zatwierdzą dokument, zostanie on wysłany do Anny do zatwierdzenia.

@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 09a182b50917bff449f76598d61c38ae18160dd1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8652766766a557d8399e6a94088a6f9bc82ff018
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Zaawansowane opcje formatowania w raportowaniu finansowym
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Podczas tworzenia raportu w module raportowania finansowego są dostępne dodatkowe funkcje formatowania, włącznie z filtrami wymiarów, ograniczeniami kolumn i jednostek sprawozdawczych, wierszami niedrukowanymi i instrukcjami IF/THEN/ELSE w obliczeniach. 
 
@@ -66,12 +65,13 @@ Następujące przykłady przedstawiają sposób formatowania definicji wiersza i
 
 Poniższa tabela przedstawia przykład definicji wiersza, która używa wymuszenie podstawowego.
 
-| Kod wiersza | opis                      | Kod formatu | Powiązane formuły/wiersze/jednostki | Modyfikator wiersza | Łącze do Wymiary finansowe |
-|----------|----------------------------------|-------------|-----------------------------|----------------|----|
-| 100      | Gotówka na początku okresu (NP) |             |                             | Modyfikator konta = \[/BB\] | +Segment2 = \[1100\]         |
-| 130      | Środki pieniężne na początku okresu      | CAL         | C=C.100,F=D.100             |               |     |   |
-| 160      |                                  |             |                             |              |     |   |
-| 190      |                                  |             |                             |                 |     |   |
+
+| Kod wiersza |           opis            | Kod formatu | Powiązane formuły/wiersze/jednostki |        Modyfikator wiersza        | Łącze do Wymiary finansowe |
+|----------|----------------------------------|-------------|-----------------------------|----------------------------|------------------------------|
+|   100    | Gotówka na początku okresu (NP) |             |                             | Modyfikator konta = \[/BB\] |     +Segment2 = \[1100\]     |
+|   130    |   Środki pieniężne na początku okresu    |     CAL     |       C=C.100,F=D.100       |                            |                              |
+|   160    |                                  |             |                             |                            |                              |
+|   190    |                                  |             |                             |                            |                              |
 
 > [!NOTE] 
 > Puste kolumny zostały usunięte z poprzedniej tabeli dla celów prezentacji: kolumny Format zastępczy, Saldo zwykłe, Sterowanie wydrukiem, Ograniczenia kolumny nie są wyświetlane.
@@ -180,11 +180,11 @@ Komórka **Ograniczenie kolumny** w definicji wiersza ma wiele zastosowań. W za
 -   Komórka może określać kolumnę kwot do sortowania.
 
 ## <a name="using-a-calculation-formula-in-a-row-definition"></a>Używanie formuły obliczania w definicji wiersza
-Formuła obliczania w definicji wiersza może zawierać operatory **+**, **-**, **\*** i **/** oraz instrukcje **IF/THEN/ELSE**. Oprócz tego obliczenie może obejmować pojedyncze komórki oraz kwoty bezwzględne (wartości rzeczywiste zawarte w formule). Kod może zawierać maksymalnie 1024 znaki. Obliczenia nie mogą być stosowane do wierszy zawierających komórki typu **Łącze do wymiarów finansowych** (FD). Można jednak dołączać obliczenia w kolejnych wierszach, wyłączać drukowanie tych wierszy, a następnie sumować wiersze obliczeń.
+Formuła obliczania w definicji wiersza może zawierać operatory <strong>+</strong>, <strong>-</strong>, <strong>\\</strong> i **/** oraz instrukcje <strong>IF/THEN/ELSE</strong>. Oprócz tego obliczenie może obejmować pojedyncze komórki oraz kwoty bezwzględne (wartości rzeczywiste zawarte w formule). Kod może zawierać maksymalnie 1024 znaki. Obliczenia nie mogą być stosowane do wierszy zawierających komórki typu <strong>Łącze do wymiarów finansowych</strong> (FD). Można jednak dołączać obliczenia w kolejnych wierszach, wyłączać drukowanie tych wierszy, a następnie sumować wiersze obliczeń.
 
 ### <a name="operators-in-a-calculation-formula"></a>Operatory w formule obliczania
 
-Formuła obliczania używa bardziej złożonych operatorów niż formuła sumy wiersza. Może jednak używać operatorów **\*** i **/** wraz z dodatkowymi operatorami do mnożenia (\*) i dzielenia (/) kwot. Aby użyć zakresu lub sumy w formule obliczeń, trzeba umieścić znak @ przed kodem wiersza, chyba że używasz kolumny w definicji wiersza. Na przykład aby dodać kwotę w wierszu 100 do kwoty w wierszu 330, możesz użyć formuły sumy wiersza **100+330** lub formuły obliczeń **@100+@330**. **Uwaga:** należy użyć znaku @ przed każdym wierszem kodu, który jest używany w formule obliczania. W przeciwnym razie liczba jest odczytywana jako kwota bezwzględna. Na przykład formuła **@100+330** dodaje 330 USD do kwoty w wierszu 100. W przypadku odwołania do kolumny w formule obliczania znak @ nie jest konieczny.
+Formuła obliczania używa bardziej złożonych operatorów niż formuła sumy wiersza. Może jednak używać operatorów <strong>\\</strong>* i <strong>/</strong> wraz z dodatkowymi operatorami do mnożenia (\*) i dzielenia (/) kwot. Aby użyć zakresu lub sumy w formule obliczeń, trzeba umieścić znak @ przed kodem wiersza, chyba że używasz kolumny w definicji wiersza. Na przykład aby dodać kwotę w wierszu 100 do kwoty w wierszu 330, możesz użyć formuły sumy wiersza <strong>100+330</strong> lub formuły obliczeń <strong>@100+@330</strong>. <strong>Uwaga:</strong> należy użyć znaku @ przed każdym wierszem kodu, który jest używany w formule obliczania. W przeciwnym razie liczba jest odczytywana jako kwota bezwzględna. Na przykład formuła <strong>@100+330</strong> dodaje 330 USD do kwoty w wierszu 100. W przypadku odwołania do kolumny w formule obliczania znak @ nie jest konieczny.
 
 ### <a name="create-a-calculation-formula"></a>Tworzenie formuły obliczeń
 
@@ -202,7 +202,7 @@ W tym przykładzie formuła obliczania **@100+@330** oznacza, że kwota z wiersz
 | 370      | Gotówka na początku roku   | CAL         | @100+@330                  | NP            |              |                              |
 | 400      | Gotówka na początku okresu | TOT         | 340+370                    |               |              |                              |
 
-Jeśli wiersz w definicji wiersza ma format kodu **CAL**, i wprowadzisz matematyczne obliczenie w komórce **Powiązane formuły/wiersze/jednostki**, należy również wprowadzić literę skojarzonej kolumny i wiersza w raporcie. Na przykład wpisz **A.120**, aby wskazać wiersz 120 w kolumnie A. Można również użyć znaku @, aby wskazać wszystkie kolumny. Na przykład wpisz **@120**, aby wskazać wszystkie kolumny dla wiersza 120. Wyniki wszelkich matematycznych obliczeń, które nie zawierają litery kolumny lub znaku @, są uznawane za liczby rzeczywiste. **Uwaga:** Jeśli odwołanie do wiersza ma postać kodu wiersza etykiety, musisz użyć kropki (.) jako separatora między literą kolumny a etykietą (na przykład **A.MARŻA\_BRUTTO/A.SPRZEDAŻ**). Jeśli używasz znaku @, separator nie jest wymagany(na przykład **@GROSS\_MARGIN/@SALES**).
+Jeśli wiersz w definicji wiersza ma format kodu <strong>CAL</strong>, i wprowadzisz matematyczne obliczenie w komórce <strong>Powiązane formuły/wiersze/jednostki</strong>, należy również wprowadzić literę skojarzonej kolumny i wiersza w raporcie. Na przykład wpisz <strong>A.120</strong>, aby wskazać wiersz 120 w kolumnie A. Można również użyć znaku @, aby wskazać wszystkie kolumny. Na przykład wpisz <strong>@120</strong>, aby wskazać wszystkie kolumny dla wiersza 120. Wyniki wszelkich matematycznych obliczeń, które nie zawierają litery kolumny lub znaku @, są uznawane za liczby rzeczywiste. <strong>Uwaga:</strong> Jeśli odwołanie do wiersza ma postać kodu wiersza etykiety, musisz użyć kropki (.) jako separatora między literą kolumny a etykietą (na przykład <strong>A.MARŻA\_BRUTTO/A.SPRZEDAŻ</strong>). Jeśli używasz znaku @, separator nie jest wymagany(na przykład <strong>@GROSS\_MARGIN/@SALES</strong>).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Przykład formuły obliczania dla wybranych kolumn
 
@@ -255,17 +255,17 @@ Formuły **THEN** i **ELSE** mogą być dowolnym prawidłowym obliczeniem od bar
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Ograniczanie obliczenia do jednostki raportowania w definicji wiersza
 
-Aby ograniczyć obliczenia do jednej jednostki raportowania w drzewie raportowania, tak aby kwota wyniku nie była akumulowana do jednostki wyższego poziomu, można użyć kodu **@Unit** w komórce **Powiązane formuły/wiersze/jednostki** w definicji wiersza. Kod **@Unit** znajduje się w kolumnie B drzewa raportowania **Nazwa jednostki**. Jeśli używany jest kod **@Unit**, wartości nie są akumulowane, ale obliczenia są oceniane na każdym poziomie drzewa raportowania. **Uwaga:** do korzystania z tej funkcji raportowania drzewo muszą być skojarzone z definicją wiersza. Wiersz obliczania może odnosić się do wiersza obliczania lub wiersza danych finansowych. Obliczenie jest rejestrowane w komórce **Powiązane formuły/wiersze/jednostki** definicji wiersza i ograniczeniu typu danych finansowych. Obliczenie musi używać obliczenia warunkowego, które zaczyna się od konstrukcji **IF @Unit**. Oto przykład: IF @Unit(SPRZEDAŻ) THEN @100 ELSE 0 To obliczenie obejmuje kwoty z wiersza 100 w każdej kolumnie raportu, ale tylko dla jednostki SPRZEDAŻ. Jeśli wiele jednostek ma nazwę SPRZEDAŻ, kwota pojawia się w każdej z tych jednostek. Ponadto wiersz 100 może być wierszem danych finansowych i może być zdefiniowany jako niedrukowany. W takim przypadku kwota nie pojawia się we wszystkich jednostkach drzewa. Można też ograniczyć kwotę do jednej kolumny raportu, np. kolumny H, korzystając z ograniczenia kolumny, aby drukować tylko wartość widoczną w tej kolumnie raportu. Można uwzględnić kombinacje **OR** w instrukcji **IF**. Oto przykład: IF @Unit(SPRZEDAŻ) OR @Unit(SPRZEDAŻZACHÓD) THEN 5 ELSE @100 Można ograniczyć jednostkę w ograniczeniu typu obliczenia w jeden z następujących sposobów:
+Aby ograniczyć obliczenia do jednej jednostki raportowania w drzewie raportowania, tak aby kwota wyniku nie była akumulowana do jednostki wyższego poziomu, można użyć kodu <strong>@Unit</strong> w komórce <strong>Powiązane formuły/wiersze/jednostki</strong> w definicji wiersza. Kod <strong>@Unit</strong> znajduje się w kolumnie B drzewa raportowania <strong>Nazwa jednostki</strong>. Jeśli używany jest kod <strong>@Unit</strong>, wartości nie są akumulowane, ale obliczenia są oceniane na każdym poziomie drzewa raportowania. <strong>Uwaga:</strong> do korzystania z tej funkcji raportowania drzewo muszą być skojarzone z definicją wiersza. Wiersz obliczania może odnosić się do wiersza obliczania lub wiersza danych finansowych. Obliczenie jest rejestrowane w komórce <strong>Powiązane formuły/wiersze/jednostki</strong> definicji wiersza i ograniczeniu typu danych finansowych. Obliczenie musi używać obliczenia warunkowego, które zaczyna się od konstrukcji <strong>IF @Unit</strong>. Oto przykład: IF @Unit(SPRZEDAŻ) THEN @100 ELSE 0 To obliczenie obejmuje kwoty z wiersza 100 w każdej kolumnie raportu, ale tylko dla jednostki SPRZEDAŻ. Jeśli wiele jednostek ma nazwę SPRZEDAŻ, kwota pojawia się w każdej z tych jednostek. Ponadto wiersz 100 może być wierszem danych finansowych i może być zdefiniowany jako niedrukowany. W takim przypadku kwota nie pojawia się we wszystkich jednostkach drzewa. Można też ograniczyć kwotę do jednej kolumny raportu, np. kolumny H, korzystając z ograniczenia kolumny, aby drukować tylko wartość widoczną w tej kolumnie raportu. Można uwzględnić kombinacje <strong>OR</strong> w instrukcji <strong>IF</strong>. Oto przykład: IF @Unit(SPRZEDAŻ) OR @Unit(SPRZEDAŻZACHÓD) THEN 5 ELSE @100 Można ograniczyć jednostkę w ograniczeniu typu obliczenia w jeden z następujących sposobów:
 
--   Wprowadź nazwę jednostki, aby uwzględnić jednostki, które spełniają kryteria. Na przykład **IF @Unit(SPRZEDAŻ)** pozwala przeprowadzić obliczenie dla każdej jednostki o nazwie SPRZEDAŻ, nawet jeśli w drzewie raportowania jest kilka jednostek SPRZEDAŻ.
--   Wpisz nazwę firmy i jednostki, aby ograniczyć obliczenia do określonych jednostek w wybranej firmie. Na przykład wpisz **IF @Unit(ACME:SPRZEDAŻ)**, aby ograniczyć obliczenie do jednostek SPRZEDAŻ w firmie ACME.
--   Wpisz pełny kod hierarchii z drzewa raportowania, aby ograniczyć obliczanie do określonej jednostki. Na przykład wpisz **IF @Unit(PODSUMOWANIE^ACME^ZACHODNIA WYBRZEŻE^SPRZEDAŻ)**. **Uwaga:** Aby znaleźć pełen kod hierarchii, kliknij prawym przyciskiem w definicji drzewa raportowania, a następnie wybierz **Kopiuj identyfikator jednostki raportowania (kod H)**.
+- Wprowadź nazwę jednostki, aby uwzględnić jednostki, które spełniają kryteria. Na przykład <strong>IF @Unit(SPRZEDAŻ)</strong> pozwala przeprowadzić obliczenie dla każdej jednostki o nazwie SPRZEDAŻ, nawet jeśli w drzewie raportowania jest kilka jednostek SPRZEDAŻ.
+- Wpisz nazwę firmy i jednostki, aby ograniczyć obliczenia do określonych jednostek w wybranej firmie. Na przykład wpisz <strong>IF @Unit(ACME:SPRZEDAŻ)</strong>, aby ograniczyć obliczenie do jednostek SPRZEDAŻ w firmie ACME.
+- Wpisz pełny kod hierarchii z drzewa raportowania, aby ograniczyć obliczanie do określonej jednostki. Na przykład wpisz <strong>IF @Unit(PODSUMOWANIE^ACME^ZACHODNIA WYBRZEŻE^SPRZEDAŻ)</strong>. <strong>Uwaga:</strong> Aby znaleźć pełen kod hierarchii, kliknij prawym przyciskiem w definicji drzewa raportowania, a następnie wybierz <strong>Kopiuj identyfikator jednostki raportowania (kod H)</strong>.
 
 #### <a name="restrict-a-calculation-to-a-reporting-unit"></a>Ograniczanie obliczenia do jednostki raportowania
 
-1.  W Projektancie raportów kliknij pozycję **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
-2.  Kliknij dwukrotnie komórkę **Kod formatu**, a następnie wybierz opcję **CAL**.
-3.  Kliknij komórkę **Powiązane formuły/wiersze/jednostki**, a następnie wprowadź warunkowe obliczanie, które rozpoczyna się od konstrukcji **IF @Unit**.
+1. W Projektancie raportów kliknij pozycję **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
+2. Kliknij dwukrotnie komórkę **Kod formatu**, a następnie wybierz opcję **CAL**.
+3. Kliknij komórkę <strong>Powiązane formuły/wiersze/jednostki</strong>, a następnie wprowadź warunkowe obliczanie, które rozpoczyna się od konstrukcji <strong>IF @Unit</strong>.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>Instrukcje IF/THEN/ELSE w definicji kolumny
 

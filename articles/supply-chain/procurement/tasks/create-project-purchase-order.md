@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-project-purchase-order"></a>Tworzenie zamówienia zakupu w ramach projektu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób tworzenia zamówienia zakupu do projektu. W tym zadaniu jest wykorzystywany zestaw danych firmy USSI.
 

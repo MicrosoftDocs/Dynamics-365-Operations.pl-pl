@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6cd1e3a1f6b5c979a4f60d97cc2203cdcd32bbbe
-ms.openlocfilehash: 6de88b82c9a663bfe6d2756fde6f1a7412a44b1e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1ae0f142ebd2252b1df414998c153d32127bc1b7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="pay-based-on-registrations"></a>Płaca oparta na rejestracjach
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 W tym temacie szczegółowo wyjaśniono, jak płaca jest obliczana na podstawie rejestracji pracowników. Zawiera przykłady pokazujące, jak różne kombinacje opcji konfiguracyjnych dostępnych dla obliczenia wpływają na wynik. Poniżej przedstawiono kilka obszarów, które zostaną omówione:
 
@@ -446,7 +446,7 @@ Planowane nieobecności pracowników można tworzyć na stronie **Utwórz planow
 Zadanie jest oparte na zapytaniu. Z tego względu planowaną nieobecność można utworzyć dla wielu pracowników, takich jak pracownicy należący do tej samej grupy obliczania. Jeśli planowana nieobecność dotyczy jednego pracownika, rejestrację można wprowadzić na stronie **Obecność** lub na stronie **Pracownicy odpowiedzialni za rejestrację czasu**.
 
 - Aby wprowadzić rejestrację nieobecności na stronie **Obecność**, wybierz kolejno opcje **Czas i frekwencja** &gt; **Zapytania i raporty** &gt; **Obecność** &gt; **Obecność**, a następnie wybierz opcję **Rejestracja nieobecności**.
-- Aby wprowadzić rejestrację nieobecności ze strony ***Pracownicy odpowiedzialni za rejestrację czasu***, wybierz kolejno polecenia **Czas i frekwencja** &gt; **ustawienia** &gt; **Pracownicy odpowiedzialni za rejestrację czasu**, a następnie na karcie **Czas** w obszarze **Przypisanie czasu** wybierz opcję **Rejestracje nieobecności**.
+- Aby wprowadzić rejestrację nieobecności ze strony *<strong><em>Pracownicy odpowiedzialni za rejestrację czasu</em></strong>*, wybierz kolejno opcje <strong>Czas i frekwencja</strong> &gt; <strong>Ustawienia</strong> &gt; <strong>Pracownicy odpowiedzialni za rejestrację czasu</strong>, a następnie na karcie <strong>Czas</strong> w obszarze <strong>Przypisanie czasu</strong> wybierz opcję <strong>Rejestracje nieobecności</strong>.
 
 Można użyć raportu **Zaplanowane nieobecności** w celu wyświetlania przeglądu planowanych nieobecności pracowników. Aby otworzyć ten raport, wybierz kolejno opcje **Czas i frekwencja** &gt; **Zapytania i raporty** &gt; **Raporty dotyczące nieobecności** &gt; **Zaplanowane nieobecności**.
 

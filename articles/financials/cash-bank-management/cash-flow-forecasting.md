@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="cash-flow-forecasting"></a>Prognozowanie przepływów pieniężnych
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Narzędzia prognozowania przepływów pieniężnych mogą służyć do analizy nadchodzących przepływów pieniężnych i zapotrzebowania na waluty, co pozwoli szacować przyszłe potrzeby firmy w zakresie gotówki. Aby uzyskać prognozę przepływów pieniężnych, należy wykonać następujące zadania:
 

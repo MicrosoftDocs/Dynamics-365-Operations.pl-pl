@@ -3,7 +3,7 @@ title: "Funkcje związane z lokalizacją i wymagane przepisami prawa"
 description: "Ten temat zawiera listę zasobów, które pomogą Ci dowiedzieć się więcej o funkcjach specyficznych dla kraju/regionu."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 04/12/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1f76359878d162e93d8f8b7c11be529c43c94455
-ms.openlocfilehash: c1c180432e014c69b43612693790a1cac6e54c34
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 389efbe1853264c1503737b55dd7767fdcb966ca
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>Funkcje związane z lokalizacją i wymagane przepisami prawa
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Rozwiązanie Microsoft Dynamics 365 for Finance and Operations zawiera funkcje specyficzne dla krajów/regionów opisanych w dokumencie [Przewodnik dostępności produktu w różnych krajach](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Te funkcje są włączane na podstawie podstawowego adresu aktywnej firmy. 
 
@@ -53,8 +52,8 @@ Wymienione poniżej zasoby zawierają informacje o planowanych i nowych funkcjac
 -   [Obserwacje otoczenia prawnego i informacje dotyczące zmian przepisów](regulatory-watch-communication.md)
 -   [Informowanie firmy Microsoft o alertach dotyczących przepisów krajowych/regionalnych oraz śledzenie stanu funkcji wymaganych przepisami prawa](submit-localization-alerts.md)
 
-### <a name="dynamics-365-roadmap"></a>Plan rozwoju usługi Dynamics 365
-[Plan rozwoju usługi Dynamics 365](https://roadmap.dynamics.com/) zawiera informacje na temat tego, nad czym pracujemy. Z tego planu możesz dowiedzieć się, jakie funkcje są udostępniane publicznie, a jakie są opracowywane. Wszystkie daty oraz lista funkcji, które są aktualnie opracowywane, są w wersji wstępnej, zostały określone na podstawie aktualnych oczekiwań i mogą ulec zmianie bez powiadomienia.
+### <a name="dynamics-365-release-notes"></a>Dynamics 365 — informacje o wersji
+W dokumencie [Dynamics 365 — informacje o wersji (plik PDF do pobrania)](https://aka.ms/businessappsreleasenotes) znajdują się opisy nowych i ulepszonych funkcji aplikacji biznesowych oraz platform aplikacji usługi Dynamics 365. 
 
 ## <a name="electronic-reporting"></a>Raportowanie elektroniczne
 Narzędzie Raportowanie elektroniczne (ER) umożliwia konfigurowanie formatów dokumentów elektronicznych zgodnie z wymogami prawnymi obowiązującymi w różnych krajach/regionach. Raportowanie elektroniczne umożliwia zarządzanie tymi formatami podczas ich całego cyklu życia. Aby uzyskać więcej informacji, zobacz jedne z następujących tematów:
@@ -79,31 +78,15 @@ Aby dowiedzieć się więcej, zobacz [Przewodniki zadań](../../fin-and-ops/get-
 ## <a name="countryregion-specific-help-topics"></a>Tematy Pomocy dotyczące funkcji specyficznych dla kraju/regionu
 W poniższych sekcjach wymieniono zasoby według kraju/regionu.
 
-### <a name="australia"></a>Australia
-
--   [Formaty plików bankowych](../../financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
--   [Oświadczenie o działalności gospodarczej ](../../financials/localizations/apac-aus-business-activity-statement.md)
--   [Amortyzacja puli środków trwałych o niskiej wartości](../../financials/localizations/apac-aus-low-value-pool-depreciation.md)
-
-### <a name="austria"></a>Austria
-
-- [Amortyzacja półroczna](../../financials/localizations/emea-aut-half-year-depreciation.md)
-- [Opłaty materiałowe opakowań](../../financials/localizations/emea-aut-packing-material-fee-calculation.md)
-- [Cła od zakupu](../../financials/localizations/emea-aut-purchase-duties.md)
-- [Deklaracja VAT](../../financials/localizations/emea-aut-vat-statement-details.md)
-
-### <a name="belgium"></a>Belgia
-
--   [Wyciąg bankowy CODA](../../financials/localizations/emea-bel-coda-bank-statement-import.md)
--   [Deklaracja podatkowa INTERVAT](../../financials/localizations/emea-bel-intervat-tax-declaration.md)
--   [Ustawienia raportu PRODCOM](../../financials/localizations/emea-bel-prodcom-report.md)
--   [Raporty uzgodnienia](../../financials/localizations/emea-bel-reconciliation-reports.md)
+### <a name="australiafinancialslocalizationsaustraliamd"></a>[Australia](../../financials/localizations/australia.md)
+### <a name="austriafinancialslocalizationsaustriamd"></a>[Austria](../../financials/localizations/austria.md)
+### <a name="belgiumfinancialslocalizationsbelgiummd"></a>[Belgia](../../financials/localizations/belgium.md)
 
 ### <a name="brazil"></a>Brazylia
 
 -   [Środek trwały CIAP](../../financials/localizations/latam-bra-ciap-fixed-asset.md)
 -   [Konfigurowanie ksiąg podatkowych](../../financials/localizations/latam-bra-configure-fiscal-books.md)
--   [Eksportowanie i importowanie transakcji do celów konsolidacji księgi głównej w Brazylii](../../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md)
+-   [Eksportowanie i importowanie transakcji na potrzeby konsolidacji księgi głównej w Brazylii](../../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md)
 -   [Księgi podatkowe](../../financials/localizations/latam-bra-fiscal-books.md)
 -   [Teksty zastępcze w dokumentach fiskalnych](../../financials/localizations/latam-bra-fiscal-document-text-placeholders.md)
 -   [Dokumenty fiskalne](../../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md)
@@ -134,22 +117,9 @@ W poniższych sekcjach wymieniono zasoby według kraju/regionu.
 -   [Księgowanie kont głównych zapasów według oddziału](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
 -   [Wyświetlanie kwot debetu i kredytu dla kont księgowych](../../financials/localizations/apac-chn-negative-debits-credits.md)
 
-### <a name="the-czech-republic"></a>Czechy
-
--   [Rabat gotówkowy na fakturze korygującej](../../financials/localizations/emea-cze-credit-note-cash-discount.md)
--   [Zaokrąglenie amortyzacji](../../financials/localizations/emea-cze-depreciation-rounding.md)
--   [Półroczna amortyzacja przy likwidacji środka trwałego w Czechach](../../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
--   [Zawieszenie amortyzacji (holidays.md)](../../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
--   [Metody amortyzacji środków trwałych w Czechach](../../financials/localizations/emea-cze-fixed-assets-depreciation.md)
--   [Księgowanie wstępnego nabycia środka trwałego](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
--   [Deklaracja VAT w Czechach](../../financials/localizations/emea-cze-vat-statement-details.md)
--   [Raportowanie podatku ](../../financials/localizations/emea-cze-intra-community-vat-transactions.md)
--   [Okresy podziału w arkuszach okresowych](../../financials/localizations/emea-create-post-periodic-journals.md)
--   [Konfigurowanie osób podpisujących drukowane formularze](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
--   [Aktualizowanie sposobu wyświetlania kwot w raportach i dokumentach](../../financials/localizations/emea-amount-printing-forms.md)
+### <a name="the-czech-republicfinancialslocalizationsczech-republicmd"></a>[Czechy](../../financials/localizations/czech-republic.md)
 
 ### <a name="estonia"></a>Estonia
-
 -   [Szczegóły deklaracji VAT w Estonii](../../financials/localizations/emea-est-vat-statement-details.md)
 -   [Likwidacja środków trwałych](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
 
@@ -280,7 +250,7 @@ W poniższych sekcjach wymieniono zasoby według kraju/regionu.
 -   [Raport deklaracji korekty o inflację](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
 -   [Raport deklaracji ISR](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
 -   [Faktury elektroniczne (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
-   
+
 ### <a name="malaysia"></a>Malezja
 
 -   [Podatek od towarów i usług (GST)](../../financials/localizations/apac-mys-gst.md)

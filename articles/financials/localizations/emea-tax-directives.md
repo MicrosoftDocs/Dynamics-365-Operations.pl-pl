@@ -25,7 +25,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="tax-directives-for-europe"></a>Dyrektywy podatkowe dla Europy
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dyrektywa UE zawiera przepisy wymagające stosowania przez wszystkie państwa członkowskie w odniesieniu do reguł i informacji, które muszą być uwzględnione przy tworzeniu faktur. Dyrektywa UE zawiera spis informacji, jakich dostawcy potrzebują o swoich klientach w Unii Europejskiej. Na przykład faktura może zawierać odniesienie opisujące podstawę prawną naliczania zerowej stawki podatku VAT lub zwolnienia z VAT. Jeśli faktura koryguje wcześniej wystawioną fakturę, tzn. na przykład jest fakturą korygującą, musi zawierać jednoznaczne odniesienie do oryginalnej faktury.
 

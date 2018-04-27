@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="manage-assortments"></a>Zarządzanie asortymentem 
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Ta procedura przedstawia sposób tworzenia i publikowania nowego asortymentu produktu. Wykorzystuje dane firmy demonstracyjnej USRT. Procedura wymaga aplikacji Dynamics AX 7.0.1 lub nowszej oraz platformy Dynamics AX w wersji 7.1.  
 

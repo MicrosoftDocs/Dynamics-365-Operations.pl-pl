@@ -19,16 +19,18 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 19d725f15f00afce1a2ae4b336226f1dafa94b41
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cf35406b43c1ec40a7c248b970559b65fcd8a6c6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-workflows-for-expense"></a>Ustawianie przepływów pracy dla wydatków
 
-[!include[banner](../includes/banner.md)] Można ustawić proces przepływu pracy, który jest używany do sprawdzania i zatwierdzania dokumentów dotyczących podróży i wydatków. Dokumenty, dla których można zdefiniować przepływy pracy obejmują raporty z wydatków, wnioski wyjazdowe i wnioski o zaliczkę gotówkową.
+[!INCLUDE [banner](../includes/banner.md)]
+
+ Można ustawić proces przepływu pracy, który jest używany do sprawdzania i zatwierdzania dokumentów dotyczących podróży i wydatków. Dokumenty, dla których można zdefiniować przepływy pracy obejmują raporty z wydatków, wnioski wyjazdowe i wnioski o zaliczkę gotówkową.
 
 Przepływ pracy reprezentuje proces biznesowy. Określa sposób przepływu dokumentu przez system i wskazuje osoby, które muszą zakończyć zadanie lub zatwierdzić dokument. Używanie systemu przepływu pracy w organizacji ma kilka zalet:
 
@@ -42,13 +44,15 @@ Przepływ pracy reprezentuje proces biznesowy. Określa sposób przepływu dokum
 
 W poniższej tabeli wymieniono typy przepływów pracy, które można tworzyć w module **Wydatek**.
 
-| **Typ**                           | **Ten typ służy do następujących zadań**                                                 |     
-|------------------------------------|----------------------------------------------------------------------|
-| **Raport o wydatkach**                 | Utwórz przepływy pracy zatwierdzania dla raportu z wydatków.                       |      
-| **Automatyczne księgowani raportu wydatków**    | Utwórz przepływy pracy automatycznego księgowania w raportach z wydatków.              |     
-| **Pozycja w wierszu wydatku**              | Utwórz przepływy pracy zatwierdzania dla pozycji w wierszu w raportach z wydatków.         |     
-| **Automatyczne księgowanie pozycji wiersza wydatków** | Utwórz przepływy pracy automatycznego księgowania dla pozycji w wierszu w raportach z wydatków.|
-| **Wniosek wyjazdowy**             | Utwórz przepływy pracy zatwierdzania dla wniosków wyjazdowych.                   |    
-| **Wniosek o zaliczkę gotówkową**           | Utwórz przepływy pracy zatwierdzania wniosków o zaliczkę gotówkową.                 |     
-| **Zwrot podatku VAT**               | Utwórz przepływy pracy zatwierdzania dla podatku od wartości dodanej (VAT). |       
+
+|              <strong>Typ</strong>              |                   <strong>Ten typ służy do następujących zadań</strong>                   |
+|-------------------------------------------------|-----------------------------------------------------------------------|
+|         <strong>Raport o wydatkach</strong>         |            Utwórz przepływy pracy zatwierdzania dla raportu z wydatków.             |
+|  <strong>Automatyczne księgowani raportu wydatków</strong>   |        Utwórz przepływy pracy automatycznego księgowania w raportach z wydatków.        |
+|       <strong>Pozycja w wierszu wydatku</strong>        |     Utwórz przepływy pracy zatwierdzania dla pozycji w wierszu w raportach z wydatków.      |
+| <strong>Automatyczne księgowanie pozycji wiersza wydatków</strong> | Utwórz przepływy pracy automatycznego księgowania dla pozycji w wierszu w raportach z wydatków. |
+|       <strong>Wniosek wyjazdowy</strong>       |          Utwórz przepływy pracy zatwierdzania dla wniosków wyjazdowych.           |
+|      <strong>Wniosek o zaliczkę gotówkową</strong>      |         Utwórz przepływy pracy zatwierdzania wniosków o zaliczkę gotówkową.          |
+|        <strong>Zwrot podatku VAT</strong>        | Utwórz przepływy pracy zatwierdzania dla podatku od wartości dodanej (VAT).  |
+
 

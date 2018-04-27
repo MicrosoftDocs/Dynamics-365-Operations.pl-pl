@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="new-task-guides-february-2016"></a>Nowe przewodniki po zadaniach (luty 2016 r.)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten temat przedstawia listę przewodników po zadaniach, które znajdują się bibliotekach narzędzia Microsoft BPM według stanu na koniec lutego 2016 r.  Są tu ujednolicone biblioteki APQC (z lutego 2016 r.) dla systemu Microsoft Dynamics AX oraz biblioteki ułatwiające rozpoczęcie pracy (z lutego 2016 r.).
 
@@ -50,8 +49,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Konfigurowanie sprawdzania poprawności uzgadniania faktur rozrachunków z dostawcami       | Globalna             |
 | Ustawianie zasad faktur od dostawców                            | Globalna             |
 
- 
 
+ 
 ### <a name="accounts-receivable"></a>Rozrachunki z odbiorcami
 
 |                                                             |                    |
@@ -71,8 +70,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Przeglądanie informacji o windykacji                              | Globalna             |
 | Konfigurowanie i generowanie informacji o wiekowaniu rozrachunków z odbiorcami   | Globalna             |
 
- 
 
+ 
 ### <a name="cash-and-bank-management"></a>Zarządzanie gotówką i bankami
 
 |                                                                      |                    |
@@ -99,8 +98,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Rozlicz czek postdatowany od odbiorcy                             | Globalna             |
 | Przegląd płatności dla dostawcy                                              | Globalna             |
 
- 
 
+ 
 ### <a name="compliance"></a>Zgodność
 
 |                                            |                    |
@@ -108,8 +107,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | **Wiersz narzędzia BPM**                               | **Kraj/region** |
 | Definiowanie zasad inspekcji dla dokumentów źródłowych | Globalna             |
 
- 
 
+ 
 ### <a name="cost-management"></a>Zarządzanie kosztami
 
 |                                                                     |                    |
@@ -121,8 +120,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Wyświetlanie aktualnego stanu PWT na zleceniu produkcyjnym                       | Globalna             |
 | Wyświetlanie zestawienia magazynowego i KPI według obiektu kosztów                     | Globalna             |
 
- 
 
+ 
 ### <a name="countryregion-functionality"></a>Funkcje specyficzne dla kraju/regionu
 
 |                                                                                                        |                                 |
@@ -263,8 +262,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | GB-00009 Utwórz fakturę korygującą od rabatu rozliczenia                                               | Zjednoczone Królestwo                  |
 | GB-00009 Konfigurowanie parametrów faktury korygującej do rabatu za natychmiastową płatność                                   | Zjednoczone Królestwo                  |
 
- 
 
+ 
 ### <a name="develop-vision-and-strategy"></a>Opracowywanie wizji i strategii
 
 |                                                                                          |                    |
@@ -276,8 +275,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Pytanie zależy od odpowiedzi na poprzednie pytanie (pytania warunkowe) | Globalna             |
 | Określanie wyniku kwestionariusza na podstawie wartości procentowej                                                   | Globalna             |
 
- 
 
+ 
 ### <a name="electronic-reporting"></a>Raportowanie elektroniczne
 
 |                                                 |                    |
@@ -289,8 +288,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | ER Mapowanie modelu danych na wybrane źródła danych      | Globalna             |
 | ER Wybór dostawcy usług                      | Globalna             |
 
- 
 
+ 
 ### <a name="expense-management"></a>Zarządzanie wydatkami
 
 |                              |                    |
@@ -298,8 +297,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | **Wiersz narzędzia BPM**                 | **Kraj/region** |
 | Konfigurowanie zarządzania wydatkami | Globalna             |
 
- 
 
+ 
 ### <a name="fixed-assets"></a>Środki trwałe
 
 |                                                           |                    |
@@ -321,8 +320,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Rozbicie środka trwałego                                       | Globalna             |
 | Przenoszenie środka trwałego                                    | Globalna             |
 
- 
 
+ 
 ### <a name="general-ledger"></a>Księga główna
 
 |                                                                   |                    |
@@ -354,8 +353,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Wyświetlanie wpisów w arkuszu lub transakcji                              | Globalna             |
 | Wyświetlanie powiązanego międzyfirmowego załącznika z arkusza                    | Globalna             |
 
- 
 
+ 
 ### <a name="human-capital-management"></a>Zarządzanie kapitałem ludzkim
 
 |                                                                  |                    |
@@ -398,8 +397,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Konfigurowanie zasad uprawnień do świadczeń                             | Globalna             |
 | Konfigurowanie typów dokumentów i9                                     | Globalna             |
 
- 
 
+ 
 ### <a name="inventory-management"></a>Zarządzanie zapasami
 
 |                                                                                   |                    |
@@ -422,8 +421,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Śledzenie elementu lub surowca                                                     | Globalna             |
 | Przenoszenie zapasów fizycznych w magazynie                                  | Globalna             |
 
- 
 
+ 
 ### <a name="manufacturing"></a>Wytwarzanie
 
 |                                                               |                    |
@@ -474,8 +473,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Przenoszenie materiałów za pomocą zadań systemu Kanban                            | Globalna             |
 | Sprawdzanie poprawności i wersji przepływu produkcji                          | Globalna             |
 
- 
 
+ 
 ### <a name="master-planning"></a>Planowanie główne
 
 |                                                   |                    |
@@ -487,8 +486,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Identyfikowanie materiałów krytycznych i możliwości dostawców | Globalna             |
 | Ręczne modyfikowanie prognozy popytu                 | Globalna             |
 
- 
 
+ 
 ### <a name="organization-administration"></a>Administrowanie organizacją
 
 |                                           |                    |
@@ -501,8 +500,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Konfigurowanie podpisów elektronicznych              | Globalna             |
 | Konfigurowanie sekwencji numeracji za pomocą kreatora | Globalna             |
 
- 
 
+ 
 ### <a name="planning"></a>Planowanie
 
 |                        |                    |
@@ -510,8 +509,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | **Wiersz narzędzia BPM**           | **Kraj/region** |
 | Ustalanie dostępności | Globalna             |
 
- 
 
+ 
 ### <a name="procurement-and-sourcing"></a>Zaopatrzenie i sourcing
 
 |                                                                  |                    |
@@ -525,8 +524,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Szukanie dostawców                                               | Globalna             |
 | Ustawianie hierarchii kategorii zaopatrzenia                          | Globalna             |
 
- 
 
+ 
 ### <a name="product-information-and-configuration"></a>Dane i konfiguracja produktu
 
 |                                                       |                    |
@@ -551,8 +550,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Zwalnianie produktu głównego opartego na wymiarach              | Globalna             |
 | Przesyłanie danych dla modeli produktu                      | Globalna             |
 
- 
 
+ 
 ### <a name="public-sector"></a>Sektor publiczny
 
 |                                                                                         |                    |
@@ -577,8 +576,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Konfigurowanie funduszu dla sektora publicznego                                                         | Globalna             |
 | Konfigurowanie klasyfikacji umów zakupu dla sektora publicznego                             | Globalna             |
 
- 
 
+ 
 ### <a name="retail-and-commerce"></a>Handel detaliczny i inny
 
 |                                                                                           |                    |
@@ -619,8 +618,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Korekty cen w sieci sprzedaży                                                                  | Globalna             |
 | Konfiguracje sklepu dla zestawień sieci sprzedaży                                                | Globalna             |
 
- 
 
+ 
 ### <a name="sales"></a>Sprzedaż
 
 |                                            |                    |
@@ -642,8 +641,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Wysyłanie zamówień jako dostaw bezpośrednich           | Globalna             |
 | Wysyłanie towarów z zamówień sprzedaży bez przekazywania do magazynu      | Globalna             |
 
- 
 
+ 
 ### <a name="sales-tax"></a>Podatek
 
 |                                                    |                    |
@@ -661,8 +660,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Konfigurowanie potrąconej zaliczki na podatek                             | Globalna             |
 | Wyświetl zaksięgowane transakcje podatkowe                 | Globalna             |
 
- 
 
+ 
 ### <a name="security"></a>Zabezpieczenia
 
 |                                                         |                    |
@@ -672,8 +671,8 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Identyfikowanie i rozwiązywanie konfliktów w podziale obowiązków | Globalna             |
 | Konfigurowanie podziału obowiązków                            | Globalna             |
 
- 
 
+ 
 ### <a name="warehouse-and-transportation"></a>Magazyn i transport
 
 |                                                                                   |                    |
@@ -697,9 +696,10 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 | Konfigurowanie firm przewozowych                                                          | Globalna             |
 | Używanie warsztatu planowania ładunku do planowania ładunków i wysyłek                       | Globalna             |
 
- 
 
+ 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Przewodniki po zadaniach w bibliotece ułatwiającej rozpoczęcie pracy (z lutego 2016 r.)
+
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **Wiersz narzędzia BPM**                                       | **Kraj/region** |

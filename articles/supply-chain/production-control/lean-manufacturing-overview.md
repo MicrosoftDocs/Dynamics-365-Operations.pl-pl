@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="lean-manufacturing-overview"></a>Omówienie wytwarzania typu lean manufacturing
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w programie Microsoft Dynamics 365 for Finance and Operations.
 
@@ -40,6 +39,7 @@ Lean manufacturing oferuje narzędzia służące do modelowania produkcji oszcz�
 -   Monitorowanie i obsługa zadań w systemie Kanban.
 
 Architektura produkcji oszczędnej (lean manufacturing) w programie Finance and Operations składa się z przepływów produkcji, działań i reguł systemu Kanban. Te struktury są pełni zintegrowane z procesami programu Finance and Operations. W środowisku produkcji oszczędnej (lean manufacturing) trybu mieszanego pozwala to łączyć ze sobą różne strategie dostaw, produkcji i pozyskiwania materiałów. Te strategie obejmują zamówienia produkcyjne, zamówienia partii w przemyśle procesowym, zamówienia zakupu i zamówienia przeniesienia.
+
 | **Ważne**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Program Finance and Operations umożliwia implementację produkcji oszczędnej (lean manufacturing) z kartami Kanban. Powodzenie wprowadzania w życie zasad produkcji oszczędnej (lean manufacturing) zależy jednak od wewnętrznych procesów biznesowych, jakich używasz, oraz rzeczywistych warunki produkcji i środowiska. |

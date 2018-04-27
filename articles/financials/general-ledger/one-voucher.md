@@ -3,7 +3,7 @@ title: "Pojedynczy załącznik"
 description: "Pojedynczy załącznik dla arkuszy finansowych (arkusza finansowego, arkusza środków trwałych, arkusza płatności dla dostawców itd.) umożliwia wprowadzenie wielu transakcji księgi podrzędnej w kontekście jednego załącznika."
 author: kweekley
 manager: AnnBe
-ms.date: 03/19/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 3831a6b5ec458495134b4b490d33a9acd76b6d2e
-ms.openlocfilehash: 76ea8470786bd50896400a65564d698d96119d6f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9f996131830f9bd4efd534143b3fb761c5ccc756
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="one-voucher"></a>Pojedynczy załącznik
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  Ta funkcja w będzie dostępna w programie Dynamics 365 for Finance and Operations w wersji 8.0, która zostanie opublikowana wiosną 2018 roku.   
@@ -38,9 +38,12 @@ ms.lasthandoff: 03/20/2018
 
 Istniejąca funkcjonalność arkuszy finansowych (arkusza finansowego, arkusza środków trwałych, arkusza płatności dla dostawców itd.) umożliwia wprowadzenie wielu transakcji księgi podrzędnej w kontekście jednego załącznika. Nazywamy tę funkcjonalność „pojedynczym załącznikiem”. Pojedyncze załączniki można tworzyć za pomocą następujących metod:
 
--   Ustaw nazwę arkusza (**Księga główna** \> **Konfiguracja arkusza** \> **Nazwy arkuszy**), tak aby pole **Nowy załącznik** zawierało wartość **Tylko jeden numer załącznika**. Każdy wiersz dodawany do arkusza będzie teraz umieszczany w tym samym załączniku. Ponieważ wszystkie wiersze są dodawane do tego samego załącznika, załącznik można wprowadzić jako załącznik wielowierszowy, jako konto/konto przeciwstawne w tym samym wierszu lub jako kombinację.
+-   Ustaw nazwę arkusza (**Księga główna** \> **Konfiguracja arkusza** \> **Nazwy arkuszy**), tak aby pole **Nowy załącznik** zawierało wartość **Tylko jeden numer załącznika**. * Każdy wiersz dodawany do arkusza będzie teraz umieszczany w tym samym załączniku. Ponieważ wszystkie wiersze są dodawane do tego samego załącznika, załącznik można wprowadzić jako załącznik wielowierszowy, jako konto/konto przeciwstawne w tym samym wierszu lub jako kombinację.
 
 [![Jeden wiersz](./media/same-line.png)](./media/same-line.png)
+ 
+> [!IMPORTANT] 
+> *  Należy zauważyć, że definicja pojęcia „pojedynczy załącznik” NIE obejmuje numerów arkuszy, które skonfigurowano jako **Tylko jeden numer załącznika**, po czym użytkownik wprowadza załącznik zawierający tylko typy kont księgowych.  W tym dokumencie określenie „pojedynczy załącznik” oznacza, że istnieje jeden załącznika zawierający więcej niż jednego dostawcę, odbiorcę, bank, środek trwały lub projekt. 
 
 -   Umożliwia wprowadzenie załącznika wielowierszowego, gdy nie istnieje żadne konto przeciwstawne.
 
@@ -68,13 +71,16 @@ Następnie generujesz raport **Wydatki według dostawców** w obszarze roboczym 
 
 Ze względu opisane wcześniej problemy funkcjonalność pojedynczego załącznika zostanie wycofana. Jednak ponieważ brak tej funkcjonalności spowodowałby brak niektórych potrzebnych funkcji, funkcjonalność nie zostanie wycofana od razu w całości. Wycofanie odbędzie się według następującego harmonogramu: 
 
--   **Wydanie z wiosny 2018 roku** — funkcjonalność będzie domyślnie wyłączona za pomocą parametru księgi głównej. Jednak można ją włączyć, jeśli organizacja używa scenariusza biznesowego z lukami wymienionymi w dalszej części tego tematu.
+- **Wydanie z wiosny 2018 roku** — funkcjonalność będzie domyślnie wyłączona za pomocą parametru księgi głównej. Jednak można ją włączyć, jeśli organizacja używa scenariusza biznesowego z lukami wymienionymi w dalszej części tego tematu.
 
-    -   Jeśli klient ma scenariusz biznesowy, która nie wymaga funkcji pojedynczego załącznika, nie należy jej włączać. Jeśli ta funkcja jest używana, mimo iż istnieje inne rozwiązanie, nie będziemy naprawiać „usterek” w obszarach wymienionych w dalszej części tego tematu.
+  -   Jeśli klient ma scenariusz biznesowy, która nie wymaga funkcji pojedynczego załącznika, nie należy jej włączać. Jeśli ta funkcja jest używana, mimo iż istnieje inne rozwiązanie, nie będziemy naprawiać „usterek” w obszarach wymienionych w dalszej części tego tematu.
 
-    -   Przestań używać pojedynczego załącznika w integracjach z programem Microsoft Dynamics 365 Finance and Operations, chyba że funkcjonalność jest wymagana dla jednej z luk funkcjonalnych.
+  -   Przestań używać pojedynczego załącznika w integracjach z programem Microsoft Dynamics 365 Finance and Operations, chyba że funkcjonalność jest wymagana dla jednej z luk funkcjonalnych.
 
--   **Wydanie z jesieni 2018 roku i nowsze** — luki funkcjonalne zostaną wyeliminowane. Po uzupełnieniu luk funkcjonalnych funkcjonalność pojedynczego załącznika zostanie trwale wyłączona.
+- **Wydanie z jesieni 2018 roku i nowsze** — luki funkcjonalne zostaną wyeliminowane. Po uzupełnieniu luk funkcjonalnych funkcjonalność pojedynczego załącznika zostanie trwale wyłączona.
+
+- > [!IMPORTANT]
+  > Należy zauważyć, że opcja **Tylko jeden numer załącznika** NIE została usunięta z konfiguracji nazwy arkusza.  Ta opcja jest nadal obsługiwana, gdy załącznik zawiera tylko typy kont księgowych.  Klienci muszą zachować ostrożność podczas używania tego ustawienia, ponieważ załącznik nie zostanie zaksięgowany, jeśli użyją opcji **Tylko jeden numer załącznika**, a następnie wprowadzą więcej niż jednego odbiorcę, dostawcę, bank, środek trwały lub projekt.  Ponadto klienci nadal mogą wprowadzić kombinację typów kont księgi podrzędnej, na przykład płatność w jednym załączniku zawierającym typy dostawców/banków.  
 
 <a name="why-use-one-voucher"></a>Dlaczego watro używać funkcjonalności pojedynczego załącznika?
 ====================
@@ -102,13 +108,13 @@ Poniższe scenariusze można realizować tylko przy użyciu funkcjonalności poj
 
 >   Jeśli organizacja musi wyświetlać zapisy księgowe ze zdarzenia biznesowego razem, musi używać funkcjonalności pojedynczego załącznika. 
 
--   **Funkcje specyficzne dla kraju**
+- **Funkcje specyficzne dla kraju**
 
- -   Funkcja jednolitego dokumentu administracyjnego (SAD) w Polsce obecnie wymaga używania jednego załącznika. Dopóki dla tej funkcji nie będzie dostępna opcja grupowania, należy nadal korzystać z funkcjonalności pojedynczego załącznika. Mogą istnieć dodatkowe funkcje specyficzne dla krajów, które wymagają funkcjonalności pojedynczego załącznika.
+  -   Funkcja jednolitego dokumentu administracyjnego (SAD) w Polsce obecnie wymaga używania jednego załącznika. Dopóki dla tej funkcji nie będzie dostępna opcja grupowania, należy nadal korzystać z funkcjonalności pojedynczego załącznika. Mogą istnieć dodatkowe funkcje specyficzne dla krajów, które wymagają funkcjonalności pojedynczego załącznika.
 
--   **Arkusz zaliczek od odbiorców zawierający podatki w wielu „wierszach”**
+- **Arkusz zaliczek od odbiorców zawierający podatki w wielu „wierszach”**
 
- -   Odbiorca dokonuje przedpłaty za zamówienie, a wiersze zamówienia mają różne podatki, które należy zarejestrować dla przedpłaty. Płatność w postaci zaliczki od odbiorcy to transakcja, które symuluje wiersze zamówienia, tak aby odpowiedni podatek mógł zostać zarejestrowany dla kwoty w każdym wierszu.
+  -   Odbiorca dokonuje przedpłaty za zamówienie, a wiersze zamówienia mają różne podatki, które należy zarejestrować dla przedpłaty. Płatność w postaci zaliczki od odbiorcy to transakcja, które symuluje wiersze zamówienia, tak aby odpowiedni podatek mógł zostać zarejestrowany dla kwoty w każdym wierszu.
 
 W tym scenariuszu odbiorcy w pojedynczym załączniku są tym samym odbiorcą, ponieważ transakcja symuluje wiersze zamówienia odbiorcy. Zaliczka musi zostać wprowadzona w jednym załączniku, ponieważ obliczanie podatku musi nastąpić w stosunku do „wierszy” jednej płatności dokonanej przez odbiorcę.
 

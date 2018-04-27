@@ -16,16 +16,16 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee95c3d79f7f401c767b9bc8415b21369c14478b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Dodawanie analizy do obszarów roboczych za pomocą usługi Power BI Embedded
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Ta funkcja jest obsługiwana w programie Dynamics 365 for Finance and Operations (w wersji 7.2 i nowszych).
@@ -50,7 +50,7 @@ Niezależnie od tego, czy rozszerzasz istniejący obszar roboczy aplikacji, czy 
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>Dodanie pliku .pbix jako zasobu
 Przed rozpoczęciem należy utworzyć lub pozyskać raport programu Power BI, który zostanie osadzony w obszarze roboczym. Aby uzyskać więcej informacji na temat tworzenia raportów analitycznych, zobacz [Wprowadzenie do programu Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
- 
+
 Wykonaj poniższe kroki, aby dodać plik .pbix jako artefakt projektu programu Visual Studio.
 
 1. Utwórz nowy projekt w odpowiednim modelu.
@@ -63,12 +63,12 @@ Wykonaj poniższe kroki, aby dodać plik .pbix jako artefakt projektu programu V
 5. Znajdź plik .pbix zawierający definicję raportu analitycznego, a następnie kliknij przycisk **Otwórz**.
 
     ![Okno dialogowe Wybierz plik zasobów](media/analytical-workspace-select-resource.png)
-  
+
 Teraz gdy masz dodany plik .pbix jako zasób usługi Dynamics 365, można osadzać raporty w obszarach roboczych i dodawać bezpośrednie łącza do nich przy użyciu elementów menu.
 
 ## <a name="add-a-tab-control-to-an-application-workspace"></a>Dodawanie formantu karty do obszaru roboczego aplikacji
 W tym przykładzie rozszerzymy obszar roboczy **Zarządzanie rezerwacjami** w modelu Zarządzanie flotą poprzez dodanie karty **Analizy** do definicji formularza **FMClerkWorkspace**.
- 
+
 Na poniższej ilustracji widać, jak formularz **FMClerkWorkspace** wygląda w projektancie w programie Microsoft Visual Studio.
 
 ![Formularz FMClerkWorkspace przed zmianami](media/analytical-workspace-definition-before.png)
@@ -93,16 +93,16 @@ Wykonaj następujące kroki w celu rozszerzenia definicji formularza dla obszaru
 16. Kliknij prawym przyciskiem myszy, a następnie wybierz opcję **Usuń wzorzec**.
 17. Ponownie kliknij prawym przyciskiem myszy, a następnie wybierz kolejno opcje **Dodaj wzorzec** > **Obszar roboczy na kartach**.
 18. Wykonaj kompilację, aby sprawdzić działanie wprowadzonych zmian.
- 
+
 Na poniższej ilustracji widać, jak projekt wygląda po zastosowaniu tych zmian.
 
 ![Formularz FMClerkWorkspace po zmianach](media/analytical-workspace-definition-after.png)
 
 Teraz gdy masz dodane formanty formularza, które będą używany do osadzania raportu w obszarze roboczym, należy zdefiniować rozmiar formantu nadrzędnego, aby zmieścił układ. Domyślnie w raporcie będą widoczne strony **Okienko filtrów** i **Karta**. Można jednak zmienić widoczność tych formantów zgodnie z potrzebami docelowego odbiorcy raportu.
- 
+
 > [!NOTE]
 > W przypadku osadzonych obszarów roboczych zalecamy, aby dla zachowania spójności za pomocą rozszerzeń ukryć strony **Okienko filtrów** i **Karta**.
- 
+
 Zadanie rozszerzania definicji formularza raportu zostało zakończone. Aby uzyskać więcej informacji o używaniu rozszerzeń do wprowadzania dostosowań, zobacz [Dostosowywanie: Nakładanie i rozszerzenia](../extensibility/customization-overlayering-extensions.md).
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Dodawanie logiki biznesowej języka X++ w celu osadzenia formantu podglądu
@@ -169,12 +169,13 @@ public static void initializeReportControl(
 
 #### <a name="parameters"></a>Parametry
 
-| Nazwisko | opis |
-|---|---|
-| resourceName | Nazwa zasobu .pbix. |
-| formGroupControl | Formant grupy formularzy, do którego ma zostać zastosowany formant raportu narzędzia Power BI. |
-| defaultPageName | Domyślna nazwa strony. |
-| showFilterPane | Wartość logiczna wskazująca, czy okienko filtrów powinno być wyświetlane (**true**), czy ukryte (**false**). |
-| showNavPane | Wartość logiczna wskazująca, czy okienko nawigacji powinno być wyświetlane (**true**), czy ukryte (**false**). |
-| defaultFilters | Domyślne filtry raportu programu Power BI. |
+|       Nazwisko       |                                                              opis                                                               |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|   resourceName   |                                                    Nazwa zasobu .pbix.                                                     |
+| formGroupControl |                                    Formant grupy formularzy, do którego ma zostać zastosowany formant raportu narzędzia Power BI.                                     |
+| defaultPageName  |                                                         Domyślna nazwa strony.                                                         |
+|  showFilterPane  |   Wartość logiczna wskazująca, czy okienko filtrów powinno być wyświetlane (<strong>true</strong>), czy ukryte (<strong>false</strong>).   |
+|   showNavPane    | Wartość logiczna wskazująca, czy okienko nawigacji powinno być wyświetlane (<strong>true</strong>), czy ukryte (<strong>false</strong>). |
+|  defaultFilters  |                                              Domyślne filtry raportu programu Power BI.                                              |
+
 

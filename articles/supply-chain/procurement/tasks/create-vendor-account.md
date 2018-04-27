@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-vendor-account"></a>Utworzenie konta dostawcy
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano, jak utworzyć konto dostawcy oraz dodać informacje adresowe i kontaktowe. Procedura nie pokazuje sposobu wypełnienia wszystkich pól do celów zakupowych i finansowych. Aby uzyskać więcej informacji o tych polach, przeczytaj ich opisy. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Konta dostawców są zwykle tworzone przez pracownika działu zaopatrzenia lub personel działu rozrachunków z odbiorcami.
 

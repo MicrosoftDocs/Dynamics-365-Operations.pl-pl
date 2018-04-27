@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-journal-entry-using-a-template"></a>Tworzenie wpisu w arkuszu za pomocą szablonu
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Zaksięgowane arkusze załączników mogą być zapisywane jako szablony załączników i stosowane w nowych załącznikach arkuszy. Ta procedura wykorzystuje firmę demonstracyjną USMF.
 
