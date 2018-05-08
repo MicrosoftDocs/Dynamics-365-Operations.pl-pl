@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="configure-credit-card-processing"></a>Konfigurowanie przetwarzania karty kredytowej
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ta procedura zawiera instruktaż wyświetlania listy dostawców płatności i konfigurowania konta płatności dla rozrachunków z odbiorcami. Procedura używa danych firmy demonstracyjnej USRT i jest przeznaczona dla administratorów oraz specjalistów IT.
 

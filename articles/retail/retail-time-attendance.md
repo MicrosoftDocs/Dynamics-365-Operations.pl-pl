@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="retail-time-and-attendance"></a>Czas i frekwencja w handlu detalicznym
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W tym temacie opisano scenariusze obsługiwane w zakresie zarządzania czasem i frekwencją w module Microsoft Dynamics 365 for Retail. 
 

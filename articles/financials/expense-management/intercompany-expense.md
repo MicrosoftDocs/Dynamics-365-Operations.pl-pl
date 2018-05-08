@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="intercompany-expenses"></a>Wydatki międzyfirmowe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Pracownik zatrudniony przez jedną firmę w organizacji może wykonywać pracę dla innej firmy w tej samej organizacji. W takiej sytuacji można użyć funkcji wydatków międzyfirmowych w celu przypisania wydatków pracownika do firmy, dla której wykonano pracę. Firma zatrudniająca pracownika nosi nazwę firmy wypożyczającej. Firma, dla której pracownik ponosi wydatki nosi nazwę firmy pożyczającej. 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="batch-balancing"></a>Bilansowanie partii
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano, jak jest obsługiwany proces równoważenia partii. 
 

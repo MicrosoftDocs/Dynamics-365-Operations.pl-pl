@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="activate-a-production-flow-version"></a>Uaktywnianie wersji przepływu produkcji
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Zanim będzie można tworzyć zadania w systemie Kanban i przetwarzać działania dla wersji przepływu produkcji, należy aktywować wersję przepływu. Zgodnie z najlepszymi praktykami należy uaktywnić wersję przed upływem daty i godziny wejścia w życie. Aby wykonać to zadanie, trzeba mieć wersję przepływu produkcji o stanie Wersja robocza, co pozwoli uaktywnić wersję. 
 

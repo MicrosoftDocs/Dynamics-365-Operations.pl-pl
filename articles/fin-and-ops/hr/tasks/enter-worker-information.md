@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="enter-worker-information"></a>Wprowadzanie informacji o pracowniku
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Gdy osoba rekrutująca utworzy projekt zatrudnienia grupowego i wygeneruje stanowiska, następnym krokiem jest wprowadzanie informacji o zatrudnianych pracownikach. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Dane demonstracyjne zawierają otwarty projekt zatrudnienia grupowego. Aby rozpocząć tę procedurę, wybierz kolejno opcje Zasoby ludzkie > Rekrutacja > Projekty zatrudnienia grupowego.
 

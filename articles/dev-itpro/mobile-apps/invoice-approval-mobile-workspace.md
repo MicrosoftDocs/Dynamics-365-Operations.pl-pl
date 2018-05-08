@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="invoice-approvals-mobile-workspace"></a>Mobilny obszar roboczy Zatwierdzenia faktur
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Zatwierdzenia faktur**. Ten obszar roboczy wyświetla listę faktur, które zostały Ci przypisane przez proces przepływu pracy nagłówków faktur od dostawców. 
 

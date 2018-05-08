@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="activity-based-subcontracting"></a>Podwykonawstwo działań
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano szczegółowo, jak używać działań podwykonawczych w przepływie produkcji dla produkcji oszczędnej.
 

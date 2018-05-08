@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="modify-reporting-relationships-for-a-position"></a>Modyfikowanie relacji zależności służbowych
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób zmiany relacji zależności służbowej dla pracownika. Relacja zależności służbowej może służyć do kierowania dokumentów przez przepływ pracy. W procedurze również pokazano sposób przypisywania pracownika do dodatkowych hierarchii. Na przykład pracownik może być częścią zespołu projektu z nieformalną relacją podlegania kierownikowi projektu. Na stanowisku można zdefiniować dodatkowe relacje służbowe, aby uwzględnić różne scenariusze projektowe lub macierzowe. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

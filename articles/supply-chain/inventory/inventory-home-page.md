@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-management"></a>Zarządzanie zapasami 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Funkcja Zarządzanie zapasami umożliwia wykonywanie następujących zadań:
 

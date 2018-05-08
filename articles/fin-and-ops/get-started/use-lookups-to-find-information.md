@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-lookups-to-find-information"></a>Używanie odnośników do znajdowania informacji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W programie Microsoft Dynamics 365 for Finance and Operations wiele pól ma odnośniki (służące do wyszukiwania), które bardzo ułatwiają znajdowanie poprawnych lub żądanych wartości. W funkcjonalności odnośników wprowadzono szereg ulepszeń, które zwiększają użyteczność tych formantów i w efekcie wydajność pracy użytkowników. W tym temacie dowiesz się więcej o tych nowych funkcjach odnośników i otrzymasz pomocne wskazówki dotyczące ich optymalnego wykorzystywania w systemie.  
 

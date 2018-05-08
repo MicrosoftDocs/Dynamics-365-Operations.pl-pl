@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reimburse-customers"></a>Zwroty do odbiorców
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule wyjaśniono, jak tworzyć transakcje zwrotu nadpłaty dla grupy odbiorców. Jeśli odbiorca ma saldo dodatnie, można zwrócić mu wartość salda. 
 

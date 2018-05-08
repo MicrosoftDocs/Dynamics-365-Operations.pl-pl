@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="correct-a-free-text-invoice"></a>Korekta faktury niezależnej
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule wyjaśniono, jak poprawić zaksięgowaną fakturę niezależną i wystawić ją ponownie jako skorygowaną fakturę.
 

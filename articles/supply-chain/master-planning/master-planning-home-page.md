@@ -29,7 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Planowanie główne — strona główna
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Zgodnie z zamysłem planowanie główne umożliwia firmom określanie i bilansowanie przyszłego zapotrzebowania na surowce i zdolności produkcyjne do realizacji celów firmy. Funkcja planowania głównego przeprowadza ocenę następujących elementów: 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-new-product-lifecycle-state"></a>Tworzenie nowego stanu cyklu życia produktu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób tworzenia nowego stanu cyklu życia produktu. Stan cyklu życia produktu dokumentuje stan cyklu życia zwolnionego produktu lub wariantu produktu. Stany cyklu życia produktu są definiowane przez użytkownika, zazwyczaj menedżera produktu lub menedżera danych głównych produktu. Na określone procesy biznesowe, na przykład planowanie główne, ma wpływ określony stan cykl życia.
 

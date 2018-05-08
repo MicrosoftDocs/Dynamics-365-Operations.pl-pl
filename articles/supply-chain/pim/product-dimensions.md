@@ -29,9 +29,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-dimensions"></a>Wymiary produktu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [Retail name](../includes/retail-name.md)]
+[!include [Retail name](../includes/retail-name.md)]
 
 Istnieją cztery wymiary produktu — Kolor, Konfiguracja, Rozmiar i Styl. Wymiary produktu łączy się w grupy wymiarów, a następnie przypisuje grupy wymiarów do produktów głównych. Kombinacje wymiarów produktu decydują o definicjach wariantów produktu.
 

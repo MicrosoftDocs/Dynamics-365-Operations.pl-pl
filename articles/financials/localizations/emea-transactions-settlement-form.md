@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a>Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o stronie Transakcje w rozliczeniu dla odbiorców i dostawców.
 

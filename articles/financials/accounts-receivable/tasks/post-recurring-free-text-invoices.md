@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Generowanie i księgowanie cyklicznych faktur niezależnych
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Faktury cykliczne są używane do fakturowania odbiorców regularnie na tę samą kwotę. To nagranie wykorzystuje firmę demonstracyjną USMF. To nagranie jest przeznaczone dla osoby, która odpowiada za zarządzanie i przetwarzanie faktur dla odbiorców.
 

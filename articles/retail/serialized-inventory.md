@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="pos-improvements-for-serialized-products"></a>Ulepszenie punktu sprzedaży dla produktów seryjnych
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Przegląd 
 Na podstawie ustawień w module Centrala sieci sprzedaży produkty można sklasyfikować jako seryjne lub nieseryjne. Jeżeli produkty są seryjne, do każdej pozycji można przypisać unikatowy numer ułatwiający śledzenie gwarancji, śledzenie pozycji i potwierdzenie własności. Mimo że możliwość podania numerów seryjnych dla produktów seryjnych była dostępna w aplikacji Modern/Cloud Point of Sale (POS), dodano ulepszenia zapewniające kasjerom oszczędność czasu i zwiększenie wydajności pracy.  

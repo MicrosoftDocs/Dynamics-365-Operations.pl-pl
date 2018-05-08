@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="report-as-finished-to-a-plate-controlled-location"></a>Zgłaszanie wyrobów jako gotowych w lokalizacji kontrolowanej przez numer identyfikacyjny 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ten przewodnik po zadaniach zawiera przykład zgłaszania wyrobu gotowego do lokalizacji, która nie jest kontrolowana przez numer identyfikacyjny. Warunkiem wstępnym tego zadania jest istnienie odpowiedniej zasady pracy. Poprzedni przewodnik po zadaniach pokazywał konfigurację zasady pracy. Ten przewodnik po zadaniach wymaga aplikacji Dynamics AX w wersji 7.0.1 lub nowszej.
 

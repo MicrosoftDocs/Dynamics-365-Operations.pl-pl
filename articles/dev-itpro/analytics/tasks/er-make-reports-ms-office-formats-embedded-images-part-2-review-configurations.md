@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images"></a>Przeglądanie konfiguracji w celu tworzenia raportów w formatach pakietu Microsoft Office z osadzonymi obrazami
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Aby wykonać te kroki, należy najpierw wykonać kroki z przewodnika po zadaniu „ER Tworzenie raportów w formatach programu MS Office z osadzonymi obrazami (Część 1: Konfigurowanie parametrów)”.
 

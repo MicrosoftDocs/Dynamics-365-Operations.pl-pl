@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Zaawansowane opcje formatowania w raportowaniu finansowym
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Podczas tworzenia raportu w module raportowania finansowego są dostępne dodatkowe funkcje formatowania, włącznie z filtrami wymiarów, ograniczeniami kolumn i jednostek sprawozdawczych, wierszami niedrukowanymi i instrukcjami IF/THEN/ELSE w obliczeniach. 
 

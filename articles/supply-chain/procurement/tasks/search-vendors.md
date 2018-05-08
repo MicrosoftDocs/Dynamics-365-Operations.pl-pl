@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="search-for-vendors"></a>Szukanie dostawców
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Naucz się wyszukiwać dostawców na podstawie określonych kryteriów. W tym przykładzie przedstawiono sposób wyszukiwania dostawców, którzy są zatwierdzeni dla określonej kategorii zaopatrzenia i mają adres podstawowy w określonym kraju. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. To zadanie jest zazwyczaj wykonywane przez pracownika działu zaopatrzenia.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="project-timesheets-on-a-mobile-device"></a>Karty czasu pracy projektów na urządzeniu przenośnym
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 # <a name="overview"></a>Przegląd
 

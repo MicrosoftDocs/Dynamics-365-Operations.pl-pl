@@ -28,7 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="procurement-and-sourcing-overview"></a>Omówienie zaopatrzenia i sourcingu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie funkcji dostępnych w module Zaopatrzenie i sourcing.
 

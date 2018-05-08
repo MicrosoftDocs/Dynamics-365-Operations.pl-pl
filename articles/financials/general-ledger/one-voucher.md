@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="one-voucher"></a>Pojedynczy załącznik
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  Ta funkcja w będzie dostępna w programie Dynamics 365 for Finance and Operations w wersji 8.0, która zostanie opublikowana wiosną 2018 roku.   

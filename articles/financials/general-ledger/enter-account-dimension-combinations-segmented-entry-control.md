@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Wpisywanie kombinacji wymiarów i kont (formant Wpis podzielony na segmenty)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera opis sposobów wprowadzania kombinacji kont i wymiarów albo kont księgowych. Narzędzie wprowadzania często jest nazywane formantem wpisów podzielonych na segmenty.
 

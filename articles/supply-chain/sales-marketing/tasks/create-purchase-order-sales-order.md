@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Tworzenie zamówienia zakupu na podstawie zamówienia sprzedaży
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura pokazuje, jak utworzyć zamówienie zakupu oparte na zamówieniu sprzedaży. Ilości produktów w zamówieniu zakupu są następnie przeznaczane do zaspokojenia zapotrzebowania w źródłowym zamówieniu sprzedaży. Ten sposób realizacji zapotrzebowania sprzedaży stanowi alternatywę dla bardziej kompleksowej i zoptymalizowanej metody Planowanie wymagań dystrybucji. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
 

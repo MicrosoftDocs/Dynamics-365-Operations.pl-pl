@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="absence-registration-in-time-and-attendance"></a>Rejestracja nieobecności w module Czas i frekwencja
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano koncepcję nieobecności i wyjaśniono sposób obsługi nieobecności w module Czas i frekwencja.
 

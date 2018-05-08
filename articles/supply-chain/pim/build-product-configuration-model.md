@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="build-a-product-configuration-model"></a>Budowanie modelu konfiguracji produktu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Konieczność konfigurowania produktów spełniających specjalne oczekiwania coraz częściej jest normą, a nie wyjątkiem, zarówno w relacjach między firmami, jak i między firmą a konsumentem.
 

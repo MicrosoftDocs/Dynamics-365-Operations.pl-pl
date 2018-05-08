@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="personal-expenses-on-an-expense-report"></a>Wydatki osobiste w raporcie wydatków
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Podczas podróży służbowej pracownik może czasami obciążać firmową kartę kredytową swoimi osobistymi wydatkami. Jeśli nie zdefiniujesz procesu obsługi wydatków osobistych, proces zatwierdzania raportów z wydatków może zostać zakłócony, gdy pracownicy składają szczegółowe raporty z wydatków. 
 

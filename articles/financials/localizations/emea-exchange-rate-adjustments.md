@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="exchange-rate-adjustments"></a>Korekty kursów wymiany
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o funkcji korekty kursu wymiany przeznaczonej dla użytkowników w firmach w Estonii, na Węgrzech, w Czechach, na Łotwie, na Litwie, w Polsce i w Rosji.
 

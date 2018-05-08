@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-legal-entity"></a>Tworzenie firmy
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Firma to organizacja, która jest identyfikowana przez rejestrację urzędową. Firmy mogą zawierać umowy i wymaga się od nich przygotowywania zestawień na temat ich wydajności. Poniżej znajduje się procedura wyjaśniająca tworzenie firmy. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

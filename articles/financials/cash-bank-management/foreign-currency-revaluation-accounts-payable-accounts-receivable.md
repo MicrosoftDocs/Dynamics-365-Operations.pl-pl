@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Wahania kursów wymiany powodują, że wartość teoretyczna (wartość księgowa) otwartych transakcji w walutach obcych zmienia się w czasie. Ten artykuł zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami. 
 

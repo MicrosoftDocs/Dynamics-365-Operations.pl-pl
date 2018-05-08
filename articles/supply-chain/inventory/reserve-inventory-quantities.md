@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reserve-inventory-quantities"></a>Rezerwowanie ilości zapasów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano różne dostępne opcje rezerwowania zapasów.
 

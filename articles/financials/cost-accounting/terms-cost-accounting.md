@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="cost-accounting-terminology"></a>Terminologia z dziedziny rachunku kosztów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano kluczowe pojęcia używane w rachunku kosztów.
 

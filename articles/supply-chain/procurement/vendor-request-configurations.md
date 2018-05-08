@@ -25,7 +25,7 @@ ms.lasthandoff: 02/08/2018
 ---
 
 # <a name="vendor-request-configurations"></a>Konfiguracje wniosku o nowego dostawcę
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Aby utworzyć wniosek o nowego dostawcę, osoba kontaktowa dostawcy musi ukończyć kreatora rejestracji potencjalnego dostawcy.
 

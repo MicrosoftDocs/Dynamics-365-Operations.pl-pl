@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Definiowanie zasad inspekcji dla dokumentów źródłowych
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób konfigurowania i uruchamiania reguł inspekcji. W przykładzie użyto raportów z wydatków hotelowych. Ta procedura wykorzystuje firmę demonstracyjną USMF. Rola audytora zawiera odpowiednie uprawnienia niezbędne do wykonania tych zadań.
 

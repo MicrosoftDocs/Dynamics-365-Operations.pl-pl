@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-preliminary-budget-for-public-sector"></a>Tworzenie wstępnego budżetu dla sektora publicznego
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Można utworzyć wpisy do rejestru budżetu wstępnego dla konkretnego modelu budżetu i wartości wymiarów. Po zatwierdzeniu rzeczywistego budżetu można utworzyć wpisy do rejestru budżetu pierwotnego. Ta procedura została utworzona za pomocą danych firmy demonstracyjnej PSUS z sekcji sektora publicznego.
 

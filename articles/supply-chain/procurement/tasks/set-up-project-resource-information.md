@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-project-resource-information"></a>Konfigurowanie informacji o zasobach projektu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób konfigurowania zasobu projektu. W tym zadaniu jest wykorzystywany zestaw danych firmy USMF.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="replenishment"></a>Uzupełnianie zapasów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano strategie uzupełniania zapasów, które są dostępne dla magazynów używających funkcji dostępnych w module Zarządzanie magazynem. Informacje w tym temacie nie mają zastosowania do aplikacji magazynowej dostępnej w module Zarządzanie zapasami.
 

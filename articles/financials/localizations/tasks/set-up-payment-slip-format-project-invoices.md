@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>Konfigurowanie formatu dokumentu płatności dla faktur projektu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Firmy zazwyczaj dołączają drukowane dokumenty płatności do faktur, aby pomóc klientom i dostarczyć referencyjne informacje płatnicze na potrzeby księgowania i rozliczania. Dokument płatności mogą towarzyszyć nie tylko fakturom sprzedaży i fakturom niezależnym, ale także fakturom za projekty i usługi, ponagleniom, notom odsetkowym i wyciągom z konta. Aby przetwarzać dokumenty płatności, należy najpierw skonfigurować numer identyfikacyjny wierzyciela oraz formaty załączanych dokumentów płatności.
 

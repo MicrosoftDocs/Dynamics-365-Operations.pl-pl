@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Podstawy alokacji 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Podstawa alokacji stanowi bazę, w oparciu o którą moduł Rachunek kosztów przydziela koszty ogólne. Podstawą alokacji może być ilość, np. używana liczba roboczogodzin, zużywana liczba kilowatogodzin (kWh) lub zajmowana powierzchnia (w stopach lub metrach kwadratowych). Podstawy alokacji przeważnie są używane do przypisywania kosztów ogólnych do wytwarzanych zapasów. Na przykład dział IT alokuje swoje wydatki według liczby komputerów używanej w poszczególnych działach.
 

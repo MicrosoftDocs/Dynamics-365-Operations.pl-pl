@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="registration-ids"></a>Identyfikatory rejestracji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o konfigurowaniu i używaniu identyfikatorów rejestracyjnych.
 

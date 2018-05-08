@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a>Tworzenie i przypisywanie zasady zachowania kosztów do jednostki kontroli kosztów
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Zachowanie kosztów to sklasyfikowanie kosztów jako stałe lub zmienne. Aby zasada weszła w życie, sama zasada i odpowiednie reguły muszą być przypisane do jednostki kontroli kosztów. Ta procedura służy do tworzenia zasady, a następnie jej przypisywania do jednostki kontroli kosztów.
 

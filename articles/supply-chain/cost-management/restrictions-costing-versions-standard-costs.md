@@ -30,7 +30,7 @@ ms.lasthandoff: 01/17/2018
 
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>Ograniczenia dotyczące wersji wyceny opartej na kosztach standardowych.
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano ograniczenia mające zastosowanie do wersji wyceny kosztów standardowych. 
 

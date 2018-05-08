@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="formula-designer"></a>Projektant formuł
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak używać projektanta formuł do analizowania formuł i zarządzania nimi w widoku drzewa.
 

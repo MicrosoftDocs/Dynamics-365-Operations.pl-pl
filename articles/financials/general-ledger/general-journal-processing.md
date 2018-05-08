@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="general-journal-processing"></a>Przetwarzanie arkuszy finansowych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł opisuje funkcje programu Microsoft Dynamics 365 for Finance and Operations, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli.  
 

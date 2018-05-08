@@ -24,7 +24,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>Projektowanie konfiguracji do generowania raportów w formacie programu Microsoft Word na potrzeby raportowania elektronicznego (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W poniższych krokach wyjaśniono, jak użytkownik posiadający rolę Administrator systemu lub Deweloper raportowania elektronicznego może tak skonfigurować formaty raportowania elektronicznego (ER), aby raporty były generowane jako pliki programu Microsoft Word. Kroki można wykonać na danych firmy GBSI.
 

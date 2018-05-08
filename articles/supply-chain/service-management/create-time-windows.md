@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="create-time-windows"></a>Tworzenie okien czasowych   
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Okna czasu umożliwiają optymalizowanie planowania wierszy zleceń serwisowych.
 

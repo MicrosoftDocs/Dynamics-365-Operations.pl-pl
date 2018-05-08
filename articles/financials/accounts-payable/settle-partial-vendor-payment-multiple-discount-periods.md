@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Rozliczenie płatności częściowej dostawcy, która ma wiele okresów rabatu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł prowadzi przez scenariusz, w którym jest dokonywanych wiele częściowych płatności do dostawcy oferującego wiele różnych rabatów gotówkowych. 
 

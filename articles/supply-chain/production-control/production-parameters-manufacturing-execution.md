@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="production-parameters-in-manufacturing-execution"></a>Parametry produkcji w module Wykonywanie produkcji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o ustawieniach parametrów produkcji w module Wykonywanie produkcji.
 

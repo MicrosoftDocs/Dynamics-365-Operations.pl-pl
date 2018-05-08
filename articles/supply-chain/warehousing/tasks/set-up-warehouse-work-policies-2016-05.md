@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-warehouse-work-policies"></a>Konfigurowanie zasad pracy magazynowej 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Procesy magazynowe nie zawsze obejmują pracę magazynową. Poprzez zdefiniowanie pracy magazynowej można zablokować tworzenie pracy pobierania surowców i odkładania wyrobów gotowych dla zbioru produktów w określonych lokalizacjach. Dane wykorzystane do stworzenia tego nagrania pochodzą z firmy demonstracyjnej USMF. Ten przewodnik po zadaniach wymaga aplikacji Dynamics AX w wersji 7.0.1 lub nowszej.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a>Tworzenie wymiarów finansowych dla rejestrów punktu sprzedaży i konfigurowanie wartości wymiarów z rejestrów
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ta procedura prowadzi przez proces tworzenia wymiarów finansowych dla kas w punkcie sprzedaży (POS) i pokazuje, jak konfigurować wartości wymiarów finansowych w kasach. Procedura nie ma innych czynności pokrewnych, takich jak tworzenie zestawów wymiarów i struktur kont. Te zadania znajdują się w innych artykułach. To nagranie wykorzystuje firmę demonstracyjną USRT.
 

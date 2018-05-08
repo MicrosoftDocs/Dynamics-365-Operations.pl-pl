@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="retail-hierarchies"></a>Hierarchie sieci sprzedaży
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ten artykuł opisuje hierarchie sieci sprzedaży w programie Microsoft Dynamics 365 for Retail.
 

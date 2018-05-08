@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-an-existing-employee-through-recruiting"></a>Zatrudnianie istniejącego pracownika przez rekrutację
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Czasami wolne stanowiska mogą być obsadzane przez kandydatów, którzy są już pracownikami w danej organizacji. Ta procedura prowadzi przez kolejne kroki zatrudniania istniejącego pracownika za pomocą procesu rekrutacji. W tej procedurze projekt rekrutacji już skonfigurowano, a istniejący pracownik już złożył podanie o pracę w projekcie rekrutacji. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

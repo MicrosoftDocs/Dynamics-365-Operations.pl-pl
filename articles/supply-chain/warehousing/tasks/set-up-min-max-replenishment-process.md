@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób konfigurowania nowego procesu uzupełniania zapasów, który wykorzystuje strategię minimalnej/maksymalnej ilości uzupełniania. Jeśli ilość zapasów spadnie poniżej minimalnego poziomu, zostanie utworzona praca uzupełnienia lokalizacji. W procedurze pokazano również, jak używać stałych lokalizacji pobrania, aby pozwolić na uzupełnianie zapasów nawet gdy ilość zapasów spadnie poniżej minimalnego poziomu, oraz jak włączyć regularne wykonywanie procesu uzupełniania przy użyciu zadania wsadowego. Te zadania zazwyczaj wykonuje kierownik magazynu. Tę procedurę można wykonać na danych firmy demonstracyjnych USMF przy użyciu przykładowych wartości z notatek albo na faktycznych danych swojej firmy. Jeśli korzystasz z własnych danych, upewnij się, że masz magazyn, w którym włączono obsługę procesów zarządzania magazynem.
 

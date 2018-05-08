@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="close-the-general-ledger-at-period-end"></a>Zamknięcie księgi głównej na koniec okresu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano zadania, które zazwyczaj są wykonywane podczas wykonywania operacji zamknięcia okresu w księdze głównej. 
 

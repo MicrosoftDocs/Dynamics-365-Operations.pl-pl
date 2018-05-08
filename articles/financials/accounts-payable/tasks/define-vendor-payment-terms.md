@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-vendor-payment-terms"></a>Definiowanie warunków płatności dostawcy
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Konfigurowanie warunków płatności dla faktur od odbiorców. W zadaniu wykorzystano firmę demonstracyjną USMF.
 

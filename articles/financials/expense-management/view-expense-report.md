@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="view-an-expense-report"></a>Wyświetl raport z wydatków
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Podczas wykonywania zapytania mającego wyświetlić transakcji z księgi głównej lub modułu Zaopatrzenie i sourcing może zostać zwrócona zbyt duża ilość informacji. W związku warto zawęzić kryteria wyszukiwania. Aby uzyskać tylko potrzebne informacje, można przejść przez kolejne poziomy szczegółów aż do transakcji, a zobaczysz wtedy raport z wydatków, w którym transakcja została pierwotnie zaraportowana.
 

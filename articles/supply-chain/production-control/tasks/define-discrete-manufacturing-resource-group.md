@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-discrete-manufacturing-resource-group"></a>Definiowanie odrębnych grup zasobów produkcyjnych
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Grupa zasobów to zbiór zasobów operacyjnych, które zazwyczaj odpowiadają fizycznej organizacji komórek roboczych zdefiniowanej przez żółte linie w wydziale produkcji. W tej procedurze pokazano sposób definiowania grupy zasobów do wykorzystania w produkcji dyskretnej. Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
 

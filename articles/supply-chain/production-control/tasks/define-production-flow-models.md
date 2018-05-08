@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-production-flow-models"></a>Definiowanie modeli przepływu produkcji
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Modele przepływu produkcji opisują sposób obliczania i obsługi zdolności produkcyjnych komórek roboczych w produkcji oszczędnej. Dlatego zdefiniowanie modelu przepływu produkcji jest warunkiem wstępnym zdefiniowania komórek roboczych. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

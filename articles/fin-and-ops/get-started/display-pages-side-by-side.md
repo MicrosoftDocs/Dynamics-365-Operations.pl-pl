@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="display-pages-side-by-side-using-the-open-in-new-window-icon"></a>Równoległe wyświetlanie stron przy użyciu ikony Otwórz w nowym oknie
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule wyjaśniono, jak wyświetlić strony obok siebie w programie Microsoft Dynamics 365 for Finance and Operations.
 

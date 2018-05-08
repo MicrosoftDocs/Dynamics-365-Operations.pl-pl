@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-fixed-asset-groups"></a>Ustawianie grup środków trwałych
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób tworzenia nowej grupy środków trwałych. Przewodnik korzysta z roli Księgowy i danych firmy demonstracyjnej USMF.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="requests-for-quotation-rfqs"></a>Zapytanie ofertowe (ZO)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano zapytania ofertowe (ZO). Organizacje wystawiają zapytania ofertowe (ZO), kiedy chcą uzyskać od kilku dostawców konkurencyjne oferty na produkty i usługi, które muszą kupić. W ZO dostawcy są proszeni o podanie cen i terminów dostaw dla ilości towarów określonych przez użytkownika.
 Można również poprosić dostawców, aby określili, czy są jakieś dodatkowe opłaty, takie jak koszty wysyłki, albo zniżki za duże zamówienia lub szybką zapłatę faktury.

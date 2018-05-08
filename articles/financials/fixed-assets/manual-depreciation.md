@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="manual-depreciation"></a>Amortyzacja ręczna
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie metody amortyzacji Amortyzacja ręczna.
 

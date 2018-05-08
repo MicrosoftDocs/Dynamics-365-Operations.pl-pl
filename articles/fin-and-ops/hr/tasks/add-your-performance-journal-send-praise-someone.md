@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Dodawanie do swojego arkusza wydajności i wysyłanie pochwały innej osobie
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Arkusz wydajności przechowuje informacje, które odnoszą się do sposobu osiągania celów lub efektywności działania w okresie. Z arkusza można także pochwalić działania współpracownika. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.
 

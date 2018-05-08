@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-period-close-workspace"></a>Obszar roboczy zamknięcia okresu obrachunkowego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie obszaru roboczego Zamknięcie okresu obrachunkowego oraz pokrewnej konfiguracji.
 

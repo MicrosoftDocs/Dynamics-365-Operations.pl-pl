@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-configurations-to-parse-incoming-documents-for-application-data-updates-er"></a>Projektowanie konfiguracji do analizowania dokumentów przychodzących w celu aktualizacji danych aplikacji (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura przedstawia sposób projektowania konfiguracji raportowania elektronicznego (ER) do analizowania przychodzącego dokumentu elektronicznego. W tej procedurze zaimportujesz wymaganą konfigurację ER, którą utworzono dla przykładowej firmy Litware, Inc., i będziesz jej używać do analizowania przychodzących dokumentów elektronicznych. Aby wykonać kroki podane w tej procedurze, należy najpierw wykonać procedurę „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Rozliczanie płatności częściowej i płatności ostatecznej odbiorcy w całości przed datą rabatu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera scenariusze pokazujące metody rejestrowania częściowych płatności od odbiorcy oraz stosowania rabatów gotówkowych w trakcie okresu rabatu gotówkowego.
 

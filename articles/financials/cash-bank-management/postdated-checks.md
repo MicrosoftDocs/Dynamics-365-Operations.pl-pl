@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="postdated-checks"></a>Czeki postdatowane
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o obsłudze czeków postdatowanych w programie Microsoft Dynamics 365 for Finance and Operations. Czeki postdatowane są wystawiane do celów wykonywania i odbierania płatności w przyszłości. W związku z tym czeki można zrealizować dopiero od określonego dnia.
 

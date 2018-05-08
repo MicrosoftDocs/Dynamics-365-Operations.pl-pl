@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="three-way-matching-policies"></a>Trzyelementowe zasady uzgadniania
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera przykłady uzgadniania trzyelementowego.
 

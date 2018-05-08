@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-assets-integration"></a>Integracja środków trwałych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Środki trwałe mogą być zintegrowane z modułami Księga główna, Zarządzanie zapasami, Rozrachunki z odbiorcami i Rozrachunki z dostawcami. Istnieje również możliwość takiego skonfigurowania modułu Środki trwałe, aby był on zintegrowany z zamówieniami zakupu.
 

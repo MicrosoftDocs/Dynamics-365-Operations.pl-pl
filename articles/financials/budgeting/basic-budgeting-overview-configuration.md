@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budgeting-overview"></a>Omówienie budżetu 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Prawie każda firma, która używa funkcji finansowych w programie Microsoft Dynamics 365 for Finance and Operations, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w programie Finance and Operations lub ich wczytywania z innych programów.
 

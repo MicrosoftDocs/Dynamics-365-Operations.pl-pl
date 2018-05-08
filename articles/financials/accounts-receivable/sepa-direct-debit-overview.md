@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sepa-direct-debit-overview"></a>Omówienie polecenia zapłaty SEPA
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Jednolity Obszar Płatniczy w Euro (SEPA) został ustanowiony przez Komisję Europejską i decyduje o tym, że wszystkie płatności elektroniczne są uważane za krajowe, niezależnie od kraju/regionu, w którym znajdują się osoby, przedsiębiorstwa, organizacje oraz właściwy bank. Nie istnieje różnica między płatnościami krajowymi i międzynarodowymi. System SEPA obejmuje 28 państw członkowskich Unii Europejskiej (UE) oraz dodatkowo Islandię, Liechtenstein, Norwegię, Szwajcarię, Monako i San Marino. SEPA tworzy jeden rynek dla transakcji płatności w ramach europejskiego obszaru gospodarczego (EOG). Ostatecznie SEPA umożliwia zmniejszenie liczby formatów płatności, którymi operują banki, firmy i osoby prywatne.   
 

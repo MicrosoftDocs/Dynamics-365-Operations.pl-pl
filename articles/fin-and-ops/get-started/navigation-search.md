@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="navigation-search"></a>Nawigacja z wyszukiwaniem
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak za pomocą funkcji wyszukiwania przechodzić do stron w programie Microsoft Dynamics 365 for Finance and Operations.
 

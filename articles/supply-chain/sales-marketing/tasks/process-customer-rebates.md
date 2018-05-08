@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generowanie i przetwarzanie rabatów dla odbiorców
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura przedstawia sposób przetwarzania rabatów dla odbiorców na etapach od wygenerowania wniosku do przekazania ich jako naliczenia do modułu Rozrachunki z odbiorcami. Prowadzi przez kolejne fazy konkretnego przykładu w celu wyjaśnienia wpływu różnych warunków w wierszach rabatu na końcowe kwoty, które zostaną uznane dla odbiorcy. Przed rozpoczęciem zadań z przewodnika należy użyć danych firmy demonstracyjnej USMF i wykonać następujące zadania: (1) Przejdź do strony Parametry modułu rozrachunków z odbiorcami, rozwiń kartę Ceny, rozwiń kartę Szczegóły ceny i upewnij się, że opcja Włączanie szczegółów ceny ma ustawioną wartość Tak. (2) Przejdź do strony Umowy rabatowe i zaznacz umowę rabatową z odbiorcą USMF-000001. Jeśli pole Stan zatwierdzania w ramach przepływu pracy nie ma ustawionej wartości Zatwierdzone, w okienku akcji kliknij opcję Weryfikacja, aby zatwierdzić umowę.
 

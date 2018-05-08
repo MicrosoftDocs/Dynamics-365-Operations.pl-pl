@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Znajdowanie puli wykwalifikowanych kandydatów do zapełnienia wakatów może być trudne, zwłaszcza gdy stanowisko wymaga unikatowego zestawu umiejętności.  Z drugiej strony kandydaci mający niezbędne kwalifikacje mogą już być pracownikami Twojej organizacji. Można wyszukiwać określone zbiory umiejętności wśród istniejących pracowników lub nowych kandydatów. Dzięki temu osoba rekrutująca może szybko zebrać i przejrzeć dane kandydatów ubiegających się o wolne stanowisko teraz lub w przeszłości albo znaleźć potencjalnych kandydatów wśród istniejących pracowników. Z tego nagrania zadania można się dowiedzieć, jak funkcje mapowania umiejętności pomogą znaleźć właściwą osobę na wolne stanowisko. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/06/2018
 
 # <a name="ship-an-order-from-a-different-store"></a>Wysyłanie zamówienia z innego sklepu
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Funkcja Wysyłanie opłaty w rozwiązaniu Dynamics 365 for Retail umożliwia złożenie zamówień odbiorców w jednym sklepie i wysłanie ich z innego sklepu. Zamówienia odbiorców w kliencie punktu sprzedaży obsługują różne opcje realizacji. Przykłady opcji realizacji:
 -   Odbiór z tego samego sklepu w innym dniu.

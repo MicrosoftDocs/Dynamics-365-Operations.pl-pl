@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Naliczanie kosztów projektu w przyjęciach zakupów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano, jak koszty projektu naliczone z przyjęć zakupów można śledzić w programie Microsoft Dynamics 365 for Finance and Operations. 
 

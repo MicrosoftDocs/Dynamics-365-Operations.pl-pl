@@ -26,7 +26,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="actual-vs-budget-power-bi-content"></a>Pakiet zawartości usługi Power BI Wartości rzeczywiste a budżet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartość **Wartości rzeczywiste a budżet** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu. 
 

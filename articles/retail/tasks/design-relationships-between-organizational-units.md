@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-the-relationships-between-organizational-units"></a>Projektowanie relacji między jednostkami organizacyjnymi
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ta procedura prowadzi przez proces projektowania relacji między jednostkami organizacyjnymi. Przed zdefiniowaniem relacji należy utworzyć nowy cel organizacji lub skorzystać z istniejącego celu organizacji. Dane wykorzystane do wykonania tej procedury pochodzą z firmy demonstracyjnej USRT. To zadanie jest przeznaczone dla roli administratora.
 

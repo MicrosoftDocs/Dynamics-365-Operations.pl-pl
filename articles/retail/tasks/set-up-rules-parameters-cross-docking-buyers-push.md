@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="set-up-rules-and-parameters-for-cross-docking-and-buyers-push"></a>Konfigurowanie reguł i parametrów dla przeładunku komplementacyjnego i dystrybucji od kupującego
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ta procedura pokazuje kolejne kroki tworzenia reguł uzupełnienia. Reguły uzupełnienia mogą służyć do kontrolowania sposobu rozdzielania produktów do sklepów podczas korzystania z funkcji przeładunku kompletacyjnego i dystrybucji na zamówienie. Reguły uzupełnienia mogą być skonfigurowane dla sklepów lub grup sklepów. Waga zdefiniowana dla każdego wiersza w regule będzie określać sposób rozdziału ilości produktów między sklepy, jeśli reguły uzupełnienia są używane jako metoda dystrybucji w przeładunku kompletacyjnym lub dystrybucji na zamówienie. Ta procedura wykorzystuje firmę demonstracyjną USRT.
 

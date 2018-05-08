@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="create-a-customer-invoice"></a>Tworzenie faktury dla odbiorcy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 **Faktura dla odbiorcy do zamówienia sprzedaży** jest wekslem związanym ze sprzedażą i który organizacja wystawia odbiorcy. Ten typ faktury dla odbiorcy jest tworzony na podstawie zamówienia sprzedaży, które zawiera wiersze zamówienia i numery towarów. Numery towarów są określane i księgowane w księdze. Zapisy w arkuszu księgi podrzędnej nie są dostępne dla faktury dla odbiorcy do zamówienia sprzedaży. Aby uzyskać więcej informacji, zobacz [Tworzenie faktur zamówienia sprzedaży](tasks/create-sales-order-invoices.md).
 

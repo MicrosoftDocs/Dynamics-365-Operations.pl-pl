@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="assess-sales-performance-by-product"></a>Ocenianie wydajności sprzedaży według produktów
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W programie Microsoft Dynamics 365 for Retail można badać rentowności 10 najlepszych produktów. 
 

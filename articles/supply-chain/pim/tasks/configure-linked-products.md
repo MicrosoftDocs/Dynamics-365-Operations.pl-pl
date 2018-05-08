@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-linked-products"></a>Konfigurowanie połączonych produktów
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura prowadzi przez kolejne etapy konfigurowania połączonych produktów. Procedura używa danych demonstracyjnych firmy USRT i zakłada, że oba produkty zostały już utworzone i zwolnione.
 

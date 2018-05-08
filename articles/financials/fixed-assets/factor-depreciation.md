@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="factor-depreciation"></a>Amortyzacja czynnikowa
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie metody amortyzacji współczynnikowej.
 

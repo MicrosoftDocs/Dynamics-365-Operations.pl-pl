@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="150-percent-reducing-balance-depreciation"></a>150% amortyzacja degresywna
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie metody amortyzacji 150% amortyzacja degresywna.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="report-production-orders-as-finished"></a>Zgłaszanie zleceń produkcyjnych jako gotowych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Zgłoszenie wyrobów gotowych to etap produkcji. Na tym etapie produkt gotowy jest zgłaszany i przenoszony ze zlecenia produkcyjnego do zapasów.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-a-related-intercompany-voucher-from-a-journal"></a>Wyświetlanie powiązanego załącznika międzyfirmowego z arkusza
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Okno Powiązany załącznik zawiera załącznik z firmy przeciwstawnej zdefiniowany podczas księgowania transakcji międzyfirmowej z arkusza finansowego.
 

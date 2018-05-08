@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="enter-payroll-beginning-balances"></a>Wprowadzanie sald początkowych listy płac
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 W tym temacie opisano kroki wprowadzania sald początkowych dla kodów zarobków, potrąceń, świadczeń i podatków. Informacje te są przydatne dla partnerów, którzy chcą przenieść dane do nowej implementacji modułu Lista płac z innego systemu. W ramach przygotowania do wprowadzenia sald początkowych listy płac weryfikujemy następujące informacje:
 

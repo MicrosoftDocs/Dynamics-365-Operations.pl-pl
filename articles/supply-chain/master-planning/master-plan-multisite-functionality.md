@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="master-planning-and-multisite-functionality"></a>Planowanie główne a funkcjonalność wielooddziałowości
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Planowanie główne uwzględnia ustawienia wymiarów magazynowych „oddział” i „magazyn”. 
 

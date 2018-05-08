@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-advanced-rules-for-journals"></a>Tworzenie reguł zaawansowanych dla arkuszy
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura prowadzi przez proces tworzenia zaawansowanych reguł dla arkuszy. Obejmuje skonfigurowanie kontroli arkusza i ograniczeń księgowania dla użytkowników. Procedura wykorzystuje dane firmy demonstracyjnej USMF.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="calculations-for-product-configuration-models-faq"></a>Obliczenia dla modeli produktu w konfiguracji — często zadawane pytania
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano obliczenia dla modeli konfiguracji produktu i wyjaśniono sposób korzystania z obliczeń wraz z ograniczeniami.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>Informacje wykorzystywane w obliczeniach na potrzeby BOM z użyciem kosztów standardowych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W obliczeniach listy składowej (BOM) są wykorzystywane dane z różnych źródeł w celu obliczenia kosztów standardowych wytwarzanego towaru. Źródła zawierają informacje o towarach, marszrutach, formułach obliczania kosztów pośrednich i wersjach wyceny.
 

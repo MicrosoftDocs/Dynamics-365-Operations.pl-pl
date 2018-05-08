@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania jak i gdzie praca jest wykonywana w magazynie.
 

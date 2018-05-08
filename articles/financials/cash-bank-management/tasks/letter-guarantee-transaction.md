@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="letter-of-guarantee-transaction"></a>Transakcja poręczenia
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura poprowadzi przez proces tworzenia poręczenia.
 

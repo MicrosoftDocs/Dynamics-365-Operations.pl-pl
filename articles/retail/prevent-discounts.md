@@ -29,7 +29,7 @@ ms.lasthandoff: 10/24/2017
 
 # <a name="prevent-discounts-for-retail-products"></a>Blokowanie rabatów na produkty detaliczne
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Istnieją różne powody, dla których sprzedawcy detaliczni chcą uniemożliwiać stosowanie rabatów do niektórych produktów — poprzez promocję albo podczas sprzedaży w punkcie sprzedaży.
 

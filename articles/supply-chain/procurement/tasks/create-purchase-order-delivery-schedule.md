@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Tworzenie zamówienia zakupu z harmonogramem dostaw
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób tworzenia harmonogramu dostaw dla zamówienia zakupu. Harmonogram dostaw jest używany w reakcji na żądanie dostarczenia ilości z zamówienia lub arkusza w kilku dostawach. Przykład zawarty w tym przewodniku można wykonać na danych firmy demonstracyjnej USMF. Zazwyczaj procedurę wykonuje pracownik działu zakupów.
 

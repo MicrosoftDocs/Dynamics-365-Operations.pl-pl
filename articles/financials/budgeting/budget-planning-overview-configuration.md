@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="budget-planning-overview"></a>Przegląd planowania budżetu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera wprowadzenie do koncepcji planowania budżetu oraz informacje pomocne w konfigurowaniu planowania budżetu i odnośnych procesów.
 

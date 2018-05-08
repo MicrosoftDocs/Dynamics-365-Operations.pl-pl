@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Rozliczanie płatności częściowej dostawcy przed datą rabatu z ostateczną datą płatności po dacie rabatu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł prowadzi przez scenariusz, w którym jest dokonywanych wiele płatności częściowych — niektóre w okresie rabatu gotówkowego, a inne poza okresem rabatu gotówkowego.
 

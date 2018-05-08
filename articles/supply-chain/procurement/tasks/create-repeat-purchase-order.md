@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-repeat-purchase-order"></a>Tworzenie zamówienia powtórnego zakupu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano, jak utworzyć powtarzalne zamówienie zakupu poprzez skopiowanie wierszy z wcześniejszego dokumentu zamówienia zakupu do nowego lub istniejącego zamówienia zakupu. Istnieją dwie metody tworzenia powtarzalnych zamówień. Można użyć akcji dostępnych na poziomie dokumentu w okienku akcji albo akcji dostępnych na poziomie szczegółów wiersza. Akcje na poziomie dokumentu są przeznaczone głównie do tworzenia nowego zamówienia zakupu przez dodanie wierszy i informacji nagłówka z innego zamówienia, podczas gdy akcje na poziomie szczegółów wiersza służą głównie do dodawania wierszy do istniejącego zamówienia. Przykład zawarty w tym przewodniku można wykonać na danych firmy demonstracyjnej USMF. To zadanie zazwyczaj wykonuje pracownik działu zakupów.
 

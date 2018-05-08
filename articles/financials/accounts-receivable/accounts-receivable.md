@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="accounts-receivable-home-page"></a>Rozrachunki z odbiorcami — strona główna
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Moduł Rozrachunki z odbiorcami umożliwia śledzenie faktur dla odbiorców oraz płatności przychodzących. 
 

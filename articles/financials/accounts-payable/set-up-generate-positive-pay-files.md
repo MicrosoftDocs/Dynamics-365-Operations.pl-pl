@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-and-generate-positive-pay-files"></a>Konfigurowanie i generowanie plików płatności dodatnich
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule wyjaśniono, jak konfigurować płatności dodatnie i generować pliki płatności dodatnich. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Rejestrowanie i księgowanie czeku postdatowanego dla odbiorcy
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Można rejestrować szczegóły czeku postdatowanego otrzymanego od odbiorcy. Można także zaksięgować postdatowany czek i wygenerować transakcje finansowe.   Przed zarejestrowaniem i zaksięgowaniem postdatowanego czeku otrzymanego od odbiorcy należy wykonać następujące zadania:   • Konfigurowanie czeku postdatowanego na stronie Zarządzanie gotówką i bankami • Konfigurowanie metody płatności dla czeków postdatowanych   Rolą w tej procedurze jest Skarbnik. Ta procedura wykorzystuje firmę demonstracyjną USMF.
 

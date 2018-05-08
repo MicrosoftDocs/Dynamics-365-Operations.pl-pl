@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="set-up-positions"></a>Konfigurowanie stanowisk
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Pozycje są ważnym elementem dla niższego poziomu hierarchii organizacji. Pozycja jest pojedynczym wystąpieniem zadania. Na przykład stanowisko „Menedżer ds. sprzedaży (Wschód)” jest jednym ze stanowisk skojarzonych z zadaniem „Menedżer ds. sprzedaży”. Stanowisko istnieje w dziale i może być z nim powiązany tylko jeden pracownik. W tym zadaniu pokażemy kroki wymagane do utworzenia stanowiska. Ta procedura jest przeznaczona dla specjalistów ds. zasobów ludzkich.
 

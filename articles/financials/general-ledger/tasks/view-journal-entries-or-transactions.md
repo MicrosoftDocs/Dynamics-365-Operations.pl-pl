@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="view-journal-entries-or-transactions"></a>Wyświetlanie wpisów w arkuszu lub transakcji
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób używania zapytań o transakcje w załącznikach w celu wyszukiwania wpisów w arkuszu lub transakcji.
 

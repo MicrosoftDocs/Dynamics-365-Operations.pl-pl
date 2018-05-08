@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-a-production-flow-version"></a>Tworzenie nowej wersji przepływu produkcji
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura skupia się na tworzeniu nowej wersji przepływu produkcji. Aby można było wykonać tę procedurę, należy wcześniej zdefiniować parametry produkcji dla produkcji oszczędnej oraz jednostki miary dla czasu klasy. Ponadto należy zdefiniować strumień wartości i grupę produkcji. Aby uzyskać więcej informacji na temat przepływów produkcji i działań w produkcji oszczędnej, zobacz oficjalne dokumenty o produkcji oszczędnej w systemie Microsoft Dynamics AX. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

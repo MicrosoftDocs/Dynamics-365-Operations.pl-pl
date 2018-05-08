@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personnel-actions-faq"></a>Akcje dotyczące pracowników (często zadawane pytania)
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ten temat zawiera odpowiedzi na pytania, które mogą się pojawić, jeśli organizacja używa akcji dotyczących pracowników. Akcje dotyczące pracowników są to dodatkowe kroki, które należy wykonać podczas wykonywania pewnych zadań związanych z pracownikami. Przykłady zadań, które mogą wymagać akcji dotyczących pracowników to zadania podczas tworzenia nowych stanowisk, modyfikowania istniejących wartości stanowisk, zatrudniania nowych pracowników, przenoszenia pracowników, zmiany wynagrodzenia pracownika, zmiany przypisania stanowiska lub zwalniania pracowników.
 

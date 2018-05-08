@@ -29,7 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="safety-stock-fulfillment-for-items"></a>Realizacja zapasów bezpieczeństwa dla towarów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Zapas bezpieczeństwa oznacza dodatkową ilość towarów przechowywaną w zapasach w celu ograniczenia ryzyka braku dostępu towarów w magazynie. Zapas bezpieczeństwa służy jako zapas buforowy w przypadku gdy po otrzymaniu zamówień dostawca nie może dostarczyć dodatkowych towarów w celu dotrzymania wymaganej przez klienta daty wysyłki. Jeżeli zapasy bezpieczeństwa są używane do realizacji zamówienia sprzedaży, zapasy bezpieczeństwa zostaną zmniejszone. Można użyć funkcji Planowanie główne w celu automatycznego przywrócenia bezpiecznego poziomu zapasów.    
 

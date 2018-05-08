@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-data-for-product-models"></a>Przesyłanie danych dla modeli produktu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Eksportowanie danych modelu konfiguracji produktu wymaga dostępności co najmniej jednego modelu produktu. Ta procedura wykorzystuje model Głośnik o wysokiej jakości z firmy demonstracyjnej USMF, aby pokazać, jak mają być eksportowane dane dla tego modelu.
 

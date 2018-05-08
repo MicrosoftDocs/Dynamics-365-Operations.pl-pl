@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-loads-using-hub-consolidation"></a>Planowanie ładunków przy użyciu konsolidacji w centrum
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano funkcjonalność konsolidowania wysyłek w centrum, gdy towary są dostarczane z różnych magazynów do tego samego odbiorcy albo od wielu dostawców do tego samego magazynu.
 

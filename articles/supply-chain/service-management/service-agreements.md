@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-agreements"></a>Umowy serwisowe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Umowy serwisowe pozwalają definiować zasoby, które mają być używane podczas typowej wizyty serwisowej, i sposób fakturowania tych zasobów dla klienta.
 

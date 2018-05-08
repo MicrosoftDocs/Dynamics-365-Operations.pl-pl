@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-tasks"></a>Zadania serwisowe  
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Zadania serwisowe służą do opisywania zadań, które mają zostać wykonane podczas zlecenia serwisowego.
 Te informacje są widoczne zarówno dla techników, jak i klientów.

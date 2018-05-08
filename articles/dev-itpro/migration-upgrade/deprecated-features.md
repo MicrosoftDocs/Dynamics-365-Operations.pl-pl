@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="removed-or-deprecated-features"></a>Usunięte lub przestarzałe funkcje
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano funkcje, które zostały usunięte z programu Microsoft Dynamics 365 for Finance and Operations lub są przestarzałe.
 

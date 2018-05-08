@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-withholding-tax"></a>Konfigurowanie potrąconych zaliczek na podatek
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Potrącona zaliczka na podatek to podatek nałożony na dostawców, który nie powoduje utworzenia transakcji podatkowej. Potrącona zaliczka na podatek obliczana dla płatności dostawców jest zobowiązaniem. Z tego względu tylko konta bilansowe lub konta pasywów są odpowiednimi miejscami do księgowania potrąconych zaliczek na podatek. W tym przewodniku po zadaniach przedstawiono sposób konfigurowania zaliczek na podatek.
 

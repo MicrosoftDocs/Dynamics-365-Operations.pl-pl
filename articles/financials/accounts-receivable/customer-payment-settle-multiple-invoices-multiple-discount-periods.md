@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Używanie płatności odbiorcy do rozliczenia wielu faktur obejmujących wiele okresów rabatu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie przedstawiono sposób zapłaty wielu faktur, gdy każda faktura kwalifikuje się do rabatu gotówkowego. Scenariusze w tym artykule pokazują różnice w stosowanych rabatach gotówkowych zależnie od dnia uregulowania płatności.
 

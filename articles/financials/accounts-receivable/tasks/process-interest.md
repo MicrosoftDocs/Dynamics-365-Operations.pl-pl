@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="process-interest"></a>Przetwarzanie odsetek
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób tworzenia, drukowania i księgowania not odsetkowych. W zadaniu wykorzystano firmę demonstracyjną USMF.
 

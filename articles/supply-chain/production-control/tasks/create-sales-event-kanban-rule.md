@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>Tworzenie reguły Kanban dla zdarzenia sprzedaży
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura jest zorientowana na konfigurację potrzebną do utworzenia reguły Kanban uruchamianej podczas tworzenia zamówienia sprzedaży. Reguła kanban zdarzenia uzupełnia zapotrzebowania wynikające z wierszy zamówienia sprzedaży. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Procedura jest przeznaczona dla inżyniera procesu lub menedżera strumienia wartości, gdy przygotowują oni wytwarzanie nowego lub zmodyfikowanego produktu.
 

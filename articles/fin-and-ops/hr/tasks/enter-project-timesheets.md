@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="enter-project-timesheets"></a>Wprowadzanie kart czasu pracy projektu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura pozwala tworzyć karty czasu pracy, używając pustego formularza karty czasu pracy. Nowa karta czasu pracy może się opierać na informacjach z poprzedniej karty czasu pracy lub z projektów i działań przypisanych na stronie Moje ulubione. Domyślnie strona listy Wszystkie karty czasu pracy wyświetla wszystkie karty czasu pracy dla bieżącego okresu. Można użyć listy rozwijanej pola Pokaż znajdującego się na stronie Moje karty czasu pracy, aby wyfiltrować listę kart czasu pracy według okresu lub projektu lub wyświetlić grafiki utworzone w imieniu innych pracowników. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USSI. Aby rozpocząć tę procedurę, wybierz kolejno opcje Zarządzanie projektami i ich księgowanie > Karty czasu pracy > Moje karty czasu pracy.
 

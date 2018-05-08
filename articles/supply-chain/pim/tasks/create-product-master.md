@@ -24,7 +24,7 @@ ms.lasthandoff: 10/25/2017
 ---
 # <a name="create-a-product-master"></a>Tworzenie produktu głównego
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Utwórz produkt główny dla wstępnie zdefiniowanych wariantów. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Ta procedura jest przeznaczona dla projektanta produktów.
 

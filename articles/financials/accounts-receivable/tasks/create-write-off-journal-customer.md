@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-write-off-journal-for-a-customer"></a>Tworzenie arkusza odpisów dla odbiorcy
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tym przewodniku po zadaniach zostanie pokazany sposób konfigurowania parametrów odpisów i następnie transakcji odpisu ze stron Windykacja, Otwarte faktury odbiorcy i Odbiorca. W zadaniu wykorzystano firmę demonstracyjną USMF.
 

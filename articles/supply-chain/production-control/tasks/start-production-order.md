@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="start-a-production-order"></a>Rozpoczynanie zlecenia produkcyjnego
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura pokazuje sposób rozpoczynania zlecenia produkcyjnego na wydziale produkcji. W tym procesie jest zgłaszane zużycie materiału i czasu. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Jest to piąta z siedmiu procedur, które wyjaśniają cykl życia zlecenia produkcyjnego.
 

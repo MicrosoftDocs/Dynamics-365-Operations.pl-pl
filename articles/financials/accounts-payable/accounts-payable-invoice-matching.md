@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounts-payable-invoice-matching"></a>Uzgadnianie faktur rozrachunków z dostawcami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Uzgadnianie faktur rozrachunków z dostawcami jest procesem uzgadniania obejmującym informacje z faktury dostawcy, zamówienia zakupu i przyjęć produktów.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definiowanie klientów, rejestrów i stacji sprzętowych w kanale oraz zarządzanie nimi
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ten temat omawia sposób podłączania urządzeń peryferyjnych do komputera z wystąpieniem aplikacji Retail POS.
 

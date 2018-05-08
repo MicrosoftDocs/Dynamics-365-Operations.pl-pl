@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning"></a>Planowanie budżetu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Celem tego warsztatu jest praktyczne zaprezentowanie aktualizacji funkcji programu Microsoft Dynamics 365 for Finance and Operations w obszarze planowania budżetu. Zilustrowaliśmy przykład krótkiej konfiguracji modułu planowania budżetu oraz pokazaliśmy, jak przy użyciu tej konfiguracji można planować budżet.  Ten warsztat dotyczy głównie następujących procesów lub zadań biznesowych:  - Tworzenie hierarchii organizacyjnej na potrzeby planowania budżetu i konfigurowania zabezpieczeń użytkownika  - Definiowanie scenariuszy planu budżetu, kolumn planu budżetu, układów i szablonów programu Excel  - Tworzenie i aktywacja procesu planowania budżetu  - Tworzenie dokumentu planu budżetu poprzez pobieranie wartości rzeczywistych z księgi głównej  - Używanie alokacji do korygowania danych dokumentu planu budżetu  - Edytowanie danych dokumentu planu budżetu w programie Excel 
 

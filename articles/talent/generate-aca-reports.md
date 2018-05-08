@@ -26,7 +26,7 @@ ms.lasthandoff: 03/08/2018
 ---
 # <a name="generate-affordable-care-act-reports"></a>Generowanie raportów do ustawy ACA
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Jest dostępna funkcjonalność wspierająca pracodawców, którzy muszą monitorować informacje zgłaszane w deklaracjach 1095-B i 1095-C dotyczących sekcji **Employer Mandate** (Obowiązki pracodawcy) amerykańskiej ustawy o powszechnym dostępie do opieki zdrowotnej (ACA). Należy zauważyć, że ta funkcjonalność jest włączona tylko dla firm w Stanach Zjednoczonych.
 

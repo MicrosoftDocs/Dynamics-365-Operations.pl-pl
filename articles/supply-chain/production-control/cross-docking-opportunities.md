@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano sposób zarządzania procesem przeładunku kompletacyjnego materiału, który jest zgłaszany jako gotowy z linii produkcyjnej do doku transportu wychodzącego.
 

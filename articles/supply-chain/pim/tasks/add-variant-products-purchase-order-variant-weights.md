@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-variant-products-to-purchase-orders-using-variant-weights"></a>Dodawanie wariantów produktów do zamówienia zakupu przy użyciu wag wariantu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura zawiera instruktaż używania wag wariantów do automatycznego wypełniania wierszy zamówień zakupu dla każdego wariantu produktu. Po wybraniu ilości produktu, jaką chcesz kupić, dla wszystkich wariantów produktu są tworzone wiersze zamówienia zakupu z ilościami sugerowanymi na podstawie wag skonfigurowanych w wariantach produktu. Ta procedura nie obejmuje kroków konfigurowania wartości wag w wymiarach produktu i wariantach produktu. Procedura wykorzystuje dane firmy demonstracyjnej USRT.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="my-team-mobile-workspace"></a>Mobilny obszar roboczy Mój zespół
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Mój zespół**. Ten obszar roboczy umożliwia kierownikom wyświetlanie informacji o bezpośrednich podwładnych i pracownikach na dalszych szczeblach podwładności. Mogą oni również wysyłać pochwały osobom w swoich łańcuchach relacji służbowych.
 

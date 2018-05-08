@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="compensation-power-bi-content"></a>Pakiet zawartości usługi Power BI Wynagrodzenia
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartość **Wynagrodzenia** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 

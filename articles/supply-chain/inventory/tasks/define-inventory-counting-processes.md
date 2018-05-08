@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-inventory-counting-processes"></a>Definiowanie procesów inwentaryzacji zapasów
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura poprowadzi Cię przez konfigurację podstawowych procesów inwentaryzacji poprzez utworzenie grupy inwentaryzacji i arkusza inwentaryzacji. Ponadto zobaczysz, jak włączyć zasady inwentaryzacji na poziomie magazynu i towaru. Te zadania zazwyczaj wykonuje kierownik magazynu. Procedura wymaga, aby istniała pewna ilość zwolnionych produktów i magazyny. Jeśli używasz danych firmy demonstracyjnej, procedurę można wykonać w firmie USMF na dowolnym towarze magazynowym.
 

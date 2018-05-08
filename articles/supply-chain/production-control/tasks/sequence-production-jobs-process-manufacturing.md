@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="sequence-production-jobs-for-process-manufacturing"></a>Określanie sekwencji zadań produkcji procesowej
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura wykorzystuje farby dla przykładu prezentującego sposób ustawienia kolejności planowanych zamówień zgodnie z priorytetem koloru i rozmiaru paczki. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USPI. Ta procedura jest przeznaczona dla planisty produkcji.
 

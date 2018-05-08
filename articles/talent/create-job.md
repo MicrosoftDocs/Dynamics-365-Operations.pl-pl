@@ -28,9 +28,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="setting-up-the-components-of-a-job"></a>Konfigurowanie składników zadania
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-[!INCLUDE [retail name](includes/retail-name.md)]
+[!include [retail name](includes/retail-name.md)]
 
 W tym temacie opisano elementy koncepcyjne, które może zawierać zadanie, oraz przykłady wykorzystania tych elementów w organizacji. 
 

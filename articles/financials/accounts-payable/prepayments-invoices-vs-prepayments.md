@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prepayment-invoices-vs-prepayments"></a>Faktury zaliczkowe a zaliczki
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera opis i porównanie dwóch metod, których organizacje używają do obsługi zaliczek (przedpłat). W jednej metodzie należy utworzyć fakturę zaliczkową skojarzoną z zamówieniem zakupu. W drugiej metodzie tworzy się załączniki arkusza zaliczki poprzez utworzenie zapisów w arkuszu i oznaczenie ich jako załączników arkusza zaliczki.
 

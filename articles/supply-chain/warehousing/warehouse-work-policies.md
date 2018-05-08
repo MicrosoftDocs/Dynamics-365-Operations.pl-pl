@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="warehouse-work-policies"></a>Zasady pracy magazynowej
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Zasady kontroli pracy magazynowej w programie Microsoft Dynamics 365 for Finance and Operations określają, czy praca magazynowa jest tworzona przez procesy magazynowe na produkcji w oparciu o typ zlecenia pracy, lokalizację zapasów i produkt.
 

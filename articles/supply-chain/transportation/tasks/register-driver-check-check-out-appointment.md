@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a>Rejestracja ewidencjonowania i wyewidencjonowania kierowcy dla danego terminu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura przedstawia sposób rejestracji ewidencjonowania i wyewidencjonowania kierowcy. Zwykle robi to koordynator transportu. Procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF. Zanim zaczniesz, musi być skonfigurowany termin dla ładunku. Aby utworzyć termin, można wykonać procedurę „Konfigurowanie terminu dla ładunku”.
 

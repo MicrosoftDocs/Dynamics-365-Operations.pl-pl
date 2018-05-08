@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="running-average-cost-price"></a>Średnia krocząca kosztu własnego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Proces zamknięcia zapasów umożliwia rozliczenie transakcji wydania względem transakcji przyjęcia metodą wyceny zapasów wybranej w grupie modeli pozycji towaru. Jednak w okresie przed zamknięciem zapasów system oblicza średnią kroczącą kosztu własnego, która jest zazwyczaj używana podczas księgowania transakcji.
 

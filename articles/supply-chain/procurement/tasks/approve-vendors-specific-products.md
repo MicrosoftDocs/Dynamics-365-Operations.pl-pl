@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-vendors-for-specific-products"></a>Zatwierdzanie dostawców określonych produktów
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób zatwierdzania dostawców dla określonych produktów. Pozwala to na kontrolowanie, którzy dostawcy mogą być używani podczas dodawania produktu do zamówienia zakupu. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. To zadanie zazwyczaj wykonuje menedżer ds. zakupów.
 

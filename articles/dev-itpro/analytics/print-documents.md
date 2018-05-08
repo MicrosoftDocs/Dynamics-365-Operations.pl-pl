@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="printing-in-finance-and-operations-applications"></a>Drukowanie w aplikacjach rozwiązania Finance and Operations
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W programie Microsoft Dynamics 365 for Finance and Operations dokumenty można drukować przy użyciu drukarki lokalnej lub urządzenia podłączonego do sieci. Ten artykuł zawiera omówienie sposobu drukowania dokumentów.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-a-call-center-channel"></a>Konfigurowanie kanału biura obsługi
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Firma można zdefiniować wiele kanałów biura obsługi w programie Microsoft Dynamics 365 for Retail. Kanały biura obsługi konfiguruje się w oknie **Handel detaliczny** \> **Kanały** \> **Biura obsługi** \> **Wszystkie biura obsługi** i są one specyficzne dla firmy.
 

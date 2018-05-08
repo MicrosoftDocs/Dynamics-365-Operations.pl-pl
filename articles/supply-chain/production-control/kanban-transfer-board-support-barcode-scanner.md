@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Obsługa tablicy Kanban przeniesienia dla skanerów kodów kreskowych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tablica Kanban przeniesienia obsługuje wprowadzanie ze skanera przy użyciu widżetu skanera kodów kreskowych, który obsługuje funkcje wybierania, rozpoczynania, kończenia i opróżniania zadań Kanban.
 

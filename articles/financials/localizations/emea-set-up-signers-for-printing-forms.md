@@ -26,7 +26,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-signers-for-print-forms"></a>Konfigurowanie osób podpisujących drukowane formularze
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dla firm w Czechach, Estonii, na Węgrzech, Litwie, Łotwie, w Polsce i Rosji można skonfigurować osoby podpisujące oraz tytuły dla odbiorców i dostawców, którzy drukują dokumenty, takie jak faktury i zamówienia gotówkowe.
 

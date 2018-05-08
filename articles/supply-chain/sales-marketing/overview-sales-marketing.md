@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-and-marketing"></a>Sprzedaż i marketing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Moduł Sprzedaż i marketing umożliwia pozyskiwanie, przechowywanie i wykorzystywanie różnego rodzaju danych w procesie sprzedaży. Te dane obejmują pierwotną akcję handlową, przyszłe działanie uzupełniające oraz dodatkowe transakcje sprzedaży.
 

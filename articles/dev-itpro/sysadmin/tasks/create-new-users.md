@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-new-users"></a>Tworzenie nowych użytkowników
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Użytkownikami są wewnętrzni pracownicy organizacji lub zewnętrznych odbiorcy i dostawcy, którzy potrzebują dostępu do systemu w celu wykonywania swoich zadań. Administratorzy systemu mogą wykonać tę procedurę, aby dodać użytkowników do systemu. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. 
 

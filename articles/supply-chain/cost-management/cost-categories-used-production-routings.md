@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-categories-used-in-production-routing"></a>Kategorie kosztów używane w marszrutach produkcji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o kategoriach kosztów mających zastosowanie do środowisk produkcyjnych, w których są używane marszruty.
 

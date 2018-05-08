@@ -27,9 +27,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobilny obszar roboczy Zatwierdzenie zamówienia zakupu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Zatwierdzenie zamówienia zakupu**. W tym obszarze roboczym można wyświetlać zamówienia zakupu i reagować na niej poprzez różne akcje. Można na przykład zatwierdzić lub odrzucić zamówienie zakupu.
  

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a>Porównywanie aktywnych, szacowanych i zrealizowanych kosztów w związku ze zleceniem produkcyjnym
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób wyświetlania przyczyn dużego odchylenia produkcji dla zlecenia produkcyjnego. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Ta procedura jest przeznaczona dla kontrolera kosztów.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 11/08/2017
 ---
 # <a name="rename-or-modify-a-project-stage"></a>Zmiana nazwy lub modyfikowanie etapu projektu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Etapy projektu mogą służyć za wyznaczniki cyklu życia projektu. Możesz zdefiniować etapy projektu, które chcesz uwzględnić w projektach w obszarze Etap projektu na stronie Parametry modułu Zarządzanie projektami i ich księgowanie. Rozwiązanie Dynamics 365 for Finance and Operations udostępnia pięć wstępnie zdefiniowanych etapów projektu i trzy etapy zdefiniowane przez użytkownika. Nazwę używanego etapu projektu można zaktualizować w celu śledzenia postępu projektów. Można także podać nazwy dla zdefiniowanych przez użytkownika nazw stanów. To zadanie przedstawia sposób zmiany nazwy lub modyfikacji etapu projektu i wykorzystuje zestaw danych USSI.
 

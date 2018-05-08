@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="ledger-journal-types"></a>Typy arkuszy księgi
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano typy arkuszy, które można skonfigurować jako arkusze finansowe. Strona **Nazwy arkuszy** służy do konfigurowania arkuszy, których można używać w całym programie Microsoft Dynamics 365 for Finance and Operations.
 

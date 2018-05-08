@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="time-and-attendance-registration"></a>Rejestracja czasu i frekwencji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Pracownicy odpowiedzialni za rejestrację czasu mogą wprowadzać różne zdarzenia, na przykład wejścia, wyjścia, działania pośrednie i nieobecności. W tym temacie opisano rejestracje, ich obliczanie i zatwierdzanie, a także stosowanie przepływu pracy w celu dodania struktury i automatycznego zatwierdzania do procesu zatwierdzania kart czasu pracy. 
 

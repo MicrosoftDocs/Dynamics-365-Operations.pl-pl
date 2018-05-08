@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-and-associate-a-device"></a>Tworzenie i kojarzenie urządzenia
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ta procedura zawiera instruktaż tworzenia nowego urządzenia i kojarzenia go z kasą. Zakłada się, że kasa jest już utworzona.  Zadanie wykorzystuje dane firmy demonstracyjnej USRT. Zadanie jest przeznaczone dla administratorów, informatyków, działów IT w sieci sprzedaży i kierowników sklepów.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 02/27/2018
 
 # <a name="service-templates"></a>Szablony serwisów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Można zdefiniować umowę serwisową jako szablon, tak aby później można było kopiować wiersze z tego szablonu do innej umowy serwisowej lub zlecenia serwisowego.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="consumption-depreciation"></a>Amortyzacja według zużycia
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie metody amortyzacji Amortyzacja według zużycia.
 

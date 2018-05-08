@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="merge-inventory-batches"></a>Scalanie partii zapasów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o konsolidowaniu dwóch lub więcej partii zapasów w jedną partię scaloną.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="workflow-actions"></a>Akcje przepływu pracy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł wyjaśnia czynności, jakie może wykonywać każdy uczestnik procesu zatwierdzania w ramach przepływu pracy.
 

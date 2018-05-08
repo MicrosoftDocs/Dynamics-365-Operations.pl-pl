@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-forecasts-and-budgets"></a>Prognozy i budżety projektów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Program Microsoft Dynamics 365 for Finance and Operations umożliwia obsługę i kontrolę projektów na dwa sposoby: za pomocą prognoz projektów i budżetów projektów. 
 

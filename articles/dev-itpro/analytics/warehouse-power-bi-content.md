@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="warehouse-performance-power-bi-content"></a>Pakiet zawartości usługi Power BI Wydajność magazynu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft Power BI **Wydajność magazynu**. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 

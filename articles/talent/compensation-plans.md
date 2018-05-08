@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="compensation-plans"></a>Plany wynagrodzeń
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Menedżerowie ds. wynagrodzeń i świadczeń mogą za pomocą modułu Zarządzanie wynagrodzeniami obsługiwać i przetwarzać plany wynagrodzeń o stałej i zmiennej wysokości dla pracowników organizacji.
 

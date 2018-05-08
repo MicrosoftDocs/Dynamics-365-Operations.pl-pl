@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-depreciation-conventions-for-multiple-fixed-assets"></a>Zmiana konwencji amortyzacji dla wielu środków trwałych
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To zadanie aktualizuje konwencję amortyzacji dla wybranej grupy środków trwałych. W tym przewodniku po zadaniach jest wykorzystywana firma demonstracyjna USMF.
 

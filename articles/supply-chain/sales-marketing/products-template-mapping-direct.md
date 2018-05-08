@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>Synchronizowanie produktów w rozwiązaniu Finance and Operations bezpośrednio z produktami w rozwiązaniu Sales
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Zanim zaczniesz używać rozwiązania Prospekt na gotówkę, zapoznaj się z tematem [Integracja danych w usłudze Dynamics 365](/common-data-service/entity-reference/dynamics-365-integration).

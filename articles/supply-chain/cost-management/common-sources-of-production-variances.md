@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="common-sources-of-production-variances"></a>Typowe przyczyny odchyleń produkcji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł wyjaśnia różne typowe przyczyny poszczególnych typów odchyleń produkcji. 
 

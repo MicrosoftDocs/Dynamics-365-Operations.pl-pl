@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 ---
 
 # <a name="power-bi-content"></a>Pakiet zawartości usługi Power BI
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie wymieniono dostępne pakiety zawartości usługi Microsoft Power BI oraz wskazano zasoby, gdzie można uzyskać więcej informacji o tych pakietach.
 

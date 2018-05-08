@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>Omówienie rozliczeń w płatnościach scentralizowanych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą firmy, która obsługuje wszystkie płatności. Eliminuje to konieczność wprowadzania tej samej transakcji w wielu firmach i zapewnia oszczędność czasu dzięki usprawnieniu procesów propozycji płatności i rozrachunku oraz edycji otwartych i zamkniętych transakcji w przypadku płatności scentralizowanych. 
 

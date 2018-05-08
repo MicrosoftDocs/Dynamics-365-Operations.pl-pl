@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Wysyłanie towarów z zamówień sprzedaży bez przekazywania do magazynu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tym podręczniku zilustrowano sposób aktualizacji zamówienia sprzedaży, gdy produkty są wysyłane do odbiorcy. Przewodnik ma zastosowanie do przepływu realizacji, który nie jest skonfigurowany dla zarządzania magazynem (podstawowego ani zaawansowanego), a zatem nie wymaga, aby przed wysyłką zostało zarejestrowane pobranie produktu. Można wykonać tę procedurę przy użyciu danych własnych lub firmy demonstracyjnej USMF. W obu przypadkach przed rozpoczęciem tego zadania utwórz zamówienie sprzedaży na produkty magazynowe z ilością większą od 1. Aby uniknąć błędu księgowania, należy sprawdzić, czy ilość dostępnych zapasów produktu w oddziale i magazynie wybranych w zamówieniu pokrywa ilość zamówienia.
 

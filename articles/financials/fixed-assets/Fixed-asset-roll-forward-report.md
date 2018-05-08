@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Raport przesunięcia środków trwałych do przodu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Raport **Przesunięcie środków trwałych do przodu** przedstawia, w czytelnym formacie programu Microsoft Excel, szczegółowe dane środków trwałych wymagane do zamknięcia okresu, sprawozdań finansowych i sprawozdawczości podatkowej. Raport zawiera początkowe i końcowe salda środków trwałych, łącznie z przesunięciami w związku z wyceną w okresie, oraz informacje o wszelkich nabyciach i zbyciach/likwidacjach środków trwałych zaistniałych w okresie. Dane są raportowane dla poszczególnych środków trwałych, a dodatkowo wartości są sumowane dla grup środków trwałych i dla firm.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-and-create-depreciation-profiles"></a>Konfigurowanie i tworzenie profili amortyzacji
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Profile amortyzacji określają typ i częstotliwość amortyzacji danego środka trwałego.   Nagranie używa firmy demonstracyjnej USMF i roli Księgowy.
 

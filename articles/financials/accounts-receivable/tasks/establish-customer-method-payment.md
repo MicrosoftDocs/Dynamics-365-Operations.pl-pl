@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="establish-customer-method-of-payment"></a>Definiowanie metody płatności odbiorcy
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Utwórz metodę płatności dla płatności od odbiorców. W zadaniu wykorzystano firmę demonstracyjną USMF.
 

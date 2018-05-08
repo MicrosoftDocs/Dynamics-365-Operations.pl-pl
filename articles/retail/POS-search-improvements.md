@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Omówienie wyszukiwania produktów i odbiorców w punkcie sprzedaży
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Aplikacje Modern Point of Sale (MPOS) i Cloud Point of Sale (CPOS) udostępniają funkcję łatwego wyszukiwania produktów i odbiorców. Ponieważ pasek wyszukiwania znajduje się zawsze w górnej części okien aplikacji MPOS i CPOS, pracownicy mogą szybko znajdować produkty i odbiorców.
 

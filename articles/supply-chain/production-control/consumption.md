@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="calculate-material-consumption"></a>Obliczanie zużycia materiału
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o różnych opcjach związanych z obliczaniem zużycia materiałów. 
 

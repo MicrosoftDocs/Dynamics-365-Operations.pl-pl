@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a>Przetwarzanie korekt punktów lojalnościowych
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ta procedura przedstawia sposób wyszukiwania informacji o karcie lojalnościowej i korygowania punktów lojalnościowych. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USRT. Zadanie jest przeznaczone dla roli Kierownik ds. operacyjnych sieci sprzedaży lub Menedżer ds. obsługi klienta.
 

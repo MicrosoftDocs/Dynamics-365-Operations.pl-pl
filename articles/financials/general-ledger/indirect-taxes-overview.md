@@ -28,9 +28,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="sales-tax-overview"></a>Omówienie podatku
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Ten temat zawiera omówienie systemu podatków. Objaśniono w nim elementy konfiguracji podatku od sprzedaży oraz ich współdziałanie.
 

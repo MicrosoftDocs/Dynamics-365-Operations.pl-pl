@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="mass-create-sales-quotations"></a>Utwórz grupowo oferty sprzedaży
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura przedstawia sposób efektywnego tworzenia ofert zawierających zestaw produktów lub usług, które zostaną wysłane wielu odbiorcom. Ta operacja grupowego tworzenia ofert bazuje na szablonach ofert. Można wykonać tę procedurę przy użyciu danych własnych lub firmy demonstracyjnej USMF.
 

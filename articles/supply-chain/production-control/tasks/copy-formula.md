@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="copy-a-formula"></a>Kopiowanie formuły
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura skupia się na tworzenie formuły zawierającej te same składniki co istniejąca formuła, ale z drobnymi różnicami. Aby utworzyć wiersze formuły, możesz użyć funkcji kopiowania w celu skopiowania istniejącej formuły zawierającej najwięcej składników, których potrzebujesz. Następnie można wprowadzić niezbędne zmiany w poszczególnych wierszach nowej wersji. Używając funkcji kopiowania, nie trzeba utworzyć wielu formuł, które są prawie jednakowe. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USP2.
 

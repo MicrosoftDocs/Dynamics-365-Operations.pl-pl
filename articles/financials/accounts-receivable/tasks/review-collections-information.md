@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="review-collections-information"></a>Przeglądanie informacji o windykacji
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura prowadzi przez proces sprawdzania informacji o windykacji, a także różnych opcji konfiguracji i transakcji windykacji. Ta procedura wykorzystuje firmę demonstracyjną USMF.
 
