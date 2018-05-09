@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ef5a1b83ad0e6e0ef5c840913ce1a985dba69174
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fe938a0b728205da56aa006583c6be7a44537ff4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-order-cost-estimation"></a><span data-ttu-id="f401a-104">Szacowanie kosztu zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="f401a-104">Production order cost estimation</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="f401a-105">Ten artykuł zawiera informacje o szacowaniu kosztów produkcji.</span><span class="sxs-lookup"><span data-stu-id="f401a-105">This article provides information about production cost estimation.</span></span> <span data-ttu-id="f401a-106">Szacowanie kosztów produkcji pokazuje prognozowane koszty zużycia materiałów i zdolności produkcyjnych w celu wytworzenia towaru w ilości określonej w planowanym zleceniu produkcyjnym.</span><span class="sxs-lookup"><span data-stu-id="f401a-106">Production cost estimation provides the projected material and capacity consumption costs of producing an item in the planned production order quantity.</span></span> 
 

@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1b49dd7f4cfa0da68337554f21008bd41f9bdda1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a1992aa8e570db294c128313209250e3cf237df6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="generate-electronic-documents-and-update-application-data-using-the-electronic-reporting-tool"></a><span data-ttu-id="e3987-104">Generowanie dokumentów elektronicznych i aktualizowanie danych aplikacji za pomocą narzędzia Raportowanie elektroniczne</span><span class="sxs-lookup"><span data-stu-id="e3987-104">Generate electronic documents and update application data using the Electronic reporting tool</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="e3987-105">Można projektować formaty raportowania elektronicznego (ER), które będą używane w aplikacji Finance and Operations do generowania wychodzących dokumentów elektronicznych.</span><span class="sxs-lookup"><span data-stu-id="e3987-105">You can design Electronic reporting (ER) formats that can be used in the Finance and Operations application to generate outgoing electronic documents.</span></span> <span data-ttu-id="e3987-106">Można także zaprojektować formaty ER, które analizują składnię przychodzących dokumentów elektronicznych i używają zawartości tych dokumentów do aktualizowania danych aplikacji.</span><span class="sxs-lookup"><span data-stu-id="e3987-106">You can also design ER formats that parse incoming electronic documents and use the content in those documents to update application data.</span></span> 
 

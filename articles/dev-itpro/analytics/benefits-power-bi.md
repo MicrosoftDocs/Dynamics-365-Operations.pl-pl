@@ -17,16 +17,16 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c6ea6769b28158f8686a139903073337646c88bd
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5b52f8091584eca8ff7fac909374be0e9c9045de
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="benefits-power-bi-content"></a><span data-ttu-id="a0ba9-104">Pakiet zawartości usługi Power BI Świadczenia</span><span class="sxs-lookup"><span data-stu-id="a0ba9-104">Benefits Power BI content</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="a0ba9-105">W tym temacie opisano pakiet zawartość **Świadczenia** dostępny dla usługi Microsoft Power BI.</span><span class="sxs-lookup"><span data-stu-id="a0ba9-105">This topic describes the **Benefits** Microsoft Power BI content.</span></span> <span data-ttu-id="a0ba9-106">Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.</span><span class="sxs-lookup"><span data-stu-id="a0ba9-106">It explains how to access the reports that are included, and provides information about the data model and entities that were used to build the content.</span></span>
 

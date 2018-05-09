@@ -18,16 +18,16 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0d58a7138ac9c47718304ca443203d1c4a9f175b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3ecadaf20ea82cd1328b266907d2ba43515d76c6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="process-compensation"></a><span data-ttu-id="92e9b-103">Przetwarzanie wynagrodzenia</span><span class="sxs-lookup"><span data-stu-id="92e9b-103">Process compensation</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="92e9b-104">Funkcjonalność przetwarzania wynagrodzeń pozwala obliczyć nowe kwoty podstawy wynagrodzenia dla pracowników w oparciu o korektę wyrównawczą, cele podwyżki uznaniowej i wydajność.</span><span class="sxs-lookup"><span data-stu-id="92e9b-104">Compensation processing allows you to calculate new base compensation amounts for your employees based on equity adjustments, merit increase targets, and performance.</span></span> <span data-ttu-id="92e9b-105">Ten temat omawia podstawowy przepływ przetwarzania wynagrodzeń w systemach stałych wynagrodzeń bez uwzględniania wydajności pracownika.</span><span class="sxs-lookup"><span data-stu-id="92e9b-105">This topic covers the basic flow of compensation processing for fixed compensation plans without factoring an employee's performance.</span></span>
 

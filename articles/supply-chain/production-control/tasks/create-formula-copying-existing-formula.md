@@ -17,15 +17,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fcde37715287a5d9b862f9e35c594636ef11d395
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4467022f4a377fc0f4aa5cf5e4a27c74ff95c415
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-formula-by-copying-from-an-existing-formula"></a><span data-ttu-id="25a08-103">Tworzenie formuły przez kopiowanie z istniejącej formuły</span><span class="sxs-lookup"><span data-stu-id="25a08-103">Create a formula by copying from an existing formula</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="25a08-104">W tej procedurze pokazano, jak szybko utworzyć nową formułę przez skopiowanie z istniejącej formuły.</span><span class="sxs-lookup"><span data-stu-id="25a08-104">This procedure shows how to quickly create a new formula by copying from an existing formula.</span></span> <span data-ttu-id="25a08-105">Do utworzenia tej procedury można użyć danych firmy demonstracyjnej USMF, USP2 lub USPI.</span><span class="sxs-lookup"><span data-stu-id="25a08-105">You can use the demo data companies USMF, USP2, or USPI to create this procedure.</span></span>
 

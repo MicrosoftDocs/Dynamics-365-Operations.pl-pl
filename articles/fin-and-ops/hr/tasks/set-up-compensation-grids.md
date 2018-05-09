@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d507224004bdf319f9bf13ba07ed07ef29cc85dc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8344534fb7708eaa18a3c84e233cccc889e54226
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-compensation-grids"></a><span data-ttu-id="03a41-103">Konfigurowanie siatek wynagrodzeń</span><span class="sxs-lookup"><span data-stu-id="03a41-103">Set up compensation grids</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="03a41-104">Siatki wynagrodzeń są używane do definiowania i obsługi struktur płacy dla planów stałych wynagrodzeń.</span><span class="sxs-lookup"><span data-stu-id="03a41-104">Compensation grids are used to define and maintain the pay structures for fixed compensation plans.</span></span> <span data-ttu-id="03a41-105">Siatki wynagrodzeń mogą być współużytkowane przez wiele planów lub kopiowane podczas tworzenia nowego planu wynagrodzeń.</span><span class="sxs-lookup"><span data-stu-id="03a41-105">Compensation grids can be shared between multiple plans or copied when creating a new compensation plan.</span></span>  <span data-ttu-id="03a41-106">Przed utworzeniem siatki wynagrodzeń należy skonfigurować poziomy i punkty odniesienia.</span><span class="sxs-lookup"><span data-stu-id="03a41-106">Before creating a compensation grid, Levels and Reference points must be set up.</span></span> <span data-ttu-id="03a41-107">W tym przykładzie zostanie utworzony nowy typ kategorii w siatce wynagrodzeń przy użyciu danych demonstracyjnych dla poziomów i punktów odniesienia.</span><span class="sxs-lookup"><span data-stu-id="03a41-107">This example will create a new Grade type of compensation grid using demo data for the Levels and Reference points.</span></span> <span data-ttu-id="03a41-108">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="03a41-108">The demo data company used to create this procedure is USMF.</span></span>
 

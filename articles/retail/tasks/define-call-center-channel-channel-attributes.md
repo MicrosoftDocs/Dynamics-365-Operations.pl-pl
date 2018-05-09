@@ -16,15 +16,15 @@ ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bfccbaab5b4d0b4d84d1bf344521b22b7a5e6efc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2b88a5bb22fa9fc862f4fd4c50367264b58340b8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-call-center-channel-and-channel-attributes"></a><span data-ttu-id="30ead-103">Definiowanie kanału centrum obsługi i atrybutów kanału</span><span class="sxs-lookup"><span data-stu-id="30ead-103">Define call center channel and channel attributes</span></span>
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="30ead-104">Ta procedura zawiera instruktaż tworzenia nowego kanału sprzedaży detalicznej i definiowania jego atrybutów.</span><span class="sxs-lookup"><span data-stu-id="30ead-104">This procedure walks through creating a new retail channel and defining channel attributes.</span></span> <span data-ttu-id="30ead-105">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USRT.</span><span class="sxs-lookup"><span data-stu-id="30ead-105">The demo data company used to create this task is USRT.</span></span> <span data-ttu-id="30ead-106">Ta procedura jest przeznaczona dla pracownika IT w sklepie.</span><span class="sxs-lookup"><span data-stu-id="30ead-106">This procedure is intended for the Retail IT role.</span></span>
 

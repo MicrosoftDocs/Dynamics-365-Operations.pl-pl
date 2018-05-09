@@ -18,16 +18,16 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dcf690a127cf3087ebc0b43c4a5cbae80ba6ccf1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8ba93808076b83d7dcb32b1b3dc06d6055f693f3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-customer-and-vendor-compensation"></a><span data-ttu-id="c11b6-103">Konfiguracja kompensacji odbiorców oraz dostawców</span><span class="sxs-lookup"><span data-stu-id="c11b6-103">Set up customer and vendor compensation</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="c11b6-104">Ten temat zawiera informacje, które pomogą wykonywać proces kompensat na kontach dostawców i odbiorców dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce.</span><span class="sxs-lookup"><span data-stu-id="c11b6-104">This topic provides information that will help you run the compensation process for vendor and customer accounts, for legal entities that have their primary address in Hungary or Poland.</span></span>
 

@@ -18,16 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0c82abe7a34d5882611f0fbd54b2817d54c11eaa
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fab099ccd8f3dd9269143670fee0abdc24ff4782
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a><span data-ttu-id="254e0-103">Edytowanie identyfikator faktur w zamówieniach sprzedaży dla Europy Wschodniej</span><span class="sxs-lookup"><span data-stu-id="254e0-103">Edit invoice IDs on sales orders for Eastern Europe</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="254e0-104">Ten temat zawiera informacje o parametrach rozrachunków z odbiorcami, które wpływają na numery faktur w dokumentach dostawy i fakturach dla Czech, Estonii, Węgier, Litwy, Łotwy i Polski.</span><span class="sxs-lookup"><span data-stu-id="254e0-104">This topic provides information about accounts receivable parameters that affect invoice numbers on packing slips and invoices for the Czech Republic, Estonia, Hungary, Lithuania, Latvia, and Poland.</span></span>
 

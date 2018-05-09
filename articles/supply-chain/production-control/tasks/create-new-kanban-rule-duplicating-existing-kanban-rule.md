@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d375e6c029e575269f7b9fce8a2eb9ac95717b5c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: dafbff1abd67028d480594c6d0b34fac4ac7e154
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-new-kanban-rule-by-duplicating-an-existing-kanban-rule"></a><span data-ttu-id="5d472-103">Tworzenie nowej reguły Kanban przez duplikację istniejącej reguły Kanban</span><span class="sxs-lookup"><span data-stu-id="5d472-103">Create a new kanban rule by duplicating an existing kanban rule</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5d472-104">Ta procedura skupia się na tworzeniu duplikatu istniejącej reguły Kanban.</span><span class="sxs-lookup"><span data-stu-id="5d472-104">This procedure focuses on creating a duplicate of an existing kanban rule.</span></span> <span data-ttu-id="5d472-105">Jest to przydatne, jeśli chcesz utworzyć nowe reguły Kanban na podstawie istniejących reguł Kanban.</span><span class="sxs-lookup"><span data-stu-id="5d472-105">This is useful if you want to create new kanban rules based on existing kanban rules.</span></span> <span data-ttu-id="5d472-106">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="5d472-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="5d472-107">Procedura jest przeznaczona dla inżyniera procesu lub menedżera strumienia wartości, gdy przygotowują oni produkcję z nowym przepływem lub regułą uzupełniania.</span><span class="sxs-lookup"><span data-stu-id="5d472-107">This procedure is intended for the process engineer or the value stream manager as they prepare production for a changed production flow or a new replenishment rule.</span></span>
 

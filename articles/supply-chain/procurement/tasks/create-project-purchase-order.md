@@ -17,15 +17,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b8409586e6d4ae13da2b171da82e313c7fc5a371
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e4a418b34546c719e27e5e2c186e765ca38241de
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-project-purchase-order"></a><span data-ttu-id="bab59-103">Tworzenie zamówienia zakupu w ramach projektu</span><span class="sxs-lookup"><span data-stu-id="bab59-103">Create project purchase order</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="bab59-104">W tej procedurze pokazano sposób tworzenia zamówienia zakupu do projektu.</span><span class="sxs-lookup"><span data-stu-id="bab59-104">This procedure shows you how to create a project purchase order.</span></span> <span data-ttu-id="bab59-105">W tym zadaniu jest wykorzystywany zestaw danych firmy USSI.</span><span class="sxs-lookup"><span data-stu-id="bab59-105">This task uses the USSI data set.</span></span>
 

@@ -17,16 +17,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8fb64a43634b839c7ca65bcb3771b6eeda26ef65
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 579d9d2db70888237771db675bae00c840970aec
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="duplicate-sales-invoice-numbering-for-poland"></a><span data-ttu-id="db58f-104">Numerowanie duplikatów faktur sprzedaży dla Polski</span><span class="sxs-lookup"><span data-stu-id="db58f-104">Duplicate sales invoice numbering for Poland</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="db58f-105">Firmom w Polsce funkcja numerowania duplikatów faktur sprzedaży pozwala identyfikować i śledzić powtarzające się faktury sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="db58f-105">For legal entities in Poland, the Duplicate sales invoice numbering functionality lets users identify and track duplicate sales invoices.</span></span> <span data-ttu-id="db58f-106">Ten temat zawiera informacje o funkcji numerowania duplikatów faktur sprzedaży oraz wyjaśnienia, jak utworzyć duplikat faktury, usunąć duplikat faktury i wydrukować kopię duplikatu faktury.</span><span class="sxs-lookup"><span data-stu-id="db58f-106">This topic provides information about the Duplicate sales invoice numbering functionality, and explains how to duplicate an invoice, delete a duplicate invoice, and print a copy of a duplicate invoice.</span></span>
 

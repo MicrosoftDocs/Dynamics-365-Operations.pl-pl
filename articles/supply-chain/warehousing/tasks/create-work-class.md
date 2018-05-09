@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 11e506c41eb5e8d5bd28db8e6d5ca51ff9e72a62
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ae594d55b1a14ab4e832658aaa12165f1be2b303
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-work-class"></a><span data-ttu-id="db4fa-103">Tworzenie klasy roboczej</span><span class="sxs-lookup"><span data-stu-id="db4fa-103">Create a work class</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="db4fa-104">W tej procedurze pokazano sposób konfigurowania klasy pracy.</span><span class="sxs-lookup"><span data-stu-id="db4fa-104">This procedure shows you how to set up a work class.</span></span> <span data-ttu-id="db4fa-105">Klas pracy są używane do kierowania i/lub ograniczania typów wierszy zlecenia, które pracownik magazynu może przetwarzać na urządzeniu przenośnym.</span><span class="sxs-lookup"><span data-stu-id="db4fa-105">Work classes are used to direct and/or limit the type of work order lines that a warehouse worker can process on a mobile device.</span></span> <span data-ttu-id="db4fa-106">Wiersze, które pracownik może przetwarzać, zależą od klas pracy w elementach menu urządzenia przenośnego, do których pracownik magazynu ma dostęp, oraz od klasy pracy określonej w wierszach pracy.</span><span class="sxs-lookup"><span data-stu-id="db4fa-106">The lines that a worker can process are determined from the work classes on the mobile device menu items that the warehouse worker has access to and the work class that’s specified on the work lines.</span></span> <span data-ttu-id="db4fa-107">Klas pracy mogą służyć także do sprawdzania poprawności lokalizacji odłożenia dla wiersza zlecenia.</span><span class="sxs-lookup"><span data-stu-id="db4fa-107">Work classes can also be used to validate the put location for a work order line.</span></span> <span data-ttu-id="db4fa-108">Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="db4fa-108">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="db4fa-109">Ta procedura jest przeznaczona dla kierownika magazynu.</span><span class="sxs-lookup"><span data-stu-id="db4fa-109">This procedure is intended for the warehouse manager.</span></span>
 

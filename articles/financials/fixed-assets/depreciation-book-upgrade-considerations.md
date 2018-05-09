@@ -18,16 +18,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dfba6a237548d962bd3677d20da3745f59638ede
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7093023713a81980010b8254708801b58bc68475
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="depreciation-book-upgrade-overview"></a><span data-ttu-id="3125e-105">Omówienie uaktualniania księgi amortyzacji</span><span class="sxs-lookup"><span data-stu-id="3125e-105">Depreciation book upgrade overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="3125e-106">W poprzednich wersjach istniały dwie koncepcje wyceny środków trwałych: modele ewidencji i księgi amortyzacji.</span><span class="sxs-lookup"><span data-stu-id="3125e-106">In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books.</span></span> <span data-ttu-id="3125e-107">W programie Microsoft Dynamics 365 for Operations (wydanie 1611) funkcje modeli ewidencji i ksiąg amortyzacji zostały scalone w pojedynczy obiekt zwany księgą.</span><span class="sxs-lookup"><span data-stu-id="3125e-107">In Microsoft Dynamics 365 for Operations (1611), the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book.</span></span> <span data-ttu-id="3125e-108">Ten temat porusza kilka zagadnień, które należy wziąć pod uwagę przy uaktualnianiu.</span><span class="sxs-lookup"><span data-stu-id="3125e-108">This topic provides some things to consider for the upgrade.</span></span> 
 
@@ -62,24 +62,24 @@ ms.lasthandoff: 04/13/2018
 <span data-ttu-id="3125e-145">Parametry znajdują się na początku klasy ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans.</span><span class="sxs-lookup"><span data-stu-id="3125e-145">The parameters are located at the beginning of the ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans class.</span></span> 
 
 <span data-ttu-id="3125e-146">*// Określ preferowaną metodę alokacji załączników* 
-*// true, jeśli chcesz używać istniejącego kodu numeracji* 
-*// false, jeśli zamierzasz używać zdefiniowanych przez system sekwencji numerów (ustawienie domyślne)* const boolean NumberSequenceUseExistingCode = false;</span><span class="sxs-lookup"><span data-stu-id="3125e-146">*// Specify a preferable approach of vouchers allocation* 
-*// true, if you want to use an existing number sequence code* 
-*// false, if you intend to use the system-defined number sequence (default)* const boolean NumberSequenceUseExistingCode = false;</span></span>  
+ *// true, jeśli chcesz używać istniejącego kodu numeracji* 
+ *// false, jeśli zamierzasz używać zdefiniowanych przez system sekwencji numerów (ustawienie domyślne)* const boolean NumberSequenceUseExistingCode = false;</span><span class="sxs-lookup"><span data-stu-id="3125e-146">*// Specify a preferable approach of vouchers allocation* 
+ *// true, if you want to use an existing number sequence code* 
+ *// false, if you intend to use the system-defined number sequence (default)* const boolean NumberSequenceUseExistingCode = false;</span></span>  
 
 <span data-ttu-id="3125e-147">*// Jeśli używasz numeracji systemowej, określ parametry numeracji.*
-*// Nowa numeracja zostanie utworzona z następującymi parametrami.*</span><span class="sxs-lookup"><span data-stu-id="3125e-147">*// If using the system-defined number sequence approach, specify the parameters for the number sequence.*
-*// A new number sequence will be created with these parameters.*</span></span> <span data-ttu-id="3125e-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span><span class="sxs-lookup"><span data-stu-id="3125e-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span></span>   
+ *// Nowa numeracja zostanie utworzona z następującymi parametrami.*</span><span class="sxs-lookup"><span data-stu-id="3125e-147">*// If using the system-defined number sequence approach, specify the parameters for the number sequence.*
+ *// A new number sequence will be created with these parameters.*</span></span> <span data-ttu-id="3125e-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span><span class="sxs-lookup"><span data-stu-id="3125e-148">const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;</span></span>   
 
 <span data-ttu-id="3125e-149">*// Jeśli używasz metody z istniejącą numeracją, podaj kod istniejącej numeracji.* 
-*// Alokacja załączników zostanie dokonana kolejno wierszami przy użyciu istniejącej numeracji.*</span><span class="sxs-lookup"><span data-stu-id="3125e-149">*// If using the existing number sequence approach, specify the existing number sequence code.* 
-*// Voucher allocation will go row-by-row for existing number sequences.*</span></span> <span data-ttu-id="3125e-150">const str NumberSequenceExistingCode = ''; *// Określ zakres kodu istniejącej numeracji* 
-*// true, jeśli podana numeracja jest współdzielona* 
-*// false, jeśli podana numeracja dotyczy konkretnej firmy* 
-*// Jeśli nie zostanie znaleziony kod numeracji o podanym zakresie, będzie używana domyślna numeracja systemowa.*</span><span class="sxs-lookup"><span data-stu-id="3125e-150">const str NumberSequenceExistingCode = ''; *// Specify the scope of the existing number sequence code* 
-*// true, if the specified number sequence is shared* 
-*// false, if the specified number sequence is per-company* 
-*// The default system-defined number sequence will be used if a number sequence code with the specified scope is not found.*</span></span> <span data-ttu-id="3125e-151">const boolean NumberSequenceExistingIsShared = true;</span><span class="sxs-lookup"><span data-stu-id="3125e-151">const boolean NumberSequenceExistingIsShared = true;</span></span> 
+ *// Alokacja załączników zostanie dokonana kolejno wierszami przy użyciu istniejącej numeracji.*</span><span class="sxs-lookup"><span data-stu-id="3125e-149">*// If using the existing number sequence approach, specify the existing number sequence code.* 
+ *// Voucher allocation will go row-by-row for existing number sequences.*</span></span> <span data-ttu-id="3125e-150">const str NumberSequenceExistingCode = ''; *// Określ zakres kodu istniejącej numeracji* 
+ *// true, jeśli podana numeracja jest współdzielona* 
+ *// false, jeśli podana numeracja dotyczy konkretnej firmy* 
+ *// Jeśli nie zostanie znaleziony kod numeracji o podanym zakresie, będzie używana domyślna numeracja systemowa.*</span><span class="sxs-lookup"><span data-stu-id="3125e-150">const str NumberSequenceExistingCode = ''; *// Specify the scope of the existing number sequence code* 
+ *// true, if the specified number sequence is shared* 
+ *// false, if the specified number sequence is per-company* 
+ *// The default system-defined number sequence will be used if a number sequence code with the specified scope is not found.*</span></span> <span data-ttu-id="3125e-151">const boolean NumberSequenceExistingIsShared = true;</span><span class="sxs-lookup"><span data-stu-id="3125e-151">const boolean NumberSequenceExistingIsShared = true;</span></span> 
 
 <span data-ttu-id="3125e-152">Po zmodyfikowaniu stałych odbuduj projekt zawierający klasę.</span><span class="sxs-lookup"><span data-stu-id="3125e-152">Rebuild the project that contains the class after the constants have been modified.</span></span> 
 

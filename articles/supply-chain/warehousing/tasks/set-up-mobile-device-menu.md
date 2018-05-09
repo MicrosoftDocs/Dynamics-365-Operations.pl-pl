@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 37010003ad638e068ed7650532da29c6dbc033cb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c3c048a18ee8150880ed9df139cd498f2ec52852
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-in-a-purchase-order"></a><span data-ttu-id="a4189-103">Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy w ramach zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="a4189-103">Set up a mobile device menu item for completing work in a purchase order</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a4189-104">W tej procedurze pokazano sposób konfigurowania elementu menu urządzenia przenośnego.</span><span class="sxs-lookup"><span data-stu-id="a4189-104">This procedure shows how to set up a Mobile device menu item.</span></span> <span data-ttu-id="a4189-105">W tym przykładzie element menu służy do wykonywania pracy typu Zamówienie zakupu.</span><span class="sxs-lookup"><span data-stu-id="a4189-105">In this example, the menu item is used for performing work of type Purchase order.</span></span> <span data-ttu-id="a4189-106">Klasa pracy powiązana z elementem menu decyduje o tym, która praca jest prawidłowa.</span><span class="sxs-lookup"><span data-stu-id="a4189-106">The work class that’s associated with the menu item determines which work is valid.</span></span> <span data-ttu-id="a4189-107">Zadania z przewodnika można wykonać przy użyciu danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="a4189-107">You can use this guide in demo data company USMF.</span></span> <span data-ttu-id="a4189-108">Ta procedura jest zwykle wykonywana przez kierownika magazynu.</span><span class="sxs-lookup"><span data-stu-id="a4189-108">This procedure is typically carried out by a warehouse manager.</span></span>
 

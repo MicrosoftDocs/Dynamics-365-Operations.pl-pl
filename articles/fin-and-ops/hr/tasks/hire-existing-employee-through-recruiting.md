@@ -16,15 +16,15 @@ ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dd8c3355ac63373768292e1623ad6c771ec5ee1c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 11f9d607e50d5ceaab5fcf151e3dae4393ca3007
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="hire-an-existing-employee-through-recruiting"></a><span data-ttu-id="3c5df-103">Zatrudnianie istniejącego pracownika przez rekrutację</span><span class="sxs-lookup"><span data-stu-id="3c5df-103">Hire an existing employee through recruiting</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="3c5df-104">Czasami wolne stanowiska mogą być obsadzane przez kandydatów, którzy są już pracownikami w danej organizacji.</span><span class="sxs-lookup"><span data-stu-id="3c5df-104">Sometimes open positions can be filled by candidates who are already employees in your organization.</span></span> <span data-ttu-id="3c5df-105">Ta procedura prowadzi przez kolejne kroki zatrudniania istniejącego pracownika za pomocą procesu rekrutacji.</span><span class="sxs-lookup"><span data-stu-id="3c5df-105">This procedure walks through the steps of hiring an existing employee through the recruiting process.</span></span> <span data-ttu-id="3c5df-106">W tej procedurze projekt rekrutacji już skonfigurowano, a istniejący pracownik już złożył podanie o pracę w projekcie rekrutacji.</span><span class="sxs-lookup"><span data-stu-id="3c5df-106">In this procedure, a recruitment project has already been set up, and an existing employee has already submitted an application for the recruitment project.</span></span> <span data-ttu-id="3c5df-107">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="3c5df-107">The demo data company used to create this procedure is USMF.</span></span>
 

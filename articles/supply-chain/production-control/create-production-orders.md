@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c572c15f58f1633fe89a8ad8683075fa6b9de6d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d6b35c347aad64a44e827ecb86273f4767d8afd3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-production-orders"></a><span data-ttu-id="55e59-105">Tworzenie zleceń produkcyjnych</span><span class="sxs-lookup"><span data-stu-id="55e59-105">Create production orders</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="55e59-106">Po utworzeniu zlecenia produkcyjnego jest inicjowane żądanie rozpoczęcia produkcji towaru.</span><span class="sxs-lookup"><span data-stu-id="55e59-106">When a production order is created, a request is initiated to start producing an item.</span></span> <span data-ttu-id="55e59-107">Zlecenie produkcyjne zawiera informacje o produkowanym towarze, ilości do wyprodukowania i planowanej dacie zakończenia.</span><span class="sxs-lookup"><span data-stu-id="55e59-107">The production order contains information about what will be produced, the quantity to produce, and the planned finish date.</span></span> <span data-ttu-id="55e59-108">Znajdują się w nim również informacje o materiałach, które będą zużywane, i procesach, jakie należy stosować w produkcji.</span><span class="sxs-lookup"><span data-stu-id="55e59-108">It also contains information about which materials to consume and which process to follow to produce the item.</span></span>
 

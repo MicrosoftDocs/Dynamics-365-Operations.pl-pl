@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9ba09bfba52cd576782e61802e44fa4b80f4711f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8c9a7d7e4e2d751722dac8089bc2056334fa96a3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="calculate-kanban-quantity-suggestions"></a><span data-ttu-id="2c4cc-103">Obliczanie sugestii liczby kart Kanban</span><span class="sxs-lookup"><span data-stu-id="2c4cc-103">Calculate kanban quantity suggestions</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2c4cc-104">Ta procedura skupia się na optymalizowaniu wielkości i liczby kart Kanban dla określonej reguły Kanban poprzez obliczenie liczby kart Kanban.</span><span class="sxs-lookup"><span data-stu-id="2c4cc-104">This procedure focuses on optimizing the kanban size and quantities for a specific kanban rule by using the kanban quantity calculation.</span></span> <span data-ttu-id="2c4cc-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="2c4cc-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="2c4cc-106">Procedura jest przeznaczona dla menedżera strumienia wartości.</span><span class="sxs-lookup"><span data-stu-id="2c4cc-106">This procedure is intended for the value stream manager.</span></span> <span data-ttu-id="2c4cc-107">Wcześniej należy wykonać procedurę Dodawanie nowej zasady obliczania liczby kart Kanban do reguły Kanban.</span><span class="sxs-lookup"><span data-stu-id="2c4cc-107">It is a prerequisite that you have completed the procedure Add a new kanban quantity calculation policy to a kanban rule.</span></span>
 

@@ -17,15 +17,15 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 74f9f16ab3dfc6e41a720d73cd62583aebbdd84e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 33e0b1da5d16372b8a3c4cd153f451166af6003f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a><span data-ttu-id="8b523-103">Tworzenie wymiarów finansowych dla rejestrów punktu sprzedaży i konfigurowanie wartości wymiarów z rejestrów</span><span class="sxs-lookup"><span data-stu-id="8b523-103">Create financial dimensions for POS registers and configure dimension values on registers</span></span>
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="8b523-104">Ta procedura prowadzi przez proces tworzenia wymiarów finansowych dla kas w punkcie sprzedaży (POS) i pokazuje, jak konfigurować wartości wymiarów finansowych w kasach.</span><span class="sxs-lookup"><span data-stu-id="8b523-104">This procedure walks through creating financial dimensions for point of sale (POS) registers, and demonstrates how to configure financial dimension values on registers.</span></span> <span data-ttu-id="8b523-105">Procedura nie ma innych czynności pokrewnych, takich jak tworzenie zestawów wymiarów i struktur kont.</span><span class="sxs-lookup"><span data-stu-id="8b523-105">This procedure doesn’t include other related steps, such as creating dimension sets and account structures.</span></span> <span data-ttu-id="8b523-106">Te zadania znajdują się w innych artykułach.</span><span class="sxs-lookup"><span data-stu-id="8b523-106">Those tasks can be found in other topics.</span></span> <span data-ttu-id="8b523-107">To nagranie wykorzystuje firmę demonstracyjną USRT.</span><span class="sxs-lookup"><span data-stu-id="8b523-107">This recording uses USRT demo company.</span></span>
 

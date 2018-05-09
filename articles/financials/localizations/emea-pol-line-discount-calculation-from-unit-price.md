@@ -17,16 +17,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ccfb6e8663667fd75668a4e9294e7de2509b3303
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 05ac2d33b699805808bdff5e4076a0c6cd27e5a8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="line-discount-calculation-from-the-unit-price-for-poland"></a><span data-ttu-id="00a0c-104">Obliczanie rabatu wiersza od ceny jednostkowej dla Polski</span><span class="sxs-lookup"><span data-stu-id="00a0c-104">Line discount calculation from the unit price for Poland</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="00a0c-105">Dla firm w Polsce rabat wiersza może być obliczany na podstawie ceny jednostkowej z wiersza faktury, a nie z kwoty wiersza.</span><span class="sxs-lookup"><span data-stu-id="00a0c-105">For legal entities in Poland, the line discount can be calculated from the unit price of an invoice line instead of from a line amount.</span></span> <span data-ttu-id="00a0c-106">Ten temat zawiera informacje o metodzie obliczania rabatu wiersza względem ceny jednostkowej i wyjaśnienia, jak skonfigurować tę funkcję.</span><span class="sxs-lookup"><span data-stu-id="00a0c-106">This topic provides information about the Line discount calculation from unit price method and explains how to set it up.</span></span>
 

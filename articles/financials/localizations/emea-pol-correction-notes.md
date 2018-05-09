@@ -17,16 +17,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a7538e930a2bc33f03f5e3835cc00bffb3acf07d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 918672377445758c44a967cea601158f9e279788
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="correction-notes"></a><span data-ttu-id="cde34-105">Noty korygujące</span><span class="sxs-lookup"><span data-stu-id="cde34-105">Correction notes</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="cde34-106">Ten temat zawiera informacje dotyczące not korygujących.</span><span class="sxs-lookup"><span data-stu-id="cde34-106">This topic provides information about correction notes.</span></span> <span data-ttu-id="cde34-107">Nota korygująca jest dokumentem wymaganym lokalnymi przepisami w Polsce.</span><span class="sxs-lookup"><span data-stu-id="cde34-107">A correction note is a document that is required by local regulations in Poland.</span></span> <span data-ttu-id="cde34-108">Służy do poprawiania błędów na fakturze od dostawcy.</span><span class="sxs-lookup"><span data-stu-id="cde34-108">It's used to correct errors on a vendor invoice.</span></span> 
 

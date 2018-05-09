@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e158988e4c60f02e9cb9a3ff1ea4f510d16240b7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 71fbbaf645f8e8ac4cf406f67c59a9ec4cfe5ca2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="add-a-predecessor-to-a-production-flow-activity"></a><span data-ttu-id="587a4-103">Dodawanie działania poprzedzającego do działania przepływu produkcji</span><span class="sxs-lookup"><span data-stu-id="587a4-103">Add a predecessor to a production flow activity</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="587a4-104">W wersji przepływu produkcji wszystkie działania muszą być ustawione kolejno.</span><span class="sxs-lookup"><span data-stu-id="587a4-104">In a production flow version, all activities must be sequenced.</span></span> <span data-ttu-id="587a4-105">Działanie może mieć jeden lub wiele zdarzeń poprzedzających lub następujących.</span><span class="sxs-lookup"><span data-stu-id="587a4-105">An activity can have one or multiple predecessors or successors.</span></span> 
 

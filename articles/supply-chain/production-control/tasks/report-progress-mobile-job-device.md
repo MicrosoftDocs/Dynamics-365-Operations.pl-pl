@@ -17,15 +17,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3553eda3aa893cc27cd535a5f8061a31fcbbe5e9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8096f703ecf2dc9e8ac33b3e93d698a2de7cf372
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="report-progress-on-a-mobile-job-device"></a><span data-ttu-id="db28d-103">Zgłaszanie postępu za pomocą urządzenia przenośnego zadania</span><span class="sxs-lookup"><span data-stu-id="db28d-103">Report progress on a mobile job device</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="db28d-104">W tej procedurze pokazano sposób uruchamiania i raportowania o postępie zadania produkcyjnego w formularzu rejestracji urządzenia obsługującego zadania.</span><span class="sxs-lookup"><span data-stu-id="db28d-104">This procedure shows you how to start and report progress on a production job in the job device registration form.</span></span>
 

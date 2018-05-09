@@ -19,16 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3ec6928265dca5f80d6e278a05975ec9c16a7cca
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c7ce7939f4efeeabf9ea16fb7e51724d0f0b5601
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="year-end-close"></a><span data-ttu-id="a6e12-103">Zamknięcie na koniec roku</span><span class="sxs-lookup"><span data-stu-id="a6e12-103">Year-end close</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="a6e12-104">W tym temacie opisano wymaganą konfigurację i kroki wykonywania procesu zamknięcia roku w księdze głównej.</span><span class="sxs-lookup"><span data-stu-id="a6e12-104">This topic describes the required setup and steps for running the general ledger year-end close process.</span></span> 
 

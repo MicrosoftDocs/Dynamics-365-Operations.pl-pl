@@ -19,16 +19,16 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 961623b44fa098aa78bc512b5a6e3a8a4fe263dd
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f1508673b04a25179ddd2109d0ecaa8a267fb8a7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="settlement-overview-for-centralized-payments"></a><span data-ttu-id="c7ec1-104">Omówienie rozliczeń w płatnościach scentralizowanych</span><span class="sxs-lookup"><span data-stu-id="c7ec1-104">Settlement overview for centralized payments</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="c7ec1-105">Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą firmy, która obsługuje wszystkie płatności.</span><span class="sxs-lookup"><span data-stu-id="c7ec1-105">Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments.</span></span> <span data-ttu-id="c7ec1-106">Eliminuje to konieczność wprowadzania tej samej transakcji w wielu firmach i zapewnia oszczędność czasu dzięki usprawnieniu procesów propozycji płatności i rozrachunku oraz edycji otwartych i zamkniętych transakcji w przypadku płatności scentralizowanych.</span><span class="sxs-lookup"><span data-stu-id="c7ec1-106">This eliminates the need to enter the same transaction in multiple legal entities and saves time by streamlining the payment proposal process, the settlement process, open transaction editing, and closed transaction editing for centralized payments.</span></span> 
 

@@ -17,15 +17,15 @@ ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ba3251e71a1d7a32bb7f5ddb771b0e78a963e216
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 650a9139d232ef90681689b79617622b04f85888
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sales-tax-reports-for-poland"></a><span data-ttu-id="6cddb-103">Sprawozdania podatkowe dla Polski</span><span class="sxs-lookup"><span data-stu-id="6cddb-103">Sales tax reports for Poland</span></span>
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="6cddb-104">Ten temat zawiera informacje o sprawozdawczości podatku od towarów i usług (VAT) w Polsce oraz podaje informacje, które są wymagane przez prawo w rejestrach podatku VAT w Polsce.</span><span class="sxs-lookup"><span data-stu-id="6cddb-104">This topic provides information about Polish value-added tax (VAT) reporting and the information that is legally required in VAT registers for Poland.</span></span>
 

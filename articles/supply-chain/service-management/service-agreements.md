@@ -19,16 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: dfb8d101c69e9bfdb918dca5cf48da1f6d2564b8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cb49aeab26decf7c40d890fe3a73f0651e86281b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="service-agreements"></a><span data-ttu-id="f5288-103">Umowy serwisowe</span><span class="sxs-lookup"><span data-stu-id="f5288-103">Service agreements</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="f5288-104">Umowy serwisowe pozwalają definiować zasoby, które mają być używane podczas typowej wizyty serwisowej, i sposób fakturowania tych zasobów dla klienta.</span><span class="sxs-lookup"><span data-stu-id="f5288-104">Service agreements let you define the resources that are used in a typical service visit and how those resources are invoiced to the customer.</span></span>
 

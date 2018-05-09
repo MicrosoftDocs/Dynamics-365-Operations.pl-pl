@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b9e3245af746b120117a23b3859e03bd4216e1cd
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ad194efd151dab8c8fe5542cb40de2d811fb4b3d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a><span data-ttu-id="dee9a-103">Używanie arkusza zapasu bezpieczeństwa do aktualizowania minimalnego zapotrzebowania</span><span class="sxs-lookup"><span data-stu-id="dee9a-103">Use the safety stock journal to update minimum coverage</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="dee9a-104">W tej procedurze pokazano sposób obliczania propozycji minimalnego zapotrzebowania na podstawie transakcji historycznych, a następnie aktualizowania zapotrzebowania na pozycje według danych z propozycji.</span><span class="sxs-lookup"><span data-stu-id="dee9a-104">This procedure shows how to calculate minimum coverage proposals based on historical transactions and then update the item coverage with the proposals.</span></span> <span data-ttu-id="dee9a-105">Można to zrobić za pomocą arkusza zapasu bezpieczeństwa.</span><span class="sxs-lookup"><span data-stu-id="dee9a-105">This is done using the safety stock journal.</span></span> <span data-ttu-id="dee9a-106">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="dee9a-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="dee9a-107">To zadanie jest przeznaczone dla planisty produkcji i ułatwia mu obsługę minimalnego zapotrzebowania.</span><span class="sxs-lookup"><span data-stu-id="dee9a-107">This task is intended for the production planner, to help maintain minimum coverage.</span></span>
 

@@ -20,16 +20,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 1e1cf6480029a25acd5758a178a19bce60c86df5
-ms.openlocfilehash: 473799e00b753616ece98fe4024ebdca741296cf
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f5ff667ca48ab59dcf5e6db5add81675f1e7a461
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-a-call-center-channel"></a><span data-ttu-id="8d6bf-103">Konfigurowanie kanału biura obsługi</span><span class="sxs-lookup"><span data-stu-id="8d6bf-103">Set up a call center channel</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="8d6bf-104">Firma można zdefiniować wiele kanałów biura obsługi w programie Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="8d6bf-104">A company can define multiple call center channels in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="8d6bf-105">Kanały biura obsługi konfiguruje się w oknie **Handel detaliczny** \> **Kanały** \> **Biura obsługi** \> **Wszystkie biura obsługi** i są one specyficzne dla firmy.</span><span class="sxs-lookup"><span data-stu-id="8d6bf-105">Call center channels are configured at **Retail** \> **Channels** \> **Call centers** \> **All call centers**, and they are specific to a legal entity.</span></span>
 

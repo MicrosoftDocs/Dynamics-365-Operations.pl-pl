@@ -16,16 +16,16 @@ ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d049c55a40761d0663e3d558b47b4840e5db9bf1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fccbedea611228cc57531c89406f72a6664153c7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="my-team-mobile-workspace"></a><span data-ttu-id="c5a11-104">Mobilny obszar roboczy Mój zespół</span><span class="sxs-lookup"><span data-stu-id="c5a11-104">My team mobile workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="c5a11-105">Ten temat zawiera informacje o komórkowym obszarze roboczym **Mój zespół**.</span><span class="sxs-lookup"><span data-stu-id="c5a11-105">This topic provides information about the **My team** mobile workspace.</span></span> <span data-ttu-id="c5a11-106">Ten obszar roboczy umożliwia kierownikom wyświetlanie informacji o bezpośrednich podwładnych i pracownikach na dalszych szczeblach podwładności.</span><span class="sxs-lookup"><span data-stu-id="c5a11-106">This workspace lets managers view their direct reports and extended staff.</span></span> <span data-ttu-id="c5a11-107">Mogą oni również wysyłać pochwały osobom w swoich łańcuchach relacji służbowych.</span><span class="sxs-lookup"><span data-stu-id="c5a11-107">They can also send praise to individuals in their reporting chain.</span></span>
 

@@ -20,16 +20,16 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d10c8846aa0c996f80206f7f788d772a874886e4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1a56dfce2cca369ca2e28fe9e5c45e2722f16379
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="resource-capabilities"></a><span data-ttu-id="c0380-105">Możliwości zasobu</span><span class="sxs-lookup"><span data-stu-id="c0380-105">Resource capabilities</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="c0380-106">Ten artykuł zawiera informacje o organizowaniu możliwościach zasobów.</span><span class="sxs-lookup"><span data-stu-id="c0380-106">This article provides information about resource capabilities.</span></span> <span data-ttu-id="c0380-107">Możliwość to zdolność zasobu operacyjnego do wykonania określonego działania.</span><span class="sxs-lookup"><span data-stu-id="c0380-107">A capability is the ability of an operations resource to perform a particular activity.</span></span> <span data-ttu-id="c0380-108">Wyjaśniono, jak możliwości i związane z nimi funkcje, takie jak poziom biegłości i priorytet, służą do wybierania zasobów odpowiednich dla działań.</span><span class="sxs-lookup"><span data-stu-id="c0380-108">The article explains how capabilities and related concepts, such as proficiency level and priority, are used to select appropriate resources for an activity.</span></span>
 

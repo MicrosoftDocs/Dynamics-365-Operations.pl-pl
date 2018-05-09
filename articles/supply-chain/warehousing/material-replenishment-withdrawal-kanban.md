@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2413c55a598e8ea8800aff2fca5244e6b204ffae
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 30abf2421df3e5bd3fca927ddc78f1dd821c0d68
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="replenishment-with-withdrawal-kanbans"></a><span data-ttu-id="66638-103">Uzupełnianie zapasów za pomocą kart Kanban wypłat</span><span class="sxs-lookup"><span data-stu-id="66638-103">Replenishment with withdrawal kanbans</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="66638-104">W tym temacie opisano, jak zadanie Kanban wycofania służy do uzupełnienia zapasów materiałów dla działań produkcyjnych.</span><span class="sxs-lookup"><span data-stu-id="66638-104">This topic describes how the withdrawal kanban is used for material replenishment for manufacturing activities.</span></span>
 

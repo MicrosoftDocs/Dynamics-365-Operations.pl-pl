@@ -19,16 +19,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a11a26df85647aa36cd30c42f81be4ec2af4409b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1f24ffbba0c28b241de66f484546844bc72b90c9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="immediate-replenishment"></a><span data-ttu-id="07ea5-103">Natychmiastowe uzupełnianie zapasów</span><span class="sxs-lookup"><span data-stu-id="07ea5-103">Immediate replenishment</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="07ea5-104">Funkcja natychmiastowego uzupełniania zapasów pozwala błyskawicznie uzupełnić zapasy, gdy wiersz dyrektywy lokalizacji nie jest w stanie przydzielić zapasów.</span><span class="sxs-lookup"><span data-stu-id="07ea5-104">Immediate replenishment lets you replenish inventory immediately after a location directive line fails to allocate inventory.</span></span> <span data-ttu-id="07ea5-105">Uzupełnienie zapasów opiera się na jednym wierszu w konfiguracji dyrektywy lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="07ea5-105">The replenishment is based on a single line in the setup of the location directive.</span></span> <span data-ttu-id="07ea5-106">Jeśli zapasy nie są dostępne w jednostce miary określonej za pomocą tego wiersza, uzupełnienie zapasów w tej jednostce miary odbywa się natychmiast.</span><span class="sxs-lookup"><span data-stu-id="07ea5-106">If inventory isn't on hand in the unit of measure that is specified by that line, replenishment of that unit of measure occurs immediately.</span></span>
 

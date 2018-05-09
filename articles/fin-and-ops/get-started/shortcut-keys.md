@@ -18,16 +18,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 445c639dc56a5d240f4e35353276ef893f2137da
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9472446a1683cc34a65933a0cd27d7a72c92a9d8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="keyboard-shortcuts"></a><span data-ttu-id="219c9-103">Skróty klawiaturowe</span><span class="sxs-lookup"><span data-stu-id="219c9-103">Keyboard shortcuts</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="219c9-104">Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="219c9-104">The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations.</span></span> 
 

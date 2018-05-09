@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5109bc180cedfb21dfb8b2920d71d54812e7e6cf
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 31b285f06ea8b7951f2439637a4fccb83db31578
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="piece-picking-confirmation"></a><span data-ttu-id="969fc-103">Potwierdzenie pobrania sztuk</span><span class="sxs-lookup"><span data-stu-id="969fc-103">Piece picking confirmation</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="969fc-104">Funkcja pobrania sztuk umożliwia potwierdzanie każdego artykułu w zapasach za pomocą pracy pobrania lub inwentaryzacji na urządzeniu przenośnym.</span><span class="sxs-lookup"><span data-stu-id="969fc-104">Piece picking allows you to confirm each piece of inventory through picking or counting work on a mobile device.</span></span> <span data-ttu-id="969fc-105">Dla pobrań można potwierdzić ilość pracy do przetworzenia aż do ilości wymienionej w pracy, która ma zostać pobrana.</span><span class="sxs-lookup"><span data-stu-id="969fc-105">For picks, you can confirm the quantity of work to be processed up to the quantity that is specified on work to be picked.</span></span> <span data-ttu-id="969fc-106">Dla pracy inwentaryzacji pracy można skanować inwentaryzowane zapasy oraz śledzić łączną ilość.</span><span class="sxs-lookup"><span data-stu-id="969fc-106">For counting work, you can scan the inventory that you are counting and track the total amount.</span></span>
 

@@ -17,16 +17,16 @@ ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7af390ceaff145849a06cfece8a662d4cba0e86d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 24f8fab744a186ef9070814a738a93bc99a479de
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="pos-improvements-for-serialized-products"></a><span data-ttu-id="7b06e-103">Ulepszenie punktu sprzedaży dla produktów seryjnych</span><span class="sxs-lookup"><span data-stu-id="7b06e-103">POS improvements for serialized products</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a><span data-ttu-id="7b06e-104">Przegląd</span><span class="sxs-lookup"><span data-stu-id="7b06e-104">Overview</span></span> 
 <span data-ttu-id="7b06e-105">Na podstawie ustawień w module Centrala sieci sprzedaży produkty można sklasyfikować jako seryjne lub nieseryjne.</span><span class="sxs-lookup"><span data-stu-id="7b06e-105">Based on the settings in Retail headquarters, products can be classified as either serialized or non-serialized.</span></span> <span data-ttu-id="7b06e-106">Jeżeli produkty są seryjne, do każdej pozycji można przypisać unikatowy numer ułatwiający śledzenie gwarancji, śledzenie pozycji i potwierdzenie własności.</span><span class="sxs-lookup"><span data-stu-id="7b06e-106">When products are serialized, each item can be assigned a unique number that helps track warranties, trace items, and confirm ownership.</span></span> <span data-ttu-id="7b06e-107">Mimo że możliwość podania numerów seryjnych dla produktów seryjnych była dostępna w aplikacji Modern/Cloud Point of Sale (POS), dodano ulepszenia zapewniające kasjerom oszczędność czasu i zwiększenie wydajności pracy.</span><span class="sxs-lookup"><span data-stu-id="7b06e-107">Although, the ability to provide serial numbers for serialized products existed in our Modern/Cloud Point of Sale (POS), some improvements have been added to help cashiers save time and be more productive.</span></span>  

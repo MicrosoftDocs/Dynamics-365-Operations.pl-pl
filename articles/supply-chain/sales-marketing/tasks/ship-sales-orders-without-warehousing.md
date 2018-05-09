@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d0ad0869907b23ce5e0b44e3e9ecee3f2cd34ede
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 16feadb3a2e30e3400d85829c73f6f20780e7b71
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="ship-sales-orders-without-warehousing"></a><span data-ttu-id="7ea47-103">Wysyłanie towarów z zamówień sprzedaży bez przekazywania do magazynu</span><span class="sxs-lookup"><span data-stu-id="7ea47-103">Ship sales orders without warehousing</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7ea47-104">W tym podręczniku zilustrowano sposób aktualizacji zamówienia sprzedaży, gdy produkty są wysyłane do odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="7ea47-104">This guide demonstrates how to update a sales order when products are shipped to the customer.</span></span> <span data-ttu-id="7ea47-105">Przewodnik ma zastosowanie do przepływu realizacji, który nie jest skonfigurowany dla zarządzania magazynem (podstawowego ani zaawansowanego), a zatem nie wymaga, aby przed wysyłką zostało zarejestrowane pobranie produktu.</span><span class="sxs-lookup"><span data-stu-id="7ea47-105">The guide is applicable to the fulfillment flow that is not set up for warehouse management (neither basic or advanced warehousing), and therefore does not require product picking to be registered before shipment.</span></span> <span data-ttu-id="7ea47-106">Można wykonać tę procedurę przy użyciu danych własnych lub firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="7ea47-106">You can run this procedure on your own data or in demo data company USMF.</span></span> <span data-ttu-id="7ea47-107">W obu przypadkach przed rozpoczęciem tego zadania utwórz zamówienie sprzedaży na produkty magazynowe z ilością większą od 1.</span><span class="sxs-lookup"><span data-stu-id="7ea47-107">In both cases, before you start this task, create a sales order for an inventoried product with a quantity of greater than 1.</span></span> <span data-ttu-id="7ea47-108">Aby uniknąć błędu księgowania, należy sprawdzić, czy ilość dostępnych zapasów produktu w oddziale i magazynie wybranych w zamówieniu pokrywa ilość zamówienia.</span><span class="sxs-lookup"><span data-stu-id="7ea47-108">To avoid a posting error, you need to check that the product's on-hand quantity in the site and warehouse that you’ve selected on the order covers the order quantity.</span></span>
 

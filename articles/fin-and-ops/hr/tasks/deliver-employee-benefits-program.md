@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c94f731cbdd62d51a21a42e8fcc86c5711c0e965
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cedb3f382a07934dcec7e4efeb91e9b30ebef10c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="deliver-an-employee-benefits-program"></a><span data-ttu-id="375c4-103">Dostarczanie programu świadczeń dla pracowników</span><span class="sxs-lookup"><span data-stu-id="375c4-103">Deliver an employee benefits program</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="375c4-104">To zadanie pokazuje sposób tworzenia elementów świadczenia, które będą używane podczas tworzenia nowego świadczenia.</span><span class="sxs-lookup"><span data-stu-id="375c4-104">This task will show you how to create benefit elements which will be used when creating a new benefit.</span></span> <span data-ttu-id="375c4-105">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="375c4-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="375c4-106">Zadanie jest przeznaczona dla menedżer ds. wynagrodzeń i świadczeń.</span><span class="sxs-lookup"><span data-stu-id="375c4-106">This task is intended for a Compensation and Benefits manager.</span></span>
 

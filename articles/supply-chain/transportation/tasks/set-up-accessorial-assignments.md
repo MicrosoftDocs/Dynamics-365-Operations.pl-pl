@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 29b39ad74c064da88154a77299cedc9babe3786b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d3e49b4f4d8869790187a4f8c0b7d0129f5772d6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-accessorial-assignments"></a><span data-ttu-id="5ad6d-103">Konfigurowanie przypisania usług dodatkowych</span><span class="sxs-lookup"><span data-stu-id="5ad6d-103">Set up accessorial assignments</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5ad6d-104">W tej procedurze pokazano sposób konfigurowania przypisania usług dodatkowych.</span><span class="sxs-lookup"><span data-stu-id="5ad6d-104">This procedure shows how to set up an accessorial assignment.</span></span> <span data-ttu-id="5ad6d-105">Zazwyczaj jest to realizowane przez koordynatora transportu.</span><span class="sxs-lookup"><span data-stu-id="5ad6d-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="5ad6d-106">Zanim będzie można użyć tego przewodnika, należy wykonać zadania z przewodnika „Ustawianie opłat za usługi dodatkowe Centrum i głównych usług dodatkowych”.</span><span class="sxs-lookup"><span data-stu-id="5ad6d-106">Before you use this guide you need to run the "Set up hub accessorial charges and accessorial masters" guide.</span></span>
 

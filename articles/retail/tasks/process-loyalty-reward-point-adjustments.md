@@ -17,15 +17,15 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e106e79674b47b918c79f734e809d19994a94350
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 004f86b0617c2f95b5ed7422c625068c6ac5c91f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a><span data-ttu-id="622fd-103">Przetwarzanie korekt punktów lojalnościowych</span><span class="sxs-lookup"><span data-stu-id="622fd-103">Process loyalty reward point adjustments</span></span>
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="622fd-104">Ta procedura przedstawia sposób wyszukiwania informacji o karcie lojalnościowej i korygowania punktów lojalnościowych.</span><span class="sxs-lookup"><span data-stu-id="622fd-104">This procedure demonstrates how to look up loyalty card information and adjust loyalty reward points.</span></span> <span data-ttu-id="622fd-105">Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USRT.</span><span class="sxs-lookup"><span data-stu-id="622fd-105">The demo data company used to create this task is USRT.</span></span> <span data-ttu-id="622fd-106">Zadanie jest przeznaczone dla roli Kierownik ds. operacyjnych sieci sprzedaży lub Menedżer ds. obsługi klienta.</span><span class="sxs-lookup"><span data-stu-id="622fd-106">This task is intended for the Retail operations manager role or a Customer service manager role.</span></span>
 

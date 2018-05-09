@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bad86a4726ce69015f318d9af98992b36d34b29a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ad2a356c4f6bc2c72898e8b841963e6bee6daac0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-requisition-for-consumption"></a><span data-ttu-id="d2b51-103">Tworzenie zapotrzebowania na zużycie</span><span class="sxs-lookup"><span data-stu-id="d2b51-103">Create a requisition for consumption</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d2b51-104">Ta procedura poprowadzi Cię przez proces tworzenia zapotrzebowania.</span><span class="sxs-lookup"><span data-stu-id="d2b51-104">This procedure walks you through the process of creating a requisition.</span></span> <span data-ttu-id="d2b51-105">Pokazuje różne sposoby wyszukiwania produktów w katalogu zaopatrzenia oraz sposoby dodawania produktu, którego nie ma w katalogu.</span><span class="sxs-lookup"><span data-stu-id="d2b51-105">It shows you different ways to search for products in your procurement catalog and how to add a product that isn’t in your catalog.</span></span> <span data-ttu-id="d2b51-106">Przed rozpoczęciem tej procedury musisz mieć skonfigurowaną zasadę zakupów z domyślnym typem zapotrzebowania Zużycie.</span><span class="sxs-lookup"><span data-stu-id="d2b51-106">Before you start this procedure, you must have a purchasing policy set up with Consumption as the default type of requisition.</span></span> <span data-ttu-id="d2b51-107">Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="d2b51-107">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="d2b51-108">Procedurę można wykonać tylko przy użyciu profilu użytkownika skonfigurowanego jako pracownik.</span><span class="sxs-lookup"><span data-stu-id="d2b51-108">The procedure can only be carried out by a user profile that is set up as worker.</span></span>  <span data-ttu-id="d2b51-109">To zadanie normalnie wykonuje pracownik.</span><span class="sxs-lookup"><span data-stu-id="d2b51-109">This task would normally be carried out by an employee.</span></span> <span data-ttu-id="d2b51-110">Rola zabezpieczeń Pracownik pozwoli wykonać te zadania. Jeśli używasz firmy USMF, możesz się zalogować jako Alicia.</span><span class="sxs-lookup"><span data-stu-id="d2b51-110">The Employee employ security role will allow you to carry out the tasks, or if you’re using USMF, you can log in as Alicia.</span></span>
 

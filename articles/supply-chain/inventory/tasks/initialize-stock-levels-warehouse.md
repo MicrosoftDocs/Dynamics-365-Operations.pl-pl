@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4ad9ab54fbe84c8ec47aa2bebcca44656124a73e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: deec8bfe6e00a451d80be75ead428d5c5cc037b6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="initialize-stock-levels-in-the-warehouse"></a><span data-ttu-id="a306a-103">Inicjowanie poziomów zapasów w magazynie</span><span class="sxs-lookup"><span data-stu-id="a306a-103">Initialize stock levels in the warehouse</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a306a-104">W tej procedurze pokazano, jak ręcznie zaktualizować dostępne zapasy przy użyciu arkusza przesunięć zapasów (można również aktualizować dostępne zapasy przez importowanie transakcji w jednostkach danych).</span><span class="sxs-lookup"><span data-stu-id="a306a-104">This procedure shows you how to get the on-hand inventory updated manually using an Inventory movement journal.</span></span> <span data-ttu-id="a306a-105">Zadania z przewodnika można wykonać na danych firmy demonstracyjnej USMF, gdzie wszystkie warunki wstępne, takie jak nazwa arkusza, ustawienia towaru, profile księgowania i konta, są dostępne.</span><span class="sxs-lookup"><span data-stu-id="a306a-105">(It’s also possible to update on-hand inventory by importing transactions in data entities.) You can run this guide in demo data company USMF where all the prerequisites like journal name, item setup, posting profiles, and accounts are available.</span></span> <span data-ttu-id="a306a-106">Przewodnik proponuje określone wartości dla używanego towaru i wymiarów.</span><span class="sxs-lookup"><span data-stu-id="a306a-106">The guide suggests specific values for the item and dimensions that are used.</span></span> <span data-ttu-id="a306a-107">Jeśli wybierzesz inny towar, może być konieczne wprowadzenie wartości dla innych wymiarów.</span><span class="sxs-lookup"><span data-stu-id="a306a-107">If you choose a different item, you may need to enter values for different dimensions.</span></span>
 

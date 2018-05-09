@@ -20,16 +20,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 46178d9da5464d8cb74b1d52142d6ad08a293349
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 602be91bff1bd90b3888b7861907c23f334b0d02
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="packing-materials-and-fees"></a><span data-ttu-id="973df-105">Materiały opakowaniowe i związane z nimi opłaty</span><span class="sxs-lookup"><span data-stu-id="973df-105">Packing materials and fees</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="973df-106">Opłaty za materiały opakowań są uiszczane firmie recyklingowej w pewnych odstępach czasu.</span><span class="sxs-lookup"><span data-stu-id="973df-106">Packing material fees are paid to a recycling company at certain intervals.</span></span> <span data-ttu-id="973df-107">Płaci się kwotę według jednostki masy za każdy materiał, z którego jest wykonana jednostka opakowania.</span><span class="sxs-lookup"><span data-stu-id="973df-107">An amount is paid, per unit of weight, for each material that a packing unit consists of.</span></span> <span data-ttu-id="973df-108">Opłaty za materiały opakowań są obliczane i zgłaszane, ale transakcje finansowe nie są księgowane, ponieważ opłaty nie są uznawane za podatki należne właściwemu organowi.</span><span class="sxs-lookup"><span data-stu-id="973df-108">Packing material fees are calculated and reported, but no ledger transactions are posted because the fees are not regarded as taxes to be paid to an authority.</span></span>
 

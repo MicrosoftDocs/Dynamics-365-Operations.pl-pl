@@ -18,16 +18,16 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3a0e95c612a159fa8f0b03d54924fe57c5d0c4c1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0febf2eaee91d0648ba6b5586abcf3be0f04dfa9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="workflow-overview"></a><span data-ttu-id="b0130-103">Omówienie przepływu pracy</span><span class="sxs-lookup"><span data-stu-id="b0130-103">Workflow overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="b0130-104">W tym temacie opisano system przepływów pracy dostępny w programie Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="b0130-104">This topic describes the workflow system in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 

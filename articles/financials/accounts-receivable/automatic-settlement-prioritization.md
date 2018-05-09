@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 17c9da7abaf72ddca8500acf50808a333e76446a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4016878c1d179ced826dc19c268de23be7bb8c76
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="automatic-settlement-and-prioritization"></a><span data-ttu-id="87342-104">Automatyczne rozliczanie i priorytety</span><span class="sxs-lookup"><span data-stu-id="87342-104">Automatic settlement and prioritization</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="87342-105">W tym temacie opisano, jak transakcje są rozliczane po wybraniu opcji Automatyczne rozliczanie na stronie Parametry modułu rozrachunków z odbiorcami.</span><span class="sxs-lookup"><span data-stu-id="87342-105">This topic describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page.</span></span> <span data-ttu-id="87342-106">Wyjaśniono również możliwości używania automatycznego rozliczania w połączeniu z priorytetem płatności.</span><span class="sxs-lookup"><span data-stu-id="87342-106">It also explains how automatic settlement can be used in combination with the payment priority.</span></span>
 

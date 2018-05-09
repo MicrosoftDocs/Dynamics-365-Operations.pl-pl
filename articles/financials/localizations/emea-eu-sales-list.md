@@ -18,16 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e1eff86902170401e593019ea555d9c2a4c11c04
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e2c4fe1c93693cee9164f2c22ad71a29abd6473d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="eu-sales-list-reporting"></a><span data-ttu-id="32a08-103">Raportowanie listy sprzedaży do UE</span><span class="sxs-lookup"><span data-stu-id="32a08-103">EU sales list reporting</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="32a08-104">Ten artykuł zawiera informacje o raportowaniu listy sprzedaży do państw Unii Europejskiej (UE).</span><span class="sxs-lookup"><span data-stu-id="32a08-104">This article provides information about European Union (EU) Sales list reporting.</span></span>
 

@@ -16,16 +16,16 @@ ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8554d868e675a152ff6e2ff25dd08ab49f02359c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ff726670e0fd7566a74e6def73555a7c53b86f97
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="invoice-approvals-mobile-workspace"></a><span data-ttu-id="406bc-104">Mobilny obszar roboczy Zatwierdzenia faktur</span><span class="sxs-lookup"><span data-stu-id="406bc-104">Invoice approvals mobile workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="406bc-105">Ten temat zawiera informacje o komórkowym obszarze roboczym **Zatwierdzenia faktur**.</span><span class="sxs-lookup"><span data-stu-id="406bc-105">This topic provides information about the **Invoice approvals** mobile workspace.</span></span> <span data-ttu-id="406bc-106">Ten obszar roboczy wyświetla listę faktur, które zostały Ci przypisane przez proces przepływu pracy nagłówków faktur od dostawców.</span><span class="sxs-lookup"><span data-stu-id="406bc-106">This workspace provides a list of invoices that have been assigned to you through the vendor invoice header workflow process.</span></span> 
 

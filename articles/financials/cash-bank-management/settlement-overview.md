@@ -19,16 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d69eb1f9da44c02a96e0e7c353d700382f87c24b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 54ad970f226a20228076f890e99bb6935aa4c5dd
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="settlement-overview"></a><span data-ttu-id="75e7c-104">Przegląd rozliczenia</span><span class="sxs-lookup"><span data-stu-id="75e7c-104">Settlement overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="75e7c-105">Ten artykuł zawiera ogólne informacje o procesie rozliczania.</span><span class="sxs-lookup"><span data-stu-id="75e7c-105">This article provides general information about the settlement process.</span></span> <span data-ttu-id="75e7c-106">Opisano w nim typy transakcji, które można rozliczać, czas i metody rozliczania transakcji oraz wyniki procesu rozliczania.</span><span class="sxs-lookup"><span data-stu-id="75e7c-106">It describes the types of transactions that can be settled, when and how transactions can be settled, and the results of the settlement process.</span></span>
 

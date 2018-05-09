@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4232deaa48fda7a388a1e57916975a6cea13cfe5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e40c7832ae9aaec5497d9aee92618fae72b96438
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="position-forecasting"></a><span data-ttu-id="d9cdf-104">Prognozy dotyczące stanowisk</span><span class="sxs-lookup"><span data-stu-id="d9cdf-104">Position forecasting</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="d9cdf-105">Wydatki, które dotyczą pracowników, często stanowią znaczną część kosztów organizacji.</span><span class="sxs-lookup"><span data-stu-id="d9cdf-105">Expenses that are related to workers often make up a large proportion of an organization's costs.</span></span> <span data-ttu-id="d9cdf-106">Prognozowanie stanowisk umożliwia planowanie tych wydatków i uwzględnianie ich w planowaniu budżetu.</span><span class="sxs-lookup"><span data-stu-id="d9cdf-106">Position forecasting lets you plan those expenses and include them in the planning of budgets.</span></span>
 

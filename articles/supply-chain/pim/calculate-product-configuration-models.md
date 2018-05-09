@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: cfdf90a03da6cfd6c0e7c59f9cae8f9741d8d520
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f0274db86db4cf7bc3904386ab15ae4b324cb888
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="calculations-for-product-configuration-models-faq"></a><span data-ttu-id="29dc0-103">Obliczenia dla modeli produktu w konfiguracji — często zadawane pytania</span><span class="sxs-lookup"><span data-stu-id="29dc0-103">Calculations for product configuration models FAQ</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="29dc0-104">W tym temacie opisano obliczenia dla modeli konfiguracji produktu i wyjaśniono sposób korzystania z obliczeń wraz z ograniczeniami.</span><span class="sxs-lookup"><span data-stu-id="29dc0-104">This topic describes calculations for product configuration models and explains how to use calculations together with constraints.</span></span>
 

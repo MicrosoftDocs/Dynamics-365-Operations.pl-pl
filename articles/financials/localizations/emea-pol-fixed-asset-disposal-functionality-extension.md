@@ -18,16 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1befa741c5090547cf11b82799486764cd06b7a3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 04b8dcd54b479e93267361b2e2d6214b3d8b9cfb
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fixed-assets-disposal-for-poland"></a><span data-ttu-id="5cc28-103">Likwidacja środków trwałych dla Polski</span><span class="sxs-lookup"><span data-stu-id="5cc28-103">Fixed assets disposal for Poland</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="5cc28-104">Ten temat zawiera informacje o funkcjonalności likwidacji środków trwałych dla użytkowników w firmach w Polsce.</span><span class="sxs-lookup"><span data-stu-id="5cc28-104">This topic provides information about fixed asset disposal functionality for users in legal entities in Poland.</span></span> 
 

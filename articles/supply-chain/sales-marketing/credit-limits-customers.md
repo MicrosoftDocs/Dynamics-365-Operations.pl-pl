@@ -17,16 +17,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e57389ac2882b011bf4ae98334db18a8f35846e2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0c4309045abdac36376bc7ddb313475710a0fd02
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="credit-limits-for-customers"></a><span data-ttu-id="2d9f8-103">Limity kredytu dla odbiorców</span><span class="sxs-lookup"><span data-stu-id="2d9f8-103">Credit limits for customers</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2d9f8-104">Ustawienie limitu kredytu umożliwia określenie maksymalnej kwoty rozszerzenia kredytu dla odbiorców.</span><span class="sxs-lookup"><span data-stu-id="2d9f8-104">Setting a credit limit lets you specify the maximum amount of credit to extend to your customers.</span></span> <span data-ttu-id="2d9f8-105">Jeżeli określono limit kredytu, jest sprawdzany automatycznie, gdy użytkownik spróbuje zaktualizować dokument.</span><span class="sxs-lookup"><span data-stu-id="2d9f8-105">If a credit limit is specified, it is checked automatically when a user attempts to update a document.</span></span> <span data-ttu-id="2d9f8-106">W przypadku przekroczenia limitu kredytu wyświetlany jest komunikat dla użytkownika.</span><span class="sxs-lookup"><span data-stu-id="2d9f8-106">If the credit limit is exceeded, a message is displayed to the user.</span></span> <span data-ttu-id="2d9f8-107">Ten artykuł zawiera przegląd sposobu działania limitu kredytu i odpowiedzi na następujące pytania:</span><span class="sxs-lookup"><span data-stu-id="2d9f8-107">This article provides an overview of how credit limits work  and answers the following questions:</span></span>
 

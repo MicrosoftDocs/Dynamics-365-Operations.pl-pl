@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a83a3325c80eb6fc1a19371a6115413ca9b82185
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c085b40298663fad50df93034e1e1a684e0de54b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="time-and-attendance-registration"></a><span data-ttu-id="6c20f-104">Rejestracja czasu i frekwencji</span><span class="sxs-lookup"><span data-stu-id="6c20f-104">Time and attendance registration</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="6c20f-105">Pracownicy odpowiedzialni za rejestrację czasu mogą wprowadzać różne zdarzenia, na przykład wejścia, wyjścia, działania pośrednie i nieobecności.</span><span class="sxs-lookup"><span data-stu-id="6c20f-105">Time registration workers can enter different types of time registrations, for example, clock in, clock out, register indirect activities, and absence registration.</span></span> <span data-ttu-id="6c20f-106">W tym temacie opisano rejestracje, ich obliczanie i zatwierdzanie, a także stosowanie przepływu pracy w celu dodania struktury i automatycznego zatwierdzania do procesu zatwierdzania kart czasu pracy.</span><span class="sxs-lookup"><span data-stu-id="6c20f-106">This topic describes registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets.</span></span> 
 

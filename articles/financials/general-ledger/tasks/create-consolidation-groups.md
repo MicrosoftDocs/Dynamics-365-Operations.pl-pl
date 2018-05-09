@@ -16,15 +16,15 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ab4b88f47fd1fe35f05811ce7d87deaba09a4c69
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 20279e9b4317699712a26cf9520359e144baa971
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a><span data-ttu-id="4e1c4-103">Tworzenie grup konsolidacji i dodatkowych kont konsolidacyjnych</span><span class="sxs-lookup"><span data-stu-id="4e1c4-103">Create consolidation groups and additional consolidation accounts</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4e1c4-104">W tej procedurze pokazano, jak utworzyć grupę kont konsolidacji, a następnie dodać do niej konta.</span><span class="sxs-lookup"><span data-stu-id="4e1c4-104">This procedure shows how to create a consolidation account group and then add accounts to the group.</span></span> <span data-ttu-id="4e1c4-105">Procedura wykorzystuje dane firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="4e1c4-105">This procedure uses the demo data company USMF.</span></span>
 

@@ -20,16 +20,16 @@ ms.author: conradv
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8625e9c9b91acee52e2207d462f38286cafeb773
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: bc5a560b25871e5b70cb436bd6dbcbf00d860f61
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="product-lifecycle-state"></a><span data-ttu-id="77be5-103">Stan cyklu życia produktu</span><span class="sxs-lookup"><span data-stu-id="77be5-103">Product lifecycle state</span></span> 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="77be5-104">Stan cyklu życia produktu dokumentuje stan cyklu życia zwolnionego produktu lub wariantu produktu.</span><span class="sxs-lookup"><span data-stu-id="77be5-104">A product lifecycle state documents the lifecycle state of a released product or product variant.</span></span> <span data-ttu-id="77be5-105">Stany cyklu życia produktu są definiowane przez użytkownika, zwykle menedżera produktu lub menedżera danych głównych produktu.</span><span class="sxs-lookup"><span data-stu-id="77be5-105">Product lifecycle states are defined by the user, typically a product manager or a product master data manager.</span></span> <span data-ttu-id="77be5-106">Na określone procesy biznesowe, takie jak planowanie główne, ma wpływ określony stan cykl życia.</span><span class="sxs-lookup"><span data-stu-id="77be5-106">Specific business processes, such as master planning, can be affected by a specific lifecycle state.</span></span>   
 

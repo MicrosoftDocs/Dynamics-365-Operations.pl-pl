@@ -18,16 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 647bbbc8555e0aa00b2779d87e63cb4dd31edf96
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f061368c7593327b9646d8f1d19db8a7994f0318
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="advance-holders"></a><span data-ttu-id="eaa6c-103">Posiadacze zaliczek</span><span class="sxs-lookup"><span data-stu-id="eaa6c-103">Advance holders</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="eaa6c-104">Ten temat zawiera więcej informacji o funkcjonalności posiadacza zaliczki w programie Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="eaa6c-104">Learn about advance holder functionality in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 

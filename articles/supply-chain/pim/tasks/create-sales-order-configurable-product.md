@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: db06eef916b1298470e51b8674fc0dee15184473
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e9b42a7343dacc1bcd995c10a4b90a87998a31ba
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-sales-order-for-a-configurable-product"></a><span data-ttu-id="b259f-103">Tworzenie zamówienia sprzedaży dla konfigurowalnego produktu</span><span class="sxs-lookup"><span data-stu-id="b259f-103">Create a sales order for a configurable product</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b259f-104">Ta procedura pokazuje sposób zastosowania szablonu konfiguracji do produktu w zamówieniu sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="b259f-104">This procedure shows how to apply a configuration template to a product on a sales order.</span></span> <span data-ttu-id="b259f-105">W przykładzie użyto modelu głośnika D0006 zawartego w danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="b259f-105">This example uses the D0006 speaker model in the USMF demo data company.</span></span> <span data-ttu-id="b259f-106">Zazwyczaj z tej procedury korzysta osoba przetwarzająca zamówienia sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="b259f-106">Typically, a sales order processor uses this procedure.</span></span>
 

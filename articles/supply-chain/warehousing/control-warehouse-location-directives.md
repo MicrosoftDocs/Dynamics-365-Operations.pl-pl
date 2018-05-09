@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f4345bcaa4820aa037a405decaa5ee8f56ad49f0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c458cc46aa81135f7c6da2aca3ec24393a91d2d5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a><span data-ttu-id="d5f15-103">Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji</span><span class="sxs-lookup"><span data-stu-id="d5f15-103">Control warehouse work by using work templates and location directives</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="d5f15-104">W tym artykule opisano sposób używania szablonów pracy i dyrektyw lokalizacji do określania jak i gdzie praca jest wykonywana w magazynie.</span><span class="sxs-lookup"><span data-stu-id="d5f15-104">This article describes how to use work templates and location directives to determine how and where work is carried out in the warehouse.</span></span>
 

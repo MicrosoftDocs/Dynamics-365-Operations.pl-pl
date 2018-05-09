@@ -19,15 +19,15 @@ ms.author: ilyako
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0c463cc2427710a1509c5cbcb8dccab32b05ff07
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 38cc3f161f3831a17b79e8790287f95041615cf3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="returnable-packaging-for-poland"></a><span data-ttu-id="d13a8-103">Opakowania zwrotne dla Polski</span><span class="sxs-lookup"><span data-stu-id="d13a8-103">Returnable packaging for Poland</span></span>
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="d13a8-104">Funkcjonalność opakowań zwrotnych pozwala obsługiwać rejestrowanie opakowań, które mogą być zwracane przez odbiorców.</span><span class="sxs-lookup"><span data-stu-id="d13a8-104">The functionality for returnable packaging lets you handle the registration of packages that can be returned by customers.</span></span> <span data-ttu-id="d13a8-105">Użytkownicy mogą definiować kody opakowań i określać kwotę kaucji, jaką odbiorca płaci za zwrotne materiały opakowaniowe.</span><span class="sxs-lookup"><span data-stu-id="d13a8-105">Users can define packaging codes and specify the amount of the deposit that a customer pays for returned packaging materials.</span></span> <span data-ttu-id="d13a8-106">Ta funkcjonalność jest rozszerzeniem standardowej funkcjonalności materiałów opakowaniowych.</span><span class="sxs-lookup"><span data-stu-id="d13a8-106">This functionality is an extension of the standard functionality for packaging materials.</span></span>
 

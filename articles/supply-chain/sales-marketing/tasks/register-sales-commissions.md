@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d21f9047dcea0af59c24339ebb57e8eabe3950d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0fad3c62f926e508e09a265a600194b7ea595bf0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="register-sales-commissions"></a><span data-ttu-id="ef90b-103">Rejestrowanie prowizji od sprzedaży</span><span class="sxs-lookup"><span data-stu-id="ef90b-103">Register sales commissions</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ef90b-104">W tej procedurze pokazano sposób obliczania i rejestrowania prowizji od sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="ef90b-104">This procedure shows you how sales commissions are calculated and registered.</span></span> <span data-ttu-id="ef90b-105">Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="ef90b-105">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="ef90b-106">Przed rozpoczęciem tego przewodnika wykonaj przewodnik o nazwie „Konfigurowanie reguł dla prowizji od sprzedaży”, aby się upewnić, że wszystkie niezbędne obliczenia prowizji są skonfigurowane.</span><span class="sxs-lookup"><span data-stu-id="ef90b-106">Before starting this guide, run the guide called "Set up sales commission rules" to make sure that you have all the necessary commission calculation setup.</span></span>
 

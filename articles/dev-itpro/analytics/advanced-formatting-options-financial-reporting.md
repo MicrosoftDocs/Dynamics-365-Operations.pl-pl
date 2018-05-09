@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8652766766a557d8399e6a94088a6f9bc82ff018
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 88ec64c89bc9325853678b6bc20bf20283fbd3ae
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="advanced-formatting-options-in-financial-reporting"></a><span data-ttu-id="9ce54-103">Zaawansowane opcje formatowania w raportowaniu finansowym</span><span class="sxs-lookup"><span data-stu-id="9ce54-103">Advanced formatting options in financial reporting</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="9ce54-104">Podczas tworzenia raportu w module raportowania finansowego są dostępne dodatkowe funkcje formatowania, włącznie z filtrami wymiarów, ograniczeniami kolumn i jednostek sprawozdawczych, wierszami niedrukowanymi i instrukcjami IF/THEN/ELSE w obliczeniach.</span><span class="sxs-lookup"><span data-stu-id="9ce54-104">When you create a report in financial reporting, additional formatting functions are available, including filters for dimensions, restrictions for columns and reporting units, non-printing rows, and IF/THEN/ELSE statements in calculations.</span></span> 
 

@@ -18,16 +18,16 @@ ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 823c26247a8c02e5b75557d5b252e6aba2b0113e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 59e45f504fbe484f3eb842e3d6a6bbfc4fe0e50f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="websearchax-retired"></a><span data-ttu-id="d150b-104">Strona WebSearchAX zamknięta</span><span class="sxs-lookup"><span data-stu-id="d150b-104">WebSearchAX retired</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="d150b-105">Musieliśmy zamknąć stronę WebSearchAX.</span><span class="sxs-lookup"><span data-stu-id="d150b-105">We’ve had to retire the WebSearchAX page.</span></span> <span data-ttu-id="d150b-106">Zalecamy, aby zamiast niej używać do przeszukiwania witryny ulubionej wyszukiwarki.</span><span class="sxs-lookup"><span data-stu-id="d150b-106">We recommend that you use site search from your favorite search engine to replace it.</span></span>  <span data-ttu-id="d150b-107">Na przykład:</span><span class="sxs-lookup"><span data-stu-id="d150b-107">For example:</span></span> 
 

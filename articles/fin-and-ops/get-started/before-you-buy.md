@@ -17,16 +17,16 @@ ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 690d85cd758a117ce5b69632d63ce0f2b59c5980
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 16456629e82ecd0a4d4eae4a95cfa2a0471782a2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="before-you-buy"></a><span data-ttu-id="b68fb-103">Zanim kupisz</span><span class="sxs-lookup"><span data-stu-id="b68fb-103">Before you buy</span></span> 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="b68fb-104">To Twój pierwszy kontakt z oprogramowaniem Dynamics 365 for Finance and Operations?</span><span class="sxs-lookup"><span data-stu-id="b68fb-104">New to Dynamics 365 for Finance and Operations?</span></span> <span data-ttu-id="b68fb-105">Przygotowaliśmy wytyczne krok po kroku, z których można korzystać niezależnie od tego, czy dopiero oceniasz przydatność programu Finance and Operations, czy też wiążąco chcesz dokonać zakupu.</span><span class="sxs-lookup"><span data-stu-id="b68fb-105">We've put together step-by-step guidance whether you’re still evaluating Finance and Operations or ready to make a purchase.</span></span>
 

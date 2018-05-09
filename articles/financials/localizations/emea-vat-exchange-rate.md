@@ -19,16 +19,16 @@ ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a91fa0b2952ef9baad43df63de2a39e00d7ac368
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5f3988e9dea7687d710a7580c0c63d720f3baa0a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vat-exchange-rate-overview"></a><span data-ttu-id="9ec4e-105">Podstawowe informacje o kursie wymiany dla podatku VAT</span><span class="sxs-lookup"><span data-stu-id="9ec4e-105">VAT exchange rate overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="9ec4e-106">Ten temat zawiera informacje dotyczące kursów wymiany dla obliczania podatku VAT.</span><span class="sxs-lookup"><span data-stu-id="9ec4e-106">This topic provides information about exchange rates for the VAT calculation.</span></span> <span data-ttu-id="9ec4e-107">Kurs wymiany używany do obliczania podatku VAT może się różnić od kursu wymiany używanego w funkcjach księgowania w firmie.</span><span class="sxs-lookup"><span data-stu-id="9ec4e-107">The exchange rate that is used for VAT calculation can differ from the exchange rate that is used for company accounting functions.</span></span> <span data-ttu-id="9ec4e-108">Po zaksięgowaniu dokumentu w walucie obcej wszelkie występujące różnice kursowe są księgowane na określonych kontach księgowych.</span><span class="sxs-lookup"><span data-stu-id="9ec4e-108">When a document in a foreign currency is posted, any exchange rate differences that occur are posted to specific ledger accounts.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6117e34e3109dc7c1516c32efd0406438ebca005
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8dcf91ea9555da051afc8ed979aee559f937b29d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="modify-a-format-by-reapplying-a-microsoft-excel-template-for-electronic-reporting-er"></a><span data-ttu-id="fd302-103">Modyfikowanie formatu przez ponowne zastosowanie szablonu programu Microsoft Excel na potrzeby raportowania elektronicznego (ER)</span><span class="sxs-lookup"><span data-stu-id="fd302-103">Modify a format by reapplying a Microsoft Excel template for electronic reporting (ER)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="fd302-104">W celu wykonania kroków w tej procedurze należy najpierw wykonać procedurę „ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML”.</span><span class="sxs-lookup"><span data-stu-id="fd302-104">To complete the steps in this procedure, you must first complete the procedure, ER - Design a configuration for generating reports in OPENXML format.</span></span>
 

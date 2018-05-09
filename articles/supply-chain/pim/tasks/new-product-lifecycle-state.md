@@ -16,15 +16,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a1502d90c3ed02246a056d6acc89d39166faac11
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 517d0c0c95dbce2e48ef0f3a3118db5a7b2e63d3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-new-product-lifecycle-state"></a><span data-ttu-id="a9291-103">Tworzenie nowego stanu cyklu życia produktu</span><span class="sxs-lookup"><span data-stu-id="a9291-103">Create a new product lifecycle state</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a9291-104">W tej procedurze pokazano sposób tworzenia nowego stanu cyklu życia produktu.</span><span class="sxs-lookup"><span data-stu-id="a9291-104">This procedure shows how to create a new product lifecycle state.</span></span> <span data-ttu-id="a9291-105">Stan cyklu życia produktu dokumentuje stan cyklu życia zwolnionego produktu lub wariantu produktu.</span><span class="sxs-lookup"><span data-stu-id="a9291-105">A product lifecycle state documents the lifecycle state of a released product or product variant.</span></span> <span data-ttu-id="a9291-106">Stany cyklu życia produktu są definiowane przez użytkownika, zazwyczaj menedżera produktu lub menedżera danych głównych produktu.</span><span class="sxs-lookup"><span data-stu-id="a9291-106">Product lifecycle states are defined by the user, typically a product manager, or a product master data manager.</span></span> <span data-ttu-id="a9291-107">Na określone procesy biznesowe, na przykład planowanie główne, ma wpływ określony stan cykl życia.</span><span class="sxs-lookup"><span data-stu-id="a9291-107">Specific business processes, for example, Master planning, can be affected by a specific lifecycle state.</span></span>
 

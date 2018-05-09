@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e948861920897cae7570984f97e3ff3893924a28
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3f08049ad8d670be808c3a51bb8735ac489eda94
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a><span data-ttu-id="0d62d-103">Planowanie ładunków i wysyłki za pomocą warsztatu planowania wysyłki ładunku</span><span class="sxs-lookup"><span data-stu-id="0d62d-103">Plan loads and shipments using the Load planning workbench</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0d62d-104">W tej procedurze pokazano sposób używania pulpitu planowania wysyłki ładunku w celu utworzenia ładunku dla zamówienia sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="0d62d-104">This procedure shows how to use the load planning workbench to create a load for a sales order.</span></span> <span data-ttu-id="0d62d-105">Warunkiem wstępnym jest utworzenie zamówienia sprzedaży, co zrobimy najpierw.</span><span class="sxs-lookup"><span data-stu-id="0d62d-105">As a prerequisite we'll create the sales order first.</span></span> <span data-ttu-id="0d62d-106">Ta procedura jest częścią codziennej pracy koordynatora transportu.</span><span class="sxs-lookup"><span data-stu-id="0d62d-106">This procedure is part of the daily work for the transportation coordinator.</span></span> <span data-ttu-id="0d62d-107">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="0d62d-107">The demo data company used to create this procedure is USMF.</span></span>
 

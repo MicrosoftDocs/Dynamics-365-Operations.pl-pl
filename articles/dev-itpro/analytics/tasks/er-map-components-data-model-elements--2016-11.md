@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d8b32b32a2cc8f7ac36e6c27ab17e550b5e3bd17
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 921e00051e8d9647f16b1e29dfbda8821f28c7e5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="map-components-of-the-created-format-to-data-model-elements-for-electronic-reporting-er"></a><span data-ttu-id="2b342-103">Mapowanie składników utworzonego formatu na elementy modelu danych na potrzeby raportowania elektronicznego (ER)</span><span class="sxs-lookup"><span data-stu-id="2b342-103">Map components of the created format to data model elements for electronic reporting (ER)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2b342-104">W poniższej procedurze pokazano, jak użytkownik posiadający rolę Administrator systemu lub Deweloper raportowania elektronicznego może mapować elementy modelu danych na składniki utworzonej konfiguracji raportowania elektronicznego (ER), która definiuje format dokumentu elektronicznego dla domeny biznesowej płatności.</span><span class="sxs-lookup"><span data-stu-id="2b342-104">The following procedure shows how a user in either the System administrator or Electronic reporting developer role can map data model elements to components of the created Electronic reporting (ER) configuration, which defines an electronic document format for the payments business domain.</span></span> <span data-ttu-id="2b342-105">Ten format będzie używany później do generowania dokumentów elektronicznych przeznaczonych do przetwarzania płatności.</span><span class="sxs-lookup"><span data-stu-id="2b342-105">This format will be used later to generate electronic documents for processing payments.</span></span> <span data-ttu-id="2b342-106">W tym przykładzie utworzysz konfigurację formatu dla przykładowej firmy „Litware, Inc.”.</span><span class="sxs-lookup"><span data-stu-id="2b342-106">In this example, you will create a format configuration for the sample company, ‘Litware, Inc.’.</span></span> <span data-ttu-id="2b342-107">Podane kroki można wykonać w dowolnej firmie, ponieważ konfiguracje ER są współużytkowane przez wszystkie firmy.</span><span class="sxs-lookup"><span data-stu-id="2b342-107">These steps can be performed in any company as ER configurations are shared for all companies.</span></span> <span data-ttu-id="2b342-108">Aby wykonać te kroki, należy najpierw wykonać kroki przewodnika po zadaniu „Tworzenie konfiguracji formatu”.</span><span class="sxs-lookup"><span data-stu-id="2b342-108">To complete these steps, you must first complete the steps in the “Create a format configuration” task guide.</span></span>
 

@@ -20,18 +20,18 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 36ae8e44043c64984a0a8bb4e16ed5d3517041b7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ee7b8098278b89c19504ebde6745c598fff1a581
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="running-average-cost-price"></a><span data-ttu-id="9505f-104">Średnia krocząca kosztu własnego</span><span class="sxs-lookup"><span data-stu-id="9505f-104">Running average cost price</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="9505f-105">Proces zamknięcia zapasów umożliwia rozliczenie transakcji wydania względem transakcji przyjęcia metodą wyceny zapasów wybranej w grupie modeli pozycji towaru.</span><span class="sxs-lookup"><span data-stu-id="9505f-105">The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected in the item’s item model group.</span></span> <span data-ttu-id="9505f-106">Jednak w okresie przed zamknięciem zapasów system oblicza średnią kroczącą kosztu własnego, która jest zazwyczaj używana podczas księgowania transakcji.</span><span class="sxs-lookup"><span data-stu-id="9505f-106">However, before inventory close is run, the system calculates a running average cost price that is typically used when issue transactions are posted.</span></span>
 

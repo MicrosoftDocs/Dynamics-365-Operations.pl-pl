@@ -17,15 +17,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7b2a2c7b6e30808c4c086695d481f46cef5304fd
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1b3b43e5d42e008d6a24cc3edfa2d620efaec9bf
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-project-resource-information"></a><span data-ttu-id="f8b0b-103">Konfigurowanie informacji o zasobach projektu</span><span class="sxs-lookup"><span data-stu-id="f8b0b-103">Set up project resource information</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f8b0b-104">W tej procedurze pokazano sposób konfigurowania zasobu projektu.</span><span class="sxs-lookup"><span data-stu-id="f8b0b-104">This procedure shows how to set up a project resource.</span></span> <span data-ttu-id="f8b0b-105">W tym zadaniu jest wykorzystywany zestaw danych firmy USMF.</span><span class="sxs-lookup"><span data-stu-id="f8b0b-105">This task uses the USMF data set.</span></span>
 

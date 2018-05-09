@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 818d7d21605ada63a29a41d3bf20ed9cbf21a178
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 36707ec37d4756393d0c3c2cf071d87a78ebc6c5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a><span data-ttu-id="5ffa0-103">Kontrola zużycia surowców za pomocą zasad usuwania</span><span class="sxs-lookup"><span data-stu-id="5ffa0-103">Controlling raw material consumption by using flushing principles</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="5ffa0-104">Reguły rozliczania odzwierciedlają różne strategie zużycia surowców wykorzystywanych w procesach produkcji.</span><span class="sxs-lookup"><span data-stu-id="5ffa0-104">The flushing principles reflect different consumption strategies for raw materials that are used in production processes.</span></span> <span data-ttu-id="5ffa0-105">Zużycie to proces obejmujący odejmowanie materiałów z dostępnych zapasów i ustawianie w zużywanych materiałach wartości **Praca w toku** (PWT) dla zleceń produkcyjnych i szarż produkcyjnych.</span><span class="sxs-lookup"><span data-stu-id="5ffa0-105">Consumption is the process that deducts material from the on-hand inventory and sets the value of the consumed materials to **Work in progress** (WIP) for production orders and batch orders.</span></span> <span data-ttu-id="5ffa0-106">Surowce są zazwyczaj zużywane z lokalizacji skonfigurowanej dla procesu wykorzystującego materiał.</span><span class="sxs-lookup"><span data-stu-id="5ffa0-106">Raw materials are usually consumed from a location that is configured for the process that consumes the material.</span></span> <span data-ttu-id="5ffa0-107">Ta lokalizacja jest nazywana lokalizacją wejściową produkcji.</span><span class="sxs-lookup"><span data-stu-id="5ffa0-107">This location is known as the production input location.</span></span>
 

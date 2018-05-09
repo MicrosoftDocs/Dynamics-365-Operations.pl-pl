@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 101ebe4a2e177a5702a162297e1820598e56a6e5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b0336bcaa7062a9b24079d8491ce426041751ccf
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a><span data-ttu-id="068fc-103">Kojarzenie indeksu paliwa z przewoźnikiem jako opłaty za usługi dodatkowe</span><span class="sxs-lookup"><span data-stu-id="068fc-103">Associate a fuel index with a carrier as an accessorial charge</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="068fc-104">W tym podręczniku pokazano sposób tworzenia przypisania usług dodatkowych, opłaty za usługi dodatkowe przewoźnika i danych głównych usług dodatkowych dla dopłaty za paliwo, a także kojarzenia indeksu paliwowego przewoźnika z przewoźnikiem.</span><span class="sxs-lookup"><span data-stu-id="068fc-104">This guide shows how to create an accessorial assignment, carrier accessorial charge, accessorial master for fuel surcharge, and associate a carrier fuel index with a carrier.</span></span> <span data-ttu-id="068fc-105">Przed wykonaniem zadań z tego przewodnika należy utworzyć indeks paliwowy przewoźnika.</span><span class="sxs-lookup"><span data-stu-id="068fc-105">You need to have set up a carrier fuel index before you run this guide.</span></span> <span data-ttu-id="068fc-106">Do tego celu służy przewodnik „Konfigurowanie indeksu paliwowego przewoźnika”.</span><span class="sxs-lookup"><span data-stu-id="068fc-106">You can use the “Set up a carrier fuel index” guide to do this.</span></span> <span data-ttu-id="068fc-107">Te zadania konfiguracyjne z reguły są wykonywane przez menedżera logistyki.</span><span class="sxs-lookup"><span data-stu-id="068fc-107">These setup tasks are typically done by a Logistics manager.</span></span> <span data-ttu-id="068fc-108">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="068fc-108">The demo data used to create this procedure is USMF.</span></span>
 

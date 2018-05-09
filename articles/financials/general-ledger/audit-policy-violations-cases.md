@@ -19,16 +19,16 @@ ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c44beba51538184c062b53d643bda98de3d752b4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1558b5db36e194a94a829c0a09cc8aa50fbc545b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="audit-policy-violations-and-cases"></a><span data-ttu-id="df181-104">Naruszenia zasad inspekcji i sprawy</span><span class="sxs-lookup"><span data-stu-id="df181-104">Audit policy violations and cases</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="df181-105">W tym artykule wyjaśniono, jak są generowane sprawy inspekcji na podstawie naruszeń reguł inspekcji.</span><span class="sxs-lookup"><span data-stu-id="df181-105">The article explains how audit cases are generated from violations of audit policy rules.</span></span> <span data-ttu-id="df181-106">Znajdują się tu także informacje o różnych sposobach, w jakie zasady inspekcji wykorzystują funkcje zakresu dat wyboru dokumentów.</span><span class="sxs-lookup"><span data-stu-id="df181-106">It also includes information about the various ways that audit policies use the document selection date range.</span></span>
 

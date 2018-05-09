@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1f5715f620869b467ee4ca495f8557ec6222c838
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7b2d9b07acff05e7dc5b1e3bb5b010efa989a2c7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="three-way-matching-policies"></a><span data-ttu-id="40088-103">Trzyelementowe zasady uzgadniania</span><span class="sxs-lookup"><span data-stu-id="40088-103">Three-way matching policies</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="40088-104">Ten temat zawiera przykłady uzgadniania trzyelementowego.</span><span class="sxs-lookup"><span data-stu-id="40088-104">This topic provides examples of three-way matching.</span></span>
 

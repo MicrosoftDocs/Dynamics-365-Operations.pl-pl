@@ -20,16 +20,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1c79e7f43dd239a828a549b326ea84d36d38cc3e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="replenishment"></a><span data-ttu-id="561eb-103">Uzupełnianie zapasów</span><span class="sxs-lookup"><span data-stu-id="561eb-103">Replenishment</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="561eb-104">W tym temacie opisano strategie uzupełniania zapasów, które są dostępne dla magazynów używających funkcji dostępnych w module Zarządzanie magazynem.</span><span class="sxs-lookup"><span data-stu-id="561eb-104">This topic describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management.</span></span> <span data-ttu-id="561eb-105">Informacje w tym temacie nie mają zastosowania do aplikacji magazynowej dostępnej w module Zarządzanie zapasami.</span><span class="sxs-lookup"><span data-stu-id="561eb-105">The information in this topic doesn't apply to the warehousing solution that is available in Inventory management.</span></span>
 

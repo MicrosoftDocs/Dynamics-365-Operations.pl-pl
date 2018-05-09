@@ -19,16 +19,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4361311be0cf5c33c9b2fa4700b084a7b43f5b65
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fa9c962ffce161365d1a030cf9995cce3ff19934
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="advanced-filtering-and-query-syntax"></a><span data-ttu-id="4d530-103">Składnia zaawansowanego filtrowania i zapytań</span><span class="sxs-lookup"><span data-stu-id="4d530-103">Advanced filtering and query syntax</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="4d530-104">W tym artykule opisano opcje filtrowania i kwerend dostępne dla operatora „dopasowania” w oknie dialogowym Zaawansowany filtr/sortowanie.</span><span class="sxs-lookup"><span data-stu-id="4d530-104">This article describes the filtering and query options that are available when you use the "matches" operator in the Advanced filter/sort dialog.</span></span>
 

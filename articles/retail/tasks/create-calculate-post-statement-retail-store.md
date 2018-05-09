@@ -17,15 +17,15 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9f9888d04f4e2419de9d4a6857a81ae40f6f21a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 08a8f937f63b93ad15e489dbc53468af6e3827b4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a><span data-ttu-id="4b105-103">Tworzenie, obliczanie i księgowanie zestawienia dla sklepu sieci sprzedaży</span><span class="sxs-lookup"><span data-stu-id="4b105-103">Create, calculate, and post a statement for a retail store</span></span>
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="4b105-104">Ta procedura prowadzi przez kolejne kroki ręcznego tworzenia, obliczania i księgowania zestawienia dla sklepu.</span><span class="sxs-lookup"><span data-stu-id="4b105-104">This procedure walks through the manual steps for creating, calculating, and posting a statement for a store.</span></span> <span data-ttu-id="4b105-105">Istnieją także zadania wsadowe, które można skonfigurować na potrzeby tych samych zadań.</span><span class="sxs-lookup"><span data-stu-id="4b105-105">There are also batch jobs that can be configured for the same tasks.</span></span> <span data-ttu-id="4b105-106">Kroki konfigurowania i wykonywania zadań wsadowych znajdują się w innych artykułach.</span><span class="sxs-lookup"><span data-stu-id="4b105-106">The steps for configuring and running the batch jobs can be found in other topics.</span></span> <span data-ttu-id="4b105-107">Aby wykonać tę procedurę, muszą istnieć transakcji, które zostały wykonane w punkcie sprzedaży, a następnie pobrane do systemu Dynamics AX.</span><span class="sxs-lookup"><span data-stu-id="4b105-107">To complete this procedure, you must have transactions that were completed in POS and then pulled into Dynamics AX.</span></span> <span data-ttu-id="4b105-108">Nagranie wykorzystuje dane firmy demonstracyjnej USRT.</span><span class="sxs-lookup"><span data-stu-id="4b105-108">This recording uses the USRT company in demo data.</span></span> <span data-ttu-id="4b105-109">Ta procedura może się odwoływać do systemu Microsoft Dynamics AX.</span><span class="sxs-lookup"><span data-stu-id="4b105-109">This procedure may refer to Microsoft Dynamics AX.</span></span> <span data-ttu-id="4b105-110">Należy zwrócić uwagę, że oprogramowanie Dynamics AX nosi obecnie nazwę Microsoft Dynamics 365 for Operations.</span><span class="sxs-lookup"><span data-stu-id="4b105-110">Please note that Dynamics AX is now called Microsoft Dynamics 365 for Operations.</span></span>
 

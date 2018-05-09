@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6679215a664ddf938a204196b00f3bc28bf65f8f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8250b612ca62048a8ab9e0c5f082a6e652e1b5c1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-insights"></a><span data-ttu-id="753dd-103">Szczegółowe dane finansowe</span><span class="sxs-lookup"><span data-stu-id="753dd-103">Financial Insights</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="753dd-104">Wykorzystując usługę Microsoft Power BI, obszar roboczy **Szczegółowe dane finansowe** zbiera w jednym miejscu kluczowe wskaźniki wydajności (KPI) dotyczące finansów, wykresy i sprawozdania finansowe.</span><span class="sxs-lookup"><span data-stu-id="753dd-104">**Financial Insights** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.</span></span> <span data-ttu-id="753dd-105">Usługa Power BI jest wbudowana w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="753dd-105">Power BI is embedded in Microsoft Dynamics 365 Finance and Operations.</span></span>
 <span data-ttu-id="753dd-106">Obszar roboczy **Szczegółowe dane finansowe** koncentruje się na sprawozdawczości analitycznej.</span><span class="sxs-lookup"><span data-stu-id="753dd-106">The focus of **Financial Insights** is analytical reporting.</span></span> <span data-ttu-id="753dd-107">Osoby z całej organizacji mogą wyświetlać, badać i poznawać informacje oraz działać na ich podstawie.</span><span class="sxs-lookup"><span data-stu-id="753dd-107">Personas across an organization can view, research, understand, and act.</span></span> 

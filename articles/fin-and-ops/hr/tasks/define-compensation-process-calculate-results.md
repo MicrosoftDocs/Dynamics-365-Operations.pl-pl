@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 93f6cddd8d698dbc1a3539a156a762b8e6017aa6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d32a6245b7fcbbccb319c1ff37ce7a843e1851d2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-compensation-process-and-calculate-results"></a><span data-ttu-id="42f4b-103">Definiowanie procesu związanego z wynagrodzeniem i obliczanie wyników</span><span class="sxs-lookup"><span data-stu-id="42f4b-103">Define compensation process and calculate results</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="42f4b-104">Procesy wynagrodzeń służą do określania nowych kwot wynagrodzeń i nagród dla pracowników objętych planami wynagrodzeń stałych i o zmiennej wysokości.</span><span class="sxs-lookup"><span data-stu-id="42f4b-104">Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans.</span></span> <span data-ttu-id="42f4b-105">Procesy wynagrodzeń można uruchamiać wiele razy w celu przeprowadzenia analizy „co, jeśli” i zweryfikowania, czy wszystkie zmiany i ustawienia są poprawne.</span><span class="sxs-lookup"><span data-stu-id="42f4b-105">Compensation processes can be run multiple times to perform "what-if" analysis, to verify all changes and settings are correct.</span></span> <span data-ttu-id="42f4b-106">Ta procedura spowoduje utworzenie procesu wynagrodzenia, wykonanie go i wyświetlenie wyników.</span><span class="sxs-lookup"><span data-stu-id="42f4b-106">This procedure will create a compensation process, run the process, and view the results.</span></span> <span data-ttu-id="42f4b-107">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="42f4b-107">The demo data company used to create this procedure is USMF.</span></span>
 

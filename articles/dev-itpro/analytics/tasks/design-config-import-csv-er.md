@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0859eb7bf461f61396c34f4bcd89537260a536a0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f80b9824e005ccca5beb8577576781d00a43d7b3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a><span data-ttu-id="b6a4c-103">Projektowanie konfiguracji do importowania danych z zewnętrznego pliku w formacie CSV (ER)</span><span class="sxs-lookup"><span data-stu-id="b6a4c-103">Design a configuration to import data from an external file in CSV format (ER)</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b6a4c-104">Za pomocą tej procedury można zaprojektować konfigurację raportowania elektronicznego (RE) w celu importowania danych do aplikacji Dynamics 365 for Finance and Operations z zewnętrznego pliku w formacie CSV.</span><span class="sxs-lookup"><span data-stu-id="b6a4c-104">Use this procedure to design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations application from an external file in CSV format.</span></span> <span data-ttu-id="b6a4c-105">W tej procedurze utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Aby wykonać te kroki, najpierw trzeba wykonać kroki wymienione w procedurze „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”.</span><span class="sxs-lookup"><span data-stu-id="b6a4c-105">In this procedure, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the procedure, “ER Create a configuration provider and mark it as active.”</span></span> 
 

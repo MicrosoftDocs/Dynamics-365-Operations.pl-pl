@@ -18,16 +18,16 @@ ms.author: shielas
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f3abbb2d124ee6c11e46e3680a342ecb12a12ec3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 71bd48736048c266603b937efb9d137b1e17b6ff
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="personnel-actions-faq"></a><span data-ttu-id="80535-104">Akcje dotyczące pracowników (często zadawane pytania)</span><span class="sxs-lookup"><span data-stu-id="80535-104">Personnel actions [FAQ]</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="80535-105">Ten temat zawiera odpowiedzi na pytania, które mogą się pojawić, jeśli organizacja używa akcji dotyczących pracowników.</span><span class="sxs-lookup"><span data-stu-id="80535-105">This topic contains answers to questions that you might have if your organization uses personnel actions.</span></span> <span data-ttu-id="80535-106">Akcje dotyczące pracowników są to dodatkowe kroki, które należy wykonać podczas wykonywania pewnych zadań związanych z pracownikami.</span><span class="sxs-lookup"><span data-stu-id="80535-106">Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.</span></span> <span data-ttu-id="80535-107">Przykłady zadań, które mogą wymagać akcji dotyczących pracowników to zadania podczas tworzenia nowych stanowisk, modyfikowania istniejących wartości stanowisk, zatrudniania nowych pracowników, przenoszenia pracowników, zmiany wynagrodzenia pracownika, zmiany przypisania stanowiska lub zwalniania pracowników.</span><span class="sxs-lookup"><span data-stu-id="80535-107">Examples of tasks that might require personnel actions are when you create new positions, modify existing position values, hire new workers, transfer workers, change worker compensation, change position assignments, or terminate workers.</span></span>
 

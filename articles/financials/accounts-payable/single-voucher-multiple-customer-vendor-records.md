@@ -18,16 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7348706006dd5baec207ed8ef1d208b032a8e16a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 67c81d0360e90cde44a29fedee280406135771de
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a><span data-ttu-id="ef937-104">Jeden załącznik z wieloma rekordami odbiorców lub dostawców</span><span class="sxs-lookup"><span data-stu-id="ef937-104">Single voucher with multiple customer or vendor records</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="ef937-105">Ten temat zawiera omówienie tego, co się dzieje podczas księgowania jednego załącznika z wieloma rekordami odbiorców lub dostawców.</span><span class="sxs-lookup"><span data-stu-id="ef937-105">This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records.</span></span> <span data-ttu-id="ef937-106">Ta funkcja nie będzie już dostępna w kolejnych wersjach programu Microsoft Dynamics 365 for Finance and Operations, w związku z tym nie zalecamy używania tej metody księgowania ze względu na jej wpływ księgowy na przetwarzanie rozliczeń.</span><span class="sxs-lookup"><span data-stu-id="ef937-106">This functionality will be discontinued in future versions of Microsoft Dynamics 365 for Finance and Operations, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing.</span></span> 
 

@@ -17,15 +17,15 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f70b49bf64d254f0020ecd585032f666f2e14059
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d75ff895c252bfd4f70f8bcc4c4adece585d9a22
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="configure-credit-card-processing"></a><span data-ttu-id="0006d-103">Konfigurowanie przetwarzania karty kredytowej</span><span class="sxs-lookup"><span data-stu-id="0006d-103">Configure credit card processing</span></span>
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0006d-104">Ta procedura zawiera instruktaż wyświetlania listy dostawców płatności i konfigurowania konta płatności dla rozrachunków z odbiorcami.</span><span class="sxs-lookup"><span data-stu-id="0006d-104">This procedure walks through how to view the list of payment providers and how to configure a payment account for accounts receivable.</span></span> <span data-ttu-id="0006d-105">Procedura używa danych firmy demonstracyjnej USRT i jest przeznaczona dla administratorów oraz specjalistów IT.</span><span class="sxs-lookup"><span data-stu-id="0006d-105">This procedure uses the USRT company in demo data and is intended for Administrators and IT Professionals.</span></span>
 

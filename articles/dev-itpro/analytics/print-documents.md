@@ -18,16 +18,16 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 30a418e6c49849369f0a0e3ffa28f31b9b88b7e7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b1e6893eda35b7e4d863116edf2787685071bbc3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="printing-in-finance-and-operations-applications"></a><span data-ttu-id="b6cc9-104">Drukowanie w aplikacjach rozwiązania Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="b6cc9-104">Printing in Finance and Operations applications</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="b6cc9-105">W programie Microsoft Dynamics 365 for Finance and Operations dokumenty można drukować przy użyciu drukarki lokalnej lub urządzenia podłączonego do sieci.</span><span class="sxs-lookup"><span data-stu-id="b6cc9-105">In Microsoft Dynamics 365 for Finance and Operations, you can print documents by using either a local printer or a network-connected device.</span></span> <span data-ttu-id="b6cc9-106">Ten artykuł zawiera omówienie sposobu drukowania dokumentów.</span><span class="sxs-lookup"><span data-stu-id="b6cc9-106">This article provides an overview of how documents are printed.</span></span>
 

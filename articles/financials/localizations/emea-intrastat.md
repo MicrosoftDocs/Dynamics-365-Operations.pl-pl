@@ -18,16 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2ee60f3d1155b89d342b94832fbdbe898a5063c6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d927f827b9cbc0dc6d9ba5a22c8a05371836faff
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="intrastat"></a><span data-ttu-id="c6346-104">Intrastat</span><span class="sxs-lookup"><span data-stu-id="c6346-104">Intrastat</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="c6346-105">Ten artykuł zawiera informacje o sprawozdawczości Intrastat o handlu towarami i — w niektórych przypadkach — usługami między krajami/regionami Unii Europejskiej (UE).</span><span class="sxs-lookup"><span data-stu-id="c6346-105">This article provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU).</span></span> <span data-ttu-id="c6346-106">Omówiono proces sprawozdawczości oraz opisano wymagane ustawienia i warunki wstępne.</span><span class="sxs-lookup"><span data-stu-id="c6346-106">It provides an overview of the reporting process, and describes the required settings and prerequisites.</span></span>
 

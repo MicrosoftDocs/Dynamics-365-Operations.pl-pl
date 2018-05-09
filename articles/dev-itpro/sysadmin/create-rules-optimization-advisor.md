@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 943239c7d57b4a438c405f1ad0551db29d7a8145
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e78427dacb0d2adfd0334115581d5a5a9cfd2921
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-rules-for-optimization-advisor"></a><span data-ttu-id="2bfe8-103">Tworzenie reguł dla Doradcy optymalizacji</span><span class="sxs-lookup"><span data-stu-id="2bfe8-103">Create rules for Optimization advisor</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2bfe8-104">W tym temacie wyjaśniono sposób tworzenia nowych reguł dla obszaru roboczego **Doradca optymalizacji**.</span><span class="sxs-lookup"><span data-stu-id="2bfe8-104">This topic explains how to create new rules for **Optimization advisor**.</span></span> <span data-ttu-id="2bfe8-105">Na przykład można utworzyć nową regułę określającą, które sprawy dotyczące zapytań ofertowych (ZO) mają puste tytuły.</span><span class="sxs-lookup"><span data-stu-id="2bfe8-105">For example, you can create a new rule that identifies which Request for Quotations (RFQ) cases have an empty title.</span></span> <span data-ttu-id="2bfe8-106">Stosowanie tytułów do spraw ułatwia ich rozpoznawanie i wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="2bfe8-106">Using titles on cases makes them easily identifiable and searchable.</span></span> <span data-ttu-id="2bfe8-107">Choć poniższy przykład jest dość prosty, pokazuje, co można osiągnąć za pomocą reguł optymalizacji.</span><span class="sxs-lookup"><span data-stu-id="2bfe8-107">While quite simple, this example shows what can be achieved with optimization rules.</span></span> 
 

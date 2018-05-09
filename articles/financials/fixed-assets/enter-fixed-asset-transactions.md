@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2a7fa7a28437e29f390efdf566e946c6a1082370
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 48364acbaa3fff4be9440256c6b337c0e2d2d9d0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fixed-asset-transaction-options"></a><span data-ttu-id="a0ee4-103">Opcje transakcji środków trwałych</span><span class="sxs-lookup"><span data-stu-id="a0ee4-103">Fixed asset transaction options</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="a0ee4-104">W tym artykule opisano różne dostępne metody tworzenia transakcji na środkach trwałych.</span><span class="sxs-lookup"><span data-stu-id="a0ee4-104">This article describes the different methods available to create fixed asset transactions.</span></span>
 

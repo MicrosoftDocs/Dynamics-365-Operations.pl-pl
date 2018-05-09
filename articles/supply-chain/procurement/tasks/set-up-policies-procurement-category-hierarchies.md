@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a773675b858a196e795ad54cc534ef5eb98ef484
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f98f5b578c1d01463d196b6018e9f47a9d924be7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a><span data-ttu-id="26961-103">Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia</span><span class="sxs-lookup"><span data-stu-id="26961-103">Set up policies for procurement category hierarchies</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="26961-104">Niniejszej procedury należy użyć w celu skonfigurowania reguły dla zamówionych produktów z kategorii.</span><span class="sxs-lookup"><span data-stu-id="26961-104">Use this procedure to set up rules for ordering products in a category.</span></span> <span data-ttu-id="26961-105">Reguły są definiowane dla określonej zasady zakupów.</span><span class="sxs-lookup"><span data-stu-id="26961-105">The rules are defined for a specific purchasing policy.</span></span> <span data-ttu-id="26961-106">Reguła dostępu do kategorii określa kategorie zaopatrzenia, do których mają dostęp pracownicy podczas tworzenia zapotrzebowania.</span><span class="sxs-lookup"><span data-stu-id="26961-106">The category access rule controls which procurement categories employees have access to when they create a requisition.</span></span> <span data-ttu-id="26961-107">Gdy pracownik tworzy zapotrzebowanie, stosowana zasada zakupów i reguła dostępu do kategorii zależą od firmy i jednostki operacyjnej, do której należy pracownik.</span><span class="sxs-lookup"><span data-stu-id="26961-107">When a requisition is being created, the purchasing policy and category access rule that should be applied are determined by the legal entity and the operational unit that the employee belongs to.</span></span> <span data-ttu-id="26961-108">Procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="26961-108">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="26961-109">To zadanie zazwyczaj wykonuje kierownik ds. zakupów.</span><span class="sxs-lookup"><span data-stu-id="26961-109">This task would typically be carried out by a purchasing manager.</span></span>
 

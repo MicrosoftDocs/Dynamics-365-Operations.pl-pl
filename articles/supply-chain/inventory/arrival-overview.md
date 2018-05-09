@@ -20,16 +20,16 @@ ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 47fbd077023ff924cb36f2db9f5e2db8b9d5c281
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9a81ef09072350091b7dbc3333429304ddbdcd28
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="arrival-overview"></a><span data-ttu-id="1957a-104">Przegląd przyjęć</span><span class="sxs-lookup"><span data-stu-id="1957a-104">Arrival overview</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="1957a-105">Ten temat zawiera informacje dotyczące funkcji przeglądu przyjęć.</span><span class="sxs-lookup"><span data-stu-id="1957a-105">This topic provides information about the Arrival overview feature.</span></span> <span data-ttu-id="1957a-106">Strona Przegląd przyjęć jest częścią tej funkcji i zawiera przegląd wszystkich towarów, których przybycia oczekuje się jako towary przychodzące.</span><span class="sxs-lookup"><span data-stu-id="1957a-106">The Arrival overview page is part of this feature and provides an overview of all items that are expected to arrive as incoming items.</span></span>
 

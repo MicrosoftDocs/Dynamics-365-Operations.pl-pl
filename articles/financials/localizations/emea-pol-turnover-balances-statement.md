@@ -17,16 +17,16 @@ ms.author: v-semaz
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7b9968c52775f8d26fc96fb3576beed709523556
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6cd0eb20bf667a7248f4218473e0d6a2257b3e72
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="turnover-and-balances-statement-for-poland"></a><span data-ttu-id="a05a0-103">Zestawienie obrotów i sald dla Polski</span><span class="sxs-lookup"><span data-stu-id="a05a0-103">Turnover and balances statement for Poland</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="a05a0-104">Ten temat zawiera informacje o funkcji zestawienia obrotów i sald dla Polski.</span><span class="sxs-lookup"><span data-stu-id="a05a0-104">This topic provides information about the Turnover and balances statement for Poland.</span></span>
 

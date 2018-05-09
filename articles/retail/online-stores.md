@@ -20,16 +20,16 @@ ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ef684990bc71f28756d478ed9d9608c57bb25eda
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 01cc604cf0545737b81153f7f3917bc7c7ba2529
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="online-store-overview"></a><span data-ttu-id="2af60-103">Omówienie sklepu internetowego</span><span class="sxs-lookup"><span data-stu-id="2af60-103">Online store overview</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="2af60-104">Ten artykuł zawiera informacje o internetowych sklepach detalicznych oraz o ich konfigurowaniu w programie Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="2af60-104">This article provides information about Retail online stores and how to set them up in Microsoft Dynamics 365 for Retail.</span></span>
 

@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c8af5d3343bf8376dfec5a41cd03e1325b10b978
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 510775079fc5193e243eb251396d79433ce37f4b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="budget-planning"></a><span data-ttu-id="9c481-105">Planowanie budżetu</span><span class="sxs-lookup"><span data-stu-id="9c481-105">Budget planning</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="9c481-106">Celem tego warsztatu jest praktyczne zaprezentowanie aktualizacji funkcji programu Microsoft Dynamics 365 for Finance and Operations w obszarze planowania budżetu.</span><span class="sxs-lookup"><span data-stu-id="9c481-106">The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Finance and Operations functionality updates in Budget planning area.</span></span> <span data-ttu-id="9c481-107">Zilustrowaliśmy przykład krótkiej konfiguracji modułu planowania budżetu oraz pokazaliśmy, jak przy użyciu tej konfiguracji można planować budżet.</span><span class="sxs-lookup"><span data-stu-id="9c481-107">The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.</span></span>  <span data-ttu-id="9c481-108">Ten warsztat dotyczy głównie następujących procesów lub zadań biznesowych:  - Tworzenie hierarchii organizacyjnej na potrzeby planowania budżetu i konfigurowania zabezpieczeń użytkownika  - Definiowanie scenariuszy planu budżetu, kolumn planu budżetu, układów i szablonów programu Excel  - Tworzenie i aktywacja procesu planowania budżetu  - Tworzenie dokumentu planu budżetu poprzez pobieranie wartości rzeczywistych z księgi głównej  - Używanie alokacji do korygowania danych dokumentu planu budżetu  - Edytowanie danych dokumentu planu budżetu w programie Excel</span><span class="sxs-lookup"><span data-stu-id="9c481-108">This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel</span></span> 
 

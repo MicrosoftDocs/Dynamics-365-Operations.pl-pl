@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 115dfc163dce580244c2b2b6975e49ea3b69f1ef
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c868265b7a5b5e057b3f1354a81a472f1d6a5d4d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a><span data-ttu-id="30697-103">Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="30697-103">Set up a location directive for purchase order put-away</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="30697-104">W tej procedurze pokazano sposób konfigurowania prostej dyrektywy lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="30697-104">This procedure shows you how to set up a simple location directive.</span></span> <span data-ttu-id="30697-105">W pokazanym przykładzie jest tworzona dyrektywa lokalizacji, która będzie używana do określenia, gdzie mają zostać odłożone towary przyjęte na podstawie zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="30697-105">The example that’s shown creates a location directive to be used to determine where to put items that have been received for a purchase order.</span></span> <span data-ttu-id="30697-106">Ten przewodnik po zadaniach można odtworzyć przy użyciu danych firmy demonstracyjnych USMF.</span><span class="sxs-lookup"><span data-stu-id="30697-106">You can play this task guide with the data mentioned using demo data company USMF.</span></span> <span data-ttu-id="30697-107">Warunki wstępne: Należy utworzyć kod dyspozycji.</span><span class="sxs-lookup"><span data-stu-id="30697-107">Pre-conditions: You need to create a disposition code.</span></span> <span data-ttu-id="30697-108">W tej procedurze stosujemy kod dyspozycji o nazwie Ponowne etykietowanie.</span><span class="sxs-lookup"><span data-stu-id="30697-108">In this procedure we use a disposition code called Relabel.</span></span> <span data-ttu-id="30697-109">Jeśli tworzysz dyrektywę lokalizacji z własnymi danymi, musisz skonfigurować funkcje zaawansowanego zarządzania magazynem dla magazynu i towarów.</span><span class="sxs-lookup"><span data-stu-id="30697-109">If you’re creating a location directive in your own data, you need to have set up advanced warehouse management for your warehouse and items.</span></span>  <span data-ttu-id="30697-110">Ta procedura jest przeznaczona dla kierownika magazynu.</span><span class="sxs-lookup"><span data-stu-id="30697-110">This procedure is intended for the warehouse manager.</span></span>
 

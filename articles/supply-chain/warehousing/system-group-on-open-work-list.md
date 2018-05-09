@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9ca6b0d4a9909d419d6241a044336d7a02aea02
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c9ff5df219c5e8b52e3d64d340fd55be7f51919a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="system-grouping-on-an-open-work-list"></a><span data-ttu-id="7cca2-103">Grupowanie systemowe na liście otwartych prac</span><span class="sxs-lookup"><span data-stu-id="7cca2-103">System grouping on an open work list</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="7cca2-104">Za pomocą pola grup systemowych można wyfiltrować listę otwartych prac bez konieczności edytowania elementu menu w urządzeniu komórkowym.</span><span class="sxs-lookup"><span data-stu-id="7cca2-104">By using a system grouping field, you can filter an open work list without having to edit the mobile device menu item.</span></span>
 <span data-ttu-id="7cca2-105">Funkcja grupowania systemowego filtruje listę prac według jednego pola nagłówka pracy.</span><span class="sxs-lookup"><span data-stu-id="7cca2-105">Where it applies, system grouping works for filtering a work list on a single work header field.</span></span> <span data-ttu-id="7cca2-106">Nie można używać grupowania systemowego do filtrowania według pól na poziomie wierszy.</span><span class="sxs-lookup"><span data-stu-id="7cca2-106">You cannot use system grouping to filter on line level fields.</span></span>

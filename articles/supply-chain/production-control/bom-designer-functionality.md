@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b7d4530ecccf18d9370d84ff2b61be1514b80192
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ab6edcdb9dece5c6a5ac8cdb5f978477430c9cea
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="bom-designer-functionality"></a><span data-ttu-id="43491-103">Funkcjonalność konstruktora BOM</span><span class="sxs-lookup"><span data-stu-id="43491-103">BOM designer functionality</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="43491-104">W tym temacie opisano, jak za pomocą strony projektanta BOM zaprojektować struktury drzewa dla list składowych (BOM) oraz ich używać.</span><span class="sxs-lookup"><span data-stu-id="43491-104">This topic describes how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs).</span></span> <span data-ttu-id="43491-105">Można kliknąć przycisk Ustawienia i wybierać różne konfiguracje oraz określić rodzaj informacji wyświetlanych w wierszach drzewa.</span><span class="sxs-lookup"><span data-stu-id="43491-105">You can click Setup to select different configurations and specify what information appears on the lines of the tree.</span></span>
 

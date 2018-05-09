@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8ac8ebede5c333835b0974843a69e70e51028117
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 05ac3b28c4d0806f71f1e0cb069c0d48137a4332
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="moving-average"></a><span data-ttu-id="a40c3-105">Średnia ruchoma</span><span class="sxs-lookup"><span data-stu-id="a40c3-105">Moving average</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="a40c3-106">Średnia ruchoma to metoda kosztów ciągłych oparta na zasadzie średniej, a w której koszty wydań z magazynu nie zmieniają się po zmianie kosztu zakupu.</span><span class="sxs-lookup"><span data-stu-id="a40c3-106">Moving average is a perpetual costing method based on the average principle, where the costs on inventory issues do not change when the purchase cost does.</span></span> <span data-ttu-id="a40c3-107">Różnica jest kapitalizowana i oparta na obliczeniu proporcjonalnym.</span><span class="sxs-lookup"><span data-stu-id="a40c3-107">The difference is capitalized and is based on a proportional calculation.</span></span> <span data-ttu-id="a40c3-108">Pozostała kwota jest zaliczana w koszty.</span><span class="sxs-lookup"><span data-stu-id="a40c3-108">The amount that remains is expensed.</span></span> 
 

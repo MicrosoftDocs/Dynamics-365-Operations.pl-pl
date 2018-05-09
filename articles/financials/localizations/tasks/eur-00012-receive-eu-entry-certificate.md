@@ -16,15 +16,15 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e1a0ec00d5431f1514fe55a4d9344de0955ce503
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a05032a845bac08813812fb811e72bcb519196b0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="receive-an-eu-entry-certificate"></a><span data-ttu-id="443da-103">Odbiór świadectw wywozowych UE</span><span class="sxs-lookup"><span data-stu-id="443da-103">Receive an EU entry certificate</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="443da-104">Ta procedura prowadzi przez proces rejestrowania świadectwa wywozowego UE wystawionego przez jednostkę zewnętrzną i otrzymanego od odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="443da-104">This procedure walks you through registering an EU entry certificate issued by a third-party and received from your customer.</span></span>
 

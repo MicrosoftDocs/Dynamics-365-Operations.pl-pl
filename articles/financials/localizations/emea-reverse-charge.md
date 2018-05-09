@@ -16,17 +16,17 @@ ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 64518e72dd66961108ff905981cd0405355ed130
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 26f7f3f11408cac387c58a5345b566ac50ed426f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="reverse-charge-vat"></a><span data-ttu-id="80688-103">Opłata zwrotna VAT</span><span class="sxs-lookup"><span data-stu-id="80688-103">Reverse charge VAT</span></span>
 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 <span data-ttu-id="80688-104">W tym temacie opisano standardową metodę konfigurowania odwróconego podatku od towarów i usług (VAT) dla Arabii Saudyjskiej i krajów europejskich.</span><span class="sxs-lookup"><span data-stu-id="80688-104">This topic describes a generic approach for setting up reverse charge value-added tax (VAT) for Saudi Arabia and European countries.</span></span>

@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: beed4c261b887ce545d431bbd9a413bd1745bc0c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3146c74a0749bf7a29eba1e079b9b15cab92393b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="hire-a-candidate-through-recruiting"></a><span data-ttu-id="5ce85-103">Zatrudnianie kandydata przez rekrutację</span><span class="sxs-lookup"><span data-stu-id="5ce85-103">Hire a candidate through recruiting</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5ce85-104">Ta procedura umożliwia osobie rekrutującej zatrudnienie kandydata, który przesłał zgłoszenie za pośrednictwem określonego projektu rekrutacji.</span><span class="sxs-lookup"><span data-stu-id="5ce85-104">This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project.</span></span> <span data-ttu-id="5ce85-105">W przypadku zatrudniania kandydata za pośrednictwem projektu rekrutacji zostanie utworzony nowy rekord pracownika, a w rekordzie kandydata zostanie ustawiony stan Zatrudniony.</span><span class="sxs-lookup"><span data-stu-id="5ce85-105">When you hire an applicant through a recruiting project, a new worker record will be created and the applicant’s record will have a status of Employed.</span></span> <span data-ttu-id="5ce85-106">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="5ce85-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="5ce85-107">Aby wykonać tę procedurę, wybierz kolejno opcje Zasoby ludzkie > Rekrutacja > Zgłoszenia > Zgłoszenia.</span><span class="sxs-lookup"><span data-stu-id="5ce85-107">To complete this procedure, navigate to Human resources > Recruitment > Applications >Applications</span></span> 
 

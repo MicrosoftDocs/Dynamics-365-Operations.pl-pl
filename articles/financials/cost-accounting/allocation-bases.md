@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1a32b49e7589113d518ef17a39eecc4c518b362d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d3de34eeef042cb3f283ee53579b199c6a4c9091
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="allocation-bases"></a><span data-ttu-id="68e8a-104">Podstawy alokacji</span><span class="sxs-lookup"><span data-stu-id="68e8a-104">Allocation bases</span></span> 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="68e8a-105">Podstawa alokacji stanowi bazę, w oparciu o którą moduł Rachunek kosztów przydziela koszty ogólne.</span><span class="sxs-lookup"><span data-stu-id="68e8a-105">An allocation base is the basis on which Cost accounting allocates overhead costs.</span></span> <span data-ttu-id="68e8a-106">Podstawą alokacji może być ilość, np. używana liczba roboczogodzin, zużywana liczba kilowatogodzin (kWh) lub zajmowana powierzchnia (w stopach lub metrach kwadratowych).</span><span class="sxs-lookup"><span data-stu-id="68e8a-106">An allocation base can be a quantity, such as machine hours that are used, kilowatt hours (kWh) that are consumed, or square footage that is occupied.</span></span> <span data-ttu-id="68e8a-107">Podstawy alokacji przeważnie są używane do przypisywania kosztów ogólnych do wytwarzanych zapasów.</span><span class="sxs-lookup"><span data-stu-id="68e8a-107">Allocation bases are mostly used to assign overhead costs to inventory that is produced.</span></span> <span data-ttu-id="68e8a-108">Na przykład dział IT alokuje swoje wydatki według liczby komputerów używanej w poszczególnych działach.</span><span class="sxs-lookup"><span data-stu-id="68e8a-108">For example, an IT department allocates its expenses according to the number of computers that each department uses.</span></span>
 

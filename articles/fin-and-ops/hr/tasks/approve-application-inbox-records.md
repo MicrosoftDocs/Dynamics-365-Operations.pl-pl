@@ -16,15 +16,15 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3a9719082749f48c04c6c86394b8131a10ae6138
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ccd54805020e3399471d1b70c6a7be4bf3b86586
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="approve-application-inbox-records"></a><span data-ttu-id="d30c5-103">Zatwierdzanie rekordów skrzynki odbiorczej zgłoszeń</span><span class="sxs-lookup"><span data-stu-id="d30c5-103">Approve application inbox records</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d30c5-104">W tej procedurze pokazano sposób przeglądania podań o pracę otrzymanych za pośrednictwem stron w portalu samoobsługi pracowniczej.</span><span class="sxs-lookup"><span data-stu-id="d30c5-104">This procedure shows how to review applications received through the Employee self-service pages.</span></span> <span data-ttu-id="d30c5-105">Oprócz przeglądania zgłoszeń można zatwierdzać wybrane rekordy skrzynki odbiorczej zgłoszeń.</span><span class="sxs-lookup"><span data-stu-id="d30c5-105">In addition to reviewing the applications, you can approve the application in box records that you select.</span></span> <span data-ttu-id="d30c5-106">Rekordy skrzynki odbiorczej zgłoszeń przedstawiają podania o pracę przesłane do firmy w celu rozpatrzenia.</span><span class="sxs-lookup"><span data-stu-id="d30c5-106">Application inbox records represent employment applications that were submitted to the company for consideration.</span></span> <span data-ttu-id="d30c5-107">Po zatwierdzeniu rekordu zostanie utworzony rekord kandydata dla osoby, która przesłała zgłoszenie.</span><span class="sxs-lookup"><span data-stu-id="d30c5-107">After approving a record, an applicant record will be created for the person who submitted the application.</span></span> <span data-ttu-id="d30c5-108">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="d30c5-108">The demo data company used to create this procedure is USMF.</span></span>
 

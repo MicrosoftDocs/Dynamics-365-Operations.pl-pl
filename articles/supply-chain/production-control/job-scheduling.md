@@ -20,16 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d49bea9579a54d175cf21780a97d67f2c35982e8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3fe905dc5550ee2e4289d3714d1dde5ea10bd61c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="job-scheduling"></a><span data-ttu-id="1d410-104">Planowanie zadań</span><span class="sxs-lookup"><span data-stu-id="1d410-104">Job scheduling</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="1d410-105">Ten artykuł zawiera informacje o planowaniu zadań, co jest bardziej szczegółową formą planowania niż planowanie operacji.</span><span class="sxs-lookup"><span data-stu-id="1d410-105">This article provides information about job scheduling, which is a more detailed form of scheduling than operations scheduling.</span></span> <span data-ttu-id="1d410-106">Można używać planowania zadań do tworzenia harmonogramu pojedynczych zadań lub zamówień w sklepie i kontrolowania środowiska produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="1d410-106">You can use job scheduling to schedule individual jobs or shop orders, and to control the manufacturing environment.</span></span>
 

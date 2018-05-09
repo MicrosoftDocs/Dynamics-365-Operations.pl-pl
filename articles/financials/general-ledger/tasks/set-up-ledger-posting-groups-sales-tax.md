@@ -16,15 +16,15 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e326acd4a7f681b02ee4846d36e94559ce6dbdfa
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b2587af5e004bb6ccebe01487a7b3b92ee965f38
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a><span data-ttu-id="f835a-103">Konfigurowanie grupy księgowania w księdze da podatku</span><span class="sxs-lookup"><span data-stu-id="f835a-103">Set up ledger posting groups for sales tax</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f835a-104">Podatek jest obliczany i księgowany na kontach głównych określonych w grupach księgowania.</span><span class="sxs-lookup"><span data-stu-id="f835a-104">Sales tax is calculated and posted to main accounts that are specified in the Ledger posting groups.</span></span> <span data-ttu-id="f835a-105">Grupy księgowania są dołączane do każdego kodu podatku.</span><span class="sxs-lookup"><span data-stu-id="f835a-105">Ledger posting groups are attached to each sales tax code.</span></span> <span data-ttu-id="f835a-106">Można skonfigurować osobne grupy księgowania dla każdego kodu podatku, użyć jednej grupy księgowania dla wszystkich kodów podatku lub przypisać wiele grup księgowania do kodów podatków.</span><span class="sxs-lookup"><span data-stu-id="f835a-106">You can set up individual ledger posting groups for each sales tax code, use one ledger posting group for all sales tax codes or assign multiple ledger posting groups to the sales tax codes.</span></span> <span data-ttu-id="f835a-107">To nagranie wykorzystuje firmę demonstracyjną DEMF.</span><span class="sxs-lookup"><span data-stu-id="f835a-107">This recording uses the DEMF demo company.</span></span> 
 
