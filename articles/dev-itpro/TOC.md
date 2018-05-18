@@ -10,7 +10,12 @@
 ## [Pobieranie kopii ewaluacyjnej](dev-tools/get-evaluation-copy.md)
 ## [Tworzenie konta na potrzeby subskrypcji](dev-tools/sign-up-preview-subscription.md)
 ## [Wdrażanie środowiska projektowego i uzyskiwanie do niego dostępu](dev-tools/access-instances.md)
-## [Wymagania systemowe dotyczące programowania](dev-tools/development-system-requirements.md)
+### [Konfigurowanie maszyny wirtualnej dewelopera](dev-tools/configure-developer-vm.md)
+### [Tworzenie nowego użytkownika na komputerze deweloperskim](dev-tools/enable-development-machine.md)
+### [Opracowywanie i tworzenie maszyn wirtualnych, które nie zezwalają na dostęp administratora — często zadawane pytania](sysadmin/VMs-no-admin-access.md)
+### [Zmienianie nazwy środowiska lokalnego w celu umożliwienia dostępu do usługi Visual Studio Team Services](migration-upgrade/vso-machine-renaming.md)
+### [Wymagania systemowe dotyczące programowania](dev-tools/development-system-requirements.md)
+## [Kontrola wersji, wyszukiwanie metadanych i nawigacja](dev-tools/version-control-metadata-navigation.md)
 ## Przykładowa aplikacja Zarządzanie flotą
 ### [Przykładowa aplikacja Zarządzanie flotą](dev-tools/fleet-management-sample.md)
 ### [Omówienie przykładowej aplikacji Zarządzanie flotą](dev-tools/introduction-fleet-management-sample.md)
@@ -22,8 +27,9 @@
 ### [Operacje kompilacji](dev-tools/build-operations.md)
 ### [Edytor kodu](dev-tools/code-editor.md)
 ### [Tworzenie modelu i elementów modelu danych](dev-tools/create-data-model-elements.md)
-### [Tworzenie nowego użytkownika na komputerze deweloperskim](dev-tools/enable-development-machine.md)
-### [Raport Analizy dostosowań](dev-tools/customization-analysis-report.md)
+#### [Wytyczne dotyczące nazewnictwa](extensibility/NamingGuidelines.md)
+#### [Wyłączanie dostosowania modelu i wycofywanie funkcji](dev-tools/lock-models.md)
+### [Raport Analiza dostosowań](dev-tools/customization-analysis-report.md)
 ### [Projektanci elementów](dev-tools/element-designers.md)
 ### [Użycie elementów](dev-tools/element-usage.md)
 ### [Eksportowanie i importowanie modelu](dev-tools/models-export-import.md)
@@ -31,7 +37,6 @@
 ### [Modele](dev-tools/models.md)
 ### [Projekty w rozwiązaniu Dynamics 365 for Finance and Operations](dev-tools/projects.md)
 ### [Dodatkowe narzędzia dla programu Visual Studio](dev-tools/developer-tools-add-ins.md)
-### [Wyłączanie dostosowania modelu i wycofywanie funkcji](dev-tools/lock-models.md)
 ### [Aktualizowanie narzędzi programistycznych programu Visual Studio](dev-tools/update-development-tools.md)
 ## Język programowania X++
 ### [Język X++ i funkcje debugera ](dev-tools/new-x-debugger-features.md)
@@ -104,7 +109,7 @@
 #### [Klasy — W](dev-ref/w-classes.md)
 #### [Klasy — X](dev-ref/x-classes.md)
 
-## [Strona główna rozszerzania](extensibility/extensibility-home-page.md)
+## [Możliwości rozszerzania](extensibility/extensibility-home-page.md)
 ### Wprowadzenie i rozpoczęcie pracy
 #### [Plany rozszerzania aplikacji](extensibility/extensibility-roadmap.md)
 #### [Pytania o rozszerzenia](extensibility/extensibility-requests.md) 
@@ -261,9 +266,9 @@
 ### [Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań](user-interface/task-recorder-training-docs.md)
 
 # [Platforma mobilna](mobile-apps/platform/mobile-platform-home-page.md)
-## Rozpoczęcie pracy
-### [Rozpoczęcie pracy](mobile-apps/platform/mobile-platform-getting-started.md)
+## [Rozpoczęcie pracy](mobile-apps/platform/mobile-platform-getting-started.md)
 ### [Architektura](mobile-apps/platform/mobile-platform-architecture.md)
+### [Omówienie zdarzeń logiki biznesowej](mobile-apps/platform/business-logic-events-overview.md)
 ### [Wytyczne dotyczące projektowania stron](mobile-apps/platform/page-design-guidelines.md)
 ### [Wytyczne dotyczące projektowania akcji](mobile-apps/platform/action-design-guidelines.md)
 ### [Wymagania dotyczące projektowania formularzy](mobile-apps/platform/form-design-requirements.md)
@@ -409,7 +414,7 @@
 ### [Szablony danych konfiguracji](data-entities/configuration-data-templates.md)
 ### [Szablony danych z wieloma arkuszami](data-entities/excel-template-multiple.md)
 ### [Śledzenie zmian w jednostce](data-entities/entity-change-track.md)
-
+### [Klucze konfiguracji i jednostki danych](data-entities/config-key-entities.md)
 ### [Znajdowanie informacji dotyczących standardowych jednostek danych](data-entities/data-entities-report.md)
 
 
@@ -417,7 +422,8 @@
 
 ### [Najlepsze rozwiązania w zakresie importowania załączników za pomocą jednostki Arkusz finansowy](data-entities/tips-tricks-import-general-journal-entity.md)
 
-## Rozwój jednostek danych
+## Opracowywanie jednostek danych
+### [Zasady projektowania i najlepsze rozwiązania dotyczące jednostek danych](dev-tools/design-best-practices.md)
 ### [Tworzenie nowych jednostek danych](data-entities/build-consuming-data-entities.md)
 ### [Właściwości jednostki danych](data-entities/behavioral-properties-data-entities.md)
 ### [Tworzenie kolumn obliczanych i pól wirtualnych](data-entities/data-entity-computed-columns-virtual-fields.md)
@@ -428,6 +434,9 @@
 ### [Właściwości metadanych](data-entities/behavioral-properties-data-entities.md)
 ### [Weryfikacje, wartości domyślne i niezamapowane pola](data-entities/validations-defaults-unmapped-fields.md)
 ### [Zabezpieczenia i jednostki danych](data-entities/security-data-entities.md)
+### [Tworzenie jednostki tylko do odczytu, która uwidacznia wymiary finansowe](financial/read-only-entity-financial.md)
+ 
+
 
 ## [Używanie własnej bazy danych](analytics/export-entities-to-your-own-database.md)
 
@@ -435,7 +444,7 @@
 ## [Automatyzacja zadań danych](data-entities/data-task-automation.md)
 
 ## [Zasoby do odpowiadania na żądanie danych RODO](gdpr/gdpr-home-page.md)
-### [Przewodnik po rozporządzeniu RODO w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-auditing-sensitive-data.md)
+### [Przewodnik po rozporządzeniu RODO w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-guide.md)
 ### [Klasyfikacje zasobów](gdpr/gdpr-asset-classification-values.md)
 ### [Używanie raportu wyszukiwania osób](gdpr/gdpr-person-search-report.md)
 ### [Rozszerzanie raportu wyszukiwania osób](gdpr/gdpr-extend-person-search-report.md)
@@ -443,8 +452,9 @@
 ### [Odpowiadanie na żądanie dotyczące danych osobowych za pomocą rozwiązania Talent](gdpr/respond-dsr-request-talent.md)
 ### [Odpowiadanie na żądanie dotyczące danych osobowych za pomocą systemu Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
 
+## [Obszar roboczy weryfikacji danych](user-interface/data-validation-workspace.md)
 
-# [Ciągłe dostarczanie — strona główna](dev-tools/continuous-delivery-home-page.md)
+# [Ciągłe dostarczanie](dev-tools/continuous-delivery-home-page.md)
 ## [Rozwój i ciągłe dostarczanie — często zadawane pytania](dev-tools/continuous-delivery-faq.md)
 ## [Wykluczenie pakietów testowych z wyników kompilacji](dev-tools/exclude-test-packages.md)
 ## [Zarządzanie modelami i pakietami środowiska uruchomieniowego innych firm za pomocą funkcji kontroli źródła](dev-tools/manage-runtime-packages.md)
@@ -486,7 +496,8 @@
 ## [Wytyczne dotyczące migracji kontrolki wpisów podzielonych na segmenty](financial/segmented-entry-control-migration-guidance.md)
 ## [Metody parm wpisów podzielonych na segmenty](financial/segmented-entry-control-parm-method-specification.md)
 ## [Dodawanie możliwości wyszukiwania wartości wymiarów finansowych w szablonach programu Microsoft Excel](financial/add-dimensions-excel-templates.md)
-## [Tworzenie dostawców kursów wymiany](financial/create-exchange-rate-providers.md)
+## [Tworzenie bankowych kursów wymiany](financial/create-exchange-rate-providers.md)
+## [Tworzenie bankowych kursów wymiany w rozwiązaniu Microsoft Dynamics Finance and Operations w wersji 8.0](financial/create-exchange-rate-8.md)
 
 # Opracowywanie łańcucha dostaw
 ## [Podręcznik programowania wykresów Gantta](user-interface/gantt-development-guide.md)
@@ -579,7 +590,6 @@
 
 # [Administrowanie systemem](sysadmin/system-administration-home-page.md)
 ## [Comiesięczne aktualizacje platformy — często zadawane pytania](sysadmin/faq-platform-monthly-updates.md)
-## [Maszyny wirtualne, które nie zezwalają na dostęp administratora — często zadawane pytania](sysadmin/VMs-no-admin-access.md)
 ## [Dodawanie linków do postanowień prawnych i zasad zachowania poufności informacji organizacji](sysadmin/legal-terms-privacy-statement.md)
 ## [Raport kodów licencji i kluczy konfiguracji](sysadmin/license-codes-configuration-keys-report.md)
 ## [Udostępnianie danych między firmami](sysadmin/cross-company-data-sharing.md)
