@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="system-grouping-on-an-open-work-list"></a>Grupowanie systemowe na liście otwartych prac
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Za pomocą pola grup systemowych można wyfiltrować listę otwartych prac bez konieczności edytowania elementu menu w urządzeniu komórkowym.
 Funkcja grupowania systemowego filtruje listę prac według jednego pola nagłówka pracy. Nie można używać grupowania systemowego do filtrowania według pól na poziomie wierszy.

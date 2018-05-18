@@ -27,7 +27,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="show-order-notifications-in-the-point-of-sale"></a>Wyświetlanie powiadomień o zamówieniach w aplikacji POS
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 We współczesnym środowisku sprzedaży detalicznej do pracowników sklepu są przypisane różne zadania, takie jak pomoc klientom, wprowadzanie transakcji, przeprowadzanie inwentaryzacji i odbieranie zamówień w sklepie. Klient punktu sprzedaży (POS) do jedna zintegrowana aplikacja, w której pracownicy mogą wykonywać te i wiele innych zadań. Ponieważ w ciągu dnia trzeba wykonywać różne zadania, pracownicy mogą potrzebować powiadomień, jeżeli coś wymaga ich uwagi. Struktura powiadomień w aplikacji POS rozwiązuje ten problem, umożliwiając pracownikom skonfigurowanie powiadomień opartych na rolach. W rozwiązaniu Microsoft Dynamics 365 for Retail z aktualizacją aplikacji 5 te powiadomienia można skonfigurować tylko dla operacji w aplikacji POS.
 

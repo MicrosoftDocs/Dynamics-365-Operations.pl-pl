@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-online-store"></a>Konfigurowanie sklepu internetowego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera łącza do tematów, które pomogą centralnie konfigurować i zarządzać sklepem internetowym.
 

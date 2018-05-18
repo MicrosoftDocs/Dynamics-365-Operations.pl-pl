@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-standard-cost-updates"></a>Zarządzanie aktualizacjami kosztu standardowego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Aktualizacjami dotyczącymi danych kosztów standardowych można zarządzać za pomocą dwóch różnych metod — metody jednej wersji lub metody dwóch wersji. 
 

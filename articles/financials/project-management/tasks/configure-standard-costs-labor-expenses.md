@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-standard-costs-for-labor-and-expenses"></a>Konfigurowanie standardowych kosztów robocizny i wydatków
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób konfigurowania standardowych kosztów robocizny i wydatków dla projektu. W tym zadaniu jest wykorzystywany zestaw danych firmy USSI.
 

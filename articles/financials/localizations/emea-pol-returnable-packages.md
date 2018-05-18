@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="returnable-packaging-for-poland"></a>Opakowania zwrotne dla Polski
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Funkcjonalność opakowań zwrotnych pozwala obsługiwać rejestrowanie opakowań, które mogą być zwracane przez odbiorców. Użytkownicy mogą definiować kody opakowań i określać kwotę kaucji, jaką odbiorca płaci za zwrotne materiały opakowaniowe. Ta funkcjonalność jest rozszerzeniem standardowej funkcjonalności materiałów opakowaniowych.
 

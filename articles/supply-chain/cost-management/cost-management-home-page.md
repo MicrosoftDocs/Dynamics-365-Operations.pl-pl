@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>Zarządzanie kosztami — strona główna
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Moduł [Zarządzanie kosztami (film)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) pozwala wykonywać operacje wyceny i księgowania surowców, półproduktów, wyrobów gotowych oraz zasobów produkcji w toku. Określa proces definiowania, zarządzania i raportowania dla operacji [księgowania zapasów](cost-object.md) i [księgowania produkcji](bom-calculations.md).
 

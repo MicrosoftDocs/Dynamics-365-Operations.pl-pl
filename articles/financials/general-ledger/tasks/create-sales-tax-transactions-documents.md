@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-sales-tax-transactions-on-documents"></a>Tworzenie transakcji podatku w dokumentach
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Podatek od dokumentu oblicza się poprzez określenie grupy podatków i grupy podatków dla towaru w wierszach dokumentu. Dane te są domyślnie pobierane z danych głównych, ale można je zmienić ręcznie, jeśli jest to konieczne. Obliczony podatek można sprawdzać na poziomie wiersza i dokumentu. W zadaniu wykorzystano firmę demonstracyjną USMF.
 

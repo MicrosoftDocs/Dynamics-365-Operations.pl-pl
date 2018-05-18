@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO z wartością fizyczną i oznaczeniami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Pierwszy na wejściu — pierwszy na wyjściu (First in, first out; FIFO) to model magazynu, w którym wcześniejsze nabycia są wydawane w pierwszej kolejności. Finansowo zaktualizowane elementy z magazynu są rozliczane z pierwszymi finansowo zaktualizowanymi przychodami do magazynu, na podstawie daty finansowej transakcji magazynowej. 
 

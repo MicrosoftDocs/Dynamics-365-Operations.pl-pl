@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-dimension-based-product-master"></a>Tworzenie produktu głównego opartego na wymiarach
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób tworzenia nowego produktu głównego przy użyciu technologii konfiguracji opartej na wymiarach. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Jest to pierwsza z ośmiu procedur opisujących sposób tworzenia kombinacji dla konfiguracji opartej na wymiarach.
 

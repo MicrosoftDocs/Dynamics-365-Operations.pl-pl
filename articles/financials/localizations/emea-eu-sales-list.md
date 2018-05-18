@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="eu-sales-list-reporting"></a>Raportowanie listy sprzedaży do UE
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o raportowaniu listy sprzedaży do państw Unii Europejskiej (UE).
 

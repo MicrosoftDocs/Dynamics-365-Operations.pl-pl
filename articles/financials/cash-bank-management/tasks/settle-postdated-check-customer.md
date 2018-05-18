@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>Rozliczanie czeku postdatowanego od odbiorcy
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Można rozliczyć czek postdatowany po jego rozliczeniu przez bank. Ta transakcja finansowa rozlicza także transakcję konta pomostowego dla czeku postdatowanego. 
 

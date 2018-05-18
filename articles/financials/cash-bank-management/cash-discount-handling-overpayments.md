@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="handling-cash-discounts-for-overpayments"></a>Obsługa rabatów gotówkowych w przypadku nadpłat
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera scenariusze pokazujące sposób obsługi płatności, gdy odbiorca ma rabat gotówkowy, a mimo to nawet nadpłaca. 
 

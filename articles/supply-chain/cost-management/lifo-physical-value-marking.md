@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO z wartością fizyczną i oznaczeniami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Ostatni na wejściu — pierwszy na wyjściu (Last in, first out; LIFO) to model magazynu, w którym ostatnie (najnowsze) przyjęcia na magazyn są wydawane jako pierwsze. Rozchody zapasów są rozliczane w kolejności odwrotnej do odbierania towarów w magazynie, na podstawie daty transakcji magazynowej. 
 

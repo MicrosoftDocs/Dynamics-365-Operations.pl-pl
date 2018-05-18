@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="fixed-assets-disposal-for-poland"></a>Likwidacja środków trwałych dla Polski
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o funkcjonalności likwidacji środków trwałych dla użytkowników w firmach w Polsce. 
 

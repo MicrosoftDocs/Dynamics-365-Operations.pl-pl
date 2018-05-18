@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>Uaktualnianie formatu przez adaptację nowej wersji podstawowej na potrzeby raportowania elektronicznego (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może zarządzać konfiguracją formatu raportowania elektronicznego (ER). W tej procedurze pokazano sposób tworzenia niestandardowej wersji formatu w oparciu o format otrzymany od dostawcy konfiguracji (CP). Ponadto wyjaśniono, jak zastosować nową bazową wersję tego formatu.
 

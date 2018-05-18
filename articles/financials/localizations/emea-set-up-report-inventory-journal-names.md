@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-journal-reports"></a>Raporty arkuszy magazynowych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Jeśli używasz konfigurowalnych raportów o zapasach opartych na raportowaniu elektronicznym, należy zdefiniować relacje między określonymi raportami a typami arkuszy.
 

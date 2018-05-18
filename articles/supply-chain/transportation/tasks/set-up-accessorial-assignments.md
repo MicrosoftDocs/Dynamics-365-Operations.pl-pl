@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-accessorial-assignments"></a>Konfigurowanie przypisania usług dodatkowych
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób konfigurowania przypisania usług dodatkowych. Zazwyczaj jest to realizowane przez koordynatora transportu. Zanim będzie można użyć tego przewodnika, należy wykonać zadania z przewodnika „Ustawianie opłat za usługi dodatkowe Centrum i głównych usług dodatkowych”.
 

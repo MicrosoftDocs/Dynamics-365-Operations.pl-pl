@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="design-expressions-to-call-application-class-methods-er"></a>Projektowanie wyrażeń do wywoływania metod klas aplikacji (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ten przewodnik zawiera informacje, jak ponownie użyć istniejącej logiki aplikacji w konfiguracjach elektronicznego raportowania (RE) poprzez wywołanie wymaganych metod klas aplikacji w wyrażeniach ER. Wartości argumentów wywołania klas można definiować dynamicznie w czasie wykonywania: na przykład na podstawie informacji w dokumencie analizy w celu zapewnienia jego poprawności. W tym przewodniku po zadaniu utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Ta procedura została utworzona dla użytkowników z przypisaną rola administratora systemu lub dewelopera raportowania elektronicznego. 
 

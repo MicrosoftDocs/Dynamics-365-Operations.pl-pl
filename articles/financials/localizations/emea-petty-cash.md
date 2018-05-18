@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="petty-cash-for-eastern-europe"></a>Gotówka podręczna dla krajów Europy Wschodniej
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o funkcji gotówki podręcznej, która pozwala użytkownikom w Estonii, na Litwie, w Czechach, na Węgrzech, na Łotwie, w Polsce i w Rosji uwzględniać operacje gotówkowe w systemie.
 

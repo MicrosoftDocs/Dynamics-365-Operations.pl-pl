@@ -29,7 +29,7 @@ ms.lasthandoff: 01/17/2018
 
 # <a name="prerequisites-for-standard-costs"></a>Wymagania wstępne dla kosztów standardowych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano podstawowe czynności związane z używaniem kosztów standardowych. Kolejne czynności zależą od specyfiki działalności firmy. Na przykład są inne dla środowiska nieprodukcyjnego, środowiska produkcyjnego bez marszrut oraz środowiska produkcyjnego wykorzystującego marszruty. 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-disposal-posting-accounts"></a>Konta księgowania likwidacji środków trwałych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak w księdze głównej skonfigurować konta księgowania operacji likwidacji środków trwałych.
 

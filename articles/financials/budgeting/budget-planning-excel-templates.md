@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-templates-for-excel"></a>Szablony planowania budżetu dla programu Excel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano sposób tworzenia szablonów programu Microsoft Excel, które mogą być używane w planach budżetu.
 

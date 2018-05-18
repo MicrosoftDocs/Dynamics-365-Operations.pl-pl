@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="reason-codes-for-inventory-counting"></a>Kody przyczyn zliczania zapasów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kody przyczyn umożliwiają analizowanie wyników procesu inwentaryzacji (zliczania) i wszelkich rozbieżności pojawiających się w trakcie tego procesu. Można określić przyczynę wykonywania inwentaryzacji, taką jak uszkodzenie palety lub korekta zapasów oparta na próbkach zapasów.
 

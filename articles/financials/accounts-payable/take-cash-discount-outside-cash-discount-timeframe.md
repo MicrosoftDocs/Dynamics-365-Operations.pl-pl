@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Zastosowanie rabatu gotówkowego poza okresem rabatu gotówkowego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera dwa scenariusze pokazujące stosowanie rabatu gotówkowego nawet w przypadku, gdy płatność jest dokonywana poza okresem rabatu gotówkowego.
 

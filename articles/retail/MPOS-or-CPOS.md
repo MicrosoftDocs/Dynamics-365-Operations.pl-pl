@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a>Wybór nowoczesnego punktu sprzedaży lub punktu sprzedaży w chmurze
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W temacie tym przedstawiono również dodatkowe tło, wskazówki oraz wytyczne dla osób odpowiedzialnych za wdrożenie w zakresie czynników, jakie powinni wziąć pod uwagę podczas wdrażania oprogramowania Microsoft Dynamics 365 for Retail. Zapoznanie się z tymi wytycznymi oraz przestrzeganie ich w procesie wdrożenia pozwoli uniknąć osobom odpowiedzialnym za wdrożenie problemów, które mogą wpłynąć na zadowolenie klienta lub wydajność.
 

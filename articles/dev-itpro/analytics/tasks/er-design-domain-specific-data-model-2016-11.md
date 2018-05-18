@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="design-a-domain-specific-data-model-for-electronic-reporting-er"></a>Projektowanie modelu danych specyficznego dla domeny na potrzeby raportowania elektronicznego (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć nową konfigurację raportowania elektronicznego (ER) zawierającą dane dokumentów płatności elektronicznych. Ten model danych będzie później używany jako źródło danych podczas tworzenia formatu dokumentów płatności.
 

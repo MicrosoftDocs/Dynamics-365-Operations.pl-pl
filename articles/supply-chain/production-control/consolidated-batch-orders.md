@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="consolidated-batch-orders"></a>Skonsolidowane szarże produkcyjne
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano koncepcję skonsolidowanych szarż produkcyjnych.
 

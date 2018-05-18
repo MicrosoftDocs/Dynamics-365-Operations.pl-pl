@@ -29,7 +29,7 @@ ms.lasthandoff: 02/06/2018
 
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurowanie magazynu przy użyciu szablonu konfiguracji magazynu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono sposób konfigurowania magazynu przy użyciu szablonu konfiguracji magazynu. Dostępnych jest kilka wstępnie zdefiniowanych szablonów konfiguracji, których można użyć. Aby uzyskać informacje na temat korzystania z tych szablonów, zobacz [Szablony danych konfiguracji](../../dev-itpro/data-entities/configuration-data-templates.md).
 

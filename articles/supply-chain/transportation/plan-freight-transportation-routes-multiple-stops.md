@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Planowanie tras przewozu frachtu z przystankami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano różne elementy używane do planowania tras transportu w programie Microsoft Dynamics 365 for Finance and Operations.
 

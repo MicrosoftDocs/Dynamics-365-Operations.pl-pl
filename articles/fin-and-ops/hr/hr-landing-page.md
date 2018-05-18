@@ -26,7 +26,7 @@ ms.lasthandoff: 02/15/2018
 
 # <a name="welcome-to-human-resources"></a>Zasoby ludzkie — Zapraszamy!
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Moduł Zasoby ludzkie upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Ponadto dla pracowników działu zasobów ludzkich stanowi platformę zarządzania odnośnymi obszarami. Te obszary obejmują rekrutację i utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami.
 

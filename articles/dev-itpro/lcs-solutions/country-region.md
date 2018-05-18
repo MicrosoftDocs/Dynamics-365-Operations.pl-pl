@@ -18,18 +18,18 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 389efbe1853264c1503737b55dd7767fdcb966ca
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c925b2e996f51b8c5d5332217643c3155cfc03c0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>Funkcje związane z lokalizacją i wymagane przepisami prawa
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Rozwiązanie Microsoft Dynamics 365 for Finance and Operations zawiera funkcje specyficzne dla krajów/regionów opisanych w dokumencie [Przewodnik dostępności produktu w różnych krajach](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Te funkcje są włączane na podstawie podstawowego adresu aktywnej firmy. 
+Rozwiązanie Microsoft Dynamics 365 for Finance and Operations zawiera funkcje specyficzne dla krajów/regionów opisanych w dokumencie [Przewodnik dostępności produktu w różnych krajach](http://download.microsoft.com/documents/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Te funkcje są włączane na podstawie podstawowego adresu aktywnej firmy. 
 
 Ten temat zawiera listę zasobów, które pomogą Ci dowiedzieć się więcej o rozwiązaniach, aktualnościach, alertach i funkcjach specyficznych dla kraju/regionu. 
 

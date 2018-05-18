@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="intrastat"></a>Intrastat
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o sprawozdawczości Intrastat o handlu towarami i — w niektórych przypadkach — usługami między krajami/regionami Unii Europejskiej (UE). Omówiono proces sprawozdawczości oraz opisano wymagane ustawienia i warunki wstępne.
 

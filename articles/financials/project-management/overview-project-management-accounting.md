@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="project-management-and-accounting"></a>Zarządzanie projektami i ich księgowanie
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Funkcji zarządzanie projektami i ich księgowania można używać w wielu branżach w celu świadczenia usług, wytwarzania produktów lub uzyskiwania rezultatów.  
 

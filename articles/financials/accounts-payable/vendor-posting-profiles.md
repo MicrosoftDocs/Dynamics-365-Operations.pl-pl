@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vendor-posting-profiles"></a>Profile księgowania dostawców
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Profile księgowania dostawców umożliwiają nadzór nad księgowaniem transakcji z dostawcami w księdze głównej.
 

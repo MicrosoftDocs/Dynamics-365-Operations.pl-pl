@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-and-filter-workspaces"></a>Konfigurowanie i filtrowanie obszarów roboczych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie metod konfigurowania i filtrowania obszarów roboczych.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="vat-register-transactions-for-eastern-europe"></a>Transakcje rejestru VAT dla Europy Wschodniej
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o transakcjach rejestru VAT dla Estonii, Litwy, Czech, Węgier, Łotwy i Polski. 
 

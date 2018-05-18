@@ -29,7 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="set-up-rfm-analysis"></a>Ustaw analizę RFM
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W tym temacie omówiono konfigurowanie analizy ostatniego zakupu, częstotliwości i wartości pieniężnej (RFM) dla odbiorców.
 

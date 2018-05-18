@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurowanie etapu zatwierdzania w przepływie pracy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono sposób konfigurowania właściwości kroku zatwierdzania.
 

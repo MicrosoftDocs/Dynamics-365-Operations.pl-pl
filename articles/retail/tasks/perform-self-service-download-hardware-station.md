@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="perform-self-service-to-download-hardware-station"></a>Samoobsługa w zakresie pobierania stacji sprzętowej
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ta procedura zawiera instruktaż pobierania wstępnie zdefiniowanej stacji sprzętowej. Dane wykorzystane w tej procedurze pochodzą z firmy demonstracyjnej USRT. Przed rozpoczęciem tego zadania należy utworzyć nowy profil stacji sprzętowej i stację sprzętową.
 

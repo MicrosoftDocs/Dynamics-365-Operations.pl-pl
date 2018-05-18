@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Zasady podziału księgowań i zapisów w arkuszu księgi podrzędnej dla faktur niezależnych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Zasady podziału księgowań służą do określania sposobu księgowania kwot, takich jak przychody, podatki lub opłaty, na fakturze niezależnej. Każdy kwota, która musi zostać zaksięgowana w trakcie zapisu w arkuszu dla faktury niezależnej, będzie posiadać jedną lub więcej zasad podziału księgowań.
 

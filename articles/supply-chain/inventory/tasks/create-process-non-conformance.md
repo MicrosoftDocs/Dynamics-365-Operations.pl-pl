@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-process-a-conformance"></a>Tworzenie i przetwarzanie zgodności
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura służy do zarządzania niezgodnościami na podstawie istniejącego zlecenia kontroli jakości. To nagranie można uruchomić w kontekście firmy demonstracyjnej USMF i użyć sugerowanych wartości. Zazwyczaj ta procedura jest wykonywana przez pracownika ds. kontroli jakości.  Warunkiem wstępnym jest przejście nagrania zadania „Sprawdzenie jakości towarów”. Aby wykonać zatwierdzenie niezgodności, użytkownik, który uruchomił nagranie zadania, musi mieć przypisaną wartość „Nazwa” na stronie Użytkownicy. Aby korzystać z notatek do dokumentu, użytkownik musi mieć również włączoną funkcję Obsługa dokumentu w opcjach użytkownika.
 

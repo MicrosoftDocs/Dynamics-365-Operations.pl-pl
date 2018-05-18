@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-a-fixed-asset-group"></a>Zmienianie grupy środków trwałych
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Środki trwałe powinny być przypisane do odpowiedniej grupy środków trwałych. Grupa środków trwałych jest używana do następujących operacji:
 

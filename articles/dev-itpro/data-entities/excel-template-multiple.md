@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="excel-templates-with-multiple-worksheets"></a>Szablony programu Excel z wieloma arkuszami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Moduł Zarządzanie danymi w programie Microsoft Dynamics 365 for Finance and Operations obsługuje oparte na programie Microsoft Excel szablony jednostek danych. Szablony te mogą zawierać jeden lub więcej arkuszy. Szablony z wieloma arkuszami są często używane, gdy wygodne jest zarządzanie danymi w jednym pliku i importowanie go do wielu jednostek danych. Przykładem mogą być oddziały i magazyny.
 

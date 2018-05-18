@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="solver-strategy-for-product-configuration"></a>Strategia zmiennej na potrzeby konfiguracji produktów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano, jak za pomocą strategii doboru solverów poprawić działanie konfiguracji produktu.
 

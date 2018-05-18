@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-setup-requirements"></a>Wymagania konfiguracji produkcji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o konfiguracji, jaką należy zapewnić przed rozpoczęciem używania modułu Kontrola produkcji. 
 

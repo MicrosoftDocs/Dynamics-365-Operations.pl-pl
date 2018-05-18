@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="backflush-costing"></a>Wycena wsteczna
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera wprowadzenie do koncepcji wyceny wstecznej używanej w produkcji oszczędnej. 
 

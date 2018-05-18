@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="monitor-sales-and-margin-performance"></a>Monitorowanie wydajności sprzedaży i marży
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W programie Microsoft Dynamics 365 for Retail istnieje możliwość monitorowania wyników sprzedaży i osiąganych marż w czasie rzeczywistym.
 

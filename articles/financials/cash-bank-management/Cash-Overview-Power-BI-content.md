@@ -26,7 +26,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="cash-overview-power-bi-content"></a>Pakiet zawartości usługi Power BI Przegląd środków pieniężnych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartość **Przegląd środków pieniężnych** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 

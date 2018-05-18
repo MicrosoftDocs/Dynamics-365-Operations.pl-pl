@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="specify-a-lading-address-for-an-intra-community-transaction"></a>Określanie adresu załadunku dla transakcji wewnątrzwspólnotowej
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura pokazuje, jak określić adres załadunku dla transakcji handlu wewnątrzwspólnotowego. Na przykład niemiecka firma zamawia towary od dostawcy z adresem służbowym w Niemczech. Ten dostawca ma magazyn we Włoszech i wysyła towary stamtąd. Tę dostawę należy zgłosić w systemie Intrastat. To samo zachowanie obowiązuje w przypadku zwrotów od odbiorców.
 Ta procedura dotyczy wszystkich krajów/regionów Europy. Zadanie utworzono przy użyciu danych firmy demonstracyjnej DEMF, której podstawowy adres mieści się w Niemczech. Zanim będzie można wykonać tę procedurę, trzeba skonfigurować funkcję raportowania Intrastat. Procedura jest przeznaczona dla księgowych. Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.

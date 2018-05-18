@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Likwidacja środka trwałego z wykorzystaniem faktury niezależnej
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób nabywania środka trwałego przy użyciu propozycji nabycia zdefiniowanej w arkuszu środków trwałych. Procedura korzysta z roli księgowego i danych firmy demonstracyjnej USMF.
 

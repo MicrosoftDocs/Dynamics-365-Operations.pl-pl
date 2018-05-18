@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Dodawanie analizy do obszarów roboczych za pomocą usługi Power BI Embedded
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Ta funkcja jest obsługiwana w programie Dynamics 365 for Finance and Operations (w wersji 7.2 i nowszych).

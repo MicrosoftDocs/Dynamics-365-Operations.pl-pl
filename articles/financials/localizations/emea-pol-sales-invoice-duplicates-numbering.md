@@ -26,7 +26,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="duplicate-sales-invoice-numbering-for-poland"></a>Numerowanie duplikatów faktur sprzedaży dla Polski
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Firmom w Polsce funkcja numerowania duplikatów faktur sprzedaży pozwala identyfikować i śledzić powtarzające się faktury sprzedaży. Ten temat zawiera informacje o funkcji numerowania duplikatów faktur sprzedaży oraz wyjaśnienia, jak utworzyć duplikat faktury, usunąć duplikat faktury i wydrukować kopię duplikatu faktury.
 

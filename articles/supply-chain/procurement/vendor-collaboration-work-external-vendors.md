@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vendor-collaboration-with-external-vendors"></a>Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Moduł **Współpraca z dostawcami** jest przeznaczony dla dostawców, którzy nie ma mają systemów elektronicznej wymiany danych (EDI) zintegrowanych z programem Microsoft Dynamics 365 for Finance and Operations. Umożliwia dostawcom pracę z zamówieniami zakupu (PO), fakturami, zapasami konsygnacyjnymi i zapytaniami ofertowymi (RFQ), a także uzyskanie dostępu do części danych głównych dostawcy. W tym temacie wyjaśniono możliwości współpracy z zewnętrznymi dostawcami, którzy używają interfejsu współpracy z dostawcami do wykonywania operacji na zamówieniach zakupu, zapytaniach ofertowych i zapasach konsygnacyjnych. Wyjaśniono także sposoby konfigurowania określonych dostawców do używania portalu współpracy z dostawcami oraz sposoby definiowania informacji wyświetlanych wszystkim dostawcom podczas odpowiadania na zamówienie zakupu.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Śledzenie towarów i surowców w zapasach, produkcji i sprzedaży
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano sposób korzystania ze śledzenia towaru do identyfikowania, gdzie towary lub surowce zostały użyte, są używane lub będą używane w produkcji i procesach sprzedaży.
 

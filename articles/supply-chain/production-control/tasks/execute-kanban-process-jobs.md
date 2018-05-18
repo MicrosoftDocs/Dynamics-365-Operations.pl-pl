@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="execute-kanban-process-jobs"></a>Wykonywanie zadań procesu w systemie Kanban
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura skupia się na wykonywaniu zadań procesu w systemie Kanban. Pierwsze zadanie zostało ukończone z oczekiwaną ilością i nie zawiera błędów. Drugie zadanie zostało ukończone z błędami. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Ta procedura jest przeznaczona dla operatora maszyny.
 

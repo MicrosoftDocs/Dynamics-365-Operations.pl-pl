@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="map-components-of-the-created-format-to-data-model-elements-for-electronic-reporting-er"></a>Mapowanie składników utworzonego formatu na elementy modelu danych na potrzeby raportowania elektronicznego (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W poniższej procedurze pokazano, jak użytkownik posiadający rolę Administrator systemu lub Deweloper raportowania elektronicznego może mapować elementy modelu danych na składniki utworzonej konfiguracji raportowania elektronicznego (ER), która definiuje format dokumentu elektronicznego dla domeny biznesowej płatności. Ten format będzie używany później do generowania dokumentów elektronicznych przeznaczonych do przetwarzania płatności. W tym przykładzie utworzysz konfigurację formatu dla przykładowej firmy „Litware, Inc.”. Podane kroki można wykonać w dowolnej firmie, ponieważ konfiguracje ER są współużytkowane przez wszystkie firmy. Aby wykonać te kroki, należy najpierw wykonać kroki przewodnika po zadaniu „Tworzenie konfiguracji formatu”.
 

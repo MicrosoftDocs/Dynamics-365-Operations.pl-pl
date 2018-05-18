@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="sell-and-return-products-outside-of-an-assortment"></a>Sprzedaż i zwrot produktów spoza asortymentu
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Typowy scenariusz u każdego sprzedawcy detalicznego to sprzedaż produktów klientom lub przyjmowanie zwrotów od klientów, nawet jeśli sprzedawcy nie mają tych produktów w sklepie (innymi słowy produkty nie wchodzą w skład asortymentu sklepu).
 Poniżej przedstawiono niektóre typowe scenariusze:

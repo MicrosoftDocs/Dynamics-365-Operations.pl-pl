@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="create-rules-for-optimization-advisor"></a>Tworzenie reguł dla Doradcy optymalizacji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono sposób tworzenia nowych reguł dla obszaru roboczego **Doradca optymalizacji**. Na przykład można utworzyć nową regułę określającą, które sprawy dotyczące zapytań ofertowych (ZO) mają puste tytuły. Stosowanie tytułów do spraw ułatwia ich rozpoznawanie i wyszukiwanie. Choć poniższy przykład jest dość prosty, pokazuje, co można osiągnąć za pomocą reguł optymalizacji. 
 

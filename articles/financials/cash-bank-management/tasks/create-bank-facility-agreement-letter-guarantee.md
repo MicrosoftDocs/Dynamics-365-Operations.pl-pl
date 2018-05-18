@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-the-letter-of-guarantee"></a>Tworzenie umowy instrumentu bankowego na poręczenie
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To zadanie tworzy umowę instrumentu bankowego w celu przetwarzania poręczenia. W zadaniu wykorzystano firmę demonstracyjną USMF. 
 

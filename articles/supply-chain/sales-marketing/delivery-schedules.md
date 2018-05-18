@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="delivery-schedules"></a>Harmonogramy dostaw
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Harmonogramy dostaw umożliwiają śledzenie ilości w wierszu zamówienia, gdy jest używanych wiele dostaw dla jednego zamówienia sprzedaży, oferty sprzedaży lub zamówienia zakupu.
 

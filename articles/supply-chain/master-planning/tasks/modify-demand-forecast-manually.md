@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Ręczne modyfikowanie prognozy popytu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób modyfikowania prognozy dla towaru. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. To nagranie jest przeznaczone dla planisty produkcji. 
 

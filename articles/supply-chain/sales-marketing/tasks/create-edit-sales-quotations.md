@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-and-edit-sales-quotations"></a>Tworzenie i edytowanie ofert sprzedaży
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura przedstawia sposób tworzenia i aktualizowania oferty sprzedaży. Można wykonać tę procedurę przy użyciu danych własnych lub firmy demonstracyjnej USMF.
 

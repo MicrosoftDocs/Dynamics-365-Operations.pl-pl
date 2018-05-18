@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="company-directory-mobile-workspace"></a>Mobilny obszar roboczy Firmowa książka adresowa
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Firmowa książka adresowa**. Ten obszar roboczy umożliwia użytkownikom wyświetlanie danych i kontaktowanie się z innymi pracownikami w organizacji.
 

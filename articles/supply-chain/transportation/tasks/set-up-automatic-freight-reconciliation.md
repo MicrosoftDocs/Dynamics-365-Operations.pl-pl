@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Konfigurowanie automatycznego uzgadniania frachtu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura pokazuje, jak skonfigurować dane dla automatycznego uzgadniania frachtu. Zwykle wykonuje to kierownik magazynu. Procedurę można wykonać przy użyciu danych firmy demonstracyjnej USMF.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Konwersja waluty rozliczeniowej lub raportowania
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Firma, która musi zmienić walutę rozliczeniową lub walutę raportowania, ma 2 opcje: Pierwszą opcją jest utworzenie nowej firmy i rozpoczęcie pracy od nowa. Druga opcja to uruchomienie procesu konwersji waluty raportowania i księgowania. Jest to bardzo długotrwały proces, zmieniający wszystkie transakcje w systemie. Wymagana jest także konfiguracja procesu przed jego uruchomieniem.
 

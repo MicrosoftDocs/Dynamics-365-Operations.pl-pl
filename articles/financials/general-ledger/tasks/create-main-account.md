@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-main-account"></a>Tworzenie konta głównego
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To zadanie prowadzi przez proces dodawania konta głównego do istniejącego planu kont. To nagranie wykorzystuje firmę demonstracyjną USMF.  
 

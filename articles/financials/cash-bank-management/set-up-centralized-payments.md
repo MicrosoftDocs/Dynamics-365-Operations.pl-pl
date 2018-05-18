@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-centralized-payments"></a>Konfigurowanie scentralizowanych płatności
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Wykonaj następujące kroki, aby przygotować się do przetwarzania płatności w jednej firmie w imieniu innych firm w organizacji. Przed rozpoczęciem wykonaj następującą konfigurację:
 

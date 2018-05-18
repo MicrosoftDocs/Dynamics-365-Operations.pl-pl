@@ -26,7 +26,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="currency-revaluation-for-bank-account-transactions"></a>Przeszacowanie w walucie dla transakcji na kontach bankowych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="revalue-foreign-currency-amounts-for-bank-account-transactions"></a>Zmiana wartości kwoty w walucie obcej dla transakcji na kontach bankowych
 

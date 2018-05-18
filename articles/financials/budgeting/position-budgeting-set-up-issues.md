@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="position-budgeting-troubleshooting"></a>Rozwiązywanie problemów z budżetowaniem stanowisk
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera odpowiedzi na pytania, które mogą się pojawić podczas konfigurowania budżetowania stanowisk. Odpowiada na często zadawane pytania na temat tworzenia składników kosztu budżetowego, grup wynagrodzeń i siatek wynagrodzeń. 
 

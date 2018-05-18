@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="microsoft-dynamics-365-for-talent-system-requirements-and-update-policy"></a>Wymagania systemowe i zasady aktualizacji programu Microsoft Dynamics 365 for Talent
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W tym temacie podano wymagania dotyczące programu Microsoft Dynamics 365 for Talent. Opisano w nim także zasady aktualizacji.
 

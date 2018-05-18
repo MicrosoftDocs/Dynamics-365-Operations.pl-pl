@@ -27,7 +27,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="workflow-elements"></a>Elementy przepływu pracy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera opis różnych elementów składających się na przepływ pracy.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="create-a-credit-note-on-project-invoices"></a>Tworzenie faktury korygującej w fakturach projektu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 1. Wybierz kolejno opcje Zarządzanie projektami i ich księgowanie> Projekty > Wszystkie projekty. 
 2. Na liście znajdź i zaznacz odpowiedni rekord. 

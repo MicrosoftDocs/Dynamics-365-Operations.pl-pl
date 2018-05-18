@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="transportation-management-engines"></a>Aparaty do zarządzania transportem
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Aparaty zarządzania transportem definiują logikę, która służy do tworzenia i przetwarzania stawek transportowych w module Zarządzanie transportem. 
 

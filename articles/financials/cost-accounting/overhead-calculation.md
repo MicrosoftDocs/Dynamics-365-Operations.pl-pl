@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="overhead-calculation"></a>Obliczenie narzutu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano typowe procesy służące obliczaniu i podzielaniu kosztów ogólnych.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="payment-methods-in-a-call-center"></a>Metody płatności w biurze obsługi
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W programie Microsoft Dynamics 365 for Retail konfiguracja kanału biura obsługi zawiera ustawienie o nazwie **Włącz kończenie zamówienia**. To ustawienie pomaga zagwarantować, że wszystkie zamówienia tworzone przez użytkowników kanału są zwalniane do przetwarzania zamówień tylko wtedy, gdy mają opłacone z góry lub wstępnie autoryzowane płatności mieszczące się w zatwierdzonych granicach tolerancji. Jeśli ustawienie **Włącz kończenie zamówienia** jest włączone, użytkownicy biura obsługi mogą wprowadzać płatności dla zamówień sprzedaży od odbiorców za pomocą funkcji przetwarzania płatności dostępnych w biurze obsługi. Jeśli ustawienie jest wyłączone, użytkownicy biura obsługi nie mogą korzystać z funkcji przetwarzania płatności zawartych w biurze obsługi, ale nadal mogą stosować przedpłaty do zamówień sprzedaży, używając do tego standardowych funkcji modułu Rozrachunki z odbiorcami.
 

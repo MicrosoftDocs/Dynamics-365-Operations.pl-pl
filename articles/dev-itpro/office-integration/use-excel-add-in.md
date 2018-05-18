@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="use-the-excel-add-in"></a>Używanie dodatku programu Excel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak otwierać dane jednostek w programie Microsoft Excel, a następnie wyświetlać, aktualizować i edytować te dane przy użyciu dodatku pakietu Office dla usługi Microsoft Dynamics dla programu Excel. Aby otworzyć dane jednostki, można zacząć z poziomu programu Excel lub Microsoft Dynamics 365 for Finance and Operations.
 

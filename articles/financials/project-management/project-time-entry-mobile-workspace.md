@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-time-entry-mobile-workspace"></a>Mobilny obszar roboczy Wprowadzanie czasu projektu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Wprowadzanie czasu projektu**. Ten obszar roboczy umożliwia użytkownikom wprowadzanie i zapisywanie czasu względem projektu za pomocą ich urządzeń przenośnych.
 

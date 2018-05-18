@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Symulacja zmian kosztów przy użyciu wersji wyceny kosztów planowanych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule wyjaśniono, jak symulować wpływ zmian kosztów na obliczone koszty wytwarzanego towaru poprzez użycie osobnej wersji wyceny dla kosztów planowanych.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="formulas-and-formula-versions"></a>Formuły i wersje formuł
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Formuła określa materiały, składniki i wyniki określonego procesu w wytwarzaniu procesowym. Wraz z odpowiednią marszrutą formuła definiuje cały proces w wytwarzaniu procesowym. Formuły służą do planowania i wytwarzania produktów w wytwarzaniu procesowym.
 

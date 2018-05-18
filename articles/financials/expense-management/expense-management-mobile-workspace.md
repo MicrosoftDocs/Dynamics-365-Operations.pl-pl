@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-management-mobile-workspace"></a>Mobilny obszar roboczy Zarządzanie wydatkami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Zarządzanie wydatkami**. Ten obszar roboczy pozwala użytkownikom rejestrować i przekazywać paragony, dzięki czemu można je później dołączać do raportów z wydatków. Użytkownicy szybko utworzyć wiersz wydatku za pomocą dołączonego paragonu oraz tworzyć raporty z wydatków i nimi zarządzać. Osoby zatwierdzające mogą w mobilnym obszarze roboczym **Zarządzanie wydatkami** wyświetlać raporty z wydatków, które im przypisano, oraz zatwierdzać lub odrzucać te raporty.
 

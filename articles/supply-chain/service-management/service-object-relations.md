@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-object-relations"></a>Relacje przedmiotów serwisu 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Można utworzyć relacje przedmiotów serwisu oraz umowę serwisową lub zlecenie serwisowe. Podczas tworzenia relacji przedmiot serwisu łączy się z umową serwisową lub zleceniem serwisowym.
 

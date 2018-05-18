@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="moving-average"></a>Średnia ruchoma
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Średnia ruchoma to metoda kosztów ciągłych oparta na zasadzie średniej, a w której koszty wydań z magazynu nie zmieniają się po zmianie kosztu zakupu. Różnica jest kapitalizowana i oparta na obliczeniu proporcjonalnym. Pozostała kwota jest zaliczana w koszty. 
 

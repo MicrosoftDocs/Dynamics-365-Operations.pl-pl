@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-intercompany-project-invoicing"></a>Konfigurowanie fakturowania projektów międzyfirmowych
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób konfigurowania fakturowania projektów między dwoma firmami w tej samej organizacji. W tym zadaniu jest wykorzystywany zestaw danych firmy USSI.
 

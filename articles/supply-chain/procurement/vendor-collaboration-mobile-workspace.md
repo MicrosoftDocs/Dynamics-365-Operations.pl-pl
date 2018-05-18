@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vendor-collaboration-mobile-workspace"></a>Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o komórkowym obszarze roboczym **Współpraca z dostawcami**. Ten obszar roboczy pomaga Twoim dostawcom być na bieżąco z zamówieniami zakupu, które zostały im wysłane do zatwierdzenia. Mogą również wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych.
 

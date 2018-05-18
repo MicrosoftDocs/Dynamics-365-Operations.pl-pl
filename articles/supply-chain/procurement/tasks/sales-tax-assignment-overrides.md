@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="sales-tax-assignment-and-overrides"></a>Przypisanie podatku i ręcznych zmian podatków
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura przedstawia sposób przypisywania grup podatków do kanałów sprzedaży detalicznej. Ponadto prowadzi przez proces tworzenia nowej ręcznej zmiany podatku i przypisywania jej do istniejącej grupy ręcznej zmiany podatku. Ta procedura
 

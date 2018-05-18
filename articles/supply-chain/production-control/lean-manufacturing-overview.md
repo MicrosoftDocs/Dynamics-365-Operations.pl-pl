@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="lean-manufacturing-overview"></a>Omówienie wytwarzania typu lean manufacturing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie i opis funkcji produkcji oszczędnej dostępnych w programie Microsoft Dynamics 365 for Finance and Operations.
 

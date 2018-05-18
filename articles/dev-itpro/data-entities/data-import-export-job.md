@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="data-import-and-export-jobs"></a>Zadania importowania i eksportowania danych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Aby tworzyć zadania importu i eksportu w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations i zarządzać nimi, należy korzystać z obszaru roboczego **Zarządzanie danymi**. Domyślne proces importowania i eksportowania danych tworzy tabelę przemieszczania dla każdej jednostki w docelowej bazie danych. Tabele tymczasowe umożliwiają sprawdzenie, czyszczenie lub konwersję danych przed ich przeniesieniem.
 

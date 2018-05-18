@@ -29,9 +29,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Domyślne ustawienia zamówienia dla wymiarów i wariantów produktu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Domyślne ustawienia zamówień w programie Microsoft Dynamics 365 for Finance and Operations definiują: oddział i magazyn, skąd towary będą pobierane lub gdzie będą przechowywane; ilości minimalne, maksymalne, wielokrotne i standardowe, które będą używane do handlu lub zarządzania zapasami; czasy realizacji; flagę blokady; metodę tworzenia zobowiązań zamówień. Domyślne ustawienia zamówień są stosowane przy tworzeniu zamówień zakupu, zamówień sprzedaży, zamówień przeniesienia i arkuszy magazynowych oraz w planowaniu głównym do generowania zamówień planowanych. Domyślne ustawienia zamówień mogą być specyficzne dla towaru, oddziału, wariantu produktu lub wymiaru produktu.
 

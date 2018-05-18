@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="prepare-a-process-kanban-job-when-materials-are-available-for-the-work-cell"></a>Przygotowanie zadania procesu w systemie Kanban, gdy materiały są dostępne dla komórki roboczej
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To zadanie koncentruje się na przygotowaniu zadania przetwarzania w systemie Kanban, gdy wszystkie materiały są dostępne dla komórki roboczej. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF. Zadanie jest przeznaczone dla operatora maszyny.
 

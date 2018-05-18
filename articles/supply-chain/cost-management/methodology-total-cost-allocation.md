@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="total-cost-allocation-method"></a>Metoda całkowitej alokacji kosztów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera wskazówki dotyczące korzystania z metody całkowitej alokacji kosztów (TCA). TCA jest metodą obliczania kosztu między głównym towarem formuły szarży produkcyjnej a produktami towarzyszącymi zdefiniowanymi w formule.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Konfigurowanie profili księgowania środków trwałych
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tym przewodniku po zadaniach zostaną skonfigurowane profile księgowania środków trwałych.  Przewodnik korzysta z roli Księgowy i danych firmy demonstracyjnej USMF.  Przykłady zamieszczone w przewodniku po zadaniach dotyczą podstawowego profilu księgowania, podczas gdy faktycznie profile księgowania należy utworzyć dla określonych planów kont oraz wymagań dotyczących sprawozdawczości finansowej.
 

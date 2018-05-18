@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>Rejestrowanie i usuwanie świadczeń dla pracowników
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura pokazuje, jak można zapisać jednego pracownika na jedno lub więcej świadczeń, a także jak zapisać wielu pracowników na świadczenie. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="release-a-dimension-based-product-master"></a>Zwalnianie produktu głównego opartego na wymiarach
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób zwalniania produktu głównego, który będzie używany dla konfiguracji opartych na wymiarach. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Warunkiem wstępnym jest utworzenie produktu głównego z technologią konfiguracji opartą na wymiarach. Jest to druga z ośmiu procedur opisujących sposób tworzenia kombinacji dla konfiguracji opartej na wymiarach.
 

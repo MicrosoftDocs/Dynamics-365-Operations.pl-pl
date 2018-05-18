@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 
 # <a name="sales-tax-reports-for-poland"></a>Sprawozdania podatkowe dla Polski
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o sprawozdawczości podatku od towarów i usług (VAT) w Polsce oraz podaje informacje, które są wymagane przez prawo w rejestrach podatku VAT w Polsce.
 

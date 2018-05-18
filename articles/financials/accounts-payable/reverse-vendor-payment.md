@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reverse-a-vendor-payment"></a>Cofanie płatność dostawcy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano różnice między wycofywaniem, usuwaniem, unieważnianiem i odrzucaniem płatności. Ponadto objaśniono dwie metody wycofywania czeku dostawcy. 
 

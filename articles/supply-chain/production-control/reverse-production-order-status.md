@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reverse-the-production-order-status"></a>Wycofywanie stanu zlecenia produkcyjnego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano sposób wycofania stanu zlecenia produkcyjnego. 
 

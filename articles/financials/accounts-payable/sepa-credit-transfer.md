@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="sepa-credit-transfer-overview"></a>Przegląd przeniesienia kredytu SEPA
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera ogólne informacje o poleceniach przelewu ISO 20022, co obejmuje polecenia przelewu Jednolitego Obszaru Płatniczego w Euro (SEPA) oraz wszelkie inne elektroniczne płatności dla dostawców. Polecenie przelewu SEPA jest szczególną formą płatności (w euro) realizowanej przez jedną firmę lub osobę na rzecz innej firmy lub osoby. W temacie wyjaśniono również, jak ustawić i przesłać plik płatności poleceniem przelewu.
 

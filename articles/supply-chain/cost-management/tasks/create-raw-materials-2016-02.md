@@ -24,7 +24,7 @@ ms.lasthandoff: 01/17/2018
 ---
 # <a name="create-raw-materials-february-2016-only"></a>Tworzenie surowców (tylko luty 2016)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To zadanie koncentruje się na tworzeniu składników wyrobów gotowych i półproduktów. Jest to trzecie zadanie w serii zadań obliczania BOM. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF.
 

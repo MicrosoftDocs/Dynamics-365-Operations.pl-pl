@@ -28,7 +28,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="manage-vendor-collaboration-users"></a>Zarządzanie użytkownikami portalu współpracy z dostawcami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano sposoby wnioskowania o zainicjowanie obsługi nowych użytkowników i dodawania nowych osób kontaktowych w portalu współpracy z dostawcami. 
 

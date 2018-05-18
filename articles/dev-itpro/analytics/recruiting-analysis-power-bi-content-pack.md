@@ -28,7 +28,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="recruiting-power-bi-content"></a>Pakiet zawartości usługi Power BI Rekrutacja
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartość **Rekrutacja** dostępny dla usługi Microsoft Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="vendor-payments-workspace"></a>Obszar roboczy płatności dla dostawców
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Obszar roboczy **Płatności dla dostawców** zawiera informacje związane z przetwarzaniem płatności dla dostawców. Ten obszar roboczy zawiera widok **Moja praca** i stronę **Analizy**. Widok **Moja praca** zawiera kafelki podsumowań, siatki transakcji z dostawcami i informacje o odnośnych dostawcach. Strona **Analizy** wykorzystuje funkcje programu Microsoft Power BI, aby pokazywać wizualizacje dotyczące płatności dla dostawców.
 

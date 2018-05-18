@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Scalenie funkcjonalności modeli ewidencji i księgi amortyzacji środków trwałych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W poprzednich wersjach istniały dwie koncepcje wyceny środków trwałych: modele ewidencji i księgi amortyzacji. W programie Microsoft Dynamics 365 for Operations (wydanie 1611) funkcje modeli ewidencji i ksiąg amortyzacji zostały scalone w pojedynczy obiekt zwany księgą.
 

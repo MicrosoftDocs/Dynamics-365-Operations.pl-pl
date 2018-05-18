@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="learning-power-bi-content"></a>Pakiet zawartości usługi Power BI Szkolenia
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartość **Szkolenia** dostępny dla usługi Microsoft Power BI.
 

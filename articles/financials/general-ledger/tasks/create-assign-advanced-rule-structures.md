@@ -24,7 +24,7 @@ ms.lasthandoff: 10/27/2017
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a>Tworzenie i przypisywanie struktur reguł zaawansowanych
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ten przewodnik po zadaniach prowadzi przez kolejne kroki tworzenia i przypisywania struktury reguły zaawansowanej do struktury konta. W przewodniku jest wykorzystywana firma demonstracyjna USMF.
 

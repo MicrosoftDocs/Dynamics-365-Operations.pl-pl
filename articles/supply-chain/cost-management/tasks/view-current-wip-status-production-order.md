@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-current-wip-status-on-a-production-order"></a>Wyświetlanie aktualnego stanu PWT na zleceniu produkcyjnym
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób tworzenia zestawienia PWT w zleceniu produkcyjnym. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Ta procedura jest przeznaczona dla kontrolera kosztów.
 

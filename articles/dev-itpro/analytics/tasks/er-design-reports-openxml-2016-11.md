@@ -24,7 +24,7 @@ ms.lasthandoff: 11/14/2017
 ---
 # <a name="design-a-configuration-for-generating-reports-in-openxml-format-for-electronic-reporting-er"></a>Projektowanie konfiguracji do generowania raportów w formacie OpenXML na potrzeby raportowania elektronicznego (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć nową konfigurację raportowania elektronicznego (ER) zawierającą szablon generowania dokumentów elektronicznych w formacie OPENXML. Ta konfiguracja będzie używana do przetwarzania płatności dla dostawcy.
 

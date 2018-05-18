@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="work-breakdown-structures"></a>Struktury podziału pracy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Struktura podziału pracy (SPP) to opis pracy, która zostanie wykonana w ramach projektu. Jest to hierarchia zadań ustalona przez zespół na podstawie koniecznej pracy, zakresu, kosztu i czasu trwania każdego ze składników lub zadań. SPP pełni trzy główne funkcje:
 

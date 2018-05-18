@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="registration-for-manufacturing-execution"></a>Rejestracja w celu uruchomienia produkcji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano podstawowe pojęcia i terminy, które należy znać, aby prawidłowo skonfigurować moduł Wykonywanie produkcji i go używać. 
 

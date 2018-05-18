@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-store-inventory"></a>Zarządzanie zapasami w sklepie
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W tym artykule opisano typy dokumentów, których można używać do zarządzania zapasami.
 

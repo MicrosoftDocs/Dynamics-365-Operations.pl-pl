@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="cash-and-bank-management-home-page"></a>Zarządzanie gotówką i bankami — strona główna
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Moduł Zarządzanie gotówką i bankami służy do obsługi kont bankowych firmy i instrumentów finansowych skojarzonych z tym kontami bankowymi. 
 

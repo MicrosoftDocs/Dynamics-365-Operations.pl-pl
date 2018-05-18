@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reconcile-freight-in-transportation-management"></a>Uzgadnianie frachtu w module Zarządzanie transportem
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano proces uzgadniania frachtu.
 

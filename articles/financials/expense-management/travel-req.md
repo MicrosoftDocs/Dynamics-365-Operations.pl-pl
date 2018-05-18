@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="travel-requisitions"></a>Wnioski wyjazdowe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 *Wniosek wyjazdowy* to dokument źródłowy, który wyszczególnia wydatki, jakie zostaną poniesione w związku z podróżą służbową. Wniosek wyjazdowy jest przekazywany do weryfikacji i może później użyć do autoryzowania wydatków.
 

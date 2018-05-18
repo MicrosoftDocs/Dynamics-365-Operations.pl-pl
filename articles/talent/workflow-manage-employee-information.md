@@ -27,7 +27,7 @@ ms.lasthandoff: 02/15/2018
 
 # <a name="use-workflows-to-manage-employee-information"></a>Zarządzanie informacjami o pracownikach za pomocą przepływów pracy
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W tym temacie wyjaśniono, jak za pomocą funkcji przepływów pracy dostępnych w module Zasoby ludzkie zarządzać informacjami o pracownikach. Można na przykład skojarzyć przepływ pracy ze stanowiskiem oraz skonfigurować przepływ pracy zatwierdzania, który jest uruchamiany, gdy pracownicy zmodyfikuje swój rekord.
 

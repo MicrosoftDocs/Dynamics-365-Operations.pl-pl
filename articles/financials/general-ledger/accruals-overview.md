@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accruals-overview"></a>Przegląd naliczeń
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano koncepcję naliczeń oraz sposób ich konfigurowania i tworzenia transakcji.
 

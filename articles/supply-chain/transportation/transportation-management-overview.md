@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="transportation-management-overview"></a>Zarządzanie transportem — omówienie
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie omówiono funkcjonalność zarządzania transportem dostępną w programie Microsoft Dynamics 365 for Finance and Operations.
 

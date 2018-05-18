@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mobile-bar-code-support"></a>Mobilna obsługa kodów kreskowych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ponieważ system Android to projekt typu open source, każdy producent sprzętu do skanerów kodów kreskowych w magazynach może opracować urządzenie działające pod kontrolą systemu Android. Urządzenie jest zgodne z systemem Android tylko wtedy, gdy umożliwia uruchamianie aplikacji dla środowiska uruchomieniowego systemu Android.
 Dostawca sprzętu może jednak modyfikować system i tworzyć nakładki dla wersji systemu Android działającej na jego sprzęcie. Firma Microsoft nie ponosi odpowiedzialności za zapewnienie zgodności mobilnej aplikacji do skanowania kodów kreskowych dla systemu Android z urządzeniem producenta do skanowania kodów kreskowych i działającą na nim wersją systemu Android. 

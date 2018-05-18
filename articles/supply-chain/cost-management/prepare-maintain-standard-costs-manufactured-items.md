@@ -30,7 +30,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Przygotowanie do zarządzania kosztami standardowymi wyprodukowanych towarów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano etapy przygotowywania się do zarządzania kosztami wytwarzanych towarów. Kroki dla towarów wytwarzanych różnią się nieco od kroków dla towarów zakupionych.
 

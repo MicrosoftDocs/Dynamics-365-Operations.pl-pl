@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-submit-vat-report"></a>Tworzenie i przesyłanie raportu VAT
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura prowadzi przez proces tworzenia i przesyłania raportu VAT urzędowi niemieckiemu.
 

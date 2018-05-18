@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-dimensions"></a>Wymiary finansowe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie omówiono różne typy wymiarów finansowych oraz sposoby ich konfigurowania.
 

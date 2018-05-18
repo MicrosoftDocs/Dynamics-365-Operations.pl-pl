@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Następujące skróty klawiaturowe mają zastosowanie w całym programie Dynamics 365 for Finance and Operations. 
 

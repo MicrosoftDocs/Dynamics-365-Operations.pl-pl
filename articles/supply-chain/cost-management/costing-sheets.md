@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-sheets"></a>Arkusze wyceny
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Konfiguracja arkusza wyceny obejmuje dwa cele. Pierwszym celem jest określenie formatu wyświetlania informacji o kosztach sprzedanych towarów, wyprodukowanych towarów oraz zlecenia produkcyjnego. Sformatowane wyświetlenie nosi nazwę arkusz wyceny. Drugim celem jest określenie podstawy obliczania kosztów pośrednich. Konfiguracja arkusza wyceny opiera się na funkcji grupy kosztów dla wyświetlania informacji oraz wzorów obliczania kosztów pośrednich. Oba cele konfigurowania arkusza wyceny są opisane w tym artykule. 
 

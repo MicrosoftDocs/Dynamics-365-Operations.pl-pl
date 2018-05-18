@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="report-progress-on-a-mobile-job-device"></a>Zgłaszanie postępu za pomocą urządzenia przenośnego zadania
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób uruchamiania i raportowania o postępie zadania produkcyjnego w formularzu rejestracji urządzenia obsługującego zadania.
 

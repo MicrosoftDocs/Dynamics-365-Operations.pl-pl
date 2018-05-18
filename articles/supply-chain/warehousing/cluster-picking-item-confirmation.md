@@ -25,7 +25,7 @@ ms.lasthandoff: 02/13/2018
 
 ---
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 # <a name="product-confirmation-for-cluster-picking"></a>Potwierdzenie produktu na potrzeby pobierania dla grupy
 Funkcjonalność pobierania dla grupy umożliwia pobieranie towarów równocześnie dla kilku zamówień. W przypadku stosowania pobierania dla grupy bardzo ważne jest potwierdzanie towarów dodawanych do grup. Weryfikowanie może się odbywać w trakcie procesu pobierania dla grup.

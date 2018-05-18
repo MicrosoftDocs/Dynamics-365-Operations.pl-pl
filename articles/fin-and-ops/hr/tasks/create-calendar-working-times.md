@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-calendar-and-generate-working-times"></a>Tworzenie kalendarza i generowanie godzin pracy
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Kalendarze opisują zdolności produkcyjne i czasy pracy zasobów operacyjnych. Ta procedura pomoże zdefiniować kalendarz pracy na podstawie szablonu czasu pracy. Można przejść tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
 

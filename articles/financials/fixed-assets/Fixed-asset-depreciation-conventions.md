@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="fixed-asset-depreciation-conventions"></a>Konwencje amortyzacji środków trwałych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Konwencje amortyzacji są używane do określenia, kiedy i jak amortyzacja jest obliczana dla roku nabycia środka trwałego i roku likwidacji środka trwałego.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="advance-holder-transactions"></a>Transakcje posiadacza zaliczki
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Dowiedz się, jak pracować z transakcjami posiadaczy zaliczek w programie Microsoft Dynamics 365 for Finance and Operations.
 

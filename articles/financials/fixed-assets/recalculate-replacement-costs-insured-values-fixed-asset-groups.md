@@ -27,7 +27,7 @@ ms.lasthandoff: 01/12/2018
 
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Ponowne obliczanie kosztów wymiany i wartości ubezpieczenia dla grup środków trwałych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule wyjaśniono proces aktualizowania kosztów wymiany i wartości ubezpieczenia środków trwałych.
 

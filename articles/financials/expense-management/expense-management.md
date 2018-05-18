@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="expense-management"></a>Zarządzanie wydatkami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Moduł Zarządzanie wydatkami służy do tworzenia zintegrowanego przepływu pracy, w którym można przechowywać informacje dotyczące metod zapłaty, importować transakcje karty kredytowej i śledzić wydatki pracowników związane z firmą. Można również definiować zasady dotyczące wydatków i zautomatyzować zwroty nadpłaty z tytułu wydatków na podróż. 
 

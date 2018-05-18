@@ -28,7 +28,7 @@ ms.lasthandoff: 03/22/2018
 
 # <a name="pos-operations-online-and-offline"></a>Operacje w punkcie sprzedaży — online i offline
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Większość akcji wykonywanych przez użytkowników punktu sprzedaży (POS) jest uznawanych za operacje. Do konfigurowania i zarządzania operacjami służy zaplecze rozwiązania Microsoft Dynamics 365 for Retail. Do siatki przycisków punktu sprzedaży można dodać wiele operacji. Użytkownicy mogą następnie wybrać przyciski w celu wywołania operacji i wykonania przypisanych do nich funkcji. Inne operacje są częścią głównej aplikacji POS i są wywoływane za pomocą przycisków ekranowych lub jako część innych przepływów pracy lub procesów.
 

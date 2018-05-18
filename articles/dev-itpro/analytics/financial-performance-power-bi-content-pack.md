@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="financial-performance-power-bi-content"></a>Pakiet zawartości usługi Power BI Wyniki finansowe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!Note]
 > Ten pakiet zawartości został wycofany, zgodnie z opisem w temacie [Pakiety zawartości usługi Power BI opublikowane w witrynie PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).

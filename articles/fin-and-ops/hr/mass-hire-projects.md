@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mass-hire-projects"></a>Projekty zatrudnienia grupowego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Projekty zatrudnienia grupowego umożliwiają specjalistom z działów kadr tworzenie wielu stanowisk i sprawne rekrutowanie na nie pracowników.
 

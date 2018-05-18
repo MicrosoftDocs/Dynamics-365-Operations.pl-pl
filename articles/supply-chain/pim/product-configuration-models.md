@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="product-configuration-models-overview"></a>Omówienie modeli konfiguracji produktu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule podano definicje terminów i pojęć, które są istotne dla modeli konfiguracji produktu. Modele konfiguracji produktu pozwalają zbudować standardową strukturę produktu, której potem można używać do konfigurowania wielu wariantów tego samego produktu.
 

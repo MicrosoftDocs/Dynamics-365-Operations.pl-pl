@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="initialize-seed-data-in-a-new-retail-environment"></a>Inicjowanie danych początkowych w nowym środowisku sieci sprzedaży
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W tym artykule opisano dane, które są tworzone w ramach procesu inicjowania w programie Microsoft Dynamics 365 for Retail.
 

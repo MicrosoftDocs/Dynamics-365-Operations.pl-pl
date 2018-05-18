@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="submit-and-approve-project-budgets"></a>Przesyłanie i zatwierdzanie budżetu projektu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano, jak utworzyć i przesłać budżet projektu. 
 

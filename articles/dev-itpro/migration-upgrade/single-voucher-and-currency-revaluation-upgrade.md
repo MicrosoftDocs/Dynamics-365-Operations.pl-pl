@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="single-voucher-and-currency-revaluation-upgrade"></a>Uaktualnianie pojedynczych załączników i przeszacowań w walucie
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W niektórych organizacjach są wprowadzane arkusze zawierające jeden załącznik z więcej niż jednym odbiorcą lub dostawcą, a także wykonują proces przeszacowania w walucie obcej dla rozrachunków z dostawcami i odbiorcami. W tym temacie opisano kroki, które powinny wykonać takie organizacje podczas uaktualniania do programu Microsoft Dynamics 365 for Operations w wersji 1611.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="vendor-invoices-overview"></a>Przegląd faktur od dostawcy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera ogólne informacje o fakturach od dostawców. Faktur od dostawców są wnioskami o płatność za produkty i usługi, które zostały odebrane. Faktury od dostawców mogą dotyczyć usług świadczonych w sposób ciągły albo bazować na zamówieniach zakupu za określone towary i usługi. 
 

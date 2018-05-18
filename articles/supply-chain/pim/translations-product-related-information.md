@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-related-translations-faq"></a>Tłumaczenia informacji dotyczących produktów — często zadawane pytania
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano sposób zarządzania tłumaczeniami produktów, wartości wymiarów produktu i atrybutów produktu. 
 

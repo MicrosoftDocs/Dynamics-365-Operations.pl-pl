@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-policies"></a>Zasady dotyczące wydatków
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Można zdefiniować zasady, których pracownicy muszą przestrzegać podczas wprowadzania i przesyłania raportów z wydatków i wniosków wyjazdowych.         
 Wdrożenie zasad dotyczących wydatków może się przyczynić do efektywniejszego zarządzania wydatkami.         

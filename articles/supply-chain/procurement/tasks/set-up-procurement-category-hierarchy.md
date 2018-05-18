@@ -24,7 +24,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Ustawianie hierarchii kategorii zaopatrzenia
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano, jak utworzyć nowe węzły w hierarchii kategorii zaopatrzenia oraz jak skonfigurować kategorię zaopatrzenia, która ma być używana w procesie zaopatrzenia. Te zadania zazwyczaj wykonuje menedżer ds. zakupów. Przed rozpoczęciem tej procedury musi istnieć hierarchia kategorii typu Zaopatrzenie. Jeśli używasz danych firmy demonstracyjnej, procedurę można wykonać w firmie USMF.
 

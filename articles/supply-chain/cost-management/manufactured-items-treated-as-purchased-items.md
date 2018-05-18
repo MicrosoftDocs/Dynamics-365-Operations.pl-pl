@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-products-that-can-be-produced-or-procured"></a>Konfigurowanie produktów, które mogą być produkowane lub zamawiane
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Produkty można pozyskiwać na różne sposoby — mogą być produkowane (wytwarzane) lub zamawiane (kupowane). W tym artykule opisano niektóre typowe kwestie do rozważenia podczas konfigurowania dla produktów obsługi pozyskiwania z wielu źródeł. 
 

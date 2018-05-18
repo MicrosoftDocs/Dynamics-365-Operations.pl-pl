@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="call-center-catalogs"></a>Katalogi biura obsługi
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W tym artykule opisano funkcje katalogów specyficzne dla biur obsługi dostępne w programie Microsoft Dynamics 365 for Retail.
 

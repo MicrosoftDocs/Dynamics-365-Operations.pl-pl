@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Kategorie kosztów używane w kontroli produkcji i rachunkowości zarządczej projektów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Niektóre typy działań produkcyjnych mogą mieć zastosowanie do szacowania i raportowania czasu trwania projektu. Ten artykuł zawiera informacje o kategoriach kosztów, które należy zdefiniować dla tego typu działań produkcyjnych na potrzeby produkcji i projektu.
 

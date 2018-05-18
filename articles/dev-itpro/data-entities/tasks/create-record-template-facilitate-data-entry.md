@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>Tworzenie szablonu rekordu w celu ułatwienia wprowadzania danych
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura przedstawia sposób tworzenia szablonu rekordu, tak aby wartości pól, które są często używane, nie musiały być jawnie wprowadzane dla każdego nowego rekordu. W tej procedurze zostanie utworzy nowy rekord dla nowych laptopów, które należy dodać do środków trwałych. Procedura wykorzystuje przykładową firmę USMF.
 

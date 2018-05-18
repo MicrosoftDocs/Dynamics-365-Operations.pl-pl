@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="financial-dimensions-and-main-accounts-in-a-right-to-left-language"></a>Wymiary finansowe i konta główne w języku z pisownią od prawej do lewej
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano niektóre decyzje wdrożeniowe, które należy podjąć w przypadku używania języka z pisownią od prawej do lewej, gdy trzeba skonfigurować wymiary finansowe i konta główne.
 

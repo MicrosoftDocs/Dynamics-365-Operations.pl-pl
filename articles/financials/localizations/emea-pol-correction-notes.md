@@ -26,7 +26,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="correction-notes"></a>Noty korygujące
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje dotyczące not korygujących. Nota korygująca jest dokumentem wymaganym lokalnymi przepisami w Polsce. Służy do poprawiania błędów na fakturze od dostawcy. 
 

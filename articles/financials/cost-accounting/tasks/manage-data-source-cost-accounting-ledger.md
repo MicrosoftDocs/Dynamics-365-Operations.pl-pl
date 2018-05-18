@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>Zarządzanie źródłem danych księgi rachunku kosztów
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura służy do zarządzania źródłem danych księgi głównej dla księgi rachunku kosztów. Przed wykonaniem tego zadania koniecznie odtwórz przewodniki po zadaniach „Tworzenie księgi rachunku kosztów” i „Definiowanie jednostek kontroli kosztów”. Nagranie wykorzystuje dane firmy demonstracyjnej USP2.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfiguracja modułów Rozrachunki z odbiorcami i Kredyty i windykacja
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Odpowiednie skonfigurowanie modułów Rozrachunki z odbiorcami oraz Kredyty i windykacja umożliwi śledzenie faktur i płatności przychodzących od odbiorców.
 

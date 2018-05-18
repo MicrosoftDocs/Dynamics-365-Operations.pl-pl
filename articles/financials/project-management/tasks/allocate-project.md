@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a>Alokowanie budżetu lub korekty budżetu projektu przez okresy
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
  Po wprowadzeniu budżetu projektu lub zmiany budżetu projektu i przed wysłaniem go do zatwierdzenia możesz przydzielić kwoty do okresów. Jeśli korekta budżetu lub budżet są odrzucane, można przydzielić także ilości, aby można było ponownie je przesłać. 
 

@@ -26,9 +26,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="alerts-overview"></a>Ogólne informacje o alertach
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a>Alerty — informacje
 Alerty stanowią system powiadamiania o zdarzeniach krytycznych w programie Microsoft Dynamics 365 for Finance and Operations. Alerty pozwalają na bieżąco uzyskiwać informacje o zdarzeniach, które chcesz śledzić podczas dnia pracy. Można łatwo utworzyć własny zbiór reguł alertów dotyczących zaległych dostaw, usuniętych zamówień, zmian cen oraz innych zdarzeń, na które należy reagować.

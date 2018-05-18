@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="plan-your-chart-of-accounts"></a>Planowanie planu kont
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje, które pomogą zaprojektować plan kont w organizacji.
 

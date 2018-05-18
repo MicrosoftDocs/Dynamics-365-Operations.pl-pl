@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="revert-kanban-job-status"></a>Przywróć stan zadania Kanban
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura skupia się na cofnięciu błędnego stanu zadania w systemie Kanban. Jest to przydatne w przypadku, gdy operator maszyny zaktualizuje niewłaściwe zadanie lub ustawi przez pomyłkę niewłaściwy stan. W tej procedurze zadanie w systemie Kanban jest rejestrowane jako przygotowane przez pomyłkę, a stan zostanie przywrócony. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Procedura jest przeznaczona dla kierownika produkcji lub operatora maszyny w firmie stosującej zasady produkcji oszczędnej.
 

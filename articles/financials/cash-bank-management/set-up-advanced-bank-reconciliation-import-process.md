@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Konfigurowanie procesu importu zaawansowanego uzgadniania konta bankowego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych, a następnie ich automatyczne uzgadnianie z transakcjami bankowymi w programie Microsoft Dynamics 365 for Finance and Operations. W tym artykule wyjaśniono, jak skonfigurować funkcję importu wyciągów bankowych. 
 

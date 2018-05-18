@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-and-design-financial-reports"></a>Wyświetlanie i projektowanie raportów finansowych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera ćwiczenia, które prowadzą przez całą procedurę wyświetlania i tworzenia raportów finansowych w programie Microsoft Dynamics 365 for Finance and Operations. Funkcjonalność sprawozdawczości finansowej składa się z funkcji wyświetlania w programie Finance and Operations oraz aplikacji ClickOnce projektanta raportów, który umożliwia tworzenie i edytowanie raportów finansowych.  
 

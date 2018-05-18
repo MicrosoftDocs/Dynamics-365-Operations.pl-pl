@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="inventory-lookup-in-the-point-of-sale"></a>Wyszukiwanie w magazynie punktu sprzedaży 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Funkcja wyszukiwania zapasów w punkcie sprzedaży (POS) pozwala sprzedawcom detalicznym osiągnąć doskonałość operacyjną i w czasie rzeczywistym wyciągać wnioski dzięki połączeniu sklepów, aplikacji punktu sprzedaży i systemów zaplecza. Ta funkcja przedstawia dokładny, aktualny stan zapasów produktów w sklepach i centrach dystrybucyjnych. Pomaga również sprzedawcom detalicznym jeszcze bardziej poprawić efektywność i obniżać koszty poprzez usprawnienie planowania zapasów w czasie rzeczywistym.
 

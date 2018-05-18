@@ -28,9 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Opcje Cała kwota i Obliczanie interwału dla kodów podatku
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 W tym artykule opisano opcje dostępne w polu Metoda obliczania w ustawieniach kodów podatków oraz wyjaśniono sposób obliczania podatku dla interwałów kwot i całych kwot.
 

@@ -17,13 +17,14 @@
 # Zamówienia zakupu
 ## [Omówienie zamówień zakupu](../supply-chain/procurement/purchase-order-overview.md)
 ## [Tworzenie zamówień zakupu](../supply-chain/procurement/purchase-order-creation.md)
-## [Przyjęcie produktów na podstawie zamówień zakupu](../supply-chain/procurement/product-receipt-against-purchase-orders.md)
+## [Dokument przyjęcia produktów dla zamówień zakupu](../supply-chain/procurement/product-receipt-against-purchase-orders.md)
 ## [Zatwierdzanie i potwierdzanie zamówień zakupu](../supply-chain/procurement/purchase-order-approval-confirmation.md)
-## [Mobilny obszar roboczy zatwierdzenia zamówienia zakupu](../supply-chain/procurement/purchase-order-mobile-workspace.md)
+## [Mobilny obszar roboczy zatwierdzenia zamówień zakupu](../supply-chain/procurement/purchase-order-mobile-workspace.md)
 
 # Podatek
 ## [Omówienie podatku](../financials/general-ledger/indirect-taxes-overview.md)
 ## [Wybieranie metody obliczania podatku w polu Źródło](../financials/general-ledger/sales-tax-calculation-methods-origin-field.md)
+## #### [Przypisanie i zastąpienia podatku](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
 ## [Opcje Cała kwota i Obliczanie interwału dla kodów podatku](../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md)
 
 # Biuro obsługi
@@ -166,9 +167,10 @@
 ## [Tworzenie i kojarzenie urządzenia](tasks/create-associate-device.md)
 ## [Tworzenie i kojarzenie stacji sprzętowej](tasks/create-associate-hardware-station.md)
 ## [Tworzenie i kojarzenie kas](tasks/create-associate-registers.md)
-## [Tworzenie, obliczanie i księgowanie zestawienia dla sklepu sieci sprzedaży](tasks/create-calculate-post-statement-retail-store.md)
+## [Tworzenie, obliczanie i księgowanie zestawienia dla sklepu detalicznego](tasks/create-calculate-post-statement-retail-store.md)
+## [Ulepszenia dotyczące księgowania zestawień](statement-posting-EOD.md)
 ## [Tworzenie zamówień dla biur obsługi](tasks/create-call-center-orders.md)
-## [Tworzenie wymiarów finansowych dla rejestrów punktu sprzedaży i konfigurowanie wartości wymiarów z rejestrów](tasks/create-financial-dimensions-pos.md)
+## [Tworzenie wymiarów finansowych dla rejestrów punktu sprzedaży i konfigurowanie wartości wymiarów w rejestrach](tasks/create-financial-dimensions-pos.md)
 ## [Tworzenie wymiarów finansowych dla kanałów sprzedaży detalicznej i konfigurowanie wartości wymiarów ze sklepów](tasks/create-financial-dimensions-retail-channels.md)
 ## [Tworzenie kanałów online i definiowanie atrybutów kanału](tasks/create-online-channel-define-channel-attributes.md)
 ## [Tworzenie grup uprawnień dla punktu sprzedaży](tasks/create-pos-permission-groups.md)
@@ -289,7 +291,6 @@
 ### [Wywoływanie interfejsu API lub operacji aplikacji POS z poziomu rozszerzenia aplikacji POS](dev-itpro/pos-api-extension.md)
 ### [Wyzwalacze aplikacji Retail Modern POS i drukowanie](dev-itpro/pos-trigger-printing.md)
 ### [Dodawanie kontrolki niestandardowej do nieekranowego, opartego na projektancie widoku aplikacji Retail Modern POS](dev-itpro/pos-control-non-screen.md)
-### [Generowanie serwera proxy rozwiązania Retail dla aplikacji POS i e-Commerce](dev-itpro/pos-generate-retail-proxy.md)
 ### [Kroki konfiguracji dla deweloperów rozwiązania Retail pracujących we wdrożeniach obsługiwanych w chmurze](dev-itpro/cloud-dev-box.md)
 
 ## Środowisko uruchomieniowe Commerce runtime

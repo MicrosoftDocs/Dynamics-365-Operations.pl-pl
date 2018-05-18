@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-versions"></a>Wersje wyceny
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o wersjach wyceny, zarządzaniu nimi oraz o typach danych, które można w nich uwzględnić. Głównym celem wersji wyceny jest objęcie rekordów kosztów dotyczących towarów, kategorii kosztów oraz wzorów obliczania kosztów pośrednich.
 

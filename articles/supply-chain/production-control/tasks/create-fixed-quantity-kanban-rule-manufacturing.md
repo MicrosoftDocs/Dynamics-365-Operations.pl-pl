@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-fixed-quantity-kanban-rule-for-manufacturing"></a>Tworzenie reguły Kanban ze stałą ilością dla produkcji
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura jest zorientowana na konfigurację potrzebną do utworzenia stałej reguły Kanban produkcji w celu wyzwalania działań przekształcających w komórce roboczej w środowisku produkcji oszczędnej. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Procedura jest przeznaczona dla inżyniera procesu lub menedżera strumienia wartości, gdy przygotowują oni wytwarzanie nowego lub zmodyfikowanego produktu.
 

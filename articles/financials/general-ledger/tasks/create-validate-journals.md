@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-validate-journals"></a>Tworzenie i sprawdzanie arkuszy
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tym przewodniku po zadaniach zostaną utworzone i zweryfikowane arkusze i wiersze arkuszy. Zadania wykorzystują firmę demonstracyjną USMF.  
 

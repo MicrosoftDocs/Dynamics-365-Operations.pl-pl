@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="depreciation-book-upgrade-overview"></a>Omówienie uaktualniania księgi amortyzacji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W poprzednich wersjach istniały dwie koncepcje wyceny środków trwałych: modele ewidencji i księgi amortyzacji. W programie Microsoft Dynamics 365 for Operations (wydanie 1611) funkcje modeli ewidencji i ksiąg amortyzacji zostały scalone w pojedynczy obiekt zwany księgą. Ten temat porusza kilka zagadnień, które należy wziąć pod uwagę przy uaktualnianiu. 
 
@@ -62,17 +62,17 @@ Opcja 2: **Istniejąca numeracja zdefiniowana przez użytkownika** — Ta opcja 
 Parametry znajdują się na początku klasy ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans. 
 
 *// Określ preferowaną metodę alokacji załączników* 
-*// true, jeśli chcesz używać istniejącego kodu numeracji* 
-*// false, jeśli zamierzasz używać zdefiniowanych przez system sekwencji numerów (ustawienie domyślne)* const boolean NumberSequenceUseExistingCode = false;  
+ *// true, jeśli chcesz używać istniejącego kodu numeracji* 
+ *// false, jeśli zamierzasz używać zdefiniowanych przez system sekwencji numerów (ustawienie domyślne)* const boolean NumberSequenceUseExistingCode = false;  
 
 *// Jeśli używasz numeracji systemowej, określ parametry numeracji.*
-*// Nowa numeracja zostanie utworzona z następującymi parametrami.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
+ *// Nowa numeracja zostanie utworzona z następującymi parametrami.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
 
 *// Jeśli używasz metody z istniejącą numeracją, podaj kod istniejącej numeracji.* 
-*// Alokacja załączników zostanie dokonana kolejno wierszami przy użyciu istniejącej numeracji.* const str NumberSequenceExistingCode = ''; *// Określ zakres kodu istniejącej numeracji* 
-*// true, jeśli podana numeracja jest współdzielona* 
-*// false, jeśli podana numeracja dotyczy konkretnej firmy* 
-*// Jeśli nie zostanie znaleziony kod numeracji o podanym zakresie, będzie używana domyślna numeracja systemowa.* const boolean NumberSequenceExistingIsShared = true; 
+ *// Alokacja załączników zostanie dokonana kolejno wierszami przy użyciu istniejącej numeracji.* const str NumberSequenceExistingCode = ''; *// Określ zakres kodu istniejącej numeracji* 
+ *// true, jeśli podana numeracja jest współdzielona* 
+ *// false, jeśli podana numeracja dotyczy konkretnej firmy* 
+ *// Jeśli nie zostanie znaleziony kod numeracji o podanym zakresie, będzie używana domyślna numeracja systemowa.* const boolean NumberSequenceExistingIsShared = true; 
 
 Po zmodyfikowaniu stałych odbuduj projekt zawierający klasę. 
 

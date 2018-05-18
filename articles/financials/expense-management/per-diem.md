@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="per-diem-rules"></a>Reguły obliczania diet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 *Dieta* to dodatek wypłacany pracownikowi w podróży służbowej. W module Zarządzanie wydatkami można utworzyć reguły obliczania diet dla różnych sytuacji związanych z podróżą. Stawki diet można określić na podstawie sezonu roku lub lokalizacji podróży albo ich obu. Podczas tworzenia reguły obliczania diet można określić, że pewien procent stawki diety zostanie wstrzymany, jeśli pracownik otrzymuje bezpłatne posiłki lub usługi. Można również ustawić minimalną i maksymalną liczbę godzin przysługiwania stawki diety podczas podróży pracownika.
 

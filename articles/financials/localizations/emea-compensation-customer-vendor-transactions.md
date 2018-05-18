@@ -27,7 +27,7 @@ ms.lasthandoff: 03/07/2018
 
 # <a name="set-up-customer-and-vendor-compensation"></a>Konfiguracja kompensacji odbiorców oraz dostawców
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje, które pomogą wykonywać proces kompensat na kontach dostawców i odbiorców dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce.
 

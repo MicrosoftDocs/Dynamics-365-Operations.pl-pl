@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Kredyty i windykacja w rozrachunkach z odbiorcami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Zarządzanie informacjami dotyczącymi windykacji w module Rozrachunki z odbiorcami odbywa się w jednym centralnym widoku przy użyciu strony Windykacja dostępnej w programie Finance and Operations. Kierownicy ds. kredytów i windykacji mogą używać tego centralnego widoku do zarządzania windykacją. Agenci ds. windykacji mogą rozpocząć proces windykacji na podstawie list odbiorców, które są generowane przy użyciu wstępnie zdefiniowanych kryteriów windykacji, lub ze strony Windykacja.
 

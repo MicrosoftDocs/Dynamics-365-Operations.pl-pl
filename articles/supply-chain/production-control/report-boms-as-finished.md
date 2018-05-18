@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="report-boms-as-finished"></a>Zgłaszania specyfikacji BOM jako gotowych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o zgłaszaniu list składowych (BOM) jako gotowych.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="schedule-kanban-jobs"></a>Tworzenie harmonogramu zadań w systemie Kanban
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura skupia się na planowaniu zadań przetwarzania w systemie Kanban dla określonej komórki roboczej. Warunkiem wstępnym utworzenia tej procedury jest wykonanie procedury „Przygotowanie zadania przetwarzania w systemie Kanban, gdy materiały są niedostępne”. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Zadanie jest przeznaczone dla kierownika zakładu produkcyjnego i planisty produkcji używających kart Kanban.
 

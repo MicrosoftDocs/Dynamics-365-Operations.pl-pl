@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>Rezerwowanie takiej samej partii na potrzeby zamówienia sprzedaży
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł przedstawia sposób konfigurowania produktu w celu umożliwienia rezerwacji zapasów z jednej partii zapasów.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-prerequisites-for-management"></a>Konfigurowanie wymagań wstępnych zarządzania
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura umożliwia aktywowanie procesów zarządzania brakiem zgodności. Brak zgodności opisuje procedurę lub towar, który ma problem z jakością, gdzie opisowe informacje zawierają źródło i typ problemu. Procedura wykorzystuje dane firmy demonstracyjnej USMF. Ta procedura jest zwykle wykonywana przez kierownika ds. jakości.
 

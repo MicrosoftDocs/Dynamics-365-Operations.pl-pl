@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-feedback"></a>Informacja zwrotna o produkcji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie informacji zwrotnych o produkcji, dzięki którym pracownicy wiedzą o przebiegu zadań produkcji. Znajdują się tu również informacje o różnych sposobach aktualizowania informacji zwrotnych z produkcji.
 

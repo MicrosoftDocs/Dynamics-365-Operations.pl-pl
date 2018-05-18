@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="centralized-payments-for-accounts-receivable"></a>Scentralizowane płatności dla rozrachunków z odbiorcami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą jednej firmy, która obsługuje wszystkie płatności. Dlatego tych samych transakcji nie trzeba wpisywać w wielu firmach. Ten artykuł zawiera przykłady pokazujące sposób księgowania scentralizowanych płatności w różnych scenariuszach.
 

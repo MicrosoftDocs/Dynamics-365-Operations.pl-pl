@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="posting-definition-examples"></a>Szablony definicji księgowania
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera przykłady pokazujące, jak definicje księgowania są używane dla przyszłych zobowiązań wiążących w zamówieniach zakupu i dla asygnat budżetu.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-workflows-for-expense"></a>Ustawianie przepływów pracy dla wydatków
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Można ustawić proces przepływu pracy, który jest używany do sprawdzania i zatwierdzania dokumentów dotyczących podróży i wydatków. Dokumenty, dla których można zdefiniować przepływy pracy obejmują raporty z wydatków, wnioski wyjazdowe i wnioski o zaliczkę gotówkową.
 

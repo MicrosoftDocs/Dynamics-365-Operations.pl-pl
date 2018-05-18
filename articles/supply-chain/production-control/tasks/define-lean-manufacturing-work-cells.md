@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>Definiowanie komórek roboczych produkcji lean manufacturing
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Komórka robocza to specjalna postać grupy zasobów, które mogą być używane w działaniach procesu produkcji oszczędnej. Komórki robocze mają lokalizacje wejściowe i wyjściowe oraz definicje zdolności produkcyjnych oparte na modelu przepływu produkcji. Aby dowiedzieć się więcej o podstawowych pojęciach dotyczących komórek roboczych i obliczania zdolności produkcyjnych w produkcji oszczędnej, zobacz oficjalne dokumenty o produkcji oszczędnej. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

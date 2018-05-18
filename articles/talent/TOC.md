@@ -6,6 +6,7 @@
 ## [Usuwanie środowiska rozwiązania Talent](remove-talent-environment.md)
 ## [Inicjowanie obsługi modułowych aplikacji rozwiązania Microsoft Dynamics 365 for Talent](modular-app-tech-faq.md)
 ## [Rozszerzanie funkcjonalności rozwiązania Talent](extend-talent-functionality.md)
+## [Dostęp do funkcji w wersji zapoznawczej w aplikacji Dynamics 365 for Talent: Attract](access-preview-feature.md)
 
 # [Opracowywanie strategii dotyczącej zasobów ludzkich](departments-jobs-positions.md)
 ## [Konfigurowanie składników funkcji](create-job.md)

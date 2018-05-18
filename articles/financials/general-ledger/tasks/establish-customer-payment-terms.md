@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="establish-customer-payment-terms"></a>Definiowanie warunków płatności dla odbiorcy
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura określa konfigurację rabatu gotówkowego i terminu płatności. W tym przewodniku po zadaniach jest wykorzystywana firma demonstracyjna USMF.
 

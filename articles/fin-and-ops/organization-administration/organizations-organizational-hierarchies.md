@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="organizations-and-organizational-hierarchies"></a>Organizacje i hierarchie organizacyjne
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Organizacja to grupa osób, które pracują razem, aby przeprowadzić proces biznesowy lub osiągnąć cel. Hierarchie organizacyjne reprezentują relacje między organizacjami, które tworzą firmę.
 

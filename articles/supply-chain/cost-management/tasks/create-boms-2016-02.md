@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-boms-february-2016-only"></a>Tworzenie list składowych BOM (tylko luty 2016)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 To zadanie koncentruje się na utworzeniu struktury list składowych wyrobu gotowego i półproduktu. Jest to czwarte zadanie w serii zadań obliczania BOM. Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej USMF.
 

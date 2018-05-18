@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="import-iso20022-direct-debit-configuration"></a>Importowanie konfiguracji polecenia zapłaty ISO20022
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze przestawiono sposób importowania konfiguracji raportowania elektronicznego płatności od odbiorcy. Procedura wykorzystuje format zapłaty polecenia zapłaty ISO 20022 jako przykład. 
 

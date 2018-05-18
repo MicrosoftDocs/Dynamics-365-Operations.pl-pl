@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-electronic-signatures"></a>Konfigurowanie podpisów elektronicznych
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Użyj tej procedury do skonfigurowania podpisów elektronicznych. Podpis elektroniczny potwierdza tożsamość osoby, która ma rozpocząć lub zatwierdzić jakiś proces obliczeniowy. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej DAT.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="configure-a-parallel-activity-in-a-workflow"></a>Konfigurowanie działania równoległego w przepływie pracy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Aby skonfigurować działanie równoległe, należy wykonać następujące procedury w edytorze przepływu pracy.
 

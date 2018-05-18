@@ -28,7 +28,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="set-up-training-courses"></a>Konfigurowanie kursów szkoleniowych
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Administratorzy zasobów ludzkich i menedżerowie mogą korzystać z funkcji kursów do obsługi informacji o szkoleniu oferowanym pracownikom.
 

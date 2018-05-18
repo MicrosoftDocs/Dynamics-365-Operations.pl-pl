@@ -28,7 +28,7 @@ ms.lasthandoff: 02/27/2018
 
 # <a name="generate-electronic-documents-and-update-application-data-using-the-electronic-reporting-tool"></a>Generowanie dokumentów elektronicznych i aktualizowanie danych aplikacji za pomocą narzędzia Raportowanie elektroniczne
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Można projektować formaty raportowania elektronicznego (ER), które będą używane w aplikacji Finance and Operations do generowania wychodzących dokumentów elektronicznych. Można także zaprojektować formaty ER, które analizują składnię przychodzących dokumentów elektronicznych i używają zawartości tych dokumentów do aktualizowania danych aplikacji. 
 

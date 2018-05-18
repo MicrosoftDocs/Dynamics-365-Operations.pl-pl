@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Uzgadnianie faktur i międzyfirmowe zamówienia zakupu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Firmę kupującą, która uczestniczy w transakcjach handlu międzyfirmowego, można skonfigurować tak, aby używała uzgadniania faktur w rozrachunkach z dostawcami. W takim przypadku muszą być spełnione równocześnie wymagania dotyczące księgowania dla handlu międzyfirmowego i uzgadniania faktur w rozrachunkach z dostawcami, aby było można zaksięgować faktury od dostawcy międzyfirmowego.
 

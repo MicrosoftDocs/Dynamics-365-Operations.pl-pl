@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="requests-for-quotation-rfqs"></a>Zapytanie ofertowe (ZO)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano zapytania ofertowe (ZO). Organizacje wystawiają zapytania ofertowe (ZO), kiedy chcą uzyskać od kilku dostawców konkurencyjne oferty na produkty i usługi, które muszą kupić. W ZO dostawcy są proszeni o podanie cen i terminów dostaw dla ilości towarów określonych przez użytkownika.
 Można również poprosić dostawców, aby określili, czy są jakieś dodatkowe opłaty, takie jak koszty wysyłki, albo zniżki za duże zamówienia lub szybką zapłatę faktury.
@@ -57,8 +57,8 @@ Po otrzymaniu ofert w wiadomości e-mail można je obsługiwać na stronie **Zap
 
 Jeśli w przypadku danego dostawcy wymagana jest druga iteracja odpowiedzi, wybierz opcję **Zwrot** na stronie **Zapytanie ofertowe**. Akcja zwrotu tworzy nowy arkusz i raport, który będzie można wydrukować, archiwizować i wysyłać zgodnie z ustawieniami drukowania.
 
-[!NOTE]
-Nazwa strony **Zapytanie ofertowe** uległa zmianie. W starszych wersjach programu Dynamics 365 for Finance and Operations strona nosiła tytuł **Odpowiedź na zapytanie ofertowe**.
+> [!NOTE]
+> Nazwa strony **Zapytanie ofertowe** uległa zmianie. W starszych wersjach programu Dynamics 365 for Finance and Operations strona nosiła tytuł **Odpowiedź na zapytanie ofertowe**.
 
 Po dodaniu do sprawy ZO kryteriów punktowania ZO będzie miało panel punktowania, w którym można wprowadzać oceny. Całkowity wynik będzie widoczny w ZO oraz po porównaniu odpowiedzi na stronie **Porównaj odpowiedzi**. Na stronie **Porównaj odpowiedzi** można także porównać inne dane odpowiedzi, takie jak cena wiersza, data dostawy i cena łączna.
 
@@ -126,8 +126,8 @@ Jeśli chcesz użyć kodów przyczyn w ofercie, aby wskazać, dlaczego oferta zo
 
 Na stronie **Ustawienia formularza** w module Zaopatrzenie and sourcing, można skonfigurować wygląd drukowanych lub przechowywanych dokumentów ZO.
 
-[!NOTE]
-W przypadku konfiguracji sektora publicznego należy użyć procesu zmiany w celu zmiany ZO, które zostało już wysłane. Po wysłaniu ZO pola są blokowane.
+> [!NOTE]
+> W przypadku konfiguracji sektora publicznego należy użyć procesu zmiany w celu zmiany ZO, które zostało już wysłane. Po wysłaniu ZO pola są blokowane.
 Dlatego w celu wprowadzenia zmian w ZO należy wybrać opcję **Utwórz**, aby rozpocząć proces zmiany zgodnie z wcześniejszym opisem. Blokowanie jest kontrolowane za pomocą opcji **Zablokuj ZO, gdy zostaną wysłane** na stronie **Parametry modułu Zaopatrzenie i sourcing**. Domyślnie ten parametr ma ustawioną wartość **Tak** i w konfiguracji dla sektora publicznego jest to ustawienie domyślne, którego nie można zmienić. Dlatego, mimo że proces zmiany można obsłużyć ręcznie w konfiguracji sektora niepublicznego, należy go użyć do konfiguracji sektora publicznego.
 
 Gdy tworzysz sprawę ZO typu Zamówienie zakupu i dodajesz pozycję magazynową do ZO, zostaje wygenerowana transakcja magazynowa, która ma stan przyjęcia **Otrzymanie oferty**. Tylko wiersze sprawy ZO z tym stanem są uwzględniane podczas korzystania z planu głównego do obliczania dostaw. Aby uwzględniać wiersze sprawy ZO jako oczekiwane przyjęcia planu głównego, należy skonfigurować to zachowanie w ustawieniach planowania głównego.

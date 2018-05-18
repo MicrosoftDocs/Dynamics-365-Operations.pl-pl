@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="create-service-agreement-groups"></a>Tworzenie grup umów serwisowych 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Grupy umów serwisowych są przydatne do sortowania i filtrowania umów serwisowych.
 

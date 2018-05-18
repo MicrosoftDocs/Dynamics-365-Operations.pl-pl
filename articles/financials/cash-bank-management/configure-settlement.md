@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="configure-settlement"></a>Konfigurowanie rozliczenia
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Sposoby i terminy rozliczania transakcji mogą być złożonymi zagadnieniami, dlatego trzeba dokładnie poznać i poprawnie zdefiniować parametry zgodnie z potrzebami firmy. W tym artykule opisano parametry używane do rozliczeń w modułach dla Rozrachunki z odbiorcami i Rozrachunki z dostawcami. 
 

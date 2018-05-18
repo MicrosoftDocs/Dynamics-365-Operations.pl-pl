@@ -27,7 +27,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="employee-competencies-and-development-power-bi-content"></a>Pakiet zawartości usługi Power BI Kompetencje i rozwój pracownika etatowego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartości Finance and Operations — Kompetencje i rozwój pracownika etatowego dla usługi Power BI. 
 

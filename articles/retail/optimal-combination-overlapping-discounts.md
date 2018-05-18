@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Określenia optymalnej kombinacji rabatów nakładających się
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Gdy rabaty się nakładają, należy określić taką kombinację nakładających się rabatów, która wygeneruje najniższą sumę transakcji lub najwyższy rabat końcowy. Gdy kwota rabatu różni się zależności od cen kupowanych produktów, taki jak w popularnym rabacie detalicznym „Kup 1, drugi dostaniesz X procent taniej” (BOGO), ten proces staje się zagadnieniem optymalizacji kombinatorycznej.
 

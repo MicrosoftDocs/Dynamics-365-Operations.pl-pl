@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-iso20022-files"></a>Importowanie plików ISO20022
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Można importować pliki płatności mające następujące formaty:
 

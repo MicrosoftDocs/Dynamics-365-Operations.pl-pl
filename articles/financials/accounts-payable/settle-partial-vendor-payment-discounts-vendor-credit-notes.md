@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Rozliczenie płatności częściowej dostawcy, do której zastosowano rabaty na fakturach korygujących dostawcy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł prowadzi przez scenariusz, w którym faktura korygująca jest rozliczana względem faktury.
 

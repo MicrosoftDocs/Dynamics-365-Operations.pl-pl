@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="vendor-payment-overview"></a>Przegląd płatności dla dostawcy
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ten przewodnik po zadaniach zawiera instruktaż różnych metod służących do tworzenia płatności dla dostawców, w tym dotyczących korzystania z propozycji płatności lub ręcznego wprowadzania jednorazowej płatności. Ta procedura wykorzystuje firmę demonstracyjną USMF.
 

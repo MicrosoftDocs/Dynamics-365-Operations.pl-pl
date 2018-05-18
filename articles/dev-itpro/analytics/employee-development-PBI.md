@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="employee-development-power-bi-content"></a>Pakiet zawartości usługi Power BI Rozwój pracownika etatowego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano pakiet zawartość **Rozwój pracownika etatowego** dostępny dla usługi Microsoft Power BI.
 

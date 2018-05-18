@@ -24,7 +24,7 @@ ms.lasthandoff: 11/04/2017
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a>Tworzenie listy składowej (BOM) dla produktu głównego opartego na wymiarach
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Przed wykonaniem tej procedury należy wykonać 4 poprzednie przewodniki z tej sekwencji ośmiu nagrań. Pierwsze 4 nagrania obejmują skonfigurowanie danych wymaganych do wykonania tej procedury. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. To zadanie jest zazwyczaj wykonywane przez projektanta produktów.
 

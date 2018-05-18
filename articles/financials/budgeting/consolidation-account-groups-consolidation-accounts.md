@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Grupy kont konsolidacji i dodatkowe konta konsolidacji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o grupach kont konsolidacji i dodatkowych kontach konsolidacji oraz wyjaśnia, jak są one używane w programie Microsoft Dynamics 365 for Finance and Operations.
 

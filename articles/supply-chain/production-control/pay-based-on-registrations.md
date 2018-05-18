@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="pay-based-on-registrations"></a>Płaca oparta na rejestracjach
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie szczegółowo wyjaśniono, jak płaca jest obliczana na podstawie rejestracji pracowników. Zawiera przykłady pokazujące, jak różne kombinacje opcji konfiguracyjnych dostępnych dla obliczenia wpływają na wynik. Poniżej przedstawiono kilka obszarów, które zostaną omówione:
 

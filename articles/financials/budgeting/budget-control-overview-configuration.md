@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-control-overview"></a>Omówienie kontroli budżetu 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera wprowadzenie do mechanizmu kontroli budżetu oraz informacje pomagające konfigurować kontrolę budżetu w programie Microsoft Dynamics 365 for Finance and Operations na potrzeby zarządzania środkami finansowymi.
 

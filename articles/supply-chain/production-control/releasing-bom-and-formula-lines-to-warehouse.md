@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Zwalnianie wierszy BOM i wierszy formuły do magazynu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano proces zwalniania surowca dla wierszy listy składowej (BOM) i formuły do magazynu. Przy zwalnianiu wiersza BOM lub formuły do magazynu system najpierw określa, czy materiał jest już dostępny w lokalizacji wejściowej produkcji w zakładzie, gdzie materiał zostanie wykorzystany w procesie produkcji.
 

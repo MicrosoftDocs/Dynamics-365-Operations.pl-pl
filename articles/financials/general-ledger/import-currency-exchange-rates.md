@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-currency-exchange-rates"></a>Importowanie kursów wymiany walut
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Jeżeli firma otrzymała faktury w walutach obcych, jest konieczne przeliczenie tych walut na walutę lokalną. Oznacza to, że są potrzebne aktualne kursy wymiany różnych walut. Ten temat zawiera omówienie wymaganych ustawień i przetwarzania importowania referencyjnych kursów wymiany publikowanych w Internecie przez dostawców kursów wymiany, takich jak Europejski Bank Centralny i Bank Centralny Rosji.
 

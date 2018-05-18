@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="publish-journal-lines-and-documents-from-excel"></a>Publikowanie wierszy arkuszy i dokumentów z programu Excel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak wprowadzać i publikować wiersze arkuszy finansowych z programu Microsoft Excel. Znajdują się tu informacje dotyczące różnych szablonów, których można używać w zależności od typu wprowadzanych transakcji.
 

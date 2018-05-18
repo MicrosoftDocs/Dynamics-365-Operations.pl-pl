@@ -29,9 +29,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Średnia ważona z wartością fizyczną i oznaczeniami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Średnia ważona jest modelem magazynowym opierającym się na zasadzie średniej ważonej, gdzie rozchody magazynowe są szacowane na podstawie średniej wartości towarów przyjętych do magazynu podczas okresu zamykania magazynu plus dostępnych zapasów z poprzedniego okresu.
 

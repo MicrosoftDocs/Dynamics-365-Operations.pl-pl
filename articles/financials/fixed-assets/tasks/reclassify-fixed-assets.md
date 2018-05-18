@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="reclassify-fixed-assets"></a>Zmień klasyfikację środków trwałych
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Aby przeklasyfikować środek trwały, należy przenieść go do nowej grupy środków trwałych lub przypisać mu nowy numer środka trwałego w tej samej grupie. 
 

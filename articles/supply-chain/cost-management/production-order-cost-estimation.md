@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-order-cost-estimation"></a>Szacowanie kosztu zlecenia produkcyjnego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o szacowaniu kosztów produkcji. Szacowanie kosztów produkcji pokazuje prognozowane koszty zużycia materiałów i zdolności produkcyjnych w celu wytworzenia towaru w ilości określonej w planowanym zleceniu produkcyjnym. 
 

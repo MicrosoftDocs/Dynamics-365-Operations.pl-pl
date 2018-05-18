@@ -26,7 +26,7 @@ ms.lasthandoff: 04/13/2018
 # <a name="reverse-charge-vat"></a>Opłata zwrotna VAT
 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 W tym temacie opisano standardową metodę konfigurowania odwróconego podatku od towarów i usług (VAT) dla Arabii Saudyjskiej i krajów europejskich.

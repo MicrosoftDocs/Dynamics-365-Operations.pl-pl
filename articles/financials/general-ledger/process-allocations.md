@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="process-allocations"></a>Przetwarzanie alokacji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o alokacjach, opcjach ich przetwarzania w programie Microsoft Dynamics 365 for Finance and Operations oraz o sposobach ich wykorzystywania w planowaniu budżetu. Alokacje służą do dystrybucji kwot między wiele kombinacji kont księgowych. Pomagają zagwarantować, że przychody lub wydatki obciążają odpowiednie obiekty podczas księgowania.
 

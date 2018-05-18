@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Uruchamianie testowego narzędzia do przenoszenia danych (wersja beta) dla systemu Dynamics AX (AX 2012)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Celem funkcji szybkiego importowania/eksportowania jest umożliwienie użytkownikom importowania i eksportowania przy użyciu mniejszej liczby kroków.
 

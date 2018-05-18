@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Edytowanie identyfikator faktur w zamówieniach sprzedaży dla Europy Wschodniej
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o parametrach rozrachunków z odbiorcami, które wpływają na numery faktur w dokumentach dostawy i fakturach dla Czech, Estonii, Węgier, Litwy, Łotwy i Polski.
 

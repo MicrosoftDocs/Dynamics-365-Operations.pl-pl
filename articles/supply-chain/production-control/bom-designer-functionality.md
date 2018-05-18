@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="bom-designer-functionality"></a>Funkcjonalność konstruktora BOM
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano, jak za pomocą strony projektanta BOM zaprojektować struktury drzewa dla list składowych (BOM) oraz ich używać. Można kliknąć przycisk Ustawienia i wybierać różne konfiguracje oraz określić rodzaj informacji wyświetlanych w wierszach drzewa.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="accounting-source-explorer"></a>Eksplorator źródeł księgowania
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o Eksplorator źródeł księgowania, którego można używać do szczegółowej analizy informacji źródłowych stojących za wpisami księgowymi w księgi głównej.
 

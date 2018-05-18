@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Mapowanie elementów członkowskich wymiaru elementu kosztów na wspólny zestaw elementów członkowskich wymiaru
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Poprzez mapowanie elementów członkowskich różnych wymiarów składników kosztów na wspólny zestaw takich elementów można scalić dane we wspólny format umożliwiający efektywną analizę.
 

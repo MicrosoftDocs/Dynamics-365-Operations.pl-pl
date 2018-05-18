@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-a-call-center-catalog"></a>Tworzenie katalogu biura obsługi
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ten artykuł zawiera omówienie procesu tworzenia katalogu dla biura obsługi. 
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-holds"></a>Wstrzymania zamówień
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak wstrzymuje się zamówienia przy użyciu programu Dynamics 365 for Retail.
 

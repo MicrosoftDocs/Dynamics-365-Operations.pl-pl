@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="submit-and-approve-project-budget-revisions"></a>Przesyłanie i zatwierdzanie korekt budżetu projektu
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura zawiera informacje o korygowaniu budżetu projektu. Budżet projektu można korygować dowolną liczbę razy w razie potrzeby, jednak nie będą wyświetlane kwoty poszczególnych korekt, jeżeli budżet został poprawiony więcej niż jeden raz. 
 

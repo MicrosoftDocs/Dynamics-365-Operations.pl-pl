@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-governed-by-budget"></a>Tworzenie zamówienia zakupu regulowanego budżetem
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura służy do tworzenia zamówienia zakupu sprawdzanego pod kątem dostępnego budżetu. Nagranie wykorzystuje dane firmy demonstracyjnej USMF.
 

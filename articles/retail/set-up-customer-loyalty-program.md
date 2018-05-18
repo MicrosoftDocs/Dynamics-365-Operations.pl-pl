@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-a-customer-loyalty-program"></a>Konfigurowanie programu lojalnościowego
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W tym artykule opisano sposób konfigurowania programu lojalnościowego. Programy lojalnościowe mogą pomóc zwiększyć lojalność odbiorców poprzez wynagradzanie ich za zakup produktów w sklepach sieci sprzedaży. W programie Microsoft Dynamics 365 for Retail można skonfigurować proste lub złożone programy lojalnościowe, które mają zastosowanie w firmach w dowolnym kanale sprzedaży detalicznej.
 

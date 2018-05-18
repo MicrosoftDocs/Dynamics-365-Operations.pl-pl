@@ -29,7 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="payment-methods"></a>Metody płatności
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Każdy typ płatności akceptowany przez sprzedawcę detalicznego musi zostać skonfigurowany na etapie konfiguracji systemu. W tym artykule opisano typy płatności, które można utworzyć, oraz proces ich konfigurowania.
 

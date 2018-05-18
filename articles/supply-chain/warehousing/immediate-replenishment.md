@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="immediate-replenishment"></a>Natychmiastowe uzupełnianie zapasów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Funkcja natychmiastowego uzupełniania zapasów pozwala błyskawicznie uzupełnić zapasy, gdy wiersz dyrektywy lokalizacji nie jest w stanie przydzielić zapasów. Uzupełnienie zapasów opiera się na jednym wierszu w konfiguracji dyrektywy lokalizacji. Jeśli zapasy nie są dostępne w jednostce miary określonej za pomocą tego wiersza, uzupełnienie zapasów w tej jednostce miary odbywa się natychmiast.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit"></a>Akredytywy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Akredytywy to dokumenty bankowe, które są często używane do kupna i sprzedaży towarów między krajami. 
 

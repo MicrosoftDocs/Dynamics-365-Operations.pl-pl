@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="manage-retail-product-categories-and-products"></a>Zarządzanie kategoriami produktów i produktami sieci sprzedaży
 
-[!INCLUDE [banner](./includes/banner.md)]
+[!include [banner](./includes/banner.md)]
 
 W tym temacie opisano poszerzony sposób zarządzania kategoriami produktów sieci sprzedaży i produktami w programie Microsoft Dynamics 365 for Retail. Ulepszenia umożliwiają menedżerom ds. merchadisingu wyświetlanie struktury właściwości produktów, która jest wspólna dla hierarchii produktów sieci sprzedaży i informacji o zwolnionych produktach.
 

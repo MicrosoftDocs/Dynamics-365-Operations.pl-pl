@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-containerization"></a>Konfigurowanie konteneryzacji
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze opisano sposób zautomatyzowania konteneryzacji ładunków w module Zarządzanie magazynem. Podczas przetwarzania grupy czynności funkcja automatycznej konteneryzacji tworzy kontenery i pracę pobrania dla wysyłek, a wiersze pracy można podzielić na ilości mieszczące się w kontenerach. W ten sposób pracownicy magazynu mogą pobierać towary bezpośrednio do wybranego kontenera. W porównaniu do ręcznego procesu pakowania zadania takie jak tworzenie kontenerów, przypisywania towarów i zamykanie kontenerów są zautomatyzowane przez system. Ta procedura używa firmy demonstracyjnej USMF i jest wykonywana przez kierownika magazynu.
 

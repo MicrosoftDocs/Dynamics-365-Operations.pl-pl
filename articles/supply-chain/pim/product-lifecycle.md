@@ -29,7 +29,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="product-lifecycle-state"></a>Stan cyklu życia produktu 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Stan cyklu życia produktu dokumentuje stan cyklu życia zwolnionego produktu lub wariantu produktu. Stany cyklu życia produktu są definiowane przez użytkownika, zwykle menedżera produktu lub menedżera danych głównych produktu. Na określone procesy biznesowe, takie jak planowanie główne, ma wpływ określony stan cykl życia.   
 

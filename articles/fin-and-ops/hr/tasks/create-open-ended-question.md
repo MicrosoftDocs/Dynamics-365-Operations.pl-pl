@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-an-open-ended-question"></a>Tworzenie pytania otwartego
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Pytania otwarte umożliwiają osobom udzielającym odpowiedzi udzielanie własnych odpowiedzi. Można kontrolować, czy ta odpowiedź jest liczbą całkowitą, liczbą dziesiętną, datą, komentarzem i tak dalej. Ta procedura prowadzi przez proces tworzenia określonego typu pytania zwanego „pytaniem otwartym”. Aby rozpocząć tę procedurę, wybierz kolejno opcje Kwestionariusz > Projekt > Pytania. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

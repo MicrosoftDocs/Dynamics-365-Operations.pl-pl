@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="loan-items-to-a-worker"></a>Wypożyczanie przedmiotów pracownikom
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób wypożyczanie przedmiotu pracownikowi oraz rejestrowania zwrotu przedmiotu przez pracownika. Pracownicy mogą także wnioskować o wypożyczenie przedmiotów na swoich stronach w portalu samoobsługi pracowniczej. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

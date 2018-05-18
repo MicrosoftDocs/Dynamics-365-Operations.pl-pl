@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="distributions-on-an-expense-report"></a>Dystrybucje w raportach z wydatków
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Przy wprowadzaniu wydatków w raporcie z wydatków można rozmieścić wydatki w wielu projektach, wymiarach finansowych lub kontach w organizacji.
 

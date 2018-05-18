@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="vendor-rebates"></a>Rabaty dostawcy
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Rabaty dostawcy ułatwiają firmom zarządzanie programami rabatów dla dostawców dzięki automatyzacji zadań wymaganych do administrowania, śledzenia i wykorzystywania uzyskanych rabatów.
 

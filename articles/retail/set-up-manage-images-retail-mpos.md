@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Konfigurowanie obrazów i zarządzanie nimi w module Retail Modern POS
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W tym artykule objaśniono etapy konfigurowania obrazów i zarządzania nimi dla różnych jednostek wyświetlanych w module Retail Modern POS (MPOS).
 

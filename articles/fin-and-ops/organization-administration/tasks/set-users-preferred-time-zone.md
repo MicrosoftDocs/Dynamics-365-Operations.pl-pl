@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-a-users-preferred-time-zone"></a>Ustawianie preferowanej strefy czasowej
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W poniższej procedurze pokazano, jak użytkownik w roli administratora systemu może ustawić strefę czasową dla użytkownika.
 

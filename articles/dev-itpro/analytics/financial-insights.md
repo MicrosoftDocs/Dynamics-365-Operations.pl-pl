@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="financial-insights"></a>Szczegółowe dane finansowe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Wykorzystując usługę Microsoft Power BI, obszar roboczy **Szczegółowe dane finansowe** zbiera w jednym miejscu kluczowe wskaźniki wydajności (KPI) dotyczące finansów, wykresy i sprawozdania finansowe. Usługa Power BI jest wbudowana w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations.
 Obszar roboczy **Szczegółowe dane finansowe** koncentruje się na sprawozdawczości analitycznej. Osoby z całej organizacji mogą wyświetlać, badać i poznawać informacje oraz działać na ich podstawie. 

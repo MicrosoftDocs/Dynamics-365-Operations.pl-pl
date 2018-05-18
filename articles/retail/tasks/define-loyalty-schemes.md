@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="define-loyalty-schemes"></a>Definiowanie schematów lojalnościowych
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Ta procedura zawiera instruktaż definiowania schematu lojalnościowego. Schematy lojalnościowe to reguły zdobywania punktów i reguły realizacji dla programu lojalnościowego. Procedura wykorzystuje dane firmy demonstracyjnej USRT.
 

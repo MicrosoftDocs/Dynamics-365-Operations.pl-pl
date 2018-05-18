@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-cost-rollup-policy"></a>Tworzenie zasady akumulacji kosztów
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano, jak utworzyć zasadę akumulacji kosztów, a następnie reguły dla tej zasady. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USP2.
 

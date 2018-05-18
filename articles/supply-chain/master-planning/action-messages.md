@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="action-messages"></a>Komunikaty akcji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Komunikat akcji jest generowaną przez system sugestią dotyczącą zmiany istniejącego zamówienia planowanego lub zaakceptowanego.
 

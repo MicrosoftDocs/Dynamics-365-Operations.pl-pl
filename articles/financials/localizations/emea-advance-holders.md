@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="advance-holders"></a>Posiadacze zaliczek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera więcej informacji o funkcjonalności posiadacza zaliczki w programie Microsoft Dynamics 365 for Finance and Operations.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-delivery-schedule"></a>Tworzenie harmonogramu dostaw
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób tworzenia harmonogramu dostaw na podstawie zamówienia sprzedaży. Harmonogram dostaw jest używany w reakcji na żądanie dostarczenia ilości z zamówienia lub oferty w kilku dostawach. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.
 

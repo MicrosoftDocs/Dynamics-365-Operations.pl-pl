@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a>Dodawanie zasady obliczania liczby kart Kanban do reguły Kanban
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ta procedura skupia się na tworzeniu zasady obliczania liczby kart Kanban oraz dodaniu jej do reguły Kanban w celu zoptymalizowania wielkości i liczby kart Kanban. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Procedura jest przeznaczona dla menedżera strumienia wartości. Procedura jest warunkiem wstępnym tworzenia procedury Obliczanie sugestii liczby kart Kanban. 
 

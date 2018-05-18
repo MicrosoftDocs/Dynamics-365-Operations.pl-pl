@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-request-for-quotation"></a>Tworzenie zapytania ofertowego
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób tworzenia zapytania ofertowego. Zazwyczaj robi to pracownik działu zakupów. Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych. Przed rozpoczęciem trzeba mieć skonfigurowane typy zdobywania zamówień. Po wykonaniu tego zadania i utworzeniu oraz wysłaniu ZO można wprowadzić odpowiedzi dla poszczególnych dostawców, porównać je, a następnie przyznać zamówienie.
 

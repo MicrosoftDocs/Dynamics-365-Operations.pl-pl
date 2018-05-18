@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-configuration-groups"></a>Definiowanie grup konfiguracji
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób definiowania grup konfiguracji produktów przez utworzenie dwóch grup w danych firmy demonstracyjnej USMF. Jest to czwarta z ośmiu procedur opisujących sposób tworzenia kombinacji dla konfiguracji opartej na wymiarach.
 

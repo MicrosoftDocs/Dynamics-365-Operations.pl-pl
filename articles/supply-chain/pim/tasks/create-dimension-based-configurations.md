@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-dimension-based-configurations"></a>Tworzenie konfiguracji opartych na wymiarach
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 W tej procedurze pokazano sposób definiowania konfiguracji produktu opartego na wymiarach. Jest to ostatnia z serii procedur opisujących sposób tworzenia kombinacji dla konfiguracji opartej na wymiarach. Wykonanie tej procedury zależy od danych utworzonych w poprzednich siedmiu nagraniach. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

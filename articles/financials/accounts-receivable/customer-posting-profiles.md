@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="customer-posting-profiles"></a>Profile księgowania odbiorców
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Profile księgowania odbiorców sterują księgowaniem transakcji z odbiorcami w księdze głównej.
 
