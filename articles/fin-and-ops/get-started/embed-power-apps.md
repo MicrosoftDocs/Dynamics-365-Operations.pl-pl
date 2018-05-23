@@ -33,8 +33,6 @@ W aktualizacji platformy 14 program Microsoft Dynamics 365 for Finance and Opera
 
 Aby uzyskać więcej informacji o osadzaniu aplikacji PowerApp, obejrzyj krótki film [Jak osadzać aplikacje PowerApp w programie Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
-> [!Video https://www.youtube.com/embed/x3qyA1bH-NY]
-
 ## <a name="adding-an-embedded-powerapp-to-a-page"></a>Dodawanie osadzonej aplikacji PowerApp do strony
 ### <a name="overview"></a>Przegląd
 Przed osadzeniem aplikacji PowerApp w kliencie rozwiązania Finance and Operations najpierw należy odnaleźć lub utworzyć aplikację PowerApp z żądanymi elementami wizualnymi i/lub funkcjami. Tutaj nie opiszemy szczegółowego procesu kompilowania aplikacji PowerApp . Temat [Wprowadzenie do usługi PowerApps](https://docs.microsoft.com/en-us/powerapps/getting-started) jest dobrym punktem wyjściowym dla nowych użytkowników usługi PowerApps.
