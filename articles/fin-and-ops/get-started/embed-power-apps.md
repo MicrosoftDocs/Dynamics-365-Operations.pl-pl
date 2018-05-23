@@ -16,10 +16,10 @@ ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 0754b4361f2fe940f6c6d4168ac44f234fd363f8
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 58b6b934c2cf65ff1f9362ce948474e374892999
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -32,8 +32,6 @@ ms.lasthandoff: 05/08/2018
 <span data-ttu-id="920cf-104">W aktualizacji platformy 14 program Microsoft Dynamics 365 for Finance and Operations obsługuje integrację z Microsoft PowerApps — usługą dla deweloperów i użytkowników nietechnicznych, która umożliwia tworzenie niestandardowych aplikacji biznesowych dla urządzeń przenośnych, tabletów i sieci web bez pisania kodu.</span><span class="sxs-lookup"><span data-stu-id="920cf-104">In Platform update 14, Microsoft Dynamics 365 for Finance and Operations supports integration with Microsoft PowerApps, a service for developers and non-technical users to build custom business apps for mobile devices, tablets, and the web without writing code.</span></span> <span data-ttu-id="920cf-105">Aplikacje PowerApp opracowane przez użytkownika, organizację lub członków szerszego ekosystemu można następnie osadzać w kliencie rozwiązania Finance and Operations w celu rozszerzenia funkcjonalności produktu.</span><span class="sxs-lookup"><span data-stu-id="920cf-105">PowerApps developed by you, your organization, or the broader ecosystem can then be embedded in the Finance and Operations client to augment the product's functionality.</span></span> <span data-ttu-id="920cf-106">Na przykład można utworzyć aplikację PowerApp w celu uzupełniania programu Finance and Operations o informacje pobrane z innego systemu.</span><span class="sxs-lookup"><span data-stu-id="920cf-106">For example, you might build a PowerApp to supplement Finance and Operations with information retrieved from another system.</span></span> 
 
 <span data-ttu-id="920cf-107">Aby uzyskać więcej informacji o osadzaniu aplikacji PowerApp, obejrzyj krótki film [Jak osadzać aplikacje PowerApp w programie Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY).</span><span class="sxs-lookup"><span data-stu-id="920cf-107">To learn more about embedding PowerApps, watch the short [How to embed PowerApps in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY) video.</span></span>
-
-> [!Video https://www.youtube.com/embed/x3qyA1bH-NY]
 
 ## <a name="adding-an-embedded-powerapp-to-a-page"></a><span data-ttu-id="920cf-108">Dodawanie osadzonej aplikacji PowerApp do strony</span><span class="sxs-lookup"><span data-stu-id="920cf-108">Adding an embedded PowerApp to a page</span></span>
 ### <a name="overview"></a><span data-ttu-id="920cf-109">Przegląd</span><span class="sxs-lookup"><span data-stu-id="920cf-109">Overview</span></span>
