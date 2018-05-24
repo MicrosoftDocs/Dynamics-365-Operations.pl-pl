@@ -3,7 +3,7 @@ title: "Przestarzałe funkcje"
 description: "W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia."
 author: sericks007
 manager: AnnBe
-ms.date: 03/22/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e629673c3a923ec74809e276ec39464bfacda124
+ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
+ms.openlocfilehash: c935b0c14f09b0a3a738266e4c9c577c96f0ea77
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
@@ -78,13 +78,13 @@ Te dwa raporty nie są już obsługiwane w rozwiązaniu Finance and Operations. 
 | **Opcja wdrażania**        | Wszyscy|
 | **Stan**                       | Wycofane: elementy ,emu tych dwóch raportów zostały usunięte w wersji 7.3. Jednakże kod raportów jest nadal dostępny w produkcie. Planowane jest usunięcie kodu w kolejnych wersjach. |
 
-### <a name="power-bi-content-packs-published-to-powerbicom"></a>Pakiety zawartości usługi Power BI opublikowane w witrynie PowerBI.com
-Pakiety zawartości **Zarządzanie kosztami**, **Wyniki finansowe** i **Wyniki kanału detalicznego**, które zostały opublikowane w witrynie PowerBI.com zostały wycofane w konsekwencji aktualizacji produktu w usłudze Microsoft Power BI. Formularze administracji systemu używane do wdrażania tych pakietów zawartości w witrynie PowerBI.com także zostały wycofane z rozwiązania Finance and Operations.
+### <a name="power-bi-content-packs-available-on-appsource"></a>Pakiety zawartości usługi Power BI dostępne w usłudze AppSource
+Pakiety zawartości **Zarządzanie kosztami**, **Wyniki finansowe** i **Wyniki kanału detalicznego**, które są opublikowane w witrynie [Microsoft AppSource](https://appsource.microsoft.com), zostały wycofane w konsekwencji aktualizacji produktu w usłudze Microsoft Power BI. Formularze administracji systemu używane do wdrażania tych pakietów zawartości w witrynie PowerBI.com także zostały wycofane z rozwiązania Finance and Operations.
 
 |   |  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Aktualizacje produktu w usłudze Microsoft Power BI. |
-| **Zamieniona przez inną funkcję?**   | Pakiety zawartości usługi Power BI (opublikowane w witrynie PowerBI.com) są zastępowane przez aplikacje analityczne umożliwiające integrację rozwiązań na poziomie bazy danych. Aby uzyskać więcej informacji o aplikacjach analitycznych, zobacz [Osadzona usługa Power BI w obszarach roboczych](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Zamieniona przez inną funkcję?**   | Pakiety zawartości **Zarządzanie kosztami**, **Wyniki finansowe** i **Wyniki kanału detalicznego**, które opublikowano w witrynie [AppSource](https://appsource.microsoft.com), są zastępowane aplikacjami analitycznymi, które umożliwiają integrację rozwiązań na poziomie bazy danych. Aby uzyskać więcej informacji o aplikacjach analitycznych, zobacz [Osadzona usługa Power BI w obszarach roboczych](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Powiązane obszary produktów**         | Zarządzanie kosztami, Finanse i Handel detaliczny                                                                                               |
 | **Opcja wdrażania**              | Tylko w chmurze (integracja z witryną PowerBI.com nie jest obsługiwana we wdrożeniach lokalnych.)                                                                                                            |
 | **Stan**                         | Wycofane: docelowy okres usuwania funkcji to drugi kwartał 2018 roku.    |

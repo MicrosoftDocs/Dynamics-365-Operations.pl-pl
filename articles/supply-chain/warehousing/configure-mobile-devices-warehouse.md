@@ -19,16 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e0033461e7cd2601993c006aba2ec7c8f6ac0c89
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: bb0d6af3a17653ea33e3f84a416bda244a27507c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy w magazynie
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych.
 
@@ -407,10 +407,10 @@ W poniższej tabeli przedstawiono różne typy pracy, z którymi można używać
 
 **Uwaga:** Możesz jedynie wymagać potwierdzenia produktu dla prac typu pobieranie i odkładanie.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Ustawienia wyświetlania urządzenia przenośnego używanego w magazynie](change-warehouse-mobile-device-displays.md)
+[Ustawienia wyświetlania urządzeń przenośnych używanych w magazynie](change-warehouse-mobile-device-displays.md)
 
 [Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy typu Zamówienie zakupu (przewodnik po zadaniu)](tasks/set-up-mobile-device-menu.md)
 

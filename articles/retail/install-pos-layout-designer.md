@@ -20,16 +20,16 @@ ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8fdebf692bd3cd8500274cc73ca5b0591dba4140
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 30adfefd5ec70ddce348dab2481d518875e01ff2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="install-the-retail-pos-layout-designer"></a>Instalowanie projektanta układu programu Retail POS
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Za pomocą projektanta obsługiwanego jednym kliknięciem można projektować różne układy do programów Retail Modern POS (MPOS) and Cloud POS w orientacji poziomej i trybie pionowej dla różnych sklepów, kas, kasjerów i menedżerów.
 
@@ -51,7 +51,7 @@ O wyglądzie interfejsu graficznego projektowania programu MPOS lub Cloud POS de
 
 **Znany problem:** Projektant nie działa poprawnie w przeglądarkach Google Chrome i Mozilla Firefox. Pracujemy nad rozwiązaniem tego problemu.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Konfigurowanie, pobieranie, instalowanie i aktywowanie aplikacji Retail Modern POS](retail-modern-pos-device-activation.md)

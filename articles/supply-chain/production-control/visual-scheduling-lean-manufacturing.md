@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 92beae76b35da6e18d1d9b2621b48b9a46dfaad0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d2ead061fe39c3dcb54d697f246c2c826339b699
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Wizualne planowanie zadań na potrzeby lean manufacturing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o tablicy harmonogramu Kanban, której planista produkcji może używać do kontrolowania i optymalizowanie planu produkcji dla zadań Kanban.
 
@@ -91,7 +91,7 @@ Tablicę harmonogramu Kanban można otworzyć przy użyciu elementu menu na nast
 -   Strona **Wizualizacja przepływu produkcji**
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Lean manufacturing — planowanie zadań w systemie Kanban](lean-manufacturing-kanban-job-scheduling.md)

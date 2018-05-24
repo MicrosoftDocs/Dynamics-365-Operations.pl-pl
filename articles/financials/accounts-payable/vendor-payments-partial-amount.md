@@ -1,6 +1,6 @@
 ---
 title: "Częściowa płatność dostawcy"
-description: "Czasami płatność dokonywana na rzecz dostawcy jest mniejsza od kwoty faktury. W tym artykule opisano różne opcje postępowania w takiej sytuacji. Faktycznie dostępne opcje zależą od konkretnych wymagań biznesowych i istniejącej konfiguracji."
+description: "Czasami płatność dokonywana na rzecz dostawcy jest mniejsza od kwoty faktury. W tym artykule opisano różne opcje postępowania w takiej sytuacji."
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: aeef806980665c523f10b373f7662ecf509a8172
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d8c012d3e88f3f4fe2e60f1db59978e326c42681
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="vendor-payments-for-a-partial-amount"></a>Częściowa płatność dostawcy
+# <a name="vendor-payments-for-a-partial-amount"></a>Częściowe płatności dla dostawcy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Czasami płatność dokonywana na rzecz dostawcy jest mniejsza od kwoty faktury. W tym artykule opisano różne opcje postępowania w takiej sytuacji. Faktycznie dostępne opcje zależą od konkretnych wymagań biznesowych i istniejącej konfiguracji. 
 
@@ -38,7 +38,7 @@ Czasami płatność dokonywana na rzecz dostawcy jest mniejsza od kwoty faktury.
 Dostawca może zaoferować Ci rabat za rozliczenie faktury przed datą należności. Załóżmy, że wprowadzasz fakturę na kwotę 100,00, na którą odbiorca może uzyskać 2-procentowy rabat gotówkowy, jeśli zapłaci ją w ciągu 10 dni. Okres płatności wynosi 30 dni. Jeśli propozycja płatności rabatu gotówkowego używa jako kryterium wyboru faktury i jeśli propozycja zostanie uruchomiona w dniu lub przed datą rabatu gotówkowego, wybrana faktura do zapłaty i płatność są tworzone na kwotę 98,00. Rabat gotówkowy może być również uwzględniony dla jednorazowej płatności, która została utworzona ręcznie.
 
 ## <a name="partial-payments-with-cash-discounts"></a>Płatności częściowe z rabatem gotówkowym
-Kiedy dokonujesz płatności częściowej, możesz zaplanować dokonanie dodatkowej zapłaty częściowej, by rozliczyć fakturę w całości. Aby podjąć rabat gotówkowy dla płatności częściowej, musisz ustawić w opcji <strong>Oblicz rabaty gotówkowe dla częściowych zapłat** wartość **Tak</strong> na stronie <strong>Parametry modułu rozrachunków z odbiorcami</strong>. 
+Kiedy dokonujesz płatności częściowej, możesz zaplanować dokonanie dodatkowej zapłaty częściowej, by rozliczyć fakturę w całości. Aby podjąć rabat gotówkowy dla płatności częściowej, musisz ustawić w opcji **Oblicz rabaty gotówkowe dla częściowych zapłat** wartość **Tak** na stronie **Parametry modułu rozrachunków z odbiorcami**. 
 
 Na przykład możesz otrzymać 2-procentowy rabat gotówkowy, jeśli faktura zostanie zapłacona w ciągu 10 dni po wystawieniu. Faktura jest księgowana na wartość 100,00. Jeśli w ciągu 10 dni dokonasz płatności w wysokości 49,00, wpisujesz debet w wysokości 49,00 w arkuszu płatności. Po rozliczeniu płatności częściowej na stronie **Rozliczanie otwartych transakcji** w polu **Kwota rabatu gotówkowego do pobrania** pojawia się wartość **1,00**. 
 
@@ -46,7 +46,7 @@ Na przykład możesz otrzymać 2-procentowy rabat gotówkowy, jeśli faktura zos
 > Jeśli wpiszesz częściową płatność i zostawisz pełną wartość faktury w polu **Kwota do rozliczenia**, pole **Kwota rabatu gotówkowego do pobrania** jest automatycznie obliczane ponownie po zaksięgowaniu transakcji.
 
 ## <a name="credit-notes-with-cash-discounts"></a>Faktury korygujące z rabatami gotówkowymi
-Możesz zwrócić część towarów znajdujących się na fakturze i otrzymać fakturę korygującą. Jeśli dla oryginalnej faktury został podjęty rabat gotówkowy, możesz odjąć wartość rabatu i uzyskać zwrot kosztu na odpowiednią kwotę. Jeśli opcja <strong>Oblicz rabaty gotówkowe dla faktur korygującychna **</strong> <strong>Parametry modułu rozrachunków z dostawcami</strong> ma wartość **Tak, rabat dla faktury korygującej jest automatycznie obliczany. 
+Możesz zwrócić część towarów znajdujących się na fakturze i otrzymać fakturę korygującą. Jeśli dla oryginalnej faktury został podjęty rabat gotówkowy, możesz odjąć wartość rabatu i uzyskać zwrot kosztu na odpowiednią kwotę. Jeśli opcja **Oblicz rabaty gotówkowe dla faktur korygujących**na stronie **Parametry modułu rozrachunków z dostawcami** ma wartość **Tak**, rabat dla faktury korygującej jest automatycznie obliczany. 
 
 Na przykład możesz otrzymać 2-procentowy rabat gotówkowy, jeśli faktura zostanie zapłacona w ciągu 10 dni po wystawieniu. Faktura jest księgowana na wartość 100,00. W przypadku zwrotu towarów i otrzymania faktury korygującej możesz wprowadzić fakturę korygującą dla całej kwoty oryginalnej faktury (100,00) łącznie z 2-procentowym rabatem gotówkowy zdefiniowanym na fakturze korygującej.  Podczas wyświetlania faktury korygującej na stronie **Rozliczanie transakcji** w polu **Kwota do rozliczenia** pojawia się wartość **98,00**, a w polu **Kwota rabaty gotówkowego** pojawia się wartość **-2,00**. Kwota rabatu jest księgowana na koncie rabatu gotówkowego.
 

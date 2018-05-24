@@ -19,16 +19,16 @@ ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 04217e162090720d2a48c96aa9356cea2dbfa230
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6bebe9ce83c4b979ffbb7c86ef67ad03a650e0c2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="audit-policy-rules"></a>Reguły inspekcji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Zasady inspekcji służą do oceniania raportów z wydatków, faktur od dostawcy i zamówień zakupu, aby się upewnić, że spełniają one utworzone przez Ciebie reguły zasad. Wszystkie reguły skojarzone z zasadą inspekcji są uruchamiane w trybie wsadowym, zgodnie z harmonogramem określonym przez użytkownika.  Każda reguła zasad jest wystąpieniem typu reguły zasad. Dla każdego typu reguły zasad w danej chwili może być aktywna tylko jedna reguła. 
 
@@ -95,7 +95,7 @@ Wszystkie reguły zasad dotyczące udziału konkretnych zasad inspekcji współd
 
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Naruszenia zasad audytu i sprawy](audit-policy-violations-cases.md)

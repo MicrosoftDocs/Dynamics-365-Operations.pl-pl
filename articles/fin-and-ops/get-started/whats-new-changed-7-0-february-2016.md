@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ab12a55e41cd32c2479eb46796de57926652942f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3ba9025aa5394b29bdba80e589c77fa4bd2bd47f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nowości i zmiany w systemie Dynamics AX 7.0 (luty 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano nowe oraz zmienione funkcje dostępne w systemie Microsoft Dynamics AX 7.0. Ta wersja zawiera funkcje zarówno platformy, jak i aplikacji. Została wydana w lutym 2016 r.
 
@@ -536,7 +536,7 @@ Nie dodano żadnych nowych funkcji.
 </tr>
 <tr class="odd">
 <td>(Unia Europejska) Zgłaszanie ilości w dodatkowych jednostkach dla Intrastat za pomocą ustawienia konwersji jednostek.</td>
-<td>Kod asortymentu Intrastat ma pole tekstowe do identyfikacji dodatkowych jednostek, a karta **Produkt** zawiera pole do identyfikowania liczby dodatkowych jednostek w kilogramach.</td>
+<td>Kod asortymentu Intrastat ma pole tekstowe do identyfikacji dodatkowych jednostek, a karta <strong>Produkt</strong> zawiera pole do identyfikowania liczby dodatkowych jednostek w kilogramach.</td>
 <td>Dodatkowe jednostki dla kodu asortymentu Intrastat wybiera się z listy jednostek. Liczba dodatkowych jednostek jest obliczana przy użyciu ustawień konwersji jednostek.</td>
 <td>To ujednolica podejście do przeliczania z jednostek transakcji na dodatkowe jednostki.</td>
 </tr>
@@ -1081,7 +1081,7 @@ Nie dodano żadnych nowych funkcji.
 
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Co nowego, jakie zmiany](whats-new-changed.md)

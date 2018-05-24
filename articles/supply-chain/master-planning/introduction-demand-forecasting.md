@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 6a0455c5d86f953e270501a7f1648f7700f717d0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 20eb67a341f462328bc73907fb3052b3405190d4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="demand-forecasting-overview"></a>Podstawowe informacje o prognozowaniu popytu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Prognozowanie popytu jest używane do przewidywania niezależnego popytu z zamówień sprzedaży i zależnego popytu w dowolnym punkcie oddzielenia dla zamówień od odbiorców. Rozszerzone reguły redukcji prognozy popytu są doskonałym rozwiązaniem do masowego dostosowywania.
 
@@ -72,10 +72,10 @@ Za pomocą programu Finance and Operations można wizualizować i modyfikować p
 ## <a name="limitations"></a>Ograniczenia
 Prognozowanie popytu w programie Finance and Operations to narzędzie, które pomaga odbiorcom w przemyśle wytwórczym tworzyć procesy prognozowania. Oferuje podstawowe funkcje rozwiązania do prognozowania i jest zaprojektowane w taki sposób, że może być łatwo rozszerzone. Prognozowanie popytu nie musi być najlepszym narzędziem dla odbiorców w takich branżach, jak handel detaliczny, handel hurtowy, magazynowanie, transport lub inne usługi profesjonalne.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Ustawianie prognozowania popytu](demand-forecasting-setup.md)
+[Ustawienia prognozowania popytu](demand-forecasting-setup.md)
 
 [Generowanie bazowej prognozy statystycznej](generate-statistical-baseline-forecast.md)
 

@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a56e6ea0a8470f205b1c74379c887c0cac85a6b4
-ms.openlocfilehash: c290bcd4787144fb4dd4232c06d2fb9e1e67ca3e
+ms.sourcegitcommit: ac7754bd6361ad74f7ab4d564ae3114dd4b9f165
+ms.openlocfilehash: caf801ea27ade63c24bb0907313e7f8294c50702
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 04/26/2018
 
 ---
 
@@ -53,13 +53,13 @@ Aby importować dane katalogu dostawcy, należy wykonać następujące zadania:
 
 6.  Przekaż plik CMR.
 
-7.  Przejrzyj i zatwierdź lub odrzuć produkty w katalogu dostawcy. Produkty zostaną automatycznie zamapowane na kategorii zaopatrzenia w programie Dynamics 365 for Finance and Operations. 
+7.  Przejrzyj i zatwierdź lub odrzuć produkty w katalogu dostawcy. Produkty zostaną automatycznie zamapowane na kategorie zaopatrzenia w programie Dynamics 365 for Finance and Operations. 
     
 Zatwierdzone produkty są dodawane do produktu głównego i zwalniane dla wybranych firm. Do katalogu zaopatrzenia można dodawać tylko zatwierdzone produkty.
 
 ## <a name="generate-a-catalog-import-file-template"></a>Generowanie szablonu pliku importu katalogu
 
-Szablon pliku importu katalogu jest plikiem standardu branżowego XSD służącym do utworzenia pliku CMR dla produktów dostawcy. Plik CMR można służyć do utworzenia nowego katalogu lub zastąpienia czy zmodyfikowania istniejącego katalogu.
+Szablon pliku importu katalogu jest plikiem XSD służącym do utworzenia pliku CMR dla produktów dostawcy. Plik CMR można służyć do utworzenia nowego katalogu lub zastąpienia czy zmodyfikowania istniejącego katalogu.
 
 1.  Wybierz kolejno opcje **Zaopatrzenie i sourcing** \> **Katalogi** \> **Katalogi dostawców** i kliknij dwukrotnie katalog, na którym chcesz pracować.
 

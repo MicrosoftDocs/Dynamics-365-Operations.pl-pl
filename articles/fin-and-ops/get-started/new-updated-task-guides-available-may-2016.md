@@ -18,20 +18,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c301f27504f7f1545608bb214a4f1b4d4cecc47f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 237ff2935ab8e2dee90bd716179b45c5fca455c3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-may-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy. 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z maja 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX
 ------------------------------------------------------------------------------------------------
 
 Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji systemu Microsoft Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach zamieszczone w ujednoliconej bibliotece APQC z lutego 2016 r. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md). <strong>Uwaga:</strong> Znak gwiazdki (<strong>\</strong>*) obok tytułu wiersza narzędzia do modelowania procesów biznesowych (BPM) wskazuje, że przewodnik po zadaniach dla tego procesu biznesowego został utworzony dla aktualizacji systemu Dynamics AX z maja 2016 r. i nie jest obsługiwany we wcześniejszych wersjach systemu Microsoft Dynamics AX.
@@ -186,7 +186,7 @@ Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, 
 |                  Konfigurowanie ograniczeń transportu towaru                   |     Globalna     |
 |                <strong>\</strong>*Konfigurowanie zasad pracy magazynowej                 |     Globalna     |
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)

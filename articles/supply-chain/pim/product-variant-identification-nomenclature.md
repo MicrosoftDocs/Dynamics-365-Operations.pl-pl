@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 6a620f2a0105d578d419d3aac816c7d78fbf3e46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3baf1d7313d8ff03ae5ece035b6f3641c0f1d707
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Nazewnictwo numerów i nazw wariantów produktu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano sposób ustawiania nazewnictwa numerów produktów w celu zastąpienia stałego formatu [numer produktu głównego — konfiguracja — rozmiar — kolor — styl numeracji] format. Nowe nazewnictwo ma format docelowy zawierający numer produktu głównego, aktywne wymiary produktu i separatory tekstu wybrane przez użytkownika. Można też ustalić zasady nazewnictwa dla nazw produktów. Można ponadto skonstruować konwencję nazewnictwa do identyfikowania konfiguracji, które są tworzone przez konfigurator produktów oparty na ograniczeniach. Te konwencje nazewnictwa mogą zawierać atrybuty wybrane przez użytkownika.
 
@@ -192,10 +192,10 @@ W zależności od nazewnictwa system może próbować przypisać nieunikatowy nu
 
 Podczas jednego kroku procesu konfiguracji system proponuje wartość konfiguracji zgodną z konwencją nazewnictwa. W tym kroku można ręcznie zmienić wartość konfiguracji. Podczas zapisywania konfiguracji system sprawdza, czy wartość konfiguracji jest unikatowa. Jeśli wprowadzona wartość nie jest unikatowa, pojawi się komunikat o błędzie. Aby zapisać konfigurację, należy wprowadzić niepowtarzalną wartość konfiguracji.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Tworzenie nazewnictwa numerów produktu dla wstępnie zdefiniowanych wariantów produktu](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
+[Tworzenie konwencji nazewnictwa numerów produktów dla wstępnie zdefiniowanych wariantów produktu](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 
 [Tworzenie konwencji nazewnictwa numerów produktu dla skonfigurowanych wariantów produktu](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 

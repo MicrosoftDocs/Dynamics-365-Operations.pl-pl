@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 854240bef9d6193c8f0f608687b68e6842fe272c
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: 933d9755085d507310dd46d96a492d2124647ec3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -230,7 +230,47 @@ Aby działała integracja zleceń pracy, trzeba skonfigurować pochodzenie sprze
 6. W polu **Typ pochodzenia sprzedaży** ustaw wartość **Integracja zlecenia**.
 7. Wybierz opcję **Zapisz**.
 
-### <a name="template-mapping-in-data-integration"></a>Mapowanie szablonu w integracji danych
 
-(Wkrótce)
+### <a name="setup-in-data-integration"></a>Konfiguracja w narzędziu Integracja danych.
+
+Upewnij się, istnieje wartość **Klucz integracji** dla jednostki **msdyn_workorders**
+1. Przejdź do narzędzia Integracja danych.
+2. Wybierz kartę **Zestaw połączeń**.
+3. Wybierz zestaw połączeń używany do synchronizacji zleceń pracy.
+4. Wybierz kartę **Klucz integracji**.
+5. Znajdź jednostkę msdyn_workorders i sprawdź, czy został dodany klucz **msdyn_name (numer zlecenia pracy)**. Jeśli nie jest widoczny, dodaj go, klikając opcję **Dodaj klucz**, a następnie opcję **Zapisz** u góry strony.
+
+## <a name="template-mapping-in-data-integration"></a>Mapowanie szablonu w integracji danych
+
+Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja danych.
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderheader"></a>Zlecenia pracy na zamówienia sprzedaży (Field Service na Fin and Ops): WorkOrderHeader
+
+Filtr: (msdyn_systemstatus ne 690970005) i (msdyn_systemstatus ne 690970000) i (msdynce_hasexternallymaintainedproductsonly eq true)
+
+[![Mapowanie szablonu w integracji danych](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineestimate"></a>Zlecenia pracy na zamówienia sprzedaży (Field Service na Fin and Ops): WorkOrderServiceLineEstimate
+
+Filtr: (msdynce_headersystemstatus ne 690970005) i (msdynce_headersystemstatus ne 690970000) i (msdynce_orderhasexternalmaintainedproductsonly eq true) i (msdyn_linestatus eq 690970000) i (msdynce_headersystemstatus ne 690970004)
+
+[![Mapowanie szablonu w integracji danych](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineused"></a>Zlecenia pracy na zamówienia sprzedaży (Field Service na Fin and Ops): WorkOrderServiceLineUsed
+
+Filtr: (msdynce_headersystemstatus ne 690970005) i (msdynce_headersystemstatus ne 690970000) i (msdynce_orderhasexternalmaintainedproductsonly eq true) i ((msdyn_linestatus eq 690970001) lub (msdynce_headersystemstatus eq 690970004))
+
+[![Mapowanie szablonu w integracji danych](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineestimate"></a>Zlecenia pracy na zamówienia sprzedaży (Field Service na Fin and Ops): WorkOrderProductLineEstimate
+
+Filtr: (msdynce_headersystemstatus ne 690970005) i (msdynce_headersystemstatus ne 690970000) i (msdynce_orderhasexternalmaintainedproductsonly eq true) i (msdyn_linestatus eq 690970000) i (msdynce_headersystemstatus ne 690970004) i (msdyn_allocated eq true)
+
+[![Mapowanie szablonu w integracji danych](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineused"></a>Zlecenia pracy na zamówienia sprzedaży (Field Service na Fin and Ops): WorkOrderProductLineUsed
+
+Filtr: (msdynce_headersystemstatus ne 690970005) i (msdynce_headersystemstatus ne 690970000) i (msdynce_orderhasexternalmaintainedproductsonly eq true) i ((msdyn_linestatus eq 690970001) lub (msdynce_headersystemstatus eq 690970004) lub (msdyn_allocated ne true))
+
+[![Mapowanie szablonu w integracji danych](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 

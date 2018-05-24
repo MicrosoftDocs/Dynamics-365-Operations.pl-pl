@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1176ce1fcd406cf363969e60ae388a83d7df210f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2985e58bd308295e1f698c391f57fc3d116835bd
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="standard-cost-conversion-overview"></a>Omówienie konwersji na koszt standardowy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera omówienie procesu ułatwiające konfigurowanie i wykonywanie konwersji na koszt standardowy. Podane kroki należy wykonać po spełnieniu warunków wstępnych konwersji na koszt standardowy. 
 
@@ -96,7 +96,7 @@ Raport **Sprawozdanie z analizy odchyleń** umożliwia analizowanie odchyleń pr
 -   Przeanalizuj przesunięcia magazynowe z datą wsteczną. Korzystając z raportu **Wartość zapasów**, wyświetl przesunięcia magazynowe z datami wstecznymi wprowadzone po konwersji. Ustawienia raportu Od dnia i Do dnia powinny odpowiadać dacie początkowej przejścia i datę konwersji minus jeden dzień. Kryteria wyboru dla raportu powinny być zgodne z przekonwertowanymi towarami. W raporcie zostaną wyświetlone przesunięcia magazynowe wykonane według kosztu standardowego w trakcie okresu przejściowego.
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Wymagania wstępne dotyczące konwersji na koszt standardowy](prerequisites-standard-cost-conversion.md)

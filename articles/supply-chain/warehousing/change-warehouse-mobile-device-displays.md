@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b16f4ea27f406f3d5d5957670bd32a73d2d55529
-ms.openlocfilehash: bb616f8102c67db3f8c3e872101d61657b6b64d1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a1413337888c8e2da95e33ebee6528f228ad3972
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="warehouse-mobile-device-display-settings"></a>Ustawienia wyświetlania urządzenia przenośnego używanego w magazynie
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano konfigurowanie wyglądu ekranu urządzenia przenośnego oraz mapowanie skrótów klawiaturowych na formanty takie jak przyciski. 
 
@@ -97,7 +97,7 @@ Każde wyrażenie podrzędnego wymaga jednej lub dwóch cyfr na dzień i miesią
 
 Można określić więcej niż jedno wyrażenie w tym samym pliku. Każde wyrażenie musi być w osobnym wierszu. Do analizowania daty używane jest pierwsze wyrażenie, które zostanie dostosowane.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Konfiguracja urządzeń przenośnych do pracy w magazynie](configure-mobile-devices-warehouse.md)

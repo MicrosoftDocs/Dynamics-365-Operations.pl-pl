@@ -19,16 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ddb035eaa496a7c84f117f0523d509eccdf58505
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9da40e90982d9d4aca38890ed121782f4236712d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cycle-counting"></a>Inwentaryzacja ciągła
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano sposób używania inwentaryzacji ciągłej w aplikacji magazynowej dostępnej w module zarządzania magazynem. Artykuł nie ma zastosowania do aplikacji magazynowej zawartej w module zarządzania zapasami.
 
@@ -136,7 +136,7 @@ Różnice w inwentaryzacji ciągłej występują w następujących scenariuszach
 
 Na stronie **Inwentaryzacja cykliczna oczekuje na przegląd** można uzgodnić różnice zliczonej wartości, a następnie zaakceptować zliczoną wartość. Na stronie **Dostępne zapasy według lokalizacji** można zweryfikować zmodyfikowane obliczenie ilości towaru. Zliczona wartość jest odrzucana, jeśli różnicy nie można zatwierdzić.
 
-## <a name="see-also"></a>Informacje dodatkowe
+## <a name="additional-resources"></a>Dodatkowe zasoby
 [Konfigurowanie urządzeń przenośnych do pracy w magazynie](configure-mobile-devices-warehouse.md)
 
 

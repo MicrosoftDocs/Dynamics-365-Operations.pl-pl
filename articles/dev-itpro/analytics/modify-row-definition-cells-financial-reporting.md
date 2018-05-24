@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3131173e10ff7eefeaca18285054ce2312d7ab57
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 23b8e0b51f63ecabc704a2fc5b3ebafe657b52f6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Modyfikowanie komórek definicji wiersza
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano informacje, które są wymagane dla każdej komórki w definicji wiersza w raporcie finansowym, oraz wyjaśniono, jak wprowadzić te informacje. 
 
@@ -488,10 +488,10 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 1.  W Projektancie raportów otwórz definicję wierszy, kolumn lub drzewa, którą chcesz zmodyfikować.
 2.  W menu **Edycja** kliknij **Zarządzaj zestawami wartości wymiarów**.
 3.  W oknie dialogowym **Zarządzanie zestawami wartości wymiarów** w polu **Wymiar** wybierz typ wymiaru.
-4.  Wybierz zestaw do usunięcia, a następnie kliknij **Usuń**. Kliknij **Tak**, aby trwale usunąć zestaw wartości wymiaru.
+4.  Wybierz zestaw, który chcesz usunąć, a następnie kliknij przycisk **Usuń**. Kliknij przycisk **Tak**, aby trwale usunąć zestaw wartości wymiaru.
 
 
-## <a name="see-also"></a>Informacje dodatkowe
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raporty finansowe](financial-reporting-intro.md)
 

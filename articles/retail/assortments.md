@@ -3,27 +3,28 @@ title: "Zarządzanie asortymentem"
 description: "W tym temacie wyjaśniono podstawowe pojęcia dotyczące zarządzania asortymentem w programie Microsoft Dynamics 365 for Retail oraz omówiono różne opcje projektu wdrożenia."
 author: jblucher
 manager: AnnBe
-ms.date: 3/12/2018
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application user
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
 ms.translationtype: HT
-ms.sourcegitcommit: 44b0c4e39ac7410d27ce531c898bb8c423af334a
-ms.openlocfilehash: 303f86d6a57e039cb51700744697949845239b10
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="assortment-management"></a>Zarządzanie asortymentem
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Przegląd
 Program Microsoft Dynamics 365 for Retail zawiera funkcję *asortymentów*, która pozwala zarządzać dostępnością produktów w różnych kanałach. Asortymenty decydują, które produkty są dostępne w konkretnych sklepach i okresach.
@@ -35,25 +36,25 @@ Całościowa kombinacja produktów w kanale zależy od opublikowanych asortyment
 ### <a name="basic-assortment-setup"></a>Podstawowa konfiguracja asortymentu
 W poniższym przykładzie dla każdego sklepu jest konfigurowany unikatowy asortyment. W tym przypadku tylko produkt 1 jest dostępny w sklepie 1 oraz tylko produkt 2 jest dostępny w sklepie 2.
 
-![Każdy produkt jest dostępny w jednym sklepie](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure1.png?raw=true "Każdy produkt jest dostępny w jednym sklepie")
+![Każdy produkt jest dostępny w jednym sklepie](./media/Managing-assortments-figure1.png)
 
 Aby produkt 2 był dostępny w sklepie 1, można dodać ten produkt do asortymentu 1.
 
-![Produkt 2 dodany do asortymentu 1](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure2.png?raw=true "Produkt 2 dodany do asortymentu 1")
+![Produkt 2 dodany do asortymentu 1](./media/Managing-assortments-figure2.png)
 
 Alternatywnie można dodać sklep 1 do asortymentu 2.
 
-![Sklep 1 dodany do asortymentu 2](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure3.png?raw=true "Sklep 1 dodany do asortymentu 2")
+![Sklep 1 dodany do asortymentu 2](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Hierarchie organizacyjne
 W sytuacjach, gdzie ten sam produkt jest sprzedawany w różnych kanałach, asortymenty można skonfigurować za pomocą hierarchii organizacyjnej Asortyment sieci sprzedaży. Podczas dodawania węzłów z tej hierarchii zostaną uwzględnione wszystkie kanały istniejące w tym węźle i jego węzłach podrzędnych.
 
-![Hierarchia organizacyjna](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure4.png?raw=true "Hierarchia organizacyjna")
+![Hierarchia organizacyjna](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Kategorie produktów
 Podobnie po stronie produktu można dołączyć grupy produktów, używając hierarchii kategorii produktów. Można skonfigurować asortymenty, dodając jeden lub więcej węzłów hierarchii kategorii. W takim przypadku asortyment będzie obejmował wszystkie produkty z tego węzła kategorii i jego węzłów podrzędnych.
 
-![Kategorie produktów](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure5.png?raw=true "Kategorie produktów")
+![Kategorie produktów](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Wykluczone produkty i kategorie
 Poza włączaniem produktów i kategorii do asortymentów można także użyć opcji Wyklucz, aby wskazać konkretne produkty lub kategorii, które nie powinny się znaleźć w asortymentach. W poniższym przykładzie chcesz dołączyć wszystkie produkty do wybranej kategorii, z wyjątkiem produktu 2. W takim wypadku nie trzeba definiować asortymentu produkt po produkcie ani tworzyć dodatkowych węzłów kategorii. Zamiast tego można po prostu dodać kategorię, ale wykluczyć określony produkt.
@@ -61,7 +62,7 @@ Poza włączaniem produktów i kategorii do asortymentów można także użyć o
 > [!NOTE]
 > Jeśli produkt jest z definicji zarówno dołączony, jak i wykluczony z jednego lub więcej asortymentów, zawsze będzie uznawany za wykluczony.
 
-![Wykluczony produkt](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure6.png?raw=true "Wykluczony produkt")
+![Wykluczone produkty](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Produkty globalne i zwolnione
 Asortymenty są definiowane na poziomie globalnym i mogą zawierać kanały z wielu firm. Produkty i kategorie zawarte w asortymentach również są współużytkowane przez firmy. Jednak produkt musi zostać zwolniony, zanim będzie go można faktycznie sprzedać, zamówić, policzyć lub przyjąć w kanale (na przykład w aplikacji punktu sprzedaży \[POS\]). W związku z tym mimo że dwa sklepy w różnych firmach mogą mieć wspólny asortyment zawierający te same produkty, produkty będą dostępne tylko wtedy, gdy zostaną zwolnione do tych firm.

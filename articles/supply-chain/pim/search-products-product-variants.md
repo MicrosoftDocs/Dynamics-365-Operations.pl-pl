@@ -1,6 +1,6 @@
 ---
 title: "Wyszukiwanie produktów i wariantów produktów podczas wprowadzania zamówień"
-description: "Za pomocą pola <strong>Numer pozycji</strong> można szukać produktów i wariantów produktów podczas ręcznego tworzenia wiersza zamówienia sprzedaży lub zakupu.  Dzięki temu można szybko znaleźć warianty produktu, gdy znasz tylko fragment konfiguracji lub jeden wymiar produktu."
+description: "Za pomocą pola **Numer pozycji** można szukać produktów i wariantów produktów podczas ręcznego tworzenia wiersza zamówienia sprzedaży lub zakupu. Dzięki temu można szybko znaleźć warianty produktu, gdy znasz tylko fragment konfiguracji lub jeden wymiar produktu."
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
@@ -20,20 +20,20 @@ ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2441f7cbf95512677f62eb862be99af90f3c4b17
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d6a45d89ba20994c06a77c646fa5099fa34b3b2e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Wyszukiwanie produktów i wariantów produktów podczas wprowadzania zamówień
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [Retail name](../includes/retail-name.md)]
+[!include [Retail name](../includes/retail-name.md)]
 
-Za pomocą pola <strong>Numer pozycji</strong> można szukać produktów i wariantów produktów podczas ręcznego tworzenia wiersza zamówienia sprzedaży lub zakupu.  Dzięki temu można szybko znaleźć warianty produktu, gdy znasz tylko fragment konfiguracji lub jeden wymiar produktu.
+Za pomocą pola **Numer pozycji** można szukać produktów i wariantów produktów podczas ręcznego tworzenia wiersza zamówienia sprzedaży lub zakupu.  Dzięki temu można szybko znaleźć warianty produktu, gdy znasz tylko fragment konfiguracji lub jeden wymiar produktu.
 
 Czasami posiadanie zbyt dużo czegoś jest utrudnieniem zamiast ułatwieniem. Szczególnie dotyczy to sytuacji, gdy sprzedajesz wiele produktów podobnych do siebie, i próbujesz zapamiętać numery towarów lub aliasy produktów w celu odnalezienia właściwych produktów do umieszczenia w zamówieniu sprzedaży. Jako pola wyszukiwania można użyć pola **Numer pozycji** w wierszu zamówienia sprzedaży lub wierszu zamówienia zakupu. Można wprowadzić dowolną część nazwy, numeru lub wymiaru produktu i uzyskać odnośnik pokazujący listę wszystkich towarów pasujących do szukanego słowa.
 
@@ -47,7 +47,7 @@ Podczas wyszukiwania produktów lub wariantów produktów trzeba wiedzieć, jak 
 
 ### <a name="examples"></a>Przykłady
 
-W poniższych przykładach użyto produktów i wariantów produktów w celu zilustrowania działania funkcji wyszukiwania w różnych scenariuszach. **Warunki wstępne:**  W ustawieniu **Sprzedaż i marketing &gt; Ustawienia &gt; Wyszukiwanie &gt; Parametry wyszukiwania** &gt; **Typ wyszukiwania** zaznacz wartość **Pełne dopasowanie**.
+W poniższych przykładach użyto produktów i wariantów produktów w celu zilustrowania działania funkcji wyszukiwania w różnych scenariuszach. **Warunki wstępne:**  W ustawieniu **Sprzedaż i marketing &gt; Ustawienia &gt; Wyszukiwanie &gt; Parametry wyszukiwania &gt; Typ wyszukiwania** zaznacz wartość **Pełne dopasowanie**.
 
 | Typ produktu     | Nazwa produktu    | Wyświetlany numeru produktu | Numer towaru | Konfiguracja |
 |------------------|-----------------|------------------------|-------------|---------------|
@@ -72,7 +72,7 @@ Przykładami identyfikatorów i wymiarów produktów i wariantów produktów, kt
 
 Przejdź do strony **Sprzedaż i marketing &gt; Ustawienia &gt; Wyszukiwanie &gt; Kryteria wyszukiwania**. Na stronie **Kryteria wyszukiwania** można określić kryteria dotyczące odbiorcy, prospekta i wyszukiwania produktów. Upewnij się, że strona jest filtrowana przy użyciu kryteriów wyszukiwania produktów. Można to zrobić, przełączając na widok **Produkt** w menu strony.  
 
-Aby do kryteriów wyszukiwania dodać wyświetlany numer produktu, w menu strony kliknij przycisk <strong>Nowy</strong>. Spowoduje to dodanie nowego rekordu w siatce <strong>Kryteria wyszukiwania</strong>. Otwórz odnośnik kolumny <strong>Nazwa pola</strong> i wybierz opcję <strong>DisplayProductNumber</strong>. Aby do kryteriów wyszukiwania dodać konfigurację produktu, utwórz nowy rekord w siatce <strong>Kryteria wyszukiwania** i wybierz opcję **configId</strong> w kolumnie <strong>Nazwa pola</strong>. W ten sam sposób utwórz rekord z <strong>Nazwa pola</strong> > <strong>InventColorId</strong> dla wymiaru koloru, <strong>InventSizeId</strong> dla wymiaru rozmiaru i <strong>InventStyleId</strong> dla wymiaru stylu.
+Aby do kryteriów wyszukiwania dodać wyświetlany numer produktu, w menu strony kliknij przycisk **Nowy**. Spowoduje to dodanie nowego rekordu w siatce **Kryteria wyszukiwania**. Otwórz odnośnik kolumny **Nazwa pola** i wybierz opcję **DisplayProductNumber**. Aby do kryteriów wyszukiwania dodać konfigurację produktu, utwórz nowy rekord w siatce **Kryteria wyszukiwania** i wybierz opcję **configId** w kolumnie **Nazwa pola**. W ten sam sposób utwórz rekord z **Nazwa pola** > **InventColorId** dla wymiaru koloru, **InventSizeId** dla wymiaru rozmiaru i **InventStyleId** dla wymiaru stylu.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Krok 2: Wypełnienie tabeli bazy danych używanej do wyszukiwania produktów
 

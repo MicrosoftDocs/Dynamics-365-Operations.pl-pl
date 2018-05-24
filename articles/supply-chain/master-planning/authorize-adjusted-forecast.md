@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5ce38e94ae4c7b28b4e182018add7c046f685e46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 64838fd20349c21bf3c0a3b9a3c68d4f19f60745
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="authorize-an-adjusted-forecast"></a>Autoryzowanie skorygowanej prognozy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Nie wszystkie prognozy muszą być autoryzowane natychmiast. W tym artykule wyjaśniono, jak można określić okres, dla którego prognoza jest autoryzowana. Opisano również, jak można autoryzować prognozę dla konkretnych firm i modeli prognozy.
 
@@ -43,7 +43,7 @@ Można wybrać firmy i modele prognozy do autoryzacji prognozy w celu jej użyci
 
 Bardzo ważne jest, aby zrozumieć, jak działa pole wyboru **Zapisz korekty ręczne podstawowej prognozy popytu**. Wprowadzenie ręcznych zmian w bazowej prognozie popytu sprawia, że skorygowane wartości są autoryzowane do użycia, nawet wtedy, gdy to pole wyboru nie jest zaznaczone. Zmiany zostaną jednak odrzucone po autoryzacji. Dlatego przy następnym wygenerowaniu prognozy jest ona jedynie danymi statycznymi i nie zawiera żadnych zmian wprowadzonych ręcznie, nawet jeśli opcja **Przenieś ręczne korekty prognozy popytu** jest zaznaczona. Dlatego pole wyboru **Zapisz korekty ręczne podstawowej prognozy popytu** należy traktować jako sposób odrzucania wszystkich zmian wprowadzonych ręcznie.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Wprowadzanie ręcznych korekt prognozy bazowej](manual-adjustments-baseline-forecast.md)

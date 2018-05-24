@@ -18,16 +18,16 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 911996f9d1854f027f5085725538bd87ba307c25
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7bb152334b3b06c86dff024d0e99aea9bb452deb
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cloud-and-on-premises-feature-comparison"></a>Porównanie funkcji w chmurze i lokalnych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie określono, czy dana funkcja jest dostępna w tych produktach:
 
@@ -128,7 +128,7 @@ W poniższej tabeli wymieniono zakresy produktów. Obsługa w chmurze i lokalnie
 |---|---|---|---|
 | Wszystkie obszary rozwiązania Talent | Wszystkie funkcje rozwiązania Talent | Tak | Nr |
 
-## <a name="see-also"></a>Informacje dodatkowe
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Funkcje niezaimplementowane we wdrożeniach lokalnych](features-not-implemented-on-prem.md)
 

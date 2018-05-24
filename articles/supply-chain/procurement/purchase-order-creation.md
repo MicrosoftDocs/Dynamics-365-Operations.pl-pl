@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 22264f0d82844e63bc7fc42705184c6ecc27e28d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c71ce3045bd91a136288016cb55b460f7ac787ae
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-purchase-orders"></a>Tworzenie zamówień zakupu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 W tym artykule opisano proces i opcje ręcznego tworzenia zamówienia zakupu.
 
@@ -86,7 +86,7 @@ Zamówienia zakupu można skonfigurować tak, aby środki budżetu zostały przy
 
 Może wystąpić konieczność opóźnienia finalizacji zamówienia zakupu. Na przykład mogą być potrzebne dodatkowe informacje o produktach lub usługach lub może zajść potrzeba uzyskania autoryzacji na wydatek. Istnieje kilka sposobów wstrzymania zamówienia. Na przykład można poczekać z potwierdzeniem zamówienia. Alternatywnie, jeśli jest stosowany przepływ pracy zarządzania zmianami, nie przesyłaj zamówienia do zatwierdzenia. Jeśli należy zablokować wszystkie zamówienia dla konkretnego dostawcy, można również oznaczyć dostawcę w jego danych głównych jako **Wstrzymane** w zakresie przetwarzania. Istnieją okoliczności, które mogą uniemożliwić przetwarzanie zamówienia. Na przykład przetwarzanie może być niemożliwe, jeśli przekroczono limity kredytowe lub jeżeli wymagane środki budżetowe nie są dostępne.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Omówienie zamówień zakupu](purchase-order-overview.md)

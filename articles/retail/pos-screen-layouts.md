@@ -20,16 +20,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad425ab0848ab04003b7378cb5c488650f01c441
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9082c156fde52aa0c822f8e4753de816f8cc0558
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-screen-layouts-for-pos"></a>Konfigurowanie układów ekranu dla punktu sprzedaży
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ten temat zawiera informacje dotyczące układów ekranu dla aplikacji Microsoft Dynamics 365 for Retail Point of Sale (POS).
 
@@ -91,10 +91,10 @@ Każdy rozmiar układu w układzie ekranu musi być skonfigurowany przy użyciu 
 
 **Rekomendowane produkty** — Jeśli formant rekomendowanych produktów zostanie skonfigurowany dla środowiska, będzie wyświetlał sugestie produktów przy użyciu mechanizmu uczenia maszynowego. Formant rekomendowanych produktów jest dostępny tylko w pełnych układach w programie Dynamics 365 for Retail w wersji 1611. **Formant niestandardowy**— Formant niestandardowy pełni rolę symbolu zastępczego w układzie ekranu, pozwalając użytkownikom rezerwować miejsce na niestandardową zawartość. Formant niestandardowy jest dostępny tylko w pełnych układach.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Instalowanie projektanta układu programu Retail POS](install-pos-layout-designer.md)
+[Instalowanie projektanta układów aplikacji Retail POS](install-pos-layout-designer.md)
 
 
 

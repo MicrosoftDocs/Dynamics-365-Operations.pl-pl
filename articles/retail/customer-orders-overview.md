@@ -20,16 +20,16 @@ ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ce6774ede836eb29e6ef2cd8d4baa9efb931020c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f46cf7d4df4a8cb0ad1846882292965aa492239b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="customer-orders-overview"></a>Omówienie zamówień odbiorców
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ten temat zawiera informacje o funkcjonalności zamówień odbiorców w programie Retail Modern POS (MPOS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Temat przedstawia powiązane parametry i przepływy transakcji.
 
@@ -95,7 +95,7 @@ Zamówienia odbiorców mogą być tworzone w aplikacji klienckiej punktu sprzeda
 
 Gdy opcja **Utwórz zamówienie odbiorcy w trybie asynchronicznym** jest ustawiona na **Tak**, zamówienia odbiorców są zawsze tworzone w trybie asynchronicznym, nawet jeśli jest dostępna usługa Retail Transaction Service (RTS). Jeśli ustawisz tę opcję na **Nie**, zamówienia odbiorców są zawsze tworzone w trybie synchronicznym przy użyciu usługi RTS. Po utworzeniu zamówień odbiorców w trybie asynchronicznym są one pobierane i wstawiane do modułu Handel detaliczny przez zadania ściągania (P). Odnośne zamówienia sprzedaży są tworzone w module Handel detaliczny podczas wykonywania operacji **Synchronizuj zamówienia** ręcznie lub w procesie wsadowym.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Hybrydowe zamówienia odbiorców](hybrid-customer-orders.md)

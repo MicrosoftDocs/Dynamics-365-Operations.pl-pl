@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 31308e64d4871a4d09540df16fdcd02cc83bd0be
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4f3905f364ea67eab226323fd3450ebed30e4735
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="order-entry-deadlines"></a>Terminy realizacji zamówień
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o terminach wprowadzania zamówień. Termin wprowadzania zamówień to graniczny czas decydujący o tym, czy zamówienie klienta jest traktowane (i realizowane) tak jakby zostało odebrany w dniu bieżącym lub następnym.
 
@@ -103,7 +103,7 @@ W następującej tabeli pokazano terminy wprowadzania zamówień obu oddziałów
 
 **Uwaga:** w przypadku zmiany czasu z zimowego na letni i na odwrót terminy wprowadzania zamówień są odpowiednio korygowane.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Harmonogramy dostaw](delivery-schedules.md)

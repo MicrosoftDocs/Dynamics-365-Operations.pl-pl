@@ -18,16 +18,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3db07708df55c24108c66797885318486b2b1003
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7708c8e091ef561c1a4205a1424a51d51d05002f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-november-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z listopada 2016 r. — wszystkie języki) dla programu Microsoft Dynamics 365 for Operations. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
 
@@ -587,7 +587,7 @@ Ujednolicona biblioteka APQC (z listopada 2016 r. — wszystkie języki) zawiera
 |                       Konfigurowanie automatycznego uzgadniania frachtu                       |     Globalna     |
 |              <strong>\</strong>*Konfigurowanie zmiany alokacji pozycji na potrzeby pobierania w niedomiarze              |     Globalna     |
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)

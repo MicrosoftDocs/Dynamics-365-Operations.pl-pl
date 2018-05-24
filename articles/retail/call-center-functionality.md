@@ -3,7 +3,7 @@ title: "Funkcje biura obsługi"
 description: "Ten temat zawiera omówienie funkcji biura obsługi dostępnych w programie Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,35 +20,43 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
-ms.openlocfilehash: 75dc09ffc84ef8ec48f50ea410974c99aabc212e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e85b65e116b32adca09e46252d7d3bbe5101e1cf
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="call-center-functionality"></a>Funkcje biura obsługi
+# <a name="call-center"></a>Biuro obsługi 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-Ten artykuł zawiera omówienie funkcji biura obsługi dostępnych w programie Microsoft Dynamics 365 for Retail.
+W programie Dynamics 365 for Retail biuro obsługi jest typem kanału sprzedaży detalicznej, który można zdefiniować w aplikacji. Zdefiniowanie określonego kanału dla jednostek biura obsługi umożliwi systemowi łączenie określonych domyślnych wartości danych i domyślnych ustawień przetwarzania zamówień z zamówieniami sprzedaży tworzonymi przez użytkownika w kanale biura obsługi.
 
-Program Dynamics 365 for Retail obsługuje też biura obsługi jako typ kanału sieci sprzedaży. W biurze obsługi pracownicy przyjmują zamówienia od odbiorców przez telefon i tworzą zamówienia sprzedaży. Funkcja centrum obsługi zawiera funkcje, które zostały zaprojektowane z myślą o ułatwieniu zbierania zamówień teleficznych i obsługi klienta w trakcie procesu realizacji zamówienia. Na przykład pracownicy biura obsługi mogą wprowadzać informacje o płatności bezpośrednio do zamówienia sprzedaży i mogą wyświetlać szczegółowe podsumowanie opłat i płatności przed przesłaniem zamówienia. Pracownicy mogą też kontrolować proces wyceny i mają dostęp do różnych danych o odbiorcach, produktach oraz cenach ze strony **Zamówienie sprzedaży**. Oprócz tego biura obsługi mają też rozszerzoną funkcję śledzenia historii i stanu zamówień odbiorcy. Każde biuro obsługi może mieć własnych użytkowników, metody płatności, grupy cenowe, wymiary finansowe oraz metody dostawy. Opcje te można konfigurować podczas tworzenia biura obsługi. Dodatkowo na stronie **Biuro obsługi** można włączyć lub wyłączyć następujące grupy funkcji, które są unikatowe dla biur obsługi:
+Funkcje biura obsługi obejmują zaawansowane konfigurowanie cen detalicznych i promocji, katalogi, karty upominkowe, programy lojalnościowe i kupony. Zamówienia z biura obsługi są również wykorzystywane przez aplikację punktu sprzedaży (POS) do obsługi scenariuszy realizacji zamówień między kanałami.
 
--   **Kończenie zamówienia** — Ta grupa zawiera funkcje, które odnoszą się do płatności i kończenia zamówienia na stronie **Zamówienie sprzedaży**.
--   **Sprzedaż sterowana** — Ta grupa zawiera funkcje, które są powiązane z kodami źródłowymi, skryptami i żądaniami katalogu.
+Należy pamiętać, że o ile moduł biura obsługi może być wykorzystywany przez inne branże poza handlem detalicznym, obecna wersja funkcjonalności biura obsługi w aplikacji Dynamics 365 for Retail nie została zoptymalizowana do używania w scenariuszach przetwarzania zamówień firma-firma (B2B) ani w scenariuszach, gdzie zamówienia mają dużo wierszy sprzedaży. Zalecamy, aby użytkownicy, którzy chcą wykorzystywać funkcje biura obsługi do przetwarzania zamówień poza typowymi scenariuszami przetwarzania transakcji zawieranych bezpośrednio z klientami, poświęcili czas na adekwatne przetestowanie tych funkcji i sprawdzenie, czy spełniają one wymagania funkcjonalne i wydajnościowe.
 
-Jeśli włączysz te funkcje w ustawieniach biura obsługi, są one dostępne na stronie **Zamówienie sprzedaży** dla użytkowników, którzy są skojarzeni z biurem obsługi. Większość tych funkcji wymaga dodatkowych ustawień przed użyciem. Aby użytkownicy mogli tworzyć biura obsługi, trzeba ich dodać do biura obsługi jako użytkowników biura obsługi. Ten krok umożliwia obsługę konfiguracji i funkcji właściwych dla kanału biura obsługi. Oto kilka przykładów funkcji, które stają się dostępne:
+Moduł biura obsługi nie tylko pozwala tworzyć zamówienia, ale również oferuje przyjazną dla użytkownika aplikację obsługi klienta, która ułatwia znajdowanie kont odbiorców oraz przeglądanie wszystkich powiązanych danych i atrybutów zamówień odbiorców. Na ekranie obsługi klienta użytkownik może szybko przejść do danych powiązanych z zamówieniem, które pozwolą mu odpowiedzieć na pytania, jakie w sprawie zamówień najczęściej zadają odbiorcy.
 
--   Sprzedaż sterowana oferuje opcje konfiguracji dla skryptów telesprzedaży i obrazów produktów, ułatwiających pracę i wyświetlających wskazówki pracownikom sprzedaży przyjmującym zamówienia.
--   Nie można ukończyć zamówień dopóki pracownik sprzedaży nie zarejestruje co najmniej jednej metody płatności.
--   Można skonfigurować reguły sprzedaży dodatkowej i wiązanej, aby sprzedawcy widzieli monity dotyczące promocji określonych produktów.
--   Pracownicy sprzedaży mogą rejestrować kod źródłowy dla katalogu, z którego odbiorca zamawia.
--   Pracownicy sprzedaży mogą dodawać kupony sprzedawców detalicznych do zamówienia.
--   Pracownicy sprzedaży mogą sprzedawać programy ciągłości.
--   Zamówienia mogą być wstrzymywane ręcznie lub automatycznie, aby wskazać, że wymagane jest dodatkowe badanie, zanim będzie można przetworzyć zamówienie.
+Ta strona zawiera łącza do odnośnej dokumentacji związanej z instalacją, konfiguracją i merytorycznym użytkowaniem funkcji biura obsługi w programie Dynamics 365 for Retail.
 
+## <a name="configure-the-call-center"></a>Konfigurowanie biura obsługi
+[Konfigurowanie opcji przetwarzania zamówień](set-up-order-processing-options.md)
 
+## <a name="configure-order-processing"></a>Konfigurowanie przetwarzania zamówień
+[Konfigurowanie alertów o oszustwie](set-up-fraud-alerts.md)
+[Ręczne wstrzymania zamówień](work-with-order-holds.md)
 
+## <a name="configure-payment-processing"></a>Konfigurowanie przetwarzania płatności
+[Metody płatności w biurze obsługi](work-with-payments.md)
+
+## <a name="configure-direct-marketing"></a>Konfigurowanie marketingu bezpośredniego
+[Katalogi biura obsługi](call-center-catalogs.md)
+
+[Konfigurowanie analizy RFM](set-up-rfm-analysis.md)
+
+## <a name="configure-continuity-programs"></a>Konfigurowanie programów sprzedaży ciągłej
+[Konfigurowanie programu sprzedaży ciągłej dla biura obsługi](set-up-continuity-program.md)
 
 

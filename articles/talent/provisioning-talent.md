@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 343e372ad9e29372649e975a5bee16e8913b66c8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Inicjowanie oprogramowania Microsoft Dynamics 365 for Talent
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ten temat przeprowadzi użytkownika przez proces inicjacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 for Talent. Temat te opiera się na założeniu, że użytkownik dokonał zakupu aplikacji Talent u dostawcy rozwiązań chmurowych (CSP) lub w ramach umowy na architekturę przedsiębiorstwa (EA). Jeśli masz już licencję na oprogramowanie Microsoft Dynamics 365 uwzględniającą plan aplikacji Talent, a nie jesteś w stanie wykonać kroków opisanych w tym temacie, skontaktuj się z pomocą techniczną.
 
@@ -54,17 +54,18 @@ Po utworzeniu projektu LCS można zainicjować aplikację Talent w środowisku.
     > Aby wyświetlić istniejące środowiska lub utworzyć nowe, należy przypisać delegowanego administratora odpowiedzialnego za inicjację aplikacji Talent do licencji P2 środowiska PowerApps. Jeśli organizacja nie posiada licencji P2 środowiska PowerApps, można ją uzyskać u CSP lub ze [strony cennika środowiska PowerApps](https://powerapps.microsoft.com/en-us/pricing/).
 
 4. Wybierz opcję **Dodaj**, a następnie wybierz środowisko, w którym zostanie zainicjowana aplikacja Talent.
-5. Wybierz opcję **Tak**, aby zaakceptować warunki i rozpocząć wdrażanie.
+5. Zaznacz opcję „Dołącz dane demonstracyjne”, jeżeli chcesz, aby Twoje środowisko zawierało ten sam zestaw danych demonstracyjnych, jak używany w środowisku testowym aplikacji Talent.  Jest to korzystne w środowiskach długoterminowych demonstracji lub szkoleń, natomiast nigdy nie należy używać tej opcji w środowisku produkcyjnym.  Pamiętaj, że trzeba zaznaczyć tę opcję w trakcie początkowego wdrażania, ponieważ później nie można o nią zaktualizować istniejącego wdrożenia.
+6. Wybierz opcję **Tak**, aby zaakceptować warunki i rozpocząć wdrażanie.
 
     Nowe środowisko pojawi się na liście środowisk w okienku nawigacji po lewej stronie. Jednak nie można rozpocząć korzystania ze środowiska, dopóki stan wdrożenia nie zostanie zaktualizowany do **Wdrożony**. Ten proces zajmuje zwykle tylko kilka minut. Jeśli proces inicjowania obsługi się nie powiedzie, należy się skontaktować z pomocą techniczną.
 
-6. Aby skorzystać z nowego środowiska, wybierz opcję **Zaloguj się do rozwiązania Talent**.
+7. Aby skorzystać z nowego środowiska, wybierz opcję **Zaloguj się do rozwiązania Talent**.
 
 > [!NOTE]
 > Jeszcze przez spełnienie wymagań końcowych można wdrożyć wystąpienie testowe rozwiązania Talent w projekcie. Korzystając z tego wystąpienia, można testować swoje rozwiązanie do momentu sfinalizowania zakupu. W przypadku korzystania z nowego środowiska do testowania należy powtórzyć tę procedurę, aby utworzyć środowisko produkcyjne.
 
 > [!NOTE]
-> Środowiska rozwiązania Talent, których obsługa administracyjna jest inicjowana za pośrednictwem usługi LCS, nie zawierają danych demonstracyjnych skonfigurowanych dla zadań modułu Zasoby ludzkie (HR) ani specyficznych dla modułu Talent. Jeśli potrzebujesz środowiska, które zawiera dane demonstracyjne, zalecamy zasubskrybowanie bezpłatnego 60-dniowego [środowiska próbnego rozwiązania Talent](https://dynamics.microsoft.com/en-us/talent/overview/). Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Core HR. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Nie są one przeznaczone do używania jako środowiska produkcyjne. Należy zauważyć, że po wygaśnięciu wersji próbnej środowiska po upływie 60 dni wszystkie zawarte w niej dane są usuwane nie można ich odzyskać. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
+> Ponieważ w ramach subskrypcji usługi Talent są dozwolone tylko dwa środowiska LCS, można również rozważyć wykorzystanie bezpłatnego 60-dniowego [środowiska próbnego aplikacji Talent](https://dynamics.microsoft.com/en-us/talent/overview/). Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Core HR. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Nie są one przeznaczone do używania jako środowiska produkcyjne. Należy zauważyć, że po wygaśnięciu wersji próbnej środowiska po upływie 60 dni wszystkie zawarte w niej dane są usuwane nie można ich odzyskać. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
 
 ## <a name="select-a-powerapps-environment"></a>Wybieranie środowiska usługi PowerApps
 
@@ -104,35 +105,29 @@ Wykonaj poniższe instrukcje, aby uruchomić skrypt:
 
 1. Pobierz plik ProvisionCDSEnvironment.zip z następującej lokalizacji: [Skrypty inicjowania obsługi środowiska CDS](https://go.microsoft.com/fwlink/?linkid=870436)  
 
-2. Rozpakuj całą zawartość pliku ProvisionCDSEnviroinment.zip do folderu.
+2. W folderze pobranych plików kliknij prawym przyciskiem myszy właśnie pobrany plik ProvisionCDSEnvironment.zip i wybierz polecenie **Właściwości**.  Jeśli w dolnej części okna dialogowego znajduje się uwaga dotycząca zabezpieczeń z informacją „Ten plik pochodzi z innego komputera i może zostać zablokowany, aby pomóc chronić ten komputer”, zaznacz pole wyboru **Odblokuj**, następnie kliknij kolejno przyciski **Zastosuj** i **OK**.
 
-3. Uruchom program Windows PowerShell lub Windows PowerShell ISE jako administrator.
+3. Rozpakuj całą zawartość pliku ProvisionCDSEnviroinment.zip do folderu innego niż główny.
 
-   Przejdź do tematu [Ustawianie zasad wykonywania](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6), aby dowiedzieć się więcej o konfigurowaniu zasad wykonywania pozwalających na uruchamianie skryptów.
+4. Uruchom program Windows PowerShell lub Windows PowerShell ISE jako administrator.
+
+   Przejdź do tematu [Ustawianie zasad wykonywania](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6), aby dowiedzieć się więcej o konfigurowaniu zasad wykonywania pozwalających na uruchamianie skryptów. Sugerujemy wykonanie polecenia „Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process”, ale zastosuj się do zasad zabezpieczeń obowiązujących w firmie, a po zakończeniu zamknij okno programu PowerShell. 
   
-4. W programie PowerShell przejdź do folderu, w którym rozpakowano plik, i uruchom następujące polecenie, zastępując wartości zgodnie ze wskazówkami poniżej:
+5. W programie PowerShell przejdź do folderu, w którym rozpakowano plik, i uruchom następujące polecenie, zastępując wartości zgodnie ze wskazówkami poniżej:
  
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
    W miejsce **MyNewEnvironment** wpisz nazwę swojego środowiska. Ta nazwa będzie wyświetlana w usłudze LCS i widziana przez użytkowników podczas wybierania środowiska, które ma być stosowane dla aplikacji Talent. 
 
-   W miejsce **YourLocation** wpisz jeden z obsługiwanych regionów aplikacji Talent: unitedsates, europe, australia. 
+   W miejsce **YourLocation** wpisz jeden z obsługiwanych regionów aplikacji Talent: unitedstates, europe, australia. 
 
    Parametr **-Verbose** jest opcjonalny i powoduje generowanie szczegółowych informacji, które można wysłać działowi pomocy technicznej w razie problemów.
 
-5. Kontynuuj proces inicjowania obsługi.
+6. Kontynuuj proces inicjowania obsługi.
  
 
-
 ## <a name="grant-access-to-the-environment"></a>Przyznawanie dostępu do środowiska
-Domyślnie dostęp do środowiska ma globalny administrator, który je utworzył. Dodatkowym użytkownikom aplikacji trzeba jednoznacznie przyznać dostęp. W celu udzielenia dostępu trzeba [dodać użytkowników](../dev-itpro/sysadmin/tasks/create-new-users.md) i [przypisać im odpowiednie role](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) w środowisku Core HR. Należy również dodać tych użytkowników do środowiska PowerApps, tak aby mieli oni dostęp do aplikacji Attract i Onboard. Procedura jest opisana poniżej. Jeśli potrzebujesz pomocy przy wykonywaniu tych czynności, zobacz wpis na blogu [Wprowadzenie do centrum administracyjnego usługi PowerApps](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/).
+Domyślnie dostęp do środowiska ma globalny administrator, który je utworzył. Dodatkowym użytkownikom aplikacji trzeba jednoznacznie przyznać dostęp. W celu udzielenia dostępu trzeba [dodać użytkowników](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) i [przypisać im odpowiednie role](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) w środowisku Core HR. Globalny administrator, który wdrożył aplikację Talent, musi również uruchomić aplikacje Attract i Onboard, aby dokończyć inicjalizację i umożliwić dostęp innym użytkownikom dzierżawy.  Dopóki tak się nie stanie, inni użytkownicy nie będą mieli dostępu do aplikacji Attract i Onboard i będą im wyświetlane błędy naruszenia dostępu.
 
-Procedurę wykonuje administrator globalny, który wdrożył środowisko Talent.
-
-1. Otwórz [centrum administracyjne usługi PowerApps](https://preview.admin.powerapps.com/environments).
-2. Zaznacz odpowiednie środowiska.
-3. Na karcie **Zabezpieczenia** dodaj wymaganych użytkowników do roli **Twórca środowiska**.
-
-    Należy zauważyć, że ten ostatni krok, w którym ręcznie dodajesz użytkowników do środowiska PowerApps, jest tymczasowy. Docelowo będzie on wykonywany automatycznie podczas dodawania użytkowników w środowisku Core HR.
 

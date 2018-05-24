@@ -20,16 +20,16 @@ ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 4026fa937ddf88f006cdcd13a8eda10c326ada62
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 95e7f5179ac88c0cd6b2336a914c2c527d37d57f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="routes-and-operations"></a>Marszruty i operacje
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o marszrutach i operacjach. Marszruta definiuje proces wytwarzania produktu lub wariantu produktu. Opisuje każdy krok (operację) w procesie produkcji oraz kolejność, w jakiej te kroki należy wykonać. Dla każdego kroku marszruta definiuje również wymagane zasoby operacyjne, wymagane czasy przezbrajania i wykonywania oraz sposób obliczania kosztów.
 
@@ -230,12 +230,12 @@ Jeśli w ramach zapotrzebowania na zasoby dla operacji nie określisz zasobu ope
 -   **Partia zasobów** — Ta opcja zasadniczo działa tak samo, jak opcja **Partia**. Jednak obliczanie obejmuje pole **Wielkość partii** z zasobu operacyjnego. W związku z tym czas jest zależny od zasobu.
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Listy składowe (BOM) i formuły](bill-of-material-bom.md)
 
-[Kategorie kosztów używane w marszrutach produkcji](../cost-management/cost-categories-used-production-routings.md)
+[Kategorie kosztów używane podczas wyboru trasy produkcji](../cost-management/cost-categories-used-production-routings.md)
 
 [Możliwości zasobu](resource-capabilities.md)
 

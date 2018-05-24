@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 88570a8dc9da6f6a2b4d3a9499e1ea406f681451
-ms.openlocfilehash: 4608f43a3db9308881d4737e49df949190e3ede2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 18ae41c3c1b19edc2d56a7e3480890c8aea28054
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/14/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Definicje kolumn w raportach finansowych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o definicjach kolumn. Definicja kolumny to składnik (blok konstrukcyjny) raportu, który określa zawartość kolumn raportu. Podobnie jak definicje wierszy, definicje kolumn podstawowych mogą być używane w wielu raportach.
 
@@ -583,7 +583,7 @@ Można utworzyć kolumnę, w której są wyświetlane wszystkie wartości w okre
 
 Można podzielić kwotę w kolumnie przez określoną liczbę okresów. Na przykład formuła **B/Okresy** dzieli wartość w kolumnie B przez liczbę okresów w kolumnie B. Jeśli obliczenie obejmuje wiele kolumn, należy określić liczbę okresów, które zostać użyte w obliczeniach. Na przykład formuła **(B+C)/Okresy** dodaje kwoty w kolumnach B i C, a następnie dzieli wynik przez wartość okresu.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Definicje wierszy w raportowaniu finansowym](row-definitions-financial-reporting.md)

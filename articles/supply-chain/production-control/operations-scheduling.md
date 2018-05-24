@@ -20,16 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 81dec9d988b22959df5421b7b84ef532a28e1228
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 660d6b2dfb5fbed58a5c28b77aac3bb4604c7d8d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="operations-scheduling"></a>Planowanie operacji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o planowaniu operacji. Funkcji planowania operacji można używać, aby przedstawić ogólne oszacowanie procesu produkcji w wybranym okresie.
 
@@ -75,7 +75,7 @@ Podczas planowania operacji można anulować określone części marszruty. Tymi
 ## <a name="finite-materials"></a>Ograniczone materiały
 Jeśli pracujesz z ograniczonymi materiałami, planowanie zależy również od dostępności materiałów wymaganych do produkcji. Jeśli jest za mało dostępnych składników produkcji, może dojść do opóźnienia produkcji. Planowanie można oprzeć na zużyciu materiałów poprzez określenie materiałów, które muszą być dostępne do produkcji. Gdy optymalizujesz względem zarówno zdolności produkcyjnych zasobów, jak i dostępności materiałów, produkcja jest obliczana zgodnie z tymi ograniczeniami. Rozpoczęcie zlecenia produkcyjnego można zaplanować dopiero na moment, gdy zdolności produkcyjne i materiały są dostępne w tym samym czasie i w wymaganych ilościach.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Opcje planowania operacji](operation-scheduling-options.md)

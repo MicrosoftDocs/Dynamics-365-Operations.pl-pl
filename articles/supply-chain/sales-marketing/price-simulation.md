@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1db68ea5728cc417f0e70675d9074d5b054883da
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6df840de688975b9fa11b866361d88a730426bd0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="price-simulation"></a>Symulacja ceny
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o symulacjach cen dla ofert. Symulacja ceny pomaga ocenić wpływ obniżek na przyszłą cenę sprzedaży w trakcie procesu sporządzania oferty, zanim określona cena zostanie potwierdzona.
 
@@ -36,7 +36,7 @@ Symulacja ceny oferty zawiera nową łączną kwotą, opartą na proponowanej no
 
 Symulacja ceny nie powoduje zmiany ceny w ofercie. Symulacja ceny jest stosowana do całej oferty, jest traktowana jako specjalny rabat w nagłówku oferty. Symulacja ceny jest stosowana do określonych towarów, jest traktowana jako specjalny rabat w wierszach oferty. Cena jednostkowa sprzedaży w utworzonym wierszu sprzedaży nie ulega zmianie po wprowadzeniu symulacji cen. Zamiast tego jest wprowadzany rabat o określonej procentowo wartości, odpowiadający obniżce ceny w wierszu oferty. Po przeprowadzeniu symulacji cen, jednostkowe ceny sprzedaży i rabaty procentowe są transferowane do wiersza oferty lub nagłówka oferty.  
 
-**Uwaga:** Podczas wykonywania symulacji cen pod uwagę jest brana tylko bieżąca waluta sprzedaży. Natomiast podczas przeglądania wartości ofert jest widoczna zarówno waluta sprzedaży, jak i waluta podstawowa dla w firmy.  
+>[Uwaga] Podczas wykonywania symulacji cen pod uwagę jest brana tylko bieżąca waluta sprzedaży. Natomiast podczas przeglądania wartości ofert jest widoczna zarówno waluta sprzedaży, jak i waluta podstawowa dla w firmy.  
 
 Dodatkowe towary, które powinny zostać dodane do wierszy oferty mogą uruchamiać rabaty wiersza lub rabaty wspólne. Mogą wywoływać rabat końcowy, co skutkuje zmianą marży pokrycia i współczynników marży dla wierszy oferty i rabatem całościowym.  
 

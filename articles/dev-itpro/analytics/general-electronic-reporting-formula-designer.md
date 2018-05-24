@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: adbbb36da2bc1e9a2211c703823370571105ecab
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3988c437afda3d57e56a03264d3c1588af497920
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="formula-designer-in-electronic-reporting"></a>Projektant formuł w Raportowaniu elektronicznym
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak używać projektanta formuł w raportowaniu elektronicznym (ER). Podczas projektowania formatu dla określonego dokumentu elektronicznego w module raportowania elektronicznego można używać formuł w celu przekształcania danych, tak aby spełniały one wymagania dotyczące wypełniania i formatowania tego dokumentu. Te formuły przypominają formuły w programie Microsoft Excel. W formułach obsługiwane są różne typy funkcji: tekstu, daty i godziny, matematyczne, logiczne, informacyjne, konwersji typów danych i inne (specyficzne dla domeny biznesowej).
 
@@ -647,7 +647,7 @@ Parametry flagi nazwy waluty wydruku i liczby miejsc dziesiętnych są analizowa
 
 Model raportowania elektronicznego umożliwia rozszerzanie listy funkcji używanych w wyrażeniach ER. Wymaga to działań programistycznych. Aby uzyskać szczegółowe informacje, zobacz [Rozszerzanie listy funkcji raportowania elektronicznego](general-electronic-reporting-formulas-list-extension.md).
 
-## <a name="see-also"></a>Informacje dodatkowe
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
 

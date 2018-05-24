@@ -38,9 +38,6 @@ Otwierając dane jednostek w programie Excel, można łatwo i szybko wyświetli�
 
 Aby dowiedzieć się więcej na temat używania dodatku programu Excel, obejrzyj krótki film [Tworzenie szablonu programu Excel dla wzorców nagłówków i wierszy w programie Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
 
-> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
-
-
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Otwieranie danych jednostki w programie Excel przy rozpoczynaniu z rozwiązania Finance and Operations
 1. Na stronie w rozwiązaniu Finance and Operations wybierz opcję **Otwórz w pakiecie Microsoft Office**.
 

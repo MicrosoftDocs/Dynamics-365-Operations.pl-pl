@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c71d7632cfdafe48eee49c848982dfa85116df75
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 42ea3a6cf85802fc42c53111d17afbce042a6d44
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="generate-a-statistical-baseline-forecast"></a>Generowanie bazowej prognozy statystycznej
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje dotyczące parametrów i filtrów, które są używane w obliczeniach prognozy popytu. 
 
@@ -64,10 +64,10 @@ Podczas generowania prognozy można używać międzyfirmowej grupy planowania, k
 
 Jeśli prognoza nie jest generowana dla dużego zestawu towarów, ale na przykład dla jednego towaru lub jednego klucza alokacji produktów, wówczas aby poprawić wydajność procesu, można zaznaczyć pole wyboru **Użyj trybu odpowiedzi na żądanie** na karcie **Planowanie główne - Ustawienia - Prognozowanie popytu** - **Parametry prognozowania popytu - Uczenie maszynowe Azure**.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Ustawianie prognozowania popytu](demand-forecasting-setup.md)
+[Ustawienia prognozowania popytu](demand-forecasting-setup.md)
 
 [Wprowadzanie ręcznych korekt prognozy bazowej](manual-adjustments-baseline-forecast.md)
 

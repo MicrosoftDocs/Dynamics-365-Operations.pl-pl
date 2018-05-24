@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 25dd62081e4a6e196bffaa6cc72ff40ed68c736c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2fa152c5586a1122a109762780d23fd8c2240702
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Współpraca z dostawcami za pomocą portalu dostawców
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, jak pracownicy działu zakupów mogą używać portalu dostawców do współpracy z dostawcami zewnętrznymi w trakcie procesu potwierdzenia zamówień zakupu. Informacje te dotyczą tylko wersji systemu Dynamics AX z lutego i maja 2016 roku.
 
@@ -96,7 +96,7 @@ W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może p
 |                           Wysyłasz nową wersję zamówienia zakupu do portalu dostawców.                            |                                                                                                                                                                    Nowa wersja jest rejestrowana w portalu dostawców, a jej stan zmienia wartość na <strong>W trakcie analizy zewnętrznej</strong>.                                                                                                                                                                     |
 |                                Dostawca zatwierdza nową wersję zamówienia zakupu.                                 |                                                                                                                                                     Stan zmienia się na <strong>Potwierdzone</strong> automatycznie lub po otrzymaniu odpowiedzi od dostawcy i następnie ręcznym potwierdzeniu.                                                                                                                                                     |
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Konfiguracja zabezpieczeń dla użytkowników portalu współpracy z dostawcami](configure-security-vendor-portal-users.md)

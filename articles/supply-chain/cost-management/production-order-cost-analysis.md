@@ -20,16 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 703070ae85f504cf204244b2197732dc6849abd6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 40ac5108216fd6d9eb5cd6e76fefd66828a7da84
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-order-cost-analysis"></a>Analiza kosztów zlecenia produkcyjnego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o analizach kosztów, jakie można wykonywać na zakończonych i bieżących zleceniach produkcyjnych. Koszty szacowane i rzeczywiste można analizować na stronie Obliczanie ceny lub w raporcie Szacowanie kosztów i wycena. Można oglądać informacje o szacowanych i rzeczywistych kosztach (oraz ilościach) dla każdego składnika, operacji marszruty i kosztu pośredniego.
 
@@ -59,10 +59,10 @@ Oddzielne raporty zapewniają informację o każdym typie transakcji. Raporty te
 -   **Pozycje gotowe w toku** — Ten raport zawiera listę bieżących zleceń produkcyjnych oraz transakcji zgłoszenia wyrobów jako gotowe do określonego dnia transakcji.
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Typowe przyczyny odchyleń produkcji](common-sources-of-production-variances.md)
+[Typowe źródła odchyleń produkcji](common-sources-of-production-variances.md)
 
 
 

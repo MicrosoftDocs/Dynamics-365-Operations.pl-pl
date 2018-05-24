@@ -18,20 +18,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: 838dc40fb3fa2b0de7fa131850754c3674266d73
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c7fc274bb9d942e85012211b1a7a14873447e5f3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-august-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z sierpnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
 
-<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z sierpnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX
+<a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z sierpnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX
 ---------------------------------------------------------------------------------------------------
 
 Ujednolicona biblioteka APQC (z sierpnia 2016 r. — wszystkie języki) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji 2 platformy Microsoft Dynamics AX (z sierpnia 2016 r.), aktualizacji aplikacji Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. Aby uzyskać więcej informacji o tych wersjach, zobacz [Co nowego, jakie zmiany](whats-new-changed.md). W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [Wprowadzenie do Pomocy](help-overview.md).
@@ -97,7 +97,7 @@ Ujednolicona biblioteka APQC (z sierpnia 2016 r. — wszystkie języki) zawiera 
 
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Nowe przewodniki po zadaniach (luty 2016 r.)](new-task-guides-available-february-2016.md)

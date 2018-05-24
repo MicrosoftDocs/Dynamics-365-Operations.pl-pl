@@ -3,7 +3,7 @@ title: "Zarządzanie cenami w sprzedaży detalicznej"
 description: "W tym temacie opisano pojęcia związane z tworzeniem i zarządzaniem cenami sprzedaży w programie Microsoft Dynamics 365 for Retail."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -18,16 +18,16 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a7e6babe1bfec60ece4f84a77bbd838faf7274e0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-sales-price-management"></a>Zarządzanie cenami w sprzedaży detalicznej
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ten temat zawiera informacje o procesie tworzenia i zarządzania cenami sprzedaży w programie Microsoft Dynamics 365 for Retail. Koncentruje się na pojęciach występujących w tym procesie oraz na wpływie różnych opcji konfiguracji na ceny sprzedaży.
 
@@ -198,32 +198,6 @@ Program Microsoft SQL Server Express jest często używane dla baz danych kanał
 Podczas ustawiania cen sprzedaży w programie Microsoft Dynamics 365 nie określasz, czy wprowadzana wartość ceny obejmuje podatek, czy nie. Wartość mówi ogólnie o cenie. Jednak ustawienie **Cena zawiera podatek** dostępne w kanałach sprzedaży detalicznej pozwala skonfigurować kanały sprzedaży detalicznej, tak aby uwzględniały lub nie uwzględniały podatku w cenach. To ustawienie konfiguruje się w kanale i może przybierać różne wartości nawet w jednej firmie.
 
 Jeśli pracujesz z cenami zawierającymi, jak i niezawierającymi podatku, jest bardzo ważne, aby poprawnie ustawić ceny, ponieważ łączna kwota płacona przez odbiorcę zmieni się, jeżeli w kanale zmienisz wartość ustawienia **Cena zawiera podatek**.
-
-### <a name="effect-of-the-price-includes-sales-tax-setting-on-financial-postings"></a>Wpływ ustawienia Cena zawiera podatek na księgowanie finansowe
-Wszystkie kwoty księgowane w księdze głównej dla kont przychodów i rabatów są objęte oddziaływaniem ustawienia **Cena zawiera podatek**. W poniższym przykładzie pokazano, jak to ustawienie wpływa na księgowanie finansowe.
-
-Przykład dotyczy tylko księgowania sprzedaży, ponieważ ustawienie **Cena zawiera podatek** nie wpływa na księgowanie kosztów zapasów.
-
-#### <a name="example"></a>Przykład
-W tym przykładzie kwoty rabatu są skonfigurowane tak, aby były księgowane osobno od przychodu.
-
-Sprzedajesz produkt za 100 USD, który ma stawkę podatku 10%, oraz stosujesz jest 5-procentowy rabat. Są używane następujące konta z danych firmy demonstracyjnej USRT:
-
-- **Przychód:** 401100
-- **Rabat:** 403200
-- **Podatek:** 202100
-
-**Przypadek 1: Cena bez podatku**
-
-- **Przychód:** 100 USD
-- **Rabat:** 5 USD
-- **Podatek:** 9,5 USD (= 10% z 95 USD)
-
-**Przypadek 2: Cena z podatkiem (zwanym również podatkiem od towarów i usług \[VAT\])**
-
-- **Przychód:** 90 USD
-- **Rabat:** 4,5 USD (= 5 procent od 90 USD)
-- **Podatek:** 10 USD
 
 ## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Różnice między cenami detalicznymi a cenami niezwiązanymi z handlem detalicznym
 Jeden aparat kalkulacji cen jest używany do obliczania cen detalicznych we wszystkich kanałach: biura obsługi, sklepów sieci sprzedaży (tradycyjnych) i sklepów internetowych. Pomaga to realizować ujednolicone scenariusze handlu. 

@@ -18,16 +18,16 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 2d0fb4de84838f1778625d977bdd2ceeaac61f8c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: af87f3f7c3fab9b6baecefbedcd855a764f31cbe
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-accounting-analysis-power-bi-content"></a>Pakiet zawartości usługi Power BI Analiza rachunku kosztów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft Power BI **Analiza rachunku kosztów**. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
 
@@ -44,12 +44,14 @@ Aby dowiedzieć się więcej o module Rachunek kosztów, zobacz [Rachunek koszt�
 Poprzez zdefiniowanie zabezpieczeń na poziomie dostępu w module Rachunek kosztów i połączenie ich z zabezpieczeniami na poziomie wierszy w usłudze Power BI można wszystkim właścicielom obiektów kosztów udzielić dostępu do pakietu zawartości usługi Power BI **Analiza rachunku kosztów**. Wszystkie dane w wizualizacjach będą następnie filtrowane według poziomu dostępu kontrolowanego w module Rachunek kosztów. Aby dowiedzieć się więcej na temat zabezpieczeń na poziomie dostępu i zabezpieczeń na poziomie wierszy, zobacz [Konfigurowanie zabezpieczeń pakietu zawartości rachunku kosztów w usłudze Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Pakiet zawartości usługi Power BI **Analiza rachunku kosztów** znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/). Aby obejrzeć demonstrację przedstawiającą sposób implementowania pakietu zawartości usługi Power BI, zobacz materiał z serii Office Mix [Pakiety zawartości dla usługi Power BI w usłudze Dynamics Lifecycle Services od Microsoft i partnerów](https://mix.office.com/watch/9puyb1b2xs1w).
+Pakiet zawartości usługi Power BI **Analiza rachunku kosztów** znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/). 
+
+<!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
 Uważaj, aby pobrać pakiet zawartości **Analiza rachunku kosztów** mający zastosowanie do używanej wersji systemu Microsoft Dynamics 365.
 
 > [!NOTE]
-> Poprawka KB 4011327 jest wstępnie wymaganym składnikiem tego pakietu zawartości usługi Power BI. Po zalogowaniu się w usłudze LCS można uzyskać dostęp do tej poprawki KB tutaj: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+> Poprawka KB 4011327 jest wstępnie wymaganym składnikiem tego pakietu zawartości usługi Power BI. Po zalogowaniu się do usługi LCS ta poprawka KB będzie dostępna pod łączem <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
 Pakiet zawartości zawiera zestaw stron raportów. Każda strona zawiera zestaw wskaźników, które są wizualizowane jako wykresy, kafelki i tabele. Poniższa tabela zawiera omówienie wizualizacji dostępnych w pakiecie zawartości usługi Power BI **Analiza rachunku kosztów**.

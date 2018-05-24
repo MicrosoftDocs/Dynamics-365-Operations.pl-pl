@@ -18,16 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 41bd03757a347a1b5f189bd50dae2545baaddf20
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d0e45f4a6b1f6bcf94103dbcf4a8ca01457dc85d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-a-parallel-branch-in-a-workflow"></a>Konfigurowanie odgałęzienia równoległego w przepływie pracy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Aby skonfigurować gałąź równoległą, należy wykonać następujące procedury w edytorze przepływu pracy.
 
@@ -47,10 +47,10 @@ Wykonaj następujące kroki, aby zaprojektować i skonfigurować elementy odgał
 
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Utwórz przepływ pracy](create-workflow.md)
+[Tworzenie przepływu pracy](create-workflow.md)
 
 
 

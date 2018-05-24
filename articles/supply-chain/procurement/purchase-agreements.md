@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a47c631b265262f78e0fb3d956a98a7c9e9f5172
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e4414ead4d2c767ecdd3e631035034b01de55b27
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="purchase-agreements"></a>Umowy zakupu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o umowach zakupu. Umowa zakupu jest to kontraktem, który zobowiązuje organizację do zakupu określonej ilości lub za określoną kwotę przy użyciu wielu zamówień zakupu na przestrzeni czasu. W zamian za to zobowiązanie kupujący otrzymuje specjalne ceny i rabaty. 
 
@@ -91,7 +91,7 @@ Po utworzeniu międzyfirmowego zamówienia zakupu korzystającego z umowy zakupu
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Wymiary finansowe umów zakupu
 Wymiary finansowe można skopiować do nagłówków dokumentu lub pojedynczych wierszy umowy zakupu. Jeśli zmienisz wymiary w nagłówku umowy lub w wierszu umowy, zmiana nie ma wpływu na jakiekolwiek zwolnione zlecenia, ale zostanie uwzględniona w nowych zamówieniach.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Tworzenie umowy zakupu (przewodnik po zadaniu)](tasks/create-purchase-agreement.md)

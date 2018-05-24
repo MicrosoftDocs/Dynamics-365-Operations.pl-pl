@@ -18,16 +18,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 8f89d0740098fbd5af9d838f1f4b7ddf47ee7e10
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 45717bc1a7093c0282d214fc4ce5fdf153bb14a1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Konfigurowanie Raportowania elektronicznego do ściągania danych do usługi Power BI
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono sposób wykorzystania konfiguracji raportowania elektronicznego (ER) do organizowania przesyłania danych z wystąpienia programu Finance and Operations do usług Power BI. Na potrzeby przykładu użyto transakcji Intrastat jako danych biznesowych, które muszą zostać przesłane. Funkcja wizualizacja mapy w programie Power BI wykorzystuje te dane transakcji Intrastat do przedstawienia widoku umożliwiającego analizę działań importowych/eksportowych firmy w raporcie programu Power BI.
 
@@ -132,12 +132,12 @@ Skonfiguruj integrację między programami Finance and Operations i Power BI. Ab
 2. Zaznacz utworzony raport programu Power BI zatytułowany **Szczegóły importu i eksportu**, a zostanie on wyświetlony jako element akcji na wybranej stronie. 
 3. Kliknij element akcji, a zostanie otwarta strona programu Finance and Operations pokazująca raport zaprojektowany w programie Power BI. [![Raport o szczegółach importu i eksportu](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Miejsca docelowe raportowania elektronicznego](electronic-reporting-destinations.md)
+[Aplikacje docelowe Raportowania elektronicznego](electronic-reporting-destinations.md)
 
-[Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
+[Omówienie raportowania elektronicznego](general-electronic-reporting.md)
 
 
 
