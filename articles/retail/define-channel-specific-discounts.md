@@ -20,16 +20,16 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f68400bf10b6235decc7ac5cb82e58b369c7c0c7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0300ed4a10f6979fb673447323f7fdf61041529f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="define-channel-specific-discounts"></a>Definiowanie rabatów właściwych dla kanału
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Sprzedawcy detaliczni często ustawiają różne rabaty w różnych kanałach. W tym temacie opisano pojęcia, które należy znać, aby tworzyć rabaty dla konkretnych kanałów. 
 
@@ -62,10 +62,10 @@ Przykład poniżej ilustruje zadania niezbędne do skonfigurowania rabatu kanał
 
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Korekty ceny i rabaty](price-adjustments-discounts.md)
+[Korekty cen i rabaty](price-adjustments-discounts.md)
 
 
 

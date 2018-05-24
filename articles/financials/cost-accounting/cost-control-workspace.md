@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7cc6ba50b8df54eadc9a23990a58d1d37365cb6a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 934ab83d45aad32c067e8422c5415d4a0a6481b4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-control-overview"></a>Omówienie obszaru roboczego Kontrola kosztów 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Obszar roboczy **Kontrola kosztów** jest centralnym miejscem, w którym menedżerowie odpowiedzialni za kontrolę obiektu kosztów lub zbioru obiektów kosztów w granicach wymiaru lub między wymiarami (np. w centrach kosztów i grupach produktów) mają dostęp do raportów. Raporty w obszarze roboczym są w pełni zarządzane przez księgowych kosztów, dzięki czemu układ i dane używane w raportach mogą być spójne w całej organizacji.
 
@@ -154,7 +154,7 @@ W poniższym przykładzie podstawa alokacji jest typu **Podstawa alokacji formu�
 
 ![Obliczenia dla obiektów kosztów](./media/cost-entries-allocation-base.png)
 
-Informacje dodatkowe 
+Dodatkowe zasoby 
 
 [Definiowanie uprawnień dostępu kontrolerów obiektów kosztów](access-rights-cost-object-controller.md)
 

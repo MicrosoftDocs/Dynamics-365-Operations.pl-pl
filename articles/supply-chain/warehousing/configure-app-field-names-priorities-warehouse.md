@@ -20,16 +20,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2fbf9d84fa0fec32004936542003115cf580d91c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d029481d31a0064a193e2cb9eeaf79df28bfa159
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurowanie nazw pól aplikacji w aplikacji Magazynowanie
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano sposób definiowania i konfigurowania nazw i priorytetów pól aplikacji magazynowej w programie Finance and Operations. 
 
@@ -140,7 +140,7 @@ Na podstawie priorytetu pól aplikacji magazynowej skonfigurowanego w tabeli pow
 
 Pozostałe metadane, na przykład Lokalizacja, nie będą wyświetlane na stronie zadania, ale będą wyświetlane na stronie szczegółów. Aby dowiedzieć się więcej i zobaczyć przykłady interfejsu użytkownika, należy się zapoznać z wpisem na blogu [Zapowiedź aplikacji Finance and Operations — Magazynowanie](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Instalowanie i konfigurowanie programu Microsoft Dynamics 365 for Finance and Operations — Magazynowanie](install-configure-warehousing-app.md)

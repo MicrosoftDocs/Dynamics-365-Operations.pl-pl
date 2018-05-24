@@ -19,16 +19,16 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="help-system-overview"></a>Omówienie systemu Pomocy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations. Wyjaśniono tu również, jak można dostarczać niestandardową dokumentację i szkolenia dla swojej organizacji. 
 
@@ -60,7 +60,7 @@ Witryna docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operations](
 
 -   **Dostęp do najaktualniejszych treści** — Witryna pozwala szybciej i elastyczniej tworzyć, dostarczać i aktualizować dokumentację produktu. To pomaga zagwarantować, że masz dostęp do najnowszych informacji technicznych.
 -   **Artykuły pisane przez ekspertów** — Witryna zawiera bardziej rozbudowany zestaw dokumentacji produktu, który może być rozszerzany przez członków społeczności wewnątrz i na zewnątrz firmy Microsoft.
--   **Dostęp do różnych typów zawartości** — Witryna umożliwia szybki dostęp do różnych rodzajów treści o programie Finance and Operations, takich jak prezentacje Microsoft Office Mix, przewodniki po zadaniach, filmy i tematy.
+-   **Dostęp do różnych typów zawartości** — Witryna umożliwia szybki dostęp do różnych rodzajów treści o programie Finance and Operations, takich jak przewodniki po zadaniach, filmy i tematy.
 -   **Zawartość, która pomaga w obsłudze procesów biznesowych** — Witryna zawiera treści skoncentrowane na procesach biznesowych, które korzystają z narzędzia do modelowania procesów biznesowych (BPM) dostępnego w usłudze Microsoft Dynamics Lifecycle Services (LCS).
 
 ### <a name="searching-on-docsmicrosoftcom"></a>Wyszukiwanie w witrynie docs.microsoft.com
@@ -204,7 +204,7 @@ W poniższej tabeli wymieniono nasze witryny internetowe. Nasze strony z zawarto
 
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 [System Pomocy programu Finance and Operations (arkusz informacyjny do pobrania)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 

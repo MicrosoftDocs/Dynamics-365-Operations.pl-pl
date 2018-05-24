@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69766e1bf37955bfd4d7253c1b7881780d491d1c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 683d3de59a427df296bb0d3d644f0ec23b3a8e5e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="report-designer-interface"></a>Interfejs Projektanta raportów
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł wyjaśnia, jak się poruszać w Projektancie raportów i jak używać różnych opcji do własnych potrzeb. 
 
@@ -220,11 +220,11 @@ Pasek narzędzi projektanta raportów oferuje szybki dostęp do poleceń nawigow
 | [![Przycisk Definicja kolumny](./media/columnc130389.png)](./media/columnc130389.png)                 | Umożliwia wyświetlenie definicji kolumny, która jest przypisana do definicji aktywnego raportu.                                                                                                 |
 | [![Przycisk Definicja drzewa raportowania](./media/treec130389.png)](./media/treec130389.png)             | Umożliwia wyświetlenie definicji drzewa raportowania, która jest przypisana do definicji aktywnego raportu.                                                                                         |
 | [![Przycisk Report Viewer](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Uruchom Report Viewer i pokaż najnowszą wersję generowanego raportu. Ten przycisk jest dostępny z definicji raportu po wygenerowaniu co najmniej jednego raportu. |
-| [![Przycisk Generuj raport](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generowanie raportu z definicji aktywnego raportu. Ten przycisk jest dostępny z definicji raportu.                                                                      |
+| [![Przycisk Generuj raport](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generowanie raportu na podstawie aktywnej definicji raportu. Ten przycisk jest dostępny w oknie definicji raportu.                                                                      |
 
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Raporty finansowe](financial-reporting-intro.md)

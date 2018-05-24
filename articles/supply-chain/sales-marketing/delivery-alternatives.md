@@ -20,23 +20,23 @@ ms.author: crytt
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 58c083b2fa76e90d10ec8a197a4743a9e315db46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 855fdd0e57a7001628b715038785379d5a986789
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="delivery-alternatives"></a>Dostawy alternatywne
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Osoby wypełniające zamówienia sprzedaży mogą za pomocą strony Dostawy alternatywne wykrywać alternatywne opcje realizacji zamówień.
+Osoby wypełniające zamówienia sprzedaży mogą za pomocą strony **Dostawy alternatywne** wykrywać alternatywne opcje realizacji zamówień.
 
-W programie Microsoft Dynamics 365 for Operations w wersji 1611 (z listopada 2016 r.) osoby wypełniające zamówienia sprzedaży mogą za pomocą strony **Dostawy alternatywne** wykrywać alternatywne opcje realizacji zamówień. Przeprojektowany układ strony zapewnia lepszy przegląd wszystkich alternatywnych opcji. Umożliwia również osobom wypełniającym zamówienia szukanie możliwości realizacji poza bieżącą firmą. Teraz można wyświetlać możliwości zarówno międzyfirmowe, jak i u zewnętrznych dostawców. Sortując opcje według dat dostawy, osoby wypełniające zamówienia sprzedaży mogą wyświetlić inteligentną listę alternatywnych możliwości realizacji dostawy. Ponadto parametry pozwalają lepiej zarządzać sugerowanymi dostawami. Ponieważ czas transportu może wpływać na daty dostawy, osoby wypełniające zamówienia sprzedaży mogą sprawdzać różne opcje transportu oferowane przez przewoźników. Dla każdej sugestii są wyświetlane szczegółowe informacje, dlatego osoby wypełniające zamówienia mogą podejmować optymalne decyzje bezpośrednio ze strony **Dostawy alternatywne**.
+Układ strony **Dostawy alternatywne** umożliwia przegląd wszystkich alternatywnych opcji. Umożliwia również osobom wypełniającym zamówienia szukanie możliwości realizacji poza bieżącą firmą. Teraz można wyświetlać możliwości zarówno międzyfirmowe, jak i u zewnętrznych dostawców. Sortując opcje według dat dostawy, osoby wypełniające zamówienia sprzedaży mogą wyświetlić inteligentną listę alternatywnych możliwości realizacji dostawy. Ponadto parametry pozwalają lepiej zarządzać sugerowanymi dostawami. Ponieważ czas transportu może wpływać na daty dostawy, osoby wypełniające zamówienia sprzedaży mogą sprawdzać różne opcje transportu oferowane przez przewoźników. Dla każdej sugestii są wyświetlane szczegółowe informacje, dlatego osoby wypełniające zamówienia mogą podejmować optymalne decyzje bezpośrednio ze strony **Dostawy alternatywne**.
 
 ## <a name="open-the-delivery-alternatives-page"></a>Otwieranie strony Dostawy alternatywne
-Stronę **Dostawy** **alternatywne** można otworzyć z wiersza zamówienia sprzedaży.
+Stronę **Dostawy alternatywne** można otworzyć z wiersza zamówienia sprzedaży.
 
 1.  Kliknij kolejno opcje **Produkty i dostawa** &gt; **Dostawy alternatywne**.
 2.  Kliknij kolejno opcje **Szczegóły wiersza** &gt; **Dostawa** &gt; **Dostawy alternatywne**.
@@ -146,7 +146,7 @@ Informacje na tej karcie dotyczą wybranego wiersza alternatywnych opcji dostawy
 
 Na tej karcie są eksponowane skutki wybranej alternatywnej opcji dostawy. Kliknięcie przycisku **OK** spowoduje aktualizację wiersza sprzedaży o wyeksponowane wartości w kolumnach WYBRANE. Należy zwrócić uwagę, że jeśli ilość w wybranej alternatywnej opcji dostawy jest mniejsza niż ilość w wierszu sprzedaży, jest utworzony harmonogram dostaw, a wiersz zamówienia jest dzielony na dwa wiersze: jeden wiersz dla wybranej ilości i jeden wiersz na pozostałej ilości. Można także zaktualizować wiersz handlowy, aby pasował do wierszy harmonogramu i miał wpływ na ceny.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Zobowiązanie do zamówienia](delivery-dates-available-promise-calculations.md)

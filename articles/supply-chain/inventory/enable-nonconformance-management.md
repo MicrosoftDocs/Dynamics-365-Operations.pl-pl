@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 28037713a51a83f4b792adef8a26f02960fa6b07
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 93a7ed31dcad19a29a85352a2bf200915766036c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="nonconformance-management"></a>Zarządzanie niezgodnościami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano podstawową konfigurację niezbędną do korzystania z funkcji niezgodności. Dodatkowe ustawienia są potrzebne do używania zleceń kontroli jakości.
 
@@ -47,7 +47,7 @@ Aby włączyć zarządzanie niezgodnościami, wykonaj następujące kroki:
 6.  Zdefiniuj operacje pokrewne, które będą przypisywane do niezgodności. Za pomocą strony **Operacje** zdefiniuj klasyfikację pracy, którą można wykonać dla zatwierdzonej niezgodności. Przypisując operację pokrewną do niezgodności, można również zdefiniować szczegółowe informacje o powiązanych materiałach, godzinach robocizny i opłatach dodatkowych wymaganych do wykonania operacji. Ta informacja służy do obliczania szacowanego kosztu operacji. Informacje szczegółowe i szacowane koszty mają charakter odnośnikowy. Operacje pokrewne dla jakości różnią się od operacji, które można zdefiniować dla marszruty produkcji.
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Tworzenie i przetwarzanie rekordu niezgodności (przewodnik po zadaniu)](tasks/create-process-non-conformance.md)

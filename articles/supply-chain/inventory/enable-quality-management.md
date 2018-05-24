@@ -20,16 +20,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 91cc547becfbd0c0d675d87921aed92eb2ab570d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 79b3127f726a08cc24c20145b5ad9969157a899c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="quality-management-overview"></a>Omówienie zarządzanie jakością
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano, jak za pomocą funkcji zarządzania jakością w programie Microsoft Dynamics 365 for Finance and Operations poprawiać jakość produktów w łańcuchu dostaw.
 
@@ -356,7 +356,7 @@ Należy określić skojarzenie jakości dla każdego odchylenia w procesie bizne
 
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Procesy zarządzania jakością](quality-management-processes.md)

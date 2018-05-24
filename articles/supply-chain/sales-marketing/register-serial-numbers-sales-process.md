@@ -20,24 +20,22 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 23683ff3b232d485d0e4386963b3dcf37cd96c6f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 62f59c857980932f4cf75d928deb0f89fae2f8eb
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>Rejestrowanie numerów seryjnych w procesie sprzedaży
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Ten temat wyjaśnia sposób rejestrowania numerów seryjnych na dokumentach dostawy i fakturach w procesie sprzedaży. Ta funkcja jest przydatna, gdy firma chce zapisywać numery seryjne na potrzeby serwisu i gwarancji, ale nie chce nimi zarządzać w zapasach na etapach od przyjęcia do wydania.
 
 Wiele firm po prostu chce gromadzić numery seryjne na potrzeby serwisu i gwarancji, i nie musi przechowywać numerów seryjnych w magazynie od przyjęcia do wydania. W tych scenariuszach program Microsoft Dynamics 365 for Finance and Operations umożliwia rejestrowanie numerów seryjnych na dokumentach dostawy i fakturach, gdy produkty są sprzedawane. Jeśli produkty są potem zwracane, można śledzić każdy produkt do faktury w celu ustalenia, czy produkt został sprzedany przez organizację oraz określenia, czy zobowiązania wynikające z usługi lub gwarancji są prawidłowe.
-Czy istnieją wymagania wstępne?
-----------------------------
 
 Numery seryjne dla procesu sprzedaży trzeba włączyć, wybierając opcję **Aktywny w procesie sprzedaży** na stronie **Grupy wymiarów śledzenia**. W programie Microsoft Dynamics 365 for Finance and Operations mogą występować następujące zdarzenia:
 -   Na skróconej karcie **Numery seryjne** opcja **Kontrola numeru seryjnego** jest zaznaczona. Jeśli ta opcja jest zaznaczona, należy zarejestrować jeden numer seryjny dla każdego towaru na dokumencie dostawy lub fakturze.
@@ -71,8 +69,8 @@ Nie, nie można wyświetlić towarów seryjnych, które użytkownik ma na stanie
 
 ## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Czy mogę rejestrować numery seryjnych dla towarów w ilości efektywnej?
 Nie, w procesie sprzedaży nie można zarejestrować numerów seryjnych dla towarów w ilości efektywnej. Oprócz tego, jeśli produkt jest skonfigurowany jako towar w ilości efektywnej, nie można przypisać produktu do śledzenia grupy wymiarów, która jest konfigurowana do używania numerów seryjnych tylko podczas procesu sprzedaży.
-Czy mogę zarejestrować numer seryjny w punkcie sprzedaży sieci sprzedaży?
-------------------------------------------------
+
+## <a name="can-i-register-serial-numbers-at-the-retail-pos"></a>Czy mogę zarejestrować numer seryjny w punkcie sprzedaży sieci sprzedaży?
 
 Tak, w punkcie sprzedaży sieci sprzedaży będzie wyświetlany monit o wprowadzenie numeru seryjnego, gdy użytkownik sprzedaje pozycję skojarzoną z grupą śledzenia skonfigurowaną do używania numerów seryjnych tylko podczas procesu sprzedaży.
 

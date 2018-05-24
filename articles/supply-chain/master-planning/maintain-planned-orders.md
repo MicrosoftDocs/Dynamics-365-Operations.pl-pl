@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8931908fbf643a8154da70d2ad065ea47d2aa4e6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3d7afda9371b4d21e58f2e56de3d477b1c9950a1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="maintain-planned-orders"></a>Obsługa zamówień planowanych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten artykuł zawiera informacje o metodach zarządzania zamówienia planowanymi. Opisano w nim sposób aktualizowania stanów zamówień planowanych i ich potwierdzania oraz odfiltrowywania zamówień planowanych, które mają taki sam stan jak wybrane zamówienie planowane.
 
@@ -47,7 +47,7 @@ Można zarządzać planowanymi zamówieniami z obszaru roboczego **Planowanie g�
 
 Po ustaleniu zamówienie planowane zostanie przesunięte do sekcji zamówień w odpowiednim module. **Uwaga:** Zamówienie planowane o określonym statusie można kliknąć prawym przyciskiem myszy i odfiltrować inne zamówienia planowane o takim samym statusie. Ta funkcja jest przydatna, jeśli na przykład chcesz filtrować wszystkie zamówienia planowane, które mają stan **Zatwierdzone**, tak aby można je było następnie ustalić.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Plany główne](master-plans.md)

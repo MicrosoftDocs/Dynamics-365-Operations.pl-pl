@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 21e9c53f39b0f4def0052bf7f04c77279bfc610b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4db47f445fe820e65389799ddcb6ea4a99949178
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sales-agreements"></a>Umowy sprzedaży
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje dotyczące umów sprzedaży. Umowa sprzedaży jest kontraktem, który zobowiązuje odbiorcę do zakupu produktów w określonej ilości lub za określoną kwotę w ustalonym czasie w zamian za specjalne ceny i rabaty.
 
@@ -38,7 +38,7 @@ Okres ważności wiersza umowy sprzedaży jest definiowany na postawie pól **Da
 
 Zamówienie sprzedaży można utworzyć bezpośrednio z umowy sprzedaży za pomocą działania **Zwolnij zamówienie**. Ewentualnie można wybrać obowiązującą umowę sprzedaży podczas przyjmowania zamówień (zobacz sekcję „Stosowanie umów sprzedaży w procesie zamawiania” w tym artykule).  
 
-**Uwaga:** W poprzednich wersjach umowy sprzedaży były nazywane zbiorczymi zamówieniami sprzedaży.
+> [Uwaga] W poprzednich wersjach umowy sprzedaży były nazywane zbiorczymi zamówieniami sprzedaży.
 
 ## <a name="commitment-types"></a>Typy zobowiązania
 Każdy wiersz umowy sprzedaży jest zobowiązaniem do zakupu czegoś. Ogólnie są dwie kategorie zobowiązania:

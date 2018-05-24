@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 1863814d6dd645da8602495858d024fbad2e7149
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: 6672e283a5e56b068e3494d53a0fd6dd08253ba9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -95,4 +95,16 @@ Zadanie: **Wiersze faktury**
 Upewnij się, że wartość domyślna pola **Wartość wyświetlana konta głównego** w programie Finance and Operations została zaktualizowana i jest zgodna z żądaną wartością.
 
 Wartość domyślna w szablonie to **401100**.
+
+## <a name="template-mapping-in-data-integration"></a>Mapowanie szablonu w integracji danych
+
+Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja danych.
+
+### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-headers"></a>Faktury za umowy (z Field Service do Fin and Ops): Nagłówki faktur
+
+[![Mapowanie szablonu w integracji danych](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+
+### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-lines"></a>Faktury za umowy (z Field Service do Fin and Ops): Wiersze faktur
+
+[![Mapowanie szablonu w integracji danych](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
 

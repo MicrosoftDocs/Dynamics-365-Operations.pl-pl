@@ -3,7 +3,7 @@ title: "Grupy przedmiotów serwisu"
 description: "Grupy przedmiotów serwisu są przydatne do sortowania i filtrowania danych o przedmiotach serwisu do wykorzystania w raportach i statystykach."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/21/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 221b9dae7e83e7f4a535ac60f2a2011533d7861c
-ms.openlocfilehash: fa503ac82286099a0eafc7034d169e165b538e2c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2ab3ed8a8f36f980473b17b5dfed8cb3d0054253
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="service-object-groups"></a>Grupy przedmiotów serwisu 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Grupy przedmiotów serwisu są przydatne do sortowania i filtrowania danych o przedmiotach serwisu do wykorzystania w raportach i statystykach. Na przykład można grupować obiekty według lokalizacji geograficznej lub według typu.
 
@@ -48,6 +48,23 @@ Tej metody grupowania można użyć w celu pokazania typów przedmiotów serwiso
 
 Klient dzwoni w sprawie zawarcia umowy serwisowej dotyczącej urządzenia do klimatyzacji, HIJ. Nie masz jeszcze rekordu dla tej maszyny. Jednak skonfigurowano już grupę przedmiotów serwisu o nazwie Klimatyzatory i dołączono tę grupę do wszystkich przedmiotów związanych z klimatyzacją. W związku z tym można szybko wyszukać i zidentyfikować wszystkie urządzenia do klimatyzacji oraz użyć informacji o tych przedmiotach jako szablonu do utworzenia wierszy umowy serwisowej dotyczącej urządzenia HIJ. Korzystanie z grup przedmiotów w ten sposób pozwala szybko konfigurować nowe przedmioty serwisu i ustalać zadania serwisowe, które trzeba na nich wykonywać. 
 
+## <a name="create-service-object-groups"></a>Tworzenie grup przedmiotów serwisu
+
+Można utworzyć grupy, do których będą przypisywane przedmioty serwisu. Przedmioty serwisu są pozycjami magazynowymi i innymi produktami, dla których usługi są wykonywane. Grupowanie przedmiotów serwisu umożliwia tworzenie raportów dotyczących podobnych i powiązanych przedmiotów serwisu. Na przykład, grupa przedmiotów serwisu może składać się z dwóch przedmiotów serwisu: jeden przedmiot serwisu jest zestawem, a drugi przedmiotu serwisu jest usługą montażu zestawu.
+
+Aby utworzyć grupy przedmiotów serwisu, wykonaj następujące czynności:
+
+1. Kliknij kolejno opcje **Zarządzanie serwisem > Ustawienia > Przedmioty serwisu > Grupy przedmiotów serwisu**.
+
+2. Kliknij przycisk **Nowy**, aby utworzyć nową grupę przedmiotów serwisu.
+
+3. Wprowadź niepowtarzalną nazwę grupy przedmiotów serwisu oraz jej opis (opcjonalny).
+
+Przedmioty serwisu można przypisać do grupy za pomocą formularza **Przedmioty serwisu**. 
+
+## <a name="see-also"></a>Informacje dodatkowe
+
+[Tworzenie przedmiotów serwisu](create-service-objects.md)
 
 
 

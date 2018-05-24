@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6d11e772cfbcd8ab7a0d4a08ccd71049723f9e32
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 338e58522f9b9fba3ce22b22488affbab24b1315
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-variable-compensation-plans"></a>Tworzenie planów wynagrodzeń o zmiennej wysokości
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Wynagrodzenie o zmiennej wysokości to nieregularne wynagrodzenie pracownika, takie jak premie lub akcje. Ten artykuł zawiera opis składników, które muszą zostać skonfigurowane, zanim będzie można używać wynagrodzenia o zmiennej wysokości i rejestrować pracowników w planie wynagrodzeń o zmiennej wysokości.
 
@@ -100,7 +100,7 @@ Można użyć karty **Zastąpienia**, aby zastąpić określone wartości dla pr
 
 Opcja **Zastąpienia na poziomie organizacji** jest używana do określania nagrody dla pracownika na podstawie wydajności jednego lub kilku działów. Procent, który jest alokowany między działami, powinien mieć wartość 100 procent. Indywidualna wydajność pracownika jest również uwzględniana. Te ustawienia są używane tylko wtedy, gdy wybrano opcję **Wynagrodzenie za wyniki** podczas uruchamiania procesu wynagrodzeń.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Plany wynagrodzeń](compensation-plans.md)

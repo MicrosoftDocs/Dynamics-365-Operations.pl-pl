@@ -19,16 +19,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9550faec1bbbdc233631e149c09b8e4faf25f5ff
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fbf7edbd141f5e94c333b64beedf9126d2900d47
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-documentation-or-training-using-task-recordings"></a>Tworzenie dokumentacji lub szkolenia przy użyciu nagrań zadań
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie wyjaśniono, czym jest Rejestrator zadań i przewodniki po zadaniach, jak tworzyć nagrania zadań oraz jak dostosowywać przewodniki po zadaniach firmy Microsoft i umieszczać je w Pomocy.
 
@@ -118,7 +118,7 @@ Można pobrać i edytować nagrania firmy Microsoft i używać ich do tworzenia 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>Umieszczanie nagrań zadań w okienku Pomocy
 Aby wyświetlić własne niestandardowe nagrania zadań w okienku Pomocy, by mogły być odtwarzane jako przewodniki po zadaniach lub wyświetlane jako tekst, należy zapisać nagrania zadań w bibliotece BPM, a następnie zaktualizować parametry systemu Pomocy, aby wskazywał bibliotekę BPM. Aby uzyskać więcej informacji, zobacz [Łączenie z systemem Pomocy](../../fin-and-ops/get-started/help-connect.md).
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Omówienie Pomocy](../../fin-and-ops/get-started/help-overview.md)

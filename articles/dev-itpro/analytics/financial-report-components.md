@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3679ccf304a32385c162ba3663eba2300f028817
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5599135eebfcffdedaaadec86beb214c5c04cbaf
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-report-components"></a>Składniki raportu finansowego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano, jak składniki (bloki konstrukcyjne) definicji raportów są wykorzystywane w sprawozdawczości finansowej. Tymi blokami konstrukcyjnymi mogą być definicje wierszy, kolumn i drzewa raportowania. W tym artykule opisano sposób organizowania i blokowania modułów konstrukcyjnych. 
 
@@ -109,10 +109,10 @@ Grupę modułów konstrukcyjnych można zaimportować do istniejącej grupy modu
 Po otwarciu bloku konstrukcyjnego inni użytkownicy mają do niego dostęp tylko do odczytu. Może się zdarzyć, że użytkownik zapomni zamknąć blok konstrukcyjny lub zamknie system z otwartym blokiem konstrukcyjnym. Taki blok konstrukcyjny pozostaje wyewidencjonowywany i inni użytkownicy nie mogą go otworzyć. W tych sytuacjach administrator raportowania finansowego może użyć okna dialogowego **Elementy wyewidencjonowane** do zaewidencjonowania modułów konstrukcyjnych, których nie zaewidencjonowali użytkownicy. **Uwaga:** Aby zaewidencjonować moduły konstrukcyjne przy użyciu okna dialogowego **Elementy wyewidencjonowane**, użytkownik musi mieć rolę administratora.
 1.  W Projektancie raportów w menu **Narzędzia** kliknij **Elementy wyewidencjonowane**.
 2.  W oknie dialogowym **Elementy wyewidencjonowane** zaznacz opcję **Pokaż elementy od innych użytkowników**. Na liście pojawią się wszystkie wyewidencjonowane moduły konstrukcyjne wraz z nazwami użytkowników, którzy dokonali wyewidencjonowania.
-3.  Wybierz blok konstrukcyjny, a następnie kliknij przycisk **Cofnij wyewidencjonowanie**.
-4.  Kliknij **Tak**, aby zaewidencjonować blok konstrukcyjny.
+3.  Zaznacz żądany moduł konstrukcyjny i kliknij przycisk **Cofnij wyewidencjonowanie**.
+4.  Kliknij przycisk **Tak**. Moduł konstrukcyjny zostanie zaewidencjonowany.
 
-## <a name="see-also"></a>Informacje dodatkowe
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raporty finansowe](financial-reporting-intro.md)
 

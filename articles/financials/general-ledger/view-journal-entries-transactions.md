@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 825dba31a7093e9d9460f5aab59a96507dafeb8a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9768154e117ca09ae84c6a9c82d43000752c2b34
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="view-journal-entries-and-transactions"></a>Wyświetlanie wpisów w arkuszu i transakcji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule wyjaśniono różne sposoby, za pomocą których można przeglądać zapisy w arkuszu i transakcje. 
 
@@ -54,9 +54,9 @@ Oprócz raportów finansowych można używać następujących raportów księgow
 -   **Podstawa transakcji** — ten raport pokazuje konta według arkusza, transakcji, księgowania i waluty raportowania. Pokazuje także każdy wiersz arkusza, który został użyty jako konto przeciwstawne.
 
 
-## <a name="see-also"></a>Informacje dodatkowe
+## <a name="additional-resources"></a>Dodatkowe zasoby
 - [Salda głównego konta księgowego](general-ledger-account-balances.md) 
-- [Eksplorator źródeł księgowania](..\accounts-payable\accounting-source-explorer.md)
+- [Eksplorator źródeł księgowania](../accounts-payable/accounting-source-explorer.md)
 - [Raporty finansowe](financial-reporting-getting-started.md)
 - [Wyświetlanie wpisów w arkuszu](tasks/view-journal-entries-or-transactions.md)
 

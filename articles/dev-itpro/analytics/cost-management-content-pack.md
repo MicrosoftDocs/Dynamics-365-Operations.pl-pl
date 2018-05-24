@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a4eacafdf9b9e0eabe7fe599e679fca18c749733
+ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
+ms.openlocfilehash: b06abae184d07cd3b914caf74bdb16a7803919af
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
@@ -38,8 +38,7 @@ Pakiet zawartości **Zarządzanie kosztami** dostępny w usłudze Microsoft Powe
 > [!Note]
 > Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opisany w tym temacie dotyczy programu Dynamics 365 for Finance and Operations 8.0.
 > 
-> Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opublikowany w witrynie PowerBI.com został wycofany. Aby uzyskać więcej informacji o tym wycofaniu, zobacz [Pakiety zawartości usługi Power BI opublikowane w witrynie PowerBI.com](../migration-upgrade/deprecated-features.md#power-bi-content-packs-published-to-powerbicom).
-
+> Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opublikowany w witrynie AppSource został wycofany. Aby uzyskać więcej informacji o tym wycofaniu, zobacz [Pakiety zawartości usługi Power BI dostępne w usłudze AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Ten pakiet zawartości usługi Power BI oferuje skategoryzowany format, który pomaga monitorować sytuację w zapasach oraz wizualizować przepływy kosztów przez zapasy. Można uzyskać różne informacje przydatne kierownictwu, takie jak wskaźnik obrotu, liczba dni dostępności zapasów na stanie, dokładność oraz „klasyfikacja ABC” na preferowanym zagregowanym poziomie (firmy, towaru, grupy towarów lub oddziału). Dostępne informacje mogą być również wykorzystywane jako szczegółowe uzupełnienie sprawozdania finansowego.
 

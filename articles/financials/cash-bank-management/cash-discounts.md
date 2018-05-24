@@ -19,25 +19,24 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9960af8c4961a42e7e829077da40bcbbf3bc71c2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5ccf41d1184280d3c4a000db13847733fd2cf4d2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cash-discounts"></a>Rabaty gotówkowe
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Rabaty gotówkowe są skonfigurowane i udostępnione dla modułów Rozrachunki z odbiorcami i Rozrachunki z dostawcami.  Dostępny rabat gotówkowy można zdefiniować na fakturze dla odbiorcy lub fakturze od dostawcy. Zostanie on uwzględniony w przypadku zapłaty faktury w terminie obowiązywania rabatu gotówkowego. 
 
-<a name="cash-discounts"></a>Rabaty gotówkowe
---------------
+## <a name="cash-discounts"></a>Rabaty gotówkowe
 
 Rabaty gotówkowe, które będą obowiązywały dla odbiorców lub dostawców można tworzyć na stronie Rabaty gotówkowe. Ponadto w polu Następny kod rabatu można zdefiniować serię rabatów gotówkowych następujących po sobie w zależności od terminu faktury. Aby uzyskać więcej informacji, zobacz „Przykład: Seria rabatów gotówkowych” dalej w tym temacie. Jeśli faktura i/lub transakcja kredytowa (płatność lub faktura korygująca) zostały wprowadzone w walucie innej niż waluta rozliczeniowa firmy, rabat gotówkowy jest obliczany według kursu wymiany, na podstawie daty płatności lub faktury korygującej. Jeśli faktura i dokument kredytowy zostały wprowadzone w innych firmach i jeśli waluty księgowania dla firm są różne, kurs wymiany jest brany z firmy na fakturze, począwszy od daty dokumentu faktury. Aby uzyskać więcej informacji, zobacz „Przykład: Kursy wymiany dla rabatów gotówkowych” dalej w tym temacie.
-Kolejność domyślności dla rabatów gotówkowych na koncie głównym
-----------------------------------------------
+
+## <a name="defaulting-order-of-cash-discount-main-account"></a>Kolejność domyślności dla rabatów gotówkowych na koncie głównym
 
 Jeśli faktura rozliczana jest w czasie, w którym można uzyskać rabat gotówkowy, rabat ten jest automatycznie księgowany na koncie głównym rabatów gotówkowych zgodnie z następującą kolejnością domyślności:
 1.  Konto główne określone w polu Alternatywne konto rabatu gotówkowego na stronie Rozliczanie otwartych transakcji dla odbiorcy lub Rozliczanie otwartych transakcji dla dostawcy.
@@ -65,15 +64,7 @@ Waluta rozliczeniowa firmy to EUR i obowiązuj następujący kurs wymiany do USD
 
 15 lutego zostanie zaksięgowana faktura za 1000 USD z warunkami rabatu gotówkowego 20D2%. Kwota faktury w walucie rozliczeniowej wynosi 1100 EUR. Płatność na kwotę 980 USD jest rozliczana z fakturą w dniu 1 marca. Kwota rabatu gotówkowego wynosi 20 USD. Kwota płatności w walucie rozliczeniowej wynosi 784 EUR. Kwota rabatu gotówkowego w walucie rozliczeniowej jest obliczana przy użyciu kursu wymiany z dnia 1 marca: 20 \* 80 / 100 = 16 EUR.
 
-| **Uwaga**                                                                                                                                                                                                                             |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Oblicz na stronach Parametry modułu rozrachunków z odbiorcami lub Parametry modułu rozrachunków z dostawcami wybrana jest opcja Oblicz rabaty gotówkowe dla częściowych zapłat, stosowany jest kurs wymiany z dnia dokonania płatności częściowej. |
-
- 
-=
-
- 
-
-
+> [!NOTE]
+> Oblicz na stronach Parametry modułu rozrachunków z odbiorcami lub Parametry modułu rozrachunków z dostawcami wybrana jest opcja Oblicz rabaty gotówkowe dla częściowych zapłat, stosowany jest kurs wymiany z dnia dokonania płatności częściowej. 
 
 

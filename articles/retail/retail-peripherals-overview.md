@@ -19,16 +19,16 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: ba9c828efc39d45a78500d30295e5d1d6c770c99
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 77f475b0937672af268d6da938d5b2a1c9f6448b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-peripherals-overview"></a>Omówienie sklepowych urządzeń peryferyjnych
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W tym temacie wyjaśniono pojęcia, które są związane z urządzenia peryferyjnymi sieci sprzedaży. Opisano różne sposoby podłączania urządzeń peryferyjnych do punktu sprzedaży (POS) oraz składniki, które są odpowiedzialne za zarządzanie połączeniem z punktem sprzedaży.
 
@@ -786,7 +786,7 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
     -   Terminal płatniczy 
 
     Jeśli urządzenie peryferyjne nie należy do żadnej z tych kategorii, stacja sprzętowa nie jest przygotowana do włączenia współużytkowania tego urządzenia przez wiele urządzeń w punkcie sprzedaży.
--   Czasami sterowniki urządzeń mogą powodować, że wspólne obiekty formantów (CCO) przestają działać poprawnie. Jeśli urządzenie zostało niedawno zainstalowane, ale nie działa poprawnie lub zauważasz inne problemy, błędy można często wyeliminować poprzez ponowną instalację obiektów CCO. Aby pobrać obiekty CCO, odwiedź stronę <http://monroecs.com/oposccos_current.htm>.
+-   Czasami sterowniki urządzeń mogą powodować, że wspólne obiekty formantów (CCO) przestają działać poprawnie. Jeśli urządzenie zostało niedawno zainstalowane, ale nie działa poprawnie lub zauważasz inne problemy, błędy można często wyeliminować poprzez ponowną instalację obiektów CCO. Aby pobrać obiekty CCO, przejdź do witryny <http://monroecs.com/oposccos_current.htm>.
 -   Jeśli często wprowadzasz zmiany w urządzeniach peryferyjnych podczas testowania lub rozwiązywania problemów, lepiej zresetować usługi IIS niż czekać na odświeżanie się pamięci podręcznej. Aby zresetować usługi IIS, wykonaj następujące czynności:
     1.  W menu **Start** wpisz polecenie **CMD**.
     2.  W wynikach wyszukiwania kliknij prawym przyciskiem myszy pozycję **Wiersz polecenia**, a następnie kliknij opcję **Uruchom jako administrator**.
@@ -801,10 +801,10 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
     6.  Po zamknięciu hostów bibliotek DLL ponownie uruchom program Modern POS.
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Symulator urządzeń peryferyjnych sieci sprzedaży](dev-itpro/retail-peripheral-simulator.md)
+[Symulator sklepowych urządzeń peryferyjnych](dev-itpro/retail-peripheral-simulator.md)
 
 
 

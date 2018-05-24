@@ -20,16 +20,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bfb47e653cc3ef36135fd7c4f60771a354699af7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e4ad8c2a984229b96cc5b81c0fd505a264ba58f0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-bar-codes"></a>Konfigurowanie kodów kreskowych
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 W tym artykule opisano, jak używać skanera kodów kreskowych w programie Microsoft Dynamics 365 for Retail.
 
@@ -41,10 +41,10 @@ Kodów kreskowych można używać do kupowania i sprzedawania produktów, śledz
 4.  Tworzenie kodów kreskowych dla produktów.
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Ustawianie masek kodów kreskowych](set-up-bar-code-masks.md)
+[Konfigurowanie masek kodów kreskowych](set-up-bar-code-masks.md)
 
 
 

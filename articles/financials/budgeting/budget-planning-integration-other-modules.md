@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6db51f9fa180f0b8ce203fd2812c562b0201afa8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4a18190152b6e5ea520a81f1db2cf67ded652bbe
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="budget-planning-integration-with-other-modules"></a>Integracja modułu Planowanie budżetu z innymi modułami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Plany budżetu mogą być generowane z kilku różnych zasobów. Podstawowe elementy przetwarzania okresowego są takie same dla wszystkich zasobów. 
 
@@ -68,7 +68,7 @@ Opcja **Historyczny** na karcie **Cel** umożliwia używanie dat z danych źród
 
 Pole **Agreguj sumę według** u góry strony określa również używaną datę. To pole sumuje kwoty i opcjonalnie ustawia datę obowiązywania na pierwszy dzień roku lub okresu obrachunkowego. 
 
-Wiele pól na karcie <strong>Celu</strong> staje się dostępne do edycji lub tylko do odczytu, w zależności od wybranej akcji. W przypadku zmiany z tworzenia nowego planu budżetu na aktualizację istniejącego planu pole <strong>Nazwa planu budżetu</strong> staje się niedostępne, a dostępne stają się pola związane z wybieraniem istniejącego planu. Zarówno na karcie <strong>Cel</strong>, jak i <strong>Źródło**, pole **Księga</strong> jest zawsze niedostępne, ponieważ wartość zależy od wybranego procesu planowania budżetu. 
+Wiele pól na karcie <strong>Celu</strong> staje się dostępne do edycji lub tylko do odczytu, w zależności od wybranej akcji. W przypadku zmiany z tworzenia nowego planu budżetu na aktualizację istniejącego planu pole **Nazwa planu budżetu** staje się niedostępne, a dostępne stają się pola związane z wybieraniem istniejącego planu. Zarówno na karcie **Cel**, jak i **Źródło** pole **Księga** jest zawsze niedostępne, ponieważ wartość zależy od wybranego procesu planowania budżetu. 
 
 Pole **Klasa budżetu** pozwala wybrać wiersze planu budżetu jako transakcje wydatkowe lub transakcje przychodu. Zazwyczaj transakcje przychodu stanowią kredyt na koncie księgowym i dlatego są zapisywane jako liczby ujemne. Te transakcje pojawiają się również zwykle jako kwoty ujemne w planie budżetu. Jednak po dodaniu klasy budżetu jako pola w układzie planu można włączyć wyświetlanie przychodu jako wartości dodatnich.
 

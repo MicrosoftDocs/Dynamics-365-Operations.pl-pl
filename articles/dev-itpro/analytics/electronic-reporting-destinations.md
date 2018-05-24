@@ -19,16 +19,16 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5c92c1ca3f46d80a58ca315f1f695f082d1929ca
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fb7d0dc8b3ff9e8f1e4ade5cacfeed8f1a6871ab
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="electronic-reporting-destinations"></a>Miejsca docelowe raportowania elektronicznego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Można skonfigurować miejsce docelowe dla każdej konfiguracji formatu raportowania elektronicznego (ER) i jej składnika wyjściowego (folderu lub pliku). Użytkownicy, którym udzielono odpowiednich praw dostępu, mogą także modyfikować ustawienia miejsca docelowego w czasie wykonywania. Ten artykuł wyjaśnia problematykę zarządzania miejscami docelowymi w ER, obsługiwane typy miejsc docelowych oraz zagadnienia dotyczące zabezpieczeń.
 
@@ -51,7 +51,8 @@ Po utworzeniu odwołania można utworzyć plikowe miejsce docelowe dla każdego 
 
 [![Tworzenie plikowego miejsca docelowego](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-> ![UWAGA] Można utworzyć jedno plikowe miejsce docelowe dla każdego składnika wyjściowego tego samego formatu, takiego jak folder lub plik wybrany w polu **Nazwa pliku**. Następnie można włączać i wyłączać poszczególne miejsca docelowe w plikowym miejscu docelowym w oknie dialogowym **Ustawienia aplikacji docelowej**. Przycisk **Ustawienia** pozwala kontrolować wszystkie miejsca docelowe należące do wybranego plikowego miejsca docelowego. W oknie dialogowe **Ustawienia aplikacji docelowej** można kontrolować każde miejsce docelowe osobno, ustawiając dla niego opcję **Włączone**.
+> [!NOTE] 
+> Można utworzyć jedno plikowe miejsce docelowe dla każdego składnika wyjściowego tego samego formatu, takiego jak folder lub plik wybrany w polu **Nazwa pliku**. Następnie można włączać i wyłączać poszczególne miejsca docelowe w plikowym miejscu docelowym w oknie dialogowym **Ustawienia aplikacji docelowej**. Przycisk **Ustawienia** pozwala kontrolować wszystkie miejsca docelowe należące do wybranego plikowego miejsca docelowego. W oknie dialogowe **Ustawienia aplikacji docelowej** można kontrolować każde miejsce docelowe osobno, ustawiając dla niego opcję **Włączone**.
 
 [![Okno dialogowe Ustawienia aplikacji docelowej](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
 
@@ -130,7 +131,8 @@ Dla miejsc docelowych ER są używane dwa typy uprawnień i obowiązków. Jeden 
 | PaymAccountsPayablePaymentsClerk    | Pracownik ds. płatności rozrachunków z dostawcami            | ERFormatDestinationRuntimeConfigure | Konfigurowanie aplikacji docelowej formatu raportowania elektronicznego w trakcie wykonywania |
 | PaymAccountsReceivablePaymentsClerk | Pracownik ds. płatności rozrachunków z odbiorcami         | ERFormatDestinationRuntimeConfigure | Konfigurowanie aplikacji docelowej formatu raportowania elektronicznego w trakcie wykonywania |
 
-> ![UWAGA] W omówionych wyżej obowiązkach są używane dwa uprawnienia. Te uprawnienia mają takie same nazwy, jak odpowiadające im obowiązki: **ERFormatDestinationConfigure** i **ERFormatDestinationRuntimeConfigure**.
+> [!NOTE]
+> W omówionych wyżej obowiązkach są używane dwa uprawnienia. Te uprawnienia mają takie same nazwy, jak odpowiadające im obowiązki: **ERFormatDestinationConfigure** i **ERFormatDestinationRuntimeConfigure**.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="i-have-imported-electronic-configurations-and-i-see-them-on-the-electronic-reporting-configurations-page-but-why-dont-i-see-them-on-the-electronic-reporting-destinations-page"></a>Mam zaimportowane konfiguracje elektroniczne i widzę je na stronie konfiguracji raportowania elektronicznego. Ale dlaczego nie widzę ich na stronie miejsc docelowych raportowania elektronicznego?
@@ -153,9 +155,9 @@ Formuła jest specyficzna dla konfiguracji ER. Na przykład jeśli używasz konf
 
 Warunkiem wstępnym jest to, aby format był dostępny w konfiguracjach raportowania elektronicznego. Jeśli masz format, otwórz stronę **Aplikacja docelowa raportowania elektronicznego** i utwórz nowe odwołanie do tej konfiguracji. Następnie trzeba utworzyć cztery plikowe miejsca docelowe, po jednym dla każdego składnika wyjściowego. Utwórz pierwsze plikowe miejsce docelowe, nadaj mu nazwę np. **Folder** i wybierz plik, który reprezentuje folder w Twojej konfiguracji. Następnie kliknij przycisk **Ustawienia** i upewnij się, że wszystkie miejsca docelowe są wyłączone. Dla tego plikowego miejsca docelowego folder nie będzie tworzony. Domyślnie ze względu na zależności hierarchiczne między plikami i folderami nadrzędnymi pliki będą się zachowywać w ten sam sposób. Innymi słowy nie będą nigdzie wysyłane. Aby zastąpić to domyślne zachowanie, należy utworzyć trzy kolejne plikowe miejsca docelowe, po jednym dla każdego pliku. W ustawieniach miejsca docelowego każdego z nich należy włączyć miejsce docelowe, do którego plik ma być wysyłany.
 
-## <a name="see-also"></a>Informacje dodatkowe
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
+[Omówienie raportowania elektronicznego](general-electronic-reporting.md)
 
 
 

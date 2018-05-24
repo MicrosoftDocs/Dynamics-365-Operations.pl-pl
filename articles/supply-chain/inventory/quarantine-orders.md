@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 515f14e72137f7299093cc6e75cb8e6eec2893fb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9a05c35d2e4a9e3ad81421eac863d182e8a6b499
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="quarantine-orders"></a>Zlecenia kwarantanny
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano wykorzystywanie zleceń kwarantanny do blokowania zapasów.
 
@@ -64,7 +64,7 @@ Po zakończeniu zlecenia kwarantanny towar jest przenoszony z magazynu kwarantan
 ## <a name="quarantine-order-scrap"></a>Odpadki zamówienia kwarantanny
 W ramach procesu zlecenia kwarantanny można przekazać zapasy do likwidacji. Podczas przetwarzania odpadków stan zapasów zostanie ustawiony na **Sprzedane** przez transakcję wydania z magazynu kwarantanny.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Blokowanie zapasów](inventory-blocking.md)

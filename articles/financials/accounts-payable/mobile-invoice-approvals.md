@@ -18,16 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a44e5d04edf327da2b3ba4676c8b823291801abe
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="mobile-invoice-approvals"></a>Zatwierdzanie faktur na urządzeniach przenośnych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Funkcje komórkowe w programie Microsoft Dynamics 365 for Finance and Operations pozwalają użytkownikom biznesowym projektować mobilne środowiska obsługi. W scenariuszach zaawansowanych platforma umożliwia również deweloperom rozszerzanie funkcjonalności zgodnie z potrzebami. Najbardziej skutecznym sposobem, aby poznać niektóre nowe koncepcje obsługi na telefonach komórkowych, jest przejście przez proces projektowania w kilku scenariuszach. Ten temat przedstawia praktyczne podejście do projektowania scenariuszy komórkowych na bazie procesu zatwierdzania faktur od dostawców na urządzeniach komórkowych. Ten temat powinien ułatwić projektowanie w innych wariantach scenariuszy i może być również wykorzystywany w innych scenariuszach, niezwiązanych z fakturami od dostawców.
 
@@ -175,9 +175,9 @@ Aby zaprojektować stronę szczegółów faktur dla urządzeń przenośnych, uż
 1. W adresie URL usługi Finance and Operations zastąp nazwę elementu menu wyrażeniem **VendMobileInvoiceHeaderDetails**, aby otworzyć formularz.
 2. Otwórz projektanta środowiska komórkowego za pomocą przycisku **Ustawienia** (koło zębate).
 3. Kliknij przycisk **Edytuj**, aby uruchomić tryb edycji w obszarze roboczym.
-4. Zaznacz utworzoną wcześniej stronę <strong>Moje faktury od dostawców** i kliknij przycisk **Edytuj</strong>.
+4. Zaznacz utworzoną wcześniej stronę **Moje faktury od dostawców** i kliknij przycisk **Edytuj**.
 5. Na karcie **Pola** kliknij nagłówek kolumny **Siatka**.
-6. Kliknij kolejno przyciski **Właściwości** &gt; **Dodaj stronę**. **Uwaga:** Po kliknięciu nagłówka **Siatka** i dodaniu strony automatycznie jest ustanawiana relacja ze stroną szczegółów.
+6. Kliknij kolejno opcje **Właściwości &gt; Dodaj stronę**. **Uwaga:** Po kliknięciu nagłówka **Siatka** i dodaniu strony automatycznie jest ustanawiana relacja ze stroną szczegółów.
 7. Wprowadź tytuł strony, taki jak **Szczegóły faktury**, oraz opis, taki jak **Wyświetlanie nagłówka i szczegółów wiersza faktury**.
 8. Kliknij przycisk **Wybierz pola**. Pamiętaj, że kolejność dodawania będzie kolejnością, w jakiej pola będą wyświetlane użytkownikowi końcowemu. Jedynym sposobem zmiany kolejności pól będzie ponowne wybranie wszystkich pól. 
 9. Zgodnie z wymaganiami tego scenariusza dodaj następujące pola z nagłówka:

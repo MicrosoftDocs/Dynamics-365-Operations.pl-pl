@@ -16,30 +16,28 @@ ms.assetid:
 ms.search.region: Global
 ms.author: bking
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: bbf4da5a33876973a376a0580fd553e15bd6febc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7046b687f99df32a3e1410c37c9a30ca285fa08f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="data-validation-workspace"></a>Obszar roboczy sprawdzania poprawności danych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera omówienie obszaru roboczego **Lista kontrolna weryfikacji danych** oraz pokrewnej konfiguracji.
-
-## <a name="data-validation-checklist-workspace"></a>Obszar roboczy Lista kontrolna weryfikacji danych
 
 Obszar roboczy **Lista kontrolna weryfikacji** danych umożliwia śledzenie procesów sprawdzania poprawności danych dla różnych firm, obszarów i osób. Lista kontrolna może być używana podczas nowej implementacji, po wykonaniu uaktualnienia lub po migracji. W zależności od widoku obszaru roboczego **Lista kontrolna weryfikacji danych** będą widoczne albo wszystkie zadania i stany dla projektu sprawdzania poprawności danych, albo tylko zadania, które są przypisane do Ciebie.
 
 Należy najpierw wybrać projekt weryfikacji danych w górnej części obszaru roboczego. Wszystkie dane, które są widoczne w obszarze roboczym, są następnie filtrowane według wybranego projektu weryfikacji danych.
 
-### <a name="summary-tiles"></a>Kafelki podsumowania
+## <a name="summary-tiles"></a>Kafelki podsumowania
 
 Kafelki **Podsumowanie** zawierają przegląd procesu, a wskaźniki ułatwiają realizację procesu sprawdzania poprawności danych. Widoczne są wszystkie pozostałe zadani, ukończone zadania, zadania w toku i nierozpoczęte dla procesu. Te informacje dotyczą wszystkich firm, które są uwzględniane w wybranym projekcie weryfikacji danych.
 
-### <a name="tasks-and-status-section"></a>Sekcja Zadania i stan
+## <a name="tasks-and-status-section"></a>Sekcja Zadania i stan
 
 W sekcji **Zadania i stan** stan całego projektu sprawdzania poprawności danych jest wyświetlany na różne sposoby: według firmy, obszaru i listy zadań. Można również wybrać filtr pokazujący stan dla określonego przedsiębiorstwa. Każda karta stanu pokazuje podział według procentu ukończenia oraz według liczby pozostałych zadań.
 
@@ -52,11 +50,11 @@ Do zadania można dołączać pliki, notatki, obrazy i adresy URL za pomocą akc
 
 Opcja **Wykonane przez** jest automatycznie wypełniane po zakończeniu zadania imieniem i nazwiskiem pracownika, który wykonał zadanie. Gdy zadanie jest oznaczone jako ukończone, pole **Data zakończenia** jest automatycznie aktualizowane na bieżącą datę i godzinę.
 
-### <a name="configure-data-validation-project-page"></a>Strona Konfiguruj projekt weryfikacji danych
+## <a name="configure-data-validation-project-page"></a>Strona Konfiguruj projekt weryfikacji danych
 
 Aby można było używać obszaru roboczego **Lista kontrolna weryfikacji danych**, należy skonfigurować proces za pomocą strony **Konfiguruj projekt weryfikacji danych**. (Kliknij kolejno opcje **Obszary robocze** \> **Lista kontrolna weryfikacji danych** \> **Konfiguruj projekt weryfikacji danych**).
 
-### <a name="task-areas"></a>Obszary zadań
+## <a name="task-areas"></a>Obszary zadań
 
 Za pomocą obszarów zadań można grupować zadania weryfikacji danych w logiczne obszary własności w obrębie organizacji. Obszarami zadań mogą być na przykład Rozrachunki z dostawcami, Rozrachunki z odbiorcami lub Księga główna.
 

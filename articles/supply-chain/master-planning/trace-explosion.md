@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f3891688542ac6d4f9afce026808c65992a592d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2642ced283d815ad671512cc5a17e531e9169f91
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="use-tracing-for-explosion"></a>Korzystanie z funkcji śledzenia rozłożenia
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule wyjaśniono, jak za pomocą funkcji śledzenia można badać przyczyny stojące za wynikiem rozłożenia zamówienia.
 
@@ -42,7 +42,7 @@ Po włączeniu śledzenia można wyświetlać informacje o czynnikach, które wp
 
 Można wyświetlić szczegółowe informacje o prognozach i działaniach dla wybranego zamówienia. Na stronie **Rozłożenie** dane śledzenia są dostępne na karcie **Wyjaśnienie** w górnym panelu. Śledzenie włącza się w chwili rozłożenia zamówienia. Aby uruchomić śledzenie zamówienia, kliknij **Aktualizacja**, a następnie zaznacz pole wyboru **Włącz śledzenie**. Za pomocą **Znajdź tekst** możesz szukać w dzienniku konkretnych informacji. Wyniki wyszukiwania zostaną wyróżnione w drzewie.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Plany główne](master-plans.md)

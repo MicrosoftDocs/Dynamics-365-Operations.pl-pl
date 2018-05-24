@@ -19,18 +19,18 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1c7209c91f3821a77e9b127d767c78df403ff6cc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 475470fa87455e187e0a93148046cb1df634da1f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="approve-and-confirm-purchase-orders"></a>Zatwierdzanie i potwierdzanie zamówień zakupu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 W tym artykule opisano stany, przez które przechodzi zamówienie zakupu po utworzeniu, oraz skutek włączenia funkcji zarządzanie zmianami w zamówieniach zakupu.
 
@@ -75,14 +75,14 @@ Jeśli część zamówionej ilości wiersza zamówienia zakupu została dostarcz
 
 Po potwierdzeniu zamówienia nie można go usunąć. Jednakże można anulować ilości całkowitą lub wszelką pozostałą ilość w zamówieniu, o ile tylko ta ilość nie została odebrana ani zafakturowana.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Omówienie zamówień zakupu](purchase-order-overview.md)
 
 [Tworzenie zamówienia zakupu](purchase-order-creation.md)
 
-[Przyjęcie produktów względem zamówień zakupu](product-receipt-against-purchase-orders.md)
+[Przyjęcie produktów na podstawie zamówień zakupu](product-receipt-against-purchase-orders.md)
 
 [Omówienie faktur od dostawców](../../financials/accounts-payable/vendor-invoices-overview.md)
 

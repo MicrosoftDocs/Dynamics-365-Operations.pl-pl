@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4fbcc83123ce11a8f9208226a67a01e43b255bab
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ea1386bc06c0e91a2d1f23dd05794ca6ff99106a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="row-definitions-in-financial-report-designer"></a>Definicje wierszy w Projektancie raportów finansowych
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zawartość każdego wiersza w raporcie finansowym. Definicję wiersza można łączyć z definicjami kolumn, drzewa raportowania i raportów, by tworzyć grupy elementów konstrukcyjnych dostępne dla wielu firm.
 
@@ -172,7 +172,7 @@ Aby ułatwić wyświetlanie kolumn, nad którymi pracujesz w definicji wiersza, 
 2.  Kliknij prawym przyciskiem myszy zminimalizowaną kolumnę, którą chcesz wyświetlać, a następnie kliknij **Odkryj**.
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Raporty finansowe](financial-reporting-intro.md)

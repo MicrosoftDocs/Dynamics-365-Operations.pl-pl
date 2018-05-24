@@ -1,6 +1,6 @@
 ---
 title: "Tworzenie płatności dla dostawców za pomocą propozycji płatności"
-description: "Ten temat zawiera omówienie opcji propozycji płatności wraz z przykładami pokazującymi działanie propozycji płatności. Propozycje płatności są często używane do tworzenia płatności dostawcy, ponieważ za pomocą zapytań można szybko wybrać faktury dostawcy do zapłaty na podstawie kryteriów takich jak termin i rabat gotówkowy."
+description: "Ten temat zawiera omówienie opcji propozycji płatności wraz z przykładami pokazującymi działanie propozycji płatności."
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1199329f7d669a291249e22e393842673a8907c3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Tworzenie płatności dla dostawców za pomocą propozycji płatności
+# <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Tworzenie płatności od dostawców za pomocą propozycji płatności
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera omówienie opcji propozycji płatności wraz z przykładami pokazującymi działanie propozycji płatności. Propozycje płatności są często używane do tworzenia płatności dostawcy, ponieważ za pomocą zapytań można szybko wybrać faktury dostawcy do zapłaty na podstawie kryteriów takich jak termin i rabat gotówkowy. 
 
@@ -47,7 +47,7 @@ Kwerenda propozycji płatności zawiera różne karty, z których każda ma ró�
 - **Sprawdź saldo dostawcy** — jeśli ta opcja jest ustawiona jako **Tak**, system sprawdza przed opłaceniem faktur, czy dostawca nie ma salda debetowego. Jeśli dostawca ma saldo debetowe, płatność nie zostanie utworzona. Na przykład dostawca może mieć noty kredytowe lub zaksięgowane, ale jeszcze nierozliczone płatności. W takim przypadku nie należy płacić dostawcy. Zamiast tego noty kredytowe lub płatności powinny zostać rozliczone względem niezapłaconych faktur.
 - **Usuń ujemne płatności** — opcja ta działa różnie, w zależności od tego, czy płatności dotyczą poszczególnych faktur czy sumy faktur spełniających kryteria płatności. Ta opcja jest określana w metodzie płatności.
 - **Płatność dla każdej faktury** — jeśli opcja **Usuń ujemne płatności** jest ustawiona jako **Tak**, a istnieją nierozliczone faktury i płatności dla dostawcy, tylko faktura zostanie zaznaczona do płatności. Płatność jest rozliczana na podstawie faktury na kwotę. Jeśli opcja **Usuń ujemne płatności** jest ustawiona jako **Nie** i nie są rozliczane faktury i płatności, do zapłacenia zostaną wybrane i faktury i płatności. Dla płatności jest tworzona płatność i zwrot (płatność ujemna).
-- <strong>Płatności dla sumy faktur</strong> — w przypadku ustawienia opcji <strong>Usuń ujemne płatności</strong> jako <strong>Tak</strong>, a istnieją nierozliczone faktury i płatności dla dostawcy, do płatności zostanie wybrana nierozliczona faktura i płatność, a kwoty te są sumowane w łączną kwotę płatności. Jedyny wyjątek występuje wtedy, jeśli suma skutkuje zwrotem. W takim przypadku faktury ani płatności nie są zaznaczane. Jeżeli opcja <strong>Usuń ujemne płatności** jest ustawiona jako **Nie</strong>, faktura i płatność nie są rozliczone, zarówno faktura jak i płatność są wybrane do płatności, natomiast kwoty są sumowane w łączną kwotę płatności.
+- **Płatności dla sumy faktur** — w przypadku ustawienia opcji **Usuń ujemne płatności** jako **Tak**, a istnieją nierozliczone faktury i płatności dla dostawcy, do płatności zostanie wybrana nierozliczona faktura i płatność, a kwoty te są sumowane w łączną kwotę płatności. Jedyny wyjątek występuje wtedy, jeśli suma skutkuje zwrotem. W takim przypadku faktury ani płatności nie są zaznaczane. Jeżeli opcja **Usuń ujemne płatności** — jest ustawiona jako **Nie**, faktura i płatność nie są rozliczone, zarówno faktura jak i płatność są wybrane do płatności, natomiast kwoty są sumowane w łączną kwotę płatności.
 - **Drukuj tylko raport** — ustaw tę opcję jako **Tak**, aby zobaczyć wyniki propozycji płatności w raporcie, ale bez tworzenia płatności.
 - **Uwzględnij faktury od dostawców z innych firm** — jeśli dana organizacja ma scentralizowany proces płatności i propozycji płatności, a propozycja płatności powinna uwzględniać faktury z innych firm zamieszczonych w kryteriach wyszukiwania, ustaw tę opcję na **Tak**.
 - **Proponuj osobną płatność dostawcy dla każdej firmy** — jeśli ta opcja jest ustawiona jako **Tak**, dla każdej firmy zostanie utworzona osobna płatność na dostawcę. Dostawca w płatności jest taki sam jak na fakturze z każdej firmy. Jeśli ta opcja została ustawiona jako **Nie**, a ten sam dostawca ma faktury w wielu podmiotach prawnych, zostanie utworzona jedna płatność na łączną kwotę z wybranych faktur. Dostawca na płatności jest taki sam jak dostawca w bieżącej firmie. Jeśli nie istnieje konto dostawcy w bieżącej firmie, używane jest konto dostawcy dla pierwszej faktury do zapłaty.
@@ -115,7 +115,8 @@ Funkcja kontroli wymiarów umożliwia kontrolowanie grupowania wierszy generowan
 -   Pole **Kontrola wymiarów** jest uaktywnione bez dalszego definiowania wymiarów. Propozycja płatności zostanie utworzona bez brania wymiarów pod uwagę. Utworzona transakcja nie dziedziczy żadnych wymiarów z zastosowanego zapisu.
 -   Pole **Kontrola wymiarów** jest uaktywnione i włączono dodatkowe wymiary. Teraz można zdefiniować sposób kopiowania wymiarów do arkusza. Na przykład: • Zaznacz pole wyboru **BusinessUnit**, aby utworzyć propozycję płatności według jednostki biznesowej dla metody płatności, • Zaznacz pole wyboru **CostCenter**, aby utworzyć propozycję płatności według centrum kosztu do metody płatności
 
-**Uwaga:** W przypadku wybrania kilku wymiarów w trzeciej opcji propozycja płatności zostanie utworzona z uwzględnieniem połączenia tych wymiarów.
+> [[!NOTE]
+> W przypadku wybrania kilku wymiarów w trzeciej opcji propozycja płatności zostanie utworzona z uwzględnieniem połączenia tych wymiarów.
 
 #### <a name="bank-account-selection"></a>Wybór konta bankowego
 

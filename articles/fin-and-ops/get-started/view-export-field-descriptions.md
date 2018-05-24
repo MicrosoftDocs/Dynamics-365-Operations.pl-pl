@@ -19,16 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0164d64b8c37c19a3b8b13970dbda5927073eca8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d1ee87dbe9dab089a893d9c69d2573a4c4b11b58
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Wyświetlanie i eksportowanie opisów pól
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano, jak wyświetlać opisy pól i jak używać strony Opisy pól do eksportowania opisów.
 
@@ -97,7 +97,7 @@ Aby wyświetlić wszystkie pola na stronie, ustaw opcję **Uwzględnij pola bez 
 
 Aby uzyskać informacje o różnych sposobach znajdowania stron, zobacz sekcję „Wyszukiwanie stron” wcześniej w tym artykule. Jeśli została wpisana dokładna nazwa strony, opisy pól mogą nie być pokazywane, gdy więcej niż jedna strona ma tę samą nazwę. Kliknij strzałkę w polu **Wybór strony**, aby otworzyć wyfiltrowaną listę dostępnych stron.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Dostosowywanie pomocy pól](../../dev-itpro/user-interface/customize-field-help.md)

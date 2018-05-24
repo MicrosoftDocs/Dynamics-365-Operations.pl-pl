@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f51fb41e19a47a9db02166de91b9e027154d6a7d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d667f2abbc7bd00d46f40178b9f6e9d21c6f79f3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="procurement-catalogs"></a>Katalogi zaopatrzenia
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule opisano w sposób ogólny, jak specjaliści ds. zakupów mogą konfigurować katalogi zaopatrzenia i nimi zarządzać. Katalogi zaopatrzenia definiują towary i usługi, które pracownicy firmy mogą zamawiać do użytku wewnętrznego.
 
@@ -70,7 +70,7 @@ Aktualizacje są publikowane automatycznie lub ręcznie, w zależności od opcji
 -   **Obie** — Jeśli katalog zawiera kategorie produktów, które mają domyślny typ aktualizacji **Statyczna**, należy go ręcznie aktualizować w przypadku zmiany tych kategorii. Jeśli katalog zawiera kategorie produktów, które mają domyślny typ aktualizacji **Dynamiczna**, jest automatycznie aktualizowany po wprowadzeniu każdej zmiany.
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Ustawianie hierarchii kategorii zaopatrzenia (przewodnik po zadaniu)](tasks/set-up-procurement-category-hierarchy.md)

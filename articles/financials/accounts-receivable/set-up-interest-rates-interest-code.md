@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c0e80bae4716d2b12f515f38d3b641de24680571
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1c19cb68df5be5245722da43f3ef9c2072873a34
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Konfigurowanie stopy procentowej dla kodu odsetek
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kody odsetek zawierają ustawienia określające, kiedy i jak i odsetki obciążają i jak są obliczane na kontach zaległych.
 
@@ -56,7 +56,7 @@ Na przykład aby ustawić kod odsetek, który ma stosować oprocentowanie 5 co d
 Można skonfigurować stopy procentowe, które obliczają określoną kwotę w walucie.
 - Kwotę odsetek określa się dla każdej waluty w kodzie odsetek.
 - Można wprowadzić opcjonalne limity kwot odsetek.
-- Opcja <strong>Kwota** jest wybrana w polu **Podstawa naliczania odsetek</strong> na stronie <strong>Skonfiguruj kody odsetek</strong>.
+- Opcja **Kwota** jest wybrana w polu **Podstawa naliczania odsetek** na stronie **Skonfiguruj kody odsetek**.
 
 Na przykład aby ustawić kod odsetek, który ma stosować oprocentowanie 25,00 co 20 dni, gdy transakcja płatności faktury przekroczy termin płatności, wprowadź 20 w polu **Obliczaj odsetki co** oraz wybierz opcję **Dzień**.
 

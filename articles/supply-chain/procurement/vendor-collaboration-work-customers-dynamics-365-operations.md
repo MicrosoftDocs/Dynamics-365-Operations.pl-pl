@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4252112272e2f86c2c18dc399a713bf652e4228e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6ab1d60839131b3d4bb1782319754ba63d54cfd7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vendor-collaboration-with-customers"></a>Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano używanie portalu współpracy z dostawcami do zarządzania współpracą z odbiorcami w programie Microsoft Dynamics 365 for Finance and Operations. Dostawcy mogą ukończyć szereg procesów biznesowych z następujących obszarów roboczych:
 
@@ -141,7 +141,7 @@ Jako dostawca możesz uzyskać dostęp do części informacji, które klient prz
 
 Dostępne informacje to nazwa dostawcy, adres, informacje kontaktowe, osoby kontaktowe i ich informacje kontaktowe, numery identyfikacyjne, numery identyfikacji podatkowej, kategorie zaopatrzenia zatwierdzone do sprzedaży odbiorcy przez dostawcę oraz informacje o certyfikatach.
 
-## <a name="see-also"></a>Informacje dodatkowe
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md)
 

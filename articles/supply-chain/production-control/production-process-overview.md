@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
+ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8a12627db93b131450015539bb92ea4780518ed3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-process-overview"></a>Omówienie procesu produkcji
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera omówienie procesów produkcji. Opisuje różne etapy zleceń produkcyjnych, szarż produkcji i zadań Kanban — od utworzenia zamówienia aż do zamknięcia okresu finansowego. 
 
@@ -78,14 +78,14 @@ Dla wszystkich typów trybu mieszanego produkcji mogą wystąpić następujące 
 12. **Zamknięcie okresu** — niektóre zasady rachunku kosztów, takie jak średnia okresowa, wycena wsteczna, FIFO lub LIFO wymagają okresowych działań w celu zamknięcia zapasów lub okresu obrachunkowego. Na ogół system próbuje zgłosić całe zużycie materiałów i zasobów oraz korekty zapasów i odpadków przed zamknięciem okresów. Zgłoszenie to odbywa się zwykle za pomocą arkuszy przesunięć magazynowych lub arkuszy korekt. Celem jest dokonanie oceny wyników ekonomicznych jednostek operacyjnych na okres. W niektórych przypadkach, gdy używane są zlecenia produkcyjne obejmujące okresy raportowania finansowego, stosuje się arkusze produkcyjne do zgłaszania postępów produkcji i zużycia zasobów na koniec okresu.
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Informacja zwrotna o produkcji](production-feedback.md)
 
 [Modele konfiguracji produktu](../pim/product-configuration-models.md)
 
-[Lean manufacturing](lean-manufacturing-overview.md)
+[Wytwarzanie typu Lean manufacturing](lean-manufacturing-overview.md)
 
 
 

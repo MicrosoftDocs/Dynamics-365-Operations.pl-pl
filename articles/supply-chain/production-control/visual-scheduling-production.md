@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f7001158a498aa28028167a0f76ad610ec09b43c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c3726038d9782891988e16cb98cf04cf47b7e66c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="gantt-chart-for-job-scheduling"></a>Wykres Gantta do planowania zadań
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Wykres Gantta zaprojektowano w taki sposób, aby umożliwiał planistom produkcji kontrolowanie i optymalizowanie planu produkcji. Wykres Gantta obrazuje przepływ operacji i pozwala łatwo korygować harmonogram produkcji, uwzględniając niedobory materiałów lub zasobów. Pomoże to planistom najlepiej wykorzystywać dostępne zasoby, minimalizować pracę w toku oraz optymalizować czasy realizacji zleceń produkcyjnych.
 
@@ -156,7 +156,7 @@ Wykres Gantta można otworzyć z następujących stron.
 |           <strong>Zadania do zakończenia</strong> (lista w obszarze roboczym <strong>Zarządzanie halą produkcyjną</strong>)            |                                                                                               Lista Zadania do zakończenia w obszarze roboczym <strong>Zarządzanie halą produkcyjną</strong> pokazuje zadania ze zleceń i szarż produkcyjnych, które są w toku dla wybranych zasobów w obszarze roboczym. Za pomocą elementu menu <strong>Wykres Gantta</strong> można otworzyć wykres Gantta, do którego będą załadowane wszystkie zadania zaznaczone na liście.                                                                                               |
 | <strong>Zlecenia produkcyjne do zwolnienia</strong> (otwierana z obszaru roboczego <strong>Zarządzanie halą produkcyjną</strong>) |                                                                                                                                         Strona Zlecenia produkcyjne do zwolnienia jest otwierana z obszaru roboczego <strong>Zarządzanie halą produkcyjną</strong>. Ta strona pokazuje zaplanowane zlecenia i szarże produkcyjne oczekującej na zwolnienie. Na tej stronie można otworzyć wykres Gantta dla wybranych zleceń produkcyjnych.                                                                                                                                          |
 
-## <a name="see-also"></a>Informacje dodatkowe  
+## <a name="additional-resources"></a>Dodatkowe zasoby  
 [Planowanie wizualne za pomocą wykresu Gantta dla zleceń produkcyjnych i zamówień partii (film)](https://youtu.be/BtbuShkGj4I)
 
 [Wizualne planowanie produkcji (skrypt demonstracyjny)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)

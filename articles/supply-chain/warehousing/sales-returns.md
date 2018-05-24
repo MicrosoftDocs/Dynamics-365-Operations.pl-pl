@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e2125b3616310196b2c5ede0ddcaab24856ddc34
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d4da2ed8d61ffae3a4a4dc24793d82de22e86e59
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="sales-returns"></a>Zwroty sprzedaży
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ten temat zawiera informacje o procesie zamówień zwrotu. Opisuje koncepcję zwrotów od odbiorców oraz ich wpływ na wycenę i ilości dostępnych zapasów.
 
@@ -88,7 +88,7 @@ Po wypełnieniu nagłówka zwrotu można utworzyć wiersze zwrotu przy użyciu j
 -   Ręczne wprowadzenie szczegółów towaru, ilości i innych informacji dla każdego wiersza zwrotu.
 -   Utworzenie wiersza zwrotu za pomocą funkcji **Znajdź zamówienie sprzedaży**. Zalecamy używanie tej funkcji podczas tworzenia zamówienia zwrotu. Funkcja **Znajdź zamówienie sprzedaży** ustanawia odwołanie od wiersza zwrotu do wiersza zafakturowanego zamówienia sprzedaży, a następnie pobiera szczegóły wiersza, takie jak numer towaru, ilość, cena, rabat i wartości kosztów, z wiersza sprzedaży. Odwołanie pomaga zagwarantować, że podczas zwracania produktu do firmy jest on wyceniany według tego samego kosztu jednostkowego, jak przy sprzedaży. Odwołanie sprawdza też, czy zamówienia zwrotu nie są tworzone dla ilości przekraczającej ilość sprzedaną na fakturze.
 
-**Uwaga:** Wiersze zwrotu zawierające odwołania do zamówienia sprzedaży są obsługiwane jako korekty (cofnięcia) sprzedaży. Aby uzyskać więcej informacji, zobacz sekcję „Księgowanie w księdze" w dalszej części tego tematu.
+>[Uwaga!] Wiersze zwrotu zawierające odwołania do zamówienia sprzedaży są obsługiwane jako korekty (cofnięcia) sprzedaży. Aby uzyskać więcej informacji, zobacz sekcję „Księgowanie w księdze" w dalszej części tego tematu.
 
 ### <a name="charges"></a>Opłaty
 
@@ -193,15 +193,26 @@ W trakcie procesu przybycia zwroty są integrowane z ogólnym procesem przybycia
 
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Identyfikacji produktów na liście Przegląd przyjęć
 
-Na stronie **Przegląd przyjęć** znajduje się lista wszystkich planowanych przychodzących przybyć. **Uwaga:** Przybycia z zamówień zwrotu muszą być przetwarzane oddzielnie od innych typów transakcji przybycia. Po zidentyfikowaniu przychodzącej paczki na stronie **Przegląd przyjęć** (na przykład za pomocą towarzyszącego dokumentu RMA) w okienku akcji kliknij przycisk **Rozpocznij przyjęcie**, aby utworzyć i zainicjować arkusz przybycia pasujący do przybycia.
+Na stronie **Przegląd przyjęć** znajduje się lista wszystkich planowanych przychodzących przybyć. 
+>[Uwaga] Przywozy z zamówień zwrotu muszą być przetwarzane oddzielnie od innych typów transakcji przywozu. Po zidentyfikowaniu przychodzącej paczki na stronie **Przegląd przyjęć** (na przykład za pomocą towarzyszącego dokumentu RMA) w okienku akcji kliknij przycisk **Rozpocznij przyjęcie**, aby utworzyć i zainicjować arkusz przybycia pasujący do przybycia.
 
 ### <a name="edit-the-arrival-journal"></a>Edycja arkusza przybycia
 
-Ustawiając w opcji **Zarządzanie kwarantanną** wartość **Tak**, można utworzyć zlecenie kwarantanny dla wiersza zwrotu. Jeśli wiersz został wysłany do kwarantanny w celu inspekcji, nie można określić kodu dyspozycji. **Uwaga:** Jeśli ustawisz w opcji **Zarządzanie kwarantanną** wartość **Tak** w grupie modeli zapasów towaru, opcja **Zarządzanie kwarantanną** na stronie **Wiersze arkusza** zostanie oznaczona dla wiersza arkusza przybycia i nie będzie można jej zmienić. Jeśli wiersz jest wysyłany do kwarantanny, należy określić właściwy magazyn kwarantanny. Jeśli wiersz przybycia nie jest wysyłany do inspekcji, magazynier zajmujący się przybyciami musi określić kod dyspozycji bezpośrednio w wierszu arkusza przybycia, a następnie zaksięgować arkusz przybycia. Jeśli ten sam kod dyspozycji nie ma być przypisywany do całej ilości wiersza zwrotu albo jeśli nie przyjęto całej ilości wiersza, należy podzielić wiersz. Podział wiersza arkusza przybycia powoduje również podział wiersza zwrotu (**SalesLine**) i utworzenie nowego identyfikatora partii. W celu podziału wiersza można zmniejszyć ilość w wierszu arkusza przybycia. Po zaksięgowaniu arkusza jest tworzony nowy wiersz zwrotu o stanie **Oczekiwane** na pozostałą ilość. Wierz można również podzielić, klikając kolejno opcje **Funkcje** &gt; **Podziel**.
+Ustawiając w opcji **Zarządzanie kwarantanną** wartość **Tak**, można utworzyć zlecenie kwarantanny dla wiersza zwrotu. Jeśli wiersz został wysłany do kwarantanny w celu inspekcji, nie można określić kodu dyspozycji. 
+ 
+Jeśli ustawisz w opcji **Zarządzanie kwarantanną** wartość **Tak** w grupie modeli zapasów towaru, opcja **Zarządzanie kwarantanną** na stronie **Wiersze arkusza** zostanie oznaczona dla wiersza arkusza przywozu i nie będzie można jej zmienić. Jeśli wiersz jest wysyłany do kwarantanny, należy określić właściwy magazyn kwarantanny. 
+
+Jeśli wiersz przybycia nie jest wysyłany do inspekcji, magazynier zajmujący się przybyciami musi określić kod dyspozycji bezpośrednio w wierszu arkusza przybycia, a następnie zaksięgować arkusz przybycia. Jeśli ten sam kod dyspozycji nie ma być przypisywany do całej ilości wiersza zwrotu albo jeśli nie przyjęto całej ilości wiersza, należy podzielić wiersz. Podział wiersza arkusza przybycia powoduje również podział wiersza zwrotu (**SalesLine**) i utworzenie nowego identyfikatora partii. W celu podziału wiersza można zmniejszyć ilość w wierszu arkusza przybycia. Po zaksięgowaniu arkusza jest tworzony nowy wiersz zwrotu o stanie **Oczekiwane** na pozostałą ilość. Wierz można również podzielić, klikając kolejno opcje **Funkcje** &gt; **Podziel**.
 
 ### <a name="process-the-quarantine-order"></a>Przetwarzanie zlecenia kwarantanny
 
-Jeśli zwrócone produkty są wysyłane do inspekcji w magazynie kwarantanny, wszelkie dodatkowe przetwarzanie odbywa się na podstawie zlecenia kwarantanny. Dla każdego wiersza przybycia wysyłanego do kwarantanny jest tworzone jedno zlecenie kwarantanny. Kod dyspozycji wskazuje wynik procesu inspekcji. Zlecenie kwarantanny można podzielić tak samo, jak się dzieli arkusz przybycia. Podział zlecenia kwarantanny powoduje odnośny podział wiersza zwrotu. Po wprowadzeniu kodu dyspozycji sfinalizuj zlecenie kwarantanny, używając funkcji **Koniec** lub **Zgłoś jako gotowe**. Jeśli wybierzesz funkcję **Zgłoś jako gotowe**, w wyznaczonych magazynie zostanie utworzone nowe przybycie. Następnie można przetwarzać to przybycie za pomocą opcji na stronie **Przegląd przyjęć**. Jeżeli przybycie ma swoje źródło w zleceniu kwarantanny, nie można zmienić kodu dyspozycji przypisanego podczas inspekcji. Jeśli sfinalizujesz zlecenie kwarantanny za pomocą funkcji **Koniec**, partia jest automatycznie rejestrowana. Czasami towar może być odsyłany z kwarantanny z powrotem do działu wysyłania i przyjmowania. Na przykład inspektor kwarantanny może nie wiedzieć, gdzie umieścić towar w zapasach. W takim przypadku należy zaktualizować odnośny dokument dostawy, aby poprawnie zarejestrować i przetwarzać kod dyspozycji ustawiony z powodu kwarantanny. Potwierdzenie przyjęcia można wysyłać odbiorcy podczas rejestrowania wiersza zwrotu. Raport **Potwierdzenie zwrotu** przypomina dokument zamówienia zwrotu. Raport **Potwierdzenie zwrotu** nie jest zapisywany w arkuszu ani w inny sposób rejestrowany w systemie i nie jest wymaganym krokiem w procesie zamówienia zwrotu.
+Jeśli zwrócone produkty są wysyłane do inspekcji w magazynie kwarantanny, wszelkie dodatkowe przetwarzanie odbywa się na podstawie zlecenia kwarantanny. Dla każdego wiersza przybycia wysyłanego do kwarantanny jest tworzone jedno zlecenie kwarantanny. Kod dyspozycji wskazuje wynik procesu inspekcji. 
+
+Zlecenie kwarantanny można podzielić tak samo, jak się dzieli arkusz przybycia. Podział zlecenia kwarantanny powoduje odnośny podział wiersza zwrotu. Po wprowadzeniu kodu dyspozycji sfinalizuj zlecenie kwarantanny, używając funkcji **Koniec** lub **Zgłoś jako gotowe**. Jeśli wybierzesz funkcję **Zgłoś jako gotowe**, w wyznaczonych magazynie zostanie utworzone nowe przybycie. Następnie można przetwarzać to przybycie za pomocą opcji na stronie **Przegląd przyjęć**. 
+
+Jeżeli przybycie ma swoje źródło w zleceniu kwarantanny, nie można zmienić kodu dyspozycji przypisanego podczas inspekcji. Jeśli sfinalizujesz zlecenie kwarantanny za pomocą funkcji **Koniec**, partia jest automatycznie rejestrowana. Czasami towar może być odsyłany z kwarantanny z powrotem do działu wysyłania i przyjmowania. Na przykład inspektor kwarantanny może nie wiedzieć, gdzie umieścić towar w zapasach. W takim przypadku należy zaktualizować odnośny dokument dostawy, aby poprawnie zarejestrować i przetwarzać kod dyspozycji ustawiony z powodu kwarantanny. 
+
+Potwierdzenie przyjęcia można wysyłać odbiorcy podczas rejestrowania wiersza zwrotu. Raport **Potwierdzenie zwrotu** przypomina dokument zamówienia zwrotu. Raport **Potwierdzenie zwrotu** nie jest zapisywany w arkuszu ani w inny sposób rejestrowany w systemie i nie jest wymaganym krokiem w procesie zamówienia zwrotu.
 
 ## <a name="replace-a-product"></a>Wymiana produktu
 Istnieją dwie metody zarządzania wymianą produktów:
@@ -223,7 +234,9 @@ Jeśli wysyłasz towar zastępczy do odbiorcy i w zamówieniu zwrotu używasz ak
 
 ![Proces wymiany w przypadku używania kodu dyspozycji](./media/SalesReturn05.png)
 
-Towar zastępczy zostanie dostarczony przy użyciu niezależnego zamówienia sprzedaży — zamówienia sprzedaży wymiany. To zamówienie sprzedaży jest tworzone podczas generowania dokumentu dostawy dla zamówienia zwrotu. Nagłówek zamówienia używa informacji od odbiorcy, do którego odwołuje się nagłówek zamówienia zwrotu. Informacje wiersza są pobierane z informacji wprowadzonych na stronie **Pozycja zastępcza**. Strona **Pozycja zastępcza** musi być wypełniona dla wierszy, które mają akcje dyspozycji rozpoczynające się słowem „zamień”. Jednak ani ilość, ani dane identyfikacyjne towaru zastępczego nie są weryfikowane ani w żaden sposób ograniczane. Takie zachowanie pozwala na przypadki, gdy odbiorca chce otrzymać ten sam towar, ale w innej konfiguracji lub rozmiarze, a także na przypadki, gdy odbiorca chce otrzymać całkowicie inny towar. Domyślnie na stronie **Pozycja zastępcza** jest wprowadzany identyczny towar. Można jednak wybrać inny towar, pod warunkiem, że funkcja została skonfigurowana. **Uwaga:** Po utworzeniu zamówienia sprzedaży wymiany można je edytować i usuwać.
+Towar zastępczy zostanie dostarczony przy użyciu niezależnego zamówienia sprzedaży — zamówienia sprzedaży wymiany. To zamówienie sprzedaży jest tworzone podczas generowania dokumentu dostawy dla zamówienia zwrotu. Nagłówek zamówienia używa informacji od odbiorcy, do którego odwołuje się nagłówek zamówienia zwrotu. Informacje wiersza są pobierane z informacji wprowadzonych na stronie **Pozycja zastępcza**. Strona **Pozycja zastępcza** musi być wypełniona dla wierszy, które mają akcje dyspozycji rozpoczynające się słowem „zamień”. Jednak ani ilość, ani dane identyfikacyjne towaru zastępczego nie są weryfikowane ani w żaden sposób ograniczane. Takie zachowanie pozwala na przypadki, gdy odbiorca chce otrzymać ten sam towar, ale w innej konfiguracji lub rozmiarze, a także na przypadki, gdy odbiorca chce otrzymać całkowicie inny towar. Domyślnie na stronie **Pozycja zastępcza** jest wprowadzany identyczny towar. Można jednak wybrać inny towar, pod warunkiem, że funkcja została skonfigurowana. 
+
+>[Uwaga] Po utworzeniu zamówienia sprzedaży wymiany można je edytować i usuwać.
 
 ## <a name="generate-a-packing-slip"></a>Generowanie dokumentu dostawy
 Aby zwrócone towary mogły zostać przyjęte do zapasów, należy zaktualizować dokument dostawy dla zamówienia, do którego należą towary. Podobnie jak proces aktualizacji faktury jest aktualizacją transakcji finansowej, tak proces aktualizacji dokumentu dostawy jest fizyczną aktualizacją rekordu zapasów. Innymi słowy proces ten zatwierdza zmiany zapasów. W przypadku zwrotów kroki przypisane do akcji dyspozycji są implementowane podczas aktualizacji dokumentu dostawy. Podczas generowania dokumentu dostawy zachodzą następujące zdarzenia:
@@ -233,14 +246,19 @@ Aby zwrócone towary mogły zostać przyjęte do zapasów, należy zaktualizowa�
 -   Towary oznaczone akcją dyspozycji **Zwrot do odbiorcy** są przyjmowane i dostarczane do odbiorcy. Towary te nie wpływają netto na zapasy.
 -   Jest tworzone zamówienie sprzedaży wymiany. To zamówienie sprzedaży bazuje na informacjach ze strony **Pozycja zastępcza**.
 
-Dokument dostawy można wygenerować tylko dla wierszy, które mają stan zwrotu **Zarejestrowane**, i tylko w odniesieniu do pełnej ilości w wierszu zwrotu. Jeśli kilka wierszy w zamówieniu zwrotu ma stan **Zarejestrowane**, można wygenerować dokument dostawy dla podzbioru wierszy, usuwając pozostałe wiersze ze strony **Księguj dokument dostawy**. Zwroty częściowe są definiowane w kategoriach wierszy zamówienia zwrotu, a nie wysyłek zamówienia zwrotu. Oznacza to, że jeśli otrzymasz pełną ilość wskazaną w jednym wierszu zamówienia zwrotu, ale nie otrzymasz nic z pozostałych wierszy tego zamówienia zwrotu, dostawa nie jest dostawą częściową. Jeśli jednak wiersz zamówienia zwrotu wymaga zwrotu na przykład dziesięciu jednostek określonego towaru, a otrzymasz tylko cztery jednostki, dostawa jest dostawą częściową. Jeśli nie przybędą wszystkie oczekiwane zwracane towary, można odstawić przesyłkę na bok i poczekać na przybycie reszty zwracanej ilości. Alternatywnie można zarejestrować i zaksięgować ilość częściową. W ramach procesu księgowania dokumentów dostawy można powiązać numer odwołania dokumentu dostawcy określony w dokumentach wysyłkowych odbiorcy z wierszami zamówienia. To skojarzenie jest opcjonalne i ma charakter wyłącznie informacyjny. Nie tworzy żadnych aktualizacji transakcji. Ogólnie rzecz biorąc można pominąć proces dokumentu dostawy i przejść bezpośrednio do fakturowania. W takim przypadku czynności, które byłyby wykonywane podczas generowania dokumentu dostawy, są wykonywane podczas fakturowania.
+Dokument dostawy można wygenerować tylko dla wierszy, które mają stan zwrotu **Zarejestrowane**, i tylko w odniesieniu do pełnej ilości w wierszu zwrotu. Jeśli kilka wierszy w zamówieniu zwrotu ma stan **Zarejestrowane**, można wygenerować dokument dostawy dla podzbioru wierszy, usuwając pozostałe wiersze ze strony **Księguj dokument dostawy**. 
+
+Zwroty częściowe są definiowane w kategoriach wierszy zamówienia zwrotu, a nie wysyłek zamówienia zwrotu. Oznacza to, że jeśli otrzymasz pełną ilość wskazaną w jednym wierszu zamówienia zwrotu, ale nie otrzymasz nic z pozostałych wierszy tego zamówienia zwrotu, dostawa nie jest dostawą częściową. Jeśli jednak wiersz zamówienia zwrotu wymaga zwrotu na przykład dziesięciu jednostek określonego towaru, a otrzymasz tylko cztery jednostki, dostawa jest dostawą częściową. Jeśli nie przybędą wszystkie oczekiwane zwracane towary, można odstawić przesyłkę na bok i poczekać na przybycie reszty zwracanej ilości. Alternatywnie można zarejestrować i zaksięgować ilość częściową. W ramach procesu księgowania dokumentów dostawy można powiązać numer odwołania dokumentu dostawcy określony w dokumentach wysyłkowych odbiorcy z wierszami zamówienia. To skojarzenie jest opcjonalne i ma charakter wyłącznie informacyjny. Nie tworzy żadnych aktualizacji transakcji. 
+
+Ogólnie rzecz biorąc można pominąć proces dokumentu dostawy i przejść bezpośrednio do fakturowania. W takim przypadku czynności, które byłyby wykonywane podczas generowania dokumentu dostawy, są wykonywane podczas fakturowania.
 
 ## <a name="generate-an-invoice"></a>Generuj fakturę
 Chociaż strona **Zamówienie zwrotu** zawiera informacje i czynności, które są wymagane w celu obsługi szczególnych aspektów logistycznych zamówienia zwrotu, do finalizacji procesu fakturowania należy użyć strony **Zamówienie sprzedaży**. Organizacja może wtedy fakturować zamówienia zwrotu i zamówienia sprzedaży w tym samym czasie, a ta sama osoba może wykonać proces fakturowania zgodnie z wymaganiami. Aby wyświetlić zamówienie zwrotu ze strony **Zamówienie sprzedaży**, kliknij łącze numeru zamówienia sprzedaży, co spowoduje otwarcie skojarzonego zamówienia sprzedaży. Zamówienie zwrotu można także znaleźć na stronie **Wszystkie zamówienia sprzedaży**. Zamówienia zwrotu są zamówieniami sprzedaży o typie zamówienia **Zwrot towaru**.
 
 ### <a name="credit-correction"></a>Korekta z czerwonym stornem
 
-W ramach procesu fakturowania sprawdź poprawność wszystkich opłat dodatkowych. Aby spowodować, że księgowania w księdze staną się korektami (stornem), rozważ użycie opcji **Korekta z czerwonym stornem** na karcie **Inne** na stronie **Księgowanie faktury** podczas księgowania faktury/faktury korygującej. **Uwaga:** Domyślnie opcja **Korekta z czerwonym stornem** jest aktywna, jeśli włączono opcję **Faktura korygująca z czerwonym stornem** na stronie **Parametry modułu rozrachunków z odbiorcami**. Jednak zalecamy, aby nie księgować zwrotów za pomocą funkcji storna.
+W ramach procesu fakturowania sprawdź poprawność wszystkich opłat dodatkowych. Aby spowodować, że księgowania w księdze staną się korektami (stornem), rozważ użycie opcji **Korekta z czerwonym stornem** na karcie **Inne** na stronie **Księgowanie faktury** podczas księgowania faktury/faktury korygującej. 
+>[Uwaga] Domyślnie opcja **Korekta z czerwonym stornem** jest aktywna, jeśli włączono opcję **Faktura korygująca z czerwonym stornem** na stronie **Parametry modułu rozrachunków z odbiorcami**. Jednak zalecamy, aby nie księgować zwrotów za pomocą funkcji storna.
 
 ## <a name="create-intercompany-return-orders"></a>Tworzenie międzyfirmowych zamówień zwrotu
 Zamówienia zwrotu mogą być wykonywane między dwoma firmami wewnątrz organizacji. Obsługiwane są następujące scenariusze:
@@ -294,7 +312,7 @@ Zamówienie zwrotu nie odwołuje się do faktury dla odbiorcy. Z tytułu zwrotu 
 
 ![Zamówienie zwrotu nie odwołuje się do faktury dla odbiorcy](./media/SalesReturn09.png)  
 
-**Uwaga:** Domyślną wartością parametru **Koszt własny dla zwrotu** jest cena z rekordu głównego towaru. Cena domyślna różni się od kosztu własnego w momencie wydawania zapasów. Ma to taką konsekwencję, że jest ponoszona strata wynosząca 3 jednostki pieniężne. Ponadto zamówienie zwrotu nie zawiera rabatu udzielonego odbiorcy w zamówieniu sprzedaży. W związku z tym następuje nadmierne uznanie konta odbiorcy.
+>[Uwaga] Domyślną wartością parametru **Koszt własny dla zwrotu** jest cena z rekordu głównego towaru. Cena domyślna różni się od kosztu własnego w momencie wydawania zapasów. Ma to taką konsekwencję, że jest ponoszona strata wynosząca 3 jednostki pieniężne. Ponadto zamówienie zwrotu nie zawiera rabatu udzielonego odbiorcy w zamówieniu sprzedaży. W związku z tym następuje nadmierne uznanie konta odbiorcy.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Przykład 2: Dla zamówienia zwrotu wybrano korektę z czerwonym stornem
 
@@ -302,7 +320,7 @@ Przykład 2 jest taki sam, jak przykład 1, ale podczas generowania faktury do z
 
 ![Zamówienie zwrotu z wybraną korektą z czerwonym stornem ](./media/SalesReturn10.png)  
 
-**Uwaga:** Księgowania w księdze są wprowadzane jako ujemne korekty.
+>[Uwaga] Księgowania w księdze są wprowadzane jako ujemne korekty.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Przykład 3: Jest tworzony wiersz zamówienia zwrotu przy użyciu funkcji Znajdź zamówienie sprzedaży
 
@@ -310,7 +328,7 @@ W tym przykładzie jest tworzony wiersz zamówienia zwrotu przy użyciu funkcji 
 
 ![Wiersz zamówienia zwrotu tworzony przy użyciu funkcji Znajdź zamówienie sprzedaży ](./media/SalesReturn11.png)  
 
-**Uwaga:** Opcje **Rabat** i **Koszt własny dla zwrotu** są poprawnie ustawione. W związku z tym następuje dokładne wycofanie faktury dla odbiorcy.
+>[Uwaga] Opcje **Rabat** i **Koszt własny dla zwrotu** są poprawnie ustawione. W związku z tym następuje dokładne wycofanie faktury dla odbiorcy.
 
 
 

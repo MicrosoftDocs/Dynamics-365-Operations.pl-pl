@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: fc7194e7f95a6a99587a6f7e8ab8a30957bbbd90
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d5c3e02bf5bc17db7232ccbb56e4dfbc062795b4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="questionnaires"></a>Kwestionariusze
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ten temat zawiera ogólne informacje o kwestionariuszach oraz łącza do bardziej szczegółowych informacji. Kwestionariusz to zestaw pytań, które służą do gromadzenia informacji do różnych celów. Użytkownik może projektować, tworzyć, dystrybuować i wypełniać kwestionariusze, a następnie analizować wyniki. 
 
@@ -50,7 +50,7 @@ Poniższa tabela zawiera łącza do informacji o podstawowych zadaniach kwestion
 
 
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Projektowanie kwestionariuszy](design-questionnaires.md)

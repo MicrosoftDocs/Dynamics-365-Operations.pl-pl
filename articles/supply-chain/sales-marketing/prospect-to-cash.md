@@ -3,7 +3,7 @@ title: "Prospekt na gotówkę"
 description: "Ten temat zawiera omówienie rozwiązania Prospekt na gotówkę działającego między programami Dynamics 365 for Finance and Operations a Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 04/03/2018
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,22 +20,24 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bc0fa8fe3e20ae4be3e572932f99ccc54e3b746b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f43b3943ce27c44cc0b4756d1d5f23e3be093273
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="prospect-to-cash"></a>Prospekt na gotówkę
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Rozwiązanie Prospekt na gotówkę umożliwia bezpośrednią synchronizację między programami Dynamics 365 for Finance and Operations i Dynamics 365 for Sales. Szablony Prospekt na gotówkę, które są dostępne w funkcji integracji danych umożliwiają przepływ danych o kontach, kontaktach, produktach, ofertach sprzedaży, zamówieniach sprzedaży i fakturach sprzedaży między programami Finance and Operations a Sales. Gdy dane przepływają między programami Finance and Operations i Sales, można wykonywać działania sprzedażowe i marketingowe w programie Sales oraz i realizować zamówienia z funkcjami zarządzania zapasami w programie Finance and Operations. 
 
 Aby uzyskać więcej informacji o integracji w procesie Prospekt na gotówkę, obejrzyj krótki film na YouTube:
 
 > [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
+
+[Integracja rozwiązania Prospekt na gotówkę (film na YouTube)](https://youtu.be/AVV9x5x-XCg) 
 
 W bieżącej wersji rozwiązania Prospekt na gotówkę udostępniono następujące typy synchronizacji bezpośredniej:
 
@@ -76,7 +78,7 @@ Integracja w procesie Prospekt na gotówkę jest obsługiwana w następujących 
   - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** — wymagana jest obsługa integracji rozwiązania Prospekt na gotówkę poprzez jednostki danych.
     
     > [!NOTE]
-    > Po zainstalowaniu poprawek należy uruchomić następujące zadanie wsadowe z formularza **SalesPopulateProspectToCash**. Formularz ten jest ukryty, ponieważ jest on potrzebny tylko raz. Aby przejść do formularza, zaloguj się w środowisku i dodaj następujący fragment do adresu URL na pasku adresu przeglądarce: &mi=action:SalesPopulateProspectToCash, na przykład `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. Po otwarciu formularza kliknij przycisk OK. Spowoduje to uzupełnienie nowego pola **LineCreationSequnceNumber** w tabelach **SalesLine**, **SalesQuotationLine** i **CustInvoiceTrans** unikatowymi wartościami i odświeżenie listy produktów. Jest to wymagane do działania rozwiązania Prospekt na gotówkę.
+    > Po zainstalowaniu poprawek należy uruchomić następujące zadanie wsadowe z formularza **SalesPopulateProspectToCash**. Formularz ten jest ukryty, ponieważ jest on potrzebny tylko raz. Aby przejść do formularza, zaloguj się w środowisku i dodaj następujący fragment do adresu URL na pasku adresu przeglądarce: *&mi=action:SalesPopulateProspectToCash*, na przykład `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. Po otwarciu formularza kliknij przycisk OK. Spowoduje to uzupełnienie nowego pola **LineCreationSequnceNumber** w tabelach **SalesLine**, **SalesQuotationLine** i **CustInvoiceTrans** unikatowymi wartościami i odświeżenie listy produktów. Jest to wymagane do działania rozwiązania Prospekt na gotówkę.
 
 
 ## <a name="system-requirements-for-sales"></a>Wymagania systemowe dla rozwiązania Sales

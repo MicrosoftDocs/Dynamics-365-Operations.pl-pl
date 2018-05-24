@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: eecd53d181a086a5cf295f54f9fa72aa2960c272
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f3d6463ab07aaaf69a16aa0d59840cbe47427335
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="manage-the-electronic-reporting-configuration-lifecycle"></a>Zarządzanie cyklem życia konfiguracji Raportowania elektronicznego
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym temacie opisano sposób zarządzania cyklem życia konfiguracji aparatu raportowania elektronicznego (ER) w programie Microsoft Dynamics 365 for Finance and Operations.
 
@@ -74,10 +74,10 @@ Zalecamy projektować konfiguracje raportowania elektronicznego w środowisku pr
 
 Konfiguracje ER zaprojektowane w środowisku programistycznym można przesłać do środowiska testowego w celu oceny konfiguracji (właściwa integracja procesów, poprawność wyników, wydajność) oraz sprawdzenia jakości (właściwe prawa dostępu według ról, podział obowiązków itd.). Do tego celu mogą służyć funkcje wymieniania się konfiguracją ER. Na koniec sprawdzone konfiguracje ER można przesłać do usługi LCS, gdzie zostaną udostępnione subskrybentom usługi, lub do środowiska produkcyjnego na potrzeby użytku wewnętrznego, jak pokazano na poniższej ilustracji. ![Cykl życia konfiguracji ER](./media/ger-configuration-lifecycle.png)
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
-[Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
+[Omówienie raportowania elektronicznego](general-electronic-reporting.md)
 
 
 

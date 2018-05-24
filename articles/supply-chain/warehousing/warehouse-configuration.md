@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9c2f8fd846181c404492ff32907a3396beb90685
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 79e0ce728cb3c1eec450d0814d0a3aeda131fe89
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="warehouse-configuration"></a>Konfiguracja magazynu
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 W tym artykule wyjaśniono sposób konfigurowania magazynu. Artykuł zawiera informacje o włączaniu układu magazynu i procesów magazynowych.
 
@@ -112,7 +112,7 @@ Jak sugeruje nazwa, dyrektywy lokalizacji służą do kierowania transakcji prac
 
 Aby szybciej i łatwiej określić zadania związane z wierszem dyrektywy lokalizacji, użyj jednej z wstępnie zdefiniowanych strategii. Na przykład, można użyć strategii **Pusta lokalizacja bez przychodzącej pracy** do wyszukiwania wolnej lokalizacji w magazynie, lub można użyć strategii **Rezerwacja partii FEFO** dla wychodzących pobrań sprzedaży.
 
-<a name="see-also"></a>Informacje dodatkowe
+<a name="additional-resources"></a>Dodatkowe zasoby
 --------
 
 [Konfigurowanie lokalizacji w magazynie z obsługą WMS (przewodnik po zadaniu)](tasks/configure-locations-wms-enabled-warehouse.md)
