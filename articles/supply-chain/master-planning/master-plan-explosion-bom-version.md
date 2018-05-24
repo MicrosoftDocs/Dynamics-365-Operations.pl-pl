@@ -20,32 +20,32 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bce6ffd0ee284f2a5e5b5fef0bdfa92e192b2f42
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 80c9fa6ec98bd2cdc3edd5329e2a619ef9cc8cb2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="explosion-of-a-bom-version"></a><span data-ttu-id="3cc76-103">Rozłożenie wersji BOM</span><span class="sxs-lookup"><span data-stu-id="3cc76-103">Explosion of a BOM version</span></span>
+# <a name="explosion-of-a-bom-version"></a><span data-ttu-id="0dd72-103">Rozłożenie wersji BOM</span><span class="sxs-lookup"><span data-stu-id="0dd72-103">Explosion of a BOM version</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="3cc76-104">Ten artykuł wyjaśnia scenariusz planowania głównego, który obejmuje rozłożenie wersji listy składowej (BOM).</span><span class="sxs-lookup"><span data-stu-id="3cc76-104">This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.</span></span>
+<span data-ttu-id="0dd72-104">Ten artykuł wyjaśnia scenariusz planowania głównego, który obejmuje rozłożenie wersji listy składowej (BOM).</span><span class="sxs-lookup"><span data-stu-id="0dd72-104">This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.</span></span>
 
-<span data-ttu-id="3cc76-105">Pomyślne rozłożenie popytu wersji listy składowej (BOM) tworzy popyt na każdy towar wiersza BOM w określonym dziale i prawdopodobnie w określonym magazynie.</span><span class="sxs-lookup"><span data-stu-id="3cc76-105">A demand explosion of a bill of materials (BOM) version creates a demand for each BOM line item at a specific site and, possibly, at a specific warehouse.</span></span> <span data-ttu-id="3cc76-106">BOM właściwy dla oddziału może mieć określony magazyn dla każdego wiersza.</span><span class="sxs-lookup"><span data-stu-id="3cc76-106">In a site-specific BOM, a specific warehouse can be defined for each BOM line.</span></span> <span data-ttu-id="3cc76-107">Ponadto dla każdego wiersza BOM ustawienia wymiarów towaru określają, czy magazyn jest wymagany.</span><span class="sxs-lookup"><span data-stu-id="3cc76-107">Additionally, for each BOM line, the item's dimension settings determine whether the warehouse is required.</span></span> <span data-ttu-id="3cc76-108">Wynikowy popyt poszczególnych towarów wiersza BOM staje się z kolei punktem początkowym dodatkowego rozłożenia popytu.</span><span class="sxs-lookup"><span data-stu-id="3cc76-108">The resulting demand for each BOM line item then becomes the starting point for additional demand explosion.</span></span> <span data-ttu-id="3cc76-109">Niniejszy scenariusz planowania głównego wymaga spełnienia następujących warunków:</span><span class="sxs-lookup"><span data-stu-id="3cc76-109">This master planning scenario involves the following conditions:</span></span>
+<span data-ttu-id="0dd72-105">Pomyślne rozłożenie popytu wersji listy składowej (BOM) tworzy popyt na każdy towar wiersza BOM w określonym dziale i prawdopodobnie w określonym magazynie.</span><span class="sxs-lookup"><span data-stu-id="0dd72-105">A demand explosion of a bill of materials (BOM) version creates a demand for each BOM line item at a specific site and, possibly, at a specific warehouse.</span></span> <span data-ttu-id="0dd72-106">BOM właściwy dla oddziału może mieć określony magazyn dla każdego wiersza.</span><span class="sxs-lookup"><span data-stu-id="0dd72-106">In a site-specific BOM, a specific warehouse can be defined for each BOM line.</span></span> <span data-ttu-id="0dd72-107">Ponadto dla każdego wiersza BOM ustawienia wymiarów towaru określają, czy magazyn jest wymagany.</span><span class="sxs-lookup"><span data-stu-id="0dd72-107">Additionally, for each BOM line, the item's dimension settings determine whether the warehouse is required.</span></span> <span data-ttu-id="0dd72-108">Wynikowy popyt poszczególnych towarów wiersza BOM staje się z kolei punktem początkowym dodatkowego rozłożenia popytu.</span><span class="sxs-lookup"><span data-stu-id="0dd72-108">The resulting demand for each BOM line item then becomes the starting point for additional demand explosion.</span></span> <span data-ttu-id="0dd72-109">Niniejszy scenariusz planowania głównego wymaga spełnienia następujących warunków:</span><span class="sxs-lookup"><span data-stu-id="0dd72-109">This master planning scenario involves the following conditions:</span></span>
 
--   <span data-ttu-id="3cc76-110">Wymiar oddziału jest obowiązkowy i musi być wprowadzony w transakcji popytu.</span><span class="sxs-lookup"><span data-stu-id="3cc76-110">The site dimension is mandatory and must be entered on the demand transaction.</span></span>
--   <span data-ttu-id="3cc76-111">Wymiar oddziału jest spójny.</span><span class="sxs-lookup"><span data-stu-id="3cc76-111">The site dimension is consistent.</span></span> <span data-ttu-id="3cc76-112">Oddział związany z popytem niższego poziomu jest identyczny z oddziałem z początkowej transakcji popytu.</span><span class="sxs-lookup"><span data-stu-id="3cc76-112">Therefore, the site for lower-level demand is the same as the site on the initial demand transaction.</span></span>
+-   <span data-ttu-id="0dd72-110">Wymiar oddziału jest obowiązkowy i musi być wprowadzony w transakcji popytu.</span><span class="sxs-lookup"><span data-stu-id="0dd72-110">The site dimension is mandatory and must be entered on the demand transaction.</span></span>
+-   <span data-ttu-id="0dd72-111">Wymiar oddziału jest spójny.</span><span class="sxs-lookup"><span data-stu-id="0dd72-111">The site dimension is consistent.</span></span> <span data-ttu-id="0dd72-112">Oddział związany z popytem niższego poziomu jest identyczny z oddziałem z początkowej transakcji popytu.</span><span class="sxs-lookup"><span data-stu-id="0dd72-112">Therefore, the site for lower-level demand is the same as the site on the initial demand transaction.</span></span>
 
-<span data-ttu-id="3cc76-113">Poniższy rysunek przedstawia sposób przetwarzania rozłożenia popytu planu ogólnego.</span><span class="sxs-lookup"><span data-stu-id="3cc76-113">The following illustration shows how the process for master planning demand explosion.</span></span> ![Rozłożenie popytu przy użyciu wersji BOM](./media/multisitedemandexplosionscenariousingbomversion.gif)
+<span data-ttu-id="0dd72-113">Poniższy rysunek przedstawia sposób przetwarzania rozłożenia popytu planu ogólnego.</span><span class="sxs-lookup"><span data-stu-id="0dd72-113">The following illustration shows how the process for master planning demand explosion.</span></span> ![Rozłożenie popytu przy użyciu wersji BOM](./media/multisitedemandexplosionscenariousingbomversion.gif)
 
-<a name="see-also"></a><span data-ttu-id="3cc76-115">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="3cc76-115">See also</span></span>
+<a name="additional-resources"></a><span data-ttu-id="0dd72-115">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="0dd72-115">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="3cc76-116">Planowanie główne — jak określa się wersję BOM</span><span class="sxs-lookup"><span data-stu-id="3cc76-116">Master planning - how the BOM version is determined</span></span>](master-plan-bom-version-determined.md)
+[<span data-ttu-id="0dd72-116">Planowanie główne — jak określa się wersję BOM</span><span class="sxs-lookup"><span data-stu-id="0dd72-116">Master planning - how the BOM version is determined</span></span>](master-plan-bom-version-determined.md)
 
-[<span data-ttu-id="3cc76-117">Planowanie główne a funkcjonalność wielooddziałowości</span><span class="sxs-lookup"><span data-stu-id="3cc76-117">Master planning and multisite functionality</span></span>](master-plan-multisite-functionality.md)
+[<span data-ttu-id="0dd72-117">Planowanie główne a funkcjonalność wielooddziałowości</span><span class="sxs-lookup"><span data-stu-id="0dd72-117">Master planning and multisite functionality</span></span>](master-plan-multisite-functionality.md)
 
 
 

@@ -19,42 +19,42 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ba1b158908ac2328c29f7efe23756248be5be33c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fe8d8812aaa78c7b5558615f586940488f2dc1b2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="manage-items-lent-to-workers"></a><span data-ttu-id="3edd9-103">Zarządzanie elementami wypożyczonymi pracownikom.</span><span class="sxs-lookup"><span data-stu-id="3edd9-103">Manage items lent to workers</span></span>
+# <a name="manage-items-lent-to-workers"></a><span data-ttu-id="0d19b-103">Zarządzanie elementami wypożyczonymi pracownikom.</span><span class="sxs-lookup"><span data-stu-id="0d19b-103">Manage items lent to workers</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-<span data-ttu-id="3edd9-104">Przedmioty pożyczek są rekordami, które pomagają kierownikom śledzić fizyczne przedmioty, które firma pożycza pracownikom.</span><span class="sxs-lookup"><span data-stu-id="3edd9-104">Loan items are records that help managers track the physical items that your company lends to its workers.</span></span> 
+<span data-ttu-id="0d19b-104">Przedmioty pożyczek są rekordami, które pomagają kierownikom śledzić fizyczne przedmioty, które firma pożycza pracownikom.</span><span class="sxs-lookup"><span data-stu-id="0d19b-104">Loan items are records that help managers track the physical items that your company lends to its workers.</span></span> 
 
-<span data-ttu-id="3edd9-105">Poniżej przedstawiono listę przykładowych towarów, które firma może wypożyczyć pracownikom:</span><span class="sxs-lookup"><span data-stu-id="3edd9-105">The following points list examples of items that a company might lend to workers:</span></span>
--   <span data-ttu-id="3edd9-106">telefony komórkowe;</span><span class="sxs-lookup"><span data-stu-id="3edd9-106">Mobile telephones</span></span>
--   <span data-ttu-id="3edd9-107">samochody;</span><span class="sxs-lookup"><span data-stu-id="3edd9-107">Automobiles</span></span>
--   <span data-ttu-id="3edd9-108">Sprzęt komputerowy</span><span class="sxs-lookup"><span data-stu-id="3edd9-108">Computer equipment</span></span>
+<span data-ttu-id="0d19b-105">Poniżej przedstawiono listę przykładowych towarów, które firma może wypożyczyć pracownikom:</span><span class="sxs-lookup"><span data-stu-id="0d19b-105">The following points list examples of items that a company might lend to workers:</span></span>
+-   <span data-ttu-id="0d19b-106">telefony komórkowe;</span><span class="sxs-lookup"><span data-stu-id="0d19b-106">Mobile telephones</span></span>
+-   <span data-ttu-id="0d19b-107">samochody;</span><span class="sxs-lookup"><span data-stu-id="0d19b-107">Automobiles</span></span>
+-   <span data-ttu-id="0d19b-108">Sprzęt komputerowy</span><span class="sxs-lookup"><span data-stu-id="0d19b-108">Computer equipment</span></span>
 
-<span data-ttu-id="3edd9-109">Każdy przedmiot fizyczny musi mieć odpowiadający mu przedmiot pożyczki.</span><span class="sxs-lookup"><span data-stu-id="3edd9-109">Each physical item must have a corresponding loan item.</span></span> <span data-ttu-id="3edd9-110">Każdy rekord przedmiotu pożyczki powinien opisywać wypożyczany przedmiot, osobę odpowiedzialną za wypożyczenie oraz możliwą liczbę dni wypożyczenia przedmiotu.</span><span class="sxs-lookup"><span data-stu-id="3edd9-110">Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can loaned to a worker.</span></span> <span data-ttu-id="3edd9-111">Można utworzyć wiele przedmiotów pożyczki, takich jak klucze, karty dostępu lub mundury, w tym samym czasie.</span><span class="sxs-lookup"><span data-stu-id="3edd9-111">You can create multiple loan items, for items such as keys, access cards or uniforms, at the same time.</span></span> 
+<span data-ttu-id="0d19b-109">Każdy przedmiot fizyczny musi mieć odpowiadający mu przedmiot pożyczki.</span><span class="sxs-lookup"><span data-stu-id="0d19b-109">Each physical item must have a corresponding loan item.</span></span> <span data-ttu-id="0d19b-110">Każdy rekord przedmiotu pożyczki powinien opisywać wypożyczany przedmiot, osobę odpowiedzialną za wypożyczenie oraz możliwą liczbę dni wypożyczenia przedmiotu.</span><span class="sxs-lookup"><span data-stu-id="0d19b-110">Each loan item record should describe what is being loaned, who is responsible for the loan, and the number of days the item can loaned to a worker.</span></span> <span data-ttu-id="0d19b-111">Można utworzyć wiele przedmiotów pożyczki, takich jak klucze, karty dostępu lub mundury, w tym samym czasie.</span><span class="sxs-lookup"><span data-stu-id="0d19b-111">You can create multiple loan items, for items such as keys, access cards or uniforms, at the same time.</span></span> 
 
-<span data-ttu-id="3edd9-112">W przypadku pożyczania przedmiotu należy wprowadzić datę wypożyczenia przedmiotu oraz planowaną datę zwrócenia.</span><span class="sxs-lookup"><span data-stu-id="3edd9-112">When loaning an item, enter the date that the item was loaned, and the planned return date.</span></span> <span data-ttu-id="3edd9-113">W przypadku zwrócenia przedmiotu należy wprowadzić rzeczywistą datę zwrócenia.</span><span class="sxs-lookup"><span data-stu-id="3edd9-113">When the item is returned, enter the actual return date.</span></span>
+<span data-ttu-id="0d19b-112">W przypadku pożyczania przedmiotu należy wprowadzić datę wypożyczenia przedmiotu oraz planowaną datę zwrócenia.</span><span class="sxs-lookup"><span data-stu-id="0d19b-112">When loaning an item, enter the date that the item was loaned, and the planned return date.</span></span> <span data-ttu-id="0d19b-113">W przypadku zwrócenia przedmiotu należy wprowadzić rzeczywistą datę zwrócenia.</span><span class="sxs-lookup"><span data-stu-id="0d19b-113">When the item is returned, enter the actual return date.</span></span>
 
-<span data-ttu-id="3edd9-114">Pracownicy mogą wyświetlać rekordy wypożyczonych pozycji w obszarze roboczym Samoobsługa pracownika etatowego.</span><span class="sxs-lookup"><span data-stu-id="3edd9-114">Employees can view the records of the items that have been loaned to them using the Employee self-service workspace.</span></span> <span data-ttu-id="3edd9-115">Mogą również edytować istniejące rekordy lub wprowadzać nowe wypożyczone przedmioty, jeśli otrzymali kolejne towary fizyczne.</span><span class="sxs-lookup"><span data-stu-id="3edd9-115">They can also edit the existing records or enter new loan items, if they've received additional physical items.</span></span>  <span data-ttu-id="3edd9-116">Przepływ pracy można ustawić tak, aby kierował zmiany do nowych lub istniejących wypożyczanych przedmiotów poprzez proces zatwierdzania.</span><span class="sxs-lookup"><span data-stu-id="3edd9-116">Workflow can be set up to route changes to new or existing loan items through an approval process.</span></span> 
+<span data-ttu-id="0d19b-114">Pracownicy mogą wyświetlać rekordy wypożyczonych pozycji w obszarze roboczym Samoobsługa pracownika etatowego.</span><span class="sxs-lookup"><span data-stu-id="0d19b-114">Employees can view the records of the items that have been loaned to them using the Employee self-service workspace.</span></span> <span data-ttu-id="0d19b-115">Mogą również edytować istniejące rekordy lub wprowadzać nowe wypożyczone przedmioty, jeśli otrzymali kolejne towary fizyczne.</span><span class="sxs-lookup"><span data-stu-id="0d19b-115">They can also edit the existing records or enter new loan items, if they've received additional physical items.</span></span>  <span data-ttu-id="0d19b-116">Przepływ pracy można ustawić tak, aby kierował zmiany do nowych lub istniejących wypożyczanych przedmiotów poprzez proces zatwierdzania.</span><span class="sxs-lookup"><span data-stu-id="0d19b-116">Workflow can be set up to route changes to new or existing loan items through an approval process.</span></span> 
 
-<span data-ttu-id="3edd9-117">Menedżerowie mogą wyświetlać towar wypożyczony przez ich bezpośrednich podwładnych.</span><span class="sxs-lookup"><span data-stu-id="3edd9-117">Managers can view loaned items for their direct reports.</span></span> <span data-ttu-id="3edd9-118">Mogą także dostać uprawnienia dodawania nowych przedmiotów pożyczki w imieniu swoich pracowników.</span><span class="sxs-lookup"><span data-stu-id="3edd9-118">They can also be granted permission to add new loan items on behalf of their employees.</span></span>
+<span data-ttu-id="0d19b-117">Menedżerowie mogą wyświetlać towar wypożyczony przez ich bezpośrednich podwładnych.</span><span class="sxs-lookup"><span data-stu-id="0d19b-117">Managers can view loaned items for their direct reports.</span></span> <span data-ttu-id="0d19b-118">Mogą także dostać uprawnienia dodawania nowych przedmiotów pożyczki w imieniu swoich pracowników.</span><span class="sxs-lookup"><span data-stu-id="0d19b-118">They can also be granted permission to add new loan items on behalf of their employees.</span></span>
 
- <a name="account-for-lost-or-misplaced-loan-items"></a><span data-ttu-id="3edd9-119"> Rozliczanie zgubionych lub przestawionych przedmiotów pożyczki</span><span class="sxs-lookup"><span data-stu-id="3edd9-119">Account for lost or misplaced loan items</span></span>
+ <a name="account-for-lost-or-misplaced-loan-items"></a><span data-ttu-id="0d19b-119"> Rozliczanie zgubionych lub przestawionych przedmiotów pożyczki</span><span class="sxs-lookup"><span data-stu-id="0d19b-119">Account for lost or misplaced loan items</span></span>
 -----------------------------------------
 
-<span data-ttu-id="3edd9-120">Jeśli przedmiot został uszkodzony lub przestawiony, należy zarejestrować fikcyjny zwrot.</span><span class="sxs-lookup"><span data-stu-id="3edd9-120">If an item becomes damaged or misplaced, enter a fictitious return record.</span></span> <span data-ttu-id="3edd9-121">Następnie należy usunąć przedmiot lub zachować go w zestawieniu i zmienić opis, aby wskazać, że przedmiot jest niedostępny.</span><span class="sxs-lookup"><span data-stu-id="3edd9-121">Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.</span></span>
+<span data-ttu-id="0d19b-120">Jeśli przedmiot został uszkodzony lub przestawiony, należy zarejestrować fikcyjny zwrot.</span><span class="sxs-lookup"><span data-stu-id="0d19b-120">If an item becomes damaged or misplaced, enter a fictitious return record.</span></span> <span data-ttu-id="0d19b-121">Następnie należy usunąć przedmiot lub zachować go w zestawieniu i zmienić opis, aby wskazać, że przedmiot jest niedostępny.</span><span class="sxs-lookup"><span data-stu-id="0d19b-121">Then either delete the item or keep it in the overview and change the description to indicate that the item is not available.</span></span>
 
 
-<a name="see-also"></a><span data-ttu-id="3edd9-122">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="3edd9-122">See also</span></span>
+<a name="additional-resources"></a><span data-ttu-id="0d19b-122">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="0d19b-122">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="3edd9-123">Zasoby ludzkie</span><span class="sxs-lookup"><span data-stu-id="3edd9-123">Human resources</span></span>](index.md)
+[<span data-ttu-id="0d19b-123">Zasoby ludzkie</span><span class="sxs-lookup"><span data-stu-id="0d19b-123">Human resources</span></span>](index.md)
 
 
 

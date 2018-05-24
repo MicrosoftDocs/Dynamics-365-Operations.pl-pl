@@ -1,0 +1,76 @@
+---
+title: Planowanie wykorzystania przestrzeni magazynowej
+description: "W tym temacie wyjaśniono, jak skonfigurować i zaplanować obciążenie pracą dla magazynu."
+author: MarkusFogelberg
+manager: AnnBe
+ms.date: 05/26/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: WMSSpaceUtilSetup
+audience: Application User
+ms.reviewer: bis
+ms.search.scope: Core, Operations
+ms.custom: 269384
+ms.search.region: Global
+ms.author: mafoge
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.translationtype: HT
+ms.sourcegitcommit: d52ad452c615a61739582431fcd100a7efa3d93a
+ms.openlocfilehash: 350666cee8f2643c53e9eed8ee73299bbea1e757
+ms.contentlocale: pl-pl
+ms.lasthandoff: 04/26/2018
+
+---
+
+# <a name="schedule-load-utilization"></a><span data-ttu-id="5dbd6-103">Planowanie wykorzystania przestrzeni magazynowej</span><span class="sxs-lookup"><span data-stu-id="5dbd6-103">Schedule load utilization</span></span>
+
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="5dbd6-104">Można zaplanować wykorzystanie obciążenia pracą dla wybranych typów lokalizacji, a także prognozować bieżące i przyszłe wykorzystanie obciążenia pracą.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-104">You can schedule load utilization for selected location types, and you can also project the current and future load utilization.</span></span> <span data-ttu-id="5dbd6-105">Istnieje możliwość prognozowania obciążenia pracą dla jednego lub wielu oddziałów, dla jednostek obciążenia pracą (strefa lub magazyn) albo dla kombinacji strefy i magazynu.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-105">You can project the load for one or more sites, for the load units (zone or warehouse), or for a combination of a zone and a warehouse.</span></span>
+
+## <a name="schedule-and-view-the-load-for-a-warehouse-or-site"></a><span data-ttu-id="5dbd6-106">Planowanie i wyświetlanie obciążenia pracą dla magazynu lub oddziału</span><span class="sxs-lookup"><span data-stu-id="5dbd6-106">Schedule and view the load for a warehouse or site</span></span>
+
+<span data-ttu-id="5dbd6-107">Aby zaplanować obciążenie pracą dla oddziałów, magazynów lub stref, należy utworzyć konfigurację wykorzystania miejsca i skojarzyć ją z planem głównym.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-107">To schedule the load for sites, warehouses, or zones, you create a space utilization setup and associate it with a master plan.</span></span>
+
+<span data-ttu-id="5dbd6-108">W konfiguracji wykorzystania miejsca używa się typów lokalizacji, takich jak **Lokalizacja buforowa** i **Lokalizacja pobrania**, aby określić sposób prognozowania wykorzystania przestrzeni.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-108">In the space utilization setup, you use location types, such as **Bulk location** and **Picking location**, to specify how space utilization should be projected.</span></span> <span data-ttu-id="5dbd6-109">Można także określić tryb obciążenia prącą magazynu, taki jak **Strefa**.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-109">You also specify a storage load mode, such as **Zone**.</span></span>
+
+<span data-ttu-id="5dbd6-110">Projekcja przyszłego wykorzystania miejsca jest oparta na informacjach, które będą obliczane w powiązanym planie głównym.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-110">The projection of future space utilization is based on information that is calculated on the associated master plan.</span></span> <span data-ttu-id="5dbd6-111">Plany główne prognozują planowanie zasobów dla przychodzących i wychodzących zamówień do produkcji i operacji.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-111">Master plans forecast the resource planning for incoming and outgoing orders for production and operations.</span></span> <span data-ttu-id="5dbd6-112">Projekcja dostępnego miejsca opiera się na relacji między ustawieniami wykorzystania miejsca i wybranym planem głównym.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-112">The projection of available space is based on the relation between the space utilization setup and the selected master plan.</span></span>
+
+<span data-ttu-id="5dbd6-113">Używając trybu obciążenia pracą magazynu wybranego w konfiguracji wykorzystania miejsca, można określić, czy obciążenie pracą ma być prognozowane dla każdego magazynu lub strefy oraz czy prognozy powinny zawierać informacje o magazynach i strefach.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-113">By using the storage load mode that you selected in the space utilization setup, you can specify whether the load should be projected for each warehouse or zone, or whether the projections should include information about both warehouses and zones.</span></span> <span data-ttu-id="5dbd6-114">Można także określić, czy zablokowane lokalizacje mają być wykluczone z obliczania wykorzystania obciążenia pracą.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-114">You also specify whether blocked locations should be excluded from the calculation of load utilization.</span></span>
+
+<span data-ttu-id="5dbd6-115">W celu sporządzenia prognozy wykorzystania miejsca można wygenerować raport **Wykorzystanie przestrzeni magazynowej**.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-115">You can project the space utilization by generating the **Warehouse load utilization** report.</span></span> <span data-ttu-id="5dbd6-116">Podczas generowania tego raportu można określić, czy wykorzystanie obciążenia pracą ma być prognozowane dla każdego oddziału, różnych oddziałów czy wybranej jednostki obciążenia pracą, takiej jak strefa lub magazyn.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-116">When you generate this report, you can specify whether the load utilization should be projected for each site, across sites, or for the selected load unit, such as zone or warehouse.</span></span>
+
+### <a name="create-a-space-utilization-setup-for-a-warehouse"></a><span data-ttu-id="5dbd6-117">Tworzenie ustawień wykorzystania miejsca dla magazynu</span><span class="sxs-lookup"><span data-stu-id="5dbd6-117">Create a space utilization setup for a warehouse</span></span>
+
+1. <span data-ttu-id="5dbd6-118">Wybierz kolejno opcje **Zarządzanie zapasami** \> **Ustawienia** \> **Monitorowanie magazynu** \> **Wykorzystanie miejsca**.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-118">Select **Inventory management** \> **Setup** \> **Warehouse monitoring** \> **Space utilization**.</span></span>
+2. <span data-ttu-id="5dbd6-119">Kliknij przycisk **Nowe**, aby utworzyć konfigurację wykorzystania miejsca.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-119">Select **New** to create a space utilization setup.</span></span> <span data-ttu-id="5dbd6-120">Określ identyfikator i nazwę dla nowej konfiguracji.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-120">Specify an ID and a name for the new setup.</span></span>
+3. <span data-ttu-id="5dbd6-121">W polu **Tryb obciążenia pracą magazynu** wybierz, czy przegląd wykorzystania miejsca ma pokazywać informacje według magazynu, strefy, czy magazynu i strefy.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-121">In the **Storage load mode** field, select whether the overview of space utilization should show information by warehouse, zone, or warehouse and zone.</span></span>
+4. <span data-ttu-id="5dbd6-122">Ustaw w opcji **Wyklucz lokalizacje zablokowane** wartość **Tak**, aby wyłączyć zablokowane lokalizacje zapasów z obliczania wolnego miejsca.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-122">Set the **Exclude blocked locations** option to **Yes** to exclude blocked inventory locations from the calculation of available space.</span></span> <span data-ttu-id="5dbd6-123">Można zablokować lokalizację zapasów dla operacji wprowadzania i wyprowadzania zapasów, określając przyczynę blokady lokalizacji w polu **Wejście zablokowane** lub **Wyjście zablokowane** na skróconej karcie **Inne** na stronie **Lokalizacje magazynowe**.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-123">You can block an inventory location for input and output by specifying a blocking cause for the location in the **Input blocked** or **Output blocked** field on the **Other** FastTab on the **Inventory locations** page.</span></span>
+5. <span data-ttu-id="5dbd6-124">Na skróconej karcie **Typ lokalizacji** wybierz typy lokalizacji, które mają być uwzględnione przy obliczaniu wykorzystania miejsca.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-124">On the **Location type** FastTab, select the location types to include in the space utilization calculation.</span></span> <span data-ttu-id="5dbd6-125">Musisz wybrać co najmniej jeden typ lokalizacji dla projekcji.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-125">You must select at least one location type for the projection.</span></span>
+
+### <a name="associate-a-space-utilization-setup-with-a-master-plan"></a><span data-ttu-id="5dbd6-126">Skojarzenie ustawień wykorzystania miejsca z planem głównym</span><span class="sxs-lookup"><span data-stu-id="5dbd6-126">Associate a space utilization setup with a master plan</span></span>
+
+1. <span data-ttu-id="5dbd6-127">Wybierz kolejno opcje **Zarządzanie zapasami** \> **Zadania okresowe** \> **Planowanie wykorzystania przestrzeni magazynowej**.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-127">Select **Inventory management** \> **Periodic tasks** \> **Schedule load utilization**.</span></span>
+2. <span data-ttu-id="5dbd6-128">W polu **Plan główny** zaznacz plan główny.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-128">In the **Master plan** field, select a master plan.</span></span>
+3. <span data-ttu-id="5dbd6-129">W polu **Liczba dni** należy określić liczbę dni, jaka ma być uwzględniona w prognozie bieżących i przyszłych obciążeń pracą.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-129">In the **Number of days** field, specify the number of days to include in the projection of current and future workloads.</span></span>
+4. <span data-ttu-id="5dbd6-130">W polu **Wykorzystanie miejsca** wybierz konfigurację wykorzystania miejsca, która ma być używana do prognozowania bieżących i przyszłych obciążeń pracą.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-130">In the **Space utilization** field, select the space utilization setup to use for the projection of current and future workloads.</span></span>
+
+### <a name="specify-the-load-utilization-projection-and-view-information"></a><span data-ttu-id="5dbd6-131">Określ projekcję wykorzystania przestrzeni i wyświetlanie informacji</span><span class="sxs-lookup"><span data-stu-id="5dbd6-131">Specify the load utilization projection and view information</span></span>
+
+1. <span data-ttu-id="5dbd6-132">Wybierz kolejno opcje **Zarządzanie zapasami** \> **Zapytania i raporty** \> **Raporty zapasów fizycznych** \> **Wykorzystanie przestrzeni magazynowej**.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-132">Select **Inventory management** \> **Inquiries and reports** \> **Physical inventory reports** \> **Warehouse load utilization**.</span></span>
+2. <span data-ttu-id="5dbd6-133">W polu **Pokaż według** wybierz poziom prognozy wykorzystania miejsca:</span><span class="sxs-lookup"><span data-stu-id="5dbd6-133">In the **Show by** field, select the level of the space utilization projection:</span></span>
+
+    - <span data-ttu-id="5dbd6-134">**Oddział** — Prognozowanie wykorzystania miejsca dla każdego oddziału.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-134">**Site** – Project the space utilization for each site.</span></span> <span data-ttu-id="5dbd6-135">Projekcja jest przydatne, np. jeśli użytkownik chce wyświetlić wszystkie magazyny dla oddziału, dzięki czemu można zbilansować wykorzystanie miejsca między magazynami.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-135">This projection is useful if, for example, you want to view all the warehouses for a site so that you can balance the space utilization between the warehouses.</span></span>
+    - <span data-ttu-id="5dbd6-136">**Jednostka obciążenia pracą** — Prognozowanie wykorzystania miejsca dla stref lub magazynów.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-136">**Load unit** – Project the space utilization for zones or warehouses.</span></span> <span data-ttu-id="5dbd6-137">Ilość wolnego miejsca jest następnie prognozowana zgodnie z wartością wybraną w polu **Tryb obciążenia pracą magazynu** na stronie **Wykorzystanie miejsca** podczas tworzenia konfiguracji wykorzystania miejsca.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-137">The available space is then projected according to the value that you selected in the **Storage load mode** field on the **Space utilization** page when you created the space utilization setup.</span></span>
+
+3. <span data-ttu-id="5dbd6-138">Wykonaj jedną z następujących czynności, zależnie od wartości wybranej w poprzednim kroku:</span><span class="sxs-lookup"><span data-stu-id="5dbd6-138">Follow one of these steps, depending on the value that you selected in the previous step:</span></span>
+
+    - <span data-ttu-id="5dbd6-139">Jeśli w polu **Pokaż według** wybrano wartość **Oddział**, jest dostępne pole **Oddział**.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-139">If you selected **Site** in the **Show by** field, the **Site** field is available.</span></span> <span data-ttu-id="5dbd6-140">Wybierz jeden lub więcej oddziałów do uwzględnienia w prognozie.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-140">Select one or more sites to include in the projection.</span></span>
+    - <span data-ttu-id="5dbd6-141">Jeśli w polu **Pokaż według** wybrano wartość **Jednostka obciążenia pracą**, jest dostępne pole **Jednostka obciążenia pracą**.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-141">If you selected **Load unit** in the **Show by** field, the **Load unit** field is available.</span></span> <span data-ttu-id="5dbd6-142">Wybierz jednostkę obciążenia pracą.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-142">Select the load unit.</span></span>
+
+4. <span data-ttu-id="5dbd6-143">W polu **Typ obciążenia pracą** wybierz opcję **Objętość** lub **Masa**, aby wskazać jednostkę operacyjną obszaru, dla której ma zostać sporządzona prognoza miejsca.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-143">In the **Load type** field, select **Volume** or **Weight** to specify the warehouse operating unit to project space for.</span></span>
+5. <span data-ttu-id="5dbd6-144">W polu **Ustawienia wykorzystania miejsca** wybierz konfigurację wykorzystania miejsca, na której ma bazować prognoza.</span><span class="sxs-lookup"><span data-stu-id="5dbd6-144">In the **Space utilization setup** field, select the space utilization setup that the projection should be based on.</span></span>
+
