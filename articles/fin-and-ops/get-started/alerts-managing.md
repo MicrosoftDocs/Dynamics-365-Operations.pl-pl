@@ -3,7 +3,7 @@ title: "Wsadowe przetwarzanie alertów"
 description: "Ten temat zawiera informacje o wsadowym przetwarzaniu alertów w programie Microsoft Dynamics 365 for Finance and Operations."
 author: tjvass
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,17 +16,15 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b743bf64755f229faba2ec561dd51a776ad8128b
+ms.sourcegitcommit: aa5eab6dbf2cc604239cac199817ead6bef6f3de
+ms.openlocfilehash: b5a7e4c6375f3587a37d811d14610f06213d7806
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/08/2018
 
 ---
 
 # <a name="batch-processing-for-alerts"></a><span data-ttu-id="ed575-103">Przetwarzanie wsadowe na potrzeby alertów</span><span class="sxs-lookup"><span data-stu-id="ed575-103">Batch processing for alerts</span></span>
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 <span data-ttu-id="ed575-104">Alerty są przetwarzane przy użyciu funkcji przetwarzania wsadowego zawartej w programie Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="ed575-104">Alerts are processed by the batch processing functionality in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="ed575-105">Funkcja przetwarzania wsadowego musi zostać skonfigurowana przed rozpoczęciem dostarczania alertów.</span><span class="sxs-lookup"><span data-stu-id="ed575-105">You must set up batch processing before alerts can be delivered.</span></span>
 
