@@ -3,7 +3,7 @@ title: "Wsadowe przetwarzanie alertów"
 description: "Ten temat zawiera informacje o wsadowym przetwarzaniu alertów w programie Microsoft Dynamics 365 for Finance and Operations."
 author: tjvass
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,8 +25,6 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="batch-processing-for-alerts"></a>Przetwarzanie wsadowe na potrzeby alertów
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 Alerty są przetwarzane przy użyciu funkcji przetwarzania wsadowego zawartej w programie Microsoft Dynamics 365 for Finance and Operations. Funkcja przetwarzania wsadowego musi zostać skonfigurowana przed rozpoczęciem dostarczania alertów.
 
