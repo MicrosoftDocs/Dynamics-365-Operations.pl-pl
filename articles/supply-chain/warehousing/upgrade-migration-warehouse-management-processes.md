@@ -19,14 +19,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e0ff3a22b89ce22096198d2e1dd1ea9ed10239a9
+ms.sourcegitcommit: 6c6c7c3f63b7a49820811a7ec80248b09b6e3acf
+ms.openlocfilehash: 9651188102d96e68df939e941051a50a76339f03
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/19/2018
 
 ---
 
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a><span data-ttu-id="cf256-103">Uaktualnianie funkcji zarządzania magazynem z systemu Microsoft Dynamics AX 2012 do rozwiązania Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="cf256-103">Upgrade warehouse management from Microsoft Dynamics AX 2012 to Finance and Operations</span></span>
+
 
 [!include [banner](../includes/banner.md)]
 
