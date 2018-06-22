@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2e5dd8f852ac1a6c2997a50a60f03db6adfd218c
-ms.openlocfilehash: 5500bfc1cdd1949d301ae82fad5506dfdbeb59f3
+ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
+ms.openlocfilehash: 63e0a52919e12c1f497e6809244939c6047826a7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/01/2018
+ms.lasthandoff: 05/15/2018
 
 ---
 
@@ -72,8 +72,6 @@ Ustawienie **Funkcje w wersji zapoznawczej** dostępne w centrum administracyjny
     > Publikowane funkcje będą widoczne tylko dla klientów, którzy subskrybują co najmniej jeden produkt zarządzania ogłoszeniami o pracę w serwisie LinkedIn. W przeciwnym razie klienci zobaczą ofertę pracy tylko w przypadku, gdy jej specjalnie poszukają. Występuje opóźnienie przy zamieszczaniu ofert pracy w serwisie LinkedIn. Funkcja opublikowana w aplikacji Attract może się pojawić na LinkedIn dopiero po paru godzinach.
 
 - **Zgłoszenie kandydata** — Teraz kandydaci wewnętrzni i zewnętrzni mogą składać podania o pracę bezpośrednio ze strony funkcji w witrynie rozwoju kariery.
-- **Oceny** — W ramach konfigurowalnego procesu zatrudniania — na określoną funkcję lub używając szablonu funkcji — będzie teraz dostępny nowy typ działania **Oceny**. Użytkownicy mogą następnie używać aplikacji Project: Gauge wewnątrz aplikacji Talent do tworzenia podstawowych ocen, które potem wyślą kandydatom. Aplikacja Project: Gauge również jest w fazie zapoznawczej. W przyszłości zostaną dodani kolejni dostawcy.
-- **Project: Gauge** — Project: Gauge to aplikacja wewnątrz aplikacji Talent, która pozwala użytkownikom tworzyć proste oceny i ankiety.
 - **Zarządzanie ofertami** — Użytkownicy mogą teraz tworzyć pisma ofertowe za pomocą szablonów zawierających symbole zastępcze. Gdy kandydat dociera do etapu oferty, osoby rekrutujące i menedżerowie ds. zatrudnienia mogą za pomocą narzędzia Offer przygotować formalną ofertę dla kandydata przy użyciu szablonów, wysłać ofertę do wewnętrznego zatwierdzenia, a na koniec wysłać ofertę kandydatowi do podpisu. Z czasem do narzędzia Offer zostanie dodanych wiele nowych możliwości, a funkcja zapoznawcza zostanie zaktualizowana o te możliwości, gdy je dopracujemy do poziomu wersji zapoznawczej.
 
 ### <a name="core-hr"></a>Core HR
@@ -90,7 +88,7 @@ Bez względu na to, czy Twoje opinie o korzystaniu z funkcji zapoznawczych będ�
     - [Attract Ideas](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
     - [Core HR](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
 
-W przesyłanych opiniach i recenzjach produktu nie podawaj żadnych danych osobowych (tzn. informacji, które mogłyby Cię identyfikować). Zebrane informacje mogą być dalej analizowane, ale zgodnie z odnośnymi przepisami o ochronie danych nie będą wykorzystywane do udzielania odpowiedzi na pytania. Dane osobowe, które na mocy tych programów są zbierane osobno, podlegają [zasadom zachowania poufności informacji firmy Microsoft](https://privacy.microsoft.com/en-us/privacystatement).
+W przesyłanych opiniach i recenzjach produktu nie podawaj żadnych danych osobowych (tzn. informacji, które mogłyby Cię identyfikować). Zebrane informacje mogą być dalej analizowane, ale zgodnie z odnośnymi przepisami o ochronie danych nie będą wykorzystywane do udzielania odpowiedzi na pytania. Dane osobowe, które na mocy tych programów są zbierane osobno, podlegają [zasadom zachowania poufności informacji firmy Microsoft](https://privacy.microsoft.com/privacystatement).
 
 > [!TIP]
 > Dodaj tej temat do zakładek i zaglądaj tu regularnie, aby być na bieżąco z nowo publikowanymi funkcjami w wersjach zapoznawczych.

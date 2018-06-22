@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fecdca72839ef8ce204b62db6e02e8fa809a30d5
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 613fcf941576b9fb05f5c059699e4cc9c4cabe3e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -117,12 +117,9 @@ Po kliknięciu menu **Raporty finansowe** jest wyświetlana lista domyślnych ra
 ## <a name="creating-and-modifying-financial-reports"></a>Tworzenie i modyfikowanie raportów finansowych
 Z listy raportów finansowych można utworzyć nowy raport lub zmodyfikować istniejący raport. Jeśli masz odpowiednie uprawnienia, możesz utworzyć nowy raport finansowy, klikając przycisk **Nowy** w okienku akcji. Projektant raportów zostanie pobrany na Twoje urządzenie i uruchomiony. Po uruchomieniu projektanta raportów można utworzyć nowy raport. Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych. Na liście są wyświetlane tylko raporty, które zostały utworzone dla firmy używanej w programie Finance and Operations. Aby uzyskać więcej informacji na temat procesu tworzenia i modyfikowania raportów finansowych w programie Finance and Operations, zobacz następujące [wpisy](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) na blogu o module sprawozdawczości finansowej w systemie Dynamics. **Uwaga:** Komputer, do którego pobierasz aplikację kliencką projektanta raportów, musi mieć zainstalowane oprogramowanie Microsoft .NET Framework w wersji 4.6.2. Tę wersję programu Microsoft .NET Framework można pobrać i zainstalować [stąd](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Jeśli używasz przeglądarki Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta projektanta raportów. Jeśli pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito. Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych. Po wybraniu obszaru wokół nazwy raportu kliknij przycisk **Edytuj** w okienku akcji. Zostanie uruchomiony projektant raportów.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
-
-[Wyświetlanie raportów finansowych](view-financial-reports.md)
-
-[Blog o sprawozdawczości finansowej w systemie Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+## <a name="additional-resources"></a>Dodatkowe zasoby
+- [Wyświetlanie raportów finansowych](view-financial-reports.md)
+- [Blog o sprawozdawczości finansowej w systemie Dynamics](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

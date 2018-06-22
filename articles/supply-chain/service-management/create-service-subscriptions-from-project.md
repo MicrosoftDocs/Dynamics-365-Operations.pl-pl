@@ -19,16 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1fcd82f34178e9bac72dc387399fc78e1bc5529e
+ms.sourcegitcommit: 862bbf4d1d9b0dc2b6dc418ee766ed4dedef49fe
+ms.openlocfilehash: 5211270eb45749529c38b3d3d9af974e7650d632
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/24/2018
 
 ---
 
 # <a name="create-service-subscriptions-from-a-project"></a>Tworzenie subskrypcji serwisu na podstawie projektu    
 
-[!include [banner](../includes/banner.md)
+[!include [banner](../includes/banner.md)]
 
 
 Można utworzyć subskrypcję serwisu na podstawie projektu w module **Zarządzanie projektami i ich księgowanie**.

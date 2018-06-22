@@ -1,6 +1,6 @@
 ---
-title: "Pakiet zawartości usługi Power BI Wyniki finansowe"
-description: "W tym temacie opisano pakiet zawartość Wyniki finansowe dostępny dla usługi Power BI."
+title: "Rozwiązanie PowerBI.com Wyniki finansowe"
+description: "W tym temacie opisano pakiet zawartość Wyniki finansowe dostępny dla rozwiązania Power BI."
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2018
@@ -18,26 +18,26 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: d062937d8d1cb7d8e4f4cc055eb4514fa56b4eab
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="financial-performance-power-bi-content"></a>Pakiet zawartości usługi Power BI Wyniki finansowe
+# <a name="financial-performance-powerbicom-solution"></a>Rozwiązanie PowerBI.com Wyniki finansowe
 
 [!include [banner](../includes/banner.md)]
 
 > [!Note]
-> Ten pakiet zawartości został wycofany, zgodnie z opisem w temacie [Pakiety zawartości usługi Power BI dostępne w usłudze AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> To rozwiązanie PowerBI.com zostało wycofane zgodnie z opisem w temacie [Pakiety zawartości usługi Power BI dostępne w usłudze AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-W tym temacie opisano pakiet zawartość **Wyniki finansowe** dostępny dla usługi Microsoft Power BI. Omówiono dostępny pulpit nawigacyjny i raporty oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+W tym temacie opisano pakiet zawartość **Wyniki finansowe** dostępny dla rozwiązania Power BI. Omówiono dostępny pulpit nawigacyjny i raporty oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania rozwiązania.
 
 ## <a name="main-account-setup"></a>Konfiguracja konta głównego
 Ponieważ organizacje chcą, aby kwoty zobowiązań i przychodów były wyświetlane jako kwoty dodatnie w raportach, ważne jest odpowiednie skonfigurowanie kont głównych. Aby kwoty na tych kontach głównych były wyświetlane jako dodatnie, typ konta głównego musi być ustawiony jako **Pasywa** lub **Przychód**. Gdy są używane te typy kont, sprawozdawczość za pośrednictwem usługi Power BI będzie powodowała odwracanie znaków i wyświetlanie kwot jako dodatnich.
 
-## <a name="dashboard-and-reports-that-are-included-in-the-power-bi-content"></a>Pulpit nawigacyjny i raporty dostępne w tym pakiecie zawartości usługi Power BI
+## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>Pulpit nawigacyjny i raporty dostępne w rozwiązaniu PowerBI.com
 Pulpit nawigacyjny zawiera kafelki podsumowań danych oparte na źródłowych raportach. Każdy kafelek zawiera podsumowanie informacji o bieżącym roku dla wszystkich firm w organizacji. Oto kilka dostępnych kafelków:
 
 - Kasa
@@ -74,7 +74,7 @@ Każdy kafelek wykorzystuje pomocniczy raport. Raporty zawierają wykresy i tabe
 Wykresy i kafelki we wszystkich tych raportach można filtrować i przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
-Następujące jednostki zostały użyte jako podstawa w pakiecie zawartości usługi Power BI **Wyniki finansowe**:
+Następujące jednostki zostały użyte jako podstawa w pakiecie zawartości rozwiązania PowerBI.com **Wyniki finansowe**:
 
 **Jednostki zagregowanych danych**
 

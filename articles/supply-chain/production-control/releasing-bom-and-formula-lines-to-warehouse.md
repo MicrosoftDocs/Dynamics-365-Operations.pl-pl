@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 838dc1e5867b8380823275aba5fc425003a54523
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -43,8 +43,7 @@ Metoda używana do zwalniania wierszy BOM i formuły jest kontrolowana przez par
 - **Zwolnienie wierszy BOM i formuły w ramach zwalniania zlecenia produkcyjnego lub zamówienia partii** — w tej metodzie wiersze BOM i formuły dla produkcji lub zamówienia partii są zwalniane w ramach procesu zwalniania zamówienia. Zwykle podczas zwalniania zlecenia produkcyjnego lub zamówienia partii zadania produkcyjne są zwalniane do zakładu i drukowane są dokumenty produkcji. W tym procesie stan zamówienia zmienia się także na **Zwolnione**.
 - **Zwolnienie wierszy BOM i formuły za pomocą zadania wsadowego lub jako interakcja ręczna** — w tej metodzie wiersze BOM i formuły można zwolnić tylko za pomocą zadania wsadowego **Automatyczne zwalnianie wierszy BOM i formuły** lub za pomocą interakcji ręcznej. Aby ręcznie zwolnić wiersze BOM i formuły, na stronie listy zlecenia produkcyjnego lub stronie szczegółów zlecenia produkcyjnego, w okienku akcji, wybierz opcję **Zwolnij do magazynu**.
 
-Aby zapoznać się z szybką demonstracją zwalniania wierszy BOM i formuły do produkcji przy użyciu zadania wsadowego, obejrzyj ten krótki film na YouTube:
-[!Video <https://www.youtube.com/embed/8urAJn50dQ8>]
+Aby zapoznać się z szybką demonstracją zwalniania wierszy BOM i formuły do produkcji przy użyciu zadania wsadowego, obejrzyj ten krótki film na YouTube: [Wsadowe zwalnianie pobrania produkcji do magazynu](https://www.youtube.com/watch?v=8urAJn50dQ8).
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Zwalnianie wierszy BOM i formuły za pomocą zadania wsadowego
 
@@ -85,8 +84,7 @@ Poniższa operacja przedstawia zlecenie produkcyjne zawierające dwie operacje, 
 
 ![Przykład zwalniania materiału według numeru operacji](media/two-operations.PNG)
 
-Aby zapoznać się z szybką demonstracją zwalniania materiału proporcjonalnie do ilości wyrobów gotowych, obejrzyj ten krótki film na YouTube:
-[!Video <https://www.youtube.com/embed/Rm3ojAz6Zu0>]
+Aby zapoznać się z szybką demonstracją zwalniania materiału proporcjonalnie do ilości wyrobów gotowych, obejrzyj ten krótki film na YouTube: [Ulepszenia procesu zwalniania zleceń produkcyjnych w programie Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Zwalnianie materiału proporcjonalnie do ilości wyrobów gotowych
 

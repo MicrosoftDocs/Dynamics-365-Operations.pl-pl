@@ -1,6 +1,6 @@
 ---
 title: Intrastat
-description: "Ten artykuł zawiera informacje o sprawozdawczości Intrastat o handlu towarami i — w niektórych przypadkach — usługami między krajami/regionami Unii Europejskiej (UE). Omówiono proces sprawozdawczości oraz opisano wymagane ustawienia i warunki wstępne."
+description: "Ten temat zawiera informacje o sprawozdawczości Intrastat o handlu towarami i — w niektórych przypadkach — usługami między krajami/regionami Unii Europejskiej (UE). Omówiono proces sprawozdawczości oraz opisano wymagane ustawienia i warunki wstępne."
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,10 +18,10 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2ee60f3d1155b89d342b94832fbdbe898a5063c6
+ms.sourcegitcommit: b4b3d8f7da4fbb107353a25ff177492a0744b4c1
+ms.openlocfilehash: 50eb50c636d70dbdc374e8cfc89438433fb1f1b0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/17/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł zawiera informacje o sprawozdawczości Intrastat o handlu towarami i — w niektórych przypadkach — usługami między krajami/regionami Unii Europejskiej (UE). Omówiono proces sprawozdawczości oraz opisano wymagane ustawienia i warunki wstępne.
+Ten temat zawiera informacje o sprawozdawczości Intrastat o handlu towarami i — w niektórych przypadkach — usługami między krajami/regionami Unii Europejskiej (UE). Omówiono proces sprawozdawczości oraz opisano wymagane ustawienia i warunki wstępne.
 
 Intrastat to system gromadzenia i generowania danych statystycznych na temat handlu towarami między krajami/regionami Unii Europejskiej (UE). Raport Intrastat jest wymagany w przypadku każdego produktu przekraczającego granicę innego kraju/regionu UE. W niektórych krajach/regionach obowiązek tworzenia raportów Intrastat dotyczy również usług. Na potrzeby raportów Intrastat mogą być gromadzone obowiązkowe i opcjonalne elementy. Wymagane są następujące elementy: identyfikator VAT podmiotu odpowiedzialnego za dostarczenie informacji, okres referencyjny, przepływ (przyjęcie lub wysyłka), ośmiocyfrowy kod towaru, kraj członkowski (kraj wysyłki i kraj docelowy), wartość towaru, ilość towaru (waga netto i jednostka dodatkowa) oraz charakter transakcji. Kraje/regiony mogą również gromadzić opcjonalne informacje w różnych warunkach. Do informacji opcjonalnych należą: kraj/region pochodzenia towaru, warunki dostawy, środek transportu, bardziej szczegółowy kod towaru niż 8-cyfrowy, kraj pochodzenia dla wysyłki i kraj pochodzenia dla odbioru, procedura statystyczna, wartość statystyczna, opis towaru oraz port/lotnisko załadunku/rozładunku.
 
@@ -223,6 +223,7 @@ Użyj strony **Parametry handlu zagranicznego**, aby skonfigurować parametry w 
 </ul></li>
 <li><strong>Raportowanie elektroniczne</strong> — umożliwia określenie odwołania do konfiguracji raportowania elektronicznego, tak aby można było wygenerować plik elektroniczny i raport.</li>
 <li><strong>Hierarchia kodów asortymentu</strong> — pozwala określić hierarchię kategorii typu <strong>Kod asortymentu</strong>, która reprezentuje kod asortymentu Intrastat CN8.</li>
+  <li> <strong>Typ kursu wymiany</strong> — Opcjonalnie określ kurs wymiany, który ma być używany do raportowania Intrastat transakcji sprzedaży i zakupu w walutach obcych. Używane, jeśli stawka jest inna niż zastosowana przy księgowaniu transakcji.</li>  
 </ul></td>
 </tr>
 <tr class="even">
@@ -239,9 +240,5 @@ Użyj strony **Parametry handlu zagranicznego**, aby skonfigurować parametry w 
 </tr>
 </tbody>
 </table>
-
-
-
-
 
 
