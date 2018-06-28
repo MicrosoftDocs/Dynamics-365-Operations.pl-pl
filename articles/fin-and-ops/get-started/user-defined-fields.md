@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6f0257d6a16d3d53953e1fbbf023109425fa6844
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: f2aa55ae4258f5ef81456b92278415297c194d66
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -34,10 +34,7 @@ Program Microsoft Dynamics 365 for Finance and Operations zawiera już w standar
 
 Opcja dodawania pól niestandardowych jest dostępna w aktualizacji platformy 13 i nowszych wersjach.
 
-W tym filmie przedstawiono, jak łatwe jest dodawanie niestandardowego pola do strony.
-
-
-> [!Video https://www.youtube.com/embed/gWSGZI9Vtnc]
+W tym nagraniu wideo przedstawiono, jak łatwe jest do dodawanie niestandardowego pola do strony: [Dodawanie pól niestandardowych w Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
 ## <a name="creating-custom-fields"></a>Tworzenie pól niestandardowych
 Po stwierdzeniu, które dodatkowe informacje mają być śledzone w aplikacji, można utworzyć niestandardowe pole w odpowiedniej tabeli, po czym udostępnić je na stronie.   

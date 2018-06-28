@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c925b2e996f51b8c5d5332217643c3155cfc03c0
+ms.sourcegitcommit: 4c61cb81368251540e0015e155b1cc932bf7b948
+ms.openlocfilehash: 6360bbc8e5abd94cfd1c2853bc384598047eec39
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/16/2018
 
 ---
 
@@ -106,22 +106,9 @@ W poniższych sekcjach wymieniono zasoby według kraju/regionu.
 -   [Płatności podatków](../../financials/localizations/latam-bra-tax-payments.md)
 -   [Podatki](../../financials/localizations/latam-bra-calculate-taxes.md)
 
-### <a name="china"></a>Chiny
--   [Porównanie list składowych (BOM)](../../financials/localizations/apac-chn-bom-comparison.md)
--   [Chińskie załączniki](../../financials/localizations/apac-chn-vouchers.md)
--   [Konfigurowanie integracji podatków](../../financials/localizations/apac-chn-tax-integration.md)
-    -   [Faktury VAT dla odbiorców — często zadawane pytania](../../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
-    -   [Metody amortyzacji środków trwałych ](../../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md)
--   [Importowanie jednostki danych Chiński podatek od złota](../../financials/localizations/apac-chn-import-golden-tax-data-entity.md)
--   [Model średnich kosztów miesięcznych](../../financials/localizations/apac-chn-monthly-average-cost-model.md)
--   [Księgowanie kont głównych zapasów według oddziału](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
--   [Wyświetlanie kwot debetu i kredytu dla kont księgowych](../../financials/localizations/apac-chn-negative-debits-credits.md)
-
+### <a name="chinafinancialslocalizationschinamd"></a>[Chiny](../../financials/localizations/china.md)
 ### <a name="the-czech-republicfinancialslocalizationsczech-republicmd"></a>[Czechy](../../financials/localizations/czech-republic.md)
-
-### <a name="estonia"></a>Estonia
--   [Szczegóły deklaracji VAT w Estonii](../../financials/localizations/emea-est-vat-statement-details.md)
--   [Likwidacja środków trwałych](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
+### <a name="estoniafinancialslocalizationsestoniamd"></a>[Estonia](../../financials/localizations/estonia.md)
 
 ### <a name="europe"></a>Europa
 - [Posiadacze zaliczek](../../financials/localizations/emea-advance-holders.md)

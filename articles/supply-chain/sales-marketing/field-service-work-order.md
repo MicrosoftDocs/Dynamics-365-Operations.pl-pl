@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
-ms.openlocfilehash: 933d9755085d507310dd46d96a492d2124647ec3
+ms.sourcegitcommit: 8914723f6ef436bfc9e3a98cc82d5486042b0761
+ms.openlocfilehash: 250b7caa1e1495140d0d4f688ecae4acb8814467
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/07/2018
 
 ---
 
@@ -158,7 +158,7 @@ Synchronizacja wartości **Oszacowany** z wartościami **Użyte** jest zarządza
     - **Wiersz produktu:** Szacowana ilość = 5 szt., Użyta ilość = 6 szt., Stan wiersza = Użyte, Alokowane = Tak
     - **Wiersz usługi:** Szacowana ilość = 2 h, Użyta ilość = 1,5 h, Stan wiersza = Użyte
 
-    W tym przykładzie z programem Finance and Operations jest synchronizowane ustawienie **Użyta ilość** o wartości **6** dotyczące produktu oraz ustawienie **Szacowana ilość** o wartości **1,5 h** dotyczące usługi.
+    W tym przykładzie z programem Finance and Operations jest synchronizowane ustawienie **Użyta ilość** o wartości **6** dotyczące produktu oraz ustawienie **Użyta ilość** o wartości **1,5 h** dotyczące usługi.
 
 ## <a name="sales-order-origin-and-status"></a>Źródło i stan zamówienia sprzedaży
 

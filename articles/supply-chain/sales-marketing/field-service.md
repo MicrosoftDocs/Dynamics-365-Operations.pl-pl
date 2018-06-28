@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 03a932652cdd93b2a5917d0fca72809d1648b678
-ms.openlocfilehash: b1acf0b64914a3199fcf44f8377e32b26f0af99e
+ms.sourcegitcommit: a57e23691a6b4d48c6b8dd6d1f61fc9730365b39
+ms.openlocfilehash: 0c1268d2fddcf7b28ecfc3197f21e9d30a5a5855
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/25/2018
+ms.lasthandoff: 05/31/2018
 
 ---
 
@@ -44,11 +44,9 @@ Pierwsza faza integracji między programami Field Service i Finance and Operatio
 - [Zlecenia pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Finance and Operations](field-service-work-order.md)
 - [Faktury w programie Field Service z fakturami niezależnymi w programie Finance and Operations](field-service-invoice.md)
 
-Aby zobaczyć przykład synchronizowania zlecenia pracy między aplikacjami Field Service i Finance and Operations, obejrzyj krótki film na YouTube:
+Aby zobaczyć przykład jak synchronizować zlecenie produkcyjne między Field Service a Finance and Operations, zobacz krótki film w serwisie YouTube [Synchronizowanie zlecenia produkcyjnego między Dynamics 365 for Field Service a Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU).
 
-> [!Video https://www.youtube.com/embed/hAB4TDVMjxU]
-
-[Synchronizowanie zlecenia pracy między rozwiązaniami Field Service i Finance and Operations (film na YouTube)](https://youtu.be/hAB4TDVMjxU)
+[![](https://img.youtube.com/vi/hAB4TDVMjxU/0.jpg)](https://www.youtube.com/watch?v=hAB4TDVMjxU)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Wymagania systemowe dla rozwiązania Finance and Operations
 Program Field Service można integrować z następującymi wersjami:

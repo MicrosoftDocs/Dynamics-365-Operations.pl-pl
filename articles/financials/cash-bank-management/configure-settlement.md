@@ -1,16 +1,16 @@
 ---
 title: Konfigurowanie rozliczenia
-description: "Sposoby i terminy rozliczania transakcji mogą być złożonymi zagadnieniami, dlatego trzeba dokładnie poznać i poprawnie zdefiniować parametry zgodnie z potrzebami firmy. W tym artykule opisano parametry używane do rozliczeń w modułach dla Rozrachunki z odbiorcami i Rozrachunki z dostawcami."
+description: "Sposoby i terminy rozliczania transakcji mogą być złożonymi zagadnieniami, dlatego trzeba dokładnie poznać i poprawnie zdefiniować parametry zgodnie z potrzebami firmy. W tym temacie opisano parametry używane do rozliczeń w modułach dla Rozrachunki z odbiorcami i Rozrachunki z dostawcami."
 author: kweekley
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ed520ce3a67fab81da24b36b042152f530d75dd
+ms.sourcegitcommit: 66e2fdbf7038a2c15fb373d4f96cd6e6c4c87ea0
+ms.openlocfilehash: 1361bce94f6542112cf29e369f2238f211d0647e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Sposoby i terminy rozliczania transakcji mogą być złożonymi zagadnieniami, dlatego trzeba dokładnie poznać i poprawnie zdefiniować parametry zgodnie z potrzebami firmy. W tym artykule opisano parametry używane do rozliczeń w modułach dla Rozrachunki z odbiorcami i Rozrachunki z dostawcami. 
+Sposoby i terminy rozliczania transakcji mogą być złożonymi zagadnieniami, dlatego trzeba dokładnie poznać i poprawnie zdefiniować parametry zgodnie z potrzebami firmy. W tym temacie opisano parametry używane do rozliczeń w modułach dla Rozrachunki z odbiorcami i Rozrachunki z dostawcami. 
 
 Następujące parametry mają wpływ na sposób przetwarzania rozliczeń w programie Microsoft Dynamics 365 for Finance and Operations. Rozliczenie to proces rozliczania faktury względem płatności lub faktury korygującej. Parametry te znajdują się w obszarze **Rozliczenia** na stronach **Parametry modułu rozrachunków z odbiorcami** i **Parametry modułu rozrachunków z dostawcami**.
 
@@ -58,7 +58,14 @@ Następujące parametry mają wpływ na sposób przetwarzania rozliczeń w progr
 - **Określanie priorytetów rozliczenia (tylko AR)** — ustaw tę opcję jako **Tak**, aby uaktywnić przycisk **Oznacz według priorytetu** na stronach **wprowadzanie płatności odbiorcy** i **rozliczenia transakcji**. Kliknięcie tego przycisku umożliwia przypisywanie wcześniej określonej kolejności rozliczeń do transakcji.  Po zastosowaniu kolejności rozliczenia do transakcji można zmienić kolejność i alokację płatności przed zaksięgowaniem.
 - **Użyj priorytetu dla rozliczeń automatycznych** — Ustawienie tej opcji jako **Tak** umożliwia użycie określonej kolejności priorytetów podczas automatycznego rozliczania transakcji. To pole jest dostępne tylko wtedy, gdy opcje **Określanie priorytetów rozliczenia** i **Automatyczne rozliczanie** są ustawione jako **Tak**.
 
+## <a name="fixed-dimensions-on-accounts-receivableaccounts-payable-main-accounts"></a>Stałe wymiary na kontach głównych rozrachunków z odbiorcami/dostawcami
 
+Gdy dla rozrachunków z odbiorcami/rozrachunków z dostawcami konta głównego używane są stałe wymiary, dodatkowe zapisy księgowe i dwie dodatkowe transakcje dostawcy będą zaksięgowane w procesie rozliczania. Podczas rozliczania następuje porównanie konta księgowego rozrachunków z dostawcami/odbiorcami z faktury i płatności.  Gdy płatność i rozliczenie są zakończone w tym samym czasie, co jest typowym scenariuszem, księgowanie płatności nie jest zaksięgowany w Księdze głównej do momentu zakończenia procesu rozliczania. Z powodu kolejności zdarzeń przetwarzania mechanizm rozliczania nie jest w stanie ustalić faktycznego konta księgowego dla rozrachunków z odbiorcami/ dostawcami na podstawie wpisu księgowania płatności. Podczas rozliczania następuje rekonstrukcja stanu konta księgowego dla płatności. Stanie się to problemem, jeśli stała wartość wymiaru jest używana do rozrachunków z odbiorcami/dostawcami konta głównego.
 
+Aby odtworzyć na koncie księgowym, rozrachunki z odbiorcami/rozrachunków z dostawcami, konto główne jest pobierane z profilu księgowania, a wymiary finansowe są pobierane z rekordu transakcji dostawcy dla płatności, zgodnie z definicją w arkuszu płatności. Stałe wymiary nie są ustawiane domyślnie w arkuszach płatności, ale zamiast tego stosowane do konta głównego w ostatnim etapie procesu księgowania. W związku z tym wartość stałego wymiaru prawdopodobnie nie znajduje się w transakcji z dostawcą, chyba że została ustawiona domyślnie na podstawie innego źródła, na przykład dostawcy. Odtworzone konto nie będzie zawierać stałej wartości wymiaru. W trakcie przetwarzania rozliczenia system stwierdzi, że należy utworzyć wpis korygujący, ponieważ faktura została zaksięgowana ze stałą wartością wymiaru, a odtworzone konto płatności nie.  Rozliczanie jest kontynuowane i następuje zaksięgowaniu wpisu korygującego. Ostatnim etapem księgowania jest zastosowanie stałego wymiaru. Dodanie stałego wymiaru do wpisu korygującego powoduje, że jest on księgowany po stronie debetowej i kredytowej na tym samym koncie księgi. Rozliczenie nie może spowodować wycofania wpisu księgowania.
 
+Aby uniknąć dodatkowych zapisów księgowych, po stronie debetowej i kredytowej na tym samym koncie księgowym, należy uwzględnić opisane niżej rozwiązania problemów, w zależności od wymagań firmy. 
+
+-   Organizacje często używają stałych wymiarów do wypełniania zerami wymiarów finansowych, który nie są wymagane. Jest to przypadek typowy dla kont bilansowych, takich jak rozrachunki z odbiorcami/rozrachunki z dostawcami. Struktur kont można używać, aby nie śledzić wymiarów finansowych, które są zazwyczaj wypełniane zerami.  Można usunąć wymiar finansowy dla kont bilansowych, co wyeliminuje konieczność używania stałych wymiarów.
+-   Jeśli organizacja wymaga stałych wymiarów na koncie głównym rozrachunków z odbiorcami/dostawcami, znajdź sposób na domyślne ustawianie stałego wymiaru w płatności, tak aby wartości stałego wymiaru była przechowywana w transakcji z dostawcą dla płatności. Dzięki temu system będzie mógł odtworzyć rozrachunki z odbiorcami/rozrachunki z dostawcami konta głównego, aby uwzględnić wartości ustalonego wymiaru. Stała wartość wymiaru może być zdefiniowana jako wartość domyślna dla dostawców lub nazwy arkusza dla arkusza płatności.
 

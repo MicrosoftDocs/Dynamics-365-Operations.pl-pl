@@ -1,0 +1,84 @@
+- name: Zapraszamy do korzystania z rozwiązania Dynamics 365 for Talent
+  href: index.md
+- name: Rozpoczęcie pracy
+  href: talent-get-started.md
+  items:
+    - name: Wymagania systemowe i zasady aktualizacji
+      href: talent-versions-update-policy.md
+    - name: Inicjowanie obsługi rozwiązania Microsoft Dynamics 365 for Talent
+      href: provisioning-talent.md
+    - name: Usuwanie środowiska rozwiązania Talent
+      href: remove-talent-environment.md
+    - name: Inicjowanie obsługi modułowych aplikacji rozwiązania Microsoft Dynamics 365 for Talent
+      href: modular-app-tech-faq.md
+    - name: Rozszerzanie funkcjonalności rozwiązania Talent
+      href: extend-talent-functionality.md
+    - name: Dostęp do funkcji w wersji zapoznawczej w aplikacji Dynamics 365 for Talent
+      href: access-preview-feature.md
+- name: Opracowywanie strategii dotyczącej zasobów ludzkich
+  href: departments-jobs-positions.md
+  items:
+    - name: Konfigurowanie składników funkcji
+      href: create-job.md
+    - name: Tworzenie działu i kojarzenie go z hierarchią działów
+      href: create-department-add-department-hierarchy.md
+    - name: Konfigurowanie parametrów modułu Zasoby ludzkie w wielu firmach
+      href: set-up-hr-parameters-across-legal-entities.md
+    - name: Konfigurowanie specyficznych dla firmy parametrów modułu Zasoby ludzkie
+      href: set-up-company-specific-hr-parameters.md
+    - name: Akcje dotyczące pracowników — często zadawane pytania
+      href: personnel-actions-faq.md
+    - name: Formalizowanie procesów biznesowych
+      href: formalize-business-processes.md
+    - name: Używanie przepływu pracy do zarządzania informacjami pracowników etatowych
+      href: workflow-manage-employee-information.md
+    - name: Omówienie urlopów i nieobecności
+      href: leave-absence-overview.md
+- name: Rekrutacja w organizacji
+  items:
+    - name: Omówienie aplikacji Attract
+      href: attract-overview.md
+    - name: Omówienie aplikacji Onboard
+      href: create-onboarding-experience.md
+- name: Motywowanie pracowników etatowych
+  items:
+    - name: Plany wynagrodzeń
+      href: compensation-plans.md
+    - name: Tworzenie planów stałych wynagrodzeń
+      href: create-fixed-compensation-plans.md
+    - name: Tworzenie planów wynagrodzeń o zmiennej wysokości
+      href: create-variable-compensation-plans.md
+    - name: Przetwarzanie wynagrodzenia
+      href: process-compensation.md
+- name: Wspomaganie rozwoju i szkolenie pracowników etatowych
+  items:
+    - name: Omówienie zarządzania wydajnością
+      href: performance-management-overview.md
+    - name: Dopasowywanie umiejętności pracowników do potrzeb biznesowych
+      href: skills.md
+    - name: Konfigurowanie kursów szkoleniowych
+      href: courses.md
+- name: Tworzenie i obsługa świadczeń
+  href: manage-benefit-program.md
+- name: Zasady uprawnień do świadczeń
+  href: benefit-eligibility-policies.md
+  items:
+    - name: Zarządzanie przedmiotami wypożyczanymi pracownikom
+      href: loan-items.md
+- name: Zbieranie informacji za pomocą kwestionariuszy
+  href: questionnaires.md
+  items:
+    - name: Projektowanie kwestionariusza
+      href: design-questionnaires.md
+    - name: Rozsyłanie i wypełnianie kwestionariusza
+      href: distribute-questionnaires.md
+    - name: Ocenianie wyników kwestionariusza
+      href: evaluate-questionnaire-results.md
+- name: Bezpieczeństwo i przestrzeganiem przepisów w miejscu pracy (USA)
+  items:
+    - name: Odpowiadanie na żądanie dotyczące danych osobowych za pomocą rozwiązania Talent
+      href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/talent/toc.json
+    - name: Weryfikacja zatrudnienia za pomocą formularzy I-9
+      href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json
+    - name: Zgodność z ustawą ADA
+      href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json
