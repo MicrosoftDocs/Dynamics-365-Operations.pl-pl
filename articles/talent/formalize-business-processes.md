@@ -1,6 +1,6 @@
 ---
 title: "Formalizowanie procesów biznesowych"
-description: "Funkcja procesów biznesowych pozwala utworzyć szablon procesu biznesowego dla procesów, które muszą być wykonywane w organizacji."
+description: "W tym temacie wyjaśniono, jak za pomocą funkcji Proces biznesowy można utworzyć szablon procesu biznesowego dla procesów, które muszą być wykonywane w organizacji."
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
@@ -19,47 +19,60 @@ ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1b50a97f5e2fc94255ff71702faf91ab36e68eb4
+ms.sourcegitcommit: ee4035f3156a91faecdecba45289dbb1ca6e947a
+ms.openlocfilehash: fd538677d897c1e7d3103cd714c688373aab8d29
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 06/19/2018
 
 ---
 # <a name="formalize-business-processes"></a>Formalizowanie procesów biznesowych
-Funkcja procesów biznesowych pozwala utworzyć szablon procesu biznesowego dla procesów, które muszą być wykonywane w organizacji. Na przykład firma może corocznie wykonywać audyt kadrowy. Można utworzyć szablon śledzący wszystkie zadania zawarte w audycie, aby mieć pewność, że wszystkie zadania są wykonywane każdorazowo podczas wykonywania procesu, a w razie potrzeby również zapewnić, że zadania są wykonywane w poprawnej kolejności. Szablony mogą być wykorzystywane bez zmian w procesach cyklicznych lub kopiowane w celu użycia jako punkty wyjściowe do tworzenia nowych szablonów.
 
-Po utworzeniu szablonu można uruchomić i śledzić proces w obszarze roboczym Proces biznesowy.  Po rozpoczęciu procesu biznesowego zadania zostaną przypisane do odpowiednich osób i będą zawierały termin wykonania. Poniżej szczegółowo omówimy te składniki.
+[!include[banner](includes/banner.md)]
 
-## <a name="business-process-template"></a>Szablon procesu biznesowego
-Szablon procesu biznesowego zawiera listę grup zadań, które składają się na proces biznesowy. Menedżerowie i asystenci ds. kadr mogą tworzyć procesy biznesowe domyślnie.  Można to jednak zmienić w konfiguracji zabezpieczeń poprzez edycję obowiązku Obsługa ogólnych procesów biznesowych.
+Funkcja Proces biznesowy pozwala utworzyć szablon procesu biznesowego dla procesów biznesowych, które muszą być wykonywane w organizacji. Na przykład firma co rok przeprowadza audyt zasobów ludzkich (HR). W takim wypadku można utworzyć szablon, który śledzi wszystkie zadania wchodzące w skład procesu inspekcji. Ten szablon pomoże zagwarantować, że wszystkie zadania są wykonywane podczas każdej sesji audytu. Ponadto jeśli zadania muszą zostać wykonane w określonej kolejności, szablon może pomóc tego dopilnować.
 
-Dla każdego procesu można zdefiniować właściciela procesu. Właściciel procesu będzie miał wgląd we wszystkie zadania w procesie oraz będzie mógł zmieniać ich przypisania i terminy wykonania.  Na przykład dyrektor działu kadr może utworzyć szablon procesu biznesowego dla przeglądu świadczeń.  Menedżer ds. wynagrodzeń i świadczeń może zostać ustawiony jako właściciel procesu, dzięki czemu będzie miał wgląd w zadania, które trzeba wykonać w ramach przeglądu.  Właściciel procesu nie może tworzyć ani usuwać aktywnych procesów biznesowych oraz szablonów procesów biznesowych.
+Szablony mogą być wykorzystywane w procesach cyklicznych. Można je również kopiować i używać jako punktu wyjścia do tworzenia nowych szablonów.
 
-## <a name="task"></a>Zadanie
-Proces biznesowy często składa się z wielu zadań. Niektóre zadania, takie jak przegląd oferty kursów wewnętrznych, można wykonywać wewnątrz programu Dynamics 365 for Talent. W tym przypadku w polu Łącze do zadania jest wybierana opcja Element menu. Inne zadania mogą obejmować przegląd lub wypełnianie formularzy w witrynie sieci Web. Jeśli w polu Łącze do zadania zaznaczysz pozycję Adres URL, będzie można wprowadzić adres sieci web. W tym polu można wprowadzać adresy URL witryn wewnętrznych i zewnętrznych. Można również tworzyć zadania dla działań wykonywanych ręcznie, takich jak przeglądanie dostępności wszystkich struktur. W takim przypadku łącze do zadania nie jest wymagane. Ta elastyczność pozwala śledzić wiele rodzajów zadań w kompleksowym procesie.
+Po utworzeniu szablonu procesu biznesowego można uruchomić i śledzić proces biznesowy w obszarze roboczym **Proces biznesowy**. Po rozpoczęciu procesu biznesowego zadania są przypisywane do odpowiednich osób i zawierają termin wykonania.
 
-Zadania można przypisywać do konkretnych pracowników lub do stanowisk. Na przykład menedżer ds. wynagrodzeń i świadczeń zawsze będzie osobą, która dokonuje przeglądu składek ubezpieczeniowych.   Podczas tworzenia tego zadania w polu Typ przypisania wybierz wartość Stanowisko, a następnie na liście Stanowisko zaznacz pozycję Menedżer ds. wynagrodzeń i świadczeń. Podczas uruchamiania procesu zadanie zostanie przypisane do pracownika, który zajmuje stanowisko menedżera ds. wynagrodzeń i świadczeń. Można także przypisać zadanie do konkretnego pracownika, w polu Typ przypisania wybierając wartość Pracownik, a następnie wybierając odpowiednią osobę.
+## <a name="business-process-templates"></a>Szablony procesów biznesowych
+Szablon procesu biznesowego zawiera listę grup zadań, które składają się na proces biznesowy. Domyślnie procesy biznesowe mogą tworzyć menedżerowie i asystenci ds. kadr. Można jednak zmienić role, które mogą tworzyć procesy biznesowe, modyfikując obowiązek **Obsługa ogólnych procesów biznesowych** w konfiguracji zabezpieczeń.
 
-Terminy wykonania zadań zależą od daty docelowej wprowadzonej na początku procesu. Niektóre zadania muszą zostać wykonane przed datą docelową, a niektóre można wykonać po tym dniu.  Podczas definiowania zadania w polu Przesunięcie daty wymagalności od daty docelowej wprowadzisz termin wykonania względny wobec daty docelowej. Na przykład załóżmy, że menedżer ds. wynagrodzeń i świadczeń musi wykonać przegląd składek ubezpieczeniowych 10 dni przed zakończeniem audytu kadrowego. Utworzone zadanie będzie miało termin wykonania -10 względem daty docelowej. W związku z tym jeśli proces zacznie się 13 maja, zadanie należy ukończyć do 3 maja. Uwaga: Terminy wykonania można również korygować po rozpoczęciu procesu.
+Dla każdego procesu biznesowego można zdefiniować właściciela procesu. Właściciel procesu ma wgląd we wszystkie zadania w procesie oraz może zmieniać ich przypisania i terminy wykonania. Na przykład dyrektor działu kadr tworzy szablon procesu biznesowego w celu przeglądu świadczeń i wyznacza menedżera ds. wynagrodzeń i świadczeń jako właściciela procesu. Wtedy menedżer ds. wynagrodzeń i świadczeń będzie miał wgląd w zadania, które trzeba wykonywać w ramach przeglądu.
 
-Złożone zadania mogą wymagać większej liczby kroków albo podania dodatkowych informacji przez osobę wykonującą zadanie. Do zadania można dodać instrukcje i w razie potrzeby różnorodnie sformatować ich tekst. Instrukcje mogą przekazywać dodatkowe informacje dotyczące sposobu wykonania zadania dla osoby, której przypisano wykonanie zdania.
+Właściciel procesu nie może tworzyć nowych procesów biznesowych ani szablonów procesów biznesowych, a także nie może usuwać aktywnych procesów biznesowych i szablonów procesów biznesowych.
 
-## <a name="starting-a-process"></a>Uruchamianie procesu
-Proces można uruchomić w szablonie procesu biznesowego, wybierając opcję Rozpocznij proces.  Po uruchomieniu procesu zadania zostaną utworzone dla wybranych pracowników i/lub stanowisk określonych w zadaniach, które uwzględniono w szablonie procesu biznesowego. Do każdego zadania zostanie również przypisany termin poprzez dodanie lub odjęcie dni przesunięcia względem daty docelowej (patrz informacje dotyczące dni przesunięcia w sekcji Zadanie). Aktywne procesy biznesowe można wyświetlać w obszarze roboczym Procesy biznesowe. 
+## <a name="tasks"></a>Zadania
+Proces biznesowy często składa się z wielu zadań. Niektóre zadania, takie jak przegląd oferty kursów wewnętrznych, można wykonywać wewnątrz programu Microsoft Dynamics 365 for Talent[?]. W takim przypadku należy zaznaczyć odpowiednią opcję w polu **Łącze do zadania**. Inne zadania mogą obejmować przegląd lub wypełnianie stron w witrynie internetowej. W takim przypadku należy zaznaczyć opcję **Adres URL** w polu **Łącze zadania**, co pozwoli wprowadzić adres internetowy. Można wprowadzać adresy URL witryn wewnętrznych i zewnętrznych. Można również tworzyć zadania dla działań wykonywanych ręcznie, takich jak przegląd dostępności wszystkich struktur. W takim przypadku łącze do zadania nie jest wymagane. Ta elastyczność pozwala śledzić wiele rodzajów zadań w kompleksowym procesie.
+
+Zadania można przypisywać do konkretnych pracowników lub do stanowisk. Na przykład menedżer ds. wynagrodzeń i świadczeń zawsze będzie osobą, która dokonuje przeglądu składek ubezpieczeniowych. Dlatego podczas tworzenia tego zadania wybierz wartość **Stanowisko** w polu **Typ przypisania**, a następnie wartość **Menedżer ds. wynagrodzeń i świadczeń** na liście **Stanowisko**. Po uruchomieniu procesu biznesowego zadanie zostanie przypisane do pracownika, który zajmuje stanowisko **Menedżera ds. wynagrodzeń i świadczeń**. Aby przypisać zadanie do konkretnego pracownika, w polu **Typ przypisania** wybierz wartość **Pracownik**, a następnie wybierz odpowiednią osobę.
+
+Terminy wykonania zadań zależą od daty docelowej wprowadzonej na początku procesu biznesowego. Niektóre zadania muszą zostać wykonane przed datą docelową, a inne można wykonać po tym dniu. Podczas definiowania zadania w polu **Przesunięcie daty wymagalności od daty docelowej** wprowadzisz termin wykonania względny wobec daty docelowej. Na przykład menedżer ds. wynagrodzeń i świadczeń musi wykonać przegląd składek ubezpieczeniowych 10 dni przed zakończeniem audytu kadrowego. W takim przypadku zadanie tworzone dla przeglądu ma w polu **Przesunięcie daty wymagalności od daty docelowej** wartość **-10**. W związku z tym jeśli proces biznesowy zacznie się 13 maja, zadanie należy ukończyć do 3 maja.
+
+> [!NOTE]
+> Terminy wykonania można również korygować po rozpoczęciu procesu biznesowego.
+
+Złożone zadania mogą wymagać większej liczby kroków albo podania dodatkowych informacji przez osoby wykonujące zadania. W tych scenariuszach można dodać instrukcje do zadania. Instrukcje mogą przekazywać dodatkowe informacje o sposobie wykonania dla osoby, której przypisano wykonanie zdania. W instrukcjach można nawet dołączyć tekst sformatowany.
+
+## <a name="starting-a-business-process"></a>Uruchamianie procesu biznesowego
+W szablonie procesu biznesowego można uruchomić proces biznesowy, wybierając opcję **Rozpocznij proces**. Po uruchomieniu procesu zadania są tworzone dla wybranych pracowników lub stanowisk określonych w zadaniach, które uwzględniono w szablonie. Do każdego zadania zostanie również przypisany termin wykonania poprzez dodanie lub odjęcie liczby dni przesunięcia względem daty docelowej, jak wyjaśniono w sekcji „Zadania”. Aktywne procesy biznesowe można wyświetlać w obszarze roboczym **Procesy biznesowe**.
 
 ## <a name="employee-self-service"></a>Samoobsługa pracownika
-Gdy zadanie zostanie przypisane do pracownika, zadania przydzielone tej osobie można wyświetlić na stronie Samoobsługa pracownika etatowego. Pracownicy mający przypisane zadanie procesu biznesowego mogą ze swojej strony Samoobsługa pracownika etatowego wyświetlić zadanie, jego opis, instrukcje wykonania oraz imię i nazwisko osoby kontaktowej, a także otworzyć skojarzoną stronę programu Dynamics365 lub stronę sieci web. Zadania mogą być oznaczone jako w roku, anulowane lub ukończone.
+Gdy zadanie zostanie przypisane do pracownika, pracownik może wyświetlać to zadanie oraz wszystkie inne przypisane mu zadania na stronie **Samoobsługa pracownika etatowego**. Dla każdego przypisanego mu zadania procesu biznesowego pracownik może zobaczyć nazwę i opis zadania, instrukcje wykonania oraz imię i nazwisko osoby kontaktowej. Ze strony **Samoobsługa pracownika etatowego** pracownik może również otworzyć skojarzoną stronę programu Microsoft Dynamics 365 lub skojarzoną stronę internetową oraz oznaczyć zadania jako będące w toku, anulowane lub zakończone.
 
 ## <a name="business-process-workspace"></a>Obszar roboczy Proces biznesowy
-Pracownicy działu kadr mogą wyświetlać aktywne procesy biznesowe w obszarze roboczym Proces biznesowy. Ten obszar roboczy zawiera listę wszystkich aktywnych procesów oraz skojarzonych z nimi zadań. Tę kompleksową listę zadań można filtrować według terminu wykonania. Strona zawiera także listę zadań zaległych oraz zadań przypisanych konkretnie pracownikowi działu kadr. Pracownicy działu kadr mogą także aktualizować stan wszystkich zadań, a w razie potrzeby zmieniać przypisanie zadań w celu sprawniejszej realizacji całego procesu biznesowego.
+Pracownicy działu kadr mogą wyświetlać aktywne procesy biznesowe w obszarze roboczym **Proces biznesowy**. Ten obszar roboczy zawiera listę wszystkich aktywnych procesów oraz skojarzonych z nimi zadań. Tę kompleksową listę zadań można filtrować według terminu wykonania. Obszar roboczy zawiera także listę zadań zaległych oraz zadań przypisanych konkretnie pracownikowi działu kadr. Pracownik działu kadr może także aktualizować stan wszystkich zadań, a w razie potrzeby zmieniać przypisanie zadań w celu sprawniejszej realizacji całego procesu biznesowego.
 
 ## <a name="my-business-processes-workspace"></a>Obszar roboczy Moje procesy biznesowe
-W obszarze roboczym Mój proces biznesowy właściciele procesów mogą wyświetlać przypisane im aktywne procesy biznesowe. Ten obszar roboczy zawiera listę wszystkich aktywnych procesów i skojarzonych z nimi zadań, których właścicielem jest użytkownik.  Tę kompleksową listę zadań można filtrować według terminu wykonania. Strona zawiera również listę zadań przypisanych konkretnie właścicielowi procesu. Właściciel procesu może również aktualizować stan wszystkich zadań, a także zmieniać przypisania zadań.
+W obszarze roboczym **Mój proces biznesowy** właściciele procesów mogą wyświetlać przypisane im aktywne procesy biznesowe. Ten obszar roboczy zawiera listę wszystkich aktywnych procesów, których właścicielem jest użytkownik, i skojarzonych z nimi zadań. Tę kompleksową listę zadań można filtrować według terminu wykonania. Obszar roboczy zawiera także listę zadań przypisanych konkretnie właścicielowi procesu. Właściciel procesu może również aktualizować stan wszystkich zadań oraz zmieniać przypisania zadań.
 
 ## <a name="navigating-business-processes"></a>Nawigowanie po procesach biznesowych
-1. Aby dodać szablon procesu biznesowego, wybierz kolejno opcje Procesy biznesowe > Łącza > Administrowanie procesami biznesowymi.
-   - a.   Przycisk Nowy spowoduje utworzenie nowego szablonu.
-   - b.   Przycisk Kopiuj z szablonu spowoduje skopiowanie wybranego szablonu do nowego szablonu.
-   - c.   Przycisk Rozpocznij proces spowoduje uruchomienie wybranego procesu biznesowego, przypisanie zadań i obliczenie terminów wykonania.  
-2. Aby wyświetlić aktywne procesy i skojarzone z nimi zadania, przejdź do obszaru roboczego Procesy biznesowe.
+Aby utworzyć lub skopiować szablon procesu biznesowego lub aby rozpocząć proces biznesowy, wybierz kolejno opcje Procesy biznesowe > Łącza > Administrowanie procesami biznesowymi. W oknie można wykonać następujące czynności:
+
+- Naciśnij przycisk **Nowy**, aby utworzyć nowy szablon procesu biznesowego.
+- Naciśnij przycisk **Kopiuj z szablonu**, aby skopiować wybrany szablon do nowego szablonu.
+- Naciśnij przycisk **Rozpocznij proces**, aby uruchomić wybrany proces biznesowy, przypisać zadania i obliczyć terminy wykonania.
+
+Aby wyświetlić aktywne procesy i skojarzone z nimi zadania, otwórz obszar roboczy **Procesy biznesowe**.
+
 

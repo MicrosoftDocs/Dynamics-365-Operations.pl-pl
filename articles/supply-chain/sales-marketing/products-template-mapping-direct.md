@@ -3,7 +3,7 @@ title: "Synchronizowanie produktów bezpośrednio w rozwiązaniu Finance and Ope
 description: "Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania produktów między programem Microsoft Dynamics 365 for Finance and Operations a programem Microsoft Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3ae50372edcd473f2288f8172b71eac33e24b636
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 66506953790fd77c2105591d3211c76991eced08
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -78,7 +78,8 @@ Pole **Obsługiwane zewnętrznie** pomaga zagwarantować, że z rozwiązaniem Fi
 Zewnętrznie obsługiwane produkty są automatycznie dodawane do pierwszego prawidłowego cennika o tej samej walucie. Cenniki są ułożone alfabetycznie według nazwy. Cena sprzedaży produktu z rozwiązania Finance and Operations jest używana jako cena w cenniku. Dlatego w rozwiązaniu Sales musi istnieć cennik dla każdej waluty sprzedaży produktów w rozwiązaniu Finance and Operations. Jako waluta w zwalnianych produktach możliwych do sprzedaży jest ustawiana waluta rozliczeniowa firmy, z której produkty zostały wyeksportowane.
 
 > [!NOTE]
-> Synchronizacja produktów nie powiedzie się, jeżeli nie będzie istniał cennik zawierający pasująca walutę.
+> - Synchronizacja produktów nie powiedzie się, jeżeli nie będzie istniał cennik zawierający pasująca walutę.
+> - Cennikami używanymi w integracji można sterować poprzez zamapowanie elementu pricelevelid.name [Cennik domyślny (nazwa)] w projekcie narzędzia Integracja danych. Dane wejściowe muszą zostać wprowadzone tylko małymi literami. Na przykład w module Sales wartość domyślna cennika o nazwie „Standardowy” byłaby następująca: Pole docelowe: pricelevelid.name [Cennik domyślny (nazwa)] i typ mapowania: [ { "transformType": "Domyślnie", "defaultValue": "standardowy" } ].
 
 ## <a name="preconditions-and-mapping-setup"></a>Warunki wstępne i ustawienia mapowania
 

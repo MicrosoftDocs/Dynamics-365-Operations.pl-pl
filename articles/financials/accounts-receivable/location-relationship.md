@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2018-05-02
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8435389a523d8393e9d4daa0cb1244203c0dbb12
-ms.openlocfilehash: bd8c5a18d69e1952d32675d759b8b2a997844822
+ms.sourcegitcommit: e0ab9c9894fdd5fba224c166941abbf52172ae46
+ms.openlocfilehash: 27819c922832a30eb0b20db6bffdbd4504e6d5e6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/21/2018
+ms.lasthandoff: 06/12/2018
 
 ---
 
-# <a name="add-new-location-roles-and-party-relationship-types"></a>Dodawanie nowych ról w lokalizacji i typów relacji stron 
+# <a name="add-location-roles-and-party-relationship-types"></a>Dodawanie ról lokalizacji i typów relacji stron 
 
-## <a name="add-new-location-roles"></a>Dodawanie nowych ról w lokalizacji
+## <a name="add-location-roles"></a>Dodawanie ról lokalizacji
 
 Istnieją dwa sposoby dodawania nowych ról lokalizacji dla adresu i informacji kontaktowych:
 
@@ -54,7 +54,7 @@ Istnieją dwa sposoby dodawania nowych ról lokalizacji dla adresu i informacji 
 
         ![Wstawianie nowej lokalizacji](media/InsertNewLocation.PNG)
 
-## <a name="add-new-party-relationship-types"></a>Dodawanie nowych typów relacji stron 
+## <a name="add-party-relationship-types"></a>Dodawanie typów relacji stron 
 
 Istnieją dwa sposoby dodawania nowego typu relacji:
 
