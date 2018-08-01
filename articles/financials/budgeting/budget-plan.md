@@ -1,16 +1,16 @@
 ---
 title: "Planowanie budżetu"
-description: "Celem tego warsztatu jest praktyczne zaprezentowanie aktualizacji funkcji programu Microsoft Dynamics 365 for Finance and Operations w obszarze planowania budżetu. Zilustrowaliśmy przykład krótkiej konfiguracji modułu planowania budżetu oraz pokazaliśmy, jak przy użyciu tej konfiguracji można planować budżet.  Ten warsztat dotyczy głównie następujących procesów lub zadań biznesowych:  - Tworzenie hierarchii organizacyjnej na potrzeby planowania budżetu i konfigurowania zabezpieczeń użytkownika  - Definiowanie scenariuszy planu budżetu, kolumn planu budżetu, układów i szablonów programu Excel  - Tworzenie i aktywacja procesu planowania budżetu  - Tworzenie dokumentu planu budżetu poprzez pobieranie wartości rzeczywistych z księgi głównej  - Używanie alokacji do korygowania danych dokumentu planu budżetu  - Edytowanie danych dokumentu planu budżetu w programie Excel"
-author: twheeloc
+description: "Celem tego warsztatu jest praktyczne zaprezentowanie aktualizacji funkcji programu Microsoft Dynamics 365 for Finance and Operations w obszarze planowania budżetu. Zilustrowaliśmy przykład krótkiej konfiguracji modułu planowania budżetu oraz pokazaliśmy, jak przy użyciu tej konfiguracji można planować budżet."
+author: ShylaThompson
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 59781da7681ece1c0c013f59e0d1a5d7efc51c3a
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -30,7 +30,13 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-Celem tego warsztatu jest praktyczne zaprezentowanie aktualizacji funkcji programu Microsoft Dynamics 365 for Finance and Operations w obszarze planowania budżetu. Zilustrowaliśmy przykład krótkiej konfiguracji modułu planowania budżetu oraz pokazaliśmy, jak przy użyciu tej konfiguracji można planować budżet.  Ten warsztat dotyczy głównie następujących procesów lub zadań biznesowych:  - Tworzenie hierarchii organizacyjnej na potrzeby planowania budżetu i konfigurowania zabezpieczeń użytkownika  - Definiowanie scenariuszy planu budżetu, kolumn planu budżetu, układów i szablonów programu Excel  - Tworzenie i aktywacja procesu planowania budżetu  - Tworzenie dokumentu planu budżetu poprzez pobieranie wartości rzeczywistych z księgi głównej  - Używanie alokacji do korygowania danych dokumentu planu budżetu  - Edytowanie danych dokumentu planu budżetu w programie Excel 
+Celem tego warsztatu jest praktyczne zaprezentowanie aktualizacji funkcji programu Microsoft Dynamics 365 for Finance and Operations w obszarze planowania budżetu. Zilustrowaliśmy przykład krótkiej konfiguracji modułu planowania budżetu oraz pokazaliśmy, jak przy użyciu tej konfiguracji można planować budżet.  Ten warsztat dotyczy głównie następujących procesów lub zadań biznesowych:
+- Tworzenie hierarchii organizacyjnej na potrzeby planowania budżetu i konfigurowania zabezpieczeń użytkownika
+- Definiowanie scenariuszy planu budżetu, kolumn planu budżetu, układów i szablonów programu Excel
+- Tworzenie i aktywowanie procesu planowania budżetu
+- Tworzenie dokumentu planu budżetu poprzez ściągnięcie wartości rzeczywistych z księgi głównej
+- Używanie alokacji do korygowania danych dokumentu planu budżetu
+- Edytowanie danych dokumentu planu budżetu w programie Excel 
 
 <a name="prerequisites"></a>Wymagania wstępne 
 ------------------
@@ -104,8 +110,6 @@ Planowanie budżetu używa specjalnych zasad zabezpieczeń do konfigurowania dos
 2.5. Wybierz opcję „Udziel dostępu do określonych organizacji”. Wskaż hierarchię organizacyjną utworzoną w pierwszym kroku. Wybierz węzeł Finanse i kliknij przycisk Udziel dostępu wraz z podrzędnymi. 
 
 ***Ważne!*** *Upewnij się, że znajdujesz się w kontekście firmy DEMF podczas wykonywania tego zadania, ponieważ zabezpieczenia na poziomie organizacji są stosowane do firmy.* 
-
-[![Udzielanie dostępu](./media/screenshot14.png)](./media/screenshot14.png)
 
 ### <a name="task-3-create-scenarios"></a>Zadanie 3: Tworzenie scenariuszy
 3.1. Wybierz kolejno opcje Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu. Na stronie scenariuszy zwróć uwagę na scenariusze, które wykorzystasz w dalszej części ćwiczenia: Wartości rzeczywiste w poprzednim roku i Zabudżetowane. 

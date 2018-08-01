@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 86b301833f3655f7172e2d38ddca4239be71760c
-ms.openlocfilehash: bcb4af426e5967643a1c438bb19495576ce51b63
+ms.sourcegitcommit: 4961ee7fcc56af0646e421c9e040e2129cc322c4
+ms.openlocfilehash: e6d6ede65764c0b35c9ce0985af0d9f2cd6653c0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/12/2018
 
 ---
 
@@ -58,6 +58,8 @@ W ramach ulepszania funkcji księgowania zestawień wprowadzono trzy nowe parame
 - **Wymagane wyłączenie zliczania** — Jeśli ta opcja jest ustawiona na **Tak**, proces księgowania zestawienia jest kontynuowany, nawet gdy różnica między kwotą obliczoną a kwotą transakcji wykracza poza próg zdefiniowany na skróconej karcie **Zestawienie** w oknie Sklepy sieci sprzedaży.
 
 Ponadto na skróconej karcie **Przetwarzanie wsadowe** wprowadzono pole **Maksymalna liczba równoległych operacji księgowania zestawień**. To pole określa liczbę zadań wsadowych, które powinny być wykonywane w tym samym czasie. Obecnie trzeba ręcznie ustawiać wartość w tym polu.
+
+Ponadto w nowym procesie księgowania konieczne jest zdefiniowanie ustawienia **Produkt karty upominkowej** na skróconej karcie **Karta upominkowa** dostępnej na karcie **Księgowanie** na stronie **Parametry sieci sprzedaży**. Ta zasada obowiązuje, nawet jeśli organizacja nie używa żadnych kart upominkowych. 
 
 Należy zwrócić uwagę, że wszystkie ustawienia i parametry związane z księgowaniem zestawień, które są zdefiniowane w oknie Sklepy sieci sprzedaży i na stronie **Parametry sieci sprzedaży**, mają zastosowanie do ulepszonej funkcji księgowania zestawień.
 

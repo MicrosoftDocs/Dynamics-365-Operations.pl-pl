@@ -19,10 +19,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2177110dc16528de7eddedb0667faae553a36b12
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 9ee3f73cd11b38ed2237ea3fe08db18000e55f07
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -54,9 +54,13 @@ Ponadto reguły muszą być aktualizowane okresowo, jeśli zmieniają się wymag
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-### <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
+### <a name="whats-new"></a>Co nowego
 
-Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadmap.dynamics.com/), aby zobaczyć, jakie nowe funkcje zostały wydane, a jakie są jeszcze opracowywane. 
+Przejdź do sekcji [Informacje o wersji](https://docs.microsoft.com/en-us/business-applications-release-notes/), aby zobaczyć, jakie nowe funkcje zostały dodane. 
+
+### <a name="videos"></a>Filmy
+
+Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 ### <a name="blogs"></a>Blogi
 
@@ -66,11 +70,8 @@ Wiele wpisów dotyczących modułu Księga główna jest dostępnych w [blogu ze
 
 Blog [społeczności partnerów zajmujących się oprogramowaniem Microsoft Dynamics Operations](https://community.dynamics.com/partner/b/operationspartnercommunityblog) stanowi doskonały zasób dla partnerów zajmujących się oprogramowaniem Microsoft Dynamics, który zawiera informacje o nowościach i popularnych rozwiązaniach działu MBS Operations.
 
-### <a name="task-guides"></a>Przewodniki zadań
-Dodatkowa pomoc jest dostępna w formie przewodników po zadaniach wewnątrz rozwiązania Finance and Operations. Aby uzyskać dostęp do przewodników po zadaniach, kliknij przycisk Pomoc na dowolnej stronie.
+#### <a name="community-blogs"></a>Blogi społeczności
 
-### <a name="videos"></a>Filmy
-
-Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+- [Co należy wiedzieć o księdze w programie Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
 

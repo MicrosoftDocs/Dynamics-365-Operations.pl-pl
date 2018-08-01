@@ -20,10 +20,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e63f2b4289b640e601492425331ea8f3804d139a
-ms.openlocfilehash: 4f505a2de89863d1a12d415795fdfb82b3557bc0
+ms.sourcegitcommit: 338e0847ea91ee2582df0aab3e31a97c4f24113e
+ms.openlocfilehash: 016eec12c31398beede7fdddc4548ec196ebd704
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -51,7 +51,7 @@ Zanim zdefiniujesz zasady księgowania pozycji, na stronie **Kombinacje transakc
 
 **4. Zdefiniuj parametry zapasów skojarzone z kosztami standardowymi.** 
 
--  Na stronie **Parametry zapasów** na karcie **Listy składowe (BOM)** zdefiniuj dwa parametry kontroli kosztów powiązane z kosztami standardowymi. 
+-  Na karcie **Księgowanie zapasów** dostępnej na stronie **Ustawienia zasad księgowania zapasów > Parametry** zdefiniuj dwa parametry kontroli kosztów powiązane z kosztami standardowymi.
 
     -  W polu **Podział kosztów** wybierz opcję **Brak** lub **Księga podrzędna**. W przypadku wybrania opcji **Księga podrzędna** podziałem kosztów jest *aktywny* podziału kosztów. Aktywne rozbicie kosztów ma kluczowe znaczenie w obliczaniu, zachowywaniu i wyświetlaniu podziału grupy kosztów w wielopoziomowej strukturze produktów dla towarów, którym przypisano koszt standardowy. Jeśli podział kosztów jest aktywny, można raportować oraz analizować zapasy, pracę w toku i koszt własny sprzedaży przypadający na grupę kosztów na jednym poziomie, na wielu poziomach lub w formacie sumarycznym. Jeśli podział kosztów jest aktywny, aktywowanie kosztu wytworzonego towaru spowoduje zapisanie segmentacji grupy kosztów w rekordzie kosztu towaru. 
 

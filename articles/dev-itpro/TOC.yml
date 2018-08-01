@@ -1014,6 +1014,8 @@
           href: deployment/apply-deployable-package-system.md
         - name: Instalowanie wdrażalnego pakietu
           href: deployment/install-deployable-package.md
+        - name: Odinstalowywanie pakietu
+          href: deployment/uninstall-deployable-package.md
         - name: Rozwiązywanie problemów z aplikacją w pakiecie
           href: deployment/deployable-package-troubleshooting.md
 - name: 'Uaktualnienia, aktualizacje i poprawki'

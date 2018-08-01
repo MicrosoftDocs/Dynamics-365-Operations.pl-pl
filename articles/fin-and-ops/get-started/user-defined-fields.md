@@ -3,7 +3,7 @@ title: Pola niestandardowe
 description: "W tym temacie opisano, jak program Microsoft Dynamics 365 for Finance and Operations pozwala niektórym użytkownikom tworzyć niestandardowe pola w celu dostosowania aplikacji do unikatowych potrzeb firmy."
 author: jasongre
 manager: AnnBe
-ms.date: 04/18/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -27,8 +27,6 @@ ms.lasthandoff: 05/23/2018
 # <a name="custom-fields"></a>Pola niestandardowe
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 Program Microsoft Dynamics 365 for Finance and Operations zawiera już w standardzie rozbudowany zestaw pól do zarządzania różnorodnymi procesami biznesowymi, ale czasami firma musi śledzić dodatkowe informacje w systemie. W reakcji na tę potrzebę program Finance and Operations pozwala tworzyć niestandardowe pola w celu dostosowania aplikacji do specyfiki firmy, o ile tylko masz uprawnienia wobec tej funkcji. 
 
