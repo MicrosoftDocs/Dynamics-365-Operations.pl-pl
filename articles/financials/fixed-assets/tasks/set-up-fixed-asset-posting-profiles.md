@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d07df2c2779833485bd70240c47bb569622800f8
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: dd4c2d67188b6c2c34f9046a6388de292d6c291e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a><span data-ttu-id="08552-103">Konfigurowanie profili księgowania środków trwałych</span><span class="sxs-lookup"><span data-stu-id="08552-103">Set up fixed asset posting profiles</span></span>

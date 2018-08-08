@@ -1,7 +1,7 @@
 --- 
 title: "Tworzenie pierwotnego budżetu i odwracanie wpisów budżetu wstępnego dla sektora publicznego"
 description: "Jeśli tworzysz wpis do budżetu pierwotnego przy użyciu modelu i wartości wymiarów zawierających kwoty budżetu wstępnego, kwoty budżetu wstępnego mogą zostać wycofane."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: dc315a53e420049689828cce375630a1adf5d843
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: a6f9b20658764e1a7584a34b573d103f0a13c7d8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-an-original-budget-and-reverse-preliminary-budget-entries-in-the-public-sector"></a><span data-ttu-id="c619f-103">Tworzenie pierwotnego budżetu i odwracanie wpisów budżetu wstępnego dla sektora publicznego</span><span class="sxs-lookup"><span data-stu-id="c619f-103">Create an original budget and reverse preliminary budget entries in the public sector</span></span>

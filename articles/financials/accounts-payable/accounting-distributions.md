@@ -1,7 +1,7 @@
 ---
 title: "Zasady podziału księgowań"
 description: "Ten artykuł zawiera informacje o zasadach podziału księgowań oraz opis opcji dostępnych do przetwarzania tych zasad. Zasady podziału księgowań są używane do przypisywania kwot pieniężnych z dokumentu źródłowego do określonych kont księgowych."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AccountingDistribution
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 17231
 ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 8114eecbaf6b8ebbf289601809faf76a052347e5
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: 3ba6a581efe8353ccb9e02606db58d18550d71af
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

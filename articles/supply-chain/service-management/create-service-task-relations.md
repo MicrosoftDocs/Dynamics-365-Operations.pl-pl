@@ -1,7 +1,7 @@
 ---
 title: Tworzenie relacji zadania serwisowego
 description: "Zadanie serwisowe można skojarzyć z umowami serwisowymi lub zleceniami serwisowymi, aby opisać zadanie serwisowe, jakie ma zostać wykonane w ramach umowy lub zlecenia."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
-ms.author: YuyuScheller
+ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 0892161605401420c0817b3b644271357446a99b
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: 2aa0e5200ff2a6822e631c72124335e2dc556c14
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

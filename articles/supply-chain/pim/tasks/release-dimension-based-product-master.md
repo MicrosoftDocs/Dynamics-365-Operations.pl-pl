@@ -1,7 +1,7 @@
 --- 
 title: "Zwalnianie produktu głównego opartego na wymiarach"
 description: "W tej procedurze pokazano sposób zwalniania produktu głównego, który będzie używany dla konfiguracji opartych na wymiarach."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 240e9282f75fbcae4d81eb224f90d968e0a88d9e
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: f2bfc54774ebd3fc860ea666480e54ec27f675e5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="release-a-dimension-based-product-master"></a><span data-ttu-id="4da9b-103">Zwalnianie produktu głównego opartego na wymiarach</span><span class="sxs-lookup"><span data-stu-id="4da9b-103">Release a dimension-based product master</span></span>

@@ -1,7 +1,7 @@
 --- 
 title: "Wypełnianie podstawowych ustawień zrealizowanego produktu głównego"
 description: "Ta procedura pokazuje wykonywanie minimalnej konfiguracji, która jest wymagana, zanim produktu głównego będzie można używać w wersjach BOM."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 35ca13f157537087346a5bcf9c6ccdd659a0d772
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: 8e08fbd53657bcf31a12166cf06b614ce3e3f131
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="complete-basic-setup-of-a-released-product-master"></a><span data-ttu-id="ad4e5-103">Wypełnianie podstawowych ustawień zrealizowanego produktu głównego</span><span class="sxs-lookup"><span data-stu-id="ad4e5-103">Complete basic setup of a released product master</span></span>

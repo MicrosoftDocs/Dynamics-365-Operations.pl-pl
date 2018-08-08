@@ -1,7 +1,7 @@
 --- 
 title: "Tworzenie planu dla oddziału"
 description: "Planista produkcji oblicza zapotrzebowanie na materiały i zdolności produkcyjne do wytworzenia określonego towaru."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/10/2016
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d123dac767a8985f6c1a5fef64a9814160f76a8d
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: f22b7271432316aa745e0c4cd3f1ed533805403e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-a-plan-for-a-site"></a><span data-ttu-id="91ae9-103">Tworzenie planu dla oddziału</span><span class="sxs-lookup"><span data-stu-id="91ae9-103">Create a plan for a site</span></span>

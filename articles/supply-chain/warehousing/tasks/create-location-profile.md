@@ -1,7 +1,7 @@
 --- 
 title: Tworzenie profilu lokalizacji
 description: "Z każdą lokalizacją w magazynie musi być skojarzony profil lokalizacji opisujący jej właściwości, na przykład czy lokalizacji pozwala na mieszane towary."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/13/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,10 +17,10 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6cd6b2bfa7d2d9dd74f549905d92bf3a2c16849c
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: 8fd43a80727e67ab57e2cf1f9ee1118299b38948
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-a-location-profile"></a><span data-ttu-id="2dab0-103">Tworzenie profilu lokalizacji</span><span class="sxs-lookup"><span data-stu-id="2dab0-103">Create a location profile</span></span>

@@ -1,7 +1,7 @@
 --- 
 title: "Kopiowanie produktów towarzyszących z istniejącej wersji formuły"
 description: "W tej procedurze pokazano sposób kopiowania produktów towarzyszących z istniejącej wersji formuły do innej wersji formuły dla zwolnionego produktu."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/06/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: adcfa7441c2beaa9e4f8602aa19d23a10fb7e6c5
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: a3620fe90826360616793962acb86b0aab7cefe5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="copy-co-products-from-an-existing-formula-version"></a><span data-ttu-id="8707e-103">Kopiowanie produktów towarzyszących z istniejącej wersji formuły</span><span class="sxs-lookup"><span data-stu-id="8707e-103">Copy co-products from an existing formula version</span></span>

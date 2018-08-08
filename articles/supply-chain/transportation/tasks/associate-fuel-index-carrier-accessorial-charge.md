@@ -1,7 +1,7 @@
 --- 
 title: "Kojarzenie indeksu paliwa z przewoźnikiem jako opłaty za usługi dodatkowe"
 description: "W tym podręczniku pokazano sposób tworzenia przypisania usług dodatkowych, opłaty za usługi dodatkowe przewoźnika i danych głównych usług dodatkowych dla dopłaty za paliwo, a także kojarzenia indeksu paliwowego przewoźnika z przewoźnikiem."
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,18 +9,18 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b0336bcaa7062a9b24079d8491ce426041751ccf
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: ae0aa90cfd673704bcd8e19f795499283ff01d44
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a><span data-ttu-id="068fc-103">Kojarzenie indeksu paliwa z przewoźnikiem jako opłaty za usługi dodatkowe</span><span class="sxs-lookup"><span data-stu-id="068fc-103">Associate a fuel index with a carrier as an accessorial charge</span></span>

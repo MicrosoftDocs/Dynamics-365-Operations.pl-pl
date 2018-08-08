@@ -1,7 +1,7 @@
 ---
 title: "Naliczanie kosztów projektu w przyjęciach zakupów"
 description: "W tym temacie opisano, jak koszty projektu naliczone z przyjęć zakupów można śledzić w programie Microsoft Dynamics 365 for Finance and Operations."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CostControlCommittedCost
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 266984
 ms.assetid: 61e7d2a3-5aab-4113-bccc-213f932885d2
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 91c605eedeb84243c15cf372e4f25fb7587a00e1
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: bc822652abbba68f094fe5b8a65f796165a92c4c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 

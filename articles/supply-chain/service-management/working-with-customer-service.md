@@ -1,7 +1,7 @@
 ---
 title: "Praca z funkcjami obsługi klienta"
 description: "Moduł obsługi klienta umożliwia obsługę firm serwisowych i organizacji obsługujących produkcję."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable, SMADispatchBoard
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
-ms.author: YuyuScheller
+ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f9713dba63be5ff7969a513d96575f79ebc63986
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: f51b749cc9527cb3e86352b0373babd6c524dbe7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 
