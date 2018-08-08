@@ -1,7 +1,7 @@
 ---
 title: "Zobowiązanie do zamówienia"
 description: "Ten artykuł zawiera informacje o zobowiązaniach zamówień. Zobowiązania zamówień pomagają wiarygodnie deklarować daty dostawy odbiorcom oraz wprowadzają elastyczność umożliwiającą dotrzymanie tych terminów."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SalesATP, SalesAvailableDlvDates
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.custom: 193933
 ms.assetid: 676fc53a-fa25-4688-9f26-1005316763b8

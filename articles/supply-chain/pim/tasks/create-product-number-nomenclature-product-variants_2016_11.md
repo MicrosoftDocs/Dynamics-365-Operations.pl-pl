@@ -1,7 +1,7 @@
 --- 
 title: "Tworzenie numeru produktu dla skonfigurowanych wariantów produktu"
 description: "Ta procedura pokazuje, jak skonfigurować konwencję nazewnictwa numerów produktu dla skonfigurowanych wariantów produktu i jak można ją połączyć z konfigurowalnym produktem głównym."
-author: BibiSp
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/25/2016
 ms.topic: business-process
@@ -9,10 +9,10 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: bis
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT

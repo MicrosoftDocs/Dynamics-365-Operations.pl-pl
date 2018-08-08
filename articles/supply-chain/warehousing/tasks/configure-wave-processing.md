@@ -1,7 +1,7 @@
 --- 
 title: "Konfigurowanie przetwarzania grupy czynności"
 description: "W tym przewodniku opisano sposób konfigurowania kryteriów, które określają, jaka praca jest generowana dla magazynu podczas przetwarzania grupy czynności oraz czy grupy czynności są przetwarzane ręcznie czy automatycznie."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/07/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
