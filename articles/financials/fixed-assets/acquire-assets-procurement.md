@@ -1,7 +1,7 @@
 ---
 title: "Nabywanie środków trwałych za pomocą zaopatrzenia"
 description: "W tym temacie opisano, jak skonfigurować integrację między modułami Środki trwałe i Rozrachunki z dostawcami, aby automatycznie były tworzone środki trwałe na podstawie zamówień zakupu lub faktur od dostawców albo automatycznie były księgowane transakcje nabycia i korekty wartości początkowej dla środków trwałych."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetParameters
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 3481
 ms.assetid: d4e73a3f-633b-48b2-b8db-7a4a59a4d7ec

@@ -1,7 +1,7 @@
 --- 
 title: "Konfigurowanie grupy księgowania w księdze da podatku"
 description: "Podatek jest obliczany i księgowany na kontach głównych określonych w grupach księgowania."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: vstehman
