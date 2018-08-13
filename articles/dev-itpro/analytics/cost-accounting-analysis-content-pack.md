@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: af87f3f7c3fab9b6baecefbedcd855a764f31cbe
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -33,18 +33,18 @@ W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft
 
 ## <a name="overview"></a>Przegląd
 
-Pakiet zawartości usługi Power BI **Analiza rachunku kosztów** jest przeznaczony dla kontrolerów kosztów i innych osób odpowiedzialnych za kontrolowanie kosztów w organizacji. Obejmuje kluczowe wskaźniki, takie jak koszt, wartość oraz stawka kosztu rzeczywistego, budżetowego lub budżetu elastycznego. Wykorzystuje dane transakcji z modułu **Rachunek kosztów** i zapewnia zagregowany widok kosztów dla całej organizacji w jednej walucie raportowania. Menedżerowie mogą filtrować dane według obiektów kosztów w celu kontrolowania kosztów w podległych jednostkach organizacyjnych, nawet jeśli organizacja jest podzielona na kilka firm. 
+Pakiet zawartości usługi Power BI **Analiza rachunku kosztów** jest przeznaczony dla kontrolerów kosztów i innych osób odpowiedzialnych za kontrolowanie kosztów w organizacji. Obejmuje kluczowe wskaźniki, takie jak koszt, wartość oraz stawka kosztu rzeczywistego, budżetowego lub budżetu elastycznego. Wykorzystuje dane transakcji z modułu **Rachunek kosztów** i zapewnia zagregowany widok kosztów dla całej organizacji w jednej walucie raportowania. Menedżerowie mogą filtrować dane według obiektów kosztów w celu kontrolowania kosztów w podległych jednostkach organizacyjnych, nawet jeśli organizacja jest podzielona na kilka firm.
 
-Ponieważ pakiet zawartości usługi **Analiza rachunku kosztów** eksponuje odchylenia między kosztami rzeczywistymi a budżetowymi, menedżerowie mogą być powiadamiani o pozytywnych i negatywnych tendencjach w swoich jednostkach operacyjnych. Menedżerowie mogą przechodzić do hierarchii składników kosztów lub poszczególnych składników kosztów. W ten sposób mogą uzyskać szczegółowe informacje dotyczące sposobu zaistnienia odchyleń kosztów, a następnie podejmować skuteczne działania. 
+Ponieważ pakiet zawartości usługi **Analiza rachunku kosztów** eksponuje odchylenia między kosztami rzeczywistymi a budżetowymi, menedżerowie mogą być powiadamiani o pozytywnych i negatywnych tendencjach w swoich jednostkach operacyjnych. Menedżerowie mogą przechodzić do hierarchii składników kosztów lub poszczególnych składników kosztów. W ten sposób mogą uzyskać szczegółowe informacje dotyczące sposobu zaistnienia odchyleń kosztów, a następnie podejmować skuteczne działania.
 
-Pakiet zawartości usługi **Analiza rachunku kosztów** pozwala księgowym analizować przepływy kosztów przez obiekty kosztów w całej organizacji. 
+Pakiet zawartości usługi **Analiza rachunku kosztów** pozwala księgowym analizować przepływy kosztów przez obiekty kosztów w całej organizacji.
 
-Aby dowiedzieć się więcej o module Rachunek kosztów, zobacz [Rachunek kosztów — strona główna](../../financials/cost-accounting/cost-accounting-home-page.md). 
+Aby dowiedzieć się więcej o module Rachunek kosztów, zobacz [Rachunek kosztów — strona główna](../../financials/cost-accounting/cost-accounting-home-page.md).
 
 Poprzez zdefiniowanie zabezpieczeń na poziomie dostępu w module Rachunek kosztów i połączenie ich z zabezpieczeniami na poziomie wierszy w usłudze Power BI można wszystkim właścicielom obiektów kosztów udzielić dostępu do pakietu zawartości usługi Power BI **Analiza rachunku kosztów**. Wszystkie dane w wizualizacjach będą następnie filtrowane według poziomu dostępu kontrolowanego w module Rachunek kosztów. Aby dowiedzieć się więcej na temat zabezpieczeń na poziomie dostępu i zabezpieczeń na poziomie wierszy, zobacz [Konfigurowanie zabezpieczeń pakietu zawartości rachunku kosztów w usłudze Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Pakiet zawartości usługi Power BI **Analiza rachunku kosztów** znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/). 
+Pakiet zawartości usługi Power BI **Analiza rachunku kosztów** znajduje się w bibliotece zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 <!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
@@ -75,7 +75,7 @@ Pakiet zawartości zawiera zestaw stron raportów. Każda strona zawiera zestaw 
 |                                  | Koszt rzeczywisty wg nazwy elementu członkowskiego wymiaru obiektu kosztów i nazwy elementu członkowskiego wymiaru składnika kosztu                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
-Następujące dane są używane do wypełniania stron raportów w pakiecie zawartości **Analiza rachunku kosztów** dla usługi Power BI. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md). 
+Następujące dane są używane do wypełniania stron raportów w pakiecie zawartości **Analiza rachunku kosztów** dla usługi Power BI. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md).
 
 Następujące najważniejsze zagregowane miary są używane jako podstawa w pakiecie zawartości:
 
@@ -113,20 +113,18 @@ W poniższej tabeli przedstawiono, jak najważniejsze zagregowane miary są uży
 
 Następujące najważniejsze wymiary są używane jako filtry do dzielenia zagregowanych miar w celu uzyskania większej szczegółowości i zapewnienia lepszego wglądu analitycznego.
 
-
-|               Jednostka               |                                                Przykłady atrybutów                                                |
+| Jednostka                             | Przykłady atrybutów                                                                                               |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-|      Księgi rachunku kosztów       |                                                Księga rachunku kosztów                                                |
-|         Jednostki kontroli kosztów         |                                                Nazwa jednostki kontroli kosztów                                                |
-|      Wymiary składników kosztów       |     Nazwa wymiaru składnika kosztu, Nazwa elementu członkowskiego wymiaru składnika kosztu, Opis elementu członkowskiego wymiaru składnika kosztu      |
-|       Wymiary obiektów kosztów       |       Nazwa wymiaru obiektu kosztów, Nazwa elementu członkowskiego wymiaru obiektu kosztów, Opis elementu członkowskiego wymiaru obiektu kosztów        |
-|       Wymiary statystyczne       |       Nazwa wymiaru statystycznego, Nazwa elementu członkowskiego wymiaru statystycznego, Opis elementu członkowskiego wymiaru statystycznego        |
-| Hierarchie wymiarów obiektów kosztów  |  Nazwa hierarchii wymiarów obiektów kosztów, Poziom hierarchii wymiarów obiektów kosztów, Drzewo hierarchii wymiarów obiektów kosztów   |
+| Księgi rachunku kosztów            | Księga rachunku kosztów                                                                                               |
+| Jednostki kontroli kosztów                 | Nazwa jednostki kontroli kosztów                                                                                               |
+| Wymiary składników kosztów            | Nazwa wymiaru składnika kosztu, Nazwa elementu członkowskiego wymiaru składnika kosztu, Opis elementu członkowskiego wymiaru składnika kosztu          |
+| Wymiary obiektów kosztów             | Nazwa wymiaru obiektu kosztów, Nazwa elementu członkowskiego wymiaru obiektu kosztów, Opis elementu członkowskiego wymiaru obiektu kosztów              |
+| Wymiary statystyczne             | Nazwa wymiaru statystycznego, Nazwa elementu członkowskiego wymiaru statystycznego, Opis elementu członkowskiego wymiaru statystycznego              |
+| Hierarchie wymiarów obiektów kosztów  | Nazwa hierarchii wymiarów obiektów kosztów, Poziom hierarchii wymiarów obiektów kosztów, Drzewo hierarchii wymiarów obiektów kosztów    |
 | Hierarchie wymiarów składników kosztów | Nazwa hierarchii wymiarów składników kosztów, Poziom hierarchii wymiarów składników kosztów, Drzewo hierarchii wymiarów składników kosztów |
-| Hierarchie wymiarów statystycznych  |  Nazwa hierarchii wymiarów statystycznych, Poziom hierarchii wymiarów statystycznych, Drzewo hierarchii wymiarów statystycznych   |
-|        Wersje transakcji        |                                                     Nazwa wersji                                                     |
-|          Kalendarze obrachunkowe          |                                            Kalendarz, Opis kalendarza                                            |
-|            Lata obrachunkowe            |                                                    Rok kalendarzowy                                                     |
-|           Okresy obrachunkowe           |                                                 Okres roku kalendarzowego                                                 |
-
+| Hierarchie wymiarów statystycznych  | Nazwa hierarchii wymiarów statystycznych, Poziom hierarchii wymiarów statystycznych, Drzewo hierarchii wymiarów statystycznych    |
+| Wersje transakcji               | Nazwa wersji                                                                                                         |
+| Kalendarze obrachunkowe                   | Kalendarz, Opis kalendarza                                                                                       |
+| Lata obrachunkowe                       | Rok kalendarzowy                                                                                                        |
+| Okresy obrachunkowe                     | Okres roku kalendarzowego                                                                                                 |
 
