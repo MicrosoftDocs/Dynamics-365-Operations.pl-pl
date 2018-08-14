@@ -46,8 +46,6 @@ Pierwsza faza integracji między programami Field Service i Finance and Operatio
 
 Aby zobaczyć przykład jak synchronizować zlecenie produkcyjne między Field Service a Finance and Operations, zobacz krótki film w serwisie YouTube [Synchronizowanie zlecenia produkcyjnego między Dynamics 365 for Field Service a Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU).
 
-[![](https://img.youtube.com/vi/hAB4TDVMjxU/0.jpg)](https://www.youtube.com/watch?v=hAB4TDVMjxU)
-
 ## <a name="system-requirements-for-finance-and-operations"></a>Wymagania systemowe dla rozwiązania Finance and Operations
 Program Field Service można integrować z następującymi wersjami:
 
