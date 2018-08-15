@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 2ef7f71dc6d58108b498ed89e9175ff2ce900cda
+ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
+ms.openlocfilehash: 31f496dccc410f8d12d99359493193853999abc6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -45,8 +45,6 @@ ms.lasthandoff: 08/07/2018
 - [<span data-ttu-id="2685c-116">Faktury w programie Field Service z fakturami niezależnymi w programie Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="2685c-116">Invoices in Field Service to free text invoices in Finance and Operations</span></span>](field-service-invoice.md)
 
 <span data-ttu-id="2685c-117">Aby zobaczyć przykład jak synchronizować zlecenie produkcyjne między Field Service a Finance and Operations, zobacz krótki film w serwisie YouTube [Synchronizowanie zlecenia produkcyjnego między Dynamics 365 for Field Service a Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU).</span><span class="sxs-lookup"><span data-stu-id="2685c-117">To see an example of how you can synchronize a work order between Field Service and Finance and Operations, watch the short YouTube video [Synchronize a work order between Dynamics 365 for Field Service and Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU).</span></span>
-
-[![](https://img.youtube.com/vi/hAB4TDVMjxU/0.jpg)](https://www.youtube.com/watch?v=hAB4TDVMjxU)
 
 ## <a name="system-requirements-for-finance-and-operations"></a><span data-ttu-id="2685c-118">Wymagania systemowe dla rozwiązania Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="2685c-118">System requirements for Finance and Operations</span></span>
 <span data-ttu-id="2685c-119">Program Field Service można integrować z następującymi wersjami:</span><span class="sxs-lookup"><span data-stu-id="2685c-119">Field Service integration supports the following versions:</span></span>
