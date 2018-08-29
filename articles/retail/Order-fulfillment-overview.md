@@ -1,5 +1,5 @@
 ---
-title: "Omówienie realizacji zamówienia w sklepie"
+title: "Realizacja zamówienia w sklepie"
 description: "Ten temat zawiera omówienie modułu realizacji zamówienia w sklepie."
 author: rubencdelgado
 manager: AnnBe
@@ -18,10 +18,10 @@ ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 1ac73b50c6051ba7d3b96ae49cb7e33cf436ba9e
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: a055457a5f506502e95efa1c7569564dbecd2b9e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

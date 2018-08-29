@@ -1,5 +1,5 @@
 --- 
-title: Tworzenie formatu na potrzeby zliczania i sumowania
+title: "Tworzenie formatów raportowania elektronicznego w celu wykonania zliczania i sumowania"
 description: "W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować format raportowania elektronicznego (ER), aby wykonywał inwentaryzację i sumowanie na podstawie danych już wygenerowanych tekstów wyjściowych."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7613b78d4a9ab63f5be9773a8699fe3ed94636eb
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 7261a2324b61cacfca8d69ad52762aa545b70220
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="create-format-for-counting-and-summing"></a>Tworzenie formatu na potrzeby zliczania i sumowania 
+# <a name="create-electronic-reporting-er-formats-to-do-counting-and-summing"></a>Tworzenie formatów raportowania elektronicznego (ER) w celu wykonania zliczania i sumowania
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

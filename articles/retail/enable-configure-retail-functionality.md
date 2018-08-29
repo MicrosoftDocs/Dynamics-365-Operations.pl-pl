@@ -1,5 +1,5 @@
 ---
-title: "Inicjowanie danych początkowych w nowym środowisku sieci sprzedaży"
+title: "Inicjowanie danych początkowych w nowych środowiskach rozwiązania Retail"
 description: "W tym artykule opisano dane, które są tworzone w ramach procesu inicjowania w programie Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7388324fe8a9abc8fc3d723b7c8df2c73d76a2ae
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 80fa443fc235496a111a8a866d2e703202721268
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="initialize-seed-data-in-a-new-retail-environment"></a>Inicjowanie danych początkowych w nowym środowisku sieci sprzedaży
+# <a name="initialize-seed-data-in-new-retail-environments"></a>Inicjowanie danych początkowych w nowych środowiskach rozwiązania Retail
 
 [!include [banner](includes/banner.md)]
 

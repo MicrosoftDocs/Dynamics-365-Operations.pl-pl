@@ -1,5 +1,5 @@
 ---
-title: "Konfigurowanie funkcjonalności logowania rozszerzonego w programach Cloud POS i MPOS"
+title: "Konfigurowanie funkcjonalności logowania rozszerzonego w aplikacjach MPOS i Cloud POS"
 description: Ten temat omawia opcje konfigurowania rozszerzonego logowania do aplikacji Cloud POS i Retail Modern POS (MPOS).
 author: rubencdelgado
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3e9ce03dfdc5dc027344186e0334b2ac2bc9341e
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 4e3f8042871e5e423b559bb0e0dae0006af00194
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Konfigurowanie funkcjonalności logowania rozszerzonego w programach Cloud POS i MPOS
+# <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Konfigurowanie funkcjonalności logowania rozszerzonego w aplikacjach MPOS i Cloud POS
 
 [!include [banner](includes/banner.md)]
 

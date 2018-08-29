@@ -1,5 +1,5 @@
 ---
-title: "Tworzenie dokumentacji lub szkolenia przy użyciu nagrań zadań"
+title: "Tworzenie dokumentacji lub szkolenia za pomocą nagrań zadań"
 description: "W tym temacie wyjaśniono, czym jest Rejestrator zadań i przewodniki po zadaniach, jak tworzyć nagrania zadań oraz jak dostosowywać przewodniki po zadaniach firmy Microsoft i umieszczać je w Pomocy."
 author: josaw1
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fbf7edbd141f5e94c333b64beedf9126d2900d47
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: fc5b0798397047d1adedfc19406a7875c853bea6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="create-documentation-or-training-using-task-recordings"></a>Tworzenie dokumentacji lub szkolenia przy użyciu nagrań zadań
+# <a name="create-documentation-or-training-by-using-task-recordings"></a>Tworzenie dokumentacji lub szkolenia za pomocą nagrań zadań
 
 [!include [banner](../includes/banner.md)]
 

@@ -3,7 +3,7 @@ title: "Konfigurowanie właściwości przepływu pracy"
 description: "W tym temacie wyjaśniono sposób konfigurowania różnych właściwości przepływu pracy."
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
-ms.openlocfilehash: 7ea35d851613a19889392400e31cf8492d5dc799
+ms.sourcegitcommit: ba03473dd6fc31d51fd4e890acac1cd1494ef5a3
+ms.openlocfilehash: a327b85f18f03294a237c3795ae2e1f4a97095f0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -107,6 +107,7 @@ Podczas przesyłania dokumentu do przetwarzania tworzone jest wystąpienie przep
     2.  Kliknij opcję **Wstaw symbol zastępczy**.
     3.  Na wyświetlonej liście wybierz symbol zastępczy, który chcesz wstawić.
     4.  Kliknij przycisk **Wstaw**.
+    5.  Popularnym dołączanym elementem zastępczym **Tekst powiadomienia** jest „Ostatnie uwagi: %Workflow.Last note%”, który pokazuje wszystkie komentarze z poprzedniego kroku.
 
 6.  Aby dodać tłumaczenia tekstu, wykonaj następujące kroki:
     1.  Kliknij opcję **Tłumaczenia**.

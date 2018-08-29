@@ -1,7 +1,7 @@
 ---
 title: "Rozrachunki z odbiorcami — strona główna"
 description: "Moduł Rozrachunki z odbiorcami umożliwia śledzenie faktur dla odbiorców oraz płatności przychodzących."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 20671
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
-ms.openlocfilehash: 9fcf106b03cd1abdd135681ceefbb7877f07c773
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: 303d67c0b662e6c21cebb5aa10ed28555459522e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -43,17 +43,24 @@ Faktury dla odbiorców można tworzyć na podstawie zamówień sprzedaży lub do
 
 Moduł Rozrachunki z odbiorcami umożliwia śledzenie faktur dla odbiorców i płatności otrzymanych od odbiorców. Możliwe jest tworzenie odbiorców, grup odbiorców, profilów księgowania, not odsetkowych, ponagleń, prowizji i parametrów dotyczących odbiorców, opłat, dostaw i miejsc docelowych, weksli oraz innych informacji dotyczących rozrachunków z odbiorcami. 
 
-:::row::: :::column::: - [Zasady podziału księgowań i zapisy w arkuszu księgi podrzędnej dla faktur niezależnych](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+:::row:::
+    :::column:::
+        - [Zasady podziału księgowań i wpisy w arkuszu księgi podrzędnej dla faktur niezależnych](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
         - [Profile księgowania odbiorców](customer-posting-profiles.md)
         - [Konfiguracja, autoryzacja i przechwytywanie karty kredytowej](credit-card-authorizations.md)
         - [Tworzenie faktury dla odbiorcy](configure-customer-invoices.md)
         - [Konfigurowanie i przetwarzania faktur cyklicznych](set-up-process-recurring-invoices.md)
-        - [Poprawianie faktury niezależnej](correct-free-text-invoice.md) :::column-end::: :::column::: - [Konfigurowanie weksli](set-up-bills-exchange.md)
+        - [Poprawianie faktury niezależnej](correct-free-text-invoice.md)
+    :::column-end:::
+    :::column:::
+        - [Konfigurowanie weksli](set-up-bills-exchange.md)
         - [Konfigurowanie stóp procentowych dla kodu odsetek](set-up-interest-rates-interest-code.md)
         - [Uchylanie, przywracanie lub wycofywanie odsetek lub opłat](waive-reinstate-reverse-interest-fees.md)
         - [Omówienie polecenia zapłaty SEPA](sepa-direct-debit-overview.md)
         - [Konfigurowanie polecenia zapłaty SEPA](sepa-direct-debit-mandate.md)
-        - [Zamykanie rozrachunków z odbiorcami](close-accounts-receivable.md) :::column-end::: :::row-end:::
+        - [Zamykanie rozrachunków z odbiorcami](close-accounts-receivable.md)
+    :::column-end:::
+:::row-end:::
 
 
 ## <a name="set-up-credit-and-collections"></a>Konfigurowanie kredytu i windykacji
@@ -70,13 +77,20 @@ Informacje dotyczące windykacji w module Rozrachunki z odbiorcami są zarządza
 
 Można akceptować różne rodzaje płatności od odbiorców, takich jak weksle, gotówka, czeki, karty kredytowe i płatności elektroniczne. 
 
-:::row::: :::column::: - [Używanie płatności odbiorcy do rozliczenia wielu faktur obejmujących wiele okresów rabatu](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+:::row:::
+    :::column:::
+        - [Używanie płatności odbiorcy do rozliczenia wielu faktur obejmujących wiele okresów rabatu](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
         - [Scentralizowane płatności na potrzeby rozrachunków z odbiorcami](centralized-payments-accounts-receivable.md)
         - [Rozliczanie częściowej płatności odbiorcy oraz płatności ostatecznej w całości przed datą rabatu](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-        - [Rozliczanie częściowej płatności odbiorcy przed datą rabatu z ostateczną płatnością po dacie rabatu](settle-partial-customer-payment-before-discount-or-final-payment-after.md) :::column-end::: :::column::: - [Rozliczanie częściowej płatności odbiorcy, do której zastosowano rabaty na fakturach korygujących odbiorcy](settle-partial-customer-payment-discounts-credit-notes.md)
+        - [Rozliczanie częściowej płatności odbiorcy przed datą rabatu z ostateczną płatnością po dacie rabatu](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+    :::column-end:::
+    :::column:::
+        - [Rozliczanie częściowej płatności odbiorcy, do której zastosowano rabaty na fakturach korygujących odbiorcy](settle-partial-customer-payment-discounts-credit-notes.md)
         - [Rozliczanie częściowej płatności odbiorcy, która ma wiele okresów rabatu](settle-partial-customer-payment-multiple-discount-periods.md)
         - [Zwroty do odbiorców](reimburse-customers.md)
-        - [Częściowe płatności od odbiorców](customer-payments-partial-amount.md) :::column-end::: :::row-end:::
+        - [Częściowe płatności od odbiorców](customer-payments-partial-amount.md)
+    :::column-end:::
+:::row-end:::
 
 
 ### <a name="additional-resources"></a>Dodatkowe zasoby

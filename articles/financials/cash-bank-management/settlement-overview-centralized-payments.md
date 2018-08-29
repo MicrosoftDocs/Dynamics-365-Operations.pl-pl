@@ -1,16 +1,16 @@
 ---
 title: "Omówienie rozliczeń w płatnościach scentralizowanych"
-description: "Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami za pomocą firmy, która obsługuje wszystkie płatności. Eliminuje to konieczność wprowadzania tej samej transakcji w wielu firmach i zapewnia oszczędność czasu dzięki usprawnieniu procesów propozycji płatności i rozrachunku oraz edycji otwartych i zamkniętych transakcji w przypadku płatności scentralizowanych."
+description: "W tym temacie opisano rozliczanie scentralizowanych płatności w programie Microsoft Dynamics 365 for Finance and Operations."
 author: abruer
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustOpenTrans
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 222414
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
@@ -19,10 +19,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b76b141531acfc2d1d7553a3e7a13f165373921b
+ms.sourcegitcommit: fc5a65c299adbf86fb2f38dff1a9aaa36f7367fa
+ms.openlocfilehash: 1fecc9027d0df7b268a3241ea0f1797849db2d90
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -35,8 +35,8 @@ Organizacje obejmujące wiele firm mogą tworzyć i zarządzać płatnościami z
 Po wprowadzeniu płatności odbiorcy lub dostawcy w jednej firmie i po rozliczeniu jej na fakturze wprowadzonej w innej firmie dla każdej z tych firm są automatycznie generowane odpowiednie rozliczenie oraz transakcje „należne od” i „należne do”. Jest tworzony rekord rozliczenia dla każdej kombinacji faktury i płatności w transakcji. Każdemu rekordowi rozliczenia jest przypisywany nowy numer załącznika, który bazuje na numeracji załączników płatności określonej na stronie **Parametry modułu rozrachunków z odbiorcami** dla odbiorców i na stronie **Parametry modułu rozrachunków z dostawcami** dla dostawców. 
 
 Jeśli są generowane dodatkowe rekordy rozliczenia dla rabatów gotówkowych, przeszacowań w walucie obcej, różnic groszowych, nadpłat i niedopłat, to jest im przypisywana późniejsza data transakcji faktury lub płatności. Jeśli rozliczenie następuje po zaksięgowaniu płatności, to w odniesieniu do rekordów rozliczenia jest używana data księgowania rozliczenia określona na stronie **Rozliczanie otwartych transakcji**.
-Typy księgowania, typy transakcji i domyślne opisy
-----------------------------------------------------------
+
+## <a name="posting-types-transaction-types-and-default-descriptions"></a>Typy księgowania, typy transakcji i domyślne opisy
 
 Transakcje w załączniku rozliczeń międzyfirmowych wykorzystują typ księgowania Rozliczenie międzyfirmowe, rozliczenie z odbiorcą międzyfirmowym oraz typy transakcji Rozliczenie z dostawcą międzyfirmowym. Na stronie **Opisy domyślne** można skonfigurować dane typu transakcji. 
 
@@ -50,8 +50,7 @@ Oto typy transakcji dostępne do użycia zarówno w wypadku rozliczeń w ramach 
 
 Można także zdefiniować domyślne opisy dla załączników rozliczeń międzyfirmowych.
 
-<a name="currency-exchange-gains-or-losses"></a>Zyski i straty związane z wymianą walut
----------------------------------
+## <a name="currency-exchange-gains-or-losses"></a>Zyski i straty związane z wymianą walut
 
 Kurs wymiany stosowany w transakcjach odbiorcy lub dostawcy jest przechowywany razem z transakcją. Zrealizowane dodatnie lub ujemne różnice kursowe są księgowane w firmie wystawiającej fakturę lub firmie dokonującej płatności, w zależności od opcji wybranej w polu **Zaksięguj zyski lub straty związane z wymianą walut** na stronie **Księgowanie międzyfirmowe** dla firmy dokonującej płatności. W poniższych przykładach użyto następujących walut:
 -   Waluta rozliczeniowa płatności: EUR
@@ -59,7 +58,7 @@ Kurs wymiany stosowany w transakcjach odbiorcy lub dostawcy jest przechowywany r
 -   Waluta transakcji płatności: DKK
 -   Waluta transakcji fakturowania: CAD
 
-#### <a name="currency-calculations"></a>Obliczenia walutowe
+### <a name="currency-calculations"></a>Obliczenia walutowe
 
 W wypadku rozliczania faktury wprowadzonej w jednej firmie z płatnością wprowadzoną w drugiej firmie waluta transakcji płatności (DKK) jest konwertowana w trzech krokach:
 1.  Konwersja na walutę rozliczeniową płatności (EUR) przy użyciu kursów wymiany firmy dokonującej płatności.
@@ -75,17 +74,15 @@ W wypadku otwarcia strony **Rozliczanie otwartych transakcji** z arkusza płatno
 
 Wynikowa kwota płatności jest przenoszona do wiersza arkusza płatności po zamknięciu strony **Rozliczanie otwartych transakcji**.
 
-#### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Księgowanie zysków lub strat wynikających z różnych walut rozliczeniowych
+### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Księgowanie zysków lub strat wynikających z różnych walut rozliczeniowych
 
 Jeśli występuje zysk lub strata na różnicy kursowej, wartość ta jest księgowana w firmie określonej w polu **Zaksięguj zyski lub straty związane z wymianą walut** na stronie **Księgowanie międzyfirmowe** dla firmy dokonującej płatności. Kwota zysku lub straty jest konwertowana na walutę rozliczeniową firmy, w której zysk lub strata jest księgowana, przy użyciu kursu wymiany zdefiniowanego dla tej firmy.
 
-<a name="cash-discounts"></a>Rabaty gotówkowe
---------------
+## <a name="cash-discounts"></a>Rabaty gotówkowe
 
 Rabaty gotówkowe generowane w trakcie procesu rozliczeń międzyfirmowych są księgowane w firmie wystawiającej fakturę lub firmie dokonującej płatności, w zależności od opcji wybranej w polu **Zaksięguj rabat gotówkowy** na stronie **Księgowanie międzyfirmowe** dla firmy dokonującej płatności. Odpowiednia transakcja rozliczająca jest generowana w firmie wystawiającej fakturę.
 
-<a name="overpayments-and-underpayments"></a>Nadpłaty i niedopłaty
-------------------------------
+## <a name="overpayments-and-underpayments"></a>Nadpłaty i niedopłaty
 
 Dopuszczalne rozbieżności różnic groszowych oraz nadpłaty i niedopłaty są uzależnione od firmy dokonującej płatności dla nadpłat i firmy wystawiającej fakturę dla niedopłat. Używane konto księgowania zależy od wartości w polu **Zarządzanie rabatami gotówkowymi** na stronie **Parametry modułu rozrachunków z odbiorcami** i w polu **Zarządzanie rabatami gotówkowymi** na stronie **Parametry modułu rozrachunków z dostawcami** dla dostawców.
 
@@ -112,9 +109,4 @@ W wypadku płatności do dostawców w transakcjach „należne do” i „należ
 
 ## <a name="withholding-tax"></a>Potrącona zaliczka na podatek
 Konto dostawcy skojarzone z fakturą służy do określania, czy powinna być obliczana zaliczka na podatek. Jeśli zaliczka na podatek ma zastosowanie, jest obliczana w firmie skojarzonej z fakturą. Jeśli firmy używają różnych walut, zostanie użyty kurs wymiany firmy skojarzonej z fakturą.
-
-
-
-
-
 

@@ -1,5 +1,5 @@
 --- 
-title: "Reguły kategorii cen do tworzenia umów handlowych"
+title: "Tworzenie umów handlowych przy użyciu reguł kategorii cen"
 description: "Ta procedura przedstawia sposób tworzenia umów handlowych na ceny sprzedaży przy użyciu reguły cen dla kategorii."
 author: scott-tucker
 manager: AnnBe
@@ -17,13 +17,13 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 133ca34a0e85454dc40d4e1d36fbe8278019c7e4
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 20393f80c8f4aa12e3103cb7df214367aa35ab16
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="category-pricing-rules-to-create-trade-agreements"></a>Reguły kategorii cen do tworzenia umów handlowych
+# <a name="create-trade-agreements-by-using-category-pricing-rules"></a>Tworzenie umów handlowych przy użyciu reguł kategorii cen
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

@@ -18,20 +18,20 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: af594fb7879918e6b9fc423774ee1ec7f635dec0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 56a5f53e1d3da8aa57e98e7d34fbc9c4005b6df8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="generate-er-reports-by-adding-content-as-raw-xml"></a>Generowanie raportów modułu ER poprzez dodawanie treści w postaci nieprzetworzonego kodu XML
+# <a name="generate-reports-by-adding-content-as-raw-xml"></a>Generowanie raportów poprzez dodawanie treści w postaci nieprzetworzonego kodu XML
 
 [!include[banner](../includes/banner.md)]
 
 Można użyć nowego elementu formatu **RAW XML** do zaprojektowania formatów Raportowania elektronicznego (ER), które wygenerują wychodzące dokumenty w formacie XML. W niektórych przypadkach warto dodać do tych raportów nieprzetworzone dane XML dla jednego lub kilku poniższych powodów:
 
-- Wygodniej jest używać nieprzetworzonego kodu XML w oryginalnym projekcie i bieżącej konserwacji raportu, ponieważ struktura ML może być generowana automatycznie poprzez uruchomienie wyrażenia czasu wykonywania. W związku z tym w czasie projektowania nie trzeba ustalać wielu powiązań dla wielu elementów formatu. Jest to możliwe, gdy używane źródła danych zawierają informacje, których można użyć do tworzenia elementów XML podczas generowania raportu. 
+- Wygodniej jest używać nieprzetworzonego kodu XML w oryginalnym projekcie i bieżącej konserwacji raportu, ponieważ struktura ML może być generowana automatycznie poprzez uruchomienie wyrażenia czasu wykonywania. W związku z tym w czasie projektowania nie trzeba ustalać wielu powiązań dla wielu elementów formatu. Jest to możliwe, gdy używane źródła danych zawierają informacje, których można użyć do tworzenia elementów XML podczas generowania raportu.
 - Żadna inna metoda nie może służyć do wypełniania raportu zawartością XML, którą uprzednio otrzymano i zapisano w systemie. Na przykład może istnieć wymóg, aby generowana odpowiedź XML zawierała treść wysłanego wcześniej żądania XML.
 - Żadnej innej metody nie można używać do wstawiania znaków do wygenerowanego dokumentu na podstawie ich kodów numerycznych. Dla niektórych języków i znaków kody tego typu nie istnieją. Przykładami są grecka literę (ρ) i kody obiektów HTML, takie jak \&eacute; dla *e*, która ma znak akcentu ostrego (é).
 

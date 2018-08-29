@@ -1,5 +1,5 @@
 --- 
-title: "Projektowanie formatu w celu używania poziomo rozszerzalnych zakresów do dynamicznego dodawania kolumn w raportach programu Excel"
+title: "Projektowanie formatów w celu dynamicznego dodawania kolumn do raportów programu Excel jako poziomo rozszerzalnych zakresów"
 description: "W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może skonfigurować format raportowania elektronicznego (ER) do generowania raportów jako plików arkuszy OPENXML(Excel), w których wymagane kolumny mogą być tworzone dynamicznie jako poziomo rozszerzalne zakresy."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9c3cf17cd406a50a9f92e78991289f9139d7c73
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 80cd2603ba5ee47f861077d75a955037ffbde96e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="design-a-format-to-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports"></a>Projektowanie formatu w celu używania poziomo rozszerzalnych zakresów do dynamicznego dodawania kolumn w raportach programu Excel
+# <a name="design-formats-to-dynamically-add-columns-to-excel-reports-as-horizontally-expandable-ranges"></a>Projektowanie formatów w celu dynamicznego dodawania kolumn do raportów programu Excel jako poziomo rozszerzalnych zakresów
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

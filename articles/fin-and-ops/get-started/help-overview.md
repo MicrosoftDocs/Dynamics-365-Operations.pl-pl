@@ -1,9 +1,9 @@
 ---
-title: "Omówienie Pomocy"
+title: "System Pomocy rozwiązania Finance and Operations"
 description: "Ten temat zawiera omówienie składników systemu Pomocy programu Microsoft Dynamics 365 for Finance and Operations. Wyjaśniono tu również, jak można dostarczać niestandardową dokumentację i szkolenia dla swojej organizacji."
 author: margoc
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,14 +19,14 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="help-system-overview"></a>Omówienie systemu Pomocy
+# <a name="finance-and-operations-help-system"></a>System Pomocy rozwiązania Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
@@ -82,27 +82,19 @@ Aby subskrybować źródło danych RSS ze wszystkimi aktualizacjami zawartości 
 [Źródło danych RSS](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="give-feedback"></a>Przekazywanie opinii 
-Cenimy opinie klientów. Możesz komentować lub sugerować zmiany zawartości za pośrednictwem serwisu GitHub.
+Cenimy opinie klientów. Możesz komentować lub sugerować zmiany zawartości za pośrednictwem serwisu GitHub. Aby uzyskać więcej informacji o systemie opinii, zobacz [ten wpis na blogu](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### <a name="leave-us-a-comment"></a>Pozostaw komentarz 
+##### <a name="leave-us-feedback"></a>Zostaw nam opinię 
 Jeśli masz opinię lub pytania dotyczące tematu, pozostaw komentarz na dole strony.  
 
-1 Kliknij **Komentarze** w celu przejścia do komentarzy w dolnej części strony.
+1. Kliknij opcję **Opinia** w celu przejścia do sekcji komentarzy w dolnej części strony, a następnie kliknij opcję **Opinia o produkcie** lub **Zaloguj się, aby dodać opinię o dokumentacji**.
 
-![Komentarze](./media/comments.png)
+![Informacja zwrotna](./media/comments.png)
 
-2 Zacznij wpisywać swoje komentarze, a następnie kliknij przycisk **Opublikuj komentarz**.
+2. Zacznij wpisywać swoje komentarze, a następnie kliknij przycisk **Prześlij opinię**.
 
-![Opublikuj komentarz](./media/before-signin.png)
+![Opublikuj komentarz](./media/feedback.png)
 
-3 Wybierz typ konta, przy użyciu którego chcesz się zalogować:  
-Kliknij jedną z ikon po lewej stronie, aby skojarzyć tę witrynę z istniejącym kontem, takich jak konto w serwisie Twitter, Facebook lub Microsoft. 
-
-lub 
-
-Po prawej stronie wprowadź adres e-mail i nowe hasło, aby utworzyć nowe konto dla witryny. 
-
-![Opcje logowania](./media/signin-options.png)
 
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Sugerowanie zmiany lub współtworzenie zawartości za pośrednictwem serwisu GitHub
@@ -115,7 +107,6 @@ Więcej informacji zawiera podręcznik dla współautorów: https://github.com/M
 
 > [!NOTE]
 > Obecnie akceptujemy współtworzenie tylko naszych repozytoriów w języku angielskim.  
-> Nie akceptujemy problemów zgłoszonych za pomocą serwisu GitHub — należy pobrać żądanie sugestii dotyczącej zawartości. Opinie dotyczące produktu i funkcji najlepiej przekazywać za pomocą portalu pomysłów rozwiązania Dynamics 365: https://experience.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Przewodniki zadań

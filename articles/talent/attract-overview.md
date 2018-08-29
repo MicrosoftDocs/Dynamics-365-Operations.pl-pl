@@ -1,5 +1,5 @@
 ---
-title: "Omówienie aplikacji Attract"
+title: "Funkcje i możliwości aplikacji Attract"
 description: "Aplikacja Attract udostępnia funkcje zarządzania procesem zatrudniania nowych talentów. Kandydatów można dodać do otwartych stanowisk i przesuwać między etapami aż do przedłużenia oferty lub odrzucenia podania."
 author: rschloma
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: b64a97897a1ea75eb2a9681bc9357433a570dd74
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 37dd0396787375fccd4082f392e079ed5dab04e9
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="attract-overview"></a>Omówienie aplikacji Attract
+# <a name="attract-features-and-capabilities"></a>Funkcje i możliwości aplikacji Attract
 
 [!include [banner](includes/banner.md)]
 

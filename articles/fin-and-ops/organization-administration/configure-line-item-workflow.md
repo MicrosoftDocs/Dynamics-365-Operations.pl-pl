@@ -1,5 +1,5 @@
 ---
-title: "Konfigurowanie przepływu pracy dla pozycji w wierszu"
+title: "Konfigurowanie przepływów pracy dla pozycji w wierszach"
 description: "W tym temacie wyjaśniono sposób konfigurowania elementu przepływu pracy dla pozycji w wierszu."
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d30d6aeda6be7bc81763c0b3f20c568d3fc81526
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 0a57baa3ecae727721f62477cfc5fa41f60ad06d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="configure-a-line-item-workflow"></a>Konfigurowanie przepływu pracy dla pozycji w wierszu
+# <a name="configure-line-item-workflows"></a>Konfigurowanie przepływów pracy dla pozycji w wierszach
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 --- 
-title: "Używanie konfiguracji mapowania modelu do obliczeń agregujących na poziomie bazy danych (ER)"
+title: "Używanie konfiguracji mapowań modeli do obliczeń agregujących na poziomie bazy danych"
 description: Ta procedura zawiera informacje na temat projektowania nowego mapowania modelu raportowania elektronicznego (ER) i stosowania wbudowanych funkcji ER w celu efektywnego obliczania agregacji.
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
-ms.openlocfilehash: 869a23b992f1d6dccf9327b66b3e4d611728efce
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: a462a3997644a494b5cea89c9530ddba67c32450
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="use-a-model-mapping-configuration-for-aggregate-calculations-at-the-database-leveler"></a>Używanie konfiguracji mapowania modelu do obliczeń agregujących na poziomie bazy danych (ER) 
+# <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Używanie konfiguracji mapowań modeli do obliczeń agregujących na poziomie bazy danych
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

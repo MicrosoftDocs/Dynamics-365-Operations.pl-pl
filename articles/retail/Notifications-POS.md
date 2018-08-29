@@ -1,5 +1,5 @@
 ---
-title: "Wyświetlanie powiadomień o zamówieniach w aplikacji POS"
+title: "Pokazywanie powiadomień o zamówieniach w aplikacji POS"
 description: "W tym temacie opisano, w jaki sposób włączyć powiadomienia o zamówieniach w aplikacji POS i strukturze powiadomień. Docelowo programiści będą mogli rozszerzyć te powiadomienia na operacje wykraczające poza realizację zamówień."
 author: ShalabhjainMSFT
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
-ms.openlocfilehash: a55af4c26d74cc392d3c53aacb66e0a8bc97abf2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="show-order-notifications-in-the-point-of-sale"></a>Wyświetlanie powiadomień o zamówieniach w aplikacji POS
+# <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Pokazywanie powiadomień o zamówieniach w aplikacji POS
 
 [!include [banner](includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: "Rejestrator zadań i Pomoc dla punktu sprzedaży"
+title: "Rejestrator zadań i Pomoc dla aplikacji Retail Modern POS (MPOS) i Cloud POS"
 description: "W tym temacie opisano, jak korzystać z Rejestratora zadań w programach Retail Modern POS (MPOS) i Cloud POS."
 author: mugunthanm
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 12aa71843fa8b22eb7ae688ed3600168760d90da
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 0077bac6eef5c4b4925c9464d47a1297aa1177e4
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="task-recorder-and-help-for-pos"></a>Rejestrator zadań i Pomoc dla punktu sprzedaży
+# <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Rejestrator zadań i Pomoc dla aplikacji Retail Modern POS (MPOS) i Cloud POS
 
 [!include [banner](includes/banner.md)]
 
@@ -36,7 +36,7 @@ W tym temacie opisano, jak korzystać z Rejestratora zadań w programach Retail 
 <a name="overview"></a>Przegląd
 --------
 
-Rejestrator zadań w programie Retail Modern POS lub Cloud POS jest to nowe rozwiązanie, utworzone z myślą o krótkim czasie reakcji. Zawiera elastyczny interfejs programowania aplikacji (API) umożliwiający rozszerzenie i bezproblemową integrację z użytkownikami zapisów procesu biznesowego. Ponadto integracja Rejestratora zadań z narzędziem do modelowania procesów biznesowych (BPM) w usługach Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) została przyspieszona. W związku z tym użytkownicy mogą nadal tworzyć diagramy procesów biznesowych na podstawie zapisów w celu analizy i projektowania swoich zgłoszeń.
+Rejestrator zadań w programie Retail Modern POS lub Cloud POS jest to nowe rozwiązanie, utworzone z myślą o krótkim czasie reakcji. Zawiera elastyczny interfejs programowania aplikacji (API) umożliwiający rozszerzenie i bezproblemową integrację z użytkownikami zapisów procesu biznesowego. Ponadto integracja Rejestratora zadań z narzędziem do modelowania procesów biznesowych (BPM) w usługach Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) została wyeksponowana. W związku z tym użytkownicy mogą nadal tworzyć diagramy procesów biznesowych na podstawie zapisów w celu analizy i projektowania swoich zgłoszeń.
 
 ## <a name="architecture"></a>Architektura
 Rejestrator zadań może rejestrować działania użytkownika na komputerze klienckim z precyzyjną dokładnością. Każdy element sterujący jest wyposażony w narzędzie do powiadamiania Rejestratora zadań o wykonaniu czynności przez użytkownika. Element sterujący powiadamia Rejestrator zadań o wystąpieniu zdarzenia i przekazuje wszelkie stosowne informacje o odpowiedniej akcji użytkownika w czasie rzeczywistym. Z tych informacji Rejestrator zadań uzyskuje dane o typie akcji użytkownika (na przykład kliknięciu przycisku, wprowadzeniu wartości lub nawigowaniu) oraz wszelkie dane związane z daną akcją użytkownika (na przykład wartość i typ danych wejściowych, kontekst formularza lub rekordu). Rejestrator zachowuje informacje z wystarczającą ilością szczegółów w celu zagwarantowania, że odtwarzanie nagrania może przeprowadzić zarejestrowane akcje dokładnie tak samo, jak były wykonywane przez użytkownika. (Funkcja odtwarzania nie została jeszcze zaimplementowana w programie Retail Modern POS lub Cloud POS.)

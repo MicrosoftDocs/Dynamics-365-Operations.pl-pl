@@ -17,13 +17,13 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2bfb5095c1db2a5ab9fb528d08d979ec850543fc
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 3ec914b1e51f238c4f319dd6b71c2992fb5a6247
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="process-loyalty-reward-point-adjustments"></a>Przetwarzanie korekt punktów lojalnościowych
+# <a name="process-adjustments-of-loyalty-reward-points"></a>Przetwarzanie korekt punktów lojalnościowych
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 
