@@ -1,5 +1,5 @@
 --- 
-title: "Zarządzanie konfiguracjami mapowania modeli na potrzeby raportowania elektronicznego (ER)"
+title: "Zarządzanie mapowaniem modelu ER w oddzielnych konfiguracjach ER"
 description: "W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może zarządzać mapowaniami modelu raportowania elektronicznego (ER) w osobnych konfiguracjach ER."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 35fdc1e98897d449ce18fe38cc6b7896ca5c5278
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 24ca4124d190df94e7ca9ac31c2ea757fe9ff242
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="manage-model-mapping-configurations-for-electronic-reporting-er"></a>Zarządzanie konfiguracjami mapowania modeli na potrzeby raportowania elektronicznego (ER)
+# <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Zarządzanie mapowaniem modelu ER w oddzielnych konfiguracjach ER
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,7 +1,7 @@
 ---
-title: "Najlepsze praktyki dotyczące importowania załączników za pomocą jednostki Arkusz finansowy"
+title: "Najlepsze rozwiązania w zakresie importowania załączników za pomocą jednostki Arkusz finansowy"
 description: "Ten temat zawiera porady dotyczące importowania danych do arkusza finansowego przy użyciu jednostki Arkusz finansowy."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 94363
 ms.assetid: 0b8149b5-32c5-4518-9ebd-09c9fd7f4cfc
@@ -18,14 +18,14 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: eea226fae902c19d66aff83b7ee2786d1586ef39
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: 7bc24b5e3bc13d6dbb4313f25ff44d8fae0998cc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="best-practices-for-importing-vouchers-using-the-general-journal-entity"></a>Najlepsze praktyki dotyczące importowania załączników za pomocą jednostki Arkusz finansowy
+# <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Najlepsze rozwiązania w zakresie importowania załączników za pomocą jednostki Arkusz finansowy
 
 [!include [banner](../includes/banner.md)]
 

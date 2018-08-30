@@ -1,5 +1,5 @@
 --- 
-title: "Projektowanie konfiguracji w celu generowania dokumentów z danymi aplikacji"
+title: "Projektowanie konfiguracji w celu generowania dokumentów zawierających dane aplikacji"
 description: "Aby wykonać kroki opisane w tej procedurze, należy najpierw wykonać procedurę „ER Generowanie dokumentów z aktualizacją danych aplikacji (Część 1 — Importowanie konfiguracji)”."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ad5508ea5807f505b29f2e60a1459c9c22552694
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8376107a33dd83e04f82fcab6847e7f073f08dbc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="design-configurations-to-generate-documents-with-application-data"></a>Projektowanie konfiguracji w celu generowania dokumentów z danymi aplikacji
+# <a name="design-configurations-to-generate-documents-that-have-application-data"></a>Projektowanie konfiguracji w celu generowania dokumentów zawierających dane aplikacji
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

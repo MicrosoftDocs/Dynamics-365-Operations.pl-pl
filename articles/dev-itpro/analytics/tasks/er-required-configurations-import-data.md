@@ -1,5 +1,5 @@
 --- 
-title: "Tworzenie wymaganych konfiguracji do importowania danych z pliku zewnętrznego na potrzeby raportowania elektronicznego (ER)"
+title: "Tworzenie konfiguracji ER w celu importowania danych z plików zewnętrznych"
 description: "W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może projektować konfiguracje raportowania elektronicznego (ER) w celu importowania danych do aplikacji Dynamics 365 for Finance and Operations z zewnętrznego pliku."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 999c6da306ff713521ce3bb5750bd7e65dc5daaf
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 70bf788b5924e382ab927fcff4c86908923e09d7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="create-required-configurations-to-import-data-from-an-external-file-for-electronic-reporting-er"></a>Tworzenie wymaganych konfiguracji do importowania danych z pliku zewnętrznego na potrzeby raportowania elektronicznego (ER)
+# <a name="create-er-configurations-to-import-data-from-external-files"></a>Tworzenie konfiguracji ER w celu importowania danych z plików zewnętrznych
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

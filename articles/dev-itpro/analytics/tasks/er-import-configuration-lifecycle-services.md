@@ -1,5 +1,5 @@
 --- 
-title: "Importowanie konfiguracji z usługi Lifecycle Services na potrzeby raportowania elektronicznego (ER)"
+title: "Importowanie konfiguracji raportowania elektronicznego z usługi Lifecycle Services"
 description: "W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może zaimportować nową wersję konfiguracji raportowania elektronicznego (ER) z usługi Microsoft Lifecycle Services (LCS)."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 9eb4f54897c84b98828c927f0f93613583fd4599
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: f3b8cdb722cf49194faccc19fbb95265a230d48b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="import-a-configuration-from-lifecycle-services-for-electronic-reporting-er"></a>Importowanie konfiguracji z usługi Lifecycle Services na potrzeby raportowania elektronicznego (ER)
+# <a name="import-electronic-reporting-configurations-from-lifecycle-services"></a>Importowanie konfiguracji raportowania elektronicznego z usługi Lifecycle Services
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

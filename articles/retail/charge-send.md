@@ -1,5 +1,5 @@
 ---
-title: "Wysyłanie zamówienia z innego sklepu"
+title: "Wysyłka zamówień z innego sklepu za pomocą funkcji Wysyłanie opłaty"
 description: "W tym temacie opisano funkcję Wysyłanie opłaty."
 author: ashishmsft
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: asharchw
 ms.search.validFrom: 2017-10-10
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
-ms.openlocfilehash: 41434614b01f9a00f2b8a56765ecb90ee07e3d90
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 50f51a7cc043b3c638ae58bffbd988a6db148004
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/06/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="ship-an-order-from-a-different-store"></a>Wysyłanie zamówienia z innego sklepu
+# <a name="ship-orders-from-another-store-by-using-the-charge-send-feature"></a>Wysyłka zamówień z innego sklepu za pomocą funkcji Wysyłanie opłaty
 
 [!include [banner](includes/banner.md)]
 

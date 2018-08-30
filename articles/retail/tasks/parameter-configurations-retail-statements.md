@@ -1,5 +1,5 @@
 --- 
-title: "Konfiguracje parametrów dla zestawień sieci sprzedaży"
+title: "Konfigurowanie parametrów aplikacji Retail wpływających na zestawienia sieci sprzedaży"
 description: "Ta procedura pokazuje konfiguracje parametrów sprzedaży detalicznej, które mają wpływ na sposób tworzenia i księgowana zestawień sieci sprzedaży."
 author: josaw1
 manager: AnnBe
@@ -17,13 +17,13 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 0c93633e92221264cc6a67c74d62edaa59bdbd2f
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: ff12587d8332801131d5b0cac84e0db38f8f6142
 ms.contentlocale: pl-pl
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="parameter-configurations-for-retail-statements"></a>Konfiguracje parametrów dla zestawień sieci sprzedaży
+# <a name="configure-retail-parameters-that-affect-retail-statements"></a>Konfigurowanie parametrów aplikacji Retail wpływających na zestawienia sieci sprzedaży
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 

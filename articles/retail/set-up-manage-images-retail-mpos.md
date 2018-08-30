@@ -1,5 +1,5 @@
 ---
-title: "Konfigurowanie obrazów i zarządzanie nimi w module Retail Modern POS"
+title: "Konfigurowanie obrazów i zarządzanie nimi w module Retail Modern POS (MPOS)"
 description: "W tym artykule objaśniono etapy konfigurowania obrazów i zarządzania nimi dla różnych jednostek wyświetlanych w module Retail Modern POS (MPOS)."
 author: athinesh99
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ed4a7044b577ed6af86f6803f6abd4f9b500b4e7
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: e364cf988cc80d53605fe88bf0dc1be6021c52e7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Konfigurowanie obrazów i zarządzanie nimi w module Retail Modern POS
+# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Konfigurowanie obrazów i zarządzanie nimi w module Retail Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
 
@@ -48,11 +48,11 @@ Obrazy wyświetlane w aplikacji Retail Modern POS (MPOS) muszą być obsługiwan
 
 1.  Kliknij kolejno opcje **Handel detaliczny** &gt; **Zarządzanie katalogiem** &gt; **Obrazy katalogu**.
 2.  Na stronie **obrazów w katalogu** w okienku akcji kliknij **Definiuj szablon multimediów**. W oknie dialogowym **Definiuj szablon multimediów** w polu **Jednostka** **Katalog** powinien być wybrany domyślnie.
-3.  Na skróconej karcie **Ścieżka do multimediów** wprowadź pozostałe ścieżki lokalizacji obrazu. Ścieżka do multimediów obsługuje **LanguageID** jako zmienną. Na przykład w przypadku danych demonstracyjnych, można utworzyć folder **katalogów** dla wszystkich obrazów w katalogu znajdujących się pod podstawowym adresem URL obiektów multimedialnych na serwerze multimediów (https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer). Następnie można skonfigurować folder dla każdego języka, na przykład en US lub fr-FR i skopiować odpowiednie obrazy w każdym folderze. Jeśli nie masz różnych obrazów dla różnych języków, możesz pominąć zmienną **LanguageID** ze struktury folderu i przejść bezpośrednio do folderu katalogów zawierającego obrazy katalogu. **Uwaga:** aktualna wersja programu Dynamics 365 for Retail obsługuje token **{LanguageId}** dla jednostek Katalog, Produkt i Kategoria. (Token **{LanguageID}** nie jest obsługiwany dla jednostek Odbiorca i Pracownik, zgodna z istniejącym standardem począwszy systemu Microsoft Dynamics AX 6.x.)
+3.  Na skróconej karcie **Ścieżka do multimediów** wprowadź pozostałe ścieżki lokalizacji obrazu. Ścieżka do multimediów obsługuje **LanguageID** jako zmienną. Na przykład w przypadku danych demonstracyjnych, można utworzyć folder **Katalogi** dla wszystkich obrazów w katalogu znajdujących się pod podstawowym adresem URL obiektów multimedialnych na serwerze multimediów (https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer). Następnie można skonfigurować folder dla każdego języka, na przykład en US lub fr-FR i skopiować odpowiednie obrazy w każdym folderze. Jeśli nie masz różnych obrazów dla różnych języków, możesz pominąć zmienną **LanguageID** ze struktury folderu i przejść bezpośrednio do folderu katalogów zawierającego obrazy katalogu. **Uwaga:** aktualna wersja programu Dynamics 365 for Retail obsługuje token **{LanguageId}** dla jednostek Katalog, Produkt i Kategoria. (Token **{LanguageID}** nie jest obsługiwany dla jednostek Odbiorca i Pracownik, zgodna z istniejącym standardem począwszy systemu Microsoft Dynamics AX 6.x.)
 4.  W przypadku obrazów format nazwy pliku jest na stałe zakodowany w nazwie katalogu i nie można go zmienić. W związku z tym należy zmienić nazwy obrazów, tak aby miały nazwy odpowiedniego katalogu, w celu zagwarantowania, że MPOS obsługuje je poprawnie.
 5.  W polu **Rozszerzenie pliku** wybierz oczekiwane rozszerzenie nazwy pliku, w zależności od typu obrazów, które masz. Na przykład w przypadku danych demonstracyjnych, obrazy katalogu mają rozszerzenie .jpg. (Pliki obrazów są również zmieniane, tak aby miały nazwy katalogu).
 6.  Kliknij przycisk **OK**
-7.  Aby sprawdzić, czy szablon multimediów dla obrazów został zapisany poprawnie, na stronie **obrazów katalogu** kliknij ponownie **Definiuj szablon multimediów**. Aby sprawdzić szablon bez zamykania pola dialogowego **Definiuj szablon multimediów**, użyj skróconej karty **Generuj adresy URL obrazów dla programu Excel**. Sprawdź wygląd adresu URL obrazu wygląd i zobacz, czy adres URL jest zgodny ze standardem szablonu. Okno dialogowe **Definiuj szablon multimediów** okno ma teraz niejawnie ustawioną ścieżkę obrazu dla wszystkich obrazów katalogu używających tej wspólnej ścieżki adresu URL. Ta ścieżka URL dotyczy wszystkich obrazów z katalogu, chyba że zostaną zastąpione. Pierwsza część ścieżki obrazu jest pobierana z podstawowego adresu URL obiektu multimedialnego zdefiniowanego w profilu kanału. Pozostała część ścieżki pochodzi ze ścieżki zdefiniowanej w szablonie multimediów. Dwie części są tak łączone, by zawierały pełny adres URL lokalizacji obrazu. Na przykład, katalog w obrębie danych demonstracyjnych nosi nazwę Fabrikam Base Catalog. W związku z tym nazwa obrazu musi mieć postać Fabrikam Base Catalog.jpg (używa nazwy katalogu i rozszerzenia .jpg skonfigurowanych w szablonie). W takim przypadku po połączeniu, adres URL będzie miał postać https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg.
+7.  Aby sprawdzić, czy szablon multimediów dla obrazów został zapisany poprawnie, na stronie **obrazów katalogu** kliknij ponownie **Definiuj szablon multimediów**. Aby sprawdzić szablon bez zamykania pola dialogowego **Definiuj szablon multimediów**, użyj skróconej karty **Generuj adresy URL obrazów dla programu Excel**. Sprawdź wygląd adresu URL obrazu wygląd i zobacz, czy adres URL jest zgodny ze standardem szablonu. Okno dialogowe **Definiuj szablon multimediów** okno ma teraz niejawnie ustawioną ścieżkę obrazu dla wszystkich obrazów katalogu używających tej wspólnej ścieżki adresu URL. Ta ścieżka URL dotyczy wszystkich obrazów z katalogu, chyba że zostaną zastąpione. Pierwsza część ścieżki obrazu jest pobierana z podstawowego adresu URL obiektu multimedialnego zdefiniowanego w profilu kanału. Pozostała część ścieżki pochodzi ze ścieżki zdefiniowanej w szablonie multimediów. Dwie części są tak łączone, by zawierały pełny adres URL lokalizacji obrazu. Na przykład, katalog w obrębie danych demonstracyjnych nosi nazwę Fabrikam Base Catalog. W związku z tym nazwa obrazu musi mieć postać Fabrikam Base Catalog.jpg (używa nazwy katalogu i rozszerzenia .jpg skonfigurowanych w szablonie). W takim przypadku po połączeniu adres URL będzie miał postać https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer/Catalogs/en-US/Fabrikam Base Catalog.jpg
 8.  Uruchom zadania synchronizacji, aby przesunąć nowy szablon do bazy danych kanału, tak aby MPOS mógł używać tego szablonu do uzyskania dostępu do obrazów.
 9.  Aby zaktualizować szablon multimediów dla obrazów w katalogu po stronie kanału, uruchom zadanie **Catalog Job 1150** z okna **Dane IT sieci sprzedaży** &gt; **Harmonogram dystrybucji**.[![catalog1](./media/catalog1.png)](./media/catalog1.png)
 
@@ -79,8 +79,7 @@ Jak wiesz z poprzedniej sekcji, szablon multimediów dla danej jednostki obsług
 ### <a name="overwrite-by-using-edit-in-excel"></a>Zastępowanie za pomocą edycji w programie Excel
 
 1.  Kliknij kolejno opcje **Handel detaliczny** &gt; **Zarządzanie katalogiem** &gt; **Obrazy katalogu**.
-2.  Na stronie **obrazów w katalogu** 
-kliknij **Definiuj szablon multimediów**. W oknie dialogowym **Definiuj szablon multimediów** w polu **Jednostka** powinien być wybrany **Katalog**.
+2.  Na stronie **obrazów w katalogu** kliknij **Definiuj szablon multimediów**. W oknie dialogowym **Definiuj szablon multimediów** w polu **Jednostka** powinien być wybrany **Katalog**.
 3.  Na skróconej karcie **Ścieżka do multimediów** sprawdź lokalizację obrazu.
 4.  Na skróconej karcie **generowanie adresów URL obrazu dla programu Excel** kliknij **Generuj**. **Ważne:** po każdej zmianie szablonu multimediów należy kliknąć opcję **generowania** przed użyciem edycji programu Excel. [![excel1](./media/excel1.jpg)](./media/excel1.jpg) Teraz widać podgląd adresów URL obrazów wygenerowanych na podstawie ostatnio zapisanej wersji szablonu multimediów. [![excel2](./media/excel2.png)](./media/excel2.png) **Uwaga:** Adresy URL, które są generowane dla programu Excel, używają ścieżki i konwencji szablonu multimediów, który jest zdefiniowany. Konwencje te obejmują konwencje nazewnictwa plików. Oczekuje się, że masz już zestaw obrazów fizycznych poza programem Dynamics 365 for Retail, a obrazy mogą być pobierane z adresów URL, które pochodzą ze zdefiniowanego wcześniej szablonu multimediów. Możesz zastąpić te adresy URL przy użyciu funkcji edycji programu Excel.
 5.  Kliknij **Edytuj w programie Excel**.

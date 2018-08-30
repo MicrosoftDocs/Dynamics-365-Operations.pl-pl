@@ -65,5 +65,3 @@ Następujące dane są używane do wypełniania raportów w pakiecie zawartości
 | Nazwisko pracownika etatowego    | Imię, drugie imię i nazwisko                             | Uczestnicy kursu |
 | Tytuł pracownika   | Tytuł i data ustalenia stażu pracy                                         | Uczestnicy kursu |
 
-
-

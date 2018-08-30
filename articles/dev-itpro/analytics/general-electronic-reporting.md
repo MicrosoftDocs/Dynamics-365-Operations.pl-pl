@@ -1,5 +1,5 @@
 ---
-title: "Omówienie raportowania elektronicznego"
+title: Raportowanie elektroniczne (ER)
 description: "Ten temat zawiera omówienie narzędzia Raportowanie elektroniczne. Przedstawiono w nim informacje dotyczące najważniejszych koncepcji, scenariusze obsługiwane przez narzędzie Raportowanie elektroniczne oraz listę formatów zaprojektowanych i udostępnionych w ramach rozwiązania."
 author: NickSelin
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 8f0bc18dd7ead37e970b659afbb10243dac5f967
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: a271887c4d2cfe4d0ee6518482dc4ebe407ebe56
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="electronic-reporting-overview"></a>Omówienie Raportowania elektroniczne
+# <a name="electronic-reporting-er"></a>Raportowanie elektroniczne (ER)
 
 [!include [banner](../includes/banner.md)]
 

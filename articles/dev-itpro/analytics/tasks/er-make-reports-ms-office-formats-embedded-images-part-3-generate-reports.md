@@ -1,5 +1,5 @@
 --- 
-title: "Generowanie raportów w formatach pakietu Microsoft Office z osadzonymi obrazami"
+title: "Generowanie raportów w formatach pakietu Office z osadzonymi obrazami"
 description: "W poniższych krokach wyjaśniono, jak użytkownik odtwarzający rolę „Administrator systemu” lub „Deweloper raportowania elektronicznego” może projektować konfiguracje raportowania elektronicznego (ER) w celu generowania dokumentów elektronicznych w formatach dokumentów pakietu MS Office (Excel i Word) zawierających osadzone obrazy."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e2ab89857f4bf4844123508837c8faa504bc8839
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5ef7ec2f8b5b7fdf456ebb71b863e620ae21e6b5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="generate-reports-in-microsoft-office-formats-with-embedded-images"></a>Generowanie raportów w formatach pakietu Microsoft Office z osadzonymi obrazami
+# <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Generowanie raportów w formatach pakietu Office z osadzonymi obrazami
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

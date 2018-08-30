@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
 ms.openlocfilehash: 1a598d0bd053c60c3f8df6b05ecb7ff15addfaa3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2018
 Można śledzić wyniki formatów ER, dzięki którym są generowane wychodzące dokumenty elektroniczne. Po włączeniu generowania śledzenia (parametr użytkownika ER **Uruchom w trybie debugowania**), nowy rekord śledzenia jest generowany w dzienniku formatu ER po każdym uruchomieniu raportu ER. Następujące informacje są przechowywane w każdym śledzeniu, które jest generowane:
 
 - Wszystkie ostrzeżenia wygenerowane przez reguły weryfikacji
-- Wszystkie błędy wygenerowane przez reguły weryfikacji 
+- Wszystkie błędy wygenerowane przez reguły weryfikacji
 - Wszystkie wygenerowane pliki przechowywane jako załączniki rekordu śledzenia
 
 Można przechowywać pojedyncze podstawowe pliki aplikacji dla dowolnego formatu ER. Pliki są traktowane jako bazowe, jeśli opisują oczekiwane wyniki generowanych raportów. Jeśli plik podstawowy jest dostępny dla formatu ER, który był uruchomiony przy włączonej funkcji generowania śladu, sklep śledzi nie tylko szczegóły wspomniane wcześniej, ale również wynik porównania wygenerowanego dokumentu elektronicznego z plikiem podstawowym. Za pomocą jednego kliknięcia można umieścić wygenerowany dokument elektroniczny i jego plik podstawowy w jednym pliku zip. Następnie można przeprowadzić szczegółowe porównanie za pomocą narzędzi zewnętrznych, takich jak Windiff.

@@ -1,5 +1,5 @@
 ---
-title: Inicjowanie oprogramowania Microsoft Dynamics 365 for Talent
+title: "Inicjowanie obsługi rozwiązania Talent"
 description: "Ten temat przeprowadzi użytkownika przez proces inicjacji nowego środowiska dla oprogramowania Microsoft Dynamics 365 for Talent."
 author: rschloma
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 343e372ad9e29372649e975a5bee16e8913b66c8
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 2fc4119f3b33aa583274f4d823e296752cdde41d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="provision-microsoft-dynamics-365-for-talent"></a>Inicjowanie oprogramowania Microsoft Dynamics 365 for Talent
+# <a name="provision-talent"></a>Inicjowanie obsługi rozwiązania Talent
 
 [!include [banner](includes/banner.md)]
 

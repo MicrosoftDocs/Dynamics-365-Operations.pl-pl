@@ -19,7 +19,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: 7e2a9297a417fb25384341dcabcafa41c50f8c84
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/22/2018
 - [Pakiet zawartości usługi Power BI Przegląd dla dyrektora finansowego](CFO-power-bi.md)
 - [Pakiet zawartości usługi Power BI Wynagrodzenia](compensation-power-bi.md)
 - [Zawartość usługi Power BI dotycząca analiz rachunku kosztów](cost-accounting-analysis-content-pack.md) 
-- [Pakiet zawartości usługi Power BI Zarządzanie kosztami](cost-management-content-pack.md)    
+- [Pakiet zawartości usługi Power BI Zarządzanie kosztami](cost-management-content-pack.md)
 - [Pakiet zawartości usługi Power BI Zarządzanie kredytami i windykacją](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Pakiet zawartości usługi Power BI Rozwój pracownika etatowego](employee-development-PBI.md) 
 - [Pakiet zawartości usługi Power BI Szczegółowe dane finansowe](financial-insights.md)
@@ -46,5 +46,5 @@ ms.lasthandoff: 05/22/2018
 - [Zawartość usługi Power BI dotycząca wyników sprzedaży i rentowności](sales-profitability-performance-content-pack.md)
 - [Pakiet zawartości usługi Power BI Płatności dla dostawców](../../financials/accounts-payable/Vendor-payments-workspace.md)
 - [Pakiet zawartości usługi Power BI Wydajność magazynu](warehouse-power-bi-content.md)
-- [Pakiet zawartości usługi Power BI Metryki pracowników](workforce-analysis-power-bi-content-pack.md)  
+- [Pakiet zawartości usługi Power BI Metryki pracowników](workforce-analysis-power-bi-content-pack.md)
 

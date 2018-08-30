@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
 ms.openlocfilehash: a64621c5310e5f68b9d6f1545bb39ce1519d71cf
 ms.contentlocale: pl-pl
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -33,16 +33,23 @@ Ten temat zawiera listę tematów Pomocy i innych zasobów dotyczących funkcji 
 
 Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 
-:::row::: :::column::: - [Rozrachunki z dostawcami](accounts-payable/accounts-payable.md) 
+:::row:::
+    :::column:::
+        - [Rozrachunki z dostawcami](accounts-payable/accounts-payable.md) 
         - [Rozrachunki z odbiorcami](accounts-receivable/accounts-receivable.md)
         - [Budżetowanie](budgeting/budgeting-overview.md) 
         - [Zarządzanie gotówką i bankami](cash-bank-management/cash-bank-management.md)
-        - [Rachunek kosztów](cost-accounting/cost-accounting-home-page.md) :::column-end::: :::column::: - [Zarządzanie wydatkami](expense-management/expense-management.md)
+        - [Rachunek kosztów](cost-accounting/cost-accounting-home-page.md)
+    :::column-end:::
+    :::column:::
+        - [Zarządzanie wydatkami](expense-management/expense-management.md)
         - [Raporty finansowe](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Środki trwałe](fixed-assets/fixed-assets.md)
         - [Księga główna](general-ledger/general-ledger.md) 
         - [Zarządzanie projektami](project-management/overview-project-management-accounting.md)
-        - [Sektor publiczny](public-sector/public-sector-functionality.md) :::column-end::: :::row-end:::
+        - [Sektor publiczny](public-sector/public-sector-functionality.md) 
+    :::column-end:::
+:::row-end:::
 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby

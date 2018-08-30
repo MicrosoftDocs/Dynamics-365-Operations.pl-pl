@@ -1,5 +1,5 @@
 ---
-title: "Projektant formuł w raportowaniu elektronicznym"
+title: "Projektant formuł w module Raportowanie elektroniczne (ER)"
 description: "W tym temacie wyjaśniono, jak używać projektanta formuł w raportowaniu elektronicznym (ER)."
 author: NickSelin
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: 8d8ab61b7aea84332120e6de9fc29a2a4c9598ca
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="formula-designer-in-electronic-reporting"></a>Projektant formuł w Raportowaniu elektronicznym
+# <a name="formula-designer-in-electronic-reporting-er"></a>Projektant formuł w module Raportowanie elektroniczne (ER)
 
 [!include [banner](../includes/banner.md)]
 
@@ -385,7 +385,7 @@ Podczas wykonywania pola <strong>Etykieta</strong> i <strong>Opis</strong> zwrac
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>Na ilustracji poniżej widać wynik uruchomienia zaprojektowanego formatu.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>Zgodnie z ustawieniami języka nadrzędnych elementów formatu PLIK i FOLDER przetłumaczone teksty etykiet i opisów są wprowadzane do danych wyjściowych formatu ER.</blockquote>
+<blockquote>[!NOTE] Zgodnie z ustawieniami języka nadrzędnych elementów formatu PLIK i FOLDER przetłumaczone teksty etykiet i opisów są wprowadzane do danych wyjściowych formatu ER.</blockquote>
 </td>
 </tr>
 <tr>
@@ -426,7 +426,7 @@ W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykiet�
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>Na ilustracji poniżej widać wynik uruchomienia zmodyfikowanego formatu.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>Limit nie obowiązuje do ostatniej pozycji oryginalnej listy, ponieważ wartość (11) jej źródła limitu (waga) przekracza zdefiniowany limit (9). W razie potrzeby należy użyć funkcji <strong>WHERE</strong> albo wyrażenia <strong>Enabled</strong> odnośnego elementu formatu, aby zignorować (pominąć) listy podrzędne podczas generowania raportu.</blockquote>
+<blockquote>[!NOTE] Limit nie obowiązuje do ostatniej pozycji oryginalnej listy, ponieważ wartość (11) jej źródła limitu (waga) przekracza zdefiniowany limit (9). W razie potrzeby należy użyć funkcji <strong>WHERE</strong> albo wyrażenia <strong>Enabled</strong> odnośnego elementu formatu, aby zignorować (pominąć) listy podrzędne podczas generowania raportu.</blockquote>
 </td>
 </tr>
 <tr>
@@ -456,8 +456,8 @@ W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykiet�
 | NUMBERVALUE (ciąg, separator dziesiętny, separator grupowania cyfr) | Konwertowanie określonego ciągu na liczbę. Wybrany separator dziesiętny rozdziela części całkowitą i ułamkową liczby dziesiętnej. Wybrany separator grupowania cyfr jest używany jako separator tysięcy. | **NUMBERVALUE("1 234,56", ",", " ")** zwraca wartość **1234.56**. |
 | VALUE (ciąg) | Konwertowanie określonego ciągu na liczbę. Przecinki i kropki (.) są traktowane jako separatory dziesiętne, a wiodący łącznik (-) jako znak minusa. Zgłaszanie wyjątku, jeśli podany ciąg zawiera inne nieliczbowe znaki. | **VALUE ("1 234,56")** generuje wyjątek. |
 | ROUND (liczba, miejsca dziesiętne) | Zwracanie podanej liczby po zaokrągleniu do określonej liczby miejsc po przecinku:<ul><li>Jeśli wartość parametru **miejsca dziesiętne** jest większa niż 0 (zero), podana liczba jest zaokrąglana do tej liczby miejsc po przecinku.</li><li>Jeśli wartość parametru **miejsca dziesiętne** wynosi **0** (zero), podana liczba jest zaokrąglana do najbliższej liczby całkowitej.</li><li>Jeśli wartość parametru **miejsca dziesiętne** jest mniejsza niż 0 (zero), podana liczba jest zaokrąglana do liczby na lewo od separatora dziesiętnego.</li></ul> | **ROUND (1200.767, 2)** zaokrągla do dwóch miejsc po przecinku i zwraca **1200.77**. **ROUND (1200.767, -3)** zaokrągla do najbliższej wielokrotności 1000 i zwraca **1000**. |
-| ROUNDDOWN (liczba, miejsca dziesiętne) | Zwracanie podanej liczby po zaokrągleniu w dół do określonej liczby miejsc po przecinku.<blockquote>[!NOTE]<br>Ta funkcja zachowuje się jak funkcja **ROUND**, ale zawsze zaokrągla podaną liczbę do dołu (w stronę zera).</blockquote> | **ROUNDDOWN (1200.767, 2)** zaokrągla w dół do dwóch miejsc po przecinku i zwraca **1200.76**. **ROUNDDOWN (1700.767, -3)** zaokrągla w dół do najbliższej wielokrotności 1000 i zwraca **1000**. |
-| ROUNDUP (liczba, miejsca dziesiętne) | Zwracanie podanej liczby po zaokrągleniu w górę do określonej liczby miejsc po przecinku.<blockquote>[!NOTE]<br>Ta funkcja zachowuje się jak funkcja **ROUND**, ale zawsze zaokrągla podaną liczbę do góry (od zera).</blockquote> | **ROUNDUP (1200.763, 2)** zaokrągla w górę do dwóch miejsc po przecinku i zwraca **1200.77**. **ROUNDUP (1200.767, -3)** zaokrągla w górę do najbliższej wielokrotności 1000 i zwraca **2000**. |
+| ROUNDDOWN (liczba, miejsca dziesiętne) | Zwracanie podanej liczby po zaokrągleniu w dół do określonej liczby miejsc po przecinku.<blockquote>[!NOTE] Ta funkcja zachowuje się jak funkcja **ROUND**, ale zawsze zaokrągla podaną liczbę do dołu (w stronę zera).</blockquote> | **ROUNDDOWN (1200.767, 2)** zaokrągla w dół do dwóch miejsc po przecinku i zwraca **1200.76**. **ROUNDDOWN (1700.767, -3)** zaokrągla w dół do najbliższej wielokrotności 1000 i zwraca **1000**. |
+| ROUNDUP (liczba, miejsca dziesiętne) | Zwracanie podanej liczby po zaokrągleniu w górę do określonej liczby miejsc po przecinku.<blockquote>[!NOTE] Ta funkcja zachowuje się jak funkcja **ROUND**, ale zawsze zaokrągla podaną liczbę do góry (od zera).</blockquote> | **ROUNDUP (1200.763, 2)** zaokrągla w górę do dwóch miejsc po przecinku i zwraca **1200.77**. **ROUNDUP (1200.767, -3)** zaokrągla w górę do najbliższej wielokrotności 1000 i zwraca **2000**. |
 
 ### <a name="data-conversion-functions"></a>Funkcje konwersji danych
 
@@ -474,8 +474,8 @@ W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykiet�
 
 | Funkcja | opis | Przykład |
 |----------|-------------|---------|
-| NULLCONTAINER (lista) | Zwracanie rekordu **null**, który ma taką samą strukturę, jak podana lista rekordów lub rekord.<blockquote>[!NOTE]<br>Ta funkcja jest przestarzała. Zamiast niej należy używać funkcji **EMPTYRECORD**.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** zwraca nowy pusty rekord, który ma taką samą strukturę, jak lista zwracana przez funkcję **SPLIT**. |
-| EMPTYRECORD (rekord) | Zwracanie rekordu **null**, który ma taką samą strukturę, jak podana lista rekordów lub rekord.<blockquote>[!NOTE]<br>Rekord **null** jest rekordem, w którym wszystkie pola mają wartość pustą. Wartość pusta to **0** (zero) w przypadku liczb, pusty ciąg w przypadku ciągów tekstowych, itd.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** zwraca nowy pusty rekord, który ma taką samą strukturę, jak lista zwracana przez funkcję **SPLIT**. |
+| NULLCONTAINER (lista) | Zwracanie rekordu **null**, który ma taką samą strukturę, jak podana lista rekordów lub rekord.<blockquote>[!NOTE] Ta funkcja jest przestarzała. Zamiast niej należy używać funkcji **EMPTYRECORD**.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** zwraca nowy pusty rekord, który ma taką samą strukturę, jak lista zwracana przez funkcję **SPLIT**. |
+| EMPTYRECORD (rekord) | Zwracanie rekordu **null**, który ma taką samą strukturę, jak podana lista rekordów lub rekord.<blockquote>[!NOTE] Rekord **null** jest rekordem, w którym wszystkie pola mają wartość pustą. Wartość pusta to **0** (zero) w przypadku liczb, pusty ciąg w przypadku ciągów tekstowych, itd.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** zwraca nowy pusty rekord, który ma taką samą strukturę, jak lista zwracana przez funkcję **SPLIT**. |
 
 ### <a name="text-functions"></a>Funkcje tekstowe
 
@@ -522,14 +522,14 @@ W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykiet�
 <td>CHAR (liczba)</td>
 <td>Zwracanie ciągu znaków, do którego odwołuje się określona liczba Unicode.</td>
 <td><strong>CHAR (255)</strong> zwraca <strong>&quot;ÿ&quot;</strong>.
-<blockquote>[!NOTE]<br>Ciąg zwrócony przez funkcję zależy od kodowania wybranego w nadrzędnym elemencie formatu PLIK. Lista obsługiwanych kodowań znajduje się w temacie <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Klasa Encoding</a>.</blockquote>
+<blockquote>[!NOTE] Ciąg zwrócony przez funkcję zależy od kodowania wybranego w nadrzędnym elemencie formatu PLIK. Lista obsługiwanych kodowań znajduje się w temacie <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Klasa Encoding</a>.</blockquote>
 </td>
 </tr>
 <tr>
 <td>CONCATENATE (ciąg 1 [, ciąg 2, …])</td>
 <td>Zwracanie wszystkich podanych ciągów tekstowych po ich połączeniu w jeden ciąg.</td>
 <td><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> zwraca <strong>&quot;abcdef&quot;</strong>.
-<blockquote>[!NOTE]<br>Wyrażenie <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> również zwraca wartość <strong>&quot;abcdef&quot;</strong>.</blockquote>
+<blockquote>[!NOTE] Wyrażenie <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> również zwraca wartość <strong>&quot;abcdef&quot;</strong>.</blockquote>
 </td>
 </tr>
 <tr>
@@ -571,7 +571,7 @@ W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykiet�
 <p>&quot;Nie ma nic do wydrukowania. Odbiorca Litware Retail jest zablokowany do 17.12.2015.&quot;</p>
 <p>Jeśli ten sam raport będzie przetwarzany dla odbiorcy <strong>Litware Retail</strong> w dniu 17 grudnia 2015 w języku <strong>DE</strong> i kulturze <strong>DE</strong>, formuła zwraca następujący tekst:</p>
 <p>&quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
-<blockquote>[!NOTE]<br>W formułach raportowania elektronicznego dla etykiet jest stosowana następująca składnia:
+<blockquote>[!NOTE] W formułach raportowania elektronicznego dla etykiet jest stosowana następująca składnia:
 <ul>
 <li><strong>Etykiety zasobów programu Finance and Operations:</strong> <strong>@&quot;X&quot;</strong>, gdzie X oznacza identyfikator etykiety w drzewie obiektów aplikacji (AOT)</li>
 <li><strong>Etykiety, które znajdują się w konfiguracjach ER:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, gdzie X oznacza identyfikator etykiety w konfiguracji raportowania elektronicznego</li>
@@ -587,7 +587,7 @@ W tym przypadku można użyć następującego wyrażenia, aby otrzymać etykiet�
 <tr>
 <td>NUMERALSTOTEXT (liczba, język, waluta, flaga nazwy waluty wydruku, miejsca dziesiętne)</td>
 <td>Zwracanie podanej liczby po jej przeliterowaniu (przekonwertowaniu na ciągi tekstowe) w wybranym języku. Kod języka jest opcjonalny. Jeśli jest zdefiniowany jako pusty ciąg znaków, będzie używany kod języka aktualnie uruchomionego kontekstu. (Kod języka uruchomionego kontekstu jest określany dla generowanego folderu lub pliku). Również kod waluty jest opcjonalny. Gdy jest zdefiniowany jako pusty ciąg znaków, jest używana waluta firmy.
-<blockquote>[!NOTE]<br>Parametry <strong>flaga nazwy waluty wydruku</strong> i <strong>liczba miejsc dziesiętnych</strong> są analizowane tylko dla następujących kodów języków: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> i <strong>RU</strong>. Ponadto parametr <strong>flaga nazwy waluty wydruku</strong> w programie Finance and Operations jest analizowany tylko dla firm, których kontekst kraju lub regionu obsługuje deklinację nazw walut.</blockquote>
+<blockquote>[!NOTE] Parametry <strong>flaga nazwy waluty wydruku</strong> i <strong>liczba miejsc dziesiętnych</strong> są analizowane tylko dla następujących kodów języków: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> i <strong>RU</strong>. Ponadto parametr <strong>flaga nazwy waluty wydruku</strong> w programie Finance and Operations jest analizowany tylko dla firm, których kontekst kraju lub regionu obsługuje deklinację nazw walut.</blockquote>
 </td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> zwraca <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> zwraca <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> zwraca <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
@@ -656,10 +656,10 @@ Po zdefiniowaniu tych źródeł danych, można użyć wyrażenia takiego jak <st
 | Funkcja | opis | Przykład |
 |----------|-------------|---------|
 | CONVERTCURRENCY (kwota, waluta źródłowa, waluta docelowa, data, firma) | Konwertowanie określonej kwoty pieniężnej ze wskazanej waluty źródłowej na określoną walutę docelową przy użyciu ustawień określonej firmy programu Finance and Operations na określony dzień. | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** zwraca równoważność jednego euro w dolarach amerykańskich w dniu bieżącej sesji na podstawie ustawień dla firmy DEMF. |
-| ROUNDAMOUNT (liczba, miejsca dziesiętne, reguła zaokrąglania) | Zaokrąglanie podanej kwoty do określonej liczby miejsc dziesiętnych zgodnie z ustawioną regułą zaokrąglania.<blockquote>[!NOTE]<br>Reguła zaokrąglania musi być podana jako wartość elementu stałotekstowego **RoundOffType** programu Finance and Operations.</blockquote> | Jeśli w parametrze **model.RoundOff** ustawiono wartość **W dół**, wyrażenie **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** zwraca wartość **1000.78**. Jeśli w parametrze **model.RoundOff** ustawiono wartość **Normalnie** lub **Zaokrąglenie w górę**, wyrażenie **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** zwraca wartość **1000.79**. |
+| ROUNDAMOUNT (liczba, miejsca dziesiętne, reguła zaokrąglania) | Zaokrąglanie podanej kwoty do określonej liczby miejsc dziesiętnych zgodnie z ustawioną regułą zaokrąglania.<blockquote>[!NOTE] Reguła zaokrąglania musi być podana jako wartość elementu stałotekstowego **RoundOffType** programu Finance and Operations.</blockquote> | Jeśli w parametrze **model.RoundOff** ustawiono wartość **W dół**, wyrażenie **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** zwraca wartość **1000.78**. Jeśli w parametrze **model.RoundOff** ustawiono wartość **Normalnie** lub **Zaokrąglenie w górę**, wyrażenie **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** zwraca wartość **1000.79**. |
 | CURCredRef (cyfry) | Zwracanie odwołania do wierzyciela w oparciu o cyfry określonego numeru faktury. | **CURCredRef ("VEND-200002")** zwraca **"2200002"**. |
 | MOD\_97 (cyfry) | Zwracanie odwołania do wierzyciela jako wyrażenia MOD97 w oparciu o cyfry określonego numeru faktury. | **MOD\_97 ("VEND-200002")** zwraca **"20000285"**. |
-| ISOCredRef (cyfry) | Zwracanie odwołania do wierzyciela w formacie Międzynarodowej Organizacji Normalizacyjnej (ISO) w oparciu o cyfry i znaki alfabetyczne określonego numeru faktury.<blockquote>[!NOTE]<br>Aby wyeliminować symbole z alfabetów niezgodnych z systemem ISO, parametr wejściowy musi zostać przetłumaczony przed przekazaniem go do tej funkcji.</blockquote> | **ISOCredRef ("VEND-200002")** zwraca **"RF23VEND-200002"**. |
+| ISOCredRef (cyfry) | Zwracanie odwołania do wierzyciela w formacie Międzynarodowej Organizacji Normalizacyjnej (ISO) w oparciu o cyfry i znaki alfabetyczne określonego numeru faktury.<blockquote>[!NOTE] Aby wyeliminować symbole z alfabetów niezgodnych z systemem ISO, parametr wejściowy musi zostać przetłumaczony przed przekazaniem go do tej funkcji.</blockquote> | **ISOCredRef ("VEND-200002")** zwraca **"RF23VEND-200002"**. |
 | CN\_GBT\_AdditionalDimensionID (ciąg, liczba) | Pobieranie określonego identyfikatora dodatkowego wymiaru finansowego. W parametrze **ciąg** wymiary są przedstawiane jako identyfikatory rozdzielone przecinkami. Parametr **numer** określa numer kolejny żądanego wymiaru w ciągu. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** zwraca **"CC"**. |
 | GetCurrentCompany () | Zwracanie tekstowej reprezentacji kodu firmy, do której użytkownik jest aktualnie zalogowany. | **GETCURRENTCOMPANY ()** zwraca **USMF** dla użytkownika zalogowanego do firmy **Contoso Entertainment System USA** w programie Finance and Operations. |
 | CH\_BANK\_MOD\_10 (cyfry) | Zwracanie odwołania do wierzyciela jako wyrażenia MOD10 w oparciu o cyfry określonego numeru faktury. | **CH\_BANK\_MOD\_10 ("VEND-200002")** zwraca **3**. |

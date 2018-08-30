@@ -1,5 +1,5 @@
 ---
-title: "Używanie dodatku programu Excel"
+title: "Otwieranie danych jednostki w programie Excel i aktualizowanie ich przy użyciu dodatku programu Excel"
 description: "W tym temacie wyjaśniono, jak otwierać dane jednostek w programie Microsoft Excel, a następnie wyświetlać, aktualizować i edytować te dane przy użyciu dodatku pakietu Office dla usługi Microsoft Dynamics dla programu Excel."
 author: ChrisGarty
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e0e3e86820e0857b320d832c3bf3c94757667919
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 01474a82e860c6f51b316cb683cd44fb9bf2a6bc
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="use-the-excel-add-in"></a>Używanie dodatku programu Excel
+# <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Otwieranie danych jednostki w programie Excel i aktualizowanie ich przy użyciu dodatku programu Excel
 
 [!include [banner](../includes/banner.md)]
 

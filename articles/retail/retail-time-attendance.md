@@ -1,5 +1,5 @@
 ---
-title: "Czas i frekwencja w sieci sprzedaży"
+title: "Zarządzanie czasem i frekwencją w module Retail"
 description: "W tym temacie opisano scenariusze obsługiwane w zakresie zarządzania czasem i frekwencją w module Microsoft Dynamics 365 for Retail."
 author: aamirallaqaband
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d5672579c1e2d51e4b6494a1e86e3606c09a93a2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 21c29c3c37dfacdd98f5c3ec7698f07623da2285
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="retail-time-and-attendance"></a>Czas i frekwencja w handlu detalicznym
+# <a name="time-and-attendance-management-in-retail"></a>Zarządzanie czasem i frekwencją w module Retail
 
 [!include [banner](includes/banner.md)]
 
@@ -45,7 +45,7 @@ W tym temacie opisano scenariusze obsługiwane w zakresie zarządzania czasem i 
 
 -   Zastosuj profil za pomocą planowania pracy. Aby uzyskać więcej informacji, zobacz <https://technet.microsoft.com/en-us/library/aa551234.aspx>.
 
-Aby uzyskać więcej informacji o etapach konfiguracji, zobacz <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
+Aby uzyskać informacje o krokach konfiguracji, zobacz <https://technet.microsoft.com/en-us/library/aa496971.aspx>.
 
 ### <a name="retail-specific-configuration"></a>Konfiguracja właściwa dla sieci sprzedaży
 
@@ -135,7 +135,7 @@ Użytkownik programu Dynamics 365 for Retail wykonuje procedurę obliczania, zat
 -   Grupowe wyrejestrowania
 -   Rejestrowanie nieobecności
 
-Aby uzyskać więcej informacji na temat przetwarzania rejestracji czasu i nieobecności, zobacz <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
+Aby uzyskać więcej informacji o przetwarzaniu rejestracji czasu i frekwencji, zobacz <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
 
 
 

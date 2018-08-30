@@ -1,5 +1,5 @@
 ---
-title: "Urządzenia peryferyjne punktu sprzedaży"
+title: "Urządzenia peryferyjne dla punktów sprzedaży (POS) przetestowane przez firmę Microsoft"
 description: "Aplikacje Retail Modern Point of Sale (POS) i Cloud POS mogą wykorzystywać różnorodne urządzenia peryferyjne dla punktów sprzedaży. Obsługa wielu interfejsów i opcji wdrażania pozwala realizować różne scenariusze biznesowe wymagane przez sprzedawców detalicznych."
 author: jblucher
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4fbfb176f2504be8aaf67992d094da1daeefeb76
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: e4191f6765faf9de5cbf8acf16dbd54d6b478252
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="pos-hardware-peripherals"></a>Urządzenia peryferyjne punktu sprzedaży
+# <a name="microsoft-tested-point-of-sale-pos-hardware-peripherals"></a>Urządzenia peryferyjne dla punktów sprzedaży (POS) przetestowane przez firmę Microsoft
 
 [!include [banner](includes/banner.md)]
 

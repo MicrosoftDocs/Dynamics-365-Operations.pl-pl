@@ -1,9 +1,9 @@
 ---
-title: "Przestarzałe funkcje"
+title: "Usunięte lub wycofane funkcje"
 description: "W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia."
 author: sericks007
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 08/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 65101b5f0030a25973a584b68ec9697506868294
-ms.openlocfilehash: 6b954d1eedb7c7af1c9a5eda92aa1dd6132a19fa
+ms.sourcegitcommit: 8a3c4ed8f3ed79ab0cb3e59076734877d270bd68
+ms.openlocfilehash: cd620dcdeb1cd5fd3a89be9ae31c4d35e29a03d0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/30/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -38,6 +38,9 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 > [!Note]
 > Począwszy od programu Dynamics 365 for Finance and Operations w wersji z lipca 2017 z aktualizacją platformy 8 dla każdej usuniętej lub przestarzałej funkcji podano typy wdrożeń. Wszystkie poprzednie wersje podane w tym temacie obsługiwały tylko wdrożenie w chmurze.
+
+> [!Note]
+> Szczegółowe informacje o obiektów w rozwiązaniu Finance and Operations można znaleźć w [raportach z wykazami parametrów technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach programu Finance and Operations.
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Glosariusz terminów używanych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations 8.0 z aktualizacją platformy 15
 Żadne funkcje nie zostały usunięte ani wycofane w tej wersji. Aktualizacja platformy 15 jest zbiorcza i zawiera nowe oraz zmienione funkcje z aktualizacji platformy 13, 14 i 15.

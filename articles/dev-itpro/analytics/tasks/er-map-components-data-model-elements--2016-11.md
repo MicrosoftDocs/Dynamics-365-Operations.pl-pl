@@ -1,5 +1,5 @@
 --- 
-title: "Mapowanie składników utworzonego formatu na elementy modelu danych na potrzeby raportowania elektronicznego (ER)"
+title: "Mapowanie składników formatów na elementy modelu danych"
 description: "W poniższej procedurze pokazano, jak użytkownik posiadający rolę Administrator systemu lub Deweloper raportowania elektronicznego może mapować elementy modelu danych na składniki utworzonej konfiguracji raportowania elektronicznego (ER), która definiuje format dokumentu elektronicznego dla domeny biznesowej płatności."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1c81a1268a56164e0d4465359a0f9ec425ee7c31
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: e065cfbfc645bb7ac48134fe43d87bec013e8c81
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="map-components-of-the-created-format-to-data-model-elements-for-electronic-reporting-er"></a>Mapowanie składników utworzonego formatu na elementy modelu danych na potrzeby raportowania elektronicznego (ER)
+# <a name="map-the-components-of-formats-to-data-model-elements"></a>Mapowanie składników formatów na elementy modelu danych
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

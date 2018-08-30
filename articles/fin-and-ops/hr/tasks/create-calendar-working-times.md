@@ -1,5 +1,5 @@
 --- 
-title: Tworzenie kalendarza i generowanie godzin pracy
+title: Tworzenie kalendarzy i generowanie godzin pracy
 description: "Kalendarze opisują zdolności produkcyjne i czasy pracy zasobów operacyjnych."
 author: kherr75
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a8dcef8d8ba6f6d41a997b5b0623cb9577ce00d3
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 9e0b574d83272acf9ccad49e29e80827810b783a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="create-a-calendar-and-generate-working-times"></a>Tworzenie kalendarza i generowanie godzin pracy
+# <a name="create-calendars-and-generate-working-times"></a>Tworzenie kalendarzy i generowanie godzin pracy
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

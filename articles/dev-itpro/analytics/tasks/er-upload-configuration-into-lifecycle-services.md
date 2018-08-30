@@ -1,5 +1,5 @@
 --- 
-title: "Przekazywanie konfiguracji do usługi Lifecycle Services na potrzeby raportowania elektronicznego (ER)"
+title: "Przekazywanie konfiguracji raportowania elektronicznego do usługi Lifecycle Services"
 description: "W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć nową konfiguracji raportowania elektronicznego (ER) i przekazać ją do usługi Microsoft Lifecycle Services (LCS)."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3d9c2192bac8477e9c9376aab3e3b561da777569
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6aa6bf7e08285d18210741ba6618878955009280
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="upload-a-configuration-into-lifecycle-services-for-electronic-reporting-er"></a>Przekazywanie konfiguracji do usługi Lifecycle Services na potrzeby raportowania elektronicznego (ER)
+# <a name="upload-electronic-reporting-configurations-into-lifecycle-services"></a>Przekazywanie konfiguracji raportowania elektronicznego do usługi Lifecycle Services
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -92,6 +92,6 @@ W tym przykładzie utworzysz konfigurację dla przykładowej firmy Litware, Inc.
 10. Kliknij przycisk Otwórz.
     * Zaznacz repozytorium usługi LCS i je otwórz.  
     * Należy zwrócić uwagę, że wybrana konfiguracja jest wyświetlana jako element zawartości wybranego projektu usługi LCS.  
-    * Otwórz usługę LCS ze strony https://lcs.dynamics.com Otwórz projekt, który został wcześniej użyty do zarejestrowania repozytorium, otwórz bibliotekę elementów zawartości tego projektu, a następnie rozwiń zawartość elementu zawartości typu „Konfiguracja GER” — przekazana konfiguracja raportowania elektronicznego będzie dostępna. Należy zauważyć, że przekazaną konfigurację usługi LCS można zaimportować do innego wystąpienia programu Microsoft Dynamics 365 for Finance and Operations, jeśli dostawcy mają dostęp do tego projektu usługi LCS.  
+    * Otwórz usługę LCS ze strony https://lcs.dynamics.com. Otwórz projekt, który został wcześniej użyty do zarejestrowania repozytorium, otwórz bibliotekę elementów zawartości tego projektu, a następnie rozwiń zawartość elementu zawartości typu „Konfiguracja GER” — przekazana konfiguracja raportowania elektronicznego będzie dostępna. Należy zauważyć, że przekazaną konfigurację usługi LCS można zaimportować do innego wystąpienia programu Microsoft Dynamics 365 for Finance and Operations, jeśli dostawcy mają dostęp do tego projektu usługi LCS.  
 
 
