@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 056bc38fc69422b17b1b7720ce37089b27e8aa2e
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: ac9e836b0baa24c40554844ea4f3288b80e0c654
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -55,11 +55,13 @@ ms.lasthandoff: 08/07/2018
 
 ## <a name="generate-the-recurring-invoices"></a><span data-ttu-id="5b902-125">Generowane faktur cyklicznych</span><span class="sxs-lookup"><span data-stu-id="5b902-125">Generate the recurring invoices</span></span>
 <span data-ttu-id="5b902-126">Na stronie **Faktury cykliczne** jest zadanie do przetwarzania szablonów faktur cyklicznych.</span><span class="sxs-lookup"><span data-stu-id="5b902-126">On the **Recurring invoices** page, there is a task that processes recurring invoice templates.</span></span> <span data-ttu-id="5b902-127">Określasz datę faktury i szablon do generowania faktur.</span><span class="sxs-lookup"><span data-stu-id="5b902-127">You specify the invoice date and the template to generate the invoices from.</span></span> <span data-ttu-id="5b902-128">Faktury będą generowane i przypisywane do jednego cyklicznego identyfikatora dla każdej przetwarzanej grupy faktur.</span><span class="sxs-lookup"><span data-stu-id="5b902-128">Invoices will be generated and assigned a single recurrence ID number for each group of invoices that is processed.</span></span>
-<span data-ttu-id="5b902-129">Księgowanie cyklicznych faktur niezależnych</span><span class="sxs-lookup"><span data-stu-id="5b902-129">Post recurring free text invoices</span></span>
+
+<a name="post-recurring-free-text-invoices"></a><span data-ttu-id="5b902-129">Księgowanie cyklicznych faktur niezależnych</span><span class="sxs-lookup"><span data-stu-id="5b902-129">Post recurring free text invoices</span></span>
 ---------------------------------
 
 <span data-ttu-id="5b902-130">Po wygenerowaniu faktur cyklicznych w zadaniu księgowania w zadaniu pojawiają się identyfikatory cyklu faktur na stronie **Faktury cykliczne**.</span><span class="sxs-lookup"><span data-stu-id="5b902-130">After recurring invoices are generated, the invoice recurrence IDs appear in a posting task on the **Recurring invoices** page.</span></span> <span data-ttu-id="5b902-131">Można wyświetlić wszystkie faktury dla identyfikatora cyklu, klikając łącze.</span><span class="sxs-lookup"><span data-stu-id="5b902-131">You can view all of the invoices for a recurrence ID by clicking the link.</span></span> <span data-ttu-id="5b902-132">Podczas przeglądu faktur dla identyfikatora cyklu można usunąć indywidualne faktury.</span><span class="sxs-lookup"><span data-stu-id="5b902-132">During your review of the invoices for the recurrence ID, you can delete individual invoices.</span></span> <span data-ttu-id="5b902-133">Ustawienia cyklu odbiorcy zostaną zresetowane dla tego szablonu, tak aby można było go wygenerować ponownie później.</span><span class="sxs-lookup"><span data-stu-id="5b902-133">The customer's recurrence settings will be reset for that template, so that it can be regenerated later.</span></span> <span data-ttu-id="5b902-134">Można księgować jedną, wiele lub wszystkie faktury dla identyfikatora cyklu.</span><span class="sxs-lookup"><span data-stu-id="5b902-134">You can post one, many, or all of the invoices for a recurrence ID.</span></span> <span data-ttu-id="5b902-135">Jeśli przepływy pracy są włączone, należy kliknąć opcję **Prześlij** przed zaksięgowaniem faktury.</span><span class="sxs-lookup"><span data-stu-id="5b902-135">If workflows are enabled, you must click **Submit** before you can post the invoices.</span></span>
-<span data-ttu-id="5b902-136">Drukowanie cyklicznych faktur niezależnych</span><span class="sxs-lookup"><span data-stu-id="5b902-136">Print recurring free text invoices</span></span>
+
+<a name="print-recurring-free-text-invoices"></a><span data-ttu-id="5b902-136">Drukowanie cyklicznych faktur niezależnych</span><span class="sxs-lookup"><span data-stu-id="5b902-136">Print recurring free text invoices</span></span>
 ----------------------------------
 
 <span data-ttu-id="5b902-137">Po zaksięgowaniu faktur cyklicznych można je drukować ze strony listy faktur niezależnych.</span><span class="sxs-lookup"><span data-stu-id="5b902-137">After recurring invoices are posted, you can print the invoices from the free text invoice list page.</span></span> <span data-ttu-id="5b902-138">Można drukować faktury, które są wybrane, lub można wybrać zakres faktur do wydrukowania.</span><span class="sxs-lookup"><span data-stu-id="5b902-138">You can print the invoices that are selected, or you can select a range of invoices to print.</span></span>
