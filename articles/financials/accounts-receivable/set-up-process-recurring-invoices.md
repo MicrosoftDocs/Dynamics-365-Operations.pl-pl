@@ -55,11 +55,13 @@ Odbiorca może mieć wiele szablonów z różnymi częstotliwościami.
 
 ## <a name="generate-the-recurring-invoices"></a>Generowane faktur cyklicznych
 Na stronie **Faktury cykliczne** jest zadanie do przetwarzania szablonów faktur cyklicznych. Określasz datę faktury i szablon do generowania faktur. Faktury będą generowane i przypisywane do jednego cyklicznego identyfikatora dla każdej przetwarzanej grupy faktur.
-Księgowanie cyklicznych faktur niezależnych
+
+<a name="post-recurring-free-text-invoices"></a>Księgowanie cyklicznych faktur niezależnych
 ---------------------------------
 
 Po wygenerowaniu faktur cyklicznych w zadaniu księgowania w zadaniu pojawiają się identyfikatory cyklu faktur na stronie **Faktury cykliczne**. Można wyświetlić wszystkie faktury dla identyfikatora cyklu, klikając łącze. Podczas przeglądu faktur dla identyfikatora cyklu można usunąć indywidualne faktury. Ustawienia cyklu odbiorcy zostaną zresetowane dla tego szablonu, tak aby można było go wygenerować ponownie później. Można księgować jedną, wiele lub wszystkie faktury dla identyfikatora cyklu. Jeśli przepływy pracy są włączone, należy kliknąć opcję **Prześlij** przed zaksięgowaniem faktury.
-Drukowanie cyklicznych faktur niezależnych
+
+<a name="print-recurring-free-text-invoices"></a>Drukowanie cyklicznych faktur niezależnych
 ----------------------------------
 
 Po zaksięgowaniu faktur cyklicznych można je drukować ze strony listy faktur niezależnych. Można drukować faktury, które są wybrane, lub można wybrać zakres faktur do wydrukowania.
