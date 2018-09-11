@@ -1,26 +1,27 @@
----
+--- 
 title: "Zmiana własności zapasów konsygnacyjnych w oparciu o zapotrzebowanie produkcyjne"
 description: "Ta procedura pokazuje, jak zmienić właściciela zapasów konsygnacyjnych z dostawcy na firmę, gdy istnieje zapotrzebowanie na zapasy w produkcji."
 author: perlynne
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalOwnershipChange, InventJournalCreate
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: a665387244c571907afab24a54bc88580eca093e
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 5dd00e6f53d13305949d225e73223ab54947c804
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a><span data-ttu-id="ed73f-103">Zmiana własności zapasów konsygnacyjnych w oparciu o zapotrzebowanie produkcyjne</span><span class="sxs-lookup"><span data-stu-id="ed73f-103">Change the ownership of consignment inventory based on production demand</span></span>
@@ -51,4 +52,5 @@ ms.lasthandoff: 08/07/2018
     * <span data-ttu-id="ed73f-131">Podczas księgowania arkusza zapasy będące własnością dostawcy są zwalniane przy użyciu odwołania „Zmiana własności”.</span><span class="sxs-lookup"><span data-stu-id="ed73f-131">When the journal is posted, the vendor-owned inventory is released by using an "Ownership change" reference.</span></span> <span data-ttu-id="ed73f-132">Zapasy są następnie przyjmowane jako dostępne przy użyciu transakcji magazynowej, która jest aktualizowana za pomocą przyjęcia produktów z zamówienia zakupu.</span><span class="sxs-lookup"><span data-stu-id="ed73f-132">The inventory is then received as on-hand by using an inventory transaction that is updated with a purchase order product receipt.</span></span> <span data-ttu-id="ed73f-133">Należy zauważyć, że są tworzone tylko transakcje związane z zaksięgowanym arkuszem.</span><span class="sxs-lookup"><span data-stu-id="ed73f-133">Note that only transactions that are related to the posted journal are created.</span></span> <span data-ttu-id="ed73f-134">Nie są tworzone transakcje dla oczekiwanych zapasów.</span><span class="sxs-lookup"><span data-stu-id="ed73f-134">No expected inventory transactions are created.</span></span>  
 2. <span data-ttu-id="ed73f-135">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="ed73f-135">Click OK.</span></span>
 3. <span data-ttu-id="ed73f-136">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="ed73f-136">Close the page.</span></span>
+
 

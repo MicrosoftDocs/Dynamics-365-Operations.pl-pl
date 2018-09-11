@@ -3,23 +3,24 @@ title: "Generowanie i przetwarzanie rabatów dla odbiorców"
 description: "Ta procedura przedstawia sposób przetwarzania rabatów dla odbiorców na etapach od wygenerowania wniosku do przekazania ich jako naliczenia do modułu Rozrachunki z odbiorcami."
 author: omulvad
 manager: AnnBe
-ms.date: 02/17/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5c2235fd8a1d495f0321a84fd63b98f699da34de
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: d22d4527ee08c2b5251077cfde352b56b9e0e19f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="generate-and-process-customer-rebates"></a><span data-ttu-id="80c18-103">Generowanie i przetwarzanie rabatów dla odbiorców</span><span class="sxs-lookup"><span data-stu-id="80c18-103">Generate and process customer rebates</span></span>

@@ -3,23 +3,24 @@ title: "Zmiana konwencji amortyzacji dla wielu środków trwałych"
 description: "To zadanie aktualizuje konwencję amortyzacji dla wybranej grupy środków trwałych."
 author: saraschi2
 manager: AnnBe
-ms.date: 11/10/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: SysQueryForm, SrsReportViewerForm
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 030245c488a18d05feb3c0d92dd65667a9030e69
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 6804a8a6b94149efb001c4a62f09b473ede8367b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="change-depreciation-conventions-for-multiple-fixed-assets"></a><span data-ttu-id="196e3-103">Zmiana konwencji amortyzacji dla wielu środków trwałych</span><span class="sxs-lookup"><span data-stu-id="196e3-103">Change depreciation conventions for multiple fixed assets</span></span>

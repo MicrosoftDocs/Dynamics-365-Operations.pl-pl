@@ -1,25 +1,26 @@
 --- 
 title: "Konfigurowanie grup podatków i grup podatków dla towarów"
 description: "W tym nagraniu zadania przejdziesz przez proces konfigurowania grup podatków i podatków dla towarów."
-author: ShylaThompson
+author: twheeloc
 manager: AnnBe
-ms.date: 11/10/2015
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: TaxGroup,  TaxItemGroup
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 4488f271d55b849641dfd84a5a9c0691efb5dbad
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 70805fd7def60f85a96c0957f8a35abd6b56588c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><span data-ttu-id="02232-103">Konfigurowanie grup podatków i grup podatków dla towarów</span><span class="sxs-lookup"><span data-stu-id="02232-103">Set up sales tax groups and item sales tax groups</span></span>

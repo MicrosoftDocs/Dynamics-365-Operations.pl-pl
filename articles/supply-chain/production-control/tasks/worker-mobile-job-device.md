@@ -3,24 +3,25 @@ title: "Konfigurowanie pracownika za pomocą urządzenia przenośnego zadania"
 description: "W tej procedurze pokazano, jak przypisać poprawne role do konta użytkownika pracownika, a następnie włączyć pracownikowi możliwość rejestrowania się na produkcji."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: SysUserManagement, HcmWorker, JmgRegistrationSetupTouch, JmgRegistrationSetupAssignUsers
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 3582561dbcf44a7260c0fc1aa4f11b3e5caffc1d
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: e3f839ba377a0c28aada2c2f56c8f45480d21f80
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="configure-a-worker-using-the-mobile-job-device"></a><span data-ttu-id="98bdd-103">Konfigurowanie pracownika za pomocą urządzenia przenośnego zadania</span><span class="sxs-lookup"><span data-stu-id="98bdd-103">Configure a worker using the mobile job device</span></span>
@@ -68,4 +69,5 @@ ms.lasthandoff: 08/07/2018
 5. <span data-ttu-id="98bdd-140">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="98bdd-140">Click Edit.</span></span>
 6. <span data-ttu-id="98bdd-141">W polu Jednostka produkcyjna można ustawić domyślny filtr dla pracownika.</span><span class="sxs-lookup"><span data-stu-id="98bdd-141">In the Production unit field, you can set the default filter for the worker.</span></span> <span data-ttu-id="98bdd-142">Daje to pewność, że gdy pracownik loguje się do urządzenia, wyświetlane są tylko zadania produkcyjne dla wybranej jednostki produkcyjnej.</span><span class="sxs-lookup"><span data-stu-id="98bdd-142">This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device.</span></span>
 7. <span data-ttu-id="98bdd-143">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="98bdd-143">Close the page.</span></span>
+
 

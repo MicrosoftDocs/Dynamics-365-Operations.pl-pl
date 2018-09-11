@@ -1,25 +1,26 @@
----
+--- 
 title: Wydawanie zlecenia produkcyjnego
 description: "W tej procedurze pokazano sposób zwalniania zlecenia produkcyjnego."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ProdTableListPage, ProdParmRelease, SrsReportViewerForm
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 8c28631adc7a7756b5b9f9a0cd0c43ebe1ce4f48
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 8086098d9ccccfc64c17cbabf709e389f5ac1907
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="release-a-production-order"></a><span data-ttu-id="00f69-103">Wydawanie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="00f69-103">Release a production order</span></span>
@@ -39,4 +40,5 @@ ms.lasthandoff: 08/07/2018
 5. <span data-ttu-id="00f69-123">Zaznacz pole wyboru Drukowanie karty marszruty.</span><span class="sxs-lookup"><span data-stu-id="00f69-123">Click the Print route card checkbox.</span></span>
 6. <span data-ttu-id="00f69-124">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="00f69-124">Click OK.</span></span>
 7. <span data-ttu-id="00f69-125">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="00f69-125">Close the page.</span></span>
+
 

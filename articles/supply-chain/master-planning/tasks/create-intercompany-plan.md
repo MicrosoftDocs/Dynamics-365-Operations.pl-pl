@@ -3,23 +3,24 @@ title: "Tworzenie planu międzyfirmowego"
 description: "Ta procedura pokazuje, jak utworzyć plan międzyfirmowy."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ReqIntercompanyPlanningGroupSetup,  ReqCreatePlanWorkspace
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 772e613297dea2eff6586e870139582ae44e2eb3
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 52042f345b901db8f4cd3afcec69607e11d8a1ce
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-an-intercompany-plan"></a><span data-ttu-id="28f84-103">Tworzenie planu międzyfirmowego</span><span class="sxs-lookup"><span data-stu-id="28f84-103">Create an intercompany plan</span></span>

@@ -3,24 +3,25 @@ title: "Tworzenie zamówienia zakupu w ramach projektu"
 description: "W tej procedurze pokazano sposób tworzenia zamówienia zakupu do projektu."
 author: mkirknel
 manager: AnnBe
-ms.date: 02/13/2017
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ProjProjectsListPage, ProjTable, PurchCreateOrder, PurchTable, InventItemIdLookupPurchase
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: bc97dfeeae06f8da8ae146c58ed2034882f05f1e
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 994da71a375ff7e724770362d8d9c3bfabb9b82d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-project-purchase-order"></a><span data-ttu-id="bab59-103">Tworzenie zamówienia zakupu w ramach projektu</span><span class="sxs-lookup"><span data-stu-id="bab59-103">Create project purchase order</span></span>

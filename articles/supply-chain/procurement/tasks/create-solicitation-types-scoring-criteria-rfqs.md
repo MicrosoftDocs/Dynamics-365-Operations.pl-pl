@@ -3,23 +3,24 @@ title: "Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO"
 description: "W tym przewodniku pokazano, jak utworzyć typ zdobywania zamówień i skojarzyć go z metodą punktowania."
 author: mkirknel
 manager: AnnBe
-ms.date: 08/23/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 94bede40e8830f8d51dde5e34a03a9ad0c0144eb
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 5d2b0d1e998149a5045c655d74591c56bff81246
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a><span data-ttu-id="d9a9b-103">Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO</span><span class="sxs-lookup"><span data-stu-id="d9a9b-103">Create solicitation types and scoring criteria for RFQs</span></span>
@@ -42,6 +43,7 @@ ms.lasthandoff: 08/07/2018
 1. <span data-ttu-id="d9a9b-118">Wybierz kolejno opcje Zaopatrzenie i sourcing > Zapytania ofertowe > Wszystkie zapytania ofertowe.</span><span class="sxs-lookup"><span data-stu-id="d9a9b-118">Go to Procurement and sourcing > Requests for quotations > All requests for quotations.</span></span>
 2. <span data-ttu-id="d9a9b-119">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="d9a9b-119">Click New.</span></span>
 3. <span data-ttu-id="d9a9b-120">W polu Typ zdobywania zamówień wybierz nowo utworzony typ zdobywania zamówień.</span><span class="sxs-lookup"><span data-stu-id="d9a9b-120">In the Solicitation type field, select the solicitation type that you have just created.</span></span> 
+    *   
 4. <span data-ttu-id="d9a9b-121">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="d9a9b-121">Click OK.</span></span>
 5. <span data-ttu-id="d9a9b-122">Kliknij opcję Kryteria punktowania.</span><span class="sxs-lookup"><span data-stu-id="d9a9b-122">Click Scoring criteria.</span></span>
     * <span data-ttu-id="d9a9b-123">Wyświetlane kryteria punktowania pochodzą z metody punktowania skojarzonej z typem zdobywania zamówień.</span><span class="sxs-lookup"><span data-stu-id="d9a9b-123">The scoring criteria that are shown are the ones from the scoring method that you associated with the solicitation type.</span></span> <span data-ttu-id="d9a9b-124">Na tej stronie można dodawać i usuwać kryteria.</span><span class="sxs-lookup"><span data-stu-id="d9a9b-124">You can choose to add or delete criteria on this page.</span></span> <span data-ttu-id="d9a9b-125">Istnieje również możliwość dodawania nowych kryteriów przez ich kopiowanie z innych metod punktowania.</span><span class="sxs-lookup"><span data-stu-id="d9a9b-125">It's also possible to add new criteria by copying them from other scoring methods.</span></span>  

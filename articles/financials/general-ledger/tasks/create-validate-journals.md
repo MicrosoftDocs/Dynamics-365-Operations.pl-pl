@@ -3,23 +3,24 @@ title: Tworzenie i sprawdzanie arkuszy
 description: "W tym przewodniku po zadaniach zostaną utworzone i zweryfikowane arkusze i wiersze arkuszy."
 author: ryansandness
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, LedgerJournalTransDaily
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 366f92203638d4a20b7ad486510f7cc02e5f25b4
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 30234edff99fba8313d6bfb01d5eff5edb921e59
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-and-validate-journals"></a><span data-ttu-id="40503-103">Tworzenie i sprawdzanie arkuszy</span><span class="sxs-lookup"><span data-stu-id="40503-103">Create and validate journals</span></span>

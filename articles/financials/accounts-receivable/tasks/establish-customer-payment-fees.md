@@ -3,23 +3,24 @@ title: "Definiowanie opłat od płatności odbiorcy"
 description: "Utwórz opłaty od płatności dla płatności odbiorców."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustPaymFee, CustPaymModeFee, BankAccountTableLookUp
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 1b223d99c19b559dd428159fc65cd68566c2b221
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 3be8db49bab80fa8765b685d73d54a42975870c3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="establish-customer-payment-fees"></a><span data-ttu-id="70a00-103">Definiowanie opłat od płatności odbiorcy</span><span class="sxs-lookup"><span data-stu-id="70a00-103">Establish customer payment fees</span></span>

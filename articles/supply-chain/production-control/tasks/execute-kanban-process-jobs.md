@@ -3,24 +3,25 @@ title: "Wykonywanie zadań procesu w systemie Kanban"
 description: "Ta procedura skupia się na wykonywaniu zadań procesu w systemie Kanban."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: fc9a1562dcf638427e5bad0372189135605bec9e
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: d9505b74e5fbb14882356968d0f0273ef2b3feb8
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="execute-kanban-process-jobs"></a><span data-ttu-id="90a3f-103">Wykonywanie zadań procesu w systemie Kanban</span><span class="sxs-lookup"><span data-stu-id="90a3f-103">Execute kanban process jobs</span></span>

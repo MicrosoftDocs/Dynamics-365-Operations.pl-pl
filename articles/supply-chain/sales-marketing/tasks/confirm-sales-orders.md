@@ -3,23 +3,24 @@ title: "Potwierdzanie zamówień sprzedaży"
 description: "Ta procedura przedstawia sposób potwierdzenia zamówień sprzedaży."
 author: omulvad
 manager: AnnBe
-ms.date: 11/10/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, CustConfirmJournal, SysQueryForm, SysQueryFieldLookUp, SysLookup, SalesParmIdLookup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 636b23c8f87d79b0e62e5e92e79aacc33171cdfc
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: ebeb28bc46caa7f04b82db4590be2815778979e3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="confirm-sales-orders"></a><span data-ttu-id="1e37b-103">Potwierdzanie zamówień sprzedaży</span><span class="sxs-lookup"><span data-stu-id="1e37b-103">Confirm sales orders</span></span>

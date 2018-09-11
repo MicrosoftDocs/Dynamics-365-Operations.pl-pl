@@ -3,24 +3,25 @@ title: "Uaktywnianie wersji przepływu produkcji"
 description: "Zanim będzie można tworzyć zadania w systemie Kanban i przetwarzać działania dla wersji przepływu produkcji, należy aktywować wersję przepływu."
 author: cvocph
 manager: AnnBe
-ms.date: 08/23/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LeanProductionFlow
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 17786dc351fff3a2c4162f116c099356299c9fa4
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: ef91a7d4e1bd540a892cfbd6d34dcf382bf42dc5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="activate-a-production-flow-version"></a><span data-ttu-id="c79a6-103">Uaktywnianie wersji przepływu produkcji</span><span class="sxs-lookup"><span data-stu-id="c79a6-103">Activate a production flow version</span></span>

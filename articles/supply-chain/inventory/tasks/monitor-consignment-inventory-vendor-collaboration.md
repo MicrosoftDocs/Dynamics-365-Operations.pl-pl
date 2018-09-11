@@ -1,26 +1,27 @@
----
+--- 
 title: "Monitorowanie zapasów konsygnacyjnych poprzez współpracę z dostawcami"
 description: "Ta procedura przedstawia sposób wykorzystywania portalu współpracy z dostawcami do zobaczenia informacji o poziomie zapasów produktu, które umieszczono w konsygnacji u odbiorcy."
 author: mkirknel
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ConsignmentProductReceiptLines, PurchVendorPortalConfirmedOrders, DefaultDashboard, ConsignmentVendorPortalOnhand
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 8e4a620fe5f5ab3c0fae8b04d79e9912111b7ece
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: a110c7b85c6ed22622b059b657bd7b6028517335
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="monitor-consignment-inventory-using-vendor-collaboration"></a><span data-ttu-id="642ba-103">Monitorowanie zapasów konsygnacyjnych poprzez współpracę z dostawcami</span><span class="sxs-lookup"><span data-stu-id="642ba-103">Monitor consignment inventory using vendor collaboration</span></span>
@@ -41,4 +42,5 @@ ms.lasthandoff: 08/07/2018
 ## <a name="view-on-hand-inventory"></a><span data-ttu-id="642ba-118">Wyświetlianie zapasów na stanie</span><span class="sxs-lookup"><span data-stu-id="642ba-118">View on-hand inventory</span></span>
 1. <span data-ttu-id="642ba-119">Wybierz kolejno opcje Portal współpracy z dostawcami > Zapasy konsygnacyjne > Dostępne zapasy konsygnacyjne.</span><span class="sxs-lookup"><span data-stu-id="642ba-119">Go to Vendor collaboration > Consignment inventory > On-hand consignment inventory.</span></span>
     * <span data-ttu-id="642ba-120">Strona Dostępne zapasy konsygnacyjne pokazuje zapasy istniejące w magazynie odbiorcy, których jesteś właścicielem.</span><span class="sxs-lookup"><span data-stu-id="642ba-120">The On-hand consignment inventory page shows the stock that you own at the customer’s warehouse.</span></span> <span data-ttu-id="642ba-121">Można pokazać dodatkowe wymiary, takie jak oddział i magazyn, klikając kartę Wyświetl wymiary.</span><span class="sxs-lookup"><span data-stu-id="642ba-121">You can show additional dimensions, such as the site and warehouse, by clicking the Display dimensions tab.</span></span>   
+
 

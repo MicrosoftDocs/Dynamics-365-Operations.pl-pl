@@ -3,23 +3,24 @@ title: Dodawanie obrazu do produktu
 description: "Ta procedura pokazuje, jak dodać obraz/zdjęcie do produktu. Do utworzenia tego zadania użyto danych firmy demonstracyjnej USMF."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/26/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: EcoResProductDetailsExtended, EcoResProductPerCompanyImagePart, EcoResProductImage, DocumentUpload
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 91c43875515dbe7a52476156cd43852f6986533a
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 87822afd38c39bcde3506bc4126da2abfa8e5918
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="add-an-image-to-a-product"></a><span data-ttu-id="ba9ff-103">Dodawanie obrazu do produktu</span><span class="sxs-lookup"><span data-stu-id="ba9ff-103">Add an image to a product</span></span>
