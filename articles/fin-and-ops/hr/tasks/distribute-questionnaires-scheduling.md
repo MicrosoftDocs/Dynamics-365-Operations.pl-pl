@@ -3,26 +3,27 @@ title: Dystrybucja kwestionariuszy z wykorzystaniem harmonogramu
 description: "Planowanie kwestionariuszy umożliwia planowanie i dystrybucję kwestionariuszy do wielu respondentów."
 author: kherr75
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: KMKnowledgeCollectorPlanningTable, KMKnowledgeCollectorPlanningMulti, SysQueryForm, HcmPersonLookup, KMKnowledgeCollectorPlanning
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: f3876d1136bd3300d233a5b4401f3458e95817e0
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: d371873cbd16f050ca042f5c13d93781fe6fc732
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="distribute-questionnaires-by-using-scheduling"></a>Dystrybucja kwestionariuszy z wykorzystaniem harmonogramu
+# <a name="distribute-questionnaires-using-scheduling"></a>Dystrybucja kwestionariuszy z wykorzystaniem harmonogramu
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

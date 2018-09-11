@@ -3,18 +3,19 @@ title: "Konfigurowanie książek adresowych"
 description: "Użyj tej procedury oraz decyzji dokonanych w temacie Planowanie konfiguracji globalnej książki adresowej i dodatkowych książek adresowych, aby skonfigurować dodatkowe książki adresowe w swojej organizacji."
 author: kfend
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: DirAddressBook, DirAddressBookTeam
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
 ms.openlocfilehash: e633b35cdd5441f7f9d1c1465dbc468e047cdee5
