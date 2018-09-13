@@ -3,7 +3,7 @@ title: "Wyświetl historię przepływu pracy"
 description: "Te czynności umożliwiają wyświetlenie stanu dokumentu przesłanego do systemu przepływu pracy w celu przetworzenia i zatwierdzenia."
 author: jasongre
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: bd0376879206c3b751cce820037ac1d39e120b4c
+ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
+ms.openlocfilehash: a40fe377322e2d64b751f6cace3eda20736cd321
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/13/2018
 
 ---
 # <a name="view-workflow-history"></a><span data-ttu-id="c0436-103">Wyświetl historię przepływu pracy</span><span class="sxs-lookup"><span data-stu-id="c0436-103">View workflow history</span></span>
