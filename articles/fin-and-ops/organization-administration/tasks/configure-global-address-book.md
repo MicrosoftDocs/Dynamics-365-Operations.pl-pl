@@ -3,7 +3,7 @@ title: "Konfigurowanie globalnej książki adresowej"
 description: "Ta procedura służy do ustawiania domyślnych wartości i zasad zabezpieczeń dla globalnej książki adresowej."
 author: kfend
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

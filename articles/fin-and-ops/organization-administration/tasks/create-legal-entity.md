@@ -3,7 +3,7 @@ title: Tworzenie firmy
 description: "Firma to organizacja, która jest identyfikowana przez rejestrację urzędową."
 author: sericks007
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
