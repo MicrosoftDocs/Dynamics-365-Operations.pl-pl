@@ -44,11 +44,13 @@ Aby skonfigurować karty kredytowe, należy ustawić i aktywować usługę płat
 
 ## <a name="adding-a-new-credit-card"></a>Dodawanie nowej karty kredytowej
 Można tworzyć nowe rekordy kart kredytowych na stronie Odbiorcy, używając opcji Odbiorca, Ustawienia, Karta kredytowa. Można też tworzyć rekordy kart kredytowych podczas wprowadzania zamówień sprzedaży na stronie Zamówienie sprzedaży, używają opcji Zarządzaj, Odbiorca, Karta kredytowa, Rejestr.
-Dodawanie karty kredytowej dla zamówienia sprzedaży
+
+<a name="adding-a-credit-card-to-a-sales-order"></a>Dodawanie karty kredytowej dla zamówienia sprzedaży
 -------------------------------------
 
 Można dodać kartę kredytową do zamówienia sprzedaży , wybierając kartę kredytową w sekcji wyszukiwania kart kredytowych na skróconej karcie Cena i rabaty na stronie Zamówienie sprzedaży. Aby rozpocząć proces autoryzacji w okienku akcji na karcie Zarządzanie wybierz opcję Karta kredytowa i Autoryzuj.
-Autoryzacja karty kredytowej
+
+<a name="authorizing-a-credit-card"></a>Autoryzacja karty kredytowej
 -------------------------
 
 Autoryzacja karty kredytowej polega na zweryfikowaniu numeru karty i tożsamości jej posiadacza oraz potwierdzeniu dostępnego salda kredytu. Opcjonalnie weryfikowane są wartość weryfikacji karty i adres posiadacza karty. Dostępne saldo kredytu odbiorcy jest następnie zmniejszane o kwotę faktury. Usługa płatności wysyła informację, czy karta kredytowa została przyjęta, czy odrzucona. Podczas fakturowania zamówienia sprzedaży karta kredytowa jest obciążana (autoryzowana) kwotą faktury.
