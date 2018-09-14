@@ -3,7 +3,7 @@ title: "Masowe zamykanie okresów obrachunkowych"
 description: "W tej procedurze pokazano sposób zawieszania okresu lub trwałego zamykania okresu albo więcej niż jednej firmy na raz."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 847a4fd675096bc8a13cfc756e75a1878f092406
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: a2988b7ab0837cc9a3e4f1c4eaf3fe6e219fa721
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="mass-financial-period-close"></a><span data-ttu-id="167c4-103">Masowe zamykanie okresów obrachunkowych</span><span class="sxs-lookup"><span data-stu-id="167c4-103">Mass financial period close</span></span>

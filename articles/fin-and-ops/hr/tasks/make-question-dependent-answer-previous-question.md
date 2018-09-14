@@ -3,7 +3,7 @@ title: "Uzależnienie pytania od odpowiedzi na poprzednie pytanie"
 description: "Pytania warunkowe umożliwiają określenie, jakie pytanie uzupełniające zostanie wyświetlone osobie udzielającej odpowiedzi na podstawie odpowiedzi na poprzednie pytanie."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: ff5f940ea4db4c03d231fce00e275909ef7aad8c
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: deb79398f5a0ebdbdb774c106c90ca50a69c275e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="make-a-question-dependent-on-the-answer-of-the-previous-question"></a><span data-ttu-id="af281-103">Uzależnienie pytania od odpowiedzi na poprzednie pytanie</span><span class="sxs-lookup"><span data-stu-id="af281-103">Make a question dependent on the answer of the previous question</span></span>

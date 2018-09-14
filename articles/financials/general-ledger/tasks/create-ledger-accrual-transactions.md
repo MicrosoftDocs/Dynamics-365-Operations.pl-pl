@@ -3,7 +3,7 @@ title: "Tworzenie transakcji naliczeń finansowych"
 description: "Ten przewodnik po zadaniach prowadzi przez generowanie transakcji naliczeń finansowych opartych na schematach naliczania."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: f9d2d1fe36f53a70e5ae91b4c194d4a468f3ee54
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 4a65bec066bdcb01ce8acf8cfbf2d31611104921
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-ledger-accrual-transactions"></a><span data-ttu-id="55f01-103">Tworzenie transakcji naliczeń finansowych</span><span class="sxs-lookup"><span data-stu-id="55f01-103">Create ledger accrual transactions</span></span>

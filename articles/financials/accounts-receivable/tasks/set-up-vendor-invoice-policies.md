@@ -3,7 +3,7 @@ title: "Ustawianie zasad faktur od dostawców"
 description: "Zasady dotyczące faktur od dostawców są uruchamiane podczas księgowania faktur od dostawców przy użyciu strony Faktura od dostawcy oraz po otwarciu strony naruszeń zasad faktur od dostawców."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: a15d3a15a96c498cb2214db2ad2c5d2b61446480
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: b424eee7c91ef1085c98828c0d5e5cf674717a81
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-vendor-invoice-policies"></a><span data-ttu-id="8d65a-103">Ustawianie zasad faktur od dostawców</span><span class="sxs-lookup"><span data-stu-id="8d65a-103">Set up vendor invoice policies</span></span>

@@ -3,7 +3,7 @@ title: "Monitorowanie zapasów konsygnacyjnych poprzez współpracę z dostawcam
 description: "Ta procedura przedstawia sposób wykorzystywania portalu współpracy z dostawcami do zobaczenia informacji o poziomie zapasów produktu, które umieszczono w konsygnacji u odbiorcy."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: a110c7b85c6ed22622b059b657bd7b6028517335
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 8186b553e8518f3153bfd88b89121d4b0567501b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="monitor-consignment-inventory-using-vendor-collaboration"></a><span data-ttu-id="642ba-103">Monitorowanie zapasów konsygnacyjnych poprzez współpracę z dostawcami</span><span class="sxs-lookup"><span data-stu-id="642ba-103">Monitor consignment inventory using vendor collaboration</span></span>

@@ -3,7 +3,7 @@ title: "Definiowanie zasad inspekcji dla dokumentów źródłowych"
 description: "W tej procedurze pokazano sposób konfigurowania i uruchamiania reguł inspekcji."
 author: ryansandness
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 10a3823e6d444b20c756890389400b58c080a01f
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: a82c3e8e8787beb309b75b73cda36f4ca8031d6f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="define-audit-policies-for-source-documents"></a><span data-ttu-id="247c3-103">Definiowanie zasad inspekcji dla dokumentów źródłowych</span><span class="sxs-lookup"><span data-stu-id="247c3-103">Define audit policies for source documents</span></span>

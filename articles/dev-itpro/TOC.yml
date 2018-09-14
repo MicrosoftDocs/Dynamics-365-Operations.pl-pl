@@ -261,11 +261,11 @@
               href: extensibility/method-wrapping-coc.md
             - name: Wytyczne dotyczące nazewnictwa rozszerzeń modeli
               href: extensibility/naming-guidelines-extensions.md
-            - name: Łagodzenie ograniczeń w modelu w celu przebudowy warstw na rozszerzenia
+            - name: Łagodzenie ograniczeń w modelu w celu zmiany warstw w rozszerzenia
               href: extensibility/refactoring-over-layering.md
-        - name: Jak to zrobić?
+        - name: Tworzenie rozszerzeń
           items:
-            - name: Dodawanie wartości do elementów stałotekstowych
+            - name: Dodawanie wartości do wyliczeń
               href: extensibility/add-enum-value.md
             - name: Modyfikowanie rozszerzonych typów danych
               href: extensibility/modify-edt.md
@@ -311,15 +311,37 @@
               href: extensibility/maps-as-interfaces.md
             - name: Rozszerzanie mapowań tabel używanych na potrzeby przechowywania wersji
               href: extensibility/maps-with-versioning.md
+        - name: Tworzenie rozszerzalnych rozwiązań
+          items:
+            - name: Pisanie rozszerzalnego kodu
+              href: extensibility/writing-extensible-code.md
+            - name: Klasy
+              href: extensibility/extensible-classes.md
+            - name: Metody
+              href: extensibility/extensible-methods.md
+            - name: Formularze
+              href: extensibility/extensible-forms.md
+            - name: Rozszerzone typy danych
+              href: extensibility/extensible-edts.md
+            - name: Wyliczenia rozszerzalne
+              href: extensibility/extensible-enums.md
+            - name: Elementy delegowane
+              href: extensibility/extensible-code-delegates.md
+            - name: Tabele
+              href: extensibility/extensible-tables.md
+            - name: Atrybuty rozszerzalności dla metod
+              href: extensibility/extensibility-attributes.md
+            - name: Istotne zmiany
+              href: extensibility/breaking-changes.md
     - name: Wydajność
       items:
-        - name: Śledzenie danych za pomocą Analizatora śledzenia
+        - name: Śledzenie danych za pomocą programu Trace Parser
           href: perf-test/trace-trace-tutorial.md
-        - name: Zestaw Performance SDK i testowanie dla wielu użytkowników za pomocą programu Visual Studio Online
+        - name: Zestaw Performance SDK i testowanie dla wielu użytkowników za pomocą usługi Visual Studio Online
           href: perf-test/perfsdk-tutorial.md
         - name: Zestaw Performance SDK i testowanie dla wielu użytkowników w środowiskach lokalnych
           href: perf-test/perfsdk-tutorial-lbd.md
-        - name: Diagnozowanie problemów i analizowanie wydajności za pomocą Analizatora śledzenia
+        - name: Diagnozowanie problemów i analizowanie wydajności za pomocą programu Trace Parser
           href: perf-test/trace-parser.md
         - name: Czasomierz wydajności
           href: perf-test/performance-timer.md
@@ -1184,7 +1206,9 @@
       items:
         - name: Tworzenie reguł dla Doradcy optymalizacji
           href: sysadmin/create-rules-optimization-advisor.md
-- name: Lifecycle Services
+    - name: Zgłaszanie przestoju produkcji
+      href: lifecycle-services/report-production-outage.md
+- name: Usługa Lifecycle Services
   items:
     - name: Zasoby usługi Lifecycle Services
       href: lifecycle-services/lcs.md
@@ -1236,11 +1260,13 @@
       href: lifecycle-services/monitoring-diagnostics.md
     - name: Ponowne uruchamianie usług środowiska
       href: lifecycle-services/restart-environment-services.md
+    - name: Zgłaszanie przestoju produkcji
+      href: lifecycle-services/report-production-outage.md
     - name: Śledzenie logowań użytkowników
       href: lifecycle-services/user-logins.md
     - name: Biblioteka elementów zawartości
       href: lifecycle-services/asset-library.md
-    - name: Usługa Translation Service w usłudze Microsoft Dynamics 365
+    - name: Microsoft Dynamics 365 Translation Service
       href: lifecycle-services/translation-service-overview.md
       items:
         - name: Tłumaczenie plików interfejsu użytkownika

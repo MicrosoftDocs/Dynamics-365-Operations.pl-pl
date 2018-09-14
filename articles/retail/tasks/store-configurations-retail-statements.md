@@ -3,7 +3,7 @@ title: "Konfiguracje sklepu dla zestawień sieci sprzedaży"
 description: "Ta procedura prowadzi przez konfiguracje sprzedaży sklepu sieci sprzedaży, które mają wpływ na sposób tworzenia i księgowana zestawień sieci sprzedaży."
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: ab1ee4a3273c162e94452a63891963922947c26c
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 9fddeb8434d916df1613d61da88110dec8fb4465
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="store-configurations-for-retail-statements"></a><span data-ttu-id="4fe27-103">Konfiguracje sklepu dla zestawień sieci sprzedaży</span><span class="sxs-lookup"><span data-stu-id="4fe27-103">Store configurations for Retail statements</span></span>

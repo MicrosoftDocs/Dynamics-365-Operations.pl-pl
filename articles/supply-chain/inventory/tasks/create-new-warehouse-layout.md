@@ -3,7 +3,7 @@ title: "Tworzenie nowego układu magazynu"
 description: "W tej procedurze pokazano sposób konfigurowania informacji o lokalizacjach w magazynie."
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 7db15eb5d80291641f0d0398d236b5e883cafcaf
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 26314f9015feded41f105814b85069fff0c62964
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-a-new-warehouse-layout"></a><span data-ttu-id="a9b7a-103">Tworzenie nowego układu magazynu</span><span class="sxs-lookup"><span data-stu-id="a9b7a-103">Create a new warehouse layout</span></span>

@@ -3,7 +3,7 @@ title: Konfigurowanie konteneryzacji
 description: "W tej procedurze opisano sposób zautomatyzowania konteneryzacji ładunków w module Zarządzanie magazynem."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 3f68251365ae34b7c4a2ce25b5b59275e856df55
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 56fc6adc2a0eeb5b824089ff4b1b781f3a99a34c
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-containerization"></a><span data-ttu-id="3210b-103">Konfigurowanie konteneryzacji</span><span class="sxs-lookup"><span data-stu-id="3210b-103">Set up containerization</span></span>

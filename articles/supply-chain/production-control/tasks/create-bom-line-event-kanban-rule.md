@@ -3,7 +3,7 @@ title: "Tworzenie reguły Kanban dla zdarzenia wiersza BOM"
 description: "To zadanie skupia się na konfiguracji potrzebnej do utworzenia reguły Kanban zdarzenia w celu zapewnienia dostaw dla wierszy BOM produkcji w mieszanym środowisku produkcji oszczędnej i klasycznej."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 12e2236659aa227c52d758d821a13aa43de4606a
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 82a4252548fd030f2a044436ff607da5125d2854
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-a-bom-line-event-kanban-rule"></a><span data-ttu-id="92b0b-103">Tworzenie reguły Kanban dla zdarzenia wiersza BOM</span><span class="sxs-lookup"><span data-stu-id="92b0b-103">Create a BOM line event kanban rule</span></span>

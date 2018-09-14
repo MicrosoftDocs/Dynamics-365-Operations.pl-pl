@@ -6,6 +6,8 @@
       items:
         - name: Nowości i zmiany
           items:
+            - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (sierpień 2018 r.)
+              href: whats-new-talent-august2018.md
             - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (lipiec 2018 r.)
               href: whats-new-talent-july2018.md
         - name: Wymagania systemowe i zasady aktualizacji
@@ -16,8 +18,8 @@
           href: remove-talent-environment.md
         - name: Inicjowanie obsługi modułowych aplikacji rozwiązania Talent
           href: modular-app-tech-faq.md
-        - name: Rozszerzanie funkcjonalności rozwiązania Talent
-          href: extend-talent-functionality.md
+        - name: Osadzanie aplikacji usługi PowerApps
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Dostęp do funkcji w wersji zapoznawczej
           href: access-preview-feature.md
         - name: Konfigurowanie integracji listy płac między rozwiązaniami Talent i Dayforce

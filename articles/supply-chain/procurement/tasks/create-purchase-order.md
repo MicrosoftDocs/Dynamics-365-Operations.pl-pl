@@ -3,7 +3,7 @@ title: "Tworzenie zamówienia zakupu"
 description: "W tej procedurze pokazano sposób ręcznego tworzenia zamówienia sprzedaży."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: e7256fa4d9768b96873b7f60c3725496af3e57db
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 50bf9927626a2a78a5f007b0b73d338585bbf9ab
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-a-purchase-order"></a><span data-ttu-id="e087e-103">Tworzenie zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="e087e-103">Create a purchase order</span></span>

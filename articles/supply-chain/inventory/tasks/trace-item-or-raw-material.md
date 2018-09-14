@@ -3,7 +3,7 @@ title: "Śledzenie elementu lub surowca"
 description: "Ta procedura przedstawia wykorzystanie funkcji śledzenia towarów w celu identyfikacji miejsc, gdzie towary lub surowce zostały użyte albo są używane."
 author: pjacobse
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 3597091d62b9a6c0fc41d47e66490ff61c0226ec
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 897a777b3f4ce05fe995aa98a72feb99d82837ef
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="trace-an-item-or-raw-material"></a><span data-ttu-id="aa83b-103">Śledzenie elementu lub surowca</span><span class="sxs-lookup"><span data-stu-id="aa83b-103">Trace an item or raw material</span></span>

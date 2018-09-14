@@ -3,7 +3,7 @@ title: Przetwarzanie odsetek
 description: "W tej procedurze pokazano sposób tworzenia, drukowania i księgowania not odsetkowych."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 582ebdc6e9481487dcc45b6e212c5d0f8c9f1fc1
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: c5652a38684061914f895d7f8b82999c9840fd63
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="process-interest"></a><span data-ttu-id="a25a2-103">Przetwarzanie odsetek</span><span class="sxs-lookup"><span data-stu-id="a25a2-103">Process interest</span></span>
