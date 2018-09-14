@@ -3,7 +3,7 @@ title: "Konfigurowanie elementu menu urządzenia przenośnego do rejestrowania t
 description: "To zadanie jest zorientowane na konfigurowanie elementu menu urządzenia przenośnego."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

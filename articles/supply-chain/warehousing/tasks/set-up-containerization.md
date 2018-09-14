@@ -3,7 +3,7 @@ title: Konfigurowanie konteneryzacji
 description: "W tej procedurze opisano sposób zautomatyzowania konteneryzacji ładunków w module Zarządzanie magazynem."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

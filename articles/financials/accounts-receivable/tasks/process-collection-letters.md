@@ -3,7 +3,7 @@ title: "Przetwarzanie ponagleń"
 description: "W tej procedurze pokazano sposób tworzenia, drukowania i księgowania ponagleń."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

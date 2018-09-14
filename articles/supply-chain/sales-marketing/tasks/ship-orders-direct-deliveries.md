@@ -3,7 +3,7 @@ title: "Wysyłanie zamówień jako dostaw bezpośrednich"
 description: "W tej procedurze pokazano sposób tworzenia dostawy bezpośredniej na podstawie zamówienia sprzedaży."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

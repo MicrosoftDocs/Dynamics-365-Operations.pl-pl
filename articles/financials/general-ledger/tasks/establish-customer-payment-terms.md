@@ -3,7 +3,7 @@ title: "Definiowanie warunków płatności dla odbiorcy"
 description: "Ta procedura określa konfigurację rabatu gotówkowego i terminu płatności."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

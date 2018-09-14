@@ -3,7 +3,7 @@ title: Zmienianie transparentu lub logo
 description: "Następująca procedura wymienia kroki, jakie administratorzy systemu mogą stosować do aktualizowania obrazu transparentu lub logo wyświetlanego dla firmy."
 author: aneesmsft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

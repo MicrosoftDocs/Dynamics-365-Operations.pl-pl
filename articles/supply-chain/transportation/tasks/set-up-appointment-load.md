@@ -3,7 +3,7 @@ title: "Konfigurowanie terminu dla ładunku"
 description: "Ta procedura pokazuje, jak skonfigurować i zaplanować termin dokowania dla ładunku."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

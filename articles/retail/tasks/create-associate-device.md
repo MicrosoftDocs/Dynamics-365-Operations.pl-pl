@@ -3,7 +3,7 @@ title: "Tworzenie i kojarzenie urządzenia"
 description: "Ta procedura zawiera instruktaż tworzenia nowego urządzenia i kojarzenia go z kasą."
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

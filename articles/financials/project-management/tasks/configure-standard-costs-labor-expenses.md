@@ -3,7 +3,7 @@ title: "Konfigurowanie standardowych kosztów robocizny i wydatków"
 description: "W tej procedurze pokazano sposób konfigurowania standardowych kosztów robocizny i wydatków dla projektu."
 author: KimANelson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

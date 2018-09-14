@@ -3,7 +3,7 @@ title: "Porównywanie aktywnych, szacowanych i zrealizowanych kosztów w związk
 description: "W tej procedurze pokazano sposób wyświetlania przyczyn dużego odchylenia produkcji dla zlecenia produkcyjnego."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

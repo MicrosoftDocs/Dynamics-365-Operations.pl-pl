@@ -3,7 +3,7 @@ title: "Definiowanie komórek roboczych produkcji lean manufacturing"
 description: "Komórka robocza to specjalna postać grupy zasobów, które mogą być używane w działaniach procesu produkcji oszczędnej."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

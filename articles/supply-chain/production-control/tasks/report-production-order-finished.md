@@ -3,7 +3,7 @@ title: "Zgłaszanie zlecenia produkcyjnego jako zakończonego"
 description: "W tej procedurze pokazano sposób raportowania zlecenia produkcyjnego jako ukończonego."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

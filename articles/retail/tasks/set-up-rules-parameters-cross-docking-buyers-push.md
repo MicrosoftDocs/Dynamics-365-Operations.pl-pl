@@ -3,7 +3,7 @@ title: "Konfigurowanie reguł i parametrów dla przeładunku komplementacyjnego 
 description: "Ta procedura pokazuje kolejne kroki tworzenia reguł uzupełnienia."
 author: josaw1
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

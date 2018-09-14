@@ -3,7 +3,7 @@ title: "Przeglądanie informacji o windykacji"
 description: "Ta procedura prowadzi przez proces sprawdzania informacji o windykacji, a także różnych opcji konfiguracji i transakcji windykacji."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

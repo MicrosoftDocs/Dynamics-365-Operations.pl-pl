@@ -3,7 +3,7 @@ title: Rejestracja ewidencjonowania i wyewidencjonowania kierowcy dla danego ter
 description: "Ta procedura pokazuje, jak zarejestrować zaewidencjonowanie kierowcy i wyewidencjonowanie kierowcy."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

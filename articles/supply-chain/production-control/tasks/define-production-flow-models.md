@@ -3,7 +3,7 @@ title: "Definiowanie modeli przepływu produkcji"
 description: "Modele przepływu produkcji opisują sposób obliczania i obsługi zdolności produkcyjnych komórek roboczych w produkcji oszczędnej."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

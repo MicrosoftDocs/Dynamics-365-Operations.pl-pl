@@ -3,7 +3,7 @@ title: Konfigurowanie automatycznego uzgadniania frachtu
 description: "Ta procedura pokazuje, jak skonfigurować dane dla automatycznego uzgadniania frachtu."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

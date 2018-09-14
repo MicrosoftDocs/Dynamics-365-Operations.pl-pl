@@ -3,7 +3,7 @@ title: "Tworzenie reguły Kanban dla zdarzenia wiersza BOM"
 description: "To zadanie skupia się na konfiguracji potrzebnej do utworzenia reguły Kanban zdarzenia w celu zapewnienia dostaw dla wierszy BOM produkcji w mieszanym środowisku produkcji oszczędnej i klasycznej."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

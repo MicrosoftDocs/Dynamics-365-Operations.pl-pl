@@ -3,7 +3,7 @@ title: Tworzenie zasobu operacyjnego
 description: "Zasób operacyjny wykonuje działania projektu lub procesu produkcji."
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

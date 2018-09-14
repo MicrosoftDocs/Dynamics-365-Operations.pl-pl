@@ -3,7 +3,7 @@ title: "Tworzenie działań procesu produkcji lean manufacturing"
 description: "Tworzenie działania procesu dla produkcji oszczędnej."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

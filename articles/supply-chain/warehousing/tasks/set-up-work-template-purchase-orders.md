@@ -3,7 +3,7 @@ title: "Konfigurowanie szablonu pracy dla zamówień zakupu"
 description: "Ta procedura skupia się na konfigurowaniu prostego szablonu pracy, który ma być używany podczas odkładania przyjętych towarów."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

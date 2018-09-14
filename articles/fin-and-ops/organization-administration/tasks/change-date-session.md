@@ -3,7 +3,7 @@ title: Zmienianie daty sesji
 description: "Domyślnie podczas wprowadzania i księgowania zapisów w arkuszu lub dokumentów źródłowych jest używana bieżąca data."
 author: pvillads
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

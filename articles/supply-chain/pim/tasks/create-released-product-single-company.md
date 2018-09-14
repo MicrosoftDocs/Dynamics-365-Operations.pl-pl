@@ -3,7 +3,7 @@ title: Tworzenie zwolnionego produktu dla jednej firmy
 description: Ta procedura prowadzi przez proces tworzenia jednego zwolnionego produktu w ramach jednej jednostki prawnej.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

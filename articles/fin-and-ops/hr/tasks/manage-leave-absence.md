@@ -3,7 +3,7 @@ title: "Zarządzanie nieobecnościami"
 description: "Ta procedura prowadzi przez proces tworzenia rekordów urlopów pracowników."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

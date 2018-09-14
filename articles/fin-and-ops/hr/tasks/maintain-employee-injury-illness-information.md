@@ -3,7 +3,7 @@ title: "Obsługa informacji dotyczących urazów i chorób pracowników"
 description: "Zaleca się najpierw wykonać przewodnik po zadaniach „Ustawienia urazów i chorób”, ponieważ część informacji konfiguracyjnych z niego jest używanych w tym miejscu."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

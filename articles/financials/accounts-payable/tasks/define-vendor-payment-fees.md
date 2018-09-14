@@ -3,7 +3,7 @@ title: "Definiowanie opłat od płatności dostawcy"
 description: "Skonfiguruj opłaty od płatności dla dostawcy."
 author: abruer
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

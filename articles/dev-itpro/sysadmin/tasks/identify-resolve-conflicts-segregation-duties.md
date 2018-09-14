@@ -3,7 +3,7 @@ title: "Identyfikowanie i rozwiązywanie konfliktów w podziale obowiązków"
 description: "Można ustawić reguły rozdzielania zadań, które mają być wykonywane przez różnych użytkowników."
 author: maertenm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

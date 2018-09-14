@@ -3,7 +3,7 @@ title: "Obsługa BOM dla modelu konfiguracji produktu"
 description: Wykonanie tej procedury wymaga istnienia modelu konfiguracji produktu.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

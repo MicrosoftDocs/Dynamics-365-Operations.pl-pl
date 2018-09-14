@@ -3,7 +3,7 @@ title: "Przesyłanie transakcji do systemu Intrastat"
 description: "Ta procedura pokazuje, jak skonfigurować parametry systemu Intrastat i przesłać do niego transakcje."
 author: Anasyash
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

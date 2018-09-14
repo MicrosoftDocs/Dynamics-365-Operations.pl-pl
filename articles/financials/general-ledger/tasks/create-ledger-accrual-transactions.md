@@ -3,7 +3,7 @@ title: "Tworzenie transakcji naliczeń finansowych"
 description: "Ten przewodnik po zadaniach prowadzi przez generowanie transakcji naliczeń finansowych opartych na schematach naliczania."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

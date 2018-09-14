@@ -3,7 +3,7 @@ title: "Definiowanie opłat od płatności odbiorcy"
 description: "Utwórz opłaty od płatności dla płatności odbiorców."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Definiowanie procesów inwentaryzacji zapasów"
 description: "Ta procedura poprowadzi Cię przez konfigurację podstawowych procesów inwentaryzacji poprzez utworzenie grupy inwentaryzacji i arkusza inwentaryzacji."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

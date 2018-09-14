@@ -3,7 +3,7 @@ title: "Zarządzanie szablonami wiadomości e-mail"
 description: "Można przenieść informacje z bazy danych organizacji do zakładek w nowym dokumencie i używać ich w szablonach, które pomagają efektywnie komunikować się z kandydatami."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

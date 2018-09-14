@@ -3,7 +3,7 @@ title: "Włączanie procesu listy płac obliczanej na podstawie czasu i frekwenc
 description: "W tej procedurze pokazano sposób włączania procesu listy płac dla modułu Czas i frekwencja."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

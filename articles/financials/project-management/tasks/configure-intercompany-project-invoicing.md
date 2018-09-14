@@ -3,7 +3,7 @@ title: "Konfigurowanie fakturowania projektów międzyfirmowych"
 description: "W tej procedurze pokazano sposób konfigurowania fakturowania projektów między dwoma firmami w tej samej organizacji."
 author: KimANelson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Konfigurowanie profilu funkcji dla przedstawiciela handlowego
 description: "Ta procedura pokazuje, jak skonfigurować ustawienia profilu funkcji sklepu, które mają zastosowanie do przedstawicieli handlowych."
 author: jblucher
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

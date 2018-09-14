@@ -3,7 +3,7 @@ title: "Zmienianie reguł Kanban dla zadań procesu"
 description: "Ta procedura skupia się na zmianie używanej reguły kanban dla danej karty Kanban."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

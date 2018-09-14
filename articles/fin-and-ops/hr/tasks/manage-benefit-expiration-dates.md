@@ -3,7 +3,7 @@ title: "Zarządzanie datami ważności świadczenia"
 description: "W tej procedurze pokazano, jak można wygasić lub przedłużyć świadczenie oraz zarządzać datami rejestracji pracowników zarejestrowanych na świadczenie."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

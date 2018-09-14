@@ -3,7 +3,7 @@ title: Definiowanie grup konfiguracji
 description: "W tej procedurze pokazano sposób definiowania grup konfiguracji produktów przez utworzenie dwóch grup w danych firmy demonstracyjnej USMF."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

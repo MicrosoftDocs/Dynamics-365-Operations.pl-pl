@@ -3,7 +3,7 @@ title: "Tworzenie formuły przez kopiowanie z istniejącej formuły"
 description: "W tej procedurze pokazano, jak szybko utworzyć nową formułę przez skopiowanie z istniejącej formuły."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO"
 description: "W tym przewodniku pokazano, jak utworzyć typ zdobywania zamówień i skojarzyć go z metodą punktowania."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

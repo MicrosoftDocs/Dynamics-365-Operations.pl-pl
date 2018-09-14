@@ -3,7 +3,7 @@ title: "Zmiana konwencji amortyzacji dla wielu środków trwałych"
 description: "To zadanie aktualizuje konwencję amortyzacji dla wybranej grupy środków trwałych."
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

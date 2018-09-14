@@ -3,7 +3,7 @@ title: "Definiowanie nowych działów"
 description: "Działy to jednostki operacyjne, które reprezentują obszar funkcjonalny przedsiębiorstwa, taki jak sprzedaż lub księgowość."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

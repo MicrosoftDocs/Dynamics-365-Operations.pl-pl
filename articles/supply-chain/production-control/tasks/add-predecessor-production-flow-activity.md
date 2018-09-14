@@ -3,7 +3,7 @@ title: "Dodawanie działania poprzedzającego do działania przepływu produkcji
 description: "W wersji przepływu produkcji wszystkie działania muszą być ustawione kolejno."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

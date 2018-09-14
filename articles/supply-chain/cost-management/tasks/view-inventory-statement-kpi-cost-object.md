@@ -3,7 +3,7 @@ title: "Wyświetlanie zestawienia magazynowego i KPI według obiektu kosztów"
 description: "Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

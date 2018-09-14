@@ -3,7 +3,7 @@ title: "Konfigurowanie grup podatków i grup podatków dla towarów"
 description: "W tym nagraniu zadania przejdziesz przez proces konfigurowania grup podatków i podatków dla towarów."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

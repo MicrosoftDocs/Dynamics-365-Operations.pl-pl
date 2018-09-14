@@ -3,7 +3,7 @@ title: "Rejestrowanie prowizji od sprzedaży"
 description: "W tej procedurze pokazano sposób obliczania i rejestrowania prowizji od sprzedaży."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Wyświetlanie aktualnego stanu PWT na zleceniu produkcyjnym"
 description: "W tej procedurze pokazano sposób tworzenia zestawienia PWT w zleceniu produkcyjnym."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Wyświetlanie wpisów w arkuszu lub transakcji"
 description: "W tej procedurze pokazano sposób używania zapytań o transakcje w załącznikach w celu wyszukiwania wpisów w arkuszu lub transakcji."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

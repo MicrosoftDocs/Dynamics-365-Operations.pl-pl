@@ -3,7 +3,7 @@ title: "Konfigurowanie metody płatności za transport"
 description: "W tej procedurze pokazano sposób konfigurowania metody płatności za transport."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

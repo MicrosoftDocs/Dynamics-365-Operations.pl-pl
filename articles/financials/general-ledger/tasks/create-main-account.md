@@ -3,7 +3,7 @@ title: "Tworzenie konta głównego"
 description: "To zadanie prowadzi przez proces dodawania konta głównego do istniejącego planu kont."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Przywróć stan zadania Kanban"
 description: "Ta procedura skupia się na cofnięciu błędnego stanu zadania w systemie Kanban."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

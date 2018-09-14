@@ -3,7 +3,7 @@ title: "Rejestrowanie przyjęcia towarów w zamówieniu zakupu"
 description: "W tej procedurze pokazano sposób rejestrowania przyjęcia towarów bezpośrednio w zamówieniu zakupu."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

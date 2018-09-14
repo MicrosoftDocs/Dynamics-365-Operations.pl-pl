@@ -3,7 +3,7 @@ title: "Tworzenie nowej reguły Kanban przez duplikację istniejącej reguły Ka
 description: "Ta procedura skupia się na tworzeniu duplikatu istniejącej reguły Kanban."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

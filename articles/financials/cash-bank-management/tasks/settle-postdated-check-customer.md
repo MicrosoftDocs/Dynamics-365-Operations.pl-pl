@@ -3,7 +3,7 @@ title: Rozliczanie czeku postdatowanego od odbiorcy
 description: "Można rozliczyć czek postdatowany po jego rozliczeniu przez bank."
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Tworzenie i kojarzenie kas
 description: "Ta procedura przedstawia sposób tworzenia kasy w punkcie sprzedaży (POS)."
 author: rubencdelgado
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

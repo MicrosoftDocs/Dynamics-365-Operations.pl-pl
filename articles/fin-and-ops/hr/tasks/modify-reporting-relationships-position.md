@@ -3,7 +3,7 @@ title: "Modyfikowanie relacji zależności służbowych"
 description: "W tej procedurze pokazano sposób zmiany relacji zależności służbowej dla pracownika."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

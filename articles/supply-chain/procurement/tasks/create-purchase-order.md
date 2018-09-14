@@ -3,7 +3,7 @@ title: "Tworzenie zamówienia zakupu"
 description: "W tej procedurze pokazano sposób ręcznego tworzenia zamówienia sprzedaży."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

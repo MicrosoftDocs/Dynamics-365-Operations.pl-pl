@@ -3,7 +3,7 @@ title: "Cykl zamówienia partii od utworzenia do rozpoczęcia"
 description: "Ta procedura prowadzi Cię przez pierwszą częścią cyklu życia szarży produkcyjnej."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

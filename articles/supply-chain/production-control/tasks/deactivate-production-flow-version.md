@@ -3,7 +3,7 @@ title: "Dezaktywowanie wersji przepływu produkcji"
 description: "Gdy aktywna wersja przepływu produkcji nie jest już potrzebna, można ją dezaktywować."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

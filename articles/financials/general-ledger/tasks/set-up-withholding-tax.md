@@ -3,7 +3,7 @@ title: "Konfigurowanie potrąconych zaliczek na podatek"
 description: "Potrącona zaliczka na podatek to podatek nałożony na dostawców, który nie powoduje utworzenia transakcji podatkowej."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

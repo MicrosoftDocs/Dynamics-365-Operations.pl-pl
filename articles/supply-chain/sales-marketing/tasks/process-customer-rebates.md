@@ -3,7 +3,7 @@ title: "Generowanie i przetwarzanie rabatów dla odbiorców"
 description: "Ta procedura przedstawia sposób przetwarzania rabatów dla odbiorców na etapach od wygenerowania wniosku do przekazania ich jako naliczenia do modułu Rozrachunki z odbiorcami."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

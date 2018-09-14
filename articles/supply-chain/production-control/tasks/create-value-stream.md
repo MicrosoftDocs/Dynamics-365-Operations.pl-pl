@@ -3,7 +3,7 @@ title: "Tworzenie strumienia wartości"
 description: "Strumienie wartości są jednostkami operacyjnymi, które grupują jeden lub wiele przepływów produkcji."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

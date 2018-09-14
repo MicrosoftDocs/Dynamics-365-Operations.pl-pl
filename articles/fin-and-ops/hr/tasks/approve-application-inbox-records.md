@@ -3,7 +3,7 @@ title: "Zatwierdzanie rekordów skrzynki odbiorczej zgłoszeń"
 description: "W tej procedurze pokazano sposób przeglądania podań o pracę otrzymanych za pośrednictwem stron w portalu samoobsługi pracowniczej."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

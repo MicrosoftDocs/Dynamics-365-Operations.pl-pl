@@ -3,7 +3,7 @@ title: "Tworzenie zamówienia zwrotu zakupu"
 description: "W tej procedurze pokazano, jak utworzyć zamówienie zwrotu zakupu przy użyciu akcji Faktura korygująca w celu skopiowania wierszy z dokumentu faktury od dostawcy do nowego zamówienia zakupu."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

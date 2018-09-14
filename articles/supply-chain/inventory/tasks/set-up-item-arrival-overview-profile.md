@@ -3,7 +3,7 @@ title: "Konfigurowanie profilu przeglądu przyjęć pozycji"
 description: "To zadanie koncentruje się na konfiguracji profilu przeglądu przyjęć."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

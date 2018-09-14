@@ -3,7 +3,7 @@ title: "Ustawianie informacji dotyczących urazów i chorób"
 description: "Pracodawcy muszą je znać, kiedy pracownicy doznają urazu lub zachorują z powodu zagrożeń w miejscu pracy."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

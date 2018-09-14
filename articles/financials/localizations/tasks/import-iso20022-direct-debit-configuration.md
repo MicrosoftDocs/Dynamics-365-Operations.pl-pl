@@ -3,7 +3,7 @@ title: "Importowanie konfiguracji polecenia zapłaty ISO20022"
 description: "W tej procedurze przestawiono sposób importowania konfiguracji raportowania elektronicznego płatności od odbiorcy."
 author: mrolecki
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

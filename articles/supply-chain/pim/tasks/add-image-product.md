@@ -3,7 +3,7 @@ title: Dodawanie obrazu do produktu
 description: "Ta procedura pokazuje, jak dodać obraz/zdjęcie do produktu. Do utworzenia tego zadania użyto danych firmy demonstracyjnej USMF."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

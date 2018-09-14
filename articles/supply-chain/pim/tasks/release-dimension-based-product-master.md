@@ -3,7 +3,7 @@ title: "Zwalnianie produktu głównego opartego na wymiarach"
 description: "W tej procedurze pokazano sposób zwalniania produktu głównego, który będzie używany dla konfiguracji opartych na wymiarach."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

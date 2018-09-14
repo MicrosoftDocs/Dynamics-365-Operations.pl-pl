@@ -3,7 +3,7 @@ title: "Wprowadzanie umów sprzedaży"
 description: "W tej procedurze pokazano sposób tworzenia umowy sprzedaży, która zobowiązuje jednego odbiorcę do zakupu produktu na ustaloną kwotę w określonym czasie w zamian za specjalne rabaty."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

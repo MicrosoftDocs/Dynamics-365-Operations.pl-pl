@@ -3,7 +3,7 @@ title: Tworzenie grup konsolidacji i dodatkowych kont konsolidacyjnych
 description: "W tej procedurze pokazano, jak utworzyć grupę kont konsolidacji, a następnie dodać do niej konta."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Ustawianie preferowanej strefy czasowej
 description: "W poniższej procedurze pokazano, jak użytkownik w roli administratora systemu może ustawić strefę czasową dla użytkownika."
 author: pvillads
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

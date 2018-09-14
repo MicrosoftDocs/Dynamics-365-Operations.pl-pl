@@ -3,7 +3,7 @@ title: Tworzenie kodu odsetek z zakresem
 description: "Kody odsetek można konfigurować do obliczania różnych kwot odsetek na podstawie zakresu wartości."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

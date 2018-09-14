@@ -3,7 +3,7 @@ title: "Tworzenie produktu głównego opartego na wymiarach"
 description: "W tej procedurze pokazano sposób tworzenia nowego produktu głównego przy użyciu technologii konfiguracji opartej na wymiarach."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Konfigurowanie książek adresowych"
 description: "Użyj tej procedury oraz decyzji dokonanych w temacie Planowanie konfiguracji globalnej książki adresowej i dodatkowych książek adresowych, aby skonfigurować dodatkowe książki adresowe w swojej organizacji."
 author: kfend
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

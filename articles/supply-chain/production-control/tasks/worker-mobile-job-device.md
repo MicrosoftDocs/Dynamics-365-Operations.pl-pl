@@ -3,7 +3,7 @@ title: "Konfigurowanie pracownika za pomocą urządzenia przenośnego zadania"
 description: "W tej procedurze pokazano, jak przypisać poprawne role do konta użytkownika pracownika, a następnie włączyć pracownikowi możliwość rejestrowania się na produkcji."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

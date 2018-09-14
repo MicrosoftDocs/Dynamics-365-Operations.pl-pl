@@ -3,7 +3,7 @@ title: "Konfigurowanie kategorii konta głównego"
 description: "Kategorie kont głównych są używane dla domyślnych raportów w sprawozdawczości finansowej i programie Power BI."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

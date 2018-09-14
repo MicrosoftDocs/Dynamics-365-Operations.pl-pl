@@ -3,7 +3,7 @@ title: Tworzenie nowego produktu
 description: "To zadanie pokazuje sposób tworzenia nowego produktu udostępnionego."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Tworzenie relacji działań — Zdarzenie następujące"
 description: "Przepływ działań w przepływie produkcji oszczędnej jest udokumentowany za pomocą relacji między działaniami."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

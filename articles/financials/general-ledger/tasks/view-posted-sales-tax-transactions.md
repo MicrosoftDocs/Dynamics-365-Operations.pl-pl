@@ -3,7 +3,7 @@ title: "Wyświetl zaksięgowane transakcje podatkowe"
 description: "Zaksięgowane transakcje podatkowe można wyświetlać z różnych stron, w zależności od tego, co chcesz obejrzeć."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

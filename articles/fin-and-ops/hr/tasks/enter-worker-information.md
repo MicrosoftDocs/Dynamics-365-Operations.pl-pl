@@ -3,7 +3,7 @@ title: Wprowadzanie informacji o pracowniku
 description: "Gdy osoba rekrutująca utworzy projekt zatrudnienia grupowego i wygeneruje stanowiska, następnym krokiem jest wprowadzanie informacji o zatrudnianych pracownikach."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

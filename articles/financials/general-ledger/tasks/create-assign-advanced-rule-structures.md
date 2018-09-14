@@ -3,7 +3,7 @@ title: "Tworzenie i przypisywanie struktur reguł zaawansowanych"
 description: "Ten przewodnik po zadaniach prowadzi przez kolejne kroki tworzenia i przypisywania struktury reguły zaawansowanej do struktury konta."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

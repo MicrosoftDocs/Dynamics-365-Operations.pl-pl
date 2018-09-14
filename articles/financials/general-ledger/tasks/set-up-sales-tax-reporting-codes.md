@@ -3,7 +3,7 @@ title: "Ustawianie kodów raportowania podatku"
 description: "Kody raportowania podatków odnoszą się do numeru pola w raporcie podatku."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

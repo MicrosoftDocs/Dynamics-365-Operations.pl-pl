@@ -3,7 +3,7 @@ title: "Tworzenie właściwości harmonogramu czasu pracy"
 description: "Właściwości planowania czasu pracy są używane do dzielenia zakresów czasu pracy na kategorie oraz do definiowania ustawień, które operatorzy muszą brać pod uwagę."
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
