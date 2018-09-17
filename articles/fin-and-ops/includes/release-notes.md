@@ -1,6 +1,6 @@
 > [!IMPORTANT]
-> **Ogłoszenie informacji o wersji usługi Dynamics 365, wiosna 2018**
+> **Ogłoszenie informacji o wersji usługi Dynamics 365**
 >
 > Interesują Cię nadchodzące i ostatnio wydane funkcje dowolnej z naszych aplikacji biznesowych lub platformy? 
 > 
-> [Pobierz informacje o wersji Wiosna 2018](https://go.microsoft.com/fwlink/?linkid=870424). Zebraliśmy wszystkie szczegóły w jednym pliku PDF, którego możesz używać na potrzeby planowania. 
+> Przejrzyj stronę [Business applications and platform release notes](https://go.microsoft.com/fwlink/?linkid=2010158). Zebraliśmy w jednym miejscu wszystkie szczegóły, których możesz używać na potrzeby planowania. W zależności od wersji informacji o wersji możesz uzyskać informacje dotyczące nowych usług i możliwości, a także nowych funkcji, które zostaną wydane w przyszłości.

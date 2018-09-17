@@ -1,28 +1,29 @@
 --- 
-title: "Tworzenie nowych świadczeń"
+title: "Utwórz nowe świadczenie"
 description: "To zadanie pokazuje sposób tworzenia elementów świadczenia, które będą używane podczas tworzenia nowego świadczenia."
 author: kherr75
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 46a499caca0c7c39961d9aab04e046aa067f9779
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d276a7119db4bd391d412f028ec20ed1f9a7fb58
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="create-new-benefits"></a>Tworzenie nowych świadczeń
+# <a name="create-a-new-benefit"></a>Utwórz nowe świadczenie
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

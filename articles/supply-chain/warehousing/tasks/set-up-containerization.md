@@ -3,24 +3,25 @@ title: Konfigurowanie konteneryzacji
 description: "W tej procedurze opisano sposób zautomatyzowania konteneryzacji ładunków w module Zarządzanie magazynem."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 76334f7ee4efe33df4a86aaa11a59748387cec89
-ms.openlocfilehash: c5faf926071dec5d2ddc1c9e921a98ecd0754917
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: aeb7d956560c513c08d5e20dcf20989b49137a52
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="set-up-containerization"></a>Konfigurowanie konteneryzacji
@@ -83,7 +84,7 @@ W tej procedurze opisano sposób zautomatyzowania konteneryzacji ładunków w mo
 ## <a name="set-up-a-container-group"></a>Ustawianie grupy kontenera
 1. Wybierz kolejno opcje Zarządzanie magazynem > Ustawienia > Kontenery > Grupy kontenerów.
 2. Kliknij przycisk Nowy.
-    * Można skonfigurować logiczne grupy typów kontenerów. Dla każdej grupy można określić kolejność pakowania kontenerów oraz procent wypełnienia każdego kontenera. Wymiary rozmiaru towaru są używane do określenia, czy zmieści się on w kontenerze. Używany jest kontener, którym wymiarami jest najbardziej zbliżony do towaru. Jeśli masz wiele typów kontenerów w grupie, zaleca się rozmieszczenie kolejności według rozmiarów, tak, aby największy kontener był pierwszy, numer 1 w sekwencji, a najmniejszy kontener ostatni.    
+    * Można skonfigurować logiczne grupy typów kontenerów. Dla każdej grupy można określić kolejność, w jakiej mają być pakowane kontenery, i procent wypełnienia kontenerów. Wymiary rozmiaru towaru są używane w celu ustalenia, czy zmieści się on do kontenera. Używany jest kontener, którym wymiarami jest najbardziej zbliżony do towaru. Jeśli masz wiele typów kontenerów w grupie, zaleca się rozmieszczenie kolejności według rozmiarów, tak, aby największy kontener był pierwszy, numer 1 w sekwencji, a najmniejszy kontener ostatni.    
 3. W polu Identyfikator grupy kontenerów wpisz wartość.
 4. Wypełnij pole Opis.
 5. Kliknij przycisk Nowy.

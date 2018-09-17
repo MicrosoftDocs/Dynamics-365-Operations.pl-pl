@@ -3,23 +3,24 @@ title: "Tworzenie i edytowanie ofert sprzedaży"
 description: "Ta procedura przedstawia sposób tworzenia i aktualizowania oferty sprzedaży."
 author: omulvad
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SalesQuotationTotals, SalesQuotationPriceSimulation, SalesQuotationEditLines, SrsReportViewerForm, smmSetNumSeqIfManual, CustTable, SalesTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8e7d2198b4976a6f60f05690d7b6f11f3da55e28
-ms.openlocfilehash: 7ffa4fe8d87db5b3f8293ec9dbc042496d09d6e3
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: f56b495131836689395a2124d5a834579e1646b7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="create-and-edit-sales-quotations"></a>Tworzenie i edytowanie ofert sprzedaży
@@ -50,7 +51,7 @@ Ta procedura przedstawia sposób tworzenia i aktualizowania oferty sprzedaży. M
 15. Kliknij wiersz Oferta sprzedaży.
 16. Kliknij opcję Ceny.
     * Na stronie Uruchom symulację ceny można wypróbować korygowanie spodziewanych przychodów lub rentowności wynikającej z oferty na podstawie żądanej ceny jednostkowej, kwoty rabatu, procentu rabatu, łącznej kwoty, marży lub współczynnika marży.   Po uzyskaniu zadowalających docelowych wartości zastosuj sugestię do wiersza oferty, a jego pola związane z ceną zostaną odpowiednio zaktualizowane.  
-    * Można utworzyć tyle symulacji cen, ile potrzeba. Po kliknięciu przycisku Nowy warunki cenowe z bieżącego wiersza oferty są kopiowane do strony. Następnie można zmodyfikować wartości w polach dotyczących ceny na docelowe. Zmiana w jednym z pól spowoduje uruchomienie ponownego obliczania we wszystkich pozostałych polach. Aby system obliczał marżę sprzedaży i współczynnik marży, musi być znany koszt jednostkowy produktu. Karta Symulowane ceny zawiera szczegółowy widok oryginalnych cen, proponowanych zmian oraz ich wpływu na sumy w ofercie.   Co do zasady zastosowanie do wiersza oferty symulacji ustawiającej nową kwotę powoduje, że system wykuje ponowne obliczenie i wprowadza nową wartość w polu Cena jednostkowa. Jeśli symulacja opiera się na nowej marży lub nowym współczynniku marży, jest aktualizowane tylko pole Kwota netto, a pole Cena jednostkowa pozostaje puste. W obu przypadkach wszelkie rabaty, które istniały w wierszu oferty przed symulacją, zostaną usunięte.  
+    * Można utworzyć tyle symulacji cen, ile trzeba. Po kliknięciu przycisku Nowy warunki cenowe z bieżącego wiersza oferty są kopiowane do strony. Następnie można zmodyfikować wartości w polach dotyczących ceny na docelowe. Zmiana w jednym z pól spowoduje uruchomienie ponownego obliczania we wszystkich pozostałych polach. Aby system obliczał marżę sprzedaży i współczynnik marży, musi być znany koszt jednostkowy produktu. Karta Symulowane ceny zawiera szczegółowy widok oryginalnych cen, proponowanych zmian oraz ich wpływu na sumy w ofercie.   Co do zasady zastosowanie do wiersza oferty symulacji ustawiającej nową kwotę powoduje, że system wykuje ponowne obliczenie i wprowadza nową wartość w polu Cena jednostkowa. Jeśli symulacja opiera się na nowej marży lub nowym współczynniku marży, jest aktualizowane tylko pole Kwota netto, a pole Cena jednostkowa pozostaje puste. W obu przypadkach wszelkie rabaty, które istniały w wierszu oferty przed symulacją, zostaną usunięte.  
 17. Zamknij stronę.
 18. W okienku akcji kliknij pozycję Oferta.
 19. Kliknij przycisk Wyślij ofertę.

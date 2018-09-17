@@ -3,18 +3,19 @@ title: Wprowadzanie informacji o pracowniku
 description: "Gdy osoba rekrutująca utworzy projekt zatrudnienia grupowego i wygeneruje stanowiska, następnym krokiem jest wprowadzanie informacji o zatrudnianych pracownikach."
 author: kherr75
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: HRMMassHireProject, HRMMassHireLine
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
 ms.openlocfilehash: bfcebf61a5f613517e05af5c1548b5ceaaed53ee

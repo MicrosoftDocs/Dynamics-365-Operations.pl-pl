@@ -23,7 +23,7 @@
       href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
     - name: Rozpoczynanie eksploatacji — często zadawane pytania
       href: ../fin-and-ops/imp-lifecycle/go-live-faq.md
-    - name: Przesyłanie żądania usługi
+    - name: Przesyłanie żądania obsługi
       href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
     - name: 'Subskrypcje, projekty usługi LCS i dzierżawy usługi Azure Active Directory — często zadawane pytania'
       href: ../fin-and-ops/get-started/subscription-overview.md
@@ -99,8 +99,6 @@
       href: call-center-functionality.md
     - name: Katalogi biura obsługi
       href: call-center-catalogs.md
-    - name: Tworzenie katalogu biura obsługi
-      href: create-call-center-catalogs.md
     - name: Konfigurowanie metod dostawy i opłat
       href: configure-call-center-delivery.md
     - name: Konfigurowanie i używanie alertów o oszustwie
@@ -133,6 +131,8 @@
       href: MPOS-or-CPOS.md
     - name: Operacje online i offline w punkcie sprzedaży
       href: pos-operations.md
+    - name: Aktywacja urządzenia dostosowanej aplikacji Retail Modern POS
+      href: dev-itpro/retail-POS-activation-changes.md
     - name: Układy ekranu danych demonstracyjnych w aplikacjach MPOS i Cloud POS
       href: demo-data.md
     - name: Wyszukiwanie produktów i odbiorców w punkcie sprzedaży
