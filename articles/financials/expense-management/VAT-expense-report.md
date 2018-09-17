@@ -26,6 +26,8 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="vat-recovery-in-expense-management"></a>Zwrot podatku VAT w module Zarządzanie wydatkami
 
+[!include [banner](../includes/banner.md)]
+
 Aby otrzymywać zwroty od kwalifikujących się transakcji zawierających podatek od towarów i usług (VAT), firma lub organizacja musi identyfikować, gromadzić, weryfikować i przesyłać określone precyzyjne informacje. Ten proces obejmuje wiele zadań, a zależnie od wielkości firmy może angażować wielu pracowników lub ról.
 
 Aby odzyskiwać podatek VAT za pomocą modułu Zarządzanie wydatkami, muszą być spełnione następujące wymagania wstępne:

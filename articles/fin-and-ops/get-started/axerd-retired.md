@@ -27,6 +27,8 @@ ms.lasthandoff: 08/09/2018
 
 # <a name="axerd-page-has-been-retired"></a>Strona AxErd została wycofana
 
+[!include [banner](../includes/banner.md)]
+
 Niestety, musieliśmy wycofywać stronę sieci web AxErd, która pokazywała diagramy relacji jednostek (ERD) dla wielu tabel systemu Microsoft Dynamics AX 2012. Udało nam się umieścić kod źródłowy projektu oraz pliki HTML tej strony sieci web w repozytorium GitHub: https://github.com/Microsoft/ax-2012-doc-tools
 
 Strony HTML znajdują się w repozytorium pod adresem [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm)
