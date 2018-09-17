@@ -19,14 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2018-05-02
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: c8de9d6b57da6de8aa6340c97dbd63662e95706f
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 543784e8072f88c10f63e1b44921b9f2d37308c3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
 # <a name="add-location-roles-and-party-relationship-types"></a><span data-ttu-id="741ce-103">Dodawanie ról lokalizacji i typów relacji stron</span><span class="sxs-lookup"><span data-stu-id="741ce-103">Add location roles and party relationship types</span></span> 
+
+[!include [banner](../includes/banner.md)]
 
 ## <a name="add-location-roles"></a><span data-ttu-id="741ce-104">Dodawanie ról lokalizacji</span><span class="sxs-lookup"><span data-stu-id="741ce-104">Add location roles</span></span>
 
