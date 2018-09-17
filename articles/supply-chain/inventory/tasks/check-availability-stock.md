@@ -1,7 +1,7 @@
 --- 
 title: "Sprawdzanie dostępności zapasów w magazynie"
 description: "Ta procedura pokazuje, jak sprawdzić ilość dostępnych i fizycznie dostępnych zapasów towaru o określonym numerze."
-author: 
+author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
