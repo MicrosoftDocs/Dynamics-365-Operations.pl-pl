@@ -35,7 +35,9 @@ Funkcji zarządzanie projektami i ich księgowania można używać w wielu bran�
 Projekt to grupa działań mających na celu dostarczenie usługi, wytworzenie produktu lub osiągniecie celu. Projekty zużywają zasoby i generują wyniki finansowe w formie przychodów lub aktywów.
 
 ## <a name="projects-across-industries"></a>Projekty różnych branż
-Funkcje zarządzania projektami i księgowania można wykorzystywać w różnych branżach, jak pokazano na poniższej ilustracji. [![Projekty w różnych branżach](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
+Funkcje zarządzania projektami i księgowania można wykorzystywać w różnych branżach, jak pokazano na poniższej ilustracji.
+
+[![Projekty w różnych branżach](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
 W biurze obsługi można użyć biletu do opisania zestawu działań wymaganych do rozwiązania zgłoszonego problemu. Firmy konsultingowe, takie jak organizacje zarządzające, reklamowe lub świadczące usługi w zakresie porad technicznych, nazywają swoje działania projektami. W marketingu kampania oznacza pakiet pracy, która musi zostać dostarczona. W produkcji na podstawie projektu, zlecenie produkcyjne dotyczy różnych prac, które muszą być wykonane w celu wyprodukowania gotowego towaru. Niezależnie od nazwy tych projektów, obejmują one zasoby, harmonogramy i koszty, a funkcje zarządzania projektem i księgowania w programie Microsoft Dynamics 365 for Finance and Operations pomagają w planowaniu, wykonaniu i analizie tych projektów.
 
