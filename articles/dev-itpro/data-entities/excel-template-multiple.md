@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 5bc021ce9f0835f2eda310ef7818c9bc9be749f2
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 48239b48cbc24e34d74bbac36e8f827a15d7b840
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,7 +36,7 @@ Przeanalizujmy przykład, w którym występuje jeden plik programu Excel z arkus
 
 Jeżeli dodasz drugą jednostkę **Magazyny** bez opuszczania formularza **Dodaj plik**, wyszukiwanie arkusza umożliwi wybranie arkusza **Magazyny** bez konieczności ponownego przekazywania pliku. Jedynym powodem przekazania nowego pliku byłby fakt, że dane z arkusza **Magazyny** znajdują się w innym pliku.
 
-![Wiele arkuszy](./media/AddFileMultipleWorkSheets.png) 
+![Wiele arkuszy](./media/AddFileMultipleWorkSheets.png)
 
 ## <a name="fix-worksheet-to-entity-mapping"></a>Naprawianie mapowania arkusza w jednostce
 
@@ -51,5 +51,4 @@ W przypadku gdy konieczne jest przekazanie nowej wersji tego samego pliku lub ca
 ## <a name="upload-a-file-using-run-project"></a>Przekazywanie pliku przy użyciu funkcji Uruchom projekt
 
 Plik programu Excel można przekazać, używając opcji **Uruchom projekt** w celu wykonania projektu importu. Należy uważać, aby przekazać tylko pliki, które zawierają te same arkusze co istniejące mapowania w jednostkach danych w projekcie danych. Jeżeli w nowym przekazanym pliku arkusz nie zostanie znaleziony, system wyświetli komunikat o błędzie i zatrzyma import. Jeżeli mapowanie w arkuszu musi zostać zmienione, mapowania w projekcie danych należy najpierw zaktualizować z poziomu projektu danych przed użyciem pliku w ramach funkcji **Uruchom projekt**.
-
 

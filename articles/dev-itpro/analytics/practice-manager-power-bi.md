@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 44f017fc3460b83b730f2f7c909c6b88480dd918
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -42,7 +42,6 @@ Wszystkie kwoty w zawartości są wyświetlane w walucie systemu. Można ustawia
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 
 Zawartość usługi Power BI **Kierownik praktyk** jest wyświetlana w obszarze roboczym **Zarządzanie projektem**.
-
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
 
@@ -85,8 +84,7 @@ Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 
 | Najważniejsza zagregowana miara | Pole                                             | opis |
 |---------------------------|---------------------------------------------------|-------------|
-| Liczba projektów        | COUNTA(ProjectAccountingCube\_Projects[PROJECTS]) | Liczba dostępnych projektów. |
-
+| Liczba projektów        | COUNTA(ProjectAccountingCube\_Projects\[PROJECTS\]) | Liczba dostępnych projektów. |
 
 ### <a name="entity-projectaccountingcubeforecasts"></a>Jednostka: ProjectAccountingCube\_Forecasts
 **Źródło danych**: ProjTransBudget
@@ -109,18 +107,16 @@ Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 
 | Najważniejsza zagregowana miara    | Pole | opis |
 |------------------------------|-------|-------------|
-| Wskaźnik bilansu kosztów       | ProjectAccountingCube\_Projects[wartość uzyskana] ÷ ProjectAccountingCube\_Projects[Suma kosztów rzeczywistych wykonanych zadań] | Obliczenie łącznej wartości wypracowanej podzielonej przez łączny koszt rzeczywisty. |
-| Wskaźnik zgodności z harmonogramem   | ProjectAccountingCube\_Projects[wartość uzyskana] ÷ ProjectAccountingCube\_Projects[Suma kosztów planowanych wykonanych zadań] | Obliczenie łącznej wartości wypracowanej podzielonej przez łączny koszt planowany. |
-| Procent ukończonej pracy | Procent wykonanej pracy = ProjectAccountingCube\_Projects[suma kosztów rzeczywistych wykonanych zadań] ÷ (ProjectAccountingCube\_Projects[suma kosztów rzeczywistych wykonanych zadań] + ProjectAccountingCube\_Projects[suma kosztów planowanych wykonanych zadań] – ProjectAccountingCube\_Projects[suma kosztów planowanych wykonanych zadań]) | Całkowity procent ukończenia pracy w zależności od sumy kosztów rzeczywistych wykonanych zadań oraz planowanego kosztu projektu. |
-| Wskaźnik rzeczywistych godzin do zafakturowania  | ProjectAccountingCube\_Projects[rzeczywiste wykorzystanie do zafakturowania w godzinach łącznie dla projektu] ÷ (ProjectAccountingCube\_Projects[rzeczywiste wykorzystanie do zafakturowania w godzinach łącznie dla projektu] + ProjectAccountingCube\_Projects[rzeczywiste obciążenie do zafakturowania w godzinach łącznie dla projektu]) | Rzeczywista suma godzin do zafakturowania na podstawie godzin wykorzystanych (produktywnych) i obciążenia (nieproduktywnych). |
-| Uzyskana wartość                 | ProjectAccountingCube\_Projects[suma kosztów planowanych projektu] × ProjectAccountingCube\_Projects[Procent wykonanej pracy] | Całkowity planowany koszt pomnożony przez procent wykonanej pracy. |
+| Wskaźnik bilansu kosztów       | ProjectAccountingCube\_Projects\[wartość uzyskana\] ÷ ProjectAccountingCube\_Projects\[suma kosztów rzeczywistych wykonanych zadań\] | Obliczenie łącznej wartości wypracowanej podzielonej przez łączny koszt rzeczywisty. |
+| Wskaźnik zgodności z harmonogramem   | ProjectAccountingCube\_Projects\[wartość uzyskana\] ÷ ProjectAccountingCube\_Projects\[suma kosztów planowanych wykonanych zadań\] | Obliczenie łącznej wartości wypracowanej podzielonej przez łączny koszt planowany. |
+| Procent ukończonej pracy | Procent wykonanej pracy = ProjectAccountingCube\_Projects\[suma kosztów rzeczywistych wykonanych zadań\] ÷ (ProjectAccountingCube\_Projects\[suma kosztów rzeczywistych wykonanych zadań\] + ProjectAccountingCube\_Projects\[suma kosztów planowanych wykonanych zadań\] – ProjectAccountingCube\_Projects\[suma kosztów planowanych wykonanych zadań\]) | Całkowity procent ukończenia pracy w zależności od sumy kosztów rzeczywistych wykonanych zadań oraz planowanego kosztu projektu. |
+| Wskaźnik rzeczywistych godzin do zafakturowania  | ProjectAccountingCube\_Projects\[rzeczywiste wykorzystanie do zafakturowania w godzinach łącznie dla projektu\] ÷ (ProjectAccountingCube\_Projects\[rzeczywiste wykorzystanie do zafakturowania w godzinach łącznie dla projektu\] + ProjectAccountingCube\_Projects\[rzeczywiste obciążenie do zafakturowania w godzinach łącznie dla projektu\]) | Rzeczywista suma godzin do zafakturowania na podstawie godzin wykorzystanych (produktywnych) i obciążenia (nieproduktywnych). |
+| Uzyskana wartość                 | ProjectAccountingCube\_Projects\[suma kosztów planowanych projektu\] × ProjectAccountingCube\_Projects\[procent wykonanej pracy\] | Całkowity planowany koszt pomnożony przez procent wykonanej pracy. |
 
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Jednostka: ProjectAccountingCube\_TotalEstimatedCosts 
 **Źródło danych**: ProjTable
 
-
-|    Najważniejsza zagregowana miara    |        Pole        |                                          opis                                           |
-|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
+| Najważniejsza zagregowana miara       | Pole               | opis |
+|---------------------------------|---------------------|-------------|
 | Planowany koszt ukończonego działania | Sum(TotalCostPrice) | Całkowity koszt własny w oszacowaniach dla wszystkich typów transakcji projektu zawierających ukończone zadania. |
-
 

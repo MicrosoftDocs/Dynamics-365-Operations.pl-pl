@@ -28,6 +28,8 @@ ms.lasthandoff: 06/12/2018
 
 # <a name="add-location-roles-and-party-relationship-types"></a>Dodawanie ról lokalizacji i typów relacji stron 
 
+[!include [banner](../includes/banner.md)]
+
 ## <a name="add-location-roles"></a>Dodawanie ról lokalizacji
 
 Istnieją dwa sposoby dodawania nowych ról lokalizacji dla adresu i informacji kontaktowych:

@@ -3,7 +3,7 @@ title: Standardowy plik audytu (SAF) dla Polski
 description: "Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten temat zawiera informacje o formatach dla Polski."
 author: LizaGolub
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: v-elgolu
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: ef7a8ace1f79ba1dccae8a6febe94b16866dc7c2
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 7908e430eb4e158fa09fdea41add6f1dfae5f23a
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -48,14 +48,13 @@ Każdy format raportowania elektronicznego powinien być wstępnie zdefiniowany 
 ## <a name="generate-a-saf-accounting-books-file"></a>Generowanie pliku ksiąg księgowania SAF
 Aby wygenerować plik ksiąg księgowania SAF, kliknij kolejno opcje **Księga główna** &gt; **Zapytania i raporty** &gt; **Standardowy plik audytu dla podatku (SAF-T)** &gt; **Księgi księgowania SAF** i ustaw następujące parametry:
 
-|                                                 |                                                                                                                                                            |
-|-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Parametr**                                   | **Opis**                                                                                                                                            |
-| **Od dnia**                                   | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych.                                                                                                       |
-| **Do dnia**                                     | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.                                                                                                        |
-| **Identyfikacja urzędu**                    | Określ identyfikator urzędu skarbowego, który ma być używany w pliku eksportu.                                                                                     |
-| **Warstwa księgowania**                               | Umożliwia wybranie warstwy księgowania, od której mają być uwzględniane transakcje. Ten parametr dotyczy tylko sekcji ZOiS w pliku eksportu.                                     |
-| **Czy saldo otwarcia ma być pokazywane jako obroty?** | Jeśli ten parametr jest zaznaczony, transakcje otwarcia mają wpływ na obroty narastająco. Ten parametr dotyczy tylko sekcji ZOiS w pliku eksportu.                    |
+|Parametr                                        |  opis            |
+|-------------------------------------------------|-------------------------|
+| **Od dnia**                                   | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych. |
+| **Do dnia**                                     | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.  |
+| **Identyfikacja urzędu**                    | Określ identyfikator urzędu skarbowego, który ma być używany w pliku eksportu.|
+| **Warstwa księgowania**                               | Umożliwia wybranie warstwy księgowania, od której mają być uwzględniane transakcje. Ten parametr dotyczy tylko sekcji ZOiS w pliku eksportu. |
+| **Czy saldo otwarcia ma być pokazywane jako obroty?** | Jeśli ten parametr jest zaznaczony, transakcje otwarcia mają wpływ na obroty narastająco. Ten parametr dotyczy tylko sekcji ZOiS w pliku eksportu. |
 | **Saldo rozwarte**                            | Ten parametr można włączać dla kont głównych, w których jest oznaczony odnośny parametr. Ten parametr dotyczy tylko sekcji ZOiS w pliku eksportu.     |
 | **Transakcje zamknięcia**                        | Jeśli ten parametr jest zaznaczony, transakcje zamknięcia będą uwzględnione w eksportowanych danych. Ten parametr dotyczy tylko sekcji ZOiS w pliku eksportu. |
 
@@ -64,9 +63,8 @@ Dodatkowe parametry wyboru można określić za pomocą funkcji **Filtr** na kar
 ## <a name="generate-a-saf-bank-statement-file"></a>Generowanie pliku wyciągu bankowego SAF
 Aby wygenerować plik wyciągu bankowego SAF, kliknij kolejno opcje **Księga główna** &gt; **Zapytania i raporty** &gt; **Standardowy plik audytu dla podatku (SAF-T)** &gt; **Wyciąg bankowy SAF** i ustaw następujące parametry:
 
-|                              |                                                                                    |
+| Parametr                    | opis                                                                        |
 |------------------------------|------------------------------------------------------------------------------------|
-| **Parametr**                | **Opis**                                                                    |
 | **Od dnia**                | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych.                               |
 | **Do dnia**                  | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.                                |
 | **Identyfikacja urzędu** | Na liście zaznacz identyfikator urzędu skarbowego, który ma być używany w pliku eksportu. |
@@ -77,9 +75,8 @@ Aby wygenerować plik wyciągu bankowego SAF, kliknij kolejno opcje **Księga g�
 ## <a name="generate-a-saf-inventory-file"></a>Generowanie pliku zapasów SAF
 Aby wygenerować plik zapasów SAF, kliknij kolejno opcje **Księga główna** &gt; **Zapytania i raporty** &gt; **Standardowy plik audytu dla podatku (SAF-T)** &gt; **Zapasy SAF** i ustaw następujące parametry:
 
-|                              |                                                                                    |
+| Parametr                    | opis                                                                        |
 |------------------------------|------------------------------------------------------------------------------------|
-| **Parametr**                | **Opis**                                                                    |
 | **Od dnia**                | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych.                               |
 | **Do dnia**                  | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.                                |
 | **Identyfikacja urzędu** | Na liście zaznacz identyfikator urzędu skarbowego, który ma być używany w pliku eksportu. |
@@ -109,9 +106,8 @@ Kod raportowania jest liczbą całkowitą. Kody raportowania powinny być numero
 -   **BB** — Kod podatku. Numeracja zachowuje kolejność wśród wszystkich kodów podatków.
 -   **CC** — Numer typu transakcji wewnątrz kodu podatku. Parz tabela poniżej.
 
-|                                       |                             |
+| Typ transakcji                      | Numer typu transakcji     |
 |---------------------------------------|-----------------------------|
-| **Typ transakcji**                  | **Numer typu transakcji** |
 | **Sprzedaż opodatkowana**                     | 01                          |
 | **Sprzedaż wolna od podatku**                    | 02                          |
 | **Podatek należny**                 | 03                          |
@@ -428,7 +424,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td rowspan="4"><strong>ReverseCharge</strong></td>
 <td>11301</td>
 <td>Sprzedaż opodatkowana</td>
-<td>K_31</td>
+<td>K_34</td>
 <td>-</td>
 </tr>
 <tr>
@@ -440,7 +436,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <tr>
 <td>11304</td>
 <td>Opodatkowana faktura korygująca sprzedaży</td>
-<td>K_31</td>
+<td>K_34</td>
 <td>-</td>
 </tr>
 <tr>
@@ -542,9 +538,8 @@ Początkowo konfiguracja jest przykładem rejestru VAT opartego na kodach raport
 
 Aby wygenerować rejestr SAF sprzedaży i zakupów objętych podatkiem VAT, kliknij kolejno opcje **Księga główna** &gt; **Zapytania i raporty** &gt; **Standardowy plik audytu dla podatku (SAF-T)** &gt; **Rejestr SAF sprzedaży i zakupów objętych podatkiem VAT** i ustaw następujące parametry:
 
-|                              |                                                                                    |
+|   Parametr                  |   opis                                                                      |
 |------------------------------|------------------------------------------------------------------------------------|
-| **Parametr**                | **Opis**                                                                    |
 | **Od dnia**                | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych.                               |
 | **Do dnia**                  | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.                               |
 | **Identyfikacja urzędu** | Na liście zaznacz identyfikator urzędu skarbowego, który ma być używany w pliku eksportu. |
@@ -576,9 +571,8 @@ Początkowo konfiguracja jest przykładem rejestru VAT opartego na kodach raport
 
 Aby wygenerować plik faktur VAT SAF, kliknij kolejno opcje **Księga główna** &gt; **Zapytania i raporty** &gt; **Standardowy plik audytu dla podatku (SAF-T)** &gt; **Faktury VAT SAF** i ustaw następujące parametry:
 
-|                              |                                                                                        |
+|  Parametr                   | opis                                                                            |
 |------------------------------|----------------------------------------------------------------------------------------|
-| Parametr                    | opis                                                                            |
 | **Od dnia**                | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych.                                   |
 | **Do dnia**                  | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.                                    |
 | **Identyfikacja urzędu** | Na liście zaznacz identyfikator urzędu skarbowego, który ma być używany w pliku eksportu.     |

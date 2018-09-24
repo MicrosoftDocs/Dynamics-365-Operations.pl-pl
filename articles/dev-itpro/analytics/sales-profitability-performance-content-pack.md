@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 55699cb41c712b49954f9ad6b03c2e7813a3a98a
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: cf4d3e12d33b67158ff4f96580b4ac2eb903bb93
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,21 +36,21 @@ W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft
 
 Pakiet zawartości usługi Power BI **Wyniki sprzedaży i rentowności** umożliwia kierownikom sprzedaży monitorowanie głównych wskaźników sprzedaży: przychodów, zysku brutto i marż zysku. Wykorzystuje dane transakcyjne sprzedaży i przedstawia zarówno zagregowany widok wyników sprzedaży w całej firmie, jak i podział wyników sprzedaży na odbiorców i produkty.
 
-Raporty eksponują zmiany wzrostu przychodów i zysków w czasie. W związku z tym mogą służyć do ostrzegania menedżerów o pozytywnych i negatywnych trendach dla poszczególnych odbiorców i produktów. Ponadto wykresy porównują przychody i rentowność różnych kategorii produktów i grup odbiorców. Dzięki temu menedżerowie kategorii i kierownicy regionalni mogą identyfikować maruderów i liderów. Na koniec kompleksowy raport przestawia przychody z poszczególnych odbiorców względem marży zysku. W ten sposób opiekunowie klientów otrzymują wiarygodną bazę, w oparciu o którą mogą dostosowywać działania sprzedażowe i marketingowe do profilu każdego odbiorcy. 
+Raporty eksponują zmiany wzrostu przychodów i zysków w czasie. W związku z tym mogą służyć do ostrzegania menedżerów o pozytywnych i negatywnych trendach dla poszczególnych odbiorców i produktów. Ponadto wykresy porównują przychody i rentowność różnych kategorii produktów i grup odbiorców. Dzięki temu menedżerowie kategorii i kierownicy regionalni mogą identyfikować maruderów i liderów. Na koniec kompleksowy raport przestawia przychody z poszczególnych odbiorców względem marży zysku. W ten sposób opiekunowie klientów otrzymują wiarygodną bazę, w oparciu o którą mogą dostosowywać działania sprzedażowe i marketingowe do profilu każdego odbiorcy.
 
 Pakiet zawartości **Wyniki sprzedaży i rentowności** umożliwia kierownikom sprzedaży analizowanie wyników sprzedaży pod następującymi względami:
 
--   Przychody od początku roku (według grup odbiorców i indywidualnych odbiorców, kategorii sprzedaży, poszczególnych produktów i regionów geograficznych)
--   Zmiana przychodu rok do roku (według regionów odbiorców i kategorii sprzedaży)
+- Przychody od początku roku (według grup odbiorców i indywidualnych odbiorców, kategorii sprzedaży, poszczególnych produktów i regionów geograficznych)
+- Zmiana przychodu rok do roku (według regionów odbiorców i kategorii sprzedaży)
 
 Rentowność można analizować w następujące sposoby:
 
--   Zysk brutto i marża zysku (według grup odbiorców i kategorii sprzedaży produktów)
--   Zmiana zysku brutto rok do roku
--   Rentowność odbiorców (przychody względem marży brutto)
+- Zysk brutto i marża zysku (według grup odbiorców i kategorii sprzedaży produktów)
+- Zmiana zysku brutto rok do roku
+- Rentowność odbiorców (przychody względem marży brutto)
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Pakiet zawartości Power BI **Wyniki w zakresie sprzedaży i rentowności** jest wyświetlany na stronie **Wyniki w zakresie sprzedaży i rentowności**  (**Sprzedaż i marketing** > **Zapytania i raporty** > **Analiza wydajności sprzedaży** > **Wyniki w zakresie sprzedaży i rentowności**). 
+Pakiet zawartości Power BI **Wyniki w zakresie sprzedaży i rentowności** jest wyświetlany na stronie **Wyniki w zakresie sprzedaży i rentowności** (**Sprzedaż i marketing** \> **Zapytania i raporty** \> **Analiza wydajności sprzedaży** \> **Wyniki w zakresie sprzedaży i rentowności**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
 Pakiet zawartości usługi Power BI **Wyniki sprzedaży i rentowności** zawiera raport obejmujący zbiór miar. Te wskaźniki są wizualizowane jako wykresy, kafelki i tabele. Następująca tabela zawiera przegląd wizualizacji dostępnych w pakiecie zawartości.
@@ -77,19 +77,18 @@ Pakiet zawartości usługi Power BI **Wyniki sprzedaży i rentowności** zawiera
 
 \* Przychód w tym i ubiegłym roku oraz wzrost według kategorii sprzedaży.
 
-
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
-Następujące dane są używane do wypełniania raportów w pakiecie zawartości usługi Power BI **Wyniki sprzedaży i rentowności**. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md). 
+Następujące dane są używane do wypełniania raportów w pakiecie zawartości usługi Power BI **Wyniki sprzedaży i rentowności**. Te dane są reprezentowane jako zagregowane miary umieszczone w magazynie jednostek. Magazyn jednostek to baza danych programu Microsoft SQL Server zoptymalizowana pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Omówienie integracji usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md).
 
-Zagregowane miary w tym pakiecie zawartości są podzbiorem zagregowanych miar, które były dostępne w module Sprzedaż w programach Microsoft Dynamics AX 2012 i Microsoft Dynamics AX 2012 R3. Aby zagregowane miary modułu można było umieścić w magazynie jednostek, trzeba ustawić te miary jako wdrażalne. Aby uzyskać więcej informacji, zobacz procedurę umieszczania zagregowanych miar w magazynie jednostek we wpisie na blogu [Integracja usługi Power BI z magazynem jednostek w systemie Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). 
+Zagregowane miary w tym pakiecie zawartości są podzbiorem zagregowanych miar, które były dostępne w module Sprzedaż w programach Microsoft Dynamics AX 2012 i Microsoft Dynamics AX 2012 R3. Aby zagregowane miary modułu można było umieścić w magazynie jednostek, trzeba ustawić te miary jako wdrażalne. Aby uzyskać więcej informacji, zobacz procedurę umieszczania zagregowanych miar w magazynie jednostek we wpisie na blogu [Integracja usługi Power BI z magazynem jednostek w systemie Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
 
 Następujące najważniejsze zagregowane miary jednostki Wiersze faktury są używane jako podstawa w pakiecie zawartości:
 
-| Jednostka        | Najważniejsze zagregowane miary                   | Źródło danych programu Dynamics 365                    | Pole                                        | opis                                   |
-|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|----------------------------------------------|
-| Wiersze faktury | Przychód                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Kwota w walucie rozliczeniowej.            |
-|               | Koszt sprzedanych towarów                           | InventTrans                                     | SUM(CostAmountPosted + CostAmountAdjustment) | Suma kwoty kosztu i korekty.    |
-|               | Kwota wiersza prowizji — waluta rozliczeniowa | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Kwota prowizji w walucie rozliczeniowej. |
+| Jednostka        | Najważniejsze zagregowane miary                   | Źródło danych programu Dynamics 365 | Pole                                        | opis                                       |
+|---------------|----------------------------------------------|------------------------------|----------------------------------------------|---------------------------------------------------|
+| Wiersze faktury | Przychód                                      | CustInvoiceTrans             | SUM(LineAmountMST)                           | Kwota w walucie rozliczeniowej.            |
+|               | Koszt sprzedanych towarów                           | InventTrans                  | SUM(CostAmountPosted + CostAmountAdjustment) | Suma kwoty kosztu i korekty.    |
+|               | Kwota wiersza prowizji — waluta rozliczeniowa | CustInvoiceTrans             | SUM(CommissAmountMST)                        | Kwota prowizji w walucie rozliczeniowej. |
 
 W poniższej tabeli przedstawiono najważniejsze zagregowane miary jednostki Wiersze faktury używane do tworzenia kilku miar obliczanych w zestawie danych pakietu zawartości.
 

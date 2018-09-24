@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 58653d6e991f1896673a07e3057bd516c74edd76
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -49,6 +49,8 @@ Uwaga: Operacje wymienione poniżej mają zastosowanie do najnowszej wersji prog
 | 707 | Aktywuj urządzenie | Aktywuj bieżące urządzenie, zezwalając uwierzytelnionemu użytkownikowi podanie informacji o połączeniu oraz przypisanie urządzenia i identyfikatora kasy. | Nr | Nr | Nr | Nr | Nr |
 | 134 | Dodaj przynależność | Dodaj wybraną wstępnie przynależność do transakcji. Wybierz przynależność na stronie **Przycisk właściwości**. | Tak | Tak | Nr | Tak | Nr |
 | 135 | Dodaj przynależność z listy | Dodawaj przynależność do transakcji przez wybranie jej na liście. | Tak | Tak | Tak | Tak | Nr |
+| 137 | Dodaj przynależność do odbiorcy | Dodawanie przynależności do odbiorcy na stronie **Szczegóły odbiorcy**. | Nr | Nr | Nr | Tak | Nr |
+| 138 | Usuń przynależność z odbiorcy | Usuwanie przynależności na stronie **Szczegóły odbiorcy**. | Nr | Nr | Nr | Tak | Nr |
 | 643 | Dodaj kod kuponu | Dodaj kupon, wprowadzając jego kod w punkcie sprzedaży. | Tak | Tak | Nr | Tak | Nr |
 | 117 | Dodaj kartę lojalnościową | Wyświetl monit dla użytkownika o wprowadzenie numeru karty lojalnościowej, która zostanie dodana do bieżącej transakcji. | Tak | Tak | Nr | Tak | Nr |
 | 136 | Dodaj numer seryjny | Ta operacja umożliwia użytkownikowi określenie numeru seryjnego dla aktualnie wybranego produktu. | Tak | Tak | Nr | Tak | Nr |

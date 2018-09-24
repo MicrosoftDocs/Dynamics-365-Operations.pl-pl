@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 368468a1c1cd023862f1405dddf3a90574edce22
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 7925a37c595f5ffa040747462d3ea60a3da41858
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/09/2018
 [!include [banner](includes/banner.md)]
 
 > [!NOTE]
-> Usuwamy obecną wersję usługi rekomendowania produktów, ponieważ w nowej wersji wprowadzamy lepszy algorytm i nowsze funkcje zorientowane na handel detaliczny. Aby uzyskać więcej informacji, zobacz [Usunięte i przestarzałe funkcje](../dev-itpro/migration-upgrade/deprecated-features.md). Jeśli masz problemy z już włączoną funkcją rekomendowania produktów, przejdź do dołu strony. 
+> Usuwamy obecną wersję usługi rekomendowania produktów, ponieważ w nowej wersji wprowadzamy lepszy algorytm i nowsze funkcje zorientowane na handel detaliczny. Aby uzyskać więcej informacji, zobacz [Usunięte i przestarzałe funkcje](../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 W programie Dynamics 365 for Retail rekomendacje produktów mogą być wyświetlane na urządzenia w punkcie sprzedaży (POS). Rekomendacje to towary, którymi odbiorca może być zainteresowany w związku z wcześniej dokonywanymi zakupami, towary na liście życzeń odbiorcy oraz towary, które inni podobni odbiorcy kupowali w sklepach internetowych i tradycyjnych. U sprzedawców detalicznych z dużymi katalogami rekomendacje pomagają odbiorcom znajdować ciekawe inne produkty. Eksponując produkty ukierunkowane na zainteresowania i nawyki zakupowe odbiorców, rekomendacje produktów mogą pomóc sprzedawać powiązane i dodatkowe produkty oraz wzmacniać lojalność odbiorców. W programie Dynamics 365 for Retail funkcjonalność rekomendacji produktów bazuje na usługach Cognitive Services i aparacie uczenia maszynowego Microsoft Azure.
 

@@ -26,6 +26,8 @@ ms.lasthandoff: 08/09/2018
 ---
 # <a name="remove-talent-environments"></a>Usuwanie środowisk rozwiązania Talent
 
+[!include [banner](includes/banner.md)]
+
 Ten temat przeprowadzi użytkownika przez proces usuwania środowiska testowego lub produkcyjnego dla oprogramowania Microsoft Dynamics 365 for Talent.
 
 ## <a name="removing-a-test-drive-environment"></a>Usuwanie środowiska testowego

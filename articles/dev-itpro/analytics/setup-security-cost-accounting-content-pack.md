@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 15d25274b02b0e9423fd4670b82c2e398316a1fa
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: d1cd378a58d4a4fe4388238f97e84a8e2b07937b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -31,26 +31,31 @@ ms.lasthandoff: 08/09/2018
 
 W tym temacie wyjaśniono, jak można rozpowszechnić zabezpieczenia na poziomie dostępu w module Rachunek kosztów do zabezpieczeń na poziomie wierszy w usłudze Microsoft Power BI. Ta funkcja pomaga zagwarantować, że użytkownicy widzą tylko dane usługi Power BI, do których mają dostęp.
 
-<a name="overview"></a>Przegląd
---------
+## <a name="overview"></a>Przegląd
 
 Pakiet zawartości **Analiza rachunku kosztów** dla usługi Microsoft Power BI używa zabezpieczeń na poziomie wierszy z usługi Power BI, aby ograniczyć dostęp użytkownikom. Zabezpieczenia są oparte na hierarchii organizacyjnej na poziomie dostępu skonfigurowanej w oknie Parametry rachunku kosztów. Aby uzyskać więcej informacji na temat pakietu zawartości **Analiza rachunku kosztów** dla usługi Power BI, zobacz [Pakiet zawartości usługi Power BI Analiza rachunku kosztów](cost-accounting-analysis-content-pack.md).
 
 ## <a name="setup"></a>Konfiguracja
-Aby rozpowszechnić zabezpieczenia na poziomie dostępu do usługi Power BI, właściciel pakietu zawartości usługi Power BI musi wykonać czynności opisane poniżej. **Uwaga:** Użytkownik, który publikuje pakiet zawartości usługi Power BI **Analiza rachunku kosztów**, automatycznie staje się właścicielem. Tylko właściciel może konfigurować zabezpieczenia w usłudze Power BI. Dodatkowo dopóki właściciel nie doda innych użytkowników w witrynie PowerBI.com, nikt oprócz niego nie będzie widział żadnych danych w pakiecie zawartości **Analiza rachunku kosztów**.
+Aby rozpowszechnić zabezpieczenia na poziomie dostępu do usługi Power BI, właściciel pakietu zawartości usługi Power BI musi wykonać czynności opisane poniżej.
 
-1.  Opublikuj plik definicji do usługi Power BI.
-2.  Zaloguj się w witrynie PowerBI.com.
-3.  Znajdź zestaw danych pakietu zawartości usługi Power BI **Analiza rachunku kosztów**.
-4.  Otwórz stronę zabezpieczeń. 
+> [!NOTE]
+> Użytkownik, który publikuje pakiet zawartości usługi Power BI **Analiza rachunku kosztów**, automatycznie staje się właścicielem. Tylko właściciel może konfigurować zabezpieczenia w usłudze Power BI. Dodatkowo dopóki właściciel nie doda innych użytkowników w witrynie PowerBI.com, nikt oprócz niego nie będzie widział żadnych danych w pakiecie zawartości **Analiza rachunku kosztów**.
+
+1. Opublikuj plik definicji do usługi Power BI.
+2. Zaloguj się w witrynie PowerBI.com.
+3. Znajdź zestaw danych pakietu zawartości usługi Power BI **Analiza rachunku kosztów**.
+4. Otwórz stronę zabezpieczeń.
 
     ![Otwieranie strony zabezpieczeń](./media/CA-picture-1.png)
 
-5.  Rola **Kontroler obiektów kosztów** jest już utworzona. Dodaj innych członków będących częścią hierarchii organizacyjnej na poziomie dostępu zatytułowanej Kontrola kosztów. 
+5. Rola **Kontroler obiektów kosztów** jest już utworzona. Dodaj innych członków będących częścią hierarchii organizacyjnej na poziomie dostępu zatytułowanej Kontrola kosztów.
 
     ![Dodawanie członków](./media/CA-picture-2.png)
 
-Użytkownicy, którzy zostaną dodani do roli **Kontroler obiektów kosztów**, będą widzieć tylko dane, które mają prawo zobaczyć zgodnie z definicją w hierarchii organizacyjnej na poziomie dostępu zatytułowanej Rachunek kosztów. **Uwaga:** Zabezpieczenia na poziomie wierszy dotyczą kafelków i raportów w programie Microsoft Dynamics 365 for Finance and Operations, które zostały osadzone z usługi Power BI.
+Użytkownicy, którzy zostaną dodani do roli **Kontroler obiektów kosztów**, będą widzieć tylko dane, które mają prawo zobaczyć zgodnie z definicją w hierarchii organizacyjnej na poziomie dostępu zatytułowanej Rachunek kosztów.
+
+> [!NOTE]
+> Zabezpieczenia na poziomie wierszy dotyczą kafelków i raportów w programie Microsoft Dynamics 365 for Finance and Operations, które zostały osadzone z usługi Power BI.
 
 ## <a name="updating-security"></a>Aktualizowanie zabezpieczeń
 Jeśli w module Rachunek kosztów dokonano aktualizacji zabezpieczeń na poziomie dostępu, a chcesz, aby usługa Power BI uwzględniała te aktualizacje, należy zaktualizować magazyn jednostek pakietu zawartości usługi Power BI **Analiza rachunku kosztów**. Po wykonaniu aktualizacji magazynu jednostek z poziomu programu Finance and Operations należy zaktualizować artefakty w usłudze PowerBI.com. Aby uzyskać więcej informacji na temat sposobu aktualizowania magazynu jednostek, zobacz [Aktualizowanie magazynu jednostek](power-bi-integration-entity-store.md#update-entity-store). Właściciel pakietu zawartości **Analiz rachunku kosztów** dla usługi Power BI musi również zaktualizować magazyn jednostek, jeśli nowym użytkownikom zostanie przyznany dostęp do hierarchii organizacyjnej. Ponadto właściciel musi dodać nowych użytkowników do roli **Kontroler obiektów kosztów** w witrynie PowerBI.com, tak aby zabezpieczenia na poziomie wierszy były do nich stosowane.
@@ -60,7 +65,4 @@ Zakładamy, że Twoja organizacja chce ograniczyć dostęp do danych. Jeśli z j
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 Aby dowiedzieć się więcej na temat zabezpieczeń na poziomie wierszy w usłudze Power BI, zobacz [Zarządzanie zabezpieczeniami modelu w usłudze Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
-
-
-
 

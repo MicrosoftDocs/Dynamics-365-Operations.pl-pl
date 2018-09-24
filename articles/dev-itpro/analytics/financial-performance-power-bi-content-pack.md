@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 78512e39e82e24f94dae93bbac116e6f07d25438
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](../includes/banner.md)]
 
-> [!Note]
+> [!NOTE]
 > To rozwiązanie PowerBI.com zostało wycofane zgodnie z opisem w temacie [Pakiety zawartości usługi Power BI dostępne w usłudze AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 W tym temacie opisano pakiet zawartość **Wyniki finansowe** dostępny dla rozwiązania Power BI. Omówiono dostępny pulpit nawigacyjny i raporty oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania rozwiązania.
@@ -58,7 +58,7 @@ Każdy kafelek wykorzystuje pomocniczy raport. Raporty zawierają wykresy i tabe
 
 | Raport                      | Informacje zawarte w raporcie |
 |-----------------------------|--------------------------------------|
-| Analiza środków pieniężnych               | Gotówka z podziałem na firmy, gotówka według kwartałów, łączna gotówka oraz gotówka z podziałem na konta<br><br>**Uwaga:** Informacje o gotówce według kwartałów nie obejmują sald początkowych w sumie za pierwszy kwartał. Suma jest pokazywana dla nowych transakcji księgowanych w każdym kwartale.|
+| Analiza środków pieniężnych               | Gotówka z podziałem na firmy, gotówka według kwartałów, łączna gotówka oraz gotówka z podziałem na konta<blockquote>[!NOTE] Informacje o gotówce według kwartałów nie obejmują sald początkowych w sumie za pierwszy kwartał. Suma jest pokazywana dla nowych transakcji księgowanych w każdym kwartale.</blockquote> |
 | Analiza wskaźnika bieżącej płynności      | Wskaźnik bieżącej płynności z podziałem na firmy, wskaźnik bieżącej płynności według kwartałów oraz salda bieżących aktywów i pasywów |
 | Analiza wskaźnika szybkiej płynności        | Wskaźnik szybkiej płynności z podziałem na firmy, wskaźnik szybkiej płynności według kwartałów oraz bieżące salda gotówki, należności i zobowiązań |
 | Analiza kosztów własnych sprzedaży | Koszt własny sprzedaży (KWS) z podziałem na firmy, KWS w tym i poprzednim roku według kwartałów, KWS według firm, łączny KWS oraz stosunek procentowy KWS do sprzedaży |
@@ -69,7 +69,7 @@ Każdy kafelek wykorzystuje pomocniczy raport. Raporty zawierają wykresy i tabe
 | Analiza dochodów           | Dochody rzeczywiste i zabudżetowane przed potrąceniem odsetek i podatków (EBIT) z podziałem na firmy, EBIT z tym i poprzednim roku, stosunek procentowy wydatków do przychodów oraz stosunek wydatków rzeczywistych i zabudżetowanych do przychodów |
 | Analiza przychodów            | Suma przychodów, suma przychodów rzeczywistych a zabudżetowanych z podziałem na firmy, suma przychodów w tym i poprzednim roku, różnica zabudżetowanych przychodów z podziałem na firmy oraz i suma przychodów w tym i poprzednim okresie |
 | Analiza wydatków            | Suma wydatków, suma wydatków rzeczywistych a zabudżetowanych z podziałem na firmy, suma wydatków rzeczywistych a zabudżetowanych według kwartałów, suma wydatków według kategorii kont oraz wskaźnik wydatków operacyjnych |
-| Analiza zafakturowanych przychodów     | Suma rozrachunków z odbiorcami, suma rozrachunków z odbiorcami z podziałem na firmy, suma rozrachunków z odbiorcami według kwartałów oraz salda kont rozrachunków z odbiorcami<br><br>**Uwaga:** Informacje nie obejmują sald początkowych kont księgowych rozrachunków z odbiorcami. Pokazują sumę dla nowych transakcji księgowanych w module Rozrachunki z odbiorcami. |
+| Analiza zafakturowanych przychodów     | Suma rozrachunków z odbiorcami, suma rozrachunków z odbiorcami z podziałem na firmy, suma rozrachunków z odbiorcami według kwartałów oraz salda kont rozrachunków z odbiorcami<blockquote>[!NOTE] Informacje nie obejmują sald początkowych kont księgowych rozrachunków z odbiorcami. Pokazują sumę dla nowych transakcji księgowanych w module Rozrachunki z odbiorcami.</blockquote> |
 
 Wykresy i kafelki we wszystkich tych raportach można filtrować i przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
@@ -89,5 +89,5 @@ Następujące jednostki zostały użyte jako podstawa w pakiecie zawartości roz
 - Księgi
 - ChartofAccounts
 
-Te jednostki zostały użyte do utworzenia obliczanych miar w modelu danych. Obliczane miary są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości. Domyślnie pakiet zawartości grupuje dane z trzech ostatnich lat i jednego roku przyszłego. Aby uwzględnić dodatkowe obliczenia w raportach i pulpicie nawigacyjnym, można zmodyfikować [skoroszyt programu Microsoft Excel](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Ten skoroszyt jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości. 
+Te jednostki zostały użyte do utworzenia obliczanych miar w modelu danych. Obliczane miary są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości. Domyślnie pakiet zawartości grupuje dane z trzech ostatnich lat i jednego roku przyszłego. Aby uwzględnić dodatkowe obliczenia w raportach i pulpicie nawigacyjnym, można zmodyfikować [skoroszyt programu Microsoft Excel](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Ten skoroszyt jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości.
 

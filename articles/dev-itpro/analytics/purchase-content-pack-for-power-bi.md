@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 07b6f433a8355d7f9ed6dce8e26f78d38a86a713
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
 ms.contentlocale: pl-pl
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,32 +36,27 @@ W tym temacie opisano, co się znajduje w pakiecie zawartości usługi Microsoft
 
 Pakiet zawartości usługi Power BI **Analiza wydatków zakupowych** został zaprojektowany, aby pomóc kierownikom ds. zakupów i menedżerom odpowiedzialnym za budżety monitorować wydatki zakupowe. Menedżerowie mogą analizować wydatki zakupowe w następujące sposoby:
 
--   Zakupy od początku roku (według grupy dostawców i indywidualnych dostawców, kategorii zaopatrzenia, poszczególnych produktów i lokalizacji dostawców)
--   Zmiany wydatków zakupowych rok do roku (według grup dostawców i kategorii zaopatrzenia)
+- Zakupy od początku roku (według grupy dostawców i indywidualnych dostawców, kategorii zaopatrzenia, poszczególnych produktów i lokalizacji dostawców)
+- Zmiany wydatków zakupowych rok do roku (według grup dostawców i kategorii zaopatrzenia)
 
 Pakiet zawartości wykorzystuje dane transakcyjne zakupów i przedstawia zarówno zagregowany widok danych zakupowych w całej firmie, jak i podział wydatków zakupowych na dostawców i produkty. Raporty eksponują zmiany wydatków zakupowych w horyzoncie czasowym. W związku z tym raporty mogą służyć do ostrzegania menedżerów o pozytywnych i negatywnych trendach wydatków dla poszczególnych dostawców i produktów. Dodatkowo wykresy pokazują wydatki zakupowe dla różnych kategorii zaopatrzenia i grup dostawców. W związku z tym menedżerowie kategorii i kierownicy regionalni mogą używać tych wykresów do identyfikowania zmian w zachowaniach wydatkowych.
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Pakiet zawartości Power BI **Analiza wydatków związanych z zakupami** jest wyświetlany na stronie **Analiza wydatków i zakupów** (**Zaopatrzenie i sourcing** > **Zapytania i raporty** > **Analiza wydajności zakupów** > **Analiza wydatków i zakupów**). 
+Pakiet zawartości usługi Power BI **Analiza wydatków związanych z zakupami** jest wyświetlany na stronie **Analiza wydatków i zakupów** (**Zaopatrzenie i sourcing** \> **Zapytania i raporty** \> **Analiza wydajności zakupów** \> **Analiza wydatków i zakupów**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
 Pakiet zawartości usługi Power BI **Analiza wydatków zakupowych** obejmuje raport zawierający zestaw wskaźników. Te wskaźniki są wizualizowane jako wykresy, kafelki i tabele. Następująca tabela zawiera przegląd dostępnych wizualizacji.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Strona raportu</th>
 <th>Wykresy</th>
 <th>Kafelki</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Zakupy wg dostawców</td>
 <td><ul>
 <li>10 najważniejszych dostawców wg wartości zakupów (wykres skumulowany słupkowy)</li>
@@ -76,7 +71,7 @@ Pakiet zawartości usługi Power BI **Analiza wydatków zakupowych** obejmuje ra
 <li>Łączna liczba aktywnych dostawców</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Zakupy wg produktów</td>
 <td><ul>
 <li>Zakupy wg kategorii zaopatrzenia/nazwy produktu (wykres kolumnowy)</li>
@@ -89,7 +84,7 @@ Pakiet zawartości usługi Power BI **Analiza wydatków zakupowych** obejmuje ra
 <li>Liczba produktów odpowiedzialnych za 80% zakupów</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Zakupy wg okresu*</td>
 <td><ul>
 <li>Zakupy wg miesiąca/dnia (wykres kolumnowy)</li>
@@ -102,7 +97,7 @@ Pakiet zawartości usługi Power BI **Analiza wydatków zakupowych** obejmuje ra
 <li>% wzrostu zakupów r/r</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Zakupy wg lokalizacji dostawców</td>
 <td><ul>
 <li>Zakupy wg miejscowości</li>
@@ -111,7 +106,7 @@ Pakiet zawartości usługi Power BI **Analiza wydatków zakupowych** obejmuje ra
 </ul></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Analiza wydatków zakupowych wg okresów</td>
 <td><ul>
 <li>Zakupy w bieżącym roku wg miesiąca/dnia (wykres liniowy)</li>
@@ -119,7 +114,7 @@ Pakiet zawartości usługi Power BI **Analiza wydatków zakupowych** obejmuje ra
 </ul></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Analiza wydatków zakupowych wg dostawców</td>
 <td><ul>
 <li>% udziału 10 najważniejszych dostawców w zakupach (wykres lejkowy)</li>

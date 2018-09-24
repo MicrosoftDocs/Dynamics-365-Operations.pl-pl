@@ -25,6 +25,8 @@ ms.lasthandoff: 08/09/2018
 
 # <a name="new-or-updated-task-guides-december-2017"></a>Nowe lub zaktualizowane przewodniki po zadaniach (grudzień 2017 r.)
 
+[!include [banner](../includes/banner.md)]
+
 Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z grudnia 2016 r. — wszystkie języki) dla programu Microsoft Dynamics 365 for Operations.
 
 

@@ -19,10 +19,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 17b42ae7e177a42b732654f2952ec5fe35acb1a9
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,34 +35,34 @@ W tym temacie opisano pakiet zawartość **Metryki pracowników** dostępny dla 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 Pakiet zawartości usługi Power BI zatytułowany **Metryki pracowników** jest wyświetlany w obszarze roboczym **Zarządzanie pracownikami**, jeśli używasz jednego z następujących produktów:
 
-- Microsoft Dynamics 365 for Finance and Operations 
+- Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
 W poniższej tabeli pokazano mierniki dostępne na każdej stronie raportu.
 
-| Raport                                           | Metryki                                                                                                                                                                                                            |
-|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mierniki osób                                   | Podsumowanie innych raportów                                                                                                                           |
-| Analiza stanu osobowego według firmy, działu, lokalizacji | Stan osobowy według firmy, stan osobowy według działu, stan osobowy według lokalizacji i łączny stan osobowy                                                                                                                           |
-| Analiza stanu osobowego według zadania, kroku i menedżera            | Stan osobowy według zadania, stan osobowy według kroku, stan osobowy według menedżera i łączny stan osobowy                                                                                                                                      |
-| Analiza trendu stanu osobowego                         | Stan osobowy w tym roku w porównaniu z zeszłym rokiem z podziałem na firmy oraz skumulowany stan osobowy w ciągu ostatnich 12 miesięcy                                                                                                                        |
+| Raport                                           | Metryki |
+|--------------------------------------------------|---------|
+| Mierniki osób                                   | Podsumowanie innych raportów |
+| Analiza stanu osobowego według firmy, działu, lokalizacji | Stan osobowy według firmy, stan osobowy według działu, stan osobowy według lokalizacji i łączny stan osobowy |
+| Analiza stanu osobowego według zadania, kroku i menedżera            | Stan osobowy według zadania, stan osobowy według kroku, stan osobowy według menedżera i łączny stan osobowy |
+| Analiza trendu stanu osobowego                         | Stan osobowy w tym roku w porównaniu z zeszłym rokiem z podziałem na firmy oraz skumulowany stan osobowy w ciągu ostatnich 12 miesięcy |
 | Analiza FTE                                     | Suma etatów przeliczeniowych (przeliczeniu na pełne etaty), suma przypisanych etatów przeliczeniowych, etaty przeliczeniowe według działów, etaty przeliczeniowe w ciągu ostatnich 12 miesięcy oraz etaty przeliczeniowe według zadań |
 | Dane demograficzne pracowników                           | Stan osobowy według wieku i płci, stan osobowy według pochodzenia etnicznego, stan osobowy według statusu weterana wojennego, stan osobowy według stanu cywilnego, liczba studentów na studiach dziennych, średni staż pracy, średni wiek, stosunek liczby kobiet do liczby mężczyzn oraz języki używane przez pracowników |
-| Analiza stanowisk                                | Wolne stanowiska według działu, stanowiska wolne do obsadzenia, stosunek liczby stanowisk aktywnych do nieaktywnych oraz stanowiska według działów                                                                                                   |
-| Analiza rotacji                               | Rotacja w tym roku w porównaniu do ubiegłego, rotacja, odchodzący pracownicy według wieku i płci, średni staż pracy odchodzących pracowników, pracownicy odchodzący w tym miesiącu oraz odejścia pracowników z podziałem na przyczyny                                                                   |
-| Pracownicy wg działów                             | Pracownicy z numerami pracowniczymi według działów, stanowisk oraz dat rozpoczęcia i zakończenia przypisania do stanowiska                                                                                                                       |
-| Analiza stażu pracy                               | Średni staż pracy, średni staż pracy według firmy, lista stażu pracy                                                                                                                                                              |
-| Rocznice pracowników                           | Rocznice w tym miesiącu, rocznice w przyszłym miesiącu, pracownicy według stażu pracy i rocznic, staż pracy według działów                                                                                                                                                                    |
-| Urodziny pracowników                               | Urodziny w tym miesiącu, urodziny w następnym miesiącu, urodziny pracowników oraz urodziny według miesięcy i działów                                                                                                                                                                    |
-| Projekty zatrudnienia grupowego                               | Projekty zatrudnienia grupowego razem, projekty zatrudnienia grupowego według stanów, projekty zatrudnienia grupowego według działów i właścicieli, projektów zatrudnienia grupowego według zadań oraz projekty zatrudnienia grupowego                                                                                                                                                                    |
+| Analiza stanowisk                                | Wolne stanowiska według działu, stanowiska wolne do obsadzenia, stosunek liczby stanowisk aktywnych do nieaktywnych oraz stanowiska według działów |
+| Analiza rotacji                               | Rotacja w tym roku w porównaniu do ubiegłego, rotacja, odchodzący pracownicy według wieku i płci, średni staż pracy odchodzących pracowników, pracownicy odchodzący w tym miesiącu oraz odejścia pracowników z podziałem na przyczyny |
+| Pracownicy wg działów                             | Pracownicy z numerami pracowniczymi według działów, stanowisk oraz dat rozpoczęcia i zakończenia przypisania do stanowiska |
+| Analiza stażu pracy                               | Średni staż pracy, średni staż pracy według firmy, lista stażu pracy |
+| Rocznice pracowników                           | Rocznice w tym miesiącu, rocznice w przyszłym miesiącu, pracownicy według stażu pracy i rocznic, staż pracy według działów |
+| Urodziny pracowników                               | Urodziny w tym miesiącu, urodziny w następnym miesiącu, urodziny pracowników oraz urodziny według miesięcy i działów |
+| Projekty zatrudnienia grupowego                               | Projekty zatrudnienia grupowego razem, projekty zatrudnienia grupowego według stanów, projekty zatrudnienia grupowego według działów i właścicieli, projektów zatrudnienia grupowego według zadań oraz projekty zatrudnienia grupowego |
 
 Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 Uważaj, aby pobrać pakiet zawartości usługi Power BI **Metryki pracowników** mający zastosowanie do używanej wersji systemu Microsoft Dynamics 365.
 
->[!NOTE]
->Pliki .pbix dostępne w usłudze Lifecycle Services dotyczą tylko modułu Finance and Operations.
+> [!NOTE]
+> Pliki .pbix dostępne w usłudze Lifecycle Services dotyczą tylko modułu Finance and Operations.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 W poniższej tabeli przedstawiono jednostki, na których bazuje pakiet.
@@ -88,6 +88,4 @@ W poniższej tabeli przedstawiono jednostki, na których bazuje pakiet.
 | Trend pracowników           | Liczba pracowników w okresie, stan osobowy, firma i stanowisko                                 | Firma, Położenie geograficzne, Nazwisko pracownika etatowego, Przełożony, Przesunięcie kalendarza, Data, Tytuł pracownika, Dane demograficzne, Zatrudnienie, Zadanie |
 | Projekt zatrudnienia grupowego        | Liczba projektów zatrudnienia grupowego, właściciel projektu oraz stan projektu                     | Firma, Wiersz zatrudnienia grupowego |
 | Wiersz zatrudnienia grupowego           | Dział, typ zatrudnienia i stanowisko                                           | Data, Zadanie, Projekt zatrudnienia grupowego |
-
-
 

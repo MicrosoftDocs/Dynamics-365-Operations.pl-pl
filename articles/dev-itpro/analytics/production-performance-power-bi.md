@@ -17,10 +17,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: d59a7aef90ecef0cd947b833f1cce1e2372f3033
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
 ms.contentlocale: pl-pl
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -43,7 +43,7 @@ Ten pakiet zawartości usługi Power BI umożliwia także analizowanie odchyleń
 Pakiet zawartości usługi Power BI **Wydajność produkcji** zawiera dane, które pochodzą ze zleceń produkcyjnych i szarż produkcyjnych. Raporty nie obejmują danych związanych z produkcją Kanban.
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Zawartość usługi Power BI **Wydajność produkcji** jest wyświetlana na stronie **Wydajność produkcji** (**Kontrola produkcji** > **Zapytania i raporty** > **Analiza wydajności produkcji** > **Wydajność produkcji**). 
+Pakiet zawartości usługi Power BI **Wydajność produkcji** jest wyświetlany na stronie **Wydajność produkcji** (**Kontrola produkcji** \> **Zapytania i raporty** \> **Analiza wydajności produkcji** \> **Wydajność produkcji**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
 
@@ -51,8 +51,8 @@ Pakiet zawartości usługi Power BI **Wydajność produkcji** zawiera zestaw str
 
 W poniższej tabeli znajduje się omówienie dostępnych wizualizacji.
 
-| Strona raportu                                | Wykresy                                               | Kafelki |
-|--------------------------------------------|------------------------------------------------------|-------|
+| Strona raportu                                | Wykresy | Kafelki |
+|--------------------------------------------|--------|-------|
 | Wydajność produkcji                     | <ul><li>Wyprodukowana ilość wg daty</li><li>Wyprodukowana ilość wg produktu i grupy towarów</li><li>Ilość planowana do wyprodukowania wg daty</li><li>10 najgorszych produktów wg terminowości i kompletności</li></ul> | <ul><li>Razem zamówienia</li><li>% na czas i w całości</li><li>% niezakończonych</li><li>% wczesnych</li><li>% opóźnionych</li></ul> |
 | Wady wg produktów                         | <ul><li>Wskaźnik wadliwości (części na milion) wg daty</li><li>Wskaźnik wadliwości (części na milion) wg produktu i grupy towarów</li><li>Wyprodukowana ilość wg daty</li><li>10 najlepszych produktów wg wskaźnika efektywności</li></ul> | <ul><li>Wskaźnik wadliwości (części na milion)</li><li>Ilość wadliwych</li><li>Ilość całkowita</li></ul> |
 | Trend wad wg produktów                   | Wskaźnik wadliwości (części na milion) wg wyprodukowanej ilości | Wskaźnik wadliwości (części na milion) |
@@ -88,35 +88,35 @@ W poniższej tabeli przedstawiono, jak najważniejsze zagregowane miary są uży
 
 | Pomiar                  | Sposób obliczania miary |
 |--------------------------|-------------------------------|
-| % odchylenia produkcji   | SUM('Odchylenie produkcji'[Odchylenie produkcji]) / SUM('Odchylenie produkcji'[Koszty szacowane]) |
+| % odchylenia produkcji   | SUM('Odchylenie produkcji'\[Odchylenie produkcji\]) / SUM('Odchylenie produkcji'\[Koszty szacowane\]) |
 | Wszystkie planowane zamówienia       | COUNTROWS('Planowane zlecenie produkcyjne') |
-| Wcześnie                    | COUNTROWS(FILTER('Planowane zlecenie produkcyjne', 'Planowane zlecenie produkcyjne'[Planowana data zakończenia] \< 'Planowane zlecenie produkcyjne'[Data zapotrzebowania])) |
-| Późno                     | COUNTROWS(FILTER('Planowane zlecenie produkcyjne', 'Planowane zlecenie produkcyjne'[Planowana data zakończenia] \> 'Planowane zlecenie produkcyjne'[Data zapotrzebowania])) |
-| Na czas                  | COUNTROWS(FILTER('Planowane zlecenie produkcyjne', 'Planowane zlecenie produkcyjne'[Planowana data zakończenia] = 'Planowane zlecenie produkcyjne'[Data zapotrzebowania])) |
-| % na czas                | IF ( 'Planowane zlecenie produkcyjne'[Na czas] \<\> 0, 'Planowane zlecenie produkcyjne'[Na czas], IF ('Planowane zlecenie produkcyjne'[Wszystkie planowane zamówienia] \<\> 0, 0, BLANK()) ) / 'Planowane zlecenie produkcyjne'[Wszystkie planowane zamówienia] |
-| Ukończono                | COUNTROWS(FILTER('Zlecenie produkcyjne', 'Zlecenie produkcyjne'[Zgłoszone jako gotowe] = TRUE)) |
-| Wskaźnik wadliwości (części na milion)     | IF( 'Zlecenie produkcyjne'[Ilość całkowita] = 0, BLANK(), (SUM('Zlecenie produkcyjne'[Ilość wadliwych]) / 'Zlecenie produkcyjne'[Ilość całkowita]) \* 1000000) |
-| Wskaźnik opóźnionej produkcji  | 'Zlecenie produkcyjne'[\# opóźnionych] / 'Zlecenie produkcyjne'[Zakończone] |
-| Wcześnie i w całości          | COUNTROWS(FILTER('Zlecenie produkcyjne', 'Zlecenie produkcyjne'[W całości] = TRUE && 'Zlecenie produkcyjne'[Wcześnie] = TRUE)) |
-| \# wczesnych                 | COUNTROWS(FILTER('Zlecenie produkcyjne', 'Zlecenie produkcyjne'[Wcześnie] = TRUE)) |
-| % wczesnych                  | IFERROR( IF('Zlecenie produkcyjne'[\# wczesnych] \<\> 0, 'Zlecenie produkcyjne'[\# wczesnych], IF('Zlecenie produkcyjne'[Razem zamówienia] = 0, BLANK(), 0)) / 'Zlecenie produkcyjne'[Razem zamówienia], BLANK()) |
-| Nie zakończono               | COUNTROWS(FILTER('Zlecenie produkcyjne', 'Zlecenie produkcyjne'[W całości] = FALSE && 'Zlecenie produkcyjne'[Zgłoszone jako gotowe] = TRUE)) |
-| % niezakończonych             | IFERROR( IF('Zlecenie produkcyjne'[Nie zakończono] \<\> 0, 'Zlecenie produkcyjne'[Nie zakończono], IF('Zlecenie produkcyjne'[Razem zamówienia] = 0, BLANK(), 0)) / 'Zlecenie produkcyjne'[Razem zamówienia], BLANK()) |
-| Opóźnione               | 'Zlecenie produkcyjne'[Zgłoszone jako gotowe] = TRUE && 'Zlecenie produkcyjne'[Wartość opóźnienia] = 1 |
-| Wcześnie                 | 'Zlecenie produkcyjne'[Zgłoszone jako gotowe] = TRUE && 'Zlecenie produkcyjne'[Dni opóźnienia] \< 0 |
-| W całości               | 'Zlecenie produkcyjne'[Ilość dobrych] \>= 'Zlecenie produkcyjne'[Zaplanowana ilość] |
-| Zgłoszone jako gotowe                | 'Zlecenie produkcyjne'[Wartość stanu produkcji] = 5 \|\| 'Zlecenie produkcyjne'[Wartość stanu produkcji] = 7 |
-| Opóźnione i w całości           | COUNTROWS(FILTER('Zlecenie produkcyjne', 'Zlecenie produkcyjne'[W całości] = TRUE && 'Zlecenie produkcyjne'[Opóźnione] = TRUE)) |
-| \# opóźnionych                  | COUNTROWS(FILTER('Zlecenie produkcyjne', 'Zlecenie produkcyjne'[Opóźnione] = TRUE)) |
-| % opóźnionych                   | IFERROR( IF('Zlecenie produkcyjne'[\# opóźnionych] \<\> 0, 'Zlecenie produkcyjne'[\# opóźnionych], IF('Zlecenie produkcyjne'[Razem zamówienia] = 0, BLANK(), 0)) / 'Zlecenie produkcyjne'[Razem zamówienia], BLANK()) |
-| Na czas i w całości        | COUNTROWS(FILTER('Zlecenie produkcyjne', 'Zlecenie produkcyjne'[W całości] = TRUE && 'Zlecenie produkcyjne'[Opóźnione] = FALSE && 'Zlecenie produkcyjne'[Wcześnie] = FALSE)) |
-| % na czas i w całości      | IFERROR( IF('Zlecenie produkcyjne'[Na czas i w całości] \<\> 0, 'Zlecenie produkcyjne'[Na czas i w całości], IF('Zlecenie produkcyjne'[Zakończone] = 0, BLANK(), 0)) / 'Zlecenie produkcyjne'[Zakończone], BLANK()) |
+| Wcześnie                    | COUNTROWS(FILTER('Planowane zlecenie produkcyjne', 'Planowane zlecenie produkcyjne'\[Planowana data zakończenia\] \< 'Planowane zlecenie produkcyjne'\[Data zapotrzebowania\])) |
+| Opóźnione                     | COUNTROWS(FILTER('Planowane zlecenie produkcyjne', 'Planowane zlecenie produkcyjne'\[Planowana data zakończenia\] \> 'Planowane zlecenie produkcyjne'\[Data zapotrzebowania\])) |
+| Na czas                  | COUNTROWS(FILTER('Planowane zlecenie produkcyjne', 'Planowane zlecenie produkcyjne'\[Planowana data zakończenia\] = 'Planowane zlecenie produkcyjne'\[Data zapotrzebowania\])) |
+| % na czas                | IF ( 'Planowane zlecenie produkcyjne'\[Na czas\] \<\> 0, 'Planowane zlecenie produkcyjne'\[Na czas\], IF ('Planowane zlecenie produkcyjne'\[Wszystkie planowane zamówienia\] \<\> 0, 0, BLANK()) ) / 'Planowane zlecenie produkcyjne'\[Wszystkie planowane zamówienia\] |
+| Ukończono                | COUNTROWS(FILTER('Zlecenie produkcyjne', 'Zlecenie produkcyjne'\[Zgłoszone jako gotowe\] = TRUE)) |
+| Wskaźnik wadliwości (części na milion)     | IF( 'Zlecenie produkcyjne'\[Ilość całkowita\] = 0, BLANK(), (SUM('Zlecenie produkcyjne'\[Ilość wadliwych\]) / 'Zlecenie produkcyjne'\[Ilość całkowita\]) \* 1000000) |
+| Wskaźnik opóźnionej produkcji  | 'Zlecenie produkcyjne'\[opóźnionych \#\] / 'Zlecenie produkcyjne'\[Zakończone\] |
+| Wcześnie i w całości          | COUNTROWS(FILTER('Zlecenie produkcyjne', 'Zlecenie produkcyjne'\[W całości\] = TRUE && 'Zlecenie produkcyjne'\[Wcześnie\] = TRUE)) |
+| \# wczesnych                 | COUNTROWS(FILTER('Zlecenie produkcyjne', 'Zlecenie produkcyjne'\[Wcześnie\] = TRUE)) |
+| % wczesnych                  | IFERROR( IF('Zlecenie produkcyjne'\[wczesnych \#\] \<\> 0, 'Zlecenie produkcyjne'\[wczesnych \#\], IF('Zlecenie produkcyjne'\[Razem zamówienia\] = 0, BLANK(), 0)) / 'Zlecenie produkcyjne'\[Razem zamówienia\], BLANK()) |
+| Nie zakończono               | COUNTROWS(FILTER('Zlecenie produkcyjne', 'Zlecenie produkcyjne'\[W całości\] = FALSE && 'Zlecenie produkcyjne'\[Zgłoszone jako gotowe\] = TRUE)) |
+| % niezakończonych             | IFERROR( IF('Zlecenie produkcyjne'\[Nie zakończono\] \<\> 0, 'Zlecenie produkcyjne'\[Nie zakończono\], IF('Zlecenie produkcyjne'\[Razem zamówienia\] = 0, BLANK(), 0)) / 'Zlecenie produkcyjne'\[Razem zamówienia\], BLANK()) |
+| Opóźnione               | 'Zlecenie produkcyjne'\[Zgłoszone jako gotowe\] = TRUE && 'Zlecenie produkcyjne'\[Wartość opóźnienia\] = 1 |
+| Wcześnie                 | 'Zlecenie produkcyjne'\[Zgłoszone jako gotowe\] = TRUE && 'Zlecenie produkcyjne'\[Dni opóźnienia\] \< 0 |
+| W całości               | 'Zlecenie produkcyjne'\[Ilość dobrych\] \>= 'Zlecenie produkcyjne'\[Zaplanowana ilość\] |
+| Zgłoszone jako gotowe                | 'Zlecenie produkcyjne'\[Wartość stanu produkcji\] = 5 \|\| 'Zlecenie produkcyjne'\[Wartość stanu produkcji\] = 7 |
+| Opóźnione i w całości           | COUNTROWS(FILTER('Zlecenie produkcyjne', 'Zlecenie produkcyjne'\[W całości\] = TRUE && 'Zlecenie produkcyjne'\[Opóźnione\] = TRUE)) |
+| \# opóźnionych                  | COUNTROWS(FILTER('Zlecenie produkcyjne', 'Zlecenie produkcyjne'\[Opóźnione\] = TRUE)) |
+| % opóźnionych                   | IFERROR( IF('Zlecenie produkcyjne'\[opóźnionych \#\] \<\> 0, 'Zlecenie produkcyjne'\[opóźnionych \#\], IF('Zlecenie produkcyjne'\[Razem zamówienia\] = 0, BLANK(), 0)) / 'Zlecenie produkcyjne'\[Razem zamówienia\], BLANK()) |
+| Na czas i w całości        | COUNTROWS(FILTER('Zlecenie produkcyjne', 'Zlecenie produkcyjne'\[W całości\] = TRUE && 'Zlecenie produkcyjne'\[Opóźnione\] = FALSE && 'Zlecenie produkcyjne'\[Wcześnie\] = FALSE)) |
+| % na czas i w całości      | IFERROR( IF('Zlecenie produkcyjne'\[Na czas i w całości\] \<\> 0, 'Zlecenie produkcyjne'\[Na czas i w całości\], IF('Zlecenie produkcyjne'\[Zakończone\] = 0, BLANK(), 0)) / 'Zlecenie produkcyjne'\[Zakończone\], BLANK()) |
 | Razem zamówienia             | COUNTROWS('Zlecenie produkcyjne') |
-| Ilość całkowita           | SUM('Zlecenie produkcyjne'[Ilość dobrych]) + SUM('Zlecenie produkcyjne'[Ilość wadliwych]) |
-| Wskaźnik wadliwości (części na milion)        | IF( 'Transakcje marszruty'[Ilość przetworzona] = 0, BLANK(), (SUM('Transakcje marszruty'[Ilość wadliwych]) / 'Transakcje marszruty'[Ilość przetworzona]) \* 1000000) |
-| Mieszany wskaźnik wadliwości (części na milion) | IF( 'Transakcje marszruty'[Ilość mieszana razem] = 0, BLANK(), (SUM('Transakcje marszruty'[Ilość wadliwych]) / 'Transakcje marszruty'[Ilość mieszana razem]) \* 1000000) |
-| Ilość przetworzona       | SUM('Transakcje marszruty'[Ilość dobrych]) + SUM('Transakcje marszruty'[Ilość wadliwych]) |
-| Ilość mieszana razem     | SUM('Zlecenie produkcyjne'[Ilość dobrych]) + SUM('Transakcje marszruty'[Ilość wadliwych]) |
+| Ilość całkowita           | SUM('Zlecenie produkcyjne'\[Ilość dobrych\]) + SUM('Zlecenie produkcyjne'\[Ilość wadliwych\]) |
+| Wskaźnik wadliwości (części na milion)        | IF( 'Transakcje marszruty'\[Ilość przetworzona\] = 0, BLANK(), (SUM('Transakcje marszruty'\[Ilość wadliwych\]) / 'Transakcje marszruty'\[Ilość przetworzona\]) \* 1000000) |
+| Mieszany wskaźnik wadliwości (części na milion) | IF( 'Transakcje marszruty'\[Ilość mieszana razem\] = 0, BLANK(), (SUM('Transakcje marszruty'\[Ilość wadliwych\]) / 'Transakcje marszruty''\[Ilość mieszana razem\]) \* 1000000) |
+| Ilość przetworzona       | SUM('Transakcje marszruty'\[Ilość dobrych\]) + SUM('Transakcje marszruty'\[Ilość wadliwych\]) |
+| Ilość mieszana razem     | SUM('Zlecenie produkcyjne'\[Ilość dobrych\]) + SUM('Transakcje marszruty'\[Ilość wadliwych\]) |
 
 Następująca tabela przedstawia najważniejsze wymiary używane jako filtry do dzielenia zagregowanych miar w celu uzyskania większej szczegółowości i lepszego wglądu analitycznego.
 
@@ -130,6 +130,4 @@ Następująca tabela przedstawia najważniejsze wymiary używane jako filtry do 
 | Jednostki                  | Identyfikator i Nazwa                                                   |
 | Zasoby                 | Identyfikator zasobu, Nazwa zasobu, Typ zasobu i Grupa zasobów |
 | Produkty                  | Numer produktu, Nazwa produktu, Identyfikator towaru i Grupa towarów         |
-
-
 

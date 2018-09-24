@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: a271887c4d2cfe4d0ee6518482dc4ebe407ebe56
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -63,8 +63,8 @@ Jednostka biznesowa modelu danych jest przedstawiona jako kontener (rekord). Wł
 
 Pojedynczy składnik typu Model danych może zawierać kilka hierarchii jednostek biznesowych właściwych dla danej domeny. Może również zawierać mapowania modelu obsługujące przepływ danych właściwy dla raportu w czasie wykonywania. Hierarchie są rozróżniane przez pojedynczy rekord, który został wybrany jako główny dla mapowania modelu. Na przykład model danych obszaru domeny płatności może obsługiwać następujące mapowania:
 
-- Firma > Dostawca > Transakcje płatności w przypadku domeny rozrachunków z dostawcami
-- Odbiorca > Firma > Transakcje płatności w przypadku domeny rozrachunków z odbiorcami
+- Firma \> Dostawca \> Transakcje płatności w przypadku domeny rozrachunków z dostawcami
+- Odbiorca \> Firma \> Transakcje płatności w przypadku domeny rozrachunków z odbiorcami
 
 Zauważ, że jednostki biznesowe, np. Firma i Transakcje płatności, są projektowane tylko jeden raz. Następnie różne mapowania używają ich wielokrotnie.
 
@@ -74,7 +74,7 @@ Mapowanie modelu obsługujące wychodzące dokumenty elektroniczne ma następuj�
 - Obsługuje parametry wejściowe użytkownika, które można zdefiniować jako źródła danych modelu danych, gdy część danych musi być określona w czasie wykonywania.
 - Obsługuje przekształcanie danych programu Finance and Operations w wymagane grupy. Umożliwia także filtrowanie, sortowanie i sumowanie danych, a także dołączanie logicznych pól obliczanych projektowanych za pomocą formuł przypominających formuły programu Microsoft Excel, co pokazano na ilustracji poniżej. Aby uzyskać więcej informacji, zobacz [Projektant formuł w raportowaniu elektronicznym](general-electronic-reporting-formula-designer.md).
 
-[![Projektant formuł](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
+[![Projektant formuł](./media/ER-overview-01.png)](./media/ER-overview-01.png)
 
 Mapowanie modelu obsługujące przychodzące dokumenty elektroniczne ma następujące możliwości:
 
@@ -175,7 +175,7 @@ Wymagane repozytoria **Projekt usługi LCS** można rejestrować indywidualnie d
 ## <a name="supported-scenarios"></a>Obsługiwane scenariusze
 ### <a name="building-a-data-model"></a>Budowanie modelu danych
 
-Aplikacja ER zawiera projektanta modeli, który może służyć do budowania modeli danych dla konkretnych domen biznesowych. Wszystkie jednostki biznesowe właściwe dla domeny oraz relacje między nimi można przedstawić w modelu danych jako strukturę hierarchiczną. Ilustracja poniżej zawiera przykład tego rodzaju modelu danych (modelu danych dla domeny płatności). 
+Aplikacja ER zawiera projektanta modeli, który może służyć do budowania modeli danych dla konkretnych domen biznesowych. Wszystkie jednostki biznesowe właściwe dla domeny oraz relacje między nimi można przedstawić w modelu danych jako strukturę hierarchiczną. Ilustracja poniżej zawiera przykład tego rodzaju modelu danych (modelu danych dla domeny płatności).
 
 [![Model danych domeny płatności](./media/ER-overview-04.png)](./media/ER-overview-04.png)
 
@@ -185,19 +185,18 @@ Aby zapoznać się z tym scenariuszem w szczegółach, obejrzyj przewodnik po za
 
 Zawartość modelu danych (etykiety i opisy) można przetłumaczyć na inne języki obsługiwane przez program Finance and Operations. Powody tłumaczenia zawartości modelu danych mogą być następujące:
 
--   Podczas projektowania — w celu poprawy czytelności zawartości dla projektantów formatów mówiących w obcych językach, którzy używają modelu danych do mapowania danych składników formatu.
--   Podczas wykonywania — aby zawartość była bardziej przyjazna dla użytkownika poprzez wyświetlanie monitów i pomocy dla parametrów ustawianych w czasie wykonywania, a także wyświetlanie skonfigurowanych komunikatów sprawdzania poprawności (błędów i ostrzeżeń) w języku preferowanym przez aktualnie zalogowanego użytkownika.
+- Podczas projektowania — w celu poprawy czytelności zawartości dla projektantów formatów mówiących w obcych językach, którzy używają modelu danych do mapowania danych składników formatu.
+- Podczas wykonywania — aby zawartość była bardziej przyjazna dla użytkownika poprzez wyświetlanie monitów i pomocy dla parametrów ustawianych w czasie wykonywania, a także wyświetlanie skonfigurowanych komunikatów sprawdzania poprawności (błędów i ostrzeżeń) w języku preferowanym przez aktualnie zalogowanego użytkownika.
 
-Poniższa ilustracja zawiera przykład tłumaczenia zawartości modelu danych z języka angielskiego na japoński. 
+Poniższa ilustracja zawiera przykład tłumaczenia zawartości modelu danych z języka angielskiego na japoński.
 
 [![Zawartość modelu danych w języku angielskim](./media/ER-overview-05.png)](./media/ER-overview-05.png)
 
 [![Zawartość modelu danych przetłumaczona na język japoński](./media/ER-overview-06.png)](./media/ER-overview-06.png)
 
-
 ### <a name="configuring-data-model-mappings-for-outgoing-documents"></a>Konfigurowanie mapowań modelu danych dla dokumentów wychodzących
 
-Aplikacja ER zawiera projektanta mapowania modeli, który pozwala użytkownikom mapować zaprojektowane modele danych na konkretne źródła danych programu Finance and Operations. W oparciu o mapowanie dane zostaną zaimportowane w czasie wykonywania z wybranych źródeł danych do modelu danych. Następnie model danych jest używany jako abstrakcyjne źródło danych formatów modułu Raportowanie elektroniczne, które generują wychodzące dokumenty elektroniczne. Na ilustracji poniżej widać przykład takiego mapowania modelu danych (mapowanie modelu danych **Polecenie przelewu SEPA** związanego z domeną płatności). 
+Aplikacja ER zawiera projektanta mapowania modeli, który pozwala użytkownikom mapować zaprojektowane modele danych na konkretne źródła danych programu Finance and Operations. W oparciu o mapowanie dane zostaną zaimportowane w czasie wykonywania z wybranych źródeł danych do modelu danych. Następnie model danych jest używany jako abstrakcyjne źródło danych formatów modułu Raportowanie elektroniczne, które generują wychodzące dokumenty elektroniczne. Na ilustracji poniżej widać przykład takiego mapowania modelu danych (mapowanie modelu danych **Polecenie przelewu SEPA** związanego z domeną płatności).
 
 [![Przykład mapowania modelu danych](./media/ER-overview-07.png)](./media/ER-overview-07.png)
 
@@ -210,13 +209,13 @@ Aplikacja ER zawiera projektanta mapowania modeli, który pozwala użytkownikom 
 
 ### <a name="storing-a-designed-model-component-as-a-model-configuration"></a>Przechowywanie zaprojektowanego składnika modelu jako konfiguracji modelu
 
-Narzędzie ER może przechowywać zaprojektowany model danych razem powiązanymi mapowaniami danych jako konfigurację modelu bieżącego wystąpienia programu Finance and Operations. Ilustracja poniżej zawiera przykład tego rodzaju konfiguracji modelu danych (konfiguracji modelu płatności). 
+Narzędzie ER może przechowywać zaprojektowany model danych razem powiązanymi mapowaniami danych jako konfigurację modelu bieżącego wystąpienia programu Finance and Operations. Ilustracja poniżej zawiera przykład tego rodzaju konfiguracji modelu danych (konfiguracji modelu płatności).
 
 Aby zapoznać się z tym scenariuszem w szczegółach, obejrzyj przewodnik po zadaniu **ER Mapowanie modelu danych na wybrane źródła danych** (część procesu biznesowego **7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)**).
 
 ### <a name="building-a-format-that-uses-a-data-model-as-a-base"></a>Budowanie formatu na podstawie modelu danych
 
-Aplikacja ER zawiera projektanta formatów umożliwiającego tworzenie formatów dokumentów elektronicznych dla wybranej domeny biznesowej poprzez wybranie składnika modelu jako bazy. Ten sam projektant formatów pozwala zmapować utworzony format na mapowanie modelu danych wybranej domeny jako źródło danych. Na ilustracji poniżej widać przykład tego rodzaju formatu (konfiguracji formatu obsługującej format płatności **BACS** dla Wielkiej Brytanii). 
+Aplikacja ER zawiera projektanta formatów umożliwiającego tworzenie formatów dokumentów elektronicznych dla wybranej domeny biznesowej poprzez wybranie składnika modelu jako bazy. Ten sam projektant formatów pozwala zmapować utworzony format na mapowanie modelu danych wybranej domeny jako źródło danych. Na ilustracji poniżej widać przykład tego rodzaju formatu (konfiguracji formatu obsługującej format płatności **BACS** dla Wielkiej Brytanii).
 
 [![Przykład formatu opartego na modelu danych](./media/ER-overview-09.png)](./media/ER-overview-09.png)
 
@@ -240,7 +239,7 @@ Aby zapoznać się z tym scenariuszem w szczegółach, obejrzyj przewodnik po za
 - [Szablon raportu o płatnościach (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 - [Ograniczony szablon raportu o płatnościach (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
-### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Tworzenie konfiguracji do importowania danych z przychodzących dokumentów elektronicznych  
+### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Tworzenie konfiguracji do importowania danych z przychodzących dokumentów elektronicznych
 Projektant formatów w aplikacji ER może służyć do opisania dokumentu elektronicznego, którego planuje się używać do importowania danych w formacie XML lub tekstowym. Zaprojektowany format jest używany do analizowania składni przychodzących dokumentów. Projektant mapowania formatów w aplikacji ER może służyć do zdefiniowania powiązań elementów projektowanego formatu z modelem danych. Ilustracja poniżej zawiera przykład tego rodzaju formatu i mapowania formatu. W tym przykładzie są importowane wyciągi bankowe NETS zawierające szczegóły płatności dla dostawców w formacie tekstowym.
 
 [![ER-format-designer](./media/ER-overview-12.png)](./media/ER-overview-12.png)
@@ -260,7 +259,7 @@ Aplikacja ER może przechowywać zaprojektowany format razem ze skonfigurowanymi
 
 ### <a name="configuring-finance-and-operations-to-start-to-use-a-created-format-internally"></a>Konfigurowanie programu Finance and Operations, aby zaczął używać utworzonego formatu wewnętrznie
 
-Program Finance and Operations można skonfigurować w taki sposób, aby zaczął używać utworzonego formatu do generowania raportów elektronicznych. Odwołanie do utworzonej konfiguracji formatu powinno być zdefiniowane w ustawieniach konkretnej domeny. Aby na przykład zacząć używać konfiguracji formatu ER dla płatności elektronicznych do dostawcy w formacie BACS, odwołanie do konfiguracji formatu powinno się znajdować konkretnych metodach płatności, jak przedstawiono na ilustracjach poniższej: 
+Program Finance and Operations można skonfigurować w taki sposób, aby zaczął używać utworzonego formatu do generowania raportów elektronicznych. Odwołanie do utworzonej konfiguracji formatu powinno być zdefiniowane w ustawieniach konkretnej domeny. Aby na przykład zacząć używać konfiguracji formatu ER dla płatności elektronicznych do dostawcy w formacie BACS, odwołanie do konfiguracji formatu powinno się znajdować konkretnych metodach płatności, jak przedstawiono na ilustracjach poniższej:
 
 [![Konfiguracja formatu BACS (Wielka Brytania)](./media/ER-overview-14.png)](./media/ER-overview-14.png)
 
@@ -367,15 +366,9 @@ Narzędzie ER pozwala automatyczne powielać zmiany z najnowszej wersji składni
 |                                                  |                       | Deklaracja na fakturze od dostawcy (Islandia)                   | Format deklaracji na fakturze od dostawcy dla Islandii                      |
 |                                                  |                       | Raport o deklaracji na fakturze od dostawcy (Islandia)            | Raport o deklaracji na fakturze od dostawcy dla Islandii                      |
 
-
-
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Wymagania dotyczące tłumaczenia — Tworzenie konfiguracji raportowania elektronicznego](electronic-reporting-configuration.md)
 
 [Zarządzanie cyklem życia konfiguracji raportowania elektronicznego](general-electronic-reporting-manage-configuration-lifecycle.md)
-
-
-
 
