@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a451a3e936916c6bec750ddfbc2bf71fadb7c222
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 6b934b87cb5098641fba8c5b9214a0b2b6cde40d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -39,7 +39,7 @@ Raporty dostępne w pakiecie zawartości usługi Power BI **Rozwój pracownika e
 | Analiza poziomu kwalifikacji pracowników | Poziomy umiejętności pracowników według działów, pracownicy według poziomów umiejętności i typów umiejętności oraz i najniższe i najwyższe poziomy poszczególnych umiejętności |
 | Profil kwalifikacji                 | Profil kwalifikacji wybranego pracownika etatowego |
 | Analiza kwalifikacji                | Umiejętności według typu i kategorii |
-| Analiza oceny wydajności   | Pracownicy o najniższej i najwyższej ocenie według zadań, oceny pracowników według działów, pracownicy według ocen i typów stanowisk oraz najwyższe i najniższe oceny na poszczególnych stanowiskach  |
+| Analiza oceny wydajności   | Pracownicy o najniższej i najwyższej ocenie według zadań, oceny pracowników według działów, pracownicy według ocen i typów stanowisk oraz najwyższe i najniższe oceny na poszczególnych stanowiskach |
 | Analiza wydajności pracowników etatowych | Oceny pracowników dla wybranych ocen dokonywanych przez menedżerów |
 
 Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
@@ -48,7 +48,7 @@ Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu 
 
 | Jednostka                   | Zawartość                                                                                                   | Powiązania z innymi jednostkami |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| Przesunięcie kalendarza          | Przesunięcia kalendarzy dla raportów wycinkowych                                                                          | Przeszłe przypisania stanowisk, Trend stanowisk, Trend pracowników, Pracownik z rozwiązanym stosunkiem pracy 
+| Przesunięcie kalendarza          | Przesunięcia kalendarzy dla raportów wycinkowych                                                                          | Przeszłe przypisania stanowisk, Trend stanowisk, Trend pracowników, Pracownik z rozwiązanym stosunkiem pracy |
 | Firma                  | Firmy, według których będą filtrowane raporty                                                                             | Bieżący pracownik etatowy, Pracownik z rozwiązanym stosunkiem pracy, Trend pracowników |
 | Bieżące stanowisko         | Stanowiska na obecny dzień, równoważnik pełnego etatu (FTE), wolne stanowiska i stanowiska wolne do obsadzenia | Zadanie, Stanowisko |
 | Bieżący pracownik etatowy         | Liczba pracowników na obecny dzień, wiek i stan osobowy                                                         | Firma, Położenie geograficzne, Nazwisko pracownika etatowego, Przełożony, Tytuł pracownika, Dane demograficzne, Zadanie, Zatrudnienie, Stanowisko |
@@ -65,10 +65,9 @@ Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu 
 | Nazwisko pracownika etatowego            | Imię, drugie imię i nazwisko                                                                       | Bieżący pracownik, Pracownik z rozwiązanym stosunkiem pracy, Trend pracowników |
 | Tytuł pracownika           | Tytuł i data ustalenia stażu pracy                                                                                   | Bieżący pracownik etatowy, Pracownik z rozwiązanym stosunkiem pracy, Trend pracowników |
 | Trend pracowników           | Liczba pracowników w okresie, stan osobowy, firma i stanowisko                                                        | Firma, Położenie geograficzne, Nazwisko pracownika etatowego, Przełożony, Przesunięcie kalendarza, Data, Tytuł pracownika, Dane demograficzne, Zatrudnienie, Zadanie |
-| Stanowisko                      | Funkcja, typ i tytuł                                                                                      | Bieżący pracownik, Bieżące stanowisko, Trend pracowników, Umiejętności preferowane w zadaniu, Przeszłe przypisania stanowisk, Trend stanowisk, Pracownik z rozwiązanym stosunkiem pracy |
+| Stanowisko                      | Funkcja, typ i tytuł                                                                                  | Bieżący pracownik, Bieżące stanowisko, Trend pracowników, Umiejętności preferowane w zadaniu, Przeszłe przypisania stanowisk, Trend stanowisk, Pracownik z rozwiązanym stosunkiem pracy |
 | Umiejętności preferowane w zadaniu      | Ważność, ocena, umiejętności i poziom umiejętności                                                                 | Stanowisko |
-| Analiza kwalifikacji pracowników  | Certyfikaty, poziom, data poziomu i umiejętności                                                                    | Nazwisko pracownika etatowego, Kwalifikacje |  
+| Analiza kwalifikacji pracowników  | Certyfikaty, poziom, data poziomu i umiejętności                                                                    | Nazwisko pracownika etatowego, Kwalifikacje |
 | Wydajność              | Ocena, opis i model oceniania                                                                      | Bieżący pracownik, Bieżące stanowisko, Trend pracowników, Umiejętności preferowane w zadaniu, Przeszłe przypisania stanowisk, Trend stanowisk, Pracownik z rozwiązanym stosunkiem pracy |
-|  Kwalifikacje                   | Umiejętności, typ umiejętności i klasyfikacja                                                                              | Analiza kwalifikacji pracowników, Umiejętności preferowane w zadaniu |                                                                                                                        
-
+| Kwalifikacje                    | Umiejętności, typ umiejętności i klasyfikacja                                                                              | Analiza kwalifikacji pracowników, Umiejętności preferowane w zadaniu |
 

@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 476b53d7e5a5ee764c23034344f375fff5db47e8
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 8021e54fdd5c4c71c016e52801d3f2f627de761b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -38,7 +38,7 @@ Filmy są uszeregowane według funkcji, dlatego w celu obejrzenia całej treści
 
 #### <a name="data-integration"></a>Integracja danych
 - [Integracja scenariusza Od potencjalnego klienta do środków pieniężnych](https://youtu.be/AVV9x5x-XCg) 
-- [Synchronizowanie zlecenia pracy między rozwiązaniami Dynamics 365 for Field Service i Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU&t=2s)
+- [Synchronizowanie zlecenia pracy między rozwiązaniami Dynamics 365 for Field Service i Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 #### <a name="data-management"></a>Zarządzanie danymi
 - [Używanie jednostek danych i pakietów danych w programie Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
@@ -61,6 +61,7 @@ Filmy są uszeregowane według funkcji, dlatego w celu obejrzenia całej treści
 
 #### <a name="intelligence"></a>Analizy
 - [Używanie własnej bazy danych (BYOD) w programie Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Jak w rozwiązaniu Dynamics 365 używać pakietu zawartości usługi Power BI Zarządzanie kosztami](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 #### <a name="lifecycle-services-lcs"></a>Usługa Lifecycle Services (LCS)
 - [Biblioteka elementów zawartości w usłudze Lifecycle Services](https://www.youtube.com/watch?v=z-2xMRa1nOs)
@@ -93,6 +94,9 @@ Filmy są uszeregowane według funkcji, dlatego w celu obejrzenia całej treści
 - [Równoważenie partii](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be)
 - [Ulepszenia procesu zwalniania zleceń produkcyjnych](https://www.youtube.com/watch?v=Rm3ojAz6Zu0&feature=youtu.be)
 - [Planowanie wizualne za pomocą wykresu Gantta w zleceniach produkcyjnych i zamówieniach partii](https://youtu.be/BtbuShkGj4I)
+
+#### <a name="tax-engine"></a>Aparat podatków
+- [Omówienie aparatu podatków](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
 
 #### <a name="warehouse-management"></a>Zarządzanie magazynem
 - [Wsadowe pobieranie zwolnionej produkcji do magazynu](https://youtu.be/8urAJn50dQ8)

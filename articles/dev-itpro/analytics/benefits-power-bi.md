@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 532834b377cfb8eda4902c387a850314302b22d8
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -39,13 +39,12 @@ Pakiet zawartości usługi Power BI zatytułowany **Świadczenia** jest wyświet
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Raporty umieszczone w pakiecie zawartości usługi Power BI
 Raporty dostępne w pakiecie zawartości usługi Power BI **Świadczenia** mają wykresy i tabele przedstawiające dodatkowe informacje. W poniższej tabeli opisano dostępne raporty.
 
-| Raport                       | Zawartość                                                                                       |
-|------------------------------|------------------------------------------------------------------------------------------------|
-| Omówienie zapisywania na świadczenia  | Plany z największą i najmniejszą liczbą rejestracji, rejestracje według grup pracowników oraz wybrane opcje planów świadczeń |
-| Świadczenia dla pracowników            | Rejestracje pracowników wg wybranego świadczenia                                                        |
-                                                                                             
-Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+| Raport                      | Zawartość                                                                                       |
+|-----------------------------|------------------------------------------------------------------------------------------------|
+| Omówienie zapisywania na świadczenia | Plany z największą i najmniejszą liczbą rejestracji, rejestracje według grup pracowników oraz wybrane opcje planów świadczeń |
+| Świadczenia dla pracowników           | Rejestracje pracowników wg wybranego świadczenia                                                        |
 
+Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w narzędziu Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 Następujące dane są używane do wypełniania raportów w pakiecie zawartości usługi Power BI **Świadczenia**. W tej tabeli przedstawiono jednostki, na których bazuje pakiet.
@@ -72,6 +71,4 @@ Następujące dane są używane do wypełniania raportów w pakiecie zawartości
 | Nazwisko pracownika etatowego            | Imię, drugie imię i nazwisko                                                                       | Bieżący pracownik etatowy, Pracownik z rozwiązanym stosunkiem pracy, Trend pracowników |
 | Tytuł pracownika           | Tytuł i data ustalenia stażu pracy                                                                                   | Bieżący pracownik etatowy, Pracownik z rozwiązanym stosunkiem pracy, Trend pracowników |
 | Trend pracowników           | Liczba pracowników w okresie, stan osobowy, firma i stanowisko                                                        | Firma, Wynagrodzenie, Położenie geograficzne, Nazwisko pracownika etatowego, Przełożony, Przesunięcie kalendarza, Data, Tytuł pracownika, Dane demograficzne, Zatrudnienie, Zadanie, Świadczenia |
-
-
 

@@ -16,10 +16,10 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 3f6b83166ba942e40e5e1f7c0ef9df40a44bfbc5
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -54,7 +54,7 @@ Przed rozpoczęciem należy utworzyć lub pozyskać raport programu Power BI, kt
 Wykonaj poniższe kroki, aby dodać plik .pbix jako artefakt projektu programu Visual Studio.
 
 1. Utwórz nowy projekt w odpowiednim modelu.
-2. W Eksploratorze rozwiązań zaznacz projekt, kliknij go prawym przyciskiem myszy, a następnie wybierz kolejno polecenia **Dodaj** > **Nowy element**.
+2. W Eksploratorze rozwiązań zaznacz projekt, kliknij go prawym przyciskiem myszy, a następnie wybierz kolejno polecenia **Dodaj** \> **Nowy element**.
 3. W oknie dialogowym **Dodaj nowy element** w obszarze **Artefakty operacji** zaznacz szablon **Zasób**.
 4. Wprowadź nazwę, która będzie służyć to odwoływania się do raportu w metadanych języka X++, a następnie kliknij przycisk **Dodaj**.
 
@@ -77,7 +77,7 @@ Wykonaj następujące kroki w celu rozszerzenia definicji formularza dla obszaru
 
 1. Otwórz projektanta formularzy w celu rozszerzenia definicji projektu.
 2. W definicji projektu zaznacz górny element o nazwie **Projekt | Wzorzec: Działający obszar roboczy**.
-3. Kliknij prawym przyciskiem myszy, a następnie wybierz kolejno opcje **Nowy** > **Karta**, aby dodać nowy formant o nazwie **FormTabControl1**.
+3. Kliknij prawym przyciskiem myszy, a następnie wybierz kolejno opcje **Nowy** \> **Karta**, aby dodać nowy formant o nazwie **FormTabControl1**.
 4. W projektancie formularza wybierz opcję **FormTabControl1**.
 5. Kliknij prawym przyciskiem myszy, a następnie wybierz opcję **Strona nowej karty**, aby dodać nową kartę.
 6. Zmień nazwę karty na bardziej sugestywną, taką jak **Obszar roboczy**.
@@ -86,12 +86,12 @@ Wykonaj następujące kroki w celu rozszerzenia definicji formularza dla obszaru
 9. Zmień nazwę karty na bardziej sugestywną, taką jak **Analizy**.
 10. W projektancie formularza wybierz opcję **Analizy (karta)**.
 11. We właściwości **Podpis** ustaw wartość **Analizy**.
-12. Kliknij formant prawym przyciskiem myszy, a następnie wybierz kolejno opcje **Nowy** > **Grupa**, aby dodać nowy formant grupy formularzy.
+12. Kliknij formant prawym przyciskiem myszy, a następnie wybierz kolejno opcje **Nowy** \> **Grupa**, aby dodać nowy formant grupy formularzy.
 13. Zmień nazwę grupy formularzy na bardziej sugestywną, taką jak **powerBIReportGroup**.
 14. W projektancie formularza wybierz opcję **PanoramaBody (karta)**, a następnie przeciągnij formant na kartę **Obszar roboczy**.
 15. W definicji projektu zaznacz górny element o nazwie **Projekt | Wzorzec: Działający obszar roboczy**.
 16. Kliknij prawym przyciskiem myszy, a następnie wybierz opcję **Usuń wzorzec**.
-17. Ponownie kliknij prawym przyciskiem myszy, a następnie wybierz kolejno opcje **Dodaj wzorzec** > **Obszar roboczy na kartach**.
+17. Ponownie kliknij prawym przyciskiem myszy, a następnie wybierz kolejno opcje **Dodaj wzorzec** \> **Obszar roboczy na kartach**.
 18. Wykonaj kompilację, aby sprawdzić działanie wprowadzonych zmian.
 
 Na poniższej ilustracji widać, jak projekt wygląda po zastosowaniu tych zmian.
@@ -116,7 +116,7 @@ Wykonaj następujące kroki, aby dodać logikę biznesową, która inicjuje form
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
-        private boolean initReportControl = true;     
+        private boolean initReportControl = true;
         protected void initAnalyticalReport()
         {
             if (!initReportControl)
@@ -126,11 +126,11 @@ Wykonaj następujące kroki, aby dodać logikę biznesową, która inicjuje form
             // Note: secure entry point into the Workspace's Analytics report
             if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
             {
-                FMPBIWorkspaceController controller = new FMPBIWorkspaceController();
+                // initialize the PBI report control using shared helper
                 PBIReportHelper::initializeReportControl('FMPBIWorkspaces', powerBIReportGroup);
             }
             initReportControl = false;
-    }
+        }
         /// <summary>
         /// Initializes the form.
         /// </summary>
@@ -159,23 +159,22 @@ Ten rozdział zawiera informacje o klasie pomocy służącej do osadzania raport
 #### <a name="syntax"></a>Składnia
 ```
 public static void initializeReportControl(
-     str                 _resourceName,
-     FormGroupControl    _formGroupControl,
-     str                 _defaultPageName = '',
-     boolean             _showFilterPane = false,
-     boolean             _showNavPane = false,
-     List                _defaultFilters = new List(Types::Class))
+    str                 _resourceName,
+    FormGroupControl    _formGroupControl,
+    str                 _defaultPageName = '',
+    boolean             _showFilterPane = false,
+    boolean             _showNavPane = false,
+    List                _defaultFilters = new List(Types::Class))
 ```
 
 #### <a name="parameters"></a>Parametry
 
-|       Nazwisko       |                                                              opis                                                               |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|   resourceName   |                                                    Nazwa zasobu .pbix.                                                     |
-| formGroupControl |                                    Formant grupy formularzy, do którego ma zostać zastosowany formant raportu narzędzia Power BI.                                     |
-| defaultPageName  |                                                         Domyślna nazwa strony.                                                         |
-|  showFilterPane  |   Wartość logiczna wskazująca, czy okienko filtrów powinno być wyświetlane (<strong>true</strong>), czy ukryte (<strong>false</strong>).   |
-|   showNavPane    | Wartość logiczna wskazująca, czy okienko nawigacji powinno być wyświetlane (<strong>true</strong>), czy ukryte (<strong>false</strong>). |
-|  defaultFilters  |                                              Domyślne filtry raportu programu Power BI.                                              |
-
+| Nazwisko             | opis                                                                                                  |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| resourceName     | Nazwa zasobu .pbix.                                                                              |
+| formGroupControl | Formant grupy formularzy, do którego ma zostać zastosowany formant raportu narzędzia Power BI.                                              |
+| defaultPageName  | Domyślna nazwa strony.                                                                                       |
+| showFilterPane   | Wartość logiczna wskazująca, czy okienko filtrów powinno być wyświetlane (**true**), czy ukryte (**false**).     |
+| showNavPane      | Wartość logiczna wskazująca, czy okienko nawigacji powinno być wyświetlane (**true**), czy ukryte (**false**). |
+| defaultFilters   | Domyślne filtry raportu programu Power BI.                                                                 |
 

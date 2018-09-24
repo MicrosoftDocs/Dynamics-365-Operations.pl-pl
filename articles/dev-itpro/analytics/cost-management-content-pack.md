@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: b06abae184d07cd3b914caf74bdb16a7803919af
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/09/2018
 
 Pakiet zawartości **Zarządzanie kosztami** dostępny w usłudze Microsoft Power BI jest przeznaczony dla pracowników księgujących zapasy lub osób w organizacji, które są zainteresowane lub odpowiedzialne za zapasy lub produkcję w toku (PWT) albo zainteresowane lub odpowiedzialne za analizowanie odchyleń kosztu standardowego.
 
-> [!Note]
+> [!NOTE]
 > Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opisany w tym temacie dotyczy programu Dynamics 365 for Finance and Operations 8.0.
 > 
 > Pakiet zawartości usługi Power BI **Zarządzanie kosztami** opublikowany w witrynie AppSource został wycofany. Aby uzyskać więcej informacji o tym wycofaniu, zobacz [Pakiety zawartości usługi Power BI dostępne w usłudze AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
@@ -171,7 +171,7 @@ Poniższe tabele zawierają omówienie wizualizacji dostępnych w pakiecie zawar
 |                                         | 10 najważniejszych zasobów wg niekorzystnego odchylenia produkcji  |
 |                                         | 10 najważniejszych zasobów wg korzystnego odchylenia produkcji    |
 
-### <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
+## <a name="understanding-the-data-model-and-entities"></a>Opis modelu danych i jednostek
 
 Dane z programu Microsoft Dynamics 365 for Finance and Operations są używane do wypełniania stron raportów w pakiecie zawartości usługi Power BI **Zarządzanie kosztami**. Te dane są przedstawiane jako zagregowane miary umieszczane w magazynie jednostek, który jest bazą danych programu Microsoft SQL Server zoptymalizowaną pod kątem analiz. Aby uzyskać więcej informacji, zobacz [Integracja usługi Power BI z magazynem jednostek](power-bi-integration-entity-store.md).
 
@@ -188,26 +188,25 @@ W poniższej tabeli przedstawiono najważniejsze obliczane miary w pakiecie zawa
 
 | Pomiar                            | Obliczenie |
 |------------------------------------|-------------|
-| Saldo początkowe                  | Saldo początkowe = [Saldo końcowe]-[Zmiana netto] |
-| Ilość salda początkowego             | Ilość salda początkowego = [Ilość salda końcowego]-[Ilość zmiany netto] |
-| Saldo końcowe                     | Saldo końcowe = (CALCULATE(SUM([Kwota]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))) |
-| Ilość salda końcowego                | Ilość salda końcowego = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))) |
-| Zmiana netto                         | Zmiana netto = SUM([AMOUNT]) |
-| Ilość zmiany netto                    | Ilość zmiany netto = SUM([QTY]) |
-| Wskaźnik obrotu zapasami wg ilości | Wskaźnik obrotu zapasami wg ilości = if(OR([Średnie saldo zapasów] \<= 0, [Wydania zapasów sprzedanych lub zużytych] \>= 0), 0, ABS([Wydania zapasów sprzedanych lub zużytych])/[Średnie saldo zapasów]) |
-| Średnie saldo zapasów          | Średnie saldo zapasów = (([Saldo końcowe] + [Saldo początkowe]) / 2) |
-| Dostępne zapasy dzienne             | Dostępne zapasy dzienne = 365 / CostObjectStatementEntries[Wskaźnik obrotu zapasami wg ilości] |
-| Dokładność zapasów                 | Dokładność zapasów wg ilości = IF([Saldo końcowe] \<= 0, IF(OR([Ilość z inwentaryzacji zapasów] \<\> 0, [Saldo końcowe] \< 0), 0, 1), MAX(0, ([Saldo końcowe] - ABS([Ilość z inwentaryzacji zapasów]))/[Saldo końcowe])) |
+| Saldo początkowe                  | Saldo początkowe = \[Saldo końcowe\]-\[Zmiana netto\] |
+| Ilość salda początkowego             | Ilość salda początkowego = \[Ilość salda końcowego\]-\[Ilość zmiany netto\] |
+| Saldo końcowe                     | Saldo końcowe = (CALCULATE(SUM(\[Kwota\]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\])))) |
+| Ilość salda końcowego                | Ilość salda końcowego = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
+| Zmiana netto                         | Zmiana netto = SUM(\[AMOUNT\]) |
+| Ilość zmiany netto                    | Ilość zmiany netto = SUM(\[QTY\]) |
+| Wskaźnik obrotu zapasami wg ilości | Wskaźnik obrotu zapasami wg ilości = if(OR(\[Średnie saldo zapasów\] \<= 0, \[Wydania zapasów sprzedanych lub zużytych\] \>= 0), 0, ABS(\[Wydania zapasów sprzedanych lub zużytych\])/\[Średnie saldo zapasów\]) |
+| Średnie saldo zapasów          | Średnie saldo zapasów = ((\[Saldo końcowe\] + \[Saldo początkowe\]) / 2) |
+| Dostępne zapasy dzienne             | Dostępne zapasy dzienne = 365 / CostObjectStatementEntries\[Wskaźnik obrotu zapasami wg ilości\] |
+| Dokładność zapasów                 | Dokładność zapasów wg ilości = IF(\[Saldo końcowe\] \<= 0, IF(OR(\[Ilość z inwentaryzacji zapasów\] \<\> 0, \[Saldo końcowe\] \< 0), 0, 1), MAX(0, (\[Saldo końcowe\] - ABS(\[Ilość z inwentaryzacji zapasów\]))/\[Saldo końcowe\])) |
 
 Następujące najważniejsze wymiary są używane jako filtry do dzielenia zagregowanych miar w celu uzyskania większej szczegółowości i lepszego wglądu analitycznego.
 
 
-|                         Jednostka                          |             Przykłady atrybutów              |
+| Jednostka                                                  | Przykłady atrybutów                          |
 |---------------------------------------------------------|-------------------------------------------------|
-|                        Produkty                         | Numer produktu, Nazwa produktu, Jednostka, Grupy pozycji |
-| Hierarchie kategorii (przypisane do roli Zarządzanie kosztami) |       Hierarchia kategorii, Poziom kategorii        |
-|                     Firmy                      |               Nazwy firm                |
-|                    Kalendarze obrachunkowe                     |  Kalendarz obrachunkowy, Rok, Kwartał, Okres, Miesiąc  |
-|                          Witryna                           |        Identyfikator, Nazwa, Adres, Województwo, Kraj        |
-
+| Produkty                                                | Numer produktu, Nazwa produktu, Jednostka, Grupy pozycji |
+| Hierarchie kategorii (przypisane do roli Zarządzanie kosztami) | Hierarchia kategorii, Poziom kategorii              |
+| Firmy                                          | Nazwy firm                              |
+| Kalendarze obrachunkowe                                        | Kalendarz obrachunkowy, Rok, Kwartał, Okres, Miesiąc   |
+| Witryna                                                    | Identyfikator, Nazwa, Adres, Województwo, Kraj               |
 

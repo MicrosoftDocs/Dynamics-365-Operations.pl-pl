@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: d58bab48c65bb891155af95c79738b019e5760bf
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -66,13 +66,11 @@ Do zadania importu lub eksportu można dodać określone jednostki lub wybrać s
 ### <a name="set-the-data-format-for-the-job"></a>Ustawianie formatu danych zadania
 Podczas wybieranie jednostki należy wybrać format eksportowanych lub importowanych danych. Formaty można określić, używając kafelka **Ustawienia źródeł danych**. Format danych źródłowych jest kombinacją elementów **Typ**, **Format pliku**, **Separator wiersza** i **Separator kolumny**. Istnieją również inne atrybuty, ale to są główne, które należy znać. Poniższa tabela zawiera listę prawidłowych kombinacji.
 
-| **Format pliku**        | **Separator wiersza/kolumny**                   | **Styl XML**             |
+| Format pliku            | Separator wiersza/kolumny                       | Styl XML                 |
 |------------------------|--------------------------------------------|---------------------------|
 | Excel                  | Excel                                      | \-Nie dotyczy-                     |
 | Plik XML                    | \-Nie dotyczy-                                      | Element XML Atrybut XML |
 | Ograniczone, stała szerokość | Przecinek, średnik, tabulator, pionowa kreska, dwukropek | \-Nie dotyczy-                     |
-
-
 
 ### <a name="sequence-the-entities"></a>Określanie kolejności jednostek
 Kolejność jednostek można określić w szablonie danych albo w zadaniach importu lub eksportu. Po uruchomieniu zadania, które zawiera więcej niż jedną jednostkę należy się upewnić, że kolejność jednostek danych jest prawidłowa. Kolejność jednostek określa się głównie po to, aby obsłużyły zależności funkcjonalne między jednostkami. Jeżeli jednostki nie mają żadnych zależności funkcjonalnych, można zaplanować ich import lub eksport równoległy.

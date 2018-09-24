@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
+ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
+ms.openlocfilehash: 3f18a5d7b7f7639b864f579b758005c7a30803a2
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -74,7 +74,7 @@ Można również znaleźć naszą zawartość przy użyciu dowolnego aparatu wys
 Rozwiązania Finance and Operations, Retail i Talent mają jeden wspólny spis treści w witrynie dokumentów, dzięki czemu użytkownicy widzą kontekst aktualnie wyświetlonego tematu. Pozwala to również używać formantu Filtr nad spisem treści do znajdowania szukanych tematów.
 
 ### <a name="follow-a-topic"></a>Przejście do tematu
-Aby przejść do tematu, kliknij przycisk +Śledzenie pod polem komentarza. Aby przejść do tematu należy się zalogować. Szczegółowe informacje zawiera sekcja [Pozostaw komentarz](#leave-us-a-comment).  
+Aby przejść do tematu, kliknij przycisk +Śledzenie pod polem komentarza. Aby przejść do tematu należy się zalogować. Szczegółowe informacje zawiera sekcja [Zostaw nam opinię](#leave-us-feedback).  
 
 ### <a name="use-an-rss-feed"></a>Używanie źródła danych RSS
 Aby subskrybować źródło danych RSS ze wszystkimi aktualizacjami zawartości platformy Unified Operations, wpisz następujące łącze w przeglądarce obsługującej źródła danych RSS, takiej jak Internet Explorer, lub w menedżerze źródeł danych RSS: 

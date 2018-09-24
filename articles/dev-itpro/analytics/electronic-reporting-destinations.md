@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 3aa27b3ac263c6c952de7e4b508f48f21ba489ad
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -37,21 +37,21 @@ Konfiguracje formatów w module raportowania elektronicznego (ER) zwykle zawiera
 ## <a name="availability-and-general-prerequisites"></a>Dostępność i ogólne warunki wstępne
 Funkcjonalność miejsc docelowych w raportowaniu elektronicznym nie jest dostępna w wersji Microsoft Dynamics AX 7.0 (z lutego 2016 r.). W związku z tym aby móc korzystać ze wszystkich funkcji opisanych w tym temacie, należy zainstalować program Microsoft Dynamics 365 for Operations w wersji 1611 (z listopada 2016 r.). Alternatywnie można zainstalować jeden z poniższych wstępnie wymaganych składników. Należy jednak pamiętać, że te alternatywne rozwiązania zapewniają bardziej ograniczoną funkcjonalność miejsc docelowych raportowania elektronicznego.
 
--   Aplikacja Microsoft Dynamics AX w wersji 7.0.1 (z maja 2016 r.)
--   [Poprawkę aplikacji](https://fix.lcs.dynamics.com/issue/results/?q=3160213) do zarządzania miejscami docelowymi w ER
+- Aplikacja Microsoft Dynamics AX w wersji 7.0.1 (z maja 2016 r.)
+- [Poprawkę aplikacji](https://fix.lcs.dynamics.com/issue/results/?q=3160213) do zarządzania miejscami docelowymi w ER
 
 Miejsca docelowe można ustawiać tylko dla konfiguracji ER, które zostały zaimportowane, oraz dla formatów, które są dostępne na stronie **Konfiguracje raportowania elektronicznego**.
 
 ## <a name="overview"></a>Przegląd
 Funkcje zarządzania miejscami docelowymi ER są dostępne w oknie **Administrowanie organizacją** &gt; **Raportowanie elektroniczne**. W tym oknie można zastąpić domyślne zachowanie konfiguracji. Zaimportowane konfiguracje są tutaj wyświetlane dopiero wtedy, gdy klikniesz przycisk **Nowy**, a następnie w polu **Odwołanie** wybierzesz konfigurację, dla której mają zostać utworzone ustawienia miejsca docelowego.
 
-[![Wybieranie konfiguracji w polu Odwołanie](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg) 
+[![Wybieranie konfiguracji w polu Odwołanie](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg)
 
-Po utworzeniu odwołania można utworzyć plikowe miejsce docelowe dla każdego folderu lub pliku. 
+Po utworzeniu odwołania można utworzyć plikowe miejsce docelowe dla każdego folderu lub pliku.
 
 [![Tworzenie plikowego miejsca docelowego](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-> [!NOTE] 
+> [!NOTE]
 > Można utworzyć jedno plikowe miejsce docelowe dla każdego składnika wyjściowego tego samego formatu, takiego jak folder lub plik wybrany w polu **Nazwa pliku**. Następnie można włączać i wyłączać poszczególne miejsca docelowe w plikowym miejscu docelowym w oknie dialogowym **Ustawienia aplikacji docelowej**. Przycisk **Ustawienia** pozwala kontrolować wszystkie miejsca docelowe należące do wybranego plikowego miejsca docelowego. W oknie dialogowe **Ustawienia aplikacji docelowej** można kontrolować każde miejsce docelowe osobno, ustawiając dla niego opcję **Włączone**.
 
 [![Okno dialogowe Ustawienia aplikacji docelowej](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
@@ -73,7 +73,7 @@ Po kliknięciu przycisku **Edytuj** dla pola **Do** lub **DW** pojawi się okno 
 
 Jeśli wybierzesz typ **Wiadomość e-mail zarządzania drukowaniem**, można wprowadzić stałe adresy e-mail w polu **Do**. Aby używać adresów e-mail, które nie są stałe, należy wybrać typ źródła wiadomości e-mail dla plikowego miejsca docelowego. Obsługiwane są następujące wartości: **Odbiorca**, **Dostawca**, **Prospekt**, **Kontakt**, **Konkurent**, **Pracownik**, **Kandydat**, **Potencjalny dostawca** i **Niezatwierdzony dostawca**. Po wybraniu typu źródła wiadomości e-mail użyj przycisku obok pola **Konto źródłowe poczty e-mail**, aby otworzyć formularz **Projektant formuł**. Ten formularz pozwala dołączyć formułę reprezentującą konto wybranej strony do miejsca docelowego poczty e-mail.
 
-[![Konfigurowanie typu Wiadomość e-mail zarządzania drukowaniem](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
+[![Konfigurowanie typu Wiadomość e-mail zarządzania drukowaniem](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg)
 
 Należy zauważyć, że formuły są specyficzne dla konfiguracji ER. W polu **Formuła** wprowadź specyficzne dla dokumentu odwołanie do podmiotu typu Odbiorca lub Dostawca. Zamiast wpisywać informacje ręcznie, można odszukać węzeł źródła danych reprezentujący konto odbiorcy lub dostawcy, a następnie kliknąć przycisk **Dodaj źródło danych**, aby zaktualizować formułę. Na przykład jeśli używasz konfiguracji przelewu bankowego ISO 20022, węzłem reprezentującym konto dostawcy jest **'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID**. W przeciwnym razie wpisz dowolny ciąg tekstowy, np. **DE-001**, aby zapisać formułę.
 
@@ -87,23 +87,27 @@ W oknie dialogowym **Wiadomość e-mail do** kliknij przycisk kosza obok pola **
 
 Użyj tego typu wiadomości e-mail, jeśli używana konfiguracja ma w źródłach danych węzeł reprezentujący adres e-mail. W projektancie formuł można użyć źródeł danych i funkcji, aby uzyskać poprawnie sformatowany adres e-mail.
 
-[![Przypisywanie źródła danych adresu e-mail do pocztowego miejsca docelowego](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
+[![Przypisywanie źródła danych adresu e-mail do pocztowego miejsca docelowego](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg)
 
-**Uwaga:** Serwer usługi Simple Mail Transfer Protocol (SMTP) musi być skonfigurowany i dostępny. Serwer SMTP można określić w programie Finance and Operations w oknie **Administrowanie systemem** &gt; **Ustawienia** &gt; **E-mail** &gt; **Parametry poczty e-mail**.
+> [!NOTE]
+> Serwer usługi Simple Mail Transfer Protocol (SMTP) musi być skonfigurowany i dostępny. Serwer SMTP można określić w programie Finance and Operations w oknie **Administrowanie systemem** &gt; **Ustawienia** &gt; **E-mail** &gt; **Parametry poczty e-mail**.
 
 ### <a name="archive-destination"></a>Archiwalne miejsce docelowe
 
 Ta opcja służy do wysyłania danych wyjściowych do folderu programu Microsoft SharePoint lub magazynu w usłudze Microsoft Azure. W ustawieniu **Włączone** zaznacz wartość **Tak**, aby wysłać dane wyjściowe do miejsca docelowego zdefiniowanego przez wybrany typ dokumentu. Do wyboru są dostępne tylko typy dokumentów, dla których ustawiono grupę **Plik**. Definiowanie typów dokumentów odbywa się w oknie **Administrowanie organizacją** &gt; **Zarządzanie dokumentami** &gt; **Typy dokumentów**. Konfiguracja miejsc docelowych ER jest taka sama, jak konfiguracja w systemie zarządzania dokumentami.
 
-[![Strona Typy dokumentów](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
+[![Strona Typy dokumentów](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg)
 
-Lokalizacja określa, gdzie plik jest zapisywany. Po włączeniu miejsca docelowego **Archiwum** wyniki wykonania konfiguracji mogą być zapisywane w archiwum zadania. Wyniki można obejrzeć w oknie **Administrowanie organizacją** &gt; **Raportowanie elektroniczne** &gt; **Zarchiwizowane zadania raportowania elektronicznego**. **Uwaga:** Można wybrać typ dokumentu dla archiwum zadań w programie Finance and Operations. Odpowiednie opcje są w oknie **Administrowanie organizacją** &gt; **Obszary robocze** &gt; **Raportowanie elektroniczne** &gt; **Parametry raportowania elektronicznego**.
+Lokalizacja określa, gdzie plik jest zapisywany. Po włączeniu miejsca docelowego **Archiwum** wyniki wykonania konfiguracji mogą być zapisywane w archiwum zadania. Wyniki można obejrzeć w oknie **Administrowanie organizacją** &gt; **Raportowanie elektroniczne** &gt; **Zarchiwizowane zadania raportowania elektronicznego**.
+
+> [!NOTE]
+> Można wybrać typ dokumentu dla archiwum zadań w programie Finance and Operations. Odpowiednie opcje są w oknie **Administrowanie organizacją** &gt; **Obszary robocze** &gt; **Raportowanie elektroniczne** &gt; **Parametry raportowania elektronicznego**.
 
 #### <a name="sharepoint"></a>SharePoint
 
-Plik można zapisać w wyznaczonym folderze programu SharePoint. Domyślny serwer programu SharePoint można zdefiniować w oknie **Administrowanie organizacją** &gt; **Zarządzanie dokumentami** &gt; **Parametry zarządzania dokumentami** na karcie **SharePoint**. Po skonfigurowaniu folderu programu SharePoint można wybrać go jako folder, w którym będą zapisywane dane wyjściowe raportowania elektronicznego dla typu dokumentu. 
+Plik można zapisać w wyznaczonym folderze programu SharePoint. Domyślny serwer programu SharePoint można zdefiniować w oknie **Administrowanie organizacją** &gt; **Zarządzanie dokumentami** &gt; **Parametry zarządzania dokumentami** na karcie **SharePoint**. Po skonfigurowaniu folderu programu SharePoint można wybrać go jako folder, w którym będą zapisywane dane wyjściowe raportowania elektronicznego dla typu dokumentu.
 
-[![Wybieranie folderu programu SharePoint](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg) 
+[![Wybieranie folderu programu SharePoint](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg)
 
 #### <a name="azure-storage"></a>Magazyn Azure
 
@@ -119,7 +123,10 @@ Jeśli ustawisz w opcji **Włączone** wartość **Tak**, będzie tworzony podgl
 
 ### <a name="power-bi-destination"></a>Miejsce docelowe w usłudze Power BI
 
-W opcji **Włączone** ustaw wartość **Tak**, aby wykorzystywać konfigurację raportowania elektronicznego (ER) do organizowania przesyłania danych z wystąpienia programu Finance and Operations do usług Microsoft Power BI. Przesłane pliki są przechowywane w wystąpieniu serwera programu Microsoft SharePoint, który musi skonfigurowany do tego celu. Aby uzyskać więcej informacji, zobacz [Używanie konfiguracji raportowania elektronicznego w celu dostarczania do usługi Power BI danych z rozwiązania Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md). **Wskazówka:** Aby zastąpić domyślne zachowanie (czyli wyświetlanie okno dialogowego konfiguracji), można utworzyć odwołanie do miejsca docelowego oraz plikowe miejsce docelowe dla głównego składnika wyjściowego, a następnie wyłączyć wszystkie miejsca docelowe.
+W opcji **Włączone** ustaw wartość **Tak**, aby wykorzystywać konfigurację raportowania elektronicznego (ER) do organizowania przesyłania danych z wystąpienia programu Finance and Operations do usług Microsoft Power BI. Przesłane pliki są przechowywane w wystąpieniu serwera programu Microsoft SharePoint, który musi skonfigurowany do tego celu. Aby uzyskać więcej informacji, zobacz [Używanie konfiguracji raportowania elektronicznego w celu dostarczania do usługi Power BI danych z rozwiązania Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md).
+
+> [!TIP]
+> Aby zastąpić domyślne zachowanie (czyli wyświetlanie okno dialogowego konfiguracji), można utworzyć odwołanie do miejsca docelowego oraz plikowe miejsce docelowe dla głównego składnika wyjściowego, a następnie wyłączyć wszystkie miejsca docelowe.
 
 ## <a name="security-considerations"></a>Zagadnienia dotyczące zabezpieczeń
 Dla miejsc docelowych ER są używane dwa typy uprawnień i obowiązków. Jeden typ kontroluje możliwość obsługi ogólnych miejsc docelowych skonfigurowanych dla firmy (to znaczy kontroluje dostęp do strony **Miejsca docelowe raportowania elektronicznego**). Drugi typ kontroluje zdolność użytkownika aplikacji do zastępowania — w czasie wykonywania — ustawień miejsc docelowych skonfigurowanych przez programistę lub konsultanta funkcjonalnego ER.
@@ -158,7 +165,4 @@ Warunkiem wstępnym jest to, aby format był dostępny w konfiguracjach raportow
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie raportowania elektronicznego](general-electronic-reporting.md)
-
-
-
 

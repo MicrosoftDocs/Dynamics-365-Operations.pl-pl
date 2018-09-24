@@ -1,7 +1,7 @@
 ---
 title: "Dystrybucje w raportach z wydatków"
 description: "Przy wprowadzaniu wydatków w raporcie z wydatków można rozmieścić wydatki w wielu projektach, firmach lub kontach w organizacji."
-author: saraschi2
+author: ShylaThompson
 manager: AnnBe
 ms.date: 09/19/2017
 ms.topic: article
@@ -12,16 +12,14 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
-ms.search.validFrom:
-- month/year of release that feature was introduced in
-- in format yyyy-mm-dd
+ms.author: shylaw
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0f3f50061fc5b9b4cfc00000492840061fc3b386
+ms.sourcegitcommit: 384c38f3e154495c882434d1c85cef63396cd897
+ms.openlocfilehash: 00d051a8f644a6a0bedb0acc3eaac9a3dd1109e7
 ms.contentlocale: pl-pl
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/15/2018
 
 ---
 
@@ -36,10 +34,10 @@ Na przykład Nancy, przedstawicielka handlowa firmy Fabrikam wyjechała z Kopenh
 Ponieważ Nancy pracowała przy dwóch osobnych projektach, gdy była we Frankfurcie, przy wprowadzaniu raportu z wydatków przydziela odpowiednio wydatki dla każdego projektu. W poniższej tabeli przedstawiono, jak Nancy przydzieliła wydatki.
 
 
-| <strong>Typ wydatku</strong> | <strong>Całkowita kwota wydatków</strong> | <strong>Kwota przydzielona do projektu A</strong> | <strong>Kwota przydzielona do projektu B</strong> |
-|-------------------------------|---------------------------------------|--------------------------------------------------|--------------------------------------------------|
-|          Bilety kolejowe           |                DKK 578                |                     DKK 405                      |                     DKK 173                      |
-|             Hotel             |                725 EUR                |                     557 EUR                      |                     168 EUR                      |
-|             Posiłki             |                346 EUR                |                     284 EUR                      |                      62 EUR                      |
+| Typ wydatku | Całkowita kwota wydatków|Kwota przydzielona do projektu A| Kwota przydzielona do projektu B |
+|--------------|---------------------|-------------------------------|---------------------------------|
+|Bilety kolejowe   |DKK 578              |DKK 405                        |DKK 173                          |
+|Hotel         |725 EUR              |557 EUR                        |168 EUR                          |
+|Posiłki         |346 EUR              |284 EUR                        |62 EUR                           |
 
 
