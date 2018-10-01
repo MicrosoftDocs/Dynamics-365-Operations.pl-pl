@@ -32,18 +32,18 @@ Aplikacja Attract udostępnia funkcje zarządzania procesem zatrudniania nowych 
 
 Funkcje aplikacji Attract wymieniono poniżej.
 
-### <a name="attract-dashboard"></a>Pulpit nawigacyjny aplikacji Attract
+## <a name="attract-dashboard"></a>Pulpit nawigacyjny aplikacji Attract
 W tym miejscu członkowie zespołu rekrutującego mogą zobaczyć szczegóły stanowisk, które obsługują. Także tutaj menedżer ds. zatrudnienia lub rekruter mogą dodać nowe stanowiska do aplikacji Attract, tworząc je indywidualnie lub importując wszystkie naraz z arkusza programu Excel.
 
-### <a name="jobs"></a>Funkcje
+## <a name="jobs"></a>Funkcje
 Na stronie **Stanowisko** można wyświetlić edytować informacje, takie jak opis i lokalizacja stanowiska. Strona **Stanowisko** umożliwia zebranie zespołu rekrutującego oraz dodawanie lub zmianę rekruterów oraz osób prowadzących rozmowy. Na stronie **Stanowisko** można także dodać nowych kandydatów.
 
-### <a name="candidates"></a>Kandydaci
+## <a name="candidates"></a>Kandydaci
 Kandydatów można dodać do stanowiska pojedynczo lub przesłać ich większą liczbę w arkuszu programu Excel. W procesie zatrudniania na nowe stanowisko wszyscy kandydaci są automatycznie dodawani do pierwszego etapu, Zgłoszenie. W tym miejscu można wyświetlić i zarządzać informacjami o zgłoszeniach wszystkich kandydatów. Można przesłać i wyświetlić dodatkowe dokumenty razem z informacjami kontaktowymi, takimi jak adresy e-mail, numery telefonów i łącza do kont w sieciach społecznościowych. Jeżeli kandydat podał łącze do profilu w serwisie LinkedIn i skonfigurowano integrację z serwisem LinkedIn (co wymaga licencji rekrutera dla serwisu LinkedIn), zostanie wyświetlony profil kandydata.
 
-### <a name="stages"></a>Etapy
+## <a name="stages"></a>Etapy
 Aplikacja Attract udostępnia wstępnie zdefiniowany proces zatrudniania zawierający cztery podstawowe etapy: Zgłoszenie, Wstępna selekcja, Rozmowa i Oferta. Nowi kandydaci rozpoczynają od etapu zgłoszenia, na którym sprawdzany jest ich życiorys, list motywacyjny, portfolio oraz inne dokumenty aplikacyjne. Z tego etapu można przesunąć kandydata do etapu wstępnej selekcji, w którym są zapraszani do rozmowy telefonicznej lub rozmowy wideo w aplikacji Skype. Menedżer ds. zatrudniania i rekruter mogą przekazać opinię o kandydacie i przenieść go do kolejnego etapu. Następnie planowane są rozmowy z dostępnymi członkami zespołu ds. zatrudniania i mogą to być rozmowy o różnym czasie trwania — indywidualne lub w grupach. Po zakończeniu rozmów następuje zebranie i sprawdzenie opinii zespołu ds. rozmów. Wybrani kandydaci są przenoszeni do ostatniego etapu, na którym składana jest oferta i następuje przygotowanie do sprawdzenia i zatwierdzenia. 
 
-### <a name="candidate-app"></a>Aplikacja dla kandydatów
+## <a name="candidate-app"></a>Aplikacja dla kandydatów
 Kandydaci otrzymują wiadomość e-mail z łączem do aplikacji zaraz po dodaniu do stanowiska. Ta aplikacja sieci web umożliwia kandydatom uzyskanie szczegółowych informacji o stanowisku i jest narzędziem do komunikacji z zespołem ds. zatrudniania. Kandydaci mogą także przesłać informacje o swojej dostępności dotyczącej rozmów.
 
