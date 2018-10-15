@@ -6,6 +6,14 @@
       items:
         - name: Nowości i zmiany
           items:
+            - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (1 października 2018 r.)
+              href: whats-new-talent-october-01.md
+            - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (24 września 2018 r.)
+              href: whats-new-talent-september-24.md
+            - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (17 września 2018 r.)
+              href: whats-new-talent-september-17-2018.md
+            - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (10 września 2018 r.)
+              href: whats-new-talent-september-10.md
             - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (sierpień 2018 r.)
               href: whats-new-talent-august2018.md
             - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (lipiec 2018 r.)
@@ -20,10 +28,14 @@
           href: modular-app-tech-faq.md
         - name: Osadzanie aplikacji usługi PowerApps
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Rozwiązanie Core HR i usługa Common Data Service dla aplikacji
+          href: CoreHREntities.md
         - name: Dostęp do funkcji w wersji zapoznawczej
           href: access-preview-feature.md
         - name: Konfigurowanie integracji listy płac między rozwiązaniami Talent i Dayforce
           href: configure-payroll-integration.md
+        - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Talent
+          href: talent-support.md
     - name: 'Organizowanie pracowników za pomocą działów, funkcji i stanowisk'
       href: departments-jobs-positions.md
       items:
@@ -41,8 +53,13 @@
           href: formalize-business-processes.md
         - name: Używanie przepływów pracy do zarządzania informacjami pracowników etatowych
           href: workflow-manage-employee-information.md
-        - name: Zarządzanie urlopami i nieobecnościami
-          href: leave-absence-overview.md
+    - name: Zarządzanie urlopami i nieobecnościami
+      href: leave-absence-overview.md
+      items:
+        - name: Naliczanie czasu wolnego na podstawie liczby przepracowanych godzin
+          href: leave-accrue-hours-worked.md
+        - name: Kalendarze czasu pracy
+          href: working-time-calendars.md
     - name: Rekrutacja w organizacji
       items:
         - name: Funkcje i możliwości aplikacji Attract
@@ -59,6 +76,8 @@
           href: create-variable-compensation-plans.md
         - name: Przetwarzanie wynagrodzenia
           href: process-compensation.md
+        - name: Konfigurowanie składników funkcji
+          href: create-job.md
     - name: Wspomaganie rozwoju i szkolenie pracowników etatowych
       items:
         - name: Zarządzanie wydajnością
