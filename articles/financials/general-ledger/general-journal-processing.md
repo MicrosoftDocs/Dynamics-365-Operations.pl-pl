@@ -1,9 +1,9 @@
 ---
 title: Przetwarzanie arkuszy finansowych
-description: "Ten artykuł opisuje funkcje programu Microsoft Dynamics 365 for Finance and Operations, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli."
+description: "Ten temat opisuje funkcje programu Microsoft Dynamics 365 for Finance and Operations, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: eb46613f805999753c2ab73ffb91a6fdae04c68e
+ms.sourcegitcommit: cf744bc41ffcca6d029da5dd2031ada607a0109b
+ms.openlocfilehash: e77aafafed5c972a6ad8c064107306d3ebde0b79
 ms.contentlocale: pl-pl
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 09/24/2018
 
 ---
 
@@ -30,9 +30,9 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-Ten artykuł opisuje funkcje programu Microsoft Dynamics 365 for Finance and Operations, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli.  
+Ten temat opisuje funkcje programu Microsoft Dynamics 365 for Finance and Operations, które mogą ułatwić przetwarzanie arkusza finansowego, a także zagwarantować rejestrowanie właściwych danych i bezpieczeństwo dla aparatu wewnętrznej kontroli.  
 
-Nazwy arkuszy
+## <a name="journal-names"></a>Nazwy arkuszy
 
 Jednym z najważniejszych obszarów do skonfigurowania są nazwy arkuszy. Dobrze jest używać określonych nazw arkusza do każdego celu, np. międzyfirmowe, korekty naliczania i korekcja błędów. Można dostosować nazwę każdego arkusza, aby wprowadzanie danych dla każdego celu było łatwe i bezpieczne. 
 
@@ -44,9 +44,13 @@ Na stronie **Nazwy arkuszy** można skonfigurować następujące elementy:
 
 **Przykłady**
 
-Nazwa arkusza może być używana tylko do korekt. W takim przypadku można wskazać, że dla wszystkich firm ważne jest tylko konto typu **Księga**. [![Typy kont kontroli arkusza](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+Nazwa arkusza może być używana tylko do korekt. W takim przypadku można wskazać, że dla wszystkich firm ważne jest tylko konto typu **Księga**. 
 
-Nazwa arkusza może być używana tylko dla określonego segmentu lub w określonym zakresie dla kont głównych. [![Segment kontroli arkusza](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Typy kont kontroli arkusza](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+
+Nazwa arkusza może być używana tylko dla określonego segmentu lub w określonym zakresie dla kont głównych. 
+
+[![Segment kontroli arkusza](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Opcja **Automatyczne stornowanie** jest dostępna w arkuszach finansowych. Na przykład użytkownik ma korektę naliczania, jeśli dokument nie został jeszcze przetworzony, jak pokazano na poniższej ilustracji.
 [![Stornowanie arkusza finansowego](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
@@ -65,8 +69,9 @@ Następująca konfiguracja nie jest właściwa dla arkuszy finansowych, ale uła
 Konfiguracja konta głównego oferuje wiele opcji przetwarzania arkusza finansowego:
 
 -   **Wymagane debet lub kredyt** — użyj tej opcji, jeśli konto główne jest ograniczone do transakcji po stronie debetowej lub kredytowej. Po zweryfikowaniu lub zaksięgowaniu arkusza następuje sprawdzenie poprawności konfiguracji.
+
 -   **Domyślne konto przeciwstawne**
--   **Zawieszone** — pozwala zawiesić konto główne dla wprowadzania danych we wszystkich firmach lub dla konkretnych firm/podmiotów prawnych.
+-   **Zawieszone** — pozwala zawiesić konto główne dla wprowadzania danych we wszystkich firmach lub dla konkretnej firmy.
 -   **Nie zezwalaj na wprowadzanie ręczne** — uniemożliwia użytkownikom ręczne wprowadzanie wartości dla konta w arkuszach.
 -   **Domyślna waluta/Sprawdź poprawność waluty**
 -   **Firma zastępuje** — to ustawienie jest właściwe dla zdefiniowanej firmy/podmiotu prawnego:
@@ -78,7 +83,7 @@ Konfiguracja konta głównego oferuje wiele opcji przetwarzania arkusza finansow
 
 ### <a name="accounting-structures-and-advanced-rules-structures"></a>Struktury księgowania i struktury reguł zaawansowanych
 
-Struktury księgowania i struktury zaawansowanych reguł są bardzo ważne do zagwarantowania, że dane, które są wymagane do raportowania finansowego i śledzenia wydajności, są rejestrowane przy przetwarzaniu arkusza finansowego i wszelkich dokumentów. Struktury księgowania i struktury reguły zaawansowanych pozwalają dostosować sposób wprowadzania danych. Można zezwolić na wprowadzanie danych tylko dla wymiarów finansowych, które są odpowiednie w poszczególnych sytuacjach, a można też wymuszać wymaganie, by rejestrowane były tylko dane wymagane i prawidłowe.
+Struktury księgowania i struktury zaawansowanych reguł są bardzo ważne do zagwarantowania, że dane, które są wymagane do raportowania finansowego i śledzenia wydajności, są rejestrowane przy przetwarzaniu arkusza finansowego i wszelkich dokumentów. Struktury księgowania i struktury reguły zaawansowanych pozwalają dostosować sposób wprowadzania danych. Można zezwolić na wprowadzanie danych tylko dla wymiarów finansowych, które są odpowiednie w poszczególnych sytuacjach, a można też wymuszać wymaganie, by rejestrowane były tylko dane wymagane i rzetelne.
 
 Aby uzyskać więcej informacji, zobacz następujące tematy:
 - [Planowanie: Obsługa planu kont](plan-chart-of-accounts.md). 
@@ -88,5 +93,8 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 - [Księgowanie arkuszy okresowych](tasks/post-periodic-journals.md)
 - [Przetwarzanie arkusza alokacji księgi](tasks/process-ledger-allocation-journal.md)
 
+## <a name="simulate-posting"></a>Symuluj księgowanie
+Opcja **Symuluj księgowanie** znajduje się w menu **Sprawdź poprawność** w większości arkuszy. Podczas sprawdzania poprawności arkusza za pomocą funkcji **Sprawdź poprawność** system bada arkusza pod kątem określonych błędów. Jeśli używasz funkcji **Symuluj księgowanie**, system uruchamia wszystkie te same procesy, które są wykonywane podczas księgowania, ale faktycznie nie księguje arkusza. Następnie można przejrzeć wyświetlone komunikaty o księgowaniu oraz poprawić wszystkie znalezione błędy, po czym kliknąć menu **Księguj**, aby zaksięgować arkusz. 
 
+Funkcja **Symuluj księgowanie** jest niedostępna dla przetwarzania wsadowego. Jest jednak dostępny kod źródłowy umożliwiający symulację przetwarzania wsadowego i deweloperzy mogą za jego pomocą dodać tę funkcjonalność.  
 

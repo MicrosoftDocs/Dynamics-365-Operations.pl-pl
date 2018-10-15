@@ -1,41 +1,42 @@
 --- 
-title: "Tworzenie konfiguracji ER w celu importowania danych z plików zewnętrznych"
-description: "W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może projektować konfiguracje raportowania elektronicznego (ER) w celu importowania danych do aplikacji Dynamics 365 for Finance and Operations z zewnętrznego pliku."
+title: "ER Tworzenie wymaganych konfiguracji do importowania danych z pliku zewnętrznego"
+description: "W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może projektować konfiguracje raportowania elektronicznego (ER) w celu importowania danych do aplikacji Dynamics 365 for Finance and Operations Enterprise Edition z zewnętrznego pliku."
 author: NickSelin
 manager: AnnBe
-ms.date: 02/22/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 70bf788b5924e382ab927fcff4c86908923e09d7
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 6675f35c9ec163a620e63af32ecdbff02197d3c3
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="create-er-configurations-to-import-data-from-external-files"></a>Tworzenie konfiguracji ER w celu importowania danych z plików zewnętrznych
+# <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Tworzenie wymaganych konfiguracji do importowania danych z pliku zewnętrznego
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może projektować konfiguracje raportowania elektronicznego (ER) w celu importowania danych do aplikacji Dynamics 365 for Finance and Operations z zewnętrznego pliku. W tym przykładzie utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Aby wykonać te kroki, najpierw trzeba wykonać kroki wymienione w przewodniku po zadaniu „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”. Kroki można wykonać przy użyciu zestawu danych firmy USMF. Należy również pobrać i zapisać lokalnie następujące pliki przy użyciu łączy z omówienia modułu Raportowanie elektroniczne (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może projektować konfiguracje raportowania elektronicznego (ER) w celu importowania danych do aplikacji Dynamics 365 for Finance and Operations Enterprise Edition z zewnętrznego pliku. W tym przykładzie utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Aby wykonać te kroki, najpierw trzeba wykonać kroki wymienione w przewodniku po zadaniu „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”. Kroki można wykonać przy użyciu zestawu danych firmy USMF. Należy również pobrać i zapisać lokalnie następujące pliki przy użyciu łączy z omówienia modułu Raportowanie elektroniczne (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 
-    * Moduł Raportowanie elektroniczne umożliwia użytkownikom biznesowym skonfigurowanie procesu importowania zewnętrznych plików danych do tabel w programie Dynamics 365 for Finance and Operations w formacie .XML lub .TXT. Najpierw należy zaprojektować abstrakcyjny model danych i konfigurację modelu danych raportowania elektronicznego, aby reprezentować dane, które mają być importowane. Następnie należy zdefiniować strukturę importowanego pliku oraz metodę, która będzie używana do przeniesienia danych z pliku do abstrakcyjnego modelu danych. Dla abstrakcyjnego modelu danych należy utworzyć ER konfigurację formatu, która jest mapowana na zaprojektowany model danych. Następnie konfiguracja modelu danych musi zostać rozszerzona o mapowanie opisujące, jak importowane dane są utrwalane jako abstrakcyjny model danych i jak są wykorzystywane do aktualizowania tabel w programie Dynamics 365 for Finance and Operations.  Do konfiguracji modelu danych raportowania elektronicznego należy dołączyć nowe mapowanie modelu, które opisuje powiązanie modelu danych z miejscami docelowymi aplikacji.  
-    * Poniższy scenariusz pokazuje możliwości funkcji importu danych raportowania elektronicznego. Obejmuje to transakcje z dostawcami, które są śledzone zewnętrznie, a następnie importowane do programu Dynamics 365 for Finance and Operations w celu późniejszego zaraportowania w rozliczeniach z dostawcą w deklaracji 1099.   
+    * Moduł Raportowanie elektroniczne umożliwia użytkownikom biznesowym skonfigurowanie procesu importowania zewnętrznych plików danych do tabel w programie Dynamics 365 for Finance and Operations Enterprise Edition w formacie .XML lub .TXT. Najpierw należy zaprojektować abstrakcyjny model danych i konfigurację modelu danych raportowania elektronicznego, aby reprezentować dane, które mają być importowane. Następnie należy zdefiniować strukturę importowanego pliku oraz metodę, która będzie używana do przeniesienia danych z pliku do abstrakcyjnego modelu danych. Dla abstrakcyjnego modelu danych należy utworzyć ER konfigurację formatu, która jest mapowana na zaprojektowany model danych. Następnie konfiguracja modelu danych musi zostać rozszerzona o mapowanie opisujące, jak importowane dane są utrwalane jako abstrakcyjny model danych i jak są wykorzystywane do aktualizowania tabel w programie Dynamics 365 for Finance and Operations Enterprise Edition.  Do konfiguracji modelu danych raportowania elektronicznego należy dołączyć nowe mapowanie modelu, które opisuje powiązanie modelu danych z miejscami docelowymi aplikacji.  
+    * Poniższy scenariusz pokazuje możliwości funkcji importu danych raportowania elektronicznego. Obejmuje to transakcje z dostawcami, które są śledzone zewnętrznie, a następnie importowane do programu Dynamics 365 for Finance and Operations Enterprise Edition w celu późniejszego zaraportowania w rozliczeniach z dostawcą w deklaracji 1099.   
 
 ## <a name="add-a-new-er-model-configuration"></a>Dodawanie nowej konfiguracji modelu ER
 1. Wybierz kolejno opcje Administrowanie organizacją > Obszary robocze > Raportowanie elektroniczne.
     * Sprawdź, czy dostawca konfiguracji przykładowej firmy „Litware, Inc.” jest dostępny i oznaczony jako aktywny. Jeśli ten dostawca konfiguracji nie jest widoczny, należy najpierw wykonać procedurę „Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”.   
 2. Kliknij opcję Konfiguracje raportowania.
-    * Zamiast tworzyć nowy model do obsługi importu danych załaduj plik 1099model.xml, który wcześniej pobrano. Ten plik zawiera niestandardowy model danych transakcji z dostawcami. Ten model danych jest mapowany na składniki danych programu Dynamics 365 for Finance and Operations znajdujące się w jednostce danych drzewa obiektów aplikacji.   
+    * Zamiast tworzyć nowy model do obsługi importu danych załaduj plik 1099model.xml, który wcześniej pobrano. Ten plik zawiera niestandardowy model danych transakcji z dostawcami. Ten model danych jest mapowany na składniki danych programu Dynamics 365 for Finance and Operations Enterprise Edition znajdujące się w jednostce danych drzewa obiektów aplikacji.   
 3. Kliknij opcję Import/eksport.
 4. Kliknij opcję Załaduj z pliku XML.
     * Kliknij przycisk Przeglądaj i przejdź do pliku 1099model.xml, który został wcześniej pobrany.  
@@ -44,7 +45,7 @@ W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administra
 
 ## <a name="review-data-model-settings"></a>Przeglądanie ustawień modelu danych
 1. Kliknij przycisk Konstruktor.
-    * Ten model jest przeznaczony do reprezentowania transakcji z dostawcami z perspektywy biznesowej i jest oddzielony od implementacji w programie Dynamics 365 for Finance and Operations.   
+    * Ten model jest przeznaczony do reprezentowania transakcji z dostawcami z perspektywy biznesowej i jest oddzielony od implementacji w programie Dynamics 365 for Finance and Operations Enterprise Edition.   
 2. W drzewie rozwiń węzeł „1099-MISC”.
 3. W drzewie zaznacz element „1099-MISC\Transakcje”.
 4. W drzewie rozwiń węzeł „1099-MISC\Transakcje”.
@@ -106,7 +107,7 @@ W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administra
 1. W drzewie zaznacz element „Model płatności 1099”.
 2. Kliknij przycisk Konstruktor.
 3. Kliknij opcję Mapuj model na źródło danych.
-    * Mapowanie „Do ręcznego importu transakcji deklaracji do 1099” zdefiniowano z typem kierunku Do lokalizacji docelowej. Oznacza to, że wprowadzono je w celu obsługi importu danych i zawiera ono ustawienie reguł określających, w jaki sposób zaimportowany zewnętrzny plik i dane utrwalone jako abstrakcyjny model danych są używany do aktualizowania tabel w aplikacji Dynamics 365 for Finance and Operations.  
+    * Mapowanie „Do ręcznego importu transakcji deklaracji do 1099” zdefiniowano z typem kierunku Do lokalizacji docelowej. Oznacza to, że wprowadzono je w celu obsługi importu danych i zawiera ono ustawienie reguł określających, w jaki sposób zaimportowany zewnętrzny plik i dane utrwalone jako abstrakcyjny model danych są używany do aktualizowania tabel w aplikacji Dynamics 365 for Finance and Operations Enterprise Edition.  
 4. Kliknij przycisk Konstruktor.
 5. W drzewie rozwiń węzeł „model: Model danych Model płatności 1099”.
 6. W drzewie rozwiń węzeł „model: Model danych Model płatności 1099\Transakcje: Lista rekordów”.
@@ -120,7 +121,7 @@ W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administra
 12. W drzewie zaznacz element „tax1099trans: Tabela 'VendSettlementTax1099' rekordy = model.Sprawdzono poprawność”.
 13. Kliknij opcję Edytuj lokalizację docelową.
     * To miejsce docelowe modułu ER zostało dodane w celu określenia, jak importowane dane spowodują zaktualizowanie tabel w aplikacji. W takim przypadku wybrano tabelę danych VendSettlementTax1099. Ponieważ dla rekordu wybrano akcję Wstaw, zaimportowana transakcja zostanie wstawiona do tabeli VendSettlementTax1099. Należy zwrócić uwagę, że mapowanie jednego modelu może zawierać kilka miejsc docelowych. Oznacza to, że importowane dane mogą służyć do aktualizowania wielu tabel aplikacji jednocześnie. Jako miejsc docelowych raportowania elektronicznego można używać tabel, widoków i jednostek danych.   
-    * Jeśli mapowanie będzie wywoływane z punktu w aplikacji Dynamics 365 for Finance and Operations (na przykład przycisku lub elementu menu), który zaprojektowano specjalnie do wykonywania tej akcji, lokalizacja docelowa ER powinna być oznaczona jako punkt integracji. W tym przykładzie jest to punkt ERTableDestination#VendSettlementTax1099.  
+    * Jeśli mapowanie będzie wywoływane z punktu w aplikacji Dynamics 365 for Finance and Operations Enterprise Edition (na przykład przycisku lub elementu menu), który zaprojektowano specjalnie do wykonywania tej akcji, lokalizacja docelowa ER powinna być oznaczona jako punkt integracji. W tym przykładzie jest to punkt ERTableDestination#VendSettlementTax1099.  
 14. Kliknij przycisk Anuluj.
 15. Kliknij opcję Pokaż wszystko.
 16. Kliknij opcję Pokaż tylko zamapowane.
@@ -176,15 +177,15 @@ W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administra
 18. Zamknij stronę.
 19. Zamknij stronę.
 20. Kliknij przycisk Edytuj.
-    * Jeśli została zainstalowana poprawka „KB 4012871 Obsługa mapowań modelu dla Niemiec w osobnych konfiguracjach z możliwością określenia różnych rodzajów warunków wstępnych na potrzeby wdrażania ich w różnych wersjach programu Dynamics 365 for Finance and Operations” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), wykonaj następny krok „Włączanie flagi „Domyślne dla mapowania modelu”” dla wprowadzonej konfiguracji formatu. W przeciwnym razie pomiń następny krok.  
+    * Jeśli została zainstalowana poprawka „KB 4012871 Obsługa mapowań modelu dla Niemiec w osobnych konfiguracjach z możliwością określenia różnych rodzajów warunków wstępnych na potrzeby wdrażania ich w różnych wersjach programu Dynamics 365 for Finance and Operations Enterprise Edition” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), wykonaj następny krok „Włączanie flagi „Domyślne dla mapowania modelu”” dla wprowadzonej konfiguracji formatu. W przeciwnym razie pomiń następny krok.  
 21. Wybierz opcję Tak w polu Domyślne dla mapowania modelu.
 22. W drzewie zaznacz element „Model płatności 1099”.
 23. Kliknij przycisk Konstruktor.
 24. Kliknij opcję Mapuj model na źródło danych.
 25. Kliknij przycisk Uruchom.
-    * Jeśli została zainstalowana poprawka KB 4012871 Obsługa mapowań modelu dla Niemiec w osobnych konfiguracjach z możliwością określenia różnych rodzajów warunków wstępnych na potrzeby wdrażania ich w różnych wersjach programu Dynamics 365 for Finance and Operations (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), wybierz preferowane mapowanie modelu w polu wyszukiwania. Jeśli jeszcze nie zainstalowano poprawki, przejdź do następnego kroku, ponieważ mapowanie zostało już wybrane przez definicję domyślnej konfiguracji formatu.  
+    * Jeśli została zainstalowana poprawka KB 4012871 Obsługa mapowań modelu dla Niemiec w osobnych konfiguracjach z możliwością określenia różnych rodzajów warunków wstępnych na potrzeby wdrażania ich w różnych wersjach programu Dynamics 365 for Finance and Operations Enterprise Edition (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871), wybierz preferowane mapowanie modelu w polu wyszukiwania. Jeśli jeszcze nie zainstalowano poprawki, przejdź do następnego kroku, ponieważ mapowanie zostało już wybrane przez definicję domyślnej konfiguracji formatu.  
     * Jeśli nie zainstalowano poprawki KB 4012871, zwróć uwagę, że okno dialogowe zawiera dodatkowe pytanie o mapowanie modelu, które służy do analizy importowanego pliku. Dane są następnie przenoszone z okna dialogowego do modelu danych. Obecnie można wybrać, które mapowanie formatu ma być używane w zależności od typu pliku planowanego do zaimportowania.  
-    * Jeśli zamierzasz wywołać to mapowanie modelu z punktu w programie Dynamics 365 for Finance and Operations, który jest przeznaczony specjalnie dla tej akcji, miejsce docelowe ER i mapowanie formatu muszą być oznaczone jako część integracji.  
+    * Jeśli zamierzasz wywołać to mapowanie modelu z punktu w programie Dynamics 365 for Finance and Operations Enterprise Edition, który jest przeznaczony specjalnie dla tej akcji, miejsce docelowe ER i mapowanie formatu muszą być oznaczone jako część integracji.  
 26. Kliknij przycisk Anuluj.
 27. Zamknij stronę.
 28. Zamknij stronę.

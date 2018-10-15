@@ -17,10 +17,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 46165351f3c9048cfbecf25a1c49d8aeac1f3e1e
-ms.openlocfilehash: c4267db39ef16563c484ec251c0a4663677d49cf
+ms.sourcegitcommit: ae681bd9fb51fc69aada24adfccc7d36ec8f5e52
+ms.openlocfilehash: 34f111430daf136f5ee97cdcad4c7a2b30018e16
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/13/2018
 
 ---
 
@@ -35,6 +35,7 @@ Ten temat zawiera łącza do zasobów dokumentacji dla Polski.
 - [Numerowanie zduplikowanych faktur sprzedaży](emea-pol-sales-invoice-duplicates-numbering.md)
 - [Amortyzacja środka trwałego](emea-pol-fixed-assets-depreciation.md)
 - [Rozszerzenie funkcjonalności likwidacji środków trwałych](emea-pol-fixed-asset-disposal-functionality-extension.md)
+- [Przeszacowanie w walucie obcej](emea-foreign-currency-revaluation.md)
 - [Opakowanie zwrotne](emea-pol-returnable-packages.md)
 - [Raporty podatków](emea-pol-sales-tax-reports.md)
 - [Standardowy plik audytu](emea-pol-standard-audit-file-saf.md)

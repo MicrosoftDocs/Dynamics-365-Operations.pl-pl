@@ -3,7 +3,7 @@ title: Posiadacze zaliczek
 description: "Ten temat zawiera więcej informacji o funkcjonalności posiadacza zaliczki w programie Microsoft Dynamics 365 for Finance and Operations."
 author: LizaGolub
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: e6e295390ee42da4de2ae740ba7f04f3caee6234
-ms.openlocfilehash: 289e29d33ba9e3b96e03713d52565967ed2afcc1
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: 1fc13461ab166d8f20ea2f56f641c86c3172f33b
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -34,12 +34,16 @@ Ten temat zawiera więcej informacji o funkcjonalności posiadacza zaliczki w pr
 *Posiadacz zaliczki* to pracownik firmy, który odpowiada za kwotę wydatku pokrytą przez organizację. Posiadaczem zaliczki może być tylko pracownik firmy. Gdy następuje zaopatrzenie, posiadacz zaliczki informuje firmę o dokonanych wydatkach. Wtedy firma zwraca pracownikowi wydatkowaną kwotę. Firma kontroluje salda wszystkich posiadaczy zaliczek. Użytkownicy w firmach w Estonii, na Łotwie, Litwie, w Polsce, Czechach, na Węgrzech i w Rosji mogą wykazywać konkretne transakcje towarzyszące operacjom z udziałem pracowników firmy odpowiedzialnych za kwoty wydatków pokrywane przez organizację.
 
 ## <a name="set-up-an-advance-holder"></a>Konfigurowanie posiadacza zaliczki
-Aby skonfigurować posiadacza zaliczki, należy kolejno wykonać następujące zadania:
-1.  Tworzenie grup posiadaczy zaliczek.
-2.  Konfigurowanie profilu księgowania pracownika.
-3.  Konfigurowanie parametrów modułu Rozrachunki z dostawcami.
-4.  Tworzenie szczegółowych warunków płatności dla posiadacza zaliczki.
-5.  Tworzenie posiadacza zaliczki.
+Ta sekcja zawiera instruktaż konfigurowania posiadacza zaliczki. Pamiętaj, aby wykonać zadania w tej sekcji koniecznie w podanej kolejności:
+
+> [!div class="checklist"]
+> * 1. Tworzenie grup posiadaczy zaliczek
+> * 2. Konfigurowanie profilu księgowania pracownika
+> * 3. Konfigurowanie parametrów modułu Rozrachunki z dostawcami
+> * 4. Tworzenie szczegółowych warunków płatności dla posiadacza zaliczki
+> * 5. Tworzenie szczegółowych warunków płatności dla posiadacza zaliczki
+> * 6. Tworzenie posiadacza zaliczki
+
 
 ### <a name="advance-holder-groups"></a>Grupy posiadaczy zaliczek
 
@@ -79,20 +83,32 @@ Aby wykazywać transakcje posiadaczy zaliczek, należy skonfigurować następuj�
 ### <a name="terms-of-payment-for-advance-holder"></a>Warunki płatności dla posiadacza zaliczki
 
 Aby poprawnie zarejestrować i zaksięgować zamówienie zakupu w kontekście posiadacza zaliczki, należy użyć warunków płatności skonfigurowanych z opcją **Od posiadacza zaliczki** ustawioną na wartość **Prawda**.
-### <a name="create-an-advance-holder-creation"></a>Tworzenie posiadacza zaliczki
 
-Przed utworzeniem posiadacza zaliczki muszą już istnieć skonfigurowani pracownicy. Aby uzyskać więcej informacji, zobacz [Wprowadzanie informacji o pracowniku (przewodnik po zadaniu).](../../fin-and-ops/hr/tasks/enter-worker-information.md) Użyj strony **Posiadacze zaliczek**, aby skonfigurować pracownika jako posiadacza zaliczki. Wybierz pracownika, który ma być posiadaczem zaliczki, kliknij przycisk **Edytuj**, a następnie ustaw w opcji **Posiadacz zaliczki** wartość **Prawda**. Trzeba również wypełnić następujące pola:
+### <a name="create-an-advance-holder"></a>Tworzenie posiadacza zaliczki
 
-|                |                                                                                             |
-|----------------|---------------------------------------------------------------------------------------------|
-| **Pole**      | **Opis**                                                                             |
-| **Grupa**      | Wybierz grupę posiadaczy zaliczek.                                                             |
-| **Seria**     | Wprowadź serię dokumentu używanego do weryfikacji tożsamości posiadacza zaliczki. |
-| **Numer**     | Wprowadź numer dokumentu używanego do weryfikacji tożsamości posiadacza zaliczki. |
-| **Data wystawienia** | Wybierz lub wprowadź datę wydania dokumentu.                                                    |
-| **Wystawione przez**  | Wprowadź dane organu lub osoby, która wydała dokument.                       |
+Przed utworzeniem posiadacza zaliczki muszą już istnieć skonfigurowani pracownicy. Aby uzyskać więcej informacji, zobacz [Wprowadzanie informacji o pracowniku (przewodnik po zadaniu).](../../fin-and-ops/hr/tasks/enter-worker-information.md) 
+
+1. Wybierz kolejno opcje **Rozrachunki z dostawcami** \> **Posiadacze zaliczek** \> **Posiadacze zaliczek**.
+
+    > [!NOTE]
+    > Na stronie **Posiadacze zaliczek** nie można dodawać ani usuwać pracowników etatowych. Pracownicy muszą zostać najpierw zatrudnieni w module **Zasoby ludzkie**. Na stronie **Profile księgowania pracowników** można skonfigurować profil księgowania pracownika, który jest używany do księgowania sald posiadacza zaliczki.
+
+2. Zaznacz pracownika i kliknij przycisk **Edytuj**.
+3. Na skróconej karcie **Ogólne** w opcji **Posiadacz zaliczki** ustaw wartość **Tak**, aby wskazać, że pracownik etatowy jest posiadaczem zaliczki.
+4. W polu **Grupa** wybierz grupę posiadaczy zaliczek, do której należy pracownik etatowy.
+5. W obszarze **Dokument tożsamości** podaj dane dokumentu identyfikacyjnego.
+    - **Seria** — wprowadź serię dokumentu używanego do weryfikacji tożsamości posiadacza zaliczki.
+    - **Numer** — wprowadź numer dokumentu używanego do weryfikacji tożsamości posiadacza zaliczki.
+    - **Data wystawienia** — wybierz lub wprowadź datę wydania dokumentu.
+    - **Wystawione przez** — Wprowadź dane organu lub osoby, która wydała dokument.
+6. Wybierz przycisk **Zapisz**, aby zamknąć stronę.
+
+> [!NOTE]
+> Jeśli na stronie **Parametry modułu rozrachunków z dostawcami** opcja **Sortowanie posiadaczy zaliczek** jest ustawiona na **Tak**, posiadacze zaliczek są wyświetlani w górnej części siatki na stronie **Posiadacze zaliczek**.
+
 
 ## <a name="advance-holder-inquiries-and-reports"></a>Zapytania i raporty dotyczące posiadaczy zaliczek
+
 ### <a name="advance-holder-transactions-inquiry"></a>Zapytania o transakcje posiadaczy zaliczek
 
 Aby uzyskać listę transakcji posiadacza zaliczki, kliknij przycisk **Transakcje** znajdujący się na stronie **Posiadacze zaliczek**. Aby wyświetlić transakcje wszystkich posiadaczy zaliczek lub utworzyć szczegółowe zapytanie dotyczące transakcji posiadaczy zaliczek, wybierz kolejno opcje **Rozrachunki z dostawcami** &gt; **Zapytania i raporty** &gt; **Zapytania i raporty posiadaczy zaliczek** &gt; Transakcje. Kliknij opcję **Załącznik**, a zostanie otwarta strona **Transakcje na załączniku**.
@@ -142,7 +158,8 @@ Jeśli po przetwarzaniu arkusza kasowego kwota w polu **Kwota do przeniesienia**
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Zaliczki na rzecz pracownika (Europa Wschodnia)](tasks/advance-payment-employee.md)
+- [Zaliczki na rzecz pracownika etatowego (Europa Wschodnia)](tasks/advance-payment-employee.md)
+- [Posiadacze zaliczek dla Rosji](rus-advance-holders.md)
 
 
 

@@ -3,7 +3,7 @@ title: "Personalizacja interfejsu użytkownika"
 description: "W tym temacie wyjaśniono, jak można spersonalizować program Microsoft Dynamics 365 for Finance and Operations."
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 862bbf4d1d9b0dc2b6dc418ee766ed4dedef49fe
-ms.openlocfilehash: 8ad5bd607f08d4e0b266d86a96a0b7f3e352c4cd
+ms.sourcegitcommit: 7344f460fcb443a78b254e2387fbf5c9134bf674
+ms.openlocfilehash: 1860b603f789aabca1ca58848a88e11a6e08e31f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 
@@ -64,7 +64,7 @@ Różne osoby i firmy mają różne punkty widzenia na to, które dane są dla n
 ### <a name="shortcut-menu-options"></a>Opcje w menu skrótów
 Menu skrótów oferują kilka sposobów bezpośredniego modyfikowania strony w celu jej dopasowania do wymagań własnych lub firmy. (Menu skrótów jest również nazywane *menu rozwijanym prawym przyciskiem myszy* lub *menu kontekstowym*).
 
-Niektóre z najbardziej typowych i ważnych zmiany, jakie użytkownicy wprowadzają na stronach, są dostępne bezpośrednio jako opcje w menu skrótów. Na przykład aby dodać lub ukryć kolumny w siatce, po prostu kliknij prawym przyciskiem myszy nagłówek kolumny w siatce, a następnie wybierz polecenie **Dodaj kolumny** lub **Ukryj tę kolumnę**.
+Niektóre z najbardziej typowych i ważnych zmiany, jakie użytkownicy wprowadzają na stronach, są dostępne bezpośrednio jako opcje w menu skrótów. Na przykład począwszy od aktualizacji platformy 17 jeśli chcesz dodać lub ukryć kolumny w siatce, po prostu kliknij prawym przyciskiem myszy nagłówek kolumny w siatce, a następnie wybierz polecenie **Dodaj kolumny** lub **Ukryj tę kolumnę**.
 
 Ponadto większość podstawowych typów personalizacji jawnych jest dostępnych po kliknięciu elementu prawym przyciskiem myszy i wybraniu polecenia **Personalizuj**. (Pamiętaj, że nie wszystkie elementy na stronie można personalizować). Podczas używania tej metody personalizacji pojawi się okno właściwości elementu.
 
@@ -81,27 +81,38 @@ Okno właściwości służy do spersonalizowania elementu na następujące sposo
 Okno właściwości może zawierać inne możliwości personalizacji w zależności od elementu. Na przykład okno właściwości kafelka może pozwalać przenieść kafelek do pulpitu nawigacyjnego, a okno właściwości pulpitu nawigacyjnego może pozwalać utworzyć nowy obszar roboczy w tym pulpicie nawigacyjnym.
 
 ### <a name="the-personalization-toolbar"></a>Pasek narzędzi personalizacji
-Użyj paska narzędzi **personalizacji**, aby przenieść lub ukryć elementy albo wprowadzić do strony kilka zmian. Aby otworzyć pasek narzędzi **Personalizacji** wybierz opcję **Spersonalizuj ten formularz** w oknie właściwości elementu. Można również wybrać pozycję **Spersonalizuj ten formularz** w grupie **Personalizacja** na karcie **Opcje** okienka akcji każdej ze stron.
+Jeśli chcesz wprowadzić wiele zmian na stronie lub wprowadzić zmiany, które nie są dostępne za pośrednictwem innych mechanizmów (np. zmiany kolejności elementów), można użyć pasek narzędzi **Personalizacja**. Aby otworzyć pasek narzędzi **Personalizacji** wybierz opcję **Spersonalizuj ten formularz** w oknie właściwości elementu. Można również wybrać pozycję **Spersonalizuj ten formularz** w grupie **Personalizacja** na karcie **Opcje** okienka akcji każdej ze stron.
 
 [![Pasek narzędzi personalizacji](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-Gdy pasek narzędzi **personalizacji** jest otwarty, strona nie jest interaktywna. Dlatego nie można wprowadzać danych ani zwijać lub rozwijać sekcji. Można też tylko zmienić elementy, które składają się na stronę.
+#### <a name="navigating-the-page"></a>Nawigacja po stronie 
+Możliwość nawigowanie na stronie w czasie, gdy jest otwarty pasek narzędzi **Personalizacja**, zależy od używanej wersji platformy. 
 
+- Przed aktualizacją platformy 19 podczas otwarcia paska narzędzi **Personalizacja** strona jest tylko do odczytu (nie można na niej nic wprowadzać) i nieinteraktywna (zmiany można wprowadzać tylko w widocznych elementach na stronie). Jeśli chcesz dokonać zmian elementów wewnątrz zwiniętej sekcji lub na innej karcie, należy zamknąć pasek narzędzi **Personalizacja**, rozwinąć sekcję lub przełączyć na żądaną kartę, a następnie otworzyć paska narzędzi **Personalizacja**.  
+
+- Począwszy od aktualizacji platformy 19 jeśli pasek narzędzi **Personalizacja** jest otwarty, strona wciąż będzie tylko do odczytu, ale jest znacznie bardziej interaktywna. W szczególności podczas otwarcia paska narzędzi **Personalizacja** można rozwinąć lub zwinąć okienko pola informacji, przełączać karty oraz rozwijać i zwijać sekcje w taki sam sposób, jak zwykle robi się to na stronie. Aby zastosować zmianę personalizacyjną do zwijanej sekcji lub karty (np. w celu ukrycia skróconej karty), należy nacisnąć przycisk, który pojawi się obok karty lub zwijanej sekcji po umieszczeniu na niej fokusu za pomocą klawiaturę lub umieszczenia nad nią wskaźnika myszy.  
+
+#### <a name="personalization-tools"></a>Narzędzia personalizacji
 Następujące narzędzia są dostępne na pasku narzędzi **Personalizacja**:
 
 - Użyj narzędzia **Wybierz**, aby wybrać i zmienić właściwości elementu. Wybierz narzędzie **Wybierz**, a następnie wybierz element, którego właściwości chcesz zmodyfikować. Po zaznaczeniu elementu pojawi się okno jego właściwości, w którym można zmienić dowolne właściwości tego elementu. Można powtórzyć ten proces dla innych elementów, które można personalizować na tej stronie. Jednak ze względu na sposób używania pewnych elementów program Finance and Operations nie pozwoli na zmianę ich niektórych właściwości. Dlatego po wybraniu elementu możesz zobaczyć, że niektórych jego właściwości nie można zmodyfikować. Na przykład nie można ukryć pola, które jest wymagane.
-- Użyj narzędzia **Przenieś**, aby przenieść element w inne miejsce w bieżącej grupie elementów. (Nie można przenieść elementu poza jego grupę nadrzędną). Wybierz narzędzie **Przenieś**, a następnie wybierz element, który chcesz przenieść. Po wybraniu elementu rozwiązanie Finance and Operations przeskanuje stronę, aby określić, dokąd można przenieść element. Następnie tworzy serię „miejsc upuszczenia”. Podczas przeciągania elementu w granicach bieżącej grupy każde „miejsce upuszczania” jest wyświetlane za pomocą kolorowej, pogrubionej linii obok obszaru, w którym można upuścić element.
-- Użyj narzędzia **Ukryj**, aby ukryć element na tej stronie. Wybierz narzędzie **Ukryj**, a następnie wybierz element, który chcesz ukryć. Po wybraniu narzędzia **Ukryj** w zacieniowanym kontenerze zostaną pokazane wszystkie elementy, które są obecnie ukryte. Następnie można je odkryć. Po wybraniu narzędzia **Zaznaczanie** można sprawdzić wygląd strony po ukryciu zaznaczonych elementów.
-- Użyj narzędzia **Podsumowanie**, aby wyświetlić element w sekcji podsumowania skróconej karty. Narzędzie podsumowania ma zastosowanie tylko do pól w sekcji skróconej karty. Po wybraniu narzędzia **Podsumowanie** w zacieniowanym kontenerze wyświetlone zostaną wszystkie pola, które wybrano jako pola podsumowania. Można dodać w interaktywny sposób pola do podsumowania skróconej karty lub je wybrać, by je z niego usunąć.
-- Użyj narzędzia **Pomiń**, aby usunąć element z sekwencji tabulacji na stronie. Po wybraniu narzędzia **Pomiń** w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, które zostały pominięte. Następnie można wprowadzić je ponownie do kolejki kart.
-- Użyj narzędzia **Edytuj**, aby oznaczyć element jako edytowalny lub nieedytowalny. Po wybraniu narzędzia **Edycja** w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, których obecnie nie można edytować. Następnie można znowu umożliwić ich edycję. Należy zwrócić uwagę, że niektóre pola są wymagane i nie można ich oznaczyć jako nie do edycji. Obok tych pól widać symbol kłódki.
-- Użyj przycisku **Wstaw**, aby wyświetlić listę elementów, które można wstawić na stronie.
 
+- Użyj narzędzia **Przenieś**, aby przenieść element w inne miejsce w bieżącej grupie elementów. (Nie można przenieść elementu poza jego grupę nadrzędną). Wybierz narzędzie **Przenieś**, a następnie wybierz element, który chcesz przenieść. Po wybraniu elementu rozwiązanie Finance and Operations przeskanuje stronę, aby określić, dokąd można przenieść element. Następnie tworzy serię „miejsc upuszczenia”. Podczas przeciągania elementu w granicach bieżącej grupy każde „miejsce upuszczania” jest wyświetlane za pomocą kolorowej, pogrubionej linii obok obszaru, w którym można upuścić element.
+
+- Użyj narzędzia **Ukryj**, aby ukryć element na tej stronie. Wybierz narzędzie **Ukryj**, a następnie wybierz element, który chcesz ukryć. Po wybraniu narzędzia **Ukryj** w zacieniowanym kontenerze zostaną pokazane wszystkie elementy, które są obecnie ukryte. Następnie można je odkryć. Po wybraniu narzędzia **Zaznaczanie** można sprawdzić wygląd strony po ukryciu zaznaczonych elementów.
+    - Począwszy od aktualizacji platformy 18 można ukrywać wymagane pola i sekcje zawierające pola wymagane. Pozwala to utworzyć uproszczone środowisko, w którym nie są wyświetlane wymagane pola o wartościach ustawianych domyślnie przez logikę biznesową. Wymagane pola ukryte również są tymczasowo pokazywane, gdy są puste w trakcie próby zapisu. 
+
+- Użyj narzędzia **Podsumowanie**, aby wyświetlić element w sekcji podsumowania skróconej karty. Narzędzie podsumowania ma zastosowanie tylko do pól w sekcji skróconej karty. Po wybraniu narzędzia **Podsumowanie** w zacieniowanym kontenerze wyświetlone zostaną wszystkie pola, które wybrano jako pola podsumowania. Można dodać w interaktywny sposób pola do podsumowania skróconej karty lub je wybrać, by je z niego usunąć.
+
+- Użyj narzędzia **Pomiń**, aby usunąć element z sekwencji tabulacji na stronie. Po wybraniu narzędzia **Pomiń** w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, które zostały pominięte. Następnie można wprowadzić je ponownie do kolejki kart.
+
+- Użyj narzędzia **Edytuj**, aby oznaczyć element jako edytowalny lub nieedytowalny. Po wybraniu narzędzia **Edycja** w zacieniowanym kontenerze wyświetlone zostaną wszystkie elementy, których obecnie nie można edytować. Następnie można znowu umożliwić ich edycję. Należy zwrócić uwagę, że niektóre pola są wymagane i nie można ich oznaczyć jako nie do edycji. Obok tych pól widać symbol kłódki.
+
+- Użyj przycisku **Wstaw**, aby wyświetlić listę elementów, które można wstawić na stronie.
     - W obszarze **Wstaw** wybierz narzędzie **Pole**, aby dodać pole do strony. Przy użyciu narzędzia **Pola** można dodawać tylko te pola, które są częścią definicji strony, ale nie są aktualnie na niej wyświetlone. Aby uzyskać informacje o tworzeniu nowych pól, które nie są częścią bieżącej definicji strony, zobacz [Pola niestandardowe](user-defined-fields.md). Po wybraniu narzędzia **Pole** należy najpierw zaznaczyć grupę lub obszar, gdzie chcesz dodać pole. W oknie dialogowym zostanie wyświetlona lista pól powiązanych z wybraną grupą lub obszarem. W oknie dialogowym zaznacz jedno lub więcej pól, które mają zostać dodane, a następnie kliknij opcję **Wstaw**. Aby usunąć pole, które zostało wcześniej dodane, należy powtórzyć proces, ale należy usunąć zaznaczenie tego pola w oknie dialogowym.
     - W obszarze **Wstaw** wybierz narzędzie **PowerApp**, aby na stronie osadzić aplikację utworzoną przy użyciu usługi Microsoft PowerApps. Aby uzyskać szczegółowe informacje o osadzaniu aplikacji usługi PowerApps w stronie, zobacz [Osadzanie aplikacji PowerApp](embed-power-apps.md).
 
 - Wybierz przycisk **Zarządzaj**, aby wyświetlić listę opcji zarządzania związanych ze wszystkimi personalizacjami na bieżącej stronie.
-
     - Wybierz opcję **Wyczyść**, aby zresetować stronę do domyślnego stanu poinstalacyjnego. Wszystkie personalizacje na bieżącej stronie zostaną usunięte. Nie ma akcji Cofnij. Dlatego użyj tej opcji tylko wtedy, jeśli masz pewność, że chcesz zresetować stronę.
     - Wybierz opcję **Import**, aby wczytać personalizację z pliku utworzonego wcześniej dla tej strony przez siebie lub inną osobę. Wszystkie bieżące personalizacje strony są zastępowane personalizacjami z wybranego pliku.
     - Wybierz opcję **Eksport**, aby zapisać swoje personalizacje strony do pliku. Personalizacje można udostępniać innym użytkownikom. Użytkownicy muszą zaimportować plik zawierający Twoje dane personalizacji strony.
@@ -149,5 +160,5 @@ W przypadku personalizowania konfiguracji wymiarów magazynowych na stronie nale
 
 Ustawienia w sekcji **Wyświetlanie wymiarów** mają zastosowanie do wszystkich stron i zastępują wszelkie spersonalizowane konfiguracje pól wymiarów magazynowych na poszczególnych stronach.
 
-W związku z tym, w poprzednim przykładzie, jeśli nie chcesz wyświetlania kolumny dla wymiaru zapasów Numer partii, musisz wyczyścić ten wymiar w ramach opcji tabeli **Wyświetl wymiary**. Ostatecznie ta zmiana będzie stosowana nie tylko na jednej konkretnej stronie, ale na wszystkich stronach.
+W efekcie w poprzednim przykładzie jeśli nie chcesz wyświetlania kolumny dla wymiaru zapasów Numer partii, musisz wyczyścić ten wymiar w ramach opcji tabeli **Wyświetl wymiary**. Ostatecznie ta zmiana będzie stosowana nie tylko na jednej konkretnej stronie, ale na wszystkich stronach.
 

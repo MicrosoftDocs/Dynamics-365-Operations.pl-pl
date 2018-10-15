@@ -1,28 +1,29 @@
 --- 
-title: "Opracowywanie struktur i planów pensji/wynagrodzeń"
+title: "Opracowywanie struktury i planu pensji/wynagrodzeń"
 description: "W tym przewodniku po zadaniu pokazano kolejne etapy procesu tworzenia planu stałych wynagrodzeń oraz włączania pracowników do planu za pomocą reguł uprawnienia."
 author: kherr75
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 0514cd485c8fa0026390a22be350ff23933afd7b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 28d044cedbcc9f483a4deb7739aef0f8e3abf9ec
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="develop-salarycompensation-structures-and-plans"></a>Opracowywanie struktur i planów pensji/wynagrodzeń
+# <a name="develop-salarycompensation-structure-and-plan"></a>Opracowywanie struktury i planu pensji/wynagrodzeń
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

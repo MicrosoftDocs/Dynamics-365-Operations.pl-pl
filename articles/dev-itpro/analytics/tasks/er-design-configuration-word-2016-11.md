@@ -1,25 +1,26 @@
 --- 
 title: "Projektowanie konfiguracji raportowania elektronicznego w celu generowania raportów w formacie programu Word"
-description: "W poniższych krokach wyjaśniono, jak użytkownik posiadający rolę Administrator systemu lub Deweloper raportowania elektronicznego może tak skonfigurować formaty raportowania elektronicznego (ER), aby raporty były generowane jako pliki programu Microsoft Word."
+description: "W poniższych krokach wyjaśniono, jak użytkownik posiadający rolę Administrator systemu lub Deweloper raportowania elektronicznego może tak skonfigurować formaty raportowania elektronicznego, aby raporty były generowane jako pliki programu Microsoft Word."
 author: NickSelin
 manager: AnnBe
-ms.date: 12/21/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: kfend
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 615ab4a4f932478b8b847112d4fed8310187f03b
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Projektowanie konfiguracji raportowania elektronicznego w celu generowania raportów w formacie programu Word
@@ -30,9 +31,9 @@ W poniższych krokach wyjaśniono, jak użytkownik posiadający rolę Administra
 
 W celu wykonania tych kroków należy najpierw wykonać kroki opisane w przewodniku po zadaniu „Tworzenie konfiguracji ER do generowania raportów w formacie OPENXML”. Należy również wcześniej pobrać i zapisać następujące szablony lokalnie dla przykładowego raportu:
 
-[Szablon raportu o płatnościach](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Szablon raportu o płatnościach](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Ograniczony szablon raportu o płatnościach](https://go.microsoft.com/fwlink/?linkid=862266)
 
-[Ograniczony szablon raportu o płatnościach](https://go.microsoft.com/fwlink/?linkid=862266)
 
 Ta procedura dotyczy funkcji, która została dodana w programie Microsoft Dynamics 365 for Operations w wersji 1611.
 
@@ -49,7 +50,7 @@ Ta procedura dotyczy funkcji, która została dodana w programie Microsoft Dynam
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Zastąpienie szablonu programu Excel szablonem programu Word
     * Obecnie dokument programu Excel jest używany jako szablon do generowania danych wyjściowych w formacie OPENXML. Zaimportujemy szablon raportu w formacie programu Word.  
 1. Kliknij opcję Załączniki.
-    * Zastąp istniejący szablon programu Excel szablonem programu Word, który został pobrany wcześniej, Szablon raportu o płatnościach. Zwróć uwagę, że ten szablon zawiera tylko układ dokumentu, który chcemy wygenerować jako dane wyjściowe raportowania elektronicznego.  
+    * Zastąp istniejący szablon programu Excel szablonem programu Word, który został pobrany wcześniej (SampleVendPaymDocReport.docx). Zwróć uwagę, że ten szablon zawiera tylko układ dokumentu, który chcemy wygenerować jako dane wyjściowe raportowania elektronicznego.  
 2. Kliknij przycisk Usuń.
 3. Kliknij przycisk Tak.
 4. Kliknij przycisk Nowy.
