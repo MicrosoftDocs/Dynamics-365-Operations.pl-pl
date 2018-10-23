@@ -9,7 +9,7 @@
   items:
     - name: Generowanie danych demonstracyjnych przy użyciu pakietów danych
       href: data-entities/generate-demo-data-packages.md
-- name: Programowanie i dostosowywanie przy użyciu programu Visual Studio
+- name: Tworzenie i dostosowywanie
   href: dev-tools/developer-home-page.md
   items:
     - name: Stos aplikacji i architektura serwera
@@ -27,7 +27,7 @@
           href: dev-tools/enable-development-machine.md
         - name: 'Opracowywanie i tworzenie maszyn wirtualnych, które nie zezwalają na dostęp administratora — często zadawane pytania'
           href: sysadmin/VMs-no-admin-access.md
-        - name: Zmienianie nazw środowisk lokalnych w celu uzyskiwania dostępu do usługi Visual Studio Team Services
+        - name: Zmienianie nazw środowisk lokalnych w celu umożliwienia dostępu do usługi Azure DevOps
           href: migration-upgrade/vso-machine-renaming.md
         - name: Wymagania systemowe dotyczące programowania
           href: dev-tools/development-system-requirements.md
@@ -106,6 +106,8 @@
               href: dev-ref/xpp-variables-data-types.md
             - name: 'Instrukcje, pętle i obsługa wyjątków w języku X++'
               href: dev-ref/xpp-statements-loops.md
+            - name: Wyjątek języka X++ dotyczący błędu połączenia SQL
+              href: dev-ref/sql-connection-error.md
             - name: Operatory w języku X++
               href: dev-ref/xpp-operators.md
             - name: Pierwszeństwo operatorów w języku X++
@@ -251,6 +253,10 @@
               href: extensibility/extensibility-changes-802.md
             - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.0.3
               href: extensibility/extensibility-changes-803.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.0.4
+              href: extensibility/extensibility-changes-804.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1
+              href: extensibility/extensibility-changes-81.md
         - name: Informacje podstawowe
           items:
             - name: Narzucane dostosowania
@@ -912,10 +918,12 @@
           href: gdpr/respond-dsr-request-talent.md
         - name: Odpowiadanie na wnioski o dane osobowe w systemie AX 2012
           href: gdpr/gdpr-ax2012.md
-        - name: Wnioski o dane w ramach RODO w usłudze LCS
+        - name: Żądania danych zgodne z rozporządzeniem RODO w usłudze LCS
           href: gdpr/gdpr-lcs.md
     - name: Obszar roboczy Lista kontrolna weryfikacji danych
       href: user-interface/data-validation-workspace.md
+    - name: Opisy błędów zarządzania danymi
+      href: data-entities/dm-error-descriptions.md
 - name: Ciągłe dostarczanie
   href: dev-tools/continuous-delivery-home-page.md
   items:
@@ -1109,12 +1117,27 @@
               href: migration-upgrade/migrate-upgraded-cube-entity-store.md
             - name: Uaktualnianie funkcjonalności planowania budżetu
               href: migration-upgrade/upgrade-budget-planning.md
+    - name: Migracja danych z systemu AX 2009 do rozwiązania Finance and Operations
+      href: migration-upgrade/data-migration-tool.md
+      items:
+        - name: Migracja systemu AX 2009 — instalowanie narzędzia migracji danych
+          href: migration-upgrade/install-dmt.md
+        - name: Migracja systemu AX 2009 — generowanie map
+          href: migration-upgrade/generate-maps.md
+        - name: Migracja systemu AX 2009 — tworzenie szablonów
+          href: migration-upgrade/create-package-templates-dmt.md
+        - name: Migracja systemu AX 2009 — tworzenie grup migracji
+          href: migration-upgrade/create-definition.md
+        - name: Migracja systemu AX 2009 — pakiety eksportu
+          href: migration-upgrade/ax2009-upgrade-export-package.md
+        - name: Migracja systemu AX 2009 — pakiety importu
+          href: migration-upgrade/ax2009-upgrade-import-package.md
     - name: Migracja i uaktualnianie kodu
       href: migration-upgrade/code-migration-home-page.md
       items:
         - name: Przygotowania do migracji kodu
           href: migration-upgrade/prepare-migration.md
-        - name: Konfigurowanie mapowania usługi Visual Studio Team Services
+        - name: Konfigurowanie mapowania usługi Azure DevOps
           href: migration-upgrade/configure-vso-solution.md
         - name: Podział na modele
           href: dev-tools/model-split.md
@@ -1124,9 +1147,11 @@
       items:
         - name: Proces przechodzenia do najnowszej aktualizacji
           href: migration-upgrade/upgrade-latest-update.md
+        - name: Aktualizowanie środowisk z wersji 8.0 do wersji 8.1
+          href: migration-upgrade/appupdate-80-81.md
         - name: Zasady dotyczące cyklu życia oprogramowania i wydania w chmurze
           href: migration-upgrade/versions-update-policy.md
-        - name: Stosowanie najnowszej aktualizacji platformy w środowiskach
+        - name: Stosowanie najnowszej aktualizacji platformy do środowisk
           href: migration-upgrade/upgrade-latest-platform-update.md
         - name: Uaktualnianie platformy Dynamics AX do wydania z sierpnia 2016
           href: migration-upgrade/update-platform-each-release.md
@@ -1248,9 +1273,9 @@
       href: lifecycle-services/complete-tasks-bpm.md
     - name: Praca z diagramami działań w bibliotekach narzędzia BPM
       href: lifecycle-services/using-activity-diagrams.md
-    - name: Synchronizowanie bibliotek narzędzia BPM z usługą Visual Studio Team Services
+    - name: Synchronizowanie bibliotek narzędzia BPM z usługą Azure DevOps
       href: lifecycle-services/synchronize-bpm-vsts.md
-    - name: Tworzenie bibliotek testów akceptacyjnych użytkownika przy użyciu przewodników po zadaniach i narzędzia BPM
+    - name: Tworzenie bibliotek testów akceptacyjnych użytkownika przy użyciu przewodników zadań i narzędzia BPM
       href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
     - name: Schematy blokowe w Narzędziu do modelowania procesów biznesowych
       href: lifecycle-services/flowcharts-business-process-modeler.md
@@ -1266,6 +1291,10 @@
       href: lifecycle-services/user-logins.md
     - name: Biblioteka elementów zawartości
       href: lifecycle-services/asset-library.md
+    - name: Rozwiązywanie problemów z wydajnością przy użyciu narzędzi dostępnych w usłudze LCS
+      href: lifecycle-services/performancetroubleshooting.md
+    - name: Podręcznik tworzenia zapytań
+      href: lifecycle-services/querycookbook.md
     - name: Microsoft Dynamics 365 Translation Service
       href: lifecycle-services/translation-service-overview.md
       items:

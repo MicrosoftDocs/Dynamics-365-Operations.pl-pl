@@ -3,7 +3,7 @@ title: "Generowanie raportów finansowych"
 description: Ten temat zawiera informacje o generowaniu sprawozdania finansowego.
 author: aprilolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 09/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: b1dea07589b7fe953ec47b204441d044c19b5020
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/27/2018
 
 ---
 
@@ -32,17 +32,14 @@ ms.lasthandoff: 08/13/2018
 
 Ten temat zawiera informacje o generowaniu sprawozdania finansowego.
 
-Aby wygenerować raport, otwórz definicję raportu, a następnie kliknij przycisk Generuj na pasku narzędzi. Okno Stan kolejki raportów otworzy się i wskaże lokalizację raportu w kolejce. Domyślnie wygenerowane raporty otwierają się za pomocą Podglądu w sieci Web.
-
-> [!NOTE]
-> Można generować raporty tylko do folderów i lokalizacji, do których masz uprawnienia dostępu.
+Aby wygenerować raport, otwórz definicję raportu, a następnie kliknij przycisk Generuj na pasku narzędzi. Okno Stan kolejki raportów otworzy się i wskaże lokalizację raportu w kolejce. Domyślnie wygenerowany raport zostanie otwarty w przeglądarce sieci web.
 
 Są dostępne następujące opcje generowania raportów:
 
 - Konfigurowanie harmonogramu w celu automatycznego generowania raportu lub grupy raportów
 - Sprawdzanie brakujących kont lub danych w raporcie i sprawdzanie poprawności raportu
 
-Podczas generowania raportu są używane opcje, które określono na kartach Definicja raportu. Karta Produkcja i dystrybucja pozwala określić lokalizację biblioteki raportów, która zapewnia prosty sposób udostępniania raportu.
+Podczas generowania raportu są używane opcje, które określono na kartach Definicja raportu.
 
 ## <a name="generate-a-financial-report"></a>Generowanie raportu finansowego
 
@@ -55,10 +52,7 @@ Po wygenerowaniu raportu, raport będzie dostępny do wyświetlenia w sekcji **R
 
 Można wybrać dla raportu opcję **Wyświetl** lub **Usuń**.
 
-Aby wygenerować raport za pomocą **Projektanta raportów**, otwórz definicję raportu, a następnie kliknij przycisk Generuj na pasku narzędzi. Okno Stan kolejki raportów otworzy się i wskaże lokalizację raportu w kolejce. Domyślnie wygenerowane raporty otwierają się za pomocą Podglądu w sieci Web.
-
-> [!NOTE]
-> Można generować raporty tylko do folderów i lokalizacji, do których masz uprawnienia dostępu.
+Aby wygenerować raport za pomocą **Projektanta raportów**, otwórz definicję raportu, a następnie kliknij przycisk Generuj na pasku narzędzi. Okno Stan kolejki raportów otworzy się i wskaże lokalizację raportu w kolejce. Domyślnie wygenerowany raport zostanie otwarty w przeglądarce sieci web.
 
 ## <a name="schedule-report-generation"></a>Planowanie generowania raportów
 W wielu przedsiębiorstwach istnieje pewien podstawowy zbiór raportów, które są tworzone według określonego harmonogramu dopasowanego do potrzeb procesów biznesowych. Można zaplanować raport do generowania regularnego, np. codziennie, co tydzień, co miesiąc lub co roku. Sesja może obejmować jeden raport albo grupę raportów dla kilku przedsiębiorstw. Dla każdej uwzględnionej firmy, na przykład wpisanej w definicji drzewa raportowania, trzeba wprowadzić poświadczenia dostępu. Jeśli poświadczenia nie są prawidłowe, raport wyświetli tylko informacje, że masz uprawnienia dostępu, takie jak firma w której jesteś zalogowany w danej chwili. Informacje o danych wyjściowych są odczytywane najpierw z grupy raportów, a następnie z poszczególnych raportów.

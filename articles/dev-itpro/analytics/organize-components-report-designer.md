@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: c9772d45cf9d9941dd8fe0de13ce624ea3aa3b53
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: 3f2b34cccfd84a9e4bb76e7a1da64e5cefa9982e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/27/2018
 
 ---
 
@@ -37,12 +37,9 @@ Można zmieniać nazwy folderów, raportów, bloków konstrukcyjnych i innych ob
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Zmienianie nazwy folderu lub bloku konstrukcyjnego w Projektancie raportów
 W Projektancie raportów można zmieniać nazwy folderów, definicji raportów, definicji wierszy, definicji kolumn i definicji drzew raportowania.
 
-> [!NOTE]
-> Po zmianie nazwy bloku konstrukcyjnego należy zaktualizować wszelkie definicje raportowania, które używają tego bloku. W przeciwnym razie nie można wygenerować nowego raportu.
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Zmienianie nazwy folderu lub modułu konstrukcyjnego w Projektancie raportów
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Zmienianie nazwy folderu lub bloku konstrukcyjnego w Projektancie raportów
-
-1. W Konstruktorze raportów użyj okienka nawigacji, by znaleźć folder lub obiekt, którego nazwę chcesz zmienić.
+1. W Projektancie raportów użyj okienka nawigacji, aby zlokalizować folder lub obiekt, którego nazwę chcesz zmienić.
 2. Kliknij prawym przyciskiem myszy folder lub obiekt, a następnie kliknij przycisk **Zmień nazwę**. Pole **Nazwa** w okienku nawigacji staje się dostępne.
 3. Wpisz nową nazwę, a następnie naciśnij klawisz Enter.
 4. Jeśli blok konstrukcyjny jest definicją wiersza, kolumny lub drzewa raportowania, należy zaktualizować pozostałe skojarzone z nim bloki konstrukcyjne. Kliknij prawym przyciskiem myszy blok konstrukcyjny, którego nazwa została zmieniona w kroku 3, wybierz opcję **Skojarzenia**, a następnie wybierz pozycję na liście, aby ją zaktualizować.

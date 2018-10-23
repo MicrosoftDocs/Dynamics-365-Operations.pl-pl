@@ -1,28 +1,29 @@
 --- 
-title: "Generowanie raportu listy sprzedaży do UE"
+title: "EUR-00011 Generowanie raportu listy sprzedaży do UE"
 description: "Ta procedura prowadzi przez proces generowania raportu o liście sprzedaży do UE."
-author: EvgenyPopovMBS
+author: ShylaThompson
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  EUSalesList, EUSalesListSelection, SysQueryForm, SysLookup
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 820c18eaa8d94b67c9d246c818ea13f3bdceeb39
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 9fcafa2beca5d998b2556ba73e9f3cc2bdd314ba
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="generate-an-eu-sales-list-report"></a>Generowanie raportu listy sprzedaży do UE
+# <a name="eur-00011-generate-the-eu-sales-list-report"></a>EUR-00011 Generowanie raportu listy sprzedaży do UE
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

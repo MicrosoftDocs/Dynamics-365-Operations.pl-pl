@@ -3,7 +3,7 @@ title: Przeszacowanie waluty w konsolidowanej firmie
 description: "W tym temacie opisano sposób przeszacowania waluty w konsolidowanej firmie."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: hminzner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 27059b0d2a781453a7594bdc430005df6ea5c167
+ms.sourcegitcommit: ad0083018d2734cb1e36cbf5f94105376c57cdf9
+ms.openlocfilehash: 76290564037ab6f5c7a1cd4508a819bd603e8148
 ms.contentlocale: pl-pl
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 10/02/2018
 
 ---
 
@@ -36,7 +36,7 @@ Podczas konsolidowania danych z jednej waluty rozliczeniowej do innej należy wy
 -   **Źródło/ firma (USMF)** — jako waluta raportowania i księgowania używane są dolary amerykańskie (USD).
 -   **Konsolidowana firma (CON)** — jako waluta raportowania i księgowania używane jest euro (EUR).
     -   **Zrealizowana dodatnia różnica kursowa** — konto księgowe 801500
-    -   **Zrealizowana ujemna różnica kursowa**— konto księgowe 801600
+    -   **Zrealizowana ujemna różnica kursowa** — konto księgowe 801600
     -   **Niezrealizowana dodatnia różnica kursowa**— konto księgowe 801600
     -   **Niezrealizowana ujemna różnica kursowa**— konto księgowe 801400
 

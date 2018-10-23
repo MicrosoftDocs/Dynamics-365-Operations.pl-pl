@@ -3,7 +3,7 @@ title: "Usunięte lub wycofane funkcje"
 description: "W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia."
 author: sericks007
 manager: AnnBe
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8a3c4ed8f3ed79ab0cb3e59076734877d270bd68
-ms.openlocfilehash: cd620dcdeb1cd5fd3a89be9ae31c4d35e29a03d0
+ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
+ms.openlocfilehash: ea24d6d63edc6f3bb1bf4a99d24d348af0d6cdbf
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -41,6 +41,52 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 > [!Note]
 > Szczegółowe informacje o obiektów w rozwiązaniu Finance and Operations można znaleźć w [raportach z wykazami parametrów technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach programu Finance and Operations.
+
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Glosariusz terminów używanych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations 8.1 z aktualizacją platformy 20
+
+### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Reguły przetwarzania wsadowego zapisów na koncie w arkuszu księgi podrzędnej
+Tryb przesyłania synchronicznego jest usuwany z parametrów księgi głównej.  Zastępują go tryby przesyłania asynchronicznego i zaplanowanych zadań wsadowych, które już istnieją jako opcje przesyłania. 
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Opcja przesyłania synchronicznego jest usuwana ze względu na wpływ na wydajność systemu. |
+| **Zamieniona przez inną funkcję?**   | Zamiast przesyłania synchronicznego należy używać opcji przesyłania asynchronicznego i zaplanowanych zadań wsadowych.   |
+| **Powiązane obszary produktów**         | Księga główna, Rozrachunki z dostawcami, Rozrachunki z odbiorcami, Zaopatrzenie, Wydatek    |
+| **Opcja wdrażania**              | Wszyscy  |
+| **Stan**                         | Wycofane — docelowy okres usuwania funkcji to publikacja wersji 10.0.|
+
+### <a name="electronic-reporting-for-russia"></a>Raportowanie elektroniczne dla Rosji
+Funkcja do konfigurowania formatów plików .txt i .xml dla deklaracji. 
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Zastąpiono modułem Raportowanie elektroniczne. |
+| **Zamieniona przez inną funkcję?**   | Tak. |
+| **Powiązane obszary produktów**         | Księga główna |
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Usunięto w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations 8.1 z aktualizacją platformy 20. |
+
+### <a name="financial-reports-generator-for-russia"></a>Generator raportów finansowych dla Rosji
+Narzędzie do konfigurowania zbierania danych na potrzeby raportów księgowych i podatkowych i eksportowanie danych do szablonów raportów XLS i DOC. Części funkcjonalne: usunięto funkcje eksportowania danych do szablonów raportów w formatach XLS i DOC, zapytań i stałych wymagań. 
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Usunięte części są zastąpione modułem Raportowanie elektroniczne. |
+| **Zamieniona przez inną funkcję?**   | Tak. Interfejs użytkownika konfigurowania raportów finansowych powinien być używany do konfigurowania reguł zbierania danych do kont KG i rejestrów podatkowych. W module Raportowanie elektroniczne należy skonfigurować funkcje eksportowania danych do różnych typów plików, stałych wymagań i reguł zbierania danych za pomocą mechanizmu przypominającego zapytania. |
+| **Powiązane obszary produktów**         | Księga główna. |
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Usunięto w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations 8.1 z aktualizacją platformy 20. |
+
+### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integracja z zewnętrznymi dostawcami na potrzeby wysyłania raportów elektronicznych poprzez kanały komunikacyjne dla Rosji
+Funkcja eksportowania wygenerowanych plików elektronicznych deklaracji do folderu w celu dalszego przesłania do oficjalnych dostawców raportowania elektronicznego, a także zaimportowanie stanu z powrotem.
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Zastąpiono konfigurowalną funkcją komunikatów elektronicznych. |
+| **Zamieniona przez inną funkcję?**   | Tak.  |
+| **Powiązane obszary produktów**         | Księga główna, Podatek |
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Usunięto w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations 8.1 z aktualizacją platformy 20. |
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Glosariusz terminów używanych w rozwiązaniu Microsoft Dynamics 365 for Finance and Operations 8.0 z aktualizacją platformy 15
 Żadne funkcje nie zostały usunięte ani wycofane w tej wersji. Aktualizacja platformy 15 jest zbiorcza i zawiera nowe oraz zmienione funkcje z aktualizacji platformy 13, 14 i 15.

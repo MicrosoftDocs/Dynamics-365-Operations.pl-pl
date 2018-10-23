@@ -1,28 +1,29 @@
 --- 
-title: "Konfigurowanie grupy księgowania w księdze da podatku"
+title: "Konfigurowanie grup księgowania dla podatku"
 description: "Podatek jest obliczany i księgowany na kontach głównych określonych w grupach księgowania."
-author: ShylaThompson
+author: twheeloc
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: TaxAccountGroup
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ef3cad6538d9efbd1c1881f4b7d771382d9b1ba8
-ms.openlocfilehash: e50fc2b6b8f4cd91e9a5593297fff2e9a6ef5525
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 15421da6f325dfee22a303e9fe83a0e72895fa08
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Konfigurowanie grupy księgowania w księdze da podatku
+# <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Konfigurowanie grup księgowania dla podatku
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,28 +1,29 @@
 --- 
-title: "Projektowanie raportów w celu używania wymiarów finansowych jako źródeł danych"
+title: "ER Używanie wymiarów finansowych jako źródła danych (Część 3 — Projektowanie raportu)"
 description: "W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować model raportowania elektronicznego (ER), aby używał on wymiarów finansowych jako źródła danych w raportach ER."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/18/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 055401104ae62c75694dff0b2ee64d12b2621686
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 45096a728ad6f9e331b53b4e12ca0ff9317a3939
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="design-reports-to-use-financial-dimensions-as-data-sources"></a>Projektowanie raportów w celu używania wymiarów finansowych jako źródeł danych
+# <a name="er-use-financial-dimensions-as-a-data-source-part-3-design-the-report"></a>ER Używanie wymiarów finansowych jako źródła danych (Część 3: Projektowanie raportu)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

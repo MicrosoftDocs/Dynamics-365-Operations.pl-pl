@@ -1,29 +1,29 @@
 --- 
-title: "Konfigurowanie sprawdzania uzgadniania faktur rozrachunków z dostawcami"
+title: "Konfigurowanie sprawdzania poprawności uzgadniania faktur rozrachunków z dostawcami"
 description: "To nagranie wykorzystuje firmę demonstracyjną USMF."
 author: abruer
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendParameters
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e9bf83269c34133509734691fd018ee703c40626
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 7a26a057b524f162e4b288b88e8c30f7c5db7a45
 ms.contentlocale: pl-pl
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-
-# <a name="set-up-accounts-payable-invoice-matching-validation"></a>Konfigurowanie sprawdzania uzgadniania faktur rozrachunków z dostawcami
+# <a name="set-up-accounts-payable-invoice-matching-validation"></a>Konfigurowanie sprawdzania poprawności uzgadniania faktur rozrachunków z dostawcami
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

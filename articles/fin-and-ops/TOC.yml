@@ -36,14 +36,20 @@
           items:
             - name: Zasady dotyczące cyklu życia oprogramowania i wydania w chmurze
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
-            - name: Zasady dotyczące cyklu życia oprogramowania i wydania lokalne
+            - name: Zasady dotyczące cyklu życia oprogramowania i wydania wersji lokalnych
               href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
+            - name: Zakończenie wsparcia podstawowego dla systemów Microsoft Dynamics AX 2009 i 2012
+              href: get-started/mainstream-support-ax-2009-2012.md
             - name: Usunięte lub wycofane funkcje
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
             - name: 'Funkcje systemu AX 2012, które zostały odroczone'
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funkcje niezaimplementowane we wdrożeniach lokalnych
               href: get-started/features-not-implemented-on-prem.md
+            - name: Finance and Operations w wersji 8.1 (październik 2018)
+              href: get-started/whats-new-changed-8-1-October-2018.md
+            - name: Aktualizacja Platform update 20 (wrzesień 2018)
+              href: get-started/whats-new-platform-update-20.md
             - name: Finance and Operations w wersji 8.0 (kwiecień 2018)
               href: get-started/whats-new-changed-8-0-April-2018.md
             - name: Aktualizacja Platform update 15 (marzec 2018)
@@ -452,10 +458,14 @@
               items:
                 - name: Konfigurowanie weryfikacji uzgadniania faktur w module Rozrachunki z dostawcami
                   href: ../financials/accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
-            - name: Zasady podziału księgowań i zapisy w arkuszu księgi podrzędnej dla faktur od dostawcy
+            - name: Zasady podziału księgowań i wpisy w arkuszu księgi podrzędnej dla faktur od dostawcy
               href: ../financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Uzgadnianie faktur i międzyfirmowe zamówienia zakupu
               href: ../financials/accounts-payable/invoice-matching-intercompany-purchase-orders.md
+            - name: Konfigurowanie zasad faktur od dostawców
+              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Rejestrowanie faktury od dostawcy i porównywanie z przyjętą ilością
+              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Omówienie płatności dodatnich
               href: ../financials/accounts-payable/positive-pay-overview.md
             - name: Konfigurowanie i generowanie plików płatności dodatnich
@@ -566,10 +576,6 @@
               href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
             - name: Przetwarzanie odsetek
               href: ../financials/accounts-receivable/tasks/process-interest.md
-            - name: Konfigurowanie zasad faktur od dostawców
-              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
-            - name: Rejestrowanie faktury od dostawcy i porównywanie z przyjętą ilością
-              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Tworzenie faktury dla odbiorcy
               href: ../financials/accounts-receivable/configure-customer-invoices.md
             - name: Deponowanie płatności odbiorców
@@ -596,6 +602,8 @@
               href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Konfigurowanie i generowanie informacji o wiekowaniu rozrachunków z odbiorcami
               href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Kopiowanie odbiorców przy użyciu udostępnionych sekwencji numerów
+              href: ../financials/accounts-receivable/copy-customer.md
             - name: Przepływ pracy odbiorcy
               href: ../financials/accounts-receivable/customer-workflow.md
             - name: Płatności i rozliczenia
@@ -1543,8 +1551,6 @@
               href: ../financials/localizations/emea-fiscal-service-integration.md
             - name: Likwidacja środków trwałych w Estonii i na Litwie
               href: ../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md
-            - name: Przeszacowanie w walucie obcej
-              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Generowanie dokumentu wewnętrznego przesunięcia magazynowego
               href: ../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md
             - name: Generowanie raportu listy sprzedaży do UE
@@ -2104,6 +2110,8 @@
               href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
             - name: Rozszerzenie funkcjonalności likwidacji środków trwałych
               href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
+            - name: Przeszacowanie w walucie obcej
+              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Opakowanie zwrotne
               href: ../financials/localizations/emea-pol-returnable-packages.md
             - name: Raporty podatków
@@ -2114,6 +2122,42 @@
               href: ../financials/localizations/emea-pol-interest-calculation.md
             - name: Zestawienie obrotów i sald
               href: ../financials/localizations/emea-pol-turnover-balances-statement.md
+        - name: Rosja
+          href: ../financials/localizations/russia.md
+          items:
+            - name: Posiadacze zaliczek
+              href: ../financials/localizations/rus-advance-holders.md
+              items:
+                - name: Tworzenie posiadacza zaliczki
+                  href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
+                - name: Codzienne operacje dotyczące posiadaczy zaliczek
+                  href: ../financials/localizations/rus-advance-holders-daily-operations.md
+            - name: Środki trwałe
+              items:
+                - name: Nabywanie środków trwałych i włączanie ich do działalności operacyjnej
+                  href: ../financials/localizations/rus-fixed-asset-acquisition.md
+                - name: Tworzenie i księgowanie arkuszy budżetu dotyczących nabyć środków trwałych
+                  href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
+                - name: Zliczanie środków trwałych
+                  href: ../financials/localizations/rus-fixed-assets-counting.md
+                - name: Przeszacowanie środków trwałych w walucie
+                  href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+                - name: Częściowy demontaż środka trwałego (likwidacja)
+                  href: ../financials/localizations/rus-fixed-assets-disassembly.md
+            - name: Konfigurowanie i przetwarzanie poleceń zapłaty
+              href: ../financials/localizations/rus-payment-order-settings-processing.md
+            - name: Konfigurowanie kursów wymiany na potrzeby transakcji walutowych
+              href: ../financials/localizations/rus-exchange-difference.md
+            - name: Podgląd transakcji księgi
+              href: ../financials/localizations/rus-ledger-transactions-preview.md
+            - name: Konfigurowanie danych oficjalnych
+              href: ../financials/localizations/rus-officials.md
+            - name: Konfigurowanie kont bankowych
+              href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
+            - name: Podatek od towarów i usług (VAT) dla agentów podatkowych
+              href: ../financials/localizations/rus-tax-agent.md
+            - name: Konfigurowanie kontroli wymiarów dla rozliczeń
+              href: ../financials/localizations/rus-transactions-settlement-date.md
         - name: Arabia Saudyjska
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2133,6 +2177,8 @@
               href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
             - name: Opcje weksla
               href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
+            - name: Obliczanie dat wymagalności i raportowanie średniego okresu płatności
+              href: ../financials/localizations/emea-esp-invoice-due-dates.md
             - name: Podatek warunkowy
               href: ../financials/localizations/emea-esp-conditional-sales-tax.md
             - name: Księgowanie fakturowania po stronie kredytowej
@@ -2857,7 +2903,7 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: Ręczne modyfikowanie prognozy popytu
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Aplikacja mobilna Dynamics 365 for Unified Operations
+    - name: Aplikacja Dynamics 365 for Unified Operations Mobile
       href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
       items:
         - name: Dostępne mobilne obszary robocze

@@ -1,9 +1,9 @@
 ---
-title: "Konfigurowanie urządzeń przenośnych do pracy w magazynie"
-description: "W tym artykule opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych."
+title: "Konfigurowanie urządzeń przenośnych do pracy magazynowej"
+description: "W tym temacie opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,20 +19,20 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: bb0d6af3a17653ea33e3f84a416bda244a27507c
+ms.sourcegitcommit: 74522c97716238b62af3d65a1c23ba9e5e60a68b
+ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
 ms.contentlocale: pl-pl
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 10/03/2018
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy w magazynie
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy magazynowej
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych.
+W tym temacie opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych.
 
-**Uwaga:** Ten artykuł dotyczy funkcji w module Zarządzanie magazynem. Nie ma zastosowania do funkcji w module Zarządzanie zapasami. Elementy menu, które pojawiają się w menu na urządzeniu przenośnym w magazynie, konfiguruje się na stronie **Elementy menu urządzenia przenośnego**. Ponieważ elementy menu mogą być umieszczane w różnych menu, można łatwo skonfigurować struktury menu, tak aby tylko określone typy pracy były dostępne dla określonych użytkowników. Konfiguracja elementów menu może obejmować następujące funkcje:
+**Uwaga:** Ten temat dotyczy funkcji w module Zarządzanie magazynem. Nie ma zastosowania do funkcji w module Zarządzanie zapasami. Elementy menu, które pojawiają się w menu na urządzeniu przenośnym w magazynie, konfiguruje się na stronie **Elementy menu urządzenia przenośnego**. Ponieważ elementy menu mogą być umieszczane w różnych menu, można łatwo skonfigurować struktury menu, tak aby tylko określone typy pracy były dostępne dla określonych użytkowników. Konfiguracja elementów menu może obejmować następujące funkcje:
 
 -   Przetwarzanie informacji lub wykonanie działań, np. drukowanie etykiety, generowanie numerów identyfikacyjnych, rozpoczęcia zlecenia produkcyjnego lub szybkie wyszukiwanie informacje o pozycji w lokalizacjach.
 -   Tworzenie pracy, która zostanie wykonana za pomocą innego procesu. Na przykład przyjęcie towaru dla zamówienia zakupu może tworzyć pracę odkładania dla innego pracownika.
@@ -193,7 +193,7 @@ Możesz skonfigurować element menu, który tworzy pracę dla innego pracownika 
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Konfigurowanie elementów menu do przetwarzania istniejącej pracy
-Oprócz zdefiniowania elementów to utworzenia pracy magazynu, można ustawić pozycje menu do przetwarzania pracy, która została już utworzona. Ustaw pole **Tryb** na wartość **Praca** i wybierz opcję **Użyj istniejącej pracy**. Na karcie **Ogólne** pojawi się kilka dodatkowych opcji. Można kontrolować dostęp do elementu menu przez przypisywanie do nich klas pracy na skróconej karcie **Klasa pracy**. Klasy pracy definiują pracę, którą element menu może przetworzyć. Klasa pracy może również być używana do udzielania dostępu rolom właściwym dla użytkownika lub oddzielnego przetwarzania różnych typów operacji. W poniższej tabeli przedstawiono dostępne opcje.
+Oprócz zdefiniowania elementów to utworzenia pracy magazynu, można ustawić pozycje menu do przetwarzania pracy, która została już utworzona. Ustaw pole **Tryb** na wartość **Praca** i wybierz opcję **Użyj istniejącej pracy**. Na karcie **Ogólne** pojawi się kilka dodatkowych opcji. Można kontrolować dostęp do elementu menu przez przypisywanie do nich klas pracy na skróconej karcie **Klasa pracy**. Klasy pracy definiują pracę, którą element menu może przetworzyć. Klasa pracy może również być używana do udzielania dostępu rolom właściwym dla użytkownika lub oddzielnego przetwarzania różnych typów operacji. W poniższej tabeli przedstawiono dostępne opcje. Opcję można wybrać w polu **Sterowane przez** na stronie **Elementy menu urządzenia przenośnego**. 
 
 <table>
 
@@ -247,6 +247,10 @@ Ta opcja przydaje się na przykład wtedy, gdy wiele palet jest przygotowanych d
 <tr class="even">
 <td>Grupowanie inwentaryzacji ciągłej</td>
 <td>Pracownik wybiera strefę, pulę pracy lub lokalizację, a program Microsoft Dynamics 365 for Finance and Operations przypisuje pracę na podstawie wyboru. Jeśli wybierzesz tę opcję, możesz też kliknąć <strong>Inwentaryzacja ciągła</strong> w okienku akcji, aby określić dodatkowe informacje do wyświetlenia i możesz też określić, ile razy pracownik musi potworzyć zliczanie, jeśli wystąpi rozbieżność.</td>
+</tr>
+ <tr class="odd">
+<td>Ładowanie transportu</td>
+<td>Ta funkcja umożliwia kilku pracownikom magazynu ładowanie zapasów z tego samego lub różnych ładunków na tę samą ciężarówkę, gdzie ładunki są wysłane w całości lub częściowo.</td>
 </tr>
 </tbody>
 </table>
@@ -349,7 +353,7 @@ W poniższej tabeli opisano te opcje.
 <td>Wybranie tej opcji umożliwia pracownikom połączenie pracy dla zamówienia sprzedaży lub ładunku w jedną jednostkę roboczą. Pracownika może wykonać pracę tylko dla zamówienia sprzedaży lub ładunku. Ta opcja jest przydatna, np. kiedy trzeba zwiększyć ilość w zamówieniu sprzedaży po utworzeniu ładunku, wysyłki i pracy dla zamówienia sprzedaży. Ta opcja jest dostępna, gdy element menu używa istniejącej pracy i praca jest sterowana przez system lub użytkownika.</td>
 </tr>
 <tr class="even">
-<td>Brak</td>
+<td>Pobierz z najstarszej partii</td>
 <td>Wskazuje, czy pracownik musi najpierw pobrać w lokalizacji najstarszą partię. Dostępne są następujące opcje:
 <ul>
 <li><strong>Brak</strong> — pracownik może pobrać dowolną partię w lokalizacji. Pracownik nie otrzymuje żadnej wiadomości.</li>

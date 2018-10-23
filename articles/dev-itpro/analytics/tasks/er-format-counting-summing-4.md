@@ -1,28 +1,29 @@
 --- 
-title: "Uruchamianie formatów raportowania elektronicznego (ER) w celu wykonania zliczania i sumowania"
+title: "ER Konfigurowanie formatu do inwentaryzacji i sumowania (Część 4 — Inicjowanie formatu)"
 description: "W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować format raportowania elektronicznego (ER), aby wykonywał inwentaryzację i sumowanie na podstawie danych już wygenerowanych tekstów wyjściowych."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/28/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERSolutionTable, IntrastatParameters, Intrastat, InventItemIdLookupSimple, IntrastatCommodityLookup, ERFormatMappingRunLogTable, DocuView
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: c6d309416a3a0c4da07a76c90246f492585deef5
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 17989b7fa2baf14472ec19a041cb5ce7e5c0380d
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="run-electronic-reporting-er-formats-to-do-counting-and-summing"></a>Uruchamianie formatów raportowania elektronicznego (ER) w celu wykonania zliczania i sumowania
+# <a name="er-configure-format-to-do-counting-and-summing-part-4-run-format"></a>ER Konfigurowanie formatu do inwentaryzacji i sumowania (Część 4: Inicjowanie formatu)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
