@@ -257,6 +257,10 @@
               href: extensibility/extensibility-changes-804.md
             - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1
               href: extensibility/extensibility-changes-81.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1.1
+              href: extensibility/extensibility-changes-811.md
+            - name: Zmiany w zakresie możliwości rozszerzania — wersja 8.1.2
+              href: extensibility/extensibility-changes-812.md
         - name: Informacje podstawowe
           items:
             - name: Narzucane dostosowania
@@ -303,9 +307,7 @@
               href: extensibility/change-caption-form.md
             - name: Modyfikowanie właściwości kontrolki formularza
               href: extensibility/modify-control-properties.md
-            - name: Zmienianie etykiet przy użyciu plików rozszerzeń etykiet
-              href: extensibility/change-label.md
-            - name: Rozszerzanie zakresu numeracji
+            - name: Rozszerzanie zakresu sekwencji numerów
               href: extensibility/extend-number-sequence-scope.md
             - name: Dodawanie nowych wymiarów magazynowych
               href: extensibility/inventory-dimensions.md
@@ -317,6 +319,8 @@
               href: extensibility/maps-as-interfaces.md
             - name: Rozszerzanie mapowań tabel używanych na potrzeby przechowywania wersji
               href: extensibility/maps-with-versioning.md
+            - name: Rozszerzanie liczby miejsc dziesiętnych dla wybranych typów danych
+              href: extensibility/decimal-point-precision.md
         - name: Tworzenie rozszerzalnych rozwiązań
           items:
             - name: Pisanie rozszerzalnego kodu
@@ -764,148 +768,12 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
             - name: Typ ValueMetadata
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
-- name: Integracja danych
+- name: Ogólne rozporządzenie o ochronie danych (RODO)
+  href: gdpr/gdpr-guide.md
   items:
-    - name: Wybieranie strategii integracji danych (import/eksport)
-      href: data-entities/integration-overview.md
-    - name: Interfejsy API integracji danych
-      items:
-        - name: Interfejs API REST pakietu zarządzania danymi
-          href: data-entities/data-management-api.md
-        - name: Punkty końcowe usług
-          href: data-entities/services-home-page.md
-          items:
-            - name: Rozwiązywanie problemów z uwierzytelnianiem usług
-              href: data-entities/troubleshoot-service-authentication.md
-        - name: Interfejs OData
-          href: data-entities/odata.md
-        - name: Opracowywanie niestandardowych usług
-          href: data-entities/custom-services.md
-        - name: Integracje cykliczne
-          href: data-entities/recurring-integrations.md
-        - name: Testowanie usług za pomocą narzędzi innych firm
-          href: data-entities/third-party-service-test.md
-    - name: Programowanie na potrzeby integracji
-      items:
-        - name: Zarządzanie danymi i integracja za pomocą jednostek danych
-          href: data-entities/data-management-integration-data-entity.md
-          items:
-            - name: Opracowywanie jednostek na potrzeby migracji danych
-              href: data-entities/develop-entity-for-data-migration.md
-            - name: Opracowywanie złożonych jednostek danych
-              href: data-entities/develop-composite-data-entities.md
-            - name: Konfigurowanie udostępniania danych finansowych między firmami
-              href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
-            - name: Tworzenie szablonów rekordów w celu ułatwienia wprowadzania danych
-              href: data-entities/tasks/create-record-template-facilitate-data-entry.md
-            - name: Tworzenie rekordów przy użyciu szablonów rekordów
-              href: data-entities/tasks/use-record-template-new-record.md
-        - name: Integracja danych za pomocą usługi Common Data Service
-          href: data-entities/data-integration-cds.md
-          items:
-            - name: Konfigurowanie scenariusza Od Prospekta do środków pieniężnych
-              href: ../supply-chain/sales-marketing/prospect-to-cash.md
-              items:
-                - name: Synchronizowanie kont klientów bezpośrednio z rozwiązania Sales do odbiorców w rozwiązaniu Finance and Operations
-                  href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                - name: Synchronizowanie produktów w rozwiązaniu Finance and Operations bezpośrednio z produktami w rozwiązaniu Sales
-                  href: ../supply-chain/sales-marketing/products-template-mapping-direct.md
-                - name: Synchronizowanie kontaktów w rozwiązaniu Sales bezpośrednio z kontaktami lub odbiorcami w rozwiązaniu Finance and Operations
-                  href: ../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                - name: Synchronizowanie nagłówków i wierszy ofert sprzedaży bezpośrednio z rozwiązania Sales do rozwiązania Finance and Operations
-                  href: ../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                - name: Synchronizacja zamówień sprzedaży bezpośrednio między rozwiązaniem Sales a rozwiązaniem Finance and Operations
-                  href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                - name: Synchronizowanie nagłówków i wierszy faktur sprzedaży w rozwiązaniu Finance and Operations bezpośrednio z elementami w rozwiązaniu Sales
-                  href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-            - name: Konfigurowanie integracji z rozwiązaniem Field Service
-              href: ../supply-chain/sales-marketing/field-service.md
-              items:
-                - name: Synchronizowanie produktów w rozwiązaniu Finance and Operations z produktami w rozwiązaniu Field Service
-                  href: ../supply-chain/sales-marketing/field-service-product.md
-                - name: Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Finance and Operations
-                  href: ../supply-chain/sales-marketing/field-service-work-order.md
-                - name: Synchronizowanie faktur dotyczących umowy w rozwiązaniu Field Service z fakturami niezależnymi w rozwiązaniu Finance and Operations
-                  href: ../supply-chain/sales-marketing/field-service-invoice.md
-            - name: Konfigurowanie integracji z rozwiązaniem Project Service Automation
-              href: ../financials/project-management/PSA-integration.md?toc=/dev-itpro/toc.json
-              items:
-                - name: Parametry integracji z rozwiązaniem Project Service Automation
-                  href: ../financials/project-management/PSA-parameters.md?toc=/dev-itpro/toc.json
-                - name: Synchronizowanie projektów i umów dotyczących projektów
-                  href: ../financials/project-management/project-contracts-templates.md?toc=/dev-itpro/toc.json
-                - name: Synchronizowanie zadań projektu
-                  href: ../financials/project-management/project-tasks-template.md?toc=/dev-itpro/toc.json
-                - name: Synchronizowanie kategorii wydatków projektu
-                  href: ../financials/project-management/project-categories-templates.md?toc=/dev-itpro/toc.json
-                - name: Synchronizowanie oszacowań projektu z prognozami projektu
-                  href: ../financials/project-management/project-estimates-templates.md?toc=/dev-itpro/toc.json
-                - name: Synchronizowanie wartości rzeczywistych projektu z arkuszem integracji projektu
-                  href: ../financials/project-management/project-actuals-templates.md?toc=/dev-itpro/toc.json
-        - name: Korzystanie z zewnętrznych usług sieci web
-          href: data-entities/consume-external-web-service.md
-- name: Zarządzanie danymi
-  href: data-entities/data-entities-data-packages.md
-  items:
-    - name: Jednostki danych
-      href: data-entities/data-entities.md
-      items:
-        - name: Projekty danych konfiguracji
-          href: data-entities/configuration-data-projects.md
-        - name: Pakiety danych konfiguracji
-          href: data-entities/configuration-data-packages.md
-        - name: Kopiowanie danych konfiguracji między firmami
-          href: data-entities/copy-configuration.md
-        - name: Szablony danych konfiguracji
-          href: data-entities/configuration-data-templates.md
-        - name: Szablony danych z wieloma arkuszami
-          href: data-entities/excel-template-multiple.md
-        - name: Włączanie śledzenia zmian dla jednostek
-          href: data-entities/entity-change-track.md
-        - name: Klucze konfiguracji i jednostki danych
-          href: data-entities/config-key-entities.md
-        - name: Znajdowanie informacji dotyczących standardowych jednostek danych
-          href: data-entities/data-entities-report.md
-    - name: Zadania importowania i eksportowania danych
-      href: data-entities/data-import-export-job.md
-      items:
-        - name: Najlepsze rozwiązania w zakresie importowania załączników za pomocą jednostki Arkusz finansowy
-          href: data-entities/tips-tricks-import-general-journal-entity.md
-    - name: Opracowywanie jednostek danych
-      items:
-        - name: Zasady projektowania i najlepsze rozwiązania dotyczące jednostek danych
-          href: dev-tools/design-best-practices.md
-        - name: Tworzenie nowych jednostek danych
-          href: data-entities/build-consuming-data-entities.md
-        - name: Właściwości jednostek danych behawioralnych
-          href: data-entities/behavioral-properties-data-entities.md
-        - name: Tworzenie kolumn obliczanych i pól wirtualnych
-          href: data-entities/data-entity-computed-columns-virtual-fields.md
-        - name: Zachowanie międzyfirmowe
-          href: data-entities/cross-company-behavior.md
-        - name: Kody krajów/regionów i klucze konfiguracji
-          href: data-entities/countryregion-codes-configuration-keys.md
-        - name: Wzorce dziedziczenia
-          href: data-entities/support-super-type-sub-type.md
-        - name: Reguły kreatora jednostek danych
-          href: data-entities/data-entity-wizard-rules.md
-        - name: Właściwości metadanych
-          href: data-entities/behavioral-properties-data-entities.md
-        - name: 'Weryfikacje, wartości domyślne i niezamapowane pola'
-          href: data-entities/validations-defaults-unmapped-fields.md
-        - name: Zabezpieczenia i jednostki danych
-          href: data-entities/security-data-entities.md
-        - name: 'Tworzenie jednostek tylko do odczytu, które uwidaczniają wymiary finansowe'
-          href: financial/read-only-entity-financial.md
-    - name: Używanie własnej bazy danych
-      href: analytics/export-entities-to-your-own-database.md
-    - name: Automatyzacja zadań danych
-      href: data-entities/data-task-automation.md
-    - name: Zasoby do odpowiadania na wnioski o dane w ramach RODO
+    - name: Zasoby do odpowiadania na żądanie danych zgodne z rozporządzeniem RODO
       href: gdpr/gdpr-home-page.md
       items:
-        - name: Przewodnik po rozporządzeniu RODO w rozwiązaniu Finance and Operations
-          href: gdpr/gdpr-guide.md
         - name: Klasyfikacje zasobów
           href: gdpr/gdpr-asset-classification-values.md
         - name: Raport wyszukiwania osób
@@ -916,14 +784,10 @@
           href: gdpr/gdpr-auditing-sensitive-data.md
         - name: Odpowiadanie na wnioski o dane osobowe za pomocą rozwiązania Talent
           href: gdpr/respond-dsr-request-talent.md
-        - name: Odpowiadanie na wnioski o dane osobowe w systemie AX 2012
+        - name: Odpowiadanie na żądania danych osobowych w systemie AX 2012
           href: gdpr/gdpr-ax2012.md
         - name: Żądania danych zgodne z rozporządzeniem RODO w usłudze LCS
           href: gdpr/gdpr-lcs.md
-    - name: Obszar roboczy Lista kontrolna weryfikacji danych
-      href: user-interface/data-validation-workspace.md
-    - name: Opisy błędów zarządzania danymi
-      href: data-entities/dm-error-descriptions.md
 - name: Ciągłe dostarczanie
   href: dev-tools/continuous-delivery-home-page.md
   items:
@@ -1039,10 +903,12 @@
         - name: Konfigurowanie i wdrażanie środowisk lokalnych
           href: deployment/setup-deploy-on-premises-environments.md
           items:
-            - name: Wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update 12
+            - name: Wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update 12 i nowszych
               href: deployment/setup-deploy-on-premises-pu12.md
-            - name: Wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update 8 i 11
+            - name: Wdrażanie środowisk lokalnych (aktualizacje Platform update 8 i 11)
               href: deployment/setup-deploy-on-premises-pu8-pu11.md
+            - name: Kroki instalacji składników kanału detalicznego w środowisku lokalnym
+              href: deployment/deploy-retail-onprem.md
         - name: Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych
           href: deployment/develop-deploy-custom-models-on-premises.md
         - name: Konfigurowanie zwrotnych serwerów proxy dla środowisk lokalnych
@@ -1161,6 +1027,8 @@
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Aktualizowanie narzędzi programistycznych
           href: dev-tools/update-development-tools.md
+        - name: Planowanie i przygotowywanie kompilowania kodu z użyciem najnowszej aktualizacji
+          href: migration-upgrade/compile-considerations.md
     - name: Uaktualnianie do najnowszej aktualizacji (lokalne)
       items:
         - name: Stosowanie aktualizacji do wdrożeń lokalnych
@@ -1226,6 +1094,12 @@
           href: sysadmin/batch-server-overview.md
         - name: Tworzenie zadań wsadowych
           href: sysadmin/tasks/create-batch-job.md
+        - name: Kopiowanie zadania wsadowego
+          href: sysadmin/copy-batch-job.md
+        - name: Aktywne okresy partii
+          href: sysadmin/activeperiod.md
+        - name: Rola zabezpieczeń Menedżer partii
+          href: sysadmin/runby.md
     - name: Doradca optymalizacji
       href: sysadmin/optimization-advisor-overview.md
       items:

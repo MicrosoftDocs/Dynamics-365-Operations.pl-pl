@@ -14,6 +14,8 @@
       href: dev-itpro/choose-deployment.md
     - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Retail
       href: retail-support.md
+    - name: Aktualizacje do jednej wersji usługi — często zadawane pytania
+      href: ../fin-and-ops/get-started/one-version.md
 - name: Opis cyklu życia implementacji
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -145,8 +147,6 @@
       items:
         - name: Sklepowe urządzenia peryferyjne
           href: retail-peripherals-overview.md
-        - name: Urządzenia peryferyjne dla punktów sprzedaży przetestowane przez firmę Microsoft
-          href: microsoft-tested-pos-hardware-peripherals.md
         - name: Symulator sklepowych urządzeń peryferyjnych
           href: dev-itpro/retail-peripheral-simulator.md
         - name: Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS
@@ -229,7 +229,9 @@
       href: set-up-rfm-analysis.md
 - name: Rabaty i korekty cen
   items:
-    - name: Zarządzanie cenami sprzedaży w aplikacji Retail
+    - name: Rabaty detaliczne
+      href: retail-discounts-overview.md
+    - name: Zarządzanie cenami sprzedaży detalicznej
       href: price-management.md
     - name: Korekty cen i rabaty
       href: price-adjustments-discounts.md
@@ -269,9 +271,9 @@
       href: ../supply-chain/production-control/default-order-settings.md
     - name: Wyszukiwanie produktów i wariantów produktów podczas wprowadzania zamówień
       href: ../supply-chain/pim/search-products-product-variants.md
-- name: Lojalność
+- name: Program lojalnościowy
   items:
-    - name: Konfigurowanie programów lojalnościowych
+    - name: Omówienie programu lojalnościowego
       href: set-up-customer-loyalty-program.md
 - name: Zapasy
   items:
@@ -307,6 +309,8 @@
       href: ../talent/create-job.md
 - name: Funkcje związane z lokalizacją i wymagane przepisami prawa
   items:
+    - name: Integracja fiskalna dla kanału detalicznego
+      href: localizations/fiscal-integration-for-retail-channel.md
     - name: Europa Wschodnia
       items:
         - name: Faktury zaliczkowe w aplikacji Retail dla Europy Wschodniej
@@ -315,6 +319,8 @@
           href: localizations/emea-eeu-petty-cash-for-retail.md
         - name: Faktury dla odbiorcy i zwrotne zamówienia sprzedaży w aplikacji Retail w krajach środkowoeuropejskich
           href: localizations/emea-eeu-retail-invoices.md
+        - name: 'Wytyczne dotyczące wdrażania kas w Czechach, na Węgrzech i w Polsce'
+          href: localizations/emea-eeu-deployment.md
     - name: Francja
       items:
         - name: Funkcje kasy
@@ -329,6 +335,10 @@
           href: localizations/apac-ind-loc-deployment-guidelines.md
         - name: Pomoc techniczna dotycząca uaktualniania i wersji N-1 dla Indii
           href: localizations/apac-ind-n-1-for-india.md
+    - name: Włochy
+      items:
+        - name: Integracja drukarki fiskalnej
+          href: localizations/emea-ita-fpi-sample.md
     - name: Norwegia
       items:
         - name: Funkcje kasy
@@ -490,6 +500,8 @@
           href: dev-itpro/pos-custom-control.md
         - name: Dodawanie operacji punktu sprzedaży do układów aplikacji POS przy użyciu projektanta siatki przycisków
           href: dev-itpro/add-POS-operations.md
+        - name: Interfejsy API aplikacji Retail POS
+          href: dev-itpro/POS-APIs.md
         - name: Rozszerzenie płatności aplikacji POS
           href: dev-itpro/pos-payment-extension.md
         - name: Obsługa zewnętrznych kart upominkowych
