@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 4c27e0f75a45a2e4290ec4b6f72ee67d792449a0
+ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.openlocfilehash: 0c492cd76fc9742aa4cff8fe588541cb2c6f1863
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 10/11/2018
 
 ---
 
@@ -36,11 +36,11 @@ Aktywacja tej funkcji następuje w momencie użycia udostępnionej sekwencji num
 
 Możesz także skonfigurować sekwencje numerów dostawców dla każdej grupy dostawców. Te sekwencje numerów także muszą być udostępnione. Sekwencja numerów grupy dostawców jest używana jako pierwsza. Jeśli nie zostanie określona sekwencja numerów dla grupy dostawców, będzie używana sekwencja numerów określona na stronie **Parametry modułu rozrachunków z dostawcami**.
 
-Możesz także kopiować dostawców między firmami, jeśli używasz ręcznie określanych identyfikatorów dostawców. Jeśli jednak spróbujesz skopiować dostawcę do firmy, w której istnieje już jego identyfikator, proces kopiowania nie zostanie rozpoczęty.
+Możesz także kopiować dostawców między firmami, jeśli używasz ręcznie określanych identyfikatorów dostawców. Jeśli jednak spróbujesz skopiować dostawcę do firmy, w której istnieje już jego identyfikator dostawcy, proces kopiowania nie zostanie rozpoczęty.
 
 ## <a name="copy-a-vendor"></a>Kopiowanie dostawcy
 
-Aby skopiować dostawcę, wybierz pozycję **Nowy** na stronie listy **Wszyscy dostawcy**, aby otworzyć stronę **Wszyscy dostawcy, nowy rekord**. Zauważ, że identyfikator nowego dostawcy nie zostanie przypisany natychmiast. To zachowanie różni się od zachowania w poprzednich wersjach rozwiązania Microsoft Dynamics 365 for Finance and Operations. Dzieje się tak dlatego, że nie wybrano jeszcze grupy dostawców, więc system nie może ustalić poprawnej sekwencji numerów do użycia. Ponadto nie może ustalić, czy próbujesz utworzyć nowego dostawcę, czy skopiować dostawcę. Dlatego też identyfikator dostawcy nie zostanie przypisany, dopóki nie wybierzesz pozycji **Zapisz** u dołu strony.
+Aby skopiować dostawcę, wybierz pozycję **Nowy** na stronie listy **Wszyscy dostawcy** w celu otwarcia strony **Wszyscy dostawcy, nowy rekord**. Zauważ, że identyfikator nowego dostawcy nie zostanie przypisany natychmiast. To zachowanie różni się od zachowania w poprzednich wersjach rozwiązania Microsoft Dynamics 365 for Finance and Operations. Dzieje się tak dlatego, że nie wybrano jeszcze grupy dostawców, więc system nie może ustalić poprawnej sekwencji numerów do użycia. Ponadto nie może ustalić, czy próbujesz utworzyć nowego dostawcę, czy skopiować dostawcę. Dlatego też identyfikator dostawcy nie zostanie przypisany, dopóki nie wybierzesz pozycji **Zapisz** u dołu strony.
 
 Jeśli tworzysz nowego dostawcę, możesz kontynuować wypełnianie wszystkich pól w normalny sposób. Gdy skończysz i wybierzesz pozycję **Zapisz**, zobaczysz, że identyfikator dostawcy został przypisany automatycznie. Alternatywnie, jeśli używasz określanych ręcznie sekwencji numerów, zobaczysz, że został użyty określony ręcznie identyfikator dostawcy.
 

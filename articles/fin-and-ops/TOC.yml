@@ -34,6 +34,8 @@
         - name: Nowości i zmiany
           href: get-started/whats-new-changed.md
           items:
+            - name: Aktualizacje do jednej wersji usługi — często zadawane pytania
+              href: get-started/one-version.md
             - name: Zasady dotyczące cyklu życia oprogramowania i wydania w chmurze
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
             - name: Zasady dotyczące cyklu życia oprogramowania i wydania wersji lokalnych
@@ -46,8 +48,16 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funkcje niezaimplementowane we wdrożeniach lokalnych
               href: get-started/features-not-implemented-on-prem.md
+            - name: Aktualizacja Platform update 22 (listopad 2018)
+              href: get-started/whats-new-platform-update-22.md
+            - name: Finance and Operations w wersji 8.1.2 (listopad 2018)
+              href: get-started/whats-new-changed-8-1-2.md
+            - name: Finance and Operations w wersji 8.1.1 (październik 2018)
+              href: get-started/whats-new-changed-8-1-1.md
             - name: Finance and Operations w wersji 8.1 (październik 2018)
               href: get-started/whats-new-changed-8-1-October-2018.md
+            - name: Aktualizacja Platform update 21 (październik 2018)
+              href: get-started/whats-new-platform-update-21.md
             - name: Aktualizacja Platform update 20 (wrzesień 2018)
               href: get-started/whats-new-platform-update-20.md
             - name: Finance and Operations w wersji 8.0 (kwiecień 2018)
@@ -300,7 +310,7 @@
           href: ../dev-itpro/data-entities/integration-overview.md?toc=/fin-and-ops/toc.json
         - name: Interfejsy API integracji danych
           items:
-            - name: Interfejs API pakietu zarządzania danymi
+            - name: Interfejs API REST pakietu zarządzania danymi
               href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
             - name: Punkty końcowe usług
               href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
@@ -309,10 +319,12 @@
                   href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
             - name: Interfejs OData
               href: ../dev-itpro/data-entities/odata.md?toc=/fin-and-ops/toc.json
-            - name: Usługi niestandardowe
+            - name: Opracowywanie usług niestandardowych
               href: ../dev-itpro/data-entities/custom-services.md?toc=/fin-and-ops/toc.json
             - name: Integracje cykliczne
               href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
+            - name: Testowanie usług za pomocą narzędzi innych firm
+              href: ../dev-itpro/data-entities/third-party-service-test.md
         - name: Programowanie na potrzeby integracji
           items:
             - name: Integracja danych za pomocą jednostek danych
@@ -324,14 +336,14 @@
                   href: ../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurowanie udostępniania danych finansowych między firmami
                   href: ../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/fin-and-ops/toc.json
-                - name: Tworzenie szablonu rekordu w celu ułatwienia wprowadzania danych
+                - name: Tworzenie szablonów rekordów w celu ułatwienia wprowadzania danych
                   href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
-                - name: Używanie szablonu rekordu do tworzenia nowego rekordu
+                - name: Tworzenie rekordów przy użyciu szablonów rekordów
                   href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
             - name: Integracja danych za pomocą usługi Common Data Service
               href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Konfigurowanie scenariusza Od potencjalnego klienta do środków pieniężnych
+                - name: Konfigurowanie scenariusza Od prospekta do środków pieniężnych
                   href: ../supply-chain/sales-marketing/prospect-to-cash.md
                   items:
                     - name: Synchronizowanie kont w rozwiązaniu Sales bezpośrednio z odbiorcami w rozwiązaniu Finance and Operations
@@ -383,6 +395,8 @@
             - name: Kopiowanie danych konfiguracji między firmami
               href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Pakiety danych konfiguracji
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: Pakiety danych konfiguracji (tylko wydanie z lipca 2017)
                   href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
             - name: Szablony danych konfiguracji
@@ -391,6 +405,10 @@
               href: ../dev-itpro/data-entities/entity-change-track.md?toc=/fin-and-ops/toc.json
             - name: Znajdowanie informacji dotyczących standardowych jednostek danych
               href: ../dev-itpro/data-entities/data-entities-report.md?toc=/fin-and-ops/toc.json
+            - name: Szablony danych z wieloma arkuszami
+              href: ../dev-itpro/data-entities/excel-template-multiple.md
+            - name: Włączanie śledzenia zmian dla jednostek
+              href: ../dev-itpro/data-entities/entity-change-track.md
             - name: Klucze konfiguracji i jednostki danych
               href: ../dev-itpro/data-entities/config-key-entities.md?toc=/fin-and-ops/toc.json
             - name: Pakiety danych konfiguracji
@@ -402,6 +420,8 @@
               href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
         - name: Opracowywanie jednostek danych
           items:
+            - name: Zasady projektowania i najlepsze rozwiązania dotyczące jednostek danych
+              href: ../dev-itpro/dev-tools/design-best-practices.md
             - name: Tworzenie nowych jednostek danych
               href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/fin-and-ops/toc.json
             - name: Właściwości jednostki danych
@@ -424,12 +444,16 @@
               href: ../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json
             - name: Używanie narzędzi do testowania innych firm
               href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json
+            - name: 'Tworzenie jednostek tylko do odczytu, które uwidaczniają wymiary finansowe'
+              href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/fin-and-ops/toc.json
         - name: Używanie własnej bazy danych
           href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
         - name: Automatyzacja zadań danych
           href: ../dev-itpro/data-entities/data-task-automation.md
-        - name: Obszar roboczy weryfikacji danych
+        - name: Obszar roboczy Lista kontrolna weryfikacji danych
           href: ../dev-itpro/user-interface/data-validation-workspace.md
+        - name: Opisy błędów zarządzania danymi
+          href: ../dev-itpro/data-entities/dm-error-descriptions.md
     - name: Zarządzanie finansami
       href: ../financials/index.md
       items:
@@ -1007,6 +1031,8 @@
                   href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
                 - name: Konfigurowanie struktur kont
                   href: ../financials/general-ledger/configure-account-structures.md
+                - name: Dwie waluty
+                  href: ../financials/general-ledger/dual-currency.md
             - name: Arkusze i księgi
               items:
                 - name: Przetwarzanie arkuszy finansowych
@@ -1049,11 +1075,13 @@
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
                 - name: Pojedynczy załącznik
                   href: ../financials/general-ledger/one-voucher.md
+                - name: Rozliczenia księgi
+                  href: ../financials/general-ledger/ledger-settlements.md
             - name: Zamknięcie na koniec okresu
               items:
                 - name: Zamknięcie księgi głównej na koniec okresu
                   href: ../financials/general-ledger/close-general-ledger-at-period-end.md
-                - name: Obszar roboczy zamknięcia okresu obrachunkowego
+                - name: Obszar roboczy Zamknięcie okresu obrachunkowego
                   href: ../financials/general-ledger/financial-period-close-workspace.md
                 - name: Zamknięcie na koniec roku
                   href: ../financials/general-ledger/year-end-close.md
@@ -1799,6 +1827,10 @@
             - name: Omówienie aparatu podatków
               href: ../financials/general-ledger/tax-engine.md
               items:
+                - name: Importuj konfigurację
+                  href: ../financials/general-ledger/tax-engine-import-configuration.md
+                - name: Możliwość stosowania aparatu podatków
+                  href: ../financials/general-ledger/tax-engine-applicability.md
                 - name: Integracja aparatu podatków
                   href: ../financials/general-ledger/tax-engine-integration.md
                 - name: Rozszerzanie aparatu podatków
@@ -2100,6 +2132,8 @@
         - name: Polska
           href: ../financials/localizations/poland.md
           items:
+            - name: Aktywowanie stornowania
+              href: ../financials/localizations/emea-pol-red-storno.md
             - name: Obliczanie rabatów wiersza na podstawie ceny jednostkowej
               href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
             - name: Noty korygujące
@@ -2116,6 +2150,8 @@
               href: ../financials/localizations/emea-pol-returnable-packages.md
             - name: Raporty podatków
               href: ../financials/localizations/emea-pol-sales-tax-reports.md
+            - name: Konfigurowanie sekwencji numerów według magazynu
+              href: ../financials/localizations/emea-pol-number-sequence-warehouses.md
             - name: Standardowy plik audytu
               href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
             - name: Odsetki podatkowe i rynkowe
@@ -2132,32 +2168,60 @@
                   href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
                 - name: Codzienne operacje dotyczące posiadaczy zaliczek
                   href: ../financials/localizations/rus-advance-holders-daily-operations.md
+                - name: Raporty zaliczek z kontrolą budżetu
+                  href: ../financials/localizations/rus-advance-holders-reports-dailyops.md
+                - name: Przeszacowywanie w walucie obcej dla posiadaczy zaliczek
+                  href: ../financials/localizations/rus-advance-adjustment-parameters.md
+                - name: Raporty posiadaczy zaliczek
+                  href: ../financials/localizations/rus-local-management-reports-primary-forms.md
+            - name: Bank
+              items:
+                - name: Konfigurowanie kont bankowych
+                  href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
+                - name: Konfigurowanie i przetwarzanie poleceń zapłaty
+                  href: ../financials/localizations/rus-payment-order-settings-processing.md
             - name: Środki trwałe
               items:
                 - name: Nabywanie środków trwałych i włączanie ich do działalności operacyjnej
                   href: ../financials/localizations/rus-fixed-asset-acquisition.md
+                - name: Rejestrowanie operacji nabycia środków trwałych
+                  href: ../financials/localizations/rus-register-acquisition.md
                 - name: Tworzenie i księgowanie arkuszy budżetu dotyczących nabyć środków trwałych
                   href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
                 - name: Zliczanie środków trwałych
                   href: ../financials/localizations/rus-fixed-assets-counting.md
                 - name: Przeszacowanie środków trwałych w walucie
                   href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+                - name: Przeszacowywanie kosztu i amortyzacji środka trwałego
+                  href: ../financials/localizations/rus-fixed-assets-revaluation.md
                 - name: Częściowy demontaż środka trwałego (likwidacja)
                   href: ../financials/localizations/rus-fixed-assets-disassembly.md
-            - name: Konfigurowanie i przetwarzanie poleceń zapłaty
-              href: ../financials/localizations/rus-payment-order-settings-processing.md
+                - name: 'Sprzedaż, likwidacja i odpisywanie środków trwałych'
+                  href: ../financials/localizations/rus-sell-dispose-write-off-fixed-assets.md
+                - name: Konfigurowanie lokalizacji i numeracji środków trwałych
+                  href: ../financials/localizations/rus-fixed-assets-locations-numbering.md
+                - name: Konfigurowanie amortyzacji
+                  href: ../financials/localizations/rus-depreciation-setup.md
+                - name: Metody amortyzacji
+                  href: ../financials/localizations/rus-depreciation-methods.md
+                - name: Podwyższenia amortyzacji
+                  href: ../financials/localizations/rus-bonus-depreciation.md
+                - name: Obliczanie amortyzacji
+                  href: ../financials/localizations/rus-depreciation-calculation.md
+            - name: Oddziały firmy
+              href: ../financials/localizations/rus-company-divisions.md
             - name: Konfigurowanie kursów wymiany na potrzeby transakcji walutowych
               href: ../financials/localizations/rus-exchange-difference.md
             - name: Podgląd transakcji księgi
               href: ../financials/localizations/rus-ledger-transactions-preview.md
             - name: Konfigurowanie danych oficjalnych
               href: ../financials/localizations/rus-officials.md
-            - name: Konfigurowanie kont bankowych
-              href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
             - name: Podatek od towarów i usług (VAT) dla agentów podatkowych
               href: ../financials/localizations/rus-tax-agent.md
             - name: Konfigurowanie kontroli wymiarów dla rozliczeń
               href: ../financials/localizations/rus-transactions-settlement-date.md
+            - name: Faktury do zapłaty
+              href: ../financials/localizations/rus-invoice-payment.md
         - name: Arabia Saudyjska
           href: ../financials/localizations/saudi-arabia.md
           items:

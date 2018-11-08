@@ -1,11 +1,20 @@
-- name: Zapraszamy do korzystania z rozwiązania Dynamics 365 for Talent
+- name: Dynamics 365 for Talent
   href: index.md
   items:
     - name: Rozpoczynanie pracy
       href: talent-get-started.md
       items:
         - name: Nowości i zmiany
+          href: whats-new.md
           items:
+            - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (31 października 2018 r.)
+              href: whats-new-talent-october-31.md
+            - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (19 października 2018 r.)
+              href: whats-new-talent-october-19.md
+            - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (15 października 2018 r.)
+              href: whats-new-talent-october-11.md
+            - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (8 października 2018 r.)
+              href: whats-new-talent-october-8.md
             - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (1 października 2018 r.)
               href: whats-new-talent-october-01.md
             - name: Nowości i zmiany w rozwiązaniu Dynamics 365 for Talent Core HR (24 września 2018 r.)
@@ -30,6 +39,8 @@
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Rozwiązanie Core HR i usługa Common Data Service dla aplikacji
           href: CoreHREntities.md
+        - name: Integracje
+          href: talent-financeandoperations-integration.md
         - name: Dostęp do funkcji w wersji zapoznawczej
           href: access-preview-feature.md
         - name: Konfigurowanie integracji listy płac między rozwiązaniami Talent i Dayforce
@@ -64,6 +75,34 @@
       items:
         - name: Funkcje i możliwości aplikacji Attract
           href: attract-overview.md
+        - name: Tworzenie szablonu procesu w aplikacji Attract
+          href: Process-templates-Attract.md
+        - name: 'Tworzenie, zatwierdzanie i publikowanie funkcji w aplikacji Attract'
+          href: Creating-jobs-Attract.md
+        - name: Korzystanie z pul talentów
+          href: attract-talent-pools.md
+        - name: Korzystanie z aplikacji LinkedIn Recruiter
+          href: attract-linked-in-recruiter.md
+        - name: Działania w ramach procesu zatrudniania w aplikacji Attract
+          href: activities-attract.md
+        - name: Możliwości rozszerzania
+          href: extensibility-attract.md
+        - name: Witryna rozwoju kariery i środowiska dla kandydatów
+          href: career-site.md
+        - name: Konfigurowanie zarządzania ofertami
+          href: offer-setup.md
+        - name: 'Tworzenie, zatwierdzanie i podpisywanie ofert'
+          href: creating-offers.md
+        - name: Tworzenie szablonów wiadomości e-mail i zarządzanie nimi
+          href: email-templates.md
+        - name: Raportowanie i analizy
+          href: Reporting-Analytics-Attract.md
+        - name: Zarządzanie zabezpieczeniami i rolami w aplikacji Attract
+          href: security-attract.md
+        - name: Ustawienia administratora w aplikacji Attract
+          href: Admin-Settings-Attract.md
+        - name: Inteligentne rekomendacje
+          href: Intelligent-Recommendations.md
         - name: Tworzenie atrakcyjnych materiałów związanych z wdrażaniem do pracy
           href: create-onboarding-experience.md
     - name: Motywowanie pracowników etatowych
