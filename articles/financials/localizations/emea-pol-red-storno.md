@@ -16,15 +16,17 @@ ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
 ms.translationtype: HT
-ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
-ms.openlocfilehash: 004dd233ce5c2d25b2699b89e7595dcca75b31ed
+ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.openlocfilehash: 465d4b5330309462d4b72fc1a387f584a1ac81bd
 ms.contentlocale: pl-pl
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/12/2018
 
 ---
 
 
 # <a name="activate-storno-accounting"></a><span data-ttu-id="19c32-103">Uaktywnienie stornowania</span><span class="sxs-lookup"><span data-stu-id="19c32-103">Activate storno accounting</span></span>
+
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="19c32-104">Te procedury służą do konfigurowania funkcjonalności stornowania w programie Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="19c32-104">Use these procedures to set up storno accounting in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="19c32-105">Stornowanie polega na zmianie znaku kwot w celu wycofania błędnych oryginalnych transakcji.</span><span class="sxs-lookup"><span data-stu-id="19c32-105">In storno accounting, you reverse the sign on amounts to reverse incorrect original transactions.</span></span> <span data-ttu-id="19c32-106">Na przykład następujące transakcje są zarejestrowane niepoprawnie.</span><span class="sxs-lookup"><span data-stu-id="19c32-106">For example, the following transactions are incorrectly recorded.</span></span>
 
