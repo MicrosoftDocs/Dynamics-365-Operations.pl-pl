@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 06ab745d9df9b095b861cf7bc79aba6d1361eeb0
+ms.sourcegitcommit: cc995b474e86272b49629f97e1b4d4b4fb597b9d
+ms.openlocfilehash: d25ca64fb6a3fa7d7898ec68568703f3de7b1595
 ms.contentlocale: pl-pl
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 11/13/2018
 
 ---
 
@@ -50,11 +50,12 @@ ms.lasthandoff: 08/07/2018
 | <span data-ttu-id="34057-128">Przepływ pracy zgłaszania dodania dostawcy</span><span class="sxs-lookup"><span data-stu-id="34057-128">Vendor add application workflow</span></span>  | <span data-ttu-id="34057-129">Służy do tworzenia przepływów pracy przeglądania i zatwierdzania w celu dodawania nowych dostawców za pomocą wniosków o nowych dostawców.</span><span class="sxs-lookup"><span data-stu-id="34057-129">Create review and approval workflows for adding new vendors via vendor requests.</span></span> |
 
 ## <a name="creating-a-workflow"></a><span data-ttu-id="34057-130">Tworzenie przepływu pracy</span><span class="sxs-lookup"><span data-stu-id="34057-130">Creating a workflow</span></span>
+
 <span data-ttu-id="34057-131">Aby utworzyć przepływ pracy, kliknij kolejno opcje Zaopatrzenie i sourcing &gt; Ustawienia &gt; Przepływy pracy dla zaopatrzenia i sourcingu i utwórz nowy przepływ pracy poprzez wybranie typu przepływu pracy, który chcesz utworzyć.</span><span class="sxs-lookup"><span data-stu-id="34057-131">To create a workflow, go to Procurement and sourcing &gt; Setup &gt; Procurement and sourcing workflows and create a new workflow by selecting the type of workflow you want to create.</span></span>  
 
 <span data-ttu-id="34057-132">Na kanwie przepływu pracy możesz przeciągać elementy przepływu pracy do projektanta i łączyć elementy w sekwencje.</span><span class="sxs-lookup"><span data-stu-id="34057-132">In the workflow canvas you can drag workflow elements into the designer and link the elements into a flow.</span></span> <span data-ttu-id="34057-133">Elementy przepływu pracy powinny być skonfigurowane.</span><span class="sxs-lookup"><span data-stu-id="34057-133">The workflow elements should be configured.</span></span> <span data-ttu-id="34057-134">Dla elementów przepływu pracy zatwierdzania i zadań można skonfigurować, którzy uczestnicy powinni wykonywać czynności.</span><span class="sxs-lookup"><span data-stu-id="34057-134">For approval and task workflow elements you can configure which participant should take action.</span></span>
-<span data-ttu-id="34057-135">Typy uczestników</span><span class="sxs-lookup"><span data-stu-id="34057-135">Types of participants</span></span>
-----------------------
+
+## <a name="types-of-participants"></a><span data-ttu-id="34057-135">Typy uczestników</span><span class="sxs-lookup"><span data-stu-id="34057-135">Types of participants</span></span>
 
 <span data-ttu-id="34057-136">Można przypisać krok zatwierdzania do następujących grup uczestników.</span><span class="sxs-lookup"><span data-stu-id="34057-136">You can assign an approval step to the following groups of participants.</span></span>
 
@@ -68,13 +69,12 @@ ms.lasthandoff: 08/07/2018
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="34057-149">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="34057-149">Additional resources</span></span>
---------
+## <a name="additional-resources"></a><span data-ttu-id="34057-149">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="34057-149">Additional resources</span></span>
 
-[<span data-ttu-id="34057-150">Definiowanie przepływów pracy procesów biznesowych dla zapotrzebowań na zakup</span><span class="sxs-lookup"><span data-stu-id="34057-150">Defining business process workflows for purchase requisitions</span></span>](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [<span data-ttu-id="34057-150">Definiowanie przepływów pracy procesów biznesowych dla zapotrzebowań na zakup</span><span class="sxs-lookup"><span data-stu-id="34057-150">Defining business process workflows for purchase requisitions</span></span>](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[<span data-ttu-id="34057-151">Przepływ pracy zapotrzebowania na zakup</span><span class="sxs-lookup"><span data-stu-id="34057-151">Purchase requisition workflow</span></span>](purchase-requisitions-workflow.md)
+- [<span data-ttu-id="34057-151">Przepływ pracy zapotrzebowania na zakup</span><span class="sxs-lookup"><span data-stu-id="34057-151">Purchase requisition workflow</span></span>](purchase-requisitions-workflow.md)
 
-[<span data-ttu-id="34057-152">Wdrażanie dostawców</span><span class="sxs-lookup"><span data-stu-id="34057-152">Onboarding vendors</span></span>](vendor-onboarding.md)
+- [<span data-ttu-id="34057-152">Wdrażanie dostawców</span><span class="sxs-lookup"><span data-stu-id="34057-152">Onboarding vendors</span></span>](vendor-onboarding.md)
 
 
