@@ -50,11 +50,12 @@ Następujące typy przepływu pracy są dostępne w module Zaopatrzenie i sourci
 | Przepływ pracy zgłaszania dodania dostawcy  | Służy do tworzenia przepływów pracy przeglądania i zatwierdzania w celu dodawania nowych dostawców za pomocą wniosków o nowych dostawców. |
 
 ## <a name="creating-a-workflow"></a>Tworzenie przepływu pracy
+
 Aby utworzyć przepływ pracy, kliknij kolejno opcje Zaopatrzenie i sourcing &gt; Ustawienia &gt; Przepływy pracy dla zaopatrzenia i sourcingu i utwórz nowy przepływ pracy poprzez wybranie typu przepływu pracy, który chcesz utworzyć.  
 
 Na kanwie przepływu pracy możesz przeciągać elementy przepływu pracy do projektanta i łączyć elementy w sekwencje. Elementy przepływu pracy powinny być skonfigurowane. Dla elementów przepływu pracy zatwierdzania i zadań można skonfigurować, którzy uczestnicy powinni wykonywać czynności.
-Typy uczestników
-----------------------
+
+## <a name="types-of-participants"></a>Typy uczestników
 
 Można przypisać krok zatwierdzania do następujących grup uczestników.
 
@@ -68,13 +69,12 @@ Można przypisać krok zatwierdzania do następujących grup uczestników.
 
 
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Definiowanie przepływów pracy procesów biznesowych dla zapotrzebowań na zakup](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [Definiowanie przepływów pracy procesów biznesowych dla zapotrzebowań na zakup](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Przepływ pracy zapotrzebowania na zakup](purchase-requisitions-workflow.md)
+- [Przepływ pracy zapotrzebowania na zakup](purchase-requisitions-workflow.md)
 
-[Wdrażanie dostawców](vendor-onboarding.md)
+- [Wdrażanie dostawców](vendor-onboarding.md)
 
 
